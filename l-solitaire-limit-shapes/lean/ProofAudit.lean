@@ -16,6 +16,7 @@ run_cmd do
     `Denominator.dual_identity_of_representation, `Denominator.dual_coprime,
     `Egyptian.batista_greedy_exists, `Egyptian.triple_rational,
     `Egyptian.first_denominator_bound, `Egyptian.unique_maximum_from_pair_optimal,
+    `Egyptian.batista_congruence, `Egyptian.batista_admissible_congruence,
     `CutFamily.large_cut_decreases, `CutFamily.family_b_threshold_of_base_formula]
   for name in required do
     let _ ← getConstInfo name

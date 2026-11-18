@@ -17,7 +17,7 @@ never additional Lean axioms.
 | L-solitaire | Complete for the fixed-scale counterexample; pre-existing proof replayed | Actual layer-picking dynamics, stable-reference maximality, pointwise limits, and separation at scale 1. The separate arbitrary-layer/diverging-scale theorem is still unformalized. |
 | Three-player War | Complete for all three explicit cycling deals | Distinct ranks and round-robin deal sizes; exact transition rules; returns after 90, 180, and 19,320 turns; no earlier positive return; all three players active at every nonnegative time. |
 | Pham denominator degree | Partial | General finite-coefficient identity principle for rational formal power series; both exact polynomial certificates; both coprimality certificates. The orbit-count truncations and the published representation/degree bounds are explicit hypotheses. Reverse-solitaire enumeration and its limiting interpretation are not formalized. |
-| Batista Egyptian fractions | Partial | Strict-greedy integrality and strict denominator order for every `k > 5`, `k % 5 != 1`; rational fraction equation; first-denominator lower bound; transfer from a uniquely optimal pair to a uniquely maximal last denominator. Chu's global pair-optimality comparison and the small-case conclusion are not formalized. |
+| Batista Egyptian fractions | Complete | An ordered lexicographically first solution uniquely maximizes the last denominator for every admissible positive `k` outside residue class 1. The proof uses the elementary global comparison and a kernel-reduced exhaustive certificate below 100, with proved denominator bounds; no published comparison theorem is a hypothesis. |
 | CUT Family B | Partial, including both directions of the new threshold argument | All-size large-cut XOR inequality; mex uniqueness from the actual splitting rules; preservation under all added cuts above `3x`; explicit collision for each smaller admissible odd cut; difference by size `4x`; sharp threshold conditional on the published base formula. Identification of that formula with the base game's mex function is an explicit hypothesis. |
 | CUT arithmetic periodicity | Not formalized | The Python automata proof is not a Lean proof; automaton semantics, closure operations, and the universal mex certificates remain to formalize. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
@@ -64,18 +64,32 @@ and a representation `B*H=A` with nonzero constant denominator coefficient and
 the published degree bounds. These hypotheses are the outstanding mathematical
 work, not facts inferred from running the Python verifier.
 
-## Egyptian-fraction construction
+## Complete Egyptian-fraction theorem
 
-[`Conjectures/Egyptian.lean`](l-solitaire-limit-shapes/lean/Conjectures/Egyptian.lean)
-proves the integrality argument in all four required congruence classes. `Triple`
-is the cross-multiplied fraction equation with strictly increasing positive
-integer denominators; `triple_rational` proves that it is the rational equation.
-`batista_greedy_exists` covers every `k > 5` in those classes.
+[`Conjectures/EgyptianTheorem.lean`](l-solitaire-limit-shapes/lean/Conjectures/EgyptianTheorem.lean)
+proves `Egyptian.batista_admissible_congruence`, the exact statement of the note:
+for every positive admissible `k` with `k % 5 != 1`, there exists a strictly
+ordered solution that is lexicographically first and uniquely maximizes the
+last denominator. `batista_congruence` also proves existence for every `k >= 3`
+in those classes, and admissibility is proved to force `k >= 3`.
 
-`first_denominator_bound` checks the strict-greedy lower bound on the first
-denominator of any competing triple. `unique_maximum_from_pair_optimal` checks
-the final comparison and uniqueness transfer, with the pair-optimality and
-pair-uniqueness statements as explicit hypotheses. It does not establish them.
+The original [`Egyptian.lean`](l-solitaire-limit-shapes/lean/Conjectures/Egyptian.lean)
+proves integrality of the strict-greedy construction. The new
+[`EgyptianBounds.lean`](l-solitaire-limit-shapes/lean/Conjectures/EgyptianBounds.lean)
+proves the all-size competitor bounds, including the modular improvement in
+the immediate-neighbor case. A concave quadratic proves positivity throughout
+the unbounded interval; explicit endpoint polynomials have positive
+coefficients after shifting the first denominator by 20.
+
+[`EgyptianFinite.lean`](l-solitaire-limit-shapes/lean/Conjectures/EgyptianFinite.lean)
+checks every small `k < 100` by kernel reduction. Its soundness theorem derives
+complete bounds on both enumerated denominators from the fraction equation,
+then derives the third denominator exactly by integer division. The certificate
+checks ordered existence and unique maximality; it is not used as evidence for
+an unbounded claim. The infinite regime and the finite regime are combined in
+`EgyptianTheorem.lean`, which also proves the lexicographic conclusion.
+
+Chu's best-two-term theorem is not a hypothesis of either completed theorem.
 
 ## CUT Family B
 
@@ -109,8 +123,7 @@ cd ../..
 scripts/verify_lean.sh
 ```
 
-The script rebuilds all sources, runs `ProofAudit.lean`, and rechecks the six
-proof modules using `leanchecker`. The CI workflow runs the same script.
+The script rebuilds all sources, runs `ProofAudit.lean`, and rechecks the proof modules using `leanchecker`. The CI workflow runs the same script.
 `ProofAudit.lean` checks every theorem in all five project namespaces, including
 helper theorems, and rejects any transitive axiom other than `propext`,
 `Classical.choice`, and `Quot.sound`. It also requires the listed main
@@ -123,7 +136,7 @@ scope; their success does not upgrade a partial entry to a complete Lean proof.
 ## Validation receipt, 18 November 2026
 
 `scripts/verify_lean.sh` completed with exit status 0 locally on Lean 4.35.0.
-All six `leanchecker` module rechecks completed successfully. The audit reported
+At the first checkpoint, all six `leanchecker` module rechecks completed successfully. The audit reported
 466 project theorem declarations, including generated helper declarations;
 this is not a count of independent mathematical results.
 
@@ -140,3 +153,13 @@ primary and dual necklace certificates with direct enumeration through depth
 12, Egyptian fractions through `k = 150` (including unpruned enumeration),
 and all 46 CUT Family B test cut sets in the original verifier. These checks
 corroborate transcription and retain their finite scope.
+
+## Completed Batista checkpoint, 18 November 2026
+
+The full `scripts/verify_lean.sh` passed with all nine proof-module kernel
+rechecks, including `EgyptianBounds`, `EgyptianFinite`, and `EgyptianTheorem`.
+The whitelist audit accepted 578 project theorem declarations. Both complete
+Batista theorem declarations depend only on `propext`, `Classical.choice`, and
+`Quot.sound`. The finite certificates use kernel reduction rather than native
+computation. The source-level statement retains the exact admissibility,
+congruence, lexicographic, maximality, and uniqueness requirements.

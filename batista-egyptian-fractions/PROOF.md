@@ -57,3 +57,11 @@ The finite enumeration ranges over $k/5<x<3k/5$ and $kx/(5x-k)<y<2kx/(5x-k)$ wit
 ## Prior work and scope
 
 Chu proved the general best-two-term theorem in 2023–2024. The additional step here proves that his optimizing pair actually extends to an exact, strictly ordered three-term representation in all four required classes. A November 18, 2026 search by sequence number, author, and equivalent Egyptian-fraction formulations located no earlier proof specifically stating Batista's congruence. Historical priority remains unverified. The example $5/11=1/3+1/9+1/99=1/4+1/5+1/220$ in Batista's entry illustrates the behavior in the remaining class. [Batista](https://oeis.org/A398581) · [Chu](https://arxiv.org/abs/2306.12564v2)
+
+## Lean verification
+
+The full theorem is formalized as `Egyptian.batista_admissible_congruence` in
+[`EgyptianTheorem.lean`](../l-solitaire-limit-shapes/lean/Conjectures/EgyptianTheorem.lean).
+It follows the independent elementary comparison and proves completeness of
+its kernel-checked finite enumeration. It has no pair-optimality or published
+theorem premise. See [verification status and reproduction](../LEAN_VERIFICATION.md).
