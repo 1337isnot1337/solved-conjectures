@@ -17,11 +17,14 @@ run_cmd do
     `Egyptian.batista_greedy_exists, `Egyptian.triple_rational,
     `Egyptian.first_denominator_bound, `Egyptian.unique_maximum_from_pair_optimal,
     `Egyptian.batista_congruence, `Egyptian.batista_admissible_congruence,
-    `CutFamily.large_cut_decreases, `CutFamily.family_b_threshold_of_base_formula]
+    `CutFamily.large_cut_decreases, `CutFamily.family_b_threshold_of_base_formula,
+    `BinaryAutomata.certified_list_refinement, `BinaryAutomata.adds_zero_iff,
+    `BinaryAutomata.high_xor_iff, `BinaryAutomata.sum_accepts_iff,
+    `CutPeriod.GraphCertificate.correct]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["SolitaireCounterexample.", "War.", "Denominator.", "Egyptian.", "CutFamily."]
+  let prefixes := #["SolitaireCounterexample.", "War.", "Denominator.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

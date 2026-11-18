@@ -28,10 +28,24 @@ unproved premise of the completed theorem.
 
 1. CUT arithmetic periodicity (current lane): formalize finite binary automata
    semantics, option composition and mex emptiness certificates for both games,
-   and the proposed-tail decision test. Read low bits first so arithmetic carries
-   have a direct inductive semantics. Generated automata need a checked relation
-   to the arithmetic/game semantics; empty Python error languages alone are not
-   acceptance.
+   and the proposed-tail decision test. The checked working foundations are
+   `BinaryAutomata.lean`, `BinaryArithmetic.lean`, `CutPeriodGraph.lean`, and
+   `CutPeriodGraphCertificate.lean`; they prove subset/refinement semantics,
+   high-bit addition/XOR, and the complete 27-state candidate graph language.
+   `BinaryComposition.lean` now proves addition/XOR composition in both
+   directions and sound pruning of rejecting sinks. Next: generated refinement
+   certificates for pile groups, fixed-width padding/arbitrary-pile connection,
+   lower-value relation, union and the
+   two mex emptiness checks, then the game theorem and minimal-period claims.
+   The generator preserves all representations in a reproducible ignored JSON
+   archive and emits the checked graph Lean certificate. Generated data alone
+   is not acceptance.
+   Do not repeat the low-bit-first construction unchanged: determinization
+   reached 301,768 states for three piles even after pruning rejecting sinks;
+   the unpruned trial used over 5 GiB and was terminated. Original high-bit
+   construction has 179→27 graph states, 402→126 for two parts, 2013→89 for
+   three parts, 2324→22 for four parts, and at most 668 represented states for
+   each later group. Both Python profiling workers were stopped.
 2. CUT Family B: discharge the published base-formula/mex hypothesis, including
    preservation by additional even cuts. The new large-odd-cut threshold and
    sharpness arguments are already formalized.
@@ -49,3 +63,16 @@ unproved premise of the completed theorem.
 The campaign is INCOMPLETE until this queue and every gap in
 `LEAN_VERIFICATION.md` are closed. A passing verifier or CI run does not close an
 unformalized mathematical dependency.
+
+## Next concrete checks
+
+The first two-pile generated module is `CutPeriodParts2Certificate.lean`.
+Its encoding/refinement checks are being tested against `BinaryComposition`;
+do not treat its generated data as accepted until the module and kernel checks
+pass. The generator supports `--parts-until N`, defaulting to the checked graph
+alone. Avoid generating every unchecked stage into the Lean source tree at
+once: build one stage, resolve its proof/performance issues, then proceed.
+
+Current CUT continuation details: `cut-arithmetic-periodicity/LEAN_PLAN.md`.
+The first monolithic two-pile check was stopped after exceeding 10 GiB.
+Use cached successor matrices and rowwise proofs before retrying that stage.

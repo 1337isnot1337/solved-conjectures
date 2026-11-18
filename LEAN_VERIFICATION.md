@@ -19,7 +19,7 @@ never additional Lean axioms.
 | Pham denominator degree | Partial | General finite-coefficient identity principle for rational formal power series; both exact polynomial certificates; both coprimality certificates. The orbit-count truncations and the published representation/degree bounds are explicit hypotheses. Reverse-solitaire enumeration and its limiting interpretation are not formalized. |
 | Batista Egyptian fractions | Complete | An ordered lexicographically first solution uniquely maximizes the last denominator for every admissible positive `k` outside residue class 1. The proof uses the elementary global comparison and a kernel-reduced exhaustive certificate below 100, with proved denominator bounds; no published comparison theorem is a hypothesis. |
 | CUT Family B | Partial, including both directions of the new threshold argument | All-size large-cut XOR inequality; mex uniqueness from the actual splitting rules; preservation under all added cuts above `3x`; explicit collision for each smaller admissible odd cut; difference by size `4x`; sharp threshold conditional on the published base formula. Identification of that formula with the base game's mex function is an explicit hypothesis. |
-| CUT arithmetic periodicity | Not formalized | The Python automata proof is not a Lean proof; automaton semantics, closure operations, and the universal mex certificates remain to formalize. |
+| CUT arithmetic periodicity | Partial | Subset construction, checked minimization/refinement, exact binary addition and XOR, generic composition semantics, and the candidate graph DFA are formalized for all finite words. Connections to arbitrary legal pile groups, both mex emptiness certificates, exact least periods and the general decision test remain to formalize. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Erdős 607 line sizes | Not formalized | Geometric realization, generating-function correspondence, and the local limit/asymptotic analysis remain to formalize. |
 | Growing rectangles | Not formalized | Packing injection, partition estimates, and uniform asymptotics remain to formalize. |
@@ -124,7 +124,7 @@ scripts/verify_lean.sh
 ```
 
 The script rebuilds all sources, runs `ProofAudit.lean`, and rechecks the proof modules using `leanchecker`. The CI workflow runs the same script.
-`ProofAudit.lean` checks every theorem in all five project namespaces, including
+`ProofAudit.lean` checks every theorem in all project namespaces, including
 helper theorems, and rejects any transitive axiom other than `propext`,
 `Classical.choice`, and `Quot.sound`. It also requires the listed main
 declarations to exist. Missing proofs, `sorryAx`, native-computation axioms,
@@ -163,3 +163,39 @@ Batista theorem declarations depend only on `propext`, `Classical.choice`, and
 `Quot.sound`. The finite certificates use kernel reduction rather than native
 computation. The source-level statement retains the exact admissibility,
 congruence, lexicographic, maximality, and uniqueness requirements.
+
+## CUT automata foundations
+
+`BinaryAutomata.lean` proves subset-construction semantics and a refinement
+certificate theorem that works for every input word. Its active-list variant
+avoids scanning every NFA state during a finite certificate check.
+`BinaryArithmetic.lean` proves that the carry constraints used by the original
+high-bit-first automata are exactly integer addition, including both end
+carries, and that columnwise XOR is exactly numerical XOR.
+
+`CutPeriodGraph.lean` proves the arithmetic counter graph recognizes the
+proposed pile-value function, including all six prefix exceptions and its
+unbounded tail. `CutPeriodGraphCertificate.lean` checks every transition and
+acceptance label of the 179-state representation and its 27-state quotient,
+then proves the concrete DFA recognizes that graph for every finite word.
+
+The Python producer `cut-arithmetic-periodicity/generate_lean_certificates.py`
+is untrusted: it produces data that Lean checks. Its intermediate JSON archive
+is reproducible and ignored; the checked Lean certificate is versioned. Other
+produced automata do not count as proofs until their refinement and arithmetic
+semantics are checked. The complete game-period claims remain open.
+
+`BinaryComposition.lean` proves the exact language semantics of addition/XOR
+composition in both directions, including safe pruning of rejecting sinks.
+Every accepted composed word is decoded to accepted component words with the
+actual numerical addition and XOR equations, and every such compatible column
+sequence produces a composed path. Fixed-width padding and its connection to
+arbitrary pile groups remain part of the unfinished game proof.
+
+## Binary-semantics checkpoint, 18 November 2026
+
+The full package including the four graph/arithmetic foundation modules passed
+all kernel rechecks. The added generic composition module then passed its
+source build, kernel replay, and a refreshed whitelist audit over 724 project
+theorem declarations. The detailed continuation plan and measured certificate
+performance limits are in `cut-arithmetic-periodicity/LEAN_PLAN.md`.

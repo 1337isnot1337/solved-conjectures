@@ -12,7 +12,7 @@ This repository contains **unrefereed** mathematics notes with reproducible chec
 | [Growing rectangles](rectangle-partition-asymptotics/PROOF.md) | Gajdzica–Zakarczemny, Remark 5.9: uniform asymptotic for `log p(h,w)` as `h → ∞`, `w ≥ h`. | ☐ | [Proof](rectangle-partition-asymptotics/PROOF.md) · [Check](rectangle-partition-asymptotics/verify.py) |
 | [Three-player War](spivey-multiplayer-war/PROOF.md) | Spivey (2010), Q5: three winner-first conventions admit cycles with all three players active. | ☑ | [Proof](spivey-multiplayer-war/PROOF.md) · [Check](spivey-multiplayer-war/verify.py) |
 | [CUT Family B](cut-family-b/PROOF.md) | Ellis–Thanatipanonda (2022), Conj. 2: nim-sequence matches the base game iff the least odd cut above 1 exceeds three times the least even cut. | ◐ | [Proof](cut-family-b/PROOF.md) · [Check](cut-family-b/verify.py) |
-| [CUT with a preperiod](cut-arithmetic-periodicity/PROOF.md) | Dailly et al., Open Problem 4: finite arithmetic-periodicity test; both examples have preperiod 6, period 12, saltus 8. | ☐ | [Proof](cut-arithmetic-periodicity/PROOF.md) · [Check](cut-arithmetic-periodicity/verify.py) |
+| [CUT with a preperiod](cut-arithmetic-periodicity/PROOF.md) | Dailly et al., Open Problem 4: finite arithmetic-periodicity test; both examples have preperiod 6, period 12, saltus 8. | ◐ | [Proof](cut-arithmetic-periodicity/PROOF.md) · [Check](cut-arithmetic-periodicity/verify.py) |
 
 ☑ Lean formalization of the stated result · ◐ Partial formalization with explicit remaining dependencies · ☐ No Lean formalization
 
