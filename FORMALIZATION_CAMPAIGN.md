@@ -5,6 +5,50 @@ Lean, preserving the stated scope and discharging unformalized mathematical
 inputs. All accepted work belongs on `main`; other branches were removed after
 their work was fast-forwarded into `main`.
 
+## Paused checkpoint, 18 November 2026
+
+Paused at the owner's explicit request. The task-owned build supervisor and
+its compiler were stopped; no local campaign build is running or scheduled.
+The campaign is INCOMPLETE. All work, including the experimental generated
+three-pile sources, is preserved on `main`.
+
+The accepted package includes the complete War cycles and Batista theorem,
+the CUT two-pile and four numerical error certificates, complete padding,
+candidate period parameters, finite certificate helpers, and the generic
+finite emptiness/mex tests. `BinaryDecision` proves every reachable state has
+a word shorter than the state count and gives a terminating complete emptiness
+test. `CutMexDecision` proves necessary and sufficient finite mex tests given
+exact graph/lower/actual-option recognizers. Uniform construction of those
+recognizers is still unfinished.
+
+Resume with the three-pile group. Its data module, all 27 transition blocks
+(6,804 product states), and the transition aggregation passed source builds.
+The build was interrupted in `Conjectures.CutPeriodParts3StateData`; subset
+refinement blocks, the final group theorem, its axiom audit and independent
+kernel replays remain pending. The 39 experimental modules are deliberately
+not imported by the accepted package and are not included in its verification
+claims. Their exact ordered list is
+`l-solitaire-limit-shapes/lean/Conjectures/CutPeriodParts3.modules`.
+
+To resume the finite build from the repository root:
+
+```sh
+export PATH="$HOME/.elan/bin:$PATH"
+export LEAN_NUM_THREADS=1
+cd l-solitaire-limit-shapes/lean
+while IFS= read -r module; do
+  lake build "$module" || break
+done < Conjectures/CutPeriodParts3.modules
+```
+
+After every listed module passes, register the final certificate in
+`Conjectures.lean`, require `CutPeriod.Parts3Certificate.recognizes_piles` in
+`ProofAudit.lean`, and add every module in the manifest to the kernel-recheck
+script. Run the source/axiom checks and independently replay every new module
+before promoting the stage. Then continue groups four through nine, the union
+refinements and the remaining repository queue below. Refresh remote `main`
+before each push, preserving concurrent mathematical additions.
+
 ## Checked baseline
 
 `b9b826e46a9c33fb369f2ea46b8a94f36fad2262` supplies the complete fixed-scale

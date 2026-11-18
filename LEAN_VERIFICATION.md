@@ -19,7 +19,7 @@ never additional Lean axioms.
 | Pham denominator degree | Partial | General finite-coefficient identity principle for rational formal power series; both exact polynomial certificates; both coprimality certificates. The orbit-count truncations and the published representation/degree bounds are explicit hypotheses. Reverse-solitaire enumeration and its limiting interpretation are not formalized. |
 | Batista Egyptian fractions | Complete | An ordered lexicographically first solution uniquely maximizes the last denominator for every admissible positive `k` outside residue class 1. The proof uses the elementary global comparison and a kernel-reduced exhaustive certificate below 100, with proved denominator bounds; no published comparison theorem is a hypothesis. |
 | CUT Family B | Partial, including both directions of the new threshold argument | All-size large-cut XOR inequality; mex uniqueness from the actual splitting rules; preservation under all added cuts above `3x`; explicit collision for each smaller admissible odd cut; difference by size `4x`; sharp threshold conditional on the published base formula. Identification of that formula with the base game's mex function is an explicit hypothesis. |
-| CUT arithmetic periodicity | Partial | Binary semantics, complete padding, actual-pile composition, the two-pile DFA, candidate/lower-value DFAs and all four numerical error-language certificates are checked for all words. Candidate additive parameters are proved. Groups three through nine, correspondence of the option DFAs with actual legal splits, and the general decision test remain open. |
+| CUT arithmetic periodicity | Partial | Binary semantics, complete padding, actual-pile composition, the two-pile DFA, candidate/lower-value DFAs and all four numerical error-language certificates are checked for all words. Candidate parameters and terminating finite emptiness/mex tests with exact recognizers are proved. Groups three through nine, actual-option correspondence, and uniform recognizer construction for the general test remain open. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Erdős 607 line sizes | Not formalized | Geometric realization, generating-function correspondence, and the local limit/asymptotic analysis remain to formalize. |
 | Growing rectangles | Not formalized | Packing injection, partition estimates, and uniform asymptotics remain to formalize. |
@@ -124,7 +124,7 @@ scripts/verify_lean.sh
 ```
 
 The script rebuilds all sources, runs `ProofAudit.lean`, and rechecks the proof modules using `leanchecker`. The CI workflow runs the same script.
-`ProofAudit.lean` checks every theorem in all project namespaces, including
+`ProofAudit.lean` checks every theorem in the imported accepted project modules, including
 helper theorems, and rejects any transitive axiom other than `propext`,
 `Classical.choice`, and `Quot.sound`. It also requires the listed main
 declarations to exist. Missing proofs, `sorryAx`, native-computation axioms,
@@ -296,3 +296,26 @@ that a checked proof list covers exactly its recorded numerical interval.
 These are general certificate helpers, not completed game theorems.
 Both helpers passed source builds and kernel replay; the refreshed package
 audit accepted 3,725 theorem declarations using only the permitted axioms.
+
+## Finite decision tests and paused continuation
+
+`BinaryDecision.lean` connects the project automata to Mathlib's DFA interface,
+uses the checked cycle-removal theorem to prove a complete short-word bound,
+and proves `emptyCheck_correct` for every finite DFA. Its word enumeration is
+a total finite computation; it need not be efficient for this termination
+claim. `CutMexDecision.lean` proves the two finite error tests are necessary
+and sufficient for the actual CUT mex equations, given exact finite graph,
+lower-value and actual-option recognizers. Construction of those recognizers
+uniformly from an arbitrary proposed arithmetic tail remains open.
+
+The owner paused the campaign. The generated three-pile source build passed
+its data, all 27 transition blocks and their aggregation. It was stopped in
+the shared subset-data module. The 39 experimental sources and their ordered
+manifest are preserved, but are not registered in the accepted root imports
+or included in the package's axiom/kernel verification claims. See
+`FORMALIZATION_CAMPAIGN.md` for exact resume commands and remaining checks.
+
+At the paused checkpoint, the accepted source build and refreshed audit passed
+over 3,738 theorem declarations. Both newly registered decision modules passed
+independent kernel replay. This count excludes all unregistered experimental
+three-pile modules and is not a count of independent mathematical results.

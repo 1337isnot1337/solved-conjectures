@@ -34,6 +34,10 @@ in `l-solitaire-limit-shapes/lean/Conjectures`:
   actual-split semantics is still unproved.
 - `CutPeriodCertifiedMex`: the complete mex conclusions follow once that
   explicit actual-option correspondence is supplied, with no other hypotheses.
+- `BinaryDecision`: complete short-word bounds and a terminating finite
+  emptiness test for every finite DFA.
+- `CutMexDecision`: the two finite tests are necessary and sufficient for the
+  actual CUT mex equations when exact graph/lower/option recognizers are given.
 
 The untrusted producer `generate_lean_certificates.py` reproduces the original
 Python automata and preserves every representation and quotient label in an
@@ -109,6 +113,11 @@ first transition block passed in 13 seconds (whole command 14.31 seconds) at
 provides exact interval coverage. The final aggregation chooses the unique
 256-state block containing each index. A module manifest records every module
 that must be kernel-rechecked before the group can be registered.
+At the owner's pause request, all 27 transition blocks and the transition
+aggregation had passed source builds. The task-owned build loop was stopped
+in `CutPeriodParts3StateData`; the remaining subset refinements and final
+certificate have not passed. The ordered manifest is `CutPeriodParts3.modules`.
+None of these experimental three-pile modules is registered as accepted yet.
 
 `BinarySetCertificate` supplies a structural sorted-list set checker and proves
 its equality implies equality of the original masks. The library `mergeSort`
@@ -122,7 +131,10 @@ has passed yet. The active three-pile producer still uses the original masks.
 Items 1–4, 6 and the candidate-function part of 9 below are now checked.
 Item 5 is checked through two piles. The four numerical error checks in item 7
 are checked, and item 8 now requires only the actual-option language hypothesis.
-Groups three through nine, the union refinements and item 10 remain open.
+Groups three through nine and the union refinements remain open. Item 10 now
+has a proved terminating finite emptiness test and the exact mex-test
+equivalence, conditional on exact finite recognizers. Their uniform
+construction, including arbitrary-witness padding, is still open.
 
 1. Fixed-width encoding: encode both numerical tracks into exactly `L` digits;
    prove decoding, length and uniqueness. `decodeHigh` is low decoding of the

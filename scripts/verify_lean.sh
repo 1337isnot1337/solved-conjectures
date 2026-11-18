@@ -21,6 +21,8 @@ modules=(
   Conjectures.BinaryComposition
   Conjectures.BinaryFastComposition
   Conjectures.BinarySetCertificate
+  Conjectures.BinaryDecision
+  Conjectures.CutMexDecision
   Conjectures.BinaryEncoding
   Conjectures.BinaryBoolean
   Conjectures.BinaryOrder

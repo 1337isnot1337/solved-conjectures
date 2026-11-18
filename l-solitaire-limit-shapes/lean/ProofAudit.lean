@@ -33,6 +33,8 @@ run_cmd do
     `CutPeriod.gameA_mex_of_options, `CutPeriod.gameB_mex_of_options,
     `BinaryAutomata.maskOfList_eq_of_normalized,
     `FiniteCertificate.checked_interval_rows,
+    `BinaryAutomata.DFA.short_word_to_state, `BinaryAutomata.DFA.emptyCheck_correct,
+    `CutPeriod.Decision.satisfiesMex_iff_finite_tests,
     `CutPeriod.GraphCertificate.correct, `CutPeriod.LowerCertificate.correct]
   for name in required do
     let _ ← getConstInfo name
