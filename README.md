@@ -12,6 +12,7 @@ This repository contains **unrefereed** mathematics notes with reproducible chec
 | [Growing rectangles](rectangle-partition-asymptotics/PROOF.md) | Gajdzica and Zakarczemny, *A note on the partition function of a rectangle*, Remark 5.9, both growing-side predictions | Uniform leading asymptotic for $\log p(h,w)$ over all widths $w\ge h$ as $h$ grows | [Proof](rectangle-partition-asymptotics/PROOF.md) and [packing verifier](rectangle-partition-asymptotics/verify.py) |
 | [Three-player War](spivey-multiplayer-war/PROOF.md) | Michael Z. Spivey, *Cycles in War* (2010), Question 5, ordinary deals with a non-power-of-two number of players | Three deterministic winner-first conventions admit standard deals cycling with all three players active. A six-turn class calculation proves the 23-card example | [Proof](spivey-multiplayer-war/PROOF.md) and [exact replays](spivey-multiplayer-war/verify.py) |
 | [CUT Family B](cut-family-b/PROOF.md) | Ellis and Thanatipanonda (2022), Section 7, Conjecture 2 | Proved with a sharp converse. The full nim-sequence agrees with the base game exactly when the smallest odd cut above 1 exceeds three times the smallest even cut | [Proof](cut-family-b/PROOF.md) and [game-rule verifier](cut-family-b/verify.py) |
+| [CUT with a preperiod](cut-arithmetic-periodicity/PROOF.md) | Dailly, Duchêne, Larsson and Paris, *Partition games*, Open Problem 4 and both examples in Section 3.3 | General finite test for a proposed ultimately arithmetic-periodic sequence of a finite cut set. Both specified games have preperiod 6, least period 12 and saltus 8 | [Proof](cut-arithmetic-periodicity/PROOF.md) and [exhaustive automaton check](cut-arithmetic-periodicity/verify.py) |
 
 ## Precise scope
 
@@ -61,6 +62,7 @@ python3 erdos-607-line-sizes/verify.py
 python3 rectangle-partition-asymptotics/verify.py
 python3 spivey-multiplayer-war/verify.py
 python3 cut-family-b/verify.py
+python3 cut-arithmetic-periodicity/verify.py
 ```
 
 `l-solitaire-limit-shapes/verify.py` is the original embedded PDF attachment, extracted byte-for-byte. The finite search checks all pick-layer sets and integer partitions for deck sizes 1 through 14 and separately verifies the specific counterexample for sizes 1 through 1000. Exhaustive tests do not replace the general argument in the PDF.

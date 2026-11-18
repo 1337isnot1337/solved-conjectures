@@ -32,3 +32,5 @@ jobs:
         run: python3 spivey-multiplayer-war/verify.py
       - name: Check the CUT Family B threshold against the game rules
         run: python3 cut-family-b/verify.py
+      - name: Prove the two ultimate CUT periods by automata
+        run: python3 cut-arithmetic-periodicity/verify.py
