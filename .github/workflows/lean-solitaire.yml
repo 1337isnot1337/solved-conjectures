@@ -1,0 +1,18 @@
+name: Lean fixed-scale L-solitaire counterexample
+on:
+  push:
+  pull_request:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        env:
+          LEAN_NUM_THREADS: "1"
+        with:
+          lake-package-directory: l-solitaire-limit-shapes/lean
+          build: true
+      - name: Recheck the compiled counterexample
+        working-directory: l-solitaire-limit-shapes/lean
+        run: lake env leanchecker Solitaire.Limits
