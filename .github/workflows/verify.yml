@@ -1,4 +1,4 @@
-name: verify both conjecture certificates
+name: verify combinatorics counterexamples
 on:
   push:
   pull_request:
@@ -18,3 +18,7 @@ jobs:
           python3 pham-denominator-degree/verify.py --dual --brute-depth 13
       - name: Run Pham regression tests
         run: cd pham-denominator-degree && python3 -m unittest discover -s tests -v
+      - name: Verify Li non-spider coefficient and partition certificates
+        run: |
+          python3 li-coefficient-sign/verify.py
+          python3 li-coefficient-sign/independent_check.py
