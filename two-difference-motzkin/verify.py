@@ -2,6 +2,8 @@
 from functools import cache
 from math import gcd
 
+from exact import circulant_optimum, floor_sum, quotient_optimum
+
 
 def distance(r, n):
     return min(r % n, -r % n)
@@ -124,6 +126,9 @@ def noncyclic_quotients():
                 }
                 assert len(characters) == n
                 assert max(min(distance(x, n), distance(y, n)) for x, y in characters) == chosen.bit_count()
+                h, residues = quotient_optimum(m, k, s)
+                assert h == chosen.bit_count() and residues in characters
+                assert min(distance(v, n) for v in residues) == h
                 verify_orientation(forward, backward, characters, chosen)
                 count += 1
     return count
@@ -148,6 +153,9 @@ def main():
                 forward = [[(z + d) % n for z in range(n)] for d in (a, b)]
                 backward = [[(z - d) % n for z in range(n)] for d in (a, b)]
                 characters = {(t * a % n, t * b % n) for t in range(n)}
+                computed, residues = circulant_optimum(n, a, b)
+                assert computed == h and residues in characters
+                assert min(distance(v, n) for v in residues) == h
                 k = odd_girth(adj)
                 if k is not None:
                     upper = n * (k-1) // (2*k)
@@ -162,6 +170,18 @@ def main():
                 else:
                     verify_orientation(forward, backward, characters, chosen)
                     orientations += 1
+    for q in range(1, 10):
+        for slope in range(-10, 15):
+            for offset in range(-4, 12):
+                assert floor_sum(17, q, slope, offset) == sum(
+                    (slope * i + offset) // q for i in range(17)
+                )
+    # For jumps 1,2 there is at most one vertex per three consecutive positions,
+    # and taking every third vertex up to the last full triple attains this.
+    for n in (10**100 - 1, 10**100, 10**100 + 1):
+        computed, (r, s) = circulant_optimum(n, 1, 2)
+        assert computed == n // 3 and s == 2 * r % n
+        assert min(distance(v, n) for v in (r, s)) == computed
     more = noncyclic_quotients()
     print(f"Checked {graphs} circulants, {more} noncyclic quotients and {orientations + more} signed orientations.")
 

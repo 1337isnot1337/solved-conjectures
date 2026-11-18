@@ -74,6 +74,30 @@ Let $\Lambda=\{(u,v):ua+vb=0\}$ in the original compact group. The supremum in t
 - If $\Lambda=\langle(u,v)\rangle$ has rank one, put $k=|u|+|v|$. The value is $\lfloor k/2\rfloor/k$, recovering Candela, Chamizo and Córdoba's rank-one theorem. When $k$ is even use $(1/2,1/2)$. When it is odd, choose $x,y$ equal to $\lfloor k/2\rfloor/k$ with the signs of $u,v$ respectively, choosing either sign for a zero coordinate. Then $ux+vy$ is integral. Conversely, if both distances are at least $h$, write $x=(1+e)/2$, $y=(1+f)/2$ modulo one with $|e|,|f|\le1-2h$. Since $ux+vy$ is integral and $u+v$ odd, $ue+vf$ is an odd integer. Thus $1\le k(1-2h)$.
 - In rank two, take a lattice basis $(m,0),(s,k)$ with $m,k>0$, $0\le s<m$. The value is the largest of the $mk$ numbers $\min(\|i/m\|,\|j/k-si/(mk)\|)$ for $0\le i<m$ and $0\le j<k$. These are all the characters because the two defining congruences are $mx=0$ and $sx+ky=0$ modulo one. This covers finite subgroups with two nontrivial invariant factors as well as cyclic ones.
 
+## Evaluation without enumerating the finite quotient
+
+In rank two put $N=mk$. The exact independence number and an attaining character can be computed in $O(\log^2 N)$ arithmetic operations on $O(\log N)$-bit integers. The input is the three integers $m,k,s$ describing the quotient. An explicit list of all vertices of a maximum independent set can of course have size proportional to $N$.
+
+For a proposed integer size $1\le h\le N/2$, the first character residue $ki$ must lie in $[h,N-h]$. This restricts $i$ to an integer interval $[I,J]\subseteq[0,m-1]$. At fixed $i$, the possible second residues modulo $N$ are exactly those congruent to $-si\pmod m$. Thus the number of feasible residue pairs is
+
+$$
+\sum_{i=I}^{J}\left(
+\left\lfloor\frac{N-h+si}{m}\right\rfloor-
+\left\lfloor\frac{h-1+si}{m}\right\rfloor
+\right).
+$$
+
+A positive count is equivalent to feasibility. Binary search finds the greatest feasible $h$. A second binary search on the endpoint $J$ finds the first feasible row, giving its two character residues. For a connected cyclic input $(N,a,b)$, use $k=\gcd(N,a)$, $m=N/k$, and $s\equiv-b(a/k)^{-1}\pmod m$ (take $s=0$ if $m=1$). The relations $(m,0),(s,k)$ hold and their determinant is $N$, so they give the required basis.
+
+For the complexity claim, let $F(n,M,A,B)=\sum_{i=0}^{n-1}\lfloor(Ai+B)/M\rfloor$. Removing the integer quotients of $A,B$ by $M$ adds explicit arithmetic progressions, leaving $0\le A,B<M$. Put $An+B=qM+r$, $0\le r<M$. When $q=0$ the remaining sum is zero. Otherwise $A>0$ and counting the terms at each positive height $j$ gives
+
+$$
+F(n,M,A,B)=\sum_{j=1}^q\left(n-\left\lceil\frac{Mj-B}{A}\right\rceil\right)
+=F(q,A,M,r).
+$$
+
+At each recursion the modulus drops from $M$ to $A$, and the next reduction replaces $M$ by its remainder modulo $A$. This is the Euclidean algorithm. Each binary-search comparison therefore uses $O(\log N)$ arithmetic operations. [Exact evaluator](exact.py)
+
 ## Two consequences
 
 **The circle problem.** Write two nonzero rational circle differences as $a/N,b/N$ with their least common denominator $N$. For every $y\in[0,1/N)$, a measurable avoiding set occupies at most $\alpha$ of the points $y+j/N$. Integration gives an upper bound of $\alpha/N$ on its normalized measure. Taking the union of $[j/N,(j+1)/N)$ over a maximum independent set attains it. Thus the displayed formula divided by $N$ is the exact Motzkin density. Together with the authors' Theorem 1.2 for pairs containing an irrational difference, this gives the density for every pair on the circle. Equivalently, the character lower bound of Candela, Chamizo and Córdoba is exact for two circle differences. [Candela et al., Theorem 1.2](https://doi.org/10.1134/S0081543821040039), [Candela, Chamizo and Córdoba, Theorem 6.2 and Section 6](https://arxiv.org/abs/2408.09301)
