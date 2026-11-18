@@ -1,11 +1,11 @@
-"""Exact upper and lower certificates for differences 1, 50 and 57."""
+"""Exact finite-word checks for the counterexample and the small exceptions."""
 
 from fractions import Fraction
 
 DIFFERENCES = (1, 50, 57)
 
 
-def dense_prefix_word(length, density):
+def dense_prefix_word(length, density, differences=DIFFERENCES):
     """Can every nonempty prefix have density strictly above the threshold?"""
     numerator, denominator = density.as_integer_ratio()
     needed = length * numerator // denominator + 1
@@ -13,7 +13,7 @@ def dense_prefix_word(length, density):
         sum(
             1 << j
             for j in range(length)
-            if abs(i - j) in DIFFERENCES
+            if abs(i - j) in differences
         )
         for i in range(length)
     ]
@@ -60,6 +60,49 @@ def dense_prefix_word(length, density):
     return search((1 << length) - 1, 0)
 
 
+# Gap, k, numerator, denominator, and length of the upper-bound certificate.
+SMALL_CASES = (
+    (5, 2, 1, 3, 3),
+    (5, 3, 4, 11, 11),
+    (5, 4, 2, 5, 5),
+    (5, 5, 1, 3, 128),
+    (5, 7, 3, 8, 16),
+    (5, 12, 5, 13, 39),
+    (7, 2, 3, 10, 10),
+    (7, 3, 5, 13, 13),
+    (7, 4, 2, 5, 5),
+    (7, 5, 6, 17, 17),
+    (7, 6, 3, 7, 7),
+    (7, 7, 1, 3, 128),
+    (7, 9, 2, 5, 128),
+    (7, 11, 5, 12, 24),
+    (7, 14, 2, 5, 128),
+    (7, 16, 7, 17, 51),
+    (7, 18, 8, 19, 38),
+    (7, 23, 5, 12, 128),
+    (7, 25, 11, 26, 78),
+    (7, 32, 14, 33, 99),
+)
+
+
+def has_modular_witness(differences, density):
+    for i, first in enumerate(differences):
+        for second in differences[i + 1:]:
+            period = first + second
+            if (density * period).denominator != 1:
+                continue
+            width = int(density * period)
+            for step in range(1, period):
+                if any(min(step * d % period, -step * d % period) < width for d in differences):
+                    continue
+                points = {x for x in range(period) if step * x % period < width}
+                if len(points) == width and all(
+                    (x + d) % period not in points for x in points for d in differences
+                ):
+                    return True
+    return False
+
+
 if __name__ == "__main__":
     exact = Fraction(25, 58)
     residues = {i for i in range(58) if (25 * i) % 58 < 25}
@@ -71,3 +114,10 @@ if __name__ == "__main__":
     predicted = Fraction(4 * 50 - 2, 9 * 50 + 9)
     assert predicted - exact == Fraction(1, 2958)
     print("Exact density 25/58. Conjecture 39 predicts 22/51.")
+
+    for gap, k, numerator, denominator, length in SMALL_CASES:
+        density = Fraction(numerator, denominator)
+        differences = (1, k, k + gap)
+        assert has_modular_witness(differences, density), differences
+        assert not dense_prefix_word(length, density, differences), differences
+    print(f"Verified all {len(SMALL_CASES)} small exceptional cases.")

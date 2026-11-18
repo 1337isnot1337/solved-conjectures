@@ -77,4 +77,4 @@ Current CUT continuation details: `cut-arithmetic-periodicity/LEAN_PLAN.md`.
 The first monolithic two-pile check was stopped after exceeding 10 GiB.
 Use cached successor matrices and rowwise proofs before retrying that stage.
 
-The [distance-graph note](distance-graph-densities/PROOF.md) adds two formalization targets. Conjecture 38 uses the strict prefix reduction, strip shortening and finite strip decision. Conjecture 39 uses the period-58 construction and length-116 exclusion. Neither currently has a Lean proof.
+The [distance-graph note](distance-graph-densities/PROOF.md) adds two formalization targets. Conjecture 38 uses the strict prefix reduction, strip shortening and finite strip decision. Conjecture 39 uses the period-58 construction and length-116 exclusion. The [full classification](distance-graph-densities/CLASSIFICATION.md) also needs the nine-cycle strip and the 20 small cases. These results await Lean formalization.
