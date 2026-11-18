@@ -6,7 +6,6 @@ This repository contains three **unrefereed**, independently reproducible mathem
 | --- | --- | --- | --- |
 | [L-solitaire limit shapes](l-solitaire-limit-shapes/) | Eriksson--Jonsson--Sjoestrand, *Limit shapes of stable and recurrent configurations of a generalized Bulgarian solitaire* (2020), Conjecture 1 **as published** | Counterexample at the permitted fixed scale `a_n=1`; complementary theorem proves the conjectured implication whenever `a_n -> infinity` | Full [four-page note](l-solitaire-limit-shapes/proof.pdf), [text proof](l-solitaire-limit-shapes/PROOF.md), exact verifier |
 | [Denominator degree](pham-denominator-degree/) | Nhung Pham, *Limiting behavior in growth of Bulgarian solitaire orbits* (2022), the **unnumbered exact reduced-denominator degree** conjecture in section 6 | Primitive necklace of length 10 has reduced denominator degree 5 | [Proof](pham-denominator-degree/PROOF.md), exact coefficient certificate and verifier |
-
 | [Li's coefficient-sign prediction](li-coefficient-sign/) | Ethan Y. H. Li, *A quantitative way to e-positivity of trees* (arXiv:2503.09484v2, 2026), Problem 4.9 and the **first** question of Problem 4.6 | An explicit 31-vertex **non-spider** CPET tree has `[e_3e_2^14]X_T = +29`, eight connected triple-plus-pairs partitions, and a degree-4 vertex with only one leaf neighbor | [Proof PDF](li-coefficient-sign/proof.pdf), [text proof](li-coefficient-sign/PROOF.md), [novelty audit](li-coefficient-sign/NOVELTY.md), exact verifiers |
 
 ## Precise scope
