@@ -319,3 +319,5 @@ At the paused checkpoint, the accepted source build and refreshed audit passed
 over 3,738 theorem declarations. Both newly registered decision modules passed
 independent kernel replay. This count excludes all unregistered experimental
 three-pile modules and is not a count of independent mathematical results.
+
+The [five-speed loneliness spectrum](five-speed-spectrum/PROOF.md) has a written computer-assisted proof and an exhaustive arithmetic verifier. Its Lean formalization is open.

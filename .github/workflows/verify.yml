@@ -47,3 +47,5 @@ jobs:
         run: python3 nonmixed-gap-packing/verify.py
       - name: Check Haralambis three-difference rotation certificates
         run: python3 haralambis-three-differences/verify.py
+      - name: Verify the five-speed loneliness spectrum
+        run: python3 five-speed-spectrum/verify.py
