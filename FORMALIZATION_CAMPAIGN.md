@@ -80,3 +80,5 @@ Use cached successor matrices and rowwise proofs before retrying that stage.
 The [distance-graph note](distance-graph-densities/PROOF.md) adds two formalization targets. Conjecture 38 uses the strict prefix reduction, strip shortening and finite strip decision. Conjecture 39 uses the period-58 construction and length-116 exclusion. The [full classification](distance-graph-densities/CLASSIFICATION.md) also needs the nine-cycle strip and the 20 small cases. These results await Lean formalization.
 
 The [two-difference compact-group theorem](two-difference-motzkin/PROOF.md) requires the signed square-grid construction, integration over the relation lattice, finite-quotient approximation and density of character restrictions. Its Lean proof is pending.
+
+The [symmetric four-point density theorem](symmetric-four-point-density/PROOF.md) reduces to the two finite interval obstructions, their density consequences and the periodic constructions. All three steps await formalization.

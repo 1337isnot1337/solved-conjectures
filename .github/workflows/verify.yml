@@ -41,3 +41,5 @@ jobs:
           python3 distance-graph-densities/counterexample.py
       - name: Check the two-difference Motzkin formula
         run: python3 two-difference-motzkin/verify.py
+      - name: Check the symmetric four-point packing and covering theorem
+        run: python3 symmetric-four-point-density/verify.py

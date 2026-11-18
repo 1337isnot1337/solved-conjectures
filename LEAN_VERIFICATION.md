@@ -203,3 +203,5 @@ performance limits are in `cut-arithmetic-periodicity/LEAN_PLAN.md`.
 The [two distance-graph results](distance-graph-densities/PROOF.md) have written proofs and executable finite verifiers. The [classification for every parameter](distance-graph-densities/CLASSIFICATION.md) extends both families. Their Lean formalizations are pending.
 
 The [two-difference Motzkin identity](two-difference-motzkin/PROOF.md) has a written proof and finite checks. Its compact-group theorem awaits Lean formalization.
+
+The [Liu–Zhu packing and Natalchenko–Sagdeev covering proof](symmetric-four-point-density/PROOF.md) is a written argument with finite exact-cover checks. Lean formalization is pending.
