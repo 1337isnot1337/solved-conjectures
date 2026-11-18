@@ -11,3 +11,5 @@ import Conjectures.CutPeriodMex
 import Conjectures.CutPeriodParts2Certificate
 import Conjectures.BinaryFastComposition
 import Conjectures.CutPeriodCertifiedMex
+import Conjectures.BinarySetCertificate
+import Conjectures.FiniteIntervalCertificate

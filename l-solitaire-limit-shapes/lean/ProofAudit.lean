@@ -31,6 +31,8 @@ run_cmd do
     `CutPeriod.CollisionACertificate.rejects, `CutPeriod.CollisionBCertificate.rejects,
     `CutPeriod.MissingACertificate.rejects, `CutPeriod.MissingBCertificate.rejects,
     `CutPeriod.gameA_mex_of_options, `CutPeriod.gameB_mex_of_options,
+    `BinaryAutomata.maskOfList_eq_of_normalized,
+    `FiniteCertificate.checked_interval_rows,
     `CutPeriod.GraphCertificate.correct, `CutPeriod.LowerCertificate.correct]
   for name in required do
     let _ ← getConstInfo name

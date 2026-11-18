@@ -96,8 +96,26 @@ still experimental; do not raise its status from generated data alone.
 Splitting the lookup definitions alone did not fix the failure: the second
 trial also hit the interpreter memory limit after 90.60 seconds, maximum RSS
 6,131,908 KiB. Its data-only prefix passed in 39.24 seconds at 2,542,740 KiB.
-The current temporary full-file profile disables `Elab.async` and includes
-progress markers; it is an investigation, not a checked three-pile result.
+Disabling `Elab.async` kept a temporary profile bounded at 2,843,424 KiB; it
+was interrupted after 5:33.95 without a complete proof. A synchronous build
+with style linters disabled was also interrupted after 12:50.66, maximum RSS
+3,854,436 KiB. Neither run is an accepted three-pile proof.
+
+The producer now emits 39 modules for three piles: shared product data,
+27 transition blocks of at most 256 states, a checked aggregation, shared
+subset data, eight refinement/final blocks, and the final certificate. The
+first transition block passed in 13 seconds (whole command 14.31 seconds) at
+1,773,052 KiB maximum RSS. `FiniteIntervalCertificate.checked_interval_rows`
+provides exact interval coverage. The final aggregation chooses the unique
+256-state block containing each index. A module manifest records every module
+that must be kernel-rechecked before the group can be registered.
+
+`BinarySetCertificate` supplies a structural sorted-list set checker and proves
+its equality implies equality of the original masks. The library `mergeSort`
+stuck at its well-founded recursion proof in a tiny kernel-reduction control,
+so it is not used for this checker. Large normalized-row trials hit a 3 GB
+limit while elaborating shared subset data; no normalized large-row benchmark
+has passed yet. The active three-pile producer still uses the original masks.
 
 ## Remaining semantic connection
 

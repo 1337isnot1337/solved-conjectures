@@ -10,6 +10,7 @@ modules=(
   Conjectures.War
   Conjectures.Denominator
   Conjectures.FiniteCertificate
+  Conjectures.FiniteIntervalCertificate
   Conjectures.Egyptian
   Conjectures.EgyptianBounds
   Conjectures.EgyptianFinite
@@ -19,6 +20,7 @@ modules=(
   Conjectures.BinaryArithmetic
   Conjectures.BinaryComposition
   Conjectures.BinaryFastComposition
+  Conjectures.BinarySetCertificate
   Conjectures.BinaryEncoding
   Conjectures.BinaryBoolean
   Conjectures.BinaryOrder

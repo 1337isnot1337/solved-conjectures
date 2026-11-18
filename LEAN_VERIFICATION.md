@@ -284,3 +284,15 @@ either game theorem is complete. No finite error check supplies that hypothesis.
 
 The added modules passed source builds and kernel replay. The refreshed
 whitelist audit accepted 3,710 project theorem declarations, including helpers.
+
+Both hosted workflows passed for the two-pile checkpoint `26b5c11` and the
+error-language checkpoint `a6f4d06` on `main`. The three-pile group remains
+experimental. Its current modular build checks short row blocks with explicit
+interval coverage, rather than retaining the entire finite proof in one file.
+
+`BinarySetCertificate.lean` proves a structural list-based set equality check
+implies the original mask equality. `FiniteIntervalCertificate.lean` proves
+that a checked proof list covers exactly its recorded numerical interval.
+These are general certificate helpers, not completed game theorems.
+Both helpers passed source builds and kernel replay; the refreshed package
+audit accepted 3,725 theorem declarations using only the permitted axioms.

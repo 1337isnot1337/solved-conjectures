@@ -9,6 +9,7 @@ import argparse
 import hashlib
 import importlib.util
 import json
+import re
 from pathlib import Path
 import sys
 
@@ -374,13 +375,14 @@ def sum_lean(record, by_name):
     use_fast=k>=3
     lookup=chunked_lookup if use_fast else balanced_lookup
     import_fast='import Conjectures.BinaryFastComposition\n' if use_fast else ''
+    execution_options='set_option Elab.async false\nset_option linter.all false\n' if use_fast else ''
     out=f'''-- Generated data. Every transition-cache row and refinement row is checked.
 import Conjectures.BinaryComposition
 import Conjectures.CutPeriodGraphCertificate
 import Conjectures.CutPeriodPiles
 {import_left}{import_fast}namespace CutPeriod.Parts{k}Certificate
 open BinaryAutomata
-set_option maxRecDepth 100000
+{execution_options}set_option maxRecDepth 100000
 set_option maxHeartbeats 0
 set_option exponentiation.threshold {N}
 
@@ -543,6 +545,100 @@ end CutPeriod.Parts{k}Certificate
     return out
 
 
+def modular_sum_sources(source, record, by_name):
+    """Release per-command proof state between bounded certificate blocks."""
+    k=int(record['name'][5:]); raw_n=len(record['raw_states'])
+    N=len(by_name[record['inputs'][0]]['table'])*len(by_name['graph']['table'])*2
+    ns=f'CutPeriod.Parts{k}Certificate'
+    base=f'Conjectures.CutPeriodParts{k}'
+    block_size=256
+    options='''open BinaryAutomata
+set_option Elab.async false
+set_option linter.all false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+'''+f'set_option exponentiation.threshold {N}\n'
+    def frame(imports):
+        return ''.join('import '+name+'\n' for name in imports)+f'namespace {ns}\n'+options
+    def finish(s):
+        return s+f'\nend {ns}\n'
+    def row_block(name,total,lo,hi,body,row_prefix):
+        pairs='['+','.join(f'⟨{i},{row_prefix}{i}⟩' for i in range(lo,hi))+']'
+        return f'''theorem {name} : ∀ q : Fin {total}, {lo}≤q.val → q.val<{lo+block_size} →
+    {body} := by
+  have h : ∀ q : Fin {total}, {lo}≤q.val → q.val<{hi} → {body} :=
+    FiniteCertificate.checked_interval_rows (n:={total}) (lo:={lo}) (len:={hi-lo})
+      (P:=fun q => {body}) {pairs} (by decide +kernel)
+  intro q hlo hhi
+  exact h q hlo (by have hq := q.isLt; omega)
+'''
+    def aggregate(name,total,body,block_prefix):
+        count=(total+block_size-1)//block_size
+        pairs='['+','.join(f'⟨{i},{block_prefix}{i}⟩' for i in range(count))+']'
+        return f'''theorem {name} : ∀ q : Fin {total}, {body} := by
+  let Block : Fin {count} → Prop := fun i => ∀ q : Fin {total},
+    i.val*{block_size}≤q.val → q.val<(i.val+1)*{block_size} → {body}
+  have hb : ∀ i, Block i :=
+    FiniteCertificate.checked_list_rows (P:=Block) {pairs} (by decide +kernel)
+  intro q
+  let i : Fin {count} := ⟨q.val/{block_size},by have hq := q.isLt; omega⟩
+  apply hb i q
+  all_goals dsimp only [i]; have hq := q.isLt; omega
+'''
+    sources={}
+    manifest=[]
+    def add(suffix,body):
+        name=base+suffix
+        sources[name.replace('.','/')+'.lean']=body
+        manifest.append(name)
+    split_at=source.index('theorem transition_row_0')
+    add('Data',finish(source[:split_at]))
+    transition_rows=re.findall(r'theorem transition_row_\d+ :[^\n]*\n',source)
+    assert len(transition_rows)==N
+    transition_blocks=[]
+    trans_body='∀ d, cachedSuccessors q d=fast q d'
+    for lo in range(0,N,block_size):
+        hi=min(N,lo+block_size); b=lo//block_size
+        suffix=f'TransitionRows{b}'
+        block=frame([base+'Data','Conjectures.FiniteIntervalCertificate'])
+        block+=''.join(transition_rows[lo:hi]).replace('by decide\n','by decide +kernel\n')
+        block+=row_block(f'transition_block_{b}',N,lo,hi,trans_body,'transition_row_')
+        add(suffix,finish(block)); transition_blocks.append(base+suffix)
+    rep_at=source.index('def representativeData_chunk_0')
+    transitions=frame(transition_blocks)
+    transitions+=aggregate('checked_fast',N,trans_body,'transition_block_')
+    transitions+=source[source.index('theorem checked_successors'):rep_at]
+    add('Transitions',finish(transitions))
+    start_at=source.index('theorem checked_start')
+    state_data=frame([base+'Transitions'])+source[rep_at:start_at]
+    add('StateData',finish(state_data))
+    refinement_rows=re.findall(r'theorem refinement_row_\d+ :.*? := by decide\n',source,re.S)
+    final_rows=re.findall(r'theorem final_row_\d+ :[^\n]*\n',source)
+    assert len(refinement_rows)==raw_n and len(final_rows)==raw_n
+    step_body='''∀ d, maskOfList ((active (next q d)).map Fin.val)=
+      maskOfList (((active q).flatMap (fun s => composed.successors s d)).map Fin.val)'''
+    final_body='(active q).any composed.final=machine.final (label q)'
+    refinement_blocks=[]
+    for lo in range(0,raw_n,block_size):
+        hi=min(raw_n,lo+block_size); b=lo//block_size
+        suffix=f'RefinementRows{b}'
+        block=frame([base+'StateData','Conjectures.FiniteIntervalCertificate'])
+        block+=''.join(refinement_rows[lo:hi]).replace('by decide\n','by decide +kernel\n')
+        block+=''.join(final_rows[lo:hi]).replace('by decide\n','by decide +kernel\n')
+        block+=row_block(f'refinement_block_{b}',raw_n,lo,hi,step_body,'refinement_row_')
+        block+=row_block(f'final_block_{b}',raw_n,lo,hi,final_body,'final_row_')
+        add(suffix,finish(block)); refinement_blocks.append(base+suffix)
+    main=frame(refinement_blocks)
+    main+=source[start_at:source.index('theorem refinement_row_0')]
+    main+=aggregate('checked_step',raw_n,step_body,'refinement_block_')
+    main+=source[source.index('theorem checked_label_step'):source.index('theorem final_row_0')]
+    main+=aggregate('checked_final',raw_n,final_body,'final_block_')
+    main+=source[source.index('theorem language'):]
+    add('Certificate',main)
+    sources[f'Conjectures/CutPeriodParts{k}.modules']=''.join(name+'\n' for name in manifest)
+    return sources
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--parts-until",type=int,default=1,choices=range(1,10))
@@ -582,7 +678,13 @@ def main():
                 target.with_name('CutPeriod'+namespace(record['name'])+'.lean').write_text(boolean_lean(record,by_name))
     for k in range(2,args.parts_until+1):
         part_path=target.with_name(f"CutPeriodParts{k}Certificate.lean")
-        part_path.write_text(sum_lean(by_name[f"parts{k}"],by_name))
+        record=by_name[f"parts{k}"]
+        source=sum_lean(record,by_name)
+        if k>=3:
+            for relative,body in modular_sum_sources(source,record,by_name).items():
+                (target.parent.parent/relative).write_text(body)
+        else:
+            part_path.write_text(source)
     print(f"Wrote {path.stat().st_size} bytes of certificate data and the graph Lean certificate")
 
 
