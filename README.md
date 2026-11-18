@@ -11,6 +11,7 @@ This repository contains **unrefereed** mathematics notes with reproducible chec
 | [Line-size sets](erdos-607-line-sizes/PROOF.md) | Václav Kotesovec’s conjectured exponential base for the counting function of Erdős Problem 607 (OEIS A401948) | Sharp asymptotic with an exact leading prefactor. Szemerédi and Trotter previously established the original Erdős bound. | [Proof](erdos-607-line-sizes/PROOF.md) and [exact generating-function verifier](erdos-607-line-sizes/verify.py) |
 | [Growing rectangles](rectangle-partition-asymptotics/PROOF.md) | Gajdzica and Zakarczemny, *A note on the partition function of a rectangle*, Remark 5.9, both growing-side predictions | Uniform leading asymptotic for $\log p(h,w)$ over all widths $w\ge h$ as $h$ grows | [Proof](rectangle-partition-asymptotics/PROOF.md) and [packing verifier](rectangle-partition-asymptotics/verify.py) |
 | [Three-player War](spivey-multiplayer-war/PROOF.md) | Michael Z. Spivey, *Cycles in War* (2010), Question 5, ordinary deals with a non-power-of-two number of players | Three deterministic winner-first conventions admit standard deals cycling with all three players active. A six-turn class calculation proves the 23-card example | [Proof](spivey-multiplayer-war/PROOF.md) and [exact replays](spivey-multiplayer-war/verify.py) |
+| [CUT Family B](cut-family-b/PROOF.md) | Ellis and Thanatipanonda (2022), Section 7, Conjecture 2 | Proved with a sharp converse. The full nim-sequence agrees with the base game exactly when the smallest odd cut above 1 exceeds three times the smallest even cut | [Proof](cut-family-b/PROOF.md) and [game-rule verifier](cut-family-b/verify.py) |
 
 ## Precise scope
 
@@ -59,6 +60,7 @@ python3 batista-egyptian-fractions/verify.py
 python3 erdos-607-line-sizes/verify.py
 python3 rectangle-partition-asymptotics/verify.py
 python3 spivey-multiplayer-war/verify.py
+python3 cut-family-b/verify.py
 ```
 
 `l-solitaire-limit-shapes/verify.py` is the original embedded PDF attachment, extracted byte-for-byte. The finite search checks all pick-layer sets and integer partitions for deck sizes 1 through 14 and separately verifies the specific counterexample for sizes 1 through 1000. Exhaustive tests do not replace the general argument in the PDF.
