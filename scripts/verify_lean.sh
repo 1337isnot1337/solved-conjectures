@@ -18,6 +18,7 @@ modules=(
   Conjectures.BinaryAutomata
   Conjectures.BinaryArithmetic
   Conjectures.BinaryComposition
+  Conjectures.BinaryFastComposition
   Conjectures.BinaryEncoding
   Conjectures.BinaryBoolean
   Conjectures.BinaryOrder
@@ -29,6 +30,7 @@ modules=(
   Conjectures.CutPeriodLowerCertificate
   Conjectures.CutPeriodParameters
   Conjectures.CutPeriodMex
+  Conjectures.CutPeriodParts2Certificate
 )
 for module in "${modules[@]}"; do
   printf 'Kernel recheck: %s\n' "$module"

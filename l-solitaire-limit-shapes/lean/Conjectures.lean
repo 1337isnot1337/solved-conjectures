@@ -8,3 +8,5 @@ import Conjectures.BinaryBoolean
 import Conjectures.CutPeriodLowerCertificate
 import Conjectures.CutPeriodParameters
 import Conjectures.CutPeriodMex
+import Conjectures.CutPeriodParts2Certificate
+import Conjectures.BinaryFastComposition

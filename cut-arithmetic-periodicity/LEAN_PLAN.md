@@ -23,6 +23,10 @@ in `l-solitaire-limit-shapes/lean/Conjectures`:
 - `CutPeriodLower` and `CutPeriodLowerCertificate`: exact lower-value semantics
   and the checked 111-state representation / 23-state quotient, for every word.
 - `BinaryBoolean`: Boolean product language semantics for arbitrary DFAs.
+- `BinaryFastComposition`: eight checked digit-choice rows and a generic proof
+  that their pruned successors equal the original 32-guess composition rule.
+- `CutPeriodParts2Certificate`: all transition-cache and subset/minimization
+  checks, plus exact recognition of actual two-pile lists at every size.
 - `CutPeriodParameters`: least period 12, saltus 8, earliest start seven for the
   proposed function, independently of the unfinished game identification.
 
@@ -74,13 +78,23 @@ Finite checks use individual row theorems and proof-list aggregation. Run one
 heavy builder at a time with `LEAN_NUM_THREADS=1`; project Lean invocations use
 `-j1 -M4500`. A virtual-address-space cap prevented thread creation and is not
 appropriate here; use Lean's own memory limit.
-`CutPeriodParts2Certificate.lean` is the current experimental emitted module;
-it is not yet an accepted stage.
+The two-pile stage passed its source build, whitelist audit and kernel replay.
+Its refreshed source build took 330 seconds with maximum RSS 2,823,976 KiB.
+Set `exponentiation.threshold` to the finite NFA size to permit direct numerical
+reduction of its bounded bit masks. The next experimental emitted module is
+`CutPeriodParts3Certificate.lean`; it uses the checked digit-choice table for
+transition-cache certification. Do not promote it before its checks pass.
+Its first build hit Lean's memory limit in the interpreter after 96 seconds
+(maximum RSS 5,509,236 KiB). The revised producer splits large lookup definitions
+into 64-row helper declarations to bound per-declaration caches. This stage is
+still experimental; do not raise its status from generated data alone.
 
 ## Remaining semantic connection
 
 Items 1–4, 6 and the candidate-function part of 9 below are now checked.
-Items 5, 7, 8 and 10 remain open.
+Item 5 is checked through two piles. Groups three through nine and items 7, 8
+and 10 remain open. `CutPeriodMex` supplies the all-number transfer in item 8
+conditional on its explicit option/error-language certificate hypotheses.
 
 1. Fixed-width encoding: encode both numerical tracks into exactly `L` digits;
    prove decoding, length and uniqueness. `decodeHigh` is low decoding of the

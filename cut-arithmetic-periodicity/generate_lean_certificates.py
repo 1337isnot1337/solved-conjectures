@@ -162,6 +162,26 @@ def balanced_lookup(name, lean_type, items):
     return f'def {name} ({binder} : Nat) : {lean_type} := {body}\n'
 
 
+def chunked_lookup(name, lean_type, items):
+    """Keep elaboration and code-generation caches local to small declarations."""
+    if len(items)<=256:
+        return balanced_lookup(name,lean_type,items)
+    chunk_size=64
+    out=[]
+    calls=[]
+    for lo in range(0,len(items),chunk_size):
+        chunk_name=f'{name}_chunk_{lo//chunk_size}'
+        out.append(balanced_lookup(chunk_name,lean_type,items[lo:lo+chunk_size]))
+        calls.append(f'({chunk_name} (idx-{lo}))')
+    def dispatch(lo,hi):
+        if hi-lo==1:
+            return calls[lo]
+        mid=(lo+hi)//2
+        return f'(if idx<{mid*chunk_size} then {dispatch(lo,mid)} else {dispatch(mid,hi)})'
+    out.append(f'def {name} (idx : Nat) : {lean_type} := {dispatch(0,len(calls))}\n')
+    return ''.join(out)
+
+
 def lower_lean(record):
     raw_n = len(record['raw_states'])
     n = len(record['table'])
@@ -324,11 +344,14 @@ def sum_lean(record, by_name):
     raw_n=len(record['raw_states']); n=len(record['table'])
     left_ns='GraphCertificate' if k==2 else f'Parts{k-1}Certificate'
     import_left='' if k==2 else f'import Conjectures.CutPeriodParts{k-1}Certificate\n'
+    use_fast=k>=3
+    lookup=chunked_lookup if use_fast else balanced_lookup
+    import_fast='import Conjectures.BinaryFastComposition\n' if use_fast else ''
     out=f'''-- Generated data. Every transition-cache row and refinement row is checked.
 import Conjectures.BinaryComposition
 import Conjectures.CutPeriodGraphCertificate
 import Conjectures.CutPeriodPiles
-{import_left}namespace CutPeriod.Parts{k}Certificate
+{import_left}{import_fast}namespace CutPeriod.Parts{k}Certificate
 open BinaryAutomata
 set_option maxRecDepth 100000
 set_option maxHeartbeats 0
@@ -394,17 +417,33 @@ def semantic : NFA {N} := sumMachine encoding {left_ns}.machine GraphCertificate
             row.append(targets)
         successor_table.append(row)
     successor_rows=[lean_array('['+','.join(map(str,ts))+']' for ts in row) for row in successor_table]
-    out+=balanced_lookup('successorData','Array (List Nat)',successor_rows)
+    out+=lookup('successorData','Array (List Nat)',successor_rows)
     out+=f'''def cachedSuccessors (s : Fin {N}) (d : Digit) : List (Fin {N}) :=
   (successorData s.val)[d.val]!.map (Fin.ofNat {N})
 
 def composed : NFA {N} := {{semantic with successors := cachedSuccessors}}
 '''
+    if use_fast:
+        out+=f'''def fast : Fin {N} → Digit → List (Fin {N}) :=
+  fastSuccessors encoding {left_ns}.machine GraphCertificate.machine
+    {left_ns}.machine.rejectingSink GraphCertificate.machine.rejectingSink
+theorem fast_eq (s : Fin {N}) (d : Digit) : fast s d=semantic.successors s d :=
+  fastSuccessors_eq encoding _ _ _ _ s d
+'''
+    target='fast' if use_fast else 'semantic.successors'
     for i in range(N):
-        out+=f'theorem transition_row_{i} : ∀ d, cachedSuccessors ({i} : Fin {N}) d=semantic.successors ({i} : Fin {N}) d := by decide\n'
-    out+=f'''theorem checked_successors : ∀ s d, cachedSuccessors s d=semantic.successors s d :=
+        out+=f'theorem transition_row_{i} : ∀ d, cachedSuccessors ({i} : Fin {N}) d={target} ({i} : Fin {N}) d := by decide\n'
+    if use_fast:
+        out+=f'''theorem checked_fast : ∀ s d, cachedSuccessors s d=fast s d :=
   {aggregate_rows('transition_row_',N)}
-
+theorem checked_successors : ∀ s d, cachedSuccessors s d=semantic.successors s d :=
+  fun s d => (checked_fast s d).trans (fast_eq s d)
+'''
+    else:
+        out+=f'''theorem checked_successors : ∀ s d, cachedSuccessors s d=semantic.successors s d :=
+  {aggregate_rows('transition_row_',N)}
+'''
+    out+='''
 theorem composed_eq : composed=semantic := by
   have h : cachedSuccessors=semantic.successors := funext (fun s => funext (checked_successors s))
   unfold composed
@@ -414,11 +453,11 @@ theorem composed_eq : composed=semantic := by
     for S in record['raw_states']:
         active.append('['+','.join(str((i*R+j)*2+c) for i,j,c in S)+']')
     rows=lambda table:lean_array([lean_array(map(str,r)) for r in table])
-    out+=balanced_lookup('representativeData','List Nat',active)
-    out+=balanced_lookup('rawRow','Array Nat',[lean_array(map(str,r)) for r in record['raw_table']])
-    out+=balanced_lookup('labelData','Nat',list(map(str,record['labels'])))
-    out+=balanced_lookup('machineRow','Array Nat',[lean_array(map(str,r)) for r in record['table']])
-    out+=balanced_lookup('finalData','Bool',['true' if i in record['final'] else 'false' for i in range(n)])
+    out+=lookup('representativeData','List Nat',active)
+    out+=lookup('rawRow','Array Nat',[lean_array(map(str,r)) for r in record['raw_table']])
+    out+=lookup('labelData','Nat',list(map(str,record['labels'])))
+    out+=lookup('machineRow','Array Nat',[lean_array(map(str,r)) for r in record['table']])
+    out+=lookup('finalData','Bool',['true' if i in record['final'] else 'false' for i in range(n)])
     out+=f'''
 def machine : DFA (Fin {n}) := {{
   step := fun q d => Fin.ofNat {n} ((machineRow q.val)[d.val]!)

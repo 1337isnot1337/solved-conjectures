@@ -26,6 +26,8 @@ run_cmd do
     `CutPeriod.candidate_least_period, `CutPeriod.candidate_saltus,
     `CutPeriod.candidate_least_start,
     `CutPeriod.mex_of_error_languages,
+    `CutPeriod.Parts2Certificate.recognizes_piles,
+    `BinaryAutomata.fastSuccessors_eq,
     `CutPeriod.GraphCertificate.correct, `CutPeriod.LowerCertificate.correct]
   for name in required do
     let _ ← getConstInfo name

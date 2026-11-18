@@ -37,7 +37,8 @@ unproved premise of the completed theorem.
    `CutPeriodPiles`, `BinaryOrder` and `BinaryProjection` discharge complete
    fixed-width padding and the actual positive-pile-list connection.
    `CutPeriodLowerCertificate` checks the complete 23-state lower-value DFA.
-   Next: generated refinement certificates for pile groups, union and the
+   `CutPeriodParts2Certificate` now checks the two-pile group completely.
+   Next: generated refinement certificates for groups three through nine, union and the
    two mex emptiness checks, then the game theorem and minimal-period claims.
    The generator preserves all representations in a reproducible ignored JSON
    archive and emits the checked graph Lean certificate. Generated data alone
@@ -68,18 +69,18 @@ unformalized mathematical dependency.
 
 ## Next concrete checks
 
-The first two-pile generated module is `CutPeriodParts2Certificate.lean`.
-Its encoding/refinement checks are being tested against `BinaryComposition`;
-do not treat its generated data as accepted until the module and kernel checks
-pass. The generator supports `--parts-until N`, defaulting to the checked graph
+The two-pile generated module passed its source, axiom and kernel checks.
+The three-pile stage is now being checked. The generator supports
+`--parts-until N`, defaulting to the checked graph
 alone. Avoid generating every unchecked stage into the Lean source tree at
 once: build one stage, resolve its proof/performance issues, then proceed.
 
 Current CUT continuation details: `cut-arithmetic-periodicity/LEAN_PLAN.md`.
 The first monolithic two-pile check was stopped after exceeding 10 GiB.
 Use cached successor matrices and rowwise proofs before retrying that stage.
-Those changes are implemented; the current trial also uses balanced table
-lookup, symbolic product inverses and checked proof-list aggregation. See the
+Those changes passed the two-pile stage, together with balanced table lookup,
+symbolic product inverses and checked proof-list aggregation. Larger groups
+also use the kernel-checked digit-choice optimization. See the
 continuation plan for measured limits and approaches already ruled out.
 
 The [distance-graph note](distance-graph-densities/PROOF.md) adds two formalization targets. Conjecture 38 uses the strict prefix reduction, strip shortening and finite strip decision. Conjecture 39 uses the period-58 construction and length-116 exclusion. The [full classification](distance-graph-densities/CLASSIFICATION.md) also needs the nine-cycle strip and the 20 small cases. These results await Lean formalization.

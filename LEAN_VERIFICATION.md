@@ -19,7 +19,7 @@ never additional Lean axioms.
 | Pham denominator degree | Partial | General finite-coefficient identity principle for rational formal power series; both exact polynomial certificates; both coprimality certificates. The orbit-count truncations and the published representation/degree bounds are explicit hypotheses. Reverse-solitaire enumeration and its limiting interpretation are not formalized. |
 | Batista Egyptian fractions | Complete | An ordered lexicographically first solution uniquely maximizes the last denominator for every admissible positive `k` outside residue class 1. The proof uses the elementary global comparison and a kernel-reduced exhaustive certificate below 100, with proved denominator bounds; no published comparison theorem is a hypothesis. |
 | CUT Family B | Partial, including both directions of the new threshold argument | All-size large-cut XOR inequality; mex uniqueness from the actual splitting rules; preservation under all added cuts above `3x`; explicit collision for each smaller admissible odd cut; difference by size `4x`; sharp threshold conditional on the published base formula. Identification of that formula with the base game's mex function is an explicit hypothesis. |
-| CUT arithmetic periodicity | Partial | Subset/refinement semantics, binary addition/XOR, complete padding, composition for actual positive pile lists, Boolean closure, and the candidate-graph and lower-value DFAs are formalized for all finite words. Concrete pile-group refinements, both mex emptiness certificates, exact least periods and the general decision test remain to formalize. |
+| CUT arithmetic periodicity | Partial | Binary semantics, complete padding, composition for actual positive pile lists, Boolean closure, candidate-graph and lower-value DFAs, and the concrete two-pile DFA are checked for all finite words. Exact additive parameters of the candidate function are proved. Groups three through nine, both mex emptiness certificates and the general decision test remain open. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Erdős 607 line sizes | Not formalized | Geometric realization, generating-function correspondence, and the local limit/asymptotic analysis remain to formalize. |
 | Growing rectangles | Not formalized | Packing injection, partition estimates, and uniform asymptotics remain to formalize. |
@@ -225,9 +225,9 @@ recognizes exactly positive sizes paired with a strictly smaller value,
 universally over input words. `BinaryBoolean.lean` supplies Boolean product
 semantics for the remaining error-language certificates.
 
-The generated two-pile module remains experimental until its source build,
-axiom audit and kernel recheck pass. None of these semantic components alone
-establishes either game's mex equation.
+The generated two-pile module has passed its source build, axiom audit and
+kernel recheck. None of these components alone establishes either game's mex
+equation.
 
 `CutPeriodParameters.lean` proves that the proposed function has least positive
 eventual additive period 12, unique saltus 8 at that period, and earliest start
@@ -245,6 +245,24 @@ The full source build, refreshed whitelist audit and all 23 listed module
 kernel rechecks passed locally for this checkpoint. Adding `CutPeriodMex`
 then passed its source build, kernel replay and a refreshed audit over 1,094
 project theorem declarations. Its error-language assumptions remain explicit;
-the two-pile certificate is being validated separately before registration.
+the two-pile certificate was validated separately before registration.
+
+## Complete two-pile certificate
+
+`CutPeriodParts2Certificate.lean` checks a cache of all 1,458 finite product-NFA
+states against the semantic composition rule, all 402 subset representations
+and all quotient labels in the 126-state minimized DFA. `recognizes_piles`
+proves its language is exactly the actual two-positive-pile relation, for every
+input word. The current source build, whitelist audit and kernel replay passed.
+The source build stayed below 3 GB RSS with the 4.5 GB Lean cap.
+
+`BinaryFastComposition.lean` checks an eight-row digit-choice table against the
+full numerical enumeration and proves a generic transition equality. Larger
+groups use that equality to avoid repeating the numerical enumeration in every
+cache row; no external computation or additional axiom is a premise.
+
+The refreshed package audit accepted 3,391 theorem declarations, including
+generated finite-row helpers. All newly registered modules passed kernel
+replay; this is a two-pile checkpoint, not a proof of the full games.
 
 The [Haralambis three-difference theorem](haralambis-three-differences/PROOF.md) has a written proof and an executable check of the signed-edge and rotation certificates. The general theorem has no Lean formalization.
