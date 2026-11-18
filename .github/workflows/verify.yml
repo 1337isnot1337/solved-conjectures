@@ -28,3 +28,5 @@ jobs:
         run: python3 erdos-607-line-sizes/verify.py
       - name: Verify rectangle packing and multiset recovery
         run: python3 rectangle-partition-asymptotics/verify.py
+      - name: Replay standard three-player War deals
+        run: python3 spivey-multiplayer-war/verify.py

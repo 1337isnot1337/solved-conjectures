@@ -11,10 +11,11 @@ authors:
 repository-code: "https://github.com/1337isnot1337/solved-conjectures"
 url: "https://github.com/1337isnot1337/solved-conjectures"
 abstract: >-
-  Six unrefereed research notes include a counterexample to the published
+  Seven unrefereed research notes include a counterexample to the published
   L-solitaire limit-shape conjecture, a counterexample to Pham's original
   exact denominator-degree conjecture, an explicit non-spider counterexample
   to Li's chromatic-symmetric-function coefficient-sign prediction, a proof of Batista's Egyptian-fraction congruence,
-  a sharp asymptotic for the number of realizable plane line-size sets, and a uniform
-  logarithmic asymptotic for partitions of growing rectangles.
+  a sharp asymptotic for the number of realizable plane line-size sets, a uniform
+  logarithmic asymptotic for partitions of growing rectangles, and standard
+  three-player deals answering Spivey's multiplayer War cycle question.
   Includes exact proofs, certificates, and reproducible Python verification.
