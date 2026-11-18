@@ -1,0 +1,20 @@
+name: verify both conjecture certificates
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify L-solitaire exhaustive finite checks
+        run: python3 l-solitaire-limit-shapes/verify.py
+      - name: Verify Pham exact main and dual certificates
+        run: |
+          python3 pham-denominator-degree/verify.py
+          python3 pham-denominator-degree/verify.py --dual --brute-depth 13
+      - name: Run Pham regression tests
+        run: cd pham-denominator-degree && python3 -m unittest discover -s tests -v
