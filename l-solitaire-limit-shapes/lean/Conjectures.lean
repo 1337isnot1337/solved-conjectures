@@ -10,3 +10,4 @@ import Conjectures.CutPeriodParameters
 import Conjectures.CutPeriodMex
 import Conjectures.CutPeriodParts2Certificate
 import Conjectures.BinaryFastComposition
+import Conjectures.CutPeriodCertifiedMex

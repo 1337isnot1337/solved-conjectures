@@ -254,18 +254,39 @@ def namespace(name):
     return name[0].upper()+name[1:]+'Certificate'
 
 
+def option_data_lean(by_name):
+    out='''-- Numerical DFA definitions; actual-option semantics is checked separately.
+import Conjectures.BinaryAutomata
+namespace CutPeriod.OptionData
+open BinaryAutomata
+'''
+    for tag in ('A','B'):
+        record=by_name['options'+tag]; n=len(record['table'])
+        out+=balanced_lookup('row'+tag,'Array Nat',[lean_array(map(str,r)) for r in record['table']])
+        out+=balanced_lookup('final'+tag,'Bool',['true' if i in record['final'] else 'false' for i in range(n)])
+        out+=f'''def machine{tag} : DFA (Fin {n}) := {{
+  step := fun q d => Fin.ofNat {n} ((row{tag} q.val)[d.val]!)
+  start := 0
+  final := fun q => final{tag} q.val
+}}
+'''
+    return out+'end CutPeriod.OptionData\n'
+
+
 def boolean_lean(record, by_name):
     inputs=record['inputs']
     counts=[len(by_name[name]['table']) for name in inputs]
     ns=[namespace(name) for name in inputs]
+    sources=['OptionData.machine'+name[-1] if name.startswith('options') else namespace(name)+'.machine'
+             for name in inputs]
     raw_n=len(record['raw_states']); n=len(record['table'])
     union=record['kind']=='union'
     op='(fun a b => a || b)' if union else ('(fun a b => a && b)' if record['kind']=='intersection' else '(fun a b => a && !b)')
     qtype=f'Fin {counts[0]}'
-    semantic=ns[0]+'.machine'
-    for c,src in zip(counts[1:],ns[1:]):
+    semantic=sources[0]
+    for c,src in zip(counts[1:],sources[1:]):
         qtype=f'({qtype} × Fin {c})'
-        semantic=f'({semantic}).product {src}.machine {op}'
+        semantic=f'({semantic}).product {src} {op}'
     reps=[]
     for state in record['raw_states']:
         rep=f'({state[0]} : Fin {counts[0]})'
@@ -274,7 +295,8 @@ def boolean_lean(record, by_name):
         reps.append(rep)
     out='-- Generated data; all Boolean-language refinements are checked by Lean.\n'
     out+='import Conjectures.BinaryBoolean\n'
-    out+=''.join('import Conjectures.CutPeriod'+src+'\n' for src in ns)
+    out+='import Conjectures.CutPeriodOptionData\n'
+    out+=''.join('import Conjectures.CutPeriod'+namespace(src)+'\n' for src in inputs if not src.startswith('options'))
     out+=f'''namespace CutPeriod.{namespace(record['name'])}
 open BinaryAutomata
 set_option maxRecDepth 100000
@@ -286,12 +308,17 @@ def semantic : DFA {qtype} := {semantic}
     out+=balanced_lookup('labelData','Nat',list(map(str,record['labels'])))
     out+=balanced_lookup('machineRow','Array Nat',[lean_array(map(str,r)) for r in record['table']])
     out+=balanced_lookup('finalData','Bool',['true' if i in record['final'] else 'false' for i in range(n)])
-    out+=f'''
+    if union:
+        out+=f'def machine : DFA (Fin {n}) := OptionData.machine{record["name"][-1]}\n'
+    else:
+        out+=f'''
 def machine : DFA (Fin {n}) := {{
   step := fun q d => Fin.ofNat {n} ((machineRow q.val)[d.val]!)
   start := 0
   final := fun q => finalData q.val
 }}
+'''
+    out+=f'''
 def rep (q : Fin {raw_n}) : {qtype} := representativeData q.val
 def label (q : Fin {raw_n}) : Fin {n} := Fin.ofNat {n} (labelData q.val)
 def next (q : Fin {raw_n}) (d : Digit) : Fin {raw_n} :=
@@ -521,6 +548,7 @@ def main():
     parser.add_argument("--parts-until",type=int,default=1,choices=range(1,10))
     parser.add_argument("--lower",action="store_true",help="emit the lower-value certificate")
     parser.add_argument("--boolean",action="store_true",help="emit union and error-language certificates")
+    parser.add_argument("--error-languages",action="store_true",help="emit the four error checks for numerical option DFAs")
     args=parser.parse_args()
     v.reachable_machine = reachable
     v.minimize = minimize
@@ -547,9 +575,10 @@ def main():
     by_name={r["name"]:r for r in records}
     if args.lower:
         target.with_name("CutPeriodLowerCertificate.lean").write_text(lower_lean(by_name['lower']))
-    if args.boolean:
+    if args.boolean or args.error_languages:
+        target.with_name('CutPeriodOptionData.lean').write_text(option_data_lean(by_name))
         for record in records:
-            if record['kind'] in ('union','intersection','difference'):
+            if record['kind'] in (('union','intersection','difference') if args.boolean else ('intersection','difference')):
                 target.with_name('CutPeriod'+namespace(record['name'])+'.lean').write_text(boolean_lean(record,by_name))
     for k in range(2,args.parts_until+1):
         part_path=target.with_name(f"CutPeriodParts{k}Certificate.lean")

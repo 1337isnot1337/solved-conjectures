@@ -31,6 +31,12 @@ modules=(
   Conjectures.CutPeriodParameters
   Conjectures.CutPeriodMex
   Conjectures.CutPeriodParts2Certificate
+  Conjectures.CutPeriodOptionData
+  Conjectures.CutPeriodCollisionACertificate
+  Conjectures.CutPeriodCollisionBCertificate
+  Conjectures.CutPeriodMissingACertificate
+  Conjectures.CutPeriodMissingBCertificate
+  Conjectures.CutPeriodCertifiedMex
 )
 for module in "${modules[@]}"; do
   printf 'Kernel recheck: %s\n' "$module"

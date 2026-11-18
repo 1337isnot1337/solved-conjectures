@@ -38,8 +38,12 @@ unproved premise of the completed theorem.
    fixed-width padding and the actual positive-pile-list connection.
    `CutPeriodLowerCertificate` checks the complete 23-state lower-value DFA.
    `CutPeriodParts2Certificate` now checks the two-pile group completely.
-   Next: generated refinement certificates for groups three through nine, union and the
-   two mex emptiness checks, then the game theorem and minimal-period claims.
+   All four numerical error-language refinements are now checked.
+   `CutPeriodCertifiedMex` reduces each complete game theorem to the explicit
+   hypothesis that its numerical option DFA recognizes actual legal splits.
+   Next: groups three through nine and the union refinements to discharge that
+   hypothesis. Candidate-function minimal-period claims are already checked;
+   identification with the games and the general decision test remain open.
    The generator preserves all representations in a reproducible ignored JSON
    archive and emits the checked graph Lean certificate. Generated data alone
    is not acceptance.

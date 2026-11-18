@@ -28,6 +28,9 @@ run_cmd do
     `CutPeriod.mex_of_error_languages,
     `CutPeriod.Parts2Certificate.recognizes_piles,
     `BinaryAutomata.fastSuccessors_eq,
+    `CutPeriod.CollisionACertificate.rejects, `CutPeriod.CollisionBCertificate.rejects,
+    `CutPeriod.MissingACertificate.rejects, `CutPeriod.MissingBCertificate.rejects,
+    `CutPeriod.gameA_mex_of_options, `CutPeriod.gameB_mex_of_options,
     `CutPeriod.GraphCertificate.correct, `CutPeriod.LowerCertificate.correct]
   for name in required do
     let _ ← getConstInfo name

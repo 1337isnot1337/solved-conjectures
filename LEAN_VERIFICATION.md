@@ -19,7 +19,7 @@ never additional Lean axioms.
 | Pham denominator degree | Partial | General finite-coefficient identity principle for rational formal power series; both exact polynomial certificates; both coprimality certificates. The orbit-count truncations and the published representation/degree bounds are explicit hypotheses. Reverse-solitaire enumeration and its limiting interpretation are not formalized. |
 | Batista Egyptian fractions | Complete | An ordered lexicographically first solution uniquely maximizes the last denominator for every admissible positive `k` outside residue class 1. The proof uses the elementary global comparison and a kernel-reduced exhaustive certificate below 100, with proved denominator bounds; no published comparison theorem is a hypothesis. |
 | CUT Family B | Partial, including both directions of the new threshold argument | All-size large-cut XOR inequality; mex uniqueness from the actual splitting rules; preservation under all added cuts above `3x`; explicit collision for each smaller admissible odd cut; difference by size `4x`; sharp threshold conditional on the published base formula. Identification of that formula with the base game's mex function is an explicit hypothesis. |
-| CUT arithmetic periodicity | Partial | Binary semantics, complete padding, composition for actual positive pile lists, Boolean closure, candidate-graph and lower-value DFAs, and the concrete two-pile DFA are checked for all finite words. Exact additive parameters of the candidate function are proved. Groups three through nine, both mex emptiness certificates and the general decision test remain open. |
+| CUT arithmetic periodicity | Partial | Binary semantics, complete padding, actual-pile composition, the two-pile DFA, candidate/lower-value DFAs and all four numerical error-language certificates are checked for all words. Candidate additive parameters are proved. Groups three through nine, correspondence of the option DFAs with actual legal splits, and the general decision test remain open. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Erdős 607 line sizes | Not formalized | Geometric realization, generating-function correspondence, and the local limit/asymptotic analysis remain to formalize. |
 | Growing rectangles | Not formalized | Packing injection, partition estimates, and uniform asymptotics remain to formalize. |
@@ -266,3 +266,21 @@ generated finite-row helpers. All newly registered modules passed kernel
 replay; this is a two-pile checkpoint, not a proof of the full games.
 
 The [Haralambis three-difference theorem](haralambis-three-differences/PROOF.md) has a written proof and an executable check of the signed-edge and rotation certificates. The general theorem has no Lean formalization.
+
+## Numerical error languages
+
+`CutPeriodOptionData.lean` defines the two numerical 28-state option DFAs.
+Their correspondence with actual legal splits is still unproved. Four checked
+refinements in the `CollisionA/B` and `MissingA/B` certificate modules establish
+that their collision and missing-smaller-value languages are empty for every
+word. The collision representations have 32 states; the missing-value
+representations have 34. Each quotient is a one-state rejecting DFA.
+
+`CutPeriodCertifiedMex.lean` combines these certificates with the arithmetic
+and actual-rule bridge. Its two mex theorems have one explicit remaining
+hypothesis each: the numerical option DFA recognizes the actual legal splits.
+Groups three through nine and the union refinements must discharge it before
+either game theorem is complete. No finite error check supplies that hypothesis.
+
+The added modules passed source builds and kernel replay. The refreshed
+whitelist audit accepted 3,710 project theorem declarations, including helpers.

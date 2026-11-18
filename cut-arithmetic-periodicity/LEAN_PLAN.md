@@ -29,6 +29,11 @@ in `l-solitaire-limit-shapes/lean/Conjectures`:
   checks, plus exact recognition of actual two-pile lists at every size.
 - `CutPeriodParameters`: least period 12, saltus 8, earliest start seven for the
   proposed function, independently of the unfinished game identification.
+- `CutPeriodOptionData` and the four `CollisionA/B`, `MissingA/B` certificates:
+  the numerical error languages are empty for every word. The option-DFAs'
+  actual-split semantics is still unproved.
+- `CutPeriodCertifiedMex`: the complete mex conclusions follow once that
+  explicit actual-option correspondence is supplied, with no other hypotheses.
 
 The untrusted producer `generate_lean_certificates.py` reproduces the original
 Python automata and preserves every representation and quotient label in an
@@ -88,13 +93,18 @@ Its first build hit Lean's memory limit in the interpreter after 96 seconds
 (maximum RSS 5,509,236 KiB). The revised producer splits large lookup definitions
 into 64-row helper declarations to bound per-declaration caches. This stage is
 still experimental; do not raise its status from generated data alone.
+Splitting the lookup definitions alone did not fix the failure: the second
+trial also hit the interpreter memory limit after 90.60 seconds, maximum RSS
+6,131,908 KiB. Its data-only prefix passed in 39.24 seconds at 2,542,740 KiB.
+The current temporary full-file profile disables `Elab.async` and includes
+progress markers; it is an investigation, not a checked three-pile result.
 
 ## Remaining semantic connection
 
 Items 1–4, 6 and the candidate-function part of 9 below are now checked.
-Item 5 is checked through two piles. Groups three through nine and items 7, 8
-and 10 remain open. `CutPeriodMex` supplies the all-number transfer in item 8
-conditional on its explicit option/error-language certificate hypotheses.
+Item 5 is checked through two piles. The four numerical error checks in item 7
+are checked, and item 8 now requires only the actual-option language hypothesis.
+Groups three through nine, the union refinements and item 10 remain open.
 
 1. Fixed-width encoding: encode both numerical tracks into exactly `L` digits;
    prove decoding, length and uniqueness. `decodeHigh` is low decoding of the
