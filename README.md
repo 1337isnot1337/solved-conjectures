@@ -19,6 +19,7 @@ This repository contains **unrefereed** mathematics notes with reproducible chec
 | [Packing with two nonmixed gaps](nonmixed-gap-packing/PROOF.md) | Natalchenko–Sagdeev’s main packing conjecture for arbitrary gap counts. The same formula gives the circle parameter in their Section 4 question. | ☐ | [Proof](nonmixed-gap-packing/PROOF.md) and [finite checks](nonmixed-gap-packing/verify.py) |
 | [Haralambis’s three-difference conjecture](haralambis-three-differences/PROOF.md) | For every triple of positive integer differences, the extremal density equals the circle rotation bound. One pair sum is a period of an optimal set. | ☐ | [Proof](haralambis-three-differences/PROOF.md) and [certificate checks](haralambis-three-differences/verify.py) |
 | [Five-speed Loneliness Spectrum Conjecture](five-speed-spectrum/PROOF.md) | The values below 1/5 are exactly s/(5s+1) for positive integers s. Cordella’s twelve sporadic primitive quintuples exhaust the exceptions to the two known families. | ☐ | [Proof](five-speed-spectrum/PROOF.md) and [exhaustive verifier](five-speed-spectrum/verify.py) |
+| [Tight six-speed sets and seven-coordinate critical subtori](tight-six-speeds/PROOF.md) | The consecutive set is the unique primitive six-speed equality case. The seven-coordinate critical plane is unique up to signs and permutations. | ☐ | [Proof](tight-six-speeds/PROOF.md) and [exhaustive verifier](tight-six-speeds/verify.py) |
 
 ☑ Lean formalization of the stated result · ◐ Partial formalization with explicit remaining dependencies · ☐ No Lean formalization
 

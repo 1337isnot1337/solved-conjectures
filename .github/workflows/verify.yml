@@ -49,3 +49,5 @@ jobs:
         run: python3 haralambis-three-differences/verify.py
       - name: Verify the five-speed loneliness spectrum
         run: python3 five-speed-spectrum/verify.py
+      - name: Verify tight six-speed sets and seven-coordinate critical planes
+        run: python3 tight-six-speeds/verify.py
