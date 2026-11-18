@@ -201,3 +201,5 @@ theorem declarations. The detailed continuation plan and measured certificate
 performance limits are in `cut-arithmetic-periodicity/LEAN_PLAN.md`.
 
 The [two distance-graph results](distance-graph-densities/PROOF.md) have written proofs and executable finite verifiers. The [classification for every parameter](distance-graph-densities/CLASSIFICATION.md) extends both families. Their Lean formalizations are pending.
+
+The [two-difference Motzkin identity](two-difference-motzkin/PROOF.md) has a written proof and finite checks. Its compact-group theorem awaits Lean formalization.

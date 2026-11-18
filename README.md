@@ -14,6 +14,7 @@ This repository contains **unrefereed** mathematics notes with reproducible chec
 | [CUT Family B](cut-family-b/PROOF.md) | Ellis–Thanatipanonda (2022), Conj. 2: nim-sequence matches the base game iff the least odd cut above 1 exceeds three times the least even cut. | ◐ | [Proof](cut-family-b/PROOF.md) · [Check](cut-family-b/verify.py) |
 | [CUT with a preperiod](cut-arithmetic-periodicity/PROOF.md) | Dailly et al., Open Problem 4: finite arithmetic-periodicity test; both examples have preperiod 6, period 12, saltus 8. | ◐ | [Proof](cut-arithmetic-periodicity/PROOF.md) · [Check](cut-arithmetic-periodicity/verify.py) |
 | [Distance graphs with three missing differences](distance-graph-densities/PROOF.md) | Carraher et al., arXiv Conjecture 38 proved for all admissible parameters. Conjecture 39 fails for every `k=50,59,68,…`. The [corrected formula](distance-graph-densities/CLASSIFICATION.md) gives all densities for gaps five and seven. | ☐ | [Strip verifier](distance-graph-densities/verify.cpp) and [counterexample verifier](distance-graph-densities/counterexample.py) |
+| [Two-difference Motzkin density](two-difference-motzkin/PROOF.md) | The exact character formula for any pair in any compact abelian group, including noncyclic finite subgroups. The cyclic maximum-independent-set problem has a prior 2026 solution. | ☐ | [Proof](two-difference-motzkin/PROOF.md) and [finite checks](two-difference-motzkin/verify.py) |
 
 ☑ Lean formalization of the stated result · ◐ Partial formalization with explicit remaining dependencies · ☐ No Lean formalization
 

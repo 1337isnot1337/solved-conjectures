@@ -39,3 +39,5 @@ jobs:
           c++ -std=c++20 -O3 distance-graph-densities/verify.cpp -o /tmp/verify-distance-graphs
           /tmp/verify-distance-graphs
           python3 distance-graph-densities/counterexample.py
+      - name: Check the two-difference Motzkin formula
+        run: python3 two-difference-motzkin/verify.py
