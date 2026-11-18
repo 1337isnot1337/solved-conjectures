@@ -246,3 +246,5 @@ kernel rechecks passed locally for this checkpoint. Adding `CutPeriodMex`
 then passed its source build, kernel replay and a refreshed audit over 1,094
 project theorem declarations. Its error-language assumptions remain explicit;
 the two-pile certificate is being validated separately before registration.
+
+The [Haralambis three-difference theorem](haralambis-three-differences/PROOF.md) has a written proof and an executable check of the signed-edge and rotation certificates. The general theorem has no Lean formalization.

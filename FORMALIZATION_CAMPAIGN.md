@@ -89,3 +89,5 @@ The [two-difference compact-group theorem](two-difference-motzkin/PROOF.md) requ
 The [symmetric four-point density theorem](symmetric-four-point-density/PROOF.md) reduces to the two finite interval obstructions, their density consequences and the periodic constructions. All three steps await formalization.
 
 The [nonmixed-gap theorem](nonmixed-gap-packing/PROOF.md) requires the ordering of coprime lattice lifts, the two interval counts, the block-density argument, and the character construction. Its Lean proof is pending.
+
+The [Haralambis proof](haralambis-three-differences/PROOF.md) has a combinatorial route to formalization through balanced dual orientations, extension of closed signed-edge values across cubes, integral periods, and three pair-sum cycles. Its Lean proof is pending.
