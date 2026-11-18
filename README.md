@@ -22,7 +22,7 @@ The L-solitaire counterexample relies on the original paper's Definitions 2--4 a
 
 The necklace result refutes **only** Pham's exact-degree guess. It does **not** refute the distinct Harris--Nguyen (2025) conjecture that a necklace and its reverse-complement dual admit a common denominator of degree equal to their period. The included dual calculation is consistent with that conjecture.
 
-The Li example is neither a spider nor a caterpillar and refutes the **non-spider** sign prediction. Earlier spider constructions already refute the unrestricted coefficient assertion; likewise, earlier literature contains trees with two degree-4 vertices. The result is limited to the non-spider class; see the [novelty audit](li-coefficient-sign/NOVELTY.md). This example does **not** refute Dahlberg--She--van Willigenburg's general non-`e`-positivity conjecture.
+The Li example is neither a spider nor a caterpillar and refutes the **non-spider** sign prediction. Earlier spider constructions already refute the unrestricted coefficient assertion; likewise, earlier literature contains trees with two degree-4 vertices. The newly reported result is explicitly limited to the non-spider class, and novelty is provisional pending independent review (see the [novelty audit](li-coefficient-sign/NOVELTY.md)). This example does **not** refute Dahlberg--She--van Willigenburg's general non-`e`-positivity conjecture.
 
 These are mathematical claims with explicit proofs and computer checks, **not peer-reviewed publications**. A literature search cannot establish that a counterexample or stronger theorem is the first discovery. Please cite the primary publications when discussing the original conjectures.
 
