@@ -1,6 +1,6 @@
 name = "l_solitaire_counterexample"
 version = "0.1.0"
-defaultTargets = ["Solitaire"]
+defaultTargets = ["Solitaire", "Conjectures", "ProofAudit"]
 
 [[require]]
 name = "mathlib"
@@ -9,3 +9,9 @@ rev = "v4.35.0"
 
 [[lean_lib]]
 name = "Solitaire"
+
+[[lean_lib]]
+name = "Conjectures"
+
+[[lean_lib]]
+name = "ProofAudit"

@@ -1,0 +1,142 @@
+# Lean verification status
+
+The shared package is in [`l-solitaire-limit-shapes/lean`](l-solitaire-limit-shapes/lean/).
+It uses Lean **4.35.0** and Mathlib commit
+`56a005855ea17e0b0958f73ec801ae140b0a1679`, as pinned in the existing manifest.
+The source notes audited for this extension are from repository commit
+`b117a3c03f0a6e3812c57d73084d123e3cf3eed3`.
+
+A complete formalization here means that Lean checks the mathematical conclusion
+from the definitions in the indicated files. The correspondence between those
+definitions and an external publication remains subject to mathematical review.
+Published mathematical theorems that have not been formalized are hypotheses,
+never additional Lean axioms.
+
+| Note | Status | Checked scope and remaining gap |
+| --- | --- | --- |
+| L-solitaire | Complete for the fixed-scale counterexample; pre-existing proof replayed | Actual layer-picking dynamics, stable-reference maximality, pointwise limits, and separation at scale 1. The separate arbitrary-layer/diverging-scale theorem is still unformalized. |
+| Three-player War | Complete for all three explicit cycling deals | Distinct ranks and round-robin deal sizes; exact transition rules; returns after 90, 180, and 19,320 turns; no earlier positive return; all three players active at every nonnegative time. |
+| Pham denominator degree | Partial | General finite-coefficient identity principle for rational formal power series; both exact polynomial certificates; both coprimality certificates. The orbit-count truncations and the published representation/degree bounds are explicit hypotheses. Reverse-solitaire enumeration and its limiting interpretation are not formalized. |
+| Batista Egyptian fractions | Partial | Strict-greedy integrality and strict denominator order for every `k > 5`, `k % 5 != 1`; rational fraction equation; first-denominator lower bound; transfer from a uniquely optimal pair to a uniquely maximal last denominator. Chu's global pair-optimality comparison and the small-case conclusion are not formalized. |
+| CUT Family B | Partial, including both directions of the new threshold argument | All-size large-cut XOR inequality; mex uniqueness from the actual splitting rules; preservation under all added cuts above `3x`; explicit collision for each smaller admissible odd cut; difference by size `4x`; sharp threshold conditional on the published base formula. Identification of that formula with the base game's mex function is an explicit hypothesis. |
+| CUT arithmetic periodicity | Not formalized | The Python automata proof is not a Lean proof; automaton semantics, closure operations, and the universal mex certificates remain to formalize. |
+| Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
+| Erdős 607 line sizes | Not formalized | Geometric realization, generating-function correspondence, and the local limit/asymptotic analysis remain to formalize. |
+| Growing rectangles | Not formalized | Packing injection, partition estimates, and uniform asymptotics remain to formalize. |
+
+## War
+
+[`Conjectures/War.lean`](l-solitaire-limit-shapes/lean/Conjectures/War.lean)
+defines three ordered queues of natural-number ranks. `step` removes the exposed
+cards, compares them, and appends the trick to the winner's queue in decreasing
+rank, seat, or clockwise order. An empty queue is absorbing; the checked safety
+certificates prove that this case never occurs along any of the three trajectories.
+
+`standard` checks that every rank from 1 through the deck size occurs once and
+that the queue lengths are the sizes of a round-robin deal starting at A.
+`standard_deal_witnesses` supplies three explicit distinct-rank decks and proves
+that actually dealing their cards in A/B/C rotation gives the initial queues.
+No particular shuffle or random-deal probability is claimed.
+
+Main theorems:
+
+- `War.standard_deal_witnesses`: explicit standard decks and their round-robin deals.
+- `War.three_standard_cycles`: standard deals, returns, and activity for every time.
+- `War.rank_first_return`: first return at 90.
+- `War.seat_first_return`: first return at 180.
+- `War.clockwise_first_return`: first return at 19,320.
+
+The certificates use `decide`, with reduction checked by Lean's kernel.
+They use neither `native_decide` nor an external Python replay as a premise.
+
+## Exact denominator certificates
+
+[`Conjectures/Denominator.lean`](l-solitaire-limit-shapes/lean/Conjectures/Denominator.lean)
+proves `finite_coefficient_identity` using divisibility by a power of `X`, a
+polynomial degree bound, and cancellation of the unit denominator series.
+`primary_certificate` and `dual_certificate` prove exact polynomial equations
+`Q*T - R = X^N * W` for the displayed truncations, with `N = 26` and `31`.
+The two `*_coprime` theorems provide explicit Bézout identities over `ℚ[X]`.
+
+`primary_identity_of_representation` and `dual_identity_of_representation`
+conclude `Q*H = R` for a formal series `H` **only given** its stated truncation
+and a representation `B*H=A` with nonzero constant denominator coefficient and
+the published degree bounds. These hypotheses are the outstanding mathematical
+work, not facts inferred from running the Python verifier.
+
+## Egyptian-fraction construction
+
+[`Conjectures/Egyptian.lean`](l-solitaire-limit-shapes/lean/Conjectures/Egyptian.lean)
+proves the integrality argument in all four required congruence classes. `Triple`
+is the cross-multiplied fraction equation with strictly increasing positive
+integer denominators; `triple_rational` proves that it is the rational equation.
+`batista_greedy_exists` covers every `k > 5` in those classes.
+
+`first_denominator_bound` checks the strict-greedy lower bound on the first
+denominator of any competing triple. `unique_maximum_from_pair_optimal` checks
+the final comparison and uniqueness transfer, with the pair-optimality and
+pair-uniqueness statements as explicit hypotheses. It does not establish them.
+
+## CUT Family B
+
+[`Conjectures/CutFamily.lean`](l-solitaire-limit-shapes/lean/Conjectures/CutFamily.lean)
+contains the six-block formula and proves `large_cut_decreases` for every finite
+list of positive pile sizes with at least `3x+2` parts, without any upper bound
+on the sizes or number of parts. The quotient and residue XOR estimates are
+proved, not checked on a finite range.
+
+`OptionValue` implements legal splits, including their positive sizes, total,
+arity, allowed cut, and XOR. `grundy_unique` proves uniqueness from the mex
+conditions by induction on pile size. `sharp_collision` constructs the
+smaller-odd-cut witness, and `small_odd_cut_forces_difference` proves the
+size-`4x` distinction for any game containing that cut.
+
+`family_b_threshold_of_base_formula` proves both directions of the sharp
+threshold. Its assumption `hbase : SatisfiesMex base (value x)` is exactly the
+remaining imported base-game result. For Family B, this assumption combines
+the published explicit formula and the theorem about adding larger even cuts.
+The Lean theorem does not silently treat either publication as an axiom.
+
+## Reproduce
+
+Install the pinned toolchain with elan, then from the repository root:
+
+```sh
+export PATH="$HOME/.elan/bin:$PATH"
+cd l-solitaire-limit-shapes/lean
+lake exe cache get
+cd ../..
+scripts/verify_lean.sh
+```
+
+The script rebuilds all sources, runs `ProofAudit.lean`, and rechecks the six
+proof modules using `leanchecker`. The CI workflow runs the same script.
+`ProofAudit.lean` checks every theorem in all five project namespaces, including
+helper theorems, and rejects any transitive axiom other than `propext`,
+`Classical.choice`, and `Quot.sound`. It also requires the listed main
+declarations to exist. Missing proofs, `sorryAx`, native-computation axioms,
+and custom axioms fail the check.
+
+The original Python verifiers remain independent evidence, with their original
+scope; their success does not upgrade a partial entry to a complete Lean proof.
+
+## Validation receipt, 18 November 2026
+
+`scripts/verify_lean.sh` completed with exit status 0 locally on Lean 4.35.0.
+All six `leanchecker` module rechecks completed successfully. The audit reported
+466 project theorem declarations, including generated helper declarations;
+this is not a count of independent mathematical results.
+
+The audit was also challenged with three temporary negative controls. It
+rejected a custom axiom transitively used by a War theorem, a proof containing
+`sorry`, and a theorem proved with `native_decide`. These temporary controls
+are not part of the repository's proof sources.
+
+The GitHub Actions workflow has been updated to run the same checks; a hosted
+CI run is separate from this local verification receipt.
+
+The unchanged Python source checks also passed for all three War deals, the
+primary and dual necklace certificates with direct enumeration through depth
+12, Egyptian fractions through `k = 150` (including unpruned enumeration),
+and all 46 CUT Family B test cut sets in the original verifier. These checks
+corroborate transcription and retain their finite scope.

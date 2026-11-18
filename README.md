@@ -5,16 +5,18 @@ This repository contains **unrefereed** mathematics notes with reproducible chec
 | Result | Finding | Lean | Evidence |
 | :--- | :--- | :---: | :--- |
 | [L-solitaire limit shapes](l-solitaire-limit-shapes/) | Eriksson–Jonsson–Sjoestrand (2020), Conj. 1: fixed-scale counterexample (`a_n = 1`). | ☑ | [Lean](l-solitaire-limit-shapes/lean/) · [Proof](l-solitaire-limit-shapes/proof.pdf) |
-| [Denominator degree](pham-denominator-degree/) | Pham (2022), §6: primitive period-10 necklace with reduced denominator degree 5. | ☐ | [Proof](pham-denominator-degree/PROOF.md) · [Check](pham-denominator-degree/verify.py) |
+| [Denominator degree](pham-denominator-degree/) | Pham (2022), §6: primitive period-10 necklace with reduced denominator degree 5. | ◐ | [Proof](pham-denominator-degree/PROOF.md) · [Check](pham-denominator-degree/verify.py) |
 | [Li's coefficient-sign prediction](li-coefficient-sign/) | Li (2026), Problems 4.9 and 4.6 (first question): 31-vertex non-spider tree with `[e_3e_2^14]X_T = +29`. | ☐ | [Proof](li-coefficient-sign/PROOF.md) · [Check](li-coefficient-sign/verify.py) |
-| [Batista's Egyptian fractions](batista-egyptian-fractions/PROOF.md) | OEIS A398581: the lexicographically first triple uniquely maximizes the last denominator for admissible `k ≢ 1 (mod 5)`. | ☐ | [Proof](batista-egyptian-fractions/PROOF.md) · [Check](batista-egyptian-fractions/verify.py) |
+| [Batista's Egyptian fractions](batista-egyptian-fractions/PROOF.md) | OEIS A398581: the lexicographically first triple uniquely maximizes the last denominator for admissible `k ≢ 1 (mod 5)`. | ◐ | [Proof](batista-egyptian-fractions/PROOF.md) · [Check](batista-egyptian-fractions/verify.py) |
 | [Line-size sets](erdos-607-line-sizes/PROOF.md) | Erdős Problem 607 / OEIS A401948: sharp counting asymptotic with exact leading prefactor. | ☐ | [Proof](erdos-607-line-sizes/PROOF.md) · [Check](erdos-607-line-sizes/verify.py) |
 | [Growing rectangles](rectangle-partition-asymptotics/PROOF.md) | Gajdzica–Zakarczemny, Remark 5.9: uniform asymptotic for `log p(h,w)` as `h → ∞`, `w ≥ h`. | ☐ | [Proof](rectangle-partition-asymptotics/PROOF.md) · [Check](rectangle-partition-asymptotics/verify.py) |
-| [Three-player War](spivey-multiplayer-war/PROOF.md) | Spivey (2010), Q5: three winner-first conventions admit cycles with all three players active. | ☐ | [Proof](spivey-multiplayer-war/PROOF.md) · [Check](spivey-multiplayer-war/verify.py) |
-| [CUT Family B](cut-family-b/PROOF.md) | Ellis–Thanatipanonda (2022), Conj. 2: nim-sequence matches the base game iff the least odd cut above 1 exceeds three times the least even cut. | ☐ | [Proof](cut-family-b/PROOF.md) · [Check](cut-family-b/verify.py) |
+| [Three-player War](spivey-multiplayer-war/PROOF.md) | Spivey (2010), Q5: three winner-first conventions admit cycles with all three players active. | ☑ | [Proof](spivey-multiplayer-war/PROOF.md) · [Check](spivey-multiplayer-war/verify.py) |
+| [CUT Family B](cut-family-b/PROOF.md) | Ellis–Thanatipanonda (2022), Conj. 2: nim-sequence matches the base game iff the least odd cut above 1 exceeds three times the least even cut. | ◐ | [Proof](cut-family-b/PROOF.md) · [Check](cut-family-b/verify.py) |
 | [CUT with a preperiod](cut-arithmetic-periodicity/PROOF.md) | Dailly et al., Open Problem 4: finite arithmetic-periodicity test; both examples have preperiod 6, period 12, saltus 8. | ☐ | [Proof](cut-arithmetic-periodicity/PROOF.md) · [Check](cut-arithmetic-periodicity/verify.py) |
 
-☑ Lean formalization in this repository · ☐ No Lean formalization in this repository
+☑ Lean formalization of the stated result · ◐ Partial formalization with explicit remaining dependencies · ☐ No Lean formalization
+
+See [Lean verification status and reproduction](LEAN_VERIFICATION.md) for the exact statements and remaining gaps. The War result now includes kernel-checked first-return periods of 90, 180, and 19,320 turns and a proof that all three players remain active forever. Partial entries do not assert that the full conjecture has been Lean verified.
 
 ## Precise scope
 

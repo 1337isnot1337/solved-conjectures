@@ -1,4 +1,4 @@
-name: Lean fixed-scale L-solitaire counterexample
+name: Lean proofs and certificates
 on:
   push:
   pull_request:
@@ -13,6 +13,5 @@ jobs:
         with:
           lake-package-directory: l-solitaire-limit-shapes/lean
           build: true
-      - name: Recheck the compiled counterexample
-        working-directory: l-solitaire-limit-shapes/lean
-        run: lake env leanchecker Solitaire.Limits
+      - name: Audit all project axioms and recheck compiled proofs
+        run: scripts/verify_lean.sh

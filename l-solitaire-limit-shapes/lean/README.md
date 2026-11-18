@@ -34,7 +34,7 @@ Requires Lean 4.35.0 through elan and the pinned Mathlib revision in
 
 ```sh
 MATHLIB_NO_CACHE_ON_UPDATE=1 lake update
-lake exe cache get Mathlib.Analysis.SpecificLimits.Basic Mathlib.Tactic.Linarith Mathlib.Tactic.FieldSimp
+lake exe cache get
 lake build
 lake env leanchecker Solitaire.Limits
 ```
@@ -42,3 +42,11 @@ lake env leanchecker Solitaire.Limits
 The final declaration's `#print axioms` reports `propext`, `Classical.choice`,
 and `Quot.sound`, the standard Lean axioms; it does not depend on `sorryAx`,
 `native_decide`, or a project-specific axiom.
+
+## Additional repository proofs
+
+This package also hosts the War proofs and partial formalizations of the Pham,
+Batista, and CUT Family B arguments. See the repository-wide
+[Lean verification report](../../LEAN_VERIFICATION.md) for exact scope.
+Run `scripts/verify_lean.sh` from the repository root to build and kernel-recheck
+all formalizations and audit every project theorem for additional axioms.
