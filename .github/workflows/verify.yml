@@ -1,4 +1,4 @@
-name: verify combinatorics counterexamples
+name: verify conjecture results
 on:
   push:
   pull_request:
@@ -22,3 +22,5 @@ jobs:
         run: |
           python3 li-coefficient-sign/verify.py
           python3 li-coefficient-sign/independent_check.py
+      - name: Verify Batista Egyptian-fraction congruence checks
+        run: python3 batista-egyptian-fractions/verify.py

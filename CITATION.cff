@@ -3,7 +3,7 @@ message: >-
   Please cite this repository if you use its mathematical notes or
   verification code, and cite the original conjecture papers separately.
 type: software
-title: "Three counterexamples in Bulgarian solitaire and chromatic symmetric functions"
+title: "Conjectures in combinatorics and number theory"
 authors:
   - family-names: Davis
     given-names: Cinna
@@ -11,8 +11,8 @@ authors:
 repository-code: "https://github.com/1337isnot1337/solved-conjectures"
 url: "https://github.com/1337isnot1337/solved-conjectures"
 abstract: >-
-  Three unrefereed research notes: a counterexample to the published
+  Four unrefereed research notes include a counterexample to the published
   L-solitaire limit-shape conjecture, a counterexample to Pham's original
-  exact denominator-degree conjecture, and an explicit non-spider counterexample
-  to Li's chromatic-symmetric-function coefficient-sign prediction.
+  exact denominator-degree conjecture, an explicit non-spider counterexample
+  to Li's chromatic-symmetric-function coefficient-sign prediction, and a proof of Batista's Egyptian-fraction congruence.
   Includes exact proofs, certificates, and reproducible Python verification.

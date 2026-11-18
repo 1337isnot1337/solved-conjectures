@@ -1,12 +1,13 @@
-# Three audited counterexamples in combinatorics
+# Conjectures in combinatorics and number theory
 
-This repository contains three **unrefereed**, independently reproducible mathematics notes in Bulgarian solitaire and chromatic symmetric functions.
+This repository contains **unrefereed** mathematics notes with reproducible checks in Bulgarian solitaire, chromatic symmetric functions, and Egyptian fractions.
 
 | Result | Target statement | Status | Evidence |
 | --- | --- | --- | --- |
 | [L-solitaire limit shapes](l-solitaire-limit-shapes/) | Eriksson--Jonsson--Sjoestrand, *Limit shapes of stable and recurrent configurations of a generalized Bulgarian solitaire* (2020), Conjecture 1 **as published** | Counterexample at the permitted fixed scale `a_n=1`; complementary theorem proves the conjectured implication whenever `a_n -> infinity` | Full [four-page note](l-solitaire-limit-shapes/proof.pdf), [text proof](l-solitaire-limit-shapes/PROOF.md), exact verifier |
 | [Denominator degree](pham-denominator-degree/) | Nhung Pham, *Limiting behavior in growth of Bulgarian solitaire orbits* (2022), the **unnumbered exact reduced-denominator degree** conjecture in section 6 | Primitive necklace of length 10 has reduced denominator degree 5 | [Proof](pham-denominator-degree/PROOF.md), exact coefficient certificate and verifier |
 | [Li's coefficient-sign prediction](li-coefficient-sign/) | Ethan Y. H. Li, *A quantitative way to e-positivity of trees* (arXiv:2503.09484v2, 2026), Problem 4.9 and the **first** question of Problem 4.6 | An explicit 31-vertex **non-spider** CPET tree has `[e_3e_2^14]X_T = +29`, eight connected triple-plus-pairs partitions, and a degree-4 vertex with only one leaf neighbor | [Proof PDF](li-coefficient-sign/proof.pdf), [text proof](li-coefficient-sign/PROOF.md), [novelty audit](li-coefficient-sign/NOVELTY.md), exact verifiers |
+| [Batista’s Egyptian-fraction conjecture](batista-egyptian-fractions/PROOF.md) | David Batista, OEIS A398581, congruence of the exceptional denominators for three-term representations of $5/k$ | Proved. For every admissible $k$ outside the class $1$ modulo $5$, the lexicographically first triple uniquely maximizes the last denominator | [Proof](batista-egyptian-fractions/PROOF.md) and [exact verifier](batista-egyptian-fractions/verify.py) |
 
 ## Precise scope
 
@@ -28,7 +29,7 @@ Suggested BibTeX for the repository:
 ```bibtex
 @misc{davis2026bulgariansolitaire,
   author       = {Cinna Davis and {GPT-6.2 Astra}},
-  title        = {Three counterexamples in Bulgarian solitaire and chromatic symmetric functions},
+  title        = {Conjectures in combinatorics and number theory},
   year         = {2026},
   howpublished = {GitHub repository},
   url          = {https://github.com/1337isnot1337/solved-conjectures},
@@ -36,7 +37,7 @@ Suggested BibTeX for the repository:
 }
 ```
 
-When citing one of the two results, identify the relevant directory and cite
+When citing an individual result, identify the relevant directory and cite
 the original conjecture's publication separately (listed below). No DOI or
 peer-reviewed publication is claimed for these notes.
 
@@ -48,9 +49,10 @@ All commands require Python 3 and the standard library only.
 python3 l-solitaire-limit-shapes/verify.py
 python3 pham-denominator-degree/verify.py
 python3 pham-denominator-degree/verify.py --dual --brute-depth 13
-cd pham-denominator-degree && python3 -m unittest discover -s tests -v
+(cd pham-denominator-degree && python3 -m unittest discover -s tests -v)
 python3 li-coefficient-sign/verify.py
 python3 li-coefficient-sign/independent_check.py
+python3 batista-egyptian-fractions/verify.py
 ```
 
 `l-solitaire-limit-shapes/verify.py` is the original embedded PDF attachment, extracted byte-for-byte. The finite search checks all pick-layer sets and integer partitions for deck sizes 1 through 14 and separately verifies the specific counterexample for sizes 1 through 1000. Exhaustive tests do not replace the general argument in the PDF.
@@ -70,3 +72,4 @@ The Li verifier also checks all 6,842 partition types of 31 and the coefficient 
 - Kai Zheng, [*On the e-positivity of trees and spiders*](https://doi.org/10.1016/j.jcta.2022.105608), *Journal of Combinatorial Theory, Series A* 189 (2022), Theorem 5.3 (earlier spider coefficient formula).
 - Mirko Hornak and Mariusz Wozniak, [*On arbitrarily vertex decomposable trees*](https://umv.science.upjs.sk/preprints/dokumenty/A3-2006.pdf), 2006 preprint / *Discrete Mathematics* 308 (2008), 1268--1281 (older spider and two-degree-four-vertex cases).
 - Davion Q. B. Tang, David G. L. Wang and Monica M. Y. Wang, [*e-Positive caterpillars have maximum degree at most three*](https://arxiv.org/abs/2610.39481), arXiv:2610.39481v1 (29 October 2026) (caterpillar case).
+- David Batista, [OEIS A398581](https://oeis.org/A398581), and Hùng Việt Chu, [Theorem 1.3 on best two-term underapproximations](https://arxiv.org/abs/2306.12564).
