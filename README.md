@@ -18,11 +18,13 @@ These are mathematical claims with explicit proofs and computer checks, **not pe
 ## How to cite
 
 GitHub's **Cite this repository** control reads [`CITATION.cff`](CITATION.cff).
+The authors are credited in order: Cinna Davis, followed by GPT-6.2 Astra (an AI model).
+
 Suggested BibTeX for the repository:
 
 ```bibtex
 @misc{davis2026bulgariansolitaire,
-  author       = {Cinna Davis},
+  author       = {Cinna Davis and {GPT-6.2 Astra}},
   title        = {Bulgarian-solitaire conjectures: two counterexamples and verification certificates},
   year         = {2026},
   howpublished = {GitHub repository},
