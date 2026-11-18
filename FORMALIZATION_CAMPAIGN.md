@@ -82,3 +82,5 @@ The [distance-graph note](distance-graph-densities/PROOF.md) adds two formalizat
 The [two-difference compact-group theorem](two-difference-motzkin/PROOF.md) requires the signed square-grid construction, integration over the relation lattice, finite-quotient approximation and density of character restrictions. Its Lean proof is pending.
 
 The [symmetric four-point density theorem](symmetric-four-point-density/PROOF.md) reduces to the two finite interval obstructions, their density consequences and the periodic constructions. All three steps await formalization.
+
+The [nonmixed-gap theorem](nonmixed-gap-packing/PROOF.md) requires the ordering of coprime lattice lifts, the two interval counts, the block-density argument, and the character construction. Its Lean proof is pending.

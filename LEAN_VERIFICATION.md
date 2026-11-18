@@ -205,3 +205,5 @@ The [two distance-graph results](distance-graph-densities/PROOF.md) have written
 The [two-difference Motzkin identity](two-difference-motzkin/PROOF.md) has a written proof and finite checks. Its compact-group theorem awaits Lean formalization.
 
 The [Liu–Zhu packing and Natalchenko–Sagdeev covering proof](symmetric-four-point-density/PROOF.md) is a written argument with finite exact-cover checks. Lean formalization is pending.
+
+The [two-nonmixed-gap packing theorem](nonmixed-gap-packing/PROOF.md) has a written proof and finite checks. The packing density and character identity await Lean formalization.
