@@ -15,6 +15,26 @@ The necklace result refutes **only** Pham's exact-degree guess. It does **not** 
 
 These are mathematical claims with explicit proofs and computer checks, **not peer-reviewed publications**. A literature search cannot establish that a counterexample or stronger theorem is the first discovery. Please cite the primary publications when discussing the original conjectures.
 
+## How to cite
+
+GitHub's **Cite this repository** control reads [`CITATION.cff`](CITATION.cff).
+Suggested BibTeX for the repository:
+
+```bibtex
+@misc{davis2026bulgariansolitaire,
+  author       = {Cinna Davis},
+  title        = {Bulgarian-solitaire conjectures: two counterexamples and verification certificates},
+  year         = {2026},
+  howpublished = {GitHub repository},
+  url          = {https://github.com/1337isnot1337/solved-conjectures},
+  note         = {Unrefereed mathematical notes and reproducible verification code}
+}
+```
+
+When citing one of the two results, identify the relevant directory and cite
+the original conjecture's publication separately (listed below). No DOI or
+peer-reviewed publication is claimed for these notes.
+
 ## Verification
 
 All commands require Python 3 and the standard library only.
