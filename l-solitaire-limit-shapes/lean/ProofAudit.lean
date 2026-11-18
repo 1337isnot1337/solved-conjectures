@@ -20,11 +20,17 @@ run_cmd do
     `CutFamily.large_cut_decreases, `CutFamily.family_b_threshold_of_base_formula,
     `BinaryAutomata.certified_list_refinement, `BinaryAutomata.adds_zero_iff,
     `BinaryAutomata.high_xor_iff, `BinaryAutomata.sum_accepts_iff,
-    `CutPeriod.GraphCertificate.correct]
+    `BinaryAutomata.checked_list_rows, `BinaryAutomata.exists_encoding,
+    `BinaryAutomata.DFA.product_accepts, `BinaryAutomata.projection_accepts_iff,
+    `CutPeriod.sum_recognizes_successor,
+    `CutPeriod.candidate_least_period, `CutPeriod.candidate_saltus,
+    `CutPeriod.candidate_least_start,
+    `CutPeriod.mex_of_error_languages,
+    `CutPeriod.GraphCertificate.correct, `CutPeriod.LowerCertificate.correct]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["SolitaireCounterexample.", "War.", "Denominator.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod."]
+  let prefixes := #["SolitaireCounterexample.", "War.", "Denominator.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

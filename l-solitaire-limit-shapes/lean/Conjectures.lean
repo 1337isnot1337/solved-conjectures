@@ -4,3 +4,7 @@ import Conjectures.EgyptianTheorem
 import Conjectures.CutFamily
 import Conjectures.CutPeriodGraphCertificate
 import Conjectures.BinaryComposition
+import Conjectures.BinaryBoolean
+import Conjectures.CutPeriodLowerCertificate
+import Conjectures.CutPeriodParameters
+import Conjectures.CutPeriodMex

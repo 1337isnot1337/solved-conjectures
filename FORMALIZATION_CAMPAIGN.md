@@ -33,9 +33,11 @@ unproved premise of the completed theorem.
    `CutPeriodGraphCertificate.lean`; they prove subset/refinement semantics,
    high-bit addition/XOR, and the complete 27-state candidate graph language.
    `BinaryComposition.lean` now proves addition/XOR composition in both
-   directions and sound pruning of rejecting sinks. Next: generated refinement
-   certificates for pile groups, fixed-width padding/arbitrary-pile connection,
-   lower-value relation, union and the
+   directions and sound pruning of rejecting sinks. `BinaryEncoding`,
+   `CutPeriodPiles`, `BinaryOrder` and `BinaryProjection` discharge complete
+   fixed-width padding and the actual positive-pile-list connection.
+   `CutPeriodLowerCertificate` checks the complete 23-state lower-value DFA.
+   Next: generated refinement certificates for pile groups, union and the
    two mex emptiness checks, then the game theorem and minimal-period claims.
    The generator preserves all representations in a reproducible ignored JSON
    archive and emits the checked graph Lean certificate. Generated data alone
@@ -76,6 +78,9 @@ once: build one stage, resolve its proof/performance issues, then proceed.
 Current CUT continuation details: `cut-arithmetic-periodicity/LEAN_PLAN.md`.
 The first monolithic two-pile check was stopped after exceeding 10 GiB.
 Use cached successor matrices and rowwise proofs before retrying that stage.
+Those changes are implemented; the current trial also uses balanced table
+lookup, symbolic product inverses and checked proof-list aggregation. See the
+continuation plan for measured limits and approaches already ruled out.
 
 The [distance-graph note](distance-graph-densities/PROOF.md) adds two formalization targets. Conjecture 38 uses the strict prefix reduction, strip shortening and finite strip decision. Conjecture 39 uses the period-58 construction and length-116 exclusion. The [full classification](distance-graph-densities/CLASSIFICATION.md) also needs the nine-cycle strip and the 20 small cases. These results await Lean formalization.
 

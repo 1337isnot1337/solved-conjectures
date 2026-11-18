@@ -14,11 +14,23 @@ in `l-solitaire-limit-shapes/lean/Conjectures`:
   sequence, for all words and all numerical prefix values.
 - `CutPeriodGraphCertificate`: all local checks for the 179-state representation
   and 27-state quotient; `correct` recognizes exactly the candidate value graph.
+- `BinaryEncoding`: exact fixed-width encoding, uniqueness and common-column
+  construction, and existence of an encoding for every pair of naturals.
+- `CutPeriodPiles`: actual positive pile lists, the candidate bound `value n≤n`,
+  and complete composition semantics for groups of any number of piles.
+- `BinaryOrder` and `BinaryProjection`: numerical comparison and hidden-track
+  projection, with both soundness and completeness at the visible width.
+- `CutPeriodLower` and `CutPeriodLowerCertificate`: exact lower-value semantics
+  and the checked 111-state representation / 23-state quotient, for every word.
+- `BinaryBoolean`: Boolean product language semantics for arbitrary DFAs.
+- `CutPeriodParameters`: least period 12, saltus 8, earliest start seven for the
+  proposed function, independently of the unfinished game identification.
 
 The untrusted producer `generate_lean_certificates.py` reproduces the original
 Python automata and preserves every representation and quotient label in an
 ignored JSON intermediate. `--parts-until N` emits Lean modules through a
-chosen pile group. Default emits only the checked graph. Do not promote a
+chosen pile group; `--lower` also emits the checked lower-value DFA. Default
+emits only the checked graph. Do not promote a
 stage merely because its Python data were generated.
 
 ## Certificate sizes and performance
@@ -46,17 +58,29 @@ Do not repeat these unsuccessful representations unchanged:
   composition transition function inlined repeatedly, exceeded 10 GiB and was
   stopped. This is a cost problem, not a failed mathematical condition.
 
-Next producer change: emit a cached successor matrix for the finite product
-NFA; prove each matrix row equals the semantic transition once. Use a cached
-NFA for subset-refinement checking, then prove equality to the semantic NFA.
-Split finite checks into individual row theorems to bound elaborator caches.
-Aggregate rows with nested `Fin.cases` (and `Fin.elim0` at the end), rather than
-re-evaluating one huge `Decidable (forall Fin ...)` expression. Run one heavy
-builder at a time with `LEAN_NUM_THREADS=1` and a task-local memory limit.
+- Brute-force product-encoding inverse checks and nested `Fin.cases` proof
+  aggregation were costly. Product inverses now use symbolic arithmetic;
+  `checked_list_rows` aggregates indexed proof lists with checked coverage.
+- Large array lookup chains made later successor rows far more expensive than
+  row zero. The flat-array benchmark for row 1000 was stopped after exceeding
+  50 seconds; a balanced-lookup version checked the same row in a 17.54-second
+  whole-file run, including data elaboration. Use balanced lookup for the large
+  successor and refinement tables, rather than assuming the first-row timing
+  represents later rows.
+
+The producer emits cached successor data and proves each row equals the
+semantic transition once, then checks subset refinement against the cache.
+Finite checks use individual row theorems and proof-list aggregation. Run one
+heavy builder at a time with `LEAN_NUM_THREADS=1`; project Lean invocations use
+`-j1 -M4500`. A virtual-address-space cap prevented thread creation and is not
+appropriate here; use Lean's own memory limit.
 `CutPeriodParts2Certificate.lean` is the current experimental emitted module;
 it is not yet an accepted stage.
 
 ## Remaining semantic connection
+
+Items 1–4, 6 and the candidate-function part of 9 below are now checked.
+Items 5, 7, 8 and 10 remain open.
 
 1. Fixed-width encoding: encode both numerical tracks into exactly `L` digits;
    prove decoding, length and uniqueness. `decodeHigh` is low decoding of the

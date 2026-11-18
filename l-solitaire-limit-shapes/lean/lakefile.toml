@@ -12,6 +12,7 @@ name = "Solitaire"
 
 [[lean_lib]]
 name = "Conjectures"
+moreLeanArgs = ["-j1", "-M4500"]
 
 [[lean_lib]]
 name = "ProofAudit"

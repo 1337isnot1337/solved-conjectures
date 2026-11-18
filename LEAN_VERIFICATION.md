@@ -19,7 +19,7 @@ never additional Lean axioms.
 | Pham denominator degree | Partial | General finite-coefficient identity principle for rational formal power series; both exact polynomial certificates; both coprimality certificates. The orbit-count truncations and the published representation/degree bounds are explicit hypotheses. Reverse-solitaire enumeration and its limiting interpretation are not formalized. |
 | Batista Egyptian fractions | Complete | An ordered lexicographically first solution uniquely maximizes the last denominator for every admissible positive `k` outside residue class 1. The proof uses the elementary global comparison and a kernel-reduced exhaustive certificate below 100, with proved denominator bounds; no published comparison theorem is a hypothesis. |
 | CUT Family B | Partial, including both directions of the new threshold argument | All-size large-cut XOR inequality; mex uniqueness from the actual splitting rules; preservation under all added cuts above `3x`; explicit collision for each smaller admissible odd cut; difference by size `4x`; sharp threshold conditional on the published base formula. Identification of that formula with the base game's mex function is an explicit hypothesis. |
-| CUT arithmetic periodicity | Partial | Subset construction, checked minimization/refinement, exact binary addition and XOR, generic composition semantics, and the candidate graph DFA are formalized for all finite words. Connections to arbitrary legal pile groups, both mex emptiness certificates, exact least periods and the general decision test remain to formalize. |
+| CUT arithmetic periodicity | Partial | Subset/refinement semantics, binary addition/XOR, complete padding, composition for actual positive pile lists, Boolean closure, and the candidate-graph and lower-value DFAs are formalized for all finite words. Concrete pile-group refinements, both mex emptiness certificates, exact least periods and the general decision test remain to formalize. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Erdős 607 line sizes | Not formalized | Geometric realization, generating-function correspondence, and the local limit/asymptotic analysis remain to formalize. |
 | Growing rectangles | Not formalized | Packing injection, partition estimates, and uniform asymptotics remain to formalize. |
@@ -189,8 +189,7 @@ semantics are checked. The complete game-period claims remain open.
 composition in both directions, including safe pruning of rejecting sinks.
 Every accepted composed word is decoded to accepted component words with the
 actual numerical addition and XOR equations, and every such compatible column
-sequence produces a composed path. Fixed-width padding and its connection to
-arbitrary pile groups remain part of the unfinished game proof.
+sequence produces a composed path.
 
 ## Binary-semantics checkpoint, 18 November 2026
 
@@ -207,3 +206,43 @@ The [two-difference Motzkin identity](two-difference-motzkin/PROOF.md) has a wri
 The [Liu–Zhu packing and Natalchenko–Sagdeev covering proof](symmetric-four-point-density/PROOF.md) is a written argument with finite exact-cover checks. Lean formalization is pending.
 
 The [two-nonmixed-gap packing theorem](nonmixed-gap-packing/PROOF.md) has a written proof and finite checks. The packing density and character identity await Lean formalization.
+
+## Complete padding and lower-value semantics
+
+`BinaryEncoding.lean` supplies fixed-width encodings, uniqueness, shared
+arithmetic columns and an encoding for every pair of naturals.
+`CutPeriodPiles.lean` defines groups by actual lists of positive pile sizes;
+it proves the candidate-value XOR fits within the total pile size. Using that
+bound, `sum_recognizes_successor` proves both directions of the group-composition
+semantics at every visible word width. No hidden witness is assumed to fit.
+
+`BinaryOrder.lean` verifies the numerical comparison-state update, and
+`BinaryProjection.lean` proves exact hidden-track projection semantics.
+`CutPeriodLower.lean` specializes this to the proposed sequence.
+`CutPeriodLowerCertificate.lean` checks every transition and final label for
+the 111-state representation and its 23-state quotient. Its `correct` theorem
+recognizes exactly positive sizes paired with a strictly smaller value,
+universally over input words. `BinaryBoolean.lean` supplies Boolean product
+semantics for the remaining error-language certificates.
+
+The generated two-pile module remains experimental until its source build,
+axiom audit and kernel recheck pass. None of these semantic components alone
+establishes either game's mex equation.
+
+`CutPeriodParameters.lean` proves that the proposed function has least positive
+eventual additive period 12, unique saltus 8 at that period, and earliest start
+at pile seven (preperiod length six). It rules out every smaller positive
+period with every possible saltus, by descending any eventual identity to the
+12 tail residues. Identification of the function with the games still awaits
+the finite option/error certificates.
+
+The 100 small Egyptian cases are now separate theorem declarations aggregated
+by `FiniteCertificate.checked_list_rows`. This preserves the exhaustive check
+and its soundness theorem while keeping source replay under the project's
+4.5 GB Lean memory cap. The earlier single declaration exceeded that cap.
+
+The full source build, refreshed whitelist audit and all 23 listed module
+kernel rechecks passed locally for this checkpoint. Adding `CutPeriodMex`
+then passed its source build, kernel replay and a refreshed audit over 1,094
+project theorem declarations. Its error-language assumptions remain explicit;
+the two-pile certificate is being validated separately before registration.

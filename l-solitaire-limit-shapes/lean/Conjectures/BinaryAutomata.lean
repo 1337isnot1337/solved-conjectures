@@ -1,3 +1,4 @@
+import Conjectures.FiniteCertificate
 import Mathlib.Data.Nat.Bitwise
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
@@ -267,5 +268,11 @@ theorem decodeHigh_bound (bit : Digit → Nat) (hbit : ∀ d, bit d<2) (w : List
   simpa only [decodeHigh,List.length_reverse] using decode_bound bit hbit w.reverse
 
 #print axioms certified_list_refinement
+
+/-- Re-export the generic finite-family coverage theorem for generated automata. -/
+theorem checked_list_rows {n : Nat} {P : Fin n → Prop}
+    (rows : List {q : Fin n // P q})
+    (hindices : rows.map (fun r => r.val.val)=List.range n) : ∀ q, P q :=
+  FiniteCertificate.checked_list_rows rows hindices
 
 end BinaryAutomata
