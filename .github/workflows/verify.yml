@@ -26,3 +26,5 @@ jobs:
         run: python3 batista-egyptian-fractions/verify.py
       - name: Verify the line-size generating function
         run: python3 erdos-607-line-sizes/verify.py
+      - name: Verify rectangle packing and multiset recovery
+        run: python3 rectangle-partition-asymptotics/verify.py

@@ -1,6 +1,6 @@
 # Conjectures in combinatorics and number theory
 
-This repository contains **unrefereed** mathematics notes with reproducible checks in Bulgarian solitaire, chromatic symmetric functions, Egyptian fractions, and discrete geometry.
+This repository contains **unrefereed** mathematics notes with reproducible checks in Bulgarian solitaire, chromatic symmetric functions, Egyptian fractions, discrete geometry, and integer partitions.
 
 | Result | Target statement | Status | Evidence |
 | --- | --- | --- | --- |
@@ -9,6 +9,7 @@ This repository contains **unrefereed** mathematics notes with reproducible chec
 | [Li's coefficient-sign prediction](li-coefficient-sign/) | Ethan Y. H. Li, *A quantitative way to e-positivity of trees* (arXiv:2503.09484v2, 2026), Problem 4.9 and the **first** question of Problem 4.6 | An explicit 31-vertex **non-spider** CPET tree has `[e_3e_2^14]X_T = +29`, eight connected triple-plus-pairs partitions, and a degree-4 vertex with only one leaf neighbor | [Proof PDF](li-coefficient-sign/proof.pdf), [text proof](li-coefficient-sign/PROOF.md), [novelty audit](li-coefficient-sign/NOVELTY.md), exact verifiers |
 | [Batista’s Egyptian-fraction conjecture](batista-egyptian-fractions/PROOF.md) | David Batista, OEIS A398581, congruence of the exceptional denominators for three-term representations of $5/k$ | Proved. For every admissible $k$ outside the class $1$ modulo $5$, the lexicographically first triple uniquely maximizes the last denominator | [Proof](batista-egyptian-fractions/PROOF.md) and [exact verifier](batista-egyptian-fractions/verify.py) |
 | [Line-size sets](erdos-607-line-sizes/PROOF.md) | Václav Kotesovec’s conjectured exponential base for the counting function of Erdős Problem 607 (OEIS A401948) | Sharp asymptotic with an exact leading prefactor. Szemerédi and Trotter previously established the original Erdős bound. | [Proof](erdos-607-line-sizes/PROOF.md) and [exact generating-function verifier](erdos-607-line-sizes/verify.py) |
+| [Growing rectangles](rectangle-partition-asymptotics/PROOF.md) | Gajdzica and Zakarczemny, *A note on the partition function of a rectangle*, Remark 5.9, both growing-side predictions | Uniform leading asymptotic for $\log p(h,w)$ over all widths $w\ge h$ as $h$ grows | [Proof](rectangle-partition-asymptotics/PROOF.md) and [packing verifier](rectangle-partition-asymptotics/verify.py) |
 
 ## Precise scope
 
@@ -55,6 +56,7 @@ python3 li-coefficient-sign/verify.py
 python3 li-coefficient-sign/independent_check.py
 python3 batista-egyptian-fractions/verify.py
 python3 erdos-607-line-sizes/verify.py
+python3 rectangle-partition-asymptotics/verify.py
 ```
 
 `l-solitaire-limit-shapes/verify.py` is the original embedded PDF attachment, extracted byte-for-byte. The finite search checks all pick-layer sets and integer partitions for deck sizes 1 through 14 and separately verifies the specific counterexample for sizes 1 through 1000. Exhaustive tests do not replace the general argument in the PDF.
