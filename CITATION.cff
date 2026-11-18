@@ -11,8 +11,9 @@ authors:
 repository-code: "https://github.com/1337isnot1337/solved-conjectures"
 url: "https://github.com/1337isnot1337/solved-conjectures"
 abstract: >-
-  Four unrefereed research notes include a counterexample to the published
+  Five unrefereed research notes include a counterexample to the published
   L-solitaire limit-shape conjecture, a counterexample to Pham's original
   exact denominator-degree conjecture, an explicit non-spider counterexample
-  to Li's chromatic-symmetric-function coefficient-sign prediction, and a proof of Batista's Egyptian-fraction congruence.
+  to Li's chromatic-symmetric-function coefficient-sign prediction, a proof of Batista's Egyptian-fraction congruence,
+  and a sharp asymptotic for the number of realizable plane line-size sets.
   Includes exact proofs, certificates, and reproducible Python verification.

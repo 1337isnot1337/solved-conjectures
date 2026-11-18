@@ -24,3 +24,5 @@ jobs:
           python3 li-coefficient-sign/independent_check.py
       - name: Verify Batista Egyptian-fraction congruence checks
         run: python3 batista-egyptian-fractions/verify.py
+      - name: Verify the line-size generating function
+        run: python3 erdos-607-line-sizes/verify.py

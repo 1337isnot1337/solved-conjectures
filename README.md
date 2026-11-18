@@ -1,6 +1,6 @@
 # Conjectures in combinatorics and number theory
 
-This repository contains **unrefereed** mathematics notes with reproducible checks in Bulgarian solitaire, chromatic symmetric functions, and Egyptian fractions.
+This repository contains **unrefereed** mathematics notes with reproducible checks in Bulgarian solitaire, chromatic symmetric functions, Egyptian fractions, and discrete geometry.
 
 | Result | Target statement | Status | Evidence |
 | --- | --- | --- | --- |
@@ -8,6 +8,7 @@ This repository contains **unrefereed** mathematics notes with reproducible chec
 | [Denominator degree](pham-denominator-degree/) | Nhung Pham, *Limiting behavior in growth of Bulgarian solitaire orbits* (2022), the **unnumbered exact reduced-denominator degree** conjecture in section 6 | Primitive necklace of length 10 has reduced denominator degree 5 | [Proof](pham-denominator-degree/PROOF.md), exact coefficient certificate and verifier |
 | [Li's coefficient-sign prediction](li-coefficient-sign/) | Ethan Y. H. Li, *A quantitative way to e-positivity of trees* (arXiv:2503.09484v2, 2026), Problem 4.9 and the **first** question of Problem 4.6 | An explicit 31-vertex **non-spider** CPET tree has `[e_3e_2^14]X_T = +29`, eight connected triple-plus-pairs partitions, and a degree-4 vertex with only one leaf neighbor | [Proof PDF](li-coefficient-sign/proof.pdf), [text proof](li-coefficient-sign/PROOF.md), [novelty audit](li-coefficient-sign/NOVELTY.md), exact verifiers |
 | [Batista’s Egyptian-fraction conjecture](batista-egyptian-fractions/PROOF.md) | David Batista, OEIS A398581, congruence of the exceptional denominators for three-term representations of $5/k$ | Proved. For every admissible $k$ outside the class $1$ modulo $5$, the lexicographically first triple uniquely maximizes the last denominator | [Proof](batista-egyptian-fractions/PROOF.md) and [exact verifier](batista-egyptian-fractions/verify.py) |
+| [Line-size sets](erdos-607-line-sizes/PROOF.md) | Václav Kotesovec’s conjectured exponential base for the counting function of Erdős Problem 607 (OEIS A401948) | Sharp asymptotic with an exact leading prefactor. Szemerédi and Trotter previously established the original Erdős bound. | [Proof](erdos-607-line-sizes/PROOF.md) and [exact generating-function verifier](erdos-607-line-sizes/verify.py) |
 
 ## Precise scope
 
@@ -53,6 +54,7 @@ python3 pham-denominator-degree/verify.py --dual --brute-depth 13
 python3 li-coefficient-sign/verify.py
 python3 li-coefficient-sign/independent_check.py
 python3 batista-egyptian-fractions/verify.py
+python3 erdos-607-line-sizes/verify.py
 ```
 
 `l-solitaire-limit-shapes/verify.py` is the original embedded PDF attachment, extracted byte-for-byte. The finite search checks all pick-layer sets and integer partitions for deck sizes 1 through 14 and separately verifies the specific counterexample for sizes 1 through 1000. Exhaustive tests do not replace the general argument in the PDF.
@@ -73,3 +75,5 @@ The Li verifier also checks all 6,842 partition types of 31 and the coefficient 
 - Mirko Hornak and Mariusz Wozniak, [*On arbitrarily vertex decomposable trees*](https://umv.science.upjs.sk/preprints/dokumenty/A3-2006.pdf), 2006 preprint / *Discrete Mathematics* 308 (2008), 1268--1281 (older spider and two-degree-four-vertex cases).
 - Davion Q. B. Tang, David G. L. Wang and Monica M. Y. Wang, [*e-Positive caterpillars have maximum degree at most three*](https://arxiv.org/abs/2610.39481), arXiv:2610.39481v1 (29 October 2026) (caterpillar case).
 - David Batista, [OEIS A398581](https://oeis.org/A398581), and Hùng Việt Chu, [Theorem 1.3 on best two-term underapproximations](https://arxiv.org/abs/2306.12564).
+
+- Václav Kotesovec’s [conjectured exponential base](https://oeis.org/A401948) for the counting function in [Erdős Problem 607](https://www.erdosproblems.com/607). The verifier accepts the [10,000-term reference table](https://oeis.org/A401948/b401948.txt) with the option `--table b401948.txt`.
