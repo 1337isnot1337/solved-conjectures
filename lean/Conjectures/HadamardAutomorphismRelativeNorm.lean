@@ -103,11 +103,14 @@ theorem conjugate_prime_under479 (P : Ideal (𝓞 K)) :
       (quadraticIntegerConjugation479 K).symm x = quadraticIntegerConjugation479 K x := by
     apply (quadraticIntegerConjugation479 K).injective
     rw [RingEquiv.apply_symm_apply, quadraticIntegerConjugation479_involutive K]
-  rw [RingEquiv.toRingHom_eq_coe]
+  rw [RingEquiv.toRingHom_eq_coe,
+    Ideal.map_coe (f := quadraticIntegerConjugation479 K)]
   ext x
-  rw [Ideal.mem_under, Ideal.mem_pointwise_smul_iff_inv_smul_mem, ht,
-    ← Ideal.symm_apply_mem_of_equiv_iff, hr, Ideal.mem_under,
-    quadraticIntegerConjugation479_algebraMap K x]
+  rw [Ideal.mem_under, Ideal.mem_pointwise_smul_iff_inv_smul_mem, ht]
+  refine Iff.trans ?_ (Ideal.symm_apply_mem_of_equiv_iff
+    (f := quadraticIntegerConjugation479 K)
+    (I := P.under (𝓞 (quadraticFixedField479 K))) (y := x))
+  rw [hr x, Ideal.mem_under, quadraticIntegerConjugation479_algebraMap K x]
 
 theorem quadraticPrimeUnder479_conjugate (P : Ideal (𝓞 K)) [P.IsPrime]
     [P.LiesOver (Ideal.span {(599 : ℤ)})] :

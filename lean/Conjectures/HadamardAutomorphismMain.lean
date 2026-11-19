@@ -18,6 +18,7 @@ namespace HadamardAutomorphism
 open NumberField
 open scoped BigOperators Matrix
 
+set_option backward.isDefEq.respectTransparency false in
 /-- A real Hadamard matrix with the forced five cyclic blocks is impossible. -/
 theorem real_cyclic_hadamard_impossible
     (H : Matrix StandardIndex StandardIndex ℝ)
@@ -26,6 +27,9 @@ theorem real_cyclic_hadamard_impossible
     (hfixed : ∀ j b, H none (some (j, b)) = H none (some (j, 0)))
     (hblock : ∀ i j a b,
       H (some (i, a)) (some (j, b)) = H (some (i, 0)) (some (j, b - a))) : False := by
+  let : NeZero (479 : ℚ) := ⟨by norm_num⟩
+  let : IsCyclotomicExtension {479} ℚ (CyclotomicField 479 ℚ) :=
+    CyclotomicField.isCyclotomicExtension 479 ℚ
   let : StarRing (𝓞 (CyclotomicField 479 ℚ)) :=
     integerCyclotomicStarRing479 (CyclotomicField 479 ℚ)
   let A := signMatrixOver (𝓞 (CyclotomicField 479 ℚ)) H
@@ -97,8 +101,16 @@ theorem hadamard_signed_pair_order_ne_479
   intro horder
   have hp : (signedLift σ s, signedLift τ t) ^ 479 = 1 := by
     simpa only [horder] using pow_orderOf_eq_one (signedLift σ s, signedLift τ t)
-  have hσ : signedLift σ s ^ 479 = 1 := congrArg Prod.fst hp
-  have hτ : signedLift τ t ^ 479 = 1 := congrArg Prod.snd hp
+  have hσ : signedLift σ s ^ 479 = 1 := by
+    have h := congrArg
+      (MonoidHom.fst (Equiv.Perm (ι × ℤˣ)) (Equiv.Perm (ι × ℤˣ))) hp
+    rw [map_pow, map_one] at h
+    exact h
+  have hτ : signedLift τ t ^ 479 = 1 := by
+    have h := congrArg
+      (MonoidHom.snd (Equiv.Perm (ι × ℤˣ)) (Equiv.Perm (ι × ℤˣ))) hp
+    rw [map_pow, map_one] at h
+    exact h
   have hnt : signedLift σ s ≠ 1 ∨ signedLift τ t ≠ 1 := by
     by_cases h : signedLift σ s = 1
     · right
