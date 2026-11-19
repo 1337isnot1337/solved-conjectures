@@ -22,8 +22,8 @@ never additional Lean axioms.
 | CUT arithmetic periodicity | General decision theorem complete; concrete examples partial | A computable finite test constructs exact recognizers for every finite cut set and proposed arithmetic tail, and is equivalent to the actual mex equations. Exhaustive candidate enumeration is sound and complete whenever a representation exists. The specialized three-through-nine-pile and option-union certificates for the two displayed games remain open. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Erdős 607 line sizes | Not formalized | Geometric realization, generating-function correspondence, and the local limit/asymptotic analysis remain to formalize. |
-| Growing rectangles | Not formalized | Packing injection, partition estimates, and uniform asymptotics remain to formalize. |
-| Distance graphs with three missing differences | Not formalized | Strict prefix reduction, strip shortening, the strip classifications, and finite exclusions remain to formalize. |
+| Growing rectangles | Partial | Exact grid-tiling counts, shelf packing, the injective partition construction, deletion multiplicities, and sharp Euler-product limits and upper bounds are checked. Cumulative partition asymptotics, the real-position bridge, and the final uniform asymptotic remain open. |
+| Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
 | Two-difference Motzkin density | Not formalized | Signed square-grid construction, compact-group measure arguments, and character approximation remain to formalize. |
 | Symmetric four-point density | Complete | Exact real packing and covering densities for every literal translated symmetric four-point integer set, including common-divisor normalization. Both periodic constructions and the two sharp local interval lengths are proved. |
 | Packing with two nonmixed gaps | Complete | The exact three-case packing and real circle formula for every positive gap pair and arbitrary positive gap counts, including gcd normalization, literal tile semantics, periodic attainment, and the stated example. |
@@ -497,3 +497,64 @@ this checkpoint are tracked separately.
 The earlier density/CUT/loneliness checkpoint `6c095083d6c17eff3797f798cbfe35d0ea98c1f6`
 passed the complete [hosted Lean workflow](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44433833213),
 including the source build, project axiom audit, and every registered kernel replay.
+
+## Complete distance-graph classifications, 18 November 2026
+
+`ThreeDistanceGraph.gap_five_classification` and `gap_seven_classification`
+prove the complete tables for every positive `k`, for the actual upper-density
+supremum and the actual real-time circle maximum. The proof applies the
+checked Haralambis theorem, reduces a maximizer to one of three pair-sum
+denominators, and proves each residue-class bound by integer arithmetic.
+Exact rational interval certificates discharge the small cases.
+
+`gap_five_periodic_classification` and `gap_seven_periodic_classification`
+supply actual periodic avoiding sets. The Conjecture 39 residue-five branch
+has density `(4k+25)/(9(k+8))` for `k>=41`, `k mod 9=5`; its claimed value
+exceeds this by `(k-41)/(9(k+1)(k+8))`. The proof gives strict counterexamples
+for every `k=50+9n` and proves that their set is infinite. At `k=50`, the
+checked discrepancy is `1/2958`.
+
+All ten modules passed source compilation and independent kernel replay.
+The namespace axiom audit checked 399 declarations with only the three
+permitted logical axioms. See [the complete checked scope](../results/distance-graph-densities/LEAN.md).
+The `ThreeDistanceGraph` prefix avoids collisions with a concurrent team's
+independent `DistanceGraph` development.
+
+## Rectangle components, 18 November 2026
+
+Seven finite modules prove the actual grid-placement and multiset semantics,
+shelf packing, recovery after unit-square filling, finite bounded-partition
+counts, deletion multiplicity, and the logarithmic packing lower bound.
+Their 125 theorem declarations passed the whitelist audit and all seven
+modules passed independent kernel replay.
+
+Four analytic modules prove the finite Euler-product bound, the sharp limit
+`t*logEuler(B,t) -> pi^2/6` when `t -> 0+` and `B*t -> infinity`, and the
+uniform ordered-rectangle and diagonal upper bounds. Mathlib's checked
+Basel-sum theorem supplies the exact constant. The 38 analytic theorem
+declarations passed the same axiom audit; all four modules were independently
+replayed. The growing-rectangle theorem itself remains partial.
+See [the checked components](../results/rectangle-partition-asymptotics/LEAN.md).
+
+## Two-direction plane reduction
+
+`Loneliness.CoordinateSubspace.two_integer_directions` proves that every
+coordinate-free rational plane in `n` coordinates is spanned by two integer
+vectors, both having nonzero coordinates and at most `n-1` distinct absolute
+speeds. The coalescence step can avoid a prescribed nonzero-coordinate point;
+its coefficients remain exactly `+1` or `-1`.
+
+`two_critical_integer_directions` applies this in five coordinates below
+value `2/9`, with the exact `FourSpeedGap` statement retained as an explicit
+hypothesis. The gap states that four distinct positive speeds below `2/9`
+are a dilation and permutation of `[1,2,3,4]` or `[1,3,4,7]`. This hypothesis
+is not an axiom or a proved classification. The at-most-three-speed cases
+are discharged by the previously checked small-runner bound. The four new
+modules passed source, axiom, and independent kernel checks.
+
+
+The combined accepted-package audit for this checkpoint checked 5,655 theorem
+declarations and accepted only the three permitted logical axioms. All
+twenty-five new modules passed individual source compilation and independent
+kernel replay. The generated distance-graph examples reproduce byte-for-byte.
+The source build and full hosted replay for this commit are tracked separately.

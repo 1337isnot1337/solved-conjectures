@@ -123,11 +123,36 @@ run_cmd do
     `Loneliness.SmallRunner.lonelyRunnerBound,
     `Loneliness.SmallRunner.five_coordinate_dimension_three,
     `Loneliness.SmallRunner.five_coordinate_dimension_four,
-    `Loneliness.SmallRunner.five_coordinate_dimension_five]
+    `Loneliness.SmallRunner.five_coordinate_dimension_five,
+    `ThreeDistanceGraph.gap_five_classification,
+    `ThreeDistanceGraph.gap_seven_classification,
+    `ThreeDistanceGraph.gap_five_periodic_classification,
+    `ThreeDistanceGraph.gap_seven_periodic_classification,
+    `ThreeDistanceGraph.conjecture39_error,
+    `ThreeDistanceGraph.conjecture39_infinitely_many,
+    `ThreeDistanceGraph.counterexample_50_gap,
+    `Loneliness.Coalescence.coalescing_hyperplane_avoiding,
+    `Loneliness.CoordinateSubspace.two_integer_directions,
+    `Loneliness.CoordinateSubspace.two_critical_integer_directions,
+    `RectanglePartitions.shelf_packing,
+    `RectanglePartitions.filledFamily_injective,
+    `RectanglePartitions.mem_boundedParts_iff,
+    `RectanglePartitions.boundedParts_deletion_bound,
+    `RectanglePartitions.GuillotineTiles.gridTiles,
+    `RectanglePartitions.rectangleCount_le_areaMultisets,
+    `RectanglePartitions.stacked_choice_product_le_rectangleCount,
+    `RectanglePartitions.column_choice_product_le_rectangleCount,
+    `RectanglePartitions.log_partition_lower,
+    `RectangleEuler.logEuler_le,
+    `RectangleEuler.tendsto_scaled_logEuler,
+    `RectangleEuler.basel_eq_pi_sq_div_six,
+    `RectangleEuler.sum_logEuler_le_harmonic,
+    `RectangleEuler.sum_logEuler_le,
+    `RectangleEuler.sum_logFactor_sq_le]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["SolitaireCounterexample.", "War.", "Denominator.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis."]
+  let prefixes := #["SolitaireCounterexample.", "War.", "Denominator.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectanglePartitions.", "RectangleEuler."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

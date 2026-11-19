@@ -97,6 +97,31 @@ modules=(
   Conjectures.LonelinessCoalescenceValue
   Conjectures.LonelinessSubspaceExtension
   Conjectures.LonelinessSmallRunner
+  Conjectures.ThreeDistanceGraphCircle
+  Conjectures.ThreeDistanceGraphGrids
+  Conjectures.ThreeDistanceGraphConstructions
+  Conjectures.ThreeDistanceGraphFive
+  Conjectures.ThreeDistanceGraphSeven
+  Conjectures.ThreeDistanceGraphSmall
+  Conjectures.ThreeDistanceGraphTables
+  Conjectures.ThreeDistanceGraphTheorem
+  Conjectures.ThreeDistanceGraphPeriodic
+  Conjectures.ThreeDistanceGraphCounterexamples
+  Conjectures.LonelinessCoalescenceAvoiding
+  Conjectures.LonelinessTwoDirections
+  Conjectures.LonelinessPlaneDirections
+  Conjectures.LonelinessPlaneGap
+  Conjectures.RectangleEncoding
+  Conjectures.RectangleShelfPacking
+  Conjectures.RectanglePartitionBounds
+  Conjectures.RectangleGuillotine
+  Conjectures.RectangleCells
+  Conjectures.RectangleCounting
+  Conjectures.RectangleLogBounds
+  Conjectures.RectangleEuler
+  Conjectures.RectangleEulerLimit
+  Conjectures.RectangleBasel
+  Conjectures.RectangleEulerUpper
 )
 for module in "${modules[@]}"; do
   printf 'Kernel recheck: %s\n' "$module"

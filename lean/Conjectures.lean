@@ -29,3 +29,9 @@ import Conjectures.LonelinessNormArithmetic
 import Conjectures.HaralambisExamples
 import Conjectures.LonelinessSmallRunner
 import Conjectures.LonelinessSubspaceExtension
+import Conjectures.ThreeDistanceGraphPeriodic
+import Conjectures.ThreeDistanceGraphCounterexamples
+import Conjectures.LonelinessPlaneGap
+import Conjectures.RectangleLogBounds
+import Conjectures.RectangleEulerUpper
+import Conjectures.RectangleBasel

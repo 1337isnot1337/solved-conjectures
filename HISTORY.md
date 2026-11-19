@@ -2,6 +2,13 @@
 
 [Home](README.md) · [Catalogue](CONTENTS.md)
 
+## 2026-11-18 — Complete distance-graph classifications
+
+- Proved the exact gap-five and gap-seven density tables for every positive parameter, including optimal periodic constructions.
+- Proved the exact Conjecture 39 discrepancy and infinitely many strict counterexamples.
+- Added checked finite rectangle-tiling and Euler-product components; the uniform rectangle asymptotic remains incomplete.
+- Added the two-integer-direction plane reduction with the four-speed gap retained as an explicit hypothesis.
+
 ## 2026-11-19 — Equality for eleven through fourteen runners
 
 - Classified the primitive equality cases using published binary sieves and an additional integer-direction calculation.

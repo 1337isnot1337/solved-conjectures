@@ -153,7 +153,7 @@ symbolic product inverses and checked proof-list aggregation. Larger groups
 also use the kernel-checked digit-choice optimization. See the
 continuation plan for measured limits and approaches already ruled out.
 
-The [distance-graph note](../results/distance-graph-densities/PROOF.md) adds two formalization targets. Conjecture 38 uses the strict prefix reduction, strip shortening and finite strip decision. Conjecture 39 uses the period-58 construction and length-116 exclusion. The [full classification](../results/distance-graph-densities/CLASSIFICATION.md) also needs the nine-cycle strip and the 20 small cases. These results await Lean formalization.
+The [distance-graph classification](../results/distance-graph-densities/LEAN.md) is complete. The checked Haralambis theorem reduces the upper bound to three pair-sum denominators; exact integer arithmetic proves all infinite residue classes, and rational interval certificates cover the small cases. The theorem includes actual density, periodic attainment, and infinitely many strict counterexamples to Conjecture 39. The `ThreeDistanceGraph` prefix keeps this proof separate from a concurrent independent character development.
 
 The [two-difference compact-group theorem](../results/two-difference-motzkin/PROOF.md) requires the signed square-grid construction, integration over the relation lattice, finite-quotient approximation and density of character restrictions. Its Lean proof is pending.
 
@@ -178,3 +178,13 @@ The distance-graph lane uses the now-proved Haralambis equality and pair-sum
 maximum to replace the strip search with exact arithmetic on three denominators.
 The rectangle lane separates actual shelf packing and injective encodings from
 the sharp Euler-product and cumulative-partition estimates. Li remains last.
+
+
+The distance-graph lane has completed every endpoint and its source/axiom/kernel
+gates. Its worker has moved to cumulative partition counting under rectangle
+claim #10. The finite rectangle model and four Euler-product modules are
+checked; the final uniform asymptotic remains open. The analytic plan uses
+finite multiplicity vectors and two exponential tail bounds, with the sharp
+Euler-product constant supplied by the proved Basel sum. The separate
+five-speed lane is checking a finite critical-plane certificate; its
+four-speed-gap dependency remains explicit.

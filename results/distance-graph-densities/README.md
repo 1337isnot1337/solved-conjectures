@@ -24,7 +24,7 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-No Lean formalization is currently listed for this result. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
+Complete Lean formalization. The `ThreeDistanceGraph` modules prove the density and circle formulas for every positive `k`, all exceptional small cases, explicit optimal periodic constructions, and the infinite family of strict counterexamples to Conjecture 39. See [the checked proof](LEAN.md) and [the status report](../../docs/lean-status.md).
 
 ## Supporting files
 

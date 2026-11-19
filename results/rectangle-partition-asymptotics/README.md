@@ -22,4 +22,4 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-No Lean formalization is currently listed for this result. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
+Partial formalization. Lean checks exact grid-tiling semantics, shelf packing, the injective partition construction, deletion multiplicities, and sharp Euler-product estimates with constant `pi^2/6`. The cumulative partition asymptotic, the real-position interpretation, and the final uniform limit are still in progress. See [the checked components](LEAN.md), [the analytic plan](ANALYTIC_LEAN_PLAN.md), and [the status report](../../docs/lean-status.md).
