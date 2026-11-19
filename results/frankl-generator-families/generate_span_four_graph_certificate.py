@@ -388,6 +388,88 @@ end ''' + ns + '\n'
             'formal_status': 'Candidate source; fresh Lean gate required.'}
 
 
+def edge_seed_groups(data, limit):
+    counts = {a: 0 for a in data['levels'][4]}
+    for a in data['edges']:
+        counts[a % 16**4] += 1
+    groups, seeds, total = [], [], 0
+    for seed in sorted(counts):
+        count = counts[seed]
+        if seeds and total + count > limit:
+            groups.append({'seeds': seeds, 'edges': total})
+            seeds, total = [], 0
+        assert count <= limit, 'An individual seed exceeds the requested edge limit'
+        seeds.append(seed)
+        total += count
+    if seeds:
+        groups.append({'seeds': seeds, 'edges': total})
+    return groups
+
+
+def emit_edge_pilot(data, output, limit):
+    ranks = dict(data['pair_ranks'])
+    by_seed = {}
+    for a in data['edges']:
+        by_seed.setdefault(a % 16**4, []).append(a)
+    choices = []
+    for index, group in enumerate(edge_seed_groups(data, limit)):
+        codes = [a for seed in group['seeds'] for a in by_seed.get(seed, [])]
+        features = {(ranks.get(a % 16**6, 0), ranks.get(a // 16, 0)) for a in codes}
+        choices.append({**group, 'index': index, 'codes': codes, 'features': len(features)})
+    chosen = max(choices, key=lambda row: (row['edges'], row['features'], -row['index']))
+    queries = {v for a in chosen['codes'] for v in (a % 16**6, a // 16)}
+    equal = {a for a in chosen['codes'] if ranks.get(a % 16**6, 0) == ranks.get(a // 16, 0)}
+    rank_tree, rank_nodes = tree_literal(data['pair_ranks'], queries)
+    keep_tree, keep_nodes = tree_literal([[a, 0] for a in sorted(data['recurrent'])], equal)
+    ns = 'FranklSpanFour.Graph.EdgePilot'
+    source = '''module
+
+public import Conjectures.FranklSpanFourGraphRank
+
+@[expose] public section
+
+set_option maxRecDepth 65536
+
+namespace ''' + ns + '''
+
+def seedGroupIndex : ℕ := ''' + str(chosen['index']) + '''
+
+def seeds : List ℕ := ''' + str(chosen['seeds']) + '''
+
+def ranks : Table :=
+  ''' + rank_tree + '''
+
+def kept : Table :=
+  ''' + keep_tree + '''
+
+end ''' + ns + '\n'
+    proof = header(['FranklSpanFourGraphEdgePilotData',
+                    'FranklSpanFourGraphPrefixCertificate'], ns) + '''def codes : List ℕ :=
+  edgeCodesFrom PrefixCertificate.level4 seeds (pairMaskCheck LocalData.pairRows)
+
+theorem rank_checked : rankCodeCheck 6 codes kept ranks = true := by
+  decide +kernel
+
+theorem rank_semantic :
+    FranklCyclic.rankListCheck ((decodeWords 7 codes).map Assembly.edge)
+      (fun e => decide (Assembly.sevenOfEdge e ∈ decodeWords 7 kept.keys))
+      (fun v => ranks.get (wordCode v)) = true :=
+  rankCodeCheck_seven rank_checked
+
+end ''' + ns + '\n'
+    output.mkdir(parents=True, exist_ok=True)
+    files = {'FranklSpanFourGraphEdgePilotData.lean': source,
+             'FranklSpanFourGraphEdgePilot.lean': proof}
+    for name, text in files.items():
+        (output / name).write_text(text)
+    return {'seed_group_index': chosen['index'], 'seeds': chosen['seeds'],
+            'edges': chosen['edges'], 'rank_features': chosen['features'],
+            'rank_tree_nodes': rank_nodes, 'keep_tree_nodes': keep_nodes,
+            'seed_group_count': len(choices), 'edge_limit': limit,
+            'source_sha256': {name: digest(output / name) for name in files},
+            'formal_status': 'Candidate sources; fresh Lean gate required.'}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
@@ -395,9 +477,11 @@ def main():
     parser.add_argument('--pilot-dir', type=Path)
     parser.add_argument('--local-metadata-dir', type=Path)
     parser.add_argument('--prefix-dir', type=Path)
+    parser.add_argument('--edge-pilot-dir', type=Path)
+    parser.add_argument('--edge-limit', type=int, default=1024)
     parser.add_argument('--prefix-chunk-size', type=int, default=32)
     args = parser.parse_args()
-    assert args.prefix_chunk_size > 0
+    assert args.prefix_chunk_size > 0 and args.edge_limit > 0
     data, report = reproduce()
     raw = canonical_bytes(data)
     args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -407,12 +491,16 @@ def main():
     assert report['canonical_json_sha256'] == '59de019740b6317c6976e41444c647369bf67099f0238641d47d21aba3b9750f'
     if args.local_metadata_dir:
         report['local_metadata'] = emit_local_metadata(data, args.local_metadata_dir)
-    elif args.pilot_dir or args.prefix_dir:
-        report['local_metadata'] = emit_local_metadata(data, args.pilot_dir or args.prefix_dir)
+    elif args.pilot_dir or args.prefix_dir or args.edge_pilot_dir:
+        report['local_metadata'] = emit_local_metadata(data, args.pilot_dir or args.prefix_dir or args.edge_pilot_dir)
     if args.pilot_dir:
         report['pilot'] = emit_pilot(data, args.pilot_dir)
     if args.prefix_dir:
         report['prefix'] = emit_prefix(data, args.prefix_dir, args.prefix_chunk_size)
+    if args.edge_pilot_dir:
+        if not args.prefix_dir:
+            report['prefix'] = emit_prefix(data, args.edge_pilot_dir, args.prefix_chunk_size)
+        report['edge_pilot'] = emit_edge_pilot(data, args.edge_pilot_dir, args.edge_limit)
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report['counts'], sort_keys=True), flush=True)
