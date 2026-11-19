@@ -13,7 +13,7 @@ import subprocess
 
 import audit_lean_all_owned as audit
 import verify_frankl_orbit_batches as runtime
-from replay_lean import header_tokens
+from replay_lean import header_tokens, imports_of
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = "docs/critical-seven-exact-sources.json"
@@ -115,7 +115,8 @@ def verify(model, modules, required, modern, stage):
         "required_theorems": required, "source_sha256": model["source_sha256"],
         "gate_sha256": controls, "toolchain": toolchain,
         "source_workers": 1, "kernel_threads": 1,
-        "source_checks": {}, "kernel_checks": {}, "source_policy": model["source_policy"],
+        "source_checks": {}, "source_failures": [], "source_skips": {},
+        "kernel_checks": {}, "source_policy": model["source_policy"],
         "axiom_whitelist": list(audit.ALLOWED), "modern_modules": modern,
         "accepted_registry_changed": False,
     }
@@ -127,7 +128,21 @@ def verify(model, modules, required, modern, stage):
         "LEAN_SYSROOT": str(compiler), "LEAN_NUM_THREADS": "1", "UV_USE_IO_URING": "0",
     }
     try:
+        # Failed objects never satisfy an import. Continue only independent
+        # strict checks to collect diagnostics, then fail before audit/replay.
+        project_modules = set(modules)
+        dependencies = {module: set(imports_of(source(module))) & project_modules
+                        for module in modules}
+        blocked = set()
         for module in modules:
+            blocked_by = sorted(dependencies[module] & blocked)
+            if blocked_by:
+                blocked.add(module)
+                receipt["source_skips"][module] = {"blocked_by": blocked_by}
+                save()
+                print(json.dumps({"phase": module + ".source", "skipped": True,
+                                  "blocked_by": blocked_by}), flush=True)
+                continue
             stem = module.replace(".", "/")
             copied = stage / "src" / (stem + ".lean")
             copied.parent.mkdir(parents=True, exist_ok=True)
@@ -142,8 +157,16 @@ def verify(model, modules, required, modern, stage):
                 stage / "progress" / (module + ".source.json"), 1800)
             receipt["source_checks"][module] = check
             save()
-            require(check["exit_code"] == 0 and check["timed_out"] is False,
-                    "Strict source failed: " + module + "\n" + Path(check["log"]).read_text()[-12000:])
+            if check["exit_code"] != 0 or check["timed_out"] is not False:
+                blocked.add(module)
+                receipt["source_failures"].append(module)
+                save()
+        failures = receipt["source_failures"]
+        require(not failures, "Strict sources failed: " + ", ".join(failures) + "\n" +
+                "\n".join(Path(receipt["source_checks"][module]["log"]).read_text()[-12000:]
+                          for module in failures))
+        require(set(receipt["source_checks"]) == set(modules) and not receipt["source_skips"],
+                "Complete strict source coverage is required before audit and replay")
         frozen_objects = objects(stage, modules, modern)
         receipt["artifact_sha256"] = frozen_objects
         spec = {"modules": modules, "required": required,

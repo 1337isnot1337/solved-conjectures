@@ -36,7 +36,7 @@ theorem first_tail_small
     (hr₄ : 3*x₄ ≤ 4*x₅)
     (hdet : V^2 * (x₀*x₁*x₂*x₃*x₄*x₅) = 1) :
     x₀ < 1 / 1764 := by
-  clear h₅
+  have _positive_last : 0 < x₅ := h₅
   by_contra h
   have hx₀ : (1 / 1764 : ℝ) ≤ x₀ := le_of_not_gt h
   have hx₁ : (1 / 2352 : ℝ) ≤ x₁ := by linarith
