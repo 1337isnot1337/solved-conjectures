@@ -1,0 +1,80 @@
+{
+  "schema": "bounded-lean-scheduler-candidate-v1",
+  "status": "new-candidate-awaiting-hosted-validation",
+  "files": [
+    {
+      "path": "scripts/build_lean_parallel.py",
+      "blob_sha": "9d6feac7e470e11e76aece653f30e11eb450fa98",
+      "sha256": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+      "characters": 20329
+    },
+    {
+      "path": "scripts/replay_lean_parallel.py",
+      "blob_sha": "2c120d86924f601ea7f7979596de85f87498ef73",
+      "sha256": "4bcd8ad7a5a489ae319b532c0dcef6b7ba752463367c947224e459b02f2bf56b",
+      "characters": 13972
+    },
+    {
+      "path": "scripts/test_lean_parallel.py",
+      "blob_sha": "df3559c2b9dea3c6070026c16bcf6dbfd0ad17b3",
+      "sha256": "675403663e248f796a3fc6661390d88c10508cd3dea6959f4adf193f96393ee1",
+      "characters": 15186
+    },
+    {
+      "path": "scripts/verify_lean_parallel_candidate.py",
+      "blob_sha": "d6b391b80e6ea19dbdd693c74e01ee2d46f5297c",
+      "sha256": "3d210d32e1af120b2220c14b284e3d47493f6aa50f56d87898821b8003de3696",
+      "characters": 22266
+    },
+    {
+      "path": ".github/workflows/lean-parallel-candidate.yml",
+      "blob_sha": "f7856df7c988d2216dad39517d2826ffc480e7d3",
+      "sha256": "aacb688765da97329b5e769f4161bfddb1c5d1fb02381ff8dfb7937c5fa4f477",
+      "characters": 2539
+    }
+  ],
+  "scope": {
+    "source": "Fresh exact accepted/candidate dependency DAG; bounded separate Lake processes; all prerequisites finish first; no source-success reuse.",
+    "kernel": "One unchanged pinned stock checker on a copied exact full closure; LEAN_NUM_THREADS 1 to 4; sampled process/thread/RSS guards; exact replay set with both roots where imported.",
+    "audit": "Candidate runner import-all scan of every owned declaration, theorem endpoints, and explicitly inventoried private proofs.",
+    "tests": "22 offline protocol/process tests plus actual seven-module Lean success and failure fixtures; real 25-module arithmetic pilot, 24 private proof chunks."
+  },
+  "fixes": [
+    "Reject partial .olean.server/.olean.private facet pairs for legacy and modern sources.",
+    "Record the resolved Lean compiler binary, not only Lake/elan.",
+    "Discover descendants from every /proc/PID/task/*/children entry."
+  ],
+  "unchanged": [
+    "scripts/verify_lean.sh",
+    "lean/Conjectures.lean",
+    "lean/Solitaire.lean",
+    "lean/ProofAudit.lean",
+    "all accepted registrations and mathematical sources",
+    "all prior candidate verification gates"
+  ],
+  "toolchain": {
+    "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
+  },
+  "commands": {
+    "protocol": "python3 scripts/test_lean_parallel.py",
+    "fixture_only": "python3 scripts/verify_lean_parallel_candidate.py --fixture-only --output-dir .candidate-artifacts/lean-parallel-fixture --jobs 2 --workers 1 2 3 4 --memory-limit-mib 12288",
+    "full": "python3 scripts/verify_lean_parallel_candidate.py --output-dir .candidate-artifacts/lean-parallel-candidate --jobs 2 --workers 1 2 3 4 --memory-limit-mib 12288"
+  },
+  "observed_prior_baseline": {
+    "description": "Independent hosted arithmetic group baseline; not a validation of these reconstructed scheduler scripts.",
+    "receipt_blob": "bebafe362e28db5f0f19ce5aa5cc5bbf837569e4",
+    "receipt_sha256": "65506f31ea169af244163aff780738176663033034e68f6374516773ed28b695",
+    "modules": 30,
+    "checker_workers": 4,
+    "kernel_seconds": 59.981,
+    "kernel_peak_rss_kib": 9246016
+  },
+  "limitations": [
+    "No local runtime is currently available.",
+    "No reconstructed helper/test byte has been executed yet.",
+    "Prior pre-outage scheduler tests do not validate these newly reconstructed bytes.",
+    "The wrappers are opt-in candidates and do not replace the accepted gate."
+  ],
+  "workflow": ".github/workflows/lean-parallel-candidate.yml"
+}

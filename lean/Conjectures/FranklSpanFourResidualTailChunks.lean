@@ -26,6 +26,8 @@ def exteriorCheck (e : Entry) (allowed : ℕ) : Bool :=
 
 def chunkCheck (e : Entry) (chunk : List ℕ) : Bool := chunk.all (exteriorCheck e)
 
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
 theorem entryCheck_of_chunks {e : Entry} {chunks : List (List ℕ)}
     (hmetadata : metadataCheck e = true) (hpositive : positiveCheck e = true)
     (hcover : chunks.flatten = outside e)

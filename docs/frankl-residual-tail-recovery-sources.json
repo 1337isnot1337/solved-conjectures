@@ -214,9 +214,9 @@
     },
     {
       "path": "lean/Conjectures/FranklSpanFourResidualTailChunks.lean",
-      "blob_sha": "e1af165f40fbd03b9ad4378ad9e429db891ad63b",
-      "sha256": "c9e981ac35947affa97de23d6a7af8206a0dcaa196b16e4a1db4d1baed56a26d",
-      "provenance": "reconstructed candidate; fresh hosted gate required"
+      "blob_sha": "43f7bc23f7c122ee598b38f305dcf59af6c7a422",
+      "sha256": "27764d5370f5fa9ddc139962ffa9dec14fc5628691fc52756312b969e3cb08ac",
+      "provenance": "reconstructed candidate; scoped elaboration budget added after hosted recursion-depth failure; fresh hosted gate required"
     },
     {
       "path": "lean/Conjectures/FranklSpanFourResidualTailCore.lean",
