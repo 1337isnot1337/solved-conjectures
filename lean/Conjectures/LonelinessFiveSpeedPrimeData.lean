@@ -1,4 +1,6 @@
 import Mathlib.Data.Finset.Dedup
+import Mathlib.Data.Finset.Card
+import Mathlib.Data.Fintype.Fin
 import Mathlib.Data.List.Basic
 import Mathlib.Tactic.FinCases
 import Mathlib.Tactic.NormNum.Prime
