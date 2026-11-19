@@ -14,7 +14,8 @@ from preserve_frankl_arithmetic_receipts import ROOT, REPO, api, request, requir
 
 PROFILES = {
     "Lean Frankl full high-girth generator theorem": {
-        "inventory": "docs/frankl-high-girth-theorem-sources.json", "group": "high-girth-theorem"},
+        "inventory": "docs/frankl-high-girth-theorem-sources.json", "group": "high-girth-theorem",
+        "archive_limit_bytes": 256 * 1024 * 1024},
     "Lean Frankl actual high-girth graph counts": {
         "inventory": "docs/frankl-high-girth-graph-core-sources.json", "group": "high-girth-graph-core"},
     "Lean Frankl actual tree configuration messages": {
@@ -206,7 +207,9 @@ def main():
             require(artifact["workflow_run"]["id"] == record["id"]
                     and artifact["workflow_run"]["head_sha"] == record["head"],
                     "Artifact ownership mismatch")
-            payload = request(artifact["archive_download_url"])
+            archive_limit = profile.get("archive_limit_bytes", 64 * 1024 * 1024)
+            require(artifact["size_in_bytes"] <= archive_limit, "Artifact exceeds profile bound")
+            payload = request(artifact["archive_download_url"], limit=archive_limit)
             require("sha256:" + sha(payload) == artifact["digest"], "Artifact ZIP hash mismatch")
             archive = zipfile.ZipFile(io.BytesIO(payload))
             names = [name for name in archive.namelist() if PurePosixPath(name).name == "receipt.json"]
