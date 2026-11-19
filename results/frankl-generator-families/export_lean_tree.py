@@ -24,6 +24,7 @@ def export(data, directory):
     k=data['k'];tag=f'{k:02d}';namespace='FranklTreeCone.Degree'+tag
     data_module='Conjectures.FranklTreeDataK'+tag
     text='module\n\npublic import Conjectures.FranklTreeCertificate\n\n@[expose] public section\n\n'
+    text+='set_option maxRecDepth 100000\nset_option maxHeartbeats 0\n\n'
     text+='/-! Generated exact nonnegative-span witnesses. Regenerate with generate_lean_tree.py and export_lean_tree.py. -/\n\nnamespace '+namespace+'\n\n'
     for i,l in enumerate(data['levels']):
         text+=child('point'+str(i),l['point'])+child('generator'+str(i),l['generator'])

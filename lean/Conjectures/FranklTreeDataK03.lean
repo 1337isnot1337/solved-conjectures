@@ -4,6 +4,9 @@ public import Conjectures.FranklTreeCertificate
 
 @[expose] public section
 
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
 /-! Generated exact nonnegative-span witnesses. Regenerate with generate_lean_tree.py and export_lean_tree.py. -/
 
 namespace FranklTreeCone.Degree03

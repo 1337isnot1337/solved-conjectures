@@ -97,7 +97,7 @@ theorem checkRows_sound {target input : List NatRay} {witnesses : List SpanWitne
       cases witnesses with
       | nil => simp [checkRows] at h
       | cons w ws =>
-          obtain ⟨hr, hrs⟩ := Bool.and_eq_true.mp h
+          obtain ⟨hr, hrs⟩ := Bool.and_eq_true_iff.mp h
           intro a ha
           rcases List.mem_cons.mp ha with rfl | ha
           · exact spanCheck_sound hr
@@ -147,7 +147,7 @@ theorem returnCheck_sound {input output : List NatRay} {witnesses : List SpanWit
     returnMap v ∈ rayCone output := by
   apply linear_mem_cone_of_generators returnMap (raySet input) _ _ hv
   rintro _ ⟨r, hr, rfl⟩
-  obtain ⟨hvalid, hrows⟩ := Bool.and_eq_true.mp h
+  obtain ⟨hvalid, hrows⟩ := Bool.and_eq_true_iff.mp h
   have hrow := of_decide_eq_true hvalid r hr
   have hs := checkRows_sound hrows (natReturnMap r) (List.mem_map_of_mem hr)
   rwa [castRay_natReturnMap r hrow] at hs

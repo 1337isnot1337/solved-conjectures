@@ -23,7 +23,7 @@ def avoidingNeighbors (G : ι → Finset α) (e : ι) (T : Finset ι)
     ¬ Bad G f (Lopsided.Coordinates.join e (neighbors G e) ⟨o, false, n⟩)
 
 theorem coveringNeighbors_isUpper (G : ι → Finset α) (e : ι) :
-    IsUpperSet (coveringNeighbors G e : Set (Finset _)) := by
+    IsUpperSet (coveringNeighbors G e : Set (Finset ↑(neighbors G e))) := by
   intro n m hnm hn
   simp only [coveringNeighbors, mem_coe, mem_filter, mem_univ, true_and] at hn ⊢
   exact hn.trans (generated_mono G (map_subset_map.mpr hnm))
@@ -31,15 +31,18 @@ theorem coveringNeighbors_isUpper (G : ι → Finset α) (e : ι) :
 theorem avoidingNeighbors_isLower (G : ι → Finset α) (e : ι) (T : Finset ι)
     (hT : Disjoint T (neighbors G e))
     (o : Finset (Lopsided.Coordinates.Exterior e (neighbors G e))) :
-    IsLowerSet (avoidingNeighbors G e T o : Set (Finset _)) := by
-  intro n m hnm hm
+    IsLowerSet (avoidingNeighbors G e T o : Set (Finset ↑(neighbors G e))) := by
+  intro m n hnm hm
   simp only [avoidingNeighbors, mem_coe, mem_filter, mem_univ, true_and] at hm ⊢
   apply no_bad_antitone_on_neighbors G e T hT ?_ ?_ hm
-  · change o.map _ ∪ n.map _ ⊆ o.map _ ∪ m.map _
+  · change
+      (o.map (Function.Embedding.subtype _) ∪ n.map (Function.Embedding.subtype _) : Finset ι) ⊆
+        o.map (Function.Embedding.subtype _) ∪ m.map (Function.Embedding.subtype _)
     exact union_subset_union Subset.rfl (map_subset_map.mpr hnm)
   · intro f hf
     obtain ⟨hft, hfs⟩ := mem_sdiff.mp hf
-    change f ∈ o.map _ ∪ m.map _ at hft
+    change f ∈ o.map (Function.Embedding.subtype _) ∪
+      m.map (Function.Embedding.subtype _) at hft
     rcases mem_union.mp hft with hfo | hfm
     · exact False.elim (hfs (mem_union_left _ hfo))
     · exact property_of_mem_map_subtype m hfm
@@ -60,7 +63,7 @@ theorem bad_join_iff (G : ι → Finset α) (e : ι)
       have hfo : f ∉ o.map (Function.Embedding.subtype _) := by
         intro h
         exact property_of_mem_map_subtype o h hf
-      simp only [Lopsided.Coordinates.join, Bool.false_eq_true, if_false,
+      simp only [Lopsided.Coordinates.join, Bool.false_eq_true, ite_false,
         mem_union, hfo, false_or, localSelection]
     have h := bad_iff_of_agree_on_support G e hagree
     simpa only [Bad, hen, not_false_eq_true, true_and, coveringNeighbors,
@@ -93,7 +96,7 @@ theorem map_badEvent (G : ι → Finset α) (e : ι) :
   change Bad G e (Lopsided.Coordinates.join e (neighbors G e) z) ↔ _
   rw [bad_join_iff]
   rcases z with ⟨o, b, n⟩
-  simp [Lopsided.sliceBad]
+  simp [Lopsided.sliceBad, and_comm]
 
 theorem map_nonneighbor_avoid (G : ι → Finset α) (e : ι) (T : Finset ι)
     (he : e ∉ T) (hT : Disjoint T (neighbors G e)) :

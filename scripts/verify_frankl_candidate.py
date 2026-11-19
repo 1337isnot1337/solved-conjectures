@@ -51,6 +51,10 @@ TASKS.update({
     "tree-counts": ("Conjectures.FranklTreeCounts", ["FranklTreeCounts.branchCounts_eq"]),
     "tree-foundations": ("Conjectures.FranklTreeCertificate", ["FranklTreeCone.childrenCheck_sound", "FranklTreeCone.highGirthTreeCheck_sound"]),
     "tree-k03": ("Conjectures.FranklTreeBoundK03", ["FranklTreeCone.Degree03.checked"]),
+    "tree-k04": ("Conjectures.FranklTreeBoundK04", ["FranklTreeCone.Degree04.checked"]),
+    "tree-ball": ("Conjectures.FranklTreeBall", ["FranklTreeBall.radius_seven_isTree_of_egirth"]),
+    "tree-gluing": ("Conjectures.FranklTreeGluing", ["FranklTreeGluing.glue_valid_iff"]),
+    "shortcuts": ("Conjectures.FranklFamilyShortcuts", ["FranklLocal.two_neighbor_generator_abundance"]),
 })
 
 GATE_INPUTS = (

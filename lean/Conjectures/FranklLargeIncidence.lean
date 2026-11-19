@@ -149,7 +149,7 @@ theorem card_pointReaders_le (G : ι → Finset α) (k : ℕ) (hk : 1 ≤ k)
       incident_subset_eventSupport G ((mem_incident G a e).mp he)
     rw [card_sdiff_of_subset hI, card_eventSupport G k hsize hregular hlinear e,
       show I.card = 3 from hregular a]
-    exact Nat.add_sub_add_right (2 * k) 2 1
+    exact Nat.add_sub_add_right (2 * k) 1 2
   have hextra : extra.card ≤ ∑ e ∈ I, (eventSupport G e \ I).card := card_biUnion_le
   have hsum : ∑ e ∈ I, (eventSupport G e \ I).card = 3 * (2 * k - 2) := by
     calc

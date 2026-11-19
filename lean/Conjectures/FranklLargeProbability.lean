@@ -35,7 +35,7 @@ theorem nonneighbor_event_bound (G : ι → Finset α) (k : ℕ)
     rw [pow_mul, show (2 : ℝ) ^ 2 = 4 by norm_num, div_pow]
     have hfour : (4 : ℝ) ^ k ≠ 0 := pow_ne_zero _ (by norm_num)
     field_simp
-  apply (mul_le_mul_left (by positivity : (0 : ℝ) < 2 * 2 ^ (2 * k))).mp
+  apply (mul_le_mul_iff_right₀ (by positivity : (0 : ℝ) < 2 * 2 ^ (2 * k))).mp
   calc
     (2 * 2 ^ (2 * k) : ℝ) *
         ((badEvent G e ∩ Lopsided.avoid (badEvent G) T).card : ℝ)

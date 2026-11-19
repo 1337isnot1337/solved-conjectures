@@ -8,7 +8,7 @@ public import Mathlib.Data.Finset.Prod
 records arbitrary fixed exterior bits, the Boolean coordinate is the omitted
 generator, and the finset coordinate records its neighboring generators. -/
 
-public section
+@[expose] public section
 
 namespace Frankl.Lopsided
 

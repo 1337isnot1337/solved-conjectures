@@ -47,13 +47,13 @@ theorem productChecks_sound {initial factors : List NatRay} {steps : List Produc
     v * l.prod ∈ rayCone (finalProductRays initial steps) := by
   induction steps generalizing initial v l with
   | nil =>
-      have he : l = [] := List.length_eq_zero.mp hlen
+      have he : l = [] := List.length_eq_zero_iff.mp hlen
       simpa [he, finalProductRays] using hv
   | cons step rest ih =>
       cases l with
       | nil => simp at hlen
       | cons w ws =>
-          obtain ⟨hstep, hrest⟩ := Bool.and_eq_true.mp h
+          obtain ⟨hstep, hrest⟩ := Bool.and_eq_true_iff.mp h
           have hvw := stepCheck_sound hstep hv (hl w (by simp))
           have hws : ∀ x ∈ ws, x ∈ rayCone factors := fun x hx => hl x (by simp [hx])
           have hlen' : ws.length = rest.length := Nat.succ.inj hlen
@@ -65,10 +65,11 @@ theorem childrenCheck_sound {incoming : List NatRay} {cert : ChildrenCertificate
     (h : childrenCheck incoming cert = true) (l : List Message)
     (hl : ∀ v ∈ l, v ∈ rayCone incoming) (hlen : l.length = cert.steps.length) :
     childrenMessage l ∈ rayCone cert.outgoing := by
-  obtain ⟨hprod, hret⟩ := Bool.and_eq_true.mp h
+  obtain ⟨hprod, hret⟩ := Bool.and_eq_true_iff.mp h
   have hone : (1 : Message) ∈ rayCone [(1 : NatRay)] := by
     have hm := castRay_mem_rayCone (rays := [(1 : NatRay)]) (r := (1 : NatRay)) (by simp)
-    simpa [castRay] using hm
+    have hcast : castRay (1 : NatRay) = (1 : Message) := by ext i; exact Nat.cast_one
+    rwa [hcast] at hm
   have hf : ∀ v ∈ l.map factorMap, v ∈ rayCone (incoming.map natFactorMap) := by
     intro v hv
     obtain ⟨w, hw, rfl⟩ := List.mem_map.mp hv
@@ -98,8 +99,9 @@ theorem rootCheck_ray_sound {rays : List NatRay} {num den : ℕ}
   have hreal := (Nat.cast_le (α := ℝ)).mpr hn
   simp only [Nat.cast_add, Nat.cast_mul, Nat.cast_sub hcheck.2.1] at hreal
   have hzero := sub_nonneg.mpr hreal
-  convert hzero using 1 <;>
-    simp [rootSlack, natFactorMap, factorMap, castRay] <;> ring
+  convert hzero using 1
+  simp [rootSlack, natFactorMap, factorMap, castRay]
+  ring
 
 theorem rootCheck_sound {rays : List NatRay} {num den : ℕ}
     (h : rootCheck rays num den = true) {x y z : Message}
@@ -152,9 +154,9 @@ theorem levelChecks_sound {k : ℕ} {pointInput generatorInput : List NatRay}
   induction levels generalizing pointInput generatorInput P G with
   | nil => exact ⟨hP, hG⟩
   | cons level rest ih =>
-      obtain ⟨hprev, hrest⟩ := Bool.and_eq_true.mp h
-      obtain ⟨hprev, hgen⟩ := Bool.and_eq_true.mp hprev
-      obtain ⟨hdeg, hpoint⟩ := Bool.and_eq_true.mp hprev
+      obtain ⟨hprev, hrest⟩ := Bool.and_eq_true_iff.mp h
+      obtain ⟨hprev, hgen⟩ := Bool.and_eq_true_iff.mp hprev
+      obtain ⟨hdeg, hpoint⟩ := Bool.and_eq_true_iff.mp hprev
       have hdegree := of_decide_eq_true hdeg
       have hP' : childMessageSet 2 G ⊆ rayCone level.point.outgoing := by
         rintro _ ⟨l, hlen, hl, rfl⟩
@@ -177,8 +179,8 @@ theorem highGirthTreeCheck_sound {k : ℕ} {levels : List AlternatingLevel}
     (htotal : 0 < rootOccupiedCount x y z + rootUnoccupiedCount x y z) :
     rootOccupiedCount x y z /
         (rootOccupiedCount x y z + rootUnoccupiedCount x y z) ≤ (481792 : ℝ) / 1000000 := by
-  obtain ⟨hprev, hroot⟩ := Bool.and_eq_true.mp h
-  obtain ⟨hlen, hlevels⟩ := Bool.and_eq_true.mp hprev
+  obtain ⟨hprev, hroot⟩ := Bool.and_eq_true_iff.mp h
+  obtain ⟨hlen, hlevels⟩ := Bool.and_eq_true_iff.mp hprev
   have hlen' := of_decide_eq_true hlen
   have hcones := levelChecks_sound hlevels (rayCone boundaryRays) (rayCone boundaryRays)
     (fun _ hv => hv) (fun _ hv => hv)

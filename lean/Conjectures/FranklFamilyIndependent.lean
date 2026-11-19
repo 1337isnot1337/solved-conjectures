@@ -81,8 +81,9 @@ theorem independent_empty_slice_card (F : Finset (Finset ι)) (I : Finset ι)
     rw [separated_union_inside hpD hpS,separated_union_inside hqD hqS] at hsecond
     exact Prod.ext hfirst hsecond
   calc
-    2^I.card*(F.filter (fun s => Disjoint s I)).card=pairs.card := by
-      simp only [pairs,C,Finset.card_product,Finset.card_powerset,Nat.mul_comm]
+    2^I.card*(F.filter (fun s => Disjoint s I)).card=C.card*I.powerset.card := by
+      rw [Finset.card_powerset,Nat.mul_comm]
+    _=pairs.card := (Finset.card_product C I.powerset).symm
     _=(pairs.image join).card := (Finset.card_image_of_injOn hinj).symm
     _=F.card := congrArg Finset.card himage
 

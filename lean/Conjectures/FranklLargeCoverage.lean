@@ -19,6 +19,9 @@ variable {A : Type*} [Fintype A] [DecidableEq A]
 
 def HitsEveryFiber (s : Finset (Σ a, B a)) : Prop := ∀ a, ∃ b, Sigma.mk a b ∈ s
 
+instance (s : Finset (Σ a, B a)) : Decidable (HitsEveryFiber s) :=
+  inferInstanceAs (Decidable (∀ a, ∃ b, Sigma.mk a b ∈ s))
+
 def fiberSelectionsEquiv : {s : Finset (Σ a, B a) // HitsEveryFiber s} ≃
     ((a : A) → {t : Finset (B a) // t.Nonempty}) where
   toFun s a := ⟨univ.filter (fun b => Sigma.mk a b ∈ s.1), by
@@ -45,6 +48,7 @@ theorem card_nonempty_finsets_of_two (X : Type*) [Fintype X] [DecidableEq X]
     (fun s : Finset X => nonempty_iff_ne_empty))]
   rw [Fintype.card_subtype_compl (fun s : Finset X => s = ∅),
     Fintype.card_subtype_eq (∅ : Finset X), Fintype.card_finset, hX]
+  decide
 
 theorem card_hitsEveryFiber (hB : ∀ a, Fintype.card (B a) = 2) :
     Fintype.card {s : Finset (Σ a, B a) // HitsEveryFiber s} = 3 ^ Fintype.card A := by
@@ -163,7 +167,8 @@ theorem card_coveringNeighbors (G : ι → Finset α) (k : ℕ)
       (Fintype.card_coe _).symm
     _ = Fintype.card {s : Finset (NeighborOccurrence G e) // HitsEveryFiber s} :=
       Fintype.card_congr F
-    _ = 3 ^ Fintype.card ↑(G e) := card_hitsEveryFiber (fun a => by
+    _ = 3 ^ Fintype.card ↑(G e) := card_hitsEveryFiber
+      (A := ↑(G e)) (B := fun a : ↑(G e) => ↑(otherIncident G e a.1)) (fun a => by
       rw [Fintype.card_coe, card_otherIncident G hregular a.2])
     _ = 3 ^ k := by rw [Fintype.card_coe, hsize e]
 

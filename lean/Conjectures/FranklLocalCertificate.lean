@@ -28,7 +28,7 @@ def certificateCheck (G : Finset (Finset α)) (W : Finset α) (w : α → ℕ) :
 theorem certificateCheck_weightCertificate {G : Finset (Finset α)}
     {W : Finset α} {w : α → ℕ} (hc : certificateCheck G W w=true) :
     WeightCertificate G W (fun x => (w x:ℝ)) := by
-  have hchecked := of_decide_eq_true (Bool.and_eq_true.mp hc).2
+  have hchecked := of_decide_eq_true (Bool.and_eq_true_iff.mp hc).2
   intro E M hME hEB
   have h := hchecked E (Finset.mem_powerset.mpr hEB) M (Finset.mem_powerset.mpr hME)
   have hcast : 0 ≤ ((∑ S ∈ compatible G W E M, integerImbalance W w S:ℤ):ℝ) := by
@@ -38,7 +38,7 @@ theorem certificateCheck_weightCertificate {G : Finset (Finset α)}
 theorem certificateCheck_abundance {G : Finset (Finset α)}
     {W : Finset α} {w : α → ℕ} (hc : certificateCheck G W w=true) :
     ∃ x ∈ W, Abundant (family G) x := by
-  have hpositive := of_decide_eq_true (Bool.and_eq_true.mp hc).1
+  have hpositive := of_decide_eq_true (Bool.and_eq_true_iff.mp hc).1
   apply abundant_of_total_imbalance (w:=fun x => (w x:ℝ))
   · intro x _
     exact Nat.cast_nonneg _
