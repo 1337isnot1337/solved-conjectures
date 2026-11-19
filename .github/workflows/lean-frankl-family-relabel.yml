@@ -1,0 +1,39 @@
+name: Lean Frankl family relabeling
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-frankl-family-relabel.yml'
+      - 'scripts/verify_frankl_family_relabel.py'
+      - 'docs/frankl-family-relabel-sources.json'
+      - 'lean/Conjectures/FranklFamilyRelabel.lean'
+      - 'lean/Conjectures/FranklBasic.lean'
+      - 'lean/Conjectures/FranklFamily.lean'
+
+permissions:
+  contents: read
+
+jobs:
+  relabel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: false
+          test: false
+          lint: false
+      - name: Fresh strict source, all owned declarations, exact stock replay
+        run: python3 scripts/verify_frankl_family_relabel.py --jobs 2
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frankl-family-relabel
+          path: .candidate-artifacts/frankl-family-relabel/
+          retention-days: 14

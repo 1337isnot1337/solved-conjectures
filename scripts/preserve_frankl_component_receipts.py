@@ -13,6 +13,8 @@ import verify_frankl_orbit_batches as short_gate
 from preserve_frankl_arithmetic_receipts import ROOT, REPO, api, request, require, sha, encoded, git_bytes
 
 PROFILES = {
+    "Lean Frankl family relabeling": {
+        "inventory": "docs/frankl-family-relabel-sources.json", "group": "family-relabel"},
     "Lean Frankl full high-girth generator theorem": {
         "inventory": "docs/frankl-high-girth-theorem-sources.json", "group": "high-girth-theorem",
         "archive_limit_bytes": 256 * 1024 * 1024},
