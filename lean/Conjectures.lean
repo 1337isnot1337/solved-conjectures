@@ -761,3 +761,4 @@ import Conjectures.LonelinessPrimeFilteringWitness
 import Conjectures.LonelinessPrimeFilteringCases
 import Conjectures.LonelinessTwoParameterRadius
 import Conjectures.LonelinessSixSpectrumLatticeNormFourSpeed
+import Conjectures.LonelinessSevenCoordinateFiveSpeed

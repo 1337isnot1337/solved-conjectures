@@ -9,3 +9,11 @@ From the repository root, run the following with Python 3.10 or later and a C++2
 ```sh
 python3 results/seven-speed-spectrum/verify.py
 ```
+
+### Seven-coordinate implications with the five-speed input discharged
+
+The new seven-coordinate critical-plane and large-norm statements supply Renault's proved five-speed runner theorem internally. Every new endpoint retains `hsix : PrimitiveSixClassification`. The plane results concern rational subspaces of dimension two. One classifies coordinate-free planes with value at most `1/7`; another assumes equality to `1/7` without a separate coordinate-free premise; the third states that equality is equivalent to `StandardProductPlane`.
+
+The quantitative results concern positive primitive natural speed vectors with Euclidean norm at least `7 * 42^10`. Below loneliness `1/7`, such a vector is a permutation of `[1,2,3,4,5,6,7*s]` for an integer `s >= 1`, and its loneliness is `s/(7*s+1)`. The family equivalence puts the strict loneliness inequality on the left side of its equivalence. No separate distinctness premise is added. The six-speed classification remains an assumption; these implications do not establish the full seven-speed classification.
+
+[Exact scope and evidence](../../docs/lean-status.md#seven-coordinate-implications-with-the-five-speed-input-discharged).

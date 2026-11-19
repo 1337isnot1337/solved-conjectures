@@ -1,0 +1,43 @@
+{
+  "all_owned_audit_for_new_wrapper_claimed": false,
+  "base_dependency_sources_unchanged": 170,
+  "configuration_and_helper_files_unchanged": 10,
+  "controller_ast_unchanged_except_reviewed_names_schemas_and_inventories": true,
+  "dependency_facets_rehashed": 170,
+  "full_fresh_source_all_owned_private_audit_exact_stock_replay_and_final_hash_controls_preserved": true,
+  "no_accepted_registration_paths_in_publication": true,
+  "paths_sha256": {
+    ".github/workflows/lean-critical-seven-five-speed-exact.yml": "e66acb827d538c8da8c9effbcb70a2101e6e1dfbe802d471a682bcda77eef537",
+    "docs/critical-seven-five-speed-exact-sources.json": "2ec1bb456e013274f517ee4fb884c02524f4133bbb7c2d6a27f5b93e008efc16",
+    "lean/Conjectures/LonelinessSevenCoordinateFiveSpeed.lean": "57e7213d9e0a61e242b2ed968a637ad1dbadd29c14842cd006ed9ca17750ffe5",
+    "scripts/verify_critical_seven_five_speed_exact.py": "47e5a0245648f516b920da67d39fe8c798541149299ba72719268d60e102f456"
+  },
+  "project_modules": 171,
+  "publication_base_commit": "e6d53ced9fd3b6ad4a311c3eecbe1fcbd0cdd491",
+  "publication_plan_sha256": "72418d9569ed165024a1d37fde1314087a13819b2d9c75dea4e8ae30de7f4dff",
+  "required_theorems": [
+    "Loneliness.SevenCoordinateCritical.critical_plane_classification_of_six_classification",
+    "Loneliness.SevenCoordinateCritical.critical_plane_classification_of_value_eq_of_six_classification",
+    "Loneliness.SevenCoordinateCritical.critical_plane_iff_of_six_classification",
+    "Loneliness.SevenCoordinateCritical.Quantitative.large_norm_family_classification_of_six_classification",
+    "Loneliness.SevenCoordinateCritical.Quantitative.large_norm_family_iff_of_six_classification",
+    "Loneliness.SevenCoordinateCritical.Quantitative.large_norm_spectrum_of_six_classification"
+  ],
+  "reviewed_at_utc": "2026-11-19T18:52:35.886947+00:00",
+  "schema": "critical-seven-five-speed-independent-source-control-review-v1",
+  "seed_receipts_match_accepted_main": true,
+  "semantic_scope": "Six direct adapters apply the accepted unconditional Renault.five_speed_lonelyRunnerBound to existing critical-plane and large-norm seven-coordinate theorems. They remove only hfive; PrimitiveSixClassification and every other geometric, positivity, primitivity and norm premise remain.",
+  "separate_concurrency_group_preserves_previous_candidates": true,
+  "shared_critical_seven_renault_source_object_modules_identical": 41,
+  "status": "candidate_publication_review_passed",
+  "stock_replay_for_new_wrapper_claimed": false,
+  "strict_log_empty": true,
+  "strict_object_sha256": {
+    "/workspace/scratch/e35d3265a0e0/rectangular-work/seven-five-speed/attempt-001/lib/lean/Conjectures/LonelinessSevenCoordinateFiveSpeed.olean": "f1373fa4d6c2b62697f03d5c75dd984a7f54a7c596d1a8168ff55196b9de7b22"
+  },
+  "strict_receipt_sha256": "be8b44313edf3a845a8e8aa112d662a9d2885bafee912f00c6d099ef692bff9d",
+  "strict_seconds": 34.42169219799689,
+  "strict_source_sha256": "57e7213d9e0a61e242b2ed968a637ad1dbadd29c14842cd006ed9ca17750ffe5",
+  "template_commit": "e815f14555472b873683f491bc878eb16d4eb0a4",
+  "workflow_unchanged_except_reviewed_names_and_exact_dependency_paths": true
+}

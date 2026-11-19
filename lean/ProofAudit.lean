@@ -9475,7 +9475,13 @@ run_cmd do
     `Loneliness.TwoParameterRadius.six_speed_parameter_sq_lt_max,
     `Loneliness.SixSpectrumLatticeNorm.norm_lt_rank_four_of_plane_gap,
     `Loneliness.SixSpectrumLatticeNorm.norm_lt_five_constant_of_plane_gap,
-    `Loneliness.SixSpectrumLatticeNorm.norm_lt_six_constant_of_plane_gap]
+    `Loneliness.SixSpectrumLatticeNorm.norm_lt_six_constant_of_plane_gap,
+    `Loneliness.SevenCoordinateCritical.critical_plane_classification_of_six_classification,
+    `Loneliness.SevenCoordinateCritical.critical_plane_classification_of_value_eq_of_six_classification,
+    `Loneliness.SevenCoordinateCritical.critical_plane_iff_of_six_classification,
+    `Loneliness.SevenCoordinateCritical.Quantitative.large_norm_family_classification_of_six_classification,
+    `Loneliness.SevenCoordinateCritical.Quantitative.large_norm_family_iff_of_six_classification,
+    `Loneliness.SevenCoordinateCritical.Quantitative.large_norm_spectrum_of_six_classification]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]

@@ -1102,3 +1102,13 @@ The new endpoints end in `_of_plane_gap`. They remove the explicit `hfour` input
 The complete 113-module hosted gate passed at `14f3403c7afe204c85b376df0f02c68c86c7fea0` ([run and job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44591091795/job/135796982020)). It checked all fresh strict sources, all 3108 owned declarations including 90 private declarations, all 3 required theorem endpoints, and one exact stock-kernel target per module. The permitted axioms were only `propext`, `Classical.choice`, and `Quot.sound`. The unchanged raw receipt has SHA-256 `af61227a92a04443c42d8c928139f13a9bb201b3bfd5b359f464138f2d3ae5ac`. A merged accepted-package source, audit and kernel pass remains a separate obligation.
 
 [Preserved receipt](verification/lattice-norm-four-speed-exact-44591091795/receipt.json).
+
+## Seven-coordinate implications with the five-speed input discharged
+
+The new seven-coordinate critical-plane and large-norm statements supply Renault's proved five-speed runner theorem internally. Every new endpoint retains `hsix : PrimitiveSixClassification`. The plane results concern rational subspaces of dimension two. One classifies coordinate-free planes with value at most `1/7`; another assumes equality to `1/7` without a separate coordinate-free premise; the third states that equality is equivalent to `StandardProductPlane`.
+
+The quantitative results concern positive primitive natural speed vectors with Euclidean norm at least `7 * 42^10`. Below loneliness `1/7`, such a vector is a permutation of `[1,2,3,4,5,6,7*s]` for an integer `s >= 1`, and its loneliness is `s/(7*s+1)`. The family equivalence puts the strict loneliness inequality on the left side of its equivalence. No separate distinctness premise is added. The six-speed classification remains an assumption; these implications do not establish the full seven-speed classification.
+
+The complete 171-module hosted gate passed at `9c5b1203a4405508254332b1d13dd19f9bdefe38` ([run and job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44592471446/job/135801829445)). It checked all fresh strict sources, all 4246 owned declarations including 850 private declarations, all 6 required theorem endpoints, and one exact stock-kernel target per module. The permitted axioms were only `propext`, `Classical.choice`, and `Quot.sound`. The unchanged raw receipt has SHA-256 `25d85fa1a9a5fa514e1a1505d370790f273656bafa3a9c4b991316ba9f043b5e`. A merged accepted-package source, audit and kernel pass remains a separate obligation.
+
+[Preserved receipt](verification/critical-seven-five-speed-exact-44592471446/receipt.json).
