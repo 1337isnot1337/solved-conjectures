@@ -141,10 +141,9 @@ theorem complement_odd_predicate :
   funext d
   have hmod := Nat.mod_lt d (by decide : 0<2)
   by_cases heven : d%2=0
-  · have hodd : ¬d%2=1 := by omega
-    simp [heven,hodd]
+  · simp [heven]
   · have hodd : d%2=1 := by omega
-    simp [heven,hodd]
+    simp [hodd]
 
 theorem oddSpeeds_append_evenSpeeds_perm (ds : List ℕ) :
     (oddSpeeds ds++evenSpeeds ds).Perm ds := by
@@ -198,9 +197,9 @@ theorem ten_speed_one_odd_value_lower
     (hnodup : ds.Nodup) (hpositive : ∀ d∈ds, 0<d)
     (hone : (oddSpeeds ds).length=1) :
     (1/10 : ℝ)≤value ds := by
-  apply value_lower_of_one_odd_of_runner_bound ds 9 hbound hnodup hpositive hone
-  · omega
-  · omega
-  · norm_num
+  have h := value_lower_of_one_odd_of_runner_bound ds 9 hbound hnodup hpositive hone
+    (by omega) (by omega) (by norm_num)
+  norm_num at h
+  exact h
 
 end Loneliness.Modular.Search

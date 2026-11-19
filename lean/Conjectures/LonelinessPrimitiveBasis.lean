@@ -32,7 +32,7 @@ theorem unimodular_basis_extension {n : ℕ}
     intro x
     refine ⟨-f x, ?_⟩
     change f (x + (-f x) • v) = 0
-    simp [hf, smul_eq_mul]
+    simp [hf]
   let B := Module.Basis.mkFinCons v bk hind hspan
   have hr : r+1 = n+1 := by
     calc
@@ -51,7 +51,7 @@ def coefficientFunctional (e : ι → ℤ) : (ι → ℤ) →ₗ[ℤ] ℤ where
   toFun x := ∑ i, e i * x i
   map_add' x y := by simp [mul_add, Finset.sum_add_distrib]
   map_smul' c x := by
-    simp [smul_eq_mul, Finset.mul_sum, mul_assoc, mul_left_comm]
+    simp [Finset.mul_sum, mul_left_comm]
 
 /-- Literal coordinate gcd one supplies the functional needed for completion. -/
 theorem primitive_isUnimodular (v : ι → ℤ) (hv : Hyperplane.PrimitiveNormal v) :

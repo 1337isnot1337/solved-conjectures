@@ -77,7 +77,7 @@ theorem normalPhase_measurePreserving (m : ι → ℤ) (hm : PrimitiveNormal m)
     MeasurePreserving (normalPhase m c)
       (volume : Measure (ι → UnitAddCircle)) volume := by
   simpa only [normalPhase, map_sub, Function.comp_def] using
-    (measurePreserving_sub_left (volume : Measure UnitAddCircle) (normalHom m c)).comp
+    (Measure.measurePreserving_sub_left (volume : Measure UnitAddCircle) (normalHom m c)).comp
       (normalHom_measurePreserving m hm)
 
 theorem normalPhase_map_volume (m : ι → ℤ) (hm : PrimitiveNormal m)
@@ -117,10 +117,6 @@ theorem torusPredictedValue_coe (m : ι → ℤ) (s : ι → ℝ) :
       _ = normalHom m (fun i => (centerMinus s i : UnitAddCircle)) := by
         unfold normalPhase
         congr 1
-        funext i
-        change ((1 / 2 : ℝ) : UnitAddCircle) - (s i : UnitAddCircle) =
-          ((1 / 2 - s i : ℝ) : UnitAddCircle)
-        exact (AddCircle.coe_sub (p := (1 : ℝ)) _ _).symm
       _ = _ := normalHom_coe m (centerMinus s)
   unfold torusPredictedValue
   rw [hphase, UnitAddCircle.norm_eq]
