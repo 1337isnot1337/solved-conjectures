@@ -31,6 +31,19 @@ RECORDS = [
      "zip_sha256": "d48a8c0b0e3eaf361d8f374dfb01b846c2a6bf2c86e8e5b7d04db08467906ea5",
      "receipt_sha256": "a87c49005c52f3c8b4c0b46d31fce79b5f7b01c290757886d84c684744f47085",
      "status": "passed", "conclusion": "success", "slug": "all-owned", "members": 22},
+    {"run": 44522390907, "head": "cbe45a20048aea2b0905f9f7681c9c4389106936",
+     "workflow": "Lean scoped owned-extension audit candidate", "artifact": 14529105863,
+     "name": "lean-owned-extension-candidate", "zip_bytes": 70275,
+     "zip_sha256": "f074d0ca73dd9c00171adfdabf92e642e64f8863ff09ee4a4070406916bc5b49",
+     "receipt_sha256": "8dedb933633e7912b2b3d1a062fb8b62859c72be7a8398750f030105c4696111",
+     "status": "passed", "conclusion": "success", "slug": "owned-extension", "members": 44,
+     "has_fixture_objects": True},
+    {"run": 44523712230, "head": "7e516bfbdd0bb1a39c88d3df249f898a94819157",
+     "workflow": "Lean all-owned audit candidate", "artifact": 14529761196,
+     "name": "lean-all-owned-candidate", "zip_bytes": 33244,
+     "zip_sha256": "8128d133d3c725edd3971eccdde8899837775f25c63af1e5aa3b83e754406b29",
+     "receipt_sha256": "bf11e624033ce776161279db90af33863c2f685c1d4e0f7e88b255342ee057bf",
+     "status": "passed", "conclusion": "success", "slug": "legacy-mathlib", "members": 23},
     {"run": 44521485169, "head": "b97465edd8ae631cd117f65a31db54f7ce73ef77",
      "workflow": "Lean full accepted all-owned candidate", "artifact": 14528550212,
      "name": "lean-full-accepted-all-owned-candidate", "zip_bytes": 6313165,
@@ -95,10 +108,41 @@ def preserve(record):
     directory = "docs/verification/lean-gate-fixtures-" + str(record["run"]) + "/"
     files = {directory + "receipt.json": raw_receipt}
     selected = {}
+    object_members = {path for path in members
+                      if path.endswith((".olean", ".olean.private", ".olean.server", ".ir", ".ir.sig"))}
+    object_hashes = {}
     if record["status"] == "passed":
-        require(not any(path.endswith((".olean", ".olean.private", ".olean.server", ".ir", ".ir.sig"))
-                        for path in members), "Receipt-only artifact unexpectedly contains proof objects")
+        if record.get("has_fixture_objects"):
+            source = receipt["source"]["source"]
+            kernel = receipt["kernel"]["kernel"]
+            modules = receipt["imported_modules"]
+            require(len(modules) == len(set(modules)) == 3
+                    and set(source["artifact_sha256"]) == set(modules)
+                    and source["artifact_sha256"] == kernel["artifact_sha256"],
+                    "Scoped fixture source/object inventories differ")
+            require(len(kernel["exact_replay_set"]) == len(modules)
+                    and set(kernel["exact_replay_set"]) == set(modules),
+                    "Scoped fixture original replay set differs")
+            prefix = str(PurePosixPath(receipt_path).parent)
+            prefix = "" if prefix == "." else prefix + "/"
+            for module in modules:
+                stem = module.replace(".", "/")
+                require(sha(members[prefix + "repo/lean/" + stem + ".lean"])
+                        == source["input_sha256"]["lean/" + stem + ".lean"],
+                        "Original fixture source hash differs")
+                facets = kernel["artifact_sha256"][module]
+                require(set(facets) == {".olean", ".olean.server", ".olean.private"},
+                        "Original scoped fixture lacks an exact modern facet triple")
+                for suffix, expected in facets.items():
+                    path = prefix + "replay-1/lib/lean/" + stem + suffix
+                    require(sha(members[path]) == expected, "Original fixture facet hash differs")
+                    object_hashes[path] = expected
+            require(set(object_hashes) == object_members, "Original fixture object set differs")
+        else:
+            require(not object_members, "Receipt-only artifact unexpectedly contains proof objects")
         for path, raw in members.items():
+            if path in object_members:
+                continue
             raw.decode("utf-8")
             files[directory + "archive/" + path] = raw
             selected[path] = sha(raw)
@@ -123,6 +167,10 @@ def preserve(record):
         "archived_proof_objects": False, "accepted_gate_changed": False,
         "scope": "Preserve original fixed-run evidence without upgrading its status or audit scope.",
     }
+    if record.get("has_fixture_objects"):
+        metadata.update(original_archive_object_sha256=object_hashes,
+                        original_archive_facets_rehashed=len(object_hashes),
+                        proof_object_bytes_preserved_in_git=False)
     files[directory + "metadata.json"] = encoded(metadata)
     print(json.dumps({"run": record["run"], "original_status": record["status"],
                       "receipt_sha256": sha(raw_receipt), "preserved_files": len(files)}), flush=True)
