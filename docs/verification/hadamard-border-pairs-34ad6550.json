@@ -1,0 +1,38 @@
+{
+  "checked_sources": [
+    "Conjectures.HadamardBorderSymmetryPairs"
+  ],
+  "commit": "34ad65506c8ac78bb1879f611e965b418b1d7f6f",
+  "completed_checks": [
+    "strict source checks, warnings treated as errors",
+    "module-ownership axiom whitelist and required theorems",
+    "independent exact-closure kernel replay"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-hadamard-border-symmetry-candidates.yml": "40548534eed3a21c1087ed92586ac270f6b1514e63006691f310e31b92cea244",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_hadamard_border_symmetry_candidate.py": "6890cd28a3caafad87b97c397c1e6080110988e340c65887c5f23cb2decde9d6",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "project_modules": [
+    "Conjectures.HadamardBorderSymmetryPairs"
+  ],
+  "required_theorems": [
+    "HadamardBorderSymmetry.moved_point_order_four_pairs",
+    "HadamardBorderSymmetry.nontrivial_order_four_automorphism_pairs"
+  ],
+  "source_failures": {},
+  "source_sha256": {
+    "lean/Conjectures/HadamardBorderSymmetryPairs.lean": "69062c12f1dd827ab28f00abb71612f6499fcf367bf6cd715f9cfca85b246e4b",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.HadamardBorderSymmetryPairs",
+  "task": "pairs"
+}

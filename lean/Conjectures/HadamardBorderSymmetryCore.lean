@@ -37,6 +37,7 @@ theorem sum_fiber_correlations {T : Type*} [AddGroup T] [Fintype T]
   simp_rw [← Finset.sum_mul, sum_translate_integer]
   rw [← Finset.mul_sum]
 
+omit [DecidableEq Q] in
 theorem compressed_correlation149 (F : BorderRows Q) (h : Q) :
     (∑ i, ∑ q, fiberSum149 F i (q + h) * fiberSum149 F i q) =
       ∑ t, combinedCorrelation149 F h t := by

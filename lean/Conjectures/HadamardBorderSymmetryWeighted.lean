@@ -1,4 +1,5 @@
 import Conjectures.HadamardBorderSymmetryArithmetic
+import Mathlib.Algebra.BigOperators.Ring.Finset
 
 /-! A finite weighted-sum bound for the paired-fiber correlation obstruction. -/
 

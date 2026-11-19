@@ -28,7 +28,7 @@ theorem nsmul149_eq_zero_iff_fst_eq_zero (hQ : Nat.card Q = 4)
     simpa only [hQ] using (card_nsmul_eq_zero' (x := x.1))
   have hfirst : (149 : ℕ) • x.1 = x.1 := by
     calc
-      (149 : ℕ) • x.1 = (37 * 4 + 1 : ℕ) • x.1 := rfl
+      (149 : ℕ) • x.1 = (4 * 37 + 1 : ℕ) • x.1 := rfl
       _ = (37 : ℕ) • ((4 : ℕ) • x.1) + x.1 := by
         rw [add_nsmul, mul_nsmul, one_nsmul]
       _ = x.1 := by rw [hfour, nsmul_zero, zero_add]
@@ -234,7 +234,8 @@ theorem order37_automorphism_apply149 [Finite Q] (hQ : Nat.card Q = 4)
     (e : Multiplicative (AddAut (Q × ZMod 149))) (he : orderOf e = 37)
     (q : Q) (z : ZMod 149) :
     e.toAdd (q, z) = (q, (multiplierProjection149 hQ e : ZMod 149) * z) := by
-  simpa only [order37_quotientProjection149_eq_one hQ e he] using
+  simpa only [order37_quotientProjection149_eq_one hQ e he,
+    Multiplicative.toAdd_one, AddAut.zero_apply] using
     automorphism_product_apply149 hQ e q z
 
 theorem units149_card : Nat.card (ZMod 149)ˣ = 148 := by
