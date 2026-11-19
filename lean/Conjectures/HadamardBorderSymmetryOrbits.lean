@@ -116,7 +116,7 @@ theorem four_nsmul_eq_zero_iff_snd_eq_zero (hQ : Nat.card Q = 4)
     have hsecond := congrArg Prod.snd h
     change (4 : ℕ) • x.2 = 0 at hsecond
     rw [nsmul_eq_mul] at hsecond
-    exact (mul_eq_zero.mp hsecond).resolve_left (by norm_num)
+    exact (mul_eq_zero.mp hsecond).resolve_left (by decide)
   · intro h
     apply Prod.ext
     · exact hfirst

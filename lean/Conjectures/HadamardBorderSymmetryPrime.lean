@@ -76,7 +76,11 @@ theorem order37_support_card_modEq (D : Finset (ZMod 149))
   have hσ : σ ^ 37 = 1 := by
     dsimp only [σ]
     rw [Equiv.Perm.subtypePerm_pow]
-    simp only [he, Equiv.Perm.subtypePerm_one]
+    simp only [he]
+    apply Equiv.ext
+    intro x
+    apply Subtype.ext
+    rfl
   have hfix (x : D) : σ x = x ↔ (x : ZMod 149) = 0 := by
     rw [Subtype.ext_iff]
     change (e u) (x : ZMod 149) = (x : ZMod 149) ↔ _
