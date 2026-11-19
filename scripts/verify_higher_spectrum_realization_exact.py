@@ -63,6 +63,11 @@ ROOTS = {
         "Conjectures.LonelinessSixPlaneFiveInput",
         "Conjectures.LonelinessSixPlaneEnumeration",
     ],
+    "six-plane-data-pilots": [
+        "Conjectures.LonelinessSixPlaneDataPilotSmall",
+        "Conjectures.LonelinessSixPlaneDataPilotEight",
+        "Conjectures.LonelinessSixPlaneDataPilotForty",
+    ],
 }
 
 

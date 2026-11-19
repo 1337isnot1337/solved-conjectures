@@ -91,6 +91,11 @@ on:
       - 'lean/Conjectures/LonelinessProductSpectrum.lean'
       - 'lean/Conjectures/LonelinessSixPlaneEnumeration.lean'
       - 'lean/Conjectures/LonelinessSixPlaneFiveInput.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataDefs.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataPilotEight.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataPilotForty.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataPilotSmall.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataTables.lean'
       - 'scripts/verify_frankl_orbit_batches.py'
       - 'scripts/replay_lean.py'
       - 'scripts/plan_lean_candidates.py'
@@ -116,7 +121,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        task: [six-arithmetic, seven-eight, triangles, six-plane-semantics]
+        task: [six-arithmetic, seven-eight, triangles, six-plane-semantics, six-plane-data-pilots]
     steps:
       - uses: actions/checkout@v4
       - name: Validate exact source and helper inventory

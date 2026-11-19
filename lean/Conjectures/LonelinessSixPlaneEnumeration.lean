@@ -65,8 +65,8 @@ theorem candidate_eq_rowCandidate (directionAt : Fin 10 → Fin 360 → Vector)
     (hcheck : directionCoverageCheck directionAt rankToRow = true)
     (j : Fin 10) (p : Equiv.Perm (Fin 6)) (mask : Fin 32) :
     candidate j p mask = rowCandidate directionAt j (rankToRow j (permutationRank p)) mask := by
-  rw [rowCandidate, directionCoverageCheck_sound directionAt rankToRow hcheck j p]
-  rfl
+  exact congrArg (fun w : Vector => fun i => signs mask i * w i)
+    (directionCoverageCheck_sound directionAt rankToRow hcheck j p).symm
 
 def EnumeratedPairsChecked (directionAt : Fin 10 → Fin 360 → Vector) : Prop :=
   ∀ (i j : Fin 10) (row : Fin 360) (mask : Fin 32),

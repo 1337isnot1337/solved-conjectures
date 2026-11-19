@@ -55,12 +55,15 @@ theorem witness_not_triangleFree (ds : List ℕ) (hw : TriangleWitness ds) :
 
 theorem six_rows_additive : ∀ row ∈ SixSporadicBounds.rows,
     HasAdditive row.speeds := by
+  unfold HasAdditive
   decide +kernel
 
 theorem seven_rows_additive : ∀ row ∈ sevenRows, HasAdditive row.speeds := by
+  unfold HasAdditive
   decide +kernel
 
 theorem eight_rows_additive : ∀ row ∈ eightRows, HasAdditive row.speeds := by
+  unfold HasAdditive
   decide +kernel
 
 theorem six_sporadic_additive (ds : List ℕ) (hlisted : SixSporadicBounds.IsListed ds) :
@@ -246,7 +249,9 @@ theorem six_zhu
     (hchi : (DistanceColoring.graph ds).chromaticNumber = 7) :
     ¬(DistanceColoring.graph ds).CliqueFree 3 :=
   zhu_of_primitive_classification 6 (by decide) SixCandidate
-    six_candidate_triangle hclass ds hlen hdistinct hpositive (by simpa using hchi)
+    six_candidate_triangle hclass ds hlen hdistinct hpositive (by
+      convert hchi using 1
+      norm_num)
 
 theorem seven_zhu
     (hclass : PrimitiveClassifies 7 KnownSeven)
@@ -255,7 +260,9 @@ theorem seven_zhu
     (hchi : (DistanceColoring.graph ds).chromaticNumber = 8) :
     ¬(DistanceColoring.graph ds).CliqueFree 3 :=
   zhu_of_primitive_classification 7 (by decide) KnownSeven
-    seven_candidate_triangle hclass ds hlen hdistinct hpositive (by simpa using hchi)
+    seven_candidate_triangle hclass ds hlen hdistinct hpositive (by
+      convert hchi using 1
+      norm_num)
 
 theorem eight_zhu
     (hclass : PrimitiveClassifies 8 KnownEight)
@@ -264,7 +271,9 @@ theorem eight_zhu
     (hchi : (DistanceColoring.graph ds).chromaticNumber = 9) :
     ¬(DistanceColoring.graph ds).CliqueFree 3 :=
   zhu_of_primitive_classification 8 (by decide) KnownEight
-    eight_candidate_triangle hclass ds hlen hdistinct hpositive (by simpa using hchi)
+    eight_candidate_triangle hclass ds hlen hdistinct hpositive (by
+      convert hchi using 1
+      norm_num)
 
 end Loneliness.HigherTriangleConsequences
 

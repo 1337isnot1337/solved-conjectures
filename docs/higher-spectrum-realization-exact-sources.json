@@ -145,6 +145,54 @@
         "Conjectures.LonelinessSixSporadicBounds": "97ae0d8c4182e48623f0196fe4800351eba1376ec5627003972489a8a2455dce"
       }
     },
+    "six-plane-data-pilots": {
+      "accepted_registry_changed": false,
+      "configuration_sha256": {
+        "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+        "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      "helper_sha256": {
+        "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+        "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+        "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+        "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+        "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+        "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+        "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+      },
+      "legacy_prefixes": [
+        "Loneliness."
+      ],
+      "project_module_count": 7,
+      "required_theorem_count": 3,
+      "required_theorems": [
+        "Loneliness.SixPlane.Data.pilotSmall",
+        "Loneliness.SixPlane.Data.pilotEight",
+        "Loneliness.SixPlane.Data.pilotForty"
+      ],
+      "roots": [
+        "Conjectures.LonelinessSixPlaneDataPilotSmall",
+        "Conjectures.LonelinessSixPlaneDataPilotEight",
+        "Conjectures.LonelinessSixPlaneDataPilotForty"
+      ],
+      "schema": "higher-spectrum-realization-exact-v1",
+      "scope": "Finite six-plane certificate pilots for canonical pair (0,0): the first 1, 8 and 40 direction rows, each with all 32 signs, giving nested checks of 32, 256 and 1280 actual certificate cases. These are numerical pilot checks only; complete direction-lookup coverage, all 1152000 candidate pairs, and unconditional six-plane classification are not asserted. The producer scripts are untrusted generators and are not verification dependencies.",
+      "source_policy": {
+        "fresh_project_objects": true,
+        "linter_override": false,
+        "warning_as_error": true
+      },
+      "source_sha256": {
+        "Conjectures.LonelinessSixPlaneDataDefs": "7e804dc299b8dbeda49f8adf03c193c76c590a35040c74396ce594d7989e9def",
+        "Conjectures.LonelinessSixPlaneDataPilotEight": "0f709217c5e653ad821e0659eb091af6d50a70805682de45e794b2d8069b8923",
+        "Conjectures.LonelinessSixPlaneDataPilotForty": "f7b106412f4248fa0e9d9c762e00ea2508fe36a7ab6e82700cb2986992cf3421",
+        "Conjectures.LonelinessSixPlaneDataPilotSmall": "997136223660894536e3e39ab79f96c727850adb6d4aab6c75efaa3bae450114",
+        "Conjectures.LonelinessSixPlaneDataTables": "aa1a1f05ae7d3d0089d443141ca0477e3342680aef7227deb867413d98d9b60d",
+        "Conjectures.LonelinessSixPlaneDefs": "60ace6bec6c078b9111a739377ea0fc61da2cb0614c7914f6b2d6ebb7d8ed786",
+        "Conjectures.LonelinessSixPlaneEnumeration": "d03868c70675caac2ea59d0acdfe5646a111acb0d50ebf6edade3aa487aed048"
+      }
+    },
     "six-plane-semantics": {
       "accepted_registry_changed": false,
       "configuration_sha256": {
@@ -264,7 +312,7 @@
         "Conjectures.LonelinessSixPlaneClassificationCore": "7eb4c9007beddf8223d47d7998fc9348b07f0462ef005ecb9016e2bc0deca248",
         "Conjectures.LonelinessSixPlaneCriticalNormalization": "58a31a8735db6fe2020b488b26060da6ca446147a78891886fac9bac9bbd1ddb",
         "Conjectures.LonelinessSixPlaneDefs": "60ace6bec6c078b9111a739377ea0fc61da2cb0614c7914f6b2d6ebb7d8ed786",
-        "Conjectures.LonelinessSixPlaneEnumeration": "dd5c5d90fc34f51082549d501c951b6fc4d412e9dda39a9db29af4716c58947e",
+        "Conjectures.LonelinessSixPlaneEnumeration": "d03868c70675caac2ea59d0acdfe5646a111acb0d50ebf6edade3aa487aed048",
         "Conjectures.LonelinessSixPlaneFiveInput": "bf5c3e487d9bb580becaee85a015fd974fcd1f15da2e4bc53498c2de0fe1a90c",
         "Conjectures.LonelinessSixPlaneGap": "52b0c4366980d998ab52907eef8e82b6c693c824ca046ed45aa99e9e68eb7975",
         "Conjectures.LonelinessSixPlaneGeometry": "f8de31f701267abe6abc7ec6bc60b819be9ce871bb75e99a3749c2edf3063032",
@@ -356,7 +404,7 @@
         "Conjectures.LonelinessHigherExamplesEight": "8ae03a27b2da2ecf6ade213bdd68046266e99158c6c58685e2cf81c047f089ff",
         "Conjectures.LonelinessHigherExamplesSeven": "b38ea3d232397822aeeecbb6ad09e2f982ff7e95a6327a489d06d08718f68f78",
         "Conjectures.LonelinessHigherSpectrumBounds": "70523ace8d6880b61ed5e9149aaf2477b9b3fb43faf0d1fe1eecfeb27809148d",
-        "Conjectures.LonelinessHigherTriangleConsequences": "9ba2fb10f6396c51331287417003f7e2e0ddd11a7f9171d11eb5fd4c6da34f30",
+        "Conjectures.LonelinessHigherTriangleConsequences": "6f3764ddcd35c678c5d09e74ae0dc5207900c2da2603e1c4d779670a9caa571f",
         "Conjectures.LonelinessIntegerDirection": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6",
         "Conjectures.LonelinessMax": "db988be330f37e6ec119204b24738bc9daa7eff40f86bcd8845ce164612ec4b9",
         "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
