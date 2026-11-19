@@ -1,0 +1,2 @@
+import Conjectures.HadamardAutomorphismPermutationMatrix
+import Conjectures.HadamardAutomorphismFixedPoints
