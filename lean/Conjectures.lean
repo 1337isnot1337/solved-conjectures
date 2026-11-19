@@ -462,3 +462,6 @@ import Conjectures.LonelinessModularTightPrimeBounds
 import Conjectures.LonelinessTightNormBounds
 import Conjectures.LonelinessSixSpectrumArithmetic
 import Conjectures.LonelinessSixSporadicBounds
+import Conjectures.LonelinessSevenSpectrumRealization
+import Conjectures.LonelinessEightSpectrumRealization
+import Conjectures.LonelinessHigherSpectrumBounds

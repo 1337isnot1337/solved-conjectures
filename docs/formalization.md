@@ -752,3 +752,10 @@ The universal classification and merged-package check remain separate.
 ### Six-speed sporadic arithmetic checkpoint
 
 `LonelinessSixSporadicBounds` now proves the nine original sporadic values and their arithmetic consequences, including permutation invariance, the proposed spectrum parameter form, `d < 3*q` for any positive representing denominator, and `q = 6*a + 1` for the reduced fraction. Exact job `135612147649` in run `44539038584` passed 13 fresh strict source checks, the complete 465-declaration audit, and 13 independent stock-kernel targets. Its unchanged evidence is recorded in `docs/verification/six-sporadic-exact-44539038584/`. Only the passing six-arithmetic job is used; the failed seven/eight sibling is excluded. This finite-table consequence does not establish universal six-speed classification.
+
+
+### Higher spectrum realization and sharp candidate bounds
+
+The registered `LonelinessSevenSpectrumRealization` and `LonelinessEightSpectrumRealization` modules construct distinct positive primitive speed tuples for every proposed seven/eight spectrum value. `LonelinessHigherSpectrumBounds` proves the 27 seven-speed and 17 eight-speed table values, all stated candidate-family spectrum forms, reduced-fraction identities, and the sharp bounds `5*d <= 13*q` and `17*d <= 21*q` for every positive representing denominator, with explicit optimality witnesses. Candidate membership and permutations are stated explicitly; universal tuple exhaustiveness is not assumed or concluded.
+
+Exact run `44541874811`, job `135622052992`, passed all 16 fresh strict source checks, the complete 647-declaration audit, and 16 exact stock-kernel replays. The 26 required theorem endpoints and unchanged authenticated evidence are recorded in `docs/verification/seven-eight-spectrum-exact-44541874811/`. The failed sibling triangle and six-plane jobs are excluded from this acceptance record. Full seven/eight classification remains partial.
