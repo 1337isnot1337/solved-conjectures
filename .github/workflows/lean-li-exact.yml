@@ -51,6 +51,7 @@ on:
       - 'lean/Conjectures/LiCounterexample.lean'
       - 'lean/Conjectures/LiEvaluationData.lean'
       - 'lean/Conjectures/LiNegativeCoefficient.lean'
+      - 'lean/Conjectures/LiConnectedPartitions.lean'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'

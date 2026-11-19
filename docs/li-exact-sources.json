@@ -7,7 +7,7 @@
   },
   "contribution": {
     "github_author": "aadrianvv",
-    "note": "Original 38-module Li proof development by aadrianvv in PR #35. Compatibility repairs and five extension modules are coordinated and attributed separately in issues #39, #40 and #41.",
+    "note": "Original 38-module Li proof development by aadrianvv in PR #35. Compatibility repairs and six extension modules are coordinated and attributed separately in issues #39, #40 and #41.",
     "original_head": "fb700255fed86b6ac29b4980ff4704fa46adab63",
     "pull_request": "https://github.com/1337isnot1337/solved-conjectures/pull/35"
   },
@@ -25,6 +25,7 @@
     "LiBridge.",
     "LiCoefficientExtraction.",
     "LiCompute.",
+    "LiConnectedPartitions.",
     "LiCounterexample.",
     "LiElim.",
     "LiEmap.",
@@ -37,9 +38,9 @@
     "LiTrunc.",
     "LiWeighted."
   ],
-  "literal_statements_sha256": "cc0bdea1244705821b0502148da3a0fdd42d1ee0ed779d239d23f3df78071816",
-  "project_module_count": 43,
-  "required_theorem_count": 68,
+  "literal_statements_sha256": "b36a4798f55d2aa79c3fde0e037e4c9da2377ee72ef720fd6cf626308aa6e42a",
+  "project_module_count": 44,
+  "required_theorem_count": 71,
   "required_theorems": [
     "Li.LiFinal325.IsMatchingOf.unique",
     "Li.LiFinal325.b_triple_pairs",
@@ -66,6 +67,9 @@
     "Li.specialization_coeff",
     "LiCoefficientExtraction.aeval_eq_five_terms",
     "LiCompute.coeff_29",
+    "LiConnectedPartitions.adj_of_reachable_subgraph",
+    "LiConnectedPartitions.connected_partitions_card",
+    "LiConnectedPartitions.cutPartitionEquiv_blocks",
     "LiCounterexample.all_partition_types",
     "LiCounterexample.card_connected_partition_types",
     "LiCounterexample.coefficient_eq",
@@ -112,10 +116,11 @@
   ],
   "roots": [
     "Conjectures.LiCounterexample",
-    "Conjectures.LiNegativeCoefficient"
+    "Conjectures.LiNegativeCoefficient",
+    "Conjectures.LiConnectedPartitions"
   ],
   "schema": "li-exact-v1",
-  "scope": "The explicit 31-vertex tree is a tree of maximum degree four with a unique degree-four vertex whose only leaf neighbour is vertex 1, and is neither a spider nor a caterpillar. All 6,842 integer partitions of 31 occur as genuine connected vertex-block partitions. Exactly eight connected vertex partitions have type (3,2^14). For every finite colour type of cardinality at least 31, the full elementary coefficients at e_2^14 e_3, e_2^11 e_3^3, e_2^8 e_3^5, e_2^5 e_3^7 and e_2^2 e_3^9 are respectively 29, 83, -6304, -6800 and -8384. The negative coefficient proves failure of coefficientwise nonnegativity. The ambient object is the finite proper-colouring polynomial expressed using the inverse of MvPolynomial.esymmAlgEquiv. No separate infinite-variable symmetric-function ring is constructed. The closure contains the original 38-module contribution with compatibility repairs and five extension modules.",
+  "scope": "The explicit 31-vertex tree is a tree of maximum degree four with a unique degree-four vertex whose only leaf neighbour is vertex 1, and is neither a spider nor a caterpillar. All 6,842 integer partitions of 31 occur as genuine connected vertex-block partitions. The actual set of all nonempty, disjoint, covering, walk-connected vertex partitions is in bijection with deleted-edge subsets and has cardinality 1,073,741,824 = 2^30. Exactly eight connected vertex partitions have type (3,2^14). For every finite colour type of cardinality at least 31, the full elementary coefficients at e_2^14 e_3, e_2^11 e_3^3, e_2^8 e_3^5, e_2^5 e_3^7 and e_2^2 e_3^9 are respectively 29, 83, -6304, -6800 and -8384. The negative coefficient proves failure of coefficientwise nonnegativity. The ambient object is the finite proper-colouring polynomial expressed using the inverse of MvPolynomial.esymmAlgEquiv. No separate infinite-variable symmetric-function ring is constructed. The closure contains the original 38-module contribution with compatibility repairs and six extension modules.",
   "sealed": true,
   "source_policy": {
     "fresh_project_objects": true,
@@ -124,7 +129,9 @@
   },
   "source_priority_roots": [
     "Conjectures.LiPartitionsFinal",
-    "Conjectures.LiPartitionsCount"
+    "Conjectures.LiPartitionsCount",
+    "Conjectures.LiCounterexample",
+    "Conjectures.LiConnectedPartitions"
   ],
   "source_sha256": {
     "Conjectures.LiBasic": "db9ef588d196a4842be654cd68d8b44e2424ca2c2f4343efabe75d60024acda9",
@@ -133,6 +140,7 @@
     "Conjectures.LiCoefficientExtraction": "f909e2388f5d8f342e471351da94f71d8a4763aa4ccf23f7ca1840706561d8ca",
     "Conjectures.LiCoefficientInterpolation": "a9f45cc552b532dda388f7cd6ec8feee2b54ac59d51f2a18f8f3d21d45701297",
     "Conjectures.LiCompute": "e4957d50ab54dffca6af34b91e4f7ad708673453638ace99d065b8a8019af3f6",
+    "Conjectures.LiConnectedPartitions": "15da52c038057d94211228d82b11f94bbf6080a42c8a865ef994ce72ea2c33f4",
     "Conjectures.LiCounterexample": "547cf83879b814fbead83ccaf92ecd90f137ac6400c1604782ed311ca65d32d2",
     "Conjectures.LiDualFull": "69d4646dceb7291f4482ce085799c89bc4a711785d0bf29ed3724af473c5d05f",
     "Conjectures.LiDualTrunc": "00f18dcdb6aec36ee60df7fd332c7494c08efdab7d9b58eb6c1e868ea87b96e4",

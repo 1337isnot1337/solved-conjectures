@@ -58,10 +58,10 @@ def exact_singleton(modules, target):
     require(selected == [target], "Stock checker prefix is not an exact singleton: " + target)
 
 
-ROOTS = ['Conjectures.LiCounterexample', 'Conjectures.LiNegativeCoefficient']
-SOURCE_PRIORITY_ROOTS = ['Conjectures.LiPartitionsFinal', 'Conjectures.LiPartitionsCount']
-MODULE_COUNT = 43
-LEGACY_PREFIXES = ['Li.', 'LiBridge.', 'LiCoefficientExtraction.', 'LiCompute.', 'LiCounterexample.', 'LiElim.', 'LiEmap.', 'LiEvaluation.', 'LiFinal.', 'LiFull.', 'LiInterpolation.', 'LiMonomial.', 'LiNegativeCoefficient.', 'LiTrunc.', 'LiWeighted.']
+ROOTS = ['Conjectures.LiCounterexample', 'Conjectures.LiNegativeCoefficient', 'Conjectures.LiConnectedPartitions']
+SOURCE_PRIORITY_ROOTS = ['Conjectures.LiPartitionsFinal', 'Conjectures.LiPartitionsCount', 'Conjectures.LiCounterexample', 'Conjectures.LiConnectedPartitions']
+MODULE_COUNT = 44
+LEGACY_PREFIXES = ['Li.', 'LiBridge.', 'LiCoefficientExtraction.', 'LiCompute.', 'LiConnectedPartitions.', 'LiCounterexample.', 'LiElim.', 'LiEmap.', 'LiEvaluation.', 'LiFinal.', 'LiFull.', 'LiInterpolation.', 'LiMonomial.', 'LiNegativeCoefficient.', 'LiTrunc.', 'LiWeighted.']
 REQUIRED = [
     "Li.LiFinal325.IsMatchingOf.unique",
     "Li.LiFinal325.b_triple_pairs",
@@ -88,6 +88,9 @@ REQUIRED = [
     "Li.specialization_coeff",
     "LiCoefficientExtraction.aeval_eq_five_terms",
     "LiCompute.coeff_29",
+    "LiConnectedPartitions.adj_of_reachable_subgraph",
+    "LiConnectedPartitions.connected_partitions_card",
+    "LiConnectedPartitions.cutPartitionEquiv_blocks",
     "LiCounterexample.all_partition_types",
     "LiCounterexample.card_connected_partition_types",
     "LiCounterexample.coefficient_eq",
@@ -130,11 +133,12 @@ REQUIRED = [
     "LiNegativeCoefficient.five_coefficients",
     "LiNegativeCoefficient.three_variable_negative_coefficient",
     "LiWeighted.weightedHomogeneous_of_aeval",
-    "LiWeighted.weightedHomogeneous_symm"
+    "LiWeighted.weightedHomogeneous_symm",
 ]
 
 STATEMENTS = r'''import Conjectures.LiCounterexample
 import Conjectures.LiNegativeCoefficient
+import Conjectures.LiConnectedPartitions
 
 open scoped BigOperators
 
@@ -292,6 +296,51 @@ example {σ : Type*} [Fintype σ] [DecidableEq σ]
   exact h
 
 
+-- Acyclicity forces an ambient edge between connected vertices to be retained.
+example {V : Type*} {G H : SimpleGraph V}
+    (hG : G.IsAcyclic) (hHG : H ≤ G) {u v : V}
+    (huv : G.Adj u v) (hr : H.Reachable u v) : H.Adj u v :=
+  LiConnectedPartitions.adj_of_reachable_subgraph hG hHG huv hr
+
+-- The codomain consists of literal nonempty, disjoint, covering vertex blocks
+-- joined by walks that stay inside each block, with no block-size restriction.
+example :
+    ↥(Li.T.edgeFinset.powerset) ≃
+      {P : Finset (Finset (Fin 31)) //
+        ((∀ B ∈ P, B.Nonempty) ∧
+          (∀ B ∈ P, ∀ C ∈ P, B ≠ C → Disjoint B C) ∧
+          P.biUnion id = Finset.univ) ∧
+        (∀ B ∈ P, B.Nonempty ∧ ∀ u ∈ B, ∀ v ∈ B,
+          ∃ q : Li.T.Walk u v, ∀ x ∈ q.support, x ∈ B)} :=
+  LiConnectedPartitions.cutPartitionEquiv
+
+-- The input contains deleted edges, so the partition comes from its complement.
+example (E : ↥(Li.T.edgeFinset.powerset)) :
+    (LiConnectedPartitions.cutPartitionEquiv E).val =
+      LiConnectedPartitions.blocks (SimpleGraph.fromEdgeSet
+        ((Li.T.edgeFinset \ E.val : Finset (Sym2 (Fin 31))) : Set (Sym2 (Fin 31)))) :=
+  LiConnectedPartitions.cutPartitionEquiv_blocks E
+
+-- Membership in a common output block is exactly retained-edge reachability.
+example (E : ↥(Li.T.edgeFinset.powerset)) (u v : Fin 31) :
+    (∃ B ∈ (LiConnectedPartitions.cutPartitionEquiv E).val, u ∈ B ∧ v ∈ B) ↔
+      (SimpleGraph.fromEdgeSet
+        ((Li.T.edgeFinset \ E.val : Finset (Sym2 (Fin 31))) :
+          Set (Sym2 (Fin 31)))).Reachable u v := by
+  rw [LiConnectedPartitions.cutPartitionEquiv_blocks]
+  exact LiConnectedPartitions.sameBlock_blocks_iff _ u v
+
+-- The counted objects are all connected vertex partitions, not just cut choices
+-- or their block-size types.
+example :
+    Nat.card {P : Finset (Finset (Fin 31)) //
+      ((∀ B ∈ P, B.Nonempty) ∧
+        (∀ B ∈ P, ∀ C ∈ P, B ≠ C → Disjoint B C) ∧
+        P.biUnion id = Finset.univ) ∧
+      (∀ B ∈ P, B.Nonempty ∧ ∀ u ∈ B, ∀ v ∈ B,
+        ∃ q : Li.T.Walk u v, ∀ x ∈ q.support, x ∈ B)} = 1073741824 :=
+  LiConnectedPartitions.connected_partitions_card
+
 end
 '''
 
@@ -380,7 +429,8 @@ def verify(model, modules, required, modern, stage, runtime_path):
         "required_theorems": required, "source_sha256": model["source_sha256"],
         "gate_sha256": controls, "toolchain": toolchain,
         "source_workers": 1, "kernel_threads": 1,
-        "source_checks": {}, "kernel_checks": {}, "source_policy": model["source_policy"],
+        "source_checks": {}, "source_failures": {}, "blocked_sources": {},
+        "kernel_checks": {}, "source_policy": model["source_policy"],
         "axiom_whitelist": list(audit.ALLOWED), "modern_modules": modern,
         "external_lean_path": external,
         "contribution": model["contribution"],
@@ -403,12 +453,30 @@ def verify(model, modules, required, modern, stage, runtime_path):
             copied.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source(module), copied)
             require(sha(copied) == model["source_sha256"][module], "Copied proof source differs")
+            project_imports = [dep for dep in imports_of(copied) if dep in modules]
+            unavailable = [dep for dep in project_imports if dep not in built_objects]
+            if unavailable:
+                require(all(dep in receipt["source_failures"] or dep in receipt["blocked_sources"]
+                            for dep in unavailable), "Source dependency order differs: " + module)
+                receipt["blocked_sources"][module] = {
+                    "blocked_by": unavailable, "source_sha256": sha(copied),
+                }
+                save()
+                print(json.dumps({"phase": module + ".source", "status": "blocked",
+                                  "blocked_by": unavailable}), flush=True)
+                continue
             output = stage / "lib/lean" / (stem + ".olean")
             output.parent.mkdir(parents=True, exist_ok=True)
+            for dep in project_imports:
+                require(module_objects(stage, dep, modern) == built_objects[dep],
+                        "Imported project object changed before compilation: " + dep)
+                require(sha(stage / "src" / (dep.replace(".", "/") + ".lean"))
+                        == model["source_sha256"][dep],
+                        "Imported project source changed before compilation: " + dep)
             direct_imports = {
                 dep: {"source_sha256": model["source_sha256"][dep],
-                      "artifact_sha256": module_objects(stage, dep, modern)}
-                for dep in imports_of(copied) if dep in modules
+                      "artifact_sha256": dict(built_objects[dep])}
+                for dep in project_imports
             }
             command = [str(compiler / "bin/lean"), "-j1", "-M4500", "-DwarningAsError=true",
                        "-o", str(output), stem + ".lean"]
@@ -419,16 +487,32 @@ def verify(model, modules, required, modern, stage, runtime_path):
             check["direct_project_imports"] = direct_imports
             receipt["source_checks"][module] = check
             save()
-            require(check["exit_code"] == 0 and check["timed_out"] is False,
-                    "Strict source failed: " + module + "\n" + Path(check["log"]).read_text()[-12000:])
             require(sha(copied) == model["source_sha256"][module],
                     "Proof source changed during compilation: " + module)
             for dep, dependency in direct_imports.items():
                 require(module_objects(stage, dep, modern) == dependency["artifact_sha256"],
                         "Imported project object changed during compilation: " + dep)
+                require(sha(stage / "src" / (dep.replace(".", "/") + ".lean"))
+                        == dependency["source_sha256"],
+                        "Imported project source changed during compilation: " + dep)
+            if check["exit_code"] != 0 or check["timed_out"] is not False:
+                receipt["source_failures"][module] = {
+                    "exit_code": check["exit_code"], "timed_out": check["timed_out"],
+                    "log": check["log"],
+                }
+                save()
+                continue
             built_objects[module] = module_objects(stage, module, modern)
             check["artifact_sha256"] = built_objects[module]
             save()
+        if receipt["source_failures"] or receipt["blocked_sources"]:
+            diagnostics = "\n\n".join(
+                module + "\n" + Path(check["log"]).read_text()[-12000:]
+                for module, check in receipt["source_failures"].items())
+            raise RuntimeError("Strict source failed: " + ", ".join(receipt["source_failures"])
+                               + "\nBlocked source modules: " + ", ".join(receipt["blocked_sources"])
+                               + "\n" + diagnostics)
+        require(list(built_objects) == modules, "Not every exact source module was compiled")
         frozen_objects = objects(stage, modules, modern)
         require(frozen_objects == built_objects, "A compiled project object was replaced")
         receipt["artifact_sha256"] = frozen_objects
