@@ -1,0 +1,79 @@
+name: Lean prime filtering exact sources and kernel
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-prime-filtering-exact.yml'
+      - 'scripts/verify_prime_filtering_exact.py'
+      - 'docs/prime-filtering-exact-sources.json'
+      - 'lean/Conjectures/Loneliness.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringArithmetic.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringChoice.lean'
+      - 'lean/Conjectures/LonelinessContinuity.lean'
+      - 'lean/Conjectures/LonelinessFiveFamily.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringResidues.lean'
+      - 'lean/Conjectures/LonelinessPrimeFiltering.lean'
+      - 'lean/Conjectures/LonelinessRational.lean'
+      - 'lean/Conjectures/LonelinessCriticalBase.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringDigitBound.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringPartial.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringTwoForbidden.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringUnits.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringValuation.lean'
+      - 'lean/Conjectures/LonelinessModularWitness.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringCorollaryThree.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringWitness.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringCases.lean'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/audit_lean_all_owned.py'
+      - 'scripts/build_lean_parallel.py'
+      - 'scripts/plan_accepted_lean.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - 'scripts/verify_frankl_orbit_batches.py'
+      - 'scripts/verify_lean_candidate.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-prime-filtering-exact-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate exact proof and helper inventory
+        run: |
+          python3 -m py_compile scripts/verify_prime_filtering_exact.py
+          python3 scripts/verify_prime_filtering_exact.py --plan
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+      - name: Fresh strict sources, all-owned audit and exact stock replay
+        env:
+          LEAN_NUM_THREADS: 1
+          UV_USE_IO_URING: 0
+        run: python3 scripts/verify_prime_filtering_exact.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: prime-filtering-exact
+          path: .candidate-artifacts/prime-filtering-exact/
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
