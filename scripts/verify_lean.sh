@@ -693,6 +693,53 @@ modules=(
   Conjectures.MotzkinCircleLift
   Conjectures.MotzkinCharacterWindowGeometry
   Conjectures.MotzkinCharacterWindow
+  Conjectures.MotzkinFloorSum
+  Conjectures.MotzkinEvaluatorRows
+  Conjectures.MotzkinFloorSumCost
+  Conjectures.MotzkinBinarySearch
+  Conjectures.MotzkinFloorSumBits
+  Conjectures.MotzkinFloorSumOperations
+  Conjectures.MotzkinEvaluatorOracle
+  Conjectures.MotzkinSearchOperations
+  Conjectures.MotzkinSearchQueries
+  Conjectures.MotzkinSearchValues
+  Conjectures.MotzkinEvaluatorWitness
+  Conjectures.MotzkinHermiteQuotient
+  Conjectures.MotzkinEvaluatorResult
+  Conjectures.MotzkinEvaluatorFloorBits
+  Conjectures.MotzkinEvaluatorGeometry
+  Conjectures.MotzkinEvaluatorOperations
+  Conjectures.MotzkinHermiteEvaluator
+  Conjectures.MotzkinEvaluatorBits
+  Conjectures.MotzkinEvaluatorDensity
+  Conjectures.MotzkinCyclicEvaluator
+  Conjectures.MotzkinEvaluatorCandidates
+  Conjectures.MotzkinRationalCells
+  Conjectures.MotzkinRationalCellIndex
+  Conjectures.MotzkinRationalIntervals
+  Conjectures.LonelinessModularCoverSearch
+  Conjectures.LonelinessModularMemo
+  Conjectures.LonelinessModularCoverChunks
+  Conjectures.LonelinessModularCoverTape
+  Conjectures.LonelinessModularCoverBits
+  Conjectures.LonelinessModularCoverCuts
+  Conjectures.LonelinessModularStrictWitness
+  Conjectures.LonelinessModularInitialSupport
+  Conjectures.LonelinessModularInitialBits
+  Conjectures.LonelinessModularInitialMemo
+  Conjectures.LonelinessSixSpeedSupport257CutData
+  Conjectures.LonelinessSixSpeedSupport257CutChecks00
+  Conjectures.LonelinessSixSpeedSupport257CutChecks01
+  Conjectures.LonelinessSixSpeedSupport257CutChecks02
+  Conjectures.LonelinessSixSpeedSupport257CutChecks03
+  Conjectures.LonelinessSixSpeedSupport257CutChecks04
+  Conjectures.LonelinessSixSpeedSupport257CutChecks05
+  Conjectures.LonelinessSixSpeedSupport257CutChecks06
+  Conjectures.LonelinessSixSpeedSupport257CutChecks07
+  Conjectures.LonelinessSixSpeedSupport257CutChecks08
+  Conjectures.LonelinessSixSpeedSupport257CutChecks09
+  Conjectures.LonelinessSixSpeedSupport257CutFacts
+  Conjectures.LonelinessSixSpeedSupport257Cuts
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

@@ -248,3 +248,6 @@ import Conjectures.HadamardBorderNormalizationTransport
 
 import Conjectures.LonelinessFiveSpeedRootQuickP0179
 import Conjectures.MotzkinCharacterWindow
+import Conjectures.MotzkinEvaluatorCandidates
+import Conjectures.MotzkinRationalIntervals
+import Conjectures.LonelinessSixSpeedSupport257Cuts

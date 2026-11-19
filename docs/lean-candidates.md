@@ -79,13 +79,21 @@ available as regression checks. New tasks are still unregistered:
 | `saddle-integral` | `LineSizeSaddleIntegral` | Actual grid, pointwise limit, majorant, and supported integral limit |
 | `sharp-asymptotic` | `LineSizeCoefficientAsymptotic` | Literal count/model ratio and asymptotic equivalence with the stated constant |
 | Motzkin `relations` | `MotzkinLatticeEvaluation` | Exhaustive subgroup bases and compact-density trichotomy |
-| Motzkin `rational-intervals` | `MotzkinRationalIntervals` | Literal half-open interval unions and exact attainment |
 
-The evaluator task includes its latest source repair. Every task requires
-strict source checking, a complete theorem axiom audit, and independent
-replay of its exact closure. No draft above counts as a completed result.
+The Motzkin `evaluator` and `rational-intervals` tasks have now passed all three
+strict gates and are registered with their exact receipts. Their tasks remain
+available for regression checks. The `relations` task still requires a pass.
+Every remaining task requires strict source checking, a complete theorem axiom
+audit, and independent replay of its exact closure.
 
 The Motzkin `character-window` closure has now passed all three strict gates and
 is registered in the accepted package. Its exact five-module/53-theorem scope
 and receipt are recorded in [the accepted status](lean-status.md#exact-fixed-character-window-witness).
 The task remains available as a regression gate.
+
+The prime-257 minimum-pair-20 split support certificate is registered from its
+33-module passing receipt. It proves the original normalized-support exclusion
+for that one probe. The full six-speed numerical coverage remains incomplete.
+The independently checked `Hadamard598Fibers` component remains unregistered
+pending the complete length-598 obstruction. See the precise scope and exact
+receipts in [the accepted status](lean-status.md).

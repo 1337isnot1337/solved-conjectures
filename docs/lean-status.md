@@ -45,8 +45,8 @@ never additional Lean axioms.
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
 | Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
-| Two-difference Motzkin theorem | Partial: compact equality and fixed character-window witness complete | Equality of actual Borel-set density and continuous-character supremum for every compact Hausdorff abelian group with invariant probability measure, including zero differences. The literal unshifted half-open character window now has its exact measure and avoidance proved, including finite character images. Rank formulas for the stated relation generators, finite-relation attainment, the cyclic theorem for every positive modulus, gcd scaling, the odd-cycle criterion, the exact example, and abstract rational-circle attainment are checked. Exhaustive basis existence, explicit rational interval witnesses, and evaluator/complexity claims remain candidates. |
-| Tight six speeds and critical planes | Partial | The consecutive six-speed set has global value `1/7`. Uniqueness, plane classification, and the large-norm consequence remain open. |
+| Two-difference Motzkin theorem | Partial: compact equality, explicit witnesses, and evaluator complete | The compact character formula and the literal fixed character window are checked. The cyclic formulas, exact floor-sum evaluator, attaining character, Hermite independence number, gcd conversion, explicit arithmetic-operation and integer-size bounds, and literal rational interval unions are checked and registered. Exhaustive existence of relation bases and the resulting all-subgroup evaluation trichotomy remain candidates. |
+| Tight six speeds and critical planes | Partial | The consecutive six-speed set has global value `1/7`. The complete split certificate for the prime-257 minimum-pair-20 probe is checked and registered, including its original normalized-support exclusion without a certificate premise. Full prime coverage, uniqueness, unconditional plane classification, and the large-norm consequence remain open. |
 | Six-speed spectrum | Partial | Global values of the consecutive set, nine sporadic examples, the displayed `5/33` example, and the positive primitive family `[1,2,3,4,5,6s]` for every `s≥1` are checked. The remaining family branch, norm reduction and exhaustive classification remain open. |
 | Eight-runner equality cases | Partial | All three displayed sets have global value `1/8`. Exhaustiveness remains open. |
 | Nine-runner equality case | Partial | The consecutive set has global value `1/9`. Uniqueness remains open. |
@@ -1799,6 +1799,84 @@ verified original artifact `14520517281`, whose ZIP SHA-256 is
 `47e0b7df5fca6bd5efeabe514071a241841f6754def5100221fe9b26807ef8a8`.
 [Receipt export](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44509280655/job/135508967148).
 
-This is a component registration. The separate basis-existence, explicit
-rational-interval, and evaluator obligations still prevent a complete
-Motzkin-note status. The full merged package has its own verification run.
+This was the first witness component registration. The subsequent evaluator
+and rational-interval registrations below discharge those two obligations.
+Exhaustive relation-basis existence remains incomplete. The full merged package
+has its own verification run.
+
+
+## Exact Motzkin evaluator and explicit rational intervals
+
+The exact evaluator closure at `df244bd98eb43f1efc32d92d8e002dc461be58bb`
+passed strict source compilation, an audit of 1,212 project theorems, and
+independent pinned-kernel replay of all 65 project modules.
+[Passing job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44507598703/job/135505396596)
+· [Exact receipt](verification/motzkin-evaluator-df244bd9.json).
+The accepted root now imports `MotzkinEvaluatorCandidates`; 21 newly registered
+modules supply the floor-sum computation, both searches, the attaining
+character, Hermite-quotient independence number, and cyclic gcd conversion.
+
+For positive normalized Hermite inputs `m,k` with `s<m`, the checked
+`Motzkin.Evaluator.evaluator_complexity` bounds the explicitly metered
+arithmetic operations by `256*((m*k).log2+1)^2` and every recorded integer's
+bit size by `6*((m*k).log2+1)`. The operation count includes both binary
+searches and their floor-sum loops. The integer trace includes initialization,
+query expressions, recursive floor-sum intermediates, and residue recovery.
+These are arithmetic-operation and integer-size bounds for the formal
+algorithm; they are not a machine-runtime measurement of the Python program.
+
+The rational-interval closure at
+`ad125705ce715d289be1a89a74e42d6ac095402b` passed strict sources,
+a 795-theorem audit, and independent replay of all 46 modules.
+[Passing job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44509224343/job/135511574207)
+· [Exact receipt](verification/motzkin-rational-intervals-ad125705.json).
+Three newly registered modules construct the literal half-open union of
+cells `[j/N,(j+1)/N)`, prove its measure and avoidance of the two rational
+jumps, and attain the actual extremal density. The finite independent set
+and every geometric bridge are part of the checked closure.
+
+All source and gate-input paths in both receipts were compared with the
+frozen Git blobs and were unchanged before registration. Exhaustive
+relation-basis existence and the resulting subgroup trichotomy remain
+unregistered. These two component passes do not claim a pass for the full
+merged package.
+
+## Prime-257 minimum-pair-20 support certificate
+
+The exact closure at `10ebb0e4cc69c25871fd339f8207ced070a018d7` passed
+deterministic data reproduction, strict source compilation, the standard-axiom
+audit of 1,202 project theorems, and independent replay of all 33 project
+modules. [Passing job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44507989478/job/135507165330)
+· [Exact receipt](verification/loneliness-support257-10ebb0e4.json).
+Twenty-three newly registered modules comprise thirteen literal-certificate
+modules and ten generic search/encoding dependencies.
+
+The 307-frame table uses fragments of size at most three. Its soundness theorem
+reconstructs the original tape check with the original initial masks and fuel.
+`Loneliness.Modular.SixSpeed.Support257Cuts.normalized_cover_impossible`
+excludes a complete bad-time cover for a folded support modulo 257 of size at
+most six, containing 1 and 20, with minimum nonunit entry 20 and every distinct
+pair's folded quotient at least 20. No numerical search result or covering
+obstruction is assumed. All fourteen required endpoints are registered in
+the accepted axiom audit.
+
+All source and gate-input paths match the exact passing snapshot. This closes
+the narrow fragment task in issue 27. It supplies only the minimum-pair-20
+probe; complete prime-257 coverage, the remaining primes, and the full
+six-speed classification remain under issue 12.
+
+## Checked order-11 fiber component
+
+The two-module `Hadamard598Fibers` closure at
+`e911b12c6ee8eb2ae02a0226e855f9314b24237e` passed strict sources,
+a 28-theorem audit, and independent pinned-kernel replay.
+[Passing job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44508575882/job/135508656032)
+· [Exact receipt](verification/hadamard598-fibers-e911b12c.json).
+It proves the actual order-11 invariant fiber-sum decomposition from sign
+values. Its source and pinned package files are unchanged. The candidate gate
+and workflow have since been extended; the archived receipt records their
+historical hashes. The fiber module is not registered separately here: the
+full length-598 obstruction remains in its candidate lane.
+
+The four exact archive digests and receipt-export checks are recorded in
+[the component receipt record](verification/20261119-component-receipts.md).

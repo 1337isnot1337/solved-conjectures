@@ -1,0 +1,44 @@
+{
+  "checked_sources": [
+    "Conjectures.HadamardBorderSymmetryPrime",
+    "Conjectures.Hadamard598Fibers"
+  ],
+  "commit": "e911b12c6ee8eb2ae02a0226e855f9314b24237e",
+  "completed_checks": [
+    "strict source checks, warnings treated as errors",
+    "module-ownership axiom whitelist and required theorems",
+    "independent exact-closure kernel replay"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-hadamard598-candidates.yml": "4f1480bb02f1aa76d2fa832be6bd1aa5384ebf1f8219f0531c532b4a088a58c2",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_hadamard598_candidate.py": "56e871ee113c11c5276dcfc969bf35918a1f05eda2462f9d2e68c3599b56a0d6",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "project_modules": [
+    "Conjectures.HadamardBorderSymmetryPrime",
+    "Conjectures.Hadamard598Fibers"
+  ],
+  "required_theorems": [
+    "Hadamard598.multiplier23_fixed_iff",
+    "Hadamard598.order11_support_card_modEq",
+    "Hadamard598.order11_fiber_sum_mod22",
+    "Hadamard598.fiber_sum_bounds",
+    "Hadamard598.order11_fiber_sum_decomposition"
+  ],
+  "source_failures": {},
+  "source_sha256": {
+    "lean/Conjectures/Hadamard598Fibers.lean": "de297dae2751a2e396d4cf059f0695f6d26582b08deca66d87f77775771fbb21",
+    "lean/Conjectures/HadamardBorderSymmetryPrime.lean": "ef48ab9e5cb729c449f3ceefe95afe1685959db6bd488bd6a3ba0dadc7470431",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.Hadamard598Fibers",
+  "task": "fibers"
+}

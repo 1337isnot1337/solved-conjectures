@@ -53,8 +53,21 @@ cases. The exact five-module closure passed strict sources, a 53-theorem axiom
 audit, and independent kernel replay; see the
 [character-window receipt](../../docs/verification/motzkin-character-window-fea6cba2.json).
 
-Exhaustive relation-basis existence, explicit rational interval unions, and
-exact algorithmic complexity claims are still candidates.
+The exact floor-sum evaluator, attaining character, Hermite independence
+number, cyclic gcd conversion, and explicit arithmetic complexity bounds
+are checked and registered. For positive normalized Hermite inputs, the
+formal algorithm uses at most `256*((m*k).log2+1)^2` metered arithmetic
+operations, and its recorded integers have at most `6*((m*k).log2+1)` bits.
+The 65-module closure passed strict sources, a 1,212-theorem audit, and
+independent replay; see the [evaluator receipt](../../docs/verification/motzkin-evaluator-df244bd9.json).
+
+Literal half-open rational interval unions now provide explicit maximizing
+sets with proved measure and avoidance. Their 46-module closure passed strict
+sources, a 795-theorem audit, and independent replay; see the
+[rational-interval receipt](../../docs/verification/motzkin-rational-intervals-ad125705.json).
+
+Exhaustive relation-basis existence and the resulting all-subgroup evaluation
+trichotomy remain candidates.
 See [the status report](../../docs/lean-status.md) for the precise checked scope.
 
 ## Supporting files
