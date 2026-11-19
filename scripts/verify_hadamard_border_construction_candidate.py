@@ -53,9 +53,39 @@ TASKS = {
         'HadamardBorderConstruction.core_gram_apply',
         'HadamardBorderConstruction.core_gram_of_correlation_formula',
     ]),
+    'compression': ('Conjectures.HadamardBorderCompression', [
+        'HadamardBorderConstruction.fiber_natCard_eq_kernel_card',
+        'HadamardBorderConstruction.fiber_card_eq_kernel_card',
+        'HadamardBorderConstruction.card_eq_card_mul_kernel_card',
+        'HadamardBorderConstruction.sum_mul_eq_sum_compress',
+        'HadamardBorderConstruction.correlation_compress_eq_fiber_sum',
+        'HadamardBorderConstruction.combinedCorrelation_compress_eq_fiber_sum',
+        'HadamardBorderConstruction.compressed_parity',
+        'HadamardBorderConstruction.sum_correlation_eq_square_sum',
+        'HadamardBorderConstruction.sum_combinedCorrelation_eq_row_sum_squares',
+        'HadamardBorderConstruction.combinedCorrelation_zero',
+    ]),
+    'compression-rows': ('Conjectures.HadamardBorderCompressionRows', [
+        'HadamardBorderConstruction.compressed_correlation_nonzero',
+        'HadamardBorderConstruction.compressed_correlation_zero',
+        'HadamardBorderConstruction.compressed_correlation_formula',
+        'HadamardBorderConstruction.compressed_energy',
+        'HadamardBorderConstruction.compressed_row_sum_squares',
+    ]),
+    'normalization': ('Conjectures.HadamardBorderVarianceNormalization', [
+        'HadamardBorderConstruction.compression_shapes_of_correlation',
+        'HadamardBorderConstruction.exists_normalized_sign_rows_of_correlation',
+        'HadamardBorderConstruction.exists_normalized_sign_rows_with_equation',
+    ]),
+    'core-action': ('Conjectures.HadamardBorderCoreAction', [
+        'HadamardBorderConstruction.core_mul_inflateRows_of_normalized',
+        'HadamardBorderConstruction.column_balance_of_blockOnes_mul_zero',
+        'HadamardBorderConstruction.core_mul_inflate_transpose_of_normalized',
+        'HadamardBorderConstruction.core_gram_of_two_level',
+    ]),
 }
 
-DEFAULT_TASKS = ("variance", "variance-rows", "core")
+DEFAULT_TASKS = ("normalization", "core-action")
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-border-construction-candidates.yml',
  'lean/lake-manifest.json',

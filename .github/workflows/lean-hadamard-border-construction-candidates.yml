@@ -14,6 +14,10 @@ on:
           - variance-rows
           - core-algebra
           - core
+          - compression
+          - compression-rows
+          - normalization
+          - core-action
   push:
     paths:
       - 'lean/Conjectures/HadamardBorder*.lean'
