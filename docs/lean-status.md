@@ -2630,3 +2630,14 @@ The eight-speed bound remains a hypothesis. This receipt does not establish
 an unconditional nine-speed result, signed-unit transport, or a complete
 finite lift census. Result-level classification status is unchanged; the
 merged-package gate remains separate from this component verification.
+
+
+### Six-speed first-cover support reduction: accepted component
+
+The exact candidate at `3273ac1a24ea061b0cbd73244e2ac57c08d491ec` passed [run 44563135178, job 135701825289](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44563135178/job/135701825289). The original [receipt](verification/six-fields-support-exact-44563135178/receipt.json), [declaration inventory](verification/six-fields-support-exact-44563135178/declaration-inventory.json), process logs, and [preservation record](verification/six-fields-support-exact-44563135178/preservation.json) are preserved unchanged. The ZIP is artifact `14550958428`, SHA256 `2bc3b08c68ae7ae155015b1c1e8d212871781df5653350de749b1bb9f0ac8a20`; the receipt SHA256 is `eca423609c80888ebc5eb19a024b81b58e82343c3e758100e50ff408bd3676bf`.
+
+All **22 project modules** passed fresh strict source checks and separate exact stock-kernel replay. The audit checked **837 owned and raw declarations**, including **545 theorems**, **72 private declarations**, and **22 required theorem endpoints**, using only `propext`, `Classical.choice`, and `Quot.sound`. The registration adds `LonelinessModularMultiplicity`, `LonelinessModularSupportLists`, and the three `LonelinessSixSpectrumFieldsSupportDefs`, `LonelinessSixSpectrumFieldsTransform`, and `LonelinessSixSpectrumFieldsSupport` modules. The generic support modules were existing public sources and were checked again in this exact closure.
+
+`SixSpectrumFields.primeTriangleCover_of_checked_supports` proves the first-cover proposition for every nonzero raw residue sextuple, including repeated folded residues. Its proof retains distinct factor indices under independent signs, coordinate permutations, congruences, and multiplication by a modular unit. Pure modular normalization uses the absence of a modular witness, so it does not assume a real loneliness bound in the finite cover. A complete checked search covers all possible folded supports. The retained-row checks handle six distinct values and every possible repeated member of a five-value support.
+
+The endpoint still requires a valid inverse table, every initial support-tree check, and `supportRelationsCheck` for every decoded retained row. It does not require the reverse claim that every retained row is a survivor. No numerical `PrimeTriangleCover p`, completed prime table, or universal six-speed spectrum classification is supplied by this component. The separate finite certificate and later dimension reductions remain pending.

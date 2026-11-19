@@ -915,3 +915,10 @@ The [authenticated evidence](verification/loneliness-gcd-shift-44562942517/READM
 preserves the original receipt and exact scope. The eight-speed hypothesis
 is retained; no unconditional nine-speed classification or finite census
 is accepted by this checkpoint.
+
+
+### Six-speed first-cover support reduction checkpoint
+
+The support-to-prime-cover bridge is accepted from [run 44563135178, job 135701825289](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44563135178/job/135701825289), exact source commit `3273ac1a24ea061b0cbd73244e2ac57c08d491ec`. Its [preserved original evidence](verification/six-fields-support-exact-44563135178/preservation.json) covers 22 fresh strict source checks, all 837 owned and raw declarations, 545 theorems, 72 private declarations, 22 required endpoints, and 22 exact stock-kernel targets. Five newly registered modules include the existing public multiplicity and arbitrary-arity support-list helpers, plus the three six-field support/transport modules.
+
+The resulting theorem applies to all nonzero raw residue sextuples. It proves the required transport under signs, permutations, congruences, and modular units, retains multiplicity, and reduces the cover to explicit checked support trees and retained-row relation checks. Inverse validity, all root checks, and all retained-row checks remain premises. This checkpoint proves the reduction; the numerical prime covers and full six-speed classification remain incomplete.

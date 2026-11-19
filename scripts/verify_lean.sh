@@ -1160,6 +1160,11 @@ modules=(
   Conjectures.LonelinessRunnerBoundPadding
   Conjectures.LonelinessSixSpectrumFieldsDefs
   Conjectures.LonelinessSixSpectrumFieldsProduct
+  Conjectures.LonelinessSixSpectrumFieldsSupportDefs
+  Conjectures.LonelinessSixSpectrumFieldsTransform
+  Conjectures.LonelinessModularMultiplicity
+  Conjectures.LonelinessModularSupportLists
+  Conjectures.LonelinessSixSpectrumFieldsSupport
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.
