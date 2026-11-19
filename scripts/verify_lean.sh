@@ -1360,7 +1360,9 @@ modules=(
   Conjectures.LonelinessModularCoverByteCuts
 )
 # Build proof modules one at a time so independent certificate reductions do
-# not compete for memory. The final package build checks root imports too.
+# not compete for memory. All accepted targets are checked before the roots.
+# Combined roots get a separate bounded import budget; proof-module limits
+# remain pinned by lakefile.toml.
 # Optional arguments select only the sequential prebuilds. The root build,
 # full axiom audit and full kernel replay below are always performed.
 prebuilds=("${modules[@]}")
@@ -1380,8 +1382,16 @@ fi
 for module in "${prebuilds[@]}"; do
   lake build "$module"
 done
-lake build
-lake env lean -DwarningAsError=true ProofAudit.lean
+lake build "${modules[@]}"
+for project_root_module in Solitaire Conjectures ProofAudit; do
+  for root_facet in olean olean.server olean.private ilean; do
+    rm -f -- ".lake/build/lib/lean/${project_root_module}.${root_facet}"
+  done
+  lake env lean -j1 -M8192 -DwarningAsError=true \
+    -o ".lake/build/lib/lean/${project_root_module}.olean" \
+    -i ".lake/build/lib/lean/${project_root_module}.ilean" \
+    "${project_root_module}.lean"
+done
 # Stage exactly the accepted objects, then use the unchanged pinned checker
 # on the two project namespaces. This avoids one full path scan per module.
 lake env python3 ../scripts/replay_lean.py "${modules[@]}"
