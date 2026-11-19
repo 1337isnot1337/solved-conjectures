@@ -17,6 +17,7 @@ import time
 
 import audit_lean_all_owned as audit
 import build_lean_parallel as build
+import verify_lean_all_owned_candidate as inner_candidate
 
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = "docs/lean-all-owned-accepted-snapshot.json"
@@ -35,6 +36,17 @@ CONTROLS = (
 SOURCE_JOBS = 2
 KERNEL_WORKERS = 1
 MEMORY_LIMIT_MIB = 12288
+
+
+def staged_transformations():
+    original_config = (ROOT / "lean/lakefile.toml").read_bytes()
+    original_validator = (ROOT / "scripts/plan_accepted_lean.py").read_bytes()
+    return {
+        "configuration": inner_candidate.configuration_record(
+            original_config, inner_candidate.legacy_compatible_config(original_config), True),
+        "layout_validator": inner_candidate.validator_record(
+            original_validator, inner_candidate.legacy_compatible_validator(original_validator), True),
+    }
 
 
 def verify_snapshot(snapshot):
@@ -59,6 +71,8 @@ def verify_snapshot(snapshot):
     if actual != snapshot["input_blob_sha"]:
         changed = sorted(path for path in paths if actual[path] != snapshot["input_blob_sha"][path])
         raise ValueError("Frozen source/control bytes differ: " + repr(changed))
+    if staged_transformations() != snapshot["staged_transformations"]:
+        raise ValueError("Declared isolated configuration/validator transformation changed")
     return spec
 
 
@@ -81,7 +95,8 @@ def main(argv=None):
                           "required_declarations": len(spec["required"]),
                           "source_jobs": SOURCE_JOBS, "kernel_workers": KERNEL_WORKERS,
                           "memory_limit_mib": MEMORY_LIMIT_MIB,
-                          "accepted_gate_changed": False}), flush=True)
+                          "accepted_gate_changed": False,
+                          "isolated_legacy_compatibility_opt_in": True}), flush=True)
         return 0
     output = args.output_dir.absolute()
     if output.exists() or output.is_symlink() or output.resolve() != output:
@@ -91,9 +106,11 @@ def main(argv=None):
                "project_modules": spec["modules"], "required_declarations": spec["required"],
                "source_jobs": SOURCE_JOBS, "kernel_workers": KERNEL_WORKERS,
                "memory_limit_mib": MEMORY_LIMIT_MIB, "accepted_gate_changed": False,
-               "reuses_prior_project_objects": False}
+               "reuses_prior_project_objects": False,
+               "configuration_modified_in_isolated_stage": True,
+               "layout_validator_modified_in_isolated_stage": True}
     command = [sys.executable, str(ROOT / "scripts/verify_lean_all_owned_candidate.py"),
-               "--accepted", "--jobs", str(SOURCE_JOBS), "--workers", str(KERNEL_WORKERS),
+               "--accepted", "--allow-legacy-module-imports", "--jobs", str(SOURCE_JOBS), "--workers", str(KERNEL_WORKERS),
                "--memory-limit-mib", str(MEMORY_LIMIT_MIB), "--timeout-seconds", "21000",
                "--output-dir", str(output)]
     started = time.monotonic()
@@ -105,6 +122,10 @@ def main(argv=None):
         if (inner["status"] != "passed" or inner["scope"] != "accepted"
                 or inner["spec"] != spec or inner["all_inputs_unchanged"] is not True):
             raise ValueError("The complete accepted-closure candidate did not pass")
+        declared = snapshot["staged_transformations"]
+        if (inner["isolated_configuration"] != declared["configuration"]
+                or inner["isolated_layout_validator"] != declared["layout_validator"]):
+            raise ValueError("The inner gate used another isolated configuration or validator")
         source = inner["source"]["source"]
         kernel = inner["kernel_replay"]["kernel"]
         if (source["status"] != "passed" or kernel["status"] != "passed"
@@ -147,6 +168,8 @@ def main(argv=None):
             status="passed", source_sha256=source["input_sha256"],
             artifact_sha256=kernel["artifact_sha256"],
             all_owned_audit=inner["axiom_audit"],
+            isolated_configuration=inner["isolated_configuration"],
+            isolated_layout_validator=inner["isolated_layout_validator"],
             exact_kernel_replay=inner["kernel_replay"],
             complete_candidate_receipt_sha256=hashlib.sha256(inner_bytes).hexdigest(),
             all_frozen_inputs_unchanged=True, all_archived_kernel_facets_unchanged=True,
