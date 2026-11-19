@@ -107,6 +107,7 @@ def audit_source(modules, required, private_nodes, *, modern):
     return f'''{header}{imports}
 import Lean.Util.CollectAxioms
 import Lean.PrivateName
+import Lean.Elab.Command
 
 open Lean Elab Command in
 run_cmd do
