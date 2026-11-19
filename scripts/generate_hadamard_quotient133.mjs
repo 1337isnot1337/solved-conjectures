@@ -299,9 +299,14 @@ function buildQuotientPacket(pairText) {
     });const name="HadamardQuotient133UVerified"+pad(bi);uModules.push(name);emitAssembly(name,imports,body);
   });
   let rowsBody="theorem quotient_rows_checked :\n    quotientRowsCheck quotientCatalog endpoints outerTriples quotientCerts = true := by\n"+
-    "  simp only [quotientRowsCheck, outerTriples, quotientCerts, pairedCheck, "+
+    "  change pairedCheck (quotientUCheck quotientCatalog endpoints outerTriples)\n    ["+
+    outer.map((_,i)=>"outer"+pad(i)).join(", ")+"] quotientCerts = true\n"+
+    "  simp only [quotientCerts, pairedCheck, "+
     outer.map((_,i)=>"quotient_u_"+pad(i)+"_checked").join(", ")+", Bool.true_and]\n\n";
-  rowsBody+="theorem endpoints_checked : endpointPairsCheck endpoints survivors = true := by\n  simp only [endpointPairsCheck, endpoints, List.all_cons, List.all_nil, "+
+  rowsBody+="theorem endpoints_checked : endpointPairsCheck endpoints survivors = true := by\n"+
+    "  change (["+endpoints.map((_,i)=>"endpoint"+pad(i,2)).join(", ")+
+    "] : List Row).all (endpointRowCheck endpoints survivors) = true\n"+
+    "  simp only [List.all_cons, List.all_nil, "+
     endpoints.map((_,i)=>"endpoint_row_"+pad(i,2)+"_checked").join(", ")+", Bool.true_and]\n\n";
   rowsBody+="theorem survivors_checked : survivors.all survivorCheck = true := by\n  simp only [survivors, List.all_cons, List.all_nil, "+
     recorded.map((_,i)=>"survivor_"+pad(i,2)+"_checked").join(", ")+", Bool.true_and]\n\n";
@@ -321,7 +326,9 @@ function buildQuotientPacket(pairText) {
   marginSources.forEach(({ri,as})=>{
     const r=pad(ri,2);
     marginBody+="theorem margin_source_"+r+"_checked :\n    marginSourceCheck marginCatalog endpoint"+r+" marginGroups"+r+" marginCert"+r+" = true := by\n"+
-      "  simp only [marginSourceCheck, marginGroups"+r+", Matrix.cons_val_zero, marginGroup"+r+"_0, marginCert"+r+", pairedCheck, "+
+      "  change pairedCheck (marginACheck marginCatalog endpoint"+r+" marginGroups"+r+")\n    ["+
+      as.map(ai=>"marginA"+r+"_"+pad(marginAs[ai].ai)).join(", ")+"] marginCert"+r+" = true\n"+
+      "  simp only [marginCert"+r+", pairedCheck, "+
       as.map(ai=>"margin_a_"+pad(ai,4)+"_checked").join(", ")+", Bool.true_and]\n\n";
     marginBody+="theorem margin_packet_"+r+"_checked : marginPacketCheck marginCatalog endpoint"+r+" marginPacket"+r+" = true := by\n"+
       "  apply Bool.and_eq_true.mpr\n  constructor\n  · simpa only [decide_eq_true_eq] using margin_groups_"+r+"_checked\n  · exact margin_source_"+r+"_checked\n\n";
