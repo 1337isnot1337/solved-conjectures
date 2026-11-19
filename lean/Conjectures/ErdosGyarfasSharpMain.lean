@@ -32,7 +32,7 @@ theorem cycle_length_not_four_eight_sixteen {u : Vertex}
       simpa using htarget
     rcases hcases with h | h | h <;> omega
   exact dfsSafe_excludes_cycle neighbors [4, 8, 16] sharpGraph
-    (fun h => (adj_iff_mem_neighbors _ _).mp h) hsafe (p.map e.toHom)
+    (by intro v w h; exact (adj_iff_mem_neighbors v w).mp h) hsafe (p.map e.toHom)
     (hp.map e.injective)
     (by simpa only [SimpleGraph.Walk.length_map] using hbound)
     (by simpa only [SimpleGraph.Walk.length_map] using htarget)
