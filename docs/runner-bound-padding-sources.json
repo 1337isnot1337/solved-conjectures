@@ -1,0 +1,61 @@
+{
+  "control_sha256": {
+    ".github/workflows/lean-runner-bound-padding.yml": "30e15ea48628036195e725df488336dc292a6f051bcb6f60271e09930acd2a0a",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+    "scripts/verify_renault_foundations.py": "e786de5e0cece3a1918b62776f27a9ae158b6491cf4fa7467e580e0aa0b40669",
+    "scripts/verify_runner_bound_padding.py": "2e009a3fc96dad15e676b6bdecba30d8467c9379fa674067a59a6f5c4d7de648"
+  },
+  "proof_scope": {
+    "accepted_registry_changed": false,
+    "checkpoint": "primitive_runner_bound_padding",
+    "complete_higher_runner_classifications": false,
+    "conditional_transport_only": true,
+    "primitive_classification_or_lower_bound_premises_retained": true
+  },
+  "required_theorems": [
+    "Loneliness.CoordinateSubspace.exists_distinct_positive_extension",
+    "Loneliness.CoordinateSubspace.lonelyRunnerBound_of_exact_length_primitive_classification",
+    "Loneliness.CoordinateSubspace.lonelyRunnerBound_of_exact_length_primitive_lower",
+    "Loneliness.CoordinateSubspace.value_le_of_list_subset"
+  ],
+  "roots": [
+    "Conjectures.LonelinessRunnerBoundPadding"
+  ],
+  "runtime_sha256": {
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
+  },
+  "schema": "runner-bound-padding-sources-v1",
+  "source_policy": {
+    "fresh_project_objects": true,
+    "linter_override": false,
+    "warning_as_error": true
+  },
+  "source_sha256": {
+    "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "Conjectures.LonelinessCoalescence": "5518fdfed0369763c2ba701272edb25fbaafde2d230c869f4412f2c441ef9d1d",
+    "Conjectures.LonelinessCoalescenceValue": "b2b7037f036e3fdeb5e52e0314fd7126db2ae921c6c182abf6175c5884a5bcb7",
+    "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "Conjectures.LonelinessCoordinateClasses": "0075b701fd3fa51feef62f59850dfaa3dfece95e3287d51a7afb438a76691b63",
+    "Conjectures.LonelinessCoordinateSubspace": "a6a58ef2dfb5262e43641aae3e18c9d7ddcc8163aebad18cf6eb2416ae46bfea",
+    "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+    "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+    "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+    "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+    "Conjectures.LonelinessIntegerDirection": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6",
+    "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+    "Conjectures.LonelinessRationalSubspace": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88",
+    "Conjectures.LonelinessRunnerBoundPadding": "46957002f28281390d818a684b893a5442fce3816ad31cc9afda444ecc56ea55",
+    "Conjectures.LonelinessRunnerBoundTransport": "0a97a4ea78e31f35a87d0384fd4b2b34dff12e8157447bd5d79ef7b2bf653120",
+    "Conjectures.LonelinessSubspaceDensity": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f"
+  }
+}
