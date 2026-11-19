@@ -21,6 +21,7 @@ This repository contains **unrefereed** mathematics notes with reproducible chec
 | [Five-speed Loneliness Spectrum Conjecture](five-speed-spectrum/PROOF.md) | The values below 1/5 are exactly s/(5s+1) for positive integers s. Cordella’s twelve sporadic primitive quintuples exhaust the exceptions to the two known families. | ☐ | [Proof](five-speed-spectrum/PROOF.md) and [exhaustive verifier](five-speed-spectrum/verify.py) |
 | [Tight six-speed sets and seven-coordinate critical subtori](tight-six-speeds/PROOF.md) | The consecutive set is the unique primitive six-speed equality case. The seven-coordinate critical plane is unique up to signs and permutations. | ☐ | [Proof](tight-six-speeds/PROOF.md) and [exhaustive verifier](tight-six-speeds/verify.py) |
 | [Six-speed Loneliness Spectrum Conjecture](six-speed-spectrum/PROOF.md) | The values below 1/6 are exactly (P−1)/(6P) for P ≥ 7 congruent to ±1 modulo 6. Cordella’s nine sporadic sextuples exhaust the exceptions to the three known families. | ☐ | [Proof](six-speed-spectrum/PROOF.md) and [exhaustive verifier](six-speed-spectrum/verify.py) |
+| [Eight lonely runners, all equality cases](tight-seven-speeds/PROOF.md) | Exactly three primitive seven-speed sets attain 1/8. They are the consecutive speeds and the two examples in Goddyn and Wong’s census. | ☐ | [Proof](tight-seven-speeds/PROOF.md) and [exhaustive verifier](tight-seven-speeds/verify.py) |
 
 ☑ Lean formalization of the stated result · ◐ Partial formalization with explicit remaining dependencies · ☐ No Lean formalization
 

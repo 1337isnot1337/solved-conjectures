@@ -325,3 +325,5 @@ The [five-speed loneliness spectrum](five-speed-spectrum/PROOF.md) has a written
 The [six-speed equality and seven-coordinate plane classifications](tight-six-speeds/PROOF.md) have written proofs and executable finite checks. Their Lean formalizations are open.
 
 The [six-speed loneliness spectrum](six-speed-spectrum/PROOF.md) has a written computer-assisted proof and an exhaustive arithmetic verifier. Its Lean formalization is open.
+
+The [eight-runner equality classification](tight-seven-speeds/PROOF.md) has a written computer-assisted proof and an exhaustive mixed-modulus verifier. Its Lean formalization is open.

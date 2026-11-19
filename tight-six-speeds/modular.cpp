@@ -1,6 +1,6 @@
 // For each tested prime verify that the only distinct folded sextuples
 // without a strict 1/7 witness are modular dilations of {1,2,3,4,5,6}.
-// With --list-sixths, emit representatives without a 1/6 witness instead.
+// The two list modes emit witnessless representatives for their stated threshold.
 #include <algorithm>
 #include <array>
 #include <bit>
@@ -15,28 +15,29 @@ using Word = std::uint64_t;
 constexpr int blocks = 15; // enough for the prime ranges in both verifiers
 using Bits = std::array<Word,blocks>;
 
+template<int count>
 struct Sieve {
     int p, n, words;
-    bool list_sixths;
+    bool emit;
     std::vector<Bits> witnessed, later;
     std::vector<std::vector<int>> ratio;
-    std::set<std::array<int,6>> baseline;
-    std::array<int,6> prefix{1};
+    std::set<std::array<int,count>> baseline;
+    std::array<int,count> prefix{1};
 
-    Sieve(int prime, bool list) : p(prime), n(p/2), words(n/64+1), list_sixths(list),
+    Sieve(int prime, int denominator, bool list) : p(prime), n(p/2), words(n/64+1), emit(list),
         witnessed(n+1), later(n+1), ratio(n+1,std::vector<int>(n+1)) {
         if (p<53 || words>blocks) throw std::runtime_error("unsupported modulus");
         for (int i=2; i*i<=p; ++i)
             if (p%i==0) throw std::runtime_error("modulus is composite");
         std::vector<int> inverse(n+1);
         for (int a=1; a<=n; ++a) {
-            std::array<int,6> copy;
-            for (int j=0; j<6; ++j) copy[j]=fold(a*(j+1));
+            std::array<int,count> copy;
+            for (int j=0; j<count; ++j) copy[j]=fold(a*(j+1));
             std::sort(copy.begin(),copy.end());
             baseline.insert(copy);
             for (int t=1; t<=n; ++t) {
                 int v=fold(a*t);
-                if (list_sixths ? 6*v>=p : 7*v>p) witnessed[a][t/64] |= Word(1)<<(t%64);
+                if (denominator*v>p) witnessed[a][t/64] |= Word(1)<<(t%64);
                 if (v==1) inverse[a]=t;
             }
         }
@@ -52,7 +53,7 @@ struct Sieve {
 
     bool visit(int size, const Bits& eligible, const Bits& times) {
         int start=prefix[size-1]/64;
-        if (size==5) {
+        if (size==count-1) {
             Bits survivors=eligible;
             for (int w=0; w<words; ++w) {
                 Word ts=times[w];
@@ -68,9 +69,9 @@ struct Sieve {
             for (int w=start; w<words; ++w) {
                 Word left=survivors[w];
                 while (left) {
-                    prefix[5]=64*w+std::countr_zero(left);
+                    prefix[count-1]=64*w+std::countr_zero(left);
                     left &= left-1;
-                    if (list_sixths) {
+                    if (emit) {
                         for (int speed : prefix) std::cout << speed << ' ';
                         std::cout << '\n';
                     } else if (!baseline.contains(prefix)) return false;
@@ -97,7 +98,7 @@ struct Sieve {
     }
 
     bool check() {
-        for (int b=2; b<=n-4; ++b) {
+        for (int b=2; b<=n-(count-2); ++b) {
             if (ratio[1][b]<b) continue;
             std::vector<int> options;
             Bits eligible{}, times{};
@@ -106,7 +107,7 @@ struct Sieve {
                     options.push_back(a);
                     eligible[a/64] |= Word(1)<<(a%64);
                 }
-            if (options.size()<4) continue;
+            if (options.size()<count-2) continue;
             for (int a:options) {
                 later[a].fill(0);
                 for (int e:options)
@@ -121,12 +122,13 @@ struct Sieve {
 };
 
 int main(int argc, char** argv) {
-    const bool list = argc==2 && std::string(argv[1])=="--list-sixths";
-    if (argc!=1 && !list) return 2;
+    const std::string mode = argc==2 ? argv[1] : "";
+    if (argc>2 || (argc==2 && mode!="--list-sixths" && mode!="--list-eighths")) return 2;
     int p;
     while (std::cin>>p) {
-        Sieve s(p,list);
-        bool result=s.check();
-        if (!list) std::cout<<p<<' '<<result<<std::endl;
+        // For the allowed primes a nonzero folded distance never equals 1/6 or 1/8.
+        if (mode=="--list-eighths") Sieve<7>(p,8,true).check();
+        else if (mode=="--list-sixths") Sieve<6>(p,6,true).check();
+        else std::cout<<p<<' '<<Sieve<6>(p,7,false).check()<<std::endl;
     }
 }
