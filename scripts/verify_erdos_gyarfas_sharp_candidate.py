@@ -26,6 +26,7 @@ TASKS = {
         'ErdosGyarfasSharp.power_of_two_cycle_length_ge32',
         'ErdosGyarfasSharp.least_power_of_two_cycle_length',
         'ErdosGyarfasSharp.sharp95_connected_and_least_power_cycle',
+        'ErdosGyarfasSharp.sharp95_cyclic_cover_and_least_power_cycle',
     ]),
     'certificate': ('Conjectures.ErdosGyarfasSharpCertificate', [
         'ErdosGyarfasSharp.dfs_root_zero',
@@ -41,10 +42,22 @@ TASKS = {
         'ErdosGyarfasSharp.card_vertices',
         'ErdosGyarfasSharp.sharpGraph_connected',
     ]),
+    'cover': ('Conjectures.ErdosGyarfasSharpCover', [
+        'ErdosGyarfasSharp.sharpGraph_adj_iff_base',
+        'ErdosGyarfasSharp.baseProjection_neighbor_bijective',
+        'ErdosGyarfasSharp.projectionFiber_card',
+        'ErdosGyarfasSharp.projectionFiber_vadd_coe',
+        'ErdosGyarfasSharp.projectionFiber_unique_sheetTranslation',
+        'ErdosGyarfasSharp.sharpGraph_cyclic19_cover',
+    ]),
     'search': ('Conjectures.ErdosGyarfasSharpSearch', [
         'ErdosGyarfasSharp.dfsSafe_excludes_path',
         'ErdosGyarfasSharp.dfsSafe_excludes_cycle',
         'ErdosGyarfasSharp.dfsSafe_excludes_cycle_of_length',
+    ]),
+    'split': ('Conjectures.ErdosGyarfasSharpSplit', [
+        'ErdosGyarfasSharp.dfsSafe_of_frontier',
+        'ErdosGyarfasSharp.dfsSafe_of_frontier_all',
     ]),
     'witness': ('Conjectures.ErdosGyarfasSharpWitness', [
         'ErdosGyarfasSharp.sharpCycle32_isCycle',

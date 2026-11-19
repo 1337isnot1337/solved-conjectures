@@ -1,12 +1,14 @@
 import Conjectures.ErdosGyarfasSharpCertificate
 import Conjectures.ErdosGyarfasSharpWitness
+import Conjectures.ErdosGyarfasSharpCover
 import Mathlib.Tactic.IntervalCases
 import Mathlib.Tactic.NormNum
 
 /-!
 # The sharp connected 95-vertex abelian cover
 
-The actual graph is connected, has 95 vertices, and has a simple 32-cycle.
+The actual graph is a cyclic nineteen-sheeted cover of the displayed base graph,
+is connected, has 95 vertices, and has a simple 32-cycle.
 The kernel search certificates, transported by sheet translations, exclude
 every actual simple cycle of length four, eight, or sixteen. Thus 32 is the
 least power-of-two cycle length in this graph.
@@ -65,5 +67,11 @@ theorem sharp95_connected_and_least_power_cycle :
     Nat.card Vertex = 95 ∧ sharpGraph.Connected ∧
       IsLeast powerOfTwoCycleLengths 32 :=
   ⟨nat_card_vertices, sharpGraph_connected, least_power_of_two_cycle_length⟩
+
+/-- The graph belongs to the asserted cover class and attains the sharp bound. -/
+theorem sharp95_cyclic_cover_and_least_power_cycle :
+    SharpCyclic19Cover ∧ Nat.card Vertex = 95 ∧ sharpGraph.Connected ∧
+      IsLeast powerOfTwoCycleLengths 32 :=
+  ⟨sharpGraph_cyclic19_cover, sharp95_connected_and_least_power_cycle⟩
 
 end ErdosGyarfasSharp
