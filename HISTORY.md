@@ -2,6 +2,13 @@
 
 [Home](README.md) · [Catalogue](CONTENTS.md)
 
+## 2026-11-18 — Checked density, CUT, and loneliness proofs
+
+- Added complete symmetric four-point packing/covering and nonmixed-gap packing/circle proofs, including common-divisor normalization.
+- Added the complete general finite CUT test and completeness of candidate enumeration.
+- Added exact real-time loneliness certificates, both critical-family reductions, and the infinite five-speed family.
+- Updated the formalization index to distinguish these checked components from the remaining spectrum classification.
+
 ## 2026-11-19 — Ten-runner equality classification
 
 - Added the proof that only consecutive primitive speeds attain 1/10 and the verifier for its 28 modular certificates.

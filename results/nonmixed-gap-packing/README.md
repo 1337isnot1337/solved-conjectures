@@ -22,4 +22,4 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-No Lean formalization is currently listed for this result. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
+The complete three-case formula for positive coprime steps and arbitrary positive gap counts is formalized. It proves both the supremum of packing densities and the actual real circle maximum, with periodic attainment and literal tile semantics. Common-divisor normalization is proved. The full stated result passed source compilation, axiom audit, and independent kernel replay. See [the checked Lean scope](LEAN.md) and [the status report](../../docs/lean-status.md).

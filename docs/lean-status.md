@@ -19,10 +19,22 @@ never additional Lean axioms.
 | Pham denominator degree | Partial | General finite-coefficient identity principle for rational formal power series; both exact polynomial certificates; both coprimality certificates. The orbit-count truncations and the published representation/degree bounds are explicit hypotheses. Reverse-solitaire enumeration and its limiting interpretation are not formalized. |
 | Batista Egyptian fractions | Complete | An ordered lexicographically first solution uniquely maximizes the last denominator for every admissible positive `k` outside residue class 1. The proof uses the elementary global comparison and a kernel-reduced exhaustive certificate below 100, with proved denominator bounds; no published comparison theorem is a hypothesis. |
 | CUT Family B | Partial, including both directions of the new threshold argument | All-size large-cut XOR inequality; mex uniqueness from the actual splitting rules; preservation under all added cuts above `3x`; explicit collision for each smaller admissible odd cut; difference by size `4x`; sharp threshold conditional on the published base formula. Identification of that formula with the base game's mex function is an explicit hypothesis. |
-| CUT arithmetic periodicity | Partial | Binary semantics, complete padding, actual-pile composition, the two-pile DFA, candidate/lower-value DFAs and all four numerical error-language certificates are checked for all words. Candidate parameters and terminating finite emptiness/mex tests with exact recognizers are proved. Groups three through nine, actual-option correspondence, and uniform recognizer construction for the general test remain open. |
+| CUT arithmetic periodicity | General decision theorem complete; concrete examples partial | A computable finite test constructs exact recognizers for every finite cut set and proposed arithmetic tail, and is equivalent to the actual mex equations. Exhaustive candidate enumeration is sound and complete whenever a representation exists. The specialized three-through-nine-pile and option-union certificates for the two displayed games remain open. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Erdős 607 line sizes | Not formalized | Geometric realization, generating-function correspondence, and the local limit/asymptotic analysis remain to formalize. |
 | Growing rectangles | Not formalized | Packing injection, partition estimates, and uniform asymptotics remain to formalize. |
+| Distance graphs with three missing differences | Not formalized | Strict prefix reduction, strip shortening, the strip classifications, and finite exclusions remain to formalize. |
+| Two-difference Motzkin density | Not formalized | Signed square-grid construction, compact-group measure arguments, and character approximation remain to formalize. |
+| Symmetric four-point density | Complete | Exact real packing and covering densities for every literal translated symmetric four-point integer set, including common-divisor normalization. Both periodic constructions and the two sharp local interval lengths are proved. |
+| Packing with two nonmixed gaps | Complete | The exact three-case packing and real circle formula for every positive gap pair and arbitrary positive gap counts, including gcd normalization, literal tile semantics, periodic attainment, and the stated example. |
+| Haralambis three-difference theorem | Not formalized | Balanced orientations, integral cocycle extension, the simultaneous pair inequalities, and density/attainment remain to formalize. |
+| Five-speed spectrum | Partial | Exact real-time maxima for all twelve listed examples; every value s/(5s+1) is realized by the positive primitive distinct family [1,2,3,4,5s]; both critical-family reductions and gcd normalization are proved without Cordella hypotheses. The norm bound, modular lifting, and exhaustive classification outside these families remain open. |
+| Tight six-speed sets and seven-coordinate critical subtori | Not formalized | The infinite equality classification and critical-plane reduction remain to formalize. |
+| Six-speed spectrum | Not formalized | Infinite family reductions, the norm bound, modular lifting, and exhaustive classification remain to formalize. |
+| Tight seven-speed sets | Not formalized | The infinite equality classification remains to formalize. |
+| Tight eight-speed sets | Not formalized | The infinite equality classification remains to formalize. |
+| Tight nine-speed sets | Not formalized | The infinite equality classification remains to formalize. |
+
 
 ## War
 
@@ -331,3 +343,102 @@ The [eight-runner equality classification](../results/tight-seven-speeds/PROOF.m
 The [nine-runner equality classification](../results/tight-eight-speeds/PROOF.md) has a written computer-assisted proof and an exhaustive mixed-modulus verifier. Its Lean formalization is open.
 
 The [ten-runner equality classification](../results/tight-nine-speeds/PROOF.md) has a written computer-assisted proof and an exhaustive verifier. Its Lean formalization is open.
+
+## General finite CUT decision theorem
+
+[`CutGeneralDecision.lean`](../lean/Conjectures/CutGeneralDecision.lean),
+[`CutGeneralGraph.lean`](../lean/Conjectures/CutGeneralGraph.lean), and
+[`CutGeneralSearch.lean`](../lean/Conjectures/CutGeneralSearch.lean) prove the
+uniform construction that the earlier conditional finite-test theorem required.
+
+`CutGeneral.Candidate.test_correct` states that the computable test returns true
+if and only if the proposed sequence satisfies the actual CUT mex equations.
+The candidate has an arbitrary finite prefix, a positive period, finite natural
+number tail entries, and a nonnegative saltus. The cut set is any finite list.
+Exact recognizers, complete hidden-witness padding, subset construction, and
+finite emptiness checks are all constructed and proved from these inputs.
+
+`verifiedCandidates_sound` and `verifiedCandidates_complete` prove that bounded
+finite enumeration finds any valid representation once its explicit search
+bound is reached. This does not assert that every CUT game is arithmetic
+periodic, or that the decision procedure is practical on large inputs.
+The two concrete games still use separate numerical option certificates.
+See [the detailed proof and scope](../results/cut-arithmetic-periodicity/GENERAL_LEAN.md).
+
+## Checked five-speed components
+
+[`Loneliness.lean`](../lean/Conjectures/Loneliness.lean) defines actual real
+nearest-integer distance, finite-list clearance, and its supremum on the unit
+interval. `certified_value` proves exact real maxima from finite rational
+interval covers and rational attaining witnesses. The generator proposes the
+data; Lean checks their coverage for every real time.
+
+[`LonelinessContinuity.lean`](../lean/Conjectures/LonelinessContinuity.lean)
+proves continuity, rational approximation, and attainment of that supremum.
+[`LonelinessRational.lean`](../lean/Conjectures/LonelinessRational.lean)
+proves the exact remainder formula at rational times.
+
+`Loneliness.five_family_value` proves, for every natural `s >= 1`,
+`value [1,2,3,4,5*s] = s/(5*s+1)`. `five_family_realizes` supplies positivity,
+distinctness, primitivity, and the strict threshold as well. The twelve
+`Loneliness.FiveSpeedExamples.*_value` theorems prove the exact maxima of the
+listed sporadic examples. These do not establish that the list is exhaustive.
+
+`Loneliness.CriticalFamilies.critical_family_below_threshold` classifies every
+positive primitive list of length five containing a positive dilation of
+`[1,2,3,4]` or `[1,3,4,7]`. The second family's exact value is proved for all
+`s >= 2`; its `s = 1` value is `2/11`. These are unconditional mathematical
+proofs, with no published family theorem as a premise.
+See [the critical-family proof](../results/five-speed-spectrum/CRITICAL_FAMILIES_LEAN.md).
+
+The remaining five-speed classification requires the external geometric norm
+bound and the complete modular lifting/enumeration argument. Neither the finite
+Python verifier nor the twelve checked values discharge those dependencies.
+
+## Local extension validation, 18 November 2026
+
+The 36 new CUT, loneliness, and density source modules compiled with the pinned
+toolchain. Each passed an independent `leanchecker` replay. The combined axiom
+audit checked 1,025 theorem declarations across the four new namespaces and
+allowed only `propext`, `Classical.choice`, and `Quot.sound`. The root
+imports, required declarations, and kernel replay list include the new modules.
+The full-package rebuild and hosted CI are recorded separately; the module
+receipts alone are not a claim that every repository result is formalized.
+
+
+## Exact density theorems
+
+`SymmetricFourPoint.symmetric_four_point_densities` proves both parity cases
+for every positive coprime pair `a < b`. The proof includes the literal tile
+interpretation, exact supremum/infimum definitions, periodic attainment, and
+both sharp local interval lengths. See
+[the checked scope](../results/symmetric-four-point-density/LEAN.md).
+
+`NonmixedGap.nonmixed_gap_density` proves both the actual packing density and
+the real circle maximum for every positive coprime gap pair and arbitrary
+positive gap counts. Euclidean division handles either sign of `a-b`.
+`nonmixed_gap_periodic_optimum` proves attainment by a periodic packing of the
+literal tile. See [the checked scope](../results/nonmixed-gap-packing/LEAN.md).
+
+The shared density definitions use centered intervals `[-N,N+1)`. Their finite
+window bounds hold uniformly over translations; the exact endpoints do not
+assume periodicity of competing center sets. Common-divisor normalization is proved by exact residue counts and periodic
+block expansion. `translated_symmetric_four_point_densities` covers arbitrary
+integer translations and arbitrary common divisors.
+`nonmixed_gap_density_general` and `nonmixed_gap_general_periodic_optimum`
+remove the coprimality premise from both nonmixed-gap endpoints.
+
+`Loneliness.Normalization.primitive_representative` proves that division by the
+gcd preserves the actual value, list length, positivity, and distinctness and
+produces a primitive list. Its `critical_family_below_threshold` removes the
+primitivity premise from the checked critical-family reduction.
+
+
+The norm-reduction development additionally proves coefficient-rounding density
+transfer for arbitrary real subspaces modulo integer vectors. Its space value
+is identified with the real-time loneliness value for speed lines.
+`Loneliness.NormArithmetic.five_speed_threshold` proves the numerical threshold
+from explicit lattice-product and larger-subspace hypotheses. The geometric
+hypotheses and external exhaustive classifications remain open; the theorem
+is not presented as an unconditional norm bound.
+See [the exact reduction and dependency stack](../results/five-speed-spectrum/NORM_REDUCTION_LEAN.md).

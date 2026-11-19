@@ -14,3 +14,15 @@ import Conjectures.CutPeriodCertifiedMex
 import Conjectures.BinarySetCertificate
 import Conjectures.FiniteIntervalCertificate
 import Conjectures.CutMexDecision
+import Conjectures.CutGeneralSearch
+import Conjectures.LonelinessFiveExamples
+import Conjectures.LonelinessFiveFamily
+import Conjectures.LonelinessRational
+import Conjectures.LonelinessCriticalFamilies
+import Conjectures.LonelinessNormalization
+import Conjectures.NonmixedGapTheorem
+import Conjectures.SymmetricFourPointResult
+import Conjectures.NonmixedGapGeneral
+import Conjectures.SymmetricFourPointTranslated
+import Conjectures.LonelinessSubspaceDensity
+import Conjectures.LonelinessNormArithmetic

@@ -22,9 +22,10 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-Partial formalization; the full result is not yet formally verified. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
+The general finite decision test and exhaustive candidate enumeration are formalized for every finite cut set and every proposed finite-prefix arithmetic sequence. The construction proves the exact graph, lower-value, and actual-option recognizers from the input data. The two concrete games still require the specialized higher-pile certificates. See [the general Lean proof](GENERAL_LEAN.md) and [the status report](../../docs/lean-status.md).
 
 ## Supporting files
 
+- [`GENERAL_LEAN.md`](GENERAL_LEAN.md)
 - [`LEAN_PLAN.md`](LEAN_PLAN.md)
 - [`generate_lean_certificates.py`](generate_lean_certificates.py)

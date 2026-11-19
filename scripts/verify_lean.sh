@@ -41,6 +41,42 @@ modules=(
   Conjectures.CutPeriodMissingACertificate
   Conjectures.CutPeriodMissingBCertificate
   Conjectures.CutPeriodCertifiedMex
+  Conjectures.CutGeneralDecision
+  Conjectures.CutGeneralGraph
+  Conjectures.CutGeneralSearch
+  Conjectures.Loneliness
+  Conjectures.LonelinessContinuity
+  Conjectures.LonelinessRational
+  Conjectures.LonelinessFiveFamily
+  Conjectures.LonelinessFiveExamples
+  Conjectures.LonelinessCriticalBase
+  Conjectures.LonelinessCriticalSecond
+  Conjectures.LonelinessCriticalFamilies
+  Conjectures.LonelinessNormalization
+  Conjectures.NonmixedGapDensity
+  Conjectures.NonmixedGap
+  Conjectures.NonmixedGapBounds
+  Conjectures.NonmixedGapPeriodic
+  Conjectures.NonmixedGapUpper
+  Conjectures.NonmixedGapCharacter
+  Conjectures.NonmixedGapCircle
+  Conjectures.NonmixedGapTile
+  Conjectures.NonmixedGapTheorem
+  Conjectures.SymmetricFourPoint
+  Conjectures.SymmetricFourPointCounting
+  Conjectures.SymmetricFourPointConstructions
+  Conjectures.SymmetricFourPointDensity
+  Conjectures.SymmetricFourPointTheorem
+  Conjectures.SymmetricFourPointSemantics
+  Conjectures.SymmetricFourPointSharp
+  Conjectures.SymmetricFourPointResult
+  Conjectures.NonmixedGapResidues
+  Conjectures.NonmixedGapScaling
+  Conjectures.NonmixedGapGeneral
+  Conjectures.SymmetricFourPointScaling
+  Conjectures.SymmetricFourPointTranslated
+  Conjectures.LonelinessSubspaceDensity
+  Conjectures.LonelinessNormArithmetic
 )
 for module in "${modules[@]}"; do
   printf 'Kernel recheck: %s\n' "$module"

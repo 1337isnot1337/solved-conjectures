@@ -22,9 +22,12 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-No Lean formalization is currently listed for this result. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
+Partial formalization. Lean proves the exact value of every member of the first infinite family, both primitive critical-family reductions, and the real maxima of all twelve listed sporadic examples. It also proves continuity, attainment, and rational approximation for the actual nearest-integer distance function. The exhaustive classification outside the critical families and its geometric norm bound remain open. See [the critical-family proof](CRITICAL_FAMILIES_LEAN.md) and [the status report](../../docs/lean-status.md).
 
 ## Supporting files
 
+- [`CRITICAL_FAMILIES_LEAN.md`](CRITICAL_FAMILIES_LEAN.md)
+- [`NORM_REDUCTION_LEAN.md`](NORM_REDUCTION_LEAN.md)
+- [`generate_lean_examples.py`](generate_lean_examples.py)
 - [`cover.json`](cover.json)
 - [`sieve.cpp`](sieve.cpp)

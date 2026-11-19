@@ -5,12 +5,30 @@ Lean, preserving the stated scope and discharging unformalized mathematical
 inputs. All accepted work belongs on `main`; other branches were removed after
 their work was fast-forwarded into `main`.
 
-## Paused checkpoint, 18 November 2026
+## Active campaign, 18 November 2026
 
-Paused at the owner's explicit request. The task-owned build supervisor and
-its compiler were stopped; no local campaign build is running or scheduled.
-The campaign is INCOMPLETE. All work, including the experimental generated
-three-pile sources, is preserved on `main`.
+The campaign has resumed under the current request to formalize every result.
+Li is last. Issue [#2](https://github.com/1337isnot1337/solved-conjectures/issues/2)
+tracks this team's work; issue [#1](https://github.com/1337isnot1337/solved-conjectures/issues/1)
+tracks the concurrent campaign. Result-specific claims record ownership before
+a lane changes focus. The campaign remains INCOMPLETE.
+
+Checked extension: the complete general finite CUT decision construction and
+candidate enumeration, exact real-time loneliness certificates, the infinite
+five-speed realization family, and both critical-family reductions. The new
+source modules passed separate axiom audits and independent kernel replay.
+The exact declarations and remaining gaps are in `docs/lean-status.md`.
+
+Symmetric four-point and nonmixed-gap density proofs have passed source, axiom,
+and independent kernel checks for the full coprime statements. Their common-divisor extensions and literal tile semantics also passed the
+checks; both full density results are complete. Corrected solitaire, concrete CUT option certificates, and
+the remaining infinite classifications continue in separate lanes.
+
+## Historical accepted checkpoint
+
+The earlier pause preserved the experimental generated three-pile sources on
+`main`. The following implementation notes describe that unfinished finite
+certificate stage and remain useful to its current owner.
 
 The accepted package includes the complete War cycles and Batista theorem,
 the CUT two-pile and four numerical error certificates, complete padding,
@@ -19,7 +37,8 @@ finite emptiness/mex tests. `BinaryDecision` proves every reachable state has
 a word shorter than the state count and gives a terminating complete emptiness
 test. `CutMexDecision` proves necessary and sufficient finite mex tests given
 exact graph/lower/actual-option recognizers. Uniform construction of those
-recognizers is still unfinished.
+recognizers is now proved in the separate `CutGeneral` modules. The specialized
+large option certificates below are still needed for the concrete examples.
 
 Resume with the three-pile group. Its data module, all 27 transition blocks
 (6,804 product states), and the transition aggregation passed source builds.
@@ -87,7 +106,8 @@ unproved premise of the completed theorem.
    hypothesis that its numerical option DFA recognizes actual legal splits.
    Next: groups three through nine and the union refinements to discharge that
    hypothesis. Candidate-function minimal-period claims are already checked;
-   identification with the games and the general decision test remain open.
+   identification with the concrete games remains open. The general decision test
+   and complete candidate enumeration are now proved independently.
    The generator preserves all representations in a reproducible ignored JSON
    archive and emits the checked graph Lean certificate. Generated data alone
    is not acceptance.
@@ -103,13 +123,15 @@ unproved premise of the completed theorem.
 3. Pham denominator degree: connect the listed truncations to actual limiting
    reverse-solitaire orbit counts, and prove the required representation/degree
    bounds or replace that route with an unconditional generating-function proof.
-4. Li coefficient sign: explicit tree properties, all connected partition types,
-   chromatic symmetric function interpretation and coefficient extraction.
-5. Corrected solitaire theorem: arbitrary admissible layers, return times,
+4. Corrected solitaire theorem: arbitrary admissible layers, return times,
    interlacing and convergence for every diverging scale.
-6. Growing rectangles: packing injection and uniform partition asymptotics.
-7. Erdős 607: geometric realization, generating-function correspondence, local
+5. Growing rectangles: packing injection and uniform partition asymptotics.
+6. Erdős 607: geometric realization, generating-function correspondence, local
    probability estimate and the sharp asymptotic including its prefactor.
+7. The density and lonely-runner results listed below and in the status table.
+8. Li coefficient sign, after every other result: explicit tree properties,
+   all connected partition types, chromatic symmetric function interpretation,
+   and coefficient extraction.
 
 The campaign is INCOMPLETE until this queue and every gap in
 `docs/lean-status.md` are closed. A passing verifier or CI run does not close an
@@ -135,8 +157,8 @@ The [distance-graph note](../results/distance-graph-densities/PROOF.md) adds two
 
 The [two-difference compact-group theorem](../results/two-difference-motzkin/PROOF.md) requires the signed square-grid construction, integration over the relation lattice, finite-quotient approximation and density of character restrictions. Its Lean proof is pending.
 
-The [symmetric four-point density theorem](../results/symmetric-four-point-density/PROOF.md) reduces to the two finite interval obstructions, their density consequences and the periodic constructions. All three steps await formalization.
+The [symmetric four-point density theorem](../results/symmetric-four-point-density/PROOF.md) reduces to the two finite interval obstructions, their density consequences and the periodic constructions. All three steps have passed source, axiom, and independent kernel checks. Common-divisor normalization and literal translation semantics are also proved.
 
-The [nonmixed-gap theorem](../results/nonmixed-gap-packing/PROOF.md) requires the ordering of coprime lattice lifts, the two interval counts, the block-density argument, and the character construction. Its Lean proof is pending.
+The [nonmixed-gap theorem](../results/nonmixed-gap-packing/PROOF.md) requires the ordering of coprime lattice lifts, the two interval counts, the block-density argument, and the character construction. The full coprime packing and real circle endpoint passed source, axiom, and independent kernel checks. Common-divisor normalization and literal translation semantics are also proved.
 
 The [Haralambis proof](../results/haralambis-three-differences/PROOF.md) has a combinatorial route to formalization through balanced dual orientations, extension of closed signed-edge values across cubes, integral periods, and three pair-sum cycles. Its Lean proof is pending.

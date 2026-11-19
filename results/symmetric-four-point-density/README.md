@@ -22,4 +22,4 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-No Lean formalization is currently listed for this result. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
+The complete theorem for every translated symmetric four-point integer set, both periodic constructions, literal translate semantics, and the sharp local interval lengths are formalized. Common-divisor normalization is proved. The full stated result passed source compilation, axiom audit, and independent kernel replay. See [the checked Lean scope](LEAN.md) and [the status report](../../docs/lean-status.md).
