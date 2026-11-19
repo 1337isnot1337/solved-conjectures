@@ -183,6 +183,7 @@ theorem moving_cycle_card (σ : Equiv.Perm ι) {q : ℕ} (hq : q.Prime)
       exact hc.ne_one (orderOf_eq_one_iff.mp h))
   simpa only [hc.orderOf] using ho
 
+omit [DecidableEq ι] in
 /-- A fixed row is constant on each column cycle. -/
 theorem fixed_row_constant_on_cycle (H : Matrix ι ι ℝ) (σ τ : Equiv.Perm ι)
     (hinv : ∀ i j, H (σ i) (τ j) = H i j) (i : Function.fixedPoints σ)

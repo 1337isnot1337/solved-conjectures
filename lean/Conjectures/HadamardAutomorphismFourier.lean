@@ -55,8 +55,8 @@ theorem compressed_gram
   ext i j
   exact mul_left_cancel₀ hq (congrArg (fun M : Matrix κ κ R => M i j) h)
 
-/-- The determinant identity needed after replacing sign rows by indicators. -/
 omit [IsDomain R] in
+/-- The determinant identity needed after replacing sign rows by indicators. -/
 theorem determinant_norm_of_gram (X : Matrix κ κ R) (p : R)
     (hX : Xᴴ * X = p • (1 : Matrix κ κ R)) :
     star X.det * X.det = p ^ Fintype.card κ := by
@@ -104,7 +104,7 @@ theorem hadamard_mul_embedding_apply
   classical
   simp [Matrix.mul_apply, fourierEmbedding, Fintype.sum_prod_type]
 
-omit [StarRing R] [IsDomain R] in
+omit [StarRing R] [IsDomain R] [Fintype G] in
 theorem embedding_mul_apply (χ : AddChar G R) (A : Matrix I I R)
     (i : I) (a : G) (j : I) :
     (fourierEmbedding (I := I) χ * A : Matrix (OrbitIndex I G) I R)
@@ -112,8 +112,8 @@ theorem embedding_mul_apply (χ : AddChar G R) (A : Matrix I I R)
   classical
   simp [Matrix.mul_apply, fourierEmbedding]
 
-/-- Simultaneous translation makes the Fourier subspace invariant. -/
 omit [StarRing R] in
+/-- Simultaneous translation makes the Fourier subspace invariant. -/
 theorem fourier_intertwine
     (H : Matrix (OrbitIndex I G) (OrbitIndex I G) R)
     (χ : AddChar G R) (hχ : χ ≠ 1)
@@ -133,9 +133,13 @@ theorem fourier_intertwine
   | some r =>
       rcases r with ⟨i, a⟩
       rw [hadamard_mul_embedding_apply, embedding_mul_apply]
-      simp only [hblock]
       calc
-        (∑ b : G, H (some (i, 0)) (some (j, b - a)) * χ b) =
+        (∑ b : G, H (some (i, a)) (some (j, b)) * χ b) =
+            ∑ b : G, H (some (i, 0)) (some (j, b - a)) * χ b := by
+          apply Finset.sum_congr rfl
+          intro b _
+          rw [hblock i j a b]
+        _ =
             ∑ b : G, H (some (i, 0)) (some (j, b)) * χ (b + a) := by
           simpa using (Fintype.sum_equiv (Equiv.addRight a)
             (fun b => H (some (i, 0)) (some (j, b)) * χ (b + a))

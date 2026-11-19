@@ -1,0 +1,2 @@
+import Conjectures.HadamardAutomorphismMatrixObstruction
+import Conjectures.HadamardAutomorphismMain

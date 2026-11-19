@@ -13,9 +13,11 @@ namespace HadamardAutomorphism
 private def noSquareCheck (C d B : ℕ) : Bool :=
   (List.range B).all (fun b => decide ((Nat.sqrt (C - d * b ^ 2)) ^ 2 ≠ C - d * b ^ 2))
 
+unseal Nat.sqrt.iter in
 private theorem prime_no_square_certificate : noSquareCheck (4 * 599) 479 3 = true := by
   decide
 
+unseal Nat.sqrt.iter in
 private theorem cube_no_square_certificate : noSquareCheck (4 * 599 ^ 3) 479 1340 = true := by
   decide
 

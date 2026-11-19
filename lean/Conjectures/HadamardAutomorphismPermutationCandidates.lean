@@ -1,3 +1,4 @@
+import Conjectures.HadamardAutomorphismPermutationIntegral
 import Conjectures.HadamardAutomorphismPermutationMatrix
 import Conjectures.HadamardAutomorphismPermutationCycles
 import Conjectures.HadamardAutomorphismFixedPoints

@@ -21,6 +21,9 @@ variable (K : Type*) [Field K] [NumberField K]
 
 local instance : Fact (Nat.Prime 599) := ⟨prime_599⟩
 
+instance prime599_span_isMaximal : (Ideal.span {(599 : ℤ)}).IsMaximal := by
+  simpa only [Nat.cast_ofNat] using Int.ideal_span_isMaximal_of_prime 599
+
 /-- Complex conjugation, defined intrinsically by inversion of the primitive root. -/
 def conjugation479 : K ≃ₐ[ℚ] K :=
   fromZetaAut (zeta_spec 479 ℚ K).inv (Polynomial.cyclotomic.irreducible_rat (by decide))
@@ -103,8 +106,7 @@ theorem mem_quadraticFixedField479 (x : K) :
   rw [quadraticFixedField479, IntermediateField.mem_fixedField_iff]
   constructor
   · intro h
-    exact h (frobenius479 K)
-      (by simpa using Subgroup.zpow_mem_zpowers (frobenius479 K) (1 : ℤ))
+    exact h (frobenius479 K) (Subgroup.mem_zpowers _)
   · intro hx f hf
     obtain ⟨m, rfl⟩ := Subgroup.mem_zpowers_iff.mp hf
     exact MulAction.mem_fixedBy_zpow
@@ -129,12 +131,15 @@ theorem quadraticFixedField479_degree :
 
 theorem prime599_inertia_degree :
     (Ideal.span {(599 : ℤ)}).inertiaDegIn (𝓞 K) = 239 := by
-  rw [IsCyclotomicExtension.Rat.inertiaDegIn_eq_of_not_dvd 599 K (by decide),
-    residue_order]
+  simpa only [Nat.cast_ofNat, residue_order] using
+    IsCyclotomicExtension.Rat.inertiaDegIn_eq_of_not_dvd
+      (m := 479) 599 K (by decide)
 
 theorem prime599_ramification_index :
-    (Ideal.span {(599 : ℤ)}).ramificationIdxIn (𝓞 K) = 1 :=
-  IsCyclotomicExtension.Rat.ramificationIdxIn_eq_of_not_dvd 599 K (by decide)
+    (Ideal.span {(599 : ℤ)}).ramificationIdxIn (𝓞 K) = 1 := by
+  simpa only [Nat.cast_ofNat] using
+    IsCyclotomicExtension.Rat.ramificationIdxIn_eq_of_not_dvd
+      (m := 479) 599 K (by decide)
 
 theorem prime599_number_of_primes :
     ((Ideal.span {(599 : ℤ)}).primesOver (𝓞 K)).ncard = 2 := by
@@ -154,8 +159,8 @@ theorem frobenius479_mem_stabilizer (P : Ideal (𝓞 K)) [P.IsMaximal]
       (MulAction.stabilizer (K ≃ₐ[ℚ] K) P) := by
     rw [h]
     exact Subgroup.mem_zpowers _
-  simpa only [MulEquiv.mapSubgroup_apply, Subgroup.mem_map_equiv,
-    frobenius479] using hm
+  exact (Subgroup.mem_map_equiv
+    (f := IsCyclotomicExtension.Rat.galEquivZMod 479 K)).mp hm
 
 theorem frobenius479_fixes_prime (P : Ideal (𝓞 K)) [P.IsMaximal]
     [P.LiesOver (Ideal.span {(599 : ℤ)})] : frobenius479 K • P = P :=

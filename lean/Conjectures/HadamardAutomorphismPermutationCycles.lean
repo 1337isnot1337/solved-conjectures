@@ -79,10 +79,10 @@ theorem standardShift_cycleType : standardShift.cycleType = Multiset.replicate 5
     omega
   rw [Equiv.Perm.cycleType_of_pow_prime_eq_one standardShift_pow_479, hc]
 
-variable {ι : Type*} [Fintype ι] [DecidableEq ι]
+variable {ι : Type*}
 
 /-- A genuine permutation with the forced fixed count admits the stated cyclic labels. -/
-theorem exists_standard_cycle_labels (σ : Equiv.Perm ι)
+theorem exists_standard_cycle_labels [Fintype ι] [DecidableEq ι] (σ : Equiv.Perm ι)
     (hcard : Fintype.card ι = 2396) (hσ : σ ^ 479 = 1)
     (hfixed : Fintype.card (Function.fixedPoints σ) = 1) :
     ∃ e : ι ≃ StandardIndex, ∀ i, e (σ i) = standardShift (e i) := by
@@ -125,7 +125,8 @@ theorem orbitReindex_signs [Monoid A] (H : Matrix ι ι A) (e f : ι ≃ Standar
     ∀ i j, orbitReindex H e f i j ^ 2 = 1 :=
   fun i j => hsign (e.symm i) (f.symm j)
 
-theorem orbitReindex_orthogonal [CommRing A] (H : Matrix ι ι A) (e f : ι ≃ StandardIndex) (n : A)
+theorem orbitReindex_orthogonal [Fintype ι] [DecidableEq ι] [CommRing A]
+    (H : Matrix ι ι A) (e f : ι ≃ StandardIndex) (n : A)
     (horth : ∀ i k, ∑ j, H i j * H k j = if i = k then n else 0) :
     ∀ i k, ∑ j, orbitReindex H e f i j * orbitReindex H e f k j =
       if i = k then n else 0 := by
@@ -180,7 +181,7 @@ theorem standard_invariant_circulant (H : Matrix StandardIndex StandardIndex A)
 
 /-- The forced fixed counts produce an actual reindexed Hadamard matrix with
 the fixed-row and circulant-block equations required by Fourier compression. -/
-theorem exists_cyclic_reindex [CommRing A] (H : Matrix ι ι A)
+theorem exists_cyclic_reindex [Fintype ι] [DecidableEq ι] [CommRing A] (H : Matrix ι ι A)
     (σ τ : Equiv.Perm ι) (hcard : Fintype.card ι = 2396)
     (hσ : σ ^ 479 = 1) (hτ : τ ^ 479 = 1)
     (hfσ : Fintype.card (Function.fixedPoints σ) = 1)

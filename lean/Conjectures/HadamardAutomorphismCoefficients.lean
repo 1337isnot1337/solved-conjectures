@@ -12,7 +12,7 @@ noncomputable section
 
 namespace HadamardAutomorphism
 
-open NumberField
+open NumberField Module
 open scoped BigOperators
 
 variable {K : Type*} [Field K] [NumberField K]
@@ -32,6 +32,7 @@ def integerBasis479 : Basis (Fin 478) ℤ (𝓞 K) :=
   rw [hζ.integralPowerBasis.basis_eq_pow, hζ.integralPowerBasis_gen]
   rfl
 
+omit [NumberField K] [IsCyclotomicExtension {479} ℚ K] in
 theorem last_power_eq_neg_sum479 :
     hζ.toInteger ^ 478 = -∑ i : Fin 478, hζ.toInteger ^ (i : ℕ) := by
   have hsum : (∑ i : Fin 479, hζ.toInteger ^ (i : ℕ)) = 0 := by
@@ -74,8 +75,8 @@ theorem cyclotomic_coefficient_differences_dvd479 (p : ℤ) (C : Fin 479 → ℤ
 
 theorem cyclotomic_coefficients_congruent_mod599 (C : Fin 479 → ℤ)
     (hdiv : (599 : 𝓞 K) ∣ ∑ i : Fin 479, C i • hζ.toInteger ^ (i : ℕ)) :
-    ∀ i j : Fin 479, (599 : ℤ) ∣ C i - C j :=
-  cyclotomic_coefficient_differences_dvd479 hζ 599 C hdiv
+    ∀ i j : Fin 479, (599 : ℤ) ∣ C i - C j := by
+  exact cyclotomic_coefficient_differences_dvd479 hζ 599 C (by simpa using hdiv)
 
 theorem cyclotomic_coefficients_equal_of_bounds599 (C : Fin 479 → ℤ)
     (hlow : ∀ i, 0 ≤ C i) (hhigh : ∀ i, C i ≤ 479)

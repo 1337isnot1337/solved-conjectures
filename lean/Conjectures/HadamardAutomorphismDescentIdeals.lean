@@ -36,7 +36,8 @@ theorem prime_liesOver599_of_contains_divisor (u : 𝓞 K) (hu : u ≠ 0)
   have hmax : P.IsMaximal := hprime.1.isMaximal hP0
   refine ⟨hmax, ?_⟩
   rw [Ideal.liesOver_iff]
-  apply Ideal.IsMaximal.eq_of_le (Int.ideal_span_isMaximal_of_prime 599)
+  apply Ideal.IsMaximal.eq_of_le
+    (inferInstance : (Ideal.span {(599 : ℤ)}).IsMaximal)
     Ideal.IsPrime.ne_top'
   rw [Ideal.span_singleton_le_iff_mem, Ideal.mem_comap, algebraMap_int_eq, map_natCast]
   exact hpP

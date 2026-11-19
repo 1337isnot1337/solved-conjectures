@@ -1,2 +1,3 @@
 import Conjectures.HadamardAutomorphismDescent
 import Conjectures.HadamardAutomorphismCyclotomicPrimes
+import Conjectures.HadamardAutomorphismCyclotomicCharacter
