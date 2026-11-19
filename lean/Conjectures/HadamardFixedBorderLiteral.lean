@@ -69,25 +69,41 @@ def F : Matrix (Fin 16) (Fin 12) ℤ :=
     ![1, 1, 1, -1, -1, -1, -1, -1, 1, 1, -1, -1]
   ]
 
-theorem K_sign : SignMatrix K := by decide +kernel
+theorem K_sign : SignMatrix K := by
+  unfold SignMatrix
+  decide +kernel
 
-theorem E_sign : SignMatrix E := by decide +kernel
+theorem E_sign : SignMatrix E := by
+  unfold SignMatrix
+  decide +kernel
 
-theorem F_sign : SignMatrix F := by decide +kernel
+theorem F_sign : SignMatrix F := by
+  unfold SignMatrix
+  decide +kernel
 
 theorem K_gram :
-    K * Kᵀ = (12 : ℤ) • (1 : Matrix (Fin 12) (Fin 12) ℤ) := by decide +kernel
+    K * Kᵀ = (12 : ℤ) • (1 : Matrix (Fin 12) (Fin 12) ℤ) := by
+  apply Matrix.ext
+  decide +kernel
 
 theorem E_gram :
-    E * Eᵀ = (16 : ℤ) • (1 : Matrix (Fin 12) (Fin 12) ℤ) := by decide +kernel
+    E * Eᵀ = (16 : ℤ) • (1 : Matrix (Fin 12) (Fin 12) ℤ) := by
+  apply Matrix.ext
+  decide +kernel
 
 theorem F_gram :
     F * Fᵀ = (16 : ℤ) • (1 : Matrix (Fin 16) (Fin 16) ℤ) -
-      (4 : ℤ) • flatBlocks := by decide +kernel
+      (4 : ℤ) • flatBlocks := by
+  apply Matrix.ext
+  decide +kernel
 
-theorem balanced : flatBlocks * Eᵀ = 0 := by decide +kernel
+theorem balanced : flatBlocks * Eᵀ = 0 := by
+  apply Matrix.ext
+  decide +kernel
 
-theorem cross : flatGamma gamma * Eᵀ + F * Kᵀ = 0 := by decide +kernel
+theorem cross : flatGamma gamma * Eᵀ + F * Kᵀ = 0 := by
+  apply Matrix.ext
+  decide +kernel
 
 def certificate : FlatCertificate gamma where
   K := K
