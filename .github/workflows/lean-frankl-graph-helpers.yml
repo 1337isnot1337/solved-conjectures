@@ -1,0 +1,48 @@
+name: Lean Frankl recovered graph helpers
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'lean/Conjectures/FranklSpanFourGraph*.lean'
+      - 'docs/frankl-graph-helpers-sources.json'
+      - 'scripts/verify_frankl_graph_helpers.py'
+      - '.github/workflows/lean-frankl-graph-helpers.yml'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+  pull_request:
+    paths:
+      - 'lean/Conjectures/FranklSpanFourGraph*.lean'
+      - 'docs/frankl-graph-helpers-sources.json'
+      - 'scripts/verify_frankl_graph_helpers.py'
+      - '.github/workflows/lean-frankl-graph-helpers.yml'
+
+permissions:
+  contents: read
+
+env:
+  LEAN_NUM_THREADS: '1'
+
+jobs:
+  helpers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Strict source, all-declaration axiom audit, exact stock replay
+        run: python3 scripts/verify_frankl_graph_helpers.py helpers
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frankl-recovered-graph-helpers
+          path: .candidate-artifacts/frankl-graph-helpers/
+          if-no-files-found: warn
+          retention-days: 14
