@@ -20,6 +20,8 @@ on:
           - prime-quotients
           - involutions
           - order-nine
+          - order-nine-group
+          - order-nine-orbits
           - domain
           - compression
           - order-three-fibers
