@@ -1,4 +1,4 @@
-# Three-player War
+# Spivey's three-player War: cycles with all players active
 
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 

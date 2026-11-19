@@ -10,4 +10,4 @@ Run the [exhaustive verifier](verify.py) from the repository root.
 python3 results/tight-nine-speeds/verify.py
 ```
 
-The proof is unrefereed and has no Lean formalization.
+The proof is unrefereed. Lean verifies that the consecutive direction has global value `1/10`. The uniqueness proof remains unformalized. See the [current formalization scope](../../docs/lean-status.md).

@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-19 — Searchable collection website
+
+Added a GitHub Pages site with search, subject filters, and individual result pages.
+Updated result titles, citation metadata, and links to the maintainer's website.
+The README now shows the Lean and computational verification workflows.
+Reconciled five index flags with the existing partial results in the [Lean status report](docs/lean-status.md).
+Mathematical claims and checked proof scopes are unchanged.
+
 ## 2026-11-19 — Partial results for three open problems
 
 Published the two Frankl generator results, the two-speed Lonely Runner insertion theorem and a sharp bound for abelian covers in the Erdős–Gyárfás search. Each entry gives its hypotheses and reproducible checks. [Catalogue](CONTENTS.md#partial-results-on-open-problems)

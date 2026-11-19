@@ -1,4 +1,4 @@
-# Line-size sets
+# Erdős Problem 607: line-size sets
 
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-19T06:50:00Z",
+  "title": "Design System: Solved conjectures",
+  "extensions": {
+    "motion": [
+      {
+        "name": "state-change",
+        "value": "160ms ease",
+        "purpose": "Control borders and link states."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "Disable transitions and smooth scrolling when requested."
+      }
+    ],
+    "shadows": [],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "1000px"
+      },
+      {
+        "name": "single-column",
+        "value": "720px"
+      },
+      {
+        "name": "stacked-filters",
+        "value": "480px"
+      },
+      {
+        "name": "narrow-phone",
+        "value": "390px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Search field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Visible label and a readable input size at every viewport.",
+      "html": "<label class=\"ds-search-label\" for=\"ds-search\">Search results</label><input class=\"ds-search\" id=\"ds-search\" type=\"search\" placeholder=\"Problem, author, or OEIS number\">",
+      "css": ".ds-search-label{display:block;margin-bottom:7px;color:var(--muted);font:500 14px var(--sans)}.ds-search{width:100%;height:46px;border:1px solid var(--control-line);border-radius:4px;padding:10px 13px;background:var(--surface);color:var(--ink);font:16px var(--sans)}.ds-search:hover{border-color:var(--green)}.ds-search:focus-visible{outline:2px solid var(--focus);outline-offset:5px}"
+    },
+    {
+      "name": "Full formalization status",
+      "kind": "chip",
+      "refersTo": "full-status",
+      "description": "Precise status with text and color.",
+      "html": "<span class=\"ds-status\">Formalized stated result</span>",
+      "css": ".ds-status{display:inline-flex;padding:5px 9px;border-radius:3px;background:var(--green-wash);color:var(--green);font:400 13px/1.5 var(--sans)}"
+    },
+    {
+      "name": "Partial formalization status",
+      "kind": "chip",
+      "refersTo": "partial-status",
+      "description": "Partial formalization remains visibly separate from a complete result.",
+      "html": "<span class=\"ds-status-partial\">Partial formalization</span>",
+      "css": ".ds-status-partial{display:inline-flex;padding:5px 9px;border-radius:3px;background:var(--violet-wash);color:var(--violet);font:400 13px/1.5 var(--sans)}"
+    },
+    {
+      "name": "Navigation link",
+      "kind": "nav",
+      "description": "Quiet navigation with visible hover and keyboard focus.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#catalogue\">Catalogue</a><a href=\"#verification\">Verification</a></nav>",
+      "css": ".ds-nav{display:flex;gap:24px;font:14px var(--sans)}.ds-nav a{color:var(--muted);padding:8px 0;text-decoration:none}.ds-nav a:hover{color:var(--green);text-decoration:underline;text-underline-offset:6px}.ds-nav a:focus-visible{outline:2px solid var(--focus);outline-offset:5px}"
+    },
+    {
+      "name": "Clear filters",
+      "kind": "button",
+      "description": "Text control displayed only while filters are active.",
+      "html": "<button class=\"ds-clear\" type=\"button\">Clear filters</button>",
+      "css": ".ds-clear{padding:0;border:0;background:transparent;color:var(--green);font:14px var(--sans);text-decoration:underline;text-underline-offset:4px;cursor:pointer}.ds-clear:hover{text-decoration-thickness:2px}.ds-clear:focus-visible{outline:2px solid var(--focus);outline-offset:5px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Editorial mathematical catalogue",
+    "overview": "Result names, mathematical summaries, and verification scope provide the structure. A reader can scan the collection and move into a proof without a change in visual language.",
+    "keyCharacteristics": [
+      "Readable proofs",
+      "Ruled catalogue rows",
+      "Precise verification statuses"
+    ],
+    "rules": [],
+    "dos": [
+      "Do retain precise status text, contributor credit, and mathematical scope.",
+      "Do keep line lengths readable and let narrow layouts reflow.",
+      "Do use the existing type and color tokens for additional pages."
+    ],
+    "donts": [
+      "Do not add decorative summary metrics, repeated cards, or unnecessary icons.",
+      "Do not hide mathematical content behind JavaScript.",
+      "Do not shrink mobile text to make a desktop layout fit."
+    ]
+  }
+}

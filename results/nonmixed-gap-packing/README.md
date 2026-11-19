@@ -1,4 +1,4 @@
-# Packing with two nonmixed gaps
+# Natalchenko–Sagdeev packing with two nonmixed gaps
 
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 

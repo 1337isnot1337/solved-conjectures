@@ -1,4 +1,4 @@
-# Growing rectangles
+# Rectangle partition asymptotics when both sides grow
 
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 

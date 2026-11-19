@@ -1,4 +1,4 @@
-# A non-spider counterexample to Li's coefficient-sign prediction
+# Chromatic symmetric functions: a non-spider counterexample to Li's coefficient-sign prediction
 
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 

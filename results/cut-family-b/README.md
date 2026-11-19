@@ -1,4 +1,4 @@
-# CUT Family B
+# CUT Family B: the Ellis–Thanatipanonda nim-sequence conjecture
 
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 

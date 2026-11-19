@@ -1,4 +1,4 @@
-# CUT with a preperiod
+# CUT arithmetic periodicity with a preperiod
 
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 

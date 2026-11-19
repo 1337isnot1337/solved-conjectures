@@ -1,4 +1,4 @@
-# Pham's exact denominator-degree conjecture: a counterexample
+# Bulgarian solitaire: a counterexample to Pham's denominator-degree conjecture
 
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 

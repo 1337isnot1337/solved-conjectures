@@ -1,4 +1,4 @@
-# Limit shapes of recurrent L-solitaire configurations
+# Generalized Bulgarian solitaire: limit shapes of recurrent L-solitaire configurations
 
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 

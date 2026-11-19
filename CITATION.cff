@@ -3,15 +3,27 @@ message: >-
   Please cite this repository if you use its mathematical notes or
   verification code, and cite the original conjecture papers separately.
 type: software
-title: "Conjectures in combinatorics and number theory"
+title: "Solved conjectures in combinatorics and number theory"
 authors:
   - family-names: Davis
     given-names: Cinna
+    website: "https://1337isnot1337.github.io/"
   - name: "GPT-6.2 Astra"
 repository-code: "https://github.com/1337isnot1337/solved-conjectures"
-url: "https://github.com/1337isnot1337/solved-conjectures"
+url: "https://1337isnot1337.github.io/solved-conjectures/"
+keywords:
+  - mathematical conjectures
+  - combinatorics
+  - number theory
+  - graph theory
+  - discrete geometry
+  - Lean 4
+  - formal verification
+  - mathematical proofs
+  - counterexamples
+  - reproducible research
 abstract: >-
-  A collection of unrefereed mathematical proofs and counterexamples in
-  combinatorics and number theory, with computational certificates,
-  reproducible verification code, and Lean formalizations. Formalization
-  status and remaining dependencies are documented for each result.
+  Unrefereed mathematical proofs, counterexamples, and partial results in
+  combinatorics, number theory, graph theory, and discrete geometry.
+  Includes Lean 4 formalizations and reproducible verification code.
+  Each result states its formalization scope, sources, and attribution.
