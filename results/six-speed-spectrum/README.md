@@ -90,3 +90,11 @@ If the actual plane value is at least `2/11` and the actual line value is strict
 The plane gap remains an assumption. This theorem does not classify the 78 maps or complete the six-speed spectrum.
 
 [Exact scope and evidence](../../docs/lean-status.md#conditional-two-parameter-radius-estimate).
+
+### Six-speed norm bounds with the four-speed input discharged
+
+The three new six-speed lattice norm bounds supply the proved four-speed runner theorem internally. They retain the containing-plane gap, positivity and primitivity of the natural speed vector, and loneliness at most `1/6`. The bound with constant 9075 additionally assumes a rational subspace of rank four containing the speed vector and pairwise distinct speeds. The bounds with constants 54450 and 163350 apply to every rational coordinate subspace, without a rank, containment or distinctness premise. The lattice is the actual full integer-point lattice.
+
+The new endpoints end in `_of_plane_gap`. They remove the explicit `hfour` input and retain `hplane : SixSpectrumNormGeometry.ContainingPlaneGap v`. The old endpoints keep their original signatures. These results do not prove the containing-plane gap or complete the six-speed classification.
+
+[Exact scope and evidence](../../docs/lean-status.md#six-speed-norm-bounds-with-the-four-speed-input-discharged).

@@ -1,0 +1,63 @@
+{
+  "accepted_registry_changed_by_review": false,
+  "all_frozen_source_and_control_bytes_match_published_commit": true,
+  "api_metadata_sha256": {
+    "artifacts.json": "e67b72c162bccfa53b889664bcf2886c0ed03f51bc009a0e30a097664df7c147",
+    "job.json": "19d77439fd18216f716553e46e6c5d558b90ca9d156f649b34e1636f2ba5c62c",
+    "run.json": "06d0fa5b82e85bbf6fd5327d3d010ff90052e26cc5d9955a2b306fe704377272"
+  },
+  "archive_bytes": 20058269,
+  "archive_sha256": "92d8c6ac03c7d5be48ae4fc8820f6e98275988bd2da8a051ae2eda17cafc591d",
+  "artifact_id": 14564602760,
+  "artifact_name": "lattice-norm-four-speed-bounds",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 3108,
+    "modules": 113,
+    "private_declarations": 90,
+    "raw_declarations": 3108,
+    "required": 3,
+    "tag": "passed",
+    "theorems": 2470
+  },
+  "authenticated_at_utc": "2026-11-19T19:07:44.196677+00:00",
+  "authenticator_sha256": "9ce174c2e810c1f8ae1204be8c4799fab1db9ace55dcc65c4867624a8a81f001",
+  "axiom_whitelist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "candidate_control_review_sha256": "b17417eed2ddafecb3953ac3dfb7849847c5dd0054d41d917bffd842d64c96c5",
+  "conclusion": "complete_exact_component_gate_passed_and_artifact_authenticated",
+  "exact_stock_replay_targets": 113,
+  "full_review_sha256": "a7836eb0eef96281ddd5db7afe1b04388efc45ac60f6e71f5374a1fc6648e8ea",
+  "head_sha": "14f3403c7afe204c85b376df0f02c68c86c7fea0",
+  "job_conclusion": "success",
+  "job_id": 135796982020,
+  "job_log_final_summary_matches_receipt": true,
+  "job_log_sha256": "c3dafc292114634ae52fe620cf8ca9eba09746d55715625288da8c83948a7818",
+  "job_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44591091795/job/135796982020",
+  "kind": "four-speed",
+  "project_modules": 113,
+  "receipt_sha256": "af61227a92a04443c42d8c928139f13a9bb201b3bfd5b359f464138f2d3ae5ac",
+  "registration_condition": "Regenerate and review the guarded registration against fresh main with unchanged checked source/control inputs and preserve this exact evidence. A merged-package gate remains separate.",
+  "repository": "1337isnot1337/solved-conjectures",
+  "required_endpoints_are_theorems": true,
+  "required_theorems": 3,
+  "run_conclusion": "success",
+  "run_id": 44591091795,
+  "run_status": "completed",
+  "run_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44591091795",
+  "schema": "assigned-hosted-complete-authentication-v1",
+  "scope_limit": "Applies the accepted unconditional four_speed_lonelyRunnerBound to the three existing lattice-norm theorems, removing only hfour. The containing-plane gap and all other speed/subspace premises remain explicit.",
+  "source_policy": {
+    "fresh_project_objects": true,
+    "linter_override": false,
+    "warning_as_error": true
+  },
+  "workflow": ".github/workflows/lean-lattice-norm-four-speed-exact.yml"
+}

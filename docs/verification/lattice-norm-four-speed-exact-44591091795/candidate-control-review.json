@@ -1,0 +1,39 @@
+{
+  "all_owned_audit_for_new_wrapper_claimed": false,
+  "base_dependency_sources_unchanged": 112,
+  "configuration_and_helper_files_unchanged": 10,
+  "controller_ast_unchanged_except_reviewed_names_schemas_and_inventories": true,
+  "dependency_facets_rehashed": 124,
+  "full_fresh_source_all_owned_private_audit_exact_stock_replay_and_final_hash_controls_preserved": true,
+  "no_accepted_registration_paths_in_publication": true,
+  "paths_sha256": {
+    ".github/workflows/lean-lattice-norm-four-speed-exact.yml": "ba6038295bab42df8d045c4b6b0d088cc00800df7320ca773e584fa136fc62da",
+    "docs/lattice-norm-four-speed-exact-sources.json": "ae24f23a807db7957646ac2399a52e0922c12e243325ea0d33e80fa0e2f97307",
+    "lean/Conjectures/LonelinessSixSpectrumLatticeNormFourSpeed.lean": "595e32bbdd5a29c91799097901806e09e609c1fc53115edc5a2f0a0ce791111e",
+    "scripts/verify_lattice_norm_four_speed_exact.py": "3656e6c3ef9a0693470b0f60d482862ab88ec9751dc92d096a27d0e0f379a4d6"
+  },
+  "project_modules": 113,
+  "publication_base_commit": "67c1a70ad139aeeebafcbd1ac3ba622baeaa542e",
+  "publication_plan_sha256": "04784daa577b1e35d71e068040c460fff028b83abebd186613994caf8cb17726",
+  "required_theorems": [
+    "Loneliness.SixSpectrumLatticeNorm.norm_lt_rank_four_of_plane_gap",
+    "Loneliness.SixSpectrumLatticeNorm.norm_lt_five_constant_of_plane_gap",
+    "Loneliness.SixSpectrumLatticeNorm.norm_lt_six_constant_of_plane_gap"
+  ],
+  "reviewed_at_utc": "2026-11-19T18:44:49.260186+00:00",
+  "schema": "lattice-norm-four-speed-independent-source-control-review-v1",
+  "semantic_scope": "Applies the accepted unconditional four_speed_lonelyRunnerBound to the three existing lattice-norm theorems, removing only hfour. The containing-plane gap and all other speed/subspace premises remain explicit.",
+  "separate_concurrency_group_preserves_running_rectangular_gate": true,
+  "shared_norm_renault_source_object_modules_identical": 30,
+  "status": "candidate_publication_review_passed",
+  "stock_replay_for_new_wrapper_claimed": false,
+  "strict_log_empty": true,
+  "strict_object_sha256": {
+    "/workspace/scratch/e35d3265a0e0/li-work/four-speed-wrapper/lib/lean/Conjectures/LonelinessSixSpectrumLatticeNormFourSpeed.olean": "7b04635a1bcb71d2acbd0d7eb0c60bf6050f7be7177eebad60045da6f2bbfadb"
+  },
+  "strict_receipt_sha256": "f36572a011559d4a713ff3f5e5c68c87d7edd3ca436fec111c16b6a09234be9c",
+  "strict_seconds": 10.705551829989417,
+  "strict_source_sha256": "595e32bbdd5a29c91799097901806e09e609c1fc53115edc5a2f0a0ce791111e",
+  "template_commit": "e815f14555472b873683f491bc878eb16d4eb0a4",
+  "workflow_unchanged_except_reviewed_names_and_exact_dependency_paths": true
+}

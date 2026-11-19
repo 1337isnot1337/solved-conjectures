@@ -2879,3 +2879,13 @@ The plane gap remains an assumption. This theorem does not classify the 78 maps 
 The complete 13-module hosted gate passed at `6932e0ba9c532f86fbf9e5fb23aff9e55b8e99f9` ([run and job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44593469748/job/135805428239)). It checked all fresh strict sources, all 295 owned declarations including 13 private declarations, all 6 required theorem endpoints, and one exact stock-kernel target per module. The permitted axioms were only `propext`, `Classical.choice`, and `Quot.sound`. The unchanged raw receipt has SHA-256 `b4722be2222c18d959a57252b8bc797e71a489c41d6c3c0b92647fadaf663de7`. A merged accepted-package source, audit and kernel pass remains a separate obligation.
 
 [Preserved receipt](verification/two-parameter-radius-exact-44593469748/receipt.json).
+
+## Six-speed norm bounds with the four-speed input discharged
+
+The three new six-speed lattice norm bounds supply the proved four-speed runner theorem internally. They retain the containing-plane gap, positivity and primitivity of the natural speed vector, and loneliness at most `1/6`. The bound with constant 9075 additionally assumes a rational subspace of rank four containing the speed vector and pairwise distinct speeds. The bounds with constants 54450 and 163350 apply to every rational coordinate subspace, without a rank, containment or distinctness premise. The lattice is the actual full integer-point lattice.
+
+The new endpoints end in `_of_plane_gap`. They remove the explicit `hfour` input and retain `hplane : SixSpectrumNormGeometry.ContainingPlaneGap v`. The old endpoints keep their original signatures. These results do not prove the containing-plane gap or complete the six-speed classification.
+
+The complete 113-module hosted gate passed at `14f3403c7afe204c85b376df0f02c68c86c7fea0` ([run and job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44591091795/job/135796982020)). It checked all fresh strict sources, all 3108 owned declarations including 90 private declarations, all 3 required theorem endpoints, and one exact stock-kernel target per module. The permitted axioms were only `propext`, `Classical.choice`, and `Quot.sound`. The unchanged raw receipt has SHA-256 `af61227a92a04443c42d8c928139f13a9bb201b3bfd5b359f464138f2d3ae5ac`. A merged accepted-package source, audit and kernel pass remains a separate obligation.
+
+[Preserved receipt](verification/lattice-norm-four-speed-exact-44591091795/receipt.json).

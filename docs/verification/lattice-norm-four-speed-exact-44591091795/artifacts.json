@@ -1,0 +1,23 @@
+{
+  "artifacts": [
+    {
+      "id": 14564602760,
+      "name": "lattice-norm-four-speed-bounds",
+      "size_in_bytes": 20058269,
+      "url": "https://api.github.com/repos/1337isnot1337/solved-conjectures/actions/artifacts/14564602760",
+      "archive_download_url": "https://api.github.com/repos/1337isnot1337/solved-conjectures/actions/artifacts/14564602760/zip",
+      "expired": false,
+      "created_at": "2026-11-19T19:05:18Z",
+      "expires_at": "2026-12-19T19:05:15Z",
+      "updated_at": "2026-11-19T19:05:18Z",
+      "digest": "sha256:92d8c6ac03c7d5be48ae4fc8820f6e98275988bd2da8a051ae2eda17cafc591d",
+      "workflow_run": {
+        "id": 44591091795,
+        "repository_id": 1462295748,
+        "head_repository_id": 1462295748,
+        "head_branch": "main",
+        "head_sha": "14f3403c7afe204c85b376df0f02c68c86c7fea0"
+      }
+    }
+  ]
+}

@@ -760,3 +760,4 @@ import Conjectures.LonelinessPrimeFilteringCorollaryThree
 import Conjectures.LonelinessPrimeFilteringWitness
 import Conjectures.LonelinessPrimeFilteringCases
 import Conjectures.LonelinessTwoParameterRadius
+import Conjectures.LonelinessSixSpectrumLatticeNormFourSpeed

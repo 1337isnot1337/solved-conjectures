@@ -9472,7 +9472,10 @@ run_cmd do
     `Loneliness.TwoParameterRadius.parameter_sq_lt,
     `Loneliness.TwoParameterRadius.row_sq_le_max,
     `Loneliness.TwoParameterRadius.parameter_sq_lt_max,
-    `Loneliness.TwoParameterRadius.six_speed_parameter_sq_lt_max]
+    `Loneliness.TwoParameterRadius.six_speed_parameter_sq_lt_max,
+    `Loneliness.SixSpectrumLatticeNorm.norm_lt_rank_four_of_plane_gap,
+    `Loneliness.SixSpectrumLatticeNorm.norm_lt_five_constant_of_plane_gap,
+    `Loneliness.SixSpectrumLatticeNorm.norm_lt_six_constant_of_plane_gap]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
