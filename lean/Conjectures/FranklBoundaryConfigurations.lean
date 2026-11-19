@@ -82,7 +82,7 @@ theorem local_finished {G : SimpleGraph V}
   constructor
   · refine ⟨?_, ?_, ?_, ?_⟩
     · intro v hv w hw _ hadj
-      exact h.independent hv hw hadj.ne hadj
+      exact h.independent hv hw (fun heq => hadj.ne (Subtype.ext heq)) hadj
     · intro v hv hvb
       exact (mem_iff_of_boundary_eq h.boundary_agrees hvb).mp hv
     · intro v hv hvb href
@@ -118,7 +118,6 @@ theorem local_of_finished {G : SimpleGraph V} {inside boundary reference : Set V
     · rintro ⟨⟨w, hw, heq⟩, hvb⟩
       refine ⟨?_, hvb⟩
       have hwr : w.1 ∈ reference := h.1.selected_allowed hw (by
-        change w.1 ∈ boundary
         rw [heq]
         exact hvb)
       exact heq ▸ hwr

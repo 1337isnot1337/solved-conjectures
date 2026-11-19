@@ -122,14 +122,18 @@ theorem common_point_unique_of_no_short_cycle (gen : ι → Set α)
     (x y : α) (hxi : x ∈ gen i) (hxj : x ∈ gen j)
     (hyi : y ∈ gen i) (hyj : y ∈ gen j) : x = y := by
   let G := incidenceGraph gen
-  let p : G.Walk (.inr i) (.inr j) := .cons hxi (.cons hxj .nil)
-  let q : G.Walk (.inr i) (.inr j) := .cons hyi (.cons hyj .nil)
+  have hxi' : G.Adj (.inr i) (.inl x) := hxi
+  have hxj' : G.Adj (.inl x) (.inr j) := hxj
+  have hyi' : G.Adj (.inr i) (.inl y) := hyi
+  have hyj' : G.Adj (.inl y) (.inr j) := hyj
+  let p : G.Walk (.inr i) (.inr j) := .cons hxi' (.cons hxj' .nil)
+  let q : G.Walk (.inr i) (.inr j) := .cons hyi' (.cons hyj' .nil)
   have hp : p.IsPath := by
-    apply (Walk.cons_isPath_iff hxi _).mpr
-    exact ⟨Walk.IsPath.of_adj hxj, by simp [hij]⟩
+    apply (Walk.cons_isPath_iff hxi' _).mpr
+    exact ⟨Walk.IsPath.of_adj hxj', by simp [hij]⟩
   have hq : q.IsPath := by
-    apply (Walk.cons_isPath_iff hyi _).mpr
-    exact ⟨Walk.IsPath.of_adj hyj, by simp [hij]⟩
+    apply (Walk.cons_isPath_iff hyi' _).mpr
+    exact ⟨Walk.IsPath.of_adj hyj', by simp [hij]⟩
   have hpq := short_paths_unique hg hp hq (by change 2 + 2 < 16; decide)
   have hxy : (Sum.inl x : α ⊕ ι) = Sum.inl y := congrArg Walk.snd hpq
   exact Sum.inl.inj hxy
