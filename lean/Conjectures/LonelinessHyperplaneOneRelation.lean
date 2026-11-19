@@ -12,6 +12,7 @@ noncomputable section
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
+omit [DecidableEq ι] in
 theorem integerPairing_eq_single_term
     (m z : ι → ℤ) (p : ι) (hz : ∀ i, i ≠ p → z i = 0) :
     integerPairing m z = m p * z p := by
@@ -95,6 +96,7 @@ theorem positiveBoxAdmissible_card_upper
     exact Finset.mem_filter.mpr ⟨Finset.mem_univ _, (Finset.mem_filter.mp hv).2.1⟩
   exact (Finset.card_le_card hsub).trans (positiveBoxRelation_card_le m p hp N)
 
+omit [Fintype ι] [DecidableEq ι] in
 /-- Coordinatewise division by a positive common divisor lands in the
 box with the integer-divided side length. -/
 theorem exists_divided_positiveBoxCoordinates

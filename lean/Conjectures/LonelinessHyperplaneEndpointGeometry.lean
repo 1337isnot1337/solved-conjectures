@@ -23,8 +23,9 @@ theorem distance_eq_abs_of_abs_le_half (x : ℝ) (hx : |x| ≤ 1 / 2) :
   have h₂ := distance_half_sub_of_abs_le_half x hx
   linarith
 
-variable {ι : Type*} [Fintype ι] [DecidableEq ι]
+variable {ι : Type*} [Fintype ι]
 
+omit [Fintype ι] in
 theorem unitCircle_center_minus_sign (m : ι → ℤ) (i : ι) (δ : ℝ) :
     ((1 / 2 - δ * signChoice m i : ℝ) : UnitAddCircle) =
       (((1 / 2 - δ) * signChoice m i : ℝ) : UnitAddCircle) := by
@@ -36,6 +37,7 @@ theorem unitCircle_center_minus_sign (m : ι → ℤ) (i : ι) (δ : ℝ) :
     simpa only [Int.cast_one] using
       unitCircle_add_integer ((1 / 2 - δ) * (-1)) 1
 
+omit [Fintype ι] in
 theorem unitCircle_center_plus_sign (m : ι → ℤ) (i : ι) (δ : ℝ) :
     ((1 / 2 + δ * signChoice m i : ℝ) : UnitAddCircle) =
       -(((1 / 2 - δ) * signChoice m i : ℝ) : UnitAddCircle) := by
@@ -117,6 +119,7 @@ theorem unshifted_endpoint_iff_sign_point
 
 variable {Q : ℕ} [NeZero Q]
 
+omit [Fintype ι] [Nonempty ι] in
 theorem velocity_hits_unit_multiple_iff
     (v : ι → ℤ) (b : ι → ZMod Q) (u : (ZMod Q)ˣ) :
     (∃ t : UnitAddCircle,
@@ -145,6 +148,7 @@ theorem velocity_hits_unit_multiple_iff
       _ = ZMod.toAddCircle ((z : ZMod Q) * b i) := by rw [← map_zsmul, zsmul_eq_mul]
       _ = ZMod.toAddCircle ((u : ZMod Q) * b i) := by rw [hz]
 
+omit [Nonempty ι] in
 theorem unshiftedSignPoint_unit_multiple
     (m : ι → ℤ) (hm : PrimitiveNormal m) [NeZero (endpointModulus m)] :
     ∃ u : (ZMod (endpointModulus m))ˣ, ∀ i,
@@ -168,7 +172,7 @@ theorem unshiftedSignPoint_unit_multiple
     congr 1
     ring
   · have hA := normalSize_pos m hm
-    letI : NeZero (normalSize m) := ⟨hA.ne'⟩
+    let : NeZero (normalSize m) := ⟨hA.ne'⟩
     have hQ : Q = normalSize m := hmod.trans (by
       simp only [endpointModulus, ite_eq_right heven])
     clear hmod
@@ -190,7 +194,8 @@ theorem unshiftedSignPoint_unit_multiple
         (Nat.not_even_iff_odd.mp heven)), normalMass_eq_normalSize]
       have hkR : (normalSize m : ℝ) = 2 * (k : ℝ) + 1 := by exact_mod_cast hk
       have hAR : (normalSize m : ℝ) ≠ 0 := by exact_mod_cast hA.ne'
-      field_simp [hAR] <;> nlinarith [hkR]
+      field_simp [hAR]
+      nlinarith [hkR]
     refine ⟨u, ?_⟩
     intro i
     change ((predictedValue m 0 * signChoice m i : ℝ) : UnitAddCircle) = _

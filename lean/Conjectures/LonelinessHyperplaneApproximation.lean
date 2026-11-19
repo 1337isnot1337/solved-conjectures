@@ -32,6 +32,7 @@ theorem exists_unitCircle_representative (t : UnitAddCircle) :
   have h := (AddCircle.equivIco (1 : ℝ) 0 t).2
   exact ⟨h.1, by simpa only [zero_add] using h.2.le⟩
 
+omit [Fintype ι] in
 theorem coe_real_velocity (v : ι → ℤ) (r : ℝ) (i : ι) :
     ((r * (v i : ℝ) : ℝ) : UnitAddCircle) = v i • (r : UnitAddCircle) := by
   rw [mul_comm, ← zsmul_eq_mul, AddCircle.coe_zsmul]
@@ -46,6 +47,7 @@ theorem shiftedVelocityValue_nonneg (v : ι → ℤ) (s : ι → ℝ) :
   (point_nonneg (s + (0 : ℝ) • integerVector v)).trans
     (le_shiftedVelocityValue v s (by norm_num))
 
+omit [Nonempty ι] in
 theorem predictedValue_le_half (m : ι → ℤ) (s : ι → ℝ) :
     predictedValue m s ≤ 1 / 2 := by
   have hA : 0 ≤ normalMass m := Finset.sum_nonneg (fun i _ => abs_nonneg (m i : ℝ))
@@ -73,6 +75,7 @@ theorem uniformShiftGap_nonneg (m : ι → ℤ) (hm : PrimitiveNormal m)
     (v : ι → ℤ) (hv : integerPairing m v = 0) : 0 ≤ uniformShiftGap m v :=
   (shiftGap_nonneg m hm v hv 0).trans (shiftGap_le_uniformShiftGap m v 0)
 
+omit [Nonempty ι] in
 /-- Approximate a real kernel point by a real time in `[0,1]`, modulo
 integer translations in every coordinate. -/
 theorem exists_real_time_close_of_torus_dense
@@ -135,7 +138,7 @@ theorem exists_finite_frequency_uniform_gap
     (m : ι → ℤ) (hm : PrimitiveNormal m) (ε : ℝ) (hε : 0 < ε) :
     ∃ B : Finset (ι → ℤ),
       (∀ n ∈ B, ¬ ∃ c : ℤ, n = c • m) ∧
-      ∀ (v : ι → ℤ) (hv : integerPairing m v = 0),
+      ∀ (v : ι → ℤ) (_hv : integerPairing m v = 0),
         (∀ n ∈ B, integerPairing n v ≠ 0) → uniformShiftGap m v < ε := by
   obtain ⟨B, hB, hdense⟩ :=
     exists_finite_frequency_dense_velocity m hm (ε / 2) (by linarith)

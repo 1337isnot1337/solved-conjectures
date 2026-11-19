@@ -238,6 +238,13 @@ def SurvivorValid (p : Row × Row) : Prop :=
   BoundedOdd p.1 ∧ BoundedOdd p.2 ∧ weightedSum p.1 = 1 ∧ weightedSum p.2 = 1 ∧
     ∀ k, signature133 p.1 k + signature133 p.2 k = target133 k
 
+attribute [local instance 2000] Fintype.decidableForallFintype
+attribute [local instance 2000] Fintype.decidableExistsFintype
+
+instance survivorValidDecidable (p : Row × Row) : Decidable (SurvivorValid p) := by
+  unfold SurvivorValid BoundedOdd
+  infer_instance
+
 def survivorCheck (p : Row × Row) : Bool := decide (SurvivorValid p)
 
 def quotientIndices0000 : List ℕ := []

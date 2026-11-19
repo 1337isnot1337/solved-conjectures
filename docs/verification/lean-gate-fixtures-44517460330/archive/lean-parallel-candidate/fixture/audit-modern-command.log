@@ -1,0 +1,5 @@
+PARALLEL-AUDIT-ENDPOINT ParallelFixture.Left.value
+PARALLEL-AUDIT-ENDPOINT ParallelFixture.base
+PARALLEL-AUDIT-ENDPOINT ParallelFixture.Top.both
+PARALLEL-AUDIT-ENDPOINT ParallelFixture.Right.value
+PARALLEL-AUDIT PASS: 7 owned declarations; 6 theorems; 2 private proofs; 4 endpoints

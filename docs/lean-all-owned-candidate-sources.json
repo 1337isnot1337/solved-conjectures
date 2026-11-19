@@ -1,6 +1,6 @@
 {
   "schema": "lean-all-owned-audit-candidate-v1",
-  "status": "candidate-awaiting-hosted-fixture",
+  "status": "candidate-awaiting-legacy-mathlib-regression",
   "files": [
     {
       "path": "scripts/audit_lean_all_owned.py",
@@ -9,18 +9,18 @@
     },
     {
       "path": "scripts/test_lean_all_owned.py",
-      "blob_sha": "e116ebc54b4d175af9acf8ce81b3fff167634d67",
-      "sha256": "416cd2d748db0039ef509ff1c43e348e3501efffa1e8457160de1f82280916b7"
+      "blob_sha": "e6db1d5345748583e15b598d8695273105247d60",
+      "sha256": "920788461ebd17dd3bd044656985be47699845efe4970970b387b35f010b0bec"
     },
     {
       "path": "scripts/verify_lean_all_owned_candidate.py",
-      "blob_sha": "24bcf425e55dbfb4ab75994e07a9550148885530",
-      "sha256": "05a6fc7e8206dd43861d19b6bba97f0fc1af534e5b075968bbcb321eae20ce9a"
+      "blob_sha": "375ab886d839c4b95b44e24f330232d7c2daf386",
+      "sha256": "ec7782d9d24a71290137f32bb4672f151ffb0916eba7b6326d62241a37937bae"
     },
     {
       "path": ".github/workflows/lean-all-owned-candidate.yml",
-      "blob_sha": "18b2d1366faf52f4c535e7fb8a16a2276cfdd0f6",
-      "sha256": "46770e265a312060ee31e88ccf633b6a0b5bd2c2555df329391def17ecac1285"
+      "blob_sha": "5dd8fd0197a0ffb6a24085e067c18c032e5de2d1",
+      "sha256": "fd9879c6ac29587fb776cb873343f0170aa0a79071e498a88bef447759334654"
     }
   ],
   "dependency_files": [
@@ -66,7 +66,7 @@
     }
   ],
   "scope": {
-    "default": "Fresh mixed modern/legacy seven-module fixture only, with all raw serialized declarations and every ConstantInfo audited, including an unused private noncomputable definition.",
+    "default": "Fresh seven-module modern/legacy fixture. The hosted regression uses a real legacy import of Mathlib.Data.Nat.Basic and the explicitly recorded isolated compatibility opt-in.",
     "accepted": "Separate explicit --accepted invocation derives the exact frozen registered closure and required declarations from the current accepted roots, verify_lean.sh and ProofAudit.lean; no fixed module-count limit.",
     "axioms": [
       "propext",
@@ -78,9 +78,11 @@
     "ownership": "Union of exact project-module ownership, raw serialized project names, and the historical legacy namespace-prefix fallback.",
     "kernel": "One unchanged pinned stock checker on the exact complete materialized closure, including both namespace roots, with exact replay-set equality and unchanged fresh source/object/checker/compiler hashes.",
     "negative_fixture": "A separate audit removes Classical.choice only from its test whitelist and must reject the unused private definition that uses it; the production whitelist is unchanged.",
-    "no_reuse": "Every fixture or accepted run starts from fresh project source builds; no old project objects or proof receipts are reused."
+    "no_reuse": "Every fixture or accepted run starts from fresh project source builds; no old project objects or proof receipts are reused.",
+    "legacy_configuration": "Optional --allow-legacy-module-imports adds only top-level allowNonModules=true in the isolated copied Lake config, with original and derived UTF-8 bytes and SHA256 recorded. It retains Lake --wfail and leaves the public configuration and all mathematical source bytes unchanged.",
+    "legacy_layout_validator": "The isolated parser copy admits only the added boolean-true allowNonModules key. Every other strict layout check is unchanged; original/derived parser UTF-8 and SHA256 are recorded. Public plan_accepted_lean.py stays unchanged. The copied source and replay processes use this same frozen derived parser."
   },
-  "protocol_tests": 12,
+  "protocol_tests": 15,
   "initial_scheduler_evidence": {
     "commit": "505bc263f929f5924286b2dd0e95b6ef86efb020",
     "run_id": 44517460330,
@@ -105,13 +107,14 @@
   ],
   "commands": {
     "protocol": "python3 scripts/test_lean_all_owned.py",
-    "fixture": "python3 scripts/verify_lean_all_owned_candidate.py --output-dir .candidate-artifacts/lean-all-owned-candidate --jobs 2 --workers 1 --memory-limit-mib 12288",
+    "fixture": "python3 scripts/verify_lean_all_owned_candidate.py --output-dir .candidate-artifacts/lean-all-owned-candidate --allow-legacy-module-imports --jobs 2 --workers 1 --memory-limit-mib 12288",
     "accepted": "The same command with --accepted; launch only after coordination with the existing complete accepted-package verification run."
   },
   "limitations": [
-    "The12 protocol tests and all seven fixture sources passed in run44518819881. The first audit attempt rejected a reserved Lean binder spelling; this revision changes that binder and awaits fresh audit/kernel validation.",
-    "No complete accepted-closure all-owned verification is claimed by the initial fixture publication.",
-    "Stock kernel thread/RSS guards remain strict; worker count must be selected for the measured closure."
+    "The original all-owned fixture passed. The first derived-configuration attempt passed14 protocol tests then stopped at the unchanged layout whitelist before source work. This revision derives a narrowly scoped validator and awaits a fresh15-test source/audit/kernel pass.",
+    "No complete accepted-closure all-owned verification is claimed by a small fixture pass.",
+    "The derived isolated Lake configuration is recorded explicitly; it must not be described as an unchanged-configuration full replay.",
+    "Stock kernel thread/RSS guards and fresh exact source/object closure checks are unchanged."
   ],
   "prior_fixture_failure": {
     "run_id": 44518819881,
@@ -122,5 +125,30 @@
     "phase": "audit elaboration",
     "error": "Lean reserves prefix as a keyword; use the ordinary binder p.",
     "receipt_sha256": "ab759547331c011b1dba211fcd6a895c3db89d2ec93d94849ce69f0c91cded3d"
+  },
+  "prior_passed_fixture": {
+    "run_id": 44520135112,
+    "job_id": 135546310927,
+    "commit": "743e0b324bbab2ce57970d8ab034d1a81aab40e0",
+    "receipt_sha256": "a87c49005c52f3c8b4c0b46d31fce79b5f7b01c290757886d84c684744f47085",
+    "status": "passed",
+    "scope": "Original seven-module fixture, all-owned/raw-private audit, negative private definition check and exact stock replay. The added legacy-Mathlib compatibility regression requires its own fresh pass."
+  },
+  "prior_full_candidate_failure": {
+    "run_id": 44521485169,
+    "job_id": 135550931615,
+    "commit": "b97465edd8ae631cd117f65a31db54f7ce73ef77",
+    "receipt_sha256": "2d748ec26bba59bfdc9755375deae51780ebb5f8732b1fe6eaaa1076fce48cf5",
+    "phase": "source",
+    "cause": "Lake --wfail rejected its legacy-to-modern Mathlib import advisory on Conjectures.Denominator. No theorem/type error was reported; audit and kernel replay did not run.",
+    "source_log": "docs/verification/lean-gate-fixtures-44521485169/Denominator-source.log"
+  },
+  "prior_legacy_layout_failure": {
+    "run_id": 44523219000,
+    "job_id": 135556942262,
+    "commit": "1ed8b54ec15b5028f75e22f0251f81f246a117dc",
+    "phase": "copied-layout preflight",
+    "cause": "The unchanged public layout validator rejects extra TOML keys, including the documented compatibility opt-in.",
+    "source_started": false
   }
 }

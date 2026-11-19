@@ -104,9 +104,9 @@ theorem collisionTranslationBoundary_card_le
           apply Finset.sum_le_sum
           intro j _
           by_cases hij : i = j
-          · simp only [if_pos hij, Finset.card_empty]
+          · simp only [ite_eq_left hij, Finset.card_empty]
             exact Nat.zero_le _
-          · rw [if_neg hij]
+          · rw [ite_eq_right hij]
             exact positiveBoxAffineRelation_card_le m hm (differenceFrequency i j)
               (differenceFrequency_not_multiple m hreal i j hij) _ N
         _ = _ := by simp
@@ -157,7 +157,7 @@ theorem translated_coordinates_injective
   apply Finset.mem_biUnion.mpr
   refine ⟨i, Finset.mem_univ i, Finset.mem_biUnion.mpr ?_⟩
   refine ⟨j, Finset.mem_univ j, ?_⟩
-  rw [if_neg hne]
+  rw [ite_eq_right hne]
   apply Finset.mem_filter.mpr
   refine ⟨Finset.mem_univ v, hv, ?_⟩
   rw [integerPairing_differenceFrequency]

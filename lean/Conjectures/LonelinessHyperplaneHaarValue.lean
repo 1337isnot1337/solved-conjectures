@@ -20,7 +20,8 @@ private theorem uniform_interval_tail (A : ℝ) (hA : 0 < A) (u : ℝ) :
   have htwo : 0 < 2 * A := by positivity
   have hcal : 2 * A * (1 / 2 - a) = 1 := by
     dsimp only [a]
-    field_simp [ne_of_gt hA] <;> ring
+    field_simp [ne_of_gt hA]
+    ring
   have hinter : Set.Ici u ∩ Set.Icc a (1 / 2) = Set.Icc (max a u) (1 / 2) := by
     ext x
     constructor
@@ -61,7 +62,7 @@ theorem haar_predictedValue_distribution (m : ι → ℤ) (hm : PrimitiveNormal 
     Measure.map (torusPredictedValue m) (volume : Measure (ι → UnitAddCircle)) =
       ENNReal.ofReal (2 * normalMass m) • (volume : Measure ℝ).restrict
         (Set.Icc (1 / 2 - 1 / (2 * normalMass m)) (1 / 2)) := by
-  letI : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
+  let : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
     ⟨UnitAddCircle.measure_univ⟩
   apply Measure.ext_of_Ici
   intro u

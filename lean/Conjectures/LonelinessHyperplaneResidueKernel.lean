@@ -43,7 +43,7 @@ for every positive modulus, including composite moduli. -/
 theorem residue_kernel_card (m : ι → ℤ) (hm : PrimitiveNormal m)
     (Q : ℕ) (hQ : 0 < Q) :
     Nat.card (residueNormalHom m Q).ker = Q ^ (Fintype.card ι - 1) := by
-  letI : NeZero Q := ⟨hQ.ne'⟩
+  let : NeZero Q := ⟨hQ.ne'⟩
   have hcard : Nat.card (residueNormalHom m Q).ker * Q = Q ^ Fintype.card ι := by
     simpa only [Nat.card_fun, Nat.card_zmod, Nat.card_eq_fintype_card (α := ι)] using
       AddSubgroup.card_ker_mul_card_of_surjective (residueNormalHom_surjective m hm Q)
@@ -61,7 +61,7 @@ theorem exists_integer_kernel_lift
     (m : ι → ℤ) (hm : PrimitiveNormal m) (Q : ℕ) (hQ : 0 < Q)
     (r : ι → ZMod Q) (hr : residueNormalHom m Q r = 0) :
     ∃ z : ι → ℤ, integerPairing m z = 0 ∧ ∀ i, (z i : ZMod Q) = r i := by
-  letI : NeZero Q := ⟨hQ.ne'⟩
+  let : NeZero Q := ⟨hQ.ne'⟩
   obtain ⟨e, he⟩ := primitive_bezout m hm
   change integerPairing m e = 1 at he
   let x : ι → ℤ := fun i => ((r i).val : ℤ)
@@ -80,7 +80,7 @@ theorem exists_integer_kernel_lift
   · intro i
     calc
       (z i : ZMod Q) = (x i : ZMod Q) := by
-        simp [z, Pi.smul_apply, zsmul_eq_mul]
+        simp [z, zsmul_eq_mul]
       _ = r i := hx i
 
 theorem exists_integer_kernel_residue_translation

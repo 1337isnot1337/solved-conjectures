@@ -41,7 +41,7 @@ theorem integral_character_velocity_eq
     (∫ t : UnitAddCircle, UnitAddTorus.mFourier n (fun i => v i • t)) =
       ∫ x : H, UnitAddTorus.mFourier n (x : UnitAddTorus ι) ∂haar H := by
   classical
-  letI : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
+  let : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
     ⟨UnitAddCircle.measure_univ⟩
   by_cases htrivial : TrivialFrequency H n
   · rw [integral_subgroup_mFourier_eq_one H (haar H) n htrivial]
@@ -78,7 +78,7 @@ theorem integral_polynomial_velocity_eq
     (∫ t : UnitAddCircle,
       finiteCharacterPolynomial S a (s + fun i => v i • t)) =
       ∫ x : H, finiteCharacterPolynomial S a (s + (x : UnitAddTorus ι)) ∂haar H := by
-  letI : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
+  let : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
     ⟨UnitAddCircle.measure_univ⟩
   have hV : ∀ n ∈ S, Integrable (fun t : UnitAddCircle =>
       a n * UnitAddTorus.mFourier n (s + fun i => v i • t)) volume := by
@@ -108,7 +108,7 @@ theorem exists_finite_frequency_average_control
           ‖(∫ t : UnitAddCircle, f (s + velocity H v hv t)) -
             ∫ x : H, f x ∂haar H‖ < ε := by
   classical
-  letI : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
+  let : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
     ⟨UnitAddCircle.measure_univ⟩
   obtain ⟨S, a, happ⟩ := exists_finite_character_approx_on
     (H : Set (UnitAddTorus ι)) (isCompact_iff_compactSpace.mpr inferInstance)

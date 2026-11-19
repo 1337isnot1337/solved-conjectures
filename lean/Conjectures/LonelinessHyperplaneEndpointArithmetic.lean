@@ -18,6 +18,7 @@ variable {ι : Type*} [Fintype ι] {Q : ℕ} [NeZero Q]
 def PrimitiveResidue (b : ι → ZMod Q) : Prop :=
   ∃ c : ι → ZMod Q, ∑ i, c i * b i = 1
 
+omit [NeZero Q] in
 theorem primitiveResidue_of_unit_coordinate
     (b : ι → ZMod Q) (i : ι) (hi : IsUnit (b i)) : PrimitiveResidue b := by
   classical
@@ -103,6 +104,7 @@ theorem primitive_velocity_hits_unit_line_iff
           (u : ZMod Q) * ((↑(u⁻¹) : ZMod Q) * b i) := by ring
       _ = b i := Units.mul_inv_cancel_left u (b i)
 
+omit [NeZero Q] in
 theorem unit_residue_line_injective
     (b : ι → ZMod Q) (hb : PrimitiveResidue b) :
     Function.Injective (fun u : (ZMod Q)ˣ => fun i => (u : ZMod Q) * b i) := by

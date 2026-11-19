@@ -45,7 +45,7 @@ theorem endpointFrequency_tendsto
         (((endpointModulus m : ℕ) : ℝ) ^ (Fintype.card ι - 1) *
           ∏ p ∈ (endpointModulus m).primeFactors,
             (1 - ((p : ℝ) ^ (Fintype.card ι - 1))⁻¹)))) := by
-  letI : NeZero (endpointModulus m) := ⟨(endpointModulus_pos m hm).ne'⟩
+  let : NeZero (endpointModulus m) := ⟨(endpointModulus_pos m hm).ne'⟩
   let i := Classical.arbitrary ι
   have ht := residueHitFrequency_tendsto m hm hreal hdim
     (canonicalResidue m (endpointModulus m)) i (canonicalResidue_isUnit m _ i)

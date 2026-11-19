@@ -1,0 +1,35 @@
+name: Preserve original Lean gate fixture evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/preserve_lean_gate_receipts.py'
+      - 'scripts/test_preserve_lean_gate_receipts.py'
+      - '.github/workflows/lean-gate-receipts.yml'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: lean-fixed-gate-receipts
+  cancel-in-progress: false
+
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate archive boundaries
+        run: |
+          python3 -m py_compile scripts/preserve_lean_gate_receipts.py
+          python3 scripts/test_preserve_lean_gate_receipts.py
+      - name: Preserve fixed original receipts and print the fixed source failure
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/preserve_lean_gate_receipts.py

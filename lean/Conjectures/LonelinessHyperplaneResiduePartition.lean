@@ -101,7 +101,7 @@ theorem unitCircle_nat_zsmul_surjective (a : ℕ) (ha : 0 < a) :
   congr 1
   rw [zsmul_eq_mul, Int.cast_natCast]
   have haR : (a : ℝ) ≠ 0 := by exact_mod_cast ha.ne'
-  field_simp [haR] <;> ring
+  field_simp [haR]
 
 theorem velocity_hits_of_unitResidueLine
     (v : ι → ℤ) (b : ι → ZMod Q)

@@ -15,16 +15,16 @@ def BoundedOdd (r : Row) : Prop :=
 
 theorem mem_digits_iff (x : ℤ) :
     x ∈ digits ↔ -9 ≤ x ∧ x ≤ 9 ∧ x % 2 = 1 := by
-  simp only [digits, List.mem_cons, List.mem_singleton]
+  simp only [digits, List.mem_cons, List.not_mem_nil, or_false]
   omega
 
 theorem mem_smallDigits_iff (x : ℤ) :
     x ∈ smallDigits ↔ -3 ≤ x ∧ x ≤ 3 ∧ x % 2 = 1 := by
-  simp only [smallDigits, List.mem_cons, List.mem_singleton]
+  simp only [smallDigits, List.mem_cons, List.not_mem_nil, or_false]
   omega
 
 theorem digit_square_lower {x : ℤ} (hx : x ∈ digits) : 1 ≤ x ^ 2 := by
-  simp only [digits, List.mem_cons, List.mem_singleton] at hx
+  simp only [digits, List.mem_cons, List.not_mem_nil, or_false] at hx
   rcases hx with rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl <;>
     norm_num
 
@@ -66,7 +66,7 @@ theorem signatures133_of_correlations (a b : Row)
   intro k
   rw [← correlation133_eq_signature a k, ← correlation133_eq_signature b k]
   rw [h]
-  fin_cases k <;> norm_num [shifts133, target133]
+  fin_cases k <;> norm_num [shifts133, target133] <;> decide
 
 theorem feasible_of_pair (a b : Row)
     (ha : BoundedOdd a) (hb : BoundedOdd b)

@@ -50,10 +50,10 @@ theorem eq_signChoice_of_pairing_eq_normalMass_mul
   change y i = δ * signChoice m i
   by_cases hsign : 0 ≤ (m i : ℝ)
   · rw [abs_of_nonneg hsign] at heq
-    simpa only [signChoice, if_pos hsign, mul_one] using mul_left_cancel₀ hne heq
+    simpa only [signChoice, ite_eq_left hsign, mul_one] using mul_left_cancel₀ hne heq
   · rw [abs_of_neg (lt_of_not_ge hsign)] at heq
     have hyi : y i = -δ := mul_left_cancel₀ hne (by nlinarith [heq])
-    simpa only [signChoice, if_neg hsign, mul_neg_one] using hyi
+    simpa only [signChoice, ite_eq_right hsign, mul_neg_one] using hyi
 
 theorem eq_or_neg_signChoice_of_abs_pairing_eq
     (m : ι → ℤ) (hsupport : ∀ i, m i ≠ 0)
@@ -123,7 +123,7 @@ theorem full_support_maximizer
       CriticalFamilies.distance_add_int (pairing m (centerMinus s)) (-integerPairing m z)
   have hδ : normalMass m * δ = distance (pairing m (centerMinus s)) := by
     dsimp only [δ]
-    field_simp [hA.ne'] <;> ring
+    field_simp [hA.ne']
   have habs : |pairing m y| = normalMass m * δ := by
     apply le_antisymm (abs_pairing_le_normalMass_mul m y δ hy)
     calc
@@ -148,7 +148,9 @@ theorem full_support_maximizer
     have hi := congrFun hn i
     dsimp only [Pi.smul_apply, smul_eq_mul] at hi
     rw [hmod i, hi]
-    congr 1 <;> dsimp only [δ] <;> ring
+    congr 1
+    dsimp only [δ]
+    ring
 
 theorem full_support_endpoint_velocity_points
     (m : ι → ℤ) (hm : PrimitiveNormal m) (hsupport : ∀ i, m i ≠ 0)

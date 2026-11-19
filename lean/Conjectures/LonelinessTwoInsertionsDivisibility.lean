@@ -86,7 +86,7 @@ theorem failed_endpoints_large_second (p b c : ℕ) (hp : 3 ≤ p)
   · apply hpair c hc
     tauto
 
-theorem divisor_eq_below_twice (d b : ℕ) (hd : 0 < d) (hb : 0 < b)
+theorem divisor_eq_below_twice (d b : ℕ) (_hd : 0 < d) (hb : 0 < b)
     (hsmall : b < 2*d) (hdiv : d ∣ b) : b = d := by
   obtain ⟨k, rfl⟩ := hdiv
   have hkpos : 0 < k := by
@@ -114,7 +114,7 @@ theorem large_first_measure_bound (p b c : ℕ) (hp : 3 ≤ p) (hb : 0 < b)
   have hsmall : 4/(p+2 : ℝ)+2*(p : ℝ)/b < 1 := by
     have heq : 4/(p+2 : ℝ)+2*(p : ℝ)/b =
         (4*(b : ℝ)+2*(p : ℝ)*(p+2))/((p+2 : ℝ)*(b : ℝ)) := by
-      field_simp [hbR.ne', hq.ne'] <;> ring
+      field_simp [hbR.ne', hq.ne']
     rw [heq]
     apply (div_lt_iff₀ (mul_pos hq hbR)).mpr
     nlinarith

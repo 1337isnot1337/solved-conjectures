@@ -41,7 +41,7 @@ theorem AccelerationGap.sandwich {r s m : ℕ} (h : AccelerationGap r s m)
     by_contra hn
     have he : s = 1 := by omega
     have hg := h 1 (by omega) (by nlinarith)
-    simpa using hg
+    simp at hg
   have hsr : s < r := by
     by_contra hn
     obtain ⟨k, hklo, hkhi, hkcop⟩ := exists_coprime_in_block r s hr

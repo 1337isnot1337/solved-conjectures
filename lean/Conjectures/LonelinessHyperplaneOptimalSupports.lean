@@ -12,7 +12,7 @@ open scoped BigOperators
 
 noncomputable section
 
-variable {ι V : Type*} [Fintype ι] [DecidableEq ι]
+variable {ι V : Type*} [Fintype ι]
 
 def coefficientSupport (a : ι → ℚ) : Finset ι := Finset.univ.filter (fun i => a i ≠ 0)
 
@@ -82,7 +82,7 @@ theorem optimal_support_independent (g : ι → V) (c : ι → ℚ)
       · have hcostneg : cost c (-z) = -cost c z := by
           simp only [cost, Pi.neg_apply, mul_neg, Finset.sum_neg_distrib]
         rw [hcostneg]
-        linarith
+        exact neg_neg_of_pos (lt_of_le_of_ne (le_of_not_gt hneg) (Ne.symm hzcost))
   obtain ⟨d, hdsupp, hdker, hdcost⟩ := hdir
   have hd : ∀ i, a i = 0 → 0 ≤ d i := by
     intro i hi
@@ -103,6 +103,7 @@ Genericity makes that union independent, forcing full coefficient
 uniqueness rather than merely uniqueness of the represented point. -/
 theorem optimal_unique (g : ι → V) (c : ι → ℚ) (hc : GenericCost g c)
     (x : V) (a b : ι → ℚ) (ha : Optimal g c x a) (hb : Optimal g c x b) : a = b := by
+  classical
   have hcost : cost c a = cost c b := le_antisymm (ha.2 b hb.1) (hb.2 a ha.1)
   let mid : ι → ℚ := (1 / 2 : ℚ) • (a + b)
   have hmfeas : Feasible g x mid := by
@@ -167,7 +168,8 @@ def AdmissibleSupport (g : ι → V) (c : ι → ℚ) (S : Finset ι) : Prop :=
 def supportedCone (g : ι → V) (S : Finset ι) : Set V :=
   {x | ∃ a, Feasible g x a ∧ Supported S a}
 
-theorem supportedCone_inter (g : ι → V) (c : ι → ℚ) (hc : GenericCost g c)
+theorem supportedCone_inter [DecidableEq ι]
+    (g : ι → V) (c : ι → ℚ) (hc : GenericCost g c)
     (S T : Finset ι) (hS : AdmissibleSupport g c S) (hT : AdmissibleSupport g c T) :
     supportedCone g S ∩ supportedCone g T = supportedCone g (S ∩ T) := by
   classical

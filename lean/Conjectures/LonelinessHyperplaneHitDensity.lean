@@ -19,11 +19,13 @@ variable {Q : ℕ} [NeZero Q]
 def positiveBoxNatCoordinates {N : ℕ} (v : ι → Fin N) : ι → ℕ :=
   fun i => (v i : ℕ) + 1
 
+omit [Fintype ι] [DecidableEq ι] [Nonempty ι] in
 theorem positiveBoxCoordinates_eq_natCast {N : ℕ} (v : ι → Fin N) (i : ι) :
     positiveBoxCoordinates v i = (positiveBoxNatCoordinates v i : ℤ) := by
   simp only [positiveBoxCoordinates, positiveBoxEntry, positiveBoxNatCoordinates,
     Nat.cast_add, Nat.cast_one]
 
+omit [DecidableEq ι] in
 theorem scaledUnitResidueLine_box_scale_le
     (b : ι → ZMod Q) (g N : ℕ) (hg : 0 < g)
     (v : ι → Fin N)
@@ -38,7 +40,6 @@ theorem scaledUnitResidueLine_box_scale_le
   have hdiv : g ∣ positiveBoxNatCoordinates v i := ⟨r i, hr i⟩
   have hle := Nat.le_of_dvd (Nat.succ_pos (v i : ℕ)) hdiv
   have hvN := (v i).isLt
-  dsimp only [positiveBoxNatCoordinates] at hle
   omega
 
 def smoothScalesInBox (Q N : ℕ) : Finset (Nat.factoredNumbers Q.primeFactors) :=
@@ -123,7 +124,7 @@ theorem residueHitFrequency_eq_smoothResidueFrequency
         not_lt, Nat.succ_le_iff] using hg
     have hempty : positiveBoxResidueSet m ((g : ℕ) * Q)
         (scaledUnitResidueLine (g : ℕ) b) N = ∅ := by
-      apply Finset.eq_empty_iff_forall_not_mem.mpr
+      apply Finset.eq_empty_iff_forall_notMem.mpr
       intro v hv
       have hle := scaledUnitResidueLine_box_scale_le b (g : ℕ) N
         (Nat.pos_of_ne_zero g.property.1) v (Finset.mem_filter.mp hv).2

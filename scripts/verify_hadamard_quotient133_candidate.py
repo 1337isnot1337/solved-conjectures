@@ -70,9 +70,34 @@ TASKS = {
         'HadamardQuotient133.correlation133_orbit',
         'HadamardQuotient133.signatures133_suffice',
     ]),
+    'catalog_verified': ('Conjectures.HadamardQuotient133CatalogVerified', [
+        'HadamardQuotient133.Finite.quotient_catalog_checked',
+        'HadamardQuotient133.Finite.margin_catalog_checked',
+    ]),
+    'rows_verified': ('Conjectures.HadamardQuotient133RowsVerified', [
+        'HadamardQuotient133.Finite.quotient_rows_checked',
+        'HadamardQuotient133.Finite.endpoints_checked',
+        'HadamardQuotient133.Finite.survivors_checked',
+        'HadamardQuotient133.Finite.survivors_nodup',
+        'HadamardQuotient133.Finite.survivors_length',
+    ]),
+    'margins_verified': ('Conjectures.HadamardQuotient133MarginsVerified', [
+        'HadamardQuotient133.Finite.margins_checked',
+    ]),
+    'main': ('Conjectures.HadamardQuotient133Main', [
+        'HadamardQuotient133.Finite.outer_checked',
+        'HadamardQuotient133.Finite.quotient_catalog_checked',
+        'HadamardQuotient133.Finite.margin_catalog_checked',
+        'HadamardQuotient133.Finite.quotient_rows_checked',
+        'HadamardQuotient133.Finite.margins_checked',
+        'HadamardQuotient133.quotient133_pair_mem_survivors',
+        'HadamardQuotient133.quotient133_pair_iff',
+        'HadamardQuotient133.quotient133_exactly_thirty_two',
+        'HadamardQuotient133.quotient133_no_lift',
+    ]),
 }
 
-DEFAULT_TASKS = ("sample", "orbits")
+DEFAULT_TASKS = ("main",)
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-quotient133-candidates.yml',
  'lean/lake-manifest.json',
@@ -81,6 +106,8 @@ GATE_INPUTS = {'.github/workflows/lean-hadamard-quotient133-candidates.yml',
  'scripts/plan_lean_candidates.py',
  'scripts/replay_lean.py',
  'scripts/verify_hadamard_quotient133_candidate.py',
+ 'scripts/verify_hadamard_quotient133_staged.py',
+ 'scripts/test_hadamard_quotient133_staged.py',
  'scripts/verify_lean_candidate.py',
  'scripts/generate_hadamard_quotient133.mjs',
  'results/hadamard-2396/PROOF.md',
@@ -158,6 +185,9 @@ def main() -> None:
         if output := os.environ.get("GITHUB_OUTPUT"):
             with open(output, "a") as handle:
                 handle.write("tasks=" + json.dumps(tasks, separators=(",", ":")) + "\n")
+                direct = [task for task in tasks if task != "main"]
+                handle.write("direct_tasks=" + json.dumps(direct, separators=(",", ":")) + "\n")
+                handle.write("main=" + str("main" in tasks).lower() + "\n")
         return
     if args.task is None:
         parser.error("a task or --plan-ci is required")
@@ -181,6 +211,9 @@ def main() -> None:
         if args.task == "sample":
             run("node", "../scripts/generate_hadamard_quotient133.mjs", "--check", "--sample")
             receipt["completed_checks"].append("deterministic sample reproduction against four frozen inputs")
+        elif args.task == "main":
+            run("node", "../scripts/generate_hadamard_quotient133.mjs", "--check")
+            receipt["completed_checks"].append("deterministic full packet reproduction against four frozen inputs")
         check_sources(modules, receipt)
         receipt["completed_checks"].append("strict source checks, warnings treated as errors")
         audit([target], required, modules, "hadamard-quotient133-" + args.task)
@@ -203,3 +236,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

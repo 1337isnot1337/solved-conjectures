@@ -14,7 +14,7 @@ open scoped BigOperators Topology
 
 noncomputable section
 
-variable {ι : Type*} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 variable {Q : ℕ} [NeZero Q]
 
 def smoothResidueFrequency (m : ι → ℤ) (b : ι → ZMod Q) (N : ℕ) : ℝ :=

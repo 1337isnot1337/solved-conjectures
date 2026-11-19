@@ -898,6 +898,14 @@ modules=(
   Conjectures.LineSizeGeneratingRescale
   Conjectures.LineSizeCoefficientAsymptoticBridge
   Conjectures.LineSizeCoefficientAsymptotic
+  Conjectures.HadamardLegendreConstructionAlgebra
+  Conjectures.HadamardLegendreConstruction
+  Conjectures.HadamardLegendreFullImage
+  Conjectures.HadamardQuotient133Model
+  Conjectures.HadamardQuotient133Orbits
+  Conjectures.HadamardLegendreQuotientModel
+  Conjectures.HadamardLegendreQuotientMaps
+  Conjectures.HadamardLegendreQuotientData
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

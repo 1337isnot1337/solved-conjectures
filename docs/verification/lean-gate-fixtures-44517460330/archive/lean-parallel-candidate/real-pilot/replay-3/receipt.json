@@ -1,0 +1,279 @@
+{
+  "all_frozen_hashes_unchanged": true,
+  "artifact_sha256": {
+    "Conjectures.FranklBasic": {
+      ".olean": "898621b3a3cbfdb69b97e804895d1ad474cae9df1f1b92442bcf0b8187d2fe63",
+      ".olean.private": "1425af3d0384099878f0d5a5e849adcc30888d84adb7b870516ca37fb11fb707",
+      ".olean.server": "9b2e50acd15972b8637d837d9157bf651c830a361d2f6445a2f6857c98f765cd"
+    },
+    "Conjectures.FranklCyclicCertificates": {
+      ".olean": "16dbf6d7446e7d74f34fe3d5ee073f782a5f0f5ae36cd53d652278ab3f6b90a8",
+      ".olean.private": "dd756184c42fff34a36546cbf1bedfa0e1f1587ce7438368f93c79900de2e0e6",
+      ".olean.server": "9c51ea85691aa2c84643392091e6a961a637d42e60352aa78ad728e2f112362a"
+    },
+    "Conjectures.FranklCyclicGenerators": {
+      ".olean": "b0f25b3b3d610303afb5501734536fcc843541445938665e10547389842d3564",
+      ".olean.private": "6aef9497f1646a752c6477714f3c65fa671e7111f866ac063ff8db4767d1a682",
+      ".olean.server": "c5455dd928c418e48f5eb85db6f864838b0b080d5c6f5b91e7d7d3d95ab380d0"
+    },
+    "Conjectures.FranklCyclicRank": {
+      ".olean": "99bcbdcc7a66182aaf1dc660f021e2da11150f1728d4b4040d95af5832d52c2a",
+      ".olean.private": "3d18333d7705ade66fac0e3ae87bad4503c537bda2fc4155c5205eafc8c22c1d",
+      ".olean.server": "5f48fe34fe7bc83223e6068fb6f33af626b71f547c82f24280ee3ca1c0f56d06"
+    },
+    "Conjectures.FranklCyclicWords": {
+      ".olean": "82c269304875405ce2433506ffd06041a497979c299188629cadf2c701da4225",
+      ".olean.private": "2d24491b60671454d2a4c5fa834641153fe2bfc11efabbd4df908714ed7f64c9",
+      ".olean.server": "e49363eb0fc6d340133cfebc15ed32498bdb5152f2a38225ad06d8f7ca4d0c81"
+    },
+    "Conjectures.FranklFCBitCode": {
+      ".olean": "42e9213c3afe5d9470a579706824a6fb03fc4982328432a940b7853f2d3e257b",
+      ".olean.private": "9ea54aa9a2c278509d3a1a526fe51b2ca07c44115bc2144cd32ef1cd8deb6f7b",
+      ".olean.server": "352a6c58096759db2ff72310bab9a62907511c984e7cb28ae93488e2414de0af"
+    },
+    "Conjectures.FranklFamily": {
+      ".olean": "ee79c0fa109248ef0a679539bb711663e30bfe25c636cca0337f2ff6b17c4416",
+      ".olean.private": "738a5aef023c89d9237e6da2e54344ed6c75094f554164862eb7cf8b1bbd4976",
+      ".olean.server": "831cc0a0cb8952075ee6cdd1d1f2663102812b6c53191cc2a3ff7cd6bbfd75f7"
+    },
+    "Conjectures.FranklLocalCertificate": {
+      ".olean": "5107431f14e100e88d497634afcc4a7b76fb47a25c139e4a48194a45c1bdafaa",
+      ".olean.private": "8495f7dc05d15c22398d71974ed57f31a4322d7510ccd1cc395a59fa7516749e",
+      ".olean.server": "a21704f890c8aad935d0c4a6a9f2611387ee89e21757cc79ece78b225b919043"
+    },
+    "Conjectures.FranklLocalEnumeration": {
+      ".olean": "1c98929596948ab88b207de7a1051783c7beb769b6089d82b10b08d09b01c2bf",
+      ".olean.private": "24e81b6498ede7f2ca7fe65273926372280b471350e5d716cb6f572e0a6b68b8",
+      ".olean.server": "1b10329be16cfec823db3668f18a2214d6c98239038737860d14ee543937fbd4"
+    },
+    "Conjectures.FranklLocalEnumerationCore": {
+      ".olean": "dfb2f309490fadad59ddb73dd8ee7094030adeb95f47b12daf75e84cae2913e1",
+      ".olean.private": "fe96c5d004a060625d49591ed2b2c69715a79b6a4cb808a1ff79c9c57c260a75",
+      ".olean.server": "4bfaf0d01cbcb5fd6c3e1c70ccfbcbb949dd7222018e1475a2f62796a684b614"
+    },
+    "Conjectures.FranklLocalEnumerationMap": {
+      ".olean": "9a7c21865e7ab26267c1de4d0ffde34723aeb103cf8c05bbbe17fcfd828c01a7",
+      ".olean.private": "cc44ea9c13ed13d6dc4ebe185e3bcf22cbc9754640fb81bfe18dfa0cb1578a88",
+      ".olean.server": "0bb8443af398a8da53ae70f927bf325d25009e2c0372a49a50c35c3c1a0cfb75"
+    },
+    "Conjectures.FranklLocalFibers": {
+      ".olean": "6ff4501c359870f33f3ff90bdc2ab6615d2b93b64a6592e07e028e3f5f33c28e",
+      ".olean.private": "49af8f7609c1a1f632a1744d6cb5db40593c4ee089d1f74627bbe51eddb451b3",
+      ".olean.server": "1fbaa1010737b343ba6094235d8932854b5f175aeb07ac17bdfcab080055e1bd"
+    },
+    "Conjectures.FranklLocalFiniteSupport": {
+      ".olean": "5261e3ecc0f948097492c78d4832e5fd36ac5cbc96d998ce419bdec98a549b69",
+      ".olean.private": "16026ae305e601022012794e6a9cc186cc63da5b3153c789b84454e4bc599baf",
+      ".olean.server": "5fd79d57695c3028c643a039b86f73b3922f85b0d8b1c581e9b54a511119f185"
+    },
+    "Conjectures.FranklLocalMaskCertificate": {
+      ".olean": "8725d378d8bef8f85d9b889222a5a83c82f3b99c4d5398dc159265867eed61c7",
+      ".olean.private": "7f683a8c70aeacae1d357cc5b99737007c59275bcec7c5eefa1b5cc1506becf1",
+      ".olean.server": "a140a04566850e45aba299a9b24d1456307966b5b3cdcd7e6bcd2bdd023b2892"
+    },
+    "Conjectures.FranklLocalMaskDomains": {
+      ".olean": "3fb142725ba0f236b869ed4a8f5f33ddc6e595f98b9ad31c669b01b14e896bfe",
+      ".olean.private": "e9184dce6e4cacf84a1ba9be8e2e0f93e7efc15a42d28f1cca10369769765058",
+      ".olean.server": "e18c19ddbce158758e5939450b7cd41ae6d9014987c0515b9f911a688eb8688a"
+    },
+    "Conjectures.FranklLocalMaximalCover": {
+      ".olean": "3edb0c98c9248161abdcee19e3ffbba5c28331215b6f8d468cca4e94213ad4d4",
+      ".olean.private": "426a6561ddfc8bc4501ff1d8700d3b2fd648d1cd139f89cdf3fb95652de4e375",
+      ".olean.server": "7e26ff6e1ba8fd5f86f1c73e86ca2d754eac8eef136339da792b7c7aa72e5f83"
+    },
+    "Conjectures.FranklLocalWeights": {
+      ".olean": "7521441d3d1f760cfd643b8702d03fc536ec5f0fa05d995bcaf399f96b141c64",
+      ".olean.private": "e6e47fb8579eb18cd072d1bb29f81c52ca7701a452a570445ca728295d2116ed",
+      ".olean.server": "6a8b481b4e79ff145be36b47b6c5e10d139beb0aed203ea14fc33dfd31b1f688"
+    },
+    "Conjectures.FranklSmallCyclicMaskWindows": {
+      ".olean": "9707ee39c6dd7c3e30d5d06c305890a11f3e228615814962a1dd833680a8637c",
+      ".olean.private": "e3d4fd35dc28f555d3771ab4cf6812a4d2dde863d99f4f721561490e791b9bce",
+      ".olean.server": "847f628df37b10d765a19beeb4ddca32739fcbc578275ebf6fcba25829bdd627"
+    },
+    "Conjectures.FranklSmallCyclicMasks": {
+      ".olean": "d790eaabd08729f141c5c3ea8b88ead00218b68d6c0e4410c707d3dd789871e5",
+      ".olean.private": "8a9d3edd41b5bc47844a6a554001d4e5bc906a975ad4333eb5676129278c2520",
+      ".olean.server": "bbacb180ad2686886caeb050f1ebdf44999770fd55f6b08bf97c99d8c3773e4a"
+    },
+    "Conjectures.FranklSmallCyclicWeights": {
+      ".olean": "e689e0f68d226185781543d9e5f559812e237d73ec02a8b3fb288250f3d098eb",
+      ".olean.private": "182ee562deda4e5282029a16a4ed59d13cfa73835ffd0e7700e2857064f81a9f",
+      ".olean.server": "730ca2d2f0dbb2b0c3eafdc05a5fac25b684d5da2d96d465440237bbe34e3a8b"
+    },
+    "Conjectures.FranklSmallCyclicWeights7Pilot": {
+      ".olean": "c524b731410c8a97da94533f41497567077e0893ec616b15cdbd89aabc835241",
+      ".olean.private": "ea65ca1342eeb5ce390044a071bb542a932d58c47659ade4d7f8cb9569807202",
+      ".olean.server": "29b4d1e6bade36384cef33a795f68e99d44683b351ee3c74c30fa39160cb7636"
+    },
+    "Conjectures.FranklSmallCyclicWeights8Pilot": {
+      ".olean": "9662763dab79344deb7f608f6672386a74bfb0cb9d93a8ecedba2daa504c5416",
+      ".olean.private": "9990b9aa2a064b12bfaceab740e88213228bfb2e0fb158cc3c3b5cf6ec07648f",
+      ".olean.server": "0686df876234793141cd184f79dde717f0ca77ac694b1e1288f8ffaf8d4db875"
+    },
+    "Conjectures.FranklSmallCyclicWeights9Pilot": {
+      ".olean": "a20e0ad5601106380f489637e7b2334c541d75be633fccd27cf3ac6a0e3f5dd2",
+      ".olean.private": "e6b352289c584ae826da6194e5ec0c295796b9e4996e4df7ad0dc672db590289",
+      ".olean.server": "e82c0dda1552d03fe0ff1f0cc09927f48f9625cb2c4af5dde24468b294485a16"
+    },
+    "Conjectures.FranklSmallCyclicWeightsPilot": {
+      ".olean": "d38a78fc34a6254b7cac2644066ce33da8b2060723c4752562fac7f51368bd09",
+      ".olean.private": "03cfed910e9f95686d6e811a20a0aebe0d49ab2ba4661b47f1d2ae5b9e5def89",
+      ".olean.server": "69589fb7fc9654565383d28c09546fbf7bb3a40dde26b29ea6ff1de96f09acda"
+    },
+    "Conjectures.FranklSmallCyclicWeightsPilotData": {
+      ".olean": "9e97aba20a4b86811692f7f7dffab63275d6d651dded20cc2aa8ede458013120",
+      ".olean.private": "5ce00c983e58f488ec95ed9f5ca95cff55c06dc518f7d8522107686b16f65e18",
+      ".olean.server": "03a654fe20f15e6a4de9a8374e5820dfa572907b823699ae14577c15cb7e94e0"
+    }
+  },
+  "checker_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+  "checker_prefixes": [
+    "Conjectures"
+  ],
+  "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+  "child_maxrss_kib": 7001136,
+  "claims_axiom_audit": false,
+  "claims_source_check": false,
+  "elapsed_seconds": 36.60619383699998,
+  "environment": {
+    "LEAN_MAIN_USE_THREAD": "1",
+    "LEAN_NUM_THREADS": "3",
+    "LEAN_PATH": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-parallel-candidate/real-pilot/replay-3/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean",
+    "LEAN_SYSROOT": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0",
+    "UV_USE_IO_URING": "0"
+  },
+  "exact_replay_set": [
+    "Conjectures.FranklFCBitCode",
+    "Conjectures.FranklLocalMaximalCover",
+    "Conjectures.FranklLocalMaskCertificate",
+    "Conjectures.FranklLocalMaskDomains",
+    "Conjectures.FranklSmallCyclicWeights9Pilot",
+    "Conjectures.FranklSmallCyclicWeights7Pilot",
+    "Conjectures.FranklCyclicGenerators",
+    "Conjectures.FranklLocalEnumeration",
+    "Conjectures.FranklCyclicRank",
+    "Conjectures.FranklBasic",
+    "Conjectures.FranklSmallCyclicWeightsPilotData",
+    "Conjectures.FranklLocalEnumerationCore",
+    "Conjectures.FranklSmallCyclicWeights8Pilot",
+    "Conjectures.FranklSmallCyclicWeightsPilot",
+    "Conjectures.FranklLocalFibers",
+    "Conjectures.FranklSmallCyclicMasks",
+    "Conjectures.FranklSmallCyclicWeights",
+    "Conjectures.FranklLocalFiniteSupport",
+    "Conjectures.FranklLocalWeights",
+    "Conjectures.FranklLocalCertificate",
+    "Conjectures.FranklFamily",
+    "Conjectures.FranklCyclicWords",
+    "Conjectures.FranklLocalEnumerationMap",
+    "Conjectures.FranklSmallCyclicMaskWindows",
+    "Conjectures.FranklCyclicCertificates"
+  ],
+  "git_head": "6f8f415a652e448be80ede3490ba93c711d5d38e",
+  "input_sha256": {
+    "lean/Conjectures/FranklBasic.lean": "678a880c0864fb8e84dad2913542f06a52907a08cb58852b35836da7868ca59a",
+    "lean/Conjectures/FranklCyclicCertificates.lean": "99942d45ff97407638afcacf53599b8aec0a9fbc51afb94dd129a7ff5023bb56",
+    "lean/Conjectures/FranklCyclicGenerators.lean": "42ba82bb03f90861592e81c16eeec984d988d9db13c7df0b8d1f0eefd3581b95",
+    "lean/Conjectures/FranklCyclicRank.lean": "633386484fa6933b1e026c93f6cb4c3eee7329b9c01a6a3a60b97d96aafa6ba1",
+    "lean/Conjectures/FranklCyclicWords.lean": "0e4abe75198be3d16bd6a5fbb50da2e109ae8c180eb6ec9e0cec61850699184b",
+    "lean/Conjectures/FranklFCBitCode.lean": "c3ca1ec0327194667d3e81f64fe4431e9b2836cc4cabd8e0f62d4291d308722e",
+    "lean/Conjectures/FranklFamily.lean": "f2bd1a70c64b773feb39dcbc1c11e7dd8a40d2ec6fa48332f4820c3ca1197b6b",
+    "lean/Conjectures/FranklLocalCertificate.lean": "976349d5bd8103fd5537d8592d05d413c459e94829d8a958d9a28585353001d2",
+    "lean/Conjectures/FranklLocalEnumeration.lean": "4507e0da8f018d3d9b43f20cc617bccb38020875015fb8f19b2e7b7f60d16e05",
+    "lean/Conjectures/FranklLocalEnumerationCore.lean": "2efa905ba13a2a700dcf467eaf4c28a04a9599517c6b302cb1e48c2dfdc03018",
+    "lean/Conjectures/FranklLocalEnumerationMap.lean": "5345dbed171e4a2b7888ab9e6a28bc8ef4008bc5b0dbc7afa393a0e0a5c5777b",
+    "lean/Conjectures/FranklLocalFibers.lean": "88d71d763d4499a0ead755ee41790766a919db62612e482e5335a90c99d8081f",
+    "lean/Conjectures/FranklLocalFiniteSupport.lean": "57aaf43e89b2c5a436b18b9eb40713331305134e5d5d3cc1faece5c68fce5c65",
+    "lean/Conjectures/FranklLocalMaskCertificate.lean": "8667adc9203e33f2e5a390b6fdcc4e703a0c42fd2710c4287a1d972471eb2c80",
+    "lean/Conjectures/FranklLocalMaskDomains.lean": "cafb1ff739f52bfc69a216d21692412055f1cf8243f782eb999490abce3805cc",
+    "lean/Conjectures/FranklLocalMaximalCover.lean": "e4b768151dfb5e4ff8a4eacbb7b7009e7cbc5c55850a43e0660019fbb8802bc9",
+    "lean/Conjectures/FranklLocalWeights.lean": "c593c57d5e7d3563858708ec8752892b88db91ede626d87f55030ac79d2e0c4d",
+    "lean/Conjectures/FranklSmallCyclicMaskWindows.lean": "22f5696ca0058350e6434e587ff9809d28f00094170243d32bd75f8d15d018a2",
+    "lean/Conjectures/FranklSmallCyclicMasks.lean": "99d23281f9f1f6d7452a0d52536f6b1fd4d6f801afc37b8857c9b09a8c3df2de",
+    "lean/Conjectures/FranklSmallCyclicWeights.lean": "bc351fa2bc038c9ba014d5013806a41b718d67a2df210bd3decf71a7805425b5",
+    "lean/Conjectures/FranklSmallCyclicWeights7Pilot.lean": "f733e2b21ae5d417910fbb4a46a9a0be38efdf3e634f4485ea458de1609ed347",
+    "lean/Conjectures/FranklSmallCyclicWeights8Pilot.lean": "d03d59d4f6fbee3b51fbfd65bf6882f3b992003c49e49964e219d73839a7b075",
+    "lean/Conjectures/FranklSmallCyclicWeights9Pilot.lean": "abc2f026c5683407b6193841e6109a8f76d7c6f878d7771978c8b084e54d34b6",
+    "lean/Conjectures/FranklSmallCyclicWeightsPilot.lean": "aeae4459bf29e2c16a4a4e1c7a42bfd8cc01342249eee52036b86d55de1f0378",
+    "lean/Conjectures/FranklSmallCyclicWeightsPilotData.lean": "40eb9cb97f33e279a9032697c545de612cd373d7417e6a37bb74c9bb354ff308",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/replay_lean_parallel.py": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225",
+    "scripts/test_lean_parallel.py": "53b526e6ce974893f78fb464aa77d002b82b2441c96a3d41a521486bba215700",
+    "scripts/verify_lean_parallel_candidate.py": "6545556b44d03f51a40a1c598b4c9f304f2ccf0eebd3e3f5c9544047d2aec522"
+  },
+  "kernel": {
+    "command": [
+      "/usr/bin/stdbuf",
+      "-oL",
+      "-eL",
+      "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+      "-v",
+      "Conjectures"
+    ],
+    "elapsed_seconds": 36.502271976999964,
+    "exit_code": 0,
+    "log_sha256": "c1833b9d694158a1996c9a51b1b02ae70ffdb8f8d5bcaaba06db42e3528e67aa",
+    "runtime_control_threads": 3,
+    "sampled_peak_high_water_kib": 7001136,
+    "sampled_peak_processes": 1,
+    "sampled_peak_rss_kib": 6997808,
+    "sampled_peak_threads": 6,
+    "thread_limit": 6
+  },
+  "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "memory_limit_mib": 12288,
+  "mode": "candidate",
+  "original_object_directory": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-parallel-candidate/real-pilot/repo/lean/.lake/build/lib/lean",
+  "output_directory": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-parallel-candidate/real-pilot/replay-3",
+  "phase": "kernel",
+  "project_modules": [
+    "Conjectures.FranklBasic",
+    "Conjectures.FranklCyclicCertificates",
+    "Conjectures.FranklCyclicGenerators",
+    "Conjectures.FranklCyclicRank",
+    "Conjectures.FranklCyclicWords",
+    "Conjectures.FranklFCBitCode",
+    "Conjectures.FranklFamily",
+    "Conjectures.FranklLocalCertificate",
+    "Conjectures.FranklLocalEnumeration",
+    "Conjectures.FranklLocalEnumerationCore",
+    "Conjectures.FranklLocalEnumerationMap",
+    "Conjectures.FranklLocalFibers",
+    "Conjectures.FranklLocalFiniteSupport",
+    "Conjectures.FranklLocalMaskCertificate",
+    "Conjectures.FranklLocalMaskDomains",
+    "Conjectures.FranklLocalMaximalCover",
+    "Conjectures.FranklLocalWeights",
+    "Conjectures.FranklSmallCyclicMaskWindows",
+    "Conjectures.FranklSmallCyclicMasks",
+    "Conjectures.FranklSmallCyclicWeights",
+    "Conjectures.FranklSmallCyclicWeights7Pilot",
+    "Conjectures.FranklSmallCyclicWeights8Pilot",
+    "Conjectures.FranklSmallCyclicWeights9Pilot",
+    "Conjectures.FranklSmallCyclicWeightsPilot",
+    "Conjectures.FranklSmallCyclicWeightsPilotData"
+  ],
+  "replayed_module_count": 25,
+  "reuses_prior_kernel_pass": false,
+  "root": "Conjectures.FranklSmallCyclicWeightsPilot",
+  "runtime": {
+    "compiler_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "sysroot": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0"
+  },
+  "source_receipt": {
+    "compiler_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "path": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-parallel-candidate/real-pilot/source/receipt.json",
+    "sha256": "86c6dd2a63d6ba771c3a89b1f433408fc32c10bdbccc44235d0c49799c65d26f"
+  },
+  "status": "passed",
+  "timeout_seconds": 3600.0,
+  "workers": 3
+}

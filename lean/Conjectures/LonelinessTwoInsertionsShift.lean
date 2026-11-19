@@ -24,12 +24,12 @@ theorem central_speed_window (p c : ℕ) (hp : 3 ≤ p) (hc : 0 < c)
     nlinarith
   have hgap : 1/(p+1 : ℝ)-1/(p+2 : ℝ) =
       1/((p+1 : ℝ)*(p+2 : ℝ)) := by
-    field_simp [hr.ne', hq.ne'] <;> ring
+    field_simp [hr.ne', hq.ne']; ring
   let t : ℝ := 1/(p+1 : ℝ)+1/((p+2 : ℝ)*(c : ℝ))
   have hbt : (p : ℝ)*t = 1-1/(p+1 : ℝ)+
       (p : ℝ)/((p+2 : ℝ)*(c : ℝ)) := by
     dsimp [t]
-    field_simp [hr.ne', hq.ne', hcR.ne'] <;> ring
+    field_simp [hr.ne', hq.ne', hcR.ne']; ring
   have hblo : 1/(p+2 : ℝ) ≤ (p : ℝ)*t := by
     have hn : (0 : ℝ) ≤ (p : ℝ)/((p+2 : ℝ)*(c : ℝ)) := by positivity
     linarith
@@ -43,7 +43,7 @@ theorem central_speed_window (p c : ℕ) (hp : 3 ≤ p) (hc : 0 < c)
     calc
       (c : ℝ)*t = (c : ℝ)/(p+1 : ℝ)+1/(p+2 : ℝ) := by
         dsimp [t]
-        field_simp [hr.ne', hq.ne', hcR.ne'] <;> ring
+        field_simp [hr.ne', hq.ne', hcR.ne']
       _ = _ := by rw [hck]
   refine ⟨t, ⟨?_, ?_⟩, ?_, ?_⟩
   · have hrecip : 1/(p+2 : ℝ) ≤ 1/(p+1 : ℝ) :=
@@ -75,7 +75,7 @@ theorem shifted_left_window (p b c : ℕ) (hp : 3 ≤ p) (hb : 0 < b)
   have hpc : p ≤ 2*c := by nlinarith
   have hpcR : (p : ℝ) ≤ 2*(c : ℝ) := by exact_mod_cast hpc
   have hgap : 1/(p : ℝ)-1/(p+2 : ℝ) = 2/((p : ℝ)*(p+2)) := by
-    field_simp [hpR.ne', hq.ne'] <;> ring
+    field_simp [hpR.ne', hq.ne']; ring
   have hstep : 1/((p+2 : ℝ)*(c : ℝ)) ≤ 2/((p : ℝ)*(p+2)) := by
     apply (div_le_div_iff₀ (mul_pos hq hcR) (mul_pos hpR hq)).mpr
     nlinarith [mul_le_mul_of_nonneg_left hpcR hq.le]
@@ -101,7 +101,7 @@ theorem shifted_left_window (p b c : ℕ) (hp : 3 ≤ p) (hb : 0 < b)
     calc
       (c : ℝ)*t = (c : ℝ)/(p : ℝ)-1/(p+2 : ℝ) := by
         dsimp [t]
-        field_simp [hpR.ne', hq.ne', hcR.ne'] <;> ring
+        field_simp [hpR.ne', hq.ne', hcR.ne']
       _ = _ := by rw [hck]
   refine ⟨t, ⟨?_, ?_⟩, ?_, ?_⟩
   · dsimp [t]

@@ -10,7 +10,7 @@ open Loneliness.SubspaceDensity
 
 noncomputable section
 
-variable {ι : Type*} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+variable {ι : Type*} [Fintype ι]
 
 def integerSlice (E : Submodule ℝ (ι → ℝ)) (S : Finset (ι → ℤ)) :
     Submodule ℝ (ι → ℝ) where
@@ -63,7 +63,9 @@ theorem integerVector_mem_integerSlice_iff
     (E : Submodule ℝ (ι → ℝ)) (S : Finset (ι → ℤ)) (v : ι → ℤ) :
     integerVector v ∈ integerSlice E S ↔
       integerVector v ∈ E ∧ ∀ n ∈ S, integerPairing n v = 0 := by
-  simp only [mem_integerSlice, pairing_integerVector, Int.cast_eq_zero]
+  simp only [mem_integerSlice, pairing_integerVector, Int.cast_eq_zero, integerPairing]
+
+variable [Nonempty ι]
 
 def SliceClassification (E : Submodule ℝ (ι → ℝ)) (s : ι → ℝ) (u : ℝ)
     (C : Finset (Finset (ι → ℤ))) : Prop :=
@@ -123,7 +125,9 @@ theorem exists_finite_slice_classification
             have hvslice : integerVector v ∈ E ⊓ relationSpace n := by
               refine ⟨hv, ?_⟩
               change pairing n (integerVector v) = 0
-              rw [pairing_integerVector, hnv, Int.cast_zero]
+              rw [pairing_integerVector]
+              change (integerPairing n v : ℝ) = 0
+              exact_mod_cast hnv
             obtain ⟨S, hS, hvS⟩ := ((hC nB).2 v hvslice).mp hlow
             refine ⟨insert n S, ?_, ?_⟩
             · apply Finset.mem_biUnion.mpr
@@ -173,7 +177,9 @@ theorem hyperplane_closed_sublevel_finite_union
   · intro v hv
     have hvE : integerVector v ∈ relationSpace m := by
       change pairing m (integerVector v) = 0
-      rw [pairing_integerVector, hv, Int.cast_zero]
+      rw [pairing_integerVector]
+      change (integerPairing m v : ℝ) = 0
+      exact_mod_cast hv
     rw [hC.2 v hvE]
     simp only [integerVector_mem_integerSlice_iff, hvE, true_and]
 

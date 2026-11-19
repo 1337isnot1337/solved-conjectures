@@ -1,0 +1,7 @@
+PARALLEL-AUDIT-ENDPOINT FranklSmallCyclic.Weights.Period8Pilot.checked
+PARALLEL-AUDIT-ENDPOINT FranklSmallCyclic.Weights.Period9Pilot.checked
+PARALLEL-AUDIT-ENDPOINT FranklSmallCyclic.Weights.Period7Pilot.checked
+PARALLEL-AUDIT-ENDPOINT FranklSmallCyclic.Weights.Period7Pilot.each_checked
+PARALLEL-AUDIT-ENDPOINT FranklSmallCyclic.Weights.Period9Pilot.each_checked
+PARALLEL-AUDIT-ENDPOINT FranklSmallCyclic.Weights.Period8Pilot.each_checked
+PARALLEL-AUDIT PASS: 496 owned declarations; 378 theorems; 24 private proofs; 6 endpoints
