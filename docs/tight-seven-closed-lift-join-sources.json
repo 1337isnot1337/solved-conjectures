@@ -103,12 +103,12 @@
     "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
     "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
     "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
-    "scripts/test_tight_seven_closed_lift_join.py": "8698aefc50e9f96cd1e5b61dd2c0b0240089dc0eb5265b478f5f078afc6dbe02",
+    "scripts/test_tight_seven_closed_lift_join.py": "bdcf036d26d17df19a11d7d65b25b758cb87547e205e19fdb2c8c372dcc5f455",
     "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
     "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
     "scripts/verify_six_speed_prime_batches.py": "071423d2dd20efa593af61c69def5cb917d55ba7eb0e28c8736ba13a1384addd",
     "scripts/verify_six_speed_prime_pipeline.py": "caa058151abe6ba84b8200eb759d86b66e60b8b8eb3e35d88c81656a94c5c198",
-    "scripts/verify_tight_seven_closed_lift_join.py": "2ab93775b045ba0e69a8ec0c8bcb98baf4bc17c78b6d5d328c5e4a2310fd6f50",
+    "scripts/verify_tight_seven_closed_lift_join.py": "31b36518996863c4830044138888b90b51ad904a26e575df3ad7c9f4d787b46c",
     "scripts/verify_tight_seven_closed_lift_primes.py": "680b4eef5264e1085e68ce7150a44f6df125378fe894b1417d77577ed3ebadbc"
   },
   "generated_source_sha256": {

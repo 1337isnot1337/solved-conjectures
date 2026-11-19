@@ -16,6 +16,54 @@ import tempfile
 import verify_tight_seven_closed_lift_join as join
 
 
+def run_raw_inventory_tests(inventory):
+    """Exercise exact bytes using a real, already validated raw-helper graph."""
+    graph = inventory['raw_occurrence_graph']
+    join.require(graph['nodes'] and all(type(k) is int for k in graph['nodes'])
+                 and all(type(k) is int for k in graph['variant_index']),
+                 'The real raw graph does not exercise integer-key serialization')
+    payload = join.encoded(inventory)
+    expected_sha256 = join.digest(payload)
+    decoded = json.loads(payload)
+    results = []
+
+    def accept(name, action):
+        action()
+        results.append({'name': name, 'expected': 'accept', 'passed': True})
+
+    def reject(name, value, expected_hash=expected_sha256):
+        try:
+            join.validate_inventory_payload(value, inventory, expected_hash)
+        except RuntimeError:
+            results.append({'name': name, 'expected': 'reject', 'passed': True})
+        else:
+            raise RuntimeError('Raw inventory guard accepted corruption: ' + name)
+
+    accept('exact real inventory bytes', lambda: join.validate_inventory_payload(
+        payload, inventory, expected_sha256))
+    accept('round trip preserves every indexed node and variant', lambda: join.require(
+        decoded != inventory and all(decoded['raw_occurrence_graph'][key] ==
+            {str(k): v for k, v in graph[key].items()} for key in ('nodes', 'variant_index')),
+        'Integer-key round trip changed graph contents'))
+    reject('incorrect inventory digest', payload, '0' * 64)
+    reject('additional serialized whitespace', payload + b'\n')
+    changed = deepcopy(decoded)
+    changed['raw_occurrence_graph']['nodes'].pop(next(iter(changed['raw_occurrence_graph']['nodes'])))
+    reject('omitted raw graph node', join.encoded(changed))
+    changed = deepcopy(decoded)
+    changed['raw_occurrence_graph']['variant_index']['unexpected'] = {}
+    reject('extra raw variant', join.encoded(changed))
+    changed = deepcopy(decoded)
+    changed.pop('raw_occurrence_graph')
+    reject('omitted complete raw graph', join.encoded(changed))
+    join.require(len(results) == 7 and len({r['name'] for r in results}) == 7,
+                 'Raw inventory regression coverage differs')
+    return {'schema': 'tight-seven-join-raw-inventory-tests-v1', 'status': 'passed',
+            'input_inventory_sha256': expected_sha256, 'positive_checks': 2, 'negative_checks': 5,
+            'raw_nodes': len(graph['nodes']), 'indexed_variants': len(graph['variant_index']),
+            'checks': results, 'lean_verified_by_tests': False}
+
+
 class DigestView:
     def __init__(self, hashes, payload):
         self.hashes, self.payload = dict(hashes), dict(payload)

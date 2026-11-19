@@ -726,6 +726,18 @@ def validate_raw_audit(text, modules, required, modern):
     return inventory
 
 
+def validate_inventory_payload(payload, inventory, expected_sha256):
+    """Compare the exact serialized graph, including its integer-key indices."""
+    require(type(payload) is bytes and payload == encoded(inventory)
+            and digest(payload) == expected_sha256,
+            'Preserved raw audit inventory differs')
+
+
+def inventory_serialization_tests(inventory):
+    from test_tight_seven_closed_lift_join import run_raw_inventory_tests
+    return run_raw_inventory_tests(inventory)
+
+
 def raw_audit(modules, required, modern, compiler, stage, env, deadline):
     path = stage / 'src/TightSevenClosedLiftJoinAudit.lean'
     path.write_text(audit_source(modules, required, modern))
@@ -734,9 +746,11 @@ def raw_audit(modules, required, modern, compiler, stage, env, deadline):
                              RESOURCES['audit_timeout_seconds'], deadline)
     inventory = validate_raw_audit((stage / check['log_relative']).read_text(), modules, required, modern)
     write_json(stage / 'declaration-inventory.json', inventory)
+    write_json(stage / 'raw-inventory-protocol-test-results.json', inventory_serialization_tests(inventory))
     check.update({'all_owned_declarations_audited': True, 'complete_raw_body_coverage': True,
                   'audit_source_sha256': sha(path),
                   'declaration_inventory_sha256': sha(stage / 'declaration-inventory.json'),
+                  'inventory_protocol_report_sha256': sha(stage / 'raw-inventory-protocol-test-results.json'),
                   'summary': inventory['summary'], 'raw_summary': inventory['raw_occurrence_graph']['summary']})
     return check
 
@@ -769,9 +783,13 @@ def validate_new_checks(stage, receipt, model):
     require(path.read_text() == audit_source(modules, required, modern)
             and sha(path) == check['audit_source_sha256'], 'Preserved raw audit source differs')
     inventory = validate_raw_audit((stage / check['log_relative']).read_text(), modules, required, modern)
-    require(json.loads((stage / 'declaration-inventory.json').read_bytes()) == inventory
-            and sha(stage / 'declaration-inventory.json') == check['declaration_inventory_sha256']
-            and check['summary'] == inventory['summary']
+    validate_inventory_payload((stage / 'declaration-inventory.json').read_bytes(), inventory,
+                               check['declaration_inventory_sha256'])
+    protocol_path = stage / 'raw-inventory-protocol-test-results.json'
+    require(protocol_path.read_bytes() == encoded(inventory_serialization_tests(inventory))
+            and sha(protocol_path) == check['inventory_protocol_report_sha256'],
+            'Preserved raw inventory protocol tests differ')
+    require(check['summary'] == inventory['summary']
             and check['raw_summary'] == inventory['raw_occurrence_graph']['summary']
             and check['all_owned_declarations_audited'] is True
             and check['complete_raw_body_coverage'] is True, 'Preserved raw audit inventory differs')
