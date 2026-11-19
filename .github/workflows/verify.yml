@@ -55,3 +55,5 @@ jobs:
         run: python3 six-speed-spectrum/verify.py
       - name: Verify all equality cases for eight lonely runners
         run: python3 tight-seven-speeds/verify.py
+      - name: Verify the unique equality case for nine lonely runners
+        run: python3 tight-eight-speeds/verify.py

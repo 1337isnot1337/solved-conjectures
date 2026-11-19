@@ -1,6 +1,6 @@
 // For each tested prime verify that the only distinct folded sextuples
 // without a strict 1/7 witness are modular dilations of {1,2,3,4,5,6}.
-// The two list modes emit witnessless representatives for their stated threshold.
+// The list modes emit witnessless representatives for their stated threshold.
 #include <algorithm>
 #include <array>
 #include <bit>
@@ -123,11 +123,12 @@ struct Sieve {
 
 int main(int argc, char** argv) {
     const std::string mode = argc==2 ? argv[1] : "";
-    if (argc>2 || (argc==2 && mode!="--list-sixths" && mode!="--list-eighths")) return 2;
+    if (argc>2 || (argc==2 && mode!="--list-sixths" && mode!="--list-eighths" && mode!="--list-ninths")) return 2;
     int p;
     while (std::cin>>p) {
         // For the allowed primes a nonzero folded distance never equals 1/6 or 1/8.
-        if (mode=="--list-eighths") Sieve<7>(p,8,true).check();
+        if (mode=="--list-ninths") Sieve<8>(p,9,true).check();
+        else if (mode=="--list-eighths") Sieve<7>(p,8,true).check();
         else if (mode=="--list-sixths") Sieve<6>(p,6,true).check();
         else std::cout<<p<<' '<<Sieve<6>(p,7,false).check()<<std::endl;
     }

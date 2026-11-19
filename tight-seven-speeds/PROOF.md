@@ -30,7 +30,7 @@ Project $\mathbb Z^7$ orthogonally onto $v^\perp$. Its covolume is $1/\|v\|_2$ s
 $$
  L(E_{k+1})\le L(v)+\tfrac12\sum_{j=1}^k\lambda_j
 $$
-on the $(k+1)$-dimensional space spanned by the first $k$ lifts and $v$. These spaces are coordinate-free. By successive coordinate coalescence and the known lonely runner bounds for at most six speeds, their loneliness is at least $1/7,1/6,1/5,1/4,1/3,1/2$, respectively. Hence the prefix sums of the minima dominate those of $(1/28,1/21,1/15,1/10,1/6,1/3)$. For these entries $y_j$, concavity gives $\log\lambda_j-\log y_j\ge(\lambda_j-y_j)/\lambda_j$. Summing by parts with the nonincreasing weights $1/\lambda_j$ shows that $\prod\lambda_j\ge\prod y_j$. This proves the norm bound. [Yi, Gill and Bu, Lemmas 11.2–11.3](https://arxiv.org/html/2610.40694v1#S11) · [Vaaler](https://msp.org/pjm/1979/83-2/pjm-v83-n2-p24-p.pdf)
+on the $(k+1)$-dimensional space spanned by the first $k$ lifts and $v$. These spaces are coordinate-free. By successive coordinate coalescence and the known lonely runner bounds for at most six speeds, their loneliness is at least $1/7,1/6,1/5,1/4,1/3,1/2$, respectively. Hence the prefix sums of the minima dominate those of $(1/28,1/21,1/15,1/10,1/6,1/3)$. For these entries $y_j$, concavity gives $\log\lambda_j-\log y_j\ge(\lambda_j-y_j)/\lambda_j$. Summing by parts with the nonincreasing weights $1/\lambda_j$ shows that $\prod\lambda_j\ge\prod y_j$. This proves the norm bound. [Yi, Gill and Bu, Lemmas 11.2–11.3](https://arxiv.org/html/2610.40694v1#S11) · [Vaaler](https://msp.org/pjm/1979/83-2/pjm-v83-n2-p24-p.pdf) · [Earlier prefix bounds for speed products, Remark 3.9](https://arxiv.org/html/2609.02604v2#S3.SS6)
 
 ## Modular matches force integer directions
 
