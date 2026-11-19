@@ -1,6 +1,6 @@
 {
   "schema": "lean-all-owned-accepted-snapshot-v1",
-  "source_snapshot_commit": "9bd0e3fe3a25bf3d7c319425a392770aff98a122",
+  "source_snapshot_commit": "c0ef7cef193fa145835d7323a0ed4014a7bab406",
   "spec": {
     "registered_modules": [
       "Solitaire.Counterexample",
@@ -2889,7 +2889,7 @@
     "lean/Conjectures/CutFamily.lean": "ed73fed26737fe037821ae0d832ed920c9c0e99f",
     "lean/Conjectures/CutFamilyBase.lean": "75327be7ec61084a1015a41b3b6fa22a9e989bec",
     "lean/Conjectures/CutFamilyBlocks.lean": "cace66feac62ffcb668b7217eee1ac8b6127cdda",
-    "lean/Conjectures/CutFamilyCover.lean": "6637959791508fc90313872ca46b501b8c50570c",
+    "lean/Conjectures/CutFamilyCover.lean": "ee5143644e088122df1c3642139780e792410496",
     "lean/Conjectures/CutFamilyGame.lean": "a4db639728be944e7fc34fd9984574751bc2eabd",
     "lean/Conjectures/CutFamilyTheorem.lean": "929b7d94c96647927a8dfb9803126794feb7d424",
     "lean/Conjectures/CutGeneralDecision.lean": "b216be530340c2aa406d19ac1cb1d312f58f15c5",
@@ -3812,6 +3812,15 @@
       "artifact_id": 14529077952,
       "archive_sha256": "e65f64d9174bfb808cdedaa39c565012d0d868ae7f3f3d5459417f517c48272b",
       "scope": "The 888-module strict-source phase stopped at CutFamilyBase line 158's unnecessary sequence-focus tactic warning. No audit or kernel success is claimed for that run."
+    },
+    "prior_full_cover_warning": {
+      "commit": "56bb87c93b927c41b96771a3601acb7913729a96",
+      "run_id": 44525537416,
+      "job_id": 135564987926,
+      "receipt_sha256": "b684c4afca3add43bbbf84ab5851632b7658fa53b570af29ac7bf4ec2d4ce400",
+      "artifact_id": 14529569522,
+      "archive_sha256": "0f770c09c8c1031b362afc74fc958a862a88b33714993988d494471d7a77e005",
+      "scope": "CutFamilyBase strict source passed. The strict-source phase then stopped at four reached CutFamilyCover tactic-sequencing/deprecated-name warnings; no audit or kernel success is claimed."
     }
   },
   "resource_plan": {
@@ -3856,13 +3865,23 @@
       "scope": "Every other accepted source-layout, root, import, package and compiler-argument check is unchanged."
     }
   },
-  "declared_source_updates": [
+  "prior_declared_source_updates": [
     {
       "path": "lean/Conjectures/CutFamilyBase.lean",
       "base_blob": "7e93d362a857a5a96736cf56c3bdeba13cde98ad",
       "new_blob": "75327be7ec61084a1015a41b3b6fa22a9e989bec",
       "new_sha256": "bec5d02a518d1cc453ee4c6a715106e91f91c0b59ed403a464d5307c4ae1cc7f",
       "change": "Replace (norm_num at * <;> omega) by (norm_num at *; omega), exactly one line, to satisfy the reached strict tactic style linter.",
+      "scope": "source_snapshot_commit records the base tree; input_blob_sha records the exact post-update candidate inputs."
+    }
+  ],
+  "declared_source_updates": [
+    {
+      "path": "lean/Conjectures/CutFamilyCover.lean",
+      "base_blob": "6637959791508fc90313872ca46b501b8c50570c",
+      "new_blob": "ee5143644e088122df1c3642139780e792410496",
+      "new_sha256": "2197e4ce23b0ea0e213f4af56f74edf933add5adc3dc6cc5ca5d61497bca9ce1",
+      "change": "At exactly the four reported source lines, replace two unnecessary <;> sequencers by ; and rename deprecated if_pos/if_neg to ite_eq_left/ite_eq_right.",
       "scope": "source_snapshot_commit records the base tree; input_blob_sha records the exact post-update candidate inputs."
     }
   ]
