@@ -1,0 +1,30 @@
+{
+  "schema": "frankl-span-four-theorem-candidate-v1",
+  "root": "Conjectures.FranklSpanFourTheorem",
+  "source_sha256": "d14b96bf40ec609193e13853188fdbb6ac5821582bcfdc06b9971c6907ddc621",
+  "required_endpoints": [
+    "FranklSpanFour.Verified.canonical_rows_covered",
+    "FranklSpanFour.Verified.rows_covered",
+    "FranklSpanFour.Verified.period7_rows_covered",
+    "FranklSpanFour.Verified.period8_rows_covered",
+    "FranklSpanFour.Verified.period9_rows_covered",
+    "FranklSpanFour.Verified.period10_rows_covered",
+    "FranklSpanFour.Verified.packet_checked",
+    "FranklSpanFour.Verified.short_weights_checked",
+    "FranklSpanFour.Verified.generators_abundant",
+    "FranklSpanFour.Verified.generators_abundant_of_contained",
+    "FranklSpanFour.Verified.family_abundant_of_generated_eq",
+    "FranklSpanFour.Verified.unionClosed_family_abundant",
+    "FranklSpanFour.Verified.unionClosed_family_abundant_of_cyclic_labels",
+    "FranklSpanFour.Verified.unionClosed_family_abundant_of_cyclic_order"
+  ],
+  "proof_scope": "Unconditional cyclic span-four abundance for every positive period, each distinct union counted once, empty-adjoined and literal union-closed family formulations, and arbitrary ground labels via an explicit or existential cyclic bijection.",
+  "status": "candidate-not-yet-gated",
+  "dependency_obligations": [
+    "Full initial graph strict/audit/kernel gate after its rank adapter correction",
+    "All 103 transport group gates and composed TransportResults gate",
+    "Fresh family relabeling gate",
+    "Final composed proof-object/source/axiom/kernel gate"
+  ],
+  "accepted_registry_changed": false
+}
