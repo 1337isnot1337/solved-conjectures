@@ -1,3 +1,4 @@
+import Conjectures.HadamardAutomorphismQuadraticIntegers
 import Conjectures.HadamardAutomorphismClassPair
 import Conjectures.HadamardAutomorphismClassArithmetic
 import Conjectures.HadamardAutomorphismCyclotomicPrimes
@@ -46,11 +47,13 @@ def quadraticPrimeUnder479 (P : Ideal (𝓞 K)) [P.IsPrime]
 
 theorem prime599_quadratic_inertia
     (p : (Ideal (𝓞 (quadraticFixedField479 K)))⁰)
-    (hp : (p : Ideal _).IsPrime)
-    (hover : (p : Ideal _).LiesOver (Ideal.span {(599 : ℤ)})) :
-    (p : Ideal _).inertiaDeg ℤ = 1 := by
-  let : (p : Ideal _).IsPrime := hp
-  let : (p : Ideal _).LiesOver (Ideal.span {(599 : ℤ)}) := hover
+    (hp : (p : Ideal (𝓞 (quadraticFixedField479 K))).IsPrime)
+    (hover : (p : Ideal (𝓞 (quadraticFixedField479 K))).LiesOver
+      (Ideal.span {(599 : ℤ)})) :
+    (p : Ideal (𝓞 (quadraticFixedField479 K))).inertiaDeg ℤ = 1 := by
+  let : (p : Ideal (𝓞 (quadraticFixedField479 K))).IsPrime := hp
+  let : (p : Ideal (𝓞 (quadraticFixedField479 K))).LiesOver
+    (Ideal.span {(599 : ℤ)}) := hover
   have h := Ideal.pow_inertiaDeg 599 (p : Ideal (𝓞 (quadraticFixedField479 K)))
   rw [every_prime_above599_absNorm K p hp hover] at h
   exact Nat.pow_right_injective (by decide : 2 ≤ 599) (by simpa only [pow_one] using h)
@@ -137,7 +140,8 @@ theorem principal_norm_class_exponent479 (P : Ideal (𝓞 K)) [P.IsPrime]
   let J : (Ideal (𝓞 (quadraticFixedField479 K)))⁰ := p ^ (239 * a) * q ^ (239 * b)
   have hJ : (J : Ideal (𝓞 (quadraticFixedField479 K))) =
       Ideal.span {Algebra.intNorm (𝓞 (quadraticFixedField479 K)) (𝓞 K) u} := by
-    change (p : Ideal _) ^ (239 * a) * (q : Ideal _) ^ (239 * b) = _
+    change (p : Ideal (𝓞 (quadraticFixedField479 K))) ^ (239 * a) *
+      (q : Ideal (𝓞 (quadraticFixedField479 K))) ^ (239 * b) = _
     rw [hqcoe]
     exact hn.symm
   have hprincipal : (J : Ideal (𝓞 (quadraticFixedField479 K))).IsPrincipal := by

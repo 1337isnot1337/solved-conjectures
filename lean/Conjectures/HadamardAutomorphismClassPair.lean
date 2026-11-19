@@ -99,16 +99,18 @@ theorem all_primes_above599_order_five_of_witnesses
     rw [mul_pow, hPpow, hQpow, Ideal.span_singleton_mul_span_singleton,
       hprod, Ideal.span_singleton_pow]
   have hPord : orderOf (ClassGroup.mk0 P) = 5 := by
-    apply ideal_class_order_five_of_nonprincipal_fifth P
-      (ideal_nonprincipal_of_absNorm_excluded P 599 hPnorm hexcluded)
+    apply ideal_class_order_five_of_nonprincipal_fifth (R := 𝓞 F) P
+      (ideal_nonprincipal_of_absNorm_excluded (F := F)
+        (P : Ideal (𝓞 F)) 599 hPnorm hexcluded)
     rw [hPpow]
     infer_instance
   have hQord : orderOf (ClassGroup.mk0 Q) = 5 := by
-    apply ideal_class_order_five_of_nonprincipal_fifth Q
-      (ideal_nonprincipal_of_absNorm_excluded Q 599 hQnorm hexcluded)
+    apply ideal_class_order_five_of_nonprincipal_fifth (R := 𝓞 F) Q
+      (ideal_nonprincipal_of_absNorm_excluded (F := F)
+        (Q : Ideal (𝓞 F)) 599 hQnorm hexcluded)
     rw [hQpow]
     infer_instance
-  rcases prime_above599_eq_factor_of_pair P Q R hP hQ hR hover hPQ with h | h
+  rcases prime_above599_eq_factor_of_pair (F := F) P Q R hP hQ hR hover hPQ with h | h
   · simpa only [h] using hPord
   · simpa only [h] using hQord
 
@@ -227,12 +229,13 @@ theorem conjugate_ideal_of_witness_fifth_powers
     Ideal.map (quadraticIntegerConjugation479 K).toRingHom P = Q := by
   apply ideal_eq_of_fifth_power_eq
   rw [← Ideal.map_pow, hP, Ideal.map_span, Set.image_singleton,
+    RingEquiv.toRingHom_eq_coe, RingEquiv.coe_toRingHom,
     quadraticIntegerConjugation479_witness, hQ]
 
 def conjugateQuadraticIdeal479
     (P : (Ideal (𝓞 (quadraticFixedField479 K)))⁰) :
     (Ideal (𝓞 (quadraticFixedField479 K)))⁰ :=
-  ⟨Ideal.map (quadraticIntegerConjugation479 K).toRingHom (P : Ideal _),
+  ⟨Ideal.map (quadraticIntegerConjugation479 K).toRingHom (P : Ideal (𝓞 (quadraticFixedField479 K))),
     mem_nonZeroDivisors_of_ne_zero (by
       intro hzero
       have hP0 := (Ideal.map_eq_bot_iff_of_injective
@@ -244,7 +247,9 @@ theorem conjugateQuadraticIdeal479_involutive :
   intro P
   apply Subtype.ext
   change Ideal.map (quadraticIntegerConjugation479 K).toRingHom
-    (Ideal.map (quadraticIntegerConjugation479 K).toRingHom (P : Ideal _)) = (P : Ideal _)
+    (Ideal.map (quadraticIntegerConjugation479 K).toRingHom
+      (P : Ideal (𝓞 (quadraticFixedField479 K)))) =
+        (P : Ideal (𝓞 (quadraticFixedField479 K)))
   rw [Ideal.map_map]
   have hcomp : (quadraticIntegerConjugation479 K).toRingHom.comp
       (quadraticIntegerConjugation479 K).toRingHom =
@@ -256,9 +261,11 @@ theorem conjugateQuadraticIdeal479_involutive :
 
 theorem witness_prime_conjugate_class_inverse
     (P Q : (Ideal (𝓞 (quadraticFixedField479 K)))⁰)
-    (hP : (P : Ideal _) ^ 5 = Ideal.span {quadraticFifthWitness479 K})
-    (hQ : (Q : Ideal _) ^ 5 = Ideal.span {quadraticFifthConjugate479 K})
-    (hPQ : (P : Ideal _) * (Q : Ideal _) = Ideal.span {(599 : 𝓞 (quadraticFixedField479 K))}) :
+    (hP : (P : Ideal (𝓞 (quadraticFixedField479 K))) ^ 5 = Ideal.span {quadraticFifthWitness479 K})
+    (hQ : (Q : Ideal (𝓞 (quadraticFixedField479 K))) ^ 5 = Ideal.span {quadraticFifthConjugate479 K})
+    (hPQ : (P : Ideal (𝓞 (quadraticFixedField479 K))) *
+      (Q : Ideal (𝓞 (quadraticFixedField479 K))) =
+        Ideal.span {(599 : 𝓞 (quadraticFixedField479 K))}) :
     ClassGroup.mk0 P = (ClassGroup.mk0 (conjugateQuadraticIdeal479 K P))⁻¹ := by
   have hconj : conjugateQuadraticIdeal479 K P = Q := by
     apply Subtype.ext
@@ -268,12 +275,16 @@ theorem witness_prime_conjugate_class_inverse
 
 theorem exists_conjugate_prime_pair599_class_inverse :
     ∃ P Q : (Ideal (𝓞 (quadraticFixedField479 K)))⁰,
-      (P : Ideal _).IsPrime ∧ (Q : Ideal _).IsPrime ∧
-      (P : Ideal _).absNorm = 599 ∧ (Q : Ideal _).absNorm = 599 ∧
+      (P : Ideal (𝓞 (quadraticFixedField479 K))).IsPrime ∧
+      (Q : Ideal (𝓞 (quadraticFixedField479 K))).IsPrime ∧
+      (P : Ideal (𝓞 (quadraticFixedField479 K))).absNorm = 599 ∧
+      (Q : Ideal (𝓞 (quadraticFixedField479 K))).absNorm = 599 ∧
       P ≠ Q ∧
-      (P : Ideal _).LiesOver (Ideal.span {(599 : ℤ)}) ∧
-      (Q : Ideal _).LiesOver (Ideal.span {(599 : ℤ)}) ∧
-      (P : Ideal _) * (Q : Ideal _) = Ideal.span {(599 : 𝓞 (quadraticFixedField479 K))} ∧
+      (P : Ideal (𝓞 (quadraticFixedField479 K))).LiesOver (Ideal.span {(599 : ℤ)}) ∧
+      (Q : Ideal (𝓞 (quadraticFixedField479 K))).LiesOver (Ideal.span {(599 : ℤ)}) ∧
+      (P : Ideal (𝓞 (quadraticFixedField479 K))) *
+        (Q : Ideal (𝓞 (quadraticFixedField479 K))) =
+          Ideal.span {(599 : 𝓞 (quadraticFixedField479 K))} ∧
       conjugateQuadraticIdeal479 K P = Q ∧
       ClassGroup.mk0 P = (ClassGroup.mk0 Q)⁻¹ := by
   obtain ⟨P, hP, hPnorm, hPpow⟩ := prime_fifth_root_from_conjugate_witness
@@ -285,7 +296,8 @@ theorem exists_conjugate_prime_pair599_class_inverse :
     (by simpa only [mul_comm] using quadraticFifthWitness479_product K)
     (by simpa only [add_comm] using quadraticFifthWitness479_sum K)
     (quadraticFifthConjugate479_absNorm K)
-  have hPQ : (P : Ideal _) * (Q : Ideal _) =
+  have hPQ : (P : Ideal (𝓞 (quadraticFixedField479 K))) *
+      (Q : Ideal (𝓞 (quadraticFixedField479 K))) =
       Ideal.span {(599 : 𝓞 (quadraticFixedField479 K))} := by
     apply ideal_eq_of_fifth_power_eq
     rw [mul_pow, hPpow, hQpow, Ideal.span_singleton_mul_span_singleton,
@@ -299,35 +311,41 @@ theorem exists_conjugate_prime_pair599_class_inverse :
       (quadraticFifthWitness479 K) (quadraticFifthConjugate479 K)
       (quadraticFifthWitness479_product K) (quadraticFifthWitness479_sum K)
     rw [← hPpow, ← hQpow, heq] at hcop
-    have hunit : IsUnit ((Q : Ideal _) ^ 5) := hcop.isUnit_of_dvd (dvd_refl _)
+    have hunit : IsUnit ((Q : Ideal (𝓞 (quadraticFixedField479 K))) ^ 5) :=
+      hcop.isUnit_of_dvd (dvd_refl _)
     exact hQ.ne_top (Ideal.isUnit_iff.mp
       ((isUnit_pow_iff (by decide : 5 ≠ 0)).mp hunit))
   exact ⟨P, Q, hP, hQ, hPnorm, hQnorm, hne,
-    liesOver599_of_absNorm599 P hPnorm, liesOver599_of_absNorm599 Q hQnorm, hPQ, hconj,
+    liesOver599_of_absNorm599 (F := quadraticFixedField479 K)
+      (P : Ideal (𝓞 (quadraticFixedField479 K))) hPnorm,
+    liesOver599_of_absNorm599 (F := quadraticFixedField479 K)
+      (Q : Ideal (𝓞 (quadraticFixedField479 K))) hQnorm, hPQ, hconj,
     paired_prime_classes_inverse P Q hPQ⟩
 
 theorem every_prime_above599_absNorm
     (R : (Ideal (𝓞 (quadraticFixedField479 K)))⁰)
-    (hR : (R : Ideal _).IsPrime)
-    (hover : (R : Ideal _).LiesOver (Ideal.span {(599 : ℤ)})) :
-    (R : Ideal _).absNorm = 599 := by
+    (hR : (R : Ideal (𝓞 (quadraticFixedField479 K))).IsPrime)
+    (hover : (R : Ideal (𝓞 (quadraticFixedField479 K))).LiesOver (Ideal.span {(599 : ℤ)})) :
+    (R : Ideal (𝓞 (quadraticFixedField479 K))).absNorm = 599 := by
   obtain ⟨P, Q, hP, hQ, hPnorm, hQnorm, _, _, _, hPQ, _, _⟩ :=
     exists_conjugate_prime_pair599_class_inverse K
-  rcases prime_above599_eq_factor_of_pair P Q R hP hQ hR hover hPQ with h | h
+  rcases prime_above599_eq_factor_of_pair (F := quadraticFixedField479 K)
+    P Q R hP hQ hR hover hPQ with h | h
   · simpa only [h] using hPnorm
   · simpa only [h] using hQnorm
 
 theorem every_prime_above599_conjugate_class_inverse
     (R : (Ideal (𝓞 (quadraticFixedField479 K)))⁰)
-    (hR : (R : Ideal _).IsPrime)
-    (hover : (R : Ideal _).LiesOver (Ideal.span {(599 : ℤ)})) :
+    (hR : (R : Ideal (𝓞 (quadraticFixedField479 K))).IsPrime)
+    (hover : (R : Ideal (𝓞 (quadraticFixedField479 K))).LiesOver (Ideal.span {(599 : ℤ)})) :
     ClassGroup.mk0 R = (ClassGroup.mk0 (conjugateQuadraticIdeal479 K R))⁻¹ := by
   obtain ⟨P, Q, hP, hQ, _, _, _, _, _, hPQ, hconj, hinv⟩ :=
     exists_conjugate_prime_pair599_class_inverse K
   have hconjQ : conjugateQuadraticIdeal479 K Q = P := by
     rw [← hconj]
     exact conjugateQuadraticIdeal479_involutive K P
-  rcases prime_above599_eq_factor_of_pair P Q R hP hQ hR hover hPQ with h | h
+  rcases prime_above599_eq_factor_of_pair (F := quadraticFixedField479 K)
+    P Q R hP hQ hR hover hPQ with h | h
   · subst R
     rw [hconj]
     exact hinv

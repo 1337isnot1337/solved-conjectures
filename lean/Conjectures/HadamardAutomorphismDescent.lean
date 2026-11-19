@@ -31,7 +31,8 @@ theorem norm_cube_descends_to_fixed_integer (u : 𝓞 K)
   have hv : (v : K) = (zeta 479 ℚ K) ^ k * (u : K) := by
     change algebraMap (𝓞 K) K (z ^ k * u) = _
     rw [map_mul, map_pow]
-    simp only [z, IsPrimitiveRoot.toInteger, RingOfIntegers.map_mk]
+    simp only [z, IsPrimitiveRoot.toInteger]
+    with_reducible_and_instances rfl
   refine ⟨v, ?_, ?_⟩
   · simpa only [hv] using hk
   simp only [hv, map_mul, map_pow, conjugation479_zeta]
