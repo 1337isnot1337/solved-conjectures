@@ -9,6 +9,13 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Motzkin.Lattice.exists_triangular_form,
+    `Motzkin.Lattice.hermite_coefficients_unique,
+    `Motzkin.Lattice.subgroup_two_generated,
+    `Motzkin.Lattice.subgroup_trichotomy,
+    `Motzkin.relation_lattice_two_generated,
+    `Motzkin.relation_lattice_trichotomy,
+    `Motzkin.compact_density_trichotomy,
     `HadamardFixedBorder.Literal.K_sign,
     `HadamardFixedBorder.Literal.E_sign,
     `HadamardFixedBorder.Literal.F_sign,

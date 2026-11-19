@@ -45,7 +45,7 @@ never additional Lean axioms.
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
 | Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
-| Two-difference Motzkin theorem | Partial: compact equality, explicit witnesses, and evaluator complete | The compact character formula and the literal fixed character window are checked. The cyclic formulas, exact floor-sum evaluator, attaining character, Hermite independence number, gcd conversion, explicit arithmetic-operation and integer-size bounds, and literal rational interval unions are checked and registered. Exhaustive existence of relation bases and the resulting all-subgroup evaluation trichotomy remain candidates. |
+| Two-difference Motzkin theorem | Complete | The exact compact-group character formula, exhaustive relation-basis trichotomy, all-modulus cyclic formulas, gcd scaling, odd-cycle criterion, and stated example are checked. The literal fixed character window and rational interval unions attain the stated bounds. The exact floor-sum evaluator, Hermite independence number, attaining character, and explicit arithmetic-operation and integer-size bounds are checked and registered. |
 | Tight six speeds and critical planes | Partial | The consecutive six-speed set has global value `1/7`. The complete split certificate for the prime-257 minimum-pair-20 probe is checked and registered, including its original normalized-support exclusion without a certificate premise. Full prime coverage, uniqueness, unconditional plane classification, and the large-norm consequence remain open. |
 | Six-speed spectrum | Partial | Global values of the consecutive set, nine sporadic examples, the displayed `5/33` example, and the positive primitive family `[1,2,3,4,5,6s]` for every `s≥1` are checked. The remaining family branch, norm reduction and exhaustive classification remain open. |
 | Eight-runner equality cases | Partial | All three displayed sets have global value `1/8`. Exhaustiveness remains open. |
@@ -1802,8 +1802,8 @@ verified original artifact `14520517281`, whose ZIP SHA-256 is
 
 This was the first witness component registration. The subsequent evaluator
 and rational-interval registrations below discharge those two obligations.
-Exhaustive relation-basis existence remains incomplete. The full merged package
-has its own verification run.
+The final relation-basis registration below discharges the exhaustive
+classification. The full merged package has its own verification run.
 
 
 ## Exact Motzkin evaluator and explicit rational intervals
@@ -1837,10 +1837,9 @@ jumps, and attain the actual extremal density. The finite independent set
 and every geometric bridge are part of the checked closure.
 
 All source and gate-input paths in both receipts were compared with the
-frozen Git blobs and were unchanged before registration. Exhaustive
-relation-basis existence and the resulting subgroup trichotomy remain
-unregistered. These two component passes do not claim a pass for the full
-merged package.
+frozen Git blobs and were unchanged before registration. The final
+relation-basis registration below discharges the remaining classification.
+These component passes do not claim a pass for the full merged package.
 
 ## Prime-257 minimum-pair-20 support certificate
 
@@ -1961,3 +1960,39 @@ These three registrations add twenty modules to the previously registered
 kernel-replay list; the three endpoints are imported by `Conjectures`, and
 all 85 required declarations are added to `ProofAudit`. These are exact
 component passes. The merged accepted package has its own full gate.
+
+
+## Complete two-difference Motzkin theorem
+
+The final relation-basis closure constructs the missing bases for every
+subgroup of the actual integer relation lattice. For arbitrary elements
+`a,b` of an abelian group, `Motzkin.relation_lattice_trichotomy` proves
+that one of the needed forms is available: the trivial lattice, one
+nonzero integer generator, or a normalized rank-two Hermite basis
+`(m,0),(s,k)` with positive `m,k` and `0 ≤ s < m`.
+The endpoint takes no rank classification or basis-existence premise.
+
+`Motzkin.compact_density_trichotomy` applies this construction to every pair
+in a compact Hausdorff abelian group with its Borel structure and an invariant
+probability measure. It gives density `1/2` in rank zero, the proved
+one-relation formula in rank one, and the exact finite-grid maximum in rank
+two. Together with the previously registered compact equality, cyclic
+formulas, fixed character window, explicit rational interval unions, and
+exact evaluator with its operation and integer-size bounds, this completes
+the stated Motzkin note. Zero differences remain included in the original
+definitions and theorem.
+
+At `244cbd23366506b2c5ea268414a6b11dddb3d5fe`, all 41 modules passed strict
+source checks, the 743-project-theorem standard-axiom audit, and independent
+replay with the unchanged pinned kernel checker.
+[Passing job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44511430092/job/135519975225)
+· [Exact receipt](verification/motzkin-relations-244cbd23.json).
+
+Artifact `14524686541` has ZIP SHA-256
+`e4747a7a28da369e25cb28c0d0d26f8d50793c8fa9faf28e2548660324a14ac9`.
+The archived receipt is byte-for-byte unchanged, with SHA-256
+`f04006021604da3cd93e6ec885452cc2f9d8765b0592770c103f325926ae1529`.
+All 52 distinct recorded source, gate, and pinned-input paths match the
+passing hashes. The two missing modules and seven additional required
+declarations are registered. The prebuild list contains 758 proof
+modules plus its two roots; the full merged-package gate remains separate.

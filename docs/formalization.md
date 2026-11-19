@@ -154,10 +154,10 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
    reduced-denominator minimality are proved.
 3. Distance graphs are complete: all density and character formulas, small
    exceptions, periodic attainments, and the infinite discrepancy branch.
-4. Two-difference Motzkin: derive the exhaustive relation-basis classification,
-   explicit rational interval witnesses, fixed character-window measure, and
-   exact algorithmic bounds. The general compact equality, stated relation
-   formulas, finite-relation attainment, and cyclic criteria are checked.
+4. Two-difference Motzkin is complete: the general compact equality,
+   exhaustive relation-basis classification, cyclic criteria, literal
+   attaining witnesses, exact evaluator, and explicit complexity bounds
+   are proved and registered.
 5. Haralambis is complete: its exact density equality and optimal pair-sum
    periodic attainment were published in `22f3a5a`.
 6. Five-speed spectrum: complete the modular lifting/enumeration outside the
@@ -548,5 +548,18 @@ merged-package gate. [Exact statements and receipts](lean-status.md#complete-uni
 The earlier Motzkin evaluator and explicit rational-interval closures are
 also registered, including arithmetic complexity and actual interval-set
 attainment. The prime-257 minimum-pair-20 support probe is registered only
-for its stated narrow scope. Exhaustive relation-basis existence and the
-remaining higher-runner classifications are incomplete. Li remains last.
+for its stated narrow scope. The final relation-basis registration below
+completes Motzkin. The remaining higher-runner classifications are incomplete.
+Li remains last.
+
+
+## Complete Motzkin relation classification
+
+The 41-module relation-basis closure at `244cbd23` passed strict source checks,
+the 743-theorem standard-axiom audit, and independent pinned-kernel replay.
+The endpoint constructs all relation bases and derives the compact-density
+trichotomy without a classification premise. Its two new modules and seven
+new required declarations are registered from the unchanged receipt, after
+comparison of all 52 recorded paths. This closes the last stated Motzkin
+obligation; the earlier equality, evaluator, complexity bounds, and explicit
+witnesses are already registered. [Exact scope and receipt](lean-status.md#complete-two-difference-motzkin-theorem).

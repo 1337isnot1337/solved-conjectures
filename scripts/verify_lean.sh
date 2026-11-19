@@ -760,6 +760,8 @@ modules=(
   Conjectures.ErdosGyarfasUniversalChecks07
   Conjectures.ErdosGyarfasUniversalChecks
   Conjectures.ErdosGyarfasUniversalMain
+  Conjectures.MotzkinLattice
+  Conjectures.MotzkinLatticeEvaluation
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

@@ -66,9 +66,16 @@ sets with proved measure and avoidance. Their 46-module closure passed strict
 sources, a 795-theorem audit, and independent replay; see the
 [rational-interval receipt](../../docs/verification/motzkin-rational-intervals-ad125705.json).
 
-Exhaustive relation-basis existence and the resulting all-subgroup evaluation
-trichotomy remain candidates.
-See [the status report](../../docs/lean-status.md) for the precise checked scope.
+The exhaustive relation-basis theorem and the resulting compact-density
+trichotomy are now checked and registered. Every integer relation subgroup
+has either no nonzero relation, one nonzero generator, or a constructed
+normalized Hermite basis. No basis-existence premise remains. The final
+41-module closure passed strict sources, a 743-theorem standard-axiom audit,
+and independent replay; see the
+[relation-basis receipt](../../docs/verification/motzkin-relations-244cbd23.json).
+
+This completes the stated result, including the evaluator and explicit
+witnesses. [Exact formalized scope](../../docs/lean-status.md#complete-two-difference-motzkin-theorem).
 
 ## Supporting files
 

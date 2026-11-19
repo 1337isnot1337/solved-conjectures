@@ -63,7 +63,7 @@ The ordinary accepted-proof workflow remains unchanged. Li is still deferred
 until the other collection results are complete.
 
 
-## Current line-size and Motzkin analytic candidates
+## Current line-size analytic candidates
 
 The accepted finite generating-function and cyclic components have been
 registered from their exact hosted receipts. Their candidate tasks remain
@@ -78,11 +78,11 @@ available as regression checks. New tasks are still unregistered:
 | `coefficient-rescale` | `LineSizeGeneratingRescale` | Absolute interchange and the supported Fourier change of variables |
 | `saddle-integral` | `LineSizeSaddleIntegral` | Actual grid, pointwise limit, majorant, and supported integral limit |
 | `sharp-asymptotic` | `LineSizeCoefficientAsymptotic` | Literal count/model ratio and asymptotic equivalence with the stated constant |
-| Motzkin `relations` | `MotzkinLatticeEvaluation` | Exhaustive subgroup bases and compact-density trichotomy |
 
-The Motzkin `evaluator` and `rational-intervals` tasks have now passed all three
-strict gates and are registered with their exact receipts. Their tasks remain
-available for regression checks. The `relations` task still requires a pass.
+The Motzkin `evaluator`, `rational-intervals`, and `relations` tasks have passed
+all three strict gates and are registered with their exact receipts. These
+tasks remain available for regression checks. The final relation-basis pass
+completes the stated Motzkin result.
 Every remaining task requires strict source checking, a complete theorem axiom
 audit, and independent replay of its exact closure.
 

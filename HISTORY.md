@@ -1,5 +1,19 @@
 # History
 
+## 2026-11-19 — Complete two-difference Motzkin formalization
+
+Registered the exhaustive integer relation-basis classification and its
+compact-density trichotomy. Every pair now receives the appropriate zero-rank,
+one-relation, or rank-two Hermite formula without an assumed basis. The exact
+41-module closure passed strict sources, a 743-theorem standard-axiom audit,
+and independent pinned-kernel replay. Two modules and seven required
+endpoints join the accepted package after comparison of every recorded hash.
+
+This closes the stated Motzkin note, including its earlier compact and cyclic
+equalities, exact evaluator with complexity bounds, and explicit attaining
+witnesses. The full merged-package gate remains separate. Li remains last.
+[Exact scope and receipt](docs/lean-status.md#complete-two-difference-motzkin-theorem).
+
 ## 2026-11-19 — Checked sharp cover, voltage normalization, and border transport
 
 Registered thirteen unchanged proof modules after four exact hosted closures

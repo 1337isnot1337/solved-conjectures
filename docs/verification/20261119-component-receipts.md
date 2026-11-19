@@ -41,3 +41,23 @@ contradiction; see [the full receipt](hadamard598-multiplier-daa7d2c5.json).
 
 Precise mathematical scopes and remaining hypotheses are in
 [the status report](../lean-status.md).
+
+
+## Final Motzkin relation-basis receipt
+
+The final `relations` artifact was recovered directly and verified against
+its ZIP SHA-256 and exact receipt bytes. At
+`244cbd23366506b2c5ea268414a6b11dddb3d5fe`, its 41 modules passed strict
+sources, the 743-theorem axiom audit, and independent pinned-kernel replay.
+All 15 required endpoints passed; seven are new to the accepted audit.
+The two missing modules are now registered.
+
+[Passing job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44511430092/job/135519975225)
+· [Unmodified receipt](motzkin-relations-244cbd23.json).
+
+- Artifact `14524686541` ZIP SHA-256: `e4747a7a28da369e25cb28c0d0d26f8d50793c8fa9faf28e2548660324a14ac9`.
+- Receipt SHA-256: `f04006021604da3cd93e6ec885452cc2f9d8765b0592770c103f325926ae1529`.
+
+All 52 distinct source/gate/input paths match the passing snapshot. This
+closes the stated Motzkin result together with its earlier registered
+components. The full merged-package verification remains a separate gate.
