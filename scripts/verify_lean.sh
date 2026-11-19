@@ -598,6 +598,18 @@ modules=(
   Conjectures.HadamardAutomorphismRelativeNorm
   Conjectures.HadamardAutomorphismQuadraticConverse
   Conjectures.HadamardAutomorphismQuadraticUnique
+  Conjectures.HadamardBorderSymmetryArithmetic
+  Conjectures.HadamardBorderSymmetryPrime
+  Conjectures.HadamardBorderSymmetryOrbits
+  Conjectures.HadamardBorderSymmetryPairs
+  Conjectures.HadamardBorderSymmetryWeighted
+  Conjectures.HadamardBorderSymmetryCore
+  Conjectures.HadamardBorderSymmetryProjection
+  Conjectures.HadamardBorderSymmetryGroupArithmetic
+  Conjectures.HadamardBorderSymmetryKernel
+  Conjectures.HadamardBorderSymmetryDomain
+  Conjectures.HadamardBorderSymmetryMain
+  Conjectures.HadamardBorderSymmetryTransfer
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

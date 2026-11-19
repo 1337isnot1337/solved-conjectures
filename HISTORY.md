@@ -1,5 +1,23 @@
 # History
 
+## 2026-11-19 — Complete fixed-border multiplier and orbit bounds
+
+Registered all 12 border-symmetry proof modules after their exact closure at
+`682d0917` passed strict sources, a 216-theorem standard-axiom audit, and the
+unchanged pinned kernel replay. The theorem applies to actual sign rows on
+every finite abelian group with a subgroup of size 149 and index four.
+The full common multiplier group is cyclic of order dividing four, and every
+preserving subgroup leaves at least 151 actual sign orbits. Product coordinates
+and all transports are proved; no split-domain or normalized-pattern premise
+is added. The proof uses raw compressed correlations and does not require
+the fourteen-pattern enumeration.
+[Receipt](docs/verification/hadamard-border-transfer-682d0917.json) ·
+[Checked statement](docs/lean-status.md#complete-fixed-border-multiplier-and-orbit-bounds).
+
+Issue 22 is complete. The separate sequence restrictions and fixed-border
+construction remain under issue 17. Issue 23 takes the sharp 95-vertex
+Erdős–Gyárfás example in separate candidate sources. Li remains deferred.
+
 ## 2026-11-19 — Checked literal mask checker and exact domains
 
 Registered two exact local-mask checker modules after their ten-module hosted

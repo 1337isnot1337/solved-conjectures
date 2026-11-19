@@ -1,0 +1,79 @@
+{
+  "checked_sources": [
+    "Conjectures.HadamardBorderSymmetryArithmetic",
+    "Conjectures.HadamardBorderSymmetryPrime",
+    "Conjectures.HadamardBorderSymmetryDomain",
+    "Conjectures.HadamardBorderSymmetryPairs",
+    "Conjectures.HadamardBorderSymmetryOrbits",
+    "Conjectures.HadamardBorderSymmetryWeighted",
+    "Conjectures.HadamardBorderSymmetryCore",
+    "Conjectures.HadamardBorderSymmetryProjection",
+    "Conjectures.HadamardBorderSymmetryKernel",
+    "Conjectures.HadamardBorderSymmetryGroupArithmetic",
+    "Conjectures.HadamardBorderSymmetryMain",
+    "Conjectures.HadamardBorderSymmetryTransfer"
+  ],
+  "commit": "682d0917b1cf7cfbe3bee2e003e1df0735b23d0f",
+  "completed_checks": [
+    "strict source checks, warnings treated as errors",
+    "module-ownership axiom whitelist and required theorems",
+    "independent exact-closure kernel replay"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-hadamard-border-symmetry-candidates.yml": "40548534eed3a21c1087ed92586ac270f6b1514e63006691f310e31b92cea244",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_hadamard_border_symmetry_candidate.py": "1edee81687b5a9cb3d3520cc9c9a9434c1d54062e8e2e353b85aaed90a0bfb17",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "project_modules": [
+    "Conjectures.HadamardBorderSymmetryArithmetic",
+    "Conjectures.HadamardBorderSymmetryPrime",
+    "Conjectures.HadamardBorderSymmetryDomain",
+    "Conjectures.HadamardBorderSymmetryPairs",
+    "Conjectures.HadamardBorderSymmetryOrbits",
+    "Conjectures.HadamardBorderSymmetryWeighted",
+    "Conjectures.HadamardBorderSymmetryCore",
+    "Conjectures.HadamardBorderSymmetryProjection",
+    "Conjectures.HadamardBorderSymmetryKernel",
+    "Conjectures.HadamardBorderSymmetryGroupArithmetic",
+    "Conjectures.HadamardBorderSymmetryMain",
+    "Conjectures.HadamardBorderSymmetryTransfer"
+  ],
+  "required_theorems": [
+    "HadamardBorderSymmetry.rowsInProduct149_isBorderCore",
+    "HadamardBorderSymmetry.conjugated_multiplier_mem_iff",
+    "HadamardBorderSymmetry.card_multiplierOrbitOn_eq",
+    "HadamardBorderSymmetry.common_multiplier_card_dvd_four_on_subgroup149",
+    "HadamardBorderSymmetry.common_multiplier_card_le_four_on_subgroup149",
+    "HadamardBorderSymmetry.common_multiplier_isCyclic_on_subgroup149",
+    "HadamardBorderSymmetry.common_multiplier_orbit_count_ge_151_on_subgroup149",
+    "HadamardBorderSymmetry.symmetry_subgroup_card_dvd_four_on_subgroup149",
+    "HadamardBorderSymmetry.symmetry_subgroup_isCyclic_on_subgroup149",
+    "HadamardBorderSymmetry.symmetry_subgroup_orbit_count_ge_151_on_subgroup149"
+  ],
+  "source_failures": {},
+  "source_sha256": {
+    "lean/Conjectures/HadamardBorderSymmetryArithmetic.lean": "19ec735b00834fa5c138e254648bb547e11c5c38a3b2b63241e5306baf4c882b",
+    "lean/Conjectures/HadamardBorderSymmetryCore.lean": "93aa4eb361897b81486b146057e6688724e6bdf2cb31fdda527baf6f391c84c9",
+    "lean/Conjectures/HadamardBorderSymmetryDomain.lean": "50b892bfa2daaeffe4ebb9ca717ac9c042f3c2d816b54d7036b9b620fca2fd44",
+    "lean/Conjectures/HadamardBorderSymmetryGroupArithmetic.lean": "f2f3a134c939038b0a451853f85efc0e112519823c07627bc4187c3b28a6a801",
+    "lean/Conjectures/HadamardBorderSymmetryKernel.lean": "36e3a5a21674536614bfa10b25903b939ac454d18f70c61d8aa1fbd15c96d3aa",
+    "lean/Conjectures/HadamardBorderSymmetryMain.lean": "47165b94c6ee78c27475419805087852ed76bec02f1880f9008830d1a9d68ec1",
+    "lean/Conjectures/HadamardBorderSymmetryOrbits.lean": "57bc95329594acc4f338e4b1509aea9aba1676edf4ce1515fe361dab24481c63",
+    "lean/Conjectures/HadamardBorderSymmetryPairs.lean": "69062c12f1dd827ab28f00abb71612f6499fcf367bf6cd715f9cfca85b246e4b",
+    "lean/Conjectures/HadamardBorderSymmetryPrime.lean": "ef48ab9e5cb729c449f3ceefe95afe1685959db6bd488bd6a3ba0dadc7470431",
+    "lean/Conjectures/HadamardBorderSymmetryProjection.lean": "7e658b4ef73bb8eec1ed476c70627adeb7499df3d1118fbecabf542a87843548",
+    "lean/Conjectures/HadamardBorderSymmetryTransfer.lean": "3971a6248e001e87b147d37a5a53a56bc4e399dd40200c11f6d0ea760b03dd58",
+    "lean/Conjectures/HadamardBorderSymmetryWeighted.lean": "4315f8b6f99146367ca5e2ffb8617e19ce56e842b30a0cde3626ae8e7e482030",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.HadamardBorderSymmetryTransfer",
+  "task": "transfer"
+}

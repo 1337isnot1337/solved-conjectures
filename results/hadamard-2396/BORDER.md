@@ -61,3 +61,51 @@ None of the 14 candidate patterns satisfies this. Consequently $U$ injects into 
 If 37 divides $|U|$, an element of order 37 acts trivially on $Q$ and has four length-37 orbits and one singleton on each $C_{149}$ fiber. A fiber sum must then be congruent to $+1$ or $-1$ modulo 37. Every candidate fiber sum has magnitude less than 36, so every one must be $+1$ or $-1$. That would require $d=1$ and $a=b=c=-1$, contrary to the squared-row-sum equation. Thus $|U|$ divides four.
 
 Even the largest permitted common multiplier group leaves at least 151 sign orbits per generator. The 592 positions with nonzero $C_{149}$ coordinate contribute at least 148. On the four remaining positions a cyclic group of order dividing four has image of order at most two on $Q$, with at least three orbits. This count concerns fixed common multipliers. Other forms of symmetry may impose different constraints.
+
+## Lean verification
+
+The symmetry theorem in the preceding section is fully formalized, including
+arbitrary finite abelian domains and every common multiplier subgroup. The
+12-module closure passed strict source checks, a 216-theorem standard-axiom
+audit, and independent replay by the unchanged pinned Lean kernel checker.
+[Receipt](../../docs/verification/hadamard-border-transfer-682d0917.json) ·
+[Exact checked scope](../../docs/lean-status.md#complete-fixed-border-multiplier-and-orbit-bounds).
+The earlier normalization and matrix border construction remain separate
+formalization obligations.
+
+The formal proof uses the raw correlations and does not require the fourteen
+normalized baseline patterns. Write $C_i(q)=\sum_z F_i(q,z)$ for the 16 fiber
+sums. Summing over fiber shifts gives
+
+$$
+\sum_{i,q} C_i(q)^2=608,\qquad
+\sum_{i,q} C_i(q+h)C_i(q)=596\quad(h\ne0).
+$$
+
+Thus $|C_i(q)|\le24$. A nontrivial quotient automorphism preserving all rows
+has a moved pair $a,a+h$, with $h$ of order two and
+$Q=\{0,h,a,a+h\}$. The actual correlation at $(h,0)$ and the compressed
+correlation at $a$ imply
+
+$$
+\sum_i |C_i(0)+C_i(h)|\le2,\qquad
+\sum_i C_i(a)\bigl(C_i(0)+C_i(h)\bigr)=298.
+$$
+
+The absolute value of the latter sum is at most $24\cdot2=48$, a
+contradiction. This proves injectivity of the actual multiplier projection.
+An element of order 37 would force each fiber sum to be congruent to $1$ or
+$-1$ modulo 37. The same magnitude bound then makes all 16 fiber sums signs,
+contradicting energy 608. The unit group is cyclic of order 148, so the common
+multiplier group is cyclic of order dividing four.
+
+For the orbit bound, the origin has a singleton orbit. A nonzero point in the
+characteristic four-torsion subgroup has an orbit of size at most two. Every
+orbit has size at most four. If there are $m$ actual orbits, these two deficits
+give $596+5\le4m$, hence $m\ge151$.
+
+For an original group $G$ and subgroup $S$, the formalization constructs the
+product coordinates from the actual quotient map and the retraction
+$g\mapsto g-149g$ onto $S$. Conjugation identifies the full row-preserving
+subgroup and its orbit quotient with those in product coordinates. No
+splitting or prescribed coordinate action is an extra hypothesis.

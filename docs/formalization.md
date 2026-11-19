@@ -334,11 +334,11 @@ applies to every subgroup of the actual signed automorphism group.
 
 The quadratic-field uniqueness and exact integer-coordinate equivalence are
 also checked. The separate sequence, quotient enumeration, and fixed-border
-statements remain under issue 17. The later fixed-border common
-multiplier bound and 151-orbit statement are now claimed under
+statements remain under issue 17. The later fixed-border common multiplier
+bound and 151-orbit statement are complete under
 [issue 22](https://github.com/1337isnot1337/solved-conjectures/issues/22), in
-new `HadamardBorderSymmetry*.lean` files. These do not establish Hadamard
-existence at 2396. Li has not been started.
+the 12 `HadamardBorderSymmetry*.lean` files described below. These do not
+establish Hadamard existence at 2396. Li has not been started.
 
 ## Frankl local certificate checkers — 19 November 2026
 
@@ -412,3 +412,37 @@ every module. The two newly registered sources match that snapshot exactly.
 This registers reusable checker semantics. The full finite weight collection
 and graph/rank tables remain separate obligations. The complete span-four
 theorem remains incomplete, and the full merged-package gate is separate.
+
+## Complete fixed-border symmetry theorem — 19 November 2026
+
+Issue 22 is complete. The 12 `HadamardBorderSymmetry*.lean` sources prove
+the cyclic common multiplier bound and the 151-orbit lower bound from the
+literal sign and autocorrelation hypotheses. The final statement quantifies
+over arbitrary finite abelian domains and every subgroup preserving all four
+rows. The full row-preserving group is also defined and covered explicitly.
+
+The proof constructs the subgroup splitting, rather than assuming product
+coordinates. It then transports the rows, correlations, full automorphism
+subgroup, and actual orbit quotient. The symmetry obstruction uses compressed
+energy 608 and correlation 596 directly, so the fourteen-pattern enumeration
+and normalized baseline forms are unnecessary inputs.
+
+At `682d0917`, the complete 12-module closure passed strict source compilation,
+the standard-axiom audit of 216 project theorems, all required endpoints, and
+independent replay by the unchanged pinned kernel checker. Source and gate
+hashes match the archived receipt. The earlier product-domain assembly passed
+its ten-module, 154-theorem gate at `2006a76a`.
+[Full receipt](verification/hadamard-border-transfer-682d0917.json) ·
+[Product-domain receipt](verification/hadamard-border-main-2006a76a.json) ·
+[Statement and proof](../results/hadamard-2396/BORDER.md#lean-verification).
+
+The complete closure can be reproduced from the repository root with:
+
+```bash
+python3 scripts/verify_hadamard_border_symmetry_candidate.py transfer
+```
+
+All 12 sources are now registered in the accepted root, theorem audit, and
+kernel-replay list. The separate merged-package gate still applies. This
+registration does not include the sequence restrictions, quotient certificates,
+pattern enumeration, or matrix border construction owned by issue 17.

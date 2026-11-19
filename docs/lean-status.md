@@ -37,7 +37,7 @@ never additional Lean axioms.
 | CUT arithmetic periodicity | Complete | The uniform terminating decision test and exhaustive candidate enumeration are proved for every finite cut set and proposed arithmetic tail. Compact quotient/residue certificates identify both actual example games at every pile size and prove least eventual period 12, saltus 8, and earliest start 7, hence positive-pile preperiod 6. |
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
-| Hadamard order-2396 partial results | Partial overall; automorphism theorem and both norm proofs complete | For every real Hadamard matrix of order 2396, the full signed row/column automorphism group has no element of order 479, and 479 divides neither its cardinality nor the cardinality of any subgroup quotient. Both norm-obstruction proofs, quadratic-subfield uniqueness, and the exact integer-coordinate characterization are checked. The length-1197/598 sequence restrictions, quotient certificates, fixed-border construction, and later multiplier/orbit bounds remain obligations under issues 17 and 22, keeping the result directory partial. |
+| Hadamard order-2396 partial results | Partial overall; automorphism, both norm proofs, and border symmetry bounds complete | For every real Hadamard matrix of order 2396, the full signed row/column automorphism group has no element of order 479, and 479 divides neither its cardinality nor any subgroup-quotient cardinality. Both norm proofs and the exact quadratic-integer model are checked. For the fixed-border core on every finite abelian domain with a subgroup of size 149 and index four, the full common multiplier group is cyclic of order dividing four; every preserving subgroup leaves at least 151 actual sign orbits. The length-1197/598 sequence restrictions, quotient certificates, and fixed-border construction remain obligations under issue 17. |
 | Lonely-runner two insertions | Not formalized | The arbitrary two-speed insertion theorem, acceleration bridge, unbounded branch, finite cases, and three-insertion obstruction are not registered in the accepted package. Published candidate sources remain under issue 12. |
 | Erdős–Gyárfás abelian covers | Not formalized | The arbitrary abelian-cover cycle theorem and sharp connected 95-vertex example remain under issue 18. The general minimum-degree-three conjecture is outside this result. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
@@ -271,13 +271,10 @@ source build, kernel replay, and a refreshed whitelist audit over 724 project
 theorem declarations. The detailed continuation plan and measured certificate
 performance limits are in `results/cut-arithmetic-periodicity/LEAN_PLAN.md`.
 
-The [two distance-graph results](../results/distance-graph-densities/PROOF.md) have written proofs and executable finite verifiers. The [classification for every parameter](../results/distance-graph-densities/CLASSIFICATION.md) extends both families. Their Lean formalizations are pending.
-
-The [two-difference Motzkin identity](../results/two-difference-motzkin/PROOF.md) has a written proof and finite checks. Its compact-group theorem awaits Lean formalization.
-
-The [Liu–Zhu packing and Natalchenko–Sagdeev covering proof](../results/symmetric-four-point-density/PROOF.md) is a written argument with finite exact-cover checks. Lean formalization is pending.
-
-The [two-nonmixed-gap packing theorem](../results/nonmixed-gap-packing/PROOF.md) has a written proof and finite checks. The packing density and character identity await Lean formalization.
+At this 18 November checkpoint, the distance-graph classifications, compact
+Motzkin theorem, symmetric-four-point densities, and nonmixed-gap formulas
+were still pending. Their later verified scopes appear in the current status
+table and the subsequent component sections below.
 
 ## Complete padding and lower-value semantics
 
@@ -1477,8 +1474,9 @@ all signed row/column permutation pairs preserving the given matrix. The
 quotient statement holds for the coset cardinality of every subgroup, and
 therefore covers the common-sign quotient.
 
-This completes the automorphism theorem. The sequence and fixed-border
-results in the same result directory remain separate obligations.
+This completes the automorphism theorem. The sequence restrictions and
+fixed-border construction remain separate obligations. The later fixed-border
+symmetry result is completed in the section below.
 
 ## Complete independent ideal-class norm obstruction
 
@@ -1597,3 +1595,48 @@ every module. The two newly registered sources match that snapshot exactly.
 This registers reusable checker semantics. The full finite weight collection
 and graph/rank tables remain separate obligations. The complete span-four
 theorem remains incomplete, and the full merged-package gate is separate.
+
+## Complete fixed-border multiplier and orbit bounds
+
+The exact source snapshot `682d0917b1cf7cfbe3bee2e003e1df0735b23d0f`
+passed strict source compilation for all 12 modules, a transitive standard-axiom
+audit of 216 project theorems, and independent replay by the unchanged pinned
+kernel checker. The receipt records every source, toolchain, manifest, and
+gate hash. All registered proof sources match that snapshot.
+[Exact receipt](verification/hadamard-border-transfer-682d0917.json) ·
+[Hosted gate](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44492941039/job/135452942122).
+The product-domain assembly also has its own ten-module, 154-theorem receipt
+at `2006a76a`.
+[Product-domain receipt](verification/hadamard-border-main-2006a76a.json).
+
+The hypotheses are the actual four sign rows on an arbitrary finite abelian
+group `G`, a subgroup `S` of cardinality 149 and index four, and combined
+periodic autocorrelation −12 on nonzero elements of `S` and 4 outside `S`.
+The full group of additive automorphisms preserving those rows is cyclic
+and has order dividing four. For every subgroup `U` preserving the rows,
+its order also divides four and its actual action on `G` has at least 151
+orbits. The group definition imposes no coordinate-form or subgroup-preservation
+hypothesis on its automorphisms.
+
+The strongest original-domain endpoints are
+`symmetry_subgroup_card_dvd_four_on_subgroup149`,
+`symmetry_subgroup_isCyclic_on_subgroup149`, and
+`symmetry_subgroup_orbit_count_ge_151_on_subgroup149`. The corresponding
+`common_multiplier_*_on_subgroup149` endpoints apply to the full actual group.
+They are registered in the root import, required-theorem audit, and replay list.
+
+The proof constructs `G ≃+ (G ⧸ S) × ZMod 149`, maps `S` exactly to the
+second factor, and transports the actual rows, correlations, symmetry group,
+and orbit quotient. The multiplier injection follows from raw compressed
+correlations: energy 608 bounds every fiber sum by 24, while a nontrivial
+quotient symmetry forces a weighted correlation 298 whose absolute value is
+at most 48. An order-37 multiplier would force all 16 fiber sums to be signs,
+contradicting that energy. The cyclic unit group has order 148, so Cauchy's
+theorem leaves only group orders dividing four. The origin orbit and a small
+nonzero four-torsion orbit then give the 151-orbit bound.
+
+This completes the final symmetry section of `BORDER.md`. The length-1197
+and length-598 sequence restrictions, quotient/no-lift certificates, pattern
+enumeration, and fixed-border matrix construction remain under issue 17.
+The full merged-package gate is separate from this exact component check.
+Hadamard existence at order 2396 remains open, and Li remains deferred.

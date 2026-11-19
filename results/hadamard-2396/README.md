@@ -10,10 +10,10 @@ For a third route, we show that a core with quotient of order four and the stipu
 
 ## Checked Lean components
 
-**Lean status:** partial. The complete signed-automorphism theorem and both
-cyclotomic norm-obstruction proofs are Lean-verified. The sequence restrictions,
-quotient/no-lift certificates, fixed-border construction, and later common
-multiplier/orbit bounds remain separate obligations.
+**Lean status:** partial. The complete signed-automorphism theorem, both
+cyclotomic norm-obstruction proofs, and the fixed-border common multiplier
+and orbit bounds are Lean-verified. The sequence restrictions, quotient/no-lift
+certificates, and fixed-border construction remain separate obligations.
 
 For every real Hadamard matrix of order 2396, the full signed row/column
 automorphism group has no element of order 479. Its cardinality and the
@@ -36,6 +36,16 @@ coefficient argument, literal Fourier identities, signed normalization,
 unique quadratic subfield and its exact equal-parity description of integer
 coordinates. [Quadratic-model receipt](../../docs/lean-status.md#complete-quadratic-integer-model). These formalizations do not assert existence of a Hadamard matrix
 at 2396.
+
+For an arbitrary finite abelian group with a subgroup of size 149 and index
+four, the actual core correlation equations force the full common multiplier
+group to be cyclic of order dividing four. Every subgroup preserving the
+four rows has at least 151 actual sign orbits. The formal proof constructs
+the product coordinates, transports the rows and correlations, and identifies
+the full symmetry group and its orbit quotient. No splitting, normalization,
+or baseline-pattern enumeration is assumed. All 12 modules passed strict
+sources, a 216-theorem standard-axiom audit, and unchanged pinned-kernel replay.
+[Complete multiplier theorem and receipt](../../docs/lean-status.md#complete-fixed-border-multiplier-and-orbit-bounds).
 
 ## Reproduce the finite checks
 
