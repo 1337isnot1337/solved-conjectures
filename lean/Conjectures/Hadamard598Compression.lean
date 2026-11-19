@@ -34,7 +34,10 @@ def compressed (f : Rows Space) : Rows (ZMod 26) :=
 theorem compressed_apply_eq_compress (f : Rows Space) (i : Fin 4) (q : ZMod 26) :
     compressed f i q = compress projection (f i) q := by
   classical
-  simp [compressed, compress, projection, Fintype.sum_prod_type, Finset.sum_ite_irrel]
+  change (∑ z, f i (q, z)) =
+    ∑ x : Space, if x.1 = q then f i x else 0
+  rw [Fintype.sum_prod_type, Finset.sum_comm]
+  simp only [Fintype.sum_ite_eq']
 
 theorem compressed_eq_compress (f : Rows Space) :
     compressed f = fun i => compress projection (f i) := by

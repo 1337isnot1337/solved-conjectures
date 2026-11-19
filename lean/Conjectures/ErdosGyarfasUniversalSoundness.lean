@@ -95,8 +95,9 @@ theorem coverageCheck_sound (positions : List Position) (branches : List Branch)
       (b.left = p ∧ b.right = q) ∨ (b.left = q ∧ b.right = p) := by
   have hpq := List.all_eq_true.mp
     (List.all_eq_true.mp hcheck p hp) q hq
+  have hcondition : p.1 = q.1 ∧ p ≠ q := ⟨hbase, hne⟩
   have hany : branches.any (fun b => branchMatches b p q) = true := by
-    simpa only [pairCovered, ite_eq_left ⟨hbase, hne⟩] using hpq
+    simpa only [pairCovered, ite_eq_left hcondition] using hpq
   obtain ⟨b, hb, hmatches⟩ := List.any_eq_true.mp hany
   exact ⟨b, hb, of_decide_eq_true hmatches⟩
 
@@ -197,9 +198,9 @@ theorem checked_table_sound (labels : Fin 7 → A) (lookup : ℕ → Node) (coun
       · obtain ⟨p, hp, q, hq, heq, hne⟩ :=
           collision_of_not_nodup (liftPosition (chordHom labels))
             (lookup i).prefix hlocal.2.1 hnodup
-        have hbase : p.1 = q.1 := congrArg Prod.fst heq
+        have hbase : p.1 = q.1 := congrArg (fun z : Fin 5 × A => z.1) heq
         have hphase : chordHom labels p.2 = chordHom labels q.2 :=
-          congrArg Prod.snd heq
+          congrArg (fun z : Fin 5 × A => z.2) heq
         obtain ⟨b, hb, hmatch⟩ :=
           coverageCheck_sound (lookup i).prefix (lookup i).branches
             hcoverage p q hp hq hbase hne

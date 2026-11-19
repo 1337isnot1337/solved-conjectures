@@ -48,7 +48,7 @@ theorem integral_coefficientFourierTerm (a : ℕ → ℂ) (q : ℝ) (n m : ℕ) 
   rw [intervalIntegral.integral_const_mul,integral_frequency]
   by_cases hmn : m=n
   · subst m
-    simp only [ite_eq_left (show n=n from rfl)]
+    rw [ite_eq_left rfl, ite_eq_left rfl]
     ring
   · simp only [ite_eq_right hmn,mul_zero]
 

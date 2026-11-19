@@ -226,7 +226,8 @@ theorem feasible_mem_rowBlock (r : Row) (hr : Feasible r) :
   apply List.mem_flatMap.mpr
   refine ⟨r 0, mem_zeroTriples (r 0) _ (hr.digit 0) hsum, ?_⟩
   dsimp only
-  rw [fin3_eta r, ite_eq_left ⟨hr.energy, hr.nineteen⟩]
+  have hbounds : energy133 r ≤ 2245 ∧ norm19 r ≤ 9584 := ⟨hr.energy, hr.nineteen⟩
+  rw [fin3_eta r, ite_eq_left hbounds]
   exact List.mem_singleton.mpr rfl
 
 theorem feasible_mem_rowsFor (r : Row) (hr : Feasible r) :
