@@ -10,10 +10,12 @@ For a third route, we show that a core with quotient of order four and the stipu
 
 ## Checked Lean components
 
-**Lean status:** partial. The complete signed-automorphism theorem, both
-cyclotomic norm-obstruction proofs, and the fixed-border common multiplier
-and orbit bounds are Lean-verified. The sequence restrictions, quotient/no-lift
-certificates, and fixed-border construction remain separate obligations.
+**Lean status:** partial overall. The signed-automorphism theorem, both
+norm-obstruction proofs, fixed-border symmetry bounds, complete conditional
+border construction with all fourteen patterns, and length-598 order-eleven
+obstruction are Lean-verified. For length 1197 the common-multiplier order is
+proved to divide 27; the sharper bound of nine, finite quotient/no-lift
+certificates, and two-row construction remain separate obligations.
 
 For every real Hadamard matrix of order 2396, the full signed row/column
 automorphism group has no element of order 479. Its cardinality and the
@@ -53,8 +55,8 @@ modules construct the actual border matrices for every quotient of
 cardinality four and prove the reflected cross term. The canonical
 sixteen-position layout is connected to the block-product layout. The
 exact closure passed a 66-theorem audit and independent kernel replay.
-The finite identities remain premises; the literal finite data and final
-Hadamard assembly remain separate obligations.
+The later literal-certificate and full-construction registrations below
+discharge those finite identities and the final Hadamard assembly.
 [Transport statement and receipt](../../docs/lean-status.md#fixed-border-certificate-transport).
 
 The actual row-normalization operations are also checked. Given one constant
@@ -62,8 +64,8 @@ and three single-exception compression shapes, the theorem constructs a
 row permutation, signs, and translations on the original group. The
 resulting rows have the stated normalized compressions, remain sign-valued,
 and preserve every combined periodic autocorrelation. This two-module
-closure passed a 14-theorem audit and independent kernel replay. Deriving
-the input shapes from the raw correlations remains under issue 17.
+closure passed a 14-theorem audit and independent kernel replay. The later
+full-construction proof below derives its input shapes from the raw correlations.
 [Actual row operations and receipt](../../docs/lean-status.md#actual-row-normalization-from-compression-shapes).
 
 ## Reproduce the finite checks
@@ -93,5 +95,19 @@ eleven cannot fix all four rows, including after independent choices of
 origins. Its eight-module closure passed strict source checks, a 141-theorem
 axiom audit, and independent pinned-kernel replay.
 [Length-598 receipt](../../docs/verification/hadamard598-multiplier-daa7d2c5.json).
-The length-1197 multiplier bound, quotient enumeration, compression-shape
-derivation, and final bordered construction remain candidates.
+The complete conditional border construction is now checked from the original
+sign rows and raw correlations on an arbitrary finite abelian group with an
+actual index-four subgroup. The proof derives the compression shapes and all
+normalization operations, discharges the actual core and literal-border
+identities, and constructs the final matrix. For subgroup size 149 it returns
+a sign matrix on `Fin 2396` with Gram matrix `2396 • 1`. The fourteen-pattern
+classification is also derived from the original rows, with the actual sign,
+translation, and permutation witnesses retained.
+[Construction and pattern receipts](../../docs/lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns).
+
+For an actual length-1197 Legendre pair, the common-multiplier order is now
+proved to divide 27. The row sums, centering, group coordinates, and odd-order
+obstruction are all derived. An invariant quotient of order three is also
+constructed. The sharper bound of nine still requires exclusion of order 27
+through the finite quotient/no-lift packet.
+[Reduction receipts](../../docs/lean-status.md#checked-length-1197-reduction-to-order-27).

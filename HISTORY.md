@@ -1,5 +1,21 @@
 # History
 
+## 2026-11-19 — Complete conditional Hadamard border construction
+
+Registered the full fixed-border construction from the original sign rows
+and correlation equations on every finite abelian group with an index-four
+subgroup. The proof derives normalization, checks the actual core and literal
+border, and returns the final matrix. Its size-149 specialization has order
+2396. The fourteen baseline patterns are exhaustive with actual row-operation
+witnesses. Binary rows satisfying the hypotheses are still required.
+
+The length-1197 multiplier group is also proved to have order dividing 27,
+with its invariant quotient of order three constructed. The sharper bound of
+nine and finite quotient/no-lift proof remain pending. Four exact passing
+source/audit/kernel receipts register 31 modules and 17 required endpoints,
+after comparison of all fifty recorded paths. The full merged gate remains
+separate. [Scope and receipts](docs/lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns).
+
 ## 2026-11-19 — Complete two-difference Motzkin formalization
 
 Registered the exhaustive integer relation-basis classification and its

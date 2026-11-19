@@ -9,6 +9,23 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `HadamardBorderConstruction.borderedMatrix_sign,
+    `HadamardBorderConstruction.borderedMatrix_gram,
+    `HadamardBorderConstruction.bordered_index_card,
+    `HadamardBorderConstruction.exists_bordered_matrix_of_correlation,
+    `HadamardBorderConstruction.exists_hadamard_fin_of_correlation,
+    `HadamardBorderConstruction.exists_hadamard_2396_of_correlation,
+    `HadamardBorderConstruction.exists_hadamard_fin_of_subgroup_correlation,
+    `HadamardBorderConstruction.exists_hadamard_2396_of_subgroup_correlation,
+    `HadamardBorderConstruction.exists_pattern_of_odd_equation,
+    `HadamardBorderConstruction.exists_normalized_sign_rows_with_pattern,
+    `HadamardLegendre.common_multiplier_card_dvd_twenty_seven,
+    `HadamardLegendre.common_multiplier_card_le_twenty_seven,
+    `HadamardLegendre.multiplier_subgroup_card_dvd_twenty_seven,
+    `HadamardLegendre.common_multiplier_card_le_nine_of_ne_twenty_seven,
+    `HadamardLegendre.exists_surjective_quotient_three,
+    `HadamardLegendre.nonzero_hom_zmod_three_surjective,
+    `HadamardLegendre.exists_invariant_quotient_three,
     `Motzkin.Lattice.exists_triangular_form,
     `Motzkin.Lattice.hermite_coefficients_unique,
     `Motzkin.Lattice.subgroup_two_generated,

@@ -255,3 +255,7 @@ import Conjectures.HadamardFixedBorderLiteral
 import Conjectures.Hadamard598Multiplier
 import Conjectures.ErdosGyarfasUniversalMain
 import Conjectures.MotzkinLatticeEvaluation
+import Conjectures.HadamardBorderSubgroup
+import Conjectures.HadamardBorderPatternReduction
+import Conjectures.HadamardLegendreReduction
+import Conjectures.HadamardLegendreInvariantQuotient

@@ -1,0 +1,62 @@
+{
+  "checked_sources": [
+    "Conjectures.HadamardBorderNormalizationTransportOps",
+    "Conjectures.HadamardBorderPatterns",
+    "Conjectures.HadamardBorderVariance",
+    "Conjectures.HadamardBorderCompression",
+    "Conjectures.HadamardBorderNormalizationTransport",
+    "Conjectures.HadamardBorderVarianceRows",
+    "Conjectures.HadamardBorderCompressionRows",
+    "Conjectures.HadamardBorderVarianceNormalization",
+    "Conjectures.HadamardBorderPatternReduction"
+  ],
+  "commit": "e25e0dcdc69ea1076df8c628b3a459eb12b0fe97",
+  "completed_checks": [
+    "strict source checks, warnings treated as errors",
+    "module-ownership axiom whitelist and required theorems",
+    "independent exact-closure kernel replay"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-hadamard-border-construction-candidates.yml": "f83966495cfafe073fc829f3620d3c3ed39c74c93b9b9deb01f2f2b91eb64079",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_hadamard_border_construction_candidate.py": "913696cf90c186c81a6601b6c0cb685f0c2862ff59efcb8a21bb63c71d0c9a93",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "project_modules": [
+    "Conjectures.HadamardBorderNormalizationTransportOps",
+    "Conjectures.HadamardBorderPatterns",
+    "Conjectures.HadamardBorderVariance",
+    "Conjectures.HadamardBorderCompression",
+    "Conjectures.HadamardBorderNormalizationTransport",
+    "Conjectures.HadamardBorderVarianceRows",
+    "Conjectures.HadamardBorderCompressionRows",
+    "Conjectures.HadamardBorderVarianceNormalization",
+    "Conjectures.HadamardBorderPatternReduction"
+  ],
+  "required_theorems": [
+    "HadamardBorderConstruction.exists_pattern_of_odd_equation",
+    "HadamardBorderConstruction.exists_normalized_sign_rows_with_pattern"
+  ],
+  "source_failures": {},
+  "source_sha256": {
+    "lean/Conjectures/HadamardBorderCompression.lean": "898980ed7cee1743727a83732ce531659cb426172fb6fdb61592ce091a5b58dc",
+    "lean/Conjectures/HadamardBorderCompressionRows.lean": "8cdf8c93c82b3b4ae6eefae1518064e00cbe9da69b57d5671f84b3ef25cbb852",
+    "lean/Conjectures/HadamardBorderNormalizationTransport.lean": "7ee325ece4c3e65137bbc733f54ae57bab16bf37d50f62c12100c1f110d66124",
+    "lean/Conjectures/HadamardBorderNormalizationTransportOps.lean": "f7d48ea6f29ed5e114266d6c8a17b75bdab18e6cdc7333db4f89ed1d11cd9c06",
+    "lean/Conjectures/HadamardBorderPatternReduction.lean": "e42bd520bc2b6eab46b37be9695c12f5d243fa8b99418d173cb632bc8c0a8f86",
+    "lean/Conjectures/HadamardBorderPatterns.lean": "07d904131c6849ef5f0d2915118140fb942c35a0ff874ba5d5e4a1af81f20d3f",
+    "lean/Conjectures/HadamardBorderVariance.lean": "1c272fca78383668a52775812be3b7189478b8e4327578a1a0721c0a8355cebf",
+    "lean/Conjectures/HadamardBorderVarianceNormalization.lean": "6fa0f371e8aeef9ef8dedad6002d1498f8a561ee9fcb1f77ea31d9fa05927ea3",
+    "lean/Conjectures/HadamardBorderVarianceRows.lean": "c2e46a61b576a1c5513d8442418ad39c6cd5984d8b7f64224be90891012d4395",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.HadamardBorderPatternReduction",
+  "task": "pattern-reduction"
+}

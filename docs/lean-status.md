@@ -37,7 +37,7 @@ never additional Lean axioms.
 | CUT arithmetic periodicity | Complete | The uniform terminating decision test and exhaustive candidate enumeration are proved for every finite cut set and proposed arithmetic tail. Compact quotient/residue certificates identify both actual example games at every pile size and prove least eventual period 12, saltus 8, and earliest start 7, hence positive-pile preperiod 6. |
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
-| Hadamard order-2396 partial results | Partial overall; automorphism, border symmetry, literal border, and length-598 obstruction complete | The full signed-automorphism group excludes order 479, with both norm proofs checked. On arbitrary finite abelian domains with a subgroup of size 149 and index four, the full common multiplier group is cyclic of order dividing four and every preserving subgroup leaves at least 151 sign orbits. The actual finite border matrices and all their sign, Gram, balance, and cross identities are checked, as is transport to every quotient of cardinality four. Four sign rows on C26 × C23 with combined nonzero correlation −4 cannot share an order-11 multiplier fixing the rows, even after individual origin choices. The length-1197 multiplier bound, quotient certificates, compression-shape derivation, and final bordered construction remain candidates. |
+| Hadamard order-2396 partial results | Partial overall; automorphism, fixed-border construction and symmetry, and length-598 obstruction complete | The full signed-automorphism group excludes order 479, with both norm proofs checked. The fixed-border common multiplier group is cyclic of order dividing four and every preserving subgroup leaves at least 151 sign orbits. On any finite abelian group with a subgroup of index four, the original four sign rows and raw correlation equations yield an actual bordered Hadamard matrix; normalization, the literal finite border, and all fourteen size-149 baseline patterns are proved. The length-598 order-eleven obstruction is complete. For length 1197, the actual common multiplier order is proved to divide 27; exclusion of order 27, the finite quotient/no-lift certificates, and the two-row construction remain candidates. |
 | Lonely-runner two insertions | Not formalized | The arbitrary two-speed insertion theorem, acceleration bridge, unbounded branch, finite cases, and three-insertion obstruction are not registered in the accepted package. Published candidate sources remain under issue 12. |
 | Erdős–Gyárfás abelian covers | Complete for the stated voltage-cover theorem and sharpness | Every seven-label voltage cover of the singly subdivided tetrahedron over every abelian group contains an actual simple cycle of length 4, 8, 16, or 32. The 64-node literal certificate, its collision-branch soundness, and voltage normalization are checked. The connected 95-vertex cyclic cover attains least power-of-two cycle length 32. The general minimum-degree-three conjecture is outside this result. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
@@ -1994,5 +1994,77 @@ The archived receipt is byte-for-byte unchanged, with SHA-256
 `f04006021604da3cd93e6ec885452cc2f9d8765b0592770c103f325926ae1529`.
 All 52 distinct recorded source, gate, and pinned-input paths match the
 passing hashes. The two missing modules and seven additional required
-declarations are registered. The prebuild list contains 758 proof
-modules plus its two roots; the full merged-package gate remains separate.
+declarations are registered. At this checkpoint the prebuild list contained
+756 proof modules plus its two roots; the full merged-package gate is separate.
+
+
+## Complete conditional fixed-border construction and fourteen patterns
+
+For every finite abelian group `G`, actual subgroup `H` of index four, and
+four sign-valued integer rows, the endpoint assumes precisely the raw
+nonzero-shift combined correlations: `-12` on `H` and `4` outside `H`.
+`HadamardBorderConstruction.exists_hadamard_fin_of_subgroup_correlation`
+constructs an actual sign matrix of order `4*card G+12` and proves its
+full Gram identity. When `card H=149`, the specialized endpoint returns
+a matrix indexed by `Fin 2396` with Gram matrix `2396 • 1`.
+
+The proof constructs the quotient map from `H`, derives compression,
+parity, and the four-coset variance classification, performs actual row
+permutations, sign changes, and lifted translations, and proves that all
+combined correlations are preserved. It then verifies the actual
+Goethals–Seidel core, its border action, and all literal finite-border
+identities. No split extension, chosen quotient, baseline, energy, core-Gram,
+or finite-certificate premise remains in the endpoint.
+
+For fibers of size 149, the same original rows yield the exact squared-row-sum
+equation and one of the fourteen listed patterns. The result retains the
+actual row-operation witnesses, identifies the constant entry by `p.d=|d|`,
+and gives a permutation witness for the other three entries. The proof does
+not assume the input baseline was positive or the input rows were sorted.
+The finite classification proves both coverage and admissibility of the
+fourteen distinct entries. This completes the stated conditional border
+construction; finding binary rows satisfying its hypotheses remains open.
+
+## Checked length-1197 reduction to order 27
+
+`HadamardLegendre.common_multiplier_card_dvd_twenty_seven` starts with the
+actual two sign rows, their Legendre-pair correlation equation, and
+`card G=1197` on an arbitrary finite abelian group. It proves that the
+actual common-multiplier group has order dividing 27, allowing the separate
+row translations built into that group. Row sums, centering, product
+coordinates, the odd-order obstruction, and injectivity away from the
+order-nine component are derived. Every subgroup inherits the divisibility.
+
+The companion `exists_invariant_quotient_three` constructs a surjective
+invariant quotient with kernel of order three for an action of a group whose
+order divides 27 on an abelian group of order nine. It uses fixed points on
+the actual character group and does not assume either classification of the
+order-nine group. These components do not yet establish the manuscript's
+bound of nine: exclusion of order 27 still requires the finite quotient and
+no-lift packet and its connection to the original rows.
+
+### Exact receipts and registration
+
+All four closures passed at `e25e0dcdc69ea1076df8c628b3a459eb12b0fe97`:
+strict source checks, the transitive standard-axiom whitelist, and independent
+replay with the unchanged pinned kernel checker. Their overlapping theorem
+and module counts are not additive.
+
+| Component | Modules | Audited project theorems | Passing job | Exact receipt |
+| --- | ---: | ---: | --- | --- |
+| subgroup | 17 | 1441 | [Job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44516496778/job/135534046058) | [JSON](verification/hadamard-border-construction-subgroup-e25e0dcd.json) |
+| pattern-reduction | 9 | 164 | [Job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44516496778/job/135534046078) | [JSON](verification/hadamard-border-pattern-reduction-e25e0dcd.json) |
+| reduction | 22 | 282 | [Job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44516496780/job/135534059970) | [JSON](verification/hadamard-legendre-reduction-e25e0dcd.json) |
+| invariant-quotient | 2 | 11 | [Job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44516496780/job/135534060014) | [JSON](verification/hadamard-legendre-invariant-quotient-e25e0dcd.json) |
+
+The four artifact ZIP SHA-256 values were independently checked:
+- `14524674769`: `b54c4b65e4de48a631b9ce1975585b746d2c24dea5ef3adda1e7731cccee2fef`.
+- `14526356497`: `1b8e368416dd6ec1a5fbe506fbec72bc2de19ebe8e227171ab2f3fb92ccaddb3`.
+- `14524904432`: `e3510f82c06ff27774c75dab90048852945b6398093910aaec4a9e04f5277838`.
+- `14526286474`: `2cbe184e7b4207e4056cac7c07208553d14582772fd8a37fdddd0684bd757981`.
+
+All fifty distinct recorded source, gate, and pinned-input paths match their
+passing hashes. The unchanged JSON receipts are archived above. This adds
+31 proof modules and 17 required declarations to the accepted roots,
+sequential prebuild list, and audit, for 787 proof modules plus the two roots.
+The full merged-package verification remains a separate gate.

@@ -762,6 +762,37 @@ modules=(
   Conjectures.ErdosGyarfasUniversalMain
   Conjectures.MotzkinLattice
   Conjectures.MotzkinLatticeEvaluation
+  Conjectures.HadamardBorderVariance
+  Conjectures.HadamardBorderCoreAlgebra
+  Conjectures.HadamardBorderVarianceRows
+  Conjectures.HadamardBorderCompressionRows
+  Conjectures.HadamardBorderCore
+  Conjectures.HadamardBorderVarianceNormalization
+  Conjectures.HadamardBorderCoreAction
+  Conjectures.HadamardBorderInflation
+  Conjectures.HadamardBorderAssembly
+  Conjectures.HadamardBorderAssemblyMain
+  Conjectures.HadamardBorderSubgroup
+  Conjectures.HadamardBorderPatterns
+  Conjectures.HadamardBorderPatternReduction
+  Conjectures.HadamardLegendreDomain
+  Conjectures.HadamardLegendrePrimeQuotients
+  Conjectures.HadamardLegendreProjection
+  Conjectures.HadamardLegendreArithmetic
+  Conjectures.HadamardLegendreBasic
+  Conjectures.HadamardLegendreOrderNine
+  Conjectures.HadamardLegendreOddDegree
+  Conjectures.HadamardLegendreCentering
+  Conjectures.HadamardLegendreCompression
+  Conjectures.HadamardLegendreFourier
+  Conjectures.HadamardLegendreCyclotomic
+  Conjectures.HadamardLegendreTransfer
+  Conjectures.HadamardLegendreOrderThreeFibers
+  Conjectures.HadamardLegendreInversion
+  Conjectures.HadamardLegendreKernel
+  Conjectures.HadamardLegendreInvolutions
+  Conjectures.HadamardLegendreReduction
+  Conjectures.HadamardLegendreInvariantQuotient
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

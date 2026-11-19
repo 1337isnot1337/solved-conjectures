@@ -99,3 +99,11 @@ registered. The literal finite-border certificate and universal abelian-cover
 cycle theorem are also registered; their component tasks remain regression
 gates. See the precise scope and exact
 receipts in [the accepted status](lean-status.md).
+
+
+The complete conditional fixed-border `subgroup` and `pattern-reduction`
+closures are now registered from their exact `e25e0dcd` receipts. The
+Legendre `reduction` and `invariant-quotient` closures are registered for
+their proved order-dividing-27 and invariant-quotient scopes. These tasks
+remain available as regression gates. The length-1197 bound of nine, full
+finite quotient/no-lift packet, and two-row construction remain candidates.

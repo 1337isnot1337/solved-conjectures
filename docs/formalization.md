@@ -563,3 +563,23 @@ new required declarations are registered from the unchanged receipt, after
 comparison of all 52 recorded paths. This closes the last stated Motzkin
 obligation; the earlier equality, evaluator, complexity bounds, and explicit
 witnesses are already registered. [Exact scope and receipt](lean-status.md#complete-two-difference-motzkin-theorem).
+
+
+## Complete fixed-border construction and length-1197 reduction
+
+The fixed-border construction now starts with an arbitrary finite abelian
+group, an actual subgroup of index four, and the four original sign rows
+with their prescribed raw correlations. It constructs the normalized rows,
+actual core and border, and final Hadamard matrix. The size-149 case returns
+`Fin 2396`; all fourteen baseline patterns are derived with actual
+row-operation witnesses. This completes the stated conditional border result.
+
+The length-1197 Legendre component proves that the actual common-multiplier
+order divides 27 and constructs the needed invariant quotient of order three.
+The sharper bound of nine and finite quotient/no-lift packet remain open
+formalization obligations. Four exact `e25e0dcd` component receipts cover
+17/1441, 9/164, 22/282, and 2/11 modules/audited project theorems; the closures
+overlap. All fifty recorded paths match, and 31 new modules with
+17 required declarations are registered. The accepted prebuild now contains
+787 proof modules and two roots. [Exact scope and receipts](lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns).
+The full merged gate remains separate; Li remains last.
