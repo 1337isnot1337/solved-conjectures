@@ -9,6 +9,11 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `HadamardAutomorphism.normalize_signed_hadamard,
+    `HadamardAutomorphism.order2396_fixed_points_and_cycles,
+    `HadamardAutomorphism.exists_cyclic_reindex,
+    `HadamardAutomorphism.real_hadamard_number_ring,
+    `HadamardAutomorphism.signedHadamardAut_mem,
     `HadamardAutomorphism.fourier_intertwine,
     `HadamardAutomorphism.indicator_gram_599,
     `HadamardAutomorphism.determinant_norm_of_gram,

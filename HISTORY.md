@@ -1,5 +1,14 @@
 # History
 
+## 2026-11-19 — Checked Hadamard automorphism permutation component
+
+Six proof files now cover explicit diagonal normalization, fixed-point and
+cycle counts, cyclic reindexing, integer transport, and the signed automorphism
+subgroup. Their seven-module closure passed strict source checks, a 100-theorem
+axiom audit, and independent pinned-kernel replay at `e9a9bb45`. The full
+obstruction still awaits cyclotomic descent and final assembly.
+[Receipt](docs/verification/hadamard-automorphism-permutation-e9a9bb45.json).
+
 ## 2026-11-19 — Checked Hadamard automorphism Fourier component
 
 Registered the explicit Fourier, binary overlap, indicator, and determinant

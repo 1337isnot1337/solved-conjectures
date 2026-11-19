@@ -325,3 +325,11 @@ modules and 32 audited project theorems. Its five proof files are registered;
 its literal matrix construction, Gram identity, and determinant quotient are
 checked. [Receipt](verification/hadamard-automorphism-fourier-ee1be6e0.json).
 The full Hadamard obstruction and separate ideal-class result remain candidates.
+
+
+The permutation component passed all three gates at `e9a9bb45`: seven local
+modules and 100 audited project theorems. Its six proof files are registered,
+covering diagonal normalization, fixed-point and cycle counts, cyclic labels,
+integer transport, and the actual signed automorphism subgroup.
+[Receipt](verification/hadamard-automorphism-permutation-e9a9bb45.json).
+The cyclotomic descent and final assembly remain candidates.

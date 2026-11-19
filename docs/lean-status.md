@@ -37,7 +37,7 @@ never additional Lean axioms.
 | CUT arithmetic periodicity | Complete | The uniform terminating decision test and exhaustive candidate enumeration are proved for every finite cut set and proposed arithmetic tail. Compact quotient/residue certificates identify both actual example games at every pile size and prove least eventual period 12, saltus 8, and earliest start 7, hence positive-pile preperiod 6. |
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
-| Hadamard order-2396 automorphism obstruction | Partial: arithmetic, coefficient, and Fourier components checked | The actual residue order, integer/rational norm exclusions, integral-basis coefficient congruences, explicit Fourier compression, indicator Gram identity, and determinant quotient of norm 599³ are checked. The permutation and cyclotomic assembly, the alternative ideal-class assertion, and the sequence/border results remain separate obligations. |
+| Hadamard order-2396 automorphism obstruction | Partial: arithmetic, coefficient, Fourier, and permutation components checked | The actual residue order, norm exclusions, integral-basis congruences, Fourier compression, determinant quotient, sign normalization, fixed-point counts, and cyclic reindexing are checked. The cyclotomic descent and final assembly, the alternative ideal-class assertion, and the sequence/border results remain separate obligations. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Frankl generating families | Partial: full large-generator bound complete | The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete. |
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
@@ -1377,5 +1377,25 @@ matrix, prove the inherited Gram equation, replace sign entries by their
 negative-position indicators, and prove determinant divisibility and the
 norm 599³ quotient from the stated residue obstructions. The binary overlap
 lemma is also checked. These are general components; the actual signed
-Hadamard automorphism theorem still requires the permutation, cyclotomic,
-and prime-ideal nonvanishing assembly. No full obstruction is marked complete.
+Hadamard automorphism theorem still requires the cyclotomic descent and
+prime-ideal nonvanishing assembly. No full obstruction is marked complete.
+
+
+## Hadamard automorphism permutation component
+
+At `e9a9bb45e2935112239380212b5977dd5fca2a2b`, the seven-module
+permutation closure passed strict source checks, a transitive axiom audit of
+100 project theorems, and independent replay with the unchanged pinned kernel.
+[Hosted check](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44480689737/job/135412036944) ·
+[Exact receipt](verification/hadamard-automorphism-permutation-e9a9bb45.json).
+
+The six registered proof files are `HadamardAutomorphismPermutation`,
+`HadamardAutomorphismPermutationMatrix`, `HadamardAutomorphismFixedPoints`,
+`HadamardAutomorphismPermutationCycles`, `HadamardAutomorphismPermutationIntegral`,
+and `HadamardAutomorphismGroupBasic`. They normalize an odd-order signed
+permutation by explicit diagonal signs, derive one fixed index and five
+479-cycles in each permutation at order 2396, construct compatible cyclic
+labels, and transport the real sign matrix into a number field's ring of
+integers. They also construct the full signed row/column automorphism subgroup.
+The claim that its order is coprime to 479 still awaits the cyclotomic descent
+and final assembly; this component alone does not prove that obstruction.

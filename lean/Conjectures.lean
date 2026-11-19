@@ -116,3 +116,7 @@ import Conjectures.HadamardAutomorphismCoefficients
 
 import Conjectures.HadamardAutomorphismDeterminantNorm
 import Conjectures.HadamardAutomorphismBinary
+
+import Conjectures.HadamardAutomorphismGroupBasic
+import Conjectures.HadamardAutomorphismPermutationIntegral
+import Conjectures.HadamardAutomorphismPermutationCycles
