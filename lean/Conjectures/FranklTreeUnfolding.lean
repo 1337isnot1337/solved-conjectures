@@ -53,13 +53,13 @@ def graph (G : SimpleGraph V) : ∀ n parent root, SimpleGraph (Vertex G n paren
 instance finiteVertex (G : SimpleGraph V) [Finite V] (n : ℕ) (parent root : V) :
     Finite (Vertex G n parent root) := by
   classical
-  letI : Fintype V := Fintype.ofFinite V
+  let _ : Fintype V := Fintype.ofFinite V
   induction n generalizing parent root with
   | zero =>
       change Finite PUnit
       infer_instance
   | succ n ih =>
-      letI (child : Children G parent root) : Fintype (Vertex G n root child.1) :=
+      let _ (child : Children G parent root) : Fintype (Vertex G n root child.1) :=
         @Fintype.ofFinite (Vertex G n root child.1) (ih root child.1)
       change Finite (Option (Σ child : Children G parent root, Vertex G n root child.1))
       infer_instance

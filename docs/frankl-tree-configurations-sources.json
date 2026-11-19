@@ -2,7 +2,7 @@
   "schema": "frankl-tree-configurations-v1",
   "root": "Conjectures.FranklTreeConfigurations",
   "sources": {
-    "lean/Conjectures/FranklTreeConfigurations.lean": "7bcf4b7463cd0abcbb31131172f40ca635ee80236a4981d1b4937d6041045749"
+    "lean/Conjectures/FranklTreeConfigurations.lean": "0f8f17c94364ad902a8f1ffa2c306c86ebb6b12365a4faf2ed06f6ac1907ed9a"
   },
   "required_endpoints": [
     "FranklTreeConfigurations.omitted_card",

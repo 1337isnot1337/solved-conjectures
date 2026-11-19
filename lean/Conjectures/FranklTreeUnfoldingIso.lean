@@ -163,8 +163,8 @@ theorem parent_children_card [Finite V] (G : SimpleGraph V)
     (parent root : V) (hadj : G.Adj root parent) :
     Nat.card (Children G parent root) + 1 = Nat.card (G.neighborSet root) := by
   classical
-  letI : Fintype (Children G parent root) := Fintype.ofFinite _
-  letI : Fintype (G.neighborSet root) := Fintype.ofFinite _
+  let _ : Fintype (Children G parent root) := Fintype.ofFinite _
+  let _ : Fintype (G.neighborSet root) := Fintype.ofFinite _
   have h := Nat.card_congr (parentChildrenEquivNeighbors G parent root hadj)
   simpa only [Nat.card_eq_fintype_card, Fintype.card_option] using h
 

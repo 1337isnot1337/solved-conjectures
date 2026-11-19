@@ -263,7 +263,7 @@ theorem dominated_add_needsParent_attached_card :
     ∏ i, (Nat.card (Occupied (G i) (top i) (outside i) (canSelect i) (canOmit i)) +
       Nat.card (Dom (G i) (top i) (outside i) (canSelect i) (canOmit i))) := by
   classical
-  letI (i : ι) : Fintype (V i) := Fintype.ofFinite (V i)
+  let _ (i : ι) : Fintype (V i) := Fintype.ofFinite (V i)
   rw [← omitted_card, Nat.card_congr (omittedBranchesEquiv G top outside canSelect canOmit)]
   simp only [Nat.card_pi, finished_card]
 

@@ -2,8 +2,8 @@
   "schema": "frankl-tree-unfolding-v2",
   "root": "Conjectures.FranklTreeUnfoldingIso",
   "sources": {
-    "lean/Conjectures/FranklTreeUnfolding.lean": "3b5efb66c0803b37e10d3138cbab2c1b8b5764220fd2b4d22de1ee1d59e00952",
-    "lean/Conjectures/FranklTreeUnfoldingIso.lean": "58d589f0b7b261cbd128b94f52999260e5125c065d43a7b4e19790c9d13edb4b"
+    "lean/Conjectures/FranklTreeUnfolding.lean": "ab6c8c27d64812c8ddb2c3647c4e68e03f8a73e100087508117b53ddfdf68401",
+    "lean/Conjectures/FranklTreeUnfoldingIso.lean": "9e776afd6e53757ea3fece69baeed38aeb7d686c204759d1a57c88879073738c"
   },
   "required_endpoints": [
     "FranklTreeUnfolding.endpoint_rootVertex",
