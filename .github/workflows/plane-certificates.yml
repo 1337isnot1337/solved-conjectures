@@ -48,3 +48,18 @@ jobs:
           use-mathlib-cache: true
       - name: Generate, compile, audit, and replay eight certificate blocks
         run: python3 scripts/verify_plane_certificates.py --row ${{ matrix.row }}
+      - name: Retain checked row sources and Lean artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: plane-certificates-row-${{ matrix.row }}
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7
+          path: |
+            lean/Conjectures/LonelinessPlaneCertificate${{ matrix.row }}*.lean
+            lean/Conjectures/LonelinessPlaneCertificateDefs.lean
+            lean/Conjectures/LonelinessPlanePermutationTable.lean
+            lean/Conjectures/LonelinessPlaneWitness.lean
+            lean/Conjectures/LonelinessPlaneWitnessSoundness.lean
+            lean/.lake/build/lib/lean/Conjectures/LonelinessPlane*
+            lean/.lake/plane-certificate-checks/row-${{ matrix.row }}.json
