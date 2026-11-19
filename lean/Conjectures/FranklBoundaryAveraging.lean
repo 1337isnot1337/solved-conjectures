@@ -3,6 +3,7 @@ module
 public import Conjectures.FranklBoundaryFibers
 public import Mathlib.Data.Fintype.Sigma
 public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
 public import Mathlib.Basic.Real.Basic
 
 /-! Exact averaging over finite fibers.

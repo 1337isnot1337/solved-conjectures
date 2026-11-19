@@ -2,7 +2,7 @@
   "schema": "frankl-high-girth-graph-core-v1",
   "root": "Conjectures.FranklHighGirthGraphCore",
   "sources": {
-    "lean/Conjectures/FranklBoundaryAveraging.lean": "ad1dfbebd4252e51d08a3c178d2678db8730ce86906f783d3fe91d2cc882256e",
+    "lean/Conjectures/FranklBoundaryAveraging.lean": "392d25d4a3d65575cd8ee4718f16c40ed56777b9af90f700df78175d8668b9c2",
     "lean/Conjectures/FranklBoundaryBall.lean": "50fd64714167be51906c28e19e9a7ddab11c24a09a8530cdc28f81a809324f13",
     "lean/Conjectures/FranklBoundaryConfigurationHelpers.lean": "7b562800737effd85a43301a45572997ff84a0682c03cac09e303a81cf75b11f",
     "lean/Conjectures/FranklBoundaryConfigurations.lean": "74378321ef145222196937bc6d7b9165438f021c54bb393bde23a116d183490d",
@@ -27,7 +27,7 @@
     "lean/Conjectures/FranklTreeRoot.lean": "ec2a0b85e7263e6d3e4d2259564431aa4f865aa7c7c72d941853e64602886b66",
     "lean/Conjectures/FranklTreeSpan.lean": "717b008a49d242daded26743e4f318e8fed01fde2c6d75acbbe0b6ff0834c5ab",
     "lean/Conjectures/FranklTreeUnfolding.lean": "5279b1b6998cefc4b742e0e340238bafd3d2183d60ab62624bcb8f24e41e9934",
-    "lean/Conjectures/FranklTreeUnfoldingIso.lean": "9e776afd6e53757ea3fece69baeed38aeb7d686c204759d1a57c88879073738c"
+    "lean/Conjectures/FranklTreeUnfoldingIso.lean": "872750b9ff894ff5f97a9cf92d48f7f369106688df3ffcc96ed0cd6003cefda3"
   },
   "required_endpoints": [
     "FranklTreeCone.iterateMessageSets_step",

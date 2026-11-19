@@ -47,11 +47,9 @@ theorem adjacent_children_same (hg : NoShortCycle G 16) (n : ℕ)
     ((walk_length_le G (n + 1) parent root (some ⟨other, y⟩)).trans hlen)
     hadj with he | he
   · apply Subtype.ext
-    simpa only [p, q, walk, endpoint, Walk.concat_cons, Walk.snd_cons] using congrArg Walk.snd he
+    exact congrArg Walk.snd he
   · apply Subtype.ext
-    have h : other.1 = child.1 := by
-      simpa only [p, q, walk, endpoint, Walk.concat_cons, Walk.snd_cons] using congrArg Walk.snd he
-    exact h.symm
+    exact (congrArg Walk.snd he).symm
 
 theorem graph_adj_iff_endpoints (hg : NoShortCycle G 16) :
     ∀ (n : ℕ) (hlen : n ≤ 7) (parent root : V) (x y : Vertex G n parent root),
@@ -90,8 +88,13 @@ theorem graph_adj_iff_endpoints (hg : NoShortCycle G 16) :
           | some y =>
               rcases y with ⟨other, y⟩
               constructor
-              · rintro ⟨i, a, b, rfl, rfl, h⟩
-                exact (ih (by omega) root i.1 a b).mp h
+              · rintro ⟨i, a, b, hx, hy, h⟩
+                have h' : G.Adj
+                    (endpoint G (n + 1) parent root (some ⟨i, a⟩))
+                    (endpoint G (n + 1) parent root (some ⟨i, b⟩)) :=
+                  (ih (by omega) root i.1 a b).mp h
+                rw [← hx, ← hy] at h'
+                exact h'
               · intro h
                 have hc := adjacent_children_same hg n hlen parent root child other x y h
                 cases hc
@@ -148,12 +151,11 @@ noncomputable def parentChildrenEquivNeighbors (G : SimpleGraph V)
           exact False.elim (v.2.2 h)
         · rfl
   · intro v
-    dsimp
-    split
-    · rename_i h
-      apply Subtype.ext
-      exact h.symm
-    · rfl
+    dsimp only
+    by_cases h : v.1 = parent
+    · rw [dif_pos h]
+      exact Subtype.ext h.symm
+    · rw [dif_neg h]
 
 theorem root_children_card (G : SimpleGraph V) (root : V) :
     Nat.card (Children G root root) = Nat.card (G.neighborSet root) :=

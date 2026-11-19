@@ -4,7 +4,7 @@
   "sources": {
     "lean/Conjectures/FranklBoundaryConfigurations.lean": "74378321ef145222196937bc6d7b9165438f021c54bb393bde23a116d183490d",
     "lean/Conjectures/FranklTreeConfigurationIso.lean": "7c62cbb023f4b9b560d33f629933feec0085a94ae7f3fe8ae25e88b6c4c5818c",
-    "lean/Conjectures/FranklBoundaryAveraging.lean": "ad1dfbebd4252e51d08a3c178d2678db8730ce86906f783d3fe91d2cc882256e",
+    "lean/Conjectures/FranklBoundaryAveraging.lean": "392d25d4a3d65575cd8ee4718f16c40ed56777b9af90f700df78175d8668b9c2",
     "lean/Conjectures/FranklBoundaryConfigurationHelpers.lean": "7b562800737effd85a43301a45572997ff84a0682c03cac09e303a81cf75b11f"
   },
   "required_endpoints": [
