@@ -15,8 +15,9 @@ theorem candidate_of_canonicalSigned {b : Vector}
     (hb : CanonicalSignedRepeat b) (hpositive : 0 < b 0) : Finite.Candidate b := by
   refine ⟨hpositive, ?_⟩
   ext a
-  simpa [Finite.absoluteSupport, Finite.sixSet, sixBase, List.mem_ofFn] using
-    canonicalSigned_support hb a
+  simpa only [Finite.absoluteSupport, Finset.mem_image, Finset.mem_univ, true_and,
+    Finite.sixSet, Finset.mem_insert, Finset.mem_singleton, sixBase, List.mem_ofFn,
+    List.mem_cons, List.not_mem_nil, or_false] using canonicalSigned_support hb a
 
 theorem le_foldr_min (xs : List ℕ) (a d : ℕ) (ha : d ≤ a)
     (hxs : ∀ b ∈ xs, d ≤ b) : d ≤ xs.foldr min a := by
@@ -63,8 +64,9 @@ theorem repeatShape_of_consecutive (w : Vector)
     exact dvd_mul_right d a
   · obtain ⟨_, hsupport⟩ := divided_support w d hd hperm
     ext a
-    simpa [Finite.dividedSupport, hleast, Finite.sixSet, sixBase, List.mem_ofFn] using
-      hsupport a
+    simpa only [Finite.dividedSupport, hleast, Finset.mem_image, Finset.mem_univ, true_and,
+      Finite.sixSet, Finset.mem_insert, Finset.mem_singleton, sixBase, List.mem_ofFn,
+      List.mem_cons, List.not_mem_nil, or_false] using hsupport a
 
 theorem repeatVector_mem (E : Submodule ℚ (Fin 7 → ℚ)) (w z : Vector)
     (hw : (fun i => (w i : ℚ)) ∈ E) (hz : (fun i => (z i : ℚ)) ∈ E)

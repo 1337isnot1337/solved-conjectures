@@ -79,7 +79,7 @@ theorem coordinateTranslationBoundary_card_le
       exact (positiveBoxAffineStrip_card_le m hm (coordinateFrequency i)
         (coordinateFrequency_not_multiple m hreal i) _ N).trans
         (Nat.mul_le_mul_right _ (boundaryLevels_card_le (normalSize δ) N))
-    _ = _ := by simp only [Finset.sum_const, Finset.card_univ, nsmul_eq_mul]; ring
+    _ = _ := by simp only [Finset.sum_const, Finset.card_univ, nsmul_eq_mul, Nat.cast_id]; ring
 
 theorem collisionTranslationBoundary_card_le
     (m : ι → ℤ) (hm : PrimitiveNormal m) (hreal : RealAdmissible m)
@@ -110,7 +110,7 @@ theorem collisionTranslationBoundary_card_le
             exact positiveBoxAffineRelation_card_le m hm (differenceFrequency i j)
               (differenceFrequency_not_multiple m hreal i j hij) _ N
         _ = _ := by simp
-    _ = _ := by simp only [Finset.sum_const, Finset.card_univ, nsmul_eq_mul]; ring
+    _ = _ := by simp only [Finset.sum_const, Finset.card_univ, nsmul_eq_mul, Nat.cast_id]; ring
 
 theorem translationBoundary_card_le
     (m : ι → ℤ) (hm : PrimitiveNormal m) (hreal : RealAdmissible m)
@@ -200,8 +200,12 @@ theorem positiveBoxResidue_translation_card_le
     · apply Finset.mem_filter.mpr
       refine ⟨Finset.mem_univ _, ?_, ?_⟩
       · rw [hF, integerPairing_add, hxkernel, hδ, add_zero]
-      · rw [hF]
-        exact translated_coordinates_injective m δ x.1 (hxkernel x) (hxout x)
+      · have hcoords : Function.Injective (positiveBoxCoordinates (F x)) := by
+          rw [hF]
+          exact translated_coordinates_injective m δ x.1 (hxkernel x) (hxout x)
+        intro i j hij
+        apply hcoords
+        exact congrArg (positiveBoxEntry (N := N)) hij
     · intro i
       have hxr := (Finset.mem_filter.mp (Finset.mem_sdiff.mp x.2).1).2 i
       rw [hF]

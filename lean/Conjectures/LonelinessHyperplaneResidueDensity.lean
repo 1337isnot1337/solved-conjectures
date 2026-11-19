@@ -104,7 +104,7 @@ theorem exists_residue_centered_count_bound
   have hcast : (z.natAbs : ℤ) ≤
       ((R * N ^ (Fintype.card ι - 2) : ℕ) : ℤ) := by
     simpa only [z, Int.natCast_natAbs, Nat.cast_mul, Nat.cast_pow] using hb
-  exact_mod_cast hcast
+  exact Int.ofNat_le.mp hcast
 
 def residueFrequency (m : ι → ℤ) (Q : ℕ) (r : ι → ZMod Q) (N : ℕ) : ℝ :=
   ((positiveBoxResidue m Q r N).card : ℝ) / (positiveBoxAdmissible m N).card

@@ -110,9 +110,13 @@ theorem velocity_hits_of_unitResidueLine
   obtain ⟨u, _, hu⟩ := Finset.mem_image.mp hv
   refine ⟨ZMod.toAddCircle (↑(u⁻¹) : ZMod Q), ?_⟩
   intro i
-  rw [← map_zsmul, zsmul_eq_mul, ← congrFun hu i]
-  congr 1
-  simp [mul_assoc, mul_left_comm, mul_comm]
+  have hi : (u : ZMod Q) * b i = (v i : ZMod Q) := congrFun hu i
+  rw [← map_zsmul, zsmul_eq_mul, ← hi]
+  apply congrArg ZMod.toAddCircle
+  calc
+    (u : ZMod Q) * b i * (↑(u⁻¹) : ZMod Q) =
+        (u : ZMod Q) * ((↑(u⁻¹) : ZMod Q) * b i) := by ring
+    _ = b i := Units.mul_inv_cancel_left u (b i)
 
 variable [Nonempty ι]
 

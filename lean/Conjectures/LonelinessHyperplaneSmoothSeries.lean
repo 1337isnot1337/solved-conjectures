@@ -46,7 +46,7 @@ theorem summable_smooth_reciprocal_power
 theorem tsum_smooth_reciprocal_power
     (Q d : ℕ) (hd : 0 < d) :
     (∑' g : Nat.factoredNumbers Q.primeFactors, (((g : ℕ) : ℝ) ^ d)⁻¹) =
-      (∏ p ∈ Q.primeFactors, 1 - ((p : ℝ) ^ d)⁻¹)⁻¹ := by
+      (∏ p ∈ Q.primeFactors, (1 - ((p : ℝ) ^ d)⁻¹))⁻¹ := by
   rw [(hasSum_smooth_reciprocal_power Q d hd).tsum_eq, Finset.prod_inv_distrib]
 
 end

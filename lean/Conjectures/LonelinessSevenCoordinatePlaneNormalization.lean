@@ -33,6 +33,7 @@ theorem canonicalSigned_sign_mul (δ : ℤ) (hδ : δ = 1 ∨ δ = -1)
   · intro i
     rcases hδ with hd | hd <;> rcases hσ i with hs | hs <;> simp [hd, hs]
   · intro i
+    change δ * w i = (δ * σ i) * canonical k (p i)
     rw [hw i]
     ring
 

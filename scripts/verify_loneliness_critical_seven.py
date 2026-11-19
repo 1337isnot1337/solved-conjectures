@@ -8,7 +8,9 @@ PREFIX = "Loneliness.SevenCoordinateCritical."
 gate.TASKS = {
     "critical-seven-finite": (
         ["Conjectures.LonelinessSevenCoordinateFinite"],
-        [PREFIX + "Finite.small_surjective",
+        [PREFIX + "Finite.blockCheck_sound",
+         PREFIX + "Finite.caseCheck_sound",
+         PREFIX + "Finite.small_surjective",
          PREFIX + "Finite.exists_reduced",
          PREFIX + "Finite.all_reduced_cases",
          PREFIX + "Finite.productForm_of_necessary_conditions"],

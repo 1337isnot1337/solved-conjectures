@@ -94,15 +94,17 @@ theorem canonical_plane_pair_proportional
     have hzb := abs_le.mp (hzbound i)
     have hphase := canonical_phase_cells k a hka hka' i
     by_cases hfirst : i = a.castSucc
-    · have hp : tangentPhase k a i = 1 := by simpa [hfirst] using hphase
+    · have hp : tangentPhase k a i = 1 := by
+        simpa only [ite_eq_left hfirst] using hphase
       have hz : z i = s * δ := by simpa [hfirst] using hzfirst
       omega
     · by_cases hsecond : i = a.rev.castSucc
-      · have hp : tangentPhase k a i = 6 := by simpa [hfirst, hsecond] using hphase
+      · have hp : tangentPhase k a i = 6 := by
+          simpa only [ite_eq_right hfirst, ite_eq_left hsecond] using hphase
         have hz : z i = -(s * δ) := by simpa [hsecond] using hzsecond
         omega
       · have hp : 2 ≤ tangentPhase k a i ∧ tangentPhase k a i ≤ 5 := by
-          simpa [hfirst, hsecond] using hphase
+          simpa only [ite_eq_right hfirst, ite_eq_right hsecond] using hphase
         omega
   have hzformula : (fun i => (z i : ℚ)) =
       ((-s * (b a.castSucc + b a.rev.castSucc) : ℤ) : ℚ) •

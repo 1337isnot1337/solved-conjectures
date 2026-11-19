@@ -29,6 +29,7 @@ theorem continuous_torusPointClearance :
 
 theorem continuous_torusVelocityValue (v : ι → ℤ) :
     Continuous (torusVelocityValue v) := by
+  change Continuous (fun s : ι → UnitAddCircle => torusVelocityValue v s)
   have hf : Continuous (fun p : (ι → UnitAddCircle) × UnitAddCircle =>
       torusPointClearance (p.1 + fun i => v i • p.2)) := by
     apply continuous_torusPointClearance.comp

@@ -1496,6 +1496,14 @@ def lookup (index : ℕ) : SupportSearch.Tape.Node := nodeData.get index
 def tree : SupportSearch.Tree :=
   SupportSearch.Tape.toTree lookup 256 170
 
+/- The initial states are checked separately before the tape uses their numerals. -/
+theorem selected_mask_checked : InitialBits.encode (InitialSupport.selected 20) = 1048578 := by
+  decide +kernel
+theorem available_mask_checked : InitialBits.encode (InitialSupport.available 257 inverse 20) = 240365526570467516971528776803692838912 := by
+  decide +kernel
+theorem uncovered_mask_checked : InitialBits.encode (InitialSupport.uncovered 7 257 20) = 169829607615105816046181045422176337920 := by
+  decide +kernel
+
 theorem tape_checked :
     SupportSearch.Bits.tapeCheck (InitialMemo.cover 7 257 coverTable)
       (InitialMemo.compatible 257 inverse 256 compatibleTable 20)
@@ -1503,6 +1511,7 @@ theorem tape_checked :
       (InitialBits.encode (InitialSupport.selected 20))
       (InitialBits.encode (InitialSupport.available 257 inverse 20))
       (InitialBits.encode (InitialSupport.uncovered 7 257 20)) 4=true := by
+  rw [selected_mask_checked,available_mask_checked,uncovered_mask_checked]
   decide +kernel
 
 theorem tree_checked :
