@@ -37,6 +37,7 @@ never additional Lean axioms.
 | CUT arithmetic periodicity | Complete | The uniform terminating decision test and exhaustive candidate enumeration are proved for every finite cut set and proposed arithmetic tail. Compact quotient/residue certificates identify both actual example games at every pile size and prove least eventual period 12, saltus 8, and earliest start 7, hence positive-pile preperiod 6. |
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
+| Hadamard order-2396 automorphism obstruction | Partial: arithmetic and coefficient component checked | The actual order of 599 modulo479, integer and rational norm exclusions, fifth-power witness, and full ring-of-integers coefficient congruences are checked. The matrix, permutation, and cyclotomic descent assembly remains a candidate. The alternative ideal-class assertion and sequence/border results remain separate obligations. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Frankl generating families | Partial: full large-generator bound complete | The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete. |
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
@@ -1334,3 +1335,28 @@ bijection with actual distinct unions are all proved internally. Thirteen
 additional modules are registered here. The full merged-package gate is
 separate from this exact component receipt.
 See [the source-hash receipt](frankl-large-hosted-receipt.json).
+
+## Hadamard automorphism arithmetic
+
+The arithmetic and integral-basis coefficient component passed its exact hosted
+checks at `56cb125ec61bbac0d95d2dba9a2099b42a242d78`: strict compilation of
+five local modules, a transitive axiom audit of 38 project theorems, and an
+independent replay of all five modules with the unchanged pinned kernel.
+[Hosted check](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44478301527/job/135404210981) ·
+[Exact receipt](verification/hadamard-automorphism-arithmetic-56cb125e.json).
+
+The accepted source files are `HadamardAutomorphismArithmeticBasic`,
+`HadamardAutomorphismArithmetic`, `HadamardAutomorphismArithmeticRational`,
+and `HadamardAutomorphismCoefficients`. They prove order 239 for the residue
+of 599 modulo 479; the absence of the required integer and rational norm
+representations; the exact fifth-power norm witness; and coefficient
+congruences in the full ring of integers of the 479th cyclotomic field.
+The arithmetic certificate uses ordinary kernel reduction, with no native
+computation axiom. The permitted transitive axioms are only `propext`,
+`Classical.choice`, and `Quot.sound`.
+
+The full signed-automorphism obstruction is still being checked under
+[issue 21](https://github.com/1337isnot1337/solved-conjectures/issues/21).
+Its candidate code is outside the accepted roots. The class-order-five
+assertion in the alternative proof is not established by the numerical
+witness alone and remains unfinished. Hadamard existence at 2396 remains open.

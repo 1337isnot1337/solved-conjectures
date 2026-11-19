@@ -303,3 +303,19 @@ bijection with actual distinct unions are all proved internally. Thirteen
 additional modules are registered here. The full merged-package gate is
 separate from this exact component receipt.
 See [the source-hash receipt](frankl-large-hosted-receipt.json).
+
+## Hadamard automorphism lane, 19 November 2026
+
+[Issue 21](https://github.com/1337isnot1337/solved-conjectures/issues/21) owns
+`HadamardAutomorphism*.lean`, separately from the sequence and border work
+in issue 17. The arithmetic and integral-basis coefficient component passed
+strict sources, the 38-theorem transitive axiom audit, and independent
+five-module pinned-kernel replay at `56cb125e`. Its four proof files are now
+registered. [Receipt](verification/hadamard-automorphism-arithmetic-56cb125e.json).
+
+The complete signed-permutation theorem and the literal automorphism-group
+cardinality statement remain candidates. Their checks derive the fixed-point
+counts, cycle labels, actual Fourier matrix, binary support nonvanishing,
+determinant divisibility, and cyclotomic descent rather than assuming these
+conclusions. The separate class-order-five argument also remains unfinished.
+Li has not been started.

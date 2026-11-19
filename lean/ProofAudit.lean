@@ -9,6 +9,13 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `HadamardAutomorphism.residue_order,
+    `HadamardAutomorphism.unit_order,
+    `HadamardAutomorphism.no_norm_prime,
+    `HadamardAutomorphism.no_norm_cube,
+    `HadamardAutomorphism.no_norm_cube_rational,
+    `HadamardAutomorphism.norm_fifth_witness,
+    `HadamardAutomorphism.cyclotomic_coefficients_equal_of_bounds599,
     `Frankl.Large.large_generator_frequency,
     `Frankl.Large.nonneighbor_event_bound,
     `Frankl.Large.canonical_filtered_card,

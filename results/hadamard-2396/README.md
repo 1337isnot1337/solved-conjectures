@@ -4,9 +4,19 @@
 
 **Automorphism obstruction for the whole order.** Any real Hadamard matrix of order 2396 must have an automorphism group of order coprime to 479, allowing signed row and column permutations. The proof rules out a cyclotomic norm in two ways. [Proof and arithmetic certificate](AUTOMORPHISMS.md)
 
-A binary Legendre pair on an abelian group of order 1197 would yield such a matrix. We bound its group of common multipliers by nine, allowing independent translations of the two rows. For a bordered quadruple of length 598, we also exclude a common order-eleven multiplier fixing the rows in suitable origins. Smaller symmetry groups and other constructions remain possible. The results are unrefereed and have no Lean formalization or priority claim. [Proof](PROOF.md)
+A binary Legendre pair on an abelian group of order 1197 would yield such a matrix. We bound its group of common multipliers by nine, allowing independent translations of the two rows. For a bordered quadruple of length 598, we also exclude a common order-eleven multiplier fixing the rows in suitable origins. Smaller symmetry groups and other constructions remain possible. The results are unrefereed and carry no priority claim. Their full Lean formalizations remain in progress; the checked arithmetic component is described below. [Proof](PROOF.md)
 
 For a third route, we show that a core with quotient of order four and the stipulated autocorrelations always admits a fixed border after normalization. At order 2396 this leaves 14 possible coset-sum patterns. A binary core realizing one of them with the required correlations is still needed. [Border reduction and attribution](BORDER.md)
+
+## Checked Lean component
+
+The arithmetic and integral-basis coefficient component of the automorphism
+argument has passed strict source checks, a transitive axiom audit, and
+independent pinned-kernel replay. It includes the order-239 residue calculation,
+both norm exclusions, the fifth-power norm witness, and the coefficient
+congruence in the full cyclotomic ring of integers. The matrix/permutation
+assembly, quadratic descent, and separate ideal-class argument remain
+candidates. [Exact checked scope and receipt](../../docs/lean-status.md#hadamard-automorphism-arithmetic).
 
 ## Reproduce the finite checks
 

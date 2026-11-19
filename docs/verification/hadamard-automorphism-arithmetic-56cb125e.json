@@ -1,0 +1,55 @@
+{
+  "checked_sources": [
+    "Conjectures.HadamardAutomorphismArithmeticBasic",
+    "Conjectures.HadamardAutomorphismArithmetic",
+    "Conjectures.HadamardAutomorphismCoefficients",
+    "Conjectures.HadamardAutomorphismArithmeticRational",
+    "Conjectures.HadamardAutomorphismArithmeticCandidates"
+  ],
+  "commit": "56cb125ec61bbac0d95d2dba9a2099b42a242d78",
+  "completed_checks": [
+    "strict source checks, warnings treated as errors",
+    "module-ownership axiom whitelist and required theorems",
+    "independent exact-closure kernel replay"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-hadamard-automorphism-candidates.yml": "d94ae06582dd8ffcb01ee49caa1970fda52e48b6f0661b6333ec35a4cb659788",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_hadamard_automorphism_candidate.py": "2b8fded72202a9d3265cfa9664aba0f0eeceb9071799109afa11258507320409",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "project_modules": [
+    "Conjectures.HadamardAutomorphismArithmeticBasic",
+    "Conjectures.HadamardAutomorphismArithmetic",
+    "Conjectures.HadamardAutomorphismCoefficients",
+    "Conjectures.HadamardAutomorphismArithmeticRational",
+    "Conjectures.HadamardAutomorphismArithmeticCandidates"
+  ],
+  "required_theorems": [
+    "HadamardAutomorphism.residue_order",
+    "HadamardAutomorphism.unit_order",
+    "HadamardAutomorphism.no_norm_prime",
+    "HadamardAutomorphism.no_norm_cube",
+    "HadamardAutomorphism.no_norm_cube_rational",
+    "HadamardAutomorphism.norm_fifth_witness",
+    "HadamardAutomorphism.cyclotomic_coefficients_equal_of_bounds599"
+  ],
+  "source_failures": {},
+  "source_sha256": {
+    "lean/Conjectures/HadamardAutomorphismArithmetic.lean": "87f95bcc6d779d4ee05ac7897d9cff46dbb440aad670c48384b3b08206f4ad1e",
+    "lean/Conjectures/HadamardAutomorphismArithmeticBasic.lean": "5fc6288b8da44de796cf5ba39d9f0a3d9c1d1a8d686da06f6f722bfe46a23649",
+    "lean/Conjectures/HadamardAutomorphismArithmeticCandidates.lean": "cfa191b2407b4ea55c765c72dc3d8414af4bbc6ebbd13ca515e93f4b813f6b02",
+    "lean/Conjectures/HadamardAutomorphismArithmeticRational.lean": "a89d78b6e31e0391606598448d0bb8d09dbd4aef1422bd59c6345ecb9ea995cf",
+    "lean/Conjectures/HadamardAutomorphismCoefficients.lean": "fc5eb68094af7b5f8a347ea78baaccea95d53f7bff58db684805175ca7c6e9be",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.HadamardAutomorphismArithmeticCandidates",
+  "task": "arithmetic"
+}

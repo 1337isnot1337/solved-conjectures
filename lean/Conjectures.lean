@@ -110,3 +110,6 @@ import Conjectures.FranklLargeCoverage
 import Conjectures.FranklLargeLopsided
 import Conjectures.FranklLargeProbability
 import Conjectures.FranklLargeTheorem
+
+import Conjectures.HadamardAutomorphismArithmeticRational
+import Conjectures.HadamardAutomorphismCoefficients

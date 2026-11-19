@@ -1,5 +1,14 @@
 # History
 
+## 2026-11-19 — Checked Hadamard automorphism arithmetic
+
+Registered the arithmetic and integral-basis coefficient component of the
+order-479 automorphism obstruction. The five-module candidate closure passed
+strict source checks, a 38-theorem transitive axiom audit, and independent
+pinned-kernel replay at `56cb125e`, with unchanged sources. The full matrix
+and cyclotomic assembly, and the separate ideal-class argument, remain
+candidates. [Receipt](docs/verification/hadamard-automorphism-arithmetic-56cb125e.json).
+
 ## 2026-11-19 — Complete Frankl large-generator frequency bound
 
 Registered the full all-`k ≥ 15` bound of `657/1000` for every point, with
