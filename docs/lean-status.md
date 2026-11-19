@@ -2359,3 +2359,14 @@ records authentication of the original archived source and object bytes,
 reconstructed all-owned audit, and process records. Registration adds one
 proof module and eight required endpoints. The merged-package gate remains
 separate, and the six-speed result remains partial.
+
+
+### Six-speed sporadic values and denominator bounds
+
+The module `Conjectures.LonelinessSixSporadicBounds` is registered after its exact gate passed at commit `85550e14596e630cd09c470ae29222331f1aa3fb`, [run 44539038584, job 135612147649](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44539038584/job/135612147649). This is the passing six-arithmetic matrix job; the sibling seven/eight job failed and is not accepted by this record.
+
+The six public theorem endpoints prove the exact values of all nine listed sporadic sextuples, their arithmetic, their spectrum parameter form, the speed bound `d < 3*q` for every positive-denominator representation of their actual value, and the reduced denominator identity `q = 6*a + 1`. List permutations are included. This does not classify sextuples outside the nine-row list.
+
+The gate rebuilt all 13 project source modules with warnings treated as errors, audited all 465 owned/raw declarations (359 theorems, 33 private declarations, 14 required endpoints), and independently replayed all 13 exact module targets with the pinned stock kernel. Only `propext`, `Classical.choice`, and `Quot.sound` are allowed. Compiler and checker hashes, exact source bytes, all object facets, original audit source and inventory, process records, and log hashes were checked against artifact `14538960017` (ZIP SHA256 `87afb597432653a835959a50358b2f5145a8605b606d2831c1389f2046c1cf92`). The raw receipt SHA256 is `93d5a70e16e3b2d7b1586dc06f88dd9f80ac60689cc0451ec058520d37152a26`.
+
+Original receipt, audit, logs, progress records, archive member inventory, and preservation record are under [verification/six-sporadic-exact-44539038584](verification/six-sporadic-exact-44539038584/). Registration adds this one module and six endpoints; the full combined accepted-root gate remains a separate obligation. The six-speed spectrum directory remains partial because universal exhaustiveness has not been proved.

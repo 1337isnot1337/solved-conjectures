@@ -9,6 +9,12 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Loneliness.SixSporadicBounds.row_values,
+    `Loneliness.SixSporadicBounds.row_arithmetic,
+    `Loneliness.SixSporadicBounds.listed_value_form,
+    `Loneliness.SixSporadicBounds.listed_spectrum_parameter,
+    `Loneliness.SixSporadicBounds.listed_speed_bound,
+    `Loneliness.SixSporadicBounds.listed_reduced_denominator,
     `Loneliness.SixSpectrumArithmetic.first_family_coprime,
     `Loneliness.SixSpectrumArithmetic.second_family_coprime,
     `Loneliness.SixSpectrumArithmetic.first_family_value,

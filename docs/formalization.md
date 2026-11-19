@@ -747,3 +747,8 @@ endpoint checks, and exact stock-kernel replay in job 135607998981 of run
 44537865221. The unchanged evidence was authenticated from the original ZIP.
 [Scope and receipt](lean-status.md#six-speed-spectrum-reduced-fraction-arithmetic).
 The universal classification and merged-package check remain separate.
+
+
+### Six-speed sporadic arithmetic checkpoint
+
+`LonelinessSixSporadicBounds` now proves the nine original sporadic values and their arithmetic consequences, including permutation invariance, the proposed spectrum parameter form, `d < 3*q` for any positive representing denominator, and `q = 6*a + 1` for the reduced fraction. Exact job `135612147649` in run `44539038584` passed 13 fresh strict source checks, the complete 465-declaration audit, and 13 independent stock-kernel targets. Its unchanged evidence is recorded in `docs/verification/six-sporadic-exact-44539038584/`. Only the passing six-arithmetic job is used; the failed seven/eight sibling is excluded. This finite-table consequence does not establish universal six-speed classification.
