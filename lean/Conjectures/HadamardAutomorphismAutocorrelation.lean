@@ -96,7 +96,7 @@ theorem supportFourier479_norm_coefficients (D : Finset (ZMod 479)) :
   symm
   apply Fintype.sum_equiv (Equiv.refl _ : Fin 479 ≃ ZMod 479)
   intro i
-  simp only [Equiv.refl_apply, integerCyclotomicChar479_apply, natCast_zsmul]
+  simp only [Equiv.refl_apply, natCast_zsmul]
   rfl
 
 theorem supportFourier479_norm_dvd_forces_constant (D : Finset (ZMod 479))

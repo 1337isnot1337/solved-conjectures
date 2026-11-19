@@ -16,13 +16,15 @@ open scoped BigOperators
 variable {ι : Type*}
 
 theorem signedLift_one : signedLift (1 : Equiv.Perm ι) (fun _ => 1) = 1 := by
-  ext ⟨i, u⟩
-  simp
+  apply Equiv.ext
+  rintro ⟨i, u⟩
+  simp only [signedLift_apply, Equiv.Perm.one_apply, one_mul]
 
 theorem signedLift_mul (σ ρ : Equiv.Perm ι) (s u : ι → ℤˣ) :
     signedLift σ s * signedLift ρ u =
       signedLift (σ * ρ) (fun i => s (ρ i) * u i) := by
-  ext ⟨i, v⟩
+  apply Equiv.ext
+  rintro ⟨i, v⟩
   simp only [Equiv.Perm.mul_apply, signedLift_apply, mul_assoc]
 
 theorem signedLift_inv (σ : Equiv.Perm ι) (s : ι → ℤˣ) :
@@ -38,8 +40,9 @@ theorem signed_invariance_inv (H : Matrix ι ι ℝ) (σ τ : Equiv.Perm ι)
     ∀ i j, H (σ⁻¹ i) (τ⁻¹ j) =
       realSign ((s (σ⁻¹ i))⁻¹) * realSign ((t (τ⁻¹ j))⁻¹) * H i j := by
   intro i j
-  have h := hinv (σ⁻¹ i) (τ⁻¹ j)
-  simp only [Equiv.Perm.coe_inv, Equiv.apply_symm_apply] at h
+  have h : H i j = realSign (s (σ⁻¹ i)) * realSign (t (τ⁻¹ j)) *
+      H (σ⁻¹ i) (τ⁻¹ j) := by
+    simpa only [Equiv.Perm.coe_inv, Equiv.apply_symm_apply] using hinv (σ⁻¹ i) (τ⁻¹ j)
   rw [realSign_inv, realSign_inv]
   calc
     H (σ⁻¹ i) (τ⁻¹ j) = realSign (s (σ⁻¹ i)) ^ 2 *
@@ -47,7 +50,8 @@ theorem signed_invariance_inv (H : Matrix ι ι ℝ) (σ τ : Equiv.Perm ι)
       rw [realSign_sq, realSign_sq, one_mul, one_mul]
     _ = realSign (s (σ⁻¹ i)) * realSign (t (τ⁻¹ j)) *
         (realSign (s (σ⁻¹ i)) * realSign (t (τ⁻¹ j)) * H (σ⁻¹ i) (τ⁻¹ j)) := by ring
-    _ = realSign (s (σ⁻¹ i)) * realSign (t (τ⁻¹ j)) * H i j := by rw [← h]
+    _ = realSign (s (σ⁻¹ i)) * realSign (t (τ⁻¹ j)) * H i j :=
+      congrArg (fun x : ℝ => realSign (s (σ⁻¹ i)) * realSign (t (τ⁻¹ j)) * x) h.symm
 
 /-- All signed row/column permutation pairs preserving `H`, as an actual subgroup. -/
 def signedHadamardAut (H : Matrix ι ι ℝ) :
@@ -57,7 +61,8 @@ def signedHadamardAut (H : Matrix ι ι ℝ) :
       ∀ i j, H (σ i) (τ j) = realSign (s i) * realSign (t j) * H i j
   one_mem' := by
     refine ⟨1, 1, (fun _ => 1), (fun _ => 1), ?_, ?_⟩
-    · simpa only [signedLift_one]
+    · change ((1 : Equiv.Perm (ι × ℤˣ)), (1 : Equiv.Perm (ι × ℤˣ))) = _
+      exact Prod.ext signedLift_one.symm signedLift_one.symm
     · intro i j
       simp
   mul_mem' := by

@@ -5,6 +5,7 @@ import Mathlib.RingTheory.Ideal.Norm.AbsNorm
 import Mathlib.RingTheory.Ideal.Over
 import Mathlib.NumberTheory.NumberField.Basic
 import Mathlib.GroupTheory.OrderOfElement
+import Mathlib.Algebra.CharZero.Infinite
 
 /-! The exact ideal-class bridge used by the separate class-group argument.
 The concrete prime above 599 still requires a principal fifth-power identity.
@@ -18,7 +19,7 @@ open NumberField
 open scoped nonZeroDivisors
 
 theorem ideal_class_order_five_of_nonprincipal_fifth
-    {R : Type*} [CommRing R] [IsDomain R] [IsDedekindDomain R]
+    {R : Type*} [CommRing R] [IsDedekindDomain R]
     (P : (Ideal R)⁰) (hnot : ¬ (P : Ideal R).IsPrincipal)
     (hfifth : ((P : Ideal R) ^ 5).IsPrincipal) :
     orderOf (ClassGroup.mk0 P) = 5 := by
@@ -35,7 +36,7 @@ theorem ideal_nonprincipal_of_absNorm_excluded
     (hexcluded : ∀ x : 𝓞 F, (Algebra.norm ℤ x).natAbs ≠ n) :
     ¬ P.IsPrincipal := by
   intro hprincipal
-  obtain ⟨x, hx⟩ := Submodule.isPrincipal_iff.mp hprincipal
+  obtain ⟨x, hx⟩ := (Submodule.isPrincipal_iff P).mp hprincipal
   apply hexcluded x
   rw [hx, Ideal.absNorm_span_singleton] at hP
   exact hP
@@ -59,6 +60,7 @@ theorem principal_witness_ideals_coprime
   norm_num at hcomb
   exact hprime.one_notMem hcomb
 
+set_option maxHeartbeats 1000000 in
 /-- Actual ideal factorization follows from coprime conjugate witnesses.
 There is no assumed split-prime factorization in this bridge. -/
 theorem class_order_five_from_conjugate_witness

@@ -41,8 +41,10 @@ theorem frobenius_ratio_root (u : 𝓞 K) (hu : u ≠ 0)
     exact hnorm.symm
   obtain ⟨ε, hε⟩ := (frobenius479_associated K u hu 3 hdvd).symm
   have heq : frobenius479 K (u : K) = (ε : K) * u := by
-    have h := congrArg (fun x : 𝓞 K => (x : K)) hε
-    simpa only [Subalgebra.coe_mul, mul_comm] using h.symm
+    have h := congrArg (algebraMap (𝓞 K) K) hε
+    rw [map_mul] at h
+    change (u : K) * (ε : K) = frobenius479 K (u : K) at h
+    exact h.symm.trans (mul_comm _ _)
   have hn (φ : K →+* ℂ) : ‖φ (ε : K)‖ = 1 := by
     have hu0 : φ (u : K) ≠ 0 :=
       (map_ne_zero_iff φ φ.injective).mpr (RingOfIntegers.coe_ne_zero_iff.mpr hu)
@@ -59,7 +61,8 @@ theorem frobenius_ratio_root (u : 𝓞 K) (hu : u ≠ 0)
     (IsPrimitiveRoot.orderOf (ε : K))
   have ht : NumberField.Units.torsionOrder K = 958 := by
     rw [IsCyclotomicExtension.Rat.torsionOrder_eq (n := 479)]
-    norm_num
+    have hodd : Odd (479 : ℕ) := by decide
+    rw [if_neg (Nat.not_even_iff_odd.mpr hodd)]
   rw [ht] at hd
   exact ⟨ε, heq, orderOf_dvd_iff_pow_eq_one.mp hd⟩
 
@@ -92,7 +95,8 @@ theorem root_twist_frobenius_fixed (u ε : K) (hε : frobenius479 K u = ε * u)
   refine ⟨161 * j, ?_⟩
   rw [map_mul, map_pow, frobenius479_zeta, hε, ← hj]
   have hexp : 120 * (161 * j) + j = 161 * j + 479 * (40 * j) := by omega
-  rw [← mul_assoc, ← pow_mul, ← pow_add, hexp, pow_add, pow_mul,
+  rw [← mul_assoc, ← pow_mul, ← pow_add, hexp, pow_add,
+    pow_mul (zeta 479 ℚ K) 479 (40 * j),
     (zeta_spec 479 ℚ K).pow_eq_one, one_pow, mul_one]
 
 end HadamardAutomorphism

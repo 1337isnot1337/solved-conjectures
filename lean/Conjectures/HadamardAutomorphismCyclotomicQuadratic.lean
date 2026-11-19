@@ -38,22 +38,28 @@ theorem quadraticFixedField479_coordinates (v : K) (hv : v ∈ quadraticFixedFie
     intro a ha
     apply quadraticGenerator479_not_rational K a
     have h := congrArg (fun x : quadraticFixedField479 K => (x : K)) ha
-    simpa only [IntermediateField.coe_smul, IntermediateField.coe_one,
-      Algebra.smul_def, mul_one,
-      quadraticGeneratorInFixed479, g] using h
+    rw [IntermediateField.coe_smul, IntermediateField.coe_one,
+      Algebra.smul_def, mul_one] at h
+    exact h
   have hcard : Fintype.card (Fin 2) = Module.finrank ℚ (quadraticFixedField479 K) := by
     rw [Fintype.card_fin, quadraticFixedField479_degree K]
   let B := basisOfLinearIndependentOfCardEqFinrank hli hcard
+  have hB : (B : Fin 2 → quadraticFixedField479 K) = ![1, g] :=
+    coe_basisOfLinearIndependentOfCardEqFinrank hli hcard
   let w : quadraticFixedField479 K := ⟨v, hv⟩
   refine ⟨B.repr w 0, B.repr w 1, ?_⟩
   have h := B.sum_repr w
   have he : B.repr w 0 • (1 : quadraticFixedField479 K) + B.repr w 1 • g = w := by
-    simpa only [Fin.sum_univ_two, B, coe_basisOfLinearIndependentOfCardEqFinrank,
+    simpa only [Fin.sum_univ_two, hB,
       Matrix.cons_val_zero, Matrix.cons_val_one] using h
   have he' := congrArg (fun x : quadraticFixedField479 K => (x : K)) he
-  simpa only [IntermediateField.coe_add, IntermediateField.coe_smul,
-    IntermediateField.coe_one, Algebra.smul_def, mul_one,
-    quadraticGeneratorInFixed479, g, w] using he'.symm
+  have hcoe (a b : ℚ) :
+      ((a • (1 : quadraticFixedField479 K) + b • g : quadraticFixedField479 K) : K) =
+        (a : K) + (b : K) * quadraticGenerator479 K := by
+    rw [IntermediateField.coe_add, IntermediateField.coe_smul,
+      IntermediateField.coe_smul, IntermediateField.coe_one,
+      Algebra.smul_def, Algebra.smul_def, mul_one]
+  exact he'.symm.trans (hcoe _ _)
 
 theorem conjugate_of_quadratic_coordinates (v : K) (a b : ℚ)
     (hv : v = (a : K) + (b : K) * quadraticGenerator479 K) :

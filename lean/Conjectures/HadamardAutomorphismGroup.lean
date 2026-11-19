@@ -1,5 +1,6 @@
 import Conjectures.HadamardAutomorphismMain
 import Conjectures.HadamardAutomorphismGroupBasic
+import Mathlib.GroupTheory.Coset.Card
 
 /-! Cauchy's theorem converts the order-479 obstruction into a statement about
 the cardinality of the full signed Hadamard automorphism group. -/
@@ -37,5 +38,16 @@ theorem isHadamard_automorphism_card_not_dvd_479 [Fintype ι] [DecidableEq ι]
     have h := congrArg (fun M : Matrix ι ι ℝ => M i k) hH.mul_conjTranspose
     simpa [hcard, Matrix.mul_apply, Matrix.conjTranspose_apply, Matrix.smul_apply,
       Matrix.one_apply] using h
+
+/-- Every quotient retains the obstruction, including quotienting by the
+common sign. The cardinality statement also holds for cosets of a subgroup
+that is not normal. -/
+theorem isHadamard_automorphism_quotient_card_not_dvd_479 [Fintype ι] [DecidableEq ι]
+    (H : Matrix ι ι ℝ) (hH : H.IsHadamard) (hcard : Fintype.card ι = 2396)
+    (N : Subgroup (signedHadamardAut H)) :
+    ¬ 479 ∣ Nat.card ((signedHadamardAut H) ⧸ N) := by
+  intro hdiv
+  exact isHadamard_automorphism_card_not_dvd_479 H hH hcard
+    (hdiv.trans N.card_quotient_dvd_card)
 
 end HadamardAutomorphism

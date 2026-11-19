@@ -59,6 +59,7 @@ theorem indicator_nonzero_mod_prime599
     exact he
   exact support_sum_not_mem_prime599 K P (negativeBlock H i j) hne hproper hm
 
+omit [NumberField K] [IsCyclotomicExtension {479} ℚ K] in
 theorem prime599_mem_of_liesOver (P : Ideal (𝓞 K))
     [P.LiesOver (Ideal.span {(599 : ℤ)})] : (599 : 𝓞 K) ∈ P := by
   simpa only [map_ofNat] using
@@ -97,7 +98,8 @@ theorem cyclic_integer_hadamard_impossible
     (indicator_nonzero_mod_prime599 K H hX Q)
   obtain ⟨u, _, hu⟩ := determinant_quotient_norm_cube X (by decide) hX hdiv
   apply cyclotomic_norm_cube_impossible K u
-  have h := congrArg (fun x : 𝓞 K => (x : K)) hu
+  have h := congrArg (algebraMap (𝓞 K) K) hu
+  rw [map_mul, map_pow, map_ofNat] at h
   change (u : K) * conjugation479 K (u : K) = (599 : K) ^ 3 at h
   exact h
 

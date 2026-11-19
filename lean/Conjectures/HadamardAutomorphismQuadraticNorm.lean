@@ -40,7 +40,8 @@ theorem quadraticModelToFixed479_injective :
   apply quadraticGenerator479_not_rational K a
   have h := congrArg (fun x : quadraticFixedField479 K => (x : K)) ha
   simpa only [IntermediateField.coe_smul, IntermediateField.coe_one,
-    Algebra.smul_def, mul_one, quadraticGeneratorInFixed479] using h
+    Algebra.smul_def, mul_one, IntermediateField.coe_algebraMap_apply,
+    quadraticGeneratorInFixed479] using h
 
 theorem quadraticModelToFixed479_surjective :
     Function.Surjective (quadraticModelToFixed479 K) := by
@@ -51,6 +52,7 @@ theorem quadraticModelToFixed479_surjective :
   simpa only [quadraticModelToFixed479, QuadraticAlgebra.lift_apply_apply,
     IntermediateField.coe_add, IntermediateField.coe_smul,
     IntermediateField.coe_one, Algebra.smul_def, mul_one,
+    IntermediateField.coe_algebraMap_apply,
     quadraticGeneratorInFixed479] using hx.symm
 
 def quadraticModelEquiv479 :
@@ -61,7 +63,11 @@ def quadraticModelEquiv479 :
 @[simp] theorem quadraticModelEquiv479_coe (a b : ℚ) :
     ((quadraticModelEquiv479 K ⟨a, b⟩ : quadraticFixedField479 K) : K) =
       (a : K) + (b : K) * quadraticGenerator479 K := by
-  rfl
+  change ((a • (1 : quadraticFixedField479 K) +
+    b • quadraticGeneratorInFixed479 K : quadraticFixedField479 K) : K) = _
+  simp only [IntermediateField.coe_add, IntermediateField.coe_smul,
+    IntermediateField.coe_one, Algebra.smul_def, mul_one,
+    IntermediateField.coe_algebraMap_apply, quadraticGeneratorInFixed479]
 
 omit [NumberField K] [IsCyclotomicExtension {479} ℚ K] in
 private theorem quadraticModel_norm479 (a b : ℚ) :
@@ -155,7 +161,8 @@ theorem quadraticFifthWitness479_norm :
         (8054400 : K) + 159859 * quadraticGenerator479 K := by
     rfl
   rw [quadraticFixedField479_norm_coordinates K
-    (quadraticFifthWitness479 K : quadraticFixedField479 K) 8054400 159859 hcoords]
+    (quadraticFifthWitness479 K : quadraticFixedField479 K) 8054400 159859
+      (by simpa only [Rat.cast_ofNat] using hcoords)]
   norm_num
 
 theorem quadraticFifthWitness479_absNorm :
