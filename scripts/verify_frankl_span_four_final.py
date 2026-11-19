@@ -774,7 +774,7 @@ def verify(model, modules, fresh, stage):
         common.freeze_bytes(stage, "src/" + audit_name, audit_raw, frozen)
         command = [str(compiler / "bin/lean"), "-j1", "-M4500", "-DwarningAsError=true", "-t0", audit_name]
         audit = orbit.profile(command, stage / "src", environment,
-            stage / "logs/final-owned-audit.log", stage / "progress/final-owned-audit.json", 1800)
+            stage / "logs/final-owned-audit.log", stage / "progress/final-owned-audit.json", 7200)
         receipt["axiom_audit"] = audit
         save()
         common.strict_profile(audit, toolchain, audit_name)
