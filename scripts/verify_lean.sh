@@ -1044,6 +1044,7 @@ modules=(
   Conjectures.LonelinessSevenSpectrumRealization
   Conjectures.LonelinessEightSpectrumRealization
   Conjectures.LonelinessHigherSpectrumBounds
+  Conjectures.LonelinessDistanceColoring
   Conjectures.LonelinessHigherTriangleConsequences
   Conjectures.LonelinessSevenCoordinateDefs
   Conjectures.LonelinessSevenCoordinateQuantitativeArithmetic
