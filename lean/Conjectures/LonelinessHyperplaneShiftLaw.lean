@@ -32,8 +32,11 @@ theorem continuous_torusVelocityValue (v : ι → ℤ) :
   have hf : Continuous (fun p : (ι → UnitAddCircle) × UnitAddCircle =>
       torusPointClearance (p.1 + fun i => v i • p.2)) := by
     apply continuous_torusPointClearance.comp
-    exact continuous_fst.add (continuous_pi (fun i => continuous_snd.const_smul (v i)))
-  have hc := (isCompact_univ : IsCompact (Set.univ : Set UnitAddCircle)).continuous_sSup hf
+    exact continuous_fst.add (continuous_pi
+      (fun i => (continuous_zsmul (v i)).comp continuous_snd))
+  have hc := (isCompact_univ : IsCompact (Set.univ : Set UnitAddCircle)).continuous_sSup
+    (f := fun (s : ι → UnitAddCircle) (t : UnitAddCircle) =>
+      torusPointClearance (s + fun i => v i • t)) hf
   simpa only [torusVelocityValue, Set.image_univ] using hc
 
 def haarProfileCDF (m : ι → ℤ) (u : ℝ) : ℝ :=
@@ -80,10 +83,10 @@ theorem haarProfileCDF_formula (m : ι → ℤ) (hm : PrimitiveNormal m) (u : �
     hinter, Real.volume_Icc, smul_eq_mul,
     ← ENNReal.ofReal_mul
       (mul_nonneg (by norm_num) (normalMass_pos m hm).le), ENNReal.toReal_ofReal']
-  rfl
 
 theorem continuous_haarProfileCDF (m : ι → ℤ) (hm : PrimitiveNormal m) :
     Continuous (haarProfileCDF m) := by
+  change Continuous (fun u : ℝ => haarProfileCDF m u)
   simp_rw [haarProfileCDF_formula m hm]
   exact (continuous_const.mul
     ((continuous_id.min continuous_const).sub continuous_const)).max continuous_const
@@ -91,14 +94,14 @@ theorem continuous_haarProfileCDF (m : ι → ℤ) (hm : PrimitiveNormal m) :
 theorem haarProfileCDF_le_velocity
     (m : ι → ℤ) (hm : PrimitiveNormal m) (v : ι → ℤ)
     (hv : integerPairing m v = 0) (u : ℝ) : haarProfileCDF m u ≤ haarVelocityCDF v u := by
-  apply measureReal_mono
+  refine measureReal_mono ?_ (measure_ne_top _ _)
   intro s hs
   exact (torusVelocityValue_le_profile m hm v hv s).trans hs
 
 theorem haarVelocityCDF_le_profile_of_gap
     (m v : ι → ℤ) (ε : ℝ) (hgap : uniformShiftGap m v < ε) (u : ℝ) :
     haarVelocityCDF v u ≤ haarProfileCDF m (u + ε) := by
-  apply measureReal_mono
+  refine measureReal_mono ?_ (measure_ne_top _ _)
   intro s hs
   have hpoint : torusPredictedValue m s - torusVelocityValue v s < ε := by
     obtain ⟨r, rfl⟩ := real_shift_surjective s
@@ -127,7 +130,7 @@ theorem independentShiftLaw_isProbability
   unfold independentShiftLaw
   rw [Measure.smul_apply, Measure.finsetSum_apply]
   simp only [Measure.map_apply
-    (continuous_torusVelocityValue _).measurable measurableSet_univ,
+    (continuous_torusVelocityValue _).measurable MeasurableSet.univ,
     Set.preimage_univ, measure_univ, Finset.sum_const, nsmul_eq_mul, mul_one,
     smul_eq_mul]
   exact ENNReal.inv_mul_cancel (by exact_mod_cast hN.ne') (by finiteness)

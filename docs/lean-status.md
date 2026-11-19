@@ -1252,3 +1252,16 @@ The complete accepted-package workflow at
 [run 44458108002](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44458108002)
 and the [exact-commit receipt](full-397-hosted-receipt.json).
 This historical receipt does not verify later source revisions or additions.
+
+## Hosted replay of the four-speed integration snapshot
+
+On 18 November 2026, [run 44459759725](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44459759725)
+completed the full accepted-package gate at
+`3349777d40eacc26df93df09dad3d95c0333e59b`. The source build passed, the
+axiom audit checked 11,867 project theorem declarations, and stock Lean
+4.35.0 replayed all 433 proof modules and both root modules. Only
+`propext`, `Classical.choice`, and `Quot.sound` occurred in the audit.
+
+The [machine-readable receipt](accepted-3349777-hosted-receipt.json) lists
+every replayed module. Later registrations require their own merged hosted
+receipts; this snapshot covers only the 433-module integration commit.

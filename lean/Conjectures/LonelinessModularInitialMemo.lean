@@ -31,9 +31,9 @@ theorem compatible_eq (m : ℕ) (inv : ℕ → ℕ) (width : ℕ) (hwidth : 0<wi
       rw [Nat.add_comm,Nat.add_mul_div_right a b hwidth,Nat.div_eq_of_lt ha,Nat.zero_add]
     have hmod : (b*width+a)%width=a := by
       rw [Nat.mul_add_mod_self_right,Nat.mod_eq_of_lt ha]
-    rw [compatible,if_pos ha,Memo.lookup_eq _ table hcheck]
+    rw [compatible,ite_eq_left ha,Memo.lookup_eq _ table hcheck]
     simp only [compatibleBase,hdiv,hmod]
-  · rw [compatible,if_neg ha]
+  · rw [compatible,ite_eq_right ha]
 
 theorem checked_tree (den m : ℕ) (inv : ℕ → ℕ) (width : ℕ) (hwidth : 0<width)
     (coverTable compatibleTable : Memo.Tree)

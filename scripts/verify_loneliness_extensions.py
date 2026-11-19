@@ -14,6 +14,44 @@ def endpoints(namespace, names):
 
 
 gate.TASKS = {}
+gate.TASKS["hyperplane-series"] = (
+    ["Conjectures.LonelinessHyperplaneSmoothSeries"],
+    endpoints("Loneliness.Hyperplane", [
+        "hasSum_smooth_reciprocal_power", "summable_smooth_reciprocal_power",
+        "tsum_smooth_reciprocal_power",
+    ]),
+)
+gate.TASKS["hyperplane-residues"] = (
+    ["Conjectures.LonelinessHyperplaneResidueDensity",
+     "Conjectures.LonelinessHyperplaneOneRelation"],
+    endpoints("Loneliness.Hyperplane", [
+        "exists_residue_count_difference_bound", "exists_residue_frequency_rate",
+        "residueFrequency_tendsto", "residueSetFrequency_tendsto",
+        "one_relation_fiber_card_le", "positiveBoxAdmissible_card_upper",
+        "positiveBoxDivisible_card_le",
+    ]),
+)
+gate.TASKS["hyperplane-hit-density"] = (
+    ["Conjectures.LonelinessHyperplaneUnshifted",
+     "Conjectures.LonelinessHyperplaneHitDensity"],
+    endpoints("Loneliness.Hyperplane", [
+        "unshifted_cdf_tendsto", "predictedValue_zero",
+        "canonicalEndpointResidue_mem_kernel",
+        "scaledUnitResidueLine_frequency_tendsto",
+        "exists_scaledUnitResidue_uniform_bound",
+        "exists_smooth_coprime_factorization", "smooth_coprime_factor_unique",
+        "scaledUnitResidueLine_unique_smooth",
+        "positive_velocity_hits_residue_iff_unique_smooth",
+        "smoothResidueFrequency_tendsto", "positiveBoxHitsResidue_card",
+        "residueHitFrequency_eq_smoothResidueFrequency", "residueHitFrequency_tendsto",
+    ]),
+)
+gate.TASKS["large-norm"] = (
+    ["Conjectures.LonelinessTightNormBounds"],
+    endpoints("Loneliness.NormGeometry", [
+        "tight_natural_squaredNorm_le", "exists_original_prime_of_tight",
+    ]),
+)
 for count, word in ((7, "Seven"), (8, "Eight")):
     namespace = f"Loneliness.Modular.{word}Speed"
     gate.TASKS[f"{word.lower()}-support"] = (

@@ -81,7 +81,7 @@ theorem closed_support_normalization (den m : ℕ) (hden : 3≤den) (hm : 2≤m)
         simpa only [coveredSupports,hsingle,ite_true] using hmem
       exact ⟨(mem_boundedSupports_iff.mp hb).2.2,Or.inl hsingle⟩
     · have hb : s∈normalizedSupports m original.card inv := by
-        simpa only [coveredSupports,if_neg hsingle] using hmem
+        simpa only [coveredSupports,ite_eq_right hsingle] using hmem
       have hh := mem_normalizedSupports_iff.mp hb
       exact ⟨hh.2.2.1,Or.inr hh.2.2.2⟩
   have hnow : ¬HasRationalWitness 1 den m (s.sort (·≤·)) := by

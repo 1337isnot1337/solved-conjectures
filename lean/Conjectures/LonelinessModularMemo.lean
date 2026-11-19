@@ -31,15 +31,16 @@ theorem lookup_eq (fallback : ℕ → ℕ) (tree : Tree)
     intro hcheck key
     have hvalue : value=fallback stored := of_decide_eq_true hcheck
     by_cases h : stored=key
-    · simpa only [lookup,if_pos h,h] using hvalue
-    · simp only [lookup,if_neg h]
+    · rw [lookup,ite_eq_left h]
+      simpa only [h] using hvalue
+    · simp only [lookup,ite_eq_right h]
   | branch pivot left right ihleft ihright =>
     intro hcheck
     have hh := Bool.and_eq_true_iff.mp hcheck
     intro key
     by_cases h : key<pivot
-    · simpa only [lookup,if_pos h] using ihleft hh.1 key
-    · simpa only [lookup,if_neg h] using ihright hh.2 key
+    · simpa only [lookup,ite_eq_left h] using ihleft hh.1 key
+    · simpa only [lookup,ite_eq_right h] using ihright hh.2 key
 
 theorem example_checked :
     check (fun n => n*n) (.branch 5 (.entry 3 9) (.entry 7 49))=true := by

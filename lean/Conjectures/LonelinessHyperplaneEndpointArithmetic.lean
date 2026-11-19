@@ -98,7 +98,10 @@ theorem primitive_velocity_hits_unit_line_iff
     refine ⟨(↑(u⁻¹) : ZMod Q), ?_⟩
     intro i
     rw [hu i]
-    simp [mul_assoc, mul_comm, mul_left_comm]
+    calc
+      (u : ZMod Q) * b i * (↑(u⁻¹) : ZMod Q) =
+          (u : ZMod Q) * ((↑(u⁻¹) : ZMod Q) * b i) := by ring
+      _ = b i := Units.mul_inv_cancel_left u (b i)
 
 theorem unit_residue_line_injective
     (b : ι → ZMod Q) (hb : PrimitiveResidue b) :
@@ -111,9 +114,10 @@ theorem unit_residue_line_injective
     rw [Finset.mul_sum, Finset.mul_sum]
     apply Finset.sum_congr rfl
     intro i _
+    have hi : (u : ZMod Q) * b i = (w : ZMod Q) * b i := congrFun huw i
     calc
       (u : ZMod Q) * (c i * b i) = c i * ((u : ZMod Q) * b i) := by ring
-      _ = c i * ((w : ZMod Q) * b i) := by rw [congrFun huw i]
+      _ = c i * ((w : ZMod Q) * b i) := congrArg (fun z : ZMod Q => c i * z) hi
       _ = (w : ZMod Q) * (c i * b i) := by ring
   simpa only [hc, mul_one] using heq
 

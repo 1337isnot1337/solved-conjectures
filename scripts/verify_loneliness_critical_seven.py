@@ -32,6 +32,14 @@ gate.TASKS = {
          PREFIX + "productForm_coordinate_product",
          PREFIX + "productForm_standardPlane"],
     ),
+    "critical-seven-assembly": (
+        ["Conjectures.LonelinessSevenCoordinateClassification"],
+        [PREFIX + "critical_plane_classification",
+         PREFIX + "standardPlane_value",
+         PREFIX + "standardProductPlane_value",
+         PREFIX + "coordinateFree_of_positive_spaceValue",
+         PREFIX + "critical_plane_iff"],
+    ),
 }
 gate.GATE_INPUTS |= {
     "scripts/verify_loneliness_critical_seven.py",

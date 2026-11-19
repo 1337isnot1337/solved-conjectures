@@ -1,5 +1,6 @@
 import Mathlib.Data.Fin.VecNotation
 import Mathlib.Data.Int.Basic
+import Mathlib.Algebra.Order.Group.Unbundled.Int
 
 /-! The six canonical repeat vectors for seven-coordinate critical planes.
 These definitions have no dependency on the geometric reduction. -/

@@ -196,6 +196,13 @@ private declarations, and replays each accepted module with `leanchecker`.
 The only permitted transitive axioms are `propext`, `Classical.choice` and
 `Quot.sound`.
 
+The full hosted gate at `3349777d40eacc26df93df09dad3d95c0333e59b`
+passed on 18 November 2026: 433 proof modules, both roots, and an audit of
+11,867 project theorem declarations. The
+[receipt](accepted-3349777-hosted-receipt.json) records every replayed module
+and links the exact workflow run. Later source registrations require their
+own merged receipts.
+
 The hosted Lean action performs setup and cache retrieval; the shared script
 performs the source build. This prevents simultaneous large certificate
 reductions from exhausting runner memory. No source, axiom or kernel gate is
