@@ -251,6 +251,30 @@
       "proposition_and_argument_order_changed": false,
       "source_after_sha256": "c9bd26dd3ae91a4e2b8513bd755936c5fdaf6d2faa31fe353b87498d0a200ca3",
       "source_before_sha256": "4bca21b4a2b6410d1d7c5d91feb5f05ec46e77f084faf113c2a03c1a8fb03672"
+    },
+    {
+      "certificate_data_changed": false,
+      "changes": [
+        "Replace only six compiler-reported letI instances with let at original lines 21, 22, 54, 60, 114 and 115.",
+        "Remove only the eight reported unused simp arguments: hne at 29; ZMod.natCast_zmod_val at 33, 40 and 50; reverse mul_assoc and hcancel at 40-41 and 50.",
+        "Replace the reported redundant all-goals combinator <;> with ; at original line 78, retaining both simp and ring."
+      ],
+      "failed_artifact": {
+        "archive_sha256": "f0995fd366973e6b1cf909440a4a51637377672c2e7ffe8011ae3fa88337498a",
+        "id": 14536695266
+      },
+      "failed_job_id": 135586454855,
+      "failed_run_id": 44531715680,
+      "historical_recovery_artifact": {
+        "archive_sha256": "06fb2c91159e5d4444c9bd1383d2efccadbb2b356b260826e098e3db9a11dc21",
+        "id": 14533922593
+      },
+      "historical_source_hashes_changed": false,
+      "module": "Conjectures.LonelinessFiveSpeedPlaneProjective",
+      "source_after_sha256": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
+      "source_before_sha256": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
+      "strict_source_passes_before_failure": 144,
+      "theorem_statements_changed": false
     }
   ],
   "helper_sha256": {
@@ -8001,7 +8025,7 @@
     "Conjectures.LonelinessFiveSpeedMasks": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
     "Conjectures.LonelinessFiveSpeedPlaneFiberData": "b1f26addee61ee61325ed876ff11ef5a2319c53dfb32aa8702a3dc1ce5081a4d",
     "Conjectures.LonelinessFiveSpeedPlaneFiberDefs": "0d80df711c7473875c2322a612eedb6c8a651d5b576a17a656d3726c4bcd07f7",
-    "Conjectures.LonelinessFiveSpeedPlaneProjective": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
+    "Conjectures.LonelinessFiveSpeedPlaneProjective": "aac8c785d9923c0c22e618222e10951659ec17907c0c200a05e494af939c87ad",
     "Conjectures.LonelinessFiveSpeedPrimitiveDirection": "3331efe2bfb0a848ac343486ea5fab980d311f2122254b7c8c7afda52ad0449d",
     "Conjectures.LonelinessFiveSpeedRelationData": "5c5539cacddfb13fc39eddcde21eac3e2758bb75027fd890a77d6e28e2f5a6af",
     "Conjectures.LonelinessFiveSpeedRelationDefs": "391cef7cab458fe74794b73c03d8e4052fa2dcd37ae48f28c0aecec74da48a1e",
