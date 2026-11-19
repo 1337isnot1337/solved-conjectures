@@ -154,7 +154,10 @@ def preflight(model):
             "Unexpected final composition model")
     modules = dependency_order(model["root"])
     require(len(modules) == 1101 and set(modules) == set(model["source_sha256"]),
-            "The exact 1101-module theorem import closure changed")
+            "The exact theorem import closure differs: " + json.dumps({
+                "actual_count": len(modules), "expected_count": len(model["source_sha256"]),
+                "missing_from_model": sorted(set(modules) - set(model["source_sha256"])),
+                "outside_actual_closure": sorted(set(model["source_sha256"]) - set(modules))}))
     fresh = [m for m in modules if m in model["required_by_module"]]
     require(len(fresh) == 2 and fresh[-1] == model["root"],
             "Fresh assembly module inventory differs")
