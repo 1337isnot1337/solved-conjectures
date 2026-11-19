@@ -1,0 +1,2 @@
+import Conjectures.HadamardAutomorphismArithmeticRational
+import Conjectures.HadamardAutomorphismCoefficients

@@ -1,7 +1,7 @@
 import Mathlib.Data.Matrix.PEquiv
 import Mathlib.LinearAlgebra.Matrix.Trace
 import Mathlib.LinearAlgebra.Matrix.SemiringInverse
-import Mathlib.Data.Real.Basic
+import Mathlib.Basic.Real.Basic
 import Mathlib.GroupTheory.Perm.Cycle.Type
 import Mathlib.Tactic.Ring
 import Mathlib.Tactic.NormNum.Prime
@@ -30,6 +30,9 @@ theorem row_combination_sq_sum [DecidableEq R] (H : Matrix R C ℝ) (b : R → �
     ∑ j, (∑ i, b i * H i j) ^ 2 =
         ∑ j, ∑ i, ∑ k, (b i * H i j) * (b k * H k j) := by
           simp only [pow_two, Finset.sum_mul, Finset.mul_sum]
+          apply Finset.sum_congr rfl
+          intro j _
+          exact Finset.sum_comm
     _ = ∑ i, ∑ k, b i * b k * (∑ j, H i j * H k j) := by
       rw [Finset.sum_comm]
       apply Finset.sum_congr rfl
@@ -43,7 +46,7 @@ theorem row_combination_sq_sum [DecidableEq R] (H : Matrix R C ℝ) (b : R → �
       ring
     _ = n * ∑ i, b i ^ 2 := by
       simp_rw [horth]
-      simp [mul_ite, ← Finset.mul_sum, pow_two, mul_comm, mul_left_comm, mul_assoc]
+      simp [mul_ite, ← Finset.mul_sum, pow_two, mul_comm]
 
 /-- A repeated column pattern in orthogonal sign rows bounds the row count. -/
 theorem repeated_columns_bound [DecidableEq R] [DecidableEq C]
@@ -64,7 +67,15 @@ theorem repeated_columns_bound [DecidableEq R] [DecidableEq C]
     calc
       (J.card : ℝ) * (Fintype.card R : ℝ) ^ 2 =
           ∑ j ∈ J, (∑ i, H i j₀ * H i j) ^ 2 := by
-            simp only [hv, Finset.sum_const, nsmul_eq_mul]
+            symm
+            calc
+              (∑ j ∈ J, (∑ i, H i j₀ * H i j) ^ 2) =
+                  ∑ _j ∈ J, (Fintype.card R : ℝ) ^ 2 := by
+                    apply Finset.sum_congr rfl
+                    intro j hj
+                    rw [hv j hj]
+              _ = (J.card : ℝ) * (Fintype.card R : ℝ) ^ 2 := by
+                rw [Finset.sum_const, nsmul_eq_mul]
       _ ≤ ∑ j, (∑ i, H i j₀ * H i j) ^ 2 :=
         Finset.sum_le_sum_of_subset_of_nonneg (Finset.subset_univ J)
           (fun j _ _ => sq_nonneg _)
@@ -72,8 +83,7 @@ theorem repeated_columns_bound [DecidableEq R] [DecidableEq C]
   by_cases hf : Fintype.card R = 0
   · simp [hf, hn]
   · have hpos : (0 : ℝ) < Fintype.card R := by exact_mod_cast Nat.pos_of_ne_zero hf
-    apply (mul_le_mul_right hpos).mp
-    simpa only [pow_two, mul_assoc] using hbound
+    exact le_of_mul_le_mul_right (by simpa only [pow_two, mul_assoc] using hbound) hpos
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
@@ -122,8 +132,8 @@ theorem equal_fixed_counts (H : Matrix ι ι ℝ) (σ τ : Equiv.Perm ι) {n : �
 theorem intertwining_of_invariant (H : Matrix ι ι ℝ) (σ τ : Equiv.Perm ι)
     (hinv : ∀ i j, H (σ i) (τ j) = H i j) :
     permutationMatrix σ * H = H * permutationMatrix τ := by
-  rw [permutationMatrix, permutationMatrix,
-    PEquiv.toMatrix_toPEquiv_mul, PEquiv.mul_toMatrix_toPEquiv]
+  change σ.toPEquiv.toMatrix * H = H * τ.toPEquiv.toMatrix
+  rw [PEquiv.toMatrix_toPEquiv_mul, PEquiv.mul_toMatrix_toPEquiv]
   ext i j
   simpa only [Matrix.submatrix_apply, id_eq, Equiv.apply_symm_apply] using hinv i (τ.symm j)
 
@@ -152,7 +162,7 @@ theorem nontrivial_column_of_nontrivial_row (H : Matrix ι ι ℝ)
 theorem fixed_count_add_prime_cycles (σ : Equiv.Perm ι) {q : ℕ}
     (hq : q.Prime) (hσ : σ ^ q = 1) :
     Fintype.card (Function.fixedPoints σ) + q * σ.cycleType.card = Fintype.card ι := by
-  letI : Fact q.Prime := ⟨hq⟩
+  let : Fact q.Prime := ⟨hq⟩
   have hsum : σ.cycleType.sum = q * σ.cycleType.card := by
     rw [Equiv.Perm.cycleType_of_pow_prime_eq_one hσ]
     simp [mul_comm]
@@ -178,6 +188,7 @@ theorem fixed_row_constant_on_cycle (H : Matrix ι ι ℝ) (σ τ : Equiv.Perm �
     (hinv : ∀ i j, H (σ i) (τ j) = H i j) (i : Function.fixedPoints σ)
     (j₀ j : ι) (hj : τ.SameCycle j₀ j) : H i j = H i j₀ := by
   obtain ⟨k, rfl⟩ := hj.exists_nat_pow_eq
+  clear hj
   induction k with
   | zero => simp
   | succ k ih =>
@@ -198,7 +209,7 @@ theorem fixed_rows_bound (H : Matrix ι ι ℝ) (n : ℝ) (σ τ : Equiv.Perm ι
   classical
   obtain ⟨j₀, hj₀⟩ : ∃ j, τ j ≠ j := by
     by_contra h
-    push_neg at h
+    push Not at h
     exact hnt (Equiv.ext h)
   let J := (τ.cycleOf j₀).support
   have hJ : J.card = q := moving_cycle_card τ hq hτ j₀ hj₀

@@ -14,6 +14,7 @@ namespace HadamardAutomorphism
 
 variable {R : Type*} [CommRing R] [StarRing R] [IsDomain R]
 
+omit [StarRing R] in
 theorem nontrivial_character_sum_zero {G : Type*} [AddCommGroup G] [Fintype G]
     (χ : AddChar G R) (hχ : χ ≠ 1) : ∑ a, χ a = 0 := by
   obtain ⟨b, hb⟩ := AddChar.ne_one_iff.mp hχ
@@ -40,7 +41,7 @@ theorem compressed_gram
     calc
       q • (Aᴴ * A) = Aᴴ * (Vᴴ * V) * A := by
         rw [hV]
-        simp [Matrix.mul_smul, Matrix.smul_mul]
+        simp
       _ = (V * A)ᴴ * (V * A) := by
         rw [Matrix.conjTranspose_mul]
         simp only [Matrix.mul_assoc]
@@ -51,9 +52,11 @@ theorem compressed_gram
       _ = q • (n • (1 : Matrix κ κ R)) := by
         rw [hH]
         simp [Matrix.mul_smul, Matrix.smul_mul, hV, smul_smul, mul_comm]
-  exact (smul_right_injective _ hq) h
+  ext i j
+  exact mul_left_cancel₀ hq (congrArg (fun M : Matrix κ κ R => M i j) h)
 
 /-- The determinant identity needed after replacing sign rows by indicators. -/
+omit [IsDomain R] in
 theorem determinant_norm_of_gram (X : Matrix κ κ R) (p : R)
     (hX : Xᴴ * X = p • (1 : Matrix κ κ R)) :
     star X.det * X.det = p ^ Fintype.card κ := by
@@ -80,6 +83,7 @@ def fourierBlock (H : Matrix (OrbitIndex I G) (OrbitIndex I G) R)
     (χ : AddChar G R) : Matrix I I R :=
   fun i j => ∑ a : G, H (some (i, 0)) (some (j, a)) * χ a
 
+omit [IsDomain R] in
 theorem embedding_gram (χ : AddChar G R)
     (hχ : ∀ a, star (χ a) * χ a = 1) :
     (fourierEmbedding (I := I) χ)ᴴ * fourierEmbedding χ =
@@ -89,29 +93,35 @@ theorem embedding_gram (χ : AddChar G R)
   by_cases hij : i = j
   · subst j
     simp [Matrix.mul_apply, fourierEmbedding, Fintype.sum_prod_type, hχ]
-  · simp [Matrix.mul_apply, fourierEmbedding, Fintype.sum_prod_type, hij]
+  · simp [Matrix.mul_apply, fourierEmbedding, Fintype.sum_prod_type, hij, Ne.symm hij]
 
+omit [StarRing R] [IsDomain R] in
 theorem hadamard_mul_embedding_apply
     (H : Matrix (OrbitIndex I G) (OrbitIndex I G) R)
     (χ : AddChar G R) (r : OrbitIndex I G) (j : I) :
-    (H * fourierEmbedding χ) r j = ∑ b : G, H r (some (j, b)) * χ b := by
+    (H * fourierEmbedding (I := I) χ : Matrix (OrbitIndex I G) I R) r j =
+      ∑ b : G, H r (some (j, b)) * χ b := by
   classical
   simp [Matrix.mul_apply, fourierEmbedding, Fintype.sum_prod_type]
 
+omit [StarRing R] [IsDomain R] in
 theorem embedding_mul_apply (χ : AddChar G R) (A : Matrix I I R)
     (i : I) (a : G) (j : I) :
-    (fourierEmbedding χ * A) (some (i, a)) j = χ a * A i j := by
+    (fourierEmbedding (I := I) χ * A : Matrix (OrbitIndex I G) I R)
+      (some (i, a)) j = χ a * A i j := by
   classical
   simp [Matrix.mul_apply, fourierEmbedding]
 
 /-- Simultaneous translation makes the Fourier subspace invariant. -/
+omit [StarRing R] in
 theorem fourier_intertwine
     (H : Matrix (OrbitIndex I G) (OrbitIndex I G) R)
     (χ : AddChar G R) (hχ : χ ≠ 1)
     (hfixed : ∀ j b, H none (some (j, b)) = H none (some (j, 0)))
     (hblock : ∀ i j a b,
       H (some (i, a)) (some (j, b)) = H (some (i, 0)) (some (j, b - a))) :
-    H * fourierEmbedding χ = fourierEmbedding χ * fourierBlock H χ := by
+    H * fourierEmbedding (I := I) χ =
+      fourierEmbedding (I := I) χ * fourierBlock H χ := by
   classical
   ext r j
   cases r with
@@ -128,8 +138,8 @@ theorem fourier_intertwine
         (∑ b : G, H (some (i, 0)) (some (j, b - a)) * χ b) =
             ∑ b : G, H (some (i, 0)) (some (j, b)) * χ (b + a) := by
           simpa using (Fintype.sum_equiv (Equiv.addRight a)
-            (fun b => H (some (i, 0)) (some (j, b - a)) * χ b)
             (fun b => H (some (i, 0)) (some (j, b)) * χ (b + a))
+            (fun b => H (some (i, 0)) (some (j, b - a)) * χ b)
             (by intro b; simp)).symm
         _ = χ a * fourierBlock H χ i j := by
           simp only [AddChar.map_add_eq_mul, fourierBlock]

@@ -12,7 +12,7 @@ namespace HadamardAutomorphism
 noncomputable section
 
 variable {R I G : Type*} [CommRing R] [StarRing R] [IsDomain R] [CharZero R]
-  [Fintype I] [DecidableEq I] [Fintype G] [AddCommGroup G] [DecidableEq G]
+  [Fintype I] [DecidableEq I] [Fintype G] [AddCommGroup G]
 
 def negativeBlock (H : Matrix (OrbitIndex I G) (OrbitIndex I G) R)
     (i j : I) : Finset G := by
@@ -23,6 +23,7 @@ def indicatorFourierBlock (H : Matrix (OrbitIndex I G) (OrbitIndex I G) R)
     (χ : AddChar G R) : Matrix I I R :=
   fun i j => ∑ a ∈ negativeBlock H i j, χ a
 
+omit [StarRing R] in
 theorem fourierBlock_eq_indicator
     (H : Matrix (OrbitIndex I G) (OrbitIndex I G) R)
     (χ : AddChar G R) (hχ : χ ≠ 1)
@@ -65,7 +66,9 @@ theorem indicator_gram_599
       Matrix.smul_mul, Matrix.mul_smul, smul_smul, neg_mul_neg,
       show (2 : R) * 2 = 4 by norm_num,
       show (4 : R) * 599 = 2396 by norm_num] using hgram
-  exact (smul_right_injective _ (by norm_num : (4 : R) ≠ 0)) hfour
+  ext i j
+  exact mul_left_cancel₀ (by norm_num : (4 : R) ≠ 0)
+    (congrArg (fun M : Matrix I I R => M i j) hfour)
 
 end
 

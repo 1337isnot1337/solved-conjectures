@@ -53,7 +53,7 @@ theorem frobenius_ratio_root (u : 𝓞 K) (hu : u ≠ 0)
   obtain ⟨n, hn0, hpow⟩ := NumberField.Embeddings.pow_eq_one_of_norm_eq_one K ℂ
     ε.val.isIntegral_coe hn
   have hfin : IsOfFinOrder (ε : K) := isOfFinOrder_iff_pow_eq_one.mpr ⟨n, hn0, hpow⟩
-  letI : NeZero (orderOf (ε : K)) := ⟨hfin.orderOf_pos.ne'⟩
+  let : NeZero (orderOf (ε : K)) := ⟨hfin.orderOf_pos.ne'⟩
   have hd := NumberField.Units.dvd_torsionOrder_of_isPrimitiveRoot
     (IsPrimitiveRoot.orderOf (ε : K))
   have ht : NumberField.Units.torsionOrder K = 958 := by

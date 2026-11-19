@@ -1,0 +1,2 @@
+import Conjectures.HadamardAutomorphismDescent
+import Conjectures.HadamardAutomorphismCyclotomicPrimes

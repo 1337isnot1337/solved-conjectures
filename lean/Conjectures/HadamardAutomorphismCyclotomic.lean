@@ -66,7 +66,7 @@ theorem conjugation479_ne_one : conjugation479 K ≠ 1 := by
   exact (zeta_spec 479 ℚ K).pow_ne_one_of_pos_of_lt (by decide : 2 ≠ 0) (by decide) hsq
 
 theorem conjugation479_order : orderOf (conjugation479 K) = 2 := by
-  letI : Fact (Nat.Prime 2) := ⟨by decide⟩
+  let : Fact (Nat.Prime 2) := ⟨by decide⟩
   exact orderOf_eq_prime (conjugation479_sq K) (conjugation479_ne_one K)
 
 /-- The automorphism corresponding to multiplication by 599 modulo 479. -/
@@ -112,7 +112,7 @@ theorem mem_quadraticFixedField479 (x : K) :
 
 theorem quadraticFixedField479_relative_degree :
     Module.finrank (quadraticFixedField479 K) K = 239 := by
-  letI := Fintype.ofFinite (K ≃ₐ[ℚ] K)
+  let := Fintype.ofFinite (K ≃ₐ[ℚ] K)
   change Module.finrank
     (IntermediateField.fixedField (Subgroup.zpowers (frobenius479 K))) K = 239
   rw [IntermediateField.finrank_fixedField_eq_card, Nat.card_eq_fintype_card,
@@ -138,7 +138,7 @@ theorem prime599_ramification_index :
 
 theorem prime599_number_of_primes :
     ((Ideal.span {(599 : ℤ)}).primesOver (𝓞 K)).ncard = 2 := by
-  letI : IsGalois ℚ K := IsCyclotomicExtension.isGalois {479} ℚ K
+  let : IsGalois ℚ K := IsCyclotomicExtension.isGalois {479} ℚ K
   have h := Ideal.ncard_primesOver_mul_ramificationIdxIn_mul_inertiaDegIn
     (Ideal.span {(599 : ℤ)}) (𝓞 K) (K ≃ₐ[ℚ] K)
   rw [prime599_ramification_index K, prime599_inertia_degree K,

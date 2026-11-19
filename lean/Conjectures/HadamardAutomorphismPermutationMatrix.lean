@@ -1,6 +1,6 @@
 import Conjectures.HadamardAutomorphismPermutation
 import Mathlib.Data.Matrix.Basic
-import Mathlib.Data.Real.Basic
+import Mathlib.Basic.Real.Basic
 import Mathlib.Tactic.Ring
 import Mathlib.Tactic.NormNum.Basic
 

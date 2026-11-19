@@ -18,9 +18,10 @@ theorem det_zero_of_zero_product [IsDomain R] (A B : Matrix ι ι R)
       A.det • B = (A.adjugate * A) * B := by
         rw [Matrix.adjugate_mul, Matrix.smul_mul, Matrix.one_mul]
       _ = 0 := by rw [Matrix.mul_assoc, hAB, Matrix.mul_zero]
-  rcases smul_eq_zero.mp h with hdet | hb
-  · exact hdet
-  · exact (hB hb).elim
+  by_contra hdet
+  apply hB
+  ext i j
+  exact (mul_eq_zero.mp (congrArg (fun M : Matrix ι ι R => M i j) h)).resolve_left hdet
 
 theorem det_mem_prime_of_scaled_product
     (A B : Matrix ι ι R) (p : R) (P : Ideal R) [P.IsPrime]
@@ -32,7 +33,7 @@ theorem det_mem_prime_of_scaled_product
     rw [← Matrix.map_mul]
     rw [hAB]
     ext i j
-    simp [Matrix.map_apply, Pi.smul_apply, smul_eq_mul, hfp]
+    simp [Matrix.map_apply, smul_eq_mul, hfp]
   have hdet := det_zero_of_zero_product (A.map f) (B.map f) hmul hB
   apply Ideal.Quotient.eq_zero_iff_mem.mp
   rw [f.map_det]

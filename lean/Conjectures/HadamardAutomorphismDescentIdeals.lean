@@ -24,7 +24,7 @@ theorem prime_liesOver599_of_contains_divisor (u : 𝓞 K) (hu : u ≠ 0)
   have hI : (Ideal.span {u} : Ideal (𝓞 K)) ≠ ⊥ :=
     Ideal.span_singleton_eq_bot.not.mpr hu
   have hprime := (Ideal.mem_normalizedFactors_iff hI).mp hP
-  letI : P.IsPrime := hprime.1
+  let : P.IsPrime := hprime.1
   have huP : u ∈ P := hprime.2 (Ideal.mem_span_singleton_self u)
   have hpP : (599 : 𝓞 K) ∈ P := by
     have hpow : (599 : 𝓞 K) ^ r ∈ P := P.mem_of_dvd hu599 huP
@@ -50,8 +50,8 @@ theorem frobenius479_fixes_divisor_ideal (u : 𝓞 K) (hu : u ≠ 0)
   have hf : ∀ P ∈ normalizedFactors (Ideal.span {u}), frobenius479 K • P = P := by
     intro P hP
     obtain ⟨hmax, hover⟩ := prime_liesOver599_of_contains_divisor K u hu r hu599 P hP
-    letI := hmax
-    letI := hover
+    let := hmax
+    let := hover
     exact frobenius479_fixes_prime K P
   calc
     frobenius479 K • (Ideal.span {u} : Ideal (𝓞 K)) =

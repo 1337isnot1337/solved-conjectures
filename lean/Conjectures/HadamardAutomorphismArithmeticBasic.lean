@@ -27,7 +27,7 @@ theorem residue_power : (599 : ZMod 479) ^ 239 = 1 := by decide
 theorem residue_ne_one : (599 : ZMod 479) ≠ 1 := by decide
 
 theorem residue_order : orderOf (599 : ZMod 479) = 239 := by
-  letI : Fact (Nat.Prime 239) := ⟨prime_239⟩
+  let : Fact (Nat.Prime 239) := ⟨prime_239⟩
   exact orderOf_eq_prime residue_power residue_ne_one
 
 def residueUnit : (ZMod 479)ˣ := ZMod.unitOfCoprime 599 (by decide)
@@ -36,7 +36,7 @@ def residueUnit : (ZMod 479)ˣ := ZMod.unitOfCoprime 599 (by decide)
   exact ZMod.coe_unitOfCoprime 599 _
 
 theorem unit_order : orderOf residueUnit = 239 := by
-  letI : Fact (Nat.Prime 239) := ⟨prime_239⟩
+  let : Fact (Nat.Prime 239) := ⟨prime_239⟩
   apply orderOf_eq_prime
   · apply Units.ext
     simpa using residue_power

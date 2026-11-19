@@ -16,10 +16,12 @@ variable {q : ℕ} [NeZero q]
 def binaryAutocorrelation (D : Finset (ZMod q)) (g : ZMod q) : ℕ :=
   (D.filter fun x => x + g ∈ D).card
 
+omit [NeZero q] in
 @[simp] theorem binaryAutocorrelation_zero (D : Finset (ZMod q)) :
     binaryAutocorrelation D 0 = D.card := by
   simp [binaryAutocorrelation]
 
+omit [NeZero q] in
 theorem binaryAutocorrelation_le_card (D : Finset (ZMod q)) (g : ZMod q) :
     binaryAutocorrelation D g ≤ D.card := Finset.card_filter_le _ _
 
@@ -49,9 +51,8 @@ theorem binaryAutocorrelation_one_lt (D : Finset (ZMod q))
   have hle := binaryAutocorrelation_le_card D 1
   apply lt_of_le_of_ne hle
   intro heq
-  have hall : ∀ x ∈ D, x + (1 : ZMod q) ∈ D := by
-    apply Finset.card_filter_eq_iff.mp
-    exact heq
+  have hall : ∀ x ∈ D, x + (1 : ZMod q) ∈ D :=
+    (Finset.card_filter_eq_iff (p := fun x => x + (1 : ZMod q) ∈ D)).mp heq
   exact hproper (add_one_closed_support D hne hall)
 
 /-- If the coefficients are all congruent modulo a prime larger than the
