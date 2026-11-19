@@ -50,19 +50,23 @@ def graph (G : SimpleGraph V) : ∀ n parent root, SimpleGraph (Vertex G n paren
       (fun child : Children G parent root => graph G n root child.1)
       (fun child => rootVertex G n root child.1)
 
+instance finiteChildren (G : SimpleGraph V) [Finite V] (parent root : V) :
+    Finite (Children G parent root) :=
+  inferInstanceAs (Finite {v : V // G.Adj root v ∧ v ≠ parent})
+
 instance finiteVertex (G : SimpleGraph V) [Finite V] (n : ℕ) (parent root : V) :
     Finite (Vertex G n parent root) := by
   classical
-  let _ : Fintype V := Fintype.ofFinite V
   induction n generalizing parent root with
   | zero =>
       change Finite PUnit
       infer_instance
   | succ n ih =>
+      let _ : Fintype (Children G parent root) := Fintype.ofFinite _
       let _ (child : Children G parent root) : Fintype (Vertex G n root child.1) :=
         @Fintype.ofFinite (Vertex G n root child.1) (ih root child.1)
       change Finite (Option (Σ child : Children G parent root, Vertex G n root child.1))
-      infer_instance
+      exact Finite.of_fintype _
 
 theorem endpoint_rootVertex (G : SimpleGraph V) (n : ℕ) (parent root : V) :
     endpoint G n parent root (rootVertex G n parent root) = root := by
