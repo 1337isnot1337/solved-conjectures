@@ -96,6 +96,8 @@ import Conjectures.FranklLocalFibers
 import Conjectures.FranklLocalWeights
 import Conjectures.FranklLocalCertificate
 import Conjectures.FranklLocalMaximalCover
+import Conjectures.FranklLocalMaskCertificate
+import Conjectures.FranklLocalMaskDomains
 import Conjectures.FranklBasic
 import Conjectures.FranklShareSearch
 import Conjectures.FranklSpanFourShapes

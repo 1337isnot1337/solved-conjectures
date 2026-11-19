@@ -493,6 +493,8 @@ modules=(
   Conjectures.FranklLocalWeights
   Conjectures.FranklLocalCertificate
   Conjectures.FranklLocalMaximalCover
+  Conjectures.FranklLocalMaskCertificate
+  Conjectures.FranklLocalMaskDomains
   Conjectures.FranklBasic
   Conjectures.FranklShareSearch
   Conjectures.FranklSpanFourShapes

@@ -108,6 +108,32 @@ Run its separate candidate gate with:
 python3 scripts/verify_frankl_local_candidate.py maximal-cover
 ```
 
+## Local mask checker and domains
+
+[`FranklLocalMaskCertificate.lean`](../lean/Conjectures/FranklLocalMaskCertificate.lean)
+proves the exact relation between natural-number masks and compatible inside sets.
+It caches the maximal cover for each inside/exterior pair and checks the integer weight sum.
+The generator masks may describe an actual quotient ground.
+The proof assumes no injective map from an unwrapped interval.
+
+[`FranklLocalMaskDomains.lean`](../lean/Conjectures/FranklLocalMaskDomains.lean)
+constructs the inside and boundary domains from all submasks.
+It proves code bounds, exact decoded powerset coverage, and distinct inside codes.
+The two modules are registered after their
+[ten-module hosted gate](verification/frankl-mask-domains-a632fc82.json).
+That gate checked 163 project theorems, 38 required endpoints, and every module with the stock kernel.
+
+```sh
+python3 scripts/verify_frankl_local_candidate.py mask-domains
+```
+
+The [candidate input](../results/frankl-generator-families/width_four_weight_candidates.json)
+contains all 9,088 original width-four rows in their reproduced order.
+The [provenance manifest](../results/frankl-generator-families/width_four_weight_candidates_manifest.json)
+records the source and input hashes.
+The independent literal replay checks actual distinct local unions at periods seven, eight and nine.
+Its 27,264 row-period checks are computational evidence; they are not a full-data Lean proof.
+
 ## Checks
 
 The candidate gate requires all of these checks:

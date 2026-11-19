@@ -1578,3 +1578,22 @@ snapshot byte for byte.
 The complete span-four theorem and the small-degree high-girth theorem remain
 incomplete. The full merged-package gate is separate from these component
 checks. Li remains deferred.
+
+## Frankl mask checker and exact domains — 19 November 2026
+
+The accepted package includes `FranklLocalMaskCertificate` and
+`FranklLocalMaskDomains`. The mask checker decodes the actual finite generator
+family and counts each compatible inside set once. Its domain constructor
+proves the exact inside and boundary powersets, including code bounds and
+absence of duplicate inside codes. Literal quotient masks can therefore be
+checked without assuming an injective unwrapping map.
+
+At `a632fc82`, all ten sources passed strict checking, an import-all audit of
+163 project theorems, all 38 required endpoints, and stock kernel replay of
+every module. The two newly registered sources match that snapshot exactly.
+[Hosted receipt](verification/frankl-mask-domains-a632fc82.json) ·
+[Scope and reproduction](frankl-fc-formalization.md#local-mask-checker-and-domains).
+
+This registers reusable checker semantics. The full finite weight collection
+and graph/rank tables remain separate obligations. The complete span-four
+theorem remains incomplete, and the full merged-package gate is separate.

@@ -1,5 +1,14 @@
 # History
 
+## 2026-11-19 — Checked literal mask checker and exact domains
+
+Registered two exact local-mask checker modules after their ten-module hosted
+gate passed at `a632fc82`. The gate checked 163 project theorems, 38 required
+endpoints, and every module with the stock kernel checker. The checker counts
+actual compatible sets and proves its finite domains. Full window data and
+the complete span-four theorem remain separate obligations.
+[Receipt](docs/verification/frankl-mask-domains-a632fc82.json).
+
 ## 2026-11-19 — Checked Vaughan theorem and small cyclic components
 
 Registered the full three-triples Vaughan theorem and every nontrivial cyclic
