@@ -20,8 +20,8 @@ theorem quadraticFixedField479_unique (L : IntermediateField ℚ K)
     (IsCyclotomicExtension.Rat.galEquivZMod 479 K).isCyclic.mpr inferInstance
   have hsub : L.fixingSubgroup = (quadraticFixedField479 K).fixingSubgroup := by
     apply IsCyclic.subgroup_eq_iff_index_eq.mpr
-    rw [← IntermediateField.finrank_eq_fixingSubgroup_index L,
-      ← IntermediateField.finrank_eq_fixingSubgroup_index (quadraticFixedField479 K),
+    rw [← IntermediateField.finrank_eq_fixingSubgroup_index K L,
+      ← IntermediateField.finrank_eq_fixingSubgroup_index K (quadraticFixedField479 K),
       hL, quadraticFixedField479_degree K]
   have h := congrArg
     (fun H : Subgroup (K ≃ₐ[ℚ] K) => IntermediateField.fixedField H) hsub

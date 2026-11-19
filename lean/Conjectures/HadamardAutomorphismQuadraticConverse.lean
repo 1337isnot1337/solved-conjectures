@@ -21,8 +21,8 @@ theorem quadratic_half_generator_integral479 :
     (Polynomial.isMonicOfDegree_sub_add_two (1 : ℤ) 120).monic, ?_⟩
   change Polynomial.aeval ((1 + quadraticGeneratorInFixed479 K) / 2)
     (X ^ 2 - C (1 : ℤ) * X + C 120) = 0
-  simp only [map_add, map_sub, map_pow, map_mul, Polynomial.aeval_X,
-    Polynomial.aeval_C, map_one, map_ofNat, one_mul]
+  simp only [map_add, map_sub, map_pow, Polynomial.aeval_X,
+    map_one, map_ofNat, one_mul]
   field_simp
   linear_combination quadraticGeneratorInFixed479_sq K
 
@@ -57,7 +57,10 @@ theorem quadratic_integer_coordinates_iff479 (x : quadraticFixedField479 K) :
     obtain ⟨A, B, hcoords, hparity, _⟩ :=
       quadratic_integer_coordinates479 K (⟨x, hx⟩ : 𝓞 (quadraticFixedField479 K))
     refine ⟨A, B, ?_, hparity⟩
-    simpa only [RingOfIntegers.coe_mk] using hcoords
+    have hinner : ((⟨x, hx⟩ : 𝓞 (quadraticFixedField479 K)) :
+        quadraticFixedField479 K) = x := RingOfIntegers.coe_mk hx
+    have houter := congrArg (fun y : quadraticFixedField479 K => (y : K)) hinner
+    exact houter.symm.trans hcoords
   · rintro ⟨A, B, hcoords, hparity⟩
     have hx : x = ((A : quadraticFixedField479 K) +
         (B : quadraticFixedField479 K) * quadraticGeneratorInFixed479 K) / 2 := by
