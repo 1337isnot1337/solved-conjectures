@@ -72,12 +72,14 @@ theorem primitive_critical_low_tuple (ds : List ℕ)
   · obtain ⟨s, hs, hp⟩ := critical_parameters_of_low
       (base := [1,2,3,4]) (by decide) rfl (by norm_num)
       hlen hpos hprim d hd hsub hfifth
+    simp only [List.cons_append, List.nil_append] at hp
     have hs1 := first_family_low_parameter s hs
       (by rw [← value_perm hp]; exact hbelow)
     simpa only [hs1, mul_one] using hp
   · obtain ⟨s, hs, hp⟩ := critical_parameters_of_low
       (base := [1,3,4,7]) (by decide) rfl (by norm_num)
       hlen hpos hprim d hd hsub hfifth
+    simp only [List.cons_append, List.nil_append] at hp
     have hge := second_family_ge_two_elevenths s hs
     rw [← value_perm hp] at hge
     linarith
