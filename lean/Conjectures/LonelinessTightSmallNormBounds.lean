@@ -105,7 +105,9 @@ theorem exists_small_prime_of_tight {n : ℕ} (hn : 5 ≤ n) (hn' : n ≤ 7)
     (hLRC : ∀ m : ℕ, 1 ≤ m → m < n+1 → LonelyRunnerBound m) :
     ∃ p ∈ primeSet (n+1), ∀ i, ¬ p ∣ v i := by
   apply exists_prime_of_tight_bound (n+1) (by omega) (by omega) v hpositive
-  · convert hvalue using 1 <;> push_cast <;> ring
+  · convert hvalue using 1
+    push_cast
+    ring
   · exact tight_small_natural_squaredNorm_le hn hn' v hpositive hprimitive hvalue hLRC
 
 theorem six_squaredNorm_le (v : Fin 6 → ℕ) (hpositive : ∀ i, 0 < v i)

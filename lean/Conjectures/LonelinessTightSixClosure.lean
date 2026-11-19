@@ -63,6 +63,8 @@ variable (hLRC5 : LonelyRunnerBound 5)
   (h359 : PrimeClassification 359) (h373 : PrimeClassification 373)
   (h379 : PrimeClassification 379) (h383 : PrimeClassification 383)
 
+include h257 h271 h307 h313 h359 h373 h379 h383
+
 theorem prime_classifications : ∀ p ∈ primeList, PrimeClassification p := by
   intro p hp
   have hcases : p = 257 ∨ p = 271 ∨ p = 307 ∨ p = 313 ∨
@@ -77,6 +79,8 @@ theorem prime_classifications : ∀ p ∈ primeList, PrimeClassification p := by
   · exact h373
   · exact h379
   · exact h383
+
+include hLRC5
 
 /-- No distinctness hypothesis is imposed on the six input coordinates. -/
 theorem primitive_classification (v : Fin 6 → ℕ)
