@@ -19,7 +19,7 @@ struct Field {
     int p, n, words;
     std::vector<std::vector<Word>> good;
 
-    explicit Field(int prime) : p(prime), n(p / 2), words(n / 64 + 1),
+    explicit Field(int prime, int threshold=5) : p(prime), n(p / 2), words(n / 64 + 1),
         good(n + 1, std::vector<Word>(words)) {
         if (p < 3 || p > 50023) throw std::runtime_error("unsupported prime");
         for (int i = 2; i * i <= p; ++i)
@@ -29,7 +29,7 @@ struct Field {
             for (int t = 1; t <= n; ++t) {
                 r += a;
                 if (r >= p) r -= p;
-                if (5 * std::min(r, p-r) >= p)
+                if (threshold * std::min(r, p-r) >= p)
                     good[a][t/64] |= Word(1) << (t%64);
             }
         }
@@ -39,10 +39,13 @@ struct Field {
         if (a < 0) a += p;
         return std::min(a, p-a);
     }
-    bool witness(const std::array<int,5>& d) const {
-        for (int w = 0; w < words; ++w)
-            if (good[d[0]][w] & good[d[1]][w] & good[d[2]][w] &
-                good[d[3]][w] & good[d[4]][w]) return true;
+    template<std::size_t N>
+    bool witness(const std::array<int,N>& d) const {
+        for (int w = 0; w < words; ++w) {
+            Word common=~Word(0);
+            for (int speed:d) common &= good[speed][w];
+            if (common) return true;
+        }
         return false;
     }
 };
@@ -127,6 +130,7 @@ Matrix read_matrix(int rows, int cols) {
     return a;
 }
 
+template<std::size_t N>
 bool covers_plane(const Field& f, const Matrix& a, const Matrix& lines) {
     // First nonzero homogeneous coordinate equals one.
     for (int pivot=0; pivot<3; ++pivot)
@@ -135,8 +139,8 @@ bool covers_plane(const Field& f, const Matrix& a, const Matrix& lines) {
                 const int x = pivot==0, y = pivot==0 ? i : pivot==1;
                 const int z = pivot==2 ? 1 : j;
                 auto eval = [&](const Vector& r) { return r[0]*x+r[1]*y+r[2]*z; };
-                std::array<int,5> d;
-                for (int k=0; k<5; ++k) d[k]=f.fold(eval(a[k]));
+                std::array<int,N> d;
+                for (std::size_t k=0; k<N; ++k) d[k]=f.fold(eval(a[k]));
                 if (std::find(d.begin(),d.end(),0)!=d.end() || f.witness(d)) continue;
                 bool covered=false;
                 for (const auto& h : lines)
@@ -149,16 +153,16 @@ bool covers_plane(const Field& f, const Matrix& a, const Matrix& lines) {
 int main(int argc, char** argv) {
     if (argc != 3) return 2;
     std::string mode = argv[1];
-    Field f(std::stoi(argv[2]));
+    Field f(std::stoi(argv[2]),mode=="plane6" ? 6 : 5);
     if (mode == "root") { std::cout << covers_quintuples(f) << '\n'; return 0; }
     int id;
     while (std::cin >> id) {
-        if (mode == "plane") {
-            auto a = read_matrix(5,3);
+        if (mode == "plane" || mode == "plane6") {
+            auto a = read_matrix(mode=="plane6" ? 6 : 5,3);
             int count;
             if (!(std::cin >> count)) return 2;
             auto lines = read_matrix(count,3);
-            std::cout << id << ' ' << covers_plane(f,a,lines) << '\n';
+            std::cout << id << ' ' << (mode=="plane6" ? covers_plane<6>(f,a,lines) : covers_plane<5>(f,a,lines)) << '\n';
         } else if (mode == "slopes") {
             auto a = read_matrix(5,2);
             std::cout << id;

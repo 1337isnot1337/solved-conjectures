@@ -1,26 +1,29 @@
 // For each tested prime verify that the only distinct folded sextuples
 // without a strict 1/7 witness are modular dilations of {1,2,3,4,5,6}.
+// With --list-sixths, emit representatives without a 1/6 witness instead.
 #include <algorithm>
 #include <array>
 #include <bit>
 #include <cstdint>
 #include <iostream>
 #include <set>
+#include <string>
 #include <stdexcept>
 #include <vector>
 
 using Word = std::uint64_t;
-constexpr int blocks = 9; // p <= 1109
+constexpr int blocks = 15; // enough for the prime ranges in both verifiers
 using Bits = std::array<Word,blocks>;
 
 struct Sieve {
     int p, n, words;
+    bool list_sixths;
     std::vector<Bits> witnessed, later;
     std::vector<std::vector<int>> ratio;
     std::set<std::array<int,6>> baseline;
     std::array<int,6> prefix{1};
 
-    explicit Sieve(int prime) : p(prime), n(p/2), words(n/64+1),
+    Sieve(int prime, bool list) : p(prime), n(p/2), words(n/64+1), list_sixths(list),
         witnessed(n+1), later(n+1), ratio(n+1,std::vector<int>(n+1)) {
         if (p<53 || words>blocks) throw std::runtime_error("unsupported modulus");
         for (int i=2; i*i<=p; ++i)
@@ -33,7 +36,7 @@ struct Sieve {
             baseline.insert(copy);
             for (int t=1; t<=n; ++t) {
                 int v=fold(a*t);
-                if (7*v>p) witnessed[a][t/64] |= Word(1)<<(t%64);
+                if (list_sixths ? 6*v>=p : 7*v>p) witnessed[a][t/64] |= Word(1)<<(t%64);
                 if (v==1) inverse[a]=t;
             }
         }
@@ -67,7 +70,10 @@ struct Sieve {
                 while (left) {
                     prefix[5]=64*w+std::countr_zero(left);
                     left &= left-1;
-                    if (!baseline.contains(prefix)) return false;
+                    if (list_sixths) {
+                        for (int speed : prefix) std::cout << speed << ' ';
+                        std::cout << '\n';
+                    } else if (!baseline.contains(prefix)) return false;
                 }
             }
             return true;
@@ -114,10 +120,13 @@ struct Sieve {
     }
 };
 
-int main() {
+int main(int argc, char** argv) {
+    const bool list = argc==2 && std::string(argv[1])=="--list-sixths";
+    if (argc!=1 && !list) return 2;
     int p;
     while (std::cin>>p) {
-        Sieve s(p);
-        std::cout<<p<<' '<<s.check()<<std::endl;
+        Sieve s(p,list);
+        bool result=s.check();
+        if (!list) std::cout<<p<<' '<<result<<std::endl;
     }
 }
