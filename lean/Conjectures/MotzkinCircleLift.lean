@@ -67,7 +67,7 @@ theorem liftSet_volume {U : Set ℝ} (hU : U ⊆ Ico (0:ℝ) 1)
         AddCircle.add_projection_respects_measure (1:ℝ) 0 (measurable_liftSet hm)
     _=(volume.restrict (Ioc (0:ℝ) 1)) W := (Measure.restrict_apply hW).symm
     _=(volume.restrict (Ico (0:ℝ) 1)) W := by
-      rw [Measure.restrict_Ico_eq_restrict_Ioc]
+      rw [MeasureTheory.restrict_Ico_eq_restrict_Ioc]
     _=volume (W ∩ Ico (0:ℝ) 1) := Measure.restrict_apply hW
     _=volume U := congrArg volume hinter
 

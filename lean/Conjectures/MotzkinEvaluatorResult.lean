@@ -22,7 +22,7 @@ theorem quotientOptimum_feasible (m k s : ℕ) (hm : 0 < m) (hk : 0 < k) :
       z.2.2 ≤ m*k-z.1 ∧ m ∣ z.2.2+(s%m)*i := by
   have hN : 0 < m*k := Nat.mul_pos hm hk
   by_cases hh : optimum m k (s%m)=0
-  · simp only [quotientOptimum,ite_eq_left hh,Prod.fst,Prod.snd]
+  · simp only [quotientOptimum,ite_eq_left hh]
     refine ⟨0,hm,?_,hN,?_,?_,?_,?_,?_⟩ <;> simp
   · have hp : 0 < optimum m k (s%m) := Nat.pos_of_ne_zero hh
     obtain ⟨hiL,hiU,hrow⟩ := firstRow_spec m k (s%m) (optimum m k (s%m)) hm hk hp
@@ -34,7 +34,7 @@ theorem quotientOptimum_feasible (m k s : ℕ) (hm : 0 < m) (hk : 0 < k) :
       (firstRow m k (s%m) (optimum m k (s%m))) hm hp hrow
     obtain ⟨hy,hdiv⟩ := Finset.mem_filter.mp hy
     obtain ⟨hyL,hyU⟩ := Finset.mem_Icc.mp hy
-    simp only [quotientOptimum,ite_eq_right hh,Prod.fst,Prod.snd]
+    simp only [quotientOptimum,ite_eq_right hh]
     exact ⟨firstRow m k (s%m) (optimum m k (s%m)),him,rfl,
       hyU.trans_lt (Nat.sub_lt hN hp),hkiL,hkiU,hyL,hyU,hdiv⟩
 
