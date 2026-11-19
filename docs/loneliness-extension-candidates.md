@@ -1,7 +1,8 @@
 # Runner and hyperplane extension candidates
 
-These sources are unregistered candidates. Their first complete gates are
-pending. The separate extension workflow uses the existing source rebuild,
+These sources are unregistered candidates. The eight-speed support
+interpretation has passed its complete gate; the other new extensions still
+require their own completed receipts. The separate extension workflow uses the existing source rebuild,
 all-owned-theorem axiom audit, and stock-kernel replay implementation. The
 receipt hashes both the extension registry and the underlying verification
 code. Allowed axioms remain `propext`, `Classical.choice`, and `Quot.sound`.
@@ -20,6 +21,12 @@ The finite producers are untrusted data generators. Native diagnostic runs
 are not premises of any Lean theorem. Complete numerical six-speed wrapper
 files enable their named tasks automatically; a missing imported data block
 fails dependency planning. No absent prime task is counted as a pass.
+
+At `b6b58f4`, the eight-speed support interpretation passed its complete
+36-module closure and 768-theorem axiom audit, followed by independent kernel
+replay in [job 135354309892](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44463069467/job/135354309892).
+Its lower-runner and numerical-certificate premises remain explicit. This
+receipt does not assert the full eight-speed classification.
 
 The completed basis and prime-arithmetic components are separate from these
 new extensions. At source commit `9a7cb8a`, the basis closure passed all 16
