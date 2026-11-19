@@ -209,7 +209,8 @@ def main():
     require(not artifact["expired"] and artifact["name"] == ARTIFACT_NAME
             and artifact["workflow_run"]["id"] == RUN_ID
             and artifact["workflow_run"]["head_sha"] == HEAD, "Tree-small artifact ownership differs")
-    payload = request(artifact["archive_download_url"])
+    require(artifact["size_in_bytes"] == 97354993, "Original tree-small archive size differs")
+    payload = request(artifact["archive_download_url"], limit=128 * 1024 * 1024)
     subprocess.run(["git", "fetch", "--no-tags", "--depth=1", "origin", HEAD],
                    cwd=ROOT, check=True)
     files, frozen_sources = validate_archive(artifact, payload)
