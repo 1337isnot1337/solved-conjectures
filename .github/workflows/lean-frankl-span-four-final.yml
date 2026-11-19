@@ -44,6 +44,18 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 scripts/verify_frankl_span_four_final.py --readiness
+      - name: Validate available original artifacts while dependencies finish
+        if: ${{ steps.ready.outputs.ready != 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/verify_frankl_span_four_final.py --validate-bound-dependencies --artifact-dir .candidate-artifacts/frankl-span-four-dependency-validation
+      - uses: actions/upload-artifact@v4
+        if: ${{ steps.ready.outputs.ready != 'true' }}
+        with:
+          name: frankl-span-four-dependency-validation
+          path: .candidate-artifacts/frankl-span-four-dependency-validation/validation.json
+          include-hidden-files: true
+          retention-days: 14
       - uses: actions/upload-artifact@v4
         with:
           name: frankl-span-four-final-plan

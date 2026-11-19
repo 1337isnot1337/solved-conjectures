@@ -808,11 +808,54 @@ def verify(model, modules, fresh, stage):
         "receipt_sha256": sha((stage / "receipt.json").read_bytes())}), flush=True)
 
 
+
+def validate_bound_dependencies(model, stage):
+    """Exercise real immutable archives without claiming a new Lean check."""
+    require(not stage.exists() or not any(stage.iterdir()), "Choose a fresh validation directory")
+    for path in ("src", "lib/lean", "dependencies"):
+        (stage / path).mkdir(parents=True, exist_ok=True)
+    frozen, identities, references, pending = {}, {}, [], []
+    for name, profile in model["providers"].items():
+        binding = profile.get("binding")
+        if not binding_complete(binding):
+            pending.append(name)
+            continue
+        validate_binding(binding)
+        require(validate_run(evidence.api("/actions/runs/" + str(binding["run_id"])), binding),
+                "A bound dependency run is still incomplete")
+        artifact = evidence.api("/actions/artifacts/" + str(binding["artifact_id"]))
+        require(artifact["archive_download_url"] == evidence.API + "/actions/artifacts/" +
+                str(binding["artifact_id"]) + "/zip", "Unexpected dependency download URL")
+        payload = evidence.request(artifact["archive_download_url"], limit=profile["compressed_limit"])
+        references.append(stage_provider(stage, name, artifact, payload, profile, model, identities, frozen))
+        print(json.dumps({"validated_original_artifact": name, "modules": len(identities)}), flush=True)
+        del payload
+    require(references, "No immutable dependency artifact is bound yet")
+    require(orbit.artifact_hashes(stage, sorted(identities)) ==
+            {m: row["identity"]["facets"] for m, row in identities.items()},
+            "Validated dependency stage changed")
+    assert_sources_and_helpers(model)
+    common.assert_frozen(stage, frozen)
+    value = {
+        "schema": "frankl-span-four-artifact-validation-only-v1",
+        "status": "original_artifacts_validated",
+        "scope": "Protocol validation of already-passed immutable artifacts; no new Lean proof check",
+        "dependency_references": references, "staged_module_count": len(identities),
+        "identities_sha256": sha(encoded(identities)),
+        "unbound_providers": pending, "fresh_source_modules": [], "fresh_replay_modules": [],
+        "complete_theorem_verified": False,
+    }
+    (stage / "validation.json").write_bytes(encoded(value))
+    print(json.dumps({key: value[key] for key in (
+        "status", "staged_module_count", "unbound_providers", "complete_theorem_verified")}), flush=True)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--plan", action="store_true")
     parser.add_argument("--plan-output", type=Path)
     parser.add_argument("--readiness", action="store_true")
+    parser.add_argument("--validate-bound-dependencies", action="store_true")
     parser.add_argument("--artifact-dir", type=Path,
         default=ROOT / ".candidate-artifacts/frankl-span-four-final")
     args = parser.parse_args()
@@ -825,6 +868,9 @@ def main():
                 handle.write("ready=" + str(result["ready"]).lower() + "\n")
         return
     modules, fresh = preflight(model)
+    if args.validate_bound_dependencies:
+        validate_bound_dependencies(model, args.artifact_dir.resolve())
+        return
     if args.plan:
         result = {
             "schema": "frankl-span-four-composed-plan-v1", "root": model["root"],
