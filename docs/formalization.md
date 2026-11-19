@@ -11,8 +11,9 @@ adapter, hyperplane residue calculations, and endpoint components. Their
 source, axiom, and independent-kernel checks are recorded in
 [`loneliness-3f6-component-receipts.json`](loneliness-3f6-component-receipts.json)
 and [`loneliness-75df-component-receipts.json`](loneliness-75df-component-receipts.json).
-The geometric assembly, lower-speed classification inputs, and full
-hyperplane counting and density conclusions remain separate obligations.
+Those receipts did not by themselves discharge the geometric assembly or the
+lower-speed classification inputs. The later checkpoints below record the
+accepted scope, including the conditional critical-seven assembly.
 
 ## Coordination, 18 November 2026
 
@@ -776,6 +777,8 @@ stock-kernel gate passes. [Proof components and current scope](five-runner-exact
 
 Exact [run 44545339492, job 135634276616](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44545339492/job/135634276616) at `788e2572b877750158bd471191ef9701c50b93bd` passed 34 fresh strict source checks, the complete 1,024-declaration audit (805 theorems, 36 private declarations), all 23 required endpoints, and 34 independent exact stock-kernel targets. The original ZIP, receipt, source/control snapshot, object facets, audit, and logs were authenticated before preserving the unchanged evidence in [verification/higher-triangle-exact-44545339492](verification/higher-triangle-exact-44545339492/). Registration adds one module and 23 endpoints. Failed six-plane sibling jobs are excluded; the merged-package gate and unconditional result completion remain separate.
 
+
+
 ## Renault dependency proof and prime-307 pilot, 19 November 2026
 
 The Renault foundation checkpoint passed its fresh source, complete owned/private axiom audit, and exact stock-kernel gate at `f6b37c31b67d4905a03ebafca4e427aaf36d8ad8`. It includes all eight universal real phase lemmas and the maximization, gcd-orbit, shift, fiber-arithmetic, and relabeling components. The full five-speed lower bound remains a separate candidate under [issue 38](https://github.com/1337isnot1337/solved-conjectures/issues/38); the foundation pass does not complete that bound or the five-speed spectrum.
@@ -783,3 +786,41 @@ The Renault foundation checkpoint passed its fresh source, complete owned/privat
 The prime-307 pilot at `7bfbeef3715b82f33bae00493f05c72d7a6978e4` passed the same verification stages for minimum-pair roots 2 and 153. It preserves the original checker propositions and uses a proved equality to the faster counted-bit implementation. Full coverage for primes 271, 307, and 313 remains active. No whole-prime certificate or unconditional six-speed classification follows from this pilot.
 
 Both unchanged receipts and their authenticated source, audit, control, and log evidence are preserved under [verification/renault-foundations-44549206241](verification/renault-foundations-44549206241/) and [verification/p307-pilot-44540677853](verification/p307-pilot-44540677853/). Exact counts, run links, and scope are recorded in [the Lean status](lean-status.md#renault-foundations-and-six-speed-prime-pilot-19-november-2026). Accepted registries and result-completion markers are unchanged.
+
+## Conditional critical-seven classification checkpoint
+
+The seven-coordinate critical-plane assembly and its large-norm family
+conclusion are registered through `LonelinessSevenCoordinateClassification`
+and `LonelinessSevenCoordinateLargeNormFamily`. All finite enumeration,
+signed-coordinate transport, integer product parameters, gcd reduction, and
+actual real-time family values are internal to the proof.
+
+The remaining inputs are exactly `h5 : LonelyRunnerBound 5` and
+`h6 : PrimitiveSixClassification`. The first is the lower bound `1/6` for
+every nonempty positive distinct list of at most five speeds. The second
+classifies every positive distinct primitive six-speed list of value at most
+`1/7` as a permutation of `[1,2,3,4,5,6]`. Neither input is claimed
+discharged by this component.
+
+Under these inputs, a rational two-plane in seven coordinates has value
+`1/7` exactly when it is a signed coordinate permutation of the standard
+product plane. The standard-plane value direction is unconditional. A
+positive primitive seven-speed tuple of value below `1/7` and Euclidean
+norm at least `7*42^10` is a literal permutation of
+`[1,2,3,4,5,6,7*s]`, with `s >= 1` and exact value `s/(7*s+1)`.
+
+Exact [run 44547965580, job 135643591005](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44547965580/job/135643591005)
+at `d082b9a7adbed4144ccc9a961023bcae46f00e3d` passed 105 fresh strict
+source checks, the 2,105-declaration all-owned/private audit (1,864 theorems,
+630 private declarations), all 23 required endpoints, and 105 independent
+exact stock-kernel replays. Its original 635-file archive was authenticated;
+425 unchanged evidence files are preserved in
+[verification/critical-seven-exact-44547965580](verification/critical-seven-exact-44547965580/).
+The archive and receipt hashes, process logs, and validation report are
+recorded there.
+
+Registration adds 47 modules and 23 required endpoints. The complete finite
+and source checks do not establish unconditional seven-speed exhaustiveness:
+the lower-dimensional hypotheses and the remaining global classification
+are still open. The merged-package gate and original-result completion
+remain separate.

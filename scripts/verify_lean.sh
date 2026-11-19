@@ -1045,6 +1045,53 @@ modules=(
   Conjectures.LonelinessEightSpectrumRealization
   Conjectures.LonelinessHigherSpectrumBounds
   Conjectures.LonelinessHigherTriangleConsequences
+  Conjectures.LonelinessSevenCoordinateDefs
+  Conjectures.LonelinessSevenCoordinateQuantitativeArithmetic
+  Conjectures.LonelinessSevenCoordinateFiniteDefs
+  Conjectures.LonelinessSevenCoordinateCoverage
+  Conjectures.LonelinessSevenCoordinateFiniteBool
+  Conjectures.LonelinessSevenCoordinateMinorBound
+  Conjectures.LonelinessSevenCoordinateRationalGap
+  Conjectures.LonelinessSevenCoordinateCase000
+  Conjectures.LonelinessSevenCoordinateCase001
+  Conjectures.LonelinessSevenCoordinateCase010
+  Conjectures.LonelinessSevenCoordinateCase011
+  Conjectures.LonelinessSevenCoordinateCase100
+  Conjectures.LonelinessSevenCoordinateCase101
+  Conjectures.LonelinessSevenCoordinateCase110
+  Conjectures.LonelinessSevenCoordinateCase111
+  Conjectures.LonelinessSevenCoordinateCase200
+  Conjectures.LonelinessSevenCoordinateCase201
+  Conjectures.LonelinessSevenCoordinateCase210
+  Conjectures.LonelinessSevenCoordinateCase211
+  Conjectures.LonelinessSevenCoordinateCase300
+  Conjectures.LonelinessSevenCoordinateCase301
+  Conjectures.LonelinessSevenCoordinateCase310
+  Conjectures.LonelinessSevenCoordinateCase311
+  Conjectures.LonelinessSevenCoordinateCase400
+  Conjectures.LonelinessSevenCoordinateCase401
+  Conjectures.LonelinessSevenCoordinateCase410
+  Conjectures.LonelinessSevenCoordinateCase411
+  Conjectures.LonelinessSevenCoordinateCase500
+  Conjectures.LonelinessSevenCoordinateCase501
+  Conjectures.LonelinessSevenCoordinateCase510
+  Conjectures.LonelinessSevenCoordinateCase511
+  Conjectures.LonelinessSevenCoordinateFinite
+  Conjectures.LonelinessSevenCoordinateTangent
+  Conjectures.LonelinessSevenCoordinateTangentGap
+  Conjectures.LonelinessProductFamilySeven
+  Conjectures.LonelinessSevenCoordinateQuantitativeBasis
+  Conjectures.LonelinessSevenCoordinateDirections
+  Conjectures.LonelinessSevenCoordinateNormalization
+  Conjectures.LonelinessSevenCoordinateProduct
+  Conjectures.LonelinessSevenCoordinateAdmissibility
+  Conjectures.LonelinessSevenCoordinatePlaneNormalization
+  Conjectures.LonelinessSevenCoordinateProductSpeeds
+  Conjectures.LonelinessSevenCoordinateQuantitativeRepeat
+  Conjectures.LonelinessSevenCoordinateClassification
+  Conjectures.LonelinessSevenCoordinatePatternPlane
+  Conjectures.LonelinessSevenCoordinateLargeNorm
+  Conjectures.LonelinessSevenCoordinateLargeNormFamily
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

@@ -58,7 +58,7 @@ partial formalization, and ⬜ for a result without Lean formalization.
 | Haralambis three-difference theorem | Complete | Exact equality of actual extremal density and real circle value for every positive triple, with no coprimality premise. An optimal periodic set has a pair-sum period. The proof includes finite balanced orientations, signed defects, odd periods, interval counting, and the explicit `{2,5,9}` example. |
 | Five-speed spectrum | Partial | All twelve example values and both critical-family reductions are checked. The unconditional four-speed gap theorem is proved: below `2/9`, precisely the two scaled critical directions occur, both with value `1/5`. This also proves the four-speed runner bound. All 122,880 indexed plane cases and the five-speed coordinate cutoff are checked, and their gap input is now available. The bounded five-speed classification remains open. |
 | Tight nine-speed sets | Partial | The consecutive direction has exact global value `1/10`. The norm cutoff and prime selection are checked under explicit smaller-dimensional runner bounds. Those bounds, exhaustive modular classification and uniqueness remain open. |
-| Seven-speed spectrum | Partial | The infinite consecutive family and all 27 displayed exceptional values are checked. The geometric norm bound and exhaustive classification remain open. |
+| Seven-speed spectrum | Partial | Realization, the 27 displayed exceptional values, and sharp candidate bounds are checked. The critical-plane classification and large-norm family bridge are registered under explicit `LonelyRunnerBound 5` and primitive tight-six classification hypotheses. Unconditional tuple exhaustiveness remains open. |
 | Eight-speed spectrum | Partial | All three displayed product families are classified and evaluated within those families, including both exceptional `s=1` values. All 17 displayed sporadic values are checked. The norm bound and exhaustive classification outside the families remain open. |
 | Eleven-through-fourteen-runner equality | Partial | The displayed equality directions have their exact global values. Norm cutoffs and prime selection are checked under explicit smaller-dimensional runner bounds. Those bounds, modular exhaustiveness and uniqueness remain open. |
 
@@ -394,7 +394,7 @@ three-pile modules and is not a count of independent mathematical results.
 
 The [five-speed loneliness spectrum](../results/five-speed-spectrum/PROOF.md) has a written computer-assisted proof and an exhaustive arithmetic verifier. Its Lean formalization is open.
 
-The [six-speed equality and seven-coordinate plane classifications](../results/tight-six-speeds/PROOF.md) have written proofs and executable finite checks. Their Lean formalizations are open.
+The [six-speed equality and seven-coordinate plane classifications](../results/tight-six-speeds/PROOF.md) have written proofs and executable finite checks. The seven-coordinate plane and large-norm family bridge is now registered under the two explicit lower-dimensional hypotheses described below. The primitive tight-six classification and unconditional seven-speed exhaustiveness remain open.
 
 The [six-speed loneliness spectrum](../results/six-speed-spectrum/PROOF.md) has a written computer-assisted proof and an exhaustive arithmetic verifier. Its Lean formalization is open.
 
@@ -2417,6 +2417,8 @@ The gate rebuilt all 34 project source modules with warnings treated as errors, 
 
 Unchanged receipt, audit, logs, progress records, archive-member inventory, and preservation record are under [verification/higher-triangle-exact-44545339492](verification/higher-triangle-exact-44545339492/). Registration adds one module and 23 required endpoints. The combined accepted-root gate remains separate, and no result directory is marked complete.
 
+
+
 ## Renault foundations and six-speed prime pilot, 19 November 2026
 
 Two separate hosted gates passed. Neither checkpoint completes a spectrum classification.
@@ -2445,3 +2447,51 @@ The prime-307 pilot proves the original support-checker propositions for minimum
 The original artifact ZIPs and raw receipt hashes were authenticated against GitHub's artifact metadata and completed job logs. Every preserved source, object digest, audit inventory, and process log was revalidated after download. The evidence archives contain the original proof sources, controls, certificate data where present, audit inventories, logs, and process profiles. This preservation step did not perform a new local Lean replay.
 
 The complete Renault proof is a separate candidate at `af144a83407065bc9b4ffae707c9b360a5f9c399`, tracked in [issue 38](https://github.com/1337isnot1337/solved-conjectures/issues/38). Its final endpoint has type `CoordinateSubspace.LonelyRunnerBound 5` and discharges the four-speed input. Its [106-module gate](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44550409224) is separate from the passing foundation gate. No complete five-speed bound or new accepted-module registration is claimed by this checkpoint.
+
+## Critical seven-coordinate planes and large-norm family
+
+The roots `LonelinessSevenCoordinateClassification` and
+`LonelinessSevenCoordinateLargeNormFamily` are registered. Their classification
+directions retain exactly these two mathematical inputs:
+
+- `h5 : LonelyRunnerBound 5`: every nonempty list of at most five distinct
+  positive speeds has loneliness at least `1/6`.
+- `h6 : PrimitiveSixClassification`: every positive, distinct, primitive
+  six-speed list with loneliness at most `1/7` is a permutation of
+  `[1,2,3,4,5,6]`.
+
+Under `h5` and `h6`, a rational two-plane in seven coordinates has actual
+space loneliness `1/7` if and only if it is a signed coordinate permutation
+of the standard product plane. The converse value calculation for every
+standard product plane is unconditional. The finite enumeration, repeat-line
+tests, signed-coordinate normalization, and geometric assembly are proved
+internally.
+
+Under the same two inputs, every positive primitive tuple `v : Fin 7 → ℕ`
+with `value (List.ofFn v) < 1/7` and Euclidean norm at least `7*42^10` is an
+actual permutation of `[1,2,3,4,5,6,7*s]` for some `s >= 1`. Its exact
+real-time loneliness is `s/(7*s+1)`. Integer product parameters, gcd transfer,
+and the family value are included in the checked proof.
+
+Exact [run 44547965580, job 135643591005](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44547965580/job/135643591005)
+at `d082b9a7adbed4144ccc9a961023bcae46f00e3d` passed all 105 fresh strict
+source checks, all 23 required theorem endpoints, the complete audit of
+2,105 owned/raw declarations (1,864 theorems and 630 private declarations),
+and 105 independent exact stock-kernel targets. Only `propext`,
+`Classical.choice`, and `Quot.sound` are allowed.
+
+Artifact `14542847200` has ZIP SHA256
+`194c41f3c61b853102ee11251881edf82b0bdbda0fbf0fb3c4776966050bf7f8`.
+The unchanged receipt has SHA256
+`7ed624c23f151717a7d2df018d77c994bbe26dbc9f6a20122eb353234a95adf7`.
+All 635 archive files were authenticated. The 425 original receipt, audit,
+log, and progress files are preserved in
+[verification/critical-seven-exact-44547965580](verification/critical-seven-exact-44547965580/),
+with archive-member hashes and an independent validation record.
+
+Registration adds 47 modules to the accepted module list and 23 required
+endpoints. This checkpoint completes the stated finite and geometric bridge
+with its explicit inputs. It does not discharge `h5` or `h6`, and it does not
+establish unconditional seven-speed spectrum exhaustiveness. No result
+directory is marked complete by this registration. The merged-package gate
+remains separate from this exact component evidence.
