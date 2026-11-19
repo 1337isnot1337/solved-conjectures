@@ -62,7 +62,8 @@ theorem adjacent_real_restrict
   funext k
   by_cases hki : k = i
   · subst k
-    simp [Function.comp_apply, realVector_add, realVector_zsmul]
+    simp only [Function.comp_apply, Equiv.swap_apply_left, Function.update_self,
+      adjacentBasis_apply_left, realVector_add, realVector_zsmul]
   by_cases hkj : k = j
   · subst k
     simp [Function.comp_apply, hij]
@@ -88,7 +89,7 @@ def adjacentStep (B : Module.Basis (Fin N) ℤ (Fin N → ℤ)) (i : ℕ)
     (hi : i + 1 < N) (c : ℤ) : Module.Basis (Fin N) ℤ (Fin N → ℤ) :=
   adjacentBasis B ⟨i, by omega⟩ ⟨i + 1, hi⟩ (by
     intro h
-    have := congrArg Fin.val h
+    have hval : i = i + 1 := congrArg (fun x : Fin N => x.val) h
     omega) c
 
 theorem adjacentStep_apply_before (B : Module.Basis (Fin N) ℤ (Fin N → ℤ)) (i : ℕ)
@@ -96,10 +97,10 @@ theorem adjacentStep_apply_before (B : Module.Basis (Fin N) ℤ (Fin N → ℤ))
     adjacentStep B i hi c k = B k := by
   apply adjacentBasis_apply_other
   · intro h
-    have := congrArg Fin.val h
+    have hval : k.val = i := congrArg (fun x : Fin N => x.val) h
     omega
   · intro h
-    have := congrArg Fin.val h
+    have hval : k.val = i + 1 := congrArg (fun x : Fin N => x.val) h
     omega
 
 theorem realFamily_adjacentStep_left (B : Module.Basis (Fin N) ℤ (Fin N → ℤ)) (i : ℕ)
@@ -107,7 +108,8 @@ theorem realFamily_adjacentStep_left (B : Module.Basis (Fin N) ℤ (Fin N → �
     realFamily (adjacentStep B i hi c) i =
       realFamily B (i + 1) + (c : ℝ) • realFamily B i := by
   have hi' : i < N := by omega
-  simp [realFamily, integerFamily, hi, hi', adjacentStep, realVector_zsmul]
+  simp only [realFamily, integerFamily, dite_eq_left hi, dite_eq_left hi',
+    adjacentStep, adjacentBasis_apply_left, realVector_add, realVector_zsmul]
 
 theorem realFamily_adjacentStep_right (B : Module.Basis (Fin N) ℤ (Fin N → ℤ)) (i : ℕ)
     (hi : i + 1 < N) (c : ℤ) :
@@ -122,7 +124,7 @@ theorem realFamily_adjacentStep_other (B : Module.Basis (Fin N) ℤ (Fin N → �
   · have hi' : i < N := by omega
     have hki' : (⟨k, hk⟩ : Fin N) ≠ ⟨i, hi'⟩ := fun h => hki (congrArg Fin.val h)
     have hkj' : (⟨k, hk⟩ : Fin N) ≠ ⟨i + 1, hi⟩ := fun h => hkj (congrArg Fin.val h)
-    simp only [realFamily, integerFamily, dif_pos hk, adjacentStep]
+    simp only [realFamily, integerFamily, dite_eq_left hk, adjacentStep]
     rw [adjacentBasis_apply_other B ⟨i, hi'⟩ ⟨i + 1, hi⟩ _ c ⟨k, hk⟩ hki' hkj']
   · simp [realFamily, integerFamily, hk]
 

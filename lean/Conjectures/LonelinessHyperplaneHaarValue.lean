@@ -49,7 +49,12 @@ variable {ι : Type*} [Fintype ι]
 theorem continuous_torusPredictedValue (m : ι → ℤ) :
     Continuous (torusPredictedValue m) := by
   have hp : Continuous (normalPhase m (torusCenter : ι → UnitAddCircle)) := by
-    exact (continuous_normalHom m).comp (continuous_const.sub continuous_id)
+    change Continuous (fun s : ι → UnitAddCircle => normalHom m (torusCenter - s))
+    have hs : Continuous (fun s : ι → UnitAddCircle =>
+        (torusCenter : ι → UnitAddCircle) - s) :=
+      (continuous_const : Continuous (fun _ : ι → UnitAddCircle =>
+        (torusCenter : ι → UnitAddCircle))).sub continuous_id
+    exact (continuous_normalHom m).comp hs
   exact continuous_const.sub (hp.norm.div_const (normalMass m))
 
 theorem haar_predictedValue_distribution (m : ι → ℤ) (hm : PrimitiveNormal m) :

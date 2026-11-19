@@ -31,7 +31,7 @@ theorem integerPairing_sub (m x y : ι → ℤ) :
 
 theorem integerPairing_smul (m : ι → ℤ) (c : ℤ) (x : ι → ℤ) :
     integerPairing m (c • x) = c * integerPairing m x := by
-  simp only [integerPairing, Pi.smul_apply, zsmul_eq_mul, Finset.mul_sum]
+  simp only [integerPairing, Pi.smul_apply, zsmul_eq_mul, Int.cast_id, Finset.mul_sum]
   apply Finset.sum_congr rfl
   intro i _
   ring

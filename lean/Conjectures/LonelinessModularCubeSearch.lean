@@ -127,13 +127,13 @@ theorem check_sound {n num den : ℕ}
       _ = 1 := hw.1
   | terminal index =>
     intro m x fixed hcheck bits hbits
-    have hh := Bool.and_eq_true.mp hcheck
+    have hh := Bool.and_eq_true_iff.mp hcheck
     have ht : ∀ i, fixed i≠none := of_decide_eq_true hh.1
     have heq := matches_default_of_total ht hbits
     simpa only [select,Closed.check,heq] using hh.2
   | split i zero one ihzero ihone =>
     intro m x fixed hcheck bits hbits
-    have hh := Bool.and_eq_true.mp hcheck
+    have hh := Bool.and_eq_true_iff.mp hcheck
     have hu := matches_update hbits i
     cases hb : bits i with
     | false =>
@@ -187,7 +187,7 @@ theorem reference_terminal_sound {n N num den : ℕ} (moduli : Fin N → ℕ)
     Closed.TerminalSound num den (referenceCheck moduli roots) admissible conclusion := by
   intro m x index _hm hcheck v hrep hp hadm hlow
   by_cases hi : index<N
-  · rw [referenceCheck,dif_pos hi] at hcheck
+  · rw [referenceCheck,dite_eq_left hi] at hcheck
     obtain ⟨hm,hx⟩ := of_decide_eq_true hcheck
     exact hfamily ⟨index,hi⟩ v (by simpa only [hm,hx] using hrep) hp hadm hlow
   · simp [referenceCheck,hi] at hcheck

@@ -87,7 +87,9 @@ theorem ten_speed_plane_gap
     (z : Fin 10 → ℤ)
     (hz : integerVector z ∉ integerLine (fun i => (v i : ℤ))) :
     (1/10 : ℝ) ≤ spaceValue (integerPlane (fun i => (v i : ℤ)) z) := by
-  simpa using plane_gap_of_runner_bound 8 hLRC v hv z hz
+  have h := plane_gap_of_runner_bound 8 hLRC v hv z hz
+  norm_num at h
+  exact h
 
 end
 
