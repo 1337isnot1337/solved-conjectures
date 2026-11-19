@@ -975,6 +975,71 @@ modules=(
   Conjectures.LonelinessHyperplaneShiftLaw
   Conjectures.LonelinessHyperplaneRateSharpness
   Conjectures.LonelinessHyperplaneMain
+  # Conditional norm cutoffs and prime selection for nine through thirteen speeds.
+  Conjectures.LonelinessKZBasisVectors
+  Conjectures.LonelinessNearestPlane
+  Conjectures.LonelinessKZBasisGram
+  Conjectures.LonelinessKZBasisInteger
+  Conjectures.LonelinessKZBasisOperations
+  Conjectures.LonelinessNearestPlaneRelative
+  Conjectures.LonelinessKZBasisStep
+  Conjectures.LonelinessKZBasisReduction
+  Conjectures.LonelinessPrimitiveBasis
+  Conjectures.LonelinessPrimitiveSpeeds
+  Conjectures.LonelinessNearestPlaneValue
+  Conjectures.LonelinessNearestPlanePrefix
+  Conjectures.LonelinessKZProductCertificate
+  Conjectures.LonelinessKZProductOrder
+  Conjectures.LonelinessKZProductAssembly
+  Conjectures.LonelinessKZGeneral
+  Conjectures.LonelinessNormGeometry
+  Conjectures.LonelinessTightNormCommon
+  Conjectures.LonelinessKZProductDataNine
+  Conjectures.LonelinessKZProductDataTen
+  Conjectures.LonelinessKZProductDataEleven
+  Conjectures.LonelinessKZProductFast
+  Conjectures.LonelinessKZProductDataTwelveBase
+  Conjectures.LonelinessKZProductDataTwelveBlock00
+  Conjectures.LonelinessKZProductDataTwelveBlock01
+  Conjectures.LonelinessKZProductDataTwelveBlock02
+  Conjectures.LonelinessKZProductDataTwelveBlock03
+  Conjectures.LonelinessKZProductDataTwelveBlock04
+  Conjectures.LonelinessKZProductDataTwelveBlock05
+  Conjectures.LonelinessKZProductDataTwelveBlock06
+  Conjectures.LonelinessKZProductDataTwelveBlock07
+  Conjectures.LonelinessKZProductDataTwelve
+  Conjectures.LonelinessKZProductDataThirteenBase
+  Conjectures.LonelinessKZProductDataThirteenBlock00
+  Conjectures.LonelinessKZProductDataThirteenBlock01
+  Conjectures.LonelinessKZProductDataThirteenBlock02
+  Conjectures.LonelinessKZProductDataThirteenBlock03
+  Conjectures.LonelinessKZProductDataThirteenBlock04
+  Conjectures.LonelinessKZProductDataThirteenBlock05
+  Conjectures.LonelinessKZProductDataThirteenBlock06
+  Conjectures.LonelinessKZProductDataThirteenBlock07
+  Conjectures.LonelinessKZProductDataThirteenBlock08
+  Conjectures.LonelinessKZProductDataThirteenBlock09
+  Conjectures.LonelinessKZProductDataThirteenBlock10
+  Conjectures.LonelinessKZProductDataThirteenBlock11
+  Conjectures.LonelinessKZProductDataThirteenBlock12
+  Conjectures.LonelinessKZProductDataThirteenBlock13
+  Conjectures.LonelinessKZProductDataThirteenBlock14
+  Conjectures.LonelinessKZProductDataThirteenBlock15
+  Conjectures.LonelinessKZProductDataThirteen
+  Conjectures.LonelinessKZProduct
+  Conjectures.LonelinessModularForcedDivisor
+  Conjectures.LonelinessModularTightPrimeDefs
+  Conjectures.LonelinessModularTightPrimeProducts
+  Conjectures.LonelinessModularTightPrimeDataSix
+  Conjectures.LonelinessModularTightPrimeDataSeven
+  Conjectures.LonelinessModularTightPrimeDataEight
+  Conjectures.LonelinessModularTightPrimeDataNine
+  Conjectures.LonelinessModularTightPrimeDataTen
+  Conjectures.LonelinessModularTightPrimeDataEleven
+  Conjectures.LonelinessModularTightPrimeDataTwelve
+  Conjectures.LonelinessModularTightPrimeDataThirteen
+  Conjectures.LonelinessModularTightPrimeBounds
+  Conjectures.LonelinessTightNormBounds
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

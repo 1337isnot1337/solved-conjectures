@@ -1,5 +1,18 @@
 # History
 
+## 2026-11-19 — Conditional norm reductions for nine through thirteen speeds
+
+- Registered the actual primitive-speed norm cutoffs and prime-selection
+  theorems, retaining every smaller-dimensional runner bound as an explicit
+  hypothesis. The basis geometry and all 7,936 KZ subset rows are proved internally.
+- Exact run 44530735399 checked 81 strict sources, 1,696 owned/raw declarations
+  (1,445 theorems and 538 private declarations), 25 required theorem endpoints
+  and 81 exact stock-kernel targets. Original evidence is authenticated under
+  `docs/verification/loneliness-large-norm-exact-44530735399/`.
+- Added 64 proof modules and 25 required endpoints. The equality classifications
+  remain partial; lower-runner bounds, modular exhaustiveness and uniqueness
+  are still required. The merged accepted-package gate remains separate.
+
 ## 2026-11-19 — Complete fixed-hyperplane formalization
 
 - Registered the original fixed-hyperplane probability, counting, Haar-shift,

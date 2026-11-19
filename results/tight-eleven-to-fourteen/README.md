@@ -16,3 +16,7 @@ To verify the 44 original first-lift counts as well, download the authors’ imm
 curl -fsSL https://raw.githubusercontent.com/vzsky/13-lonely-runners/29311663c21835d67529b29a4acf6631fcad5c63/result_12 -o /tmp/lonely-runner-first-lifts.log
 python3 results/tight-eleven-to-fourteen/verify.py --legacy-log /tmp/lonely-runner-first-lifts.log
 ```
+
+## Lean scope
+
+The displayed equality directions have their exact global values checked in Lean. The norm cutoffs and prime-selection steps are also checked under explicit smaller-dimensional runner bounds. The [exact conditional reduction](../../docs/loneliness-large-norm-lean.md) records the hypotheses and evidence. Those runner bounds, the exhaustive modular classifications and the uniqueness proofs remain open.

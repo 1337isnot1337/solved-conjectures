@@ -172,14 +172,14 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
    certificates and lifting to the three listed directions.
 10. Nine-runner equality case: the norm reduction, modular certificates and
     uniqueness of the consecutive direction.
-11. Ten-runner equality case: the corresponding uniform reduction and all
-    modular certificates.
+11. Ten-runner equality case: discharge the lower-runner assumptions of the
+    checked norm reduction, then prove exhaustive modular classification and uniqueness.
 12. Seven-speed spectrum: norm reduction and complete lifting/enumeration;
     the infinite family and all 27 exceptional values are checked.
 13. Eight-speed spectrum: norm reduction and exhaustive lifting outside the
     three classified product families; the listed exceptional values are checked.
-14. Eleven-through-fourteen-runner equality: each uniform reduction, all modular
-    certificates and every stated primitive equality list.
+14. Eleven-through-fourteen-runner equality: discharge the lower-runner assumptions
+    of the checked norm reductions, then prove all modular classifications and uniqueness.
 15. Growing rectangles are complete: real tiling semantics, cumulative
     partition estimates, and the uniform asymptotic over every width `w ≥ h`.
 16. Erdős 607 is complete: actual geometric counting, exact formal and
@@ -704,3 +704,34 @@ list has 969 proof modules plus two roots. This completes the fixed-hyperplane
 result; verification of the merged accepted package remains a separate gate.
 The [result-level scope](../results/loneliness-on-a-hyperplane/LEAN.md)
 records the precise sample, formulas and distributional formulation.
+
+## Conditional nine-through-thirteen speed norm reduction
+
+The 81-module closure of `LonelinessTightNormBounds` is checked and
+registered. For a positive primitive `k`-tuple with `9≤k≤13` and actual
+loneliness value at most `1/(k+1)`, it proves the literal squared-norm
+cutoff and a listed prime dividing no speed, under the explicit hypothesis
+`∀ m, 1≤m → m<k → LonelyRunnerBound m`. The basis geometry,
+nearest-plane bounds, all 7,936 KZ subset rows and prime-product margins
+are proved internally.
+
+[Run 44530735399/job 135583044214](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44530735399/job/135583044214)
+passed at `8162a5dfbe89e441600e7a3bbcc03b573df0880e`: all 81 strict source checks, the all-owned
+audit of 1,696 declarations (1,445 theorems and 538 private declarations),
+all 25 required theorem endpoints, and all 81 exact singleton stock-kernel
+replays. Sources and audit used warnings as errors without a linter override;
+the only allowed axioms were `propext`, `Classical.choice` and `Quot.sound`.
+
+The [unchanged receipt](verification/loneliness-large-norm-exact-44530735399/receipt.json)
+has SHA-256 `fba4b952a87271f9691e983dd69dafc0be5c07617e412884eb82f2894ec2fef5`.
+The [preservation record](verification/loneliness-large-norm-exact-44530735399/preservation.json)
+authenticates the actual original sources, objects, audit and process records.
+Artifact `14535137698` has ZIP SHA-256
+`b6678fb2e27c872d01a2bbd6bea9982abc42411e79999b6c4113961195ab3366`.
+
+Registration adds 64 proof modules and 25 required endpoints. The accepted
+list then contains 1,033 proof modules plus two roots. The merged-package
+gate remains separate. Lower-runner assumptions, exhaustive modular
+classification and final uniqueness remain open, so no result directory
+becomes complete from this reduction.
+[Exact hypotheses, cutoffs and scope](loneliness-large-norm-lean.md).
