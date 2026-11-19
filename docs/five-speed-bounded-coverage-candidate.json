@@ -43,6 +43,25 @@
       "source_after_sha256": "dc479ec5fab7c8912231e3b972f794e2e1558120512666f939b139e8411cc180",
       "source_before_sha256": "3e5def20a39369ef5c466927c7ec1bf10e531249bf1e980e01ab667aeb26d612",
       "theorem_statements_changed": false
+    },
+    {
+      "changes": [
+        "Remove the reported unused hleft argument from the first branch simp list in rotateRight_testBit."
+      ],
+      "failed_artifact": {
+        "archive_sha256": "9e87ff81ee157ae3d79113ba81bcc5f7b8164f55a058dcc8e963bff13bcaf844",
+        "id": 14532168427
+      },
+      "failed_job_id": 135576670847,
+      "failed_run_id": 44528890923,
+      "historical_recovery_artifact": {
+        "archive_sha256": "e620df44752b070be1e05e462db5de3f6e007ab5adbfeca1e2080941c50a8ecd",
+        "id": 14532767805
+      },
+      "module": "Conjectures.LonelinessFiveSpeedMasks",
+      "source_after_sha256": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
+      "source_before_sha256": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+      "theorem_statements_changed": false
     }
   ],
   "helper_sha256": {
@@ -7790,7 +7809,7 @@
     "Conjectures.LonelinessFiveSpeedLinearReduction": "c4e4f5e4fe1d67103446f50f17e39c9b4b0dc67dd81818e667bb1e93b8b46fba",
     "Conjectures.LonelinessFiveSpeedLinearReductionElimination": "ac67f76f3a5cc1ae390af66d34d5ee8061429c4bf412550f0db1237db84ebbb1",
     "Conjectures.LonelinessFiveSpeedMaskArithmetic": "7f8d5c6b16c990d7d2ef8b99265e589756f6cdf7c5329dabd7d75522ff2c1f35",
-    "Conjectures.LonelinessFiveSpeedMasks": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+    "Conjectures.LonelinessFiveSpeedMasks": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
     "Conjectures.LonelinessFiveSpeedPlaneFiberData": "b1f26addee61ee61325ed876ff11ef5a2319c53dfb32aa8702a3dc1ce5081a4d",
     "Conjectures.LonelinessFiveSpeedPlaneFiberDefs": "0d80df711c7473875c2322a612eedb6c8a651d5b576a17a656d3726c4bcd07f7",
     "Conjectures.LonelinessFiveSpeedPlaneProjective": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
