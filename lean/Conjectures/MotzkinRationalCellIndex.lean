@@ -28,7 +28,7 @@ theorem cellIndex_add (x : UnitAddCircle) (a : ZMod N) :
   have hx : (r:UnitAddCircle)=x := coe_representative x
   have hN : (N:ℝ) ≠ 0 := by exact_mod_cast NeZero.ne N
   have he : (N:ℝ)*(r+(a.val:ℝ)/(N:ℝ))=(N:ℝ)*r+(a.val:ℝ) := by
-    field_simp [hN] <;> ring
+    field_simp [hN]
   rw [← hx,ZMod.toAddCircle_apply,← AddCircle.coe_add,cellIndex_coe,cellIndex_coe,
     he,Int.floor_add_natCast]
   simp only [Int.cast_add,Int.cast_natCast,ZMod.natCast_zmod_val]

@@ -109,6 +109,7 @@ theorem five_family_below_threshold (s : ℕ) (hs : 1 ≤ s) :
 
 theorem five_family_distinct (s : ℕ) (hs : 1 ≤ s) :
     ([1, 2, 3, 4, 5 * s] : List ℕ).Nodup := by
+  clear hs
   simp [List.nodup_cons]
   omega
 
