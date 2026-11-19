@@ -1,3 +1,6 @@
+import Conjectures.HadamardQuotient133MarginsSource0
+import Conjectures.HadamardQuotient133MarginsSource1
+import Conjectures.HadamardQuotient133MarginsSource2
 import Conjectures.HadamardQuotient133AVerified000
 import Conjectures.HadamardQuotient133AVerified001
 import Conjectures.HadamardQuotient133AVerified002
@@ -55,9 +58,10 @@ theorem margin_source_00_checked :
   simp only [marginCert00, pairedCheck, margin_a_0000_checked, margin_a_0001_checked, margin_a_0002_checked, margin_a_0003_checked, margin_a_0004_checked, margin_a_0005_checked, margin_a_0006_checked, margin_a_0007_checked, margin_a_0008_checked, margin_a_0009_checked, margin_a_0010_checked, margin_a_0011_checked, margin_a_0012_checked, margin_a_0013_checked, margin_a_0014_checked, margin_a_0015_checked, margin_a_0016_checked, margin_a_0017_checked, margin_a_0018_checked, margin_a_0019_checked, margin_a_0020_checked, margin_a_0021_checked, margin_a_0022_checked, margin_a_0023_checked, margin_a_0024_checked, margin_a_0025_checked, margin_a_0026_checked, margin_a_0027_checked, margin_a_0028_checked, margin_a_0029_checked, margin_a_0030_checked, margin_a_0031_checked, margin_a_0032_checked, margin_a_0033_checked, margin_a_0034_checked, margin_a_0035_checked, margin_a_0036_checked, margin_a_0037_checked, margin_a_0038_checked, margin_a_0039_checked, margin_a_0040_checked, margin_a_0041_checked, margin_a_0042_checked, margin_a_0043_checked, margin_a_0044_checked, margin_a_0045_checked, margin_a_0046_checked, margin_a_0047_checked, margin_a_0048_checked, margin_a_0049_checked, margin_a_0050_checked, margin_a_0051_checked, margin_a_0052_checked, margin_a_0053_checked, margin_a_0054_checked, margin_a_0055_checked, margin_a_0056_checked, margin_a_0057_checked, margin_a_0058_checked, margin_a_0059_checked, margin_a_0060_checked, margin_a_0061_checked, margin_a_0062_checked, margin_a_0063_checked, margin_a_0064_checked, margin_a_0065_checked, margin_a_0066_checked, margin_a_0067_checked, margin_a_0068_checked, margin_a_0069_checked, margin_a_0070_checked, margin_a_0071_checked, Bool.true_and]
 
 theorem margin_packet_00_checked : marginPacketCheck marginCatalog endpoint00 marginPacket00 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_00_checked
+  · apply decide_eq_true
+    simpa only [marginPacket00] using margin_groups_00_checked
   · exact margin_source_00_checked
 
 theorem margin_source_01_checked :
@@ -67,9 +71,10 @@ theorem margin_source_01_checked :
   simp only [marginCert01, pairedCheck, margin_a_0072_checked, margin_a_0073_checked, margin_a_0074_checked, margin_a_0075_checked, margin_a_0076_checked, margin_a_0077_checked, margin_a_0078_checked, margin_a_0079_checked, margin_a_0080_checked, margin_a_0081_checked, margin_a_0082_checked, margin_a_0083_checked, margin_a_0084_checked, margin_a_0085_checked, margin_a_0086_checked, margin_a_0087_checked, margin_a_0088_checked, margin_a_0089_checked, margin_a_0090_checked, margin_a_0091_checked, margin_a_0092_checked, margin_a_0093_checked, margin_a_0094_checked, margin_a_0095_checked, margin_a_0096_checked, margin_a_0097_checked, margin_a_0098_checked, margin_a_0099_checked, margin_a_0100_checked, margin_a_0101_checked, margin_a_0102_checked, margin_a_0103_checked, margin_a_0104_checked, margin_a_0105_checked, margin_a_0106_checked, margin_a_0107_checked, margin_a_0108_checked, margin_a_0109_checked, margin_a_0110_checked, margin_a_0111_checked, margin_a_0112_checked, margin_a_0113_checked, margin_a_0114_checked, margin_a_0115_checked, margin_a_0116_checked, margin_a_0117_checked, margin_a_0118_checked, margin_a_0119_checked, margin_a_0120_checked, margin_a_0121_checked, margin_a_0122_checked, margin_a_0123_checked, margin_a_0124_checked, margin_a_0125_checked, margin_a_0126_checked, margin_a_0127_checked, margin_a_0128_checked, margin_a_0129_checked, margin_a_0130_checked, margin_a_0131_checked, margin_a_0132_checked, margin_a_0133_checked, margin_a_0134_checked, margin_a_0135_checked, margin_a_0136_checked, margin_a_0137_checked, margin_a_0138_checked, margin_a_0139_checked, margin_a_0140_checked, margin_a_0141_checked, margin_a_0142_checked, margin_a_0143_checked, Bool.true_and]
 
 theorem margin_packet_01_checked : marginPacketCheck marginCatalog endpoint01 marginPacket01 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_01_checked
+  · apply decide_eq_true
+    simpa only [marginPacket01] using margin_groups_01_checked
   · exact margin_source_01_checked
 
 theorem margin_source_02_checked :
@@ -79,9 +84,10 @@ theorem margin_source_02_checked :
   simp only [marginCert02, pairedCheck, margin_a_0144_checked, margin_a_0145_checked, margin_a_0146_checked, margin_a_0147_checked, margin_a_0148_checked, margin_a_0149_checked, margin_a_0150_checked, margin_a_0151_checked, margin_a_0152_checked, margin_a_0153_checked, margin_a_0154_checked, margin_a_0155_checked, margin_a_0156_checked, margin_a_0157_checked, margin_a_0158_checked, margin_a_0159_checked, margin_a_0160_checked, margin_a_0161_checked, margin_a_0162_checked, margin_a_0163_checked, margin_a_0164_checked, margin_a_0165_checked, margin_a_0166_checked, margin_a_0167_checked, margin_a_0168_checked, margin_a_0169_checked, margin_a_0170_checked, margin_a_0171_checked, margin_a_0172_checked, margin_a_0173_checked, margin_a_0174_checked, margin_a_0175_checked, margin_a_0176_checked, margin_a_0177_checked, margin_a_0178_checked, margin_a_0179_checked, margin_a_0180_checked, margin_a_0181_checked, margin_a_0182_checked, margin_a_0183_checked, margin_a_0184_checked, margin_a_0185_checked, margin_a_0186_checked, margin_a_0187_checked, margin_a_0188_checked, margin_a_0189_checked, margin_a_0190_checked, margin_a_0191_checked, margin_a_0192_checked, margin_a_0193_checked, margin_a_0194_checked, margin_a_0195_checked, margin_a_0196_checked, margin_a_0197_checked, margin_a_0198_checked, margin_a_0199_checked, margin_a_0200_checked, margin_a_0201_checked, margin_a_0202_checked, margin_a_0203_checked, margin_a_0204_checked, margin_a_0205_checked, margin_a_0206_checked, margin_a_0207_checked, margin_a_0208_checked, margin_a_0209_checked, margin_a_0210_checked, margin_a_0211_checked, margin_a_0212_checked, margin_a_0213_checked, margin_a_0214_checked, margin_a_0215_checked, Bool.true_and]
 
 theorem margin_packet_02_checked : marginPacketCheck marginCatalog endpoint02 marginPacket02 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_02_checked
+  · apply decide_eq_true
+    simpa only [marginPacket02] using margin_groups_02_checked
   · exact margin_source_02_checked
 
 theorem margin_source_03_checked :
@@ -91,9 +97,10 @@ theorem margin_source_03_checked :
   simp only [marginCert03, pairedCheck, margin_a_0216_checked, margin_a_0217_checked, margin_a_0218_checked, margin_a_0219_checked, margin_a_0220_checked, margin_a_0221_checked, margin_a_0222_checked, margin_a_0223_checked, margin_a_0224_checked, margin_a_0225_checked, margin_a_0226_checked, margin_a_0227_checked, margin_a_0228_checked, margin_a_0229_checked, margin_a_0230_checked, margin_a_0231_checked, margin_a_0232_checked, margin_a_0233_checked, margin_a_0234_checked, margin_a_0235_checked, margin_a_0236_checked, margin_a_0237_checked, margin_a_0238_checked, margin_a_0239_checked, margin_a_0240_checked, margin_a_0241_checked, margin_a_0242_checked, margin_a_0243_checked, margin_a_0244_checked, margin_a_0245_checked, margin_a_0246_checked, margin_a_0247_checked, margin_a_0248_checked, margin_a_0249_checked, margin_a_0250_checked, margin_a_0251_checked, margin_a_0252_checked, margin_a_0253_checked, margin_a_0254_checked, margin_a_0255_checked, margin_a_0256_checked, margin_a_0257_checked, margin_a_0258_checked, margin_a_0259_checked, margin_a_0260_checked, margin_a_0261_checked, margin_a_0262_checked, margin_a_0263_checked, margin_a_0264_checked, margin_a_0265_checked, margin_a_0266_checked, margin_a_0267_checked, margin_a_0268_checked, margin_a_0269_checked, margin_a_0270_checked, margin_a_0271_checked, margin_a_0272_checked, margin_a_0273_checked, margin_a_0274_checked, margin_a_0275_checked, margin_a_0276_checked, margin_a_0277_checked, margin_a_0278_checked, margin_a_0279_checked, margin_a_0280_checked, margin_a_0281_checked, margin_a_0282_checked, margin_a_0283_checked, margin_a_0284_checked, margin_a_0285_checked, margin_a_0286_checked, margin_a_0287_checked, Bool.true_and]
 
 theorem margin_packet_03_checked : marginPacketCheck marginCatalog endpoint03 marginPacket03 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_03_checked
+  · apply decide_eq_true
+    simpa only [marginPacket03] using margin_groups_03_checked
   · exact margin_source_03_checked
 
 theorem margin_source_04_checked :
@@ -103,9 +110,10 @@ theorem margin_source_04_checked :
   simp only [marginCert04, pairedCheck, margin_a_0288_checked, margin_a_0289_checked, margin_a_0290_checked, margin_a_0291_checked, margin_a_0292_checked, margin_a_0293_checked, margin_a_0294_checked, margin_a_0295_checked, margin_a_0296_checked, margin_a_0297_checked, margin_a_0298_checked, margin_a_0299_checked, margin_a_0300_checked, margin_a_0301_checked, margin_a_0302_checked, margin_a_0303_checked, margin_a_0304_checked, margin_a_0305_checked, margin_a_0306_checked, margin_a_0307_checked, margin_a_0308_checked, margin_a_0309_checked, margin_a_0310_checked, margin_a_0311_checked, margin_a_0312_checked, margin_a_0313_checked, margin_a_0314_checked, margin_a_0315_checked, margin_a_0316_checked, margin_a_0317_checked, margin_a_0318_checked, margin_a_0319_checked, margin_a_0320_checked, margin_a_0321_checked, margin_a_0322_checked, margin_a_0323_checked, margin_a_0324_checked, margin_a_0325_checked, margin_a_0326_checked, margin_a_0327_checked, margin_a_0328_checked, margin_a_0329_checked, margin_a_0330_checked, margin_a_0331_checked, margin_a_0332_checked, margin_a_0333_checked, margin_a_0334_checked, margin_a_0335_checked, margin_a_0336_checked, margin_a_0337_checked, margin_a_0338_checked, margin_a_0339_checked, margin_a_0340_checked, margin_a_0341_checked, margin_a_0342_checked, margin_a_0343_checked, margin_a_0344_checked, margin_a_0345_checked, margin_a_0346_checked, margin_a_0347_checked, margin_a_0348_checked, margin_a_0349_checked, margin_a_0350_checked, margin_a_0351_checked, margin_a_0352_checked, margin_a_0353_checked, margin_a_0354_checked, margin_a_0355_checked, margin_a_0356_checked, margin_a_0357_checked, margin_a_0358_checked, margin_a_0359_checked, Bool.true_and]
 
 theorem margin_packet_04_checked : marginPacketCheck marginCatalog endpoint04 marginPacket04 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_04_checked
+  · apply decide_eq_true
+    simpa only [marginPacket04] using margin_groups_04_checked
   · exact margin_source_04_checked
 
 theorem margin_source_05_checked :
@@ -115,9 +123,10 @@ theorem margin_source_05_checked :
   simp only [marginCert05, pairedCheck, margin_a_0360_checked, margin_a_0361_checked, margin_a_0362_checked, margin_a_0363_checked, margin_a_0364_checked, margin_a_0365_checked, margin_a_0366_checked, margin_a_0367_checked, margin_a_0368_checked, margin_a_0369_checked, margin_a_0370_checked, margin_a_0371_checked, margin_a_0372_checked, margin_a_0373_checked, margin_a_0374_checked, margin_a_0375_checked, margin_a_0376_checked, margin_a_0377_checked, margin_a_0378_checked, margin_a_0379_checked, margin_a_0380_checked, margin_a_0381_checked, margin_a_0382_checked, margin_a_0383_checked, margin_a_0384_checked, margin_a_0385_checked, margin_a_0386_checked, margin_a_0387_checked, margin_a_0388_checked, margin_a_0389_checked, margin_a_0390_checked, margin_a_0391_checked, margin_a_0392_checked, margin_a_0393_checked, margin_a_0394_checked, margin_a_0395_checked, margin_a_0396_checked, margin_a_0397_checked, margin_a_0398_checked, margin_a_0399_checked, margin_a_0400_checked, margin_a_0401_checked, margin_a_0402_checked, margin_a_0403_checked, margin_a_0404_checked, margin_a_0405_checked, margin_a_0406_checked, margin_a_0407_checked, margin_a_0408_checked, margin_a_0409_checked, margin_a_0410_checked, margin_a_0411_checked, margin_a_0412_checked, margin_a_0413_checked, margin_a_0414_checked, margin_a_0415_checked, margin_a_0416_checked, margin_a_0417_checked, margin_a_0418_checked, margin_a_0419_checked, margin_a_0420_checked, margin_a_0421_checked, margin_a_0422_checked, margin_a_0423_checked, margin_a_0424_checked, margin_a_0425_checked, margin_a_0426_checked, margin_a_0427_checked, margin_a_0428_checked, margin_a_0429_checked, margin_a_0430_checked, margin_a_0431_checked, Bool.true_and]
 
 theorem margin_packet_05_checked : marginPacketCheck marginCatalog endpoint05 marginPacket05 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_05_checked
+  · apply decide_eq_true
+    simpa only [marginPacket05] using margin_groups_05_checked
   · exact margin_source_05_checked
 
 theorem margin_source_06_checked :
@@ -127,9 +136,10 @@ theorem margin_source_06_checked :
   simp only [marginCert06, pairedCheck, margin_a_0432_checked, margin_a_0433_checked, margin_a_0434_checked, margin_a_0435_checked, margin_a_0436_checked, margin_a_0437_checked, margin_a_0438_checked, margin_a_0439_checked, margin_a_0440_checked, margin_a_0441_checked, margin_a_0442_checked, margin_a_0443_checked, margin_a_0444_checked, margin_a_0445_checked, margin_a_0446_checked, margin_a_0447_checked, margin_a_0448_checked, margin_a_0449_checked, margin_a_0450_checked, margin_a_0451_checked, margin_a_0452_checked, margin_a_0453_checked, margin_a_0454_checked, margin_a_0455_checked, margin_a_0456_checked, margin_a_0457_checked, margin_a_0458_checked, margin_a_0459_checked, margin_a_0460_checked, margin_a_0461_checked, margin_a_0462_checked, margin_a_0463_checked, margin_a_0464_checked, margin_a_0465_checked, margin_a_0466_checked, margin_a_0467_checked, margin_a_0468_checked, margin_a_0469_checked, margin_a_0470_checked, margin_a_0471_checked, margin_a_0472_checked, margin_a_0473_checked, margin_a_0474_checked, margin_a_0475_checked, margin_a_0476_checked, margin_a_0477_checked, margin_a_0478_checked, margin_a_0479_checked, margin_a_0480_checked, margin_a_0481_checked, margin_a_0482_checked, margin_a_0483_checked, margin_a_0484_checked, margin_a_0485_checked, margin_a_0486_checked, margin_a_0487_checked, margin_a_0488_checked, margin_a_0489_checked, margin_a_0490_checked, margin_a_0491_checked, margin_a_0492_checked, margin_a_0493_checked, margin_a_0494_checked, margin_a_0495_checked, margin_a_0496_checked, margin_a_0497_checked, margin_a_0498_checked, margin_a_0499_checked, margin_a_0500_checked, margin_a_0501_checked, margin_a_0502_checked, margin_a_0503_checked, Bool.true_and]
 
 theorem margin_packet_06_checked : marginPacketCheck marginCatalog endpoint06 marginPacket06 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_06_checked
+  · apply decide_eq_true
+    simpa only [marginPacket06] using margin_groups_06_checked
   · exact margin_source_06_checked
 
 theorem margin_source_07_checked :
@@ -139,9 +149,10 @@ theorem margin_source_07_checked :
   simp only [marginCert07, pairedCheck, margin_a_0504_checked, margin_a_0505_checked, margin_a_0506_checked, margin_a_0507_checked, margin_a_0508_checked, margin_a_0509_checked, margin_a_0510_checked, margin_a_0511_checked, margin_a_0512_checked, margin_a_0513_checked, margin_a_0514_checked, margin_a_0515_checked, margin_a_0516_checked, margin_a_0517_checked, margin_a_0518_checked, margin_a_0519_checked, margin_a_0520_checked, margin_a_0521_checked, margin_a_0522_checked, margin_a_0523_checked, margin_a_0524_checked, margin_a_0525_checked, margin_a_0526_checked, margin_a_0527_checked, margin_a_0528_checked, margin_a_0529_checked, margin_a_0530_checked, margin_a_0531_checked, margin_a_0532_checked, margin_a_0533_checked, margin_a_0534_checked, margin_a_0535_checked, margin_a_0536_checked, margin_a_0537_checked, margin_a_0538_checked, margin_a_0539_checked, margin_a_0540_checked, margin_a_0541_checked, margin_a_0542_checked, margin_a_0543_checked, margin_a_0544_checked, margin_a_0545_checked, margin_a_0546_checked, margin_a_0547_checked, margin_a_0548_checked, margin_a_0549_checked, margin_a_0550_checked, margin_a_0551_checked, margin_a_0552_checked, margin_a_0553_checked, margin_a_0554_checked, margin_a_0555_checked, margin_a_0556_checked, margin_a_0557_checked, margin_a_0558_checked, margin_a_0559_checked, margin_a_0560_checked, margin_a_0561_checked, margin_a_0562_checked, margin_a_0563_checked, margin_a_0564_checked, margin_a_0565_checked, margin_a_0566_checked, margin_a_0567_checked, margin_a_0568_checked, margin_a_0569_checked, margin_a_0570_checked, margin_a_0571_checked, margin_a_0572_checked, margin_a_0573_checked, margin_a_0574_checked, margin_a_0575_checked, Bool.true_and]
 
 theorem margin_packet_07_checked : marginPacketCheck marginCatalog endpoint07 marginPacket07 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_07_checked
+  · apply decide_eq_true
+    simpa only [marginPacket07] using margin_groups_07_checked
   · exact margin_source_07_checked
 
 theorem margin_source_08_checked :
@@ -151,9 +162,10 @@ theorem margin_source_08_checked :
   simp only [marginCert08, pairedCheck, margin_a_0576_checked, margin_a_0577_checked, margin_a_0578_checked, margin_a_0579_checked, margin_a_0580_checked, margin_a_0581_checked, margin_a_0582_checked, margin_a_0583_checked, margin_a_0584_checked, margin_a_0585_checked, margin_a_0586_checked, margin_a_0587_checked, margin_a_0588_checked, margin_a_0589_checked, margin_a_0590_checked, margin_a_0591_checked, margin_a_0592_checked, margin_a_0593_checked, margin_a_0594_checked, margin_a_0595_checked, margin_a_0596_checked, margin_a_0597_checked, margin_a_0598_checked, margin_a_0599_checked, margin_a_0600_checked, margin_a_0601_checked, margin_a_0602_checked, margin_a_0603_checked, margin_a_0604_checked, margin_a_0605_checked, margin_a_0606_checked, margin_a_0607_checked, margin_a_0608_checked, margin_a_0609_checked, margin_a_0610_checked, margin_a_0611_checked, margin_a_0612_checked, margin_a_0613_checked, margin_a_0614_checked, margin_a_0615_checked, margin_a_0616_checked, margin_a_0617_checked, margin_a_0618_checked, margin_a_0619_checked, margin_a_0620_checked, margin_a_0621_checked, margin_a_0622_checked, margin_a_0623_checked, margin_a_0624_checked, margin_a_0625_checked, margin_a_0626_checked, margin_a_0627_checked, margin_a_0628_checked, margin_a_0629_checked, margin_a_0630_checked, margin_a_0631_checked, margin_a_0632_checked, margin_a_0633_checked, margin_a_0634_checked, margin_a_0635_checked, margin_a_0636_checked, margin_a_0637_checked, margin_a_0638_checked, margin_a_0639_checked, margin_a_0640_checked, margin_a_0641_checked, margin_a_0642_checked, margin_a_0643_checked, margin_a_0644_checked, margin_a_0645_checked, margin_a_0646_checked, margin_a_0647_checked, margin_a_0648_checked, margin_a_0649_checked, margin_a_0650_checked, margin_a_0651_checked, margin_a_0652_checked, margin_a_0653_checked, margin_a_0654_checked, margin_a_0655_checked, margin_a_0656_checked, margin_a_0657_checked, margin_a_0658_checked, margin_a_0659_checked, margin_a_0660_checked, margin_a_0661_checked, margin_a_0662_checked, margin_a_0663_checked, margin_a_0664_checked, margin_a_0665_checked, margin_a_0666_checked, margin_a_0667_checked, margin_a_0668_checked, margin_a_0669_checked, margin_a_0670_checked, margin_a_0671_checked, margin_a_0672_checked, margin_a_0673_checked, margin_a_0674_checked, margin_a_0675_checked, margin_a_0676_checked, margin_a_0677_checked, margin_a_0678_checked, margin_a_0679_checked, margin_a_0680_checked, margin_a_0681_checked, margin_a_0682_checked, margin_a_0683_checked, margin_a_0684_checked, margin_a_0685_checked, margin_a_0686_checked, margin_a_0687_checked, margin_a_0688_checked, margin_a_0689_checked, margin_a_0690_checked, margin_a_0691_checked, margin_a_0692_checked, margin_a_0693_checked, margin_a_0694_checked, margin_a_0695_checked, margin_a_0696_checked, margin_a_0697_checked, margin_a_0698_checked, margin_a_0699_checked, margin_a_0700_checked, margin_a_0701_checked, margin_a_0702_checked, margin_a_0703_checked, margin_a_0704_checked, margin_a_0705_checked, margin_a_0706_checked, margin_a_0707_checked, margin_a_0708_checked, margin_a_0709_checked, margin_a_0710_checked, margin_a_0711_checked, margin_a_0712_checked, margin_a_0713_checked, margin_a_0714_checked, margin_a_0715_checked, margin_a_0716_checked, margin_a_0717_checked, margin_a_0718_checked, margin_a_0719_checked, Bool.true_and]
 
 theorem margin_packet_08_checked : marginPacketCheck marginCatalog endpoint08 marginPacket08 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_08_checked
+  · apply decide_eq_true
+    simpa only [marginPacket08] using margin_groups_08_checked
   · exact margin_source_08_checked
 
 theorem margin_source_09_checked :
@@ -163,9 +175,10 @@ theorem margin_source_09_checked :
   simp only [marginCert09, pairedCheck, margin_a_0720_checked, margin_a_0721_checked, margin_a_0722_checked, margin_a_0723_checked, margin_a_0724_checked, margin_a_0725_checked, margin_a_0726_checked, margin_a_0727_checked, margin_a_0728_checked, margin_a_0729_checked, margin_a_0730_checked, margin_a_0731_checked, margin_a_0732_checked, margin_a_0733_checked, margin_a_0734_checked, margin_a_0735_checked, margin_a_0736_checked, margin_a_0737_checked, margin_a_0738_checked, margin_a_0739_checked, margin_a_0740_checked, margin_a_0741_checked, margin_a_0742_checked, margin_a_0743_checked, margin_a_0744_checked, margin_a_0745_checked, margin_a_0746_checked, margin_a_0747_checked, margin_a_0748_checked, margin_a_0749_checked, margin_a_0750_checked, margin_a_0751_checked, margin_a_0752_checked, margin_a_0753_checked, margin_a_0754_checked, margin_a_0755_checked, margin_a_0756_checked, margin_a_0757_checked, margin_a_0758_checked, margin_a_0759_checked, margin_a_0760_checked, margin_a_0761_checked, margin_a_0762_checked, margin_a_0763_checked, margin_a_0764_checked, margin_a_0765_checked, margin_a_0766_checked, margin_a_0767_checked, margin_a_0768_checked, margin_a_0769_checked, margin_a_0770_checked, margin_a_0771_checked, margin_a_0772_checked, margin_a_0773_checked, margin_a_0774_checked, margin_a_0775_checked, margin_a_0776_checked, margin_a_0777_checked, margin_a_0778_checked, margin_a_0779_checked, margin_a_0780_checked, margin_a_0781_checked, margin_a_0782_checked, margin_a_0783_checked, margin_a_0784_checked, margin_a_0785_checked, margin_a_0786_checked, margin_a_0787_checked, margin_a_0788_checked, margin_a_0789_checked, margin_a_0790_checked, margin_a_0791_checked, margin_a_0792_checked, margin_a_0793_checked, margin_a_0794_checked, margin_a_0795_checked, margin_a_0796_checked, margin_a_0797_checked, margin_a_0798_checked, margin_a_0799_checked, margin_a_0800_checked, margin_a_0801_checked, margin_a_0802_checked, margin_a_0803_checked, margin_a_0804_checked, margin_a_0805_checked, margin_a_0806_checked, margin_a_0807_checked, margin_a_0808_checked, margin_a_0809_checked, margin_a_0810_checked, margin_a_0811_checked, margin_a_0812_checked, margin_a_0813_checked, margin_a_0814_checked, margin_a_0815_checked, margin_a_0816_checked, margin_a_0817_checked, margin_a_0818_checked, margin_a_0819_checked, margin_a_0820_checked, margin_a_0821_checked, margin_a_0822_checked, margin_a_0823_checked, margin_a_0824_checked, margin_a_0825_checked, margin_a_0826_checked, margin_a_0827_checked, margin_a_0828_checked, margin_a_0829_checked, margin_a_0830_checked, margin_a_0831_checked, margin_a_0832_checked, margin_a_0833_checked, margin_a_0834_checked, margin_a_0835_checked, margin_a_0836_checked, margin_a_0837_checked, margin_a_0838_checked, margin_a_0839_checked, margin_a_0840_checked, margin_a_0841_checked, margin_a_0842_checked, margin_a_0843_checked, margin_a_0844_checked, margin_a_0845_checked, margin_a_0846_checked, margin_a_0847_checked, margin_a_0848_checked, margin_a_0849_checked, margin_a_0850_checked, margin_a_0851_checked, margin_a_0852_checked, margin_a_0853_checked, margin_a_0854_checked, margin_a_0855_checked, margin_a_0856_checked, margin_a_0857_checked, margin_a_0858_checked, margin_a_0859_checked, margin_a_0860_checked, margin_a_0861_checked, margin_a_0862_checked, margin_a_0863_checked, Bool.true_and]
 
 theorem margin_packet_09_checked : marginPacketCheck marginCatalog endpoint09 marginPacket09 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_09_checked
+  · apply decide_eq_true
+    simpa only [marginPacket09] using margin_groups_09_checked
   · exact margin_source_09_checked
 
 theorem margin_source_10_checked :
@@ -175,9 +188,10 @@ theorem margin_source_10_checked :
   simp only [marginCert10, pairedCheck, margin_a_0864_checked, margin_a_0865_checked, margin_a_0866_checked, margin_a_0867_checked, margin_a_0868_checked, margin_a_0869_checked, margin_a_0870_checked, margin_a_0871_checked, margin_a_0872_checked, margin_a_0873_checked, margin_a_0874_checked, margin_a_0875_checked, margin_a_0876_checked, margin_a_0877_checked, margin_a_0878_checked, margin_a_0879_checked, margin_a_0880_checked, margin_a_0881_checked, margin_a_0882_checked, margin_a_0883_checked, margin_a_0884_checked, margin_a_0885_checked, margin_a_0886_checked, margin_a_0887_checked, margin_a_0888_checked, margin_a_0889_checked, margin_a_0890_checked, margin_a_0891_checked, margin_a_0892_checked, margin_a_0893_checked, margin_a_0894_checked, margin_a_0895_checked, margin_a_0896_checked, margin_a_0897_checked, margin_a_0898_checked, margin_a_0899_checked, margin_a_0900_checked, margin_a_0901_checked, margin_a_0902_checked, margin_a_0903_checked, margin_a_0904_checked, margin_a_0905_checked, margin_a_0906_checked, margin_a_0907_checked, margin_a_0908_checked, margin_a_0909_checked, margin_a_0910_checked, margin_a_0911_checked, margin_a_0912_checked, margin_a_0913_checked, margin_a_0914_checked, margin_a_0915_checked, margin_a_0916_checked, margin_a_0917_checked, margin_a_0918_checked, margin_a_0919_checked, margin_a_0920_checked, margin_a_0921_checked, margin_a_0922_checked, margin_a_0923_checked, margin_a_0924_checked, margin_a_0925_checked, margin_a_0926_checked, margin_a_0927_checked, margin_a_0928_checked, margin_a_0929_checked, margin_a_0930_checked, margin_a_0931_checked, margin_a_0932_checked, margin_a_0933_checked, margin_a_0934_checked, margin_a_0935_checked, margin_a_0936_checked, margin_a_0937_checked, margin_a_0938_checked, margin_a_0939_checked, margin_a_0940_checked, margin_a_0941_checked, margin_a_0942_checked, margin_a_0943_checked, margin_a_0944_checked, margin_a_0945_checked, margin_a_0946_checked, margin_a_0947_checked, margin_a_0948_checked, margin_a_0949_checked, margin_a_0950_checked, margin_a_0951_checked, margin_a_0952_checked, margin_a_0953_checked, margin_a_0954_checked, margin_a_0955_checked, margin_a_0956_checked, margin_a_0957_checked, margin_a_0958_checked, margin_a_0959_checked, margin_a_0960_checked, margin_a_0961_checked, margin_a_0962_checked, margin_a_0963_checked, margin_a_0964_checked, margin_a_0965_checked, margin_a_0966_checked, margin_a_0967_checked, margin_a_0968_checked, margin_a_0969_checked, margin_a_0970_checked, margin_a_0971_checked, margin_a_0972_checked, margin_a_0973_checked, margin_a_0974_checked, margin_a_0975_checked, margin_a_0976_checked, margin_a_0977_checked, margin_a_0978_checked, margin_a_0979_checked, margin_a_0980_checked, margin_a_0981_checked, margin_a_0982_checked, margin_a_0983_checked, margin_a_0984_checked, margin_a_0985_checked, margin_a_0986_checked, margin_a_0987_checked, margin_a_0988_checked, margin_a_0989_checked, margin_a_0990_checked, margin_a_0991_checked, margin_a_0992_checked, margin_a_0993_checked, margin_a_0994_checked, margin_a_0995_checked, margin_a_0996_checked, margin_a_0997_checked, margin_a_0998_checked, margin_a_0999_checked, margin_a_1000_checked, margin_a_1001_checked, margin_a_1002_checked, margin_a_1003_checked, margin_a_1004_checked, margin_a_1005_checked, margin_a_1006_checked, margin_a_1007_checked, Bool.true_and]
 
 theorem margin_packet_10_checked : marginPacketCheck marginCatalog endpoint10 marginPacket10 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_10_checked
+  · apply decide_eq_true
+    simpa only [marginPacket10] using margin_groups_10_checked
   · exact margin_source_10_checked
 
 theorem margin_source_11_checked :
@@ -187,9 +201,10 @@ theorem margin_source_11_checked :
   simp only [marginCert11, pairedCheck, margin_a_1008_checked, margin_a_1009_checked, margin_a_1010_checked, margin_a_1011_checked, margin_a_1012_checked, margin_a_1013_checked, margin_a_1014_checked, margin_a_1015_checked, margin_a_1016_checked, margin_a_1017_checked, margin_a_1018_checked, margin_a_1019_checked, margin_a_1020_checked, margin_a_1021_checked, margin_a_1022_checked, margin_a_1023_checked, margin_a_1024_checked, margin_a_1025_checked, margin_a_1026_checked, margin_a_1027_checked, margin_a_1028_checked, margin_a_1029_checked, margin_a_1030_checked, margin_a_1031_checked, margin_a_1032_checked, margin_a_1033_checked, margin_a_1034_checked, margin_a_1035_checked, margin_a_1036_checked, margin_a_1037_checked, margin_a_1038_checked, margin_a_1039_checked, margin_a_1040_checked, margin_a_1041_checked, margin_a_1042_checked, margin_a_1043_checked, margin_a_1044_checked, margin_a_1045_checked, margin_a_1046_checked, margin_a_1047_checked, margin_a_1048_checked, margin_a_1049_checked, margin_a_1050_checked, margin_a_1051_checked, margin_a_1052_checked, margin_a_1053_checked, margin_a_1054_checked, margin_a_1055_checked, margin_a_1056_checked, margin_a_1057_checked, margin_a_1058_checked, margin_a_1059_checked, margin_a_1060_checked, margin_a_1061_checked, margin_a_1062_checked, margin_a_1063_checked, margin_a_1064_checked, margin_a_1065_checked, margin_a_1066_checked, margin_a_1067_checked, margin_a_1068_checked, margin_a_1069_checked, margin_a_1070_checked, margin_a_1071_checked, margin_a_1072_checked, margin_a_1073_checked, margin_a_1074_checked, margin_a_1075_checked, margin_a_1076_checked, margin_a_1077_checked, margin_a_1078_checked, margin_a_1079_checked, margin_a_1080_checked, margin_a_1081_checked, margin_a_1082_checked, margin_a_1083_checked, margin_a_1084_checked, margin_a_1085_checked, margin_a_1086_checked, margin_a_1087_checked, margin_a_1088_checked, margin_a_1089_checked, margin_a_1090_checked, margin_a_1091_checked, margin_a_1092_checked, margin_a_1093_checked, margin_a_1094_checked, margin_a_1095_checked, margin_a_1096_checked, margin_a_1097_checked, margin_a_1098_checked, margin_a_1099_checked, margin_a_1100_checked, margin_a_1101_checked, margin_a_1102_checked, margin_a_1103_checked, margin_a_1104_checked, margin_a_1105_checked, margin_a_1106_checked, margin_a_1107_checked, margin_a_1108_checked, margin_a_1109_checked, margin_a_1110_checked, margin_a_1111_checked, margin_a_1112_checked, margin_a_1113_checked, margin_a_1114_checked, margin_a_1115_checked, margin_a_1116_checked, margin_a_1117_checked, margin_a_1118_checked, margin_a_1119_checked, margin_a_1120_checked, margin_a_1121_checked, margin_a_1122_checked, margin_a_1123_checked, margin_a_1124_checked, margin_a_1125_checked, margin_a_1126_checked, margin_a_1127_checked, margin_a_1128_checked, margin_a_1129_checked, margin_a_1130_checked, margin_a_1131_checked, margin_a_1132_checked, margin_a_1133_checked, margin_a_1134_checked, margin_a_1135_checked, margin_a_1136_checked, margin_a_1137_checked, margin_a_1138_checked, margin_a_1139_checked, margin_a_1140_checked, margin_a_1141_checked, margin_a_1142_checked, margin_a_1143_checked, margin_a_1144_checked, margin_a_1145_checked, margin_a_1146_checked, margin_a_1147_checked, margin_a_1148_checked, margin_a_1149_checked, margin_a_1150_checked, margin_a_1151_checked, Bool.true_and]
 
 theorem margin_packet_11_checked : marginPacketCheck marginCatalog endpoint11 marginPacket11 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_11_checked
+  · apply decide_eq_true
+    simpa only [marginPacket11] using margin_groups_11_checked
   · exact margin_source_11_checked
 
 theorem margin_source_12_checked :
@@ -199,9 +214,10 @@ theorem margin_source_12_checked :
   simp only [marginCert12, pairedCheck, margin_a_1152_checked, margin_a_1153_checked, margin_a_1154_checked, margin_a_1155_checked, margin_a_1156_checked, margin_a_1157_checked, margin_a_1158_checked, margin_a_1159_checked, margin_a_1160_checked, margin_a_1161_checked, margin_a_1162_checked, margin_a_1163_checked, margin_a_1164_checked, margin_a_1165_checked, margin_a_1166_checked, margin_a_1167_checked, margin_a_1168_checked, margin_a_1169_checked, margin_a_1170_checked, margin_a_1171_checked, margin_a_1172_checked, margin_a_1173_checked, margin_a_1174_checked, margin_a_1175_checked, margin_a_1176_checked, margin_a_1177_checked, margin_a_1178_checked, margin_a_1179_checked, margin_a_1180_checked, margin_a_1181_checked, margin_a_1182_checked, margin_a_1183_checked, margin_a_1184_checked, margin_a_1185_checked, margin_a_1186_checked, margin_a_1187_checked, Bool.true_and]
 
 theorem margin_packet_12_checked : marginPacketCheck marginCatalog endpoint12 marginPacket12 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_12_checked
+  · apply decide_eq_true
+    simpa only [marginPacket12] using margin_groups_12_checked
   · exact margin_source_12_checked
 
 theorem margin_source_13_checked :
@@ -211,9 +227,10 @@ theorem margin_source_13_checked :
   simp only [marginCert13, pairedCheck, margin_a_1188_checked, margin_a_1189_checked, margin_a_1190_checked, margin_a_1191_checked, margin_a_1192_checked, margin_a_1193_checked, margin_a_1194_checked, margin_a_1195_checked, margin_a_1196_checked, margin_a_1197_checked, margin_a_1198_checked, margin_a_1199_checked, margin_a_1200_checked, margin_a_1201_checked, margin_a_1202_checked, margin_a_1203_checked, margin_a_1204_checked, margin_a_1205_checked, margin_a_1206_checked, margin_a_1207_checked, margin_a_1208_checked, margin_a_1209_checked, margin_a_1210_checked, margin_a_1211_checked, margin_a_1212_checked, margin_a_1213_checked, margin_a_1214_checked, margin_a_1215_checked, margin_a_1216_checked, margin_a_1217_checked, margin_a_1218_checked, margin_a_1219_checked, margin_a_1220_checked, margin_a_1221_checked, margin_a_1222_checked, margin_a_1223_checked, Bool.true_and]
 
 theorem margin_packet_13_checked : marginPacketCheck marginCatalog endpoint13 marginPacket13 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_13_checked
+  · apply decide_eq_true
+    simpa only [marginPacket13] using margin_groups_13_checked
   · exact margin_source_13_checked
 
 theorem margin_source_14_checked :
@@ -223,9 +240,10 @@ theorem margin_source_14_checked :
   simp only [marginCert14, pairedCheck, margin_a_1224_checked, margin_a_1225_checked, margin_a_1226_checked, margin_a_1227_checked, margin_a_1228_checked, margin_a_1229_checked, margin_a_1230_checked, margin_a_1231_checked, margin_a_1232_checked, margin_a_1233_checked, margin_a_1234_checked, margin_a_1235_checked, margin_a_1236_checked, margin_a_1237_checked, margin_a_1238_checked, margin_a_1239_checked, margin_a_1240_checked, margin_a_1241_checked, margin_a_1242_checked, margin_a_1243_checked, margin_a_1244_checked, margin_a_1245_checked, margin_a_1246_checked, margin_a_1247_checked, margin_a_1248_checked, margin_a_1249_checked, margin_a_1250_checked, margin_a_1251_checked, margin_a_1252_checked, margin_a_1253_checked, margin_a_1254_checked, margin_a_1255_checked, margin_a_1256_checked, margin_a_1257_checked, margin_a_1258_checked, margin_a_1259_checked, Bool.true_and]
 
 theorem margin_packet_14_checked : marginPacketCheck marginCatalog endpoint14 marginPacket14 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_14_checked
+  · apply decide_eq_true
+    simpa only [marginPacket14] using margin_groups_14_checked
   · exact margin_source_14_checked
 
 theorem margin_source_15_checked :
@@ -235,9 +253,10 @@ theorem margin_source_15_checked :
   simp only [marginCert15, pairedCheck, margin_a_1260_checked, margin_a_1261_checked, margin_a_1262_checked, margin_a_1263_checked, margin_a_1264_checked, margin_a_1265_checked, margin_a_1266_checked, margin_a_1267_checked, margin_a_1268_checked, margin_a_1269_checked, margin_a_1270_checked, margin_a_1271_checked, margin_a_1272_checked, margin_a_1273_checked, margin_a_1274_checked, margin_a_1275_checked, margin_a_1276_checked, margin_a_1277_checked, margin_a_1278_checked, margin_a_1279_checked, margin_a_1280_checked, margin_a_1281_checked, margin_a_1282_checked, margin_a_1283_checked, margin_a_1284_checked, margin_a_1285_checked, margin_a_1286_checked, margin_a_1287_checked, margin_a_1288_checked, margin_a_1289_checked, margin_a_1290_checked, margin_a_1291_checked, margin_a_1292_checked, margin_a_1293_checked, margin_a_1294_checked, margin_a_1295_checked, Bool.true_and]
 
 theorem margin_packet_15_checked : marginPacketCheck marginCatalog endpoint15 marginPacket15 = true := by
-  apply Bool.and_eq_true.mpr
+  apply Bool.and_eq_true_iff.mpr
   constructor
-  · simpa only [decide_eq_true_eq] using margin_groups_15_checked
+  · apply decide_eq_true
+    simpa only [marginPacket15] using margin_groups_15_checked
   · exact margin_source_15_checked
 
 theorem margins_checked : marginAllCheck marginCatalog endpoints marginPackets = true := by

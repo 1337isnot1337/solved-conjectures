@@ -245,6 +245,14 @@ function buildQuotientPacket(pairText) {
   const rowModules=checkModules("Row",["Conjectures.HadamardQuotient133RowData"],rowSpecs);
   const marginSpecs=marginLeaves.map((l,i)=>({name:"margin_leaf_"+pad(i,4),type:"marginLeafCheck marginCatalog endpoint"+pad(l.ri,2)+" marginGroups"+pad(l.ri,2)+" marginA"+pad(l.ri,2)+"_"+pad(l.ai)+" marginChunk"+pad(l.ri,2)+"_"+l.bj+" marginIndices"+pad(i,4)+" = true"}));
   const marginModules=checkModules("Margin",["Conjectures.HadamardQuotient133MarginData"],marginSpecs);
+  ensure(marginModules.length===93,"Expected exactly 93 margin-check modules");
+  const marginSourceModules=[];
+  for(let part=0;part<3;part++){
+    const name="HadamardQuotient133MarginsSource"+part;
+    marginSourceModules.push(name);
+    put(name,marginModules.slice(31*part,31*(part+1)).map(m=>"import Conjectures."+m).join("\n")+
+      "\n\n/-! Generated import-only source stage "+part+" of the unchanged margin checks. -/\n");
+  }
   const factSpecs=[
     {name:"outer_checked",type:"eligibleTriples = outerTriples"},
     {name:"quotient_chunks_checked",type:"chunks16 outerTriples = quotientChunks"},
@@ -331,12 +339,12 @@ function buildQuotientPacket(pairText) {
       "  simp only [marginCert"+r+", pairedCheck, "+
       as.map(ai=>"margin_a_"+pad(ai,4)+"_checked").join(", ")+", Bool.true_and]\n\n";
     marginBody+="theorem margin_packet_"+r+"_checked : marginPacketCheck marginCatalog endpoint"+r+" marginPacket"+r+" = true := by\n"+
-      "  apply Bool.and_eq_true.mpr\n  constructor\n  · simpa only [decide_eq_true_eq] using margin_groups_"+r+"_checked\n  · exact margin_source_"+r+"_checked\n\n";
+      "  apply Bool.and_eq_true_iff.mpr\n  constructor\n  · apply decide_eq_true\n    simpa only [marginPacket"+r+"] using margin_groups_"+r+"_checked\n  · exact margin_source_"+r+"_checked\n\n";
   });
   marginBody+="theorem margins_checked : marginAllCheck marginCatalog endpoints marginPackets = true := by\n"+
     "  simp only [marginAllCheck, endpoints, marginPackets, pairedCheck, "+
     marginSources.map(({ri})=>"margin_packet_"+pad(ri,2)+"_checked").join(", ")+", Bool.true_and]\n";
-  emitAssembly("HadamardQuotient133MarginsVerified",[...aModules,...marginFactModules],marginBody);
+  emitAssembly("HadamardQuotient133MarginsVerified",[...marginSourceModules,...aModules,...marginFactModules],marginBody);
   const hardestQ=quotientLeaves.reduce((a,l,i)=>l.rows.length>quotientLeaves[a].rows.length?i:a,0);
   const hardestM=marginLeaves.reduce((a,l,i)=>l.rows.length>marginLeaves[a].rows.length?i:a,0);
   let sample=header(["Conjectures.HadamardQuotient133MarginData"]);

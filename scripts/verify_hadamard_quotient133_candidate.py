@@ -100,6 +100,10 @@ TASKS = {
 DEFAULT_TASKS = ("main",)
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-quotient133-candidates.yml',
+ 'scripts/audit_lean_all_owned.py',
+ 'scripts/build_lean_parallel.py',
+ 'scripts/plan_accepted_lean.py',
+ 'scripts/verify_frankl_orbit_batches.py',
  'lean/lake-manifest.json',
  'lean/lakefile.toml',
  'lean/lean-toolchain',
