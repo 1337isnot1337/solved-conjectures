@@ -74,18 +74,21 @@ theorem positiveBoxEntry_injective (N : ℕ) :
 def positiveBoxCoordinates {N : ℕ} (v : ι → Fin N) : ι → ℤ :=
   fun i => positiveBoxEntry (v i)
 
+omit [Fintype ι] [DecidableEq ι] in
 theorem positiveBoxCoordinates_bounds {N : ℕ} (v : ι → Fin N) (i : ι) :
     1 ≤ positiveBoxCoordinates v i ∧ positiveBoxCoordinates v i ≤ (N : ℤ) := by
   have hi := (v i).isLt
   change 1 ≤ ((v i : ℕ) : ℤ) + 1 ∧ ((v i : ℕ) : ℤ) + 1 ≤ (N : ℤ)
   omega
 
+omit [Fintype ι] [DecidableEq ι] in
 theorem positiveBoxCoordinates_injective (N : ℕ) :
     Function.Injective (positiveBoxCoordinates (ι := ι) (N := N)) := by
   intro x y h
   funext i
   exact positiveBoxEntry_injective N (congrFun h i)
 
+omit [Fintype ι] [DecidableEq ι] in
 theorem exists_positiveBoxCoordinates {N : ℕ} (w : ι → ℤ)
     (hw : ∀ i, 1 ≤ w i ∧ w i ≤ (N : ℤ)) :
     ∃ v : ι → Fin N, positiveBoxCoordinates v = w := by

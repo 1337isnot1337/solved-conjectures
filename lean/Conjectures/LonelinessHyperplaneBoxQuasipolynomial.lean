@@ -20,6 +20,7 @@ abbrev normalZeros (m : ι → ℤ) := {i : ι // m i = 0}
 
 abbrev normalSupport (m : ι → ℤ) := {i : ι // m i ≠ 0}
 
+omit [DecidableEq ι] in
 theorem support_pairing_sum (m : ι → ℤ) (v : ι → ℤ) :
     (∑ i : normalSupport m, m i.1 * v i.1) = ∑ i, m i * v i := by
   have hzero : (∑ i : normalZeros m, m i.1 * v i.1) = 0 := by
@@ -56,6 +57,7 @@ def closedRelationBox_supportEquiv (m : ι → ℤ) (N : ℕ) :
   · rintro ⟨z, v⟩
     rfl
 
+omit [DecidableEq ι] in
 theorem closedRelationBox_card_factor (m : ι → ℤ) (N : ℕ) :
     Nat.card (closedRelationBox m N) =
       (N + 1) ^ Fintype.card (normalZeros m) *
@@ -63,6 +65,7 @@ theorem closedRelationBox_card_factor (m : ι → ℤ) (N : ℕ) :
   rw [Nat.card_congr (closedRelationBox_supportEquiv m N), Nat.card_prod, Nat.card_fun]
   simp only [Nat.card_eq_fintype_card, Fintype.card_fin]
 
+omit [DecidableEq ι] in
 theorem normal_card_split (m : ι → ℤ) :
     Fintype.card (normalZeros m) + Fintype.card (normalSupport m) = Fintype.card ι := by
   simpa only [Fintype.card_sum] using
@@ -84,7 +87,7 @@ theorem closedRelationBox_quasipolynomial_of_nonzero
     by_contra hi
     exact h ⟨i, hi⟩
   obtain ⟨i, hi⟩ := hsupport
-  letI : Nonempty (normalSupport m) := ⟨⟨i, hi⟩⟩
+  let : Nonempty (normalSupport m) := ⟨⟨i, hi⟩⟩
   obtain ⟨M, hM, P, hdegree, heval⟩ :=
     closedRelationBox_quasipolynomial_of_full_support
       (fun j : normalSupport m => m j.1) (fun j => j.2)
@@ -93,7 +96,7 @@ theorem closedRelationBox_quasipolynomial_of_nonzero
   have hL : ∀ r, (L r).natDegree ≤ 1 := by
     intro r
     apply natDegree_add_le_of_degree_le
-    · exact (natDegree_C_mul_le _ _).trans (by simp only [natDegree_X])
+    · exact (natDegree_C_mul_le _ _).trans natDegree_X_le
     · simp only [natDegree_C]
       omega
   refine ⟨M, hM, Q, ?_, ?_⟩
@@ -119,6 +122,7 @@ def closedRelationBox_zero_equiv (N : ℕ) :
   left_inv v := Subtype.ext rfl
   right_inv _ := rfl
 
+omit [DecidableEq ι] in
 theorem closedRelationBox_zero_card (N : ℕ) :
     Nat.card (closedRelationBox (0 : ι → ℤ) N) = (N + 1) ^ Fintype.card ι := by
   rw [Nat.card_congr (closedRelationBox_zero_equiv N), Nat.card_fun]
@@ -136,9 +140,9 @@ theorem closedRelationBox_quasipolynomial (m : ι → ℤ) :
   · subst m
     refine ⟨1, by omega, fun _ => (X + 1) ^ Fintype.card ι, ?_, ?_⟩
     · intro r
-      simp only [if_pos rfl]
+      simp only [ite_true]
       have hlinear : ((X : ℚ[X]) + 1).natDegree ≤ 1 :=
-        natDegree_add_le_of_degree_le (by simp only [natDegree_X])
+        natDegree_add_le_of_degree_le natDegree_X_le
           (by simp only [natDegree_one]; omega)
       simpa only [Nat.mul_one] using natDegree_pow_le_of_le (Fintype.card ι) hlinear
     · intro r n
@@ -147,7 +151,7 @@ theorem closedRelationBox_quasipolynomial (m : ι → ℤ) :
       simp only [Nat.cast_pow, Nat.cast_add, Nat.cast_one, eval_pow, eval_add,
         eval_X, eval_one]
   · obtain ⟨M, hM, P, hdegree, heval⟩ := closedRelationBox_quasipolynomial_of_nonzero m hm
-    exact ⟨M, hM, P, by simpa only [if_neg hm] using hdegree, heval⟩
+    exact ⟨M, hM, P, by simpa only [ite_eq_right hm] using hdegree, heval⟩
 
 end
 

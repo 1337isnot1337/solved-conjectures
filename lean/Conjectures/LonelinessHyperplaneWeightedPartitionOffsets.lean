@@ -134,8 +134,9 @@ def upperViolationPartitionEquiv
     · simp only [ite_eq_left hi, Nat.add_sub_cancel]
     · simp only [ite_eq_right hi]
 
+omit [DecidableEq ι] [Nonempty ι] in
 theorem remainderWeight_add_subsetWeight_lt
-    (a : ι → ℕ) (ha : ∀ i, 0 < a i) (M : ℕ)
+    (a : ι → ℕ) (_ha : ∀ i, 0 < a i) (M : ℕ)
     (hdiv : ∀ i, a i ∣ M) (r : remainderVectors a M) (S : Finset ι)
     (hS : subsetWeight a S < ∑ i, a i) :
     remainderWeight a M r + subsetWeight a S < Fintype.card ι * M := by
@@ -150,6 +151,7 @@ theorem remainderWeight_add_subsetWeight_lt
       nsmul_eq_mul, Nat.cast_id, remainderWeight] using h
   omega
 
+omit [Nonempty ι] in
 theorem upperViolationPartition_card_zero
     (a : ι → ℕ) (c N : ℕ) (hc : 0 < c) (S : Finset ι)
     (hS : c ≤ subsetWeight a S) :
@@ -165,6 +167,7 @@ theorem upperViolationPartition_card_zero
       omega⟩
   exact Nat.card_of_isEmpty
 
+omit [Nonempty ι] in
 theorem upperViolationPartition_card_eq_shifted_sum
     (a : ι → ℕ) (ha : ∀ i, 0 < a i) (M : ℕ) (hM : 0 < M)
     (hdiv : ∀ i, a i ∣ M) (c N : ℕ) (S : Finset ι)

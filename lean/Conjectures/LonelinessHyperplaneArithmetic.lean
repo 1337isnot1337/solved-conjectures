@@ -30,7 +30,7 @@ theorem finset_bezout (s : Finset ι) (m : ι → ℤ) :
     refine ⟨fun i => if i = a then ca else cb * e i, ?_⟩
     rw [Finset.sum_insert ha, Finset.gcd_insert]
     dsimp only
-    rw [if_pos rfl]
+    rw [ite_eq_left rfl]
     change m a * ca + (∑ i ∈ s, m i * (if i = a then ca else cb * e i)) =
       (Nat.gcd (m a).natAbs d : ℤ)
     calc
@@ -43,7 +43,7 @@ theorem finset_bezout (s : Finset ι) (m : ι → ℤ) :
           intro h
           subst i
           exact ha hi
-        rw [if_neg hia]
+        rw [ite_eq_right hia]
         ring
       _ = m a * ca + cb * (d : ℤ) := by rw [he]
       _ = m a * Int.gcdA (m a) (d : ℤ) +
@@ -121,6 +121,7 @@ one. Every coordinate therefore has absolute value one. -/
 def signChoice (m : ι → ℤ) : ι → ℝ :=
   fun i => if 0 ≤ (m i : ℝ) then 1 else -1
 
+omit [Fintype ι] in
 theorem abs_signChoice (m : ι → ℤ) (i : ι) : |signChoice m i| = 1 := by
   unfold signChoice
   split_ifs <;> norm_num

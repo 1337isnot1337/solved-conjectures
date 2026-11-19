@@ -16,12 +16,14 @@ variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 def positiveBoxLift {N : ℕ} (v : ι → Fin N) : ι → Fin (N + 1) :=
   fun i => ⟨(v i : ℕ) + 1, Nat.succ_lt_succ (v i).isLt⟩
 
+omit [DecidableEq ι] in
 theorem positiveBoxLift_pairing (m : ι → ℤ) {N : ℕ} (v : ι → Fin N) :
     (∑ i, m i * (positiveBoxLift v i : ℕ)) =
       integerPairing m (positiveBoxCoordinates v) := by
   simp only [positiveBoxLift, integerPairing, positiveBoxCoordinates,
     positiveBoxEntry, Nat.cast_add, Nat.cast_one]
 
+omit [Fintype ι] [DecidableEq ι] in
 theorem zeroExtended_positiveBoxLift_injective {N : ℕ} (v : ι → Fin N)
     (hv : Function.Injective v) : Function.Injective (zeroExtended (positiveBoxLift v)) := by
   intro a b hab
@@ -47,12 +49,16 @@ theorem zeroExtended_positiveBoxLift_injective {N : ℕ} (v : ι → Fin N)
       change (v i : ℕ) + 1 = (v j : ℕ) + 1 at h
       omega
 
+omit [Fintype ι] [DecidableEq ι] in
 theorem positive_of_zeroExtended_injective {N : ℕ} (v : ι → Fin (N + 1))
     (hv : Function.Injective (zeroExtended v)) (i : ι) : 0 < (v i : ℕ) := by
   by_contra h
-  have hzero : v i = 0 := Fin.ext (by omega)
+  have hzero : v i = 0 := by
+    apply Fin.ext
+    change (v i : ℕ) = 0
+    omega
   have he : (some i : Option ι) = none := hv hzero
-  exact Option.noConfusion he
+  exact Option.some_ne_none i he
 
 def positiveBoxLower {N : ℕ} (v : ι → Fin (N + 1))
     (hv : Function.Injective (zeroExtended v)) : ι → Fin N :=
@@ -61,6 +67,7 @@ def positiveBoxLower {N : ℕ} (v : ι → Fin (N + 1))
     have hlt := (v i).isLt
     omega⟩
 
+omit [Fintype ι] [DecidableEq ι] in
 theorem positiveBoxLift_lower {N : ℕ} (v : ι → Fin (N + 1))
     (hv : Function.Injective (zeroExtended v)) :
     positiveBoxLift (positiveBoxLower v hv) = v := by
@@ -70,6 +77,7 @@ theorem positiveBoxLift_lower {N : ℕ} (v : ι → Fin (N + 1))
   change (v i : ℕ) - 1 + 1 = (v i : ℕ)
   omega
 
+omit [Fintype ι] [DecidableEq ι] in
 theorem positiveBoxLower_injective {N : ℕ} (v : ι → Fin (N + 1))
     (hv : Function.Injective (zeroExtended v)) :
     Function.Injective (positiveBoxLower v hv) := by

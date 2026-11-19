@@ -16,14 +16,17 @@ variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
 def normalSize (m : ι → ℤ) : ℕ := ∑ i, (m i).natAbs
 
+omit [DecidableEq ι] in
 theorem cast_normalSize (m : ι → ℤ) :
     (normalSize m : ℤ) = ∑ i, |m i| := by
-  simp [normalSize, Int.natCast_natAbs]
+  simp [normalSize]
 
+omit [DecidableEq ι] in
 theorem abs_le_normalSize (m : ι → ℤ) (i : ι) : |m i| ≤ (normalSize m : ℤ) := by
   rw [cast_normalSize]
   exact Finset.single_le_sum (fun j _ => abs_nonneg (m j)) (Finset.mem_univ i)
 
+omit [DecidableEq ι] in
 theorem integerPairing_abs_le (m r : ι → ℤ) (M : ℕ)
     (hr : ∀ i, |r i| ≤ (M : ℤ)) :
     |integerPairing m r| ≤ (normalSize m : ℤ) * (M : ℤ) := by
@@ -37,24 +40,25 @@ theorem integerPairing_abs_le (m r : ι → ℤ) (M : ℕ)
 def parameterCoordinates (p : ι) {M : ℕ} (r : {i : ι // i ≠ p} → Fin M) : ι → ℤ :=
   fun i => if hi : i = p then 0 else ((r ⟨i, hi⟩ : ℕ) : ℤ)
 
+omit [Fintype ι] in
 @[simp] theorem parameterCoordinates_pivot
     (p : ι) {M : ℕ} (r : {i : ι // i ≠ p} → Fin M) :
     parameterCoordinates p r p = 0 := by simp [parameterCoordinates]
 
+omit [Fintype ι] in
 theorem parameterCoordinates_off
     (p : ι) {M : ℕ} (r : {i : ι // i ≠ p} → Fin M) (i : {i : ι // i ≠ p}) :
     parameterCoordinates p r i = ((r i : ℕ) : ℤ) := by
   simp [parameterCoordinates, i.2]
 
+omit [Fintype ι] in
 theorem parameterCoordinates_abs_le
     (p : ι) {M : ℕ} (r : {i : ι // i ≠ p} → Fin M) (i : ι) :
     |parameterCoordinates p r i| ≤ (M : ℤ) := by
   by_cases hip : i = p
   · subst i
     simp
-  · have hi : (((r ⟨i, hip⟩ : Fin M) : ℕ) : ℤ) ≤ (M : ℤ) := by
-      exact_mod_cast (r ⟨i, hip⟩).isLt.le
-    simpa [parameterCoordinates, hip] using hi
+  · simp [parameterCoordinates, hip]
 
 def boxPerturbation (m : ι → ℤ) (p : ι) {M : ℕ}
     (r : {i : ι // i ≠ p} → Fin M) : ι → ℤ :=
@@ -69,12 +73,12 @@ theorem boxPerturbation_kernel (m : ι → ℤ) (p : ι) {M : ℕ}
 theorem boxPerturbation_pivot (m : ι → ℤ) (p : ι) {M : ℕ}
     (r : {i : ι // i ≠ p} → Fin M) :
     boxPerturbation m p r p = -integerPairing m (parameterCoordinates p r) := by
-  simp [boxPerturbation, Pi.smul_apply, zsmul_eq_mul]
+  simp [boxPerturbation, zsmul_eq_mul]
 
 theorem boxPerturbation_off (m : ι → ℤ) (p : ι) {M : ℕ}
     (r : {i : ι // i ≠ p} → Fin M) (i : {i : ι // i ≠ p}) :
     boxPerturbation m p r i = m p * ((r i : ℕ) : ℤ) := by
-  simp [boxPerturbation, parameterCoordinates, i.2, Pi.smul_apply, zsmul_eq_mul,
+  simp [boxPerturbation, parameterCoordinates, i.2, zsmul_eq_mul,
     Pi.single_eq_of_ne]
 
 theorem boxPerturbation_abs_le (m : ι → ℤ) (p : ι) {M : ℕ}
@@ -96,6 +100,7 @@ def gridScale (m : ι → ℤ) (M : ℕ) : ℤ := (2 * (normalSize m : ℤ) + 1)
 def gridBoxConstant (m : ι → ℤ) (U : ℕ) : ℕ :=
   (2 * normalSize m + 1) * (U + 1) + normalSize m
 
+omit [DecidableEq ι] in
 theorem gridBoxConstant_pos (m : ι → ℤ) (U : ℕ) : 0 < gridBoxConstant m U := by
   unfold gridBoxConstant
   positivity
@@ -107,7 +112,7 @@ def gridVector (m u : ι → ℤ) (p : ι) {M : ℕ}
 theorem gridVector_apply (m u : ι → ℤ) (p : ι) {M : ℕ}
     (r : {i : ι // i ≠ p} → Fin M) (i : ι) :
     gridVector m u p r i = gridScale m M * u i + boxPerturbation m p r i := by
-  simp [gridVector, Pi.smul_apply, zsmul_eq_mul]
+  simp [gridVector, zsmul_eq_mul]
 
 theorem gridVector_kernel (m u : ι → ℤ) (hu : integerPairing m u = 0)
     (p : ι) {M : ℕ} (r : {i : ι // i ≠ p} → Fin M) :

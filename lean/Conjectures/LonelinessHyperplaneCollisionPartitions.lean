@@ -33,9 +33,11 @@ instance collisionClass_fintype (S : Finset (collisionPair ι)) : Fintype (colli
 def collisionClassMap (S : Finset (collisionPair ι)) : Option ι → collisionClass S :=
   Quotient.mk (collisionSetoid S)
 
+omit [Fintype ι] [DecidableEq ι] in
 theorem collisionClassMap_surjective (S : Finset (collisionPair ι)) :
     Function.Surjective (collisionClassMap S) := Quotient.mk_surjective
 
+omit [Fintype ι] [DecidableEq ι] in
 theorem collisionClassMap_noninjective {S : Finset (collisionPair ι)} (hS : S.Nonempty) :
     ¬ Function.Injective (collisionClassMap S) := by
   obtain ⟨e, he⟩ := hS
@@ -45,6 +47,7 @@ theorem collisionClassMap_noninjective {S : Finset (collisionPair ι)} (hS : S.N
   apply Quotient.sound
   exact Relation.EqvGen.rel _ _ ⟨e, he, rfl, rfl⟩
 
+omit [Fintype ι] [DecidableEq ι] in
 theorem collision_conditions_iff {N : ℕ} (S : Finset (collisionPair ι))
     (v : ι → Fin (N + 1)) :
     (∀ e ∈ S, zeroExtended v e.1.1 = zeroExtended v e.1.2) ↔
@@ -53,6 +56,7 @@ theorem collision_conditions_iff {N : ℕ} (S : Finset (collisionPair ι))
   constructor
   · intro hv a b hab
     have hrel : Relation.EqvGen (collisionRelation S) a b := Quotient.exact hab
+    clear hab
     induction hrel with
     | rel a b h =>
       obtain ⟨e, he, hea, heb⟩ := h
@@ -80,6 +84,7 @@ def collisionBox_emptyEquiv (m : ι → ℤ) (N : ℕ) :
   left_inv v := Subtype.ext rfl
   right_inv _ := rfl
 
+omit [DecidableEq ι] in
 /-- Every nonempty collision family lowers the number of free
 coordinates, even if the compressed normal becomes zero. -/
 theorem collisionBox_isQuasipolynomial_of_nonempty

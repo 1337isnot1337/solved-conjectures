@@ -14,6 +14,7 @@ noncomputable section
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι] [Nonempty ι]
 
+omit [DecidableEq ι] [Nonempty ι] in
 theorem remainderWeight_add_offset_lt
     (a : ι → ℕ) (M : ℕ) (hdiv : ∀ i, a i ∣ M)
     (r : remainderVectors a M) (offset : ℕ) (hoffset : offset < ∑ i, a i) :
@@ -21,13 +22,15 @@ theorem remainderWeight_add_offset_lt
   have hpoint : ∀ i, a i * (r i : ℕ) + a i ≤ M := by
     intro i
     have h := Nat.mul_le_mul_left (a i) (Nat.succ_le_of_lt (r i).isLt)
-    simpa only [Nat.mul_add, Nat.mul_one, Nat.mul_div_cancel' (hdiv i)] using h
+    simpa only [Nat.succ_eq_add_one, Nat.mul_add, Nat.mul_one,
+      Nat.mul_div_cancel' (hdiv i)] using h
   have hsum : remainderWeight a M r + (∑ i, a i) ≤ Fintype.card ι * M := by
     have h := Finset.sum_le_sum (fun i (_ : i ∈ (Finset.univ : Finset ι)) => hpoint i)
     simpa only [Finset.sum_add_distrib, Finset.sum_const, Finset.card_univ,
-      nsmul_eq_mul, remainderWeight] using h
+      nsmul_eq_mul, Nat.cast_id, remainderWeight] using h
   omega
 
+omit [DecidableEq ι] in
 theorem shiftedWeightedPartition_progressions_of_small_offset
     (a : ι → ℕ) (ha : ∀ i, 0 < a i) (M : ℕ) (hM : 0 < M)
     (hdiv : ∀ i, a i ∣ M) (offset : ℕ) (hoffset : offset < ∑ i, a i) :
@@ -44,12 +47,15 @@ theorem shiftedWeightedPartition_progressions_of_small_offset
     intro r _
     exact hdegree r s
   · intro s n
+    change (Nat.card (shiftedWeightedPartition a offset (M * n + s)) : ℚ) =
+      (∑ r : remainderVectors a M, P r s).eval (n : ℚ)
     rw [shiftedWeightedPartition_card_eq_sum a ha M hM hdiv,
       Nat.cast_sum, eval_finsetSum]
     apply Finset.sum_congr rfl
     intro r _
     exact heval r s n
 
+omit [DecidableEq ι] in
 theorem shiftedWeightedPartition_isQuasipolynomial_of_small_offset
     (a : ι → ℕ) (ha : ∀ i, 0 < a i) (offset : ℕ) (hoffset : offset < ∑ i, a i) :
     IsQuasipolynomial (fun n => (Nat.card (shiftedWeightedPartition a offset n) : ℚ))

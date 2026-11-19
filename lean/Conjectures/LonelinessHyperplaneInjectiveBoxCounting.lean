@@ -15,6 +15,7 @@ variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 def injectiveRelationBox (m : ι → ℤ) (N : ℕ) : Type _ :=
   {v : closedRelationBox m N // Function.Injective (zeroExtended v.1)}
 
+omit [Fintype ι] in
 theorem injective_zeroExtended_iff {N : ℕ} (v : ι → Fin (N + 1)) :
     Function.Injective (zeroExtended v) ↔
       ∀ e : collisionPair ι, zeroExtended v e.1.1 ≠ zeroExtended v e.1.2 := by
@@ -40,7 +41,9 @@ theorem injectiveRelationBox_card_inclusion_exclusion (m : ι → ℤ) (N : ℕ)
       ∑ S : Finset (collisionPair ι), (-1 : ℤ) ^ S.card *
         (Nat.card (collisionBox m S N) : ℤ) := by
   classical
-  letI : Fintype (closedRelationBox m N) := Fintype.ofFinite _
+  let : Fintype (closedRelationBox m N) := by
+    unfold closedRelationBox
+    infer_instance
   let bad : collisionPair ι → Finset (closedRelationBox m N) := fun e =>
     Finset.univ.filter (fun v => zeroExtended v.1 e.1.1 = zeroExtended v.1 e.1.2)
   have hgood : Nat.card (injectiveRelationBox m N) =

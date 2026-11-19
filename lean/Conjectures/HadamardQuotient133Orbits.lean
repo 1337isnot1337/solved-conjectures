@@ -22,29 +22,35 @@ private theorem all_fin_true {n : ℕ} (f : Fin n → Bool)
     (h : (List.finRange n).all f = true) (i : Fin n) : f i = true :=
   (List.all_eq_true.mp h) i (List.mem_finRange i)
 
+private def squareClass7_square_mul_check (u x : ZMod 7) : Bool :=
+  decide (u = 0 ∨ squareClass7 (u ^ 2 * x) = squareClass7 x)
+
+private def squareClass19_square_mul_check (u x : ZMod 19) : Bool :=
+  decide (u = 0 ∨ squareClass19 (u ^ 2 * x) = squareClass19 x)
+
 private theorem squareClass7_square_mul_checked :
     (List.finRange 7).all (fun u =>
-      (List.finRange 7).all (fun x =>
-        decide ((u : ZMod 7) = 0 ∨
-          squareClass7 ((u : ZMod 7) ^ 2 * x) = squareClass7 x))) = true := by
+      (List.finRange 7).all (squareClass7_square_mul_check u)) = true := by
   decide +kernel
 
 private theorem squareClass19_square_mul_checked :
     (List.finRange 19).all (fun u =>
-      (List.finRange 19).all (fun x =>
-        decide ((u : ZMod 19) = 0 ∨
-          squareClass19 ((u : ZMod 19) ^ 2 * x) = squareClass19 x))) = true := by
+      (List.finRange 19).all (squareClass19_square_mul_check u)) = true := by
   decide +kernel
 
 theorem squareClass7_square_mul (u x : ZMod 7) (hu : u ≠ 0) :
     squareClass7 (u ^ 2 * x) = squareClass7 x := by
   have h := all_fin_true _ (all_fin_true _ squareClass7_square_mul_checked u) x
-  exact (of_decide_eq_true h).resolve_left hu
+  have h' : u = 0 ∨ squareClass7 (u ^ 2 * x) = squareClass7 x := by
+    simpa only [squareClass7_square_mul_check, decide_eq_true_eq] using h
+  exact h'.resolve_left hu
 
 theorem squareClass19_square_mul (u x : ZMod 19) (hu : u ≠ 0) :
     squareClass19 (u ^ 2 * x) = squareClass19 x := by
   have h := all_fin_true _ (all_fin_true _ squareClass19_square_mul_checked u) x
-  exact (of_decide_eq_true h).resolve_left hu
+  have h' : u = 0 ∨ squareClass19 (u ^ 2 * x) = squareClass19 x := by
+    simpa only [squareClass19_square_mul_check, decide_eq_true_eq] using h
+  exact h'.resolve_left hu
 
 def rep7 : Fin 3 → ZMod 7 := ![0, 1, 3]
 def rep19 : Fin 3 → ZMod 19 := ![0, 1, 2]
@@ -61,15 +67,27 @@ private def canonicalRoot7 : ZMod 7 → ZMod 7 :=
 private def canonicalRoot19 : ZMod 19 → ZMod 19 :=
   ![1, 1, 1, 7, 2, 9, 5, 8, 2, 3, 9, 7, 5, 4, 8, 6, 4, 6, 3]
 
+private def canonicalRoot7_check (x : ZMod 7) : Bool :=
+  decide (canonicalRoot7 x ≠ 0 ∧
+    canonicalRoot7 x ^ 2 * rep7 (squareClass7 x) = x)
+
+private def canonicalRoot19_check (x : ZMod 19) : Bool :=
+  decide (canonicalRoot19 x ≠ 0 ∧
+    canonicalRoot19 x ^ 2 * rep19 (squareClass19 x) = x)
+
 private theorem canonicalRoot7_spec (x : ZMod 7) :
     canonicalRoot7 x ≠ 0 ∧
       canonicalRoot7 x ^ 2 * rep7 (squareClass7 x) = x := by
-  fin_cases x <;> decide
+  have hc : (List.finRange 7).all canonicalRoot7_check = true := by
+    decide +kernel
+  simpa only [canonicalRoot7_check, decide_eq_true_eq] using all_fin_true _ hc x
 
 private theorem canonicalRoot19_spec (x : ZMod 19) :
     canonicalRoot19 x ≠ 0 ∧
       canonicalRoot19 x ^ 2 * rep19 (squareClass19 x) = x := by
-  fin_cases x <;> decide
+  have hc : (List.finRange 19).all canonicalRoot19_check = true := by
+    decide +kernel
+  simpa only [canonicalRoot19_check, decide_eq_true_eq] using all_fin_true _ hc x
 
 theorem squareClass7_eq_iff_square_unit (x y : ZMod 7) :
     squareClass7 x = squareClass7 y ↔
@@ -247,6 +265,6 @@ theorem signatures133_suffice (a b : Row)
   obtain ⟨k, hk, hr⟩ := correlation133_orbit t
   calc
     _ = target133 k := by rw [hr a, hr b, h k]
-    _ = if t = 0 then 2378 else -18 := by rw [target133_apply, hk]
+    _ = if t = 0 then 2378 else -18 := by simp only [target133_apply, hk]
 
 end HadamardQuotient133

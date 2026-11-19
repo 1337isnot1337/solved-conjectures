@@ -22,6 +22,7 @@ def negativeWeight (m : ι → ℤ) : ℕ :=
 def reflectedCoordinates (m : ι → ℤ) (N : ℕ) (v : ι → ℕ) : ι → ℕ :=
   fun i => if m i < 0 then N - v i else v i
 
+omit [Fintype ι] [DecidableEq ι] [Nonempty ι] in
 theorem reflectedCoordinates_le (m : ι → ℤ) (N : ℕ) (v : ι → ℕ)
     (hv : ∀ i, v i ≤ N) : ∀ i, reflectedCoordinates m N v i ≤ N := by
   intro i
@@ -30,6 +31,7 @@ theorem reflectedCoordinates_le (m : ι → ℤ) (N : ℕ) (v : ι → ℕ)
   · exact Nat.sub_le _ _
   · exact hv i
 
+omit [Fintype ι] [DecidableEq ι] [Nonempty ι] in
 theorem reflectedCoordinates_involutive (m : ι → ℤ) (N : ℕ) (v : ι → ℕ)
     (hv : ∀ i, v i ≤ N) :
     reflectedCoordinates m N (reflectedCoordinates m N v) = v := by
@@ -38,6 +40,7 @@ theorem reflectedCoordinates_involutive (m : ι → ℤ) (N : ℕ) (v : ι → �
   · simp only [reflectedCoordinates, ite_eq_left hi, Nat.sub_sub_self (hv i)]
   · simp only [reflectedCoordinates, ite_eq_right hi]
 
+omit [DecidableEq ι] [Nonempty ι] in
 theorem reflected_weighted_sum (m : ι → ℤ) (N : ℕ) (v : ι → ℕ)
     (hv : ∀ i, v i ≤ N) :
     ((∑ i, (m i).natAbs * reflectedCoordinates m N v i : ℕ) : ℤ) =
@@ -71,6 +74,7 @@ theorem reflected_weighted_sum (m : ι → ℤ) (N : ℕ) (v : ι → ℕ)
       Finset.sum_congr rfl (fun i _ => hpoint i)
     _ = _ := by rw [Finset.sum_add_distrib, hconstant]
 
+omit [DecidableEq ι] [Nonempty ι] in
 theorem negativeWeight_le_total (m : ι → ℤ) :
     negativeWeight m ≤ ∑ i, (m i).natAbs := by
   apply Finset.sum_le_sum

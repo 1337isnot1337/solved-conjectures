@@ -1,4 +1,6 @@
 import Mathlib.Data.List.Basic
+import Mathlib.Data.Int.Basic
+import Mathlib.Data.Int.Order.Basic
 import Lean.Elab.Tactic.Omega
 
 /-!

@@ -18,6 +18,7 @@ variable {ι : Type*} [Fintype ι] [DecidableEq ι] [Nonempty ι]
 def boundedWeightedPartition (a : ι → ℕ) (n N : ℕ) : Type _ :=
   {x : weightedPartition a n // ∀ i, x.1 i ≤ N}
 
+omit [Fintype ι] [Nonempty ι] in
 private theorem mem_finset_inf {α : Type*} [Fintype α] [DecidableEq α]
     (S : Finset ι) (F : ι → Finset α) (x : α) :
     x ∈ S.inf F ↔ ∀ i ∈ S, x ∈ F i := by
@@ -27,13 +28,14 @@ private theorem mem_finset_inf {α : Type*} [Fintype α] [DecidableEq α]
     rw [Finset.inf_insert, Finset.inf_eq_inter, Finset.mem_inter, ih]
     simp only [Finset.forall_mem_insert]
 
+omit [Nonempty ι] in
 theorem boundedWeightedPartition_card_inclusion_exclusion
     (a : ι → ℕ) (n N : ℕ) [Finite (weightedPartition a n)] :
     (Nat.card (boundedWeightedPartition a n N) : ℤ) =
       ∑ S : Finset ι, (-1 : ℤ) ^ S.card *
         (Nat.card (upperViolationPartition a n N S) : ℤ) := by
   classical
-  letI : Fintype (weightedPartition a n) := Fintype.ofFinite _
+  let : Fintype (weightedPartition a n) := Fintype.ofFinite _
   let bad : ι → Finset (weightedPartition a n) := fun i =>
     Finset.univ.filter (fun x => N < x.1 i)
   have hgood : Nat.card (boundedWeightedPartition a n N) =
@@ -51,6 +53,7 @@ theorem boundedWeightedPartition_card_inclusion_exclusion
   have h := Finset.inclusion_exclusion_card_inf_compl Finset.univ bad
   simpa only [← hgood, ← hbad, Finset.powerset_univ] using h
 
+omit [DecidableEq ι] [Nonempty ι] in
 theorem boundedWeightedPartition_zero_card
     (a : ι → ℕ) (ha : ∀ i, 0 < a i) (N : ℕ) :
     Nat.card (boundedWeightedPartition a 0 N) = 1 := by
@@ -63,7 +66,8 @@ theorem boundedWeightedPartition_zero_card
     apply Subtype.ext
     funext i
     have hi : a i * x.1.1 i ≤ ∑ j, a j * x.1.1 j :=
-      Finset.single_le_sum (fun _ _ => Nat.zero_le _) (Finset.mem_univ i)
+      Finset.single_le_sum (f := fun j => a j * x.1.1 j)
+        (fun _ _ => Nat.zero_le _) (Finset.mem_univ i)
     rw [x.1.2] at hi
     have hprod : a i * x.1.1 i = 0 := Nat.eq_zero_of_le_zero hi
     have hxi : x.1.1 i = 0 := (Nat.mul_eq_zero.mp hprod).resolve_left (ha i).ne'
@@ -101,7 +105,7 @@ theorem boundedWeightedPartition_polynomial_on_progressions
       exact (natDegree_C_mul_le _ _).trans (hdegree S r)
     · intro r n
       let N := M * n + (r : ℕ)
-      letI : Finite (weightedPartition a (c * N)) :=
+      let : Finite (weightedPartition a (c * N)) :=
         weightedPartition_finite a ha M hM hdiv (c * N)
       have hIE := boundedWeightedPartition_card_inclusion_exclusion a (c * N) N
       have hIEQ : (Nat.card (boundedWeightedPartition a (c * N) N) : ℚ) =

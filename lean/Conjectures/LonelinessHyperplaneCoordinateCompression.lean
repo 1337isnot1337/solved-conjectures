@@ -24,19 +24,22 @@ def classExtension {N : ℕ} (π : Option ι → κ)
     (w : freeClasses π → Fin (N + 1)) (q : κ) : Fin (N + 1) :=
   if hq : q = π none then 0 else w ⟨q, hq⟩
 
+omit [Fintype ι] [DecidableEq ι] [Fintype κ] in
 @[simp] theorem classExtension_zero {N : ℕ} (π : Option ι → κ)
     (w : freeClasses π → Fin (N + 1)) : classExtension π w (π none) = 0 := by
-  simp only [classExtension, dif_pos rfl]
+  simp only [classExtension, dite_true]
 
+omit [Fintype ι] [DecidableEq ι] [Fintype κ] in
 theorem classExtension_free {N : ℕ} (π : Option ι → κ)
     (w : freeClasses π → Fin (N + 1)) (q : freeClasses π) :
     classExtension π w q.1 = w q := by
-  simp only [classExtension, dif_neg q.2]
+  simp only [classExtension, dite_eq_right q.2]
 
 def pullbackCoordinates {N : ℕ} (π : Option ι → κ)
     (w : freeClasses π → Fin (N + 1)) : ι → Fin (N + 1) :=
   fun i => classExtension π w (π (some i))
 
+omit [Fintype ι] [DecidableEq ι] [Fintype κ] in
 theorem zeroExtended_pullback {N : ℕ} (π : Option ι → κ)
     (w : freeClasses π → Fin (N + 1)) (a : Option ι) :
     zeroExtended (pullbackCoordinates π w) a = classExtension π w (π a) := by
@@ -47,6 +50,7 @@ theorem zeroExtended_pullback {N : ℕ} (π : Option ι → κ)
 def compressedNormal (m : ι → ℤ) (π : Option ι → κ) : freeClasses π → ℤ :=
   fun q => ∑ i, if π (some i) = q.1 then m i else 0
 
+omit [DecidableEq ι] in
 theorem compressed_pairing (m : ι → ℤ) (π : Option ι → κ) {N : ℕ}
     (w : freeClasses π → Fin (N + 1)) :
     (∑ q, compressedNormal m π q * (w q : ℕ)) =
@@ -62,19 +66,19 @@ theorem compressed_pairing (m : ι → ℤ) (π : Option ι → κ) {N : ℕ}
       have hne : π (some i) ≠ q.1 := by
         intro h
         exact q.2 (h.symm.trans hi)
-      rw [if_neg hne, zero_mul]
+      rw [ite_eq_right hne, zero_mul]
     rw [Finset.sum_eq_zero (fun q _ => hterms q)]
     simp only [pullbackCoordinates, hi, classExtension_zero, Fin.val_zero,
       Nat.cast_zero, mul_zero]
   · let q : freeClasses π := ⟨π (some i), hi⟩
     rw [Finset.sum_eq_single q]
-    · simp only [q, if_pos rfl, pullbackCoordinates, classExtension, dif_neg hi]
+    · simp only [q, ite_true, pullbackCoordinates, classExtension, dite_eq_right hi]
     · intro b _ hb
       have hne : π (some i) ≠ b.1 := by
         intro h
         apply hb
         exact Subtype.ext h.symm
-      rw [if_neg hne, zero_mul]
+      rw [ite_eq_right hne, zero_mul]
     · simp
 
 def coarsenedRelationBox (m : ι → ℤ) (π : Option ι → κ) (N : ℕ) : Type _ :=
@@ -85,6 +89,7 @@ def chosenClassCoordinates {N : ℕ} (π : Option ι → κ) (hπ : Function.Sur
     (v : ι → Fin (N + 1)) : freeClasses π → Fin (N + 1) :=
   fun q => zeroExtended v (Function.surjInv hπ q.1)
 
+omit [Fintype ι] [DecidableEq ι] [Fintype κ] in
 theorem chosenClassCoordinates_extension {N : ℕ}
     (π : Option ι → κ) (hπ : Function.Surjective π) (v : ι → Fin (N + 1))
     (hv : ∀ a b, π a = π b → zeroExtended v a = zeroExtended v b) (a : Option ι) :
@@ -92,9 +97,10 @@ theorem chosenClassCoordinates_extension {N : ℕ}
   by_cases ha : π a = π none
   · rw [ha, classExtension_zero]
     exact (hv a none ha).symm
-  · simp only [classExtension, dif_neg ha, chosenClassCoordinates]
+  · simp only [classExtension, dite_eq_right ha, chosenClassCoordinates]
     exact hv _ a (Function.surjInv_eq hπ (π a))
 
+omit [Fintype ι] [DecidableEq ι] [Fintype κ] in
 theorem chosenClassCoordinates_pullback {N : ℕ}
     (π : Option ι → κ) (hπ : Function.Surjective π) (v : ι → Fin (N + 1))
     (hv : ∀ a b, π a = π b → zeroExtended v a = zeroExtended v b) :
@@ -121,10 +127,11 @@ def coarsenedRelationBoxEquiv (m : ι → ℤ) (π : Option ι → κ)
   right_inv w := by
     apply Subtype.ext
     funext q
-    change zeroExtended (pullbackCoordinates π w.1) (Function.surjInv hπ q.1) = w.1 q
-    rw [zeroExtended_pullback, Function.surjInv_eq]
-    exact classExtension_free π w.1 q
+    exact (zeroExtended_pullback π w.1 (Function.surjInv hπ q.1)).trans
+      ((congrArg (classExtension π w.1) (Function.surjInv_eq hπ q.1)).trans
+        (classExtension_free π w.1 q))
 
+omit [DecidableEq ι] in
 theorem freeClasses_card_le (π : Option ι → κ) (hπ : Function.Surjective π) :
     Fintype.card (freeClasses π) ≤ Fintype.card ι := by
   have hfree : Fintype.card (freeClasses π) < Fintype.card κ :=
@@ -133,6 +140,7 @@ theorem freeClasses_card_le (π : Option ι → κ) (hπ : Function.Surjective �
   simp only [Fintype.card_option] at hquot
   omega
 
+omit [DecidableEq ι] in
 theorem freeClasses_card_le_of_noninjective
     (π : Option ι → κ) (hπ : Function.Surjective π) (hnπ : ¬ Function.Injective π) :
     Fintype.card (freeClasses π) ≤ Fintype.card ι - 1 := by
@@ -142,6 +150,7 @@ theorem freeClasses_card_le_of_noninjective
   simp only [Fintype.card_option] at hquot
   omega
 
+omit [DecidableEq ι] in
 theorem coarsenedRelationBox_isQuasipolynomial
     (m : ι → ℤ) (π : Option ι → κ) (hπ : Function.Surjective π) :
     IsQuasipolynomial (fun N => (Nat.card (coarsenedRelationBox m π N) : ℚ))
@@ -156,6 +165,7 @@ theorem coarsenedRelationBox_isQuasipolynomial
   exact congrArg (fun n : ℕ => (n : ℚ))
     (Nat.card_congr (coarsenedRelationBoxEquiv m π hπ N)).symm
 
+omit [DecidableEq ι] in
 theorem coarsenedRelationBox_isQuasipolynomial_of_noninjective
     (m : ι → ℤ) (π : Option ι → κ) (hπ : Function.Surjective π)
     (hnπ : ¬ Function.Injective π) :
