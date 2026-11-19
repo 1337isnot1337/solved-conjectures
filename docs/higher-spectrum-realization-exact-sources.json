@@ -21,7 +21,7 @@
         "Loneliness."
       ],
       "project_module_count": 16,
-      "required_theorem_count": 19,
+      "required_theorem_count": 26,
       "required_theorems": [
         "Loneliness.SevenSpectrumRealization.realizes",
         "Loneliness.SevenSpectrumRealization.proposed_positive_below",
@@ -41,7 +41,14 @@
         "Loneliness.HigherSpectrumBounds.seven_sharp_witness",
         "Loneliness.HigherSpectrumBounds.eight_sharp_witness",
         "Loneliness.HigherSpectrumBounds.seven_constant_optimal",
-        "Loneliness.HigherSpectrumBounds.eight_constant_optimal"
+        "Loneliness.HigherSpectrumBounds.eight_constant_optimal",
+        "Loneliness.HigherSpectrumBounds.known_seven_spectrum",
+        "Loneliness.HigherSpectrumBounds.exceptional_value_proposed",
+        "Loneliness.HigherSpectrumBounds.known_eight_spectrum",
+        "Loneliness.HigherSpectrumBounds.seven_reduced_forms",
+        "Loneliness.HigherSpectrumBounds.eight_reduced_form",
+        "Loneliness.HigherSpectrumBounds.seven_reduced_denominator_defect",
+        "Loneliness.HigherSpectrumBounds.eight_reduced_denominator_defect"
       ],
       "roots": [
         "Conjectures.LonelinessSevenSpectrumRealization",
@@ -49,7 +56,7 @@
         "Conjectures.LonelinessHigherSpectrumBounds"
       ],
       "schema": "higher-spectrum-realization-exact-v1",
-      "scope": "Unconditional realization of every proposed seven- and eight-speed spectrum value. Sharp maximum-speed bounds with factors 13/5 and 21/17 on every stated family and all 44 sporadic rows, including permutations and every positive-denominator representation of the exact value. Membership in the listed families is explicit; classification of arbitrary speed tuples remains unproved.",
+      "scope": "Unconditional realization of every proposed seven- and eight-speed spectrum value. Sharp maximum-speed bounds with factors 13/5 and 21/17 on every stated family and all 44 sporadic rows, including permutations and every positive-denominator representation of the exact value. Membership in the listed families is explicit; classification of arbitrary speed tuples remains unproved. The exact value set within the stated candidates and its reduced numerator/denominator alternatives are also proved.",
       "source_policy": {
         "fresh_project_objects": true,
         "linter_override": false,
@@ -69,7 +76,7 @@
         "Conjectures.LonelinessHigherExamplesCertificate": "41f2ddf51d094c74f7e54bcb52d7535ebfd8fbcbf15a1796df548ea62dbef5bf",
         "Conjectures.LonelinessHigherExamplesEight": "8ae03a27b2da2ecf6ade213bdd68046266e99158c6c58685e2cf81c047f089ff",
         "Conjectures.LonelinessHigherExamplesSeven": "b38ea3d232397822aeeecbb6ad09e2f982ff7e95a6327a489d06d08718f68f78",
-        "Conjectures.LonelinessHigherSpectrumBounds": "aa18829fca76736b2d61fee2ee9111db04f9a61008e26d9cd4fed332b65a74d3",
+        "Conjectures.LonelinessHigherSpectrumBounds": "c50f10bb94acc83bbb65b8f20c9c740fa6904f925cb2b6bbac6e6f28a31e62f2",
         "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
         "Conjectures.LonelinessSevenSpectrumRealization": "ac38a2b2d7ad04cd6b6f888a414e3ebb42ec97374cd6fd65dd25941381e25c34"
       }
@@ -93,8 +100,8 @@
       "legacy_prefixes": [
         "Loneliness."
       ],
-      "project_module_count": 12,
-      "required_theorem_count": 8,
+      "project_module_count": 13,
+      "required_theorem_count": 14,
       "required_theorems": [
         "Loneliness.SixSpectrumArithmetic.first_family_coprime",
         "Loneliness.SixSpectrumArithmetic.second_family_coprime",
@@ -103,13 +110,20 @@
         "Loneliness.SixSpectrumArithmetic.parameter_iff_reduced_families",
         "Loneliness.SixSpectrumArithmetic.reduced_denominator_restrictions",
         "Loneliness.SixSpectrumArithmetic.reduced_families_realized",
-        "Loneliness.SixSpectrumArithmetic.denominator_conditions_not_sufficient"
+        "Loneliness.SixSpectrumArithmetic.denominator_conditions_not_sufficient",
+        "Loneliness.SixSporadicBounds.row_values",
+        "Loneliness.SixSporadicBounds.row_arithmetic",
+        "Loneliness.SixSporadicBounds.listed_value_form",
+        "Loneliness.SixSporadicBounds.listed_spectrum_parameter",
+        "Loneliness.SixSporadicBounds.listed_speed_bound",
+        "Loneliness.SixSporadicBounds.listed_reduced_denominator"
       ],
       "roots": [
-        "Conjectures.LonelinessSixSpectrumArithmetic"
+        "Conjectures.LonelinessSixSpectrumArithmetic",
+        "Conjectures.LonelinessSixSporadicBounds"
       ],
       "schema": "higher-spectrum-realization-exact-v1",
-      "scope": "Exact reduced rational forms of the proposed six-speed spectrum and unconditional realization of each reduced family. Odd denominator and gap one or three are proved necessary, with an explicit counterexample to their sufficiency. This does not prove exhaustive classification of all six-speed tuples.",
+      "scope": "Exact reduced rational forms of the proposed six-speed spectrum and unconditional realization of each reduced family. Odd denominator and gap one or three are proved necessary, with an explicit counterexample to their sufficiency. This does not prove exhaustive classification of all six-speed tuples. The exact nine sporadic sextuples also have their stated values, the required parameter form, speed below three times every positive representing denominator, and reduced denominator six times the numerator plus one. Permutations are allowed; off-list exhaustiveness remains separate.",
       "source_policy": {
         "fresh_project_objects": true,
         "linter_override": false,
@@ -127,7 +141,8 @@
         "Conjectures.LonelinessPairBridge": "eb4326c07d8695b97b4874e08b15f902338491769d85f77a5b1bd926b09e5435",
         "Conjectures.LonelinessSixProgression": "87356deb94b12b9b9872f97283080ac28a95a76c164ed7e8f445c10cc93070cb",
         "Conjectures.LonelinessSixSpectrumArithmetic": "8faa8fea665b8e2d4673645eea5e3cecbe069bac66fb9c816be3d35c8c600774",
-        "Conjectures.LonelinessSixSpectrumRealization": "13cc983823bbea286c83191d9b131934bba7a4122b0d579db34ebd3bb646d55b"
+        "Conjectures.LonelinessSixSpectrumRealization": "13cc983823bbea286c83191d9b131934bba7a4122b0d579db34ebd3bb646d55b",
+        "Conjectures.LonelinessSixSporadicBounds": "97ae0d8c4182e48623f0196fe4800351eba1376ec5627003972489a8a2455dce"
       }
     }
   }

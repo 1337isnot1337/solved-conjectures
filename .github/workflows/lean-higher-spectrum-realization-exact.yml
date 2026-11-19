@@ -9,6 +9,7 @@ on:
       - 'scripts/verify_higher_spectrum_realization_exact.py'
       - 'docs/higher-spectrum-realization-exact-sources.json'
       - 'lean/Conjectures/LonelinessSixSpectrumArithmetic.lean'
+      - 'lean/Conjectures/LonelinessSixSporadicBounds.lean'
       - 'lean/Conjectures/LonelinessSevenSpectrumRealization.lean'
       - 'lean/Conjectures/LonelinessEightSpectrumRealization.lean'
       - 'lean/Conjectures/LonelinessHigherSpectrumBounds.lean'

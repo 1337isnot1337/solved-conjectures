@@ -50,7 +50,8 @@ def exact_singleton(modules, target):
 
 
 ROOTS = {
-    "six-arithmetic": ["Conjectures.LonelinessSixSpectrumArithmetic"],
+    "six-arithmetic": ["Conjectures.LonelinessSixSpectrumArithmetic",
+                       "Conjectures.LonelinessSixSporadicBounds"],
     "seven-eight": [
         "Conjectures.LonelinessSevenSpectrumRealization",
         "Conjectures.LonelinessEightSpectrumRealization",

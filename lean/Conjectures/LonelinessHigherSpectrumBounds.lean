@@ -69,7 +69,7 @@ def eightRows : List Row := [
 
 theorem seven_row_values (row : Row) (hr : row ∈ sevenRows) :
     value row.speeds = (row.numerator : ℝ) / (row.denominator : ℝ) := by
-  simp only [sevenRows, List.mem_cons, List.mem_singleton] at hr
+  simp only [sevenRows, List.mem_cons, List.not_mem_nil, or_false] at hr
   rcases hr with rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl
   · exact HigherExamples.seven_01_value
   · exact HigherExamples.seven_02_value
@@ -101,7 +101,7 @@ theorem seven_row_values (row : Row) (hr : row ∈ sevenRows) :
 
 theorem eight_row_values (row : Row) (hr : row ∈ eightRows) :
     value row.speeds = (row.numerator : ℝ) / (row.denominator : ℝ) := by
-  simp only [eightRows, List.mem_cons, List.mem_singleton] at hr
+  simp only [eightRows, List.mem_cons, List.not_mem_nil, or_false] at hr
   rcases hr with rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl
   · exact HigherExamples.eight_01_value
   · exact HigherExamples.eight_02_value
@@ -165,13 +165,13 @@ theorem denominator_le {p q a b : ℕ} (hq : 0 < q) (hb : 0 < b)
 theorem reduced_fraction_unique {p q a b : ℕ} (hq : 0 < q) (hb : 0 < b)
     (hpq : Nat.Coprime p q) (hab : Nat.Coprime a b)
     (h : (p : ℝ) / q = (a : ℝ) / b) : p = a ∧ q = b := by
+  have hcrossR : (p : ℝ) * b = (a : ℝ) * q :=
+    (div_eq_div_iff (by positivity) (by positivity)).mp h
+  have hcross : p * b = a * q := by exact_mod_cast hcrossR
   have heq : q = b := Nat.dvd_antisymm
     (denominator_dvd hb hq hpq h.symm) (denominator_dvd hq hb hab h)
   subst q
-  have hbR : (b : ℝ) ≠ 0 := by exact_mod_cast (Nat.ne_of_gt hb)
-  have hnum := congrArg (fun x : ℝ => x * (b : ℝ)) h
-  simp only [div_mul_cancel₀ _ hbR] at hnum
-  exact ⟨by exact_mod_cast hnum, rfl⟩
+  exact ⟨mul_right_cancel₀ (Nat.ne_of_gt hb) hcross, rfl⟩
 
 theorem consecutive_denominator_bound (n s p q : ℕ)
     (hn : 2 ≤ n) (hnmax : n ≤ 14) (hs : 1 ≤ s) (hq : 0 < q)
@@ -209,8 +209,8 @@ theorem exceptional_denominator_bound (W : List ℕ) (s p q : ℕ)
   · have hcop : Nat.Coprime s (8 * s + 1) :=
       (Nat.coprime_mul_right_add_right s 1 8).2 (by simp)
     have hfrac : (p : ℝ) / q = (s : ℝ) / ((8 * s + 1 : ℕ) : ℝ) := by
-      simpa only [hsone, ite_eq_right, Nat.cast_add, Nat.cast_mul, Nat.cast_ofNat,
-        Nat.cast_one] using hvalue.symm.trans hformula
+      push_cast
+      simpa [hsone] using hvalue.symm.trans hformula
     have hden := denominator_le hq (by omega : 0 < 8 * s + 1) hcop hfrac
     intro d hd
     rcases List.mem_append.mp hd with hd | hd
@@ -218,6 +218,88 @@ theorem exceptional_denominator_bound (W : List ℕ) (s p q : ℕ)
       omega
     · simp only [List.mem_singleton] at hd
       omega
+
+theorem known_seven_spectrum (ds : List ℕ) (hknown : KnownSeven ds) :
+    SevenSpectrumRealization.Proposed (value ds) := by
+  rcases hknown with ⟨s, hs, hperm⟩ | ⟨row, hr, hperm⟩
+  · exact Or.inl ⟨s, hs,
+      (CriticalFamilies.value_perm hperm).trans (seven_consecutive_family_value s hs)⟩
+  · have hv := (CriticalFamilies.value_perm hperm).trans (seven_row_values row hr)
+    obtain ⟨_, _, _, hn, hform⟩ := seven_row_arithmetic row hr
+    rcases hform with hstandard | ⟨ha, hb⟩ | ⟨ha, hb⟩ | ⟨ha, hb⟩
+    · exact Or.inl ⟨row.numerator, hn, by simpa [hstandard] using hv⟩
+    · exact Or.inr (Or.inl (by simpa [ha, hb] using hv))
+    · exact Or.inr (Or.inr (Or.inl (by simpa [ha, hb] using hv)))
+    · exact Or.inr (Or.inr (Or.inr (by simpa [ha, hb] using hv)))
+
+theorem exceptional_value_proposed (s : ℕ) (hs : 1 ≤ s) :
+    EightSpectrumRealization.Proposed
+      (if s = 1 then (2 / 17 : ℝ) else (s : ℝ) / (8 * (s : ℝ) + 1)) := by
+  by_cases hsone : s = 1
+  · refine ⟨2, by decide, ?_⟩
+    norm_num [hsone]
+  · exact ⟨s, hs, by simp [hsone]⟩
+
+theorem known_eight_spectrum (ds : List ℕ) (hknown : KnownEight ds) :
+    EightSpectrumRealization.Proposed (value ds) := by
+  rcases hknown with ⟨s, hs, hperm | hperm | hperm⟩ | ⟨row, hr, hperm⟩
+  · exact ⟨s, hs,
+      (CriticalFamilies.value_perm hperm).trans (eight_consecutive_family_value s hs)⟩
+  · have hv := (CriticalFamilies.value_perm hperm).trans
+      (ExceptionalEightFamily.first_all_positive_parameters s hs)
+    rw [hv]
+    exact exceptional_value_proposed s hs
+  · have hv := (CriticalFamilies.value_perm hperm).trans
+      (ExceptionalEightFamily.second_all_positive_parameters s hs)
+    rw [hv]
+    exact exceptional_value_proposed s hs
+  · have hv := (CriticalFamilies.value_perm hperm).trans (eight_row_values row hr)
+    obtain ⟨_, _, _, hn, hform⟩ := eight_row_arithmetic row hr
+    exact ⟨row.numerator, hn, by simpa [hform] using hv⟩
+
+theorem seven_reduced_forms (p q : ℕ) (hq : 0 < q) (hcop : Nat.Coprime p q)
+    (hproposed : SevenSpectrumRealization.Proposed ((p : ℝ) / q)) :
+    (1 ≤ p ∧ q = 7 * p + 1) ∨ (p = 3 ∧ q = 23) ∨
+      (p = 5 ∧ q = 37) ∨ (p = 9 ∧ q = 65) := by
+  rcases hproposed with ⟨s, hs, heq⟩ | heq | heq | heq
+  · have hcop' : Nat.Coprime s (7 * s + 1) :=
+      (Nat.coprime_mul_right_add_right s 1 7).2 (by simp)
+    have heq' : (p : ℝ) / q = (s : ℝ) / ((7 * s + 1 : ℕ) : ℝ) := by
+      simpa using heq
+    obtain ⟨hp, hq'⟩ := reduced_fraction_unique hq (by omega) hcop hcop' heq'
+    exact Or.inl ⟨by omega, by omega⟩
+  · exact Or.inr (Or.inl (reduced_fraction_unique hq (by decide) hcop (by decide) heq))
+  · exact Or.inr (Or.inr (Or.inl
+      (reduced_fraction_unique hq (by decide) hcop (by decide) heq)))
+  · exact Or.inr (Or.inr (Or.inr
+      (reduced_fraction_unique hq (by decide) hcop (by decide) heq)))
+
+theorem eight_reduced_form (p q : ℕ) (hq : 0 < q) (hcop : Nat.Coprime p q)
+    (hproposed : EightSpectrumRealization.Proposed ((p : ℝ) / q)) :
+    1 ≤ p ∧ q = 8 * p + 1 := by
+  obtain ⟨s, hs, heq⟩ := hproposed
+  have hcop' : Nat.Coprime s (8 * s + 1) :=
+    (Nat.coprime_mul_right_add_right s 1 8).2 (by simp)
+  have heq' : (p : ℝ) / q = (s : ℝ) / ((8 * s + 1 : ℕ) : ℝ) := by
+    simpa using heq
+  obtain ⟨hp, hq'⟩ := reduced_fraction_unique hq (by omega) hcop hcop' heq'
+  exact ⟨by omega, by omega⟩
+
+theorem seven_reduced_denominator_defect (ds : List ℕ) (hknown : KnownSeven ds)
+    (p q : ℕ) (hq : 0 < q) (hcop : Nat.Coprime p q)
+    (hvalue : value ds = (p : ℝ) / q) :
+    q - 7 * p = 1 ∨ q - 7 * p = 2 := by
+  have hp := known_seven_spectrum ds hknown
+  rw [hvalue] at hp
+  have hforms := seven_reduced_forms p q hq hcop hp
+  omega
+
+theorem eight_reduced_denominator_defect (ds : List ℕ) (hknown : KnownEight ds)
+    (p q : ℕ) (hq : 0 < q) (hcop : Nat.Coprime p q)
+    (hvalue : value ds = (p : ℝ) / q) : q = 8 * p + 1 := by
+  have hp := known_eight_spectrum ds hknown
+  rw [hvalue] at hp
+  exact (eight_reduced_form p q hq hcop hp).2
 
 theorem seven_speed_bound (ds : List ℕ) (hknown : KnownSeven ds)
     (p q : ℕ) (hq : 0 < q) (hvalue : value ds = (p : ℝ) / q) :
