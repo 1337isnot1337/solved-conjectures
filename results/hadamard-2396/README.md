@@ -8,7 +8,7 @@ A binary Legendre pair on an abelian group of order 1197 would yield such a matr
 
 For a third route, we show that a core with quotient of order four and the stipulated autocorrelations always admits a fixed border after normalization. At order 2396 this leaves 14 possible coset-sum patterns. A binary core realizing one of them with the required correlations is still needed. [Border reduction and attribution](BORDER.md)
 
-## Checked Lean component
+## Checked Lean components
 
 The arithmetic and integral-basis coefficient component of the automorphism
 argument has passed strict source checks, a transitive axiom audit, and
@@ -17,6 +17,12 @@ both norm exclusions, the fifth-power norm witness, and the coefficient
 congruence in the full cyclotomic ring of integers. The matrix/permutation
 assembly, quadratic descent, and separate ideal-class argument remain
 candidates. [Exact checked scope and receipt](../../docs/lean-status.md#hadamard-automorphism-arithmetic).
+
+The Fourier component has also passed these three gates. It constructs the
+actual character embedding and indicator Fourier matrix, proves their Gram
+identities, and derives the determinant quotient of norm 599³ from its residue
+obstructions. The full signed-automorphism theorem is still a candidate.
+[Fourier receipt and scope](../../docs/lean-status.md#hadamard-automorphism-fourier-component).
 
 ## Reproduce the finite checks
 

@@ -511,6 +511,11 @@ modules=(
   Conjectures.HadamardAutomorphismArithmetic
   Conjectures.HadamardAutomorphismCoefficients
   Conjectures.HadamardAutomorphismArithmeticRational
+  Conjectures.HadamardAutomorphismBinary
+  Conjectures.HadamardAutomorphismDeterminant
+  Conjectures.HadamardAutomorphismFourier
+  Conjectures.HadamardAutomorphismIndicator
+  Conjectures.HadamardAutomorphismDeterminantNorm
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

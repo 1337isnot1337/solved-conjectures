@@ -9,6 +9,13 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `HadamardAutomorphism.fourier_intertwine,
+    `HadamardAutomorphism.indicator_gram_599,
+    `HadamardAutomorphism.determinant_norm_of_gram,
+    `HadamardAutomorphism.binaryAutocorrelation_modEq_forces_constant,
+    `HadamardAutomorphism.det_divisible_of_two_primes,
+    `HadamardAutomorphism.indicator_exists_nonconstant,
+    `HadamardAutomorphism.determinant_quotient_norm_cube,
     `HadamardAutomorphism.residue_order,
     `HadamardAutomorphism.unit_order,
     `HadamardAutomorphism.no_norm_prime,

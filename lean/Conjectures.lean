@@ -113,3 +113,6 @@ import Conjectures.FranklLargeTheorem
 
 import Conjectures.HadamardAutomorphismArithmeticRational
 import Conjectures.HadamardAutomorphismCoefficients
+
+import Conjectures.HadamardAutomorphismDeterminantNorm
+import Conjectures.HadamardAutomorphismBinary

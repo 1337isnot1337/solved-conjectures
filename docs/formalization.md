@@ -319,3 +319,9 @@ counts, cycle labels, actual Fourier matrix, binary support nonvanishing,
 determinant divisibility, and cyclotomic descent rather than assuming these
 conclusions. The separate class-order-five argument also remains unfinished.
 Li has not been started.
+
+The Fourier component also passed all three gates at `ee1be6e0`: six local
+modules and 32 audited project theorems. Its five proof files are registered;
+its literal matrix construction, Gram identity, and determinant quotient are
+checked. [Receipt](verification/hadamard-automorphism-fourier-ee1be6e0.json).
+The full Hadamard obstruction and separate ideal-class result remain candidates.

@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-19 — Checked Hadamard automorphism Fourier component
+
+Registered the explicit Fourier, binary overlap, indicator, and determinant
+components after strict source checks, a 32-theorem transitive axiom audit,
+and independent pinned-kernel replay of their six-module closure at `ee1be6e0`.
+The full automorphism and ideal-class statements remain candidates.
+[Receipt](docs/verification/hadamard-automorphism-fourier-ee1be6e0.json).
+
 ## 2026-11-19 — Checked Hadamard automorphism arithmetic
 
 Registered the arithmetic and integral-basis coefficient component of the

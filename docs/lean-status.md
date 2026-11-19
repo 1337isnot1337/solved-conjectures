@@ -37,7 +37,7 @@ never additional Lean axioms.
 | CUT arithmetic periodicity | Complete | The uniform terminating decision test and exhaustive candidate enumeration are proved for every finite cut set and proposed arithmetic tail. Compact quotient/residue certificates identify both actual example games at every pile size and prove least eventual period 12, saltus 8, and earliest start 7, hence positive-pile preperiod 6. |
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
-| Hadamard order-2396 automorphism obstruction | Partial: arithmetic and coefficient component checked | The actual order of 599 modulo479, integer and rational norm exclusions, fifth-power witness, and full ring-of-integers coefficient congruences are checked. The matrix, permutation, and cyclotomic descent assembly remains a candidate. The alternative ideal-class assertion and sequence/border results remain separate obligations. |
+| Hadamard order-2396 automorphism obstruction | Partial: arithmetic, coefficient, and Fourier components checked | The actual residue order, integer/rational norm exclusions, integral-basis coefficient congruences, explicit Fourier compression, indicator Gram identity, and determinant quotient of norm 599³ are checked. The permutation and cyclotomic assembly, the alternative ideal-class assertion, and the sequence/border results remain separate obligations. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Frankl generating families | Partial: full large-generator bound complete | The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete. |
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
@@ -1360,3 +1360,22 @@ The full signed-automorphism obstruction is still being checked under
 Its candidate code is outside the accepted roots. The class-order-five
 assertion in the alternative proof is not established by the numerical
 witness alone and remains unfinished. Hadamard existence at 2396 remains open.
+
+## Hadamard automorphism Fourier component
+
+At `ee1be6e0e00c49beadf5f3a563473f86346bf618`, the six-module Fourier
+candidate closure passed strict compilation, a 32-theorem transitive axiom
+audit, and independent pinned-kernel replay with unchanged sources.
+[Hosted check](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44479208216/job/135407227160) ·
+[Exact receipt](verification/hadamard-automorphism-fourier-ee1be6e0.json).
+
+The five proof files `HadamardAutomorphismBinary`,
+`HadamardAutomorphismDeterminant`, `HadamardAutomorphismFourier`,
+`HadamardAutomorphismIndicator`, and `HadamardAutomorphismDeterminantNorm`
+are registered. They construct the literal character embedding and Fourier
+matrix, prove the inherited Gram equation, replace sign entries by their
+negative-position indicators, and prove determinant divisibility and the
+norm 599³ quotient from the stated residue obstructions. The binary overlap
+lemma is also checked. These are general components; the actual signed
+Hadamard automorphism theorem still requires the permutation, cyclotomic,
+and prime-ideal nonvanishing assembly. No full obstruction is marked complete.
