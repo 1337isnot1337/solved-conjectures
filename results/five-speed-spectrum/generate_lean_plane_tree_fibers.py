@@ -16,11 +16,15 @@ from generate_lean_plane_fibers import certificate_text, generate
 HERE = Path(__file__).resolve().parent
 
 
-def render(prime, index, certificates, block_size):
+def render(prime, index, certificates, block_size, check_style="forall", literal_code=True):
+    if check_style not in {"forall", "bool"}:
+        raise ValueError(f"Unknown check style: {check_style}")
     namespace = f"Loneliness.FiveSpeedCertificate.PlaneTreeFibers.M{index}P{prime}"
     scalar = f"ScalarTrees.P{prime}"
+    support = ("LonelinessFiveSpeedPlaneFiberBoolBlocks" if check_style == "bool"
+               else "LonelinessFiveSpeedPlaneFiberTreeDefs")
     pieces = [
-        "import Conjectures.LonelinessFiveSpeedPlaneFiberTreeDefs\n",
+        f"import Conjectures.{support}\n",
         f"import Conjectures.LonelinessFiveSpeedScalarTreeMask{prime:04d}\n\n",
         "/-! Generated affine fibers, checked in separate finite intervals. -/\n",
         "set_option maxRecDepth 100000\nset_option maxHeartbeats 0\n",
@@ -33,17 +37,31 @@ def render(prime, index, certificates, block_size):
         count = len(group)
         stop = start + count
         suffix = f"{start:04d}"
+        declaration = "def" if literal_code else "noncomputable def"
         pieces += [
-            f"def certificates{suffix} : Array FiberCertificate := #[\n",
+            f"{declaration} certificates{suffix} : Array FiberCertificate := #[\n",
             ",\n".join("  " + certificate_text(c) for c in group),
             "]\n\n",
-            f"theorem checked{suffix} : ∀ j : Fin {count},\n",
-            f"    canonicalTreeFiberCheck {prime} {scalar}.tree {index}\n",
-            f"      ⟨{start} + j.val, by omega⟩\n",
-            f"      (certificates{suffix}[j.val]?.getD (.whole 0)) = true := by\n",
-            "  decide +kernel\n\n",
+        ]
+        if check_style == "bool":
+            pieces += [
+                f"theorem checked{suffix} : canonicalTreeFiberBoolBlockCheck\n",
+                f"    {prime} {scalar}.tree {index} {start} {count} certificates{suffix} = true := by\n",
+                "  decide +kernel\n\n",
+            ]
+            soundness = "checked_canonical_tree_projective_bool_block"
+        else:
+            pieces += [
+                f"theorem checked{suffix} : ∀ j : Fin {count},\n",
+                f"    canonicalTreeFiberCheck {prime} {scalar}.tree {index}\n",
+                f"      ⟨{start} + j.val, by omega⟩\n",
+                f"      (certificates{suffix}[j.val]?.getD (.whole 0)) = true := by\n",
+                "  decide +kernel\n\n",
+            ]
+            soundness = "checked_canonical_tree_projective_block"
+        pieces += [
             f"theorem sound{suffix} : CanonicalProjectiveBlock {prime} {index} {start} {stop} :=\n",
-            f"  checked_canonical_tree_projective_block {prime} {scalar}.tree {index}\n",
+            f"  {soundness} {prime} {scalar}.tree {index}\n",
             f"    {start} {count} (by decide) certificates{suffix} {scalar}.checked checked{suffix}\n\n",
         ]
         blocks.append((start, stop, suffix))
@@ -71,6 +89,9 @@ def main():
     parser.add_argument("--json-output", type=Path, required=True)
     parser.add_argument("--lean-dir", type=Path, required=True)
     parser.add_argument("--block-size", type=int, default=32)
+    parser.add_argument("--check-style", choices=["forall", "bool"], default="forall")
+    parser.add_argument("--no-literal-code", action="store_true",
+                        help="Keep literal definitions kernel-reducible without executable compilation")
     args = parser.parse_args()
     if args.block_size <= 0:
         parser.error("--block-size must be positive")
@@ -85,7 +106,8 @@ def main():
     else:
         certificates = generate(args.prime, cover[args.map_index])
     assert len(certificates) == args.prime + 2
-    content, block_count = render(args.prime, args.map_index, certificates, args.block_size)
+    content, block_count = render(args.prime, args.map_index, certificates, args.block_size,
+                                  args.check_style, not args.no_literal_code)
     name = f"LonelinessFiveSpeedPlaneTreeFiber{args.map_index}P{args.prime:04d}"
     args.lean_dir.mkdir(parents=True, exist_ok=True)
     (args.lean_dir / (name + ".lean")).write_text(content)
@@ -95,6 +117,8 @@ def main():
         "prime": args.prime, "map": args.map_index,
         "cover_sha256": sha256(raw).hexdigest(),
         "fibers": len(certificates), "blocks": block_count, "block_size": args.block_size,
+        "check_style": args.check_style,
+        "literal_code": not args.no_literal_code,
         "whole_fibers": sum(c["kind"] == "whole" for c in certificates),
         "tokens": sum(lengths), "max_tokens": max(lengths),
         "certificates": certificates, "module": "Conjectures." + name,
