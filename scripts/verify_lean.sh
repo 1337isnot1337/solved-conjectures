@@ -793,6 +793,53 @@ modules=(
   Conjectures.HadamardLegendreInvolutions
   Conjectures.HadamardLegendreReduction
   Conjectures.HadamardLegendreInvariantQuotient
+  Conjectures.FranklTreeBall
+  Conjectures.FranklTreeCounts
+  Conjectures.FranklTreeGluing
+  Conjectures.FranklTreeUnfolding
+  Conjectures.FranklTreeUnfoldingIso
+  Conjectures.FranklTreeConfigurations
+  Conjectures.FranklTreeCone
+  Conjectures.FranklTreeSpan
+  Conjectures.FranklTreeRoot
+  Conjectures.FranklTreeCertificate
+  Conjectures.FranklTreeConfigurationMessages
+  Conjectures.FranklTreeBranchMessages
+  Conjectures.FranklTreeOccupation
+  Conjectures.FranklBoundaryFibers
+  Conjectures.FranklBoundaryConfigurations
+  Conjectures.FranklTreeConfigurationIso
+  Conjectures.FranklBoundaryAveraging
+  Conjectures.FranklBoundaryConfigurationHelpers
+  Conjectures.FranklBoundaryBall
+  Conjectures.FranklIncidenceFinite
+  Conjectures.FranklHighGirthGraphCore
+  Conjectures.FranklTreeDataK03
+  Conjectures.FranklTreeBoundK03
+  Conjectures.FranklTreeDataK04
+  Conjectures.FranklTreeBoundK04
+  Conjectures.FranklTreeDataK05
+  Conjectures.FranklTreeBoundK05
+  Conjectures.FranklTreeDataK06
+  Conjectures.FranklTreeBoundK06
+  Conjectures.FranklTreeDataK07
+  Conjectures.FranklTreeBoundK07
+  Conjectures.FranklTreeDataK08
+  Conjectures.FranklTreeBoundK08
+  Conjectures.FranklTreeDataK09
+  Conjectures.FranklTreeBoundK09
+  Conjectures.FranklTreeDataK10
+  Conjectures.FranklTreeBoundK10
+  Conjectures.FranklTreeDataK11
+  Conjectures.FranklTreeBoundK11
+  Conjectures.FranklTreeDataK12
+  Conjectures.FranklTreeBoundK12
+  Conjectures.FranklTreeDataK13
+  Conjectures.FranklTreeBoundK13
+  Conjectures.FranklTreeDataK14
+  Conjectures.FranklTreeBoundK14
+  Conjectures.FranklTreeSmallDegrees
+  Conjectures.FranklHighGirthTheorem
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

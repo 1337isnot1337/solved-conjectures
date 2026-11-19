@@ -41,7 +41,7 @@ never additional Lean axioms.
 | Lonely-runner two insertions | Not formalized | The arbitrary two-speed insertion theorem, acceleration bridge, unbounded branch, finite cases, and three-insertion obstruction are not registered in the accepted package. Published candidate sources remain under issue 12. |
 | Erdős–Gyárfás abelian covers | Complete for the stated voltage-cover theorem and sharpness | Every seven-label voltage cover of the singly subdivided tetrahedron over every abelian group contains an actual simple cycle of length 4, 8, 16, or 32. The 64-node literal certificate, its collision-branch soundness, and voltage normalization are checked. The connected 95-vertex cyclic cover attains least power-of-two cycle length 32. The general minimum-degree-three conjecture is outside this result. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
-| Frankl generating families | Partial: large-generator bound and cyclic components checked | The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The full Vaughan shortcut, all cyclic span-four families on at most six sites, conditional residual cases at periods seven through ten, and exact local weight-checker semantics are also checked. The conditional all-period assembly, 48-case literal pilot, and exact injective weight transport are checked. The complete cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete. |
+| Frankl generating families | Partial: both frequency bounds complete; cyclic span-four pending | The all-point high-girth bound is checked for every `k ≥ 3`: incidence girth at least 16 and exactly three generators through each point imply frequency at least `518208/1000000` among distinct unions. The `k ≥ 15` linear-family bound is also checked with frequency `657/1000`. Both include the empty union. The complete Vaughan shortcut, small-cycle cases, local checker semantics, and conditional all-period assembly are checked. The remaining cyclic span-four graph/transport certificates and unconditional assembly are still being verified. |
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
 | Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
@@ -2068,3 +2068,38 @@ passing hashes. The unchanged JSON receipts are archived above. This adds
 31 proof modules and 17 required declarations to the accepted roots,
 sequential prebuild list, and audit, for 787 proof modules plus the two roots.
 The full merged-package verification remains a separate gate.
+
+## Complete Frankl high-girth frequency theorem
+
+`FranklHighGirth.high_girth_generator_frequency` proves the full
+`518208/1000000` bound for every point of a finite `k`-uniform generating
+family, for every `k ≥ 3`, with exactly three indexed generators through each
+point and no incidence cycle shorter than sixteen. The counted family
+contains each distinct union once, including the empty union. Finite ground
+is derived from the stated regularity assumptions. The small-degree cases
+use all twelve checked K03–K14 cone certificates and actual graph-ball
+configuration counts; the large-degree case derives linearity from the
+girth assumption and applies the accepted `657/1000` bound.
+
+The graph proof identifies the radius-seven incidence ball with its recursive
+tree, transports actual boundary-conditioned independent-set configurations,
+and averages the finite fiber bounds. There is no unproved recurrence,
+counting identity, finite-certificate assertion, or numerical bound in the
+final theorem's hypotheses. The `girth` and extended-`egirth` formulations
+and the frequency bound after removing the empty union are also checked.
+
+At source commit `f421f4434ffc8117a57a14b99c19818e76dcfd8e`, all 64 project
+modules passed fresh strict compilation. The explicit import-all audit
+covered 1,363 owned declarations, including 909 theorems, and all 35 required
+endpoints. Exact replay with the pinned, unchanged stock checker passed in
+72.750 seconds, with peak RSS 12,834,268 KiB. Every recorded source, object
+facet, compiler, checker, and gate hash was unchanged after checking.
+
+[Original receipt](verification/frankl-components-44516856625/high-girth-theorem.json) ·
+[Hosted run](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44516856625).
+The original receipt SHA-256 is
+`e872e48c8199c0c713d6a9cbc50e3d9ef42d8e32ed62e418ddcd282e104f65cf`.
+The 47 newly registered modules and 34 new required endpoints join the shared
+package. Its full merged-package build and replay are a separate gate.
+The cyclic span-four theorem remains incomplete, so the Frankl result entry
+remains partial. Li remains last.

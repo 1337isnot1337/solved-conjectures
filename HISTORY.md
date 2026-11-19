@@ -1,5 +1,20 @@
 # History
 
+## 2026-11-19 — Complete Frankl high-girth frequency theorem
+
+Registered the full all-point `518208/1000000` distinct-union bound for every
+uniform generator size at least three, under three-regularity and incidence
+girth at least sixteen. Actual boundary configurations, finite fiber
+averaging, all twelve small-degree certificates, and the large-degree
+linearity consequence discharge every proof input. Both girth formulations
+and removal of the empty union are included.
+
+The exact 64-module closure passed fresh strict sources, the all-owned
+1,363-declaration axiom audit, and pinned stock-kernel replay. The 47 new
+modules and 34 new required endpoints are registered; the full merged gate
+remains separate. The cyclic span-four result and the overall campaign
+remain incomplete. [Checked scope and receipt](docs/lean-status.md#complete-frankl-high-girth-frequency-theorem).
+
 ## 2026-11-19 — Complete conditional Hadamard border construction
 
 Registered the full fixed-border construction from the original sign rows

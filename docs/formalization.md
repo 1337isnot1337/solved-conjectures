@@ -583,3 +583,23 @@ overlap. All fifty recorded paths match, and 31 new modules with
 17 required declarations are registered. The accepted prebuild now contains
 787 proof modules and two roots. [Exact scope and receipts](lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns).
 The full merged gate remains separate; Li remains last.
+
+## Complete Frankl high-girth bound — 19 November 2026
+
+Registered the full all-point `518208/1000000` distinct-union frequency
+theorem for every `k ≥ 3` under three-regularity and incidence girth at least
+sixteen. The proof connects the actual boundary-conditioned graph counts to
+all K03–K14 numerical certificates and uses the accepted large-generator
+theorem for `k ≥ 15`. The empty union is included; its removal and both girth
+formulations are proved as well.
+
+The exact 64-module closure passed fresh strict sources, an all-owned
+1,363-declaration axiom audit with 35 required endpoints, and unchanged
+stock-kernel replay at `f421f4434ffc8117a57a14b99c19818e76dcfd8e`.
+The 47 new modules and 34 new required endpoints are registered after checking
+the current source blobs against that receipt. The merged full-package gate
+remains separate. Cyclic span-four verification continues in issue 20; the
+Frankl directory and the overall campaign remain incomplete. Li remains last.
+
+[Exact receipt](verification/frankl-components-44516856625/high-girth-theorem.json) ·
+[Scope](lean-status.md#complete-frankl-high-girth-frequency-theorem).

@@ -12,7 +12,7 @@ Run commands from the repository root with Python assertions enabled (do not use
 
 The [Hadamard order-2396 replay](../results/hadamard-2396/) compares the C++ output with the archived pairs and runs a separate Python audit.
 
-The partial-result entries contain their replay commands for the [Frankl generator theorems](../results/frankl-generator-families/), [two-speed insertion](../results/lonely-runner-two-insertions/) and [abelian cover certificate and sharpness example](../results/erdos-gyarfas-abelian-covers/). They have no Lean formalization.
+The partial-result entries contain their replay commands for the [Frankl generator theorems](../results/frankl-generator-families/), [two-speed insertion](../results/lonely-runner-two-insertions/) and [abelian cover certificate and sharpness example](../results/erdos-gyarfas-abelian-covers/). Their current formalized scope and remaining dependencies are recorded in the [Lean status](lean-status.md).
 
 ## Computational checks
 
@@ -141,3 +141,20 @@ A skipped job is not a new proof receipt. Each unregistered candidate has
 its own complete closure checks. Negative controls check transitive public
 imports, missing-source handling, newly registered candidates, and stale
 dependent-object rejection after a candidate source error.
+
+## Frankl high-girth theorem
+
+Run `python3 scripts/verify_frankl_high_girth_theorem.py --jobs 4` from the
+repository root after preparing the pinned Lean package. This focused gate
+rebuilds the exact 64-module theorem closure with warnings treated as errors,
+audits every owned declaration against the standard three-axiom whitelist,
+requires 35 named endpoints, and replays every project module with the
+unchanged stock checker. It rejects changed source, object, compiler,
+checker, or gate hashes.
+
+[Successful hosted run](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44516856625) ·
+[Original receipt](verification/frankl-components-44516856625/high-girth-theorem.json).
+This verifies the complete high-girth frequency theorem. The cyclic
+span-four theorem has separate finite graph, transport, coverage, and final
+assembly gates. The registered full package is checked by
+`scripts/verify_lean.sh`.
