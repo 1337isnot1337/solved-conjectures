@@ -50,7 +50,7 @@ These notes are unrefereed. Computational checks and Lean verification are disti
 - [Frankl’s union-closed sets conjecture](results/frankl-generator-families/). A four-position generator theorem and a frequency bound for regular, high-girth incidence graphs.
 - [Lonely Runner Conjecture](results/lonely-runner-two-insertions/). Two arbitrary speeds can be adjoined to every Goddyn–Wong simultaneous acceleration.
 - [Erdős–Gyárfás power-of-two cycles](results/erdos-gyarfas-abelian-covers/). A sharp cycle-length bound for abelian covers of a singly subdivided tetrahedron.
-- [Hadamard existence, order 2396](results/hadamard-2396/). Order 479 is excluded from the automorphism group of any candidate matrix. The entry also gives sequence restrictions and a fixed border. Existence at this order remains open. The arithmetic, Fourier, permutation, and quadratic class-order components are Lean-checked; the full obstruction remains pending. [Checked Lean components](docs/lean-status.md#hadamard-automorphism-arithmetic).
+- [Hadamard existence, order 2396](results/hadamard-2396/). Order 479 is excluded from the automorphism group of any candidate matrix. The entry also gives sequence restrictions and a fixed border. Existence at this order remains open. The full signed-automorphism theorem and both cyclotomic norm proofs are Lean-verified; the sequence and border results remain pending. [Complete automorphism proof](docs/lean-status.md#complete-hadamard-order-479-automorphism-obstruction).
 
 ## Layout
 

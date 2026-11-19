@@ -308,40 +308,34 @@ See [the source-hash receipt](frankl-large-hosted-receipt.json).
 
 [Issue 21](https://github.com/1337isnot1337/solved-conjectures/issues/21) owns
 `HadamardAutomorphism*.lean`, separately from the sequence and border work
-in issue 17. The arithmetic and integral-basis coefficient component passed
-strict sources, the 38-theorem transitive axiom audit, and independent
-five-module pinned-kernel replay at `56cb125e`. Its four proof files are now
-registered. [Receipt](verification/hadamard-automorphism-arithmetic-56cb125e.json).
+in issue 17. The signed-automorphism theorem and both norm-obstruction proofs
+are complete. Their actual matrix, signed-group, field, integer, and ideal
+definitions are connected internally; the final statements retain no
+unproved structural or number-theoretic hypotheses.
 
-The complete signed-permutation theorem and the literal automorphism-group
-cardinality statement remain candidates. Their checks derive the fixed-point
-counts, cycle labels, actual Fourier matrix, binary support nonvanishing,
-determinant divisibility, and cyclotomic descent rather than assuming these
-conclusions. The universal class-order and relative-norm argument remains
-unfinished; the constructed-prime endpoint is checked below.
-Li has not been started.
+The registered source, standard-axiom, and unchanged pinned-kernel receipts are:
 
-The Fourier component also passed all three gates at `ee1be6e0`: six local
-modules and 32 audited project theorems. Its five proof files are registered;
-its literal matrix construction, Gram identity, and determinant quotient are
-checked. [Receipt](verification/hadamard-automorphism-fourier-ee1be6e0.json).
-The full Hadamard obstruction and universal ideal-class alternative remain candidates.
+| Component | Snapshot | Modules replayed | Project theorems audited | Receipt |
+| --- | --- | ---: | ---: | --- |
+| Arithmetic and integral-basis coefficients | `56cb125e` | 5 | 38 | [Receipt](verification/hadamard-automorphism-arithmetic-56cb125e.json) |
+| Literal Fourier matrix and determinant quotient | `ee1be6e0` | 6 | 32 | [Receipt](verification/hadamard-automorphism-fourier-ee1be6e0.json) |
+| Signed normalization and cycle coordinates | `e9a9bb45` | 7 | 100 | [Receipt](verification/hadamard-automorphism-permutation-e9a9bb45.json) |
+| Quadratic field and constructed-prime class order | `ae7871fc` | 9 | 111 | [Receipt](verification/hadamard-automorphism-class-order-ae7871fc.json) |
+| Cyclotomic unit descent and norm exclusion | `7098a0e8` | 12 | 128 | [Receipt](verification/hadamard-automorphism-cyclotomic-7098a0e8.json) |
+| Complete matrix and signed-group assembly | `fb6b6e06` | 28 | 297 | [Receipt](verification/hadamard-automorphism-assembly-fb6b6e06.json) |
+| Independent relative-ideal-norm proof | `fb6b6e06` | 15 | 164 | [Receipt](verification/hadamard-automorphism-class-alternative-fb6b6e06.json) |
+| Quadratic-field uniqueness and integer-coordinate iff | `0a1deef7` | 16 | 157 | [Receipt](verification/hadamard-automorphism-quadratic-model-0a1deef7.json) |
 
+The closures overlap; these counts are not additive. Their union has 37 proof
+source modules, excluding import-only candidate wrappers. All are registered
+in the root imports, required-theorem audit, and replay list. The full theorem
+uses Mathlib's actual Hadamard predicate, and the quotient cardinality result
+applies to every subgroup of the actual signed automorphism group.
 
-The permutation component passed all three gates at `e9a9bb45`: seven local
-modules and 100 audited project theorems. Its six proof files are registered,
-covering diagonal normalization, fixed-point and cycle counts, cyclic labels,
-integer transport, and the actual signed automorphism subgroup.
-[Receipt](verification/hadamard-automorphism-permutation-e9a9bb45.json).
-The cyclotomic descent and final assembly remain candidates.
-
-
-The quadratic field and constructed-prime class-order component passed all
-three gates at `ae7871fc`: nine modules and 111 audited project theorems.
-Six new proof files are registered. The checked result constructs a prime
-above 599 with norm 599 and exact ideal-class order five in the actual
-quadratic fixed field; it also proves the field's coordinate and norm formulas.
-[Receipt](verification/hadamard-automorphism-class-order-ae7871fc.json).
-The separate `class_alternative` target checks the universal prime-pair result
-and relative ideal-norm proof. Neither that target nor the full matrix assembly
-is marked complete.
+The quadratic-field uniqueness and exact integer-coordinate equivalence are
+also checked. The separate sequence, quotient enumeration, and fixed-border
+statements remain under issue 17. The later fixed-border common
+multiplier bound and 151-orbit statement are now claimed under
+[issue 22](https://github.com/1337isnot1337/solved-conjectures/issues/22), in
+new `HadamardBorderSymmetry*.lean` files. These do not establish Hadamard
+existence at 2396. Li has not been started.

@@ -122,3 +122,13 @@ import Conjectures.HadamardAutomorphismPermutationIntegral
 import Conjectures.HadamardAutomorphismPermutationCycles
 
 import Conjectures.HadamardAutomorphismClassOrder
+
+import Conjectures.HadamardAutomorphismDescent
+import Conjectures.HadamardAutomorphismCyclotomicPrimes
+import Conjectures.HadamardAutomorphismCyclotomicCharacter
+
+import Conjectures.HadamardAutomorphismGroup
+import Conjectures.HadamardAutomorphismRelativeNorm
+
+import Conjectures.HadamardAutomorphismQuadraticConverse
+import Conjectures.HadamardAutomorphismQuadraticUnique

@@ -37,7 +37,10 @@ never additional Lean axioms.
 | CUT arithmetic periodicity | Complete | The uniform terminating decision test and exhaustive candidate enumeration are proved for every finite cut set and proposed arithmetic tail. Compact quotient/residue certificates identify both actual example games at every pile size and prove least eventual period 12, saltus 8, and earliest start 7, hence positive-pile preperiod 6. |
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
-| Hadamard order-2396 automorphism obstruction | Partial: arithmetic, Fourier, permutation, and quadratic class-order components checked | These components include the integral-basis congruences, actual Fourier construction, cycle reindexing, quadratic field model, and construction of a prime above 599 whose ideal class has order five. The full signed-automorphism theorem, the universal prime-pair and relative-norm alternative, and the sequence/border results remain separate obligations. |
+| Hadamard order-2396 automorphism obstruction | Complete for the signed automorphism theorem and both norm-obstruction proofs | For every real Hadamard matrix of order 2396, the full signed row/column automorphism group has no element of order 479, and 479 divides neither its cardinality nor the cardinality of any subgroup quotient. The proof constructs the actual Fourier matrix and forbidden norm integer. Both the unit-descent and independent ideal-class norm exclusions are checked. The quadratic-subfield uniqueness and exact integer-coordinate characterization are also checked. |
+| Hadamard sequence and fixed-border results | Not yet registered | The common multiplier bound for length 1197 pairs, fixed order-eleven exclusion at length 598, quotient/no-lift certificates, arbitrary order-four quotient normalization and border, fourteen baseline patterns, and later common-multiplier/orbit tail remain obligations under issues 17 and 22. Hadamard existence at order 2396 is not asserted. |
+| Lonely-runner two insertions | Candidates only | The arbitrary two-speed insertion theorem, acceleration bridge, unbounded branch, finite cases, and three-insertion obstruction are not registered in the accepted package. The published candidate sources remain under issue 12. |
+| Erdős–Gyárfás abelian covers | Not formalized | The arbitrary abelian-cover cycle theorem and sharp connected 95-vertex example remain under issue 18. The general minimum-degree-three conjecture is outside this result. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Frankl generating families | Partial: full large-generator bound complete | The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete. |
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
@@ -1355,11 +1358,8 @@ The arithmetic certificate uses ordinary kernel reduction, with no native
 computation axiom. The permitted transitive axioms are only `propext`,
 `Classical.choice`, and `Quot.sound`.
 
-The full signed-automorphism obstruction is still being checked under
-[issue 21](https://github.com/1337isnot1337/solved-conjectures/issues/21).
-Its candidate code is outside the accepted roots. An actual prime of ideal-class
-order five has now been constructed and checked in the component below;
-the universal prime-pair and relative-norm alternative still await their gates.
+The full signed-automorphism obstruction and the independent ideal-class proof
+are checked below under [issue 21](https://github.com/1337isnot1337/solved-conjectures/issues/21).
 Hadamard existence at 2396 remains open.
 
 ## Hadamard automorphism Fourier component
@@ -1377,9 +1377,8 @@ are registered. They construct the literal character embedding and Fourier
 matrix, prove the inherited Gram equation, replace sign entries by their
 negative-position indicators, and prove determinant divisibility and the
 norm 599³ quotient from the stated residue obstructions. The binary overlap
-lemma is also checked. These are general components; the actual signed
-Hadamard automorphism theorem still requires the cyclotomic descent and
-prime-ideal nonvanishing assembly. No full obstruction is marked complete.
+lemma is also checked. These general components are connected to the actual signed Hadamard
+automorphism theorem by the completed assembly below.
 
 
 ## Hadamard automorphism permutation component
@@ -1398,8 +1397,8 @@ permutation by explicit diagonal signs, derive one fixed index and five
 479-cycles in each permutation at order 2396, construct compatible cyclic
 labels, and transport the real sign matrix into a number field's ring of
 integers. They also construct the full signed row/column automorphism subgroup.
-The claim that its order is coprime to 479 still awaits the cyclotomic descent
-and final assembly; this component alone does not prove that obstruction.
+The completed assembly below proves that its order is coprime to 479. This
+permutation component alone does not prove that obstruction.
 
 
 ## Hadamard quadratic field and class-order component
@@ -1422,8 +1421,107 @@ constructs a prime ideal above 599 with norm 599 and proves that its ideal class
 has exact order five. The proof establishes principality of the fifth power
 and nonprincipality of the prime itself.
 
-The checked endpoint is existential: it constructs such a prime. The stronger
-statement for every prime above 599, the distinct conjugate pair, and the
-independent relative-ideal-norm obstruction remain in the separate
-`class_alternative` candidate. The full signed-automorphism theorem is also
-still a candidate.
+This earlier component constructs such a prime. The stronger universal
+prime-pair and independent relative-ideal-norm results have since passed the
+separate checks recorded below, as has the full signed-automorphism theorem.
+
+
+## Hadamard cyclotomic norm obstruction
+
+At `7098a0e8dccd5273be61bdb4108529dbcd169544`, the twelve-module
+cyclotomic closure passed strict source checks, a transitive axiom audit of
+128 project theorems, and independent replay with the unchanged pinned kernel.
+The source files and verification inputs were unchanged throughout the checks.
+[Hosted check](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44485841643/job/135429136270) ·
+[Exact receipt](verification/hadamard-automorphism-cyclotomic-7098a0e8.json).
+
+Five more proof files are registered: `HadamardAutomorphismCyclotomicCharacter`,
+`HadamardAutomorphismCyclotomicPrimes`, `HadamardAutomorphismDescentIdeals`,
+`HadamardAutomorphismDescentUnits`, and `HadamardAutomorphismDescent`.
+They construct the integer-valued primitive character and prove that the two
+primes above 599 are distinct, conjugate, and unramified, with intersection
+equal to the principal ideal generated by 599. Frobenius fixes those primes.
+For a hypothetical integer of conjugate norm 599³, the proof constructs the
+Frobenius unit ratio, proves it is a root of unity, removes its sign, and twists
+the integer into the actual quadratic fixed field. The checked quadratic norm
+exclusion then proves `cyclotomic_norm_cube_impossible`. No descent or norm
+obstruction is assumed as a hypothesis.
+
+The completed signed-matrix assembly and independent class-group proof are
+recorded below. The additional uniqueness and exact integer-coordinate
+endpoints are checked in the final component below. Hadamard existence at 2396 is not asserted.
+
+
+## Complete Hadamard order-479 automorphism obstruction
+
+At `fb6b6e068efa37c5b5834b8f969211c951cac2d5`, the assembly closure
+passed strict source checks, a transitive axiom audit of 297 project theorems,
+and independent pinned-kernel replay of all 28 local modules. Source and gate
+hashes matched the published snapshot and remained unchanged during checking.
+[Hosted check](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44486671857/job/135431911100) ·
+[Exact receipt](verification/hadamard-automorphism-assembly-fb6b6e06.json).
+
+`HadamardAutomorphismAutocorrelation`, `HadamardAutomorphismMatrixObstruction`,
+`HadamardAutomorphismMain`, and `HadamardAutomorphismGroup` complete the chain.
+Starting from any real matrix with Mathlib's `Matrix.IsHadamard` predicate and
+index-set cardinality 2396, the proof normalizes the signed symmetry, derives
+one fixed point and five 479-cycles, reindexes the actual matrix, constructs
+the indicator Fourier matrix, proves nonzero reductions at both primes, and
+constructs an integer of the forbidden conjugate norm 599³. No symmetry
+normal form, Fourier identity, prime nonvanishing, or norm obstruction is an
+extra input to the final theorem.
+
+The registered endpoints include `hadamard_signed_pair_order_ne_479`,
+`isHadamard_automorphism_card_not_dvd_479`, and
+`isHadamard_automorphism_quotient_card_not_dvd_479`. The group carrier contains
+all signed row/column permutation pairs preserving the given matrix. The
+quotient statement holds for the coset cardinality of every subgroup, and
+therefore covers the common-sign quotient.
+
+This completes the automorphism theorem. The sequence and fixed-border
+results in the same result directory remain separate obligations.
+
+## Complete independent ideal-class norm obstruction
+
+At the same snapshot, the independent class-group closure passed strict
+sources, a 164-theorem transitive axiom audit, and independent pinned-kernel
+replay of all 15 local modules, with unchanged sources and gate inputs.
+[Hosted check](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44486671857/job/135431911435) ·
+[Exact receipt](verification/hadamard-automorphism-class-alternative-fb6b6e06.json).
+
+Five additional files are registered: `HadamardAutomorphismClassArithmetic`,
+`HadamardAutomorphismClassPair`, `HadamardAutomorphismNormFactorization`,
+`HadamardAutomorphismQuadraticIntegers`, and `HadamardAutomorphismRelativeNorm`.
+Every prime above 599 in the actual quadratic fixed field has norm 599 and
+ideal-class order five. The proof constructs the distinct conjugate pair and
+its inverse classes. A hypothetical integer of conjugate norm 599³ gives a
+principal ideal factorization with exponents a+b=3. The relative ideal norm
+has residue degree 239 and forces the class exponent 239(a−b) to vanish,
+contradicting the order-five calculation. The endpoint
+`cyclotomic_norm_cube_impossible_by_class_group` does not import or call the
+unit-descent norm obstruction.
+
+The final quadratic-model component below brings the union of registered
+Hadamard automorphism proof source modules to 37.
+
+
+## Complete quadratic integer model
+
+At `0a1deef73d38965fc62e0d42070450079fec850a`, the expanded
+cyclotomic closure passed strict sources, a 157-theorem standard-axiom audit,
+and independent pinned-kernel replay of all 16 local modules. The checked
+sources and verification inputs remained unchanged.
+[Hosted check](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44487424755/job/135434449472) ·
+[Exact receipt](verification/hadamard-automorphism-quadratic-model-0a1deef7.json).
+
+`HadamardAutomorphismQuadraticUnique` proves that every degree-two intermediate
+field of the actual cyclotomic extension is the constructed fixed field, and
+identifies it with the field generated by the explicit square root of −479.
+`HadamardAutomorphismQuadraticConverse` proves that an element of that field
+is integral over the integers if and only if it has the form
+(a+b√(−479))/2 with integers a,b of equal parity. The converse uses the monic
+polynomial T²−T+120 for the half generator. Both files are registered.
+
+Together with the preceding components, this checks the full automorphism
+note, including both norm-obstruction routes and its stated quadratic-field
+model. The separate sequence and border notes remain incomplete.

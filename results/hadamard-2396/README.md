@@ -4,37 +4,38 @@
 
 **Automorphism obstruction for the whole order.** Any real Hadamard matrix of order 2396 must have an automorphism group of order coprime to 479, allowing signed row and column permutations. The proof rules out a cyclotomic norm in two ways. [Proof and arithmetic certificate](AUTOMORPHISMS.md)
 
-A binary Legendre pair on an abelian group of order 1197 would yield such a matrix. We bound its group of common multipliers by nine, allowing independent translations of the two rows. For a bordered quadruple of length 598, we also exclude a common order-eleven multiplier fixing the rows in suitable origins. Smaller symmetry groups and other constructions remain possible. The results are unrefereed and carry no priority claim. Their full Lean formalizations remain in progress; the checked arithmetic component is described below. [Proof](PROOF.md)
+A binary Legendre pair on an abelian group of order 1197 would yield such a matrix. We bound its group of common multipliers by nine, allowing independent translations of the two rows. For a bordered quadruple of length 598, we also exclude a common order-eleven multiplier fixing the rows in suitable origins. Smaller symmetry groups and other constructions remain possible. The results are unrefereed and carry no priority claim. Their full Lean formalizations remain in progress; the verified automorphism theorem is described below. [Proof](PROOF.md)
 
 For a third route, we show that a core with quotient of order four and the stipulated autocorrelations always admits a fixed border after normalization. At order 2396 this leaves 14 possible coset-sum patterns. A binary core realizing one of them with the required correlations is still needed. [Border reduction and attribution](BORDER.md)
 
 ## Checked Lean components
 
-**Lean status:** partial. The arithmetic, Fourier, permutation, and quadratic class-order components are checked; the complete signed-automorphism theorem, universal ideal-class alternative, and sequence/border results remain candidates.
+**Lean status:** partial. The complete signed-automorphism theorem and both
+cyclotomic norm-obstruction proofs are Lean-verified. The sequence restrictions,
+quotient/no-lift certificates, fixed-border construction, and later common
+multiplier/orbit bounds remain separate obligations.
 
-The arithmetic and integral-basis coefficient component of the automorphism
-argument has passed strict source checks, a transitive axiom audit, and
-independent pinned-kernel replay. It includes the order-239 residue calculation,
-both norm exclusions, the fifth-power norm witness, and the coefficient
-congruence in the full cyclotomic ring of integers. The quadratic descent, final
-assembly, and universal ideal-class alternative remain candidates. [Exact checked scope and receipt](../../docs/lean-status.md#hadamard-automorphism-arithmetic).
+For every real Hadamard matrix of order 2396, the full signed row/column
+automorphism group has no element of order 479. Its cardinality and the
+cardinality of every subgroup quotient are not divisible by 479. The proof
+constructs the actual cycle labels, Fourier indicator matrix, two prime
+reductions, and forbidden norm integer. The 28-module closure passed strict
+sources, a 297-theorem standard-axiom audit, and unchanged pinned-kernel replay.
+[Complete theorem and receipt](../../docs/lean-status.md#complete-hadamard-order-479-automorphism-obstruction).
 
-The Fourier component has also passed these three gates. It constructs the
-actual character embedding and indicator Fourier matrix, proves their Gram
-identities, and derives the determinant quotient of norm 599³ from its residue
-obstructions. The full signed-automorphism theorem is still a candidate.
-[Fourier receipt and scope](../../docs/lean-status.md#hadamard-automorphism-fourier-component).
+Both norm proofs are checked in the actual cyclotomic field. The first
+constructs a Frobenius unit and root-of-unity twist and descends to the
+quadratic norm equation. The independent ideal-class proof establishes the
+order-five class of every prime above 599 in the quadratic field and derives
+the contradiction from the relative norm. Its 15-module closure passed the
+same three gates, with 164 audited project theorems.
+[Independent ideal-class proof and receipt](../../docs/lean-status.md#complete-independent-ideal-class-norm-obstruction).
 
-The permutation component has passed the same gates. It proves the sign
-normalization, fixed-point and cycle counts, cyclic reindexing, and transport
-into the ring of integers, and defines the full signed automorphism subgroup.
-[Permutation receipt and scope](../../docs/lean-status.md#hadamard-automorphism-permutation-component).
-
-The quadratic field and class-order component has also passed all three gates.
-It constructs the quadratic field model, proves its algebraic norm formula,
-and constructs a prime above 599 with norm 599 and exact ideal-class order five.
-The universal prime-pair statement and relative-norm alternative remain pending.
-[Class-order receipt and scope](../../docs/lean-status.md#hadamard-quadratic-field-and-class-order-component).
+The checked components also include the arithmetic exclusions, integral-basis
+coefficient argument, literal Fourier identities, signed normalization,
+unique quadratic subfield and its exact equal-parity description of integer
+coordinates. [Quadratic-model receipt](../../docs/lean-status.md#complete-quadratic-integer-model). These formalizations do not assert existence of a Hadamard matrix
+at 2396.
 
 ## Reproduce the finite checks
 

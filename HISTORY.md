@@ -1,5 +1,27 @@
 # History
 
+## 2026-11-19 — Complete Hadamard automorphism obstruction
+
+The full signed row/column automorphism theorem at order 2396 passed its
+28-module strict-source, 297-theorem standard-axiom, and unchanged pinned-kernel
+gate at `fb6b6e06`. The actual automorphism group and all subgroup quotients
+have cardinalities not divisible by 479. The independent relative-ideal-norm
+proof also passed its 15-module, 164-theorem gate. Sixteen additional proof
+source files are registered, bringing this lane to 37; their closures include
+the earlier 12-module, 128-theorem cyclotomic descent check at `7098a0e8`.
+[Assembly receipt](docs/verification/hadamard-automorphism-assembly-fb6b6e06.json) ·
+[Independent proof receipt](docs/verification/hadamard-automorphism-class-alternative-fb6b6e06.json) ·
+[Descent receipt](docs/verification/hadamard-automorphism-cyclotomic-7098a0e8.json).
+The expanded quadratic-model closure also passed all three gates at `0a1deef7`,
+with 16 modules and 157 audited theorems, proving uniqueness of the quadratic
+subfield and the exact equal-parity integer-coordinate equivalence.
+[Quadratic-model receipt](docs/verification/hadamard-automorphism-quadratic-model-0a1deef7.json).
+
+The separate sequence and border results remain pending. Issue 22 claims the
+later fixed-border common multiplier and 151-orbit tail. The status inventory
+now explicitly includes the two-insertion and Erdős–Gyárfás cover obligations;
+Li remains deferred.
+
 ## 2026-11-19 — Checked quadratic field and ideal-class witness
 
 Registered six Hadamard automorphism proof files that construct the actual

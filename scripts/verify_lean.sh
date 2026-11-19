@@ -528,6 +528,22 @@ modules=(
   Conjectures.HadamardAutomorphismCyclotomicQuadratic
   Conjectures.HadamardAutomorphismQuadraticNorm
   Conjectures.HadamardAutomorphismClassOrder
+  Conjectures.HadamardAutomorphismCyclotomicCharacter
+  Conjectures.HadamardAutomorphismCyclotomicPrimes
+  Conjectures.HadamardAutomorphismDescentIdeals
+  Conjectures.HadamardAutomorphismDescentUnits
+  Conjectures.HadamardAutomorphismDescent
+  Conjectures.HadamardAutomorphismAutocorrelation
+  Conjectures.HadamardAutomorphismClassArithmetic
+  Conjectures.HadamardAutomorphismNormFactorization
+  Conjectures.HadamardAutomorphismQuadraticIntegers
+  Conjectures.HadamardAutomorphismClassPair
+  Conjectures.HadamardAutomorphismMatrixObstruction
+  Conjectures.HadamardAutomorphismMain
+  Conjectures.HadamardAutomorphismGroup
+  Conjectures.HadamardAutomorphismRelativeNorm
+  Conjectures.HadamardAutomorphismQuadraticConverse
+  Conjectures.HadamardAutomorphismQuadraticUnique
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

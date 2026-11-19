@@ -1,0 +1,77 @@
+{
+  "checked_sources": [
+    "Conjectures.HadamardAutomorphismArithmeticBasic",
+    "Conjectures.HadamardAutomorphismArithmetic",
+    "Conjectures.HadamardAutomorphismCyclotomic",
+    "Conjectures.HadamardAutomorphismArithmeticRational",
+    "Conjectures.HadamardAutomorphismCyclotomicCharacter",
+    "Conjectures.HadamardAutomorphismCyclotomicGauss",
+    "Conjectures.HadamardAutomorphismCyclotomicPrimes",
+    "Conjectures.HadamardAutomorphismDescentIdeals",
+    "Conjectures.HadamardAutomorphismCyclotomicQuadratic",
+    "Conjectures.HadamardAutomorphismDescentUnits",
+    "Conjectures.HadamardAutomorphismDescent",
+    "Conjectures.HadamardAutomorphismCyclotomicCandidates"
+  ],
+  "commit": "7098a0e8dccd5273be61bdb4108529dbcd169544",
+  "completed_checks": [
+    "strict source checks, warnings treated as errors",
+    "module-ownership axiom whitelist and required theorems",
+    "independent exact-closure kernel replay"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-hadamard-automorphism-candidates.yml": "d94ae06582dd8ffcb01ee49caa1970fda52e48b6f0661b6333ec35a4cb659788",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_hadamard_automorphism_candidate.py": "95728dfdfdb2edebdd061c4f9b64f848c2f4fc8af3df8a173f6fa45652e759cd",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "project_modules": [
+    "Conjectures.HadamardAutomorphismArithmeticBasic",
+    "Conjectures.HadamardAutomorphismArithmetic",
+    "Conjectures.HadamardAutomorphismCyclotomic",
+    "Conjectures.HadamardAutomorphismArithmeticRational",
+    "Conjectures.HadamardAutomorphismCyclotomicCharacter",
+    "Conjectures.HadamardAutomorphismCyclotomicGauss",
+    "Conjectures.HadamardAutomorphismCyclotomicPrimes",
+    "Conjectures.HadamardAutomorphismDescentIdeals",
+    "Conjectures.HadamardAutomorphismCyclotomicQuadratic",
+    "Conjectures.HadamardAutomorphismDescentUnits",
+    "Conjectures.HadamardAutomorphismDescent",
+    "Conjectures.HadamardAutomorphismCyclotomicCandidates"
+  ],
+  "required_theorems": [
+    "HadamardAutomorphism.frobenius479_order",
+    "HadamardAutomorphism.quadraticFixedField479_degree",
+    "HadamardAutomorphism.prime599_number_of_primes",
+    "HadamardAutomorphism.prime599_primes_eq_pair",
+    "HadamardAutomorphism.prime599_ideal_intersection",
+    "HadamardAutomorphism.quadraticGenerator479_sq",
+    "HadamardAutomorphism.cyclotomic_norm_cube_impossible",
+    "HadamardAutomorphism.integerCyclotomicChar479_star_norm"
+  ],
+  "source_failures": {},
+  "source_sha256": {
+    "lean/Conjectures/HadamardAutomorphismArithmetic.lean": "87f95bcc6d779d4ee05ac7897d9cff46dbb440aad670c48384b3b08206f4ad1e",
+    "lean/Conjectures/HadamardAutomorphismArithmeticBasic.lean": "5fc6288b8da44de796cf5ba39d9f0a3d9c1d1a8d686da06f6f722bfe46a23649",
+    "lean/Conjectures/HadamardAutomorphismArithmeticRational.lean": "a89d78b6e31e0391606598448d0bb8d09dbd4aef1422bd59c6345ecb9ea995cf",
+    "lean/Conjectures/HadamardAutomorphismCyclotomic.lean": "7eee7f2ef459f6166758de0831ad0c18e0e5430a6d8d4051af6d20da09647bd5",
+    "lean/Conjectures/HadamardAutomorphismCyclotomicCandidates.lean": "921087e97b4b2a785e8c17c0798b924f36dd483aac65d8b6a3877a242bd2f770",
+    "lean/Conjectures/HadamardAutomorphismCyclotomicCharacter.lean": "1e874f105b8cde2d7fe68ec160cfd2acdd481b02292fc006487717a95765da77",
+    "lean/Conjectures/HadamardAutomorphismCyclotomicGauss.lean": "fbc7bce5a7bed9742b8c12e3e807bb7d63772be7f24682a7c8f3e706dfaae9e9",
+    "lean/Conjectures/HadamardAutomorphismCyclotomicPrimes.lean": "952e92156af4b12518bca52032112953c6d3255064f45cd79d959c07238ca180",
+    "lean/Conjectures/HadamardAutomorphismCyclotomicQuadratic.lean": "d4e09f07f387dedeffe54e8861944d258cf9afecc6f88a1ee477fd12c3437321",
+    "lean/Conjectures/HadamardAutomorphismDescent.lean": "a70debec10fbde54fa940680a89899d73cbee4a56d098f3476b9154b25d7be06",
+    "lean/Conjectures/HadamardAutomorphismDescentIdeals.lean": "578b2716a7ae3a1f9b0f61b1d7cc884a4a3e764c041af9a47992107f3247062d",
+    "lean/Conjectures/HadamardAutomorphismDescentUnits.lean": "b75eab24482d5293cad1c6ffb483901e4179d21842cce36ef982d1d2ef72b777",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.HadamardAutomorphismCyclotomicCandidates",
+  "task": "cyclotomic"
+}
