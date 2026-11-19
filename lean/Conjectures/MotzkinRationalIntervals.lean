@@ -32,7 +32,7 @@ theorem rational_intervals_attain_density (a b : ZMod N) :
       MeasurableSet (circleUnion A) ∧
       Avoids (circleUnion A) (ZMod.toAddCircle a) (ZMod.toAddCircle b) ∧
       volume.real (circleUnion A)=density volume (ZMod.toAddCircle a) (ZMod.toAddCircle b) := by
-  letI : IsProbabilityMeasure (volume:Measure UnitAddCircle) :=
+  let : IsProbabilityMeasure (volume:Measure UnitAddCircle) :=
     ⟨UnitAddCircle.measure_univ⟩
   obtain ⟨A,_,hA,hcard,_,_⟩ := Cyclic.finite_cyclic_theorem_all a b
   refine ⟨A,hA,hcard,measurable_circleUnion A,circleUnion_avoids A a b hA,?_⟩

@@ -1,5 +1,6 @@
 import Conjectures.LonelinessHyperplaneQuasipolynomialArithmetic
 import Mathlib.Data.Sigma.Basic
+import Mathlib.Basic.Finite.Sigma
 import Mathlib.Algebra.Polynomial.BigOperators
 
 /-! Exact quasipolynomiality of a single positive weighted partition
@@ -103,6 +104,7 @@ def weightedPartitionEquiv
       rw [Nat.add_comm, Nat.add_mul_div_left _ _ (hb i),
         Nat.div_eq_of_lt (y.1 i).isLt, zero_add]
 
+omit [Nonempty ι] in
 theorem weightedPartition_finite
     (a : ι → ℕ) (ha : ∀ i, 0 < a i) (M : ℕ) (hM : 0 < M)
     (hdiv : ∀ i, a i ∣ M) (n : ℕ) : Finite (weightedPartition a n) := by
@@ -111,6 +113,7 @@ theorem weightedPartition_finite
     shiftedWeakComposition_finite M (remainderWeight a M r) n hM
   exact Finite.of_equiv _ (weightedPartitionEquiv a ha M hM hdiv n).symm
 
+omit [Nonempty ι] in
 theorem weightedPartition_card_eq_sum
     (a : ι → ℕ) (ha : ∀ i, 0 < a i) (M : ℕ) (hM : 0 < M)
     (hdiv : ∀ i, a i ∣ M) (n : ℕ) :
