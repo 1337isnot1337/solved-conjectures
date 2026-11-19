@@ -1,0 +1,143 @@
+{
+  "bounded-core": [
+    [
+      "Conjectures.LonelinessFiveSpeedBoundedCheckDefs",
+      "Conjectures.LonelinessFiveSpeedBoundedCandidates"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.boundedSlopeScanCheck_candidates",
+      "Loneliness.FiveSpeedCertificate.candidateTuples_low"
+    ]
+  ],
+  "root-semantics": [
+    [
+      "Conjectures.LonelinessFiveSpeedRootSemantics"
+    ],
+    [
+      "Loneliness.FiveSpeedRoot.rootCover_of_normalized",
+      "Loneliness.FiveSpeedRoot.rootOutcome_of_value_lt"
+    ]
+  ],
+  "bounded-map024": [
+    [
+      "Conjectures.LonelinessFiveSpeedBoundedMap024"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.BoundedMapCertificates.M24.sound"
+    ]
+  ],
+  "bounded-map063": [
+    [
+      "Conjectures.LonelinessFiveSpeedBoundedMap063"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.BoundedMapCertificates.M63.sound"
+    ]
+  ],
+  "semantic-bridges": [
+    [
+      "Conjectures.LonelinessFiveSpeedCriticalCheck",
+      "Conjectures.LonelinessFiveSpeedTriplePermutation",
+      "Conjectures.LonelinessFiveSpeedCanonicalImage",
+      "Conjectures.LonelinessFiveDistanceGraph"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.relationImage_to_canonical",
+      "Loneliness.FiveSpeedCertificate.special134_of_positive_triple",
+      "Loneliness.FiveSpeedCertificate.five_speed_spectrum_exact_of_exhaustion",
+      "Loneliness.DistanceColoring.colorable_of_value",
+      "Loneliness.FiveSpeedCertificate.triangle_free_five_distance_colorable_of_exhaustion"
+    ]
+  ],
+  "root-block-probe": [
+    [
+      "Conjectures.LonelinessFiveSpeedRootStarBlockProbe"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.normalizedRootCover_of_rootStarBlocks",
+      "Loneliness.FiveSpeedCertificate.RootStarBlockProbe.checked"
+    ]
+  ],
+  "relations": [
+    [
+      "Conjectures.LonelinessFiveSpeedRelationReduction"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.every_relation_pair_checked",
+      "Loneliness.FiveSpeedCertificate.two_relations_to_nine_maps",
+      "Loneliness.FiveSpeedCertificate.special134_to_nine_maps"
+    ]
+  ],
+  "fiber-small": [
+    [
+      "Conjectures.LonelinessFiveSpeedPlaneFiber8P0053"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.ScalarMasks.P53.sound",
+      "Loneliness.FiveSpeedCertificate.PlaneFibers.M8P53.sound"
+    ]
+  ],
+  "fiber-tree-small": [
+    [
+      "Conjectures.LonelinessFiveSpeedPlaneTreeFiber8P0053"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.ScalarTrees.P53.sound",
+      "Loneliness.FiveSpeedCertificate.PlaneTreeFibers.M8P53.sound"
+    ]
+  ],
+  "fiber-tree-large": [
+    [
+      "Conjectures.LonelinessFiveSpeedPlaneTreeFiber1P1789"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.ScalarTrees.P1789.sound",
+      "Loneliness.FiveSpeedCertificate.PlaneTreeFibers.M1P1789.sound"
+    ]
+  ],
+  "mask-scan": [
+    [
+      "Conjectures.LonelinessFiveSpeedRootMaskScan"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.scanWitnessMasks_sound",
+      "Loneliness.FiveSpeedCertificate.rootPrefixCheck_sound"
+    ]
+  ],
+  "projective": [
+    [
+      "Conjectures.LonelinessFiveSpeedPlaneProjective"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.canonicalProjectiveCover_integer",
+      "Loneliness.FiveSpeedCertificate.canonicalProjectiveCover_divisor"
+    ]
+  ],
+  "plane-lift": [
+    [
+      "Conjectures.LonelinessFiveSpeedPlanePrimeProduct"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.exists_zero_form_of_prime_covers",
+      "Loneliness.FiveSpeedCertificate.canonical_plane_integer_relation"
+    ]
+  ],
+  "root-star": [
+    [
+      "Conjectures.LonelinessFiveSpeedRootStarP0179"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.normalizedRootCover_of_rootStarChecks",
+      "Loneliness.FiveSpeedCertificate.RootStars.P179.sound"
+    ]
+  ],
+  "line-reduction": [
+    [
+      "Conjectures.LonelinessFiveSpeedLineReductionCutoff"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.parameter_form_to_bounded_map",
+      "Loneliness.FiveSpeedCertificate.parameter_form_to_bounded_parameters"
+    ]
+  ]
+}

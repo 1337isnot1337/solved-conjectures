@@ -19,54 +19,8 @@ import subprocess
 import verify_lean_candidate as common
 
 
-TASKS = {
-    "relations": (
-        ["Conjectures.LonelinessFiveSpeedRelationReduction"],
-        ["Loneliness.FiveSpeedCertificate.every_relation_pair_checked",
-         "Loneliness.FiveSpeedCertificate.two_relations_to_nine_maps",
-         "Loneliness.FiveSpeedCertificate.special134_to_nine_maps"],
-    ),
-    "fiber-small": (
-        ["Conjectures.LonelinessFiveSpeedPlaneFiber8P0053"],
-        ["Loneliness.FiveSpeedCertificate.ScalarMasks.P53.sound",
-         "Loneliness.FiveSpeedCertificate.PlaneFibers.M8P53.sound"],
-    ),
-    "fiber-tree-small": (
-        ["Conjectures.LonelinessFiveSpeedPlaneTreeFiber8P0053"],
-        ["Loneliness.FiveSpeedCertificate.ScalarTrees.P53.sound",
-         "Loneliness.FiveSpeedCertificate.PlaneTreeFibers.M8P53.sound"],
-    ),
-    "fiber-tree-large": (
-        ["Conjectures.LonelinessFiveSpeedPlaneTreeFiber1P1789"],
-        ["Loneliness.FiveSpeedCertificate.ScalarTrees.P1789.sound",
-         "Loneliness.FiveSpeedCertificate.PlaneTreeFibers.M1P1789.sound"],
-    ),
-    "mask-scan": (
-        ["Conjectures.LonelinessFiveSpeedRootMaskScan"],
-        ["Loneliness.FiveSpeedCertificate.scanWitnessMasks_sound",
-         "Loneliness.FiveSpeedCertificate.rootPrefixCheck_sound"],
-    ),
-    "projective": (
-        ["Conjectures.LonelinessFiveSpeedPlaneProjective"],
-        ["Loneliness.FiveSpeedCertificate.canonicalProjectiveCover_integer",
-         "Loneliness.FiveSpeedCertificate.canonicalProjectiveCover_divisor"],
-    ),
-    "plane-lift": (
-        ["Conjectures.LonelinessFiveSpeedPlanePrimeProduct"],
-        ["Loneliness.FiveSpeedCertificate.exists_zero_form_of_prime_covers",
-         "Loneliness.FiveSpeedCertificate.canonical_plane_integer_relation"],
-    ),
-    "root-star": (
-        ["Conjectures.LonelinessFiveSpeedRootStarP0179"],
-        ["Loneliness.FiveSpeedCertificate.normalizedRootCover_of_rootStarChecks",
-         "Loneliness.FiveSpeedCertificate.RootStars.P179.sound"],
-    ),
-    "line-reduction": (
-        ["Conjectures.LonelinessFiveSpeedLineReductionCutoff"],
-        ["Loneliness.FiveSpeedCertificate.parameter_form_to_bounded_map",
-         "Loneliness.FiveSpeedCertificate.parameter_form_to_bounded_parameters"],
-    ),
-}
+TASK_REGISTRY = "scripts/five_speed_candidate_tasks.json"
+TASKS = json.loads((common.ROOT / TASK_REGISTRY).read_text())
 
 
 def digest(path: Path) -> str:
@@ -94,9 +48,14 @@ def selected_tasks() -> list[str]:
     }
     if changed & infrastructure:
         return list(TASKS)
-    return [task for task, (targets, _) in TASKS.items()
-            if changed & {"lean/" + module.replace(".", "/") + ".lean"
-                          for module in common.dependency_order(targets)}]
+    previous = subprocess.run(
+        ["git", "show", before + ":" + TASK_REGISTRY], cwd=common.ROOT,
+        text=True, capture_output=True, check=False)
+    old_tasks = json.loads(previous.stdout) if previous.returncode == 0 else {}
+    return [task for task, (targets, required) in TASKS.items()
+            if old_tasks.get(task) != [targets, required] or
+            changed & {"lean/" + module.replace(".", "/") + ".lean"
+                       for module in common.dependency_order(targets)}]
 
 
 def export(task: str, targets: list[str], modules: list[str]) -> None:
@@ -118,7 +77,8 @@ def export(task: str, targets: list[str], modules: list[str]) -> None:
             shutil.copy2(source, target)
             hashes[str(relative)] = digest(target)
     source_hashes = common.source_hashes(modules)
-    for relative in ["scripts/verify_five_speed_candidates.py", "scripts/verify_lean_candidate.py",
+    for relative in [TASK_REGISTRY, "scripts/verify_five_speed_candidates.py",
+                     "scripts/verify_lean_candidate.py",
                      ".github/workflows/five-speed-candidates.yml"]:
         source_hashes[relative] = digest(common.ROOT / relative)
     receipt = {

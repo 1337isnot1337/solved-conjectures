@@ -11,6 +11,9 @@ on:
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
       - 'scripts/verify_five_speed_candidates.py'
+      - 'scripts/five_speed_candidate_tasks.json'
+      - 'lean/Conjectures/LonelinessDistanceColoring.lean'
+      - 'lean/Conjectures/LonelinessFiveDistanceGraph.lean'
       - 'scripts/verify_lean_candidate.py'
       - '.github/workflows/five-speed-candidates.yml'
   pull_request:
@@ -22,6 +25,9 @@ on:
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
       - 'scripts/verify_five_speed_candidates.py'
+      - 'scripts/five_speed_candidate_tasks.json'
+      - 'lean/Conjectures/LonelinessDistanceColoring.lean'
+      - 'lean/Conjectures/LonelinessFiveDistanceGraph.lean'
       - 'scripts/verify_lean_candidate.py'
       - '.github/workflows/five-speed-candidates.yml'
 

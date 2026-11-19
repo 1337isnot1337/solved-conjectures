@@ -23,18 +23,21 @@ def tree_text(table, indent=2):
             + tree_text(table[middle:], indent + 2) + ")")
 
 
-def render(prime, table):
+def render(prime, table, prime_method="decide"):
     namespace = f"Loneliness.FiveSpeedCertificate.ScalarTrees.P{prime}"
+    prime_import = ("Mathlib.Tactic.NormNum.Prime" if prime_method == "norm_num"
+                    else "Mathlib.Data.Nat.Prime.Basic")
+    prime_proof = "norm_num" if prime_method == "norm_num" else "decide +kernel"
     return (
         "import Conjectures.LonelinessFiveSpeedScalarTree\n"
-        "import Mathlib.Data.Nat.Prime.Basic\n\n"
+        f"import {prime_import}\n\n"
         "set_option maxRecDepth 20000\n"
         "set_option maxHeartbeats 0\n"
         "set_option Elab.async false\n\n"
         f"namespace {namespace}\n\n"
         "/-! Exact half-table stored as a counted balanced tree. -/\n\n"
         "def tree : ScalarTree :=\n" + tree_text(table) + "\n\n"
-        f"theorem prime : Nat.Prime {prime} := by decide +kernel\n\n"
+        f"theorem prime : Nat.Prime {prime} := by {prime_proof}\n\n"
         f"theorem checked : scalarTreeCheck {prime} tree = true := by\n"
         "  decide +kernel\n\n"
         "theorem valid : tree.valid = true :=\n"
@@ -54,6 +57,8 @@ def main():
     parser.add_argument("--prime-list", type=Path)
     parser.add_argument("--lean-dir", type=Path, required=True)
     parser.add_argument("--manifest", type=Path)
+    parser.add_argument("--prime-method", choices=("decide", "norm_num"), default="decide",
+                        help="Proof-producing primality tactic; table checks always use the kernel")
     args = parser.parse_args()
     primes = set(args.primes)
     if args.prime_list:
@@ -65,9 +70,10 @@ def main():
     for prime in sorted(primes):
         table = entries(prime)
         name = f"LonelinessFiveSpeedScalarTreeMask{prime:04d}"
-        content = render(prime, table)
+        content = render(prime, table, args.prime_method)
         (args.lean_dir / (name + ".lean")).write_text(content)
         records.append({"prime": prime, "module": "Conjectures." + name,
+                        "prime_method": args.prime_method,
                         "entries": len(table), "maximum_lookup_depth": (len(table)-1).bit_length(),
                         "source_bytes": len(content.encode()),
                         "sha256": sha256(content.encode()).hexdigest()})
