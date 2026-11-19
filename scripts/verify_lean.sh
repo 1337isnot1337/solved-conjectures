@@ -1437,6 +1437,50 @@ modules=(
   Conjectures.LonelinessPrimeFilteringFourTransport
   Conjectures.LonelinessPrimeFilteringFourFinite
   Conjectures.LonelinessPrimeFilteringFourArithmetic
+  Conjectures.LiBasic
+  Conjectures.LiChromatic
+  Conjectures.LiEliminate
+  Conjectures.LiDualFull
+  Conjectures.LiTrunc
+  Conjectures.LiWeighted
+  Conjectures.LiPartitionsFinalCore
+  Conjectures.LiPartitionsFinalEnum
+  Conjectures.LiTriples2
+  Conjectures.LiBridge
+  Conjectures.LiCompute
+  Conjectures.LiDualTrunc
+  Conjectures.LiEmapFinal
+  Conjectures.LiMonomial
+  Conjectures.LiWeighted2
+  Conjectures.LiPartitionsFinalData00
+  Conjectures.LiPartitionsFinalData01
+  Conjectures.LiPartitionsFinalData02
+  Conjectures.LiPartitionsFinalData03
+  Conjectures.LiPartitionsFinalData04
+  Conjectures.LiPartitionsFinalData05
+  Conjectures.LiPartitionsFinalData06
+  Conjectures.LiPartitionsFinalData07
+  Conjectures.LiPartitionsFinalData08
+  Conjectures.LiPartitionsFinalData09
+  Conjectures.LiPartitionsFinalData10
+  Conjectures.LiPartitionsFinalData11
+  Conjectures.LiPartitionsFinalData12
+  Conjectures.LiPartitionsFinalData13
+  Conjectures.LiPartitionsGraph
+  Conjectures.LiPartitionsCount
+  Conjectures.LiTriplesBridge
+  Conjectures.LiSpecFinal
+  Conjectures.LiPartitionsFinal
+  Conjectures.LiConnectedPartitions
+  Conjectures.LiTriplesFinal
+  Conjectures.LiMain
+  Conjectures.LiFullCoeff
+  Conjectures.LiFullCoeffTrunc
+  Conjectures.LiCounterexample
+  Conjectures.LiCoefficientExtraction
+  Conjectures.LiEvaluationData
+  Conjectures.LiCoefficientInterpolation
+  Conjectures.LiNegativeCoefficient
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

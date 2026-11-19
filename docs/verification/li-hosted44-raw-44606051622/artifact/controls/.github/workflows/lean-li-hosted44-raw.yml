@@ -1,0 +1,96 @@
+name: Lean Li44 authenticated raw proof bodies
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-li-hosted44-raw.yml'
+      - 'scripts/authenticate_li_hosted44.py'
+      - 'scripts/verify_li_hosted44_raw.py'
+      - 'scripts/audit_lean_raw_occurrences.py'
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: lean-li-hosted44-raw-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Download the original successful Li44 archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p .candidate-artifacts/li-hosted44-inputs
+          gh api repos/1337isnot1337/solved-conjectures/actions/runs/44599210697 > .candidate-artifacts/li-hosted44-inputs/run.json
+          gh api repos/1337isnot1337/solved-conjectures/actions/jobs/135825706963 > .candidate-artifacts/li-hosted44-inputs/job.json
+          gh api repos/1337isnot1337/solved-conjectures/actions/artifacts/14568527194 > .candidate-artifacts/li-hosted44-inputs/artifact.json
+          gh api repos/1337isnot1337/solved-conjectures/actions/artifacts/14568527194/zip > .candidate-artifacts/li-hosted44-inputs/artifact.zip
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          root = Path('.candidate-artifacts/li-hosted44-inputs')
+          run, job, artifact = (json.loads((root / name).read_text()) for name in ('run.json', 'job.json', 'artifact.json'))
+          assert run['id'] == job['run_id'] == artifact['workflow_run']['id'] == 44599210697
+          assert job['id'] == 135825706963 and artifact['id'] == 14568527194
+          assert run['head_sha'] == job['head_sha'] == artifact['workflow_run']['head_sha'] == '20e0e95eb421cf8ea728d34aa29a6d0eb1137789'
+          assert run['status'] == job['status'] == 'completed'
+          assert run['conclusion'] == job['conclusion'] == 'success'
+          assert artifact['expired'] is False and artifact['size_in_bytes'] == 19830817
+          raw = (root / 'artifact.zip').read_bytes()
+          digest = hashlib.sha256(raw).hexdigest()
+          assert len(raw) == artifact['size_in_bytes']
+          assert artifact['digest'] == 'sha256:' + digest
+          assert digest == '281b57fd87cf7d6123cdcabff4a5803f3d426116dbb4a9aa01370318b2a138ed'
+          print('Authenticated GitHub metadata and original archive digest')
+          PY
+      - name: Authenticate all original source, object and verification records
+        run: |
+          python3 scripts/authenticate_li_hosted44.py --archive .candidate-artifacts/li-hosted44-inputs/artifact.zip --output-dir .candidate-artifacts/li-hosted44-inputs/authenticated
+          python3 scripts/verify_li_hosted44_raw.py --artifact-dir .candidate-artifacts/li-hosted44-inputs/authenticated/original --plan
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+      - name: Recheck literal statements and all reachable raw proof bodies
+        env:
+          LEAN_NUM_THREADS: 1
+          UV_USE_IO_URING: 0
+        run: python3 scripts/verify_li_hosted44_raw.py --artifact-dir .candidate-artifacts/li-hosted44-inputs/authenticated/original
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: li-hosted44-raw
+          path: .candidate-artifacts/li-hosted44-raw/
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: li-hosted44-baseline-metadata
+          path: |
+            .candidate-artifacts/li-hosted44-inputs/run.json
+            .candidate-artifacts/li-hosted44-inputs/job.json
+            .candidate-artifacts/li-hosted44-inputs/artifact.json
+            .candidate-artifacts/li-hosted44-inputs/artifact.zip
+            .candidate-artifacts/li-hosted44-inputs/authenticated/authentication.json
+            .candidate-artifacts/li-hosted44-inputs/authenticated/archive-members.json
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error

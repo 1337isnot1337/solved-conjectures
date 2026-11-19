@@ -1,0 +1,1360 @@
+{
+  "archive_sha256": "281b57fd87cf7d6123cdcabff4a5803f3d426116dbb4a9aa01370318b2a138ed",
+  "artifact_id": 14568527194,
+  "baseline_scope": {
+    "exact_singleton_stock_replays": 44,
+    "literal_contracts": 25,
+    "owned_declarations": 1247,
+    "private_declarations": 95,
+    "required_theorems": 71,
+    "strict_sources": 44,
+    "theorems": 932
+  },
+  "binary_retrieval": "Original artifact14568527194 or the exact inner archive in raw-run backup artifact14569584489.",
+  "compiled_binary_members_not_embedded": {
+    "lib/lean/Conjectures/LiBasic.olean": {
+      "bytes": 459392,
+      "sha256": "a0f4acb39759058b4250dc69e9d1cebc4d0e904300382ed845c81b99816c5687"
+    },
+    "lib/lean/Conjectures/LiBridge.olean": {
+      "bytes": 77072,
+      "sha256": "3684f9518dd5e6f1f83d1883c1289892727f716100f2da4db9c416ff670fc0b1"
+    },
+    "lib/lean/Conjectures/LiChromatic.olean": {
+      "bytes": 140760,
+      "sha256": "007fbd6d089372629a11b2a1cccff92c4ae4b68e6785441fb669254ce4e39912"
+    },
+    "lib/lean/Conjectures/LiCoefficientExtraction.olean": {
+      "bytes": 720128,
+      "sha256": "b791d4121cf4334499e33b47d61d3f53c40db9e0104ecabac87d24421a5ee9ec"
+    },
+    "lib/lean/Conjectures/LiCoefficientInterpolation.olean": {
+      "bytes": 1747120,
+      "sha256": "0d763cdf7818ef586efaaebaf2d26f99314c29790bfa219587dde789b4fe8d2b"
+    },
+    "lib/lean/Conjectures/LiCompute.olean": {
+      "bytes": 2852968,
+      "sha256": "21afa19a52d17bf45be84e45f2599af7bbef7afba2d60f8495be270a4411fd77"
+    },
+    "lib/lean/Conjectures/LiConnectedPartitions.olean": {
+      "bytes": 272928,
+      "sha256": "41f9ef0d7e93e1b4395546355c3efef9ca81f33d0f28f5476f5d1a61028bd20f"
+    },
+    "lib/lean/Conjectures/LiCounterexample.olean": {
+      "bytes": 135008,
+      "sha256": "2344d26ad4c8d197c7d3f3a4af124a0f1367697c102338b3490e14dde5e1927a"
+    },
+    "lib/lean/Conjectures/LiDualFull.olean": {
+      "bytes": 335272,
+      "sha256": "68213f2983699f7aec7a57a2b6790ac8afe419e214348fa17f1f9cd5afe0864f"
+    },
+    "lib/lean/Conjectures/LiDualTrunc.olean": {
+      "bytes": 83064,
+      "sha256": "fcd94bd5989a5d81336e0239b6d3c5cebb09fc77bdc94574d0d6d7c1b4b2a958"
+    },
+    "lib/lean/Conjectures/LiEliminate.olean": {
+      "bytes": 601072,
+      "sha256": "30450c407c24e655165cad03d4481c06b14b9335085e784d741fda0bc8a59e51"
+    },
+    "lib/lean/Conjectures/LiEmapFinal.olean": {
+      "bytes": 179136,
+      "sha256": "6eee22a86ba3218e4de1756c892038febebb877ad47330851c0a6b48fae1c6a5"
+    },
+    "lib/lean/Conjectures/LiEvaluationData.olean": {
+      "bytes": 8127072,
+      "sha256": "3b3f234a49024bfc49a0a87964d2ab506eeaf4ca3d62f555b9c8dc45de6b6c1f"
+    },
+    "lib/lean/Conjectures/LiFullCoeff.olean": {
+      "bytes": 605872,
+      "sha256": "f3271acf8434d406d96ea725f9253e632e18993eb7340fb4ad3b83b453b333f1"
+    },
+    "lib/lean/Conjectures/LiFullCoeffTrunc.olean": {
+      "bytes": 642760,
+      "sha256": "d84b9277dbbdecef75c29d8ee0547e30b0294291a7e3aaa56270d760f8d6a5b2"
+    },
+    "lib/lean/Conjectures/LiMain.olean": {
+      "bytes": 111864,
+      "sha256": "5f67b4283878a774dc7f3d172bc4791909ab681d46838637842f759867b744c5"
+    },
+    "lib/lean/Conjectures/LiMonomial.olean": {
+      "bytes": 345312,
+      "sha256": "b41f70d0cddee6518271cb3c72689927c2f82c834f95f9e1b9ea3a578f8bd679"
+    },
+    "lib/lean/Conjectures/LiNegativeCoefficient.olean": {
+      "bytes": 408296,
+      "sha256": "4f098eb10502c8952ed15922309b77c176cf04a32451e2ad9f686354e5311e56"
+    },
+    "lib/lean/Conjectures/LiPartitionsCount.olean": {
+      "bytes": 187928,
+      "sha256": "3c8c262924252fce115b813d6270c225812429560a9f85110fd766e367e3e68d"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinal.olean": {
+      "bytes": 129360,
+      "sha256": "27057050c989c56698c25052e1a6ce2174789743aff4431f500d73e436684abd"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalCore.olean": {
+      "bytes": 412464,
+      "sha256": "d2b951b98c4a42cb3534acb87dadbb91afdccb94169430759af8c1da937ea1b5"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData00.olean": {
+      "bytes": 4137888,
+      "sha256": "2f132e1525812303b83f86fb94d15d7007c0d565bbc649a00493f05a09c6a5e8"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData01.olean": {
+      "bytes": 4177936,
+      "sha256": "7b9fc1b6a39206d647ced9190fe79acf0737b48c97c21805f9539acb2cd96726"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData02.olean": {
+      "bytes": 4290704,
+      "sha256": "5dcd4b69bbda3039e2a877169d5fa48c8809e3a0d1f597dc205eab6f944bd129"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData03.olean": {
+      "bytes": 4171824,
+      "sha256": "813a12489404f862fd99ce309af642bd64eb6ef5a64d26430d235537dcf67e82"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData04.olean": {
+      "bytes": 4114152,
+      "sha256": "d2a6ec0e129e96bc67b29c77f3d9cca6d6f6132195f44906772a71c11abafc26"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData05.olean": {
+      "bytes": 3972200,
+      "sha256": "a6c7af76b1ea1e1b104ea839592b08cabccd158981327e858dc56239fb0e1dd2"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData06.olean": {
+      "bytes": 3927400,
+      "sha256": "cabc448d86215902137d8b216d4d760c76602224d12e54135a32c18247f17398"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData07.olean": {
+      "bytes": 3860368,
+      "sha256": "6e6441c5eb703a6d6c6d3dd564f41372801d460afe7396db4b6183c2554a8dc4"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData08.olean": {
+      "bytes": 3755216,
+      "sha256": "66cbec6143ceafce9d984413d9c1f2f24819e40016789e14a4972722f8c3cc1d"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData09.olean": {
+      "bytes": 3639584,
+      "sha256": "afefc8b0becc29c9ff36d9fdd8803426c3bb71c9a1811c6b5de8d09fd8a394e8"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData10.olean": {
+      "bytes": 3486912,
+      "sha256": "e8153f148379dbabd4f87e0e0e9a070bb7871cba7a3227306343ab805639aebb"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData11.olean": {
+      "bytes": 3347968,
+      "sha256": "b4ad7955731d9f58d01aaaa7f644b19297c5c42de8ecf6622336d2c8c076e9ed"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData12.olean": {
+      "bytes": 3192088,
+      "sha256": "6fba84bdcbf90abb34a74a29d37e7f997f9f2b329da1a6e56c14b3d2bef2dbd7"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalData13.olean": {
+      "bytes": 2020664,
+      "sha256": "13c0504668adca809b96e724f92b1c785f0aafbcb755e39105aea292c937c5b3"
+    },
+    "lib/lean/Conjectures/LiPartitionsFinalEnum.olean": {
+      "bytes": 287192,
+      "sha256": "70c330e2a1e8a6fd29d20b63914fbf6e214e4d2eefcc9c6f9702a675a65abfe5"
+    },
+    "lib/lean/Conjectures/LiPartitionsGraph.olean": {
+      "bytes": 1057752,
+      "sha256": "3ee78c24ae766e215da25354e3d1751150b9bd3d154535af29f9f598be2bccb9"
+    },
+    "lib/lean/Conjectures/LiSpecFinal.olean": {
+      "bytes": 136040,
+      "sha256": "36c5b62839cb140161e717f4d2de6a4dceb65d2b97ee22ae5c1edf34068cba00"
+    },
+    "lib/lean/Conjectures/LiTriples2.olean": {
+      "bytes": 610720,
+      "sha256": "39cbd12fcedae3430eb6b96adc4f2a2ea87159cd5c3ecfc191a33a9f6ec0b97c"
+    },
+    "lib/lean/Conjectures/LiTriplesBridge.olean": {
+      "bytes": 288272,
+      "sha256": "f1f8a064c2a6d38cf6c8f24e0ecd6b8d50bd71d03d014e2e9b7e6409fcfb671c"
+    },
+    "lib/lean/Conjectures/LiTriplesFinal.olean": {
+      "bytes": 804032,
+      "sha256": "e87e69904ccf43ab0d90ae430a3d2333102332dc2d5a358adf7f81e2ddc7b36d"
+    },
+    "lib/lean/Conjectures/LiTrunc.olean": {
+      "bytes": 208232,
+      "sha256": "97a78d96daa06fdaa9f505a873d0df53f41c4661de477e41c21a1ed8390ee84e"
+    },
+    "lib/lean/Conjectures/LiWeighted.olean": {
+      "bytes": 76704,
+      "sha256": "4dc5612e50d0c4afc3f3a55eb5b842809d97bd769d5204b58385e9eeea7fcf17"
+    },
+    "lib/lean/Conjectures/LiWeighted2.olean": {
+      "bytes": 187096,
+      "sha256": "0f994c74a193f86e0990a49c20effd4d82e7a77cb20cccbd1c9a5226fee6e1ff"
+    }
+  },
+  "exact_text_member_count": 228,
+  "exact_text_members": {
+    "declaration-inventory.json": {
+      "bytes": 561798,
+      "sha256": "dfbfc92922e16e6e9be9f8caba0fe6df90501b5e4d6fb24ba9cc74aad36c5126",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/declaration-inventory.json"
+    },
+    "logs/Conjectures.LiBasic.kernel.log": {
+      "bytes": 30,
+      "sha256": "5e6578df14623c8417f6873ea18e2185c2052434589b8e308e977974201428af",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiBasic.kernel.log"
+    },
+    "logs/Conjectures.LiBasic.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiBasic.source.log"
+    },
+    "logs/Conjectures.LiBridge.kernel.log": {
+      "bytes": 31,
+      "sha256": "a4653e94a4b85fe980aae67a2d26a0665db9004f824aed98b14e3f05f90427fe",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiBridge.kernel.log"
+    },
+    "logs/Conjectures.LiBridge.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiBridge.source.log"
+    },
+    "logs/Conjectures.LiChromatic.kernel.log": {
+      "bytes": 34,
+      "sha256": "3087a76b0ead4fe098a6a0a1362dacde0f5ea462ac5ff09c8102615a80247018",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiChromatic.kernel.log"
+    },
+    "logs/Conjectures.LiChromatic.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiChromatic.source.log"
+    },
+    "logs/Conjectures.LiCoefficientExtraction.kernel.log": {
+      "bytes": 46,
+      "sha256": "3cb9463422c52447711b557c7010752163b04aaf6c77adede7abcd57e4b341d3",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiCoefficientExtraction.kernel.log"
+    },
+    "logs/Conjectures.LiCoefficientExtraction.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiCoefficientExtraction.source.log"
+    },
+    "logs/Conjectures.LiCoefficientInterpolation.kernel.log": {
+      "bytes": 49,
+      "sha256": "80cacdbfe9790ad87e2eab562d0a816333e751d1b953bbb1c17cb3a62c3c7e75",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiCoefficientInterpolation.kernel.log"
+    },
+    "logs/Conjectures.LiCoefficientInterpolation.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiCoefficientInterpolation.source.log"
+    },
+    "logs/Conjectures.LiCompute.kernel.log": {
+      "bytes": 32,
+      "sha256": "8e196450ef50f1fe4745ca2f3d8c5686078833401b43fef79276b53a8519bfac",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiCompute.kernel.log"
+    },
+    "logs/Conjectures.LiCompute.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiCompute.source.log"
+    },
+    "logs/Conjectures.LiConnectedPartitions.kernel.log": {
+      "bytes": 44,
+      "sha256": "18835407a165440e68ea381f501b4bb07df076010d8f5bda9b4785213d3c22cf",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiConnectedPartitions.kernel.log"
+    },
+    "logs/Conjectures.LiConnectedPartitions.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiConnectedPartitions.source.log"
+    },
+    "logs/Conjectures.LiCounterexample.kernel.log": {
+      "bytes": 39,
+      "sha256": "9cef6dd67bcdd1083c6ffac3dd1510871140deaf86c9071f49a238d09ef0f4f4",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiCounterexample.kernel.log"
+    },
+    "logs/Conjectures.LiCounterexample.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiCounterexample.source.log"
+    },
+    "logs/Conjectures.LiDualFull.kernel.log": {
+      "bytes": 33,
+      "sha256": "344cff1386cfb190f2643debeb0007aa31677d1beb3e808f80dc9ec246a9c135",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiDualFull.kernel.log"
+    },
+    "logs/Conjectures.LiDualFull.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiDualFull.source.log"
+    },
+    "logs/Conjectures.LiDualTrunc.kernel.log": {
+      "bytes": 34,
+      "sha256": "8efa7204234b9875259a38ad1e28e98365b809a4acace9178a27891f403aefb2",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiDualTrunc.kernel.log"
+    },
+    "logs/Conjectures.LiDualTrunc.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiDualTrunc.source.log"
+    },
+    "logs/Conjectures.LiEliminate.kernel.log": {
+      "bytes": 34,
+      "sha256": "5afbb9957f2e4bc5d65067bf75b029b9c966e6215dac5ceb531e4d59cc463c16",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiEliminate.kernel.log"
+    },
+    "logs/Conjectures.LiEliminate.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiEliminate.source.log"
+    },
+    "logs/Conjectures.LiEmapFinal.kernel.log": {
+      "bytes": 34,
+      "sha256": "4b0513a3271856c680c26110d9e9a8e67f8310ec7c60caad381da17e44ad5fae",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiEmapFinal.kernel.log"
+    },
+    "logs/Conjectures.LiEmapFinal.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiEmapFinal.source.log"
+    },
+    "logs/Conjectures.LiEvaluationData.kernel.log": {
+      "bytes": 39,
+      "sha256": "0dc3a23c9e8bd5afdc47b78194d542b43720a82c7331d9d1ad840b9e3bc47c08",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiEvaluationData.kernel.log"
+    },
+    "logs/Conjectures.LiEvaluationData.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiEvaluationData.source.log"
+    },
+    "logs/Conjectures.LiFullCoeff.kernel.log": {
+      "bytes": 34,
+      "sha256": "a2623d49af4fcd6ccd369ff416c407903d4c15bb22afc1107213ef3333672d5d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiFullCoeff.kernel.log"
+    },
+    "logs/Conjectures.LiFullCoeff.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiFullCoeff.source.log"
+    },
+    "logs/Conjectures.LiFullCoeffTrunc.kernel.log": {
+      "bytes": 39,
+      "sha256": "a32c251585c709b884206f4e004bbda0ad75548bd756b12d58acdb54189d49d7",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiFullCoeffTrunc.kernel.log"
+    },
+    "logs/Conjectures.LiFullCoeffTrunc.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiFullCoeffTrunc.source.log"
+    },
+    "logs/Conjectures.LiMain.kernel.log": {
+      "bytes": 29,
+      "sha256": "3528328209fe8847ba502d6d0cf0782c61721b628e7824e65cb72cc84b15532a",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiMain.kernel.log"
+    },
+    "logs/Conjectures.LiMain.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiMain.source.log"
+    },
+    "logs/Conjectures.LiMonomial.kernel.log": {
+      "bytes": 33,
+      "sha256": "45717d5c56faf7d2ca8377d5e2b1d851ad09f5686f0f461f447f4ec00db8cefe",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiMonomial.kernel.log"
+    },
+    "logs/Conjectures.LiMonomial.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiMonomial.source.log"
+    },
+    "logs/Conjectures.LiNegativeCoefficient.kernel.log": {
+      "bytes": 44,
+      "sha256": "664828b3099204eb541ec74f89590f361d3e2f6731d2df611c6fd0f75097bcd5",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiNegativeCoefficient.kernel.log"
+    },
+    "logs/Conjectures.LiNegativeCoefficient.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiNegativeCoefficient.source.log"
+    },
+    "logs/Conjectures.LiPartitionsCount.kernel.log": {
+      "bytes": 40,
+      "sha256": "571298e55d5d92e0a8ec670945809b6a626731ad936d27ea3b481b1f3b846e45",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsCount.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsCount.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsCount.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinal.kernel.log": {
+      "bytes": 40,
+      "sha256": "41f7d62fdf670072222c99730cf219fbab783fb62e60c5f0ede9ced7e0fbe656",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinal.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinal.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinal.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalCore.kernel.log": {
+      "bytes": 44,
+      "sha256": "57f19195a1e78ed3e413ef676f1483753a17f2ed9c5d384c075d54b0b6e5ee2d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalCore.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalCore.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalCore.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData00.kernel.log": {
+      "bytes": 46,
+      "sha256": "a17e4c40e343b2631a79bb66bc4d5a1368a24a549cfd027355fafc9e04b9cbc5",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData00.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData00.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData00.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData01.kernel.log": {
+      "bytes": 46,
+      "sha256": "6cd4eb80578ea77c61c9aefda21c80ca03027e93aa79e284609174335779bf03",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData01.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData01.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData01.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData02.kernel.log": {
+      "bytes": 46,
+      "sha256": "92d744933e36e03de235ca057ac66d59b83ed56deac434779d151c4b09a3b1a4",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData02.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData02.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData02.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData03.kernel.log": {
+      "bytes": 46,
+      "sha256": "3cb7ab75dda59d217a26d02a4003a7b106c9d9a13bb1821e625205aeb636220b",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData03.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData03.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData03.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData04.kernel.log": {
+      "bytes": 46,
+      "sha256": "05c5cf15e896c6f79cbc865d51df209ac6f8709a3b05f9d9ad409a03a012d29c",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData04.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData04.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData04.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData05.kernel.log": {
+      "bytes": 46,
+      "sha256": "8d987a8df98b56a15f71ac7c2d82d3faf547483de1bdc3ea1220f64970c39362",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData05.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData05.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData05.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData06.kernel.log": {
+      "bytes": 46,
+      "sha256": "84ba7a4a137ab6121664ae8a37ce038d82c90820e120ab7fb232a6efe13fa233",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData06.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData06.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData06.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData07.kernel.log": {
+      "bytes": 46,
+      "sha256": "d2ad5b91bbaa11018449a023c60099a32ec10d2b837809f9b3b68c6a656405f2",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData07.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData07.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData07.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData08.kernel.log": {
+      "bytes": 46,
+      "sha256": "eb34e9b6cae2aa44625ff50d4b5caedbb58b32580da58b7b2e5d477907dddc33",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData08.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData08.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData08.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData09.kernel.log": {
+      "bytes": 46,
+      "sha256": "fb76acc400afcd1bbd1a385f232c0a293f4541304d78ba07d8b5b61d457a7421",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData09.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData09.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData09.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData10.kernel.log": {
+      "bytes": 46,
+      "sha256": "21a246c723733996ac42e56c1eaee0dc2fac58f6edc0f1031ed6d0481a7e5b30",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData10.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData10.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData10.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData11.kernel.log": {
+      "bytes": 46,
+      "sha256": "05eacf8eb888fac7cfb60c69326046d5b2882fb2bfc709ebdab4eccfad267996",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData11.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData11.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData11.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData12.kernel.log": {
+      "bytes": 46,
+      "sha256": "9f02b65f4f908143e50499087ad05e97317774842ea7d36d3b1dd8dc59d4a5e9",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData12.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData12.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData12.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData13.kernel.log": {
+      "bytes": 46,
+      "sha256": "4bb53da3545bab78980945210ee55f4d9009b6da93a969e54b87e7f0288f79c7",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData13.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalData13.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalData13.source.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalEnum.kernel.log": {
+      "bytes": 44,
+      "sha256": "1aa8bbd5641e618d6327e9d314346b1ebbfcbdb6e3d1536cd55ce5d6fe2dd87a",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalEnum.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsFinalEnum.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsFinalEnum.source.log"
+    },
+    "logs/Conjectures.LiPartitionsGraph.kernel.log": {
+      "bytes": 40,
+      "sha256": "03fdc90b93f5eb77ab4dc9b232d42742bb9d887b3a39b3dfa8a12b35041242f3",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsGraph.kernel.log"
+    },
+    "logs/Conjectures.LiPartitionsGraph.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiPartitionsGraph.source.log"
+    },
+    "logs/Conjectures.LiSpecFinal.kernel.log": {
+      "bytes": 34,
+      "sha256": "e7d4c532b71f507d5563071c02fe2b258d38055b382967bee8a5f721c0f401dd",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiSpecFinal.kernel.log"
+    },
+    "logs/Conjectures.LiSpecFinal.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiSpecFinal.source.log"
+    },
+    "logs/Conjectures.LiTriples2.kernel.log": {
+      "bytes": 33,
+      "sha256": "d2be16af71df70642274b10c58654db6504573271f56de69e90720f91190c839",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiTriples2.kernel.log"
+    },
+    "logs/Conjectures.LiTriples2.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiTriples2.source.log"
+    },
+    "logs/Conjectures.LiTriplesBridge.kernel.log": {
+      "bytes": 38,
+      "sha256": "849848735d37326885464b5ae5ec5022cee7fe1e9bead05ba1d899e0da3f1035",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiTriplesBridge.kernel.log"
+    },
+    "logs/Conjectures.LiTriplesBridge.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiTriplesBridge.source.log"
+    },
+    "logs/Conjectures.LiTriplesFinal.kernel.log": {
+      "bytes": 37,
+      "sha256": "b41eb68155664b223b913474d9c2e37f447e134a3f3b76dac9484b7cec4803aa",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiTriplesFinal.kernel.log"
+    },
+    "logs/Conjectures.LiTriplesFinal.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiTriplesFinal.source.log"
+    },
+    "logs/Conjectures.LiTrunc.kernel.log": {
+      "bytes": 30,
+      "sha256": "db02138d5085145c7e4dcb60eeebd0942fba072408a2d6ac627016a975dad78c",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiTrunc.kernel.log"
+    },
+    "logs/Conjectures.LiTrunc.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiTrunc.source.log"
+    },
+    "logs/Conjectures.LiWeighted.kernel.log": {
+      "bytes": 33,
+      "sha256": "2561f857b016289b0bb3514c5db818b43489b49c6805c0ba501da8bf75509147",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiWeighted.kernel.log"
+    },
+    "logs/Conjectures.LiWeighted.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiWeighted.source.log"
+    },
+    "logs/Conjectures.LiWeighted2.kernel.log": {
+      "bytes": 34,
+      "sha256": "d46ba17c62e9d375111851854e866a30d6ccc7b41574acfa246534192617e222",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiWeighted2.kernel.log"
+    },
+    "logs/Conjectures.LiWeighted2.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/Conjectures.LiWeighted2.source.log"
+    },
+    "logs/all-owned-audit.log": {
+      "bytes": 379460,
+      "sha256": "25e684af762e2d8e279f241bb67f9b823f27d9caad42731823cd2ca9890a47a4",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/all-owned-audit.log"
+    },
+    "logs/literal-statements.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/logs/literal-statements.log"
+    },
+    "progress/Conjectures.LiBasic.kernel.json": {
+      "bytes": 502,
+      "sha256": "dcfc753751e587245f7058d422369bef2b2474509d412c10d029ac49c13e0ec5",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiBasic.kernel.json"
+    },
+    "progress/Conjectures.LiBasic.source.json": {
+      "bytes": 633,
+      "sha256": "78437c7f7e54850a068a444bb956f11b6d28178be4595da836d1d12b7e01022e",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiBasic.source.json"
+    },
+    "progress/Conjectures.LiBridge.kernel.json": {
+      "bytes": 512,
+      "sha256": "e82f85a1a125fcf01646605d927b87df4ef0c7a7455a5fac0505a202162b6759",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiBridge.kernel.json"
+    },
+    "progress/Conjectures.LiBridge.source.json": {
+      "bytes": 644,
+      "sha256": "7c290afa767dbb83af11b2b3ef18e12694d7dd6679b4e4a557034bf0f178f51e",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiBridge.source.json"
+    },
+    "progress/Conjectures.LiChromatic.kernel.json": {
+      "bytes": 508,
+      "sha256": "e6056e429eb4cf74ec3ddff0edbfc15a4a5735aa065bb6b3b631cbf95fffa379",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiChromatic.kernel.json"
+    },
+    "progress/Conjectures.LiChromatic.source.json": {
+      "bytes": 643,
+      "sha256": "5521b4b59a876b1ad97b3a9f64b4ce720617d1b3f31ab57883777415867b9fc6",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiChromatic.source.json"
+    },
+    "progress/Conjectures.LiCoefficientExtraction.kernel.json": {
+      "bytes": 532,
+      "sha256": "f95dab335fbd685dbb8578377228ff5f25d29aff5e5c15d13960254bceec64b6",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiCoefficientExtraction.kernel.json"
+    },
+    "progress/Conjectures.LiCoefficientExtraction.source.json": {
+      "bytes": 679,
+      "sha256": "5493dbb1f08625630abbd30d7644f31f702c0bdbe1887d2c4cd918d5863b825d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiCoefficientExtraction.source.json"
+    },
+    "progress/Conjectures.LiCoefficientInterpolation.kernel.json": {
+      "bytes": 538,
+      "sha256": "b9d218435d8756702867f14e21369933801715e9c4f625c00a219fcc5a32ee50",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiCoefficientInterpolation.kernel.json"
+    },
+    "progress/Conjectures.LiCoefficientInterpolation.source.json": {
+      "bytes": 688,
+      "sha256": "e11c362ab8ad8cae508e688be0e84a4c0f0303d47089f99b1c827f9806bc4392",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiCoefficientInterpolation.source.json"
+    },
+    "progress/Conjectures.LiCompute.kernel.json": {
+      "bytes": 505,
+      "sha256": "d8176ed6dfdc93ae59eec6899224c9787052cd6ed53647b698d65d245ea0d932",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiCompute.kernel.json"
+    },
+    "progress/Conjectures.LiCompute.source.json": {
+      "bytes": 639,
+      "sha256": "72a84e6ae746f59a209a39ea08924fac51423c8b19d2a655ca958a06a1db2e2a",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiCompute.source.json"
+    },
+    "progress/Conjectures.LiConnectedPartitions.kernel.json": {
+      "bytes": 528,
+      "sha256": "de197faf383269fea619bfbd7f5b2d37e8ffe9a0054a4d8db75969154ac8433c",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiConnectedPartitions.kernel.json"
+    },
+    "progress/Conjectures.LiConnectedPartitions.source.json": {
+      "bytes": 683,
+      "sha256": "1dd5da7b1c11a640d43f2757b9cefd6236968fa2437672309505e035c84a3cd0",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiConnectedPartitions.source.json"
+    },
+    "progress/Conjectures.LiCounterexample.kernel.json": {
+      "bytes": 527,
+      "sha256": "c0258e3ba708d7ea5add2248534a8ae40fcc36c647c36f0c7a5ee242e8949f92",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiCounterexample.kernel.json"
+    },
+    "progress/Conjectures.LiCounterexample.source.json": {
+      "bytes": 658,
+      "sha256": "d7906ef386738d991eb6377caa4ec77afe1bae0f83498b1656c91559a9d1ec96",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiCounterexample.source.json"
+    },
+    "progress/Conjectures.LiDualFull.kernel.json": {
+      "bytes": 505,
+      "sha256": "f30892c6cca2db52c4b3fd8f634bf9de174f8dbeb6a985a355f8fb548bdcd75d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiDualFull.kernel.json"
+    },
+    "progress/Conjectures.LiDualFull.source.json": {
+      "bytes": 650,
+      "sha256": "8a98247b03f1f6f847eede41ed53ee84f31c94d243c14bd150a87ba0526d0a2e",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiDualFull.source.json"
+    },
+    "progress/Conjectures.LiDualTrunc.kernel.json": {
+      "bytes": 518,
+      "sha256": "25df589fd4f84873339c80f7fb6020619eaf57e88abfe1ed15bb27df655e3152",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiDualTrunc.kernel.json"
+    },
+    "progress/Conjectures.LiDualTrunc.source.json": {
+      "bytes": 643,
+      "sha256": "69467f9b38952acac892a92748d3ac44e67b2e383bbcc4c5ac9f624e6bf510ef",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiDualTrunc.source.json"
+    },
+    "progress/Conjectures.LiEliminate.kernel.json": {
+      "bytes": 508,
+      "sha256": "c45a212fb0d5195fd94cecf4ccb8247d8ab3f8c5fa4b8e54b6c7866c552743f9",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiEliminate.kernel.json"
+    },
+    "progress/Conjectures.LiEliminate.source.json": {
+      "bytes": 643,
+      "sha256": "7249686985248371adf02ac2943a7ab250a0eb7c02828345aeb9f1a363cb11d2",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiEliminate.source.json"
+    },
+    "progress/Conjectures.LiEmapFinal.kernel.json": {
+      "bytes": 507,
+      "sha256": "e0a810ad336a27ff3136f03bef5ad6287de5bce7720024dbf12b4f63bf8c5cb0",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiEmapFinal.kernel.json"
+    },
+    "progress/Conjectures.LiEmapFinal.source.json": {
+      "bytes": 643,
+      "sha256": "511996f5ce69ed94f5933aac7044fd01ef151b6a8b65992a90cea47757509f2e",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiEmapFinal.source.json"
+    },
+    "progress/Conjectures.LiEvaluationData.kernel.json": {
+      "bytes": 519,
+      "sha256": "0df8c3f76a5c4f719ed0384e7248749ae58300fc7b1e8886624c663afb9ac155",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiEvaluationData.kernel.json"
+    },
+    "progress/Conjectures.LiEvaluationData.source.json": {
+      "bytes": 659,
+      "sha256": "69ef2f647885adf20c6bd99a79d2fa7ed025d11729cad4ff09346e747f0e4667",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiEvaluationData.source.json"
+    },
+    "progress/Conjectures.LiFullCoeff.kernel.json": {
+      "bytes": 508,
+      "sha256": "3e496b7b797795791aaac71ae424c856e5e268a2eb6cb32808b85e9139dd3937",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiFullCoeff.kernel.json"
+    },
+    "progress/Conjectures.LiFullCoeff.source.json": {
+      "bytes": 643,
+      "sha256": "e907527f12f417f6d5b0505091ee20d8c32f0ea11a32c8758a623d166f8353a1",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiFullCoeff.source.json"
+    },
+    "progress/Conjectures.LiFullCoeffTrunc.kernel.json": {
+      "bytes": 527,
+      "sha256": "8da108be643a02faa7e3fcc3b654fd6cc383a1cb175d213953cd420ab2319853",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiFullCoeffTrunc.kernel.json"
+    },
+    "progress/Conjectures.LiFullCoeffTrunc.source.json": {
+      "bytes": 658,
+      "sha256": "42b09b57c5ab84992d57cb577acf8fb2971c06a7267bd44fece237ac0c1f46f6",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiFullCoeffTrunc.source.json"
+    },
+    "progress/Conjectures.LiMain.kernel.json": {
+      "bytes": 498,
+      "sha256": "c7f1087b9cede399a477f86eadbea3dc282e3b43553b1a20b39f916b95913285",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiMain.kernel.json"
+    },
+    "progress/Conjectures.LiMain.source.json": {
+      "bytes": 638,
+      "sha256": "a831817ecff838995c53ccb27b0fa9763cdd79892df97d50e85691a1060164de",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiMain.source.json"
+    },
+    "progress/Conjectures.LiMonomial.kernel.json": {
+      "bytes": 506,
+      "sha256": "e4461d6151be8d9c85f2bbac2228720466bec74d2d5bbc290df5c2cbc0da644e",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiMonomial.kernel.json"
+    },
+    "progress/Conjectures.LiMonomial.source.json": {
+      "bytes": 649,
+      "sha256": "b0681d20cb830a8993b68b62e5097f10d22d8eca936ae94cfa771d7314b763c5",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiMonomial.source.json"
+    },
+    "progress/Conjectures.LiNegativeCoefficient.kernel.json": {
+      "bytes": 528,
+      "sha256": "6148521e06eb79c16dd2acc3d09fba4086ca1fe1a85c91e34ebef6d566a818eb",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiNegativeCoefficient.kernel.json"
+    },
+    "progress/Conjectures.LiNegativeCoefficient.source.json": {
+      "bytes": 672,
+      "sha256": "6787c29ffac7cd67f778e27f263165723319f3a073e36c4aeb67efbdaae67545",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiNegativeCoefficient.source.json"
+    },
+    "progress/Conjectures.LiPartitionsCount.kernel.json": {
+      "bytes": 521,
+      "sha256": "d76d4808ec9c91c4671632a4dfe2ba910c9604d5c15a0be0981bc4854658b72a",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsCount.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsCount.source.json": {
+      "bytes": 673,
+      "sha256": "17bd272afd892d8c562bca1a334d2c9ca6a69e6c6c4017be70f5ac4c9881facc",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsCount.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinal.kernel.json": {
+      "bytes": 522,
+      "sha256": "acf9b65edcb233da555ef4514146504af0299fc11376c73b3753d369234be457",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinal.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinal.source.json": {
+      "bytes": 673,
+      "sha256": "587f8205f05e414e8b59506d3db9a0a4e22cfcce9d0d8abdd4e971886a67a392",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinal.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalCore.kernel.json": {
+      "bytes": 529,
+      "sha256": "5adeb7ceb7fd6c6ba3f48454c69d8f764abbc93a595a203d8f05992321d5dfa5",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalCore.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalCore.source.json": {
+      "bytes": 675,
+      "sha256": "fc75caf529ae12d0d1603248390d34325c667dbe4d28f714ff3a220b07c5d28e",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalCore.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData00.kernel.json": {
+      "bytes": 532,
+      "sha256": "b3066239303d4e1217d610eafcd338e664e243efb941b0fed6cf52037cba2efb",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData00.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData00.source.json": {
+      "bytes": 690,
+      "sha256": "6498b1a74a391409f91084f469f816d568839d2c29009862b064cf0d0b0f7316",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData00.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData01.kernel.json": {
+      "bytes": 532,
+      "sha256": "cf900c26c1876e698c8b0b74a456638c56ab956611fcecbc74b73fbb06a6b502",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData01.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData01.source.json": {
+      "bytes": 681,
+      "sha256": "a17cc2e2bf712cd0a7c8b9d008bfb4e82ebca6c149889c88890ca8e0f9c4f978",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData01.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData02.kernel.json": {
+      "bytes": 542,
+      "sha256": "277713a2b84c7cfd3481d71695fb675f97373fdf163836d30c1b147b5bf03ba5",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData02.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData02.source.json": {
+      "bytes": 681,
+      "sha256": "084825c11d3945574db2a2b05f1e753d8e49e19db30eca9835cb2d9f2fdf61cf",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData02.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData03.kernel.json": {
+      "bytes": 532,
+      "sha256": "8bc314f66245d84f674e97f6f324a793d60810ff5e449fa5033ce6edb4f29b2d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData03.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData03.source.json": {
+      "bytes": 681,
+      "sha256": "ea657ef5dee97ec695c08e3a093258eaa12eb0cf8e13b3c38f8c6289ec38f523",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData03.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData04.kernel.json": {
+      "bytes": 533,
+      "sha256": "55674ed7f31115c03b847e503ec80f270204f254381ffce08079fb52d7670ba9",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData04.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData04.source.json": {
+      "bytes": 681,
+      "sha256": "a38d76ccfa397f06f2716ebded6460ca9dffc1408e9766a75458de0582a6d736",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData04.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData05.kernel.json": {
+      "bytes": 533,
+      "sha256": "2cf632e2fd6679891ca1d4a048296c9af7aaae1a001966365f25f665004b9bc4",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData05.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData05.source.json": {
+      "bytes": 691,
+      "sha256": "4ffe9381a14d97612c91fb70405a076f5fb7d3e83b049aae033ee29cb9ea3f9e",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData05.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData06.kernel.json": {
+      "bytes": 532,
+      "sha256": "84b7a434102dd1aa8e2b52654dd65012189160fd0cf026787c26139a88741922",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData06.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData06.source.json": {
+      "bytes": 681,
+      "sha256": "7ad6088c4949ed50951e39df8d9db1d17a90b01c3328cfe618eec5941ed30b04",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData06.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData07.kernel.json": {
+      "bytes": 533,
+      "sha256": "97046c601f21be50be673b48f4e3927550e6cb434ee39b640632cf851da65bc5",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData07.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData07.source.json": {
+      "bytes": 681,
+      "sha256": "a931f04fc9dd5c980415ab058da70703fe1f997f36473d9016ed458627b8ecc1",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData07.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData08.kernel.json": {
+      "bytes": 533,
+      "sha256": "5522024813badbe66ea48cdc26fd6e28f03a6d29c44140511dc6d3244e548cac",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData08.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData08.source.json": {
+      "bytes": 681,
+      "sha256": "bfba6a9a30940e04870802dfad98f41bd2a75922e92d7a53b0baa4e2e8ba65e7",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData08.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData09.kernel.json": {
+      "bytes": 532,
+      "sha256": "5d2495b5f5ec355d4b475e46d58549db7d55c5602a3e7d668bdc605a64827a4d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData09.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData09.source.json": {
+      "bytes": 681,
+      "sha256": "7c5be0d0bd30ba8f0288e045e577a3719610a0fe3cb8882dd8d3947b932d3f5d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData09.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData10.kernel.json": {
+      "bytes": 533,
+      "sha256": "f4a65255d136e3c8696f4307dfae8f9c3c1ca0646cf5e601043ce2d14f037d2d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData10.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData10.source.json": {
+      "bytes": 681,
+      "sha256": "e446a6f75e3f0ae009e7c709a09d23d3f629b3d7a61d5e16952cb36a2158e8e8",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData10.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData11.kernel.json": {
+      "bytes": 533,
+      "sha256": "2bf43db1a0e12d89356d77bc33cc1c13184df0a51a4c183d7bd2fbcbeef19890",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData11.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData11.source.json": {
+      "bytes": 679,
+      "sha256": "d91dfb1bbf07bf6a8b5066c275d2319165516c4e30182909545804a079f41827",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData11.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData12.kernel.json": {
+      "bytes": 533,
+      "sha256": "59ce3793fdbba04f6c0f2206f035f6453edd9ccb3a6e9e559327ba9afc822f85",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData12.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData12.source.json": {
+      "bytes": 691,
+      "sha256": "7b4acafb5607b603473dbe9ed411cab246e4c517fc91b104f53d34ac125989fc",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData12.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData13.kernel.json": {
+      "bytes": 533,
+      "sha256": "fd39c12ea2a88d5872e4309c89a929ea2944d63dda4efabae6d4b2ce485a0cd4",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData13.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalData13.source.json": {
+      "bytes": 681,
+      "sha256": "b802a02698e226a1a3067dc60a5f9a84dd83b982e006a50e7650e6a8da8e554f",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalData13.source.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalEnum.kernel.json": {
+      "bytes": 528,
+      "sha256": "3a96082b0ac047197f6f05ee37baaa44ba36a6538e3eec63293797924fa15008",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalEnum.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsFinalEnum.source.json": {
+      "bytes": 673,
+      "sha256": "a477e2a7d40db84638df5bf11062e8ea464179425ee8034907e312fd16510778",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsFinalEnum.source.json"
+    },
+    "progress/Conjectures.LiPartitionsGraph.kernel.json": {
+      "bytes": 520,
+      "sha256": "842be455ac62d2f21c4d4364b13e612529f8d816d9d1dfa580961a5182bf1734",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsGraph.kernel.json"
+    },
+    "progress/Conjectures.LiPartitionsGraph.source.json": {
+      "bytes": 660,
+      "sha256": "0fc6668a29df913fe293ea1c9f7bba72dfa2ed965762aeaa45fe106c2f30446a",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiPartitionsGraph.source.json"
+    },
+    "progress/Conjectures.LiSpecFinal.kernel.json": {
+      "bytes": 507,
+      "sha256": "ebb2643f23a21fd31680ab5040f2d82bdf6d22e16f32356e055e2c93ec29e797",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiSpecFinal.kernel.json"
+    },
+    "progress/Conjectures.LiSpecFinal.source.json": {
+      "bytes": 653,
+      "sha256": "019c5ac588fd749dee3dab935f2e0efc4cebdfefc1ed56c0ef1accb0364e737f",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiSpecFinal.source.json"
+    },
+    "progress/Conjectures.LiTriples2.kernel.json": {
+      "bytes": 506,
+      "sha256": "c5be8551b437d5cd28394876e51a9b0bb9590dcaf84d9bce8aef1083f80c2dbf",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiTriples2.kernel.json"
+    },
+    "progress/Conjectures.LiTriples2.source.json": {
+      "bytes": 639,
+      "sha256": "d21124784492ca8e9254d53c9200fb78135d9afc46048c4b7aab1d01a11777fd",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiTriples2.source.json"
+    },
+    "progress/Conjectures.LiTriplesBridge.kernel.json": {
+      "bytes": 517,
+      "sha256": "3821b698f80dc92b6f3a02b0106f9f8eeb4f60b66659802796d56fa74095ae61",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiTriplesBridge.kernel.json"
+    },
+    "progress/Conjectures.LiTriplesBridge.source.json": {
+      "bytes": 657,
+      "sha256": "deef7d24ff3ee2d459e5718dc4214496489ffdbe9727de3198f98648c3a99d9a",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiTriplesBridge.source.json"
+    },
+    "progress/Conjectures.LiTriplesFinal.kernel.json": {
+      "bytes": 515,
+      "sha256": "e58b7689aec1332c2cc64fcbb371221e12859cb508d61fa917cade6a4154905d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiTriplesFinal.kernel.json"
+    },
+    "progress/Conjectures.LiTriplesFinal.source.json": {
+      "bytes": 654,
+      "sha256": "25b60623f6b44aff5ed5fd272667503ea4f47f5728af5d24eaaa68a7099fb259",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiTriplesFinal.source.json"
+    },
+    "progress/Conjectures.LiTrunc.kernel.json": {
+      "bytes": 498,
+      "sha256": "08168eb1fce8897daa039ce8df0c817c5431a7ac87f03d4ec7138153a243bb62",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiTrunc.kernel.json"
+    },
+    "progress/Conjectures.LiTrunc.source.json": {
+      "bytes": 641,
+      "sha256": "ac18293463c679f8701b4dfb1730e7bc75f5323a4f88ecc05bf008d42f4aeeb6",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiTrunc.source.json"
+    },
+    "progress/Conjectures.LiWeighted.kernel.json": {
+      "bytes": 505,
+      "sha256": "be8e39fc124754266566e649b0b48f5103ca116e3b2eeae34f31ee9e9648344f",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiWeighted.kernel.json"
+    },
+    "progress/Conjectures.LiWeighted.source.json": {
+      "bytes": 640,
+      "sha256": "3c9f40dbbb7e68954ad8c69f3e35e95e8c8053edd3a144e09959e3b57b83cecc",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiWeighted.source.json"
+    },
+    "progress/Conjectures.LiWeighted2.kernel.json": {
+      "bytes": 508,
+      "sha256": "fcc2326ee048d3e740b2fc220faa85166f8e68cf6b8252a91a29fb041d2c3867",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiWeighted2.kernel.json"
+    },
+    "progress/Conjectures.LiWeighted2.source.json": {
+      "bytes": 643,
+      "sha256": "659d8bebeaaac6c7e545dd10484e9beb6e825d05d55c1068a8afe25a4c395b11",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/Conjectures.LiWeighted2.source.json"
+    },
+    "progress/all-owned-audit.json": {
+      "bytes": 484,
+      "sha256": "00a04bf18eadc4a75370d43b4fa5782e0aee235f6cfabe60f494854cd921bcd4",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/all-owned-audit.json"
+    },
+    "progress/literal-statements.json": {
+      "bytes": 501,
+      "sha256": "640253dac1274bed4c6a65800656b90f564a1818221a1558f53144d1b5bf86bb",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/progress/literal-statements.json"
+    },
+    "receipt.json": {
+      "bytes": 151928,
+      "sha256": "da585dbd99530825af7bac8c4730c1a6666bfa151ce98ad4c6f52b9d537aa09d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/receipt.json"
+    },
+    "src/Conjectures/LiBasic.lean": {
+      "bytes": 7728,
+      "sha256": "db9ef588d196a4842be654cd68d8b44e2424ca2c2f4343efabe75d60024acda9",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiBasic.lean"
+    },
+    "src/Conjectures/LiBridge.lean": {
+      "bytes": 2221,
+      "sha256": "d2367d609168657dcc7f6e15d632ef0ad4dfcab0e49456efbf24c403be7c55ba",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiBridge.lean"
+    },
+    "src/Conjectures/LiChromatic.lean": {
+      "bytes": 3221,
+      "sha256": "fdb1bcc7a42f959995157f468686f3b8388db18c6da3c2a3bb58b7b705fae6cd",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiChromatic.lean"
+    },
+    "src/Conjectures/LiCoefficientExtraction.lean": {
+      "bytes": 5301,
+      "sha256": "f909e2388f5d8f342e471351da94f71d8a4763aa4ccf23f7ca1840706561d8ca",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiCoefficientExtraction.lean"
+    },
+    "src/Conjectures/LiCoefficientInterpolation.lean": {
+      "bytes": 7950,
+      "sha256": "a9f45cc552b532dda388f7cd6ec8feee2b54ac59d51f2a18f8f3d21d45701297",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiCoefficientInterpolation.lean"
+    },
+    "src/Conjectures/LiCompute.lean": {
+      "bytes": 66590,
+      "sha256": "e4957d50ab54dffca6af34b91e4f7ad708673453638ace99d065b8a8019af3f6",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiCompute.lean"
+    },
+    "src/Conjectures/LiConnectedPartitions.lean": {
+      "bytes": 12386,
+      "sha256": "15da52c038057d94211228d82b11f94bbf6080a42c8a865ef994ce72ea2c33f4",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiConnectedPartitions.lean"
+    },
+    "src/Conjectures/LiCounterexample.lean": {
+      "bytes": 8941,
+      "sha256": "1cba0a505620266dd1a1f11ff13a9c84e7ee96523d9d24c54101b2bd8762a6e2",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiCounterexample.lean"
+    },
+    "src/Conjectures/LiDualFull.lean": {
+      "bytes": 4600,
+      "sha256": "69d4646dceb7291f4482ce085799c89bc4a711785d0bf29ed3724af473c5d05f",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiDualFull.lean"
+    },
+    "src/Conjectures/LiDualTrunc.lean": {
+      "bytes": 3256,
+      "sha256": "00f18dcdb6aec36ee60df7fd332c7494c08efdab7d9b58eb6c1e868ea87b96e4",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiDualTrunc.lean"
+    },
+    "src/Conjectures/LiEliminate.lean": {
+      "bytes": 11196,
+      "sha256": "908f594e8b53af795b15443142853fa267a069260b0f25836b99fd2eef7b337d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiEliminate.lean"
+    },
+    "src/Conjectures/LiEmapFinal.lean": {
+      "bytes": 2253,
+      "sha256": "c871bf8288239662b4ed42cd4805844d5d64671de6e5623b421a17b50b22f8f8",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiEmapFinal.lean"
+    },
+    "src/Conjectures/LiEvaluationData.lean": {
+      "bytes": 37847,
+      "sha256": "3f4b35b618373202850ade42c16ea63d128d76ec6f28cfed9d4525ff83ba9dda",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiEvaluationData.lean"
+    },
+    "src/Conjectures/LiFullCoeff.lean": {
+      "bytes": 24315,
+      "sha256": "aaecad0cad5cd44cd1efdaf89eae8ab0263d004c54ef550f0b0eb7a61360ab29",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiFullCoeff.lean"
+    },
+    "src/Conjectures/LiFullCoeffTrunc.lean": {
+      "bytes": 24285,
+      "sha256": "0f369b76664829cc4c28a55246d17ecfcccd2c94381d1e94033c1b1ad746b7de",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiFullCoeffTrunc.lean"
+    },
+    "src/Conjectures/LiMain.lean": {
+      "bytes": 1904,
+      "sha256": "bb12b26c7775d2d83b6b377f7238704f57c1364fe1136d218ed2ca823a05be4a",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiMain.lean"
+    },
+    "src/Conjectures/LiMonomial.lean": {
+      "bytes": 4809,
+      "sha256": "db12dac8b4896c8f87474e20443cb909c2b485d6a16b104e792627b187b95e19",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiMonomial.lean"
+    },
+    "src/Conjectures/LiNegativeCoefficient.lean": {
+      "bytes": 9018,
+      "sha256": "93812ceabe73c9fcec15e6044258ffa31129341927e5c7e13b2c89da5532d1fe",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiNegativeCoefficient.lean"
+    },
+    "src/Conjectures/LiPartitionsCount.lean": {
+      "bytes": 9815,
+      "sha256": "828b1e9087567a79db4ccf37b5ca2aa97e7b95089b6ff0d6e9233c87b754ee19",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsCount.lean"
+    },
+    "src/Conjectures/LiPartitionsFinal.lean": {
+      "bytes": 5903,
+      "sha256": "094f670f6ac8a68d303314f9b0c04c68d3f643187ae6cb501e621e2aa797ca60",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinal.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalCore.lean": {
+      "bytes": 6748,
+      "sha256": "2f3d9fbd74fda5501eea649010052a1d3f6c0fe99995e1b164a474bed740b7b7",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalCore.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData00.lean": {
+      "bytes": 33270,
+      "sha256": "25f5c72f6e89292df7ab1c6ab05c778586eccd6c83e37d9a58b22881cd2df063",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData00.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData01.lean": {
+      "bytes": 28662,
+      "sha256": "9f290c4e4cd41d36d099e2095e40cc913f429a059bd447ea443e67182d3eabfe",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData01.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData02.lean": {
+      "bytes": 26325,
+      "sha256": "cd809be698821424fa86ee505241aed9b9928e5688076a43326def2b838f2f59",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData02.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData03.lean": {
+      "bytes": 24348,
+      "sha256": "de525ad1e09446c5da7b91b83f0d945c04ba3785ab4bec659c24a0fcb4bec37c",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData03.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData04.lean": {
+      "bytes": 24832,
+      "sha256": "8c38ba62f873b378dfcc7d2473c95584ffcf13d56b972bcb54b13939cecda967",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData04.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData05.lean": {
+      "bytes": 23195,
+      "sha256": "3c20a4ae2041eadf8570ecdbb7009242a98dc4116b5580b4c5ea26f4d51c23eb",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData05.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData06.lean": {
+      "bytes": 21938,
+      "sha256": "b903d57abea88b5c88ae2d764b967012245e6bc0a8bc28fb3fe40adba468ab0e",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData06.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData07.lean": {
+      "bytes": 23246,
+      "sha256": "5ffe405e98de9f39dba770675a748e15093e364aa386cef4262d282327753ef5",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData07.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData08.lean": {
+      "bytes": 21888,
+      "sha256": "c861d2be26968b67b075c950f05e34a7115c578ceaf5ad180d9e9e9042e9f639",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData08.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData09.lean": {
+      "bytes": 20903,
+      "sha256": "9f6542b71b7ad3e101eb13d4b6ac4b10a51cc1208ed5952eff5cc683ad50fc9d",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData09.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData10.lean": {
+      "bytes": 20094,
+      "sha256": "b7661a58aac4834e2210fcce7df83f8017e9e79c1f721a0dd814bcb16a3df6d9",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData10.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData11.lean": {
+      "bytes": 19173,
+      "sha256": "521757fa659fd8fb3a5394fbdf90fe2bce596bda053adf213b37ba654eba4676",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData11.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData12.lean": {
+      "bytes": 17737,
+      "sha256": "08a3bc078443f2d0d566379f01981983994d1a02d250c1eea161049087f75949",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData12.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalData13.lean": {
+      "bytes": 10541,
+      "sha256": "f2282214ba7bb04d4a8bf5c28a69889f8a2c846e5fb62aa0f84bf70aed5dacd9",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalData13.lean"
+    },
+    "src/Conjectures/LiPartitionsFinalEnum.lean": {
+      "bytes": 5348,
+      "sha256": "7cb7b1e043c4dcc7ad0aa49562ffe828c80f6a1bda3a3f9833a4043742764311",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsFinalEnum.lean"
+    },
+    "src/Conjectures/LiPartitionsGraph.lean": {
+      "bytes": 44167,
+      "sha256": "da54af063a182f5febff19abb571f3c99dcd2164ea2ebf3ccf92b8b9777cb5ac",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiPartitionsGraph.lean"
+    },
+    "src/Conjectures/LiSpecFinal.lean": {
+      "bytes": 2503,
+      "sha256": "8b13f8356139919b40360ca923375d9ec2e3aabae549b39e02702a86f25bb131",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiSpecFinal.lean"
+    },
+    "src/Conjectures/LiTriples2.lean": {
+      "bytes": 8130,
+      "sha256": "e26b778d4f52820ee1d4431357739a0d5399c9d5348930a4efd7f718f307de1e",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiTriples2.lean"
+    },
+    "src/Conjectures/LiTriplesBridge.lean": {
+      "bytes": 11753,
+      "sha256": "a6ea9ad6897e76fe0eaae3e382d3a83f06abaa8f9d7adfc5ae3778d5bcfa282c",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiTriplesBridge.lean"
+    },
+    "src/Conjectures/LiTriplesFinal.lean": {
+      "bytes": 30175,
+      "sha256": "6da5825edae98313c139008c97d711d8d75802593f5d0f9f99f81ca738c9c676",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiTriplesFinal.lean"
+    },
+    "src/Conjectures/LiTrunc.lean": {
+      "bytes": 3022,
+      "sha256": "e4e28fcddc6ce61f6d29e0cc2277a84542877d6c00ce0a2942a9f0d3f1434e91",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiTrunc.lean"
+    },
+    "src/Conjectures/LiWeighted.lean": {
+      "bytes": 2107,
+      "sha256": "84d06d43c3dc9b555d6db3844f5b93e8598fe148d4602ccfd517fca8bf1a09b8",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiWeighted.lean"
+    },
+    "src/Conjectures/LiWeighted2.lean": {
+      "bytes": 11354,
+      "sha256": "2a07e2d4fbf5cea957d08fae3eb1a303d18a01d2ec3d5aea5de60387f05c16a0",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/Conjectures/LiWeighted2.lean"
+    },
+    "src/LiExactAudit.lean": {
+      "bytes": 11056,
+      "sha256": "ea5ef62dc81f5483f4cfc7baaa74640227d6358866e72aac11dbc7de05cf2531",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/LiExactAudit.lean"
+    },
+    "src/LiExactStatements.lean": {
+      "bytes": 9230,
+      "sha256": "14b9ca268b5bf943f1656b21119b43adfa5529cf0414479c0f1ad762079ef53b",
+      "stored_path": "docs/verification/li-exact-44599210697/artifact/src/LiExactStatements.lean"
+    }
+  },
+  "job_id": 135825706963,
+  "no_proof_or_receipt_rewriting": true,
+  "original_archive_member_count": 272,
+  "original_gate_controls_sha256": {
+    ".github/workflows/lean-li-exact.yml": "f384d9a2e6e814ed061d9e75b6fbb683ed29c88623739b512e1d1ccc5f45c816",
+    "docs/li-exact-sources.json": "6625ba9585caba15395d604d208b6577866a071622e6694ab0a94fd3be683724",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+    "scripts/verify_li_exact.py": "5533b789c681e32b3894994e937d6313757faeccdd078d6c68ea87bb9832b67c"
+  },
+  "original_receipt_sha256": "da585dbd99530825af7bac8c4730c1a6666bfa151ce98ad4c6f52b9d537aa09d",
+  "original_text_bytes": 1863329,
+  "raw_occurrence_supplement": "../li-hosted44-raw-44606051622/manifest.json",
+  "run_id": 44599210697,
+  "schema": "li-hosted-evidence-preservation-v1",
+  "source_commit": "20e0e95eb421cf8ea728d34aa29a6d0eb1137789",
+  "status": "authenticated original hosted pass"
+}

@@ -1,0 +1,462 @@
+{
+  "baseline-authentication.json": {
+    "bytes": 51750,
+    "sha256": "994cfec023cb7d04ba85863737eeaf97c2cf6261d1c5ee18798465cc8db26fd9"
+  },
+  "baseline-receipt.json": {
+    "bytes": 151928,
+    "sha256": "da585dbd99530825af7bac8c4730c1a6666bfa151ce98ad4c6f52b9d537aa09d"
+  },
+  "controls/.github/workflows/lean-li-exact.yml": {
+    "bytes": 3939,
+    "sha256": "f384d9a2e6e814ed061d9e75b6fbb683ed29c88623739b512e1d1ccc5f45c816"
+  },
+  "controls/.github/workflows/lean-li-hosted44-raw.yml": {
+    "bytes": 4459,
+    "sha256": "2c6a30f0bf76072a40fe61ad01f93735eea3f78c361be509c6bf49f28ae00c9c"
+  },
+  "controls/docs/li-exact-sources.json": {
+    "bytes": 11259,
+    "sha256": "6625ba9585caba15395d604d208b6577866a071622e6694ab0a94fd3be683724"
+  },
+  "controls/lean/lake-manifest.json": {
+    "bytes": 3206,
+    "sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953"
+  },
+  "controls/lean/lakefile.toml": {
+    "bytes": 348,
+    "sha256": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089"
+  },
+  "controls/lean/lean-toolchain": {
+    "bytes": 25,
+    "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "controls/scripts/audit_lean_all_owned.py": {
+    "bytes": 12337,
+    "sha256": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f"
+  },
+  "controls/scripts/audit_lean_raw_occurrences.py": {
+    "bytes": 36538,
+    "sha256": "7c366fa3983ed26b2356c417552b861ff235c5bb34848810191c13b5322c9cea"
+  },
+  "controls/scripts/authenticate_li_hosted44.py": {
+    "bytes": 24141,
+    "sha256": "8dd2d36c204285551fd148dcc8f7e5f334bc855c1fa91d2fc70e19b61a5f1e79"
+  },
+  "controls/scripts/build_lean_parallel.py": {
+    "bytes": 20329,
+    "sha256": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd"
+  },
+  "controls/scripts/plan_accepted_lean.py": {
+    "bytes": 22962,
+    "sha256": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842"
+  },
+  "controls/scripts/plan_lean_candidates.py": {
+    "bytes": 2650,
+    "sha256": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0"
+  },
+  "controls/scripts/replay_lean.py": {
+    "bytes": 7788,
+    "sha256": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c"
+  },
+  "controls/scripts/verify_frankl_orbit_batches.py": {
+    "bytes": 21559,
+    "sha256": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf"
+  },
+  "controls/scripts/verify_lean_candidate.py": {
+    "bytes": 14161,
+    "sha256": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "controls/scripts/verify_li_exact.py": {
+    "bytes": 31035,
+    "sha256": "5533b789c681e32b3894994e937d6313757faeccdd078d6c68ea87bb9832b67c"
+  },
+  "controls/scripts/verify_li_hosted44_raw.py": {
+    "bytes": 20909,
+    "sha256": "779eeaed3c041704789aed0ca6f738a6e4e6bb87d5a8318540f50ab4e57c701e"
+  },
+  "declaration-inventory.json": {
+    "bytes": 15290602,
+    "sha256": "8327dde5d71b50a1016963a8b3905a18af2d14702f139e9c59963513aac5ea67"
+  },
+  "lib/lean/Conjectures/LiBasic.olean": {
+    "bytes": 459392,
+    "sha256": "a0f4acb39759058b4250dc69e9d1cebc4d0e904300382ed845c81b99816c5687"
+  },
+  "lib/lean/Conjectures/LiBridge.olean": {
+    "bytes": 77072,
+    "sha256": "3684f9518dd5e6f1f83d1883c1289892727f716100f2da4db9c416ff670fc0b1"
+  },
+  "lib/lean/Conjectures/LiChromatic.olean": {
+    "bytes": 140760,
+    "sha256": "007fbd6d089372629a11b2a1cccff92c4ae4b68e6785441fb669254ce4e39912"
+  },
+  "lib/lean/Conjectures/LiCoefficientExtraction.olean": {
+    "bytes": 720128,
+    "sha256": "b791d4121cf4334499e33b47d61d3f53c40db9e0104ecabac87d24421a5ee9ec"
+  },
+  "lib/lean/Conjectures/LiCoefficientInterpolation.olean": {
+    "bytes": 1747120,
+    "sha256": "0d763cdf7818ef586efaaebaf2d26f99314c29790bfa219587dde789b4fe8d2b"
+  },
+  "lib/lean/Conjectures/LiCompute.olean": {
+    "bytes": 2852968,
+    "sha256": "21afa19a52d17bf45be84e45f2599af7bbef7afba2d60f8495be270a4411fd77"
+  },
+  "lib/lean/Conjectures/LiConnectedPartitions.olean": {
+    "bytes": 272928,
+    "sha256": "41f9ef0d7e93e1b4395546355c3efef9ca81f33d0f28f5476f5d1a61028bd20f"
+  },
+  "lib/lean/Conjectures/LiCounterexample.olean": {
+    "bytes": 135008,
+    "sha256": "2344d26ad4c8d197c7d3f3a4af124a0f1367697c102338b3490e14dde5e1927a"
+  },
+  "lib/lean/Conjectures/LiDualFull.olean": {
+    "bytes": 335272,
+    "sha256": "68213f2983699f7aec7a57a2b6790ac8afe419e214348fa17f1f9cd5afe0864f"
+  },
+  "lib/lean/Conjectures/LiDualTrunc.olean": {
+    "bytes": 83064,
+    "sha256": "fcd94bd5989a5d81336e0239b6d3c5cebb09fc77bdc94574d0d6d7c1b4b2a958"
+  },
+  "lib/lean/Conjectures/LiEliminate.olean": {
+    "bytes": 601072,
+    "sha256": "30450c407c24e655165cad03d4481c06b14b9335085e784d741fda0bc8a59e51"
+  },
+  "lib/lean/Conjectures/LiEmapFinal.olean": {
+    "bytes": 179136,
+    "sha256": "6eee22a86ba3218e4de1756c892038febebb877ad47330851c0a6b48fae1c6a5"
+  },
+  "lib/lean/Conjectures/LiEvaluationData.olean": {
+    "bytes": 8127072,
+    "sha256": "3b3f234a49024bfc49a0a87964d2ab506eeaf4ca3d62f555b9c8dc45de6b6c1f"
+  },
+  "lib/lean/Conjectures/LiFullCoeff.olean": {
+    "bytes": 605872,
+    "sha256": "f3271acf8434d406d96ea725f9253e632e18993eb7340fb4ad3b83b453b333f1"
+  },
+  "lib/lean/Conjectures/LiFullCoeffTrunc.olean": {
+    "bytes": 642760,
+    "sha256": "d84b9277dbbdecef75c29d8ee0547e30b0294291a7e3aaa56270d760f8d6a5b2"
+  },
+  "lib/lean/Conjectures/LiMain.olean": {
+    "bytes": 111864,
+    "sha256": "5f67b4283878a774dc7f3d172bc4791909ab681d46838637842f759867b744c5"
+  },
+  "lib/lean/Conjectures/LiMonomial.olean": {
+    "bytes": 345312,
+    "sha256": "b41f70d0cddee6518271cb3c72689927c2f82c834f95f9e1b9ea3a578f8bd679"
+  },
+  "lib/lean/Conjectures/LiNegativeCoefficient.olean": {
+    "bytes": 408296,
+    "sha256": "4f098eb10502c8952ed15922309b77c176cf04a32451e2ad9f686354e5311e56"
+  },
+  "lib/lean/Conjectures/LiPartitionsCount.olean": {
+    "bytes": 187928,
+    "sha256": "3c8c262924252fce115b813d6270c225812429560a9f85110fd766e367e3e68d"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinal.olean": {
+    "bytes": 129360,
+    "sha256": "27057050c989c56698c25052e1a6ce2174789743aff4431f500d73e436684abd"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalCore.olean": {
+    "bytes": 412464,
+    "sha256": "d2b951b98c4a42cb3534acb87dadbb91afdccb94169430759af8c1da937ea1b5"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData00.olean": {
+    "bytes": 4137888,
+    "sha256": "2f132e1525812303b83f86fb94d15d7007c0d565bbc649a00493f05a09c6a5e8"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData01.olean": {
+    "bytes": 4177936,
+    "sha256": "7b9fc1b6a39206d647ced9190fe79acf0737b48c97c21805f9539acb2cd96726"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData02.olean": {
+    "bytes": 4290704,
+    "sha256": "5dcd4b69bbda3039e2a877169d5fa48c8809e3a0d1f597dc205eab6f944bd129"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData03.olean": {
+    "bytes": 4171824,
+    "sha256": "813a12489404f862fd99ce309af642bd64eb6ef5a64d26430d235537dcf67e82"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData04.olean": {
+    "bytes": 4114152,
+    "sha256": "d2a6ec0e129e96bc67b29c77f3d9cca6d6f6132195f44906772a71c11abafc26"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData05.olean": {
+    "bytes": 3972200,
+    "sha256": "a6c7af76b1ea1e1b104ea839592b08cabccd158981327e858dc56239fb0e1dd2"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData06.olean": {
+    "bytes": 3927400,
+    "sha256": "cabc448d86215902137d8b216d4d760c76602224d12e54135a32c18247f17398"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData07.olean": {
+    "bytes": 3860368,
+    "sha256": "6e6441c5eb703a6d6c6d3dd564f41372801d460afe7396db4b6183c2554a8dc4"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData08.olean": {
+    "bytes": 3755216,
+    "sha256": "66cbec6143ceafce9d984413d9c1f2f24819e40016789e14a4972722f8c3cc1d"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData09.olean": {
+    "bytes": 3639584,
+    "sha256": "afefc8b0becc29c9ff36d9fdd8803426c3bb71c9a1811c6b5de8d09fd8a394e8"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData10.olean": {
+    "bytes": 3486912,
+    "sha256": "e8153f148379dbabd4f87e0e0e9a070bb7871cba7a3227306343ab805639aebb"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData11.olean": {
+    "bytes": 3347968,
+    "sha256": "b4ad7955731d9f58d01aaaa7f644b19297c5c42de8ecf6622336d2c8c076e9ed"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData12.olean": {
+    "bytes": 3192088,
+    "sha256": "6fba84bdcbf90abb34a74a29d37e7f997f9f2b329da1a6e56c14b3d2bef2dbd7"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalData13.olean": {
+    "bytes": 2020664,
+    "sha256": "13c0504668adca809b96e724f92b1c785f0aafbcb755e39105aea292c937c5b3"
+  },
+  "lib/lean/Conjectures/LiPartitionsFinalEnum.olean": {
+    "bytes": 287192,
+    "sha256": "70c330e2a1e8a6fd29d20b63914fbf6e214e4d2eefcc9c6f9702a675a65abfe5"
+  },
+  "lib/lean/Conjectures/LiPartitionsGraph.olean": {
+    "bytes": 1057752,
+    "sha256": "3ee78c24ae766e215da25354e3d1751150b9bd3d154535af29f9f598be2bccb9"
+  },
+  "lib/lean/Conjectures/LiSpecFinal.olean": {
+    "bytes": 136040,
+    "sha256": "36c5b62839cb140161e717f4d2de6a4dceb65d2b97ee22ae5c1edf34068cba00"
+  },
+  "lib/lean/Conjectures/LiTriples2.olean": {
+    "bytes": 610720,
+    "sha256": "39cbd12fcedae3430eb6b96adc4f2a2ea87159cd5c3ecfc191a33a9f6ec0b97c"
+  },
+  "lib/lean/Conjectures/LiTriplesBridge.olean": {
+    "bytes": 288272,
+    "sha256": "f1f8a064c2a6d38cf6c8f24e0ecd6b8d50bd71d03d014e2e9b7e6409fcfb671c"
+  },
+  "lib/lean/Conjectures/LiTriplesFinal.olean": {
+    "bytes": 804032,
+    "sha256": "e87e69904ccf43ab0d90ae430a3d2333102332dc2d5a358adf7f81e2ddc7b36d"
+  },
+  "lib/lean/Conjectures/LiTrunc.olean": {
+    "bytes": 208232,
+    "sha256": "97a78d96daa06fdaa9f505a873d0df53f41c4661de477e41c21a1ed8390ee84e"
+  },
+  "lib/lean/Conjectures/LiWeighted.olean": {
+    "bytes": 76704,
+    "sha256": "4dc5612e50d0c4afc3f3a55eb5b842809d97bd769d5204b58385e9eeea7fcf17"
+  },
+  "lib/lean/Conjectures/LiWeighted2.olean": {
+    "bytes": 187096,
+    "sha256": "0f994c74a193f86e0990a49c20effd4d82e7a77cb20cccbd1c9a5226fee6e1ff"
+  },
+  "logs/literal-statements.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/raw-all-owned-audit.log": {
+    "bytes": 8746966,
+    "sha256": "21a37cd3a1ce544101b17bef753098dac337f5c8ef74e73466fc8d40e6004cea"
+  },
+  "progress/literal-statements.json": {
+    "bytes": 501,
+    "sha256": "7589e1be9ecdb0c8f6b41828be68f12bd1dc4870a55b6b20e61e66b65b008819"
+  },
+  "progress/raw-all-owned-audit.json": {
+    "bytes": 508,
+    "sha256": "efd7ebd9083485dd6b27f0fde0a5971605151042dc43245b7f23b3c5e1a4df9b"
+  },
+  "receipt.json": {
+    "bytes": 57158,
+    "sha256": "8cb7e81896bc67b3c68ed976f256e6894b6c52318063ab0894360fed1d0a8b46"
+  },
+  "src/Conjectures/LiBasic.lean": {
+    "bytes": 7728,
+    "sha256": "db9ef588d196a4842be654cd68d8b44e2424ca2c2f4343efabe75d60024acda9"
+  },
+  "src/Conjectures/LiBridge.lean": {
+    "bytes": 2221,
+    "sha256": "d2367d609168657dcc7f6e15d632ef0ad4dfcab0e49456efbf24c403be7c55ba"
+  },
+  "src/Conjectures/LiChromatic.lean": {
+    "bytes": 3221,
+    "sha256": "fdb1bcc7a42f959995157f468686f3b8388db18c6da3c2a3bb58b7b705fae6cd"
+  },
+  "src/Conjectures/LiCoefficientExtraction.lean": {
+    "bytes": 5301,
+    "sha256": "f909e2388f5d8f342e471351da94f71d8a4763aa4ccf23f7ca1840706561d8ca"
+  },
+  "src/Conjectures/LiCoefficientInterpolation.lean": {
+    "bytes": 7950,
+    "sha256": "a9f45cc552b532dda388f7cd6ec8feee2b54ac59d51f2a18f8f3d21d45701297"
+  },
+  "src/Conjectures/LiCompute.lean": {
+    "bytes": 66590,
+    "sha256": "e4957d50ab54dffca6af34b91e4f7ad708673453638ace99d065b8a8019af3f6"
+  },
+  "src/Conjectures/LiConnectedPartitions.lean": {
+    "bytes": 12386,
+    "sha256": "15da52c038057d94211228d82b11f94bbf6080a42c8a865ef994ce72ea2c33f4"
+  },
+  "src/Conjectures/LiCounterexample.lean": {
+    "bytes": 8941,
+    "sha256": "1cba0a505620266dd1a1f11ff13a9c84e7ee96523d9d24c54101b2bd8762a6e2"
+  },
+  "src/Conjectures/LiDualFull.lean": {
+    "bytes": 4600,
+    "sha256": "69d4646dceb7291f4482ce085799c89bc4a711785d0bf29ed3724af473c5d05f"
+  },
+  "src/Conjectures/LiDualTrunc.lean": {
+    "bytes": 3256,
+    "sha256": "00f18dcdb6aec36ee60df7fd332c7494c08efdab7d9b58eb6c1e868ea87b96e4"
+  },
+  "src/Conjectures/LiEliminate.lean": {
+    "bytes": 11196,
+    "sha256": "908f594e8b53af795b15443142853fa267a069260b0f25836b99fd2eef7b337d"
+  },
+  "src/Conjectures/LiEmapFinal.lean": {
+    "bytes": 2253,
+    "sha256": "c871bf8288239662b4ed42cd4805844d5d64671de6e5623b421a17b50b22f8f8"
+  },
+  "src/Conjectures/LiEvaluationData.lean": {
+    "bytes": 37847,
+    "sha256": "3f4b35b618373202850ade42c16ea63d128d76ec6f28cfed9d4525ff83ba9dda"
+  },
+  "src/Conjectures/LiFullCoeff.lean": {
+    "bytes": 24315,
+    "sha256": "aaecad0cad5cd44cd1efdaf89eae8ab0263d004c54ef550f0b0eb7a61360ab29"
+  },
+  "src/Conjectures/LiFullCoeffTrunc.lean": {
+    "bytes": 24285,
+    "sha256": "0f369b76664829cc4c28a55246d17ecfcccd2c94381d1e94033c1b1ad746b7de"
+  },
+  "src/Conjectures/LiMain.lean": {
+    "bytes": 1904,
+    "sha256": "bb12b26c7775d2d83b6b377f7238704f57c1364fe1136d218ed2ca823a05be4a"
+  },
+  "src/Conjectures/LiMonomial.lean": {
+    "bytes": 4809,
+    "sha256": "db12dac8b4896c8f87474e20443cb909c2b485d6a16b104e792627b187b95e19"
+  },
+  "src/Conjectures/LiNegativeCoefficient.lean": {
+    "bytes": 9018,
+    "sha256": "93812ceabe73c9fcec15e6044258ffa31129341927e5c7e13b2c89da5532d1fe"
+  },
+  "src/Conjectures/LiPartitionsCount.lean": {
+    "bytes": 9815,
+    "sha256": "828b1e9087567a79db4ccf37b5ca2aa97e7b95089b6ff0d6e9233c87b754ee19"
+  },
+  "src/Conjectures/LiPartitionsFinal.lean": {
+    "bytes": 5903,
+    "sha256": "094f670f6ac8a68d303314f9b0c04c68d3f643187ae6cb501e621e2aa797ca60"
+  },
+  "src/Conjectures/LiPartitionsFinalCore.lean": {
+    "bytes": 6748,
+    "sha256": "2f3d9fbd74fda5501eea649010052a1d3f6c0fe99995e1b164a474bed740b7b7"
+  },
+  "src/Conjectures/LiPartitionsFinalData00.lean": {
+    "bytes": 33270,
+    "sha256": "25f5c72f6e89292df7ab1c6ab05c778586eccd6c83e37d9a58b22881cd2df063"
+  },
+  "src/Conjectures/LiPartitionsFinalData01.lean": {
+    "bytes": 28662,
+    "sha256": "9f290c4e4cd41d36d099e2095e40cc913f429a059bd447ea443e67182d3eabfe"
+  },
+  "src/Conjectures/LiPartitionsFinalData02.lean": {
+    "bytes": 26325,
+    "sha256": "cd809be698821424fa86ee505241aed9b9928e5688076a43326def2b838f2f59"
+  },
+  "src/Conjectures/LiPartitionsFinalData03.lean": {
+    "bytes": 24348,
+    "sha256": "de525ad1e09446c5da7b91b83f0d945c04ba3785ab4bec659c24a0fcb4bec37c"
+  },
+  "src/Conjectures/LiPartitionsFinalData04.lean": {
+    "bytes": 24832,
+    "sha256": "8c38ba62f873b378dfcc7d2473c95584ffcf13d56b972bcb54b13939cecda967"
+  },
+  "src/Conjectures/LiPartitionsFinalData05.lean": {
+    "bytes": 23195,
+    "sha256": "3c20a4ae2041eadf8570ecdbb7009242a98dc4116b5580b4c5ea26f4d51c23eb"
+  },
+  "src/Conjectures/LiPartitionsFinalData06.lean": {
+    "bytes": 21938,
+    "sha256": "b903d57abea88b5c88ae2d764b967012245e6bc0a8bc28fb3fe40adba468ab0e"
+  },
+  "src/Conjectures/LiPartitionsFinalData07.lean": {
+    "bytes": 23246,
+    "sha256": "5ffe405e98de9f39dba770675a748e15093e364aa386cef4262d282327753ef5"
+  },
+  "src/Conjectures/LiPartitionsFinalData08.lean": {
+    "bytes": 21888,
+    "sha256": "c861d2be26968b67b075c950f05e34a7115c578ceaf5ad180d9e9e9042e9f639"
+  },
+  "src/Conjectures/LiPartitionsFinalData09.lean": {
+    "bytes": 20903,
+    "sha256": "9f6542b71b7ad3e101eb13d4b6ac4b10a51cc1208ed5952eff5cc683ad50fc9d"
+  },
+  "src/Conjectures/LiPartitionsFinalData10.lean": {
+    "bytes": 20094,
+    "sha256": "b7661a58aac4834e2210fcce7df83f8017e9e79c1f721a0dd814bcb16a3df6d9"
+  },
+  "src/Conjectures/LiPartitionsFinalData11.lean": {
+    "bytes": 19173,
+    "sha256": "521757fa659fd8fb3a5394fbdf90fe2bce596bda053adf213b37ba654eba4676"
+  },
+  "src/Conjectures/LiPartitionsFinalData12.lean": {
+    "bytes": 17737,
+    "sha256": "08a3bc078443f2d0d566379f01981983994d1a02d250c1eea161049087f75949"
+  },
+  "src/Conjectures/LiPartitionsFinalData13.lean": {
+    "bytes": 10541,
+    "sha256": "f2282214ba7bb04d4a8bf5c28a69889f8a2c846e5fb62aa0f84bf70aed5dacd9"
+  },
+  "src/Conjectures/LiPartitionsFinalEnum.lean": {
+    "bytes": 5348,
+    "sha256": "7cb7b1e043c4dcc7ad0aa49562ffe828c80f6a1bda3a3f9833a4043742764311"
+  },
+  "src/Conjectures/LiPartitionsGraph.lean": {
+    "bytes": 44167,
+    "sha256": "da54af063a182f5febff19abb571f3c99dcd2164ea2ebf3ccf92b8b9777cb5ac"
+  },
+  "src/Conjectures/LiSpecFinal.lean": {
+    "bytes": 2503,
+    "sha256": "8b13f8356139919b40360ca923375d9ec2e3aabae549b39e02702a86f25bb131"
+  },
+  "src/Conjectures/LiTriples2.lean": {
+    "bytes": 8130,
+    "sha256": "e26b778d4f52820ee1d4431357739a0d5399c9d5348930a4efd7f718f307de1e"
+  },
+  "src/Conjectures/LiTriplesBridge.lean": {
+    "bytes": 11753,
+    "sha256": "a6ea9ad6897e76fe0eaae3e382d3a83f06abaa8f9d7adfc5ae3778d5bcfa282c"
+  },
+  "src/Conjectures/LiTriplesFinal.lean": {
+    "bytes": 30175,
+    "sha256": "6da5825edae98313c139008c97d711d8d75802593f5d0f9f99f81ca738c9c676"
+  },
+  "src/Conjectures/LiTrunc.lean": {
+    "bytes": 3022,
+    "sha256": "e4e28fcddc6ce61f6d29e0cc2277a84542877d6c00ce0a2942a9f0d3f1434e91"
+  },
+  "src/Conjectures/LiWeighted.lean": {
+    "bytes": 2107,
+    "sha256": "84d06d43c3dc9b555d6db3844f5b93e8598fe148d4602ccfd517fca8bf1a09b8"
+  },
+  "src/Conjectures/LiWeighted2.lean": {
+    "bytes": 11354,
+    "sha256": "2a07e2d4fbf5cea957d08fae3eb1a303d18a01d2ec3d5aea5de60387f05c16a0"
+  },
+  "src/LiHosted44RawAudit.lean": {
+    "bytes": 28055,
+    "sha256": "938d7020e429dd2cafc1803fccd66a7fdb58e3b4707d8b1ba969d0256e27628b"
+  },
+  "src/LiHosted44Statements.lean": {
+    "bytes": 9230,
+    "sha256": "14b9ca268b5bf943f1656b21119b43adfa5529cf0414479c0f1ad762079ef53b"
+  }
+}

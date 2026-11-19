@@ -43,7 +43,7 @@ partial formalization, and ⬜ for a result without Lean formalization.
 | Hadamard order-2396 partial results | Partial overall; automorphism, fixed-border construction and symmetry, and length-598 obstruction complete | The full signed-automorphism group excludes order 479, with both norm proofs checked. The fixed-border common multiplier group is cyclic of order dividing four and every preserving subgroup leaves at least 151 sign orbits. On any finite abelian group with a subgroup of index four, the original four sign rows and raw correlation equations yield an actual bordered Hadamard matrix; normalization, the literal finite border, and all fourteen size-149 baseline patterns are proved. The length-598 order-eleven obstruction is complete. The actual two-row Hadamard construction and quotient transport are checked. For length 1197, the actual common multiplier order is proved to divide 27; exclusion of order 27 and the finite quotient/no-lift certificates remain candidates. |
 | Lonely-runner two insertions | Complete | Every `p ≥ 3` and arbitrary positive integer speeds have a common witness in `[1/(p+2),1/p]` with clearance at least `1/(p+2)`. The unbounded branch, all small cases, interval-good base insertion, Goddyn–Wong acceleration criterion, common-dilation value bound, and literal three-insertion obstruction are proved. |
 | Erdős–Gyárfás abelian covers | Complete for the stated voltage-cover theorem and sharpness | Every seven-label voltage cover of the singly subdivided tetrahedron over every abelian group contains an actual simple cycle of length 4, 8, 16, or 32. The 64-node literal certificate, its collision-branch soundness, and voltage normalization are checked. The connected 95-vertex cyclic cover attains least power-of-two cycle length 32. The general minimum-degree-three conjecture is outside this result. |
-| Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
+| Li coefficient sign | Complete for the explicit counterexample | Full coefficients +29 and −6304, all 6,842 partition types, exact count eight, and `2^30` genuine connected partitions. All 44 source checks, 25 literal contracts, owned and raw-occurrence audits, and 44 exact stock replays passed. Alternative Python proof implementations remain outside this Lean scope. |
 | Frankl generating families | Partial: both frequency bounds complete; cyclic span-four pending | The all-point high-girth bound is checked for every `k ≥ 3`: incidence girth at least 16 and exactly three generators through each point imply frequency at least `518208/1000000` among distinct unions. The `k ≥ 15` linear-family bound is also checked with frequency `657/1000`. Both include the empty union. The complete Vaughan shortcut, small-cycle cases, local checker semantics, and conditional all-period assembly are checked. The remaining cyclic span-four graph/transport certificates and unconditional assembly are still being verified. |
 | Erdős 607 line sizes | Complete | Lean proves the exact realizability and geometric counting identity for every natural point count, the coefficientwise and analytic generating functions, Fourier extraction, the actual finite-product limit and domination, and the sharp asymptotic for the actual record count with prefactor 3/(16√(6π)A^(1/4)), where A=π²/12+(log 2)²/2. No unproved local-limit, tail, or coefficient-transfer premise remains. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
@@ -2930,3 +2930,87 @@ bindings were independently authenticated.
 All prior accepted entries, verification code and the axiom whitelist are
 preserved. No result-directory completion status changes. The full merged
 accepted-package gate remains a separate obligation.
+
+
+## Li coefficient-sign counterexample
+
+The 44-module development is registered with 71 required theorem
+endpoints. The original hosted gate passed at source snapshot
+`20e0e95eb421cf8ea728d34aa29a6d0eb1137789`: all 44 fresh strict sources,
+25 literal contracts, 1,247 owned declaration names (932 theorems and
+95 private names), all 71 required endpoints, and 44 exact stock-kernel
+targets. The separate hosted supplement passed against the same object
+bytes and covers every reachable serialized proof occurrence. Both
+original artifacts and the complete baseline backup were authenticated
+and independently reviewed before this registration.
+The original 38-module contribution is by [aadrianvv](https://github.com/aadrianvv)
+in [PR #35](https://github.com/1337isnot1337/solved-conjectures/pull/35),
+original head `fb700255fed86b6ac29b4980ff4704fa46adab63`.
+
+The explicit tree has 31 vertices, maximum degree 4, one degree-4 vertex with
+exactly one leaf neighbour, and is neither a spider nor a caterpillar. Every
+one of the 6,842 integer partition types is realized by genuine nonempty,
+disjoint, covering connected vertex blocks. Exactly eight connected
+partitions have type `(3,2^14)`. An equivalence with deleted-edge subsets gives
+exactly `2^30 = 1,073,741,824` connected vertex partitions in total.
+
+For every finite colour type of cardinality at least 31, the actual
+proper-colouring polynomial has full elementary coefficients
+`[e₂¹⁴e₃]=29` and `[e₂⁸e₃⁵]=−6304`. The five degree-31 coefficients using only
+`e₂,e₃` are `29, 83, −6304, −6800, −8384`. Full-coordinate restriction and
+colour-renaming theorems prove stability. No separate infinite-variable
+symmetric-function ring is constructed, and 31 is a sufficient degree-bound
+threshold without a minimality claim for these coefficients.
+
+The positive coefficient contradicts Li's strict-negative prediction in
+Problem 4.9. The leaf count contradicts the first question of Problem 4.6.
+The count eight contradicts the separate informal prediction
+`b_(3,2^14)=1`; uniqueness of the degree-4 vertex remains true. The negative
+coefficient proves that this tree is not elementary-positive.
+
+The original Python dynamic program and the vertex-deletion contribution
+argument remain alternative explanations. The formal development proves the
+main conclusions independently; it does not certify those Python programs
+or every numerical step of the alternative argument. The separate graph-
+distance and branching source `LiStructure` is outside this 44-module
+acceptance. Its dedicated verification closure also includes `LiBasic`.
+
+[Theorem inventory, scope and attribution](../results/li-coefficient-sign/LEAN.md).
+The complete merged accepted-package gate remains separate. Earlier dated
+checkpoints retain their historical scope, including their former Li queue
+status. The repository-wide campaign remains incomplete.
+
+The original [run 44599210697, job 135825706963](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44599210697/job/135825706963)
+produced artifact `14568527194`, ZIP SHA-256
+`281b57fd87cf7d6123cdcabff4a5803f3d426116dbb4a9aa01370318b2a138ed`.
+The unchanged receipt SHA-256 is
+`da585dbd99530825af7bac8c4730c1a6666bfa151ce98ad4c6f52b9d537aa09d`.
+All 272 original members, source/object/direct-import bindings, process
+logs and profiles, original git controls, and compiler/checker pins have
+been authenticated. The artifact authentication SHA-256 is
+`cc956d198ed081f35fb7ea35ff22aaf9bbec7b3ce2138519c43db53d778fef29`;
+the independent root review SHA-256 is
+`9de0d30a11a09d0c54bfdd76358f6ef2e3abdcc07254c314af520bbfbd04361b`.
+
+The [raw-occurrence supplement, run 44606051622 / job 135849912826](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44606051622/job/135849912826)
+passed at `26ef845d1ec4adb15e0c87c9264905baeb69491f` against the exact original
+44 compiled objects. It rechecked all 25 literal contracts and traversed
+17,647 dependency nodes and 316,338 edges from all 1,247 owned declarations.
+The scan indexed 22 differing theorem bodies across the imported environment;
+none was reachable from those roots, so no extra variant alias checks were
+needed. The trust-zero checked-kernel negative control was rejected. The
+only transitive axioms were `propext`, `Classical.choice`, and `Quot.sound`.
+
+The raw artifact is `14569498196`, ZIP SHA-256
+`7ea288555021d503775aa3886fc59edc65ae9a096ca26bb9add7e9950b1e1489`,
+with receipt SHA-256
+`8cb7e81896bc67b3c68ed976f256e6894b6c52318063ab0894360fed1d0a8b46`.
+The preserved baseline backup is artifact `14569584489`, ZIP SHA-256
+`dfbb03a7571256df786f9c28f45b306cb924f89403ba403d81063072e6f1eb2f`;
+its inner archive equals the original baseline ZIP byte for byte.
+The raw-artifact authentication SHA-256 is
+`6abda54c54c591fef864220fd7624374ad25af865a94989204969305eecb0610`;
+the independent review SHA-256 is
+`8f14f2f5844973ea3d432b741185e01a8385841fc0d8f8b90e7181e88f5d6aee`.
+The supplement retains the original source-build and stock-replay evidence;
+it does not claim to have repeated those stages.
