@@ -51,7 +51,6 @@ theorem rational_gap_one_seventh (p q : ℕ) (hq : 0 < q)
     calc
       ((1 / 7 : ℝ)+1/(7*(q : ℝ)))*(q : ℝ) = ((q : ℝ)+1)/7 := by
         field_simp [ne_of_gt hqr]
-        <;> ring
       _ ≤ (p : ℝ) := by
         apply (div_le_iff₀ (by norm_num : (0 : ℝ) < 7)).mpr
         linarith
