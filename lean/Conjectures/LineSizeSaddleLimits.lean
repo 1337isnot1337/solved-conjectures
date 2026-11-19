@@ -53,7 +53,10 @@ theorem phaseRemainder_tendsto : Tendsto phaseRemainder (𝓝 u0) (𝓝 0) := by
   rw [nhdsWithin_eq_nhds.mpr (Ioi_mem_nhds u0_pos)] at h
   change Tendsto (fun u => (Phi u - A + (3 / 2 : ℝ) * (u - u0) ^ 2) /
     (u - u0) ^ 2) (𝓝 u0) (𝓝 0)
-  simpa only [Phi_taylor_two, sub_sub] using h
+  apply h.congr'
+  filter_upwards [] with u
+  rw [Phi_taylor_two]
+  ring
 
 theorem phaseRemainder_identity (u : ℝ) :
     Phi u - A = phaseRemainder u * (u - u0) ^ 2 - (3 / 2 : ℝ) * (u - u0) ^ 2 := by
@@ -78,7 +81,7 @@ theorem scaled_argument_tendsto {α : Type*} {l : Filter α} {t z : α → ℝ} 
     Tendsto (fun k => u0 + sqrt (t k) * z k) l (𝓝 u0) := by
   have hc : Tendsto (fun _ : α => u0) l (𝓝 u0) := tendsto_const_nhds
   have h := hc.add (((Real.continuous_sqrt.tendsto 0).comp ht).mul hz)
-  simpa only [Real.sqrt_zero, zero_mul, add_zero] using h
+  simpa only [Real.sqrt_zero, zero_mul, add_zero, Function.comp_apply] using h
 
 theorem phase_scaled_tendsto {α : Type*} {l : Filter α} {t z : α → ℝ} {z0 : ℝ}
     (ht : Tendsto t l (𝓝 0)) (htpos : ∀ᶠ k in l, 0 < t k)
@@ -92,7 +95,7 @@ theorem phase_scaled_tendsto {α : Type*} {l : Filter α} {t z : α → ℝ} {z0
   have hlim' : Tendsto
       (fun k => phaseRemainder (u0 + sqrt (t k) * z k) * z k ^ 2 -
         (3 / 2 : ℝ) * z k ^ 2) l (𝓝 (-(3 / 2 : ℝ) * z0 ^ 2)) := by
-    simpa only [zero_mul, zero_sub, neg_mul] using hlim
+    simpa only [zero_mul, zero_sub, neg_mul, Function.comp_apply] using hlim
   apply hlim'.congr'
   filter_upwards [htpos] with k hk
   exact (phase_scaled_identity hk (z k)).symm

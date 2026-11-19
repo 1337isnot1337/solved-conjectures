@@ -30,7 +30,7 @@ theorem firstRow_spec (m k s h : ℕ) (hm : 0 < m) (hk : 0 < k) (hh : 0 < h)
       (row (m*k) m s h (firstRow m k s h)).Nonempty := by
   obtain ⟨i,y,him,_,hkiL,hkiU,hyL,hyU,hdiv⟩ := hfeas
   obtain ⟨hiL,hiU⟩ := (row_bounds m k h i hm hk hh).mpr ⟨him,hkiL,hkiU⟩
-  have hI : 0 < rowStart h k := by unfold rowStart; omega
+  have hI : 0 < rowStart h k := Nat.zero_lt_succ _
   have hlo : prefixEmpty m k s h (rowStart h k-1)=true := by
     change decide (countPairs (m*k) m s h (rowStart h k) (rowStart h k-1)=0)=true
     rw [decide_eq_true_eq]
@@ -103,7 +103,10 @@ theorem secondResidue_eq_python (m s h i : ℕ) (hm : 0 < m) (hh : 0 < h) :
     ring
   change (-(s:ℤ)*(i:ℤ)-(h:ℤ))%(m:ℤ)=
     ((secondResidue m s h i:ℤ)-(h:ℤ))%(m:ℤ) at hmod
-  rw [Int.emod_eq_of_lt (by omega) (by omega)] at hmod
+  have hrem : ((secondResidue m s h i:ℤ)-(h:ℤ))%(m:ℤ)=
+      (secondResidue m s h i:ℤ)-(h:ℤ) :=
+    Int.emod_eq_of_lt (by omega) (by omega)
+  rw [hrem] at hmod
   omega
 
 theorem secondResidue_mem (N m s h i : ℕ) (hm : 0 < m) (hh : 0 < h)

@@ -1,3 +1,4 @@
+import Conjectures.LineSizeGeometricProductLimit
 import Conjectures.LineSizeGeometricTaylor
 import Conjectures.LineSizeFourierDomination
 import Conjectures.LineSizeFourierScaling

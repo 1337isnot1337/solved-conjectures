@@ -95,7 +95,7 @@ theorem characteristic_norm (r : ℕ) {t : ℝ} (ht : 0 < t) (theta : ℝ) :
 theorem characteristic_norm_le_one (r : ℕ) {t : ℝ} (ht : 0 < t) (theta : ℝ) :
     ‖characteristic r t theta‖ ≤ 1 := by
   rw [characteristic_norm r ht]
-  apply Finset.prod_le_one
+  apply Finset.prod_le_one₀
   · intro j _hj
     exact (Fourier.geometricMajorant_pos (Real.exp_pos _).le).le
   · intro j _hj
@@ -104,7 +104,7 @@ theorem characteristic_norm_le_one (r : ℕ) {t : ℝ} (ht : 0 < t) (theta : ℝ
 theorem characteristic_continuous (r : ℕ) {t : ℝ} (ht : 0 < t) :
     Continuous (characteristic r t) := by
   unfold characteristic
-  apply continuous_finset_prod
+  apply continuous_finsetProd
   intro j _hj
   exact (scalarFactor_continuous (parameter_pos j t).le (parameter_lt_one j ht)).comp
     (continuous_const.mul continuous_id)

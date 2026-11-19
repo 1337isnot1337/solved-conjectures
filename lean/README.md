@@ -89,8 +89,10 @@ differences. Its 34-module closure passed strict source, the 664-theorem
 standard-axiom audit, and exact independent kernel replay.
 `MotzkinRankTwoRelations` adds formulas for the stated relation generators and
 finite-relation Borel attainment. Its 39-module closure passed a 729-theorem
-audit and independent replay. Exhaustive basis existence and the cyclic and
-algorithmic claims remain candidates.
+audit and independent replay. The cyclic formulas for all positive moduli,
+gcd scaling, odd-cycle criterion, and example passed a 48-module closure
+with an 812-theorem audit and independent replay. Exhaustive basis existence,
+explicit interval witnesses, and algorithmic claims remain candidates.
 
 
 `Conjectures.MotzkinDensity` connects actual measurable-set density and the
@@ -123,8 +125,10 @@ point, curvature, global Gaussian bound, and moment identities.
 logarithmic error bound for the literal finite product. `LineSizeTuplesCandidate`
 provides canonical core/tail reconstruction and cumulative cost counting.
 All these components have source, axiom, and independent kernel receipts.
-The full generating-function evaluation and sharp coefficient asymptotic
-remain unfinished.
+`LineSizeGeneratingFunction` adds the exact coefficientwise generating
+function; its 14-module closure passed a 496-theorem audit and independent
+replay. Analytic evaluation and the sharp coefficient asymptotic remain
+unfinished.
 
 ## Growing rectangles and finite planes
 

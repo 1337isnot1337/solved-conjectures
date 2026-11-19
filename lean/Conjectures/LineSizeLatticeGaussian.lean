@@ -37,7 +37,7 @@ theorem gaussian_shift_bound {x y : ℝ} (hxy : |x-y| ≤ 1) :
     calc
       |y| = |x-(x-y)| := by congr 1; ring
       _ ≤ |x|+|x-y| := abs_sub _ _
-      _ ≤ |x|+1 := add_le_add_left hxy _
+      _ ≤ |x|+1 := add_le_add (le_refl |x|) hxy
   have hexp : 1 ≤ Real.exp (x^2/4) := by
     have hs : 0 ≤ x^2/4 := by positivity
     linarith [Real.add_one_le_exp (x^2/4)]

@@ -69,7 +69,7 @@ theorem gapValue_le (r : ℕ) {R : ℝ} (hR : 0 ≤ R) (hR1 : R < 1) :
     simpa only [one_div] using
       one_div_le_one_div_of_le (sub_pos.mpr hR1)
         (sub_le_sub_left (pow_succ_le_self hR hR1.le j.val) 1)
-  have hprod := prod_le_prod (s := (univ : Finset (Fin r)))
+  have hprod := prod_le_prod₀ (s := (univ : Finset (Fin r)))
     (f := fun j : Fin r => (1-R^(j.val+1))⁻¹)
     (g := fun _ : Fin r => (1-R)⁻¹)
     (fun j _hj => inv_nonneg.mpr (by

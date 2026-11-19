@@ -86,3 +86,8 @@ import Conjectures.MotzkinCompact
 import Conjectures.MotzkinRankTwoRelations
 import Conjectures.LineSizeEulerProduct
 import Conjectures.LineSizeTuplesCandidate
+import Conjectures.LineSizeGeneratingFunction
+import Conjectures.MotzkinCyclicBasis
+import Conjectures.MotzkinCyclicExample
+import Conjectures.MotzkinCyclicScaling
+import Conjectures.MotzkinRationalCircle

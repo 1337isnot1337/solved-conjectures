@@ -28,10 +28,10 @@ never additional Lean axioms.
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
-| Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction and cumulative cost counting are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. The full generating function, Fourier local limit, and sharp coefficient asymptotic remain open. |
+| Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
 | Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
-| Two-difference Motzkin theorem | Partial: general compact equality complete | Equality of actual Borel-set density and continuous-character supremum for every compact Hausdorff abelian group with invariant probability measure, including zero differences. Rank formulas for the stated relation generators and finite-relation attainment are checked. Existence of an exhaustive relation-basis classification, cyclic criteria and examples, and evaluator/complexity claims remain outside the accepted root. |
+| Two-difference Motzkin theorem | Partial: general compact equality complete | Equality of actual Borel-set density and continuous-character supremum for every compact Hausdorff abelian group with invariant probability measure, including zero differences. Rank formulas for the stated relation generators and finite-relation attainment are checked. The cyclic theorem for every positive modulus, gcd scaling, odd-cycle sharpness criterion, exact example, and abstract rational-circle attainment are checked. Exhaustive basis existence, explicit rational interval witnesses, and evaluator/complexity claims remain candidates. |
 | Tight six speeds and critical planes | Partial | The consecutive six-speed set has global value `1/7`. Uniqueness, plane classification, and the large-norm consequence remain open. |
 | Six-speed spectrum | Partial | Global values of the consecutive set, nine sporadic examples, the displayed `5/33` example, and the positive primitive family `[1,2,3,4,5,6s]` for every `s≥1` are checked. The remaining family branch, norm reduction and exhaustive classification remain open. |
 | Eight-runner equality cases | Partial | All three displayed sets have global value `1/8`. Exhaustiveness remains open. |
@@ -1202,3 +1202,53 @@ See the [integration receipt](motzkin-relations-euler-tuples-integration-receipt
 [Motzkin receipt](motzkin-relations-hosted-receipt.json),
 [Euler receipt](line-size-euler-correction-hosted-receipt.json), and
 [tuple receipt](line-size-tuples-hosted-receipt.json).
+
+
+## Exact generating function and cyclic Motzkin formulas, 19 November 2026
+
+Both components passed strict source checking with warnings treated as errors,
+the complete project-theorem axiom audit, and independent replay with the
+unchanged pinned checker at `8da1d13a6d09a740bda9300205a22c2da2a5f03b`.
+Their recorded source hashes match the registered sources.
+
+| Component | Strict source closure | Audited theorems | Kernel replay |
+| --- | --- | --- | --- |
+| Exact coefficientwise line-size generating function | 14 modules | 496 | 14 modules |
+| Cyclic Motzkin formulas and sharpness | 48 modules | 812 | 48 modules |
+
+`LineSize.Generating.exactCount_formula` and
+`one_sub_X_mul_tupleCountSeries_eq` identify the literal formal series from
+canonical core encodings, including the exceptional small cores. The finite
+product denominators are proved coefficientwise. Convergence at complex
+arguments and the coefficient asymptotic remain separate candidate work.
+See the [generating-function receipt](line-size-generating-function-hosted-receipt.json)
+and [hosted job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44462991011/job/135354045624).
+
+`Motzkin.Cyclic.finite_cyclic_theorem_all` covers every positive modulus;
+`independenceNumber_gcd` proves the component scaling. The generated-case
+Hermite basis and odd-closed-walk sharpness criterion are proved. For the
+stated modulus 24 with jumps 3 and 4, the independence number is 9, the odd
+girth is 7, the odd-cycle upper bound is 10, and no pair is sharp. Rational
+circle density and abstract Borel attainment are also proved. The explicit
+finite union of half-open intervals remains a candidate construction.
+See the [cyclic receipt](motzkin-cyclic-hosted-receipt.json) and
+[hosted job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44462990839/job/135354043741).
+
+Registration adds six generating-function modules and eight cyclic modules,
+giving 482 proof modules and two roots. The empty cyclic candidate wrapper
+is omitted; four real imports cover all 47 real modules in its checked
+closure. All 468 inherited proof source hashes remain unchanged. The
+combined hosted gate is pending. The
+[integration receipt](generating-cyclic-integration-receipt.json) records
+all accepted source hashes and the component evidence.
+
+## Full hosted verification of the 397-module checkpoint
+
+The complete accepted-package workflow at
+`42fff1a2f87955f29c25beb0d16f23d46e91b489` has now passed its source build,
+10,843-theorem axiom audit, and independent pinned kernel replay of all
+397 proof modules and both roots. The completion log is dated 19 November
+2026 at 05:02:59 UTC. See
+[run 44458108002](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44458108002)
+and the [exact-commit receipt](full-397-hosted-receipt.json).
+This historical receipt does not verify later source revisions or additions.

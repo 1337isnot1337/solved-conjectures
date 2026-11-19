@@ -82,9 +82,11 @@ continuous-character supremum for arbitrary compact Hausdorff abelian groups
 with invariant probability measure, including zero differences. Its 34-module
 closure passed strict sources, the 664-theorem axiom audit, and independent
 kernel replay. The relation-basis formulas and finite-relation attainment
-have also passed a 39-module closure with a 729-theorem audit. Existence of
-the exhaustive relation-basis classification, cyclic criteria, and the exact
-algorithmic claims remain in progress.
+have also passed a 39-module closure with a 729-theorem audit. The cyclic
+formulas for every positive modulus, gcd scaling, odd-cycle criterion, and
+stated example passed a 48-module closure with an 812-theorem audit. The
+exhaustive basis classification, explicit rational interval witnesses, and
+exact algorithmic claims remain in progress.
 
 Graffiti.pc Conjecture 318 and its stated sharpness example are complete.
 The theorem is quantified over every finite connected simple graph of order at
@@ -142,10 +144,10 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
    reduced-denominator minimality are proved.
 3. Distance graphs are complete: all density and character formulas, small
    exceptions, periodic attainments, and the infinite discrepancy branch.
-4. Two-difference Motzkin: derive the exhaustive relation-basis classification
-   and complete the cyclic criteria and exact algorithmic bounds. The general
-   compact equality, formulas for stated relation bases, and finite-relation
-   attainment are checked.
+4. Two-difference Motzkin: derive the exhaustive relation-basis classification,
+   explicit rational interval witnesses, fixed character-window measure, and
+   exact algorithmic bounds. The general compact equality, stated relation
+   formulas, finite-relation attainment, and cyclic criteria are checked.
 5. Haralambis is complete: its exact density equality and optimal pair-sum
    periodic attainment were published in `22f3a5a`.
 6. Five-speed spectrum: complete the modular lifting/enumeration outside the
@@ -171,8 +173,8 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
     partition estimates, and the uniform asymptotic over every width `w ≥ h`.
 16. Erdős 607: generating-function evaluation, Fourier local limits, and the
     sharp coefficient prefactor. Actual geometric counting, finite tuple
-    reconstruction, the exact saddle profile, and the uniform corrected
-    finite Euler product are checked.
+    reconstruction, the coefficientwise formal generating function, the exact
+    saddle profile, and the uniform corrected finite Euler product are checked.
 17. Graffiti.pc Conjecture 318 is complete, including the all-order theorem
     and sharp five-vertex example.
 18. Loneliness on a fixed hyperplane: uniform fixed-tolerance probability
@@ -209,3 +211,20 @@ Refresh remote `main` before each publication. Preserve concurrent sources,
 merge shared imports/audit lists additively, and publish a verified snapshot.
 A finite verifier, partial lemma or passing CI run does not close a stronger
 mathematical statement.
+
+
+## Latest verification and candidate boundaries
+
+The full 397-module checkpoint at `42fff1a2` passed hosted source checking,
+a 10,843-theorem axiom audit, and independent replay of every accepted
+module and both roots. Later registrations retain their own component
+receipts; the current accepted closure has 482 proof modules and two roots.
+
+The next analytic candidates derive the actual core Gaussian bound, core
+weight limit, mean and variance limits, characteristic-product limit,
+Gaussian integral, and supported lattice/Fourier integral limit. Exact
+branch coefficients and the Fourier change of variables are checked in
+separate tasks. Their current source drafts are not accepted proofs.
+The final coefficient draft connects these limits to the literal geometric
+record count and the stated prefactor. It has its own `sharp-asymptotic`
+candidate task and still requires all three verification gates.

@@ -474,6 +474,20 @@ modules=(
   Conjectures.MotzkinRankTwo
   Conjectures.MotzkinRelations
   Conjectures.MotzkinRankTwoRelations
+  Conjectures.LineSizeGeneratingGaps
+  Conjectures.LineSizeTuplesEncoding
+  Conjectures.MotzkinCyclic
+  Conjectures.LineSizeGeneratingCodes
+  Conjectures.LineSizeTuplesExceptional
+  Conjectures.MotzkinCyclicCriterion
+  Conjectures.MotzkinCyclicGeneral
+  Conjectures.LineSizeGeneratingCoefficient
+  Conjectures.MotzkinCyclicBasis
+  Conjectures.MotzkinCyclicWalk
+  Conjectures.MotzkinCyclicScaling
+  Conjectures.MotzkinRationalCircle
+  Conjectures.LineSizeGeneratingFunction
+  Conjectures.MotzkinCyclicExample
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

@@ -61,3 +61,27 @@ audit and independent kernel replay.
 
 The ordinary accepted-proof workflow remains unchanged. Li is still deferred
 until the other collection results are complete.
+
+
+## Current line-size and Motzkin analytic candidates
+
+The accepted finite generating-function and cyclic components have been
+registered from their exact hosted receipts. Their candidate tasks remain
+available as regression checks. New tasks are still unregistered:
+
+| Task | Target | Scope |
+| --- | --- | --- |
+| `analytic-estimates` | `LineSizeAnalyticEstimates` | Actual Gaussian weight bound, core limit, and finite moment limits |
+| `geometric-fourier` | `LineSizeFourierEstimates` | Actual finite characteristic-product limit and domination |
+| `gaussian-integral` | `LineSizeGaussianIntegral` | Coupled Gaussian integral and literal saddle constant |
+| `branch-coefficients` | `LineSizeGeneratingBranchFactors` | Exact arbitrary-index coefficient and characteristic identities |
+| `coefficient-rescale` | `LineSizeGeneratingRescale` | Absolute interchange and the supported Fourier change of variables |
+| `saddle-integral` | `LineSizeSaddleIntegral` | Actual grid, pointwise limit, majorant, and supported integral limit |
+| `sharp-asymptotic` | `LineSizeCoefficientAsymptotic` | Literal count/model ratio and asymptotic equivalence with the stated constant |
+| Motzkin `relations` | `MotzkinLatticeEvaluation` | Exhaustive subgroup bases and compact-density trichotomy |
+| Motzkin `rational-intervals` | `MotzkinRationalIntervals` | Literal half-open interval unions and exact attainment |
+| Motzkin `character-window` | `MotzkinCharacterWindow` | Exact measure and avoidance of the fixed character window, including finite images |
+
+The evaluator task includes its latest source repair. Every task requires
+strict source checking, a complete theorem axiom audit, and independent
+replay of its exact closure. No draft above counts as a completed result.

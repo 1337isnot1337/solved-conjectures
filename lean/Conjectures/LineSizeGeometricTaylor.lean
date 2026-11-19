@@ -175,7 +175,6 @@ theorem scalarFactor_log_quadratic_error {q x : ℝ}
       ((q / (1 - q) ^ 2 * x ^ 2 / 2 : ℝ) : ℂ) := by
     dsimp [target, l]
     rw [hparam]
-    rfl
   rw [← htarget]
   have hsplit : Complex.log (scalarFactor q x) - target =
       (Complex.log (scalarFactor q x) - (w + w ^ 2 / 2)) +

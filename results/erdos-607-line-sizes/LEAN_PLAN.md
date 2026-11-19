@@ -114,8 +114,10 @@ value, unique critical point, curvature, global Gaussian phase bound, and
 mean/variance identities are discharged. The uniform corrected Euler product
 is now accepted as well: its eight-module closure passed strict sources,
 the 122-theorem axiom audit, and independent kernel replay at `0bacde8`.
-The generating-function development, local Fourier limit, and coefficient
-assembly remain additional obligations.
+The coefficientwise formal generating function is now accepted: its
+14-module closure passed strict sources, a 496-theorem axiom audit, and
+independent replay at `8da1d13a`. Analytic evaluation, the local Fourier
+limit, and coefficient assembly remain additional obligations.
 
 ## Current analytic route
 

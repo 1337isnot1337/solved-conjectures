@@ -40,8 +40,15 @@ attaining circle character. The formulas for explicitly stated relation bases
 and Borel attainment under two independent finite relations are now checked;
 their 39-module closure passed a 729-theorem audit and independent replay.
 See [the relation receipt](../../docs/motzkin-relations-hosted-receipt.json).
-The existence of an exhaustive relation-basis classification, cyclic criteria
-and examples, and exact algorithmic complexity claims are still candidates.
+The cyclic formulas for all positive moduli, gcd scaling, generated-case
+Hermite basis, odd-cycle sharpness criterion, and stated example are now
+checked. Rational-circle density and abstract Borel attainment are included.
+The 48-module closure passed strict sources, an 812-theorem axiom audit, and
+independent replay; see the [cyclic receipt](../../docs/motzkin-cyclic-hosted-receipt.json).
+
+Exhaustive relation-basis existence, explicit rational interval unions,
+the fixed character-window witness, and exact algorithmic complexity claims
+are still candidates.
 See [the status report](../../docs/lean-status.md) for the precise checked scope.
 
 ## Supporting files

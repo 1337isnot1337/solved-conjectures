@@ -39,6 +39,11 @@ square-root factor and a uniform logarithmic error estimate on positive compact
 ranges of the scaled core length. Its eight-module closure passed strict source,
 the 122-theorem axiom audit, and independent kernel replay.
 
-The full generating-function evaluation, Fourier local limit, tail control,
+The exact coefficientwise formal generating function is now checked. Its
+14-module closure passed strict source checking, a 496-theorem axiom audit,
+and independent kernel replay. See the
+[receipt](../../docs/line-size-generating-function-hosted-receipt.json).
+
+Analytic generating-function evaluation, the Fourier local limit, tail control,
 and sharp coefficient asymptotic remain in progress. See [the obligations](LEAN_PLAN.md) and
 [the checked scope and receipts](../../docs/lean-status.md).

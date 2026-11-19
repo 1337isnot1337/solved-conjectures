@@ -1,0 +1,214 @@
+import Mathlib.GroupTheory.SpecificGroups.Cyclic.Subgroup
+import Mathlib.Algebra.Group.Prod
+import Mathlib.Algebra.Group.Subgroup.ZPowers.Basic
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.NormNum
+import Lean.Elab.Tactic.Omega
+
+/-! Every subgroup of the integer plane has a triangular generating pair.
+The zero, one-generator, and positive Hermite cases are exhaustive. This
+constructs the relation data used by the Motzkin rank formulas. -/
+namespace Motzkin.Lattice
+
+theorem exists_nat_generator (H : AddSubgroup ℤ) :
+    ∃ m : ℕ, ∀ r : ℤ, r ∈ H ↔ ∃ u : ℤ, r=u*(m:ℤ) := by
+  obtain ⟨z,hz⟩ :=
+    (AddSubgroup.isAddCyclic_iff_exists_zmultiples_eq_top H).mp inferInstance
+  have hm : AddSubgroup.zmultiples (z.natAbs:ℤ)=H :=
+    (Int.zmultiples_natAbs z).trans hz
+  refine ⟨z.natAbs,?_⟩
+  intro r
+  rw [← hm,AddSubgroup.mem_zmultiples_iff]
+  simp only [zsmul_eq_mul]
+  exact ⟨fun ⟨u,hu⟩ => ⟨u,hu.symm⟩,fun ⟨u,hu⟩ => ⟨u,hu.symm⟩⟩
+
+def firstAxis (K : AddSubgroup (ℤ × ℤ)) : AddSubgroup ℤ :=
+  K.comap (AddMonoidHom.inl ℤ ℤ)
+
+def secondProjection (K : AddSubgroup (ℤ × ℤ)) : AddSubgroup ℤ :=
+  K.map (AddMonoidHom.snd ℤ ℤ)
+
+theorem mem_firstAxis (K : AddSubgroup (ℤ × ℤ)) (r : ℤ) :
+    r ∈ firstAxis K ↔ (r,0) ∈ K := Iff.rfl
+
+theorem mem_secondProjection (K : AddSubgroup (ℤ × ℤ)) (t : ℤ) :
+    t ∈ secondProjection K ↔ ∃ r : ℤ, (r,t) ∈ K := by
+  constructor
+  · rintro ⟨⟨r,u⟩,hru,hu⟩
+    change u=t at hu
+    subst u
+    exact ⟨r,hru⟩
+  · rintro ⟨r,hr⟩
+    exact ⟨(r,t),hr,rfl⟩
+
+theorem triangular_mem_iff (K : AddSubgroup (ℤ × ℤ)) (m k : ℕ) (s : ℤ)
+    (hm : ∀ r : ℤ, (r,0) ∈ K ↔ ∃ u : ℤ, r=u*(m:ℤ))
+    (hk : ∀ t : ℤ, t ∈ secondProjection K ↔ ∃ v : ℤ, t=v*(k:ℤ))
+    (hs : (s,(k:ℤ)) ∈ K) (r t : ℤ) :
+    (r,t) ∈ K ↔ ∃ u v : ℤ, r=u*(m:ℤ)+v*s ∧ t=v*(k:ℤ) := by
+  have hmK : ((m:ℤ),0) ∈ K := (hm (m:ℤ)).mpr ⟨1,by ring⟩
+  constructor
+  · intro hrt
+    obtain ⟨v,hv⟩ := (hk t).mp ((mem_secondProjection K t).mpr ⟨r,hrt⟩)
+    have hsub : (r-v*s,0) ∈ K := by
+      have he : (r-v*s,0)=(r,t)-v • (s,(k:ℤ)) := by
+        apply Prod.ext
+        · simp [zsmul_eq_mul]
+        · simp [zsmul_eq_mul,hv]
+      rw [he]
+      exact K.sub_mem hrt (K.zsmul_mem hs v)
+    obtain ⟨u,hu⟩ := (hm (r-v*s)).mp hsub
+    exact ⟨u,v,by omega,hv⟩
+  · rintro ⟨u,v,rfl,rfl⟩
+    have he : (u*(m:ℤ)+v*s,v*(k:ℤ))=
+        u • ((m:ℤ),0)+v • (s,(k:ℤ)) := by
+      ext <;> simp [zsmul_eq_mul]
+    rw [he]
+    exact K.add_mem (K.zsmul_mem hmK u) (K.zsmul_mem hs v)
+
+theorem normalized_second_generator (K : AddSubgroup (ℤ × ℤ))
+    (m k : ℕ) (s : ℤ) (hm : ((m:ℤ),0) ∈ K) (hs : (s,(k:ℤ)) ∈ K) :
+    (s%(m:ℤ),(k:ℤ)) ∈ K := by
+  have hdiv := Int.emod_add_ediv_mul s (m:ℤ)
+  have he : (s%(m:ℤ),(k:ℤ))=(s,(k:ℤ))-(s/(m:ℤ)) • ((m:ℤ),0) := by
+    apply Prod.ext
+    · change s%(m:ℤ)=s-(s/(m:ℤ)) • (m:ℤ)
+      rw [zsmul_eq_mul]
+      omega
+    · simp [zsmul_eq_mul]
+  rw [he]
+  exact K.sub_mem hs (K.zsmul_mem hm (s/(m:ℤ)))
+
+/-- Positive diagonal entries make the two Hermite generators independent:
+every lattice vector has at most one pair of integer coefficients. -/
+theorem hermite_coefficients_unique (m k : ℕ) (s : ℤ) (hm : 0 < m) (hk : 0 < k)
+    (u v u' v' : ℤ)
+    (hfirst : u*(m:ℤ)+v*s=u'*(m:ℤ)+v'*s)
+    (hsecond : v*(k:ℤ)=v'*(k:ℤ)) : u=u' ∧ v=v' := by
+  have hm0 : (m:ℤ) ≠ 0 := by exact_mod_cast hm.ne'
+  have hk0 : (k:ℤ) ≠ 0 := by exact_mod_cast hk.ne'
+  have hvprod : (v-v')*(k:ℤ)=0 := by rw [sub_mul,hsecond,sub_self]
+  have hv : v=v' := sub_eq_zero.mp ((mul_eq_zero.mp hvprod).resolve_right hk0)
+  rw [hv] at hfirst
+  have huEq : u*(m:ℤ)=u'*(m:ℤ) := add_right_cancel hfirst
+  have huprod : (u-u')*(m:ℤ)=0 := by rw [sub_mul,huEq,sub_self]
+  exact ⟨sub_eq_zero.mp ((mul_eq_zero.mp huprod).resolve_right hm0),hv⟩
+
+/-- The positive second-coordinate generator and the first-axis generator
+give a normalized triangular form, including degenerate ranks. -/
+theorem exists_triangular_form (K : AddSubgroup (ℤ × ℤ)) :
+    ∃ m k : ℕ, ∃ s : ℤ,
+      (k=0 → s=0) ∧
+      (0 < m → 0 ≤ s ∧ s < (m:ℤ)) ∧
+      ((m:ℤ),0) ∈ K ∧ (s,(k:ℤ)) ∈ K ∧
+      ∀ r t : ℤ, (r,t) ∈ K ↔ ∃ u v : ℤ, r=u*(m:ℤ)+v*s ∧ t=v*(k:ℤ) := by
+  obtain ⟨m,hm⟩ := exists_nat_generator (firstAxis K)
+  obtain ⟨k,hk⟩ := exists_nat_generator (secondProjection K)
+  have hm' : ∀ r : ℤ, (r,0) ∈ K ↔ ∃ u : ℤ, r=u*(m:ℤ) := hm
+  have hmK : ((m:ℤ),0) ∈ K := (hm' (m:ℤ)).mpr ⟨1,by ring⟩
+  by_cases hk0 : k=0
+  · subst k
+    refine ⟨m,0,0,fun _ => rfl,?_,hmK,K.zero_mem,?_⟩
+    · intro hmp
+      exact ⟨le_rfl,by exact_mod_cast hmp⟩
+    · exact triangular_mem_iff K m 0 0 hm' hk K.zero_mem
+  · have hkK : (k:ℤ) ∈ secondProjection K := (hk (k:ℤ)).mpr ⟨1,by ring⟩
+    obtain ⟨s,hs⟩ := (mem_secondProjection K (k:ℤ)).mp hkK
+    have hs' := normalized_second_generator K m k s hmK hs
+    refine ⟨m,k,s%(m:ℤ),fun h => (hk0 h).elim,?_,hmK,hs',?_⟩
+    · intro hmp
+      have hmZ : (0:ℤ) < m := by exact_mod_cast hmp
+      exact ⟨Int.emod_nonneg _ hmZ.ne',Int.emod_lt_of_pos _ hmZ⟩
+    · exact triangular_mem_iff K m k (s%(m:ℤ)) hm' hk hs'
+
+/-- Every subgroup of the integer plane is generated by at most two
+explicit vectors. No finite-generation assumption is required. -/
+theorem subgroup_two_generated (K : AddSubgroup (ℤ × ℤ)) :
+    ∃ p q : ℤ × ℤ, K=AddSubgroup.closure ({p,q} : Set (ℤ × ℤ)) := by
+  obtain ⟨m,k,s,_,_,hm,hs,hform⟩ := exists_triangular_form K
+  let p : ℤ × ℤ := ((m:ℤ),0)
+  let q : ℤ × ℤ := (s,(k:ℤ))
+  let L := AddSubgroup.closure ({p,q} : Set (ℤ × ℤ))
+  have hpL : p ∈ L := AddSubgroup.subset_closure (by simp)
+  have hqL : q ∈ L := AddSubgroup.subset_closure (by simp)
+  refine ⟨p,q,le_antisymm ?_ ?_⟩
+  · intro z hz
+    obtain ⟨u,v,hu,hv⟩ := (hform z.1 z.2).mp hz
+    have he : z=u • p+v • q := by
+      change z=u • ((m:ℤ),0)+v • (s,(k:ℤ))
+      apply Prod.ext
+      · simpa [zsmul_eq_mul] using hu
+      · simpa [zsmul_eq_mul] using hv
+    rw [he]
+    exact L.add_mem (L.zsmul_mem hpL u) (L.zsmul_mem hqL v)
+  · apply (AddSubgroup.closure_le K).mpr
+    intro z hz
+    rcases Set.mem_insert_iff.mp hz with rfl | hz
+    · exact hm
+    · have he : z=q := Set.mem_singleton_iff.mp hz
+      rw [he]
+      exact hs
+
+/-- Exhaustive relation-lattice alternatives. A nonzero one-generator
+subgroup is separated from a normalized Hermite basis with positive diagonal. -/
+theorem subgroup_trichotomy (K : AddSubgroup (ℤ × ℤ)) :
+    K=⊥ ∨
+    (∃ u v : ℤ, 0 < u.natAbs+v.natAbs ∧
+      ∀ r t : ℤ, (r,t) ∈ K ↔ ∃ n : ℤ, r=n*u ∧ t=n*v) ∨
+    (∃ m k s : ℕ, 0 < m ∧ 0 < k ∧ s < m ∧
+      ∀ r t : ℤ, (r,t) ∈ K ↔
+        ∃ u v : ℤ, r=u*(m:ℤ)+v*(s:ℤ) ∧ t=v*(k:ℤ)) := by
+  obtain ⟨m,k,s,hkzero,hnorm,_,_,hform⟩ := exists_triangular_form K
+  by_cases hk0 : k=0
+  · have hs0 : s=0 := hkzero hk0
+    subst k
+    subst s
+    by_cases hm0 : m=0
+    · subst m
+      left
+      apply le_antisymm ?_ bot_le
+      intro z hz
+      obtain ⟨u,v,hu,hv⟩ := (hform z.1 z.2).mp hz
+      have he : z=0 := by
+        apply Prod.ext
+        · simpa using hu
+        · simpa using hv
+      exact AddSubgroup.mem_bot.mpr he
+    · right
+      left
+      have hmpos : 0 < m := Nat.pos_of_ne_zero hm0
+      refine ⟨(m:ℤ),0,by simpa using hmpos,?_⟩
+      intro r t
+      rw [hform]
+      constructor
+      · rintro ⟨u,v,hu,hv⟩
+        exact ⟨u,by simpa using hu,by simpa using hv⟩
+      · rintro ⟨u,hu,hv⟩
+        exact ⟨u,0,by simpa using hu,by simpa using hv⟩
+  · have hkpos : 0 < k := Nat.pos_of_ne_zero hk0
+    by_cases hm0 : m=0
+    · subst m
+      right
+      left
+      refine ⟨s,(k:ℤ),?_,?_⟩
+      · simp only [Int.natAbs_natCast]
+        omega
+      · intro r t
+        rw [hform]
+        constructor
+        · rintro ⟨u,v,hu,hv⟩
+          exact ⟨v,by simpa using hu,hv⟩
+        · rintro ⟨v,hu,hv⟩
+          exact ⟨0,v,by simpa using hu,hv⟩
+    · have hmpos : 0 < m := Nat.pos_of_ne_zero hm0
+      obtain ⟨hs0,hsm⟩ := hnorm hmpos
+      have hsNat : ((s.toNat:ℕ):ℤ)=s := Int.toNat_of_nonneg hs0
+      right
+      right
+      refine ⟨m,k,s.toNat,hmpos,hkpos,?_,?_⟩
+      · have h : ((s.toNat:ℕ):ℤ) < (m:ℤ) := by rw [hsNat]; exact hsm
+        exact_mod_cast h
+      · intro r t
+        simpa only [hsNat] using hform r t
+
+end Motzkin.Lattice

@@ -1,5 +1,21 @@
 # History
 
+## 2026-11-19 — Formal generating function and cyclic Motzkin formulas
+
+- Registered the exact coefficientwise generating function after its
+  14-module strict source check, 496-theorem axiom audit, and kernel replay.
+- Registered the all-modulus cyclic formulas, gcd scaling, odd-cycle
+  criterion, exact example, and abstract rational-circle attainment after
+  the 48-module source check, 812-theorem audit, and kernel replay.
+- Added 14 proof modules, giving 482 proof modules and two roots. The empty
+  cyclic candidate wrapper is excluded. The full merged gate remains pending.
+- Recorded the completed historical full check of `42fff1a2`: 397 proof
+  modules, both roots, and 10,843 audited theorems.
+- Added separate unregistered gates for Gaussian integration, branch
+  coefficients, coefficient rescaling, the actual supported integral limit,
+  exhaustive Motzkin relation bases, rational interval witnesses, the fixed
+  character window, and the final sharp coefficient theorem.
+
 ## 2026-11-19 — Partial results at Hadamard order 2396
 
 Added two verified symmetry restrictions, the finite enumeration and a conditional border construction for the open order-2396 existence problem. [Scope and checks](results/hadamard-2396/)

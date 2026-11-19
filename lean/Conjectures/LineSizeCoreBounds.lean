@@ -102,8 +102,10 @@ theorem normalizedWeight_correction_exact {r : ℕ} {β t : ℝ} (hr : 0 < r) (h
   rw [Real.sqrt_div ht.le]
   have hexp : (Profile.Phi ((r : ℝ) * t) - Profile.A) / t - β * ((r : ℝ) * t) =
       (Profile.Phi ((r : ℝ) * t) / t - β * ((r : ℝ) * t)) - Profile.A / t := by ring
-  rw [hexp, Real.exp_sub]
+  have hratio : exp ((Profile.Phi ((r : ℝ) * t) - Profile.A) / t - β * ((r : ℝ) * t)) =
+      exp (Profile.Phi ((r : ℝ) * t) / t - β * ((r : ℝ) * t)) / exp (Profile.A / t) := by
+    rw [hexp, Real.exp_sub]
+  rw [hratio]
   field_simp
-  ring
 
 end LineSize.EulerKernel
