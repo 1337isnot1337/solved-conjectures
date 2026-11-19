@@ -137,7 +137,7 @@ theorem local_block_upper (A : Set ℤ) (δ : ℝ) (hδ : 0 ≤ δ) (B : ℕ)
       rw [hjoin] at htail
       have hcount := count_add A (show u ≤ u+1 by omega)
         (show u+1 ≤ u+(N:ℤ) by omega)
-      rw [count_unit,if_neg hu,zero_add] at hcount
+      rw [count_unit,ite_eq_right hu,zero_add] at hcount
       have hsplit : ((N-1:ℕ):ℝ)+1 = N := by exact_mod_cast Nat.sub_add_cancel (show 1 ≤ N by omega)
       rw [hcount]
       nlinarith only [htail,hsplit,hδ]
@@ -333,7 +333,7 @@ theorem periodic_interval_bounds {A : Set ℤ} {P : ℤ}
   have hδq := congrArg (fun x : ℝ => (q:ℝ)*x) hδP
   have hlow := mul_le_mul_of_nonneg_left hloR hδ
   have hhigh := mul_le_mul_of_nonneg_left hhiR hδ
-  constructor <;> change _ ≤ _ <;> nlinarith only [hcloR,hchiR,hCP,hδq,hδP,hlow,hhigh]
+  constructor <;> nlinarith only [hcloR,hchiR,hCP,hδq,hδP,hlow,hhigh]
 
 /-- Matching interval bounds give an actual density limit. -/
 theorem uniform_count_tendsto (A : Set ℤ) (δ C : ℝ)
