@@ -1,0 +1,84 @@
+{
+  "status": "verified",
+  "scope": "Unchanged four-module order-nine automorphism closure; two newly registered modules and thirteen required endpoints",
+  "acceptance_basis": "Authenticated hosted strict-source, theorem-axiom and exact stock-kernel pass; unchanged current sources and pins; fresh local strict-source and complete owned/private audit",
+  "hosted_commit": "91b7afd6c31b5654e0d7aa0517a270c0b802eedc",
+  "hosted_run_id": 44523474204,
+  "hosted_job_id": 135557905916,
+  "hosted_artifact_id": 14529746143,
+  "hosted_artifact_sha256": "4ed12c2a33f8351eef05c3367beed818f92145fbc8541fa3c6ef7ece27704af0",
+  "hosted_receipt_sha256": "361761f88eefa9d8b5131eb2377bf9cb647445aa5408e7a3846bc7eaaacd76d5",
+  "hosted_exact_replay_inventory": [
+    "Conjectures.HadamardLegendreOrderNine",
+    "Conjectures.HadamardLegendreOrderNineGroup",
+    "Conjectures.HadamardLegendreOrderNineOrbits",
+    "Conjectures.HadamardBorderSymmetryPrime"
+  ],
+  "original_gate_sha256_revalidated_from_git": {
+    ".github/workflows/lean-hadamard-legendre-candidates.yml": "c77b1eb895fb7ebfb17f5b1d781b0c4fb6ae27c2e17fe7bf3f9a1ff8c1933d2b",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_hadamard_legendre_candidate.py": "585613694e2183f841a86b1ea0a0f125bc4dc47ba1486dcd2dfaa334e1659223",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "current_source_sha256": {
+    "lean/Conjectures/HadamardBorderSymmetryPrime.lean": "ef48ab9e5cb729c449f3ceefe95afe1685959db6bd488bd6a3ba0dadc7470431",
+    "lean/Conjectures/HadamardLegendreOrderNine.lean": "3d33bc2e1f2851d590a918153ad8a9f36752913919257e54a5b739e25cb3ba57",
+    "lean/Conjectures/HadamardLegendreOrderNineGroup.lean": "a0e0b936684b90e5c9356adfd8a7b1d701f4a064845eae81a5cb4cfed33d31ce",
+    "lean/Conjectures/HadamardLegendreOrderNineOrbits.lean": "5df2d028bde8ee37a7d62da4133d5fc2e40ded417636418763f23a785815e8a0",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "local_strict_source_checks": "passed",
+  "local_all_owned_private_audit": "passed",
+  "local_audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 68,
+    "modules": 4,
+    "private_declarations": 9,
+    "raw_declarations": 68,
+    "required": 13,
+    "tag": "passed",
+    "theorems": 64
+  },
+  "local_repeat_kernel": {
+    "status": "timed_out",
+    "exit_code": 124,
+    "seconds": 624.63,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accepted_as_passing_evidence": false
+  },
+  "local_objects_sha256_after_completed_checks": {
+    "Conjectures/HadamardBorderSymmetryPrime.olean": "7b01d9a1cf96e975b9b357ddada21ec5140bd242bf80c5ce78a185d97e01ad42",
+    "Conjectures/HadamardLegendreOrderNine.olean": "444f1199c35f68bc7d1cbd29debd4e5f0fc0729b4c8a30f8d4ec56e6c614b0b2",
+    "Conjectures/HadamardLegendreOrderNineGroup.olean": "a4af7d6003e455d03aacb670876885be57b97e1db638ad5d5eb20349d01b3b18",
+    "Conjectures/HadamardLegendreOrderNineOrbits.olean": "1f7ee31090fe441152440e97ab12ace44395e34a5445ec8bd16e10323712a03e"
+  },
+  "full_accepted_package_gate": "separate; not claimed by this component",
+  "preserved_files_sha256": {
+    "AllOwnedAudit.lean": "7126da5afda295c26a8b38e22fd0475dfafa298391975e199fca01a5bbd36aa9",
+    "Conjectures.HadamardBorderSymmetryPrime.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Conjectures.HadamardLegendreOrderNine.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Conjectures.HadamardLegendreOrderNineGroup.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Conjectures.HadamardLegendreOrderNineOrbits.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "all-owned-audit.log": "227db6a5fb2468c2ecc1bb951b5fa758a929d89ca61af55b68fa1a38e74198ec",
+    "check_component.py": "3f4d48b06cc3199fce159a10dbf59c41c0f356ce6de39a53b266f850b1bcdc3d",
+    "declaration-inventory.json": "ab348edafada41c85ad7ddcc6cc071ba867bdfbb08c9793716dd5524b5250752",
+    "hosted-job.log": "48e1c520a488e5b08ff04e0170e15ec92c1326c318afa7298aed65d66143d01d",
+    "hosted-receipt.json": "361761f88eefa9d8b5131eb2377bf9cb647445aa5408e7a3846bc7eaaacd76d5",
+    "hosted-receipt.zip": "4ed12c2a33f8351eef05c3367beed818f92145fbc8541fa3c6ef7ece27704af0",
+    "kernel.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "local-receipt.json": "1078653198ba4be472c14d67d15fd58db9a5ba684038fa5dece0e86dc19e8b6d",
+    "pinned-packages.json": "bd165d0e4fd3da65beae07cbf7ee82a338f8cecd08c5943871fa96575c82cef7",
+    "runtime-attestation.json": "5a3b1453d323cdc5c280f2dda5db833358d6057ef92ed33bbba13b8c712f2fea",
+    "runtime-binary-equivalence.json": "b58cde4f5b80a6137116f8aba8f50bbe109b6b1b09a87e62ac5637db975fa19c"
+  }
+}

@@ -13,9 +13,16 @@ For a third route, we show that a core with quotient of order four and the stipu
 **Lean status:** partial overall. The signed-automorphism theorem, both
 norm-obstruction proofs, fixed-border symmetry bounds, complete conditional
 border construction with all fourteen patterns, and length-598 order-eleven
-obstruction are Lean-verified. For length 1197 the common-multiplier order is
-proved to divide 27; the sharper bound of nine, finite quotient/no-lift
-certificates, and two-row construction remain separate obligations.
+obstruction are Lean-verified. The actual two-row Hadamard construction and
+its quotient transport are also checked. For length 1197 the common-multiplier
+order is proved to divide 27; the sharper bound of nine and the finite
+quotient/no-lift certificates remain separate obligations.
+
+The order-nine action assertions are checked as well. Every odd subgroup of
+the additive automorphism group of an abelian group of order nine has order
+dividing three. In the nontrivial case it has three fixed points and two
+three-element orbits, each a nonzero coset of the fixed subgroup.
+[Original hosted pass and fresh declaration audit](../../docs/verification/hadamard-order-nine-orbits-44523474204/README.md).
 
 For every real Hadamard matrix of order 2396, the full signed row/column
 automorphism group has no element of order 479. Its cardinality and the

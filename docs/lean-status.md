@@ -40,7 +40,7 @@ partial formalization, and ⬜ for a result without Lean formalization.
 | CUT arithmetic periodicity | Complete | The uniform terminating decision test and exhaustive candidate enumeration are proved for every finite cut set and proposed arithmetic tail. Compact quotient/residue certificates identify both actual example games at every pile size and prove least eventual period 12, saltus 8, and earliest start 7, hence positive-pile preperiod 6. |
 | Loneliness on a fixed hyperplane | Complete | Original ordered positive distinct sample; deterministic maximum and velocity bound; uniform O(1/N) error over all shifts; fixed and independent Haar-shift laws; exact finite-subspace and positive-N quasipolynomial counts with degree bound; full-support endpoint formula including k=2; sharp (1,2,3) example. The complete 72-module closure passed strict sources, all-owned/private audit and exact stock replay. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
-| Hadamard order-2396 partial results | Partial overall; automorphism, fixed-border construction and symmetry, and length-598 obstruction complete | The full signed-automorphism group excludes order 479, with both norm proofs checked. The fixed-border common multiplier group is cyclic of order dividing four and every preserving subgroup leaves at least 151 sign orbits. On any finite abelian group with a subgroup of index four, the original four sign rows and raw correlation equations yield an actual bordered Hadamard matrix; normalization, the literal finite border, and all fourteen size-149 baseline patterns are proved. The length-598 order-eleven obstruction is complete. For length 1197, the actual common multiplier order is proved to divide 27; exclusion of order 27, the finite quotient/no-lift certificates, and the two-row construction remain candidates. |
+| Hadamard order-2396 partial results | Partial overall; automorphism, fixed-border construction and symmetry, and length-598 obstruction complete | The full signed-automorphism group excludes order 479, with both norm proofs checked. The fixed-border common multiplier group is cyclic of order dividing four and every preserving subgroup leaves at least 151 sign orbits. On any finite abelian group with a subgroup of index four, the original four sign rows and raw correlation equations yield an actual bordered Hadamard matrix; normalization, the literal finite border, and all fourteen size-149 baseline patterns are proved. The length-598 order-eleven obstruction is complete. The actual two-row Hadamard construction and quotient transport are checked. For length 1197, the actual common multiplier order is proved to divide 27; exclusion of order 27 and the finite quotient/no-lift certificates remain candidates. |
 | Lonely-runner two insertions | Complete | Every `p ≥ 3` and arbitrary positive integer speeds have a common witness in `[1/(p+2),1/p]` with clearance at least `1/(p+2)`. The unbounded branch, all small cases, interval-good base insertion, Goddyn–Wong acceleration criterion, common-dilation value bound, and literal three-insertion obstruction are proved. |
 | Erdős–Gyárfás abelian covers | Complete for the stated voltage-cover theorem and sharpness | Every seven-label voltage cover of the singly subdivided tetrahedron over every abelian group contains an actual simple cycle of length 4, 8, 16, or 32. The 64-node literal certificate, its collision-branch soundness, and voltage normalization are checked. The connected 95-vertex cyclic cover attains least power-of-two cycle length 32. The general minimum-degree-three conjecture is outside this result. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
@@ -2743,3 +2743,30 @@ Registration adds one module and 27 audit endpoints while preserving every
 previous accepted entry. Li remains outside the accepted roots. The plane gap
 and the final seven-speed finite residue classification remain open;
 no result-directory completion status is promoted.
+
+## Order-nine automorphism subgroups and orbits
+
+For every abelian group of order nine, every odd subgroup of its actual
+additive automorphism group has order dividing three. A nontrivial such
+subgroup has order three and three fixed points. Its other two orbits are
+the two nonzero cosets of the fixed subgroup, so there are exactly five
+orbits in total.
+
+`HadamardLegendreOrderNineGroup` and `HadamardLegendreOrderNineOrbits` are now
+registered. Their four-module closure passed the original hosted strict
+source, axiom, and stock-kernel gate at
+`91b7afd6c31b5654e0d7aa0517a270c0b802eedc`, run 44523474204,
+job 135557905916. All theorem-source and pinned-configuration hashes still
+match. The original replay log contains exactly the four required modules.
+
+Fresh local strict sources and the complete owned/private audit also passed:
+68 declarations, 64 theorems, nine private declarations, and 13 required
+endpoints, using only the three standard allowed axioms. The optional local
+repeat of stock replay timed out and remains recorded as such. The
+[preserved evidence](verification/hadamard-order-nine-orbits-44523474204/README.md)
+separates the original hosted pass from the local outcomes.
+
+The theorem sources are unchanged. Two prebuild targets and 13 required
+endpoints are added. This verifies the order-nine action claims in the
+Legendre-pair argument; exclusion of order 27 and the finite quotient/no-lift
+packet remain outstanding. Hadamard existence at order 2396 stays open.

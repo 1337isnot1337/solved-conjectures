@@ -781,6 +781,8 @@ modules=(
   Conjectures.HadamardLegendreArithmetic
   Conjectures.HadamardLegendreBasic
   Conjectures.HadamardLegendreOrderNine
+  Conjectures.HadamardLegendreOrderNineGroup
+  Conjectures.HadamardLegendreOrderNineOrbits
   Conjectures.HadamardLegendreOddDegree
   Conjectures.HadamardLegendreCentering
   Conjectures.HadamardLegendreCompression

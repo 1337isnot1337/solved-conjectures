@@ -1,0 +1,30 @@
+[
+  {
+    "path": "bin/lean",
+    "sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+  },
+  {
+    "path": "bin/leanchecker",
+    "sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
+  },
+  {
+    "path": "lib/lean/libInit_shared.so",
+    "sha256": "7831b707e868cee76c353d26649fbd8981b2f4d7e0329af55bbf4fa9e0c69350"
+  },
+  {
+    "path": "lib/lean/libLake_shared.so",
+    "sha256": "d68867df340056b40726fde3939a9d2021901cc6944f971dd6a6a778bd9ea25b"
+  },
+  {
+    "path": "lib/lean/libleanshared.so",
+    "sha256": "efef27df56f2197139afe12f1a2b63913a05f1aba81ce88824c44100431ed8c4"
+  },
+  {
+    "path": "lib/lean/libleanshared_1.so",
+    "sha256": "691bf49d9e542a15808fad9d1f8c5df45860166f77efa57961b5335e65a3a0ed"
+  },
+  {
+    "path": "lib/lean/libleanshared_2.so",
+    "sha256": "141cbfdb3bc2016cd68e0bebc2e5494818213b462ed985afa6d975d4872fb8ec"
+  }
+]

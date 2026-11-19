@@ -261,6 +261,7 @@ import Conjectures.HadamardBorderSubgroup
 import Conjectures.HadamardBorderPatternReduction
 import Conjectures.HadamardLegendreReduction
 import Conjectures.HadamardLegendreInvariantQuotient
+import Conjectures.HadamardLegendreOrderNineOrbits
 
 import Conjectures.FranklTreeBall
 import Conjectures.FranklTreeCounts

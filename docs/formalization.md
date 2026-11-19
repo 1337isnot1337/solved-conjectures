@@ -964,3 +964,22 @@ universal equality proof; its interrupted benchmark supplies no speedup result.
 The separate prime-251 closed-lift gate and bounded initial-cut pilot remain
 candidates until their own complete gates pass. The merged accepted package
 still requires its separate complete source, audit and stock-replay run.
+
+## Order-nine automorphism subgroups and orbits
+
+The existing `HadamardLegendreOrderNineGroup` and
+`HadamardLegendreOrderNineOrbits` modules are registered from the exact passing
+hosted run 44523474204. They prove that a nontrivial odd automorphism subgroup
+on an abelian group of order nine has order three, three fixed points, and
+exactly five orbits. The two nonsingleton orbits are the nonzero cosets of the
+fixed subgroup.
+
+The four-source closure is byte-identical to its original strict-source,
+axiom-audit, and stock-kernel checkpoint. A fresh local strict-source check
+and complete audit additionally cover all 68 owned and raw declarations,
+including nine private declarations and all 13 required endpoints. The local
+repeat stock replay timed out; the original hosted kernel pass is the
+preserved passing evidence. [Scope, exact receipts, and both outcomes](verification/hadamard-order-nine-orbits-44523474204/README.md).
+
+This registers two auxiliary modules. The length-1197 order-27 exclusion and
+the finite quotient/no-lift packet remain outstanding.

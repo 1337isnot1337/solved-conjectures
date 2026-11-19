@@ -1,5 +1,16 @@
 # History
 
+## 2026-11-19 — Registered order-nine automorphism subgroup and orbit proofs
+
+Registered the two existing modules for odd automorphism subgroups of abelian
+groups of order nine. They prove subgroup order three, three fixed points,
+and five orbits in the nontrivial case. The four unchanged source modules
+retain their original hosted strict-source, axiom, and stock-kernel pass.
+A fresh local strict-source check and complete 68-declaration audit also
+passed; the separate local repeat stock replay timed out and is preserved
+with its actual outcome. The length-1197 order-27 exclusion remains pending.
+[Exact scope and evidence](docs/verification/hadamard-order-nine-orbits-44523474204/README.md).
+
 ## 2026-11-19 — Complete tight-five classification and independent finite lower bound
 
 Registered the complete primitive and gcd-normalized five-speed equality
