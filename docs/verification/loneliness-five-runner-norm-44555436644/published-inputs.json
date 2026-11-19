@@ -1,0 +1,1105 @@
+{
+  "purpose": "Exact Git-blob expectations for the hosted Norm component artifact; not a verification receipt.",
+  "git_commit": "3f009008f33dcf3cb3f5383e11b818f8c1695aaf",
+  "run_id": 44555436644,
+  "job_id": 135670131856,
+  "root": "Conjectures.LonelinessFiveRunnerNorm",
+  "modules": [
+    "Conjectures.HaralambisFaces",
+    "Conjectures.HaralambisOrientation",
+    "Conjectures.HaralambisPeriods",
+    "Conjectures.Loneliness",
+    "Conjectures.LonelinessMax",
+    "Conjectures.LonelinessCoalescence",
+    "Conjectures.LonelinessModularPrimes",
+    "Conjectures.LonelinessNearestPlane",
+    "Conjectures.LonelinessKZBasisVectors",
+    "Conjectures.LonelinessPigeonhole",
+    "Conjectures.LonelinessPrefixProduct",
+    "Conjectures.NonmixedGapDensity",
+    "Conjectures.HaralambisDefects",
+    "Conjectures.LonelinessContinuity",
+    "Conjectures.LonelinessFiveFamily",
+    "Conjectures.LonelinessCertificate",
+    "Conjectures.LonelinessCoalescenceAvoiding",
+    "Conjectures.LonelinessCoordinateSubspace",
+    "Conjectures.LonelinessKZBasisGram",
+    "Conjectures.LonelinessNearestPlaneRelative",
+    "Conjectures.LonelinessPrefixProductTables",
+    "Conjectures.NonmixedGapPeriodic",
+    "Conjectures.NonmixedGapResidues",
+    "Conjectures.LonelinessRational",
+    "Conjectures.LonelinessCriticalBase",
+    "Conjectures.LonelinessCriticalSecond",
+    "Conjectures.LonelinessExamples",
+    "Conjectures.LonelinessPairBridge",
+    "Conjectures.LonelinessCoordinateClasses",
+    "Conjectures.LonelinessKZBasisInteger",
+    "Conjectures.LonelinessKZBasisStep",
+    "Conjectures.LonelinessKZProductCertificate",
+    "Conjectures.LonelinessPacking",
+    "Conjectures.HaralambisIntervals",
+    "Conjectures.LonelinessModularWitness",
+    "Conjectures.LonelinessSubspaceDensity",
+    "Conjectures.LonelinessCriticalFamilies",
+    "Conjectures.LonelinessIntegerDirection",
+    "Conjectures.LonelinessKZBasisOperations",
+    "Conjectures.LonelinessKZProductOrder",
+    "Conjectures.LonelinessPackingLower",
+    "Conjectures.HaralambisCounting",
+    "Conjectures.LonelinessModularForcedDivisor",
+    "Conjectures.LonelinessModularLift",
+    "Conjectures.LonelinessModularNormalize",
+    "Conjectures.LonelinessModularRationalWitness",
+    "Conjectures.LonelinessHyperplaneArithmetic",
+    "Conjectures.LonelinessModularShortVector",
+    "Conjectures.LonelinessNearestPlaneValue",
+    "Conjectures.LonelinessNormalization",
+    "Conjectures.LonelinessRationalSubspace",
+    "Conjectures.LonelinessKZBasisReduction",
+    "Conjectures.LonelinessKZProductAssembly",
+    "Conjectures.HaralambisPairSum",
+    "Conjectures.LonelinessFourSpeedEnumeration",
+    "Conjectures.LonelinessFourSpeedLiftDirections",
+    "Conjectures.LonelinessPrimitiveBasis",
+    "Conjectures.HaralambisDensity",
+    "Conjectures.LonelinessModularDirections",
+    "Conjectures.LonelinessModularSearch",
+    "Conjectures.LonelinessCoalescenceValue",
+    "Conjectures.LonelinessSubspaceExtension",
+    "Conjectures.LonelinessKZGeneral",
+    "Conjectures.LonelinessFourSpeedCertificate",
+    "Conjectures.LonelinessPrimitiveSpeeds",
+    "Conjectures.HaralambisTheorem",
+    "Conjectures.LonelinessModularFoldedSearch",
+    "Conjectures.LonelinessNearestPlanePrefix",
+    "Conjectures.LonelinessTwoDirections",
+    "Conjectures.LonelinessFiveRunnerNormData",
+    "Conjectures.LonelinessFourSpeedCertificate17",
+    "Conjectures.LonelinessFourSpeedCertificate29",
+    "Conjectures.LonelinessFourSpeedCertificate31",
+    "Conjectures.LonelinessFourSpeedCertificate37",
+    "Conjectures.LonelinessFourSpeedCertificate41",
+    "Conjectures.LonelinessFourSpeedCertificate43",
+    "Conjectures.LonelinessFourSpeedFastEnumeration",
+    "Conjectures.LonelinessSmallRunner",
+    "Conjectures.LonelinessNormGeometry",
+    "Conjectures.LonelinessPlaneDirections",
+    "Conjectures.LonelinessFourSpeedCertificateChunks",
+    "Conjectures.LonelinessFourSpeedGeometry",
+    "Conjectures.LonelinessPigeonholePlane",
+    "Conjectures.LonelinessTightNormCommon",
+    "Conjectures.LonelinessPlaneGap",
+    "Conjectures.LonelinessFourSpeedCertificate47",
+    "Conjectures.LonelinessFourSpeedCertificate53",
+    "Conjectures.LonelinessFourSpeedCertificate59",
+    "Conjectures.LonelinessFourSpeedCertificate61",
+    "Conjectures.LonelinessFourSpeedFoldedGeometry",
+    "Conjectures.LonelinessFourSpeedCutoff",
+    "Conjectures.LonelinessFourSpeedClassification",
+    "Conjectures.LonelinessFourSpeedCertificateAll",
+    "Conjectures.LonelinessFourSpeedLiftSound",
+    "Conjectures.LonelinessFourSpeedLift17",
+    "Conjectures.LonelinessFourSpeedLift29",
+    "Conjectures.LonelinessFourSpeedLift31",
+    "Conjectures.LonelinessFourSpeedLift37",
+    "Conjectures.LonelinessFourSpeedLift41",
+    "Conjectures.LonelinessFourSpeedLift43",
+    "Conjectures.LonelinessFourSpeedLift47",
+    "Conjectures.LonelinessFourSpeedLift53",
+    "Conjectures.LonelinessFourSpeedLift59",
+    "Conjectures.LonelinessFourSpeedLift61",
+    "Conjectures.LonelinessFourSpeedFinite",
+    "Conjectures.LonelinessFourSpeedClassificationFinite",
+    "Conjectures.LonelinessFourSpeedGap",
+    "Conjectures.LonelinessFiveRunnerNorm"
+  ],
+  "required_theorems": [
+    "Loneliness.FiveRunnerNorm.Data.rows_valid",
+    "Loneliness.FiveRunnerNorm.Data.prefix_eq",
+    "Loneliness.FiveRunnerNorm.Data.increment_positive",
+    "Loneliness.FiveRunnerNorm.Data.product_value",
+    "Loneliness.FiveRunnerNorm.Data.numerical_margin",
+    "Loneliness.FiveRunnerNorm.Data.product_lower_bound",
+    "Loneliness.FiveRunnerNorm.lower_runner_bound",
+    "Loneliness.FiveRunnerNorm.squared_norm_le",
+    "Loneliness.FiveRunnerNorm.all_primes",
+    "Loneliness.FiveRunnerNorm.all_primes_gt_135",
+    "Loneliness.FiveRunnerNorm.prime_product",
+    "Loneliness.FiveRunnerNorm.forced_divisor",
+    "Loneliness.FiveRunnerNorm.prime_product_coprime",
+    "Loneliness.FiveRunnerNorm.prime_product_margin",
+    "Loneliness.FiveRunnerNorm.exists_prime_avoiding"
+  ],
+  "source_sha256": {
+    "Conjectures.HaralambisFaces": "bb71842e0b01a8975d847e8011c72e25e6f171f5aecba2865a9f1497caf0aedd",
+    "Conjectures.HaralambisOrientation": "007a67ae5c701ad51e7d9957f5066490941c1d00ced13b7a251d94916d7d64a8",
+    "Conjectures.HaralambisPeriods": "a8e3ada09e8d9cac8e2e816de5b55739c3a36c73bb2caebccc9bcb2fa3ba6daa",
+    "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "Conjectures.LonelinessMax": "db988be330f37e6ec119204b24738bc9daa7eff40f86bcd8845ce164612ec4b9",
+    "Conjectures.LonelinessCoalescence": "5518fdfed0369763c2ba701272edb25fbaafde2d230c869f4412f2c441ef9d1d",
+    "Conjectures.LonelinessModularPrimes": "8d8ae90bfce29bdb6e8f9732920c6b9771b7fa312160ec8b51b4e52384a8579a",
+    "Conjectures.LonelinessNearestPlane": "7ecb53d6a8c77fb9d06accde929d834d0eb4e26fbccd3ce01c8d4c0cef4bc8b9",
+    "Conjectures.LonelinessKZBasisVectors": "c15824ec759e83dce78210732dcc0405d2d02c992bde00fb2e9ac8fd8053c305",
+    "Conjectures.LonelinessPigeonhole": "815a4333f8bcba2ff98851d7a18fa097d3bcc742c19a6317d42de277a08b576a",
+    "Conjectures.LonelinessPrefixProduct": "4ba946b6ec3a4a1317129912e9b65bfd9daf7f96981ca444276adb65c0ef929e",
+    "Conjectures.NonmixedGapDensity": "4f807a024e6eda1b4ec39e7942b2178b41c48b55ab1ed4a8a18c7d535aeaa731",
+    "Conjectures.HaralambisDefects": "e97a0a15cbcbfc7962aaac1409051fed8b363f1475b728d20f61117cc363e9c3",
+    "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+    "Conjectures.LonelinessCertificate": "7eccb4390fe8a11a0447a4c69e187d74665dfd31c8e59b8b068f3a7bcb78a99d",
+    "Conjectures.LonelinessCoalescenceAvoiding": "bcdb57b0b68a1d1eb2dddb4626f1a11ffb21d82e7106004d5638c499a1acdc81",
+    "Conjectures.LonelinessCoordinateSubspace": "a6a58ef2dfb5262e43641aae3e18c9d7ddcc8163aebad18cf6eb2416ae46bfea",
+    "Conjectures.LonelinessKZBasisGram": "cbedf5849f99a461e39f8cde2ddb9ffa8b734d0b2deca865451aab49ca50dd0c",
+    "Conjectures.LonelinessNearestPlaneRelative": "15cf3d48c9120ad8a2ddab46ad0371ed9a1f20a7397ddeea88a103c2c0aff0af",
+    "Conjectures.LonelinessPrefixProductTables": "39cceabd3e275af4d4c44e488a229187b62eba186704b6d628a5cfbe53620ba6",
+    "Conjectures.NonmixedGapPeriodic": "dc479ec5fab7c8912231e3b972f794e2e1558120512666f939b139e8411cc180",
+    "Conjectures.NonmixedGapResidues": "98f3fe3c1fa443c68c8b5d5f80f4e7fc2ec8f6698fc273fc188d9e91b979b737",
+    "Conjectures.LonelinessRational": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
+    "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+    "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+    "Conjectures.LonelinessExamples": "715a3b52bb3fb5747e07883cd1d1417764dab7c52848807b9f50e28c3f929dd9",
+    "Conjectures.LonelinessPairBridge": "eb4326c07d8695b97b4874e08b15f902338491769d85f77a5b1bd926b09e5435",
+    "Conjectures.LonelinessCoordinateClasses": "0075b701fd3fa51feef62f59850dfaa3dfece95e3287d51a7afb438a76691b63",
+    "Conjectures.LonelinessKZBasisInteger": "e575961a4d2c5bfe419de63afb5cabe10b37ddd4f216db2a12f3f6fc4d118717",
+    "Conjectures.LonelinessKZBasisStep": "c7aca10c90546c0aad423b536b932ddc1bfc7187fcb1e97ee23ccfaf9bb3e611",
+    "Conjectures.LonelinessKZProductCertificate": "a3fa0544e84d9f80137263dc0c342463bfc7fe466bcf78ab8ac81d247479ba23",
+    "Conjectures.LonelinessPacking": "61ae885750aec875160f7e1ea522a581aa18a576871fe89baf70f1c11f026d7d",
+    "Conjectures.HaralambisIntervals": "8d5a75119a748f371493d1d47508136f2793d4e13ca74b52435e662c5aef7219",
+    "Conjectures.LonelinessModularWitness": "c5329d2e079f6d04d0079ab3fe90d814d1f3393b2381c74be6375ce091b569fb",
+    "Conjectures.LonelinessSubspaceDensity": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f",
+    "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+    "Conjectures.LonelinessIntegerDirection": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6",
+    "Conjectures.LonelinessKZBasisOperations": "43917842a85cb92ca6a0f1d44ad118610dcc78997fc6713d3976e3ab9e82d727",
+    "Conjectures.LonelinessKZProductOrder": "fee89ef5a030a7ef33d4259fa90d697b6360593a38b92ae4610233054ac0568a",
+    "Conjectures.LonelinessPackingLower": "c9bd26dd3ae91a4e2b8513bd755936c5fdaf6d2faa31fe353b87498d0a200ca3",
+    "Conjectures.HaralambisCounting": "b315781d9fed35b6490547c52ba416033d8fa1ce74e234d1ca75c1c08947165f",
+    "Conjectures.LonelinessModularForcedDivisor": "5606d103ca62fdcecefdf0ccba9479faae6cec83e6f1b1c8ca4e4937f76938d8",
+    "Conjectures.LonelinessModularLift": "e3c6bf7662d7b91594b4de880bbfc0e1d017eeaf220edd67a151ccf43b9c8b4e",
+    "Conjectures.LonelinessModularNormalize": "93319020c093c8dc10302410c6ca95846652ebd4bfa5697c8f3710477ddf5508",
+    "Conjectures.LonelinessModularRationalWitness": "0f8af917565c97f64e0155aa07817bbd06a40cd2486ac26f036eaa9c12c0f7c5",
+    "Conjectures.LonelinessHyperplaneArithmetic": "53178525bbbd49c19fa9dd1046f39681841319ef0dae8ac2a77216b34bee5ffa",
+    "Conjectures.LonelinessModularShortVector": "d75206b95714a27fc37768daae09f450bdd7acac45130d62278521d4891bf6a3",
+    "Conjectures.LonelinessNearestPlaneValue": "03080ec0159a4e74a7ba8c8556a315be481df677a9cb1038fcb1fb210b768703",
+    "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+    "Conjectures.LonelinessRationalSubspace": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88",
+    "Conjectures.LonelinessKZBasisReduction": "7de1d388440a0eaff74ab6239f89f66038bc8f986e5fcb6880950e3cf80f062d",
+    "Conjectures.LonelinessKZProductAssembly": "3287fa3c3a33f37d76d346ecb5658f8b01e5301f79b7a6050f7c0516a3fb2e0c",
+    "Conjectures.HaralambisPairSum": "032549371a9c2d24599a2f090e848dc7f7f9cfaeb79dacbbfc8d6c0c14c10998",
+    "Conjectures.LonelinessFourSpeedEnumeration": "9d5b2d0d609465a5616f4317d1781ceedf67a94375165024f93cf46cc48d0acc",
+    "Conjectures.LonelinessFourSpeedLiftDirections": "fd21df299b309eee1b92edbc22cfe6c4ce536d662791a95701831e707cf2022a",
+    "Conjectures.LonelinessPrimitiveBasis": "a2a3c31eed4b428f7ff38323dffb0ea3d25d41579da43e4601c2a727a93490ec",
+    "Conjectures.HaralambisDensity": "6f5c1d408c7e017f5c1bb60d832a8a566267f137c932498df0826f6a35e1ab25",
+    "Conjectures.LonelinessModularDirections": "f838c441e3a59593cfa43fe55edb5d63db43af22a3e0f60d730d75b1d7664dd4",
+    "Conjectures.LonelinessModularSearch": "08fcc8f0513133412310f0ef76b299524e35d2c241a89c693ddf9477c29e376e",
+    "Conjectures.LonelinessCoalescenceValue": "b2b7037f036e3fdeb5e52e0314fd7126db2ae921c6c182abf6175c5884a5bcb7",
+    "Conjectures.LonelinessSubspaceExtension": "7c2d1387a23f9645b19b5a51994ada69a22898c7ddc61c348900411daa5fac6f",
+    "Conjectures.LonelinessKZGeneral": "4b18e7faf56c09de417a2f2b745832e61fdf919eff75bcd3ef9f1dc50925a8bc",
+    "Conjectures.LonelinessFourSpeedCertificate": "c8c71760020ee6912d027a3f0af9230746b24bb8a74f6f31e75e09eedc809ae3",
+    "Conjectures.LonelinessPrimitiveSpeeds": "95829247acbd3e1ebe62b57d1e7ca9f2af22f006df37c390574c690d152427e6",
+    "Conjectures.HaralambisTheorem": "a99e2c6d08677c459e0e405a211468c8fa192e2a6f9ed0078619f00d8e7d8fd8",
+    "Conjectures.LonelinessModularFoldedSearch": "cc76390b7ec93c197ae40e79e9f31d9e786aaaffbf1445c4b5c39df5a21ea463",
+    "Conjectures.LonelinessNearestPlanePrefix": "4c5ce5394a76551b473308c95140ed3e3a4d5fe8b883411adc89457aed72639b",
+    "Conjectures.LonelinessTwoDirections": "bc5068105b096a573a618bb46a2c3c0263dfad2c9ef1cd1c979a99d56324d454",
+    "Conjectures.LonelinessFiveRunnerNormData": "89c3912a3b7e393cb6d1e3ecc95557f591aec6989e4340c44d383e8b23160a8a",
+    "Conjectures.LonelinessFourSpeedCertificate17": "4b9d7d9432102c5193b123c3941bfebe38ede5ac7f8979103cece2234fadb7ed",
+    "Conjectures.LonelinessFourSpeedCertificate29": "b6388955465498eddcc5bd01e751850ae116e6dc60ff66c5233842e12d572c7a",
+    "Conjectures.LonelinessFourSpeedCertificate31": "d746a8f1528c517b601c2d5f7b8914418aae9ff329e1f02d42289b403e8067a5",
+    "Conjectures.LonelinessFourSpeedCertificate37": "76dfb54688d04619c1f782a290edd421cdf8b9ac269921d9e8eb82c399bcb814",
+    "Conjectures.LonelinessFourSpeedCertificate41": "e58e996cd39e733028298e50f4b036ef68f318ead25b0aa6b9568abebda58532",
+    "Conjectures.LonelinessFourSpeedCertificate43": "d45f85d4b04ac07580d2f3f0e64683a74a9c7417c02db6869e27f48a8652989d",
+    "Conjectures.LonelinessFourSpeedFastEnumeration": "92462a9f16c062b8ca8adbee567aefb758d347736c22f420c870adf592c0f765",
+    "Conjectures.LonelinessSmallRunner": "f8ac5325642e26f9c2570293a6b3032dff53d8511f1a3af4c92d8469918ed343",
+    "Conjectures.LonelinessNormGeometry": "9a6ea8340ad95fd5a656c3938125a5a1662bce25a02616b169d426db8ba16d94",
+    "Conjectures.LonelinessPlaneDirections": "af14f52d921cf44c1ff423d222007e5991a32efd4a024e24ff17ab257545907c",
+    "Conjectures.LonelinessFourSpeedCertificateChunks": "ead6d12af568f24184d922b719b92b480819998a8401691f410a48c88aacd3ac",
+    "Conjectures.LonelinessFourSpeedGeometry": "0bc1cc4e408b21f2dd79acb3f8447b2244105285c95e8509efe8c5a4647bd780",
+    "Conjectures.LonelinessPigeonholePlane": "0c65453463177354cd81ade8a568c717d560c5c4a9914a35c9f7940574a1cfb5",
+    "Conjectures.LonelinessTightNormCommon": "b878b66183be629ee2313a70d8ab68b75916a70c324a623dae0250c061468472",
+    "Conjectures.LonelinessPlaneGap": "78cad68e4587af398e088d2e6e0a124c919a9b31cae3b8b0e80bacfdd12923d0",
+    "Conjectures.LonelinessFourSpeedCertificate47": "24fdf0a84cb6d9ce333d609e231ab1b96879d175a8e05cfd4456a146f325514c",
+    "Conjectures.LonelinessFourSpeedCertificate53": "91e0e489abc7418bd58b06c876c68de51d7594710af60c68d3462df878caee7e",
+    "Conjectures.LonelinessFourSpeedCertificate59": "de8509036b87614f8adbd9d441f41c501e0e17056b63b161b201be559585699c",
+    "Conjectures.LonelinessFourSpeedCertificate61": "b51f6ad7759b62ef9f2b9788d96dcabc7ee2b40bdd3e2fcf621efab73875a0e8",
+    "Conjectures.LonelinessFourSpeedFoldedGeometry": "99415ef9aaa691a6ae436b006200d58cbd57a3063935c9d75285cbd13243274d",
+    "Conjectures.LonelinessFourSpeedCutoff": "0567fbf94feee0a9542ed76dc7e22d6f5b45287e073b5e796e3bba18a27c5d27",
+    "Conjectures.LonelinessFourSpeedClassification": "6dc0b0aab4825bb25761abf5e09692c21329ff6bafa2ce3686a9adf96b0d84a1",
+    "Conjectures.LonelinessFourSpeedCertificateAll": "ecd0373752b5c5102b807f26f709346dd3c59d8b6ef4002559850f1bbac2c3ef",
+    "Conjectures.LonelinessFourSpeedLiftSound": "acad28ead29e4dbabedcaf959ed26758840784b760ce485bc2326bbedec39aff",
+    "Conjectures.LonelinessFourSpeedLift17": "78eac074d028c81844c32a3150d5581dbb768b9736a165f0d844b85846f0c706",
+    "Conjectures.LonelinessFourSpeedLift29": "573fbefb8f96ee0d4442e5116c34c6fe87ffa15abe99db2f20e7e044846ffa2b",
+    "Conjectures.LonelinessFourSpeedLift31": "b3079a99886a4d65971dce61c506fd64eb75bc0b1af71c79e41704e9e0e5ba70",
+    "Conjectures.LonelinessFourSpeedLift37": "86fb7512c7ac0d2d10a9b31f4dd8e8785a0865e0d23ed862339d98ecb7dd1401",
+    "Conjectures.LonelinessFourSpeedLift41": "2d9a71a7cc5e44afee2385c652a6ab188a287d41f37d696542480a16b3500851",
+    "Conjectures.LonelinessFourSpeedLift43": "c372622838b25277a9411437f0dd603a6b1b43c3807ab47724045f888a23cf45",
+    "Conjectures.LonelinessFourSpeedLift47": "25f629462ac3ca0f04f3a0dd5c376b17c5f0dd353ada7543b6c7870662398ffa",
+    "Conjectures.LonelinessFourSpeedLift53": "6d737dd79bba696041f9d76d2a9ca54221fd418cdadef9286cfc26c7c70d3984",
+    "Conjectures.LonelinessFourSpeedLift59": "9e7d0aadb944afb4dc69e4ab6bed80a8be9ba15ef8e558aa441c6ccc2b5b2c2c",
+    "Conjectures.LonelinessFourSpeedLift61": "0795afb196980e5859e63a4e11dbdb221cd57b58677ac88fc8cc5689a3dd5eef",
+    "Conjectures.LonelinessFourSpeedFinite": "20f0b73809b6451930a7cb36a6d11ebd4bab07117a7feb4f572355735c2f19c3",
+    "Conjectures.LonelinessFourSpeedClassificationFinite": "6266273a57068a73f86ded6a3a6d930d0b2c8211dcb2985bdcfc676b3ed92129",
+    "Conjectures.LonelinessFourSpeedGap": "fa37f69bedec54ab992ac8bcfdf41cc6dbc99d27264693f8657be1c556aa6632",
+    "Conjectures.LonelinessFiveRunnerNorm": "36effc232701b26263878051f5d7d30a2a3a4cc466c73179cbf44e08a3e0e359"
+  },
+  "controls_sha256": {
+    ".github/workflows/lean-five-runner-norm.yml": "d69851d8fdb14658b73869f6fd3e61ad9759ab7acb218d32214582e7592cfa59",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/generate_five_runner_arithmetic.py": "f001aff8f746545c672a306b0871fe8bf0805853b60784cf0d284576795ee9d1",
+    "scripts/generate_five_runner_assembly.py": "e6e2764762169bce63466c5971f9c03c57be748f6e4d33512b4419e5f920a8e9",
+    "scripts/generate_five_runner_certificates.py": "bc54d202e0ecdac9d68f798158fc9087fbedb24c7bfe1eafdbcdaddf4207bb15",
+    "scripts/generate_five_runner_fast.py": "2281d1995df2d5554d7212b03d97a7a64779633cbf69b70726f685c843ed293b",
+    "scripts/generate_five_runner_fuel.py": "8860c07ad0de2b51cdec8d5e3b8e785dd37ca2809a69c86974892e56eb39ae1e",
+    "scripts/generate_six_speed_late_prime_batches.py": "305bd241ed671ceef255bc53552c177744c7b35d37afbca7365d71a03dbad4ca",
+    "scripts/generate_six_speed_prime_arithmetic.py": "f02b0ba31fa89fa4da574c2e134a0a457f7918a3dbba6e939a792c1492e2709f",
+    "scripts/generate_six_speed_prime_certificates.py": "9cfca45e42eece7690a424de54e551a75139651944f14ee3f7772f506971deb7",
+    "scripts/generate_six_speed_prime_fast.py": "9aaebac57c4f9e32839a21daa4c3a393322997c6db9c75b0de50aae9371ff59f",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_five_runner_exact.py": "e94986ee4f3de024100d9904c14e99af293256d566f382e62e3beea4557c09eb",
+    "scripts/verify_five_runner_norm.py": "56b7c8f68cfc4e36c68812d3ea6c7168b3815f3e662ed0dc295fbe0cca0e19fc",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "imported_controller_sha256": {
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/generate_five_runner_arithmetic.py": "f001aff8f746545c672a306b0871fe8bf0805853b60784cf0d284576795ee9d1",
+    "scripts/generate_five_runner_assembly.py": "e6e2764762169bce63466c5971f9c03c57be748f6e4d33512b4419e5f920a8e9",
+    "scripts/generate_five_runner_certificates.py": "bc54d202e0ecdac9d68f798158fc9087fbedb24c7bfe1eafdbcdaddf4207bb15",
+    "scripts/generate_five_runner_fast.py": "2281d1995df2d5554d7212b03d97a7a64779633cbf69b70726f685c843ed293b",
+    "scripts/generate_five_runner_fuel.py": "8860c07ad0de2b51cdec8d5e3b8e785dd37ca2809a69c86974892e56eb39ae1e",
+    "scripts/generate_six_speed_late_prime_batches.py": "305bd241ed671ceef255bc53552c177744c7b35d37afbca7365d71a03dbad4ca",
+    "scripts/generate_six_speed_prime_arithmetic.py": "f02b0ba31fa89fa4da574c2e134a0a457f7918a3dbba6e939a792c1492e2709f",
+    "scripts/generate_six_speed_prime_certificates.py": "9cfca45e42eece7690a424de54e551a75139651944f14ee3f7772f506971deb7",
+    "scripts/generate_six_speed_prime_fast.py": "9aaebac57c4f9e32839a21daa4c3a393322997c6db9c75b0de50aae9371ff59f",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_five_runner_exact.py": "e94986ee4f3de024100d9904c14e99af293256d566f382e62e3beea4557c09eb",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "git_blob_ids": {
+    ".github/workflows/lean-five-runner-norm.yml": "630f6af8be2c846fdfb4410a76bf4515cfc7ac46",
+    "lean/Conjectures/HaralambisCounting.lean": "c2862c41b72509f019552136d7bc0ae680ff0b9f",
+    "lean/Conjectures/HaralambisDefects.lean": "1b0618e1759d3d5ebceafae391efdcde6db96ac6",
+    "lean/Conjectures/HaralambisDensity.lean": "5583a78d9dc2e4b4157dc22c2ea52fad09a459e5",
+    "lean/Conjectures/HaralambisFaces.lean": "675c5de16d503bb69f9a55eb27a52713e4c0e16d",
+    "lean/Conjectures/HaralambisIntervals.lean": "42e56b34956ce7633baac9b5af28e847533b05a4",
+    "lean/Conjectures/HaralambisOrientation.lean": "e472fd58fefc011ad6434143898481a71ad07bcd",
+    "lean/Conjectures/HaralambisPairSum.lean": "39283ecf5615b6ea7ef6a12eae14866c673d6fa9",
+    "lean/Conjectures/HaralambisPeriods.lean": "3b03ee23787e2b0eda7dce5a5db1e35accd92c7b",
+    "lean/Conjectures/HaralambisTheorem.lean": "1cb26ec7e11b7e39865c685c1a55b1b286efd561",
+    "lean/Conjectures/Loneliness.lean": "10bab1dbf24b878d4037c14c22ee4444380995d7",
+    "lean/Conjectures/LonelinessCertificate.lean": "bccb8328b110cc48b91b9da19cb4a1e3e2461d22",
+    "lean/Conjectures/LonelinessCoalescence.lean": "f4ec3e34236a582379ae74d594cfdc452baafeb8",
+    "lean/Conjectures/LonelinessCoalescenceAvoiding.lean": "f79ca3c9696097f53311a03e2f7220e6a5af3cc0",
+    "lean/Conjectures/LonelinessCoalescenceValue.lean": "b6b0ac1ddf72a6f56cb461e780ec436946f7a3fd",
+    "lean/Conjectures/LonelinessContinuity.lean": "454af68ef5290ef792219c2ae18fcbefd0efb346",
+    "lean/Conjectures/LonelinessCoordinateClasses.lean": "80ebd09666bfe0d5728a132f7e349a11924132b5",
+    "lean/Conjectures/LonelinessCoordinateSubspace.lean": "da03dc4abbf50fc8f174f08ab49503ad9f424713",
+    "lean/Conjectures/LonelinessCriticalBase.lean": "a5705710d44e968d157b046872962e08a141073a",
+    "lean/Conjectures/LonelinessCriticalFamilies.lean": "e7a53dbb2d02b030adfdfcc7ec2e66bed82efa25",
+    "lean/Conjectures/LonelinessCriticalSecond.lean": "1a0ed019755501faf61507ec20b325b3a181bb27",
+    "lean/Conjectures/LonelinessExamples.lean": "7ef8eb317f187999be74384e5950833e09944db2",
+    "lean/Conjectures/LonelinessFiveFamily.lean": "1463a6505e917f0e6c8f812e1e34337f05eaed00",
+    "lean/Conjectures/LonelinessFiveRunnerNorm.lean": "d6532fc9a7c8784795ac1a8c244b407b6cdb604e",
+    "lean/Conjectures/LonelinessFiveRunnerNormData.lean": "a535bc1bd351856aebece26cbff895a84d385810",
+    "lean/Conjectures/LonelinessFourSpeedCertificate.lean": "19cb0a5077ec8ac63603ed166650713c9855843f",
+    "lean/Conjectures/LonelinessFourSpeedCertificate17.lean": "01ae86359c685309e0501f8b5b01d3eebc5ee044",
+    "lean/Conjectures/LonelinessFourSpeedCertificate29.lean": "6b901e5fcf08accc0c24b35e28cc41d02925b6ff",
+    "lean/Conjectures/LonelinessFourSpeedCertificate31.lean": "97c68abf415736f8f4fb693682f618adf35d6857",
+    "lean/Conjectures/LonelinessFourSpeedCertificate37.lean": "114d623e161e609000adb6fe11c45184f851a653",
+    "lean/Conjectures/LonelinessFourSpeedCertificate41.lean": "dfe80c017b164fce023c3870046e345b1a8007b4",
+    "lean/Conjectures/LonelinessFourSpeedCertificate43.lean": "23d9aa2ed005af74a7b2dd9041e62c9b4e7d3928",
+    "lean/Conjectures/LonelinessFourSpeedCertificate47.lean": "4fa944707d8dd392dfa4590665c727c01830252a",
+    "lean/Conjectures/LonelinessFourSpeedCertificate53.lean": "3ec21cd87b09d12be972caa5cdf1b1f6023a8ebd",
+    "lean/Conjectures/LonelinessFourSpeedCertificate59.lean": "8edcb4d1816728b2406fa6f364fa03dcc3212f8f",
+    "lean/Conjectures/LonelinessFourSpeedCertificate61.lean": "656fa2d4956951c894fe907ca6666e3a475a02d2",
+    "lean/Conjectures/LonelinessFourSpeedCertificateAll.lean": "6d840774a2a3555f7efa5969c5d03697f4a4a27d",
+    "lean/Conjectures/LonelinessFourSpeedCertificateChunks.lean": "06f80d8693bc1759ec52675061e5bb233fb83df5",
+    "lean/Conjectures/LonelinessFourSpeedClassification.lean": "9166a861573a7de2ec0c7592b29ae6a30329b1ac",
+    "lean/Conjectures/LonelinessFourSpeedClassificationFinite.lean": "1f01119a7429b5dc799023c43de99e029ef3d569",
+    "lean/Conjectures/LonelinessFourSpeedCutoff.lean": "43344236ad23fdb386a240d8c3da2257f8b9cc09",
+    "lean/Conjectures/LonelinessFourSpeedEnumeration.lean": "e7f8fdb18c08564b3347fec5702b8f68b7f5fbf6",
+    "lean/Conjectures/LonelinessFourSpeedFastEnumeration.lean": "af3c9638444ea655ffb07d5059b67ecef546a107",
+    "lean/Conjectures/LonelinessFourSpeedFinite.lean": "4e485213d6b9917ca2e82bd714a2ab33f63ca5a6",
+    "lean/Conjectures/LonelinessFourSpeedFoldedGeometry.lean": "7366a4b0656f2333b61a6423a58dacd692040127",
+    "lean/Conjectures/LonelinessFourSpeedGap.lean": "9ab1269d31f99495de0211bdf59f75c2e065f54c",
+    "lean/Conjectures/LonelinessFourSpeedGeometry.lean": "a439554f8ba9985bcf2a2436312b3c49ee3b882e",
+    "lean/Conjectures/LonelinessFourSpeedLift17.lean": "00330cf35f76b2c421689c03411007766ac6ceba",
+    "lean/Conjectures/LonelinessFourSpeedLift29.lean": "fb6fa16aad06bbbf087a9ab54cfafc22dec1727c",
+    "lean/Conjectures/LonelinessFourSpeedLift31.lean": "42471537c5b4016fed45af46c10dade670c5e866",
+    "lean/Conjectures/LonelinessFourSpeedLift37.lean": "d2a75e58eea829f6b3fbcffc673a5b7123f4eb94",
+    "lean/Conjectures/LonelinessFourSpeedLift41.lean": "d0b7468d72cb74787abdebdaf7e24c8a1ff1ad3e",
+    "lean/Conjectures/LonelinessFourSpeedLift43.lean": "d034ac7f46a07d84ff6df400f40ac640d528cd19",
+    "lean/Conjectures/LonelinessFourSpeedLift47.lean": "99b90274d0bae7bf0cd9e89968e6b1945e5f5db5",
+    "lean/Conjectures/LonelinessFourSpeedLift53.lean": "9272ca782934fc292f2e4177942b25c84ac7b45d",
+    "lean/Conjectures/LonelinessFourSpeedLift59.lean": "8b56d12582da702ed720b9ac76c0f6c1df165114",
+    "lean/Conjectures/LonelinessFourSpeedLift61.lean": "b7d7156df4c2e932c29dc0e71bfe74c047e62b39",
+    "lean/Conjectures/LonelinessFourSpeedLiftDirections.lean": "01359d34350fb8c0f63ae638b062a269ca3a517f",
+    "lean/Conjectures/LonelinessFourSpeedLiftSound.lean": "dc97b8ca7ff863768b057dfaedfbc8c0d6d195fe",
+    "lean/Conjectures/LonelinessHyperplaneArithmetic.lean": "e7466ec7347b601f2b7286e085e99957089118ca",
+    "lean/Conjectures/LonelinessIntegerDirection.lean": "32d2c52477115f1f364e5b00dc7e2abd37d50f5c",
+    "lean/Conjectures/LonelinessKZBasisGram.lean": "d1aba212205a6979f30b834a012a55f0ee55ea0b",
+    "lean/Conjectures/LonelinessKZBasisInteger.lean": "84cd1b4d6b14c96b88d65061292a8f42f7df4962",
+    "lean/Conjectures/LonelinessKZBasisOperations.lean": "53d1e09942ab077806090c2c9939d09d0dc2c1e0",
+    "lean/Conjectures/LonelinessKZBasisReduction.lean": "5de83f180673b210f6f9b4608ef1d10af9e698e6",
+    "lean/Conjectures/LonelinessKZBasisStep.lean": "8b79e900d1ca9a31949e5f242fb05cc1589eff88",
+    "lean/Conjectures/LonelinessKZBasisVectors.lean": "05a1039bc54442f4e6e8351e11c90625b1b31d7f",
+    "lean/Conjectures/LonelinessKZGeneral.lean": "86d62b123337de78185756fcf20692926539aec1",
+    "lean/Conjectures/LonelinessKZProductAssembly.lean": "99feec0199d8aabec82337c8b85a58da09e83843",
+    "lean/Conjectures/LonelinessKZProductCertificate.lean": "957f3d126e65734d600e27091cd69347d14935f7",
+    "lean/Conjectures/LonelinessKZProductOrder.lean": "80abf4c5a11fbb52d27ea8bc638ff626a67b98a7",
+    "lean/Conjectures/LonelinessMax.lean": "35e7241dce29b46684d6ec0737d633b1dd8d4997",
+    "lean/Conjectures/LonelinessModularDirections.lean": "a807908065e94137c49b44dcda378e5a0a9a5be8",
+    "lean/Conjectures/LonelinessModularFoldedSearch.lean": "947b4c06e6fb034a5b62ce2ba9b11f7318a2ec69",
+    "lean/Conjectures/LonelinessModularForcedDivisor.lean": "9a64d2c563972b6d14658a08a82a6513b588d76a",
+    "lean/Conjectures/LonelinessModularLift.lean": "df5235be6fa199c07051193ae9750117588e4484",
+    "lean/Conjectures/LonelinessModularNormalize.lean": "6b4db34d125102e225f2a5ac9db29a87346b489b",
+    "lean/Conjectures/LonelinessModularPrimes.lean": "139d324cc13d7c5fa806cf38c4e7c92e71ab567c",
+    "lean/Conjectures/LonelinessModularRationalWitness.lean": "c50e2828b11f8fcb4e8d2ca8cc774d86b33586b9",
+    "lean/Conjectures/LonelinessModularSearch.lean": "847278471cd6af67a4747424938ae5642e736762",
+    "lean/Conjectures/LonelinessModularShortVector.lean": "57db0a1470e2900e85baa51c0e30a9d1955a14ba",
+    "lean/Conjectures/LonelinessModularWitness.lean": "76b3e25bcaaa32247ac3b03b2c4ad0f1a541c9f1",
+    "lean/Conjectures/LonelinessNearestPlane.lean": "f671b8f13435cb63ef3c9f6c98b67d4ffb5b8f46",
+    "lean/Conjectures/LonelinessNearestPlanePrefix.lean": "ddd36eb0fc0f441a11f0c9abb5a419c1b4cfa0cc",
+    "lean/Conjectures/LonelinessNearestPlaneRelative.lean": "3efee373965b5f2fe887cd1fc69952722640c1b2",
+    "lean/Conjectures/LonelinessNearestPlaneValue.lean": "9e6eec3014c45dd9e7e716d43c3540bd779f53eb",
+    "lean/Conjectures/LonelinessNormGeometry.lean": "4fe442c7dc0871013e5a299dec855ac6ca5c6e52",
+    "lean/Conjectures/LonelinessNormalization.lean": "2c90ba2d7e507ac6303bfbd2f6dc9ab60cdf49b1",
+    "lean/Conjectures/LonelinessPacking.lean": "294bc8aa666f024329299f4eacb598f923705444",
+    "lean/Conjectures/LonelinessPackingLower.lean": "976f1d2454616abd8d10bee44b42b1af0e0aa0fd",
+    "lean/Conjectures/LonelinessPairBridge.lean": "15eb2fd8e05fbb307909a83a9ad812c57c532bd7",
+    "lean/Conjectures/LonelinessPigeonhole.lean": "cd33eb4cdbcdb1054e9d383f5f74e347af590f3b",
+    "lean/Conjectures/LonelinessPigeonholePlane.lean": "425852e8a96e8268e1d3351c3de400df7b319aa5",
+    "lean/Conjectures/LonelinessPlaneDirections.lean": "2d0562da43fb8c9e2fcf0deee3c3b49973750df7",
+    "lean/Conjectures/LonelinessPlaneGap.lean": "755b1bf633e3907c712a17cae92231cb9b66613b",
+    "lean/Conjectures/LonelinessPrefixProduct.lean": "3a58e716089db325d3bad1ecafd601a4bfaebd56",
+    "lean/Conjectures/LonelinessPrefixProductTables.lean": "d572b0397e5367fdf77da57e39a5b9e425f2c469",
+    "lean/Conjectures/LonelinessPrimitiveBasis.lean": "31cdf769de4d699fa4328d819f86c4c9793cd017",
+    "lean/Conjectures/LonelinessPrimitiveSpeeds.lean": "84a0443c5b4f4f149259ebc06904968f4487ce4b",
+    "lean/Conjectures/LonelinessRational.lean": "4c5f707d1183cb12ef600d52f8babbc612a1ddae",
+    "lean/Conjectures/LonelinessRationalSubspace.lean": "b1030601e7a104534415e88bd6fb3b9198f04142",
+    "lean/Conjectures/LonelinessSmallRunner.lean": "b081a6b32b9ca620d50da556b9b3130638f7dffd",
+    "lean/Conjectures/LonelinessSubspaceDensity.lean": "80362156b35fe43929aea7fa3216008a0f4e6c65",
+    "lean/Conjectures/LonelinessSubspaceExtension.lean": "b49e9ac95856f3f4b1bcf453b09e070c73a1340f",
+    "lean/Conjectures/LonelinessTightNormCommon.lean": "b0169801f8e0943a6604e0679b2f689cd8355c29",
+    "lean/Conjectures/LonelinessTwoDirections.lean": "8a7de622620b116c9b6c1ddcb05fb70577106fb0",
+    "lean/Conjectures/NonmixedGapDensity.lean": "c409f66d2921bab72018d09a31c32d247dd139eb",
+    "lean/Conjectures/NonmixedGapPeriodic.lean": "39bd668d59aae887763546bd785ed27493e4b914",
+    "lean/Conjectures/NonmixedGapResidues.lean": "df8327b08a7346690cd86cdb3797662a10c896ff",
+    "lean/lake-manifest.json": "f0c403ca7db2b5d8e162f465e9963b2fa475335a",
+    "lean/lakefile.toml": "a249d99c8350205523014fe95883b3e45714931e",
+    "lean/lean-toolchain": "a6aff065db2882c535684f8c5bcd4f16e9a23915",
+    "scripts/audit_lean_all_owned.py": "57dfaa9d09e8f4e653b817843df7fa9826358f41",
+    "scripts/build_lean_parallel.py": "9d6feac7e470e11e76aece653f30e11eb450fa98",
+    "scripts/generate_five_runner_arithmetic.py": "7e452845527beaa1bc2e316df5854e110c65b9ad",
+    "scripts/generate_five_runner_assembly.py": "390b72a921029ed3a7f035ebc374768a504b857d",
+    "scripts/generate_five_runner_certificates.py": "8c13a45392a3e118b91dbee48100a5f9b1d1710e",
+    "scripts/generate_five_runner_fast.py": "9f9f82cd02a5cbfe094ca62f278d33eab95b9b44",
+    "scripts/generate_five_runner_fuel.py": "a691f25853b3441656bd12454222629270919267",
+    "scripts/generate_six_speed_late_prime_batches.py": "6dcb705d5b5b1d2bc768bc44c8435017e8d0c561",
+    "scripts/generate_six_speed_prime_arithmetic.py": "754bbc55d70e07a12d71fa024668a39d0b16ff64",
+    "scripts/generate_six_speed_prime_certificates.py": "9c08a24e7395d0bf39f69ec391c57f8e8d2cf2a2",
+    "scripts/generate_six_speed_prime_fast.py": "a0709ee417e7b26bd834058dd523009522a3bf89",
+    "scripts/plan_accepted_lean.py": "0172b8d0889f413e82241dcb1f2f7585d7989385",
+    "scripts/plan_lean_candidates.py": "e287900135dd38db3ac72d42744fd8a75c1dfe78",
+    "scripts/replay_lean.py": "4f14cafc5e52ce6af8a451ddd92df2cba7ff61cb",
+    "scripts/verify_five_runner_exact.py": "c54375f51f06c2f6a9c1bfeb978b61f46c993dc1",
+    "scripts/verify_five_runner_norm.py": "15e9a02fa66898a7b07e3cffea71330fb4f0b067",
+    "scripts/verify_frankl_orbit_batches.py": "71853974fe3e17b5464df6f529353257a2478a54",
+    "scripts/verify_lean_candidate.py": "4390b9a34c8109c242bec7eaf615c4ce2da1930b"
+  },
+  "imports": {
+    "Conjectures.HaralambisFaces": [
+      "Mathlib.Data.Fintype.BigOperators",
+      "Mathlib.Tactic.FinCases",
+      "Lean.Elab.Tactic.Omega"
+    ],
+    "Conjectures.HaralambisOrientation": [
+      "Mathlib.Combinatorics.Hall.Finite",
+      "Mathlib.Data.Fintype.EquivFin",
+      "Mathlib.Data.Fintype.BigOperators",
+      "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Lean.Elab.Tactic.Omega",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Conjectures.HaralambisPeriods": [
+      "Mathlib.Data.Int.GCD",
+      "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "Mathlib.Algebra.BigOperators.Fin",
+      "Mathlib.Algebra.BigOperators.ModEq",
+      "Mathlib.Data.Fin.VecNotation",
+      "Mathlib.Tactic.FinCases",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.Ring",
+      "Mathlib.Tactic.NormNum"
+    ],
+    "Conjectures.Loneliness": [
+      "Mathlib.Algebra.Order.Round",
+      "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+      "Mathlib.Data.Rat.Cast.Order",
+      "Mathlib.Order.ConditionallyCompleteLattice.Basic",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.NormNum",
+      "Mathlib.Tactic.Positivity",
+      "Mathlib.Tactic.Ring",
+      "Mathlib.Tactic.FieldSimp"
+    ],
+    "Conjectures.LonelinessMax": [
+      "Mathlib.Analysis.Normed.Group.AddCircle",
+      "Mathlib.Topology.Order.Compact",
+      "Mathlib.Topology.Order.Lattice",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.FieldSimp",
+      "Mathlib.Tactic.Positivity"
+    ],
+    "Conjectures.LonelinessCoalescence": [
+      "Mathlib.Algebra.Module.Submodule.Union",
+      "Mathlib.Basic.Real.Basic",
+      "Mathlib.LinearAlgebra.Dual.Lemmas",
+      "Mathlib.LinearAlgebra.FiniteDimensional.Basic",
+      "Mathlib.Data.Fintype.Lattice",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.NormNum",
+      "Mathlib.Tactic.Positivity",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Conjectures.LonelinessModularPrimes": [
+      "Mathlib.Data.Nat.Prime.Basic",
+      "Mathlib.Data.Nat.GCD.BigOperators",
+      "Mathlib.Data.Int.Basic",
+      "Mathlib.Algebra.Order.BigOperators.GroupWithZero.List",
+      "Mathlib.Algebra.BigOperators.Fin",
+      "Mathlib.Analysis.MeanInequalities",
+      "Mathlib.Tactic"
+    ],
+    "Conjectures.LonelinessNearestPlane": [
+      "Mathlib.Analysis.InnerProductSpace.GramSchmidtOrtho",
+      "Mathlib.Algebra.Order.Round",
+      "Mathlib.Order.Interval.Finset.Nat",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.Module",
+      "Mathlib.Tactic.NormNum",
+      "Lean.Elab.Tactic.Omega"
+    ],
+    "Conjectures.LonelinessKZBasisVectors": [
+      "Mathlib.Analysis.InnerProductSpace.PiL2",
+      "Mathlib.LinearAlgebra.TensorProduct.Basis",
+      "Mathlib.LinearAlgebra.TensorProduct.Pi"
+    ],
+    "Conjectures.LonelinessPigeonhole": [
+      "Mathlib.Basic.Real.Basic",
+      "Mathlib.Data.Fintype.Card",
+      "Mathlib.Data.Fintype.Pi",
+      "Mathlib.Data.Fintype.BigOperators",
+      "Mathlib.Data.Int.GCD",
+      "Mathlib.Data.Fin.Tuple.Basic",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.NormNum",
+      "Mathlib.Tactic.Positivity",
+      "Mathlib.Tactic.FieldSimp",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Conjectures.LonelinessPrefixProduct": [
+      "Mathlib.Algebra.Order.Chebyshev",
+      "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Log.Sum",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.FieldSimp"
+    ],
+    "Conjectures.NonmixedGapDensity": [
+      "Mathlib.Data.Int.Interval",
+      "Mathlib.Data.Int.ModEq",
+      "Mathlib.Data.Finset.Sort",
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Mathlib.Algebra.Ring.Periodic",
+      "Mathlib.Analysis.SpecificLimits.Basic",
+      "Mathlib.Topology.Order.LiminfLimsup",
+      "Mathlib.Analysis.Normed.Group.Continuity",
+      "Mathlib.Analysis.Normed.Group.Real",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.Ring",
+      "Mathlib.Tactic.Positivity",
+      "Mathlib.Tactic.NormNum"
+    ],
+    "Conjectures.HaralambisDefects": [
+      "Conjectures.HaralambisOrientation",
+      "Conjectures.HaralambisFaces",
+      "Mathlib.Algebra.Ring.Int.Parity",
+      "Mathlib.Tactic.NormNum"
+    ],
+    "Conjectures.LonelinessContinuity": [
+      "Conjectures.Loneliness",
+      "Mathlib.Topology.MetricSpace.Lipschitz",
+      "Mathlib.Topology.Order.Compact",
+      "Mathlib.Topology.Algebra.Order.Archimedean",
+      "Mathlib.Topology.Algebra.Ring.Real"
+    ],
+    "Conjectures.LonelinessFiveFamily": [
+      "Conjectures.Loneliness"
+    ],
+    "Conjectures.LonelinessCertificate": [
+      "Conjectures.LonelinessMax"
+    ],
+    "Conjectures.LonelinessCoalescenceAvoiding": [
+      "Conjectures.LonelinessCoalescence"
+    ],
+    "Conjectures.LonelinessCoordinateSubspace": [
+      "Conjectures.LonelinessCoalescence",
+      "Mathlib.LinearAlgebra.Pi",
+      "Mathlib.Algebra.Module.Submodule.Map"
+    ],
+    "Conjectures.LonelinessKZBasisGram": [
+      "Conjectures.LonelinessNearestPlane",
+      "Mathlib.Analysis.InnerProductSpace.GramMatrix",
+      "Mathlib.Algebra.BigOperators.Fin",
+      "Mathlib.LinearAlgebra.Matrix.Block",
+      "Mathlib.LinearAlgebra.Matrix.Transvection"
+    ],
+    "Conjectures.LonelinessNearestPlaneRelative": [
+      "Conjectures.LonelinessNearestPlane"
+    ],
+    "Conjectures.LonelinessPrefixProductTables": [
+      "Conjectures.LonelinessPrefixProduct",
+      "Mathlib.Tactic.IntervalCases"
+    ],
+    "Conjectures.NonmixedGapPeriodic": [
+      "Conjectures.NonmixedGapDensity",
+      "Mathlib.RingTheory.Coprime.Lemmas",
+      "Mathlib.Tactic.FieldSimp"
+    ],
+    "Conjectures.NonmixedGapResidues": [
+      "Conjectures.NonmixedGapDensity"
+    ],
+    "Conjectures.LonelinessRational": [
+      "Conjectures.LonelinessContinuity"
+    ],
+    "Conjectures.LonelinessCriticalBase": [
+      "Conjectures.LonelinessFiveFamily",
+      "Mathlib.Data.Int.GCD",
+      "Mathlib.Data.List.Perm.Subperm"
+    ],
+    "Conjectures.LonelinessCriticalSecond": [
+      "Conjectures.LonelinessFiveFamily"
+    ],
+    "Conjectures.LonelinessExamples": [
+      "Conjectures.LonelinessCertificate"
+    ],
+    "Conjectures.LonelinessPairBridge": [
+      "Conjectures.LonelinessCertificate",
+      "Conjectures.Loneliness"
+    ],
+    "Conjectures.LonelinessCoordinateClasses": [
+      "Conjectures.LonelinessCoordinateSubspace",
+      "Mathlib.SetTheory.Cardinal.Finite",
+      "Mathlib.Data.Quot"
+    ],
+    "Conjectures.LonelinessKZBasisInteger": [
+      "Conjectures.LonelinessKZBasisVectors",
+      "Conjectures.LonelinessKZBasisGram",
+      "Mathlib.Analysis.Matrix.PosDef",
+      "Mathlib.LinearAlgebra.Determinant",
+      "Mathlib.Algebra.Group.Int.Units",
+      "Mathlib.Algebra.Order.Ring.Int",
+      "Mathlib.Data.Nat.Find"
+    ],
+    "Conjectures.LonelinessKZBasisStep": [
+      "Conjectures.LonelinessKZBasisGram",
+      "Conjectures.LonelinessNearestPlaneRelative"
+    ],
+    "Conjectures.LonelinessKZProductCertificate": [
+      "Conjectures.LonelinessPrefixProductTables",
+      "Mathlib.Data.BitVec",
+      "Mathlib.Data.Fin.Tuple.Sort",
+      "Mathlib.Algebra.BigOperators.Fin"
+    ],
+    "Conjectures.LonelinessPacking": [
+      "Conjectures.LonelinessRational",
+      "Conjectures.NonmixedGapPeriodic"
+    ],
+    "Conjectures.HaralambisIntervals": [
+      "Conjectures.LonelinessCriticalBase",
+      "Mathlib.Data.Finset.Max",
+      "Mathlib.Algebra.Ring.Int.Parity",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessModularWitness": [
+      "Conjectures.LonelinessRational",
+      "Conjectures.LonelinessCriticalBase"
+    ],
+    "Conjectures.LonelinessSubspaceDensity": [
+      "Conjectures.LonelinessContinuity",
+      "Conjectures.LonelinessCriticalBase",
+      "Mathlib.Data.Finset.Lattice.Fold",
+      "Mathlib.LinearAlgebra.Finsupp.LinearCombination",
+      "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "Mathlib.Analysis.Normed.Group.Constructions",
+      "Mathlib.Analysis.Normed.Group.Real"
+    ],
+    "Conjectures.LonelinessCriticalFamilies": [
+      "Conjectures.LonelinessCriticalBase",
+      "Conjectures.LonelinessCriticalSecond",
+      "Mathlib.Data.List.Nodup"
+    ],
+    "Conjectures.LonelinessIntegerDirection": [
+      "Conjectures.LonelinessCoordinateClasses",
+      "Mathlib.RingTheory.Localization.Integer",
+      "Mathlib.RingTheory.Localization.FractionRing",
+      "Mathlib.Algebra.Order.Ring.Int",
+      "Mathlib.Algebra.CharZero.Infinite"
+    ],
+    "Conjectures.LonelinessKZBasisOperations": [
+      "Conjectures.LonelinessKZBasisInteger",
+      "Mathlib.LinearAlgebra.Transvection.Basic"
+    ],
+    "Conjectures.LonelinessKZProductOrder": [
+      "Conjectures.LonelinessKZProductCertificate"
+    ],
+    "Conjectures.LonelinessPackingLower": [
+      "Conjectures.LonelinessPacking",
+      "Mathlib.Data.Finset.Max",
+      "Mathlib.Algebra.Order.BigOperators.Group.List"
+    ],
+    "Conjectures.HaralambisCounting": [
+      "Conjectures.HaralambisIntervals",
+      "Conjectures.LonelinessPacking",
+      "Mathlib.Algebra.BigOperators.Ring.Finset"
+    ],
+    "Conjectures.LonelinessModularForcedDivisor": [
+      "Conjectures.LonelinessModularPrimes",
+      "Conjectures.LonelinessModularWitness",
+      "Mathlib.Algebra.GCDMonoid.Finset"
+    ],
+    "Conjectures.LonelinessModularLift": [
+      "Conjectures.LonelinessModularWitness"
+    ],
+    "Conjectures.LonelinessModularNormalize": [
+      "Conjectures.LonelinessModularWitness",
+      "Mathlib.Data.Finset.Max",
+      "Mathlib.Data.Finset.Card"
+    ],
+    "Conjectures.LonelinessModularRationalWitness": [
+      "Conjectures.LonelinessModularWitness"
+    ],
+    "Conjectures.LonelinessHyperplaneArithmetic": [
+      "Conjectures.LonelinessSubspaceDensity",
+      "Mathlib.Algebra.GCDMonoid.Finset",
+      "Mathlib.Data.Int.GCD"
+    ],
+    "Conjectures.LonelinessModularShortVector": [
+      "Conjectures.LonelinessSubspaceDensity"
+    ],
+    "Conjectures.LonelinessNearestPlaneValue": [
+      "Conjectures.LonelinessNearestPlaneRelative",
+      "Conjectures.LonelinessSubspaceDensity",
+      "Mathlib.Analysis.InnerProductSpace.PiL2"
+    ],
+    "Conjectures.LonelinessNormalization": [
+      "Conjectures.LonelinessCriticalFamilies"
+    ],
+    "Conjectures.LonelinessRationalSubspace": [
+      "Conjectures.LonelinessIntegerDirection",
+      "Mathlib.LinearAlgebra.LinearIndependent.BaseChange",
+      "Mathlib.LinearAlgebra.Dimension.Free",
+      "Mathlib.Algebra.Algebra.Rat"
+    ],
+    "Conjectures.LonelinessKZBasisReduction": [
+      "Conjectures.LonelinessKZBasisOperations",
+      "Conjectures.LonelinessKZBasisStep"
+    ],
+    "Conjectures.LonelinessKZProductAssembly": [
+      "Conjectures.LonelinessKZProductOrder"
+    ],
+    "Conjectures.HaralambisPairSum": [
+      "Conjectures.HaralambisCounting"
+    ],
+    "Conjectures.LonelinessFourSpeedEnumeration": [
+      "Conjectures.LonelinessModularNormalize",
+      "Mathlib.Data.Finset.Powerset",
+      "Mathlib.Order.Interval.Finset.Nat"
+    ],
+    "Conjectures.LonelinessFourSpeedLiftDirections": [
+      "Conjectures.LonelinessModularRationalWitness"
+    ],
+    "Conjectures.LonelinessPrimitiveBasis": [
+      "Conjectures.LonelinessHyperplaneArithmetic",
+      "Mathlib.LinearAlgebra.Unimodular",
+      "Mathlib.LinearAlgebra.FreeModule.PID",
+      "Mathlib.LinearAlgebra.Dimension.Free"
+    ],
+    "Conjectures.HaralambisDensity": [
+      "Conjectures.HaralambisCounting",
+      "Conjectures.LonelinessNormalization",
+      "Conjectures.NonmixedGapResidues"
+    ],
+    "Conjectures.LonelinessModularDirections": [
+      "Conjectures.LonelinessNormalization",
+      "Conjectures.LonelinessModularShortVector",
+      "Mathlib.Data.List.FinRange",
+      "Mathlib.Data.List.Sort"
+    ],
+    "Conjectures.LonelinessModularSearch": [
+      "Conjectures.LonelinessModularLift",
+      "Conjectures.LonelinessNormalization"
+    ],
+    "Conjectures.LonelinessCoalescenceValue": [
+      "Conjectures.LonelinessRationalSubspace",
+      "Conjectures.LonelinessSubspaceDensity"
+    ],
+    "Conjectures.LonelinessSubspaceExtension": [
+      "Conjectures.LonelinessRationalSubspace",
+      "Conjectures.LonelinessSubspaceDensity",
+      "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas"
+    ],
+    "Conjectures.LonelinessKZGeneral": [
+      "Conjectures.LonelinessKZProductAssembly"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificate": [
+      "Conjectures.LonelinessFourSpeedEnumeration",
+      "Conjectures.LonelinessModularRationalWitness",
+      "Mathlib.Data.Finset.Sort",
+      "Mathlib.Data.Fintype.EquivFin"
+    ],
+    "Conjectures.LonelinessPrimitiveSpeeds": [
+      "Conjectures.LonelinessPrimitiveBasis"
+    ],
+    "Conjectures.HaralambisTheorem": [
+      "Conjectures.HaralambisDefects",
+      "Conjectures.HaralambisPeriods",
+      "Conjectures.HaralambisDensity",
+      "Conjectures.HaralambisPairSum"
+    ],
+    "Conjectures.LonelinessModularFoldedSearch": [
+      "Conjectures.LonelinessModularNormalize",
+      "Conjectures.LonelinessModularRationalWitness",
+      "Conjectures.LonelinessModularSearch"
+    ],
+    "Conjectures.LonelinessNearestPlanePrefix": [
+      "Conjectures.LonelinessNearestPlaneValue",
+      "Conjectures.LonelinessCoalescenceValue",
+      "Mathlib.LinearAlgebra.Dimension.Finrank"
+    ],
+    "Conjectures.LonelinessTwoDirections": [
+      "Conjectures.LonelinessCoalescenceAvoiding",
+      "Conjectures.LonelinessRationalSubspace",
+      "Conjectures.LonelinessCoalescenceValue"
+    ],
+    "Conjectures.LonelinessFiveRunnerNormData": [
+      "Conjectures.LonelinessKZGeneral"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificate17": [
+      "Conjectures.LonelinessFourSpeedCertificate"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificate29": [
+      "Conjectures.LonelinessFourSpeedCertificate"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificate31": [
+      "Conjectures.LonelinessFourSpeedCertificate"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificate37": [
+      "Conjectures.LonelinessFourSpeedCertificate"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificate41": [
+      "Conjectures.LonelinessFourSpeedCertificate"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificate43": [
+      "Conjectures.LonelinessFourSpeedCertificate"
+    ],
+    "Conjectures.LonelinessFourSpeedFastEnumeration": [
+      "Conjectures.LonelinessFourSpeedCertificate"
+    ],
+    "Conjectures.LonelinessSmallRunner": [
+      "Conjectures.HaralambisTheorem",
+      "Conjectures.LonelinessCoalescenceValue",
+      "Conjectures.LonelinessPackingLower"
+    ],
+    "Conjectures.LonelinessNormGeometry": [
+      "Conjectures.LonelinessKZBasisReduction",
+      "Conjectures.LonelinessPrimitiveSpeeds",
+      "Conjectures.LonelinessNearestPlanePrefix",
+      "Conjectures.LonelinessKZGeneral"
+    ],
+    "Conjectures.LonelinessPlaneDirections": [
+      "Conjectures.LonelinessTwoDirections"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificateChunks": [
+      "Conjectures.LonelinessFourSpeedFastEnumeration"
+    ],
+    "Conjectures.LonelinessFourSpeedGeometry": [
+      "Conjectures.LonelinessSmallRunner",
+      "Conjectures.LonelinessModularDirections",
+      "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas"
+    ],
+    "Conjectures.LonelinessPigeonholePlane": [
+      "Conjectures.LonelinessPigeonhole",
+      "Conjectures.LonelinessSubspaceExtension",
+      "Conjectures.LonelinessSmallRunner"
+    ],
+    "Conjectures.LonelinessTightNormCommon": [
+      "Conjectures.LonelinessNormGeometry"
+    ],
+    "Conjectures.LonelinessPlaneGap": [
+      "Conjectures.LonelinessPlaneDirections",
+      "Conjectures.LonelinessSmallRunner"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificate47": [
+      "Conjectures.LonelinessFourSpeedCertificateChunks",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificate53": [
+      "Conjectures.LonelinessFourSpeedCertificateChunks",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificate59": [
+      "Conjectures.LonelinessFourSpeedCertificateChunks",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificate61": [
+      "Conjectures.LonelinessFourSpeedCertificateChunks",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedFoldedGeometry": [
+      "Conjectures.LonelinessFourSpeedGeometry",
+      "Conjectures.LonelinessModularNormalize"
+    ],
+    "Conjectures.LonelinessFourSpeedCutoff": [
+      "Conjectures.LonelinessPigeonholePlane",
+      "Mathlib.Data.Fintype.Perm"
+    ],
+    "Conjectures.LonelinessFourSpeedClassification": [
+      "Conjectures.LonelinessPlaneGap",
+      "Conjectures.LonelinessNormalization"
+    ],
+    "Conjectures.LonelinessFourSpeedCertificateAll": [
+      "Conjectures.LonelinessFourSpeedCertificate17",
+      "Conjectures.LonelinessFourSpeedCertificate29",
+      "Conjectures.LonelinessFourSpeedCertificate31",
+      "Conjectures.LonelinessFourSpeedCertificate37",
+      "Conjectures.LonelinessFourSpeedCertificate41",
+      "Conjectures.LonelinessFourSpeedCertificate43",
+      "Conjectures.LonelinessFourSpeedCertificate47",
+      "Conjectures.LonelinessFourSpeedCertificate53",
+      "Conjectures.LonelinessFourSpeedCertificate59",
+      "Conjectures.LonelinessFourSpeedCertificate61",
+      "Conjectures.LonelinessModularPrimes"
+    ],
+    "Conjectures.LonelinessFourSpeedLiftSound": [
+      "Conjectures.LonelinessModularFoldedSearch",
+      "Conjectures.LonelinessFourSpeedFoldedGeometry",
+      "Conjectures.LonelinessFourSpeedLiftDirections",
+      "Mathlib.Data.List.GetD"
+    ],
+    "Conjectures.LonelinessFourSpeedLift17": [
+      "Conjectures.LonelinessFourSpeedLiftSound",
+      "Conjectures.LonelinessFourSpeedCertificate17",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedLift29": [
+      "Conjectures.LonelinessFourSpeedLiftSound",
+      "Conjectures.LonelinessFourSpeedCertificate29",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedLift31": [
+      "Conjectures.LonelinessFourSpeedLiftSound",
+      "Conjectures.LonelinessFourSpeedCertificate31",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedLift37": [
+      "Conjectures.LonelinessFourSpeedLiftSound",
+      "Conjectures.LonelinessFourSpeedCertificate37",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedLift41": [
+      "Conjectures.LonelinessFourSpeedLiftSound",
+      "Conjectures.LonelinessFourSpeedCertificate41",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedLift43": [
+      "Conjectures.LonelinessFourSpeedLiftSound",
+      "Conjectures.LonelinessFourSpeedCertificate43",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedLift47": [
+      "Conjectures.LonelinessFourSpeedLiftSound",
+      "Conjectures.LonelinessFourSpeedCertificate47",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedLift53": [
+      "Conjectures.LonelinessFourSpeedLiftSound",
+      "Conjectures.LonelinessFourSpeedCertificate53",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedLift59": [
+      "Conjectures.LonelinessFourSpeedLiftSound",
+      "Conjectures.LonelinessFourSpeedCertificate59",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedLift61": [
+      "Conjectures.LonelinessFourSpeedLiftSound",
+      "Conjectures.LonelinessFourSpeedCertificate61",
+      "Mathlib.Tactic.FinCases"
+    ],
+    "Conjectures.LonelinessFourSpeedFinite": [
+      "Conjectures.LonelinessFourSpeedCertificateAll",
+      "Conjectures.LonelinessFourSpeedLift17",
+      "Conjectures.LonelinessFourSpeedLift29",
+      "Conjectures.LonelinessFourSpeedLift31",
+      "Conjectures.LonelinessFourSpeedLift37",
+      "Conjectures.LonelinessFourSpeedLift41",
+      "Conjectures.LonelinessFourSpeedLift43",
+      "Conjectures.LonelinessFourSpeedLift47",
+      "Conjectures.LonelinessFourSpeedLift53",
+      "Conjectures.LonelinessFourSpeedLift59",
+      "Conjectures.LonelinessFourSpeedLift61"
+    ],
+    "Conjectures.LonelinessFourSpeedClassificationFinite": [
+      "Conjectures.LonelinessFourSpeedClassification",
+      "Conjectures.LonelinessFourSpeedFinite"
+    ],
+    "Conjectures.LonelinessFourSpeedGap": [
+      "Conjectures.LonelinessFourSpeedClassificationFinite",
+      "Conjectures.LonelinessFourSpeedCutoff",
+      "Conjectures.LonelinessExamples",
+      "Conjectures.LonelinessPairBridge"
+    ],
+    "Conjectures.LonelinessFiveRunnerNorm": [
+      "Conjectures.LonelinessFiveRunnerNormData",
+      "Conjectures.LonelinessTightNormCommon",
+      "Conjectures.LonelinessFourSpeedGap",
+      "Conjectures.LonelinessModularForcedDivisor"
+    ]
+  },
+  "modern": {
+    "Conjectures.HaralambisFaces": false,
+    "Conjectures.HaralambisOrientation": false,
+    "Conjectures.HaralambisPeriods": false,
+    "Conjectures.Loneliness": false,
+    "Conjectures.LonelinessMax": false,
+    "Conjectures.LonelinessCoalescence": false,
+    "Conjectures.LonelinessModularPrimes": false,
+    "Conjectures.LonelinessNearestPlane": false,
+    "Conjectures.LonelinessKZBasisVectors": false,
+    "Conjectures.LonelinessPigeonhole": false,
+    "Conjectures.LonelinessPrefixProduct": false,
+    "Conjectures.NonmixedGapDensity": false,
+    "Conjectures.HaralambisDefects": false,
+    "Conjectures.LonelinessContinuity": false,
+    "Conjectures.LonelinessFiveFamily": false,
+    "Conjectures.LonelinessCertificate": false,
+    "Conjectures.LonelinessCoalescenceAvoiding": false,
+    "Conjectures.LonelinessCoordinateSubspace": false,
+    "Conjectures.LonelinessKZBasisGram": false,
+    "Conjectures.LonelinessNearestPlaneRelative": false,
+    "Conjectures.LonelinessPrefixProductTables": false,
+    "Conjectures.NonmixedGapPeriodic": false,
+    "Conjectures.NonmixedGapResidues": false,
+    "Conjectures.LonelinessRational": false,
+    "Conjectures.LonelinessCriticalBase": false,
+    "Conjectures.LonelinessCriticalSecond": false,
+    "Conjectures.LonelinessExamples": false,
+    "Conjectures.LonelinessPairBridge": false,
+    "Conjectures.LonelinessCoordinateClasses": false,
+    "Conjectures.LonelinessKZBasisInteger": false,
+    "Conjectures.LonelinessKZBasisStep": false,
+    "Conjectures.LonelinessKZProductCertificate": false,
+    "Conjectures.LonelinessPacking": false,
+    "Conjectures.HaralambisIntervals": false,
+    "Conjectures.LonelinessModularWitness": false,
+    "Conjectures.LonelinessSubspaceDensity": false,
+    "Conjectures.LonelinessCriticalFamilies": false,
+    "Conjectures.LonelinessIntegerDirection": false,
+    "Conjectures.LonelinessKZBasisOperations": false,
+    "Conjectures.LonelinessKZProductOrder": false,
+    "Conjectures.LonelinessPackingLower": false,
+    "Conjectures.HaralambisCounting": false,
+    "Conjectures.LonelinessModularForcedDivisor": false,
+    "Conjectures.LonelinessModularLift": false,
+    "Conjectures.LonelinessModularNormalize": false,
+    "Conjectures.LonelinessModularRationalWitness": false,
+    "Conjectures.LonelinessHyperplaneArithmetic": false,
+    "Conjectures.LonelinessModularShortVector": false,
+    "Conjectures.LonelinessNearestPlaneValue": false,
+    "Conjectures.LonelinessNormalization": false,
+    "Conjectures.LonelinessRationalSubspace": false,
+    "Conjectures.LonelinessKZBasisReduction": false,
+    "Conjectures.LonelinessKZProductAssembly": false,
+    "Conjectures.HaralambisPairSum": false,
+    "Conjectures.LonelinessFourSpeedEnumeration": false,
+    "Conjectures.LonelinessFourSpeedLiftDirections": false,
+    "Conjectures.LonelinessPrimitiveBasis": false,
+    "Conjectures.HaralambisDensity": false,
+    "Conjectures.LonelinessModularDirections": false,
+    "Conjectures.LonelinessModularSearch": false,
+    "Conjectures.LonelinessCoalescenceValue": false,
+    "Conjectures.LonelinessSubspaceExtension": false,
+    "Conjectures.LonelinessKZGeneral": false,
+    "Conjectures.LonelinessFourSpeedCertificate": false,
+    "Conjectures.LonelinessPrimitiveSpeeds": false,
+    "Conjectures.HaralambisTheorem": false,
+    "Conjectures.LonelinessModularFoldedSearch": false,
+    "Conjectures.LonelinessNearestPlanePrefix": false,
+    "Conjectures.LonelinessTwoDirections": false,
+    "Conjectures.LonelinessFiveRunnerNormData": false,
+    "Conjectures.LonelinessFourSpeedCertificate17": false,
+    "Conjectures.LonelinessFourSpeedCertificate29": false,
+    "Conjectures.LonelinessFourSpeedCertificate31": false,
+    "Conjectures.LonelinessFourSpeedCertificate37": false,
+    "Conjectures.LonelinessFourSpeedCertificate41": false,
+    "Conjectures.LonelinessFourSpeedCertificate43": false,
+    "Conjectures.LonelinessFourSpeedFastEnumeration": false,
+    "Conjectures.LonelinessSmallRunner": false,
+    "Conjectures.LonelinessNormGeometry": false,
+    "Conjectures.LonelinessPlaneDirections": false,
+    "Conjectures.LonelinessFourSpeedCertificateChunks": false,
+    "Conjectures.LonelinessFourSpeedGeometry": false,
+    "Conjectures.LonelinessPigeonholePlane": false,
+    "Conjectures.LonelinessTightNormCommon": false,
+    "Conjectures.LonelinessPlaneGap": false,
+    "Conjectures.LonelinessFourSpeedCertificate47": false,
+    "Conjectures.LonelinessFourSpeedCertificate53": false,
+    "Conjectures.LonelinessFourSpeedCertificate59": false,
+    "Conjectures.LonelinessFourSpeedCertificate61": false,
+    "Conjectures.LonelinessFourSpeedFoldedGeometry": false,
+    "Conjectures.LonelinessFourSpeedCutoff": false,
+    "Conjectures.LonelinessFourSpeedClassification": false,
+    "Conjectures.LonelinessFourSpeedCertificateAll": false,
+    "Conjectures.LonelinessFourSpeedLiftSound": false,
+    "Conjectures.LonelinessFourSpeedLift17": false,
+    "Conjectures.LonelinessFourSpeedLift29": false,
+    "Conjectures.LonelinessFourSpeedLift31": false,
+    "Conjectures.LonelinessFourSpeedLift37": false,
+    "Conjectures.LonelinessFourSpeedLift41": false,
+    "Conjectures.LonelinessFourSpeedLift43": false,
+    "Conjectures.LonelinessFourSpeedLift47": false,
+    "Conjectures.LonelinessFourSpeedLift53": false,
+    "Conjectures.LonelinessFourSpeedLift59": false,
+    "Conjectures.LonelinessFourSpeedLift61": false,
+    "Conjectures.LonelinessFourSpeedFinite": false,
+    "Conjectures.LonelinessFourSpeedClassificationFinite": false,
+    "Conjectures.LonelinessFourSpeedGap": false,
+    "Conjectures.LonelinessFiveRunnerNorm": false
+  },
+  "dependency_revisions": {
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "plausible": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+    "LeanSearchClient": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+    "importGraph": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+    "proofwidgets": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+    "aesop": "4a174c490d8707121c4a9290800489f105d85e07",
+    "Qq": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+    "batteries": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+    "Cli": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+  },
+  "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+  "source_differences_from_current_working_checkout": [],
+  "audit_source_sha256": "ae3f5ca080f5117f41cfefb48dffea431f226d44d14277c0b4d50ae08fae22ac"
+}

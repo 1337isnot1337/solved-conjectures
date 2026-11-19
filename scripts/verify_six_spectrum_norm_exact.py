@@ -52,16 +52,62 @@ def exact_singleton(modules, target):
 ROOTS = {
     "norm-geometry": [
         "Conjectures.LonelinessSixSpectrumNormGeometry"
+    ],
+    "norm-classification": [
+        "Conjectures.LonelinessSixSpectrumNormClassification",
+        "Conjectures.LonelinessSixPlaneEnumeration"
     ]
 }
 
-REQUIRED = [
+GEOMETRY_REQUIRED = [
     "Loneliness.SixSpectrumNormGeometry.exists_gram_data",
     "Loneliness.SixSpectrumNormGeometry.numerical_margin",
     "Loneliness.SixSpectrumNormGeometry.squaredNorm_lt",
     "Loneliness.SixSpectrumNormGeometry.norm_lt",
     "Loneliness.SixSpectrumNormGeometry.natural_squaredNorm_lt"
 ]
+
+REQUIRED = {
+    "norm-geometry": GEOMETRY_REQUIRED,
+    "norm-classification": GEOMETRY_REQUIRED + [
+        "Loneliness.SixPlane.integer_direction_classCount",
+        "Loneliness.SixPlane.value_lower_of_classCount",
+        "Loneliness.SixPlane.classCount_lt_six_of_same",
+        "Loneliness.SixPlane.no_same_coordinate_of_low_plane",
+        "Loneliness.SixPlane.critical_of_repeated_direction",
+        "Loneliness.SixPlane.two_critical_integer_directions",
+        "Loneliness.SixPlane.support_completion",
+        "Loneliness.SixPlane.critical_direction_normalization",
+        "Loneliness.SixPlane.bool_signs_coverage",
+        "Loneliness.SixPlane.normalized_low_plane",
+        "Loneliness.SixPlane.lineTest_of_low_plane",
+        "Loneliness.SixPlane.admissibleTest_of_low_plane",
+        "Loneliness.SixPlane.standardPlane_finrank_le_two",
+        "Loneliness.SixPlane.acceptanceCheck_sound",
+        "Loneliness.SixPlane.criticalPlane_of_signedCoordinates",
+        "Loneliness.SixPlane.certificateCheck_sound",
+        "Loneliness.SixPlane.critical_plane_of_low_value_of_checked",
+        "Loneliness.SixPlane.critical_parameters_of_low",
+        "Loneliness.SixPlane.first_family_low_parameter",
+        "Loneliness.SixPlane.second_family_ge_two_elevenths",
+        "Loneliness.SixPlane.primitive_critical_low_tuple",
+        "Loneliness.SixPlane.sporadic_low_tuple",
+        "Loneliness.SixPlane.fiveSpeedGap_of_sporadicExhaustion",
+        "Loneliness.SixPlane.permutation_rank_check",
+        "Loneliness.SixPlane.permutationAt_rank",
+        "Loneliness.SixPlane.directionCoverageCheck_sound",
+        "Loneliness.SixPlane.candidate_eq_rowCandidate",
+        "Loneliness.SixPlane.certificateRowCheck_sound",
+        "Loneliness.SixPlane.certificateBlockCheck_sound",
+        "Loneliness.SixPlane.enumeratedPairsChecked_of_blocks",
+        "Loneliness.SixPlane.candidatePairsChecked_of_enumeration",
+        "Loneliness.SixPlane.critical_plane_of_checked_exhaustion",
+        "Loneliness.SixPlane.noncritical_value_ge_two_elevenths_of_checked_exhaustion",
+        "Loneliness.SixSpectrumNormGeometry.containingPlaneGap_of_checked_exhaustion",
+        "Loneliness.SixSpectrumNormGeometry.norm_lt_of_checked_exhaustion",
+        "Loneliness.SixSpectrumNormGeometry.natural_squaredNorm_lt_of_checked_exhaustion",
+    ],
+}
 
 def preflight(model, task):
     require(model["schema"] == "six-spectrum-norm-exact-v1", "Unexpected source model")
@@ -75,7 +121,7 @@ def preflight(model, task):
     require(len(modules) == model["project_module_count"] and set(modules) == set(model["source_sha256"]),
             "Exact spectrum component proof closure differs")
     required = model["required_theorems"]
-    require(required == REQUIRED, "Exact norm theorem inventory differs")
+    require(required == REQUIRED[task], "Exact norm theorem inventory differs")
     require(len(required) == len(set(required)) == model["required_theorem_count"] and len(required) > 0, "Required theorem inventory differs")
     for module in modules:
         require(sha(source(module)) == model["source_sha256"][module],

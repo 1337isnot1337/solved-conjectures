@@ -17,10 +17,21 @@ within one shard. Each shard has at most 2,000 numerical frames, 24 roots, and
 shards run concurrently.
 
 The unchanged producer determines the certificate data and theorem statements.
-`generate_six_speed_late_packet.py` changes only the proof transport to the
-structural population count in `FuelCounts` and `FuelCuts`. It recovers the exact
-original source bytes after removing that transport. The original
-`Cuts.boundedCheck` propositions remain the conclusions of the numerical lemmas.
+`generate_six_speed_late_packet.py` checks large compatibility tables in subtrees
+with at most four entries, then composes those proofs with Boolean conjunction.
+The original table definitions and public `compatible_checked` statements remain
+unchanged. Numerical frame proofs use the structural population count in
+`FuelCounts` and `FuelCuts`; their conclusions remain the original
+`Cuts.boundedCheck` propositions. Removing these two proof transformations recovers
+the exact original source bytes.
+
+The first hosted attempt, run `44555828907`, failed while checking the original
+large compatibility tables for prime 359: the kernel exceeded its 4,500 MiB
+memory allowance. The smaller arithmetic proofs address that reached failure.
+Source reproduction covers all 741 roots and 128,271 frames, but acceptance still
+requires every fresh shard gate and the four complete joins. A new candidate
+commit supersedes the preceding workflow attempt; receipts from different
+attempts cannot be combined.
 
 The workflow freshly compiles every shard's complete project closure with
 `-DwarningAsError=true`, audits all owned declarations including private ones,

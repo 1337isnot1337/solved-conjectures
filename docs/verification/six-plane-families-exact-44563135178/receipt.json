@@ -1,0 +1,3279 @@
+{
+  "accepted_registry_changed": false,
+  "all_frozen_hashes_unchanged": true,
+  "artifact_sha256": {
+    "Conjectures.HaralambisCounting": {
+      ".olean": "13acee52ba13924ea7646d5b883cb24d3458e727fb46c64c2d338ec44ea1163c"
+    },
+    "Conjectures.HaralambisDefects": {
+      ".olean": "a19161fee37e559afd273c8b92b4e1ec398bbcff2b5224c53e43e2a5d1317f2e"
+    },
+    "Conjectures.HaralambisDensity": {
+      ".olean": "d6493411f60d8842b300da847c2a5b00b5ad8fa25db31ec1014cdc6260d732e1"
+    },
+    "Conjectures.HaralambisFaces": {
+      ".olean": "b122764d7cc26552d9218da6fbfc78d6cb295d9a6078eb229289c8be7d9fd3a2"
+    },
+    "Conjectures.HaralambisIntervals": {
+      ".olean": "c24a3e7cbb99146eb95373b7c6a4ab9ad21b925a3e393e4121c6f427f90b94d9"
+    },
+    "Conjectures.HaralambisOrientation": {
+      ".olean": "861c0f322afa14d89f1ac6a258fbd65c2d70e2ff47d9475c69e7fcc4a9440c87"
+    },
+    "Conjectures.HaralambisPairSum": {
+      ".olean": "c3fa9bbf181cba62058f0ca0244d01669865aa3decda85e5e9a8de70b66b89f4"
+    },
+    "Conjectures.HaralambisPeriods": {
+      ".olean": "2f07a40b6b3c4124dbce00edbd836324611f5c4b9d4f1fc83b264304c29c3884"
+    },
+    "Conjectures.HaralambisTheorem": {
+      ".olean": "b2d01befd55fc2df13d7b989aaeae611ac14dae8453c46c97d83c73541300410"
+    },
+    "Conjectures.Loneliness": {
+      ".olean": "4e13edf11c42cd4d01ee6b692970cde34603fd7ef263cbd443775fe41e360307"
+    },
+    "Conjectures.LonelinessCertificate": {
+      ".olean": "4d720af719eae7fe1332573c6c87aead98bac953354171d5eb83cb4239502b06"
+    },
+    "Conjectures.LonelinessCoalescence": {
+      ".olean": "12d146c55086c8dbcbea6f698a5621e535e432269a2e014bcc11854486517b10"
+    },
+    "Conjectures.LonelinessCoalescenceAvoiding": {
+      ".olean": "756ae79bbeca5206fd51f950fcb3a65d8464f0879ce86d6e0dcfd1dab55982ca"
+    },
+    "Conjectures.LonelinessCoalescenceValue": {
+      ".olean": "1796d187ca5da715998d95619cfd91449179b41fdf4a02579cf8d17cb6c5011c"
+    },
+    "Conjectures.LonelinessConsecutiveFamily": {
+      ".olean": "23524d1c18356f6db6ed3fe674b49d14b11311df0c72424387174e4cd408e332"
+    },
+    "Conjectures.LonelinessConsecutiveFamilyCertificates": {
+      ".olean": "c3d89cee7570f5c9103438599b48e5155cf83a555f7c93bda7bbbba5bf6f210f"
+    },
+    "Conjectures.LonelinessContinuity": {
+      ".olean": "5df8e58d7511f3fd3e51be7b051fc8437a3a11511f6dccf1cf8da127e4726862"
+    },
+    "Conjectures.LonelinessCoordinateClasses": {
+      ".olean": "ea5f0e46116aca479a2a4f3b520ba757806ba654ee6e2cb7c6931bf4271beaff"
+    },
+    "Conjectures.LonelinessCoordinateSubspace": {
+      ".olean": "84674dd6ab42fc619699f3e2583278d8d29e8b262e35fcc1ff551d7c58963586"
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      ".olean": "30d9e0468833b8eca771d4125313add10f1193a74297f2f5766fb0c5ddc2b37a"
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      ".olean": "437da03bd240cf3d6a32a15e877e312e77e2bf4653003815473983e173ac9dc8"
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      ".olean": "9f5aeda20bcc2a7fd3d58ec5053618e07fd079964d61ba5ca188cb7227fa2e43"
+    },
+    "Conjectures.LonelinessDistanceColoring": {
+      ".olean": "1fec450d039351f1958a95946cb2455ccf9402bec3d734adfdbd1fed81a1d38d"
+    },
+    "Conjectures.LonelinessEightSpectrumRealization": {
+      ".olean": "eb2508def326e1cac446604dd40c12325b429590aa3c03ab2e01ea5844fe81bb"
+    },
+    "Conjectures.LonelinessExamples": {
+      ".olean": "74df4a669663e961e62a3bb0abd76c99dd163f7c6dca5d5017ed146557a8a39f"
+    },
+    "Conjectures.LonelinessExceptionalEightFamily": {
+      ".olean": "84525dca39257215e1c2b5fea4b0f3b4b3f44ba5153fe709edf9c43a4e1e7a8f"
+    },
+    "Conjectures.LonelinessExceptionalEightFamilyCertificates": {
+      ".olean": "61b430ee620d07422b5df74be610767f8655b1b973c2a71e5154e37ea540a583"
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      ".olean": "9d841dbdfb2e8ea44054e35aa8504f30d54f8cd1e583bda16d8c98277d5d8334"
+    },
+    "Conjectures.LonelinessHigherExamplesCertificate": {
+      ".olean": "5a26431b18c4207dbd295be21b3496eb21ad51811b67985cc5c3d77ea7bad6aa"
+    },
+    "Conjectures.LonelinessHigherExamplesEight": {
+      ".olean": "6fe82cbe0f489007b75174ce7384c48dc371ad74fb3d6641915d6021a6093c85"
+    },
+    "Conjectures.LonelinessHigherExamplesSeven": {
+      ".olean": "4ba6ef914617ae8269dca54fd39523165cc964c14c6a9d4d06f0f480b6970b68"
+    },
+    "Conjectures.LonelinessHigherSpectrumBounds": {
+      ".olean": "361969f00b6b875345d827e9ceed88ba34c8a301bb44e6e5af5413a23a76c20f"
+    },
+    "Conjectures.LonelinessHigherTriangleConsequences": {
+      ".olean": "63de6ef92ae04c2b92c58d1a293d0fe05d7f9e246307e06b069f768562a01733"
+    },
+    "Conjectures.LonelinessIntegerDirection": {
+      ".olean": "e0ddc2d872ca0d300e571cad009dd89fe40ff4191c4f1178c5a4c0d3e8cfa71b"
+    },
+    "Conjectures.LonelinessMax": {
+      ".olean": "2ef1feecd6e9741e4f5638c65b2a12c098710bc6605b1cb99e9a86c5be91bb2e"
+    },
+    "Conjectures.LonelinessModularDirections": {
+      ".olean": "1c71e0ae9ff9bc7777917a312abe13791a78a7221f170eef943f4a332e0d504b"
+    },
+    "Conjectures.LonelinessModularShortVector": {
+      ".olean": "9cf84d2e9a41d88f54f9b29521be30da9e6a29fcb25bc6bbc7d1a96c27a281e5"
+    },
+    "Conjectures.LonelinessModularWitness": {
+      ".olean": "2cf6204fd01e87d40012ff7dde7dcc893eb4742791c88b48979453450f82bbdd"
+    },
+    "Conjectures.LonelinessNormalization": {
+      ".olean": "2d352223e342561e911b526bbf93febf4c961867883682f191ebf0eda9c89c68"
+    },
+    "Conjectures.LonelinessPacking": {
+      ".olean": "8509553a9db0562ca59586560e0b265f32bcf70e8103567b8fd549d639cf663f"
+    },
+    "Conjectures.LonelinessPackingLower": {
+      ".olean": "164f92a35aef2ebd27e71f58c361fc870e76158792132d5ffed50058a1d196d7"
+    },
+    "Conjectures.LonelinessPairBridge": {
+      ".olean": "1d83e336c29a1893da7a08b84439b7a3705eb39da17ae6785ac8f8fa11af03dc"
+    },
+    "Conjectures.LonelinessPlaneDirections": {
+      ".olean": "e9a33913ce24803e181beab3af0fdc36e534fbeb45dc8c952c5f7243851f962e"
+    },
+    "Conjectures.LonelinessPlaneGap": {
+      ".olean": "ae621bdff4c117cab9c8e5323c725b861af31570f8ffc36cc16312c0729e3035"
+    },
+    "Conjectures.LonelinessProductFamily": {
+      ".olean": "d3b3c6042e977de4dce807472ddbaab5058b11dfc32cf3ac81012734d5332cb4"
+    },
+    "Conjectures.LonelinessProductPlaneSpeeds": {
+      ".olean": "71c239cd59038d6a043f068cc0d11f7900f8efa22245ba76b465ed14b4a6b477"
+    },
+    "Conjectures.LonelinessRational": {
+      ".olean": "945c34917c2011b1fa83483163c423be6960f769809bcb768f210fc47ed0bb73"
+    },
+    "Conjectures.LonelinessRationalSubspace": {
+      ".olean": "22c8979317e1d9f98f8f1e57a4957fdf6833d4c1e68990d408340e963ced9540"
+    },
+    "Conjectures.LonelinessSevenSpectrumRealization": {
+      ".olean": "24403f86f49108a8ceeaf2b2b3870e44910f97ace920bd1fea8932db3a456e4d"
+    },
+    "Conjectures.LonelinessSignedCoordinates": {
+      ".olean": "18937aad3a183507e8f7c8af4e87f0a72274a8d1232b1f0006088d368c9d904c"
+    },
+    "Conjectures.LonelinessSixPlaneCriticalNormalization": {
+      ".olean": "706aebbcd68676885c3763017ad1e592146e2b0cced6e6f794f5594c88106b49"
+    },
+    "Conjectures.LonelinessSixPlaneDefs": {
+      ".olean": "9c0965d30c3f92042d7a3cd8d13eda2d455221dc7bb72cdf651196a4b2303150"
+    },
+    "Conjectures.LonelinessSixPlaneFamilies": {
+      ".olean": "9f9a92e67458a3205c55621f0a4bc9941df8e7d1ac72fdc45d1edb206350854e"
+    },
+    "Conjectures.LonelinessSixPlaneGap": {
+      ".olean": "b948eb5eea1016033d72f1ae9be4762d71b7bb82636ef3124f1b74dcced89b69"
+    },
+    "Conjectures.LonelinessSixPlaneGeometry": {
+      ".olean": "4dac236779c6dfa61e86e1dc843fbbd2b190e885be6705344f91f4fc9a0a58f7"
+    },
+    "Conjectures.LonelinessSixPlaneNormalization": {
+      ".olean": "2b512e12f2c8888111e32a86012981e2e8396483b9e735bbdfd981fea2e289fc"
+    },
+    "Conjectures.LonelinessSixProgression": {
+      ".olean": "99bf30251b67ae452a1adfc732c65fa09a400a3441c2f8916fbe9e87cd384d57"
+    },
+    "Conjectures.LonelinessSixSpectrumArithmetic": {
+      ".olean": "9aef1bdb6d415353923fe8413443fead5b6cbe6394e84dcd09e057d257b4b253"
+    },
+    "Conjectures.LonelinessSixSpectrumRealization": {
+      ".olean": "14c75354ae2ce4f6f09e9e75d8e93a1aa8fd46562c30434526c7ee7bab3e03ff"
+    },
+    "Conjectures.LonelinessSixSporadicBounds": {
+      ".olean": "70a65e94812de3757a978f16cfc388c2840c6f430d5b1cd234987fcc1261d7e2"
+    },
+    "Conjectures.LonelinessSmallRunner": {
+      ".olean": "f4d89f0712d88043205d1a83656b8962218d0bbd907028efeedbb66aaf02752a"
+    },
+    "Conjectures.LonelinessSubspaceDensity": {
+      ".olean": "a53656c78de877401c21b5e42b38cd6c506ed14b6ea08b6e7284acca97b0f603"
+    },
+    "Conjectures.LonelinessTwoDirections": {
+      ".olean": "67f91fd833ce668a0c70dad0e6e46466fbc37707c8bab39c056aa10e3f424e0a"
+    },
+    "Conjectures.NonmixedGapDensity": {
+      ".olean": "2611e25a6e012ecbbf7982525da3675d7811d38e2854b113d60cef6646be5f5f"
+    },
+    "Conjectures.NonmixedGapPeriodic": {
+      ".olean": "2dd40d1c51d4df9e61b35947b0a137121a7d7c90f4b2131db797f278b0dd1c1a"
+    },
+    "Conjectures.NonmixedGapResidues": {
+      ".olean": "cf2c50afe8b7a18f3a523ae9e08b984b633b17203e15100dd19862e5178b14fb"
+    }
+  },
+  "axiom_audit": {
+    "all_owned_declarations_audited": true,
+    "audit_source_sha256": "b39ad0e22e4997cae7aa724a3790c3ada1f349af1afe33af66a7a2febfb482eb",
+    "command": [
+      "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "-j1",
+      "-M4500",
+      "-DwarningAsError=true",
+      "HigherSpectrumRealizationAudit.lean"
+    ],
+    "declaration_inventory_sha256": "47eee6c2e8b79cb88bf0ee7c5eb4fa640b6ab13936b4525f48c3c6f197a24392",
+    "exact_raw_private_visibility": true,
+    "exit_code": 0,
+    "explicit_import_all": true,
+    "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/all-owned-audit.log",
+    "log_sha256": "c2d9970042ef7948ffcea54023d56f9f5f0fa5d17fd3f2e0f0f482042f628e5e",
+    "peak_rss_kib": 2743156,
+    "seconds": 8.019,
+    "summary": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1795,
+      "modules": 66,
+      "private_declarations": 49,
+      "raw_declarations": 1795,
+      "required": 5,
+      "tag": "passed",
+      "theorems": 1449
+    },
+    "system_seconds": 0.40185,
+    "timed_out": false,
+    "user_seconds": 7.474199
+  },
+  "axiom_whitelist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-higher-spectrum-realization-exact.yml": "a7aff055556daefb02276dc94f4b9da51ec46edb24badecabe0debecc1ce82fc",
+    "docs/higher-spectrum-realization-exact-sources.json": "884ccc699194212ba1edc33d337f9d990a870e7ee8e58d0854cb87ba633c589f",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_higher_spectrum_realization_exact.py": "43477638de0f7208b756f84fb8e01aaac607e95000d369107088a9c1f30ec142",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "git_commit": "3273ac1a24ea061b0cbd73244e2ac57c08d491ec",
+  "kernel_checks": {
+    "Conjectures.HaralambisCounting": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisCounting"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisCounting.kernel.log",
+      "log_sha256": "1dfcb53824ab331af436c3a0f75c77613a246516e46331affb05178cab1b2979",
+      "peak_rss_kib": 2053880,
+      "replayed_modules": [
+        "Conjectures.HaralambisCounting"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.7612649999999999,
+      "timed_out": false,
+      "user_seconds": 0.907106
+    },
+    "Conjectures.HaralambisDefects": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisDefects"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisDefects.kernel.log",
+      "log_sha256": "5e0b16abe1aac3a73ea9ad566662fe8bac3d709f8181e2ff7928722a1aac6c23",
+      "peak_rss_kib": 1599408,
+      "replayed_modules": [
+        "Conjectures.HaralambisDefects"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.7177660000000001,
+      "timed_out": false,
+      "user_seconds": 0.8234079999999999
+    },
+    "Conjectures.HaralambisDensity": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisDensity"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisDensity.kernel.log",
+      "log_sha256": "8a2e06dbc59a9a770480cdaf01ada8e68b3bc13b2532aae233a422fd3fa426ab",
+      "peak_rss_kib": 2055964,
+      "replayed_modules": [
+        "Conjectures.HaralambisDensity"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.787593,
+      "timed_out": false,
+      "user_seconds": 0.879317
+    },
+    "Conjectures.HaralambisFaces": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisFaces"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisFaces.kernel.log",
+      "log_sha256": "f05a51fbd27f589a20740b2931bc4f9e5606f140546d186b427ed693b158b1f0",
+      "peak_rss_kib": 1511268,
+      "replayed_modules": [
+        "Conjectures.HaralambisFaces"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.717339,
+      "timed_out": false,
+      "user_seconds": 0.833194
+    },
+    "Conjectures.HaralambisIntervals": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisIntervals"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisIntervals.kernel.log",
+      "log_sha256": "3af21daa23d63ac4746a9c9fd1e9da233a21a123942dc9705e1fc509fb5300d2",
+      "peak_rss_kib": 1626296,
+      "replayed_modules": [
+        "Conjectures.HaralambisIntervals"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.7084739999999998,
+      "timed_out": false,
+      "user_seconds": 0.8088069999999999
+    },
+    "Conjectures.HaralambisOrientation": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisOrientation"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisOrientation.kernel.log",
+      "log_sha256": "38fa63dc8b74a122bf24e0ce6ba8fab36eebfdec43549bdaf6608eba94fdc710",
+      "peak_rss_kib": 1574820,
+      "replayed_modules": [
+        "Conjectures.HaralambisOrientation"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.6893889999999998,
+      "timed_out": false,
+      "user_seconds": 0.846177
+    },
+    "Conjectures.HaralambisPairSum": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisPairSum"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisPairSum.kernel.log",
+      "log_sha256": "ce57de587a289f9077ee09b6436c4dffa8a228838940f5231a76c93b8a55147d",
+      "peak_rss_kib": 2064752,
+      "replayed_modules": [
+        "Conjectures.HaralambisPairSum"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.763801,
+      "timed_out": false,
+      "user_seconds": 0.9168569999999999
+    },
+    "Conjectures.HaralambisPeriods": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisPeriods"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisPeriods.kernel.log",
+      "log_sha256": "dde6a705567bf76ded00ac0dadfd82a50bf49474e0de43b7ac2f47a59d541a0e",
+      "peak_rss_kib": 1762964,
+      "replayed_modules": [
+        "Conjectures.HaralambisPeriods"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.695958,
+      "timed_out": false,
+      "user_seconds": 1.062347
+    },
+    "Conjectures.HaralambisTheorem": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisTheorem"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisTheorem.kernel.log",
+      "log_sha256": "a13f744fd7b2d569c294ce05bf18cbcc888f98f9e2962a8ed61f6abca67ace4e",
+      "peak_rss_kib": 2059252,
+      "replayed_modules": [
+        "Conjectures.HaralambisTheorem"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.74857,
+      "timed_out": false,
+      "user_seconds": 0.894272
+    },
+    "Conjectures.Loneliness": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.Loneliness"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.Loneliness.kernel.log",
+      "log_sha256": "381ad3ff638b4f35804e7c2a204a14a82ab29219cf5cc060d045acc27b90eb28",
+      "peak_rss_kib": 1621836,
+      "replayed_modules": [
+        "Conjectures.Loneliness"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.693149,
+      "timed_out": false,
+      "user_seconds": 0.8530749999999999
+    },
+    "Conjectures.LonelinessCertificate": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCertificate"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCertificate.kernel.log",
+      "log_sha256": "68c50d04de944e719b9c708f808b2959d1006b6880dc91620c70220fe94184f6",
+      "peak_rss_kib": 2162940,
+      "replayed_modules": [
+        "Conjectures.LonelinessCertificate"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.757953,
+      "timed_out": false,
+      "user_seconds": 0.92692
+    },
+    "Conjectures.LonelinessCoalescence": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCoalescence"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCoalescence.kernel.log",
+      "log_sha256": "a20f74731976f0d06df173b5572beb5929a6444aa54b86e3c12eeae125fcb82e",
+      "peak_rss_kib": 2084932,
+      "replayed_modules": [
+        "Conjectures.LonelinessCoalescence"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.789888,
+      "timed_out": false,
+      "user_seconds": 0.895443
+    },
+    "Conjectures.LonelinessCoalescenceAvoiding": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCoalescenceAvoiding"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCoalescenceAvoiding.kernel.log",
+      "log_sha256": "22b387cbe703512fd1dba91803f934a60df0f5323b98406a793dcf0c871df672",
+      "peak_rss_kib": 2084192,
+      "replayed_modules": [
+        "Conjectures.LonelinessCoalescenceAvoiding"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.762106,
+      "timed_out": false,
+      "user_seconds": 0.950507
+    },
+    "Conjectures.LonelinessCoalescenceValue": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCoalescenceValue"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCoalescenceValue.kernel.log",
+      "log_sha256": "ebb0d72141d5b7fc7acbc632e91f1296867a5cdbd7f218173d6aea07ca509c8d",
+      "peak_rss_kib": 2218096,
+      "replayed_modules": [
+        "Conjectures.LonelinessCoalescenceValue"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.8204509999999998,
+      "timed_out": false,
+      "user_seconds": 0.8697819999999999
+    },
+    "Conjectures.LonelinessConsecutiveFamily": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessConsecutiveFamily"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessConsecutiveFamily.kernel.log",
+      "log_sha256": "96c35a540b560f4f10a5e06d47a1d9309a8fa5fa1ebecbccf4f96637322611a5",
+      "peak_rss_kib": 1628356,
+      "replayed_modules": [
+        "Conjectures.LonelinessConsecutiveFamily"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.74112,
+      "timed_out": false,
+      "user_seconds": 0.9010269999999999
+    },
+    "Conjectures.LonelinessConsecutiveFamilyCertificates": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessConsecutiveFamilyCertificates"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessConsecutiveFamilyCertificates.kernel.log",
+      "log_sha256": "87cc60d0d69f9b2e9db9a2aca5e13393f68c32cb02381456a30dbafc6043eb30",
+      "peak_rss_kib": 1644296,
+      "replayed_modules": [
+        "Conjectures.LonelinessConsecutiveFamilyCertificates"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.710665,
+      "timed_out": false,
+      "user_seconds": 1.269064
+    },
+    "Conjectures.LonelinessContinuity": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessContinuity"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessContinuity.kernel.log",
+      "log_sha256": "7264f9eab09c0ab1a3907cf0cde588559b77d6c9ad68cc93e6cd9fbb7deef86e",
+      "peak_rss_kib": 1846656,
+      "replayed_modules": [
+        "Conjectures.LonelinessContinuity"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.723534,
+      "timed_out": false,
+      "user_seconds": 0.863254
+    },
+    "Conjectures.LonelinessCoordinateClasses": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCoordinateClasses"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCoordinateClasses.kernel.log",
+      "log_sha256": "77199b6ba099d1d47a3d12edcce867d3d3894deb6bcf25778c347f7dc37eac34",
+      "peak_rss_kib": 2074900,
+      "replayed_modules": [
+        "Conjectures.LonelinessCoordinateClasses"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.787968,
+      "timed_out": false,
+      "user_seconds": 0.949576
+    },
+    "Conjectures.LonelinessCoordinateSubspace": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCoordinateSubspace"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCoordinateSubspace.kernel.log",
+      "log_sha256": "316ac14d44fe8e0f38f787b88688622f3f07305b4bcb8175d62cd7a2e30bfa89",
+      "peak_rss_kib": 2079032,
+      "replayed_modules": [
+        "Conjectures.LonelinessCoordinateSubspace"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.776901,
+      "timed_out": false,
+      "user_seconds": 0.901957
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalBase"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCriticalBase.kernel.log",
+      "log_sha256": "0006fcc9df8f4040810ba1a8383d1636b283327a300f369e1dca3274ff0cebf2",
+      "peak_rss_kib": 1627124,
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalBase"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.73491,
+      "timed_out": false,
+      "user_seconds": 0.8324659999999999
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalFamilies"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCriticalFamilies.kernel.log",
+      "log_sha256": "89892e848696c1a257a3d6911b77edeee36bf34405de5eeba33538f061c1a830",
+      "peak_rss_kib": 1624124,
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalFamilies"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.747056,
+      "timed_out": false,
+      "user_seconds": 0.786125
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalSecond"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCriticalSecond.kernel.log",
+      "log_sha256": "96acec391f266c5b2c8aa6c1c440910f814eb5eeca124966bf44bbb6150f4923",
+      "peak_rss_kib": 1635844,
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalSecond"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.737383,
+      "timed_out": false,
+      "user_seconds": 0.8382189999999999
+    },
+    "Conjectures.LonelinessDistanceColoring": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessDistanceColoring"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessDistanceColoring.kernel.log",
+      "log_sha256": "a65b833c28a1b3a798544b34126e6fd41d424b788f267745e9963389f61c2f63",
+      "peak_rss_kib": 2253892,
+      "replayed_modules": [
+        "Conjectures.LonelinessDistanceColoring"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.797648,
+      "timed_out": false,
+      "user_seconds": 0.9462879999999999
+    },
+    "Conjectures.LonelinessEightSpectrumRealization": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessEightSpectrumRealization"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessEightSpectrumRealization.kernel.log",
+      "log_sha256": "ffb0d4dff68ae9c0dd4341f66094dee70794a22ccac5618f9ef4136637062305",
+      "peak_rss_kib": 1622864,
+      "replayed_modules": [
+        "Conjectures.LonelinessEightSpectrumRealization"
+      ],
+      "seconds": 2.506,
+      "system_seconds": 1.705578,
+      "timed_out": false,
+      "user_seconds": 0.775813
+    },
+    "Conjectures.LonelinessExamples": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessExamples"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessExamples.kernel.log",
+      "log_sha256": "e8ddf2f72c29ab2e5a4bf5cfdc916bb589d466045c11afa8a3e75a068822bc19",
+      "peak_rss_kib": 2232656,
+      "replayed_modules": [
+        "Conjectures.LonelinessExamples"
+      ],
+      "seconds": 4.761,
+      "system_seconds": 1.788533,
+      "timed_out": false,
+      "user_seconds": 2.80968
+    },
+    "Conjectures.LonelinessExceptionalEightFamily": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessExceptionalEightFamily"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessExceptionalEightFamily.kernel.log",
+      "log_sha256": "604016dca29281d35d24674ef682fc5ff8f61e838766759b99a03f53f926b170",
+      "peak_rss_kib": 1632312,
+      "replayed_modules": [
+        "Conjectures.LonelinessExceptionalEightFamily"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.717336,
+      "timed_out": false,
+      "user_seconds": 0.8701559999999999
+    },
+    "Conjectures.LonelinessExceptionalEightFamilyCertificates": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessExceptionalEightFamilyCertificates"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessExceptionalEightFamilyCertificates.kernel.log",
+      "log_sha256": "580decdb4f9e322284f882ec294571b62a20a3b08cef840b5aefa4669e37a98d",
+      "peak_rss_kib": 1647160,
+      "replayed_modules": [
+        "Conjectures.LonelinessExceptionalEightFamilyCertificates"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.719322,
+      "timed_out": false,
+      "user_seconds": 0.9726159999999999
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessFiveFamily"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessFiveFamily.kernel.log",
+      "log_sha256": "34a6f139b5b00907c71526d36b276ce6e9488a877c161d45ff5ec4260b65e3e2",
+      "peak_rss_kib": 1628720,
+      "replayed_modules": [
+        "Conjectures.LonelinessFiveFamily"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.73776,
+      "timed_out": false,
+      "user_seconds": 0.8309289999999999
+    },
+    "Conjectures.LonelinessHigherExamplesCertificate": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessHigherExamplesCertificate"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessHigherExamplesCertificate.kernel.log",
+      "log_sha256": "1265c4d6078b7e335c104c8ccf4f570b7161982e367b4aeaee34ee010464183a",
+      "peak_rss_kib": 1620840,
+      "replayed_modules": [
+        "Conjectures.LonelinessHigherExamplesCertificate"
+      ],
+      "seconds": 2.506,
+      "system_seconds": 1.730925,
+      "timed_out": false,
+      "user_seconds": 0.7720739999999999
+    },
+    "Conjectures.LonelinessHigherExamplesEight": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessHigherExamplesEight"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessHigherExamplesEight.kernel.log",
+      "log_sha256": "5cde071d4f6cac825c8eae154d844e29223527a795a62b35b033e578c0646bf6",
+      "peak_rss_kib": 1652600,
+      "replayed_modules": [
+        "Conjectures.LonelinessHigherExamplesEight"
+      ],
+      "seconds": 3.759,
+      "system_seconds": 1.705696,
+      "timed_out": false,
+      "user_seconds": 1.837618
+    },
+    "Conjectures.LonelinessHigherExamplesSeven": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessHigherExamplesSeven"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessHigherExamplesSeven.kernel.log",
+      "log_sha256": "36d659bb6f37dcf7b0a1d0146a21d835eef88727cca806991a3597268067c8cc",
+      "peak_rss_kib": 1660900,
+      "replayed_modules": [
+        "Conjectures.LonelinessHigherExamplesSeven"
+      ],
+      "seconds": 4.01,
+      "system_seconds": 1.708103,
+      "timed_out": false,
+      "user_seconds": 2.183854
+    },
+    "Conjectures.LonelinessHigherSpectrumBounds": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessHigherSpectrumBounds"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessHigherSpectrumBounds.kernel.log",
+      "log_sha256": "738532cc6d5ec5b6b7b62a4e9e11cb4e62d500a9349e457398092571998be7a1",
+      "peak_rss_kib": 1644040,
+      "replayed_modules": [
+        "Conjectures.LonelinessHigherSpectrumBounds"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.745577,
+      "timed_out": false,
+      "user_seconds": 0.941693
+    },
+    "Conjectures.LonelinessHigherTriangleConsequences": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessHigherTriangleConsequences"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessHigherTriangleConsequences.kernel.log",
+      "log_sha256": "41d21d72041c8e2dac4f497853fbd3f2b9ae31d866ceef0338e80a330374e9cd",
+      "peak_rss_kib": 2391472,
+      "replayed_modules": [
+        "Conjectures.LonelinessHigherTriangleConsequences"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.8203399999999998,
+      "timed_out": false,
+      "user_seconds": 0.998099
+    },
+    "Conjectures.LonelinessIntegerDirection": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessIntegerDirection"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessIntegerDirection.kernel.log",
+      "log_sha256": "28b0971cd5687f1c31db064c0008ef0d356f684b5a88bdef89454808a9df1d0f",
+      "peak_rss_kib": 2094856,
+      "replayed_modules": [
+        "Conjectures.LonelinessIntegerDirection"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.772802,
+      "timed_out": false,
+      "user_seconds": 0.8978999999999999
+    },
+    "Conjectures.LonelinessMax": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessMax"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessMax.kernel.log",
+      "log_sha256": "61edbc0293f5e5d5ee3da2a4bdd1cf0df081f4a7f6a23feed2aba1d303b4eaac",
+      "peak_rss_kib": 2169036,
+      "replayed_modules": [
+        "Conjectures.LonelinessMax"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.7965559999999998,
+      "timed_out": false,
+      "user_seconds": 0.925256
+    },
+    "Conjectures.LonelinessModularDirections": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessModularDirections"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessModularDirections.kernel.log",
+      "log_sha256": "36b28e7c031a950bc3649cdbff3160af5d6eac32c2baec60cb131c493a3f4592",
+      "peak_rss_kib": 1897348,
+      "replayed_modules": [
+        "Conjectures.LonelinessModularDirections"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.763199,
+      "timed_out": false,
+      "user_seconds": 0.81217
+    },
+    "Conjectures.LonelinessModularShortVector": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessModularShortVector"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessModularShortVector.kernel.log",
+      "log_sha256": "6fdf05c635abae0ab2d32e2557f918ca8fef9b98b69b2ad2582254e28080ed83",
+      "peak_rss_kib": 1899916,
+      "replayed_modules": [
+        "Conjectures.LonelinessModularShortVector"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.741079,
+      "timed_out": false,
+      "user_seconds": 0.8550559999999999
+    },
+    "Conjectures.LonelinessModularWitness": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessModularWitness"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessModularWitness.kernel.log",
+      "log_sha256": "215fe2f525ee3eefe932cbe865c83215dee95c3c14a0fabd8077fcb65c386f86",
+      "peak_rss_kib": 1850388,
+      "replayed_modules": [
+        "Conjectures.LonelinessModularWitness"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.734756,
+      "timed_out": false,
+      "user_seconds": 0.9334169999999999
+    },
+    "Conjectures.LonelinessNormalization": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessNormalization"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessNormalization.kernel.log",
+      "log_sha256": "deb65bf8b90ba5b6087c39fa221a140877c5817d011e60d15d26982cdd0d782d",
+      "peak_rss_kib": 1622404,
+      "replayed_modules": [
+        "Conjectures.LonelinessNormalization"
+      ],
+      "seconds": 2.506,
+      "system_seconds": 1.693629,
+      "timed_out": false,
+      "user_seconds": 0.7913589999999999
+    },
+    "Conjectures.LonelinessPacking": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessPacking"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessPacking.kernel.log",
+      "log_sha256": "474c3eca9a7787a111bae2469040df0787705268595310475e62049efc4b1089",
+      "peak_rss_kib": 2050244,
+      "replayed_modules": [
+        "Conjectures.LonelinessPacking"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.79293,
+      "timed_out": false,
+      "user_seconds": 0.8819779999999999
+    },
+    "Conjectures.LonelinessPackingLower": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessPackingLower"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessPackingLower.kernel.log",
+      "log_sha256": "a8c424f71a1f9eea0b9080d238f1f0cfa61c6bf353bbe02e2b46de80e181bfb2",
+      "peak_rss_kib": 2052720,
+      "replayed_modules": [
+        "Conjectures.LonelinessPackingLower"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.779163,
+      "timed_out": false,
+      "user_seconds": 0.948487
+    },
+    "Conjectures.LonelinessPairBridge": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessPairBridge"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessPairBridge.kernel.log",
+      "log_sha256": "c96237d616adcb2981230b7d57e25123ce1333fada41a652466996f55597f8c7",
+      "peak_rss_kib": 2163804,
+      "replayed_modules": [
+        "Conjectures.LonelinessPairBridge"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.784132,
+      "timed_out": false,
+      "user_seconds": 0.901056
+    },
+    "Conjectures.LonelinessPlaneDirections": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessPlaneDirections"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessPlaneDirections.kernel.log",
+      "log_sha256": "cf146ba8554b49fa89179568185561b8e36e5551aab253b850e3245cf552191b",
+      "peak_rss_kib": 2223544,
+      "replayed_modules": [
+        "Conjectures.LonelinessPlaneDirections"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.776795,
+      "timed_out": false,
+      "user_seconds": 0.963355
+    },
+    "Conjectures.LonelinessPlaneGap": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessPlaneGap"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessPlaneGap.kernel.log",
+      "log_sha256": "1c0972290b31b1d64bb31e821b90cd355f9e16f05bbe6196764aa52778faeb6e",
+      "peak_rss_kib": 2281236,
+      "replayed_modules": [
+        "Conjectures.LonelinessPlaneGap"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.800084,
+      "timed_out": false,
+      "user_seconds": 0.936004
+    },
+    "Conjectures.LonelinessProductFamily": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessProductFamily"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessProductFamily.kernel.log",
+      "log_sha256": "bf672a5746815ccf6b4bddc04b02678db7b3b263f61aaa70eff4376fcdb4f788",
+      "peak_rss_kib": 1856328,
+      "replayed_modules": [
+        "Conjectures.LonelinessProductFamily"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.769048,
+      "timed_out": false,
+      "user_seconds": 0.865555
+    },
+    "Conjectures.LonelinessProductPlaneSpeeds": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessProductPlaneSpeeds"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessProductPlaneSpeeds.kernel.log",
+      "log_sha256": "ee1e68f9094eb86145f7cc0770a6210d2d75feaae999ed644db46453a2376154",
+      "peak_rss_kib": 2283012,
+      "replayed_modules": [
+        "Conjectures.LonelinessProductPlaneSpeeds"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.816904,
+      "timed_out": false,
+      "user_seconds": 0.925913
+    },
+    "Conjectures.LonelinessRational": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRational"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessRational.kernel.log",
+      "log_sha256": "f11f5c56de63f1dedd0214b36fc04f2b4a14a4f9540134552e8b318d7b1f8c66",
+      "peak_rss_kib": 1846624,
+      "replayed_modules": [
+        "Conjectures.LonelinessRational"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.736661,
+      "timed_out": false,
+      "user_seconds": 0.86783
+    },
+    "Conjectures.LonelinessRationalSubspace": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRationalSubspace"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessRationalSubspace.kernel.log",
+      "log_sha256": "f065daae188d67a83632b686914ad6cda8907a064822ec7956168fe5e991c69c",
+      "peak_rss_kib": 2102380,
+      "replayed_modules": [
+        "Conjectures.LonelinessRationalSubspace"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.83169,
+      "timed_out": false,
+      "user_seconds": 0.858926
+    },
+    "Conjectures.LonelinessSevenSpectrumRealization": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSevenSpectrumRealization"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSevenSpectrumRealization.kernel.log",
+      "log_sha256": "0b7e7d3d1f0109cd99b47029756713a9269dd3704d432a3267490b66bb23db00",
+      "peak_rss_kib": 1631616,
+      "replayed_modules": [
+        "Conjectures.LonelinessSevenSpectrumRealization"
+      ],
+      "seconds": 2.506,
+      "system_seconds": 1.734114,
+      "timed_out": false,
+      "user_seconds": 0.76317
+    },
+    "Conjectures.LonelinessSignedCoordinates": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSignedCoordinates"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSignedCoordinates.kernel.log",
+      "log_sha256": "631042ab75241cb53fc6c8e26edae82f33d9493b1cc7eb130ecca5765f24e992",
+      "peak_rss_kib": 2281636,
+      "replayed_modules": [
+        "Conjectures.LonelinessSignedCoordinates"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.787223,
+      "timed_out": false,
+      "user_seconds": 0.9794839999999999
+    },
+    "Conjectures.LonelinessSixPlaneCriticalNormalization": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixPlaneCriticalNormalization"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneCriticalNormalization.kernel.log",
+      "log_sha256": "e8df25ebbbee05adca132c2c622d3ef0c9b0ff3c1ff4588b372e8dcc6429c0e3",
+      "peak_rss_kib": 2238664,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixPlaneCriticalNormalization"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.790645,
+      "timed_out": false,
+      "user_seconds": 1.062215
+    },
+    "Conjectures.LonelinessSixPlaneDefs": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixPlaneDefs"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneDefs.kernel.log",
+      "log_sha256": "fd7065cf6205f5d01b0d83d92a8e80576d1cc52d1d7d2112c076b28baf5ffab6",
+      "peak_rss_kib": 1451896,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixPlaneDefs"
+      ],
+      "seconds": 2.506,
+      "system_seconds": 1.673269,
+      "timed_out": false,
+      "user_seconds": 0.746226
+    },
+    "Conjectures.LonelinessSixPlaneFamilies": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixPlaneFamilies"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneFamilies.kernel.log",
+      "log_sha256": "a3060ee6a2f821e5083c7e188a07e9d6a6d5a3526f3f614f6c0092d703d63aba",
+      "peak_rss_kib": 2402208,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixPlaneFamilies"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.7888039999999998,
+      "timed_out": false,
+      "user_seconds": 1.038713
+    },
+    "Conjectures.LonelinessSixPlaneGap": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixPlaneGap"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneGap.kernel.log",
+      "log_sha256": "838be668572ef6a3e0f9765546cd5a81097453db1d1d4446320c692b99d8423d",
+      "peak_rss_kib": 2219696,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixPlaneGap"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.819776,
+      "timed_out": false,
+      "user_seconds": 0.927866
+    },
+    "Conjectures.LonelinessSixPlaneGeometry": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixPlaneGeometry"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneGeometry.kernel.log",
+      "log_sha256": "01f9d8d87288eabbfb1583a5ccf058e8e72c58843095fc51b175dcffa2960796",
+      "peak_rss_kib": 2294668,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixPlaneGeometry"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.837771,
+      "timed_out": false,
+      "user_seconds": 0.990876
+    },
+    "Conjectures.LonelinessSixPlaneNormalization": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixPlaneNormalization"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneNormalization.kernel.log",
+      "log_sha256": "929ba924fa3cc7166e84ff7890c92606f373cb075fcec58e6315de0de71eedf8",
+      "peak_rss_kib": 2283424,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixPlaneNormalization"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.824014,
+      "timed_out": false,
+      "user_seconds": 1.025322
+    },
+    "Conjectures.LonelinessSixProgression": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixProgression"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixProgression.kernel.log",
+      "log_sha256": "3d1d916b3f289153c2c0a0efd699ffacd06102f0deb0e8d76e52d0366cb55243",
+      "peak_rss_kib": 2179728,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixProgression"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.766127,
+      "timed_out": false,
+      "user_seconds": 1.178417
+    },
+    "Conjectures.LonelinessSixSpectrumArithmetic": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixSpectrumArithmetic"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixSpectrumArithmetic.kernel.log",
+      "log_sha256": "6e7582eae66359d8f38e357a776718b70bd9bd3c3527d736c08368188016cefe",
+      "peak_rss_kib": 2171716,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixSpectrumArithmetic"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.7987609999999998,
+      "timed_out": false,
+      "user_seconds": 1.031271
+    },
+    "Conjectures.LonelinessSixSpectrumRealization": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixSpectrumRealization"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixSpectrumRealization.kernel.log",
+      "log_sha256": "4af03a9efa511c9151d72b6fe6da41f6937ceeee7a4e736e3458d2877a08d962",
+      "peak_rss_kib": 2169316,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixSpectrumRealization"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.776392,
+      "timed_out": false,
+      "user_seconds": 0.9096639999999999
+    },
+    "Conjectures.LonelinessSixSporadicBounds": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixSporadicBounds"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixSporadicBounds.kernel.log",
+      "log_sha256": "4e7eae28d41fefbc9850afaed18c05b76a24bb651c566c8c81a7f85b08bf79b1",
+      "peak_rss_kib": 2170384,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixSporadicBounds"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.753958,
+      "timed_out": false,
+      "user_seconds": 0.9784189999999999
+    },
+    "Conjectures.LonelinessSmallRunner": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSmallRunner"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSmallRunner.kernel.log",
+      "log_sha256": "6b961bc7a1284c24db6740580461f218fa8bd1466879737130723dfbad1e9b6a",
+      "peak_rss_kib": 2280032,
+      "replayed_modules": [
+        "Conjectures.LonelinessSmallRunner"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.803435,
+      "timed_out": false,
+      "user_seconds": 0.95365
+    },
+    "Conjectures.LonelinessSubspaceDensity": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSubspaceDensity"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSubspaceDensity.kernel.log",
+      "log_sha256": "92764656e41481a798fc728a27450c4bef1773ce1a4ad8ba60fcd5aa69af6144",
+      "peak_rss_kib": 1897848,
+      "replayed_modules": [
+        "Conjectures.LonelinessSubspaceDensity"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.743291,
+      "timed_out": false,
+      "user_seconds": 0.860667
+    },
+    "Conjectures.LonelinessTwoDirections": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoDirections"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessTwoDirections.kernel.log",
+      "log_sha256": "3142edf9cc417ac6e63e66b9882bbd753399d777ad62edc1108b6dc7c1fa4ca5",
+      "peak_rss_kib": 2225332,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoDirections"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.7868689999999998,
+      "timed_out": false,
+      "user_seconds": 0.947873
+    },
+    "Conjectures.NonmixedGapDensity": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.NonmixedGapDensity"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.NonmixedGapDensity.kernel.log",
+      "log_sha256": "a37db4a985f5154d289e85b11f083e318e18d57d3f9a17e7353a04e9d5b24390",
+      "peak_rss_kib": 2053080,
+      "replayed_modules": [
+        "Conjectures.NonmixedGapDensity"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.748176,
+      "timed_out": false,
+      "user_seconds": 1.104847
+    },
+    "Conjectures.NonmixedGapPeriodic": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.NonmixedGapPeriodic"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.NonmixedGapPeriodic.kernel.log",
+      "log_sha256": "828fc4c91d48808604116c7b2589e589a100bdcef4eca88368eb9c53a6dd2c40",
+      "peak_rss_kib": 2050508,
+      "replayed_modules": [
+        "Conjectures.NonmixedGapPeriodic"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.7950469999999998,
+      "timed_out": false,
+      "user_seconds": 0.920998
+    },
+    "Conjectures.NonmixedGapResidues": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.NonmixedGapResidues"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.NonmixedGapResidues.kernel.log",
+      "log_sha256": "7656a153df2cc1c861818e0e99bac6caa8b40aeb9007e93f9543866b2a6629f2",
+      "peak_rss_kib": 2053428,
+      "replayed_modules": [
+        "Conjectures.NonmixedGapResidues"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.748681,
+      "timed_out": false,
+      "user_seconds": 0.950271
+    }
+  },
+  "kernel_replay": {
+    "all_modules_replayed_as_targets": true,
+    "exact_project_closure": true,
+    "fresh_process_per_module": true,
+    "peak_rss_kib": 2402208,
+    "replayed_modules": [
+      "Conjectures.HaralambisFaces",
+      "Conjectures.HaralambisOrientation",
+      "Conjectures.HaralambisPeriods",
+      "Conjectures.Loneliness",
+      "Conjectures.LonelinessMax",
+      "Conjectures.LonelinessCoalescence",
+      "Conjectures.LonelinessSixPlaneDefs",
+      "Conjectures.NonmixedGapDensity",
+      "Conjectures.HaralambisDefects",
+      "Conjectures.LonelinessContinuity",
+      "Conjectures.LonelinessFiveFamily",
+      "Conjectures.LonelinessCertificate",
+      "Conjectures.LonelinessCoalescenceAvoiding",
+      "Conjectures.LonelinessCoordinateSubspace",
+      "Conjectures.NonmixedGapPeriodic",
+      "Conjectures.NonmixedGapResidues",
+      "Conjectures.LonelinessRational",
+      "Conjectures.LonelinessConsecutiveFamily",
+      "Conjectures.LonelinessCriticalBase",
+      "Conjectures.LonelinessCriticalSecond",
+      "Conjectures.LonelinessExamples",
+      "Conjectures.LonelinessPairBridge",
+      "Conjectures.LonelinessCoordinateClasses",
+      "Conjectures.LonelinessPacking",
+      "Conjectures.LonelinessConsecutiveFamilyCertificates",
+      "Conjectures.LonelinessExceptionalEightFamily",
+      "Conjectures.HaralambisIntervals",
+      "Conjectures.LonelinessHigherExamplesCertificate",
+      "Conjectures.LonelinessModularWitness",
+      "Conjectures.LonelinessSubspaceDensity",
+      "Conjectures.LonelinessCriticalFamilies",
+      "Conjectures.LonelinessSixProgression",
+      "Conjectures.LonelinessIntegerDirection",
+      "Conjectures.LonelinessPackingLower",
+      "Conjectures.LonelinessEightSpectrumRealization",
+      "Conjectures.LonelinessExceptionalEightFamilyCertificates",
+      "Conjectures.HaralambisCounting",
+      "Conjectures.LonelinessHigherExamplesEight",
+      "Conjectures.LonelinessHigherExamplesSeven",
+      "Conjectures.LonelinessModularShortVector",
+      "Conjectures.LonelinessNormalization",
+      "Conjectures.LonelinessSixSpectrumRealization",
+      "Conjectures.LonelinessRationalSubspace",
+      "Conjectures.HaralambisPairSum",
+      "Conjectures.LonelinessSevenSpectrumRealization",
+      "Conjectures.HaralambisDensity",
+      "Conjectures.LonelinessModularDirections",
+      "Conjectures.LonelinessProductFamily",
+      "Conjectures.LonelinessSixSpectrumArithmetic",
+      "Conjectures.LonelinessCoalescenceValue",
+      "Conjectures.LonelinessHigherSpectrumBounds",
+      "Conjectures.HaralambisTheorem",
+      "Conjectures.LonelinessSixSporadicBounds",
+      "Conjectures.LonelinessDistanceColoring",
+      "Conjectures.LonelinessTwoDirections",
+      "Conjectures.LonelinessSmallRunner",
+      "Conjectures.LonelinessHigherTriangleConsequences",
+      "Conjectures.LonelinessPlaneDirections",
+      "Conjectures.LonelinessPlaneGap",
+      "Conjectures.LonelinessSixPlaneGap",
+      "Conjectures.LonelinessSignedCoordinates",
+      "Conjectures.LonelinessSixPlaneCriticalNormalization",
+      "Conjectures.LonelinessProductPlaneSpeeds",
+      "Conjectures.LonelinessSixPlaneNormalization",
+      "Conjectures.LonelinessSixPlaneGeometry",
+      "Conjectures.LonelinessSixPlaneFamilies"
+    ],
+    "seconds": 188.185
+  },
+  "kernel_threads": 1,
+  "modern_modules": {
+    "Conjectures.HaralambisCounting": false,
+    "Conjectures.HaralambisDefects": false,
+    "Conjectures.HaralambisDensity": false,
+    "Conjectures.HaralambisFaces": false,
+    "Conjectures.HaralambisIntervals": false,
+    "Conjectures.HaralambisOrientation": false,
+    "Conjectures.HaralambisPairSum": false,
+    "Conjectures.HaralambisPeriods": false,
+    "Conjectures.HaralambisTheorem": false,
+    "Conjectures.Loneliness": false,
+    "Conjectures.LonelinessCertificate": false,
+    "Conjectures.LonelinessCoalescence": false,
+    "Conjectures.LonelinessCoalescenceAvoiding": false,
+    "Conjectures.LonelinessCoalescenceValue": false,
+    "Conjectures.LonelinessConsecutiveFamily": false,
+    "Conjectures.LonelinessConsecutiveFamilyCertificates": false,
+    "Conjectures.LonelinessContinuity": false,
+    "Conjectures.LonelinessCoordinateClasses": false,
+    "Conjectures.LonelinessCoordinateSubspace": false,
+    "Conjectures.LonelinessCriticalBase": false,
+    "Conjectures.LonelinessCriticalFamilies": false,
+    "Conjectures.LonelinessCriticalSecond": false,
+    "Conjectures.LonelinessDistanceColoring": false,
+    "Conjectures.LonelinessEightSpectrumRealization": false,
+    "Conjectures.LonelinessExamples": false,
+    "Conjectures.LonelinessExceptionalEightFamily": false,
+    "Conjectures.LonelinessExceptionalEightFamilyCertificates": false,
+    "Conjectures.LonelinessFiveFamily": false,
+    "Conjectures.LonelinessHigherExamplesCertificate": false,
+    "Conjectures.LonelinessHigherExamplesEight": false,
+    "Conjectures.LonelinessHigherExamplesSeven": false,
+    "Conjectures.LonelinessHigherSpectrumBounds": false,
+    "Conjectures.LonelinessHigherTriangleConsequences": false,
+    "Conjectures.LonelinessIntegerDirection": false,
+    "Conjectures.LonelinessMax": false,
+    "Conjectures.LonelinessModularDirections": false,
+    "Conjectures.LonelinessModularShortVector": false,
+    "Conjectures.LonelinessModularWitness": false,
+    "Conjectures.LonelinessNormalization": false,
+    "Conjectures.LonelinessPacking": false,
+    "Conjectures.LonelinessPackingLower": false,
+    "Conjectures.LonelinessPairBridge": false,
+    "Conjectures.LonelinessPlaneDirections": false,
+    "Conjectures.LonelinessPlaneGap": false,
+    "Conjectures.LonelinessProductFamily": false,
+    "Conjectures.LonelinessProductPlaneSpeeds": false,
+    "Conjectures.LonelinessRational": false,
+    "Conjectures.LonelinessRationalSubspace": false,
+    "Conjectures.LonelinessSevenSpectrumRealization": false,
+    "Conjectures.LonelinessSignedCoordinates": false,
+    "Conjectures.LonelinessSixPlaneCriticalNormalization": false,
+    "Conjectures.LonelinessSixPlaneDefs": false,
+    "Conjectures.LonelinessSixPlaneFamilies": false,
+    "Conjectures.LonelinessSixPlaneGap": false,
+    "Conjectures.LonelinessSixPlaneGeometry": false,
+    "Conjectures.LonelinessSixPlaneNormalization": false,
+    "Conjectures.LonelinessSixProgression": false,
+    "Conjectures.LonelinessSixSpectrumArithmetic": false,
+    "Conjectures.LonelinessSixSpectrumRealization": false,
+    "Conjectures.LonelinessSixSporadicBounds": false,
+    "Conjectures.LonelinessSmallRunner": false,
+    "Conjectures.LonelinessSubspaceDensity": false,
+    "Conjectures.LonelinessTwoDirections": false,
+    "Conjectures.NonmixedGapDensity": false,
+    "Conjectures.NonmixedGapPeriodic": false,
+    "Conjectures.NonmixedGapResidues": false
+  },
+  "project_modules": [
+    "Conjectures.HaralambisFaces",
+    "Conjectures.HaralambisOrientation",
+    "Conjectures.HaralambisPeriods",
+    "Conjectures.Loneliness",
+    "Conjectures.LonelinessMax",
+    "Conjectures.LonelinessCoalescence",
+    "Conjectures.LonelinessSixPlaneDefs",
+    "Conjectures.NonmixedGapDensity",
+    "Conjectures.HaralambisDefects",
+    "Conjectures.LonelinessContinuity",
+    "Conjectures.LonelinessFiveFamily",
+    "Conjectures.LonelinessCertificate",
+    "Conjectures.LonelinessCoalescenceAvoiding",
+    "Conjectures.LonelinessCoordinateSubspace",
+    "Conjectures.NonmixedGapPeriodic",
+    "Conjectures.NonmixedGapResidues",
+    "Conjectures.LonelinessRational",
+    "Conjectures.LonelinessConsecutiveFamily",
+    "Conjectures.LonelinessCriticalBase",
+    "Conjectures.LonelinessCriticalSecond",
+    "Conjectures.LonelinessExamples",
+    "Conjectures.LonelinessPairBridge",
+    "Conjectures.LonelinessCoordinateClasses",
+    "Conjectures.LonelinessPacking",
+    "Conjectures.LonelinessConsecutiveFamilyCertificates",
+    "Conjectures.LonelinessExceptionalEightFamily",
+    "Conjectures.HaralambisIntervals",
+    "Conjectures.LonelinessHigherExamplesCertificate",
+    "Conjectures.LonelinessModularWitness",
+    "Conjectures.LonelinessSubspaceDensity",
+    "Conjectures.LonelinessCriticalFamilies",
+    "Conjectures.LonelinessSixProgression",
+    "Conjectures.LonelinessIntegerDirection",
+    "Conjectures.LonelinessPackingLower",
+    "Conjectures.LonelinessEightSpectrumRealization",
+    "Conjectures.LonelinessExceptionalEightFamilyCertificates",
+    "Conjectures.HaralambisCounting",
+    "Conjectures.LonelinessHigherExamplesEight",
+    "Conjectures.LonelinessHigherExamplesSeven",
+    "Conjectures.LonelinessModularShortVector",
+    "Conjectures.LonelinessNormalization",
+    "Conjectures.LonelinessSixSpectrumRealization",
+    "Conjectures.LonelinessRationalSubspace",
+    "Conjectures.HaralambisPairSum",
+    "Conjectures.LonelinessSevenSpectrumRealization",
+    "Conjectures.HaralambisDensity",
+    "Conjectures.LonelinessModularDirections",
+    "Conjectures.LonelinessProductFamily",
+    "Conjectures.LonelinessSixSpectrumArithmetic",
+    "Conjectures.LonelinessCoalescenceValue",
+    "Conjectures.LonelinessHigherSpectrumBounds",
+    "Conjectures.HaralambisTheorem",
+    "Conjectures.LonelinessSixSporadicBounds",
+    "Conjectures.LonelinessDistanceColoring",
+    "Conjectures.LonelinessTwoDirections",
+    "Conjectures.LonelinessSmallRunner",
+    "Conjectures.LonelinessHigherTriangleConsequences",
+    "Conjectures.LonelinessPlaneDirections",
+    "Conjectures.LonelinessPlaneGap",
+    "Conjectures.LonelinessSixPlaneGap",
+    "Conjectures.LonelinessSignedCoordinates",
+    "Conjectures.LonelinessSixPlaneCriticalNormalization",
+    "Conjectures.LonelinessProductPlaneSpeeds",
+    "Conjectures.LonelinessSixPlaneNormalization",
+    "Conjectures.LonelinessSixPlaneGeometry",
+    "Conjectures.LonelinessSixPlaneFamilies"
+  ],
+  "required_theorems": [
+    "Loneliness.SixPlane.standard_product_plane",
+    "Loneliness.SixPlane.literal_parameters_of_mem_critical_plane",
+    "Loneliness.SixPlane.literal_family_of_mem_critical_plane",
+    "Loneliness.SixPlane.primitive_family_of_mem_critical_plane",
+    "Loneliness.SixPlane.not_mem_critical_plane_of_not_literal_families"
+  ],
+  "roots": [
+    "Conjectures.LonelinessSixPlaneFamilies"
+  ],
+  "schema": "higher-spectrum-realization-exact-receipt-v1",
+  "scope": "Actual integer directions in the classified six-coordinate planes belong to the literal signed critical families. The two product alternatives retain positive integer scale and free speed, and their primitive members with actual value below 1/6 have scale one and free speed 6*s. The third alternative retains the entire signed real two-parameter family. Exclusion of these literal families implies the actual off-critical-plane premise used by the norm argument. Critical-plane membership remains explicit. No third-family spectrum formula, finite plane coverage, sporadic exhaustion, or universal spectrum classification is claimed.",
+  "source_checks": {
+    "Conjectures.HaralambisCounting": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/HaralambisCounting.olean",
+        "Conjectures/HaralambisCounting.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisCounting.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2369360,
+      "seconds": 1.754,
+      "system_seconds": 0.315032,
+      "timed_out": false,
+      "user_seconds": 1.302132
+    },
+    "Conjectures.HaralambisDefects": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/HaralambisDefects.olean",
+        "Conjectures/HaralambisDefects.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisDefects.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1881380,
+      "seconds": 1.504,
+      "system_seconds": 0.24553599999999998,
+      "timed_out": false,
+      "user_seconds": 1.138469
+    },
+    "Conjectures.HaralambisDensity": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/HaralambisDensity.olean",
+        "Conjectures/HaralambisDensity.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisDensity.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2365072,
+      "seconds": 1.504,
+      "system_seconds": 0.318968,
+      "timed_out": false,
+      "user_seconds": 1.054894
+    },
+    "Conjectures.HaralambisFaces": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/HaralambisFaces.olean",
+        "Conjectures/HaralambisFaces.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisFaces.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1779884,
+      "seconds": 1.504,
+      "system_seconds": 0.22794199999999998,
+      "timed_out": false,
+      "user_seconds": 1.048737
+    },
+    "Conjectures.HaralambisIntervals": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/HaralambisIntervals.olean",
+        "Conjectures/HaralambisIntervals.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisIntervals.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1909676,
+      "seconds": 1.254,
+      "system_seconds": 0.239339,
+      "timed_out": false,
+      "user_seconds": 0.894243
+    },
+    "Conjectures.HaralambisOrientation": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/HaralambisOrientation.olean",
+        "Conjectures/HaralambisOrientation.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisOrientation.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1847032,
+      "seconds": 1.504,
+      "system_seconds": 0.226324,
+      "timed_out": false,
+      "user_seconds": 1.070534
+    },
+    "Conjectures.HaralambisPairSum": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/HaralambisPairSum.olean",
+        "Conjectures/HaralambisPairSum.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisPairSum.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2381112,
+      "seconds": 2.255,
+      "system_seconds": 0.30523,
+      "timed_out": false,
+      "user_seconds": 1.836387
+    },
+    "Conjectures.HaralambisPeriods": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/HaralambisPeriods.olean",
+        "Conjectures/HaralambisPeriods.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisPeriods.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2090788,
+      "seconds": 5.263,
+      "system_seconds": 0.302098,
+      "timed_out": false,
+      "user_seconds": 4.952599
+    },
+    "Conjectures.HaralambisTheorem": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/HaralambisTheorem.olean",
+        "Conjectures/HaralambisTheorem.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.HaralambisTheorem.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2352788,
+      "seconds": 1.253,
+      "system_seconds": 0.29680999999999996,
+      "timed_out": false,
+      "user_seconds": 0.769508
+    },
+    "Conjectures.Loneliness": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/Loneliness.olean",
+        "Conjectures/Loneliness.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.Loneliness.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1920788,
+      "seconds": 1.754,
+      "system_seconds": 0.261889,
+      "timed_out": false,
+      "user_seconds": 1.315468
+    },
+    "Conjectures.LonelinessCertificate": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessCertificate.olean",
+        "Conjectures/LonelinessCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCertificate.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2469212,
+      "seconds": 1.504,
+      "system_seconds": 0.32528599999999996,
+      "timed_out": false,
+      "user_seconds": 1.031908
+    },
+    "Conjectures.LonelinessCoalescence": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessCoalescence.olean",
+        "Conjectures/LonelinessCoalescence.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCoalescence.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2408260,
+      "seconds": 2.756,
+      "system_seconds": 0.30910099999999996,
+      "timed_out": false,
+      "user_seconds": 2.369758
+    },
+    "Conjectures.LonelinessCoalescenceAvoiding": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessCoalescenceAvoiding.olean",
+        "Conjectures/LonelinessCoalescenceAvoiding.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCoalescenceAvoiding.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2409488,
+      "seconds": 2.757,
+      "system_seconds": 0.32506399999999996,
+      "timed_out": false,
+      "user_seconds": 2.287435
+    },
+    "Conjectures.LonelinessCoalescenceValue": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessCoalescenceValue.olean",
+        "Conjectures/LonelinessCoalescenceValue.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCoalescenceValue.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2527632,
+      "seconds": 1.503,
+      "system_seconds": 0.333636,
+      "timed_out": false,
+      "user_seconds": 0.961834
+    },
+    "Conjectures.LonelinessConsecutiveFamily": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessConsecutiveFamily.olean",
+        "Conjectures/LonelinessConsecutiveFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessConsecutiveFamily.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1940124,
+      "seconds": 4.512,
+      "system_seconds": 0.251421,
+      "timed_out": false,
+      "user_seconds": 4.131926
+    },
+    "Conjectures.LonelinessConsecutiveFamilyCertificates": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessConsecutiveFamilyCertificates.olean",
+        "Conjectures/LonelinessConsecutiveFamilyCertificates.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessConsecutiveFamilyCertificates.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1951216,
+      "seconds": 1.755,
+      "system_seconds": 0.280018,
+      "timed_out": false,
+      "user_seconds": 1.4881769999999999
+    },
+    "Conjectures.LonelinessContinuity": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessContinuity.olean",
+        "Conjectures/LonelinessContinuity.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessContinuity.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2140064,
+      "seconds": 1.253,
+      "system_seconds": 0.285087,
+      "timed_out": false,
+      "user_seconds": 0.817251
+    },
+    "Conjectures.LonelinessCoordinateClasses": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessCoordinateClasses.olean",
+        "Conjectures/LonelinessCoordinateClasses.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCoordinateClasses.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2387300,
+      "seconds": 1.754,
+      "system_seconds": 0.298301,
+      "timed_out": false,
+      "user_seconds": 1.348363
+    },
+    "Conjectures.LonelinessCoordinateSubspace": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessCoordinateSubspace.olean",
+        "Conjectures/LonelinessCoordinateSubspace.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCoordinateSubspace.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2382780,
+      "seconds": 1.504,
+      "system_seconds": 0.320054,
+      "timed_out": false,
+      "user_seconds": 1.099185
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessCriticalBase.olean",
+        "Conjectures/LonelinessCriticalBase.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCriticalBase.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1918728,
+      "seconds": 3.007,
+      "system_seconds": 0.250201,
+      "timed_out": false,
+      "user_seconds": 2.63812
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessCriticalFamilies.olean",
+        "Conjectures/LonelinessCriticalFamilies.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCriticalFamilies.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1900784,
+      "seconds": 1.253,
+      "system_seconds": 0.26587099999999997,
+      "timed_out": false,
+      "user_seconds": 0.7616299999999999
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessCriticalSecond.olean",
+        "Conjectures/LonelinessCriticalSecond.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessCriticalSecond.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1934388,
+      "seconds": 4.51,
+      "system_seconds": 0.276006,
+      "timed_out": false,
+      "user_seconds": 4.105082
+    },
+    "Conjectures.LonelinessDistanceColoring": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessDistanceColoring.olean",
+        "Conjectures/LonelinessDistanceColoring.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessDistanceColoring.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2576504,
+      "seconds": 1.504,
+      "system_seconds": 0.320932,
+      "timed_out": false,
+      "user_seconds": 1.065757
+    },
+    "Conjectures.LonelinessEightSpectrumRealization": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessEightSpectrumRealization.olean",
+        "Conjectures/LonelinessEightSpectrumRealization.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessEightSpectrumRealization.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1901716,
+      "seconds": 1.002,
+      "system_seconds": 0.252272,
+      "timed_out": false,
+      "user_seconds": 0.6997559999999999
+    },
+    "Conjectures.LonelinessExamples": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessExamples.olean",
+        "Conjectures/LonelinessExamples.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessExamples.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2508532,
+      "seconds": 6.765,
+      "system_seconds": 0.356108,
+      "timed_out": false,
+      "user_seconds": 6.238882
+    },
+    "Conjectures.LonelinessExceptionalEightFamily": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessExceptionalEightFamily.olean",
+        "Conjectures/LonelinessExceptionalEightFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessExceptionalEightFamily.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1932384,
+      "seconds": 3.509,
+      "system_seconds": 0.25194,
+      "timed_out": false,
+      "user_seconds": 3.022291
+    },
+    "Conjectures.LonelinessExceptionalEightFamilyCertificates": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessExceptionalEightFamilyCertificates.olean",
+        "Conjectures/LonelinessExceptionalEightFamilyCertificates.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessExceptionalEightFamilyCertificates.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1956364,
+      "seconds": 3.759,
+      "system_seconds": 0.257031,
+      "timed_out": false,
+      "user_seconds": 3.5004049999999998
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessFiveFamily.olean",
+        "Conjectures/LonelinessFiveFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessFiveFamily.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1927564,
+      "seconds": 4.009,
+      "system_seconds": 0.270034,
+      "timed_out": false,
+      "user_seconds": 3.683465
+    },
+    "Conjectures.LonelinessHigherExamplesCertificate": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessHigherExamplesCertificate.olean",
+        "Conjectures/LonelinessHigherExamplesCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessHigherExamplesCertificate.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1891268,
+      "seconds": 1.003,
+      "system_seconds": 0.24528799999999998,
+      "timed_out": false,
+      "user_seconds": 0.634747
+    },
+    "Conjectures.LonelinessHigherExamplesEight": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessHigherExamplesEight.olean",
+        "Conjectures/LonelinessHigherExamplesEight.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessHigherExamplesEight.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2148524,
+      "seconds": 29.065,
+      "system_seconds": 0.367083,
+      "timed_out": false,
+      "user_seconds": 28.479546
+    },
+    "Conjectures.LonelinessHigherExamplesSeven": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessHigherExamplesSeven.olean",
+        "Conjectures/LonelinessHigherExamplesSeven.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessHigherExamplesSeven.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2241560,
+      "seconds": 37.836,
+      "system_seconds": 0.43807799999999997,
+      "timed_out": false,
+      "user_seconds": 37.215609
+    },
+    "Conjectures.LonelinessHigherSpectrumBounds": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessHigherSpectrumBounds.olean",
+        "Conjectures/LonelinessHigherSpectrumBounds.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessHigherSpectrumBounds.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1960076,
+      "seconds": 2.255,
+      "system_seconds": 0.264455,
+      "timed_out": false,
+      "user_seconds": 1.927321
+    },
+    "Conjectures.LonelinessHigherTriangleConsequences": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessHigherTriangleConsequences.olean",
+        "Conjectures/LonelinessHigherTriangleConsequences.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessHigherTriangleConsequences.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2733572,
+      "seconds": 2.005,
+      "system_seconds": 0.346423,
+      "timed_out": false,
+      "user_seconds": 1.5138479999999999
+    },
+    "Conjectures.LonelinessIntegerDirection": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessIntegerDirection.olean",
+        "Conjectures/LonelinessIntegerDirection.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessIntegerDirection.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2397496,
+      "seconds": 1.253,
+      "system_seconds": 0.31082899999999997,
+      "timed_out": false,
+      "user_seconds": 0.9015059999999999
+    },
+    "Conjectures.LonelinessMax": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessMax.olean",
+        "Conjectures/LonelinessMax.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessMax.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2497144,
+      "seconds": 3.257,
+      "system_seconds": 0.333408,
+      "timed_out": false,
+      "user_seconds": 2.690285
+    },
+    "Conjectures.LonelinessModularDirections": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessModularDirections.olean",
+        "Conjectures/LonelinessModularDirections.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessModularDirections.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2193920,
+      "seconds": 1.503,
+      "system_seconds": 0.29135099999999997,
+      "timed_out": false,
+      "user_seconds": 0.9841869999999999
+    },
+    "Conjectures.LonelinessModularShortVector": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessModularShortVector.olean",
+        "Conjectures/LonelinessModularShortVector.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessModularShortVector.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2201676,
+      "seconds": 1.503,
+      "system_seconds": 0.27071999999999996,
+      "timed_out": false,
+      "user_seconds": 1.152795
+    },
+    "Conjectures.LonelinessModularWitness": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessModularWitness.olean",
+        "Conjectures/LonelinessModularWitness.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessModularWitness.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2156196,
+      "seconds": 1.503,
+      "system_seconds": 0.289715,
+      "timed_out": false,
+      "user_seconds": 1.157841
+    },
+    "Conjectures.LonelinessNormalization": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessNormalization.olean",
+        "Conjectures/LonelinessNormalization.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessNormalization.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1907596,
+      "seconds": 1.253,
+      "system_seconds": 0.244103,
+      "timed_out": false,
+      "user_seconds": 0.89438
+    },
+    "Conjectures.LonelinessPacking": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessPacking.olean",
+        "Conjectures/LonelinessPacking.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessPacking.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2352340,
+      "seconds": 1.504,
+      "system_seconds": 0.312205,
+      "timed_out": false,
+      "user_seconds": 0.977644
+    },
+    "Conjectures.LonelinessPackingLower": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessPackingLower.olean",
+        "Conjectures/LonelinessPackingLower.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessPackingLower.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2370548,
+      "seconds": 1.754,
+      "system_seconds": 0.302975,
+      "timed_out": false,
+      "user_seconds": 1.442884
+    },
+    "Conjectures.LonelinessPairBridge": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessPairBridge.olean",
+        "Conjectures/LonelinessPairBridge.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessPairBridge.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2469316,
+      "seconds": 1.503,
+      "system_seconds": 0.32144999999999996,
+      "timed_out": false,
+      "user_seconds": 0.9423199999999999
+    },
+    "Conjectures.LonelinessPlaneDirections": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessPlaneDirections.olean",
+        "Conjectures/LonelinessPlaneDirections.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessPlaneDirections.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2535396,
+      "seconds": 1.504,
+      "system_seconds": 0.321246,
+      "timed_out": false,
+      "user_seconds": 1.138872
+    },
+    "Conjectures.LonelinessPlaneGap": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessPlaneGap.olean",
+        "Conjectures/LonelinessPlaneGap.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessPlaneGap.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2602332,
+      "seconds": 1.504,
+      "system_seconds": 0.31950799999999996,
+      "timed_out": false,
+      "user_seconds": 1.002439
+    },
+    "Conjectures.LonelinessProductFamily": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessProductFamily.olean",
+        "Conjectures/LonelinessProductFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessProductFamily.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2166676,
+      "seconds": 2.506,
+      "system_seconds": 0.290167,
+      "timed_out": false,
+      "user_seconds": 2.001157
+    },
+    "Conjectures.LonelinessProductPlaneSpeeds": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessProductPlaneSpeeds.olean",
+        "Conjectures/LonelinessProductPlaneSpeeds.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessProductPlaneSpeeds.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2597600,
+      "seconds": 1.503,
+      "system_seconds": 0.342059,
+      "timed_out": false,
+      "user_seconds": 0.9861719999999999
+    },
+    "Conjectures.LonelinessRational": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessRational.olean",
+        "Conjectures/LonelinessRational.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessRational.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2128316,
+      "seconds": 1.253,
+      "system_seconds": 0.282974,
+      "timed_out": false,
+      "user_seconds": 0.774972
+    },
+    "Conjectures.LonelinessRationalSubspace": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessRationalSubspace.olean",
+        "Conjectures/LonelinessRationalSubspace.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessRationalSubspace.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2414532,
+      "seconds": 1.754,
+      "system_seconds": 0.30226,
+      "timed_out": false,
+      "user_seconds": 1.256083
+    },
+    "Conjectures.LonelinessSevenSpectrumRealization": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSevenSpectrumRealization.olean",
+        "Conjectures/LonelinessSevenSpectrumRealization.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSevenSpectrumRealization.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1906120,
+      "seconds": 1.253,
+      "system_seconds": 0.23840799999999998,
+      "timed_out": false,
+      "user_seconds": 0.823392
+    },
+    "Conjectures.LonelinessSignedCoordinates": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSignedCoordinates.olean",
+        "Conjectures/LonelinessSignedCoordinates.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSignedCoordinates.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2603128,
+      "seconds": 1.754,
+      "system_seconds": 0.328538,
+      "timed_out": false,
+      "user_seconds": 1.1829399999999999
+    },
+    "Conjectures.LonelinessSixPlaneCriticalNormalization": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSixPlaneCriticalNormalization.olean",
+        "Conjectures/LonelinessSixPlaneCriticalNormalization.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneCriticalNormalization.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2541560,
+      "seconds": 1.504,
+      "system_seconds": 0.305648,
+      "timed_out": false,
+      "user_seconds": 1.107727
+    },
+    "Conjectures.LonelinessSixPlaneDefs": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSixPlaneDefs.olean",
+        "Conjectures/LonelinessSixPlaneDefs.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneDefs.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1711452,
+      "seconds": 1.003,
+      "system_seconds": 0.225981,
+      "timed_out": false,
+      "user_seconds": 0.707942
+    },
+    "Conjectures.LonelinessSixPlaneFamilies": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSixPlaneFamilies.olean",
+        "Conjectures/LonelinessSixPlaneFamilies.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneFamilies.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2749444,
+      "seconds": 1.754,
+      "system_seconds": 0.344505,
+      "timed_out": false,
+      "user_seconds": 1.355989
+    },
+    "Conjectures.LonelinessSixPlaneGap": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSixPlaneGap.olean",
+        "Conjectures/LonelinessSixPlaneGap.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneGap.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2539812,
+      "seconds": 1.504,
+      "system_seconds": 0.319123,
+      "timed_out": false,
+      "user_seconds": 1.163434
+    },
+    "Conjectures.LonelinessSixPlaneGeometry": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSixPlaneGeometry.olean",
+        "Conjectures/LonelinessSixPlaneGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneGeometry.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2629096,
+      "seconds": 2.255,
+      "system_seconds": 0.34393399999999996,
+      "timed_out": false,
+      "user_seconds": 1.867646
+    },
+    "Conjectures.LonelinessSixPlaneNormalization": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSixPlaneNormalization.olean",
+        "Conjectures/LonelinessSixPlaneNormalization.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixPlaneNormalization.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2608572,
+      "seconds": 1.754,
+      "system_seconds": 0.317004,
+      "timed_out": false,
+      "user_seconds": 1.374998
+    },
+    "Conjectures.LonelinessSixProgression": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSixProgression.olean",
+        "Conjectures/LonelinessSixProgression.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixProgression.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2560304,
+      "seconds": 7.267,
+      "system_seconds": 0.377944,
+      "timed_out": false,
+      "user_seconds": 6.888968
+    },
+    "Conjectures.LonelinessSixSpectrumArithmetic": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSixSpectrumArithmetic.olean",
+        "Conjectures/LonelinessSixSpectrumArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixSpectrumArithmetic.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2495656,
+      "seconds": 2.506,
+      "system_seconds": 0.34099399999999996,
+      "timed_out": false,
+      "user_seconds": 2.06195
+    },
+    "Conjectures.LonelinessSixSpectrumRealization": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSixSpectrumRealization.olean",
+        "Conjectures/LonelinessSixSpectrumRealization.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixSpectrumRealization.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2478452,
+      "seconds": 1.253,
+      "system_seconds": 0.33272799999999997,
+      "timed_out": false,
+      "user_seconds": 0.876919
+    },
+    "Conjectures.LonelinessSixSporadicBounds": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSixSporadicBounds.olean",
+        "Conjectures/LonelinessSixSporadicBounds.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSixSporadicBounds.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2496492,
+      "seconds": 1.754,
+      "system_seconds": 0.320789,
+      "timed_out": false,
+      "user_seconds": 1.3202479999999999
+    },
+    "Conjectures.LonelinessSmallRunner": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSmallRunner.olean",
+        "Conjectures/LonelinessSmallRunner.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSmallRunner.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2607220,
+      "seconds": 1.503,
+      "system_seconds": 0.33936,
+      "timed_out": false,
+      "user_seconds": 1.108178
+    },
+    "Conjectures.LonelinessSubspaceDensity": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessSubspaceDensity.olean",
+        "Conjectures/LonelinessSubspaceDensity.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessSubspaceDensity.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2202844,
+      "seconds": 1.503,
+      "system_seconds": 0.283646,
+      "timed_out": false,
+      "user_seconds": 1.124598
+    },
+    "Conjectures.LonelinessTwoDirections": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/LonelinessTwoDirections.olean",
+        "Conjectures/LonelinessTwoDirections.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.LonelinessTwoDirections.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2530504,
+      "seconds": 1.503,
+      "system_seconds": 0.317036,
+      "timed_out": false,
+      "user_seconds": 1.050119
+    },
+    "Conjectures.NonmixedGapDensity": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/NonmixedGapDensity.olean",
+        "Conjectures/NonmixedGapDensity.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.NonmixedGapDensity.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2384036,
+      "seconds": 3.508,
+      "system_seconds": 0.30194099999999996,
+      "timed_out": false,
+      "user_seconds": 2.961429
+    },
+    "Conjectures.NonmixedGapPeriodic": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/NonmixedGapPeriodic.olean",
+        "Conjectures/NonmixedGapPeriodic.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.NonmixedGapPeriodic.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2366548,
+      "seconds": 1.754,
+      "system_seconds": 0.313865,
+      "timed_out": false,
+      "user_seconds": 1.218478
+    },
+    "Conjectures.NonmixedGapResidues": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/lib/lean/Conjectures/NonmixedGapResidues.olean",
+        "Conjectures/NonmixedGapResidues.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/higher-spectrum-six-plane-families/logs/Conjectures.NonmixedGapResidues.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2364888,
+      "seconds": 2.005,
+      "system_seconds": 0.323343,
+      "timed_out": false,
+      "user_seconds": 1.5706660000000001
+    }
+  },
+  "source_policy": {
+    "fresh_project_objects": true,
+    "linter_override": false,
+    "warning_as_error": true
+  },
+  "source_sha256": {
+    "Conjectures.HaralambisCounting": "b315781d9fed35b6490547c52ba416033d8fa1ce74e234d1ca75c1c08947165f",
+    "Conjectures.HaralambisDefects": "e97a0a15cbcbfc7962aaac1409051fed8b363f1475b728d20f61117cc363e9c3",
+    "Conjectures.HaralambisDensity": "6f5c1d408c7e017f5c1bb60d832a8a566267f137c932498df0826f6a35e1ab25",
+    "Conjectures.HaralambisFaces": "bb71842e0b01a8975d847e8011c72e25e6f171f5aecba2865a9f1497caf0aedd",
+    "Conjectures.HaralambisIntervals": "8d5a75119a748f371493d1d47508136f2793d4e13ca74b52435e662c5aef7219",
+    "Conjectures.HaralambisOrientation": "007a67ae5c701ad51e7d9957f5066490941c1d00ced13b7a251d94916d7d64a8",
+    "Conjectures.HaralambisPairSum": "032549371a9c2d24599a2f090e848dc7f7f9cfaeb79dacbbfc8d6c0c14c10998",
+    "Conjectures.HaralambisPeriods": "a8e3ada09e8d9cac8e2e816de5b55739c3a36c73bb2caebccc9bcb2fa3ba6daa",
+    "Conjectures.HaralambisTheorem": "a99e2c6d08677c459e0e405a211468c8fa192e2a6f9ed0078619f00d8e7d8fd8",
+    "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "Conjectures.LonelinessCertificate": "7eccb4390fe8a11a0447a4c69e187d74665dfd31c8e59b8b068f3a7bcb78a99d",
+    "Conjectures.LonelinessCoalescence": "5518fdfed0369763c2ba701272edb25fbaafde2d230c869f4412f2c441ef9d1d",
+    "Conjectures.LonelinessCoalescenceAvoiding": "bcdb57b0b68a1d1eb2dddb4626f1a11ffb21d82e7106004d5638c499a1acdc81",
+    "Conjectures.LonelinessCoalescenceValue": "b2b7037f036e3fdeb5e52e0314fd7126db2ae921c6c182abf6175c5884a5bcb7",
+    "Conjectures.LonelinessConsecutiveFamily": "9bc1e98818ff6ca84dac376bba158eb198caf147a94ef8cd6d864209c50b9a7c",
+    "Conjectures.LonelinessConsecutiveFamilyCertificates": "883c862287510867880d0f5c8fbf698c65fffab11627db0950cb2257aa40e1da",
+    "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "Conjectures.LonelinessCoordinateClasses": "0075b701fd3fa51feef62f59850dfaa3dfece95e3287d51a7afb438a76691b63",
+    "Conjectures.LonelinessCoordinateSubspace": "a6a58ef2dfb5262e43641aae3e18c9d7ddcc8163aebad18cf6eb2416ae46bfea",
+    "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+    "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+    "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+    "Conjectures.LonelinessDistanceColoring": "d19c38a1a137ca8c051ba636650dae4f85341c9fe2a03f189ed1bb5124496ade",
+    "Conjectures.LonelinessEightSpectrumRealization": "5772e2ad4a6a3d70a9f281a26644c01cecedba8775452b29240a44feff7025d2",
+    "Conjectures.LonelinessExamples": "715a3b52bb3fb5747e07883cd1d1417764dab7c52848807b9f50e28c3f929dd9",
+    "Conjectures.LonelinessExceptionalEightFamily": "6a395a3a44414b7798cc54abd43c9fdbcd9b58b98ae6509f0dd0ac89f00672e1",
+    "Conjectures.LonelinessExceptionalEightFamilyCertificates": "c14ddc95523564e1340a91fbaef1cbde33211b159df63ee90ad2ff92fdf39318",
+    "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+    "Conjectures.LonelinessHigherExamplesCertificate": "41f2ddf51d094c74f7e54bcb52d7535ebfd8fbcbf15a1796df548ea62dbef5bf",
+    "Conjectures.LonelinessHigherExamplesEight": "8ae03a27b2da2ecf6ade213bdd68046266e99158c6c58685e2cf81c047f089ff",
+    "Conjectures.LonelinessHigherExamplesSeven": "b38ea3d232397822aeeecbb6ad09e2f982ff7e95a6327a489d06d08718f68f78",
+    "Conjectures.LonelinessHigherSpectrumBounds": "70523ace8d6880b61ed5e9149aaf2477b9b3fb43faf0d1fe1eecfeb27809148d",
+    "Conjectures.LonelinessHigherTriangleConsequences": "6f3764ddcd35c678c5d09e74ae0dc5207900c2da2603e1c4d779670a9caa571f",
+    "Conjectures.LonelinessIntegerDirection": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6",
+    "Conjectures.LonelinessMax": "db988be330f37e6ec119204b24738bc9daa7eff40f86bcd8845ce164612ec4b9",
+    "Conjectures.LonelinessModularDirections": "f838c441e3a59593cfa43fe55edb5d63db43af22a3e0f60d730d75b1d7664dd4",
+    "Conjectures.LonelinessModularShortVector": "d75206b95714a27fc37768daae09f450bdd7acac45130d62278521d4891bf6a3",
+    "Conjectures.LonelinessModularWitness": "c5329d2e079f6d04d0079ab3fe90d814d1f3393b2381c74be6375ce091b569fb",
+    "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+    "Conjectures.LonelinessPacking": "61ae885750aec875160f7e1ea522a581aa18a576871fe89baf70f1c11f026d7d",
+    "Conjectures.LonelinessPackingLower": "c9bd26dd3ae91a4e2b8513bd755936c5fdaf6d2faa31fe353b87498d0a200ca3",
+    "Conjectures.LonelinessPairBridge": "eb4326c07d8695b97b4874e08b15f902338491769d85f77a5b1bd926b09e5435",
+    "Conjectures.LonelinessPlaneDirections": "af14f52d921cf44c1ff423d222007e5991a32efd4a024e24ff17ab257545907c",
+    "Conjectures.LonelinessPlaneGap": "78cad68e4587af398e088d2e6e0a124c919a9b31cae3b8b0e80bacfdd12923d0",
+    "Conjectures.LonelinessProductFamily": "5bfba7ae7276035a3c5247b982f11493a287d9a7d68c1f56c1dca15ce2ea9fb1",
+    "Conjectures.LonelinessProductPlaneSpeeds": "834c04da1577bdc31702e70db0dce74d55576d6b3b168934fefc4a5c759fe700",
+    "Conjectures.LonelinessRational": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
+    "Conjectures.LonelinessRationalSubspace": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88",
+    "Conjectures.LonelinessSevenSpectrumRealization": "ac38a2b2d7ad04cd6b6f888a414e3ebb42ec97374cd6fd65dd25941381e25c34",
+    "Conjectures.LonelinessSignedCoordinates": "8f91cc8ae866de249cb75621c340c21ce0bb7d3e7e75295142164340660e1976",
+    "Conjectures.LonelinessSixPlaneCriticalNormalization": "58a31a8735db6fe2020b488b26060da6ca446147a78891886fac9bac9bbd1ddb",
+    "Conjectures.LonelinessSixPlaneDefs": "60ace6bec6c078b9111a739377ea0fc61da2cb0614c7914f6b2d6ebb7d8ed786",
+    "Conjectures.LonelinessSixPlaneFamilies": "2a082a019eac089a7fc9270f355d1329e89d60bec0642e432941742e2da24bfb",
+    "Conjectures.LonelinessSixPlaneGap": "52b0c4366980d998ab52907eef8e82b6c693c824ca046ed45aa99e9e68eb7975",
+    "Conjectures.LonelinessSixPlaneGeometry": "ce9f46dcc72190862e2e224f7515a45d3d32f7174c3d674b6c51aae23071e5c7",
+    "Conjectures.LonelinessSixPlaneNormalization": "513a8ffa33e00faa15edc903bf9d75c5de113d1cfce4d53a4a2c3ecd64016736",
+    "Conjectures.LonelinessSixProgression": "87356deb94b12b9b9872f97283080ac28a95a76c164ed7e8f445c10cc93070cb",
+    "Conjectures.LonelinessSixSpectrumArithmetic": "8faa8fea665b8e2d4673645eea5e3cecbe069bac66fb9c816be3d35c8c600774",
+    "Conjectures.LonelinessSixSpectrumRealization": "13cc983823bbea286c83191d9b131934bba7a4122b0d579db34ebd3bb646d55b",
+    "Conjectures.LonelinessSixSporadicBounds": "97ae0d8c4182e48623f0196fe4800351eba1376ec5627003972489a8a2455dce",
+    "Conjectures.LonelinessSmallRunner": "f8ac5325642e26f9c2570293a6b3032dff53d8511f1a3af4c92d8469918ed343",
+    "Conjectures.LonelinessSubspaceDensity": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f",
+    "Conjectures.LonelinessTwoDirections": "bc5068105b096a573a618bb46a2c3c0263dfad2c9ef1cd1c979a99d56324d454",
+    "Conjectures.NonmixedGapDensity": "4f807a024e6eda1b4ec39e7942b2178b41c48b55ab1ed4a8a18c7d535aeaa731",
+    "Conjectures.NonmixedGapPeriodic": "dc479ec5fab7c8912231e3b972f794e2e1558120512666f939b139e8411cc180",
+    "Conjectures.NonmixedGapResidues": "98f3fe3c1fa443c68c8b5d5f80f4e7fc2ec8f6698fc273fc188d9e91b979b737"
+  },
+  "source_workers": 1,
+  "stated_component_scope_checked": true,
+  "status": "passed",
+  "toolchain": {
+    "checker_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+    "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "lean_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)"
+  },
+  "universal_classification_claimed": false
+}

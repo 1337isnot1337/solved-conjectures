@@ -1,0 +1,52 @@
+{
+  "schema": "late-six-arithmetic-repair-model-comparison-v1",
+  "status": "passed_offline_only",
+  "old_model_sha256": "a4218377eb7ed75426233dd4a26a052c239bd1eeb921280a2f96cf0109055722",
+  "new_model_sha256": "94143f2eb5334f82927fa954ebc4052714bf11ed62cf13eea7ed1e60c8e306ab",
+  "unchanged_data_roots_frames_partitions_resources": true,
+  "changed_controls": {
+    ".github/workflows/lean-six-speed-late-batches.yml": [
+      "604c14dff3ab97a312b824902897d556e04338c47a57cc7d6f6259ad239e81ad",
+      "2e1e5ba3f2f10f970eba6c75fc2201a375236702e6457cda8e00eba2767b785f"
+    ],
+    "scripts/generate_six_speed_late_packet.py": [
+      "7bb87d9d493d8042520f896adc9e54ce0b0c9b4e0b79b4e72d001ddb5abe0412",
+      "c2efaff015826ad4f795803daab001d4baaaa03bd266e1e84547a3a79000dcbc"
+    ]
+  },
+  "primes": [
+    {
+      "prime": 359,
+      "generated_modules": 1343,
+      "changed_arithmetic_modules": 77,
+      "roots": 178,
+      "frames": 31750,
+      "shards": 16
+    },
+    {
+      "prime": 373,
+      "generated_modules": 1304,
+      "changed_arithmetic_modules": 79,
+      "roots": 185,
+      "frames": 31043,
+      "shards": 16
+    },
+    {
+      "prime": 379,
+      "generated_modules": 1485,
+      "changed_arithmetic_modules": 83,
+      "roots": 188,
+      "frames": 35430,
+      "shards": 18
+    },
+    {
+      "prime": 383,
+      "generated_modules": 1297,
+      "changed_arithmetic_modules": 87,
+      "roots": 190,
+      "frames": 30048,
+      "shards": 17
+    }
+  ],
+  "fresh_lean_acceptance": false
+}

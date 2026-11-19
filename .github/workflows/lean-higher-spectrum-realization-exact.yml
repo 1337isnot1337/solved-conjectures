@@ -112,6 +112,25 @@ on:
       - 'lean/Conjectures/LonelinessSixPlaneDataCoverageSoundness.lean'
       - 'lean/Conjectures/LonelinessProductFamily.lean'
       - 'lean/Conjectures/LonelinessProductPlaneSpeeds.lean'
+      - 'lean/Conjectures/LonelinessModularPrimes.lean'
+      - 'lean/Conjectures/LonelinessSixSpectrumFieldsDefs.lean'
+      - 'lean/Conjectures/LonelinessSixSpectrumFieldsProduct.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedEnumeration.lean'
+      - 'lean/Conjectures/LonelinessModularCoverBits.lean'
+      - 'lean/Conjectures/LonelinessModularCoverChunks.lean'
+      - 'lean/Conjectures/LonelinessModularCoverSearch.lean'
+      - 'lean/Conjectures/LonelinessModularCoverTape.lean'
+      - 'lean/Conjectures/LonelinessModularInitialSupport.lean'
+      - 'lean/Conjectures/LonelinessModularMultiplicity.lean'
+      - 'lean/Conjectures/LonelinessModularNormalize.lean'
+      - 'lean/Conjectures/LonelinessModularRationalWitness.lean'
+      - 'lean/Conjectures/LonelinessModularStrictWitness.lean'
+      - 'lean/Conjectures/LonelinessModularSupportLists.lean'
+      - 'lean/Conjectures/LonelinessSixSpectrumFieldsSupport.lean'
+      - 'lean/Conjectures/LonelinessSixSpectrumFieldsSupportDefs.lean'
+      - 'lean/Conjectures/LonelinessSixSpectrumFieldsTransform.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneFamilies.lean'
       - 'scripts/verify_frankl_orbit_batches.py'
       - 'scripts/replay_lean.py'
       - 'scripts/plan_lean_candidates.py'
@@ -137,7 +156,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        task: [six-arithmetic, seven-eight, triangles, seven-low-gap, product-plane-speeds, six-plane-semantics, six-plane-data-pilots]
+        task: [six-arithmetic, seven-eight, triangles, seven-low-gap, product-plane-speeds, six-fields-product, six-fields-support, six-plane-families, six-plane-semantics, six-plane-data-pilots]
     steps:
       - uses: actions/checkout@v4
       - name: Validate exact source and helper inventory

@@ -1,0 +1,701 @@
+{
+  "archive_sha256": "b9ad7ea510611134327c246572be59b5b1ce67a9f75d3ba26ef63249cd385989",
+  "artifact_id": 14549664948,
+  "baseline_head": "325b03917354ae846fdc1a693e16882b1207a2a2",
+  "complete_result_claimed": false,
+  "component": "six-plane-families",
+  "guarded_current_inputs": {
+    ".github/workflows/lean-higher-spectrum-realization-exact.yml": {
+      "mode": "100644",
+      "sha": "6b5053c53a50d5a4e20c5c6bd9176f40f70c7d69"
+    },
+    "docs/higher-spectrum-realization-exact-sources.json": {
+      "mode": "100644",
+      "sha": "50981f3835518730b49c852d30059401e8d41aeb"
+    },
+    "lean/Conjectures/HaralambisCounting.lean": {
+      "mode": "100644",
+      "sha": "c2862c41b72509f019552136d7bc0ae680ff0b9f"
+    },
+    "lean/Conjectures/HaralambisDefects.lean": {
+      "mode": "100644",
+      "sha": "1b0618e1759d3d5ebceafae391efdcde6db96ac6"
+    },
+    "lean/Conjectures/HaralambisDensity.lean": {
+      "mode": "100644",
+      "sha": "5583a78d9dc2e4b4157dc22c2ea52fad09a459e5"
+    },
+    "lean/Conjectures/HaralambisFaces.lean": {
+      "mode": "100644",
+      "sha": "675c5de16d503bb69f9a55eb27a52713e4c0e16d"
+    },
+    "lean/Conjectures/HaralambisIntervals.lean": {
+      "mode": "100644",
+      "sha": "42e56b34956ce7633baac9b5af28e847533b05a4"
+    },
+    "lean/Conjectures/HaralambisOrientation.lean": {
+      "mode": "100644",
+      "sha": "e472fd58fefc011ad6434143898481a71ad07bcd"
+    },
+    "lean/Conjectures/HaralambisPairSum.lean": {
+      "mode": "100644",
+      "sha": "39283ecf5615b6ea7ef6a12eae14866c673d6fa9"
+    },
+    "lean/Conjectures/HaralambisPeriods.lean": {
+      "mode": "100644",
+      "sha": "3b03ee23787e2b0eda7dce5a5db1e35accd92c7b"
+    },
+    "lean/Conjectures/HaralambisTheorem.lean": {
+      "mode": "100644",
+      "sha": "1cb26ec7e11b7e39865c685c1a55b1b286efd561"
+    },
+    "lean/Conjectures/Loneliness.lean": {
+      "mode": "100644",
+      "sha": "10bab1dbf24b878d4037c14c22ee4444380995d7"
+    },
+    "lean/Conjectures/LonelinessCertificate.lean": {
+      "mode": "100644",
+      "sha": "bccb8328b110cc48b91b9da19cb4a1e3e2461d22"
+    },
+    "lean/Conjectures/LonelinessCoalescence.lean": {
+      "mode": "100644",
+      "sha": "f4ec3e34236a582379ae74d594cfdc452baafeb8"
+    },
+    "lean/Conjectures/LonelinessCoalescenceAvoiding.lean": {
+      "mode": "100644",
+      "sha": "f79ca3c9696097f53311a03e2f7220e6a5af3cc0"
+    },
+    "lean/Conjectures/LonelinessCoalescenceValue.lean": {
+      "mode": "100644",
+      "sha": "b6b0ac1ddf72a6f56cb461e780ec436946f7a3fd"
+    },
+    "lean/Conjectures/LonelinessConsecutiveFamily.lean": {
+      "mode": "100644",
+      "sha": "19b050609f5963ae29c350b365a217ffdc07e75c"
+    },
+    "lean/Conjectures/LonelinessConsecutiveFamilyCertificates.lean": {
+      "mode": "100644",
+      "sha": "6d9fbff47651552df3de5dbc1a93e71f27bb2789"
+    },
+    "lean/Conjectures/LonelinessContinuity.lean": {
+      "mode": "100644",
+      "sha": "454af68ef5290ef792219c2ae18fcbefd0efb346"
+    },
+    "lean/Conjectures/LonelinessCoordinateClasses.lean": {
+      "mode": "100644",
+      "sha": "80ebd09666bfe0d5728a132f7e349a11924132b5"
+    },
+    "lean/Conjectures/LonelinessCoordinateSubspace.lean": {
+      "mode": "100644",
+      "sha": "da03dc4abbf50fc8f174f08ab49503ad9f424713"
+    },
+    "lean/Conjectures/LonelinessCriticalBase.lean": {
+      "mode": "100644",
+      "sha": "a5705710d44e968d157b046872962e08a141073a"
+    },
+    "lean/Conjectures/LonelinessCriticalFamilies.lean": {
+      "mode": "100644",
+      "sha": "e7a53dbb2d02b030adfdfcc7ec2e66bed82efa25"
+    },
+    "lean/Conjectures/LonelinessCriticalSecond.lean": {
+      "mode": "100644",
+      "sha": "1a0ed019755501faf61507ec20b325b3a181bb27"
+    },
+    "lean/Conjectures/LonelinessDistanceColoring.lean": {
+      "mode": "100644",
+      "sha": "fce8803b9b56de03351b88014bf887be21d92e50"
+    },
+    "lean/Conjectures/LonelinessEightSpectrumRealization.lean": {
+      "mode": "100644",
+      "sha": "e3007a49ac0e8a9c17d93ea70de8ac09b1dd6c58"
+    },
+    "lean/Conjectures/LonelinessExamples.lean": {
+      "mode": "100644",
+      "sha": "7ef8eb317f187999be74384e5950833e09944db2"
+    },
+    "lean/Conjectures/LonelinessExceptionalEightFamily.lean": {
+      "mode": "100644",
+      "sha": "dde37afb969218d73d92c77600ac207887fc531b"
+    },
+    "lean/Conjectures/LonelinessExceptionalEightFamilyCertificates.lean": {
+      "mode": "100644",
+      "sha": "2e83eedcc7c9c09e21dd0a662d84ec89e89cfd9f"
+    },
+    "lean/Conjectures/LonelinessFiveFamily.lean": {
+      "mode": "100644",
+      "sha": "1463a6505e917f0e6c8f812e1e34337f05eaed00"
+    },
+    "lean/Conjectures/LonelinessHigherExamplesCertificate.lean": {
+      "mode": "100644",
+      "sha": "20461b1bb596026c605a5c7753e0a61ead8e1df2"
+    },
+    "lean/Conjectures/LonelinessHigherExamplesEight.lean": {
+      "mode": "100644",
+      "sha": "170c0485ff5146ea02a0d92f8e325a4434d55d75"
+    },
+    "lean/Conjectures/LonelinessHigherExamplesSeven.lean": {
+      "mode": "100644",
+      "sha": "32dfc9b174e5a7207d2c84524a8ee3eaab34d35e"
+    },
+    "lean/Conjectures/LonelinessHigherSpectrumBounds.lean": {
+      "mode": "100644",
+      "sha": "953b577aac497dc4fd86b379755088e606a12f55"
+    },
+    "lean/Conjectures/LonelinessHigherTriangleConsequences.lean": {
+      "mode": "100644",
+      "sha": "3ac2468ea720470b0c60045cf04ba1c844f2fa33"
+    },
+    "lean/Conjectures/LonelinessIntegerDirection.lean": {
+      "mode": "100644",
+      "sha": "32d2c52477115f1f364e5b00dc7e2abd37d50f5c"
+    },
+    "lean/Conjectures/LonelinessMax.lean": {
+      "mode": "100644",
+      "sha": "35e7241dce29b46684d6ec0737d633b1dd8d4997"
+    },
+    "lean/Conjectures/LonelinessModularDirections.lean": {
+      "mode": "100644",
+      "sha": "a807908065e94137c49b44dcda378e5a0a9a5be8"
+    },
+    "lean/Conjectures/LonelinessModularShortVector.lean": {
+      "mode": "100644",
+      "sha": "57db0a1470e2900e85baa51c0e30a9d1955a14ba"
+    },
+    "lean/Conjectures/LonelinessModularWitness.lean": {
+      "mode": "100644",
+      "sha": "76b3e25bcaaa32247ac3b03b2c4ad0f1a541c9f1"
+    },
+    "lean/Conjectures/LonelinessNormalization.lean": {
+      "mode": "100644",
+      "sha": "2c90ba2d7e507ac6303bfbd2f6dc9ab60cdf49b1"
+    },
+    "lean/Conjectures/LonelinessPacking.lean": {
+      "mode": "100644",
+      "sha": "294bc8aa666f024329299f4eacb598f923705444"
+    },
+    "lean/Conjectures/LonelinessPackingLower.lean": {
+      "mode": "100644",
+      "sha": "976f1d2454616abd8d10bee44b42b1af0e0aa0fd"
+    },
+    "lean/Conjectures/LonelinessPairBridge.lean": {
+      "mode": "100644",
+      "sha": "15eb2fd8e05fbb307909a83a9ad812c57c532bd7"
+    },
+    "lean/Conjectures/LonelinessPlaneDirections.lean": {
+      "mode": "100644",
+      "sha": "2d0562da43fb8c9e2fcf0deee3c3b49973750df7"
+    },
+    "lean/Conjectures/LonelinessPlaneGap.lean": {
+      "mode": "100644",
+      "sha": "755b1bf633e3907c712a17cae92231cb9b66613b"
+    },
+    "lean/Conjectures/LonelinessProductFamily.lean": {
+      "mode": "100644",
+      "sha": "8b7cde6fad74f0616592475abf094e81428cd70a"
+    },
+    "lean/Conjectures/LonelinessProductPlaneSpeeds.lean": {
+      "mode": "100644",
+      "sha": "69aec55d39ebc9d59b6f56f156d541b052ab538f"
+    },
+    "lean/Conjectures/LonelinessRational.lean": {
+      "mode": "100644",
+      "sha": "4c5f707d1183cb12ef600d52f8babbc612a1ddae"
+    },
+    "lean/Conjectures/LonelinessRationalSubspace.lean": {
+      "mode": "100644",
+      "sha": "b1030601e7a104534415e88bd6fb3b9198f04142"
+    },
+    "lean/Conjectures/LonelinessSevenSpectrumRealization.lean": {
+      "mode": "100644",
+      "sha": "3bada9f59f09082665989287f58208ea53a1c146"
+    },
+    "lean/Conjectures/LonelinessSignedCoordinates.lean": {
+      "mode": "100644",
+      "sha": "729aef8e2bb1d101a7a08c6115441ddeceeb14bb"
+    },
+    "lean/Conjectures/LonelinessSixPlaneCriticalNormalization.lean": {
+      "mode": "100644",
+      "sha": "32a4a339986d94a88a411dcbf834a4deb51ff159"
+    },
+    "lean/Conjectures/LonelinessSixPlaneDefs.lean": {
+      "mode": "100644",
+      "sha": "598c56b72d690aaa961342027edda94662c176a0"
+    },
+    "lean/Conjectures/LonelinessSixPlaneFamilies.lean": {
+      "mode": "100644",
+      "sha": "0268d8b0c76c45438ed7fceee9cb126f33f04d8e"
+    },
+    "lean/Conjectures/LonelinessSixPlaneGap.lean": {
+      "mode": "100644",
+      "sha": "4962102fb51867dd07fa6ba5bfba2198a3bb1035"
+    },
+    "lean/Conjectures/LonelinessSixPlaneGeometry.lean": {
+      "mode": "100644",
+      "sha": "ca37f3515926507d89f7fecb98337e2fa99a8ace"
+    },
+    "lean/Conjectures/LonelinessSixPlaneNormalization.lean": {
+      "mode": "100644",
+      "sha": "58886915b0403de7cb6f3238bc9e1019c3a729d6"
+    },
+    "lean/Conjectures/LonelinessSixProgression.lean": {
+      "mode": "100644",
+      "sha": "c2198f71ae8e79258c3266e51d25b986d1a27652"
+    },
+    "lean/Conjectures/LonelinessSixSpectrumArithmetic.lean": {
+      "mode": "100644",
+      "sha": "e4e06fe054d17874014384f392d550d9bc4126dc"
+    },
+    "lean/Conjectures/LonelinessSixSpectrumRealization.lean": {
+      "mode": "100644",
+      "sha": "1f3757ef017c70b0e6cac4f36a40a2d59970f11a"
+    },
+    "lean/Conjectures/LonelinessSixSporadicBounds.lean": {
+      "mode": "100644",
+      "sha": "f99b3e75d5b8a84fa349dfdc460dd41936c7fc92"
+    },
+    "lean/Conjectures/LonelinessSmallRunner.lean": {
+      "mode": "100644",
+      "sha": "b081a6b32b9ca620d50da556b9b3130638f7dffd"
+    },
+    "lean/Conjectures/LonelinessSubspaceDensity.lean": {
+      "mode": "100644",
+      "sha": "80362156b35fe43929aea7fa3216008a0f4e6c65"
+    },
+    "lean/Conjectures/LonelinessTwoDirections.lean": {
+      "mode": "100644",
+      "sha": "8a7de622620b116c9b6c1ddcb05fb70577106fb0"
+    },
+    "lean/Conjectures/NonmixedGapDensity.lean": {
+      "mode": "100644",
+      "sha": "c409f66d2921bab72018d09a31c32d247dd139eb"
+    },
+    "lean/Conjectures/NonmixedGapPeriodic.lean": {
+      "mode": "100644",
+      "sha": "39bd668d59aae887763546bd785ed27493e4b914"
+    },
+    "lean/Conjectures/NonmixedGapResidues.lean": {
+      "mode": "100644",
+      "sha": "df8327b08a7346690cd86cdb3797662a10c896ff"
+    },
+    "lean/lake-manifest.json": {
+      "mode": "100644",
+      "sha": "f0c403ca7db2b5d8e162f465e9963b2fa475335a"
+    },
+    "lean/lakefile.toml": {
+      "mode": "100644",
+      "sha": "a249d99c8350205523014fe95883b3e45714931e"
+    },
+    "lean/lean-toolchain": {
+      "mode": "100644",
+      "sha": "a6aff065db2882c535684f8c5bcd4f16e9a23915"
+    },
+    "scripts/audit_lean_all_owned.py": {
+      "mode": "100644",
+      "sha": "57dfaa9d09e8f4e653b817843df7fa9826358f41"
+    },
+    "scripts/build_lean_parallel.py": {
+      "mode": "100644",
+      "sha": "9d6feac7e470e11e76aece653f30e11eb450fa98"
+    },
+    "scripts/plan_accepted_lean.py": {
+      "mode": "100644",
+      "sha": "0172b8d0889f413e82241dcb1f2f7585d7989385"
+    },
+    "scripts/plan_lean_candidates.py": {
+      "mode": "100644",
+      "sha": "e287900135dd38db3ac72d42744fd8a75c1dfe78"
+    },
+    "scripts/replay_lean.py": {
+      "mode": "100644",
+      "sha": "4f14cafc5e52ce6af8a451ddd92df2cba7ff61cb"
+    },
+    "scripts/validate_spectrum_archive.py": {
+      "mode": "100644",
+      "sha": "b589f1c1c14ef62aa1e55df11870e8191960dc49"
+    },
+    "scripts/verify_frankl_orbit_batches.py": {
+      "mode": "100644",
+      "sha": "71853974fe3e17b5464df6f529353257a2478a54"
+    },
+    "scripts/verify_higher_spectrum_realization_exact.py": {
+      "mode": "100644",
+      "sha": "931069ce899e423b33da94f2fb5e7cb589d5f0b6"
+    },
+    "scripts/verify_lean_candidate.py": {
+      "mode": "100644",
+      "sha": "4390b9a34c8109c242bec7eaf615c4ce2da1930b"
+    }
+  },
+  "historical_git_inputs": {
+    ".github/workflows/lean-higher-spectrum-realization-exact.yml": {
+      "mode": "100644",
+      "sha": "6b5053c53a50d5a4e20c5c6bd9176f40f70c7d69"
+    },
+    "docs/higher-spectrum-realization-exact-sources.json": {
+      "mode": "100644",
+      "sha": "50981f3835518730b49c852d30059401e8d41aeb"
+    },
+    "lean/Conjectures/HaralambisCounting.lean": {
+      "mode": "100644",
+      "sha": "c2862c41b72509f019552136d7bc0ae680ff0b9f"
+    },
+    "lean/Conjectures/HaralambisDefects.lean": {
+      "mode": "100644",
+      "sha": "1b0618e1759d3d5ebceafae391efdcde6db96ac6"
+    },
+    "lean/Conjectures/HaralambisDensity.lean": {
+      "mode": "100644",
+      "sha": "5583a78d9dc2e4b4157dc22c2ea52fad09a459e5"
+    },
+    "lean/Conjectures/HaralambisFaces.lean": {
+      "mode": "100644",
+      "sha": "675c5de16d503bb69f9a55eb27a52713e4c0e16d"
+    },
+    "lean/Conjectures/HaralambisIntervals.lean": {
+      "mode": "100644",
+      "sha": "42e56b34956ce7633baac9b5af28e847533b05a4"
+    },
+    "lean/Conjectures/HaralambisOrientation.lean": {
+      "mode": "100644",
+      "sha": "e472fd58fefc011ad6434143898481a71ad07bcd"
+    },
+    "lean/Conjectures/HaralambisPairSum.lean": {
+      "mode": "100644",
+      "sha": "39283ecf5615b6ea7ef6a12eae14866c673d6fa9"
+    },
+    "lean/Conjectures/HaralambisPeriods.lean": {
+      "mode": "100644",
+      "sha": "3b03ee23787e2b0eda7dce5a5db1e35accd92c7b"
+    },
+    "lean/Conjectures/HaralambisTheorem.lean": {
+      "mode": "100644",
+      "sha": "1cb26ec7e11b7e39865c685c1a55b1b286efd561"
+    },
+    "lean/Conjectures/Loneliness.lean": {
+      "mode": "100644",
+      "sha": "10bab1dbf24b878d4037c14c22ee4444380995d7"
+    },
+    "lean/Conjectures/LonelinessCertificate.lean": {
+      "mode": "100644",
+      "sha": "bccb8328b110cc48b91b9da19cb4a1e3e2461d22"
+    },
+    "lean/Conjectures/LonelinessCoalescence.lean": {
+      "mode": "100644",
+      "sha": "f4ec3e34236a582379ae74d594cfdc452baafeb8"
+    },
+    "lean/Conjectures/LonelinessCoalescenceAvoiding.lean": {
+      "mode": "100644",
+      "sha": "f79ca3c9696097f53311a03e2f7220e6a5af3cc0"
+    },
+    "lean/Conjectures/LonelinessCoalescenceValue.lean": {
+      "mode": "100644",
+      "sha": "b6b0ac1ddf72a6f56cb461e780ec436946f7a3fd"
+    },
+    "lean/Conjectures/LonelinessConsecutiveFamily.lean": {
+      "mode": "100644",
+      "sha": "19b050609f5963ae29c350b365a217ffdc07e75c"
+    },
+    "lean/Conjectures/LonelinessConsecutiveFamilyCertificates.lean": {
+      "mode": "100644",
+      "sha": "6d9fbff47651552df3de5dbc1a93e71f27bb2789"
+    },
+    "lean/Conjectures/LonelinessContinuity.lean": {
+      "mode": "100644",
+      "sha": "454af68ef5290ef792219c2ae18fcbefd0efb346"
+    },
+    "lean/Conjectures/LonelinessCoordinateClasses.lean": {
+      "mode": "100644",
+      "sha": "80ebd09666bfe0d5728a132f7e349a11924132b5"
+    },
+    "lean/Conjectures/LonelinessCoordinateSubspace.lean": {
+      "mode": "100644",
+      "sha": "da03dc4abbf50fc8f174f08ab49503ad9f424713"
+    },
+    "lean/Conjectures/LonelinessCriticalBase.lean": {
+      "mode": "100644",
+      "sha": "a5705710d44e968d157b046872962e08a141073a"
+    },
+    "lean/Conjectures/LonelinessCriticalFamilies.lean": {
+      "mode": "100644",
+      "sha": "e7a53dbb2d02b030adfdfcc7ec2e66bed82efa25"
+    },
+    "lean/Conjectures/LonelinessCriticalSecond.lean": {
+      "mode": "100644",
+      "sha": "1a0ed019755501faf61507ec20b325b3a181bb27"
+    },
+    "lean/Conjectures/LonelinessDistanceColoring.lean": {
+      "mode": "100644",
+      "sha": "fce8803b9b56de03351b88014bf887be21d92e50"
+    },
+    "lean/Conjectures/LonelinessEightSpectrumRealization.lean": {
+      "mode": "100644",
+      "sha": "e3007a49ac0e8a9c17d93ea70de8ac09b1dd6c58"
+    },
+    "lean/Conjectures/LonelinessExamples.lean": {
+      "mode": "100644",
+      "sha": "7ef8eb317f187999be74384e5950833e09944db2"
+    },
+    "lean/Conjectures/LonelinessExceptionalEightFamily.lean": {
+      "mode": "100644",
+      "sha": "dde37afb969218d73d92c77600ac207887fc531b"
+    },
+    "lean/Conjectures/LonelinessExceptionalEightFamilyCertificates.lean": {
+      "mode": "100644",
+      "sha": "2e83eedcc7c9c09e21dd0a662d84ec89e89cfd9f"
+    },
+    "lean/Conjectures/LonelinessFiveFamily.lean": {
+      "mode": "100644",
+      "sha": "1463a6505e917f0e6c8f812e1e34337f05eaed00"
+    },
+    "lean/Conjectures/LonelinessHigherExamplesCertificate.lean": {
+      "mode": "100644",
+      "sha": "20461b1bb596026c605a5c7753e0a61ead8e1df2"
+    },
+    "lean/Conjectures/LonelinessHigherExamplesEight.lean": {
+      "mode": "100644",
+      "sha": "170c0485ff5146ea02a0d92f8e325a4434d55d75"
+    },
+    "lean/Conjectures/LonelinessHigherExamplesSeven.lean": {
+      "mode": "100644",
+      "sha": "32dfc9b174e5a7207d2c84524a8ee3eaab34d35e"
+    },
+    "lean/Conjectures/LonelinessHigherSpectrumBounds.lean": {
+      "mode": "100644",
+      "sha": "953b577aac497dc4fd86b379755088e606a12f55"
+    },
+    "lean/Conjectures/LonelinessHigherTriangleConsequences.lean": {
+      "mode": "100644",
+      "sha": "3ac2468ea720470b0c60045cf04ba1c844f2fa33"
+    },
+    "lean/Conjectures/LonelinessIntegerDirection.lean": {
+      "mode": "100644",
+      "sha": "32d2c52477115f1f364e5b00dc7e2abd37d50f5c"
+    },
+    "lean/Conjectures/LonelinessMax.lean": {
+      "mode": "100644",
+      "sha": "35e7241dce29b46684d6ec0737d633b1dd8d4997"
+    },
+    "lean/Conjectures/LonelinessModularDirections.lean": {
+      "mode": "100644",
+      "sha": "a807908065e94137c49b44dcda378e5a0a9a5be8"
+    },
+    "lean/Conjectures/LonelinessModularShortVector.lean": {
+      "mode": "100644",
+      "sha": "57db0a1470e2900e85baa51c0e30a9d1955a14ba"
+    },
+    "lean/Conjectures/LonelinessModularWitness.lean": {
+      "mode": "100644",
+      "sha": "76b3e25bcaaa32247ac3b03b2c4ad0f1a541c9f1"
+    },
+    "lean/Conjectures/LonelinessNormalization.lean": {
+      "mode": "100644",
+      "sha": "2c90ba2d7e507ac6303bfbd2f6dc9ab60cdf49b1"
+    },
+    "lean/Conjectures/LonelinessPacking.lean": {
+      "mode": "100644",
+      "sha": "294bc8aa666f024329299f4eacb598f923705444"
+    },
+    "lean/Conjectures/LonelinessPackingLower.lean": {
+      "mode": "100644",
+      "sha": "976f1d2454616abd8d10bee44b42b1af0e0aa0fd"
+    },
+    "lean/Conjectures/LonelinessPairBridge.lean": {
+      "mode": "100644",
+      "sha": "15eb2fd8e05fbb307909a83a9ad812c57c532bd7"
+    },
+    "lean/Conjectures/LonelinessPlaneDirections.lean": {
+      "mode": "100644",
+      "sha": "2d0562da43fb8c9e2fcf0deee3c3b49973750df7"
+    },
+    "lean/Conjectures/LonelinessPlaneGap.lean": {
+      "mode": "100644",
+      "sha": "755b1bf633e3907c712a17cae92231cb9b66613b"
+    },
+    "lean/Conjectures/LonelinessProductFamily.lean": {
+      "mode": "100644",
+      "sha": "8b7cde6fad74f0616592475abf094e81428cd70a"
+    },
+    "lean/Conjectures/LonelinessProductPlaneSpeeds.lean": {
+      "mode": "100644",
+      "sha": "69aec55d39ebc9d59b6f56f156d541b052ab538f"
+    },
+    "lean/Conjectures/LonelinessRational.lean": {
+      "mode": "100644",
+      "sha": "4c5f707d1183cb12ef600d52f8babbc612a1ddae"
+    },
+    "lean/Conjectures/LonelinessRationalSubspace.lean": {
+      "mode": "100644",
+      "sha": "b1030601e7a104534415e88bd6fb3b9198f04142"
+    },
+    "lean/Conjectures/LonelinessSevenSpectrumRealization.lean": {
+      "mode": "100644",
+      "sha": "3bada9f59f09082665989287f58208ea53a1c146"
+    },
+    "lean/Conjectures/LonelinessSignedCoordinates.lean": {
+      "mode": "100644",
+      "sha": "729aef8e2bb1d101a7a08c6115441ddeceeb14bb"
+    },
+    "lean/Conjectures/LonelinessSixPlaneCriticalNormalization.lean": {
+      "mode": "100644",
+      "sha": "32a4a339986d94a88a411dcbf834a4deb51ff159"
+    },
+    "lean/Conjectures/LonelinessSixPlaneDefs.lean": {
+      "mode": "100644",
+      "sha": "598c56b72d690aaa961342027edda94662c176a0"
+    },
+    "lean/Conjectures/LonelinessSixPlaneFamilies.lean": {
+      "mode": "100644",
+      "sha": "0268d8b0c76c45438ed7fceee9cb126f33f04d8e"
+    },
+    "lean/Conjectures/LonelinessSixPlaneGap.lean": {
+      "mode": "100644",
+      "sha": "4962102fb51867dd07fa6ba5bfba2198a3bb1035"
+    },
+    "lean/Conjectures/LonelinessSixPlaneGeometry.lean": {
+      "mode": "100644",
+      "sha": "ca37f3515926507d89f7fecb98337e2fa99a8ace"
+    },
+    "lean/Conjectures/LonelinessSixPlaneNormalization.lean": {
+      "mode": "100644",
+      "sha": "58886915b0403de7cb6f3238bc9e1019c3a729d6"
+    },
+    "lean/Conjectures/LonelinessSixProgression.lean": {
+      "mode": "100644",
+      "sha": "c2198f71ae8e79258c3266e51d25b986d1a27652"
+    },
+    "lean/Conjectures/LonelinessSixSpectrumArithmetic.lean": {
+      "mode": "100644",
+      "sha": "e4e06fe054d17874014384f392d550d9bc4126dc"
+    },
+    "lean/Conjectures/LonelinessSixSpectrumRealization.lean": {
+      "mode": "100644",
+      "sha": "1f3757ef017c70b0e6cac4f36a40a2d59970f11a"
+    },
+    "lean/Conjectures/LonelinessSixSporadicBounds.lean": {
+      "mode": "100644",
+      "sha": "f99b3e75d5b8a84fa349dfdc460dd41936c7fc92"
+    },
+    "lean/Conjectures/LonelinessSmallRunner.lean": {
+      "mode": "100644",
+      "sha": "b081a6b32b9ca620d50da556b9b3130638f7dffd"
+    },
+    "lean/Conjectures/LonelinessSubspaceDensity.lean": {
+      "mode": "100644",
+      "sha": "80362156b35fe43929aea7fa3216008a0f4e6c65"
+    },
+    "lean/Conjectures/LonelinessTwoDirections.lean": {
+      "mode": "100644",
+      "sha": "8a7de622620b116c9b6c1ddcb05fb70577106fb0"
+    },
+    "lean/Conjectures/NonmixedGapDensity.lean": {
+      "mode": "100644",
+      "sha": "c409f66d2921bab72018d09a31c32d247dd139eb"
+    },
+    "lean/Conjectures/NonmixedGapPeriodic.lean": {
+      "mode": "100644",
+      "sha": "39bd668d59aae887763546bd785ed27493e4b914"
+    },
+    "lean/Conjectures/NonmixedGapResidues.lean": {
+      "mode": "100644",
+      "sha": "df8327b08a7346690cd86cdb3797662a10c896ff"
+    },
+    "lean/lake-manifest.json": {
+      "mode": "100644",
+      "sha": "f0c403ca7db2b5d8e162f465e9963b2fa475335a"
+    },
+    "lean/lakefile.toml": {
+      "mode": "100644",
+      "sha": "a249d99c8350205523014fe95883b3e45714931e"
+    },
+    "lean/lean-toolchain": {
+      "mode": "100644",
+      "sha": "a6aff065db2882c535684f8c5bcd4f16e9a23915"
+    },
+    "scripts/audit_lean_all_owned.py": {
+      "mode": "100644",
+      "sha": "57dfaa9d09e8f4e653b817843df7fa9826358f41"
+    },
+    "scripts/build_lean_parallel.py": {
+      "mode": "100644",
+      "sha": "9d6feac7e470e11e76aece653f30e11eb450fa98"
+    },
+    "scripts/plan_accepted_lean.py": {
+      "mode": "100644",
+      "sha": "0172b8d0889f413e82241dcb1f2f7585d7989385"
+    },
+    "scripts/plan_lean_candidates.py": {
+      "mode": "100644",
+      "sha": "e287900135dd38db3ac72d42744fd8a75c1dfe78"
+    },
+    "scripts/replay_lean.py": {
+      "mode": "100644",
+      "sha": "4f14cafc5e52ce6af8a451ddd92df2cba7ff61cb"
+    },
+    "scripts/verify_frankl_orbit_batches.py": {
+      "mode": "100644",
+      "sha": "71853974fe3e17b5464df6f529353257a2478a54"
+    },
+    "scripts/verify_higher_spectrum_realization_exact.py": {
+      "mode": "100644",
+      "sha": "931069ce899e423b33da94f2fb5e7cb589d5f0b6"
+    },
+    "scripts/verify_lean_candidate.py": {
+      "mode": "100644",
+      "sha": "4390b9a34c8109c242bec7eaf615c4ce2da1930b"
+    }
+  },
+  "job_id": 135701825634,
+  "new_lean_execution_performed": false,
+  "new_modules": [
+    "Conjectures.LonelinessSixPlaneFamilies"
+  ],
+  "original_receipt_unchanged": true,
+  "raw_receipt_sha256": "d06c6f0e813120dfe3bf118f5d9c96b516e1abfd02620114c372944caeb155fe",
+  "registry_baseline": {
+    "docs/formalization.md": {
+      "mode": "100644",
+      "sha": "a68beeb386669abb66b4e91c736b2ef0260f3f01"
+    },
+    "docs/lean-status.md": {
+      "mode": "100644",
+      "sha": "1c83d41b085177af725198455c30adcb245c60a0"
+    },
+    "lean/Conjectures.lean": {
+      "mode": "100644",
+      "sha": "7932e515a93207841bbaffc37eef5f699ea2d2e3"
+    },
+    "lean/ProofAudit.lean": {
+      "mode": "100644",
+      "sha": "983f549a2e945014b667ba883a687211f840c705"
+    },
+    "scripts/verify_lean.sh": {
+      "mode": "100755",
+      "sha": "0d2298924ef45e1f6fd3b68131a3bf43fc083b5d"
+    }
+  },
+  "registry_policy": "Append one verified component and its five endpoints; preserve all concurrent registrations.",
+  "required_theorems": [
+    "Loneliness.SixPlane.standard_product_plane",
+    "Loneliness.SixPlane.literal_parameters_of_mem_critical_plane",
+    "Loneliness.SixPlane.literal_family_of_mem_critical_plane",
+    "Loneliness.SixPlane.primitive_family_of_mem_critical_plane",
+    "Loneliness.SixPlane.not_mem_critical_plane_of_not_literal_families"
+  ],
+  "run_id": 44563135178,
+  "schema": "spectrum-component-registration-v1",
+  "source_commit": "3273ac1a24ea061b0cbd73244e2ac57c08d491ec",
+  "summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 1795,
+    "modules": 66,
+    "private_declarations": 49,
+    "raw_declarations": 1795,
+    "required": 5,
+    "tag": "passed",
+    "theorems": 1449
+  }
+}

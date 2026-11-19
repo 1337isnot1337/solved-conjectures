@@ -58,7 +58,7 @@ theorem distance_shift_of_dvd (a d j : ℕ) (hd : 0 < d) (hdiv : d ∣ a) (t : �
   have hphase : ((d * b : ℕ) : ℝ) * (t + (j : ℝ) / d) =
       ((d * b : ℕ) : ℝ) * t + (((b * j : ℕ) : ℤ) : ℝ) := by
     push_cast
-    field_simp [hdR] <;> ring
+    field_simp [hdR]
   rw [hphase, CriticalFamilies.distance_add_int]
 
 def exceptionalIndices {n : ℕ} (v : Fin n → ℕ) (d : ℕ) : Finset (Fin n) :=
@@ -98,7 +98,7 @@ theorem value_gt_tenth_of_divisible_value {n : ℕ} (v : Fin n → ℕ)
     exact hle.trans_lt hcost
   obtain ⟨j, hjrange, hjfree⟩ : ∃ j ∈ Finset.range d, j ∉ covered := by
     by_contra hnone
-    push_neg at hnone
+    push Not at hnone
     have hle := Finset.card_le_card hnone
     rw [Finset.card_range] at hle
     omega
@@ -157,7 +157,8 @@ theorem nine_speed_shift_test
       have hlt : (divisibleSpeeds v d).length < (List.ofFn v).length := by
         apply List.length_filter_lt_length_iff_exists.mpr
         exact ⟨v i, List.mem_ofFn.mpr ⟨i, rfl⟩, by simpa using hinot⟩
-      simpa only [List.length_ofFn] using Nat.le_of_lt_succ hlt
+      simp only [List.length_ofFn] at hlt
+      omega
     have hnodup' : (divisibleSpeeds v d).Nodup := hnodup.filter _
     have hpositive' : ∀ a ∈ divisibleSpeeds v d, 0 < a := by
       intro a ha
@@ -275,8 +276,10 @@ theorem ninthShiftCost_pos_of_exception {n : ℕ} (v : Fin n → ℕ) (d : ℕ)
   classical
   obtain ⟨i, hi⟩ := hexception
   have himem : i ∈ exceptionalIndices v d := by simp [exceptionalIndices, hi]
-  have hle : ninthShiftWeight (v i) d ≤ ninthShiftCost v d :=
-    Finset.single_le_sum (fun _ _ => Nat.zero_le _) himem
+  have hle : ninthShiftWeight (v i) d ≤ ninthShiftCost v d := by
+    unfold ninthShiftCost
+    exact Finset.single_le_sum (f := fun j : Fin n => ninthShiftWeight (v j) d)
+      (fun _ _ => Nat.zero_le _) himem
   exact (ninthShiftWeight_pos (v i) d hd).trans_le hle
 
 /-- The statement in the written proof, with a nonempty exceptional set and

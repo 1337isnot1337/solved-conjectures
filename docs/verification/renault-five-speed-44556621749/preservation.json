@@ -1,0 +1,53 @@
+{
+  "accepted_registry_changed": false,
+  "artifact_id": 14548552048,
+  "artifact_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44556621749/artifacts/14548552048",
+  "artifact_zip_sha256": "df28854a17a9a14ece4d15e5a4d32d1d3c60d9e61a4b75f0e23a060acd7e99dc",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 3003,
+    "modules": 106,
+    "private_declarations": 230,
+    "raw_declarations": 3003,
+    "required": 100,
+    "tag": "passed",
+    "theorems": 2374
+  },
+  "complete_five_speed_bound_verified": true,
+  "complete_prime_checked": false,
+  "compressed_inventory_sha256": "1e8a2744970422acc2d7024018e29fd45689888a0695142040e9529ddeaf310f",
+  "declaration_inventory_sha256": "a3c305f624cf2121b868997a42d7b4cde71f86bfbf9add2ab7a4c46d8df6ef71",
+  "git_commit": "93022640cfd5f8c4fa2ce837dd8743d101374f2d",
+  "hosted_fresh_strict_source_passed": true,
+  "hosted_stock_kernel_closure_passed": true,
+  "local_independent_lean_replay_performed_during_preservation": false,
+  "padding_theorems_verified": false,
+  "preserved_evidence_archive_sha256": "29bc425196cbe06d5f9bb4effa1e2e10b29c0cd46e6c23c62e9380d4369afd7c",
+  "preserved_evidence_contents": [
+    "receipt",
+    "declaration inventory",
+    "audit source",
+    "proof sources",
+    "generated data where present",
+    "gate controls",
+    "logs",
+    "process profiles"
+  ],
+  "preserved_evidence_members": 555,
+  "proof_scope": {
+    "accepted_registry_changed": false,
+    "checkpoint": "complete_renault_five_speed_target",
+    "complete_five_speed_bound_target": true
+  },
+  "raw_receipt_sha256": "03c02a73259bc03ab0778926443d5ff05ddfe2ec3083db86e9e14312e64b9906",
+  "run_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44556621749",
+  "schema": "verified-checkpoint-preservation-v1",
+  "source_object_log_and_audit_hashes_revalidated": true,
+  "status": "authenticated_and_preserved",
+  "workflow_job_id": 135674292893,
+  "workflow_run_id": 44556621749
+}

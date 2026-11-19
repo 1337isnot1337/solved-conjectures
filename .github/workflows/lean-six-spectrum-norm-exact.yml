@@ -1,7 +1,14 @@
-name: Lean six-spectrum norm geometry
+name: Lean six-spectrum norm components
 
 on:
   workflow_dispatch:
+    inputs:
+      task:
+        description: Exact norm component
+        required: true
+        default: norm-classification
+        type: choice
+        options: [norm-classification, norm-geometry]
   push:
     branches: [main]
     paths:
@@ -9,6 +16,8 @@ on:
       - 'scripts/verify_six_spectrum_norm_exact.py'
       - 'docs/six-spectrum-norm-exact-sources.json'
       - 'lean/Conjectures/LonelinessSixSpectrumNormGeometry.lean'
+      - 'lean/Conjectures/LonelinessSixSpectrumNormClassification.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneClassification.lean'
       - 'lean/Conjectures/LonelinessNormGeometry.lean'
       - 'lean/Conjectures/LonelinessKZSmallData.lean'
       - 'lean/Conjectures/LonelinessKZGeneral.lean'
@@ -27,11 +36,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: lean-six-spectrum-norm-exact-${{ github.ref }}
+  group: lean-six-spectrum-norm-exact-${{ github.ref }}-${{ inputs.task || 'norm-classification' }}
   cancel-in-progress: true
 
 jobs:
   verify:
+    name: verify (${{ inputs.task || 'norm-classification' }})
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
@@ -41,7 +51,7 @@ jobs:
       - name: Validate exact source and helper inventory
         run: |
           python3 -m py_compile scripts/verify_six_spectrum_norm_exact.py
-          python3 scripts/verify_six_spectrum_norm_exact.py norm-geometry --plan
+          python3 scripts/verify_six_spectrum_norm_exact.py "${{ inputs.task || 'norm-classification' }}" --plan
       - uses: leanprover/lean-action@v1
         with:
           lake-package-directory: lean
@@ -55,12 +65,12 @@ jobs:
         env:
           LEAN_NUM_THREADS: 1
           UV_USE_IO_URING: 0
-        run: python3 scripts/verify_six_spectrum_norm_exact.py norm-geometry
+        run: python3 scripts/verify_six_spectrum_norm_exact.py "${{ inputs.task || 'norm-classification' }}"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: six-spectrum-norm-geometry
-          path: .candidate-artifacts/six-spectrum-norm-geometry/
+          name: six-spectrum-${{ inputs.task || 'norm-classification' }}
+          path: .candidate-artifacts/six-spectrum-${{ inputs.task || 'norm-classification' }}/
           include-hidden-files: true
           retention-days: 30
           if-no-files-found: error

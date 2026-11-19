@@ -853,3 +853,111 @@ Acceptance uses the original passing job `135655971010` in [run 44551449045](htt
 The 20-module finite-data component is accepted for its exact scope: all 43,200 coordinate-permutation lookup cells, three nested certificate pilots of 32/256/1,280 cases for the first pattern pair, and the generic quotient/remainder joins needed to combine a complete collection of certificate chunks. The largest pilot covers 1,280 cases; the pilots are not disjoint. The generic full-coverage conclusion retains the numerical chunk checks as hypotheses. This does not assert that all 1,152,000 candidate-pair cases are checked and does not establish the six-plane classification.
 
 Original job `135655971048` in [run 44551449045](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44551449045) at `aac4fff06ba8f6678d60a1665ab4790562cbbc5a` passed 20 fresh strict sources, all 414 owned/raw declarations (317 theorems, zero private declarations), nine required endpoints, and 20 exact independent stock-kernel targets. Artifact `14543834207` has ZIP SHA256 `1a8fa5d2400e25a00ca381c16a98be42f765cf7b199a07e171dfbb648dce5067`; the raw receipt hash is `e648e84040f83963f18d44152638d02c3c800e1e3ee1624a2de96d50285c67ee`. The authenticated original evidence is preserved in [`verification/six-plane-coverage-exact-44551449045/`](verification/six-plane-coverage-exact-44551449045/). The complete pair table has a separate verification and acceptance path.
+
+
+### Six-speed norm geometry from an explicit plane gap
+
+The 52-module norm component is accepted. For a positive primitive six-speed vector with loneliness value at most `1/6`, it proves Euclidean norm strictly below `21829`, assuming `LonelyRunnerBound 4` and that every rational two-dimensional plane containing the vector has space value at least `2/11`. It constructs a reduced integral basis, proves all five Gram-prefix bounds, and proves the determinant identity internally. The five required endpoints are `exists_gram_data`, `numerical_margin`, `squaredNorm_lt`, `norm_lt`, and `natural_squaredNorm_lt` in `Loneliness.SixSpectrumNormGeometry`.
+
+The norm bound is stronger than the original ambient bound `163350`. This component retains its plane-gap and four-speed hypotheses. It does not prove arbitrary rational-subspace covolume bounds, the finite off-critical classification, or the complete six-speed spectrum. The result-level completion status is unchanged.
+
+Original [run 44555513834](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44555513834), job `135670390120`, passed at `f66de17709f2dd9f46c96cd1fc9b0ed3b60fda2a`: 52 fresh strict source modules, all 1,269 owned/raw declarations (1,051 theorems, 60 private declarations), five required endpoints, and 52 exact independent stock-kernel targets. The axiom whitelist was exactly `propext`, `Classical.choice`, and `Quot.sound`. Verification budgets and warning settings were unchanged.
+
+Artifact `14544624570` has ZIP SHA256 `541410f007a756a1a10fee1c5abebb53d6cd6c40ecf163c576d0df9a18f15a11`; the unchanged receipt hash is `1ac075b71fe894ee81f37c8bab28dc9679b4528371c9afaef61ee14f4fc81a5c`. All 65 original source/control/helper/configuration files matched the passing tree. All 317 archive members were authenticated. The 213 unchanged raw evidence files are preserved under [`verification/six-spectrum-norm-exact-44555513834/`](verification/six-spectrum-norm-exact-44555513834/), with a separate preservation record and archive inventory. `scripts/validate_six_spectrum_norm_archive.py` reproduces the offline provenance checks; it does not claim a new Lean execution. `LonelinessKZSmallData` and `LonelinessSixSpectrumNormGeometry` are now registered with the accepted root and verifier.
+
+
+## Product-plane speed bridge checkpoint (2026-11-19)
+
+The accepted registry now includes `Conjectures.LonelinessProductPlaneSpeeds` and its four actual integer-speed endpoints. [Run 44553736720](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44553736720), job `135664057075`, freshly checked its exact 40-module closure, audited 860 owned/raw declarations (730 theorems and 10 private declarations), and separately replayed every project module in the pinned stock kernel. Original source and artifact bytes were authenticated and preserved under [`docs/verification/product-plane-speeds-exact-44553736720`](verification/product-plane-speeds-exact-44553736720/).
+
+The bridge extracts the full integer speed list from membership in an explicitly signed/permuted product plane, with integrality supplied by a base coordinate equal to one. Its final theorem invokes the already proved product-family arithmetic to obtain `W ++ [q*s]` under the stated primitive, positivity, residue, and value hypotheses. Geometric exhaustiveness and every finite spectrum classification premise remain separate. This checkpoint does not change the completion status of any spectrum result.
+
+
+## Five-speed norm component, 19 November 2026
+
+The positive primitive five-speed norm cutoff `347142` at threshold `1/6`
+and the existence of a coordinate-avoiding prime among
+`149, 151, 163, 167, 173` are checked and registered. The two new norm modules
+passed fresh source checking, the all-owned/private axiom audit, and exact
+stock kernel replay of their full 108-module closure. All 15 component
+endpoints are required by the gate. See the
+[original receipt and authenticated evidence](verification/loneliness-five-runner-norm-44555436644/README.md).
+
+The complete five-speed finite classification still requires its separate
+certificate gate. This norm component does not complete a result-directory
+classification or discharge any higher-speed finite enumeration.
+
+## Six-coordinate plane semantics (19 November 2026)
+
+The six-coordinate plane semantic component is accepted from [run 44557816556](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44557816556), job `135681972978`, at source commit `fdd22c92c4e8c88a486881b5561e95be5c44cd62`. Its exact 63-module closure passed fresh strict source compilation, the complete owned and private declaration audit, and 63 independent stock-kernel target replays. The audit checked 1,313 owned/raw declarations, 1,055 theorems, 15 private declarations, and all 31 required theorem endpoints. The allowed axioms were exactly `propext`, `Classical.choice`, and `Quot.sound`.
+
+For a coordinate-free rational two-dimensional plane in six coordinates with actual space value below `2/11`, the semantic theorem recognizes one of the three original planes, up to coordinate signs and permutations: `(s,2s,3s,4s,5s,t)`, `(s,3s,4s,5s,9s,t)`, or `(s,t,s+t,2s+t,3s+t,3s+2t)`. The proof retains explicit inputs for the four-speed runner bound, the exact five-speed low-gap classification, and complete candidate-pair certificate coverage. The five-speed input is separately derived from `Loneliness.FiveSpeedCertificate.SporadicExhaustion`. The enumeration interface checks all 720 permutation ranks and proves that complete direction lookups and row/block certificate checks imply `CandidatePairsChecked`.
+
+This acceptance supplies the semantic bridge and exact coverage interface. It does not discharge `SporadicExhaustion`, supply the complete numerical pair certificate, or establish unconditional six-plane or six-speed spectrum classification. The later wrapper that discharges the four-speed hypothesis and the separate complete finite-data gate are outside this receipt. Result-level completion boxes are unchanged.
+
+Artifact `14550615276` contains 10,650,461 bytes and has ZIP SHA-256 `236667c95848500328181d1b15b1414ec6544a68daa31b27884e6974f19a4eeb`. The unchanged original receipt has SHA-256 `431d8358951a12ba901f94a124724a07a26802dcc7f43a65110ab5ba530f625a`. All 76 historical proof-source, helper, configuration, and controller Git blobs were authenticated; all 383 archive members, object hashes, process records, and audit data were checked. The 257 unchanged raw evidence files, archive inventory, and separate preservation record are under [`verification/six-plane-semantics-exact-44557816556/`](verification/six-plane-semantics-exact-44557816556/).
+
+The original command was `python3 scripts/verify_higher_spectrum_realization_exact.py six-plane-semantics` at the stated source commit. `scripts/validate_spectrum_archive.py` reproduces the offline archive checks; preservation is not a new Lean execution. The eight new semantic modules, their seven previously unlisted five-speed dependencies, and the 31 required endpoints are appended to the accepted root, prebuild, and audit registries. `LonelinessSixPlaneDefs` and `LonelinessSixPlaneEnumeration` were already registered from the earlier coverage component.
+
+## Unconditional five-speed bound and primitive transport, 19 November 2026
+
+The full Renault gate passed at `93022640cfd5f8c4fa2ce837dd8743d101374f2d`: 106 fresh strict project sources, 3,003 audited owned declarations including 230 private declarations, 100 required theorem endpoints, and 106 exact unchanged stock-kernel targets. `Loneliness.Renault.five_speed_lonelyRunnerBound` has no unproved lower-runner premise. The common-time theorem covers every positive five-tuple, including repeats. This closes a lower-bound dependency; it does not close the five-speed spectrum classification.
+
+The primitive-classification transport and distinct-positive-padding gates also passed, on their full 15- and 16-module closures. Padding shows that exact-length primitive bounds suffice for the full bound at that length without an additional smaller-runner premise. The closed-sublevel classification and values of its families remain explicit hypotheses. Lower-runner assumptions in norm or classification proofs remain separate obligations.
+
+All three downloaded artifacts and their source/object/control/log/profile/audit digests were authenticated before registration. Original receipts and durable evidence are in `docs/verification/renault-five-speed-44556621749/`, `docs/verification/runner-bound-transport-44557243499/`, and `docs/verification/runner-bound-padding-44559299513/`. Registration adds 23 module roots and 109 theorem endpoints; the merged accepted-package gate remains separate. The campaign is incomplete and Li remains last.
+
+## Six-speed prime-product reduction checkpoint (2026-11-19)
+
+The accepted registry includes `LonelinessSixSpectrumFieldsDefs` and `LonelinessSixSpectrumFieldsProduct`, with 16 named endpoints. Original [run 44559208975](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44559208975), job `135691218139`, freshly checked all nine project modules, audited 266 owned/raw declarations (202 theorems and 13 private declarations), and separately replayed all nine modules in the pinned stock kernel. Original evidence is authenticated and preserved under [`docs/verification/six-fields-product-exact-44559208975`](verification/six-fields-product-exact-44559208975/).
+
+These proofs identify the exact 80 signed triple factors and show that sufficient finite prime covers, together with the actual squared norm and the explicit prime-product inequality, force an actual additive triangle for a positive sextuple below `1/6`. Prime coverage remains an input over every nonzero raw residue tuple, including repeated residues. No numerical prime certificate, orbit completeness, sporadic exhaustion, or universal spectrum classification is claimed by this checkpoint.
+
+## Conditional gcd shift component (19 November 2026)
+
+The arbitrary-modulus nine-speed gcd shift test is checked and registered.
+With positive distinct speeds, `LonelyRunnerBound 8`, and `d ≥ 2`, a nonempty
+exceptional set with literal gcd-weighted ceiling cost below `d` implies
+loneliness strictly greater than `1/10`. The gate checks the positive
+floor-cost and ceiling-cost formulations, residue transport, and the general
+gcd-weighted grid count.
+
+The two new modules and 20 required endpoints passed fresh compilation of
+their exact 17-module closure, the complete owned/private declaration audit,
+five quantified statement assertions, and exact stock kernel replay in
+[run 44562942517](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44562942517).
+The [authenticated evidence](verification/loneliness-gcd-shift-44562942517/README.md)
+preserves the original receipt and exact scope. The eight-speed hypothesis
+is retained; no unconditional nine-speed classification or finite census
+is accepted by this checkpoint.
+
+
+### Six-speed first-cover support reduction checkpoint
+
+The support-to-prime-cover bridge is accepted from [run 44563135178, job 135701825289](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44563135178/job/135701825289), exact source commit `3273ac1a24ea061b0cbd73244e2ac57c08d491ec`. Its [preserved original evidence](verification/six-fields-support-exact-44563135178/preservation.json) covers 22 fresh strict source checks, all 837 owned and raw declarations, 545 theorems, 72 private declarations, 22 required endpoints, and 22 exact stock-kernel targets. Five newly registered modules include the existing public multiplicity and arbitrary-arity support-list helpers, plus the three six-field support/transport modules.
+
+The resulting theorem applies to all nonzero raw residue sextuples. It proves the required transport under signs, permutations, congruences, and modular units, retains multiplicity, and reduces the cover to explicit checked support trees and retained-row relation checks. Inverse validity, all root checks, and all retained-row checks remain premises. This checkpoint proves the reduction; the numerical prime covers and full six-speed classification remain incomplete.
+
+### Accepted six-plane family membership bridge
+
+The exact six-plane membership bridge is registered from [run 44563135178, job 135701825634](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44563135178/job/135701825634), candidate `3273ac1a24ea061b0cbd73244e2ac57c08d491ec`. The fresh 66-module gate checked 1,795 owned and raw declarations, 1,449 theorems, 49 private declarations, all five endpoints, and 66 separate stock-kernel targets. Authenticated original evidence is preserved unchanged in [verification/six-plane-families-exact-44563135178](verification/six-plane-families-exact-44563135178/).
+
+`Loneliness.SixPlane.literal_parameters_of_mem_critical_plane` turns actual positive integer membership in a classified plane into the two literal product families with both positive integer parameters or the full signed real third family. `primitive_family_of_mem_critical_plane` derives the two `6s` product families under primitivity and actual value below `1/6`. `not_mem_critical_plane_of_not_literal_families` gives the exact off-critical condition required by the norm proof. The acceptance adds only `LonelinessSixPlaneFamilies` and its five named endpoints. The classification of low-value planes, complete finite pair coverage, five-speed exhaustion, and third-family evaluation retain their own proof obligations. No result-level completion status changes.
+
+## Complete tight-five threshold classification (19 November 2026)
+
+Lean now proves that every positive primitive five-speed tuple with loneliness
+at most `1/6` is a permutation of `[1,2,3,4,5]` or `[1,3,4,5,9]`, and its value
+is exactly `1/6`. The complete gcd-normalized statement covers all positive
+lists of length five. The same proof supplies an unconditional five-speed
+lower bound, independently of the previously registered Renault proof.
+
+The complete 250-source closure passed fresh strict compilation, all 7,586
+named theorem obligations, four literal statements, the raw/private axiom
+audit, and exact stock kernel replay. All 7,070 finite frames reproduce from
+the published generators. No lower-runner or prime-classification premise
+remains. See the [original passing run and authenticated evidence](verification/loneliness-five-runner-exact-44549751944/README.md).
+
+This completes the tight-five classification at `1/6`. The separate
+five-speed spectrum theorem classifies all values below `1/5` and retains
+its remaining finite-exhaustion obligations. Its result-level status is unchanged.

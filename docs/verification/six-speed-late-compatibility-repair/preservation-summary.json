@@ -1,0 +1,66 @@
+{
+  "status": "offline_source_preservation_only",
+  "lean_acceptance": "pending",
+  "before_packet_sha256": "7bb87d9d493d8042520f896adc9e54ce0b0c9b4e0b79b4e72d001ddb5abe0412",
+  "candidate_packet_sha256": "c2efaff015826ad4f795803daab001d4baaaa03bd266e1e84547a3a79000dcbc",
+  "maximum_compatibility_entries_per_subcheck": 4,
+  "unchanged_fuel_transform": true,
+  "primes": [
+    {
+      "prime": 359,
+      "roots": 178,
+      "frames": 31750,
+      "modules": 1343,
+      "changed_modules": 77,
+      "compatibility_subchecks": 1760,
+      "original_hosted_model_sources_match": true,
+      "all_original_public_propositions_unchanged": true,
+      "all_original_definitions_and_data_bytes_unchanged": true,
+      "all_original_source_bytes_recovered": true,
+      "fuel_transport_unchanged": true,
+      "second_full_generation_identical": true
+    },
+    {
+      "prime": 373,
+      "roots": 185,
+      "frames": 31043,
+      "modules": 1304,
+      "changed_modules": 79,
+      "compatibility_subchecks": 1851,
+      "original_hosted_model_sources_match": true,
+      "all_original_public_propositions_unchanged": true,
+      "all_original_definitions_and_data_bytes_unchanged": true,
+      "all_original_source_bytes_recovered": true,
+      "fuel_transport_unchanged": true,
+      "second_full_generation_identical": true
+    },
+    {
+      "prime": 379,
+      "roots": 188,
+      "frames": 35430,
+      "modules": 1485,
+      "changed_modules": 83,
+      "compatibility_subchecks": 2004,
+      "original_hosted_model_sources_match": true,
+      "all_original_public_propositions_unchanged": true,
+      "all_original_definitions_and_data_bytes_unchanged": true,
+      "all_original_source_bytes_recovered": true,
+      "fuel_transport_unchanged": true,
+      "second_full_generation_identical": true
+    },
+    {
+      "prime": 383,
+      "roots": 190,
+      "frames": 30048,
+      "modules": 1297,
+      "changed_modules": 87,
+      "compatibility_subchecks": 1986,
+      "original_hosted_model_sources_match": true,
+      "all_original_public_propositions_unchanged": true,
+      "all_original_definitions_and_data_bytes_unchanged": true,
+      "all_original_source_bytes_recovered": true,
+      "fuel_transport_unchanged": true,
+      "second_full_generation_identical": true
+    }
+  ]
+}

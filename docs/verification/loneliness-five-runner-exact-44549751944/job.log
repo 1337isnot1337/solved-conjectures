@@ -1,0 +1,988 @@
+﻿2026-11-19T14:59:40.1679246Z Current runner version: '2.338.2'
+2026-11-19T14:59:40.1714305Z ##[group]Runner Image Provisioner
+2026-11-19T14:59:40.1715161Z Hosted Compute Agent
+2026-11-19T14:59:40.1715945Z Version: 20261103.629
+2026-11-19T14:59:40.1716670Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T14:59:40.1717492Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T14:59:40.1718209Z Worker ID: {13b07a3e-d71f-4daa-aa77-67f35ab7d989}
+2026-11-19T14:59:40.1718954Z Region: northcentralus
+2026-11-19T14:59:40.1719671Z Cloud: Azure
+2026-11-19T14:59:40.1720241Z ##[endgroup]
+2026-11-19T14:59:40.1721819Z ##[group]Operating System
+2026-11-19T14:59:40.1722483Z Ubuntu
+2026-11-19T14:59:40.1723035Z 26.04.1
+2026-11-19T14:59:40.1724344Z LTS
+2026-11-19T14:59:40.1724914Z ##[endgroup]
+2026-11-19T14:59:40.1725583Z ##[group]Runner Image
+2026-11-19T14:59:40.1726236Z Image: ubuntu-26.04
+2026-11-19T14:59:40.1726835Z Version: 20261111.196.1
+2026-11-19T14:59:40.1728307Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-19T14:59:40.1729895Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+2026-11-19T14:59:40.1730898Z ##[endgroup]
+2026-11-19T14:59:40.1732015Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T14:59:40.1734592Z Contents: read
+2026-11-19T14:59:40.1735230Z Metadata: read
+2026-11-19T14:59:40.1735912Z ##[endgroup]
+2026-11-19T14:59:40.1738077Z Secret source: Actions
+2026-11-19T14:59:40.1739203Z Cache mode: write
+2026-11-19T14:59:40.1740152Z Prepare workflow directory
+2026-11-19T14:59:40.2245987Z Prepare all required actions
+2026-11-19T14:59:40.2315740Z Getting action download info
+2026-11-19T14:59:40.4892777Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-19T14:59:40.6204653Z Download action repository 'leanprover/lean-action@v1' (SHA:ba3fdfe5c4476c925da13bf11a005ddb47e47aee)
+2026-11-19T14:59:40.8276831Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-19T14:59:41.0276365Z Getting action download info
+2026-11-19T14:59:41.1175561Z Download action repository 'actions/cache@caa296126883cff596d87d8935842f9db880ef25' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-11-19T14:59:41.2368859Z Complete job name: Fresh full five-runner source, axiom and kernel gate
+2026-11-19T14:59:41.3204384Z ##[group]Run actions/checkout@v4
+2026-11-19T14:59:41.3205328Z with:
+2026-11-19T14:59:41.3205831Z   repository: 1337isnot1337/solved-conjectures
+2026-11-19T14:59:41.3209801Z   token: ***
+2026-11-19T14:59:41.3210249Z   ssh-strict: true
+2026-11-19T14:59:41.3210702Z   ssh-user: git
+2026-11-19T14:59:41.3211156Z   persist-credentials: true
+2026-11-19T14:59:41.3211646Z   clean: true
+2026-11-19T14:59:41.3212102Z   sparse-checkout-cone-mode: true
+2026-11-19T14:59:41.3212618Z   fetch-depth: 1
+2026-11-19T14:59:41.3213055Z   fetch-tags: false
+2026-11-19T14:59:41.3213504Z   show-progress: true
+2026-11-19T14:59:41.3214185Z   lfs: false
+2026-11-19T14:59:41.3214820Z   submodules: false
+2026-11-19T14:59:41.3215376Z   set-safe-directory: true
+2026-11-19T14:59:41.3215905Z   allow-unsafe-pr-checkout: false
+2026-11-19T14:59:41.3216700Z env:
+2026-11-19T14:59:41.3217110Z   LEAN_NUM_THREADS: 1
+2026-11-19T14:59:41.3217571Z   UV_USE_IO_URING: 0
+2026-11-19T14:59:41.3218014Z ##[endgroup]
+2026-11-19T14:59:41.5866228Z Syncing repository: 1337isnot1337/solved-conjectures
+2026-11-19T14:59:41.5868469Z ##[group]Getting Git version info
+2026-11-19T14:59:41.5869601Z Working directory is '/home/runner/work/solved-conjectures/solved-conjectures'
+2026-11-19T14:59:41.5871404Z [command]/usr/bin/git version
+2026-11-19T14:59:41.5872390Z git version 2.56.1
+2026-11-19T14:59:41.5875703Z ##[endgroup]
+2026-11-19T14:59:41.5882167Z Temporarily overriding HOME='/home/runner/work/_temp/c9254f64-27b7-4ad1-8bec-dd1ed87e9d61' before making global git config changes
+2026-11-19T14:59:41.5885019Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T14:59:41.5887859Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T14:59:41.5894435Z Deleting the contents of '/home/runner/work/solved-conjectures/solved-conjectures'
+2026-11-19T14:59:41.5896300Z ##[group]Initializing the repository
+2026-11-19T14:59:41.5897729Z [command]/usr/bin/git init /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T14:59:41.6000115Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T14:59:41.6001585Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T14:59:41.6002664Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T14:59:41.6003768Z hint: call:
+2026-11-19T14:59:41.6004472Z hint:
+2026-11-19T14:59:41.6005076Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T14:59:41.6006033Z hint:
+2026-11-19T14:59:41.6007081Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T14:59:41.6008216Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T14:59:41.6009028Z hint:
+2026-11-19T14:59:41.6009701Z hint: 	git branch -m <name>
+2026-11-19T14:59:41.6010574Z hint:
+2026-11-19T14:59:41.6011720Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T14:59:41.6014267Z Initialized empty Git repository in /home/runner/work/solved-conjectures/solved-conjectures/.git/
+2026-11-19T14:59:41.6026926Z [command]/usr/bin/git remote add origin https://github.com/1337isnot1337/solved-conjectures
+2026-11-19T14:59:41.6080530Z ##[endgroup]
+2026-11-19T14:59:41.6082018Z ##[group]Disabling automatic garbage collection
+2026-11-19T14:59:41.6084292Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-19T14:59:41.6120751Z ##[endgroup]
+2026-11-19T14:59:41.6122083Z ##[group]Setting up auth
+2026-11-19T14:59:41.6128097Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T14:59:41.6167200Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T14:59:41.6622638Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T14:59:41.6667896Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T14:59:41.6952047Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T14:59:41.6990522Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T14:59:41.7280820Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T14:59:41.7321052Z ##[endgroup]
+2026-11-19T14:59:41.7322087Z ##[group]Fetching the repository
+2026-11-19T14:59:41.7329992Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +1ffeb0932ac9a5674f2d416757d786a85e43ffde:refs/remotes/origin/main
+2026-11-19T14:59:45.2918550Z From https://github.com/1337isnot1337/solved-conjectures
+2026-11-19T14:59:45.2920010Z  * [new ref]         1ffeb0932ac9a5674f2d416757d786a85e43ffde -> origin/main
+2026-11-19T14:59:45.2928749Z ##[endgroup]
+2026-11-19T14:59:45.2929725Z ##[group]Determining the checkout info
+2026-11-19T14:59:45.2931764Z ##[endgroup]
+2026-11-19T14:59:45.2938177Z [command]/usr/bin/git sparse-checkout disable
+2026-11-19T14:59:45.2996015Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-19T14:59:45.3027488Z ##[group]Checking out the ref
+2026-11-19T14:59:45.3031982Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-19T14:59:46.3158433Z Updating files:  96% (7146/7396)
+2026-11-19T14:59:46.3222851Z Updating files:  97% (7175/7396)
+2026-11-19T14:59:46.3280682Z Updating files:  98% (7249/7396)
+2026-11-19T14:59:46.3342086Z Updating files:  99% (7323/7396)
+2026-11-19T14:59:46.3342730Z Updating files: 100% (7396/7396)
+2026-11-19T14:59:46.3343187Z Updating files: 100% (7396/7396), done.
+2026-11-19T14:59:46.3426371Z Switched to a new branch 'main'
+2026-11-19T14:59:46.3431149Z branch 'main' set up to track 'origin/main'.
+2026-11-19T14:59:46.3511944Z ##[endgroup]
+2026-11-19T14:59:46.3563091Z [command]/usr/bin/git log -1 --format=%H
+2026-11-19T14:59:46.3591684Z 1ffeb0932ac9a5674f2d416757d786a85e43ffde
+2026-11-19T14:59:46.4100741Z ##[warning]Unexpected input(s) 'check-lean-environment', valid inputs are ['auto-config', 'build', 'test', 'lint', 'mk_all-check', 'mk_all-args', 'build-args', 'test-args', 'lint-args', 'use-mathlib-cache', 'check-reservoir-eligibility', 'leanchecker', 'leanchecker-args', 'lean4checker', 'nanoda', 'nanoda-allow-sorry', 'axiom-audit', 'axiom-audit-allow', 'axiom-audit-root', 'use-github-cache', 'lake-package-directory', 'reinstall-transient-toolchain']
+2026-11-19T14:59:46.4116745Z ##[group]Run leanprover/lean-action@v1
+2026-11-19T14:59:46.4117060Z with:
+2026-11-19T14:59:46.4117304Z   lake-package-directory: lean
+2026-11-19T14:59:46.4117573Z   auto-config: false
+2026-11-19T14:59:46.4117832Z   check-lean-environment: false
+2026-11-19T14:59:46.4118110Z   build: false
+2026-11-19T14:59:46.4118322Z   test: false
+2026-11-19T14:59:46.4118533Z   lint: false
+2026-11-19T14:59:46.4118756Z   use-mathlib-cache: true
+2026-11-19T14:59:46.4119052Z   mk_all-check: false
+2026-11-19T14:59:46.4119367Z   check-reservoir-eligibility: false
+2026-11-19T14:59:46.4119669Z   leanchecker: false
+2026-11-19T14:59:46.4119900Z   lean4checker: false
+2026-11-19T14:59:46.4120157Z   nanoda: false
+2026-11-19T14:59:46.4120402Z   nanoda-allow-sorry: true
+2026-11-19T14:59:46.4120661Z   axiom-audit: false
+2026-11-19T14:59:46.4120990Z   axiom-audit-allow: propext,Classical.choice,Quot.sound
+2026-11-19T14:59:46.4121392Z   use-github-cache: true
+2026-11-19T14:59:46.4121678Z   reinstall-transient-toolchain: false
+2026-11-19T14:59:46.4121959Z env:
+2026-11-19T14:59:46.4122161Z   LEAN_NUM_THREADS: 1
+2026-11-19T14:59:46.4122390Z   UV_USE_IO_URING: 0
+2026-11-19T14:59:46.4122613Z ##[endgroup]
+2026-11-19T14:59:46.4186904Z ##[start-action display=install elan;id=__leanprover_lean-action.__run]
+2026-11-19T14:59:46.4230147Z ##[group]Run : Install Elan
+2026-11-19T14:59:46.4230551Z [36;1m: Install Elan[0m
+2026-11-19T14:59:46.4230905Z [36;1m${GITHUB_ACTION_PATH}/scripts/install_elan.sh[0m
+2026-11-19T14:59:46.4292045Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T14:59:46.4292430Z env:
+2026-11-19T14:59:46.4292648Z   LEAN_NUM_THREADS: 1
+2026-11-19T14:59:46.4292890Z   UV_USE_IO_URING: 0
+2026-11-19T14:59:46.4293114Z ##[endgroup]
+2026-11-19T14:59:46.4441416Z ##[group]Elan Installation Output
+2026-11-19T14:59:46.4882324Z info: downloading installer
+2026-11-19T14:59:47.0870506Z info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+2026-11-19T14:59:50.0991149Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+2026-11-19T14:59:57.7520125Z Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+2026-11-19T14:59:57.7994213Z Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+2026-11-19T14:59:57.7995699Z ##[endgroup]
+2026-11-19T14:59:57.7996031Z 
+2026-11-19T14:59:57.8025439Z ##[end-action id=__leanprover_lean-action.__run;outcome=success;conclusion=success;duration_ms=11383]
+2026-11-19T14:59:57.8030762Z ##[start-action display=Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25;id=__leanprover_lean-action.cache-restore]
+2026-11-19T14:59:58.0598390Z ##[group]Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25
+2026-11-19T14:59:58.0598825Z with:
+2026-11-19T14:59:58.0599048Z   path: lean/.lake
+2026-11-19T14:59:58.0600008Z   key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-1ffeb0932ac9a5674f2d416757d786a85e43ffde
+2026-11-19T14:59:58.0601825Z   restore-keys: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07
+2026-11-19T14:59:58.0602713Z   enableCrossOsArchive: false
+2026-11-19T14:59:58.0603042Z   fail-on-cache-miss: false
+2026-11-19T14:59:58.0603308Z   lookup-only: false
+2026-11-19T14:59:58.0603529Z env:
+2026-11-19T14:59:58.0603727Z   LEAN_NUM_THREADS: 1
+2026-11-19T14:59:58.0604113Z   UV_USE_IO_URING: 0
+2026-11-19T14:59:58.0604586Z ##[endgroup]
+2026-11-19T14:59:58.3411709Z Cache hit for restore-key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-541ee18c9f3828ccadd71cb998e476b3b9f54c92
+2026-11-19T14:59:59.4742663Z Received 159383552 of 2103365034 (7.6%), 151.2 MBs/sec
+2026-11-19T15:00:00.4765493Z Received 394264576 of 2103365034 (18.7%), 187.5 MBs/sec
+2026-11-19T15:00:01.4818701Z Received 616562688 of 2103365034 (29.3%), 195.2 MBs/sec
+2026-11-19T15:00:02.4839130Z Received 822083584 of 2103365034 (39.1%), 195.3 MBs/sec
+2026-11-19T15:00:03.4847150Z Received 1069547520 of 2103365034 (50.8%), 203.4 MBs/sec
+2026-11-19T15:00:04.4885746Z Received 1283457024 of 2103365034 (61.0%), 203.5 MBs/sec
+2026-11-19T15:00:05.4854322Z Received 1476395008 of 2103365034 (70.2%), 200.7 MBs/sec
+2026-11-19T15:00:06.4901579Z Received 1702887424 of 2103365034 (81.0%), 202.5 MBs/sec
+2026-11-19T15:00:07.4899796Z Received 1916796928 of 2103365034 (91.1%), 202.7 MBs/sec
+2026-11-19T15:00:08.4101917Z Received 2103365034 of 2103365034 (100.0%), 201.8 MBs/sec
+2026-11-19T15:00:08.4103742Z Cache Size: ~2006 MB (2103365034 B)
+2026-11-19T15:00:08.4235921Z [command]/usr/bin/tar -xf /home/runner/work/_temp/ba6d3bb2-e6f6-4b2a-9685-46fadf19c349/cache.tzst -P -C /home/runner/work/solved-conjectures/solved-conjectures --use-compress-program unzstd
+2026-11-19T15:00:25.9104091Z Cache restored successfully
+2026-11-19T15:00:26.0154030Z Cache restored from key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-541ee18c9f3828ccadd71cb998e476b3b9f54c92
+2026-11-19T15:00:26.0336899Z ##[end-action id=__leanprover_lean-action.cache-restore;outcome=success;conclusion=success;duration_ms=28230]
+2026-11-19T15:00:26.0344785Z ##[start-action display=configure `lean-action`;id=__leanprover_lean-action.config]
+2026-11-19T15:00:26.0469073Z ##[group]Run : Configure Lean Action
+2026-11-19T15:00:26.0469697Z [36;1m: Configure Lean Action[0m
+2026-11-19T15:00:26.0470143Z [36;1m${GITHUB_ACTION_PATH}/scripts/config.sh[0m
+2026-11-19T15:00:26.0531158Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T15:00:26.0531751Z env:
+2026-11-19T15:00:26.0531981Z   LEAN_NUM_THREADS: 1
+2026-11-19T15:00:26.0532280Z   UV_USE_IO_URING: 0
+2026-11-19T15:00:26.0532998Z   AUTO_CONFIG: false
+2026-11-19T15:00:26.0562680Z   BUILD: false
+2026-11-19T15:00:26.0562981Z   TEST: false
+2026-11-19T15:00:26.0563284Z   LINT: false
+2026-11-19T15:00:26.0563551Z ##[endgroup]
+2026-11-19T15:00:26.1013689Z ##[group]Configure lean-action
+2026-11-19T15:00:26.1086907Z ##[end-action id=__leanprover_lean-action.config;outcome=success;conclusion=success;duration_ms=74]
+2026-11-19T15:00:26.1089550Z ##[start-action display=reinstall transient toolchain;id=__leanprover_lean-action.__run_2]
+2026-11-19T15:00:26.1097216Z ##[end-action id=__leanprover_lean-action.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T15:00:26.1100065Z ##[start-action display=ensure all files are imported;id=__leanprover_lean-action.mk_all]
+2026-11-19T15:00:26.1104113Z ##[end-action id=__leanprover_lean-action.mk_all;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T15:00:26.1106073Z ##[start-action display=detect mathlib;id=__leanprover_lean-action.detect-mathlib]
+2026-11-19T15:00:26.1109721Z ##[end-action id=__leanprover_lean-action.detect-mathlib;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T15:00:26.1111746Z ##[start-action display=get mathlib cache;id=__leanprover_lean-action.__run_3]
+2026-11-19T15:00:26.1424973Z ##[group]Run : Get Mathlib Cache
+2026-11-19T15:00:26.1425462Z [36;1m: Get Mathlib Cache[0m
+2026-11-19T15:00:26.1425874Z [36;1mecho "::group::Mathlib Cache"[0m
+2026-11-19T15:00:26.1426549Z [36;1m# Use cache.mathlib.org unless the workflow sets `MATHLIB_CACHE_GET_URL`.[0m
+2026-11-19T15:00:26.1427775Z [36;1m# The cache client reads an empty value as a URL, so unset it to get the client's default.[0m
+2026-11-19T15:00:26.1428735Z [36;1mif [ -z "${MATHLIB_CACHE_GET_URL+x}" ]; then[0m
+2026-11-19T15:00:26.1429661Z [36;1m  export MATHLIB_CACHE_GET_URL="https://cache.mathlib.org/mathlib4"[0m
+2026-11-19T15:00:26.1430356Z [36;1melif [ -z "$MATHLIB_CACHE_GET_URL" ]; then[0m
+2026-11-19T15:00:26.1431026Z [36;1m  unset MATHLIB_CACHE_GET_URL[0m
+2026-11-19T15:00:26.1431478Z [36;1mfi[0m
+2026-11-19T15:00:26.1431813Z [36;1mlake exe cache get[0m
+2026-11-19T15:00:26.1432199Z [36;1mecho "::endgroup::"[0m
+2026-11-19T15:00:26.1432543Z [36;1mecho[0m
+2026-11-19T15:00:26.1506979Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T15:00:26.1507340Z env:
+2026-11-19T15:00:26.1507560Z   LEAN_NUM_THREADS: 1
+2026-11-19T15:00:26.1507791Z   UV_USE_IO_URING: 0
+2026-11-19T15:00:26.1508013Z ##[endgroup]
+2026-11-19T15:00:26.1918085Z ##[group]Mathlib Cache
+2026-11-19T15:00:31.2561072Z Current branch: HEAD
+2026-11-19T15:00:31.2562817Z Using cache from origin: (some leanprover-community/mathlib4)
+2026-11-19T15:00:31.2564502Z Attempting to download 9031 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4
+2026-11-19T15:00:31.4148817Z 
+2026-11-19T15:00:31.5184237Z Downloaded: 1 file(s) [attempted 1/9031 = 0%, 117 KB/s]
+2026-11-19T15:00:31.6197562Z Downloaded: 51 file(s) [attempted 51/9031 = 0%, 200 KB/s]
+2026-11-19T15:00:31.7209212Z Downloaded: 162 file(s) [attempted 162/9031 = 1%, 322 KB/s]
+2026-11-19T15:00:31.8214665Z Downloaded: 295 file(s) [attempted 295/9031 = 3%, 1688 KB/s]
+2026-11-19T15:00:31.9430450Z Downloaded: 398 file(s) [attempted 398/9031 = 4%, 348 KB/s]
+2026-11-19T15:00:32.0578135Z Downloaded: 486 file(s) [attempted 486/9031 = 5%, 1355 KB/s]
+2026-11-19T15:00:32.1631262Z Downloaded: 554 file(s) [attempted 554/9031 = 6%, 1054 KB/s]
+2026-11-19T15:00:32.2668408Z Downloaded: 632 file(s) [attempted 632/9031 = 6%, 724 KB/s]
+2026-11-19T15:00:32.3721664Z Downloaded: 713 file(s) [attempted 713/9031 = 7%, 680 KB/s]
+2026-11-19T15:00:32.4739055Z Downloaded: 794 file(s) [attempted 794/9031 = 8%, 814 KB/s]
+2026-11-19T15:00:32.5721713Z Downloaded: 882 file(s) [attempted 882/9031 = 9%, 1606 KB/s]
+2026-11-19T15:00:32.6886012Z Downloaded: 939 file(s) [attempted 939/9031 = 10%, 112 KB/s]
+2026-11-19T15:00:32.7890939Z Downloaded: 975 file(s) [attempted 975/9031 = 10%, 264 KB/s]
+2026-11-19T15:00:32.8905349Z Downloaded: 1055 file(s) [attempted 1055/9031 = 11%, 667 KB/s]
+2026-11-19T15:00:32.9903140Z Downloaded: 1126 file(s) [attempted 1126/9031 = 12%, 1288 KB/s]
+2026-11-19T15:00:33.0922616Z Downloaded: 1233 file(s) [attempted 1233/9031 = 13%, 6007 KB/s]
+2026-11-19T15:00:33.1947094Z Downloaded: 1345 file(s) [attempted 1345/9031 = 14%, 941 KB/s]
+2026-11-19T15:00:33.2962803Z Downloaded: 1444 file(s) [attempted 1444/9031 = 15%, 954 KB/s]
+2026-11-19T15:00:33.3966406Z Downloaded: 1555 file(s) [attempted 1555/9031 = 17%, 597 KB/s]
+2026-11-19T15:00:33.4986981Z Downloaded: 1643 file(s) [attempted 1643/9031 = 18%, 194 KB/s]
+2026-11-19T15:00:33.6015741Z Downloaded: 1731 file(s) [attempted 1731/9031 = 19%, 904 KB/s]
+2026-11-19T15:00:33.7015108Z Downloaded: 1828 file(s) [attempted 1828/9031 = 20%, 678 KB/s]
+2026-11-19T15:00:33.8014818Z Downloaded: 1921 file(s) [attempted 1921/9031 = 21%, 2745 KB/s]
+2026-11-19T15:00:33.9052605Z Downloaded: 2008 file(s) [attempted 2008/9031 = 22%, 8900 KB/s]
+2026-11-19T15:00:34.0044200Z Downloaded: 2129 file(s) [attempted 2129/9031 = 23%, 123 KB/s]
+2026-11-19T15:00:34.1058301Z Downloaded: 2214 file(s) [attempted 2214/9031 = 24%, 629 KB/s]
+2026-11-19T15:00:34.2137623Z Downloaded: 2314 file(s) [attempted 2314/9031 = 25%, 384 KB/s]
+2026-11-19T15:00:34.3178131Z Downloaded: 2436 file(s) [attempted 2436/9031 = 26%, 1079 KB/s]
+2026-11-19T15:00:34.4191847Z Downloaded: 2547 file(s) [attempted 2547/9031 = 28%, 2325 KB/s]
+2026-11-19T15:00:34.5191603Z Downloaded: 2663 file(s) [attempted 2663/9031 = 29%, 754 KB/s]
+2026-11-19T15:00:34.6206351Z Downloaded: 2789 file(s) [attempted 2789/9031 = 30%, 586 KB/s]
+2026-11-19T15:00:34.7339065Z Downloaded: 2913 file(s) [attempted 2913/9031 = 32%, 90 KB/s]
+2026-11-19T15:00:34.8355741Z Downloaded: 3033 file(s) [attempted 3033/9031 = 33%, 338 KB/s]
+2026-11-19T15:00:34.9352601Z Downloaded: 3135 file(s) [attempted 3135/9031 = 34%, 866 KB/s]
+2026-11-19T15:00:35.0351298Z Downloaded: 3230 file(s) [attempted 3230/9031 = 35%, 442 KB/s]
+2026-11-19T15:00:35.1448066Z Downloaded: 3309 file(s) [attempted 3309/9031 = 36%, 1678 KB/s]
+2026-11-19T15:00:35.2487835Z Downloaded: 3375 file(s) [attempted 3375/9031 = 37%, 229 KB/s]
+2026-11-19T15:00:35.3495455Z Downloaded: 3415 file(s) [attempted 3415/9031 = 37%, 141 KB/s]
+2026-11-19T15:00:35.4494781Z Downloaded: 3457 file(s) [attempted 3457/9031 = 38%, 243 KB/s]
+2026-11-19T15:00:35.5487426Z Downloaded: 3557 file(s) [attempted 3557/9031 = 39%, 390 KB/s]
+2026-11-19T15:00:35.6558970Z Downloaded: 3655 file(s) [attempted 3655/9031 = 40%, 283 KB/s]
+2026-11-19T15:00:35.7561867Z Downloaded: 3766 file(s) [attempted 3766/9031 = 41%, 121 KB/s]
+2026-11-19T15:00:35.8556767Z Downloaded: 3857 file(s) [attempted 3857/9031 = 42%, 107 KB/s]
+2026-11-19T15:00:35.9572925Z Downloaded: 3962 file(s) [attempted 3962/9031 = 43%, 121 KB/s]
+2026-11-19T15:00:36.0565217Z Downloaded: 4092 file(s) [attempted 4092/9031 = 45%, 569 KB/s]
+2026-11-19T15:00:36.1575479Z Downloaded: 4235 file(s) [attempted 4235/9031 = 46%, 1249 KB/s]
+2026-11-19T15:00:36.2590312Z Downloaded: 4360 file(s) [attempted 4360/9031 = 48%, 444 KB/s]
+2026-11-19T15:00:36.3597483Z Downloaded: 4499 file(s) [attempted 4499/9031 = 49%, 1322 KB/s]
+2026-11-19T15:00:36.4594578Z Downloaded: 4626 file(s) [attempted 4626/9031 = 51%, 282 KB/s]
+2026-11-19T15:00:36.5586675Z Downloaded: 4721 file(s) [attempted 4721/9031 = 52%, 2288 KB/s]
+2026-11-19T15:00:36.6590186Z Downloaded: 4847 file(s) [attempted 4847/9031 = 53%, 152 KB/s]
+2026-11-19T15:00:36.7587086Z Downloaded: 4978 file(s) [attempted 4978/9031 = 55%, 183 KB/s]
+2026-11-19T15:00:36.8589378Z Downloaded: 5113 file(s) [attempted 5113/9031 = 56%, 254 KB/s]
+2026-11-19T15:00:36.9589067Z Downloaded: 5244 file(s) [attempted 5244/9031 = 58%, 2204 KB/s]
+2026-11-19T15:00:37.0649679Z Downloaded: 5391 file(s) [attempted 5391/9031 = 59%, 93 KB/s]
+2026-11-19T15:00:37.1653647Z Downloaded: 5512 file(s) [attempted 5512/9031 = 61%, 1073 KB/s]
+2026-11-19T15:00:37.2653064Z Downloaded: 5611 file(s) [attempted 5611/9031 = 62%, 4053 KB/s]
+2026-11-19T15:00:37.3691981Z Downloaded: 5719 file(s) [attempted 5719/9031 = 63%, 291 KB/s]
+2026-11-19T15:00:37.4757968Z Downloaded: 5815 file(s) [attempted 5815/9031 = 64%, 686 KB/s]
+2026-11-19T15:00:37.5780367Z Downloaded: 5877 file(s) [attempted 5877/9031 = 65%, 336 KB/s]
+2026-11-19T15:00:37.6777569Z Downloaded: 5963 file(s) [attempted 5963/9031 = 66%, 388 KB/s]
+2026-11-19T15:00:37.7781876Z Downloaded: 6061 file(s) [attempted 6061/9031 = 67%, 562 KB/s]
+2026-11-19T15:00:37.8810086Z Downloaded: 6181 file(s) [attempted 6181/9031 = 68%, 1735 KB/s]
+2026-11-19T15:00:37.9870248Z Downloaded: 6277 file(s) [attempted 6277/9031 = 69%, 489 KB/s]
+2026-11-19T15:00:38.0902253Z Downloaded: 6379 file(s) [attempted 6379/9031 = 70%, 269 KB/s]
+2026-11-19T15:00:38.1993194Z Downloaded: 6453 file(s) [attempted 6453/9031 = 71%, 917 KB/s]
+2026-11-19T15:00:38.2991539Z Downloaded: 6532 file(s) [attempted 6532/9031 = 72%, 918 KB/s]
+2026-11-19T15:00:38.4023155Z Downloaded: 6630 file(s) [attempted 6630/9031 = 73%, 355 KB/s]
+2026-11-19T15:00:38.5028683Z Downloaded: 6728 file(s) [attempted 6728/9031 = 74%, 7513 KB/s]
+2026-11-19T15:00:38.6035623Z Downloaded: 6832 file(s) [attempted 6832/9031 = 75%, 2366 KB/s]
+2026-11-19T15:00:38.7027184Z Downloaded: 6943 file(s) [attempted 6943/9031 = 76%, 282 KB/s]
+2026-11-19T15:00:38.8186436Z Downloaded: 7045 file(s) [attempted 7045/9031 = 78%, 431 KB/s]
+2026-11-19T15:00:38.9289205Z Downloaded: 7098 file(s) [attempted 7098/9031 = 78%, 47 KB/s]
+2026-11-19T15:00:39.0330561Z Downloaded: 7184 file(s) [attempted 7184/9031 = 79%, 112 KB/s]
+2026-11-19T15:00:39.1396597Z Downloaded: 7276 file(s) [attempted 7276/9031 = 80%, 3302 KB/s]
+2026-11-19T15:00:39.2405968Z Downloaded: 7381 file(s) [attempted 7381/9031 = 81%, 1799 KB/s]
+2026-11-19T15:00:39.3465634Z Downloaded: 7445 file(s) [attempted 7445/9031 = 82%, 299 KB/s]
+2026-11-19T15:00:39.4508794Z Downloaded: 7515 file(s) [attempted 7515/9031 = 83%, 1501 KB/s]
+2026-11-19T15:00:39.5526760Z Downloaded: 7593 file(s) [attempted 7593/9031 = 84%, 454 KB/s]
+2026-11-19T15:00:39.6527434Z Downloaded: 7677 file(s) [attempted 7677/9031 = 85%, 195 KB/s]
+2026-11-19T15:00:39.7525997Z Downloaded: 7764 file(s) [attempted 7764/9031 = 85%, 389 KB/s]
+2026-11-19T15:00:39.8598089Z Downloaded: 7842 file(s) [attempted 7842/9031 = 86%, 1345 KB/s]
+2026-11-19T15:00:39.9612127Z Downloaded: 7915 file(s) [attempted 7915/9031 = 87%, 1010 KB/s]
+2026-11-19T15:00:40.0610185Z Downloaded: 8012 file(s) [attempted 8012/9031 = 88%, 336 KB/s]
+2026-11-19T15:00:40.1611732Z Downloaded: 8090 file(s) [attempted 8090/9031 = 89%, 496 KB/s]
+2026-11-19T15:00:40.2607464Z Downloaded: 8158 file(s) [attempted 8158/9031 = 90%, 246 KB/s]
+2026-11-19T15:00:40.3710440Z Downloaded: 8190 file(s) [attempted 8190/9031 = 90%, 467 KB/s]
+2026-11-19T15:00:40.4848410Z Downloaded: 8218 file(s) [attempted 8218/9031 = 90%, 1061 KB/s]
+2026-11-19T15:00:40.5858454Z Downloaded: 8255 file(s) [attempted 8255/9031 = 91%, 24 KB/s]
+2026-11-19T15:00:40.6916495Z Downloaded: 8331 file(s) [attempted 8331/9031 = 92%, 2733 KB/s]
+2026-11-19T15:00:40.7924294Z Downloaded: 8407 file(s) [attempted 8407/9031 = 93%, 153 KB/s]
+2026-11-19T15:00:40.8927067Z Downloaded: 8485 file(s) [attempted 8485/9031 = 93%, 254 KB/s]
+2026-11-19T15:00:40.9960041Z Downloaded: 8561 file(s) [attempted 8561/9031 = 94%, 457 KB/s]
+2026-11-19T15:00:41.1075179Z Downloaded: 8625 file(s) [attempted 8625/9031 = 95%, 412 KB/s]
+2026-11-19T15:00:41.2074539Z Downloaded: 8703 file(s) [attempted 8703/9031 = 96%, 492 KB/s]
+2026-11-19T15:00:41.3085507Z Downloaded: 8781 file(s) [attempted 8781/9031 = 97%, 2529 KB/s]
+2026-11-19T15:00:41.4107101Z Downloaded: 8865 file(s) [attempted 8865/9031 = 98%, 247 KB/s]
+2026-11-19T15:00:41.5106653Z Downloaded: 8932 file(s) [attempted 8932/9031 = 98%, 780 KB/s]
+2026-11-19T15:00:41.5338359Z Downloaded: 9014 file(s) [attempted 9014/9031 = 99%, 2076 KB/s]
+2026-11-19T15:00:41.5338866Z Downloaded: 9031 file(s) [attempted 9031/9031 = 100%, 2076 KB/s]
+2026-11-19T15:00:41.5368650Z Still decompressing downloaded files...
+2026-11-19T15:00:42.3760057Z Decompressed 9031 file(s)
+2026-11-19T15:00:42.3760545Z Already decompressed 9031 file(s)
+2026-11-19T15:00:42.4225414Z ##[endgroup]
+2026-11-19T15:00:42.4225633Z 
+2026-11-19T15:00:42.4233821Z ##[end-action id=__leanprover_lean-action.__run_3;outcome=success;conclusion=success;duration_ms=16312]
+2026-11-19T15:00:42.4253731Z ##[start-action display=build 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.build]
+2026-11-19T15:00:42.4259082Z ##[end-action id=__leanprover_lean-action.build;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T15:00:42.4262075Z ##[start-action display=test 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.test]
+2026-11-19T15:00:42.4266610Z ##[end-action id=__leanprover_lean-action.test;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T15:00:42.4269330Z ##[start-action display=lint 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.lint]
+2026-11-19T15:00:42.4274250Z ##[end-action id=__leanprover_lean-action.lint;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T15:00:42.4276608Z ##[start-action display=Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25;id=__leanprover_lean-action.__actions_cache]
+2026-11-19T15:00:42.5483106Z ##[group]Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25
+2026-11-19T15:00:42.5483507Z with:
+2026-11-19T15:00:42.5483725Z   path: lean/.lake
+2026-11-19T15:00:42.5485110Z   key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-1ffeb0932ac9a5674f2d416757d786a85e43ffde
+2026-11-19T15:00:42.5486110Z   enableCrossOsArchive: false
+2026-11-19T15:00:42.5486373Z env:
+2026-11-19T15:00:42.5486577Z   LEAN_NUM_THREADS: 1
+2026-11-19T15:00:42.5486811Z   UV_USE_IO_URING: 0
+2026-11-19T15:00:42.5487278Z ##[endgroup]
+2026-11-19T15:00:42.6988524Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/solved-conjectures/solved-conjectures --files-from manifest.txt --use-compress-program zstdmt
+2026-11-19T15:01:03.6475772Z Sent 67108864 of 2103774655 (3.2%), 64.0 MBs/sec
+2026-11-19T15:01:04.6495890Z Sent 603979776 of 2103774655 (28.7%), 287.9 MBs/sec
+2026-11-19T15:01:05.6515296Z Sent 1140850688 of 2103774655 (54.2%), 362.4 MBs/sec
+2026-11-19T15:01:06.6525079Z Sent 1476395008 of 2103774655 (70.2%), 351.6 MBs/sec
+2026-11-19T15:01:07.6525055Z Sent 1744830464 of 2103774655 (82.9%), 332.5 MBs/sec
+2026-11-19T15:01:08.6513387Z Sent 2013265920 of 2103774655 (95.7%), 319.7 MBs/sec
+2026-11-19T15:01:09.6521646Z Sent 2036665791 of 2103774655 (96.8%), 277.3 MBs/sec
+2026-11-19T15:01:10.6524557Z Sent 2036665791 of 2103774655 (96.8%), 242.6 MBs/sec
+2026-11-19T15:01:11.6523806Z Sent 2036665791 of 2103774655 (96.8%), 215.7 MBs/sec
+2026-11-19T15:01:12.6528310Z Sent 2036665791 of 2103774655 (96.8%), 194.1 MBs/sec
+2026-11-19T15:01:13.6532689Z Sent 2036665791 of 2103774655 (96.8%), 176.5 MBs/sec
+2026-11-19T15:01:14.6539098Z Sent 2036665791 of 2103774655 (96.8%), 161.8 MBs/sec
+2026-11-19T15:01:15.6548419Z Sent 2036665791 of 2103774655 (96.8%), 149.3 MBs/sec
+2026-11-19T15:01:16.5861939Z Sent 2103774655 of 2103774655 (100.0%), 143.9 MBs/sec
+2026-11-19T15:01:16.9138555Z Cache saved with key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-1ffeb0932ac9a5674f2d416757d786a85e43ffde
+2026-11-19T15:01:16.9274565Z ##[end-action id=__leanprover_lean-action.__actions_cache;outcome=success;conclusion=success;duration_ms=34499]
+2026-11-19T15:01:16.9277719Z ##[start-action display=check reservoir eligibility;id=__leanprover_lean-action.__run_4]
+2026-11-19T15:01:16.9282535Z ##[end-action id=__leanprover_lean-action.__run_4;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T15:01:16.9285753Z ##[start-action display=check environment with leanchecker;id=__leanprover_lean-action.__run_5]
+2026-11-19T15:01:16.9290631Z ##[end-action id=__leanprover_lean-action.__run_5;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T15:01:16.9292957Z ##[start-action display=check environment with nanoda;id=__leanprover_lean-action.nanoda]
+2026-11-19T15:01:16.9297951Z ##[end-action id=__leanprover_lean-action.nanoda;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T15:01:16.9301447Z ##[start-action display=audit axioms with axiom-audit;id=__leanprover_lean-action.axiom-audit]
+2026-11-19T15:01:16.9327734Z ##[end-action id=__leanprover_lean-action.axiom-audit;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T15:01:16.9405557Z ##[group]Run python3 scripts/verify_five_runner_exact.py --plan
+2026-11-19T15:01:16.9406065Z [36;1mpython3 scripts/verify_five_runner_exact.py --plan[0m
+2026-11-19T15:01:16.9490507Z shell: /usr/bin/bash -e {0}
+2026-11-19T15:01:16.9490799Z env:
+2026-11-19T15:01:16.9491020Z   LEAN_NUM_THREADS: 1
+2026-11-19T15:01:16.9491267Z   UV_USE_IO_URING: 0
+2026-11-19T15:01:16.9491513Z ##[endgroup]
+2026-11-19T15:01:18.5965653Z {
+2026-11-19T15:01:18.5966177Z   "root": "Conjectures.LonelinessFiveRunnerTheorem",
+2026-11-19T15:01:18.5966764Z   "modules": [
+2026-11-19T15:01:18.5967104Z     "Conjectures.HaralambisFaces",
+2026-11-19T15:01:18.5967538Z     "Conjectures.HaralambisOrientation",
+2026-11-19T15:01:18.5968491Z     "Conjectures.HaralambisPeriods",
+2026-11-19T15:01:18.5968920Z     "Conjectures.Loneliness",
+2026-11-19T15:01:18.5969311Z     "Conjectures.LonelinessMax",
+2026-11-19T15:01:18.5969730Z     "Conjectures.LonelinessCoalescence",
+2026-11-19T15:01:18.5970259Z     "Conjectures.LonelinessModularPrimes",
+2026-11-19T15:01:18.5970743Z     "Conjectures.LonelinessNearestPlane",
+2026-11-19T15:01:18.5971211Z     "Conjectures.LonelinessKZBasisVectors",
+2026-11-19T15:01:18.5971705Z     "Conjectures.LonelinessModularCoverSearch",
+2026-11-19T15:01:18.5972261Z     "Conjectures.LonelinessModularCoverFastCounts",
+2026-11-19T15:01:18.5972784Z     "Conjectures.LonelinessModularMemo",
+2026-11-19T15:01:18.5973226Z     "Conjectures.LonelinessPigeonhole",
+2026-11-19T15:01:18.5973681Z     "Conjectures.LonelinessPrefixProduct",
+2026-11-19T15:01:18.5974348Z     "Conjectures.NonmixedGapDensity",
+2026-11-19T15:01:18.5974782Z     "Conjectures.HaralambisDefects",
+2026-11-19T15:01:18.5975203Z     "Conjectures.LonelinessConsecutive",
+2026-11-19T15:01:18.5975656Z     "Conjectures.LonelinessContinuity",
+2026-11-19T15:01:18.5976093Z     "Conjectures.LonelinessFiveExamples",
+2026-11-19T15:01:18.5976557Z     "Conjectures.LonelinessFiveFamily",
+2026-11-19T15:01:18.5976985Z     "Conjectures.LonelinessCertificate",
+2026-11-19T15:01:18.5977467Z     "Conjectures.LonelinessCoalescenceAvoiding",
+2026-11-19T15:01:18.5977998Z     "Conjectures.LonelinessCoordinateSubspace",
+2026-11-19T15:01:18.5978498Z     "Conjectures.LonelinessKZBasisGram",
+2026-11-19T15:01:18.5978994Z     "Conjectures.LonelinessNearestPlaneRelative",
+2026-11-19T15:01:18.5979566Z     "Conjectures.LonelinessModularCoverChunks",
+2026-11-19T15:01:18.5980142Z     "Conjectures.LonelinessModularCoverFuelCounts",
+2026-11-19T15:01:18.5980726Z     "Conjectures.LonelinessPrefixProductTables",
+2026-11-19T15:01:18.5981235Z     "Conjectures.NonmixedGapPeriodic",
+2026-11-19T15:01:18.5981682Z     "Conjectures.NonmixedGapResidues",
+2026-11-19T15:01:18.5982154Z     "Conjectures.LonelinessRational",
+2026-11-19T15:01:18.5982645Z     "Conjectures.LonelinessCriticalBase",
+2026-11-19T15:01:18.5983159Z     "Conjectures.LonelinessCriticalSecond",
+2026-11-19T15:01:18.5983613Z     "Conjectures.LonelinessExamples",
+2026-11-19T15:01:18.5984222Z     "Conjectures.LonelinessPairBridge",
+2026-11-19T15:01:18.5984710Z     "Conjectures.LonelinessCoordinateClasses",
+2026-11-19T15:01:18.5985231Z     "Conjectures.LonelinessKZBasisInteger",
+2026-11-19T15:01:18.5985689Z     "Conjectures.LonelinessKZBasisStep",
+2026-11-19T15:01:18.5986182Z     "Conjectures.LonelinessModularCoverTape",
+2026-11-19T15:01:18.5986742Z     "Conjectures.LonelinessKZProductCertificate",
+2026-11-19T15:01:18.5987251Z     "Conjectures.LonelinessPacking",
+2026-11-19T15:01:18.5987686Z     "Conjectures.HaralambisIntervals",
+2026-11-19T15:01:18.5988145Z     "Conjectures.LonelinessModularWitness",
+2026-11-19T15:01:18.5988654Z     "Conjectures.LonelinessSubspaceDensity",
+2026-11-19T15:01:18.5989176Z     "Conjectures.LonelinessCriticalFamilies",
+2026-11-19T15:01:18.5989702Z     "Conjectures.LonelinessIntegerDirection",
+2026-11-19T15:01:18.5990200Z     "Conjectures.LonelinessKZBasisOperations",
+2026-11-19T15:01:18.5990715Z     "Conjectures.LonelinessModularCoverBits",
+2026-11-19T15:01:18.5991213Z     "Conjectures.LonelinessKZProductOrder",
+2026-11-19T15:01:18.5992045Z     "Conjectures.LonelinessPackingLower",
+2026-11-19T15:01:18.5992518Z     "Conjectures.HaralambisCounting",
+2026-11-19T15:01:18.5993001Z     "Conjectures.LonelinessModularForcedDivisor",
+2026-11-19T15:01:18.5993532Z     "Conjectures.LonelinessModularLift",
+2026-11-19T15:01:18.5998250Z     "Conjectures.LonelinessModularNormalize",
+2026-11-19T15:01:18.5998905Z     "Conjectures.LonelinessModularRationalWitness",
+2026-11-19T15:01:18.5999532Z     "Conjectures.LonelinessHyperplaneArithmetic",
+2026-11-19T15:01:18.6000110Z     "Conjectures.LonelinessModularShortVector",
+2026-11-19T15:01:18.6000674Z     "Conjectures.LonelinessNearestPlaneValue",
+2026-11-19T15:01:18.6001220Z     "Conjectures.LonelinessNormalization",
+2026-11-19T15:01:18.6002028Z     "Conjectures.LonelinessRationalSubspace",
+2026-11-19T15:01:18.6002544Z     "Conjectures.LonelinessKZBasisReduction",
+2026-11-19T15:01:18.6003066Z     "Conjectures.LonelinessModularCoverCuts",
+2026-11-19T15:01:18.6003723Z     "Conjectures.LonelinessKZProductAssembly",
+2026-11-19T15:01:18.6004528Z     "Conjectures.HaralambisPairSum",
+2026-11-19T15:01:18.6005043Z     "Conjectures.LonelinessFourSpeedEnumeration",
+2026-11-19T15:01:18.6005657Z     "Conjectures.LonelinessFourSpeedLiftDirections",
+2026-11-19T15:01:18.6006266Z     "Conjectures.LonelinessModularStrictWitness",
+2026-11-19T15:01:18.6006820Z     "Conjectures.LonelinessPrimitiveBasis",
+2026-11-19T15:01:18.6007418Z     "Conjectures.LonelinessModularClosedShortVector",
+2026-11-19T15:01:18.6007988Z     "Conjectures.HaralambisDensity",
+2026-11-19T15:01:18.6008499Z     "Conjectures.LonelinessModularDirections",
+2026-11-19T15:01:18.6009045Z     "Conjectures.LonelinessModularSearch",
+2026-11-19T15:01:18.6009569Z     "Conjectures.LonelinessCoalescenceValue",
+2026-11-19T15:01:18.6010125Z     "Conjectures.LonelinessSubspaceExtension",
+2026-11-19T15:01:18.6010706Z     "Conjectures.LonelinessModularCoverFuelCuts",
+2026-11-19T15:01:18.6011265Z     "Conjectures.LonelinessKZGeneral",
+2026-11-19T15:01:18.6011824Z     "Conjectures.LonelinessFourSpeedCertificate",
+2026-11-19T15:01:18.6012468Z     "Conjectures.LonelinessPrimitiveSpeeds",
+2026-11-19T15:01:18.6012959Z     "Conjectures.HaralambisTheorem",
+2026-11-19T15:01:18.6013426Z     "Conjectures.LonelinessModularFoldedSearch",
+2026-11-19T15:01:18.6014197Z     "Conjectures.LonelinessModularSearchDirections",
+2026-11-19T15:01:18.6014742Z     "Conjectures.LonelinessModularParity",
+2026-11-19T15:01:18.6015254Z     "Conjectures.LonelinessModularPlaneGap",
+2026-11-19T15:01:18.6015798Z     "Conjectures.LonelinessNearestPlanePrefix",
+2026-11-19T15:01:18.6016318Z     "Conjectures.LonelinessTwoDirections",
+2026-11-19T15:01:18.6016808Z     "Conjectures.LonelinessFiveRunnerNormData",
+2026-11-19T15:01:18.6017398Z     "Conjectures.LonelinessFourSpeedCertificate17",
+2026-11-19T15:01:18.6018023Z     "Conjectures.LonelinessFourSpeedCertificate29",
+2026-11-19T15:01:18.6018639Z     "Conjectures.LonelinessFourSpeedCertificate31",
+2026-11-19T15:01:18.6019242Z     "Conjectures.LonelinessFourSpeedCertificate37",
+2026-11-19T15:01:18.6019907Z     "Conjectures.LonelinessFourSpeedCertificate41",
+2026-11-19T15:01:18.6020474Z     "Conjectures.LonelinessFourSpeedCertificate43",
+2026-11-19T15:01:18.6021072Z     "Conjectures.LonelinessFourSpeedFastEnumeration",
+2026-11-19T15:01:18.6021674Z     "Conjectures.LonelinessModularInitialSupport",
+2026-11-19T15:01:18.6022225Z     "Conjectures.LonelinessSmallRunner",
+2026-11-19T15:01:18.6022797Z     "Conjectures.LonelinessModularClosedFoldedSearch",
+2026-11-19T15:01:18.6023321Z     "Conjectures.LonelinessNormGeometry",
+2026-11-19T15:01:18.6023782Z     "Conjectures.LonelinessPlaneDirections",
+2026-11-19T15:01:18.6024461Z     "Conjectures.LonelinessFourSpeedCertificateChunks",
+2026-11-19T15:01:18.6025015Z     "Conjectures.LonelinessModularInitialBits",
+2026-11-19T15:01:18.6025502Z     "Conjectures.LonelinessFourSpeedGeometry",
+2026-11-19T15:01:18.6026006Z     "Conjectures.LonelinessPigeonholePlane",
+2026-11-19T15:01:18.6026830Z     "Conjectures.LonelinessModularClosedFoldedDirections",
+2026-11-19T15:01:18.6027434Z     "Conjectures.LonelinessTightNormCommon",
+2026-11-19T15:01:18.6027930Z     "Conjectures.LonelinessPlaneGap",
+2026-11-19T15:01:18.6028494Z     "Conjectures.LonelinessFourSpeedCertificate47",
+2026-11-19T15:01:18.6029144Z     "Conjectures.LonelinessFourSpeedCertificate53",
+2026-11-19T15:01:18.6029787Z     "Conjectures.LonelinessFourSpeedCertificate59",
+2026-11-19T15:01:18.6030422Z     "Conjectures.LonelinessFourSpeedCertificate61",
+2026-11-19T15:01:18.6031040Z     "Conjectures.LonelinessModularInitialMemo",
+2026-11-19T15:01:18.6031674Z     "Conjectures.LonelinessFourSpeedFoldedGeometry",
+2026-11-19T15:01:18.6032299Z     "Conjectures.LonelinessFourSpeedCutoff",
+2026-11-19T15:01:18.6033191Z     "Conjectures.LonelinessFiveRunnerFinite",
+2026-11-19T15:01:18.6033813Z     "Conjectures.LonelinessFourSpeedClassification",
+2026-11-19T15:01:18.6034630Z     "Conjectures.LonelinessFourSpeedCertificateAll",
+2026-11-19T15:01:18.6035330Z     "Conjectures.LonelinessFiveRunnerPrime0149Arithmetic",
+2026-11-19T15:01:18.6036108Z     "Conjectures.LonelinessFiveRunnerPrime0151Arithmetic",
+2026-11-19T15:01:18.6036850Z     "Conjectures.LonelinessFiveRunnerPrime0163Arithmetic",
+2026-11-19T15:01:18.6037550Z     "Conjectures.LonelinessFiveRunnerPrime0167Arithmetic",
+2026-11-19T15:01:18.6038221Z     "Conjectures.LonelinessFiveRunnerPrime0173Arithmetic",
+2026-11-19T15:01:18.6038838Z     "Conjectures.LonelinessFourSpeedLiftSound",
+2026-11-19T15:01:18.6039427Z     "Conjectures.LonelinessFiveRunnerConsequences",
+2026-11-19T15:01:18.6040056Z     "Conjectures.LonelinessFiveRunnerPrime0149Rows",
+2026-11-19T15:01:18.6040716Z     "Conjectures.LonelinessFiveRunnerPrime0151Rows",
+2026-11-19T15:01:18.6041354Z     "Conjectures.LonelinessFiveRunnerPrime0163Rows",
+2026-11-19T15:01:18.6042003Z     "Conjectures.LonelinessFiveRunnerPrime0167Rows",
+2026-11-19T15:01:18.6042645Z     "Conjectures.LonelinessFiveRunnerPrime0173Rows",
+2026-11-19T15:01:18.6043391Z     "Conjectures.LonelinessFiveRunnerPrime0163B004Arithmetic",
+2026-11-19T15:01:18.6044259Z     "Conjectures.LonelinessFourSpeedLift17",
+2026-11-19T15:01:18.6044845Z     "Conjectures.LonelinessFourSpeedLift29",
+2026-11-19T15:01:18.6045417Z     "Conjectures.LonelinessFourSpeedLift31",
+2026-11-19T15:01:18.6045977Z     "Conjectures.LonelinessFourSpeedLift37",
+2026-11-19T15:01:18.6046526Z     "Conjectures.LonelinessFourSpeedLift41",
+2026-11-19T15:01:18.6047084Z     "Conjectures.LonelinessFourSpeedLift43",
+2026-11-19T15:01:18.6047610Z     "Conjectures.LonelinessFourSpeedLift47",
+2026-11-19T15:01:18.6048115Z     "Conjectures.LonelinessFourSpeedLift53",
+2026-11-19T15:01:18.6048589Z     "Conjectures.LonelinessFourSpeedLift59",
+2026-11-19T15:01:18.6049049Z     "Conjectures.LonelinessFourSpeedLift61",
+2026-11-19T15:01:18.6049648Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch000",
+2026-11-19T15:01:18.6050390Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch001",
+2026-11-19T15:01:18.6051271Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch002",
+2026-11-19T15:01:18.6052062Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch003",
+2026-11-19T15:01:18.6052867Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch004",
+2026-11-19T15:01:18.6053588Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch005",
+2026-11-19T15:01:18.6054483Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch006",
+2026-11-19T15:01:18.6055208Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch007",
+2026-11-19T15:01:18.6055909Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch008",
+2026-11-19T15:01:18.6056609Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch009",
+2026-11-19T15:01:18.6057322Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch010",
+2026-11-19T15:01:18.6058015Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch011",
+2026-11-19T15:01:18.6058719Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch012",
+2026-11-19T15:01:18.6059410Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch013",
+2026-11-19T15:01:18.6060311Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch014",
+2026-11-19T15:01:18.6061009Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch015",
+2026-11-19T15:01:18.6061699Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch016",
+2026-11-19T15:01:18.6062399Z     "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch017",
+2026-11-19T15:01:18.6063109Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch000",
+2026-11-19T15:01:18.6063796Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch001",
+2026-11-19T15:01:18.6064629Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch002",
+2026-11-19T15:01:18.6065306Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch003",
+2026-11-19T15:01:18.6066173Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch004",
+2026-11-19T15:01:18.6066882Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch005",
+2026-11-19T15:01:18.6067562Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch006",
+2026-11-19T15:01:18.6068260Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch007",
+2026-11-19T15:01:18.6068958Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch008",
+2026-11-19T15:01:18.6069663Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch009",
+2026-11-19T15:01:18.6070393Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch010",
+2026-11-19T15:01:18.6071109Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch011",
+2026-11-19T15:01:18.6071818Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch012",
+2026-11-19T15:01:18.6072550Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch013",
+2026-11-19T15:01:18.6073242Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch014",
+2026-11-19T15:01:18.6074115Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch015",
+2026-11-19T15:01:18.6074821Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch016",
+2026-11-19T15:01:18.6075539Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch017",
+2026-11-19T15:01:18.6076262Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch018",
+2026-11-19T15:01:18.6076963Z     "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch019",
+2026-11-19T15:01:18.6077671Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch000",
+2026-11-19T15:01:18.6078409Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch001",
+2026-11-19T15:01:18.6079118Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch002",
+2026-11-19T15:01:18.6079750Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch003",
+2026-11-19T15:01:18.6080380Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch004",
+2026-11-19T15:01:18.6081042Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch005",
+2026-11-19T15:01:18.6081740Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch006",
+2026-11-19T15:01:18.6082439Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch007",
+2026-11-19T15:01:18.6083196Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch008",
+2026-11-19T15:01:18.6084149Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch009",
+2026-11-19T15:01:18.6084936Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch010",
+2026-11-19T15:01:18.6085704Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch011",
+2026-11-19T15:01:18.6086480Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch012",
+2026-11-19T15:01:18.6087249Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch013",
+2026-11-19T15:01:18.6088074Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch014",
+2026-11-19T15:01:18.6088834Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch015",
+2026-11-19T15:01:18.6089621Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch016",
+2026-11-19T15:01:18.6090404Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch017",
+2026-11-19T15:01:18.6091148Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch018",
+2026-11-19T15:01:18.6091887Z     "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch019",
+2026-11-19T15:01:18.6092570Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch000",
+2026-11-19T15:01:18.6093461Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch001",
+2026-11-19T15:01:18.6094420Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch002",
+2026-11-19T15:01:18.6095188Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch003",
+2026-11-19T15:01:18.6095970Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch004",
+2026-11-19T15:01:18.6096611Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch005",
+2026-11-19T15:01:18.6097321Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch006",
+2026-11-19T15:01:18.6098122Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch007",
+2026-11-19T15:01:18.6098900Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch008",
+2026-11-19T15:01:18.6099915Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch009",
+2026-11-19T15:01:18.6100680Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch010",
+2026-11-19T15:01:18.6101395Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch011",
+2026-11-19T15:01:18.6102059Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch012",
+2026-11-19T15:01:18.6102750Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch013",
+2026-11-19T15:01:18.6103459Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch014",
+2026-11-19T15:01:18.6104215Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch015",
+2026-11-19T15:01:18.6104951Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch016",
+2026-11-19T15:01:18.6105674Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch017",
+2026-11-19T15:01:18.6106380Z     "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch018",
+2026-11-19T15:01:18.6107221Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch000",
+2026-11-19T15:01:18.6107942Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch001",
+2026-11-19T15:01:18.6108659Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch002",
+2026-11-19T15:01:18.6109349Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch003",
+2026-11-19T15:01:18.6110065Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch004",
+2026-11-19T15:01:18.6110778Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch005",
+2026-11-19T15:01:18.6111490Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch006",
+2026-11-19T15:01:18.6112189Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch007",
+2026-11-19T15:01:18.6112917Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch008",
+2026-11-19T15:01:18.6113622Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch009",
+2026-11-19T15:01:18.6114497Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch010",
+2026-11-19T15:01:18.6115217Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch011",
+2026-11-19T15:01:18.6115933Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch012",
+2026-11-19T15:01:18.6116667Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch013",
+2026-11-19T15:01:18.6117372Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch014",
+2026-11-19T15:01:18.6118089Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch015",
+2026-11-19T15:01:18.6118804Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch016",
+2026-11-19T15:01:18.6119519Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch017",
+2026-11-19T15:01:18.6120342Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch018",
+2026-11-19T15:01:18.6121089Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch019",
+2026-11-19T15:01:18.6121810Z     "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch020",
+2026-11-19T15:01:18.6122498Z     "Conjectures.LonelinessFiveRunnerPrime0163B004Data",
+2026-11-19T15:01:18.6123105Z     "Conjectures.LonelinessFourSpeedFinite",
+2026-11-19T15:01:18.6123666Z     "Conjectures.LonelinessFiveRunnerPrime0149",
+2026-11-19T15:01:18.6124395Z     "Conjectures.LonelinessFiveRunnerPrime0151",
+2026-11-19T15:01:18.6124953Z     "Conjectures.LonelinessFiveRunnerPrime0167",
+2026-11-19T15:01:18.6125452Z     "Conjectures.LonelinessFiveRunnerPrime0173",
+2026-11-19T15:01:18.6126059Z     "Conjectures.LonelinessFiveRunnerPrime0163B004Checks000",
+2026-11-19T15:01:18.6127073Z     "Conjectures.LonelinessFiveRunnerPrime0163B004Checks001",
+2026-11-19T15:01:18.6127851Z     "Conjectures.LonelinessFourSpeedClassificationFinite",
+2026-11-19T15:01:18.6128582Z     "Conjectures.LonelinessFiveRunnerPrime0163B004",
+2026-11-19T15:01:18.6129222Z     "Conjectures.LonelinessFourSpeedGap",
+2026-11-19T15:01:18.6129772Z     "Conjectures.LonelinessFiveRunnerPrime0163",
+2026-11-19T15:01:18.6130360Z     "Conjectures.LonelinessFiveRunnerNorm",
+2026-11-19T15:01:18.6130944Z     "Conjectures.LonelinessFiveRunnerTheorem"
+2026-11-19T15:01:18.6131427Z   ],
+2026-11-19T15:01:18.6131739Z   "required_theorem_count": 7586,
+2026-11-19T15:01:18.6132179Z   "minimum_pairs": 394,
+2026-11-19T15:01:18.6132742Z   "support_frames": 7070,
+2026-11-19T15:01:18.6133107Z   "prime_frames": {
+2026-11-19T15:01:18.6133429Z     "149": 1171,
+2026-11-19T15:01:18.6133746Z     "151": 1478,
+2026-11-19T15:01:18.6134189Z     "163": 1596,
+2026-11-19T15:01:18.6134494Z     "167": 1430,
+2026-11-19T15:01:18.6134805Z     "173": 1395
+2026-11-19T15:01:18.6135111Z   },
+2026-11-19T15:01:18.6135405Z   "controls_sha256": {
+2026-11-19T15:01:18.6136184Z     "scripts/verify_five_runner_exact.py": "e94986ee4f3de024100d9904c14e99af293256d566f382e62e3beea4557c09eb",
+2026-11-19T15:01:18.6137502Z     ".github/workflows/lean-five-runner-exact.yml": "8c03d85db11bbbd379135ab38e4e71849f3be5ec571818c9d06302955c6c3bb9",
+2026-11-19T15:01:18.6138797Z     "scripts/generate_five_runner_certificates.py": "bc54d202e0ecdac9d68f798158fc9087fbedb24c7bfe1eafdbcdaddf4207bb15",
+2026-11-19T15:01:18.6140088Z     "scripts/generate_five_runner_arithmetic.py": "f001aff8f746545c672a306b0871fe8bf0805853b60784cf0d284576795ee9d1",
+2026-11-19T15:01:18.6141446Z     "scripts/generate_five_runner_assembly.py": "e6e2764762169bce63466c5971f9c03c57be748f6e4d33512b4419e5f920a8e9",
+2026-11-19T15:01:18.6142837Z     "scripts/generate_five_runner_fast.py": "2281d1995df2d5554d7212b03d97a7a64779633cbf69b70726f685c843ed293b",
+2026-11-19T15:01:18.6144253Z     "scripts/generate_five_runner_fuel.py": "8860c07ad0de2b51cdec8d5e3b8e785dd37ca2809a69c86974892e56eb39ae1e",
+2026-11-19T15:01:18.6145518Z     "scripts/generate_six_speed_late_prime_batches.py": "305bd241ed671ceef255bc53552c177744c7b35d37afbca7365d71a03dbad4ca",
+2026-11-19T15:01:18.6146867Z     "scripts/generate_six_speed_prime_certificates.py": "9cfca45e42eece7690a424de54e551a75139651944f14ee3f7772f506971deb7",
+2026-11-19T15:01:18.6148189Z     "scripts/generate_six_speed_prime_arithmetic.py": "f02b0ba31fa89fa4da574c2e134a0a457f7918a3dbba6e939a792c1492e2709f",
+2026-11-19T15:01:18.6149511Z     "scripts/generate_six_speed_prime_assembly.py": "e2e42d41a0ecbd6bbb53372d4c149793d05817d21b88de40b7e2ad9eda39a88b",
+2026-11-19T15:01:18.6150808Z     "scripts/generate_six_speed_prime_fast.py": "9aaebac57c4f9e32839a21daa4c3a393322997c6db9c75b0de50aae9371ff59f",
+2026-11-19T15:01:18.6152013Z     "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+2026-11-19T15:01:18.6153179Z     "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+2026-11-19T15:01:18.6154477Z     "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+2026-11-19T15:01:18.6155580Z     "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+2026-11-19T15:01:18.6156758Z     "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+2026-11-19T15:01:18.6157900Z     "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+2026-11-19T15:01:18.6158930Z     "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+2026-11-19T15:01:18.6159881Z     "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+2026-11-19T15:01:18.6160889Z     "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953"
+2026-11-19T15:01:18.6161578Z   }
+2026-11-19T15:01:18.6162141Z }
+2026-11-19T15:01:18.6238892Z ##[group]Run lake env python3 ../scripts/verify_five_runner_exact.py
+2026-11-19T15:01:18.6239734Z [36;1mlake env python3 ../scripts/verify_five_runner_exact.py[0m
+2026-11-19T15:01:18.6304779Z shell: /usr/bin/bash -e {0}
+2026-11-19T15:01:18.6305088Z env:
+2026-11-19T15:01:18.6305315Z   LEAN_NUM_THREADS: 1
+2026-11-19T15:01:18.6305575Z   UV_USE_IO_URING: 0
+2026-11-19T15:01:18.6305817Z ##[endgroup]
+2026-11-19T15:01:22.8339681Z {"phase": "Conjectures.HaralambisFaces.source", "exit_code": 0, "seconds": 2.006, "peak_rss_kib": 1778016}
+2026-11-19T15:01:24.8420363Z {"phase": "Conjectures.HaralambisOrientation.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 1847164}
+2026-11-19T15:01:32.6156133Z {"phase": "Conjectures.HaralambisPeriods.source", "exit_code": 0, "seconds": 7.771, "peak_rss_kib": 2092688}
+2026-11-19T15:01:35.1258795Z {"phase": "Conjectures.Loneliness.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 1919340}
+2026-11-19T15:01:39.8929729Z {"phase": "Conjectures.LonelinessMax.source", "exit_code": 0, "seconds": 4.764, "peak_rss_kib": 2493068}
+2026-11-19T15:01:43.9075214Z {"phase": "Conjectures.LonelinessCoalescence.source", "exit_code": 0, "seconds": 4.01, "peak_rss_kib": 2412152}
+2026-11-19T15:01:46.9194875Z {"phase": "Conjectures.LonelinessModularPrimes.source", "exit_code": 0, "seconds": 3.009, "peak_rss_kib": 3483136}
+2026-11-19T15:01:49.9301530Z {"phase": "Conjectures.LonelinessNearestPlane.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 2988204}
+2026-11-19T15:01:52.6901488Z {"phase": "Conjectures.LonelinessKZBasisVectors.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 2966588}
+2026-11-19T15:01:55.9512717Z {"phase": "Conjectures.LonelinessModularCoverSearch.source", "exit_code": 0, "seconds": 3.258, "peak_rss_kib": 3498812}
+2026-11-19T15:01:57.2075538Z {"phase": "Conjectures.LonelinessModularCoverFastCounts.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 1669900}
+2026-11-19T15:01:59.7172758Z {"phase": "Conjectures.LonelinessModularMemo.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 3474492}
+2026-11-19T15:02:01.9762093Z {"phase": "Conjectures.LonelinessPigeonhole.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 1904448}
+2026-11-19T15:02:05.2375808Z {"phase": "Conjectures.LonelinessPrefixProduct.source", "exit_code": 0, "seconds": 3.258, "peak_rss_kib": 3235644}
+2026-11-19T15:02:10.2539311Z {"phase": "Conjectures.NonmixedGapDensity.source", "exit_code": 0, "seconds": 5.013, "peak_rss_kib": 2384264}
+2026-11-19T15:02:12.2619948Z {"phase": "Conjectures.HaralambisDefects.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 1881564}
+2026-11-19T15:02:14.2707456Z {"phase": "Conjectures.LonelinessConsecutive.source", "exit_code": 0, "seconds": 2.006, "peak_rss_kib": 2474512}
+2026-11-19T15:02:16.0281471Z {"phase": "Conjectures.LonelinessContinuity.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 2140280}
+2026-11-19T15:02:30.3200273Z {"phase": "Conjectures.LonelinessFiveExamples.source", "exit_code": 0, "seconds": 14.289, "peak_rss_kib": 1982984}
+2026-11-19T15:02:36.0875209Z {"phase": "Conjectures.LonelinessFiveFamily.source", "exit_code": 0, "seconds": 5.765, "peak_rss_kib": 1927596}
+2026-11-19T15:02:38.3465055Z {"phase": "Conjectures.LonelinessCertificate.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2469532}
+2026-11-19T15:02:42.3602050Z {"phase": "Conjectures.LonelinessCoalescenceAvoiding.source", "exit_code": 0, "seconds": 4.011, "peak_rss_kib": 2406992}
+2026-11-19T15:02:44.6192656Z {"phase": "Conjectures.LonelinessCoordinateSubspace.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2381124}
+2026-11-19T15:02:48.1328875Z {"phase": "Conjectures.LonelinessKZBasisGram.source", "exit_code": 0, "seconds": 3.511, "peak_rss_kib": 3229284}
+2026-11-19T15:02:51.3944571Z {"phase": "Conjectures.LonelinessNearestPlaneRelative.source", "exit_code": 0, "seconds": 3.258, "peak_rss_kib": 2987044}
+2026-11-19T15:02:54.1545461Z {"phase": "Conjectures.LonelinessModularCoverChunks.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 3484748}
+2026-11-19T15:02:55.4113750Z {"phase": "Conjectures.LonelinessModularCoverFuelCounts.source", "exit_code": 0, "seconds": 1.254, "peak_rss_kib": 1671376}
+2026-11-19T15:03:02.9340268Z {"phase": "Conjectures.LonelinessPrefixProductTables.source", "exit_code": 0, "seconds": 7.52, "peak_rss_kib": 3260040}
+2026-11-19T15:03:05.4435565Z {"phase": "Conjectures.NonmixedGapPeriodic.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 2365524}
+2026-11-19T15:03:08.4545134Z {"phase": "Conjectures.NonmixedGapResidues.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 2367056}
+2026-11-19T15:03:10.2124286Z {"phase": "Conjectures.LonelinessRational.source", "exit_code": 0, "seconds": 1.755, "peak_rss_kib": 2128476}
+2026-11-19T15:03:14.7280652Z {"phase": "Conjectures.LonelinessCriticalBase.source", "exit_code": 0, "seconds": 4.513, "peak_rss_kib": 1920796}
+2026-11-19T15:03:21.5011810Z {"phase": "Conjectures.LonelinessCriticalSecond.source", "exit_code": 0, "seconds": 6.77, "peak_rss_kib": 1934036}
+2026-11-19T15:03:31.5306073Z {"phase": "Conjectures.LonelinessExamples.source", "exit_code": 0, "seconds": 10.026, "peak_rss_kib": 2508664}
+2026-11-19T15:03:33.5397967Z {"phase": "Conjectures.LonelinessPairBridge.source", "exit_code": 0, "seconds": 2.006, "peak_rss_kib": 2469228}
+2026-11-19T15:03:36.0501206Z {"phase": "Conjectures.LonelinessCoordinateClasses.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 2387132}
+2026-11-19T15:03:39.0608972Z {"phase": "Conjectures.LonelinessKZBasisInteger.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3224620}
+2026-11-19T15:03:42.3224604Z {"phase": "Conjectures.LonelinessKZBasisStep.source", "exit_code": 0, "seconds": 3.259, "peak_rss_kib": 3228516}
+2026-11-19T15:03:45.0829882Z {"phase": "Conjectures.LonelinessModularCoverTape.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 3479716}
+2026-11-19T15:03:48.8457492Z {"phase": "Conjectures.LonelinessKZProductCertificate.source", "exit_code": 0, "seconds": 3.76, "peak_rss_kib": 3238808}
+2026-11-19T15:03:50.8548014Z {"phase": "Conjectures.LonelinessPacking.source", "exit_code": 0, "seconds": 2.006, "peak_rss_kib": 2352652}
+2026-11-19T15:03:52.8636707Z {"phase": "Conjectures.HaralambisIntervals.source", "exit_code": 0, "seconds": 2.006, "peak_rss_kib": 1909656}
+2026-11-19T15:03:55.1228515Z {"phase": "Conjectures.LonelinessModularWitness.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2151284}
+2026-11-19T15:03:57.3821065Z {"phase": "Conjectures.LonelinessSubspaceDensity.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2202496}
+2026-11-19T15:03:59.1400148Z {"phase": "Conjectures.LonelinessCriticalFamilies.source", "exit_code": 0, "seconds": 1.755, "peak_rss_kib": 1899088}
+2026-11-19T15:04:01.1489209Z {"phase": "Conjectures.LonelinessIntegerDirection.source", "exit_code": 0, "seconds": 2.006, "peak_rss_kib": 2397676}
+2026-11-19T15:04:04.1602221Z {"phase": "Conjectures.LonelinessKZBasisOperations.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3231104}
+2026-11-19T15:04:07.1714369Z {"phase": "Conjectures.LonelinessModularCoverBits.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3483892}
+2026-11-19T15:04:10.1834230Z {"phase": "Conjectures.LonelinessKZProductOrder.source", "exit_code": 0, "seconds": 3.009, "peak_rss_kib": 3236932}
+2026-11-19T15:04:12.9437972Z {"phase": "Conjectures.LonelinessPackingLower.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 2370644}
+2026-11-19T15:04:15.7041680Z {"phase": "Conjectures.HaralambisCounting.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 2367272}
+2026-11-19T15:04:18.4647618Z {"phase": "Conjectures.LonelinessModularForcedDivisor.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 3485332}
+2026-11-19T15:04:21.7269956Z {"phase": "Conjectures.LonelinessModularLift.source", "exit_code": 0, "seconds": 3.259, "peak_rss_kib": 2170272}
+2026-11-19T15:04:23.9859103Z {"phase": "Conjectures.LonelinessModularNormalize.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2150368}
+2026-11-19T15:04:25.9947544Z {"phase": "Conjectures.LonelinessModularRationalWitness.source", "exit_code": 0, "seconds": 2.006, "peak_rss_kib": 2149900}
+2026-11-19T15:04:28.2539335Z {"phase": "Conjectures.LonelinessHyperplaneArithmetic.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2199812}
+2026-11-19T15:04:30.5127999Z {"phase": "Conjectures.LonelinessModularShortVector.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2201876}
+2026-11-19T15:04:33.7744710Z {"phase": "Conjectures.LonelinessNearestPlaneValue.source", "exit_code": 0, "seconds": 3.259, "peak_rss_kib": 2992332}
+2026-11-19T15:04:35.5332118Z {"phase": "Conjectures.LonelinessNormalization.source", "exit_code": 0, "seconds": 1.755, "peak_rss_kib": 1907888}
+2026-11-19T15:04:38.0437749Z {"phase": "Conjectures.LonelinessRationalSubspace.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 2416640}
+2026-11-19T15:04:40.8040908Z {"phase": "Conjectures.LonelinessKZBasisReduction.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 3240052}
+2026-11-19T15:04:43.8152940Z {"phase": "Conjectures.LonelinessModularCoverCuts.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3488868}
+2026-11-19T15:04:46.3258091Z {"phase": "Conjectures.LonelinessKZProductAssembly.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 3217508}
+2026-11-19T15:04:49.8382064Z {"phase": "Conjectures.HaralambisPairSum.source", "exit_code": 0, "seconds": 3.509, "peak_rss_kib": 2377208}
+2026-11-19T15:04:51.8469098Z {"phase": "Conjectures.LonelinessFourSpeedEnumeration.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2146872}
+2026-11-19T15:04:54.3568668Z {"phase": "Conjectures.LonelinessFourSpeedLiftDirections.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 2254232}
+2026-11-19T15:04:56.6164150Z {"phase": "Conjectures.LonelinessModularStrictWitness.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2155764}
+2026-11-19T15:04:59.1262505Z {"phase": "Conjectures.LonelinessPrimitiveBasis.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 2698120}
+2026-11-19T15:05:01.3853391Z {"phase": "Conjectures.LonelinessModularClosedShortVector.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2197868}
+2026-11-19T15:05:03.6443186Z {"phase": "Conjectures.HaralambisDensity.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2365428}
+2026-11-19T15:05:05.6527665Z {"phase": "Conjectures.LonelinessModularDirections.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2196068}
+2026-11-19T15:05:07.6626699Z {"phase": "Conjectures.LonelinessModularSearch.source", "exit_code": 0, "seconds": 2.006, "peak_rss_kib": 2155572}
+2026-11-19T15:05:09.9265509Z {"phase": "Conjectures.LonelinessCoalescenceValue.source", "exit_code": 0, "seconds": 2.257, "peak_rss_kib": 2527576}
+2026-11-19T15:05:12.1857777Z {"phase": "Conjectures.LonelinessSubspaceExtension.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2524160}
+2026-11-19T15:05:14.9462979Z {"phase": "Conjectures.LonelinessModularCoverFuelCuts.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 3477192}
+2026-11-19T15:05:17.4561042Z {"phase": "Conjectures.LonelinessKZGeneral.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 3230700}
+2026-11-19T15:05:19.4647820Z {"phase": "Conjectures.LonelinessFourSpeedCertificate.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2150312}
+2026-11-19T15:05:21.4733147Z {"phase": "Conjectures.LonelinessPrimitiveSpeeds.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2689536}
+2026-11-19T15:05:23.2313074Z {"phase": "Conjectures.HaralambisTheorem.source", "exit_code": 0, "seconds": 1.755, "peak_rss_kib": 2353868}
+2026-11-19T15:05:25.9921259Z {"phase": "Conjectures.LonelinessModularFoldedSearch.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 2176316}
+2026-11-19T15:05:28.2521868Z {"phase": "Conjectures.LonelinessModularSearchDirections.source", "exit_code": 0, "seconds": 2.257, "peak_rss_kib": 2199516}
+2026-11-19T15:05:32.0155870Z {"phase": "Conjectures.LonelinessModularParity.source", "exit_code": 0, "seconds": 3.76, "peak_rss_kib": 2553604}
+2026-11-19T15:05:34.2751241Z {"phase": "Conjectures.LonelinessModularPlaneGap.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2536660}
+2026-11-19T15:05:36.5342283Z {"phase": "Conjectures.LonelinessNearestPlanePrefix.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2981444}
+2026-11-19T15:05:38.7935544Z {"phase": "Conjectures.LonelinessTwoDirections.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2530700}
+2026-11-19T15:05:42.0558511Z {"phase": "Conjectures.LonelinessFiveRunnerNormData.source", "exit_code": 0, "seconds": 3.259, "peak_rss_kib": 3256248}
+2026-11-19T15:05:44.3151527Z {"phase": "Conjectures.LonelinessFourSpeedCertificate17.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2198276}
+2026-11-19T15:05:51.0867816Z {"phase": "Conjectures.LonelinessFourSpeedCertificate29.source", "exit_code": 0, "seconds": 6.768, "peak_rss_kib": 2722320}
+2026-11-19T15:05:58.1099358Z {"phase": "Conjectures.LonelinessFourSpeedCertificate31.source", "exit_code": 0, "seconds": 7.02, "peak_rss_kib": 2810404}
+2026-11-19T15:06:12.9020176Z {"phase": "Conjectures.LonelinessFourSpeedCertificate37.source", "exit_code": 0, "seconds": 14.789, "peak_rss_kib": 3745292}
+2026-11-19T15:06:32.4619061Z {"phase": "Conjectures.LonelinessFourSpeedCertificate41.source", "exit_code": 0, "seconds": 19.557, "peak_rss_kib": 4392636}
+2026-11-19T15:06:51.0168832Z {"phase": "Conjectures.LonelinessFourSpeedCertificate43.source", "exit_code": 0, "seconds": 18.552, "peak_rss_kib": 4482040}
+2026-11-19T15:06:53.0257240Z {"phase": "Conjectures.LonelinessFourSpeedFastEnumeration.source", "exit_code": 0, "seconds": 2.006, "peak_rss_kib": 2140992}
+2026-11-19T15:06:56.0371308Z {"phase": "Conjectures.LonelinessModularInitialSupport.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3482356}
+2026-11-19T15:06:58.5481205Z {"phase": "Conjectures.LonelinessSmallRunner.source", "exit_code": 0, "seconds": 2.508, "peak_rss_kib": 2604180}
+2026-11-19T15:07:01.0589320Z {"phase": "Conjectures.LonelinessModularClosedFoldedSearch.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 2552176}
+2026-11-19T15:07:04.3209720Z {"phase": "Conjectures.LonelinessNormGeometry.source", "exit_code": 0, "seconds": 3.259, "peak_rss_kib": 3422960}
+2026-11-19T15:07:06.8311410Z {"phase": "Conjectures.LonelinessPlaneDirections.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 2534472}
+2026-11-19T15:07:08.5891648Z {"phase": "Conjectures.LonelinessFourSpeedCertificateChunks.source", "exit_code": 0, "seconds": 1.755, "peak_rss_kib": 2137304}
+2026-11-19T15:07:11.3498588Z {"phase": "Conjectures.LonelinessModularInitialBits.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 3478464}
+2026-11-19T15:07:14.1108438Z {"phase": "Conjectures.LonelinessFourSpeedGeometry.source", "exit_code": 0, "seconds": 2.758, "peak_rss_kib": 2607644}
+2026-11-19T15:07:16.3704493Z {"phase": "Conjectures.LonelinessPigeonholePlane.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2599956}
+2026-11-19T15:07:19.1315391Z {"phase": "Conjectures.LonelinessModularClosedFoldedDirections.source", "exit_code": 0, "seconds": 2.758, "peak_rss_kib": 2558848}
+2026-11-19T15:07:21.6417956Z {"phase": "Conjectures.LonelinessTightNormCommon.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 3420956}
+2026-11-19T15:07:23.9018875Z {"phase": "Conjectures.LonelinessPlaneGap.source", "exit_code": 0, "seconds": 2.257, "peak_rss_kib": 2602008}
+2026-11-19T15:08:00.5080941Z {"phase": "Conjectures.LonelinessFourSpeedCertificate47.source", "exit_code": 0, "seconds": 36.603, "peak_rss_kib": 2829928}
+2026-11-19T15:08:46.8864029Z {"phase": "Conjectures.LonelinessFourSpeedCertificate53.source", "exit_code": 0, "seconds": 46.375, "peak_rss_kib": 3060820}
+2026-11-19T15:10:00.5901709Z {"phase": "Conjectures.LonelinessFourSpeedCertificate59.source", "exit_code": 0, "seconds": 73.7, "peak_rss_kib": 3574280}
+2026-11-19T15:11:15.2990825Z {"phase": "Conjectures.LonelinessFourSpeedCertificate61.source", "exit_code": 0, "seconds": 74.705, "peak_rss_kib": 3638016}
+2026-11-19T15:11:17.8093365Z {"phase": "Conjectures.LonelinessModularInitialMemo.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 3475016}
+2026-11-19T15:11:20.0687007Z {"phase": "Conjectures.LonelinessFourSpeedFoldedGeometry.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2605028}
+2026-11-19T15:11:22.3281761Z {"phase": "Conjectures.LonelinessFourSpeedCutoff.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2601500}
+2026-11-19T15:11:25.3400197Z {"phase": "Conjectures.LonelinessFiveRunnerFinite.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3497320}
+2026-11-19T15:11:27.3489213Z {"phase": "Conjectures.LonelinessFourSpeedClassification.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2589364}
+2026-11-19T15:11:30.8620201Z {"phase": "Conjectures.LonelinessFourSpeedCertificateAll.source", "exit_code": 0, "seconds": 3.51, "peak_rss_kib": 3486404}
+2026-11-19T15:11:34.3748515Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149Arithmetic.source", "exit_code": 0, "seconds": 3.509, "peak_rss_kib": 3595496}
+2026-11-19T15:11:37.8874189Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151Arithmetic.source", "exit_code": 0, "seconds": 3.509, "peak_rss_kib": 3599652}
+2026-11-19T15:11:41.4001249Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163Arithmetic.source", "exit_code": 0, "seconds": 3.509, "peak_rss_kib": 3622368}
+2026-11-19T15:11:44.9135474Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167Arithmetic.source", "exit_code": 0, "seconds": 3.51, "peak_rss_kib": 3625652}
+2026-11-19T15:11:48.6774692Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173Arithmetic.source", "exit_code": 0, "seconds": 3.76, "peak_rss_kib": 3640028}
+2026-11-19T15:11:50.6866360Z {"phase": "Conjectures.LonelinessFourSpeedLiftSound.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2598360}
+2026-11-19T15:11:53.4477679Z {"phase": "Conjectures.LonelinessFiveRunnerConsequences.source", "exit_code": 0, "seconds": 2.758, "peak_rss_kib": 3496212}
+2026-11-19T15:11:56.2085318Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149Rows.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 3500612}
+2026-11-19T15:11:58.9694827Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151Rows.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 3502928}
+2026-11-19T15:12:01.7305723Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163Rows.source", "exit_code": 0, "seconds": 2.758, "peak_rss_kib": 3502632}
+2026-11-19T15:12:04.4914592Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167Rows.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 3500620}
+2026-11-19T15:12:07.2525134Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173Rows.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 3500448}
+2026-11-19T15:12:11.2668570Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163B004Arithmetic.source", "exit_code": 0, "seconds": 4.011, "peak_rss_kib": 3679880}
+2026-11-19T15:12:19.5434209Z {"phase": "Conjectures.LonelinessFourSpeedLift17.source", "exit_code": 0, "seconds": 8.273, "peak_rss_kib": 2782904}
+2026-11-19T15:12:28.5726464Z {"phase": "Conjectures.LonelinessFourSpeedLift29.source", "exit_code": 0, "seconds": 9.026, "peak_rss_kib": 2787124}
+2026-11-19T15:12:35.0931525Z {"phase": "Conjectures.LonelinessFourSpeedLift31.source", "exit_code": 0, "seconds": 6.517, "peak_rss_kib": 2738604}
+2026-11-19T15:12:45.1240882Z {"phase": "Conjectures.LonelinessFourSpeedLift37.source", "exit_code": 0, "seconds": 10.027, "peak_rss_kib": 2944872}
+2026-11-19T15:12:53.6498091Z {"phase": "Conjectures.LonelinessFourSpeedLift41.source", "exit_code": 0, "seconds": 8.522, "peak_rss_kib": 2893224}
+2026-11-19T15:12:59.6693396Z {"phase": "Conjectures.LonelinessFourSpeedLift43.source", "exit_code": 0, "seconds": 6.016, "peak_rss_kib": 2729776}
+2026-11-19T15:13:06.4407294Z {"phase": "Conjectures.LonelinessFourSpeedLift47.source", "exit_code": 0, "seconds": 6.768, "peak_rss_kib": 2831572}
+2026-11-19T15:13:11.2095179Z {"phase": "Conjectures.LonelinessFourSpeedLift53.source", "exit_code": 0, "seconds": 4.764, "peak_rss_kib": 2710188}
+2026-11-19T15:13:18.9837629Z {"phase": "Conjectures.LonelinessFourSpeedLift59.source", "exit_code": 0, "seconds": 7.771, "peak_rss_kib": 2885492}
+2026-11-19T15:13:25.0033822Z {"phase": "Conjectures.LonelinessFourSpeedLift61.source", "exit_code": 0, "seconds": 6.016, "peak_rss_kib": 2749116}
+2026-11-19T15:13:46.5663764Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch000.source", "exit_code": 0, "seconds": 21.559, "peak_rss_kib": 3772172}
+2026-11-19T15:14:10.1356108Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch001.source", "exit_code": 0, "seconds": 23.565, "peak_rss_kib": 3802924}
+2026-11-19T15:14:35.2125820Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch002.source", "exit_code": 0, "seconds": 25.07, "peak_rss_kib": 3836572}
+2026-11-19T15:14:55.0219309Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch003.source", "exit_code": 0, "seconds": 19.806, "peak_rss_kib": 3781120}
+2026-11-19T15:15:08.5623111Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch004.source", "exit_code": 0, "seconds": 13.537, "peak_rss_kib": 3692948}
+2026-11-19T15:15:23.3560778Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch005.source", "exit_code": 0, "seconds": 14.79, "peak_rss_kib": 3744324}
+2026-11-19T15:15:43.1663382Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch006.source", "exit_code": 0, "seconds": 19.807, "peak_rss_kib": 3813392}
+2026-11-19T15:15:59.9657515Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch007.source", "exit_code": 0, "seconds": 16.796, "peak_rss_kib": 3849100}
+2026-11-19T15:16:13.7597558Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch008.source", "exit_code": 0, "seconds": 13.789, "peak_rss_kib": 3789224}
+2026-11-19T15:16:26.5500460Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch009.source", "exit_code": 0, "seconds": 12.787, "peak_rss_kib": 3869656}
+2026-11-19T15:16:40.0906360Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch010.source", "exit_code": 0, "seconds": 13.537, "peak_rss_kib": 3919800}
+2026-11-19T15:16:48.3667589Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch011.source", "exit_code": 0, "seconds": 8.272, "peak_rss_kib": 3786356}
+2026-11-19T15:16:54.1368048Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch012.source", "exit_code": 0, "seconds": 5.766, "peak_rss_kib": 3665552}
+2026-11-19T15:16:59.1548203Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch013.source", "exit_code": 0, "seconds": 5.014, "peak_rss_kib": 3637656}
+2026-11-19T15:17:04.1720747Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch014.source", "exit_code": 0, "seconds": 5.013, "peak_rss_kib": 3634236}
+2026-11-19T15:17:08.9386634Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch015.source", "exit_code": 0, "seconds": 4.763, "peak_rss_kib": 3633580}
+2026-11-19T15:17:13.7051706Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch016.source", "exit_code": 0, "seconds": 4.763, "peak_rss_kib": 3617368}
+2026-11-19T15:17:16.4664338Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149ChunkBatch017.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 3517684}
+2026-11-19T15:17:42.2909704Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch000.source", "exit_code": 0, "seconds": 25.821, "peak_rss_kib": 3803892}
+2026-11-19T15:18:13.1302858Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch001.source", "exit_code": 0, "seconds": 30.835, "peak_rss_kib": 3886624}
+2026-11-19T15:18:40.9599691Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch002.source", "exit_code": 0, "seconds": 27.826, "peak_rss_kib": 3849328}
+2026-11-19T15:19:05.2812550Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch003.source", "exit_code": 0, "seconds": 24.318, "peak_rss_kib": 3835324}
+2026-11-19T15:19:22.8324867Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch004.source", "exit_code": 0, "seconds": 17.547, "peak_rss_kib": 3771032}
+2026-11-19T15:19:39.1305054Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch005.source", "exit_code": 0, "seconds": 16.294, "peak_rss_kib": 3787876}
+2026-11-19T15:19:53.9240455Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch006.source", "exit_code": 0, "seconds": 14.79, "peak_rss_kib": 3769588}
+2026-11-19T15:20:06.4613541Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch007.source", "exit_code": 0, "seconds": 12.533, "peak_rss_kib": 3737868}
+2026-11-19T15:20:24.5153206Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch008.source", "exit_code": 0, "seconds": 18.05, "peak_rss_kib": 3865524}
+2026-11-19T15:20:38.8087412Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch009.source", "exit_code": 0, "seconds": 14.289, "peak_rss_kib": 3810684}
+2026-11-19T15:20:49.0907627Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch010.source", "exit_code": 0, "seconds": 10.278, "peak_rss_kib": 3746616}
+2026-11-19T15:20:59.6244774Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch011.source", "exit_code": 0, "seconds": 10.53, "peak_rss_kib": 3758936}
+2026-11-19T15:21:10.6609225Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch012.source", "exit_code": 0, "seconds": 11.033, "peak_rss_kib": 3811964}
+2026-11-19T15:21:22.9480932Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch013.source", "exit_code": 0, "seconds": 12.283, "peak_rss_kib": 3939984}
+2026-11-19T15:21:28.7174230Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch014.source", "exit_code": 0, "seconds": 5.766, "peak_rss_kib": 3659312}
+2026-11-19T15:21:33.9851437Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch015.source", "exit_code": 0, "seconds": 5.264, "peak_rss_kib": 3632284}
+2026-11-19T15:21:39.2535102Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch016.source", "exit_code": 0, "seconds": 5.265, "peak_rss_kib": 3619772}
+2026-11-19T15:21:44.5217987Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch017.source", "exit_code": 0, "seconds": 5.264, "peak_rss_kib": 3624564}
+2026-11-19T15:21:49.7899564Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch018.source", "exit_code": 0, "seconds": 5.264, "peak_rss_kib": 3618244}
+2026-11-19T15:21:54.8074302Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151ChunkBatch019.source", "exit_code": 0, "seconds": 5.014, "peak_rss_kib": 3602396}
+2026-11-19T15:22:32.1652445Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch000.source", "exit_code": 0, "seconds": 37.354, "peak_rss_kib": 3872816}
+2026-11-19T15:23:08.7668927Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch001.source", "exit_code": 0, "seconds": 36.598, "peak_rss_kib": 3920816}
+2026-11-19T15:23:39.1035891Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch002.source", "exit_code": 0, "seconds": 30.333, "peak_rss_kib": 3874196}
+2026-11-19T15:24:03.9290870Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch003.source", "exit_code": 0, "seconds": 24.822, "peak_rss_kib": 3865808}
+2026-11-19T15:24:23.4850829Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch004.source", "exit_code": 0, "seconds": 19.552, "peak_rss_kib": 3777548}
+2026-11-19T15:24:39.2845593Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch005.source", "exit_code": 0, "seconds": 15.796, "peak_rss_kib": 3712648}
+2026-11-19T15:24:57.5880049Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch006.source", "exit_code": 0, "seconds": 18.3, "peak_rss_kib": 3802068}
+2026-11-19T15:25:12.1316942Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch007.source", "exit_code": 0, "seconds": 14.54, "peak_rss_kib": 3747916}
+2026-11-19T15:25:31.4387837Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch008.source", "exit_code": 0, "seconds": 19.303, "peak_rss_kib": 3884424}
+2026-11-19T15:25:46.4833540Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch009.source", "exit_code": 0, "seconds": 15.041, "peak_rss_kib": 3793432}
+2026-11-19T15:26:02.0303202Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch010.source", "exit_code": 0, "seconds": 15.543, "peak_rss_kib": 3841672}
+2026-11-19T15:26:15.5719148Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch011.source", "exit_code": 0, "seconds": 13.538, "peak_rss_kib": 3859656}
+2026-11-19T15:26:28.1104565Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch012.source", "exit_code": 0, "seconds": 12.534, "peak_rss_kib": 3928520}
+2026-11-19T15:26:34.8842560Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch013.source", "exit_code": 0, "seconds": 6.77, "peak_rss_kib": 3714504}
+2026-11-19T15:26:40.4023065Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch014.source", "exit_code": 0, "seconds": 5.514, "peak_rss_kib": 3635704}
+2026-11-19T15:26:45.9217617Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch015.source", "exit_code": 0, "seconds": 5.515, "peak_rss_kib": 3637944}
+2026-11-19T15:26:51.1891167Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch016.source", "exit_code": 0, "seconds": 5.263, "peak_rss_kib": 3626112}
+2026-11-19T15:26:56.4571722Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch017.source", "exit_code": 0, "seconds": 5.264, "peak_rss_kib": 3624280}
+2026-11-19T15:27:01.4759201Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch018.source", "exit_code": 0, "seconds": 5.015, "peak_rss_kib": 3635952}
+2026-11-19T15:27:05.4909527Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163ChunkBatch019.source", "exit_code": 0, "seconds": 4.011, "peak_rss_kib": 3583904}
+2026-11-19T15:27:42.5985775Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch000.source", "exit_code": 0, "seconds": 37.104, "peak_rss_kib": 3915544}
+2026-11-19T15:28:13.9388330Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch001.source", "exit_code": 0, "seconds": 31.336, "peak_rss_kib": 3812016}
+2026-11-19T15:28:46.5364195Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch002.source", "exit_code": 0, "seconds": 32.593, "peak_rss_kib": 3851528}
+2026-11-19T15:29:08.8527926Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch003.source", "exit_code": 0, "seconds": 22.312, "peak_rss_kib": 3752112}
+2026-11-19T15:29:45.4594793Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch004.source", "exit_code": 0, "seconds": 36.603, "peak_rss_kib": 3917148}
+2026-11-19T15:30:05.7689537Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch005.source", "exit_code": 0, "seconds": 20.305, "peak_rss_kib": 3766320}
+2026-11-19T15:30:30.5945719Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch006.source", "exit_code": 0, "seconds": 24.82, "peak_rss_kib": 3849784}
+2026-11-19T15:30:52.9132460Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch007.source", "exit_code": 0, "seconds": 22.314, "peak_rss_kib": 3912236}
+2026-11-19T15:31:11.4694285Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch008.source", "exit_code": 0, "seconds": 18.552, "peak_rss_kib": 3803676}
+2026-11-19T15:31:28.5214786Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch009.source", "exit_code": 0, "seconds": 17.048, "peak_rss_kib": 3856836}
+2026-11-19T15:31:44.0696027Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch010.source", "exit_code": 0, "seconds": 15.544, "peak_rss_kib": 3835388}
+2026-11-19T15:31:58.3623083Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch011.source", "exit_code": 0, "seconds": 14.289, "peak_rss_kib": 3899368}
+2026-11-19T15:32:09.3994852Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch012.source", "exit_code": 0, "seconds": 11.033, "peak_rss_kib": 3842288}
+2026-11-19T15:32:15.9216473Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch013.source", "exit_code": 0, "seconds": 6.518, "peak_rss_kib": 3681788}
+2026-11-19T15:32:21.4407142Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch014.source", "exit_code": 0, "seconds": 5.515, "peak_rss_kib": 3635900}
+2026-11-19T15:32:26.7094775Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch015.source", "exit_code": 0, "seconds": 5.265, "peak_rss_kib": 3636940}
+2026-11-19T15:32:32.2292021Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch016.source", "exit_code": 0, "seconds": 5.516, "peak_rss_kib": 3626940}
+2026-11-19T15:32:37.4981131Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch017.source", "exit_code": 0, "seconds": 5.265, "peak_rss_kib": 3627448}
+2026-11-19T15:32:42.5168896Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167ChunkBatch018.source", "exit_code": 0, "seconds": 5.015, "peak_rss_kib": 3628812}
+2026-11-19T15:33:14.6126158Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch000.source", "exit_code": 0, "seconds": 32.092, "peak_rss_kib": 3825576}
+2026-11-19T15:33:56.2297660Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch001.source", "exit_code": 0, "seconds": 41.613, "peak_rss_kib": 3917512}
+2026-11-19T15:34:28.5748871Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch002.source", "exit_code": 0, "seconds": 32.341, "peak_rss_kib": 3815172}
+2026-11-19T15:35:01.1707828Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch003.source", "exit_code": 0, "seconds": 32.592, "peak_rss_kib": 3840684}
+2026-11-19T15:35:26.4950726Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch004.source", "exit_code": 0, "seconds": 25.32, "peak_rss_kib": 3777572}
+2026-11-19T15:35:50.8180918Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch005.source", "exit_code": 0, "seconds": 24.319, "peak_rss_kib": 3794628}
+2026-11-19T15:36:09.1245651Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch006.source", "exit_code": 0, "seconds": 18.302, "peak_rss_kib": 3737592}
+2026-11-19T15:36:28.6830848Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch007.source", "exit_code": 0, "seconds": 19.554, "peak_rss_kib": 3753996}
+2026-11-19T15:36:54.7611144Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch008.source", "exit_code": 0, "seconds": 26.074, "peak_rss_kib": 3854980}
+2026-11-19T15:37:16.0729764Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch009.source", "exit_code": 0, "seconds": 21.308, "peak_rss_kib": 3779588}
+2026-11-19T15:37:31.1199903Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch010.source", "exit_code": 0, "seconds": 15.043, "peak_rss_kib": 3758388}
+2026-11-19T15:37:50.1782433Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch011.source", "exit_code": 0, "seconds": 19.054, "peak_rss_kib": 3881784}
+2026-11-19T15:38:04.9729571Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch012.source", "exit_code": 0, "seconds": 14.79, "peak_rss_kib": 3901452}
+2026-11-19T15:38:16.5095376Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch013.source", "exit_code": 0, "seconds": 11.533, "peak_rss_kib": 3844408}
+2026-11-19T15:38:23.2825340Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch014.source", "exit_code": 0, "seconds": 6.769, "peak_rss_kib": 3717124}
+2026-11-19T15:38:28.8012251Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch015.source", "exit_code": 0, "seconds": 5.515, "peak_rss_kib": 3652832}
+2026-11-19T15:38:34.0693046Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch016.source", "exit_code": 0, "seconds": 5.264, "peak_rss_kib": 3638100}
+2026-11-19T15:38:39.3379601Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch017.source", "exit_code": 0, "seconds": 5.264, "peak_rss_kib": 3638104}
+2026-11-19T15:38:44.6072604Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch018.source", "exit_code": 0, "seconds": 5.265, "peak_rss_kib": 3639444}
+2026-11-19T15:38:50.1261142Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch019.source", "exit_code": 0, "seconds": 5.515, "peak_rss_kib": 3639256}
+2026-11-19T15:38:55.1449354Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173ChunkBatch020.source", "exit_code": 0, "seconds": 5.015, "peak_rss_kib": 3610216}
+2026-11-19T15:38:58.1568433Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163B004Data.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3505316}
+2026-11-19T15:39:01.1690558Z {"phase": "Conjectures.LonelinessFourSpeedFinite.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3509580}
+2026-11-19T15:39:04.1812850Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0149.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3524860}
+2026-11-19T15:39:07.1934764Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0151.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3529444}
+2026-11-19T15:39:10.2056297Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0167.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3532460}
+2026-11-19T15:39:13.4692266Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0173.source", "exit_code": 0, "seconds": 3.259, "peak_rss_kib": 3532792}
+2026-11-19T15:39:44.5588143Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163B004Checks000.source", "exit_code": 0, "seconds": 31.085, "peak_rss_kib": 3853792}
+2026-11-19T15:39:49.5760655Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163B004Checks001.source", "exit_code": 0, "seconds": 5.013, "peak_rss_kib": 3603244}
+2026-11-19T15:39:52.0874175Z {"phase": "Conjectures.LonelinessFourSpeedClassificationFinite.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 3501736}
+2026-11-19T15:39:54.5980363Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163B004.source", "exit_code": 0, "seconds": 2.507, "peak_rss_kib": 3489152}
+2026-11-19T15:39:57.3605602Z {"phase": "Conjectures.LonelinessFourSpeedGap.source", "exit_code": 0, "seconds": 2.758, "peak_rss_kib": 3520868}
+2026-11-19T15:40:00.3720882Z {"phase": "Conjectures.LonelinessFiveRunnerPrime0163.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3536516}
+2026-11-19T15:40:03.3843017Z {"phase": "Conjectures.LonelinessFiveRunnerNorm.source", "exit_code": 0, "seconds": 3.008, "peak_rss_kib": 3912544}
+2026-11-19T15:40:06.1456882Z {"phase": "Conjectures.LonelinessFiveRunnerTheorem.source", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 4031976}
+2026-11-19T15:40:58.7918198Z {"phase": "all-owned.audit", "exit_code": 0, "seconds": 52.39, "peak_rss_kib": 4262192}
+2026-11-19T16:11:04.1301037Z {"phase": "Conjectures-exact-closure.kernel", "exit_code": 0, "seconds": 1804.712, "peak_rss_kib": 4273360}
+2026-11-19T16:11:04.3959630Z {"status": "passed", "root": "Conjectures.LonelinessFiveRunnerTheorem", "modules": 250, "support_frames": 7070, "source_mode": "fresh_compilation", "receipt_sha256": "4bcd923b04ce812cab68abd91ed8c6ee102f594a1f59bd310752dbfd79aeb542"}
+2026-11-19T16:11:04.4663790Z ##[group]Run actions/upload-artifact@v4
+2026-11-19T16:11:04.4664388Z with:
+2026-11-19T16:11:04.4664727Z   name: five-runner-exact-1ffeb0932ac9a5674f2d416757d786a85e43ffde
+2026-11-19T16:11:04.4665181Z   path: .candidate-artifacts/five-runner-exact/
+2026-11-19T16:11:04.4665517Z   include-hidden-files: true
+2026-11-19T16:11:04.4665792Z   if-no-files-found: error
+2026-11-19T16:11:04.4666044Z   retention-days: 14
+2026-11-19T16:11:04.4666284Z   compression-level: 6
+2026-11-19T16:11:04.4666530Z   overwrite: false
+2026-11-19T16:11:04.4666749Z env:
+2026-11-19T16:11:04.4666956Z   LEAN_NUM_THREADS: 1
+2026-11-19T16:11:04.4667186Z   UV_USE_IO_URING: 0
+2026-11-19T16:11:04.4667408Z ##[endgroup]
+2026-11-19T16:11:04.6467300Z (node:22840) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-19T16:11:04.6468074Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-19T16:11:04.8436178Z With the provided path, there will be 1009 files uploaded
+2026-11-19T16:11:04.8442686Z Artifact name is valid!
+2026-11-19T16:11:04.8443140Z Root directory input is valid!
+2026-11-19T16:11:05.1864157Z Beginning upload of artifact content to blob storage
+2026-11-19T16:11:06.2632454Z (node:22840) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-19T16:11:06.7948644Z Uploaded bytes 8388608
+2026-11-19T16:11:07.6580423Z Uploaded bytes 16777216
+2026-11-19T16:11:08.4473293Z Uploaded bytes 25165824
+2026-11-19T16:11:09.4605176Z Uploaded bytes 33554432
+2026-11-19T16:11:10.3457366Z Uploaded bytes 41943040
+2026-11-19T16:11:11.4458791Z Uploaded bytes 50331648
+2026-11-19T16:11:12.3572502Z Uploaded bytes 58720256
+2026-11-19T16:11:13.3759303Z Uploaded bytes 67108864
+2026-11-19T16:11:14.4176371Z Uploaded bytes 75497472
+2026-11-19T16:11:14.6038899Z Uploaded bytes 76905066
+2026-11-19T16:11:14.6466719Z Finished uploading artifact content to blob storage!
+2026-11-19T16:11:14.6469893Z SHA256 digest of uploaded artifact zip is 018afd2acad8e32dff6ea07429e068afc8894e43f8375becb4df13e38d76e6c1
+2026-11-19T16:11:14.6471872Z Finalizing artifact upload
+2026-11-19T16:11:15.4717229Z Artifact five-runner-exact-1ffeb0932ac9a5674f2d416757d786a85e43ffde.zip successfully finalized. Artifact ID 14551506873
+2026-11-19T16:11:15.4718346Z Artifact five-runner-exact-1ffeb0932ac9a5674f2d416757d786a85e43ffde has been successfully uploaded! Final size is 76905066 bytes. Artifact ID is 14551506873
+2026-11-19T16:11:15.4725834Z Artifact download URL: https://github.com/1337isnot1337/solved-conjectures/actions/runs/44549751944/artifacts/14551506873
+2026-11-19T16:11:15.5076657Z Post job cleanup.
+2026-11-19T16:11:15.6008998Z [command]/usr/bin/git version
+2026-11-19T16:11:15.6057135Z git version 2.56.1
+2026-11-19T16:11:15.6101627Z Temporarily overriding HOME='/home/runner/work/_temp/5fe56acc-531e-46f3-8f19-f0d4f2bb31e1' before making global git config changes
+2026-11-19T16:11:15.6102869Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T16:11:15.6108640Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T16:11:15.6159086Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T16:11:15.6202180Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T16:11:15.6582573Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T16:11:15.6614152Z http.https://github.com/.extraheader
+2026-11-19T16:11:15.6626020Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-19T16:11:15.6682903Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T16:11:15.7083587Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T16:11:15.7132076Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T16:11:15.7628777Z Cleaning up orphan processes
+2026-11-19T16:11:15.7943152Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

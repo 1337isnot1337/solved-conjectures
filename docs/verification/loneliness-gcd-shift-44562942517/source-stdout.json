@@ -1,0 +1,70 @@
+{
+  "Conjectures.Loneliness": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessCoalescence": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessCoalescenceValue": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessContinuity": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessCoordinateClasses": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessCoordinateSubspace": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessCriticalBase": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessFiveFamily": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessGcdShift": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessGcdShiftCounting": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessIntegerDirection": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessModularRationalWitness": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessModularStrictWitness": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessModularWitness": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessRational": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessRationalSubspace": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  },
+  "Conjectures.LonelinessSubspaceDensity": {
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stderr": ""
+  }
+}
