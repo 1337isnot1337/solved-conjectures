@@ -62,7 +62,7 @@ theorem minimal_gs_le_adjacentStep
     apply Finset.prod_pos
     intro j hj
     exact gs_sq_positive B j (by have := Finset.mem_range.mp hj; omega)
-  exact (mul_le_mul_left hpositive).mp hdet
+  exact (mul_le_mul_iff_right₀ hpositive).mp hdet
 
 theorem minimal_basis_ratio
     (B : Module.Basis (Fin (n + 1)) ℤ (Fin (n + 1) → ℤ))

@@ -23,7 +23,6 @@ theorem gram_linearCombination (v : ι → E) (C : Matrix ι ι ℝ) :
   ext i j
   simp only [Matrix.gram_apply, sum_inner, inner_sum, real_inner_smul_left,
     real_inner_smul_right, Matrix.mul_apply, Matrix.transpose_apply, Finset.sum_mul]
-  rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro a ha
   apply Finset.sum_congr rfl
@@ -127,7 +126,7 @@ theorem reconstruct_from_gramSchmidt (b : ℕ → E) (r : ℕ) (j : Fin r) :
           InnerProductSpace.gramSchmidt ℝ b i.val by
     simp only [gsCoefficients, add_smul, Finset.sum_add_distrib]]
   rw [hdiag, hprefix]
-  simpa only [Nat.Iio_eq_range] using
+  simpa only [Nat.Iio_eq_range, RCLike.ofReal_real_eq_id, id_eq] using
     (InnerProductSpace.gramSchmidt_def'' ℝ b j.val).symm
 
 theorem gramSchmidt_gram_diagonal (b : ℕ → E) (r : ℕ) :

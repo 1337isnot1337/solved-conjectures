@@ -26,7 +26,7 @@ theorem four_speed_below_gap_value (ds : List ℕ) (hlen : ds.length = 4)
 and the already verified one-, two-, and three-speed cases. -/
 theorem four_speed_lonelyRunnerBound : LonelyRunnerBound 4 := by
   intro ds hne hnodup hlen hpositive
-  change (1 / 5 : ℝ) ≤ value ds
+  norm_num
   by_cases hsmall : ds.length ≤ 3
   · have h := SmallRunner.lonelyRunnerBound 3 (by decide)
       ds hne hnodup hsmall hpositive

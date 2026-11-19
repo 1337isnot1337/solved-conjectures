@@ -38,7 +38,7 @@ theorem euclidean_mem_prefix {w : ℕ → ι → ℤ} {r : ℕ} {x : ι → ℝ}
   change f x ∈ (Submodule.span ℝ
     ((fun i => integerVector (w i)) '' Set.Iio r)).map f at h
   rw [Submodule.map_span, Set.image_image] at h
-  simpa only [f, WithLp.linearEquiv_symm_apply, LinearEquiv.coe_coe,
+  simpa only [f, LinearEquiv.coe_coe, WithLp.coe_symm_linearEquiv,
     Function.comp_def, prefixSpan, euclideanVector] using h
 
 /-- Every point of an integer prefix space is close, modulo an integer vector,
@@ -61,9 +61,8 @@ theorem coordinate_rounding_along_first (w : ℕ → ι → ℤ) (r : ℕ)
   let Z : ι → ℤ := fun j => ∑ i ∈ Finset.range r, z i * w (i+1) j
   refine ⟨a, Z, fun j => ?_⟩
   have hcoord : error j = x j - (Z j : ℝ) - (a • integerVector (w 0)) j := by
-    change (WithLp.ofLp error) j = _
     simp only [error, euclideanVector, WithLp.ofLp_sub, WithLp.ofLp_smul,
-      WithLp.ofLp_sum, WithLp.ofLp_toLp, Pi.sub_apply, Pi.smul_apply,
+      WithLp.ofLp_sum, Pi.sub_apply, Pi.smul_apply,
       Finset.sum_apply, integerVector, Z, Int.cast_sum, Int.cast_mul, smul_eq_mul]
     ring
   rw [← hcoord, ← Real.norm_eq_abs]
@@ -80,7 +79,7 @@ theorem prefix_spaceValue_le (w : ℕ → ι → ℤ) (r : ℕ) :
   obtain ⟨a, z, hz⟩ := coordinate_rounding_along_first w r hx
   have hy : a • integerVector (w 0) ∈ Submodule.span ℝ {integerVector (w 0)} :=
     Submodule.smul_mem _ a (Submodule.mem_span_singleton_self _)
-  exact (point_transfer z hz).trans (add_le_add_right (point_le_spaceValue hy) _)
+  exact (point_transfer z hz).trans (add_le_add (point_le_spaceValue hy) le_rfl)
 
 /-- A lower bound for a containing torus and an upper bound for its speed line
 give the squared prefix estimate used by the finite product certificates. -/

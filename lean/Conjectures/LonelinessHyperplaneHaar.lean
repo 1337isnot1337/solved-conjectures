@@ -76,7 +76,8 @@ theorem normalPhase_measurePreserving (m : ι → ℤ) (hm : PrimitiveNormal m)
     (c : ι → UnitAddCircle) :
     MeasurePreserving (normalPhase m c)
       (volume : Measure (ι → UnitAddCircle)) volume := by
-  simpa only [normalPhase, map_sub, Function.comp_def] using
+  change MeasurePreserving (fun s : ι → UnitAddCircle => normalHom m (c - s)) _ _
+  simpa only [map_sub, Function.comp_def] using
     (Measure.measurePreserving_sub_left (volume : Measure UnitAddCircle) (normalHom m c)).comp
       (normalHom_measurePreserving m hm)
 
@@ -98,7 +99,7 @@ theorem normalPhase_norm_distribution (m : ι → ℤ) (hm : PrimitiveNormal m)
   have hs : {s : ι → UnitAddCircle | ‖normalPhase m c s‖ ≤ r} =
       normalPhase m c ⁻¹' Metric.closedBall 0 r := by
     ext s
-    simp only [Set.mem_setOf_eq, Set.mem_preimage, Metric.mem_closedBall, dist_zero_right]
+    simp only [Set.mem_ofPred_eq, Set.mem_preimage, Metric.mem_closedBall, dist_zero_right]
   rw [hs, he]
   exact AddCircle.volume_closedBall (T := (1 : ℝ)) (x := 0) r
 

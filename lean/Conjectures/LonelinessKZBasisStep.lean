@@ -56,6 +56,7 @@ theorem next_sub_prefixProjection (b : ℕ → E) (i : ℕ) :
         adjacentCoefficient b i • InnerProductSpace.gramSchmidt ℝ b i := by
   rw [gramSchmidt_sub_prefixProjection, prefixProjection_succ,
     Submodule.starProjection_singleton]
+  simp only [RCLike.ofReal_real_eq_id, id_eq]
   dsimp only [adjacentCoefficient]
   module
 
@@ -98,7 +99,9 @@ theorem gramSchmidt_rounded_adjacent_norm (b c : ℕ → E) (i : ℕ)
   have hround := NearestPlane.round_error_norm_sq (adjacentCoefficient b i)
     (InnerProductSpace.gramSchmidt ℝ b i)
   simpa only [← sub_eq_add_neg, norm_add_sq_real, horth, mul_zero, add_zero] using
-    add_le_add_left hround (‖InnerProductSpace.gramSchmidt ℝ b (i + 1)‖ ^ 2)
+    add_le_add (le_rfl :
+      ‖InnerProductSpace.gramSchmidt ℝ b (i + 1)‖ ^ 2 ≤
+        ‖InnerProductSpace.gramSchmidt ℝ b (i + 1)‖ ^ 2) hround
 
 end
 

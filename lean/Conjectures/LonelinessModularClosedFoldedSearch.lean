@@ -49,8 +49,8 @@ theorem oddSpeeds_ofFn_length_congr {n : ℕ} {x v : Fin n → ℕ}
     change decide (v i%2 = 1) = decide (x i%2 = 1)
     rw [hparity i]
   have hcount := congrArg (List.countP id) hmap
-  simpa only [List.countP_map, Function.comp_def, id_eq,
-    List.countP_eq_length_filter, Search.oddSpeeds] using hcount
+  simp only [List.countP_map, Function.comp_def, id_eq] at hcount
+  simpa only [p, List.countP_eq_length_filter, Search.oddSpeeds] using hcount
 
 theorem represents_oneOdd {n m : ℕ} {x v : Fin n → ℕ}
     (hm : 1 < m) (he : m%2 = 0) (hrep : Represents m x v)
@@ -124,7 +124,7 @@ theorem ten_speed_oneOddSound
   have hlower := Search.ten_speed_one_odd_value_lower hbound (List.ofFn v)
     (by simp) (hnodup v hadm) hpositive' hone
   have hstrict : (1/11 : ℝ) < 1/10 := by norm_num
-  exact hstrict.trans_le hlower
+  simpa using hstrict.trans_le hlower
 
 /-- Every branch covers all binary lifts. Soundness is by induction on the
 supplied finite tree, with no assumption that a search algorithm terminates. -/
@@ -190,7 +190,7 @@ theorem closedPair_excludes_le (v : Fin 2 → ℕ)
   have hvalue := hasRationalWitness_value_strict_of_nondvd
     (by decide : 0 < 4) (by decide : 2*1 < 4) (by decide : 0 < 7)
     hcheck.1 (represents_witness (by decide) hrep hcheck.2)
-  exact not_le_of_gt hvalue
+  simpa using not_le_of_gt hvalue
 
 end Closed
 
