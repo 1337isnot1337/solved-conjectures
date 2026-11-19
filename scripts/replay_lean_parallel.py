@@ -32,9 +32,11 @@ from replay_lean import MODULE, PROJECT_NAMESPACES
 
 CHECKER_SHA256 = "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
 # Pinned EmitC calls lean_run_main: one OS launcher joins one Lean main
-# thread, in addition to the ordinary task pool. Worker tasks on this
-# checker path run synchronous imports/replay; any further growth is rejected.
-RUNTIME_CONTROL_THREADS = 2
+# thread. runtime/init_module.cpp also calls initialize_libuv(), whose
+# runtime/libuv.cpp starts one persistent event-loop lthread. These three
+# runtime threads are additional to the ordinary task pool. Any further
+# growth (including compensating task threads) is rejected by this guard.
+RUNTIME_CONTROL_THREADS = 3
 
 
 def name_is_prefix(prefix, module):
@@ -116,7 +118,9 @@ def run_checker(command, *, lean, env, log, workers, memory_limit_mib,
     if metrics is None:
         metrics = {}
     metrics.update(sampled_peak_rss_kib=0, sampled_peak_high_water_kib=0,
-                   sampled_peak_threads=0, sampled_peak_processes=0, thread_limit=workers + RUNTIME_CONTROL_THREADS)
+                   sampled_peak_threads=0, sampled_peak_processes=0,
+                   runtime_control_threads=RUNTIME_CONTROL_THREADS,
+                   thread_limit=workers + RUNTIME_CONTROL_THREADS)
     started = time.monotonic()
     with log.open("w", encoding="utf-8") as stream:
         process = subprocess.Popen(command, cwd=lean, env=env, stdout=stream,
@@ -132,7 +136,7 @@ def run_checker(command, *, lean, env, log, workers, memory_limit_mib,
                 if stats["processes"] > 1:
                     raise RuntimeError("Stock checker unexpectedly spawned a child process")
                 if stats["threads"] > workers + RUNTIME_CONTROL_THREADS:
-                    raise RuntimeError(f"Stock checker exceeded the {workers + RUNTIME_CONTROL_THREADS}-thread guard")
+                    raise RuntimeError(f"Stock checker exceeded the {workers + RUNTIME_CONTROL_THREADS}-thread guard: observed {stats['threads']} threads in {stats['processes']} process(es)")
                 if stats["rss_kib"] > memory_limit_mib * 1024:
                     raise RuntimeError(f"Stock checker exceeded the {memory_limit_mib} MiB RSS guard")
                 if time.monotonic() - started > timeout_seconds:

@@ -10,21 +10,21 @@
     },
     {
       "path": "scripts/replay_lean_parallel.py",
-      "blob_sha": "58796b846f8ed7476f7545b0451b635ba5dcd910",
-      "sha256": "31d44eab2e825dfb18b3fbecd1b21655210141eaf30093bf473c630d0499c69f",
-      "characters": 14419
+      "blob_sha": "b750289f499ca8b0786f918a25fbf220c6e344f9",
+      "sha256": "a522cf656d288918ef9c7bbe7b9fb3ae6b162edac947db0345bf1bb7ee1a0e8f",
+      "characters": 14721
     },
     {
       "path": "scripts/test_lean_parallel.py",
-      "blob_sha": "df3559c2b9dea3c6070026c16bcf6dbfd0ad17b3",
-      "sha256": "675403663e248f796a3fc6661390d88c10508cd3dea6959f4adf193f96393ee1",
-      "characters": 15186
+      "blob_sha": "314df9f165658aea918c99476cd77197c8fbdd07",
+      "sha256": "53b526e6ce974893f78fb464aa77d002b82b2441c96a3d41a521486bba215700",
+      "characters": 15742
     },
     {
       "path": "scripts/verify_lean_parallel_candidate.py",
-      "blob_sha": "5e6450a0717f78dbd2741a07d986436b3c17bdca",
+      "blob_sha": "9d35435260717e4d2ab81e372dea07d29bdf6823",
       "sha256": "6545556b44d03f51a40a1c598b4c9f304f2ccf0eebd3e3f5c9544047d2aec522",
-      "characters": 26995
+      "characters": 27130
     },
     {
       "path": ".github/workflows/lean-parallel-candidate.yml",
@@ -72,8 +72,8 @@
   },
   "limitations": [
     "No local runtime is currently available.",
-    "The 22 protocol/process tests and fresh seven-module source fixture passed in prior hosted attempts. The corrected two-control-thread bound requires fresh execution with the same test suite.",
-    "Prior hosted attempts failed at mixed legacy/modern audit imports before kernel replay; this corrected audit partition still requires fresh hosted validation.",
+    "The 22 protocol/process tests, fresh seven-module Lean source fixture, and both all-owned audit partitions passed in run 44513618580. Its first kernel measurement was rejected because the guard omitted the runtime's persistent libuv event-loop thread.",
+    "The corrected three-runtime-thread guard and its exact-threshold process test require fresh hosted validation at 1, 2, 3, and 4 requested workers.",
     "The wrappers are opt-in candidates and do not replace the accepted gate."
   ],
   "workflow": ".github/workflows/lean-parallel-candidate.yml",
@@ -91,12 +91,12 @@
   },
   "runtime_thread_accounting": {
     "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
-    "control_threads": 2,
+    "control_threads": 3,
     "fixed_environment": {
       "LEAN_MAIN_USE_THREAD": "1"
     },
-    "guard": "requested ordinary task workers + two control threads; reject any additional threads or any child process",
-    "reason": "Generated C main calls lean_run_main. The runtime starts the Lean main function on a separate stack-managed thread and joins it from the OS launcher. The checker schedules default-priority replay tasks, and waits for them from the Lean main thread.",
+    "guard": "requested ordinary task workers + three runtime threads (OS launcher, Lean main, libuv event loop); reject any additional threads or any child process",
+    "reason": "Generated C main calls lean_run_main. The runtime starts the Lean main function on a separate stack-managed thread and joins it from the OS launcher. Runtime initialization also starts a persistent libuv event-loop thread before Lean main. The checker schedules default-priority replay tasks, and waits for them from the Lean main thread. The total sampled guard remains strict and rejects any extra compensating worker threads.",
     "sources": [
       {
         "path": "src/runtime/thread.cpp",
@@ -117,7 +117,33 @@
         "path": "src/Init/System/IO.lean",
         "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/src/Init/System/IO.lean",
         "sha256": "409886ee25dd6ee5455dbb83269edbef98012dd22c5b6c45198b47514aeaca25"
+      },
+      {
+        "path": "src/runtime/init_module.cpp",
+        "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/src/runtime/init_module.cpp",
+        "sha256": "b7f1c9abf937c97f668f7207652ed86965731c5ed6f5bd5c8f0a66976919b9a4"
+      },
+      {
+        "path": "src/runtime/libuv.cpp",
+        "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/src/runtime/libuv.cpp",
+        "sha256": "ec9e10a37af399edb33361b205e16cb9d3a6839607ed5de5f1f2368ddae1a5ea"
+      },
+      {
+        "path": "src/runtime/uv/event_loop.cpp",
+        "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/src/runtime/uv/event_loop.cpp",
+        "sha256": "22c387a170adf2118953c1fca9e85fa6ad761c8a6ba32fc09e101a6490d22966"
       }
-    ]
+    ],
+    "observed_prior_failure": {
+      "run_id": 44513618580,
+      "job_id": 135523848622,
+      "head_sha": "cfcd8455dbef422c1b8b12b4aef0595dd796da88",
+      "fixture_source": "passed",
+      "fixture_modern_audit": "passed",
+      "fixture_legacy_audit": "passed",
+      "first_kernel_workers": 1,
+      "error": "Stock checker exceeded the 3-thread guard",
+      "interpretation": "Runtime source inspection identifies the uncounted persistent libuv event-loop thread; no kernel pass is claimed for this failed run."
+    }
   }
 }

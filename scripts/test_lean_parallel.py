@@ -261,8 +261,16 @@ class ProcessTests(unittest.TestCase):
             build.stop_processes([process])
 
     def test_checker_thread_guard(self):
+        # Emulate one worker plus launcher, Lean main, and libuv control threads.
+        allowed = ('import threading,time; '
+            '[threading.Thread(target=time.sleep,args=(0.2,)).start() for _ in range(3)]')
+        result = replay.run_checker([sys.executable, "-c", allowed], lean=self.path,
+            env=os.environ.copy(), log=self.path / "allowed-threads.log",
+            workers=1, memory_limit_mib=128, timeout_seconds=2)
+        self.assertEqual(result["thread_limit"], 4)
+        self.assertEqual(result["runtime_control_threads"], 3)
         script = ('import threading,time; '
-            '[threading.Thread(target=time.sleep,args=(5,),daemon=True).start() for _ in range(3)]; time.sleep(5)')
+            '[threading.Thread(target=time.sleep,args=(5,),daemon=True).start() for _ in range(4)]; time.sleep(5)')
         with self.assertRaisesRegex(RuntimeError, "thread guard"):
             replay.run_checker([sys.executable, "-c", script], lean=self.path, env=os.environ.copy(),
                 log=self.path / "threads.log", workers=1, memory_limit_mib=128, timeout_seconds=2)
