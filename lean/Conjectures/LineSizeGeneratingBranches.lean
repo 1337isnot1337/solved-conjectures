@@ -92,7 +92,7 @@ theorem eight_coeff_cumulativeCore (r n : ℕ) (hr : 3 ≤ r) :
     (8 : ℚ)*coeff n (cumulativeCore r)=∑ beta : Fin 2, coeff n (branchSeries r beta) := by
   have h := congrArg (coeff n) (eight_cumulativeCore r hr)
   rw [map_nsmul,map_sum] at h
-  simpa only [nsmul_eq_mul] using h
+  simpa only [nsmul_eq_mul,Nat.cast_ofNat] using h
 
 /-- The original domain remains explicit: these branches start at core length three. -/
 theorem eight_coeff_count_split (n : ℕ) :
@@ -122,7 +122,7 @@ theorem weightedCoefficient_split (n : ℕ) :
       (∑ beta : Fin 2, coeff n (branchSeries 0 beta))+
       (∑ beta : Fin 2, coeff n (branchSeries 1 beta))+
       (∑ beta : Fin 2, coeff n (branchSeries 2 beta)) := by
-    simp only [lowExtension,map_sum,sum_range_succ,sum_range_zero,zero_add]
+    simp only [lowExtension,map_add,map_sum,sum_range_succ,sum_range_zero,zero_add]
   rw [weightedCoefficient,sum_range_eq_three_add_Ico n
     (fun r => ∑ beta : Fin 2, coeff n (branchSeries r beta)) hzero,hlow]
 
@@ -148,11 +148,13 @@ theorem lowExtension_eq :
   have h1 : (∑ beta : Fin 2, branchSeries 1 beta)=
       2*(PowerSeries.X : PowerSeries ℚ)*(1+PowerSeries.X)*(geometric 1)^2 := by
     rw [sum_branchSeries]
-    norm_num [gapSeries,nsmul_eq_mul] <;> ring
+    norm_num [gapSeries,nsmul_eq_mul]
+    ring
   have h2 : (∑ beta : Fin 2, branchSeries 2 beta)=
       4*(PowerSeries.X : PowerSeries ℚ)^4*(1+PowerSeries.X^2)*(geometric 1)^2*geometric 2 := by
     rw [sum_branchSeries]
-    norm_num [gapSeries,Fin.prod_univ_two,nsmul_eq_mul] <;> ring
+    norm_num [gapSeries,Fin.prod_univ_two,nsmul_eq_mul]
+    ring
   unfold lowExtension
   rw [sum_range_succ,sum_range_succ,sum_range_succ,sum_range_zero,zero_add,h0,h1,h2]
 
@@ -184,7 +186,7 @@ theorem eight_coeff_count_extension (n : ℕ) :
   have h := congrArg (coeff n) eight_smallCore
   simp only [map_nsmul,map_add] at h
   have hs : (8 : ℚ)*coeff n smallCore=coeff n lowExtension+coeff n extensionCorrection := by
-    simpa only [nsmul_eq_mul] using h
+    simpa only [nsmul_eq_mul,Nat.cast_ofNat] using h
   rw [eight_coeff_count_split,hs,weightedCoefficient_split]
   ring
 

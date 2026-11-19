@@ -38,10 +38,11 @@ theorem scale_sq (n : ℕ) : (scale n)^2=Profile.A/(n : ℝ) :=
 theorem index_eq {n : ℕ} (hn : 0 < n) : (n : ℝ)=Profile.A/(scale n)^2 := by
   have hnR : (n : ℝ) ≠ 0 := (Nat.cast_pos.mpr hn).ne'
   rw [scale_sq]
-  field_simp [hnR,Profile.A_pos.ne'] <;> ring
+  field_simp [hnR,Profile.A_pos.ne']
 
 theorem scale_tendsto_zero : Tendsto scale atTop (𝓝 0) := by
-  simpa only [scale,Real.sqrt_zero,Function.comp_def] using
+  change Tendsto (fun n : ℕ => Real.sqrt (Profile.A/(n : ℝ))) atTop (𝓝 0)
+  simpa only [Real.sqrt_zero,Function.comp_def] using
     (Real.continuous_sqrt.tendsto 0).comp
       (tendsto_const_div_atTop_nhds_zero_nat Profile.A)
 
@@ -63,7 +64,7 @@ theorem mul_scale_eq_sqrt {n : ℕ} (hn : 0 < n) :
   apply (sq_eq_sq₀ (mul_nonneg (Nat.cast_nonneg n) (scale_nonneg n))
     (Real.sqrt_nonneg _)).mp
   rw [Real.sq_sqrt (mul_nonneg Profile.A_pos.le (Nat.cast_nonneg n)),mul_pow,scale_sq]
-  field_simp [hnR] <;> ring
+  field_simp [hnR]
 
 theorem exponent_eq {n : ℕ} (hn : 0 < n) :
     (n : ℝ)*scale n+Profile.A/scale n=2*Real.sqrt (Profile.A*(n : ℝ)) := by
@@ -138,7 +139,7 @@ theorem normalizedConstant_mul_fourthRoot :
   unfold normalizedConstant sharpConstant
   rw [Real.sqrt_mul (by norm_num : (0 : ℝ) ≤ 6) Profile.A,
     Real.sqrt_mul (by norm_num : (0 : ℝ) ≤ 6) Real.pi,hsq]
-  field_simp [hroot,h6,hpi] <;> ring
+  field_simp [hroot,h6,hpi]
 
 theorem sharpModel_eq_rpow (n : ℕ) :
     sharpModel n=(3/(16*Real.sqrt (6*Real.pi)*Profile.A^(1/4 : ℝ)))*
@@ -156,7 +157,7 @@ theorem half_normalizer_bound {n : ℕ} (hn : 0 < n) :
     linarith
   have hb : Profile.A ≤ scale n*Real.exp ((n : ℝ)*scale n+Profile.A/scale n) := by
     simpa only [mul_comm] using (div_le_iff₀ ht).mp he
-  apply (div_le_div_iff₀ (normalizer_pos hn) (by positivity : 0 < 2*Profile.A)).mpr
+  apply (div_le_div_iff₀ (normalizer_pos hn) (mul_pos (by norm_num : (0 : ℝ) < 2) Profile.A_pos)).mpr
   calc
     (1/2 : ℝ)*(2*Profile.A)=Profile.A := by ring
     _ ≤ scale n*Real.exp ((n : ℝ)*scale n+Profile.A/scale n) := hb
@@ -175,7 +176,7 @@ theorem t_div_one_sub_exp_neg_tendsto {α : Type*} {l : Filter α} {t : α → �
     (ht : Tendsto t l (𝓝 0)) (htne : ∀ᶠ k in l, t k ≠ 0) :
     Tendsto (fun k => t k/(1-Real.exp (-t k))) l (𝓝 1) := by
   have hm : Tendsto (fun k => EulerKernel.meanExp (t k)) l (𝓝 1) := by
-    simpa only [EulerKernel.meanExp_zero] using
+    simpa only [EulerKernel.meanExp_zero,Function.comp_def] using
       (EulerKernel.meanExp_analyticAt 0).continuousAt.tendsto.comp ht
   have hi : Tendsto (fun k => (EulerKernel.meanExp (t k))⁻¹) l (𝓝 1) := by
     simpa only [inv_one] using hm.inv₀ (by norm_num : (1 : ℝ) ≠ 0)

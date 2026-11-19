@@ -48,9 +48,9 @@ theorem integral_coefficientFourierTerm (a : ℕ → ℂ) (q : ℝ) (n m : ℕ) 
   rw [intervalIntegral.integral_const_mul,integral_frequency]
   by_cases hmn : m=n
   · subst m
-    rw [ite_eq_left rfl]
+    simp only [ite_eq_left (show n=n from rfl)]
     ring
-  · rw [ite_eq_right hmn,mul_zero]
+  · simp only [ite_eq_right hmn,mul_zero]
 
 theorem hasSum_integral_coefficientFourierTerm (a : ℕ → ℂ) {q : ℝ} (hq : 0 ≤ q)
     (hsum : Summable (fun m : ℕ => ‖a m‖*q^m)) (n : ℕ) :

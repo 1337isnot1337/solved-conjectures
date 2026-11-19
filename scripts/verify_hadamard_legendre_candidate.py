@@ -81,9 +81,15 @@ TASKS = {
         'HadamardLegendre.commonMultiplierGroup_odd_card',
         'HadamardLegendre.multiplier_subgroup_odd_card',
     ]),
+    'order-nine': ('Conjectures.HadamardLegendreOrderNine', [
+        'HadamardLegendre.prime_automorphism_fixed_card_nine',
+        'HadamardLegendre.permutation_eq_one_of_prime_card_of_fixed',
+        'HadamardLegendre.order_three_difference_range_fixed',
+        'HadamardLegendre.order_three_difference_square_zero',
+    ]),
 }
 
-DEFAULT_TASKS = ("centering", "involutions")
+DEFAULT_TASKS = ("centering", "involutions", "order-nine")
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-legendre-candidates.yml',
  'lean/lake-manifest.json',

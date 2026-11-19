@@ -142,7 +142,7 @@ theorem scalarFactor_log_quadratic_error {q x : ℝ}
   have hparam : a + a ^ 2 = q / (1 - q) ^ 2 := by
     dsimp [a]
     field_simp
-    <;> ring
+    ring
   let target : ℂ := l - (((a + a ^ 2) * x ^ 2 / 2 : ℝ) : ℂ)
   have hid : w + w ^ 2 / 2 - target =
       (w - l + ((a * x ^ 2 / 2 : ℝ) : ℂ)) + (w ^ 2 - l ^ 2) / 2 := by

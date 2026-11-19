@@ -19,6 +19,7 @@ on:
           - inversion
           - prime-quotients
           - involutions
+          - order-nine
   push:
     paths:
       - 'lean/Conjectures/HadamardLegendre*.lean'

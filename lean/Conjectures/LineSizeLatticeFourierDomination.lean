@@ -151,8 +151,10 @@ theorem measurable_jointStep (h c t : ℝ) (A : ℕ → ℝ → ℂ)
     (hA : ∀ r, Measurable (A r)) : Measurable (jointStep h c t A) := by
   have hmA : Measurable (fun p : ℕ × ℝ => A p.1 p.2) :=
     measurable_from_prod_countable_right hA
+  have hmIndex : Measurable (fun p : ℝ × ℝ => (⌊(p.2-c)/h⌋₊, p.1)) := by
+    fun_prop
   have hev : Measurable (fun p : ℝ × ℝ => A ⌊(p.2-c)/h⌋₊ p.1) :=
-    hmA.comp (by fun_prop)
+    hmA.comp hmIndex
   have hmStep : Measurable (fun p : ℝ × ℝ => step h c (fun r => A r p.1) p.2) :=
     Measurable.ite (measurableSet_lt measurable_snd measurable_const) measurable_const hev
   have hs : MeasurableSet {p : ℝ × ℝ | |t * Real.sqrt t * p.1| ≤ Real.pi} :=
@@ -167,14 +169,14 @@ theorem jointStep_norm_bound {C a b h c t : ℝ} (hC : 0 ≤ C) (ha : 0 < a)
     (hgap : ∀ r : ℕ, (r:ℝ)*t < a → b ≤ t*(c+h*(r:ℝ))^2) (p : ℝ × ℝ) :
     ‖jointStep h c t A p‖ ≤ jointEnvelope C a b p := by
   by_cases hs : |t * Real.sqrt t * p.1| ≤ Real.pi
-  · rw [jointStep, if_pos hs]
+  · rw [jointStep, ite_eq_left hs]
     have hcoef := coefficient_half_gaussian_bound hC ha hb ht hsmall A hA hgap hs
     have hbound := step_norm_le_halfGaussianEnvelope hh hh1
       (mul_nonneg hC (outerEnvelope_nonneg ha hb p.1)) (fun r => A r p.1) hcoef p.2
     apply hbound.trans_eq
-    unfold halfGaussianEnvelope jointEnvelope
+    unfold jointEnvelope halfGaussianEnvelope
     ring
-  · rw [jointStep, if_neg hs, norm_zero]
+  · rw [jointStep, ite_eq_right hs, norm_zero]
     exact jointEnvelope_nonneg hC ha hb p
 
 theorem integrable_jointStep {C a b h c t : ℝ} (hC : 0 ≤ C) (ha : 0 < a)
@@ -206,7 +208,7 @@ theorem integral_jointStep {C a b h c t : ℝ} (hC : 0 ≤ C) (ha : 0 < a)
       (mul_nonneg hC (outerEnvelope_nonneg ha hb y)) (fun r => A r y) hcoef
     simp only [jointStep, hs, ite_true]
     exact integral_step hh (fun r => A r y) hsum
-  · simp [jointStep, hs]
+  · simp only [jointStep, ite_eq_right hs, integral_zero]
 
 theorem jointStep_dominated_convergence {ι : Type*} {l : Filter ι} [l.IsCountablyGenerated]
     {C a b : ℝ} (hC : 0 ≤ C) (ha : 0 < a) (hb : 0 < b)

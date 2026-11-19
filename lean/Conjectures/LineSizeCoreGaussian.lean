@@ -29,7 +29,7 @@ theorem coreCoordinate_grid (r : ℕ) {t : ℝ} (ht : 0 < t) :
   change (-Profile.u0 / sqrt t + sqrt t * (r : ℝ)) * sqrt t =
     (r : ℝ) * t - Profile.u0
   calc
-    _ = -Profile.u0 + (sqrt t) ^ 2 * (r : ℝ) := by field_simp; ring
+    _ = -Profile.u0 + (sqrt t) ^ 2 * (r : ℝ) := by field_simp
     _ = _ := by rw [Real.sq_sqrt ht.le]; ring
 
 theorem normalizedWeight_global_gaussian (r : ℕ) {β t : ℝ}
@@ -109,10 +109,10 @@ theorem normalizedWeight_gaussian_bound :
           rw [abs_div, abs_of_pos hs]
           ring
     have hcoeff : |z| / δ ≤ C * (1 + |z|) := by
-      have hdelta : 0 < 1 / δ := one_div_pos.mpr hδ
+      have hdelta : 0 < δ⁻¹ := inv_pos.mpr hδ
       dsimp [C]
-      rw [div_eq_mul_inv]
-      nlinarith [abs_nonneg z]
+      simp only [div_eq_mul_inv, one_mul]
+      nlinarith [mul_nonneg hK.le (abs_nonneg z)]
     exact (normalizedWeight_global_gaussian r hβ ht).trans
       (mul_le_mul_of_nonneg_right (hinv.trans hcoeff) (Real.exp_pos _).le)
 

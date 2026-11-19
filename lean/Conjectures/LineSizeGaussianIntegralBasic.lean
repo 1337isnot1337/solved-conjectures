@@ -89,7 +89,7 @@ theorem iterated_integral_product {a : ℝ} (ha : 0 < a) (b c : ℝ) :
   simp_rw [inner_integral ha]
   rw [integral_const_mul]
   simp_rw [← Complex.ofReal_exp]
-  rw [integral_ofReal, integral_gaussian]
+  rw [integral_complex_ofReal, integral_gaussian]
 
 theorem effective_quadratic_pos {a b : ℝ} (ha : 0 < a) (hb : 0 < b) (c : ℝ) :
     0 < b+c^2/(4*a) := by positivity

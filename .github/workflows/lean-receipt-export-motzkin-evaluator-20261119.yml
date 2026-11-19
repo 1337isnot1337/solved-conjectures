@@ -1,4 +1,4 @@
-name: Export checked Motzkin evaluator receipt
+name: Export checked evaluator and certificate receipts
 
 on:
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
                       redirected.remove_header('Authorization')
                   return redirected
           opener = urllib.request.build_opener(PublicArtifactRedirect())
-          specs = [{"task":"evaluator","artifact":14522030744,"digest":"4cc7787fc6c4a140cf9a3525dbd96192700f4ef8c078cb974b692505daa61920","modules":65,"required":15,"path":"docs/verification/motzkin-evaluator-df244bd9.json"}]
+          specs = [{"task":"evaluator","artifact":14522030744,"digest":"4cc7787fc6c4a140cf9a3525dbd96192700f4ef8c078cb974b692505daa61920","modules":65,"required":15,"path":"docs/verification/motzkin-evaluator-df244bd9.json","commit":"df244bd98eb43f1efc32d92d8e002dc461be58bb","checks":["strict source checks, warnings treated as errors","module-ownership axiom whitelist and required theorems","independent exact-closure kernel replay"]},{"task":"rational-intervals","artifact":14524491171,"digest":"645dae844cea4f67ddd2faece901d7a1682960d29ab262ed39c8f49f74ca4576","modules":46,"required":8,"path":"docs/verification/motzkin-rational-intervals-ad125705.json","commit":"ad125705ce715d289be1a89a74e42d6ac095402b","checks":["strict source checks, warnings treated as errors","module-ownership axiom whitelist and required theorems","independent exact-closure kernel replay"]},{"task":"main","artifact":14524375870,"digest":"05f2744e1e6dc470a21de5c4e398a46b8166f3686f94ed50d35da4e2c7179a80","modules":33,"required":14,"path":"docs/verification/loneliness-support257-10ebb0e4.json","commit":"10ebb0e4cc69c25871fd339f8207ced070a018d7","checks":["deterministic split-data reproduction","strict source checks, warnings treated as errors","module-ownership axiom whitelist and required theorems","independent exact-closure kernel replay"]},{"task":"fibers","artifact":14521441889,"digest":"4581a436091ff320303611f9a60364daec0166ee6cd22afa4334cbb7cd1618b0","modules":2,"required":5,"path":"docs/verification/hadamard598-fibers-e911b12c.json","commit":"e911b12c6ee8eb2ae02a0226e855f9314b24237e","checks":["strict source checks, warnings treated as errors","module-ownership axiom whitelist and required theorems","independent exact-closure kernel replay"]}]
           for spec in specs:
               url = ('https://api.github.com/repos/' + os.environ['GITHUB_REPOSITORY']
                      + '/actions/artifacts/' + str(spec['artifact']) + '/zip')
@@ -42,15 +42,12 @@ jobs:
               matches = [n for n in archive.namelist() if n == 'receipt.json' or n.endswith('/receipt.json')]
               assert len(matches) == 1, matches
               receipt = json.loads(archive.read(matches[0]))
-              assert receipt['commit'] == 'df244bd98eb43f1efc32d92d8e002dc461be58bb'
+              assert receipt['commit'] == spec['commit']
               assert receipt['task'] == spec['task']
               assert receipt['status'] == 'passed'
               assert len(receipt['project_modules']) == spec['modules']
               assert len(receipt['required_theorems']) == spec['required']
-              assert receipt['completed_checks'] == [
-                  'strict source checks, warnings treated as errors',
-                  'module-ownership axiom whitelist and required theorems',
-                  'independent exact-closure kernel replay']
+              assert receipt['completed_checks'] == spec['checks']
               print('RECEIPT_JSON ' + spec['path'] + ' ' +
                     json.dumps(receipt, sort_keys=True, separators=(',', ':')), flush=True)
               print('PASS exact archive and receipt metadata: ' + spec['task'])
