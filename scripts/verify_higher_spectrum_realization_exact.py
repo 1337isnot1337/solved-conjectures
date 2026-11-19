@@ -59,6 +59,7 @@ ROOTS = {
     ],
     "triangles": ["Conjectures.LonelinessHigherTriangleConsequences"],
     "seven-low-gap": ["Conjectures.LonelinessSevenLowGapInput"],
+    "product-plane-speeds": ["Conjectures.LonelinessProductPlaneSpeeds"],
     "six-plane-semantics": [
         "Conjectures.LonelinessSixPlaneClassificationCore",
         "Conjectures.LonelinessSixPlaneFiveInput",

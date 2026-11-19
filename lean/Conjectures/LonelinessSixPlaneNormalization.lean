@@ -13,18 +13,24 @@ open CoordinateSubspace
 theorem bool_signs_coverage : ∀ b : Fin 6 → Bool, b 0 = true →
     ∃ mask : Fin 32, ∀ i, signs mask i = if b i then (1 : ℤ) else -1 := by
   intro b hb
-  let m : ℕ := (if b 1 then 1 else 0) + (if b 2 then 2 else 0) +
-    (if b 3 then 4 else 0) + (if b 4 then 8 else 0) + (if b 5 then 16 else 0)
-  have hm : m < 32 := by
-    dsimp [m]
-    cases b 1 <;> cases b 2 <;> cases b 3 <;> cases b 4 <;> cases b 5 <;> decide +kernel
-  refine ⟨⟨m, hm⟩, ?_⟩
+  have hcover (b₁ b₂ b₃ b₄ b₅ : Bool) :
+      ∃ mask : Fin 32,
+        signs mask 1 = (if b₁ then (1 : ℤ) else -1) ∧
+        signs mask 2 = (if b₂ then (1 : ℤ) else -1) ∧
+        signs mask 3 = (if b₃ then (1 : ℤ) else -1) ∧
+        signs mask 4 = (if b₄ then (1 : ℤ) else -1) ∧
+        signs mask 5 = (if b₅ then (1 : ℤ) else -1) := by
+    cases b₁ <;> cases b₂ <;> cases b₃ <;> cases b₄ <;> cases b₅ <;> decide +kernel
+  obtain ⟨mask, h₁, h₂, h₃, h₄, h₅⟩ := hcover (b 1) (b 2) (b 3) (b 4) (b 5)
+  refine ⟨mask, ?_⟩
   intro i
   fin_cases i
   · simp [signs, hb]
-  all_goals
-    dsimp [signs, m]
-    cases b 1 <;> cases b 2 <;> cases b 3 <;> cases b 4 <;> cases b 5 <;> decide +kernel
+  · exact h₁
+  · exact h₂
+  · exact h₃
+  · exact h₄
+  · exact h₅
 
 theorem signs_coverage (σ : Fin 6 → ℤ)
     (hσ : ∀ i, σ i = 1 ∨ σ i = -1) (hzero : σ 0 = 1) :
