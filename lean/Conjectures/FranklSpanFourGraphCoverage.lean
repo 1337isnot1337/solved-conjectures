@@ -92,7 +92,8 @@ theorem edgeCodes_bounded {table : Table} {prune : ℕ → Bool}
 
 theorem sixCodes_lastFour {table : Table} {a : ℕ} (ha : a ∈ sixCodes table) :
     table.contains (a / 256) = true :=
-  extendCodes_test ha
+  extendCodes_test (k := 5) (a := a) (parents := fiveCodesFrom table table.keys)
+    (accept := fun code => table.contains (code / 256)) ha
 
 theorem wordCode_prefix_last {k : ℕ} (v : Word (k + 1)) :
     wordCode (wordPrefix v) + 16 ^ k * letterCode (v (Fin.last k)) = wordCode v := by
@@ -124,7 +125,7 @@ theorem admissible_six_code_mem {table : Table} (hc : fourCoverageCheck table = 
   · have ht := fourCoverageCheck_sound hc (wordSuffix (wordSuffix v))
       (windowAdmissibleCheck_suffix 1 (wordSuffix v)
         (windowAdmissibleCheck_suffix 2 v hv))
-    simpa only [wordCode_suffix, Nat.div_div] using ht
+    simpa only [wordCode_suffix, Nat.div_div_eq_div_mul] using ht
 
 theorem six_states_cover {table : Table} (hc : fourCoverageCheck table = true)
     (v : Word 6) (hv : windowAdmissibleCheck 3 v = true) :
@@ -141,7 +142,7 @@ theorem seven_edges_cover {table : Table} {prune : ℕ → Bool}
   have hsuffix := (mem_decodeWords_iff (sixCodes_bounded hb) (wordSuffix v)).mp hs
   have hlast := sixCodes_lastFour hsuffix
   have hlast' : table.contains (wordCode v / 4096) = true := by
-    simpa only [wordCode_suffix, Nat.div_div] using hlast
+    simpa only [wordCode_suffix, Nat.div_div_eq_div_mul] using hlast
   have hnot : prune (wordCode v) = false := by
     apply Bool.eq_false_iff.mpr
     intro h
