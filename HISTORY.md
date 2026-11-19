@@ -21,6 +21,10 @@ Published the two Frankl generator results, the two-speed Lonely Runner insertio
   character window, and the final sharp coefficient theorem.
 
 
+## 2026-11-19 — Order-479 automorphisms excluded at Hadamard order 2396
+
+Added a cyclotomic obstruction for every candidate matrix, with a second ideal-class proof. The index-four core search also has common multiplier group size at most four. [Scope and proofs](results/hadamard-2396/)
+
 ## 2026-11-19 — Partial results at Hadamard order 2396
 
 Added two verified symmetry restrictions, the finite enumeration and a conditional border construction for the open order-2396 existence problem. [Scope and checks](results/hadamard-2396/)

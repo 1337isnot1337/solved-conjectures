@@ -36,6 +36,10 @@ def compression_patterns():
                 for row in combinations_with_replacement(options, 3)
                 if (4*d)**2 + sum((4*a + 2)**2 for a in row) == n]
     assert len(patterns) == 14
+    for d,a,b,c in patterns:
+        assert abs(d) + sum(abs(v+1) for v in (a,b,c)) > 1
+        assert max(abs(v) for v in (d,a,b,c,a+2,b+2,c+2)) < 36
+        assert any(v % 37 not in (1,36) for v in (d,a,b,c,a+2,b+2,c+2))
     return patterns
 
 

@@ -47,3 +47,17 @@ $$
 Take the left border factor to be $F_Q=(I_4\otimes R_Q)F$. Reflection permutes sign entries and preserves the Gram identity for $F$. Multiplying the last certificate identity on the left by $I_4\otimes R_Q$ gives the required cross term. The balanced columns of $E^T$ therefore satisfy the cross-term equation of Theorem 7 after replication on cosets. All its hypotheses hold for the normalized core. This proves the conditional construction, including for nonsplit extensions.
 
 The certificate uses Kumar's $X$ as $K$ and his $R_{\rm hat}$ as $E$ with the second and third four-column blocks negated. We computed $F=-(\Gamma\otimes I_4) E^T K/12$. The verifier checks every identity in integer arithmetic and assembles two whole matrices at order 60, one for each quotient group, as controls. [Border data](border.json) · [Executable check](border.py)
+
+## Symmetries available at order 2396
+
+Here $G=Q\times C_{149}$ since the two factor orders are coprime. Suppose all four rows are fixed by a common group $U$ of group automorphisms in the chosen origins. Then **$|U|\le4$**.
+
+First, a prime-order symmetry acting only on $Q$ must act as an involution or a three-cycle. In $C_4$ the only possibility is inversion, and in the Klein four group the action permutes the three nonzero points. In every case there is an element $h$ of order two such that one pair $x,x+h$ belongs to the same nontrivial orbit, while a fixed point must lie in the other pair. For an involution take its swapped pair. For a three-cycle pick any two nonzero points, whose difference is the third. Thus in every row the two length-149 strings on the first pair are identical. For the other pair let $g_i$ be the number of positions where its two signs agree. The combined correlation at $(h,0)$ is $\sum_i 4g_i=4$. The absolute sum of the two coset sums in the other pair is at most $2g_i$. A row with a unique exceptional coset must have that coset fixed, so the other pair contains the exceptional position. Row negations preserve both the agreement counts and the absolute sums. Using the baselines above gives
+$$
+|d|+|a+1|+|b+1|+|c+1|\le1.
+$$
+None of the 14 candidate patterns satisfies this. Consequently $U$ injects into $\operatorname{Aut}(C_{149})$, which is cyclic of order 148.
+
+If 37 divides $|U|$, an element of order 37 acts trivially on $Q$ and has four length-37 orbits and one singleton on each $C_{149}$ fiber. A fiber sum must then be congruent to $+1$ or $-1$ modulo 37. Every candidate fiber sum has magnitude less than 36, so every one must be $+1$ or $-1$. That would require $d=1$ and $a=b=c=-1$, contrary to the squared-row-sum equation. Thus $|U|$ divides four.
+
+Even the largest permitted common multiplier group leaves at least 151 sign orbits per generator. The 592 positions with nonzero $C_{149}$ coordinate contribute at least 148. On the four remaining positions a cyclic group of order dividing four has image of order at most two on $Q$, with at least three orbits. This count concerns fixed common multipliers. Other forms of symmetry may impose different constraints.
