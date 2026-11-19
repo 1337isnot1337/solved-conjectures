@@ -526,3 +526,27 @@ all thirteen modules. [Exact statements and receipts](lean-status.md#complete-sh
 [Voltage receipt](verification/erdos-gyarfas-voltage-normalization-0cf8667d.json) ·
 [Finite-border receipt](verification/hadamard-fixed-border-fin16-23b2b187.json) ·
 [Row-operation receipt](verification/hadamard-border-normalization-main-14ab84e7.json).
+
+
+## Universal cover, literal border, and length-598 registrations
+
+The universal seven-voltage abelian-cover theorem is complete together with
+the previously registered sharp 95-vertex example. The literal finite-border
+matrices and the full length-598 order-eleven obstruction are also registered.
+Their exact passing closures have 17/304, 3/1246, and 8/141 project
+modules/audited theorems respectively; these overlapping counts are not
+additive. Every closure passed strict source checks, the transitive
+standard-axiom whitelist, and independent pinned-kernel replay. The finite
+certificate gates also reproduce their exact public inputs and generated
+sources. All recorded hashes were compared before registration.
+
+Twenty new proof modules and 85 required declarations join the accepted
+root, prebuild list, and audit. The accepted proof list now has 754 modules,
+plus its two roots. This component registration does not replace the full
+merged-package gate. [Exact statements and receipts](lean-status.md#complete-universal-abelian-cover-cycle-theorem).
+
+The earlier Motzkin evaluator and explicit rational-interval closures are
+also registered, including arithmetic complexity and actual interval-set
+attainment. The prime-257 minimum-pair-20 support probe is registered only
+for its stated narrow scope. Exhaustive relation-basis existence and the
+remaining higher-runner classifications are incomplete. Li remains last.

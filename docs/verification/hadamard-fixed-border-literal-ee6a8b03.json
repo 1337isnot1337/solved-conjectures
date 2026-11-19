@@ -1,0 +1,55 @@
+{
+  "checked_sources": [
+    "Conjectures.HadamardFixedBorderTransport",
+    "Conjectures.HadamardFixedBorderFin16",
+    "Conjectures.HadamardFixedBorderLiteral"
+  ],
+  "commit": "ee6a8b03c9ad5166e6cccea2652112f10ee79e36",
+  "completed_checks": [
+    "strict source checks, warnings treated as errors",
+    "module-ownership axiom whitelist and required theorems",
+    "independent exact-closure kernel replay"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-hadamard-fixed-border-candidates.yml": "031c8b7284c306860a196f72442f7df6a8fa5aefb829de8a3da90209eb373d0a",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "results/hadamard-2396/border.json": "8f5f1ca925d273d58ea9b089f7de7ad9b4ac33697018106ae70ffc28872026a8",
+    "scripts/generate_hadamard_fixed_border_literal.py": "db374b1fa31caf0b8c6a7b112a6d6b1f5fa62c71347f454aa79b39b809894142",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_hadamard_fixed_border_candidate.py": "125871c092c87002b8feb250faa99440a17c01ba5902af39f95e38ecb8b1c1d4",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "literal_data_reproduced": true,
+  "project_modules": [
+    "Conjectures.HadamardFixedBorderTransport",
+    "Conjectures.HadamardFixedBorderFin16",
+    "Conjectures.HadamardFixedBorderLiteral"
+  ],
+  "required_theorems": [
+    "HadamardFixedBorder.Literal.K_sign",
+    "HadamardFixedBorder.Literal.E_sign",
+    "HadamardFixedBorder.Literal.F_sign",
+    "HadamardFixedBorder.Literal.K_gram",
+    "HadamardFixedBorder.Literal.E_gram",
+    "HadamardFixedBorder.Literal.F_gram",
+    "HadamardFixedBorder.Literal.balanced",
+    "HadamardFixedBorder.Literal.cross",
+    "HadamardFixedBorder.Literal.literal_certificate_correct",
+    "HadamardFixedBorder.Literal.exists_border_of_card_four"
+  ],
+  "source_failures": {},
+  "source_sha256": {
+    "lean/Conjectures/HadamardFixedBorderFin16.lean": "3b1d4855adf564fad02fa0b335aff6a09cb5f1173d59d188c07e375509ca195a",
+    "lean/Conjectures/HadamardFixedBorderLiteral.lean": "f84041d38e477370bbfa0509e0333492d660204d61cadbbd1a5d57bf90b592b6",
+    "lean/Conjectures/HadamardFixedBorderTransport.lean": "84989423bb936a6cdf54b8d60238edec5aed3e2e777967e5c07e66958abac9ba",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.HadamardFixedBorderLiteral",
+  "task": "literal"
+}

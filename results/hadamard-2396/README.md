@@ -80,3 +80,18 @@ python3 automorphisms.py
 ```
 
 The C++ program lists all 32 ordered pairs that pass the 133-point quotient. The Python audit recovers that list independently, checks all 133 shifts for every survivor, and exhausts the possible 21-point margins of all 32. Every survivor fails this necessary lifting condition.
+
+
+The literal finite-border certificate is now checked. All sign, Gram,
+balanced-column, and cross identities of the displayed matrices are proved,
+and actual matrices are transported to every quotient of cardinality four.
+[Literal-border receipt](../../docs/verification/hadamard-fixed-border-literal-ee6a8b03.json).
+
+The length-598 obstruction is also checked from the original four sign rows
+and their nonzero-shift correlation equation. An actual multiplier of order
+eleven cannot fix all four rows, including after independent choices of
+origins. Its eight-module closure passed strict source checks, a 141-theorem
+axiom audit, and independent pinned-kernel replay.
+[Length-598 receipt](../../docs/verification/hadamard598-multiplier-daa7d2c5.json).
+The length-1197 multiplier bound, quotient enumeration, compression-shape
+derivation, and final bordered construction remain candidates.

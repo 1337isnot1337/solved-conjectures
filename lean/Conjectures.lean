@@ -251,3 +251,6 @@ import Conjectures.MotzkinCharacterWindow
 import Conjectures.MotzkinEvaluatorCandidates
 import Conjectures.MotzkinRationalIntervals
 import Conjectures.LonelinessSixSpeedSupport257Cuts
+import Conjectures.HadamardFixedBorderLiteral
+import Conjectures.Hadamard598Multiplier
+import Conjectures.ErdosGyarfasUniversalMain

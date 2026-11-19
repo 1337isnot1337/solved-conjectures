@@ -740,6 +740,26 @@ modules=(
   Conjectures.LonelinessSixSpeedSupport257CutChecks09
   Conjectures.LonelinessSixSpeedSupport257CutFacts
   Conjectures.LonelinessSixSpeedSupport257Cuts
+  Conjectures.HadamardFixedBorderLiteral
+  Conjectures.Hadamard598Fibers
+  Conjectures.HadamardBorderCompression
+  Conjectures.Hadamard598Compression
+  Conjectures.Hadamard598Exceptions
+  Conjectures.Hadamard598Correlation
+  Conjectures.Hadamard598Multiplier
+  Conjectures.ErdosGyarfasUniversalChecker
+  Conjectures.ErdosGyarfasUniversalData
+  Conjectures.ErdosGyarfasUniversalSoundness
+  Conjectures.ErdosGyarfasUniversalChecks00
+  Conjectures.ErdosGyarfasUniversalChecks01
+  Conjectures.ErdosGyarfasUniversalChecks02
+  Conjectures.ErdosGyarfasUniversalChecks03
+  Conjectures.ErdosGyarfasUniversalChecks04
+  Conjectures.ErdosGyarfasUniversalChecks05
+  Conjectures.ErdosGyarfasUniversalChecks06
+  Conjectures.ErdosGyarfasUniversalChecks07
+  Conjectures.ErdosGyarfasUniversalChecks
+  Conjectures.ErdosGyarfasUniversalMain
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

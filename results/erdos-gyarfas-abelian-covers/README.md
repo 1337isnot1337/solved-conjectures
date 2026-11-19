@@ -8,9 +8,9 @@ Run `python3 verify.py` and `python3 sharpness.py` with assertions enabled. The 
 
 ## Checked Lean components
 
-**Lean status:** partial. The sharp connected 95-vertex cyclic cover and
-normalization of arbitrary seven-voltage assignments are fully checked.
-The universal cycle theorem for all abelian covers remains under issue 18.
+Lean status: complete for the stated abelian voltage-cover theorem and its
+sharpness example. The general minimum-degree-three conjecture remains
+outside this result.
 
 `ErdosGyarfasSharpMain.lean` proves that the literal graph is a regular
 cyclic nineteen-sheeted cover of the stated base, is connected, has 95
@@ -33,3 +33,14 @@ Its four-module closure passed the same three gates, auditing 131 project
 theorems.
 [Normalization receipt](../../docs/verification/erdos-gyarfas-voltage-normalization-0cf8667d.json) ·
 [Full scope](../../docs/lean-status.md#complete-sharp-95-vertex-example-and-arbitrary-voltage-normalization).
+
+
+`ErdosGyarfasUniversalMain.lean` proves the universal theorem for every
+abelian group and all seven voltages. Its endpoint constructs an actual
+simple graph cycle of length 4, 8, 16, or 32, with no certificate or lattice
+hypothesis. The 64-node literal certificate and every collision branch are
+checked in Lean. The 17-module closure passed deterministic input/source
+reproduction, strict sources, a 304-theorem standard-axiom audit, and
+independent pinned-kernel replay.
+[Universal receipt](../../docs/verification/erdos-gyarfas-universal-daa7d2c5.json) ·
+[Exact statement and registration](../../docs/lean-status.md#complete-universal-abelian-cover-cycle-theorem).

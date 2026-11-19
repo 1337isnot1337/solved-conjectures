@@ -94,6 +94,8 @@ The task remains available as a regression gate.
 The prime-257 minimum-pair-20 split support certificate is registered from its
 33-module passing receipt. It proves the original normalized-support exclusion
 for that one probe. The full six-speed numerical coverage remains incomplete.
-The independently checked `Hadamard598Fibers` component remains unregistered
-pending the complete length-598 obstruction. See the precise scope and exact
+The complete length-598 obstruction, including `Hadamard598Fibers`, is now
+registered. The literal finite-border certificate and universal abelian-cover
+cycle theorem are also registered; their component tasks remain regression
+gates. See the precise scope and exact
 receipts in [the accepted status](lean-status.md).

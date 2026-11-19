@@ -37,9 +37,9 @@ never additional Lean axioms.
 | CUT arithmetic periodicity | Complete | The uniform terminating decision test and exhaustive candidate enumeration are proved for every finite cut set and proposed arithmetic tail. Compact quotient/residue certificates identify both actual example games at every pile size and prove least eventual period 12, saltus 8, and earliest start 7, hence positive-pile preperiod 6. |
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
-| Hadamard order-2396 partial results | Partial overall; automorphism, both norm proofs, and border symmetry bounds complete | For every real Hadamard matrix of order 2396, the full signed row/column automorphism group has no element of order 479, and 479 divides neither its cardinality nor any subgroup-quotient cardinality. Both norm proofs and the exact quadratic-integer model are checked. For the fixed-border core on every finite abelian domain with a subgroup of size 149 and index four, the full common multiplier group is cyclic of order dividing four; every preserving subgroup leaves at least 151 actual sign orbits. Finite-border transport and actual-row normalization are also checked, with the finite identities and compression shapes retained as explicit inputs. The length-1197/598 sequence restrictions, quotient certificates, and full fixed-border construction remain obligations under issue 17. |
+| Hadamard order-2396 partial results | Partial overall; automorphism, border symmetry, literal border, and length-598 obstruction complete | The full signed-automorphism group excludes order 479, with both norm proofs checked. On arbitrary finite abelian domains with a subgroup of size 149 and index four, the full common multiplier group is cyclic of order dividing four and every preserving subgroup leaves at least 151 sign orbits. The actual finite border matrices and all their sign, Gram, balance, and cross identities are checked, as is transport to every quotient of cardinality four. Four sign rows on C26 × C23 with combined nonzero correlation −4 cannot share an order-11 multiplier fixing the rows, even after individual origin choices. The length-1197 multiplier bound, quotient certificates, compression-shape derivation, and final bordered construction remain candidates. |
 | Lonely-runner two insertions | Not formalized | The arbitrary two-speed insertion theorem, acceleration bridge, unbounded branch, finite cases, and three-insertion obstruction are not registered in the accepted package. Published candidate sources remain under issue 12. |
-| Erdős–Gyárfás abelian covers | Partial: sharp example and voltage normalization complete | The literal connected 95-vertex cyclic cover has attained least power-of-two cycle length 32. Every seven-voltage assignment in an abelian group is normalized by an explicit graph isomorphism preserving actual cycles. The universal cover cycle theorem remains under issue 18; the general minimum-degree-three conjecture is outside this result. |
+| Erdős–Gyárfás abelian covers | Complete for the stated voltage-cover theorem and sharpness | Every seven-label voltage cover of the singly subdivided tetrahedron over every abelian group contains an actual simple cycle of length 4, 8, 16, or 32. The 64-node literal certificate, its collision-branch soundness, and voltage normalization are checked. The connected 95-vertex cyclic cover attains least power-of-two cycle length 32. The general minimum-degree-three conjecture is outside this result. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Frankl generating families | Partial: large-generator bound and cyclic components checked | The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The full Vaughan shortcut, all cyclic span-four families on at most six sites, conditional residual cases at periods seven through ten, and exact local weight-checker semantics are also checked. The conditional all-period assembly, 48-case literal pilot, and exact injective weight transport are checked. The complete cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete. |
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
@@ -1713,8 +1713,8 @@ give exactly the sharp graph.
 Both exact component closures passed strict source checking, the standard
 transitive axiom whitelist, and independent replay with the unchanged pinned
 kernel checker. The receipts bind the exact sources, toolchain, manifest,
-and gate inputs. The universal theorem asserting a 4-, 8-, 16-, or 32-cycle
-in every abelian cover remains under issue 18. The general minimum-degree-three
+and gate inputs. The later universal-cover registration below discharges the remaining
+4-, 8-, 16-, or 32-cycle theorem for every abelian voltage cover. The general minimum-degree-three
 conjecture is outside this result. Li remains deferred.
 
 ## Fixed-border certificate transport
@@ -1738,8 +1738,9 @@ The endpoint is `HadamardFixedBorder.exists_transported_matrices_of_card_four`.
 Its exact two-module closure at `23b2b187` passed strict source checks,
 a 66-theorem standard-axiom audit, and independent pinned-kernel replay.
 [Receipt](verification/hadamard-fixed-border-fin16-23b2b187.json).
-The literal finite certificate, derivation of the compression shapes, and
-final bordered Hadamard construction remain separate obligations under issue 17.
+The literal finite certificate is discharged by the later registration below.
+Derivation of the compression shapes and the final bordered Hadamard
+construction remain separate obligations under issue 17.
 
 ## Actual row normalization from compression shapes
 
@@ -1875,8 +1876,88 @@ a 28-theorem audit, and independent pinned-kernel replay.
 It proves the actual order-11 invariant fiber-sum decomposition from sign
 values. Its source and pinned package files are unchanged. The candidate gate
 and workflow have since been extended; the archived receipt records their
-historical hashes. The fiber module is not registered separately here: the
-full length-598 obstruction remains in its candidate lane.
+historical hashes. This earlier component has now been subsumed by the full length-598
+registration below, which includes the fiber source and the actual
+multiplier contradiction.
 
 The four exact archive digests and receipt-export checks are recorded in
 [the component receipt record](verification/20261119-component-receipts.md).
+
+
+## Complete universal abelian-cover cycle theorem
+
+`ErdosGyarfasUniversal.universal_cover_cycle` quantifies over every abelian
+group and every assignment of the seven oriented-edge labels of the specified
+base graph. It constructs an actual graph walk that is a simple cycle, with
+length in `{4,8,16,32}`. No finiteness, lattice classification, or certificate
+premise remains in the endpoint. The equivalent power-of-two endpoint records
+an exponent between two and five.
+
+The literal 64-node table checks 546 collision branches using 1,264 explicit
+integer combinations. The semantic proof transfers every checked combination
+through the actual chord-label homomorphism, follows a smaller-index child
+when a lifted walk collides, and otherwise constructs the simple cycle.
+The producer and original public input are hashed and reproduced by the gate.
+The already registered gauge isomorphism restores all seven arbitrary labels.
+The already registered connected 95-vertex cyclic example proves sharpness.
+This completes the stated cover theorem; it makes no claim about arbitrary
+minimum-degree-three graphs.
+
+At `daa7d2c5eb297ee0ebe5519cc256e418208db658`, the 17-module closure passed
+exact data reproduction, strict source checks, an audit of 304 project
+theorems, and independent replay with the unchanged pinned kernel checker.
+[Passing job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44512718926/job/135523858461)
+· [Exact receipt](verification/erdos-gyarfas-universal-daa7d2c5.json).
+All 27 recorded source/gate/input paths match their passing hashes.
+Thirteen new modules and all 69 required endpoints are registered.
+
+## Complete literal finite-border certificate
+
+`HadamardFixedBorder.Literal.literal_certificate_correct` checks the exact
+displayed matrices `K`, `E`, and `F`: all three sign conditions, all three
+Gram identities, the balanced-column identity, and the cross identity.
+`HadamardFixedBorder.Literal.exists_border_of_card_four` supplies actual
+transported matrices for every finite additive quotient of cardinality four.
+The finite identities are proved by kernel-reduced cases and are no longer
+premises of this existence statement. The larger bordered-core assembly is
+still separate work.
+
+At `ee6a8b03c9ad5166e6cccea2652112f10ee79e36`, the three-module closure passed
+exact literal-source reproduction, strict source checks, an audit of 1,246
+project theorems, and independent pinned-kernel replay.
+[Passing job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44511099486/job/135518971308)
+· [Exact receipt](verification/hadamard-fixed-border-literal-ee6a8b03.json).
+All thirteen source/gate/data paths match their passing hashes. The new
+literal module and all ten required endpoints are registered.
+
+## Complete length-598 order-eleven obstruction
+
+For four actual sign rows on `ZMod 26 × ZMod 23` whose combined periodic
+autocorrelation is `−4` at every nonzero shift,
+`Hadamard598.order11_multiplier_invariance_impossible` excludes any unit of
+order eleven fixing all rows. The translated and individual-origins endpoints
+allow separate origins for the four rows. Row-sum bounds, compression energy,
+fiber values, and the exceptional-position structure are derived from the
+original sign and correlation assumptions.
+
+The proof forces exactly five compressed entries of magnitude 21 and none
+of magnitude 23. Writing each entry as its zero-position sign plus `22e`,
+the nonzero-shift correlations of `e` must vanish. Their row-sum squares then
+sum to five, contradicting the bounds inherited from the original rows.
+The final unit-group argument derives the actual order-eleven action on the
+23-coordinate and trivial action on the 26-coordinate.
+
+At `daa7d2c5eb297ee0ebe5519cc256e418208db658`, the eight-module closure passed
+strict source checks, an audit of 141 project theorems, and independent
+pinned-kernel replay.
+[Passing job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44512718948/job/135523696857)
+· [Exact receipt](verification/hadamard598-multiplier-daa7d2c5.json).
+All sixteen source/gate paths match their passing hashes. Five length-598
+modules and the general compression dependency are newly registered, with
+all six required multiplier endpoints.
+
+These three registrations add twenty modules to the previously registered
+734 proof modules. All 754 proof modules are in the sequential prebuild and
+kernel-replay list; the three endpoints are imported by `Conjectures`, and
+all 85 required declarations are added to `ProofAudit`. These are exact
+component passes. The merged accepted package has its own full gate.

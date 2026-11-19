@@ -35,8 +35,9 @@ snapshot commits; the merged package requires its separate full gate.
 The two fiber-module sources and pinned configuration match their passing
 snapshot. Its candidate gate and workflow have changed since that snapshot;
 this record preserves the historical receipt and does not relabel it as a
-check of the current gate. The fiber module remains outside the accepted root
-pending the full length-598 obstruction.
+check of the current gate. At that checkpoint the fiber module remained outside the accepted root. The
+later full length-598 registration includes it and the actual multiplier
+contradiction; see [the full receipt](hadamard598-multiplier-daa7d2c5.json).
 
 Precise mathematical scopes and remaining hypotheses are in
 [the status report](../lean-status.md).

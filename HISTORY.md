@@ -380,3 +380,14 @@ Added two verified symmetry restrictions, the finite enumeration and a condition
 - Kept Li last and tracked active lanes in issue 1.
 
 This file records collection-level changes, not a complete discovery or priority timeline. For individual additions and revisions, see [the commit history](https://github.com/1337isnot1337/solved-conjectures/commits/main/). Ongoing formalization work is recorded in [the status report](docs/lean-status.md) and [campaign notes](docs/formalization.md).
+
+
+## 2026-11-19: universal abelian-cover theorem and further exact components
+
+Registered the complete abelian voltage-cover cycle theorem and retained
+the sharp 95-vertex example. Also registered the literal finite-border
+certificate and the full length-598 order-eleven multiplier obstruction.
+Exact source, axiom, and kernel receipts are recorded in `docs/verification`.
+The Motzkin evaluator, explicit rational interval witnesses, and narrow
+prime-257 minimum-pair-20 support certificate were registered separately.
+The remaining collection results are still in progress; Li has not started.
