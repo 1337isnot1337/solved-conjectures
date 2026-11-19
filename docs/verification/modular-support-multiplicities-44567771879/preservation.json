@@ -1,0 +1,127 @@
+{
+  "accepted_registry_changed": false,
+  "actual_tuple_representation_verified": true,
+  "artifact_id": 14552957354,
+  "artifact_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44567771879/artifacts/14552957354",
+  "artifact_zip_sha256": "4282de9ac998a59af0a4d7fefbcb5ac36cc493d33f8915af51774146741cb4f6",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 1879,
+    "modules": 98,
+    "private_declarations": 92,
+    "raw_declarations": 1879,
+    "required": 63,
+    "tag": "passed",
+    "theorems": 1210
+  },
+  "authenticated_workflow_job_log_sha256": "761a5408f48a074f02553eb24d277549d829bdc6b71c6855f6960098b09985ad",
+  "authenticated_workflow_metadata_sha256": "5efff6cae2d81acebca651a0ef428b3c11475791155f493262552e4fc72a501c",
+  "binary_lifting_verified": false,
+  "checked_pilots": [
+    {
+      "denominator": 10,
+      "frames": 19,
+      "id": "n09d10p0017",
+      "prime": 17,
+      "representatives": 8,
+      "speeds": 9,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "denominator": 6,
+      "frames": 4,
+      "id": "n05d06p0007",
+      "prime": 7,
+      "representatives": 6,
+      "speeds": 5,
+      "support": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "checked_support_deficits": {
+    "n05d06p0007": [
+      2
+    ],
+    "n09d10p0017": [
+      1
+    ]
+  },
+  "complete_initial_lists_verified": true,
+  "complete_multiplicity_lists_verified": true,
+  "compressed_inventory_sha256": "7a537e150ab3ec4d7fc264d58fb0b33bbd46c831ef54725277392cd990c45613",
+  "declaration_inventory_sha256": "10db955c59a80afa07984be05fdc80346be53bb3c032c5706709f8d3fdadba55",
+  "exact_artifact_file_count_revalidated": 488,
+  "exact_evidence_file_count_revalidated": 486,
+  "exact_project_source_and_object_inventory_revalidated": true,
+  "exact_stock_prefix_multiset_revalidated": true,
+  "git_commit": "fc8fbb962e9bbd37610e082f1d9223b0d92985ef",
+  "hosted_fresh_strict_source_passed": true,
+  "hosted_stock_kernel_closure_passed": true,
+  "integer_direction_classification_verified": false,
+  "local_independent_lean_replay_performed_during_preservation": false,
+  "preserved_evidence_archive_sha256": "a57e8d24388bae99af36b039cddf95dfb527d9f2fd48c4793c48c1ec2b4ab0e5",
+  "preserved_evidence_contents": [
+    "receipt",
+    "declaration inventory",
+    "audit source",
+    "proof sources",
+    "generated proof sources",
+    "numerical support and multiplicity packets",
+    "gate controls",
+    "logs",
+    "process profiles",
+    "authenticated workflow metadata and job transcript"
+  ],
+  "preserved_evidence_members": 393,
+  "producer_reproductions_revalidated": 4,
+  "proof_scope": {
+    "accepted_registry_changed": false,
+    "actual_tuple_representation": true,
+    "arbitrary_support_deficit_multiplicities": true,
+    "binary_lifting_verified": false,
+    "complete_initial_lists": [
+      {
+        "denominator": 10,
+        "prime": 17,
+        "speeds": 9
+      },
+      {
+        "denominator": 6,
+        "prime": 7,
+        "speeds": 5
+      }
+    ],
+    "complete_multiplicity_lists": true,
+    "complete_runner_classification_verified": false,
+    "conditional_binary_tree_consumer": true,
+    "generic_initial_support_lists": true,
+    "integer_direction_classification_verified": false
+  },
+  "raw_receipt_sha256": "da8d42734b30cdc94349d1a945e68aeb402d2277e94463e2dc8b72b161214dfb",
+  "repaired_sorting_proofs_revalidated": [
+    "Conjectures.LonelinessModularSupportMultiplicitiesN09D10P0017Exact",
+    "Conjectures.LonelinessModularSupportMultiplicitiesN05D06P0007Exact"
+  ],
+  "run_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44567771879",
+  "schema": "verified-checkpoint-preservation-v1",
+  "source_object_log_and_audit_hashes_revalidated": true,
+  "status": "authenticated_and_preserved",
+  "workflow_job_id": 135714122710,
+  "workflow_run_id": 44567771879
+}

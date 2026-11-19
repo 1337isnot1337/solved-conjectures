@@ -2686,3 +2686,21 @@ prebuilt with source bytes matching this run. GcdShift and Renault
 registrations are preserved. The full five-speed spectrum below `1/5` remains
 incomplete; no result-directory spectrum status is promoted. The merged
 accepted-package gate remains separate from this complete component receipt.
+
+## Modular support, unit orbits and literal binary lifts, 19 November 2026
+
+Four authenticated component closures are now registered: support multiplicities
+and the finite-tree consumer (98 modules, 63 required endpoints), unit-orbit
+transport (26/8), literal seven-speed binary roots (34/58), and byte-count/check
+equality (8/15). Their exact source, all-owned/private audit and stock-kernel
+receipts are linked in the [component scope record](verification/modular-support-components-20261119.md).
+The registration includes all 55 generated multiplicity source files from the
+passing artifact and preserves every earlier accepted registry entry.
+
+The seven-speed literal check retains the six-speed runner bound and does not
+prove initial-support exhaustiveness. The multiplicity and orbit interfaces
+retain their terminal and covering hypotheses. The byte evaluator has a
+universal equality proof; its interrupted benchmark supplies no speedup result.
+The separate prime-251 closed-lift gate and bounded initial-cut pilot remain
+candidates until their own complete gates pass. The merged accepted package
+still requires its separate complete source, audit and stock-replay run.

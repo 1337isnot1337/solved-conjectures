@@ -1,0 +1,53 @@
+{
+  "accepted_registry_changed": false,
+  "artifact_id": 14556635741,
+  "artifact_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44573794011/artifacts/14556635741",
+  "artifact_zip_sha256": "555bcc7f0205ec50493d108dc50e58335cde515425da1ac95a6cb9072b9891b9",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 568,
+    "modules": 8,
+    "private_declarations": 72,
+    "raw_declarations": 568,
+    "required": 15,
+    "tag": "passed",
+    "theorems": 279
+  },
+  "authenticated_workflow_job_log_sha256": "4c0348d134fb85dcaef9aa58bb4320581cb1501533c21d40daa047da3b9a6b88",
+  "authenticated_workflow_metadata_sha256": "f28fc537ca8614a578db75dc9f7888a98a9137998bc7e824df465a45bee83e25",
+  "byte_count_theorems_verified": true,
+  "compressed_inventory_sha256": "73bbf58a7a79a5390a0686e7128f2453e10f49cf842a71268f62e98b97830432",
+  "declaration_inventory_sha256": "8d9f9db58149cd3224304daec7fcd4db26790559330a1162ea5fcd83da33c5ca",
+  "exact_evidence_file_count_revalidated": 67,
+  "exact_project_source_and_object_inventory_revalidated": true,
+  "exact_stock_singleton_closure_revalidated": true,
+  "git_commit": "529aecd39bc98bd90dc3fa399dd4e3069540948e",
+  "hosted_fresh_strict_source_passed": true,
+  "hosted_stock_kernel_closure_passed": true,
+  "initial_support_coverage_verified": false,
+  "integer_classification_verified": false,
+  "local_independent_lean_replay_performed_during_preservation": false,
+  "performance_speedup_verified": false,
+  "preserved_evidence_archive_sha256": "df2999162164636a30b648defda88c5dc8871d7a4ac87de0fce15b6c53f6179a",
+  "preserved_evidence_members": 62,
+  "proof_scope": {
+    "accepted_registry_changed": false,
+    "all_bounded_support_checks_equal": true,
+    "all_natural_population_counts_equal": true,
+    "checkpoint": "modular_cover_byte_counts",
+    "initial_support_coverage_verified": false,
+    "integer_classification_verified": false,
+    "performance_speedup_verified": false
+  },
+  "raw_receipt_sha256": "4079f53d70a3b3b67585becb8d2630fc3524fcc91ba9cfdbd4b45dd3925a165d",
+  "run_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44573794011",
+  "schema": "verified-checkpoint-preservation-v1",
+  "source_object_log_and_audit_hashes_revalidated": true,
+  "status": "authenticated_and_preserved",
+  "workflow_job_id": 135735683275,
+  "workflow_run_id": 44573794011
+}
