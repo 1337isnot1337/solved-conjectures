@@ -1,0 +1,34 @@
+name: Preserve bounded Frankl proof receipts
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/frankl-arithmetic-receipts.yml'
+      - 'scripts/preserve_frankl_arithmetic_receipts.py'
+  workflow_run:
+    workflows:
+      - Lean Frankl orbit arithmetic batches
+      - Lean Frankl literal ten-point orbit arithmetic
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: frankl-arithmetic-receipt-publication
+  cancel-in-progress: false
+
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify original archives and preserve exact passed group receipts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/preserve_frankl_arithmetic_receipts.py
