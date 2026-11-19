@@ -40,6 +40,12 @@ theorem adjacent_children_same (hg : NoShortCycle G 16) (n : ℕ)
     child = other := by
   let p := walk G (n + 1) parent root (some ⟨child, x⟩)
   let q := walk G (n + 1) parent root (some ⟨other, y⟩)
+  have hp_snd : p.snd = child.1 := Walk.snd_cons (walk G n root child.1 x) child.2.1
+  have hq_snd : q.snd = other.1 := Walk.snd_cons (walk G n root other.1 y) other.2.1
+  have hp_concat_snd : (p.concat hadj).snd = child.1 :=
+    Walk.snd_cons ((walk G n root child.1 x).concat hadj) child.2.1
+  have hq_concat_snd : (q.concat hadj.symm).snd = other.1 :=
+    Walk.snd_cons ((walk G n root other.1 y).concat hadj.symm) other.2.1
   rcases short_paths_edge hg p q
     (walk_isPath hg (n + 1) hlen parent root (some ⟨child, x⟩))
     (walk_isPath hg (n + 1) hlen parent root (some ⟨other, y⟩))
@@ -47,12 +53,12 @@ theorem adjacent_children_same (hg : NoShortCycle G 16) (n : ℕ)
     ((walk_length_le G (n + 1) parent root (some ⟨other, y⟩)).trans hlen)
     hadj with he | he
   · apply Subtype.ext
-    exact congrArg Walk.snd he
+    exact hp_concat_snd.symm.trans ((congrArg Walk.snd he).trans hq_snd)
   · apply Subtype.ext
-    exact (congrArg Walk.snd he).symm
+    exact hp_snd.symm.trans ((congrArg Walk.snd he).symm.trans hq_concat_snd)
 
 theorem graph_adj_iff_endpoints (hg : NoShortCycle G 16) :
-    ∀ (n : ℕ) (hlen : n ≤ 7) (parent root : V) (x y : Vertex G n parent root),
+    ∀ (n : ℕ) (_hlen : n ≤ 7) (parent root : V) (x y : Vertex G n parent root),
       (graph G n parent root).Adj x y ↔
         G.Adj (endpoint G n parent root x) (endpoint G n parent root y) := by
   intro n
@@ -153,9 +159,9 @@ noncomputable def parentChildrenEquivNeighbors (G : SimpleGraph V)
   · intro v
     dsimp only
     by_cases h : v.1 = parent
-    · rw [dif_pos h]
+    · rw [dite_eq_left h]
       exact Subtype.ext h.symm
-    · rw [dif_neg h]
+    · rw [dite_eq_right h]
 
 theorem root_children_card (G : SimpleGraph V) (root : V) :
     Nat.card (Children G root root) = Nat.card (G.neighborSet root) :=

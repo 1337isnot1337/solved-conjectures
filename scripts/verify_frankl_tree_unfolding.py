@@ -41,9 +41,17 @@ def main():
         receipt["reviewed_inventory"] = inventory
         old_write(stage, receipt)
     gate.write_receipt = write_receipt
-    gate.run_group(SimpleNamespace(group="tree-unfolding",
-        artifact_dir=ROOT / ".candidate-artifacts/frankl-tree-unfolding",
-        runtime=None, jobs=args.jobs), {})
+    try:
+        gate.run_group(SimpleNamespace(group="tree-unfolding",
+            artifact_dir=ROOT / ".candidate-artifacts/frankl-tree-unfolding",
+            runtime=None, jobs=args.jobs), {})
+    except BaseException:
+        for logfile in sorted((ROOT / ".candidate-artifacts/frankl-tree-unfolding" / "logs").glob("*.source.log")):
+            diagnostics = logfile.read_text(errors="replace")
+            if "error" in diagnostics or "warning" in diagnostics:
+                print("SOURCE DIAGNOSTICS: " + logfile.name, flush=True)
+                print(diagnostics[-24000:], flush=True)
+        raise
 
 if __name__ == "__main__":
     main()

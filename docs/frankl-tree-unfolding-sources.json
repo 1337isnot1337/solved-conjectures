@@ -3,7 +3,7 @@
   "root": "Conjectures.FranklTreeUnfoldingIso",
   "sources": {
     "lean/Conjectures/FranklTreeUnfolding.lean": "5279b1b6998cefc4b742e0e340238bafd3d2183d60ab62624bcb8f24e41e9934",
-    "lean/Conjectures/FranklTreeUnfoldingIso.lean": "872750b9ff894ff5f97a9cf92d48f7f369106688df3ffcc96ed0cd6003cefda3"
+    "lean/Conjectures/FranklTreeUnfoldingIso.lean": "c4ffa7fd76aba3fdeb615a0e8b271248d7f09d7576f8b442d00630c4a2a1a3f0"
   },
   "required_endpoints": [
     "FranklTreeUnfolding.endpoint_rootVertex",

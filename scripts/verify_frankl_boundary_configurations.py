@@ -43,9 +43,17 @@ def main():
         receipt["reviewed_inventory"] = inventory
         old_write(stage, receipt)
     gate.write_receipt = write_receipt
-    gate.run_group(SimpleNamespace(group="boundary-configuration-helpers",
-        artifact_dir=ROOT / ".candidate-artifacts/frankl-boundary-configuration-helpers",
-        runtime=None, jobs=args.jobs), {})
+    try:
+        gate.run_group(SimpleNamespace(group="boundary-configuration-helpers",
+            artifact_dir=ROOT / ".candidate-artifacts/frankl-boundary-configuration-helpers",
+            runtime=None, jobs=args.jobs), {})
+    except BaseException:
+        for logfile in sorted((ROOT / ".candidate-artifacts/frankl-boundary-configuration-helpers" / "logs").glob("*.source.log")):
+            diagnostics = logfile.read_text(errors="replace")
+            if "error" in diagnostics or "warning" in diagnostics:
+                print("SOURCE DIAGNOSTICS: " + logfile.name, flush=True)
+                print(diagnostics[-24000:], flush=True)
+        raise
 
 if __name__ == "__main__":
     main()

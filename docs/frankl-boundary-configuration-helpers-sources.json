@@ -3,7 +3,7 @@
   "root": "Conjectures.FranklBoundaryConfigurationHelpers",
   "sources": {
     "lean/Conjectures/FranklBoundaryConfigurations.lean": "c657ac52d681e7948e0d8c30beed437228f7b5832ad05253125f7f4963936904",
-    "lean/Conjectures/FranklTreeConfigurationIso.lean": "7c62cbb023f4b9b560d33f629933feec0085a94ae7f3fe8ae25e88b6c4c5818c",
+    "lean/Conjectures/FranklTreeConfigurationIso.lean": "c633df7502b34b303df7fe575d14918e05d914166b773076f5f63571b38365c7",
     "lean/Conjectures/FranklBoundaryAveraging.lean": "392d25d4a3d65575cd8ee4718f16c40ed56777b9af90f700df78175d8668b9c2",
     "lean/Conjectures/FranklBoundaryConfigurationHelpers.lean": "7b562800737effd85a43301a45572997ff84a0682c03cac09e303a81cf75b11f"
   },

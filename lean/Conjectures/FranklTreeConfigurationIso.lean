@@ -91,7 +91,7 @@ def occupiedIsoEquiv (e : G ≃g H) (root : V)
     change (Valid H (e root) outside canSelect canOmit S ∧ e root ∈ S) ↔
       (Valid G root (e ⁻¹' outside) (e ⁻¹' canSelect) (e ⁻¹' canOmit) (e ⁻¹' S) ∧
         root ∈ e ⁻¹' S)
-    simp only [valid_pullback_iff])
+    simp only [valid_pullback_iff, Set.mem_preimage])
 
 def dominatedIsoEquiv (e : G ≃g H) (root : V)
     (outside canSelect canOmit : Set W) :
@@ -102,7 +102,7 @@ def dominatedIsoEquiv (e : G ≃g H) (root : V)
       Dominated H outside S (e root)) ↔
       (Valid G root (e ⁻¹' outside) (e ⁻¹' canSelect) (e ⁻¹' canOmit) (e ⁻¹' S) ∧
         root ∉ e ⁻¹' S ∧ Dominated G (e ⁻¹' outside) (e ⁻¹' S) root)
-    simp only [valid_pullback_iff, dominated_pullback_iff])
+    simp only [valid_pullback_iff, dominated_pullback_iff, Set.mem_preimage])
 
 def needsParentIsoEquiv (e : G ≃g H) (root : V)
     (outside canSelect canOmit : Set W) :
@@ -113,7 +113,7 @@ def needsParentIsoEquiv (e : G ≃g H) (root : V)
       ¬Dominated H outside S (e root)) ↔
       (Valid G root (e ⁻¹' outside) (e ⁻¹' canSelect) (e ⁻¹' canOmit) (e ⁻¹' S) ∧
         root ∉ e ⁻¹' S ∧ ¬Dominated G (e ⁻¹' outside) (e ⁻¹' S) root)
-    simp only [valid_pullback_iff, dominated_pullback_iff])
+    simp only [valid_pullback_iff, dominated_pullback_iff, Set.mem_preimage])
 
 def finishedIsoEquiv (e : G ≃g H) (root : V)
     (outside canSelect canOmit : Set W) :
@@ -124,7 +124,7 @@ def finishedIsoEquiv (e : G ≃g H) (root : V)
       (e root ∈ S ∨ Dominated H outside S (e root))) ↔
       (Valid G root (e ⁻¹' outside) (e ⁻¹' canSelect) (e ⁻¹' canOmit) (e ⁻¹' S) ∧
         (root ∈ e ⁻¹' S ∨ Dominated G (e ⁻¹' outside) (e ⁻¹' S) root))
-    simp only [valid_pullback_iff, dominated_pullback_iff])
+    simp only [valid_pullback_iff, dominated_pullback_iff, Set.mem_preimage])
 
 theorem occupied_card_iso (e : G ≃g H) (root : V)
     (outside canSelect canOmit : Set W) :

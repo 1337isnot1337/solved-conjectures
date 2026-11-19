@@ -18,7 +18,7 @@
     "lean/Conjectures/FranklTreeBranchMessages.lean": "2ffeb6e699d6a4b19f26b6bf39fa92b90365abba10a1b6f7fb8af417418d9a6a",
     "lean/Conjectures/FranklTreeCertificate.lean": "61827af3138ee0e63c862f7d046bb6ff8b0b5266ce03440612a5404ac4d5c85e",
     "lean/Conjectures/FranklTreeCone.lean": "4d225150430823a6bdaf37b0010b729bdb679e0f8f75c088072e70268c74661c",
-    "lean/Conjectures/FranklTreeConfigurationIso.lean": "7c62cbb023f4b9b560d33f629933feec0085a94ae7f3fe8ae25e88b6c4c5818c",
+    "lean/Conjectures/FranklTreeConfigurationIso.lean": "c633df7502b34b303df7fe575d14918e05d914166b773076f5f63571b38365c7",
     "lean/Conjectures/FranklTreeConfigurationMessages.lean": "3a757bbc08ebc4d95f6f2cf0b6bd99506cf4c14a87073916e87c3def77fe85e8",
     "lean/Conjectures/FranklTreeConfigurations.lean": "0f8f17c94364ad902a8f1ffa2c306c86ebb6b12365a4faf2ed06f6ac1907ed9a",
     "lean/Conjectures/FranklTreeCounts.lean": "00c8ed66de517d5b5a26d8d02adf2c63fba6807d38c4a16fcf75fe7adaa984f1",
@@ -27,7 +27,7 @@
     "lean/Conjectures/FranklTreeRoot.lean": "ec2a0b85e7263e6d3e4d2259564431aa4f865aa7c7c72d941853e64602886b66",
     "lean/Conjectures/FranklTreeSpan.lean": "717b008a49d242daded26743e4f318e8fed01fde2c6d75acbbe0b6ff0834c5ab",
     "lean/Conjectures/FranklTreeUnfolding.lean": "5279b1b6998cefc4b742e0e340238bafd3d2183d60ab62624bcb8f24e41e9934",
-    "lean/Conjectures/FranklTreeUnfoldingIso.lean": "872750b9ff894ff5f97a9cf92d48f7f369106688df3ffcc96ed0cd6003cefda3"
+    "lean/Conjectures/FranklTreeUnfoldingIso.lean": "c4ffa7fd76aba3fdeb615a0e8b271248d7f09d7576f8b442d00630c4a2a1a3f0"
   },
   "required_endpoints": [
     "FranklTreeCone.iterateMessageSets_step",
