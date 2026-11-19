@@ -1,0 +1,68 @@
+{
+  "control_sha256": {
+    ".github/workflows/lean-modular-cover-swar-counts.yml": "c4db63a7f7716ec36382a122cfd123b2ae72bb2908b88f4a910124b5252a8eea",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/audit_lean_owned_extension.py": "6b520a346907fe9e8a7c025daa9a9a831ec8188aab26014443bb760f557f3bca",
+    "scripts/audit_lean_raw_occurrences.py": "7c366fa3983ed26b2356c417552b861ff235c5bb34848810191c13b5322c9cea",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/test_audit_lean_raw_occurrences.py": "9a62de4eea44e4f6362198d0717aabdb8eb2c725e48f60d1923c53a23017492e",
+    "scripts/test_modular_cover_swar_counts.py": "e4fb6f0c3434cc5ef8218917902a96cb410dabf431d8172080251cc0b985f3d3",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+    "scripts/verify_modular_cover_swar_counts.py": "319e051d5828a8685a87924c0278db9f59d60155bb8b6df8e30816497fcca4e3",
+    "scripts/verify_renault_foundations.py": "e786de5e0cece3a1918b62776f27a9ae158b6491cf4fa7467e580e0aa0b40669"
+  },
+  "proof_scope": {
+    "accepted_registry_changed": false,
+    "all_fuel_inputs_equal_to_original_byte_counter": true,
+    "all_natural_population_counts_equal": true,
+    "checkpoint": "modular_cover_swar_counts",
+    "exact_original_fallback": true,
+    "fast_branch_width": 512,
+    "initial_support_coverage_verified": false,
+    "integer_classification_verified": false,
+    "performance_speedup_verified": false
+  },
+  "required_theorems": [
+    "Loneliness.Modular.SupportSearch.Bits.Swar.masked_pair_chunk",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.step_succ",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.pair_sum_lt",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.laneSum_step",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.step_lt",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.fast_count_mod_two",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.laneSum_two_eq_count_mod",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.swarSpec_eq_count_mod",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.swar512_eq_spec",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.swar512_eq_count_mod",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.countWithFuel_eq",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.count_eq_byte",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.count_eq_fast",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.count_eq",
+    "Loneliness.Modular.SupportSearch.Bits.Swar.count_eq_swar512"
+  ],
+  "roots": [
+    "Conjectures.LonelinessModularCoverSwarCounts"
+  ],
+  "runtime_sha256": {
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
+  },
+  "schema": "modular-cover-swar-counts-sources-v1",
+  "source_policy": {
+    "fresh_project_objects": true,
+    "linter_override": false,
+    "warning_as_error": true,
+    "zero_trust_source_and_raw_audit": true
+  },
+  "source_sha256": {
+    "Conjectures.LonelinessModularCoverByteCounts": "97bc6cda6a52ba87bfa9d66b7558b8ac7290b050424a2a05ea51e901fc67d039",
+    "Conjectures.LonelinessModularCoverFastCounts": "bbc76f17ce5e115461d40d6ac0b75af9da2edb6dc1de1229bebd0dfd2e067361",
+    "Conjectures.LonelinessModularCoverSwarCounts": "9c2dee9973cea36ecdb5316b72c799d7f251e3a3cd1ee87c42be502f69f8293b"
+  }
+}
