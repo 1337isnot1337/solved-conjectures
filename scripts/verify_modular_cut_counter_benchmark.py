@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Bounded, exact p251/b4/cut391 comparison of two verified population counts.
 
-Both numerical modules retain the same imports, options, proposition and
-decide +kernel proof. Only the named counter lemma and endpoint name differ.
+Both variants use the same literal-frame decomposition, imports, options,
+original boundedCheck proposition and ordinary decide +kernel checks.
+Only the counter helper, internal namespace and endpoint name differ.
 A timeout or failed source is recorded separately and never yields a ratio.
 This benchmark proves no initial cover or runner classification.
 """
@@ -58,10 +59,10 @@ BASE_SHA256 = {
     "Conjectures.LonelinessModularCoverByteCuts": "56e560ab9747e5588d7d593b63ae010d9e46e54d6b95a42a5b50326fa7851ff1",
     "Conjectures.LonelinessModularCoverFastCuts": "64bce1f120297b1aa66b219c1f53a31c211b8741884442ea92c28b7a3a420a9d",
 }
-ORIGINAL_GENERATED_SHA256 = {
+GENERATED_SHA256 = {
     PREFIX + "Data": "304d8f9816a6fb222391b048dfdc0b1b2a0501b683a1d0f7818fa4d7d5ba712b",
-    PREFIX + "Fast": "e12510c69cc6171d1a5e33c5e0ea6191f4df6c285a7cc854f9cf84edd5b628b0",
-    PREFIX + "Byte": "fb46a624de9c217703252a985dc0ed90517e918f5ad9d795ab08838aceb1a027",
+    PREFIX + "Fast": "3cfac901476128b1fbb73ef51aeb3d02f33bfa125948585381987f5cfddfc24b",
+    PREFIX + "Byte": "a4b18ee4218856acb9d4a67d05ef2aca73275a48b970d276112e9517bcaa561c",
 }
 PACKET_SHA256 = {
     "initial": "d5f4069445252029c7b36831a000c0a0d56ac83b34510a5f270e963a26b2e72b",
@@ -97,6 +98,7 @@ SCOPE = {"prime": 251, "speeds": 7, "denominator": 8, "minimum_pair": 4,
          "cut_index": 391, "fragment_limit": 31, "cuts_per_module": 4,
          "sparse_lookup_agrees_on_every_visited_instruction": True,
          "original_six_field_frames_preserved": True,
+         "proof_layout": "composed_literal_frames",
          "same_imports_options_proposition_and_kernel_decide": True,
          "initial_support_coverage_verified": False,
          "all_cut_obligations_verified": False, "integer_classification_verified": False,
@@ -233,6 +235,95 @@ def fragment_literal(fragment):
     return ".split (" + fragment_literal(fragment["left"]) + ") (" + fragment_literal(fragment["right"]) + ")"
 
 
+def render_composed_variant(payload, variant):
+    nodes = dict(payload["nodes"])
+    cover = list(map(int, payload["cover"]))
+    compatible = list(map(int, payload["compatible"]))
+    refs = dict(payload["referenced_frames"])
+    expected_leaves = {r["index"]: r["frame"] for r in payload["capacity_leaves"]}
+    rows = []
+
+    def walk(fragment, frame):
+        frame = {key: int(frame[key]) for key in initial.FRAME_KEYS}
+        kind = fragment["kind"]
+        if kind == "reuse":
+            assert fragment["index"] < 391 and frame == refs[fragment["index"]]
+            row = {"kind": kind, "frame": frame, "reference": fragment["index"]}
+        elif kind == "leaf":
+            node = nodes[frame["index"]]
+            assert node["kind"] == "capacity" and frame == expected_leaves[frame["index"]]
+            row = {"kind": kind, "frame": frame, "threshold": node["value"]}
+        else:
+            node = nodes[frame["index"]]
+            assert kind == "split" and node["kind"] == "split"
+            a = node["candidate"]
+            assert frame["fuel"] > 0 and frame["slots"] > 0 and frame["available"] >> a & 1
+            absent = {**frame, "fuel": frame["fuel"] - 1, "index": node["left"],
+                      "available": frame["available"] & ~(1 << a)}
+            present = {**frame, "fuel": frame["fuel"] - 1, "index": node["right"],
+                       "selected": frame["selected"] | (1 << a),
+                       "available": frame["available"] & ~(1 << a) & compatible[a],
+                       "uncovered": frame["uncovered"] & ~cover[a], "slots": frame["slots"] - 1}
+            left = walk(fragment["left"], absent)
+            right = walk(fragment["right"], present)
+            row = {"kind": kind, "frame": frame, "candidate": a,
+                   "left": left, "right": right,
+                   "left_index": node["left"], "right_index": node["right"]}
+        row["number"] = len(rows)
+        rows.append(row)
+        return row["number"]
+
+    root = walk(payload["fragment"], payload["initial"])
+    assert len(rows) == 31 and root == 30
+    assert len([r for r in rows if r["kind"] == "leaf"]) == 15
+    assert len([r for r in rows if r["kind"] == "reuse"]) == 1
+    module = PREFIX + "Composed" + variant
+    namespace = NAMESPACE + ".Composed" + variant
+    lines = ["import " + PREFIX + "Data", "", "/-! Exact cut391 with separately checked literal frames and leaves.",
+             "No original instruction, state field, or leaf predicate is omitted. -/", "",
+             "namespace " + namespace, "", "set_option maxRecDepth 20000",
+             "set_option maxHeartbeats 4000000", ""]
+    for row in rows:
+        n = row["number"]
+        f = f"state{n:02d}"
+        g = f"part{n:02d}"
+        lines += [f"def {f} : Cuts.Frame := {initial.frame_literal(row['frame'])}"]
+        if row["kind"] == "reuse":
+            frag = ".reuse " + str(row["reference"])
+        elif row["kind"] == "leaf":
+            frag = ".leaf"
+        else:
+            frag = f".split part{row['left']:02d} part{row['right']:02d}"
+        lines += [f"def {g} : Cuts.Fragment := {frag}", ""]
+        lines += [f"theorem checked{n:02d} :",
+                  f"    Cuts.fragmentCheck cover compatible terminal lookup frames 391 {g} {f} = true := by"]
+        if row["kind"] == "reuse":
+            lines += ["  decide +kernel"]
+        elif row["kind"] == "leaf":
+            frame, threshold = row["frame"], row["threshold"]
+            args = " ".join(str(frame[k]) for k in ("selected", "available", "uncovered", "slots"))
+            lines += [f"  change Bits.check cover compatible terminal (.capacity {threshold}) {args} = true",
+                      f"  rw [← {variant}Cuts.leafCheck_eq cover compatible terminal (.capacity {threshold}) {args}]",
+                      "  decide +kernel"]
+        else:
+            a, l, r = row["candidate"], row["left"], row["right"]
+            li, ri = row["left_index"], row["right_index"]
+            lines += [f"  have hleft : {f}.absent {a} {li} = state{l:02d} := by decide +kernel",
+                      f"  have hright : {f}.present cover compatible {a} {ri} = state{r:02d} := by decide +kernel",
+                      f"  change (decide ({f}.available.testBit {a} = true ∧ 0 < {f}.slots) &&",
+                      f"    (Cuts.fragmentCheck cover compatible terminal lookup frames 391 part{l:02d} ({f}.absent {a} {li}) &&",
+                      f"      Cuts.fragmentCheck cover compatible terminal lookup frames 391 part{r:02d}",
+                      f"        ({f}.present cover compatible {a} {ri}))) = true",
+                      f"  rw [hleft, hright, checked{l:02d}, checked{r:02d}]",
+                      "  decide +kernel"]
+        lines += [""]
+    lines += [f"theorem {variant.lower()}_checked :",
+              "    Cuts.boundedCheck cover compatible terminal lookup frames 391 31 fragment initial = true := by",
+              "  apply Bool.and_eq_true_iff.mpr", "  constructor", "  · decide +kernel",
+              f"  · exact checked{root:02d}", "", "end " + namespace, ""]
+    return module, "\n".join(lines), rows
+
+
 def render(payload):
     lines = [
         "import Conjectures.LonelinessModularCoverByteCuts",
@@ -262,17 +353,20 @@ def render(payload):
     ]
     result = {PREFIX + "Data": "\n".join(lines)}
     for variant in VARIANTS:
-        result[PREFIX + variant] = "\n".join([
-            "import " + PREFIX + "Data", "", "namespace " + NAMESPACE, "",
-            "set_option maxRecDepth 20000", "set_option maxHeartbeats 4000000", "",
+        _, composed, rows = render_composed_variant(payload, variant)
+        require(len(rows) == 31 and sum(row["kind"] == "split" for row in rows) == 15,
+                "Composed proof census differs")
+        wrapper = "\n".join([
+            "namespace " + NAMESPACE, "",
             "theorem " + variant.lower() + "_checked :",
-            "    Cuts.boundedCheck cover compatible terminal lookup frames 391 31 fragment initial = true := by",
-            "  apply " + variant + "Cuts.boundedCheck_sound", "  decide +kernel", "",
+            "    Cuts.boundedCheck cover compatible terminal lookup frames 391 31 fragment initial = true :=",
+            "  Composed" + variant + "." + variant.lower() + "_checked", "",
             "end " + NAMESPACE, "",
         ])
-    require({m: sha_bytes(s.encode()) for m, s in result.items()} == ORIGINAL_GENERATED_SHA256,
-            "Reconstructed benchmark differs from original paired sources")
-    normalized = [result[PREFIX + v].replace(v + "Cuts", "CounterCuts").replace(
+        result[PREFIX + variant] = composed + "\n" + wrapper
+    require({m: sha_bytes(s.encode()) for m, s in result.items()} == GENERATED_SHA256,
+            "Reconstructed benchmark differs from frozen composed sources")
+    normalized = [result[PREFIX + v].replace("Composed" + v, "ComposedCounter").replace(v + "Cuts", "CounterCuts").replace(
         v.lower() + "_checked", "counter_checked") for v in VARIANTS]
     require(normalized[0] == normalized[1], "Numerical modules differ beyond counter and theorem names")
     return result
@@ -294,7 +388,7 @@ def emit(destination, packet_dir, check=False):
             require(not path.exists(), "Refuse to overwrite a benchmark payload: " + str(path))
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(raw)
-    return {"generated_sha256": ORIGINAL_GENERATED_SHA256,
+    return {"generated_sha256": GENERATED_SHA256,
             "packet_sha256": PACKET_SHA256, "payload_sha256": sha_bytes(encoded(payload)),
             "statistics": payload["statistics"], "lean_verified": False}
 
@@ -315,7 +409,7 @@ def model_recipe(initial_path=None, cuts_path=None):
 def validate_model(model):
     fixed = {"schema": SCHEMA, "proof_scope": SCOPE, "source_policy": POLICY,
              "resources": RESOURCES, "variant_order": list(VARIANTS), "project_modules": MODULES,
-             "base_source_sha256": BASE_SHA256, "generated_source_sha256": ORIGINAL_GENERATED_SHA256,
+             "base_source_sha256": BASE_SHA256, "generated_source_sha256": GENERATED_SHA256,
              "packet_sha256": PACKET_SHA256, "required_theorems": REQUIRED,
              "payload_sha256": PAYLOAD_SHA256, "statistics": STATISTICS,
              "runtime_sha256": {"lean": LEAN_SHA256, "leanchecker": CHECKER_SHA256}}
@@ -493,7 +587,7 @@ def verify(model, model_digest, stage, runtime_path):
                 "Unexpected producer evidence")
         receipt["producer_evidence_sha256"] = produced_evidence
         generated = render(payload)
-        sources = {**BASE_SHA256, **ORIGINAL_GENERATED_SHA256}
+        sources = {**BASE_SHA256, **GENERATED_SHA256}
         modern = {}
         for module in MODULES:
             origin = source(stage / "generated", module) if module in generated else source(ROOT / "lean", module)

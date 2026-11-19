@@ -11,7 +11,7 @@
     "Conjectures.LonelinessModularCoverTape": "fe8af243c28a2dceb66c0ea0d1489dce398da9f36cc4dd943a2eed732b5a41d6"
   },
   "control_sha256": {
-    ".github/workflows/lean-modular-cut-counter-benchmark.yml": "8238280c21a3879187b00b54c23b699fb6bf3f852aab977b948b0606e59cf403",
+    ".github/workflows/lean-modular-cut-counter-benchmark.yml": "852440a50acf8b8514b67825f35496343edf9281ca4551bb1e3b7e5d37579e37",
     "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
     "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
     "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
@@ -24,12 +24,12 @@
     "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
     "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
     "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
-    "scripts/verify_modular_cut_counter_benchmark.py": "9abcb3655e81724a98bc1789225e936b5e818c4464f9a3be2479d23cc327e14b"
+    "scripts/verify_modular_cut_counter_benchmark.py": "61d05fccc46dad9423708c2a2e345c92c4a3a9e8b22f6d76f34d1d42a7d81273"
   },
   "generated_source_sha256": {
-    "Conjectures.LonelinessModularCoverByteBenchmarkByte": "fb46a624de9c217703252a985dc0ed90517e918f5ad9d795ab08838aceb1a027",
+    "Conjectures.LonelinessModularCoverByteBenchmarkByte": "a4b18ee4218856acb9d4a67d05ef2aca73275a48b970d276112e9517bcaa561c",
     "Conjectures.LonelinessModularCoverByteBenchmarkData": "304d8f9816a6fb222391b048dfdc0b1b2a0501b683a1d0f7818fa4d7d5ba712b",
-    "Conjectures.LonelinessModularCoverByteBenchmarkFast": "e12510c69cc6171d1a5e33c5e0ea6191f4df6c285a7cc854f9cf84edd5b628b0"
+    "Conjectures.LonelinessModularCoverByteBenchmarkFast": "3cfac901476128b1fbb73ef51aeb3d02f33bfa125948585381987f5cfddfc24b"
   },
   "packet_sha256": {
     "cuts": "5e9e5acac127607697b0508a74f5429a2bf6053655408ebadb45530a6c8583d0",
@@ -63,6 +63,7 @@
     "minimum_pair": 4,
     "original_six_field_frames_preserved": true,
     "prime": 251,
+    "proof_layout": "composed_literal_frames",
     "same_imports_options_proposition_and_kernel_decide": true,
     "sparse_lookup_agrees_on_every_visited_instruction": true,
     "speeds": 7

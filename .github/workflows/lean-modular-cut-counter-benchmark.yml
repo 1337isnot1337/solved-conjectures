@@ -63,5 +63,6 @@ jobs:
         with:
           name: modular-cut-counter-benchmark-${{ github.sha }}
           path: .candidate-artifacts/modular-cut-counter-benchmark/
+          include-hidden-files: true
           if-no-files-found: warn
           retention-days: 14
