@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check one exact Legendre-pair multiplier proof closure.
+"""Check one exact Legendre-pair proof closure.
 
 Each successful task is a component receipt. It does not register the sources
 in the accepted package or establish that every claim in the note is complete.
@@ -138,9 +138,56 @@ TASKS = {
         'HadamardLegendre.multiplier_subgroup_card_dvd_twenty_seven',
         'HadamardLegendre.common_multiplier_card_le_nine_of_ne_twenty_seven',
     ]),
+    'full-image': ('Conjectures.HadamardLegendreFullImage', [
+        'HadamardLegendre.units_seven_nineteen_card',
+        'HadamardLegendre.units_seven_nineteen_pow_eighteen',
+        'HadamardLegendre.square_mem_of_card_twenty_seven',
+        'HadamardLegendre.exists_preimage_square_of_card_twenty_seven',
+    ]),
+    'quotient-model': ('Conjectures.HadamardLegendreQuotientModel', [
+        'HadamardLegendre.expand_classRow133',
+        'HadamardLegendre.weightedSum_classRow133',
+        'HadamardLegendre.pairCorrelation_classRows133',
+        'HadamardLegendre.expand_project_classLayers133',
+        'HadamardLegendre.classLayers133_sum',
+        'HadamardLegendre.pairCorrelation_project_classLayers133',
+    ]),
+    'quotient-maps': ('Conjectures.HadamardLegendreQuotientMaps', [
+        'HadamardLegendre.crt133_mul_unit',
+        'HadamardLegendre.cyclicQuotient133_kernel_card',
+        'HadamardLegendre.layerQuotient133_kernel_card',
+        'HadamardLegendre.marginQuotient21_kernel_card',
+        'HadamardLegendre.sum_layer_compression',
+        'HadamardLegendre.sum_nineteen_layer_compression',
+        'HadamardLegendre.cyclicQuotient133_equivariant',
+        'HadamardLegendre.layerQuotient133_equivariant',
+    ]),
+    'quotient-data': ('Conjectures.HadamardLegendreQuotientData', [
+        'HadamardLegendre.quotientRows133_squareInvariant',
+        'HadamardLegendre.quotientLayers133_squareInvariant',
+        'HadamardLegendre.quotientData133_of_compressed_invariance',
+        'HadamardLegendre.quotientData133_of_fixed_card27',
+    ]),
+    'construction-algebra': ('Conjectures.HadamardLegendreConstructionAlgebra', [
+        'HadamardLegendre.convolution_commute',
+        'HadamardLegendre.convolution_normal',
+        'HadamardLegendre.pair_convolution_gram',
+        'HadamardLegendre.twoRowCore_gram',
+    ]),
+    'construction': ('Conjectures.HadamardLegendreConstruction', [
+        'HadamardLegendre.convolution_commute',
+        'HadamardLegendre.convolution_normal',
+        'HadamardLegendre.pair_convolution_gram',
+        'HadamardLegendre.twoRowCore_gram',
+        'HadamardLegendre.twoRowMatrix_sign',
+        'HadamardLegendre.twoRowMatrix_gram',
+        'HadamardLegendre.twoRowMatrix_isHadamard',
+        'HadamardLegendre.exists_hadamard_of_legendre_pair',
+        'HadamardLegendre.exists_hadamard_2396_of_legendre_pair',
+    ]),
 }
 
-DEFAULT_TASKS = ("reduction", "invariant-quotient")
+DEFAULT_TASKS = ("quotient-data", "construction")
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-legendre-candidates.yml',
  'lean/lake-manifest.json',

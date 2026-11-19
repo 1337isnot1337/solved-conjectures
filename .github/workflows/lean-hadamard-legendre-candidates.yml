@@ -28,9 +28,17 @@ on:
           - kernel
           - transfer
           - reduction
+          - full-image
+          - quotient-model
+          - quotient-maps
+          - quotient-data
+          - construction-algebra
+          - construction
   push:
     paths:
       - 'lean/Conjectures/HadamardLegendre*.lean'
+      - 'lean/Conjectures/HadamardQuotient133*.lean'
+      - 'lean/Conjectures/HadamardBorderCoreAlgebra.lean'
       - 'lean/Conjectures/HadamardBorderNormalizationTransportOps.lean'
       - 'lean/Conjectures/HadamardBorderCompression.lean'
       - 'lean/Conjectures/HadamardBorderSymmetryPrime.lean'
@@ -47,6 +55,8 @@ on:
   pull_request:
     paths:
       - 'lean/Conjectures/HadamardLegendre*.lean'
+      - 'lean/Conjectures/HadamardQuotient133*.lean'
+      - 'lean/Conjectures/HadamardBorderCoreAlgebra.lean'
       - 'lean/Conjectures/HadamardBorderNormalizationTransportOps.lean'
       - 'lean/Conjectures/HadamardBorderCompression.lean'
       - 'lean/Conjectures/HadamardBorderSymmetryPrime.lean'
