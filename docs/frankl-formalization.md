@@ -1,58 +1,70 @@
 # Frankl generating-family formalization
 
 Work is coordinated in [issue 19](https://github.com/1337isnot1337/solved-conjectures/issues/19).
-The original cyclic span-four theorem and both frequency bounds remain incomplete.
+The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete.
 Li remains deferred until the other results are fully verified.
 
-## Checked components
+## Complete large-generator bound
 
-The following sources passed local strict compilation and all four hosted
-component gates at `57d699c770471fc898850079bde384a269da5d4f`. Their exact import
-closures passed source compilation, the transitive axiom whitelist, and pinned
-kernel replay. They are registered in the accepted roots and full-package gate.
-The complete mathematical results remain incomplete.
+The accepted theorem is `Frankl.Large.large_generator_frequency`.
+For generators `G : ι → Finset α`, it assumes finite `ι`, `k ≥ 15`,
+`card (G e) = k`, exactly three indexed generators through every point,
+and `card (G e ∩ G f) ≤ 1` for distinct indices. It concludes
 
-| Component | Exact scope |
-| --- | --- |
-| `FranklFamily` | Distinct generated unions, union closure, and interior/exterior trace reconstruction |
-| `FranklLocalFibers` | Equality of every occurring exterior fiber with the local boundary family `C(E,M)` |
-| `FranklLocalWeights` | Nonnegative weighted local certificates imply an abundant ground point in the actual distinct-union family |
-| `FranklIncidence` | Explicit inverse bijections between generated unions and maximal independent sets in the actual incidence graph; exact point-absence correspondence |
-| `FranklArithmetic` | The all-`k ≥ 15` local-lemma numerical criterion, the avoidance bound, and the exact `343/1000` absence factor |
-| `FranklLopsided` | The lopsided local lemma for every finite conditioning set, plus the query bound, stated as exact cardinal inequalities over ordered scalars |
+```text
+657 * card (family (univ.image G))
+  ≤ 1000 * card ((family (univ.image G)).filter (a ∈ ·))
+```
 
-The arithmetic component does not assume that a generating family satisfies
-the conditional-event hypotheses. Deriving those hypotheses is separate work.
+for every ground point `a`. The family contains each distinct union once,
+including the empty union. It does not weight generator representations.
 
-## Remaining obligations
+The proof derives the event bound and lopsided dependence by Harris slicing,
+counts the actual local selections, establishes the query independence, and
+transfers the canonical selections through a proved bijection.
+The exact 16-module closure passed strict source checks, all 231 theorem
+declarations' transitive axiom audit, and independent pinned-kernel replay at
+`663f72751f7cfb13e533050985072e59204cbd26`.
+The source hashes and job link are recorded in
+[the receipt](frankl-large-hosted-receipt.json).
+All modules in that closure are registered; the full merged-package run is a
+separate gate.
 
-For the large-generator theorem, the remaining work is the Harris inequality
-on the actual bit slices, exact
-local event counts, incidence-degree bounds, and the final transfer from
-canonical selections to the uniform distribution on distinct unions.
+## Earlier accepted components
 
-For the degree-three through degree-fourteen cases, the remaining work is
-tree message counting, cone propagation, complete integer certificates,
-mixed-child root bounds, and conditioning on the exterior of the radius-seven
-tree in the actual finite incidence graph.
+The six initial modules passed their exact hosted gates at
+`57d699c770471fc898850079bde384a269da5d4f`.
+They prove distinct-union semantics, exact local boundary fibers, the
+weighted local-certificate implication, the incidence-graph bijection,
+finite lopsided conditioning, and the numerical estimates.
+[Initial receipt](frankl-foundations-hosted-receipt.json).
 
-For the cyclic span-four theorem, the remaining work includes all finite
-window certificates and graph reductions, their cyclic-word semantics, the
-small-ground case, and the repeated-triple theorem used by the written proof.
-No published theorem is silently treated as an axiom.
+## Small-generator high-girth proof in progress
 
+The candidate sources prove the actual radius-seven ball is a tree under
+girth at least sixteen, graph-level configuration factorization, the
+three-state counting recurrence, conic propagation, mixed-child root bounds,
+and soundness of exact integer-span certificates.
+Certificates for all twelve degrees from three through fourteen are
+generated. Several already pass strict Lean checking; each remaining degree
+must pass ordinary kernel computation and the complete candidate gates.
 
-## Candidate source packet
+The current graph work connects actual ball decomposition, boundary
+conditioning and the finite recurrence. None of these intermediate results
+is being counted as the completed high-girth frequency theorem.
 
-The next packet contains the full `k ≥ 15` endpoint in
-`FranklLargeTheorem.lean`, supported by actual incidence, canonical-selection,
-Harris-slice, query-independence, and exact-cardinality sources. These additions
-remain outside the accepted roots until their complete gates pass. The endpoint
-has the original size, regularity, and pairwise-intersection hypotheses; it does
-not assume the desired event probabilities or conditioning inequalities.
+## Cyclic span-four proof in progress
 
-The tree packet proves the three-state finite counting identities, conic
-propagation, all mixed-child root bounds, and integer-witness checker soundness.
-Its first generated degree-three certificate is included as a separate gated
-component. Other degree certificates are prepared locally. The actual finite
-graph/girth/boundary-conditioning bridge is still a separate obligation.
+The candidate sources prove local-certificate soundness, singleton/two-set
+and two-neighbor shortcuts, finite support/core enumeration, literal cyclic
+window semantics, and rank certificates for closed walks.
+The finite window weights and graph reductions still need their complete
+Lean checks and final assembly.
+
+A separate finite computation checked all 38,044 eligible wrapped-window
+cases for cycle lengths at most ten with the original weights. This is a
+candidate route to removing the written proof's use of the published
+eleven-element theorem; it is not yet an accepted Lean proof.
+The three-common-point-triples theorem is being proved internally with
+exact finite union-closed extension certificates. No published theorem is
+silently treated as an axiom.

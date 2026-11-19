@@ -288,3 +288,18 @@ bijection, finite lopsided-conditioning theorem, and numerical inequalities.
 It does not yet verify either complete Frankl result. See
 [the scope and remaining obligations](frankl-formalization.md) and
 [the exact hosted receipt](frankl-foundations-hosted-receipt.json).
+
+
+## Frankl large-generator theorem — 19 November 2026
+
+The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete.
+
+The exact 16-module closure at `663f72751f7cfb13e533050985072e59204cbd26`
+passed strict source checking, a 231-theorem transitive axiom audit, and
+independent kernel replay in [job 135402205987](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44477677129/job/135402205987).
+The only allowed axioms are `propext`, `Classical.choice`, and `Quot.sound`.
+The probability estimates, lopsided dependence, query independence, and
+bijection with actual distinct unions are all proved internally. Thirteen
+additional modules are registered here. The full merged-package gate is
+separate from this exact component receipt.
+See [the source-hash receipt](frankl-large-hosted-receipt.json).

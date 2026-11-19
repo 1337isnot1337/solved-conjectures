@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Frankl.Large.large_generator_frequency,
+    `Frankl.Large.nonneighbor_event_bound,
+    `Frankl.Large.canonical_filtered_card,
+    `Frankl.Large.three_regular_point_absence_independent_nonreaders,
     `FranklLocal.fiber_eq_compatible,
     `FranklLocal.weighted_local_certificate_abundance,
     `FranklIncidence.canonical_maximal,

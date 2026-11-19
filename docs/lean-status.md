@@ -38,7 +38,7 @@ never additional Lean axioms.
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
-| Frankl generating families | Partial | Exact local boundary fibers and the full weighted-certificate implication; distinct-union/maximal-independent-set bijections; finite cardinal lopsided conditioning and all-k≥15 arithmetic. The cyclic span-four certificate and published dependencies, actual incidence conditioning hypotheses, and high-girth graph/tree bridge remain incomplete. |
+| Frankl generating families | Partial: full large-generator bound complete | The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete. |
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
 | Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
@@ -1319,3 +1319,18 @@ bijection, finite lopsided-conditioning theorem, and numerical inequalities.
 It does not yet verify either complete Frankl result. See
 [the scope and remaining obligations](frankl-formalization.md) and
 [the exact hosted receipt](frankl-foundations-hosted-receipt.json).
+
+
+## Frankl large-generator theorem — 19 November 2026
+
+The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete.
+
+The exact 16-module closure at `663f72751f7cfb13e533050985072e59204cbd26`
+passed strict source checking, a 231-theorem transitive axiom audit, and
+independent kernel replay in [job 135402205987](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44477677129/job/135402205987).
+The only allowed axioms are `propext`, `Classical.choice`, and `Quot.sound`.
+The probability estimates, lopsided dependence, query independence, and
+bijection with actual distinct unions are all proved internally. Thirteen
+additional modules are registered here. The full merged-package gate is
+separate from this exact component receipt.
+See [the source-hash receipt](frankl-large-hosted-receipt.json).

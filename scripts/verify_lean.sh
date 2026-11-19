@@ -494,6 +494,19 @@ modules=(
   Conjectures.FranklIncidence
   Conjectures.FranklArithmetic
   Conjectures.FranklLopsided
+  Conjectures.FranklLargeIncidence
+  Conjectures.FranklLopsidedHarris
+  Conjectures.FranklFamilyIndependent
+  Conjectures.FranklLargeBound
+  Conjectures.FranklLargeSelection
+  Conjectures.FranklLopsidedCoordinates
+  Conjectures.FranklFamilyCanonical
+  Conjectures.FranklLargeNeighbors
+  Conjectures.FranklLargeQuery
+  Conjectures.FranklLargeCoverage
+  Conjectures.FranklLargeLopsided
+  Conjectures.FranklLargeProbability
+  Conjectures.FranklLargeTheorem
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

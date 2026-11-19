@@ -97,3 +97,16 @@ import Conjectures.FranklLocalWeights
 import Conjectures.FranklIncidence
 import Conjectures.FranklArithmetic
 import Conjectures.FranklLopsided
+import Conjectures.FranklLargeIncidence
+import Conjectures.FranklLopsidedHarris
+import Conjectures.FranklFamilyIndependent
+import Conjectures.FranklLargeBound
+import Conjectures.FranklLargeSelection
+import Conjectures.FranklLopsidedCoordinates
+import Conjectures.FranklFamilyCanonical
+import Conjectures.FranklLargeNeighbors
+import Conjectures.FranklLargeQuery
+import Conjectures.FranklLargeCoverage
+import Conjectures.FranklLargeLopsided
+import Conjectures.FranklLargeProbability
+import Conjectures.FranklLargeTheorem

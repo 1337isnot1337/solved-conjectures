@@ -1,5 +1,14 @@
 # History
 
+## 2026-11-19 — Complete Frankl large-generator frequency bound
+
+Registered the full all-`k ≥ 15` bound of `657/1000` for every point, with
+actual distinct-union counting and the original size, regularity, and linear
+intersection hypotheses. Its 16-module closure passed strict sources, a
+231-theorem transitive axiom audit, and pinned-kernel replay at `663f7275`.
+The high-girth cases `3 ≤ k ≤ 14` and cyclic span-four theorem remain in
+progress. [Receipt](docs/frankl-large-hosted-receipt.json).
+
 ## 2026-11-19 — Checked Frankl counting foundations
 
 Registered six proof modules after their exact hosted source, transitive axiom,
