@@ -27,6 +27,7 @@ A growing collection of proofs, counterexamples, and reproducible verification c
 | [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | [Read](results/six-speed-spectrum/PROOF.md) | ☐ |
 | [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | [Read](results/tight-seven-speeds/PROOF.md) | ☐ |
 | [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | [Read](results/tight-eight-speeds/PROOF.md) | ☐ |
+| [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | [Read](results/tight-nine-speeds/PROOF.md) | ☐ |
 
 ☑ Formalized stated result · ◐ Partial formalization · ☐ Not formalized
 

@@ -57,3 +57,5 @@ jobs:
         run: python3 results/tight-seven-speeds/verify.py
       - name: Verify the unique equality case for nine lonely runners
         run: python3 results/tight-eight-speeds/verify.py
+      - name: Verify the unique equality case for ten lonely runners
+        run: python3 results/tight-nine-speeds/verify.py

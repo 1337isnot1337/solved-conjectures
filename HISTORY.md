@@ -2,6 +2,10 @@
 
 [Home](README.md) · [Catalogue](CONTENTS.md)
 
+## 2026-11-19 — Ten-runner equality classification
+
+- Added the proof that only consecutive primitive speeds attain 1/10 and the verifier for its 28 modular certificates.
+
 ## 2026-11-19 — Collection navigation
 
 - Split the landing page, full result catalogue, and verification instructions.

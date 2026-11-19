@@ -42,6 +42,7 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 | [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/PROOF.md) | The consecutive set is the unique primitive six-speed equality case. The seven-coordinate critical plane is unique up to signs and permutations. | ☐ | [Proof](results/tight-six-speeds/PROOF.md) and [exhaustive verifier](results/tight-six-speeds/verify.py) |
 | [Eight lonely runners, all equality cases](results/tight-seven-speeds/PROOF.md) | Exactly three primitive seven-speed sets attain 1/8. They are the consecutive speeds and the two examples in Goddyn and Wong’s census. | ☐ | [Proof](results/tight-seven-speeds/PROOF.md) and [exhaustive verifier](results/tight-seven-speeds/verify.py) |
 | [Nine lonely runners, unique equality case](results/tight-eight-speeds/PROOF.md) | The consecutive speeds 1 through 8 are the only primitive set attaining 1/9. | ☐ | [Proof](results/tight-eight-speeds/PROOF.md) and [exhaustive verifier](results/tight-eight-speeds/verify.py) |
+| [Ten lonely runners, unique equality case](results/tight-nine-speeds/PROOF.md) | The consecutive speeds 1 through 9 are the only primitive set attaining 1/10. | ☐ | [Proof](results/tight-nine-speeds/PROOF.md) and [exhaustive verifier](results/tight-nine-speeds/verify.py) |
 
 ☑ Lean formalization of the stated result · ◐ Partial formalization with explicit remaining dependencies · ☐ No Lean formalization
 

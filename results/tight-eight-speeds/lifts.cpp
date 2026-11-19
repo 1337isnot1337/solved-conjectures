@@ -5,11 +5,16 @@
 #include <cstdint>
 #include <iostream>
 #include <numeric>
+#include <optional>
 #include <set>
 #include <string>
 #include <vector>
 
-constexpr int count = 8;
+#ifndef SPEED_COUNT
+#define SPEED_COUNT 8
+#endif
+constexpr int count = SPEED_COUNT;
+static_assert(count==8 || count==9);
 using Tuple = std::array<int,count>;
 using Word = std::uint64_t;
 using Mask = std::vector<Word>;
@@ -17,6 +22,22 @@ using Mask = std::vector<Word>;
 int fold(int value, int modulus) {
     int r = value % modulus;
     return std::min(r,modulus-r); // all callers supply nonnegative integers
+}
+
+// For d dividing q, count how many of the d translates can be spoiled
+// by entries that are nonzero modulo d. The proof supplies a base time
+// at which the remaining entries have strict distance above 1/(count+1).
+bool shift_witness(const Tuple& residues, int q) {
+    for (int d=2; d<=q; ++d) {
+        if (q%d) continue;
+        int excluded=0;
+        for (int c:residues) if (c%d) {
+            int g=std::gcd(c,d);
+            excluded+=g*((2*(d/g)+count)/(count+1));
+        }
+        if (excluded>0 && excluded<d) return true;
+    }
+    return false;
 }
 
 struct Grid {
@@ -48,13 +69,27 @@ struct Grid {
     void assign(const Tuple& speeds, int i, Tuple& residues, int divisor,
                 std::vector<Tuple>& survivors) const {
         if (i==count) {
-            if (divisor==1 && !witness(speeds,residues)) survivors.push_back(residues);
+            if (divisor!=1) return;
+            if constexpr (count==9) {
+                // q is 2 or 3 here. Each exceptional speed spoils at most one shift.
+                if (std::count_if(residues.begin(),residues.end(),[](int x){return x!=0;})<q) return;
+            }
+            if (!witness(speeds,residues)) survivors.push_back(residues);
             return;
         }
         for (int c=0; c<q; ++c) {
             residues[i]=c;
             assign(speeds,i+1,residues,std::gcd(divisor,c),survivors);
         }
+    }
+
+    bool surviving_extension(const Tuple& speeds, const Tuple& base, int i, Tuple& lift) const {
+        if (i==count) return !shift_witness(lift,q) && !witness(speeds,lift);
+        for (int c=base[i]; c<q; c+=6) {
+            lift[i]=c;
+            if (surviving_extension(speeds,base,i+1,lift)) return true;
+        }
+        return false;
     }
 
     std::vector<Tuple> primitive_survivors(const Tuple& speeds) const {
@@ -120,6 +155,11 @@ int main(int argc, char** argv) {
     if (argc!=2) return 2;
     int p=std::stoi(argv[1]);
     Grid base(p,1), two(p,2), three(p,3), six(p,6);
+    std::optional<Grid> twelve, eighteen;
+    if constexpr (count==9) {
+        twelve.emplace(p,12);
+        eighteen.emplace(p,18);
+    }
     std::set<Tuple> sets;
     Tuple tuple;
     while (std::cin>>tuple[0]) {
@@ -141,8 +181,17 @@ int main(int argc, char** argv) {
             Tuple residues;
             for (int i=0; i<count; ++i) residues[i]=(3*a[i]+4*b[i])%6;
             if (six.witness(speeds,residues)) continue;
-            if (!aligned.contains(residues)) return 1;
-            ++matches;
+            if (aligned.contains(residues)) {
+                ++matches;
+                continue;
+            }
+            if constexpr (count==9) {
+                Tuple lift{};
+                if (shift_witness(residues,6)
+                    || !twelve->surviving_extension(speeds,residues,0,lift)
+                    || !eighteen->surviving_extension(speeds,residues,0,lift)) continue;
+            }
+            return 1;
         }
     }
     if (!matches) return 2; // the consecutive tuple is always present
