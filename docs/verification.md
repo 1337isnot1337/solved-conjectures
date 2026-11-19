@@ -19,6 +19,7 @@ python3 results/l-solitaire-limit-shapes/verify.py
 python3 results/pham-denominator-degree/verify.py
 python3 results/pham-denominator-degree/verify.py --dual --brute-depth 13
 (cd results/pham-denominator-degree && python3 -m unittest discover -s tests -v)
+python3 results/graffiti-pc-318/verify.py
 python3 results/li-coefficient-sign/verify.py
 python3 results/li-coefficient-sign/independent_check.py
 python3 results/batista-egyptian-fractions/verify.py
@@ -58,6 +59,8 @@ The script builds the shared package, runs `ProofAudit.lean` with warnings treat
 The [status report](lean-status.md) records the exact statements checked and dependencies that remain. Partial certificates do not establish the full conjecture. Accepted proofs permit only `propext`, `Classical.choice`, and `Quot.sound` as transitive axioms, as required by [the repository instructions](../AGENTS.md).
 
 ## What the checks establish
+
+`results/graffiti-pc-318/verify.py` uses only the Python standard library. It checks all 419,235 labeled graphs on 2–7 vertices with at most `n+1` missing edges; 7,337 satisfy the original hypothesis and each passes the total-domination test. A sharp five-vertex counterexample to a one-unit relaxation is separately verified. See [the all-order proof](../results/graffiti-pc-318/PROOF.md), **credited to [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)**. This is not a Lean proof.
 
 `results/l-solitaire-limit-shapes/verify.py` is the original embedded PDF attachment, extracted byte-for-byte. The finite search checks all pick-layer sets and integer partitions for deck sizes 1 through 14 and separately verifies the specific counterexample for sizes 1 through 1000. Exhaustive tests do not replace the general argument in the PDF.
 

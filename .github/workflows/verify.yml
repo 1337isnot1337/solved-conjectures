@@ -18,6 +18,8 @@ jobs:
           python3 results/pham-denominator-degree/verify.py --dual --brute-depth 13
       - name: Run Pham regression tests
         run: cd results/pham-denominator-degree && python3 -m unittest discover -s tests -v
+      - name: Verify Graffiti.pc 318 total-domination theorem
+        run: python3 results/graffiti-pc-318/verify.py
       - name: Verify Li non-spider coefficient and partition certificates
         run: |
           python3 results/li-coefficient-sign/verify.py

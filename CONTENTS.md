@@ -18,6 +18,7 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 
 | Result | Finding | Lean | Evidence |
 | :--- | :--- | :---: | :--- |
+| [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | DeLaViña (2007): every total dominating set contains a dominating pair under the given even-distance bound. **Credited to [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334).** | ☐ | [Proof](results/graffiti-pc-318/PROOF.md) · [Check](results/graffiti-pc-318/verify.py) |
 | [Li's coefficient-sign prediction](results/li-coefficient-sign/) | Li (2026), Problems 4.9 and 4.6 (first question): 31-vertex non-spider tree with `[e_3e_2^14]X_T = +29`. | ☐ | [Proof](results/li-coefficient-sign/PROOF.md) · [Check](results/li-coefficient-sign/verify.py) |
 | [Line-size sets](results/erdos-607-line-sizes/PROOF.md) | Erdős Problem 607 / OEIS A401948: sharp counting asymptotic with exact leading prefactor. | ☐ | [Proof](results/erdos-607-line-sizes/PROOF.md) · [Check](results/erdos-607-line-sizes/verify.py) |
 | [Distance graphs with three missing differences](results/distance-graph-densities/PROOF.md) | Carraher et al., arXiv Conjecture 38 proved for all admissible parameters. Conjecture 39 fails for every `k=50,59,68,…`. The [corrected formula](results/distance-graph-densities/CLASSIFICATION.md) gives all densities for gaps five and seven. | ☑ | [Strip verifier](results/distance-graph-densities/verify.cpp) and [counterexample verifier](results/distance-graph-densities/counterexample.py) |
@@ -63,6 +64,7 @@ These are mathematical claims with explicit proofs and computer checks, **not pe
 
 ## Primary sources
 
+- Ermelinda DeLaViña, [*Written on the Wall II*, Graffiti.pc Conjecture 318](https://www.uhd.edu/academics/sciences/mathematics-statistics/wowii/files/wowiiaii.pdf), announced March 4, 2007; catalogue updated November 5, 2026. Proof shared by [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334) on November 18, 2026; an externally contributed result, not authored by this repository's maintainer.
 - Kimmo Eriksson, Markus Jonsson, Jonas Sjoestrand, [*Limit shapes of stable and recurrent configurations of a generalized Bulgarian solitaire*](https://combinatorialpress.com/article/ojac/vol15/192.pdf), *Online Journal of Analytic Combinatorics* 15 (2020), paper 10. Definitions 2--4, Theorems 3--5, Conjecture 1.
 - Nhung Pham, [*Limiting behavior in growth of Bulgarian solitaire orbits*](https://arxiv.org/abs/2208.14496) (2022), Theorem 1.2 and section 6.
 - A. J. Harris and Son Nguyen, [*Bulgarian Solitaire: A new representation for depth generating functions*](https://ajc.maths.uq.edu.au/pdf/93/ajc_v93_p224.pdf), *Australasian Journal of Combinatorics* 93 (2025), Conjecture 1.1.

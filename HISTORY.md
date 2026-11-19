@@ -2,6 +2,11 @@
 
 [Home](README.md) · [Catalogue](CONTENTS.md)
 
+## 2026-11-18 — Graffiti.pc Conjecture 318 (credited to @JesterInABarrel)
+
+- Added the all-order proof of Conjecture 318 **credited to [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)**, its stronger total-dominating-pair theorem, and a sharp five-vertex counterexample to lowering the hypothesis by one.
+- Checked 419,235 labeled graphs (7,337 satisfying the hypothesis); Lean formalization remains open.
+
 ## 2026-11-18 — Complete distance-graph classifications
 
 - Proved the exact gap-five and gap-seven density tables for every positive parameter, including optimal periodic constructions.
