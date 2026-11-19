@@ -1,6 +1,6 @@
 {
   "accepted_registry_changed": false,
-  "complete_arithmetic_partition": false,
+  "complete_arithmetic_partition": true,
   "expected_groups": [
     "g00",
     "g01",
@@ -22,11 +22,7 @@
     "g17",
     "g18"
   ],
-  "missing_groups": [
-    "g16",
-    "g17",
-    "g18"
-  ],
+  "missing_groups": [],
   "passed_groups": {
     "g00": {
       "archive_sha256": "586c9a0301748f5bcf61121e04991c78520f39edad108b66c86db40c50831ade",
@@ -187,6 +183,36 @@
       "receipt": "docs/verification/frankl-orbit-batches-44503050632/g15.json",
       "receipt_sha256": "a8f521b5876635d94bdbe183670250c936d38120f724971c376ca17df5c7860d",
       "rows": 512
+    },
+    "g16": {
+      "archive_sha256": "dd9e69c4f197f8839ef6104f11c0c0e716f86da94cf1332d814c1ef0c9a71e17",
+      "artifact_id": 14526370580,
+      "artifact_name": "frankl-orbit-g16-receipt",
+      "private_chunks": 256,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44503050632/g16.json",
+      "receipt_sha256": "5b16a6fe11a31d0c00bd898e01d97d2cbe61f78a3413c25530365d57243314a3",
+      "rows": 512
+    },
+    "g17": {
+      "archive_sha256": "f7c5b42eacd8a4bf40eeccd9c5808ea7d987d03e1a940e9a3d48dd409e920e19",
+      "artifact_id": 14524763245,
+      "artifact_name": "frankl-orbit-g17-receipt",
+      "private_chunks": 256,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44503050632/g17.json",
+      "receipt_sha256": "16a6fe84cbbda38ccfa860282b9027b934690a788cf327ec939933f079cdda5c",
+      "rows": 512
+    },
+    "g18": {
+      "archive_sha256": "7aeee6ae7cdcf0444b580f41d8545233f47768d6600b4adb778785b88301ea31",
+      "artifact_id": 14525981736,
+      "artifact_name": "frankl-orbit-g18-receipt",
+      "private_chunks": 133,
+      "project_modules": 28,
+      "receipt": "docs/verification/frankl-orbit-batches-44503050632/g18.json",
+      "receipt_sha256": "3c012629172510aa17baf123d8a94d585b04b1cdac03065cd1cb3e33d107685b",
+      "rows": 265
     }
   },
   "schema": "frankl-bounded-arithmetic-receipts-v1",
@@ -194,8 +220,8 @@
   "skipped_artifacts": [],
   "source_commit": "a48f80f5f0e7d5e27d9429c324ad07097d070161",
   "source_run_id": 44503050632,
-  "verified_private_arithmetic_chunks": 4059,
-  "verified_representative_rows": 8117,
-  "workflow_conclusion": null,
-  "workflow_status": "in_progress"
+  "verified_private_arithmetic_chunks": 4704,
+  "verified_representative_rows": 9406,
+  "workflow_conclusion": "success",
+  "workflow_status": "completed"
 }
