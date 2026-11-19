@@ -1,0 +1,50 @@
+name: Lean complete p199 root cover
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-five-speed-root199-exact.yml'
+      - 'scripts/verify_five_speed_root199_exact.py'
+      - 'docs/five-speed-root199-exact-inputs.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-five-speed-root199-exact
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce both unchanged producers and check the exact closure
+        run: |
+          python3 -m py_compile scripts/verify_five_speed_root199_exact.py
+          python3 scripts/verify_five_speed_root199_exact.py --plan
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Fresh strict source, every owned declaration, and exact stock replay
+        env:
+          LEAN_NUM_THREADS: 1
+          UV_USE_IO_URING: 0
+        run: python3 scripts/verify_five_speed_root199_exact.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: five-speed-root199-exact
+          path: .candidate-artifacts/five-speed-root199-exact/
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: warn
