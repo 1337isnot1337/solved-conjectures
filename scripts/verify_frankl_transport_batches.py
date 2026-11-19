@@ -26,7 +26,7 @@ import verify_frankl_orbit_batches as arithmetic
 ROOT = arithmetic.ROOT
 RESULTS = ROOT / 'results/frankl-generator-families'
 PRODUCER = RESULTS / 'generate_small_cyclic_weight_transport_batches.py'
-PRODUCER_SHA256 = 'b0f05265b8e1cda4ee2721a178238fe30baa443d3283e9e88be977160117ddb4'
+PRODUCER_SHA256 = '87a39a9b09c63fa0259a396abeb072f98df31a45442b3f7e88ccff5fa562fb32'
 MANIFEST = RESULTS / 'small_cyclic_weight_transport_batches.json'
 PREPARATION = ROOT / '.candidate-artifacts/frankl-transport-batches-preparation.json'
 ARTIFACT_ROOT = ROOT / '.candidate-artifacts'

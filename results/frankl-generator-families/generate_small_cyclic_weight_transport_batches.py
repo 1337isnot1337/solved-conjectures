@@ -486,7 +486,7 @@ private theorem checked{index} : Weights.entryCheck {member['period']} Data.targ
             proof += f'''  apply MaskTransport.maskTransportCheck_entryCheck
     (n := {dispatch['period']}) (source := Data.source{index}) (points := Data.points{index})
   · decide +kernel
-  · '''
+  · exact '''
             proof += source_window_proof(case).replace('{index}', str(index)) + '\n\n'
     for period in PERIODS:
         numbered = [i for i, c in enumerate(cases) if c['member']['period'] == period]
