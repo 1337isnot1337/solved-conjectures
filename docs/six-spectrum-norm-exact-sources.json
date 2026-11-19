@@ -20,7 +20,7 @@
       "legacy_prefixes": [
         "Loneliness."
       ],
-      "project_module_count": 133,
+      "project_module_count": 134,
       "required_theorem_count": 41,
       "required_theorems": [
         "Loneliness.SixSpectrumNormGeometry.exists_gram_data",
@@ -66,7 +66,8 @@
         "Loneliness.SixSpectrumNormGeometry.natural_squaredNorm_lt_of_checked_exhaustion"
       ],
       "roots": [
-        "Conjectures.LonelinessSixSpectrumNormClassification"
+        "Conjectures.LonelinessSixSpectrumNormClassification",
+        "Conjectures.LonelinessSixPlaneEnumeration"
       ],
       "schema": "six-spectrum-norm-exact-v1",
       "scope": "Classifies coordinate-free rational two-dimensional six-planes of space value below 2/11 into the three signed rational critical types, assuming the exact CandidatePairsChecked proposition and five-speed SporadicExhaustion. Uses the already proved four-speed runner bound internally. For positive primitive six-speed vectors of value below 1/6 outside those critical planes, derives norm below 21829 and the corresponding natural squared-norm cutoff. Both finite-pair coverage and five-speed exhaustion remain explicit inputs; this does not prove the complete six-speed spectrum.",
@@ -196,6 +197,7 @@
         "Conjectures.LonelinessSixPlaneClassificationCore": "7eb4c9007beddf8223d47d7998fc9348b07f0462ef005ecb9016e2bc0deca248",
         "Conjectures.LonelinessSixPlaneCriticalNormalization": "58a31a8735db6fe2020b488b26060da6ca446147a78891886fac9bac9bbd1ddb",
         "Conjectures.LonelinessSixPlaneDefs": "60ace6bec6c078b9111a739377ea0fc61da2cb0614c7914f6b2d6ebb7d8ed786",
+        "Conjectures.LonelinessSixPlaneEnumeration": "d03868c70675caac2ea59d0acdfe5646a111acb0d50ebf6edade3aa487aed048",
         "Conjectures.LonelinessSixPlaneFiveInput": "55f7640e8d8f9354dff6c37e651b3af0cb756791cb7a04f0b8fdaaa7ef680193",
         "Conjectures.LonelinessSixPlaneGap": "52b0c4366980d998ab52907eef8e82b6c693c824ca046ed45aa99e9e68eb7975",
         "Conjectures.LonelinessSixPlaneGeometry": "ce9f46dcc72190862e2e224f7515a45d3d32f7174c3d674b6c51aae23071e5c7",

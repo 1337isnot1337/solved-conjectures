@@ -54,7 +54,8 @@ ROOTS = {
         "Conjectures.LonelinessSixSpectrumNormGeometry"
     ],
     "norm-classification": [
-        "Conjectures.LonelinessSixSpectrumNormClassification"
+        "Conjectures.LonelinessSixSpectrumNormClassification",
+        "Conjectures.LonelinessSixPlaneEnumeration"
     ]
 }
 
