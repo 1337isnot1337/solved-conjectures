@@ -54,7 +54,14 @@ The latest workflow is the executable reference when new checks are added.
 bash scripts/verify_lean.sh
 ```
 
-The script builds the shared package, runs `ProofAudit.lean` with warnings treated as errors, and independently rechecks the listed compiled modules with `leanchecker`. [The Lean workflow](../.github/workflows/lean.yml) runs the same audit in CI.
+The script builds each accepted module sequentially, builds the shared root imports, runs `ProofAudit.lean` with warnings treated as errors, and independently rechecks the listed compiled modules with `leanchecker`. The audit covers private declarations as well as public theorems, and rejects project axioms even when unused. Sequential builds keep large finite reductions from competing for memory. [The Lean workflow](../.github/workflows/lean.yml) runs the same audit in CI.
+
+`scripts/replay_lean.py` checks that the replay list exactly matches the project
+source-import closure. It stages those compiled objects, including their server
+and private data, and replaces only the project entry in Lean's import path.
+The unchanged pinned `leanchecker` then replays the two project namespaces.
+This avoids repeated dependency-directory scans and excludes unfinished cached
+modules. It does not change the kernel or omit any accepted proof module.
 
 The [status report](lean-status.md) records the exact statements checked and dependencies that remain. Partial certificates do not establish the full conjecture. Accepted proofs permit only `propext`, `Classical.choice`, and `Quot.sound` as transitive axioms, as required by [the repository instructions](../AGENTS.md).
 

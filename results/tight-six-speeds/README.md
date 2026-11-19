@@ -22,9 +22,4 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-No Lean formalization is currently listed for this result. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
-
-## Supporting files
-
-- [`modular.cpp`](modular.cpp)
-- [`planes.cpp`](planes.cpp)
+Partial formalization. The general pair-sum maximum theorem and the displayed finite examples have checked global loneliness values. Exhaustiveness and the full classification remain open in Lean. See [the status report](../../docs/lean-status.md) for exact scope.

@@ -2,7 +2,7 @@
 
 [Collection](../../README.md) · [Catalogue](../../CONTENTS.md) · [Verification](../../docs/verification.md) · [Lean status](../../docs/lean-status.md)
 
-**Status:** the fixed-scale counterexample is **Lean verified**; see the [Lean proof and exact scope](../../lean/). The separate diverging-scale theorem has not been Lean verified. The note gives a counterexample to Conjecture 1 of Eriksson--Jonsson--Sjoestrand (2020) under its published definition, plus a proof of the conjectured conclusion for all layer-picking rules at any scaling `a_n -> infinity`. Unrefereed; originality and publication priority are not certified.
+**Status:** both the fixed-scale counterexample and the separate corrected diverging-scale theorem have passed Lean source checks, standard-axiom audits, and independent kernel replay. See [GeneralTheorem.lean](../../lean/Solitaire/GeneralTheorem.lean) and [the exact checked scope](../../docs/lean-status.md). The note gives a counterexample to Conjecture 1 of Eriksson--Jonsson--Sjoestrand (2020) under its published definition, plus a proof of the conjectured conclusion for all layer-picking rules at any scaling `a_n -> infinity`. Unrefereed; originality and publication priority are not certified.
 
 - [Original 4-page proof (PDF)](proof.pdf), including diagrams and an embedded `verify.py` attachment.
 - [Source-equivalent mathematical proof (Markdown)](PROOF.md).

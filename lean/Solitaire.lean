@@ -1,1 +1,3 @@
 import Solitaire.Limits
+import Solitaire.ProfileTransfer
+import Solitaire.GeneralTheorem
