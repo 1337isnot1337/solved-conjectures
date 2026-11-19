@@ -14,7 +14,7 @@ def circulantOptimum (N a b : ℕ) : ℕ × (ℕ × ℕ) :=
 theorem circulantOptimum_threshold (N a b : ℕ) (hN : 0 < N)
     (hgen : Nat.gcd N (Nat.gcd a b)=1) :
     (circulantOptimum N a b).1=independenceNumber N a b := by
-  letI : NeZero N := ⟨hN.ne'⟩
+  let _ : NeZero N := ⟨hN.ne'⟩
   let k := Nat.gcd N a
   let m := N/k
   let s := normalizedShear m (a/k) b

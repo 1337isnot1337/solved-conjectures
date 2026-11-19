@@ -44,8 +44,8 @@ theorem independenceNumber_eq (N a b : ℕ) [NeZero N] :
 
 theorem independenceNumber_scale (g M a b : ℕ) (hg : 0 < g) (hM : 0 < M) :
     independenceNumber (g*M) (g*a) (g*b)=g*independenceNumber M a b := by
-  letI : NeZero g := ⟨hg.ne'⟩
-  letI : NeZero M := ⟨hM.ne'⟩
+  let _ : NeZero g := ⟨hg.ne'⟩
+  let _ : NeZero M := ⟨hM.ne'⟩
   rw [independenceNumber_eq,independenceNumber_eq]
   exact independence_scale g M a b
 

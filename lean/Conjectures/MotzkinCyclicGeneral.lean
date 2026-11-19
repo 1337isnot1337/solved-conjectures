@@ -44,11 +44,11 @@ theorem characterValue_eq_independence (a b : ZMod N) :
 theorem independent_card_le_independence (a b : ZMod N) (B : Finset (ZMod N))
     (hB : ∀ x ∈ B, x+a ∉ B ∧ x+b ∉ B) : B.card ≤ independence a b := by
   classical
-  letI : MeasurableSpace (ZMod N) := ⊤
-  letI : MeasurableSingletonClass (ZMod N) := ⟨fun _ => trivial⟩
+  let _ : MeasurableSpace (ZMod N) := ⊤
+  let _ : MeasurableSingletonClass (ZMod N) := ⟨fun _ => trivial⟩
   let μ : Measure (ZMod N) := ((count : Measure (ZMod N)) Set.univ)⁻¹ • count
-  letI : IsProbabilityMeasure μ := inferInstance
-  letI : IsAddLeftInvariant μ := inferInstance
+  let _ : IsProbabilityMeasure μ := inferInstance
+  let _ : IsAddLeftInvariant μ := inferInstance
   have huniv : (count : Measure (ZMod N)) Set.univ=(N:ℝ≥0∞) := by
     simpa only [Finset.coe_univ,Finset.card_univ,ZMod.card] using
       (count_apply_finset (Finset.univ : Finset (ZMod N)))

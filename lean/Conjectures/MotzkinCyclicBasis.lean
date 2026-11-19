@@ -54,7 +54,8 @@ theorem integer_kernel_basis (m k A b s : ℕ) (hk : 0 < k)
       refine ⟨r*(A:ℤ),?_⟩
       ring
     have htb : (k:ℤ) ∣ t*(b:ℤ) := by
-      convert dvd_sub htotal hfirst using 1 <;> ring
+      convert dvd_sub htotal hfirst using 1
+      ring
     obtain ⟨v,ht⟩ := Int.dvd_of_dvd_mul_left_of_gcd_one htb hkbZ
     have hrel : (m:ℤ) ∣ r*(A:ℤ)+v*(b:ℤ) := by
       obtain ⟨w,hw⟩ := h
@@ -66,7 +67,8 @@ theorem integer_kernel_basis (m k A b s : ℕ) (hk : 0 < k)
         _ = ((m:ℤ)*(k:ℤ))*w := hw
         _ = (k:ℤ)*((m:ℤ)*w) := by ring
     have hdiff : (m:ℤ) ∣ (r-v*(s:ℤ))*(A:ℤ) := by
-      convert dvd_sub hrel (dvd_mul_of_dvd_right hsZ v) using 1 <;> ring
+      convert dvd_sub hrel (dvd_mul_of_dvd_right hsZ v) using 1
+      ring
     obtain ⟨u,hu⟩ := Int.dvd_of_dvd_mul_left_of_gcd_one hdiff hAmZ
     refine ⟨u,v,?_,?_⟩
     · calc
@@ -125,7 +127,7 @@ theorem cyclic_Hermite_basis (N a b : ℕ) (hN : 0 < N)
   let s := normalizedShear m A b
   have hk : 0 < k := Nat.gcd_pos_of_pos_left a hN
   have hm : 0 < m := Nat.div_pos (Nat.gcd_le_left a hN) hk
-  letI : NeZero m := ⟨hm.ne'⟩
+  let _ : NeZero m := ⟨hm.ne'⟩
   have hNm : N=m*k := (Nat.div_mul_cancel (Nat.gcd_dvd_left N a)).symm
   have ha : a=k*A := (Nat.mul_div_cancel' (Nat.gcd_dvd_right N a)).symm
   have hAm : Nat.Coprime A m := by
@@ -138,8 +140,7 @@ theorem cyclic_Hermite_basis (N a b : ℕ) (hN : 0 < N)
   refine ⟨hm,hk,normalizedShear_lt m A b,hNm,?_⟩
   intro r t
   rw [cyclic_relation_iff_dvd]
-  rw [hNm,ha]
-  push_cast
+  conv_lhs => rw [hNm,ha,Nat.cast_mul,Nat.cast_mul]
   exact integer_kernel_basis m k A b s hk hAm hkb
     (normalizedShear_relation m A b hAm) r t
 

@@ -105,8 +105,10 @@ instance tailChoiceFintype (r : ℕ) : Fintype (TailChoice r) :=
   Fintype.ofFinset (Ico 3 r).powerset (fun _ => mem_powerset)
 
 theorem card_tailChoice (r : ℕ) : Fintype.card (TailChoice r)=2^(r-3) := by
-  change @Fintype.card _ (Fintype.ofFinset (Ico 3 r).powerset _)=_
-  rw [Fintype.card_ofFinset,card_powerset,Nat.card_Ico]
+  calc
+    Fintype.card (TailChoice r)=((Ico 3 r).powerset).card :=
+      Fintype.card_of_subtype (Ico 3 r).powerset (fun _ => mem_powerset)
+    _ = 2^(r-3) := by rw [card_powerset,Nat.card_Ico]
 
 def largeGapEquiv (r : ℕ) (hr : 3 ≤ r) :
     ((Fin 2 × TailChoice r) × (Fin r → ℕ)) ≃ CoreTuple r :=

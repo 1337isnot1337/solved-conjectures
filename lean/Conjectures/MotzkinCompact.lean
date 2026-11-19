@@ -82,7 +82,7 @@ theorem compact_measure_le_characterValue {G : Type*} [AddCommGroup G]
   let bH : H := ⟨b,AddSubgroup.subset_closure (by simp)⟩
   have hgenH : AddSubgroup.closure ({aH,bH} : Set H)=⊤ := closure_pair_subtype a b
   let _ : AddGroup.FG H := AddGroup.fg_iff.mpr
-    ⟨{aH,bH},hgenH,Set.finite_insert _ (Set.finite_singleton _)⟩
+    ⟨{aH,bH},hgenH,(Set.finite_singleton bH).insert aH⟩
   obtain ⟨d,ι,hι,p,hp,e,⟨E⟩⟩ := AddCommGroup.equiv_free_prod_directSum_zmod H
   let _ : Fintype ι := hι
   let _ : ∀ i, NeZero (p i^e i) := fun i => ⟨pow_ne_zero _ (hp i).ne_zero⟩
@@ -90,7 +90,7 @@ theorem compact_measure_le_characterValue {G : Type*} [AddCommGroup G]
   let _ : Fintype F := Fintype.ofEquiv (∀ i, ZMod (p i^e i)) DFinsupp.equivFunOnFintype.symm
   let E' : H ≃+ F × (Fin d → ℤ) :=
     (E.trans ((Finsupp.linearEquivFunOnFinite ℤ ℤ (Fin d)).toAddEquiv.prodCongr
-      (AddEquiv.refl F))).trans (AddEquiv.prodComm _ _)
+      (AddEquiv.refl F))).trans AddEquiv.prodComm
   let f : (F × (Fin d → ℤ)) →+ G := H.subtype.comp E'.symm.toAddMonoidHom
   have hf : Function.Injective f := Subtype.val_injective.comp E'.symm.injective
   have hgen : AddSubgroup.closure ({E' aH,E' bH} : Set (F × (Fin d → ℤ)))=⊤ :=
@@ -98,11 +98,9 @@ theorem compact_measure_le_characterValue {G : Type*} [AddCommGroup G]
   have hfa : f (E' aH)=a := by
     change ((E'.symm (E' aH):H):G)=a
     rw [E'.symm_apply_apply]
-    rfl
   have hfb : f (E' bH)=b := by
     change ((E'.symm (E' bH):H):G)=b
     rw [E'.symm_apply_apply]
-    rfl
   have havoid' : Avoids A (f (E' aH)) (f (E' bH)) := by
     simpa only [hfa,hfb] using havoid
   simpa only [hfa,hfb] using

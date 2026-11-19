@@ -80,14 +80,13 @@ theorem regularSum_error_bound {r : ℕ} {t C : ℝ}
       t * (regularSum r t -
         (regularIntegral ((r : ℝ) * t) / t + smoothLog ((r : ℝ) * t) / 2)) := by
     field_simp
-    <;> ring
+    ring
   change |t * (regularSum r t - smoothLog ((r : ℝ) * t) / 2) -
       regularIntegral ((r : ℝ) * t)| ≤ ((r : ℝ) * t) ^ 3 * C / (12 * (r : ℝ) ^ 2) at herr
   rw [halgebra, abs_mul, abs_of_pos ht] at herr
   have hright : ((r : ℝ) * t) ^ 3 * C / (12 * (r : ℝ) ^ 2) =
       t * ((r : ℝ) * t ^ 2 * C / 12) := by
     field_simp
-    <;> ring
   rw [hright] at herr
   exact (mul_le_mul_iff_right₀ ht).mp herr
 

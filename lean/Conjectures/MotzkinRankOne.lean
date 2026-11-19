@@ -77,7 +77,7 @@ theorem rank_one_attainment (u v : ℤ) (hk : 0 < u.natAbs+v.natAbs) :
       field_simp
     rw [he]
     exact (AddCircle.coe_eq_zero_iff (1:ℝ)).mpr
-      ⟨Int.ofNat (k/2),by simp only [zsmul_eq_mul,Int.cast_natCast,mul_one]⟩
+      ⟨Int.ofNat (k/2),by simp only [zsmul_eq_mul,Int.ofNat_eq_natCast,Int.cast_natCast,mul_one]⟩
   · rw [norm_signedReal u r hr hrh,norm_signedReal v r hr hrh,min_self]
 
 noncomputable def relationValue (u v : ℤ) : ℝ :=

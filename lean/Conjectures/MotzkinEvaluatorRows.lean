@@ -1,5 +1,6 @@
 import Conjectures.MotzkinFloorSum
 import Mathlib.Order.Interval.Finset.Nat
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
 
 /-! Exact counting of admissible second residues, and its evaluation by two
 Euclidean floor sums. -/
@@ -48,7 +49,9 @@ theorem row_card (N M s h i : ℕ) (hM : 0 < M) (hh : 0 < h) :
     · intro q hq
       have hmq := (index_bounds N M s h i q hM hh hq).1
       rw [Nat.sub_add_cancel hmq,Nat.mul_div_cancel_left q hM]
-  rw [hcard,T,Nat.card_Icc]
+  rw [hcard]
+  dsimp only [T]
+  rw [Nat.card_Icc]
   omega
 
 def countPairs (N M s h I J : ℕ) : ℕ :=

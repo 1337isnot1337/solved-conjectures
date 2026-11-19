@@ -1,0 +1,63 @@
+{
+  "checked_sources": [
+    "Conjectures.RectangleEuler",
+    "Conjectures.RectangleBasel",
+    "Conjectures.LineSizeAnalyticProfileBasic",
+    "Conjectures.LineSizeAnalyticProfileIntegral",
+    "Conjectures.LineSizeAnalyticProfile"
+  ],
+  "commit": "65435fc2a7c4ba78244522ad3cfa692ca896efc4",
+  "completed_checks": [
+    "strict source checks, warnings treated as errors",
+    "all-declaration axiom whitelist",
+    "independent exact-closure kernel replay"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-line-size-candidates.yml": "72bf2c030b94b4d74375097bf612b82a741bfed9cca1c92c760ddde2471dc19b",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/test_line_size_candidate.py": "6c18841f656a7e34a9b35b00f55bb7532bd220b119c6f712809717bbaa07dcc8",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+    "scripts/verify_line_size_candidate.py": "e0791a7e95550f3cbb79ad823088cb78458d490b45f58e13840c65b259006ca8"
+  },
+  "project_modules": [
+    "Conjectures.RectangleEuler",
+    "Conjectures.RectangleBasel",
+    "Conjectures.LineSizeAnalyticProfileBasic",
+    "Conjectures.LineSizeAnalyticProfileIntegral",
+    "Conjectures.LineSizeAnalyticProfile"
+  ],
+  "required_theorems": [
+    "LineSize.Profile.saddle_profile_exact",
+    "LineSize.Profile.Phi_le_gaussian",
+    "LineSize.Profile.M_eq_Phi_sub_mul_deriv",
+    "LineSize.Profile.V_eq_two_M_sub_mul_deriv"
+  ],
+  "source_failures": {},
+  "source_sha256": {
+    "lean/Conjectures/LineSizeAnalyticProfile.lean": "4a47f5d01122ee71af58812e932a864df4bd43e003d1a629be78b335415b8004",
+    "lean/Conjectures/LineSizeAnalyticProfileBasic.lean": "879450d14da60ffb55f931f0267ed7265905784a2d71a340bc7226b22848172c",
+    "lean/Conjectures/LineSizeAnalyticProfileIntegral.lean": "36aceaa180a696c93977f24db0a288794bdfd316c75d99fcd935492ba118cbaa",
+    "lean/Conjectures/RectangleBasel.lean": "c4c0c82f666289c0cab5bbe4c075a3cb9a831530b16b8bcdbfc469a010abcf3b",
+    "lean/Conjectures/RectangleEuler.lean": "f0db6bf9e593439bd233f85b56d598d4658d8d9731693f6e92ac1d800cdfdee9",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.LineSizeAnalyticProfile",
+  "task": "profile",
+  "hosted_evidence": {
+    "run_id": 44459164696,
+    "job_id": 135341492721,
+    "job_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44459164696/job/135341492721",
+    "artifact_id": 14499825449,
+    "artifact_zip_sha256": "7d717e96bcc9f07c7bc45f60310fe47ec7f41e825aa53ed062a16a61bfbaaebe",
+    "audited_theorem_count": 120,
+    "kernel_module_count": 5,
+    "log_sha256": "78ed2dbad319fb4e65ace3ccbcb04ea17d8cce4b49bc8956b5388c8af0e3d58c"
+  }
+}

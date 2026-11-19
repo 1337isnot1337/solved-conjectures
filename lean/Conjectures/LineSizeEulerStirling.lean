@@ -17,7 +17,8 @@ theorem tendsto_stirlingError : Tendsto stirlingError atTop (𝓝 0) := by
   have hlog := (Real.continuousAt_log (Real.sqrt_pos.mpr Real.pi_pos).ne').tendsto.comp
     Stirling.tendsto_stirlingSeq_sqrt_pi
   have h := hlog.sub_const (log Real.pi / 2)
-  simpa only [stirlingError, Real.log_sqrt Real.pi_pos.le, sub_self] using h
+  change Tendsto (fun r => log (Stirling.stirlingSeq r) - log Real.pi / 2) atTop (𝓝 0)
+  simpa only [Function.comp_apply, Real.log_sqrt Real.pi_pos.le, sub_self] using h
 
 theorem stirlingError_nonneg {r : ℕ} (hr : 0 < r) : 0 ≤ stirlingError r := by
   have hs := Stirling.sqrt_pi_le_stirlingSeq hr.ne'
@@ -32,7 +33,7 @@ theorem stirlingError_step (n : ℕ) :
   have htel : 1 / (12 * ((n : ℝ) + 1) * (((n : ℝ) + 1) + 1)) =
       1 / (12 * ((n : ℝ) + 1)) - 1 / (12 * ((n : ℝ) + 2)) := by
     field_simp
-    <;> ring
+    ring
   push_cast at h
   rw [htel] at h
   unfold stirlingError

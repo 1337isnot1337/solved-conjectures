@@ -67,7 +67,7 @@ theorem euclidSteps_le_size (M A : ℕ) : euclidSteps M A ≤ 2*M.size := by
     rw [euclidSteps,dite_eq_right hM]
     by_cases hr : A%M=0
     · rw [hr]
-      simp only [euclidSteps,dite_eq_left rfl]
+      rw [euclidSteps,dite_eq_left rfl]
       omega
     · rw [euclidSteps,dite_eq_right hr]
       have hnext : M%(A%M) < M :=

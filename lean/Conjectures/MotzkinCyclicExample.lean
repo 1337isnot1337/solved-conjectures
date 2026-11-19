@@ -85,7 +85,9 @@ def sevenCycle : Fin 7 → ZMod 24 := ![0,3,6,9,12,16,20]
 theorem sevenCycle_injective : Function.Injective sevenCycle := by decide
 
 theorem sevenCycle_steps : ∀ i,
-    ForbiddenStep (3:ZMod 24) 4 (sevenCycle i) (sevenCycle (finRotate 7 i)) := by decide
+    ForbiddenStep (3:ZMod 24) 4 (sevenCycle i) (sevenCycle (finRotate 7 i)) := by
+  unfold ForbiddenStep
+  decide
 
 theorem no_label_cycle_one :
     ∀ f : Fin 1 → Fin 4, (∑ i, labelledJump (3:ZMod 24) 4 (f i)) ≠ 0 := by decide
@@ -93,6 +95,8 @@ theorem no_label_cycle_one :
 theorem no_label_cycle_three :
     ∀ f : Fin 3 → Fin 4, (∑ i, labelledJump (3:ZMod 24) 4 (f i)) ≠ 0 := by decide
 
+set_option maxRecDepth 20000 in
+set_option maxHeartbeats 2000000 in
 theorem no_label_cycle_five :
     ∀ f : Fin 5 → Fin 4, (∑ i, labelledJump (3:ZMod 24) 4 (f i)) ≠ 0 := by decide
 
