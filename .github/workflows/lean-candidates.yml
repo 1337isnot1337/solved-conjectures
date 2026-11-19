@@ -10,12 +10,17 @@ on:
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
       - 'scripts/verify_lean_candidate.py'
+      - 'scripts/plan_lean_candidates.py'
       - '.github/workflows/lean-candidates.yml'
   pull_request:
     paths:
       - 'lean/Conjectures/Graffiti318*.lean'
       - 'lean/Conjectures/Loneliness*.lean'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
       - 'scripts/verify_lean_candidate.py'
+      - 'scripts/plan_lean_candidates.py'
       - '.github/workflows/lean-candidates.yml'
 
 permissions:
@@ -25,15 +30,31 @@ env:
   LEAN_NUM_THREADS: '1'
 
 jobs:
+  plan:
+    name: Select affected candidate proofs
+    runs-on: ubuntu-latest
+    outputs:
+      components: ${{ steps.plan.outputs.components }}
+      four: ${{ steps.plan.outputs.four }}
+      kz: ${{ steps.plan.outputs.kz }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: plan
+        run: python3 scripts/plan_lean_candidates.py
+
   components:
     name: Candidate ${{ matrix.task }}
+    needs: plan
+    if: needs.plan.outputs.components != '[]'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     strategy:
       fail-fast: false
-      max-parallel: 2
+      max-parallel: 4
       matrix:
-        task: [base, product]
+        task: ${{ fromJSON(needs.plan.outputs.components) }}
     steps:
       - uses: actions/checkout@v4
       - uses: leanprover/lean-action@v1
@@ -48,6 +69,8 @@ jobs:
 
   four-speed:
     name: Four-speed prime ${{ matrix.prime }}
+    needs: plan
+    if: needs.plan.outputs.four == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     strategy:
@@ -76,7 +99,8 @@ jobs:
 
   four-assembly:
     name: Four-speed bounded classification
-    needs: four-speed
+    needs: [plan, four-speed]
+    if: needs.plan.outputs.four == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
@@ -98,6 +122,8 @@ jobs:
 
   kz:
     name: KZ product for ${{ matrix.dimension }} speeds
+    needs: plan
+    if: needs.plan.outputs.kz == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     strategy:
@@ -126,7 +152,8 @@ jobs:
 
   kz-assembly:
     name: KZ product minimization
-    needs: kz
+    needs: [plan, kz]
+    if: needs.plan.outputs.kz == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:

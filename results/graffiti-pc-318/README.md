@@ -38,7 +38,7 @@ The standard-library verifier checks 419,235 labeled graphs, including every gra
 
 The all-order Lean theorem and the five-vertex sharpness example have passed local
 source compilation, a transitive axiom audit, and independent kernel replay.
-The three modules are awaiting shared-package registration and hosted validation.
+The hosted candidate checks also passed; the three modules await shared-package registration.
 See the [exact statements and local receipts](LEAN.md), the
 [candidate checks](../../docs/lean-candidates.md), and the
 [Lean status report](../../docs/lean-status.md).

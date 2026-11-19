@@ -17,14 +17,27 @@ The candidate lanes are:
 | --- | --- |
 | `base` | Graffiti.pc318 and its sharpness example; consecutive families, higher-speed examples, exceptional eight-speed families, prefix-product bounds, modular search helpers |
 | `product` | Classification and values within the three stated eight-speed product families |
+| `hyperplane` | Exact shifted maximum over the containing real hyperplane, attainment, and the bound for orthogonal integer velocities |
+| `hyperplane-haar` | Distribution of the predicted hyperplane maximum under Haar-uniform shifts; uniform finite-character approximation on compact subsets of the torus |
+| `modular-closed` | Closed-threshold binary search soundness, with the lower-dimensional runner bound and finite certificate explicit |
+| `nearest-plane` | Euclidean rounding to an actual integer combination, with the squared Gram–Schmidt error bound |
+| `primitive-basis` | Completion of a primitive integer vector to an integer basis |
+| `small-kz` | Exact subset-product arithmetic for the smaller-speed norm cutoffs, with geometric inputs explicit |
 | `four-17` through `four-61` | Ten prime residue covers and their exhaustive lifting trees |
-| `four-assembly` | Primitive four-speed classification up to 5832; scaling reduction with the global cutoff still an explicit hypothesis |
+| `four-assembly` | Primitive four-speed classification up to 5832, the independent all-size cutoff, and the resulting unconditional four-speed gap theorem |
 | `kz-9` through `kz-13` | Exact subset certificates for the five product problems |
 | `kz-assembly` | Product minimization under the stated positive prefix-sum and adjacent-ratio constraints |
 
 The KZ arithmetic theorem does not supply the separate lattice-geometric
 existence and distance bounds. The higher-speed example and family theorems do
-not establish that all possible configurations are listed.
+not establish that all possible configurations are listed. The hyperplane lane
+does not prove the finite-exception, probability, distribution, or counting
+assertions in that result.
+
+The workflow selects lanes by the changed files and each lane's full project
+dependency closure. Changes to the checker, workflow, toolchain, or package
+configuration run every lane. This avoids restarting unrelated finite tables
+when another proof worker adds a module. Manual dispatch also runs every lane.
 
 Run one lane locally with:
 

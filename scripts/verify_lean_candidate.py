@@ -22,6 +22,8 @@ LEAN = ROOT / "lean"
 BUILD = LEAN / ".lake/build"
 PRIMES = (17, 29, 31, 37, 41, 43, 47, 53, 59, 61)
 KZ_NAMES = {9: "Nine", 10: "Ten", 11: "Eleven", 12: "Twelve", 13: "Thirteen"}
+COMPONENT_TASKS = ("base", "product", "hyperplane", "hyperplane-haar",
+                   "modular-closed", "nearest-plane", "primitive-basis", "small-kz")
 def task_spec(task: str) -> tuple[list[str], list[str]]:
     if task.startswith("four-") and task != "four-assembly":
         p = int(task.removeprefix("four-"))
@@ -72,11 +74,50 @@ def task_spec(task: str) -> tuple[list[str], list[str]]:
             "Loneliness.ProductFamily.first_eight_product_spectrum",
             "Loneliness.ProductFamily.second_eight_product_spectrum",
         ]
+    if task == "hyperplane":
+        return ["Conjectures.LonelinessHyperplane"], [
+            "Loneliness.Hyperplane.primitive_bezout",
+            "Loneliness.Hyperplane.shiftedVelocityValue_max",
+            "Loneliness.Hyperplane.shifted_hyperplane_maximum",
+            "Loneliness.Hyperplane.shifted_hyperplane_value",
+            "Loneliness.Hyperplane.orthogonal_velocity_value_le",
+        ]
+    if task == "hyperplane-haar":
+        return ["Conjectures.LonelinessHyperplaneHaarValue",
+                "Conjectures.LonelinessHyperplaneFourierDensity"], [
+            "Loneliness.Hyperplane.haar_predictedValue_distribution",
+            "Loneliness.Hyperplane.haar_predictedValue_isUniform",
+            "Loneliness.Hyperplane.exists_finite_character_approx_on",
+        ]
+    if task == "modular-closed":
+        return ["Conjectures.LonelinessModularClosedFoldedDirections"], [
+            "Loneliness.Modular.FoldedSearch.Closed.checked_ten_speed_consecutive",
+            "Loneliness.Modular.FoldedSearch.Closed.checked_ten_speed_pruning_consecutive",
+        ]
+    if task == "nearest-plane":
+        return ["Conjectures.LonelinessNearestPlane"], [
+            "Loneliness.NearestPlane.exists_integer_rounding",
+            "Loneliness.NearestPlane.exists_integer_span_point",
+        ]
+    if task == "primitive-basis":
+        return ["Conjectures.LonelinessPrimitiveBasis"], [
+            "Loneliness.PrimitiveBasis.unimodular_basis_extension",
+            "Loneliness.PrimitiveBasis.primitive_basis_extension",
+        ]
+    if task == "small-kz":
+        return ["Conjectures.LonelinessKZSmallData"], [
+            f"Loneliness.KZSmall.{name}.norm_cutoff" for name in
+            ("SixSpectrumRankFour", "SixSpectrumRankFive", "SixSpectrum", "TightSix",
+             "TightSeven", "TightEight", "SevenSpectrum", "EightSpectrum")
+        ]
     if task == "four-assembly":
-        return ["Conjectures.LonelinessFourSpeedClassificationFinite"], [
+        return ["Conjectures.LonelinessFourSpeedGap"], [
             "Loneliness.Modular.FourSpeed.bounded_four_speed_classification",
             "Loneliness.Modular.FourSpeed.bounded_four_speed_list_classification",
             "Loneliness.CoordinateSubspace.four_speed_gap_of_cutoff",
+            "Loneliness.Pigeonhole.four_speed_cutoff",
+            "Loneliness.CoordinateSubspace.four_speed_gap",
+            "Loneliness.CoordinateSubspace.four_speed_lonelyRunnerBound",
         ]
     if task == "kz-assembly":
         return ["Conjectures.LonelinessKZProduct"], [
@@ -212,9 +253,11 @@ def export_artifacts(task: str, targets: list[str], modules: list[str]) -> None:
     if destination.exists():
         shutil.rmtree(destination)
     hashes: dict[str, str] = {}
-    # Include every Lake output facet for each leaf, preserving paths and traces.
-    # Shared dependencies are rebuilt normally by the assembly job.
-    for module in targets:
+    # Include every output facet for each target and its named data blocks.
+    # Common dependencies outside that family are rebuilt by the assembly job.
+    exported_modules = [module for module in modules
+                        if any(module.startswith(target) for target in targets)]
+    for module in exported_modules:
         parts = module.split(".")
         suffix = Path(*parts[:-1])
         files = [p for p in BUILD.rglob(parts[-1] + ".*")
@@ -229,6 +272,7 @@ def export_artifacts(task: str, targets: list[str], modules: list[str]) -> None:
             hashes[str(rel)] = digest(out)
     receipt = {
         "task": task, "commit": revision(), "targets": targets,
+        "exported_modules": exported_modules,
         "checked_project_modules": modules,
         "source_sha256": source_hashes(modules), "artifact_sha256": hashes,
         "checks": ["lake source build", "transitive axiom whitelist", "leanchecker"],

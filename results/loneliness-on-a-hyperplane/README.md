@@ -11,3 +11,11 @@ $$
 $$
 
 For each fixed tolerance, the exceptional fraction is $O(1/N)$ for speeds up to $N$, uniformly over starting positions. The proof also gives the limiting law for random starting positions and counts exact attainment in the unshifted full-support case. This is an unrefereed answer to the statistical question under the stated sampling model. [Proof](PROOF.md) · [Exact checks](verify.py)
+
+## Lean formalization
+
+The deterministic component is verified: the exact shifted maximum on the
+containing real hyperplane, an attaining point, and the upper bound for every
+orthogonal integer velocity. All three modules passed source checks, a
+module-owned axiom audit, and independent kernel replay. The probabilistic
+and counting assertions remain open. See the [checked scope and receipt](LEAN.md).

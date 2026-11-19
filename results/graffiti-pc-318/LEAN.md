@@ -100,6 +100,13 @@ Local receipts and hosted CI results are separate. The modules are currently
 unregistered candidates while shared-package integration is coordinated in issue
 [#15](https://github.com/1337isnot1337/solved-conjectures/issues/15).
 
+The [hosted Candidate base job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44448033989/job/135304859956)
+passed at commit `98b3433a16e3418ee833d388c8f69c47e8b5c2b3`.
+It rebuilt all three graph modules, audited declarations by owning module
+(including private theorems), and independently replayed their kernels.
+That job also checked other family and helper modules: its combined receipt
+contains 798 project theorems and 31 project modules.
+
 From the `lean` directory, run these checks sequentially:
 
 ```bash

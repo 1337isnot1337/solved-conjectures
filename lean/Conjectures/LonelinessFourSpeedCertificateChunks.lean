@@ -21,7 +21,7 @@ theorem residueCheck_of_buckets {num den m r chunks : ℕ}
       bucketResidueCheck num den m r inv retained chunks bucket.val=true) :
     residueCheck num den m r inv retained=true := by
   unfold residueCheck
-  apply decide_eq_true.mpr
+  apply decide_eq_true
   intro s hs
   have hsplit : s∈boundedSupports m r ∧ (r=1 ∨ PairNormalized m inv s) := by
     by_cases hr1 : r=1

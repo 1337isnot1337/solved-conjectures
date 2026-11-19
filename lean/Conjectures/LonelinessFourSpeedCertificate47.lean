@@ -1,4 +1,5 @@
-import Conjectures.LonelinessFourSpeedCertificate
+import Conjectures.LonelinessFourSpeedCertificateChunks
+import Mathlib.Tactic.FinCases
 
 /-! Exhaustive support certificate modulo 47, at threshold 2/9.
 Generated finite data are accepted only through ordinary kernel reduction. -/
@@ -51,13 +52,55 @@ theorem inverse_correct (a : ℕ) (ha : 0<a) (hbound : 2*a≤47) :
 
 theorem retained_card : ∀ s∈retained, s.card=4 := by decide +kernel
 
-theorem rows1_checked : residueCheck 2 9 47 1 inverse retained=true := by decide +kernel
+theorem rows1_checked : residueCheck 2 9 47 1 inverse retained=true := by
+  apply fastResidueCheck_sound (by decide +kernel) (by decide +kernel) inverse retained
+  decide +kernel
 
-theorem rows2_checked : residueCheck 2 9 47 2 inverse retained=true := by decide +kernel
+theorem rows2_checked : residueCheck 2 9 47 2 inverse retained=true := by
+  apply fastResidueCheck_sound (by decide +kernel) (by decide +kernel) inverse retained
+  decide +kernel
 
-theorem rows3_checked : residueCheck 2 9 47 3 inverse retained=true := by decide +kernel
+theorem rows3_checked : residueCheck 2 9 47 3 inverse retained=true := by
+  apply fastResidueCheck_sound (by decide +kernel) (by decide +kernel) inverse retained
+  decide +kernel
 
-theorem rows4_checked : residueCheck 2 9 47 4 inverse retained=true := by decide +kernel
+theorem rows4_bucket_0_checked :
+    bucketResidueCheck 2 9 47 4 inverse retained 8 0=true := by decide +kernel
+
+theorem rows4_bucket_1_checked :
+    bucketResidueCheck 2 9 47 4 inverse retained 8 1=true := by decide +kernel
+
+theorem rows4_bucket_2_checked :
+    bucketResidueCheck 2 9 47 4 inverse retained 8 2=true := by decide +kernel
+
+theorem rows4_bucket_3_checked :
+    bucketResidueCheck 2 9 47 4 inverse retained 8 3=true := by decide +kernel
+
+theorem rows4_bucket_4_checked :
+    bucketResidueCheck 2 9 47 4 inverse retained 8 4=true := by decide +kernel
+
+theorem rows4_bucket_5_checked :
+    bucketResidueCheck 2 9 47 4 inverse retained 8 5=true := by decide +kernel
+
+theorem rows4_bucket_6_checked :
+    bucketResidueCheck 2 9 47 4 inverse retained 8 6=true := by decide +kernel
+
+theorem rows4_bucket_7_checked :
+    bucketResidueCheck 2 9 47 4 inverse retained 8 7=true := by decide +kernel
+
+theorem rows4_checked : residueCheck 2 9 47 4 inverse retained=true := by
+  apply residueCheck_of_buckets (chunks:=8) (by decide +kernel) (by decide +kernel)
+    (by decide +kernel) inverse retained
+  intro bucket
+  fin_cases bucket
+  · exact rows4_bucket_0_checked
+  · exact rows4_bucket_1_checked
+  · exact rows4_bucket_2_checked
+  · exact rows4_bucket_3_checked
+  · exact rows4_bucket_4_checked
+  · exact rows4_bucket_5_checked
+  · exact rows4_bucket_6_checked
+  · exact rows4_bucket_7_checked
 
 
 theorem all_rows_checked (r : ℕ) (hr : 0<r) (hbound : r≤4) :
