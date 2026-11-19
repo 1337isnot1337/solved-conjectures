@@ -1,0 +1,4 @@
+module
+
+public import Conjectures.FranklSpanFourGraphPairRank
+public import Conjectures.FranklSpanFourGraphResidualRank
