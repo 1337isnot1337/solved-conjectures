@@ -1,0 +1,51 @@
+name: Lean p199 contiguous C4096 root cover
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-five-speed-root-cblock4096.yml'
+      - 'scripts/verify_five_speed_root_cblock4096.py'
+      - 'docs/five-speed-root-cblock4096-inputs.json'
+      - 'results/five-speed-spectrum/generate_lean_root_cblock_budget.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-five-speed-root-cblock4096
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce the separate C4096 layout and unchanged scalar oracle
+        run: |
+          python3 -m py_compile scripts/verify_five_speed_root_cblock4096.py
+          python3 scripts/verify_five_speed_root_cblock4096.py --plan
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Fresh strict source, every owned declaration, and exact stock replay
+        env:
+          LEAN_NUM_THREADS: 1
+          UV_USE_IO_URING: 0
+        run: python3 scripts/verify_five_speed_root_cblock4096.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: five-speed-root-cblock4096
+          path: .candidate-artifacts/five-speed-root-cblock4096/
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: warn
