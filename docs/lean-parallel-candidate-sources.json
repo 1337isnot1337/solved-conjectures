@@ -22,9 +22,9 @@
     },
     {
       "path": "scripts/verify_lean_parallel_candidate.py",
-      "blob_sha": "d418890759fe02b2b6ed907ed8788195c9172eee",
-      "sha256": "31a88657c2eed2fc2db46ee9e01ffb55ab043b18aacb6185c02a5fd67aff556d",
-      "characters": 26667
+      "blob_sha": "078fb184b61768880b47f27c8d7f54217a7398b3",
+      "sha256": "54ee5a7071139855f8976dce2789adfef7d5c5ae28c8c133f6f00d850d3b4334",
+      "characters": 26970
     },
     {
       "path": ".github/workflows/lean-parallel-candidate.yml",
@@ -81,8 +81,10 @@
     "previous_runs": [
       44504678747,
       44505669499,
-      44505832312
+      44505832312,
+      44508980073
     ],
-    "reason": "Modern import-all auditing and legacy-root auditing require separate Lean module modes; ownership is partitioned exactly and endpoint sets are recombined without duplicates."
+    "reason": "Modern import-all auditing and legacy-root auditing require separate Lean module modes; ownership is partitioned exactly and endpoint sets are recombined without duplicates.",
+    "layout_root": "Retain the configured fixture-only ProofAudit.lean root importing both project roots, while separately executing and freezing modern and legacy all-owned audits."
   }
 }

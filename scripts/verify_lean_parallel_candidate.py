@@ -214,6 +214,10 @@ def prepare_repo(destination, sources, required, private_nodes, package_cache):
         path = build.source_path(lean, root)
         if not path.exists():
             path.write_text("-- This root is outside the selected candidate closure.\n")
+    # The accepted-layout validator always parses this configured library root.
+    # The real all-owned checks below remain separate modern/legacy audits.
+    (lean / "ProofAudit.lean").write_text(
+        "import Conjectures\nimport Solitaire\n", encoding="utf-8")
     for filename, audit in audit_sources(sources, required, private_nodes).items():
         (lean / filename).write_text(audit["source"], encoding="utf-8")
     (destination / ".gitignore").write_text("lean/.lake/\n__pycache__/\n", encoding="utf-8")
@@ -358,7 +362,8 @@ def verify_positive(name, sources, required, private_nodes, modules, root, outpu
     graph, _prefixes, _external, extra = build.scope_plan(lean.parent, modules, root)
     if set(graph) != set(sources):
         raise ValueError("Copied source list differs from the exact selected closure")
-    audit_files = {"lean/" + name for name in audit_sources(sources, required, private_nodes)}
+    audit_files = {"lean/ProofAudit.lean"} | {
+        "lean/" + name for name in audit_sources(sources, required, private_nodes)}
     frozen = build.snapshot_inputs(lean.parent, graph, set(extra) | audit_files)
     head = build.git_head(lean.parent)
     result = {"project_modules": sorted(graph), "isolated_git_head": head,
