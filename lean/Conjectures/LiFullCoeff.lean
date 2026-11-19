@@ -72,6 +72,7 @@ lemma esymm_replicate_zero_add (s : Multiset R) (c n : ℕ) :
       | succ n =>
           rw [Multiset.cons_add, esymm_cons_zero, ih]
 
+omit [CommSemiring R] in
 /-- The multiset of values of a function on `Fin (n+1)`, split off at `0`. -/
 lemma multiset_map_univ_fin_succ {n : ℕ} (f : Fin (n + 1) → R) :
     (Finset.univ.val.map f : Multiset R)
@@ -98,7 +99,7 @@ lemma esymm_map_univ_fin_eq {n j : ℕ} (hj : j ≤ n) (f : Fin n → R)
   | zero =>
       have hj0 : j = 0 := by omega
       subst hj0
-      simp [Finset.val_univ_fin]
+      simp
   | succ n ih =>
       cases j with
       | zero =>
@@ -224,6 +225,7 @@ def permColorV (e : Equiv.Perm V) : (V → V) ≃ (V → V) where
   left_inv κ := by funext v; simp
   right_inv κ := by funext v; simp
 
+omit [Fintype V] [DecidableEq V] in
 theorem fullProper_permColorV (G : SimpleGraph V) [DecidableRel G.Adj]
     (e : Equiv.Perm V) (κ : V → V) :
     fullProper G (permColorV e κ) ↔ fullProper G κ := by

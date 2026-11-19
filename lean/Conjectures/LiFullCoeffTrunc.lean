@@ -59,6 +59,7 @@ def permColorOn (e : Equiv.Perm σ) : (V → σ) ≃ (V → σ) where
   left_inv κ := by funext v; simp
   right_inv κ := by funext v; simp
 
+omit [Fintype V] [DecidableEq V] [Fintype σ] [DecidableEq σ] in
 theorem fullProperOn_permColorOn (G : SimpleGraph V) [DecidableRel G.Adj]
     (e : Equiv.Perm σ) (κ : V → σ) :
     fullProperOn G (permColorOn e κ) ↔ fullProperOn G κ := by
@@ -127,7 +128,7 @@ def iotaN (hN : 31 ≤ N) : Fin 31 ↪ Fin N := Fin.castLEEmb hN
 
 /-- Restriction of an `N`-colour polynomial to the first `31` colours: variables
 with index `≥ 31` are set to zero. -/
-noncomputable def restrictFin (hN : 31 ≤ N) : Fin N → MvPolynomial (Fin 31) ℚ :=
+noncomputable def restrictFin (_hN : 31 ≤ N) : Fin N → MvPolynomial (Fin 31) ℚ :=
   fun i => if h : i.val < 31 then MvPolynomial.X (⟨i.val, h⟩ : Fin 31) else 0
 
 lemma mem_range_iotaN_iff (hN : 31 ≤ N) (i : Fin N) :
@@ -314,7 +315,7 @@ section BridgeFin
 variable {N : ℕ}
 
 /-- The `e`-basis coordinates of the `N`-colour chromatic symmetric function. -/
-noncomputable def fullECoordsFin (hN : 31 ≤ N) : MvPolynomial (Fin N) ℚ :=
+noncomputable def fullECoordsFin (_hN : 31 ≤ N) : MvPolynomial (Fin N) ℚ :=
   (MvPolynomial.esymmAlgEquiv (Fin N) ℚ (n := N) (Fintype.card_fin N)).symm
     ⟨fullChromPolyOn (σ := Fin N) T, fullChromPolyOn_isSymmetric T⟩
 
@@ -349,7 +350,7 @@ lemma aeval_esymmN_fullECoordsFin (hN : 31 ≤ N) :
 
 /-- The map along the `31`-variable elementary generators factors through the
 restriction from `N` to `31` colours. -/
-lemma aeval_esymm31_factors_fin (hN : 31 ≤ N) :
+lemma aeval_esymm31_factors_fin (_hN : 31 ≤ N) :
     (MvPolynomial.aeval (fun i : Fin N => MvPolynomial.esymm (Fin 31) ℚ (i.val + 1)))
       = (MvPolynomial.aeval (fun j : Fin 31 => MvPolynomial.esymm (Fin 31) ℚ (j.val + 1))).comp
           (killMN (n := N) 31) := by

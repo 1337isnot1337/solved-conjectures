@@ -103,9 +103,8 @@ theorem connectedPartitionType_blocks {p : List Nat}
   · rw [List.toFinset_val, List.dedup_eq_self.mpr hblocks, Multiset.map_coe]
     change ((C.map (LiFinal.suppFinset H)).map Finset.card : Multiset Nat) = ↑p
     rw [List.map_map]
-    have hm : (fun D : H.ConnectedComponent => (LiFinal.suppFinset H D).card)
-        = LiFinal.componentCard H := rfl
-    rw [hm, htype]
+    change (C.map (LiFinal.componentCard H) : Multiset Nat) = ↑p
+    rw [htype]
     exact Multiset.coe_eq_coe.mpr (LiFinal.sortDesc_perm _).symm
 
 /-- Every integer partition of 31 occurs as an actual connected vertex partition. -/
@@ -161,7 +160,13 @@ theorem coefficient_positive : 0 < coefficient := by
 /-- The thirty literal tree edges have exactly `2^30` possible cut subsets. -/
 theorem edge_cut_choices_card :
     (Li.T.edgeFinset.powerset).card = 1073741824 := by
-  norm_num [Finset.card_powerset, Li.edgeFinset_card]
+  have hc : Li.T.edgeFinset.card = 30 := by
+    calc
+      Li.T.edgeFinset.card = Fintype.card Li.T.edgeSet :=
+        SimpleGraph.edgeFinset_card (G := Li.T)
+      _ = Nat.card Li.T.edgeSet := Nat.card_eq_fintype_card.symm
+      _ = 30 := Li.card_edgeSet
+  norm_num [Finset.card_powerset, hc]
 
 attribute [local instance] Classical.propDecidable
 
