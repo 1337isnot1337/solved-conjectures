@@ -46,7 +46,9 @@ theorem critical_plane_classification
   have hcomp : (signedCoordinates ℚ σ' hσ' (q.trans p)).toLinearMap =
       (signedCoordinates ℚ (fun _ : Fin 7 => 1) (fun _ => Or.inl rfl) q).toLinearMap.comp
         (signedCoordinates ℚ σ hσ p).toLinearMap := by
-    ext x i
+    apply LinearMap.ext
+    intro x
+    funext i
     change (σ (q i) : ℚ) * x (p (q i)) =
       (1 : ℚ) * ((σ (q i) : ℚ) * x (p (q i)))
     simp
@@ -76,16 +78,23 @@ theorem standardPlane_value : spaceValue (realSpan standardPlane) = (1 / 7 : ℝ
       have h := point_le_distance x i.castSucc
       rwa [hxi] at h
     apply hclearance.trans
-    simpa [sixBase, List.range'] using consecutive_upper 6 (by decide) t
+    have h := consecutive_upper 6 (by decide) t
+    norm_num [sixBase, List.range'] at h ⊢
+    exact h
   · let x : Fin 7 → ℚ := (1 / 7 : ℚ) • standardBase + (1 / 2 : ℚ) • coordinateAxis 6
     have hx : x ∈ standardPlane :=
       Submodule.mem_span_pair.mpr ⟨1 / 7, 1 / 2, rfl⟩
+    have hcoordinate (i : Fin 7) : rationalVector x i =
+        (((1 / 7 : ℚ) * standardBase i +
+          (1 / 2 : ℚ) * coordinateAxis 6 i : ℚ) : ℝ) := rfl
     apply le_trans (b := pointClearance (rationalVector x))
     · apply le_point
       intro i
       apply distance_lower_of_cell (k := 0)
-      · fin_cases i <;> norm_num [x, standardBase, coordinateAxis, rationalVector]
-      · fin_cases i <;> norm_num [x, standardBase, coordinateAxis, rationalVector]
+      · rw [hcoordinate]
+        fin_cases i <;> norm_num [standardBase, coordinateAxis]
+      · rw [hcoordinate]
+        fin_cases i <;> norm_num [standardBase, coordinateAxis]
     · exact point_le_spaceValue (rationalVector_mem_realSpan hx)
 
 theorem standardProductPlane_value {E : Submodule ℚ (Fin 7 → ℚ)}

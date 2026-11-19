@@ -79,29 +79,35 @@ theorem fragmentCheck_sound
   | leaf =>
     rcases frame with ⟨fuel,index,selected,available,uncovered,slots⟩
     cases fuel with
-    | zero => simp only [fragmentCheck] at hcheck
+    | zero =>
+      simp only [fragmentCheck] at hcheck
+      cases hcheck
     | succ fuel =>
       cases hnode : lookup index with
       | leaf certificate =>
         simpa only [fragmentCheck,Frame.Checked,tapeCheck,hnode] using hcheck
       | split a left right =>
         simp only [fragmentCheck,hnode] at hcheck
+        cases hcheck
   | split without withCandidate ihwithout ihwith =>
     rcases frame with ⟨fuel,index,selected,available,uncovered,slots⟩
     cases fuel with
-    | zero => simp only [fragmentCheck] at hcheck
+    | zero =>
+      simp only [fragmentCheck] at hcheck
+      cases hcheck
     | succ fuel =>
       cases hnode : lookup index with
       | leaf certificate =>
         simp only [fragmentCheck,hnode] at hcheck
+        cases hcheck
       | split a left right =>
         have hh := Bool.and_eq_true_iff.mp
-          (show decide (available.testBit a=true ∧ 0<slots) &&
+          (show (decide (available.testBit a=true ∧ 0<slots) &&
             (fragmentCheck cover compatible terminal lookup frames bound without
                 (Frame.absent ⟨fuel+1,index,selected,available,uncovered,slots⟩ a left) &&
               fragmentCheck cover compatible terminal lookup frames bound withCandidate
                 (Frame.present cover compatible
-                  ⟨fuel+1,index,selected,available,uncovered,slots⟩ a right))=true from
+                  ⟨fuel+1,index,selected,available,uncovered,slots⟩ a right)))=true from
             by simpa only [fragmentCheck,hnode] using hcheck)
         have hc := Bool.and_eq_true_iff.mp hh.2
         have hl := ihwithout _ hc.1
@@ -111,8 +117,8 @@ theorem fragmentCheck_sound
         rw [tapeCheck,hnode]
         apply Bool.and_eq_true_iff.mpr
         refine ⟨hh.1,Bool.and_eq_true_iff.mpr ⟨?_,?_⟩⟩
-        · simpa only [Frame.Checked,Frame.absent] using hl
-        · simpa only [Frame.Checked,Frame.present] using hr
+        · simpa only [Frame.Checked,Frame.absent,Nat.add_sub_cancel] using hl
+        · simpa only [Frame.Checked,Frame.present,Nat.add_sub_cancel] using hr
 
 def boundedCheck (cover compatible : ℕ → ℕ) (terminal : Finset ℕ → ℕ → Bool)
     (lookup : ℕ → Tape.Node) (frames : ℕ → Frame) (bound limit : ℕ)

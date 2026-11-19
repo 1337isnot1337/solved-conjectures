@@ -99,6 +99,7 @@ theorem badIndicator_integral_one (δ : ℝ) (hδ : 0 ≤ δ) (hhalf : δ < 1/2)
     ext x
     constructor
     · rintro ⟨hbad, hx0, hx1⟩
+      change distance x ≤ δ at hbad
       rw [distance_on_unit x ⟨hx0.le, hx1⟩] at hbad
       rcases min_le_iff.mp hbad with hleft | hright
       · exact Or.inl ⟨hx0, hleft⟩
@@ -106,10 +107,12 @@ theorem badIndicator_integral_one (δ : ℝ) (hδ : 0 ≤ δ) (hhalf : δ < 1/2)
     · rintro (hx | hx)
       · have hx1 : x ≤ 1 := by linarith [hx.2]
         refine ⟨?_, hx.1, hx1⟩
+        change distance x ≤ δ
         rw [distance_on_unit x ⟨hx.1.le, hx1⟩]
         exact (min_le_left _ _).trans hx.2
       · have hx0 : 0 < x := by linarith [hx.1]
         refine ⟨?_, hx0, hx.2⟩
+        change distance x ≤ δ
         rw [distance_on_unit x ⟨hx0.le, hx.2⟩]
         exact (min_le_right _ _).trans (by linarith [hx.1])
   have hd : Disjoint (Ioc (0 : ℝ) δ) (Icc (1-δ) 1) := by
@@ -121,7 +124,8 @@ theorem badIndicator_integral_one (δ : ℝ) (hδ : 0 ≤ δ) (hhalf : δ < 1/2)
     ({x : ℝ | distance x ≤ δ}.indicator (fun _ => (1 : ℝ))) x) = _
   rw [integral_indicator_const (1 : ℝ) (badIndicator_measurableSet δ),
     measureReal_restrict_apply (badIndicator_measurableSet δ), hset,
-    measureReal_union hd measurableSet_Icc, Real.volume_real_Ioc_of_le hδ,
+    measureReal_union hd measurableSet_Icc measure_Ioc_lt_top.ne measure_Icc_lt_top.ne,
+    Real.volume_real_Ioc_of_le hδ,
     Real.volume_real_Icc_of_le (by linarith : 1-δ ≤ (1 : ℝ))]
   simp only [smul_eq_mul, mul_one]
   ring
@@ -138,7 +142,7 @@ theorem speed_bad_integral_bound (v δ a b : ℝ) (hv : 0 < v)
     v⁻¹*(∫ x in v*a..v*b, badIndicator δ x) ≤
         v⁻¹*((v*b-v*a)*(2*δ)/1+2*δ) :=
       mul_le_mul_of_nonneg_left h (inv_nonneg.mpr hv.le)
-    _ = 2*δ*(b-a)+2*δ/v := by field_simp [hv.ne']; ring
+    _ = 2*δ*(b-a)+2*δ/v := by field_simp [hv.ne']
 
 theorem two_speed_interval_of_length (v w δ a b : ℝ)
     (hv : 0 < v) (hw : 0 < w) (hδ : 0 ≤ δ) (hhalf : δ < 1/2)
@@ -185,7 +189,6 @@ theorem window_of_measure (p b c : ℕ) (hp : 3 ≤ p) (hb : 0 < b) (hc : 0 < c)
         (1/(p : ℝ)-1/(p+2 : ℝ)) := by
     rw [hwidth]
     field_simp [hpR.ne', hq.ne', hbR.ne', hcR.ne']
-    ring
   apply two_speed_interval_of_length (b : ℝ) (c : ℝ) (1/(p+2 : ℝ))
     (1/(p+2 : ℝ)) (1/(p : ℝ)) hbR hcR (by positivity)
   · apply (div_lt_iff₀ hq).mpr

@@ -4,6 +4,16 @@ The objective is to formalize every result in this repository, preserving its
 quantifiers and discharging every mathematical dependency. Accepted work goes
 to `main`. Li is last. The campaign is incomplete.
 
+The higher-speed team's recent candidate receipts include the complete
+41,472-code seven-coordinate finite enumeration at `3f6ee74c` and three
+further closures at `75df6294`: the six-speed classification-to-bound
+adapter, hyperplane residue calculations, and endpoint components. Their
+source, axiom, and independent-kernel checks are recorded in
+[`loneliness-3f6-component-receipts.json`](loneliness-3f6-component-receipts.json)
+and [`loneliness-75df-component-receipts.json`](loneliness-75df-component-receipts.json).
+The geometric assembly, lower-speed classification inputs, and full
+hyperplane counting and density conclusions remain separate obligations.
+
 ## Coordination, 18 November 2026
 
 The four active lanes in [issue 1](https://github.com/1337isnot1337/solved-conjectures/issues/1) are:

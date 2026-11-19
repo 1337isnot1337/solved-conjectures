@@ -30,8 +30,12 @@ theorem exists_finite_frequency_bad_cover
   let z : torusGroup E := ⟨torusQuotient x, torusQuotient_mem E hx⟩
   let f : torusGroup E → ℝ := fun y =>
     torusPointClearance (torusQuotient s + (y : UnitAddTorus ι))
-  have hf : Continuous f := continuous_torus_point.comp
-    (continuous_const.add continuous_subtype_val)
+  have htranslate : Continuous (fun y : torusGroup E =>
+      torusQuotient s + (y : UnitAddTorus ι)) :=
+    (continuous_const : Continuous (fun _ : torusGroup E => torusQuotient s)).add
+      (continuous_subtype_val : Continuous (fun y : torusGroup E =>
+        (y : UnitAddTorus ι)))
+  have hf : Continuous f := (continuous_torus_point (ι := ι)).comp htranslate
   have hz : f z = pointClearance (s + x) := by
     change torusPointClearance (torusQuotient s + torusQuotient x) = _
     rw [← map_add]

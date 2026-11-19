@@ -65,9 +65,8 @@ theorem signed_repeat_of_support_card (x : Vector)
       intro i j hij
       by_contra hne
       exact h i j hne hij
-    have hc := Nat.card_range_of_injective hinj
-    norm_num at hc
-    omega
+    rw [Nat.card_range_of_injective hinj] at hcard
+    norm_num only [Nat.card_eq_fintype_card, Fintype.card_fin] at hcard
   obtain ⟨i, j, hij, heq⟩ := hex
   rcases Int.natAbs_eq_natAbs_iff.mp heq with h | h
   · exact ⟨i, j, hij, true, by simpa [Finite.sign] using h⟩
@@ -126,13 +125,13 @@ theorem repeat_direction_rescale (u w x : Vector)
       push_cast
       field_simp [hAr]
       have hmul := congrArg (fun r : ℚ => r*(u l : ℚ)) hrel
-      dsimp at hmul
       nlinarith
   obtain ⟨c, hc⟩ := hscale
   refine ⟨c, ?_, hc⟩
   intro hz
   rw [hz, zero_smul] at hc
   have h := congrFun hc 0
+  change (x 0 : ℚ) = 0 at h
   exact hxzero 0 (by exact_mod_cast h)
 
 theorem value_eq_of_rational_rescale (x q : Vector) (c : ℚ) (hc : c ≠ 0)

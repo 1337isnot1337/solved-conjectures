@@ -1,7 +1,7 @@
 import Conjectures.LonelinessHyperplaneUnshifted
 import Conjectures.LonelinessHyperplaneOneRelation
 import Conjectures.LonelinessConsecutive
-import Mathlib.Data.Matrix.Notation
+import Mathlib.Data.Fin.VecNotation
 
 /-! Sharpness of the reciprocal-box-size error rate. For the primitive
 normal `(1,1,-1)`, every positive multiple of `(1,2,3)` has loneliness

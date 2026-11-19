@@ -96,6 +96,7 @@ theorem unitCircle_nat_zsmul_surjective (a : ℕ) (ha : 0 < a) :
   intro t
   obtain ⟨r, rfl⟩ := QuotientAddGroup.mk_surjective t
   refine ⟨((r / (a : ℝ) : ℝ) : UnitAddCircle), ?_⟩
+  change (a : ℤ) • ((r / (a : ℝ) : ℝ) : UnitAddCircle) = (r : UnitAddCircle)
   rw [← AddCircle.coe_zsmul]
   congr 1
   rw [zsmul_eq_mul, Int.cast_natCast]
@@ -172,6 +173,7 @@ theorem positive_velocity_hits_residue_iff_smooth
     obtain ⟨t, ht⟩ := velocity_hits_of_unitResidueLine (fun i => (r i : ℤ)) b
       (by simpa only [Int.cast_natCast] using hres)
     obtain ⟨s, hs⟩ := unitCircle_nat_zsmul_surjective g hgpos t
+    change (g : ℤ) • s = t at hs
     refine ⟨s, ?_⟩
     intro i
     calc

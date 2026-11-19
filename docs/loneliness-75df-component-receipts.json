@@ -1,0 +1,80 @@
+{
+  "status": "passed component closures; not complete higher-runner classifications or counting laws",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "receipts": [
+    {
+      "task": "six-classification-bound",
+      "commit": "75df6294fbcaae78f5cab9b73999a506235cf4f9",
+      "run_id": 44470757828,
+      "job_id": 135379558344,
+      "checked_project_modules": 21,
+      "audited_project_theorems": 284,
+      "source": true,
+      "axiom_whitelist": true,
+      "independent_kernel_replay": true,
+      "unchanged_sources": true,
+      "replay_command_count": 21,
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44470757828/job/135379558344"
+    },
+    {
+      "task": "hyperplane-residues",
+      "commit": "75df6294fbcaae78f5cab9b73999a506235cf4f9",
+      "run_id": 44470757761,
+      "job_id": 135379471951,
+      "checked_project_modules": 26,
+      "audited_project_theorems": 463,
+      "source": true,
+      "axiom_whitelist": true,
+      "independent_kernel_replay": true,
+      "unchanged_sources": true,
+      "replay_command_count": 26,
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44470757761/job/135379471951"
+    },
+    {
+      "task": "hyperplane-endpoint-components",
+      "commit": "75df6294fbcaae78f5cab9b73999a506235cf4f9",
+      "run_id": 44470757761,
+      "job_id": 135379473115,
+      "checked_project_modules": 29,
+      "audited_project_theorems": 490,
+      "source": true,
+      "axiom_whitelist": true,
+      "independent_kernel_replay": true,
+      "unchanged_sources": true,
+      "replay_command_count": 29,
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44470757761/job/135379473115"
+    },
+    {
+      "task": "critical-seven-bridge",
+      "commit": "75df6294fbcaae78f5cab9b73999a506235cf4f9",
+      "run_id": 44470757725,
+      "job_id": 135379488963,
+      "checked_project_modules": 41,
+      "audited_project_theorems": 714,
+      "source": true,
+      "axiom_whitelist": true,
+      "independent_kernel_replay": true,
+      "unchanged_sources": true,
+      "replay_command_count": 41,
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44470757725/job/135379488963"
+    },
+    {
+      "task": "seven-minor-bound",
+      "commit": "75df6294fbcaae78f5cab9b73999a506235cf4f9",
+      "run_id": 44470757828,
+      "job_id": 135379558423,
+      "checked_project_modules": 6,
+      "audited_project_theorems": 68,
+      "source": true,
+      "axiom_whitelist": true,
+      "independent_kernel_replay": true,
+      "unchanged_sources": true,
+      "replay_command_count": 6,
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44470757828/job/135379558423"
+    }
+  ]
+}

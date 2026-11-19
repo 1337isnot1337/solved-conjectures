@@ -22,18 +22,26 @@ def basisPlane (B : Module.Basis (Fin 7) ℤ (Fin 7 → ℤ)) :
 theorem basisPlane_eq_prefix
     (B : Module.Basis (Fin 7) ℤ (Fin 7 → ℤ)) :
     basisPlane B = NearestPlane.rationalPrefix (KZBasis.integerFamily B) 2 := by
+  have hzero : KZBasis.integerFamily B 0 = B 0 := KZBasis.integerFamily_apply B 0
+  have hone : KZBasis.integerFamily B 1 = B 1 := KZBasis.integerFamily_apply B 1
   unfold basisPlane NearestPlane.rationalPrefix
   congr 1
   ext x
   constructor
   · rintro (hx | hx)
-    · exact ⟨0, by simpa only [KZBasis.integerFamily_apply B (0 : Fin 7)] using hx.symm⟩
-    · exact ⟨1, by simpa only [KZBasis.integerFamily_apply B (1 : Fin 7)] using hx.symm⟩
+    · refine ⟨0, ?_⟩
+      change (fun j => (KZBasis.integerFamily B 0 j : ℚ)) = x
+      rw [hzero]
+      exact hx.symm
+    · refine ⟨1, ?_⟩
+      change (fun j => (KZBasis.integerFamily B 1 j : ℚ)) = x
+      rw [hone]
+      exact hx.symm
   · rintro ⟨i, rfl⟩
     fin_cases i
-    · simp only [KZBasis.integerFamily_apply B (0 : Fin 7)]
+    · simp only [hzero]
       exact Set.mem_insert _ _
-    · simp only [KZBasis.integerFamily_apply B (1 : Fin 7)]
+    · simp only [hone]
       exact Set.mem_insert_of_mem _ (Set.mem_singleton _)
 
 theorem basisPlane_realSpan
@@ -53,6 +61,7 @@ theorem basisPlane_coordinateFree
     CoordinateFree (basisPlane B) := by
   intro i
   refine ⟨(fun j => (B 0 j : ℚ)), Submodule.subset_span (by simp [basisPlane]), ?_⟩
+  change (B 0 i : ℚ) ≠ 0
   exact_mod_cast hfirst i
 
 /-- The norm is Euclidean, the plane contains the original integer vector,
@@ -90,6 +99,7 @@ theorem exists_near_plane (hfive : LonelyRunnerBound 5) (v : Fin 7 → ℕ)
     simp only [integerVector, Int.cast_natCast]
   have hnonzero (i : Fin 7) : w 0 i ≠ 0 := by
     rw [hwzero]
+    change (v i : ℤ) ≠ 0
     exact_mod_cast (hpositive i).ne'
   have hline : spaceValue (Submodule.span ℝ {integerVector (w 0)}) =
       value (List.ofFn v) := by
@@ -105,8 +115,9 @@ theorem exists_near_plane (hfive : LonelyRunnerBound 5) (v : Fin 7 → ℕ)
     exact hp
   have hdet : V^2 * (t 0*t 1*t 2*t 3*t 4*t 5) = 1 := by
     have h := KZBasis.gs_tail_product B
-    simpa only [V, t, Finset.prod_range_succ, Finset.prod_range_zero,
-      one_mul, mul_comm] using h
+    change (∏ i ∈ Finset.range 6, t i) * V^2 = 1 at h
+    rw [mul_comm]
+    simpa only [Finset.prod_range_succ, Finset.prod_range_zero, one_mul] using h
   have hsmall := first_plane_area_small V (t 0) (t 1) (t 2) (t 3) (t 4) (t 5)
     hV (ht 0 (by decide)) (ht 1 (by decide)) (ht 2 (by decide))
     (ht 3 (by decide)) (ht 4 (by decide)) (ht 5 (by decide))
@@ -134,6 +145,7 @@ theorem exists_near_plane (hfive : LonelyRunnerBound 5) (v : Fin 7 → ℕ)
   · apply basisPlane_coordinateFree
     intro i
     rw [hfirst]
+    change (v i : ℤ) ≠ 0
     exact_mod_cast (hpositive i).ne'
   · intro i j
     exact basis_minor_abs_le B i j

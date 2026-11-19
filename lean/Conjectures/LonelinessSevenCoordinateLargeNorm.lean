@@ -52,7 +52,9 @@ theorem product_plane_of_repeat_bound
   have hcomp : (signedCoordinates ℚ σ' hσ' (q.trans p)).toLinearMap =
       (signedCoordinates ℚ (fun _ : Fin 7 => 1) (fun _ => Or.inl rfl) q).toLinearMap.comp
         (signedCoordinates ℚ σ hσ p).toLinearMap := by
-    ext x i
+    apply LinearMap.ext
+    intro x
+    funext i
     change (σ (q i) : ℚ)*x (p (q i)) =
       (1 : ℚ)*((σ (q i) : ℚ)*x (p (q i)))
     simp

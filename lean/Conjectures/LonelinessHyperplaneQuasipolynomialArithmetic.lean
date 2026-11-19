@@ -56,6 +56,7 @@ variable {ι : Type*} [Fintype ι] [Nonempty ι]
 theorem weakComposition_card (n : ℕ) :
     Nat.card {q : ι → ℕ // ∑ i, q i = n} =
       (n + (Fintype.card ι - 1)).choose (Fintype.card ι - 1) := by
+  classical
   rw [← Nat.card_congr (Sym.equivNatSumOfFintype ι n),
     Sym.natCard_sym_eq_choose, Nat.card_eq_fintype_card]
   have hk : 0 < Fintype.card ι := Fintype.card_pos
@@ -102,7 +103,7 @@ theorem shiftedWeakComposition_card
         rw [← hsub, Nat.mul_div_cancel_left _ hM]
       · intro hq
         rw [hq, Nat.mul_div_cancel' hvalid.2, Nat.sub_add_cancel hvalid.1]
-    rw [Nat.card_congr (Equiv.subtypeEquivRight heq)]
+    rw [shiftedWeakComposition, Nat.card_congr (Equiv.subtypeEquivRight heq)]
     exact weakComposition_card ((n - T) / M)
   · rw [ite_eq_right hvalid]
     letI : IsEmpty (shiftedWeakComposition (ι := ι) M T n) := ⟨by
@@ -165,7 +166,7 @@ theorem shiftedWeakComposition_polynomial_on_progressions
           omega
         have hcard : Nat.card (shiftedWeakComposition (ι := ι) M T (M * n + r)) =
             (n - a + d).choose d := by
-          rw [Nat.card_congr (Equiv.subtypeEquivRight hsum)]
+          rw [shiftedWeakComposition, Nat.card_congr (Equiv.subtypeEquivRight hsum)]
           exact weakComposition_card (n - a)
         exact congrArg (fun x : ℕ => (x : ℚ)) hcard
       · rw [ite_eq_right han]

@@ -1,0 +1,57 @@
+name: Lean six-support reduction diagnostic
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'lean/Conjectures/LonelinessSixSpeedSupport257Probe.lean'
+      - 'lean/Conjectures/LonelinessModularCoverBits.lean'
+      - 'lean/Conjectures/LonelinessModularInitialMemo.lean'
+      - 'lean/Conjectures/LonelinessModularMemo.lean'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/diagnose_six_support_257.py'
+      - '.github/workflows/lean-six-support-diagnostic.yml'
+  pull_request:
+    paths:
+      - 'lean/Conjectures/LonelinessSixSpeedSupport257Probe.lean'
+      - 'lean/Conjectures/LonelinessModularCoverBits.lean'
+      - 'lean/Conjectures/LonelinessModularInitialMemo.lean'
+      - 'lean/Conjectures/LonelinessModularMemo.lean'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/diagnose_six_support_257.py'
+      - '.github/workflows/lean-six-support-diagnostic.yml'
+
+permissions:
+  contents: read
+
+env:
+  LEAN_NUM_THREADS: '1'
+
+jobs:
+  diagnose:
+    name: Raw p257 reduction (diagnostic only)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Expose the exact literal goal's kernel result
+        run: python3 scripts/diagnose_six_support_257.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: diagnostic-six-support-257-${{ github.run_id }}
+          path: .candidate-artifacts/diagnostic-six-support-257/
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 7

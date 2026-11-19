@@ -151,9 +151,15 @@ theorem unshiftedSignPoint_unit_multiple
       unshiftedSignPoint m i =
         ZMod.toAddCircle ((u : ZMod (endpointModulus m)) *
           canonicalResidue m (endpointModulus m) i) := by
+  suffices h : ∀ (Q : ℕ) [NeZero Q], Q = endpointModulus m →
+      ∃ u : (ZMod Q)ˣ, ∀ i,
+        unshiftedSignPoint m i = ZMod.toAddCircle ((u : ZMod Q) * canonicalResidue m Q i) by
+    exact h (endpointModulus m) rfl
+  intro Q _ hmod
   by_cases heven : Even (normalSize m)
-  · have hQ : endpointModulus m = 2 := by simp only [endpointModulus, ite_eq_left heven]
-    rw [hQ]
+  · have hQ : Q = 2 := hmod.trans (by simp only [endpointModulus, ite_eq_left heven])
+    clear hmod
+    subst Q
     refine ⟨1, ?_⟩
     intro i
     have hθ := predictedValue_zero_even m ((normalSize_even_iff m).mp heven)
@@ -163,9 +169,10 @@ theorem unshiftedSignPoint_unit_multiple
     ring
   · have hA := normalSize_pos m hm
     letI : NeZero (normalSize m) := ⟨hA.ne'⟩
-    have hQ : endpointModulus m = normalSize m := by
-      simp only [endpointModulus, ite_eq_right heven]
-    rw [hQ]
+    have hQ : Q = normalSize m := hmod.trans (by
+      simp only [endpointModulus, ite_eq_right heven])
+    clear hmod
+    subst Q
     obtain ⟨k, hk⟩ := (Nat.not_even_iff_odd.mp heven).exists_bit1
     have hzero : (2 : ZMod (normalSize m)) * (k : ZMod (normalSize m)) + 1 = 0 := by
       have hz : ((2 * k + 1 : ℕ) : ZMod (normalSize m)) = 0 := by

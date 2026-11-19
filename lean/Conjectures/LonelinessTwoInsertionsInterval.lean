@@ -74,9 +74,13 @@ theorem IntervalCertificate.good {p b : ℕ} {a : IntervalCertificate}
     1/(p+2 : ℝ) ≤ distance ((b : ℝ)*t) := by
   have hb : (0 : ℝ) ≤ b := Nat.cast_nonneg b
   have hl : 1/(p+2 : ℝ) ≤ (b : ℝ)*(a.left : ℝ)-a.shift := by
-    exact_mod_cast h.2.2.2.1
+    simpa only [Rat.cast_div, Rat.cast_add, Rat.cast_one, Rat.cast_ofNat,
+      Rat.cast_natCast, Rat.cast_mul, Rat.cast_sub, Rat.cast_intCast] using
+      (Rat.cast_le (K := ℝ)).mpr h.2.2.2.1
   have hu : (b : ℝ)*(a.right : ℝ)-a.shift ≤ 1-1/(p+2 : ℝ) := by
-    exact_mod_cast h.2.2.2.2.1
+    simpa only [Rat.cast_div, Rat.cast_add, Rat.cast_one, Rat.cast_ofNat,
+      Rat.cast_natCast, Rat.cast_mul, Rat.cast_sub, Rat.cast_intCast] using
+      (Rat.cast_le (K := ℝ)).mpr h.2.2.2.2.1
   apply distance_lower_of_cell (k := a.shift)
   · nlinarith [mul_le_mul_of_nonneg_left ht.1 hb]
   · nlinarith [mul_le_mul_of_nonneg_left ht.2 hb]
@@ -100,14 +104,18 @@ theorem IntervalCertificate.unbounded_second {p b c : ℕ} {a : IntervalCertific
     apply (div_le_iff₀ hcr).mpr
     have hdiv : 2/(p+2 : ℝ) ≤ ((a.right : ℝ)-a.left)*(c : ℝ) :=
       (div_le_iff₀ hq).mpr (by nlinarith)
-    simpa only [one_div, div_eq_mul, one_mul] using hdiv
+    simpa only [one_div, div_eq_mul_inv, one_mul] using hdiv
   obtain ⟨t, ht, hct⟩ := exists_good_on_interval (c : ℝ) a.left a.right
     (1/(p+2 : ℝ)) hcr (by positivity)
     ((one_div_le_one_div_of_le (by norm_num) hq2)) hwidth
   refine ⟨t, ⟨?_, ?_⟩, IntervalCertificate.good h ht, hct⟩
-  · have hl : 1/(p+2 : ℝ) ≤ (a.left : ℝ) := by exact_mod_cast h.1
+  · have hl : 1/(p+2 : ℝ) ≤ (a.left : ℝ) := by
+      simpa only [Rat.cast_div, Rat.cast_add, Rat.cast_one, Rat.cast_ofNat,
+        Rat.cast_natCast] using (Rat.cast_le (K := ℝ)).mpr h.1
     exact hl.trans ht.1
-  · have hu : (a.right : ℝ) ≤ 1/(p : ℝ) := by exact_mod_cast h.2.2.1
+  · have hu : (a.right : ℝ) ≤ 1/(p : ℝ) := by
+      simpa only [Rat.cast_div, Rat.cast_one, Rat.cast_natCast] using
+        (Rat.cast_le (K := ℝ)).mpr h.2.2.1
     exact ht.2.trans hu
 
 structure PairCertificate where
@@ -126,11 +134,15 @@ instance (p b c : ℕ) (a : PairCertificate) : Decidable (a.Valid p b c) :=
 theorem PairCertificate.sound {p b c : ℕ} {a : PairCertificate}
     (h : a.Valid p b c) : TwoSpeedWindow p b c := by
   refine ⟨a.time, ⟨?_, ?_⟩, ?_, ?_⟩
-  · exact_mod_cast h.1
-  · exact_mod_cast h.2.1
+  · simpa only [Rat.cast_div, Rat.cast_add, Rat.cast_one, Rat.cast_ofNat,
+      Rat.cast_natCast] using (Rat.cast_le (K := ℝ)).mpr h.1
+  · simpa only [Rat.cast_div, Rat.cast_one, Rat.cast_natCast] using
+      (Rat.cast_le (K := ℝ)).mpr h.2.1
   · have hgood := lowerCertificate_sound h.2.2 b (by simp)
-    exact_mod_cast hgood
+    simpa only [Rat.cast_div, Rat.cast_add, Rat.cast_one, Rat.cast_ofNat,
+      Rat.cast_natCast] using hgood
   · have hgood := lowerCertificate_sound h.2.2 c (by simp)
-    exact_mod_cast hgood
+    simpa only [Rat.cast_div, Rat.cast_add, Rat.cast_one, Rat.cast_ofNat,
+      Rat.cast_natCast] using hgood
 
 end Loneliness.TwoInsertions

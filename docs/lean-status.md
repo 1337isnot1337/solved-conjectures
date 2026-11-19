@@ -11,6 +11,16 @@ Unregistered proofs and their separate hosted checks are tracked in
 [`lean-candidates.md`](lean-candidates.md). Their presence in the repository
 does not expand the accepted scope in the table below.
 
+At candidate snapshot `75df6294`, the six-speed classification-to-bound
+adapter passed its 21-module closure and 284-theorem axiom audit. The
+hyperplane residue and endpoint-component closures also passed, covering
+26 modules/463 theorems and 29 modules/490 theorems respectively. Each job
+rebuilt sources, checked the standard axiom whitelist, independently replayed
+every project kernel object, and confirmed unchanged sources. These remain
+unregistered components. In particular, the adapter retains its five-speed
+bound and primitive six-speed classification hypotheses. Exact job links and
+scopes are in [`loneliness-75df-component-receipts.json`](loneliness-75df-component-receipts.json).
+
 A complete formalization here means that Lean checks the mathematical conclusion
 from the definitions in the indicated files. The correspondence between those
 definitions and an external publication remains subject to mathematical review.

@@ -11,6 +11,7 @@ def endpoints(namespace, names):
 Q = "Loneliness.Hyperplane.QuasipolynomialArithmetic"
 I = "Loneliness.TwoInsertions"
 C = "Loneliness.Modular.SupportSearch.Bits.Cuts"
+R = "Loneliness.Hyperplane.RationalCone"
 
 gate.TASKS = {
     "hyperplane-partition-arithmetic": (
@@ -27,6 +28,24 @@ gate.TASKS = {
                       "boundedWeightedPartition_card_inclusion_exclusion",
                       "boundedWeightedPartition_polynomial_on_progressions",
                       "boundedWeightedPartition_quasipolynomial"]),
+    ),
+    "hyperplane-simplicial-arithmetic": (
+        ["Conjectures.LonelinessHyperplaneSimplicialArithmetic"],
+        endpoints(Q, ["shiftedWeightedPartition_isQuasipolynomial_of_small_offset"]),
+    ),
+    "hyperplane-generic-cost": (
+        ["Conjectures.LonelinessHyperplaneGenericCost"],
+        endpoints(R, ["exists_rational_cost_avoiding", "exists_genericCost"]),
+    ),
+    "hyperplane-homogeneous-box": (
+        ["Conjectures.LonelinessHyperplaneHomogeneousBox"],
+        endpoints(R, ["exists_positive_height_generators", "homogeneousBox_card_eq",
+                      "homogeneousBox_mem_of_rational_combination"]),
+    ),
+    "hyperplane-optimal-supports": (
+        ["Conjectures.LonelinessHyperplaneOptimalSupports"],
+        endpoints(R, ["optimal_support_independent", "optimal_unique",
+                      "Optimal.supported_optimal", "supportedCone_inter"]),
     ),
     "hyperplane-closed-box-counting": (
         ["Conjectures.LonelinessHyperplaneBoxQuasipolynomial"],
@@ -65,6 +84,35 @@ gate.TASKS = {
         endpoints(I, ["periodic_integral_upper", "badIndicator_integral_one",
                       "speed_bad_integral_bound", "two_speed_interval_of_length",
                       "window_of_measure"]),
+    ),
+    "two-insertion-divisibility": (
+        ["Conjectures.LonelinessTwoInsertionsDivisibility"],
+        endpoints(I, ["reciprocal_residue_lower", "failed_endpoints_divisibility",
+                      "common_divisors_product_bound", "failed_endpoints_large_second",
+                      "divisor_eq_below_twice", "large_first_measure_bound",
+                      "window_above_small_bound"]),
+    ),
+    "two-insertion-shifts": (
+        ["Conjectures.LonelinessTwoInsertionsShift"],
+        endpoints(I, ["central_speed_window", "shifted_left_window",
+                      "noncentral_divisibility_bound", "large_parameter_window"]),
+    ),
+    "two-insertion-full": (
+        ["Conjectures.LonelinessTwoInsertions"],
+        endpoints(I, ["two_speed_window_sorted", "two_speed_window",
+                      "insertion_for_interval_base", "insertion_value_lower"]),
+    ),
+    "two-insertion-acceleration-arithmetic": (
+        ["Conjectures.LonelinessTwoInsertionsAccelerationArithmetic"],
+        endpoints(I, ["exists_coprime_in_block", "exists_coprime_near_half",
+                      "AccelerationGap.sandwich", "AccelerationGap.twice_mul_le",
+                      "AccelerationGap.accelerated_cell", "acceleration_cell_bounds"]),
+    ),
+    "two-insertion-accelerations": (
+        ["Conjectures.LonelinessTwoInsertionsAccelerations"],
+        endpoints(I, ["accelerated_speed_good", "acceleratedBase_good",
+                      "goddyn_wong_two_insertions", "goddyn_wong_insertion_value",
+                      "dilated_goddyn_wong_insertion_value"]),
     ),
     "two-insertion-obstruction": (
         ["Conjectures.LonelinessTwoInsertionsObstruction"],

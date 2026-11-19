@@ -28,6 +28,15 @@ than the ambient dimension for a primitive normal. These modules are also
 unchecked candidates. Counts for several simultaneous relations, needed for
 the retained exceptional subspaces, remain separate.
 
+Four additional source candidates begin that general counting argument.
+They construct finite positive-height generators for the homogeneous box,
+choose a rational cost that separates dependent supports, and prove the
+independence, uniqueness, and shared-face properties of optimal supports.
+A small-offset weighted-partition formula supplies the arithmetic needed
+for fundamental parallelepipeds. Existence of an optimum, the finite cone
+decomposition, and the final exact count still need assembly. No complete
+multi-relation counting theorem is claimed.
+
 ## Two-speed insertion
 
 The interval argument uses actual nearest-integer distance at real times.
@@ -41,10 +50,24 @@ The producer stores 210 interval rows and 643 pair witnesses for
 finite cases in the written argument. Every row, width inequality, coverage
 index, and witness is checked in Lean; the producer is not trusted.
 
-The measure branch proves a periodic integral bound and the resulting
-two-speed bad-length estimate. Large first speeds, the elementary divisibility
-cases for larger `p`, and the unbounded Goddyn--Wong criterion application
-must still be assembled before the full insertion theorem is complete.
+The measure candidate supplies a periodic integral bound and the resulting
+two-speed bad-length estimate. The divisibility and shift candidates now
+assemble the unrestricted large-speed branches. Their proposed endpoint
+`two_speed_window` retains arbitrary positive integer speeds and the exact
+real interval. It is source-only until all three gates pass. The separate
+acceleration candidates prove the number-theoretic cell bounds from the
+literal Goddyn--Wong gcd criterion, using explicit coprime integers near
+half the original speed. The proposed application supplies the prescribed
+interval witness, actual value bound, and dilation conclusion for every
+allowed simultaneous acceleration. Its full closure also remains unchecked.
+
+The first hosted interval check reached explicit casts of rational
+certificate inequalities into the reals. Those casts and a division lemma
+name have been repaired. The interval, row, and repaired measure modules
+then passed strict local source checks. The divisibility module reached one
+fraction-normalization obligation, now repaired. A completed hosted
+three-gate check is still required. No finite row or numeric cutoff was
+changed.
 
 The independent obstruction candidate bounds the clearance of `[4,6,10]`
 by `1/7` throughout `[1/6,1/3]`. It also verifies the ordinary five-speed
@@ -57,6 +80,12 @@ Each finite fragment follows actual tape edges or refers to an exactly
 matching earlier frame. The checker verifies the reference order and a
 fragment-size bound. Strong induction then gives the original tape check.
 This is a generic source candidate; it does not certify a numerical prime.
+The first hosted check reached Boolean coercion and impossible-branch proof
+errors, now repaired without changing its definitions or theorem statements.
+
+The separate `Lean six-support reduction diagnostic` workflow exposes the
+original kernel exception for the unchanged p257 literal tape goal. Its
+outputs are diagnostic only. It does not supply an acceptance receipt.
 
 Inspect or execute an exact closure:
 
