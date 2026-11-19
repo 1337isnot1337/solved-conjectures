@@ -30,10 +30,14 @@ def quadraticGeneratorInFixed479 : quadraticFixedField479 K :=
   ⟨quadraticGenerator479 K,
     (mem_quadraticFixedField479 K _).mpr (quadraticGenerator479_fixed K)⟩
 
+@[simp] theorem quadraticGeneratorInFixed479_coe :
+    (quadraticGeneratorInFixed479 K : K) = quadraticGenerator479 K := by
+  simp only [quadraticGeneratorInFixed479]
+
 theorem quadraticFixedField479_coordinates (v : K) (hv : v ∈ quadraticFixedField479 K) :
     ∃ a b : ℚ, v = (a : K) + (b : K) * quadraticGenerator479 K := by
   let g : quadraticFixedField479 K := quadraticGeneratorInFixed479 K
-  have hg : (g : K) = quadraticGenerator479 K := rfl
+  have hg : (g : K) = quadraticGenerator479 K := quadraticGeneratorInFixed479_coe K
   have hli : LinearIndependent ℚ ![(1 : quadraticFixedField479 K), g] := by
     rw [LinearIndependent.pair_iff' one_ne_zero]
     intro a ha

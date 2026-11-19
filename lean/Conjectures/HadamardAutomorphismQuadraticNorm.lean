@@ -16,9 +16,6 @@ open NumberField
 variable (K : Type*) [Field K] [NumberField K]
   [IsCyclotomicExtension {479} ℚ K]
 
-@[simp] theorem quadraticGeneratorInFixed479_coe :
-    (quadraticGeneratorInFixed479 K : K) = quadraticGenerator479 K := rfl
-
 theorem quadraticGeneratorInFixed479_sq :
     quadraticGeneratorInFixed479 K ^ 2 = (-479 : quadraticFixedField479 K) := by
   apply Subtype.ext
