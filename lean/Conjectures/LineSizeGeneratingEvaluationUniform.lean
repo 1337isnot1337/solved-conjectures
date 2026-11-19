@@ -44,6 +44,7 @@ theorem norm_lineSizeCount_term_le_radius (n : ℕ) (q : K) {R : ℝ}
     (pow_le_pow_left₀ (norm_nonneg q) hq n)
     (pow_nonneg (norm_nonneg q) n) (Nat.cast_nonneg _)
 
+omit [CharZero K] in
 theorem uniform_recordGenerating {R : ℝ} (hR : 0 ≤ R) (hR1 : R < 1) :
     TendstoUniformlyOn
       (fun N (q : K) => ∑ n ∈ range N, (lineSizeCount n : K)*q^n)

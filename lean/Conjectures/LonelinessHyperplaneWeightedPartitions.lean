@@ -22,6 +22,12 @@ def weightedPartition (a : ι → ℕ) (n : ℕ) : Type _ :=
 def remainderVectors (a : ι → ℕ) (M : ℕ) : Type _ :=
   (i : ι) → Fin (M / a i)
 
+instance remainderVectorsFintype (a : ι → ℕ) (M : ℕ) :
+    Fintype (remainderVectors a M) := by
+  classical
+  unfold remainderVectors
+  infer_instance
+
 def remainderWeight (a : ι → ℕ) (M : ℕ) (r : remainderVectors a M) : ℕ :=
   ∑ i, a i * (r i : ℕ)
 
@@ -32,8 +38,10 @@ theorem remainderWeight_lt (a : ι → ℕ) (ha : ∀ i, 0 < a i)
     intro i
     have h := Nat.mul_lt_mul_of_pos_left (r i).isLt (ha i)
     rwa [Nat.mul_div_cancel' (hdiv i)] at h
-  have h := Finset.sum_lt_sum_of_nonempty Finset.univ_nonempty (fun i _ => hterm i)
-  simpa only [remainderWeight, Finset.sum_const, Finset.card_univ, nsmul_eq_mul] using h
+  calc
+    remainderWeight a M r < ∑ _i : ι, M :=
+      Finset.sum_lt_sum_of_nonempty Finset.univ_nonempty (fun i _ => hterm i)
+    _ = Fintype.card ι * M := by simp
 
 /-- The remainder decomposition is an actual equivalence of solution
 types. In particular it neither loses solutions nor counts one twice. -/
@@ -98,7 +106,7 @@ def weightedPartitionEquiv
 theorem weightedPartition_finite
     (a : ι → ℕ) (ha : ∀ i, 0 < a i) (M : ℕ) (hM : 0 < M)
     (hdiv : ∀ i, a i ∣ M) (n : ℕ) : Finite (weightedPartition a n) := by
-  letI (r : remainderVectors a M) :
+  let (r : remainderVectors a M) :
       Finite (shiftedWeakComposition (ι := ι) M (remainderWeight a M r) n) :=
     shiftedWeakComposition_finite M (remainderWeight a M r) n hM
   exact Finite.of_equiv _ (weightedPartitionEquiv a ha M hM hdiv n).symm
@@ -109,7 +117,7 @@ theorem weightedPartition_card_eq_sum
     Nat.card (weightedPartition a n) =
       ∑ r : remainderVectors a M,
         Nat.card (shiftedWeakComposition (ι := ι) M (remainderWeight a M r) n) := by
-  letI (r : remainderVectors a M) :
+  let (r : remainderVectors a M) :
       Finite (shiftedWeakComposition (ι := ι) M (remainderWeight a M r) n) :=
     shiftedWeakComposition_finite M (remainderWeight a M r) n hM
   rw [Nat.card_congr (weightedPartitionEquiv a ha M hM hdiv n), Nat.card_sigma]

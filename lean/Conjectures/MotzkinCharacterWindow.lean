@@ -55,6 +55,7 @@ theorem integrable_characterRepresentative [MeasurableSpace G]
     Integrable (fun x => representative (χ x)) μ := by
   apply (integrable_const (1:ℝ)).mono' (measurable_representative.comp hχ).aestronglyMeasurable
   exact Filter.Eventually.of_forall fun x => by
+    change ‖representative (χ x)‖ ≤ (1 : ℝ)
     rw [Real.norm_of_nonneg (representative_mem (χ x)).1]
     exact (representative_mem (χ x)).2.le
 
@@ -81,9 +82,12 @@ theorem characterWindow_measure [MeasurableSpace G] [MeasurableAdd G]
       (∫ x, f x-h+indicator (characterWindow χ h) x ∂μ) :=
     integral_congr_ae (Filter.Eventually.of_forall heq)
   have hconst : (∫ _x : G, h ∂μ)=h := by simp
-  rw [integral_add_left_eq_self f (-c),
-    integral_add (hf.sub (integrable_const h)) hi,
-    integral_sub hf (integrable_const h),integral_indicator μ hm,hconst] at hint
+  have hadd : (∫ x, f x-h+indicator (characterWindow χ h) x ∂μ) =
+      (∫ x, f x-h ∂μ) + (∫ x, indicator (characterWindow χ h) x ∂μ) :=
+    integral_add (hf.sub (integrable_const h)) hi
+  have hsub : (∫ x, f x-h ∂μ) = (∫ x, f x ∂μ) - (∫ _x : G, h ∂μ) :=
+    integral_sub hf (integrable_const h)
+  rw [integral_add_left_eq_self f (-c), hadd, hsub, integral_indicator μ hm, hconst] at hint
   linarith
 
 /-- The exact unshifted half-open witness, including the zero-score case. -/
