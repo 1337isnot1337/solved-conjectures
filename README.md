@@ -33,7 +33,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [CUT arithmetic periodicity with a preperiod](results/cut-arithmetic-periodicity/) | ✅ |
 | [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
 | [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |
-| [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | Verified in Lean |
+| [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
 | [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
 | [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 | [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
