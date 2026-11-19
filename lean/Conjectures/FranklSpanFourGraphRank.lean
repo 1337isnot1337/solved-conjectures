@@ -36,13 +36,13 @@ theorem lookup_mem {table : Table} {a value : ℕ}
   | empty => cases h
   | node key val left right ihLeft ihRight =>
       by_cases hlt : a < key
-      · have hh : left.lookup a = some value := by simpa only [lookup, if_pos hlt] using h
+      · have hh : left.lookup a = some value := by simpa only [lookup, ite_eq_left hlt] using h
         exact List.mem_append.mpr (Or.inl (ihLeft hh))
       · by_cases heq : a = key
         · subst a
           exact List.mem_append.mpr (Or.inr (List.mem_cons.mpr (Or.inl rfl)))
         · have hh : right.lookup a = some value := by
-            simpa only [lookup, if_neg hlt, if_neg heq] using h
+            simpa only [lookup, ite_eq_right hlt, ite_eq_right heq] using h
           exact List.mem_append.mpr (Or.inr (List.mem_cons_of_mem _ (ihRight hh)))
 
 theorem contains_mem {table : Table} {a : ℕ}

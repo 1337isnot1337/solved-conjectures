@@ -90,8 +90,8 @@
       "bytes": 6092
     },
     "lean/Conjectures/FranklSpanFourGraphRank.lean": {
-      "sha256": "8d75d743846b45cc6688023cdc485c701b455bfe0b2369fb7226264a2647077e",
-      "bytes": 4734
+      "sha256": "01c9ead547930e69a90103b207927530bea1793ce536598d51b42638c18b884b",
+      "bytes": 4751
     },
     "lean/Conjectures/FranklSpanFourGraphCoverage.lean": {
       "sha256": "cf6bddbb9ff9db6e4e6b0dbd75206b07c73326503ca40a5e0b358605fc667bab",
