@@ -62,10 +62,11 @@ def badEvent (G : ι → Finset α) (e : ι) : Finset (Finset ι) :=
 @[simp] theorem mem_badEvent (G : ι → Finset α) (e : ι) (s : Finset ι) :
     s ∈ badEvent G e ↔ Bad G e s := by simp [badEvent]
 
+omit [DecidableEq ι] in
 theorem point_absent_iff (G : ι → Finset α) (s : Finset ι) (a : α) :
     a ∉ generated G s ↔ Disjoint s (incident G a) := by
   rw [Finset.disjoint_left]
-  simp only [mem_generated, not_exists, mem_incident]
+  simp only [mem_generated, not_exists, mem_incident, not_and]
 
 omit [Fintype ι] in
 theorem bad_of_enlargement (G : ι → Finset α) {s t : Finset ι} {e : ι}

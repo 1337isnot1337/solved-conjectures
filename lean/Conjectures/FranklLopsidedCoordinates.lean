@@ -32,7 +32,7 @@ theorem exterior_mem_join (e : ι) (N : Finset ι) (z : Slice e N)
   have hfN : (f : ι) ∉ N := fun h => f.2 (mem_insert_of_mem h)
   have hn : (f : ι) ∉ z.2.2.map (Function.Embedding.subtype _) :=
     notMem_map_subtype_of_not_property _ hfN
-  cases hbit : z.2.1 <;> simp [join, hbit, hfe, hn]
+  cases hbit : z.2.1 <;> simp [join, hbit, hfe, hn, hfN]
 
 theorem local_mem_join (e : ι) (N : Finset ι) (he : e ∉ N) (z : Slice e N)
     (f : Local N) : (f : ι) ∈ join e N z ↔ f ∈ z.2.2 := by

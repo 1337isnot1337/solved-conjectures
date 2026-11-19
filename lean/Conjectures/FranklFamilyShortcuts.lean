@@ -114,7 +114,7 @@ theorem abundant_erase_empty {F : Finset (Finset α)} {x : α}
       refine ⟨⟨?_,hU⟩,hxU⟩
       intro h
       subst U
-      simpa using hxU
+      simp at hxU
   unfold Abundant at hx ⊢
   rw [hfreq]
   exact (Finset.card_erase_le (s:=F) (a:=∅)).trans hx
