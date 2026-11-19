@@ -79,7 +79,7 @@ theorem repeatBlock_periodic (A : Finset ℕ) (P : ℕ) :
   change ((t+(P : ℤ)) % P).toNat ∈ A ↔ (t % (P : ℤ)).toNat ∈ A
   simp
 
-theorem repeatBlock_count (A : Finset ℕ) (P : ℕ) (hP : 0 < P)
+theorem repeatBlock_count (A : Finset ℕ) (P : ℕ) (_hP : 0 < P)
     (hA : ∀ a ∈ A, a < P) : NonmixedGap.count (repeatBlock A P) 0 P = A.card := by
   classical
   symm
