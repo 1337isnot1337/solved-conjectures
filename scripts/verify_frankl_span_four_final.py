@@ -153,7 +153,7 @@ def preflight(model):
     require(model["schema"] == "frankl-span-four-composed-model-v1",
             "Unexpected final composition model")
     modules = dependency_order(model["root"])
-    require(len(modules) == 1101 and set(modules) == set(model["source_sha256"]),
+    require(len(modules) == 1100 and set(modules) == set(model["source_sha256"]),
             "The exact theorem import closure differs: " + json.dumps({
                 "actual_count": len(modules), "expected_count": len(model["source_sha256"]),
                 "missing_from_model": sorted(set(modules) - set(model["source_sha256"])),

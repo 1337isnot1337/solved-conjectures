@@ -2,7 +2,7 @@
 """Adversarial protocol tests for the final immutable-artifact consumer.
 
 The small synthetic archives exercise rejection paths only. They are not Lean
-proof evidence and cannot satisfy the published 1101-source model.
+proof evidence and cannot satisfy the published 1100-source model.
 """
 from __future__ import annotations
 

@@ -1044,7 +1044,6 @@
     "Conjectures.FranklSmallCyclicSearch": "a9d7743b4662b1e5fc2a90ac3245b8ddf808da7bc1732c9883824241fcf44f7c",
     "Conjectures.FranklSmallCyclicTheorem": "0930063ea72954c1e90144b271c5f243e81372f94e93aca622cb2b4662e8ea0a",
     "Conjectures.FranklSmallCyclicTransport": "e58e57d5de2c9e75944aef57bdf429f954cd2740f0a2b6355db930518fec9453",
-    "Conjectures.FranklSmallCyclicWeightCoverageHelpers": "64b95953c9a0851afcf55bc3f884596c0b18ced93c1172c17d027fbe89916516",
     "Conjectures.FranklSmallCyclicZMod": "3ff526ec375eb30c25e338e5420f55ebd3f021d7390680dbd7c25ce6d85eb54d",
     "Conjectures.FranklSpanFourAdmissible": "0217e520ddfee553a376c488bcd96c995334949a8a074b4883cb9b40987c46b1",
     "Conjectures.FranklSpanFourAssembly": "8c5a1ecf18ec39963b1070072782f63df400667d4f25c42845e3bf8dfb21e38e",
@@ -1141,7 +1140,9 @@
     "scripts/preserve_frankl_transport_receipts.py": "2509cf8ff29420abeedb5df247f31529938387eb272a788349fb36056cb05ef7",
     "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
     "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
-    "scripts/audit_lean_owned_extension.py": "6b520a346907fe9e8a7c025daa9a9a831ec8188aab26014443bb760f557f3bca"
+    "scripts/audit_lean_owned_extension.py": "6b520a346907fe9e8a7c025daa9a9a831ec8188aab26014443bb760f557f3bca",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
   },
   "providers": {
     "transport-results": {
@@ -2845,7 +2846,7 @@
         "run_id": 44518872729,
         "head_sha": "2fa3e1206c82e89210f608016c669a5316a7b831",
         "artifact_id": null,
-        "artifact_name": "frankl-full-graph",
+        "artifact_name": "frankl-full-initial-graph",
         "archive_sha256": null,
         "receipt_sha256": null
       },
@@ -3099,7 +3100,7 @@
         "run_id": 44521076244,
         "head_sha": "00e7073c4243df1ffe78907ce1b35f5d73af324d",
         "artifact_id": null,
-        "artifact_name": null,
+        "artifact_name": "frankl-reconstructed-residual-tail",
         "archive_sha256": null,
         "receipt_sha256": null
       },
@@ -3764,7 +3765,8 @@
         "Frankl.FC.VaughanTriangle.checked6"
       ],
       "excluded_modules": [
-        "Conjectures.FranklSpanFourWeightCoverageHelpers"
+        "Conjectures.FranklSpanFourWeightCoverageHelpers",
+        "Conjectures.FranklSmallCyclicWeightCoverageHelpers"
       ],
       "binding": {
         "run_id": 44506147903,
