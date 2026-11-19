@@ -265,6 +265,13 @@ import Conjectures.LiMonomial
 import Conjectures.LiSpecFinal
 import Conjectures.LiCompute
 import Conjectures.LiMain
+import Conjectures.LiFullCoeff
+import Conjectures.LiFullCoeffTrunc
+import Conjectures.LiTriples2
+import Conjectures.LiTriplesBridge
+import Conjectures.LiTriplesFinal
+import Conjectures.LiPartitionsFinal
+import Conjectures.LiPartitionsCount
 import Conjectures.MotzkinEvaluatorCandidates
 import Conjectures.MotzkinRationalIntervals
 import Conjectures.LonelinessSixSpeedSupport257Cuts

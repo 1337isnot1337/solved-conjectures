@@ -706,6 +706,30 @@ modules=(
   Conjectures.LiSpecFinal
   Conjectures.LiCompute
   Conjectures.LiMain
+  Conjectures.LiFullCoeff
+  Conjectures.LiFullCoeffTrunc
+  Conjectures.LiTriples2
+  Conjectures.LiTriplesBridge
+  Conjectures.LiTriplesFinal
+  Conjectures.LiPartitionsFinalCore
+  Conjectures.LiPartitionsFinalEnum
+  Conjectures.LiPartitionsGraph
+  Conjectures.LiPartitionsFinalData00
+  Conjectures.LiPartitionsFinalData01
+  Conjectures.LiPartitionsFinalData02
+  Conjectures.LiPartitionsFinalData03
+  Conjectures.LiPartitionsFinalData04
+  Conjectures.LiPartitionsFinalData05
+  Conjectures.LiPartitionsFinalData06
+  Conjectures.LiPartitionsFinalData07
+  Conjectures.LiPartitionsFinalData08
+  Conjectures.LiPartitionsFinalData09
+  Conjectures.LiPartitionsFinalData10
+  Conjectures.LiPartitionsFinalData11
+  Conjectures.LiPartitionsFinalData12
+  Conjectures.LiPartitionsFinalData13
+  Conjectures.LiPartitionsFinal
+  Conjectures.LiPartitionsCount
   Conjectures.MotzkinCharacterWindow
   Conjectures.MotzkinFloorSum
   Conjectures.MotzkinEvaluatorRows

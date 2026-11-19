@@ -34,7 +34,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [CUT arithmetic periodicity with a preperiod](results/cut-arithmetic-periodicity/) | [Read](results/cut-arithmetic-periodicity/PROOF.md) | ✅ |
 | [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | [Read](results/l-solitaire-limit-shapes/PROOF.md) | ✅ |
 | [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) · [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334) | [Read](results/graffiti-pc-318/PROOF.md) | ✅ |
-| [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | [Read](results/li-coefficient-sign/PROOF.md) | 🟡 |
+| [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | [Read](results/li-coefficient-sign/PROOF.md) | ✅ |
 | [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | [Read](results/pham-denominator-degree/PROOF.md) | ✅ |
 | [Spivey's three-player War](results/spivey-multiplayer-war/) | [Read](results/spivey-multiplayer-war/PROOF.md) | ✅ |
 | [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | [Read](results/batista-egyptian-fractions/PROOF.md) | ✅ |

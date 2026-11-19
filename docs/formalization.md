@@ -2,9 +2,8 @@
 
 The objective is to formalize every result in this repository, preserving its
 quantifiers and discharging every mathematical dependency. Accepted work goes
-to `main`. Li has a partial Lean formalization: the coefficient theorem and
-tree facts are checked, while the finite connected-partition coverage remains
-Python-verified. The campaign is incomplete.
+to `main`. Li's coefficient-sign counterexample is formalized completely below.
+The campaign is otherwise incomplete.
 
 The higher-speed team's recent candidate receipts include the complete
 41,472-code seven-coordinate finite enumeration at `3f6ee74c` and three
@@ -192,10 +191,9 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
 18. Loneliness on a fixed hyperplane: uniform fixed-tolerance probability
     bound, exceptional-subspace description,
     quasipolynomial counts, and the endpoint density for full-support normals.
-19. Li coefficient sign, partial: Lean proves the actual tree properties and
-    the three-variable restriction of the coefficient is `+29`; `verify.py`
-    covers all 6,842 connected partition types and the eight triple-plus-pairs
-    partitions.
+19. Li coefficient sign, complete: Lean proves the actual tree properties, the
+    full coefficient, `b_{(3,2^14)}(T) = 8`, and all 6,842 connected partition
+    types, including the graph-component bridge for the cut tree.
 
 The pair-sum maximum theorem and the checked values of 31 finite speed lists
 are reusable components. They do not establish any exhaustive classification.
@@ -557,17 +555,16 @@ completes Motzkin. The remaining higher-runner classifications are incomplete.
 The Li coefficient-sign formalization is registered separately below.
 
 
-## Li coefficient-sign partial formalization
+## Li coefficient-sign formalization
 
-The tree facts and the three-variable coefficient theorem are Lean-proven in
-`lean/Conjectures/LiMain.lean` and `LiBasic.lean`; see
-`results/li-coefficient-sign/LEAN.md`. The identification with the full
-`[e_3 e_2^14] X_T` coefficient is the standard restriction argument in that
-note, not a separate Lean theorem. The full counterexample also requires
-all 6,842 connected partition types and the eight triple-plus-pairs partitions.
-Those finite coverage claims are checked by
-`results/li-coefficient-sign/verify.py`, not by Lean. The overall result is
-partial formalization.
+The tree facts, the full `[e_3 e_2^14] X_T` coefficient (for every finite
+colour set of size at least 31), the count `b_{(3,2^14)}(T) = 8`, and all 6,842
+connected partition types are Lean-proven in
+`lean/Conjectures/LiFullCoeff.lean`, `LiTriplesFinal.lean`, and
+`LiPartitionsFinal.lean`; see `results/li-coefficient-sign/LEAN.md`. The
+partition certificate is checked by kernel reduction, and
+`LiPartitionsGraph.sizes_eq_components` identifies the checker output with the
+actual connected components of the cut tree.
 
 ## Complete Motzkin relation classification
 
@@ -637,7 +634,7 @@ to this problem; the closure supplies them.
 The exact unchanged receipts are archived after comparison of all 93 recorded
 paths. This registers 44 proof modules and 20 required endpoints, for
 878 accepted proof modules plus two roots. [Exact statement and receipts](lean-status.md#complete-erdős-607-line-size-asymptotic).
-The full merged gate remains separate. Li remains last.
+The full merged gate remains separate.
 
 
 ## Actual Legendre-pair matrix and quotient transport

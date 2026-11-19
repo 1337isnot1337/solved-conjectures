@@ -40,7 +40,7 @@ never additional Lean axioms.
 | Hadamard order-2396 partial results | Partial overall; automorphism, fixed-border construction and symmetry, and length-598 obstruction complete | The full signed-automorphism group excludes order 479, with both norm proofs checked. The fixed-border common multiplier group is cyclic of order dividing four and every preserving subgroup leaves at least 151 sign orbits. On any finite abelian group with a subgroup of index four, the original four sign rows and raw correlation equations yield an actual bordered Hadamard matrix; normalization, the literal finite border, and all fourteen size-149 baseline patterns are proved. The length-598 order-eleven obstruction is complete. For length 1197, the actual common multiplier order is proved to divide 27; exclusion of order 27, the finite quotient/no-lift certificates, and the two-row construction remain candidates. |
 | Lonely-runner two insertions | Not formalized | The arbitrary two-speed insertion theorem, acceleration bridge, unbounded branch, finite cases, and three-insertion obstruction are not registered in the accepted package. Published candidate sources remain under issue 12. |
 | Erdős–Gyárfás abelian covers | Complete for the stated voltage-cover theorem and sharpness | Every seven-label voltage cover of the singly subdivided tetrahedron over every abelian group contains an actual simple cycle of length 4, 8, 16, or 32. The 64-node literal certificate, its collision-branch soundness, and voltage normalization are checked. The connected 95-vertex cyclic cover attains least power-of-two cycle length 32. The general minimum-degree-three conjecture is outside this result. |
-| Li coefficient sign | Partial | Lean proves the explicit 31-vertex tree's structural facts and that the three-variable restriction of `[e_3e_2^14]X_T` is `+29`. The existing `verify.py` establishes the 6,842 connected partition types and the eight triple-plus-pairs partitions; those coverage claims are part of Li's Problems 4.6 and 4.9 but are not Lean-formalized. |
+| Li coefficient sign | Complete | Lean proves the explicit tree facts, the full `e_3e_2^14` coefficient `+29` for every finite colour set of size at least 31, `b_{(3,2^14)}(T)=8`, and that all 6,842 integer partitions of 31 occur as connected partition types of the cut tree. The graph-component bridge from the kernel-reducible checker is checked, and the enumeration is proved `Nodup` with exact cardinality. |
 | Frankl generating families | Partial: both frequency bounds complete; cyclic span-four pending | The all-point high-girth bound is checked for every `k ≥ 3`: incidence girth at least 16 and exactly three generators through each point imply frequency at least `518208/1000000` among distinct unions. The `k ≥ 15` linear-family bound is also checked with frequency `657/1000`. Both include the empty union. The complete Vaughan shortcut, small-cycle cases, local checker semantics, and conditional all-period assembly are checked. The remaining cyclic span-four graph/transport certificates and unconditional assembly are still being verified. |
 | Erdős 607 line sizes | Complete | Lean proves the exact realizability and geometric counting identity for every natural point count, the coefficientwise and analytic generating functions, Fourier extraction, the actual finite-product limit and domination, and the sharp asymptotic for the actual record count with prefactor 3/(16√(6π)A^(1/4)), where A=π²/12+(log 2)²/2. No unproved local-limit, tail, or coefficient-transfer premise remains. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
@@ -1962,7 +1962,7 @@ all 85 required declarations are added to `ProofAudit`. These are exact
 component passes. The merged accepted package has its own full gate.
 
 
-## Li coefficient-sign partial formalization, 19 November 2026
+## Complete Li coefficient-sign formalization, 19 November 2026
 
 The explicit 31-vertex tree of `results/li-coefficient-sign/PROOF.md` is
 formalized in `lean/Conjectures/LiBasic.lean`. Lean proves that it is a tree of
@@ -1974,20 +1974,27 @@ bipartition has sizes 16 and 15.
 `LiDualTrunc.lean`, `LiTrunc.lean`, `LiBridge.lean`, `LiWeighted.lean`,
 `LiWeighted2.lean`, `LiMonomial.lean`, `LiEmapFinal.lean`, `LiSpecFinal.lean`,
 `LiCompute.lean`, and `LiMain.lean` prove the three-variable coefficient theorem
-`Li.li_coefficient`: the `e_3 e_2^14` coefficient is `+29`, the three-variable
-restriction of `[e_3 e_2^14] X_T`. The identification with the full coefficient
-is the standard restriction argument in `results/li-coefficient-sign/LEAN.md`,
-not a separate Lean theorem. The specialization lemma and the 30-step
-dual-number certificate are kernel-checked. `#print axioms` reports only
-`propext`, `Classical.choice`, and `Quot.sound`.
+`Li.li_coefficient`. `LiFullCoeff.lean` defines the full chromatic symmetric
+function and proves `Li.full_li_coefficient`; `LiFullCoeffTrunc.lean` proves
+`Li.full_li_coefficient_of_card`, the same coefficient for every finite colour
+type of cardinality at least 31. The specialization lemma and the 30-step
+dual-number certificate are kernel-checked.
 
-The overall counterexample in the note additionally requires the tree to
-realize all 6,842 connected partition types and the eight triple-plus-pairs
-partitions. The existing `results/li-coefficient-sign/verify.py` checks both
-finite coverage claims; they are not Lean-formalized. The overall result is
-therefore **partially formalized**: the three-variable coefficient theorem is
-kernel-checked, while the full-coefficient bridge is documented separately and
-the connected-partition coverage is Python-verified.
+`LiTriplesFinal.lean` proves the actual connected-partition count
+`Li.LiFinal325.b_triple_pairs : Fintype.card {P // Partition325 P} = 8`, using
+uniqueness of perfect matchings in a tree and the bijection with the eight good
+triples.
+
+For the 6,842 connected partition types, `LiPartitionsFinalCore.lean` supplies
+the kernel-reducible edge-cut checker, `LiPartitionsGraph.lean` proves
+`LiFinal.sizes_eq_components` identifying its output with the connected
+components of the cut graph, and `LiPartitionsFinalData00..13.lean` contain the
+6,842 checked witness rows. `LiPartitionsFinal.lean` proves
+`LiFinal.T_hasAllPartitionTypes` for the genuine `cutGraph` components;
+`LiPartitionsCount.lean` proves `partsAux_31_nodup` and
+`card_partitions_31 : Fintype.card {p // IsPartitionOf 31 p} = 6842`.
+
+`#print axioms` reports only `propext`, `Classical.choice`, and `Quot.sound`.
 See `results/li-coefficient-sign/LEAN.md`.
 
 ## Complete two-difference Motzkin theorem
@@ -2130,7 +2137,7 @@ The original receipt SHA-256 is
 The 47 newly registered modules and 34 new required endpoints join the shared
 package. Its full merged-package build and replay are a separate gate.
 The cyclic span-four theorem remains incomplete, so the Frankl result entry
-remains partial. Li remains last.
+remains partial.
 
 
 ## Complete Erdős 607 line-size asymptotic

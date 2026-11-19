@@ -1,42 +1,60 @@
 # Lean formalization: Li's coefficient-sign counterexample
 
-**Status: partial formalization.**
+**Status: complete for the formalized statements.**
 
-Lean proves the structural facts about the explicit 31-vertex tree and the
-coefficient of `e₃e₂¹⁴` in its three-variable chromatic symmetric polynomial,
-which is `+29`. The identification with the full `[e₃e₂¹⁴] X_T` coefficient is
-the standard restriction argument explained below; it is not a separate Lean
-theorem. The full counterexample in the note also requires the tree to realize
-all 6,842 connected partition types and the eight triple-plus-pairs partitions.
-The existing `verify.py` checks both finite coverage claims, but those claims
-are not Lean-formalized. The three-variable coefficient computation is
-kernel-checked; the overall claimed counterexample is therefore **partially
-formalized**.
+Lean proves the structural facts about the explicit 31-vertex tree, the full
+`e₃e₂¹⁴` coefficient, the count `b_{(3,2¹⁴)}(T) = 8`, and that all 6,842
+connected partition types occur. There is no `sorry`, `admit`,
+`native_decide`, custom axiom, `opaque`, or `unsafe`; `#print axioms` reports
+only `propext`, `Classical.choice`, and `Quot.sound`.
 
-## Main theorem
+## Main theorems
 
-`lean/Conjectures/LiMain.lean`:
+Full coefficient (`lean/Conjectures/LiFullCoeff.lean`):
 
 ```lean
-theorem Li.li_coefficient :
-    ((MvPolynomial.esymmAlgEquiv (Fin 3) ℚ (n := 3) (by decide)).symm
-      ⟨chromPoly T, chromPoly_isSymmetric T⟩).coeff
-      (Finsupp.single (1 : Fin 3) 14 + Finsupp.single (2 : Fin 3) 1) = 29
+theorem Li.full_li_coefficient :
+    ((MvPolynomial.esymmAlgEquiv (Fin 31) ℚ (n := 31) (by decide)).symm
+      ⟨LiFull.fullChromPoly T, LiFull.fullChromPoly_isSymmetric T⟩).coeff
+      (Finsupp.single (1 : Fin 31) 14 + Finsupp.single (2 : Fin 31) 1) = 29
 ```
 
-This is the coefficient of `e₃e₂¹⁴` in the three-variable chromatic symmetric
-polynomial of the explicit tree `T`. The index `single 1 14 + single 2 1`
-means `X₁^14 X₂`, i.e. `e₂^14 e₃` under `esymmAlgEquiv`. The three-variable
-restriction is faithful for this coefficient because no `e_j` with `j > 3`
-appears. This faithfulness argument is not itself formalized as a Lean bridge.
+Colour-set independence (`lean/Conjectures/LiFullCoeffTrunc.lean`):
 
-`#print axioms Li.li_coefficient` reports exactly:
-
+```lean
+theorem Li.full_li_coefficient_of_card {σ : Type*} [Fintype σ] [DecidableEq σ]
+    (hσ : 31 ≤ Fintype.card σ) :
+    ((MvPolynomial.esymmAlgEquiv σ ℚ (n := Fintype.card σ) rfl).symm
+      ⟨LiFull.fullChromPolyOn (σ := σ) T, LiFull.fullChromPolyOn_isSymmetric T⟩).coeff
+      (Finsupp.single (⟨1, by omega⟩ : Fin (Fintype.card σ)) 14
+        + Finsupp.single (⟨2, by omega⟩ : Fin (Fintype.card σ)) 1) = 29
 ```
-[propext, Classical.choice, Quot.sound]
+
+The 31-variable case is the minimal sufficient colour set for a degree-31
+coefficient; the second theorem proves the same coefficient for every finite
+colour type of cardinality at least 31.
+
+`b_{(3,2¹⁴)}(T) = 8` (`lean/Conjectures/LiTriplesFinal.lean`):
+
+```lean
+theorem Li.LiFinal325.b_triple_pairs :
+    Fintype.card {P : Finset (Finset (Fin 31)) // LiBridge.Partition325 P} = 8
 ```
 
-There is no `sorry`, no `native_decide`, and no project-specific axiom.
+All 6,842 connected partition types (`lean/Conjectures/LiPartitionsFinal.lean`):
+
+```lean
+theorem LiFinal.T_hasAllPartitionTypes :
+    ∀ p : List Nat, LiFinal.IsPartitionOf 31 p → LiFinal.ConnectedPartitionType p
+```
+
+`LiFinal.ConnectedPartitionType` is the genuine graph statement: `p` is the
+descending list of connected-component sizes of `cutGraph mask` for some edge
+cut of `Li.T`. The bridge from the kernel-reducible union-find checker to
+`SimpleGraph.ConnectedComponent` is `LiFinal.sizes_eq_components`
+(`lean/Conjectures/LiPartitionsGraph.lean`). The exact count is
+`LiFinal.card_partitions_31 : Fintype.card {p // IsPartitionOf 31 p} = 6842`
+in `lean/Conjectures/LiPartitionsCount.lean`.
 
 ## Structural facts
 
@@ -52,18 +70,27 @@ There is no `sorry`, no `native_decide`, and no project-specific axiom.
 
 | Module | Content |
 | :--- | :--- |
-| `Conjectures/LiBasic.lean` | The explicit 31-vertex tree; 30 edges; tree, degree, leaf, spider/caterpillar, bipartition facts |
-| `Conjectures/LiChromatic.lean` | Three-variable chromatic polynomial; symmetry; degree-31 homogeneity; `aeval` evaluation identity |
+| `Conjectures/LiBasic.lean` | The explicit 31-vertex tree; tree, degree, leaf, spider/caterpillar, bipartition facts |
+| `Conjectures/LiChromatic.lean` | Three-variable chromatic polynomial, symmetry, homogeneity, `aeval` identity |
 | `Conjectures/LiEliminate.lean` | General leaf-elimination theorem for the three-colour partition function |
-| `Conjectures/LiDualFull.lean` | Dedicated dual-number ring `ℚ[ε]/(ε²)` with square-zero multiplication |
-| `Conjectures/LiTrunc.lean`, `LiDualTrunc.lean` | The truncation `ℚ[t] → ℚ[ε]/(ε²)` and its compatibility with `aeval` |
-| `Conjectures/LiBridge.lean` | Identifies the leaf-elimination partition function with the `aeval` sum |
+| `Conjectures/LiDualFull.lean`, `LiDualTrunc.lean`, `LiTrunc.lean` | Dual-number ring `ℚ[ε]/(ε²)` and truncation compatibility |
+| `Conjectures/LiBridge.lean` | Leaf-elimination partition function as an `aeval` sum |
 | `Conjectures/LiWeighted.lean`, `LiWeighted2.lean` | Weighted-homogeneity transfer (weights 1,2,3) |
-| `Conjectures/LiMonomial.lean` | Per-monomial coefficient extraction: only `Y₁¹⁴Y₂` contributes the linear `ε` term |
-| `Conjectures/LiEmapFinal.lean` | Evaluates `e₁,e₂,e₃` at the truncated dual weights |
-| `Conjectures/LiCompute.lean` | The 30-step leaf-elimination chain, checked by kernel reduction over `Dual`, giving `29` |
-| `Conjectures/LiSpecFinal.lean` | The specialization lemma `[e₂¹⁴e₃]p = [t](aeval (1+t/2,-1+t/2,-t) g)` |
-| `Conjectures/LiMain.lean` | Assembly of `Li.li_coefficient` |
+| `Conjectures/LiMonomial.lean`, `LiEmapFinal.lean` | Per-monomial extraction and elementary-symmetric evaluations |
+| `Conjectures/LiCompute.lean` | Kernel-checked 30-step leaf-elimination chain giving `29` |
+| `Conjectures/LiSpecFinal.lean` | Three-variable specialization lemma |
+| `Conjectures/LiMain.lean` | `Li.li_coefficient`, the three-variable coefficient |
+| `Conjectures/LiFullCoeff.lean` | Full chromatic symmetric function and `Li.full_li_coefficient` |
+| `Conjectures/LiFullCoeffTrunc.lean` | Independence of the coefficient from the finite colour set (`≥ 31`) |
+| `Conjectures/LiTriples2.lean` | Edge table, listed connected triples, eight good triples, explicit matchings |
+| `Conjectures/LiTriplesBridge.lean` | `ConnIn`, connected-block facts, `Partition325` |
+| `Conjectures/LiTriplesFinal.lean` | Matching uniqueness, the bijection, and `b_triple_pairs = 8` |
+| `Conjectures/LiPartitionsFinalCore.lean` | Kernel-reducible edge-cut/union-find checker |
+| `Conjectures/LiPartitionsGraph.lean` | `cutGraph`, union-find correctness, `sizes_eq_components` |
+| `Conjectures/LiPartitionsFinalEnum.lean` | Enumeration of all integer partitions of 31 |
+| `Conjectures/LiPartitionsFinalData00.lean` … `Data13.lean` | 6,842 checked witness rows |
+| `Conjectures/LiPartitionsFinal.lean` | Certificate and `T_hasAllPartitionTypes` |
+| `Conjectures/LiPartitionsCount.lean` | `Nodup` and exact cardinality `6842` |
 
 ## Reproduce
 
@@ -77,21 +104,23 @@ cd ..
 bash scripts/verify_lean.sh
 ```
 
-A direct check that the main theorem compiles:
+A direct check of the main theorems:
 
 ```sh
 cd lean
 lake env lean Conjectures/LiMain.lean
+lake env lean Conjectures/LiFullCoeff.lean
+lake env lean Conjectures/LiFullCoeffTrunc.lean
+lake env lean Conjectures/LiTriplesFinal.lean
+lake env lean Conjectures/LiPartitionsFinal.lean
+lake env lean Conjectures/LiPartitionsCount.lean
 ```
 
 ## Finite coverage claims
 
-The full counterexample in `PROOF.md` also asserts:
-
-- `b_{(3,2¹⁴)}(T) = 8`;
-- all 6,842 integer partitions of 31 occur as connected partition types.
-
-The existing `results/li-coefficient-sign/verify.py` checks both claims
-exactly; `independent_check.py` checks the coefficient/vertex-deletion data.
-The claims are part of Li's Problems 4.6 and 4.9. They are **not**
-Lean-formalized and are not premises of `Li.li_coefficient`.
+The certificate in `LiPartitionsFinalData00..13` contains one witness mask for
+each of the 6,842 integer partitions of 31. `LiFinal.certificate_ok` checks all
+rows by kernel reduction; `LiFinal.sizes_eq_components` identifies the checker
+output with the actual connected components of the cut tree; and
+`LiFinal.card_partitions_31` proves the count is exactly 6,842. The triple count
+is `Li.LiFinal325.b_triple_pairs`, not merely a list length.

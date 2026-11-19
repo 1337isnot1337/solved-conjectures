@@ -144,12 +144,13 @@ certificate blocks. With the explicit `FourSpeedGap` input,
 five-speed tuple below `1/5` by 279,841. The remaining bounded classification
 is separate work. See [the cutoff guide](../results/five-speed-spectrum/PIGEONHOLE_REDUCTION_LEAN.md).
 
-## Li coefficient-sign partial formalization
+## Li coefficient-sign formalization
 
-`Conjectures.LiMain` proves `Li.li_coefficient`: the three-variable
-`e_3 e_2^14` coefficient of the explicit 31-vertex tree is `+29`, the
-three-variable restriction of `[e_3 e_2^14] X_T`. `Conjectures.LiBasic` proves
-the tree and leaf/degree facts. The 6,842 connected partition types and the
-eight triple-plus-pairs partitions are checked by
-`results/li-coefficient-sign/verify.py`, not by Lean. The overall result is
-partial formalization. See [the Lean note](../results/li-coefficient-sign/LEAN.md).
+`Conjectures.LiMain` proves `Li.li_coefficient`, and
+`Conjectures.LiFullCoeff` / `Conjectures.LiFullCoeffTrunc` prove the full
+`e_3 e_2^14` coefficient `+29` for every finite colour type with at least 31
+colours. `Conjectures.LiTriplesFinal` proves the connected-partition count
+`b_{(3,2^14)}(T) = 8`; `Conjectures.LiPartitionsFinal` and
+`Conjectures.LiPartitionsCount` prove that all 6,842 integer partitions of 31
+occur as connected partition types, with a checked graph-component bridge and
+exact cardinality. See [the Lean note](../results/li-coefficient-sign/LEAN.md).

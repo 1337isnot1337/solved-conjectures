@@ -55,13 +55,10 @@ The main verifier counts all `2^30` edge subsets by exact dynamic programming, c
 
 No prior explicit non-spider example answering Li's sign question was located in the literature search described in [`NOVELTY.md`](NOVELTY.md), as of 17 November 2026. This negative search is *not* proof of first discovery or independent peer review. For Li's exact wording, cite [Section 4, Problems 4.6 and 4.9](https://arxiv.org/pdf/2503.09484).
 
-## Lean formalization (partial)
+## Lean formalization
 
-Lean proves the structural facts about the explicit tree and the coefficient
-`[e_3 e_2^14] = +29` in its three-variable chromatic symmetric polynomial.
-The identification with the full `[e_3 e_2^14] X_T` coefficient is the
-standard restriction argument in [`LEAN.md`](LEAN.md); it is not a separate
-Lean theorem. The full counterexample also requires all 6,842 connected
-partition types and the eight triple-plus-pairs partitions; `verify.py` checks
-both finite coverage claims. The overall formalization is therefore partial.
-See [`LEAN.md`](LEAN.md).
+Lean proves the structural facts about the explicit tree, the full
+`[e_3 e_2^14] X_T = +29` coefficient (including independence from the finite
+colour set), the connected-partition count `b_{(3,2^14)}(T) = 8`, and that all
+6,842 integer partitions of 31 occur as connected partition types. See
+[`LEAN.md`](LEAN.md) for the exact theorems and module map.

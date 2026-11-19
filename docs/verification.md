@@ -98,7 +98,7 @@ The [status report](lean-status.md) records the exact statements checked and dep
 
 `results/pham-denominator-degree/verify.py` checks a finite certificate of 26 coefficients and applies Pham's *proved* degree bounds to deduce the entire rational-function identity. Optional `--dual` checks a second exact identity.
 
-The Li verifier also checks all 6,842 partition types of 31 and the coefficient `+29` using exact edge-cut and coloring calculations. Its independent parity-based check is included. The original PDF has the verifier embedded as an attachment.
+The Li verifier also checks all 6,842 partition types of 31 and the coefficient `+29` using exact edge-cut and coloring calculations. Its independent parity-based check is included. The original PDF has the verifier embedded as an attachment. These claims are also Lean-formalized: the full coefficient, the connected-partition count `b_{(3,2^14)}(T)=8`, and the genuine cut-graph coverage of all 6,842 types are checked in the accepted Lean package; see [`results/li-coefficient-sign/LEAN.md`](../results/li-coefficient-sign/LEAN.md).
 
 ## Reporting a check
 

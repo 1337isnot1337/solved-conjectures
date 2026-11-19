@@ -1009,7 +1009,19 @@ run_cmd do
     `LiEmap.aeval_esymm_vec,
     `LiMonomial.snd_aeval_of_weighted,
     `Li.specialization_coeff, `LiCompute.coeff_29,
-    `Li.coeff_eq_29, `Li.li_coefficient]
+    `Li.coeff_eq_29, `Li.li_coefficient,
+    `Li.full_li_coefficient, `LiFull.full_coeff_eq_three_variable_coeff,
+    `Li.full_li_coefficient_fin, `Li.full_li_coefficient_of_card,
+    `LiFull.fullChromPolyOn_T_isHomogeneous_31, `LiFull.killMN_fullECoords,
+    `LiFull.kill31_fullECoords, `LiFull.aeval_restrict3_fullChromPoly_T,
+    `Li.LiFinal325.b_triple_pairs, `Li.LiFinal325.IsMatchingOf.unique,
+    `Li.LiFinal325.hasPM_iff, `Li.LiFinal325.goodTripleData_iff,
+    `Li.LiFinal325.card_goodTripleData,
+    `LiFinal.cutGraph_adj_T, `LiFinal.sizes_eq_components,
+    `LiFinal.all_partition_types, `LiFinal.T_hasAllPartitionTypes,
+    `LiFinal.certificate_ok, `LiFinal.certificate_parts,
+    `LiFinal.partsAux_31_nodup, `LiFinal.card_partitions_31,
+    `LiFinal.partsAux_31_exact]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
