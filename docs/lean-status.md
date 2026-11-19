@@ -2651,3 +2651,38 @@ For any positive integer sextuple actually lying in a critical rational plane, t
 This component assumes actual critical-plane membership for its forward implications. It does not prove that every low-value plane is critical, discharge the remaining five-speed exhaustion, certify the complete six-plane finite table, or evaluate the full third family. Those obligations and result-level completion remain separate.
 
 Artifact `14549664948` has ZIP SHA256 `b9ad7ea510611134327c246572be59b5b1ce67a9f75d3ba26ef63249cd385989`; the unchanged raw receipt has SHA256 `d06c6f0e813120dfe3bf118f5d9c96b516e1abfd02620114c372944caeb155fe`. All 79 historical source/control/configuration Git blobs, every archived object, process log and progress record, and the reconstructed ownership audit were authenticated. The original evidence and separate preservation record are under [`verification/six-plane-families-exact-44563135178/`](verification/six-plane-families-exact-44563135178/). Registration adds one module and five endpoints; it preserves the concurrent FieldsSupport registration.
+
+## Complete tight-five classification and independent finite lower bound (19 November 2026)
+
+The complete threshold classification at `1/6` is registered. A positive
+primitive five-element natural-number tuple with actual loneliness at most
+`1/6` is a permutation of `[1,2,3,4,5]` or `[1,3,4,5,9]`, and has value exactly
+`1/6`. The normalized theorem applies to every positive list of length five;
+its gcd-normalized list has one of those two forms. Distinctness is not an
+extra premise of either classification statement.
+
+`Loneliness.Modular.FiveRunner.five_runner_bound` and
+`Loneliness.CoordinateSubspace.five_speed_lonelyRunnerBound` also prove the
+lower bound `1/6` for every nonempty list of at most five distinct positive
+speeds. This finite proof is independent of the already registered Renault
+proof. The original Renault modules and endpoints remain registered.
+
+[Run 44549751944](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44549751944)
+at `1ffeb0932ac9a5674f2d416757d786a85e43ffde` passed all 250 fresh strict sources,
+7,586 required theorems, four literal quantified contracts, and the complete
+audit of 28,383 owned/raw declarations, including 118 private declarations.
+The unchanged stock kernel replayed exactly the 250-module closure. The
+118 generated modules reproduce all 394 minimum-pair roots and 7,070 frames
+for primes `149,151,163,167,173`; all smaller-runner and prime-classification
+hypotheses are discharged. Only `propext`, `Classical.choice`, and `Quot.sound`
+are permitted transitive axioms.
+
+The [authenticated original checkpoint](verification/loneliness-five-runner-exact-44549751944/README.md)
+preserves every receipt, audit, generation, log, and process-record file.
+Registration adds exactly 129 previously unaccepted modules and
+7,577 previously unregistered required endpoints, including every
+frame theorem. The other 121 dependencies were already accepted and
+prebuilt with source bytes matching this run. GcdShift and Renault
+registrations are preserved. The full five-speed spectrum below `1/5` remains
+incomplete; no result-directory spectrum status is promoted. The merged
+accepted-package gate remains separate from this complete component receipt.

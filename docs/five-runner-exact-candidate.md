@@ -1,17 +1,20 @@
 # Five positive speeds at the threshold 1/6
 
-Status: candidate. The full source, axiom, and stock-kernel gate has not passed.
-`Conjectures.LonelinessFiveRunnerTheorem` remains outside the accepted root.
+Status: verified and registered. The full fresh source, axiom, and stock-kernel
+gate passed in [run 44549751944](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44549751944).
+The [authenticated checkpoint](verification/loneliness-five-runner-exact-44549751944/README.md)
+records its complete 250-source, 7,586-theorem, 7,070-frame scope.
+`Conjectures.LonelinessFiveRunnerTheorem` is registered with the accepted root.
 This work is coordinated in [issue 36](https://github.com/1337isnot1337/solved-conjectures/issues/36).
 
 ## Statements
 
-The final module targets the unconditional theorem
+The final module proves the unconditional theorem
 `Loneliness.CoordinateSubspace.five_speed_lonelyRunnerBound` of type
 `LonelyRunnerBound 5`. This means that every nonempty list of at most five
 distinct positive integer speeds has loneliness value at least `1/6`.
 
-It also targets the primitive classification at or below `1/6`: a positive
+It also proves the primitive classification at or below `1/6`: a positive
 integer tuple of length five with gcd one must be a permutation of
 `[1,2,3,4,5]` or `[1,3,4,5,9]`. Both directions have actual global value `1/6`.
 The normalization theorem transfers this classification to arbitrary positive
@@ -31,7 +34,7 @@ one of the two primitive integer directions.
 `LonelinessFiveRunnerNormData` gives 16 exact dual rows for the four-variable
 KZ product certificate. The resulting product lower bound is `7/2430000`.
 `LonelinessFiveRunnerNorm` applies the existing geometric construction to the
-actual speed vector and targets the integer squared-norm bound `347142`.
+actual speed vector and proves the integer squared-norm bound `347142`.
 Its lower-dimensional runner inputs are discharged from the existing
 one-through-four-speed theorems.
 
@@ -79,16 +82,15 @@ from this diagnostic.
 
 ## Acceptance requirements
 
-The fresh exact gate must compile the entire final theorem import closure
-with warnings treated as errors, audit every owned declaration including raw
-private declarations, require the actual theorem endpoints, and replay every exact module with the pinned stock checker. The kernel gate
+The fresh exact gate compiled the entire final theorem import closure
+with warnings treated as errors, audited every owned declaration including raw
+private declarations, required the actual theorem endpoints, and replayed every exact module with the pinned stock checker. The kernel gate
 uses one `Conjectures` prefix invocation against an isolated object directory
 whose module inventory is exactly the final theorem closure. It requires each
 expected module exactly once in the replay log, with no missing or extra target. The only permitted
 transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`.
 
 All five complete prime certificates, the geometric bound, prime avoidance,
-normalization, and the final runner-bound theorem must pass. A successful
-component, a finite search census, or development-cache reuse does not count
-as that complete gate. Registration and the combined accepted-package gate
-remain subsequent obligations.
+normalization, and the final runner-bound theorem passed. Registration
+preserves the existing independent Renault proof. The combined accepted-package
+gate remains separate from this original complete component verification.

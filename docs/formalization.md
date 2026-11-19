@@ -928,3 +928,21 @@ The resulting theorem applies to all nonzero raw residue sextuples. It proves th
 The exact six-plane membership bridge is registered from [run 44563135178, job 135701825634](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44563135178/job/135701825634), candidate `3273ac1a24ea061b0cbd73244e2ac57c08d491ec`. The fresh 66-module gate checked 1,795 owned and raw declarations, 1,449 theorems, 49 private declarations, all five endpoints, and 66 separate stock-kernel targets. Authenticated original evidence is preserved unchanged in [verification/six-plane-families-exact-44563135178](verification/six-plane-families-exact-44563135178/).
 
 `Loneliness.SixPlane.literal_parameters_of_mem_critical_plane` turns actual positive integer membership in a classified plane into the two literal product families with both positive integer parameters or the full signed real third family. `primitive_family_of_mem_critical_plane` derives the two `6s` product families under primitivity and actual value below `1/6`. `not_mem_critical_plane_of_not_literal_families` gives the exact off-critical condition required by the norm proof. The acceptance adds only `LonelinessSixPlaneFamilies` and its five named endpoints. The classification of low-value planes, complete finite pair coverage, five-speed exhaustion, and third-family evaluation retain their own proof obligations. No result-level completion status changes.
+
+## Complete tight-five threshold classification (19 November 2026)
+
+Lean now proves that every positive primitive five-speed tuple with loneliness
+at most `1/6` is a permutation of `[1,2,3,4,5]` or `[1,3,4,5,9]`, and its value
+is exactly `1/6`. The complete gcd-normalized statement covers all positive
+lists of length five. The same proof supplies an unconditional five-speed
+lower bound, independently of the previously registered Renault proof.
+
+The complete 250-source closure passed fresh strict compilation, all 7,586
+named theorem obligations, four literal statements, the raw/private axiom
+audit, and exact stock kernel replay. All 7,070 finite frames reproduce from
+the published generators. No lower-runner or prime-classification premise
+remains. See the [original passing run and authenticated evidence](verification/loneliness-five-runner-exact-44549751944/README.md).
+
+This completes the tight-five classification at `1/6`. The separate
+five-speed spectrum theorem classifies all values below `1/5` and retains
+its remaining finite-exhaustion obligations. Its result-level status is unchanged.

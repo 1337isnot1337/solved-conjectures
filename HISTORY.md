@@ -1,5 +1,19 @@
 # History
 
+## 2026-11-19 — Complete tight-five classification and independent finite lower bound
+
+Registered the complete primitive and gcd-normalized five-speed equality
+classification at `1/6`, with exactly `[1,2,3,4,5]` and `[1,3,4,5,9]` as primitive
+directions. The proof also gives an independent finite derivation of the
+five-speed lower bound; the earlier Renault proof remains registered.
+
+The original run 44549751944 passed all 250 fresh strict source modules,
+7,586 required theorem endpoints, 7,070 finite frames, the complete raw/private
+axiom audit, and exact stock kernel replay. Every finite source was reproduced
+and the original artifact authenticated. The full five-speed spectrum below
+`1/5` remains incomplete.
+[Exact statements and preserved evidence](docs/verification/loneliness-five-runner-exact-44549751944/README.md).
+
 ## 2026-11-19 — GitHub proof rendering and results index
 
 - Simplified the README results table to directory links and Lean status emoji.
