@@ -110,6 +110,7 @@ theorem every_relation_pair_checked (a b : Fin 50) (hab : a < b) :
   · exact ⟨relationCertificates46 b, relationCertificates46_checked b hab⟩
   · exact ⟨relationCertificates47 b, relationCertificates47_checked b hab⟩
   · exact ⟨relationCertificates48 b, relationCertificates48_checked b hab⟩
-  · omega
+  · change 49 < b.val at hab
+    omega
 
 end Loneliness.FiveSpeedCertificate

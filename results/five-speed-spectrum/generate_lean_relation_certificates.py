@@ -251,7 +251,7 @@ def write_lean(data, directory):
     for a in range(49):
         suffix = f"{a:02d}"
         text += f"  · exact ⟨relationCertificates{suffix} b, relationCertificates{suffix}_checked b hab⟩\n"
-    text += "  · omega\n"
+    text += "  · change 49 < b.val at hab\n    omega\n"
     (directory / "LonelinessFiveSpeedRelationCertificate.lean").write_text(text + end)
     return ["LonelinessFiveSpeedRelationData", *modules,
             "LonelinessFiveSpeedRelationCertificate"]

@@ -33,24 +33,27 @@ theorem exists_projectiveChart (p : ℕ) (hp : p.Prime) (u : Fin 3 → ZMod p) :
         simp [projectiveChart, hlabels, ZMod.natCast_zmod_val, h0, h1]
     · let i : Fin (p + 2) := ⟨p, by omega⟩
       have hlabels : fiberLabels p i = (0, 1) := by simp [fiberLabels, i]
+      have hcancel : u 1 * (u 1)⁻¹ = (1 : ZMod p) := mul_inv_cancel₀ h1
       refine ⟨i, ((u 1)⁻¹ * u 2).val, u 1, ZMod.val_lt _, h1, ?_⟩
       intro j
       fin_cases j <;>
-        simp [projectiveChart, hlabels, ZMod.natCast_zmod_val, h0, h1, ← mul_assoc]
+        simp [projectiveChart, hlabels, ZMod.natCast_zmod_val, h0, h1, ← mul_assoc,
+          hcancel]
   · have hi : ((u 0)⁻¹ * u 1).val < p := ZMod.val_lt _
     let i : Fin (p + 2) := ⟨((u 0)⁻¹ * u 1).val, by omega⟩
     have hlabels : fiberLabels p i = (1, ((u 0)⁻¹ * u 1).val) := by
       simp [fiberLabels, i, hi]
+    have hcancel : u 0 * (u 0)⁻¹ = (1 : ZMod p) := mul_inv_cancel₀ h0
     refine ⟨i, ((u 0)⁻¹ * u 2).val, u 0, ZMod.val_lt _, h0, ?_⟩
     intro j
     fin_cases j <;>
-      simp [projectiveChart, hlabels, ZMod.natCast_zmod_val, h0, ← mul_assoc]
+      simp [projectiveChart, hlabels, ZMod.natCast_zmod_val, h0, ← mul_assoc, hcancel]
 
 theorem integerResidue_eq_val (p : ℕ) (hp : 0 < p) (a : ℤ) :
     integerResidue p a = (a : ZMod p).val := by
   letI : NeZero p := ⟨Nat.ne_of_gt hp⟩
   have h := congrArg Int.toNat (ZMod.val_intCast (n := p) a)
-  simpa [integerResidue] using h.symm
+  simpa only [integerResidue, Int.toNat_natCast] using h.symm
 
 theorem integerResidue_cast (p : ℕ) (hp : 0 < p) (a : ℤ) :
     ((integerResidue p a : ℕ) : ZMod p) = (a : ZMod p) := by
@@ -119,6 +122,11 @@ theorem canonicalProjectiveCover_integer (p : ℕ) (hp : p.Prime) (k : Fin 9)
     exact Or.inl ⟨a, ha, (ZMod.intCast_zmod_eq_zero_iff_dvd _ p).mp hl⟩
   · obtain ⟨t, _, _, hgood⟩ := hwitness
     let m := ((t : ZMod p) * s⁻¹).val
+    have hcancel (r : ZMod p) :
+        ((t : ZMod p) * s⁻¹) * (s * r) = (t : ZMod p) * r := by
+      calc
+        ((t : ZMod p) * s⁻¹) * (s * r) = ((t : ZMod p) * (s⁻¹ * s)) * r := by ring
+        _ = (t : ZMod p) * r := by rw [inv_mul_cancel₀ hs, mul_one]
     apply Or.inr
     refine ⟨m, ?_⟩
     intro d hd
@@ -133,12 +141,7 @@ theorem canonicalProjectiveCover_integer (p : ℕ) (hp : p.Prime) (k : Fin 9)
     have hl := integer_dotProduct_chart p hp.pos u i z s hu (canonicalMaps k j)
     change (((canonicalMaps k *ᵥ u) j : ℤ) : ZMod p) = _ at hl
     rw [hm, hl]
-    calc
-      ((t : ZMod p) * s⁻¹) * (s *
-          (residue3 p (canonicalMaps k j) (fiberLabels p i).1 (fiberLabels p i).2 z : ZMod p)) =
-          ((t : ZMod p) * (s⁻¹ * s)) *
-            (residue3 p (canonicalMaps k j) (fiberLabels p i).1 (fiberLabels p i).2 z : ZMod p) := by ring
-      _ = _ := by rw [inv_mul_cancel₀ hs, mul_one]
+    exact hcancel _
 
 theorem canonicalProjectiveCover_divisor (p : ℕ) (hp : p.Prime) (k : Fin 9)
     (hcover : CanonicalProjectiveCover p k) (u : ThreeIntegerVector)
