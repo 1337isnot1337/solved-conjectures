@@ -1,6 +1,6 @@
 {
   "schema": "lean-all-owned-accepted-snapshot-v1",
-  "source_snapshot_commit": "d49b1c7179818064f2222ad41d94d645879eae10",
+  "source_snapshot_commit": "9bd0e3fe3a25bf3d7c319425a392770aff98a122",
   "spec": {
     "registered_modules": [
       "Solitaire.Counterexample",
@@ -2887,7 +2887,7 @@
     "lean/Conjectures/CutArithmeticSearch.lean": "fe026e6b8b67a4f7cb4610555d36f412f1e4bbc1",
     "lean/Conjectures/CutArithmeticTest.lean": "6f49a07057f33986874bfd2e583e414be1dfd29e",
     "lean/Conjectures/CutFamily.lean": "ed73fed26737fe037821ae0d832ed920c9c0e99f",
-    "lean/Conjectures/CutFamilyBase.lean": "7e93d362a857a5a96736cf56c3bdeba13cde98ad",
+    "lean/Conjectures/CutFamilyBase.lean": "75327be7ec61084a1015a41b3b6fa22a9e989bec",
     "lean/Conjectures/CutFamilyBlocks.lean": "cace66feac62ffcb668b7217eee1ac8b6127cdda",
     "lean/Conjectures/CutFamilyCover.lean": "6637959791508fc90313872ca46b501b8c50570c",
     "lean/Conjectures/CutFamilyGame.lean": "a4db639728be944e7fc34fd9984574751bc2eabd",
@@ -3768,7 +3768,7 @@
     "scripts/verify_lean_all_owned_candidate.py": "375ab886d839c4b95b44e24f330232d7c2daf386",
     "scripts/verify_lean_parallel_candidate.py": "9d35435260717e4d2ab81e372dea07d29bdf6823"
   },
-  "scope": "Fresh strict source, every owned and serialized private declaration, and unchanged stock kernel replay for the complete accepted closure under the explicitly recorded isolated legacy-import compatibility configuration and validator. All mathematical sources, public configuration, public validator, accepted roots and historical accepted audit remain unchanged. No project objects are reused.",
+  "scope": "Fresh strict source, every owned and serialized private declaration, and unchanged stock kernel replay for the complete accepted closure under the explicitly recorded isolated legacy-import compatibility configuration and validator. Every mathematical source is copied byte-for-byte from this declared input inventory. Public configuration, public validator, accepted roots and historical accepted audit remain unchanged. No project objects are reused.",
   "provenance": {
     "scheduler": {
       "run_id": 44517460330,
@@ -3803,6 +3803,15 @@
       "phase": "source",
       "cause": "Lake --wfail rejected a legacy-to-modern Mathlib import advisory on Conjectures.Denominator. No theorem/type error was reported. Audit and replay did not run.",
       "log": "docs/verification/lean-gate-fixtures-44521485169/Denominator-source.log"
+    },
+    "prior_full_source_warning": {
+      "commit": "86dc4f5ed7439e06ed7bcb523c80b927145cb03f",
+      "run_id": 44524252371,
+      "job_id": 135560530442,
+      "receipt_sha256": "47cb47a4bc5179fc81f1e474a4c35e79b0ae52c410e83db881f47bc864019038",
+      "artifact_id": 14529077952,
+      "archive_sha256": "e65f64d9174bfb808cdedaa39c565012d0d868ae7f3f3d5459417f517c48272b",
+      "scope": "The 888-module strict-source phase stopped at CutFamilyBase line 158's unnecessary sequence-focus tactic warning. No audit or kernel success is claimed for that run."
     }
   },
   "resource_plan": {
@@ -3846,5 +3855,15 @@
       "public_validator_unchanged": true,
       "scope": "Every other accepted source-layout, root, import, package and compiler-argument check is unchanged."
     }
-  }
+  },
+  "declared_source_updates": [
+    {
+      "path": "lean/Conjectures/CutFamilyBase.lean",
+      "base_blob": "7e93d362a857a5a96736cf56c3bdeba13cde98ad",
+      "new_blob": "75327be7ec61084a1015a41b3b6fa22a9e989bec",
+      "new_sha256": "bec5d02a518d1cc453ee4c6a715106e91f91c0b59ed403a464d5307c4ae1cc7f",
+      "change": "Replace (norm_num at * <;> omega) by (norm_num at *; omega), exactly one line, to satisfy the reached strict tactic style linter.",
+      "scope": "source_snapshot_commit records the base tree; input_blob_sha records the exact post-update candidate inputs."
+    }
+  ]
 }

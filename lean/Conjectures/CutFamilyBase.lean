@@ -155,7 +155,7 @@ theorem special_spec (x d : Nat) (hx : 4 ≤ x) (hd : d < 8) :
     code x (specialA x d) ^^^ code x (specialB x d) = d := by
   interval_cases d <;> simp (disch := omega) [specialA,specialB,cost,code]
   all_goals try split_ifs
-  all_goals first | omega | (norm_num at * <;> omega)
+  all_goals first | omega | (norm_num at *; omega)
 
 theorem special_xor (x d : Nat) (hx : 4 ≤ x) (hd : d < 8) :
     value x (specialA x d) ^^^ value x (specialB x d) = d ^^^ (cost x d%2) := by
