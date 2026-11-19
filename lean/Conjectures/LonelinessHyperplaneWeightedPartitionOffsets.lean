@@ -25,7 +25,6 @@ def shiftedWeightedPartitionEquiv
   by_cases hoffset : offset ≤ n
   · let e₁ : shiftedWeightedPartition a offset n ≃ weightedPartition a (n - offset) :=
       Equiv.subtypeEquivRight (fun x => by
-        change (∑ i, a i * x i) + offset = n ↔ (∑ i, a i * x i) = n - offset
         omega)
     let e₂ := weightedPartitionEquiv a ha M hM hdiv (n - offset)
     let e₃ : (Σ r : remainderVectors a M,
@@ -33,8 +32,6 @@ def shiftedWeightedPartitionEquiv
         Σ r : remainderVectors a M,
           shiftedWeakComposition (ι := ι) M (remainderWeight a M r + offset) n :=
       Equiv.sigmaCongrRight (fun r => Equiv.subtypeEquivRight (fun q => by
-        change M * (∑ i, q i) + remainderWeight a M r = n - offset ↔
-          M * (∑ i, q i) + (remainderWeight a M r + offset) = n
         omega))
     exact e₁.trans (e₂.trans e₃)
   · letI : IsEmpty (shiftedWeightedPartition a offset n) := ⟨by
@@ -45,13 +42,14 @@ def shiftedWeightedPartitionEquiv
       ⟨by rintro ⟨q, hq⟩; omega⟩
     exact Equiv.equivOfIsEmpty _ _
 
+omit [DecidableEq ι] [Nonempty ι] in
 theorem shiftedWeightedPartition_card_eq_sum
     (a : ι → ℕ) (ha : ∀ i, 0 < a i) (M : ℕ) (hM : 0 < M)
     (hdiv : ∀ i, a i ∣ M) (offset n : ℕ) :
     Nat.card (shiftedWeightedPartition a offset n) =
       ∑ r : remainderVectors a M,
         Nat.card (shiftedWeakComposition (ι := ι) M (remainderWeight a M r + offset) n) := by
-  letI (r : remainderVectors a M) :
+  let (r : remainderVectors a M) :
       Finite (shiftedWeakComposition (ι := ι) M (remainderWeight a M r + offset) n) :=
     shiftedWeakComposition_finite M (remainderWeight a M r + offset) n hM
   rw [Nat.card_congr (shiftedWeightedPartitionEquiv a ha M hM hdiv offset n), Nat.card_sigma]
@@ -61,6 +59,7 @@ def subsetWeight (a : ι → ℕ) (S : Finset ι) : ℕ := ∑ i ∈ S, a i
 def upperViolationPartition (a : ι → ℕ) (n N : ℕ) (S : Finset ι) : Type _ :=
   {x : weightedPartition a n // ∀ i ∈ S, N < x.1 i}
 
+omit [Nonempty ι] in
 private theorem sum_subset_indicator (a : ι → ℕ) (S : Finset ι) (L : ℕ) :
     (∑ i, if i ∈ S then L * a i else 0) = L * subsetWeight a S := by
   classical
@@ -143,11 +142,12 @@ theorem remainderWeight_add_subsetWeight_lt
   have hpoint : ∀ i, a i * (r i : ℕ) + a i ≤ M := by
     intro i
     have h := Nat.mul_le_mul_left (a i) (Nat.succ_le_of_lt (r i).isLt)
-    simpa only [Nat.mul_add, Nat.mul_one, Nat.mul_div_cancel' (hdiv i)] using h
+    simpa only [Nat.succ_eq_add_one, Nat.mul_add, Nat.mul_one,
+      Nat.mul_div_cancel' (hdiv i)] using h
   have hsum : remainderWeight a M r + (∑ i, a i) ≤ Fintype.card ι * M := by
     have h := Finset.sum_le_sum (fun i (_ : i ∈ (Finset.univ : Finset ι)) => hpoint i)
     simpa only [Finset.sum_add_distrib, Finset.sum_const, Finset.card_univ,
-      nsmul_eq_mul, remainderWeight] using h
+      nsmul_eq_mul, Nat.cast_id, remainderWeight] using h
   omega
 
 theorem upperViolationPartition_card_zero
@@ -155,11 +155,14 @@ theorem upperViolationPartition_card_zero
     (hS : c ≤ subsetWeight a S) :
     Nat.card (upperViolationPartition a (c * N) N S) = 0 := by
   rw [Nat.card_congr (upperViolationPartitionEquiv a (c * N) N S)]
-  letI : IsEmpty (shiftedWeightedPartition a ((N + 1) * subsetWeight a S) (c * N)) :=
+  let : IsEmpty (shiftedWeightedPartition a ((N + 1) * subsetWeight a S) (c * N)) :=
     ⟨by
       rintro ⟨x, hx⟩
       have hmul := Nat.mul_le_mul_left (N + 1) hS
-      nlinarith⟩
+      have hsum : (N + 1) * subsetWeight a S ≤ c * N := by omega
+      have hcontra := hmul.trans hsum
+      rw [Nat.add_mul, Nat.one_mul, Nat.mul_comm N c] at hcontra
+      omega⟩
   exact Nat.card_of_isEmpty
 
 theorem upperViolationPartition_card_eq_shifted_sum
@@ -177,9 +180,6 @@ theorem upperViolationPartition_card_eq_shifted_sum
   apply Nat.card_congr
   apply Equiv.subtypeEquivRight
   intro q
-  change M * (∑ i, q i) + (remainderWeight a M r + (N + 1) * subsetWeight a S) = c * N ↔
-    M * (∑ i, q i) + (remainderWeight a M r + subsetWeight a S) =
-      (c - subsetWeight a S) * N
   have hc : c = (c - subsetWeight a S) + subsetWeight a S :=
     (Nat.sub_add_cancel hS.le).symm
   constructor <;> intro h <;> nlinarith
