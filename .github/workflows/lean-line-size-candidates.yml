@@ -1,0 +1,77 @@
+name: Lean line-size candidate proofs
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'lean/Conjectures/LineSize*.lean'
+      - 'lean/Conjectures/LineSizeImported/**'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/verify_line_size_candidate.py'
+      - 'scripts/verify_lean_candidate.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - '.github/workflows/lean-line-size-candidates.yml'
+  pull_request:
+    paths:
+      - 'lean/Conjectures/LineSize*.lean'
+      - 'lean/Conjectures/LineSizeImported/**'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/verify_line_size_candidate.py'
+      - 'scripts/verify_lean_candidate.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - '.github/workflows/lean-line-size-candidates.yml'
+
+permissions:
+  contents: read
+
+env:
+  LEAN_NUM_THREADS: '1'
+
+jobs:
+  plan:
+    name: Select affected line-size proofs
+    runs-on: ubuntu-latest
+    outputs:
+      tasks: ${{ steps.plan.outputs.tasks }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: plan
+        run: python3 scripts/verify_line_size_candidate.py --plan-ci
+
+  candidates:
+    name: Line-size candidate ${{ matrix.task }}
+    needs: plan
+    if: needs.plan.outputs.tasks != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        task: ${{ fromJSON(needs.plan.outputs.tasks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Build, audit, and replay the exact project closure
+        run: python3 scripts/verify_line_size_candidate.py '${{ matrix.task }}'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: line-size-${{ matrix.task }}-receipt
+          path: .candidate-artifacts/line-size-${{ matrix.task }}/receipt.json
+          if-no-files-found: warn
+          retention-days: 7
