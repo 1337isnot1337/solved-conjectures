@@ -38,7 +38,8 @@ theorem quadraticFixedField479_coordinates (v : K) (hv : v ∈ quadraticFixedFie
     intro a ha
     apply quadraticGenerator479_not_rational K a
     have h := congrArg (fun x : quadraticFixedField479 K => (x : K)) ha
-    simpa only [Algebra.smul_def, mul_one, IntermediateField.coe_algebraMap_apply,
+    simpa only [IntermediateField.coe_smul, IntermediateField.coe_one,
+      Algebra.smul_def, mul_one,
       quadraticGeneratorInFixed479, g] using h
   have hcard : Fintype.card (Fin 2) = Module.finrank ℚ (quadraticFixedField479 K) := by
     rw [Fintype.card_fin, quadraticFixedField479_degree K]
@@ -50,8 +51,9 @@ theorem quadraticFixedField479_coordinates (v : K) (hv : v ∈ quadraticFixedFie
     simpa only [Fin.sum_univ_two, B, coe_basisOfLinearIndependentOfCardEqFinrank,
       Matrix.cons_val_zero, Matrix.cons_val_one] using h
   have he' := congrArg (fun x : quadraticFixedField479 K => (x : K)) he
-  simpa only [IntermediateField.coe_add, Algebra.smul_def, mul_one,
-    IntermediateField.coe_algebraMap_apply, quadraticGeneratorInFixed479, g, w] using he'.symm
+  simpa only [IntermediateField.coe_add, IntermediateField.coe_smul,
+    IntermediateField.coe_one, Algebra.smul_def, mul_one,
+    quadraticGeneratorInFixed479, g, w] using he'.symm
 
 theorem conjugate_of_quadratic_coordinates (v : K) (a b : ℚ)
     (hv : v = (a : K) + (b : K) * quadraticGenerator479 K) :

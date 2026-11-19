@@ -24,6 +24,7 @@ def cyclotomicAddChar479 : AddChar (ZMod 479) K :=
 
 def quadraticGenerator479 : K := gaussSum (quadraticChar479 K) (cyclotomicAddChar479 K)
 
+omit [NumberField K] [IsCyclotomicExtension {479} ℚ K] in
 theorem quadraticChar479_neg_one : quadraticChar479 K (-1) = -1 := by
   have h : quadraticChar (ZMod 479) (-1) = -1 := by
     rw [quadraticChar_eq_pow_of_char_ne_two
@@ -34,6 +35,7 @@ theorem quadraticChar479_neg_one : quadraticChar479 K (-1) = -1 := by
   simp only [quadraticChar479, MulChar.ringHomComp_apply, h,
     Int.coe_castRingHom, Int.cast_neg, Int.cast_one]
 
+omit [NumberField K] [IsCyclotomicExtension {479} ℚ K] in
 theorem quadraticChar479_residueUnit : quadraticChar479 K (residueUnit : ZMod 479) = 1 := by
   have h : quadraticChar (ZMod 479) (599 : ZMod 479) = 1 := by
     rw [quadraticChar_eq_pow_of_char_ne_two
@@ -43,6 +45,7 @@ theorem quadraticChar479_residueUnit : quadraticChar479 K (residueUnit : ZMod 47
   simp only [quadraticChar479, MulChar.ringHomComp_apply, coe_residueUnit,
     h, Int.coe_castRingHom, Int.cast_one]
 
+omit [IsCyclotomicExtension {479} ℚ K] in
 theorem quadraticChar479_nontrivial : quadraticChar479 K ≠ 1 := by
   intro h
   have hh := quadraticChar479_neg_one K

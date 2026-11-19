@@ -36,7 +36,7 @@ theorem indicator_exists_nonconstant [Nonempty I] [Fintype G] [AddCommGroup G]
   · have hfull : negativeBlock H i j = Finset.univ := by
       by_contra hp
       exact hn ⟨i, j, hne, hp⟩
-    simpa only [indicatorFourierBlock, hfull] using
+    simpa only [indicatorFourierBlock, hfull, Matrix.zero_apply] using
       nontrivial_character_sum_zero χ hχ
   · have he := Finset.not_nonempty_iff_eq_empty.mp hne
     simp [indicatorFourierBlock, he]

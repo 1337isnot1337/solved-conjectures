@@ -53,7 +53,10 @@ TASKS = {'arithmetic': ('Conjectures.HadamardAutomorphismArithmeticCandidates',
                'HadamardAutomorphism.indicator_nonzero_mod_prime599',
                'HadamardAutomorphism.cyclic_integer_hadamard_impossible',
                'HadamardAutomorphism.hadamard_signed_pair_order_ne_479',
-               'HadamardAutomorphism.hadamard_automorphism_card_not_dvd_479'])}
+               'HadamardAutomorphism.hadamard_automorphism_card_not_dvd_479',
+               'HadamardAutomorphism.isHadamard_automorphism_card_not_dvd_479']),
+ 'class_order': ('Conjectures.HadamardAutomorphismClassOrder',
+                 ['HadamardAutomorphism.exists_prime_above599_class_order_five'])}
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-automorphism-candidates.yml',
  'lean/lake-manifest.json',

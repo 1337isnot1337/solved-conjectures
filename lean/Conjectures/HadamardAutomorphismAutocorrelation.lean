@@ -25,7 +25,7 @@ theorem support_shift_sum (χ : AddChar (ZMod q) R) (D : Finset (ZMod q))
   have h := Fintype.sum_equiv (Equiv.addLeft x)
     (fun g => if x + g ∈ D then χ g else 0)
     (fun y => if y ∈ D then χ (y - x) else 0)
-    (by intro g; simp [add_comm])
+    (by intro g; simp)
   have hr : (∑ y : ZMod q, if y ∈ D then χ (y - x) else 0) =
       ∑ y ∈ D, χ (y - x) := by
     rw [← Finset.sum_filter, Finset.filter_mem_eq_inter, Finset.univ_inter]
@@ -92,8 +92,12 @@ theorem supportFourier479_norm_coefficients (D : Finset (ZMod 479)) :
     supportFourier479 K D * (conjugation479 K • supportFourier479 K D) =
       ∑ i : Fin 479, (binaryAutocorrelation D i : ℤ) •
         (zeta_spec 479 ℚ K).toInteger ^ (i : ℕ) := by
-  simpa only [integerCyclotomicChar479_apply, natCast_zsmul] using
-    supportFourier479_norm K D
+  rw [supportFourier479_norm]
+  symm
+  apply Fintype.sum_equiv (Equiv.refl _ : Fin 479 ≃ ZMod 479)
+  intro i
+  simp only [Equiv.refl_apply, integerCyclotomicChar479_apply, natCast_zsmul]
+  rfl
 
 theorem supportFourier479_norm_dvd_forces_constant (D : Finset (ZMod 479))
     (hdiv : (599 : 𝓞 K) ∣
@@ -104,12 +108,14 @@ theorem supportFourier479_norm_dvd_forces_constant (D : Finset (ZMod 479))
   let C : Fin 479 → ℤ := fun i => (binaryAutocorrelation D i : ℤ)
   have hlow (i : Fin 479) : 0 ≤ C i := Int.natCast_nonneg _
   have hhigh (i : Fin 479) : C i ≤ 479 := by
+    change (binaryAutocorrelation D i : ℤ) ≤ 479
     exact_mod_cast binaryAutocorrelation_le_modulus D i
   have hall := cyclotomic_coefficients_equal_of_bounds599 (zeta_spec 479 ℚ K)
     C hlow hhigh hdiv
   have heq : binaryAutocorrelation D 1 = binaryAutocorrelation D 0 := by
-    exact_mod_cast (show (binaryAutocorrelation D 1 : ℤ) =
-      (binaryAutocorrelation D 0 : ℤ) by simpa only [C] using hall 1 0)
+    have heqZ := hall (1 : ZMod 479) (0 : ZMod 479)
+    change (binaryAutocorrelation D 1 : ℤ) = (binaryAutocorrelation D 0 : ℤ) at heqZ
+    exact_mod_cast heqZ
   by_cases hne : D.Nonempty
   · right
     by_contra hproper

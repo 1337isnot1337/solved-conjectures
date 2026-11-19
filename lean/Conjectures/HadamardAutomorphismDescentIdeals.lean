@@ -17,6 +17,7 @@ variable (K : Type*) [Field K] [NumberField K]
 
 local instance : Fact (Nat.Prime 599) := ⟨prime_599⟩
 
+omit [IsCyclotomicExtension {479} ℚ K] in
 theorem prime_liesOver599_of_contains_divisor (u : 𝓞 K) (hu : u ≠ 0)
     (r : ℕ) (hu599 : u ∣ (599 : 𝓞 K) ^ r)
     (P : Ideal (𝓞 K)) (hP : P ∈ normalizedFactors (Ideal.span {u})) :
@@ -62,7 +63,7 @@ theorem frobenius479_fixes_divisor_ideal (u : 𝓞 K) (hu : u ≠ 0)
       Multiset.smul_prod'
     _ = (normalizedFactors (Ideal.span {u})).prod := by
       congr 1
-      simpa only [Multiset.map_id] using Multiset.map_congr rfl hf
+      exact (Multiset.map_congr rfl hf).trans (Multiset.map_id' _)
     _ = Ideal.span {u} := Ideal.prod_normalizedFactors_eq_self hI
 
 theorem frobenius479_associated (u : 𝓞 K) (hu : u ≠ 0)

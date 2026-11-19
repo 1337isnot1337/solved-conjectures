@@ -132,7 +132,7 @@ theorem signMatrixOver_conjTranspose_mul [Fintype I] [DecidableEq I]
   simpa [Matrix.transpose_apply, Matrix.smul_apply, Matrix.one_apply, signMatrixOver,
     integerSignMatrix] using hcol i k
 
-variable (K : Type*) [Field K] [NumberField K]
+variable (K : Type*) [Field K]
 
 /-- The actual sign matrix in the ring of integers of a number field. -/
 noncomputable abbrev numberRingSignMatrix (H : Matrix I I ℝ) : Matrix I I (𝓞 K) :=

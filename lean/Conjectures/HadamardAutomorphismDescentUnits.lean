@@ -44,7 +44,8 @@ theorem frobenius_ratio_root (u : 𝓞 K) (hu : u ≠ 0)
     have h := congrArg (fun x : 𝓞 K => (x : K)) hε
     simpa only [Subalgebra.coe_mul, mul_comm] using h.symm
   have hn (φ : K →+* ℂ) : ‖φ (ε : K)‖ = 1 := by
-    have hu0 : φ (u : K) ≠ 0 := φ.injective.ne (by simpa using hu)
+    have hu0 : φ (u : K) ≠ 0 :=
+      (map_ne_zero_iff φ φ.injective).mpr (RingOfIntegers.coe_ne_zero_iff.mpr hu)
     have he := norm_embedding_eq_of_norm_cube K (u : K) hnorm
       (φ.comp (frobenius479 K).toRingHom) φ
     change ‖φ (frobenius479 K (u : K))‖ = ‖φ (u : K)‖ at he
@@ -62,6 +63,7 @@ theorem frobenius_ratio_root (u : 𝓞 K) (hu : u ≠ 0)
   rw [ht] at hd
   exact ⟨ε, heq, orderOf_dvd_iff_pow_eq_one.mp hd⟩
 
+omit [IsCyclotomicExtension {479} ℚ K] in
 theorem automorphism_neg_eigenvector_iterate (σ : K ≃ₐ[ℚ] K) (x : K)
     (hx : σ x = -x) (n : ℕ) : (σ ^ n) x = (-1 : K) ^ n * x := by
   induction n with
