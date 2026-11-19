@@ -1,0 +1,52 @@
+name: Lean Frankl reconstructed residual tail
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'lean/Conjectures/FranklSpanFourResidual*.lean'
+      - 'docs/frankl-residual-tail-recovery-sources.json'
+      - 'scripts/verify_frankl_residual_tail.py'
+      - 'results/frankl-generator-families/generate_span_four_residual_tail.py'
+      - '.github/workflows/lean-frankl-residual-tail.yml'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+  pull_request:
+    paths:
+      - 'lean/Conjectures/FranklSpanFourResidual*.lean'
+      - 'docs/frankl-residual-tail-recovery-sources.json'
+      - 'scripts/verify_frankl_residual_tail.py'
+      - 'results/frankl-generator-families/generate_span_four_residual_tail.py'
+      - '.github/workflows/lean-frankl-residual-tail.yml'
+
+permissions:
+  contents: read
+
+env:
+  LEAN_NUM_THREADS: '1'
+
+jobs:
+  tail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce the unchanged original finder data and generated sources
+        run: python3 results/frankl-generator-families/generate_span_four_residual_tail.py --check --output .candidate-artifacts/tail-preflight.json
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Strict source, all-declaration axiom audit, exact stock replay
+        run: python3 scripts/verify_frankl_residual_tail.py tail
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frankl-reconstructed-residual-tail
+          path: .candidate-artifacts/frankl-residual-tail/
+          if-no-files-found: warn
+          retention-days: 14
