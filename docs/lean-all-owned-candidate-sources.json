@@ -9,13 +9,13 @@
     },
     {
       "path": "scripts/test_lean_all_owned.py",
-      "blob_sha": "8a7ec7c759925d689d26968d511f862cee5a912b",
-      "sha256": "c691069805bc9bad10a3b67c3302c9cfdd886f72902f745ba9a3aba4e7966348"
+      "blob_sha": "e6db1d5345748583e15b598d8695273105247d60",
+      "sha256": "920788461ebd17dd3bd044656985be47699845efe4970970b387b35f010b0bec"
     },
     {
       "path": "scripts/verify_lean_all_owned_candidate.py",
-      "blob_sha": "4cc82cc03558613baf0675a84140c7facd77430b",
-      "sha256": "c4e92b94f3520694e2046a8114fe4c289ee3a53d37ca8067a655aad2068c1b26"
+      "blob_sha": "375ab886d839c4b95b44e24f330232d7c2daf386",
+      "sha256": "ec7782d9d24a71290137f32bb4672f151ffb0916eba7b6326d62241a37937bae"
     },
     {
       "path": ".github/workflows/lean-all-owned-candidate.yml",
@@ -79,9 +79,10 @@
     "kernel": "One unchanged pinned stock checker on the exact complete materialized closure, including both namespace roots, with exact replay-set equality and unchanged fresh source/object/checker/compiler hashes.",
     "negative_fixture": "A separate audit removes Classical.choice only from its test whitelist and must reject the unused private definition that uses it; the production whitelist is unchanged.",
     "no_reuse": "Every fixture or accepted run starts from fresh project source builds; no old project objects or proof receipts are reused.",
-    "legacy_configuration": "Optional --allow-legacy-module-imports adds only top-level allowNonModules=true in the isolated copied Lake config, with original and derived UTF-8 bytes and SHA256 recorded. It retains Lake --wfail and leaves the public configuration and all mathematical source bytes unchanged."
+    "legacy_configuration": "Optional --allow-legacy-module-imports adds only top-level allowNonModules=true in the isolated copied Lake config, with original and derived UTF-8 bytes and SHA256 recorded. It retains Lake --wfail and leaves the public configuration and all mathematical source bytes unchanged.",
+    "legacy_layout_validator": "The isolated parser copy admits only the added boolean-true allowNonModules key. Every other strict layout check is unchanged; original/derived parser UTF-8 and SHA256 are recorded. Public plan_accepted_lean.py stays unchanged. The copied source and replay processes use this same frozen derived parser."
   },
-  "protocol_tests": 14,
+  "protocol_tests": 15,
   "initial_scheduler_evidence": {
     "commit": "505bc263f929f5924286b2dd0e95b6ef86efb020",
     "run_id": 44517460330,
@@ -110,7 +111,7 @@
     "accepted": "The same command with --accepted; launch only after coordination with the existing complete accepted-package verification run."
   },
   "limitations": [
-    "The prior all-owned fixture passed. The new derived-configuration legacy-Mathlib regression is not yet checked.",
+    "The original all-owned fixture passed. The first derived-configuration attempt passed14 protocol tests then stopped at the unchanged layout whitelist before source work. This revision derives a narrowly scoped validator and awaits a fresh15-test source/audit/kernel pass.",
     "No complete accepted-closure all-owned verification is claimed by a small fixture pass.",
     "The derived isolated Lake configuration is recorded explicitly; it must not be described as an unchanged-configuration full replay.",
     "Stock kernel thread/RSS guards and fresh exact source/object closure checks are unchanged."
@@ -141,5 +142,13 @@
     "phase": "source",
     "cause": "Lake --wfail rejected its legacy-to-modern Mathlib import advisory on Conjectures.Denominator. No theorem/type error was reported; audit and kernel replay did not run.",
     "source_log": "docs/verification/lean-gate-fixtures-44521485169/Denominator-source.log"
+  },
+  "prior_legacy_layout_failure": {
+    "run_id": 44523219000,
+    "job_id": 135556942262,
+    "commit": "1ed8b54ec15b5028f75e22f0251f81f246a117dc",
+    "phase": "copied-layout preflight",
+    "cause": "The unchanged public layout validator rejects extra TOML keys, including the documented compatibility opt-in.",
+    "source_started": false
   }
 }

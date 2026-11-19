@@ -97,6 +97,52 @@ def legacy_compatible_config(original):
     return derived
 
 
+def legacy_compatible_validator(original):
+    """Permit the documented opt-in only in the copied strict layout validator."""
+    old = b'    if set(config) - {"name", "version", "defaultTargets", "require", "lean_lib"}:\n'
+    new = (
+        b'    if "allowNonModules" in config and config["allowNonModules"] is not True:\n'
+        b'        raise ValueError("Candidate allowNonModules must be the boolean true")\n'
+        b'    if set(config) - {"name", "version", "defaultTargets", "require", "lean_lib", "allowNonModules"}:\n')
+    if original.count(old) != 1:
+        raise ValueError("The reviewed original layout-validator guard changed")
+    return original.replace(old, new, 1)
+
+
+def validator_record(original, derived, enabled):
+    expected = legacy_compatible_validator(original) if enabled else original
+    if derived != expected:
+        raise ValueError("Staged layout validator differs from its declared transformation")
+    return {
+        "source_path": "scripts/plan_accepted_lean.py",
+        "original_utf8": original.decode("utf-8"),
+        "derived_utf8": derived.decode("utf-8"),
+        "original_sha256": hashlib.sha256(original).hexdigest(),
+        "derived_sha256": hashlib.sha256(derived).hexdigest(),
+        "only_change": "Permit root allowNonModules only when exactly boolean true" if enabled else "none",
+        "public_validator_unchanged": True,
+        "scope": "Every other accepted source-layout, root, import, package and compiler-argument check is unchanged.",
+    }
+
+
+def isolated_scope_plan(repo, modules):
+    # A fresh interpreter imports the copied validator used by source and replay.
+    code = (
+        "import json,sys; from pathlib import Path; "
+        "sys.path.insert(0,str(Path(sys.argv[1])/'scripts')); "
+        "import build_lean_parallel as b; "
+        "g,p,e,x=b.scope_plan(Path(sys.argv[1]),json.loads(sys.argv[2])); "
+        "print(json.dumps({'graph':{k:sorted(v) for k,v in g.items()},"
+        "'prefixes':p,'external':sorted(e),'extra':sorted(x)}))")
+    result = subprocess.run([sys.executable, "-c", code, str(repo), json.dumps(modules)],
+                            cwd=repo, capture_output=True, text=True, timeout=60)
+    if result.returncode != 0:
+        raise ValueError("Copied scope-plan validator failed: " + result.stderr)
+    parsed = json.loads(result.stdout)
+    return ({name: set(values) for name, values in parsed["graph"].items()},
+            parsed["prefixes"], set(parsed["external"]), set(parsed["extra"]))
+
+
 def configuration_record(original, derived, enabled):
     expected = legacy_compatible_config(original) if enabled else original
     if derived != expected:
@@ -130,6 +176,8 @@ def prepare_repo(destination, sources, spec, cache, accepted, *, allow_legacy_mo
     if allow_legacy_module_imports:
         config = lean / "lakefile.toml"
         config.write_bytes(legacy_compatible_config(config.read_bytes()))
+        validator = destination / "scripts/plan_accepted_lean.py"
+        validator.write_bytes(legacy_compatible_validator(validator.read_bytes()))
     text = audit.audit_source(spec["modules"], spec["required"], spec["legacy_prefixes"])
     (lean / "AllOwnedProofAudit.lean").write_text(text, encoding="utf-8")
     if not accepted:
@@ -252,7 +300,7 @@ def main(argv=None):
             [sys.executable, str(ROOT / "scripts/test_lean_all_owned.py")],
             cwd=ROOT, output=output, memory_limit_mib=args.memory_limit_mib, timeout_seconds=300)
         tests = (output / "protocol-tests.log").read_text()
-        if not re.search(r"Ran 14 tests in", tests) or not re.search(r"^OK$", tests, re.MULTILINE):
+        if not re.search(r"Ran 15 tests in", tests) or not re.search(r"^OK$", tests, re.MULTILINE):
             raise ValueError("Complete all-owned protocol test suite did not pass")
         remember_evidence([output / "protocol-tests.log"], output, evidence)
         lean = prepare_repo(output / "repo", sources, spec, cache, args.accepted,
@@ -261,7 +309,11 @@ def main(argv=None):
             (ROOT / "lean/lakefile.toml").read_bytes(), (lean / "lakefile.toml").read_bytes(),
             args.allow_legacy_module_imports)
         receipt["legacy_mathlib_fixture"] = not args.accepted and args.allow_legacy_module_imports
-        graph, _, _, extra = build.scope_plan(lean.parent, spec["registered_modules"])
+        receipt["isolated_layout_validator"] = validator_record(
+            (ROOT / "scripts/plan_accepted_lean.py").read_bytes(),
+            (lean.parent / "scripts/plan_accepted_lean.py").read_bytes(),
+            args.allow_legacy_module_imports)
+        graph, _, _, extra = isolated_scope_plan(lean.parent, spec["registered_modules"])
         if set(graph) != set(sources):
             raise ValueError("Copied accepted source inventory differs")
         audit_files = {"lean/AllOwnedProofAudit.lean", *OWN_INPUTS[:3]}

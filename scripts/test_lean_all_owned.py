@@ -35,6 +35,23 @@ def log(records):
 
 
 class ProtocolTests(unittest.TestCase):
+    def test_staged_validator_retains_other_layout_rejections(self):
+        original = (
+            b"def validate(config):\n"
+            b'    if set(config) - {"name", "version", "defaultTargets", "require", "lean_lib"}:\n'
+            b'        raise ValueError("unsupported")\n')
+        derived = runner.legacy_compatible_validator(original)
+        namespace = {}
+        exec(compile(derived, "<candidate-layout-fixture>", "exec"), namespace)
+        namespace["validate"]({"name": "fixture", "allowNonModules": True})
+        for config in ({"allowNonModules": False}, {"allowNonModules": "true"},
+                       {"allowNonModules": 1}, {"allowNonModules": True, "srcDir": "outside"}):
+            with self.subTest(config=config), self.assertRaises(ValueError):
+                namespace["validate"](config)
+        receipt = runner.validator_record(original, derived, True)
+        self.assertEqual(receipt["original_utf8"].encode(), original)
+        self.assertEqual(receipt["derived_utf8"].encode(), derived)
+
     def test_legacy_config_changes_only_documented_opt_in(self):
         original = b'name = "fixture"\n[[lean_lib]]\nname = "Conjectures"\nmoreLeanArgs = ["-j1"]\n'
         before = tomllib.loads(original.decode())
