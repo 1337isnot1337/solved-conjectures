@@ -46,7 +46,7 @@ theorem rowsInProduct149_correlation (S : AddSubgroup G)
   unfold combinedCorrelation149 combinedCorrelationOn
   apply Finset.sum_congr rfl
   intro i _
-  rw [← Fintype.sum_prod_type]
+  rw [← Fintype.sum_prod_type']
   apply Fintype.sum_equiv e.symm.toEquiv
   intro x
   change F i (e.symm (x + (h, t))) * F i (e.symm x) =
@@ -176,7 +176,11 @@ noncomputable def multiplierGroupEquiv149 (S : AddSubgroup G)
       u.property⟩
     invFun := fun v => ⟨φ.symm v.val,
       (conjugated_multiplier_mem_iff S hS hindex F (φ.symm v.val)).mp
-        (by simpa only [φ.apply_symm_apply] using v.property)⟩
+        (by
+          change φ (φ.symm v.val) ∈
+            commonMultiplierGroup149 (rowsInProduct149 S hS hindex F)
+          rw [φ.apply_symm_apply]
+          exact v.property)⟩
     left_inv := fun u => Subtype.ext (φ.symm_apply_apply u.val)
     right_inv := fun v => Subtype.ext (φ.apply_symm_apply v.val)
     map_mul' := fun u v => Subtype.ext (φ.map_mul u.val v.val) }
