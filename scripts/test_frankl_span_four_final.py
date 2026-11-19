@@ -251,77 +251,141 @@ class FinalCompositionProtocol(unittest.TestCase):
                 gate.checked_set(values, ["Conjectures.Fixture"], "Test inventory")
 
 
+
     def raw_audit_fixture(self):
-        import json
-        import audit_lean_owned_extension as owned_audit
-        modules = ["Conjectures.Dependency", "Conjectures.Assembly"]
-        fresh = ["Conjectures.Assembly"]
-        hidden = "_private.Conjectures.Dependency.0.hidden"
-        endpoint = "Assembly.endpoint"
+        import test_audit_lean_raw_occurrences as fixtures
+        data = fixtures.fixture()
+        modules = data["modules"]
+        fresh = [fixtures.A]
         model = {"source_sha256": {module: "1" * 64 for module in modules},
-                 "required_by_module": {fresh[0]: [endpoint]}}
-        records = []
-        for module, name, private in [(modules[0], hidden, True), (modules[1], endpoint, False)]:
-            records.append({"tag": "import", "module": module, "owned": True})
-            records.append({"tag": "module", "module": module, "modern": True,
-                            "import_all": True, "has_data": True, "names": [name],
-                            "private_count": int(private)})
-            records.append({"tag": "declaration", "name": name, "owner": module,
-                            "kind": "definition" if private else "theorem",
-                            "private_user_name": "Dependency.hidden" if private else None,
-                            "by_module": True, "by_serialized": True, "axioms": []})
-        records.append({"tag": "required", "name": endpoint, "owner": fresh[0]})
-        records.append({"tag": "passed", "imported_modules": 2, "owned_modules": 2,
-                        "declarations": 2, "theorems": 1, "private_declarations": 1,
-                        "raw_declarations": 2, "required_theorems": 1,
-                        "allowed_axioms": list(owned_audit.ALLOWED)})
-        def render(rows):
-            return "\n".join(owned_audit.MARKER + json.dumps(row) for row in rows)
-        return model, modules, fresh, records, render
+                 "required_by_module": {fixtures.A: [fixtures.TARGET]}}
+        return model, modules, fresh, data, lambda: fixtures.encode(data, True)
 
     def test_full_audit_keeps_dependency_without_named_endpoint(self):
-        model, modules, fresh, records, render = self.raw_audit_fixture()
+        model, modules, fresh, data, render = self.raw_audit_fixture()
         required = gate.full_audit_requirements(model, modules, fresh)
-        self.assertEqual(required[modules[0]], [])
-        result = gate.validate_full_audit(render(records), model, modules, fresh)
+        self.assertEqual(required[modules[1]], [])
+        result = gate.validate_full_audit(render(), model, modules, fresh)
         self.assertEqual(result["summary"]["owned_modules"], 2)
         self.assertEqual(result["summary"]["private_declarations"], 1)
+        self.assertEqual(result["serialized_occurrence_count"], 3)
 
     def test_full_audit_rejects_omitted_dependency_owned_coverage(self):
-        model, modules, fresh, records, render = self.raw_audit_fixture()
-        records = [row for row in records
-                   if not (row["tag"] == "module" and row["module"] == modules[0])]
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        data["base"] = [row for row in data["base"]
+                        if not (row["tag"] == "module" and row["module"] == modules[1])]
         with self.assertRaises(ValueError):
-            gate.validate_full_audit(render(records), model, modules, fresh)
+            gate.validate_full_audit(render(), model, modules, fresh)
 
-    def test_full_audit_rejects_missing_serialized_dependency_private(self):
-        model, modules, fresh, records, render = self.raw_audit_fixture()
-        records = [row for row in records
-                   if not (row["tag"] == "declaration" and row["owner"] == modules[0])]
+    def test_full_audit_rejects_missing_serialized_private_declaration(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        data["base"] = [row for row in data["base"]
+                        if not (row["tag"] == "declaration"
+                                and row["private_user_name"] is not None)]
         with self.assertRaises(ValueError):
-            gate.validate_full_audit(render(records), model, modules, fresh)
+            gate.validate_full_audit(render(), model, modules, fresh)
 
     def test_full_audit_rejects_dependency_without_import_all(self):
-        model, modules, fresh, records, render = self.raw_audit_fixture()
-        next(row for row in records
-             if row["tag"] == "module" and row["module"] == modules[0])["import_all"] = False
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        next(row for row in data["base"]
+             if row["tag"] == "module" and row["module"] == modules[1])["import_all"] = False
         with self.assertRaises(ValueError):
-            gate.validate_full_audit(render(records), model, modules, fresh)
+            gate.validate_full_audit(render(), model, modules, fresh)
 
-    def test_full_audit_rejects_unapproved_dependency_axiom(self):
-        model, modules, fresh, records, render = self.raw_audit_fixture()
-        next(row for row in records
-             if row["tag"] == "declaration" and row["owner"] == modules[0])["kind"] = "axiom"
+    def test_full_audit_rejects_unapproved_direct_axiom(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        next(row for row in data["base"] if row["tag"] == "declaration")["kind"] = "axiom"
         with self.assertRaises(ValueError):
-            gate.validate_full_audit(render(records), model, modules, fresh)
+            gate.validate_full_audit(render(), model, modules, fresh)
 
-    def test_full_audit_rejects_dependency_using_unapproved_axiom(self):
-        model, modules, fresh, records, render = self.raw_audit_fixture()
-        next(row for row in records
-             if row["tag"] == "declaration" and row["owner"] == modules[0])["axioms"] = ["Extra.axiom"]
+    def test_full_audit_rejects_unapproved_collected_axiom(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        next(row for row in data["base"]
+             if row["tag"] == "declaration")["axioms"] = ["Extra.axiom"]
         with self.assertRaises(ValueError):
-            gate.validate_full_audit(render(records), model, modules, fresh)
+            gate.validate_full_audit(render(), model, modules, fresh)
 
+    def test_full_audit_preserves_distinct_checked_shared_bodies(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        result = gate.validate_full_audit(render(), model, modules, fresh)
+        graph = result["raw_occurrence_graph"]
+        self.assertEqual(result["duplicate_serialized_occurrence_count"], 1)
+        self.assertEqual(graph["summary"]["kernel_checks"], 4)
+        self.assertEqual(graph["summary"]["selected_kernel_checks"], 2)
+        self.assertTrue(graph["all_mixed_family_selected_theorems_kernel_checked"])
+        self.assertEqual(result["owned_modules"][modules[1]]["names"], ["RawFixture.target"])
+
+    def test_full_audit_rejects_unchecked_distinct_raw_body(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        next(row for row in data["rows"] if row["tag"] == "node")["variants"][0]["kernel_passed"] = False
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(), model, modules, fresh)
+
+    def test_full_audit_rejects_unchecked_selected_mixed_body(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        next(row for row in data["rows"]
+             if row["tag"] == "node")["selected_kernel_check"] = None
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(), model, modules, fresh)
+
+    def test_full_audit_rejects_missing_serialized_occurrence(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        data["rows"].remove(next(row for row in data["rows"] if row["tag"] == "occurrence"))
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(), model, modules, fresh)
+
+    def test_full_audit_rejects_repeated_serialized_occurrence(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        data["rows"].append(next(row for row in data["rows"] if row["tag"] == "occurrence").copy())
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(), model, modules, fresh)
+
+    def test_full_audit_rejects_dropped_foreign_raw_variant(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        foreign = next(row for row in data["rows"]
+                       if row["tag"] == "node" and row["name"] == "Foreign.helper")
+        foreign.update(expected_variants=[], variants=[], selected_kernel_check=None)
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(), model, modules, fresh)
+
+    def test_full_audit_rejects_modern_partial_root(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        next(row for row in data["rows"] if row["tag"] == "passed")["audit_root_modern"] = True
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(), model, modules, fresh)
+
+    def test_full_audit_rejects_missing_foreign_private_data(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        next(row for row in data["rows"] if row["tag"] == "scanned_module"
+             and row["module"] == "Mathlib.RawFixtureForeign")["import_all"] = False
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(), model, modules, fresh)
+
+    def test_full_audit_rejects_open_dependency_graph(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        next(row for row in data["rows"] if row["tag"] == "node")["dependencies"] = [999]
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(), model, modules, fresh)
+
+    def test_full_audit_requires_exact_scope_for_empty_requirement_lists(self):
+        model, modules, fresh, data, render = self.raw_audit_fixture()
+        with self.assertRaises(RuntimeError):
+            gate.full_audit_requirements(model, modules[:-1], fresh)
+
+    def test_full_audit_uses_complete_private_root_and_checked_kernel(self):
+        model, modules, fresh, _, _ = self.raw_audit_fixture()
+        source = gate.full_audit_source(model, modules, fresh)
+        self.assertFalse(source.lstrip().startswith("module\n"))
+        self.assertIn("Complete raw occurrence audit requires a legacy root", source)
+        self.assertIn("unless data.isModule do", source)
+        self.assertIn("unless imported.hasData && imported.importAll do", source)
+        self.assertIn("unless data.constNames == data.constants.map", source)
+        self.assertIn("RawOccurrenceSelectedKernelCheck", source)
+        self.assertIn("RawOccurrenceKernelCheck", source)
+        self.assertIn("kernel.header.trustLevel == 0", source)
+        self.assertIn("kernel.addDeclCore", source)
+        self.assertNotIn("Serialized declaration has another owner:", source)
 
 if __name__ == "__main__":
     unittest.main()
+

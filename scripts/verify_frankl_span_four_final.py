@@ -29,6 +29,8 @@ MODEL_PATH = "docs/frankl-span-four-composed-model.json"
 OWN_INPUTS = (
     "scripts/verify_frankl_span_four_final.py",
     "scripts/test_frankl_span_four_final.py",
+    "scripts/audit_lean_raw_occurrences.py",
+    "scripts/test_audit_lean_raw_occurrences.py",
     ".github/workflows/lean-frankl-span-four-final.yml",
     MODEL_PATH,
 )
@@ -674,10 +676,20 @@ def full_audit_requirements(model, modules, fresh):
     return {module: model["required_by_module"].get(module, []) for module in modules}
 
 
-def validate_full_audit(text, model, modules, fresh):
+def full_audit_source(model, modules, fresh):
+    """Combine the frozen owned audit with complete raw-body checks."""
     import audit_lean_owned_extension as owned_audit
+    import audit_lean_raw_occurrences as raw_audit
     required = full_audit_requirements(model, modules, fresh)
-    return owned_audit.validate_log(text, modules, modules, required)
+    base = owned_audit.audit_source(modules, modules, required)
+    return raw_audit.augment_source(base, modules, {m: True for m in modules},
+                                    flavor="extension")
+
+
+def validate_full_audit(text, model, modules, fresh):
+    import audit_lean_raw_occurrences as raw_audit
+    required = full_audit_requirements(model, modules, fresh)
+    return raw_audit.validate_extension_log(text, modules, modules, required)
 
 
 def verify(model, modules, fresh, stage):
@@ -758,14 +770,17 @@ def verify(model, modules, fresh, stage):
                 frozen["lib/lean/" + stem + suffix] = digest
         audit_name = "FinalSpanFourAudit.lean"
         audit_required = full_audit_requirements(model, modules, fresh)
-        audit_raw = owned_audit.audit_source(modules, modules, audit_required).encode()
+        audit_raw = full_audit_source(model, modules, fresh).encode()
         common.freeze_bytes(stage, "src/" + audit_name, audit_raw, frozen)
-        command = [str(compiler / "bin/lean"), "-j1", "-M4500", "-DwarningAsError=true", audit_name]
+        command = [str(compiler / "bin/lean"), "-j1", "-M4500", "-DwarningAsError=true", "-t0", audit_name]
         audit = orbit.profile(command, stage / "src", environment,
             stage / "logs/final-owned-audit.log", stage / "progress/final-owned-audit.json", 1800)
         receipt["axiom_audit"] = audit
         save()
         common.strict_profile(audit, toolchain, audit_name)
+        require(audit["command"] == [toolchain["lean_path"], "-j1", "-M4500",
+                "-DwarningAsError=true", "-t0", audit_name],
+                "Full raw audit requires the exact zero-trust command")
         log_text = Path(audit["log"]).read_text()
         details = validate_full_audit(log_text, model, modules, fresh)
         inventory_raw = encoded(details)
@@ -774,10 +789,22 @@ def verify(model, modules, fresh, stage):
                       "owned_modules": modules, "imported_project_modules": modules,
                       "required_by_module": audit_required,
                       "full_project_closure_audited": True,
+                      "all_serialized_occurrences_audited": True,
+                      "all_reachable_raw_variants_audited": True,
+                      "all_nonidentical_raw_theorems_kernel_checked": True,
+                      "all_mixed_family_selected_theorems_kernel_checked": True,
+                      "audit_root_modern": False,
+                      "foreign_raw_variants_included": True,
+                      "axiom_cache_bypassed_for_raw_graph": True,
+                      "raw_graph_summary": details["raw_occurrence_graph"]["summary"],
+                      "serialized_occurrence_count": details["serialized_occurrence_count"],
+                      "duplicate_serialized_occurrence_count": details["duplicate_serialized_occurrence_count"],
                       "exact_raw_private_visibility": details["exact_owned_raw_private_visibility"],
                       "complete_serialized_private_import": True,
                       "declaration_inventory_sha256": sha(inventory_raw),
-                      "explicit_import_all_owned_roots": True, "inventory": details})
+                      "explicit_owned_root_imports": True,
+                      "legacy_audit_root_forces_transitive_private_data": True,
+                      "inventory_summary": details["summary"]})
         frozen["logs/final-owned-audit.log"] = audit["log_sha256"]
         progress_path = "progress/final-owned-audit.json"
         common.freeze_bytes(stage, progress_path, (stage / progress_path).read_bytes(), frozen)
