@@ -42,7 +42,8 @@ theorem quadratic_integer_coordinates479
     have hmod := congrArg (fun n : ℤ => n % 2) hnormZ
     rcases Int.emod_two_eq_zero_or_one A with hA2 | hA2 <;>
       rcases Int.emod_two_eq_zero_or_one B with hB2 | hB2 <;>
-      norm_num [Int.add_emod, Int.mul_emod, pow_two, hA2, hB2] at hmod ⊢
+      norm_num [Int.add_emod, Int.mul_emod, pow_two, hA2, hB2] at hmod <;>
+      simp only [hA2, hB2]
   have hAK : (A : K) = 2 * (a : K) := by exact_mod_cast hA
   have hBK : (B : K) = 2 * (b : K) := by exact_mod_cast hB
   refine ⟨A, B, ?_, hparity, hnormZ⟩

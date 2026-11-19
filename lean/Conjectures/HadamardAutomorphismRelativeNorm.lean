@@ -103,6 +103,7 @@ theorem conjugate_prime_under479 (P : Ideal (𝓞 K)) :
       (quadraticIntegerConjugation479 K).symm x = quadraticIntegerConjugation479 K x := by
     apply (quadraticIntegerConjugation479 K).injective
     rw [RingEquiv.apply_symm_apply, quadraticIntegerConjugation479_involutive K]
+  rw [RingEquiv.toRingHom_eq_coe]
   ext x
   rw [Ideal.mem_under, Ideal.mem_pointwise_smul_iff_inv_smul_mem, ht,
     ← Ideal.symm_apply_mem_of_equiv_iff, hr, Ideal.mem_under,

@@ -26,13 +26,13 @@ theorem norm_cube_descends_to_fixed_integer (u : 𝓞 K)
   obtain ⟨ε, hε, hroot⟩ := frobenius_ratio_root K u hu hnorm
   have hroot' := frobenius_ratio_pow479 K (u : K) ε huK hε hroot
   obtain ⟨k, hk⟩ := root_twist_frobenius_fixed K (u : K) ε hε hroot'
-  let z : 𝓞 K := (zeta_spec 479 ℚ K).toInteger
-  let v : 𝓞 K := z ^ k * u
-  have hv : (v : K) = (zeta 479 ℚ K) ^ k * (u : K) := by
-    change algebraMap (𝓞 K) K (z ^ k * u) = _
-    rw [map_mul, map_pow]
-    simp only [z, IsPrimitiveRoot.toInteger]
-    with_reducible_and_instances rfl
+  have hzint : IsIntegral ℤ (zeta 479 ℚ K) :=
+    (zeta_spec 479 ℚ K).isIntegral (by decide)
+  have hvint : IsIntegral ℤ ((zeta 479 ℚ K) ^ k * (u : K)) :=
+    (hzint.pow k).mul u.isIntegral_coe
+  let v : 𝓞 K := ⟨(zeta 479 ℚ K) ^ k * (u : K), hvint⟩
+  have hv : (v : K) = (zeta 479 ℚ K) ^ k * (u : K) :=
+    RingOfIntegers.coe_mk hvint
   refine ⟨v, ?_, ?_⟩
   · simpa only [hv] using hk
   simp only [hv, map_mul, map_pow, conjugation479_zeta]
