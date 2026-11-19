@@ -989,7 +989,14 @@ run_cmd do
     `Loneliness.PlaneCertificate.all_candidates_checked,
     `Loneliness.PlaneCertificate.critical_product_of_low_value,
     `Loneliness.Pigeonhole.five_speed_finite_or_spectrum,
-    `Loneliness.Pigeonhole.five_speed_finite_or_critical_quadruple]
+    `Loneliness.Pigeonhole.five_speed_finite_or_critical_quadruple,
+    `Li.T_isTree, `Li.not_spider, `Li.not_caterpillar, `Li.leaf_neighbors_zero,
+    `LiElim.partFunOn_erase,
+    `LiWeighted.weightedHomogeneous_of_aeval, `LiWeighted.weightedHomogeneous_symm,
+    `LiEmap.aeval_esymm_vec,
+    `LiMonomial.snd_aeval_of_weighted,
+    `Li.specialization_coeff, `LiCompute.coeff_29,
+    `Li.coeff_eq_29, `Li.li_coefficient]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]

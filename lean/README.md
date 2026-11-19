@@ -143,3 +143,13 @@ certificate blocks. With the explicit `FourSpeedGap` input,
 `five_speed_finite_or_critical_quadruple` bounds every primitive nonfamily
 five-speed tuple below `1/5` by 279,841. The remaining bounded classification
 is separate work. See [the cutoff guide](../results/five-speed-spectrum/PIGEONHOLE_REDUCTION_LEAN.md).
+
+## Li coefficient-sign partial formalization
+
+`Conjectures.LiMain` proves `Li.li_coefficient`: the three-variable
+`e_3 e_2^14` coefficient of the explicit 31-vertex tree is `+29`, the
+three-variable restriction of `[e_3 e_2^14] X_T`. `Conjectures.LiBasic` proves
+the tree and leaf/degree facts. The 6,842 connected partition types and the
+eight triple-plus-pairs partitions are checked by
+`results/li-coefficient-sign/verify.py`, not by Lean. The overall result is
+partial formalization. See [the Lean note](../results/li-coefficient-sign/LEAN.md).
