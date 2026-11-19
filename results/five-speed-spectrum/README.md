@@ -28,6 +28,8 @@ Partial formalization. Lean proves the exact value of every member of the first 
 
 - [`CRITICAL_FAMILIES_LEAN.md`](CRITICAL_FAMILIES_LEAN.md)
 - [`NORM_REDUCTION_LEAN.md`](NORM_REDUCTION_LEAN.md)
+- [Finite critical-plane certificates](PLANE_CERTIFICATES.md)
+- [`generate_plane_certificates.py`](generate_plane_certificates.py)
 - [`generate_lean_examples.py`](generate_lean_examples.py)
 - [`cover.json`](cover.json)
 - [`sieve.cpp`](sieve.cpp)

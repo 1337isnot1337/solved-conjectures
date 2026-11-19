@@ -1,0 +1,50 @@
+name: Finite critical-plane certificates
+on:
+  push:
+    paths:
+      - .github/workflows/plane-certificates.yml
+      - results/five-speed-spectrum/generate_plane_certificates.py
+      - scripts/verify_plane_certificates.py
+      - lean/Conjectures/LonelinessPlaneCertificateDefs.lean
+      - lean/Conjectures/LonelinessPlanePermutationTable.lean
+      - lean/Conjectures/LonelinessPlaneWitness.lean
+      - lean/Conjectures/LonelinessPlaneWitnessSoundness.lean
+      - lean/lean-toolchain
+      - lean/lake-manifest.json
+  pull_request:
+    paths:
+      - .github/workflows/plane-certificates.yml
+      - results/five-speed-spectrum/generate_plane_certificates.py
+      - scripts/verify_plane_certificates.py
+      - lean/Conjectures/LonelinessPlaneCertificateDefs.lean
+      - lean/Conjectures/LonelinessPlanePermutationTable.lean
+      - lean/Conjectures/LonelinessPlaneWitness.lean
+      - lean/Conjectures/LonelinessPlaneWitnessSoundness.lean
+      - lean/lean-toolchain
+      - lean/lake-manifest.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  certificates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        row: [0, 1, 2, 3, 4, 5, 6, 7]
+    env:
+      LEAN_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-mathlib-cache: true
+      - name: Generate, compile, audit, and replay eight certificate blocks
+        run: python3 scripts/verify_plane_certificates.py --row ${{ matrix.row }}
