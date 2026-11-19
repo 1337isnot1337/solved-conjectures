@@ -8,7 +8,7 @@ public import Conjectures.FranklFamily
 
 namespace Frankl.Relabel
 
-variable {α β : Type*} [DecidableEq α] [DecidableEq β]
+variable {α β : Type*} [DecidableEq β]
 
 def mapMember (e : α ≃ β) (U : Finset α) : Finset β := U.image e
 
@@ -32,13 +32,15 @@ theorem mapMember_injective (e : α ≃ β) : Function.Injective (mapMember e) :
   rw [h] at hU
   exact hU.symm.trans hV
 
-theorem mapMember_union (e : α ≃ β) (U V : Finset α) :
-    mapMember e (U ∪ V) = mapMember e U ∪ mapMember e V := by
-  simp only [mapMember, Finset.image_union]
-
 theorem card_mapFamily (e : α ≃ β) (F : Finset (Finset α)) :
     (mapFamily e F).card = F.card :=
   Finset.card_image_of_injective F (mapMember_injective e)
+
+variable [DecidableEq α]
+
+theorem mapMember_union (e : α ≃ β) (U V : Finset α) :
+    mapMember e (U ∪ V) = mapMember e U ∪ mapMember e V := by
+  simp only [mapMember, Finset.image_union]
 
 theorem filter_mapFamily (e : α ≃ β) (F : Finset (Finset α)) (x : α) :
     (mapFamily e F).filter (fun U => e x ∈ U) =

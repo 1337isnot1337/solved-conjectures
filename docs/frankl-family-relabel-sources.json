@@ -4,7 +4,7 @@
   "sources": {
     "lean/Conjectures/FranklBasic.lean": "678a880c0864fb8e84dad2913542f06a52907a08cb58852b35836da7868ca59a",
     "lean/Conjectures/FranklFamily.lean": "f2bd1a70c64b773feb39dcbc1c11e7dd8a40d2ec6fa48332f4820c3ca1197b6b",
-    "lean/Conjectures/FranklFamilyRelabel.lean": "24e1f2678fd42d1a178b7d70509d4d1f7e15874ea9c898a4e19b315ccacbf96a"
+    "lean/Conjectures/FranklFamilyRelabel.lean": "946c0b7b673ada160c4792e258175b8a1505d312f876c949e9459b9f578b31c0"
   },
   "required_endpoints": [
     "Frankl.Relabel.mem_mapMember",

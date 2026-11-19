@@ -105,9 +105,12 @@ def preserve(record):
     modules = receipt["project_modules"]
     require(len(modules) == len(set(modules)) == record["modules"],
             "Original module inventory differs")
-    require(set(receipt["source_sha256"]) == set(modules)
+    expected_sources = set(modules) if record["full_objects"] else (
+        {"lean/" + module.replace(".", "/") + ".lean" for module in modules}
+        | {"lean/lean-toolchain", "lean/lakefile.toml", "lean/lake-manifest.json"})
+    require(set(receipt["source_sha256"]) == expected_sources
             and set(receipt["artifact_sha256"]) == set(modules),
-            "Recorded source/object module inventories differ")
+            "Recorded source/object inventories differ from their original schema")
     object_members = [item for item in names
                       if item.endswith((".olean", ".olean.private", ".olean.server", ".ir", ".ir.sig"))]
     checked_sources, checked_facets = 0, 0
@@ -151,6 +154,8 @@ def preserve(record):
         "receipt_bytes_unchanged": True,
         "audit_schema": record["audit_schema"],
         "project_modules": modules,
+        "source_inventory_format": ("module names" if record["full_objects"]
+            else "repository paths, including the three pinned package configuration files"),
         "source_sha256": receipt["source_sha256"],
         "artifact_sha256": receipt["artifact_sha256"],
         "toolchain": receipt.get("toolchain"),
