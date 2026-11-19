@@ -48,7 +48,7 @@ theorem first_period_large_cover (x r z : Nat) (hx : 4 ≤ x)
   all_goals
     unfold block at hz
     split_ifs at hz
-  all_goals first | omega | (norm_num [cost] at * <;> omega)
+  all_goals first | omega | (norm_num [cost] at *; omega)
 
 /-- Every missing value in the first period has an explicit binary split, or
 fits the general x+1-pile witness.  Only the three left parts 1, x, x+1 occur. -/
@@ -100,7 +100,7 @@ theorem first_period_cover (x r z : Nat) (hx : 4 ≤ x) (heven : x%2=0)
   · by_cases hspecial : r=2*x+1
     · have hb : block x r=1 := by
         unfold block
-        split_ifs <;> omega
+        split_ifs; omega
       rw [hb] at hz
       have hz0 : z=0 := by omega
       subst z
@@ -110,7 +110,7 @@ theorem first_period_cover (x r z : Nat) (hx : 4 ≤ x) (heven : x%2=0)
       omega
     rw [block_third_eq x r (by omega) h3] at hz
     by_cases hp0 : r%2=0
-    · rw [if_pos hp0] at hz
+    · rw [ite_eq_left hp0] at hz
       have hp : (r+1)%2=1 := by omega
       interval_cases z
       · left
@@ -131,7 +131,7 @@ theorem first_period_cover (x r z : Nat) (hx : 4 ≤ x) (heven : x%2=0)
       · right
         norm_num [hp,cost]
         omega
-    · rw [if_neg hp0] at hz
+    · rw [ite_eq_right hp0] at hz
       have hp : (r+1)%2=0 := by omega
       interval_cases z
       · right

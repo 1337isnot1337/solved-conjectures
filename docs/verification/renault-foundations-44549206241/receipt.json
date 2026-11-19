@@ -1,0 +1,1210 @@
+{
+  "accepted_registry_changed": false,
+  "all_frozen_hashes_unchanged": true,
+  "artifact_sha256": {
+    "Conjectures.Loneliness": {
+      ".olean": "4e13edf11c42cd4d01ee6b692970cde34603fd7ef263cbd443775fe41e360307"
+    },
+    "Conjectures.LonelinessContinuity": {
+      ".olean": "5df8e58d7511f3fd3e51be7b051fc8437a3a11511f6dccf1cf8da127e4726862"
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      ".olean": "30d9e0468833b8eca771d4125313add10f1193a74297f2f5766fb0c5ddc2b37a"
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      ".olean": "437da03bd240cf3d6a32a15e877e312e77e2bf4653003815473983e173ac9dc8"
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      ".olean": "9f5aeda20bcc2a7fd3d58ec5053618e07fd079964d61ba5ca188cb7227fa2e43"
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      ".olean": "9d841dbdfb2e8ea44054e35aa8504f30d54f8cd1e583bda16d8c98277d5d8334"
+    },
+    "Conjectures.LonelinessNormalization": {
+      ".olean": "2d352223e342561e911b526bbf93febf4c961867883682f191ebf0eda9c89c68"
+    },
+    "Conjectures.LonelinessRenaultAffine": {
+      ".olean": "03d5cef5b8ab04578045ae6f9f896ca7c8d6d3a5c9b71f3d836e37a4ab346713"
+    },
+    "Conjectures.LonelinessRenaultGcdOrbit": {
+      ".olean": "89b9a1b741bba45cf4a4587e187d3e230d9864d25bf6e3797aef8131785fe2b1"
+    },
+    "Conjectures.LonelinessRenaultMaximizer": {
+      ".olean": "abc93aec66373cec817deecc89fa41a3b71717eaae9c5011f15a1878aa105a46"
+    },
+    "Conjectures.LonelinessRenaultPhaseCells": {
+      ".olean": "89aaa50e4198cf68ae01bfc5c0f2d79a11e6a0a5212d0f4cadedd011d7bf5a3e"
+    },
+    "Conjectures.LonelinessRenaultPhaseCertificates": {
+      ".olean": "0d382b74f1a416aac9472b55052be26e5dc7ca3615ecc4eeb5a0a6a065bdbf07"
+    },
+    "Conjectures.LonelinessRenaultPreliminaries": {
+      ".olean": "1447d88d8955b04ca235346d95600bd94e7d9d95eabedc09777f551a97ea4d86"
+    },
+    "Conjectures.LonelinessRenaultReindex": {
+      ".olean": "bb1e3bca86a203b26d7a2da542971030887bf7b3ff1fbdaaadf50c8975d7a310"
+    },
+    "Conjectures.LonelinessRenaultSmallPhases": {
+      ".olean": "27b8baee11887eb8826826c145a3bec5cc2efd940a99972792cecde2b96b9801"
+    },
+    "Conjectures.LonelinessRenaultThirdObstructions": {
+      ".olean": "4e3e93c8e9ed79faa531e59be383bff156c7cc7ac1e7236d02de778b3595f196"
+    },
+    "Conjectures.LonelinessRenaultTwoMultiples": {
+      ".olean": "ebb0c40b211b2c9bd36fe01197358c0bad915f200b38b731cd0e7ae1a967f35a"
+    },
+    "Conjectures.LonelinessRenaultTwoMultiplesPhase": {
+      ".olean": "571afca7dd57a6b257bfc3772d8a477670a8a7da8489e26928dd6439c816f8fe"
+    }
+  },
+  "axiom_audit": {
+    "all_owned_declarations_audited": true,
+    "audit_source_sha256": "f6e319763a4588e63b5d25629cfaf4b984ad0f7dd7fd4eb844ed1a6b83fe84f5",
+    "command": [
+      "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "-j1",
+      "-M4500",
+      "-DwarningAsError=true",
+      "RenaultFoundationsAudit.lean"
+    ],
+    "complete_serialized_private_import": true,
+    "declaration_inventory_sha256": "72cd220439b80a8c465c2f9deb524c9bc0de7a66268a0ef0924fb02689e8e828",
+    "exact_raw_private_visibility": true,
+    "exit_code": 0,
+    "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/all-owned-audit.log",
+    "log_sha256": "2d5073a5db59d324d236718172e5d7aa0a7096db1b86b534f3607e22db36ed22",
+    "peak_rss_kib": 2166812,
+    "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/all-owned-audit.json",
+    "progress_sha256": "e352f6b9b5b1c99266548052ad0a1b265c19d96742fecac1dcac0034236e462d",
+    "seconds": 4.321,
+    "summary": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 605,
+      "modules": 18,
+      "private_declarations": 131,
+      "raw_declarations": 605,
+      "required": 64,
+      "tag": "passed",
+      "theorems": 445
+    },
+    "system_seconds": 0.569908,
+    "timed_out": false,
+    "user_seconds": 3.59642
+  },
+  "axiom_whitelist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "commit_input_sha256": {
+    ".github/workflows/lean-renault-foundations.yml": "912a52c916146a1bfd595d9f5748ddd98e009ebac7b827f60741cf95922bc948",
+    "docs/renault-foundations-sources.json": "461e8920f4bd5c06768975cc5bb592d3fc43dad0634dad55b380c35f328237fe",
+    "lean/Conjectures/Loneliness.lean": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "lean/Conjectures/LonelinessContinuity.lean": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "lean/Conjectures/LonelinessCriticalBase.lean": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+    "lean/Conjectures/LonelinessCriticalFamilies.lean": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+    "lean/Conjectures/LonelinessCriticalSecond.lean": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+    "lean/Conjectures/LonelinessFiveFamily.lean": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+    "lean/Conjectures/LonelinessNormalization.lean": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+    "lean/Conjectures/LonelinessRenaultAffine.lean": "0e3395596b28fc2e0b9100d7efed6ac1c32d7a61a164a8bccbc792212f86d5a6",
+    "lean/Conjectures/LonelinessRenaultGcdOrbit.lean": "06d89f853af6d8704f6a7723f67c98b8f76a69c9dc11a9dfe7ad2bb86a413932",
+    "lean/Conjectures/LonelinessRenaultMaximizer.lean": "f553b3d3aee91064c1fe4454ae86b0123db5eca2de4108267f88ebd2f1bac404",
+    "lean/Conjectures/LonelinessRenaultPhaseCells.lean": "a4c059dba2fd0f25ba8225fcc0da9c523ecf83d320265a5297e4e6956b889aef",
+    "lean/Conjectures/LonelinessRenaultPhaseCertificates.lean": "1888e3c26ce94be7add602e1cf49388e313dcabf7265bf7b9d420ec70b8a94d9",
+    "lean/Conjectures/LonelinessRenaultPreliminaries.lean": "5373d79187c3c7b6a36280dbf3d24e2eb140fd501a6b4cb82a55638215f3c31c",
+    "lean/Conjectures/LonelinessRenaultReindex.lean": "2f3a8a8c9c0ab5528ad103a64e8ee69032f9ea19719844a586afb544018128fe",
+    "lean/Conjectures/LonelinessRenaultSmallPhases.lean": "b231bc50f2608b02d862a3bf318f178365d0bab47b9c9ed5b971e12b36b738bc",
+    "lean/Conjectures/LonelinessRenaultThirdObstructions.lean": "b1ff70130250a36be8fbdde94ab7ea1a8fbe9a9eede0a99202021becb06e83d3",
+    "lean/Conjectures/LonelinessRenaultTwoMultiples.lean": "6c835730a334fb91807e414a98189448e714244c288181fd7946f38b50f90c50",
+    "lean/Conjectures/LonelinessRenaultTwoMultiplesPhase.lean": "0e4ed28c55f169c5cd594e1fd0aa4b2983e8661cb75a8a4382f7b840e3eae0e0",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/generate_renault_phase_certificates.py": "f45f2adfa34fec3f2f1ef42070a3cbb77483548d06784bd9603f354db507e4b6",
+    "scripts/generate_renault_small_phase_certificates.py": "aa0dc739cfcb82a49e5d02d973738a3b6625023c7ca1953518e7380b2673d763",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+    "scripts/verify_renault_foundations.py": "e786de5e0cece3a1918b62776f27a9ae158b6491cf4fa7467e580e0aa0b40669"
+  },
+  "complete_five_speed_bound_verified": false,
+  "external_lean_path": [
+    "/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/Cli/.lake/build/lib/lean",
+    "/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/batteries/.lake/build/lib/lean",
+    "/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/Qq/.lake/build/lib/lean",
+    "/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/aesop/.lake/build/lib/lean",
+    "/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/plausible/.lake/build/lib/lean",
+    "/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean",
+    "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-renault-foundations.yml": "912a52c916146a1bfd595d9f5748ddd98e009ebac7b827f60741cf95922bc948",
+    "docs/renault-foundations-sources.json": "461e8920f4bd5c06768975cc5bb592d3fc43dad0634dad55b380c35f328237fe",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/generate_renault_phase_certificates.py": "f45f2adfa34fec3f2f1ef42070a3cbb77483548d06784bd9603f354db507e4b6",
+    "scripts/generate_renault_small_phase_certificates.py": "aa0dc739cfcb82a49e5d02d973738a3b6625023c7ca1953518e7380b2673d763",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+    "scripts/verify_renault_foundations.py": "e786de5e0cece3a1918b62776f27a9ae158b6491cf4fa7467e580e0aa0b40669"
+  },
+  "git_commit": "f6b37c31b67d4905a03ebafca4e427aaf36d8ad8",
+  "kernel_checks": {
+    "Conjectures.Loneliness": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.Loneliness"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.Loneliness.kernel.log",
+      "log_sha256": "381ad3ff638b4f35804e7c2a204a14a82ab29219cf5cc060d045acc27b90eb28",
+      "peak_rss_kib": 1622044,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.Loneliness.kernel.json",
+      "progress_sha256": "ae5f3c3e5bf31f964b5fcd3cb28bc95ed9704b1806354f60b81689bf6d83b12c",
+      "replayed_modules": [
+        "Conjectures.Loneliness"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.925568,
+      "timed_out": false,
+      "user_seconds": 1.000115
+    },
+    "Conjectures.LonelinessContinuity": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessContinuity"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessContinuity.kernel.log",
+      "log_sha256": "7264f9eab09c0ab1a3907cf0cde588559b77d6c9ad68cc93e6cd9fbb7deef86e",
+      "peak_rss_kib": 1846696,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessContinuity.kernel.json",
+      "progress_sha256": "bdc8494af5b884ea5d58a4997cb34cb939fbba46ab01c95ab5cb688a622361b1",
+      "replayed_modules": [
+        "Conjectures.LonelinessContinuity"
+      ],
+      "seconds": 6.295,
+      "system_seconds": 5.072445,
+      "timed_out": false,
+      "user_seconds": 0.998103
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalBase"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessCriticalBase.kernel.log",
+      "log_sha256": "0006fcc9df8f4040810ba1a8383d1636b283327a300f369e1dca3274ff0cebf2",
+      "peak_rss_kib": 1627156,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessCriticalBase.kernel.json",
+      "progress_sha256": "f6ac6b48f3ff725415aafd91c00e63915f683ad0f98ab755067987a78bece223",
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalBase"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.953576,
+      "timed_out": false,
+      "user_seconds": 1.058268
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalFamilies"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessCriticalFamilies.kernel.log",
+      "log_sha256": "89892e848696c1a257a3d6911b77edeee36bf34405de5eeba33538f061c1a830",
+      "peak_rss_kib": 1624384,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessCriticalFamilies.kernel.json",
+      "progress_sha256": "f7018fa17b1eea137c6db1881db9bf8c3b7d9785762163d39305619c878442bf",
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalFamilies"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.865683,
+      "timed_out": false,
+      "user_seconds": 1.014725
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalSecond"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessCriticalSecond.kernel.log",
+      "log_sha256": "96acec391f266c5b2c8aa6c1c440910f814eb5eeca124966bf44bbb6150f4923",
+      "peak_rss_kib": 1636176,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessCriticalSecond.kernel.json",
+      "progress_sha256": "ca6f89fafef58147c416849ee87b466fe63a52c6c667b7eb71f34db61641ff75",
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalSecond"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.938693,
+      "timed_out": false,
+      "user_seconds": 1.02652
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessFiveFamily"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessFiveFamily.kernel.log",
+      "log_sha256": "34a6f139b5b00907c71526d36b276ce6e9488a877c161d45ff5ec4260b65e3e2",
+      "peak_rss_kib": 1629240,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessFiveFamily.kernel.json",
+      "progress_sha256": "86c3caaf9bda0c3bc4c40fdd0a63b0963896a0db7848c804de68527e94bd87b3",
+      "replayed_modules": [
+        "Conjectures.LonelinessFiveFamily"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.922946,
+      "timed_out": false,
+      "user_seconds": 1.025572
+    },
+    "Conjectures.LonelinessNormalization": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessNormalization"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessNormalization.kernel.log",
+      "log_sha256": "deb65bf8b90ba5b6087c39fa221a140877c5817d011e60d15d26982cdd0d782d",
+      "peak_rss_kib": 1622672,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessNormalization.kernel.json",
+      "progress_sha256": "20f69a2cb398bc0ae66b063ab19c2ef89403298b1d73339587295897626fcf7d",
+      "replayed_modules": [
+        "Conjectures.LonelinessNormalization"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.936293,
+      "timed_out": false,
+      "user_seconds": 0.942483
+    },
+    "Conjectures.LonelinessRenaultAffine": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRenaultAffine"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultAffine.kernel.log",
+      "log_sha256": "b0c866e7c171ba136cdf368d4a9b3dca8f3368ec4b070a132c96d89f26cea294",
+      "peak_rss_kib": 1621480,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultAffine.kernel.json",
+      "progress_sha256": "04104deba74b1cf6f7471673e39d6f045202be5074cc1bdf394b6ea31aea9bdc",
+      "replayed_modules": [
+        "Conjectures.LonelinessRenaultAffine"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.919879,
+      "timed_out": false,
+      "user_seconds": 0.9573919999999999
+    },
+    "Conjectures.LonelinessRenaultGcdOrbit": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRenaultGcdOrbit"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultGcdOrbit.kernel.log",
+      "log_sha256": "03f6e9df4279865a674b34578b3227d266f223ead13534930c728e4f980148d0",
+      "peak_rss_kib": 1623532,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultGcdOrbit.kernel.json",
+      "progress_sha256": "359c84efca3094e8c696b05dd5c00b34b8910577fb5200428f3f8883a056bdf6",
+      "replayed_modules": [
+        "Conjectures.LonelinessRenaultGcdOrbit"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.923484,
+      "timed_out": false,
+      "user_seconds": 0.978698
+    },
+    "Conjectures.LonelinessRenaultMaximizer": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRenaultMaximizer"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultMaximizer.kernel.log",
+      "log_sha256": "153bc0ac6379785e65e2ee2d877ba7abbf9fb3b0f6fed648d8756ccc6e3f60c1",
+      "peak_rss_kib": 1854508,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultMaximizer.kernel.json",
+      "progress_sha256": "2e642082d7a2f564793ff05b760c46fdd46eee4f6132304825c37ab56fa398e1",
+      "replayed_modules": [
+        "Conjectures.LonelinessRenaultMaximizer"
+      ],
+      "seconds": 6.267,
+      "system_seconds": 4.999702,
+      "timed_out": false,
+      "user_seconds": 1.042104
+    },
+    "Conjectures.LonelinessRenaultPhaseCells": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRenaultPhaseCells"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultPhaseCells.kernel.log",
+      "log_sha256": "a3ae4b23fe972d66912ebca9c707dc888a96507b6c72c4e741f6d375a29061ff",
+      "peak_rss_kib": 1632900,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultPhaseCells.kernel.json",
+      "progress_sha256": "53dd9e47c68ce927f5e5ea24b136c2f50f33f3e2ded450fda948c9f7b34139b0",
+      "replayed_modules": [
+        "Conjectures.LonelinessRenaultPhaseCells"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.951475,
+      "timed_out": false,
+      "user_seconds": 1.060459
+    },
+    "Conjectures.LonelinessRenaultPhaseCertificates": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRenaultPhaseCertificates"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultPhaseCertificates.kernel.log",
+      "log_sha256": "9110ad1303997abd9b64f7a1cd5567b7fb4b7d28954a672b279db7acc3c39ae0",
+      "peak_rss_kib": 2304108,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultPhaseCertificates.kernel.json",
+      "progress_sha256": "93c98bd8c961d41018722e66f32c99dde34ba1d5347f18fb1febed5d9481d1d6",
+      "replayed_modules": [
+        "Conjectures.LonelinessRenaultPhaseCertificates"
+      ],
+      "seconds": 16.163,
+      "system_seconds": 4.580816,
+      "timed_out": false,
+      "user_seconds": 11.388057
+    },
+    "Conjectures.LonelinessRenaultPreliminaries": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRenaultPreliminaries"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultPreliminaries.kernel.log",
+      "log_sha256": "2710b37b23f2583356ac200a799ab27db4062af74652f7fc3a470af33b36f430",
+      "peak_rss_kib": 1857624,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultPreliminaries.kernel.json",
+      "progress_sha256": "de7f0eacd45d328c31dfbbb49107f9de2a8d8c610ce5cf550655c7c3f4d0c6ed",
+      "replayed_modules": [
+        "Conjectures.LonelinessRenaultPreliminaries"
+      ],
+      "seconds": 6.267,
+      "system_seconds": 5.035587,
+      "timed_out": false,
+      "user_seconds": 1.14645
+    },
+    "Conjectures.LonelinessRenaultReindex": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRenaultReindex"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultReindex.kernel.log",
+      "log_sha256": "6029efedd3943a6ae9b6a5b6c116528beb130d2880636fbf9fee4e15766a50d4",
+      "peak_rss_kib": 1848488,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultReindex.kernel.json",
+      "progress_sha256": "532fe4ad7ffab70015f5427cf34806e6c14ab3d1ebf514bea5c81568abb9b4f4",
+      "replayed_modules": [
+        "Conjectures.LonelinessRenaultReindex"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.980495,
+      "timed_out": false,
+      "user_seconds": 0.9783109999999999
+    },
+    "Conjectures.LonelinessRenaultSmallPhases": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRenaultSmallPhases"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultSmallPhases.kernel.log",
+      "log_sha256": "7f2bae33a2543af29b2c067dd911792a6777cc1363b6af5bf1457e48e4395920",
+      "peak_rss_kib": 1635412,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultSmallPhases.kernel.json",
+      "progress_sha256": "6d399b1d8da4d014e7deb389384f9c3f05eec297b0d9a53cce789ab37e0e6dd2",
+      "replayed_modules": [
+        "Conjectures.LonelinessRenaultSmallPhases"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.956697,
+      "timed_out": false,
+      "user_seconds": 1.02473
+    },
+    "Conjectures.LonelinessRenaultThirdObstructions": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRenaultThirdObstructions"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultThirdObstructions.kernel.log",
+      "log_sha256": "ffa90302ee192ca2db4b8497748e92c0acfcd68d0d59298511a54fd6995f0bf3",
+      "peak_rss_kib": 1849328,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultThirdObstructions.kernel.json",
+      "progress_sha256": "3662be6829eff5e67d2e1e5ec59cd6656a1ae0bfa1786a47a757a2fbf7b20c30",
+      "replayed_modules": [
+        "Conjectures.LonelinessRenaultThirdObstructions"
+      ],
+      "seconds": 6.267,
+      "system_seconds": 5.045619,
+      "timed_out": false,
+      "user_seconds": 0.9763449999999999
+    },
+    "Conjectures.LonelinessRenaultTwoMultiples": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRenaultTwoMultiples"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultTwoMultiples.kernel.log",
+      "log_sha256": "07aec9caa966efc1428ad01f3db9986e821b81c703d0c5b794dfeb58af1f0c5a",
+      "peak_rss_kib": 1854916,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultTwoMultiples.kernel.json",
+      "progress_sha256": "c1819123664ec3ca0fd79713dba495cf839428cb1db143c38fc924929eab2e5d",
+      "replayed_modules": [
+        "Conjectures.LonelinessRenaultTwoMultiples"
+      ],
+      "seconds": 5.765,
+      "system_seconds": 4.587553,
+      "timed_out": false,
+      "user_seconds": 1.092179
+    },
+    "Conjectures.LonelinessRenaultTwoMultiplesPhase": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRenaultTwoMultiplesPhase"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultTwoMultiplesPhase.kernel.log",
+      "log_sha256": "f9526e9f70ee9b9252c57730d4197cf6da61291b8a7386164e90696d769fdcca",
+      "peak_rss_kib": 1853892,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultTwoMultiplesPhase.kernel.json",
+      "progress_sha256": "82db039413a05c6f43da8182b4fb8ca2b97efbe5ec2c418567923b248e0e8e69",
+      "replayed_modules": [
+        "Conjectures.LonelinessRenaultTwoMultiplesPhase"
+      ],
+      "seconds": 6.267,
+      "system_seconds": 5.050367,
+      "timed_out": false,
+      "user_seconds": 0.9734919999999999
+    }
+  },
+  "kernel_replay": {
+    "all_modules_replayed_as_targets": true,
+    "exact_project_closure": true,
+    "fresh_process_per_module": true,
+    "replayed_modules": [
+      "Conjectures.Loneliness",
+      "Conjectures.LonelinessContinuity",
+      "Conjectures.LonelinessFiveFamily",
+      "Conjectures.LonelinessCriticalBase",
+      "Conjectures.LonelinessCriticalSecond",
+      "Conjectures.LonelinessRenaultAffine",
+      "Conjectures.LonelinessRenaultGcdOrbit",
+      "Conjectures.LonelinessRenaultMaximizer",
+      "Conjectures.LonelinessRenaultPhaseCells",
+      "Conjectures.LonelinessRenaultPreliminaries",
+      "Conjectures.LonelinessCriticalFamilies",
+      "Conjectures.LonelinessRenaultTwoMultiples",
+      "Conjectures.LonelinessRenaultPhaseCertificates",
+      "Conjectures.LonelinessRenaultSmallPhases",
+      "Conjectures.LonelinessRenaultThirdObstructions",
+      "Conjectures.LonelinessNormalization",
+      "Conjectures.LonelinessRenaultTwoMultiplesPhase",
+      "Conjectures.LonelinessRenaultReindex"
+    ]
+  },
+  "kernel_threads": 1,
+  "memory_megabytes": 4500,
+  "modern_modules": {
+    "Conjectures.Loneliness": false,
+    "Conjectures.LonelinessContinuity": false,
+    "Conjectures.LonelinessCriticalBase": false,
+    "Conjectures.LonelinessCriticalFamilies": false,
+    "Conjectures.LonelinessCriticalSecond": false,
+    "Conjectures.LonelinessFiveFamily": false,
+    "Conjectures.LonelinessNormalization": false,
+    "Conjectures.LonelinessRenaultAffine": false,
+    "Conjectures.LonelinessRenaultGcdOrbit": false,
+    "Conjectures.LonelinessRenaultMaximizer": false,
+    "Conjectures.LonelinessRenaultPhaseCells": false,
+    "Conjectures.LonelinessRenaultPhaseCertificates": false,
+    "Conjectures.LonelinessRenaultPreliminaries": false,
+    "Conjectures.LonelinessRenaultReindex": false,
+    "Conjectures.LonelinessRenaultSmallPhases": false,
+    "Conjectures.LonelinessRenaultThirdObstructions": false,
+    "Conjectures.LonelinessRenaultTwoMultiples": false,
+    "Conjectures.LonelinessRenaultTwoMultiplesPhase": false
+  },
+  "phase_timeout_seconds": 1800,
+  "project_modules": [
+    "Conjectures.Loneliness",
+    "Conjectures.LonelinessContinuity",
+    "Conjectures.LonelinessFiveFamily",
+    "Conjectures.LonelinessCriticalBase",
+    "Conjectures.LonelinessCriticalSecond",
+    "Conjectures.LonelinessRenaultAffine",
+    "Conjectures.LonelinessRenaultGcdOrbit",
+    "Conjectures.LonelinessRenaultMaximizer",
+    "Conjectures.LonelinessRenaultPhaseCells",
+    "Conjectures.LonelinessRenaultPreliminaries",
+    "Conjectures.LonelinessCriticalFamilies",
+    "Conjectures.LonelinessRenaultTwoMultiples",
+    "Conjectures.LonelinessRenaultPhaseCertificates",
+    "Conjectures.LonelinessRenaultSmallPhases",
+    "Conjectures.LonelinessRenaultThirdObstructions",
+    "Conjectures.LonelinessNormalization",
+    "Conjectures.LonelinessRenaultTwoMultiplesPhase",
+    "Conjectures.LonelinessRenaultReindex"
+  ],
+  "proof_scope": {
+    "accepted_registry_changed": false,
+    "checkpoint": "frozen_renault_foundations",
+    "complete_five_speed_bound": false
+  },
+  "reproduction_checks": {
+    "scripts/generate_renault_phase_certificates.py": {
+      "command": [
+        "/usr/bin/python3",
+        "/home/runner/work/solved-conjectures/solved-conjectures/scripts/generate_renault_phase_certificates.py",
+        "--repo",
+        "/home/runner/work/solved-conjectures/solved-conjectures",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/generate_renault_phase_certificates.reproduction.log",
+      "log_sha256": "de66677b6a7ac92b822e70341d2d6464b1f9e98465417945389b8340e31f5224",
+      "peak_rss_kib": 28056,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/generate_renault_phase_certificates.reproduction.json",
+      "progress_sha256": "968093b0987453d2a49eaba837ee16f03cda454156bc1a69f18edace05868d21",
+      "seconds": 0.251,
+      "system_seconds": 0.007956,
+      "timed_out": false,
+      "user_seconds": 0.046745999999999996
+    },
+    "scripts/generate_renault_small_phase_certificates.py": {
+      "command": [
+        "/usr/bin/python3",
+        "/home/runner/work/solved-conjectures/solved-conjectures/scripts/generate_renault_small_phase_certificates.py",
+        "--repo",
+        "/home/runner/work/solved-conjectures/solved-conjectures",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/generate_renault_small_phase_certificates.reproduction.log",
+      "log_sha256": "db48198163541960504d58042fc9bf5406e962c62517fabac223fbacebd0cb4f",
+      "peak_rss_kib": 28056,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/generate_renault_small_phase_certificates.reproduction.json",
+      "progress_sha256": "0ddf0e2dc66bbc6f1d3255b002bdccdfbd402a9633dda402f506d230eb3898c5",
+      "seconds": 0.251,
+      "system_seconds": 0.013021999999999999,
+      "timed_out": false,
+      "user_seconds": 0.027045999999999997
+    }
+  },
+  "required_theorems": [
+    "Loneliness.Renault.PhaseAction.good_fract_iff",
+    "Loneliness.Renault.PhaseCover.check_sound",
+    "Loneliness.Renault.allSafe_reindex_iff",
+    "Loneliness.Renault.card_filter_equiv",
+    "Loneliness.Renault.distance_add_half",
+    "Loneliness.Renault.distance_div_nat_eq_zero_iff",
+    "Loneliness.Renault.distance_eq_min_fract",
+    "Loneliness.Renault.distance_mul_fract_eq",
+    "Loneliness.Renault.distance_nat_mul_distance",
+    "Loneliness.Renault.distance_of_unit_interval",
+    "Loneliness.Renault.distance_rational_shift_of_dvd",
+    "Loneliness.Renault.distance_strict_of_cell",
+    "Loneliness.Renault.distance_third_shift_of_dvd",
+    "Loneliness.Renault.distance_time_add_of_dvd",
+    "Loneliness.Renault.distance_time_affine_six",
+    "Loneliness.Renault.double_half_strict_of_outer",
+    "Loneliness.Renault.endpoint_runner_third_shift_safe",
+    "Loneliness.Renault.endpoint_third_shift_safe",
+    "Loneliness.Renault.exists_allSafe_reindex_iff",
+    "Loneliness.Renault.exists_constrained_maximum",
+    "Loneliness.Renault.exists_maximizer_with_upper_boundary",
+    "Loneliness.Renault.exists_nearby_safe",
+    "Loneliness.Renault.exists_phase_fiber_maximum",
+    "Loneliness.Renault.exists_positive_feasible",
+    "Loneliness.Renault.exists_positive_maximizer",
+    "Loneliness.Renault.exists_reindex_two",
+    "Loneliness.Renault.exists_set_bit",
+    "Loneliness.Renault.exists_small_multiplier_unsafe",
+    "Loneliness.Renault.exists_third_shift_of_at_most_two",
+    "Loneliness.Renault.exists_third_shift_of_endpoint",
+    "Loneliness.Renault.exists_third_shift_of_three_close",
+    "Loneliness.Renault.exists_third_shift_of_two_unsafe",
+    "Loneliness.Renault.foldr_gcd_ofFn_reindex",
+    "Loneliness.Renault.fract_int_mul_fract",
+    "Loneliness.Renault.fract_nat_mul_fract",
+    "Loneliness.Renault.fract_time_add_of_dvd",
+    "Loneliness.Renault.fract_time_affine_six",
+    "Loneliness.Renault.gcd_orbit_point",
+    "Loneliness.Renault.maximizer_has_upper_boundary",
+    "Loneliness.Renault.ordered_phase_band",
+    "Loneliness.Renault.phaseActionCheck_sound",
+    "Loneliness.Renault.phaseMaskCheck_sound",
+    "Loneliness.Renault.phaseTripleCheck_sound",
+    "Loneliness.Renault.phase_fiber_affine_six",
+    "Loneliness.Renault.phase_fiber_multiplier_distance",
+    "Loneliness.Renault.phase_fiber_odd_multiple",
+    "Loneliness.Renault.phase_fiber_zero_divisibility",
+    "Loneliness.Renault.phase_lemma_5_1",
+    "Loneliness.Renault.phase_lemma_5_2",
+    "Loneliness.Renault.phase_lemma_5_3",
+    "Loneliness.Renault.phase_lemma_6_1",
+    "Loneliness.Renault.phase_lemma_6_2",
+    "Loneliness.Renault.phase_lemma_6_3",
+    "Loneliness.Renault.phase_lemma_6_4",
+    "Loneliness.Renault.phase_lemma_6_5",
+    "Loneliness.Renault.phase_three_covers",
+    "Loneliness.Renault.primitive_reindex_iff",
+    "Loneliness.Renault.small_multiple_distance_gt",
+    "Loneliness.Renault.third_shift_safe_of_initial_le",
+    "Loneliness.Renault.third_unsafe_unique",
+    "Loneliness.Renault.three_even_shift_phase",
+    "Loneliness.Renault.three_five_distance_band",
+    "Loneliness.Renault.two_multiple_final_times",
+    "Loneliness.Renault.two_odd_phase_improvement"
+  ],
+  "roots": [
+    "Conjectures.LonelinessRenaultPhaseCells",
+    "Conjectures.LonelinessRenaultPhaseCertificates",
+    "Conjectures.LonelinessRenaultSmallPhases",
+    "Conjectures.LonelinessRenaultMaximizer",
+    "Conjectures.LonelinessRenaultAffine",
+    "Conjectures.LonelinessRenaultTwoMultiples",
+    "Conjectures.LonelinessRenaultTwoMultiplesPhase",
+    "Conjectures.LonelinessRenaultPreliminaries",
+    "Conjectures.LonelinessRenaultGcdOrbit",
+    "Conjectures.LonelinessRenaultThirdObstructions",
+    "Conjectures.LonelinessRenaultReindex"
+  ],
+  "schema": "renault-foundations-receipt-v1",
+  "source_checks": {
+    "Conjectures.Loneliness": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/Loneliness.olean",
+        "Conjectures/Loneliness.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.Loneliness.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1921284,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.Loneliness.source.json",
+      "progress_sha256": "dd4030ecaeec7e91a062469bf9f9a47a8662aa0c1d8949eb3c400acbf10a6c7e",
+      "seconds": 2.005,
+      "system_seconds": 0.46796299999999996,
+      "timed_out": false,
+      "user_seconds": 1.438961
+    },
+    "Conjectures.LonelinessContinuity": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessContinuity.olean",
+        "Conjectures/LonelinessContinuity.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessContinuity.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2140432,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessContinuity.source.json",
+      "progress_sha256": "97e3e68a0f3f06325c2cb0de09ab492456e7394a65c02b50b14138e550ea4a82",
+      "seconds": 1.504,
+      "system_seconds": 0.5344019999999999,
+      "timed_out": false,
+      "user_seconds": 0.8606469999999999
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessCriticalBase.olean",
+        "Conjectures/LonelinessCriticalBase.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessCriticalBase.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1920412,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessCriticalBase.source.json",
+      "progress_sha256": "58b595900377d190190dc177616cec9fb5622508373a955235c22bd6b56f1e9d",
+      "seconds": 3.509,
+      "system_seconds": 0.47426799999999997,
+      "timed_out": false,
+      "user_seconds": 2.928655
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessCriticalFamilies.olean",
+        "Conjectures/LonelinessCriticalFamilies.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessCriticalFamilies.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1898940,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessCriticalFamilies.source.json",
+      "progress_sha256": "b76bb2bba6804510b67bfc2e0468a72d283e713f714f9e712b4fae5989a0b19d",
+      "seconds": 1.504,
+      "system_seconds": 0.46283799999999997,
+      "timed_out": false,
+      "user_seconds": 0.875694
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessCriticalSecond.olean",
+        "Conjectures/LonelinessCriticalSecond.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessCriticalSecond.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1935804,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessCriticalSecond.source.json",
+      "progress_sha256": "74f8d364874641393a5051843c561b8adafd4ea18e80d4bf2175327a0d415c6b",
+      "seconds": 5.264,
+      "system_seconds": 0.490237,
+      "timed_out": false,
+      "user_seconds": 4.537196
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessFiveFamily.olean",
+        "Conjectures/LonelinessFiveFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessFiveFamily.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1929660,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessFiveFamily.source.json",
+      "progress_sha256": "fe3125d28bc5fb2c8c76147e348e15c5cdf49f3fcb701d5cc086d56baa63521f",
+      "seconds": 4.512,
+      "system_seconds": 0.47824799999999995,
+      "timed_out": false,
+      "user_seconds": 3.9680590000000002
+    },
+    "Conjectures.LonelinessNormalization": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessNormalization.olean",
+        "Conjectures/LonelinessNormalization.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessNormalization.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1907688,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessNormalization.source.json",
+      "progress_sha256": "a7cf9e0e0f9399e546cec254ba95607dec11e4d3c13e62c089f5701253e3efb1",
+      "seconds": 1.504,
+      "system_seconds": 0.447937,
+      "timed_out": false,
+      "user_seconds": 1.014858
+    },
+    "Conjectures.LonelinessRenaultAffine": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessRenaultAffine.olean",
+        "Conjectures/LonelinessRenaultAffine.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultAffine.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1895796,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultAffine.source.json",
+      "progress_sha256": "7b3e02da6d37e53b923d32d53438a0fd6941b105033238f984d9fb77a5826857",
+      "seconds": 1.504,
+      "system_seconds": 0.454223,
+      "timed_out": false,
+      "user_seconds": 0.8664259999999999
+    },
+    "Conjectures.LonelinessRenaultGcdOrbit": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessRenaultGcdOrbit.olean",
+        "Conjectures/LonelinessRenaultGcdOrbit.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultGcdOrbit.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1904036,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultGcdOrbit.source.json",
+      "progress_sha256": "591579196eec0e421fe01ad90e1e1a864e9c0a756d5b74eb8814b273e8faa294",
+      "seconds": 2.005,
+      "system_seconds": 0.46143199999999995,
+      "timed_out": false,
+      "user_seconds": 1.370284
+    },
+    "Conjectures.LonelinessRenaultMaximizer": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessRenaultMaximizer.olean",
+        "Conjectures/LonelinessRenaultMaximizer.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultMaximizer.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2162684,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultMaximizer.source.json",
+      "progress_sha256": "4ce4c3115000ed00cd34a5aa4a00f1843ca9013d5337d3c816cbb3b373879d32",
+      "seconds": 2.757,
+      "system_seconds": 0.55719,
+      "timed_out": false,
+      "user_seconds": 2.182747
+    },
+    "Conjectures.LonelinessRenaultPhaseCells": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessRenaultPhaseCells.olean",
+        "Conjectures/LonelinessRenaultPhaseCells.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultPhaseCells.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1959664,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultPhaseCells.source.json",
+      "progress_sha256": "36c10224499a53be403980b38bfb53dccccc2937e953b8d0e830f340ac67d0d8",
+      "seconds": 5.516,
+      "system_seconds": 0.478716,
+      "timed_out": false,
+      "user_seconds": 4.938392
+    },
+    "Conjectures.LonelinessRenaultPhaseCertificates": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessRenaultPhaseCertificates.olean",
+        "Conjectures/LonelinessRenaultPhaseCertificates.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultPhaseCertificates.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2617972,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultPhaseCertificates.source.json",
+      "progress_sha256": "75292d221ba37bdb2ff0412c5a3cfb9d1135009f2dbaf97395ee069140945a07",
+      "seconds": 12.785,
+      "system_seconds": 0.682454,
+      "timed_out": false,
+      "user_seconds": 11.949965
+    },
+    "Conjectures.LonelinessRenaultPreliminaries": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessRenaultPreliminaries.olean",
+        "Conjectures/LonelinessRenaultPreliminaries.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultPreliminaries.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2186496,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultPreliminaries.source.json",
+      "progress_sha256": "932cda6258a47540a27d8a714be5f4a5548d70797eecda56898c3fe3540a0843",
+      "seconds": 5.013,
+      "system_seconds": 0.558294,
+      "timed_out": false,
+      "user_seconds": 4.420329
+    },
+    "Conjectures.LonelinessRenaultReindex": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessRenaultReindex.olean",
+        "Conjectures/LonelinessRenaultReindex.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultReindex.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2135384,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultReindex.source.json",
+      "progress_sha256": "3ed6b1144837ae63ce56da0e5dca5ecb055304907099a8b71503d3ba2cebcae3",
+      "seconds": 1.504,
+      "system_seconds": 0.543689,
+      "timed_out": false,
+      "user_seconds": 0.9221689999999999
+    },
+    "Conjectures.LonelinessRenaultSmallPhases": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessRenaultSmallPhases.olean",
+        "Conjectures/LonelinessRenaultSmallPhases.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultSmallPhases.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1942468,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultSmallPhases.source.json",
+      "progress_sha256": "faa35f19ac0de8adebfd962b49a806414b78bc6ae5bed02b8d4332b5c638118c",
+      "seconds": 3.008,
+      "system_seconds": 0.522969,
+      "timed_out": false,
+      "user_seconds": 2.397028
+    },
+    "Conjectures.LonelinessRenaultThirdObstructions": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessRenaultThirdObstructions.olean",
+        "Conjectures/LonelinessRenaultThirdObstructions.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultThirdObstructions.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2142372,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultThirdObstructions.source.json",
+      "progress_sha256": "5cf69555da0e76061483bcc9d2ef61dedcca41885135022f0ccb2f3953ca961d",
+      "seconds": 1.504,
+      "system_seconds": 0.532308,
+      "timed_out": false,
+      "user_seconds": 0.910527
+    },
+    "Conjectures.LonelinessRenaultTwoMultiples": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessRenaultTwoMultiples.olean",
+        "Conjectures/LonelinessRenaultTwoMultiples.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultTwoMultiples.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2174980,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultTwoMultiples.source.json",
+      "progress_sha256": "2c3b82313025473d672406f16e4c4f38f45118e35114d6d06aae89240d130aec",
+      "seconds": 7.27,
+      "system_seconds": 0.523065,
+      "timed_out": false,
+      "user_seconds": 6.515814
+    },
+    "Conjectures.LonelinessRenaultTwoMultiplesPhase": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/lib/lean/Conjectures/LonelinessRenaultTwoMultiplesPhase.olean",
+        "Conjectures/LonelinessRenaultTwoMultiplesPhase.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/logs/Conjectures.LonelinessRenaultTwoMultiplesPhase.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2160632,
+      "progress": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/renault-foundations/progress/Conjectures.LonelinessRenaultTwoMultiplesPhase.source.json",
+      "progress_sha256": "37a825cba92db7259db591f8fbd9cbfb1d51e95bf93254ab4d67badb44e1fef8",
+      "seconds": 2.005,
+      "system_seconds": 0.559334,
+      "timed_out": false,
+      "user_seconds": 1.401333
+    }
+  },
+  "source_policy": {
+    "fresh_project_objects": true,
+    "linter_override": false,
+    "warning_as_error": true
+  },
+  "source_sha256": {
+    "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+    "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+    "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+    "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+    "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+    "Conjectures.LonelinessRenaultAffine": "0e3395596b28fc2e0b9100d7efed6ac1c32d7a61a164a8bccbc792212f86d5a6",
+    "Conjectures.LonelinessRenaultGcdOrbit": "06d89f853af6d8704f6a7723f67c98b8f76a69c9dc11a9dfe7ad2bb86a413932",
+    "Conjectures.LonelinessRenaultMaximizer": "f553b3d3aee91064c1fe4454ae86b0123db5eca2de4108267f88ebd2f1bac404",
+    "Conjectures.LonelinessRenaultPhaseCells": "a4c059dba2fd0f25ba8225fcc0da9c523ecf83d320265a5297e4e6956b889aef",
+    "Conjectures.LonelinessRenaultPhaseCertificates": "1888e3c26ce94be7add602e1cf49388e313dcabf7265bf7b9d420ec70b8a94d9",
+    "Conjectures.LonelinessRenaultPreliminaries": "5373d79187c3c7b6a36280dbf3d24e2eb140fd501a6b4cb82a55638215f3c31c",
+    "Conjectures.LonelinessRenaultReindex": "2f3a8a8c9c0ab5528ad103a64e8ee69032f9ea19719844a586afb544018128fe",
+    "Conjectures.LonelinessRenaultSmallPhases": "b231bc50f2608b02d862a3bf318f178365d0bab47b9c9ed5b971e12b36b738bc",
+    "Conjectures.LonelinessRenaultThirdObstructions": "b1ff70130250a36be8fbdde94ab7ea1a8fbe9a9eede0a99202021becb06e83d3",
+    "Conjectures.LonelinessRenaultTwoMultiples": "6c835730a334fb91807e414a98189448e714244c288181fd7946f38b50f90c50",
+    "Conjectures.LonelinessRenaultTwoMultiplesPhase": "0e4ed28c55f169c5cd594e1fd0aa4b2983e8661cb75a8a4382f7b840e3eae0e0"
+  },
+  "source_workers": 1,
+  "status": "passed",
+  "toolchain": {
+    "checker_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+    "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "lean_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)"
+  }
+}

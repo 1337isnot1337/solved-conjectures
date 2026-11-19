@@ -1,0 +1,584 @@
+{
+  "schema": "higher-spectrum-realization-exact-model-v1",
+  "tasks": {
+    "product-plane-speeds": {
+      "accepted_registry_changed": false,
+      "configuration_sha256": {
+        "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+        "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      "helper_sha256": {
+        "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+        "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+        "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+        "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+        "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+        "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+        "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+      },
+      "legacy_prefixes": [
+        "Loneliness."
+      ],
+      "project_module_count": 40,
+      "required_theorem_count": 4,
+      "required_theorems": [
+        "Loneliness.ProductPlaneSpeeds.integer_coordinates",
+        "Loneliness.ProductPlaneSpeeds.absolute_list",
+        "Loneliness.ProductPlaneSpeeds.product_parameters_of_positive_direction",
+        "Loneliness.ProductPlaneSpeeds.primitive_family_of_below"
+      ],
+      "roots": [
+        "Conjectures.LonelinessProductPlaneSpeeds"
+      ],
+      "schema": "higher-spectrum-realization-exact-v1",
+      "scope": "A dimension-independent bridge from membership in the actual signed/permuted rational span of (W,0) and the last coordinate axis to the full positive integer speed list (A W,b), retaining multiplicities and permutation. A base coordinate equal to one proves integrality of the scale. For a primitive actual speed list below 1/q, with q at least four and every base residue nonzero modulo q, the existing unbounded product-family arithmetic forces the exact family W ++ [q*s] with s positive. No geometric exhaustiveness, numerical coverage, or unconditional spectrum classification is claimed.",
+      "source_policy": {
+        "fresh_project_objects": true,
+        "linter_override": false,
+        "warning_as_error": true
+      },
+      "source_sha256": {
+        "Conjectures.HaralambisCounting": "b315781d9fed35b6490547c52ba416033d8fa1ce74e234d1ca75c1c08947165f",
+        "Conjectures.HaralambisDefects": "e97a0a15cbcbfc7962aaac1409051fed8b363f1475b728d20f61117cc363e9c3",
+        "Conjectures.HaralambisDensity": "6f5c1d408c7e017f5c1bb60d832a8a566267f137c932498df0826f6a35e1ab25",
+        "Conjectures.HaralambisFaces": "bb71842e0b01a8975d847e8011c72e25e6f171f5aecba2865a9f1497caf0aedd",
+        "Conjectures.HaralambisIntervals": "8d5a75119a748f371493d1d47508136f2793d4e13ca74b52435e662c5aef7219",
+        "Conjectures.HaralambisOrientation": "007a67ae5c701ad51e7d9957f5066490941c1d00ced13b7a251d94916d7d64a8",
+        "Conjectures.HaralambisPairSum": "032549371a9c2d24599a2f090e848dc7f7f9cfaeb79dacbbfc8d6c0c14c10998",
+        "Conjectures.HaralambisPeriods": "a8e3ada09e8d9cac8e2e816de5b55739c3a36c73bb2caebccc9bcb2fa3ba6daa",
+        "Conjectures.HaralambisTheorem": "a99e2c6d08677c459e0e405a211468c8fa192e2a6f9ed0078619f00d8e7d8fd8",
+        "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+        "Conjectures.LonelinessCoalescence": "5518fdfed0369763c2ba701272edb25fbaafde2d230c869f4412f2c441ef9d1d",
+        "Conjectures.LonelinessCoalescenceAvoiding": "bcdb57b0b68a1d1eb2dddb4626f1a11ffb21d82e7106004d5638c499a1acdc81",
+        "Conjectures.LonelinessCoalescenceValue": "b2b7037f036e3fdeb5e52e0314fd7126db2ae921c6c182abf6175c5884a5bcb7",
+        "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+        "Conjectures.LonelinessCoordinateClasses": "0075b701fd3fa51feef62f59850dfaa3dfece95e3287d51a7afb438a76691b63",
+        "Conjectures.LonelinessCoordinateSubspace": "a6a58ef2dfb5262e43641aae3e18c9d7ddcc8163aebad18cf6eb2416ae46bfea",
+        "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+        "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+        "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+        "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+        "Conjectures.LonelinessIntegerDirection": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6",
+        "Conjectures.LonelinessModularDirections": "f838c441e3a59593cfa43fe55edb5d63db43af22a3e0f60d730d75b1d7664dd4",
+        "Conjectures.LonelinessModularShortVector": "d75206b95714a27fc37768daae09f450bdd7acac45130d62278521d4891bf6a3",
+        "Conjectures.LonelinessModularWitness": "c5329d2e079f6d04d0079ab3fe90d814d1f3393b2381c74be6375ce091b569fb",
+        "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+        "Conjectures.LonelinessPacking": "61ae885750aec875160f7e1ea522a581aa18a576871fe89baf70f1c11f026d7d",
+        "Conjectures.LonelinessPackingLower": "c9bd26dd3ae91a4e2b8513bd755936c5fdaf6d2faa31fe353b87498d0a200ca3",
+        "Conjectures.LonelinessPlaneDirections": "af14f52d921cf44c1ff423d222007e5991a32efd4a024e24ff17ab257545907c",
+        "Conjectures.LonelinessPlaneGap": "78cad68e4587af398e088d2e6e0a124c919a9b31cae3b8b0e80bacfdd12923d0",
+        "Conjectures.LonelinessProductFamily": "5bfba7ae7276035a3c5247b982f11493a287d9a7d68c1f56c1dca15ce2ea9fb1",
+        "Conjectures.LonelinessProductPlaneSpeeds": "834c04da1577bdc31702e70db0dce74d55576d6b3b168934fefc4a5c759fe700",
+        "Conjectures.LonelinessRational": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
+        "Conjectures.LonelinessRationalSubspace": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88",
+        "Conjectures.LonelinessSignedCoordinates": "8f91cc8ae866de249cb75621c340c21ce0bb7d3e7e75295142164340660e1976",
+        "Conjectures.LonelinessSmallRunner": "f8ac5325642e26f9c2570293a6b3032dff53d8511f1a3af4c92d8469918ed343",
+        "Conjectures.LonelinessSubspaceDensity": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f",
+        "Conjectures.LonelinessTwoDirections": "bc5068105b096a573a618bb46a2c3c0263dfad2c9ef1cd1c979a99d56324d454",
+        "Conjectures.NonmixedGapDensity": "4f807a024e6eda1b4ec39e7942b2178b41c48b55ab1ed4a8a18c7d535aeaa731",
+        "Conjectures.NonmixedGapPeriodic": "dc479ec5fab7c8912231e3b972f794e2e1558120512666f939b139e8411cc180",
+        "Conjectures.NonmixedGapResidues": "98f3fe3c1fa443c68c8b5d5f80f4e7fc2ec8f6698fc273fc188d9e91b979b737"
+      }
+    },
+    "seven-eight": {
+      "accepted_registry_changed": false,
+      "configuration_sha256": {
+        "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+        "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      "helper_sha256": {
+        "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+        "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+        "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+        "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+        "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+        "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+        "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+      },
+      "legacy_prefixes": [
+        "Loneliness."
+      ],
+      "project_module_count": 16,
+      "required_theorem_count": 26,
+      "required_theorems": [
+        "Loneliness.SevenSpectrumRealization.realizes",
+        "Loneliness.SevenSpectrumRealization.proposed_positive_below",
+        "Loneliness.EightSpectrumRealization.realizes",
+        "Loneliness.EightSpectrumRealization.proposed_positive_below",
+        "Loneliness.HigherSpectrumBounds.seven_row_values",
+        "Loneliness.HigherSpectrumBounds.eight_row_values",
+        "Loneliness.HigherSpectrumBounds.seven_row_arithmetic",
+        "Loneliness.HigherSpectrumBounds.eight_row_arithmetic",
+        "Loneliness.HigherSpectrumBounds.denominator_dvd",
+        "Loneliness.HigherSpectrumBounds.denominator_le",
+        "Loneliness.HigherSpectrumBounds.reduced_fraction_unique",
+        "Loneliness.HigherSpectrumBounds.consecutive_denominator_bound",
+        "Loneliness.HigherSpectrumBounds.exceptional_denominator_bound",
+        "Loneliness.HigherSpectrumBounds.seven_speed_bound",
+        "Loneliness.HigherSpectrumBounds.eight_speed_bound",
+        "Loneliness.HigherSpectrumBounds.seven_sharp_witness",
+        "Loneliness.HigherSpectrumBounds.eight_sharp_witness",
+        "Loneliness.HigherSpectrumBounds.seven_constant_optimal",
+        "Loneliness.HigherSpectrumBounds.eight_constant_optimal",
+        "Loneliness.HigherSpectrumBounds.known_seven_spectrum",
+        "Loneliness.HigherSpectrumBounds.exceptional_value_proposed",
+        "Loneliness.HigherSpectrumBounds.known_eight_spectrum",
+        "Loneliness.HigherSpectrumBounds.seven_reduced_forms",
+        "Loneliness.HigherSpectrumBounds.eight_reduced_form",
+        "Loneliness.HigherSpectrumBounds.seven_reduced_denominator_defect",
+        "Loneliness.HigherSpectrumBounds.eight_reduced_denominator_defect"
+      ],
+      "roots": [
+        "Conjectures.LonelinessSevenSpectrumRealization",
+        "Conjectures.LonelinessEightSpectrumRealization",
+        "Conjectures.LonelinessHigherSpectrumBounds"
+      ],
+      "schema": "higher-spectrum-realization-exact-v1",
+      "scope": "Unconditional realization of every proposed seven- and eight-speed spectrum value. Sharp maximum-speed bounds with factors 13/5 and 21/17 on every stated family and all 44 sporadic rows, including permutations and every positive-denominator representation of the exact value. Membership in the listed families is explicit; classification of arbitrary speed tuples remains unproved. The exact value set within the stated candidates and its reduced numerator/denominator alternatives are also proved.",
+      "source_policy": {
+        "fresh_project_objects": true,
+        "linter_override": false,
+        "warning_as_error": true
+      },
+      "source_sha256": {
+        "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+        "Conjectures.LonelinessConsecutiveFamily": "9bc1e98818ff6ca84dac376bba158eb198caf147a94ef8cd6d864209c50b9a7c",
+        "Conjectures.LonelinessConsecutiveFamilyCertificates": "883c862287510867880d0f5c8fbf698c65fffab11627db0950cb2257aa40e1da",
+        "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+        "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+        "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+        "Conjectures.LonelinessEightSpectrumRealization": "5772e2ad4a6a3d70a9f281a26644c01cecedba8775452b29240a44feff7025d2",
+        "Conjectures.LonelinessExceptionalEightFamily": "6a395a3a44414b7798cc54abd43c9fdbcd9b58b98ae6509f0dd0ac89f00672e1",
+        "Conjectures.LonelinessExceptionalEightFamilyCertificates": "c14ddc95523564e1340a91fbaef1cbde33211b159df63ee90ad2ff92fdf39318",
+        "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+        "Conjectures.LonelinessHigherExamplesCertificate": "41f2ddf51d094c74f7e54bcb52d7535ebfd8fbcbf15a1796df548ea62dbef5bf",
+        "Conjectures.LonelinessHigherExamplesEight": "8ae03a27b2da2ecf6ade213bdd68046266e99158c6c58685e2cf81c047f089ff",
+        "Conjectures.LonelinessHigherExamplesSeven": "b38ea3d232397822aeeecbb6ad09e2f982ff7e95a6327a489d06d08718f68f78",
+        "Conjectures.LonelinessHigherSpectrumBounds": "70523ace8d6880b61ed5e9149aaf2477b9b3fb43faf0d1fe1eecfeb27809148d",
+        "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+        "Conjectures.LonelinessSevenSpectrumRealization": "ac38a2b2d7ad04cd6b6f888a414e3ebb42ec97374cd6fd65dd25941381e25c34"
+      }
+    },
+    "seven-low-gap": {
+      "accepted_registry_changed": false,
+      "configuration_sha256": {
+        "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+        "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      "helper_sha256": {
+        "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+        "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+        "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+        "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+        "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+        "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+        "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+      },
+      "legacy_prefixes": [
+        "Loneliness."
+      ],
+      "project_module_count": 17,
+      "required_theorem_count": 8,
+      "required_theorems": [
+        "Loneliness.SevenLowGapInput.seven_row_low_shapes",
+        "Loneliness.SevenLowGapInput.consecutive_low_parameter",
+        "Loneliness.SevenLowGapInput.known_seven_low_shapes",
+        "Loneliness.SevenLowGapInput.base_value",
+        "Loneliness.SevenLowGapInput.known_seven_eighth_iff",
+        "Loneliness.SevenLowGapInput.normalized_low_shapes",
+        "Loneliness.SevenLowGapInput.sevenSpeedGap_of_primitiveClassification",
+        "Loneliness.SevenLowGapInput.low_value_eq_eighth"
+      ],
+      "roots": [
+        "Conjectures.LonelinessSevenLowGapInput"
+      ],
+      "schema": "higher-spectrum-realization-exact-v1",
+      "scope": "The seven-speed low-gap input used in the eight-coordinate plane argument. Within the stated seven-speed candidates, values below 3/23 have exactly the three literal base speed lists and equal 1/8. An explicit primitive seven-speed classification hypothesis extends this conclusion to arbitrary positive distinct seven-speed lists, with the positive gcd scaling retained. The primitive classification itself is not proved or assumed as an axiom.",
+      "source_policy": {
+        "fresh_project_objects": true,
+        "linter_override": false,
+        "warning_as_error": true
+      },
+      "source_sha256": {
+        "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+        "Conjectures.LonelinessConsecutiveFamily": "9bc1e98818ff6ca84dac376bba158eb198caf147a94ef8cd6d864209c50b9a7c",
+        "Conjectures.LonelinessConsecutiveFamilyCertificates": "883c862287510867880d0f5c8fbf698c65fffab11627db0950cb2257aa40e1da",
+        "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+        "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+        "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+        "Conjectures.LonelinessEightSpectrumRealization": "5772e2ad4a6a3d70a9f281a26644c01cecedba8775452b29240a44feff7025d2",
+        "Conjectures.LonelinessExceptionalEightFamily": "6a395a3a44414b7798cc54abd43c9fdbcd9b58b98ae6509f0dd0ac89f00672e1",
+        "Conjectures.LonelinessExceptionalEightFamilyCertificates": "c14ddc95523564e1340a91fbaef1cbde33211b159df63ee90ad2ff92fdf39318",
+        "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+        "Conjectures.LonelinessHigherExamplesCertificate": "41f2ddf51d094c74f7e54bcb52d7535ebfd8fbcbf15a1796df548ea62dbef5bf",
+        "Conjectures.LonelinessHigherExamplesEight": "8ae03a27b2da2ecf6ade213bdd68046266e99158c6c58685e2cf81c047f089ff",
+        "Conjectures.LonelinessHigherExamplesSeven": "b38ea3d232397822aeeecbb6ad09e2f982ff7e95a6327a489d06d08718f68f78",
+        "Conjectures.LonelinessHigherSpectrumBounds": "70523ace8d6880b61ed5e9149aaf2477b9b3fb43faf0d1fe1eecfeb27809148d",
+        "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+        "Conjectures.LonelinessSevenLowGapInput": "0414bef103ecf60ba2c27872477061abfdd86f7dcfcdd043be6877ad4849b427",
+        "Conjectures.LonelinessSevenSpectrumRealization": "ac38a2b2d7ad04cd6b6f888a414e3ebb42ec97374cd6fd65dd25941381e25c34"
+      }
+    },
+    "six-arithmetic": {
+      "accepted_registry_changed": false,
+      "configuration_sha256": {
+        "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+        "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      "helper_sha256": {
+        "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+        "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+        "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+        "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+        "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+        "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+        "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+      },
+      "legacy_prefixes": [
+        "Loneliness."
+      ],
+      "project_module_count": 13,
+      "required_theorem_count": 14,
+      "required_theorems": [
+        "Loneliness.SixSpectrumArithmetic.first_family_coprime",
+        "Loneliness.SixSpectrumArithmetic.second_family_coprime",
+        "Loneliness.SixSpectrumArithmetic.first_family_value",
+        "Loneliness.SixSpectrumArithmetic.second_family_value",
+        "Loneliness.SixSpectrumArithmetic.parameter_iff_reduced_families",
+        "Loneliness.SixSpectrumArithmetic.reduced_denominator_restrictions",
+        "Loneliness.SixSpectrumArithmetic.reduced_families_realized",
+        "Loneliness.SixSpectrumArithmetic.denominator_conditions_not_sufficient",
+        "Loneliness.SixSporadicBounds.row_values",
+        "Loneliness.SixSporadicBounds.row_arithmetic",
+        "Loneliness.SixSporadicBounds.listed_value_form",
+        "Loneliness.SixSporadicBounds.listed_spectrum_parameter",
+        "Loneliness.SixSporadicBounds.listed_speed_bound",
+        "Loneliness.SixSporadicBounds.listed_reduced_denominator"
+      ],
+      "roots": [
+        "Conjectures.LonelinessSixSpectrumArithmetic",
+        "Conjectures.LonelinessSixSporadicBounds"
+      ],
+      "schema": "higher-spectrum-realization-exact-v1",
+      "scope": "Exact reduced rational forms of the proposed six-speed spectrum and unconditional realization of each reduced family. Odd denominator and gap one or three are proved necessary, with an explicit counterexample to their sufficiency. This does not prove exhaustive classification of all six-speed tuples. The exact nine sporadic sextuples also have their stated values, the required parameter form, speed below three times every positive representing denominator, and reduced denominator six times the numerator plus one. Permutations are allowed; off-list exhaustiveness remains separate.",
+      "source_policy": {
+        "fresh_project_objects": true,
+        "linter_override": false,
+        "warning_as_error": true
+      },
+      "source_sha256": {
+        "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+        "Conjectures.LonelinessCertificate": "7eccb4390fe8a11a0447a4c69e187d74665dfd31c8e59b8b068f3a7bcb78a99d",
+        "Conjectures.LonelinessConsecutiveFamily": "9bc1e98818ff6ca84dac376bba158eb198caf147a94ef8cd6d864209c50b9a7c",
+        "Conjectures.LonelinessConsecutiveFamilyCertificates": "883c862287510867880d0f5c8fbf698c65fffab11627db0950cb2257aa40e1da",
+        "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+        "Conjectures.LonelinessExamples": "715a3b52bb3fb5747e07883cd1d1417764dab7c52848807b9f50e28c3f929dd9",
+        "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+        "Conjectures.LonelinessMax": "db988be330f37e6ec119204b24738bc9daa7eff40f86bcd8845ce164612ec4b9",
+        "Conjectures.LonelinessPairBridge": "eb4326c07d8695b97b4874e08b15f902338491769d85f77a5b1bd926b09e5435",
+        "Conjectures.LonelinessSixProgression": "87356deb94b12b9b9872f97283080ac28a95a76c164ed7e8f445c10cc93070cb",
+        "Conjectures.LonelinessSixSpectrumArithmetic": "8faa8fea665b8e2d4673645eea5e3cecbe069bac66fb9c816be3d35c8c600774",
+        "Conjectures.LonelinessSixSpectrumRealization": "13cc983823bbea286c83191d9b131934bba7a4122b0d579db34ebd3bb646d55b",
+        "Conjectures.LonelinessSixSporadicBounds": "97ae0d8c4182e48623f0196fe4800351eba1376ec5627003972489a8a2455dce"
+      }
+    },
+    "six-plane-data-pilots": {
+      "accepted_registry_changed": false,
+      "configuration_sha256": {
+        "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+        "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      "helper_sha256": {
+        "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+        "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+        "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+        "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+        "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+        "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+        "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+      },
+      "legacy_prefixes": [
+        "Loneliness."
+      ],
+      "project_module_count": 20,
+      "required_theorem_count": 9,
+      "required_theorems": [
+        "Loneliness.SixPlane.Data.pilotSmall",
+        "Loneliness.SixPlane.Data.pilotEight",
+        "Loneliness.SixPlane.Data.pilotForty",
+        "Loneliness.SixPlane.Data.directions_complete",
+        "Loneliness.SixPlane.Data.directionCoverageCheck_of_fixed_chunks",
+        "Loneliness.SixPlane.Data.partialCheck_sound",
+        "Loneliness.SixPlane.Data.enumeratedPairsChecked_of_partialChecks",
+        "Loneliness.SixPlane.Data.enumeratedPairsChecked_of_fixed_chunks",
+        "Loneliness.SixPlane.Data.candidatePairsChecked_of_fixed_chunks"
+      ],
+      "roots": [
+        "Conjectures.LonelinessSixPlaneDataPilotSmall",
+        "Conjectures.LonelinessSixPlaneDataPilotEight",
+        "Conjectures.LonelinessSixPlaneDataPilotForty",
+        "Conjectures.LonelinessSixPlaneDataCoverage",
+        "Conjectures.LonelinessSixPlaneChunkSoundness"
+      ],
+      "schema": "higher-spectrum-realization-exact-v1",
+      "scope": "The complete 10-pattern coordinate-permutation lookup coverage, checked through 120 bounded 60-rank blocks and a proved quotient/remainder join. The 32-, 256-, and 1280-case certificate pilots are also checked. Generic finite certificate joins cover every row for any positive chunk size with blocks times size equal to 360; their complete numerical chunk checks remain explicit inputs. This task does not claim full finite candidate-pair coverage or unconditional plane classification.",
+      "source_policy": {
+        "fresh_project_objects": true,
+        "linter_override": false,
+        "warning_as_error": true
+      },
+      "source_sha256": {
+        "Conjectures.LonelinessSixPlaneChunkSoundness": "5142f89f656b1498cff54e8d5ed0d8cbcbaf6daa4b2924ba9afaf968827a318f",
+        "Conjectures.LonelinessSixPlaneDataCoverage": "e28203c4dc4da6e0078ece20dfc4c16a3a793994bdc0ac43860d8727eefdb4ce",
+        "Conjectures.LonelinessSixPlaneDataCoverage00": "571b0452eec0a9110921a7e899be8f7f04f20f88173e03ffcb541c92cad63752",
+        "Conjectures.LonelinessSixPlaneDataCoverage01": "fd22b5f470139dfa5d69de8d86a544b59aa77367bb0a99e3618da90400fa7195",
+        "Conjectures.LonelinessSixPlaneDataCoverage02": "ec229d535b8c0eba462bf4674d103fadd78bf4faed4a9ce63b0087fb37907249",
+        "Conjectures.LonelinessSixPlaneDataCoverage03": "e15539a5c7e4ab336aba6730abd8c7e0357fd6ddb4a2f8438348f0434a9a3162",
+        "Conjectures.LonelinessSixPlaneDataCoverage04": "e6574ad25eae23da283d31c95dc141f9206e552855142d65671358afa44024f2",
+        "Conjectures.LonelinessSixPlaneDataCoverage05": "302a33ff71ab58be28622134c9fa6c1b8b3d12700aa5ddbfb514e5a53b0caa3c",
+        "Conjectures.LonelinessSixPlaneDataCoverage06": "33111f8659762a5c24be58b17d70d09fc7a27cdcf69da5845adee5683a4eccbf",
+        "Conjectures.LonelinessSixPlaneDataCoverage07": "e9a2c7f8b639fce8b55eb4d36247a9898b92feecacc39a78ae23f5934a532ecc",
+        "Conjectures.LonelinessSixPlaneDataCoverage08": "b1476278eee657051fadbc130a242accbadb8096c025cd2a35d69068a1985cad",
+        "Conjectures.LonelinessSixPlaneDataCoverage09": "30236dedd92815f9527e457e718db4595ea3f34fa7b4b0609fe290515b85de0d",
+        "Conjectures.LonelinessSixPlaneDataCoverageSoundness": "2b67b4b1836d306135c6b165150632da7ce2908f713316411409f5902691e473",
+        "Conjectures.LonelinessSixPlaneDataDefs": "f61384a1dc93b2120d1d97ef5260f6f64e2fa3edf0aec94298844e7c471aff42",
+        "Conjectures.LonelinessSixPlaneDataPilotEight": "0f709217c5e653ad821e0659eb091af6d50a70805682de45e794b2d8069b8923",
+        "Conjectures.LonelinessSixPlaneDataPilotForty": "f7b106412f4248fa0e9d9c762e00ea2508fe36a7ab6e82700cb2986992cf3421",
+        "Conjectures.LonelinessSixPlaneDataPilotSmall": "997136223660894536e3e39ab79f96c727850adb6d4aab6c75efaa3bae450114",
+        "Conjectures.LonelinessSixPlaneDataTables": "440f60d6c8ba1cb3565b3725b63857f9ee92c536009f2ec9958a4c56396122b2",
+        "Conjectures.LonelinessSixPlaneDefs": "60ace6bec6c078b9111a739377ea0fc61da2cb0614c7914f6b2d6ebb7d8ed786",
+        "Conjectures.LonelinessSixPlaneEnumeration": "d03868c70675caac2ea59d0acdfe5646a111acb0d50ebf6edade3aa487aed048"
+      }
+    },
+    "six-plane-semantics": {
+      "accepted_registry_changed": false,
+      "configuration_sha256": {
+        "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+        "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      "helper_sha256": {
+        "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+        "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+        "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+        "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+        "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+        "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+        "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+      },
+      "legacy_prefixes": [
+        "Loneliness."
+      ],
+      "project_module_count": 63,
+      "required_theorem_count": 31,
+      "required_theorems": [
+        "Loneliness.SixPlane.integer_direction_classCount",
+        "Loneliness.SixPlane.value_lower_of_classCount",
+        "Loneliness.SixPlane.classCount_lt_six_of_same",
+        "Loneliness.SixPlane.no_same_coordinate_of_low_plane",
+        "Loneliness.SixPlane.critical_of_repeated_direction",
+        "Loneliness.SixPlane.two_critical_integer_directions",
+        "Loneliness.SixPlane.support_completion",
+        "Loneliness.SixPlane.critical_direction_normalization",
+        "Loneliness.SixPlane.bool_signs_coverage",
+        "Loneliness.SixPlane.normalized_low_plane",
+        "Loneliness.SixPlane.lineTest_of_low_plane",
+        "Loneliness.SixPlane.admissibleTest_of_low_plane",
+        "Loneliness.SixPlane.standardPlane_finrank_le_two",
+        "Loneliness.SixPlane.acceptanceCheck_sound",
+        "Loneliness.SixPlane.criticalPlane_of_signedCoordinates",
+        "Loneliness.SixPlane.certificateCheck_sound",
+        "Loneliness.SixPlane.critical_plane_of_low_value_of_checked",
+        "Loneliness.SixPlane.critical_parameters_of_low",
+        "Loneliness.SixPlane.first_family_low_parameter",
+        "Loneliness.SixPlane.second_family_ge_two_elevenths",
+        "Loneliness.SixPlane.primitive_critical_low_tuple",
+        "Loneliness.SixPlane.sporadic_low_tuple",
+        "Loneliness.SixPlane.fiveSpeedGap_of_sporadicExhaustion",
+        "Loneliness.SixPlane.permutation_rank_check",
+        "Loneliness.SixPlane.permutationAt_rank",
+        "Loneliness.SixPlane.directionCoverageCheck_sound",
+        "Loneliness.SixPlane.candidate_eq_rowCandidate",
+        "Loneliness.SixPlane.certificateRowCheck_sound",
+        "Loneliness.SixPlane.certificateBlockCheck_sound",
+        "Loneliness.SixPlane.enumeratedPairsChecked_of_blocks",
+        "Loneliness.SixPlane.candidatePairsChecked_of_enumeration"
+      ],
+      "roots": [
+        "Conjectures.LonelinessSixPlaneClassificationCore",
+        "Conjectures.LonelinessSixPlaneFiveInput",
+        "Conjectures.LonelinessSixPlaneEnumeration"
+      ],
+      "schema": "higher-spectrum-realization-exact-v1",
+      "scope": "Six-coordinate rational-plane normalization, repeated-direction and no-identical-coordinate lemmas, finite certificate semantics, and recognition of the three literal critical planes up to coordinate signs and permutations. The four-speed runner bound, exact five-speed low-gap classification, and complete checked candidate-pair coverage remain explicit theorem inputs; no numerical finite coverage or unconditional plane classification is claimed. The exact five-speed low-gap hypothesis is additionally derived from the existing literal SporadicExhaustion statement. All 720 permutation ranks are checked, and abstract numerical direction coverage plus row/block certificate checks imply full CandidatePairsChecked; the numerical coverage and block checks themselves are not supplied here.",
+      "source_policy": {
+        "fresh_project_objects": true,
+        "linter_override": false,
+        "warning_as_error": true
+      },
+      "source_sha256": {
+        "Conjectures.HaralambisCounting": "b315781d9fed35b6490547c52ba416033d8fa1ce74e234d1ca75c1c08947165f",
+        "Conjectures.HaralambisDefects": "e97a0a15cbcbfc7962aaac1409051fed8b363f1475b728d20f61117cc363e9c3",
+        "Conjectures.HaralambisDensity": "6f5c1d408c7e017f5c1bb60d832a8a566267f137c932498df0826f6a35e1ab25",
+        "Conjectures.HaralambisFaces": "bb71842e0b01a8975d847e8011c72e25e6f171f5aecba2865a9f1497caf0aedd",
+        "Conjectures.HaralambisIntervals": "8d5a75119a748f371493d1d47508136f2793d4e13ca74b52435e662c5aef7219",
+        "Conjectures.HaralambisOrientation": "007a67ae5c701ad51e7d9957f5066490941c1d00ced13b7a251d94916d7d64a8",
+        "Conjectures.HaralambisPairSum": "032549371a9c2d24599a2f090e848dc7f7f9cfaeb79dacbbfc8d6c0c14c10998",
+        "Conjectures.HaralambisPeriods": "a8e3ada09e8d9cac8e2e816de5b55739c3a36c73bb2caebccc9bcb2fa3ba6daa",
+        "Conjectures.HaralambisTheorem": "a99e2c6d08677c459e0e405a211468c8fa192e2a6f9ed0078619f00d8e7d8fd8",
+        "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+        "Conjectures.LonelinessCoalescence": "5518fdfed0369763c2ba701272edb25fbaafde2d230c869f4412f2c441ef9d1d",
+        "Conjectures.LonelinessCoalescenceAvoiding": "bcdb57b0b68a1d1eb2dddb4626f1a11ffb21d82e7106004d5638c499a1acdc81",
+        "Conjectures.LonelinessCoalescenceValue": "b2b7037f036e3fdeb5e52e0314fd7126db2ae921c6c182abf6175c5884a5bcb7",
+        "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+        "Conjectures.LonelinessCoordinateClasses": "0075b701fd3fa51feef62f59850dfaa3dfece95e3287d51a7afb438a76691b63",
+        "Conjectures.LonelinessCoordinateSubspace": "a6a58ef2dfb5262e43641aae3e18c9d7ddcc8163aebad18cf6eb2416ae46bfea",
+        "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+        "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+        "Conjectures.LonelinessCriticalNormalization": "f82b866d5b704a3865bf2ac08f96597b5ab0a13f5904e3175b65c49cebee0695",
+        "Conjectures.LonelinessCriticalScaling": "37458b52b8fe08f098f51545ed3bd4b10b6dac06be89824325d81dad508d4fa8",
+        "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+        "Conjectures.LonelinessFiveExamples": "759fbcc9572adc6bf148761b00e91539144355269a13a86fd3796c859222e827",
+        "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+        "Conjectures.LonelinessFiveSpeedBoundedCandidateDefs": "839670166c15914d0abd06efdac6cac967481de21603454e04f4286ec977c3d8",
+        "Conjectures.LonelinessFiveSpeedBoundedCandidates": "16c509288147ce802e46e4e9431d6a9b731836f824349f2827e265491af51266",
+        "Conjectures.LonelinessFiveSpeedClassificationCore": "fefadf5e54c3a78e823d3f263b2eb14bec26507db305f7d0aad98265e0b8879c",
+        "Conjectures.LonelinessFiveSpeedCriticalCheck": "2afef774238e4afaf65a883c356020f0dbbd56c4b6e1f9ef9cd45768e101726a",
+        "Conjectures.LonelinessFiveSpeedPrimitiveDirection": "3331efe2bfb0a848ac343486ea5fab980d311f2122254b7c8c7afda52ad0449d",
+        "Conjectures.LonelinessFiveSpeedSporadic": "bafe0cc6b98c3f2ff6a229b88f8838172c0fc75cfabc8c9dc9808505a48bc985",
+        "Conjectures.LonelinessIntegerDirection": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6",
+        "Conjectures.LonelinessModularDirections": "f838c441e3a59593cfa43fe55edb5d63db43af22a3e0f60d730d75b1d7664dd4",
+        "Conjectures.LonelinessModularShortVector": "d75206b95714a27fc37768daae09f450bdd7acac45130d62278521d4891bf6a3",
+        "Conjectures.LonelinessModularWitness": "c5329d2e079f6d04d0079ab3fe90d814d1f3393b2381c74be6375ce091b569fb",
+        "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+        "Conjectures.LonelinessPacking": "61ae885750aec875160f7e1ea522a581aa18a576871fe89baf70f1c11f026d7d",
+        "Conjectures.LonelinessPackingLower": "c9bd26dd3ae91a4e2b8513bd755936c5fdaf6d2faa31fe353b87498d0a200ca3",
+        "Conjectures.LonelinessPlaneAdmissibility": "9827e0baf07ba71cc7fa3463692713077a79e6f9f80080300bc5161635427688",
+        "Conjectures.LonelinessPlaneCertificateDefs": "9cfa5e605ff6ca79dcc202fd1c500f1bfb984358a044f5ef295def30cd704b9f",
+        "Conjectures.LonelinessPlaneDirections": "af14f52d921cf44c1ff423d222007e5991a32efd4a024e24ff17ab257545907c",
+        "Conjectures.LonelinessPlaneGap": "78cad68e4587af398e088d2e6e0a124c919a9b31cae3b8b0e80bacfdd12923d0",
+        "Conjectures.LonelinessPlaneNormalization": "22b14225c6c6f363898f26ace7ad380bd149c46da8af423836f5150c8435c9f7",
+        "Conjectures.LonelinessPlaneProduct": "af9cca2a7667d11f458702ae32bfe6dd6f6eade147daa4eb4c05833d24911e3b",
+        "Conjectures.LonelinessPlaneProductFamily": "7a36a11f855327242ed6e440efd1b9a8752554965e0cd2f78c05623380b8529d",
+        "Conjectures.LonelinessProductSpectrum": "176e8761aaaad096a64d185d517ccd5435f351f29ad1239df05d8ef82a1f5dd6",
+        "Conjectures.LonelinessRational": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
+        "Conjectures.LonelinessRationalSubspace": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88",
+        "Conjectures.LonelinessSignedCoordinates": "8f91cc8ae866de249cb75621c340c21ce0bb7d3e7e75295142164340660e1976",
+        "Conjectures.LonelinessSixPlaneAdmissibility": "7b52d37c675a46cd6454a5c320a7f9ffd078406a7d304b58680641f067d77a1c",
+        "Conjectures.LonelinessSixPlaneCertificateSoundness": "c2dac25c79fba08ff605a04e0a3a91c9af52b0b132db51f4d771f0506f9c12c1",
+        "Conjectures.LonelinessSixPlaneClassificationCore": "7eb4c9007beddf8223d47d7998fc9348b07f0462ef005ecb9016e2bc0deca248",
+        "Conjectures.LonelinessSixPlaneCriticalNormalization": "58a31a8735db6fe2020b488b26060da6ca446147a78891886fac9bac9bbd1ddb",
+        "Conjectures.LonelinessSixPlaneDefs": "60ace6bec6c078b9111a739377ea0fc61da2cb0614c7914f6b2d6ebb7d8ed786",
+        "Conjectures.LonelinessSixPlaneEnumeration": "d03868c70675caac2ea59d0acdfe5646a111acb0d50ebf6edade3aa487aed048",
+        "Conjectures.LonelinessSixPlaneFiveInput": "55f7640e8d8f9354dff6c37e651b3af0cb756791cb7a04f0b8fdaaa7ef680193",
+        "Conjectures.LonelinessSixPlaneGap": "52b0c4366980d998ab52907eef8e82b6c693c824ca046ed45aa99e9e68eb7975",
+        "Conjectures.LonelinessSixPlaneGeometry": "ce9f46dcc72190862e2e224f7515a45d3d32f7174c3d674b6c51aae23071e5c7",
+        "Conjectures.LonelinessSixPlaneNormalization": "513a8ffa33e00faa15edc903bf9d75c5de113d1cfce4d53a4a2c3ecd64016736",
+        "Conjectures.LonelinessSmallRunner": "f8ac5325642e26f9c2570293a6b3032dff53d8511f1a3af4c92d8469918ed343",
+        "Conjectures.LonelinessSubspaceDensity": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f",
+        "Conjectures.LonelinessTwoDirections": "bc5068105b096a573a618bb46a2c3c0263dfad2c9ef1cd1c979a99d56324d454",
+        "Conjectures.NonmixedGapDensity": "4f807a024e6eda1b4ec39e7942b2178b41c48b55ab1ed4a8a18c7d535aeaa731",
+        "Conjectures.NonmixedGapPeriodic": "dc479ec5fab7c8912231e3b972f794e2e1558120512666f939b139e8411cc180",
+        "Conjectures.NonmixedGapResidues": "98f3fe3c1fa443c68c8b5d5f80f4e7fc2ec8f6698fc273fc188d9e91b979b737"
+      }
+    },
+    "triangles": {
+      "accepted_registry_changed": false,
+      "configuration_sha256": {
+        "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+        "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      "helper_sha256": {
+        "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+        "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+        "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+        "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+        "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+        "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+        "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+      },
+      "legacy_prefixes": [
+        "Loneliness."
+      ],
+      "project_module_count": 34,
+      "required_theorem_count": 23,
+      "required_theorems": [
+        "Loneliness.HigherTriangleConsequences.additive_perm",
+        "Loneliness.HigherTriangleConsequences.witness_of_additive",
+        "Loneliness.HigherTriangleConsequences.witness_not_triangleFree",
+        "Loneliness.HigherTriangleConsequences.six_rows_additive",
+        "Loneliness.HigherTriangleConsequences.seven_rows_additive",
+        "Loneliness.HigherTriangleConsequences.eight_rows_additive",
+        "Loneliness.HigherTriangleConsequences.six_sporadic_additive",
+        "Loneliness.HigherTriangleConsequences.seven_candidate_additive",
+        "Loneliness.HigherTriangleConsequences.eight_candidate_additive",
+        "Loneliness.HigherTriangleConsequences.six_product_additive",
+        "Loneliness.HigherTriangleConsequences.six_third_triangle",
+        "Loneliness.HigherTriangleConsequences.six_candidate_triangle",
+        "Loneliness.HigherTriangleConsequences.seven_candidate_triangle",
+        "Loneliness.HigherTriangleConsequences.eight_candidate_triangle",
+        "Loneliness.HigherTriangleConsequences.witness_of_normalize",
+        "Loneliness.HigherTriangleConsequences.triangle_free_colorable_of_primitive_classification",
+        "Loneliness.HigherTriangleConsequences.zhu_of_primitive_classification",
+        "Loneliness.HigherTriangleConsequences.six_triangle_free_colorable",
+        "Loneliness.HigherTriangleConsequences.seven_triangle_free_colorable",
+        "Loneliness.HigherTriangleConsequences.eight_triangle_free_colorable",
+        "Loneliness.HigherTriangleConsequences.six_zhu",
+        "Loneliness.HigherTriangleConsequences.seven_zhu",
+        "Loneliness.HigherTriangleConsequences.eight_zhu"
+      ],
+      "roots": [
+        "Conjectures.LonelinessHigherTriangleConsequences"
+      ],
+      "schema": "higher-spectrum-realization-exact-v1",
+      "scope": "Actual integer-distance-graph triangle witnesses for the literal six-speed product and signed third families, all nine six-speed sporadics, the stated seven- and eight-speed families, and all 44 higher sporadics. Gcd normalization transports witnesses. The six-, seven- and eight-distance Zhu consequences are proved from explicitly stated primitive near-tight classification hypotheses. Exhaustive classification and finite coverage remain separate obligations.",
+      "source_policy": {
+        "fresh_project_objects": true,
+        "linter_override": false,
+        "warning_as_error": true
+      },
+      "source_sha256": {
+        "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+        "Conjectures.LonelinessCertificate": "7eccb4390fe8a11a0447a4c69e187d74665dfd31c8e59b8b068f3a7bcb78a99d",
+        "Conjectures.LonelinessCoalescence": "5518fdfed0369763c2ba701272edb25fbaafde2d230c869f4412f2c441ef9d1d",
+        "Conjectures.LonelinessCoalescenceValue": "b2b7037f036e3fdeb5e52e0314fd7126db2ae921c6c182abf6175c5884a5bcb7",
+        "Conjectures.LonelinessConsecutiveFamily": "9bc1e98818ff6ca84dac376bba158eb198caf147a94ef8cd6d864209c50b9a7c",
+        "Conjectures.LonelinessConsecutiveFamilyCertificates": "883c862287510867880d0f5c8fbf698c65fffab11627db0950cb2257aa40e1da",
+        "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+        "Conjectures.LonelinessCoordinateClasses": "0075b701fd3fa51feef62f59850dfaa3dfece95e3287d51a7afb438a76691b63",
+        "Conjectures.LonelinessCoordinateSubspace": "a6a58ef2dfb5262e43641aae3e18c9d7ddcc8163aebad18cf6eb2416ae46bfea",
+        "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+        "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+        "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+        "Conjectures.LonelinessDistanceColoring": "d19c38a1a137ca8c051ba636650dae4f85341c9fe2a03f189ed1bb5124496ade",
+        "Conjectures.LonelinessEightSpectrumRealization": "5772e2ad4a6a3d70a9f281a26644c01cecedba8775452b29240a44feff7025d2",
+        "Conjectures.LonelinessExamples": "715a3b52bb3fb5747e07883cd1d1417764dab7c52848807b9f50e28c3f929dd9",
+        "Conjectures.LonelinessExceptionalEightFamily": "6a395a3a44414b7798cc54abd43c9fdbcd9b58b98ae6509f0dd0ac89f00672e1",
+        "Conjectures.LonelinessExceptionalEightFamilyCertificates": "c14ddc95523564e1340a91fbaef1cbde33211b159df63ee90ad2ff92fdf39318",
+        "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+        "Conjectures.LonelinessHigherExamplesCertificate": "41f2ddf51d094c74f7e54bcb52d7535ebfd8fbcbf15a1796df548ea62dbef5bf",
+        "Conjectures.LonelinessHigherExamplesEight": "8ae03a27b2da2ecf6ade213bdd68046266e99158c6c58685e2cf81c047f089ff",
+        "Conjectures.LonelinessHigherExamplesSeven": "b38ea3d232397822aeeecbb6ad09e2f982ff7e95a6327a489d06d08718f68f78",
+        "Conjectures.LonelinessHigherSpectrumBounds": "70523ace8d6880b61ed5e9149aaf2477b9b3fb43faf0d1fe1eecfeb27809148d",
+        "Conjectures.LonelinessHigherTriangleConsequences": "6f3764ddcd35c678c5d09e74ae0dc5207900c2da2603e1c4d779670a9caa571f",
+        "Conjectures.LonelinessIntegerDirection": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6",
+        "Conjectures.LonelinessMax": "db988be330f37e6ec119204b24738bc9daa7eff40f86bcd8845ce164612ec4b9",
+        "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+        "Conjectures.LonelinessPairBridge": "eb4326c07d8695b97b4874e08b15f902338491769d85f77a5b1bd926b09e5435",
+        "Conjectures.LonelinessRationalSubspace": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88",
+        "Conjectures.LonelinessSevenSpectrumRealization": "ac38a2b2d7ad04cd6b6f888a414e3ebb42ec97374cd6fd65dd25941381e25c34",
+        "Conjectures.LonelinessSixProgression": "87356deb94b12b9b9872f97283080ac28a95a76c164ed7e8f445c10cc93070cb",
+        "Conjectures.LonelinessSixSpectrumArithmetic": "8faa8fea665b8e2d4673645eea5e3cecbe069bac66fb9c816be3d35c8c600774",
+        "Conjectures.LonelinessSixSpectrumRealization": "13cc983823bbea286c83191d9b131934bba7a4122b0d579db34ebd3bb646d55b",
+        "Conjectures.LonelinessSixSporadicBounds": "97ae0d8c4182e48623f0196fe4800351eba1376ec5627003972489a8a2455dce",
+        "Conjectures.LonelinessSubspaceDensity": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f"
+      }
+    }
+  }
+}

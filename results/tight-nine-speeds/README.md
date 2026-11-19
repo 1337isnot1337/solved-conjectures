@@ -10,4 +10,4 @@ Run the [exhaustive verifier](verify.py) from the repository root.
 python3 results/tight-nine-speeds/verify.py
 ```
 
-The proof is unrefereed. Lean verifies that the consecutive direction has global value `1/10`. The uniqueness proof remains unformalized. See the [current formalization scope](../../docs/lean-status.md).
+The proof is unrefereed. Lean verifies that the consecutive direction has global value `1/10`, and proves the norm cutoff and prime selection under explicit smaller-dimensional runner bounds. The [exact conditional reduction](../../docs/loneliness-large-norm-lean.md) records the hypotheses and checked evidence. Those runner bounds, the exhaustive modular classification and the uniqueness proof remain open.

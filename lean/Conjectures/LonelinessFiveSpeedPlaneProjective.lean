@@ -18,27 +18,26 @@ def projectiveChart (p : ℕ) (i : Fin (p + 2)) (z : ℕ) : Fin 3 → ZMod p :=
 theorem exists_projectiveChart (p : ℕ) (hp : p.Prime) (u : Fin 3 → ZMod p) :
     ∃ (i : Fin (p + 2)) (z : ℕ) (s : ZMod p),
       z < p ∧ s ≠ 0 ∧ ∀ j, u j = s * projectiveChart p i z j := by
-  letI : Fact p.Prime := ⟨hp⟩
-  letI : NeZero p := ⟨hp.ne_zero⟩
+  let : Fact p.Prime := ⟨hp⟩
+  let : NeZero p := ⟨hp.ne_zero⟩
   by_cases h0 : u 0 = 0
   · by_cases h1 : u 1 = 0
     · let i : Fin (p + 2) := ⟨p + 1, by omega⟩
       have hlt : ¬p + 1 < p := by omega
       have hne : p + 1 ≠ p := by omega
       have hlabels : fiberLabels p i = (0, 0) := by
-        simp [fiberLabels, i, hlt, hne]
+        simp [fiberLabels, i, hlt]
       refine ⟨i, (u 2).val, 1, ZMod.val_lt _, one_ne_zero, ?_⟩
       intro j
       fin_cases j <;>
-        simp [projectiveChart, hlabels, ZMod.natCast_zmod_val, h0, h1]
+        simp [projectiveChart, hlabels, h0, h1]
     · let i : Fin (p + 2) := ⟨p, by omega⟩
       have hlabels : fiberLabels p i = (0, 1) := by simp [fiberLabels, i]
       have hcancel : u 1 * (u 1)⁻¹ = (1 : ZMod p) := mul_inv_cancel₀ h1
       refine ⟨i, ((u 1)⁻¹ * u 2).val, u 1, ZMod.val_lt _, h1, ?_⟩
       intro j
       fin_cases j <;>
-        simp [projectiveChart, hlabels, ZMod.natCast_zmod_val, h0, h1, ← mul_assoc,
-          hcancel]
+        simp [projectiveChart, hlabels, h0, h1]
   · have hi : ((u 0)⁻¹ * u 1).val < p := ZMod.val_lt _
     let i : Fin (p + 2) := ⟨((u 0)⁻¹ * u 1).val, by omega⟩
     have hlabels : fiberLabels p i = (1, ((u 0)⁻¹ * u 1).val) := by
@@ -47,17 +46,17 @@ theorem exists_projectiveChart (p : ℕ) (hp : p.Prime) (u : Fin 3 → ZMod p) :
     refine ⟨i, ((u 0)⁻¹ * u 2).val, u 0, ZMod.val_lt _, h0, ?_⟩
     intro j
     fin_cases j <;>
-      simp [projectiveChart, hlabels, ZMod.natCast_zmod_val, h0, ← mul_assoc, hcancel]
+      simp [projectiveChart, hlabels, h0]
 
 theorem integerResidue_eq_val (p : ℕ) (hp : 0 < p) (a : ℤ) :
     integerResidue p a = (a : ZMod p).val := by
-  letI : NeZero p := ⟨Nat.ne_of_gt hp⟩
+  let : NeZero p := ⟨Nat.ne_of_gt hp⟩
   have h := congrArg Int.toNat (ZMod.val_intCast (n := p) a)
   simpa only [integerResidue, Int.toNat_natCast] using h.symm
 
 theorem integerResidue_cast (p : ℕ) (hp : 0 < p) (a : ℤ) :
     ((integerResidue p a : ℕ) : ZMod p) = (a : ZMod p) := by
-  letI : NeZero p := ⟨Nat.ne_of_gt hp⟩
+  let : NeZero p := ⟨Nat.ne_of_gt hp⟩
   rw [integerResidue_eq_val p hp a, ZMod.natCast_zmod_val]
 
 theorem residue3_cast (p : ℕ) (hp : 0 < p) (a : ThreeIntegerVector) (x y z : ℕ) :
@@ -75,7 +74,7 @@ theorem integer_dotProduct_chart (p : ℕ) (hp : 0 < p) (u : ThreeIntegerVector)
   rw [Matrix.vec3_dotProduct, residue3_cast p hp]
   simp only [Int.cast_add, Int.cast_mul]
   rw [hu 0, hu 1, hu 2]
-  simp [projectiveChart] <;> ring
+  simp [projectiveChart]; ring
 
 /-- Passing from an integer coordinate to its absolute value may negate its
 residue; the folded residue, and hence goodness, is unchanged. -/
@@ -111,8 +110,8 @@ theorem canonicalProjectiveCover_integer (p : ℕ) (hp : p.Prime) (k : Fin 9)
     (∃ a ∈ planeStructuralForms k, (p : ℤ) ∣ dotProduct a u) ∨
       Loneliness.Modular.HasWitness 5 p
         (Loneliness.CoordinateSubspace.integerSpeeds (canonicalMaps k *ᵥ u)) := by
-  letI : Fact p.Prime := ⟨hp⟩
-  letI : NeZero p := ⟨hp.ne_zero⟩
+  let : Fact p.Prime := ⟨hp⟩
+  let : NeZero p := ⟨hp.ne_zero⟩
   obtain ⟨i, z, s, hz, hs, hu⟩ :=
     exists_projectiveChart p hp (fun j => (u j : ZMod p))
   rcases hcover i z hz with hroot | hwitness

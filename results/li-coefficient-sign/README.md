@@ -6,17 +6,17 @@
 
 A tree on 31 vertices with maximum degree 4 has all 6,842 connected partition types and satisfies
 
-\[
+```math
 [e_3e_2^{14}]X_T = 29 > 0, \qquad b_{(3,2^{14})}(T)=8.
-\]
+```
 
 Here `X_T` is the chromatic symmetric function, and `b_lambda(T)` is the number of connected partitions of type `lambda`. The tree is neither a spider nor a caterpillar. It answers **Problem 4.9** and the **first question of Problem 4.6** of [Ethan Y. H. Li, *A quantitative way to e-positivity of trees*, arXiv:2503.09484v2](https://arxiv.org/abs/2503.09484) in the negative, even under the non-spider restriction emphasized in the paper.
 
 The result does **not** refute the Dahlberg--She--van Willigenburg conjecture that every tree of maximum degree at least 4 is not `e`-positive. Indeed, another coefficient of this tree is negative:
 
-\[
+```math
 [e_2^8e_3^5]X_T=-6304.
-\]
+```
 
 ## The explicit tree
 

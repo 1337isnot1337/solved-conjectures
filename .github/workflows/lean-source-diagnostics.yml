@@ -1,0 +1,55 @@
+name: Lean independent strict-source diagnostics
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose_lean_sources.py'
+      - 'scripts/test_diagnose_lean_sources.py'
+      - '.github/workflows/lean-source-diagnostics.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-source-diagnostics-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      LEAN_NUM_THREADS: 1
+      UV_USE_IO_URING: 0
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Test dependency failure isolation and validate the accepted source plan
+        run: |
+          python3 -m py_compile scripts/diagnose_lean_sources.py scripts/test_diagnose_lean_sources.py
+          python3 scripts/test_diagnose_lean_sources.py
+          python3 scripts/diagnose_lean_sources.py --plan > source-diagnostic-plan.json
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-mathlib-cache: true
+      - name: Diagnose all independent strict sources without an acceptance claim
+        run: python3 scripts/diagnose_lean_sources.py --jobs 2 --memory-limit-mib 12288
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lean-strict-source-diagnostics
+          path: |
+            source-diagnostic-plan.json
+            .candidate-artifacts/lean-source-diagnostics/receipt.json
+            .candidate-artifacts/lean-source-diagnostics/logs/
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30

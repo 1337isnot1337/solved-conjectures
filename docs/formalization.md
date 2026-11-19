@@ -12,8 +12,9 @@ adapter, hyperplane residue calculations, and endpoint components. Their
 source, axiom, and independent-kernel checks are recorded in
 [`loneliness-3f6-component-receipts.json`](loneliness-3f6-component-receipts.json)
 and [`loneliness-75df-component-receipts.json`](loneliness-75df-component-receipts.json).
-The geometric assembly, lower-speed classification inputs, and full
-hyperplane counting and density conclusions remain separate obligations.
+Those receipts did not by themselves discharge the geometric assembly or the
+lower-speed classification inputs. The later checkpoints below record the
+accepted scope, including the conditional critical-seven assembly.
 
 ## Coordination, 18 November 2026
 
@@ -113,9 +114,10 @@ the consecutive family for every parameter and every runner count from 2
 through 14, the two exceptional eight-speed families, and classification
 within all three stated eight-speed product families. The seven- and
 eight-speed exceptional examples have exact global values. These statements
-do not supply exhaustive higher-speed classifications. The exact shifted
-hyperplane maximum and its velocity upper bound are registered; its
-probabilistic and counting assertions remain open.
+do not supply exhaustive higher-speed classifications. The complete fixed-hyperplane theorem is registered, including its original
+uniform probability, exact counting, Haar-shift, endpoint and sharpness
+statements. Its exact 72-module closure passed fresh strict sources, the
+all-owned/raw-private audit, and stock kernel replay.
 
 The verified snapshot `c0cf593` passed its source build, the audit of 6,954
 project theorem declarations, and independent kernel replay of all 152 proof
@@ -172,14 +174,14 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
    certificates and lifting to the three listed directions.
 10. Nine-runner equality case: the norm reduction, modular certificates and
     uniqueness of the consecutive direction.
-11. Ten-runner equality case: the corresponding uniform reduction and all
-    modular certificates.
+11. Ten-runner equality case: discharge the lower-runner assumptions of the
+    checked norm reduction, then prove exhaustive modular classification and uniqueness.
 12. Seven-speed spectrum: norm reduction and complete lifting/enumeration;
     the infinite family and all 27 exceptional values are checked.
 13. Eight-speed spectrum: norm reduction and exhaustive lifting outside the
     three classified product families; the listed exceptional values are checked.
-14. Eleven-through-fourteen-runner equality: each uniform reduction, all modular
-    certificates and every stated primitive equality list.
+14. Eleven-through-fourteen-runner equality: discharge the lower-runner assumptions
+    of the checked norm reductions, then prove all modular classifications and uniqueness.
 15. Growing rectangles are complete: real tiling semantics, cumulative
     partition estimates, and the uniform asymptotic over every width `w ≥ h`.
 16. Erdős 607 is complete: actual geometric counting, exact formal and
@@ -188,9 +190,9 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
     proved and registered.
 17. Graffiti.pc Conjecture 318 is complete, including the all-order theorem
     and sharp five-vertex example.
-18. Loneliness on a fixed hyperplane: uniform fixed-tolerance probability
-    bound, exceptional-subspace description,
-    quasipolynomial counts, and the endpoint density for full-support normals.
+18. Loneliness on a fixed hyperplane is complete. Its original uniform
+    probability estimate, exceptional-subspace description, exact counting
+    polynomials, Haar-shift limits, endpoint density and sharpness are proved.
 19. Li coefficient sign, complete: Lean proves the actual tree properties, the
     full coefficient, `b_{(3,2^14)}(T) = 8`, and all 6,842 connected partition
     types, including the graph-component bridge for the cut tree.
@@ -645,3 +647,209 @@ The quotient transport is also checked. From the actual centered rows and an ord
 
 Both exact closures at `20e04e589d227086cc926579fc70806594d8f817` passed strict source checks with warnings treated as errors, the standard-axiom whitelist audit, and independent pinned-kernel replay. The 29 distinct source, verification-script, workflow and toolchain-pin paths in the two receipts were checked against current main before registration. 8 previously unregistered proof modules and 13 named endpoints are added; the accepted prebuild list grows from 878 to 886 proof modules, plus the two roots. Verification of the merged accepted package remains a separate gate.
 [Exact endpoints and receipts](lean-status.md#actual-legendre-pair-matrix-and-quotient-transport).
+
+## Complete two-speed insertion result, 19 November 2026
+
+The full [two-insertion note](../results/lonely-runner-two-insertions/PROOF.md)
+is now checked and registered: unrestricted positive speeds for every
+`p ≥ 3`, the specified real witness interval, the Goddyn–Wong acceleration
+criterion, common-dilation value bound, all small and unbounded branches,
+and the literal three-insertion obstruction with an outside witness.
+No finite certificate or cutoff is an unproved hypothesis.
+
+The exact 27-module closure passed fresh warning-as-error source checks
+without disabling linters, an audit of all 563 owned declarations
+(424 theorems, 11 private declarations, 49 required theorem endpoints),
+and exact stock-kernel replay of every module in a separate process.
+The checked source snapshot is `9f51470529423e8135c08de881cd56f5b1fd9a95`;
+its [raw receipt and original evidence](verification/two-insertions-exact-44524198858/)
+were authenticated before registration. Eighteen new proof modules and
+49 required endpoints are registered, with all 27 source hashes guarded.
+The accepted prebuild list now contains 904 proof modules plus two roots.
+The merged-package gate remains separate. Li remains last.
+[Exact scope](lean-status.md#complete-unrestricted-two-speed-insertion-theorem).
+
+## Six-speed realization direction, 19 November 2026
+
+Both congruence classes in the proposed spectrum now have an unconditional
+Lean realization theorem. Every `P ≥ 7` with `P % 6 = 1 or 5` is realized
+by six distinct positive primitive speeds with exact value `(P−1)/(6P)`.
+The proof includes the all-parameter progression family and `P=11`.
+The exact 11-module closure passed fresh strict sources, the audit of all
+392 owned declarations including 30 private declarations, and 11 exact
+stock-kernel replay targets. All 15 required endpoints are theorems.
+Two proof modules and 13 endpoints are registered, with all checked source
+blobs guarded; the accepted list has 906 proof modules plus two roots.
+The universal six-speed classification and merged-package gate remain separate.
+[Scope and original evidence](lean-status.md#six-speed-spectrum-complete-realization).
+
+## Complete fixed-hyperplane theorem
+
+All original statements of the fixed-hyperplane note are registered. They
+use the original ordered positive, pairwise-distinct integer sample and
+the actual time maximum. The general normal is primitive and real-admissible;
+the endpoint formula alone additionally requires every normal coordinate
+to be nonzero.
+
+The theorem closure proves the deterministic bound and exact containing-torus
+maximum, the uniform `O(1/N)` probability error over all shifts, fixed-shift
+and independent Haar-shift laws, the exact finite proper-subspace description,
+the denominator quasipolynomial, the actual subthreshold numerator at every
+`N≥1` with degree at most `k−2`, the endpoint frequency including `k=2`,
+and the sharp `(1,2,3)` example. No density, finite-fan, Ehrhart, counting
+or classification statement is an unproved premise.
+
+[Run 44531509741/job 135585736594](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44531509741/job/135585736594)
+freshly checked the exact 72-module closure at `ee1f018fef258cdd54f73af31cdaf6485fd151cb`.
+Sources used warnings as errors with no linter override. The all-owned audit
+checked 1,403 declarations, including 1,149 theorems and 44
+private declarations, and confirmed theorem kind for all 106 required
+endpoints. Only `propext`, `Classical.choice` and `Quot.sound`
+were allowed. All 72 modules passed exact singleton stock-kernel replay in
+fresh one-worker processes.
+
+The [unchanged raw receipt](verification/hyperplane-main-exact-44531509741/receipt.json)
+has SHA-256 `1c0d6a6fbe2ea16bbcfa88808ec8d83f0e412217e76c03803780ff0737fa1c15`.
+The [preservation record](verification/hyperplane-main-exact-44531509741/preservation.json)
+authenticates the actual original source, object, audit, log and progress
+bytes. Artifact `14535236819` has ZIP SHA-256 `27d65f3b5d667260dfad8d639f6d1182a3b5e54c032a2e2954d7764e060fe638`.
+
+Registration adds 63 previously unregistered proof modules and 102 new
+required endpoints, with all 72 checked source blobs guarded. The accepted
+list has 969 proof modules plus two roots. This completes the fixed-hyperplane
+result; verification of the merged accepted package remains a separate gate.
+The [result-level scope](../results/loneliness-on-a-hyperplane/LEAN.md)
+records the precise sample, formulas and distributional formulation.
+
+## Conditional nine-through-thirteen speed norm reduction
+
+The 81-module closure of `LonelinessTightNormBounds` is checked and
+registered. For a positive primitive `k`-tuple with `9≤k≤13` and actual
+loneliness value at most `1/(k+1)`, it proves the literal squared-norm
+cutoff and a listed prime dividing no speed, under the explicit hypothesis
+`∀ m, 1≤m → m<k → LonelyRunnerBound m`. The basis geometry,
+nearest-plane bounds, all 7,936 KZ subset rows and prime-product margins
+are proved internally.
+
+[Run 44530735399/job 135583044214](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44530735399/job/135583044214)
+passed at `8162a5dfbe89e441600e7a3bbcc03b573df0880e`: all 81 strict source checks, the all-owned
+audit of 1,696 declarations (1,445 theorems and 538 private declarations),
+all 25 required theorem endpoints, and all 81 exact singleton stock-kernel
+replays. Sources and audit used warnings as errors without a linter override;
+the only allowed axioms were `propext`, `Classical.choice` and `Quot.sound`.
+
+The [unchanged receipt](verification/loneliness-large-norm-exact-44530735399/receipt.json)
+has SHA-256 `fba4b952a87271f9691e983dd69dafc0be5c07617e412884eb82f2894ec2fef5`.
+The [preservation record](verification/loneliness-large-norm-exact-44530735399/preservation.json)
+authenticates the actual original sources, objects, audit and process records.
+Artifact `14535137698` has ZIP SHA-256
+`b6678fb2e27c872d01a2bbd6bea9982abc42411e79999b6c4113961195ab3366`.
+
+Registration adds 64 proof modules and 25 required endpoints. The accepted
+list then contains 1,033 proof modules plus two roots. The merged-package
+gate remains separate. Lower-runner assumptions, exhaustive modular
+classification and final uniqueness remain open, so no result directory
+becomes complete from this reduction.
+[Exact hypotheses, cutoffs and scope](loneliness-large-norm-lean.md).
+
+## Six-speed reduced fraction component
+
+The exact reduced arithmetic forms and their unconditional realization are
+registered in `LonelinessSixSpectrumArithmetic`. This includes the necessary
+odd-denominator/gap consequence and the explicit `4/27` obstruction to treating
+that condition as sufficient. All 12 modules passed strict source checking,
+the all-owned/private standard-axiom audit (421 declarations), eight required
+endpoint checks, and exact stock-kernel replay in job 135607998981 of run
+44537865221. The unchanged evidence was authenticated from the original ZIP.
+[Scope and receipt](lean-status.md#six-speed-spectrum-reduced-fraction-arithmetic).
+The universal classification and merged-package check remain separate.
+
+
+### Six-speed sporadic arithmetic checkpoint
+
+`LonelinessSixSporadicBounds` now proves the nine original sporadic values and their arithmetic consequences, including permutation invariance, the proposed spectrum parameter form, `d < 3*q` for any positive representing denominator, and `q = 6*a + 1` for the reduced fraction. Exact job `135612147649` in run `44539038584` passed 13 fresh strict source checks, the complete 465-declaration audit, and 13 independent stock-kernel targets. Its unchanged evidence is recorded in `docs/verification/six-sporadic-exact-44539038584/`. Only the passing six-arithmetic job is used; the failed seven/eight sibling is excluded. This finite-table consequence does not establish universal six-speed classification.
+
+
+### Higher spectrum realization and sharp candidate bounds
+
+The registered `LonelinessSevenSpectrumRealization` and `LonelinessEightSpectrumRealization` modules construct distinct positive primitive speed tuples for every proposed seven/eight spectrum value. `LonelinessHigherSpectrumBounds` proves the 27 seven-speed and 17 eight-speed table values, all stated candidate-family spectrum forms, reduced-fraction identities, and the sharp bounds `5*d <= 13*q` and `17*d <= 21*q` for every positive representing denominator, with explicit optimality witnesses. Candidate membership and permutations are stated explicitly; universal tuple exhaustiveness is not assumed or concluded.
+
+Exact run `44541874811`, job `135622052992`, passed all 16 fresh strict source checks, the complete 647-declaration audit, and 16 exact stock-kernel replays. The 26 required theorem endpoints and unchanged authenticated evidence are recorded in `docs/verification/seven-eight-spectrum-exact-44541874811/`. The failed sibling triangle and six-plane jobs are excluded from this acceptance record. Full seven/eight classification remains partial.
+
+
+## Direct five-runner lower-bound candidate
+
+The candidate `LonelinessFiveRunnerTheorem` joins the actual KZ geometry,
+all smaller runner bounds, five complete modular certificates, and gcd
+normalization to target `LonelyRunnerBound 5`. It retains both primitive
+equality directions at `1/6`. Its final closure remains outside the accepted
+root until the fresh strict-source, all-owned/private-axiom, and exact
+stock-kernel gate passes. [Proof components and current scope](five-runner-exact-candidate.md).
+
+### Higher-speed triangle consequence checkpoint
+
+`LonelinessHigherTriangleConsequences` proves actual integer-distance-graph triangles for the stated six/seven/eight candidate families and all 53 sporadic rows, including the signed six-speed third family and gcd rescaling. Its Zhu implications for six, seven, and eight distances keep the exact primitive near-tight classification hypotheses explicit. They establish coloring and triangle consequences from those hypotheses; they do not establish the missing exhaustive classifications.
+
+Exact [run 44545339492, job 135634276616](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44545339492/job/135634276616) at `788e2572b877750158bd471191ef9701c50b93bd` passed 34 fresh strict source checks, the complete 1,024-declaration audit (805 theorems, 36 private declarations), all 23 required endpoints, and 34 independent exact stock-kernel targets. The original ZIP, receipt, source/control snapshot, object facets, audit, and logs were authenticated before preserving the unchanged evidence in [verification/higher-triangle-exact-44545339492](verification/higher-triangle-exact-44545339492/). Registration adds one module and 23 endpoints. Failed six-plane sibling jobs are excluded; the merged-package gate and unconditional result completion remain separate.
+
+
+
+## Renault dependency proof and prime-307 pilot, 19 November 2026
+
+The Renault foundation checkpoint passed its fresh source, complete owned/private axiom audit, and exact stock-kernel gate at `f6b37c31b67d4905a03ebafca4e427aaf36d8ad8`. It includes all eight universal real phase lemmas and the maximization, gcd-orbit, shift, fiber-arithmetic, and relabeling components. The full five-speed lower bound remains a separate candidate under [issue 38](https://github.com/1337isnot1337/solved-conjectures/issues/38); the foundation pass does not complete that bound or the five-speed spectrum.
+
+The prime-307 pilot at `7bfbeef3715b82f33bae00493f05c72d7a6978e4` passed the same verification stages for minimum-pair roots 2 and 153. It preserves the original checker propositions and uses a proved equality to the faster counted-bit implementation. Full coverage for primes 271, 307, and 313 remains active. No whole-prime certificate or unconditional six-speed classification follows from this pilot.
+
+Both unchanged receipts and their authenticated source, audit, control, and log evidence are preserved under [verification/renault-foundations-44549206241](verification/renault-foundations-44549206241/) and [verification/p307-pilot-44540677853](verification/p307-pilot-44540677853/). Exact counts, run links, and scope are recorded in [the Lean status](lean-status.md#renault-foundations-and-six-speed-prime-pilot-19-november-2026). Accepted registries and result-completion markers are unchanged.
+
+## Conditional critical-seven classification checkpoint
+
+The seven-coordinate critical-plane assembly and its large-norm family
+conclusion are registered through `LonelinessSevenCoordinateClassification`
+and `LonelinessSevenCoordinateLargeNormFamily`. All finite enumeration,
+signed-coordinate transport, integer product parameters, gcd reduction, and
+actual real-time family values are internal to the proof.
+
+The remaining inputs are exactly `h5 : LonelyRunnerBound 5` and
+`h6 : PrimitiveSixClassification`. The first is the lower bound `1/6` for
+every nonempty positive distinct list of at most five speeds. The second
+classifies every positive distinct primitive six-speed list of value at most
+`1/7` as a permutation of `[1,2,3,4,5,6]`. Neither input is claimed
+discharged by this component.
+
+Under these inputs, a rational two-plane in seven coordinates has value
+`1/7` exactly when it is a signed coordinate permutation of the standard
+product plane. The standard-plane value direction is unconditional. A
+positive primitive seven-speed tuple of value below `1/7` and Euclidean
+norm at least `7*42^10` is a literal permutation of
+`[1,2,3,4,5,6,7*s]`, with `s >= 1` and exact value `s/(7*s+1)`.
+
+Exact [run 44547965580, job 135643591005](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44547965580/job/135643591005)
+at `d082b9a7adbed4144ccc9a961023bcae46f00e3d` passed 105 fresh strict
+source checks, the 2,105-declaration all-owned/private audit (1,864 theorems,
+630 private declarations), all 23 required endpoints, and 105 independent
+exact stock-kernel replays. Its original 635-file archive was authenticated;
+425 unchanged evidence files are preserved in
+[verification/critical-seven-exact-44547965580](verification/critical-seven-exact-44547965580/).
+The archive and receipt hashes, process logs, and validation report are
+recorded there.
+
+Registration adds 47 modules and 23 required endpoints. The complete finite
+and source checks do not establish unconditional seven-speed exhaustiveness:
+the lower-dimensional hypotheses and the remaining global classification
+are still open. The merged-package gate and original-result completion
+remain separate.
+
+
+### Seven-speed low-gap reduction for the eight-speed proof
+
+The accepted `LonelinessSevenLowGapInput` module proves the exact three seven-speed bases below `3/23` within the stated candidate classification, their value `1/8`, and the positive gcd-scaled conclusion for arbitrary positive distinct lists under the explicit primitive seven-speed classification premise. This supplies the literal low-gap input used by the eight-coordinate plane argument. It does not remove the classification premise or mark an original result complete.
+
+Acceptance uses the original passing job `135655971010` in [run 44551449045](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44551449045) at `aac4fff06ba8f6678d60a1665ab4790562cbbc5a`: 17 fresh strict project modules, all 663 owned/raw declarations (494 theorems, 16 private declarations), eight required endpoints, and 17 exact stock-kernel target replays. Artifact `14542014520` has ZIP SHA256 `256cfdb7f4e00cee8253f0f8c2e59037d9e3bcb4db428d3484054a7c7ed33077`; the raw receipt hash is `4d5996deff454e567510b3445317d11bea3ba1b65e8e6047d3637c8e41c30211`. The authenticated raw evidence is preserved in [`verification/seven-low-gap-exact-44551449045/`](verification/seven-low-gap-exact-44551449045/).
+
+
+### Six-plane permutation coverage and chunk-join component
+
+The 20-module finite-data component is accepted for its exact scope: all 43,200 coordinate-permutation lookup cells, three nested certificate pilots of 32/256/1,280 cases for the first pattern pair, and the generic quotient/remainder joins needed to combine a complete collection of certificate chunks. The largest pilot covers 1,280 cases; the pilots are not disjoint. The generic full-coverage conclusion retains the numerical chunk checks as hypotheses. This does not assert that all 1,152,000 candidate-pair cases are checked and does not establish the six-plane classification.
+
+Original job `135655971048` in [run 44551449045](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44551449045) at `aac4fff06ba8f6678d60a1665ab4790562cbbc5a` passed 20 fresh strict sources, all 414 owned/raw declarations (317 theorems, zero private declarations), nine required endpoints, and 20 exact independent stock-kernel targets. Artifact `14543834207` has ZIP SHA256 `1a8fa5d2400e25a00ca381c16a98be42f765cf7b199a07e171dfbb648dce5067`; the raw receipt hash is `e648e84040f83963f18d44152638d02c3c800e1e3ee1624a2de96d50285c67ee`. The authenticated original evidence is preserved in [`verification/six-plane-coverage-exact-44551449045/`](verification/six-plane-coverage-exact-44551449045/). The complete pair table has a separate verification and acceptance path.

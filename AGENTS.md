@@ -12,4 +12,6 @@
 
 - Put each result in `results/<stable-slug>/` with a `README.md` landing page, proof, and reproducible checks. Keep shared formalizations in `lean/`.
 - When adding or revising a result, update the compact index in `README.md`, its full entry in `CONTENTS.md`, its landing page, and the verification workflow and guide where relevant. Preserve precise scope and distinguish partial formalization from a complete result.
+- Keep the README results table to a problem link to its directory and one Lean status emoji (`✅`, `🟡`, or `⬜`).
+- Use fenced `math` blocks for display equations. Use GitHub's dollar-backtick syntax for inline formulas containing Markdown punctuation. Write named operators as `\mathop{\mathrm{...}}` and use `\lt` when a less-than sign immediately precedes a letter.
 - Keep repository descriptions and citation metadata count-free. Record collection-level changes in `HISTORY.md`; use `docs/lean-status.md` for checked formalization status.

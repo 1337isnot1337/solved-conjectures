@@ -209,7 +209,7 @@ namespace SolitaireCounterexample
 
 theorem insert_sum (x : Nat) (xs : List Nat) : (insertPile x xs).sum = x + xs.sum := by
   induction xs with
-  | nil => simp [insertPile]; split <;> simp_all [List.count_cons]
+  | nil => simp [insertPile]; split <;> simp_all
   | cons a xs ih =>
     simp only [insertPile]
     split

@@ -1101,8 +1101,8 @@
     "Conjectures.FranklSpanFourResidualTailRank": "240e30bf1f24d69d15b855fecf6381f6e399e618b22e37accefe1ba11bf176ee",
     "Conjectures.FranklSpanFourWordCoverage": "eaddd5ba62a43980e76f23acff759a5d0deddc30360478d70b0ed74e5aea6d96",
     "Conjectures.FranklFamilyRelabel": "946c0b7b673ada160c4792e258175b8a1505d312f876c949e9459b9f578b31c0",
-    "Conjectures.FranklSpanFourGraphPacket": "1291ed16eca1f4f1ccb036adf4dfde6df06943206e1dd8daec488d1b4787947f",
-    "Conjectures.FranklSpanFourTheorem": "d14b96bf40ec609193e13853188fdbb6ac5821582bcfdc06b9971c6907ddc621"
+    "Conjectures.FranklSpanFourGraphPacket": "7416a5d7276a6d3999e87937cee7af9d5611e5039010bcd22034c72a1b4cee72",
+    "Conjectures.FranklSpanFourTheorem": "892023ce3845722d2232b34f21b2eb5ed6df8d816c9f4a187a3a672bc161dadf"
   },
   "required_by_module": {
     "Conjectures.FranklSpanFourGraphPacket": [
@@ -2845,10 +2845,10 @@
       "binding": {
         "run_id": 44518872729,
         "head_sha": "2fa3e1206c82e89210f608016c669a5316a7b831",
-        "artifact_id": null,
+        "artifact_id": 14531096618,
         "artifact_name": "frankl-full-initial-graph",
-        "archive_sha256": null,
-        "receipt_sha256": null
+        "archive_sha256": "54088c6bdac3acb1ebafb1aae015c9fd868c2739f1f35788a533f5d3441eef04",
+        "receipt_sha256": "344520299255ff2b162ed518d066f5de4afb4f311392f25bca4bc856b939403d"
       },
       "compressed_limit": 536870912,
       "expanded_limit": 3221225472
@@ -3099,10 +3099,10 @@
       "binding": {
         "run_id": 44521076244,
         "head_sha": "00e7073c4243df1ffe78907ce1b35f5d73af324d",
-        "artifact_id": null,
+        "artifact_id": 14529324556,
         "artifact_name": "frankl-reconstructed-residual-tail",
-        "archive_sha256": null,
-        "receipt_sha256": null
+        "archive_sha256": "8e065642b0ecfe1c9dfbe5bf8c2d8e8d65dc705f5c211b620b1297514f1cc552",
+        "receipt_sha256": "0f1b6325a382c93e42b73cfa7ccc5cec3b979bfa65acf1c94f1c873225e24dc0"
       },
       "compressed_limit": 536870912,
       "expanded_limit": 3221225472,

@@ -79,6 +79,7 @@ theorem rationalVector_signedCoordinates (σ : ι → ℤ)
   ext i
   simp
 
+omit [Fintype ι] in
 theorem realSpan_signedCoordinates (σ : ι → ℤ)
     (hσ : ∀ i, σ i = 1 ∨ σ i = -1) (p : Equiv.Perm ι)
     (E : Submodule ℚ (ι → ℚ)) :

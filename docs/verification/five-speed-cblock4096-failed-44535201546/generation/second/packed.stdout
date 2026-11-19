@@ -1,0 +1,9 @@
+{
+  "module": "Conjectures.LonelinessFiveSpeedPackedScalar199",
+  "prime": 199,
+  "blocks": 100,
+  "packed_bits": 19900,
+  "source_bytes": 5959,
+  "tree_source_sha256": "c8ae3a69a7c907afdb6dbdd6e7cfe1caee92270a122fec9149ddde62ce1fb545",
+  "generated_source_sha256": "268585c36c19b6636bfbd62899b9cafb2732ecc1a6aede3c6676e0d299ba8f27"
+}

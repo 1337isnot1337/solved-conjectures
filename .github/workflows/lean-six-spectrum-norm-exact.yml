@@ -1,0 +1,66 @@
+name: Lean six-spectrum norm geometry
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-six-spectrum-norm-exact.yml'
+      - 'scripts/verify_six_spectrum_norm_exact.py'
+      - 'docs/six-spectrum-norm-exact-sources.json'
+      - 'lean/Conjectures/LonelinessSixSpectrumNormGeometry.lean'
+      - 'lean/Conjectures/LonelinessNormGeometry.lean'
+      - 'lean/Conjectures/LonelinessKZSmallData.lean'
+      - 'lean/Conjectures/LonelinessKZGeneral.lean'
+      - 'scripts/audit_lean_all_owned.py'
+      - 'scripts/build_lean_parallel.py'
+      - 'scripts/plan_accepted_lean.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - 'scripts/verify_frankl_orbit_batches.py'
+      - 'scripts/verify_lean_candidate.py'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-six-spectrum-norm-exact-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate exact source and helper inventory
+        run: |
+          python3 -m py_compile scripts/verify_six_spectrum_norm_exact.py
+          python3 scripts/verify_six_spectrum_norm_exact.py norm-geometry --plan
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Fresh strict sources, complete ownership audit and exact stock replay
+        env:
+          LEAN_NUM_THREADS: 1
+          UV_USE_IO_URING: 0
+        run: python3 scripts/verify_six_spectrum_norm_exact.py norm-geometry
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: six-spectrum-norm-geometry
+          path: .candidate-artifacts/six-spectrum-norm-geometry/
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error

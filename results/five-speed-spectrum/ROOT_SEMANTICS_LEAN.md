@@ -9,9 +9,9 @@ not assume that a Python or C++ search proves that certificate.
 
 For a modulus `p`, write
 
-\[
-\operatorname{fold}_p(a)=\min(a\bmod p,\ p-(a\bmod p)).
-\]
+```math
+\mathop{\mathrm{fold}}_p(a)=\min(a\bmod p,\ p-(a\bmod p)).
+```
 
 `NormalizedQuintuple p inv q` means that the five natural-number coordinates
 of `q` satisfy all four conditions:
@@ -24,10 +24,10 @@ of `q` satisfy all four conditions:
 
 The inverse function must satisfy
 
-\[
-a\operatorname{inv}(a)\equiv1\pmod p
-\qquad(0<a,\ 2a\le p).
-\]
+```math
+a\mathop{\mathrm{inv}}(a)\equiv1\pmod p
+\qquad(0\lt a,\ 2a\le p).
+```
 
 `NormalizedRootCover p inv` states that every such normalized quintuple has
 one of three outcomes: a modular loneliness witness at threshold `1/5`, at
@@ -37,15 +37,15 @@ least two distinct short zero forms, or a folded dilation of `{1,3,4}`.
 Its other hypotheses are `2 ≤ p` and the displayed inverse property. For
 every `v : Fin 5 → ℕ`, the global conclusion is the disjunction
 
-\[
+```math
 \begin{aligned}
-&\text{a modular witness at threshold }1/5,\\
-&p\mid v_i\text{ for some }i,\\
-&p\mid(v_i-v_j)\text{ or }p\mid(v_i+v_j)\text{ for some }i<j,\\
-&\text{at least two distinct short forms vanish modulo }p,\\
-&\text{a folded dilation of }\{1,3,4\}\text{ occurs among the coordinates.}
+&\text{a modular witness at threshold }1/5,
+\\ &p\mid v_i\text{ for some }i,
+\\ &p\mid(v_i-v_j)\text{ or }p\mid(v_i+v_j)\text{ for some }i\lt j,
+\\ &\text{at least two distinct short forms vanish modulo }p,
+\\ &\text{a folded dilation of }\{1,3,4\}\text{ occurs among the coordinates.}
 \end{aligned}
-\]
+```
 
 The input does not need to be sorted, distinct, positive, primitive, or
 already reduced modulo `p`. The zero and collision branches cover precisely
@@ -82,9 +82,9 @@ remain present throughout the modular root argument.
 `TwoShortRelations p v` is the assertion that at least two indices in
 `Fin 80` satisfy
 
-\[
+```math
 p\mid\sum_i r_i v_i.
-\]
+```
 
 `twoShortRelations_iff` exposes two distinct indices. `exists_zero_form_ne`
 allows the later prime-product argument to exclude any one designated
@@ -111,9 +111,9 @@ For five distinct nonzero folded coordinates, that theorem produces a
 common modular unit and its inverse. Sorting the resulting support gives
 the strictly increasing `q` and a coordinate permutation `π` with
 
-\[
-q_i=\operatorname{fold}_p(u\,v_{\pi(i)}).
-\]
+```math
+q_i=\mathop{\mathrm{fold}}_p(u\,v_{\pi(i)}).
+```
 
 The three normalized outcomes transfer as follows:
 

@@ -25,11 +25,13 @@ def tailGramSum (w : ℕ → ι → ℤ) (r : ℕ) : ℝ :=
   ∑ i ∈ Finset.range r,
     ‖InnerProductSpace.gramSchmidt ℝ (fun j => euclideanVector (w j)) (i+1)‖ ^ 2
 
-theorem tailGramSum_nonneg (w : ℕ → ι → ℤ) (r : ℕ) :
+omit [Nonempty ι] in
+theorem tailGramSum_nonneg [Nonempty ι] (w : ℕ → ι → ℤ) (r : ℕ) :
     0 ≤ tailGramSum w r := by
   exact Finset.sum_nonneg (fun _ _ => sq_nonneg _)
 
-theorem euclidean_mem_prefix {w : ℕ → ι → ℤ} {r : ℕ} {x : ι → ℝ}
+omit [Nonempty ι] in
+theorem euclidean_mem_prefix [Nonempty ι] {w : ℕ → ι → ℤ} {r : ℕ} {x : ι → ℝ}
     (hx : x ∈ coordinatePrefix w r) :
     WithLp.toLp 2 x ∈ prefixSpan (fun i => euclideanVector (w i)) r := by
   let f : (ι → ℝ) →ₗ[ℝ] EuclideanSpace ℝ ι :=

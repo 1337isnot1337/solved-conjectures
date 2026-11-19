@@ -69,18 +69,49 @@ theorem period9_rows_covered : rowCoverageCheck graphPacket Coverage.period9Entr
 theorem period10_rows_covered : rowCoverageCheck graphPacket Coverage.period10Entries = true :=
   rows_covered Coverage.period10_indexed Coverage.period10_coverage Coverage.period10_words
 
-theorem packet_checked : Checked packet := by
-  apply ResidualTail.tail_checked literalPacket
-  · exact Graph.withGraph_states_checked seedPacket
-  · exact Graph.withGraph_edges_checked seedPacket
-  · exact Graph.withGraph_pair_rank_checked seedPacket
-  · exact weight4Check_of_literalBatch period10_rows_covered period10_checked
-  · exact Graph.withGraph_residual_rank_checked seedPacket
+/-- Check the packet update with the graph and row data still abstract.
+The concrete application below uses this opaque proof without expanding
+its finite decision procedures. -/
+private theorem checked_tail_literal (P : Packet)
+    (rows : List FranklSmallCyclic.Weights.Entry)
+    (hstates : statesCheck P = true) (hedges : edgesCheck P = true)
+    (hpair : pairRankCheck P = true) (hresidual : residualRankCheck P = true)
+    (hcover : rowCoverageCheck P rows = true)
+    (hbatch : FranklSmallCyclic.Weights.batchCheck 10 rows = true) :
+    Checked (ResidualTail.tailPacket (packetWithLiteralWeights P rows)) := by
+  apply ResidualTail.tail_checked (packetWithLiteralWeights P rows)
+  · exact hstates
+  · exact hedges
+  · exact hpair
+  · exact weight4Check_of_literalBatch hcover hbatch
+  · exact hresidual
 
-theorem short_weights_checked : ShortChecked packet shortWeights := by
+private theorem shortChecked_tail_literal (P : Packet)
+    (rows rows7 rows8 rows9 : List FranklSmallCyclic.Weights.Entry)
+    (hcover7 : rowCoverageCheck P rows7 = true)
+    (hcover8 : rowCoverageCheck P rows8 = true)
+    (hcover9 : rowCoverageCheck P rows9 = true)
+    (hseven : FranklSmallCyclic.Weights.batchCheck 7 rows7 = true)
+    (height : FranklSmallCyclic.Weights.batchCheck 8 rows8 = true)
+    (hnine : FranklSmallCyclic.Weights.batchCheck 9 rows9 = true) :
+    ShortChecked (ResidualTail.tailPacket (packetWithLiteralWeights P rows))
+      (shortWeightsFromSeparateRows rows7 rows8 rows9) := by
   apply ResidualTail.shortChecked_tailPacket
   exact shortChecked_of_separate_batches
-    (P := literalPacket)
+    (P := packetWithLiteralWeights P rows)
+    hcover7 hcover8 hcover9 hseven height hnine
+
+theorem packet_checked : Checked packet :=
+  checked_tail_literal graphPacket Coverage.period10Entries
+    (Graph.withGraph_states_checked seedPacket)
+    (Graph.withGraph_edges_checked seedPacket)
+    (Graph.withGraph_pair_rank_checked seedPacket)
+    (Graph.withGraph_residual_rank_checked seedPacket)
+    period10_rows_covered period10_checked
+
+theorem short_weights_checked : ShortChecked packet shortWeights :=
+  shortChecked_tail_literal graphPacket Coverage.period10Entries
+    Coverage.period7Entries Coverage.period8Entries Coverage.period9Entries
     period7_rows_covered period8_rows_covered period9_rows_covered
     period7_checked period8_checked period9_checked
 

@@ -1,0 +1,47 @@
+{
+  "accepted_registry_changed": false,
+  "artifact_id": 14543910774,
+  "artifact_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44549206241/artifacts/14543910774",
+  "artifact_zip_sha256": "c35e5a2f7a8774987414b1f9c226b4d56b47d4fd7dfa9861bf6109c02b8ebd3a",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 605,
+    "modules": 18,
+    "private_declarations": 131,
+    "raw_declarations": 605,
+    "required": 64,
+    "tag": "passed",
+    "theorems": 445
+  },
+  "complete_five_speed_bound_verified": false,
+  "complete_prime_checked": false,
+  "compressed_inventory_sha256": "1871d329de781bd1d7cea2c86ac1984c700f64d52ec83f72443bdfc478a8f671",
+  "declaration_inventory_sha256": "72cd220439b80a8c465c2f9deb524c9bc0de7a66268a0ef0924fb02689e8e828",
+  "git_commit": "f6b37c31b67d4905a03ebafca4e427aaf36d8ad8",
+  "hosted_fresh_strict_source_passed": true,
+  "hosted_stock_kernel_closure_passed": true,
+  "local_independent_lean_replay_performed_during_preservation": false,
+  "preserved_evidence_archive_sha256": "68527e2e0f9050d8abd2de80be178b2bc176cd47c69e0d09abe5c4cf8ffb0674",
+  "preserved_evidence_contents": [
+    "receipt",
+    "declaration inventory",
+    "audit source",
+    "proof sources",
+    "generated data where present",
+    "gate controls",
+    "logs",
+    "process profiles"
+  ],
+  "preserved_evidence_members": 115,
+  "raw_receipt_sha256": "50aa53e3d96274c5306f8f5ef159e711bf5e7995874f1d698fa29944ee269ee3",
+  "run_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44549206241",
+  "schema": "verified-checkpoint-preservation-v1",
+  "source_object_log_and_audit_hashes_revalidated": true,
+  "status": "authenticated_and_preserved",
+  "workflow_job_id": 135648012899,
+  "workflow_run_id": 44549206241
+}

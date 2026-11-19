@@ -8,9 +8,9 @@
 
 Graffiti.pc Conjecture 318 (DeLaViña, 2007) is true. In fact, if a finite simple connected graph $G$ on at least two vertices satisfies
 
-\[
-\max_{v\in V(G)}\operatorname{dist}_{even}(v)\ \geq\ |E(\overline G)|,
-\]
+```math
+\max_{v\in V(G)}\mathop{\mathrm{dist}}_{even}(v)\ \geq\ |E(\overline G)|,
+```
 
 then **every total dominating set contains a total dominating pair**. Consequently every inclusion-minimal total dominating set has exactly two adjacent vertices, and $G$ is well total dominated.
 

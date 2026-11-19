@@ -125,7 +125,7 @@ theorem rotateRight_testBit (p G a r : ℕ) (hr : r < p) :
   by_cases h : r + s < p
   · have hleft : s + r < p := by omega
     have hright : ¬p - s ≤ r := by omega
-    simp only [hleft, h, hright, decide_true, decide_false, Bool.true_and,
+    simp only [h, hright, decide_true, decide_false, Bool.true_and,
       Bool.false_and, Bool.or_false, Nat.mod_eq_of_lt h, Nat.add_comm]
   · have hleft : ¬s + r < p := by omega
     have hright : p - s ≤ r := by omega

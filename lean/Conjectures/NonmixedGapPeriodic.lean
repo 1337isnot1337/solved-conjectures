@@ -151,6 +151,5 @@ theorem window_upperDensity_of_gcd_dvd {P p H : ℤ}
   push_cast
   have hgR : (g:ℝ) ≠ 0 := by exact_mod_cast (ne_of_gt hgZ)
   field_simp
-  <;> ring
 
 end NonmixedGap

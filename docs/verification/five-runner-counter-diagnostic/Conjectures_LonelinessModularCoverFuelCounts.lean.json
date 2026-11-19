@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lean",
+    "-j1",
+    "-M4500",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/11c408478f32/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/LonelinessModularCoverFuelCounts.olean",
+    "Conjectures/LonelinessModularCoverFuelCounts.lean"
+  ],
+  "cwd": "/workspace/scratch/11c408478f32/solved-conjectures/lean",
+  "compiler": "/workspace/scratch/470d357cba9a/toolchain/lean-4.35.0-linux/bin/lean",
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "seconds": 5.003,
+  "returncode": 0,
+  "source": "/workspace/scratch/11c408478f32/solved-conjectures/lean/Conjectures/LonelinessModularCoverFuelCounts.lean",
+  "source_sha256_before": "a9ce5f7f9c413edf96f08e5bc4230e33f9bb02cd19e1316d925ae655eba0911e",
+  "source_sha256_after": "a9ce5f7f9c413edf96f08e5bc4230e33f9bb02cd19e1316d925ae655eba0911e",
+  "object_facets_sha256": {
+    "/workspace/scratch/11c408478f32/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/LonelinessModularCoverFuelCounts.olean": "5bf24e6c329961a23affa8bd7766d6fc266d1d42d28aa7312d609f59df435f6a"
+  },
+  "stdout_stderr": "/workspace/scratch/11c408478f32/solved-conjectures/lean/.lake/build/local-source-records/Conjectures_LonelinessModularCoverFuelCounts.lean.log",
+  "stdout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

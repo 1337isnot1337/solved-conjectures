@@ -50,11 +50,13 @@ sources, an 867-theorem standard-axiom audit, and independent kernel replay.
 [Generating-function receipt](../../docs/verification/line-size-generating-evaluation-daa7d2c5.json).
 
 The complete sharp asymptotic is also checked for the actual geometric count:
-\[
+
+```math
 F(n)\sim \frac{3}{16\sqrt{6\pi}\,A^{1/4}}\,
 n^{-1/4}e^{2\sqrt{An}},\qquad
 A=\frac{\pi^2}{12}+\frac{(\log 2)^2}{2}.
-\]
+```
+
 All finite-product limits, Fourier bounds, measurability, domination, lattice
 steps, Gaussian integrals, and normalization identities are supplied by its
 78-module closure. Strict sources, the 1,582-theorem standard-axiom audit, and

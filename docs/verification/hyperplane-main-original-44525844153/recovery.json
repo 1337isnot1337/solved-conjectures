@@ -1,0 +1,34 @@
+{
+  "accepted_registry_changed": false,
+  "all_original_object_facets_revalidated": false,
+  "archive_digest_validated": true,
+  "exporter_control_sha256": {
+    ".github/workflows/preserve-original-loneliness-receipts.yml": "1f8abc65b34fdbfc12190f0822aaa6db89b2bd3f005ee024434f10a425b9e7e1",
+    "scripts/preserve_frankl_transport_receipts.py": "2509cf8ff29420abeedb5df247f31529938387eb272a788349fb36056cb05ef7",
+    "scripts/preserve_original_loneliness_receipts.py": "2739af578dacde54176c567396430ec3173bb5dfab0827f474d510fa89b87547"
+  },
+  "historical_source_and_gate_bytes_validated": true,
+  "historical_source_and_gate_paths_checked": 80,
+  "job_log_sha256": "4d0864406a48a1e7cb9e2b49031e38f558184befbc6d887d0e51c5169ba04a48",
+  "new_proof_verification": false,
+  "original": {
+    "archive_sha256": "4873ed645d8a687f3480071938b6ceca0e557746dd31e6644e1dbd94425a6e02",
+    "artifact_id": 14531877063,
+    "artifact_name": "loneliness-hyperplane-main-receipt",
+    "commit": "8693ec993867899aba0980caa1ad3e8cca7f1782",
+    "job_id": 135566283170,
+    "module_count": 72,
+    "name": "hyperplane-main",
+    "required_count": 97,
+    "root": "Conjectures.LonelinessHyperplaneMain",
+    "run_id": 44525844153,
+    "source_policy": "Historical strict direct-Lean sources with warnings as errors, theorem-only axiom audit and complete stock replay. The original artifact is receipt-only. Current all-owned/raw-private verification is separate.",
+    "task": "main"
+  },
+  "original_archive_members": 1,
+  "original_archive_path": "receipt.json",
+  "original_job_log_bytes_preserved": true,
+  "original_receipt_bytes_preserved": true,
+  "receipt_sha256": "d876312ea3909214177827fb2a85af0efb8c76d88953223988532f5c0a06f8b1",
+  "schema": "original-loneliness-receipt-recovery-v1"
+}

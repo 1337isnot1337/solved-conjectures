@@ -20,10 +20,10 @@ Periodicity identifies this with the supremum over all real times.
 
 Writing `speeds d = [d 0,d 1,d 2]`, the theorem proves
 
-\[
-\operatorname{density}(\operatorname{speeds}d)
-=\operatorname{value}(\operatorname{speeds}d).
-\]
+```math
+\mathop{\mathrm{density}}(\mathop{\mathrm{speeds}}d)
+=\mathop{\mathrm{value}}(\mathop{\mathrm{speeds}}d).
+```
 
 It also supplies distinct indices `i,j` and an avoiding set `A` that is
 periodic with period `d i+d j` and has upper density equal to this optimum.
@@ -82,9 +82,9 @@ closed intervals. If their intersection had positive length, its midpoint
 would improve every clearance, contradicting maximality. Active endpoints
 therefore give a maximizing time of the form
 
-\[
+```math
 t=\frac{m}{d_i+d_j},\qquad i\ne j.
-\]
+```
 
 The value `1/2` case is included. The rational packing construction then gives
 an actual optimum of period `d_i+d_j`.
@@ -95,9 +95,9 @@ an actual optimum of period `d_i+d_j`.
 proves both the value and density `3/7` for `[2,5,9]`. It checks the literal
 center set
 
-\[
+```math
 A=\{n\in\mathbb Z:n\bmod7\in\{0,1,4\}\}.
-\]
+```
 
 The theorem `example_two_five_nine_centers` proves avoidance, period seven,
 and the exact density of that set.

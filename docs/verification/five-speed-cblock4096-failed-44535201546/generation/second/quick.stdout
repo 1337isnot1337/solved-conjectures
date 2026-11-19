@@ -1,0 +1,16 @@
+{
+  "status": "untrusted candidate layout; fresh Lean source/audit/kernel gates are separate",
+  "prime": 199,
+  "budget": 4096,
+  "bases_per_module": 4,
+  "use_prefix": false,
+  "module_count": 14,
+  "source_bytes": 116555,
+  "finite_leaf_count": 64,
+  "c_leaf_count": 47,
+  "d_leaf_count": 0,
+  "cd_prefix_count": 46610,
+  "scalar_source_sha256": "c8ae3a69a7c907afdb6dbdd6e7cfe1caee92270a122fec9149ddde62ce1fb545",
+  "original_generator_sha256": "5e59128f11203b0e1c038df27a1eb9a7c71c875695fd0032201a77133f51f18c",
+  "generator_sha256": "e9a29f99a3cbbbac9fa89781da8d451f7c4390146b41b80cd26dc32a250c5962"
+}

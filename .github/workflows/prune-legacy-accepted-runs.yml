@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/prune-legacy-accepted-runs.yml'
       - 'scripts/prune_legacy_accepted_runs.py'
+      - 'scripts/test_prune_legacy_accepted_runs.py'
 permissions:
   contents: read
   actions: write
@@ -15,7 +16,16 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Retain checkpoints and cancel only the immutable intermediate allowlist
+      - name: Check exact retirement guards without network access
+        run: python3 -m unittest discover -s scripts -p 'test_prune_legacy_accepted_runs.py'
+      - name: Retire only the recorded obsolete runs and request the unchanged full gate
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 scripts/prune_legacy_accepted_runs.py --apply
+        run: python3 scripts/prune_legacy_accepted_runs.py --apply --report build/maintenance/accepted-run-retirement.json
+      - name: Preserve retirement decisions and fresh full-gate metadata
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: accepted-run-retirement-${{ github.run_id }}
+          path: build/maintenance/accepted-run-retirement.json
+          if-no-files-found: error

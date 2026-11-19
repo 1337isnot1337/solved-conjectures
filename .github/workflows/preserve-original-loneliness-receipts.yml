@@ -1,0 +1,38 @@
+name: Preserve original norm and hyperplane receipts
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/preserve_original_loneliness_receipts.py'
+      - '.github/workflows/preserve-original-loneliness-receipts.yml'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: preserve-original-loneliness-receipts
+  cancel-in-progress: false
+
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Authenticate and preserve the unchanged original receipts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 -m py_compile scripts/preserve_original_loneliness_receipts.py
+          python3 scripts/preserve_original_loneliness_receipts.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: original-loneliness-receipts
+          path: .candidate-artifacts/original-loneliness-receipts/
+          retention-days: 30
+          if-no-files-found: error

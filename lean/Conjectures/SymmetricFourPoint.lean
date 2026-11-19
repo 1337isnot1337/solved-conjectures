@@ -69,11 +69,11 @@ theorem alternating_chain (f : ℕ → ℤ) (n : ℕ)
     rcases Nat.mod_two_eq_zero_or_one n with hn | hn
     · have hn' : (n + 1) % 2 = 1 := by omega
       simp only [hn, ↓reduceIte] at hp
-      simp only [Nat.succ_eq_add_one, hn', one_ne_zero, ↓reduceIte]
+      simp only [hn', one_ne_zero, ↓reduceIte]
       omega
     · have hn' : (n + 1) % 2 = 0 := by omega
       simp only [hn, one_ne_zero, ↓reduceIte] at hp
-      simp only [Nat.succ_eq_add_one, hn', ↓reduceIte]
+      simp only [hn', ↓reduceIte]
       omega
 
 theorem alternating_chain_odd (f : ℕ → ℤ) (n : ℕ) (hn : n % 2 = 1)
@@ -128,7 +128,7 @@ theorem initial_change (a b : ℕ) (ha : 0 < a) (hb : b % 2 = 1)
   simp only [Nat.zero_mul] at halt
   omega
 
-theorem change_propagates (a b p : ℕ) (ha : 0 < a)
+theorem change_propagates (a b p : ℕ) (_ha : 0 < a)
     (hp : p + a = a * b + b) (f : ℕ → ℤ)
     (h : ∀ n < p, f (n + a) + f n = 1)
     (j : ℕ) (hj : j < a) (hchange : f j ≠ f (j + b)) :
@@ -218,7 +218,7 @@ theorem local_obstruction (a b p : ℕ) (ha : 0 < a) (hab : a < b)
   have hend : j₀ + (a : ℤ) * b = i + a := by
     have hbcast : ((b - 1 : ℕ) : ℤ) = (b : ℤ) - 1 := by omega
     dsimp [j₀, i, J]
-    simp only [Nat.cast_add, Nat.cast_mul, hbcast]
+    simp only [hbcast]
     ring
   have hyia : pair x a (i + a) = 1 := by
     simpa only [g, Nat.cast_zero, zero_mul, add_zero, hyj, hend] using hgy

@@ -60,7 +60,7 @@ theorem basisPlane_coordinateFree
     (B : Module.Basis (Fin 7) ℤ (Fin 7 → ℤ)) (hfirst : ∀ i, B 0 i ≠ 0) :
     CoordinateFree (basisPlane B) := by
   intro i
-  refine ⟨(fun j => (B 0 j : ℚ)), Submodule.subset_span (by simp [basisPlane]), ?_⟩
+  refine ⟨(fun j => (B 0 j : ℚ)), Submodule.subset_span (by simp), ?_⟩
   change (B 0 i : ℚ) ≠ 0
   exact_mod_cast hfirst i
 

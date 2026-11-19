@@ -106,7 +106,16 @@ Record the commit, command, toolchain, and result. Distinguish computational tes
 
 ## Loneliness on a fixed hyperplane
 
-Run `python3 results/loneliness-on-a-hyperplane/verify.py` for exact circle maxima, endpoint congruences, and shifted examples. The limiting theorem is proved in the [mathematical argument](../results/loneliness-on-a-hyperplane/PROOF.md).
+The complete original note is formally verified in the exact 72-module
+`LonelinessHyperplaneMain` closure. The fresh gate checks strict sources,
+every owned declaration including raw private declarations, all 106 named
+theorem endpoints, and every exact stock-kernel target. The original
+[statements and evidence](../results/loneliness-on-a-hyperplane/LEAN.md)
+include the uniform-over-shifts estimate, exact positive-N counts and degree
+bound, Haar-shift law, endpoint formula and sharpness.
+
+Run `python3 results/loneliness-on-a-hyperplane/verify.py` for the additional
+finite circle maxima, endpoint congruences and shifted examples.
 
 ## Complete rectangle proof and finite plane certificates
 
@@ -158,3 +167,119 @@ This verifies the complete high-girth frequency theorem. The cyclic
 span-four theorem has separate finite graph, transport, coverage, and final
 assembly gates. The registered full package is checked by
 `scripts/verify_lean.sh`.
+
+## Complete two-speed insertion gate
+
+From the repository root with the pinned toolchain and Mathlib cache:
+
+```sh
+python3 scripts/verify_two_insertions_exact.py --plan
+python3 scripts/verify_two_insertions_exact.py
+```
+
+The exact source model fixes all 27 project modules, 49 required theorem
+endpoints, the toolchain configuration, and all transitive gate helpers.
+The gate rebuilds every project source with warnings treated as errors and
+no linter override, audits all owned declarations and raw private names,
+then replays each of the 27 modules as an exact singleton target with the
+unchanged stock checker in a fresh one-worker process. It rehashes the
+sources, helpers, compiler, checker, every compiled facet, and proof
+evidence before writing a passing receipt.
+
+[Run 44524198858/job 135562276051](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44524198858/job/135562276051)
+passed for source snapshot `9f51470529423e8135c08de881cd56f5b1fd9a95`.
+It checked 563 owned declarations, including 424 theorems and 11 private
+declarations. The [original receipt](verification/two-insertions-exact-44524198858/receipt.json)
+and [authenticated original evidence](verification/two-insertions-exact-44524198858/)
+are public. Receipt preservation performs byte and policy validation;
+it is not an additional Lean proof run. This component pass is separate
+from the full merged-package gate.
+
+## Six-speed spectrum realization
+
+```sh
+python3 scripts/verify_six_spectrum_realization.py --plan
+python3 scripts/verify_six_spectrum_realization.py
+```
+
+This dedicated gate rebuilds the exact 11-module closure, treats all source
+warnings as errors without disabling linters, audits every owned declaration
+and raw private name, requires theorem kind for all 15 endpoints, and replays
+all 11 modules as exact singleton stock-kernel targets. Source, configuration,
+transitive helper, compiler, checker, object and process-evidence hashes are
+fixed and rechecked.
+
+The [passed original receipt](verification/six-spectrum-realization-44527134869/receipt.json)
+and [authenticated evidence](verification/six-spectrum-realization-44527134869/)
+cover 392 owned declarations, 306 theorems and 30 private declarations.
+The gate establishes realization of the proposed six-speed values; universal
+classification and the full accepted-package verification are separate.
+
+## Complete fixed-hyperplane theorem
+
+All original statements of the fixed-hyperplane note are registered. They
+use the original ordered positive, pairwise-distinct integer sample and
+the actual time maximum. The general normal is primitive and real-admissible;
+the endpoint formula alone additionally requires every normal coordinate
+to be nonzero.
+
+The theorem closure proves the deterministic bound and exact containing-torus
+maximum, the uniform `O(1/N)` probability error over all shifts, fixed-shift
+and independent Haar-shift laws, the exact finite proper-subspace description,
+the denominator quasipolynomial, the actual subthreshold numerator at every
+`N≥1` with degree at most `k−2`, the endpoint frequency including `k=2`,
+and the sharp `(1,2,3)` example. No density, finite-fan, Ehrhart, counting
+or classification statement is an unproved premise.
+
+[Run 44531509741/job 135585736594](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44531509741/job/135585736594)
+freshly checked the exact 72-module closure at `ee1f018fef258cdd54f73af31cdaf6485fd151cb`.
+Sources used warnings as errors with no linter override. The all-owned audit
+checked 1,403 declarations, including 1,149 theorems and 44
+private declarations, and confirmed theorem kind for all 106 required
+endpoints. Only `propext`, `Classical.choice` and `Quot.sound`
+were allowed. All 72 modules passed exact singleton stock-kernel replay in
+fresh one-worker processes.
+
+The [unchanged raw receipt](verification/hyperplane-main-exact-44531509741/receipt.json)
+has SHA-256 `1c0d6a6fbe2ea16bbcfa88808ec8d83f0e412217e76c03803780ff0737fa1c15`.
+The [preservation record](verification/hyperplane-main-exact-44531509741/preservation.json)
+authenticates the actual original source, object, audit, log and progress
+bytes. Artifact `14535236819` has ZIP SHA-256 `27d65f3b5d667260dfad8d639f6d1182a3b5e54c032a2e2954d7764e060fe638`.
+
+Registration adds 63 previously unregistered proof modules and 102 new
+required endpoints, with all 72 checked source blobs guarded. The accepted
+list has 969 proof modules plus two roots. This completes the fixed-hyperplane
+result; verification of the merged accepted package remains a separate gate.
+The [result-level scope](../results/loneliness-on-a-hyperplane/LEAN.md)
+records the precise sample, formulas and distributional formulation.
+
+## Conditional nine-through-thirteen speed norm reduction
+
+The 81-module closure of `LonelinessTightNormBounds` is checked and
+registered. For a positive primitive `k`-tuple with `9≤k≤13` and actual
+loneliness value at most `1/(k+1)`, it proves the literal squared-norm
+cutoff and a listed prime dividing no speed, under the explicit hypothesis
+`∀ m, 1≤m → m<k → LonelyRunnerBound m`. The basis geometry,
+nearest-plane bounds, all 7,936 KZ subset rows and prime-product margins
+are proved internally.
+
+[Run 44530735399/job 135583044214](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44530735399/job/135583044214)
+passed at `8162a5dfbe89e441600e7a3bbcc03b573df0880e`: all 81 strict source checks, the all-owned
+audit of 1,696 declarations (1,445 theorems and 538 private declarations),
+all 25 required theorem endpoints, and all 81 exact singleton stock-kernel
+replays. Sources and audit used warnings as errors without a linter override;
+the only allowed axioms were `propext`, `Classical.choice` and `Quot.sound`.
+
+The [unchanged receipt](verification/loneliness-large-norm-exact-44530735399/receipt.json)
+has SHA-256 `fba4b952a87271f9691e983dd69dafc0be5c07617e412884eb82f2894ec2fef5`.
+The [preservation record](verification/loneliness-large-norm-exact-44530735399/preservation.json)
+authenticates the actual original sources, objects, audit and process records.
+Artifact `14535137698` has ZIP SHA-256
+`b6678fb2e27c872d01a2bbd6bea9982abc42411e79999b6c4113961195ab3366`.
+
+Registration adds 64 proof modules and 25 required endpoints. The accepted
+list then contains 1,033 proof modules plus two roots. The merged-package
+gate remains separate. Lower-runner assumptions, exhaustive modular
+classification and final uniqueness remain open, so no result directory
+becomes complete from this reduction.
+[Exact hypotheses, cutoffs and scope](loneliness-large-norm-lean.md).

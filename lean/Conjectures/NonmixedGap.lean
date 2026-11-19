@@ -47,7 +47,7 @@ theorem displacement_cases {A : Set ℤ} {a b k m u v t t' : ℤ}
       have hmuk : m*u ≤ m*k := mul_le_mul_of_nonneg_left huk' (by omega)
       have hvm : -v ≤ m := by nlinarith
       have hex : t+(u*a+(-v)*b) ∈ A := by
-        convert ht' using 1 <;> nlinarith only [heq]
+        convert ht' using 1; nlinarith only [heq]
       exact hA t ht u (-v) (by omega) huk' (by omega) hvm (by omega) hex
     have hvm : 1-m ≤ v := by
       by_contra hn
@@ -64,7 +64,7 @@ theorem displacement_cases {A : Set ℤ} {a b k m u v t t' : ℤ}
         have hkvm : k*v ≤ k*m := mul_le_mul_of_nonneg_left hvm' (by omega)
         have huk : -u ≤ k := by nlinarith
         have hex : t'+((-u)*a+v*b) ∈ A := by
-          convert ht using 1 <;> nlinarith only [heq]
+          convert ht using 1; nlinarith only [heq]
         exact hA t' ht' (-u) v (by omega) huk (by omega) hvm' (by omega) hex
       have huk : -k ≤ u := by
         by_contra hn
@@ -212,7 +212,7 @@ theorem ordered_points_strict {A : Set ℤ} {a b k m : ℤ} {p q : ℤ × ℤ}
     nlinarith only [hw]
   have hne : q.1-p.1 ≠ 0 ∨ q.2-p.2 ≠ 0 := by
     by_contra hn
-    push_neg at hn
+    push Not at hn
     apply hpq
     exact Prod.ext (by omega) (by omega)
   have hh := (displacement_bounds ha hb hk hm hA ht ht' ht0 htn ht'0 ht'n
@@ -242,7 +242,7 @@ theorem path_count_bounds {A : Set ℤ} {a b k m : ℤ}
       nlinarith only [hwpD]
     have hne : b-p.1 ≠ 0 ∨ a-p.2 ≠ 0 := by
       by_contra hn
-      push_neg at hn
+      push Not at hn
       unfold weight at hwpD
       have h1 : p.1 = b := by omega
       have h2 : p.2 = a := by omega
@@ -270,7 +270,7 @@ theorem path_count_bounds {A : Set ℤ} {a b k m : ℤ}
       nlinarith only [hwq]
     have hne : q.1-p.1 ≠ 0 ∨ q.2-p.2 ≠ 0 := by
       by_contra hn
-      push_neg at hn
+      push Not at hn
       unfold weight at hwq
       have h1 : q.1 = p.1 := by omega
       have h2 : q.2 = p.2 := by omega
@@ -322,7 +322,7 @@ theorem finite_counting {A : Set ℤ} {a b k m U V : ℤ}
   have hlnodup : l.Nodup := hperm.nodup_iff.mpr (F.erase 0).nodup_toList
   have hnodup : (0::l).Nodup := by
     apply List.nodup_cons.mpr
-    exact ⟨by simpa [hlmem] using (not_false : ¬False),hlnodup⟩
+    exact ⟨by simp [hlmem],hlnodup⟩
   have hmem : ∀ t, t ∈ (0::l) ↔ t ∈ F := by
     intro t
     simp only [List.mem_cons,hlmem]

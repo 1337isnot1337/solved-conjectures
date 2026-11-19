@@ -18,14 +18,14 @@ not require the lattice-volume theorems listed below.
 defines the greatest common divisor of a list by an iterated `Nat.gcd`, and
 defines `normalize ds` by dividing every speed by that divisor.
 
-`value_scale` proves, for every positive integer \(d\),
+`value_scale` proves, for every positive integer $`d`$,
 
-\[
-\operatorname{value}(d\,ds)=\operatorname{value}(ds).
-\]
+```math
+\mathop{\mathrm{value}}(d\,ds)=\mathop{\mathrm{value}}(ds).
+```
 
 The upper bound reduces arbitrary real times modulo one. The lower bound uses
-the time \(t/d\) for every \(t\in[0,1]\).
+the time $`t/d`$ for every $`t\in[0,1]`$.
 
 For a nonempty positive list, normalization preserves its actual value, length,
 positivity, and distinctness, and makes its greatest common divisor one.
@@ -40,71 +40,71 @@ Loneliness.Normalization.critical_family_below_threshold
 ```
 
 For every positive speed list of length five containing a positive dilation of
-`[1,2,3,4]` or `[1,3,4,7]`, a value below \(1/5\) therefore equals
-\(s/(5s+1)\) for some positive integer \(s\).
+`[1,2,3,4]` or `[1,3,4,7]`, a value below $`1/5`$ therefore equals
+$`s/(5s+1)`$ for some positive integer $`s`$.
 
 ## Density transfer by rounding coefficients
 
 [`LonelinessSubspaceDensity.lean`](../../lean/Conjectures/LonelinessSubspaceDensity.lean)
-works directly with a real linear subspace \(E\subseteq\mathbb R^n\). It defines
+works directly with a real linear subspace $`E\subseteq\mathbb R^n`$. It defines
 
-\[
+```math
 G(x)=\min_i\|x_i\|,
 \qquad
 M(E)=\sup_{x\in E}G(x).
-\]
+```
 
 The definitions are `pointClearance` and `spaceValue`. The theorem
-`spaceValue_speed_line` identifies \(M(\mathbb Rv)\) with the existing actual
-real-time loneliness value of the natural speed list \(v\).
+`spaceValue_speed_line` identifies $`M(\mathbb Rv)`$ with the existing actual
+real-time loneliness value of the natural speed list $`v`$.
 
-Let \(w_1,\ldots,w_j\in\mathbb Z^n\), and choose arbitrary approximating vectors
-\(v_i\in E\). Suppose
+Let $`w_1,\ldots,w_j\in\mathbb Z^n`$, and choose arbitrary approximating vectors
+$`v_i\in E`$. Suppose
 
-\[
+```math
 |(w_i)_a-(v_i)_a|\le r_i
 \quad\text{for every }i,a.
-\]
+```
 
 `extension_density` proves that every point
 
-\[
-x\in E+\operatorname{span}_{\mathbb R}\{w_1,\ldots,w_j\}
-\]
+```math
+x\in E+\mathop{\mathrm{span}}_{\mathbb R}\{w_1,\ldots,w_j\}
+```
 
-has a vector \(y\in E\) and an integer vector \(z\in\mathbb Z^n\) with
+has a vector $`y\in E`$ and an integer vector $`z\in\mathbb Z^n`$ with
 
-\[
+```math
 \max_a|x_a-z_a-y_a|\le\frac12\sum_{i=1}^j r_i.
-\]
+```
 
-The construction is explicit. Express \(x=e+\sum_i b_iw_i\), and put
+The construction is explicit. Express $`x=e+\sum_i b_iw_i`$, and put
 
-\[
-z=\sum_i\operatorname{round}(b_i)w_i,
+```math
+z=\sum_i\mathop{\mathrm{round}}(b_i)w_i,
 \qquad
-y=e+\sum_i\bigl(b_i-\operatorname{round}(b_i)\bigr)v_i.
-\]
+y=e+\sum_i\bigl(b_i-\mathop{\mathrm{round}}(b_i)\bigr)v_i.
+```
 
 Then
 
-\[
-x-z-y=\sum_i\bigl(b_i-\operatorname{round}(b_i)\bigr)(w_i-v_i).
-\]
+```math
+x-z-y=\sum_i\bigl(b_i-\mathop{\mathrm{round}}(b_i)\bigr)(w_i-v_i).
+```
 
-Each scalar coefficient has absolute value at most \(1/2\). The triangle
+Each scalar coefficient has absolute value at most $`1/2`$. The triangle
 inequality gives the asserted coordinate bound. This construction does not
 require the added vectors to be linearly independent.
 
 `point_transfer` proves the required Lipschitz inequality modulo integer
 vectors. `extension_value_bound` and `extension_value_bound_norm` conclude
 
-\[
-M\bigl(E+\operatorname{span}\{w_i\}\bigr)
+```math
+M\bigl(E+\mathop{\mathrm{span}}\{w_i\}\bigr)
 \le M(E)+\frac12\sum_i\|w_i-v_i\|_\infty.
-\]
+```
 
-Taking \(v_i\) to be the orthogonal projection of \(w_i\) onto \(E\) gives the
+Taking $`v_i`$ to be the orthogonal projection of $`w_i`$ onto $`E`$ gives the
 coefficient-rounding transfer used by the lattice method. The existence of
 short projected lattice vectors is a separate mathematical step.
 
@@ -115,29 +115,29 @@ proves the numerical part with all lattice and subspace hypotheses explicit.
 It does not assert that those hypotheses have already been established for
 every speed tuple.
 
-For ordered nonnegative numbers \(a\le b\le c\le d\), the inequalities
+For ordered nonnegative numbers $`a\le b\le c\le d`$, the inequalities
 
-\[
+```math
 a+b>\frac1{10},\qquad
 a+b+c>\frac4{15},\qquad
 a+b+c+d>\frac35
-\]
+```
 
 imply
 
-\[
+```math
 b>\frac1{20},\qquad c>\frac4{45},\qquad d>\frac3{20},
 \qquad bcd>\frac1{1500}.
-\]
+```
 
-Given \(abcd\le1/V\), `first_minimum_bound` proves \(a<1500/V\).
+Given $`abcd\le1/V`$, `first_minimum_bound` proves $`a<1500/V`$.
 `five_speed_threshold` combines this with the density inequalities and
-\(V\ge33750\) to prove that the containing two-dimensional space has value
-strictly below \(2/9\).
+$`V\ge33750`$ to prove that the containing two-dimensional space has value
+strictly below $`2/9`$.
 
-The analogous three-minimum calculation gives \(A<4374/5\).
+The analogous three-minimum calculation gives $`A<4374/5`$.
 `squared_covolume_integer_bound` proves that an integral squared covolume then
-satisfies \(A^2\le765275\).
+satisfies $`A^2\le765275`$.
 
 ## Dependencies of the original lattice route
 

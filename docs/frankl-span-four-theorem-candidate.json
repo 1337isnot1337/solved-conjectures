@@ -1,7 +1,7 @@
 {
   "schema": "frankl-span-four-theorem-candidate-v1",
   "root": "Conjectures.FranklSpanFourTheorem",
-  "source_sha256": "d14b96bf40ec609193e13853188fdbb6ac5821582bcfdc06b9971c6907ddc621",
+  "source_sha256": "892023ce3845722d2232b34f21b2eb5ed6df8d816c9f4a187a3a672bc161dadf",
   "required_endpoints": [
     "FranklSpanFour.Verified.canonical_rows_covered",
     "FranklSpanFour.Verified.rows_covered",
