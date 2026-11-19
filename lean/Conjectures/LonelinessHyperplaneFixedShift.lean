@@ -65,9 +65,9 @@ theorem fixedShiftCDF_tendsto
     Tendsto (fixedShiftCDF m s u) atTop
       (𝓝 (if u < predictedValue m s then 0 else 1)) := by
   by_cases hu : u < predictedValue m s
-  · rw [if_pos hu]
+  · rw [ite_eq_left hu]
     exact fixedShiftCDF_tendsto_zero_of_lt m hm hreal hdim s u hu
-  · rw [if_neg hu]
+  · rw [ite_eq_right hu]
     obtain ⟨C, _, _, hrate⟩ := exists_uniform_probability_rate m hm hreal hdim 1 (by norm_num)
     apply tendsto_const_nhds.congr'
     filter_upwards [eventually_ge_atTop C] with N hN
@@ -84,8 +84,11 @@ theorem fixedShift_torus_cdf_tendsto
           (positiveBoxAdmissible m N).card) atTop
       (𝓝 (if u < torusPredictedValue m s then 0 else 1)) := by
   obtain ⟨r, rfl⟩ := real_shift_surjective s
+  have hlim := fixedShiftCDF_tendsto m hm hreal hdim r u
+  change Tendsto (fun N : ℕ => fixedShiftCDF m r u N) atTop
+    (𝓝 (if u < predictedValue m r then 0 else 1)) at hlim
   simpa only [torusVelocityValue_coe, torusPredictedValue_coe, fixedShiftCDF,
-    positiveBoxBelow] using fixedShiftCDF_tendsto m hm hreal hdim r u
+    positiveBoxBelow] using hlim
 
 end
 

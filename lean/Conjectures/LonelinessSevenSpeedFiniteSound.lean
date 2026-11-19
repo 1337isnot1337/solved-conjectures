@@ -18,7 +18,7 @@ def shapes : List (List ℕ) :=
 
 theorem value_eq_of_mem_shapes (ds : List ℕ) (hds : ds ∈ shapes) :
     value ds = (1/8 : ℝ) := by
-  simp only [shapes,List.mem_cons,List.mem_singleton] at hds
+  simp [shapes] at hds
   rcases hds with rfl | rfl | rfl
   · have h := Loneliness.consecutive_value 7 (by decide)
     norm_num [List.range'] at h ⊢

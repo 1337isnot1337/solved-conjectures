@@ -42,13 +42,15 @@ theorem exists_prime_of_squaredNorm (v : Fin 8 → ℕ)
     (hnorm : (∑ i, (v i)^2) ≤ squaredNormBound 8) :
     ∃ p ∈ smallPrimeSet, ∀ i, ¬ p ∣ v i := by
   exact exists_prime_avoiding_forced_of_tight (by decide) v hpositive
-    (by simpa using hvalue) smallPrimeSet smallPrimeSet_primes smallPrimeSet_coprime
+    (by norm_num at hvalue ⊢; exact hvalue)
+    smallPrimeSet smallPrimeSet_primes smallPrimeSet_coprime
     ((Nat.pow_le_pow_left hnorm 8).trans_lt smallPrimeSet_margin)
 
 /-- Geometry discharges the norm premise. The only analytic inputs left
 are runner bounds in strictly fewer than eight speeds. -/
 theorem exists_prime_of_tight (v : Fin 8 → ℕ) (hpositive : ∀ i, 0 < v i)
-    (hprimitive : Search.Primitive v) (hvalue : value (List.ofFn v) ≤ (1/9 : ℝ))
+    (hprimitive : (List.ofFn v).foldr Nat.gcd 0 = 1)
+    (hvalue : value (List.ofFn v) ≤ (1/9 : ℝ))
     (hLRC : ∀ m : ℕ, 1 ≤ m → m < 8 → LonelyRunnerBound m) :
     ∃ p ∈ smallPrimeSet, ∀ i, ¬ p ∣ v i := by
   apply exists_prime_of_squaredNorm v hpositive hvalue

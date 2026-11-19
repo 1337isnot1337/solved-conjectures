@@ -52,7 +52,7 @@ def erase (mask a : ℕ) : ℕ := Nat.ldiff mask (2^a)
 theorem decode_erase (mask a : ℕ) : decode (erase mask a)=(decode mask).erase a := by
   rw [erase,decode_ldiff,decode_singleton]
   ext i
-  simp
+  simp [and_comm]
 
 def insertBit (mask a : ℕ) : ℕ := mask ||| 2^a
 
@@ -68,7 +68,7 @@ theorem decode_after (compatible : ℕ → ℕ) (available a : ℕ) :
       afterChoice (fun i j => (compatible i).testBit j) (decode available) a := by
   rw [after,decode_and,decode_erase]
   ext b
-  simp [afterChoice]
+  simp [afterChoice,and_assoc]
 
 def capacity (cover : ℕ → ℕ) (available uncovered slots threshold : ℕ) : ℕ :=
   slots*threshold +
@@ -122,8 +122,9 @@ theorem check_eq (cover compatible : ℕ → ℕ) (terminal : Finset ℕ → ℕ
     simp only [check,SupportSearch.check,decode_eq_empty_iff]
   | witness t =>
     intro selected available uncovered slots
-    simp only [check,SupportSearch.check,mem_decode,decode,List.mem_toFinset,
-      Nat.mem_bitIndices,Bool.not_eq_true]
+    simp only [check,SupportSearch.check]
+    apply decide_eq_decide.mpr
+    simp only [mem_decode,Nat.mem_bitIndices,Bool.not_eq_true]
   | capacity threshold =>
     intro selected available uncovered slots
     rw [check,SupportSearch.check,capacity_eq,card_decode]

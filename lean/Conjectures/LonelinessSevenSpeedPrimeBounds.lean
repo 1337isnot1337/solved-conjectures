@@ -42,13 +42,15 @@ theorem exists_prime_of_squaredNorm (v : Fin 7 → ℕ)
     (hnorm : (∑ i, (v i)^2) ≤ squaredNormBound 7) :
     ∃ p ∈ smallPrimeSet, ∀ i, ¬ p ∣ v i := by
   exact exists_prime_avoiding_forced_of_tight (by decide) v hpositive
-    (by simpa using hvalue) smallPrimeSet smallPrimeSet_primes smallPrimeSet_coprime
+    (by norm_num at hvalue ⊢; exact hvalue)
+    smallPrimeSet smallPrimeSet_primes smallPrimeSet_coprime
     ((Nat.pow_le_pow_left hnorm 7).trans_lt smallPrimeSet_margin)
 
 /-- Geometry discharges the norm premise. The only analytic inputs left
 are runner bounds in strictly fewer than seven speeds. -/
 theorem exists_prime_of_tight (v : Fin 7 → ℕ) (hpositive : ∀ i, 0 < v i)
-    (hprimitive : Search.Primitive v) (hvalue : value (List.ofFn v) ≤ (1/8 : ℝ))
+    (hprimitive : (List.ofFn v).foldr Nat.gcd 0 = 1)
+    (hvalue : value (List.ofFn v) ≤ (1/8 : ℝ))
     (hLRC : ∀ m : ℕ, 1 ≤ m → m < 7 → LonelyRunnerBound m) :
     ∃ p ∈ smallPrimeSet, ∀ i, ¬ p ∣ v i := by
   apply exists_prime_of_squaredNorm v hpositive hvalue

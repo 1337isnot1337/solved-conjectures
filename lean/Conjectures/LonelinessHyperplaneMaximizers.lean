@@ -38,7 +38,7 @@ theorem eq_signChoice_of_pairing_eq_normalMass_mul
       exact le_abs_self _
     have hbound := mul_le_mul_of_nonneg_left (hy i) (abs_nonneg (m i : ℝ))
     linarith
-  have hsum : (∑ i, |(m i : ℝ)| * δ - (m i : ℝ) * y i) = 0 := by
+  have hsum : (∑ i, (|(m i : ℝ)| * δ - (m i : ℝ) * y i)) = 0 := by
     rw [Finset.sum_sub_distrib, ← Finset.sum_mul]
     change normalMass m * δ - pairing m y = 0
     rw [hpair, sub_self]

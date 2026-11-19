@@ -72,13 +72,13 @@ theorem Row.sound {N : ℕ} {m : ℕ} {roots : Fin N → Fin 10 → ℕ}
   · have hcard : row.support.toFinset.card=10 :=
       (List.toFinset_card_of_nodup hvalid.1).trans hfull
     have hl := Multiplicity.perm_support_of_length l row.support.toFinset hset (by omega)
-    exact hasRepresentative_of_perm (hl.trans hbase) himage.sound
+    exact hasRepresentative_of_perm (hl.trans hbase) (Witness.sound himage)
   · have hcard : row.support.toFinset.card=9 :=
       (List.toFinset_card_of_nodup hvalid.1).trans hrepeated
     obtain ⟨a,ha,hperm⟩ := Multiplicity.ten_entries_nine_support l
       row.support.toFinset hset hlen hcard
     have hi := himage a (List.mem_toFinset.mp ha)
-    exact hasRepresentative_of_perm (hperm.trans (hbase.cons a)) hi.sound
+    exact hasRepresentative_of_perm (hperm.trans (hbase.cons a)) (Witness.sound hi)
 
 /-- A retained leaf compares the complete finite support to an indexed row.
 The expensive row validity proof can be checked once and reused by leaves. -/
@@ -104,7 +104,7 @@ private theorem multiply_units {m u v a b : ℕ}
     ((a*u)*(v*b))%m = ((u*v)*(a*b))%m := by congr 1; ring
     _ = ((u*v)%m*((a*b)%m))%m := Nat.mul_mod _ _ _
     _ = ((1%m)*(1%m))%m := by rw [hu,ha]
-    _ = 1%m := by rw [←Nat.mul_mod]; simp
+    _ = 1%m := by rw [←Nat.mul_mod]
 
 /-- Support normalization and a finite orbit row give a literal folded
 root representation of a permutation of the original integer speeds. -/
@@ -113,7 +113,7 @@ theorem normalized_represents {N m u inverse : ℕ} (hm : 0<m)
     (hunit : (u*inverse)%m=1%m)
     (hclassified : SupportClassified m roots
       (foldedSupport m u (FourSpeed.residueSupport m (List.ofFn v)))) :
-    ∃ i (σ : Equiv.Perm (Fin 10)), FoldedSearch.Represents m (roots i) (v ∘ σ) := by
+    ∃ (i : Fin N) (σ : Equiv.Perm (Fin 10)), FoldedSearch.Represents m (roots i) (v ∘ σ) := by
   let l := (List.ofFn v).map (fun a => folded m (u*a))
   have hset : l.toFinset=
       foldedSupport m u (FourSpeed.residueSupport m (List.ofFn v)) :=
@@ -140,7 +140,7 @@ theorem checked_initial_represents {N R : ℕ} (m : ℕ) (hm : 2≤m) (hgrid : �
         (Initial.uncovered m b) 8=true)
     (v : Fin 10 → ℕ) (hmod : ∀ i, v i%m≠0)
     (hlow : value (List.ofFn v)≤(1/11:ℝ)) :
-    ∃ i (σ : Equiv.Perm (Fin 10)), FoldedSearch.Represents m (roots i) (v ∘ σ) := by
+    ∃ (i : Fin N) (σ : Equiv.Perm (Fin 10)), FoldedSearch.Represents m (roots i) (v ∘ σ) := by
   have hmod' : ∀ a∈List.ofFn v, a%m≠0 := by
     intro a ha
     obtain ⟨i,rfl⟩ := List.mem_ofFn.mp ha
