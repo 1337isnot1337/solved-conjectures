@@ -532,3 +532,5 @@ import Conjectures.LonelinessRenaultFiveSpeed
 import Conjectures.LonelinessFiveSpeedBound
 import Conjectures.LonelinessRunnerBoundTransport
 import Conjectures.LonelinessRunnerBoundPadding
+import Conjectures.LonelinessSixSpectrumFieldsDefs
+import Conjectures.LonelinessSixSpectrumFieldsProduct

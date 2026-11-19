@@ -9,6 +9,22 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    ``Loneliness.SixSpectrumFields.triple_card,
+    ``Loneliness.SixSpectrumFields.form_card,
+    ``Loneliness.SixSpectrumFields.twoRelationsCheck_sound,
+    ``Loneliness.SixSpectrumFields.pointCheck_sound,
+    ``Loneliness.SixSpectrumFields.primeCheck_sound,
+    ``Loneliness.SixSpectrumFields.eval_mod_decomposition,
+    ``Loneliness.SixSpectrumFields.relations_of_mod,
+    ``Loneliness.SixSpectrumFields.relations_of_cover,
+    ``Loneliness.SixSpectrumFields.eval_square_le,
+    ``Loneliness.SixSpectrumFields.additive_of_zero,
+    ``Loneliness.SixSpectrumFields.prime_square_product_dvd,
+    ``Loneliness.SixSpectrumFields.twoRelations_square_dvd,
+    ``Loneliness.SixSpectrumFields.prime_square_dvd_obstruction,
+    ``Loneliness.SixSpectrumFields.obstruction_square_le,
+    ``Loneliness.SixSpectrumFields.zero_form_of_prime_covers,
+    ``Loneliness.SixSpectrumFields.additive_triangle_of_prime_covers,
     `Loneliness.SixPlane.integer_direction_classCount,
     `Loneliness.SixPlane.value_lower_of_classCount,
     `Loneliness.SixPlane.classCount_lt_six_of_same,
