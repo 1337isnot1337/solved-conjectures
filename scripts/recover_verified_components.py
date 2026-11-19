@@ -240,7 +240,7 @@ def member_name(info):
 
 
 def selected_member(name):
-    if name in RECEIPT_NAMES or name == "declaration-inventory.json":
+    if name in RECEIPT_NAMES or name in {"declaration-inventory.json", "producer-data.json"}:
         return True
     if name.startswith(("src/", "generated/")) and name.endswith(".lean"):
         return True
