@@ -25,6 +25,7 @@ def torusQuotient : (ι → ℝ) →+ UnitAddTorus ι where
 def torusGroup (E : Submodule ℝ (ι → ℝ)) : AddSubgroup (UnitAddTorus ι) :=
   (E.toAddSubgroup.map torusQuotient).topologicalClosure
 
+omit [Fintype ι] in
 theorem torusGroup_isClosed (E : Submodule ℝ (ι → ℝ)) :
     IsClosed (torusGroup E : Set (UnitAddTorus ι)) :=
   (E.toAddSubgroup.map torusQuotient).isClosed_topologicalClosure
@@ -32,6 +33,7 @@ theorem torusGroup_isClosed (E : Submodule ℝ (ι → ℝ)) :
 instance torusGroup_compactSpace (E : Submodule ℝ (ι → ℝ)) : CompactSpace (torusGroup E) :=
   isCompact_iff_compactSpace.mp (torusGroup_isClosed E).isCompact
 
+omit [Fintype ι] in
 theorem torusQuotient_mem (E : Submodule ℝ (ι → ℝ)) {x : ι → ℝ} (hx : x ∈ E) :
     torusQuotient x ∈ torusGroup E := by
   apply (E.toAddSubgroup.map torusQuotient).le_topologicalClosure
@@ -53,7 +55,7 @@ theorem trivialFrequency_iff
     have hpair : pairing n w = 1 / 2 := by
       dsimp only [w]
       rw [pairing_smul]
-      field_simp [hnx] <;> ring
+      field_simp [hnx]
     rw [hpair] at hchar
     have hphase : ((1 / 2 : ℝ) : UnitAddCircle) = 0 := by
       apply AddCircle.injective_toCircle one_ne_zero
@@ -92,6 +94,7 @@ theorem nontrivialFrequency_finrank_lt
     Module.finrank ℝ ↥(E ⊓ relationSpace n) < Module.finrank ℝ E :=
   Submodule.finrank_lt_finrank_of_lt ((nontrivialFrequency_iff_slice_lt E n).mp hn)
 
+omit [Fintype ι] in
 theorem velocity_mem_torusGroup
     (E : Submodule ℝ (ι → ℝ)) (v : ι → ℤ) (hv : integerVector v ∈ E)
     (t : UnitAddCircle) : (fun i => v i • t) ∈ torusGroup E := by

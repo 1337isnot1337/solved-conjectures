@@ -46,6 +46,7 @@ instance relationHaar_isProbabilityMeasure (m : ι → ℤ) :
     IsProbabilityMeasure (relationHaar m) :=
   ⟨Measure.addHaarMeasure_self⟩
 
+omit [Fintype ι] in
 private theorem toCircle_finset_sum (S : Finset ι) (x : ι → UnitAddCircle) :
     (AddCircle.toCircle (∑ i ∈ S, x i) : ℂ) =
       ∏ i ∈ S, (AddCircle.toCircle (x i) : ℂ) := by
@@ -149,9 +150,9 @@ theorem integral_mFourier_velocity_eq_relation
       obtain ⟨c, rfl⟩ := hnm
       rw [integerPairing_comm (c • m) v, integerPairing_smul,
         integerPairing_comm v m, hv, mul_zero]
-    rw [if_pos hnv,
+    rw [ite_eq_left hnv,
       integral_relation_mFourier_of_multiple m n hnm]
-  · rw [if_neg (hn hnm),
+  · rw [ite_eq_right (hn hnm),
       integral_relation_mFourier_of_not_multiple m hm n hnm]
 
 end

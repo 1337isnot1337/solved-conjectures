@@ -48,6 +48,7 @@ theorem torusVelocityValue_coe (v : ι → ℤ) (s : ι → ℝ) :
   · rintro ⟨r, _, rfl⟩
     exact ⟨(r : UnitAddCircle), torus_velocity_clearance_coe v s r⟩
 
+omit [Fintype ι] [Nonempty ι] in
 theorem real_shift_surjective :
     Function.Surjective (fun s : ι → ℝ => fun i => (s i : UnitAddCircle)) := by
   intro s

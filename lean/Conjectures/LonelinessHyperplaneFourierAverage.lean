@@ -57,7 +57,7 @@ theorem integral_finiteCharacterPolynomial_velocity_eq_relation
       finiteCharacterPolynomial S a (s + fun i => v i • t)) =
       ∫ x : torusRelationGroup m,
         finiteCharacterPolynomial S a (s + (x : UnitAddTorus ι)) ∂relationHaar m := by
-  letI : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
+  let : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
     ⟨UnitAddCircle.measure_univ⟩
   have hV : ∀ n ∈ S, Integrable (fun t : UnitAddCircle =>
       a n * UnitAddTorus.mFourier n (s + fun i => v i • t)) volume := by
@@ -92,7 +92,7 @@ theorem exists_finite_frequency_average_control
           ‖(∫ t : UnitAddCircle, f (s + integerVelocityInRelation m v hv t)) -
             ∫ x : torusRelationGroup m, f x ∂relationHaar m‖ < ε := by
   classical
-  letI : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
+  let : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
     ⟨UnitAddCircle.measure_univ⟩
   obtain ⟨S, a, happ⟩ := exists_finite_character_approx_on
     (torusRelationGroup m : Set (UnitAddTorus ι))

@@ -26,12 +26,12 @@ def positiveDistinctReal : Set (ι → ℝ) :=
 
 theorem isOpen_positiveDistinctReal : IsOpen (positiveDistinctReal (ι := ι)) := by
   have hpos : IsOpen {x : ι → ℝ | ∀ i, 0 < x i} := by
-    simpa only [Set.setOf_forall] using
+    simpa only [Set.ofPred_forall] using
       isOpen_iInter_of_finite (fun i : ι =>
         isOpen_lt (continuous_const : Continuous (fun _ : ι → ℝ => (0 : ℝ)))
           (continuous_apply i))
   have hne : IsOpen {x : ι → ℝ | ∀ i, ∀ j : {j : ι // j ≠ i}, x i ≠ x j} := by
-    simpa only [Set.setOf_forall] using
+    simpa only [Set.ofPred_forall] using
       isOpen_iInter_of_finite (fun i : ι =>
         isOpen_iInter_of_finite (fun j : {j : ι // j ≠ i} =>
           isOpen_ne_fun (continuous_apply i) (continuous_apply j.1)))
@@ -50,16 +50,19 @@ theorem isOpen_positiveDistinctReal : IsOpen (positiveDistinctReal (ι := ι)) :
 def relationProjection (m e : ι → ℤ) (x : ι → ℝ) : ι → ℝ :=
   x - pairing m x • integerVector e
 
+omit [DecidableEq ι] in
 theorem continuous_pairing (m : ι → ℤ) : Continuous (pairing m) := by
   unfold pairing
   apply continuous_finsetSum
   intro i _
   exact continuous_const.mul (continuous_apply i)
 
+omit [DecidableEq ι] in
 theorem continuous_relationProjection (m e : ι → ℤ) :
     Continuous (relationProjection m e) :=
   continuous_id.sub ((continuous_pairing m).smul continuous_const)
 
+omit [DecidableEq ι] in
 theorem relationProjection_mem (m e : ι → ℤ) (he : integerPairing m e = 1)
     (x : ι → ℝ) : pairing m (relationProjection m e x) = 0 := by
   have heR : pairing m (integerVector e) = 1 := by
@@ -67,6 +70,7 @@ theorem relationProjection_mem (m e : ι → ℤ) (he : integerPairing m e = 1)
     exact_mod_cast he
   rw [relationProjection, pairing_sub, pairing_smul, heR, mul_one, sub_self]
 
+omit [DecidableEq ι] in
 theorem relationProjection_eq (m e : ι → ℤ) {x : ι → ℝ}
     (hx : pairing m x = 0) : relationProjection m e x = x := by
   simp [relationProjection, hx]
@@ -76,6 +80,7 @@ def rationalVector (q : ι → ℚ) : ι → ℝ := fun i => (q i : ℝ)
 def rationalRelationProjection (m e : ι → ℤ) (q : ι → ℚ) : ι → ℚ :=
   fun i => q i - (∑ j, (m j : ℚ) * q j) * (e i : ℚ)
 
+omit [DecidableEq ι] in
 theorem rationalVector_projection (m e : ι → ℤ) (q : ι → ℚ) :
     rationalVector (rationalRelationProjection m e q) =
       relationProjection m e (rationalVector q) := by
@@ -83,6 +88,7 @@ theorem rationalVector_projection (m e : ι → ℤ) (q : ι → ℚ) :
   simp [rationalVector, rationalRelationProjection, relationProjection,
     pairing, integerVector]
 
+omit [Fintype ι] [DecidableEq ι] in
 theorem denseRange_rationalVector : DenseRange (rationalVector (ι := ι)) :=
   DenseRange.piMap (fun _ : ι => Rat.denseRange_cast)
 
@@ -122,10 +128,12 @@ theorem exists_positive_distinct_rational_kernel
 
 def rationalCommonDenominator (q : ι → ℚ) : ℕ := ∏ i, (q i).den
 
+omit [DecidableEq ι] in
 theorem rationalCommonDenominator_pos (q : ι → ℚ) :
     0 < rationalCommonDenominator q := by
   exact Finset.prod_pos (fun i _ => (q i).den_pos)
 
+omit [DecidableEq ι] in
 theorem den_dvd_rationalCommonDenominator (q : ι → ℚ) (i : ι) :
     (q i).den ∣ rationalCommonDenominator q :=
   Finset.dvd_prod_of_mem (fun j => (q j).den) (Finset.mem_univ i)
@@ -133,6 +141,7 @@ theorem den_dvd_rationalCommonDenominator (q : ι → ℚ) (i : ι) :
 def clearedRationalVector (q : ι → ℚ) : ι → ℤ :=
   fun i => ((rationalCommonDenominator q / (q i).den : ℕ) : ℤ) * (q i).num
 
+omit [DecidableEq ι] in
 theorem cast_clearedRationalVector (q : ι → ℚ) (i : ι) :
     (clearedRationalVector q i : ℚ) = (rationalCommonDenominator q : ℚ) * q i := by
   have hd := Nat.div_mul_cancel (den_dvd_rationalCommonDenominator q i)
@@ -146,6 +155,7 @@ theorem cast_clearedRationalVector (q : ι → ℚ) (i : ι) :
       ring
     _ = _ := by rw [hd]
 
+omit [DecidableEq ι] in
 theorem integerVector_clearedRationalVector (q : ι → ℚ) :
     integerVector (clearedRationalVector q) =
       (rationalCommonDenominator q : ℝ) • rationalVector q := by

@@ -63,7 +63,7 @@ theorem exists_residue_centered_count_bound
           ((positiveBoxAdmissible m N).card : ℤ)).natAbs ≤
         R * N ^ (Fintype.card ι - 2) := by
   classical
-  letI : NeZero Q := ⟨hQ.ne'⟩
+  let : NeZero Q := ⟨hQ.ne'⟩
   choose C hC using fun s : (residueNormalHom m Q).ker =>
     exists_residue_count_difference_bound m hm hreal Q hQ r s.1 hr s.2
   let R : ℕ := ∑ s : (residueNormalHom m Q).ker, C s
@@ -109,7 +109,6 @@ theorem exists_residue_centered_count_bound
 def residueFrequency (m : ι → ℤ) (Q : ℕ) (r : ι → ZMod Q) (N : ℕ) : ℝ :=
   ((positiveBoxResidue m Q r N).card : ℝ) / (positiveBoxAdmissible m N).card
 
-variable [Nonempty ι]
 
 /-- Every fixed genuine residue class has the expected density, with a
 reciprocal-box-size error bound and an eventually positive denominator. -/
@@ -147,7 +146,7 @@ theorem exists_residue_frequency_rate
   have hidentity : residueFrequency m Q r N - 1 / (q : ℝ) =
       ((q : ℝ) * (c : ℝ) - (D : ℝ)) / ((q : ℝ) * (D : ℝ)) := by
     change (c : ℝ) / (D : ℝ) - 1 / (q : ℝ) = _
-    field_simp [hDR.ne', hqR.ne'] <;> ring
+    field_simp [hDR.ne', hqR.ne']
   refine ⟨hD, ?_⟩
   have hqcast : (q : ℝ) = (Q : ℝ) ^ (Fintype.card ι - 1) := by simp [q]
   rw [← hqcast, hidentity, abs_div, abs_of_pos (mul_pos hqR hDR), ← hER]

@@ -24,7 +24,7 @@ def residueScaleIntegerHom (g Q : ℕ) : ℤ →+ ZMod (g * Q) where
 theorem residueScaleIntegerHom_period (g Q : ℕ) :
     residueScaleIntegerHom g Q (Q : ℤ) = 0 := by
   change (((g : ℤ) * (Q : ℤ) : ℤ) : ZMod (g * Q)) = 0
-  simp only [Int.cast_mul, Int.cast_natCast, ← Nat.cast_mul, ZMod.natCast_self]
+  simp only [Int.cast_natCast, ← Nat.cast_mul, ZMod.natCast_self]
 
 def residueScale (g Q : ℕ) : ZMod Q →+ ZMod (g * Q) :=
   ZMod.lift Q ⟨residueScaleIntegerHom g Q, residueScaleIntegerHom_period g Q⟩
@@ -56,6 +56,7 @@ variable {ι : Type*} [Fintype ι]
 def scaleResidueVector (g Q : ℕ) (b : ι → ZMod Q) : ι → ZMod (g * Q) :=
   fun i => residueScale g Q (b i)
 
+omit [Fintype ι] in
 theorem scaleResidueVector_injective (g Q : ℕ) (hg : 0 < g) :
     Function.Injective (scaleResidueVector (ι := ι) g Q) := by
   intro r s hrs
@@ -120,7 +121,7 @@ theorem scaledUnitResidueLine_dvd
     v i = (g : ℤ) * z + ((g * Q : ℕ) : ℤ) * c := by linarith [hc]
     _ = (g : ℤ) * (z + (Q : ℤ) * c) := by push_cast; ring
 
-variable [DecidableEq ι] [Nonempty ι]
+variable [DecidableEq ι]
 
 /-- Each fixed positive scale contributes `φ(Q)` genuine residue
 classes modulo `gQ`, all counted in the original box. -/

@@ -17,11 +17,13 @@ def coordinateFrequency (i : ι) : ι → ℤ := Pi.single i 1
 
 def differenceFrequency (i j : ι) : ι → ℤ := coordinateFrequency i - coordinateFrequency j
 
+omit [DecidableEq ι] in
 theorem pairing_normal_smul (c : ℤ) (m : ι → ℤ) (x : ι → ℝ) :
     pairing (c • m) x = (c : ℝ) * pairing m x := by
   simp only [pairing, Pi.smul_apply, zsmul_eq_mul, Int.cast_id, Int.cast_mul,
     mul_assoc, Finset.mul_sum]
 
+omit [DecidableEq ι] in
 theorem pairing_normal_sub (m b : ι → ℤ) (x : ι → ℝ) :
     pairing (m - b) x = pairing m x - pairing b x := by
   simp [pairing, sub_mul, Finset.sum_sub_distrib]

@@ -35,6 +35,7 @@ theorem addChar_integral_eq_zero (χ : AddChar G ℂ) {g : G} (hg : χ g ≠ 1) 
     rw [sub_mul, one_mul, hmul, sub_self]
   exact (mul_eq_zero.mp hz).resolve_left (sub_ne_zero.mpr hg)
 
+omit [MeasurableAdd G] [μ.IsAddLeftInvariant] in
 theorem addChar_integral_eq_one [IsProbabilityMeasure μ]
     (χ : AddChar G ℂ) (hχ : ∀ x, χ x = 1) :
     (∫ x, χ x ∂μ) = 1 := by
@@ -88,6 +89,7 @@ theorem fourier_zsmul (n v : ℤ) (t : UnitAddCircle) :
     fourier n (v • t) = fourier (n * v) t := by
   simp only [fourier_apply, mul_smul]
 
+omit [Fintype ι] in
 private theorem prod_fourier (S : Finset ι) (n : ι → ℤ) (t : UnitAddCircle) :
     (∏ i ∈ S, fourier (n i) t) = fourier (∑ i ∈ S, n i) t := by
   classical
@@ -107,12 +109,12 @@ theorem mFourier_velocity (n v : ι → ℤ) (t : UnitAddCircle) :
 
 theorem integral_fourier (n : ℤ) :
     (∫ t : UnitAddCircle, fourier n t) = if n = 0 then (1 : ℂ) else 0 := by
-  letI : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
+  let : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
     ⟨UnitAddCircle.measure_univ⟩
   by_cases hn : n = 0
   · subst n
-    simp [fourier_zero]
-  · rw [if_neg hn]
+    simp
+  · rw [ite_eq_right hn]
     exact integral_eq_zero_of_add_right_eq_neg
       (μ := (volume : Measure UnitAddCircle))
       (g := (((1 : ℝ) / 2 / (n : ℝ) : ℝ) : UnitAddCircle))

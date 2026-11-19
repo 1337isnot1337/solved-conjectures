@@ -37,14 +37,15 @@ theorem sharpNormal_realAdmissible : RealAdmissible sharpNormal := by
     exact_mod_cast add_right_cancel hij
 
 theorem sharpVelocity_orthogonal (g : ℕ) : integerPairing sharpNormal (sharpVelocity g) = 0 := by
-  norm_num [integerPairing, sharpNormal, sharpVelocity, Fin.sum_univ_succ] <;> ring
+  norm_num [integerPairing, sharpNormal, sharpVelocity, Fin.sum_univ_succ]
+  ring
 
 theorem sharpVelocity_injective (g : ℕ) (hg : 0 < g) :
     Function.Injective (sharpVelocity g) := by
   intro i j hij
   apply Fin.ext
   have hgZ : (g : ℤ) ≠ 0 := by exact_mod_cast hg.ne'
-  simp only [sharpVelocity, Nat.cast_add, Nat.cast_one] at hij
+  simp only [sharpVelocity] at hij
   have hi := mul_left_cancel₀ hgZ hij
   exact_mod_cast add_right_cancel hi
 
@@ -64,7 +65,7 @@ theorem sharpVelocity_value_upper (g : ℕ) :
     apply le_clearance (point_le_half _)
     intro d hd
     have hindex : ∃ i : Fin 3, (i : ℕ) + 1 = d := by
-      simp only [List.mem_cons, List.mem_singleton] at hd
+      simp only [List.mem_cons, List.not_mem_nil, or_false] at hd
       rcases hd with rfl | rfl | rfl
       · exact ⟨0, rfl⟩
       · exact ⟨1, rfl⟩
@@ -76,7 +77,7 @@ theorem sharpVelocity_value_upper (g : ℕ) :
         congr 1
         simp only [Pi.add_apply, Pi.zero_apply, Pi.smul_apply, smul_eq_mul,
           integerVector, sharpVelocity, Int.cast_mul, Int.cast_add, Int.cast_natCast,
-          Int.cast_one, Nat.cast_add, Nat.cast_one, zero_add]
+          Int.cast_one, zero_add]
         have hiR : ((i : ℕ) : ℝ) + 1 = (d : ℝ) := by exact_mod_cast hi
         rw [hiR]
         ring
@@ -101,8 +102,8 @@ theorem sharpVelocity_attaining_time (g : ℕ) (hg : 0 < g) :
         (((i : ℕ) : ℝ) + 1) / 4 := by
       simp only [Pi.add_apply, Pi.zero_apply, Pi.smul_apply, smul_eq_mul,
         integerVector, sharpVelocity, Int.cast_mul, Int.cast_add, Int.cast_natCast,
-        Int.cast_one, Nat.cast_add, Nat.cast_one, zero_add]
-      field_simp [hgR.ne'] <;> ring
+        Int.cast_one, zero_add]
+      field_simp [hgR.ne']
     rw [hphase]
     apply distance_lower_of_cell (k := 0)
     · norm_num only [Int.cast_zero, sub_zero]
@@ -142,7 +143,8 @@ def sharpBoxVelocity {N : ℕ} (j : Fin (N / 3)) : Fin 3 → Fin N := fun i =>
 
 theorem sharpBoxVelocity_coordinates {N : ℕ} (j : Fin (N / 3)) (i : Fin 3) :
     positiveBoxCoordinates (sharpBoxVelocity j) i = sharpVelocity ((j : ℕ) + 1) i := by
-  have hpos : 1 ≤ ((j : ℕ) + 1) * ((i : ℕ) + 1) := by positivity
+  have hpos : 1 ≤ ((j : ℕ) + 1) * ((i : ℕ) + 1) :=
+    Nat.succ_le_iff.mpr (Nat.mul_pos (Nat.succ_pos _) (Nat.succ_pos _))
   have he : (((j : ℕ) + 1) * ((i : ℕ) + 1) - 1) + 1 =
       ((j : ℕ) + 1) * ((i : ℕ) + 1) := Nat.sub_add_cancel hpos
   change ((((j : ℕ) + 1) * ((i : ℕ) + 1) - 1 : ℕ) : ℤ) + 1 =
