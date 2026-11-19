@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    ``Loneliness.ProductPlaneSpeeds.integer_coordinates,
+    ``Loneliness.ProductPlaneSpeeds.absolute_list,
+    ``Loneliness.ProductPlaneSpeeds.product_parameters_of_positive_direction,
+    ``Loneliness.ProductPlaneSpeeds.primitive_family_of_below,
     `Loneliness.SixPlane.Data.pilotSmall,
     `Loneliness.SixPlane.Data.pilotEight,
     `Loneliness.SixPlane.Data.pilotForty,
