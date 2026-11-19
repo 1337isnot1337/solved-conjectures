@@ -1,8 +1,11 @@
-"""Propose complete modular slope and bounded-pair checks for the164 maps.
+"""Propose complete modular slope and bounded-pair checks for the 164 maps.
 
 Python finds the bad slope list and checks the proposed terminal list for
 early diagnostics. Lean recomputes the full finite cover and every bounded
 lift; these Python assertions are not proof premises.
+Pair checks use at most four slopes and 64 first-parameter values per
+certificate, joined by balanced append proofs in both coordinates.
+The two previously verified prototypes retain their original source text.
 """
 
 from argparse import ArgumentParser
@@ -15,6 +18,9 @@ from time import monotonic
 from generate_lean_scalar_masks import entries
 
 HERE = Path(__file__).resolve().parent
+PAIR_SLOPE_CHUNK_SIZE = 4
+PAIR_PARAMETER_CHUNK_SIZE = 64
+PRESERVED_MAPS = frozenset({24, 63})
 
 
 def full_masks(prime):
@@ -75,15 +81,118 @@ def propose(record, masks1, masks2, allowed):
             "counts": counts, "candidate_tuples": sorted(candidate_set)}
 
 
+def lean_list(values):
+    return "[" + ", ".join(map(str, values)) + "]"
+
+
+def render_pair_checks(record):
+    index = record["id"]
+    matrix = f"(boundedMaps {index})"
+    bound = f"(23 * boundedMapL {index})"
+    declaration = (
+        "theorem pairs_checked : boundedSlopeScanCheck 1009 1013\n"
+        f"    (treeMask 1013 ScalarTrees.P1013.tree) {matrix}\n"
+        f"    {bound} badSlopes candidateTuples = true := by\n"
+    )
+    if index in PRESERVED_MAPS:
+        return declaration + "  decide +kernel\n\n"
+
+    bad = record["bad_slopes"]
+    if not bad:
+        return declaration + (
+            "  exact boundedSlopeScanCheck_nil 1009 1013\n"
+            f"    (treeMask 1013 ScalarTrees.P1013.tree) {matrix} {bound} candidateTuples\n\n"
+        )
+
+    chunks = [bad[start:start + PAIR_SLOPE_CHUNK_SIZE]
+              for start in range(0, len(bad), PAIR_SLOPE_CHUNK_SIZE)]
+    proofs = []
+    parameter_count = record["bound"] + 1
+
+    def statement(name, slopes):
+        return (
+            f"private theorem {name} : boundedSlopeScanCheck 1009 1013\n"
+            f"    (treeMask 1013 ScalarTrees.P1013.tree) {matrix}\n"
+            f"    {bound} {lean_list(slopes)} candidateTuples = true :="
+        )
+
+    def range_statement(name, slopes, start, count):
+        return (
+            f"private theorem {name} : boundedSlopeRangeCheck 1009 1013\n"
+            f"    (treeMask 1013 ScalarTrees.P1013.tree) {matrix}\n"
+            f"    {bound} {lean_list(slopes)} candidateTuples {start} {count} = true :="
+        )
+
+    for chunk_index, slopes in enumerate(chunks):
+        chunk_name = f"pairs_chunk_{chunk_index:03d}"
+        if parameter_count <= PAIR_PARAMETER_CHUNK_SIZE:
+            proofs.append(statement(chunk_name, slopes) + " by\n  decide +kernel\n\n")
+            continue
+
+        intervals = [(start, min(PAIR_PARAMETER_CHUNK_SIZE, parameter_count - start))
+                     for start in range(0, parameter_count, PAIR_PARAMETER_CHUNK_SIZE)]
+        for interval_index, (start, count) in enumerate(intervals):
+            name = f"pairs_range_{chunk_index:03d}_{interval_index:03d}"
+            proofs.append(range_statement(name, slopes, start, count)
+                          + " by\n  decide +kernel\n\n")
+
+        def join_intervals(first, stop):
+            if stop - first == 1:
+                start, count = intervals[first]
+                return f"pairs_range_{chunk_index:03d}_{first:03d}", start, count
+            middle = (first + stop) // 2
+            left_name, start, left_count = join_intervals(first, middle)
+            right_name, right_start, right_count = join_intervals(middle, stop)
+            assert right_start == start + left_count
+            name = f"pairs_range_join_{chunk_index:03d}_{first:03d}_{stop:03d}"
+            count = left_count + right_count
+            proofs.append(range_statement(name, slopes, start, count) + (
+                "\n  boundedSlopeRangeCheck_append_true 1009 1013\n"
+                f"    (treeMask 1013 ScalarTrees.P1013.tree) {matrix} {bound}\n"
+                f"    {lean_list(slopes)} candidateTuples {start} {left_count} {right_count}\n"
+                f"    {left_name} {right_name}\n\n"
+            ))
+            return name, start, count
+
+        range_root, start, count = join_intervals(0, len(intervals))
+        assert start == 0 and count == parameter_count
+        proofs.append(statement(chunk_name, slopes) + (
+            "\n  boundedSlopeScanCheck_of_full_range 1009 1013\n"
+            f"    (treeMask 1013 ScalarTrees.P1013.tree) {matrix} {bound}\n"
+            f"    {lean_list(slopes)} candidateTuples {range_root}\n\n"
+        ))
+
+    def join(start, stop):
+        if stop - start == 1:
+            return f"pairs_chunk_{start:03d}", chunks[start]
+        middle = (start + stop) // 2
+        left_name, left = join(start, middle)
+        right_name, right = join(middle, stop)
+        name = f"pairs_join_{start:03d}_{stop:03d}"
+        proofs.append(statement(name, left + right) + (
+            "\n  boundedSlopeScanCheck_append_true 1009 1013\n"
+            f"    (treeMask 1013 ScalarTrees.P1013.tree) {matrix} {bound}\n"
+            f"    {lean_list(left)} {lean_list(right)} candidateTuples\n"
+            f"    {left_name} {right_name}\n\n"
+        ))
+        return name, left + right
+
+    root_name, joined = join(0, len(chunks))
+    assert joined == bad
+    return "".join(proofs) + declaration + f"  exact {root_name}\n\n"
+
+
 def render(record):
     index = record["id"]
-    bad = "[" + ", ".join(map(str, record["bad_slopes"])) + "]"
+    bad = lean_list(record["bad_slopes"])
     matrix = f"(boundedMaps {index})"
     bound = f"(23 * boundedMapL {index})"
     image = f"({matrix} *ᵥ ![(x : ℤ), y])"
     namespace = f"Loneliness.FiveSpeedCertificate.BoundedMapCertificates.M{index}"
     return (
-        "import Conjectures.LonelinessFiveSpeedBoundedCheckDefs\n"
+        ("import Conjectures.LonelinessFiveSpeedBoundedCheckDefs\n"
+         if index in PRESERVED_MAPS else
+         "import Conjectures.LonelinessFiveSpeedBoundedCheckBlocks\n") +
         "import Conjectures.LonelinessFiveSpeedLineReductionData\n"
         "import Conjectures.LonelinessFiveSpeedBoundedCandidates\n"
         "import Conjectures.LonelinessFiveSpeedScalarTreeMask1009\n"
@@ -95,10 +204,7 @@ def render(record):
         f"theorem slopes_checked : slopeCoverCheck 1009\n"
         f"    (treeMask 1009 ScalarTrees.P1009.tree) {matrix} badSlopes = true := by\n"
         "  decide +kernel\n\n"
-        "theorem pairs_checked : boundedSlopeScanCheck 1009 1013\n"
-        f"    (treeMask 1013 ScalarTrees.P1013.tree) {matrix}\n"
-        f"    {bound} badSlopes candidateTuples = true := by\n"
-        "  decide +kernel\n\n"
+        + render_pair_checks(record) +
         f"theorem sound (x : ℕ) (hx : 0 < x) (hxK : x ≤ {bound})\n"
         f"    (y : ℤ) (hy : y.natAbs ≤ {bound}) (hcop : Nat.gcd x y.natAbs = 1)\n"
         f"    (hnonzero : ∀ i, {image} i ≠ 0)\n"
@@ -167,8 +273,9 @@ theorem bounded_map_candidates (m : Fin 164) (w : Fin 2 → ℤ)
     exact hprimitive
   have hw : ![(x : ℤ), w 1] = w := by
     funext j
-    fin_cases j <;> simp only [Matrix.cons_val_zero, Matrix.cons_val_one,
-      Matrix.head_cons, hcast]
+    fin_cases j
+    · exact hcast
+    · rfl
   have h := bounded_map_natural_candidates m x hx hxbound (w 1) (hbound 1) hcop
     (by simpa only [hw] using hnonzero)
     (by simpa only [hw] using hdistinct)

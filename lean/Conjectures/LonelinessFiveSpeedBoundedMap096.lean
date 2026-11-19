@@ -1,4 +1,4 @@
-import Conjectures.LonelinessFiveSpeedBoundedCheckDefs
+import Conjectures.LonelinessFiveSpeedBoundedCheckBlocks
 import Conjectures.LonelinessFiveSpeedLineReductionData
 import Conjectures.LonelinessFiveSpeedBoundedCandidates
 import Conjectures.LonelinessFiveSpeedScalarTreeMask1009
@@ -19,10 +19,140 @@ theorem slopes_checked : slopeCoverCheck 1009
     (treeMask 1009 ScalarTrees.P1009.tree) (boundedMaps 96) badSlopes = true := by
   decide +kernel
 
+private theorem pairs_range_000_000 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [0, 72, 112, 202] candidateTuples 0 64 = true := by
+  decide +kernel
+
+private theorem pairs_range_000_001 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [0, 72, 112, 202] candidateTuples 64 64 = true := by
+  decide +kernel
+
+private theorem pairs_range_000_002 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [0, 72, 112, 202] candidateTuples 128 57 = true := by
+  decide +kernel
+
+private theorem pairs_range_join_000_001_003 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [0, 72, 112, 202] candidateTuples 64 121 = true :=
+  boundedSlopeRangeCheck_append_true 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96) (23 * boundedMapL 96)
+    [0, 72, 112, 202] candidateTuples 64 64 57
+    pairs_range_000_001 pairs_range_000_002
+
+private theorem pairs_range_join_000_000_003 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [0, 72, 112, 202] candidateTuples 0 185 = true :=
+  boundedSlopeRangeCheck_append_true 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96) (23 * boundedMapL 96)
+    [0, 72, 112, 202] candidateTuples 0 64 121
+    pairs_range_000_000 pairs_range_join_000_001_003
+
+private theorem pairs_chunk_000 : boundedSlopeScanCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [0, 72, 112, 202] candidateTuples = true :=
+  boundedSlopeScanCheck_of_full_range 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96) (23 * boundedMapL 96)
+    [0, 72, 112, 202] candidateTuples pairs_range_join_000_000_003
+
+private theorem pairs_range_001_000 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [252, 757, 807, 897] candidateTuples 0 64 = true := by
+  decide +kernel
+
+private theorem pairs_range_001_001 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [252, 757, 807, 897] candidateTuples 64 64 = true := by
+  decide +kernel
+
+private theorem pairs_range_001_002 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [252, 757, 807, 897] candidateTuples 128 57 = true := by
+  decide +kernel
+
+private theorem pairs_range_join_001_001_003 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [252, 757, 807, 897] candidateTuples 64 121 = true :=
+  boundedSlopeRangeCheck_append_true 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96) (23 * boundedMapL 96)
+    [252, 757, 807, 897] candidateTuples 64 64 57
+    pairs_range_001_001 pairs_range_001_002
+
+private theorem pairs_range_join_001_000_003 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [252, 757, 807, 897] candidateTuples 0 185 = true :=
+  boundedSlopeRangeCheck_append_true 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96) (23 * boundedMapL 96)
+    [252, 757, 807, 897] candidateTuples 0 64 121
+    pairs_range_001_000 pairs_range_join_001_001_003
+
+private theorem pairs_chunk_001 : boundedSlopeScanCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [252, 757, 807, 897] candidateTuples = true :=
+  boundedSlopeScanCheck_of_full_range 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96) (23 * boundedMapL 96)
+    [252, 757, 807, 897] candidateTuples pairs_range_join_001_000_003
+
+private theorem pairs_range_002_000 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [937] candidateTuples 0 64 = true := by
+  decide +kernel
+
+private theorem pairs_range_002_001 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [937] candidateTuples 64 64 = true := by
+  decide +kernel
+
+private theorem pairs_range_002_002 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [937] candidateTuples 128 57 = true := by
+  decide +kernel
+
+private theorem pairs_range_join_002_001_003 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [937] candidateTuples 64 121 = true :=
+  boundedSlopeRangeCheck_append_true 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96) (23 * boundedMapL 96)
+    [937] candidateTuples 64 64 57
+    pairs_range_002_001 pairs_range_002_002
+
+private theorem pairs_range_join_002_000_003 : boundedSlopeRangeCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [937] candidateTuples 0 185 = true :=
+  boundedSlopeRangeCheck_append_true 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96) (23 * boundedMapL 96)
+    [937] candidateTuples 0 64 121
+    pairs_range_002_000 pairs_range_join_002_001_003
+
+private theorem pairs_chunk_002 : boundedSlopeScanCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [937] candidateTuples = true :=
+  boundedSlopeScanCheck_of_full_range 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96) (23 * boundedMapL 96)
+    [937] candidateTuples pairs_range_join_002_000_003
+
+private theorem pairs_join_001_003 : boundedSlopeScanCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [252, 757, 807, 897, 937] candidateTuples = true :=
+  boundedSlopeScanCheck_append_true 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96) (23 * boundedMapL 96)
+    [252, 757, 807, 897] [937] candidateTuples
+    pairs_chunk_001 pairs_chunk_002
+
+private theorem pairs_join_000_003 : boundedSlopeScanCheck 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
+    (23 * boundedMapL 96) [0, 72, 112, 202, 252, 757, 807, 897, 937] candidateTuples = true :=
+  boundedSlopeScanCheck_append_true 1009 1013
+    (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96) (23 * boundedMapL 96)
+    [0, 72, 112, 202] [252, 757, 807, 897, 937] candidateTuples
+    pairs_chunk_000 pairs_join_001_003
+
 theorem pairs_checked : boundedSlopeScanCheck 1009 1013
     (treeMask 1013 ScalarTrees.P1013.tree) (boundedMaps 96)
     (23 * boundedMapL 96) badSlopes candidateTuples = true := by
-  decide +kernel
+  exact pairs_join_000_003
 
 theorem sound (x : ℕ) (hx : 0 < x) (hxK : x ≤ (23 * boundedMapL 96))
     (y : ℤ) (hy : y.natAbs ≤ (23 * boundedMapL 96)) (hcop : Nat.gcd x y.natAbs = 1)

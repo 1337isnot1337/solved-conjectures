@@ -1265,3 +1265,17 @@ axiom audit checked 11,867 project theorem declarations, and stock Lean
 The [machine-readable receipt](accepted-3349777-hosted-receipt.json) lists
 every replayed module. Later registrations require their own merged hosted
 receipts; this snapshot covers only the 433-module integration commit.
+
+
+## Five-speed finite certificate checkpoint, 19 November 2026
+
+All 260 scalar tables and 574 required canonical-plane candidates are now
+published in 24 separately gated groups. Their complete hosted gates are
+still running. The 29-module cached-root checkpoint at `108168d` passed its
+full hosted source, axiom, and stock-kernel gate. The new packed selector
+and oracle let the previously failing p1789 ordinary row compile locally.
+The repaired map 26 and bounded block helper passed their local source,
+axiom, and independent kernel gates. Eight new groups cover all 164 maps;
+the final aggregate and complete root-prime coverage remain open. See
+[the scoped checkpoint](five-speed-packed-bounded-candidates.md). Accepted
+roots are unchanged, and Li remains last.

@@ -1,0 +1,16 @@
+{
+  "axiom_audit": {
+    "exit_code": 0,
+    "log": "local-file:five-speed-packedscalar1789-audit.log"
+  },
+  "independent_stock_kernel_replay": {
+    "exit_code": 0,
+    "log": "local-file:five-speed-packedscalar1789-kernel.log"
+  },
+  "module": "Conjectures.LonelinessFiveSpeedPackedScalar1789",
+  "source_gate": {
+    "exit_code": 0,
+    "log": "local-file:five-speed-packedscalar1789-source-attempt2.log"
+  },
+  "source_sha256": "2f63200e717d8af368c75ac139b1629e8ad7798c144765367e9ebe1b8c585a45"
+}

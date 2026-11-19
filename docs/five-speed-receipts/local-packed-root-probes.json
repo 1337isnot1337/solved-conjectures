@@ -1,0 +1,33 @@
+{
+  "measured_kernel_seconds": {
+    "packed_middle": 1.04,
+    "packed_ordinary": 7.52,
+    "tree_middle": 1.64,
+    "tree_ordinary": 15.5
+  },
+  "note": "These are individual profiler measurements, not a full-prime runtime estimate.",
+  "probes": [
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootStarQuickLargeOrdinaryProbe",
+      "source_exit": 0,
+      "source_sha256": "c02bb72cfac841f44f411aec4311536427b75fe35e461f1603f58a7b4e997f08"
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootStarQuickLargeMiddleProbe",
+      "source_exit": 0,
+      "source_sha256": "d733b4d4fb48956c6cec24ad98feca59b89d12363664ad9c88d0df0a90bef0ca"
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootStarQuickLargeOrdinaryPackedProbe",
+      "source_exit": 0,
+      "source_sha256": "0d6dfb0c36acfac94e452eacad70b2d6f45075239bebf843791aece25111844c"
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootStarQuickLargeMiddlePackedProbe",
+      "source_exit": 0,
+      "source_sha256": "dab52c6c50be086040cdee9887058d70def87a2777ba87aa63fcabd387586c0a"
+    }
+  ],
+  "selector_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+  "status": "local source checks passed; hosted full closure gates pending"
+}

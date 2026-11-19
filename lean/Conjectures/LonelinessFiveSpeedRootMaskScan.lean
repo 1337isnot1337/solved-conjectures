@@ -1,4 +1,5 @@
 import Conjectures.LonelinessFiveSpeedMaskArithmetic
+import Conjectures.LonelinessFiveSpeedBitIndexProposal
 
 /-! A checked bit-mask scan removes only residues with a genuine common
 multiplier witness. The lowest-bit heuristic controls evaluation time; its
@@ -29,7 +30,8 @@ def proposedBitSearch : ℕ → ℕ → ℕ
     else proposedBitSearch depth lower
 
 def proposedFirstBitBelow (p mask : ℕ) : ℕ :=
-  proposedBitSearch (Nat.log2 p + 1) mask
+  if p ≤ 1789 then proposedPackedFirstBit mask
+  else proposedBitSearch (Nat.log2 p + 1) mask
 
 def scanWitnessMasks (p : ℕ) (G : ℕ → ℕ) (common : ℕ) : ℕ → ℕ → ℕ → ℕ
   | 0, _, remaining => remaining

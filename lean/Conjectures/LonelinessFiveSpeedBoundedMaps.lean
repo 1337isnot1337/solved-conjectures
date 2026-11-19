@@ -371,8 +371,9 @@ theorem bounded_map_candidates (m : Fin 164) (w : Fin 2 → ℤ)
     exact hprimitive
   have hw : ![(x : ℤ), w 1] = w := by
     funext j
-    fin_cases j <;> simp only [Matrix.cons_val_zero, Matrix.cons_val_one,
-      Matrix.head_cons, hcast]
+    fin_cases j
+    · exact hcast
+    · rfl
   have h := bounded_map_natural_candidates m x hx hxbound (w 1) (hbound 1) hcop
     (by simpa only [hw] using hnonzero)
     (by simpa only [hw] using hdistinct)

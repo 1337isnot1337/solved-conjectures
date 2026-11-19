@@ -1,0 +1,1068 @@
+{
+  "generator_sha256": "a4a6ce253ba3515c1d4512d2b665bb06f0df2b530a3c0014e9fd2831bdb10a3d",
+  "invariants": {
+    "aggregate_only_coordinate_proof_changed": true,
+    "all_map_public_conclusions_unchanged": true,
+    "all_map_sound_proofs_unchanged": true,
+    "all_old_sources_reconstructed_by_hash": true,
+    "all_original_data_unchanged": true
+  },
+  "max_pair_checks_per_new_certificate": 256,
+  "new_pair_certificates": 2150,
+  "parameter_chunk_size": 64,
+  "preserved_maps": {
+    "24": "176a8862b399980c319d023bf6288a03fc41a53cb5b3b8f5c9ae00b1c03c879a",
+    "63": "8ee720460c8991a1953708cce8d4ec8790a0368437783360c7aa45d4cefa4fc0"
+  },
+  "prototype_receipt_scope": "Their source bytes are unchanged. Old complete receipts bind the earlier selector closure; the new complete hosted run must check both prototypes again.",
+  "reproduction_command": "python3 results/five-speed-spectrum/generate_lean_bounded_maps.py --candidate-data results/five-speed-spectrum/bounded-candidates-1009-1013.json --json-output bounded-proposals.json --lean-dir lean/Conjectures",
+  "selector_dependency_source_sha256": {
+    "Conjectures.BinaryAutomata": "d98fb10dfc3525d4a892cc356a2c483b64ff64cd65147e27d1e7397a2115b57a",
+    "Conjectures.FiniteCertificate": "7c65b844602a0d59e3087b0aeee98930c92d2b44adcc9f6543e4c98315bc225f",
+    "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "Conjectures.LonelinessCoalescence": "5518fdfed0369763c2ba701272edb25fbaafde2d230c869f4412f2c441ef9d1d",
+    "Conjectures.LonelinessCoalescenceValue": "b2b7037f036e3fdeb5e52e0314fd7126db2ae921c6c182abf6175c5884a5bcb7",
+    "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "Conjectures.LonelinessCoordinateClasses": "0075b701fd3fa51feef62f59850dfaa3dfece95e3287d51a7afb438a76691b63",
+    "Conjectures.LonelinessCoordinateSubspace": "a6a58ef2dfb5262e43641aae3e18c9d7ddcc8163aebad18cf6eb2416ae46bfea",
+    "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+    "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+    "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+    "Conjectures.LonelinessFiveFamily": "9f2b155dcc8f9d4edd9b137915bdec6b1820ceb0f8821b9653da51d76b05cf56",
+    "Conjectures.LonelinessFiveSpeedBitIndexProposal": "7ec4276987fa6d6e83b1732c6b0c512d85b5d641cd15b01a5b4975fda64c1549",
+    "Conjectures.LonelinessFiveSpeedBoundedCandidateDefs": "839670166c15914d0abd06efdac6cac967481de21603454e04f4286ec977c3d8",
+    "Conjectures.LonelinessFiveSpeedBoundedCandidates": "16c509288147ce802e46e4e9431d6a9b731836f824349f2827e265491af51266",
+    "Conjectures.LonelinessFiveSpeedBoundedCheckBlocks": "e17a976dec22cee7e118519de367a27eb28be8e862078ea43584922c056fbc0f",
+    "Conjectures.LonelinessFiveSpeedBoundedCheckDefs": "e7db0bfc36e8a2819c9ce3a673b8fcfb1425dd5e71a92f4e67ba8d655917d05f",
+    "Conjectures.LonelinessFiveSpeedBoundedMap026": "8947a216fda4759c63bbf140533c270dc0e972f6c657b878426cba94e8250ce8",
+    "Conjectures.LonelinessFiveSpeedBoundedSlope": "fd5d181339d26db98f45941439d0d347f3f508e36b7d11ca0b7b1924b836e54a",
+    "Conjectures.LonelinessFiveSpeedBoundedSlopeRecovery": "16bce98947ab52954f2b4fc9ffff55f89f619223852ecefe4f6c1e7abd8a8feb",
+    "Conjectures.LonelinessFiveSpeedCriticalCheck": "2afef774238e4afaf65a883c356020f0dbbd56c4b6e1f9ef9cd45768e101726a",
+    "Conjectures.LonelinessFiveSpeedFiberMasks": "861b7c80f3147bca2a74099ae66d9ccb0e4593d590815dd362bb04517eb955ff",
+    "Conjectures.LonelinessFiveSpeedGeometricMask": "9f497afae28f0eec972aed194ed0eb4459adb4e554bc92a0152a5c4bed6c615b",
+    "Conjectures.LonelinessFiveSpeedLineReductionData": "3e793154c8db893743fa3e3d7f84cb95280c546b263f2f0fce11b2ec5c63ef79",
+    "Conjectures.LonelinessFiveSpeedLineReductionDefs": "31f1c2497cdbcfcd2b6900c4fcb7ca42e8f601ed09526d6aa9e68d7e7d525239",
+    "Conjectures.LonelinessFiveSpeedLinearReduction": "c4e4f5e4fe1d67103446f50f17e39c9b4b0dc67dd81818e667bb1e93b8b46fba",
+    "Conjectures.LonelinessFiveSpeedLinearReductionElimination": "ac67f76f3a5cc1ae390af66d34d5ee8061429c4bf412550f0db1237db84ebbb1",
+    "Conjectures.LonelinessFiveSpeedMaskArithmetic": "7f8d5c6b16c990d7d2ef8b99265e589756f6cdf7c5329dabd7d75522ff2c1f35",
+    "Conjectures.LonelinessFiveSpeedMasks": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
+    "Conjectures.LonelinessFiveSpeedPlaneFiberData": "b1f26addee61ee61325ed876ff11ef5a2319c53dfb32aa8702a3dc1ce5081a4d",
+    "Conjectures.LonelinessFiveSpeedPlaneFiberDefs": "0d80df711c7473875c2322a612eedb6c8a651d5b576a17a656d3726c4bcd07f7",
+    "Conjectures.LonelinessFiveSpeedPlaneProjective": "49677e4b07aeed5d28730566f39b9e08ccb6c1c09488f914184a257b61714e61",
+    "Conjectures.LonelinessFiveSpeedRelationData": "5c5539cacddfb13fc39eddcde21eac3e2758bb75027fd890a77d6e28e2f5a6af",
+    "Conjectures.LonelinessFiveSpeedRootMaskScan": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+    "Conjectures.LonelinessFiveSpeedScalarInverse": "e53014e202c3646a680aca4f42bb32b0b8883e88134927fe9a40bfb81340e477",
+    "Conjectures.LonelinessFiveSpeedScalarTable": "b780be1150c67c5943e45b9c7314debb835568be12e0e251a1c0585320945965",
+    "Conjectures.LonelinessFiveSpeedScalarTree": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+    "Conjectures.LonelinessFiveSpeedScalarTreeMask1009": "4da9714de386c1d169f028c4de66935a1dd3dcc810698eb42a68a8520eb85a25",
+    "Conjectures.LonelinessFiveSpeedScalarTreeMask1013": "e98c386a4ea9df262ae4fc65c306961658d8a42baa7d4b7552fa20e5f4a17796",
+    "Conjectures.LonelinessFiveSpeedTupleMask": "745a3dc61a17e78baf40cc7fa588f415884165f042795d3f4430f21c580dad68",
+    "Conjectures.LonelinessIntegerDirection": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6",
+    "Conjectures.LonelinessModularDirections": "f838c441e3a59593cfa43fe55edb5d63db43af22a3e0f60d730d75b1d7664dd4",
+    "Conjectures.LonelinessModularShortVector": "d75206b95714a27fc37768daae09f450bdd7acac45130d62278521d4891bf6a3",
+    "Conjectures.LonelinessModularWitness": "c5329d2e079f6d04d0079ab3fe90d814d1f3393b2381c74be6375ce091b569fb",
+    "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+    "Conjectures.LonelinessRational": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
+    "Conjectures.LonelinessRationalSubspace": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88",
+    "Conjectures.LonelinessSubspaceDensity": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f"
+  },
+  "slope_chunk_size": 4,
+  "source_input_sha256": {
+    "bounded-candidates-1009-1013.json": "43655aa43cb890ab3cc84d99191a02828e7e17d13110ee6cbdcc4dde1597a4f6",
+    "line-certificate-data.json": "c7290bc3f8ceaaf594301a6751913eb107be3343878b3fcd62206ee66e42c663",
+    "original_proposals": "8b2c91ff67e462042377dd15b6ea2d1ff39a6d6db5fd44c80a8631166cf3eb8e"
+  },
+  "sources": [
+    {
+      "bytes": 10353,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap000.lean",
+      "sha256": "9ebbfa6ad4e329f992465fb2696236fe550b2991b92965519925e75acfcb5b6d",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10353,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap001.lean",
+      "sha256": "f7786edfa05e46dfbe3e3ff14dc62ddbcaccb9eba73d5991fffc2a1d189c208d",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10353,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap002.lean",
+      "sha256": "4fb27b7db0acedb3fc8c200694e6240ab75cf74e9ef8c8f24c08e148096fea48",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10353,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap003.lean",
+      "sha256": "bb40ae985da630c40be82a85cc4b104cb2f85c9b69aacac8ba64069a853bef43",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16256,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap004.lean",
+      "sha256": "5bf256af3327e48b350eb2a28c890fa8dbac3542ca2b88b36ca45f7f96912820",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16212,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap005.lean",
+      "sha256": "a1b7815b8b9b213d24b2f4091c76e74aece4fb0be45d20bb12f9d1115a6d3bb3",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16212,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap006.lean",
+      "sha256": "ec793ce2bdd1b7eb56e2c8a63bcdc8dba6224e8763e417e98219ff9a8213fa63",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16256,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap007.lean",
+      "sha256": "50eb996534c15d699b710879594975776a9549d1f5b822564c3e1572df824eb2",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13777,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap008.lean",
+      "sha256": "4550b9f58f887b4dcfde00f777666dae44f7022440bf3ccb2892ab53e4015e8f",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13849,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap009.lean",
+      "sha256": "0f660c8a11d2a12f661aa130e59a4625ae7ef1319a6c34d1f3187d34184fc234",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13897,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap010.lean",
+      "sha256": "6dcba67f9ecd2a95fcb6c8b9253e5f450d24ee8fed8ce0c91b2a35dfb563e1f0",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13969,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap011.lean",
+      "sha256": "f3ff1aff1a87aa308b5b25f4e6367d5db13407a74e4c38759622a7b66439496a",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16580,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap012.lean",
+      "sha256": "7c5e8591e46126cd6bfc3e36f7c1f1e927e2040b450bf82269dcda1d84c09957",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16580,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap013.lean",
+      "sha256": "7e91b58d1ca27c58ae7581195935e6adae5dcd8c9aa9fd4f13fc5fb261db8952",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16580,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap014.lean",
+      "sha256": "9d5b9ee31ac89b251a7ddbef307d0003c50ad4995b3b51976506bdc49d983861",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16580,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap015.lean",
+      "sha256": "225d57df0bb42e9354ce1180619d937f8fb75eda217d7bf7f27e8657c1182deb",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16900,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap016.lean",
+      "sha256": "bf0528ddaf74fc25d08c8ac710d1d268dbd4de15480b410e7ddcecfa755cfecc",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16760,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap017.lean",
+      "sha256": "7a5afcb19d1408267e09eeede246d74eb472fd37e67c5771a5216255e062a09d",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16880,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap018.lean",
+      "sha256": "b5d854a14285f766f6d502eda45c5290a6b9d4b35cb30c451fe05d02a689082e",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16820,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap019.lean",
+      "sha256": "770f4d3db8bc22041dfa41753afe8ea9e2400f25caed516ce8489c828fb207a2",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16820,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap020.lean",
+      "sha256": "e523debc8c36739d897c1be573db780e152039d7fdba4ee2b1ad098fd1c5f662",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16880,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap021.lean",
+      "sha256": "37ab282310b2498904edfd8c624c47096b7d6e5a5b957c12c1872a6d8c98d018",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16760,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap022.lean",
+      "sha256": "2ffc92824b8259759d13828d2e5d9b93c715f4665a22d6e2a70e5cebcbf3a9bd",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16900,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap023.lean",
+      "sha256": "7d21b5b5b6a4cc1b8f93052bc20fceec2b6e5ee3005b5b685c3db2d42d159b93",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 36907,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap025.lean",
+      "sha256": "cc785e3a6d5dee3ea670b418bc2a631547200d46b1340882ab60905eca995c46",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 50009,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap026.lean",
+      "sha256": "8947a216fda4759c63bbf140533c270dc0e972f6c657b878426cba94e8250ce8",
+      "status": "warning-as-error source pass; transitive axiom whitelist pass; individual stock kernel replay pass under fresh packed selector"
+    },
+    {
+      "bytes": 50009,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap027.lean",
+      "sha256": "56198f52237ca87e38cdee9356f03699b7dffe16989ec53ef5a967ec8c937267",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 19943,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap028.lean",
+      "sha256": "3439732d75b6a119bcca6dc3cacfdb081dc434776dc2dbb75da7952a0e2dcda3",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 19820,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap029.lean",
+      "sha256": "fce607460712bf9b7355a977854e5450a329d4abf97bfd4b057eafa44163bbde",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 19856,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap030.lean",
+      "sha256": "ced55846a27a95905ea9a193a7f49fd5e0bfb84a579cc3478b9c02423ed93c0e",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 19938,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap031.lean",
+      "sha256": "ca63edcbffdd9efc578f9401c7f0828bba9be8eda30ff86bc42c11ef4228436a",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 19820,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap032.lean",
+      "sha256": "a003db5754a56647ffd849f182ea362cece67eea9042d620c1360f25e99b0d6d",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 19943,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap033.lean",
+      "sha256": "82111b81de08b5fd1cbd590c709b1d9405139fa7cd84d8eb507f1708053a5bf5",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 19932,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap034.lean",
+      "sha256": "842bdfc095163d45ca8d936c227299fd21ab754e9fbfb68f4cc0694155dd1fe9",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 19932,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap035.lean",
+      "sha256": "a500561ecddf333bb5d8ff408185a2b9a38503642e9ed141707058138c9986f1",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 17931,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap036.lean",
+      "sha256": "b2e4f89e6ff86ff5dc67e95f5a6beba5f3a2766d11632c24aa6c30e0878d5899",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 17931,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap037.lean",
+      "sha256": "ece86acb19d11b5d0412dc7e5ab62e6115cb8647eab93ffc14fc2ffd172dddd5",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 36425,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap038.lean",
+      "sha256": "f0f0b10f5d06449211e966c816d2962cedb46d0ccc7978a0b8506848ac3bd66e",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 36425,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap039.lean",
+      "sha256": "3b4f4c74e5c6d57026ee36057d00992849a105ce229125d56a2eeb249d01d189",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 14211,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap040.lean",
+      "sha256": "44448e2d5f45d620d7b4df4e614222fd2c1c2f5c427a044bfff9433ea23988ea",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 14211,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap041.lean",
+      "sha256": "b292dbfc4c9d8c93d8381e6771c23be5128175df5567741c1ec7f907c843786d",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 20372,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap042.lean",
+      "sha256": "6f341cc864f9c6b740529eae38f79af3e6d6189295597c952fc46739d3fdd840",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 20554,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap043.lean",
+      "sha256": "75b87b6ea18d1d2990fec9c4b07a8478d8a4671c79c2bc40c8859cadc1ae8665",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10443,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap044.lean",
+      "sha256": "9f35bca1854044d29d584ce2ab399f47ea4f053dfdba7a0deb50b7388eaac5b9",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13815,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap045.lean",
+      "sha256": "33bb4c074357b1aace5e972d913bf0239e2740eea051b853fb76c6a5c38837cb",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10443,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap046.lean",
+      "sha256": "485e54d87f40e2f42154a04ca04ffc676e32bf2d04216bae77763c57751b6a3d",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10498,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap047.lean",
+      "sha256": "70413d91049a40ffd141a15661e763d79bfc0a0da27816b70d4c3c23d94f8c02",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 20372,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap048.lean",
+      "sha256": "3a968c30a0e398da1f1f443b99e7c24a44e2549b2d36c270b9803880858f29af",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10509,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap049.lean",
+      "sha256": "e45975277c6b50dfa62e14fb17b2cf928c06d2ef6295fc10af1caa3b159d451c",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13899,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap050.lean",
+      "sha256": "2b78b33f044a75992a4aa8106a8583570e32c95f077e3132ee4ca45405c044da",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 20554,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap051.lean",
+      "sha256": "092cf93577a9f4711e32ea5e6602401b7e744121b5d9d04713b359affe498139",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13815,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap052.lean",
+      "sha256": "bd1dfcfe1cf7bc68d68900cbe0841ac48efcf5d827fcdf82ec90655d30f29651",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 23781,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap053.lean",
+      "sha256": "ab31678b09ca03370ac60dbedfd9a854341167c939ed734e58f8a91fd8672886",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 23781,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap054.lean",
+      "sha256": "52bcb4fa5e3e9d74897a3685efaf1c06bdf39644717efc6eec23f63d94277c19",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13923,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap055.lean",
+      "sha256": "9b47af760551923d9f85207caae4e4a81eb06cfe7e04559d2ac901a58407051b",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13879,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap056.lean",
+      "sha256": "baca83bc3b79420c1af950130af6132b92823898daeffcfa5c641ec2aa665101",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13879,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap057.lean",
+      "sha256": "c07deba71a48a97c2a236ec04e9a7c16a425810fe4525e7738229b31e83baa47",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13921,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap058.lean",
+      "sha256": "ee747858c231b2772de2e7a2c842f85d98b109906cd96d775c9c7af7d5b41346",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 13933,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap059.lean",
+      "sha256": "c58dbca44fed13de57d6af1a180c19fead25bc4486c218d6b00552a88fe9008b",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12464,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap060.lean",
+      "sha256": "1c62fb820a5fb1832084b347ccafaf6aa86b23dc27d2209b1e3de3707e9e869e",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12464,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap061.lean",
+      "sha256": "81051295f66b21f3e7279140b5fa7eb5dbd10e511a80b3813f646c5deb67afab",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10771,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap062.lean",
+      "sha256": "42cad0c466de3a946873d69a401a3f90836cb583ab4221f4d5024c71a102dc26",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 20668,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap064.lean",
+      "sha256": "2f57653a4a114c48e500a887c0c10701f897887521863eeffb2a0acaef54fffa",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 20668,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap065.lean",
+      "sha256": "d2673c301fe4c74d41c6d4541c59aa17d8bd10981d2596749274de75c7652987",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 24770,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap066.lean",
+      "sha256": "c74000f3d11c41b0cd13d93ce6300f71501b754cfa071febab657dca151b3842",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 24770,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap067.lean",
+      "sha256": "7c0f9aa96c253b84b0a2b90cbad8bf319d8947daa950f0ad5322021396cc781f",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12368,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap068.lean",
+      "sha256": "efbc70e5f66cb8fc1f1e7546e62b6d528f14fff4a82f9eb0db71531ff46e2756",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12368,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap069.lean",
+      "sha256": "61d726d57419bf7e6600d9eabb4c615c4ded9ac1435d2ef89d568b88307d2a55",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10396,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap070.lean",
+      "sha256": "49eb2286c121db51aa2b6b6fd23656c32650f3ca628b4e6adc31a17d9ab9e4dd",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10396,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap071.lean",
+      "sha256": "ceff5840700098d50c52eb77f4cd23f2e3b7e041be62162215438e2687b82167",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8657,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap072.lean",
+      "sha256": "ad8c434f99dd4d22ea69a8b917827c44beb59729815c66c2e219641931564587",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8657,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap073.lean",
+      "sha256": "0c8dc291c7062c3a777cbb3523d0482f11852247f905a3747ae73a1e3adb5043",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8702,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap074.lean",
+      "sha256": "ecff3de23fca90b94fe3ef9c0eb509b947c546d4986d641b0d91f79c99045282",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8702,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap075.lean",
+      "sha256": "63d02f3e543a426bb3482caa1e2ba2edb40fb8ae834989f73478cb8aa87089eb",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8723,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap076.lean",
+      "sha256": "c8ec736df89200222e97a64c78ec7193a83152f747b657c4562a9178b37a6eb9",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8723,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap077.lean",
+      "sha256": "0b3950ffc25e7cca8320c87f0c0ecca28a9f29e217c46ada2cccaa3f961c3915",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5066,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap078.lean",
+      "sha256": "f6c64240bdcf1b476b9ffb7f4a0febb1577c7625e02daae98cac05cbb0456d96",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5066,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap079.lean",
+      "sha256": "0b6621de6f8edcb7018d5c18255cc05dfc8d43157d6ce0c0181135879bba9841",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12359,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap080.lean",
+      "sha256": "1aaad57456368e97bad3c613e498f4d859f6489986738e9a029d9c1a3c493433",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12281,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap081.lean",
+      "sha256": "d492bcb53d6c42c40dc85a023642f19207667ef9e8abae1216695ccc3e2e9cb7",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12281,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap082.lean",
+      "sha256": "875d414dbb0f8c5a0b421752d438c162bab9d374351fe3d6fe005ccc0554d3d0",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12359,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap083.lean",
+      "sha256": "703bf7635d631da169d5f462e645519a05c0328ee6ee0c536be23e17625cdc56",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8853,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap084.lean",
+      "sha256": "5c704ae3644294165489ecad64672e46568f4e1a7afe5d9c594b393174e4611c",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8929,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap085.lean",
+      "sha256": "f5fe06538d492bb4c7b0681f74636025a3d69b747d533d286d23d1eaf36ea725",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6809,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap086.lean",
+      "sha256": "4dda48693c3e0b331e3a113286539bdf547a8c81222c8a09ed332abb62352e24",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6809,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap087.lean",
+      "sha256": "5696d8faac516c1f2bc4ba7f2671f893f63fa70f5fbadb230a35e741f0030495",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8723,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap088.lean",
+      "sha256": "1bd2fac540e0992575296edd4d83661b72787ca2b576cbdc27badbbd9c64ce88",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8690,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap089.lean",
+      "sha256": "8452eda271b9b2009e22d942efe9f83650b906153c3148bddd22db29b5f7cfcd",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8690,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap090.lean",
+      "sha256": "c89c8053b9fd5d742250ef5fb49c6bdef8e52f5a9081fbc0dd38328c016bea44",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8723,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap091.lean",
+      "sha256": "665826c46145c6050969b864fd7ae3ad7832340a63c39ff790e36a73f28aa2f4",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8588,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap092.lean",
+      "sha256": "1b2a7a6aa2db636db37230ce8f9ecef398764c8d77608dec3738b93c13966e48",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8577,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap093.lean",
+      "sha256": "de120ee68a6d67572f86be18e713bb5bed6eee9adb0a2c09da715055e383045b",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8577,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap094.lean",
+      "sha256": "1759f474e8ef58614b8051bf8c36e9db275b7aa399d5a8e19b1efdb58ec82b86",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8588,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap095.lean",
+      "sha256": "b6c58a8cacb35a0c82a74280ccacb32e85ee8edb3d00820702db2788b2603608",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8765,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap096.lean",
+      "sha256": "eae80708616d666c229cff4137a661f6d2c43f381dc6943684b396216fb287b6",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8765,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap097.lean",
+      "sha256": "abb0105e773fb81650a315f2dae70b7c0755c1cdf2d981880121d125338b6dfc",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8733,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap098.lean",
+      "sha256": "bd249c8f9a75d60c688874cafc0eafa4204bdf2a4a8a431c64b6be827db75e88",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8733,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap099.lean",
+      "sha256": "9d2cfede8c5c15ff7a381d81879ebfdc5e2608b303c9c8b615980596eb3801f0",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5108,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap100.lean",
+      "sha256": "186468d57e58d03e6119eadf89934a08ff514e1cb34eee6267cdfdcb1e0a855c",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5108,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap101.lean",
+      "sha256": "017b621e717e8936a8291780c6fe3a968615002380645c6a45ec7a4ad3d6293b",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5090,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap102.lean",
+      "sha256": "7a7d8b37b93772dedb383377310aa206caf9e349d22317a6868460849c4d9c91",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5090,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap103.lean",
+      "sha256": "d6f16fb4b72c05567b42c6698158f67614335fa0ba416b7ee07bc11bda7ec807",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 20078,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap104.lean",
+      "sha256": "be104bcb5460941ef9e1081c254849be669d689549e9d8b5937b57efd783dac8",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 20108,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap105.lean",
+      "sha256": "5ce5b9820296e790fdaefb1ba11964e904b655e71c225ba343f0b50d99177cf6",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 20102,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap106.lean",
+      "sha256": "e423e5fb822b508e1f3f6d8a4bc4e87ee00468bf1f43f74ba1252ddbb2127a3d",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 20108,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap107.lean",
+      "sha256": "5e71e5c01f6e6880aec176aa5dc59c4199a9b54dd5a5a15d22206a99a78da933",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12412,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap108.lean",
+      "sha256": "c915653d4f95dd7061122a66acd5be2d84b96a662d8bf6acd7a0a1f176fb85c7",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16540,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap109.lean",
+      "sha256": "8e0d8e33890162dd611e25525235a5ade5e120b43a20d9497205f49d58e47d47",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12406,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap110.lean",
+      "sha256": "ccaceef2dd361d128a3f6cd1e889065116e80025d8dc3681f05d2bced3adbc11",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 16540,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap111.lean",
+      "sha256": "b243e911bc696a9994538d2ec5fdf14b034555fab1315ba127973c7fbb767ab2",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5962,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap112.lean",
+      "sha256": "608950a2b30a45d6f6189b2d0b84ab6e66ac4f2a8f7496bfcc6c128152a2db9b",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12474,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap113.lean",
+      "sha256": "1b3d91f72684b7bc2a6aa8426b681f5b5b1e4581ec9f547c50bcb23ccb512428",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12451,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap114.lean",
+      "sha256": "1758e97c5ebd6ba38349db5feb10427826918b7af99642b638deb1f5e45642c8",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12425,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap115.lean",
+      "sha256": "34bcf80cecc302872eebbd67a7ca04fdf12ee928f835deb48bc3c4aed84ed401",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5946,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap116.lean",
+      "sha256": "d5d0dc930ceed40274fe6c3da288d8dbd201bff6981e8b5c999006ee5c09797b",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 12451,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap117.lean",
+      "sha256": "e53837e5e130b70814b5d51873e5f07d2949af27203039064a8c8c39f1d7abe7",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8797,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap118.lean",
+      "sha256": "8ae47dc1339a40ec226a1c82d50df3f03e617c08f4ef39095580feb9a07c065b",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8797,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap119.lean",
+      "sha256": "4914434329df93d74d4ffbe74e100b01cbb16a56927a5a6b62570abc7208572e",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8797,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap120.lean",
+      "sha256": "2a7ac479c2dbe69f0e407349c78b4de8c0945038e63c3a7934de93294f370dcd",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 11574,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap121.lean",
+      "sha256": "36ff296e40577eb0db44cafbcc8c7d513995dd0346b55333b8956e2417700c78",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6867,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap122.lean",
+      "sha256": "327d50848100b23be6f7cf24b1f884775634d6303aeee32fef0a75c2c7f61378",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8945,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap123.lean",
+      "sha256": "bd9514a1d5940ea1d4b5dfc093e9bf89d7b4f45f5556c0e1cfa150641932d843",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6849,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap124.lean",
+      "sha256": "3c3a3cb1b541cf76b4661a66b0a975ce9694667ce663d6cdb69b57ea8305f7d7",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8945,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap125.lean",
+      "sha256": "e42081d06c0392faedca171201216e86b9921e6bf9e5b1d006b3192dbd881c66",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10486,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap126.lean",
+      "sha256": "abd299113fd435deec0dce78336229e9983877af28880d0157996816bc63723e",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10451,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap127.lean",
+      "sha256": "62a1a7945a37f54630649dbe2ef846e948bc210c9ef7c0c1262c12dc08e7c76c",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10451,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap128.lean",
+      "sha256": "f0a4e24bc3945afe6483140511aca34f26e2870d120c364ddf8fc95a0d323017",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10486,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap129.lean",
+      "sha256": "af54d065648a1be8d10ce283b4dec7b8ffd766df62b1375564f5ae184f16a73c",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10451,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap130.lean",
+      "sha256": "fd0dba74b82a87561f94f14c8b0eb50342461a8190e68c67a705acb0cda9860b",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 10486,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap131.lean",
+      "sha256": "18c1424ac5b9eaecb8e19bd0c1261bf74641ec25ecd0e0321cd610d828e5e917",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6944,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap132.lean",
+      "sha256": "9b7a586c735f8b4cf7be0c17c340484c17af4ba1aa133dba2ff3c71352ced5b4",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6886,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap133.lean",
+      "sha256": "7d20573c367d5d747042919cfe5b99aaa5b29279d3f8035a4b00be095ff3b533",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6886,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap134.lean",
+      "sha256": "98e34ca531585cf855affb785a84cb222e1342e898f8020d4ae072cde14e37d5",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6944,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap135.lean",
+      "sha256": "484f01320377e09cfdeb45b9f637418606382e8694a53b68a4ae1ba02e9d4187",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6886,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap136.lean",
+      "sha256": "c564a3fd20161101afa0d50559634d57b75ab1023384ae460078d483bcf7d37b",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6944,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap137.lean",
+      "sha256": "069afca873f4a434e43e3bb638c4701dc83ceee520fa55f01dfa30f63e76abae",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8684,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap138.lean",
+      "sha256": "7191465cac09045561e39cf0d6b3fdee1b61bd6308e85ddb3bd5816034574577",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8695,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap139.lean",
+      "sha256": "680bdaec9fadcc95ed43857514a2a10b40fb97adc325a4ac8ddb16a162e49ea4",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8684,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap140.lean",
+      "sha256": "8c0cc8b5eef6afa99638a5ba0d772f4a33edd2e87018109d299383eb7436b74e",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8695,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap141.lean",
+      "sha256": "c4816f88a2da824a49e88fe819d4664930e5e6f2aba06bfe178dd45c08e919a0",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8695,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap142.lean",
+      "sha256": "7b30b4424c0ae58b9eb25906362c9a7c8e88ab29106caf3b378abfe9979409f8",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 8684,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap143.lean",
+      "sha256": "7afd2187fedd6c622a0e291aa28aea9bfc1969d8e9690fc78ebe4e19642c320b",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6873,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap144.lean",
+      "sha256": "c1374260484d152a7289e121bc5a423231eef81d864289f88c9fe8b3b96cd703",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6873,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap145.lean",
+      "sha256": "94a808982e5860e1de540c2c9334c620c8dc2b48531127c5c34f0703f195171f",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6873,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap146.lean",
+      "sha256": "dce30ae0eea47b0a536287fef649eef17c32c95fab77f663258e0fef8ad845ea",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6873,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap147.lean",
+      "sha256": "c71721b5838a1dc0cbeeb705cd883f9bfae15c47937e555a61d3c77ecec5e401",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6873,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap148.lean",
+      "sha256": "7fc3bc6722c3661ecfa3316c6c7f3e13acfe60a3eee9ce1d5269214be229f883",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6873,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap149.lean",
+      "sha256": "a427f369b68a694078da7a6ba59c32b2e83205438e61bb9c3c032fcb057a6e46",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6873,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap150.lean",
+      "sha256": "cbfbfba130e1bad44232efea90020e9cfe5ba0ba080badd8c3fbece828a873e1",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6873,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap151.lean",
+      "sha256": "1cf322acbfc9d2a4c5d98ba0f41efe375a768180c4dfb58c49dbfe8a97fc4daa",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6895,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap152.lean",
+      "sha256": "7f8c8dac1023f224a1d2f8214534562818c4d8e7b1bf246e788cf547177acfe6",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6837,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap153.lean",
+      "sha256": "3ca6549a2752505b38c4a6054f37f2963f0cdfbd1f5bec5a77e5e99752d0b088",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6837,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap154.lean",
+      "sha256": "36edfc7a39590375654349acda1f0d1d1bd2334cba50dac8d24d1e52a9425579",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6895,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap155.lean",
+      "sha256": "1fef3be17cd6d650d6a511700071a4f808f041b9104665824945975f7c035e7c",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6464,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap156.lean",
+      "sha256": "6a48a78a7983a035f0a1cfdebd173a10b3892f636d06bbad712ec9a57ce1337f",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5106,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap157.lean",
+      "sha256": "3c15d50c21fbcdab8edecb820ad0cf0147fb82e84bdadef939e8b205391ee628",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5106,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap158.lean",
+      "sha256": "0de859b63713c65937c229073958738143c12a0d86b9f6b8de464b4d93ec6d5a",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5187,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap159.lean",
+      "sha256": "f141a811e9d8f2db909a96b1eddfc1687ed5a97f00164562b2fcfd2ceecfa0fe",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 5187,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap160.lean",
+      "sha256": "f6f8300df95d6a6e24a243b4dcc44545771d808b6cdf2b7cc85271afccd16977",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6464,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap161.lean",
+      "sha256": "75faae4d70b3e8dfdf620765e27b82ed040a685b62eb3226457ec4de5923c72e",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6464,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap162.lean",
+      "sha256": "fb8232a1beac07e4f50efbacfddeab4e925ef833d90761b783f3001b78d91af5",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 6464,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMap163.lean",
+      "sha256": "ae322bbd37ac1da28db8a3991a9678eb567116fcc3d8edd6cd6afe8052ce87f4",
+      "status": "source, axiom audit, and stock kernel gates pending"
+    },
+    {
+      "bytes": 14948,
+      "publication_path": "results/five-speed-spectrum/generate_lean_bounded_maps.py",
+      "sha256": "a4a6ce253ba3515c1d4512d2b665bb06f0df2b530a3c0014e9fd2831bdb10a3d",
+      "status": "generator; finite Python proposals are not proof premises"
+    },
+    {
+      "bytes": 18072,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedMaps.lean",
+      "sha256": "436e262075ceb631923bc0bad3888123a81096543875146b4775e4cd23fb27a5",
+      "status": "integer adapter source-passed twice under its exact natural-parameter hypothesis; actual aggregate awaits all 164 map artifacts"
+    },
+    {
+      "bytes": 5466,
+      "publication_path": "lean/Conjectures/LonelinessFiveSpeedBoundedCheckBlocks.lean",
+      "sha256": "e17a976dec22cee7e118519de367a27eb28be8e862078ea43584922c056fbc0f",
+      "status": "fresh-selector source pass, all 11 theorem transitive axiom checks, individual stock kernel replay pass"
+    }
+  ],
+  "status": "frozen source repair; map26 and Blocks passed local source/audit/stock replay; complete 164-map and final aggregate hosted gates pending"
+}
