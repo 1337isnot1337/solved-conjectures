@@ -48,7 +48,7 @@ def neighbors (v : Vertex) : List Vertex :=
 private theorem mem_neighbors_zero (x : ZMod 19) (v : Vertex) :
     v ∈ neighbors (0, x) ↔ sharpGraph.Adj (0, x) v := by
   rcases v with ⟨j, y⟩
-  fin_cases j <;> simp [neighbors, sharpGraph, SharpAdj, voltageEdges]
+  fin_cases j <;> simp [neighbors, sharpGraph, SharpAdj, voltageEdges, sub_eq_zero]
 
 private theorem mem_neighbors_one (x : ZMod 19) (v : Vertex) :
     v ∈ neighbors (1, x) ↔ sharpGraph.Adj (1, x) v := by
@@ -74,7 +74,7 @@ private theorem mem_neighbors_three (x : ZMod 19) (v : Vertex) :
 private theorem mem_neighbors_four (x : ZMod 19) (v : Vertex) :
     v ∈ neighbors (4, x) ↔ sharpGraph.Adj (4, x) v := by
   rcases v with ⟨j, y⟩
-  fin_cases j <;> simp [neighbors, sharpGraph, SharpAdj, voltageEdges, eq_comm]
+  fin_cases j <;> simp [neighbors, sharpGraph, SharpAdj, voltageEdges, sub_eq_zero, eq_comm]
 
 theorem mem_neighbors_iff (u v : Vertex) :
     v ∈ neighbors u ↔ sharpGraph.Adj u v := by
