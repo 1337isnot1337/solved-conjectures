@@ -96,9 +96,10 @@ import Conjectures.Graffiti318Sharpness
 
 Each audit reported only `propext`, `Classical.choice`, and `Quot.sound`.
 The source contains no `sorry`, `admit`, `native_decide`, custom axiom, or `unsafe` declaration.
-Local receipts and hosted CI results are separate. The modules are currently
-unregistered candidates while shared-package integration is coordinated in issue
-[#15](https://github.com/1337isnot1337/solved-conjectures/issues/15).
+Local receipts and hosted CI results are separate. All three graph modules
+are registered in the accepted package through `Conjectures`, the required
+endpoint audit, and the ordinary kernel-replay gate. Integration is tracked in
+issue [#15](https://github.com/1337isnot1337/solved-conjectures/issues/15).
 
 The [hosted Candidate base job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44448033989/job/135304859956)
 passed at commit `98b3433a16e3418ee833d388c8f69c47e8b5c2b3`.

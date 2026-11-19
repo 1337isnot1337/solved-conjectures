@@ -76,6 +76,24 @@ by the two marked elements has an attaining independent set and an attaining
 circle character with the same normalized value. The full compact theorem
 remains in progress.
 
+Graffiti.pc Conjecture 318 and its stated sharpness example are complete.
+The theorem is quantified over every finite connected simple graph of order at
+least two. It uses Mathlib graph distance, counts each undirected complement
+edge once, and derives the total-dominating-pair and total-domination-number
+conclusions. The contributed proof credit remains with
+[@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334).
+The three graph modules passed local checks and the hosted base candidate job
+before accepted registration.
+
+The runner family and example components are also registered. They include
+the consecutive family for every parameter and every runner count from 2
+through 14, the two exceptional eight-speed families, and classification
+within all three stated eight-speed product families. The seven- and
+eight-speed exceptional examples have exact global values. These statements
+do not supply exhaustive higher-speed classifications. The exact shifted
+hyperplane maximum and its velocity upper bound are registered; its
+probabilistic and counting assertions remain open.
+
 The verified snapshot `c0cf593` passed its source build, the audit of 6,954
 project theorem declarations, and independent kernel replay of all 152 proof
 modules and both roots. The separate `a7b1ca1` checkpoint passed its complete
@@ -120,28 +138,28 @@ remains separate work.
    rational-plane certificate and conditional coordinate cutoff are checked.
 7. Tight six speeds and critical planes: the uniform reduction, complete
    equality classification, plane enumeration and large-norm consequence.
-8. Six-speed spectrum: all infinite families, norm reduction, modular lifting,
-   and exhaustive classification.
+8. Six-speed spectrum: the remaining family branch, norm reduction, modular
+   lifting, and exhaustive classification; the consecutive family is checked.
 9. Eight-runner equality cases: the norm reduction, complete modular
    certificates and lifting to the three listed directions.
 10. Nine-runner equality case: the norm reduction, modular certificates and
     uniqueness of the consecutive direction.
 11. Ten-runner equality case: the corresponding uniform reduction and all
     modular certificates.
-12. Seven-speed spectrum: the infinite family, all 27 exceptions, norm
-    reduction and complete lifting/enumeration.
-13. Eight-speed spectrum: the infinite family, all listed exceptions, norm
-    reduction and exhaustive lifting.
+12. Seven-speed spectrum: norm reduction and complete lifting/enumeration;
+    the infinite family and all 27 exceptional values are checked.
+13. Eight-speed spectrum: norm reduction and exhaustive lifting outside the
+    three classified product families; the listed exceptional values are checked.
 14. Eleven-through-fourteen-runner equality: each uniform reduction, all modular
     certificates and every stated primitive equality list.
 15. Growing rectangles are complete: real tiling semantics, cumulative
     partition estimates, and the uniform asymptotic over every width `w ≥ h`.
 16. Erdős 607: geometric realization, generating-function correspondence,
     local probability estimates and the sharp asymptotic prefactor.
-17. Graffiti.pc Conjecture 318: the all-order total-dominating-pair theorem,
-    the even-distance hypothesis, and the sharp five-vertex example.
-18. Loneliness on a fixed hyperplane: the exact torus maximum, uniform
-    fixed-tolerance probability bound, exceptional-subspace description,
+17. Graffiti.pc Conjecture 318 is complete, including the all-order theorem
+    and sharp five-vertex example.
+18. Loneliness on a fixed hyperplane: uniform fixed-tolerance probability
+    bound, exceptional-subspace description,
     quasipolynomial counts, and the endpoint density for full-support normals.
 19. Li coefficient sign, last: actual tree properties, all connected partition
     types, chromatic symmetric functions and coefficient extraction.

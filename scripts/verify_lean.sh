@@ -356,6 +356,34 @@ modules=(
   Conjectures.LineSizeCore
   Conjectures.LineSizeGraphCounts
   Conjectures.LineSizeCoreGaps
+
+  Conjectures.Graffiti318Basic
+  Conjectures.Graffiti318
+  Conjectures.Graffiti318Sharpness
+  Conjectures.LonelinessConsecutive
+  Conjectures.LonelinessHigherExamplesCertificate
+  Conjectures.LonelinessHigherExamplesSeven
+  Conjectures.LonelinessHigherExamplesEight
+  Conjectures.LonelinessHigherExamplesEquality
+  Conjectures.LonelinessHigherExamples
+  Conjectures.LonelinessConsecutiveFamily
+  Conjectures.LonelinessConsecutiveFamilyCertificates
+  Conjectures.LonelinessExceptionalEightFamily
+  Conjectures.LonelinessExceptionalEightFamilyCertificates
+  Conjectures.LonelinessPrefixProduct
+  Conjectures.LonelinessPrefixProductTables
+  Conjectures.LonelinessModularWitness
+  Conjectures.LonelinessModularLift
+  Conjectures.LonelinessModularSearch
+  Conjectures.LonelinessModularShortVector
+  Conjectures.LonelinessModularDirections
+  Conjectures.LonelinessModularSearchDirections
+  Conjectures.LonelinessModularPrimes
+  Conjectures.LonelinessProductFamily
+  Conjectures.LonelinessProductFamilyEight
+  Conjectures.LonelinessHyperplaneArithmetic
+  Conjectures.LonelinessHyperplaneBasic
+  Conjectures.LonelinessHyperplane
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

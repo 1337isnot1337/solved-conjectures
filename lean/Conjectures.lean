@@ -67,3 +67,13 @@ import Conjectures.CutPeriodWeightTheorem
 import Conjectures.LineSizeOrdinary
 import Conjectures.LineSizeGraphCounts
 import Conjectures.LineSizeCoreGaps
+
+import Conjectures.Graffiti318Sharpness
+import Conjectures.LonelinessHigherExamples
+import Conjectures.LonelinessConsecutiveFamilyCertificates
+import Conjectures.LonelinessExceptionalEightFamilyCertificates
+import Conjectures.LonelinessPrefixProductTables
+import Conjectures.LonelinessModularSearchDirections
+import Conjectures.LonelinessModularPrimes
+import Conjectures.LonelinessProductFamilyEight
+import Conjectures.LonelinessHyperplane

@@ -16,6 +16,21 @@
 
 [Home](README.md) · [Catalogue](CONTENTS.md)
 
+## 2026-11-18 (America/Chicago) — Graph theorem and runner components
+
+- Registered the all-order Graffiti.pc318 theorem and its sharp five-vertex
+  example after local and hosted source, axiom, and independent kernel checks.
+  The contributed proof remains credited to @JesterInABarrel.
+- Registered the consecutive runner family for counts 2 through 14, both
+  exceptional eight-speed families, classification within all three stated
+  eight-speed product families, and the displayed higher-speed examples.
+  Exhaustive higher-speed classifications remain open.
+- Registered the exact shifted hyperplane maximum, its attaining point, and
+  the upper bound for every orthogonal integer velocity. The statistical and
+  counting parts remain open.
+- Kept the finite four-speed assembly, KZ arithmetic, reduced-basis geometry,
+  Haar/Fourier, and closed-search developments under separate candidate gates.
+
 ## 2026-11-19 — Complete rectangle asymptotic and finite plane reduction
 
 - Completed the growing-rectangle theorem for literal real-position tilings,

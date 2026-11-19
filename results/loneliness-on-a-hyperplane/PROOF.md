@@ -37,7 +37,7 @@ For fixed $s$ and real $u<L_m(s)$, the admissible vectors with $L(v,s)\le u$ for
 
 Consequently the exceptional count is a quasipolynomial in the integer $N\ge1$, of degree at most $k-2$ whenever it is nonzero. Apply inclusion–exclusion to the retained subspaces, the forbidden coordinate equalities, and the coordinate-zero faces of $[0,N]^k$. Each closed piece is the $N$-fold dilate of a rational polytope and its lattice-point count is an Ehrhart quasipolynomial. The denominator of the conditional probability is a quasipolynomial by the same argument. [Beck and Robins, *Computing the Continuous Discretely*, Chapter 3](https://matthbeck.github.io/ccd.html)
 
-The order $N^{-1}$ can occur. On $v_1+v_2=v_3$ the unshifted limit is $1/3$. All $\lfloor N/3\rfloor$ positive multiples of $(1,2,3)$ have loneliness $1/4$. Time $1/4$ attains it, and the four points $0,t,2t,3t$ have two at circular distance at most $1/4$ by the gap principle. There are $\Theta(N^2)$ admissible triples.
+The order $N^{-1}$ can occur. On $v_1+v_2=v_3$ the unshifted limit is $1/3$. All $\lfloor N/3\rfloor$ positive multiples of $(1,2,3)$ have loneliness $1/4$. For $g(1,2,3)$, time $1/(4g)$ attains $1/4$. The upper bound follows from the gap principle for $0,t,2t,3t$ and invariance under common scaling. There are $\Theta(N^2)$ admissible triples.
 
 ## How often the endpoint is attained
 

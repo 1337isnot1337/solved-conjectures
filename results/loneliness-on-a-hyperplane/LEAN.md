@@ -42,7 +42,7 @@ Bézout identity, with no density or lattice-counting premise.
 - [Circular distance, shifted values, and continuity](../../lean/Conjectures/LonelinessHyperplaneBasic.lean)
 - [Exact hyperplane maximum and velocity bound](../../lean/Conjectures/LonelinessHyperplane.lean)
 
-All three modules passed strict source checks on 19 November 2026 UTC,
+All three modules passed strict source checks on 18 November 2026 (America/Chicago),
 using Lean 4.35.0 and the repository's pinned Mathlib commit
 `56a005855ea17e0b0958f73ec801ae140b0a1679`.
 The source checks used one worker, a 2500 MB cap, and warnings as errors.
@@ -52,8 +52,9 @@ The module-owned audit checked 41 theorem declarations, including private
 declarations. It also rejected any unapproved module-owned axiom.
 All transitive axiom dependencies were among `propext`, `Classical.choice`,
 and `Quot.sound`. Five headline axiom prints confirmed exactly that set.
-These are local module receipts; package registration and hosted checks are
-recorded separately.
+These are local module receipts. The deterministic three-module component is
+registered in the accepted root, required endpoint audit, and kernel replay
+list. Hosted checks are recorded separately.
 
 ## Remaining assertions
 
