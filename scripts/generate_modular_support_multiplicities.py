@@ -198,6 +198,8 @@ def exact_source(data: dict, parent: dict) -> str:
     lines += [f"theorem representatives_exact : ∀ i : Fin {supports},",
               f"    SupportMultiplicity.representatives {n} (SupportSearch.Bits.decode (supportRows i)) =",
               f"      (Finset.univ.filter (fun j : Fin {count} => sourceIndex j = i)).image representativeLists := by",
+              "  unfold SupportMultiplicity.representatives SupportMultiplicity.representative Multiset.sort",
+              "  simp only [List.mergeSort_eq_insertionSort]",
               "  decide +kernel", "",
               f"theorem root_member (j : Fin {count}) : representativeLists j ∈",
               f"    SupportMultiplicity.representatives {n}",

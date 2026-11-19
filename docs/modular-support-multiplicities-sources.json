@@ -57,7 +57,7 @@
     "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
     "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
     "scripts/generate_modular_initial_support.py": "d130b4e4e9d62982a98ec32d613a13e2f1a4f8438183d7efef63783614bba1b2",
-    "scripts/generate_modular_support_multiplicities.py": "85f119b880ad4ec0170f2b09ce54b877c0c0fbec7555baa29326591dec00c932",
+    "scripts/generate_modular_support_multiplicities.py": "84a6761da0ecd51344004d508e4e9e4d4472a483ec9e7b0ca6f68fc3b42d730c",
     "scripts/generate_six_speed_prime_arithmetic.py": "f02b0ba31fa89fa4da574c2e134a0a457f7918a3dbba6e939a792c1492e2709f",
     "scripts/generate_six_speed_prime_assembly.py": "e2e42d41a0ecbd6bbb53372d4c149793d05817d21b88de40b7e2ad9eda39a88b",
     "scripts/generate_six_speed_prime_certificates.py": "9cfca45e42eece7690a424de54e551a75139651944f14ee3f7772f506971deb7",
@@ -123,10 +123,10 @@
     "Conjectures.LonelinessModularSupportListsN09D10P0017RowsData": "ae0e8113580660e180db49f2a6d7e50ad1fd93182e79210b1ebae5476570d59d",
     "Conjectures.LonelinessModularSupportMultiplicitiesN05D06P0007": "b86a3823da116d1a599db0bdc10fd8f19bfae33cc594ff288a8b8b66537007da",
     "Conjectures.LonelinessModularSupportMultiplicitiesN05D06P0007Data": "bf0bc8e9b968e70e9a6ae5cf09e9aaaf94a4ef91eabf2eb012db8fa42d6aa74f",
-    "Conjectures.LonelinessModularSupportMultiplicitiesN05D06P0007Exact": "b8151d48877e1bd8cf6b3247d9e5a45e7b6477d7f192b2610b087f981943614e",
+    "Conjectures.LonelinessModularSupportMultiplicitiesN05D06P0007Exact": "bbb063bca750b22b44be91096b7ab2f1918b8d072fbe575584fed059c68aa845",
     "Conjectures.LonelinessModularSupportMultiplicitiesN09D10P0017": "5c95030b0ed12edc5c36f6f201bf90ccb9c3509fcb08489e8c291d44ca581ce4",
     "Conjectures.LonelinessModularSupportMultiplicitiesN09D10P0017Data": "969ee4ca8f51ae8b8bb60cc1b1d616e3a12b5e7b103097c7db6e9a957a072e04",
-    "Conjectures.LonelinessModularSupportMultiplicitiesN09D10P0017Exact": "2df7f1e56399c3018db5944b26854c33670a736112eb7c0734d9ea35786d52c4"
+    "Conjectures.LonelinessModularSupportMultiplicitiesN09D10P0017Exact": "8bff2448eb93ab6e8d7473aaf739f362cccad352b66c09373dc28c952bea14c3"
   },
   "generation": {
     "block_size": 4,
