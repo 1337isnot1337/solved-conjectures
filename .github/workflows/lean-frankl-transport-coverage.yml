@@ -1,0 +1,102 @@
+name: Lean Frankl complete row coverage
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-frankl-orbit-batches.yml'
+      - '.github/workflows/lean-frankl-transport-batches.yml'
+      - '.github/workflows/lean-frankl-transport-coverage.yml'
+      - 'lean/Conjectures/FranklBasic.lean'
+      - 'lean/Conjectures/FranklCyclicCertificates.lean'
+      - 'lean/Conjectures/FranklCyclicGenerators.lean'
+      - 'lean/Conjectures/FranklCyclicRank.lean'
+      - 'lean/Conjectures/FranklCyclicWords.lean'
+      - 'lean/Conjectures/FranklFCBitCode.lean'
+      - 'lean/Conjectures/FranklFamily.lean'
+      - 'lean/Conjectures/FranklLocalCertificate.lean'
+      - 'lean/Conjectures/FranklLocalEnumeration.lean'
+      - 'lean/Conjectures/FranklLocalEnumerationCore.lean'
+      - 'lean/Conjectures/FranklLocalEnumerationMap.lean'
+      - 'lean/Conjectures/FranklLocalFibers.lean'
+      - 'lean/Conjectures/FranklLocalFiniteSupport.lean'
+      - 'lean/Conjectures/FranklLocalMaskCached.lean'
+      - 'lean/Conjectures/FranklLocalMaskCertificate.lean'
+      - 'lean/Conjectures/FranklLocalMaskDomains.lean'
+      - 'lean/Conjectures/FranklLocalMaskEquivalence.lean'
+      - 'lean/Conjectures/FranklLocalMaximalCover.lean'
+      - 'lean/Conjectures/FranklLocalWeights.lean'
+      - 'lean/Conjectures/FranklSmallCyclicCanonicalWords.lean'
+      - 'lean/Conjectures/FranklSmallCyclicMaskTransport.lean'
+      - 'lean/Conjectures/FranklSmallCyclicMaskWindows.lean'
+      - 'lean/Conjectures/FranklSmallCyclicMasks.lean'
+      - 'lean/Conjectures/FranklSmallCyclicOrbit*Block*Data.lean'
+      - 'lean/Conjectures/FranklSmallCyclicOrbitArithmetic.lean'
+      - 'lean/Conjectures/FranklSmallCyclicRowCoverage.lean'
+      - 'lean/Conjectures/FranklSmallCyclicTransportCoverage.lean'
+      - 'lean/Conjectures/FranklSmallCyclicTransportG*B*Data.lean'
+      - 'lean/Conjectures/FranklSmallCyclicWeightTransport.lean'
+      - 'lean/Conjectures/FranklSmallCyclicWeights.lean'
+      - 'lean/Conjectures/FranklSmallCyclicWeightsPilotData.lean'
+      - 'lean/lake-manifest.json'
+      - 'lean/lakefile.toml'
+      - 'lean/lean-toolchain'
+      - 'results/frankl-generator-families/generate_small_cyclic_weight_orbit_batches.py'
+      - 'results/frankl-generator-families/generate_small_cyclic_weight_transport_batches.py'
+      - 'results/frankl-generator-families/literal_ten_weight_orbit_batches.json'
+      - 'results/frankl-generator-families/literal_ten_weight_orbits.json.gz'
+      - 'results/frankl-generator-families/small_cyclic_weight_orbit_batches.json'
+      - 'results/frankl-generator-families/small_cyclic_weight_orbits.json.gz'
+      - 'results/frankl-generator-families/small_cyclic_weight_transport_batches.json'
+      - 'results/frankl-generator-families/width_four_weight_candidates.json'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - 'scripts/test_frankl_orbit_batches.py'
+      - 'scripts/test_frankl_transport_coverage.py'
+      - 'scripts/verify_frankl_orbit_batches.py'
+      - 'scripts/verify_frankl_transport_batches.py'
+      - 'scripts/verify_frankl_transport_coverage.py'
+      - 'scripts/verify_lean_candidate.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: frankl-transport-row-coverage
+  cancel-in-progress: false
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check the exact data-only scope and endpoint selection
+        run: |
+          python3 -m py_compile scripts/verify_frankl_transport_coverage.py scripts/test_frankl_transport_coverage.py
+          python3 -m unittest discover -s scripts -p test_frankl_transport_coverage.py -v
+          mkdir -p .candidate-artifacts
+          python3 scripts/verify_frankl_transport_coverage.py --plan > .candidate-artifacts/frankl-transport-row-coverage-plan.json
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: false
+          test: false
+          lint: false
+      - name: Fresh data sources, all owned declarations, and exact stock kernel
+        run: python3 scripts/verify_frankl_transport_coverage.py --jobs 4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frankl-transport-row-coverage
+          path: |
+            .candidate-artifacts/frankl-transport-row-coverage/
+            .candidate-artifacts/frankl-transport-row-coverage-plan.json
+            results/frankl-generator-families/small_cyclic_weight_transport_batches.json
+          include-hidden-files: true
+          retention-days: 14
