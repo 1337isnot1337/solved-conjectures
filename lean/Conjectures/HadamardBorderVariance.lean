@@ -39,7 +39,8 @@ theorem variance_eq_six_squares (x : Fin 4 → ℤ) :
 theorem variance_eq_pairwise (x : Fin 4 → ℤ) :
     variance x = ∑ q : Fin 4, ∑ r : Fin 4 with q < r, (x q - x r) ^ 2 := by
   rw [variance_eq_six_squares]
-  simp [Finset.sum_filter, Fin.sum_univ_four] <;> ring
+  simp [Finset.sum_filter, Fin.sum_univ_four]
+  ring
 
 theorem variance_nonneg (x : Fin 4 → ℤ) : 0 ≤ variance x := by
   rw [variance_eq_six_squares]
@@ -56,7 +57,10 @@ theorem sq_sub_le_variance (x : Fin 4 → ℤ) (q r : Fin 4) :
   have h12 := sq_nonneg (x 1 - x 2)
   have h13 := sq_nonneg (x 1 - x 3)
   have h23 := sq_nonneg (x 2 - x 3)
-  fin_cases q <;> fin_cases r <;> nlinarith only [h01, h02, h03, h12, h13, h23]
+  fin_cases q <;> fin_cases r
+  all_goals
+    norm_num at *
+    nlinarith only [h01, h02, h03, h12, h13, h23]
 
 theorem variance_mod_four (x : Fin 4 → ℤ) :
     variance x % 4 = 0 ∨ variance x % 4 = 3 := by

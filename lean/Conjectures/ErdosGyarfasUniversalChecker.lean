@@ -75,8 +75,8 @@ def pairCovered (branches : List Branch) (p q : Position) : Bool :=
   if p.1 = q.1 ∧ p ≠ q then branches.any (fun b => branchMatches b p q)
   else true
 
-def coverageCheck (prefix : List Position) (branches : List Branch) : Bool :=
-  prefix.all fun p => prefix.all fun q => pairCovered branches p q
+def coverageCheck (positions : List Position) (branches : List Branch) : Bool :=
+  positions.all fun p => positions.all fun q => pairCovered branches p q
 
 def LocalValid (n : Node) : Prop :=
   n.prefix.length ∈ [4, 8, 16, 32] ∧ n.prefix.Nodup ∧

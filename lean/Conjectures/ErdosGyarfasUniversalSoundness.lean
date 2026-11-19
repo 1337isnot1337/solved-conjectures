@@ -5,7 +5,7 @@ import Lean.Elab.Tactic.Omega
 # Soundness of the universal abelian-cover descent checker
 
 An explicit row combination vanishes under every homomorphism that kills its
-rows. A checked node therefore gives a closed lifted walk. If its prefix is
+rows. A checked node therefore gives a closed lifted walk. If its positions is
 simple it gives a cycle of an allowed length; otherwise a checked collision
 branch supplies an earlier node whose rows also vanish. Strong induction
 terminates this descent. Finally the accepted gauge isomorphism restores the
@@ -87,9 +87,9 @@ theorem checkNode_sound (lookup : ℕ → Node) (index : ℕ)
       coverageCheck (lookup index).prefix (lookup index).branches = true := by
   simpa only [checkNode, Bool.and_eq_true, decide_eq_true_eq, and_assoc] using hcheck
 
-theorem coverageCheck_sound (prefix : List Position) (branches : List Branch)
-    (hcheck : coverageCheck prefix branches = true)
-    (p q : Position) (hp : p ∈ prefix) (hq : q ∈ prefix)
+theorem coverageCheck_sound (positions : List Position) (branches : List Branch)
+    (hcheck : coverageCheck positions branches = true)
+    (p q : Position) (hp : p ∈ positions) (hq : q ∈ positions)
     (hbase : p.1 = q.1) (hne : p ≠ q) :
     ∃ b ∈ branches,
       (b.left = p ∧ b.right = q) ∨ (b.left = q ∧ b.right = p) := by
@@ -116,7 +116,7 @@ theorem step_lifts (labels : Fin 7 → A) {p q : Position} (hstep : Step p q) :
     chordHom labels p.2 + chordHom labels (chordStep p.1 q.1)
   rw [hstep.2, map_add]
 
-/-- A mapped prefix with no collisions gives an actual cycle, not merely a
+/-- A mapped positions with no collisions gives an actual cycle, not merely a
 closed word or a nonzero circulation. -/
 theorem cycle_of_nodup_lift (labels : Fin 7 → A) (n : Node)
     (hlocal : LocalValid n) (hrows : KillsRows (chordHom labels) n.rows)
@@ -166,8 +166,8 @@ theorem cycle_of_nodup_lift (labels : Fin 7 → A) (n : Node)
   simpa only [hlength] using hallowed
 
 private theorem collision_of_not_nodup {B : Type*} (f : Position → B)
-    (prefix : List Position) (hp : prefix.Nodup) (hf : ¬ (prefix.map f).Nodup) :
-    ∃ p ∈ prefix, ∃ q ∈ prefix, f p = f q ∧ p ≠ q := by
+    (positions : List Position) (hp : positions.Nodup) (hf : ¬ (positions.map f).Nodup) :
+    ∃ p ∈ positions, ∃ q ∈ positions, f p = f q ∧ p ≠ q := by
   classical
   by_contra hnone
   apply hf
