@@ -94,7 +94,8 @@ theorem terminal_sound {N R : ℕ} (m : ℕ) (roots : Fin N → Fin 10 → ℕ)
     have heq : s=(rows ⟨index,hi⟩).support.toFinset := of_decide_eq_true hcheck
     rw [heq]
     exact (rows ⟨index,hi⟩).sound (hrows ⟨index,hi⟩)
-  · simp only [terminal,hi,dite_eq_right,Bool.false_eq_true] at hcheck
+  · rw [terminal,dite_eq_right hi] at hcheck
+    cases hcheck
 
 private theorem multiply_units {m u v a b : ℕ}
     (hu : (u*v)%m=1%m) (ha : (a*b)%m=1%m) :

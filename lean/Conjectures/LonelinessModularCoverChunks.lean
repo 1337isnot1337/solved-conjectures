@@ -99,7 +99,8 @@ theorem check_sound {N : ℕ} (cover : ℕ → Finset ℕ)
       have heq : state=states ⟨index,hi⟩ := of_decide_eq_true hcheck
       rw [heq]
       exact hstates ⟨index,hi⟩
-    · simp only [check,hi,dite_eq_right, Bool.false_eq_true] at hcheck
+    · rw [check,dite_eq_right hi] at hcheck
+      cases hcheck
   | split a without withCandidate ihwithout ihwith =>
     intro state hcheck
     have hh := Bool.and_eq_true_iff.mp hcheck

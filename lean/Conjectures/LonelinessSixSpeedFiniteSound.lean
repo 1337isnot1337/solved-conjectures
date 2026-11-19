@@ -39,7 +39,8 @@ theorem terminal_sound {N : ℕ} (rows : Fin N → Row) :
   by_cases hi : index<N
   · rw [terminal,dite_eq_left hi] at hcheck
     exact ⟨⟨index,hi⟩,of_decide_eq_true hcheck⟩
-  · simp only [terminal,hi,dite_eq_right,Bool.false_eq_true] at hcheck
+  · rw [terminal,dite_eq_right hi] at hcheck
+    cases hcheck
 
 /-- The support itself determines a coordinate permutation because each
 retained row has six distinct entries. No distinctness of the original
