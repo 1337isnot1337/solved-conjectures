@@ -1,0 +1,92 @@
+name: Lean universal abelian-cover cycle candidates
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: Exact component closure to check
+        required: true
+        default: affected
+        type: choice
+        options:
+          - affected
+          - checker
+          - soundness
+          - checks
+          - main
+  push:
+    paths:
+      - 'lean/Conjectures/ErdosGyarfas*.lean'
+      - '.github/workflows/lean-erdos-gyarfas-universal-candidates.yml'
+      - 'lean/lake-manifest.json'
+      - 'lean/lakefile.toml'
+      - 'lean/lean-toolchain'
+      - 'results/erdos-gyarfas-abelian-covers/abelian-cert.jsonl'
+      - 'scripts/generate_erdos_gyarfas_universal.mjs'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - 'scripts/verify_erdos_gyarfas_universal_candidate.py'
+      - 'scripts/verify_lean_candidate.py'
+  pull_request:
+    paths:
+      - 'lean/Conjectures/ErdosGyarfas*.lean'
+      - '.github/workflows/lean-erdos-gyarfas-universal-candidates.yml'
+      - 'lean/lake-manifest.json'
+      - 'lean/lakefile.toml'
+      - 'lean/lean-toolchain'
+      - 'results/erdos-gyarfas-abelian-covers/abelian-cert.jsonl'
+      - 'scripts/generate_erdos_gyarfas_universal.mjs'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - 'scripts/verify_erdos_gyarfas_universal_candidate.py'
+      - 'scripts/verify_lean_candidate.py'
+
+permissions:
+  contents: read
+
+env:
+  LEAN_NUM_THREADS: '1'
+
+jobs:
+  plan:
+    name: Select universal cover proof closure
+    runs-on: ubuntu-latest
+    outputs:
+      tasks: ${{ steps.plan.outputs.tasks }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: plan
+        env:
+          REQUESTED_TASK: ${{ inputs.task || 'affected' }}
+        run: python3 scripts/verify_erdos_gyarfas_universal_candidate.py --plan-ci --requested-task "$REQUESTED_TASK"
+  candidates:
+    name: Universal cover candidate ${{ matrix.task }}
+    needs: plan
+    if: needs.plan.outputs.tasks != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        task: ${{ fromJSON(needs.plan.outputs.tasks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Check exact input, sources, axioms and stock kernel replay
+        run: python3 scripts/verify_erdos_gyarfas_universal_candidate.py '${{ matrix.task }}'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: erdos-gyarfas-universal-${{ matrix.task }}-receipt
+          path: .candidate-artifacts/erdos-gyarfas-universal-${{ matrix.task }}/receipt.json
+          if-no-files-found: warn
+          retention-days: 7
