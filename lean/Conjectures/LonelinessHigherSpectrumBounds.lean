@@ -71,7 +71,7 @@ theorem seven_row_values (row : Row) (hr : row ∈ sevenRows) :
     value row.speeds = (row.numerator : ℝ) / (row.denominator : ℝ) := by
   simp only [sevenRows, List.mem_cons, List.not_mem_nil, or_false] at hr
   rcases hr with rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl
-  · exact HigherExamples.seven_01_value
+  · simpa using HigherExamples.seven_01_value
   · exact HigherExamples.seven_02_value
   · exact HigherExamples.seven_03_value
   · exact HigherExamples.seven_04_value
@@ -86,7 +86,7 @@ theorem seven_row_values (row : Row) (hr : row ∈ sevenRows) :
   · exact HigherExamples.seven_13_value
   · exact HigherExamples.seven_14_value
   · exact HigherExamples.seven_15_value
-  · exact HigherExamples.seven_16_value
+  · simpa using HigherExamples.seven_16_value
   · exact HigherExamples.seven_17_value
   · exact HigherExamples.seven_18_value
   · exact HigherExamples.seven_19_value
