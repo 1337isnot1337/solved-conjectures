@@ -183,13 +183,13 @@ lemma update1 :
     fin_cases i
     · change W0 29 0 * ((∑ j : Fin 3, W0 30 j) - W0 30 0) = Dual.mk (-1) (-1)
       simp only [W0, wR, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W0 29 1 * ((∑ j : Fin 3, W0 30 j) - W0 30 1) = Dual.mk (-1) 1
       simp only [W0, wR, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W0 29 2 * ((∑ j : Fin 3, W0 30 j) - W0 30 2) = Dual.mk 0 0
       simp only [W0, wR, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W1, ite_eq_right hv]
 
@@ -203,13 +203,13 @@ lemma update2 :
     fin_cases i
     · change W1 28 0 * ((∑ j : Fin 3, W1 29 j) - W1 29 0) = Dual.mk (-1) (1/2)
       simp only [W0, W1, wR, T1, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W1 28 1 * ((∑ j : Fin 3, W1 29 j) - W1 29 1) = Dual.mk 1 (1/2)
       simp only [W0, W1, wR, T1, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W1 28 2 * ((∑ j : Fin 3, W1 29 j) - W1 29 2) = Dual.mk 0 2
       simp only [W0, W1, wR, T1, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W2, ite_eq_right hv]
 
@@ -223,13 +223,13 @@ lemma update3 :
     fin_cases i
     · change W2 27 0 * ((∑ j : Fin 3, W2 28 j) - W2 28 0) = Dual.mk 1 3
       simp only [W0, W1, W2, wR, T1, T2, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W2 27 1 * ((∑ j : Fin 3, W2 28 j) - W2 28 1) = Dual.mk 1 (-3)
       simp only [W0, W1, W2, wR, T1, T2, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W2 27 2 * ((∑ j : Fin 3, W2 28 j) - W2 28 2) = Dual.mk 0 0
       simp only [W0, W1, W2, wR, T1, T2, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W3, ite_eq_right hv]
 
@@ -243,13 +243,13 @@ lemma update4 :
     fin_cases i
     · change W3 26 0 * ((∑ j : Fin 3, W3 27 j) - W3 27 0) = Dual.mk 1 (-5/2)
       simp only [W0, W1, W2, W3, wR, T1, T2, T3, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W3 26 1 * ((∑ j : Fin 3, W3 27 j) - W3 27 1) = Dual.mk (-1) (-5/2)
       simp only [W0, W1, W2, W3, wR, T1, T2, T3, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W3 26 2 * ((∑ j : Fin 3, W3 27 j) - W3 27 2) = Dual.mk 0 (-2)
       simp only [W0, W1, W2, W3, wR, T1, T2, T3, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W4, ite_eq_right hv]
 
@@ -263,13 +263,13 @@ lemma update5 :
     fin_cases i
     · change W4 25 0 * ((∑ j : Fin 3, W4 26 j) - W4 26 0) = Dual.mk (-1) (-5)
       simp only [W0, W1, W2, W3, W4, wR, T1, T2, T3, T4, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W4 25 1 * ((∑ j : Fin 3, W4 26 j) - W4 26 1) = Dual.mk (-1) 5
       simp only [W0, W1, W2, W3, W4, wR, T1, T2, T3, T4, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W4 25 2 * ((∑ j : Fin 3, W4 26 j) - W4 26 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, wR, T1, T2, T3, T4, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W5, ite_eq_right hv]
 
@@ -283,13 +283,13 @@ lemma update6 :
     fin_cases i
     · change W5 24 0 * ((∑ j : Fin 3, W5 25 j) - W5 25 0) = Dual.mk (-1) (9/2)
       simp only [W0, W1, W2, W3, W4, W5, wR, T1, T2, T3, T4, T5, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W5 24 1 * ((∑ j : Fin 3, W5 25 j) - W5 25 1) = Dual.mk 1 (9/2)
       simp only [W0, W1, W2, W3, W4, W5, wR, T1, T2, T3, T4, T5, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W5 24 2 * ((∑ j : Fin 3, W5 25 j) - W5 25 2) = Dual.mk 0 2
       simp only [W0, W1, W2, W3, W4, W5, wR, T1, T2, T3, T4, T5, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W6, ite_eq_right hv]
 
@@ -303,13 +303,13 @@ lemma update7 :
     fin_cases i
     · change W6 23 0 * ((∑ j : Fin 3, W6 24 j) - W6 24 0) = Dual.mk 1 7
       simp only [W0, W1, W2, W3, W4, W5, W6, wR, T1, T2, T3, T4, T5, T6, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W6 23 1 * ((∑ j : Fin 3, W6 24 j) - W6 24 1) = Dual.mk 1 (-7)
       simp only [W0, W1, W2, W3, W4, W5, W6, wR, T1, T2, T3, T4, T5, T6, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W6 23 2 * ((∑ j : Fin 3, W6 24 j) - W6 24 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, wR, T1, T2, T3, T4, T5, T6, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W7, ite_eq_right hv]
 
@@ -323,13 +323,13 @@ lemma update8 :
     fin_cases i
     · change W7 22 0 * ((∑ j : Fin 3, W7 23 j) - W7 23 0) = Dual.mk 1 (-13/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, wR, T1, T2, T3, T4, T5, T6, T7, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W7 22 1 * ((∑ j : Fin 3, W7 23 j) - W7 23 1) = Dual.mk (-1) (-13/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, wR, T1, T2, T3, T4, T5, T6, T7, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W7 22 2 * ((∑ j : Fin 3, W7 23 j) - W7 23 2) = Dual.mk 0 (-2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, wR, T1, T2, T3, T4, T5, T6, T7, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W8, ite_eq_right hv]
 
@@ -343,13 +343,13 @@ lemma update9 :
     fin_cases i
     · change W8 21 0 * ((∑ j : Fin 3, W8 22 j) - W8 22 0) = Dual.mk (-1) (-9)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, wR, T1, T2, T3, T4, T5, T6, T7, T8, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W8 21 1 * ((∑ j : Fin 3, W8 22 j) - W8 22 1) = Dual.mk (-1) 9
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, wR, T1, T2, T3, T4, T5, T6, T7, T8, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W8 21 2 * ((∑ j : Fin 3, W8 22 j) - W8 22 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, wR, T1, T2, T3, T4, T5, T6, T7, T8, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W9, ite_eq_right hv]
 
@@ -363,13 +363,13 @@ lemma update10 :
     fin_cases i
     · change W9 20 0 * ((∑ j : Fin 3, W9 21 j) - W9 21 0) = Dual.mk (-1) (17/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W9 20 1 * ((∑ j : Fin 3, W9 21 j) - W9 21 1) = Dual.mk 1 (17/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W9 20 2 * ((∑ j : Fin 3, W9 21 j) - W9 21 2) = Dual.mk 0 2
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W10, ite_eq_right hv]
 
@@ -383,13 +383,13 @@ lemma update11 :
     fin_cases i
     · change W10 19 0 * ((∑ j : Fin 3, W10 20 j) - W10 20 0) = Dual.mk 1 11
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W10 19 1 * ((∑ j : Fin 3, W10 20 j) - W10 20 1) = Dual.mk 1 (-11)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W10 19 2 * ((∑ j : Fin 3, W10 20 j) - W10 20 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W11, ite_eq_right hv]
 
@@ -403,13 +403,13 @@ lemma update12 :
     fin_cases i
     · change W11 18 0 * ((∑ j : Fin 3, W11 19 j) - W11 19 0) = Dual.mk 1 (-21/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W11 18 1 * ((∑ j : Fin 3, W11 19 j) - W11 19 1) = Dual.mk (-1) (-21/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W11 18 2 * ((∑ j : Fin 3, W11 19 j) - W11 19 2) = Dual.mk 0 (-2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W12, ite_eq_right hv]
 
@@ -423,13 +423,13 @@ lemma update13 :
     fin_cases i
     · change W12 17 0 * ((∑ j : Fin 3, W12 18 j) - W12 18 0) = Dual.mk (-1) (-13)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W12 17 1 * ((∑ j : Fin 3, W12 18 j) - W12 18 1) = Dual.mk (-1) 13
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W12 17 2 * ((∑ j : Fin 3, W12 18 j) - W12 18 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W13, ite_eq_right hv]
 
@@ -443,13 +443,13 @@ lemma update14 :
     fin_cases i
     · change W13 16 0 * ((∑ j : Fin 3, W13 17 j) - W13 17 0) = Dual.mk (-1) (25/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W13 16 1 * ((∑ j : Fin 3, W13 17 j) - W13 17 1) = Dual.mk 1 (25/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W13 16 2 * ((∑ j : Fin 3, W13 17 j) - W13 17 2) = Dual.mk 0 2
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W14, ite_eq_right hv]
 
@@ -463,13 +463,13 @@ lemma update15 :
     fin_cases i
     · change W14 0 0 * ((∑ j : Fin 3, W14 16 j) - W14 16 0) = Dual.mk 1 15
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W14 0 1 * ((∑ j : Fin 3, W14 16 j) - W14 16 1) = Dual.mk 1 (-15)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W14 0 2 * ((∑ j : Fin 3, W14 16 j) - W14 16 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W15, ite_eq_right hv]
 
@@ -483,13 +483,13 @@ lemma update16 :
     fin_cases i
     · change W15 13 0 * ((∑ j : Fin 3, W15 14 j) - W15 14 0) = Dual.mk (-1) (-1)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W15 13 1 * ((∑ j : Fin 3, W15 14 j) - W15 14 1) = Dual.mk (-1) 1
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W15 13 2 * ((∑ j : Fin 3, W15 14 j) - W15 14 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W16, ite_eq_right hv]
 
@@ -503,13 +503,13 @@ lemma update17 :
     fin_cases i
     · change W16 12 0 * ((∑ j : Fin 3, W16 13 j) - W16 13 0) = Dual.mk (-1) (1/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W16 12 1 * ((∑ j : Fin 3, W16 13 j) - W16 13 1) = Dual.mk 1 (1/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W16 12 2 * ((∑ j : Fin 3, W16 13 j) - W16 13 2) = Dual.mk 0 2
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W17, ite_eq_right hv]
 
@@ -523,13 +523,13 @@ lemma update18 :
     fin_cases i
     · change W17 11 0 * ((∑ j : Fin 3, W17 12 j) - W17 12 0) = Dual.mk 1 3
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W17 11 1 * ((∑ j : Fin 3, W17 12 j) - W17 12 1) = Dual.mk 1 (-3)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W17 11 2 * ((∑ j : Fin 3, W17 12 j) - W17 12 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W18, ite_eq_right hv]
 
@@ -543,13 +543,13 @@ lemma update19 :
     fin_cases i
     · change W18 10 0 * ((∑ j : Fin 3, W18 11 j) - W18 11 0) = Dual.mk 1 (-5/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W18 10 1 * ((∑ j : Fin 3, W18 11 j) - W18 11 1) = Dual.mk (-1) (-5/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W18 10 2 * ((∑ j : Fin 3, W18 11 j) - W18 11 2) = Dual.mk 0 (-2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W19, ite_eq_right hv]
 
@@ -563,13 +563,13 @@ lemma update20 :
     fin_cases i
     · change W19 9 0 * ((∑ j : Fin 3, W19 10 j) - W19 10 0) = Dual.mk (-1) (-5)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W19 9 1 * ((∑ j : Fin 3, W19 10 j) - W19 10 1) = Dual.mk (-1) 5
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W19 9 2 * ((∑ j : Fin 3, W19 10 j) - W19 10 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W20, ite_eq_right hv]
 
@@ -583,13 +583,13 @@ lemma update21 :
     fin_cases i
     · change W20 8 0 * ((∑ j : Fin 3, W20 9 j) - W20 9 0) = Dual.mk (-1) (9/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W20 8 1 * ((∑ j : Fin 3, W20 9 j) - W20 9 1) = Dual.mk 1 (9/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W20 8 2 * ((∑ j : Fin 3, W20 9 j) - W20 9 2) = Dual.mk 0 2
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W21, ite_eq_right hv]
 
@@ -603,13 +603,13 @@ lemma update22 :
     fin_cases i
     · change W21 8 0 * ((∑ j : Fin 3, W21 15 j) - W21 15 0) = Dual.mk 1 (-4)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W21 8 1 * ((∑ j : Fin 3, W21 15 j) - W21 15 1) = Dual.mk 1 4
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W21 8 2 * ((∑ j : Fin 3, W21 15 j) - W21 15 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W22, ite_eq_right hv]
 
@@ -623,13 +623,13 @@ lemma update23 :
     fin_cases i
     · change W22 7 0 * ((∑ j : Fin 3, W22 8 j) - W22 8 0) = Dual.mk 1 (9/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W22 7 1 * ((∑ j : Fin 3, W22 8 j) - W22 8 1) = Dual.mk (-1) (9/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W22 7 2 * ((∑ j : Fin 3, W22 8 j) - W22 8 2) = Dual.mk 0 (-2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W23, ite_eq_right hv]
 
@@ -643,13 +643,13 @@ lemma update24 :
     fin_cases i
     · change W23 6 0 * ((∑ j : Fin 3, W23 7 j) - W23 7 0) = Dual.mk (-1) 2
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W23 6 1 * ((∑ j : Fin 3, W23 7 j) - W23 7 1) = Dual.mk (-1) (-2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W23 6 2 * ((∑ j : Fin 3, W23 7 j) - W23 7 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W24, ite_eq_right hv]
 
@@ -663,13 +663,13 @@ lemma update25 :
     fin_cases i
     · change W24 5 0 * ((∑ j : Fin 3, W24 6 j) - W24 6 0) = Dual.mk (-1) (-5/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W24 5 1 * ((∑ j : Fin 3, W24 6 j) - W24 6 1) = Dual.mk 1 (-5/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W24 5 2 * ((∑ j : Fin 3, W24 6 j) - W24 6 2) = Dual.mk 0 2
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W25, ite_eq_right hv]
 
@@ -683,13 +683,13 @@ lemma update26 :
     fin_cases i
     · change W25 4 0 * ((∑ j : Fin 3, W25 5 j) - W25 5 0) = Dual.mk 1 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W25 4 1 * ((∑ j : Fin 3, W25 5 j) - W25 5 1) = Dual.mk 1 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W25 4 2 * ((∑ j : Fin 3, W25 5 j) - W25 5 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W26, ite_eq_right hv]
 
@@ -703,13 +703,13 @@ lemma update27 :
     fin_cases i
     · change W26 0 0 * ((∑ j : Fin 3, W26 4 j) - W26 4 0) = Dual.mk 1 15
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W26 0 1 * ((∑ j : Fin 3, W26 4 j) - W26 4 1) = Dual.mk 1 (-15)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W26 0 2 * ((∑ j : Fin 3, W26 4 j) - W26 4 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W27, ite_eq_right hv]
 
@@ -723,13 +723,13 @@ lemma update28 :
     fin_cases i
     · change W27 2 0 * ((∑ j : Fin 3, W27 3 j) - W27 3 0) = Dual.mk (-1) (-1)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W27 2 1 * ((∑ j : Fin 3, W27 3 j) - W27 3 1) = Dual.mk (-1) 1
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W27 2 2 * ((∑ j : Fin 3, W27 3 j) - W27 3 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W28, ite_eq_right hv]
 
@@ -743,13 +743,13 @@ lemma update29 :
     fin_cases i
     · change W28 0 0 * ((∑ j : Fin 3, W28 2 j) - W28 2 0) = Dual.mk (-1) (-14)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, W28, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W28 0 1 * ((∑ j : Fin 3, W28 2 j) - W28 2 1) = Dual.mk (-1) 14
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, W28, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W28 0 2 * ((∑ j : Fin 3, W28 2 j) - W28 2 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, W28, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W29, ite_eq_right hv]
 
@@ -763,13 +763,13 @@ lemma update30 :
     fin_cases i
     · change W29 0 0 * ((∑ j : Fin 3, W29 1 j) - W29 1 0) = Dual.mk 1 (29/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, W28, W29, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W29 0 1 * ((∑ j : Fin 3, W29 1 j) - W29 1 1) = Dual.mk (-1) (29/2)
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, W28, W29, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
     · change W29 0 2 * ((∑ j : Fin 3, W29 1 j) - W29 1 2) = Dual.mk 0 0
       simp only [W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, W28, W29, wR, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, Fin.sum_univ_three, Matrix.cons_val_zero]
-      apply Dual.ext <;> simp <;> norm_num
+      apply Dual.ext <;> norm_num
   · rw [Function.update_of_ne hv]
     simp [W30, ite_eq_right hv]
 

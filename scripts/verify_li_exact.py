@@ -59,6 +59,7 @@ def exact_singleton(modules, target):
 
 
 ROOTS = ['Conjectures.LiFullCoeffTrunc', 'Conjectures.LiTriplesFinal', 'Conjectures.LiPartitionsFinal', 'Conjectures.LiPartitionsCount']
+SOURCE_PRIORITY_ROOTS = ['Conjectures.LiPartitionsFinal', 'Conjectures.LiPartitionsCount']
 MODULE_COUNT = 38
 LEGACY_PREFIXES = ['Li.', 'LiBridge.', 'LiCompute.', 'LiElim.', 'LiEmap.', 'LiFinal.', 'LiFull.', 'LiMonomial.', 'LiTrunc.', 'LiWeighted.']
 REQUIRED = [
@@ -190,6 +191,8 @@ def preflight(model):
     require(model.get("sealed") is True, "Li source manifest is not sealed")
     require(model["roots"] == ROOTS,
             "Unexpected theorem root")
+    require(model["source_priority_roots"] == SOURCE_PRIORITY_ROOTS,
+            "Unexpected source scheduling priority")
     require(model["legacy_prefixes"] == LEGACY_PREFIXES, "Unexpected legacy ownership prefix")
     require(model["source_policy"] == {
         "warning_as_error": True, "linter_override": False, "fresh_project_objects": True},
@@ -201,6 +204,9 @@ def preflight(model):
     require(model["literal_statements_sha256"] == hashlib.sha256(STATEMENTS.encode()).hexdigest(),
             "Literal theorem contracts differ")
     modules = runtime.dependency_order(model["roots"])
+    priority_modules = runtime.dependency_order(SOURCE_PRIORITY_ROOTS)
+    require(set(priority_modules) <= set(modules), "Source priority extends the proof closure")
+    modules = priority_modules + [module for module in modules if module not in priority_modules]
     require(len(modules) == model["project_module_count"] == MODULE_COUNT and set(modules) == set(model["source_sha256"]),
             "Exact Li proof closure differs")
     required = model["required_theorems"]

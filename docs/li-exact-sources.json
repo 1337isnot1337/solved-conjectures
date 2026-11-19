@@ -86,11 +86,15 @@
     "linter_override": false,
     "warning_as_error": true
   },
+  "source_priority_roots": [
+    "Conjectures.LiPartitionsFinal",
+    "Conjectures.LiPartitionsCount"
+  ],
   "source_sha256": {
     "Conjectures.LiBasic": "db9ef588d196a4842be654cd68d8b44e2424ca2c2f4343efabe75d60024acda9",
     "Conjectures.LiBridge": "d2367d609168657dcc7f6e15d632ef0ad4dfcab0e49456efbf24c403be7c55ba",
     "Conjectures.LiChromatic": "fdb1bcc7a42f959995157f468686f3b8388db18c6da3c2a3bb58b7b705fae6cd",
-    "Conjectures.LiCompute": "926262a62e7fee2e77ab8a712bb850850e8b09eb62babb73f2ea6393259a4497",
+    "Conjectures.LiCompute": "028da9dda2e8673a3ef0d7e7be07473ee3fc895c2a3f2ae529ea82f7eb292ab3",
     "Conjectures.LiDualFull": "69d4646dceb7291f4482ce085799c89bc4a711785d0bf29ed3724af473c5d05f",
     "Conjectures.LiDualTrunc": "00f18dcdb6aec36ee60df7fd332c7494c08efdab7d9b58eb6c1e868ea87b96e4",
     "Conjectures.LiEliminate": "908f594e8b53af795b15443142853fa267a069260b0f25836b99fd2eef7b337d",
@@ -118,7 +122,7 @@
     "Conjectures.LiPartitionsFinalData13": "f2282214ba7bb04d4a8bf5c28a69889f8a2c846e5fb62aa0f84bf70aed5dacd9",
     "Conjectures.LiPartitionsFinalEnum": "7cb7b1e043c4dcc7ad0aa49562ffe828c80f6a1bda3a3f9833a4043742764311",
     "Conjectures.LiPartitionsGraph": "da54af063a182f5febff19abb571f3c99dcd2164ea2ebf3ccf92b8b9777cb5ac",
-    "Conjectures.LiSpecFinal": "42417690d0cf2c977ed09346667c52ceeb509db6ddb975c5ecaa6e86e9d3b28e",
+    "Conjectures.LiSpecFinal": "8b13f8356139919b40360ca923375d9ec2e3aabae549b39e02702a86f25bb131",
     "Conjectures.LiTriples2": "e26b778d4f52820ee1d4431357739a0d5399c9d5348930a4efd7f718f307de1e",
     "Conjectures.LiTriplesBridge": "a6ea9ad6897e76fe0eaae3e382d3a83f06abaa8f9d7adfc5ae3778d5bcfa282c",
     "Conjectures.LiTriplesFinal": "6da5825edae98313c139008c97d711d8d75802593f5d0f9f99f81ca738c9c676",

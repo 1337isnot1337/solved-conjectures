@@ -84,7 +84,6 @@ jobs:
           build: false
           test: false
           lint: false
-          check-lean-environment: false
       - name: Fresh strict sources, all-owned audit and exact stock replay
         env:
           LEAN_NUM_THREADS: 1

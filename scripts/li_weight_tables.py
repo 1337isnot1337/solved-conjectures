@@ -99,7 +99,7 @@ for k in range(1, 31):
                              [f'T{j}' for j in range(1, k)])
         L.append(f'    \u00b7 change {prev} {p} {idx} * (({chr(8721)} j : Fin 3, {prev} {l} j) - {prev} {l} {idx}) = {val}')
         L.append(f'      simp only [{defs}, Fin.sum_univ_three, Matrix.cons_val_zero]')
-        L.append('      apply Dual.ext <;> simp <;> norm_num')
+        L.append('      apply Dual.ext <;> norm_num')
     L.append('  \u00b7 rw [Function.update_of_ne hv]')
     L.append(f'    simp [W{k}, ite_eq_right hv]')
     L.append('')

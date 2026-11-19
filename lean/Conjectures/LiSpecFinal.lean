@@ -46,13 +46,13 @@ theorem specialization_coeff (g : MvPolynomial (Fin 3) ℚ) (hg : g.IsSymmetric)
     fin_cases j
     · change truncDual (1 + Polynomial.C (1/2) * Polynomial.X) = Dual.mk 1 (1/2)
       simp [truncDual_C, truncDual_X]
-      ext <;> simp <;> norm_num
+      ext <;> simp
     · change truncDual (-1 + Polynomial.C (1/2) * Polynomial.X) = Dual.mk (-1) (1/2)
       simp [truncDual_C, truncDual_X]
-      ext <;> simp <;> norm_num
+      ext <;> simp
     · change truncDual (-Polynomial.X) = Dual.mk 0 (-1)
       simp [truncDual_X]
-      ext <;> simp <;> norm_num
+      ext <;> simp
   rw [hwD]
   have hvec : ∀ i : Fin 3, MvPolynomial.aeval LiEmap.wD
       (MvPolynomial.esymm (Fin 3) ℚ (i + 1)) = LiMonomial.v i := by
