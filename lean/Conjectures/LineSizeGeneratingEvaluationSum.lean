@@ -84,7 +84,7 @@ theorem hasSeriesValue_tupleCostSeries (q : K) (hq : ‖q‖ < 1) :
       (∑' n, seriesTerm tupleCostSeries q n)=
           ∑' n, ∑' r, seriesTerm (coreTerm r) q n :=
         tsum_congr (fun n => (hasSum_core_column n q).tsum_eq.symm)
-      _ = ∑' r, ∑' n, seriesTerm (coreTerm r) q n := hdouble.tsum_comm.symm
+      _ = ∑' r, ∑' n, seriesTerm (coreTerm r) q n := hdouble.tsum_comm
       _ = ∑' r, coreValue r q :=
         tsum_congr (fun r => (hasSeriesValue_coreTerm r q hq).hasSum.tsum_eq)
   exact ⟨hnorm,hvalue ▸ hnorm.of_norm.hasSum⟩
@@ -100,9 +100,6 @@ theorem tsum_coreValue_eq (q : K) (hq : ‖q‖ < 1) :
   rw [hfirst] at hsplit
   rw [← hsplit,exactValue]
   congr 1
-  apply tsum_congr
-  intro r
-  exact coreValue_of_ge_three (r+3) (by omega) q
 
 theorem hasSeriesValue_tupleCostSeries_exact (q : K) (hq : ‖q‖ < 1) :
     HasSeriesValue tupleCostSeries q (exactValue q) := by
