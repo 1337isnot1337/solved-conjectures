@@ -164,13 +164,16 @@ def main() -> None:
             text=True)
         require(not dirty.strip(), f"Tracked public package sources changed: {name}")
         files = package_files(package)
-        require(any(p.name.endswith(".olean") for p in files),
+        cached_objects = sum(p.name.endswith(".olean") for p in files)
+        # Cli is a declared tooling dependency that Mathlib does not prebuild.
+        # Its pinned sources are sufficient to build it later if needed.
+        require(cached_objects > 0 or name == "Cli",
                 f"Missing cached Lean objects: {name}")
         package_entries.extend(
             (p, f"packages/{name}/" + str(p.relative_to(package)).replace(os.sep, "/"))
             for p in files)
         package_inventory.append({"name": name, "url": item["url"], "rev": revision,
-                                  "files": len(files)})
+                                  "files": len(files), "cached_olean_count": cached_objects})
     OUTPUT.mkdir()
     result = {
         "schema": "public-lean-runtime-export-v1",
