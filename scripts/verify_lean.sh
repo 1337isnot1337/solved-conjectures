@@ -975,7 +975,6 @@ modules=(
   Conjectures.LonelinessHyperplaneShiftLaw
   Conjectures.LonelinessHyperplaneRateSharpness
   Conjectures.LonelinessHyperplaneMain
-  # Conditional norm cutoffs and prime selection for nine through thirteen speeds.
   Conjectures.LonelinessKZBasisVectors
   Conjectures.LonelinessNearestPlane
   Conjectures.LonelinessKZBasisGram
