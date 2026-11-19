@@ -1,0 +1,42 @@
+{
+  "accepted_registry_changed": false,
+  "complete_arithmetic_partition": false,
+  "expected_groups": [
+    "p10g00",
+    "p10g01",
+    "p10g02",
+    "p10g03",
+    "p10g04",
+    "p10g05",
+    "p10g06"
+  ],
+  "missing_groups": [
+    "p10g01",
+    "p10g02",
+    "p10g03",
+    "p10g04",
+    "p10g05",
+    "p10g06"
+  ],
+  "passed_groups": {
+    "p10g00": {
+      "archive_sha256": "6758f65671e8ac21acb0188d861240dc79bcfd417c68aa0ce57b586e334c29ac",
+      "artifact_id": 14519618040,
+      "artifact_name": "frankl-literal-orbit-p10g00",
+      "private_chunks": 32,
+      "project_modules": 24,
+      "receipt": "docs/verification/frankl-orbit-batches-44505005993/p10g00.json",
+      "receipt_sha256": "fa487e44034b87c5bc6e2b7139a45ee00b6f94da24f6511be23837fbe2353c83",
+      "rows": 64
+    }
+  },
+  "schema": "frankl-bounded-arithmetic-receipts-v1",
+  "scope": "Only the listed bounded representative arithmetic groups. Full target transports, original-row coverage and the span-four theorem remain separate obligations.",
+  "skipped_artifacts": [],
+  "source_commit": "050ec13ddc5c454c56ae081e82a2aa4f91fa1722",
+  "source_run_id": 44505005993,
+  "verified_private_arithmetic_chunks": 32,
+  "verified_representative_rows": 64,
+  "workflow_conclusion": null,
+  "workflow_status": "queued"
+}

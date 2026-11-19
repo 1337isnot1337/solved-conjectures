@@ -1,0 +1,102 @@
+{
+  "accepted_registry_changed": false,
+  "complete_arithmetic_partition": false,
+  "expected_groups": [
+    "g00",
+    "g01",
+    "g02",
+    "g03",
+    "g04",
+    "g05",
+    "g06",
+    "g07",
+    "g08",
+    "g09",
+    "g10",
+    "g11",
+    "g12",
+    "g13",
+    "g14",
+    "g15",
+    "g16",
+    "g17",
+    "g18"
+  ],
+  "missing_groups": [
+    "g05",
+    "g06",
+    "g07",
+    "g08",
+    "g09",
+    "g10",
+    "g11",
+    "g12",
+    "g13",
+    "g14",
+    "g15",
+    "g16",
+    "g17",
+    "g18"
+  ],
+  "passed_groups": {
+    "g00": {
+      "archive_sha256": "586c9a0301748f5bcf61121e04991c78520f39edad108b66c86db40c50831ade",
+      "artifact_id": 14519222282,
+      "artifact_name": "frankl-orbit-g00-receipt",
+      "private_chunks": 256,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44503050632/g00.json",
+      "receipt_sha256": "1f511298733833ae094e8187efed309010914c08697cc2c2d3afbb703a1c5131",
+      "rows": 512
+    },
+    "g01": {
+      "archive_sha256": "88d74b0f43a6f78676482e3cb7857f1fb52ae52fede741de85e41e0a5ab591e1",
+      "artifact_id": 14517959302,
+      "artifact_name": "frankl-orbit-g01-receipt",
+      "private_chunks": 256,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44503050632/g01.json",
+      "receipt_sha256": "d0eaa299fb3592febda1430808c2b6b6765d2c8a231566873270fed5bba4ee22",
+      "rows": 512
+    },
+    "g02": {
+      "archive_sha256": "884bd2491f1913eb94cb12f9022c2358d542da5cf18aa9b3813f2d7288c92eee",
+      "artifact_id": 14518703044,
+      "artifact_name": "frankl-orbit-g02-receipt",
+      "private_chunks": 256,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44503050632/g02.json",
+      "receipt_sha256": "2f31bd9f16ab31ed67126104940ed6120f6412cc6b9235c97ae4fbe12e4ad877",
+      "rows": 512
+    },
+    "g03": {
+      "archive_sha256": "455bb963a3750314c00b305c08f6253e08522aa3042d780c1757c0cee80c8821",
+      "artifact_id": 14517789477,
+      "artifact_name": "frankl-orbit-g03-receipt",
+      "private_chunks": 256,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44503050632/g03.json",
+      "receipt_sha256": "5a1a97efa28c6cc11c7c81080bf6c1a16630bd3cc222d991ff12afe4f63a0b52",
+      "rows": 512
+    },
+    "g04": {
+      "archive_sha256": "92d058382d3646512a0c6a59206490623ec22b0fe8c468f5f07d8e15dbbb2693",
+      "artifact_id": 14520655059,
+      "artifact_name": "frankl-orbit-g04-receipt",
+      "private_chunks": 256,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44503050632/g04.json",
+      "receipt_sha256": "9e9cb01d2015ee2bc62455ca194ef10d09254f0be244cfa410558d16dbb13cf0",
+      "rows": 512
+    }
+  },
+  "schema": "frankl-bounded-arithmetic-receipts-v1",
+  "scope": "Only the listed bounded representative arithmetic groups. Full target transports, original-row coverage and the span-four theorem remain separate obligations.",
+  "skipped_artifacts": [],
+  "source_commit": "a48f80f5f0e7d5e27d9429c324ad07097d070161",
+  "source_run_id": 44503050632,
+  "verified_private_arithmetic_chunks": 1280,
+  "verified_representative_rows": 2560,
+  "workflow_conclusion": null,
+  "workflow_status": "queued"
+}
