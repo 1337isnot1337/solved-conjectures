@@ -9,6 +9,11 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    ``Loneliness.SixPlane.standard_product_plane,
+    ``Loneliness.SixPlane.literal_parameters_of_mem_critical_plane,
+    ``Loneliness.SixPlane.literal_family_of_mem_critical_plane,
+    ``Loneliness.SixPlane.primitive_family_of_mem_critical_plane,
+    ``Loneliness.SixPlane.not_mem_critical_plane_of_not_literal_families,
     ``Loneliness.SixSpectrumFields.listRelationsCheck_sound,
     ``Loneliness.SixSpectrumFields.supportRelationsCheck_cases,
     ``Loneliness.SixSpectrumFields.form_eq_of_signed_coefficients,

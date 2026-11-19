@@ -541,3 +541,4 @@ import Conjectures.LonelinessSixSpectrumFieldsTransform
 import Conjectures.LonelinessModularMultiplicity
 import Conjectures.LonelinessModularSupportLists
 import Conjectures.LonelinessSixSpectrumFieldsSupport
+import Conjectures.LonelinessSixPlaneFamilies
