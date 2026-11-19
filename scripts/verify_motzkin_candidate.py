@@ -50,6 +50,8 @@ TASKS = {
          "Motzkin.Cyclic.cyclic_Hermite_basis",
          "Motzkin.Cyclic.independenceNumber_gcd",
          "Motzkin.Cyclic.reduced_gcd_eq_one",
+         "Motzkin.rational_pair_density",
+         "Motzkin.rational_circle_density_attained",
          "Motzkin.Cyclic.odd_closed_walk_sharpness_criterion",
          "Motzkin.Cyclic.example_exact_independence",
          "Motzkin.Cyclic.sevenCycle_injective",

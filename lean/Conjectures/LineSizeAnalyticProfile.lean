@@ -18,6 +18,7 @@ theorem hasDerivAt_symmetricArea {u : ℝ} (hu : 0<u) :
   convert (hi.add hif).sub hp using 1
   · rfl
   · rw [f_involution hu]
+    simp only [id_eq]
     ring
 
 theorem symmetricArea_const {u v : ℝ} (hu : 0<u) (hv : 0<v) :
@@ -84,7 +85,7 @@ theorem hasDerivAt_Phi {u : ℝ} (hu : 0<u) : HasDerivAt Phi (PhiPrime u) u := b
   have hq := (hasDerivAt_id u).pow 2
   convert (hl.sub hq).add (hasDerivAt_I hu) using 1
   · rfl
-  · simp only [PhiPrime,Nat.cast_ofNat,pow_one,mul_one]
+  · simp only [PhiPrime,Nat.cast_ofNat,pow_one,mul_one,id_eq]
     ring
 
 theorem deriv_Phi {u : ℝ} (hu : 0<u) : deriv Phi u=PhiPrime u :=
@@ -231,8 +232,9 @@ theorem deriv_M {u : ℝ} (hu : 0<u) : deriv M u=2*u+meanKernel u :=
 theorem hasDerivAt_I_sub_mul_f {u : ℝ} (hu : 0<u) :
     HasDerivAt (fun x : ℝ => I x-x*f x) (meanKernel u) u := by
   convert (hasDerivAt_I hu).sub ((hasDerivAt_id u).mul (hasDerivAt_f hu)) using 1
-  unfold meanKernel
-  ring
+  · rfl
+  · simp only [meanKernel,id_eq]
+    ring
 
 theorem meanIntegral_eq_I_sub_mul_f {u : ℝ} (hu : 0<u) :
     meanIntegral u=I u-u*f u := by
@@ -270,9 +272,9 @@ theorem hasDerivAt_mul_meanKernel {u : ℝ} (hu : 0<u) :
     ((Real.hasDerivAt_exp u).sub_const 1) hd
   convert hh using 1
   · funext x
-    unfold meanKernel
+    change x*(x/(Real.exp x-1))=x^2/(Real.exp x-1)
     ring
-  · simp only [Nat.cast_ofNat,pow_one,mul_one]
+  · simp only [Nat.cast_ofNat,pow_one,mul_one,id_eq,Pi.pow_apply]
     unfold meanKernel varianceKernel
     field_simp
     <;> ring

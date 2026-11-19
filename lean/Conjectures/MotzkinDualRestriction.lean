@@ -18,8 +18,8 @@ theorem denseRange_dual_map {H G : Type*} [CommGroup H] [CommGroup G]
   let R : Subgroup (PontryaginDual H) := r.toMonoidHom.range
   let K : Subgroup (PontryaginDual H) := R.topologicalClosure
   have hK : K=⊤ := by
-    apply Subgroup.eq_top_iff'.mpr
-    intro ψ
+    apply top_unique
+    intro ψ _
     by_contra hψ
     let _ : IsClosed (K : Set (PontryaginDual H)) := R.isClosed_topologicalClosure
     let _ : K.Normal := inferInstance
@@ -51,10 +51,12 @@ theorem denseRange_dual_map {H G : Type*} [CommGroup H] [CommGroup G]
     have hξ : ξ=1 := by rw [← hh,hh1,map_one]
     apply hθ
     change ξ ψ=1
-    rw [hξ] <;> rfl
+    rw [hξ]
+    rfl
   change Dense (Set.range r)
   rw [dense_iff_closure_eq]
   change (K : Set (PontryaginDual H))=Set.univ
-  rw [hK] <;> rfl
+  rw [hK]
+  rfl
 
 end Motzkin

@@ -41,8 +41,8 @@ theorem generate_of_sub_eq_one {N : ℕ} [NeZero N] (a b : ZMod N)
   have ha : a ∈ H := AddSubgroup.subset_closure (by simp)
   have hb : b ∈ H := AddSubgroup.subset_closure (by simp)
   have hone : (1:ZMod N) ∈ H := h ▸ H.sub_mem hb ha
-  apply AddSubgroup.eq_top_iff'.mpr
-  intro z
+  apply top_unique
+  intro z _
   have hz := H.nsmul_mem hone z.val
   simpa only [nsmul_eq_mul,mul_one,ZMod.natCast_zmod_val] using hz
 

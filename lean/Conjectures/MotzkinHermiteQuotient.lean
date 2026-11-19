@@ -58,8 +58,8 @@ theorem generated (m k s : ℕ) :
     let K := AddSubgroup.closure ({(1,0),(0,1)} : Set (ℤ × ℤ))
     have h₁ : (1,0) ∈ K := AddSubgroup.subset_closure (by simp)
     have h₂ : (0,1) ∈ K := AddSubgroup.subset_closure (by simp)
-    apply AddSubgroup.eq_top_iff'.mpr
-    intro z
+    apply top_unique
+    intro z _
     have he : z=z.1 • (1,0)+z.2 • (0,1) := by ext <;> simp [zsmul_eq_mul]
     rw [he]
     exact K.add_mem (K.zsmul_mem h₁ z.1) (K.zsmul_mem h₂ z.2)

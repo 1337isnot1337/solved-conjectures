@@ -7,17 +7,17 @@ the number of iterations independently of the number of summands. -/
 namespace Motzkin.FloorSum
 
 def euclidSteps (M A : ℕ) : ℕ :=
-  if hM : M=0 then 0 else 1+euclidSteps (A%M) M
+  if _hM : M=0 then 0 else 1+euclidSteps (A%M) M
 termination_by M
-decreasing_by exact Nat.mod_lt _ (Nat.pos_of_ne_zero hM)
+decreasing_by exact Nat.mod_lt _ (Nat.pos_of_ne_zero _hM)
 
 def iterations (n M A B : ℕ) : ℕ :=
-  if hM : M=0 then 0 else
+  if _hM : M=0 then 0 else
   let height := (A%M)*n+B%M
   if height < M then 1
   else 1+iterations (height/M) (A%M) M (height%M)
 termination_by M
-decreasing_by exact Nat.mod_lt _ (Nat.pos_of_ne_zero hM)
+decreasing_by exact Nat.mod_lt _ (Nat.pos_of_ne_zero _hM)
 
 theorem iterations_le_euclidSteps (n M A B : ℕ) :
     iterations n M A B ≤ euclidSteps M A := by

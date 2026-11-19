@@ -10,6 +10,7 @@ on:
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
       - 'scripts/verify_line_size_candidate.py'
+      - 'scripts/test_line_size_candidate.py'
       - 'scripts/verify_lean_candidate.py'
       - 'scripts/plan_lean_candidates.py'
       - 'scripts/replay_lean.py'
@@ -22,6 +23,7 @@ on:
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
       - 'scripts/verify_line_size_candidate.py'
+      - 'scripts/test_line_size_candidate.py'
       - 'scripts/verify_lean_candidate.py'
       - 'scripts/plan_lean_candidates.py'
       - 'scripts/replay_lean.py'
@@ -44,7 +46,10 @@ jobs:
         with:
           fetch-depth: 0
       - id: plan
+        name: Select source closures
         run: python3 scripts/verify_line_size_candidate.py --plan-ci
+      - name: Check failed-dependency rejection
+        run: python3 -m unittest discover -s scripts -p 'test_line_size_candidate.py'
 
   candidates:
     name: Line-size candidate ${{ matrix.task }}

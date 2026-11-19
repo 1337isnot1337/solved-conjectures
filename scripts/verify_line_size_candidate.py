@@ -12,11 +12,12 @@ from graphlib import TopologicalSorter
 import json
 import os
 from pathlib import Path
+import subprocess
 
 from plan_lean_candidates import changed_sources
 from replay_lean import imports_of, local_closure
 from verify_lean_candidate import (
-    ROOT, LEAN, audit, revision, run, source, source_hashes,
+    ROOT, LEAN, audit, digest, revision, run, source, source_hashes,
 )
 
 
@@ -43,6 +44,15 @@ TASKS = {
          "LineSize.EulerKernel.smoothLog_contDiff",
          "LineSize.EulerKernel.smoothLog_eq"],
     ),
+    "euler-correction": (
+        "Conjectures.LineSizeEulerProduct",
+        ["LineSize.EulerKernel.regularSum_error_uniform",
+         "LineSize.EulerKernel.stirlingError_le",
+         "LineSize.EulerKernel.logEuler_correction_exact",
+         "LineSize.EulerKernel.logEuler_correction_uniform",
+         "LineSize.EulerKernel.exp_logEuler",
+         "LineSize.EulerKernel.finiteProduct_correction_exact"],
+    ),
     "tuples": (
         "Conjectures.LineSizeTuplesCandidate",
         ["LineSize.tupleCoreLength_zero_iff",
@@ -55,10 +65,29 @@ TASKS = {
          "LineSize.tupleCount_eq_sum_exactCount",
          "LineSize.one_sub_X_mul_tupleCountSeries"],
     ),
+    "generating-function": (
+        "Conjectures.LineSizeGeneratingFunction",
+        ["LineSize.TupleEncoding.decodeCode_injective",
+         "LineSize.TupleEncoding.decodeCode_surjective",
+         "LineSize.TupleEncoding.coreCodeEquiv_cost",
+         "LineSize.TupleEncoding.zeroCodeEquiv_cost",
+         "LineSize.TupleEncoding.oneCodeEquiv_cost",
+         "LineSize.TupleEncoding.twoCodeEquiv_cost",
+         "LineSize.Generating.geometric_mul_one_sub",
+         "LineSize.Generating.coeff_gapSeries",
+         "LineSize.Generating.coeff_codeSeries",
+         "LineSize.Generating.coeff_coreTerm",
+         "LineSize.Generating.tupleCostSeries_eq",
+         "LineSize.Generating.one_sub_X_mul_tupleCountSeries_eq",
+         "LineSize.Generating.exactCount_formula",
+         "LineSize.Generating.gapSeries_mul_denominator",
+         "LineSize.Generating.largeCoreTerm_mul_denominator"],
+    ),
 }
 GATE_INPUTS = {
     ".github/workflows/lean-line-size-candidates.yml",
     "scripts/verify_line_size_candidate.py",
+    "scripts/test_line_size_candidate.py",
     "scripts/verify_lean_candidate.py",
     "scripts/plan_lean_candidates.py",
     "scripts/replay_lean.py",
@@ -80,6 +109,39 @@ def affected(task: str, changed: set[str] | None) -> bool:
     target, _ = TASKS[task]
     paths = {str(source(m).relative_to(ROOT)) for m in dependency_order([target])}
     return bool(changed & paths)
+
+
+def gate_hashes() -> dict[str, str]:
+    return {path: digest(ROOT / path) for path in sorted(GATE_INPUTS)}
+
+
+def check_sources(modules: list[str], receipt: dict) -> None:
+    """Check independent files after errors, while rejecting their dependents.
+
+    An error or a blocked source fails the whole task before the axiom and
+    kernel gates. No stale object from a failed dependency can support a pass.
+    """
+    failed: dict[str, str] = {}
+    checked: list[str] = []
+    receipt["source_failures"] = failed
+    receipt["checked_sources"] = checked
+    for module in modules:
+        blocked = [dep for dep in imports_of(source(module)) if dep in failed]
+        if blocked:
+            failed[module] = "blocked by failed dependencies: " + ", ".join(blocked)
+            print(f"SKIP {module}: {failed[module]}", flush=True)
+            continue
+        obj = LEAN / ".lake/build/lib/lean" / (module.replace(".", "/") + ".olean")
+        obj.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            run("lake", "env", "lean", "-j1", "-M4500", "-DwarningAsError=true",
+                str(source(module).relative_to(LEAN)), "-o", str(obj.relative_to(LEAN)))
+        except subprocess.CalledProcessError as exc:
+            failed[module] = f"strict source check exited {exc.returncode}"
+        else:
+            checked.append(module)
+    if failed:
+        raise RuntimeError(f"{len(failed)} sources failed or have failed dependencies")
 
 
 def main() -> None:
@@ -107,22 +169,23 @@ def main() -> None:
                           "required": required, "project_modules": modules}, indent=2))
         return
     initial = source_hashes(modules)
+    initial_gate = gate_hashes()
     receipt = {
         "task": args.task, "commit": revision(), "target": target,
-        "project_modules": modules, "source_sha256": initial,
+        "project_modules": modules, "source_sha256": initial, "gate_sha256": initial_gate,
+        "required_theorems": required,
         "status": "running", "completed_checks": [],
     }
     destination = ROOT / ".candidate-artifacts" / ("line-size-" + args.task)
     destination.mkdir(parents=True, exist_ok=True)
     try:
-        for module in modules:
-            run("lake", "build", module)
-        receipt["completed_checks"].append("source build")
+        check_sources(modules, receipt)
+        receipt["completed_checks"].append("strict source checks, warnings treated as errors")
         audit([target], required, modules, "line-size-" + args.task)
         receipt["completed_checks"].append("all-declaration axiom whitelist")
         run("lake", "env", "python3", "../scripts/replay_lean.py", "--root", target)
         receipt["completed_checks"].append("independent exact-closure kernel replay")
-        if source_hashes(modules) != initial:
+        if source_hashes(modules) != initial or gate_hashes() != initial_gate:
             raise RuntimeError("candidate source or pinned configuration changed during checks")
         receipt["status"] = "passed"
     except BaseException as exc:

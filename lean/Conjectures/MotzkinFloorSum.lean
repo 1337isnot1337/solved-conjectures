@@ -1,8 +1,10 @@
 import Mathlib.Algebra.BigOperators.Intervals
 import Mathlib.Algebra.BigOperators.Group.Finset.Sigma
 import Mathlib.Algebra.BigOperators.Group.Finset.Piecewise
+import Mathlib.Algebra.BigOperators.Ring.Finset
 import Mathlib.Algebra.Ring.Parity
 import Mathlib.Data.Finset.Card
+import Mathlib.Data.Finset.Prod
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
 import Lean.Elab.Tactic.Omega
@@ -21,7 +23,7 @@ theorem summand_split (M A B i : ℕ) (hM : 0 < M) :
   have h : A*i+B=((A%M)*i+B%M)+((A/M)*i+B/M)*M := by
     conv_lhs => rw [← Nat.mod_add_div A M,← Nat.mod_add_div B M]
     ring
-  rw [h,Nat.add_mul_div_left _ _ hM]
+  rw [h,Nat.add_mul_div_right _ _ hM]
   omega
 
 theorem spec_split (n M A B : ℕ) (hM : 0 < M) :
@@ -45,7 +47,7 @@ theorem spec_zero_of_height_lt (n M A B : ℕ) (h : A*n+B < M) :
     (Nat.le_of_lt (Finset.mem_range.mp hi))) B).trans_lt h
 
 def points (n q M A B : ℕ) : Finset (ℕ × ℕ) :=
-  ((Finset.range n).product (Finset.range q)).filter
+  (Finset.range n ×ˢ Finset.range q).filter
     (fun p => M*(p.2+1) ≤ A*p.1+B)
 
 theorem spec_eq_card_points (n q M A B : ℕ) (hM : 0 < M)
@@ -116,7 +118,7 @@ theorem reciprocal (n M A B : ℕ) (hM : 0 < M) (hA : 0 < A) (hB : B < M) :
     apply Prod.ext <;> simp only [Prod.fst,Prod.snd] <;> omega
 
 def eval (n M A B : ℕ) : ℕ :=
-  if hM : M=0 then 0 else
+  if _hM : M=0 then 0 else
   let A₀ := A%M
   let B₀ := B%M
   let base := (A/M)*(n*(n-1)/2)+(B/M)*n
@@ -124,7 +126,7 @@ def eval (n M A B : ℕ) : ℕ :=
   if height < M then base
   else base+eval (height/M) A₀ M (height%M)
 termination_by M
-decreasing_by exact Nat.mod_lt _ (Nat.pos_of_ne_zero hM)
+decreasing_by exact Nat.mod_lt _ (Nat.pos_of_ne_zero _hM)
 
 theorem eval_eq_spec (n M A B : ℕ) : eval n M A B=spec n M A B := by
   induction M using Nat.strong_induction_on generalizing n A B with

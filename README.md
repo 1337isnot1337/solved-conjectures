@@ -25,7 +25,7 @@ A growing collection of proofs, counterexamples, and reproducible verification c
 | [Distance graphs with three missing differences](results/distance-graph-densities/) | [Read](results/distance-graph-densities/PROOF.md) | ☑ |
 | [Growing rectangles](results/rectangle-partition-asymptotics/) | [Read](results/rectangle-partition-asymptotics/PROOF.md) | ☑ |
 | [CUT Family B](results/cut-family-b/) | [Read](results/cut-family-b/PROOF.md) | ☑ |
-| [Line-size sets](results/erdos-607-line-sizes/) | [Read](results/erdos-607-line-sizes/PROOF.md) | ◐ |
+| [Line-size sets](results/erdos-607-line-sizes/) | [Read](results/erdos-607-line-sizes/PROOF.md) · [Checked Lean scope](docs/lean-status.md) | ◐ |
 | [CUT with a preperiod](results/cut-arithmetic-periodicity/) | [Read](results/cut-arithmetic-periodicity/PROOF.md) | ☑ |
 | [L-solitaire limit shapes](results/l-solitaire-limit-shapes/) | [Read](results/l-solitaire-limit-shapes/PROOF.md) | ☑ |
 | [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) · [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334) | [Read](results/graffiti-pc-318/PROOF.md) | ☑ |

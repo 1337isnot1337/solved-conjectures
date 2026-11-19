@@ -46,8 +46,9 @@ theorem tupleCount_eq_sum_exactCount (n : ℕ) :
   rfl
 
 theorem tupleCount_succ (n : ℕ) : exactCount (n+1)+tupleCount n=tupleCount (n+1) := by
-  rw [tupleCount_eq_sum_exactCount n,tupleCount_eq_sum_exactCount (n+1),sum_range_succ]
-  omega
+  rw [tupleCount_eq_sum_exactCount n,tupleCount_eq_sum_exactCount (n+1),
+    sum_range_succ exactCount (n+1)]
+  exact Nat.add_comm _ _
 
 @[simp] theorem exactSizes_zero : exactSizes 0={∅} := by
   simp [exactSizes,feasibleSizes_of_lt_three 0 (by omega)]
@@ -81,7 +82,7 @@ theorem one_sub_X_mul_tupleCountSeries :
   rw [sub_mul,one_mul,map_sub,coeff_tupleCountSeries,coeff_tupleCostSeries]
   cases n with
   | zero =>
-    simp [PowerSeries.coeff_zero_eq_constantCoeff,tupleCount_of_lt_three 0 (by omega)]
+    simp [PowerSeries.coeff_zero_eq_constantCoeff]
   | succ n =>
     rw [PowerSeries.coeff_succ_X_mul,coeff_tupleCountSeries]
     symm

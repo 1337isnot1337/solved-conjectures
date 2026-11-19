@@ -9,16 +9,19 @@ to `main`. Li is last. The campaign is incomplete.
 The four active lanes in [issue 1](https://github.com/1337isnot1337/solved-conjectures/issues/1) are:
 
 - Concrete CUT is complete through compact quotient/residue certificates.
-  That worker now handles the exact analytic profile for Erdős 607, including
+  That worker has checked the exact analytic profile for Erdős 607, including
   its integral constant, mean, variance, and global phase bound.
+  It now handles the uniform Fourier bounds.
 - Pham denominator degree is complete. That worker now handles the
-  Sylvester–Gallai dependency and finite core/counting components of Erdős 607.
+  exact generating function and its analytic evaluation for Erdős 607. Its
+  Sylvester–Gallai dependency and finite core/gap foundations are checked.
 - Compact Motzkin: finite signed-grid characters, compact-group measure, and
   the exact two-difference formula. The same worker has completed the
   all-parameter gap-five/gap-seven character formulas and an odd-cycle density
   theorem.
-- Root: shared integration and the finite
-  geometric/combinatorial front end of Erdős 607 under `LineSize*`.
+- Root: shared integration, the corrected finite Euler product, and the local
+  coefficient analysis for Erdős 607. Its actual geometric counting identity
+  is checked for every point count.
 
 The other team coordinates in
 [issue 2](https://github.com/1337isnot1337/solved-conjectures/issues/2). It owns
@@ -154,8 +157,9 @@ remains separate work.
     certificates and every stated primitive equality list.
 15. Growing rectangles are complete: real tiling semantics, cumulative
     partition estimates, and the uniform asymptotic over every width `w ≥ h`.
-16. Erdős 607: geometric realization, generating-function correspondence,
-    local probability estimates and the sharp asymptotic prefactor.
+16. Erdős 607: generating-function evaluation, corrected Euler-product
+    asymptotics, Fourier local limits and the sharp coefficient prefactor.
+    Actual geometric counting and the exact saddle profile are checked.
 17. Graffiti.pc Conjecture 318 is complete, including the all-order theorem
     and sharp five-vertex example.
 18. Loneliness on a fixed hyperplane: uniform fixed-tolerance probability

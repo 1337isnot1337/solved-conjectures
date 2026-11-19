@@ -16,8 +16,8 @@ theorem generate_of_int_bezout (N a b : ℕ) (u v w : ℤ)
     have hh := congrArg (fun z : ℤ => (z:ZMod N)) h
     simpa [zsmul_eq_mul] using hh
   have hOne : (1:ZMod N) ∈ S := hcast ▸ S.add_mem (S.zsmul_mem ha u) (S.zsmul_mem hb v)
-  apply AddSubgroup.eq_top_iff'.mpr
-  intro z
+  apply top_unique
+  intro z _
   obtain ⟨n,rfl⟩ := ZMod.intCast_surjective z
   simpa only [zsmul_eq_mul,mul_one] using S.zsmul_mem hOne n
 
@@ -105,7 +105,8 @@ theorem cyclic_relation_iff_dvd (N a b : ℕ) (r t : ℤ) :
       (N:ℤ) ∣ r*(a:ℤ)+t*(b:ℤ) := by
   rw [zsmul_eq_mul,zsmul_eq_mul]
   have hcast : (r:ZMod N)*(a:ZMod N)+(t:ZMod N)*(b:ZMod N) =
-      ((r*(a:ℤ)+t*(b:ℤ):ℤ):ZMod N) := by push_cast <;> rfl
+      ((r*(a:ℤ)+t*(b:ℤ):ℤ):ZMod N) := by
+    simp only [Int.cast_add,Int.cast_mul,Int.cast_natCast]
   rw [hcast,ZMod.intCast_zmod_eq_zero_iff_dvd]
 
 /-- The preprocessing formula produces the full kernel, not only two

@@ -8,7 +8,7 @@ namespace Motzkin
 
 noncomputable def signedReal (n : ℤ) (r : ℝ) : ℝ := if 0 ≤ n then r else -r
 
-theorem mul_signedReal (n : ℤ) (r : ℝ) : (n:ℝ)*signedReal n r = |(n:ℝ)|*r := by
+theorem mul_signedReal (n : ℤ) (r : ℝ) : (n:ℝ)*signedReal n r = |(n:ℝ)| * r := by
   by_cases hn : 0 ≤ n
   · rw [signedReal,ite_eq_left hn,abs_of_nonneg (by exact_mod_cast hn)]
   · have hn' : (n:ℝ) < 0 := by exact_mod_cast lt_of_not_ge hn
@@ -85,6 +85,7 @@ noncomputable def relationValue (u v : ℤ) : ℝ :=
 theorem rank_one_value (u v : ℤ) (hk : 0 < u.natAbs+v.natAbs) :
     relationValue u v = ((u.natAbs+v.natAbs)/2:ℕ)/((u.natAbs+v.natAbs:ℕ):ℝ) := by
   obtain ⟨x,y,hrel,he⟩ := rank_one_attainment u v hk
+  unfold relationValue
   apply le_antisymm
   · apply csSup_le ⟨min ‖x‖ ‖y‖,x,y,hrel,rfl⟩
     rintro h ⟨x',y',hrel',rfl⟩

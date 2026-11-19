@@ -384,6 +384,24 @@ modules=(
   Conjectures.LonelinessHyperplaneArithmetic
   Conjectures.LonelinessHyperplaneBasic
   Conjectures.LonelinessHyperplane
+  Conjectures.LineSizeEulerKernel
+  Conjectures.LineSizeTuples
+  Conjectures.LineSizeAffine
+  Conjectures.LineSizeCrossings
+  Conjectures.LineSizeRecords
+  Conjectures.LineSizeAnalyticProfileBasic
+  Conjectures.LineSizeArrangement
+  Conjectures.LineSizeAnalyticProfileIntegral
+  Conjectures.LineSizeGeneric
+  Conjectures.LineSizeAnalyticProfile
+  Conjectures.LineSizeCarriers
+  Conjectures.LineSizeFill
+  Conjectures.LineSizeIncidences
+  Conjectures.LineSizePadding
+  Conjectures.LineSizeSelectedPoints
+  Conjectures.LineSizeRealization
+  Conjectures.LineSizeRecordRealization
+  Conjectures.LineSizeRecordCount
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

@@ -123,3 +123,17 @@ The accepted four-speed coordinate cutoff 5,832 is unconditional. The plane
 classification and five-speed cutoff 279,841 retain `FourSpeedGap` as an
 explicit premise. Neither the finite matrix nor that conditional cutoff is
 a proof of the exhaustive five-speed classification.
+
+## Selecting accepted-package checks
+
+The full Lean workflow derives the transitive source closure of both
+accepted roots and `ProofAudit`. Any change to that closure, the pinned
+configuration, or the verification scripts runs the complete build, axiom
+audit, and unchanged independent kernel checker. Missing roots, missing
+imports, unknown change information, and manual runs also select the full
+gate. Only candidate-only or documentation-only changes can skip it.
+
+A skipped job is not a new proof receipt. Each unregistered candidate has
+its own complete closure checks. Negative controls check transitive public
+imports, missing-source handling, newly registered candidates, and stale
+dependent-object rejection after a candidate source error.

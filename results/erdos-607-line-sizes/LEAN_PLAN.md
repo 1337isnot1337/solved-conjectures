@@ -44,9 +44,11 @@ and 3 project modules respectively; all their source hashes were frozen for
 replay. The port's license and provenance are recorded under
 `lean/Conjectures/LineSizeImported`.
 
-The remaining carrier construction, filling, padding, and actual-record modules
-are still outside accepted roots. Several have passed source checks, but their
-complete mathematical chain and independent replay remain to finish.
+The complete carrier construction, filling, padding, and actual-record chain
+now passes source checks, the 342-theorem ownership audit, and independent
+replay of its exact 20-module closure. `lineSizeCount_eq_tupleCount` is
+accepted for every natural point count. All eight geometric obligations
+above are discharged.
 
 ## Exact enumeration
 
@@ -98,3 +100,12 @@ locally verified, and it supplies none of those problem-specific hypotheses.
 Keep unfinished sources outside accepted roots. Register a component only after
 source compilation, the ownership-based axiom audit, and independent replay by
 the pinned unchanged kernel. Preserve the exact final quantifiers and constant.
+
+## Checked analytic profile
+
+The literal profile and singular-endpoint integral now pass their five-module
+source, 137-theorem axiom, and independent kernel checks. The exact saddle
+value, unique critical point, curvature, global Gaussian phase bound, and
+mean/variance identities are discharged. The corrected Euler-product and
+generating-function developments remain candidates; the local Fourier
+limit and coefficient assembly remain additional obligations.

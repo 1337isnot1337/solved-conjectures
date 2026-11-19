@@ -66,12 +66,12 @@ theorem localValues_le_cubic (N n M A B : ℕ) (hN : 0 < N)
     rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl <;> omega
 
 def allValues (n M A B : ℕ) : Finset ℕ :=
-  if hM : M=0 then localValues n M A B else
+  if _hM : M=0 then localValues n M A B else
   let height := (A%M)*n+B%M
   localValues n M A B ∪
     if height < M then ∅ else allValues (height/M) (A%M) M (height%M)
 termination_by M
-decreasing_by exact Nat.mod_lt _ (Nat.pos_of_ne_zero hM)
+decreasing_by exact Nat.mod_lt _ (Nat.pos_of_ne_zero _hM)
 
 theorem allValues_le_cubic (N n M A B : ℕ) (hN : 0 < N)
     (hn : n ≤ N) (hM : M ≤ N) (hA : A ≤ N) (hB : B ≤ 2*N^2)

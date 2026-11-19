@@ -98,14 +98,19 @@ collision exclusion and every smaller option value. The seven new sources and
 all 23 modules in their exact closure passed the source, axiom, and independent
 kernel gates.
 
-## Erdős 607 foundations
+## Erdős 607 geometry and profile
 
-`LineSizeOrdinary`, `LineSizeGraphCounts`, and `LineSizeCoreGaps` register seven
-checked modules in total. They prove the actual real-plane incidence bound and
-ordinary-line theorem, the positive-core and selected-graph identities, and a
-weight-preserving core-to-gap equivalence. The full geometric realization,
-generating function, and sharp asymptotic are still outside the accepted scope.
-The arbitrary compact-group upper bound remains unfinished.
+`LineSizeRecordCount` proves equality of actual geometric record counts and
+canonical feasible-tuple counts for every n. Its exact construction and
+ordinary-line dependency have no unproved geometric premise. The core/gap
+weight equivalence is checked separately.
+
+`LineSizeAnalyticProfile` proves the exact saddle value, unique critical
+point, curvature, global Gaussian bound, and moment identities.
+`LineSizeEulerKernel` gives the smooth regular part at the singular endpoint.
+All these components have source, axiom, and independent kernel receipts.
+The full generating-function evaluation and sharp coefficient asymptotic
+remain unfinished.
 
 ## Growing rectangles and finite planes
 

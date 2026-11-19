@@ -77,3 +77,6 @@ import Conjectures.LonelinessModularSearchDirections
 import Conjectures.LonelinessModularPrimes
 import Conjectures.LonelinessProductFamilyEight
 import Conjectures.LonelinessHyperplane
+import Conjectures.LineSizeRecordCount
+import Conjectures.LineSizeAnalyticProfile
+import Conjectures.LineSizeEulerKernel

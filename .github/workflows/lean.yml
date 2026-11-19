@@ -2,8 +2,24 @@ name: Lean proofs and certificates
 on:
   push:
   pull_request:
+  workflow_dispatch:
 jobs:
+  plan:
+    name: Select accepted-source verification
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.plan.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check accepted-source selection controls
+        run: python3 -m unittest discover -s scripts -p 'test_plan_accepted_lean.py'
+      - id: plan
+        run: python3 scripts/plan_accepted_lean.py
   lean:
+    needs: plan
+    if: needs.plan.outputs.run == 'true'
     runs-on: ubuntu-latest
     env:
       LEAN_NUM_THREADS: "1"

@@ -22,14 +22,18 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-Seven foundation modules are checked: the incidence cost bound for actual real
-affine lines, the unique positive core and its cost formula, ordinary-line
-existence for every finite noncollinear real-plane configuration, selected-graph
-degree and cost identities, and the exact core-to-gap bijection with its weight.
-Each component passed source checks, axiom auditing, and independent kernel
-replay. The Sylvester–Gallai dependency is a locally checked, pinned CC0 port
-with its source and license recorded in `lean/Conjectures/LineSizeImported`.
+The exact realizability criterion is proved for actual finite sets of real
+plane points. The geometric construction, filling, padding, ordinary-line
+theorem, and collinear cases give equality of the geometric record count
+with the canonical tuple count for every natural n. The core/gap weight
+equivalence is also checked. The Sylvester–Gallai dependency is a pinned
+CC0 port with its license and provenance preserved.
 
-Geometric sufficiency, the exact generating-function correspondence, and the
-sharp asymptotic remain in progress. See [the formalization obligations](LEAN_PLAN.md)
-and [the status report](../../docs/lean-status.md).
+The exact saddle constant, unique saddle, curvature, global phase bound,
+and mean/variance identities have passed source, axiom, and independent
+kernel checks. The exponential-series integral supplies the constant.
+
+The generating-function evaluation, uniform corrected Euler product,
+Fourier local limit, tail control, and sharp coefficient asymptotic remain
+in progress. See [the obligations](LEAN_PLAN.md) and
+[the checked scope and receipts](../../docs/lean-status.md).

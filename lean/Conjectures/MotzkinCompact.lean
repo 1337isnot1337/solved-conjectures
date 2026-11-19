@@ -58,9 +58,10 @@ theorem closure_pair_subtype {G : Type*} [AddCommGroup G] (a b : G) :
   have hmap : K.map H.subtype=H := by
     change (AddSubgroup.closure ({aH,bH} : Set H)).map H.subtype=H
     rw [AddMonoidHom.map_closure]
-    simp only [Set.image_insert_eq,Set.image_singleton] <;> rfl
-  apply AddSubgroup.eq_top_iff'.mpr
-  intro x
+    simp only [Set.image_insert_eq,Set.image_singleton]
+    rfl
+  apply top_unique
+  intro x _
   have hx : (x:G) ∈ K.map H.subtype := by rw [hmap]; exact x.property
   obtain ⟨y,hy,he⟩ := hx
   have hey : y=x := Subtype.ext he
@@ -96,10 +97,12 @@ theorem compact_measure_le_characterValue {G : Type*} [AddCommGroup G]
     closure_pair_image E'.toAddMonoidHom E'.surjective aH bH hgenH
   have hfa : f (E' aH)=a := by
     change ((E'.symm (E' aH):H):G)=a
-    rw [E'.symm_apply_apply] <;> rfl
+    rw [E'.symm_apply_apply]
+    rfl
   have hfb : f (E' bH)=b := by
     change ((E'.symm (E' bH):H):G)=b
-    rw [E'.symm_apply_apply] <;> rfl
+    rw [E'.symm_apply_apply]
+    rfl
   have havoid' : Avoids A (f (E' aH)) (f (E' bH)) := by
     simpa only [hfa,hfb] using havoid
   simpa only [hfa,hfb] using

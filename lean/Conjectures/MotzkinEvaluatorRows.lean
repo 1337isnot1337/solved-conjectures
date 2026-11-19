@@ -91,7 +91,7 @@ theorem countPairs_eq_sum_rows (N M s h I J : ℕ) (hM : 0 < M) (hh : 0 < h) :
     simp only [row,Finset.Icc_eq_empty_of_lt hlt,Finset.filter_empty,Finset.card_empty]
 
 def pairs (N M s h I J : ℕ) : Finset (ℕ × ℕ) :=
-  ((Finset.Icc I J).product (Finset.Icc h (N-h))).filter
+  (Finset.Icc I J ×ˢ Finset.Icc h (N-h)).filter
     (fun p => M ∣ p.2+s*p.1)
 
 theorem countPairs_eq_card (N M s h I J : ℕ) (hM : 0 < M) (hh : 0 < h) :

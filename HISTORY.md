@@ -1,5 +1,16 @@
 # History
 
+## 2026-11-19 — Exact line-size geometry and saddle profile
+
+- Proved the real-plane realizability criterion and exact geometric record
+  count for every point count; the 20-module closure passed source, the
+  342-theorem ownership audit, and independent kernel replay.
+- Proved the exact saddle constant and moment identities from the literal
+  integral, with a five-module, 137-theorem audit and kernel replay.
+- Registered these checked components and the smooth Euler kernel. The
+  exact generating function, corrected product estimate, Fourier bounds,
+  and sharp asymptotic remain ongoing work.
+
 ## 2026-11-19 — Complete concrete CUT games and line-size foundations
 
 - Identified both actual recursive CUT games with their proposed sequence at

@@ -100,7 +100,7 @@ theorem sigma_fin_eq_iff {α : Type*} {n : α → ℕ} (x y : Σ i, Fin (n i)) :
   rcases v with ⟨k,⟨t,ht⟩⟩
   unfold facePositiveLower positiveFace
   simp only [prev_next]
-  rw [dif_pos ht]
+  rw [dite_eq_left ht]
   apply (sigma_fin_eq_iff _ _).mpr
   simp
 
@@ -108,8 +108,8 @@ theorem sigma_fin_eq_iff {α : Type*} {n : α → ℕ} (x y : Σ i, Fin (n i)) :
     positiveFace d (facePositiveUpper d v)=v := by
   rcases v with ⟨k,⟨t,ht⟩⟩
   unfold facePositiveUpper positiveFace
-  simp only [prev_prev,next_prev]
-  rw [dif_neg (show ¬ t+d (nextAxis k) < d (nextAxis k) by omega)]
+  simp only [prev_prev]
+  rw [dite_eq_right (show ¬ t+d (nextAxis k) < d (nextAxis k) by omega)]
   apply (sigma_fin_eq_iff _ _).mpr
   simp
 
@@ -117,8 +117,8 @@ theorem sigma_fin_eq_iff {α : Type*} {n : α → ℕ} (x y : Σ i, Fin (n i)) :
     negativeFace d (faceNegativeUpper d v)=v := by
   rcases v with ⟨k,⟨t,ht⟩⟩
   unfold faceNegativeUpper negativeFace
-  simp only [next_next,prev_next]
-  rw [dif_neg (show ¬ t+d (prevAxis k) < d (prevAxis k) by omega)]
+  simp only [next_next]
+  rw [dite_eq_right (show ¬ t+d (prevAxis k) < d (prevAxis k) by omega)]
   apply (sigma_fin_eq_iff _ _).mpr
   simp
 
@@ -127,7 +127,7 @@ theorem sigma_fin_eq_iff {α : Type*} {n : α → ℕ} (x y : Σ i, Fin (n i)) :
   rcases v with ⟨k,⟨t,ht⟩⟩
   unfold faceNegativeLower negativeFace
   simp only [next_prev]
-  rw [dif_pos ht]
+  rw [dite_eq_left ht]
   apply (sigma_fin_eq_iff _ _).mpr
   simp
 

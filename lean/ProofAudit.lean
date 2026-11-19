@@ -9,6 +9,19 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `LineSize.exists_padded_carrier_realization,
+    `LineSize.exists_large_record_iff,
+    `LineSize.feasibleSizes_iff_realizable,
+    `LineSize.lineSizeRecord_eq_of_large_eq,
+    `LineSize.lineSizeCount_eq_tupleCount,
+    `LineSize.Profile.saddle_profile_exact,
+    `LineSize.Profile.Phi_le_gaussian,
+    `LineSize.Profile.M_eq_Phi_sub_mul_deriv,
+    `LineSize.Profile.V_eq_two_M_sub_mul_deriv,
+    `LineSize.EulerKernel.meanExp_pos,
+    `LineSize.EulerKernel.meanExp_analyticAt,
+    `LineSize.EulerKernel.smoothLog_contDiff,
+    `LineSize.EulerKernel.smoothLog_eq,
     `CutPeriod.Weight.both_games_exact,
     `CutPeriod.Weight.gameA_mex,
     `CutPeriod.Weight.gameB_mex,

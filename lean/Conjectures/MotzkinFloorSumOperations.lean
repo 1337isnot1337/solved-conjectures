@@ -8,12 +8,12 @@ operations; the recursive branch has seventeen plus its recursive call. -/
 namespace Motzkin.FloorSum
 
 def operations (n M A B : ℕ) : ℕ :=
-  if hM : M=0 then 1 else
+  if _hM : M=0 then 1 else
   let height := (A%M)*n+B%M
   if height < M then 14
   else 17+operations (height/M) (A%M) M (height%M)
 termination_by M
-decreasing_by exact Nat.mod_lt _ (Nat.pos_of_ne_zero hM)
+decreasing_by exact Nat.mod_lt _ (Nat.pos_of_ne_zero _hM)
 
 theorem operations_le_iterations (n M A B : ℕ) :
     operations n M A B ≤ 17*iterations n M A B+1 := by

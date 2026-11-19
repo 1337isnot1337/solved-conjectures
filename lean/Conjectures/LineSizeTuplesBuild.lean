@@ -108,6 +108,7 @@ theorem tupleAt_assemble_prefix (r : ℕ) (z : ℕ → ℕ) (T : Finset ℕ)
 theorem tupleAt_assemble_tail (r : ℕ) (z : ℕ → ℕ) (T : Finset ℕ)
     (hsep : Separated r z T) (i : ℕ) (hi : r ≤ i) :
     tupleAt (assemble r z T) i=tupleAt T (i-r) := by
+  change tupleAt (coreList r z++tupleValues T).toFinset i=(tupleValues T).getD (i-r) 0
   simpa only [coreList_length] using tupleAt_append_right _ _
     (assemble_sorted r z T hsep) i (by simpa only [coreList_length] using hi)
 
