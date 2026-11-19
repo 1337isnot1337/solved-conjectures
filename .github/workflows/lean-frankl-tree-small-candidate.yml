@@ -4,7 +4,13 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'lean/Conjectures/FranklTree*.lean'
+      - 'lean/Conjectures/FranklTreeDataK*.lean'
+      - 'lean/Conjectures/FranklTreeBoundK*.lean'
+      - 'lean/Conjectures/FranklTreeCone.lean'
+      - 'lean/Conjectures/FranklTreeRoot.lean'
+      - 'lean/Conjectures/FranklTreeSpan.lean'
+      - 'lean/Conjectures/FranklTreeCertificate.lean'
+      - 'lean/Conjectures/FranklTreeSmallDegrees.lean'
       - 'scripts/verify_frankl_tree_small_candidate.py'
       - 'docs/frankl-tree-small-candidate-sources.json'
       - '.github/workflows/lean-frankl-tree-small-candidate.yml'
@@ -16,7 +22,13 @@ on:
       - 'lean/lake-manifest.json'
   pull_request:
     paths:
-      - 'lean/Conjectures/FranklTree*.lean'
+      - 'lean/Conjectures/FranklTreeDataK*.lean'
+      - 'lean/Conjectures/FranklTreeBoundK*.lean'
+      - 'lean/Conjectures/FranklTreeCone.lean'
+      - 'lean/Conjectures/FranklTreeRoot.lean'
+      - 'lean/Conjectures/FranklTreeSpan.lean'
+      - 'lean/Conjectures/FranklTreeCertificate.lean'
+      - 'lean/Conjectures/FranklTreeSmallDegrees.lean'
       - 'scripts/verify_frankl_tree_small_candidate.py'
       - 'docs/frankl-tree-small-candidate-sources.json'
       - '.github/workflows/lean-frankl-tree-small-candidate.yml'
