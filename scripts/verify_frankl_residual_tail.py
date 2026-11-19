@@ -16,7 +16,7 @@ import re
 import subprocess
 
 from plan_lean_candidates import changed_sources
-from verify_frankl_fc_candidate import audit_source, maximal_tasks
+from verify_frankl_fc_candidate import maximal_tasks
 from verify_lean_candidate import ROOT, LEAN, digest, revision, source_hashes
 from verify_line_size_candidate import check_sources, dependency_order
 
@@ -70,6 +70,62 @@ def private_nodes(modules):
     return result
 
 
+def audit_source(modules, required, private_nodes):
+    """Audit every owned declaration, retaining explicit theorem/node checks."""
+    imports = "\n".join("import all " + module for module in modules)
+    names = ",\n    ".join("`" + name for name in required)
+    private_names = ",\n    ".join(
+        "`" + name for names in private_nodes.values() for name in names)
+    owned = ",\n    ".join(json.dumps(module) for module in modules)
+    counts = json.dumps({module: len(names) for module, names in private_nodes.items()},
+                        sort_keys=True)
+    return f'''module
+{imports}
+import Lean.Util.CollectAxioms
+import Lean.PrivateName
+
+open Lean Elab Command in
+run_cmd do
+  let required : Array Name := #[{names}]
+  for name in required do
+    let info ← getConstInfo name
+    unless info.isTheorem do
+      throwError "Required endpoint is not a theorem: {{name}}"
+  let expectedPrivate : Array Name := #[{private_names}]
+  let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
+  let modules : Array String := #[{owned}]
+  let env ← getEnv
+  let mut count : Nat := 0
+  let mut ownedCount : Nat := 0
+  let mut seenPrivate : Array Name := #[]
+  for (name, info) in env.constants.toList do
+    let owned := match env.getModuleIdxFor? name |>.bind (env.header.modules[·]?) with
+      | some mod => modules.contains mod.module.toString
+      | none => false
+    if owned then
+      ownedCount := ownedCount + 1
+      if let .axiomInfo _ := info then
+        unless allowed.contains name do
+          throwError "Unapproved project axiom {{name}}"
+      if let .thmInfo _ := info then
+        count := count + 1
+        if let some userName := privateToUserName? name then
+          if expectedPrivate.contains userName then
+            seenPrivate := seenPrivate.push userName
+      for axiomName in ← collectAxioms name do
+        unless allowed.contains axiomName do
+          throwError "Unapproved axiom {{axiomName}} in {{name}}"
+  for name in expectedPrivate do
+    unless seenPrivate.contains name do
+      throwError "Missing private certificate theorem: {{name}}"
+  unless seenPrivate.size == expectedPrivate.size do
+    throwError "Private certificate theorem count mismatch"
+  logInfo m!"PASS: {{count}} project theorems audited; all {{expectedPrivate.size}} private certificate-node proofs visible; only standard logical axioms"
+  logInfo m!"PASS: {{ownedCount}} owned declarations audited transitively"
+  logInfo {json.dumps("Private certificate-node counts by module: " + counts)}
+'''
+
+
 def audit_exact_closure(modules, required, destination):
     nodes = private_nodes(modules)
     path = destination / "AxiomAudit.lean"
@@ -79,9 +135,13 @@ def audit_exact_closure(modules, required, destination):
     match = re.search(r"PASS: (\d+) project theorems audited; all (\d+) private "
                       r"certificate-node proofs visible", output)
     expected = sum(map(len, nodes.values()))
+    owned_match = re.search(r"PASS: (\d+) owned declarations audited transitively", output)
     if match is None or int(match[2]) != expected:
         raise RuntimeError("Missing exact private-proof visibility result")
+    if owned_match is None or int(owned_match[1]) < int(match[1]):
+        raise RuntimeError("Missing complete owned-declaration axiom audit")
     return {"project_modules": len(modules), "project_theorems": int(match[1]),
+            "owned_declarations_audited": int(owned_match[1]),
             "required_endpoints": len(required), "private_certificate_nodes_visible": expected,
             "new_private_certificate_nodes": 447, "explicit_import_all": True,
             "all_owned_declarations_audited": True, "audit_source_sha256": digest(path),
