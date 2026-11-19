@@ -1,0 +1,1451 @@
+{
+  "accepted_registry_changed": false,
+  "all_frozen_hashes_unchanged": true,
+  "artifact_sha256": {
+    "Conjectures.Loneliness": {
+      ".olean": "4e13edf11c42cd4d01ee6b692970cde34603fd7ef263cbd443775fe41e360307"
+    },
+    "Conjectures.LonelinessContinuity": {
+      ".olean": "5df8e58d7511f3fd3e51be7b051fc8437a3a11511f6dccf1cf8da127e4726862"
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      ".olean": "30d9e0468833b8eca771d4125313add10f1193a74297f2f5766fb0c5ddc2b37a"
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      ".olean": "437da03bd240cf3d6a32a15e877e312e77e2bf4653003815473983e173ac9dc8"
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      ".olean": "9f5aeda20bcc2a7fd3d58ec5053618e07fd079964d61ba5ca188cb7227fa2e43"
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      ".olean": "9d841dbdfb2e8ea44054e35aa8504f30d54f8cd1e583bda16d8c98277d5d8334"
+    },
+    "Conjectures.LonelinessModularWitness": {
+      ".olean": "2cf6204fd01e87d40012ff7dde7dcc893eb4742791c88b48979453450f82bbdd"
+    },
+    "Conjectures.LonelinessNormalization": {
+      ".olean": "2d352223e342561e911b526bbf93febf4c961867883682f191ebf0eda9c89c68"
+    },
+    "Conjectures.LonelinessRational": {
+      ".olean": "945c34917c2011b1fa83483163c423be6960f769809bcb768f210fc47ed0bb73"
+    },
+    "Conjectures.LonelinessTwoInsertions": {
+      ".olean": "0e92414522234c86005fa4ac3426d4c49da6aabe3a55143d9c9ac21df6f72a89"
+    },
+    "Conjectures.LonelinessTwoInsertionsAccelerationArithmetic": {
+      ".olean": "aefd9fb71a6c2c26404dd983b3c7c9b393af53183236845c194284888ad818ce"
+    },
+    "Conjectures.LonelinessTwoInsertionsAccelerations": {
+      ".olean": "3f476a5b3d7459d3589756852dcab973b9e7478aafe6be9a23ff4c87ba0758f4"
+    },
+    "Conjectures.LonelinessTwoInsertionsDivisibility": {
+      ".olean": "b440d53d8b9999111dad9a4bbee141a0aca36d698adfbc81c611c0fa9c3a112a"
+    },
+    "Conjectures.LonelinessTwoInsertionsInterval": {
+      ".olean": "b148e9c36f9e16634c4476bd27b961777a74faafdf4aa3e49cb37bf493a37b0d"
+    },
+    "Conjectures.LonelinessTwoInsertionsMeasure": {
+      ".olean": "9c73b3fac7922ae5fad7566ec072ff001aa40386581af10add0ac3ed6c7e9756"
+    },
+    "Conjectures.LonelinessTwoInsertionsObstruction": {
+      ".olean": "72c0417e299a191355d79b97992a6ee46820b675ecad1d71d0639a2366cdfea0"
+    },
+    "Conjectures.LonelinessTwoInsertionsRows": {
+      ".olean": "9a73c4025e287e700d9fa24d34e85bdf9c7af6958436be106450a87b00ed43b5"
+    },
+    "Conjectures.LonelinessTwoInsertionsShift": {
+      ".olean": "2059ad49e3fc6522cc3a509a8d199678e88c20f966664ca34b2b6e6ec2bcb3ac"
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall": {
+      ".olean": "6406e4c06a39570ea02cd2ad5e388fee57762f90330cb5b1edfca339166eb74a"
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall10": {
+      ".olean": "3143c6380cb18acdd9fc45b332b104977472e0422af66a4f1e7327b434e7e712"
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall3": {
+      ".olean": "b7b49ec3f3f156b7540464903bdab5ef3ea48b06f2296b2d7d7c6d5f5adee903"
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall4": {
+      ".olean": "c6cc0ed46537e4e73c16cf7a84cc334bf791ea4b331561547c6c5d15425e6d99"
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall5": {
+      ".olean": "c372cedd8458fc500bb79c1219e9668647d41131e51836bafe4143af18f5f1e2"
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall6": {
+      ".olean": "7d0a0b4ce0560e3ac3c84365510f029f544700692fdd14db210b0e7153bbd53b"
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall7": {
+      ".olean": "874dd8085986245f6796ab46fb0e5dfa4520128b95710aa45d996844384ebb48"
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall8": {
+      ".olean": "6adbbae0526666206cce8909a6fa1f04b56343cfd6a9d0b30c1d8bc1b8ba07dc"
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall9": {
+      ".olean": "4b9d805922fb6f374a0650951fd7e5fafcce6a9e821ea09d87bd44db5e351a4a"
+    }
+  },
+  "axiom_audit": {
+    "all_owned_declarations_audited": true,
+    "audit_source_sha256": "590ffc3eefbdf0e5fa5d2a487f740d1f5698c5f4f1326e5851c3169fa7b88b79",
+    "command": [
+      "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "-j1",
+      "-M4500",
+      "-DwarningAsError=true",
+      "TwoInsertionsAudit.lean"
+    ],
+    "declaration_inventory_sha256": "1a23fed382645045b38e268fa9b41144dd5c9cf69a232843eeaff2b709aa6116",
+    "exact_raw_private_visibility": true,
+    "exit_code": 0,
+    "explicit_import_all": true,
+    "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/all-owned-audit.log",
+    "log_sha256": "b027eddd1ec3acdc9ed9f3daa3daa9095704e297a9e82af0b832b92743c7e1a8",
+    "peak_rss_kib": 3143432,
+    "seconds": 6.526,
+    "summary": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 563,
+      "modules": 27,
+      "private_declarations": 11,
+      "raw_declarations": 563,
+      "required": 49,
+      "tag": "passed",
+      "theorems": 424
+    },
+    "system_seconds": 0.8258709999999999,
+    "timed_out": false,
+    "user_seconds": 5.657119
+  },
+  "axiom_whitelist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-two-insertions-exact.yml": "c7f2093a6e46a05485f978c358d45dafd9c4735c6f92a2d265853f6033412c9c",
+    "docs/two-insertions-exact-theorem-sources.json": "8068eee887645feedd3b07ffd085eca6cef601ac346947ad43e74bdad26a21b0",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+    "scripts/verify_two_insertions_exact.py": "140c43c209f4d9927854a377076f76e7f5fd3525d73f3f1a157152444ab314e9"
+  },
+  "git_commit": "9f51470529423e8135c08de881cd56f5b1fd9a95",
+  "kernel_checks": {
+    "Conjectures.Loneliness": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.Loneliness"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.Loneliness.kernel.log",
+      "log_sha256": "381ad3ff638b4f35804e7c2a204a14a82ab29219cf5cc060d045acc27b90eb28",
+      "peak_rss_kib": 1622108,
+      "replayed_modules": [
+        "Conjectures.Loneliness"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 4.930619,
+      "timed_out": false,
+      "user_seconds": 0.926364
+    },
+    "Conjectures.LonelinessContinuity": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessContinuity"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessContinuity.kernel.log",
+      "log_sha256": "7264f9eab09c0ab1a3907cf0cde588559b77d6c9ad68cc93e6cd9fbb7deef86e",
+      "peak_rss_kib": 1846744,
+      "replayed_modules": [
+        "Conjectures.LonelinessContinuity"
+      ],
+      "seconds": 6.015,
+      "system_seconds": 4.984705,
+      "timed_out": false,
+      "user_seconds": 0.9653619999999999
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalBase"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessCriticalBase.kernel.log",
+      "log_sha256": "0006fcc9df8f4040810ba1a8383d1636b283327a300f369e1dca3274ff0cebf2",
+      "peak_rss_kib": 1627320,
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalBase"
+      ],
+      "seconds": 6.015,
+      "system_seconds": 4.895443,
+      "timed_out": false,
+      "user_seconds": 0.9864839999999999
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalFamilies"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessCriticalFamilies.kernel.log",
+      "log_sha256": "89892e848696c1a257a3d6911b77edeee36bf34405de5eeba33538f061c1a830",
+      "peak_rss_kib": 1624448,
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalFamilies"
+      ],
+      "seconds": 6.015,
+      "system_seconds": 4.894343,
+      "timed_out": false,
+      "user_seconds": 0.893697
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalSecond"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessCriticalSecond.kernel.log",
+      "log_sha256": "96acec391f266c5b2c8aa6c1c440910f814eb5eeca124966bf44bbb6150f4923",
+      "peak_rss_kib": 1636076,
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalSecond"
+      ],
+      "seconds": 6.015,
+      "system_seconds": 4.952111,
+      "timed_out": false,
+      "user_seconds": 0.9086529999999999
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessFiveFamily"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessFiveFamily.kernel.log",
+      "log_sha256": "34a6f139b5b00907c71526d36b276ce6e9488a877c161d45ff5ec4260b65e3e2",
+      "peak_rss_kib": 1629124,
+      "replayed_modules": [
+        "Conjectures.LonelinessFiveFamily"
+      ],
+      "seconds": 6.035,
+      "system_seconds": 4.924754,
+      "timed_out": false,
+      "user_seconds": 1.012332
+    },
+    "Conjectures.LonelinessModularWitness": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessModularWitness"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessModularWitness.kernel.log",
+      "log_sha256": "215fe2f525ee3eefe932cbe865c83215dee95c3c14a0fabd8077fcb65c386f86",
+      "peak_rss_kib": 1850392,
+      "replayed_modules": [
+        "Conjectures.LonelinessModularWitness"
+      ],
+      "seconds": 6.05,
+      "system_seconds": 4.982396,
+      "timed_out": false,
+      "user_seconds": 1.033459
+    },
+    "Conjectures.LonelinessNormalization": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessNormalization"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessNormalization.kernel.log",
+      "log_sha256": "deb65bf8b90ba5b6087c39fa221a140877c5817d011e60d15d26982cdd0d782d",
+      "peak_rss_kib": 1622620,
+      "replayed_modules": [
+        "Conjectures.LonelinessNormalization"
+      ],
+      "seconds": 6.015,
+      "system_seconds": 4.896329,
+      "timed_out": false,
+      "user_seconds": 0.9011399999999999
+    },
+    "Conjectures.LonelinessRational": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRational"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessRational.kernel.log",
+      "log_sha256": "f11f5c56de63f1dedd0214b36fc04f2b4a14a4f9540134552e8b318d7b1f8c66",
+      "peak_rss_kib": 1846928,
+      "replayed_modules": [
+        "Conjectures.LonelinessRational"
+      ],
+      "seconds": 6.016,
+      "system_seconds": 5.029557,
+      "timed_out": false,
+      "user_seconds": 0.9141009999999999
+    },
+    "Conjectures.LonelinessTwoInsertions": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertions"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertions.kernel.log",
+      "log_sha256": "08f8e8d16b85100a3854f36feed613738883345d61cec5ff066d0299fee163c6",
+      "peak_rss_kib": 2766212,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertions"
+      ],
+      "seconds": 6.516,
+      "system_seconds": 5.206029,
+      "timed_out": false,
+      "user_seconds": 1.157117
+    },
+    "Conjectures.LonelinessTwoInsertionsAccelerationArithmetic": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsAccelerationArithmetic"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsAccelerationArithmetic.kernel.log",
+      "log_sha256": "c14dd0879f7c1bd52de32fea862f0dc1a64d8445714c487190ac79f440687614",
+      "peak_rss_kib": 1513924,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsAccelerationArithmetic"
+      ],
+      "seconds": 6.015,
+      "system_seconds": 4.8874130000000005,
+      "timed_out": false,
+      "user_seconds": 1.097419
+    },
+    "Conjectures.LonelinessTwoInsertionsAccelerations": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsAccelerations"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsAccelerations.kernel.log",
+      "log_sha256": "bb58b00524278e4e45e43dd26a0948ca1981c1364fb12de0257c644f675a03d5",
+      "peak_rss_kib": 2770648,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsAccelerations"
+      ],
+      "seconds": 6.517,
+      "system_seconds": 5.241758,
+      "timed_out": false,
+      "user_seconds": 1.182591
+    },
+    "Conjectures.LonelinessTwoInsertionsDivisibility": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsDivisibility"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsDivisibility.kernel.log",
+      "log_sha256": "7c7b5ad038e13e9767c807b057aa2343b243ecf66b04e092caa05d21d4622ca1",
+      "peak_rss_kib": 2764908,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsDivisibility"
+      ],
+      "seconds": 6.517,
+      "system_seconds": 5.221804,
+      "timed_out": false,
+      "user_seconds": 1.224485
+    },
+    "Conjectures.LonelinessTwoInsertionsInterval": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsInterval"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsInterval.kernel.log",
+      "log_sha256": "50fc44215ec328a9474932419fc57bf2ca628e90056fca8179c9e203c5534e48",
+      "peak_rss_kib": 1849436,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsInterval"
+      ],
+      "seconds": 6.015,
+      "system_seconds": 4.984269,
+      "timed_out": false,
+      "user_seconds": 1.009042
+    },
+    "Conjectures.LonelinessTwoInsertionsMeasure": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsMeasure"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsMeasure.kernel.log",
+      "log_sha256": "a2d7f8dac3d6595546d7ad237586eca9bdf6270be47d9ef36f5f007381923083",
+      "peak_rss_kib": 2763960,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsMeasure"
+      ],
+      "seconds": 6.517,
+      "system_seconds": 5.162282,
+      "timed_out": false,
+      "user_seconds": 1.218122
+    },
+    "Conjectures.LonelinessTwoInsertionsObstruction": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsObstruction"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsObstruction.kernel.log",
+      "log_sha256": "967b36da7bd44f877485d8e17a7b7f6496c1d44aa62fd9a8c67bf693655a2482",
+      "peak_rss_kib": 1853820,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsObstruction"
+      ],
+      "seconds": 6.023,
+      "system_seconds": 5.00923,
+      "timed_out": false,
+      "user_seconds": 0.96066
+    },
+    "Conjectures.LonelinessTwoInsertionsRows": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsRows"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsRows.kernel.log",
+      "log_sha256": "c4a636d94d6fe581b9d56393806863851f4363cf7be30e246dccedd2f1d8d5cb",
+      "peak_rss_kib": 1847840,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsRows"
+      ],
+      "seconds": 6.081,
+      "system_seconds": 4.995791,
+      "timed_out": false,
+      "user_seconds": 0.9943609999999999
+    },
+    "Conjectures.LonelinessTwoInsertionsShift": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsShift"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsShift.kernel.log",
+      "log_sha256": "a5e284a853d0aee5b1a536b6674f792c9278e3f148feb3f332d0342ac7e47f02",
+      "peak_rss_kib": 2776396,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsShift"
+      ],
+      "seconds": 6.517,
+      "system_seconds": 5.233569,
+      "timed_out": false,
+      "user_seconds": 1.232427
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsSmall"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall.kernel.log",
+      "log_sha256": "a86bf4e3d24ae29e174f45393403ffcad0f0ea880ca41f0dce4c4b73d73b3d7a",
+      "peak_rss_kib": 1848524,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsSmall"
+      ],
+      "seconds": 6.015,
+      "system_seconds": 5.002349,
+      "timed_out": false,
+      "user_seconds": 0.899523
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall10": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsSmall10"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall10.kernel.log",
+      "log_sha256": "b6e0aebe76dc6430248a7a2623786630749bcf884293524da3350f3ed80fbcfb",
+      "peak_rss_kib": 2058992,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsSmall10"
+      ],
+      "seconds": 7.269,
+      "system_seconds": 5.026568,
+      "timed_out": false,
+      "user_seconds": 2.060823
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall3": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsSmall3"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall3.kernel.log",
+      "log_sha256": "956865c8b51f6d784edd02d3c30314f9f4695d506fd13ea63f5ab3bf4a902e7d",
+      "peak_rss_kib": 1888920,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsSmall3"
+      ],
+      "seconds": 6.265,
+      "system_seconds": 5.008455,
+      "timed_out": false,
+      "user_seconds": 1.110435
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall4": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsSmall4"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall4.kernel.log",
+      "log_sha256": "2b8199679e29f81a191ea73839f8949cdde5167cc051486a702709210c426092",
+      "peak_rss_kib": 1889004,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsSmall4"
+      ],
+      "seconds": 6.264,
+      "system_seconds": 5.096656,
+      "timed_out": false,
+      "user_seconds": 1.035727
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall5": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsSmall5"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall5.kernel.log",
+      "log_sha256": "5248c00678ba9fcb017241d5ded4a082aa3601a4072378dfa00ff96e8cf7293c",
+      "peak_rss_kib": 1899212,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsSmall5"
+      ],
+      "seconds": 6.303,
+      "system_seconds": 5.022999,
+      "timed_out": false,
+      "user_seconds": 1.108337
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall6": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsSmall6"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall6.kernel.log",
+      "log_sha256": "f7785a5314f084e46be8b38d089afc1ad693488301c3e9a1824ea92ef1e073d6",
+      "peak_rss_kib": 1918500,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsSmall6"
+      ],
+      "seconds": 6.331,
+      "system_seconds": 4.960342,
+      "timed_out": false,
+      "user_seconds": 1.257579
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall7": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsSmall7"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall7.kernel.log",
+      "log_sha256": "fe001d89cd74f64e991bdf5dd50472744dda62dc800c222a13651b3adc940b4f",
+      "peak_rss_kib": 1942180,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsSmall7"
+      ],
+      "seconds": 6.517,
+      "system_seconds": 4.995999,
+      "timed_out": false,
+      "user_seconds": 1.365453
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall8": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsSmall8"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall8.kernel.log",
+      "log_sha256": "85f336c36763d20ccc6b13f8d35408ee42c39c7fd5ca6996b9eca8f691815ddb",
+      "peak_rss_kib": 1970852,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsSmall8"
+      ],
+      "seconds": 6.767,
+      "system_seconds": 4.998102,
+      "timed_out": false,
+      "user_seconds": 1.5451039999999998
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall9": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessTwoInsertionsSmall9"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall9.kernel.log",
+      "log_sha256": "9e876eb06923d1f81244b192b8a4e4f8601144cc6e0e9c636102e51b520ad7e9",
+      "peak_rss_kib": 2007740,
+      "replayed_modules": [
+        "Conjectures.LonelinessTwoInsertionsSmall9"
+      ],
+      "seconds": 6.767,
+      "system_seconds": 4.976123,
+      "timed_out": false,
+      "user_seconds": 1.64004
+    }
+  },
+  "kernel_replay": {
+    "all_modules_replayed_as_targets": true,
+    "exact_project_closure": true,
+    "fresh_process_per_module": true,
+    "peak_rss_kib": 2776396,
+    "replayed_modules": [
+      "Conjectures.Loneliness",
+      "Conjectures.LonelinessTwoInsertionsAccelerationArithmetic",
+      "Conjectures.LonelinessContinuity",
+      "Conjectures.LonelinessFiveFamily",
+      "Conjectures.LonelinessRational",
+      "Conjectures.LonelinessCriticalBase",
+      "Conjectures.LonelinessCriticalSecond",
+      "Conjectures.LonelinessTwoInsertionsInterval",
+      "Conjectures.LonelinessModularWitness",
+      "Conjectures.LonelinessCriticalFamilies",
+      "Conjectures.LonelinessTwoInsertionsMeasure",
+      "Conjectures.LonelinessTwoInsertionsObstruction",
+      "Conjectures.LonelinessTwoInsertionsRows",
+      "Conjectures.LonelinessNormalization",
+      "Conjectures.LonelinessTwoInsertionsDivisibility",
+      "Conjectures.LonelinessTwoInsertionsSmall10",
+      "Conjectures.LonelinessTwoInsertionsSmall3",
+      "Conjectures.LonelinessTwoInsertionsSmall4",
+      "Conjectures.LonelinessTwoInsertionsSmall5",
+      "Conjectures.LonelinessTwoInsertionsSmall6",
+      "Conjectures.LonelinessTwoInsertionsSmall7",
+      "Conjectures.LonelinessTwoInsertionsSmall8",
+      "Conjectures.LonelinessTwoInsertionsSmall9",
+      "Conjectures.LonelinessTwoInsertionsShift",
+      "Conjectures.LonelinessTwoInsertionsSmall",
+      "Conjectures.LonelinessTwoInsertions",
+      "Conjectures.LonelinessTwoInsertionsAccelerations"
+    ],
+    "seconds": 169.408
+  },
+  "kernel_threads": 1,
+  "modern_modules": {
+    "Conjectures.Loneliness": false,
+    "Conjectures.LonelinessContinuity": false,
+    "Conjectures.LonelinessCriticalBase": false,
+    "Conjectures.LonelinessCriticalFamilies": false,
+    "Conjectures.LonelinessCriticalSecond": false,
+    "Conjectures.LonelinessFiveFamily": false,
+    "Conjectures.LonelinessModularWitness": false,
+    "Conjectures.LonelinessNormalization": false,
+    "Conjectures.LonelinessRational": false,
+    "Conjectures.LonelinessTwoInsertions": false,
+    "Conjectures.LonelinessTwoInsertionsAccelerationArithmetic": false,
+    "Conjectures.LonelinessTwoInsertionsAccelerations": false,
+    "Conjectures.LonelinessTwoInsertionsDivisibility": false,
+    "Conjectures.LonelinessTwoInsertionsInterval": false,
+    "Conjectures.LonelinessTwoInsertionsMeasure": false,
+    "Conjectures.LonelinessTwoInsertionsObstruction": false,
+    "Conjectures.LonelinessTwoInsertionsRows": false,
+    "Conjectures.LonelinessTwoInsertionsShift": false,
+    "Conjectures.LonelinessTwoInsertionsSmall": false,
+    "Conjectures.LonelinessTwoInsertionsSmall10": false,
+    "Conjectures.LonelinessTwoInsertionsSmall3": false,
+    "Conjectures.LonelinessTwoInsertionsSmall4": false,
+    "Conjectures.LonelinessTwoInsertionsSmall5": false,
+    "Conjectures.LonelinessTwoInsertionsSmall6": false,
+    "Conjectures.LonelinessTwoInsertionsSmall7": false,
+    "Conjectures.LonelinessTwoInsertionsSmall8": false,
+    "Conjectures.LonelinessTwoInsertionsSmall9": false
+  },
+  "original_theorem_scope_checked": true,
+  "project_modules": [
+    "Conjectures.Loneliness",
+    "Conjectures.LonelinessTwoInsertionsAccelerationArithmetic",
+    "Conjectures.LonelinessContinuity",
+    "Conjectures.LonelinessFiveFamily",
+    "Conjectures.LonelinessRational",
+    "Conjectures.LonelinessCriticalBase",
+    "Conjectures.LonelinessCriticalSecond",
+    "Conjectures.LonelinessTwoInsertionsInterval",
+    "Conjectures.LonelinessModularWitness",
+    "Conjectures.LonelinessCriticalFamilies",
+    "Conjectures.LonelinessTwoInsertionsMeasure",
+    "Conjectures.LonelinessTwoInsertionsObstruction",
+    "Conjectures.LonelinessTwoInsertionsRows",
+    "Conjectures.LonelinessNormalization",
+    "Conjectures.LonelinessTwoInsertionsDivisibility",
+    "Conjectures.LonelinessTwoInsertionsSmall10",
+    "Conjectures.LonelinessTwoInsertionsSmall3",
+    "Conjectures.LonelinessTwoInsertionsSmall4",
+    "Conjectures.LonelinessTwoInsertionsSmall5",
+    "Conjectures.LonelinessTwoInsertionsSmall6",
+    "Conjectures.LonelinessTwoInsertionsSmall7",
+    "Conjectures.LonelinessTwoInsertionsSmall8",
+    "Conjectures.LonelinessTwoInsertionsSmall9",
+    "Conjectures.LonelinessTwoInsertionsShift",
+    "Conjectures.LonelinessTwoInsertionsSmall",
+    "Conjectures.LonelinessTwoInsertions",
+    "Conjectures.LonelinessTwoInsertionsAccelerations"
+  ],
+  "required_theorems": [
+    "Loneliness.TwoInsertions.exists_good_on_interval",
+    "Loneliness.TwoInsertions.IntervalCertificate.good",
+    "Loneliness.TwoInsertions.IntervalCertificate.unbounded_second",
+    "Loneliness.TwoInsertions.PairCertificate.sound",
+    "Loneliness.TwoInsertions.BaseRow.sound",
+    "Loneliness.TwoInsertions.checked_rows_sound",
+    "Loneliness.TwoInsertions.small_bounded_window",
+    "Loneliness.TwoInsertions.Small3.rows_checked",
+    "Loneliness.TwoInsertions.Small4.rows_checked",
+    "Loneliness.TwoInsertions.Small5.rows_checked",
+    "Loneliness.TwoInsertions.Small6.rows_checked",
+    "Loneliness.TwoInsertions.Small7.rows_checked",
+    "Loneliness.TwoInsertions.Small8.rows_checked",
+    "Loneliness.TwoInsertions.Small9.rows_checked",
+    "Loneliness.TwoInsertions.Small10.rows_checked",
+    "Loneliness.TwoInsertions.periodic_integral_upper",
+    "Loneliness.TwoInsertions.badIndicator_integral_one",
+    "Loneliness.TwoInsertions.speed_bad_integral_bound",
+    "Loneliness.TwoInsertions.two_speed_interval_of_length",
+    "Loneliness.TwoInsertions.window_of_measure",
+    "Loneliness.TwoInsertions.reciprocal_residue_lower",
+    "Loneliness.TwoInsertions.failed_endpoints_divisibility",
+    "Loneliness.TwoInsertions.common_divisors_product_bound",
+    "Loneliness.TwoInsertions.failed_endpoints_large_second",
+    "Loneliness.TwoInsertions.divisor_eq_below_twice",
+    "Loneliness.TwoInsertions.large_first_measure_bound",
+    "Loneliness.TwoInsertions.window_above_small_bound",
+    "Loneliness.TwoInsertions.central_speed_window",
+    "Loneliness.TwoInsertions.shifted_left_window",
+    "Loneliness.TwoInsertions.noncentral_divisibility_bound",
+    "Loneliness.TwoInsertions.large_parameter_window",
+    "Loneliness.TwoInsertions.two_speed_window_sorted",
+    "Loneliness.TwoInsertions.two_speed_window",
+    "Loneliness.TwoInsertions.insertion_for_interval_base",
+    "Loneliness.TwoInsertions.insertion_value_lower",
+    "Loneliness.TwoInsertions.exists_coprime_in_block",
+    "Loneliness.TwoInsertions.exists_coprime_near_half",
+    "Loneliness.TwoInsertions.AccelerationGap.sandwich",
+    "Loneliness.TwoInsertions.AccelerationGap.twice_mul_le",
+    "Loneliness.TwoInsertions.AccelerationGap.accelerated_cell",
+    "Loneliness.TwoInsertions.acceleration_cell_bounds",
+    "Loneliness.TwoInsertions.accelerated_speed_good",
+    "Loneliness.TwoInsertions.acceleratedBase_good",
+    "Loneliness.TwoInsertions.goddyn_wong_two_insertions",
+    "Loneliness.TwoInsertions.goddyn_wong_insertion_value",
+    "Loneliness.TwoInsertions.dilated_goddyn_wong_insertion_value",
+    "Loneliness.TwoInsertions.three_speed_interval_upper",
+    "Loneliness.TwoInsertions.three_speed_interval_obstruction",
+    "Loneliness.TwoInsertions.five_speed_outside_witness"
+  ],
+  "roots": [
+    "Conjectures.LonelinessTwoInsertionsAccelerations",
+    "Conjectures.LonelinessTwoInsertionsObstruction"
+  ],
+  "schema": "two-insertions-exact-theorem-receipt-v1",
+  "scope": "For every natural p at least3 and every two positive integer speeds, a real time in[1/(p+2),1/p] has both clearances at least1/(p+2); insertion into every interval-good base, the stated Goddyn-Wong acceleration criterion and dilation, all small and unbounded branches, and the literal three-insertion obstruction with an outside witness.",
+  "source_checks": {
+    "Conjectures.Loneliness": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/Loneliness.olean",
+        "Conjectures/Loneliness.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.Loneliness.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1921356,
+      "seconds": 2.005,
+      "system_seconds": 0.475651,
+      "timed_out": false,
+      "user_seconds": 1.406883
+    },
+    "Conjectures.LonelinessContinuity": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessContinuity.olean",
+        "Conjectures/LonelinessContinuity.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessContinuity.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2140444,
+      "seconds": 1.504,
+      "system_seconds": 0.532689,
+      "timed_out": false,
+      "user_seconds": 0.862497
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessCriticalBase.olean",
+        "Conjectures/LonelinessCriticalBase.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessCriticalBase.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1922448,
+      "seconds": 3.543,
+      "system_seconds": 0.47382199999999997,
+      "timed_out": false,
+      "user_seconds": 2.868922
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessCriticalFamilies.olean",
+        "Conjectures/LonelinessCriticalFamilies.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessCriticalFamilies.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1898956,
+      "seconds": 1.504,
+      "system_seconds": 0.453422,
+      "timed_out": false,
+      "user_seconds": 0.90084
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessCriticalSecond.olean",
+        "Conjectures/LonelinessCriticalSecond.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessCriticalSecond.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1935708,
+      "seconds": 5.065,
+      "system_seconds": 0.49610499999999996,
+      "timed_out": false,
+      "user_seconds": 4.515957
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessFiveFamily.olean",
+        "Conjectures/LonelinessFiveFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessFiveFamily.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1929636,
+      "seconds": 4.538,
+      "system_seconds": 0.48766499999999996,
+      "timed_out": false,
+      "user_seconds": 3.944294
+    },
+    "Conjectures.LonelinessModularWitness": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessModularWitness.olean",
+        "Conjectures/LonelinessModularWitness.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessModularWitness.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2151552,
+      "seconds": 2.005,
+      "system_seconds": 0.53772,
+      "timed_out": false,
+      "user_seconds": 1.272337
+    },
+    "Conjectures.LonelinessNormalization": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessNormalization.olean",
+        "Conjectures/LonelinessNormalization.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessNormalization.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1907804,
+      "seconds": 1.504,
+      "system_seconds": 0.448287,
+      "timed_out": false,
+      "user_seconds": 0.99864
+    },
+    "Conjectures.LonelinessRational": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessRational.olean",
+        "Conjectures/LonelinessRational.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessRational.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2128428,
+      "seconds": 1.504,
+      "system_seconds": 0.51518,
+      "timed_out": false,
+      "user_seconds": 0.8072819999999999
+    },
+    "Conjectures.LonelinessTwoInsertions": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertions.olean",
+        "Conjectures/LonelinessTwoInsertions.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertions.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3122028,
+      "seconds": 2.005,
+      "system_seconds": 0.772698,
+      "timed_out": false,
+      "user_seconds": 1.145035
+    },
+    "Conjectures.LonelinessTwoInsertionsAccelerationArithmetic": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsAccelerationArithmetic.olean",
+        "Conjectures/LonelinessTwoInsertionsAccelerationArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsAccelerationArithmetic.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1802216,
+      "seconds": 3.021,
+      "system_seconds": 0.44108899999999995,
+      "timed_out": false,
+      "user_seconds": 2.5165129999999998
+    },
+    "Conjectures.LonelinessTwoInsertionsAccelerations": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsAccelerations.olean",
+        "Conjectures/LonelinessTwoInsertionsAccelerations.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsAccelerations.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3135200,
+      "seconds": 2.757,
+      "system_seconds": 0.7712359999999999,
+      "timed_out": false,
+      "user_seconds": 1.92959
+    },
+    "Conjectures.LonelinessTwoInsertionsDivisibility": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsDivisibility.olean",
+        "Conjectures/LonelinessTwoInsertionsDivisibility.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsDivisibility.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3138000,
+      "seconds": 3.76,
+      "system_seconds": 0.767674,
+      "timed_out": false,
+      "user_seconds": 2.866784
+    },
+    "Conjectures.LonelinessTwoInsertionsInterval": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsInterval.olean",
+        "Conjectures/LonelinessTwoInsertionsInterval.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsInterval.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2166520,
+      "seconds": 2.757,
+      "system_seconds": 0.5472239999999999,
+      "timed_out": false,
+      "user_seconds": 2.0528399999999998
+    },
+    "Conjectures.LonelinessTwoInsertionsMeasure": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsMeasure.olean",
+        "Conjectures/LonelinessTwoInsertionsMeasure.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsMeasure.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3146016,
+      "seconds": 3.258,
+      "system_seconds": 0.776069,
+      "timed_out": false,
+      "user_seconds": 2.277205
+    },
+    "Conjectures.LonelinessTwoInsertionsObstruction": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsObstruction.olean",
+        "Conjectures/LonelinessTwoInsertionsObstruction.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsObstruction.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2161224,
+      "seconds": 2.506,
+      "system_seconds": 0.52445,
+      "timed_out": false,
+      "user_seconds": 1.899633
+    },
+    "Conjectures.LonelinessTwoInsertionsRows": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsRows.olean",
+        "Conjectures/LonelinessTwoInsertionsRows.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsRows.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2140692,
+      "seconds": 1.504,
+      "system_seconds": 0.545434,
+      "timed_out": false,
+      "user_seconds": 0.831661
+    },
+    "Conjectures.LonelinessTwoInsertionsShift": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsShift.olean",
+        "Conjectures/LonelinessTwoInsertionsShift.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsShift.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3157124,
+      "seconds": 8.563,
+      "system_seconds": 0.81675,
+      "timed_out": false,
+      "user_seconds": 7.740635
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsSmall.olean",
+        "Conjectures/LonelinessTwoInsertionsSmall.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2134912,
+      "seconds": 1.253,
+      "system_seconds": 0.5170399999999999,
+      "timed_out": false,
+      "user_seconds": 0.7180559999999999
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall10": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsSmall10.olean",
+        "Conjectures/LonelinessTwoInsertionsSmall10.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall10.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2345216,
+      "seconds": 2.757,
+      "system_seconds": 0.543132,
+      "timed_out": false,
+      "user_seconds": 1.9924870000000001
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall3": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsSmall3.olean",
+        "Conjectures/LonelinessTwoInsertionsSmall3.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall3.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2168664,
+      "seconds": 1.755,
+      "system_seconds": 0.522205,
+      "timed_out": false,
+      "user_seconds": 1.0154
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall4": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsSmall4.olean",
+        "Conjectures/LonelinessTwoInsertionsSmall4.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall4.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2168580,
+      "seconds": 1.755,
+      "system_seconds": 0.522809,
+      "timed_out": false,
+      "user_seconds": 0.9946379999999999
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall5": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsSmall5.olean",
+        "Conjectures/LonelinessTwoInsertionsSmall5.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall5.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2182984,
+      "seconds": 1.755,
+      "system_seconds": 0.510092,
+      "timed_out": false,
+      "user_seconds": 1.044188
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall6": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsSmall6.olean",
+        "Conjectures/LonelinessTwoInsertionsSmall6.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall6.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2201200,
+      "seconds": 1.755,
+      "system_seconds": 0.540814,
+      "timed_out": false,
+      "user_seconds": 1.123613
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall7": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsSmall7.olean",
+        "Conjectures/LonelinessTwoInsertionsSmall7.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall7.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2224080,
+      "seconds": 2.005,
+      "system_seconds": 0.5498649999999999,
+      "timed_out": false,
+      "user_seconds": 1.258691
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall8": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsSmall8.olean",
+        "Conjectures/LonelinessTwoInsertionsSmall8.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall8.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2254960,
+      "seconds": 2.256,
+      "system_seconds": 0.5411659999999999,
+      "timed_out": false,
+      "user_seconds": 1.476454
+    },
+    "Conjectures.LonelinessTwoInsertionsSmall9": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/lib/lean/Conjectures/LonelinessTwoInsertionsSmall9.olean",
+        "Conjectures/LonelinessTwoInsertionsSmall9.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/two-insertions-exact/logs/Conjectures.LonelinessTwoInsertionsSmall9.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2291904,
+      "seconds": 2.256,
+      "system_seconds": 0.530579,
+      "timed_out": false,
+      "user_seconds": 1.6768299999999998
+    }
+  },
+  "source_policy": {
+    "fresh_project_objects": true,
+    "linter_override": false,
+    "warning_as_error": true
+  },
+  "source_sha256": {
+    "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+    "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+    "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+    "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+    "Conjectures.LonelinessModularWitness": "c5329d2e079f6d04d0079ab3fe90d814d1f3393b2381c74be6375ce091b569fb",
+    "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+    "Conjectures.LonelinessRational": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
+    "Conjectures.LonelinessTwoInsertions": "0ac89d9a9baa249ffdfe813dda283c3cfb67eacdc9f1b87f09917f4799c203b3",
+    "Conjectures.LonelinessTwoInsertionsAccelerationArithmetic": "4b47f6785a30bcfaa08d398282a23dc6f4dbd78398bd9ea458ab8170c80be788",
+    "Conjectures.LonelinessTwoInsertionsAccelerations": "1e8185684fab6e0f690b50e4c812df68cc5160a4cf7154928865fc6830fa889c",
+    "Conjectures.LonelinessTwoInsertionsDivisibility": "4a5bc913560747978092f429731057aaa5178cefa3c420cb95cc5d5e670ca303",
+    "Conjectures.LonelinessTwoInsertionsInterval": "baa346b226ff68d85446920bc5f8ee1761d9c5321adf492d0e906261d4348012",
+    "Conjectures.LonelinessTwoInsertionsMeasure": "08e1d7447b8a8249c9369a63674142eb1adc379055c9071371d0baec71bdb744",
+    "Conjectures.LonelinessTwoInsertionsObstruction": "e9c6028ebdd793a1d0269e49bef77776572d873206d85a2c848ee44352d2624b",
+    "Conjectures.LonelinessTwoInsertionsRows": "dafe34ed14e1d36cecd7033d1dbc2a03b5142b8b43f18d010194ba9fcb2224e4",
+    "Conjectures.LonelinessTwoInsertionsShift": "a2e6e690296d237171da03f020328a4950738c11b1694000b5cbe56395b2930d",
+    "Conjectures.LonelinessTwoInsertionsSmall": "b701ee2fd5a09d66720857eacf82d96931b96475262436a09eeb099b22cd24b1",
+    "Conjectures.LonelinessTwoInsertionsSmall10": "8d54063320585363a60c8d7e352b8c7d0f431d311f248f11a2158aa535ab64bb",
+    "Conjectures.LonelinessTwoInsertionsSmall3": "7d9bd210d2b2318667eb6429cc8c8d86364f9e095bc24f1c1712aa0a640350e6",
+    "Conjectures.LonelinessTwoInsertionsSmall4": "a06bbbd6300beb5b1dc67a39220fc36a765c329edafec113aef663c5668a58e8",
+    "Conjectures.LonelinessTwoInsertionsSmall5": "42ce610004a26d5d24099ae2dcffcb7802848e6df66787da146962e6e3440ae7",
+    "Conjectures.LonelinessTwoInsertionsSmall6": "8b6fd71a926cf56b4f2755a8832f98cbf989bfac8c1b098d5ee13decf90746fb",
+    "Conjectures.LonelinessTwoInsertionsSmall7": "ad6472397f319102533cdd016673d84110f424a4caee28abe782a74a9b68d11f",
+    "Conjectures.LonelinessTwoInsertionsSmall8": "8db35bfcacd2d69b8f2b4e8e0b57e5b9e02a1a257e3e8d8c6be90cd8e7ba4cac",
+    "Conjectures.LonelinessTwoInsertionsSmall9": "867d2efa857c86fbee211823df9a3bf99f72b444897a1848bb4c3bf588592c44"
+  },
+  "source_workers": 1,
+  "status": "passed",
+  "toolchain": {
+    "checker_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+    "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "lean_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)"
+  }
+}
