@@ -1,8 +1,5 @@
 # Solved conjectures in combinatorics and number theory
 
-[![Lean proofs and certificates](https://github.com/1337isnot1337/solved-conjectures/actions/workflows/lean.yml/badge.svg?branch=main)](https://github.com/1337isnot1337/solved-conjectures/actions/workflows/lean.yml?query=branch%3Amain)
-[![Computational verification](https://github.com/1337isnot1337/solved-conjectures/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/1337isnot1337/solved-conjectures/actions/workflows/verify.yml?query=branch%3Amain)
-
 Mathematical proofs, counterexamples, and partial results in combinatorics, number theory, graph theory, and discrete geometry. Includes Lean 4 formalizations and reproducible verification code.
 
 These notes are unrefereed. Computational checks and Lean verification are distinct from peer review and priority claims.
