@@ -1,0 +1,131 @@
+name: Lean length-1197 common multiplier bound
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'lean/Conjectures/HadamardQuotient133*.lean'
+      - 'lean/Conjectures/HadamardLegendre*.lean'
+      - 'lean/Conjectures/HadamardAutomorphismArithmeticBasic.lean'
+      - 'lean/Conjectures/HadamardAutomorphismFourier.lean'
+      - 'lean/Conjectures/HadamardBorderCompression.lean'
+      - 'lean/Conjectures/HadamardBorderNormalizationTransportOps.lean'
+      - 'lean/Conjectures/HadamardBorderSymmetryPrime.lean'
+      - '.github/workflows/lean-hadamard-legendre-bound.yml'
+      - '.github/workflows/lean-hadamard-quotient133-candidates.yml'
+      - 'docs/hadamard-legendre-bound-sources.json'
+      - 'lean/lake-manifest.json'
+      - 'lean/lakefile.toml'
+      - 'lean/lean-toolchain'
+      - 'results/hadamard-2396/PROOF.md'
+      - 'results/hadamard-2396/audit.py'
+      - 'results/hadamard-2396/quotient133.cpp'
+      - 'results/hadamard-2396/quotient133.pairs'
+      - 'scripts/audit_lean_all_owned.py'
+      - 'scripts/audit_lean_raw_occurrences.py'
+      - 'scripts/build_lean_parallel.py'
+      - 'scripts/generate_hadamard_quotient133.mjs'
+      - 'scripts/plan_accepted_lean.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - 'scripts/test_hadamard_legendre_bound.py'
+      - 'scripts/test_hadamard_quotient133_staged.py'
+      - 'scripts/verify_frankl_orbit_batches.py'
+      - 'scripts/verify_hadamard_legendre_bound.py'
+      - 'scripts/verify_hadamard_quotient133_candidate.py'
+      - 'scripts/verify_hadamard_quotient133_staged.py'
+      - 'scripts/verify_lean_candidate.py'
+  pull_request:
+    paths:
+      - 'lean/Conjectures/HadamardQuotient133*.lean'
+      - 'lean/Conjectures/HadamardLegendre*.lean'
+      - 'lean/Conjectures/HadamardAutomorphismArithmeticBasic.lean'
+      - 'lean/Conjectures/HadamardAutomorphismFourier.lean'
+      - 'lean/Conjectures/HadamardBorderCompression.lean'
+      - 'lean/Conjectures/HadamardBorderNormalizationTransportOps.lean'
+      - 'lean/Conjectures/HadamardBorderSymmetryPrime.lean'
+      - '.github/workflows/lean-hadamard-legendre-bound.yml'
+      - '.github/workflows/lean-hadamard-quotient133-candidates.yml'
+      - 'docs/hadamard-legendre-bound-sources.json'
+      - 'lean/lake-manifest.json'
+      - 'lean/lakefile.toml'
+      - 'lean/lean-toolchain'
+      - 'results/hadamard-2396/PROOF.md'
+      - 'results/hadamard-2396/audit.py'
+      - 'results/hadamard-2396/quotient133.cpp'
+      - 'results/hadamard-2396/quotient133.pairs'
+      - 'scripts/audit_lean_all_owned.py'
+      - 'scripts/audit_lean_raw_occurrences.py'
+      - 'scripts/build_lean_parallel.py'
+      - 'scripts/generate_hadamard_quotient133.mjs'
+      - 'scripts/plan_accepted_lean.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - 'scripts/test_hadamard_legendre_bound.py'
+      - 'scripts/test_hadamard_quotient133_staged.py'
+      - 'scripts/verify_frankl_orbit_batches.py'
+      - 'scripts/verify_hadamard_legendre_bound.py'
+      - 'scripts/verify_hadamard_quotient133_candidate.py'
+      - 'scripts/verify_hadamard_quotient133_staged.py'
+      - 'scripts/verify_lean_candidate.py'
+
+permissions:
+  contents: read
+  actions: read
+
+env:
+  LEAN_NUM_THREADS: '1'
+  UV_USE_IO_URING: '0'
+
+jobs:
+  plan:
+    name: Check bound model and finite dependency readiness
+    runs-on: ubuntu-latest
+    outputs:
+      selected: ${{ steps.plan.outputs.selected }}
+      artifact_id: ${{ steps.plan.outputs.artifact_id }}
+      run_id: ${{ steps.plan.outputs.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check fail-closed evidence and source-coverage controls
+        run: python3 scripts/test_hadamard_legendre_bound.py
+      - id: plan
+        run: python3 scripts/verify_hadamard_legendre_bound.py --plan-ci
+
+  verify:
+    name: Original Legendre-pair multiplier bound
+    needs: plan
+    if: needs.plan.outputs.selected == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ needs.plan.outputs.artifact_id }}
+          github-token: ${{ github.token }}
+          run-id: ${{ needs.plan.outputs.run_id }}
+          path: .candidate-inputs/hadamard-finite
+          merge-multiple: true
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Authenticate finite evidence, check remaining sources, audit and replay the full closure
+        run: python3 scripts/verify_hadamard_legendre_bound.py .candidate-inputs/hadamard-finite
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hadamard-legendre-bound-evidence
+          path: .candidate-artifacts/hadamard-legendre-bound/
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14
