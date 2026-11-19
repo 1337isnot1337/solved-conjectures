@@ -72,7 +72,7 @@
     "Conjectures.FranklSpanFourGraphPairCheck031": "5293a929aa41b9df7779032a1c90d5c09be377aa7d3caab248dd0c9518e323e4",
     "Conjectures.FranklSpanFourGraphPairCheck032": "3b7b7bdf0e9ecae4f040779125f0952c892bef081e3bb028a61ad12cde9d7f01",
     "Conjectures.FranklSpanFourGraphPairCheck033": "1f621ca270a1901899049e6d4f70e90b7e3a0ce59cd05a99e2a85e40a6b877ab",
-    "Conjectures.FranklSpanFourGraphPairRank": "0670737cfe71333ff790f5f04e0db06a6e4d54833cf3df9fea5917ce3ab9aa85",
+    "Conjectures.FranklSpanFourGraphPairRank": "21ca5632ad5610e4f16b55b308d978768f00d6f3fcf50fa3952a26add1add235",
     "Conjectures.FranklSpanFourGraphPartition": "71db103a5d48501696f4d63573dde90c0a3c9f796729ade979841f663398dedd",
     "Conjectures.FranklSpanFourGraphPartitionCheck000": "5a8c3deb56a740a76195338607a1471bc5ed322f18a4f3169f721677eb4cf423",
     "Conjectures.FranklSpanFourGraphPartitionCheck001": "d38d63e2a1d4b4d4ec2a50e73c86daeed910fd029a342dc60d2c6a63161db59e",
@@ -203,7 +203,7 @@
     "FranklSpanFourGraphPairCheck031.lean": "5293a929aa41b9df7779032a1c90d5c09be377aa7d3caab248dd0c9518e323e4",
     "FranklSpanFourGraphPairCheck032.lean": "3b7b7bdf0e9ecae4f040779125f0952c892bef081e3bb028a61ad12cde9d7f01",
     "FranklSpanFourGraphPairCheck033.lean": "1f621ca270a1901899049e6d4f70e90b7e3a0ce59cd05a99e2a85e40a6b877ab",
-    "FranklSpanFourGraphPairRank.lean": "0670737cfe71333ff790f5f04e0db06a6e4d54833cf3df9fea5917ce3ab9aa85",
+    "FranklSpanFourGraphPairRank.lean": "21ca5632ad5610e4f16b55b308d978768f00d6f3fcf50fa3952a26add1add235",
     "FranklSpanFourGraphResidualCheck000.lean": "bb5ccf7ab793c95afae24a663cde103928c18c7fc4301c17d322de357f33ff4e",
     "FranklSpanFourGraphResidualCheck001.lean": "ce868d73a89e89ee8bd000fe72c4631c305de95a7e7ff6dabda816380df05a9e",
     "FranklSpanFourGraphResidualCheck002.lean": "c35f0b62df82b6f793e05e818bba93bb525c47a4c393c449a4adf3db1ef0f129",
@@ -866,7 +866,7 @@
     "scripts/verify_frankl_graph_pilot.py": "6ab5c1056d423a783cdc58d140ed1db421c0b1f7999f3824ccf0520375198c8d",
     "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
     "results/frankl-generator-families/generate_span_four_graph_certificate.py": "95048db4ac801b97ab4edde75997e75ea931ff00de5efc4597a86478c317ece2",
-    "results/frankl-generator-families/generate_span_four_full_graph_lean.py": "4a3a259afe571f1f6c2f7df48f33eeeb3f99933d037b7185c6934ca5e6fbb941"
+    "results/frankl-generator-families/generate_span_four_full_graph_lean.py": "8e369b5aa243f13bcfaaff8b41b5bc86631863408a8b795d5136385d0fd70693"
   },
   "producer_layout": {
     "table_modules": [

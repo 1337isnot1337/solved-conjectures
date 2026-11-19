@@ -76,7 +76,10 @@ theorem pair_rank_codes_checked :
 theorem pair_rank_checked :
     FranklCyclic.rankListCheck (edges.map Assembly.edge)
       (fun e => decide (Assembly.sevenOfEdge e ∈ recurrent)) rankPair = true := by
-  simpa only [edges, recurrent, left4, rankPair, ← canonicalRows_decoded] using
+  change FranklCyclic.rankListCheck (edges.map Assembly.edge)
+    (fun e => decide (Assembly.sevenOfEdge e ∈ recurrent))
+    (fun v => pairRanks.get (wordCode v)) = true
+  simpa only [edges, recurrent, left4, ← canonicalRows_decoded] using
     rankCodeCheck_seven_partition pair_rank_codes_checked retained_partition_checked
 
 end FranklSpanFour.Graph.Certificate
