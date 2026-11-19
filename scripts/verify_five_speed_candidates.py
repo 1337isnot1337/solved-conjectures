@@ -31,10 +31,15 @@ TASKS = {
         ["Loneliness.FiveSpeedCertificate.ScalarMasks.P53.sound",
          "Loneliness.FiveSpeedCertificate.PlaneFibers.M8P53.sound"],
     ),
-    "fiber-large": (
-        ["Conjectures.LonelinessFiveSpeedPlaneFiber1P1789"],
-        ["Loneliness.FiveSpeedCertificate.ScalarMasks.P1789.sound",
-         "Loneliness.FiveSpeedCertificate.PlaneFibers.M1P1789.sound"],
+    "fiber-tree-small": (
+        ["Conjectures.LonelinessFiveSpeedPlaneTreeFiber8P0053"],
+        ["Loneliness.FiveSpeedCertificate.ScalarTrees.P53.sound",
+         "Loneliness.FiveSpeedCertificate.PlaneTreeFibers.M8P53.sound"],
+    ),
+    "fiber-tree-large": (
+        ["Conjectures.LonelinessFiveSpeedPlaneTreeFiber1P1789"],
+        ["Loneliness.FiveSpeedCertificate.ScalarTrees.P1789.sound",
+         "Loneliness.FiveSpeedCertificate.PlaneTreeFibers.M1P1789.sound"],
     ),
     "mask-scan": (
         ["Conjectures.LonelinessFiveSpeedRootMaskScan"],
@@ -45,6 +50,21 @@ TASKS = {
         ["Conjectures.LonelinessFiveSpeedPlaneProjective"],
         ["Loneliness.FiveSpeedCertificate.canonicalProjectiveCover_integer",
          "Loneliness.FiveSpeedCertificate.canonicalProjectiveCover_divisor"],
+    ),
+    "plane-lift": (
+        ["Conjectures.LonelinessFiveSpeedPlanePrimeProduct"],
+        ["Loneliness.FiveSpeedCertificate.exists_zero_form_of_prime_covers",
+         "Loneliness.FiveSpeedCertificate.canonical_plane_integer_relation"],
+    ),
+    "root-star": (
+        ["Conjectures.LonelinessFiveSpeedRootStarP0179"],
+        ["Loneliness.FiveSpeedCertificate.normalizedRootCover_of_rootStarChecks",
+         "Loneliness.FiveSpeedCertificate.RootStars.P179.sound"],
+    ),
+    "line-reduction": (
+        ["Conjectures.LonelinessFiveSpeedLineReductionCutoff"],
+        ["Loneliness.FiveSpeedCertificate.parameter_form_to_bounded_map",
+         "Loneliness.FiveSpeedCertificate.parameter_form_to_bounded_parameters"],
     ),
 }
 
