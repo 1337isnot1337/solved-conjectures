@@ -120,6 +120,7 @@ theorem core_gram_of_correlation_formula
       (4 : ℤ) • blockOnesG G - (16 : ℤ) • kernelBlocks π := by
   ext ⟨i, x⟩ ⟨j, y⟩
   rw [core_gram_apply]
+  simp only [Matrix.add_apply, Matrix.sub_apply, Matrix.smul_apply]
   by_cases hi : i = j
   · subst j
     by_cases hxy : x = y
