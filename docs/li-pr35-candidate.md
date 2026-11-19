@@ -6,15 +6,21 @@ The original 38-module Lean development was contributed by
 `fb700255fed86b6ac29b4980ff4704fa46adab63`.
 
 This checkpoint stages that contribution and compatibility repairs for a
-separate verification run. These sources are candidates outside the accepted
+separate verification run, together with five supplementary modules. These
+sources are candidates outside the accepted
 root imports. The full source, axiom, and kernel checks are pending. The PR
 merge and the result-status update will follow the checked integration.
 
 The proposed scope is the explicit 31-vertex tree, its degree and leaf facts,
 the full elementary coefficient `+29` for every finite colour set of size at
 least 31, the exact connected-partition count `8`, and all `6,842` integer
-partition types. The auxiliary negative coefficient and the additional
-connected-block assembly are being checked separately.
+partition types. The supplementary modules assemble these into an actual
+connected vertex-partition statement and prove all five elementary
+coefficients supported on `e₂,e₃`: `29`, `83`, `−6304`, `−6800`, and `−8384`.
+Each coefficient is transported to every finite colour type of cardinality
+at least 31. The negative coefficient also gives an explicit failure of
+coefficientwise elementary positivity. These statements remain candidates
+until the complete gate passes.
 
 ## Compatibility and reproduction repairs
 
@@ -33,14 +39,14 @@ checks the mathematical certificates.
 ## Exact verification gate
 
 `scripts/verify_li_exact.py` reads the sealed manifest in
-`docs/li-exact-sources.json`. It checks all 38 sources from a fresh project
+`docs/li-exact-sources.json`. It checks all 43 sources from a fresh project
 object directory with warnings treated as errors. It then checks literal
 mathematical statements, audits every owned declaration including private
 declarations, and replays every module with the unchanged stock kernel
 checker. The only permitted transitive axioms are `propext`,
 `Classical.choice`, and `Quot.sound`.
 
-The manifest records the original contribution, exact source hashes, 35
+The manifest records the original contribution, exact source hashes, 68
 required theorem names, pinned configuration, and verification-helper hashes.
 The workflow is `.github/workflows/lean-li-exact.yml`. A successful source
 preflight or publication of this checkpoint is not a completed proof check.

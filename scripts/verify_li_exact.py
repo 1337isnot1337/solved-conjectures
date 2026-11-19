@@ -58,10 +58,10 @@ def exact_singleton(modules, target):
     require(selected == [target], "Stock checker prefix is not an exact singleton: " + target)
 
 
-ROOTS = ['Conjectures.LiFullCoeffTrunc', 'Conjectures.LiTriplesFinal', 'Conjectures.LiPartitionsFinal', 'Conjectures.LiPartitionsCount']
+ROOTS = ['Conjectures.LiCounterexample', 'Conjectures.LiNegativeCoefficient']
 SOURCE_PRIORITY_ROOTS = ['Conjectures.LiPartitionsFinal', 'Conjectures.LiPartitionsCount']
-MODULE_COUNT = 38
-LEGACY_PREFIXES = ['Li.', 'LiBridge.', 'LiCompute.', 'LiElim.', 'LiEmap.', 'LiFinal.', 'LiFull.', 'LiMonomial.', 'LiTrunc.', 'LiWeighted.']
+MODULE_COUNT = 43
+LEGACY_PREFIXES = ['Li.', 'LiBridge.', 'LiCoefficientExtraction.', 'LiCompute.', 'LiCounterexample.', 'LiElim.', 'LiEmap.', 'LiEvaluation.', 'LiFinal.', 'LiFull.', 'LiInterpolation.', 'LiMonomial.', 'LiNegativeCoefficient.', 'LiTrunc.', 'LiWeighted.']
 REQUIRED = [
     "Li.LiFinal325.IsMatchingOf.unique",
     "Li.LiFinal325.b_triple_pairs",
@@ -70,17 +70,41 @@ REQUIRED = [
     "Li.LiFinal325.hasPM_iff",
     "Li.T_isTree",
     "Li.coeff_eq_29",
+    "Li.full_e2e3_coefficients",
+    "Li.full_e2e3_coefficients_fin",
+    "Li.full_e2e3_coefficients_of_card",
     "Li.full_li_coefficient",
     "Li.full_li_coefficient_fin",
     "Li.full_li_coefficient_of_card",
+    "Li.full_negative_coefficient",
+    "Li.full_negative_coefficient_fin",
+    "Li.full_negative_coefficient_of_card",
     "Li.leaf_neighbors_zero",
     "Li.li_coefficient",
     "Li.not_caterpillar",
+    "Li.not_elementary_positive",
+    "Li.not_elementary_positive_of_card",
     "Li.not_spider",
     "Li.specialization_coeff",
+    "LiCoefficientExtraction.aeval_eq_five_terms",
     "LiCompute.coeff_29",
+    "LiCounterexample.all_partition_types",
+    "LiCounterexample.card_connected_partition_types",
+    "LiCounterexample.coefficient_eq",
+    "LiCounterexample.coefficient_positive",
+    "LiCounterexample.component_supports_partition",
+    "LiCounterexample.connectedPartitionType_blocks",
+    "LiCounterexample.counterexample",
+    "LiCounterexample.degree_four_leaf_neighbors",
+    "LiCounterexample.edge_cut_choices_card",
+    "LiCounterexample.no_degree_four_two_leaf_neighbors",
+    "LiCounterexample.suppFinset_connIn",
+    "LiCounterexample.suppFinset_injective",
     "LiElim.partFunOn_erase",
     "LiEmap.aeval_esymm_vec",
+    "LiEvaluation.eval_chromPoly",
+    "LiEvaluation.partFun_values",
+    "LiEvaluation.table_correct",
     "LiFinal.T_hasAllPartitionTypes",
     "LiFinal.all_partition_types",
     "LiFinal.card_partitions_31",
@@ -95,15 +119,22 @@ REQUIRED = [
     "LiFull.full_coeff_eq_three_variable_coeff",
     "LiFull.kill31_fullECoords",
     "LiFull.killMN_fullECoords",
+    "LiInterpolation.denominators_pos",
+    "LiInterpolation.elementary_eval",
+    "LiInterpolation.eval_elementary_coordinates",
+    "LiInterpolation.matrix_identity",
+    "LiInterpolation.scaled_chromatic_coefficient",
+    "LiInterpolation.scaled_coefficient",
     "LiMonomial.snd_aeval_of_weighted",
+    "LiNegativeCoefficient.coefficient_eq",
+    "LiNegativeCoefficient.five_coefficients",
+    "LiNegativeCoefficient.three_variable_negative_coefficient",
     "LiWeighted.weightedHomogeneous_of_aeval",
     "LiWeighted.weightedHomogeneous_symm"
 ]
 
-STATEMENTS = r'''import Conjectures.LiFullCoeffTrunc
-import Conjectures.LiTriplesFinal
-import Conjectures.LiPartitionsFinal
-import Conjectures.LiPartitionsCount
+STATEMENTS = r'''import Conjectures.LiCounterexample
+import Conjectures.LiNegativeCoefficient
 
 open scoped BigOperators
 
@@ -111,18 +142,15 @@ noncomputable section
 
 attribute [local instance] Classical.propDecidable
 
--- The polynomial is the genuine proper-colouring sum.
+-- This is the proper-colouring sum, with one variable for every colour.
 example {σ : Type*} [Fintype σ] [DecidableEq σ] :
     LiFull.fullChromPolyOn (σ := σ) Li.T =
       ∑ κ ∈ (Finset.univ : Finset (Fin 31 → σ)).filter
         (fun κ => ∀ u v, Li.T.Adj u v → κ u ≠ κ v),
         ∏ v : Fin 31, (MvPolynomial.X (κ v) : MvPolynomial σ ℚ) := by
-  classical
   unfold LiFull.fullChromPolyOn
-  refine Finset.sum_congr ?_ ?_
-  · ext κ <;> simp only [Finset.mem_filter, LiFull.fullProperOn]
-  · intro κ _
-    rfl
+  exact Finset.sum_congr (Finset.filter_congr (fun _ _ => Iff.rfl))
+    (fun _ _ => rfl)
 
 example : Li.T.IsTree := Li.T_isTree
 
@@ -167,7 +195,39 @@ example :
     Fintype.card {P : Finset (Finset (Fin 31)) // Li.LiBridge.Partition325 P} = 8 :=
   Li.LiFinal325.b_triple_pairs
 
--- The coefficient is in the full elementary basis for any sufficient colour set.
+
+-- The coverage predicate is a partition into actual connected vertex blocks.
+example (p : List Nat) :
+    LiCounterexample.ConnectedPartitionOfType p ↔
+      ∃ P : Finset (Finset (Fin 31)),
+        ((∀ B ∈ P, B.Nonempty) ∧
+          (∀ B ∈ P, ∀ C ∈ P, B ≠ C → Disjoint B C) ∧
+          P.biUnion id = Finset.univ) ∧
+        (∀ B ∈ P, B.Nonempty ∧ ∀ u ∈ B, ∀ v ∈ B,
+          ∃ q : Li.T.Walk u v, ∀ x ∈ q.support, x ∈ B) ∧
+        P.val.map Finset.card = (p : Multiset Nat) := Iff.rfl
+
+example :
+    Li.T.IsTree ∧
+    (∀ v : Fin 31, Li.T.degree v ≤ 4) ∧
+    (∃! v : Fin 31, Li.T.degree v = 4) ∧
+    (∀ v : Fin 31, Li.T.degree v = 4 →
+      ((Li.T.neighborFinset v).filter (fun w => Li.T.degree w = 1)).card = 1) ∧
+    ¬ Li.IsSpider Li.T ∧
+    ¬ Li.IsCaterpillar Li.T ∧
+    Odd (Fintype.card (Fin 31)) ∧
+    Nat.card {p : List Nat //
+      LiFinal.IsPartitionOf 31 p ∧ LiCounterexample.ConnectedPartitionOfType p} = 6842 ∧
+    (∀ p : List Nat, LiFinal.IsPartitionOf 31 p →
+      LiCounterexample.ConnectedPartitionOfType p) ∧
+    LiCounterexample.coefficient = 29 ∧
+    Fintype.card {P : Finset (Finset (Fin 31)) // Li.LiBridge.Partition325 P} = 8 :=
+  LiCounterexample.counterexample
+
+example : ¬ ∃ v : Fin 31, Li.T.degree v = 4 ∧
+    2 ≤ ((Li.T.neighborFinset v).filter (fun w => Li.T.degree w = 1)).card :=
+  LiCounterexample.no_degree_four_two_leaf_neighbors
+
 example {σ : Type*} [Fintype σ] [DecidableEq σ]
     (hσ : 31 ≤ Fintype.card σ) :
     ((MvPolynomial.esymmAlgEquiv σ ℚ (n := Fintype.card σ) rfl).symm
@@ -176,6 +236,61 @@ example {σ : Type*} [Fintype σ] [DecidableEq σ]
       (Finsupp.single (⟨1, by omega⟩ : Fin (Fintype.card σ)) 14 +
         Finsupp.single (⟨2, by omega⟩ : Fin (Fintype.card σ)) 1) = 29 :=
   Li.full_li_coefficient_of_card hσ
+
+example {σ : Type*} [Fintype σ] [DecidableEq σ]
+    (hσ : 31 ≤ Fintype.card σ) :
+    ((MvPolynomial.esymmAlgEquiv σ ℚ (n := Fintype.card σ) rfl).symm
+      ⟨LiFull.fullChromPolyOn (σ := σ) Li.T,
+        LiFull.fullChromPolyOn_isSymmetric Li.T⟩).coeff
+      (Finsupp.single (⟨1, by omega⟩ : Fin (Fintype.card σ)) 8 +
+        Finsupp.single (⟨2, by omega⟩ : Fin (Fintype.card σ)) 5) = -6304 :=
+  Li.full_negative_coefficient_of_card hσ
+
+example {σ : Type*} [Fintype σ] [DecidableEq σ]
+    (hσ : 31 ≤ Fintype.card σ) :
+    ¬ (∀ d : Fin (Fintype.card σ) →₀ ℕ,
+      0 ≤ ((MvPolynomial.esymmAlgEquiv σ ℚ (n := Fintype.card σ) rfl).symm
+        ⟨LiFull.fullChromPolyOn (σ := σ) Li.T,
+          LiFull.fullChromPolyOn_isSymmetric Li.T⟩).coeff d) :=
+  Li.not_elementary_positive_of_card hσ
+
+example :
+    LiFull.chromECoords.coeff
+        (Finsupp.single (1 : Fin 3) 14 + Finsupp.single (2 : Fin 3) 1) = 29 ∧
+    LiFull.chromECoords.coeff
+        (Finsupp.single (1 : Fin 3) 11 + Finsupp.single (2 : Fin 3) 3) = 83 ∧
+    LiFull.chromECoords.coeff
+        (Finsupp.single (1 : Fin 3) 8 + Finsupp.single (2 : Fin 3) 5) = -6304 ∧
+    LiFull.chromECoords.coeff
+        (Finsupp.single (1 : Fin 3) 5 + Finsupp.single (2 : Fin 3) 7) = -6800 ∧
+    LiFull.chromECoords.coeff
+        (Finsupp.single (1 : Fin 3) 2 + Finsupp.single (2 : Fin 3) 9) = -8384 :=
+  LiNegativeCoefficient.five_coefficients
+
+-- The colour type is arbitrary, and both exponent vectors and values are literal.
+example {σ : Type*} [Fintype σ] [DecidableEq σ]
+    (hσ : 31 ≤ Fintype.card σ) (i : Fin 5) :
+    ((MvPolynomial.esymmAlgEquiv σ ℚ (n := Fintype.card σ) rfl).symm
+      ⟨LiFull.fullChromPolyOn (σ := σ) Li.T,
+        LiFull.fullChromPolyOn_isSymmetric Li.T⟩).coeff
+      (Finsupp.single (⟨1, by omega⟩ : Fin (Fintype.card σ))
+        ((![14, 11, 8, 5, 2] : Fin 5 → ℕ) i) +
+      Finsupp.single (⟨2, by omega⟩ : Fin (Fintype.card σ))
+        ((![1, 3, 5, 7, 9] : Fin 5 → ℕ) i)) =
+          (![29, 83, -6304, -6800, -8384] : Fin 5 → ℚ) i := by
+  have hindex :
+      Finsupp.embDomain (LiFull.iotaMN hσ)
+        (Finsupp.embDomain LiFull.iota (LiInterpolation.exponents i)) =
+      Finsupp.single (⟨1, by omega⟩ : Fin (Fintype.card σ))
+        ((![14, 11, 8, 5, 2] : Fin 5 → ℕ) i) +
+      Finsupp.single (⟨2, by omega⟩ : Fin (Fintype.card σ))
+        ((![1, 3, 5, 7, 9] : Fin 5 → ℕ) i) := by
+    simp only [LiInterpolation.exponents, Finsupp.embDomain_add,
+      Finsupp.embDomain_single] <;> rfl
+  have h := Li.full_e2e3_coefficients_of_card (σ := σ) hσ i
+  rw [hindex] at h
+  exact h
+
 
 end
 '''
@@ -270,7 +385,7 @@ def verify(model, modules, required, modern, stage, runtime_path):
         "external_lean_path": external,
         "contribution": model["contribution"],
         "accepted_registry_changed": False,
-        "supplementary_negative_coefficient_included": False,
+        "supplementary_negative_coefficient_included": True,
         "finite_colour_scope": True,
     }
     def save():
