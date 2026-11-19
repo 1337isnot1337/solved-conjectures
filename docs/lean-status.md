@@ -2416,3 +2416,32 @@ The final Zhu implications retain the precise primitive classification hypothesi
 The gate rebuilt all 34 project source modules with warnings treated as errors, audited all 1,024 owned/raw declarations (805 theorems, 36 private declarations, all 23 required endpoints), and independently replayed all 34 exact targets with the pinned stock kernel. Only `propext`, `Classical.choice`, and `Quot.sound` are allowed. Artifact `14541661556` has ZIP SHA256 `7dfc4798aed3e9a21b50010b5d9d00108d134253494fab8b41051d5bd0b60291`; the raw receipt SHA256 is `42b1e5aa90a5eef82cd785d70445d6d3273ed1fe13b62b26a62e119abf41dcba`. All 47 original source/control/configuration/helper files match the exact Git tree at the passing commit. Every archived source and object hash, original audit and declaration inventory, process record, and log hash was authenticated.
 
 Unchanged receipt, audit, logs, progress records, archive-member inventory, and preservation record are under [verification/higher-triangle-exact-44545339492](verification/higher-triangle-exact-44545339492/). Registration adds one module and 23 required endpoints. The combined accepted-root gate remains separate, and no result directory is marked complete.
+
+## Renault foundations and six-speed prime pilot, 19 November 2026
+
+Two separate hosted gates passed. Neither checkpoint completes a spectrum classification.
+
+| Checkpoint | Source commit | Project modules | Owned declarations | Private declarations | Required endpoints |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Renault foundations | `f6b37c31b67d4905a03ebafca4e427aaf36d8ad8` | 18 | 605 | 131 | 64 |
+| Prime-307 pilot | `7bfbeef3715b82f33bae00493f05c72d7a6978e4` | 85 | 3,910 | 91 | 8 |
+
+Each gate rebuilt its complete project dependency closure with warnings treated as errors. It audited every owned declaration, including serialized private declarations, and replayed every module with the unchanged stock Lean checker. The transitive axiom whitelist was exactly `propext`, `Classical.choice`, and `Quot.sound`. Source, object, control, runtime, log, and audit hashes remained fixed.
+
+The Renault checkpoint proves all eight universal real phase lemmas from Renault's six-runner argument, together with constrained maximization, affine time changes, exact gcd orbits, third-shift obstructions, two-multiple fiber arithmetic, and reindexing. The phase-certificate producers also reproduced their frozen source payloads. These are proved components; the full five-speed lower bound was not part of this passing gate.
+
+[Renault run and job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44549206241/job/135648012899) ·
+[Unchanged receipt](verification/renault-foundations-44549206241/receipt.json) ·
+[Source, audit, and log evidence](verification/renault-foundations-44549206241/evidence.tar.gz) ·
+[Preservation record](verification/renault-foundations-44549206241/preservation.json).
+
+The prime-307 pilot proves the original support-checker propositions for minimum pairs 2 and 153. The larger root uses blocks of 32 frames and transports computation through the proved counted-bit checker. The pilot checks two selected roots; the remaining minimum pairs and the complete prime classification are still open.
+
+[Prime-307 run and job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44540677853/job/135617953079) ·
+[Unchanged receipt](verification/p307-pilot-44540677853/receipt.json) ·
+[Source, audit, and log evidence](verification/p307-pilot-44540677853/evidence.tar.gz) ·
+[Preservation record](verification/p307-pilot-44540677853/preservation.json).
+
+The original artifact ZIPs and raw receipt hashes were authenticated against GitHub's artifact metadata and completed job logs. Every preserved source, object digest, audit inventory, and process log was revalidated after download. The evidence archives contain the original proof sources, controls, certificate data where present, audit inventories, logs, and process profiles. This preservation step did not perform a new local Lean replay.
+
+The complete Renault proof is a separate candidate at `af144a83407065bc9b4ffae707c9b360a5f9c399`, tracked in [issue 38](https://github.com/1337isnot1337/solved-conjectures/issues/38). Its final endpoint has type `CoordinateSubspace.LonelyRunnerBound 5` and discharges the four-speed input. Its [106-module gate](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44550409224) is separate from the passing foundation gate. No complete five-speed bound or new accepted-module registration is claimed by this checkpoint.
