@@ -1,0 +1,79 @@
+name: Lean Erdos Gyarfas voltage candidates
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'lean/Conjectures/ErdosGyarfasVoltage*.lean'
+      - 'lean/Conjectures/ErdosGyarfasSharpGraph.lean'
+      - 'lean/Conjectures/ErdosGyarfasSharpCover.lean'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/verify_erdos_gyarfas_voltage_candidate.py'
+      - 'scripts/verify_lean_candidate.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - '.github/workflows/lean-erdos-gyarfas-voltage-candidates.yml'
+  pull_request:
+    paths:
+      - 'lean/Conjectures/ErdosGyarfasVoltage*.lean'
+      - 'lean/Conjectures/ErdosGyarfasSharpGraph.lean'
+      - 'lean/Conjectures/ErdosGyarfasSharpCover.lean'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/verify_erdos_gyarfas_voltage_candidate.py'
+      - 'scripts/verify_lean_candidate.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - '.github/workflows/lean-erdos-gyarfas-voltage-candidates.yml'
+
+permissions:
+  contents: read
+
+env:
+  LEAN_NUM_THREADS: '1'
+
+jobs:
+  plan:
+    name: Select affected voltage proofs
+    runs-on: ubuntu-latest
+    outputs:
+      tasks: ${{ steps.plan.outputs.tasks }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: plan
+        run: python3 scripts/verify_erdos_gyarfas_voltage_candidate.py --plan-ci
+
+  candidates:
+    name: Voltage candidate ${{ matrix.task }}
+    needs: plan
+    if: needs.plan.outputs.tasks != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        task: ${{ fromJSON(needs.plan.outputs.tasks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Check sources, audit, and replay the exact project closure
+        run: python3 scripts/verify_erdos_gyarfas_voltage_candidate.py '${{ matrix.task }}'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: erdos-gyarfas-voltage-${{ matrix.task }}-receipt
+          path: .candidate-artifacts/erdos-gyarfas-voltage-${{ matrix.task }}/receipt.json
+          if-no-files-found: warn
+          retention-days: 7
