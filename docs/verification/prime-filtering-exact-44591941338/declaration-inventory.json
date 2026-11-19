@@ -1,0 +1,4764 @@
+{
+  "all_owned_declarations_audited": true,
+  "declarations": {
+    "Loneliness.CriticalFamilies.clearance_add_int": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.clearance_add_int",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.clearance_eq_of_mem": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.clearance_eq_of_mem",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.distance_add_int": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.distance_add_int",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.distance_neg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.distance_neg",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.dvd_gcd_fold": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.dvd_gcd_fold",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.fifth_distance": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.fifth_distance",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.fifth_distance._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.fifth_distance._proof_1_1",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.fifth_distance._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.fifth_distance._proof_1_2",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.fifth_of_all_nonzero_residues": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.fifth_of_all_nonzero_residues",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.fifth_of_dilation": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.fifth_of_dilation",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.le_value_any": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.le_value_any",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.modular_witness": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.modular_witness",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.modular_witness._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.modular_witness._proof_1_1",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.modular_witness._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.modular_witness._proof_1_2",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.modular_witness._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.modular_witness._proof_1_3",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.modular_witness._simp_1_10": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.modular_witness._simp_1_10",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.modular_witness._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.modular_witness._simp_1_4",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.modular_witness._simp_1_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.modular_witness._simp_1_5",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.modular_witness._simp_1_6": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.modular_witness._simp_1_6",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.modular_witness._simp_1_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.modular_witness._simp_1_7",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.modular_witness._simp_1_8": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.modular_witness._simp_1_8",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.modular_witness._simp_1_9": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.modular_witness._simp_1_9",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.primitive_coprime": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.primitive_coprime",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.subset_four_completion": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.subset_four_completion",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.subset_four_completion._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.subset_four_completion._proof_1_1",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.value_eq_of_mem": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.value_eq_of_mem",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.CriticalFamilies.value_perm": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.CriticalFamilies.value_perm",
+      "owner": "Conjectures.LonelinessCriticalBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.LowerCertificate",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate._f": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.LowerCertificate._f",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate._sparseCasesOn_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.LowerCertificate._sparseCasesOn_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate._sparseCasesOn_1.else_eq": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.LowerCertificate._sparseCasesOn_1.else_eq",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate._sparseCasesOn_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.LowerCertificate._sparseCasesOn_2",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate._sparseCasesOn_2.else_eq": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.LowerCertificate._sparseCasesOn_2.else_eq",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate._sunfold": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.LowerCertificate._sunfold",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate._unsafe_rec": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.LowerCertificate._unsafe_rec",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.LowerCertificate.eq_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate.eq_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.LowerCertificate.eq_2",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate.eq_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.LowerCertificate.eq_3",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate.eq_def": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.LowerCertificate.eq_def",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.LowerCertificate.match_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.LowerCertificate.match_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.HasWitness": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Modular.HasWitness",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.Witness": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Modular.Witness",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.Witness.eq_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.Witness.eq_1",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.distance_nat_div": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.distance_nat_div",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.distance_nat_div._simp_1_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.distance_nat_div._simp_1_1",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Modular.folded",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded.eq_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded.eq_1",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_eq_of_add_mod_zero": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_eq_of_add_mod_zero",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_1",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_2",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_3",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_4",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_5": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_5",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_6": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_6",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_7": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_7",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_eq_of_mod_eq": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_eq_of_mod_eq",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_le_half": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_le_half",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_le_half._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_le_half._proof_1_2",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_mod": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_mod",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_mul_folded": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_mul_folded",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_mul_folded._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_mul_folded._proof_1_1",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_mul_negResidue": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_mul_negResidue",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_mul_negResidue._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_mul_negResidue._proof_1_1",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.folded_unit_cancel": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.folded_unit_cancel",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.hasWitness_folded_unit": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.hasWitness_folded_unit",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.hasWitness_perm": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.hasWitness_perm",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.hasWitness_unit": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.hasWitness_unit",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.hasWitness_value_lower": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.hasWitness_value_lower",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.instDecidableWitness": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Modular.instDecidableWitness",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.instDecidableWitness._aux_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Modular.instDecidableWitness._aux_1",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.no_witness_of_value_lt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.no_witness_of_value_lt",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_clearance_lower": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_clearance_lower",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_clearance_lower._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_clearance_lower._proof_1_1",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_folded_speeds": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_folded_speeds",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_folded_speeds._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_folded_speeds._simp_1_2",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_mod_speeds": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_mod_speeds",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_mod_speeds._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_mod_speeds._simp_1_2",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_mod_time": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_mod_time",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_negated_speeds": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_negated_speeds",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_negated_speeds._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_negated_speeds._simp_1_2",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_perm": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_perm",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_scaled_speeds": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_scaled_speeds",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_scaled_speeds._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_scaled_speeds._simp_1_2",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Modular.witness_value_lower": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Modular.witness_value_lower",
+      "owner": "Conjectures.LonelinessModularWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.affinePermutation": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.PrimeFiltering.affinePermutation",
+      "owner": "Conjectures.LonelinessPrimeFilteringChoice",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.affinePermutation._proof_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.affinePermutation._proof_1",
+      "owner": "Conjectures.LonelinessPrimeFilteringChoice",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.affinePermutation._proof_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.affinePermutation._proof_2",
+      "owner": "Conjectures.LonelinessPrimeFilteringChoice",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.affinePermutation.congr_simp": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.affinePermutation.congr_simp",
+      "owner": "Conjectures.LonelinessPrimeFilteringChoice",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.avoid_two_per_level": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.avoid_two_per_level",
+      "owner": "Conjectures.LonelinessPrimeFilteringTwoForbidden",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.avoid_two_per_level._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.avoid_two_per_level._simp_1_1",
+      "owner": "Conjectures.LonelinessPrimeFilteringTwoForbidden",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.avoid_two_per_level._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.avoid_two_per_level._simp_1_2",
+      "owner": "Conjectures.LonelinessPrimeFilteringTwoForbidden",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.avoid_two_per_level._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.avoid_two_per_level._simp_1_3",
+      "owner": "Conjectures.LonelinessPrimeFilteringTwoForbidden",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.corollary_three_distance": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.corollary_three_distance",
+      "owner": "Conjectures.LonelinessPrimeFilteringCorollaryThree",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed",
+      "owner": "Conjectures.LonelinessPrimeFilteringCorollaryThree",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._proof_1_1",
+      "owner": "Conjectures.LonelinessPrimeFilteringCorollaryThree",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._simp_1_2",
+      "owner": "Conjectures.LonelinessPrimeFilteringCorollaryThree",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._simp_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._simp_1_3",
+      "owner": "Conjectures.LonelinessPrimeFilteringCorollaryThree",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._simp_1_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._simp_1_4",
+      "owner": "Conjectures.LonelinessPrimeFilteringCorollaryThree",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.corollary_three_value_of_coprime_seed": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.corollary_three_value_of_coprime_seed",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.corollary_three_value_padic_of_coprime_seed": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.corollary_three_value_padic_of_coprime_seed",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.corollary_three_witness_of_coprime_seed": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.corollary_three_witness_of_coprime_seed",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.corollary_three_witness_padic_of_coprime_seed": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.corollary_three_witness_padic_of_coprime_seed",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.exists_affine_avoiding": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.exists_affine_avoiding",
+      "owner": "Conjectures.LonelinessPrimeFilteringChoice",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.exists_avoiding_permutations": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.exists_avoiding_permutations",
+      "owner": "Conjectures.LonelinessPrimeFilteringChoice",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.exists_nat_affine_avoiding": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.exists_nat_affine_avoiding",
+      "owner": "Conjectures.LonelinessPrimeFilteringChoice",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.folded_lower_of_exact_power": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.folded_lower_of_exact_power",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.hasWitness_of_level_budgets": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.hasWitness_of_level_budgets",
+      "owner": "Conjectures.LonelinessPrimeFilteringWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_1",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_2",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_3",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_4",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.hasWitness_seven_of_three_per_level": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.hasWitness_seven_of_three_per_level",
+      "owner": "Conjectures.LonelinessPrimeFilteringWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.hasWitness_seven_of_three_per_valuation": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.hasWitness_seven_of_three_per_valuation",
+      "owner": "Conjectures.LonelinessPrimeFilteringWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.maxPadicVal": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.PrimeFiltering.maxPadicVal",
+      "owner": "Conjectures.LonelinessPrimeFilteringValuation",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.maxPadicVal_le_iff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.maxPadicVal_le_iff",
+      "owner": "Conjectures.LonelinessPrimeFilteringValuation",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.not_dvd_pow_maxPadicVal_succ": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.not_dvd_pow_maxPadicVal_succ",
+      "owner": "Conjectures.LonelinessPrimeFilteringValuation",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.one_seventh_of_three_below_max_valuation": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.one_seventh_of_three_below_max_valuation",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.one_seventh_of_three_per_level": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.one_seventh_of_three_per_level",
+      "owner": "Conjectures.LonelinessPrimeFilteringWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.one_seventh_of_three_per_valuation": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.one_seventh_of_three_per_valuation",
+      "owner": "Conjectures.LonelinessPrimeFilteringWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.padicValNat_le_maxPadicVal": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.padicValNat_le_maxPadicVal",
+      "owner": "Conjectures.LonelinessPrimeFilteringValuation",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.padic_level_exact": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.padic_level_exact",
+      "owner": "Conjectures.LonelinessPrimeFilteringValuation",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.padic_level_exact._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.padic_level_exact._proof_1_1",
+      "owner": "Conjectures.LonelinessPrimeFilteringValuation",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.partial_prime_filtering": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.partial_prime_filtering",
+      "owner": "Conjectures.LonelinessPrimeFilteringPartial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_1",
+      "owner": "Conjectures.LonelinessPrimeFilteringPartial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_2",
+      "owner": "Conjectures.LonelinessPrimeFilteringPartial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_3",
+      "owner": "Conjectures.LonelinessPrimeFilteringPartial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_4",
+      "owner": "Conjectures.LonelinessPrimeFilteringPartial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering",
+      "owner": "Conjectures.LonelinessPrimeFiltering",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering._proof_1_1",
+      "owner": "Conjectures.LonelinessPrimeFiltering",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering._proof_1_2",
+      "owner": "Conjectures.LonelinessPrimeFiltering",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering._proof_1_3",
+      "owner": "Conjectures.LonelinessPrimeFiltering",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering_coprime": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering_coprime",
+      "owner": "Conjectures.LonelinessPrimeFilteringUnits",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds",
+      "owner": "Conjectures.LonelinessPrimeFiltering",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds._proof_1_1",
+      "owner": "Conjectures.LonelinessPrimeFiltering",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds._proof_1_2",
+      "owner": "Conjectures.LonelinessPrimeFiltering",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds._proof_1_3",
+      "owner": "Conjectures.LonelinessPrimeFiltering",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering_padic": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering_padic",
+      "owner": "Conjectures.LonelinessPrimeFilteringValuation",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering_padic_of_le": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering_padic_of_le",
+      "owner": "Conjectures.LonelinessPrimeFilteringValuation",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.prime_filtering_unit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.prime_filtering_unit",
+      "owner": "Conjectures.LonelinessPrimeFilteringUnits",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.seven_avoid_two_of_three_per_level": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.seven_avoid_two_of_three_per_level",
+      "owner": "Conjectures.LonelinessPrimeFilteringTwoForbidden",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.seven_avoid_two_of_three_per_level._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.seven_avoid_two_of_three_per_level._proof_1_1",
+      "owner": "Conjectures.LonelinessPrimeFilteringTwoForbidden",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.seven_avoid_two_of_three_per_level._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.seven_avoid_two_of_three_per_level._proof_1_2",
+      "owner": "Conjectures.LonelinessPrimeFilteringTwoForbidden",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.uniform_level_value": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.uniform_level_value",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.uniform_level_value._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.uniform_level_value._proof_1_1",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.uniform_level_witness": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.uniform_level_witness",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.uniform_level_witness._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.uniform_level_witness._proof_1_1",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.uniform_padic_value": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.uniform_padic_value",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.value_lower_of_level_budgets": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.value_lower_of_level_budgets",
+      "owner": "Conjectures.LonelinessPrimeFilteringWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.value_lower_of_lower_valuation_counts": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.value_lower_of_lower_valuation_counts",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.witness_of_digit_avoiding": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.witness_of_digit_avoiding",
+      "owner": "Conjectures.LonelinessPrimeFilteringWitness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFiltering.witness_of_prime_power_folded_lower": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFiltering.witness_of_prime_power_folded_lower",
+      "owner": "Conjectures.LonelinessPrimeFilteringCases",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.digit": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.PrimeFilteringArithmetic.digit",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.digit.eq_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.digit.eq_1",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.digit_eq_zero_iff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.digit_eq_zero_iff",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.digit_mul_of_dvd": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.digit_mul_of_dvd",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.digit_step": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.digit_step",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.digit_step_of_next_pow_dvd": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.digit_step_of_next_pow_dvd",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.leading_digit_ne_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.leading_digit_ne_zero",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.multiplier_cast_at_top": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.multiplier_cast_at_top",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.multiplier_cast_of_lt": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.multiplier_cast_of_lt",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero_at_top": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero_at_top",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero_of_lt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero_of_lt",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringArithmetic.quotient_step": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringArithmetic.quotient_step",
+      "owner": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringDigitBound.folded_lower_of_digit_avoiding": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringDigitBound.folded_lower_of_digit_avoiding",
+      "owner": "Conjectures.LonelinessPrimeFilteringDigitBound",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringDigitBound.residue_bounds_of_digit_avoiding": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringDigitBound.residue_bounds_of_digit_avoiding",
+      "owner": "Conjectures.LonelinessPrimeFilteringDigitBound",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringDigitBound.residue_bounds_of_digit_avoiding._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringDigitBound.residue_bounds_of_digit_avoiding._proof_1_1",
+      "owner": "Conjectures.LonelinessPrimeFilteringDigitBound",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringResidues.coprime_prime_power_of_nonzero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringResidues.coprime_prime_power_of_nonzero",
+      "owner": "Conjectures.LonelinessPrimeFilteringResidues",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringResidues.digit_eq_of_mod_eq": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringResidues.digit_eq_of_mod_eq",
+      "owner": "Conjectures.LonelinessPrimeFilteringResidues",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringResidues.digit_mod_prime_power": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringResidues.digit_mod_prime_power",
+      "owner": "Conjectures.LonelinessPrimeFilteringResidues",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringResidues.exists_unit_lift": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringResidues.exists_unit_lift",
+      "owner": "Conjectures.LonelinessPrimeFilteringResidues",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringResidues.exists_unit_val_lift": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringResidues.exists_unit_val_lift",
+      "owner": "Conjectures.LonelinessPrimeFilteringResidues",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringResidues.isUnit_prime_power_of_nonzero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringResidues.isUnit_prime_power_of_nonzero",
+      "owner": "Conjectures.LonelinessPrimeFilteringResidues",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringResidues.residue_step_of_next_pow_dvd": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringResidues.residue_step_of_next_pow_dvd",
+      "owner": "Conjectures.LonelinessPrimeFilteringResidues",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringResidues.step_expansion_of_next_pow_dvd": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringResidues.step_expansion_of_next_pow_dvd",
+      "owner": "Conjectures.LonelinessPrimeFilteringResidues",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.PrimeFilteringResidues.val_coprime_prime_power_of_nonzero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.PrimeFilteringResidues.val_coprime_prime_power_of_nonzero",
+      "owner": "Conjectures.LonelinessPrimeFilteringResidues",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "inductive",
+      "name": "Loneliness.Segment",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.Valid": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.Valid",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment._sizeOf_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment._sizeOf_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment._sizeOf_inst": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment._sizeOf_inst",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.casesOn": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.casesOn",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.ctorIdx": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.ctorIdx",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.left": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.left",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.mk": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "constructor",
+      "name": "Loneliness.Segment.mk",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.mk._flat_ctor": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.mk._flat_ctor",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.mk.inj": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Segment.mk.inj",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.mk.injEq": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Segment.mk.injEq",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.mk.noConfusion": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.mk.noConfusion",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.mk.sizeOf_spec": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.Segment.mk.sizeOf_spec",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.noConfusion": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.noConfusion",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.noConfusionType": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.noConfusionType",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.rec": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "recursor",
+      "name": "Loneliness.Segment.rec",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.recOn": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.recOn",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.right": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.right",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.shift": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.shift",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.Segment.speed": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.Segment.speed",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.certified_maximum": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.certified_maximum",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.certified_value": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.certified_value",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.clearance",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance._f": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.clearance._f",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance._proof_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.clearance._proof_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance._sunfold": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.clearance._sunfold",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance._unsafe_rec": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.clearance._unsafe_rec",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.clearance.eq_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance.eq_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.clearance.eq_2",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance.eq_def": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.clearance.eq_def",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance.match_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.clearance.match_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance_eq_member": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.clearance_eq_member",
+      "owner": "Conjectures.LonelinessRational",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance_le_half": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.clearance_le_half",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance_le_if_near": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.clearance_le_if_near",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance_le_of_mem": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.clearance_le_of_mem",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance_le_of_rat": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.clearance_le_of_rat",
+      "owner": "Conjectures.LonelinessContinuity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance_nonneg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.clearance_nonneg",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.clearance_reflection": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.clearance_reflection",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.continuous_clearance": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.continuous_clearance",
+      "owner": "Conjectures.LonelinessContinuity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.continuous_distance": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.continuous_distance",
+      "owner": "Conjectures.LonelinessContinuity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.cover_upper": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.cover_upper",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.coversFrom": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.coversFrom",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.coversFrom._f": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.coversFrom._f",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.coversFrom._sunfold": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.coversFrom._sunfold",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.coversFrom._unsafe_rec": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.coversFrom._unsafe_rec",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.coversFrom.eq_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.coversFrom.eq_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.coversFrom.eq_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.coversFrom.eq_2",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.coversFrom.eq_def": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.coversFrom.eq_def",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.coversFrom.match_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.coversFrom.match_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.coversFrom_upper": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.coversFrom_upper",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.distance": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.distance",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.distance.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.distance.eq_1",
+      "owner": "Conjectures.LonelinessRational",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.distance_int_div": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.distance_int_div",
+      "owner": "Conjectures.LonelinessRational",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.distance_int_sub": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.distance_int_sub",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.distance_le_add": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.distance_le_add",
+      "owner": "Conjectures.LonelinessContinuity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.distance_le_half": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.distance_le_half",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.distance_le_int": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.distance_le_int",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.distance_lower_of_cell": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.distance_lower_of_cell",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.distance_lower_of_cell._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.distance_lower_of_cell._proof_1_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.distance_nonneg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.distance_nonneg",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_below_threshold": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_below_threshold",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_distinct": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_distinct",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_distinct._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_distinct._proof_1_2",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_distinct._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_distinct._simp_1_1",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_positive": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_positive",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_positive._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_positive._proof_1_3",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_positive._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_positive._proof_1_4",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_positive._proof_1_5": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_positive._proof_1_5",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_positive._proof_1_6": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_positive._proof_1_6",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_positive._proof_1_7": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_positive._proof_1_7",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_positive._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_positive._simp_1_1",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_positive._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_positive._simp_1_2",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_primitive": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_primitive",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_realizes": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_realizes",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_upper_half": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_upper_half",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_value": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_value",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_value._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_value._simp_1_1",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.five_family_value._simp_1_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.five_family_value._simp_1_2",
+      "owner": "Conjectures.LonelinessFiveFamily",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.image_bddAbove": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.image_bddAbove",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.image_nonempty": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.image_nonempty",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableCoversFrom": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.instDecidableCoversFrom",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableCoversFrom._aux_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.instDecidableCoversFrom._aux_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableCoversFrom._proof_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableCoversFrom._proof_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableEqSegment": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.instDecidableEqSegment",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableEqSegment.decEq": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.instDecidableEqSegment.decEq",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableEqSegment.decEq._proof_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableEqSegment.decEq._proof_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableEqSegment.decEq._proof_2": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableEqSegment.decEq._proof_2",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableEqSegment.decEq._proof_3": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableEqSegment.decEq._proof_3",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableEqSegment.decEq._proof_4": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableEqSegment.decEq._proof_4",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableEqSegment.decEq._proof_5": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableEqSegment.decEq._proof_5",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableEqSegment.decEq.match_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.instDecidableEqSegment.decEq.match_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableLowerCertificate": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.instDecidableLowerCertificate",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableLowerCertificate._proof_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableLowerCertificate._proof_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableLowerCertificate._proof_2": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableLowerCertificate._proof_2",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableLowerCertificate._proof_3": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableLowerCertificate._proof_3",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableLowerCertificate._proof_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableLowerCertificate._proof_4",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableLowerCertificate._proof_5": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableLowerCertificate._proof_5",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableValid": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.instDecidableValid",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instDecidableValid._proof_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.instDecidableValid._proof_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instReprSegment": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.instReprSegment",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.instReprSegment.repr": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.instReprSegment.repr",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.le_clearance": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.le_clearance",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.le_value": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.le_value",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.lipschitz_distance": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.lipschitz_distance",
+      "owner": "Conjectures.LonelinessContinuity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.lowerCertificate_sound": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.lowerCertificate_sound",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.segment_upper": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.segment_upper",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.value": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Loneliness.value",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.value_le": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.value_le",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.value_le_half": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.value_le_half",
+      "owner": "Conjectures.LonelinessContinuity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.value_le_of_rat": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.value_le_of_rat",
+      "owner": "Conjectures.LonelinessContinuity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.value_max": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.value_max",
+      "owner": "Conjectures.LonelinessContinuity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Loneliness.value_nonneg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Loneliness.value_nonneg",
+      "owner": "Conjectures.LonelinessContinuity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": "Loneliness.LowerCertificate.match_1.eq_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_2",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": "Loneliness.LowerCertificate.match_1.eq_2",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_3",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": "Loneliness.LowerCertificate.match_1.eq_3",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.splitter": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.splitter",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": "Loneliness.LowerCertificate.match_1.splitter",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.eq_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": "Loneliness.clearance.match_1.eq_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.eq_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.eq_2",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": "Loneliness.clearance.match_1.eq_2",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.splitter": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.splitter",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": "Loneliness.clearance.match_1.splitter",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.eq_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.eq_1",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": "Loneliness.coversFrom.match_1.eq_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.eq_2": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.eq_2",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": "Loneliness.coversFrom.match_1.eq_2",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.splitter": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.splitter",
+      "owner": "Conjectures.Loneliness",
+      "private_user_name": "Loneliness.coversFrom.match_1.splitter",
+      "tag": "declaration"
+    }
+  },
+  "exact_raw_private_visibility": true,
+  "kind_counts": {
+    "constructor": 1,
+    "definition": 53,
+    "inductive": 1,
+    "recursor": 1,
+    "theorem": 243
+  },
+  "modules": {
+    "Conjectures.Loneliness": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.Loneliness",
+      "names": [
+        "Loneliness.clearance.eq_def",
+        "Loneliness.Segment.casesOn",
+        "Loneliness.Segment.mk.sizeOf_spec",
+        "Loneliness.le_clearance",
+        "Loneliness.instDecidableValid",
+        "Loneliness.LowerCertificate._unsafe_rec",
+        "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.eq_2",
+        "Loneliness.Segment.mk._flat_ctor",
+        "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.splitter",
+        "Loneliness.certified_maximum",
+        "Loneliness.LowerCertificate._sparseCasesOn_1.else_eq",
+        "Loneliness.le_value",
+        "Loneliness.Segment.ctorIdx",
+        "Loneliness.Segment._sizeOf_inst",
+        "Loneliness.LowerCertificate._sparseCasesOn_2",
+        "Loneliness.LowerCertificate.match_1",
+        "Loneliness.instDecidableLowerCertificate._proof_2",
+        "Loneliness.Segment.noConfusionType",
+        "Loneliness.instDecidableLowerCertificate._proof_3",
+        "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_3",
+        "Loneliness.Segment.speed",
+        "Loneliness.distance_lower_of_cell",
+        "Loneliness.distance_lower_of_cell._proof_1_1",
+        "Loneliness.clearance_le_of_mem",
+        "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.splitter",
+        "Loneliness.LowerCertificate._sparseCasesOn_1",
+        "Loneliness.instDecidableEqSegment.decEq._proof_2",
+        "Loneliness.clearance._unsafe_rec",
+        "Loneliness.Segment.mk",
+        "Loneliness.distance_le_int",
+        "Loneliness.instDecidableEqSegment.decEq._proof_3",
+        "Loneliness.clearance._proof_1",
+        "Loneliness.clearance_nonneg",
+        "Loneliness.coversFrom._f",
+        "Loneliness.cover_upper",
+        "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.splitter",
+        "Loneliness.clearance._sunfold",
+        "Loneliness.LowerCertificate.eq_1",
+        "Loneliness.coversFrom.eq_1",
+        "Loneliness.instDecidableEqSegment.decEq",
+        "Loneliness.Segment.mk.inj",
+        "Loneliness.image_nonempty",
+        "Loneliness.LowerCertificate._f",
+        "Loneliness.instReprSegment.repr",
+        "Loneliness.coversFrom",
+        "Loneliness.LowerCertificate._sparseCasesOn_2.else_eq",
+        "Loneliness.value_le",
+        "Loneliness.coversFrom.eq_2",
+        "Loneliness.instDecidableCoversFrom._aux_1",
+        "Loneliness.LowerCertificate",
+        "Loneliness.instDecidableEqSegment.decEq.match_1",
+        "Loneliness.Segment.mk.noConfusion",
+        "Loneliness.Segment._sizeOf_1",
+        "Loneliness.lowerCertificate_sound",
+        "Loneliness.distance",
+        "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.eq_1",
+        "Loneliness.Segment.left",
+        "Loneliness.clearance.eq_2",
+        "Loneliness.Segment.mk.injEq",
+        "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.eq_2",
+        "Loneliness.instDecidableCoversFrom",
+        "Loneliness.clearance.eq_1",
+        "Loneliness.instDecidableCoversFrom._proof_1",
+        "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.eq_1",
+        "Loneliness.Segment.noConfusion",
+        "Loneliness.LowerCertificate._sunfold",
+        "Loneliness.clearance._f",
+        "Loneliness.coversFrom._sunfold",
+        "Loneliness.distance_nonneg",
+        "Loneliness.Segment.recOn",
+        "Loneliness.clearance",
+        "Loneliness.coversFrom._unsafe_rec",
+        "Loneliness.clearance_le_half",
+        "Loneliness.instDecidableEqSegment.decEq._proof_5",
+        "Loneliness.coversFrom.eq_def",
+        "Loneliness.segment_upper",
+        "Loneliness.LowerCertificate.eq_def",
+        "Loneliness.Segment.Valid",
+        "Loneliness.instDecidableLowerCertificate",
+        "Loneliness.instDecidableEqSegment.decEq._proof_4",
+        "Loneliness.instDecidableEqSegment.decEq._proof_1",
+        "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_1",
+        "Loneliness.instDecidableValid._proof_1",
+        "Loneliness.LowerCertificate.eq_2",
+        "Loneliness.coversFrom_upper",
+        "Loneliness.instReprSegment",
+        "Loneliness.coversFrom.match_1",
+        "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_2",
+        "Loneliness.value",
+        "Loneliness.image_bddAbove",
+        "Loneliness.instDecidableLowerCertificate._proof_5",
+        "Loneliness.LowerCertificate.eq_3",
+        "Loneliness.instDecidableLowerCertificate._proof_4",
+        "Loneliness.Segment.rec",
+        "Loneliness.instDecidableLowerCertificate._proof_1",
+        "Loneliness.clearance.match_1",
+        "Loneliness.Segment",
+        "Loneliness.Segment.shift",
+        "Loneliness.Segment.right",
+        "Loneliness.instDecidableEqSegment",
+        "Loneliness.certified_value",
+        "Loneliness.distance_le_half"
+      ],
+      "private_count": 10,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessContinuity": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessContinuity",
+      "names": [
+        "Loneliness.distance_le_add",
+        "Loneliness.value_nonneg",
+        "Loneliness.continuous_distance",
+        "Loneliness.value_max",
+        "Loneliness.value_le_half",
+        "Loneliness.lipschitz_distance",
+        "Loneliness.clearance_le_of_rat",
+        "Loneliness.value_le_of_rat",
+        "Loneliness.continuous_clearance"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessCriticalBase",
+      "names": [
+        "Loneliness.CriticalFamilies.modular_witness._simp_1_10",
+        "Loneliness.CriticalFamilies.modular_witness._simp_1_5",
+        "Loneliness.CriticalFamilies.value_eq_of_mem",
+        "Loneliness.CriticalFamilies.fifth_of_dilation",
+        "Loneliness.CriticalFamilies.fifth_distance._proof_1_1",
+        "Loneliness.CriticalFamilies.clearance_add_int",
+        "Loneliness.CriticalFamilies.fifth_distance._proof_1_2",
+        "Loneliness.CriticalFamilies.fifth_of_all_nonzero_residues",
+        "Loneliness.CriticalFamilies.modular_witness",
+        "Loneliness.CriticalFamilies.modular_witness._simp_1_8",
+        "Loneliness.CriticalFamilies.modular_witness._simp_1_9",
+        "Loneliness.CriticalFamilies.subset_four_completion",
+        "Loneliness.CriticalFamilies.fifth_distance",
+        "Loneliness.CriticalFamilies.subset_four_completion._proof_1_1",
+        "Loneliness.CriticalFamilies.dvd_gcd_fold",
+        "Loneliness.CriticalFamilies.modular_witness._simp_1_4",
+        "Loneliness.CriticalFamilies.modular_witness._simp_1_6",
+        "Loneliness.CriticalFamilies.modular_witness._simp_1_7",
+        "Loneliness.CriticalFamilies.value_perm",
+        "Loneliness.CriticalFamilies.modular_witness._proof_1_2",
+        "Loneliness.CriticalFamilies.modular_witness._proof_1_3",
+        "Loneliness.CriticalFamilies.distance_add_int",
+        "Loneliness.CriticalFamilies.distance_neg",
+        "Loneliness.CriticalFamilies.le_value_any",
+        "Loneliness.CriticalFamilies.clearance_eq_of_mem",
+        "Loneliness.CriticalFamilies.modular_witness._proof_1_1",
+        "Loneliness.CriticalFamilies.primitive_coprime"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessFiveFamily",
+      "names": [
+        "Loneliness.clearance_le_if_near",
+        "Loneliness.five_family_distinct",
+        "Loneliness.five_family_positive._proof_1_3",
+        "Loneliness.five_family_distinct._simp_1_1",
+        "Loneliness.five_family_value._simp_1_2",
+        "Loneliness.five_family_realizes",
+        "Loneliness.five_family_positive._proof_1_4",
+        "Loneliness.distance_int_sub",
+        "Loneliness.five_family_positive._proof_1_5",
+        "Loneliness.clearance_reflection",
+        "Loneliness.five_family_positive._simp_1_1",
+        "Loneliness.five_family_positive",
+        "Loneliness.five_family_below_threshold",
+        "Loneliness.five_family_distinct._proof_1_2",
+        "Loneliness.five_family_positive._proof_1_7",
+        "Loneliness.five_family_positive._proof_1_6",
+        "Loneliness.five_family_primitive",
+        "Loneliness.five_family_upper_half",
+        "Loneliness.five_family_value._simp_1_1",
+        "Loneliness.five_family_value",
+        "Loneliness.five_family_positive._simp_1_2"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessModularWitness": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessModularWitness",
+      "names": [
+        "Loneliness.Modular.hasWitness_folded_unit",
+        "Loneliness.Modular.folded_le_half",
+        "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_4",
+        "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_1",
+        "Loneliness.Modular.folded_mul_negResidue",
+        "Loneliness.Modular.folded_eq_of_mod_eq",
+        "Loneliness.Modular.folded_mul_negResidue._proof_1_1",
+        "Loneliness.Modular.hasWitness_unit",
+        "Loneliness.Modular.witness_negated_speeds",
+        "Loneliness.Modular.Witness",
+        "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_5",
+        "Loneliness.Modular.folded_le_half._proof_1_2",
+        "Loneliness.Modular.witness_mod_speeds._simp_1_2",
+        "Loneliness.Modular.folded_unit_cancel",
+        "Loneliness.Modular.witness_clearance_lower",
+        "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_6",
+        "Loneliness.Modular.Witness.eq_1",
+        "Loneliness.Modular.folded_mul_folded._proof_1_1",
+        "Loneliness.Modular.instDecidableWitness",
+        "Loneliness.Modular.HasWitness",
+        "Loneliness.Modular.witness_perm",
+        "Loneliness.Modular.witness_negated_speeds._simp_1_2",
+        "Loneliness.Modular.witness_folded_speeds",
+        "Loneliness.Modular.instDecidableWitness._aux_1",
+        "Loneliness.Modular.folded.eq_1",
+        "Loneliness.Modular.witness_scaled_speeds._simp_1_2",
+        "Loneliness.Modular.witness_clearance_lower._proof_1_1",
+        "Loneliness.Modular.hasWitness_perm",
+        "Loneliness.Modular.witness_mod_speeds",
+        "Loneliness.Modular.folded_eq_of_add_mod_zero",
+        "Loneliness.Modular.folded_mod",
+        "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_2",
+        "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_3",
+        "Loneliness.Modular.folded_mul_folded",
+        "Loneliness.Modular.folded",
+        "Loneliness.Modular.distance_nat_div._simp_1_1",
+        "Loneliness.Modular.distance_nat_div",
+        "Loneliness.Modular.witness_value_lower",
+        "Loneliness.Modular.witness_mod_time",
+        "Loneliness.Modular.witness_scaled_speeds",
+        "Loneliness.Modular.hasWitness_value_lower",
+        "Loneliness.Modular.no_witness_of_value_lt",
+        "Loneliness.Modular.witness_folded_speeds._simp_1_2",
+        "Loneliness.Modular.folded_eq_of_add_mod_zero._proof_1_7"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFiltering": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFiltering",
+      "names": [
+        "Loneliness.PrimeFiltering.prime_filtering._proof_1_1",
+        "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds._proof_1_1",
+        "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds._proof_1_2",
+        "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds._proof_1_3",
+        "Loneliness.PrimeFiltering.prime_filtering._proof_1_3",
+        "Loneliness.PrimeFiltering.prime_filtering._proof_1_2",
+        "Loneliness.PrimeFiltering.prime_filtering",
+        "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFilteringArithmetic": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFilteringArithmetic",
+      "names": [
+        "Loneliness.PrimeFilteringArithmetic.digit_eq_zero_iff",
+        "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero_of_lt",
+        "Loneliness.PrimeFilteringArithmetic.multiplier_cast_at_top",
+        "Loneliness.PrimeFilteringArithmetic.quotient_step",
+        "Loneliness.PrimeFilteringArithmetic.digit_step",
+        "Loneliness.PrimeFilteringArithmetic.digit",
+        "Loneliness.PrimeFilteringArithmetic.digit_mul_of_dvd",
+        "Loneliness.PrimeFilteringArithmetic.digit_step_of_next_pow_dvd",
+        "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero_at_top",
+        "Loneliness.PrimeFilteringArithmetic.leading_digit_ne_zero",
+        "Loneliness.PrimeFilteringArithmetic.digit.eq_1",
+        "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero",
+        "Loneliness.PrimeFilteringArithmetic.multiplier_cast_of_lt"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFilteringCases": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFilteringCases",
+      "names": [
+        "Loneliness.PrimeFiltering.uniform_padic_value",
+        "Loneliness.PrimeFiltering.corollary_three_value_padic_of_coprime_seed",
+        "Loneliness.PrimeFiltering.corollary_three_value_of_coprime_seed",
+        "Loneliness.PrimeFiltering.uniform_level_witness",
+        "Loneliness.PrimeFiltering.folded_lower_of_exact_power",
+        "Loneliness.PrimeFiltering.value_lower_of_lower_valuation_counts",
+        "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts",
+        "Loneliness.PrimeFiltering.one_seventh_of_three_below_max_valuation",
+        "Loneliness.PrimeFiltering.witness_of_prime_power_folded_lower",
+        "Loneliness.PrimeFiltering.corollary_three_witness_of_coprime_seed",
+        "Loneliness.PrimeFiltering.uniform_level_value._proof_1_1",
+        "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_4",
+        "Loneliness.PrimeFiltering.corollary_three_witness_padic_of_coprime_seed",
+        "Loneliness.PrimeFiltering.uniform_level_value",
+        "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_2",
+        "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_3",
+        "Loneliness.PrimeFiltering.uniform_level_witness._proof_1_1",
+        "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts._proof_1_1"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFilteringChoice": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFilteringChoice",
+      "names": [
+        "Loneliness.PrimeFiltering.affinePermutation._proof_1",
+        "Loneliness.PrimeFiltering.affinePermutation.congr_simp",
+        "Loneliness.PrimeFiltering.affinePermutation",
+        "Loneliness.PrimeFiltering.exists_nat_affine_avoiding",
+        "Loneliness.PrimeFiltering.affinePermutation._proof_2",
+        "Loneliness.PrimeFiltering.exists_affine_avoiding",
+        "Loneliness.PrimeFiltering.exists_avoiding_permutations"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFilteringCorollaryThree": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFilteringCorollaryThree",
+      "names": [
+        "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._proof_1_1",
+        "Loneliness.PrimeFiltering.corollary_three_distance",
+        "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._simp_1_3",
+        "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed",
+        "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._simp_1_2",
+        "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed._simp_1_4"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFilteringDigitBound": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFilteringDigitBound",
+      "names": [
+        "Loneliness.PrimeFilteringDigitBound.residue_bounds_of_digit_avoiding",
+        "Loneliness.PrimeFilteringDigitBound.folded_lower_of_digit_avoiding",
+        "Loneliness.PrimeFilteringDigitBound.residue_bounds_of_digit_avoiding._proof_1_1"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFilteringPartial": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFilteringPartial",
+      "names": [
+        "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_1",
+        "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_2",
+        "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_3",
+        "Loneliness.PrimeFiltering.partial_prime_filtering",
+        "Loneliness.PrimeFiltering.partial_prime_filtering._proof_1_4"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFilteringResidues": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFilteringResidues",
+      "names": [
+        "Loneliness.PrimeFilteringResidues.digit_mod_prime_power",
+        "Loneliness.PrimeFilteringResidues.residue_step_of_next_pow_dvd",
+        "Loneliness.PrimeFilteringResidues.digit_eq_of_mod_eq",
+        "Loneliness.PrimeFilteringResidues.val_coprime_prime_power_of_nonzero",
+        "Loneliness.PrimeFilteringResidues.isUnit_prime_power_of_nonzero",
+        "Loneliness.PrimeFilteringResidues.step_expansion_of_next_pow_dvd",
+        "Loneliness.PrimeFilteringResidues.exists_unit_val_lift",
+        "Loneliness.PrimeFilteringResidues.coprime_prime_power_of_nonzero",
+        "Loneliness.PrimeFilteringResidues.exists_unit_lift"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFilteringTwoForbidden": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFilteringTwoForbidden",
+      "names": [
+        "Loneliness.PrimeFiltering.seven_avoid_two_of_three_per_level._proof_1_2",
+        "Loneliness.PrimeFiltering.avoid_two_per_level._simp_1_2",
+        "Loneliness.PrimeFiltering.avoid_two_per_level",
+        "Loneliness.PrimeFiltering.avoid_two_per_level._simp_1_1",
+        "Loneliness.PrimeFiltering.seven_avoid_two_of_three_per_level._proof_1_1",
+        "Loneliness.PrimeFiltering.seven_avoid_two_of_three_per_level",
+        "Loneliness.PrimeFiltering.avoid_two_per_level._simp_1_3"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFilteringUnits": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFilteringUnits",
+      "names": [
+        "Loneliness.PrimeFiltering.prime_filtering_unit",
+        "Loneliness.PrimeFiltering.prime_filtering_coprime"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFilteringValuation": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFilteringValuation",
+      "names": [
+        "Loneliness.PrimeFiltering.not_dvd_pow_maxPadicVal_succ",
+        "Loneliness.PrimeFiltering.prime_filtering_padic",
+        "Loneliness.PrimeFiltering.maxPadicVal_le_iff",
+        "Loneliness.PrimeFiltering.maxPadicVal",
+        "Loneliness.PrimeFiltering.padic_level_exact",
+        "Loneliness.PrimeFiltering.prime_filtering_padic_of_le",
+        "Loneliness.PrimeFiltering.padic_level_exact._proof_1_1",
+        "Loneliness.PrimeFiltering.padicValNat_le_maxPadicVal"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessPrimeFilteringWitness": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessPrimeFilteringWitness",
+      "names": [
+        "Loneliness.PrimeFiltering.one_seventh_of_three_per_level",
+        "Loneliness.PrimeFiltering.hasWitness_of_level_budgets",
+        "Loneliness.PrimeFiltering.hasWitness_seven_of_three_per_level",
+        "Loneliness.PrimeFiltering.witness_of_digit_avoiding",
+        "Loneliness.PrimeFiltering.value_lower_of_level_budgets",
+        "Loneliness.PrimeFiltering.hasWitness_seven_of_three_per_valuation",
+        "Loneliness.PrimeFiltering.one_seventh_of_three_per_valuation"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.LonelinessRational": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.LonelinessRational",
+      "names": [
+        "Loneliness.distance_int_div",
+        "Loneliness.distance.eq_1",
+        "Loneliness.clearance_eq_member"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    }
+  },
+  "private_declarations": {
+    "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_1": "Loneliness.LowerCertificate.match_1.eq_1",
+    "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_2": "Loneliness.LowerCertificate.match_1.eq_2",
+    "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.eq_3": "Loneliness.LowerCertificate.match_1.eq_3",
+    "_private.Conjectures.Loneliness.0.Loneliness.LowerCertificate.match_1.splitter": "Loneliness.LowerCertificate.match_1.splitter",
+    "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.eq_1": "Loneliness.clearance.match_1.eq_1",
+    "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.eq_2": "Loneliness.clearance.match_1.eq_2",
+    "_private.Conjectures.Loneliness.0.Loneliness.clearance.match_1.splitter": "Loneliness.clearance.match_1.splitter",
+    "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.eq_1": "Loneliness.coversFrom.match_1.eq_1",
+    "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.eq_2": "Loneliness.coversFrom.match_1.eq_2",
+    "_private.Conjectures.Loneliness.0.Loneliness.coversFrom.match_1.splitter": "Loneliness.coversFrom.match_1.splitter"
+  },
+  "required": [
+    "Loneliness.CriticalFamilies.le_value_any",
+    "Loneliness.Modular.distance_nat_div",
+    "Loneliness.Modular.hasWitness_value_lower",
+    "Loneliness.Modular.witness_clearance_lower",
+    "Loneliness.Modular.witness_value_lower",
+    "Loneliness.PrimeFiltering.avoid_two_per_level",
+    "Loneliness.PrimeFiltering.corollary_three_distance",
+    "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed",
+    "Loneliness.PrimeFiltering.corollary_three_value_of_coprime_seed",
+    "Loneliness.PrimeFiltering.corollary_three_value_padic_of_coprime_seed",
+    "Loneliness.PrimeFiltering.corollary_three_witness_of_coprime_seed",
+    "Loneliness.PrimeFiltering.corollary_three_witness_padic_of_coprime_seed",
+    "Loneliness.PrimeFiltering.exists_affine_avoiding",
+    "Loneliness.PrimeFiltering.exists_avoiding_permutations",
+    "Loneliness.PrimeFiltering.exists_nat_affine_avoiding",
+    "Loneliness.PrimeFiltering.folded_lower_of_exact_power",
+    "Loneliness.PrimeFiltering.hasWitness_of_level_budgets",
+    "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts",
+    "Loneliness.PrimeFiltering.hasWitness_seven_of_three_per_level",
+    "Loneliness.PrimeFiltering.hasWitness_seven_of_three_per_valuation",
+    "Loneliness.PrimeFiltering.maxPadicVal_le_iff",
+    "Loneliness.PrimeFiltering.not_dvd_pow_maxPadicVal_succ",
+    "Loneliness.PrimeFiltering.one_seventh_of_three_below_max_valuation",
+    "Loneliness.PrimeFiltering.one_seventh_of_three_per_level",
+    "Loneliness.PrimeFiltering.one_seventh_of_three_per_valuation",
+    "Loneliness.PrimeFiltering.padicValNat_le_maxPadicVal",
+    "Loneliness.PrimeFiltering.padic_level_exact",
+    "Loneliness.PrimeFiltering.partial_prime_filtering",
+    "Loneliness.PrimeFiltering.prime_filtering",
+    "Loneliness.PrimeFiltering.prime_filtering_coprime",
+    "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds",
+    "Loneliness.PrimeFiltering.prime_filtering_padic",
+    "Loneliness.PrimeFiltering.prime_filtering_padic_of_le",
+    "Loneliness.PrimeFiltering.prime_filtering_unit",
+    "Loneliness.PrimeFiltering.seven_avoid_two_of_three_per_level",
+    "Loneliness.PrimeFiltering.uniform_level_value",
+    "Loneliness.PrimeFiltering.uniform_level_witness",
+    "Loneliness.PrimeFiltering.uniform_padic_value",
+    "Loneliness.PrimeFiltering.value_lower_of_level_budgets",
+    "Loneliness.PrimeFiltering.value_lower_of_lower_valuation_counts",
+    "Loneliness.PrimeFiltering.witness_of_digit_avoiding",
+    "Loneliness.PrimeFiltering.witness_of_prime_power_folded_lower",
+    "Loneliness.PrimeFilteringArithmetic.digit_eq_zero_iff",
+    "Loneliness.PrimeFilteringArithmetic.digit_mul_of_dvd",
+    "Loneliness.PrimeFilteringArithmetic.digit_step",
+    "Loneliness.PrimeFilteringArithmetic.digit_step_of_next_pow_dvd",
+    "Loneliness.PrimeFilteringArithmetic.leading_digit_ne_zero",
+    "Loneliness.PrimeFilteringArithmetic.multiplier_cast_at_top",
+    "Loneliness.PrimeFilteringArithmetic.multiplier_cast_of_lt",
+    "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero",
+    "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero_at_top",
+    "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero_of_lt",
+    "Loneliness.PrimeFilteringArithmetic.quotient_step",
+    "Loneliness.PrimeFilteringDigitBound.folded_lower_of_digit_avoiding",
+    "Loneliness.PrimeFilteringDigitBound.residue_bounds_of_digit_avoiding",
+    "Loneliness.PrimeFilteringResidues.coprime_prime_power_of_nonzero",
+    "Loneliness.PrimeFilteringResidues.digit_eq_of_mod_eq",
+    "Loneliness.PrimeFilteringResidues.digit_mod_prime_power",
+    "Loneliness.PrimeFilteringResidues.exists_unit_lift",
+    "Loneliness.PrimeFilteringResidues.exists_unit_val_lift",
+    "Loneliness.PrimeFilteringResidues.isUnit_prime_power_of_nonzero",
+    "Loneliness.PrimeFilteringResidues.residue_step_of_next_pow_dvd",
+    "Loneliness.PrimeFilteringResidues.step_expansion_of_next_pow_dvd",
+    "Loneliness.PrimeFilteringResidues.val_coprime_prime_power_of_nonzero",
+    "Loneliness.continuous_clearance",
+    "Loneliness.distance_int_div",
+    "Loneliness.distance_nonneg",
+    "Loneliness.le_clearance"
+  ],
+  "summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 299,
+    "modules": 18,
+    "private_declarations": 10,
+    "raw_declarations": 299,
+    "required": 68,
+    "tag": "passed",
+    "theorems": 243
+  }
+}

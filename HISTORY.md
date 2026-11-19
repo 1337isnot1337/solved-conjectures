@@ -1,5 +1,15 @@
 # History
 
+## 2026-11-19 — Prime filtering and proved runner classes
+
+Registered twelve modules after the complete 18-module hosted gate passed
+strict sources, 33 literal contracts, all 299 owned declarations, and exact
+stock-kernel replay. The proofs formalize the published prime-filtering
+lemma and seeded distance corollary. The `1/7` runner consequence retains
+the three-distinct-speeds budget at each valuation level below the maximum.
+The unrestricted six-speed bound remains pending.
+[Scope and original evidence](docs/verification/prime-filtering-exact-44591941338/README.md).
+
 ## 2026-11-19 — Registered order-nine automorphism subgroup and orbit proofs
 
 Registered the two existing modules for odd automorphism subgroups of abelian

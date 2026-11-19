@@ -1,0 +1,651 @@
+{
+  "base_commit": "6932e0ba9c532f86fbf9e5fb23aff9e55b8e99f9",
+  "counts": {
+    "bytes": 1808243,
+    "files": 128,
+    "new_modules": 12,
+    "new_required": 67
+  },
+  "files": [
+    {
+      "bytes": 33995,
+      "path": "HISTORY.md",
+      "sha256": "649a880e5828663a64ee22db65b98a9ab763041256d65890244933db7dd79504"
+    },
+    {
+      "bytes": 79102,
+      "path": "docs/formalization.md",
+      "sha256": "18519b1deddfd9a83bb6dce751c8190054daf2da5f7fd6b60280acab0c46b5f5"
+    },
+    {
+      "bytes": 203843,
+      "path": "docs/lean-status.md",
+      "sha256": "35ed0b3ef2d2d33bd74be00cae8b292d4081acd3496ccdaae9cd1a85747ac031"
+    },
+    {
+      "bytes": 3504,
+      "path": "docs/prime-filtering-candidate.md",
+      "sha256": "ef7ac47e33d2ffe0551c96aa8ffb6393ae1f920003bf22d1a707e418011ba17a"
+    },
+    {
+      "bytes": 2665,
+      "path": "docs/verification/prime-filtering-exact-44591941338/README.md",
+      "sha256": "313442459d9a7dcd807c52bc8390e13b1c0e85ab0579bbea3fa92bbb66713d29"
+    },
+    {
+      "bytes": 19270,
+      "path": "docs/verification/prime-filtering-exact-44591941338/archive-members.json",
+      "sha256": "b8de943c7d66fc9c35e351427972691ea8ca66cdfd90c36a62e881f71b110be9"
+    },
+    {
+      "bytes": 923,
+      "path": "docs/verification/prime-filtering-exact-44591941338/artifacts.json",
+      "sha256": "82a33ec9a35cba91d59232daecde627db19a50e47011c6d8e26f1720adc51456"
+    },
+    {
+      "bytes": 9531,
+      "path": "docs/verification/prime-filtering-exact-44591941338/authenticate_hosted.py",
+      "sha256": "764733f107c934f97417afe5d0318a794b1565fed760732033d019a4afe19195"
+    },
+    {
+      "bytes": 1281,
+      "path": "docs/verification/prime-filtering-exact-44591941338/authentication.json",
+      "sha256": "292979ad94b997fa0ee877df00ba9691c6ecc0e4b538c25a01a50e8ea5ba15dd"
+    },
+    {
+      "bytes": 2955,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/.github/workflows/lean-prime-filtering-exact.yml",
+      "sha256": "16b5e401990aff3239178191a899123796e8158078befaf53424b7a65d85fabd"
+    },
+    {
+      "bytes": 9282,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/docs/prime-filtering-exact-sources.json",
+      "sha256": "48c1ea356bf5da8ea21f662f5fc2030089db07f8aa8f2cdb3feb4e4a648e5ef3"
+    },
+    {
+      "bytes": 3206,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/lean/lake-manifest.json",
+      "sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953"
+    },
+    {
+      "bytes": 348,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/lean/lakefile.toml",
+      "sha256": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089"
+    },
+    {
+      "bytes": 25,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/lean/lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+    },
+    {
+      "bytes": 12337,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/scripts/audit_lean_all_owned.py",
+      "sha256": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f"
+    },
+    {
+      "bytes": 20329,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/scripts/build_lean_parallel.py",
+      "sha256": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd"
+    },
+    {
+      "bytes": 22962,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/scripts/plan_accepted_lean.py",
+      "sha256": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842"
+    },
+    {
+      "bytes": 2650,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/scripts/plan_lean_candidates.py",
+      "sha256": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0"
+    },
+    {
+      "bytes": 7788,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/scripts/replay_lean.py",
+      "sha256": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c"
+    },
+    {
+      "bytes": 21559,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/scripts/verify_frankl_orbit_batches.py",
+      "sha256": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf"
+    },
+    {
+      "bytes": 14161,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/scripts/verify_lean_candidate.py",
+      "sha256": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+    },
+    {
+      "bytes": 33823,
+      "path": "docs/verification/prime-filtering-exact-44591941338/controls/scripts/verify_prime_filtering_exact.py",
+      "sha256": "d5baf0fce12d879ced683765ef4d36a7b8303cadd6829cfd13a266fdf68cd2bf"
+    },
+    {
+      "bytes": 152981,
+      "path": "docs/verification/prime-filtering-exact-44591941338/declaration-inventory.json",
+      "sha256": "c7f82d2390dce64fb9a17e5c2a3e885efee899d8638349716d447e8e42a552c1"
+    },
+    {
+      "bytes": 2901,
+      "path": "docs/verification/prime-filtering-exact-44591941338/job.json",
+      "sha256": "aa96ebb92d5a923e8b31ed62fd629335a2b28144929790b887345a20afd4ef95"
+    },
+    {
+      "bytes": 50602,
+      "path": "docs/verification/prime-filtering-exact-44591941338/job.log",
+      "sha256": "03893ede4a0ebe901202c25a1548caa3c460ab1dc0189a02559fe968cda4dafd"
+    },
+    {
+      "bytes": 33,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.Loneliness.kernel.log",
+      "sha256": "381ad3ff638b4f35804e7c2a204a14a82ab29219cf5cc060d045acc27b90eb28"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.Loneliness.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 43,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessContinuity.kernel.log",
+      "sha256": "7264f9eab09c0ab1a3907cf0cde588559b77d6c9ad68cc93e6cd9fbb7deef86e"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessContinuity.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 45,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessCriticalBase.kernel.log",
+      "sha256": "0006fcc9df8f4040810ba1a8383d1636b283327a300f369e1dca3274ff0cebf2"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessCriticalBase.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 43,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessFiveFamily.kernel.log",
+      "sha256": "34a6f139b5b00907c71526d36b276ce6e9488a877c161d45ff5ec4260b65e3e2"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessFiveFamily.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 47,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessModularWitness.kernel.log",
+      "sha256": "215fe2f525ee3eefe932cbe865c83215dee95c3c14a0fabd8077fcb65c386f86"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessModularWitness.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 47,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFiltering.kernel.log",
+      "sha256": "8e453886ce5f56a64b0cf9e9b944b5bfc0ea63192fe31115b46c37edf66b3f7b"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFiltering.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 57,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringArithmetic.kernel.log",
+      "sha256": "b253a7a444b01b1eaba96439b58ea9596ac82575e24f6cb85ce8db2d77b234f4"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringArithmetic.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 52,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringCases.kernel.log",
+      "sha256": "b9d7bad45014b61300effa8892a3309831e42daa73ba83f1e427c022f9731640"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringCases.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 53,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringChoice.kernel.log",
+      "sha256": "05f93d3b6ea7cfb8f8792063438907d8e1e1872740df5fbd90f313f86fb4810c"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringChoice.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 61,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringCorollaryThree.kernel.log",
+      "sha256": "27ca7bb2aee8759416a38272c8c3d30ed324b5bd24be6124b1eb02f49890e948"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringCorollaryThree.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 57,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringDigitBound.kernel.log",
+      "sha256": "018820e333a9ad574b38fc552d5b383f8dba4bd091ba757f7fb15eac3fd9a3d3"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringDigitBound.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 54,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringPartial.kernel.log",
+      "sha256": "7dd07290f8c61ebd84516f058ed75eb09d2f7a6cb1f75f28cc6908fa83c04168"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringPartial.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 55,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringResidues.kernel.log",
+      "sha256": "589ff79c10af3915c0ac45aa905e299626443c29ccbed89495ffdeda79351a2b"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringResidues.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 59,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringTwoForbidden.kernel.log",
+      "sha256": "035fd7da922c0aab31d66e34b5091d3f079599830df8f4c33e2ffc19aaf28f1a"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringTwoForbidden.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 52,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringUnits.kernel.log",
+      "sha256": "12872cc4dc2d4d455eac18ab84f305e93aeef7f0fb2c0cd209d71daaff1bfdcd"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringUnits.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 56,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringValuation.kernel.log",
+      "sha256": "ff41a0b51ffb8900c3564813762a8406b919e94e47eb2bc8cbc33351927a93fb"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringValuation.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 54,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringWitness.kernel.log",
+      "sha256": "70d8118b693724295b35c1f0d032d5bf8aed4e6142f9323406d2f170c477345b"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessPrimeFilteringWitness.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 41,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessRational.kernel.log",
+      "sha256": "f11f5c56de63f1dedd0214b36fc04f2b4a14a4f9540134552e8b318d7b1f8c66"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/Conjectures.LonelinessRational.source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 107419,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/all-owned-audit.log",
+      "sha256": "b398fc97e7fa08f185d0521f999216fa61d25767914d6e8ff3e6901c09f60f17"
+    },
+    {
+      "bytes": 0,
+      "path": "docs/verification/prime-filtering-exact-44591941338/logs/literal-statements.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 20540,
+      "path": "docs/verification/prime-filtering-exact-44591941338/preservation.json",
+      "sha256": "f2aa22ec08a810749a91c4a60d1cd983bfa754136b9e900d2df6b4c1b093f1a8"
+    },
+    {
+      "bytes": 519,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.Loneliness.kernel.json",
+      "sha256": "0b4b94b18e0af7e6149ce6d98246aa7b1cb34e86a690f0fdead6723beb14979f"
+    },
+    {
+      "bytes": 666,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.Loneliness.source.json",
+      "sha256": "7a7d7450edff3df969c7a46d6d733e92230cd66e2b710f1d6bde7ab20e6d7048"
+    },
+    {
+      "bytes": 538,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessContinuity.kernel.json",
+      "sha256": "893519bb04cf93391af68cc42a5bf83891a5fa837dbaa595ce6244928e229a6e"
+    },
+    {
+      "bytes": 706,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessContinuity.source.json",
+      "sha256": "5cd54f2c979e7a0c72733ba3b976ff71a04faf8db694000236f0f97d460cacfe"
+    },
+    {
+      "bytes": 543,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessCriticalBase.kernel.json",
+      "sha256": "bb35cf8f25e91a00dc4ad5d4150577d44ae97c715c0feb356237ed1876349085"
+    },
+    {
+      "bytes": 712,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessCriticalBase.source.json",
+      "sha256": "fc1fa8bf900656c03c0094f9c47429470f5637cacb1f7608226a96dea66630f5"
+    },
+    {
+      "bytes": 539,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessFiveFamily.kernel.json",
+      "sha256": "9208d2b235b51754867a9dea3a55d834767418af28ea44c66931e15edf2a4235"
+    },
+    {
+      "bytes": 696,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessFiveFamily.source.json",
+      "sha256": "6839ba9e3bf2108b4e85ec19e39b8125201b28b64440f04157d611ae3ef013ae"
+    },
+    {
+      "bytes": 547,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessModularWitness.kernel.json",
+      "sha256": "e54e962f5f667f1e44d7a87e1f1122968f73812199b9194b7d32c8f8f8c4ecf1"
+    },
+    {
+      "bytes": 707,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessModularWitness.source.json",
+      "sha256": "d1cd77c652320833b455f78d7519244b93ed05567545130d4acbf703bd2c1124"
+    },
+    {
+      "bytes": 547,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFiltering.kernel.json",
+      "sha256": "6d62a414a0c3c4d8a3485abf2475dd06591e1b56f5231deee504b592eacbe161"
+    },
+    {
+      "bytes": 708,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFiltering.source.json",
+      "sha256": "cbcca9a0f7e385751dfb657af53f5b11c99b6b8f8ee60dc1e91c9c2da48b6a4a"
+    },
+    {
+      "bytes": 566,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringArithmetic.kernel.json",
+      "sha256": "caca4aba1525fe479aafd44fcec03ff606e8839b52a11a26f789189afcd45b13"
+    },
+    {
+      "bytes": 738,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringArithmetic.source.json",
+      "sha256": "78e02b86844946bec8c556decf9de36fd603f3491225953bd68600ec5cc1ce4b"
+    },
+    {
+      "bytes": 557,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringCases.kernel.json",
+      "sha256": "118df5907cfdaf8d77acd8690dc234697875aadd9fc727c01b99f3340ba7e62b"
+    },
+    {
+      "bytes": 733,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringCases.source.json",
+      "sha256": "b2b44885637b460af16d880f5d55c2e5150fbfe7aaf5f802c49a6b76e0111d60"
+    },
+    {
+      "bytes": 568,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringChoice.kernel.json",
+      "sha256": "69797b85e9c320b167f4f865db6fe232b97f1fabf70d53d541e91724ba2783da"
+    },
+    {
+      "bytes": 746,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringChoice.source.json",
+      "sha256": "2fb21d8fcb12b20d5814eb2a7dd3deb4f7290407415f4bfec10736b776a36291"
+    },
+    {
+      "bytes": 574,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringCorollaryThree.kernel.json",
+      "sha256": "e2c56f855e0a184fcdbf5d4bc0aa76fa6d4da163841ba147b0db6f77411f15a7"
+    },
+    {
+      "bytes": 759,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringCorollaryThree.source.json",
+      "sha256": "e58e7f947b7b95846a7e20f6ccf11ce23ddb3b07153bba56bf659130cff4dbe3"
+    },
+    {
+      "bytes": 566,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringDigitBound.kernel.json",
+      "sha256": "96f1b359b3ce7e4f9a31ea8484c9269333c088ad5fa9c292972a135a49944cad"
+    },
+    {
+      "bytes": 738,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringDigitBound.source.json",
+      "sha256": "88e38f72d3013fe44875ac906e746e8426a11dd19e13f2efdd722b4eaa1ee56f"
+    },
+    {
+      "bytes": 561,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringPartial.kernel.json",
+      "sha256": "6b8a37ae15bad5be301d3dfaa541aeb6139982ee7d468f3296f7c7b924601083"
+    },
+    {
+      "bytes": 739,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringPartial.source.json",
+      "sha256": "3ec8a4da21f3e525cb2292efeffc31c74dfd788b2acfe2dd907aef339c716902"
+    },
+    {
+      "bytes": 563,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringResidues.kernel.json",
+      "sha256": "5fac7f42fb0b84bc024fa66a968a95859562ded6ef61392a795e75d1be596081"
+    },
+    {
+      "bytes": 742,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringResidues.source.json",
+      "sha256": "87884b32e650ea496fc02e32cc67a53659612b3e1aecaad720022566c421c256"
+    },
+    {
+      "bytes": 571,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringTwoForbidden.kernel.json",
+      "sha256": "eb51350ec381124a9fdd6347be65d2d82a3546aa72389167e9ade577c3eff10a"
+    },
+    {
+      "bytes": 754,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringTwoForbidden.source.json",
+      "sha256": "a45017bcef4d9a19de387b94b5aa13114a71da3fe1fc112c4812b7700cf43a9c"
+    },
+    {
+      "bytes": 567,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringUnits.kernel.json",
+      "sha256": "22fb9126253080b3ff31f76a009c250cf11e3b3d12ba9033d85bfaa0bf9c7778"
+    },
+    {
+      "bytes": 733,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringUnits.source.json",
+      "sha256": "a36c1abd37f9da319b27244a0791b17ccf11af2d15bc421dccc14bb3b4a41944"
+    },
+    {
+      "bytes": 564,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringValuation.kernel.json",
+      "sha256": "5b74510b53ec965174b44e14224ac3b67efcba2fe61f8fb903478872757420fc"
+    },
+    {
+      "bytes": 735,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringValuation.source.json",
+      "sha256": "df6035572812def05ad6a26157d902b7370657650e2e77011c18e7088fefc7ee"
+    },
+    {
+      "bytes": 561,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringWitness.kernel.json",
+      "sha256": "6a931f60550ced0dbd75f3b83387b5a1f46f3be331745baf870496dd798e5efb"
+    },
+    {
+      "bytes": 728,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessPrimeFilteringWitness.source.json",
+      "sha256": "4d00f6116f7ae6b599fdbc76e13c3e57eb3d5799128d1ecc4d29622141e254f9"
+    },
+    {
+      "bytes": 534,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessRational.kernel.json",
+      "sha256": "49b7d092e7c80f7e17f583634cb68402868d6a831902e58b45be3b3b64b20a1f"
+    },
+    {
+      "bytes": 689,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/Conjectures.LonelinessRational.source.json",
+      "sha256": "fcb367e4cd04fd6ca32d8b2914088eb909807b7b3df1e9cb4e07b08f21d9b422"
+    },
+    {
+      "bytes": 507,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/all-owned-audit.json",
+      "sha256": "207e0602121b6ed91fd5c13ac403a3f7b00595339024a2077b00059558a0d96a"
+    },
+    {
+      "bytes": 536,
+      "path": "docs/verification/prime-filtering-exact-44591941338/progress/literal-statements.json",
+      "sha256": "2c3c5f3c2a2710c0b977bc519bae610d4d22cda27384c2acaad3338970eaa71a"
+    },
+    {
+      "bytes": 72531,
+      "path": "docs/verification/prime-filtering-exact-44591941338/receipt.json",
+      "sha256": "009a768a638e275c6705f1bc08c316ca3686553bd591c2c25765fc29531ed394"
+    },
+    {
+      "bytes": 5909,
+      "path": "docs/verification/prime-filtering-exact-44591941338/registration.json",
+      "sha256": "c6a0e42845ba564ef3fe9199724605b4bcfbe0198012c54427cfdae05e1ae81b"
+    },
+    {
+      "bytes": 16193,
+      "path": "docs/verification/prime-filtering-exact-44591941338/run.json",
+      "sha256": "2757061e44acedf831cdd50d47236ddf9df7fd1822c1960054c79750d3476c5a"
+    },
+    {
+      "bytes": 9269,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/Loneliness.lean",
+      "sha256": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce"
+    },
+    {
+      "bytes": 2411,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessContinuity.lean",
+      "sha256": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae"
+    },
+    {
+      "bytes": 7215,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessCriticalBase.lean",
+      "sha256": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24"
+    },
+    {
+      "bytes": 5823,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessFiveFamily.lean",
+      "sha256": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96"
+    },
+    {
+      "bytes": 7648,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessModularWitness.lean",
+      "sha256": "c5329d2e079f6d04d0079ab3fe90d814d1f3393b2381c74be6375ce091b569fb"
+    },
+    {
+      "bytes": 5170,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFiltering.lean",
+      "sha256": "05b08fc15254aaa46c8202e46060680c08fd5c0acad2f5c6f9d17fd7688671eb"
+    },
+    {
+      "bytes": 4359,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFilteringArithmetic.lean",
+      "sha256": "456b09d0c073b9f7571abcb7c79e7f6feb9c59e18a2e2f6d755afef3125b8969"
+    },
+    {
+      "bytes": 10451,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFilteringCases.lean",
+      "sha256": "24a85af59ade19525db6d8b062913b328a6e6f76867ecf6d671387a22588570e"
+    },
+    {
+      "bytes": 4090,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFilteringChoice.lean",
+      "sha256": "cf62a152c2d5005db4e9ab0042d8370a0c08bddc11ba936c290233581eaf03ef"
+    },
+    {
+      "bytes": 4979,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFilteringCorollaryThree.lean",
+      "sha256": "cd4d6eaba39fc2f05208471dcb1a8e7082bc1b94e53fd32d555baa44553f8216"
+    },
+    {
+      "bytes": 2529,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFilteringDigitBound.lean",
+      "sha256": "3bd49fdaf70eee59dffddfc1a314389ebc88ea25b1cb1d3afb238ffec2c74dda"
+    },
+    {
+      "bytes": 4851,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFilteringPartial.lean",
+      "sha256": "db30f4f9d8ed1d2cf26dce1a0b3a7e4de5696026372e68fb81d66f1de8c69d28"
+    },
+    {
+      "bytes": 3533,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFilteringResidues.lean",
+      "sha256": "df55efc6c4a81b87d6b8dad1c349bd3062b890701d71cacc3f2b362e8ecf10b8"
+    },
+    {
+      "bytes": 2943,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFilteringTwoForbidden.lean",
+      "sha256": "d1848a75668ca9168f95a92ce38fc5995182f4487b3f85095957804989533ae2"
+    },
+    {
+      "bytes": 2443,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFilteringUnits.lean",
+      "sha256": "47ed6c4bda619eabf3851605a8215ec89b3a7d7011e418bbbf44f37d36833ddb"
+    },
+    {
+      "bytes": 4145,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFilteringValuation.lean",
+      "sha256": "087d104a00fc9f7e8dfb99b14a0fc09a3a97970a4794b942170a917c51ebd67a"
+    },
+    {
+      "bytes": 5711,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessPrimeFilteringWitness.lean",
+      "sha256": "23ac612289d2d39f8b71d4e158a82e94f5906bb422e1a044080c3d4315a1a5d1"
+    },
+    {
+      "bytes": 1475,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/Conjectures/LonelinessRational.lean",
+      "sha256": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684"
+    },
+    {
+      "bytes": 10740,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/PrimeFilteringExactAudit.lean",
+      "sha256": "7f9fe97e0a5a60bff940fa55f5f6a21f45249885c6e33e771e499011e23abebe"
+    },
+    {
+      "bytes": 10854,
+      "path": "docs/verification/prime-filtering-exact-44591941338/src/PrimeFilteringExactStatements.lean",
+      "sha256": "b291026efb29a943b78fe2bea124c1e3282313acfa0e3e1065f6da7e1b7b3742"
+    },
+    {
+      "bytes": 38090,
+      "path": "lean/Conjectures.lean",
+      "sha256": "a3d106657bf490a8fdaa1d5823d473983af555be63b024b5cd7a41d636b8ee09"
+    },
+    {
+      "bytes": 636789,
+      "path": "lean/ProofAudit.lean",
+      "sha256": "22c1b4c3e55915ea5a1310ee98b1baf1de28d2cb61a22b381b2b3fe13865ad93"
+    },
+    {
+      "bytes": 63144,
+      "path": "scripts/verify_lean.sh",
+      "sha256": "47c4618795addf1b88561f4a835e75cd06eda3f9d91e421418df315da0cffdd5"
+    }
+  ]
+}

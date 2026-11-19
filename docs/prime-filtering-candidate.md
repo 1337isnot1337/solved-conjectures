@@ -47,8 +47,12 @@ The complete local run passed all 18 fresh sources, all 33 contracts, the
 299-declaration audit, and all 18 stock replays. Its raw receipt SHA-256 is
 `2b9cb941c6e2b316e460437856cb6e08027fb55995c97db90086f7da550264c6`.
 The audit contains 243 theorems and 10 private declarations. Controller and
-statement reviews passed independently. This publication leaves the accepted
-registries unchanged while the same complete gate checks the public snapshot.
+statement reviews passed independently. The complete hosted gate also passed
+at `e6d53ced9fd3b6ad4a311c3eecbe1fcbd0cdd491`, run `44591941338`.
+The twelve new modules are registered after authentication of that original
+artifact. [Preserved evidence and scope](verification/prime-filtering-exact-44591941338/README.md)
+record the exact source and process bindings. The complete merged-package
+gate remains a separate obligation.
 
 The source manifest is `docs/prime-filtering-exact-sources.json`; the verifier
 is `scripts/verify_prime_filtering_exact.py`; the workflow is

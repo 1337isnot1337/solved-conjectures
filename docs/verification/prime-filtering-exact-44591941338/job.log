@@ -1,0 +1,561 @@
+﻿2026-11-19T18:50:00.5056018Z Current runner version: '2.338.2'
+2026-11-19T18:50:00.5093373Z ##[group]Runner Image Provisioner
+2026-11-19T18:50:00.5094853Z Hosted Compute Agent
+2026-11-19T18:50:00.5095879Z Version: 20261103.629
+2026-11-19T18:50:00.5097094Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T18:50:00.5098505Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T18:50:00.5099723Z Worker ID: {3118dfe8-3003-4382-8d4a-ae8943a28db9}
+2026-11-19T18:50:00.5101111Z Region: eastus
+2026-11-19T18:50:00.5102055Z Cloud: Azure
+2026-11-19T18:50:00.5103390Z ##[endgroup]
+2026-11-19T18:50:00.5106025Z ##[group]Operating System
+2026-11-19T18:50:00.5107200Z Ubuntu
+2026-11-19T18:50:00.5108126Z 26.04.1
+2026-11-19T18:50:00.5108997Z LTS
+2026-11-19T18:50:00.5109976Z ##[endgroup]
+2026-11-19T18:50:00.5110985Z ##[group]Runner Image
+2026-11-19T18:50:00.5112112Z Image: ubuntu-26.04
+2026-11-19T18:50:00.5113328Z Version: 20261111.196.1
+2026-11-19T18:50:00.5115587Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-19T18:50:00.5118464Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+2026-11-19T18:50:00.5120380Z ##[endgroup]
+2026-11-19T18:50:00.5122583Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T18:50:00.5125239Z Contents: read
+2026-11-19T18:50:00.5126453Z Metadata: read
+2026-11-19T18:50:00.5127458Z ##[endgroup]
+2026-11-19T18:50:00.5131089Z Secret source: Actions
+2026-11-19T18:50:00.5133185Z Cache mode: write
+2026-11-19T18:50:00.5134751Z Prepare workflow directory
+2026-11-19T18:50:00.5624875Z Prepare all required actions
+2026-11-19T18:50:00.5696749Z Getting action download info
+2026-11-19T18:50:00.7616032Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-19T18:50:00.9187249Z Download action repository 'leanprover/lean-action@v1' (SHA:ba3fdfe5c4476c925da13bf11a005ddb47e47aee)
+2026-11-19T18:50:01.0406000Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-19T18:50:01.2725594Z Getting action download info
+2026-11-19T18:50:01.3489666Z Download action repository 'actions/cache@caa296126883cff596d87d8935842f9db880ef25' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-11-19T18:50:01.5857029Z Complete job name: verify
+2026-11-19T18:50:01.6782673Z ##[group]Run actions/checkout@v4
+2026-11-19T18:50:01.6783669Z with:
+2026-11-19T18:50:01.6784173Z   persist-credentials: false
+2026-11-19T18:50:01.6784803Z   repository: 1337isnot1337/solved-conjectures
+2026-11-19T18:50:01.6789310Z   token: ***
+2026-11-19T18:50:01.6789791Z   ssh-strict: true
+2026-11-19T18:50:01.6790321Z   ssh-user: git
+2026-11-19T18:50:01.6790789Z   clean: true
+2026-11-19T18:50:01.6791279Z   sparse-checkout-cone-mode: true
+2026-11-19T18:50:01.6791862Z   fetch-depth: 1
+2026-11-19T18:50:01.6792467Z   fetch-tags: false
+2026-11-19T18:50:01.6792975Z   show-progress: true
+2026-11-19T18:50:01.6793477Z   lfs: false
+2026-11-19T18:50:01.6793947Z   submodules: false
+2026-11-19T18:50:01.6794478Z   set-safe-directory: true
+2026-11-19T18:50:01.6795036Z   allow-unsafe-pr-checkout: false
+2026-11-19T18:50:01.6795908Z ##[endgroup]
+2026-11-19T18:50:02.2279787Z Syncing repository: 1337isnot1337/solved-conjectures
+2026-11-19T18:50:02.2284417Z ##[group]Getting Git version info
+2026-11-19T18:50:02.2287226Z Working directory is '/home/runner/work/solved-conjectures/solved-conjectures'
+2026-11-19T18:50:02.2290735Z [command]/usr/bin/git version
+2026-11-19T18:50:02.2292617Z git version 2.56.1
+2026-11-19T18:50:02.2297699Z ##[endgroup]
+2026-11-19T18:50:02.2305621Z Temporarily overriding HOME='/home/runner/work/_temp/d00c2952-c405-4525-9762-34d55fe5dcb6' before making global git config changes
+2026-11-19T18:50:02.2309575Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T18:50:02.2313593Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T18:50:02.2349276Z Deleting the contents of '/home/runner/work/solved-conjectures/solved-conjectures'
+2026-11-19T18:50:02.2355331Z ##[group]Initializing the repository
+2026-11-19T18:50:02.2359158Z [command]/usr/bin/git init /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T18:50:02.2537708Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T18:50:02.2540827Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T18:50:02.2544357Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T18:50:02.2546670Z hint: call:
+2026-11-19T18:50:02.2547795Z hint:
+2026-11-19T18:50:02.2549427Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T18:50:02.2551934Z hint:
+2026-11-19T18:50:02.2554512Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T18:50:02.2558020Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T18:50:02.2560130Z hint:
+2026-11-19T18:50:02.2561268Z hint: 	git branch -m <name>
+2026-11-19T18:50:02.2562992Z hint:
+2026-11-19T18:50:02.2565033Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T18:50:02.2569439Z Initialized empty Git repository in /home/runner/work/solved-conjectures/solved-conjectures/.git/
+2026-11-19T18:50:02.2574684Z [command]/usr/bin/git remote add origin https://github.com/1337isnot1337/solved-conjectures
+2026-11-19T18:50:02.2628589Z ##[endgroup]
+2026-11-19T18:50:02.2631148Z ##[group]Disabling automatic garbage collection
+2026-11-19T18:50:02.2633706Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-19T18:50:02.2667640Z ##[endgroup]
+2026-11-19T18:50:02.2669641Z ##[group]Setting up auth
+2026-11-19T18:50:02.2675244Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T18:50:02.2710857Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T18:50:02.3305079Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T18:50:02.3340134Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T18:50:02.3612069Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T18:50:02.3647387Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T18:50:02.3917070Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T18:50:02.3956965Z ##[endgroup]
+2026-11-19T18:50:02.3960431Z ##[group]Fetching the repository
+2026-11-19T18:50:02.3971948Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e6d53ced9fd3b6ad4a311c3eecbe1fcbd0cdd491:refs/remotes/origin/main
+2026-11-19T18:50:05.2984744Z From https://github.com/1337isnot1337/solved-conjectures
+2026-11-19T18:50:05.2985384Z  * [new ref]         e6d53ced9fd3b6ad4a311c3eecbe1fcbd0cdd491 -> origin/main
+2026-11-19T18:50:05.2986818Z ##[endgroup]
+2026-11-19T18:50:05.2987248Z ##[group]Determining the checkout info
+2026-11-19T18:50:05.2987700Z ##[endgroup]
+2026-11-19T18:50:05.2990977Z [command]/usr/bin/git sparse-checkout disable
+2026-11-19T18:50:05.3048866Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-19T18:50:05.3077317Z ##[group]Checking out the ref
+2026-11-19T18:50:05.3083913Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-19T18:50:06.3582053Z Updating files:  85% (9588/11243)
+2026-11-19T18:50:06.3994421Z Updating files:  86% (9669/11243)
+2026-11-19T18:50:06.4378225Z Updating files:  87% (9782/11243)
+2026-11-19T18:50:06.4489111Z Updating files:  88% (9894/11243)
+2026-11-19T18:50:06.4595885Z Updating files:  89% (10007/11243)
+2026-11-19T18:50:06.4640655Z Updating files:  90% (10119/11243)
+2026-11-19T18:50:06.4704469Z Updating files:  91% (10232/11243)
+2026-11-19T18:50:06.4745849Z Updating files:  92% (10344/11243)
+2026-11-19T18:50:06.4828924Z Updating files:  93% (10456/11243)
+2026-11-19T18:50:06.4897679Z Updating files:  94% (10569/11243)
+2026-11-19T18:50:06.4976475Z Updating files:  95% (10681/11243)
+2026-11-19T18:50:06.5067815Z Updating files:  96% (10794/11243)
+2026-11-19T18:50:06.5411594Z Updating files:  97% (10906/11243)
+2026-11-19T18:50:06.5516642Z Updating files:  98% (11019/11243)
+2026-11-19T18:50:06.5619860Z Updating files:  99% (11131/11243)
+2026-11-19T18:50:06.5620661Z Updating files: 100% (11243/11243)
+2026-11-19T18:50:06.5621441Z Updating files: 100% (11243/11243), done.
+2026-11-19T18:50:06.5737359Z Switched to a new branch 'main'
+2026-11-19T18:50:06.5745980Z branch 'main' set up to track 'origin/main'.
+2026-11-19T18:50:06.5839510Z ##[endgroup]
+2026-11-19T18:50:06.5895223Z [command]/usr/bin/git log -1 --format=%H
+2026-11-19T18:50:06.5921851Z e6d53ced9fd3b6ad4a311c3eecbe1fcbd0cdd491
+2026-11-19T18:50:06.5933360Z ##[group]Removing auth
+2026-11-19T18:50:06.5936809Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T18:50:06.5970417Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T18:50:06.6271075Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T18:50:06.6296929Z http.https://github.com/.extraheader
+2026-11-19T18:50:06.6305600Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-19T18:50:06.6342915Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T18:50:06.6621630Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T18:50:06.6653232Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T18:50:06.6925924Z ##[endgroup]
+2026-11-19T18:50:06.7146067Z ##[group]Run python3 -m py_compile scripts/verify_prime_filtering_exact.py
+2026-11-19T18:50:06.7146703Z [36;1mpython3 -m py_compile scripts/verify_prime_filtering_exact.py[0m
+2026-11-19T18:50:06.7147173Z [36;1mpython3 scripts/verify_prime_filtering_exact.py --plan[0m
+2026-11-19T18:50:06.7201737Z shell: /usr/bin/bash -e {0}
+2026-11-19T18:50:06.7202003Z ##[endgroup]
+2026-11-19T18:50:06.9233586Z {
+2026-11-19T18:50:06.9234155Z   "modules": [
+2026-11-19T18:50:06.9234675Z     "Conjectures.Loneliness",
+2026-11-19T18:50:06.9235334Z     "Conjectures.LonelinessPrimeFilteringArithmetic",
+2026-11-19T18:50:06.9236057Z     "Conjectures.LonelinessPrimeFilteringChoice",
+2026-11-19T18:50:06.9236715Z     "Conjectures.LonelinessContinuity",
+2026-11-19T18:50:06.9237265Z     "Conjectures.LonelinessFiveFamily",
+2026-11-19T18:50:06.9237887Z     "Conjectures.LonelinessPrimeFilteringResidues",
+2026-11-19T18:50:06.9238534Z     "Conjectures.LonelinessPrimeFiltering",
+2026-11-19T18:50:06.9239161Z     "Conjectures.LonelinessRational",
+2026-11-19T18:50:06.9239701Z     "Conjectures.LonelinessCriticalBase",
+2026-11-19T18:50:06.9240347Z     "Conjectures.LonelinessPrimeFilteringDigitBound",
+2026-11-19T18:50:06.9241100Z     "Conjectures.LonelinessPrimeFilteringPartial",
+2026-11-19T18:50:06.9241821Z     "Conjectures.LonelinessPrimeFilteringTwoForbidden",
+2026-11-19T18:50:06.9242747Z     "Conjectures.LonelinessPrimeFilteringUnits",
+2026-11-19T18:50:06.9243451Z     "Conjectures.LonelinessPrimeFilteringValuation",
+2026-11-19T18:50:06.9244248Z     "Conjectures.LonelinessModularWitness",
+2026-11-19T18:50:06.9244944Z     "Conjectures.LonelinessPrimeFilteringCorollaryThree",
+2026-11-19T18:50:06.9246014Z     "Conjectures.LonelinessPrimeFilteringWitness",
+2026-11-19T18:50:06.9246692Z     "Conjectures.LonelinessPrimeFilteringCases"
+2026-11-19T18:50:06.9247230Z   ],
+2026-11-19T18:50:06.9247532Z   "required": [
+2026-11-19T18:50:06.9247957Z     "Loneliness.CriticalFamilies.le_value_any",
+2026-11-19T18:50:06.9248565Z     "Loneliness.Modular.distance_nat_div",
+2026-11-19T18:50:06.9249212Z     "Loneliness.Modular.hasWitness_value_lower",
+2026-11-19T18:50:06.9249818Z     "Loneliness.Modular.witness_clearance_lower",
+2026-11-19T18:50:06.9250419Z     "Loneliness.Modular.witness_value_lower",
+2026-11-19T18:50:06.9251045Z     "Loneliness.PrimeFiltering.avoid_two_per_level",
+2026-11-19T18:50:06.9251732Z     "Loneliness.PrimeFiltering.corollary_three_distance",
+2026-11-19T18:50:06.9252754Z     "Loneliness.PrimeFiltering.corollary_three_distance_of_coprime_seed",
+2026-11-19T18:50:06.9253745Z     "Loneliness.PrimeFiltering.corollary_three_value_of_coprime_seed",
+2026-11-19T18:50:06.9254716Z     "Loneliness.PrimeFiltering.corollary_three_value_padic_of_coprime_seed",
+2026-11-19T18:50:06.9255728Z     "Loneliness.PrimeFiltering.corollary_three_witness_of_coprime_seed",
+2026-11-19T18:50:06.9256713Z     "Loneliness.PrimeFiltering.corollary_three_witness_padic_of_coprime_seed",
+2026-11-19T18:50:06.9257625Z     "Loneliness.PrimeFiltering.exists_affine_avoiding",
+2026-11-19T18:50:06.9258396Z     "Loneliness.PrimeFiltering.exists_avoiding_permutations",
+2026-11-19T18:50:06.9259177Z     "Loneliness.PrimeFiltering.exists_nat_affine_avoiding",
+2026-11-19T18:50:06.9259939Z     "Loneliness.PrimeFiltering.folded_lower_of_exact_power",
+2026-11-19T18:50:06.9260703Z     "Loneliness.PrimeFiltering.hasWitness_of_level_budgets",
+2026-11-19T18:50:06.9261505Z     "Loneliness.PrimeFiltering.hasWitness_of_lower_valuation_counts",
+2026-11-19T18:50:06.9262615Z     "Loneliness.PrimeFiltering.hasWitness_seven_of_three_per_level",
+2026-11-19T18:50:06.9263529Z     "Loneliness.PrimeFiltering.hasWitness_seven_of_three_per_valuation",
+2026-11-19T18:50:06.9264327Z     "Loneliness.PrimeFiltering.maxPadicVal_le_iff",
+2026-11-19T18:50:06.9265044Z     "Loneliness.PrimeFiltering.not_dvd_pow_maxPadicVal_succ",
+2026-11-19T18:50:06.9265871Z     "Loneliness.PrimeFiltering.one_seventh_of_three_below_max_valuation",
+2026-11-19T18:50:06.9267017Z     "Loneliness.PrimeFiltering.one_seventh_of_three_per_level",
+2026-11-19T18:50:06.9267831Z     "Loneliness.PrimeFiltering.one_seventh_of_three_per_valuation",
+2026-11-19T18:50:06.9268610Z     "Loneliness.PrimeFiltering.padicValNat_le_maxPadicVal",
+2026-11-19T18:50:06.9269306Z     "Loneliness.PrimeFiltering.padic_level_exact",
+2026-11-19T18:50:06.9269974Z     "Loneliness.PrimeFiltering.partial_prime_filtering",
+2026-11-19T18:50:06.9270624Z     "Loneliness.PrimeFiltering.prime_filtering",
+2026-11-19T18:50:06.9271292Z     "Loneliness.PrimeFiltering.prime_filtering_coprime",
+2026-11-19T18:50:06.9272013Z     "Loneliness.PrimeFiltering.prime_filtering_of_card_bounds",
+2026-11-19T18:50:06.9273005Z     "Loneliness.PrimeFiltering.prime_filtering_padic",
+2026-11-19T18:50:06.9273755Z     "Loneliness.PrimeFiltering.prime_filtering_padic_of_le",
+2026-11-19T18:50:06.9274472Z     "Loneliness.PrimeFiltering.prime_filtering_unit",
+2026-11-19T18:50:06.9275237Z     "Loneliness.PrimeFiltering.seven_avoid_two_of_three_per_level",
+2026-11-19T18:50:06.9276008Z     "Loneliness.PrimeFiltering.uniform_level_value",
+2026-11-19T18:50:06.9276683Z     "Loneliness.PrimeFiltering.uniform_level_witness",
+2026-11-19T18:50:06.9277380Z     "Loneliness.PrimeFiltering.uniform_padic_value",
+2026-11-19T18:50:06.9278119Z     "Loneliness.PrimeFiltering.value_lower_of_level_budgets",
+2026-11-19T18:50:06.9278989Z     "Loneliness.PrimeFiltering.value_lower_of_lower_valuation_counts",
+2026-11-19T18:50:06.9279790Z     "Loneliness.PrimeFiltering.witness_of_digit_avoiding",
+2026-11-19T18:50:06.9280570Z     "Loneliness.PrimeFiltering.witness_of_prime_power_folded_lower",
+2026-11-19T18:50:06.9281397Z     "Loneliness.PrimeFilteringArithmetic.digit_eq_zero_iff",
+2026-11-19T18:50:06.9282855Z     "Loneliness.PrimeFilteringArithmetic.digit_mul_of_dvd",
+2026-11-19T18:50:06.9283636Z     "Loneliness.PrimeFilteringArithmetic.digit_step",
+2026-11-19T18:50:06.9284471Z     "Loneliness.PrimeFilteringArithmetic.digit_step_of_next_pow_dvd",
+2026-11-19T18:50:06.9285400Z     "Loneliness.PrimeFilteringArithmetic.leading_digit_ne_zero",
+2026-11-19T18:50:06.9286265Z     "Loneliness.PrimeFilteringArithmetic.multiplier_cast_at_top",
+2026-11-19T18:50:06.9287125Z     "Loneliness.PrimeFilteringArithmetic.multiplier_cast_of_lt",
+2026-11-19T18:50:06.9287982Z     "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero",
+2026-11-19T18:50:06.9288859Z     "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero_at_top",
+2026-11-19T18:50:06.9289770Z     "Loneliness.PrimeFilteringArithmetic.multiplier_ne_zero_of_lt",
+2026-11-19T18:50:06.9290600Z     "Loneliness.PrimeFilteringArithmetic.quotient_step",
+2026-11-19T18:50:06.9291467Z     "Loneliness.PrimeFilteringDigitBound.folded_lower_of_digit_avoiding",
+2026-11-19T18:50:06.9292680Z     "Loneliness.PrimeFilteringDigitBound.residue_bounds_of_digit_avoiding",
+2026-11-19T18:50:06.9293669Z     "Loneliness.PrimeFilteringResidues.coprime_prime_power_of_nonzero",
+2026-11-19T18:50:06.9294537Z     "Loneliness.PrimeFilteringResidues.digit_eq_of_mod_eq",
+2026-11-19T18:50:06.9295321Z     "Loneliness.PrimeFilteringResidues.digit_mod_prime_power",
+2026-11-19T18:50:06.9296096Z     "Loneliness.PrimeFilteringResidues.exists_unit_lift",
+2026-11-19T18:50:06.9296869Z     "Loneliness.PrimeFilteringResidues.exists_unit_val_lift",
+2026-11-19T18:50:06.9297735Z     "Loneliness.PrimeFilteringResidues.isUnit_prime_power_of_nonzero",
+2026-11-19T18:50:06.9298635Z     "Loneliness.PrimeFilteringResidues.residue_step_of_next_pow_dvd",
+2026-11-19T18:50:06.9299529Z     "Loneliness.PrimeFilteringResidues.step_expansion_of_next_pow_dvd",
+2026-11-19T18:50:06.9300455Z     "Loneliness.PrimeFilteringResidues.val_coprime_prime_power_of_nonzero",
+2026-11-19T18:50:06.9301247Z     "Loneliness.continuous_clearance",
+2026-11-19T18:50:06.9301747Z     "Loneliness.distance_int_div",
+2026-11-19T18:50:06.9302415Z     "Loneliness.distance_nonneg",
+2026-11-19T18:50:06.9302889Z     "Loneliness.le_clearance"
+2026-11-19T18:50:06.9303296Z   ],
+2026-11-19T18:50:06.9303596Z   "modern": {
+2026-11-19T18:50:06.9303963Z     "Conjectures.Loneliness": false,
+2026-11-19T18:50:06.9304847Z     "Conjectures.LonelinessPrimeFilteringArithmetic": false,
+2026-11-19T18:50:06.9305635Z     "Conjectures.LonelinessPrimeFilteringChoice": false,
+2026-11-19T18:50:06.9306304Z     "Conjectures.LonelinessContinuity": false,
+2026-11-19T18:50:06.9306911Z     "Conjectures.LonelinessFiveFamily": false,
+2026-11-19T18:50:06.9307593Z     "Conjectures.LonelinessPrimeFilteringResidues": false,
+2026-11-19T18:50:06.9308303Z     "Conjectures.LonelinessPrimeFiltering": false,
+2026-11-19T18:50:06.9308911Z     "Conjectures.LonelinessRational": false,
+2026-11-19T18:50:06.9309499Z     "Conjectures.LonelinessCriticalBase": false,
+2026-11-19T18:50:06.9310191Z     "Conjectures.LonelinessPrimeFilteringDigitBound": false,
+2026-11-19T18:50:06.9310970Z     "Conjectures.LonelinessPrimeFilteringPartial": false,
+2026-11-19T18:50:06.9311763Z     "Conjectures.LonelinessPrimeFilteringTwoForbidden": false,
+2026-11-19T18:50:06.9312749Z     "Conjectures.LonelinessPrimeFilteringUnits": false,
+2026-11-19T18:50:06.9313526Z     "Conjectures.LonelinessPrimeFilteringValuation": false,
+2026-11-19T18:50:06.9314244Z     "Conjectures.LonelinessModularWitness": false,
+2026-11-19T18:50:06.9315023Z     "Conjectures.LonelinessPrimeFilteringCorollaryThree": false,
+2026-11-19T18:50:06.9315858Z     "Conjectures.LonelinessPrimeFilteringWitness": false,
+2026-11-19T18:50:06.9316610Z     "Conjectures.LonelinessPrimeFilteringCases": false
+2026-11-19T18:50:06.9317185Z   },
+2026-11-19T18:50:06.9317521Z   "source_policy": {
+2026-11-19T18:50:06.9317949Z     "fresh_project_objects": true,
+2026-11-19T18:50:06.9318437Z     "linter_override": false,
+2026-11-19T18:50:06.9318880Z     "warning_as_error": true
+2026-11-19T18:50:06.9319588Z   }
+2026-11-19T18:50:06.9319901Z }
+2026-11-19T18:50:06.9716988Z ##[group]Run leanprover/lean-action@v1
+2026-11-19T18:50:06.9717310Z with:
+2026-11-19T18:50:06.9717542Z   lake-package-directory: lean
+2026-11-19T18:50:06.9717799Z   auto-config: false
+2026-11-19T18:50:06.9718022Z   use-mathlib-cache: true
+2026-11-19T18:50:06.9718245Z   build: false
+2026-11-19T18:50:06.9718458Z   test: false
+2026-11-19T18:50:06.9718636Z   lint: false
+2026-11-19T18:50:06.9718823Z   mk_all-check: false
+2026-11-19T18:50:06.9719064Z   check-reservoir-eligibility: false
+2026-11-19T18:50:06.9719339Z   leanchecker: false
+2026-11-19T18:50:06.9719555Z   lean4checker: false
+2026-11-19T18:50:06.9719767Z   nanoda: false
+2026-11-19T18:50:06.9719967Z   nanoda-allow-sorry: true
+2026-11-19T18:50:06.9720195Z   axiom-audit: false
+2026-11-19T18:50:06.9720471Z   axiom-audit-allow: propext,Classical.choice,Quot.sound
+2026-11-19T18:50:06.9720804Z   use-github-cache: true
+2026-11-19T18:50:06.9721046Z   reinstall-transient-toolchain: false
+2026-11-19T18:50:06.9721324Z ##[endgroup]
+2026-11-19T18:50:06.9785829Z ##[start-action display=install elan;id=__leanprover_lean-action.__run]
+2026-11-19T18:50:06.9813493Z ##[group]Run : Install Elan
+2026-11-19T18:50:06.9813767Z [36;1m: Install Elan[0m
+2026-11-19T18:50:06.9814062Z [36;1m${GITHUB_ACTION_PATH}/scripts/install_elan.sh[0m
+2026-11-19T18:50:06.9864232Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T18:50:06.9864583Z ##[endgroup]
+2026-11-19T18:50:06.9975123Z ##[group]Elan Installation Output
+2026-11-19T18:50:07.0462598Z info: downloading installer
+2026-11-19T18:50:07.6281581Z info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+2026-11-19T18:50:11.6482575Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+2026-11-19T18:50:18.8001449Z Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+2026-11-19T18:50:18.8463224Z Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+2026-11-19T18:50:18.8507768Z ##[endgroup]
+2026-11-19T18:50:18.8508270Z 
+2026-11-19T18:50:18.8537235Z ##[end-action id=__leanprover_lean-action.__run;outcome=success;conclusion=success;duration_ms=11875]
+2026-11-19T18:50:18.8540248Z ##[start-action display=Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25;id=__leanprover_lean-action.cache-restore]
+2026-11-19T18:50:19.1840559Z ##[group]Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25
+2026-11-19T18:50:19.1840955Z with:
+2026-11-19T18:50:19.1841151Z   path: lean/.lake
+2026-11-19T18:50:19.1842049Z   key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-e6d53ced9fd3b6ad4a311c3eecbe1fcbd0cdd491
+2026-11-19T18:50:19.1843945Z   restore-keys: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07
+2026-11-19T18:50:19.1844735Z   enableCrossOsArchive: false
+2026-11-19T18:50:19.1845026Z   fail-on-cache-miss: false
+2026-11-19T18:50:19.1845265Z   lookup-only: false
+2026-11-19T18:50:19.1845475Z ##[endgroup]
+2026-11-19T18:50:19.4058826Z Cache hit for restore-key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-14f3403c7afe204c85b376df0f02c68c86c7fea0
+2026-11-19T18:50:20.4546852Z Received 268435456 of 2103395755 (12.8%), 255.7 MBs/sec
+2026-11-19T18:50:21.4588272Z Received 536870912 of 2103395755 (25.5%), 255.4 MBs/sec
+2026-11-19T18:50:22.4603741Z Received 817889280 of 2103395755 (38.9%), 259.4 MBs/sec
+2026-11-19T18:50:23.4615885Z Received 1115684864 of 2103395755 (53.0%), 265.5 MBs/sec
+2026-11-19T18:50:24.4636040Z Received 1400897536 of 2103395755 (66.6%), 266.7 MBs/sec
+2026-11-19T18:50:25.4651937Z Received 1711276032 of 2103395755 (81.4%), 271.5 MBs/sec
+2026-11-19T18:50:26.4657958Z Received 1937768448 of 2103395755 (92.1%), 263.5 MBs/sec
+2026-11-19T18:50:27.1805111Z Received 2103395755 of 2103395755 (100.0%), 259.6 MBs/sec
+2026-11-19T18:50:27.1807665Z Cache Size: ~2006 MB (2103395755 B)
+2026-11-19T18:50:27.1881471Z [command]/usr/bin/tar -xf /home/runner/work/_temp/f91755fd-4655-4733-bacb-6a04d4baa183/cache.tzst -P -C /home/runner/work/solved-conjectures/solved-conjectures --use-compress-program unzstd
+2026-11-19T18:50:45.0315553Z Cache restored successfully
+2026-11-19T18:50:45.1277239Z Cache restored from key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-14f3403c7afe204c85b376df0f02c68c86c7fea0
+2026-11-19T18:50:45.1641055Z ##[end-action id=__leanprover_lean-action.cache-restore;outcome=success;conclusion=success;duration_ms=26309]
+2026-11-19T18:50:45.1654082Z ##[start-action display=configure `lean-action`;id=__leanprover_lean-action.config]
+2026-11-19T18:50:45.2027085Z ##[group]Run : Configure Lean Action
+2026-11-19T18:50:45.2027587Z [36;1m: Configure Lean Action[0m
+2026-11-19T18:50:45.2028104Z [36;1m${GITHUB_ACTION_PATH}/scripts/config.sh[0m
+2026-11-19T18:50:45.2120750Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T18:50:45.2121120Z env:
+2026-11-19T18:50:45.2121466Z   AUTO_CONFIG: false
+2026-11-19T18:50:45.2121735Z   BUILD: false
+2026-11-19T18:50:45.2121935Z   TEST: false
+2026-11-19T18:50:45.2122125Z   LINT: false
+2026-11-19T18:50:45.2122566Z ##[endgroup]
+2026-11-19T18:50:45.2561938Z ##[group]Configure lean-action
+2026-11-19T18:50:45.2643602Z ##[end-action id=__leanprover_lean-action.config;outcome=success;conclusion=success;duration_ms=98]
+2026-11-19T18:50:45.2645812Z ##[start-action display=reinstall transient toolchain;id=__leanprover_lean-action.__run_2]
+2026-11-19T18:50:45.2651585Z ##[end-action id=__leanprover_lean-action.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:50:45.2654720Z ##[start-action display=ensure all files are imported;id=__leanprover_lean-action.mk_all]
+2026-11-19T18:50:45.2658562Z ##[end-action id=__leanprover_lean-action.mk_all;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:50:45.2660459Z ##[start-action display=detect mathlib;id=__leanprover_lean-action.detect-mathlib]
+2026-11-19T18:50:45.2664386Z ##[end-action id=__leanprover_lean-action.detect-mathlib;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:50:45.2666256Z ##[start-action display=get mathlib cache;id=__leanprover_lean-action.__run_3]
+2026-11-19T18:50:45.3494200Z ##[group]Run : Get Mathlib Cache
+2026-11-19T18:50:45.3494530Z [36;1m: Get Mathlib Cache[0m
+2026-11-19T18:50:45.3494815Z [36;1mecho "::group::Mathlib Cache"[0m
+2026-11-19T18:50:45.3495283Z [36;1m# Use cache.mathlib.org unless the workflow sets `MATHLIB_CACHE_GET_URL`.[0m
+2026-11-19T18:50:45.3495936Z [36;1m# The cache client reads an empty value as a URL, so unset it to get the client's default.[0m
+2026-11-19T18:50:45.3496480Z [36;1mif [ -z "${MATHLIB_CACHE_GET_URL+x}" ]; then[0m
+2026-11-19T18:50:45.3496950Z [36;1m  export MATHLIB_CACHE_GET_URL="https://cache.mathlib.org/mathlib4"[0m
+2026-11-19T18:50:45.3497452Z [36;1melif [ -z "$MATHLIB_CACHE_GET_URL" ]; then[0m
+2026-11-19T18:50:45.3497789Z [36;1m  unset MATHLIB_CACHE_GET_URL[0m
+2026-11-19T18:50:45.3498069Z [36;1mfi[0m
+2026-11-19T18:50:45.3498278Z [36;1mlake exe cache get[0m
+2026-11-19T18:50:45.3498544Z [36;1mecho "::endgroup::"[0m
+2026-11-19T18:50:45.3498799Z [36;1mecho[0m
+2026-11-19T18:50:45.3557320Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T18:50:45.3557697Z ##[endgroup]
+2026-11-19T18:50:45.4105153Z ##[group]Mathlib Cache
+2026-11-19T18:50:49.9478337Z Current branch: HEAD
+2026-11-19T18:50:49.9479955Z Using cache from origin: (some leanprover-community/mathlib4)
+2026-11-19T18:50:49.9481118Z Attempting to download 9031 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4
+2026-11-19T18:50:50.1408577Z 
+2026-11-19T18:50:50.2454954Z Downloaded: 1 file(s) [attempted 1/9031 = 0%, 82 KB/s]
+2026-11-19T18:50:50.3467971Z Downloaded: 107 file(s) [attempted 107/9031 = 1%, 299 KB/s]
+2026-11-19T18:50:50.4463950Z Downloaded: 214 file(s) [attempted 214/9031 = 2%, 633 KB/s]
+2026-11-19T18:50:50.5470785Z Downloaded: 317 file(s) [attempted 317/9031 = 3%, 2454 KB/s]
+2026-11-19T18:50:50.6499069Z Downloaded: 430 file(s) [attempted 430/9031 = 4%, 680 KB/s]
+2026-11-19T18:50:50.7502899Z Downloaded: 537 file(s) [attempted 537/9031 = 5%, 2480 KB/s]
+2026-11-19T18:50:50.8616914Z Downloaded: 653 file(s) [attempted 653/9031 = 7%, 280 KB/s]
+2026-11-19T18:50:50.9768540Z Downloaded: 763 file(s) [attempted 763/9031 = 8%, 1486 KB/s]
+2026-11-19T18:50:51.0844315Z Downloaded: 844 file(s) [attempted 844/9031 = 9%, 444 KB/s]
+2026-11-19T18:50:51.1898500Z Downloaded: 967 file(s) [attempted 967/9031 = 10%, 327 KB/s]
+2026-11-19T18:50:51.2938089Z Downloaded: 1087 file(s) [attempted 1087/9031 = 12%, 1935 KB/s]
+2026-11-19T18:50:51.3935300Z Downloaded: 1205 file(s) [attempted 1205/9031 = 13%, 308 KB/s]
+2026-11-19T18:50:51.4938085Z Downloaded: 1325 file(s) [attempted 1325/9031 = 14%, 1752 KB/s]
+2026-11-19T18:50:51.5945685Z Downloaded: 1455 file(s) [attempted 1455/9031 = 16%, 4815 KB/s]
+2026-11-19T18:50:51.6946205Z Downloaded: 1575 file(s) [attempted 1575/9031 = 17%, 4172 KB/s]
+2026-11-19T18:50:51.7947917Z Downloaded: 1695 file(s) [attempted 1695/9031 = 18%, 1011 KB/s]
+2026-11-19T18:50:51.8955004Z Downloaded: 1817 file(s) [attempted 1817/9031 = 20%, 902 KB/s]
+2026-11-19T18:50:51.9954580Z Downloaded: 1932 file(s) [attempted 1932/9031 = 21%, 1797 KB/s]
+2026-11-19T18:50:52.1019837Z Downloaded: 2044 file(s) [attempted 2044/9031 = 22%, 767 KB/s]
+2026-11-19T18:50:52.2187823Z Downloaded: 2149 file(s) [attempted 2149/9031 = 23%, 1095 KB/s]
+2026-11-19T18:50:52.3233602Z Downloaded: 2226 file(s) [attempted 2226/9031 = 24%, 59 KB/s]
+2026-11-19T18:50:52.4230619Z Downloaded: 2327 file(s) [attempted 2327/9031 = 25%, 280 KB/s]
+2026-11-19T18:50:52.5226205Z Downloaded: 2445 file(s) [attempted 2445/9031 = 27%, 1102 KB/s]
+2026-11-19T18:50:52.6290627Z Downloaded: 2566 file(s) [attempted 2566/9031 = 28%, 1411 KB/s]
+2026-11-19T18:50:52.7317996Z Downloaded: 2695 file(s) [attempted 2695/9031 = 29%, 1906 KB/s]
+2026-11-19T18:50:52.8319848Z Downloaded: 2812 file(s) [attempted 2812/9031 = 31%, 119 KB/s]
+2026-11-19T18:50:52.9315890Z Downloaded: 2933 file(s) [attempted 2933/9031 = 32%, 721 KB/s]
+2026-11-19T18:50:53.0314262Z Downloaded: 3048 file(s) [attempted 3048/9031 = 33%, 94 KB/s]
+2026-11-19T18:50:53.1314407Z Downloaded: 3164 file(s) [attempted 3164/9031 = 35%, 2704 KB/s]
+2026-11-19T18:50:53.2320012Z Downloaded: 3281 file(s) [attempted 3281/9031 = 36%, 1327 KB/s]
+2026-11-19T18:50:53.3332859Z Downloaded: 3395 file(s) [attempted 3395/9031 = 37%, 166 KB/s]
+2026-11-19T18:50:53.4324687Z Downloaded: 3501 file(s) [attempted 3501/9031 = 38%, 3152 KB/s]
+2026-11-19T18:50:53.5462543Z Downloaded: 3594 file(s) [attempted 3594/9031 = 39%, 93 KB/s]
+2026-11-19T18:50:53.6571275Z Downloaded: 3653 file(s) [attempted 3653/9031 = 40%, 380 KB/s]
+2026-11-19T18:50:53.7582830Z Downloaded: 3741 file(s) [attempted 3741/9031 = 41%, 253 KB/s]
+2026-11-19T18:50:53.8584076Z Downloaded: 3840 file(s) [attempted 3840/9031 = 42%, 345 KB/s]
+2026-11-19T18:50:53.9657595Z Downloaded: 3943 file(s) [attempted 3943/9031 = 43%, 824 KB/s]
+2026-11-19T18:50:54.0657147Z Downloaded: 4076 file(s) [attempted 4076/9031 = 45%, 796 KB/s]
+2026-11-19T18:50:54.1673387Z Downloaded: 4205 file(s) [attempted 4205/9031 = 46%, 3271 KB/s]
+2026-11-19T18:50:54.2673031Z Downloaded: 4312 file(s) [attempted 4312/9031 = 47%, 68 KB/s]
+2026-11-19T18:50:54.3674548Z Downloaded: 4427 file(s) [attempted 4427/9031 = 49%, 1840 KB/s]
+2026-11-19T18:50:54.4675324Z Downloaded: 4547 file(s) [attempted 4547/9031 = 50%, 120 KB/s]
+2026-11-19T18:50:54.5677028Z Downloaded: 4669 file(s) [attempted 4669/9031 = 51%, 240 KB/s]
+2026-11-19T18:50:54.6682958Z Downloaded: 4792 file(s) [attempted 4792/9031 = 53%, 312 KB/s]
+2026-11-19T18:50:54.7686817Z Downloaded: 4900 file(s) [attempted 4900/9031 = 54%, 1739 KB/s]
+2026-11-19T18:50:54.8730503Z Downloaded: 4998 file(s) [attempted 4998/9031 = 55%, 670 KB/s]
+2026-11-19T18:50:54.9740655Z Downloaded: 5078 file(s) [attempted 5078/9031 = 56%, 381 KB/s]
+2026-11-19T18:50:55.0778916Z Downloaded: 5192 file(s) [attempted 5192/9031 = 57%, 516 KB/s]
+2026-11-19T18:50:55.1787401Z Downloaded: 5307 file(s) [attempted 5307/9031 = 58%, 1707 KB/s]
+2026-11-19T18:50:55.2826282Z Downloaded: 5419 file(s) [attempted 5419/9031 = 60%, 1851 KB/s]
+2026-11-19T18:50:55.3800565Z Downloaded: 5537 file(s) [attempted 5537/9031 = 61%, 3065 KB/s]
+2026-11-19T18:50:55.4795349Z Downloaded: 5654 file(s) [attempted 5654/9031 = 62%, 1425 KB/s]
+2026-11-19T18:50:55.5803319Z Downloaded: 5778 file(s) [attempted 5778/9031 = 63%, 241 KB/s]
+2026-11-19T18:50:55.6803610Z Downloaded: 5910 file(s) [attempted 5910/9031 = 65%, 894 KB/s]
+2026-11-19T18:50:55.7795798Z Downloaded: 6022 file(s) [attempted 6022/9031 = 66%, 457 KB/s]
+2026-11-19T18:50:55.8831794Z Downloaded: 6149 file(s) [attempted 6149/9031 = 68%, 1023 KB/s]
+2026-11-19T18:50:55.9851436Z Downloaded: 6252 file(s) [attempted 6252/9031 = 69%, 396 KB/s]
+2026-11-19T18:50:56.0937834Z Downloaded: 6351 file(s) [attempted 6351/9031 = 70%, 344 KB/s]
+2026-11-19T18:50:56.1940547Z Downloaded: 6443 file(s) [attempted 6443/9031 = 71%, 554 KB/s]
+2026-11-19T18:50:56.2935953Z Downloaded: 6524 file(s) [attempted 6524/9031 = 72%, 172 KB/s]
+2026-11-19T18:50:56.3936963Z Downloaded: 6640 file(s) [attempted 6640/9031 = 73%, 1017 KB/s]
+2026-11-19T18:50:56.4945665Z Downloaded: 6754 file(s) [attempted 6754/9031 = 74%, 254 KB/s]
+2026-11-19T18:50:56.5963385Z Downloaded: 6869 file(s) [attempted 6869/9031 = 76%, 1208 KB/s]
+2026-11-19T18:50:56.6935460Z Downloaded: 6977 file(s) [attempted 6977/9031 = 77%, 241 KB/s]
+2026-11-19T18:50:56.7949198Z Downloaded: 7095 file(s) [attempted 7095/9031 = 78%, 330 KB/s]
+2026-11-19T18:50:56.8971207Z Downloaded: 7214 file(s) [attempted 7214/9031 = 79%, 3719 KB/s]
+2026-11-19T18:50:56.9966619Z Downloaded: 7330 file(s) [attempted 7330/9031 = 81%, 1301 KB/s]
+2026-11-19T18:50:57.1042091Z Downloaded: 7446 file(s) [attempted 7446/9031 = 82%, 136 KB/s]
+2026-11-19T18:50:57.2078832Z Downloaded: 7561 file(s) [attempted 7561/9031 = 83%, 418 KB/s]
+2026-11-19T18:50:57.3089222Z Downloaded: 7679 file(s) [attempted 7679/9031 = 85%, 775 KB/s]
+2026-11-19T18:50:57.4105045Z Downloaded: 7783 file(s) [attempted 7783/9031 = 86%, 500 KB/s]
+2026-11-19T18:50:57.5125886Z Downloaded: 7858 file(s) [attempted 7858/9031 = 87%, 338 KB/s]
+2026-11-19T18:50:57.6188380Z Downloaded: 7949 file(s) [attempted 7949/9031 = 88%, 280 KB/s]
+2026-11-19T18:50:57.7155263Z Downloaded: 8065 file(s) [attempted 8065/9031 = 89%, 323 KB/s]
+2026-11-19T18:50:57.8196717Z Downloaded: 8182 file(s) [attempted 8182/9031 = 90%, 207 KB/s]
+2026-11-19T18:50:57.9226197Z Downloaded: 8298 file(s) [attempted 8298/9031 = 91%, 1985 KB/s]
+2026-11-19T18:50:58.0245441Z Downloaded: 8407 file(s) [attempted 8407/9031 = 93%, 740 KB/s]
+2026-11-19T18:50:58.1249414Z Downloaded: 8522 file(s) [attempted 8522/9031 = 94%, 2889 KB/s]
+2026-11-19T18:50:58.2244749Z Downloaded: 8632 file(s) [attempted 8632/9031 = 95%, 2074 KB/s]
+2026-11-19T18:50:58.3258110Z Downloaded: 8753 file(s) [attempted 8753/9031 = 96%, 188 KB/s]
+2026-11-19T18:50:58.4257723Z Downloaded: 8872 file(s) [attempted 8872/9031 = 98%, 7395 KB/s]
+2026-11-19T18:50:58.4519798Z Downloaded: 8994 file(s) [attempted 8994/9031 = 99%, 169 KB/s]
+2026-11-19T18:50:58.4520287Z Downloaded: 9031 file(s) [attempted 9031/9031 = 100%, 169 KB/s]
+2026-11-19T18:50:58.4550335Z Still decompressing downloaded files...
+2026-11-19T18:50:59.1739091Z Decompressed 9031 file(s)
+2026-11-19T18:50:59.1739494Z Already decompressed 9031 file(s)
+2026-11-19T18:50:59.2155767Z ##[endgroup]
+2026-11-19T18:50:59.2156048Z 
+2026-11-19T18:50:59.2166457Z ##[end-action id=__leanprover_lean-action.__run_3;outcome=success;conclusion=success;duration_ms=13949]
+2026-11-19T18:50:59.2180834Z ##[start-action display=build 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.build]
+2026-11-19T18:50:59.2185609Z ##[end-action id=__leanprover_lean-action.build;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:50:59.2189524Z ##[start-action display=test 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.test]
+2026-11-19T18:50:59.2194040Z ##[end-action id=__leanprover_lean-action.test;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:50:59.2196780Z ##[start-action display=lint 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.lint]
+2026-11-19T18:50:59.2201064Z ##[end-action id=__leanprover_lean-action.lint;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:50:59.2203542Z ##[start-action display=Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25;id=__leanprover_lean-action.__actions_cache]
+2026-11-19T18:50:59.3354931Z ##[group]Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25
+2026-11-19T18:50:59.3355341Z with:
+2026-11-19T18:50:59.3355538Z   path: lean/.lake
+2026-11-19T18:50:59.3356426Z   key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-e6d53ced9fd3b6ad4a311c3eecbe1fcbd0cdd491
+2026-11-19T18:50:59.3357413Z   enableCrossOsArchive: false
+2026-11-19T18:50:59.3357667Z ##[endgroup]
+2026-11-19T18:50:59.4752953Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/solved-conjectures/solved-conjectures --files-from manifest.txt --use-compress-program zstdmt
+2026-11-19T18:51:21.6884170Z Sent 0 of 2103782553 (0.0%), 0.0 MBs/sec
+2026-11-19T18:51:22.6858654Z Sent 603979776 of 2103782553 (28.7%), 287.9 MBs/sec
+2026-11-19T18:51:23.6867739Z Sent 1006632960 of 2103782553 (47.8%), 319.8 MBs/sec
+2026-11-19T18:51:24.6870174Z Sent 1543503872 of 2103782553 (73.4%), 367.8 MBs/sec
+2026-11-19T18:51:25.6876940Z Sent 1946157056 of 2103782553 (92.5%), 371.0 MBs/sec
+2026-11-19T18:51:26.6883129Z Sent 2036673689 of 2103782553 (96.8%), 323.5 MBs/sec
+2026-11-19T18:51:27.0575935Z Sent 2103782553 of 2103782553 (100.0%), 314.8 MBs/sec
+2026-11-19T18:51:27.3478851Z Cache saved with key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-e6d53ced9fd3b6ad4a311c3eecbe1fcbd0cdd491
+2026-11-19T18:51:27.3580204Z ##[end-action id=__leanprover_lean-action.__actions_cache;outcome=success;conclusion=success;duration_ms=28137]
+2026-11-19T18:51:27.3583176Z ##[start-action display=check reservoir eligibility;id=__leanprover_lean-action.__run_4]
+2026-11-19T18:51:27.3591288Z ##[end-action id=__leanprover_lean-action.__run_4;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:51:27.3594638Z ##[start-action display=check environment with leanchecker;id=__leanprover_lean-action.__run_5]
+2026-11-19T18:51:27.3599276Z ##[end-action id=__leanprover_lean-action.__run_5;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:51:27.3601541Z ##[start-action display=check environment with nanoda;id=__leanprover_lean-action.nanoda]
+2026-11-19T18:51:27.3605250Z ##[end-action id=__leanprover_lean-action.nanoda;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:51:27.3607676Z ##[start-action display=audit axioms with axiom-audit;id=__leanprover_lean-action.axiom-audit]
+2026-11-19T18:51:27.3610861Z ##[end-action id=__leanprover_lean-action.axiom-audit;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:51:27.3681049Z ##[group]Run python3 scripts/verify_prime_filtering_exact.py
+2026-11-19T18:51:27.3681538Z [36;1mpython3 scripts/verify_prime_filtering_exact.py[0m
+2026-11-19T18:51:27.3784007Z shell: /usr/bin/bash -e {0}
+2026-11-19T18:51:27.3784284Z env:
+2026-11-19T18:51:27.3784478Z   LEAN_NUM_THREADS: 1
+2026-11-19T18:51:27.3784700Z   UV_USE_IO_URING: 0
+2026-11-19T18:51:27.3784910Z ##[endgroup]
+2026-11-19T18:51:30.4871141Z {"phase": "Conjectures.Loneliness.source", "exit_code": 0, "seconds": 2.257, "peak_rss_kib": 1920888}
+2026-11-19T18:51:32.2443064Z {"phase": "Conjectures.LonelinessPrimeFilteringArithmetic.source", "exit_code": 0, "seconds": 1.755, "peak_rss_kib": 1992704}
+2026-11-19T18:51:33.7505605Z {"phase": "Conjectures.LonelinessPrimeFilteringChoice.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 1967244}
+2026-11-19T18:51:35.5078591Z {"phase": "Conjectures.LonelinessContinuity.source", "exit_code": 0, "seconds": 1.755, "peak_rss_kib": 2140416}
+2026-11-19T18:51:41.2746876Z {"phase": "Conjectures.LonelinessFiveFamily.source", "exit_code": 0, "seconds": 5.764, "peak_rss_kib": 1929516}
+2026-11-19T18:51:42.7818708Z {"phase": "Conjectures.LonelinessPrimeFilteringResidues.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 1988464}
+2026-11-19T18:51:44.5386772Z {"phase": "Conjectures.LonelinessPrimeFiltering.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 1999516}
+2026-11-19T18:51:46.0450961Z {"phase": "Conjectures.LonelinessRational.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 2128368}
+2026-11-19T18:51:50.5588577Z {"phase": "Conjectures.LonelinessCriticalBase.source", "exit_code": 0, "seconds": 4.511, "peak_rss_kib": 1920708}
+2026-11-19T18:51:52.0659143Z {"phase": "Conjectures.LonelinessPrimeFilteringDigitBound.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 1994796}
+2026-11-19T18:51:53.5725858Z {"phase": "Conjectures.LonelinessPrimeFilteringPartial.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 1995808}
+2026-11-19T18:51:55.0791334Z {"phase": "Conjectures.LonelinessPrimeFilteringTwoForbidden.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 1992748}
+2026-11-19T18:51:56.5856331Z {"phase": "Conjectures.LonelinessPrimeFilteringUnits.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 1990636}
+2026-11-19T18:51:58.0919906Z {"phase": "Conjectures.LonelinessPrimeFilteringValuation.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 1994680}
+2026-11-19T18:52:00.3507343Z {"phase": "Conjectures.LonelinessModularWitness.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 2151428}
+2026-11-19T18:52:02.1084535Z {"phase": "Conjectures.LonelinessPrimeFilteringCorollaryThree.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 1996788}
+2026-11-19T18:52:03.8663607Z {"phase": "Conjectures.LonelinessPrimeFilteringWitness.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 2202644}
+2026-11-19T18:52:05.8751664Z {"phase": "Conjectures.LonelinessPrimeFilteringCases.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2212596}
+2026-11-19T18:52:07.8885064Z {"phase": "literal-statements", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2202424}
+2026-11-19T18:52:12.9018292Z {"phase": "all-owned-audit", "exit_code": 0, "seconds": 5.012, "peak_rss_kib": 2231176}
+2026-11-19T18:52:19.6712991Z {"phase": "Conjectures.Loneliness.kernel", "exit_code": 0, "seconds": 6.765, "peak_rss_kib": 1621972}
+2026-11-19T18:52:26.6869451Z {"phase": "Conjectures.LonelinessPrimeFilteringArithmetic.kernel", "exit_code": 0, "seconds": 7.014, "peak_rss_kib": 1718728}
+2026-11-19T18:52:33.4520439Z {"phase": "Conjectures.LonelinessPrimeFilteringChoice.kernel", "exit_code": 0, "seconds": 6.763, "peak_rss_kib": 1702528}
+2026-11-19T18:52:40.2203260Z {"phase": "Conjectures.LonelinessContinuity.kernel", "exit_code": 0, "seconds": 6.766, "peak_rss_kib": 1846620}
+2026-11-19T18:52:46.9869444Z {"phase": "Conjectures.LonelinessFiveFamily.kernel", "exit_code": 0, "seconds": 6.765, "peak_rss_kib": 1629092}
+2026-11-19T18:52:53.5018036Z {"phase": "Conjectures.LonelinessPrimeFilteringResidues.kernel", "exit_code": 0, "seconds": 6.513, "peak_rss_kib": 1718836}
+2026-11-19T18:53:00.2669702Z {"phase": "Conjectures.LonelinessPrimeFiltering.kernel", "exit_code": 0, "seconds": 6.763, "peak_rss_kib": 1727380}
+2026-11-19T18:53:07.0331695Z {"phase": "Conjectures.LonelinessRational.kernel", "exit_code": 0, "seconds": 6.764, "peak_rss_kib": 1846836}
+2026-11-19T18:53:13.7987507Z {"phase": "Conjectures.LonelinessCriticalBase.kernel", "exit_code": 0, "seconds": 6.764, "peak_rss_kib": 1627428}
+2026-11-19T18:53:20.3149535Z {"phase": "Conjectures.LonelinessPrimeFilteringDigitBound.kernel", "exit_code": 0, "seconds": 6.514, "peak_rss_kib": 1726972}
+2026-11-19T18:53:26.8300057Z {"phase": "Conjectures.LonelinessPrimeFilteringPartial.kernel", "exit_code": 0, "seconds": 6.513, "peak_rss_kib": 1727268}
+2026-11-19T18:53:33.5997021Z {"phase": "Conjectures.LonelinessPrimeFilteringTwoForbidden.kernel", "exit_code": 0, "seconds": 6.768, "peak_rss_kib": 1725368}
+2026-11-19T18:53:40.3663595Z {"phase": "Conjectures.LonelinessPrimeFilteringUnits.kernel", "exit_code": 0, "seconds": 6.765, "peak_rss_kib": 1723264}
+2026-11-19T18:53:46.8814197Z {"phase": "Conjectures.LonelinessPrimeFilteringValuation.kernel", "exit_code": 0, "seconds": 6.513, "peak_rss_kib": 1724732}
+2026-11-19T18:53:53.6465966Z {"phase": "Conjectures.LonelinessModularWitness.kernel", "exit_code": 0, "seconds": 6.763, "peak_rss_kib": 1850432}
+2026-11-19T18:54:00.4132062Z {"phase": "Conjectures.LonelinessPrimeFilteringCorollaryThree.kernel", "exit_code": 0, "seconds": 6.764, "peak_rss_kib": 1725788}
+2026-11-19T18:54:07.1792831Z {"phase": "Conjectures.LonelinessPrimeFilteringWitness.kernel", "exit_code": 0, "seconds": 6.764, "peak_rss_kib": 1916288}
+2026-11-19T18:54:13.9451235Z {"phase": "Conjectures.LonelinessPrimeFilteringCases.kernel", "exit_code": 0, "seconds": 6.764, "peak_rss_kib": 1918840}
+2026-11-19T18:54:13.9567857Z {"status": "passed", "project_modules": 18, "required_theorems": 68, "audit_summary": {"allowed_axioms": ["propext", "Classical.choice", "Quot.sound"], "declarations": 299, "modules": 18, "private_declarations": 10, "raw_declarations": 299, "required": 68, "tag": "passed", "theorems": 243}, "receipt_sha256": "009a768a638e275c6705f1bc08c316ca3686553bd591c2c25765fc29531ed394"}
+2026-11-19T18:54:13.9765864Z ##[group]Run actions/upload-artifact@v4
+2026-11-19T18:54:13.9766186Z with:
+2026-11-19T18:54:13.9766407Z   name: prime-filtering-exact
+2026-11-19T18:54:13.9766720Z   path: .candidate-artifacts/prime-filtering-exact/
+2026-11-19T18:54:13.9767065Z   include-hidden-files: true
+2026-11-19T18:54:13.9767321Z   retention-days: 30
+2026-11-19T18:54:13.9767547Z   if-no-files-found: error
+2026-11-19T18:54:13.9767792Z   compression-level: 6
+2026-11-19T18:54:13.9768013Z   overwrite: false
+2026-11-19T18:54:13.9768240Z ##[endgroup]
+2026-11-19T18:54:14.1469622Z (node:10820) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-19T18:54:14.1470940Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-19T18:54:14.1715178Z With the provided path, there will be 116 files uploaded
+2026-11-19T18:54:14.1720614Z Artifact name is valid!
+2026-11-19T18:54:14.1721123Z Root directory input is valid!
+2026-11-19T18:54:14.4301191Z Beginning upload of artifact content to blob storage
+2026-11-19T18:54:14.6853963Z (node:10820) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-19T18:54:14.7826738Z Uploaded bytes 1547881
+2026-11-19T18:54:14.7974852Z Finished uploading artifact content to blob storage!
+2026-11-19T18:54:14.7976015Z SHA256 digest of uploaded artifact zip is 77f0d68ce157cab87fcf629a09d6997b50ab90489f91b1654c191966aab3eb19
+2026-11-19T18:54:14.7978137Z Finalizing artifact upload
+2026-11-19T18:54:15.1759228Z Artifact prime-filtering-exact.zip successfully finalized. Artifact ID 14563378013
+2026-11-19T18:54:15.1760475Z Artifact prime-filtering-exact has been successfully uploaded! Final size is 1547881 bytes. Artifact ID is 14563378013
+2026-11-19T18:54:15.1767596Z Artifact download URL: https://github.com/1337isnot1337/solved-conjectures/actions/runs/44591941338/artifacts/14563378013
+2026-11-19T18:54:15.2008348Z Post job cleanup.
+2026-11-19T18:54:15.2887866Z [command]/usr/bin/git version
+2026-11-19T18:54:15.2937118Z git version 2.56.1
+2026-11-19T18:54:15.2982919Z Temporarily overriding HOME='/home/runner/work/_temp/5ca1d0b4-7d2c-4de8-ac03-0972b6902364' before making global git config changes
+2026-11-19T18:54:15.2984605Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T18:54:15.2989625Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T18:54:15.3032512Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T18:54:15.3070746Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T18:54:15.3469584Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T18:54:15.3529445Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T18:54:15.3838315Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T18:54:15.3875629Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T18:54:15.4339880Z Cleaning up orphan processes
+2026-11-19T18:54:15.4844447Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

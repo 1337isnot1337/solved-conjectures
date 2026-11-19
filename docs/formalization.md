@@ -1048,3 +1048,35 @@ spectrum result remains partially formalized.
 The complete 60-module hosted gate passed at `e815f14555472b873683f491bc878eb16d4eb0a4` ([run and job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44590263136/job/135794055426)). It checked all fresh strict sources, all owned and private declarations, all 50 required theorem endpoints, and one exact stock-kernel target per module. The permitted axioms were only `propext`, `Classical.choice`, and `Quot.sound`. The unchanged receipt has SHA-256 `4a3f6a5df8723dc21f2b5eb2899a10ea55b47b9eb0538cd48927016c0195e4ee`. The merged accepted-package check remains a separate obligation.
 
 [Preserved receipt](verification/rectangular-lattice-exact-44590263136/receipt.json).
+
+## Prime filtering and proved runner classes, 19 November 2026
+
+Twelve prime-filtering modules are registered. They formalize Lemma 2 and
+Corollary 3 of Barajas and Serra, *The lonely runner with seven runners*
+(Electronic Journal of Combinatorics 15 (2008), R48, DOI 10.37236/772).
+The proofs produce an actual prime-power unit, preserve higher residues
+when starting from a coprime seed, and derive modular witnesses and bounds
+for the real-valued loneliness function.
+
+For positive speeds, the verified `1/7` consequence assumes that every
+7-adic valuation level below the maximum contains at most three distinct
+speeds. The highest level has no cardinality restriction. Repeated speeds
+are allowed. A separate uniform-valuation theorem gives the `1/p` bound
+for any base `p ≥ 2`, with no restriction on the number of speeds.
+The four- and five-input exceptional lower levels, and the unrestricted
+six-speed runner theorem, remain pending.
+
+[Run 44591941338](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44591941338)
+at `e6d53ced9fd3b6ad4a311c3eecbe1fcbd0cdd491` passed the complete
+18-module closure: fresh strict sources, 68 required theorem endpoints,
+33 literal quantified contracts, the full audit of 299 owned declarations
+(243 theorems and 10 private declarations), and 18 exact singleton stock-kernel
+replays. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted.
+All 116 original artifact members and every source, object, process record,
+audit inventory and pinned control hash were authenticated. The receipt
+SHA-256 is `009a768a638e275c6705f1bc08c316ca3686553bd591c2c25765fc29531ed394`.
+
+[Original evidence and exact scope](verification/prime-filtering-exact-44591941338/README.md).
+Every previous accepted entry is preserved. Li remains outside the accepted
+roots. The complete merged-package gate remains a separate obligation;
+no result-directory completion status changes.

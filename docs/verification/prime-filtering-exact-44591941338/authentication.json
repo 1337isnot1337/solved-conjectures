@@ -1,0 +1,36 @@
+{
+  "accepted_registry_changed": false,
+  "archive_member_count": 116,
+  "archive_sha256": "77f0d68ce157cab87fcf629a09d6997b50ab90489f91b1654c191966aab3eb19",
+  "artifact_id": 14563378013,
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 299,
+    "modules": 18,
+    "private_declarations": 10,
+    "raw_declarations": 299,
+    "required": 68,
+    "tag": "passed",
+    "theorems": 243
+  },
+  "authentication_script_sha256": "764733f107c934f97417afe5d0318a794b1565fed760732033d019a4afe19195",
+  "compiler_and_checker_hashes_match_pinned_release": true,
+  "exact_singleton_kernel_replays": 18,
+  "full_six_speed_bound_claimed": false,
+  "generated_audit_and_parsed_inventory_match": true,
+  "job_id": 135799965938,
+  "literal_contracts": 33,
+  "literal_source_matches_pinned_gate": true,
+  "project_modules": 18,
+  "receipt_sha256": "009a768a638e275c6705f1bc08c316ca3686553bd591c2c25765fc29531ed394",
+  "required_theorems": 68,
+  "source_and_controls_match_exact_published_commit": true,
+  "source_commit": "e6d53ced9fd3b6ad4a311c3eecbe1fcbd0cdd491",
+  "source_object_log_progress_and_import_hashes_validated": true,
+  "status": "authenticated complete hosted pass",
+  "workflow_run": 44591941338
+}
