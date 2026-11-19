@@ -522,6 +522,12 @@ modules=(
   Conjectures.HadamardAutomorphismPermutationIntegral
   Conjectures.HadamardAutomorphismPermutationMatrix
   Conjectures.HadamardAutomorphismGroupBasic
+  Conjectures.HadamardAutomorphismClassGroup
+  Conjectures.HadamardAutomorphismCyclotomic
+  Conjectures.HadamardAutomorphismCyclotomicGauss
+  Conjectures.HadamardAutomorphismCyclotomicQuadratic
+  Conjectures.HadamardAutomorphismQuadraticNorm
+  Conjectures.HadamardAutomorphismClassOrder
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

@@ -1,5 +1,14 @@
 # History
 
+## 2026-11-19 — Checked quadratic field and ideal-class witness
+
+Registered six Hadamard automorphism proof files that construct the actual
+quadratic fixed field and a prime above 599 of norm 599 and exact ideal-class
+order five. The nine-module closure passed strict sources, a 111-theorem axiom
+audit, and independent pinned-kernel replay at `ae7871fc`. The universal
+prime-pair alternative and full automorphism assembly remain candidates.
+[Receipt](docs/verification/hadamard-automorphism-class-order-ae7871fc.json).
+
 ## 2026-11-19 — Checked Hadamard automorphism permutation component
 
 Six proof files now cover explicit diagonal normalization, fixed-point and

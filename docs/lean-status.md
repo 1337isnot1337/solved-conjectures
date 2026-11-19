@@ -37,7 +37,7 @@ never additional Lean axioms.
 | CUT arithmetic periodicity | Complete | The uniform terminating decision test and exhaustive candidate enumeration are proved for every finite cut set and proposed arithmetic tail. Compact quotient/residue certificates identify both actual example games at every pile size and prove least eventual period 12, saltus 8, and earliest start 7, hence positive-pile preperiod 6. |
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
-| Hadamard order-2396 automorphism obstruction | Partial: arithmetic, coefficient, Fourier, and permutation components checked | The actual residue order, norm exclusions, integral-basis congruences, Fourier compression, determinant quotient, sign normalization, fixed-point counts, and cyclic reindexing are checked. The cyclotomic descent and final assembly, the alternative ideal-class assertion, and the sequence/border results remain separate obligations. |
+| Hadamard order-2396 automorphism obstruction | Partial: arithmetic, Fourier, permutation, and quadratic class-order components checked | These components include the integral-basis congruences, actual Fourier construction, cycle reindexing, quadratic field model, and construction of a prime above 599 whose ideal class has order five. The full signed-automorphism theorem, the universal prime-pair and relative-norm alternative, and the sequence/border results remain separate obligations. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Frankl generating families | Partial: full large-generator bound complete | The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete. |
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
@@ -1357,9 +1357,10 @@ computation axiom. The permitted transitive axioms are only `propext`,
 
 The full signed-automorphism obstruction is still being checked under
 [issue 21](https://github.com/1337isnot1337/solved-conjectures/issues/21).
-Its candidate code is outside the accepted roots. The class-order-five
-assertion in the alternative proof is not established by the numerical
-witness alone and remains unfinished. Hadamard existence at 2396 remains open.
+Its candidate code is outside the accepted roots. An actual prime of ideal-class
+order five has now been constructed and checked in the component below;
+the universal prime-pair and relative-norm alternative still await their gates.
+Hadamard existence at 2396 remains open.
 
 ## Hadamard automorphism Fourier component
 
@@ -1399,3 +1400,30 @@ labels, and transport the real sign matrix into a number field's ring of
 integers. They also construct the full signed row/column automorphism subgroup.
 The claim that its order is coprime to 479 still awaits the cyclotomic descent
 and final assembly; this component alone does not prove that obstruction.
+
+
+## Hadamard quadratic field and class-order component
+
+At `ae7871fc31c478e00b0c1f2778e707081c1af9a2`, the class-order
+closure passed strict source checks, a transitive axiom audit of 111 project
+theorems, and independent pinned-kernel replay of all nine local modules.
+The source files and verification inputs remained unchanged during the checks.
+[Hosted check](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44483833039/job/135422470403) ·
+[Exact receipt](verification/hadamard-automorphism-class-order-ae7871fc.json).
+
+Six additional files are registered: `HadamardAutomorphismClassGroup`,
+`HadamardAutomorphismCyclotomic`, `HadamardAutomorphismCyclotomicGauss`,
+`HadamardAutomorphismCyclotomicQuadratic`, `HadamardAutomorphismQuadraticNorm`,
+and `HadamardAutomorphismClassOrder`. They construct the actual Frobenius and
+quadratic fixed field, a generator whose square is −479, and a quadratic model
+whose algebraic norm is the required quadratic form. They exclude absolute
+norm 599 for quadratic integers. The explicit fifth-power norm witness then
+constructs a prime ideal above 599 with norm 599 and proves that its ideal class
+has exact order five. The proof establishes principality of the fifth power
+and nonprincipality of the prime itself.
+
+The checked endpoint is existential: it constructs such a prime. The stronger
+statement for every prime above 599, the distinct conjugate pair, and the
+independent relative-ideal-norm obstruction remain in the separate
+`class_alternative` candidate. The full signed-automorphism theorem is also
+still a candidate.

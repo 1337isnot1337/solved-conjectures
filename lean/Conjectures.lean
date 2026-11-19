@@ -120,3 +120,5 @@ import Conjectures.HadamardAutomorphismBinary
 import Conjectures.HadamardAutomorphismGroupBasic
 import Conjectures.HadamardAutomorphismPermutationIntegral
 import Conjectures.HadamardAutomorphismPermutationCycles
+
+import Conjectures.HadamardAutomorphismClassOrder

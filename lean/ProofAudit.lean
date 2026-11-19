@@ -9,6 +9,15 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `HadamardAutomorphism.exists_prime_above599_class_order_five,
+    `HadamardAutomorphism.quadratic_integer_absNorm_ne599,
+    `HadamardAutomorphism.quadraticFifthWitness479_norm,
+    `HadamardAutomorphism.quadraticFixedField479_norm_coordinates,
+    `HadamardAutomorphism.quadraticFixedField479_degree,
+    `HadamardAutomorphism.quadraticGenerator479_sq,
+    `HadamardAutomorphism.prime599_number_of_primes,
+    `HadamardAutomorphism.prime599_inertia_degree,
+    `HadamardAutomorphism.frobenius479_order,
     `HadamardAutomorphism.normalize_signed_hadamard,
     `HadamardAutomorphism.order2396_fixed_points_and_cycles,
     `HadamardAutomorphism.exists_cyclic_reindex,

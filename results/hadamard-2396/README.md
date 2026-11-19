@@ -10,15 +10,14 @@ For a third route, we show that a core with quotient of order four and the stipu
 
 ## Checked Lean components
 
-**Lean status:** partial. The arithmetic, integral-basis coefficient, Fourier, and permutation components are checked; the complete signed-automorphism theorem and the sequence/border results are not yet fully formalized.
+**Lean status:** partial. The arithmetic, Fourier, permutation, and quadratic class-order components are checked; the complete signed-automorphism theorem, universal ideal-class alternative, and sequence/border results remain candidates.
 
 The arithmetic and integral-basis coefficient component of the automorphism
 argument has passed strict source checks, a transitive axiom audit, and
 independent pinned-kernel replay. It includes the order-239 residue calculation,
 both norm exclusions, the fifth-power norm witness, and the coefficient
 congruence in the full cyclotomic ring of integers. The quadratic descent, final
-assembly, and separate ideal-class argument remain
-candidates. [Exact checked scope and receipt](../../docs/lean-status.md#hadamard-automorphism-arithmetic).
+assembly, and universal ideal-class alternative remain candidates. [Exact checked scope and receipt](../../docs/lean-status.md#hadamard-automorphism-arithmetic).
 
 The Fourier component has also passed these three gates. It constructs the
 actual character embedding and indicator Fourier matrix, proves their Gram
@@ -30,6 +29,12 @@ The permutation component has passed the same gates. It proves the sign
 normalization, fixed-point and cycle counts, cyclic reindexing, and transport
 into the ring of integers, and defines the full signed automorphism subgroup.
 [Permutation receipt and scope](../../docs/lean-status.md#hadamard-automorphism-permutation-component).
+
+The quadratic field and class-order component has also passed all three gates.
+It constructs the quadratic field model, proves its algebraic norm formula,
+and constructs a prime above 599 with norm 599 and exact ideal-class order five.
+The universal prime-pair statement and relative-norm alternative remain pending.
+[Class-order receipt and scope](../../docs/lean-status.md#hadamard-quadratic-field-and-class-order-component).
 
 ## Reproduce the finite checks
 

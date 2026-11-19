@@ -317,14 +317,15 @@ The complete signed-permutation theorem and the literal automorphism-group
 cardinality statement remain candidates. Their checks derive the fixed-point
 counts, cycle labels, actual Fourier matrix, binary support nonvanishing,
 determinant divisibility, and cyclotomic descent rather than assuming these
-conclusions. The separate class-order-five argument also remains unfinished.
+conclusions. The universal class-order and relative-norm argument remains
+unfinished; the constructed-prime endpoint is checked below.
 Li has not been started.
 
 The Fourier component also passed all three gates at `ee1be6e0`: six local
 modules and 32 audited project theorems. Its five proof files are registered;
 its literal matrix construction, Gram identity, and determinant quotient are
 checked. [Receipt](verification/hadamard-automorphism-fourier-ee1be6e0.json).
-The full Hadamard obstruction and separate ideal-class result remain candidates.
+The full Hadamard obstruction and universal ideal-class alternative remain candidates.
 
 
 The permutation component passed all three gates at `e9a9bb45`: seven local
@@ -333,3 +334,14 @@ covering diagonal normalization, fixed-point and cycle counts, cyclic labels,
 integer transport, and the actual signed automorphism subgroup.
 [Receipt](verification/hadamard-automorphism-permutation-e9a9bb45.json).
 The cyclotomic descent and final assembly remain candidates.
+
+
+The quadratic field and constructed-prime class-order component passed all
+three gates at `ae7871fc`: nine modules and 111 audited project theorems.
+Six new proof files are registered. The checked result constructs a prime
+above 599 with norm 599 and exact ideal-class order five in the actual
+quadratic fixed field; it also proves the field's coordinate and norm formulas.
+[Receipt](verification/hadamard-automorphism-class-order-ae7871fc.json).
+The separate `class_alternative` target checks the universal prime-pair result
+and relative ideal-norm proof. Neither that target nor the full matrix assembly
+is marked complete.
