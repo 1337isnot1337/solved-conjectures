@@ -64,6 +64,7 @@ STATUS_LABEL_SLUGS = {
     "Graffiti.pc Conjecture 318": "graffiti-pc-318",
     "Li coefficient sign": "li-coefficient-sign",
     "Frankl generating families": "frankl-generator-families",
+    "Hadamard order-2396 automorphism obstruction": "hadamard-2396",
     "Erdős 607 line sizes": "erdos-607-line-sizes",
     "Growing rectangles": "rectangle-partition-asymptotics",
     "Distance graphs with three missing differences": "distance-graph-densities",

@@ -42,6 +42,19 @@ class StatusChecks(unittest.TestCase):
         self.assertEqual(results['frankl-generator-families'].scope, 'partial')
         self.assertIn('remaining bridges', results['frankl-generator-families'].checked_scope)
 
+    def test_hadamard_components_keep_open_problem_scope(self):
+        b, results = self.builder(rows='| Hadamard order-2396 automorphism obstruction | Partial: arithmetic, coefficient, and Fourier components checked | Assembly and sequence/border obligations remain. |')
+        del results['frankl-generator-families']
+        source = (Path(__file__).resolve().parents[1] / 'results/hadamard-2396/README.md').read_text()
+        results['hadamard-2396'] = Result('hadamard-2396', 'Hadamard', 'Combinatorics', landing_lean_status(source), 'Restricted results', scope='partial')
+        b.check_authoritative_statuses(results)
+        self.assertEqual(results['hadamard-2396'].status, 'partial')
+        self.assertEqual(results['hadamard-2396'].scope, 'partial')
+        self.assertIn('obligations remain', results['hadamard-2396'].checked_scope)
+        results['hadamard-2396'].status = 'full'
+        with self.assertRaisesRegex(ValueError, 'Stale catalogue status'):
+            b.check_authoritative_statuses(results)
+
     def test_partial_math_with_full_formalization_does_not_promote_scope(self):
         b, results = self.builder('full', '| Frankl generating families | Complete | Restricted statement only. |')
         b.check_authoritative_statuses(results)

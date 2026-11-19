@@ -10,6 +10,8 @@ For a third route, we show that a core with quotient of order four and the stipu
 
 ## Checked Lean components
 
+**Lean status:** partial. The arithmetic, integral-basis coefficient, and Fourier components are checked; the complete signed-automorphism theorem and the sequence/border results are not yet fully formalized.
+
 The arithmetic and integral-basis coefficient component of the automorphism
 argument has passed strict source checks, a transitive axiom audit, and
 independent pinned-kernel replay. It includes the order-239 residue calculation,
