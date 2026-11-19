@@ -22,6 +22,12 @@ on:
           - order-nine
           - domain
           - compression
+          - order-three-fibers
+          - projection
+          - invariant-quotient
+          - kernel
+          - transfer
+          - reduction
   push:
     paths:
       - 'lean/Conjectures/HadamardLegendre*.lean'

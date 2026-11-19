@@ -62,8 +62,8 @@ theorem compressed_correlation_zero
   rw [combinedCorrelation_compress_eq_fiber_sum]
   calc
     (∑ u, if π u = 0 then combinedCorrelation f u else 0) =
-        ∑ u : G, (-12) * (if π u = 0 then (1 : ℤ) else 0) +
-          (if u = 0 then 4 * (Fintype.card G : ℤ) + 12 else 0) := by
+        ∑ u : G, ((-12) * (if π u = 0 then (1 : ℤ) else 0) +
+          (if u = 0 then 4 * (Fintype.card G : ℤ) + 12 else 0)) := by
       apply Finset.sum_congr rfl
       intro u hu
       by_cases hu0 : u = 0

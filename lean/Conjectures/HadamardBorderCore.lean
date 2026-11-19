@@ -125,12 +125,12 @@ theorem core_gram_of_correlation_formula
   · subst j
     by_cases hxy : x = y
     · subst y
-      simp [hcorrelation, blockOnesG, blockOnes, kernelBlocks, Matrix.one_apply]
+      simp [hcorrelation, blockOnesG, blockOnes, kernelBlocks]
       <;> ring
     · by_cases hp : π x = π y <;>
         simp [hcorrelation, hxy, hp, map_sub, sub_eq_zero,
-          blockOnesG, blockOnes, kernelBlocks, Matrix.one_apply] <;> ring
-  · simp [hi, blockOnesG, blockOnes, kernelBlocks, Matrix.one_apply]
+          blockOnesG, blockOnes, kernelBlocks] <;> ring
+  · simp [hi, blockOnesG, blockOnes, kernelBlocks]
 
 end Gram
 

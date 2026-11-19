@@ -22,7 +22,11 @@ private theorem four_variances_sum_nine (a b c d : ℤ)
     (a = 3 ∧ b = 0 ∧ c = 3 ∧ d = 3) ∨
     (a = 3 ∧ b = 3 ∧ c = 0 ∧ d = 3) ∨
     (a = 3 ∧ b = 3 ∧ c = 3 ∧ d = 0) := by
-  omega
+  rcases hma with hma | hma
+  all_goals rcases hmb with hmb | hmb
+  all_goals rcases hmc with hmc | hmc
+  all_goals rcases hmd with hmd | hmd
+  all_goals omega
 
 theorem variances_of_total_nine (x : Fin 4 → Fin 4 → ℤ)
     (htotal : ∑ i, variance (x i) = 9) :
@@ -137,7 +141,8 @@ theorem compression_shapes_of_energy
     refine ⟨2 * baseline + e, exception, ε, hε, ?_⟩
     intro q
     rw [hparity, hshape]
-    by_cases hq : q = exception <;> simp [hq] <;> ring
+    by_cases hq : q = exception <;> simp [hq]
+    ring
 
 /-- An equality of residues modulo two supplies the integer parity lift. -/
 theorem compression_shapes_of_mod_two

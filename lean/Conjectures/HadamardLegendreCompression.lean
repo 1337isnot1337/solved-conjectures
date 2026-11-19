@@ -61,8 +61,8 @@ theorem compressed_pairCorrelation_zero
   rw [pairCorrelation_compress_eq_fiber_sum]
   calc
     (∑ u, if π u = 0 then pairCorrelation f u else 0) =
-        ∑ u : G, (-2) * (if π u = 0 then (1 : ℤ) else 0) +
-          (if u = 0 then 2 * ((Fintype.card G : ℤ) + 1) else 0) := by
+        ∑ u : G, ((-2) * (if π u = 0 then (1 : ℤ) else 0) +
+          (if u = 0 then 2 * ((Fintype.card G : ℤ) + 1) else 0)) := by
       apply Finset.sum_congr rfl
       intro u hu
       by_cases hu0 : u = 0

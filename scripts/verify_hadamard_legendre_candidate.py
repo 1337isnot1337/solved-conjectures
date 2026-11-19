@@ -102,9 +102,45 @@ TASKS = {
         'HadamardLegendre.compress_equivariant',
         'HadamardLegendre.compress_comp',
     ]),
+    'order-three-fibers': ('Conjectures.HadamardLegendreOrderThreeFibers', [
+        'HadamardLegendre.order_three_row_constant_on_nonzero_coset',
+        'HadamardLegendre.order_three_quotient_card',
+        'HadamardLegendre.order_three_compressed_square_nonzero',
+        'HadamardLegendre.order_three_compressed_energy_ge',
+    ]),
+    'projection': ('Conjectures.HadamardLegendreProjection', [
+        'HadamardLegendre.automorphism_product_apply133',
+        'HadamardLegendre.projections133_jointly_injective',
+        'HadamardLegendre.units133_card',
+        'HadamardLegendre.card_dvd_twenty_seven_of_injective_projection',
+    ]),
+    'invariant-quotient': ('Conjectures.HadamardLegendreInvariantQuotient', [
+        'HadamardLegendre.exists_surjective_quotient_three',
+        'HadamardLegendre.nonzero_hom_zmod_three_surjective',
+        'HadamardLegendre.exists_invariant_quotient_three',
+    ]),
+    'kernel': ('Conjectures.HadamardLegendreKernel', [
+        'HadamardLegendre.compress_prodMap_id',
+        'HadamardLegendre.no_legendre_order_three_on_nine_factor',
+        'HadamardLegendre.multiplierProjection133_injective_on_odd_fixed',
+        'HadamardLegendre.odd_fixed_multiplier_card_dvd_twenty_seven',
+    ]),
+    'transfer': ('Conjectures.HadamardLegendreTransfer', [
+        'HadamardLegendre.reindexRows_rowSum',
+        'HadamardLegendre.reindexRows_pairCorrelation',
+        'HadamardLegendre.reindexRows_isLegendrePair',
+        'HadamardLegendre.conjugateAut_fixed_mem_iff',
+        'HadamardLegendre.card_fixedMultiplierGroup_reindex',
+    ]),
+    'reduction': ('Conjectures.HadamardLegendreReduction', [
+        'HadamardLegendre.common_multiplier_card_dvd_twenty_seven',
+        'HadamardLegendre.common_multiplier_card_le_twenty_seven',
+        'HadamardLegendre.multiplier_subgroup_card_dvd_twenty_seven',
+        'HadamardLegendre.common_multiplier_card_le_nine_of_ne_twenty_seven',
+    ]),
 }
 
-DEFAULT_TASKS = ("involutions", "order-nine", "domain", "compression")
+DEFAULT_TASKS = ("reduction", "invariant-quotient")
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-legendre-candidates.yml',
  'lean/lake-manifest.json',
