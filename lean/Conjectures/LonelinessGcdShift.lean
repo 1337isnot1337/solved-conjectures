@@ -278,7 +278,8 @@ theorem ninthShiftCost_pos_of_exception {n : ℕ} (v : Fin n → ℕ) (d : ℕ)
   have himem : i ∈ exceptionalIndices v d := by simp [exceptionalIndices, hi]
   have hle : ninthShiftWeight (v i) d ≤ ninthShiftCost v d := by
     unfold ninthShiftCost
-    exact Finset.single_le_sum (fun _ _ => Nat.zero_le _) himem
+    exact Finset.single_le_sum (f := fun j : Fin n => ninthShiftWeight (v j) d)
+      (fun _ _ => Nat.zero_le _) himem
   exact (ninthShiftWeight_pos (v i) d hd).trans_le hle
 
 /-- The statement in the written proof, with a nonempty exceptional set and
