@@ -2,7 +2,9 @@
 
 The objective is to formalize every result in this repository, preserving its
 quantifiers and discharging every mathematical dependency. Accepted work goes
-to `main`. Li is last. The campaign is incomplete.
+to `main`. Li has a partial Lean formalization: the coefficient theorem and
+tree facts are checked, while the finite connected-partition coverage remains
+Python-verified. The campaign is incomplete.
 
 The higher-speed team's recent candidate receipts include the complete
 41,472-code seven-coordinate finite enumeration at `3f6ee74c` and three
@@ -190,8 +192,10 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
 18. Loneliness on a fixed hyperplane: uniform fixed-tolerance probability
     bound, exceptional-subspace description,
     quasipolynomial counts, and the endpoint density for full-support normals.
-19. Li coefficient sign, last: actual tree properties, all connected partition
-    types, chromatic symmetric functions and coefficient extraction.
+19. Li coefficient sign, partial: Lean proves the actual tree properties and
+    the three-variable restriction of the coefficient is `+29`; `verify.py`
+    covers all 6,842 connected partition types and the eight triple-plus-pairs
+    partitions.
 
 The pair-sum maximum theorem and the checked values of 31 finite speed lists
 are reusable components. They do not establish any exhaustive classification.
@@ -550,8 +554,20 @@ also registered, including arithmetic complexity and actual interval-set
 attainment. The prime-257 minimum-pair-20 support probe is registered only
 for its stated narrow scope. The final relation-basis registration below
 completes Motzkin. The remaining higher-runner classifications are incomplete.
-Li remains last.
+The Li coefficient-sign formalization is registered separately below.
 
+
+## Li coefficient-sign partial formalization
+
+The tree facts and the three-variable coefficient theorem are Lean-proven in
+`lean/Conjectures/LiMain.lean` and `LiBasic.lean`; see
+`results/li-coefficient-sign/LEAN.md`. The identification with the full
+`[e_3 e_2^14] X_T` coefficient is the standard restriction argument in that
+note, not a separate Lean theorem. The full counterexample also requires
+all 6,842 connected partition types and the eight triple-plus-pairs partitions.
+Those finite coverage claims are checked by
+`results/li-coefficient-sign/verify.py`, not by Lean. The overall result is
+partial formalization.
 
 ## Complete Motzkin relation classification
 
@@ -582,7 +598,8 @@ formalization obligations. Four exact `e25e0dcd` component receipts cover
 overlap. All fifty recorded paths match, and 31 new modules with
 17 required declarations are registered. The accepted prebuild now contains
 787 proof modules and two roots. [Exact scope and receipts](lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns).
-The full merged gate remains separate; Li remains last.
+The full merged gate remains separate; the Li coefficient-sign formalization is
+registered separately above.
 
 ## Complete Frankl high-girth bound — 19 November 2026
 
@@ -599,7 +616,8 @@ stock-kernel replay at `f421f4434ffc8117a57a14b99c19818e76dcfd8e`.
 The 47 new modules and 34 new required endpoints are registered after checking
 the current source blobs against that receipt. The merged full-package gate
 remains separate. Cyclic span-four verification continues in issue 20; the
-Frankl directory and the overall campaign remain incomplete. Li remains last.
+Frankl directory and the overall campaign remain incomplete. The Li
+coefficient-sign formalization is registered separately above.
 
 [Exact receipt](verification/frankl-components-44516856625/high-girth-theorem.json) ·
 [Scope](lean-status.md#complete-frankl-high-girth-frequency-theorem).

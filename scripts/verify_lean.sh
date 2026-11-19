@@ -692,6 +692,20 @@ modules=(
   Conjectures.LonelinessFiveSpeedRootQuickP0179
   Conjectures.MotzkinCircleLift
   Conjectures.MotzkinCharacterWindowGeometry
+  Conjectures.LiBasic
+  Conjectures.LiChromatic
+  Conjectures.LiEliminate
+  Conjectures.LiTrunc
+  Conjectures.LiDualFull
+  Conjectures.LiDualTrunc
+  Conjectures.LiBridge
+  Conjectures.LiWeighted
+  Conjectures.LiWeighted2
+  Conjectures.LiEmapFinal
+  Conjectures.LiMonomial
+  Conjectures.LiSpecFinal
+  Conjectures.LiCompute
+  Conjectures.LiMain
   Conjectures.MotzkinCharacterWindow
   Conjectures.MotzkinFloorSum
   Conjectures.MotzkinEvaluatorRows

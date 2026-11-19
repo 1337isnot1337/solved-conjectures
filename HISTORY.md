@@ -47,6 +47,16 @@ source/audit/kernel receipts register 31 modules and 17 required endpoints,
 after comparison of all fifty recorded paths. The full merged gate remains
 separate. [Scope and receipts](docs/lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns).
 
+## 2026-11-19 — Partial Lean formalization of Li coefficient sign
+
+Lean proves the structural facts for the explicit 31-vertex tree and that the
+three-variable restriction of `[e_3 e_2^14] X_T` is `+29`. The full
+counterexample also requires all 6,842 connected partition types and the eight
+triple-plus-pairs partitions; those finite coverage claims remain checked by
+`results/li-coefficient-sign/verify.py`, not by Lean. The overall result is
+therefore partially formalized. [Checked scope](docs/lean-status.md#li-coefficient-sign-partial-formalization-19-november-2026) ·
+[Lean note](results/li-coefficient-sign/LEAN.md).
+
 ## 2026-11-19 — Complete two-difference Motzkin formalization
 
 Registered the exhaustive integer relation-basis classification and its

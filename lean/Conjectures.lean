@@ -248,6 +248,21 @@ import Conjectures.HadamardBorderNormalizationTransport
 
 import Conjectures.LonelinessFiveSpeedRootQuickP0179
 import Conjectures.MotzkinCharacterWindow
+
+import Conjectures.LiBasic
+import Conjectures.LiChromatic
+import Conjectures.LiEliminate
+import Conjectures.LiTrunc
+import Conjectures.LiDualFull
+import Conjectures.LiDualTrunc
+import Conjectures.LiBridge
+import Conjectures.LiWeighted
+import Conjectures.LiWeighted2
+import Conjectures.LiEmapFinal
+import Conjectures.LiMonomial
+import Conjectures.LiSpecFinal
+import Conjectures.LiCompute
+import Conjectures.LiMain
 import Conjectures.MotzkinEvaluatorCandidates
 import Conjectures.MotzkinRationalIntervals
 import Conjectures.LonelinessSixSpeedSupport257Cuts
