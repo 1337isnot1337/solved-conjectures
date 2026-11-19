@@ -24,7 +24,7 @@ theorem patternAllowed_submask {patterns : List ℕ} {a b : ℕ}
     _ = p := by rw [hab, hpa]
 
 theorem mod_sixteen_submask (a k : ℕ) : (a % 16 ^ k) &&& a = a % 16 ^ k := by
-  have hp : 16 ^ k = 2 ^ (4 * k) := by rw [Nat.pow_mul]; rfl
+  have hp : 16 ^ k = 2 ^ (4 * k) := by rw [Nat.pow_mul]
   apply Nat.eq_of_testBit_eq
   intro i
   simp only [hp, Nat.testBit_and, Nat.testBit_mod_two_pow, Bool.and_assoc, Bool.and_self]
