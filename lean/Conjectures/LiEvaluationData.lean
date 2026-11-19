@@ -219,15 +219,375 @@ theorem leaf_conditions : ∀ i : Fin 30,
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
+private theorem parent_weights_00 (j : Fin 5) :
+    stageWeights 0 j (parent 0) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_00 (j : Fin 5) :
+    stageWeights 0 j (leaf 0) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_01 (j : Fin 5) :
+    stageWeights 1 j (parent 1) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_01 (j : Fin 5) :
+    stageWeights 1 j (leaf 1) = nextWeights 0 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_02 (j : Fin 5) :
+    stageWeights 2 j (parent 2) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_02 (j : Fin 5) :
+    stageWeights 2 j (leaf 2) = nextWeights 1 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_03 (j : Fin 5) :
+    stageWeights 3 j (parent 3) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_03 (j : Fin 5) :
+    stageWeights 3 j (leaf 3) = nextWeights 2 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_04 (j : Fin 5) :
+    stageWeights 4 j (parent 4) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_04 (j : Fin 5) :
+    stageWeights 4 j (leaf 4) = nextWeights 3 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_05 (j : Fin 5) :
+    stageWeights 5 j (parent 5) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_05 (j : Fin 5) :
+    stageWeights 5 j (leaf 5) = nextWeights 4 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_06 (j : Fin 5) :
+    stageWeights 6 j (parent 6) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_06 (j : Fin 5) :
+    stageWeights 6 j (leaf 6) = nextWeights 5 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_07 (j : Fin 5) :
+    stageWeights 7 j (parent 7) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_07 (j : Fin 5) :
+    stageWeights 7 j (leaf 7) = nextWeights 6 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_08 (j : Fin 5) :
+    stageWeights 8 j (parent 8) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_08 (j : Fin 5) :
+    stageWeights 8 j (leaf 8) = nextWeights 7 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_09 (j : Fin 5) :
+    stageWeights 9 j (parent 9) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_09 (j : Fin 5) :
+    stageWeights 9 j (leaf 9) = nextWeights 8 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_10 (j : Fin 5) :
+    stageWeights 10 j (parent 10) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_10 (j : Fin 5) :
+    stageWeights 10 j (leaf 10) = nextWeights 9 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_11 (j : Fin 5) :
+    stageWeights 11 j (parent 11) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_11 (j : Fin 5) :
+    stageWeights 11 j (leaf 11) = nextWeights 10 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_12 (j : Fin 5) :
+    stageWeights 12 j (parent 12) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_12 (j : Fin 5) :
+    stageWeights 12 j (leaf 12) = nextWeights 11 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_13 (j : Fin 5) :
+    stageWeights 13 j (parent 13) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_13 (j : Fin 5) :
+    stageWeights 13 j (leaf 13) = nextWeights 12 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_14 (j : Fin 5) :
+    stageWeights 14 j (parent 14) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_14 (j : Fin 5) :
+    stageWeights 14 j (leaf 14) = nextWeights 13 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_15 (j : Fin 5) :
+    stageWeights 15 j (parent 15) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_15 (j : Fin 5) :
+    stageWeights 15 j (leaf 15) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_16 (j : Fin 5) :
+    stageWeights 16 j (parent 16) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_16 (j : Fin 5) :
+    stageWeights 16 j (leaf 16) = nextWeights 15 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_17 (j : Fin 5) :
+    stageWeights 17 j (parent 17) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_17 (j : Fin 5) :
+    stageWeights 17 j (leaf 17) = nextWeights 16 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_18 (j : Fin 5) :
+    stageWeights 18 j (parent 18) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_18 (j : Fin 5) :
+    stageWeights 18 j (leaf 18) = nextWeights 17 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_19 (j : Fin 5) :
+    stageWeights 19 j (parent 19) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_19 (j : Fin 5) :
+    stageWeights 19 j (leaf 19) = nextWeights 18 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_20 (j : Fin 5) :
+    stageWeights 20 j (parent 20) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_20 (j : Fin 5) :
+    stageWeights 20 j (leaf 20) = nextWeights 19 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_21 (j : Fin 5) :
+    stageWeights 21 j (parent 21) = nextWeights 20 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_21 (j : Fin 5) :
+    stageWeights 21 j (leaf 21) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_22 (j : Fin 5) :
+    stageWeights 22 j (parent 22) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_22 (j : Fin 5) :
+    stageWeights 22 j (leaf 22) = nextWeights 21 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_23 (j : Fin 5) :
+    stageWeights 23 j (parent 23) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_23 (j : Fin 5) :
+    stageWeights 23 j (leaf 23) = nextWeights 22 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_24 (j : Fin 5) :
+    stageWeights 24 j (parent 24) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_24 (j : Fin 5) :
+    stageWeights 24 j (leaf 24) = nextWeights 23 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_25 (j : Fin 5) :
+    stageWeights 25 j (parent 25) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_25 (j : Fin 5) :
+    stageWeights 25 j (leaf 25) = nextWeights 24 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_26 (j : Fin 5) :
+    stageWeights 26 j (parent 26) = nextWeights 14 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_26 (j : Fin 5) :
+    stageWeights 26 j (leaf 26) = nextWeights 25 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_27 (j : Fin 5) :
+    stageWeights 27 j (parent 27) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_27 (j : Fin 5) :
+    stageWeights 27 j (leaf 27) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_28 (j : Fin 5) :
+    stageWeights 28 j (parent 28) = nextWeights 26 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_28 (j : Fin 5) :
+    stageWeights 28 j (leaf 28) = nextWeights 27 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem parent_weights_29 (j : Fin 5) :
+    stageWeights 29 j (parent 29) = nextWeights 28 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem leaf_weights_29 (j : Fin 5) :
+    stageWeights 29 j (leaf 29) = colorWeights j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
 private theorem table_correct_step_00 : ∀ (j : Fin 5) (c : Fin 3),
     nextWeights 0 j c =
       stageWeights 0 j (parent 0) c *
         ((∑ d : Fin 3, stageWeights 0 j (leaf 0) d) -
           stageWeights 0 j (leaf 0) c) := by
   intro j c
+  simp only [parent_weights_00, leaf_weights_00]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -237,9 +597,9 @@ private theorem table_correct_step_01 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 1 j (leaf 1) d) -
           stageWeights 1 j (leaf 1) c) := by
   intro j c
+  simp only [parent_weights_01, leaf_weights_01]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -249,9 +609,9 @@ private theorem table_correct_step_02 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 2 j (leaf 2) d) -
           stageWeights 2 j (leaf 2) c) := by
   intro j c
+  simp only [parent_weights_02, leaf_weights_02]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -261,9 +621,9 @@ private theorem table_correct_step_03 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 3 j (leaf 3) d) -
           stageWeights 3 j (leaf 3) c) := by
   intro j c
+  simp only [parent_weights_03, leaf_weights_03]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -273,9 +633,9 @@ private theorem table_correct_step_04 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 4 j (leaf 4) d) -
           stageWeights 4 j (leaf 4) c) := by
   intro j c
+  simp only [parent_weights_04, leaf_weights_04]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -285,9 +645,9 @@ private theorem table_correct_step_05 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 5 j (leaf 5) d) -
           stageWeights 5 j (leaf 5) c) := by
   intro j c
+  simp only [parent_weights_05, leaf_weights_05]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -297,9 +657,9 @@ private theorem table_correct_step_06 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 6 j (leaf 6) d) -
           stageWeights 6 j (leaf 6) c) := by
   intro j c
+  simp only [parent_weights_06, leaf_weights_06]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -309,9 +669,9 @@ private theorem table_correct_step_07 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 7 j (leaf 7) d) -
           stageWeights 7 j (leaf 7) c) := by
   intro j c
+  simp only [parent_weights_07, leaf_weights_07]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -321,9 +681,9 @@ private theorem table_correct_step_08 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 8 j (leaf 8) d) -
           stageWeights 8 j (leaf 8) c) := by
   intro j c
+  simp only [parent_weights_08, leaf_weights_08]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -333,9 +693,9 @@ private theorem table_correct_step_09 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 9 j (leaf 9) d) -
           stageWeights 9 j (leaf 9) c) := by
   intro j c
+  simp only [parent_weights_09, leaf_weights_09]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -345,9 +705,9 @@ private theorem table_correct_step_10 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 10 j (leaf 10) d) -
           stageWeights 10 j (leaf 10) c) := by
   intro j c
+  simp only [parent_weights_10, leaf_weights_10]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -357,9 +717,9 @@ private theorem table_correct_step_11 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 11 j (leaf 11) d) -
           stageWeights 11 j (leaf 11) c) := by
   intro j c
+  simp only [parent_weights_11, leaf_weights_11]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -369,9 +729,9 @@ private theorem table_correct_step_12 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 12 j (leaf 12) d) -
           stageWeights 12 j (leaf 12) c) := by
   intro j c
+  simp only [parent_weights_12, leaf_weights_12]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -381,9 +741,9 @@ private theorem table_correct_step_13 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 13 j (leaf 13) d) -
           stageWeights 13 j (leaf 13) c) := by
   intro j c
+  simp only [parent_weights_13, leaf_weights_13]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -393,9 +753,9 @@ private theorem table_correct_step_14 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 14 j (leaf 14) d) -
           stageWeights 14 j (leaf 14) c) := by
   intro j c
+  simp only [parent_weights_14, leaf_weights_14]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -405,9 +765,9 @@ private theorem table_correct_step_15 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 15 j (leaf 15) d) -
           stageWeights 15 j (leaf 15) c) := by
   intro j c
+  simp only [parent_weights_15, leaf_weights_15]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -417,9 +777,9 @@ private theorem table_correct_step_16 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 16 j (leaf 16) d) -
           stageWeights 16 j (leaf 16) c) := by
   intro j c
+  simp only [parent_weights_16, leaf_weights_16]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -429,9 +789,9 @@ private theorem table_correct_step_17 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 17 j (leaf 17) d) -
           stageWeights 17 j (leaf 17) c) := by
   intro j c
+  simp only [parent_weights_17, leaf_weights_17]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -441,9 +801,9 @@ private theorem table_correct_step_18 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 18 j (leaf 18) d) -
           stageWeights 18 j (leaf 18) c) := by
   intro j c
+  simp only [parent_weights_18, leaf_weights_18]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -453,9 +813,9 @@ private theorem table_correct_step_19 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 19 j (leaf 19) d) -
           stageWeights 19 j (leaf 19) c) := by
   intro j c
+  simp only [parent_weights_19, leaf_weights_19]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -465,9 +825,9 @@ private theorem table_correct_step_20 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 20 j (leaf 20) d) -
           stageWeights 20 j (leaf 20) c) := by
   intro j c
+  simp only [parent_weights_20, leaf_weights_20]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -477,9 +837,9 @@ private theorem table_correct_step_21 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 21 j (leaf 21) d) -
           stageWeights 21 j (leaf 21) c) := by
   intro j c
+  simp only [parent_weights_21, leaf_weights_21]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -489,9 +849,9 @@ private theorem table_correct_step_22 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 22 j (leaf 22) d) -
           stageWeights 22 j (leaf 22) c) := by
   intro j c
+  simp only [parent_weights_22, leaf_weights_22]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -501,9 +861,9 @@ private theorem table_correct_step_23 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 23 j (leaf 23) d) -
           stageWeights 23 j (leaf 23) c) := by
   intro j c
+  simp only [parent_weights_23, leaf_weights_23]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -513,9 +873,9 @@ private theorem table_correct_step_24 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 24 j (leaf 24) d) -
           stageWeights 24 j (leaf 24) c) := by
   intro j c
+  simp only [parent_weights_24, leaf_weights_24]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -525,9 +885,9 @@ private theorem table_correct_step_25 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 25 j (leaf 25) d) -
           stageWeights 25 j (leaf 25) c) := by
   intro j c
+  simp only [parent_weights_25, leaf_weights_25]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -537,9 +897,9 @@ private theorem table_correct_step_26 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 26 j (leaf 26) d) -
           stageWeights 26 j (leaf 26) c) := by
   intro j c
+  simp only [parent_weights_26, leaf_weights_26]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -549,9 +909,9 @@ private theorem table_correct_step_27 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 27 j (leaf 27) d) -
           stageWeights 27 j (leaf 27) c) := by
   intro j c
+  simp only [parent_weights_27, leaf_weights_27]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -561,9 +921,9 @@ private theorem table_correct_step_28 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 28 j (leaf 28) d) -
           stageWeights 28 j (leaf 28) c) := by
   intro j c
+  simp only [parent_weights_28, leaf_weights_28]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -573,9 +933,9 @@ private theorem table_correct_step_29 : ∀ (j : Fin 5) (c : Fin 3),
         ((∑ d : Fin 3, stageWeights 29 j (leaf 29) d) -
           stageWeights 29 j (leaf 29) c) := by
   intro j c
+  simp only [parent_weights_29, leaf_weights_29]
   fin_cases j <;> fin_cases c <;>
-    norm_num [nextWeights, stageWeights, updateTable, parent, leaf, leafOrder,
-      Li.parOf, Li.parList, colorWeights, Function.update, Fin.sum_univ_three]
+    norm_num [nextWeights, updateTable, colorWeights, Fin.sum_univ_three]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
@@ -691,13 +1051,18 @@ lemma partFunOn_zero (w : Fin 31 → Fin 3 → ℚ) :
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
+private theorem root_weights (j : Fin 5) :
+    stageWeights 30 j 0 = nextWeights 29 j := by
+  rfl
+
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
 /-- The five final root sums. -/
 theorem root_values : ∀ j : Fin 5,
     stageWeights 30 j 0 0 + stageWeights 30 j 0 1 + stageWeights 30 j 0 2 = values j := by
   intro j
-  fin_cases j <;>
-    norm_num [stageWeights, parent, leaf, leafOrder, Li.parOf, Li.parList,
-      nextWeights, updateTable, colorWeights, values, Function.update]
+  simp only [root_weights]
+  fin_cases j <;> norm_num [nextWeights, updateTable, values]
 
 /-- The full partition functions, obtained from the proved elimination chain. -/
 theorem partFun_values (j : Fin 5) :

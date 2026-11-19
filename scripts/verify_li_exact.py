@@ -290,7 +290,8 @@ example {σ : Type*} [Fintype σ] [DecidableEq σ]
       Finsupp.single (⟨2, by omega⟩ : Fin (Fintype.card σ))
         ((![1, 3, 5, 7, 9] : Fin 5 → ℕ) i) := by
     simp only [LiInterpolation.exponents, Finsupp.embDomain_add,
-      Finsupp.embDomain_single] <;> rfl
+      Finsupp.embDomain_single]
+    rfl
   have h := Li.full_e2e3_coefficients_of_card (σ := σ) hσ i
   rw [hindex] at h
   exact h

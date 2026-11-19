@@ -38,7 +38,7 @@
     "LiTrunc.",
     "LiWeighted."
   ],
-  "literal_statements_sha256": "b36a4798f55d2aa79c3fde0e037e4c9da2377ee72ef720fd6cf626308aa6e42a",
+  "literal_statements_sha256": "14b9ca268b5bf943f1656b21119b43adfa5529cf0414479c0f1ad762079ef53b",
   "project_module_count": 44,
   "required_theorem_count": 71,
   "required_theorems": [
@@ -146,7 +146,7 @@
     "Conjectures.LiDualTrunc": "00f18dcdb6aec36ee60df7fd332c7494c08efdab7d9b58eb6c1e868ea87b96e4",
     "Conjectures.LiEliminate": "908f594e8b53af795b15443142853fa267a069260b0f25836b99fd2eef7b337d",
     "Conjectures.LiEmapFinal": "c871bf8288239662b4ed42cd4805844d5d64671de6e5623b421a17b50b22f8f8",
-    "Conjectures.LiEvaluationData": "979b3a4bfbc6f1e5048c0dc729bf8dffb48989321c4d0d7b2d3cc11ecb6f941f",
+    "Conjectures.LiEvaluationData": "3f4b35b618373202850ade42c16ea63d128d76ec6f28cfed9d4525ff83ba9dda",
     "Conjectures.LiFullCoeff": "aaecad0cad5cd44cd1efdaf89eae8ab0263d004c54ef550f0b0eb7a61360ab29",
     "Conjectures.LiFullCoeffTrunc": "0f369b76664829cc4c28a55246d17ecfcccd2c94381d1e94033c1b1ad746b7de",
     "Conjectures.LiMain": "bb12b26c7775d2d83b6b377f7238704f57c1364fe1136d218ed2ca823a05be4a",
