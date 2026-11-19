@@ -53,10 +53,11 @@ theorem rational_matrix_sum_two_squares {ι : Type*} [Fintype ι] [DecidableEq �
     dsimp [M]
     rw [gaussianMatrix_mul_conj, hsq, hcomm, sub_self]
     funext i j
-    apply QuadraticAlgebra.ext <;>
-      by_cases hij : i = j <;>
-      simp [gaussianMatrix, Matrix.one_apply, hij, smul_eq_mul,
-        QuadraticAlgebra.algebraMap_eq]
+    change (⟨q * (if i = j then 1 else 0), 0⟩ : GaussianRational) =
+      algebraMap ℚ GaussianRational q * (if i = j then 1 else 0)
+    by_cases hij : i = j
+    · simp only [ite_eq_left hij, mul_one]
+    · simp only [ite_eq_right hij, mul_zero]
   have hstar : (M.map star).det = star M.det :=
     ((starRingEnd GaussianRational).map_det M).symm
   have hdet := congrArg Matrix.det hprod
@@ -82,7 +83,7 @@ theorem even_finrank_of_sum_two_squares_599 (K : Type*) [CommRing K]
   have hsq : L x * L x + L y * L y =
       (599 : ℚ) • (1 : Matrix (Fin (Module.finrank ℚ K)) _ ℚ) := by
     rw [← Algebra.algebraMap_eq_smul_one]
-    simpa only [map_add, map_pow, map_ofNat, pow_two] using congrArg L h
+    simpa only [pow_two, map_add, map_mul, map_ofNat] using congrArg L h
   obtain ⟨a, c, hac⟩ := rational_matrix_sum_two_squares (L x) (L y) 599 hcomm hsq
   have he := rational_sum_two_squares_pow_599_even a c
     (Fintype.card (Fin (Module.finrank ℚ K))) hac

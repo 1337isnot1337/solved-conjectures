@@ -1,0 +1,21 @@
+name: Prune legacy accepted-package checks
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/prune-legacy-accepted-runs.yml'
+      - 'scripts/prune_legacy_accepted_runs.py'
+permissions:
+  contents: read
+  actions: write
+jobs:
+  prune:
+    if: github.repository == '1337isnot1337/solved-conjectures' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retain checkpoints and cancel only the immutable intermediate allowlist
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/prune_legacy_accepted_runs.py --apply
