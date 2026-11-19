@@ -9466,7 +9466,13 @@ run_cmd do
     `Loneliness.PrimeFilteringResidues.val_coprime_prime_power_of_nonzero,
     `Loneliness.continuous_clearance,
     `Loneliness.distance_nonneg,
-    `Loneliness.le_clearance]
+    `Loneliness.le_clearance,
+    `Loneliness.TwoParameterRadius.parameterNormSq_pos,
+    `Loneliness.TwoParameterRadius.plane_value_le,
+    `Loneliness.TwoParameterRadius.parameter_sq_lt,
+    `Loneliness.TwoParameterRadius.row_sq_le_max,
+    `Loneliness.TwoParameterRadius.parameter_sq_lt_max,
+    `Loneliness.TwoParameterRadius.six_speed_parameter_sq_lt_max]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]

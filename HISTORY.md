@@ -556,3 +556,7 @@ The remaining collection results are still in progress; Li has not started.
 ## 2026-11-19: Rational-lattice and Gram components
 
 Registered the eight rectangular/rational-lattice sources and their 50 theorem endpoints after the complete hosted source, owned/private axiom, and stock-kernel gate passed. The six-speed spectrum remains partial; the norm components retain `hfour` and `hplane`.
+
+## 2026-11-19: Conditional two-parameter radius estimate
+
+Registered `Conjectures.LonelinessTwoParameterRadius` and its 6 theorem endpoints after the complete 13-module hosted source, owned/private axiom, and stock-kernel gate passed. The result status remains partial; the retained hypotheses are stated in the status report.

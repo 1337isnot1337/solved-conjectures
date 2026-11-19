@@ -1,0 +1,28 @@
+{
+  "accepted_registry_changes": false,
+  "actual_closure_count": 13,
+  "all_12_dependency_sources_and_10_control_configuration_inputs_match_base": true,
+  "authenticated_template_commit": "e815f14555472b873683f491bc878eb16d4eb0a4",
+  "authenticated_template_receipt_sha256": "4a3f6a5df8723dc21f2b5eb2899a10ea55b47b9eb0538cd48927016c0195e4ee",
+  "authenticated_template_run": 44590263136,
+  "base_commit": "9c5b1203a4405508254332b1d13dd19f9bdefe38",
+  "complete_workflow_path_trigger_and_separate_concurrency": true,
+  "controller_algorithm_unchanged_beyond_reviewed_names_and_inventories": true,
+  "fresh_strict_objects_all_owned_private_audit_required_kind_and_exact_stock_replay_enforced": true,
+  "lean_compilers_launched_by_review": 0,
+  "mathematical_and_source_review_sha256": "340fb76200c0bc5f803b6d7dcaaa91ca7809f2b3881cfba2a7d0f95a19f7d504",
+  "publication_plan_sha256": "99b6e5b8ec06bb123384bd0ba347a4fd5f3e71fde3fa19dbcb291d445b427a8c",
+  "recommendation": "Publish these four unregistered candidate paths with a fresh-base guard; require complete hosted artifact authentication before registration.",
+  "required_theorem_count": 6,
+  "reviewed_at_utc": "2026-11-19T18:57:39.018405+00:00",
+  "schema": "two-parameter-radius-candidate-control-review-v1",
+  "scope": "The actual integral two-column plane and primitive parameters give the radius bound conditional on plane value >=2/11 and line value <1/6. No plane gap classification or 78-map enumeration is discharged.",
+  "source_control_sha256": {
+    ".github/workflows/lean-two-parameter-radius-exact.yml": "40327d5eafce24c1c62f86ef721f11d630ea3c911923521b1f47a519f35625aa",
+    "docs/two-parameter-radius-exact-sources.json": "048027dda66101d24d08a9a82eda1c8f57da5b5c660cb57bf3647504a6877b46",
+    "lean/Conjectures/LonelinessTwoParameterRadius.lean": "b132c7d2f84f784f228fe45a1a19f72a71355a0d2c6d413fa9f2d7e1bb1f93d7",
+    "scripts/verify_two_parameter_radius_exact.py": "4a4072567b7273636296324c8d3e904140327ff6495508747761d6fcd823cabb"
+  },
+  "status": "review_passed",
+  "strict_source_receipt_sha256": "10d6a2107ef332243e89956815aa18255d8a4b34398bfb6886a94c42e5eb731f"
+}
