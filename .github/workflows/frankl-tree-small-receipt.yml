@@ -1,0 +1,24 @@
+name: Preserve original Frankl small-degree tree receipt
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/frankl-tree-small-receipt.yml'
+      - 'scripts/preserve_frankl_tree_small_receipt.py'
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate all original modern facets and preserve the successful receipt
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/preserve_frankl_tree_small_receipt.py
