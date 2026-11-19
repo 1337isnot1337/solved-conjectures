@@ -142,9 +142,9 @@ theorem canonical_axis_last_eq_standardPlane (k : Fin 6) :
   · apply Submodule.span_le.mpr
     refine Set.insert_subset_iff.mpr ⟨?_, Set.singleton_subset_iff.mpr ?_⟩
     · rw [← hbase]
-      exact Submodule.add_mem _ (Submodule.subset_span (by simp [standardPlane]))
-        (Submodule.smul_mem _ _ (Submodule.subset_span (by simp [standardPlane])))
-    · exact Submodule.subset_span (by simp [standardPlane])
+      exact Submodule.add_mem _ (Submodule.subset_span (by simp))
+        (Submodule.smul_mem _ _ (Submodule.subset_span (by simp)))
+    · exact Submodule.subset_span (by simp)
   · apply Submodule.span_le.mpr
     refine Set.insert_subset_iff.mpr ⟨?_, Set.singleton_subset_iff.mpr ?_⟩
     · rw [hbase']
