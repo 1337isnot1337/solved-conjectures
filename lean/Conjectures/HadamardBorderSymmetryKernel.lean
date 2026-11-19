@@ -39,7 +39,7 @@ theorem paired_fiber_abs_bound149 (f g : ZMod 149 → ℤ)
     (hf : ∀ x, f x = 1 ∨ f x = -1) (hg : ∀ x, g x = 1 ∨ g x = -1) :
     |(∑ x, f x) + (∑ x, g x)| ≤ (∑ x, f x * g x) + 149 := by
   calc
-    |(∑ x, f x) + (∑ x, g x)| = |(∑ x, f x + g x)| := by
+    |(∑ x, f x) + (∑ x, g x)| = |(∑ x, (f x + g x))| := by
       rw [Finset.sum_add_distrib]
     _ ≤ ∑ x, |f x + g x| := Finset.abs_sum_le_sum_abs _ _
     _ = ∑ x, (f x * g x + 1) := by
