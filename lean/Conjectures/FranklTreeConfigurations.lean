@@ -1,6 +1,8 @@
 module
 
 public import Conjectures.FranklTreeGluing
+public import Mathlib.Data.Fintype.Option
+public import Mathlib.Data.Fintype.Sigma
 
 /-! Exact configuration counts for a root attached to disjoint branches.
 
@@ -245,6 +247,7 @@ theorem occupied_attached_card :
   rw [Nat.card_congr (occupiedBranchesEquiv G top outside canSelect canOmit)]
   simp only [Nat.card_pi, omitted_card]
 
+omit [∀ i, Finite (V i)] in
 theorem needsParent_attached_card :
     Nat.card (NeedsParent (attachedGraph G top) none (outsideSet outside)
       (rootFreeSet canSelect) (rootFreeSet canOmit)) =
@@ -259,6 +262,8 @@ theorem dominated_add_needsParent_attached_card :
       (rootFreeSet canSelect) (rootFreeSet canOmit)) =
     ∏ i, (Nat.card (Occupied (G i) (top i) (outside i) (canSelect i) (canOmit i)) +
       Nat.card (Dom (G i) (top i) (outside i) (canSelect i) (canOmit i))) := by
+  classical
+  letI (i : ι) : Fintype (V i) := Fintype.ofFinite (V i)
   rw [← omitted_card, Nat.card_congr (omittedBranchesEquiv G top outside canSelect canOmit)]
   simp only [Nat.card_pi, finished_card]
 
