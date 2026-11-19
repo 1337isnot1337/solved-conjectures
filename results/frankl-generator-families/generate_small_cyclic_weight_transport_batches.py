@@ -250,7 +250,8 @@ def source_key(source):
 
 def balanced_lookup(low, high, indent):
     if high - low == 1:
-        return indent + f'block{low:03d}.getD offset 0\n'
+        return (indent + f'⟨block{low:03d}.getD offset 0,\n' + indent +
+                f'  getD_lt block{low:03d} offset block{low:03d}_bounded_check⟩\n')
     middle = (low + high) // 2
     return (indent + f'if block < {middle} then\n' +
             balanced_lookup(low, middle, indent + '  ') +
@@ -281,13 +282,40 @@ def count : ℕ := {COUNT}
             'Unexpected canonical block layout')
     for index, block in enumerate(blocks):
         text += f'def block{index:03d} : List ℕ := ' + lean_list(block) + '\n\n'
-    text += '''def codeAt (i : ℕ) : ℕ :=
+        text += f'''set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+theorem block{index:03d}_bounded_check :
+    block{index:03d}.all (fun code => decide (code < 16 ^ 7)) = true := by
+  decide +kernel
+
+'''
+    text += '''theorem getD_lt (values : List ℕ) (i : ℕ) :
+    values.all (fun code => decide (code < 16 ^ 7)) = true →
+      values.getD i 0 < 16 ^ 7 := by
+  induction values generalizing i with
+  | nil =>
+      intro _
+      change 0 < 16 ^ 7
+      decide
+  | cons a rest ih =>
+      intro h
+      cases i with
+      | zero =>
+          change a < 16 ^ 7
+          exact of_decide_eq_true (Bool.and_eq_true_iff.mp h).1
+      | succ i =>
+          change rest.getD i 0 < 16 ^ 7
+          exact ih i (Bool.and_eq_true_iff.mp h).2
+
+def boundedCodeAt (i : ℕ) : {code : ℕ // code < 16 ^ 7} :=
   if i < count then
     let block := i / 128
     let offset := i % 128
 '''
     text += balanced_lookup(0, len(blocks), '    ')
-    text += '''  else 0
+    text += '''  else ⟨0, by decide⟩
+
+def codeAt (i : ℕ) : ℕ := (boundedCodeAt i).val
 
 def wordAt (i : ℕ) : List ℕ :=
   let code := codeAt i
@@ -311,20 +339,24 @@ theorem wordAt_eq (i : ℕ) :
 theorem wordAt_length (i : ℕ) : (wordAt i).length = 7 := by
   simp [wordAt]
 
-set_option maxRecDepth 100000 in
-set_option maxHeartbeats 0 in
+theorem codeAt_all_lt (i : ℕ) : codeAt i < 16 ^ 7 :=
+  (boundedCodeAt i).property
+
+theorem codeAt_lt {i : ℕ} (_hi : i < count) : codeAt i < 16 ^ 7 :=
+  codeAt_all_lt i
+
 theorem codeAt_bounded_check :
     (List.range count).all (fun i => decide (codeAt i < 16 ^ 7)) = true := by
-  decide +kernel
-
-theorem codeAt_lt {i : ℕ} (hi : i < count) : codeAt i < 16 ^ 7 :=
-  of_decide_eq_true (List.all_eq_true.mp codeAt_bounded_check i (List.mem_range.mpr hi))
+  apply List.all_eq_true.mpr
+  intro i _
+  exact decide_eq_true (codeAt_all_lt i)
 
 '''
     text += f'end {WORD_NS}\n'
     endpoints = [WORD_NS + '.' + name for name in (
         'count_eq', 'codes_length', 'words_length', 'wordAt_eq', 'wordAt_length',
-        'codeAt_bounded_check', 'codeAt_lt')]
+        'getD_lt', 'codeAt_all_lt', 'codeAt_bounded_check', 'codeAt_lt')]
+    endpoints += [WORD_NS + f'.block{i:03d}_bounded_check' for i in range(len(blocks))]
     return text.encode(), endpoints
 
 
