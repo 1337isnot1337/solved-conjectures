@@ -9,6 +9,8 @@ No bound from an external search is assumed.
 
 namespace HadamardBorderPatterns
 
+attribute [local instance 2000] Fintype.decidableForallFintype
+
 structure Pattern where
   d : ℤ
   a : ℤ

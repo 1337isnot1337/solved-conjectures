@@ -1,5 +1,6 @@
 import Conjectures.HadamardFixedBorderFin16
 import Mathlib.Data.Fin.VecNotation
+import Mathlib.Data.Fintype.Defs
 
 /-!
 # The literal integer fixed-border certificate
@@ -13,6 +14,8 @@ All finite identities below are independently reduced by Lean's kernel.
 namespace HadamardFixedBorder.Literal
 
 open Matrix
+
+attribute [local instance 2000] Fintype.decidableForallFintype
 
 def gamma : Matrix (Fin 4) (Fin 4) ℤ :=
   ![![0, 2, 2, 2], ![-2, 0, 2, -2], ![-2, -2, 0, 2], ![-2, 2, -2, 0]]
