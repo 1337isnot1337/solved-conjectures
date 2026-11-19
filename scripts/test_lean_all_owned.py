@@ -3,6 +3,9 @@
 import copy
 import json
 import unittest
+import tomllib
+
+import verify_lean_all_owned_candidate as runner
 
 import audit_lean_all_owned as audit
 
@@ -32,6 +35,22 @@ def log(records):
 
 
 class ProtocolTests(unittest.TestCase):
+    def test_legacy_config_changes_only_documented_opt_in(self):
+        original = b'name = "fixture"\n[[lean_lib]]\nname = "Conjectures"\nmoreLeanArgs = ["-j1"]\n'
+        before = tomllib.loads(original.decode())
+        derived = runner.legacy_compatible_config(original)
+        self.assertEqual(tomllib.loads(derived.decode()), {**before, "allowNonModules": True})
+        self.assertTrue(derived.endswith(original))
+        receipt = runner.configuration_record(original, derived, True)
+        self.assertNotEqual(receipt["original_sha256"], receipt["derived_sha256"])
+        self.assertEqual(receipt["original_utf8"].encode(), original)
+        self.assertEqual(receipt["derived_utf8"].encode(), derived)
+
+    def test_existing_legacy_config_opt_in_requires_review(self):
+        for value in (b"true", b"false"):
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                runner.legacy_compatible_config(b"allowNonModules = " + value + b'\nname = "fixture"\n')
+
     def test_required_definition_and_unused_private_definition_are_kept(self):
         records, spec, modern = fixture()
         result = audit.validate_log(log(records), spec, modern)

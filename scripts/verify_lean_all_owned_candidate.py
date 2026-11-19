@@ -9,6 +9,7 @@ checker. No prior project objects or prior proof receipts are reused.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -17,6 +18,7 @@ import signal
 import subprocess
 import sys
 import time
+import tomllib
 
 import audit_lean_all_owned as audit
 import build_lean_parallel as build
@@ -38,7 +40,7 @@ FROZEN_SCHEDULER = (
 )
 
 
-def fixture_spec():
+def fixture_spec(*, legacy_mathlib=False):
     sources = dict(scheduler.FIXTURE_SOURCES)
     sources["Conjectures.Base"] = sources["Conjectures.Base"].replace(
         "end ParallelFixture\n",
@@ -50,6 +52,8 @@ def fixture_spec():
     sources["Solitaire.Base"] = sources["Solitaire.Base"].replace(
         "theorem value", "private theorem unreferencedLegacy : True := True.intro\n"
         "theorem value")
+    if legacy_mathlib:
+        sources["Solitaire.Base"] = "import Mathlib.Data.Nat.Basic\n" + sources["Solitaire.Base"]
     required = list(scheduler.FIXTURE_REQUIRED) + ["ParallelFixture.unreferencedDefinition"]
     spec = {"registered_modules": list(scheduler.FIXTURE_MODULES),
             "modules": sorted(sources), "required": required, "legacy_prefixes": [],
@@ -82,7 +86,37 @@ def commit_snapshot(repo):
                    cwd=repo, check=True, timeout=30)
 
 
-def prepare_repo(destination, sources, spec, cache, accepted):
+def legacy_compatible_config(original):
+    """Change only Lake's documented legacy-import advisory opt-in."""
+    parsed = tomllib.loads(original.decode("utf-8"))
+    if "allowNonModules" in parsed:
+        raise ValueError("Original config already declares allowNonModules; review it explicitly")
+    derived = b"allowNonModules = true\n" + original
+    if tomllib.loads(derived.decode("utf-8")) != {**parsed, "allowNonModules": True}:
+        raise ValueError("Staged configuration changed another option")
+    return derived
+
+
+def configuration_record(original, derived, enabled):
+    expected = legacy_compatible_config(original) if enabled else original
+    if derived != expected:
+        raise ValueError("Staged Lake configuration differs from the declared transformation")
+    return {
+        "source_path": "lean/lakefile.toml",
+        "allow_legacy_module_imports": enabled,
+        "original_utf8": original.decode("utf-8"),
+        "derived_utf8": derived.decode("utf-8"),
+        "original_sha256": hashlib.sha256(original).hexdigest(),
+        "derived_sha256": hashlib.sha256(derived).hexdigest(),
+        "only_change": "top-level allowNonModules = true" if enabled else "none",
+        "lake_warning_failure_retained": True,
+        "public_configuration_unchanged": True,
+        "scope": ("The explicit Lake compatibility opt-in suppresses its legacy-import advisory; all other source warnings remain fatal. This is not an unchanged-configuration replay."
+                  if enabled else "Original Lake configuration preserved exactly."),
+    }
+
+
+def prepare_repo(destination, sources, spec, cache, accepted, *, allow_legacy_module_imports=False):
     lean = scheduler.prepare_repo(destination, sources, spec["required"], {}, cache)
     for relative in (*OWN_INPUTS[:3], "scripts/verify_lean.sh"):
         source, target = ROOT / relative, destination / relative
@@ -93,6 +127,9 @@ def prepare_repo(destination, sources, spec, cache, accepted):
             raise ValueError("Input changed while copying: " + relative)
     if accepted:
         shutil.copyfile(ROOT / "lean/ProofAudit.lean", lean / "ProofAudit.lean")
+    if allow_legacy_module_imports:
+        config = lean / "lakefile.toml"
+        config.write_bytes(legacy_compatible_config(config.read_bytes()))
     text = audit.audit_source(spec["modules"], spec["required"], spec["legacy_prefixes"])
     (lean / "AllOwnedProofAudit.lean").write_text(text, encoding="utf-8")
     if not accepted:
@@ -173,6 +210,8 @@ def main(argv=None):
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--accepted", action="store_true",
                         help="Explicitly run the complete current accepted closure")
+    parser.add_argument("--allow-legacy-module-imports", action="store_true",
+                        help="Record an isolated allowNonModules=true Lake configuration; public config stays unchanged")
     parser.add_argument("--jobs", type=int, choices=range(1, 5), default=2)
     parser.add_argument("--workers", type=int, choices=range(1, 5), default=1)
     parser.add_argument("--memory-limit-mib", type=int, default=12288)
@@ -187,7 +226,7 @@ def main(argv=None):
                    for module in spec["modules"]}
         original_graph, _, _, original_extra = build.scope_plan(ROOT, spec["registered_modules"])
     else:
-        sources, spec = fixture_spec()
+        sources, spec = fixture_spec(legacy_mathlib=args.allow_legacy_module_imports)
         original_graph, original_extra = {}, set()
     head = build.git_head(ROOT)
     frozen = build.snapshot_inputs(ROOT, original_graph,
@@ -213,10 +252,15 @@ def main(argv=None):
             [sys.executable, str(ROOT / "scripts/test_lean_all_owned.py")],
             cwd=ROOT, output=output, memory_limit_mib=args.memory_limit_mib, timeout_seconds=300)
         tests = (output / "protocol-tests.log").read_text()
-        if not re.search(r"Ran 12 tests in", tests) or not re.search(r"^OK$", tests, re.MULTILINE):
+        if not re.search(r"Ran 14 tests in", tests) or not re.search(r"^OK$", tests, re.MULTILINE):
             raise ValueError("Complete all-owned protocol test suite did not pass")
         remember_evidence([output / "protocol-tests.log"], output, evidence)
-        lean = prepare_repo(output / "repo", sources, spec, cache, args.accepted)
+        lean = prepare_repo(output / "repo", sources, spec, cache, args.accepted,
+                            allow_legacy_module_imports=args.allow_legacy_module_imports)
+        receipt["isolated_configuration"] = configuration_record(
+            (ROOT / "lean/lakefile.toml").read_bytes(), (lean / "lakefile.toml").read_bytes(),
+            args.allow_legacy_module_imports)
+        receipt["legacy_mathlib_fixture"] = not args.accepted and args.allow_legacy_module_imports
         graph, _, _, extra = build.scope_plan(lean.parent, spec["registered_modules"])
         if set(graph) != set(sources):
             raise ValueError("Copied accepted source inventory differs")
@@ -224,6 +268,11 @@ def main(argv=None):
         if not args.accepted:
             audit_files.add("lean/AllOwnedNegativeAudit.lean")
         copied_frozen = build.snapshot_inputs(lean.parent, graph, set(extra) | audit_files)
+        if args.accepted:
+            for module in graph:
+                relative = "lean/" + module.replace(".", "/") + ".lean"
+                if copied_frozen[relative] != frozen[relative]:
+                    raise ValueError("A mathematical source changed while copying: " + module)
         copied_head = build.git_head(lean.parent)
         receipt.update(isolated_git_head=copied_head, isolated_inputs=copied_frozen)
         receipt["source"] = scheduler.source_phase(
@@ -261,6 +310,15 @@ def main(argv=None):
         receipt.update(status="passed", all_inputs_unchanged=True)
     except BaseException as error:
         receipt.update(status="failed", error=f"{type(error).__name__}: {error}")
+        source_receipt = output / "source/receipt.json"
+        if source_receipt.is_file():
+            source_status = json.loads(source_receipt.read_text())
+            for row in source_status.get("source_results", []):
+                if row.get("exit_code") not in (None, 0) and not row.get("cancelled"):
+                    path = output / "source" / (row["module"] + ".log")
+                    if path.is_file():
+                        print("FAILED-SOURCE-LOG " + row["module"], flush=True)
+                        print(path.read_text(errors="replace")[-16000:], flush=True)
         raise
     finally:
         receipt["elapsed_seconds"] = time.monotonic() - started

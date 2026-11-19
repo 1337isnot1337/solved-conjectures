@@ -60,6 +60,7 @@ jobs:
           esac
           python3 scripts/verify_lean_all_owned_candidate.py \
             --output-dir .candidate-artifacts/lean-all-owned-candidate \
+            --allow-legacy-module-imports \
             --jobs 2 --workers "$CHECK_WORKERS" --memory-limit-mib 12288 \
             "${args[@]}"
       - uses: actions/upload-artifact@v4
