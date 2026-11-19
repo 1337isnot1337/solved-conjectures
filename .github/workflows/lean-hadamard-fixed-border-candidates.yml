@@ -6,6 +6,9 @@ on:
     paths:
       - 'lean/Conjectures/HadamardFixedBorderTransport*.lean'
       - 'lean/Conjectures/HadamardFixedBorderFin16*.lean'
+      - 'lean/Conjectures/HadamardFixedBorderLiteral*.lean'
+      - 'results/hadamard-2396/border.json'
+      - 'scripts/generate_hadamard_fixed_border_literal.py'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
@@ -18,6 +21,9 @@ on:
     paths:
       - 'lean/Conjectures/HadamardFixedBorderTransport*.lean'
       - 'lean/Conjectures/HadamardFixedBorderFin16*.lean'
+      - 'lean/Conjectures/HadamardFixedBorderLiteral*.lean'
+      - 'results/hadamard-2396/border.json'
+      - 'scripts/generate_hadamard_fixed_border_literal.py'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'

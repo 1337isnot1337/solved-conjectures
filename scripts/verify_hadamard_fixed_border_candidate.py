@@ -21,6 +21,18 @@ from verify_lean_candidate import (
 
 
 TASKS = {
+    'literal': ('Conjectures.HadamardFixedBorderLiteral', [
+        'HadamardFixedBorder.Literal.K_sign',
+        'HadamardFixedBorder.Literal.E_sign',
+        'HadamardFixedBorder.Literal.F_sign',
+        'HadamardFixedBorder.Literal.K_gram',
+        'HadamardFixedBorder.Literal.E_gram',
+        'HadamardFixedBorder.Literal.F_gram',
+        'HadamardFixedBorder.Literal.balanced',
+        'HadamardFixedBorder.Literal.cross',
+        'HadamardFixedBorder.Literal.literal_certificate_correct',
+        'HadamardFixedBorder.Literal.exists_border_of_card_four',
+    ]),
     'fin16': ('Conjectures.HadamardFixedBorderFin16', [
         'HadamardFixedBorder.flatBlocks_apply',
         'HadamardFixedBorder.flatGamma_apply',
@@ -35,7 +47,9 @@ TASKS = {
     ]),
 }
 
-GATE_INPUTS = {'.github/workflows/lean-hadamard-fixed-border-candidates.yml',
+GATE_INPUTS = {'results/hadamard-2396/border.json',
+ 'scripts/generate_hadamard_fixed_border_literal.py',
+ '.github/workflows/lean-hadamard-fixed-border-candidates.yml',
  'lean/lake-manifest.json',
  'lean/lakefile.toml',
  'lean/lean-toolchain',
@@ -132,6 +146,9 @@ def main() -> None:
     destination = ROOT / ".candidate-artifacts" / ("hadamard-fixed-border-" + args.task)
     destination.mkdir(parents=True, exist_ok=True)
     try:
+        if args.task == 'literal':
+            run('python3', str(ROOT / 'scripts/generate_hadamard_fixed_border_literal.py'), '--check')
+            receipt['literal_data_reproduced'] = True
         check_sources(modules, receipt)
         receipt["completed_checks"].append("strict source checks, warnings treated as errors")
         audit([target], required, modules, "hadamard-fixed-border-" + args.task)
