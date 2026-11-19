@@ -38,7 +38,7 @@ never additional Lean axioms.
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
 | Hadamard order-2396 partial results | Partial overall; automorphism, fixed-border construction and symmetry, and length-598 obstruction complete | The full signed-automorphism group excludes order 479, with both norm proofs checked. The fixed-border common multiplier group is cyclic of order dividing four and every preserving subgroup leaves at least 151 sign orbits. On any finite abelian group with a subgroup of index four, the original four sign rows and raw correlation equations yield an actual bordered Hadamard matrix; normalization, the literal finite border, and all fourteen size-149 baseline patterns are proved. The length-598 order-eleven obstruction is complete. For length 1197, the actual common multiplier order is proved to divide 27; exclusion of order 27, the finite quotient/no-lift certificates, and the two-row construction remain candidates. |
-| Lonely-runner two insertions | Not formalized | The arbitrary two-speed insertion theorem, acceleration bridge, unbounded branch, finite cases, and three-insertion obstruction are not registered in the accepted package. Published candidate sources remain under issue 12. |
+| Lonely-runner two insertions | Complete | Every `p ≥ 3` and arbitrary positive integer speeds have a common witness in `[1/(p+2),1/p]` with clearance at least `1/(p+2)`. The unbounded branch, all small cases, interval-good base insertion, Goddyn–Wong acceleration criterion, common-dilation value bound, and literal three-insertion obstruction are proved. |
 | Erdős–Gyárfás abelian covers | Complete for the stated voltage-cover theorem and sharpness | Every seven-label voltage cover of the singly subdivided tetrahedron over every abelian group contains an actual simple cycle of length 4, 8, 16, or 32. The 64-node literal certificate, its collision-branch soundness, and voltage normalization are checked. The connected 95-vertex cyclic cover attains least power-of-two cycle length 32. The general minimum-degree-three conjecture is outside this result. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Frankl generating families | Partial: both frequency bounds complete; cyclic span-four pending | The all-point high-girth bound is checked for every `k ≥ 3`: incidence girth at least 16 and exactly three generators through each point imply frequency at least `518208/1000000` among distinct unions. The `k ≥ 15` linear-family bound is also checked with frequency `657/1000`. Both include the empty union. The complete Vaughan shortcut, small-cycle cases, local checker semantics, and conditional all-period assembly are checked. The remaining cyclic span-four graph/transport certificates and unconditional assembly are still being verified. |
@@ -2171,3 +2171,49 @@ The quotient transport is also checked. From the actual centered rows and an ord
 | quotient-data | 18 | 353 | [Job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44519345569/job/135546487631) | [JSON](verification/hadamard-legendre-quotient-data-20e04e58.json) |
 
 Both exact closures at `20e04e589d227086cc926579fc70806594d8f817` passed strict source checks with warnings treated as errors, the standard-axiom whitelist audit, and independent pinned-kernel replay. The 29 distinct source, verification-script, workflow and toolchain-pin paths in the two receipts were checked against current main before registration. 8 previously unregistered proof modules and 13 named endpoints are added; the accepted prebuild list grows from 878 to 886 proof modules, plus the two roots. Verification of the merged accepted package remains a separate gate.
+
+## Complete unrestricted two-speed insertion theorem
+
+The literal two-speed interval statement is checked for every natural
+\(p\ge3\) and every two positive integer speeds \(b,c\), with no upper bound:
+there is a real \(t\in[1/(p+2),1/p]\) such that both distances to the nearest
+integer are at least \(1/(p+2)\).
+
+The closure proves the measure estimate, endpoint divisibility, explicit
+perturbed reciprocal times, all eight small-parameter certificates, and the
+bound that reduces the remaining second-speed search to finitely many cases.
+No numerical table or large-speed cutoff is assumed.
+
+The insertion theorem applies to every base that stays separated on the
+whole prescribed interval. The proof verifies that interval property directly
+from the stated Goddyn–Wong gcd criterion for simultaneous accelerations,
+and proves the lower bound after common dilation. The arithmetic criterion
+is the stated hypothesis of the result, not an unproved external theorem.
+
+The same closure checks the three-insertion obstruction: throughout
+\([1/6,1/3]\), the clearance of `[4,6,10]` is at most \(1/7\). It also checks
+the actual five-speed witness for `[1,2,4,6,10]` at \(3/8\).
+
+At source commit `9f51470529423e8135c08de881cd56f5b1fd9a95`,
+[run 44524198858/job 135562276051](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44524198858/job/135562276051)
+freshly checked all 27 modules with warnings treated as errors and no linter
+override. The audit covered all 563 owned declarations, including 424
+theorems and 11 private declarations, and required all 49 named endpoints
+to be theorems. Every module was then replayed as an exact singleton target
+in a fresh process by the unchanged pinned stock checker, with one worker.
+Only `propext`, `Classical.choice` and `Quot.sound` were allowed.
+
+The [unchanged raw receipt](verification/two-insertions-exact-44524198858/receipt.json)
+has SHA-256
+`215df211e3e47abf148fd306cf43eef6cd1827a4b1b4cb61140743b2de36f55a`.
+[Preserved audit, inventory, logs and controls](verification/two-insertions-exact-44524198858/)
+and the [archive verification record](verification/two-insertions-exact-44524198858/preservation.json)
+authenticate the original artifact `14529194546`, whose ZIP SHA-256 is
+`bed76da06d98fda0721def565d9d451a3a79ce2071fe7ebe708bc723e8d7c248`.
+All 27 checked source hashes were guarded at registration. The accepted
+registry gains 18 proof modules and 49 named endpoints, bringing its
+prebuild list to 904 proof modules plus the two roots.
+
+This completes the original insertion note. The general lonely-runner
+conjecture and the separate spectrum/classification notes remain outside
+this result. Verification of the merged accepted package is separate.

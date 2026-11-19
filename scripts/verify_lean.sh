@@ -892,6 +892,24 @@ modules=(
   Conjectures.HadamardLegendreQuotientModel
   Conjectures.HadamardLegendreQuotientMaps
   Conjectures.HadamardLegendreQuotientData
+  Conjectures.LonelinessTwoInsertionsAccelerationArithmetic
+  Conjectures.LonelinessTwoInsertionsInterval
+  Conjectures.LonelinessTwoInsertionsMeasure
+  Conjectures.LonelinessTwoInsertionsObstruction
+  Conjectures.LonelinessTwoInsertionsRows
+  Conjectures.LonelinessTwoInsertionsDivisibility
+  Conjectures.LonelinessTwoInsertionsSmall10
+  Conjectures.LonelinessTwoInsertionsSmall3
+  Conjectures.LonelinessTwoInsertionsSmall4
+  Conjectures.LonelinessTwoInsertionsSmall5
+  Conjectures.LonelinessTwoInsertionsSmall6
+  Conjectures.LonelinessTwoInsertionsSmall7
+  Conjectures.LonelinessTwoInsertionsSmall8
+  Conjectures.LonelinessTwoInsertionsSmall9
+  Conjectures.LonelinessTwoInsertionsShift
+  Conjectures.LonelinessTwoInsertionsSmall
+  Conjectures.LonelinessTwoInsertions
+  Conjectures.LonelinessTwoInsertionsAccelerations
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

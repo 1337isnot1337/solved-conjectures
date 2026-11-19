@@ -158,3 +158,30 @@ This verifies the complete high-girth frequency theorem. The cyclic
 span-four theorem has separate finite graph, transport, coverage, and final
 assembly gates. The registered full package is checked by
 `scripts/verify_lean.sh`.
+
+## Complete two-speed insertion gate
+
+From the repository root with the pinned toolchain and Mathlib cache:
+
+```sh
+python3 scripts/verify_two_insertions_exact.py --plan
+python3 scripts/verify_two_insertions_exact.py
+```
+
+The exact source model fixes all 27 project modules, 49 required theorem
+endpoints, the toolchain configuration, and all transitive gate helpers.
+The gate rebuilds every project source with warnings treated as errors and
+no linter override, audits all owned declarations and raw private names,
+then replays each of the 27 modules as an exact singleton target with the
+unchanged stock checker in a fresh one-worker process. It rehashes the
+sources, helpers, compiler, checker, every compiled facet, and proof
+evidence before writing a passing receipt.
+
+[Run 44524198858/job 135562276051](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44524198858/job/135562276051)
+passed for source snapshot `9f51470529423e8135c08de881cd56f5b1fd9a95`.
+It checked 563 owned declarations, including 424 theorems and 11 private
+declarations. The [original receipt](verification/two-insertions-exact-44524198858/receipt.json)
+and [authenticated original evidence](verification/two-insertions-exact-44524198858/)
+are public. Receipt preservation performs byte and policy validation;
+it is not an additional Lean proof run. This component pass is separate
+from the full merged-package gate.

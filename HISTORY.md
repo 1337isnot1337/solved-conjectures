@@ -1,5 +1,20 @@
 # History
 
+## 2026-11-19 — Complete unrestricted two-speed insertion theorem
+
+Registered the full two-speed insertion result, including the arbitrary
+positive speeds, prescribed interval, Goddyn–Wong acceleration criterion,
+common-dilation value bound, small and unbounded branches, and literal
+three-insertion obstruction. The exact 27-module closure passed fresh
+strict source checks, an audit of all 563 owned declarations including
+11 private declarations, and exact stock-kernel replay of every module.
+All 49 required endpoints are theorems. The registration adds 18 proof
+modules and preserves the checked source hashes.
+[Scope](docs/lean-status.md#complete-unrestricted-two-speed-insertion-theorem) ·
+[Raw receipt](docs/verification/two-insertions-exact-44524198858/receipt.json).
+The merged-package gate remains separate.
+
+
 ## 2026-11-19 — Actual Legendre-pair construction and quotient transport
 
 Registered the matrix constructed from an actual Legendre pair, including the order-2396 specialization, and the actual invariant quotient/layer data used to exclude order 27. Their exact closures passed all three gates: construction, five modules and 87 project theorems; quotient transport, eighteen modules and 353 project theorems. Eight previously unregistered modules and thirteen named endpoints were added. The full finite no-lift certificate and final multiplier bound of nine remain pending.

@@ -630,3 +630,24 @@ The quotient transport is also checked. From the actual centered rows and an ord
 
 Both exact closures at `20e04e589d227086cc926579fc70806594d8f817` passed strict source checks with warnings treated as errors, the standard-axiom whitelist audit, and independent pinned-kernel replay. The 29 distinct source, verification-script, workflow and toolchain-pin paths in the two receipts were checked against current main before registration. 8 previously unregistered proof modules and 13 named endpoints are added; the accepted prebuild list grows from 878 to 886 proof modules, plus the two roots. Verification of the merged accepted package remains a separate gate.
 [Exact endpoints and receipts](lean-status.md#actual-legendre-pair-matrix-and-quotient-transport).
+
+## Complete two-speed insertion result, 19 November 2026
+
+The full [two-insertion note](../results/lonely-runner-two-insertions/PROOF.md)
+is now checked and registered: unrestricted positive speeds for every
+`p ≥ 3`, the specified real witness interval, the Goddyn–Wong acceleration
+criterion, common-dilation value bound, all small and unbounded branches,
+and the literal three-insertion obstruction with an outside witness.
+No finite certificate or cutoff is an unproved hypothesis.
+
+The exact 27-module closure passed fresh warning-as-error source checks
+without disabling linters, an audit of all 563 owned declarations
+(424 theorems, 11 private declarations, 49 required theorem endpoints),
+and exact stock-kernel replay of every module in a separate process.
+The checked source snapshot is `9f51470529423e8135c08de881cd56f5b1fd9a95`;
+its [raw receipt and original evidence](verification/two-insertions-exact-44524198858/)
+were authenticated before registration. Eighteen new proof modules and
+49 required endpoints are registered, with all 27 source hashes guarded.
+The accepted prebuild list now contains 904 proof modules plus two roots.
+The merged-package gate remains separate. Li remains last.
+[Exact scope](lean-status.md#complete-unrestricted-two-speed-insertion-theorem).
