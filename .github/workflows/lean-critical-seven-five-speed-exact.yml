@@ -1,0 +1,233 @@
+name: Lean critical-seven five-speed discharge
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/verify_critical_seven_five_speed_exact.py'
+      - '.github/workflows/lean-critical-seven-five-speed-exact.yml'
+      - 'docs/critical-seven-five-speed-exact-sources.json'
+      - 'lean/Conjectures/HaralambisCounting.lean'
+      - 'lean/Conjectures/HaralambisDefects.lean'
+      - 'lean/Conjectures/HaralambisDensity.lean'
+      - 'lean/Conjectures/HaralambisFaces.lean'
+      - 'lean/Conjectures/HaralambisIntervals.lean'
+      - 'lean/Conjectures/HaralambisOrientation.lean'
+      - 'lean/Conjectures/HaralambisPairSum.lean'
+      - 'lean/Conjectures/HaralambisPeriods.lean'
+      - 'lean/Conjectures/HaralambisTheorem.lean'
+      - 'lean/Conjectures/Loneliness.lean'
+      - 'lean/Conjectures/LonelinessCertificate.lean'
+      - 'lean/Conjectures/LonelinessCoalescence.lean'
+      - 'lean/Conjectures/LonelinessCoalescenceAvoiding.lean'
+      - 'lean/Conjectures/LonelinessCoalescenceValue.lean'
+      - 'lean/Conjectures/LonelinessConsecutive.lean'
+      - 'lean/Conjectures/LonelinessConsecutiveFamily.lean'
+      - 'lean/Conjectures/LonelinessConsecutiveFamilyCertificates.lean'
+      - 'lean/Conjectures/LonelinessContinuity.lean'
+      - 'lean/Conjectures/LonelinessCoordinateClasses.lean'
+      - 'lean/Conjectures/LonelinessCoordinateSubspace.lean'
+      - 'lean/Conjectures/LonelinessCriticalBase.lean'
+      - 'lean/Conjectures/LonelinessCriticalFamilies.lean'
+      - 'lean/Conjectures/LonelinessCriticalSecond.lean'
+      - 'lean/Conjectures/LonelinessExamples.lean'
+      - 'lean/Conjectures/LonelinessFiveFamily.lean'
+      - 'lean/Conjectures/LonelinessFiveSpeedBound.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate17.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate29.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate31.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate37.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate41.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate43.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate47.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate53.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate59.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate61.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificateAll.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificateChunks.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedClassification.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedClassificationFinite.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCutoff.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedEnumeration.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedFastEnumeration.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedFinite.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedFoldedGeometry.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedGap.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedGeometry.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift17.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift29.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift31.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift37.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift41.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift43.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift47.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift53.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift59.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift61.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLiftDirections.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLiftSound.lean'
+      - 'lean/Conjectures/LonelinessHyperplaneArithmetic.lean'
+      - 'lean/Conjectures/LonelinessIntegerDirection.lean'
+      - 'lean/Conjectures/LonelinessKZBasisGram.lean'
+      - 'lean/Conjectures/LonelinessKZBasisInteger.lean'
+      - 'lean/Conjectures/LonelinessKZBasisOperations.lean'
+      - 'lean/Conjectures/LonelinessKZBasisReduction.lean'
+      - 'lean/Conjectures/LonelinessKZBasisStep.lean'
+      - 'lean/Conjectures/LonelinessKZBasisVectors.lean'
+      - 'lean/Conjectures/LonelinessMax.lean'
+      - 'lean/Conjectures/LonelinessModularDirections.lean'
+      - 'lean/Conjectures/LonelinessModularFoldedSearch.lean'
+      - 'lean/Conjectures/LonelinessModularLift.lean'
+      - 'lean/Conjectures/LonelinessModularNormalize.lean'
+      - 'lean/Conjectures/LonelinessModularPrimes.lean'
+      - 'lean/Conjectures/LonelinessModularRationalWitness.lean'
+      - 'lean/Conjectures/LonelinessModularSearch.lean'
+      - 'lean/Conjectures/LonelinessModularShortVector.lean'
+      - 'lean/Conjectures/LonelinessModularWitness.lean'
+      - 'lean/Conjectures/LonelinessNearestPlane.lean'
+      - 'lean/Conjectures/LonelinessNearestPlanePrefix.lean'
+      - 'lean/Conjectures/LonelinessNearestPlaneRelative.lean'
+      - 'lean/Conjectures/LonelinessNearestPlaneValue.lean'
+      - 'lean/Conjectures/LonelinessNormalization.lean'
+      - 'lean/Conjectures/LonelinessPacking.lean'
+      - 'lean/Conjectures/LonelinessPackingLower.lean'
+      - 'lean/Conjectures/LonelinessPairBridge.lean'
+      - 'lean/Conjectures/LonelinessPigeonhole.lean'
+      - 'lean/Conjectures/LonelinessPigeonholePlane.lean'
+      - 'lean/Conjectures/LonelinessPlaneDirections.lean'
+      - 'lean/Conjectures/LonelinessPlaneGap.lean'
+      - 'lean/Conjectures/LonelinessPrimitiveBasis.lean'
+      - 'lean/Conjectures/LonelinessPrimitiveSpeeds.lean'
+      - 'lean/Conjectures/LonelinessProductFamily.lean'
+      - 'lean/Conjectures/LonelinessProductFamilySeven.lean'
+      - 'lean/Conjectures/LonelinessRational.lean'
+      - 'lean/Conjectures/LonelinessRationalSubspace.lean'
+      - 'lean/Conjectures/LonelinessRenaultAffine.lean'
+      - 'lean/Conjectures/LonelinessRenaultAssembly.lean'
+      - 'lean/Conjectures/LonelinessRenaultFiveSpeed.lean'
+      - 'lean/Conjectures/LonelinessRenaultGcdOrbit.lean'
+      - 'lean/Conjectures/LonelinessRenaultMaximizer.lean'
+      - 'lean/Conjectures/LonelinessRenaultNormalization.lean'
+      - 'lean/Conjectures/LonelinessRenaultOrdering.lean'
+      - 'lean/Conjectures/LonelinessRenaultParityCases.lean'
+      - 'lean/Conjectures/LonelinessRenaultPhaseCells.lean'
+      - 'lean/Conjectures/LonelinessRenaultPhaseCertificates.lean'
+      - 'lean/Conjectures/LonelinessRenaultPreliminaries.lean'
+      - 'lean/Conjectures/LonelinessRenaultRationalOrbit.lean'
+      - 'lean/Conjectures/LonelinessRenaultReindex.lean'
+      - 'lean/Conjectures/LonelinessRenaultSmallPhases.lean'
+      - 'lean/Conjectures/LonelinessRenaultThirdObstructions.lean'
+      - 'lean/Conjectures/LonelinessRenaultThreeEven.lean'
+      - 'lean/Conjectures/LonelinessRenaultTwoMultiples.lean'
+      - 'lean/Conjectures/LonelinessRenaultTwoMultiplesCase.lean'
+      - 'lean/Conjectures/LonelinessRenaultTwoMultiplesFinal.lean'
+      - 'lean/Conjectures/LonelinessRenaultTwoMultiplesPhase.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateAdmissibility.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase000.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase001.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase010.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase011.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase100.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase101.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase110.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase111.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase200.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase201.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase210.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase211.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase300.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase301.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase310.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase311.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase400.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase401.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase410.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase411.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase500.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase501.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase510.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCase511.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateClassification.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateCoverage.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateDefs.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateDirections.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateFinite.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateFiniteBool.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateFiniteDefs.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateFiveSpeed.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateLargeNorm.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateLargeNormFamily.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateMinorBound.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateNormalization.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinatePatternPlane.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinatePlaneNormalization.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateProduct.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateProductSpeeds.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateQuantitativeArithmetic.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateQuantitativeBasis.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateQuantitativeRepeat.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateRationalGap.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateTangent.lean'
+      - 'lean/Conjectures/LonelinessSevenCoordinateTangentGap.lean'
+      - 'lean/Conjectures/LonelinessSignedCoordinates.lean'
+      - 'lean/Conjectures/LonelinessSmallRunner.lean'
+      - 'lean/Conjectures/LonelinessSubspaceDensity.lean'
+      - 'lean/Conjectures/LonelinessSubspaceExtension.lean'
+      - 'lean/Conjectures/LonelinessTwoDirections.lean'
+      - 'lean/Conjectures/NonmixedGapDensity.lean'
+      - 'lean/Conjectures/NonmixedGapPeriodic.lean'
+      - 'lean/Conjectures/NonmixedGapResidues.lean'
+      - 'scripts/audit_lean_all_owned.py'
+      - 'scripts/build_lean_parallel.py'
+      - 'scripts/plan_accepted_lean.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - 'scripts/verify_frankl_orbit_batches.py'
+      - 'scripts/verify_lean_candidate.py'
+      - 'lean/lake-manifest.json'
+      - 'lean/lakefile.toml'
+      - 'lean/lean-toolchain'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-critical-seven-five-speed-exact-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate exact source and control inventory
+        run: |
+          python3 -m py_compile scripts/verify_critical_seven_five_speed_exact.py
+          python3 scripts/verify_critical_seven_five_speed_exact.py bounds --plan
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Fresh strict sources, all-owned audit and exact stock replay
+        env:
+          LEAN_NUM_THREADS: 1
+          UV_USE_IO_URING: 0
+        run: python3 scripts/verify_critical_seven_five_speed_exact.py bounds
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: critical-seven-five-speed-bounds
+          path: .candidate-artifacts/critical-seven-five-speed-bounds/
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
