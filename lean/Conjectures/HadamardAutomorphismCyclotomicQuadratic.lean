@@ -33,6 +33,7 @@ def quadraticGeneratorInFixed479 : quadraticFixedField479 K :=
 theorem quadraticFixedField479_coordinates (v : K) (hv : v ∈ quadraticFixedField479 K) :
     ∃ a b : ℚ, v = (a : K) + (b : K) * quadraticGenerator479 K := by
   let g : quadraticFixedField479 K := quadraticGeneratorInFixed479 K
+  have hg : (g : K) = quadraticGenerator479 K := rfl
   have hli : LinearIndependent ℚ ![(1 : quadraticFixedField479 K), g] := by
     rw [LinearIndependent.pair_iff' one_ne_zero]
     intro a ha
@@ -40,6 +41,7 @@ theorem quadraticFixedField479_coordinates (v : K) (hv : v ∈ quadraticFixedFie
     have h := congrArg (fun x : quadraticFixedField479 K => (x : K)) ha
     rw [IntermediateField.coe_smul, IntermediateField.coe_one,
       Algebra.smul_def, mul_one] at h
+    rw [eq_ratCast, hg] at h
     exact h
   have hcard : Fintype.card (Fin 2) = Module.finrank ℚ (quadraticFixedField479 K) := by
     rw [Fintype.card_fin, quadraticFixedField479_degree K]
@@ -58,7 +60,7 @@ theorem quadraticFixedField479_coordinates (v : K) (hv : v ∈ quadraticFixedFie
         (a : K) + (b : K) * quadraticGenerator479 K := by
     rw [IntermediateField.coe_add, IntermediateField.coe_smul,
       IntermediateField.coe_smul, IntermediateField.coe_one,
-      Algebra.smul_def, Algebra.smul_def, mul_one]
+      Algebra.smul_def, Algebra.smul_def, mul_one, eq_ratCast, eq_ratCast, hg]
   exact he'.symm.trans (hcoe _ _)
 
 theorem conjugate_of_quadratic_coordinates (v : K) (a b : ℚ)

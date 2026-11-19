@@ -90,7 +90,7 @@ theorem class_order_five_from_conjugate_witness
     ((Nat.irreducible_iff_nat_prime _).mpr hnormprime)
   have hP0 : P ≠ 0 := by
     intro hzero
-    simpa [hzero] using hPnorm
+    simp [hzero] at hPnorm
   have hprincipal : (P ^ 5).IsPrincipal := by
     rw [hPpow]
     infer_instance

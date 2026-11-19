@@ -62,7 +62,7 @@ theorem frobenius_ratio_root (u : 𝓞 K) (hu : u ≠ 0)
   have ht : NumberField.Units.torsionOrder K = 958 := by
     rw [IsCyclotomicExtension.Rat.torsionOrder_eq (n := 479)]
     have hodd : Odd (479 : ℕ) := by decide
-    rw [if_neg (Nat.not_even_iff_odd.mpr hodd)]
+    rw [ite_eq_right (Nat.not_even_iff_odd.mpr hodd)]
   rw [ht] at hd
   exact ⟨ε, heq, orderOf_dvd_iff_pow_eq_one.mp hd⟩
 
