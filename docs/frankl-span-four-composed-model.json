@@ -1102,7 +1102,7 @@
     "Conjectures.FranklSpanFourWordCoverage": "eaddd5ba62a43980e76f23acff759a5d0deddc30360478d70b0ed74e5aea6d96",
     "Conjectures.FranklFamilyRelabel": "946c0b7b673ada160c4792e258175b8a1505d312f876c949e9459b9f578b31c0",
     "Conjectures.FranklSpanFourGraphPacket": "7416a5d7276a6d3999e87937cee7af9d5611e5039010bcd22034c72a1b4cee72",
-    "Conjectures.FranklSpanFourTheorem": "d14b96bf40ec609193e13853188fdbb6ac5821582bcfdc06b9971c6907ddc621"
+    "Conjectures.FranklSpanFourTheorem": "892023ce3845722d2232b34f21b2eb5ed6df8d816c9f4a187a3a672bc161dadf"
   },
   "required_by_module": {
     "Conjectures.FranklSpanFourGraphPacket": [
