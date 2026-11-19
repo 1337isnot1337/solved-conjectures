@@ -16,28 +16,33 @@ variable {ι : Type*} [Fintype ι]
 def realVector (z : ι → ℤ) : EuclideanSpace ℝ ι :=
   WithLp.toLp 2 (fun i => (z i : ℝ))
 
+omit [Fintype ι] in
 @[simp]
-theorem realVector_apply (z : ι → ℤ) (i : ι) : realVector z i = (z i : ℝ) := rfl
+theorem realVector_apply [Fintype ι] (z : ι → ℤ) (i : ι) : realVector z i = (z i : ℝ) := rfl
 
+omit [Fintype ι] in
 @[simp]
-theorem realVector_zero : realVector (0 : ι → ℤ) = 0 := by
+theorem realVector_zero [Fintype ι] : realVector (0 : ι → ℤ) = 0 := by
   ext i
   simp [realVector]
 
+omit [Fintype ι] in
 @[simp]
-theorem realVector_add (z w : ι → ℤ) : realVector (z + w) = realVector z + realVector w := by
+theorem realVector_add [Fintype ι] (z w : ι → ℤ) : realVector (z + w) = realVector z + realVector w := by
   ext i
   simp [realVector]
 
+omit [Fintype ι] in
 @[simp]
-theorem realVector_sub (z w : ι → ℤ) : realVector (z - w) = realVector z - realVector w := by
+theorem realVector_sub [Fintype ι] (z w : ι → ℤ) : realVector (z - w) = realVector z - realVector w := by
   ext i
   simp [realVector]
 
-theorem realVector_zsmul (c : ℤ) (z : ι → ℤ) :
+omit [Fintype ι] in
+theorem realVector_zsmul [Fintype ι] (c : ℤ) (z : ι → ℤ) :
     realVector (c • z) = (c : ℝ) • realVector z := by
   ext i
-  simp [realVector, zsmul_eq_mul]
+  simp [realVector]
 
 variable {N : ℕ}
 

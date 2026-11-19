@@ -17,7 +17,8 @@ noncomputable section
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
-theorem gram_linearCombination (v : ι → E) (C : Matrix ι ι ℝ) :
+omit [DecidableEq ι] in
+theorem gram_linearCombination [DecidableEq ι] (v : ι → E) (C : Matrix ι ι ℝ) :
     Matrix.gram ℝ (fun j => ∑ i, C i j • v i) =
       C.transpose * Matrix.gram ℝ v * C := by
   ext i j
@@ -51,7 +52,7 @@ theorem linearCombination_transvection (v : ι → E) (i j : ι) (c : ℝ) :
   by_cases hk : k = j
   · subst k
     simp [Matrix.single_apply, ite_smul]
-  · simp [Matrix.single_apply, hk, Ne.symm hk]
+  · simp [hk, Ne.symm hk]
 
 theorem gram_det_add_smul (v : ι → E) (i j : ι) (hij : i ≠ j) (c : ℝ) :
     (Matrix.gram ℝ (Function.update v j (v j + c • v i))).det =
@@ -60,7 +61,8 @@ theorem gram_det_add_smul (v : ι → E) (i j : ι) (hij : i ≠ j) (c : ℝ) :
     Matrix.det_transvection_of_ne i j hij c]
   ring
 
-theorem sum_fin_prefix (n r : ℕ) (hr : r ≤ n) (f : ℕ → E) :
+omit [InnerProductSpace ℝ E] in
+theorem sum_fin_prefix [InnerProductSpace ℝ E] (n r : ℕ) (hr : r ≤ n) (f : ℕ → E) :
     (∑ i : Fin n, if i.val < r then f i.val else 0) =
       ∑ i ∈ Finset.range r, f i := by
   rw [Fin.sum_univ_eq_sum_range (fun i => if i < r then f i else 0) n,
@@ -135,7 +137,7 @@ theorem gramSchmidt_gram_diagonal (b : ℕ → E) (r : ℕ) :
   ext i j
   by_cases hij : i = j
   · subst j
-    simp [Matrix.gram_apply, Matrix.diagonal, real_inner_self_eq_norm_mul_norm, pow_two]
+    simp [Matrix.gram_apply, Matrix.diagonal, pow_two]
   · have hval : i.val ≠ j.val := fun h => hij (Fin.ext h)
     simp [Matrix.gram_apply, Matrix.diagonal, hij,
       InnerProductSpace.gramSchmidt_orthogonal ℝ b hval]

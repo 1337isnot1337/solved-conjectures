@@ -44,7 +44,7 @@ theorem coefficient_sum (d : ℕ) (w : ℕ → ℕ) (i : Fin d) :
         (if r+1 < d ∧ i.val = r then 3*(w (d+r) : ℤ) else 0) := by
     have hnd : ¬d+r < d := by omega
     by_cases hs : r+1 < d
-    · simp only [coefficientNat,ite_eq_right hnd,Nat.add_sub_cancel_left,ite_eq_left hs,
+    · simp only [coefficientNat,ite_eq_right hnd,Nat.add_sub_cancel_left,
         hs,true_and]
       split_ifs <;> ring
     · simp [coefficientNat,hnd,hs]
