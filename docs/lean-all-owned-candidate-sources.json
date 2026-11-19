@@ -1,0 +1,116 @@
+{
+  "schema": "lean-all-owned-audit-candidate-v1",
+  "status": "candidate-awaiting-hosted-fixture",
+  "files": [
+    {
+      "path": "scripts/audit_lean_all_owned.py",
+      "blob_sha": "cc8497d2f501094848b5184a1dc8bae19a861c0f",
+      "sha256": "48d89743a7a7fd0ff7976367b5a8082b6f5d460232cce5074d3ebdfc3c85e5a0"
+    },
+    {
+      "path": "scripts/test_lean_all_owned.py",
+      "blob_sha": "e116ebc54b4d175af9acf8ce81b3fff167634d67",
+      "sha256": "416cd2d748db0039ef509ff1c43e348e3501efffa1e8457160de1f82280916b7"
+    },
+    {
+      "path": "scripts/verify_lean_all_owned_candidate.py",
+      "blob_sha": "24bcf425e55dbfb4ab75994e07a9550148885530",
+      "sha256": "05a6fc7e8206dd43861d19b6bba97f0fc1af534e5b075968bbcb321eae20ce9a"
+    },
+    {
+      "path": ".github/workflows/lean-all-owned-candidate.yml",
+      "blob_sha": "18b2d1366faf52f4c535e7fb8a16a2276cfdd0f6",
+      "sha256": "46770e265a312060ee31e88ccf633b6a0b5bd2c2555df329391def17ecac1285"
+    }
+  ],
+  "dependency_files": [
+    {
+      "path": "scripts/build_lean_parallel.py",
+      "blob_sha": "9d6feac7e470e11e76aece653f30e11eb450fa98",
+      "sha256": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd"
+    },
+    {
+      "path": "scripts/replay_lean_parallel.py",
+      "blob_sha": "555e739fdf8167fd6cdb667e28b035252f25e984",
+      "sha256": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225"
+    },
+    {
+      "path": "scripts/test_lean_parallel.py",
+      "blob_sha": "314df9f165658aea918c99476cd77197c8fbdd07",
+      "sha256": "53b526e6ce974893f78fb464aa77d002b82b2441c96a3d41a521486bba215700"
+    },
+    {
+      "path": "scripts/verify_lean_parallel_candidate.py",
+      "blob_sha": "9d35435260717e4d2ab81e372dea07d29bdf6823",
+      "sha256": "6545556b44d03f51a40a1c598b4c9f304f2ccf0eebd3e3f5c9544047d2aec522"
+    },
+    {
+      "path": "scripts/plan_accepted_lean.py",
+      "blob_sha": "0172b8d0889f413e82241dcb1f2f7585d7989385",
+      "sha256": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842"
+    },
+    {
+      "path": "scripts/replay_lean.py",
+      "blob_sha": "4f14cafc5e52ce6af8a451ddd92df2cba7ff61cb",
+      "sha256": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c"
+    },
+    {
+      "path": "docs/lean-parallel-candidate-sources.json",
+      "blob_sha": "680fa7395fdcb186cade311560e1204117c46b2a",
+      "sha256": "6ad32d30f919ad414ed9a61fc600f48df706084fe71a7308ba4eb62d722326f8"
+    },
+    {
+      "path": ".github/workflows/lean-parallel-candidate.yml",
+      "blob_sha": "1af28aacb4e95cd97b46c838a108dadf59832062",
+      "sha256": "35356b452bc52bcaaa45b95e4068807b69d5cc7e7e9e71d25d4f5d9bbecf0219"
+    }
+  ],
+  "scope": {
+    "default": "Fresh mixed modern/legacy seven-module fixture only, with all raw serialized declarations and every ConstantInfo audited, including an unused private noncomputable definition.",
+    "accepted": "Separate explicit --accepted invocation derives the exact frozen registered closure and required declarations from the current accepted roots, verify_lean.sh and ProofAudit.lean; no fixed module-count limit.",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "required": "Existence and owned-declaration checks preserve required definitions as well as theorems.",
+    "private_visibility": "Legacy audit imports every selected module, requires hasData and importAll, records each raw ModuleData.constNames array, checks all are visible and audited, and logs the complete private declaration map.",
+    "ownership": "Union of exact project-module ownership, raw serialized project names, and the historical legacy namespace-prefix fallback.",
+    "kernel": "One unchanged pinned stock checker on the exact complete materialized closure, including both namespace roots, with exact replay-set equality and unchanged fresh source/object/checker/compiler hashes.",
+    "negative_fixture": "A separate audit removes Classical.choice only from its test whitelist and must reject the unused private definition that uses it; the production whitelist is unchanged.",
+    "no_reuse": "Every fixture or accepted run starts from fresh project source builds; no old project objects or proof receipts are reused."
+  },
+  "protocol_tests": 12,
+  "initial_scheduler_evidence": {
+    "commit": "505bc263f929f5924286b2dd0e95b6ef86efb020",
+    "run_id": 44517460330,
+    "job_id": 135537077566,
+    "status": "passed",
+    "receipt_sha256": "86ca10f8261ec8b4d371413b550c63e343b95f2de2af4cf3af78832a7529794d",
+    "artifact_id": 14527510218,
+    "archive_sha256": "43893eaf40941202e4cab0c3a6e98dc1665498010fcff261df0177520c4da963",
+    "scope": "22 protocol tests, exact seven-module fixture and fresh 25-module arithmetic pilot at each of 1,2,3,4 checker workers; does not establish this new all-owned raw-inventory audit."
+  },
+  "toolchain": {
+    "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
+  },
+  "unchanged": [
+    "lean/ProofAudit.lean",
+    "lean/Conjectures.lean",
+    "lean/Solitaire.lean",
+    "scripts/verify_lean.sh",
+    "scripts/replay_lean.py",
+    "all mathematical sources and accepted registrations"
+  ],
+  "commands": {
+    "protocol": "python3 scripts/test_lean_all_owned.py",
+    "fixture": "python3 scripts/verify_lean_all_owned_candidate.py --output-dir .candidate-artifacts/lean-all-owned-candidate --jobs 2 --workers 1 --memory-limit-mib 12288",
+    "accepted": "The same command with --accepted; launch only after coordination with the existing complete accepted-package verification run."
+  },
+  "limitations": [
+    "This new audit and its fixtures have not yet executed.",
+    "No complete accepted-closure all-owned verification is claimed by the initial fixture publication.",
+    "Stock kernel thread/RSS guards remain strict; worker count must be selected for the measured closure."
+  ]
+}
