@@ -99,11 +99,35 @@ run_cmd do
     `SymmetricFourPoint.translated_symmetric_four_point_densities,
     `Loneliness.SubspaceDensity.extension_value_bound_norm,
     `Loneliness.SubspaceDensity.spaceValue_speed_line,
-    `Loneliness.NormArithmetic.five_speed_threshold]
+    `Loneliness.NormArithmetic.five_speed_threshold,
+    `Loneliness.Packing.rational_packing_fraction,
+    `Loneliness.Packing.value_le_density,
+    `Loneliness.Packing.one_div_length_add_one_le_density,
+    `Haralambis.exists_balanced_signs,
+    `Haralambis.finite_signed_edges,
+    `Haralambis.odd_period_certificate,
+    `Haralambis.pair_sum_maximum,
+    `Haralambis.density_eq_value,
+    `Haralambis.three_difference_theorem,
+    `Haralambis.example_two_five_nine_centers,
+    `Loneliness.Coalescence.coalescing_hyperplane,
+    `Loneliness.CoordinateSubspace.coordinate_coalescence,
+    `Loneliness.CoordinateSubspace.exists_coordinate_free_line_card,
+    `Loneliness.CoordinateSubspace.exists_integer_direction,
+    `Loneliness.CoordinateSubspace.finrank_realSpan,
+    `Loneliness.CoordinateSubspace.exists_integer_direction_real,
+    `Loneliness.CoordinateSubspace.spaceValue_integer_line,
+    `Loneliness.CoordinateSubspace.coalescence_value_lower,
+    `Loneliness.SubspaceDensity.extension_finrank,
+    `Loneliness.SubspaceDensity.rational_integer_extension,
+    `Loneliness.SmallRunner.lonelyRunnerBound,
+    `Loneliness.SmallRunner.five_coordinate_dimension_three,
+    `Loneliness.SmallRunner.five_coordinate_dimension_four,
+    `Loneliness.SmallRunner.five_coordinate_dimension_five]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["SolitaireCounterexample.", "War.", "Denominator.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint."]
+  let prefixes := #["SolitaireCounterexample.", "War.", "Denominator.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

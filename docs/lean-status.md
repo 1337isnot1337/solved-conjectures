@@ -27,8 +27,8 @@ never additional Lean axioms.
 | Two-difference Motzkin density | Not formalized | Signed square-grid construction, compact-group measure arguments, and character approximation remain to formalize. |
 | Symmetric four-point density | Complete | Exact real packing and covering densities for every literal translated symmetric four-point integer set, including common-divisor normalization. Both periodic constructions and the two sharp local interval lengths are proved. |
 | Packing with two nonmixed gaps | Complete | The exact three-case packing and real circle formula for every positive gap pair and arbitrary positive gap counts, including gcd normalization, literal tile semantics, periodic attainment, and the stated example. |
-| Haralambis three-difference theorem | Not formalized | Balanced orientations, integral cocycle extension, the simultaneous pair inequalities, and density/attainment remain to formalize. |
-| Five-speed spectrum | Partial | Exact real-time maxima for all twelve listed examples; every value s/(5s+1) is realized by the positive primitive distinct family [1,2,3,4,5s]; both critical-family reductions and gcd normalization are proved without Cordella hypotheses. The norm bound, modular lifting, and exhaustive classification outside these families remain open. |
+| Haralambis three-difference theorem | Complete | Exact equality of actual extremal density and real circle value for every positive triple, with no coprimality premise. An optimal periodic set has a pair-sum period. The proof includes finite balanced orientations, signed defects, odd periods, interval counting, and the explicit `{2,5,9}` example. |
+| Five-speed spectrum | Partial | Exact real-time maxima for all twelve listed examples; every value s/(5s+1) is realized by the positive primitive distinct family [1,2,3,4,5s]; both critical-family reductions and gcd normalization are proved without Cordella hypotheses. Coordinate coalescence, rational subspace extension, and the one-, two-, and three-speed lower bounds are proved. The norm bound, modular lifting, and exhaustive classification outside these families remain open. |
 | Tight six-speed sets and seven-coordinate critical subtori | Not formalized | The infinite equality classification and critical-plane reduction remain to formalize. |
 | Six-speed spectrum | Not formalized | Infinite family reductions, the norm bound, modular lifting, and exhaustive classification remain to formalize. |
 | Tight seven-speed sets | Not formalized | The infinite equality classification remains to formalize. |
@@ -131,7 +131,7 @@ Install the pinned toolchain with elan, then from the repository root:
 export PATH="$HOME/.elan/bin:$PATH"
 cd lean
 lake exe cache get
-cd ../..
+cd ..
 scripts/verify_lean.sh
 ```
 
@@ -448,3 +448,52 @@ from explicit lattice-product and larger-subspace hypotheses. The geometric
 hypotheses and external exhaustive classifications remain open; the theorem
 is not presented as an unconditional norm bound.
 See [the exact reduction and dependency stack](../results/five-speed-spectrum/NORM_REDUCTION_LEAN.md).
+
+
+## Complete Haralambis theorem, 18 November 2026
+
+`Haralambis.three_difference_theorem` proves the full result for every function
+`d : Fin 3 → ℕ` with positive entries. The extremal density is the supremum
+of the actual upper densities of all subsets of the integers avoiding the
+three differences. The circle value is the existing real-time supremum of
+the minimum distance to the nearest integer. The same theorem supplies an
+avoiding set of period `d i + d j`, with `i ≠ j`, whose density is that supremum.
+Repeated entries are allowed; distinct triples are included.
+
+The finite proof constructs balanced signs on the defect multigraph, obtains
+three square identities, and derives an odd integer period vector by finite
+weighted sums and Bézout. Pair inequalities give intersecting real intervals.
+Uniform finite-window counting proves the density upper bound for arbitrary
+sets. Exact residue counts remove the gcd. A compactness argument places a
+circle maximizer at a pair-sum denominator, and the rational-character
+packing theorem preserves that denominator even for a nonprimitive character.
+No infinite cocycle extension or external Haralambis theorem is a premise.
+
+`Haralambis.example_two_five_nine_centers` checks the literal period-seven
+center set with residues `0,1,4`; both its density and the optimum are `3/7`.
+See [the complete checked scope](../results/haralambis-three-differences/LEAN.md).
+
+`Loneliness.Packing.one_div_length_add_one_le_density` additionally proves the
+general greedy packing lower bound. Combined with Haralambis,
+`Loneliness.SmallRunner.lonelyRunnerBound` proves the lonely-runner bound for
+at most three speeds. No small-runner theorem is left as a hypothesis.
+
+The new coalescence files prove that a coordinate-free rational subspace of
+dimension `d` in `n` coordinates contains an integer direction with at most
+`n-d+1` distinct absolute speeds. The real span has the same dimension, and
+subspace extensions by independent projected integer vectors have the claimed
+dimension and coefficient-rounding value bound. The dimension-three, -four,
+and -five lower bounds in five coordinates now follow unconditionally.
+The lattice covolume, successive minima, cube-section estimate, and four-speed
+classification remain explicit outstanding dependencies of the full norm bound.
+
+All twenty new modules passed source compilation and separate independent
+kernel replay. The Haralambis/packing audit checked 233 declarations, and
+the coalescence and small-runner headline checks used only `propext`,
+`Classical.choice`, and `Quot.sound`. The combined accepted-package axiom audit checked 5,077 theorem declarations
+and accepted only those three axioms. Hosted source and kernel validation for
+this checkpoint are tracked separately.
+
+The earlier density/CUT/loneliness checkpoint `6c095083d6c17eff3797f798cbfe35d0ea98c1f6`
+passed the complete [hosted Lean workflow](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44433833213),
+including the source build, project axiom audit, and every registered kernel replay.

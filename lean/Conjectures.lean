@@ -26,3 +26,6 @@ import Conjectures.NonmixedGapGeneral
 import Conjectures.SymmetricFourPointTranslated
 import Conjectures.LonelinessSubspaceDensity
 import Conjectures.LonelinessNormArithmetic
+import Conjectures.HaralambisExamples
+import Conjectures.LonelinessSmallRunner
+import Conjectures.LonelinessSubspaceExtension

@@ -6,6 +6,13 @@
 
 - Classified the primitive equality cases using published binary sieves and an additional integer-direction calculation.
 
+## 2026-11-18 — Complete Haralambis formalization
+
+- Proved the three-difference density theorem and an optimal pair-sum-period construction for every positive triple.
+- Proved the general greedy packing bound and the lonely-runner lower bound for at most three speeds.
+- Added coordinate coalescence, integer directions, real-span dimension, and rational subspace extensions to the five-speed reduction.
+- Recorded the successful hosted Lean build, axiom audit, and kernel replay for the previous density/CUT checkpoint.
+
 ## 2026-11-19 — Eight-speed loneliness spectrum
 
 - Added the full classification below 1/8, the three families, and the table of 17 sporadic tuples.

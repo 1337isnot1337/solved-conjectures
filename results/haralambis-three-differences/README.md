@@ -22,4 +22,4 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-No Lean formalization is currently listed for this result. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
+Complete Lean formalization. `Haralambis.three_difference_theorem` proves the exact density and attainment by a periodic set whose period is a pair sum, for every positive integer triple. Common-divisor normalization and arbitrary competing sets are included. The explicit set `{n : n % 7 ∈ {0,1,4}}` attains density `3/7` for `{2,5,9}`. See [the checked proof](LEAN.md) and [the status report](../../docs/lean-status.md).

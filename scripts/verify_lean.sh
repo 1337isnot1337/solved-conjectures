@@ -77,6 +77,26 @@ modules=(
   Conjectures.SymmetricFourPointTranslated
   Conjectures.LonelinessSubspaceDensity
   Conjectures.LonelinessNormArithmetic
+  Conjectures.LonelinessPacking
+  Conjectures.HaralambisOrientation
+  Conjectures.HaralambisFaces
+  Conjectures.HaralambisDefects
+  Conjectures.HaralambisPeriods
+  Conjectures.HaralambisIntervals
+  Conjectures.HaralambisCounting
+  Conjectures.HaralambisDensity
+  Conjectures.HaralambisPairSum
+  Conjectures.HaralambisTheorem
+  Conjectures.HaralambisExamples
+  Conjectures.LonelinessPackingLower
+  Conjectures.LonelinessCoalescence
+  Conjectures.LonelinessCoordinateSubspace
+  Conjectures.LonelinessCoordinateClasses
+  Conjectures.LonelinessIntegerDirection
+  Conjectures.LonelinessRationalSubspace
+  Conjectures.LonelinessCoalescenceValue
+  Conjectures.LonelinessSubspaceExtension
+  Conjectures.LonelinessSmallRunner
 )
 for module in "${modules[@]}"; do
   printf 'Kernel recheck: %s\n' "$module"

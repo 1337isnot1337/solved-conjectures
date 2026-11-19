@@ -22,7 +22,7 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-Partial formalization. Lean proves the exact value of every member of the first infinite family, both primitive critical-family reductions, and the real maxima of all twelve listed sporadic examples. It also proves continuity, attainment, and rational approximation for the actual nearest-integer distance function. The exhaustive classification outside the critical families and its geometric norm bound remain open. See [the critical-family proof](CRITICAL_FAMILIES_LEAN.md) and [the status report](../../docs/lean-status.md).
+Partial formalization. Lean proves the exact value of every member of the first infinite family, both primitive critical-family reductions, and the real maxima of all twelve listed sporadic examples. It also proves continuity, attainment, and rational approximation for the actual nearest-integer distance function. The coordinate-coalescence construction, rational subspace extension, and the one-, two-, and three-speed lower bounds are also proved. The exhaustive classification outside the critical families and its geometric norm bound remain open. See [the critical-family proof](CRITICAL_FAMILIES_LEAN.md), [coalescence](COALESCENCE_LEAN.md), [subspace extension](SUBSPACE_EXTENSION_LEAN.md), and [the status report](../../docs/lean-status.md).
 
 ## Supporting files
 

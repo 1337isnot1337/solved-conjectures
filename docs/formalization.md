@@ -161,4 +161,20 @@ The [symmetric four-point density theorem](../results/symmetric-four-point-densi
 
 The [nonmixed-gap theorem](../results/nonmixed-gap-packing/PROOF.md) requires the ordering of coprime lattice lifts, the two interval counts, the block-density argument, and the character construction. The full coprime packing and real circle endpoint passed source, axiom, and independent kernel checks. Common-divisor normalization and literal translation semantics are also proved.
 
-The [Haralambis proof](../results/haralambis-three-differences/PROOF.md) has a combinatorial route to formalization through balanced dual orientations, extension of closed signed-edge values across cubes, integral periods, and three pair-sum cycles. Its Lean proof is pending.
+The [Haralambis theorem](../results/haralambis-three-differences/LEAN.md) is fully checked. Finite balanced orientations, signed defects, weighted period identities, real interval intersection, and uniform counts prove the exact density for arbitrary triples. The pair-sum maximizer and rational-character construction give an optimal periodic set. The proof avoids a separate infinite cocycle-extension theorem.
+
+
+## Current checked checkpoint and active scopes
+
+Haralambis is complete, including the exact density and pair-sum-period
+attainment. Coalescence and rational subspace extension are checked, and the
+one-, two-, and three-speed lonely-runner lower bounds are discharged. These
+components do not close the five-speed geometric norm bound or its exhaustion.
+
+The current result claims are [distance graphs, #9](https://github.com/1337isnot1337/solved-conjectures/issues/9),
+[growing rectangles, #10](https://github.com/1337isnot1337/solved-conjectures/issues/10),
+and [loneliness classification, #7](https://github.com/1337isnot1337/solved-conjectures/issues/7).
+The distance-graph lane uses the now-proved Haralambis equality and pair-sum
+maximum to replace the strip search with exact arithmetic on three denominators.
+The rectangle lane separates actual shelf packing and injective encodings from
+the sharp Euler-product and cumulative-partition estimates. Li remains last.
