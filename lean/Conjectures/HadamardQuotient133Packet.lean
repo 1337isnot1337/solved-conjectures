@@ -49,6 +49,7 @@ theorem chunksAux_flatten {α : Type*} (fuel : ℕ) (l : List α)
       cases l with
       | nil => rfl
       | cons a rest =>
+          simp only [List.length_cons] at hlen
           change (a :: rest).take 16 ++
             (chunksAux fuel ((a :: rest).drop 16)).flatten = a :: rest
           rw [ih _ (by simp only [List.length_drop, List.length_cons]; omega)]
@@ -213,12 +214,16 @@ theorem actual_margin_catalogued (C : Catalog) (sources : List Row)
   have h1 := squareSum_nonneg (m 1)
   have h2 := squareSum_nonneg (m 2)
   have he' : squareSum (m 0) + 3 * squareSum (m 1) + 3 * squareSum (m 2) ≤ 2261 := he
+  dsimp only [m] at h0 h1 h2 he'
   have hm0 := project_mem_marginTriples L source hL hs 0 1 (by omega)
   have hm1 := project_mem_marginTriples L source hL hs 1 3 (by omega)
   have hm2 := project_mem_marginTriples L source hL hs 2 3 (by omega)
-  rw [hp.1 0] at hm0
-  rw [hp.1 1] at hm1
-  rw [hp.1 2] at hm2
+  have hp0 : marginTriples (source 0) 1 = packet.groups 0 := by simpa using hp.1 0
+  have hp1 : marginTriples (source 1) 3 = packet.groups 1 := by simpa using hp.1 1
+  have hp2 : marginTriples (source 2) 3 = packet.groups 2 := by simpa using hp.1 2
+  rw [hp0] at hm0
+  rw [hp1] at hm1
+  rw [hp2] at hm2
   exact margin_source_catalogued C source packet.groups packet.certs hp.2 m hm0 hm1 hm2 he
 
 theorem catalog_no_joint_pair (C : Catalog)
