@@ -31,7 +31,7 @@ theorem witness_slopeSpeeds_iff (p t : ℕ) (B : TwoParameterMap) (r : ℕ) :
 
 theorem slopeResidue_lt (p x : ℕ) (y : ℤ) (hp : 0 < p) :
     slopeResidue p x y < p := by
-  letI : NeZero p := ⟨Nat.ne_of_gt hp⟩
+  let : NeZero p := ⟨Nat.ne_of_gt hp⟩
   exact ZMod.val_lt _
 
 theorem natCast_ne_zero_of_lt (p x : ℕ) (hx : 0 < x) (hxp : x < p) :
@@ -42,8 +42,8 @@ theorem natCast_ne_zero_of_lt (p x : ℕ) (hx : 0 < x) (hxp : x < p) :
 theorem slopeResidue_mul (p : ℕ) (hp : p.Prime) (x : ℕ)
     (hx : 0 < x) (hxp : x < p) (y : ℤ) :
     (x : ZMod p) * (slopeResidue p x y : ZMod p) = (y : ZMod p) := by
-  letI : Fact p.Prime := ⟨hp⟩
-  letI : NeZero p := ⟨hp.ne_zero⟩
+  let : Fact p.Prime := ⟨hp⟩
+  let : NeZero p := ⟨hp.ne_zero⟩
   have hcancel : (x : ZMod p) * (x : ZMod p)⁻¹ = 1 :=
     mul_inv_cancel₀ (natCast_ne_zero_of_lt p x hx hxp)
   rw [slopeResidue, ZMod.natCast_zmod_val]
@@ -82,8 +82,8 @@ theorem integerSpeeds_witness_of_zmod_scale (p : ℕ) (hp : p.Prime)
       (Loneliness.CoordinateSubspace.integerSpeeds w)) :
     Loneliness.Modular.HasWitness 5 p
       (Loneliness.CoordinateSubspace.integerSpeeds v) := by
-  letI : Fact p.Prime := ⟨hp⟩
-  letI : NeZero p := ⟨hp.ne_zero⟩
+  let : Fact p.Prime := ⟨hp⟩
+  let : NeZero p := ⟨hp.ne_zero⟩
   obtain ⟨t, ht⟩ := hw
   let m := ((t : ZMod p) * s⁻¹).val
   have hm : (m : ZMod p) = (t : ZMod p) * s⁻¹ := ZMod.natCast_zmod_val _
@@ -111,7 +111,7 @@ theorem twoParameterMap_slope_cast (p : ℕ) (hp : p.Prime)
     (x : ZMod p) * ((dotProduct (B j) ![1, (slopeResidue p x y : ℤ)] : ℤ) : ZMod p)
   rw [Matrix.vec2_dotProduct, Matrix.vec2_dotProduct]
   simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Int.cast_add,
-    Int.cast_mul, Int.cast_natCast, Int.cast_one, mul_one]
+    Int.cast_mul, Int.cast_natCast, mul_one]
   rw [← slopeResidue_mul p hp x hx hxp y]
   ring
 
