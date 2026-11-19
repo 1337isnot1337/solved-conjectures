@@ -1,0 +1,22 @@
+{
+  "accepted_registry_changed": false,
+  "passed_groups": {
+    "tree-unfolding": {
+      "archive_sha256": "dc0edd7ec085ede823d1d39aa9f0579d4bfc3119ffeee356755494625aeef37b",
+      "artifact_id": 14525083175,
+      "artifact_name": "frankl-tree-unfolding",
+      "private_chunks": 0,
+      "project_modules": 6,
+      "receipt": "docs/verification/frankl-components-44516050587/tree-unfolding.json",
+      "receipt_sha256": "963ddf7285a4f1fb5a4e0fa5abdece5a3179276c312b8b40b3ed7db0b64743d0",
+      "required_endpoints": 21
+    }
+  },
+  "profile_inventory": "docs/frankl-tree-unfolding-sources.json",
+  "profile_inventory_sha256": "27844372c67beb09d9acf3b7be4d2da21d86f21f0af10c385a5faf663fd5355c",
+  "schema": "frankl-exact-component-receipts-v1",
+  "scope": "Recursive unfolding of actual neighbor sets, exact graph isomorphism with radius-at-most-seven induced balls under girth sixteen, root and child cardinalities, and boundary-depth identification. The connection to the final occupation bound is still separate.",
+  "source_commit": "a1e76bfeb540b999bc4554f5a32e9efc522a9c7d",
+  "source_run_id": 44516050587,
+  "workflow": "Lean Frankl graph-ball recursive unfolding"
+}
