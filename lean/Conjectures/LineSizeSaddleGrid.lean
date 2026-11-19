@@ -18,7 +18,7 @@ theorem saddleOrigin_tendsto_atBot {α : Type*} {l : Filter α} {t : α → ℝ}
     (ht : Tendsto t l (𝓝 0)) (htpos : ∀ᶠ k in l, 0 < t k) :
     Tendsto (fun k => saddleOrigin (t k)) l atBot := by
   have hsqrt : Tendsto (fun k => sqrt (t k)) l (𝓝 0) := by
-    simpa only [Real.sqrt_zero, Function.comp_apply] using
+    simpa only [Real.sqrt_zero, Function.comp_def] using
       (Real.continuous_sqrt.tendsto 0).comp ht
   refine tendsto_atBot.mpr ?_
   intro b
@@ -50,7 +50,7 @@ theorem saddleIndex_coreCoordinate_tendsto {α : Type*} {l : Filter α} {t : α 
     Tendsto (fun k => EulerKernel.coreCoordinate (saddleIndex (t k) x) (t k))
       l (𝓝 x) := by
   have hsqrt : Tendsto (fun k => sqrt (t k)) l (𝓝 0) := by
-    simpa only [Real.sqrt_zero, Function.comp_apply] using
+    simpa only [Real.sqrt_zero, Function.comp_def] using
       (Real.continuous_sqrt.tendsto 0).comp ht
   have hh : ∀ᶠ k in l, 0 < sqrt (t k) := htpos.mono (fun _ hk => Real.sqrt_pos.mpr hk)
   have hgrid := Lattice.leftEndpoint_tendsto hh hsqrt
@@ -69,7 +69,7 @@ theorem saddle_fourier_support_eventually {α : Type*} {l : Filter α} {t : α �
     (ht : Tendsto t l (𝓝 0)) (y : ℝ) :
     ∀ᶠ k in l, |t k * sqrt (t k) * y| ≤ Real.pi := by
   have hsqrt : Tendsto (fun k => sqrt (t k)) l (𝓝 0) := by
-    simpa only [Real.sqrt_zero, Function.comp_apply] using
+    simpa only [Real.sqrt_zero, Function.comp_def] using
       (Real.continuous_sqrt.tendsto 0).comp ht
   have hy : Tendsto (fun _ : α => y) l (𝓝 y) := tendsto_const_nhds
   have hzero : Tendsto (fun k => t k * sqrt (t k) * y) l (𝓝 0) := by

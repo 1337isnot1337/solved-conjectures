@@ -16,7 +16,7 @@ theorem count_div_rate_eq {n : ℕ} (hn : 0 < n) :
   have hr : rate n ≠ 0 := (rate_pos hn).ne'
   calc
     _ = ((lineSizeCount n : ℝ)/normalizer n)*(normalizer n/rate n) := by
-      field_simp [hnorm,hr] <;> ring
+      field_simp [hnorm,hr]
     _ = _ := by rw [normalizer_div_rate hn]; rfl
 
 theorem count_div_rate_tendsto :
@@ -33,9 +33,9 @@ theorem ratio_tendsto_one :
   rw [div_self sharpConstant_pos.ne'] at h
   apply h.congr'
   exact Filter.Eventually.of_forall (fun n => by
-    rw [sharpModel,div_div]
-    congr 1
-    ring)
+    change ((lineSizeCount n : ℝ)/rate n)/sharpConstant =
+      (lineSizeCount n : ℝ)/(sharpConstant*rate n)
+    rw [div_div,mul_comm (rate n) sharpConstant])
 
 theorem lineSizeCount_asymptotic :
     (fun n : ℕ => (lineSizeCount n : ℝ)) ~[atTop] sharpModel := by

@@ -22,7 +22,7 @@ theorem extra_perturbation_tendsto {α : Type*} {l : Filter α} {t : α → ℝ}
     (ht : Tendsto t l (𝓝 0)) (htpos : ∀ᶠ k in l, 0 < t k) (y : ℝ) :
     Tendsto (fun k => perturbation (exp (-t k)) (t k * sqrt (t k) * y)) l (𝓝 0) := by
   have hsqrt : Tendsto (fun k => sqrt (t k)) l (𝓝 0) := by
-    simpa only [Real.sqrt_zero, Function.comp_apply] using
+    simpa only [Real.sqrt_zero, Function.comp_def] using
       (Real.continuous_sqrt.tendsto 0).comp ht
   have hlim : Tendsto (fun k => sqrt (t k) * |y|) l (𝓝 0) := by
     simpa only [zero_mul] using hsqrt.mul_const |y|
@@ -92,6 +92,7 @@ theorem centered_product_tendsto {α : Type*} {l : Filter α}
       (𝓝 (linear (m * y) - ((v * y ^ 2 / 2 : ℝ) : ℂ))) := by
     apply hsum.congr'
     filter_upwards [htpos] with k hk
+    dsimp only [Function.comp_apply]
     rw [← centered_quadratic_rescaled (r k) hk (s k) y]
     ring
   have hexp := (Complex.continuous_exp.tendsto _).comp hlog
@@ -99,6 +100,7 @@ theorem centered_product_tendsto {α : Type*} {l : Filter α}
   simp only [mul_one] at hresult
   apply hresult.congr'
   filter_upwards [htpos] with k hk
+  dsimp only [Function.comp_apply]
   rw [Complex.exp_add, exp_logarithm (r k) hk, phase, linear]
 
 end LineSize.Geometric

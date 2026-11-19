@@ -85,7 +85,7 @@ theorem coefficient_prefactor_tendsto :
 
 theorem half_normalizer_complex_tendsto :
     Tendsto (fun n : ℕ => (((1/2 : ℝ)/normalizer n) : ℂ)) atTop (𝓝 0) := by
-  simpa only [Complex.ofReal_zero,Function.comp_def] using
+  simpa only [Complex.ofReal_zero,Complex.ofReal_div,Function.comp_def] using
     (Complex.continuous_ofReal.tendsto 0).comp half_normalizer_tendsto_zero
 
 theorem normalizedCount_complex_tendsto :
@@ -97,14 +97,16 @@ theorem normalizedCount_complex_tendsto :
   have hsp : (Real.sqrt Real.pi : ℂ) ≠ 0 := by
     exact_mod_cast (Real.sqrt_pos.mpr Real.pi_pos).ne'
   have hsa : (Real.sqrt (6*Profile.A) : ℂ) ≠ 0 := by
-    exact_mod_cast (Real.sqrt_pos.mpr (by positivity : (0 : ℝ) < 6*Profile.A)).ne'
+    exact_mod_cast (Real.sqrt_pos.mpr
+      (mul_pos (by norm_num : (0 : ℝ) < 6) Profile.A_pos)).ne'
   have hvalue :
       (1/8 : ℂ)*(1/(2*(Real.pi : ℂ)))*
         (((((3/2 : ℝ)/Real.sqrt Real.pi)*(2*Real.pi/Real.sqrt (6*Profile.A))) : ℝ) : ℂ)+0=
       (normalizedConstant : ℂ) := by
     unfold normalizedConstant
     push_cast
-    field_simp [hpi,hsp,hsa] <;> ring
+    field_simp [hpi,hsp,hsa]
+    ring
   rw [hvalue] at h
   apply h.congr'
   filter_upwards [eventually_ge_atTop (3 : ℕ),scale_eventually_le_one] with n hn ht1

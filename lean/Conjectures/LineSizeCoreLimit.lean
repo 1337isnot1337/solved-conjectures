@@ -86,7 +86,7 @@ theorem normalizedWeight_tendsto {α : Type*} {l : Filter α}
   have hnum := (Real.continuous_exp.tendsto _).comp hexponent
   have hden : Tendsto (fun k => productDenominator ((r k : ℝ) * t k))
       l (𝓝 Real.pi) := by
-    simpa only [Function.comp_apply, productDenominator_u0] using
+    simpa only [Function.comp_def, productDenominator_u0] using
       productDenominator_continuous.continuousAt.tendsto.comp hu
   have hsqrt := (Real.continuous_sqrt.tendsto Real.pi).comp hden
   have herror := correctionError_tendsto ht htpos hz

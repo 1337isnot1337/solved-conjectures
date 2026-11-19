@@ -83,11 +83,10 @@ theorem term_logarithm_error {b t theta : ℝ} {r j : ℕ}
         ((j : ℝ) + 1) * t + 2 / 3) * |theta| ^ 3 / t ^ 3 := by
       rw [abs_mul, abs_of_pos hs]
       field_simp
-      ring
     _ ≤ cubicConstant b * |theta| ^ 3 / t ^ 3 := by
       unfold cubicConstant
       exact div_le_div_of_nonneg_right
-        (mul_le_mul_of_nonneg_right hcompact (by positivity)) (by positivity)
+        (mul_le_mul_of_nonneg_right (by simpa only [add_comm] using hcompact) (by positivity)) (by positivity)
 
 theorem logarithm_quadratic_error {b t theta : ℝ} (r : ℕ)
     (hb : 0 < b) (ht : 0 < t) (hr : (r : ℝ) * t ≤ b)
@@ -111,7 +110,6 @@ theorem logarithm_quadratic_error {b t theta : ℝ} (r : ℕ)
       rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
     _ = ((r : ℝ) * t) * cubicConstant b * |theta| ^ 3 / t ^ 4 := by
       field_simp
-      ring
     _ ≤ b * cubicConstant b * |theta| ^ 3 / t ^ 4 := by
       exact div_le_div_of_nonneg_right
         (mul_le_mul_of_nonneg_right

@@ -132,7 +132,7 @@ theorem branchIntegral_normalized {t : ℝ} (ht : 0 < t)
       (Real.sqrt t*Real.exp (Profile.A/t)/(1-Real.exp (-t)))*
         EulerKernel.normalizedWeight r (beta.val : ℝ) t := by
     unfold EulerKernel.normalizedWeight
-    field_simp [hs,he,hq] <;> ring
+    field_simp [hs,he,hq]
   rw [branchIntegral_factor ht,hw,Complex.ofReal_mul]
   unfold normalizedBranchTerm
   rw [intervalIntegral.integral_const_mul,mul_assoc]
@@ -176,10 +176,10 @@ theorem normalized_branchCoefficient_interval {t : ℝ} (ht : 0 < t) (ht1 : t �
     _ = (Rat.castHom ℂ (branchCoefficient n beta)*(Real.exp (-t) : ℂ)^n)/
         ((Real.sqrt t : ℂ)*(Real.exp (Profile.A/t) : ℂ)) := by
       rw [← hexp]
-      field_simp [hs,het,hq] <;> ring
+      field_simp [hs,het,hq]
     _ = _ := by
       rw [hv']
       push_cast
-      field_simp [hs,he,hpi,hd] <;> ring
+      field_simp [hs,he,hpi,hd]
 
 end LineSize.Generating.Branches

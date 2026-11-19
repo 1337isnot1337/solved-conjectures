@@ -21,7 +21,7 @@ theorem integral_supported_rescale (f : ℝ → ℂ) {d : ℝ} (hd : 0 < d) :
       (Set.Icc (-Real.pi/d) (Real.pi/d)).indicator (fun y : ℝ => f (d*y)) := by
     funext y
     simp only [Set.indicator_apply]
-    rw [← hmem y]
+    simp only [← hmem y]
   have hab : -Real.pi/d ≤ Real.pi/d :=
     (div_nonpos_of_nonpos_of_nonneg (by linarith [Real.pi_pos]) hd.le).trans
       (div_nonneg Real.pi_pos.le hd.le)

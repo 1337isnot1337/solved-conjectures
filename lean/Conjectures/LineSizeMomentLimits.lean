@@ -71,7 +71,7 @@ theorem weightedMean_scaled_error_tendsto {α : Type*} {l : Filter α}
       _ = C * sqrt (t k) := by rw [mul_div_assoc, Real.div_sqrt]
   have hC : Tendsto (fun _ : α => C) l (𝓝 C) := tendsto_const_nhds
   have hsqrt : Tendsto (fun k => sqrt (t k)) l (𝓝 0) := by
-    simpa only [Real.sqrt_zero, Function.comp_apply] using
+    simpa only [Real.sqrt_zero, Function.comp_def] using
       (Real.continuous_sqrt.tendsto 0).comp ht
   exact tendsto_zero_of_eventually_abs_le
     (by simpa only [mul_zero] using hC.mul hsqrt) hmajorant
@@ -109,7 +109,7 @@ theorem centeredMean_scaled_tendsto {α : Type*} {l : Filter α}
     rw [← coreCoordinate_identity (r k) hk]
   have hβ : Tendsto (fun _ : α => β) l (𝓝 β) := tendsto_const_nhds
   have hsqrt : Tendsto (fun k => sqrt (t k)) l (𝓝 0) := by
-    simpa only [Real.sqrt_zero, Function.comp_apply] using
+    simpa only [Real.sqrt_zero, Function.comp_def] using
       (Real.continuous_sqrt.tendsto 0).comp ht
   have hlinear : Tendsto (fun k => β * ((r k : ℝ) * t k) * sqrt (t k))
       l (𝓝 0) := by

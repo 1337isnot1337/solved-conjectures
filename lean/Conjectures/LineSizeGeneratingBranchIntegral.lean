@@ -28,7 +28,9 @@ theorem branchValue_eq_range_product (r : ℕ) (beta : Fin 2) (z : K) :
     branchValue r beta z=
       ((2 : K)^r*z^(r^2+r*beta.val)/(1-z))*
         ∏ j ∈ range r, (1-z^(j+1))⁻¹ := by
-  rw [branchValue_eq,Fin.prod_univ_eq_prod_range]
+  rw [branchValue_eq]
+  congr 1
+  exact Fin.prod_univ_eq_prod_range (fun j : ℕ => (1 - z ^ (j + 1))⁻¹) r
 
 theorem hasSeriesValue_branchSeries [CharZero K] [CompleteSpace K]
     (r : ℕ) (beta : Fin 2) (z : K) (hz : ‖z‖ < 1) :
@@ -111,7 +113,7 @@ theorem scaled_count_eq_branch_integrals {q : ℝ} (hq : 0 ≤ q) (hq1 : q < 1)
     apply mul_ne_zero (by norm_num)
     exact_mod_cast Real.pi_ne_zero
   rw [lineSizeCount_extension_complex n hn,tsum_branchIntegral hq hq1 n]
-  field_simp [hpi] <;> ring
+  field_simp [hpi]
 
 theorem count_eq_branch_integrals {q : ℝ} (hq : 0 < q) (hq1 : q < 1)
     (n : ℕ) (hn : 3 ≤ n) :
@@ -123,6 +125,6 @@ theorem count_eq_branch_integrals {q : ℝ} (hq : 0 < q) (hq1 : q < 1)
     exact_mod_cast Real.pi_ne_zero
   have hqC : (q : ℂ) ≠ 0 := by exact_mod_cast hq.ne'
   rw [lineSizeCount_extension_complex n hn,tsum_branchIntegral hq.le hq1 n]
-  field_simp [hpi,hqC] <;> ring
+  field_simp [hpi,hqC]
 
 end LineSize.Generating.Branches

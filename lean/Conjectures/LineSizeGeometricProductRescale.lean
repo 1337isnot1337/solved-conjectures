@@ -18,7 +18,6 @@ theorem rescaled_cubic_identity {t : ℝ} (ht : 0 < t) (y : ℝ) :
       _ = sqrt t * t := by rw [Real.sq_sqrt ht.le]
   rw [abs_mul, abs_of_pos (mul_pos ht hs), mul_pow, mul_pow, hs3]
   field_simp
-  ring
 
 theorem logarithm_scaled_error_bound {b t y : ℝ} (r : ℕ)
     (hb : 0 < b) (ht : 0 < t) (hr : (r : ℝ) * t ≤ b)
@@ -47,7 +46,7 @@ theorem logarithm_scaled_error_tendsto {α : Type*} {l : Filter α}
     Tendsto (fun k => logarithm (r k) (t k) (t k * sqrt (t k) * y) -
       quadratic (r k) (t k) (t k * sqrt (t k) * y)) l (𝓝 0) := by
   have hsqrt : Tendsto (fun k => sqrt (t k)) l (𝓝 0) := by
-    simpa only [Real.sqrt_zero, Function.comp_apply] using
+    simpa only [Real.sqrt_zero, Function.comp_def] using
       (Real.continuous_sqrt.tendsto 0).comp ht
   have hy : Tendsto (fun k => sqrt (t k) * |y|) l (𝓝 0) := by
     simpa only [zero_mul] using hsqrt.mul_const |y|
