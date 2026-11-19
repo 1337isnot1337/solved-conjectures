@@ -2899,3 +2899,34 @@ The quantitative results concern positive primitive natural speed vectors with E
 The complete 171-module hosted gate passed at `9c5b1203a4405508254332b1d13dd19f9bdefe38` ([run and job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44592471446/job/135801829445)). It checked all fresh strict sources, all 4246 owned declarations including 850 private declarations, all 6 required theorem endpoints, and one exact stock-kernel target per module. The permitted axioms were only `propext`, `Classical.choice`, and `Quot.sound`. The unchanged raw receipt has SHA-256 `25d85fa1a9a5fa514e1a1505d370790f273656bafa3a9c4b991316ba9f043b5e`. A merged accepted-package source, audit and kernel pass remains a separate obligation.
 
 [Preserved receipt](verification/critical-seven-five-speed-exact-44592471446/receipt.json).
+
+## Four-input prime filtering, 19 November 2026
+
+Twenty modules are registered for the four-input filtering step in the
+seven-runner argument. For four natural inputs nonzero modulo seven and
+any exponent `m`, the theorem gives `1 <= j <= 5` and `0 <= k <= 6` such
+that `j + k*7^m` is coprime to `7^(m+1)` and each actual folded residue
+is at least `7^m`. Every input divisible by seven keeps its full residue
+relative to multiplication by `j`. Repeated inputs are allowed.
+
+The finite quotient sampling, symmetry reduction, ten canonical decision
+checks and natural arithmetic transport are all proved. No finite-check
+hypothesis remains. The higher-family seed must still be safe under the
+selected multiplier `j`; this component does not supply that seed or prove
+the unrestricted six-speed runner theorem. The five-input lower-level
+case also remains outside this component.
+
+[Run 44601096014](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44601096014)
+at `8d1933b7b568515fe5bf7e8b474fe22e284521e8` passed 20 fresh strict
+source checks, four literal contracts, all seven required endpoints,
+the complete owned and raw-occurrence audit, and 20 exact singleton
+stock-kernel replays. The audit covers 133 declarations and 97 theorems.
+Its closed raw dependency graph has 5,101 nodes and 70,060 edges, with
+only `propext`, `Classical.choice`, and `Quot.sound`. All 128 original
+artifact members and exact source, object, import, control, log and profile
+bindings were independently authenticated.
+
+[Original evidence and exact scope](verification/prime-filtering-four-exact-44601096014/README.md).
+All prior accepted entries, verification code and the axiom whitelist are
+preserved. No result-directory completion status changes. The full merged
+accepted-package gate remains a separate obligation.

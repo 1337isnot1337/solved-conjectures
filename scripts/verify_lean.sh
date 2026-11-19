@@ -1417,6 +1417,26 @@ modules=(
   Conjectures.LonelinessTwoParameterRadius
   Conjectures.LonelinessSixSpectrumLatticeNormFourSpeed
   Conjectures.LonelinessSevenCoordinateFiveSpeed
+  Conjectures.LonelinessPrimeFilteringFourProfiles
+  Conjectures.LonelinessPrimeFilteringSampling
+  Conjectures.LonelinessPrimeFilteringFourActions
+  Conjectures.LonelinessPrimeFilteringFourCellMap
+  Conjectures.LonelinessPrimeFilteringFourRows
+  Conjectures.LonelinessPrimeFilteringFourSearch
+  Conjectures.LonelinessPrimeFilteringFourCanonicalCheck
+  Conjectures.LonelinessPrimeFilteringFourCertificate1
+  Conjectures.LonelinessPrimeFilteringFourCertificate2
+  Conjectures.LonelinessPrimeFilteringFourCertificate3
+  Conjectures.LonelinessPrimeFilteringFourCertificate4
+  Conjectures.LonelinessPrimeFilteringFourCertificate5
+  Conjectures.LonelinessPrimeFilteringFourCertificate6
+  Conjectures.LonelinessPrimeFilteringFourCertificate7
+  Conjectures.LonelinessPrimeFilteringFourCertificate8
+  Conjectures.LonelinessPrimeFilteringFourCertificate9
+  Conjectures.LonelinessPrimeFilteringFourSoundness
+  Conjectures.LonelinessPrimeFilteringFourTransport
+  Conjectures.LonelinessPrimeFilteringFourFinite
+  Conjectures.LonelinessPrimeFilteringFourArithmetic
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

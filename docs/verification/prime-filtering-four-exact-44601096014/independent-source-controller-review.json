@@ -1,0 +1,205 @@
+{
+  "controller_findings": [
+    "Source compiler flags, fresh per-module outputs, direct-import bindings, complete object inventory, exact singleton stock replay and final unchanged-byte checks match the reviewed 108-module controller.",
+    "The pinned raw helper 7c366fa3983ed26b2356c417552b861ff235c5bb34848810191c13b5322c9cea augments the all-owned audit. The command uses -t0; validate_all_owned_log checks both the original inventory and the complete union-of-variants dependency graph.",
+    "Raw validation requires a rejected ill-typed kernel negative control, complete private data, exact owned occurrences, identical raw provenance of selected bodies, all reachable variants and zero-trust checks of selected and differing theorem bodies in mixed families. Only the three standard axioms are allowed.",
+    "Every imported repository helper is covered by the pinned helper guard. Workflow permissions are contents:read; the workflow uploads evidence after failure and does not register any root.",
+    "The fresh hosted pass and composed raw-audit/kernel result remain separate required evidence; this review does not claim either has occurred."
+  ],
+  "full_six_speed_bound_claimed": false,
+  "independent_stock_replay_claimed": false,
+  "new_lean_run": false,
+  "preflight": {
+    "all_legacy": true,
+    "literal_contracts": 4,
+    "modules": 20,
+    "passed": true,
+    "required_theorems": 7
+  },
+  "raw_audit_complete_result_claimed": false,
+  "reviewed_files_sha256": {
+    ".github/workflows/lean-prime-filtering-four-exact.yml": "cdcd294f0290728733b6866ee5298c1c3766d137fc077b52c6e8a07da593ce11",
+    "docs/prime-filtering-four-exact-sources.json": "8de328a9419b74376b5fd7293cffb88486dd723df99af2c6a6c261156eba1f16",
+    "lean/Conjectures/LonelinessPrimeFilteringFourArithmetic.lean": "0581c84de86d0fc38462f10731e6c41e27e35cff53689ab76c5525f4cee12fa1",
+    "lean/Conjectures/LonelinessPrimeFilteringFourFinite.lean": "b434f1603a33611de20857dffec7af617d26ade49958e31cd557ee13cc10bb35",
+    "lean/Conjectures/LonelinessPrimeFilteringFourTransport.lean": "45c621004153e258dd3d138d1ad69deebfb949eccacdbadaf0404da43111ce80",
+    "scripts/audit_lean_raw_occurrences.py": "7c366fa3983ed26b2356c417552b861ff235c5bb34848810191c13b5322c9cea",
+    "scripts/verify_prime_filtering_four_exact.py": "f4d418f67357537de5f930a7334730e7d7b8c4475bd9245684263c944b6c3961"
+  },
+  "reviewer": "coverage_formalization",
+  "schema": "independent-four-input-filter-review-v1",
+  "scope": "Read-only semantic review of FourTransport, FourFinite and FourArithmetic; full controller and raw-audit integration review; exact source/object/log/progress/import authentication of all 20 completed strict source receipts. This is not a completed composed raw-audit or stock-replay verdict.",
+  "semantic_findings": [
+    "The four inputs are arbitrary natural numbers with nonzero residue modulo seven. Repetitions are allowed; zero is excluded by that hypothesis.",
+    "Finite quotient sampling and period reduction preserve the exact five quotient digits. The ten finite canonical checks are discharged, including the separate zero case.",
+    "Avoiding quotient residues zero and six implies the actual folded natural residue bound at every positive M.",
+    "For M=7^m the selected multiplier is coprime to 7^(m+1). The m=0 branch uses a nonzero output digit; the m>0 branch uses its residue j+1 in 1 through 5.",
+    "Higher residues are preserved relative to multiplication by j+1. A subsequent upper-family seed must cover the five possible multipliers or otherwise control the selected index.",
+    "All four literal contracts retain the exact positivity, unit residue, folded distance and universal preservation hypotheses and conclusions.",
+    "No full six-speed runner theorem or higher-family distance bound is asserted."
+  ],
+  "source_receipt_manifest_sha256": "d2de724c739ede5feefc0c661b7250e5300f5b39a901c38ee7a79b4d9812d956",
+  "strict_source_receipts_authenticated": {
+    "Conjectures.LonelinessPrimeFilteringFourActions": {
+      "direct_project_import_count": 1,
+      "object_sha256": "63f627d29b63883d167dcbf92a6ea2929a3a72e930f1b2c3921706aa111ce13d",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/actions-pilot-v2/receipt.json",
+      "receipt_sha256": "50998173392a5bba8d47a9eb69ce2fbae904987626592a777eef4f0cc07ef6cb",
+      "seconds": 43.869,
+      "source_sha256": "ab0c0cb8390b4e6a049368be7fb75b4b0254db3dae01ae28c95512218a4e3eba"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourArithmetic": {
+      "direct_project_import_count": 1,
+      "object_sha256": "80241a1f4d2e728101fff4a3af56a2a7e80eb2623323fff3ca81f5eb27abbd5e",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/arithmetic-v2/receipt.json",
+      "receipt_sha256": "abcb16e0fa022e01f6edf583167aabc171d1ff27911606ba812d21259eef56b6",
+      "seconds": 9.354,
+      "source_sha256": "0581c84de86d0fc38462f10731e6c41e27e35cff53689ab76c5525f4cee12fa1"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourCanonicalCheck": {
+      "direct_project_import_count": 1,
+      "object_sha256": "6eb9d1fec49324333f264103f1fcec542477f9ae6b637a0cbf73333c10b84f7a",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/canonical-check-v2/receipt.json",
+      "receipt_sha256": "b1d495d0b62fcbc097cb4c2a3350212d9b454993dc3e0f0c6657e4a910437674",
+      "seconds": 15.954,
+      "source_sha256": "28d022de3701c09b62663dbf9207e8e8c80528c4ae789e3e80d1ae50e0994e23"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourCellMap": {
+      "direct_project_import_count": 1,
+      "object_sha256": "a851516cd30533bf3acd3c75dbe8d26f9879878b62ee76e2884483b5727181bd",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/cell-map-v1/receipt.json",
+      "receipt_sha256": "83e9f9a48ff83ff336fe49e822db33836e9041709e5d3406a90a1de79ba81dc5",
+      "seconds": 44.105,
+      "source_sha256": "64a233e411ad2857e58a2485421233fa4cf614c7b17f20d28534e57c2257db20"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourCertificate1": {
+      "direct_project_import_count": 1,
+      "object_sha256": "ba6649b0fc7acdede7b32ab745032fb8c2cbbfedcbfa8b75e5c048805e32b2a1",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/canonical-certificate-1-v1/receipt.json",
+      "receipt_sha256": "03f6a26c672775011e4526a66a2151352b5586cc107ffd5d50e3d1e8cb351751",
+      "seconds": 121.645,
+      "source_sha256": "a9460d14c85704a87bc5390b13bf06912dce990f39200d44343acf19e89d7606"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourCertificate2": {
+      "direct_project_import_count": 1,
+      "object_sha256": "b23124206a3587ae878e86231c9a96b52142e0b2dd33fd33ade763065c79c8a6",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/canonical-certificate-2-v2/receipt.json",
+      "receipt_sha256": "2abb90fb4cc455b805bc9ce716e497948438e1fd76ade1e39efffea5971c6ab3",
+      "seconds": 137.587,
+      "source_sha256": "4af70f153242b51a6510778ce3879086dc45507681599d66df1f47dc6f41ee3a"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourCertificate3": {
+      "direct_project_import_count": 1,
+      "object_sha256": "38e27080c8bde9fd255fffbcbdd271128d0dcf486e2d109bd1004b11719beff8",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/canonical-certificate-3-v1/receipt.json",
+      "receipt_sha256": "76863d77c5b1457326b395ff9c16b07c36ceb48f732ac9b4ce1361d81896ce4d",
+      "seconds": 104.462,
+      "source_sha256": "f15c283ccd8d9f41918da8d9f47b6bf3211dd94ee6b6f8a94014f24fbf386fb5"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourCertificate4": {
+      "direct_project_import_count": 1,
+      "object_sha256": "362dd474b4786a8cac5d3aa85ce304a22948545fac5adde4460fed34f2f78734",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/canonical-certificate-4-v2/receipt.json",
+      "receipt_sha256": "177567c7314f1d93b018e3ad546b431cd2a93369dd853046eda26084f0ee40bd",
+      "seconds": 102.848,
+      "source_sha256": "d1c7e017992304fadc99075cab4e870551cba5f242665e5b47a69a3031d77930"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourCertificate5": {
+      "direct_project_import_count": 1,
+      "object_sha256": "89486660b248bc23f391a9e33e161c323db79cea89d898cfe02923d51f0f47cb",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/canonical-certificate-5-v2/receipt.json",
+      "receipt_sha256": "593bb25553cc051ebd94a1fd1a7bde8248b5d8c2ec2dec9cbde9d60013354345",
+      "seconds": 100.467,
+      "source_sha256": "8a823d574948957d992131b2c6ff3373aef6ffdbb2d20585cad6cc257ce22d15"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourCertificate6": {
+      "direct_project_import_count": 1,
+      "object_sha256": "ce452d2121f74efe32391ab62a940301bfcfbc1b9580aab2a5cf56af957cdc40",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/canonical-certificate-6-v1/receipt.json",
+      "receipt_sha256": "68148cfeb24a385d94376a203c1c931e738ed005fbd46395ef1db562ac052d2d",
+      "seconds": 103.182,
+      "source_sha256": "3fd52af2b22806e00f5a6dd8eb0c00536c83a1c0e6f4e99d6fc0187c8aa0e540"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourCertificate7": {
+      "direct_project_import_count": 1,
+      "object_sha256": "dff5621d5810bd2cd988b746db52a2b73ea06e550b1ef7ed58d7a6098b157647",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/canonical-certificate-7-v2/receipt.json",
+      "receipt_sha256": "b608bf73a27889c431678d931da55d4426789a7cf4ef9a202a71628ae1068e05",
+      "seconds": 115.988,
+      "source_sha256": "1524f9c4d8e70fceddfe4a80d8ca30b70475a46d329446143a579485fd8a8291"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourCertificate8": {
+      "direct_project_import_count": 1,
+      "object_sha256": "6cd06e463ae876df64712d62afd529188d1407c6c1b5123caf0acdf5fd172ade",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/canonical-certificate-8-v2/receipt.json",
+      "receipt_sha256": "c10eb5a415a363963ba24f39122bf2f62d358f5cef9cff1208565674c740e839",
+      "seconds": 87.464,
+      "source_sha256": "9d3cb7a2062b100bf98ba91c396a4030871eae25b05d4a9964271f5b1f20e8fe"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourCertificate9": {
+      "direct_project_import_count": 1,
+      "object_sha256": "ea95f46e518da4a4be1c5591f0a25b83ab9d8a849bb40ca19a759ee71400c078",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/canonical-certificate-9-v1/receipt.json",
+      "receipt_sha256": "821a43d0f1be8b47fff51e3336ebb65a5fe3b486e01ca358ae9946af610fd6df",
+      "seconds": 118.374,
+      "source_sha256": "515d1e82309ee1a9c9286229f3e09839558cd2c35d98f503cba6e67effb33f61"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourFinite": {
+      "direct_project_import_count": 10,
+      "object_sha256": "f9923c6bae488afa0b91eb485265ccb2043e300f1796b3c54cbbfa0efadaab7c",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/finite-v1/receipt.json",
+      "receipt_sha256": "7be83840b470b3b3e0ff5b38db9bbc725edcbf292e8396602aae0cba7a653c83",
+      "seconds": 5.277,
+      "source_sha256": "b434f1603a33611de20857dffec7af617d26ade49958e31cd557ee13cc10bb35"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourProfiles": {
+      "direct_project_import_count": 0,
+      "object_sha256": "583c83587f96ca5f8c40e9e4cdd0ad52c8b9ac2416d98995d477c643fc99287a",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/profile-pilot-v2/receipt.json",
+      "receipt_sha256": "cf066fb7ce12d602a51dded37a21cde175742b14849b020711947855f62a5e70",
+      "seconds": 49.715,
+      "source_sha256": "c50d92e6729ccce29c9d31096ff24b6af842db0045ca142d1650a09655221057"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourRows": {
+      "direct_project_import_count": 1,
+      "object_sha256": "be52e7b7aea57dabd7b33afa6fc5f60e56869e728f101a24d39afdf516a455c5",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/rows-pilot-v1/receipt.json",
+      "receipt_sha256": "0255a8a8ffe4328dfd0b7d3655b0f83c84d3dee263aa0c819fd53941f0db0db5",
+      "seconds": 176.547,
+      "source_sha256": "926e03cfa78c146417f913548e39e1f65b18bc9b7bca85a9db758739ca2f6d88"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourSearch": {
+      "direct_project_import_count": 1,
+      "object_sha256": "eba420578d7627974fe9149914ef334b7d41f3fc8096b2f6040d8ec352adc343",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/search-pilot-v1/receipt.json",
+      "receipt_sha256": "592b6bae10dcc5f1202a0a5b06da7fdda39ee3507ac12c23d39c9bcecf6c045e",
+      "seconds": 163.633,
+      "source_sha256": "45a44620514e8fd7cc7da8f1f961d17523bd1e2242769da841752b973415ebe4"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourSoundness": {
+      "direct_project_import_count": 3,
+      "object_sha256": "0f3eb13ef529542731d7d1a34039890246577b43ae46a9c84fa2dfa2b21530fd",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/soundness-v2/receipt.json",
+      "receipt_sha256": "06f38193befbe6b83eb71542fb363f875aa1ac8a7f6df763304291e6c8f01405",
+      "seconds": 13.725,
+      "source_sha256": "1ba48b3236b99b00eea0ea7f8e152f0b01251e8897cbee46b026b176c56744a5"
+    },
+    "Conjectures.LonelinessPrimeFilteringFourTransport": {
+      "direct_project_import_count": 3,
+      "object_sha256": "708103da5ca1dd00bc49f91f4a2608d23baf4c41bb771239af17e7f2f56df83d",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/four-unit-research/transport-v1/receipt.json",
+      "receipt_sha256": "b6bec88d8ed7ef71877850fbab9283d290fa6524594fc6de1803f56ff3abf528",
+      "seconds": 24.402,
+      "source_sha256": "45c621004153e258dd3d138d1ad69deebfb949eccacdbadaf0404da43111ce80"
+    },
+    "Conjectures.LonelinessPrimeFilteringSampling": {
+      "direct_project_import_count": 0,
+      "object_sha256": "a45f123d2d42cf9dde068776de7730a38f790ad9b3c892649c334fc5f1116c57",
+      "receipt_path": "/workspace/scratch/9d6f8c81feea/prime-filtering/sampling-check-v3/receipt.json",
+      "receipt_sha256": "66a5f12005fe8c0659cba7830ffae48920fed114905424d614374d1828ae92ae",
+      "seconds": 4.552,
+      "source_sha256": "c454140c36c61bd2b4f81524f361f2b8f64437da8ac3bd0e8ce3e9724f3a95f1"
+    }
+  },
+  "verdict": "passed_for_candidate_publication"
+}

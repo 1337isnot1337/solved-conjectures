@@ -9481,7 +9481,14 @@ run_cmd do
     `Loneliness.SevenCoordinateCritical.critical_plane_iff_of_six_classification,
     `Loneliness.SevenCoordinateCritical.Quantitative.large_norm_family_classification_of_six_classification,
     `Loneliness.SevenCoordinateCritical.Quantitative.large_norm_family_iff_of_six_classification,
-    `Loneliness.SevenCoordinateCritical.Quantitative.large_norm_spectrum_of_six_classification]
+    `Loneliness.SevenCoordinateCritical.Quantitative.large_norm_spectrum_of_six_classification,
+    `Loneliness.PrimeFilteringFourProfiles.canonical_checks_verified,
+    `Loneliness.PrimeFilteringFourProfiles.every_four_profiles_good,
+    `Loneliness.PrimeFilteringFourProfiles.four_filter,
+    `Loneliness.PrimeFilteringFourProfiles.folded_bound_of_quotient,
+    `Loneliness.PrimeFilteringFourProfiles.shifted_multiplier_coprime,
+    `Loneliness.PrimeFilteringFourProfiles.shifted_residue_of_seven_dvd,
+    `Loneliness.PrimeFilteringFourProfiles.four_prime_power_filter]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]

@@ -1,5 +1,15 @@
 # History
 
+## 2026-11-19 — Four-input prime filtering
+
+Registered 20 modules after the complete hosted source, literal-statement,
+owned/raw-occurrence audit and stock-kernel gate passed. Ten canonical
+finite checks now give an unconditional arithmetic filter for four inputs
+nonzero modulo seven, with actual folded bounds and higher-residue
+preservation relative to one of the multipliers 1 through 5.
+The unrestricted six-speed runner theorem remains pending.
+[Scope and original evidence](docs/verification/prime-filtering-four-exact-44601096014/README.md).
+
 ## 2026-11-19 — Prime filtering and proved runner classes
 
 Registered twelve modules after the complete 18-module hosted gate passed
