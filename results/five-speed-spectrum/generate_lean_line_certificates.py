@@ -193,19 +193,23 @@ theorem lineTable_{k}_checked :
 end Loneliness.FiveSpeedCertificate
 """
         outputs[PREFIX + f"{k:02d}.lean"] = text
-    outputs[PREFIX + "MapCertificate.lean"] = f"""import Conjectures.{PREFIX}Data
-
-/-! Exact row bounds and pure-axis witnesses for all retained maps. -/
-namespace Loneliness.FiveSpeedCertificate
-
-set_option maxRecDepth 16384 in
-set_option maxHeartbeats 0 in
-theorem boundedMapFacts_checked : ∀ m : Fin 164,
-    lineMapFactsCheck (boundedMaps m) (boundedMapL m) (boundedMapFactsPayloads m) = true := by
-  decide +kernel
-
-end Loneliness.FiveSpeedCertificate
-"""
+    map_facts = [f"import Conjectures.{PREFIX}Data", "",
+                 "/-! Exact row bounds and pure-axis witnesses for all retained maps.",
+                 "Each map has its own kernel check to bound evaluator memory. -/", "",
+                 "namespace Loneliness.FiveSpeedCertificate", "",
+                 "set_option maxRecDepth 16384", "set_option maxHeartbeats 0", ""]
+    for m in range(len(maps)):
+        map_facts.extend([f"theorem boundedMapFacts_{m:03d}_checked :",
+                          f"    lineMapFactsCheck (boundedMaps {m}) (boundedMapL {m})",
+                          f"      (boundedMapFactsPayloads {m}) = true := by",
+                          "  decide +kernel", ""])
+    map_facts.extend(["theorem boundedMapFacts_checked : ∀ m : Fin 164,",
+                      "    lineMapFactsCheck (boundedMaps m) (boundedMapL m)",
+                      "      (boundedMapFactsPayloads m) = true := by",
+                      "  intro m", "  fin_cases m"])
+    map_facts.extend(f"  · exact boundedMapFacts_{m:03d}_checked" for m in range(len(maps)))
+    map_facts.extend(["", "end Loneliness.FiveSpeedCertificate", ""])
+    outputs[PREFIX + "MapCertificate.lean"] = "\n".join(map_facts)
     aggregate = [*(f"import Conjectures.{PREFIX}{k:02d}" for k in range(9)),
                  f"import Conjectures.{PREFIX}MapCertificate", "",
                  "namespace Loneliness.FiveSpeedCertificate", "",

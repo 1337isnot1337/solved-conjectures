@@ -41,8 +41,16 @@ theorem rootStarAfterMask_testBit (p eligible d e : ℕ) (he : e < p) :
       eligible.testBit e = true ∧ d < e := by
   rw [rootStarAfterMask, eraseMask_testBit p eligible (fullMask (d + 1)) e he,
     fullMask_testBit]
-  simp only [ne_eq, decide_eq_true_eq, not_lt]
-  omega
+  constructor
+  · rintro ⟨hbit, hafter⟩
+    refine ⟨hbit, ?_⟩
+    by_contra hde
+    have hsmall : e < d + 1 := by omega
+    simp [hsmall] at hafter
+  · rintro ⟨hbit, hde⟩
+    refine ⟨hbit, ?_⟩
+    have hsmall : ¬e < d + 1 := by omega
+    simp [hsmall]
 
 def rootStarBaseCheck (p : ℕ) (G inv : ℕ → ℕ)
     (leaf : ℕ → ℕ → ℕ → ℕ → Bool) (b : ℕ) : Bool :=
