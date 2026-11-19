@@ -181,6 +181,48 @@ modules=(
   Conjectures.RectangleEulerLimit
   Conjectures.RectangleBasel
   Conjectures.RectangleEulerUpper
+  Conjectures.DenominatorForest
+  Conjectures.DenominatorHead
+  Conjectures.DenominatorSeries
+  Conjectures.DenominatorSplice
+  Conjectures.DenominatorPrefixPolynomials
+  Conjectures.DenominatorDecomposition
+  Conjectures.DenominatorSpecialTail
+  Conjectures.DenominatorPrefixTotals
+  Conjectures.DenominatorPeriodic
+  Conjectures.DenominatorFiniteLists
+  Conjectures.DenominatorLocality
+  Conjectures.DenominatorCycles
+  Conjectures.DenominatorCycleOrbit
+  Conjectures.DenominatorWordFacts
+  Conjectures.DenominatorFinitePaths
+  Conjectures.DenominatorLimit
+  Conjectures.DenominatorPrefixData00
+  Conjectures.DenominatorPrefixData01
+  Conjectures.DenominatorPrefixData02
+  Conjectures.DenominatorPrefixData03
+  Conjectures.DenominatorPrefixData04
+  Conjectures.DenominatorPrefixData05
+  Conjectures.DenominatorPrefixData06
+  Conjectures.DenominatorPrefixData07
+  Conjectures.DenominatorPrefixData08
+  Conjectures.DenominatorPrefixData09
+  Conjectures.DenominatorPrefixData10
+  Conjectures.DenominatorPrefixData11
+  Conjectures.DenominatorPrefixData12
+  Conjectures.DenominatorPrefixData13
+  Conjectures.DenominatorPrefixRows
+  Conjectures.DenominatorPrefixCertificate
+  Conjectures.DenominatorMinimality
+  Conjectures.DenominatorTheorem
+  Conjectures.MotzkinSkew
+  Conjectures.MotzkinCocycle
+  Conjectures.MotzkinDefects
+  Conjectures.MotzkinFinite
+  Conjectures.MotzkinMeasure
+  Conjectures.MotzkinCharacterLower
+  Conjectures.MotzkinFiniteTheorem
+  Conjectures.MotzkinDensity
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

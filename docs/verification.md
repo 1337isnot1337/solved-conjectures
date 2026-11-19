@@ -63,6 +63,20 @@ The unchanged pinned `leanchecker` then replays the two project namespaces.
 This avoids repeated dependency-directory scans and excludes unfinished cached
 modules. It does not change the kernel or omit any accepted proof module.
 
+After building and auditing a separate candidate, replay its exact local import
+closure from `lean/` with:
+
+```bash
+lake env python3 ../scripts/replay_lean.py --root Conjectures.DenominatorTheorem
+```
+
+The helper derives the closure from the selected source, requires every project
+source and compiled object, stages only that closure, and propagates checker
+failure. Cross-namespace candidates use the complete accepted-module mode.
+`python3 scripts/test_replay_lean.py` checks the closure, staging, missing-object,
+and failure-propagation rules with isolated fixtures. The kernel executable is
+unchanged in both modes.
+
 The [status report](lean-status.md) records the exact statements checked and dependencies that remain. Partial certificates do not establish the full conjecture. Accepted proofs permit only `propext`, `Classical.choice`, and `Quot.sound` as transitive axioms, as required by [the repository instructions](../AGENTS.md).
 
 ## What the checks establish

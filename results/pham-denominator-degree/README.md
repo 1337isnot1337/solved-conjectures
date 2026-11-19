@@ -24,6 +24,31 @@ The proof is not merely a fit to early terms. Pham's proven numerator/denominato
 
 **Read the [complete proof](PROOF.md)**, including the precise counting algorithm and the finite-coefficient identity lemma.
 
+## Lean formalization
+
+[`DenominatorTheorem.lean`](../../lean/Conjectures/DenominatorTheorem.lean)
+proves both the primary and dual identities from the actual Bulgarian-solitaire
+map. The [direct formal proof](FORMAL_PROOF.md) explains this route. It derives
+rationality from finite prefix recursions and does not assume Pham's general
+rationality or degree-bound theorem.
+
+For every repetition count `k ≥ 2`, the formalization proves that each word
+gives an actual forward cycle with ten distinct vertices. For every depth `n`,
+its exact first-entry level size equals the limiting coefficient for every
+repetition count `k ≥ n + 2`.
+Thus the identities apply to the limiting level generating functions defined
+by the finite game. The proof also shows that every nonzero denominator for
+the primary series has degree at least 5, and every nonzero denominator for
+the dual series has degree at least 10.
+
+The polynomial certificate checks 418 recursive identities in Lean. Its Python
+generator supplies proposed coefficients; Lean checks each identity from the
+recursive definitions. The main endpoints are
+`DenominatorForest.pham_denominator_counterexample` and
+`DenominatorForest.pham_dual_denominator`. The
+[Lean status](../../docs/lean-status.md) records source, axiom-audit, and
+independent kernel verification.
+
 ## Verify
 
 Requires Python 3.10+ and no third-party packages.
@@ -56,6 +81,9 @@ of degree 10, which is divisible by the denominator of $H_P$. The dual's numerat
 ## Contents
 
 - [`PROOF.md`](PROOF.md) — theorem, exact proof, counting invariant, and dual comparison.
+- [`FORMAL_PROOF.md`](FORMAL_PROOF.md) — direct derivation used by Lean, including stabilization of actual finite orbit levels.
+- [`DenominatorTheorem.lean`](../../lean/Conjectures/DenominatorTheorem.lean) — full primary and dual endpoints, with minimal denominator degrees.
+- [`prefix_certificate.py`](prefix_certificate.py) — finite recursive polynomial coefficient proposals for the Lean certificate.
 - [`verify.py`](verify.py) — complete standard-library verifier and independent brute-force enumerator.
 - [`certificates/coefficients.json`](certificates/coefficients.json) — exact integer coefficient certificates.
 - [`tests/`](tests/) — regression checks, including two published examples.

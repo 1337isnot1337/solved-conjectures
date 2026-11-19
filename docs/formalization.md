@@ -11,8 +11,8 @@ The four active lanes in [issue 1](https://github.com/1337isnot1337/solved-conje
 - Concrete CUT certificates: the checked composition theorem permits the path
   2 → 3 → 4 → 8 → 9. The eight-pile recognizer is composed from two four-pile
   recognizers. The final option unions remain to be checked.
-- Pham denominator degree: actual reverse dynamics, limiting orbit counts,
-  finite-prefix recursions and exact polynomial identities.
+- Pham denominator degree is complete. That worker now handles the
+  Sylvester–Gallai dependency and finite core/counting components of Erdős 607.
 - Compact Motzkin: finite signed-grid characters, compact-group measure, and
   the exact two-difference formula. The same worker has completed the
   all-parameter gap-five/gap-seven character formulas and an odd-cycle density
@@ -62,25 +62,38 @@ constructions. Both prove that a finite test accepts exactly the proposed
 representations of the actual game. Candidate enumeration is complete when a
 representation exists. The two concrete games remain separate obligations.
 
+Pham's primary and dual limiting-series identities are complete. The proof
+derives stabilization from actual finite orbit levels, solves finite-prefix
+recursions, and proves reduced denominator degrees 5 and 10. It uses no
+published rationality or degree bound. Its 36-module closure passed strict
+source checks, a 1,080-declaration axiom audit, and independent kernel replay.
+
+The finite Motzkin theorem is also checked: every finite abelian group generated
+by the two marked elements has an attaining independent set and an attaining
+circle character with the same normalized value. The full compact theorem
+remains in progress.
+
 The verified snapshot `c0cf593` passed its source build, the audit of 6,954
 project theorem declarations, and independent kernel replay of all 152 proof
 modules and both roots. The separate `a7b1ca1` checkpoint passed its complete
-hosted source/audit/kernel workflow. Their mathematical source files are
-preserved in this integration. Local verification and hosted CI receipts are
+hosted source/audit/kernel workflow. The `c862951` integration renamed the two
+independent rectangle modules to resolve a namespace collision, replayed both,
+and passed the combined source build and 7,581-declaration audit.
+Local verification and hosted CI receipts are
 recorded separately.
 See [the status report](lean-status.md) for declarations and checked scope.
 
-## Remaining mathematical obligations
+## Campaign checklist
 
 1. CUT: finish the concrete three-, four-, eight- and nine-pile certificates,
    both option unions, and the actual game identifications.
-2. Pham: identify the infinite-state recursion with stabilized finite orbits,
-   prove the finite-prefix generating functions, and derive both exact reduced
-   denominators from those functions.
+2. Pham is complete: actual orbit limits, both rational identities, and exact
+   reduced-denominator minimality are proved.
 3. Distance graphs are complete: all density and character formulas, small
    exceptions, periodic attainments, and the infinite discrepancy branch.
-4. Two-difference Motzkin: signed grid, compact-group measure, finite quotients,
-   and density of character restrictions.
+4. Two-difference Motzkin: the compact-group upper bound through finite boxes
+   and dense character restrictions, followed by the note's annihilator
+   evaluations, cyclic criteria, and exact algorithmic bounds.
 5. Haralambis is complete: its exact density equality and optimal pair-sum
    periodic attainment were published in `22f3a5a`.
 6. Five-speed spectrum: geometric norm reduction and complete modular

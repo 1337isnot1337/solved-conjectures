@@ -56,3 +56,5 @@ import Conjectures.LonelinessPlaneGap
 import Conjectures.RectangleLogBounds
 import Conjectures.RectangleEulerUpper
 import Conjectures.RectangleBasel
+import Conjectures.DenominatorTheorem
+import Conjectures.MotzkinDensity

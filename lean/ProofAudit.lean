@@ -9,6 +9,18 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `DenominatorForest.pham_denominator_counterexample,
+    `DenominatorForest.pham_dual_denominator,
+    `DenominatorForest.primary_level_stabilizes,
+    `DenominatorForest.dual_level_stabilizes,
+    `DenominatorForest.primary_common_denominator,
+    `Denominator.reduced_denominator_dvd,
+    `Denominator.reduced_denominator_degree_le,
+    `DenominatorFinite.firstEntrySeries_eq,
+    `DenominatorForest.cycleSet_eq_forward_orbit,
+    `Motzkin.finite_two_difference_theorem,
+    `Motzkin.finite_density_eq_characterValue,
+    `Motzkin.characterValue_le_density,
     `SolitaireCounterexample.eriksson_jonsson_sjoestrand_conjecture1_counterexample,
     `SolitaireGeneral.profile_difference_bound, `SolitaireGeneral.uniform_profile_difference,
     `SolitaireGeneral.profile_limit_transfer,
