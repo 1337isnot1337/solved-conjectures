@@ -43,7 +43,7 @@ The authors are credited in order: Cinna Davis, followed by GPT-6.2 Astra (an AI
 Suggested BibTeX for the repository:
 
 ```bibtex
-@misc{davis2026bulgariansolitaire,
+@misc{davis2026solvedconjectures,
   author       = {Cinna Davis and {GPT-6.2 Astra}},
   title        = {Conjectures in combinatorics and number theory},
   year         = {2026},
