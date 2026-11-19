@@ -464,7 +464,7 @@ theorem dfs_root_zero :
   apply dfsSafe_of_frontier_all neighbors [4, 8, 16] (depth := 4) (fuel := 11)
   · decide +kernel
   · rw [frontier_zero_eq]
-    simp only [List.all_cons, List.all_nil,
+    simp only [List.all_cons, List.all_nil, Bool.true_and,
       dfs_leaf_zero_00, dfs_leaf_zero_01, dfs_leaf_zero_02,
       dfs_leaf_zero_03, dfs_leaf_zero_04, dfs_leaf_zero_05,
       dfs_leaf_zero_06, dfs_leaf_zero_07, dfs_leaf_zero_08,
@@ -476,7 +476,7 @@ theorem dfs_root_one :
   apply dfsSafe_of_frontier_all neighbors [4, 8, 16] (depth := 4) (fuel := 11)
   · decide +kernel
   · rw [frontier_one_eq]
-    simp only [List.all_cons, List.all_nil,
+    simp only [List.all_cons, List.all_nil, Bool.true_and,
       dfs_leaf_one_00, dfs_leaf_one_01, dfs_leaf_one_02,
       dfs_leaf_one_03, dfs_leaf_one_04, dfs_leaf_one_05,
       dfs_leaf_one_06, dfs_leaf_one_07, dfs_leaf_one_08,
@@ -488,7 +488,7 @@ theorem dfs_root_two :
   apply dfsSafe_of_frontier_all neighbors [4, 8, 16] (depth := 4) (fuel := 11)
   · decide +kernel
   · rw [frontier_two_eq]
-    simp only [List.all_cons, List.all_nil,
+    simp only [List.all_cons, List.all_nil, Bool.true_and,
       dfs_leaf_two_00, dfs_leaf_two_01, dfs_leaf_two_02,
       dfs_leaf_two_03, dfs_leaf_two_04, dfs_leaf_two_05,
       dfs_leaf_two_06, dfs_leaf_two_07, dfs_leaf_two_08,
@@ -500,7 +500,7 @@ theorem dfs_root_three :
   apply dfsSafe_of_frontier_all neighbors [4, 8, 16] (depth := 4) (fuel := 11)
   · decide +kernel
   · rw [frontier_three_eq]
-    simp only [List.all_cons, List.all_nil,
+    simp only [List.all_cons, List.all_nil, Bool.true_and,
       dfs_leaf_three_00, dfs_leaf_three_01, dfs_leaf_three_02,
       dfs_leaf_three_03, dfs_leaf_three_04, dfs_leaf_three_05,
       dfs_leaf_three_06, dfs_leaf_three_07, dfs_leaf_three_08,
@@ -512,7 +512,7 @@ theorem dfs_root_four :
   apply dfsSafe_of_frontier_all neighbors [4, 8, 16] (depth := 4) (fuel := 11)
   · decide +kernel
   · rw [frontier_four_eq]
-    simp only [List.all_cons, List.all_nil,
+    simp only [List.all_cons, List.all_nil, Bool.true_and,
       dfs_leaf_four_00, dfs_leaf_four_01, dfs_leaf_four_02,
       dfs_leaf_four_03, dfs_leaf_four_04, dfs_leaf_four_05,
       dfs_leaf_four_06, dfs_leaf_four_07, dfs_leaf_four_08,
