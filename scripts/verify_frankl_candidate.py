@@ -40,6 +40,19 @@ TASKS = {
     ]),
 }
 
+TASKS.update({
+    "bits": ("Conjectures.FranklBits", ["FranklBits.card_bad_transport", "FranklBits.card_absent_with_rest"]),
+    "local-certificate": ("Conjectures.FranklLocalCertificate", ["FranklLocal.certificateCheck_abundance"]),
+    "large-bound": ("Conjectures.FranklLargeBound", ["Frankl.LargeBound.cardinal_absence_bound"]),
+    "large-selection": ("Conjectures.FranklFamilyCanonical", ["Frankl.Large.canonical_filtered_card"]),
+    "large-query": ("Conjectures.FranklLargeQuery", ["Frankl.Large.three_regular_point_absence_independent_nonreaders"]),
+    "large-probability": ("Conjectures.FranklLargeProbability", ["Frankl.Large.nonneighbor_event_bound"]),
+    "large-theorem": ("Conjectures.FranklLargeTheorem", ["Frankl.Large.large_generator_frequency"]),
+    "tree-counts": ("Conjectures.FranklTreeCounts", ["FranklTreeCounts.branchCounts_eq"]),
+    "tree-foundations": ("Conjectures.FranklTreeCertificate", ["FranklTreeCone.childrenCheck_sound", "FranklTreeCone.highGirthTreeCheck_sound"]),
+    "tree-k03": ("Conjectures.FranklTreeBoundK03", ["FranklTreeCone.Degree03.checked"]),
+})
+
 GATE_INPUTS = (
     "scripts/verify_frankl_candidate.py",
     "scripts/verify_lean_candidate.py",

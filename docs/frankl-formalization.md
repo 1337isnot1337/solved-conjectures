@@ -40,3 +40,19 @@ For the cyclic span-four theorem, the remaining work includes all finite
 window certificates and graph reductions, their cyclic-word semantics, the
 small-ground case, and the repeated-triple theorem used by the written proof.
 No published theorem is silently treated as an axiom.
+
+
+## Candidate source packet
+
+The next packet contains the full `k ≥ 15` endpoint in
+`FranklLargeTheorem.lean`, supported by actual incidence, canonical-selection,
+Harris-slice, query-independence, and exact-cardinality sources. These additions
+remain outside the accepted roots until their complete gates pass. The endpoint
+has the original size, regularity, and pairwise-intersection hypotheses; it does
+not assume the desired event probabilities or conditioning inequalities.
+
+The tree packet proves the three-state finite counting identities, conic
+propagation, all mixed-child root bounds, and integer-witness checker soundness.
+Its first generated degree-three certificate is included as a separate gated
+component. Other degree certificates are prepared locally. The actual finite
+graph/girth/boundary-conditioning bridge is still a separate obligation.
