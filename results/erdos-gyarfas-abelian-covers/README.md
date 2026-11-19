@@ -8,7 +8,7 @@ Run `python3 verify.py` and `python3 sharpness.py` with assertions enabled. The 
 
 ## Checked Lean components
 
-Lean status: complete for the stated abelian voltage-cover theorem and its
+**Lean status:** full for the stated abelian voltage-cover theorem and its
 sharpness example. The general minimum-degree-three conjecture remains
 outside this result.
 

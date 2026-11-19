@@ -16,16 +16,16 @@ It does not by itself complete the five-speed classification.
 Let `v : Fin 5 → ℕ` be positive and injective. Suppose every coordinate is
 at most `C`, and
 
-\[
-\operatorname{value}(v)<\frac15.
-\]
+```math
+\mathop{\mathrm{value}}(v)<\frac15.
+```
 
 Let `ps` be a finite set of primes, each greater than seven. Suppose every
 prime in `ps` has a complete modular root cover, and
 
-\[
+```math
 (4C)^{111}<\prod_{p\in ps}p.
-\]
+```
 
 The theorem `Loneliness.FiveSpeedRoot.root_integer_relation_lift` concludes
 `IntegerRootOutcome v`. This is the following disjunction:
@@ -53,10 +53,10 @@ The proof uses a list of 111 signed integer factors.
 
 The six factors are
 
-\[
+```math
 y-3x,\quad 3y-x,\quad y+4x,\quad 4y+x,
 \quad 3y+4x,\quad 4y+3x.
-\]
+```
 
 The same list applies when the two addends are equal. Since
 `x + y = z ≤ C`, each factor has absolute value at most `4C`. Bounding
@@ -102,9 +102,9 @@ forms.
 
 Every actual zero form is an additive relation
 
-\[
+```math
 v_i+v_j=v_k,
-\]
+```
 
 with `i ≠ k` and `j ≠ k`. The proof allows `i = j`.
 Two distinct zero forms give two distinct rows of the 50-row catalogue.
@@ -120,11 +120,11 @@ They therefore correspond to three distinct coordinates.
 Choose signs for these three coordinates. The proof forms a signed
 short relation `r` and a phase vector `φ` such that
 
-\[
+```math
 r\mathbin{\cdot}\varphi=0,
 \qquad
 v_i\equiv \varphi_i A\pmod p
-\]
+```
 
 on the support of `r`. Every phase on that support belongs to
 `{−4, −3, −1, 1, 3, 4}`. Consequently the associated short form is
@@ -135,9 +135,9 @@ representation `vᵢ + vⱼ = vₖ`. Their supports agree, including when the
 additive relation was initially allowed to repeat a coordinate. The
 phase values then satisfy
 
-\[
+```math
 \varphi_i+\varphi_j=\varphi_k.
-\]
+```
 
 The module `RootIntegerPhases` checks all 216 triples of the six possible
 phase values. Each valid triple has distinct first and second phase

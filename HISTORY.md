@@ -1,5 +1,10 @@
 # History
 
+## 2026-11-19 — GitHub proof rendering and results index
+
+- Simplified the README results table to directory links and Lean status emoji.
+- Standardized Markdown math for GitHub and kept native MathML on the reading site.
+
 ## 2026-11-19 — Conditional norm reductions for nine through thirteen speeds
 
 - Registered the actual primitive-speed norm cutoffs and prime-selection

@@ -23,11 +23,11 @@ natural speeds of length at most `m` has actual loneliness value at least
 
 Then Lean proves
 
-\[
+```math
 \sum_{i=1}^{k}v_i^2\le B_k
 \quad\text{and}\quad
 \exists p\in P_k\ \forall i,\ p\nmid v_i.
-\]
+```
 
 The literal cutoffs and finite prime sets are defined in
 [LonelinessModularTightPrimeDefs](../lean/Conjectures/LonelinessModularTightPrimeDefs.lean).

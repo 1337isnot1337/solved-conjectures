@@ -6,9 +6,9 @@ For example, consider positive distinct speeds $a,b,a+b$. Their maximum loneline
 
 For any admissible primitive relation $m\cdot v=0$ and starting positions $s$, the general limit is
 
-$$
+```math
 \frac12-\frac{\|m\cdot((1/2,\ldots,1/2)-s)\|_{\mathbb R/\mathbb Z}}{\|m\|_1}.
-$$
+```
 
 For each fixed tolerance, the exceptional fraction is $O(1/N)$ for speeds up to $N$, uniformly over starting positions. The proof also gives the limiting law for random starting positions and counts exact attainment in the unshifted full-support case. This is an unrefereed answer to the statistical question under the stated sampling model. [Proof](PROOF.md) · [Exact checks](verify.py)
 

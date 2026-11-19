@@ -25,7 +25,7 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 The realization direction is complete in Lean. For every `P ≥ 7`
 congruent to `1` or `5` modulo six, the formal proof constructs six
 distinct positive integer speeds with gcd one and exact global loneliness
-\((P-1)/(6P)\). This includes both infinite branches, the progression
+$`(P-1)/(6P)`$. This includes both infinite branches, the progression
 parameter zero, and the separate `P=11` case. Each value is attained,
 and the corresponding upper bound holds at every real time.
 

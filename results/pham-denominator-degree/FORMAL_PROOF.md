@@ -17,32 +17,32 @@ preimage arises from exactly one selected size. These statements are proved in
 
 Fix a reference length `L`. Write the beginning of a descending partition as
 
-\[
+```math
 \lambda_i=L-1-i+a_i,
 \qquad s=m-L.
-\]
+```
 
 The infinite state consists of a sequence of nonnegative integers `a`, an
 integer offset `s`, and a finite bound beyond which `a_i ≤ 1`. The bound only
 certifies a finite search; changing it does not change the move set or path
 counts. A legal selected index satisfies
 
-\[
+```math
 j+s\le a_j,
 \qquad j=0\quad\text{or}\quad a_j\ne a_{j-1}+1.
-\]
+```
 
 The second condition selects the first occurrence of a repeated physical part
 size. The reverse move gives
 
-\[
+```math
 a'_i=
 \begin{cases}
-a_i+1,&i<j,\\
-a_{i+1},&i\ge j,
+a_i+1,&i\lt j,
+\\ a_{i+1},&i\ge j,
 \end{cases}
 \qquad s'=a_j-j-1.
-\]
+```
 
 `DenominatorForest.lean`, `DenominatorHead.lean`, and
 `DenominatorFiniteLists.lean` prove these formulas and the correspondence between
@@ -53,9 +53,9 @@ Let `G_t(x)` count all finite reverse paths from an infinite state `t`, includin
 the empty path. Paths retain multiplicity even when their terminal infinite
 states agree. The defining equation is
 
-\[
+```math
 G_t=1+x\sum_{j\text{ legal in }t}G_{t\cdot j}.
-\]
+```
 
 The coefficient of degree `n` is the number of paths of exactly `n` moves.
 `DenominatorSeries.lean` proves this equation and the following uniqueness
@@ -68,10 +68,10 @@ coefficient degree.
 For a finite list `a`, let `a · j` be its reverse update with the selected entry
 deleted. Its length is exactly `length(a) - 1`. Define
 
-\[
+```math
 D(a,s)=1+x\sum_{j\text{ legal in the head}}D(a\cdot j,a_j-j-1),
 \qquad F(a)=D(a,-|a|).
-\]
+```
 
 Every recursive call shortens the list. These expressions are polynomials,
 defined directly by recursion on the head length. Adding the same nonnegative integer to
@@ -84,9 +84,9 @@ ineligible. The remainder of that branch therefore has series `D`. If a tail
 entry is selected, all head entries increase by one, preserving the separation
 and the value of `F`. The uniqueness principle gives the exact factorization
 
-\[
+```math
 G_{a\mid t}=F(a)G_t.
-\]
+```
 
 The offset in this formula is the tail offset minus the head length.
 `DenominatorSplice.lean` and `DenominatorDecomposition.lean` prove the necessary
@@ -102,16 +102,16 @@ the only possible tail move before a head move is selection of the first zero.
 It is legal exactly when `|a| + s = 0`. That move increments the head and
 creates the separated situation above. Define the second polynomial by
 
-\[
+```math
 B(a,s)=\mathbf 1_{|a|+s\le0}\,xF(a)
   +x\sum_{j\text{ legal in the head}}B(a\cdot j,a_j-j-1).
-\]
+```
 
 Induction on the head length proves
 
-\[
+```math
 G_{a\mid t_0,s}=D(a,s)+B(a,s)G_{t_1}.
-\]
+```
 
 This is `special_prefix_series` in `DenominatorSpecialTail.lean`. Its hypotheses
 are derived for every cyclic phase of either word in `DenominatorPeriodic.lean`.
@@ -122,30 +122,30 @@ For phase `q = 0`, take the empty head. For `1 ≤ q < p`, take the suffix of
 the word beginning at `q`. The initial offset is the preceding bit minus one.
 Let `D_q` and `B_q` be the corresponding polynomials. Then
 
-\[
+```math
 G_q=D_q+B_qG_1,
 \qquad (1-B_1)G_1=D_1.
-\]
+```
 
 The level series is
 
-\[
+```math
 H=(1-x)\sum_{q=0}^{p-1}G_q.
-\]
+```
 
 Consequently, with `A = Σ D_q` and `B = Σ B_q`,
 
-\[
+```math
 (1-B_1)H=(1-x)\bigl(A(1-B_1)+BD_1\bigr).
-\]
+```
 
 This identity holds in the ring of formal power series without a rationality
 assumption. The recursive polynomial certificate computes its four finite
 inputs. Put
 
-\[
+```math
 f=x^3+4x^4+6x^5.
-\]
+```
 
 For both words, `B_1 = f²`, so the common denominator is `1 - f²`. For the
 primary word, the computed numerator is `R(1 + f)`. The factor `1 + f` is a
@@ -159,9 +159,9 @@ The minimal-degree claim follows without any bound on a proposed alternative
 representation. If `QH = R` and `BH = A`, then `BR = QA`. A Bézout identity
 `UQ + VR = 1` gives
 
-\[
+```math
 B=Q(UB+VA).
-\]
+```
 
 Thus the reduced denominator `Q` divides every alternative denominator `B`.
 For nonzero `B`, its degree is at least the degree of `Q`. This argument is
@@ -178,9 +178,9 @@ component.
 The finite roots for a word of length `p` repeated `k` times have `L = pk` and
 parts
 
-\[
+```math
 \lambda_i^{(q)}=L-1-i+b_{q+i}
-\]
+```
 
 with zero parts omitted. `DenominatorCycles.lean` proves their positivity,
 descending order, exact length offset, and agreement with the infinite roots.
@@ -203,9 +203,9 @@ This is `pathCount_eq_actual` in `DenominatorLocality.lean`.
 
 For the cyclic roots it suffices that
 
-\[
+```math
 L\ge3n+5.
-\]
+```
 
 Thus the equality of finite and infinite path counts holds at every fixed
 depth for all sufficiently large repetitions. It is not a finite coefficient

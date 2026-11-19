@@ -6,11 +6,11 @@ import json
 from pathlib import Path
 import unittest
 
-from build_site import Builder, Document, Result, landing_lean_status, pandoc, READER
+from build_site import Builder, Document, Result, landing_lean_status, pandoc, read_markdown
 
 
 def doc(name, markdown):
-    ast = json.loads(pandoc(['--from', READER, '--to', 'json'], text=markdown))
+    ast = read_markdown([], text=markdown)
     return Document(name, '', ast, name, '')
 
 
@@ -24,9 +24,9 @@ class StatusChecks(unittest.TestCase):
 | --- | --- | --- |
 | L-solitaire | Complete | Stated result. |
 ''' + rows),
-            'README.md': doc('README.md', '''| Result | Finding | Lean |
-| --- | --- | --- |
-| [Solitaire](results/l-solitaire-limit-shapes/) | Result | ☑ |
+            'README.md': doc('README.md', '''| Problem | Lean |
+| --- | --- |
+| [Solitaire](results/l-solitaire-limit-shapes/) | ✅ |
 '''),
         }
         results = {
@@ -90,6 +90,21 @@ class StatusChecks(unittest.TestCase):
         for text in ['Some components exist.', '**Lean status:** maybe. No Lean formalization.']:
             with self.assertRaises(ValueError):
                 landing_lean_status(text)
+
+
+class MathRendering(unittest.TestCase):
+    def test_github_math_also_renders_as_mathml(self):
+        ast = read_markdown([], text=r"""Write $`|r|_N=\min(r\bmod N,(-r)\bmod N)`$.
+
+```math
+\|v\|_2\le B
+```
+""")
+        rendered = pandoc(['--from', 'json', '--to', 'html5', '--mathml'], text=json.dumps(ast))
+        self.assertIn('<math display="inline"', rendered)
+        self.assertIn('<math display="block"', rendered)
+        self.assertIn(r'>|r|_N=\min(r\bmod N,(-r)\bmod N)</annotation>', rendered)
+        self.assertIn(r'>\|v\|_2\le B</annotation>', rendered)
 
 
 if __name__ == '__main__':

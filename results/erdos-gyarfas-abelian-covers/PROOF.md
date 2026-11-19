@@ -1,6 +1,6 @@
 # Every abelian cover contains a power-of-two cycle of length at most 32
 
-Let $B$ have vertex set $\{0,1,2,3,4\}$ and oriented edges $(0,4),(4,1),(0,2),(0,3),(1,2),(1,3),(2,3)$. This is $K_4$ with the 0–1 edge subdivided. In an abelian voltage cover, give each oriented edge a label in an abelian group $A$. Traversing the edge adds its label to the sheet coordinate and the reverse traversal subtracts it. The choice of $A$ and the labels is arbitrary.
+Let $B$ have vertex set $`\{0,1,2,3,4\}`$ and oriented edges $(0,4),(4,1),(0,2),(0,3),(1,2),(1,3),(2,3)$. This is $K_4$ with the 0–1 edge subdivided. In an abelian voltage cover, give each oriented edge a label in an abelian group $A$. Traversing the edge adds its label to the sheet coordinate and the reverse traversal subtracts it. The choice of $A$ and the labels is arbitrary.
 
 The first four edges form a spanning tree. Translating the origin in each vertex fiber along its unique tree path sets the four tree labels to zero. The remaining three labels define a homomorphism from $\mathbb Z^3$ to $A$. Let $N$ be its kernel. A walk returns to its original sheet exactly when its signed chord count belongs to $N$. Two visits during a walk coincide exactly when their base vertices agree and the intervening signed chord count lies in $N$.
 

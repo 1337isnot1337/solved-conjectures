@@ -3,9 +3,9 @@
 ## Current complete verification
 
 The literal two-speed interval statement is checked for every natural
-\(p\ge3\) and every two positive integer speeds \(b,c\), with no upper bound:
-there is a real \(t\in[1/(p+2),1/p]\) such that both distances to the nearest
-integer are at least \(1/(p+2)\).
+$`p\ge3`$ and every two positive integer speeds $`b,c`$, with no upper bound:
+there is a real $`t\in[1/(p+2),1/p]`$ such that both distances to the nearest
+integer are at least $`1/(p+2)`$.
 
 The closure proves the measure estimate, endpoint divisibility, explicit
 perturbed reciprocal times, all eight small-parameter certificates, and the
@@ -19,8 +19,8 @@ and proves the lower bound after common dilation. The arithmetic criterion
 is the stated hypothesis of the result, not an unproved external theorem.
 
 The same closure checks the three-insertion obstruction: throughout
-\([1/6,1/3]\), the clearance of `[4,6,10]` is at most \(1/7\). It also checks
-the actual five-speed witness for `[1,2,4,6,10]` at \(3/8\).
+$`[1/6,1/3]`$, the clearance of `[4,6,10]` is at most $`1/7`$. It also checks
+the actual five-speed witness for `[1,2,4,6,10]` at $`3/8`$.
 
 At source commit `9f51470529423e8135c08de881cd56f5b1fd9a95`,
 [run 44524198858/job 135562276051](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44524198858/job/135562276051)

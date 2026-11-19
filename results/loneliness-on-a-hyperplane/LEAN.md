@@ -25,11 +25,11 @@ primitive-velocity restriction is imposed.
 development proves that this supremum is attained. The equivalent real-lift
 maximum is attained on `[0,1]`. The containing-torus profile is
 
-\[
+```math
 L_m(s)=\frac12-
  \frac{\|m\cdot((1/2,\ldots,1/2)-s)\|_{\mathbb R/\mathbb Z}}
       {\sum_i|m_i|}.
-\]
+```
 
 The exact hyperplane maximum has an explicit attaining point. Every
 orthogonal integer velocity satisfies `L(v,s) ≤ L_m(s)` at every shift.
@@ -78,12 +78,12 @@ For the endpoint formula only, the shift is zero and every normal
 coordinate is nonzero. Set `Q=2` if `A` is even and `Q=A` otherwise.
 The verified limit is
 
-\[
+```math
 \lim_{N\to\infty}\Pr(L(v,0)=L_m(0))
  =
  \frac{\varphi(Q)}
  {Q^{k-1}\prod_{p\mid Q}(1-p^{-(k-1)})}.
-\]
+```
 
 The theorem includes `k=2`. The residue argument proves the canonical
 point's order and primitivity, the exact hit criterion, the original-box

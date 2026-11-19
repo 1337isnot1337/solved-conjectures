@@ -6,7 +6,7 @@ Run `python3 two_additions.py`. The verifier exhausts the finite cases left by t
 
 ## Lean verification
 
-The complete statement in [the proof note](PROOF.md) is Lean-verified.
+**Lean status:** full. Lean verifies the complete statement in [the proof note](PROOF.md).
 The proof includes every `p ≥ 3`, both arbitrary positive inserted speeds,
 the measure and divisibility arguments, all eight small-parameter
 certificates and their proved finite bounds, the Goddyn–Wong arithmetic

@@ -27,6 +27,9 @@ definitions and an external publication remains subject to mathematical review.
 Published mathematical theorems that have not been formalized are hypotheses,
 never additional Lean axioms.
 
+The README uses ✅ for complete formalization of the stated result, 🟡 for
+partial formalization, and ⬜ for a result without Lean formalization.
+
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
 | L-solitaire | Complete for both the counterexample and corrected theorem | Actual moves for arbitrary layer sets containing 1; all recurrent states; classification and maximality of stable references; one-column interlacing; the explicit uniform profile bound and convergence for every diverging scale. The separate fixed-scale counterexample remains checked. |
@@ -873,10 +876,10 @@ the hosted workflow are tracked separately from these local component checks.
 `RectangleAsymptotics.uniform_log_asymptotic` proves that one height threshold
 works for every larger height and every width `w ≥ h`:
 
-\[
+```math
 \left|\frac{\log p(h,w)}{\sqrt{hw\log\min(h,(hw)^{1/4})}}
       -\pi\sqrt{2/3}\right|<\varepsilon.
-\]
+```
 
 The count uses finite, integer-sided, axis-parallel blocks at arbitrary real
 positions. Rotation and arrangement do not distinguish block multisets.
@@ -1770,17 +1773,17 @@ a 14-theorem standard-axiom audit, and unchanged pinned-kernel replay.
 ## Exact fixed character-window witness
 
 The literal witness from the Motzkin note is now checked and registered.
-For an actual measurable additive circle character \(\chi\), write
-\(h=\min(\|\chi(a)\|,\|\chi(b)\|)\). The set
-\(\chi^{-1}([0,h))\) is measurable, avoids both differences, and has measure
-exactly \(h\) under the given invariant probability measure. The proof also
-covers finite character images and \(h=0\); it does not replace the fixed
+For an actual measurable additive circle character $`\chi`$, write
+$`h=\min(\|\chi(a)\|,\|\chi(b)\|)`$. The set
+$`\chi^{-1}([0,h))`$ is measurable, avoids both differences, and has measure
+exactly $`h`$ under the given invariant probability measure. The proof also
+covers finite character images and $`h=0`$; it does not replace the fixed
 window by a separately shifted or abstract maximizing set.
 
 The proof integrates an exact representative identity. For a general endpoint
-\(0\le h\le1\), the measure lemma explicitly requires that \(h\) lie in the
+$`0\le h\le1`$, the measure lemma explicitly requires that $`h`$ lie in the
 character image. For the stated minimum-distance endpoint, an actual preimage
-is constructed from one of \(a,-a,b,-b\), so the final witness theorem has no
+is constructed from one of $`a,-a,b,-b`$, so the final witness theorem has no
 extra endpoint-image hypothesis.
 
 Required endpoints are `Motzkin.characterWindow_measure`,
@@ -2114,15 +2117,19 @@ canonical tuple count for every natural `n`, including the small cases.
 The final analytic proof retains that definition throughout.
 
 Writing
-\[
+
+```math
 A=\frac{\pi^2}{12}+\frac{(\log 2)^2}{2},
-\]
+```
+
 `LineSize.CoefficientAsymptotic.lineSizeCount_sharp_ratio` proves that the
 ratio of this actual count to
-\[
+
+```math
 \frac{3}{16\sqrt{6\pi}\,A^{1/4}}\,
 n^{-1/4}\exp(2\sqrt{An})
-\]
+```
+
 tends to one. The companion `lineSizeCount_sharp_asymptotic` states the
 asymptotic equivalence directly. All local-limit, domination, tail, and
 coefficient-extraction inputs are discharged in the import closure.
@@ -2175,9 +2182,9 @@ Both exact closures at `20e04e589d227086cc926579fc70806594d8f817` passed strict 
 ## Complete unrestricted two-speed insertion theorem
 
 The literal two-speed interval statement is checked for every natural
-\(p\ge3\) and every two positive integer speeds \(b,c\), with no upper bound:
-there is a real \(t\in[1/(p+2),1/p]\) such that both distances to the nearest
-integer are at least \(1/(p+2)\).
+$`p\ge3`$ and every two positive integer speeds $`b,c`$, with no upper bound:
+there is a real $`t\in[1/(p+2),1/p]`$ such that both distances to the nearest
+integer are at least $`1/(p+2)`$.
 
 The closure proves the measure estimate, endpoint divisibility, explicit
 perturbed reciprocal times, all eight small-parameter certificates, and the
@@ -2191,8 +2198,8 @@ and proves the lower bound after common dilation. The arithmetic criterion
 is the stated hypothesis of the result, not an unproved external theorem.
 
 The same closure checks the three-insertion obstruction: throughout
-\([1/6,1/3]\), the clearance of `[4,6,10]` is at most \(1/7\). It also checks
-the actual five-speed witness for `[1,2,4,6,10]` at \(3/8\).
+$`[1/6,1/3]`$, the clearance of `[4,6,10]` is at most $`1/7`$. It also checks
+the actual five-speed witness for `[1,2,4,6,10]` at $`3/8`$.
 
 At source commit `9f51470529423e8135c08de881cd56f5b1fd9a95`,
 [run 44524198858/job 135562276051](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44524198858/job/135562276051)
@@ -2223,7 +2230,7 @@ this result. Verification of the merged accepted package is separate.
 For every natural `P ≥ 7` with `P % 6 = 1` or `P % 6 = 5`,
 `Loneliness.SixSpectrumRealization.realizes` constructs a list of exactly
 six distinct positive integer speeds with gcd one and actual loneliness
-value \((P-1)/(6P)\), strictly below \(1/6\). It assumes no runner bound,
+value $`(P-1)/(6P)`$, strictly below $`1/6`$. It assumes no runner bound,
 critical-plane classification or finite-exhaustion statement.
 
 The residue-one branch uses the proved consecutive family. The residue-five

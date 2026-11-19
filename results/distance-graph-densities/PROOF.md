@@ -8,13 +8,13 @@ A [complete classification](CLASSIFICATION.md) gives the corrected gap-seven for
 
 ## Statements
 
-**Theorem 1.** For $k\ge6$, $k\notin\{7,12\}$, the following table gives $\alpha(\{1,k,k+5\})$. An entry $(P,C)$ denotes the number $(3P-C)/(7P)$.
+**Theorem 1.** For $k\ge6$, $`k\notin\{7,12\}`$, the following table gives $`\alpha(\{1,k,k+5\})`$. An entry $(P,C)$ denotes the number $(3P-C)/(7P)$.
 
 | $k\bmod 7$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|---|
 | Entry | $(k+6,4)$ | $3/7$ | $(k+6,3)$ | $(2k+5,5)$ | $(k+6,2)$ | $(k+6,5)$ | $(k+6,1)$ |
 
-**Theorem 2.** $\alpha(\{1,50,57\})=25/58$. The residue-$5$ branch of Conjecture 39 predicts $22/51$, larger by $1/2958$. The authors' supplementary table already gives $25/58$ as a **lower bound**, in red in row 49, column 7. The upper certificate below proves equality. [Original data and color key, pp. 1–2](https://lidicky.name/dstolee/data/CGHRS13-DistanceData.pdf)
+**Theorem 2.** $`\alpha(\{1,50,57\})=25/58`$. The residue-$`5`$ branch of Conjecture 39 predicts $22/51$, larger by $1/2958$. The authors' supplementary table already gives $25/58$ as a **lower bound**, in red in row 49, column 7. The upper certificate below proves equality. [Original data and color key, pp. 1–2](https://lidicky.name/dstolee/data/CGHRS13-DistanceData.pdf)
 
 ## Two elementary reductions
 
@@ -24,7 +24,7 @@ If a periodic sequence of integers has negative period sum, it has a cyclic shif
 
 ## The constructions for Theorem 1
 
-If $t=a/P$, choose all integers $x$ whose residue $ax\bmod P$ belongs to $[0,h)$. This avoids $D$ whenever the residues of $ad$ are in $[h,P-h]$ for $d\in D$. When $\gcd(a,P)$ divides $h$, its density is $h/P$.
+If $t=a/P$, choose all integers $x$ whose residue $ax\bmod P$ belongs to $[0,h)$. This avoids $D$ whenever the residues of $ad$ are in $`[h,P-h]`$ for $d\in D$. When $\gcd(a,P)$ divides $h$, its density is $h/P$.
 
 For residues $0,2,4,5,6$ in the table, set $P=k+6$ and $a=h=(3P-C)/7$. This is integral. The residues for $1$ and $k+5$ are $\pm h$, and $kh\equiv-6h\equiv h+C\pmod P$. The required inequality $2h+C\le P$ is equivalent to $5C\le P$. It holds at the smallest admissible $k$ in each of those five classes, respectively $14,9,11,19,6$, and hence thereafter.
 
@@ -34,23 +34,23 @@ For residue $1$, use $P=7$, $a=h=3$. All three forbidden differences are $\pm1$ 
 
 ## Two cycle counts
 
-Write $x_i\in\{0,1\}$ for the indicators of a periodic independent set. Each of the following vertex lists forms a seven-cycle, using five edges of length 1 and one edge of each of the other two lengths:
+Write $`x_i\in\{0,1\}`$ for the indicators of a periodic independent set. Each of the following vertex lists forms a seven-cycle, using five edges of length 1 and one edge of each of the other two lengths:
 
 - $i,i+1,\ldots,i+5,i+k+5$.
 - $i+k,i+k+1,\ldots,i+k+5,i$.
 
 Each cycle contains at most three occupied vertices. Define its two nonnegative integer deficits by
 
-$$
+```math
  E_i=3-\sum_{j=0}^5x_{i+j}-x_{i+k+5},\qquad
  F_i=3-\sum_{j=0}^5x_{i+k+j}-x_i,\qquad d_i=E_i+F_i.
-$$
+```
 
 At density $\rho$, the average of $d_i$ is $6-14\rho$. In each table entry with $C>0$, put $H=2C$. A density exceeding the proposed bound makes the average strictly less than $H/P$. Apply the negative-prefix reduction to $P d_i-H$. After shifting, a necessary condition is
 
-$$
+```math
  P\sum_{i=0}^{t-1}d_i < Ht\qquad(1\le t\le P). \tag{1}
-$$
+```
 
 It remains to rule out a finite word satisfying (1) for every admissible $k$. The reduction to finitely many values of $k$ below applies to these words directly.
 
@@ -64,19 +64,19 @@ For a single pair of rows there are 99 states. Consider only transitions of zero
 
 ## Shortening a hypothetical path
 
-Suppose a path exists for $k>1600$. Set $k'=k-7H$, which has the same residue modulo 7, and $P'=Rk'+e$. We shall remove seven columns in each of $H$ disjoint segments, using identical cuts in all rows. Give segment $b$, $0\le b<H$, the transition indices from $\lfloor bk/H\rfloor$ inclusive to $\lfloor(b+1)k/H\rfloor$ exclusive. Set aside the first and last 13 transitions of every segment. Each remaining interior has length at least
+Suppose a path exists for $k>1600$. Set $k'=k-7H$, which has the same residue modulo 7, and $P'=Rk'+e$. We shall remove seven columns in each of $H$ disjoint segments, using identical cuts in all rows. Give segment $b$, $0\le b\lt H$, the transition indices from $\lfloor bk/H\rfloor$ inclusive to $\lfloor(b+1)k/H\rfloor$ exclusive. Set aside the first and last 13 transitions of every segment. Each remaining interior has length at least
 
-$$
+```math
  \lfloor k/H\rfloor-26\ \ge\ 134\ \ge\ 13H
-$$
+```
 
 because $H\le10$. The total cost over the row pairs in the first $k$ columns is at most $H-1$ by (1) at $P$ and nonnegativity. In any segment interior, at most $H-1$ columns can have positive cost in any pair. If all zero runs had length at most 12, the interior would have length at most $12H+(H-1)$. Hence it contains 13 consecutive zero columns, and the preceding state calculation permits deletion of a closed seven-step subwalk. Do this once in every segment. The endpoint states, the seam equalities and the remembered first $e$ appended bits survive. All removed costs are zero. The $e$ final transitions also survive.
 
-For completeness the shrinking of the strict prefix bounds matters. For a nonnegative integer cost sequence, (1) is equivalent to the cumulative cost being at most $j-1$ at each integer time $t_j=\lfloor jP/H\rfloor$, $1\le j\le H$. Indeed, for any $t$ use $j=\lceil Ht/P\rceil$ and monotonicity. Write $jR=bH+u$, $0\le u<H$. Then
+For completeness the shrinking of the strict prefix bounds matters. For a nonnegative integer cost sequence, (1) is equivalent to the cumulative cost being at most $j-1$ at each integer time $t_j=\lfloor jP/H\rfloor$, $1\le j\le H$. Indeed, for any $t$ use $j=\lceil Ht/P\rceil$ and monotonicity. Write $jR=bH+u$, $0\le u\lt H$. Then
 
-$$
+```math
  t_j=bk+\left\lfloor(uk+je)/H\right\rfloor .
-$$
+```
 
 Its column within row $b$ is within $e$ positions to the right of $\lfloor uk/H\rfloor$. No cut touches this protected region. When $j=H$ the point is in the final extension, which is also protected. Exactly $7(bH+u)=7jR$ positions in row order have been removed before this time. Its new time is $t_j-7jR=\lfloor jP'/H\rfloor$, with the same cumulative cost. Thus the shortened path satisfies all the required inequalities for $k'$.
 

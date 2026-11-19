@@ -1,6 +1,6 @@
 # Equality cases for eleven through fourteen lonely runners
 
-For eleven, twelve and thirteen runners the consecutive speeds are the unique primitive equality case. For fourteen runners there is one additional set, $\{1,\ldots,11,13,24\}$. These classifications use the binary sieve results of Sungkawichai–Trakulthongchai and Allikvere.
+For eleven, twelve and thirteen runners the consecutive speeds are the unique primitive equality case. For fourteen runners there is one additional set, $`\{1,\ldots,11,13,24\}`$. These classifications use the binary sieve results of Sungkawichai–Trakulthongchai and Allikvere.
 
 [Proof](PROOF.md) · [Verifier](verify.py) · [Catalogue](../../CONTENTS.md)
 

@@ -11,10 +11,10 @@ list is `1`. Let `N` be its last coordinate and let `B` be a positive
 integer. If `B^n < N`, then there exist an integer vector `w` and a real
 number `t` such that
 
-\[
-  0<t<1,\qquad
+```math
+  0\lt t<1,\qquad
   |w_i-t v_i|<1/B\quad\text{for every }i,
-\]
+```
 
 and `w` is not a real scalar multiple of `v`.
 
@@ -23,19 +23,19 @@ later makes the same argument apply to every entry.
 
 For `0 ≤ k < N`, consider the `n` exact integer labels
 
-\[
+```math
   \left\lfloor \frac{B(kv_i\bmod N)}{N}\right\rfloor,
-  \qquad 0\le i<n.
-\]
+  \qquad 0\le i\lt n.
+```
 
 Each label belongs to `{0,…,B−1}`, so there are at most `B^n` label vectors.
 Two indices `k<l<N` have the same label vector. Set
 
-\[
+```math
   t=\frac{l-k}{N},\qquad
   w_i=\left\lfloor\frac{lv_i}{N}\right\rfloor
       -\left\lfloor\frac{kv_i}{N}\right\rfloor.
-\]
+```
 
 The fractional parts for `k` and `l` lie in the same interval of length
 `1/B`. Their difference gives the displayed approximation bound. For the
@@ -56,10 +56,10 @@ every coordinate of `v` is positive, then `F` is coordinate-free.
 
 The verified coefficient-rounding theorem gives
 
-\[
-  \operatorname{spaceValue}(\operatorname{realSpan}F)
-  \le \operatorname{value}(v)+\frac{1}{2B}.
-\]
+```math
+  \mathop{\mathrm{spaceValue}}(\mathop{\mathrm{realSpan}}F)
+  \le \mathop{\mathrm{value}}(v)+\frac{1}{2B}.
+```
 
 The estimate applies to the full real plane. It is not restricted to the
 sample times used to construct `w`.
@@ -74,17 +74,17 @@ For a primitive positive four-speed tuple with value below `2/9`, take
 `B=18`. If its last coordinate exceeded `18^3`, the constructed plane
 would satisfy
 
-\[
-  \operatorname{spaceValue}(F)
-  \le \operatorname{value}(v)+\frac1{36}
+```math
+  \mathop{\mathrm{spaceValue}}(F)
+  \le \mathop{\mathrm{value}}(v)+\frac1{36}
   <\frac29+\frac1{36}=\frac14,
-\]
+```
 
 which contradicts that plane lower bound. Permutation invariance gives
 
-\[
+```math
   v_i\le 5832\quad\text{for every coordinate }i.
-\]
+```
 
 The verified exported interface is:
 
@@ -107,9 +107,9 @@ For five speeds, take `B=23`. The constructed plane then has value
 strictly below `2/9` whenever the original line has value below `1/5`,
 because
 
-\[
+```math
   \frac15+\frac1{46}<\frac29.
-\]
+```
 
 The finite critical-plane theorem classifies such planes, conditional on
 the four-speed gap. Every coordinate-free integer direction in an

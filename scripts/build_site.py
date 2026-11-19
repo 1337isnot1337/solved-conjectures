@@ -170,6 +170,19 @@ def pandoc(arguments, *, text=None) -> str:
     return result.stdout
 
 
+def read_markdown(arguments, *, text=None) -> dict:
+    ast = json.loads(pandoc(["--from", READER, "--to", "json", *arguments], text=text))
+    for node in nodes(ast["blocks"]):
+        if node.get("t") == "CodeBlock" and node["c"][0][1] == ["math"]:
+            tex = node["c"][1]
+            node.update(t="Para", c=[{"t": "Math", "c": [{"t": "DisplayMath"}, tex]}])
+        elif node.get("t") == "Math" and node["c"][0]["t"] == "InlineMath":
+            tex = node["c"][1]
+            if tex.startswith("`") and tex.endswith("`"):
+                node["c"][1] = tex[1:-1]
+    return ast
+
+
 @dataclass
 class Document:
     source: str
@@ -227,7 +240,7 @@ class Builder:
         return str(path.with_suffix("")).lower() + "/"
 
     def read_document(self, source: str) -> Document:
-        ast = json.loads(pandoc(["--from", READER, "--to", "json", str(ROOT / source)]))
+        ast = read_markdown([str(ROOT / source)])
         title = next((plain(node) for node in ast["blocks"] if node.get("t") == "Header"), PurePosixPath(source).stem)
         lastmod = git("log", "-1", "--format=%cI", "--", source)
         return Document(source, self.route_for(source), ast, SOURCE_TITLES.get(source, clean_text(title)), lastmod)
@@ -270,7 +283,7 @@ class Builder:
                         status_text = plain(cells[2][-1])
                         if "◐" in status_text or "🟡" in status_text or "Partial" in status_text:
                             status = "partial"
-                        elif "☑" in status_text or "✅" in status_text or "Formalized" in status_text:
+                        elif "☑" in status_text or "✅" in status_text or "Formalized" in status_text or "Complete" in status_text:
                             status = "full"
                         elif "☐" in status_text or "⬜" in status_text or "Not formalized" in status_text:
                             status = "none"
@@ -375,10 +388,12 @@ class Builder:
                 for row in body[3]:
                     cells = row[1]
                     slug = self.result_slug(cells[0][-1])
-                    if slug not in results or len(cells) < 3:
+                    if slug not in results:
                         continue
-                    text = plain(cells[2][-1])
-                    status = "partial" if "◐" in text or "🟡" in text else "full" if "☑" in text or "✅" in text else "none" if "☐" in text or "⬜" in text else None
+                    if len(cells) != 2:
+                        raise ValueError(f"README result row needs two columns: {slug}")
+                    text = clean_text(plain(cells[1][-1]))
+                    status = {"✅": "full", "🟡": "partial", "⬜": "none"}.get(text)
                     if status != results[slug].status:
                         raise ValueError(f"Stale README Lean status for {slug}: {text!r}; expected {results[slug].status}")
                     readme_checked.add(slug)
