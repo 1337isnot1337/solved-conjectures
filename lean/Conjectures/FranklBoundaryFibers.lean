@@ -22,8 +22,8 @@ def Boundary (G : SimpleGraph V) (inside boundary : Set V) : Prop :=
     ∀ u, u ∉ inside → ∀ v, v ∈ inside → G.Adj u v → v ∈ boundary
 
 structure Local (G : SimpleGraph V) (inside boundary reference selected : Set V) : Prop where
-  inside : selected ⊆ inside
-  boundary : selected ∩ boundary = reference ∩ boundary
+  inside_subset : selected ⊆ inside
+  boundary_agrees : selected ∩ boundary = reference ∩ boundary
   independent : G.IsIndepSet selected
   dominates : ∀ v ∈ inside, v ∉ selected →
     ∃ w ∈ (reference \ inside) ∪ selected, G.Adj v w
@@ -142,11 +142,11 @@ theorem join_maximal {G : SimpleGraph V} {inside boundary reference selected : S
   · intro u hu v hv hne hadj
     rcases hu with hu | hu <;> rcases hv with hv | hv
     · exact href.1 hu.1 hv.1 hne hadj
-    · have hvb := hb.2 u hu.2 v (hlocal.inside hv) hadj
-      have hvr := (mem_iff_of_boundary_eq hlocal.boundary hvb).mp hv
+    · have hvb := hb.2 u hu.2 v (hlocal.inside_subset hv) hadj
+      have hvr := (mem_iff_of_boundary_eq hlocal.boundary_agrees hvb).mp hv
       exact href.1 hu.1 hvr hne hadj
-    · have hub := hb.2 v hv.2 u (hlocal.inside hu) hadj.symm
-      have hur := (mem_iff_of_boundary_eq hlocal.boundary hub).mp hu
+    · have hub := hb.2 v hv.2 u (hlocal.inside_subset hu) hadj.symm
+      have hur := (mem_iff_of_boundary_eq hlocal.boundary_agrees hub).mp hu
       exact href.1 hur hv.1 hne hadj
     · exact hlocal.independent hu hv hne hadj
   · intro v hnot
@@ -157,7 +157,7 @@ theorem join_maximal {G : SimpleGraph V} {inside boundary reference selected : S
       refine ⟨w, ?_, hadj⟩
       by_cases hwi : w ∈ inside
       · have hwb := hb.2 v hi w hwi hadj
-        exact Or.inr ((mem_iff_of_boundary_eq hlocal.boundary hwb).mpr hw)
+        exact Or.inr ((mem_iff_of_boundary_eq hlocal.boundary_agrees hwb).mpr hw)
       · exact Or.inl ⟨hw, hwi⟩
 
 def globalLocalEquiv {G : SimpleGraph V} {inside boundary reference : Set V}
@@ -167,14 +167,14 @@ def globalLocalEquiv {G : SimpleGraph V} {inside boundary reference : Set V}
   toFun selected := ⟨selected.1 ∩ inside,
     restrict_local hb.1 selected.2.1 selected.2.2.1 selected.2.2.2⟩
   invFun selected := ⟨(reference \ inside) ∪ selected.1,
-    join_maximal hb href selected.2, outside_join selected.2.inside,
-    (boundary_join hb.1).trans selected.2.boundary⟩
+    join_maximal hb href selected.2, outside_join selected.2.inside_subset,
+    (boundary_join hb.1).trans selected.2.boundary_agrees⟩
   left_inv selected := by
     apply Subtype.ext
     exact reconstruct selected.2.2.1
   right_inv selected := by
     apply Subtype.ext
-    exact inside_join selected.2.inside
+    exact inside_join selected.2.inside_subset
 
 theorem fiber_card_eq {G : SimpleGraph V} {inside boundary reference : Set V}
     (hb : Boundary G inside boundary)

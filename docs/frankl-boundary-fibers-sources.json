@@ -2,7 +2,7 @@
   "schema": "frankl-boundary-fibers-v1",
   "root": "Conjectures.FranklBoundaryBall",
   "sources": {
-    "lean/Conjectures/FranklBoundaryFibers.lean": "81762f1fd8fa300b8177e66a11936c4fcfd1b65c2b20af0b005b4b21b3f094a6",
+    "lean/Conjectures/FranklBoundaryFibers.lean": "ef4a67aac3a056e02078df3f3afb310bf3604af0324b5254d13f6490be0d3f2e",
     "lean/Conjectures/FranklBoundaryBall.lean": "50fd64714167be51906c28e19e9a7ddab11c24a09a8530cdc28f81a809324f13"
   },
   "required_endpoints": [
