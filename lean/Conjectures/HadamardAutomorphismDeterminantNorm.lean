@@ -54,7 +54,7 @@ theorem determinant_divisible_of_gram_two_primes
   obtain ⟨u, hu⟩ := hd
   refine ⟨star u, ?_⟩
   have h := congrArg star hu
-  simpa only [star_star, star_mul, star_natCast, mul_comm] using h
+  simpa only [star_star, star_mul, star_ofNat, mul_comm] using h
 
 /-- This quotient is constructed from divisibility; it is not an assumed
 algebraic integer of the forbidden norm. -/
@@ -70,7 +70,7 @@ theorem determinant_quotient_norm_cube (X : Matrix I I R)
   have hcancel : (599 : R) ^ 2 * (u * star u) = (599 : R) ^ 2 * 599 ^ 3 := by
     calc
       (599 : R) ^ 2 * (u * star u) = star X.det * X.det := by
-        rw [hu, star_mul, star_natCast]
+        rw [hu, star_mul, star_ofNat]
         ring
       _ = (599 : R) ^ 5 := hd
       _ = (599 : R) ^ 2 * 599 ^ 3 := by ring

@@ -9,7 +9,7 @@ noncomputable section
 
 namespace HadamardAutomorphism
 
-open NumberField IsCyclotomicExtension Ideal
+open NumberField IsCyclotomicExtension Ideal UniqueFactorizationMonoid
 open scoped Pointwise
 
 variable (K : Type*) [Field K] [NumberField K]
@@ -39,7 +39,7 @@ theorem prime_liesOver599_of_contains_divisor (u : 𝓞 K) (hu : u ≠ 0)
   apply Ideal.IsMaximal.eq_of_le
     (inferInstance : (Ideal.span {(599 : ℤ)}).IsMaximal)
     Ideal.IsPrime.ne_top'
-  rw [Ideal.span_singleton_le_iff_mem, Ideal.mem_comap, algebraMap_int_eq, map_natCast]
+  rw [Ideal.span_singleton_le_iff_mem, Ideal.under_def, Ideal.mem_comap, map_ofNat]
   exact hpP
 
 theorem frobenius479_fixes_divisor_ideal (u : 𝓞 K) (hu : u ≠ 0)
@@ -69,7 +69,7 @@ theorem frobenius479_associated (u : 𝓞 K) (hu : u ≠ 0)
     (r : ℕ) (hu599 : u ∣ (599 : 𝓞 K) ^ r) :
     Associated (frobenius479 K • u) u := by
   apply Ideal.span_singleton_eq_span_singleton.mp
-  simpa only [Ideal.smul_closure, Set.smul_singleton] using
+  simpa only [Ideal.smul_closure, Set.smul_set_singleton] using
     frobenius479_fixes_divisor_ideal K u hu r hu599
 
 end HadamardAutomorphism

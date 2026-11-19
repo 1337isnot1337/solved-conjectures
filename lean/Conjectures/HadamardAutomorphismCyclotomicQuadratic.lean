@@ -48,7 +48,7 @@ theorem quadraticFixedField479_coordinates (v : K) (hv : v ∈ quadraticFixedFie
   have h := B.sum_repr w
   have he : B.repr w 0 • (1 : quadraticFixedField479 K) + B.repr w 1 • g = w := by
     simpa only [Fin.sum_univ_two, B, coe_basisOfLinearIndependentOfCardEqFinrank,
-      Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons] using h
+      Matrix.cons_val_zero, Matrix.cons_val_one] using h
   have he' := congrArg (fun x : quadraticFixedField479 K => (x : K)) he
   simpa only [IntermediateField.coe_add, Algebra.smul_def, mul_one,
     IntermediateField.coe_algebraMap_apply, quadraticGeneratorInFixed479, g, w] using he'.symm

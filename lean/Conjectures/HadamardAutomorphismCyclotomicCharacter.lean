@@ -34,7 +34,7 @@ theorem integerCyclotomicChar479_coe (a : ZMod 479) :
 @[simp] theorem integerCyclotomicChar479_one :
     integerCyclotomicChar479 K 1 = integerZeta479 K := by
   change (integerZeta479 K) ^ (1 : ZMod 479).val = integerZeta479 K
-  norm_num
+  rw [ZMod.val_one'' (n := 479) (by decide), pow_one]
 
 theorem integerCyclotomicChar479_primitive :
     (integerCyclotomicChar479 K).IsPrimitive :=
@@ -60,6 +60,7 @@ theorem integerCyclotomicChar479_norm (a : ZMod 479) :
     neg_add_cancel, AddChar.map_zero_eq_one]
 
 /-- The intrinsic involution as an explicitly chosen star structure on the field. -/
+@[instance_reducible]
 def cyclotomicStarRing479 : StarRing K where
   star := conjugation479 K
   star_involutive := conjugation479_apply_apply K
@@ -68,6 +69,7 @@ def cyclotomicStarRing479 : StarRing K where
 
 /-- The same involution on the ring of integers. Install this structure locally
 when applying the generic Fourier theorems. -/
+@[instance_reducible]
 def integerCyclotomicStarRing479 : StarRing (𝓞 K) where
   star x := conjugation479 K • x
   star_involutive x := by

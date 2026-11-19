@@ -13,6 +13,8 @@ namespace HadamardAutomorphism
 
 open scoped BigOperators
 
+local instance : Fact (1 < (479 : ℕ)) := ⟨by decide⟩
+
 abbrev StandardIndex := Option (Fin 5 × ZMod 479)
 
 def standardShift : Equiv.Perm StandardIndex where
@@ -50,10 +52,13 @@ theorem standardShift_pow_some (k : ℕ) (i : Fin 5) (a : ZMod 479) :
       Nat.cast_add, Nat.cast_one, add_assoc]
 
 theorem standardShift_pow_479 : standardShift ^ 479 = 1 := by
-  ext r
+  apply Equiv.ext
+  intro r
   cases r with
-  | none => simp
-  | some r => rcases r with ⟨i, a⟩; simp [standardShift_pow_some]
+  | none => simp only [standardShift_pow_none, Equiv.Perm.one_apply]
+  | some r =>
+    rcases r with ⟨i, a⟩
+    simp only [standardShift_pow_some, ZMod.natCast_self, add_zero, Equiv.Perm.one_apply]
 
 theorem standardShift_fixed_iff (r : StandardIndex) : standardShift r = r ↔ r = none := by
   cases r with
@@ -91,7 +96,8 @@ theorem exists_standard_cycle_labels [Fintype ι] [DecidableEq ι] (σ : Equiv.P
     Classical.choice (Fintype.card_eq.mp (hcard.trans standardIndex_card.symm))
   let ρ : Equiv.Perm StandardIndex := e₀.permCongrHom σ
   have hρ : ρ ^ 479 = 1 := by
-    simpa [ρ] using congrArg e₀.permCongrHom hσ
+    change (e₀.permCongrHom σ) ^ 479 = 1
+    rw [← map_pow, hσ, map_one]
   let ef : Function.fixedPoints σ ≃ Function.fixedPoints ρ :=
     e₀.subtypeEquiv (by
       intro i

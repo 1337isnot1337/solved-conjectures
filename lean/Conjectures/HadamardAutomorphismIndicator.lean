@@ -23,7 +23,7 @@ def indicatorFourierBlock (H : Matrix (OrbitIndex I G) (OrbitIndex I G) R)
     (χ : AddChar G R) : Matrix I I R :=
   fun i j => ∑ a ∈ negativeBlock H i j, χ a
 
-omit [StarRing R] in
+omit [StarRing R] [Fintype I] [DecidableEq I] in
 theorem fourierBlock_eq_indicator
     (H : Matrix (OrbitIndex I G) (OrbitIndex I G) R)
     (χ : AddChar G R) (hχ : χ ≠ 1)
@@ -35,14 +35,14 @@ theorem fourierBlock_eq_indicator
   have hterm (a : G) : H (some (i, 0)) (some (j, a)) * χ a =
       χ a - 2 * (if H (some (i, 0)) (some (j, a)) = -1 then χ a else 0) := by
     rcases hsign i j a with h | h
-    · simp [h, one_ne_neg_one]
+    · norm_num [h]
     · simp [h]
       ring
   simp only [fourierBlock, hterm, Finset.sum_sub_distrib]
   rw [nontrivial_character_sum_zero χ hχ, ← Finset.mul_sum]
   simp [indicatorFourierBlock, negativeBlock, Finset.sum_filter, smul_eq_mul]
 
-theorem indicator_gram_599
+theorem indicator_gram_599 [DecidableEq G]
     (H : Matrix (OrbitIndex I G) (OrbitIndex I G) R)
     (χ : AddChar G R) (hχ : χ ≠ 1)
     (hunit : ∀ a, star (χ a) * χ a = 1)

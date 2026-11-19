@@ -52,7 +52,8 @@ TASKS = {'arithmetic': ('Conjectures.HadamardAutomorphismArithmeticCandidates',
               ['HadamardAutomorphism.support_norm_divisible_forces_constant',
                'HadamardAutomorphism.indicator_nonzero_mod_prime599',
                'HadamardAutomorphism.cyclic_integer_hadamard_impossible',
-               'HadamardAutomorphism.hadamard_signed_pair_order_ne_479'])}
+               'HadamardAutomorphism.hadamard_signed_pair_order_ne_479',
+               'HadamardAutomorphism.hadamard_automorphism_card_not_dvd_479'])}
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-automorphism-candidates.yml',
  'lean/lake-manifest.json',

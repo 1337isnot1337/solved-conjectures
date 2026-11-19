@@ -27,9 +27,8 @@ def integerBasis479 : Basis (Fin 478) ℤ (𝓞 K) :=
 
 @[simp] theorem integerBasis479_apply (i : Fin 478) :
     integerBasis479 hζ i = hζ.toInteger ^ (i : ℕ) := by
-  change hζ.integralPowerBasis.basis
-    ((finCongr (integral_basis_dimension479 hζ)).symm i) = _
-  rw [hζ.integralPowerBasis.basis_eq_pow, hζ.integralPowerBasis_gen]
+  unfold integerBasis479
+  rw [Basis.reindex_apply, hζ.integralPowerBasis.basis_eq_pow, hζ.integralPowerBasis_gen]
   rfl
 
 omit [NumberField K] [IsCyclotomicExtension {479} ℚ K] in
@@ -49,7 +48,7 @@ theorem coefficient_sum_reduction479 (C : Fin 479 → ℤ) :
   rw [last_power_eq_neg_sum479 hζ, smul_neg]
   simp_rw [sub_smul]
   rw [Finset.sum_sub_distrib, Finset.smul_sum]
-  rfl
+  rw [sub_eq_add_neg]
 
 theorem cyclotomic_coefficient_differences_dvd479 (p : ℤ) (C : Fin 479 → ℤ)
     (hdiv : (p : 𝓞 K) ∣ ∑ i : Fin 479, C i • hζ.toInteger ^ (i : ℕ)) :

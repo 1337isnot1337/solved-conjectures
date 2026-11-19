@@ -15,6 +15,7 @@ matrices over arbitrary commutative rings, including rings of integers.
 
 namespace HadamardAutomorphism
 
+open NumberField
 open scoped BigOperators Matrix
 
 noncomputable def integerSign (x : ℝ) : ℤ := by

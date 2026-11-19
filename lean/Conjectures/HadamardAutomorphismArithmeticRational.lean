@@ -8,7 +8,7 @@ namespace HadamardAutomorphism
 
 theorem rational_den_one_of_prime_square (B : ℚ) (n : ℤ)
     (h : 479 * B ^ 2 = (n : ℚ)) : B.den = 1 := by
-  have hB : B ^ 2 = n /. 479 := by
+  have hB : B ^ 2 = Rat.divInt n 479 := by
     rw [Rat.divInt_eq_div]
     apply (eq_div_iff (by norm_num : (479 : ℚ) ≠ 0)).mpr
     linarith
