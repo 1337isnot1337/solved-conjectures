@@ -142,14 +142,16 @@ theorem integral_mFourier_velocity_eq_relation
       ∫ x : torusRelationGroup m,
         UnitAddTorus.mFourier n (x : UnitAddTorus ι) ∂relationHaar m := by
   classical
+  rw [integral_mFourier_velocity]
+  change (if integerPairing n v = 0 then (1 : ℂ) else 0) = _
   by_cases hnm : ∃ c : ℤ, n = c • m
   · have hnv : integerPairing n v = 0 := by
       obtain ⟨c, rfl⟩ := hnm
       rw [integerPairing_comm (c • m) v, integerPairing_smul,
         integerPairing_comm v m, hv, mul_zero]
-    rw [integral_mFourier_velocity, if_pos hnv,
+    rw [if_pos hnv,
       integral_relation_mFourier_of_multiple m n hnm]
-  · rw [integral_mFourier_velocity, if_neg (hn hnm),
+  · rw [if_neg (hn hnm),
       integral_relation_mFourier_of_not_multiple m hm n hnm]
 
 end

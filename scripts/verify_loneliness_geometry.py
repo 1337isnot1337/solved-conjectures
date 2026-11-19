@@ -19,6 +19,15 @@ from verify_lean_candidate import (
 
 
 TASKS = {
+    "prime-bounds": (
+        ["Conjectures.LonelinessModularTightPrimeBounds"],
+        ["Loneliness.Modular.exists_dvd_speed_of_tight",
+         "Loneliness.Modular.forcedDivisor_dvd_product",
+         "Loneliness.Modular.exists_prime_avoiding_forced_of_tight",
+         "Loneliness.Modular.TightPrimeBounds.prefix_margin",
+         "Loneliness.Modular.TightPrimeBounds.prime_data_valid",
+         "Loneliness.Modular.TightPrimeBounds.exists_prime_of_tight_bound"],
+    ),
     "basis": (
         ["Conjectures.LonelinessKZBasisReduction",
          "Conjectures.LonelinessPrimitiveSpeeds"],
@@ -40,6 +49,14 @@ TASKS = {
          "Loneliness.NormGeometry.exists_tight_gram_data",
          "Loneliness.NormGeometry.tight_norm_cutoff"],
     ),
+    "small-norm": (
+        ["Conjectures.LonelinessTightSmallNormBounds"],
+        ["Loneliness.NormGeometry.natural_squaredNorm_le_of_product",
+         "Loneliness.NormGeometry.small_product_lower_bound",
+         "Loneliness.NormGeometry.tight_small_natural_squaredNorm_le",
+         "Loneliness.NormGeometry.exists_small_prime_of_tight",
+         "Loneliness.NormGeometry.six_squaredNorm_le"],
+    ),
     "cube": (
         ["Conjectures.LonelinessModularCubeSearch"],
         ["Loneliness.Modular.FoldedSearch.Closed.Cube.check_sound",
@@ -48,6 +65,27 @@ TASKS = {
          "Loneliness.Modular.FoldedSearch.Closed.Cube.reference_terminal_sound",
          "Loneliness.Modular.FoldedSearch.Closed.Cube.example_checked",
          "Loneliness.Modular.FoldedSearch.Closed.Cube.example_branch_checked"],
+    ),
+    "cube-probe": (
+        ["Conjectures.LonelinessTenSpeedCube127Probe"],
+        ["Loneliness.Modular.TenSpeed.CubeProbe.all_checked",
+         "Loneliness.Modular.TenSpeed.CubeProbe.excludes_closed_value"],
+    ),
+    "initial-cover": (
+        ["Conjectures.LonelinessModularCoverTape",
+         "Conjectures.LonelinessTenSpeedOrbit"],
+        ["Loneliness.Modular.SupportSearch.coverage_card_le_capacity",
+         "Loneliness.Modular.SupportSearch.check_sound",
+         "Loneliness.Modular.SupportSearch.boundedCheck_sound",
+         "Loneliness.Modular.SupportSearch.Chunks.check_sound",
+         "Loneliness.Modular.SupportSearch.Tape.checked_state",
+         "Loneliness.Modular.Multiplicity.perm_support_cons_of_length",
+         "Loneliness.Modular.Multiplicity.reindex_of_ofFn_perm",
+         "Loneliness.Modular.TenSpeed.Initial.closed_support_normalization",
+         "Loneliness.Modular.TenSpeed.Initial.checked_initial_cover",
+         "Loneliness.Modular.TenSpeed.Orbit.Row.sound",
+         "Loneliness.Modular.TenSpeed.Orbit.normalized_represents",
+         "Loneliness.Modular.TenSpeed.Orbit.checked_initial_represents"],
     ),
     "small-sharp": (
         ["Conjectures.LonelinessKZSmallSharp"],

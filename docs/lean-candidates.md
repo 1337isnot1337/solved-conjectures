@@ -5,8 +5,8 @@ the accepted root imports. A candidate is not a completed collection result.
 Acceptance also requires exact statement review, registration in `Conjectures`,
 required endpoint checks in `ProofAudit`, and the ordinary kernel-recheck gate.
 
-The `base`, `product`, and deterministic `hyperplane` scopes have since been
-registered in the accepted package. The separate jobs remain available to
+The `base`, `product`, deterministic `hyperplane`, and complete `four-*` scopes
+have since been registered in the accepted package. The separate jobs remain available to
 check changes to those components. The other lanes retain their candidate
 status unless the accepted-scope report records a later registration.
 

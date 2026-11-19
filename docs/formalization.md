@@ -115,13 +115,17 @@ cumulative partition asymptotic, both reservation regimes, and the uniform
 limit for every width at least the height are checked. The 46-module closure
 passed independent kernel replay and its 587-declaration axiom audit.
 
-The unconditional four-speed coordinate cutoff is 5,832 below value `2/9`.
+The unconditional four-speed gap theorem is complete. The cutoff 5,832 and
+finite modular certificates prove that the only directions below `2/9` are
+`[1,2,3,4]` and `[1,3,4,7]`, up to positive scaling and permutation. Both have
+value `1/5`, and the four-speed runner bound follows. All 84 modules in the
+closure have source, axiom, and independent kernel component coverage.
+
 The finite plane classification covers all 122,880 indexed candidates. Its
-geometric endpoint retains `FourSpeedGap` as an explicit input. With that
-input, every positive primitive five-speed tuple below `1/5` either has all
-coordinates at most 279,841 or contains a dilated critical quadruple.
-In the second case its value is `s/(5s+1)`. The bounded classification
-remains separate work.
+`FourSpeedGap` input is now a proved theorem. With that input, every positive
+primitive five-speed tuple below `1/5` either has all coordinates at most
+279,841 or contains a dilated critical quadruple. In the second case its
+value is `s/(5s+1)`. The bounded five-speed classification remains separate work.
 
 ## Campaign checklist
 
@@ -136,9 +140,9 @@ remains separate work.
    evaluations, cyclic criteria, and exact algorithmic bounds.
 5. Haralambis is complete: its exact density equality and optimal pair-sum
    periodic attainment were published in `22f3a5a`.
-6. Five-speed spectrum: discharge the four-speed gap input and complete the
-   modular lifting/enumeration outside the checked critical families. The
-   rational-plane certificate and conditional coordinate cutoff are checked.
+6. Five-speed spectrum: complete the modular lifting/enumeration outside the
+   checked critical families. The four-speed gap is proved; the rational-plane
+   certificate and coordinate-cutoff reductions are checked.
 7. Tight six speeds and critical planes: the uniform reduction, complete
    equality classification, plane enumeration and large-norm consequence.
 8. Six-speed spectrum: the remaining family branch, norm reduction, modular

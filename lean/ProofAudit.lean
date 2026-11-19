@@ -22,6 +22,10 @@ run_cmd do
     `LineSize.EulerKernel.meanExp_analyticAt,
     `LineSize.EulerKernel.smoothLog_contDiff,
     `LineSize.EulerKernel.smoothLog_eq,
+
+    `Loneliness.CoordinateSubspace.four_speed_gap,
+    `Loneliness.CoordinateSubspace.four_speed_below_gap_value,
+    `Loneliness.CoordinateSubspace.four_speed_lonelyRunnerBound,
     `CutPeriod.Weight.both_games_exact,
     `CutPeriod.Weight.gameA_mex,
     `CutPeriod.Weight.gameB_mex,

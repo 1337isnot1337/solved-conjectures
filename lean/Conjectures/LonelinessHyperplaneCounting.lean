@@ -111,7 +111,8 @@ theorem positiveBoxTwoRelations_card_le
     (hb : ¬ ∃ c : ℤ, b = c • m) (N : ℕ) :
     (positiveBoxTwoRelations m b N).card ≤ N ^ (Fintype.card ι - 2) := by
   obtain ⟨p, q, hpq, hdet⟩ := exists_nonzero_minor m hm b hb
-  simpa only [positiveBoxTwoRelations, positiveBoxCoordinates, Fintype.card_fin] using
+  unfold positiveBoxTwoRelations positiveBoxCoordinates
+  simpa only [Fintype.card_fin] using
     two_relation_fiber_card_le (positiveBoxEntry (N := N))
       (positiveBoxEntry_injective N) m b p q hpq hdet 0 0
 

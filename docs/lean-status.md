@@ -39,7 +39,7 @@ never additional Lean axioms.
 | Symmetric four-point density | Complete | Exact real packing and covering densities for every literal translated symmetric four-point integer set, including common-divisor normalization. Both periodic constructions and the two sharp local interval lengths are proved. |
 | Packing with two nonmixed gaps | Complete | The exact three-case packing and real circle formula for every positive gap pair and arbitrary positive gap counts, including gcd normalization, literal tile semantics, periodic attainment, and the stated example. |
 | Haralambis three-difference theorem | Complete | Exact equality of actual extremal density and real circle value for every positive triple, with no coprimality premise. An optimal periodic set has a pair-sum period. The proof includes finite balanced orientations, signed defects, odd periods, interval counting, and the explicit `{2,5,9}` example. |
-| Five-speed spectrum | Partial | All twelve example values and both critical-family reductions are checked. The unconditional four-speed cutoff is 5,832. All 122,880 indexed plane cases and their geometric composition are checked. With `FourSpeedGap` explicit, every primitive positive tuple below `1/5` is bounded by 279,841 or contains a critical quadruple. Discharging the gap input and the bounded five-speed classification remain open in the accepted root. |
+| Five-speed spectrum | Partial | All twelve example values and both critical-family reductions are checked. The unconditional four-speed gap theorem is proved: below `2/9`, precisely the two scaled critical directions occur, both with value `1/5`. This also proves the four-speed runner bound. All 122,880 indexed plane cases and the five-speed coordinate cutoff are checked, and their gap input is now available. The bounded five-speed classification remains open. |
 | Tight nine-speed sets | Partial | The consecutive direction has exact global value `1/10`; uniqueness remains open. |
 | Seven-speed spectrum | Partial | The infinite consecutive family and all 27 displayed exceptional values are checked. The geometric norm bound and exhaustive classification remain open. |
 | Eight-speed spectrum | Partial | All three displayed product families are classified and evaluated within those families, including both exceptional `s=1` values. All 17 displayed sporadic values are checked. The norm bound and exhaustive classification outside the families remain open. |
@@ -1107,3 +1107,39 @@ See the [source-bound integration receipt](line-size-integration-receipt.json).
 The formal generating function and corrected Euler-product sources remain
 unregistered candidates. The Fourier local limit and the final asymptotic
 prefactor are still being formalized; Erdős 607 is not yet complete.
+
+
+## Complete four-speed gap and runner bound
+
+The accepted package now contains `Loneliness.CoordinateSubspace.four_speed_gap`,
+`four_speed_below_gap_value`, and `four_speed_lonelyRunnerBound`. For every
+positive distinct four-speed list with value below `2/9`, the first theorem
+identifies a positive scaling and permutation of `[1,2,3,4]` or `[1,3,4,7]`.
+Both directions have value exactly `1/5`. The runner lower bound covers every
+nonempty distinct positive list of length at most four.
+
+The proof joins the unconditional coordinate cutoff 5,832 to the ten exact
+prime residue covers and their exhaustive lifting certificates. It assumes no
+unformalized four-speed theorem. The finite plane and five-speed reductions
+can now use this proved gap input; their bounded five-speed classification is
+still separate work.
+
+The exact four-speed closure contains 84 project modules. Its ownership and
+transitive axiom audit passed for 1,880 theorems, including private declarations.
+The four aggregate modules passed fresh strict source checks and stock
+independent kernel replay. A dependency-coverage check identified the separate
+`LonelinessFourSpeedClassification` module; that module then passed its own
+fresh strict source check and independent replay. Every other dependency has
+an exact source-matched accepted or hosted leaf receipt.
+
+This registration preserves the concurrent 18-module line-size addition and
+adds 36 proof modules to its 397-module package, giving 433 accepted proof
+modules and two roots. The import closure and replay list agree exactly.
+Inherited sources match the line-size integration receipt or the subsequent
+five-module profile gate, which passed at `65435fc` with a 120-theorem audit.
+The proof-only `HaralambisFaces` lint repair is a shared four-speed dependency and
+has separate fresh source, 62-theorem audit, and kernel checks; the earlier
+84-module audit keeps its original source snapshot. These are component
+receipts; a whole 433-module combined hosted pass is not asserted here.
+See the [four-speed integration receipt](four-speed-integration-receipt.json)
+and the [statement and proof map](../results/five-speed-spectrum/FOUR_SPEED_GAP_LEAN.md).

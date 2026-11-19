@@ -129,8 +129,8 @@ theorem gridVector_bounds (m u : ι → ℤ) (p : ι) (U : ℕ)
   have hAR : 0 ≤ (normalSize m : ℤ) := by positivity
   rw [gridVector_apply]
   constructor
-  · dsimp only [gridScale] at hlo
-    nlinarith [mul_nonneg hAR (le_trans (by norm_num) hMR)]
+  · dsimp only [gridScale] at hlo ⊢
+    nlinarith [hp.1, mul_nonneg hAR (le_trans (by norm_num) hMR)]
   · have hstep : gridScale m M * u i + boxPerturbation m p r i ≤
         gridScale m M * ((U : ℤ) + 1) + (normalSize m : ℤ) * (M : ℤ) := by
       nlinarith
@@ -147,6 +147,7 @@ theorem gridVector_distinct (m u : ι → ℤ) (p : ι) (hu : Function.Injective
   have huij : u i ≠ u j := fun h => hne (hu h)
   have hdu : (1 : ℤ) ≤ |u i - u j| := by
     have hd : u i - u j ≠ 0 := sub_ne_zero.mpr huij
+    have habs : 0 < |u i - u j| := abs_pos.mpr hd
     omega
   have hT : 0 ≤ gridScale m M := by unfold gridScale; positivity
   have hprod : gridScale m M ≤ |gridScale m M * (u i - u j)| := by
@@ -159,7 +160,8 @@ theorem gridVector_distinct (m u : ι → ℤ) (p : ι) (hu : Function.Injective
   have habs : |boxPerturbation m p r j - boxPerturbation m p r i| ≤
       2 * ((normalSize m : ℤ) * (M : ℤ)) := by
     calc
-      _ ≤ |boxPerturbation m p r j| + |boxPerturbation m p r i| := abs_sub_le _ _
+      _ ≤ |boxPerturbation m p r j| + |boxPerturbation m p r i| := by
+        simpa using abs_sub_le (boxPerturbation m p r j) 0 (boxPerturbation m p r i)
       _ ≤ _ := by linarith [boxPerturbation_abs_le m p r j, boxPerturbation_abs_le m p r i]
   rw [heq] at hprod
   have hbad := hprod.trans habs

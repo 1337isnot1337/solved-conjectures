@@ -402,6 +402,43 @@ modules=(
   Conjectures.LineSizeRealization
   Conjectures.LineSizeRecordRealization
   Conjectures.LineSizeRecordCount
+
+  Conjectures.LonelinessFourSpeedClassification
+  Conjectures.LonelinessModularNormalize
+  Conjectures.LonelinessFourSpeedEnumeration
+  Conjectures.LonelinessModularRationalWitness
+  Conjectures.LonelinessFourSpeedCertificate
+  Conjectures.LonelinessFourSpeedCertificate17
+  Conjectures.LonelinessFourSpeedCertificate29
+  Conjectures.LonelinessFourSpeedCertificate31
+  Conjectures.LonelinessFourSpeedCertificate37
+  Conjectures.LonelinessFourSpeedCertificate41
+  Conjectures.LonelinessFourSpeedCertificate43
+  Conjectures.LonelinessFourSpeedFastEnumeration
+  Conjectures.LonelinessFourSpeedCertificateChunks
+  Conjectures.LonelinessFourSpeedCertificate47
+  Conjectures.LonelinessFourSpeedCertificate53
+  Conjectures.LonelinessFourSpeedCertificate59
+  Conjectures.LonelinessFourSpeedCertificate61
+  Conjectures.LonelinessFourSpeedCertificateAll
+  Conjectures.LonelinessModularFoldedSearch
+  Conjectures.LonelinessFourSpeedGeometry
+  Conjectures.LonelinessFourSpeedFoldedGeometry
+  Conjectures.LonelinessFourSpeedLiftDirections
+  Conjectures.LonelinessFourSpeedLiftSound
+  Conjectures.LonelinessFourSpeedLift17
+  Conjectures.LonelinessFourSpeedLift29
+  Conjectures.LonelinessFourSpeedLift31
+  Conjectures.LonelinessFourSpeedLift37
+  Conjectures.LonelinessFourSpeedLift41
+  Conjectures.LonelinessFourSpeedLift43
+  Conjectures.LonelinessFourSpeedLift47
+  Conjectures.LonelinessFourSpeedLift53
+  Conjectures.LonelinessFourSpeedLift59
+  Conjectures.LonelinessFourSpeedLift61
+  Conjectures.LonelinessFourSpeedFinite
+  Conjectures.LonelinessFourSpeedClassificationFinite
+  Conjectures.LonelinessFourSpeedGap
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

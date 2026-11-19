@@ -165,7 +165,7 @@ theorem prefixDet_adjacentStep_long (B : Module.Basis (Fin N) ℤ (Fin N → ℤ
     exact realFamily_apply B (e k)
   have h : (prefixDet (adjacentStep B i hi c) r : ℝ) = (prefixDet B r : ℝ) := by
     rw [prefixDet_cast, prefixDet_cast, hleft, hright]
-    simpa only [adjacentStep, e, a, b] using hgram
+    simpa only [adjacentStep, e, a, b, Fin.castLE_mk] using hgram
   exact_mod_cast h
 
 theorem prefixDet_adjacentStep_unchanged (B : Module.Basis (Fin N) ℤ (Fin N → ℤ)) (i : ℕ)

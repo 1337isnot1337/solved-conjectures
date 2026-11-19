@@ -11,6 +11,15 @@
   exact generating function, corrected product estimate, Fourier bounds,
   and sharp asymptotic remain ongoing work.
 
+## 2026-11-18 (America/Chicago) — Complete four-speed gap
+
+- Proved the all-size four-speed gap and both critical directions below `2/9`,
+  including their exact value `1/5` and the four-speed runner lower bound.
+- Registered 36 additional modules after exact dependency coverage, an
+  1,880-theorem ownership/axiom audit, and independent kernel checks.
+- Supplied the previously explicit gap input to the existing five-speed
+  plane and cutoff reductions. The bounded five-speed enumeration remains open.
+
 ## 2026-11-19 — Complete concrete CUT games and line-size foundations
 
 - Identified both actual recursive CUT games with their proposed sequence at

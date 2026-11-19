@@ -17,7 +17,7 @@ A growing collection of proofs, counterexamples, and reproducible verification c
 | [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | [Read](results/tight-nine-speeds/PROOF.md) | ☐ |
 | [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | [Read](results/tight-eight-speeds/PROOF.md) | ◐ |
 | [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | [Read](results/tight-seven-speeds/PROOF.md) | ◐ |
-| [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | [Read](results/five-speed-spectrum/PROOF.md) | ◐ |
+| [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | [Read](results/five-speed-spectrum/PROOF.md) | [◐](results/five-speed-spectrum/FOUR_SPEED_GAP_LEAN.md) |
 | [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | [Read](results/symmetric-four-point-density/PROOF.md) | ☑ |
 | [Packing with two nonmixed gaps](results/nonmixed-gap-packing/) | [Read](results/nonmixed-gap-packing/PROOF.md) | ☑ |
 | [Two-difference Motzkin density](results/two-difference-motzkin/) | [Read](results/two-difference-motzkin/PROOF.md) | ◐ |

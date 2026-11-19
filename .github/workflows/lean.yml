@@ -7,6 +7,7 @@ jobs:
   plan:
     name: Select accepted-source verification
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     outputs:
       run: ${{ steps.plan.outputs.run }}
     steps:
@@ -15,11 +16,14 @@ jobs:
           fetch-depth: 0
       - name: Check accepted-source selection controls
         run: python3 -m unittest discover -s scripts -p 'test_plan_accepted_lean.py'
+      - name: Check conservative diff and layout controls
+        run: python3 scripts/plan_accepted_lean.py --self-test
       - id: plan
         run: python3 scripts/plan_accepted_lean.py
   lean:
     needs: plan
-    if: needs.plan.outputs.run == 'true'
+    # Planner failure or missing output must never skip proof verification.
+    if: ${{ !cancelled() && (needs.plan.result != 'success' || needs.plan.outputs.run != 'false') }}
     runs-on: ubuntu-latest
     env:
       LEAN_NUM_THREADS: "1"

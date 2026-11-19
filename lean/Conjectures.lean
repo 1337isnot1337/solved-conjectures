@@ -80,3 +80,5 @@ import Conjectures.LonelinessHyperplane
 import Conjectures.LineSizeRecordCount
 import Conjectures.LineSizeAnalyticProfile
 import Conjectures.LineSizeEulerKernel
+
+import Conjectures.LonelinessFourSpeedGap

@@ -251,7 +251,7 @@ theorem checked_ten_speed_consecutive_of_plane_gap
     (fun _ hw => hw.1) (fun _ hw => hw.2.1)
   obtain ⟨ds, hmem, hperm⟩ := check_sound (by decide : 0 < 11)
     (by decide : 2*1 < 11) _ admissible _ hterminal honeOdd
-    tree m x hm hcheck v hrep hp ⟨hpositive, hnodup, hgap⟩ hlow
+    tree m x hm hcheck v hrep hp ⟨hpositive, hnodup, hgap⟩ (by simpa using hlow)
   have he : ds = tenConsecutive := List.mem_singleton.mp hmem
   rwa [he] at hperm
 
@@ -289,14 +289,14 @@ theorem checked_ten_speed_pruning_consecutive
   have hterminal := pruningTerminal_sound (num := 1) (den := 11)
     (1/10) [tenConsecutive] leaves admissible
     (fun _ hw => hw.1) (fun _ hw => List.nodup_ofFn.mp hw.2) (by
-      intro w hw
+      intro w hw z hz
       simpa only [Rat.cast_div, Rat.cast_one, Rat.cast_ofNat] using
-        PlaneGeometry.ten_speed_plane_gap hLRC w hw.1)
+        PlaneGeometry.ten_speed_plane_gap hLRC w hw.1 z hz)
   have honeOdd := ten_speed_oneOddSound hLRC admissible
     (fun _ hw => hw.1) (fun _ hw => hw.2)
   obtain ⟨ds, hmem, hperm⟩ := check_sound (by decide : 0 < 11)
     (by decide : 2*1 < 11) _ admissible _ hterminal honeOdd
-    tree m x hm hcheck v hrep hp ⟨hpositive, hnodup⟩ hlow
+    tree m x hm hcheck v hrep hp ⟨hpositive, hnodup⟩ (by simpa using hlow)
   have he : ds = tenConsecutive := List.mem_singleton.mp hmem
   rwa [he] at hperm
 

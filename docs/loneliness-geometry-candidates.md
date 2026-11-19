@@ -7,7 +7,7 @@ the reached errors are being repaired and checked again. New adapters remain
 explicit candidates until their full gates pass.
 
 The separate `Lean loneliness geometry candidates` workflow checks independent
-independent scopes. It rebuilds every project dependency, checks each required
+scopes. It rebuilds every project dependency, checks each required
 endpoint, audits all owned theorem declarations including private declarations,
 and independently replays the exact dependency closure with stock `leanchecker`.
 Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. Receipts
@@ -16,10 +16,14 @@ Failed receipts are retained with their error and completed checks.
 
 | Scope | Candidate statement | Remaining mathematical inputs or work |
 | --- | --- | --- |
+| `prime-bounds` | Small denominators force a divisor of the speed product. Exact integer certificates select an avoiding prime for six through thirteen speeds. | The natural squared-norm bound is explicit. The six-speed list uses the first eight original primes; the other lists are unchanged. |
 | `basis` | A primitive integer vector extends to an integer basis. Minimizing a natural prefix-Gram potential supplies a basis fixing that vector and satisfying the adjacent squared-length ratio. The Gram product is the literal determinant. | The first-vector-preserving ratio basis is not asserted to satisfy the full Korkine–Zolotarev conditions. The vector/scalar-extension interface has a source pass; the remaining basis stack is still under source checks. |
 | `nearest-plane-value` | Rounding modulo a prefix gives a bound on the value of the containing rational subspace. Coordinate coalescence gives the squared prefix inequalities. | Lower-dimensional runner bounds remain explicit. Spectrum arguments need the additional plane-gap hypotheses specified in the written proofs. |
 | `norm-geometry` | Construct the actual tail Gram squares from a primitive speed vector and derive a norm cutoff from a checked product bound. | Only strictly lower-dimensional runner theorems are used. Their proofs and the numerical product certificate remain explicit inputs. This adapter awaits its first source check. |
+| `small-norm` | The actual prefix geometry and finite product tables imply natural squared-norm ceilings and avoiding-prime selection for six through eight speeds. The six-speed ceiling is 34,333,151. | Lower-dimensional runner theorems remain induction inputs. The new adapters await source checks. The corresponding nine- through thirteen-speed `LonelinessTightNormBounds` source is preserved separately and is not yet a target of this workflow. |
 | `cube` | A partial-bit decision tree certifies a full binary branch of the existing closed lifting checker. | The complete initial residue enumeration and generated ten-speed trees remain separate obligations. Only a four-assignment worked certificate is included in this candidate. |
+| `cube-probe` | Three explicit modulo-127 roots have compact binary lifting certificates with 11, 39, and 20 leaves. | This is a numerical probe, not the full ten-speed enumeration. Its real-value exclusion retains the nine-speed runner bound. |
+| `initial-cover` | A finite support search, state-reference composition, and multiplicity-aware coordinate permutation provide exhaustive modular normalization. | The generic checker and ten-speed wrappers await source checks. Full numerical support-coverage tables are separate work. |
 | `small-sharp` | The exact six-spectrum arithmetic table implies the stronger conditional global norm cutoff 21,829, which also suffices for the displayed four- and five-parameter searches. | Basis, prefix, and determinant premises remain explicit. The generic rational-subspace covolume statement is separate. |
 | `hyperplane` | Fourier character orthogonality, finite-frequency density control, an exceptional numerator count, an explicit denominator count from real admissibility, and the uniform probability rate for the literal ordered positive distinct box. Real and torus shift events are identified. | The assembled rate and convergence candidates await source checks. The recursive subspace theorem, exact quasipolynomials, endpoint density, and independent-shift limiting-law assembly remain open. |
 
@@ -28,6 +32,23 @@ have separate earlier receipts. This document does not extend those receipts to
 the new candidates. The Haar-distribution candidate remains in its existing
 `hyperplane-haar` lane. Initial residue enumeration and ten-speed lifting trees
 remain under the separate finite-certificate work.
+
+## Completed component checks
+
+The following unregistered closures have passed all three gates. Their scope
+does not include the other candidates in the table.
+
+- In [run 44455928210](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44455928210),
+  the nearest-plane value closure passed all 15 modules and its 234-theorem
+  ownership audit. The small-sharp closure passed all eight modules and its
+  264-theorem audit. Both runs used source commit `488301d`.
+- In [run 44457211754](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44457211754),
+  the cube checker passed all 25 modules and its 576-theorem audit at source
+  commit `779f3c5`. The new numerical probe was not part of that run.
+- The separate Haar lane passed all 11 modules and its 200-theorem audit in
+  [run 44457211742](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44457211742).
+  This proves the Haar law of the predicted hyperplane maximum; the sampled
+  velocity limiting-law assembly is separate.
 
 To inspect a closure without running Lean:
 
