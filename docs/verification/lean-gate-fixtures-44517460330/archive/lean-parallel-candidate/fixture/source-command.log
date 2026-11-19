@@ -1,0 +1,11 @@
+{"module": "toolchain", "exit_code": 0, "elapsed_seconds": 2.0745774330000017}
+{"module": "toolchain-prefix", "exit_code": 0, "elapsed_seconds": 0.758287334000002}
+{"module": "project-clean", "exit_code": 0, "elapsed_seconds": 0.6572873610000016}
+{"module": "Conjectures.Base", "exit_code": 0, "elapsed_seconds": 1.126169566999991}
+{"module": "Solitaire.Base", "exit_code": 0, "elapsed_seconds": 1.1263050199999896}
+{"module": "Conjectures.Right", "exit_code": 0, "elapsed_seconds": 1.128772479999995}
+{"module": "Conjectures.Left", "exit_code": 0, "elapsed_seconds": 1.181094047000002}
+{"module": "Conjectures.Top", "exit_code": 0, "elapsed_seconds": 1.0246260899999982}
+{"module": "Solitaire", "exit_code": 0, "elapsed_seconds": 1.1353289049999944}
+{"module": "Conjectures", "exit_code": 0, "elapsed_seconds": 0.9663769729999956}
+{"status": "passed", "phase": "source", "receipt": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-parallel-candidate/fixture/source/receipt.json"}
