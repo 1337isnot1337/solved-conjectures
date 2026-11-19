@@ -95,16 +95,16 @@ PILOT_REQUIRED = tuple(
     for n in (7, 8, 9) for name in ("checked", "each_checked"))
 
 
-def audit_source(modules, required, private_nodes):
-    """Every owned declaration is scanned, including unused definitions."""
-    imports = "\n".join("import all " + module for module in sorted(modules))
+def audit_source(modules, required, private_nodes, *, modern):
+    """Scan owned declarations in a legal modern or legacy import environment."""
+    imports = "\n".join(("import all " if modern else "import ") + module
+                        for module in sorted(modules))
     endpoints = ", ".join("`" + name for name in required)
     private = [name for names in private_nodes.values() for name in names]
     private_names = ", ".join("`" + name for name in private)
     owned = ", ".join(json.dumps(module) for module in sorted(modules))
-    # The accepted roots may be legacy sources. A legacy audit can import
-    # both formats while retaining explicit import-all private visibility.
-    return f'''{imports}
+    header = "module\n" if modern else ""
+    return f'''{header}{imports}
 import Lean.Util.CollectAxioms
 import Lean.PrivateName
 
@@ -118,16 +118,18 @@ run_cmd do
   let mut declarations : Nat := 0
   let mut theorems : Nat := 0
   let mut seenPrivate : Array Name := #[]
-  for name in required do
-    let info ← getConstInfo name
-    unless info.isTheorem do
-      throwError "Required endpoint is not a theorem: {{name}}"
+  let mut seenRequired : Array Name := #[]
   for (name, info) in env.constants.toList do
     let owned := match env.getModuleIdxFor? name |>.bind (env.header.modules[·]?) with
       | some mod => modules.contains mod.module.toString
       | none => false
     if owned then
       declarations := declarations + 1
+      if required.contains name then
+        unless info.isTheorem do
+          throwError "Required endpoint is not a theorem: {{name}}"
+        seenRequired := seenRequired.push name
+        logInfo m!"PARALLEL-AUDIT-ENDPOINT {{name}}"
       if let .axiomInfo _ := info then
         unless allowed.contains name do
           throwError "Unapproved project axiom {{name}}"
@@ -144,8 +146,30 @@ run_cmd do
       throwError "Missing private theorem {{name}}"
   unless seenPrivate.size == expectedPrivate.size do
     throwError "Private theorem count mismatch"
-  logInfo m!"PARALLEL-AUDIT PASS: {{declarations}} owned declarations; {{theorems}} theorems; {{expectedPrivate.size}} private proofs; {{required.size}} endpoints"
+  logInfo m!"PARALLEL-AUDIT PASS: {{declarations}} owned declarations; {{theorems}} theorems; {{expectedPrivate.size}} private proofs; {{seenRequired.size}} endpoints"
 '''
+
+
+def audit_sources(sources, required, private_nodes):
+    """Partition ownership; modern private facets cannot be imported by legacy audits."""
+    groups = {True: [], False: []}
+    for module, source in sorted(sources.items()):
+        modern = next(build.header_tokens(source), None) == "module"
+        groups[modern].append(module)
+    result = {}
+    for modern, modules in groups.items():
+        if not modules:
+            continue
+        nodes = {m: private_nodes[m] for m in modules if m in private_nodes}
+        mode = "Modern" if modern else "Legacy"
+        result[f"ProofAudit{mode}.lean"] = {
+            "mode": mode.lower(), "modules": modules, "private_nodes": nodes,
+            "source": audit_source(modules, required, nodes, modern=modern),
+        }
+    flattened = [m for group in result.values() for m in group["modules"]]
+    if len(flattened) != len(sources) or set(flattened) != set(sources):
+        raise ValueError("Audit ownership does not partition the exact source closure")
+    return result
 
 
 def private_inventory(sources):
@@ -190,8 +214,8 @@ def prepare_repo(destination, sources, required, private_nodes, package_cache):
         path = build.source_path(lean, root)
         if not path.exists():
             path.write_text("-- This root is outside the selected candidate closure.\n")
-    audit = lean / "ProofAudit.lean"
-    audit.write_text(audit_source(sources, required, private_nodes), encoding="utf-8")
+    for filename, audit in audit_sources(sources, required, private_nodes).items():
+        (lean / filename).write_text(audit["source"], encoding="utf-8")
     (destination / ".gitignore").write_text("lean/.lake/\n__pycache__/\n", encoding="utf-8")
     (lean / ".lake").mkdir()
     (lean / ".lake/packages").symlink_to(package_cache, target_is_directory=True)
@@ -259,25 +283,44 @@ def source_phase(lean, output, modules, root, args, *, expected_failure=False):
 
 
 def audit_phase(lean, output, modules, required, private_nodes, args):
-    path = lean / "ProofAudit.lean"
-    expected = audit_source(modules, required, private_nodes)
-    if path.read_text(encoding="utf-8") != expected:
-        raise ValueError("The frozen import-all audit source differs")
-    result = bounded_command("audit-command",
-        ["lake", "env", "lean", "-j1", "-M4500", "-DwarningAsError=true", str(path)],
-        cwd=lean, output=output, memory_limit_mib=args.memory_limit_mib,
-        timeout_seconds=args.timeout_seconds)
-    log = output / "audit-command.log"
-    match = re.search(
-        r"PARALLEL-AUDIT PASS: (\d+) owned declarations; (\d+) theorems; "
-        r"(\d+) private proofs; (\d+) endpoints", log.read_text())
-    if (match is None or int(match[3]) != sum(map(len, private_nodes.values()))
-            or int(match[4]) != len(required) or int(match[1]) < int(match[2])):
-        raise ValueError("Missing complete declaration/private-proof audit result")
-    result.update(all_owned_declarations_audited=True, explicit_import_all=True,
-        owned_declarations=int(match[1]), project_theorems=int(match[2]),
-        private_proofs=int(match[3]), required_endpoints=int(match[4]),
-        audit_source_sha256=build.sha256(path), private_nodes_by_module=private_nodes)
+    sources = {m: build.source_path(lean, m).read_text(encoding="utf-8") for m in modules}
+    groups = audit_sources(sources, required, private_nodes)
+    result = {"lanes": {}, "owned_declarations": 0, "project_theorems": 0,
+              "private_proofs": 0, "required_endpoints": 0}
+    endpoints = []
+    for filename, group in groups.items():
+        path = lean / filename
+        if path.read_text(encoding="utf-8") != group["source"]:
+            raise ValueError("The frozen declaration audit source differs")
+        label = "audit-" + group["mode"] + "-command"
+        lane = bounded_command(label,
+            ["lake", "env", "lean", "-j1", "-M4500", "-DwarningAsError=true", str(path)],
+            cwd=lean, output=output, memory_limit_mib=args.memory_limit_mib,
+            timeout_seconds=args.timeout_seconds)
+        log = output / (label + ".log")
+        text = log.read_text()
+        match = re.search(
+            r"PARALLEL-AUDIT PASS: (\d+) owned declarations; (\d+) theorems; "
+            r"(\d+) private proofs; (\d+) endpoints", text)
+        seen = re.findall(r"PARALLEL-AUDIT-ENDPOINT ([A-Za-z0-9_.]+)(?:\r?\n|$)", text)
+        expected_private = sum(map(len, group["private_nodes"].values()))
+        if (match is None or int(match[3]) != expected_private
+                or int(match[4]) != len(seen) or int(match[1]) < int(match[2])):
+            raise ValueError("Missing complete declaration/private-proof audit result")
+        endpoints.extend(seen)
+        lane.update(project_modules=group["modules"], mode=group["mode"],
+            owned_declarations=int(match[1]), project_theorems=int(match[2]),
+            private_proofs=int(match[3]), required_endpoints=int(match[4]),
+            audit_source_sha256=build.sha256(path), log_sha256=build.sha256(log))
+        result["lanes"][group["mode"]] = lane
+        for key in ("owned_declarations", "project_theorems", "private_proofs", "required_endpoints"):
+            result[key] += lane[key]
+    if (len(endpoints) != len(set(endpoints)) or set(endpoints) != set(required)
+            or result["private_proofs"] != sum(map(len, private_nodes.values()))):
+        raise ValueError("Combined audit omits or duplicates a required endpoint or private proof")
+    result.update(all_owned_declarations_audited=True, explicit_import_all_modern=True,
+        exact_ownership_partition=True, required_endpoint_names=sorted(endpoints),
+        private_nodes_by_module=private_nodes)
     return result
 
 
@@ -315,7 +358,8 @@ def verify_positive(name, sources, required, private_nodes, modules, root, outpu
     graph, _prefixes, _external, extra = build.scope_plan(lean.parent, modules, root)
     if set(graph) != set(sources):
         raise ValueError("Copied source list differs from the exact selected closure")
-    frozen = build.snapshot_inputs(lean.parent, graph, set(extra) | {"lean/ProofAudit.lean"})
+    audit_files = {"lean/" + name for name in audit_sources(sources, required, private_nodes)}
+    frozen = build.snapshot_inputs(lean.parent, graph, set(extra) | audit_files)
     head = build.git_head(lean.parent)
     result = {"project_modules": sorted(graph), "isolated_git_head": head,
               "frozen_inputs": frozen, "status": "running"}
@@ -356,7 +400,7 @@ def verify_negative(output, cache, args):
               and r.get("exit_code") != 0 and not r.get("cancelled")]
     if len(failed) != 1 or any(r["module"] in {"Conjectures.Top", "Conjectures"} for r in records):
         raise ValueError("A failed source released one of its dependent build targets")
-    if (directory / "audit-command.log").exists() or list(directory.glob("replay-*")):
+    if list(directory.glob("audit-*-command.log")) or list(directory.glob("replay-*")):
         raise ValueError("A failed source was allowed into a later verification phase")
     result.update(expected_failure_observed=True, dependents_never_started=True,
                   audit_not_started=True, kernel_not_started=True)

@@ -22,21 +22,21 @@
     },
     {
       "path": "scripts/verify_lean_parallel_candidate.py",
-      "blob_sha": "31ae39812222a1a12b5536adc16bc36f443e8f6e",
-      "sha256": "398ff60083075f12f0e79891b93ca5aacd69ca165d5fc1684a32ec63214a046e",
-      "characters": 24186
+      "blob_sha": "d418890759fe02b2b6ed907ed8788195c9172eee",
+      "sha256": "31a88657c2eed2fc2db46ee9e01ffb55ab043b18aacb6185c02a5fd67aff556d",
+      "characters": 26667
     },
     {
       "path": ".github/workflows/lean-parallel-candidate.yml",
-      "blob_sha": "f7856df7c988d2216dad39517d2826ffc480e7d3",
-      "sha256": "aacb688765da97329b5e769f4161bfddb1c5d1fb02381ff8dfb7937c5fa4f477",
-      "characters": 2539
+      "blob_sha": "1af28aacb4e95cd97b46c838a108dadf59832062",
+      "sha256": "35356b452bc52bcaaa45b95e4068807b69d5cc7e7e9e71d25d4f5d9bbecf0219",
+      "characters": 2540
     }
   ],
   "scope": {
     "source": "Fresh exact accepted/candidate dependency DAG; bounded separate Lake processes; all prerequisites finish first; no source-success reuse.",
     "kernel": "One unchanged pinned stock checker on a copied exact full closure; LEAN_NUM_THREADS 1 to 4; sampled process/thread/RSS guards; exact replay set with both roots where imported.",
-    "audit": "Candidate runner import-all scan of every owned declaration, theorem endpoints, and explicitly inventoried private proofs.",
+    "audit": "Every owned declaration is audited in an exact partition: modern modules use explicit import-all visibility; legacy roots/modules use ordinary legacy imports. Combined required endpoint and private-proof sets must match exactly.",
     "tests": "22 offline protocol/process tests plus actual seven-module Lean success and failure fixtures; real 25-module arithmetic pilot, 24 private proof chunks."
   },
   "fixes": [
@@ -72,9 +72,17 @@
   },
   "limitations": [
     "No local runtime is currently available.",
-    "No reconstructed helper/test byte has been executed yet.",
-    "Prior pre-outage scheduler tests do not validate these newly reconstructed bytes.",
+    "The 22 protocol/process tests and fresh seven-module source fixture passed in prior hosted attempts on unchanged scheduler helper bytes.",
+    "Prior hosted attempts failed at mixed legacy/modern audit imports before kernel replay; this corrected audit partition still requires fresh hosted validation.",
     "The wrappers are opt-in candidates and do not replace the accepted gate."
   ],
-  "workflow": ".github/workflows/lean-parallel-candidate.yml"
+  "workflow": ".github/workflows/lean-parallel-candidate.yml",
+  "audit_partition_repair": {
+    "previous_runs": [
+      44504678747,
+      44505669499,
+      44505832312
+    ],
+    "reason": "Modern import-all auditing and legacy-root auditing require separate Lean module modes; ownership is partitioned exactly and endpoint sets are recombined without duplicates."
+  }
 }

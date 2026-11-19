@@ -66,6 +66,6 @@ jobs:
             .candidate-artifacts/lean-parallel-protocol.log
             .candidate-artifacts/lean-parallel-candidate/**/*.json
             .candidate-artifacts/lean-parallel-candidate/**/*.log
-            .candidate-artifacts/lean-parallel-candidate/**/lean/ProofAudit.lean
+            .candidate-artifacts/lean-parallel-candidate/**/lean/ProofAudit*.lean
           if-no-files-found: warn
           retention-days: 14
