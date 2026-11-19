@@ -542,3 +542,7 @@ Exact source, axiom, and kernel receipts are recorded in `docs/verification`.
 The Motzkin evaluator, explicit rational interval witnesses, and narrow
 prime-257 minimum-pair-20 support certificate were registered separately.
 The remaining collection results are still in progress; Li has not started.
+
+## 2026-11-19: Rational-lattice and Gram components
+
+Registered the eight rectangular/rational-lattice sources and their 50 theorem endpoints after the complete hosted source, owned/private axiom, and stock-kernel gate passed. The six-speed spectrum remains partial; the norm components retain `hfour` and `hplane`.

@@ -1,0 +1,662 @@
+﻿2026-11-19T18:40:19.6787323Z Current runner version: '2.338.2'
+2026-11-19T18:40:19.6814196Z ##[group]Runner Image Provisioner
+2026-11-19T18:40:19.6815090Z Hosted Compute Agent
+2026-11-19T18:40:19.6815695Z Version: 20261103.629
+2026-11-19T18:40:19.6816632Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T18:40:19.6817851Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T18:40:19.6818587Z Worker ID: {342de593-ade6-428f-bccb-acde9defae34}
+2026-11-19T18:40:19.6819361Z Region: us-east-1
+2026-11-19T18:40:19.6819990Z Cloud: AWS
+2026-11-19T18:40:19.6820505Z ##[endgroup]
+2026-11-19T18:40:19.6822142Z ##[group]Operating System
+2026-11-19T18:40:19.6822775Z Ubuntu
+2026-11-19T18:40:19.6823321Z 26.04.1
+2026-11-19T18:40:19.6823838Z LTS
+2026-11-19T18:40:19.6824354Z ##[endgroup]
+2026-11-19T18:40:19.6824936Z ##[group]Runner Image
+2026-11-19T18:40:19.6825532Z Image: ubuntu-26.04
+2026-11-19T18:40:19.6826404Z Version: 20261111.82.6
+2026-11-19T18:40:19.6827709Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.82/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-19T18:40:19.6829346Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.82
+2026-11-19T18:40:19.6830363Z ##[endgroup]
+2026-11-19T18:40:19.6831509Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T18:40:19.6833898Z Contents: read
+2026-11-19T18:40:19.6834483Z Metadata: read
+2026-11-19T18:40:19.6835088Z ##[endgroup]
+2026-11-19T18:40:19.6838390Z Secret source: Actions
+2026-11-19T18:40:19.6839144Z Cache mode: write
+2026-11-19T18:40:19.6839834Z Prepare workflow directory
+2026-11-19T18:40:19.7069440Z Prepare all required actions
+2026-11-19T18:40:19.7108910Z Getting action download info
+2026-11-19T18:40:19.8668571Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-19T18:40:22.0362469Z Download action repository 'leanprover/lean-action@v1' (SHA:ba3fdfe5c4476c925da13bf11a005ddb47e47aee)
+2026-11-19T18:40:22.1243794Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-19T18:40:22.4676494Z Getting action download info
+2026-11-19T18:40:22.5488455Z Download action repository 'actions/cache@caa296126883cff596d87d8935842f9db880ef25' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-11-19T18:40:22.9051325Z Complete job name: verify
+2026-11-19T18:40:22.9779125Z ##[group]Run actions/checkout@v4
+2026-11-19T18:40:22.9780151Z with:
+2026-11-19T18:40:22.9780827Z   persist-credentials: false
+2026-11-19T18:40:22.9781765Z   repository: 1337isnot1337/solved-conjectures
+2026-11-19T18:40:22.9788251Z   token: ***
+2026-11-19T18:40:22.9788959Z   ssh-strict: true
+2026-11-19T18:40:22.9789702Z   ssh-user: git
+2026-11-19T18:40:22.9790377Z   clean: true
+2026-11-19T18:40:22.9791142Z   sparse-checkout-cone-mode: true
+2026-11-19T18:40:22.9791977Z   fetch-depth: 1
+2026-11-19T18:40:22.9792697Z   fetch-tags: false
+2026-11-19T18:40:22.9793419Z   show-progress: true
+2026-11-19T18:40:22.9794133Z   lfs: false
+2026-11-19T18:40:22.9794825Z   submodules: false
+2026-11-19T18:40:22.9795583Z   set-safe-directory: true
+2026-11-19T18:40:22.9796581Z   allow-unsafe-pr-checkout: false
+2026-11-19T18:40:22.9797650Z ##[endgroup]
+2026-11-19T18:40:26.6338713Z Syncing repository: 1337isnot1337/solved-conjectures
+2026-11-19T18:40:26.6340929Z ##[group]Getting Git version info
+2026-11-19T18:40:26.6341771Z Working directory is '/home/runner/work/solved-conjectures/solved-conjectures'
+2026-11-19T18:40:26.6342699Z [command]/usr/bin/git version
+2026-11-19T18:40:26.6343150Z git version 2.56.1
+2026-11-19T18:40:26.6344523Z ##[endgroup]
+2026-11-19T18:40:26.6349209Z Temporarily overriding HOME='/home/runner/work/_temp/5ab95353-c1eb-42d0-b026-caa7d9b0bd9d' before making global git config changes
+2026-11-19T18:40:26.6350038Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T18:40:26.6350851Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T18:40:26.6866884Z Deleting the contents of '/home/runner/work/solved-conjectures/solved-conjectures'
+2026-11-19T18:40:26.6868702Z ##[group]Initializing the repository
+2026-11-19T18:40:26.6869301Z [command]/usr/bin/git init /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T18:40:26.7673562Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T18:40:26.7674246Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T18:40:26.7674924Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T18:40:26.7675440Z hint: call:
+2026-11-19T18:40:26.7675781Z hint:
+2026-11-19T18:40:26.7676388Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T18:40:26.7676712Z hint:
+2026-11-19T18:40:26.7677043Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T18:40:26.7677546Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T18:40:26.7677907Z hint:
+2026-11-19T18:40:26.7678202Z hint: 	git branch -m <name>
+2026-11-19T18:40:26.7678478Z hint:
+2026-11-19T18:40:26.7678839Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T18:40:26.7691122Z Initialized empty Git repository in /home/runner/work/solved-conjectures/solved-conjectures/.git/
+2026-11-19T18:40:26.7701219Z [command]/usr/bin/git remote add origin https://github.com/1337isnot1337/solved-conjectures
+2026-11-19T18:40:26.7769298Z ##[endgroup]
+2026-11-19T18:40:26.7769812Z ##[group]Disabling automatic garbage collection
+2026-11-19T18:40:26.7771871Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-19T18:40:26.7795182Z ##[endgroup]
+2026-11-19T18:40:26.7795627Z ##[group]Setting up auth
+2026-11-19T18:40:26.7799937Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T18:40:26.7822282Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T18:40:27.0978211Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T18:40:27.1003545Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T18:40:27.1201106Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T18:40:27.1220287Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T18:40:27.1392334Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T18:40:27.1417323Z ##[endgroup]
+2026-11-19T18:40:27.1417943Z ##[group]Fetching the repository
+2026-11-19T18:40:27.1424060Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e815f14555472b873683f491bc878eb16d4eb0a4:refs/remotes/origin/main
+2026-11-19T18:40:29.6256666Z From https://github.com/1337isnot1337/solved-conjectures
+2026-11-19T18:40:29.6257254Z  * [new ref]         e815f14555472b873683f491bc878eb16d4eb0a4 -> origin/main
+2026-11-19T18:40:29.6266935Z ##[endgroup]
+2026-11-19T18:40:29.6267572Z ##[group]Determining the checkout info
+2026-11-19T18:40:29.6268157Z ##[endgroup]
+2026-11-19T18:40:29.6270108Z [command]/usr/bin/git sparse-checkout disable
+2026-11-19T18:40:29.6323273Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-19T18:40:29.6349262Z ##[group]Checking out the ref
+2026-11-19T18:40:29.6349729Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-19T18:40:30.5573668Z Switched to a new branch 'main'
+2026-11-19T18:40:30.5580410Z branch 'main' set up to track 'origin/main'.
+2026-11-19T18:40:30.5619382Z ##[endgroup]
+2026-11-19T18:40:30.5665116Z [command]/usr/bin/git log -1 --format=%H
+2026-11-19T18:40:30.5682677Z e815f14555472b873683f491bc878eb16d4eb0a4
+2026-11-19T18:40:30.5690228Z ##[group]Removing auth
+2026-11-19T18:40:30.5692536Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T18:40:30.5715792Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T18:40:30.5910081Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T18:40:30.5925708Z http.https://github.com/.extraheader
+2026-11-19T18:40:30.5929942Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-19T18:40:30.5951627Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T18:40:30.6129303Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T18:40:30.6156854Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T18:40:30.6335003Z ##[endgroup]
+2026-11-19T18:40:30.6490028Z ##[group]Run python3 -m py_compile scripts/verify_rectangular_lattice_exact.py
+2026-11-19T18:40:30.6490551Z [36;1mpython3 -m py_compile scripts/verify_rectangular_lattice_exact.py[0m
+2026-11-19T18:40:30.6490963Z [36;1mpython3 scripts/verify_rectangular_lattice_exact.py algebra --plan[0m
+2026-11-19T18:40:30.6512283Z shell: /usr/bin/bash -e {0}
+2026-11-19T18:40:30.6512577Z ##[endgroup]
+2026-11-19T18:40:30.8534320Z {
+2026-11-19T18:40:30.8534611Z   "modules": [
+2026-11-19T18:40:30.8535016Z     "Conjectures.HaralambisFaces",
+2026-11-19T18:40:30.8535474Z     "Conjectures.HaralambisOrientation",
+2026-11-19T18:40:30.8535769Z     "Conjectures.HaralambisPeriods",
+2026-11-19T18:40:30.8536282Z     "Conjectures.Loneliness",
+2026-11-19T18:40:30.8536652Z     "Conjectures.LonelinessCoalescence",
+2026-11-19T18:40:30.8536945Z     "Conjectures.LonelinessNearestPlane",
+2026-11-19T18:40:30.8537250Z     "Conjectures.LonelinessKZBasisVectors",
+2026-11-19T18:40:30.8537775Z     "Conjectures.LonelinessLatticeCovolume",
+2026-11-19T18:40:30.8538087Z     "Conjectures.LonelinessPrefixProduct",
+2026-11-19T18:40:30.8538380Z     "Conjectures.LonelinessRectangularGram",
+2026-11-19T18:40:30.8538700Z     "Conjectures.NonmixedGapDensity",
+2026-11-19T18:40:30.8538985Z     "Conjectures.HaralambisDefects",
+2026-11-19T18:40:30.8539277Z     "Conjectures.LonelinessContinuity",
+2026-11-19T18:40:30.8539562Z     "Conjectures.LonelinessFiveFamily",
+2026-11-19T18:40:30.8539847Z     "Conjectures.LonelinessCoordinateSubspace",
+2026-11-19T18:40:30.8540133Z     "Conjectures.LonelinessKZBasisGram",
+2026-11-19T18:40:30.8540453Z     "Conjectures.LonelinessNearestPlaneRelative",
+2026-11-19T18:40:30.8540794Z     "Conjectures.LonelinessPrefixProductTables",
+2026-11-19T18:40:30.8541131Z     "Conjectures.LonelinessRectangularGramLowerBound",
+2026-11-19T18:40:30.8541483Z     "Conjectures.NonmixedGapPeriodic",
+2026-11-19T18:40:30.8541745Z     "Conjectures.NonmixedGapResidues",
+2026-11-19T18:40:30.8542036Z     "Conjectures.LonelinessRational",
+2026-11-19T18:40:30.8542327Z     "Conjectures.LonelinessCriticalBase",
+2026-11-19T18:40:30.8542609Z     "Conjectures.LonelinessCriticalSecond",
+2026-11-19T18:40:30.8542912Z     "Conjectures.LonelinessCoordinateClasses",
+2026-11-19T18:40:30.8543207Z     "Conjectures.LonelinessKZBasisInteger",
+2026-11-19T18:40:30.8543497Z     "Conjectures.LonelinessKZBasisStep",
+2026-11-19T18:40:30.8543809Z     "Conjectures.LonelinessKZProductCertificate",
+2026-11-19T18:40:30.8544130Z     "Conjectures.LonelinessPacking",
+2026-11-19T18:40:30.8544406Z     "Conjectures.HaralambisIntervals",
+2026-11-19T18:40:30.8544687Z     "Conjectures.LonelinessSubspaceDensity",
+2026-11-19T18:40:30.8545009Z     "Conjectures.LonelinessCriticalFamilies",
+2026-11-19T18:40:30.8545608Z     "Conjectures.LonelinessIntegerDirection",
+2026-11-19T18:40:30.8545906Z     "Conjectures.LonelinessKZBasisOperations",
+2026-11-19T18:40:30.8546510Z     "Conjectures.LonelinessKZProductOrder",
+2026-11-19T18:40:30.8546827Z     "Conjectures.LonelinessPackingLower",
+2026-11-19T18:40:30.8547115Z     "Conjectures.HaralambisCounting",
+2026-11-19T18:40:30.8547419Z     "Conjectures.LonelinessHyperplaneArithmetic",
+2026-11-19T18:40:30.8547716Z     "Conjectures.LonelinessNearestPlaneValue",
+2026-11-19T18:40:30.8548035Z     "Conjectures.LonelinessNormalization",
+2026-11-19T18:40:30.8548326Z     "Conjectures.LonelinessRationalSubspace",
+2026-11-19T18:40:30.8548631Z     "Conjectures.LonelinessKZBasisReduction",
+2026-11-19T18:40:30.8548951Z     "Conjectures.LonelinessKZProductAssembly",
+2026-11-19T18:40:30.8549238Z     "Conjectures.HaralambisPairSum",
+2026-11-19T18:40:30.8549550Z     "Conjectures.LonelinessPrimitiveBasis",
+2026-11-19T18:40:30.8549828Z     "Conjectures.HaralambisDensity",
+2026-11-19T18:40:30.8550115Z     "Conjectures.LonelinessCoalescenceValue",
+2026-11-19T18:40:30.8550445Z     "Conjectures.LonelinessRationalLatticeCore",
+2026-11-19T18:40:30.8550738Z     "Conjectures.LonelinessKZGeneral",
+2026-11-19T18:40:30.8551020Z     "Conjectures.LonelinessPrimitiveSpeeds",
+2026-11-19T18:40:30.8551435Z     "Conjectures.LonelinessRectangularLattice",
+2026-11-19T18:40:30.8551717Z     "Conjectures.HaralambisTheorem",
+2026-11-19T18:40:30.8552042Z     "Conjectures.LonelinessNearestPlanePrefix",
+2026-11-19T18:40:30.8552375Z     "Conjectures.LonelinessRationalLattice",
+2026-11-19T18:40:30.8552670Z     "Conjectures.LonelinessKZSmallData",
+2026-11-19T18:40:30.8552964Z     "Conjectures.LonelinessRationalLatticeIndex",
+2026-11-19T18:40:30.8553257Z     "Conjectures.LonelinessSmallRunner",
+2026-11-19T18:40:30.8553578Z     "Conjectures.LonelinessNormGeometry",
+2026-11-19T18:40:30.8553888Z     "Conjectures.LonelinessSixSpectrumNormGeometry",
+2026-11-19T18:40:30.8554222Z     "Conjectures.LonelinessSixSpectrumLatticeNorm"
+2026-11-19T18:40:30.8554516Z   ],
+2026-11-19T18:40:30.8554722Z   "required": [
+2026-11-19T18:40:30.8555038Z     "Loneliness.RectangularLattice.left_inverse_mulVec",
+2026-11-19T18:40:30.8555369Z     "Loneliness.RectangularLattice.mulVec_injective",
+2026-11-19T18:40:30.8555695Z     "Loneliness.RectangularLattice.real_left_inverse",
+2026-11-19T18:40:30.8556223Z     "Loneliness.RectangularLattice.parameters_integral",
+2026-11-19T18:40:30.8556660Z     "Loneliness.RectangularLattice.integral_points_iff",
+2026-11-19T18:40:30.8557029Z     "Loneliness.RectangularLattice.isUnimodular_image_iff",
+2026-11-19T18:40:30.8557380Z     "Loneliness.RectangularLattice.imageBasis_apply",
+2026-11-19T18:40:30.8557711Z     "Loneliness.RectangularLattice.exists_basis_first_image",
+2026-11-19T18:40:30.8558118Z     "Loneliness.RectangularLattice.exists_image_basis_first",
+2026-11-19T18:40:30.8558462Z     "Loneliness.RectangularLattice.gram_cast",
+2026-11-19T18:40:30.8558770Z     "Loneliness.RectangularLattice.gram_det_cast",
+2026-11-19T18:40:30.8559084Z     "Loneliness.RectangularLattice.basis_det_sq",
+2026-11-19T18:40:30.8559400Z     "Loneliness.RectangularLattice.gram_det_image_basis",
+2026-11-19T18:40:30.8559809Z     "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_left_inverse",
+2026-11-19T18:40:30.8560256Z     "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_apply",
+2026-11-19T18:40:30.8560681Z     "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_gram_det",
+2026-11-19T18:40:30.8561155Z     "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_integral_points",
+2026-11-19T18:40:30.8561593Z     "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_left_inverse",
+2026-11-19T18:40:30.8562027Z     "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_apply",
+2026-11-19T18:40:30.8562447Z     "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_gram_det",
+2026-11-19T18:40:30.8562874Z     "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_integral_points",
+2026-11-19T18:40:30.8563313Z     "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_left_inverse",
+2026-11-19T18:40:30.8563802Z     "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_apply",
+2026-11-19T18:40:30.8564223Z     "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_gram_det",
+2026-11-19T18:40:30.8564696Z     "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_integral_points",
+2026-11-19T18:40:30.8565080Z     "Loneliness.RectangularGram.det_mul_eq_sum_minors",
+2026-11-19T18:40:30.8565421Z     "Loneliness.RectangularGram.gram_det_eq_sum_minors_sq",
+2026-11-19T18:40:30.8565755Z     "Loneliness.RectangularGram.int_gram_det_nonneg",
+2026-11-19T18:40:30.8566227Z     "Loneliness.RectangularGram.int_minor_sq_le_gram_det",
+2026-11-19T18:40:30.8566712Z     "Loneliness.LatticeCovolume.orthonormal_fundamentalDomain_volume",
+2026-11-19T18:40:30.8567088Z     "Loneliness.LatticeCovolume.gram_det_eq_basis_det_sq",
+2026-11-19T18:40:30.8567506Z     "Loneliness.LatticeCovolume.covolume_sq_eq_gram_det",
+2026-11-19T18:40:30.8567890Z     "Loneliness.LatticeCovolume.covolume_sq_eq_int_gram_det",
+2026-11-19T18:40:30.8568294Z     "Loneliness.LatticeCovolume.one_le_covolume_sq_of_integral_gram",
+2026-11-19T18:40:30.8568695Z     "Loneliness.RectangularGramLowerBound.normalized_gram_det",
+2026-11-19T18:40:30.8569169Z     "Loneliness.RectangularGramLowerBound.normalized_gram_det_ge_six_of_rows",
+2026-11-19T18:40:30.8569650Z     "Loneliness.RectangularGramLowerBound.picked_det_sq_eq_one_of_gram_lt_six",
+2026-11-19T18:40:30.8570085Z     "Loneliness.RectangularGramLowerBound.gram_det_ge_six",
+2026-11-19T18:40:30.8570447Z     "Loneliness.RationalLattice.space_eq_span",
+2026-11-19T18:40:30.8570772Z     "Loneliness.RationalLattice.integerPoints_span_top",
+2026-11-19T18:40:30.8571098Z     "Loneliness.RationalLattice.integerPoints_finrank",
+2026-11-19T18:40:30.8571481Z     "Loneliness.RationalLattice.covolume_sq_eq_basisMatrix_gram_det",
+2026-11-19T18:40:30.8571833Z     "Loneliness.RationalLattice.one_le_covolume_sq",
+2026-11-19T18:40:30.8572141Z     "Loneliness.RationalLattice.six_le_covolume_sq",
+2026-11-19T18:40:30.8572499Z     "Loneliness.SixSpectrumLatticeNorm.norm_lt_rank_four",
+2026-11-19T18:40:30.8572850Z     "Loneliness.SixSpectrumLatticeNorm.norm_lt_five_constant",
+2026-11-19T18:40:30.8573244Z     "Loneliness.SixSpectrumLatticeNorm.norm_lt_six_constant",
+2026-11-19T18:40:30.8573619Z     "Loneliness.RationalLatticeIndex.exists_integer_gram_factor",
+2026-11-19T18:40:30.8574016Z     "Loneliness.RationalLatticeIndex.covolume_sq_le_gram_det",
+2026-11-19T18:40:30.8574420Z     "Loneliness.RationalLatticeIndex.covolume_sq_le_gram_det_of_independent"
+2026-11-19T18:40:30.8574749Z   ],
+2026-11-19T18:40:30.8574957Z   "modern": {
+2026-11-19T18:40:30.8575182Z     "Conjectures.HaralambisFaces": false,
+2026-11-19T18:40:30.8575817Z     "Conjectures.HaralambisOrientation": false,
+2026-11-19T18:40:30.8576333Z     "Conjectures.HaralambisPeriods": false,
+2026-11-19T18:40:30.8576618Z     "Conjectures.Loneliness": false,
+2026-11-19T18:40:30.8576906Z     "Conjectures.LonelinessCoalescence": false,
+2026-11-19T18:40:30.8577217Z     "Conjectures.LonelinessNearestPlane": false,
+2026-11-19T18:40:30.8577530Z     "Conjectures.LonelinessKZBasisVectors": false,
+2026-11-19T18:40:30.8577866Z     "Conjectures.LonelinessLatticeCovolume": true,
+2026-11-19T18:40:30.8578224Z     "Conjectures.LonelinessPrefixProduct": false,
+2026-11-19T18:40:30.8578537Z     "Conjectures.LonelinessRectangularGram": true,
+2026-11-19T18:40:30.8578845Z     "Conjectures.NonmixedGapDensity": false,
+2026-11-19T18:40:30.8579162Z     "Conjectures.HaralambisDefects": false,
+2026-11-19T18:40:30.8579475Z     "Conjectures.LonelinessContinuity": false,
+2026-11-19T18:40:30.8579769Z     "Conjectures.LonelinessFiveFamily": false,
+2026-11-19T18:40:30.8580085Z     "Conjectures.LonelinessCoordinateSubspace": false,
+2026-11-19T18:40:30.8580409Z     "Conjectures.LonelinessKZBasisGram": false,
+2026-11-19T18:40:30.8580746Z     "Conjectures.LonelinessNearestPlaneRelative": false,
+2026-11-19T18:40:30.8581098Z     "Conjectures.LonelinessPrefixProductTables": false,
+2026-11-19T18:40:30.8581530Z     "Conjectures.LonelinessRectangularGramLowerBound": true,
+2026-11-19T18:40:30.8581901Z     "Conjectures.NonmixedGapPeriodic": false,
+2026-11-19T18:40:30.8582203Z     "Conjectures.NonmixedGapResidues": false,
+2026-11-19T18:40:30.8582507Z     "Conjectures.LonelinessRational": false,
+2026-11-19T18:40:30.8582804Z     "Conjectures.LonelinessCriticalBase": false,
+2026-11-19T18:40:30.8583106Z     "Conjectures.LonelinessCriticalSecond": false,
+2026-11-19T18:40:30.8583412Z     "Conjectures.LonelinessCoordinateClasses": false,
+2026-11-19T18:40:30.8583747Z     "Conjectures.LonelinessKZBasisInteger": false,
+2026-11-19T18:40:30.8584065Z     "Conjectures.LonelinessKZBasisStep": false,
+2026-11-19T18:40:30.8584388Z     "Conjectures.LonelinessKZProductCertificate": false,
+2026-11-19T18:40:30.8584731Z     "Conjectures.LonelinessPacking": false,
+2026-11-19T18:40:30.8585004Z     "Conjectures.HaralambisIntervals": false,
+2026-11-19T18:40:30.8585330Z     "Conjectures.LonelinessSubspaceDensity": false,
+2026-11-19T18:40:30.8585671Z     "Conjectures.LonelinessCriticalFamilies": false,
+2026-11-19T18:40:30.8586127Z     "Conjectures.LonelinessIntegerDirection": false,
+2026-11-19T18:40:30.8586470Z     "Conjectures.LonelinessKZBasisOperations": false,
+2026-11-19T18:40:30.8586861Z     "Conjectures.LonelinessKZProductOrder": false,
+2026-11-19T18:40:30.8587206Z     "Conjectures.LonelinessPackingLower": false,
+2026-11-19T18:40:30.8587531Z     "Conjectures.HaralambisCounting": false,
+2026-11-19T18:40:30.8587845Z     "Conjectures.LonelinessHyperplaneArithmetic": false,
+2026-11-19T18:40:30.8588186Z     "Conjectures.LonelinessNearestPlaneValue": false,
+2026-11-19T18:40:30.8588550Z     "Conjectures.LonelinessNormalization": false,
+2026-11-19T18:40:30.8588890Z     "Conjectures.LonelinessRationalSubspace": false,
+2026-11-19T18:40:30.8589203Z     "Conjectures.LonelinessKZBasisReduction": false,
+2026-11-19T18:40:30.8589508Z     "Conjectures.LonelinessKZProductAssembly": false,
+2026-11-19T18:40:30.8589834Z     "Conjectures.HaralambisPairSum": false,
+2026-11-19T18:40:30.8590128Z     "Conjectures.LonelinessPrimitiveBasis": false,
+2026-11-19T18:40:30.8590474Z     "Conjectures.HaralambisDensity": false,
+2026-11-19T18:40:30.8590773Z     "Conjectures.LonelinessCoalescenceValue": false,
+2026-11-19T18:40:30.8591096Z     "Conjectures.LonelinessRationalLatticeCore": false,
+2026-11-19T18:40:30.8591440Z     "Conjectures.LonelinessKZGeneral": false,
+2026-11-19T18:40:30.8591753Z     "Conjectures.LonelinessPrimitiveSpeeds": false,
+2026-11-19T18:40:30.8592108Z     "Conjectures.LonelinessRectangularLattice": false,
+2026-11-19T18:40:30.8592425Z     "Conjectures.HaralambisTheorem": false,
+2026-11-19T18:40:30.8592737Z     "Conjectures.LonelinessNearestPlanePrefix": false,
+2026-11-19T18:40:30.8593113Z     "Conjectures.LonelinessRationalLattice": false,
+2026-11-19T18:40:30.8593422Z     "Conjectures.LonelinessKZSmallData": false,
+2026-11-19T18:40:30.8593754Z     "Conjectures.LonelinessRationalLatticeIndex": false,
+2026-11-19T18:40:30.8594078Z     "Conjectures.LonelinessSmallRunner": false,
+2026-11-19T18:40:30.8594428Z     "Conjectures.LonelinessNormGeometry": false,
+2026-11-19T18:40:30.8594805Z     "Conjectures.LonelinessSixSpectrumNormGeometry": false,
+2026-11-19T18:40:30.8595301Z     "Conjectures.LonelinessSixSpectrumLatticeNorm": false
+2026-11-19T18:40:30.8595723Z   },
+2026-11-19T18:40:30.8595954Z   "source_policy": {
+2026-11-19T18:40:30.8596493Z     "fresh_project_objects": true,
+2026-11-19T18:40:30.8596794Z     "linter_override": false,
+2026-11-19T18:40:30.8597049Z     "warning_as_error": true
+2026-11-19T18:40:30.8597288Z   }
+2026-11-19T18:40:30.8597464Z }
+2026-11-19T18:40:30.8924906Z ##[warning]Unexpected input(s) 'check-lean-environment', valid inputs are ['auto-config', 'build', 'test', 'lint', 'mk_all-check', 'mk_all-args', 'build-args', 'test-args', 'lint-args', 'use-mathlib-cache', 'check-reservoir-eligibility', 'leanchecker', 'leanchecker-args', 'lean4checker', 'nanoda', 'nanoda-allow-sorry', 'axiom-audit', 'axiom-audit-allow', 'axiom-audit-root', 'use-github-cache', 'lake-package-directory', 'reinstall-transient-toolchain']
+2026-11-19T18:40:30.8938152Z ##[group]Run leanprover/lean-action@v1
+2026-11-19T18:40:30.8938440Z with:
+2026-11-19T18:40:30.8938706Z   lake-package-directory: lean
+2026-11-19T18:40:30.8938966Z   auto-config: false
+2026-11-19T18:40:30.8939190Z   use-mathlib-cache: true
+2026-11-19T18:40:30.8939437Z   build: false
+2026-11-19T18:40:30.8939643Z   test: false
+2026-11-19T18:40:30.8939854Z   lint: false
+2026-11-19T18:40:30.8940086Z   check-lean-environment: false
+2026-11-19T18:40:30.8940315Z   mk_all-check: false
+2026-11-19T18:40:30.8940666Z   check-reservoir-eligibility: false
+2026-11-19T18:40:30.8940913Z   leanchecker: false
+2026-11-19T18:40:30.8941150Z   lean4checker: false
+2026-11-19T18:40:30.8941379Z   nanoda: false
+2026-11-19T18:40:30.8941636Z   nanoda-allow-sorry: true
+2026-11-19T18:40:30.8941865Z   axiom-audit: false
+2026-11-19T18:40:30.8942126Z   axiom-audit-allow: propext,Classical.choice,Quot.sound
+2026-11-19T18:40:30.8942450Z   use-github-cache: true
+2026-11-19T18:40:30.8942721Z   reinstall-transient-toolchain: false
+2026-11-19T18:40:30.8942979Z ##[endgroup]
+2026-11-19T18:40:30.9000321Z ##[start-action display=install elan;id=__leanprover_lean-action.__run]
+2026-11-19T18:40:30.9025045Z ##[group]Run : Install Elan
+2026-11-19T18:40:30.9025333Z [36;1m: Install Elan[0m
+2026-11-19T18:40:30.9025618Z [36;1m${GITHUB_ACTION_PATH}/scripts/install_elan.sh[0m
+2026-11-19T18:40:30.9044674Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T18:40:30.9045119Z ##[endgroup]
+2026-11-19T18:40:30.9112365Z ##[group]Elan Installation Output
+2026-11-19T18:40:30.9445833Z info: downloading installer
+2026-11-19T18:40:31.6518348Z info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+2026-11-19T18:40:34.8657632Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+2026-11-19T18:40:41.1908980Z Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+2026-11-19T18:40:41.2313116Z Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+2026-11-19T18:40:41.2338003Z ##[endgroup]
+2026-11-19T18:40:41.2338160Z 
+2026-11-19T18:40:41.2354725Z ##[end-action id=__leanprover_lean-action.__run;outcome=success;conclusion=success;duration_ms=10335]
+2026-11-19T18:40:41.2358161Z ##[start-action display=Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25;id=__leanprover_lean-action.cache-restore]
+2026-11-19T18:40:41.4105953Z ##[group]Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25
+2026-11-19T18:40:41.4106587Z with:
+2026-11-19T18:40:41.4106821Z   path: lean/.lake
+2026-11-19T18:40:41.4107518Z   key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-e815f14555472b873683f491bc878eb16d4eb0a4
+2026-11-19T18:40:41.4108566Z   restore-keys: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07
+2026-11-19T18:40:41.4109225Z   enableCrossOsArchive: false
+2026-11-19T18:40:41.4109483Z   fail-on-cache-miss: false
+2026-11-19T18:40:41.4109719Z   lookup-only: false
+2026-11-19T18:40:41.4109948Z ##[endgroup]
+2026-11-19T18:40:41.5907929Z Cache hit for restore-key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-c23008edd4b2546860749faaedae712e0bfc0937
+2026-11-19T18:40:42.6648089Z Received 163577856 of 2103017650 (7.8%), 156.0 MBs/sec
+2026-11-19T18:40:43.6690722Z Received 448790528 of 2103017650 (21.3%), 214.0 MBs/sec
+2026-11-19T18:40:44.6662468Z Received 759169024 of 2103017650 (36.1%), 241.3 MBs/sec
+2026-11-19T18:40:45.6650030Z Received 939524096 of 2103017650 (44.7%), 223.9 MBs/sec
+2026-11-19T18:40:46.8469259Z Received 1207959552 of 2103017650 (57.4%), 222.2 MBs/sec
+2026-11-19T18:40:48.0380379Z Received 1476395008 of 2103017650 (70.2%), 220.9 MBs/sec
+2026-11-19T18:40:49.3087777Z Received 1744830464 of 2103017650 (83.0%), 217.6 MBs/sec
+2026-11-19T18:40:50.3107790Z Received 1992294400 of 2103017650 (94.7%), 219.8 MBs/sec
+2026-11-19T18:40:50.8313143Z Received 2103017650 of 2103017650 (100.0%), 218.7 MBs/sec
+2026-11-19T18:40:50.8314744Z Cache Size: ~2006 MB (2103017650 B)
+2026-11-19T18:40:50.8378404Z [command]/usr/bin/tar -xf /home/runner/work/_temp/d4396bf0-0ec7-4519-81af-e08ba16f98dc/cache.tzst -P -C /home/runner/work/solved-conjectures/solved-conjectures --use-compress-program unzstd
+2026-11-19T18:41:26.6461171Z Cache restored successfully
+2026-11-19T18:41:26.7146127Z Cache restored from key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-c23008edd4b2546860749faaedae712e0bfc0937
+2026-11-19T18:41:26.7277473Z ##[end-action id=__leanprover_lean-action.cache-restore;outcome=success;conclusion=success;duration_ms=45491]
+2026-11-19T18:41:26.7287262Z ##[start-action display=configure `lean-action`;id=__leanprover_lean-action.config]
+2026-11-19T18:41:26.7339216Z ##[group]Run : Configure Lean Action
+2026-11-19T18:41:26.7339566Z [36;1m: Configure Lean Action[0m
+2026-11-19T18:41:26.7339860Z [36;1m${GITHUB_ACTION_PATH}/scripts/config.sh[0m
+2026-11-19T18:41:26.7407587Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T18:41:26.7408021Z env:
+2026-11-19T18:41:26.7408335Z   AUTO_CONFIG: false
+2026-11-19T18:41:26.7408594Z   BUILD: false
+2026-11-19T18:41:26.7408842Z   TEST: false
+2026-11-19T18:41:26.7409047Z   LINT: false
+2026-11-19T18:41:26.7409317Z ##[endgroup]
+2026-11-19T18:41:26.7502176Z ##[group]Configure lean-action
+2026-11-19T18:41:26.7564316Z ##[end-action id=__leanprover_lean-action.config;outcome=success;conclusion=success;duration_ms=27]
+2026-11-19T18:41:26.7566734Z ##[start-action display=reinstall transient toolchain;id=__leanprover_lean-action.__run_2]
+2026-11-19T18:41:26.7572375Z ##[end-action id=__leanprover_lean-action.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:41:26.7574955Z ##[start-action display=ensure all files are imported;id=__leanprover_lean-action.mk_all]
+2026-11-19T18:41:26.7579335Z ##[end-action id=__leanprover_lean-action.mk_all;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:41:26.7581009Z ##[start-action display=detect mathlib;id=__leanprover_lean-action.detect-mathlib]
+2026-11-19T18:41:26.7584244Z ##[end-action id=__leanprover_lean-action.detect-mathlib;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:41:26.7585958Z ##[start-action display=get mathlib cache;id=__leanprover_lean-action.__run_3]
+2026-11-19T18:41:26.7621818Z ##[group]Run : Get Mathlib Cache
+2026-11-19T18:41:26.7622107Z [36;1m: Get Mathlib Cache[0m
+2026-11-19T18:41:26.7622412Z [36;1mecho "::group::Mathlib Cache"[0m
+2026-11-19T18:41:26.7622800Z [36;1m# Use cache.mathlib.org unless the workflow sets `MATHLIB_CACHE_GET_URL`.[0m
+2026-11-19T18:41:26.7623294Z [36;1m# The cache client reads an empty value as a URL, so unset it to get the client's default.[0m
+2026-11-19T18:41:26.7623709Z [36;1mif [ -z "${MATHLIB_CACHE_GET_URL+x}" ]; then[0m
+2026-11-19T18:41:26.7624111Z [36;1m  export MATHLIB_CACHE_GET_URL="https://cache.mathlib.org/mathlib4"[0m
+2026-11-19T18:41:26.7624508Z [36;1melif [ -z "$MATHLIB_CACHE_GET_URL" ]; then[0m
+2026-11-19T18:41:26.7624816Z [36;1m  unset MATHLIB_CACHE_GET_URL[0m
+2026-11-19T18:41:26.7625120Z [36;1mfi[0m
+2026-11-19T18:41:26.7625373Z [36;1mlake exe cache get[0m
+2026-11-19T18:41:26.7625624Z [36;1mecho "::endgroup::"[0m
+2026-11-19T18:41:26.7625886Z [36;1mecho[0m
+2026-11-19T18:41:26.7641299Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T18:41:26.7641628Z ##[endgroup]
+2026-11-19T18:41:26.7694178Z ##[group]Mathlib Cache
+2026-11-19T18:41:29.3747694Z Current branch: HEAD
+2026-11-19T18:41:29.3749389Z Using cache from origin: (some leanprover-community/mathlib4)
+2026-11-19T18:41:29.3749993Z Attempting to download 9031 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4
+2026-11-19T18:41:29.4825611Z 
+2026-11-19T18:41:29.5819811Z Downloaded: 9 file(s) [attempted 9/9031 = 0%, 948 KB/s]
+2026-11-19T18:41:29.6819977Z Downloaded: 215 file(s) [attempted 215/9031 = 2%, 1149 KB/s]
+2026-11-19T18:41:29.7840012Z Downloaded: 430 file(s) [attempted 430/9031 = 4%, 1250 KB/s]
+2026-11-19T18:41:29.8838918Z Downloaded: 645 file(s) [attempted 645/9031 = 7%, 2648 KB/s]
+2026-11-19T18:41:29.9840711Z Downloaded: 863 file(s) [attempted 863/9031 = 9%, 1504 KB/s]
+2026-11-19T18:41:30.0924833Z Downloaded: 1081 file(s) [attempted 1081/9031 = 11%, 551 KB/s]
+2026-11-19T18:41:30.1921525Z Downloaded: 1273 file(s) [attempted 1273/9031 = 14%, 795 KB/s]
+2026-11-19T18:41:30.2943933Z Downloaded: 1420 file(s) [attempted 1420/9031 = 15%, 463 KB/s]
+2026-11-19T18:41:30.3939662Z Downloaded: 1626 file(s) [attempted 1626/9031 = 18%, 2861 KB/s]
+2026-11-19T18:41:30.4948645Z Downloaded: 1830 file(s) [attempted 1830/9031 = 20%, 706 KB/s]
+2026-11-19T18:41:30.5952130Z Downloaded: 2014 file(s) [attempted 2014/9031 = 22%, 1521 KB/s]
+2026-11-19T18:41:30.6952598Z Downloaded: 2204 file(s) [attempted 2204/9031 = 24%, 557 KB/s]
+2026-11-19T18:41:30.7964673Z Downloaded: 2419 file(s) [attempted 2419/9031 = 26%, 619 KB/s]
+2026-11-19T18:41:30.8963892Z Downloaded: 2600 file(s) [attempted 2600/9031 = 28%, 795 KB/s]
+2026-11-19T18:41:30.9960952Z Downloaded: 2725 file(s) [attempted 2725/9031 = 30%, 925 KB/s]
+2026-11-19T18:41:31.0967664Z Downloaded: 2922 file(s) [attempted 2922/9031 = 32%, 209 KB/s]
+2026-11-19T18:41:31.1979934Z Downloaded: 3124 file(s) [attempted 3124/9031 = 34%, 4295 KB/s]
+2026-11-19T18:41:31.3014226Z Downloaded: 3323 file(s) [attempted 3323/9031 = 36%, 135 KB/s]
+2026-11-19T18:41:31.4008441Z Downloaded: 3558 file(s) [attempted 3558/9031 = 39%, 383 KB/s]
+2026-11-19T18:41:31.5053291Z Downloaded: 3765 file(s) [attempted 3765/9031 = 41%, 359 KB/s]
+2026-11-19T18:41:31.6052941Z Downloaded: 3953 file(s) [attempted 3953/9031 = 43%, 197 KB/s]
+2026-11-19T18:41:31.7059282Z Downloaded: 4111 file(s) [attempted 4111/9031 = 45%, 1910 KB/s]
+2026-11-19T18:41:31.8060516Z Downloaded: 4318 file(s) [attempted 4318/9031 = 47%, 1252 KB/s]
+2026-11-19T18:41:31.9088283Z Downloaded: 4512 file(s) [attempted 4512/9031 = 49%, 422 KB/s]
+2026-11-19T18:41:32.0101229Z Downloaded: 4715 file(s) [attempted 4715/9031 = 52%, 3277 KB/s]
+2026-11-19T18:41:32.1098519Z Downloaded: 4915 file(s) [attempted 4915/9031 = 54%, 974 KB/s]
+2026-11-19T18:41:32.2099006Z Downloaded: 5130 file(s) [attempted 5130/9031 = 56%, 2489 KB/s]
+2026-11-19T18:41:32.3099974Z Downloaded: 5295 file(s) [attempted 5295/9031 = 58%, 652 KB/s]
+2026-11-19T18:41:32.4105831Z Downloaded: 5443 file(s) [attempted 5443/9031 = 60%, 1929 KB/s]
+2026-11-19T18:41:32.5117411Z Downloaded: 5610 file(s) [attempted 5610/9031 = 62%, 7709 KB/s]
+2026-11-19T18:41:32.6119265Z Downloaded: 5816 file(s) [attempted 5816/9031 = 64%, 1476 KB/s]
+2026-11-19T18:41:32.7108284Z Downloaded: 6044 file(s) [attempted 6044/9031 = 66%, 286 KB/s]
+2026-11-19T18:41:32.8137903Z Downloaded: 6287 file(s) [attempted 6287/9031 = 69%, 1373 KB/s]
+2026-11-19T18:41:32.9164106Z Downloaded: 6485 file(s) [attempted 6485/9031 = 71%, 6127 KB/s]
+2026-11-19T18:41:33.0160587Z Downloaded: 6647 file(s) [attempted 6647/9031 = 73%, 1955 KB/s]
+2026-11-19T18:41:33.1160529Z Downloaded: 6807 file(s) [attempted 6807/9031 = 75%, 7439 KB/s]
+2026-11-19T18:41:33.2169030Z Downloaded: 7012 file(s) [attempted 7012/9031 = 77%, 2844 KB/s]
+2026-11-19T18:41:33.3168494Z Downloaded: 7233 file(s) [attempted 7233/9031 = 80%, 5985 KB/s]
+2026-11-19T18:41:33.4172323Z Downloaded: 7452 file(s) [attempted 7452/9031 = 82%, 2495 KB/s]
+2026-11-19T18:41:33.5202700Z Downloaded: 7677 file(s) [attempted 7677/9031 = 85%, 1644 KB/s]
+2026-11-19T18:41:33.6205873Z Downloaded: 7888 file(s) [attempted 7888/9031 = 87%, 452 KB/s]
+2026-11-19T18:41:33.7210055Z Downloaded: 8029 file(s) [attempted 8029/9031 = 88%, 1980 KB/s]
+2026-11-19T18:41:33.8209601Z Downloaded: 8221 file(s) [attempted 8221/9031 = 91%, 5375 KB/s]
+2026-11-19T18:41:33.9227637Z Downloaded: 8405 file(s) [attempted 8405/9031 = 93%, 3734 KB/s]
+2026-11-19T18:41:34.0407535Z Downloaded: 8602 file(s) [attempted 8602/9031 = 95%, 722 KB/s]
+2026-11-19T18:41:34.1400379Z Downloaded: 8613 file(s) [attempted 8613/9031 = 95%, 1498 KB/s]
+2026-11-19T18:41:34.2391862Z Downloaded: 8844 file(s) [attempted 8844/9031 = 97%, 2961 KB/s]
+2026-11-19T18:41:34.2392399Z Downloaded: 9031 file(s) [attempted 9031/9031 = 100%, 2961 KB/s]
+2026-11-19T18:41:34.2413515Z Still decompressing downloaded files...
+2026-11-19T18:41:34.6113698Z Decompressed 9031 file(s)
+2026-11-19T18:41:34.6114142Z Already decompressed 9031 file(s)
+2026-11-19T18:41:34.6349427Z ##[endgroup]
+2026-11-19T18:41:34.6349651Z 
+2026-11-19T18:41:34.6355866Z ##[end-action id=__leanprover_lean-action.__run_3;outcome=success;conclusion=success;duration_ms=7876]
+2026-11-19T18:41:34.6372088Z ##[start-action display=build 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.build]
+2026-11-19T18:41:34.6377683Z ##[end-action id=__leanprover_lean-action.build;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:41:34.6380712Z ##[start-action display=test 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.test]
+2026-11-19T18:41:34.6384789Z ##[end-action id=__leanprover_lean-action.test;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:41:34.6387412Z ##[start-action display=lint 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.lint]
+2026-11-19T18:41:34.6391512Z ##[end-action id=__leanprover_lean-action.lint;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:41:34.6393379Z ##[start-action display=Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25;id=__leanprover_lean-action.__actions_cache]
+2026-11-19T18:41:34.7395439Z ##[group]Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25
+2026-11-19T18:41:34.7395792Z with:
+2026-11-19T18:41:34.7396401Z   path: lean/.lake
+2026-11-19T18:41:34.7397125Z   key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-e815f14555472b873683f491bc878eb16d4eb0a4
+2026-11-19T18:41:34.7397865Z   enableCrossOsArchive: false
+2026-11-19T18:41:34.7398121Z ##[endgroup]
+2026-11-19T18:41:34.8499836Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/solved-conjectures/solved-conjectures --files-from manifest.txt --use-compress-program zstdmt
+2026-11-19T18:41:50.8282913Z Sent 268435456 of 2103390427 (12.8%), 256.0 MBs/sec
+2026-11-19T18:41:51.8317855Z Sent 603979776 of 2103390427 (28.7%), 288.0 MBs/sec
+2026-11-19T18:41:52.8293058Z Sent 1073741824 of 2103390427 (51.0%), 341.3 MBs/sec
+2026-11-19T18:41:53.8327817Z Sent 1476395008 of 2103390427 (70.2%), 351.9 MBs/sec
+2026-11-19T18:41:54.8298025Z Sent 1834954971 of 2103390427 (87.2%), 349.9 MBs/sec
+2026-11-19T18:41:55.8305418Z Sent 2036281563 of 2103390427 (96.8%), 323.6 MBs/sec
+2026-11-19T18:41:56.1146241Z Sent 2103390427 of 2103390427 (100.0%), 319.1 MBs/sec
+2026-11-19T18:41:56.2971641Z Cache saved with key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-e815f14555472b873683f491bc878eb16d4eb0a4
+2026-11-19T18:41:56.3045095Z ##[end-action id=__leanprover_lean-action.__actions_cache;outcome=success;conclusion=success;duration_ms=21665]
+2026-11-19T18:41:56.3049223Z ##[start-action display=check reservoir eligibility;id=__leanprover_lean-action.__run_4]
+2026-11-19T18:41:56.3055901Z ##[end-action id=__leanprover_lean-action.__run_4;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:41:56.3060071Z ##[start-action display=check environment with leanchecker;id=__leanprover_lean-action.__run_5]
+2026-11-19T18:41:56.3067398Z ##[end-action id=__leanprover_lean-action.__run_5;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:41:56.3070656Z ##[start-action display=check environment with nanoda;id=__leanprover_lean-action.nanoda]
+2026-11-19T18:41:56.3075278Z ##[end-action id=__leanprover_lean-action.nanoda;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:41:56.3079574Z ##[start-action display=audit axioms with axiom-audit;id=__leanprover_lean-action.axiom-audit]
+2026-11-19T18:41:56.3084644Z ##[end-action id=__leanprover_lean-action.axiom-audit;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T18:41:56.3140360Z ##[group]Run python3 scripts/verify_rectangular_lattice_exact.py algebra
+2026-11-19T18:41:56.3140861Z [36;1mpython3 scripts/verify_rectangular_lattice_exact.py algebra[0m
+2026-11-19T18:41:56.3158914Z shell: /usr/bin/bash -e {0}
+2026-11-19T18:41:56.3159179Z env:
+2026-11-19T18:41:56.3159466Z   LEAN_NUM_THREADS: 1
+2026-11-19T18:41:56.3159707Z   UV_USE_IO_URING: 0
+2026-11-19T18:41:56.3159916Z ##[endgroup]
+2026-11-19T18:41:58.2374535Z {"phase": "Conjectures.HaralambisFaces.source", "exit_code": 0, "seconds": 1.254, "peak_rss_kib": 1778020}
+2026-11-19T18:41:59.4913483Z {"phase": "Conjectures.HaralambisOrientation.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 1846980}
+2026-11-19T18:42:04.7550115Z {"phase": "Conjectures.HaralambisPeriods.source", "exit_code": 0, "seconds": 5.263, "peak_rss_kib": 2093004}
+2026-11-19T18:42:06.2596491Z {"phase": "Conjectures.Loneliness.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 1925468}
+2026-11-19T18:42:09.0162680Z {"phase": "Conjectures.LonelinessCoalescence.source", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2412192}
+2026-11-19T18:42:11.0221761Z {"phase": "Conjectures.LonelinessNearestPlane.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2988240}
+2026-11-19T18:42:12.7898225Z {"phase": "Conjectures.LonelinessKZBasisVectors.source", "exit_code": 0, "seconds": 1.767, "peak_rss_kib": 2967208}
+2026-11-19T18:42:14.5445147Z {"phase": "Conjectures.LonelinessLatticeCovolume.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 2025888}
+2026-11-19T18:42:16.5498855Z {"phase": "Conjectures.LonelinessPrefixProduct.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 3235816}
+2026-11-19T18:42:18.0544555Z {"phase": "Conjectures.LonelinessRectangularGram.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 1398692}
+2026-11-19T18:42:21.3129588Z {"phase": "Conjectures.NonmixedGapDensity.source", "exit_code": 0, "seconds": 3.257, "peak_rss_kib": 2383888}
+2026-11-19T18:42:22.8174900Z {"phase": "Conjectures.HaralambisDefects.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 1881632}
+2026-11-19T18:42:24.0711985Z {"phase": "Conjectures.LonelinessContinuity.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 2140256}
+2026-11-19T18:42:28.0812799Z {"phase": "Conjectures.LonelinessFiveFamily.source", "exit_code": 0, "seconds": 4.009, "peak_rss_kib": 1927544}
+2026-11-19T18:42:29.5855568Z {"phase": "Conjectures.LonelinessCoordinateSubspace.source", "exit_code": 0, "seconds": 1.503, "peak_rss_kib": 2384656}
+2026-11-19T18:42:31.8422166Z {"phase": "Conjectures.LonelinessKZBasisGram.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 3229496}
+2026-11-19T18:42:33.8474988Z {"phase": "Conjectures.LonelinessNearestPlaneRelative.source", "exit_code": 0, "seconds": 2.004, "peak_rss_kib": 2987128}
+2026-11-19T18:42:39.1104330Z {"phase": "Conjectures.LonelinessPrefixProductTables.source", "exit_code": 0, "seconds": 5.262, "peak_rss_kib": 3260820}
+2026-11-19T18:42:43.3724877Z {"phase": "Conjectures.LonelinessRectangularGramLowerBound.source", "exit_code": 0, "seconds": 4.261, "peak_rss_kib": 1452616}
+2026-11-19T18:42:44.8768310Z {"phase": "Conjectures.NonmixedGapPeriodic.source", "exit_code": 0, "seconds": 1.503, "peak_rss_kib": 2366428}
+2026-11-19T18:42:46.8824376Z {"phase": "Conjectures.NonmixedGapResidues.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2366888}
+2026-11-19T18:42:48.1364691Z {"phase": "Conjectures.LonelinessRational.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 2128524}
+2026-11-19T18:42:51.1448731Z {"phase": "Conjectures.LonelinessCriticalBase.source", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 1918868}
+2026-11-19T18:42:55.4065571Z {"phase": "Conjectures.LonelinessCriticalSecond.source", "exit_code": 0, "seconds": 4.261, "peak_rss_kib": 1935508}
+2026-11-19T18:42:57.1613952Z {"phase": "Conjectures.LonelinessCoordinateClasses.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 2387188}
+2026-11-19T18:42:59.1670045Z {"phase": "Conjectures.LonelinessKZBasisInteger.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 3224616}
+2026-11-19T18:43:01.4237202Z {"phase": "Conjectures.LonelinessKZBasisStep.source", "exit_code": 0, "seconds": 2.256, "peak_rss_kib": 3229912}
+2026-11-19T18:43:03.9305875Z {"phase": "Conjectures.LonelinessKZProductCertificate.source", "exit_code": 0, "seconds": 2.506, "peak_rss_kib": 3238772}
+2026-11-19T18:43:05.1844572Z {"phase": "Conjectures.LonelinessPacking.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 2352392}
+2026-11-19T18:43:06.4388568Z {"phase": "Conjectures.HaralambisIntervals.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 1905200}
+2026-11-19T18:43:07.9435421Z {"phase": "Conjectures.LonelinessSubspaceDensity.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 2202520}
+2026-11-19T18:43:08.9468090Z {"phase": "Conjectures.LonelinessCriticalFamilies.source", "exit_code": 0, "seconds": 1.003, "peak_rss_kib": 1898812}
+2026-11-19T18:43:10.2010292Z {"phase": "Conjectures.LonelinessIntegerDirection.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 2397280}
+2026-11-19T18:43:12.2067027Z {"phase": "Conjectures.LonelinessKZBasisOperations.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 3230980}
+2026-11-19T18:43:14.2138792Z {"phase": "Conjectures.LonelinessKZProductOrder.source", "exit_code": 0, "seconds": 2.006, "peak_rss_kib": 3236776}
+2026-11-19T18:43:15.9694543Z {"phase": "Conjectures.LonelinessPackingLower.source", "exit_code": 0, "seconds": 1.755, "peak_rss_kib": 2370660}
+2026-11-19T18:43:17.7250198Z {"phase": "Conjectures.HaralambisCounting.source", "exit_code": 0, "seconds": 1.755, "peak_rss_kib": 2367256}
+2026-11-19T18:43:19.2297829Z {"phase": "Conjectures.LonelinessHyperplaneArithmetic.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 2199536}
+2026-11-19T18:43:21.2357301Z {"phase": "Conjectures.LonelinessNearestPlaneValue.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2992760}
+2026-11-19T18:43:22.4898599Z {"phase": "Conjectures.LonelinessNormalization.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 1907644}
+2026-11-19T18:43:24.2454134Z {"phase": "Conjectures.LonelinessRationalSubspace.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 2416588}
+2026-11-19T18:43:26.0010903Z {"phase": "Conjectures.LonelinessKZBasisReduction.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 3237864}
+2026-11-19T18:43:27.5054660Z {"phase": "Conjectures.LonelinessKZProductAssembly.source", "exit_code": 0, "seconds": 1.503, "peak_rss_kib": 3217368}
+2026-11-19T18:43:29.7612410Z {"phase": "Conjectures.HaralambisPairSum.source", "exit_code": 0, "seconds": 2.255, "peak_rss_kib": 2383264}
+2026-11-19T18:43:31.2657414Z {"phase": "Conjectures.LonelinessPrimitiveBasis.source", "exit_code": 0, "seconds": 1.503, "peak_rss_kib": 2698456}
+2026-11-19T18:43:32.7698401Z {"phase": "Conjectures.HaralambisDensity.source", "exit_code": 0, "seconds": 1.503, "peak_rss_kib": 2365092}
+2026-11-19T18:43:34.0237855Z {"phase": "Conjectures.LonelinessCoalescenceValue.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 2527316}
+2026-11-19T18:43:38.5341906Z {"phase": "Conjectures.LonelinessRationalLatticeCore.source", "exit_code": 0, "seconds": 4.509, "peak_rss_kib": 3821092}
+2026-11-19T18:43:40.0387977Z {"phase": "Conjectures.LonelinessKZGeneral.source", "exit_code": 0, "seconds": 1.503, "peak_rss_kib": 3230708}
+2026-11-19T18:43:41.2927922Z {"phase": "Conjectures.LonelinessPrimitiveSpeeds.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 2689316}
+2026-11-19T18:43:46.3044781Z {"phase": "Conjectures.LonelinessRectangularLattice.source", "exit_code": 0, "seconds": 5.011, "peak_rss_kib": 3657220}
+2026-11-19T18:43:47.3076675Z {"phase": "Conjectures.HaralambisTheorem.source", "exit_code": 0, "seconds": 1.002, "peak_rss_kib": 2355644}
+2026-11-19T18:43:48.8122808Z {"phase": "Conjectures.LonelinessNearestPlanePrefix.source", "exit_code": 0, "seconds": 1.503, "peak_rss_kib": 2981960}
+2026-11-19T18:43:50.5674088Z {"phase": "Conjectures.LonelinessRationalLattice.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 3831604}
+2026-11-19T18:44:06.6037954Z {"phase": "Conjectures.LonelinessKZSmallData.source", "exit_code": 0, "seconds": 16.035, "peak_rss_kib": 3692504}
+2026-11-19T18:44:21.1377666Z {"phase": "Conjectures.LonelinessRationalLatticeIndex.source", "exit_code": 0, "seconds": 14.533, "peak_rss_kib": 3827892}
+2026-11-19T18:44:22.6423720Z {"phase": "Conjectures.LonelinessSmallRunner.source", "exit_code": 0, "seconds": 1.503, "peak_rss_kib": 2606724}
+2026-11-19T18:44:24.6484025Z {"phase": "Conjectures.LonelinessNormGeometry.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 3424036}
+2026-11-19T18:44:26.9049851Z {"phase": "Conjectures.LonelinessSixSpectrumNormGeometry.source", "exit_code": 0, "seconds": 2.255, "peak_rss_kib": 3444284}
+2026-11-19T18:44:29.6618916Z {"phase": "Conjectures.LonelinessSixSpectrumLatticeNorm.source", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 3939040}
+2026-11-19T18:44:39.9644739Z {"phase": "all-owned-audit", "exit_code": 0, "seconds": 10.272, "peak_rss_kib": 3959988}
+2026-11-19T18:44:42.7351411Z {"phase": "Conjectures.HaralambisFaces.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 1511428}
+2026-11-19T18:44:45.2415097Z {"phase": "Conjectures.HaralambisOrientation.kernel", "exit_code": 0, "seconds": 2.505, "peak_rss_kib": 1574808}
+2026-11-19T18:44:47.9982282Z {"phase": "Conjectures.HaralambisPeriods.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 1762040}
+2026-11-19T18:44:50.5048481Z {"phase": "Conjectures.Loneliness.kernel", "exit_code": 0, "seconds": 2.505, "peak_rss_kib": 1621716}
+2026-11-19T18:44:53.2616684Z {"phase": "Conjectures.LonelinessCoalescence.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2084644}
+2026-11-19T18:44:56.2689401Z {"phase": "Conjectures.LonelinessNearestPlane.kernel", "exit_code": 0, "seconds": 3.006, "peak_rss_kib": 2623836}
+2026-11-19T18:44:59.2767000Z {"phase": "Conjectures.LonelinessKZBasisVectors.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2622208}
+2026-11-19T18:45:02.2842423Z {"phase": "Conjectures.LonelinessLatticeCovolume.kernel", "exit_code": 0, "seconds": 3.006, "peak_rss_kib": 3395108}
+2026-11-19T18:45:05.2919076Z {"phase": "Conjectures.LonelinessPrefixProduct.kernel", "exit_code": 0, "seconds": 3.006, "peak_rss_kib": 2865128}
+2026-11-19T18:45:08.0494593Z {"phase": "Conjectures.LonelinessRectangularGram.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2216008}
+2026-11-19T18:45:11.0569166Z {"phase": "Conjectures.NonmixedGapDensity.kernel", "exit_code": 0, "seconds": 3.006, "peak_rss_kib": 2053044}
+2026-11-19T18:45:13.5636374Z {"phase": "Conjectures.HaralambisDefects.kernel", "exit_code": 0, "seconds": 2.506, "peak_rss_kib": 1599452}
+2026-11-19T18:45:16.3206973Z {"phase": "Conjectures.LonelinessContinuity.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 1846716}
+2026-11-19T18:45:18.8266280Z {"phase": "Conjectures.LonelinessFiveFamily.kernel", "exit_code": 0, "seconds": 2.505, "peak_rss_kib": 1628812}
+2026-11-19T18:45:21.5832350Z {"phase": "Conjectures.LonelinessCoordinateSubspace.kernel", "exit_code": 0, "seconds": 2.755, "peak_rss_kib": 2078632}
+2026-11-19T18:45:24.5906722Z {"phase": "Conjectures.LonelinessKZBasisGram.kernel", "exit_code": 0, "seconds": 3.006, "peak_rss_kib": 2865136}
+2026-11-19T18:45:27.5977968Z {"phase": "Conjectures.LonelinessNearestPlaneRelative.kernel", "exit_code": 0, "seconds": 3.006, "peak_rss_kib": 2626496}
+2026-11-19T18:45:30.6050787Z {"phase": "Conjectures.LonelinessPrefixProductTables.kernel", "exit_code": 0, "seconds": 3.006, "peak_rss_kib": 2885636}
+2026-11-19T18:45:33.6127121Z {"phase": "Conjectures.LonelinessRectangularGramLowerBound.kernel", "exit_code": 0, "seconds": 3.006, "peak_rss_kib": 2229072}
+2026-11-19T18:45:36.3699922Z {"phase": "Conjectures.NonmixedGapPeriodic.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2050320}
+2026-11-19T18:45:39.1275459Z {"phase": "Conjectures.NonmixedGapResidues.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2053616}
+2026-11-19T18:45:41.8848154Z {"phase": "Conjectures.LonelinessRational.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 1846800}
+2026-11-19T18:45:44.6420596Z {"phase": "Conjectures.LonelinessCriticalBase.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 1627060}
+2026-11-19T18:45:47.3991704Z {"phase": "Conjectures.LonelinessCriticalSecond.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 1635780}
+2026-11-19T18:45:50.1562973Z {"phase": "Conjectures.LonelinessCoordinateClasses.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2074760}
+2026-11-19T18:45:53.1642707Z {"phase": "Conjectures.LonelinessKZBasisInteger.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2864536}
+2026-11-19T18:45:56.1723225Z {"phase": "Conjectures.LonelinessKZBasisStep.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2866052}
+2026-11-19T18:45:59.1801139Z {"phase": "Conjectures.LonelinessKZProductCertificate.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2869980}
+2026-11-19T18:46:01.9371503Z {"phase": "Conjectures.LonelinessPacking.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2050384}
+2026-11-19T18:46:04.4442529Z {"phase": "Conjectures.HaralambisIntervals.kernel", "exit_code": 0, "seconds": 2.506, "peak_rss_kib": 1626452}
+2026-11-19T18:46:07.2016900Z {"phase": "Conjectures.LonelinessSubspaceDensity.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 1897932}
+2026-11-19T18:46:09.7081788Z {"phase": "Conjectures.LonelinessCriticalFamilies.kernel", "exit_code": 0, "seconds": 2.505, "peak_rss_kib": 1624268}
+2026-11-19T18:46:12.4659124Z {"phase": "Conjectures.LonelinessIntegerDirection.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2094632}
+2026-11-19T18:46:15.4739358Z {"phase": "Conjectures.LonelinessKZBasisOperations.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2870348}
+2026-11-19T18:46:18.4820101Z {"phase": "Conjectures.LonelinessKZProductOrder.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2868140}
+2026-11-19T18:46:21.2394386Z {"phase": "Conjectures.LonelinessPackingLower.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2052672}
+2026-11-19T18:46:23.9970136Z {"phase": "Conjectures.HaralambisCounting.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2053852}
+2026-11-19T18:46:26.7546663Z {"phase": "Conjectures.LonelinessHyperplaneArithmetic.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 1900624}
+2026-11-19T18:46:29.7627779Z {"phase": "Conjectures.LonelinessNearestPlaneValue.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2632040}
+2026-11-19T18:46:32.2698183Z {"phase": "Conjectures.LonelinessNormalization.kernel", "exit_code": 0, "seconds": 2.506, "peak_rss_kib": 1622408}
+2026-11-19T18:46:35.0277793Z {"phase": "Conjectures.LonelinessRationalSubspace.kernel", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 2102516}
+2026-11-19T18:46:38.0357436Z {"phase": "Conjectures.LonelinessKZBasisReduction.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2875276}
+2026-11-19T18:46:41.0435551Z {"phase": "Conjectures.LonelinessKZProductAssembly.kernel", "exit_code": 0, "seconds": 3.006, "peak_rss_kib": 2864080}
+2026-11-19T18:46:43.8009758Z {"phase": "Conjectures.HaralambisPairSum.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2064832}
+2026-11-19T18:46:46.5580676Z {"phase": "Conjectures.LonelinessPrimitiveBasis.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2369156}
+2026-11-19T18:46:49.3154804Z {"phase": "Conjectures.HaralambisDensity.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2056024}
+2026-11-19T18:46:52.0729335Z {"phase": "Conjectures.LonelinessCoalescenceValue.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2218080}
+2026-11-19T18:46:55.5822007Z {"phase": "Conjectures.LonelinessRationalLatticeCore.kernel", "exit_code": 0, "seconds": 3.508, "peak_rss_kib": 3407480}
+2026-11-19T18:46:58.5902425Z {"phase": "Conjectures.LonelinessKZGeneral.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2866232}
+2026-11-19T18:47:01.3478526Z {"phase": "Conjectures.LonelinessPrimitiveSpeeds.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2364836}
+2026-11-19T18:47:06.8614870Z {"phase": "Conjectures.LonelinessRectangularLattice.kernel", "exit_code": 0, "seconds": 5.513, "peak_rss_kib": 3274696}
+2026-11-19T18:47:09.6188779Z {"phase": "Conjectures.HaralambisTheorem.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2059588}
+2026-11-19T18:47:12.3760142Z {"phase": "Conjectures.LonelinessNearestPlanePrefix.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2636804}
+2026-11-19T18:47:15.3839014Z {"phase": "Conjectures.LonelinessRationalLattice.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 3431104}
+2026-11-19T18:47:26.6603033Z {"phase": "Conjectures.LonelinessKZSmallData.kernel", "exit_code": 0, "seconds": 11.275, "peak_rss_kib": 3225908}
+2026-11-19T18:47:29.9193242Z {"phase": "Conjectures.LonelinessRationalLatticeIndex.kernel", "exit_code": 0, "seconds": 3.258, "peak_rss_kib": 3425980}
+2026-11-19T18:47:32.6768821Z {"phase": "Conjectures.LonelinessSmallRunner.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2280084}
+2026-11-19T18:47:35.6855118Z {"phase": "Conjectures.LonelinessNormGeometry.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 3055548}
+2026-11-19T18:47:38.6932436Z {"phase": "Conjectures.LonelinessSixSpectrumNormGeometry.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 3066148}
+2026-11-19T18:47:41.9516670Z {"phase": "Conjectures.LonelinessSixSpectrumLatticeNorm.kernel", "exit_code": 0, "seconds": 3.257, "peak_rss_kib": 3521608}
+2026-11-19T18:47:41.9846914Z {"status": "passed", "project_modules": 60, "required_theorems": 50, "audit_summary": {"allowed_axioms": ["propext", "Classical.choice", "Quot.sound"], "declarations": 1471, "modules": 60, "private_declarations": 90, "raw_declarations": 1471, "required": 50, "tag": "passed", "theorems": 1220}, "receipt_sha256": "4a3f6a5df8723dc21f2b5eb2899a10ea55b47b9eb0538cd48927016c0195e4ee"}
+2026-11-19T18:47:42.0164514Z ##[group]Run actions/upload-artifact@v4
+2026-11-19T18:47:42.0164850Z with:
+2026-11-19T18:47:42.0165044Z   name: rectangular-lattice-algebra
+2026-11-19T18:47:42.0165372Z   path: .candidate-artifacts/rectangular-lattice-algebra/
+2026-11-19T18:47:42.0165752Z   include-hidden-files: true
+2026-11-19T18:47:42.0165985Z   retention-days: 30
+2026-11-19T18:47:42.0166445Z   if-no-files-found: error
+2026-11-19T18:47:42.0166683Z   compression-level: 6
+2026-11-19T18:47:42.0166893Z   overwrite: false
+2026-11-19T18:47:42.0167087Z ##[endgroup]
+2026-11-19T18:47:42.1419639Z (node:11628) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-19T18:47:42.1420202Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-19T18:47:42.1683386Z With the provided path, there will be 377 files uploaded
+2026-11-19T18:47:42.1687024Z Artifact name is valid!
+2026-11-19T18:47:42.1687313Z Root directory input is valid!
+2026-11-19T18:47:42.3565739Z Beginning upload of artifact content to blob storage
+2026-11-19T18:47:43.0841535Z (node:11628) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-19T18:47:43.3150960Z Uploaded bytes 8388608
+2026-11-19T18:47:43.5131875Z Uploaded bytes 10672741
+2026-11-19T18:47:43.5296555Z Finished uploading artifact content to blob storage!
+2026-11-19T18:47:43.5297160Z SHA256 digest of uploaded artifact zip is 761ca853f0b9d263fe2f9ac33ea79a382c2e85e5e241b1ac6ddf5e5e25b8b177
+2026-11-19T18:47:43.5298783Z Finalizing artifact upload
+2026-11-19T18:47:43.8806562Z Artifact rectangular-lattice-algebra.zip successfully finalized. Artifact ID 14561874877
+2026-11-19T18:47:43.8807186Z Artifact rectangular-lattice-algebra has been successfully uploaded! Final size is 10672741 bytes. Artifact ID is 14561874877
+2026-11-19T18:47:43.8814094Z Artifact download URL: https://github.com/1337isnot1337/solved-conjectures/actions/runs/44590263136/artifacts/14561874877
+2026-11-19T18:47:43.8980883Z Post job cleanup.
+2026-11-19T18:47:43.9622107Z [command]/usr/bin/git version
+2026-11-19T18:47:43.9654063Z git version 2.56.1
+2026-11-19T18:47:43.9680561Z Temporarily overriding HOME='/home/runner/work/_temp/a782d2fc-5d90-4ae2-8175-5bf64c2b5852' before making global git config changes
+2026-11-19T18:47:43.9681396Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T18:47:43.9684736Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T18:47:43.9716367Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T18:47:43.9748102Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T18:47:43.9972617Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T18:47:44.0000646Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T18:47:44.0202337Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T18:47:44.0230056Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T18:47:44.0541938Z Cleaning up orphan processes
+2026-11-19T18:47:44.0755889Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

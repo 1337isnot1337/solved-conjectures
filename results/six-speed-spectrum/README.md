@@ -46,3 +46,37 @@ toolchain and Mathlib cache:
 python3 scripts/verify_six_spectrum_realization.py
 ```
 
+### Actual lattice and conditional norm components
+
+The registered components construct the full integer-point lattice of
+every rational coordinate subspace, prove its span and rank, and identify its
+squared covolume with the Gram determinant of an actual integer lattice basis.
+They prove squared covolume at least one. In rank four in six coordinates,
+the lower bound is six when the subspace contains an integer vector whose
+coordinates are nonzero and pairwise unequal up to sign.
+
+Suppose an integer matrix has r columns lying in a rational subspace of
+dimension r, and its Gram determinant is positive. The proof gives an
+exact factorization of the column Gram determinant as a nonzero integer
+square times the full lattice's squared covolume. It therefore bounds the
+full lattice's squared covolume by the column Gram determinant. The endpoints do not
+identify that integer with the cardinality of a finite quotient.
+
+The rectangular components also prove integer-parameter recovery under an
+integer left inverse, primitive basis transfer, Cauchy--Binet and integer Gram
+identities, and the literal map Gram determinants 3, 9 and 8. The six-by-four
+Gram lower bound assumes positive Gram determinant, nonzero rows and rows
+that are pairwise unequal up to sign; it derives the bound six internally.
+
+The original norm constants 9075, 54450 and 163350 now use the covolume of the
+actual full integer-point lattice. The 9075 theorem assumes rank four,
+containment of the speed vector, and distinct positive primitive speeds.
+The 54450 and 163350 theorems hold for every rational coordinate subspace,
+without a rank or containment premise. All three norm theorems retain
+`hfour : CoordinateSubspace.LonelyRunnerBound 4` and `hplane`, the containing-plane gap
+hypothesis, as well as positivity, primitivity and loneliness at most `1/6`.
+These are component theorems. The unconditional plane-gap deduction and the
+remaining exhaustive classification are not supplied here; the six-speed
+spectrum result remains partially formalized.
+
+[Exact scope and evidence](../../docs/lean-status.md#rational-integer-point-lattices-and-six-speed-norm-components).

@@ -1,0 +1,58 @@
+{
+  "accepted_registry_changed_by_review": false,
+  "all_frozen_source_and_control_bytes_match_published_commit": true,
+  "api_metadata_sha256": {
+    "artifacts.json": "cb274e3ca9a0c7169d7715b3f72c8f9efa6ce2995e0a9513e2541d567128b10c",
+    "job.json": "096a440700075c7d1f0ff18c9de45b97468d65f12052ca6b0e009648b8649b89",
+    "run.json": "b45ac86736cbd460c9eba2642c09d7e587cd73706f8b728acefb1bf3c0a08ca0"
+  },
+  "archive_bytes": 10672741,
+  "archive_sha256": "761ca853f0b9d263fe2f9ac33ea79a382c2e85e5e241b1ac6ddf5e5e25b8b177",
+  "artifact_id": 14561874877,
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 1471,
+    "modules": 60,
+    "private_declarations": 90,
+    "raw_declarations": 1471,
+    "required": 50,
+    "tag": "passed",
+    "theorems": 1220
+  },
+  "authenticated_at_utc": "2026-11-19T18:51:41.028421+00:00",
+  "axiom_whitelist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "conclusion": "complete_exact_component_gate_passed_and_artifact_authenticated",
+  "exact_stock_replay_targets": 60,
+  "head_sha": "e815f14555472b873683f491bc878eb16d4eb0a4",
+  "job_conclusion": "success",
+  "job_id": 135794055426,
+  "job_log_final_summary_matches_receipt": true,
+  "job_log_sha256": "13d7a3f679d828bafbe89422df1e831dfcbf8226517722050eca7caeee2dd20c",
+  "job_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44590263136/job/135794055426",
+  "project_modules": 60,
+  "receipt_sha256": "4a3f6a5df8723dc21f2b5eb2899a10ea55b47b9eb0538cd48927016c0195e4ee",
+  "registration_condition": "Regenerate/review the guarded registration patch against fresh main; preserve this exact evidence and require unchanged checked source/control hashes.",
+  "repository": "1337isnot1337/solved-conjectures",
+  "required_theorems_are_theorem_declarations": true,
+  "run_conclusion": "success",
+  "run_id": 44590263136,
+  "run_status": "completed",
+  "run_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44590263136",
+  "schema": "rectangular-hosted-complete-authentication-v1",
+  "scope_limit": "The eight component sources are verified. The norm endpoints still retain explicit four-speed and containing-plane inputs; the separate four-speed wrapper and unconditional classification are not covered by this receipt.",
+  "source_control_object_log_progress_and_inventory_review_sha256": "43437188a17531e97afe77efad77f3fc546e34b31d6255de44dbbf5e8a593ce2",
+  "source_policy": {
+    "fresh_project_objects": true,
+    "linter_override": false,
+    "warning_as_error": true
+  },
+  "workflow": ".github/workflows/lean-rectangular-lattice-exact.yml"
+}

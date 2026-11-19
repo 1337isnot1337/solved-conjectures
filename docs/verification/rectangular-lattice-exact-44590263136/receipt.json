@@ -1,0 +1,3054 @@
+{
+  "accepted_registry_changed": false,
+  "all_frozen_hashes_unchanged": true,
+  "artifact_sha256": {
+    "Conjectures.HaralambisCounting": {
+      ".olean": "13acee52ba13924ea7646d5b883cb24d3458e727fb46c64c2d338ec44ea1163c"
+    },
+    "Conjectures.HaralambisDefects": {
+      ".olean": "a19161fee37e559afd273c8b92b4e1ec398bbcff2b5224c53e43e2a5d1317f2e"
+    },
+    "Conjectures.HaralambisDensity": {
+      ".olean": "d6493411f60d8842b300da847c2a5b00b5ad8fa25db31ec1014cdc6260d732e1"
+    },
+    "Conjectures.HaralambisFaces": {
+      ".olean": "b122764d7cc26552d9218da6fbfc78d6cb295d9a6078eb229289c8be7d9fd3a2"
+    },
+    "Conjectures.HaralambisIntervals": {
+      ".olean": "c24a3e7cbb99146eb95373b7c6a4ab9ad21b925a3e393e4121c6f427f90b94d9"
+    },
+    "Conjectures.HaralambisOrientation": {
+      ".olean": "861c0f322afa14d89f1ac6a258fbd65c2d70e2ff47d9475c69e7fcc4a9440c87"
+    },
+    "Conjectures.HaralambisPairSum": {
+      ".olean": "c3fa9bbf181cba62058f0ca0244d01669865aa3decda85e5e9a8de70b66b89f4"
+    },
+    "Conjectures.HaralambisPeriods": {
+      ".olean": "2f07a40b6b3c4124dbce00edbd836324611f5c4b9d4f1fc83b264304c29c3884"
+    },
+    "Conjectures.HaralambisTheorem": {
+      ".olean": "b2d01befd55fc2df13d7b989aaeae611ac14dae8453c46c97d83c73541300410"
+    },
+    "Conjectures.Loneliness": {
+      ".olean": "4e13edf11c42cd4d01ee6b692970cde34603fd7ef263cbd443775fe41e360307"
+    },
+    "Conjectures.LonelinessCoalescence": {
+      ".olean": "12d146c55086c8dbcbea6f698a5621e535e432269a2e014bcc11854486517b10"
+    },
+    "Conjectures.LonelinessCoalescenceValue": {
+      ".olean": "1796d187ca5da715998d95619cfd91449179b41fdf4a02579cf8d17cb6c5011c"
+    },
+    "Conjectures.LonelinessContinuity": {
+      ".olean": "5df8e58d7511f3fd3e51be7b051fc8437a3a11511f6dccf1cf8da127e4726862"
+    },
+    "Conjectures.LonelinessCoordinateClasses": {
+      ".olean": "ea5f0e46116aca479a2a4f3b520ba757806ba654ee6e2cb7c6931bf4271beaff"
+    },
+    "Conjectures.LonelinessCoordinateSubspace": {
+      ".olean": "84674dd6ab42fc619699f3e2583278d8d29e8b262e35fcc1ff551d7c58963586"
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      ".olean": "30d9e0468833b8eca771d4125313add10f1193a74297f2f5766fb0c5ddc2b37a"
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      ".olean": "437da03bd240cf3d6a32a15e877e312e77e2bf4653003815473983e173ac9dc8"
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      ".olean": "9f5aeda20bcc2a7fd3d58ec5053618e07fd079964d61ba5ca188cb7227fa2e43"
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      ".olean": "9d841dbdfb2e8ea44054e35aa8504f30d54f8cd1e583bda16d8c98277d5d8334"
+    },
+    "Conjectures.LonelinessHyperplaneArithmetic": {
+      ".olean": "3574d1b9227067343c3a869c117f1a78b2f237de9b81c07bfe99b669325ff181"
+    },
+    "Conjectures.LonelinessIntegerDirection": {
+      ".olean": "e0ddc2d872ca0d300e571cad009dd89fe40ff4191c4f1178c5a4c0d3e8cfa71b"
+    },
+    "Conjectures.LonelinessKZBasisGram": {
+      ".olean": "5c4f78a0614fb455b6d3f7c724b493a480874ac169e280d1eb0b81ce32b06092"
+    },
+    "Conjectures.LonelinessKZBasisInteger": {
+      ".olean": "60070f98511dacbcd6944def7c9ac07fb45be9a663bb6f5c2de87d1b302bcd08"
+    },
+    "Conjectures.LonelinessKZBasisOperations": {
+      ".olean": "d260b8fd3e53b38e2c9d078e68afa12904f07b46ec05627d80a3cc2e19d8107c"
+    },
+    "Conjectures.LonelinessKZBasisReduction": {
+      ".olean": "dd7bef0443d49c403ef1125b08d865e8af9137af802c1ae58353558b5ace67d6"
+    },
+    "Conjectures.LonelinessKZBasisStep": {
+      ".olean": "cc911db3f7ddf685d1d005dc39f3af07e07294fe2408c425e6c8a01de742ffa7"
+    },
+    "Conjectures.LonelinessKZBasisVectors": {
+      ".olean": "b1d538f3a974c6349754506d38fe1a157126c6894d50b920b934237ca7cbcc5a"
+    },
+    "Conjectures.LonelinessKZGeneral": {
+      ".olean": "df39fd8f9402c3b9106231dfc60b9cd9e5d52d7dcf2ff549a5f76f008a12c1fe"
+    },
+    "Conjectures.LonelinessKZProductAssembly": {
+      ".olean": "066cac24287d936ccc749d108d11ca7c2c8484e982024fdd5e67de106264b889"
+    },
+    "Conjectures.LonelinessKZProductCertificate": {
+      ".olean": "717ac20eb678a078461ca00d161aec1b3b5ebdb0ecc7335635c34062579e9a01"
+    },
+    "Conjectures.LonelinessKZProductOrder": {
+      ".olean": "4bb5b3ec59ce57a40c2962832e15564c071dfecd2053a647acd373fc3634a6da"
+    },
+    "Conjectures.LonelinessKZSmallData": {
+      ".olean": "9ff12703de76b8eb15c541a84c5d9d6e8bd80b917f1c2c3adff8560c024bb2c7"
+    },
+    "Conjectures.LonelinessLatticeCovolume": {
+      ".ir": "c524b578ad5d3864231659e0f42886d21ee8e1df268598c0c7b383747d007ca7",
+      ".ir.sig": "bac66b3b91c5971d8d824b7553b793674e92b886823763f5d7cbdc5ebfec6e91",
+      ".olean": "d335ad59f6ad453f1657f41a7923ad356d7409b6b12b598edf56664022688cc8",
+      ".olean.private": "813df2f24fe2630a8d9fde5e64f5b33a874e36b4c8437f6e3c169671d719b563",
+      ".olean.server": "dc7b9d7177391104537692e9c4faf9734434496cdc78c85c1bf4c12b56ad844e"
+    },
+    "Conjectures.LonelinessNearestPlane": {
+      ".olean": "02d0094cfc3f1aa6bf56f78bc560f71bfd6c0168d5570ef2d2d96d97baa98567"
+    },
+    "Conjectures.LonelinessNearestPlanePrefix": {
+      ".olean": "2edfef635f244c95dc75a2b931427b5c991e51b9fbfa0af6194d49b161c5ff41"
+    },
+    "Conjectures.LonelinessNearestPlaneRelative": {
+      ".olean": "140c623ff27296d64a9028852b8cd9f50cda6ca4b068dbb9f67c8d62a57a8e71"
+    },
+    "Conjectures.LonelinessNearestPlaneValue": {
+      ".olean": "b0d94aa13174644eb35f463fc4dde8508575cf50b6e9aef2b47280ace9b31861"
+    },
+    "Conjectures.LonelinessNormGeometry": {
+      ".olean": "e469ef6d1c52eedeb1b51796a8508a14775310673655421bd1b65c828ed6850e"
+    },
+    "Conjectures.LonelinessNormalization": {
+      ".olean": "2d352223e342561e911b526bbf93febf4c961867883682f191ebf0eda9c89c68"
+    },
+    "Conjectures.LonelinessPacking": {
+      ".olean": "8509553a9db0562ca59586560e0b265f32bcf70e8103567b8fd549d639cf663f"
+    },
+    "Conjectures.LonelinessPackingLower": {
+      ".olean": "164f92a35aef2ebd27e71f58c361fc870e76158792132d5ffed50058a1d196d7"
+    },
+    "Conjectures.LonelinessPrefixProduct": {
+      ".olean": "99b7a39afd6abd4ae750462563015a36dae671dd6f4885077bbca3611b7468bf"
+    },
+    "Conjectures.LonelinessPrefixProductTables": {
+      ".olean": "0b094cf56381c953f76f2294c5a37e1f1c72dab77cf56951b7884798e7da160a"
+    },
+    "Conjectures.LonelinessPrimitiveBasis": {
+      ".olean": "68ca11c84bf1d18ad62f80c550b9e10f2fb91782acf85ac8ee320d91e78bb455"
+    },
+    "Conjectures.LonelinessPrimitiveSpeeds": {
+      ".olean": "7f9f1b47f1a8ce59ae18a7ccf80fc0d2db92073aa19c1a16a4b292a9ffc4c78d"
+    },
+    "Conjectures.LonelinessRational": {
+      ".olean": "945c34917c2011b1fa83483163c423be6960f769809bcb768f210fc47ed0bb73"
+    },
+    "Conjectures.LonelinessRationalLattice": {
+      ".olean": "ccef655cce44e29e1fbd1e834d97d3765ef05b7a04a71dee62320e3ef9f96e79"
+    },
+    "Conjectures.LonelinessRationalLatticeCore": {
+      ".olean": "76724b2a6993900cdc4ee15a3c0619587944193c845acbf4f36595a8c9218787"
+    },
+    "Conjectures.LonelinessRationalLatticeIndex": {
+      ".olean": "72b7ace1492d649cedfaadf42a21fd26e99e3d86d386bbec6f1d6461ecc24d8a"
+    },
+    "Conjectures.LonelinessRationalSubspace": {
+      ".olean": "22c8979317e1d9f98f8f1e57a4957fdf6833d4c1e68990d408340e963ced9540"
+    },
+    "Conjectures.LonelinessRectangularGram": {
+      ".ir": "2d43d504f9d4183da6f8442cce445a0c9b498b5521bc958a1a595841e75f9a27",
+      ".ir.sig": "17d699cd530a16d32e54a79a52a1f226c362599b28b776b3b186297b905f3c3c",
+      ".olean": "80567ce41c3a81b358cb2c163e62e720e136e787aa22856e9673bf67a7471595",
+      ".olean.private": "4ef52a3a181ba0bdad0cea23e29654f099cb7f7e1f38bf64408b2b6b6c615cd0",
+      ".olean.server": "b10b7279652d610c74aff8631995cf8d99ddd0a6c6d7a885ae72e89bd5d337e6"
+    },
+    "Conjectures.LonelinessRectangularGramLowerBound": {
+      ".ir": "decadaa3f0fc7307e2d2cc2b63657ae02f274a9f3a5da60f8e507ab509fbf89d",
+      ".ir.sig": "91926af572d85c6bbb9fb73e04adea38da7380038d49fb22e2395b5e36e72cbe",
+      ".olean": "ec2b3552d8bf7b199bb7f4c824d5272f29614e5a5a962aab27fc319416f4ae9b",
+      ".olean.private": "dc5d380ebbfc5140341c5b19ebff50f39573c8f30fb25cec0d2dc474915110ec",
+      ".olean.server": "85d679ad831e928f21830b53c4b2ab75c6d029f37cb235d96feb2c4a49524e0b"
+    },
+    "Conjectures.LonelinessRectangularLattice": {
+      ".olean": "bc657988be1b7880043f4e7fb21415969db3b187314a466a07ebc6c4b062ca7f"
+    },
+    "Conjectures.LonelinessSixSpectrumLatticeNorm": {
+      ".olean": "d8a05df28fbce39ec77dac4e1ab59f61e4e99fb8a8d129c448beb1bb57bc4f27"
+    },
+    "Conjectures.LonelinessSixSpectrumNormGeometry": {
+      ".olean": "d4987bdf98d025b257850a26f51157c1b3df6142535e25e1fd215c0cb9d63af8"
+    },
+    "Conjectures.LonelinessSmallRunner": {
+      ".olean": "f4d89f0712d88043205d1a83656b8962218d0bbd907028efeedbb66aaf02752a"
+    },
+    "Conjectures.LonelinessSubspaceDensity": {
+      ".olean": "a53656c78de877401c21b5e42b38cd6c506ed14b6ea08b6e7284acca97b0f603"
+    },
+    "Conjectures.NonmixedGapDensity": {
+      ".olean": "2611e25a6e012ecbbf7982525da3675d7811d38e2854b113d60cef6646be5f5f"
+    },
+    "Conjectures.NonmixedGapPeriodic": {
+      ".olean": "2dd40d1c51d4df9e61b35947b0a137121a7d7c90f4b2131db797f278b0dd1c1a"
+    },
+    "Conjectures.NonmixedGapResidues": {
+      ".olean": "cf2c50afe8b7a18f3a523ae9e08b984b633b17203e15100dd19862e5178b14fb"
+    }
+  },
+  "axiom_audit": {
+    "all_owned_declarations_audited": true,
+    "audit_source_sha256": "e885d8bc0391a326854f8e0a741184c6687651b03af8996cbf0165a240c2a669",
+    "command": [
+      "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "-j1",
+      "-M4500",
+      "-DwarningAsError=true",
+      "RectangularLatticeAudit.lean"
+    ],
+    "declaration_inventory_sha256": "51ba6bb295708bae9ffac6b518727e3559257a0cb4bc6729a3182dd6991bf831",
+    "exact_raw_private_visibility": true,
+    "exit_code": 0,
+    "explicit_import_all": true,
+    "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/all-owned-audit.log",
+    "log_sha256": "42b1e965971bf70d6702900c4bdf3291631acbf049ec309f19c5df43ac8e04d1",
+    "peak_rss_kib": 3959988,
+    "seconds": 10.272,
+    "summary": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1471,
+      "modules": 60,
+      "private_declarations": 90,
+      "raw_declarations": 1471,
+      "required": 50,
+      "tag": "passed",
+      "theorems": 1220
+    },
+    "system_seconds": 0.443042,
+    "timed_out": false,
+    "user_seconds": 9.77077
+  },
+  "axiom_whitelist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-rectangular-lattice-exact.yml": "e671ed542b8c5d5057cf41643dfba4bdd4b0d6dd1214aa8e4379410e51da43a1",
+    "docs/rectangular-lattice-exact-sources.json": "36c85760e4e3a3180a50b92a00a2cbe7f31b920c24f159d34f6f324bc98786ed",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+    "scripts/verify_rectangular_lattice_exact.py": "853dc37c7d3311d4029785aecfe09c0efbcf1f2df5abd48a485e631bd30ddde9"
+  },
+  "git_commit": "e815f14555472b873683f491bc878eb16d4eb0a4",
+  "kernel_checks": {
+    "Conjectures.HaralambisCounting": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisCounting"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisCounting.kernel.log",
+      "log_sha256": "1dfcb53824ab331af436c3a0f75c77613a246516e46331affb05178cab1b2979",
+      "peak_rss_kib": 2053852,
+      "replayed_modules": [
+        "Conjectures.HaralambisCounting"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.762502,
+      "timed_out": false,
+      "user_seconds": 0.896238
+    },
+    "Conjectures.HaralambisDefects": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisDefects"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisDefects.kernel.log",
+      "log_sha256": "5e0b16abe1aac3a73ea9ad566662fe8bac3d709f8181e2ff7928722a1aac6c23",
+      "peak_rss_kib": 1599452,
+      "replayed_modules": [
+        "Conjectures.HaralambisDefects"
+      ],
+      "seconds": 2.506,
+      "system_seconds": 1.6633939999999998,
+      "timed_out": false,
+      "user_seconds": 0.829697
+    },
+    "Conjectures.HaralambisDensity": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisDensity"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisDensity.kernel.log",
+      "log_sha256": "8a2e06dbc59a9a770480cdaf01ada8e68b3bc13b2532aae233a422fd3fa426ab",
+      "peak_rss_kib": 2056024,
+      "replayed_modules": [
+        "Conjectures.HaralambisDensity"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.783799,
+      "timed_out": false,
+      "user_seconds": 0.853425
+    },
+    "Conjectures.HaralambisFaces": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisFaces"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisFaces.kernel.log",
+      "log_sha256": "f05a51fbd27f589a20740b2931bc4f9e5606f140546d186b427ed693b158b1f0",
+      "peak_rss_kib": 1511428,
+      "replayed_modules": [
+        "Conjectures.HaralambisFaces"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.693336,
+      "timed_out": false,
+      "user_seconds": 0.8151609999999999
+    },
+    "Conjectures.HaralambisIntervals": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisIntervals"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisIntervals.kernel.log",
+      "log_sha256": "3af21daa23d63ac4746a9c9fd1e9da233a21a123942dc9705e1fc509fb5300d2",
+      "peak_rss_kib": 1626452,
+      "replayed_modules": [
+        "Conjectures.HaralambisIntervals"
+      ],
+      "seconds": 2.506,
+      "system_seconds": 1.7174809999999998,
+      "timed_out": false,
+      "user_seconds": 0.7778649999999999
+    },
+    "Conjectures.HaralambisOrientation": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisOrientation"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisOrientation.kernel.log",
+      "log_sha256": "38fa63dc8b74a122bf24e0ce6ba8fab36eebfdec43549bdaf6608eba94fdc710",
+      "peak_rss_kib": 1574808,
+      "replayed_modules": [
+        "Conjectures.HaralambisOrientation"
+      ],
+      "seconds": 2.505,
+      "system_seconds": 1.715941,
+      "timed_out": false,
+      "user_seconds": 0.756091
+    },
+    "Conjectures.HaralambisPairSum": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisPairSum"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisPairSum.kernel.log",
+      "log_sha256": "ce57de587a289f9077ee09b6436c4dffa8a228838940f5231a76c93b8a55147d",
+      "peak_rss_kib": 2064832,
+      "replayed_modules": [
+        "Conjectures.HaralambisPairSum"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.734083,
+      "timed_out": false,
+      "user_seconds": 0.887
+    },
+    "Conjectures.HaralambisPeriods": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisPeriods"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisPeriods.kernel.log",
+      "log_sha256": "dde6a705567bf76ded00ac0dadfd82a50bf49474e0de43b7ac2f47a59d541a0e",
+      "peak_rss_kib": 1762040,
+      "replayed_modules": [
+        "Conjectures.HaralambisPeriods"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.6938339999999998,
+      "timed_out": false,
+      "user_seconds": 1.0173
+    },
+    "Conjectures.HaralambisTheorem": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.HaralambisTheorem"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisTheorem.kernel.log",
+      "log_sha256": "a13f744fd7b2d569c294ce05bf18cbcc888f98f9e2962a8ed61f6abca67ace4e",
+      "peak_rss_kib": 2059588,
+      "replayed_modules": [
+        "Conjectures.HaralambisTheorem"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.7543630000000001,
+      "timed_out": false,
+      "user_seconds": 0.831225
+    },
+    "Conjectures.Loneliness": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.Loneliness"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.Loneliness.kernel.log",
+      "log_sha256": "381ad3ff638b4f35804e7c2a204a14a82ab29219cf5cc060d045acc27b90eb28",
+      "peak_rss_kib": 1621716,
+      "replayed_modules": [
+        "Conjectures.Loneliness"
+      ],
+      "seconds": 2.505,
+      "system_seconds": 1.69535,
+      "timed_out": false,
+      "user_seconds": 0.7847729999999999
+    },
+    "Conjectures.LonelinessCoalescence": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCoalescence"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCoalescence.kernel.log",
+      "log_sha256": "a20f74731976f0d06df173b5572beb5929a6444aa54b86e3c12eeae125fcb82e",
+      "peak_rss_kib": 2084644,
+      "replayed_modules": [
+        "Conjectures.LonelinessCoalescence"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.742836,
+      "timed_out": false,
+      "user_seconds": 0.8943989999999999
+    },
+    "Conjectures.LonelinessCoalescenceValue": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCoalescenceValue"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCoalescenceValue.kernel.log",
+      "log_sha256": "ebb0d72141d5b7fc7acbc632e91f1296867a5cdbd7f218173d6aea07ca509c8d",
+      "peak_rss_kib": 2218080,
+      "replayed_modules": [
+        "Conjectures.LonelinessCoalescenceValue"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.81273,
+      "timed_out": false,
+      "user_seconds": 0.82343
+    },
+    "Conjectures.LonelinessContinuity": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessContinuity"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessContinuity.kernel.log",
+      "log_sha256": "7264f9eab09c0ab1a3907cf0cde588559b77d6c9ad68cc93e6cd9fbb7deef86e",
+      "peak_rss_kib": 1846716,
+      "replayed_modules": [
+        "Conjectures.LonelinessContinuity"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.7608009999999998,
+      "timed_out": false,
+      "user_seconds": 0.7650399999999999
+    },
+    "Conjectures.LonelinessCoordinateClasses": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCoordinateClasses"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCoordinateClasses.kernel.log",
+      "log_sha256": "77199b6ba099d1d47a3d12edcce867d3d3894deb6bcf25778c347f7dc37eac34",
+      "peak_rss_kib": 2074760,
+      "replayed_modules": [
+        "Conjectures.LonelinessCoordinateClasses"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.7868629999999999,
+      "timed_out": false,
+      "user_seconds": 0.881439
+    },
+    "Conjectures.LonelinessCoordinateSubspace": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCoordinateSubspace"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCoordinateSubspace.kernel.log",
+      "log_sha256": "316ac14d44fe8e0f38f787b88688622f3f07305b4bcb8175d62cd7a2e30bfa89",
+      "peak_rss_kib": 2078632,
+      "replayed_modules": [
+        "Conjectures.LonelinessCoordinateSubspace"
+      ],
+      "seconds": 2.755,
+      "system_seconds": 1.794302,
+      "timed_out": false,
+      "user_seconds": 0.80324
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalBase"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCriticalBase.kernel.log",
+      "log_sha256": "0006fcc9df8f4040810ba1a8383d1636b283327a300f369e1dca3274ff0cebf2",
+      "peak_rss_kib": 1627060,
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalBase"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.6842169999999999,
+      "timed_out": false,
+      "user_seconds": 0.846607
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalFamilies"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCriticalFamilies.kernel.log",
+      "log_sha256": "89892e848696c1a257a3d6911b77edeee36bf34405de5eeba33538f061c1a830",
+      "peak_rss_kib": 1624268,
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalFamilies"
+      ],
+      "seconds": 2.505,
+      "system_seconds": 1.729042,
+      "timed_out": false,
+      "user_seconds": 0.764134
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessCriticalSecond"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCriticalSecond.kernel.log",
+      "log_sha256": "96acec391f266c5b2c8aa6c1c440910f814eb5eeca124966bf44bbb6150f4923",
+      "peak_rss_kib": 1635780,
+      "replayed_modules": [
+        "Conjectures.LonelinessCriticalSecond"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.689613,
+      "timed_out": false,
+      "user_seconds": 0.849283
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessFiveFamily"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessFiveFamily.kernel.log",
+      "log_sha256": "34a6f139b5b00907c71526d36b276ce6e9488a877c161d45ff5ec4260b65e3e2",
+      "peak_rss_kib": 1628812,
+      "replayed_modules": [
+        "Conjectures.LonelinessFiveFamily"
+      ],
+      "seconds": 2.505,
+      "system_seconds": 1.716486,
+      "timed_out": false,
+      "user_seconds": 0.785307
+    },
+    "Conjectures.LonelinessHyperplaneArithmetic": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessHyperplaneArithmetic"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessHyperplaneArithmetic.kernel.log",
+      "log_sha256": "f061f2731e3773208d8ee0d550c6b5f45d8e6c111d37217c1365ae3fbec9b095",
+      "peak_rss_kib": 1900624,
+      "replayed_modules": [
+        "Conjectures.LonelinessHyperplaneArithmetic"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.753746,
+      "timed_out": false,
+      "user_seconds": 0.818415
+    },
+    "Conjectures.LonelinessIntegerDirection": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessIntegerDirection"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessIntegerDirection.kernel.log",
+      "log_sha256": "28b0971cd5687f1c31db064c0008ef0d356f684b5a88bdef89454808a9df1d0f",
+      "peak_rss_kib": 2094632,
+      "replayed_modules": [
+        "Conjectures.LonelinessIntegerDirection"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.800163,
+      "timed_out": false,
+      "user_seconds": 0.8161729999999999
+    },
+    "Conjectures.LonelinessKZBasisGram": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessKZBasisGram"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisGram.kernel.log",
+      "log_sha256": "66191853346122c3072056dee3c2c98a0265f2c4ea279dd78d87440759759126",
+      "peak_rss_kib": 2865136,
+      "replayed_modules": [
+        "Conjectures.LonelinessKZBasisGram"
+      ],
+      "seconds": 3.006,
+      "system_seconds": 1.899621,
+      "timed_out": false,
+      "user_seconds": 0.9158419999999999
+    },
+    "Conjectures.LonelinessKZBasisInteger": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessKZBasisInteger"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisInteger.kernel.log",
+      "log_sha256": "5ab6f7f4a9bea51c37104dba91368b8cd61af67e4e70230746265c011f6c6b4d",
+      "peak_rss_kib": 2864536,
+      "replayed_modules": [
+        "Conjectures.LonelinessKZBasisInteger"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.8621889999999999,
+      "timed_out": false,
+      "user_seconds": 1.015013
+    },
+    "Conjectures.LonelinessKZBasisOperations": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessKZBasisOperations"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisOperations.kernel.log",
+      "log_sha256": "7454a16f90beb85721cfcfc5e10680ebdc39c8ae61d6701adfc39152f7e6a4f8",
+      "peak_rss_kib": 2870348,
+      "replayed_modules": [
+        "Conjectures.LonelinessKZBasisOperations"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.870558,
+      "timed_out": false,
+      "user_seconds": 1.069891
+    },
+    "Conjectures.LonelinessKZBasisReduction": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessKZBasisReduction"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisReduction.kernel.log",
+      "log_sha256": "3e9c630d5bc1a99c150d6dc33d5911fddd694366339d6ba0ca4a9fb5bac07bf0",
+      "peak_rss_kib": 2875276,
+      "replayed_modules": [
+        "Conjectures.LonelinessKZBasisReduction"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.9003619999999999,
+      "timed_out": false,
+      "user_seconds": 0.961683
+    },
+    "Conjectures.LonelinessKZBasisStep": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessKZBasisStep"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisStep.kernel.log",
+      "log_sha256": "aca326771ae24b0691e629ed3a4679738f927dfc16c5da324dddf3967b679993",
+      "peak_rss_kib": 2866052,
+      "replayed_modules": [
+        "Conjectures.LonelinessKZBasisStep"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.859299,
+      "timed_out": false,
+      "user_seconds": 0.9982169999999999
+    },
+    "Conjectures.LonelinessKZBasisVectors": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessKZBasisVectors"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisVectors.kernel.log",
+      "log_sha256": "f42c5b5f6b1ea0efce9e8472d70f2a74c562dca1e3e2112d1dfee1df9b34587e",
+      "peak_rss_kib": 2622208,
+      "replayed_modules": [
+        "Conjectures.LonelinessKZBasisVectors"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.84151,
+      "timed_out": false,
+      "user_seconds": 0.9452349999999999
+    },
+    "Conjectures.LonelinessKZGeneral": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessKZGeneral"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZGeneral.kernel.log",
+      "log_sha256": "4f20ba0af11b57984b5ca738dd1a47a45b452c29061ebbed5106cc0504e023c2",
+      "peak_rss_kib": 2866232,
+      "replayed_modules": [
+        "Conjectures.LonelinessKZGeneral"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.871655,
+      "timed_out": false,
+      "user_seconds": 0.959797
+    },
+    "Conjectures.LonelinessKZProductAssembly": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessKZProductAssembly"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZProductAssembly.kernel.log",
+      "log_sha256": "5431414f4425b1d40af515f3baa881e6b1f785f47aafa7b1844859157d28e4f0",
+      "peak_rss_kib": 2864080,
+      "replayed_modules": [
+        "Conjectures.LonelinessKZProductAssembly"
+      ],
+      "seconds": 3.006,
+      "system_seconds": 1.874527,
+      "timed_out": false,
+      "user_seconds": 0.934272
+    },
+    "Conjectures.LonelinessKZProductCertificate": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessKZProductCertificate"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZProductCertificate.kernel.log",
+      "log_sha256": "d65029ead43039b28ff8be92911fded8399df78f6acbe848b9bd66abf3e0a59f",
+      "peak_rss_kib": 2869980,
+      "replayed_modules": [
+        "Conjectures.LonelinessKZProductCertificate"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.853551,
+      "timed_out": false,
+      "user_seconds": 0.969718
+    },
+    "Conjectures.LonelinessKZProductOrder": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessKZProductOrder"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZProductOrder.kernel.log",
+      "log_sha256": "cf8406d4c0e428d187ac9285979cf32e2757b9bfdc04aa5f0b29bbeee17f8184",
+      "peak_rss_kib": 2868140,
+      "replayed_modules": [
+        "Conjectures.LonelinessKZProductOrder"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.903395,
+      "timed_out": false,
+      "user_seconds": 1.002155
+    },
+    "Conjectures.LonelinessKZSmallData": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessKZSmallData"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZSmallData.kernel.log",
+      "log_sha256": "11cef4fa771c1b5786dead2b461ea3dab402989f89da21b7935cf253f5ee4ac0",
+      "peak_rss_kib": 3225908,
+      "replayed_modules": [
+        "Conjectures.LonelinessKZSmallData"
+      ],
+      "seconds": 11.275,
+      "system_seconds": 2.026995,
+      "timed_out": false,
+      "user_seconds": 9.090477
+    },
+    "Conjectures.LonelinessLatticeCovolume": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessLatticeCovolume"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessLatticeCovolume.kernel.log",
+      "log_sha256": "8dbdcccb1c267854ff9f6c66306a57e49dc5cc25da494dc26ee5437ce2b573a5",
+      "peak_rss_kib": 3395108,
+      "replayed_modules": [
+        "Conjectures.LonelinessLatticeCovolume"
+      ],
+      "seconds": 3.006,
+      "system_seconds": 1.919072,
+      "timed_out": false,
+      "user_seconds": 1.071365
+    },
+    "Conjectures.LonelinessNearestPlane": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessNearestPlane"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNearestPlane.kernel.log",
+      "log_sha256": "0bea0dc6be518207e836ff0582c948bc001d8142813e4c7b5cfc05e063a63f9f",
+      "peak_rss_kib": 2623836,
+      "replayed_modules": [
+        "Conjectures.LonelinessNearestPlane"
+      ],
+      "seconds": 3.006,
+      "system_seconds": 1.872468,
+      "timed_out": false,
+      "user_seconds": 0.908771
+    },
+    "Conjectures.LonelinessNearestPlanePrefix": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessNearestPlanePrefix"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNearestPlanePrefix.kernel.log",
+      "log_sha256": "b8dd671ba492c375506fa125431e85d803265205ef12bcab2b8f24b73e9cde65",
+      "peak_rss_kib": 2636804,
+      "replayed_modules": [
+        "Conjectures.LonelinessNearestPlanePrefix"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.860012,
+      "timed_out": false,
+      "user_seconds": 0.885054
+    },
+    "Conjectures.LonelinessNearestPlaneRelative": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessNearestPlaneRelative"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNearestPlaneRelative.kernel.log",
+      "log_sha256": "0d52f5ff8fd46136e559ef9ecc5901653df27d0c4fad4c772d13c610af20a901",
+      "peak_rss_kib": 2626496,
+      "replayed_modules": [
+        "Conjectures.LonelinessNearestPlaneRelative"
+      ],
+      "seconds": 3.006,
+      "system_seconds": 1.833739,
+      "timed_out": false,
+      "user_seconds": 0.950827
+    },
+    "Conjectures.LonelinessNearestPlaneValue": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessNearestPlaneValue"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNearestPlaneValue.kernel.log",
+      "log_sha256": "598cf0582fb1ba9072c58d9221ff43aa42e4db89df08a1c3cff864ded3bc1c02",
+      "peak_rss_kib": 2632040,
+      "replayed_modules": [
+        "Conjectures.LonelinessNearestPlaneValue"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.8403559999999999,
+      "timed_out": false,
+      "user_seconds": 0.9641489999999999
+    },
+    "Conjectures.LonelinessNormGeometry": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessNormGeometry"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNormGeometry.kernel.log",
+      "log_sha256": "ccf8f11627af4fb065c5409deb0277e2afa4d2bf026df5c774342fcea4fa4785",
+      "peak_rss_kib": 3055548,
+      "replayed_modules": [
+        "Conjectures.LonelinessNormGeometry"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.92179,
+      "timed_out": false,
+      "user_seconds": 0.9998499999999999
+    },
+    "Conjectures.LonelinessNormalization": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessNormalization"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNormalization.kernel.log",
+      "log_sha256": "deb65bf8b90ba5b6087c39fa221a140877c5817d011e60d15d26982cdd0d782d",
+      "peak_rss_kib": 1622408,
+      "replayed_modules": [
+        "Conjectures.LonelinessNormalization"
+      ],
+      "seconds": 2.506,
+      "system_seconds": 1.70965,
+      "timed_out": false,
+      "user_seconds": 0.769392
+    },
+    "Conjectures.LonelinessPacking": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessPacking"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPacking.kernel.log",
+      "log_sha256": "474c3eca9a7787a111bae2469040df0787705268595310475e62049efc4b1089",
+      "peak_rss_kib": 2050384,
+      "replayed_modules": [
+        "Conjectures.LonelinessPacking"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.787233,
+      "timed_out": false,
+      "user_seconds": 0.8421099999999999
+    },
+    "Conjectures.LonelinessPackingLower": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessPackingLower"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPackingLower.kernel.log",
+      "log_sha256": "a8c424f71a1f9eea0b9080d238f1f0cfa61c6bf353bbe02e2b46de80e181bfb2",
+      "peak_rss_kib": 2052672,
+      "replayed_modules": [
+        "Conjectures.LonelinessPackingLower"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.776206,
+      "timed_out": false,
+      "user_seconds": 0.936062
+    },
+    "Conjectures.LonelinessPrefixProduct": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessPrefixProduct"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPrefixProduct.kernel.log",
+      "log_sha256": "ce508b7bb5c7fdb12bb438fb4d81bd7615ff01f72163b2596907846b81667477",
+      "peak_rss_kib": 2865128,
+      "replayed_modules": [
+        "Conjectures.LonelinessPrefixProduct"
+      ],
+      "seconds": 3.006,
+      "system_seconds": 1.869195,
+      "timed_out": false,
+      "user_seconds": 0.984629
+    },
+    "Conjectures.LonelinessPrefixProductTables": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessPrefixProductTables"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPrefixProductTables.kernel.log",
+      "log_sha256": "496a4a0f18cb38ad83444d726d9311b2d0c231be125aa9b03167b83f61278881",
+      "peak_rss_kib": 2885636,
+      "replayed_modules": [
+        "Conjectures.LonelinessPrefixProductTables"
+      ],
+      "seconds": 3.006,
+      "system_seconds": 1.847792,
+      "timed_out": false,
+      "user_seconds": 1.152623
+    },
+    "Conjectures.LonelinessPrimitiveBasis": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessPrimitiveBasis"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPrimitiveBasis.kernel.log",
+      "log_sha256": "174b85711e66b6cdc79b8cba25ac6f67407aff449b36d2f84cb08e7abac5fd69",
+      "peak_rss_kib": 2369156,
+      "replayed_modules": [
+        "Conjectures.LonelinessPrimitiveBasis"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.817421,
+      "timed_out": false,
+      "user_seconds": 0.876724
+    },
+    "Conjectures.LonelinessPrimitiveSpeeds": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessPrimitiveSpeeds"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPrimitiveSpeeds.kernel.log",
+      "log_sha256": "8699251d88669362b4f0cc5de9b0a696201f297f248761d7cb1c0c00174f0b36",
+      "peak_rss_kib": 2364836,
+      "replayed_modules": [
+        "Conjectures.LonelinessPrimitiveSpeeds"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.7969119999999998,
+      "timed_out": false,
+      "user_seconds": 0.8799659999999999
+    },
+    "Conjectures.LonelinessRational": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRational"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRational.kernel.log",
+      "log_sha256": "f11f5c56de63f1dedd0214b36fc04f2b4a14a4f9540134552e8b318d7b1f8c66",
+      "peak_rss_kib": 1846800,
+      "replayed_modules": [
+        "Conjectures.LonelinessRational"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.765028,
+      "timed_out": false,
+      "user_seconds": 0.763579
+    },
+    "Conjectures.LonelinessRationalLattice": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRationalLattice"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRationalLattice.kernel.log",
+      "log_sha256": "80c28c5f3da2bc2cf92842edd801c4d2f895543689e955b6e42d256f306132ef",
+      "peak_rss_kib": 3431104,
+      "replayed_modules": [
+        "Conjectures.LonelinessRationalLattice"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.9444309999999998,
+      "timed_out": false,
+      "user_seconds": 1.050593
+    },
+    "Conjectures.LonelinessRationalLatticeCore": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRationalLatticeCore"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRationalLatticeCore.kernel.log",
+      "log_sha256": "0e721781cd3fe50eab80efe69b8318d873b4bea1ab2e27af64715d5cc5435f86",
+      "peak_rss_kib": 3407480,
+      "replayed_modules": [
+        "Conjectures.LonelinessRationalLatticeCore"
+      ],
+      "seconds": 3.508,
+      "system_seconds": 1.914969,
+      "timed_out": false,
+      "user_seconds": 1.42349
+    },
+    "Conjectures.LonelinessRationalLatticeIndex": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRationalLatticeIndex"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRationalLatticeIndex.kernel.log",
+      "log_sha256": "5846d196c757729c8109c7e97947f8f4acc5e3300cb3896ee2de3e72f7e40332",
+      "peak_rss_kib": 3425980,
+      "replayed_modules": [
+        "Conjectures.LonelinessRationalLatticeIndex"
+      ],
+      "seconds": 3.258,
+      "system_seconds": 1.936542,
+      "timed_out": false,
+      "user_seconds": 1.103599
+    },
+    "Conjectures.LonelinessRationalSubspace": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRationalSubspace"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRationalSubspace.kernel.log",
+      "log_sha256": "f065daae188d67a83632b686914ad6cda8907a064822ec7956168fe5e991c69c",
+      "peak_rss_kib": 2102516,
+      "replayed_modules": [
+        "Conjectures.LonelinessRationalSubspace"
+      ],
+      "seconds": 2.757,
+      "system_seconds": 1.792439,
+      "timed_out": false,
+      "user_seconds": 0.874238
+    },
+    "Conjectures.LonelinessRectangularGram": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRectangularGram"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRectangularGram.kernel.log",
+      "log_sha256": "47712acda1631e7d3b06b881c0a21432cc481c81c3fb36ff073305d099374f07",
+      "peak_rss_kib": 2216008,
+      "replayed_modules": [
+        "Conjectures.LonelinessRectangularGram"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.772888,
+      "timed_out": false,
+      "user_seconds": 0.8939229999999999
+    },
+    "Conjectures.LonelinessRectangularGramLowerBound": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRectangularGramLowerBound"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRectangularGramLowerBound.kernel.log",
+      "log_sha256": "384b1f8e75b82b490516011692b9f74d9928317eb11e6d1f3acc32ceb481f43f",
+      "peak_rss_kib": 2229072,
+      "replayed_modules": [
+        "Conjectures.LonelinessRectangularGramLowerBound"
+      ],
+      "seconds": 3.006,
+      "system_seconds": 1.7552240000000001,
+      "timed_out": false,
+      "user_seconds": 1.078914
+    },
+    "Conjectures.LonelinessRectangularLattice": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessRectangularLattice"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRectangularLattice.kernel.log",
+      "log_sha256": "20be339d77a9eb5592a4ad8a9a21bf069ec3579060f8d54a7911c50943fb8338",
+      "peak_rss_kib": 3274696,
+      "replayed_modules": [
+        "Conjectures.LonelinessRectangularLattice"
+      ],
+      "seconds": 5.513,
+      "system_seconds": 1.913409,
+      "timed_out": false,
+      "user_seconds": 3.3692
+    },
+    "Conjectures.LonelinessSixSpectrumLatticeNorm": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixSpectrumLatticeNorm"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessSixSpectrumLatticeNorm.kernel.log",
+      "log_sha256": "b1d4388224c853275c9a1c05ede9de1104868cdebe24492dc83024f190457fa9",
+      "peak_rss_kib": 3521608,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixSpectrumLatticeNorm"
+      ],
+      "seconds": 3.257,
+      "system_seconds": 1.922585,
+      "timed_out": false,
+      "user_seconds": 1.171988
+    },
+    "Conjectures.LonelinessSixSpectrumNormGeometry": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSixSpectrumNormGeometry"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessSixSpectrumNormGeometry.kernel.log",
+      "log_sha256": "6ed751e2ea269bce692e55000740112d35ca2f4b7bff7be84cd9d0dc8fca22ca",
+      "peak_rss_kib": 3066148,
+      "replayed_modules": [
+        "Conjectures.LonelinessSixSpectrumNormGeometry"
+      ],
+      "seconds": 3.007,
+      "system_seconds": 1.8612799999999998,
+      "timed_out": false,
+      "user_seconds": 1.104979
+    },
+    "Conjectures.LonelinessSmallRunner": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSmallRunner"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessSmallRunner.kernel.log",
+      "log_sha256": "6b961bc7a1284c24db6740580461f218fa8bd1466879737130723dfbad1e9b6a",
+      "peak_rss_kib": 2280084,
+      "replayed_modules": [
+        "Conjectures.LonelinessSmallRunner"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.798759,
+      "timed_out": false,
+      "user_seconds": 0.885895
+    },
+    "Conjectures.LonelinessSubspaceDensity": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.LonelinessSubspaceDensity"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessSubspaceDensity.kernel.log",
+      "log_sha256": "92764656e41481a798fc728a27450c4bef1773ce1a4ad8ba60fcd5aa69af6144",
+      "peak_rss_kib": 1897932,
+      "replayed_modules": [
+        "Conjectures.LonelinessSubspaceDensity"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.7391649999999998,
+      "timed_out": false,
+      "user_seconds": 0.8715809999999999
+    },
+    "Conjectures.NonmixedGapDensity": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.NonmixedGapDensity"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.NonmixedGapDensity.kernel.log",
+      "log_sha256": "a37db4a985f5154d289e85b11f083e318e18d57d3f9a17e7353a04e9d5b24390",
+      "peak_rss_kib": 2053044,
+      "replayed_modules": [
+        "Conjectures.NonmixedGapDensity"
+      ],
+      "seconds": 3.006,
+      "system_seconds": 1.783442,
+      "timed_out": false,
+      "user_seconds": 1.027103
+    },
+    "Conjectures.NonmixedGapPeriodic": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.NonmixedGapPeriodic"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.NonmixedGapPeriodic.kernel.log",
+      "log_sha256": "828fc4c91d48808604116c7b2589e589a100bdcef4eca88368eb9c53a6dd2c40",
+      "peak_rss_kib": 2050320,
+      "replayed_modules": [
+        "Conjectures.NonmixedGapPeriodic"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.7522069999999998,
+      "timed_out": false,
+      "user_seconds": 0.9140649999999999
+    },
+    "Conjectures.NonmixedGapResidues": {
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+        "-v",
+        "Conjectures.NonmixedGapResidues"
+      ],
+      "exact_singleton_target": true,
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.NonmixedGapResidues.kernel.log",
+      "log_sha256": "7656a153df2cc1c861818e0e99bac6caa8b40aeb9007e93f9543866b2a6629f2",
+      "peak_rss_kib": 2053616,
+      "replayed_modules": [
+        "Conjectures.NonmixedGapResidues"
+      ],
+      "seconds": 2.756,
+      "system_seconds": 1.773375,
+      "timed_out": false,
+      "user_seconds": 0.887686
+    }
+  },
+  "kernel_replay": {
+    "all_modules_replayed_as_targets": true,
+    "exact_project_closure": true,
+    "fresh_process_per_module": true,
+    "peak_rss_kib": 3521608,
+    "replayed_modules": [
+      "Conjectures.HaralambisFaces",
+      "Conjectures.HaralambisOrientation",
+      "Conjectures.HaralambisPeriods",
+      "Conjectures.Loneliness",
+      "Conjectures.LonelinessCoalescence",
+      "Conjectures.LonelinessNearestPlane",
+      "Conjectures.LonelinessKZBasisVectors",
+      "Conjectures.LonelinessLatticeCovolume",
+      "Conjectures.LonelinessPrefixProduct",
+      "Conjectures.LonelinessRectangularGram",
+      "Conjectures.NonmixedGapDensity",
+      "Conjectures.HaralambisDefects",
+      "Conjectures.LonelinessContinuity",
+      "Conjectures.LonelinessFiveFamily",
+      "Conjectures.LonelinessCoordinateSubspace",
+      "Conjectures.LonelinessKZBasisGram",
+      "Conjectures.LonelinessNearestPlaneRelative",
+      "Conjectures.LonelinessPrefixProductTables",
+      "Conjectures.LonelinessRectangularGramLowerBound",
+      "Conjectures.NonmixedGapPeriodic",
+      "Conjectures.NonmixedGapResidues",
+      "Conjectures.LonelinessRational",
+      "Conjectures.LonelinessCriticalBase",
+      "Conjectures.LonelinessCriticalSecond",
+      "Conjectures.LonelinessCoordinateClasses",
+      "Conjectures.LonelinessKZBasisInteger",
+      "Conjectures.LonelinessKZBasisStep",
+      "Conjectures.LonelinessKZProductCertificate",
+      "Conjectures.LonelinessPacking",
+      "Conjectures.HaralambisIntervals",
+      "Conjectures.LonelinessSubspaceDensity",
+      "Conjectures.LonelinessCriticalFamilies",
+      "Conjectures.LonelinessIntegerDirection",
+      "Conjectures.LonelinessKZBasisOperations",
+      "Conjectures.LonelinessKZProductOrder",
+      "Conjectures.LonelinessPackingLower",
+      "Conjectures.HaralambisCounting",
+      "Conjectures.LonelinessHyperplaneArithmetic",
+      "Conjectures.LonelinessNearestPlaneValue",
+      "Conjectures.LonelinessNormalization",
+      "Conjectures.LonelinessRationalSubspace",
+      "Conjectures.LonelinessKZBasisReduction",
+      "Conjectures.LonelinessKZProductAssembly",
+      "Conjectures.HaralambisPairSum",
+      "Conjectures.LonelinessPrimitiveBasis",
+      "Conjectures.HaralambisDensity",
+      "Conjectures.LonelinessCoalescenceValue",
+      "Conjectures.LonelinessRationalLatticeCore",
+      "Conjectures.LonelinessKZGeneral",
+      "Conjectures.LonelinessPrimitiveSpeeds",
+      "Conjectures.LonelinessRectangularLattice",
+      "Conjectures.HaralambisTheorem",
+      "Conjectures.LonelinessNearestPlanePrefix",
+      "Conjectures.LonelinessRationalLattice",
+      "Conjectures.LonelinessKZSmallData",
+      "Conjectures.LonelinessRationalLatticeIndex",
+      "Conjectures.LonelinessSmallRunner",
+      "Conjectures.LonelinessNormGeometry",
+      "Conjectures.LonelinessSixSpectrumNormGeometry",
+      "Conjectures.LonelinessSixSpectrumLatticeNorm"
+    ],
+    "seconds": 181.899
+  },
+  "kernel_threads": 1,
+  "modern_modules": {
+    "Conjectures.HaralambisCounting": false,
+    "Conjectures.HaralambisDefects": false,
+    "Conjectures.HaralambisDensity": false,
+    "Conjectures.HaralambisFaces": false,
+    "Conjectures.HaralambisIntervals": false,
+    "Conjectures.HaralambisOrientation": false,
+    "Conjectures.HaralambisPairSum": false,
+    "Conjectures.HaralambisPeriods": false,
+    "Conjectures.HaralambisTheorem": false,
+    "Conjectures.Loneliness": false,
+    "Conjectures.LonelinessCoalescence": false,
+    "Conjectures.LonelinessCoalescenceValue": false,
+    "Conjectures.LonelinessContinuity": false,
+    "Conjectures.LonelinessCoordinateClasses": false,
+    "Conjectures.LonelinessCoordinateSubspace": false,
+    "Conjectures.LonelinessCriticalBase": false,
+    "Conjectures.LonelinessCriticalFamilies": false,
+    "Conjectures.LonelinessCriticalSecond": false,
+    "Conjectures.LonelinessFiveFamily": false,
+    "Conjectures.LonelinessHyperplaneArithmetic": false,
+    "Conjectures.LonelinessIntegerDirection": false,
+    "Conjectures.LonelinessKZBasisGram": false,
+    "Conjectures.LonelinessKZBasisInteger": false,
+    "Conjectures.LonelinessKZBasisOperations": false,
+    "Conjectures.LonelinessKZBasisReduction": false,
+    "Conjectures.LonelinessKZBasisStep": false,
+    "Conjectures.LonelinessKZBasisVectors": false,
+    "Conjectures.LonelinessKZGeneral": false,
+    "Conjectures.LonelinessKZProductAssembly": false,
+    "Conjectures.LonelinessKZProductCertificate": false,
+    "Conjectures.LonelinessKZProductOrder": false,
+    "Conjectures.LonelinessKZSmallData": false,
+    "Conjectures.LonelinessLatticeCovolume": true,
+    "Conjectures.LonelinessNearestPlane": false,
+    "Conjectures.LonelinessNearestPlanePrefix": false,
+    "Conjectures.LonelinessNearestPlaneRelative": false,
+    "Conjectures.LonelinessNearestPlaneValue": false,
+    "Conjectures.LonelinessNormGeometry": false,
+    "Conjectures.LonelinessNormalization": false,
+    "Conjectures.LonelinessPacking": false,
+    "Conjectures.LonelinessPackingLower": false,
+    "Conjectures.LonelinessPrefixProduct": false,
+    "Conjectures.LonelinessPrefixProductTables": false,
+    "Conjectures.LonelinessPrimitiveBasis": false,
+    "Conjectures.LonelinessPrimitiveSpeeds": false,
+    "Conjectures.LonelinessRational": false,
+    "Conjectures.LonelinessRationalLattice": false,
+    "Conjectures.LonelinessRationalLatticeCore": false,
+    "Conjectures.LonelinessRationalLatticeIndex": false,
+    "Conjectures.LonelinessRationalSubspace": false,
+    "Conjectures.LonelinessRectangularGram": true,
+    "Conjectures.LonelinessRectangularGramLowerBound": true,
+    "Conjectures.LonelinessRectangularLattice": false,
+    "Conjectures.LonelinessSixSpectrumLatticeNorm": false,
+    "Conjectures.LonelinessSixSpectrumNormGeometry": false,
+    "Conjectures.LonelinessSmallRunner": false,
+    "Conjectures.LonelinessSubspaceDensity": false,
+    "Conjectures.NonmixedGapDensity": false,
+    "Conjectures.NonmixedGapPeriodic": false,
+    "Conjectures.NonmixedGapResidues": false
+  },
+  "project_modules": [
+    "Conjectures.HaralambisFaces",
+    "Conjectures.HaralambisOrientation",
+    "Conjectures.HaralambisPeriods",
+    "Conjectures.Loneliness",
+    "Conjectures.LonelinessCoalescence",
+    "Conjectures.LonelinessNearestPlane",
+    "Conjectures.LonelinessKZBasisVectors",
+    "Conjectures.LonelinessLatticeCovolume",
+    "Conjectures.LonelinessPrefixProduct",
+    "Conjectures.LonelinessRectangularGram",
+    "Conjectures.NonmixedGapDensity",
+    "Conjectures.HaralambisDefects",
+    "Conjectures.LonelinessContinuity",
+    "Conjectures.LonelinessFiveFamily",
+    "Conjectures.LonelinessCoordinateSubspace",
+    "Conjectures.LonelinessKZBasisGram",
+    "Conjectures.LonelinessNearestPlaneRelative",
+    "Conjectures.LonelinessPrefixProductTables",
+    "Conjectures.LonelinessRectangularGramLowerBound",
+    "Conjectures.NonmixedGapPeriodic",
+    "Conjectures.NonmixedGapResidues",
+    "Conjectures.LonelinessRational",
+    "Conjectures.LonelinessCriticalBase",
+    "Conjectures.LonelinessCriticalSecond",
+    "Conjectures.LonelinessCoordinateClasses",
+    "Conjectures.LonelinessKZBasisInteger",
+    "Conjectures.LonelinessKZBasisStep",
+    "Conjectures.LonelinessKZProductCertificate",
+    "Conjectures.LonelinessPacking",
+    "Conjectures.HaralambisIntervals",
+    "Conjectures.LonelinessSubspaceDensity",
+    "Conjectures.LonelinessCriticalFamilies",
+    "Conjectures.LonelinessIntegerDirection",
+    "Conjectures.LonelinessKZBasisOperations",
+    "Conjectures.LonelinessKZProductOrder",
+    "Conjectures.LonelinessPackingLower",
+    "Conjectures.HaralambisCounting",
+    "Conjectures.LonelinessHyperplaneArithmetic",
+    "Conjectures.LonelinessNearestPlaneValue",
+    "Conjectures.LonelinessNormalization",
+    "Conjectures.LonelinessRationalSubspace",
+    "Conjectures.LonelinessKZBasisReduction",
+    "Conjectures.LonelinessKZProductAssembly",
+    "Conjectures.HaralambisPairSum",
+    "Conjectures.LonelinessPrimitiveBasis",
+    "Conjectures.HaralambisDensity",
+    "Conjectures.LonelinessCoalescenceValue",
+    "Conjectures.LonelinessRationalLatticeCore",
+    "Conjectures.LonelinessKZGeneral",
+    "Conjectures.LonelinessPrimitiveSpeeds",
+    "Conjectures.LonelinessRectangularLattice",
+    "Conjectures.HaralambisTheorem",
+    "Conjectures.LonelinessNearestPlanePrefix",
+    "Conjectures.LonelinessRationalLattice",
+    "Conjectures.LonelinessKZSmallData",
+    "Conjectures.LonelinessRationalLatticeIndex",
+    "Conjectures.LonelinessSmallRunner",
+    "Conjectures.LonelinessNormGeometry",
+    "Conjectures.LonelinessSixSpectrumNormGeometry",
+    "Conjectures.LonelinessSixSpectrumLatticeNorm"
+  ],
+  "required_theorems": [
+    "Loneliness.RectangularLattice.left_inverse_mulVec",
+    "Loneliness.RectangularLattice.mulVec_injective",
+    "Loneliness.RectangularLattice.real_left_inverse",
+    "Loneliness.RectangularLattice.parameters_integral",
+    "Loneliness.RectangularLattice.integral_points_iff",
+    "Loneliness.RectangularLattice.isUnimodular_image_iff",
+    "Loneliness.RectangularLattice.imageBasis_apply",
+    "Loneliness.RectangularLattice.exists_basis_first_image",
+    "Loneliness.RectangularLattice.exists_image_basis_first",
+    "Loneliness.RectangularLattice.gram_cast",
+    "Loneliness.RectangularLattice.gram_det_cast",
+    "Loneliness.RectangularLattice.basis_det_sq",
+    "Loneliness.RectangularLattice.gram_det_image_basis",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_left_inverse",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_apply",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_gram_det",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_integral_points",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_left_inverse",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_apply",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_gram_det",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_integral_points",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_left_inverse",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_apply",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_gram_det",
+    "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_integral_points",
+    "Loneliness.RectangularGram.det_mul_eq_sum_minors",
+    "Loneliness.RectangularGram.gram_det_eq_sum_minors_sq",
+    "Loneliness.RectangularGram.int_gram_det_nonneg",
+    "Loneliness.RectangularGram.int_minor_sq_le_gram_det",
+    "Loneliness.LatticeCovolume.orthonormal_fundamentalDomain_volume",
+    "Loneliness.LatticeCovolume.gram_det_eq_basis_det_sq",
+    "Loneliness.LatticeCovolume.covolume_sq_eq_gram_det",
+    "Loneliness.LatticeCovolume.covolume_sq_eq_int_gram_det",
+    "Loneliness.LatticeCovolume.one_le_covolume_sq_of_integral_gram",
+    "Loneliness.RectangularGramLowerBound.normalized_gram_det",
+    "Loneliness.RectangularGramLowerBound.normalized_gram_det_ge_six_of_rows",
+    "Loneliness.RectangularGramLowerBound.picked_det_sq_eq_one_of_gram_lt_six",
+    "Loneliness.RectangularGramLowerBound.gram_det_ge_six",
+    "Loneliness.RationalLattice.space_eq_span",
+    "Loneliness.RationalLattice.integerPoints_span_top",
+    "Loneliness.RationalLattice.integerPoints_finrank",
+    "Loneliness.RationalLattice.covolume_sq_eq_basisMatrix_gram_det",
+    "Loneliness.RationalLattice.one_le_covolume_sq",
+    "Loneliness.RationalLattice.six_le_covolume_sq",
+    "Loneliness.SixSpectrumLatticeNorm.norm_lt_rank_four",
+    "Loneliness.SixSpectrumLatticeNorm.norm_lt_five_constant",
+    "Loneliness.SixSpectrumLatticeNorm.norm_lt_six_constant",
+    "Loneliness.RationalLatticeIndex.exists_integer_gram_factor",
+    "Loneliness.RationalLatticeIndex.covolume_sq_le_gram_det",
+    "Loneliness.RationalLatticeIndex.covolume_sq_le_gram_det_of_independent"
+  ],
+  "roots": [
+    "Conjectures.LonelinessRectangularLattice",
+    "Conjectures.LonelinessRectangularGram",
+    "Conjectures.LonelinessLatticeCovolume",
+    "Conjectures.LonelinessRectangularGramLowerBound",
+    "Conjectures.LonelinessRationalLattice",
+    "Conjectures.LonelinessSixSpectrumLatticeNorm",
+    "Conjectures.LonelinessRationalLatticeIndex"
+  ],
+  "schema": "rectangular-lattice-exact-receipt-v1",
+  "scope": "Exact Cauchy-Binet and integer Gram identities; integer/real image and primitive-basis transfer under an integer left inverse; literal map determinants 3, 9, 8; covolume squared equals the Gram determinant of an actual integer-lattice basis; positive Gram determinant of an integer 6-by-4 matrix with nonzero rows distinct up to sign is at least six. Construct the full integer-point lattice of every rational coordinate subspace and derive squared covolume at least one, or at least six in rank four with a contained nonzero sign-distinct integer vector. Derive the original constants 9075, 54450, and 163350 for actual primitive six-speed norms relative to this covolume, retaining the explicit four-speed runner-bound and containing-plane-gap hypotheses. No unconditional plane-gap, runner-bound, or spectrum-classification theorem is asserted. Also prove the squared covolume is at most the integer Gram determinant of every full independent integer column basis, by an actual integer coordinate-change determinant.",
+  "source_checks": {
+    "Conjectures.HaralambisCounting": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/HaralambisCounting.olean",
+        "Conjectures/HaralambisCounting.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisCounting.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2367256,
+      "seconds": 1.755,
+      "system_seconds": 0.292382,
+      "timed_out": false,
+      "user_seconds": 1.291687
+    },
+    "Conjectures.HaralambisDefects": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/HaralambisDefects.olean",
+        "Conjectures/HaralambisDefects.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisDefects.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1881632,
+      "seconds": 1.504,
+      "system_seconds": 0.236094,
+      "timed_out": false,
+      "user_seconds": 1.067426
+    },
+    "Conjectures.HaralambisDensity": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/HaralambisDensity.olean",
+        "Conjectures/HaralambisDensity.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisDensity.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2365092,
+      "seconds": 1.503,
+      "system_seconds": 0.286311,
+      "timed_out": false,
+      "user_seconds": 1.034124
+    },
+    "Conjectures.HaralambisFaces": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/HaralambisFaces.olean",
+        "Conjectures/HaralambisFaces.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisFaces.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1778020,
+      "seconds": 1.254,
+      "system_seconds": 0.227019,
+      "timed_out": false,
+      "user_seconds": 1.008087
+    },
+    "Conjectures.HaralambisIntervals": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/HaralambisIntervals.olean",
+        "Conjectures/HaralambisIntervals.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisIntervals.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1905200,
+      "seconds": 1.253,
+      "system_seconds": 0.25693299999999997,
+      "timed_out": false,
+      "user_seconds": 0.8367819999999999
+    },
+    "Conjectures.HaralambisOrientation": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/HaralambisOrientation.olean",
+        "Conjectures/HaralambisOrientation.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisOrientation.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1846980,
+      "seconds": 1.253,
+      "system_seconds": 0.23701499999999998,
+      "timed_out": false,
+      "user_seconds": 1.019064
+    },
+    "Conjectures.HaralambisPairSum": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/HaralambisPairSum.olean",
+        "Conjectures/HaralambisPairSum.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisPairSum.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2383264,
+      "seconds": 2.255,
+      "system_seconds": 0.301093,
+      "timed_out": false,
+      "user_seconds": 1.707527
+    },
+    "Conjectures.HaralambisPeriods": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/HaralambisPeriods.olean",
+        "Conjectures/HaralambisPeriods.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisPeriods.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2093004,
+      "seconds": 5.263,
+      "system_seconds": 0.294159,
+      "timed_out": false,
+      "user_seconds": 4.761525
+    },
+    "Conjectures.HaralambisTheorem": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/HaralambisTheorem.olean",
+        "Conjectures/HaralambisTheorem.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.HaralambisTheorem.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2355644,
+      "seconds": 1.002,
+      "system_seconds": 0.298909,
+      "timed_out": false,
+      "user_seconds": 0.694445
+    },
+    "Conjectures.Loneliness": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/Loneliness.olean",
+        "Conjectures/Loneliness.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.Loneliness.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1925468,
+      "seconds": 1.504,
+      "system_seconds": 0.235283,
+      "timed_out": false,
+      "user_seconds": 1.272535
+    },
+    "Conjectures.LonelinessCoalescence": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessCoalescence.olean",
+        "Conjectures/LonelinessCoalescence.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCoalescence.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2412192,
+      "seconds": 2.756,
+      "system_seconds": 0.29838,
+      "timed_out": false,
+      "user_seconds": 2.269897
+    },
+    "Conjectures.LonelinessCoalescenceValue": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessCoalescenceValue.olean",
+        "Conjectures/LonelinessCoalescenceValue.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCoalescenceValue.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2527316,
+      "seconds": 1.253,
+      "system_seconds": 0.30844299999999997,
+      "timed_out": false,
+      "user_seconds": 0.9143129999999999
+    },
+    "Conjectures.LonelinessContinuity": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessContinuity.olean",
+        "Conjectures/LonelinessContinuity.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessContinuity.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2140256,
+      "seconds": 1.253,
+      "system_seconds": 0.276974,
+      "timed_out": false,
+      "user_seconds": 0.76793
+    },
+    "Conjectures.LonelinessCoordinateClasses": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessCoordinateClasses.olean",
+        "Conjectures/LonelinessCoordinateClasses.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCoordinateClasses.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2387188,
+      "seconds": 1.754,
+      "system_seconds": 0.299581,
+      "timed_out": false,
+      "user_seconds": 1.286496
+    },
+    "Conjectures.LonelinessCoordinateSubspace": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessCoordinateSubspace.olean",
+        "Conjectures/LonelinessCoordinateSubspace.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCoordinateSubspace.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2384656,
+      "seconds": 1.503,
+      "system_seconds": 0.29614199999999996,
+      "timed_out": false,
+      "user_seconds": 1.075886
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessCriticalBase.olean",
+        "Conjectures/LonelinessCriticalBase.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCriticalBase.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1918868,
+      "seconds": 3.007,
+      "system_seconds": 0.250907,
+      "timed_out": false,
+      "user_seconds": 2.538069
+    },
+    "Conjectures.LonelinessCriticalFamilies": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessCriticalFamilies.olean",
+        "Conjectures/LonelinessCriticalFamilies.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCriticalFamilies.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1898812,
+      "seconds": 1.003,
+      "system_seconds": 0.227321,
+      "timed_out": false,
+      "user_seconds": 0.7740929999999999
+    },
+    "Conjectures.LonelinessCriticalSecond": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessCriticalSecond.olean",
+        "Conjectures/LonelinessCriticalSecond.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessCriticalSecond.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1935508,
+      "seconds": 4.261,
+      "system_seconds": 0.24806899999999998,
+      "timed_out": false,
+      "user_seconds": 3.999981
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessFiveFamily.olean",
+        "Conjectures/LonelinessFiveFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessFiveFamily.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1927544,
+      "seconds": 4.009,
+      "system_seconds": 0.253973,
+      "timed_out": false,
+      "user_seconds": 3.5106159999999997
+    },
+    "Conjectures.LonelinessHyperplaneArithmetic": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessHyperplaneArithmetic.olean",
+        "Conjectures/LonelinessHyperplaneArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessHyperplaneArithmetic.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2199536,
+      "seconds": 1.504,
+      "system_seconds": 0.289641,
+      "timed_out": false,
+      "user_seconds": 0.9811719999999999
+    },
+    "Conjectures.LonelinessIntegerDirection": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessIntegerDirection.olean",
+        "Conjectures/LonelinessIntegerDirection.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessIntegerDirection.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2397280,
+      "seconds": 1.253,
+      "system_seconds": 0.31605099999999997,
+      "timed_out": false,
+      "user_seconds": 0.820132
+    },
+    "Conjectures.LonelinessKZBasisGram": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessKZBasisGram.olean",
+        "Conjectures/LonelinessKZBasisGram.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisGram.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3229496,
+      "seconds": 2.256,
+      "system_seconds": 0.391486,
+      "timed_out": false,
+      "user_seconds": 1.66607
+    },
+    "Conjectures.LonelinessKZBasisInteger": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessKZBasisInteger.olean",
+        "Conjectures/LonelinessKZBasisInteger.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisInteger.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3224616,
+      "seconds": 2.005,
+      "system_seconds": 0.4059,
+      "timed_out": false,
+      "user_seconds": 1.3676629999999999
+    },
+    "Conjectures.LonelinessKZBasisOperations": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessKZBasisOperations.olean",
+        "Conjectures/LonelinessKZBasisOperations.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisOperations.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3230980,
+      "seconds": 2.005,
+      "system_seconds": 0.413325,
+      "timed_out": false,
+      "user_seconds": 1.418117
+    },
+    "Conjectures.LonelinessKZBasisReduction": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessKZBasisReduction.olean",
+        "Conjectures/LonelinessKZBasisReduction.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisReduction.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3237864,
+      "seconds": 1.754,
+      "system_seconds": 0.40431,
+      "timed_out": false,
+      "user_seconds": 1.272977
+    },
+    "Conjectures.LonelinessKZBasisStep": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessKZBasisStep.olean",
+        "Conjectures/LonelinessKZBasisStep.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisStep.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3229912,
+      "seconds": 2.256,
+      "system_seconds": 0.419286,
+      "timed_out": false,
+      "user_seconds": 1.596089
+    },
+    "Conjectures.LonelinessKZBasisVectors": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessKZBasisVectors.olean",
+        "Conjectures/LonelinessKZBasisVectors.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZBasisVectors.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2967208,
+      "seconds": 1.767,
+      "system_seconds": 0.38728999999999997,
+      "timed_out": false,
+      "user_seconds": 1.203931
+    },
+    "Conjectures.LonelinessKZGeneral": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessKZGeneral.olean",
+        "Conjectures/LonelinessKZGeneral.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZGeneral.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3230708,
+      "seconds": 1.503,
+      "system_seconds": 0.389275,
+      "timed_out": false,
+      "user_seconds": 1.062009
+    },
+    "Conjectures.LonelinessKZProductAssembly": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessKZProductAssembly.olean",
+        "Conjectures/LonelinessKZProductAssembly.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZProductAssembly.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3217368,
+      "seconds": 1.503,
+      "system_seconds": 0.389268,
+      "timed_out": false,
+      "user_seconds": 1.070738
+    },
+    "Conjectures.LonelinessKZProductCertificate": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessKZProductCertificate.olean",
+        "Conjectures/LonelinessKZProductCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZProductCertificate.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3238772,
+      "seconds": 2.506,
+      "system_seconds": 0.424572,
+      "timed_out": false,
+      "user_seconds": 1.83746
+    },
+    "Conjectures.LonelinessKZProductOrder": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessKZProductOrder.olean",
+        "Conjectures/LonelinessKZProductOrder.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZProductOrder.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3236776,
+      "seconds": 2.006,
+      "system_seconds": 0.42241199999999995,
+      "timed_out": false,
+      "user_seconds": 1.444991
+    },
+    "Conjectures.LonelinessKZSmallData": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessKZSmallData.olean",
+        "Conjectures/LonelinessKZSmallData.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessKZSmallData.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3692504,
+      "seconds": 16.035,
+      "system_seconds": 0.65526,
+      "timed_out": false,
+      "user_seconds": 15.319036
+    },
+    "Conjectures.LonelinessLatticeCovolume": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessLatticeCovolume.olean",
+        "Conjectures/LonelinessLatticeCovolume.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessLatticeCovolume.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2025888,
+      "seconds": 1.754,
+      "system_seconds": 0.35817299999999996,
+      "timed_out": false,
+      "user_seconds": 1.206583
+    },
+    "Conjectures.LonelinessNearestPlane": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessNearestPlane.olean",
+        "Conjectures/LonelinessNearestPlane.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNearestPlane.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2988240,
+      "seconds": 2.005,
+      "system_seconds": 0.388862,
+      "timed_out": false,
+      "user_seconds": 1.5364550000000001
+    },
+    "Conjectures.LonelinessNearestPlanePrefix": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessNearestPlanePrefix.olean",
+        "Conjectures/LonelinessNearestPlanePrefix.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNearestPlanePrefix.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2981960,
+      "seconds": 1.503,
+      "system_seconds": 0.38694599999999996,
+      "timed_out": false,
+      "user_seconds": 0.94587
+    },
+    "Conjectures.LonelinessNearestPlaneRelative": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessNearestPlaneRelative.olean",
+        "Conjectures/LonelinessNearestPlaneRelative.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNearestPlaneRelative.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2987128,
+      "seconds": 2.004,
+      "system_seconds": 0.377451,
+      "timed_out": false,
+      "user_seconds": 1.625944
+    },
+    "Conjectures.LonelinessNearestPlaneValue": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessNearestPlaneValue.olean",
+        "Conjectures/LonelinessNearestPlaneValue.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNearestPlaneValue.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2992760,
+      "seconds": 2.005,
+      "system_seconds": 0.383859,
+      "timed_out": false,
+      "user_seconds": 1.594417
+    },
+    "Conjectures.LonelinessNormGeometry": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessNormGeometry.olean",
+        "Conjectures/LonelinessNormGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNormGeometry.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3424036,
+      "seconds": 2.005,
+      "system_seconds": 0.43001,
+      "timed_out": false,
+      "user_seconds": 1.450034
+    },
+    "Conjectures.LonelinessNormalization": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessNormalization.olean",
+        "Conjectures/LonelinessNormalization.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessNormalization.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1907644,
+      "seconds": 1.253,
+      "system_seconds": 0.24129699999999998,
+      "timed_out": false,
+      "user_seconds": 0.8810859999999999
+    },
+    "Conjectures.LonelinessPacking": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessPacking.olean",
+        "Conjectures/LonelinessPacking.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPacking.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2352392,
+      "seconds": 1.253,
+      "system_seconds": 0.292274,
+      "timed_out": false,
+      "user_seconds": 0.9238949999999999
+    },
+    "Conjectures.LonelinessPackingLower": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessPackingLower.olean",
+        "Conjectures/LonelinessPackingLower.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPackingLower.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2370660,
+      "seconds": 1.755,
+      "system_seconds": 0.297102,
+      "timed_out": false,
+      "user_seconds": 1.374456
+    },
+    "Conjectures.LonelinessPrefixProduct": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessPrefixProduct.olean",
+        "Conjectures/LonelinessPrefixProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPrefixProduct.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3235816,
+      "seconds": 2.005,
+      "system_seconds": 0.413823,
+      "timed_out": false,
+      "user_seconds": 1.5293459999999999
+    },
+    "Conjectures.LonelinessPrefixProductTables": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessPrefixProductTables.olean",
+        "Conjectures/LonelinessPrefixProductTables.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPrefixProductTables.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3260820,
+      "seconds": 5.262,
+      "system_seconds": 0.41981199999999996,
+      "timed_out": false,
+      "user_seconds": 4.604919
+    },
+    "Conjectures.LonelinessPrimitiveBasis": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessPrimitiveBasis.olean",
+        "Conjectures/LonelinessPrimitiveBasis.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPrimitiveBasis.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2698456,
+      "seconds": 1.503,
+      "system_seconds": 0.33691699999999997,
+      "timed_out": false,
+      "user_seconds": 1.076714
+    },
+    "Conjectures.LonelinessPrimitiveSpeeds": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessPrimitiveSpeeds.olean",
+        "Conjectures/LonelinessPrimitiveSpeeds.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessPrimitiveSpeeds.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2689316,
+      "seconds": 1.253,
+      "system_seconds": 0.342013,
+      "timed_out": false,
+      "user_seconds": 0.813031
+    },
+    "Conjectures.LonelinessRational": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessRational.olean",
+        "Conjectures/LonelinessRational.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRational.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2128524,
+      "seconds": 1.253,
+      "system_seconds": 0.287948,
+      "timed_out": false,
+      "user_seconds": 0.72987
+    },
+    "Conjectures.LonelinessRationalLattice": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessRationalLattice.olean",
+        "Conjectures/LonelinessRationalLattice.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRationalLattice.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3831604,
+      "seconds": 1.754,
+      "system_seconds": 0.447167,
+      "timed_out": false,
+      "user_seconds": 1.235464
+    },
+    "Conjectures.LonelinessRationalLatticeCore": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessRationalLatticeCore.olean",
+        "Conjectures/LonelinessRationalLatticeCore.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRationalLatticeCore.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3821092,
+      "seconds": 4.509,
+      "system_seconds": 0.482969,
+      "timed_out": false,
+      "user_seconds": 3.967747
+    },
+    "Conjectures.LonelinessRationalLatticeIndex": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessRationalLatticeIndex.olean",
+        "Conjectures/LonelinessRationalLatticeIndex.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRationalLatticeIndex.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3827892,
+      "seconds": 14.533,
+      "system_seconds": 0.50296,
+      "timed_out": false,
+      "user_seconds": 13.816832999999999
+    },
+    "Conjectures.LonelinessRationalSubspace": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessRationalSubspace.olean",
+        "Conjectures/LonelinessRationalSubspace.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRationalSubspace.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2416588,
+      "seconds": 1.754,
+      "system_seconds": 0.31813199999999997,
+      "timed_out": false,
+      "user_seconds": 1.215486
+    },
+    "Conjectures.LonelinessRectangularGram": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessRectangularGram.olean",
+        "Conjectures/LonelinessRectangularGram.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRectangularGram.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1398692,
+      "seconds": 1.504,
+      "system_seconds": 0.238926,
+      "timed_out": false,
+      "user_seconds": 1.241619
+    },
+    "Conjectures.LonelinessRectangularGramLowerBound": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessRectangularGramLowerBound.olean",
+        "Conjectures/LonelinessRectangularGramLowerBound.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRectangularGramLowerBound.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1452616,
+      "seconds": 4.261,
+      "system_seconds": 0.26109499999999997,
+      "timed_out": false,
+      "user_seconds": 3.896652
+    },
+    "Conjectures.LonelinessRectangularLattice": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessRectangularLattice.olean",
+        "Conjectures/LonelinessRectangularLattice.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessRectangularLattice.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3657220,
+      "seconds": 5.011,
+      "system_seconds": 0.45616999999999996,
+      "timed_out": false,
+      "user_seconds": 4.5637
+    },
+    "Conjectures.LonelinessSixSpectrumLatticeNorm": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessSixSpectrumLatticeNorm.olean",
+        "Conjectures/LonelinessSixSpectrumLatticeNorm.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessSixSpectrumLatticeNorm.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3939040,
+      "seconds": 2.756,
+      "system_seconds": 0.461937,
+      "timed_out": false,
+      "user_seconds": 2.252786
+    },
+    "Conjectures.LonelinessSixSpectrumNormGeometry": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessSixSpectrumNormGeometry.olean",
+        "Conjectures/LonelinessSixSpectrumNormGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessSixSpectrumNormGeometry.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3444284,
+      "seconds": 2.255,
+      "system_seconds": 0.423753,
+      "timed_out": false,
+      "user_seconds": 1.826938
+    },
+    "Conjectures.LonelinessSmallRunner": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessSmallRunner.olean",
+        "Conjectures/LonelinessSmallRunner.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessSmallRunner.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2606724,
+      "seconds": 1.503,
+      "system_seconds": 0.326108,
+      "timed_out": false,
+      "user_seconds": 1.100366
+    },
+    "Conjectures.LonelinessSubspaceDensity": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/LonelinessSubspaceDensity.olean",
+        "Conjectures/LonelinessSubspaceDensity.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.LonelinessSubspaceDensity.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2202520,
+      "seconds": 1.504,
+      "system_seconds": 0.277383,
+      "timed_out": false,
+      "user_seconds": 1.103506
+    },
+    "Conjectures.NonmixedGapDensity": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/NonmixedGapDensity.olean",
+        "Conjectures/NonmixedGapDensity.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.NonmixedGapDensity.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2383888,
+      "seconds": 3.257,
+      "system_seconds": 0.30229,
+      "timed_out": false,
+      "user_seconds": 2.833699
+    },
+    "Conjectures.NonmixedGapPeriodic": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/NonmixedGapPeriodic.olean",
+        "Conjectures/NonmixedGapPeriodic.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.NonmixedGapPeriodic.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2366428,
+      "seconds": 1.503,
+      "system_seconds": 0.30058799999999997,
+      "timed_out": false,
+      "user_seconds": 1.171292
+    },
+    "Conjectures.NonmixedGapResidues": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/lib/lean/Conjectures/NonmixedGapResidues.olean",
+        "Conjectures/NonmixedGapResidues.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/rectangular-lattice-algebra/logs/Conjectures.NonmixedGapResidues.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2366888,
+      "seconds": 2.005,
+      "system_seconds": 0.305897,
+      "timed_out": false,
+      "user_seconds": 1.518491
+    }
+  },
+  "source_policy": {
+    "fresh_project_objects": true,
+    "linter_override": false,
+    "warning_as_error": true
+  },
+  "source_sha256": {
+    "Conjectures.HaralambisCounting": "b315781d9fed35b6490547c52ba416033d8fa1ce74e234d1ca75c1c08947165f",
+    "Conjectures.HaralambisDefects": "e97a0a15cbcbfc7962aaac1409051fed8b363f1475b728d20f61117cc363e9c3",
+    "Conjectures.HaralambisDensity": "6f5c1d408c7e017f5c1bb60d832a8a566267f137c932498df0826f6a35e1ab25",
+    "Conjectures.HaralambisFaces": "bb71842e0b01a8975d847e8011c72e25e6f171f5aecba2865a9f1497caf0aedd",
+    "Conjectures.HaralambisIntervals": "8d5a75119a748f371493d1d47508136f2793d4e13ca74b52435e662c5aef7219",
+    "Conjectures.HaralambisOrientation": "007a67ae5c701ad51e7d9957f5066490941c1d00ced13b7a251d94916d7d64a8",
+    "Conjectures.HaralambisPairSum": "032549371a9c2d24599a2f090e848dc7f7f9cfaeb79dacbbfc8d6c0c14c10998",
+    "Conjectures.HaralambisPeriods": "a8e3ada09e8d9cac8e2e816de5b55739c3a36c73bb2caebccc9bcb2fa3ba6daa",
+    "Conjectures.HaralambisTheorem": "a99e2c6d08677c459e0e405a211468c8fa192e2a6f9ed0078619f00d8e7d8fd8",
+    "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "Conjectures.LonelinessCoalescence": "5518fdfed0369763c2ba701272edb25fbaafde2d230c869f4412f2c441ef9d1d",
+    "Conjectures.LonelinessCoalescenceValue": "b2b7037f036e3fdeb5e52e0314fd7126db2ae921c6c182abf6175c5884a5bcb7",
+    "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "Conjectures.LonelinessCoordinateClasses": "0075b701fd3fa51feef62f59850dfaa3dfece95e3287d51a7afb438a76691b63",
+    "Conjectures.LonelinessCoordinateSubspace": "a6a58ef2dfb5262e43641aae3e18c9d7ddcc8163aebad18cf6eb2416ae46bfea",
+    "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+    "Conjectures.LonelinessCriticalFamilies": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+    "Conjectures.LonelinessCriticalSecond": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+    "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+    "Conjectures.LonelinessHyperplaneArithmetic": "53178525bbbd49c19fa9dd1046f39681841319ef0dae8ac2a77216b34bee5ffa",
+    "Conjectures.LonelinessIntegerDirection": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6",
+    "Conjectures.LonelinessKZBasisGram": "cbedf5849f99a461e39f8cde2ddb9ffa8b734d0b2deca865451aab49ca50dd0c",
+    "Conjectures.LonelinessKZBasisInteger": "e575961a4d2c5bfe419de63afb5cabe10b37ddd4f216db2a12f3f6fc4d118717",
+    "Conjectures.LonelinessKZBasisOperations": "43917842a85cb92ca6a0f1d44ad118610dcc78997fc6713d3976e3ab9e82d727",
+    "Conjectures.LonelinessKZBasisReduction": "7de1d388440a0eaff74ab6239f89f66038bc8f986e5fcb6880950e3cf80f062d",
+    "Conjectures.LonelinessKZBasisStep": "c7aca10c90546c0aad423b536b932ddc1bfc7187fcb1e97ee23ccfaf9bb3e611",
+    "Conjectures.LonelinessKZBasisVectors": "c15824ec759e83dce78210732dcc0405d2d02c992bde00fb2e9ac8fd8053c305",
+    "Conjectures.LonelinessKZGeneral": "4b18e7faf56c09de417a2f2b745832e61fdf919eff75bcd3ef9f1dc50925a8bc",
+    "Conjectures.LonelinessKZProductAssembly": "3287fa3c3a33f37d76d346ecb5658f8b01e5301f79b7a6050f7c0516a3fb2e0c",
+    "Conjectures.LonelinessKZProductCertificate": "a3fa0544e84d9f80137263dc0c342463bfc7fe466bcf78ab8ac81d247479ba23",
+    "Conjectures.LonelinessKZProductOrder": "fee89ef5a030a7ef33d4259fa90d697b6360593a38b92ae4610233054ac0568a",
+    "Conjectures.LonelinessKZSmallData": "6dc57df9f114ede637bd201b8c9f8a99ce1bc644f61b3bda1f3d786f66a8d002",
+    "Conjectures.LonelinessLatticeCovolume": "b2438d082556ea4765f385c74c195e458976559d1a94f3f2e09d10a08ddeaf4a",
+    "Conjectures.LonelinessNearestPlane": "7ecb53d6a8c77fb9d06accde929d834d0eb4e26fbccd3ce01c8d4c0cef4bc8b9",
+    "Conjectures.LonelinessNearestPlanePrefix": "4c5ce5394a76551b473308c95140ed3e3a4d5fe8b883411adc89457aed72639b",
+    "Conjectures.LonelinessNearestPlaneRelative": "15cf3d48c9120ad8a2ddab46ad0371ed9a1f20a7397ddeea88a103c2c0aff0af",
+    "Conjectures.LonelinessNearestPlaneValue": "03080ec0159a4e74a7ba8c8556a315be481df677a9cb1038fcb1fb210b768703",
+    "Conjectures.LonelinessNormGeometry": "9a6ea8340ad95fd5a656c3938125a5a1662bce25a02616b169d426db8ba16d94",
+    "Conjectures.LonelinessNormalization": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+    "Conjectures.LonelinessPacking": "61ae885750aec875160f7e1ea522a581aa18a576871fe89baf70f1c11f026d7d",
+    "Conjectures.LonelinessPackingLower": "c9bd26dd3ae91a4e2b8513bd755936c5fdaf6d2faa31fe353b87498d0a200ca3",
+    "Conjectures.LonelinessPrefixProduct": "4ba946b6ec3a4a1317129912e9b65bfd9daf7f96981ca444276adb65c0ef929e",
+    "Conjectures.LonelinessPrefixProductTables": "39cceabd3e275af4d4c44e488a229187b62eba186704b6d628a5cfbe53620ba6",
+    "Conjectures.LonelinessPrimitiveBasis": "a2a3c31eed4b428f7ff38323dffb0ea3d25d41579da43e4601c2a727a93490ec",
+    "Conjectures.LonelinessPrimitiveSpeeds": "95829247acbd3e1ebe62b57d1e7ca9f2af22f006df37c390574c690d152427e6",
+    "Conjectures.LonelinessRational": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
+    "Conjectures.LonelinessRationalLattice": "9798115e7c7bef4c42212deca956f1162cc49948e7f86008f1b5d88954b3d60a",
+    "Conjectures.LonelinessRationalLatticeCore": "363343b7eed15394d37f6eade27ce3dd9c85a6b73b4ac857528559237ac38a6d",
+    "Conjectures.LonelinessRationalLatticeIndex": "223b9ba75a489d57540d3d092e2aac51769d56d26473c83722ec652b11bd3c68",
+    "Conjectures.LonelinessRationalSubspace": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88",
+    "Conjectures.LonelinessRectangularGram": "76cdf16b3bd3a8072c23cfebdda74ef2cae4fe0fc22c20120866949f8aaa639d",
+    "Conjectures.LonelinessRectangularGramLowerBound": "70527d0c5e39f2b8fe1a5abb759f3b21ad66d369b7247265d4fad7cdfb59ea4c",
+    "Conjectures.LonelinessRectangularLattice": "8cbc83f677d2d1ef72563beed05128d3fffd9cb76248422d09f5215212620174",
+    "Conjectures.LonelinessSixSpectrumLatticeNorm": "638fa7f812fa29aa4b48502833067018894d5ee5e16aabdd24b1cee293a1b49b",
+    "Conjectures.LonelinessSixSpectrumNormGeometry": "c35c05d5c467122e3f79243cf6bdcb4a7130f63c903bfe793b21ff16d0ec434d",
+    "Conjectures.LonelinessSmallRunner": "f8ac5325642e26f9c2570293a6b3032dff53d8511f1a3af4c92d8469918ed343",
+    "Conjectures.LonelinessSubspaceDensity": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f",
+    "Conjectures.NonmixedGapDensity": "4f807a024e6eda1b4ec39e7942b2178b41c48b55ab1ed4a8a18c7d535aeaa731",
+    "Conjectures.NonmixedGapPeriodic": "dc479ec5fab7c8912231e3b972f794e2e1558120512666f939b139e8411cc180",
+    "Conjectures.NonmixedGapResidues": "98f3fe3c1fa443c68c8b5d5f80f4e7fc2ec8f6698fc273fc188d9e91b979b737"
+  },
+  "source_workers": 1,
+  "stated_component_scope_checked": true,
+  "status": "passed",
+  "toolchain": {
+    "checker_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+    "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "lean_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)"
+  },
+  "universal_classification_claimed": false
+}

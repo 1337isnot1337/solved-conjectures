@@ -1394,6 +1394,14 @@ modules=(
   Conjectures.LonelinessTightSevenPrime251BinaryData
   Conjectures.LonelinessTightSevenPrime251BinaryChecks
   Conjectures.LonelinessTightSevenPrime251Binary
+  Conjectures.LonelinessRectangularLattice
+  Conjectures.LonelinessRectangularGram
+  Conjectures.LonelinessLatticeCovolume
+  Conjectures.LonelinessRectangularGramLowerBound
+  Conjectures.LonelinessRationalLatticeCore
+  Conjectures.LonelinessRationalLatticeIndex
+  Conjectures.LonelinessRationalLattice
+  Conjectures.LonelinessSixSpectrumLatticeNorm
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.
