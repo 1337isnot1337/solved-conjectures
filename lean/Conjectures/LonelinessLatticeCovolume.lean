@@ -2,6 +2,7 @@ module
 
 public import Mathlib.Algebra.Module.ZLattice.Covolume
 public import Mathlib.Analysis.InnerProductSpace.GramMatrix
+public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
 public import Mathlib.Tactic
 
 @[expose] public section
@@ -50,6 +51,7 @@ theorem covolume_sq_eq_gram_det (L : Submodule ℤ E)
   have hc := ZLattice.covolume_eq_det_mul_measureReal L volume b b₀.toBasis
   rw [orthonormal_fundamentalDomain_volume b₀, mul_one] at hc
   rw [hc, gram_det_eq_basis_det_sq b₀, sq_abs]
+  rfl
 
 theorem covolume_sq_eq_int_gram_det (L : Submodule ℤ E)
     [DiscreteTopology L] [IsZLattice ℝ L] (b : Basis ι ℤ L)

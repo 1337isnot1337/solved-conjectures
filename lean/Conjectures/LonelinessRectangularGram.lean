@@ -70,6 +70,7 @@ private theorem pairing_basis (A : Matrix (Fin r) (Fin m) R)
       (A.submatrix id (Set.powersetCard.ofFinEmbEquiv.symm s)).transpose := by
     ext i j
     simp [rowForm, dotProductEquiv]
+  simp only [Function.comp_apply]
   rw [hmatrix, Matrix.det_transpose]
 
 /-- Cauchy–Binet for a rectangular product, with one term for each subset. -/

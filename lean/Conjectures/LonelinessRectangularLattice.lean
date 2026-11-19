@@ -37,8 +37,8 @@ theorem mulVec_injective {R : Type*} [CommRing R]
   have h := congrArg (fun w => L *ᵥ w) huv
   simpa only [left_inverse_mulVec A L hLA] using h
 
-/-- Scalar extension preserves the given integer left inverse. -/
 omit [Fintype n] in
+/-- Scalar extension preserves the given integer left inverse. -/
 theorem real_left_inverse (A : Matrix m n ℤ) (L : Matrix n m ℤ)
     (hLA : L * A = 1) :
     L.map (Int.castRingHom ℝ) * A.map (Int.castRingHom ℝ) = 1 := by
@@ -134,8 +134,8 @@ theorem exists_image_basis_first {r : ℕ}
 def columns (A : Matrix m n ℤ) : n → EuclideanSpace ℝ m :=
   fun j => KZBasis.realVector (fun i => A i j)
 
-/-- The integer Gram matrix casts to the Euclidean Gram matrix. -/
 omit [Fintype n] [DecidableEq n] in
+/-- The integer Gram matrix casts to the Euclidean Gram matrix. -/
 theorem gram_cast (A : Matrix m n ℤ) :
     (A.transpose * A).map (fun z => (z : ℝ)) = Matrix.gram ℝ (columns A) := by
   ext i j
