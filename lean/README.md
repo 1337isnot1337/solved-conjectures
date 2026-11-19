@@ -1,4 +1,6 @@
-# Lean verification of the fixed-scale counterexample
+# Shared Lean formalizations
+
+## Fixed-scale solitaire counterexample
 
 The main declaration is
 `SolitaireCounterexample.eriksson_jonsson_sjoestrand_conjecture1_counterexample`
@@ -22,10 +24,24 @@ sequence picks all layers through `n` and uses `[n]`; this finite modification
 ensures the quantified sequences are defined on every positive deck size and
 does not affect the limit.
 
-**Scope:** the Lean theorem verifies the fixed-scale counterexample. It does
-**not** verify the separate theorem in the note for arbitrary layer sets and
-diverging scaling factors. The correspondence between the paper's definitions
-and their formal transcription remains a matter for mathematical review.
+## Corrected solitaire theorem
+
+`Solitaire/GeneralTheorem.lean` proves the separate corrected theorem for
+arbitrary layer sets containing 1, every actual recurrent configuration, and
+every positive scaling sequence tending to infinity. The finite proof uses
+actual multiset moves, exact return-time rank periodicity, attained birth
+ranges and sorted-column interlacing. Stable configurations are classified,
+and the reference has the largest mass at most n among all actual fixed points.
+
+The explicit estimate is `4/(a*ε^2)+sqrt(2)/(ε*sqrt(n))`. It proves uniform
+agreement of the recurrent and reference profiles on every interval `x≥ε>0`.
+Every pointwise limit of the reference profiles therefore transfers to every
+recurrent sequence. The public arbitrary-set wrapper is
+`SolitaireGeneral.arbitrary_layers_uniform`.
+
+The definitions' correspondence with the source publication remains subject
+to mathematical review. The stated dynamical and analytic conclusions are
+checked internally without unformalized mathematical lemmas as premises.
 
 ## Reproduce
 
@@ -35,8 +51,8 @@ Requires Lean 4.35.0 through elan and the pinned Mathlib revision in
 ```sh
 MATHLIB_NO_CACHE_ON_UPDATE=1 lake update
 lake exe cache get
-lake build
-lake env leanchecker Solitaire.Limits
+cd ..
+bash scripts/verify_lean.sh
 ```
 
 The final declaration's `#print axioms` reports `propext`, `Classical.choice`,
@@ -45,8 +61,10 @@ and `Quot.sound`, the standard Lean axioms; it does not depend on `sorryAx`,
 
 ## Additional repository proofs
 
-This package also hosts the War proofs and partial formalizations of the Pham,
-Batista, and CUT Family B arguments. See the repository-wide
+This package also hosts the complete War, Batista, CUT Family B, symmetric
+four-point density and nonmixed-gap density proofs, the general CUT
+arithmetic-periodicity test, and partial formalizations of
+the remaining repository results. See the repository-wide
 [Lean verification report](../docs/lean-status.md) for exact scope.
 Run `scripts/verify_lean.sh` from the repository root to build and kernel-recheck
 all formalizations and audit every project theorem for additional axioms.

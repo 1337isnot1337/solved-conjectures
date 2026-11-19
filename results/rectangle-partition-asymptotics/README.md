@@ -22,4 +22,4 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-No Lean formalization is currently listed for this result. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
+Partial formalization. The general shelf-packing lemma and exact small-part deletion bound have passed source and independent kernel checks. The geometric injection and analytic partition asymptotics remain open. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.

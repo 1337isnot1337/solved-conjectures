@@ -11,19 +11,19 @@ A growing collection of proofs, counterexamples, and reproducible verification c
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | [Read](results/haralambis-three-differences/PROOF.md) | ☑ |
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | [Read](results/eight-speed-spectrum/PROOF.md) | ☐ |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | [Read](results/seven-speed-spectrum/PROOF.md) | ☐ |
-| [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | [Read](results/six-speed-spectrum/PROOF.md) | ☐ |
+| [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | [Read](results/six-speed-spectrum/PROOF.md) | ◐ |
 | [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | [Read](results/tight-eleven-to-fourteen/PROOF.md) | ☐ |
 | [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | [Read](results/tight-nine-speeds/PROOF.md) | ☐ |
-| [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | [Read](results/tight-eight-speeds/PROOF.md) | ☐ |
-| [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | [Read](results/tight-seven-speeds/PROOF.md) | ☐ |
+| [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | [Read](results/tight-eight-speeds/PROOF.md) | ◐ |
+| [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | [Read](results/tight-seven-speeds/PROOF.md) | ◐ |
 | [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | [Read](results/five-speed-spectrum/PROOF.md) | ◐ |
 | [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | [Read](results/symmetric-four-point-density/PROOF.md) | ☑ |
 | [Packing with two nonmixed gaps](results/nonmixed-gap-packing/) | [Read](results/nonmixed-gap-packing/PROOF.md) | ☑ |
 | [Two-difference Motzkin density](results/two-difference-motzkin/) | [Read](results/two-difference-motzkin/PROOF.md) | ☐ |
-| [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | [Read](results/tight-six-speeds/PROOF.md) | ☐ |
-| [Distance graphs with three missing differences](results/distance-graph-densities/) | [Read](results/distance-graph-densities/PROOF.md) | ☐ |
-| [Growing rectangles](results/rectangle-partition-asymptotics/) | [Read](results/rectangle-partition-asymptotics/PROOF.md) | ☐ |
-| [CUT Family B](results/cut-family-b/) | [Read](results/cut-family-b/PROOF.md) | ◐ |
+| [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | [Read](results/tight-six-speeds/PROOF.md) | ◐ |
+| [Distance graphs with three missing differences](results/distance-graph-densities/) | [Read](results/distance-graph-densities/PROOF.md) | ◐ |
+| [Growing rectangles](results/rectangle-partition-asymptotics/) | [Read](results/rectangle-partition-asymptotics/PROOF.md) | ◐ |
+| [CUT Family B](results/cut-family-b/) | [Read](results/cut-family-b/PROOF.md) | ☑ |
 | [Line-size sets](results/erdos-607-line-sizes/) | [Read](results/erdos-607-line-sizes/PROOF.md) | ☐ |
 | [CUT with a preperiod](results/cut-arithmetic-periodicity/) | [Read](results/cut-arithmetic-periodicity/PROOF.md) | ◐ |
 | [L-solitaire limit shapes](results/l-solitaire-limit-shapes/) | [Read](results/l-solitaire-limit-shapes/PROOF.md) | ☑ |
@@ -34,7 +34,7 @@ A growing collection of proofs, counterexamples, and reproducible verification c
 
 ☑ Formalized stated result · ◐ Partial formalization · ☐ Not formalized
 
-The [catalogue](CONTENTS.md) gives the exact claims, sources, and scope. The [Lean status report](docs/lean-status.md) distinguishes complete results from partial certificates and remaining dependencies. In particular, the solitaire checkmark covers the fixed-scale counterexample, not the separate diverging-scale theorem.
+The [catalogue](CONTENTS.md) gives the exact claims, sources, and scope. The [Lean status report](docs/lean-status.md) distinguishes complete results from partial certificates and remaining dependencies. The solitaire checkmark covers both the fixed-scale counterexample and the corrected theorem for every diverging horizontal scale.
 
 These notes are unrefereed. Computational checks and Lean verification are distinct from peer review and priority claims.
 

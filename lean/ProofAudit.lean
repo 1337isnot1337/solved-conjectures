@@ -1,6 +1,7 @@
 import Solitaire
 import Conjectures
 import Lean.Util.CollectAxioms
+import Lean.PrivateName
 
 /-! Fail the build if any project theorem uses an axiom beyond Lean's standard
 logical axioms. In particular this rejects sorryAx, native_decide, and any
@@ -9,20 +10,46 @@ open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
     `SolitaireCounterexample.eriksson_jonsson_sjoestrand_conjecture1_counterexample,
+    `SolitaireGeneral.profile_difference_bound, `SolitaireGeneral.uniform_profile_difference,
+    `SolitaireGeneral.profile_limit_transfer,
+    `SolitaireGeneral.LayerRule.referenceState_maximal,
+    `SolitaireGeneral.LayerRule.fixed_iff_stableState,
+    `SolitaireGeneral.LayerRule.recurrent_comparison,
+    `SolitaireGeneral.LayerRule.recurrent_profile_bound,
+    `SolitaireGeneral.corrected_solitaire_uniform,
+    `SolitaireGeneral.corrected_solitaire_pointwise,
+    `SolitaireGeneral.arbitrary_layers_uniform,
+    `RectanglePartitions.shelf_packing, `RectanglePartitions.deletion_count_bound,
+    `RectanglePartitions.largeParts_smallCode_injective,
+    `DistanceGraph.odd_cycle_upperDensity, `DistanceGraph.odd_cycle_window,
+    `DistanceGraph.odd_cycle_optimal,
+    `DistanceGraph.gap_five_value, `DistanceGraph.gap_seven_value,
+    `DistanceGraph.gap_five_table, `DistanceGraph.gap_seven_table,
+    `DistanceGraph.gap_five_one, `DistanceGraph.gap_seven_one,
+    `DistanceGraph.gap_seven_fifty, `DistanceGraph.corrected_residue_five,
+    `DistanceGraph.corrected_prediction_difference,
+    `DistanceGraph.corrected_prediction_strict,
+    `DistanceGraph.counterexample_character_difference,
     `War.three_standard_cycles, `War.standard_deal_witnesses,
     `War.rank_first_return, `War.seat_first_return, `War.clockwise_first_return,
     `Denominator.finite_coefficient_identity,
     `Denominator.primary_identity_of_representation, `Denominator.primary_coprime,
     `Denominator.dual_identity_of_representation, `Denominator.dual_coprime,
+    `DenominatorDynamics.forward_reverse, `DenominatorDynamics.inverse_move_complete,
+    `DenominatorDynamics.preimage_iff, `DenominatorDynamics.distinct_sizes_distinct_preimages,
+    `DenominatorDynamics.forward_preserves_mass, `DenominatorDynamics.reverse_preserves_mass,
     `Egyptian.batista_greedy_exists, `Egyptian.triple_rational,
     `Egyptian.first_denominator_bound, `Egyptian.unique_maximum_from_pair_optimal,
     `Egyptian.batista_congruence, `Egyptian.batista_admissible_congruence,
     `CutFamily.large_cut_decreases, `CutFamily.family_b_threshold_of_base_formula,
+    `CutFamily.gameValue_mex, `CutFamily.even_base_mex,
+    `CutFamily.family_b, `CutFamily.family_b_difference_by_four_x,
     `BinaryAutomata.certified_list_refinement, `BinaryAutomata.adds_zero_iff,
     `BinaryAutomata.high_xor_iff, `BinaryAutomata.sum_accepts_iff,
     `BinaryAutomata.checked_list_rows, `BinaryAutomata.exists_encoding,
     `BinaryAutomata.DFA.product_accepts, `BinaryAutomata.projection_accepts_iff,
     `CutPeriod.sum_recognizes_successor,
+    `CutPeriod.piles_add_iff, `CutPeriod.sum_recognizes_piles,
     `CutPeriod.candidate_least_period, `CutPeriod.candidate_saltus,
     `CutPeriod.candidate_least_start,
     `CutPeriod.mex_of_error_languages,
@@ -34,6 +61,31 @@ run_cmd do
     `BinaryAutomata.maskOfList_eq_of_normalized,
     `FiniteCertificate.checked_interval_rows,
     `BinaryAutomata.DFA.short_word_to_state, `BinaryAutomata.DFA.emptyCheck_correct,
+    `BinaryAutomata.NFA.determinize_accepts, `BinaryAutomata.DFA.zeroPrefix_accepts,
+    `BinaryAutomata.AffineGraph.Ray.graph_correct,
+    `BinaryAutomata.Tail.graph_correct, `BinaryAutomata.Tail.graphEmptyCheck_correct,
+    `BinaryAutomata.Tail.value_add_period, `BinaryAutomata.ultimatelyArithmetic_iff_representation,
+    `BinaryAutomata.DFA.dropZeroPrefixes_accepts,
+    `BinaryAutomata.DFA.sumRelation_correct, `BinaryAutomata.DFA.lowerRelation_correct,
+    `BinaryAutomata.Recognizer.emptyCheck_correct,
+    `CutPeriod.Decision.finiteSetTest_correct, `CutPeriod.Decision.finiteSetTest_iff_grundy,
+    `CutPeriod.Decision.finiteSetTest_iff_gameValue,
+    `CutPeriod.Decision.searchBound_sound, `CutPeriod.Decision.searchBound_complete,
+    `CutPeriod.Decision.search_eventually_iff,
+    `CutPeriod.Decision.search_eventually_iff_arithmetic,
+    `PackingFourPoint.packing_interval_obstruction, `PackingFourPoint.covering_interval_obstruction,
+    `PackingFourPoint.packing_multiplicity_bound, `PackingFourPoint.covering_multiplicity_bound,
+    `PackingFourPoint.packing_center_bound, `PackingFourPoint.covering_center_bound,
+    `PackingFourPoint.symmetric_four_point_densities,
+    `PackingFourPoint.odd_packing_attainment, `PackingFourPoint.odd_covering_attainment,
+    `PackingFourPoint.even_odd_attainment,
+    `PackingFourPoint.packing_interval_sharp, `PackingFourPoint.covering_interval_sharp,
+    `Loneliness.exists_pair_sum_maximum, `Loneliness.certified_pair_value,
+    `Loneliness.PairSum.score_eq_clearance, `Loneliness.PairSum.IsExactValue.value_eq,
+    `Loneliness.PairSum.exists_pair_sum_maximum, `Loneliness.PairSum.certified_exact_value,
+    `Loneliness.PairSum.Examples.five_sporadic_12, `Loneliness.PairSum.Examples.six_sporadic_09,
+    `Loneliness.PairSum.Examples.seven_tight_02, `Loneliness.PairSum.Examples.seven_tight_03,
+    `Loneliness.PairSum.Examples.eight_consecutive, `Loneliness.PairSum.Examples.haralambis_example,
     `CutPeriod.Decision.satisfiesMex_iff_finite_tests,
     `CutPeriod.GraphCertificate.correct, `CutPeriod.LowerCertificate.correct,
     `CutGeneral.Candidate.test_correct, `CutGeneral.Candidate.test_identifies_grundy,
@@ -127,11 +179,20 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["SolitaireCounterexample.", "War.", "Denominator.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis."]
+  let prefixes := #["SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do
-    if prefixes.any (fun p => name.toString.startsWith p) then
+    let projectModule := match env.getModuleIdxFor? name |>.bind (env.header.modules[·]?) with
+      | some mod =>
+        let moduleName := mod.module.toString
+        moduleName == "Solitaire" || moduleName.startsWith "Solitaire." ||
+          moduleName == "Conjectures" || moduleName.startsWith "Conjectures."
+      | none => false
+    if projectModule || prefixes.any (fun p => (privateToUserName name).toString.startsWith p) then
+      if let .axiomInfo _ := info then
+        unless allowed.contains name do
+          throwError "Unapproved project axiom {name}"
       if let .thmInfo _ := info then
         count := count + 1
         for axiomName in ← collectAxioms name do

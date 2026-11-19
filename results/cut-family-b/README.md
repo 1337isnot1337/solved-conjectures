@@ -22,4 +22,4 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-Partial formalization; the full result is not yet formally verified. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
+Complete formalization of the threshold theorem for the recursively defined games, including arbitrary infinite cut sets. The base-game formula and all added even cuts are proved internally. The proof also gives a discrepancy by pile size `4x` when the odd-cut threshold fails. See [the checked statements](../../lean/Conjectures/CutFamilyTheorem.lean) and [verification status](../../docs/lean-status.md).

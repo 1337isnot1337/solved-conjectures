@@ -151,7 +151,7 @@ The stable reference has mass `s<=n` with
 
 For completeness, let `ell` be the number of nonzero piles of `S(j)=zeta`. Increasing the top pile to `j+1` adds at most one to each of its `ell` existing piles and may create at most one final 1, since `f` is 1-Lipschitz. By maximality of `s`, `n-s<|S(j+1)|-s<=ell+1`; the integer gap therefore satisfies `n-s<=ell`. Since stable positive piles strictly decrease, `ell(ell+1)/2<=s<=n`; hence `ell<sqrt(2n)`.
 
-Choose `a=a_n`, `x>=epsilon`, `a*epsilon>=2`, and `i=floor(a*x)+1`. Using `i-1>=a*epsilon`, `s<=n`, and `zeta_i<=s/i`,
+Choose `a=a_n`, `x>=epsilon`, `a*epsilon>=2`, and `i=floor(a*x)+1`. Then `i>a*epsilon` and `i-1>=a*epsilon/2`. Using these bounds, `s<=n`, and `zeta_i<=s/i`,
 
 \[
  \begin{aligned}

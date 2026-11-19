@@ -2,6 +2,21 @@
 
 [Home](README.md) · [Catalogue](CONTENTS.md)
 
+## 2026-11-18 — Corrected solitaire and combined formalizations
+
+- Completed the corrected L-solitaire theorem in Lean for arbitrary layer sets,
+  actual recurrent configurations, and every diverging horizontal scale. The
+  finite dynamics, stable-reference classification, analytic bound and limit
+  transfer passed source, axiom and independent kernel checks.
+- Merged the concurrent density and loneliness foundations, and identified the
+  two real distance definitions through a checked pair-sum interface.
+- Completed the all-parameter gap-five/gap-seven character formulas and the
+  general odd-cycle density theorem. Added finite rectangle packing/counting
+  inputs and the exact actual-pile CUT composition theorem.
+- Passed the combined source build, the 6,954-theorem standard-axiom audit,
+  and independent kernel replay of all 152 accepted proof modules and both
+  roots. The replay list is checked against the source-import closure.
+
 ## 2026-11-19 — Equality for eleven through fourteen runners
 
 - Classified the primitive equality cases using published binary sieves and an additional integer-direction calculation.
@@ -39,5 +54,17 @@
 - Grouped result files under `results/` and moved the shared Lean package to `lean/`.
 - Updated navigation, CI commands, and certificate-generation paths.
 - Kept mathematical statements and formalization status unchanged.
+
+## 2026-11-18 — Formalization campaign resumed
+
+- Completed the CUT Family B theorem for the actual recursively defined games,
+  including infinite cut sets and the sharp discrepancy bound.
+- Added exact reverse-solitaire preimage semantics and uniform arithmetic-tail
+  graph recognizers.
+- Added a general loneliness maximum theorem and 31 kernel-checked exact values.
+- Completed the symmetric four-point packing and covering densities, including
+  attainments and sharp interval lengths.
+- Continued the corrected solitaire and remaining density/automata proofs.
+- Kept Li last and tracked active lanes in issue 1.
 
 This file records collection-level changes, not a complete discovery or priority timeline. For individual additions and revisions, see [the commit history](https://github.com/1337isnot1337/solved-conjectures/commits/main/). Ongoing formalization work is recorded in [the status report](docs/lean-status.md) and [campaign notes](docs/formalization.md).

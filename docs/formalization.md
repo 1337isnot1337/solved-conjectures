@@ -1,180 +1,128 @@
 # Full formalization campaign
 
-Objective: formalize every proof and mathematical result in this repository in
-Lean, preserving the stated scope and discharging unformalized mathematical
-inputs. All accepted work belongs on `main`; other branches were removed after
-their work was fast-forwarded into `main`.
+The objective is to formalize every result in this repository, preserving its
+quantifiers and discharging every mathematical dependency. Accepted work goes
+to `main`. Li is last. The campaign is incomplete.
 
-## Active campaign, 18 November 2026
+## Coordination, 18 November 2026
 
-The campaign has resumed under the current request to formalize every result.
-Li is last. Issue [#2](https://github.com/1337isnot1337/solved-conjectures/issues/2)
-tracks this team's work; issue [#1](https://github.com/1337isnot1337/solved-conjectures/issues/1)
-tracks the concurrent campaign. Result-specific claims record ownership before
-a lane changes focus. The campaign remains INCOMPLETE.
+The four active lanes in [issue 1](https://github.com/1337isnot1337/solved-conjectures/issues/1) are:
 
-Checked extension: the complete general finite CUT decision construction and
-candidate enumeration, exact real-time loneliness certificates, the infinite
-five-speed realization family, and both critical-family reductions. The new
-source modules passed separate axiom audits and independent kernel replay.
-The exact declarations and remaining gaps are in `docs/lean-status.md`.
+- Concrete CUT certificates: the checked composition theorem permits the path
+  2 → 3 → 4 → 8 → 9. The eight-pile recognizer is composed from two four-pile
+  recognizers. The final option unions remain to be checked.
+- Pham denominator degree: actual reverse dynamics, limiting orbit counts,
+  finite-prefix recursions and exact polynomial identities.
+- Compact Motzkin: finite signed-grid characters, compact-group measure, and
+  the exact two-difference formula. The same worker has completed the
+  all-parameter gap-five/gap-seven character formulas and an odd-cycle density
+  theorem.
+- Root: shared integration, reduced-denominator minimality, and the finite
+  geometric/combinatorial front end of Erdős 607 under `LineSize*`.
 
-Symmetric four-point and nonmixed-gap density proofs have passed source, axiom,
-and independent kernel checks for the full coprime statements. Their common-divisor extensions and literal tile semantics also passed the
-checks; both full density results are complete. Corrected solitaire, concrete CUT option certificates, and
-the remaining infinite classifications continue in separate lanes.
+The other team coordinates in
+[issue 2](https://github.com/1337isnot1337/solved-conjectures/issues/2). It owns
+the independent `ThreeDistanceGraph*` density proof under
+[issue 9](https://github.com/1337isnot1337/solved-conjectures/issues/9),
+the remaining rectangle asymptotics under
+[issue 10](https://github.com/1337isnot1337/solved-conjectures/issues/10), and the
+geometric dependencies of the lonely-runner classifications. Haralambis was
+published in `22f3a5a`. Read both coordination threads before changing lanes.
+Post new claims before editing.
 
-## Historical accepted checkpoint
+## Complete mathematical formalizations
 
-The earlier pause preserved the experimental generated three-pile sources on
-`main`. The following implementation notes describe that unfinished finite
-certificate stage and remain useful to its current owner.
+The fixed-scale solitaire counterexample and corrected arbitrary-layer
+solitaire theorem are complete. The corrected theorem concerns actual recurrent
+configurations and every positive horizontal scale tending to infinity.
+Its finite and analytic chains passed source, axiom and independent kernel
+checks, including the maximality of the actual stable reference.
 
-The accepted package includes the complete War cycles and Batista theorem,
-the CUT two-pile and four numerical error certificates, complete padding,
-candidate period parameters, finite certificate helpers, and the generic
-finite emptiness/mex tests. `BinaryDecision` proves every reachable state has
-a word shorter than the state count and gives a terminating complete emptiness
-test. `CutMexDecision` proves necessary and sufficient finite mex tests given
-exact graph/lower/actual-option recognizers. Uniform construction of those
-recognizers is now proved in the separate `CutGeneral` modules. The specialized
-large option certificates below are still needed for the concrete examples.
+Three-player War, Batista's Egyptian-fraction theorem, and the full CUT Family B
+threshold are complete. Family B includes arbitrary infinite cut sets and
+proves its base formula internally.
 
-Resume with the three-pile group. Its data module, all 27 transition blocks
-(6,804 product states), and the transition aggregation passed source builds.
-The build was interrupted in `Conjectures.CutPeriodParts3StateData`; subset
-refinement blocks, the final group theorem, its axiom audit and independent
-kernel replays remain pending. The 39 experimental modules are deliberately
-not imported by the accepted package and are not included in its verification
-claims. Their exact ordered list is
-`lean/Conjectures/CutPeriodParts3.modules`.
+The full symmetric four-point and nonmixed-gap density theorems are complete,
+including normalization, literal tile semantics, periodic attainments and the
+stated sharp local bounds. The concurrent team's proofs were published in
+`6c09508` and merged here through `9b4fff3`.
 
-To resume the finite build from the repository root:
+The general finite CUT decision theorem is complete, with two independent
+constructions. Both prove that a finite test accepts exactly the proposed
+representations of the actual game. Candidate enumeration is complete when a
+representation exists. The two concrete games remain separate obligations.
 
-```sh
-export PATH="$HOME/.elan/bin:$PATH"
-export LEAN_NUM_THREADS=1
-cd lean
-while IFS= read -r module; do
-  lake build "$module" || break
-done < Conjectures/CutPeriodParts3.modules
-```
+The combined accepted package passed its source build, the audit of 6,954
+project theorem declarations, and independent kernel replay of all 152 proof
+modules and both roots. Local verification and hosted CI receipts are recorded
+separately.
+See [the status report](lean-status.md) for declarations and checked scope.
 
-After every listed module passes, register the final certificate in
-`Conjectures.lean`, require `CutPeriod.Parts3Certificate.recognizes_piles` in
-`ProofAudit.lean`, and add every module in the manifest to the kernel-recheck
-script. Run the source/axiom checks and independently replay every new module
-before promoting the stage. Then continue groups four through nine, the union
-refinements and the remaining repository queue below. Refresh remote `main`
-before each push, preserving concurrent mathematical additions.
+## Remaining mathematical obligations
 
-## Checked baseline
+1. CUT: finish the concrete three-, four-, eight- and nine-pile certificates,
+   both option unions, and the actual game identifications.
+2. Pham: identify the infinite-state recursion with stabilized finite orbits,
+   prove the finite-prefix generating functions, and derive both exact reduced
+   denominators from those functions.
+3. Distance graphs: publish and integrate the actual-density endpoint; the
+   character formulas, including all exceptional small cases, are checked.
+4. Two-difference Motzkin: signed grid, compact-group measure, finite quotients,
+   and density of character restrictions.
+5. Haralambis is complete: its exact density equality and optimal pair-sum
+   periodic attainment were published in `22f3a5a`.
+6. Five-speed spectrum: geometric norm reduction and complete modular
+   lifting/enumeration outside the already checked critical families.
+7. Tight six speeds and critical planes: the uniform reduction, complete
+   equality classification, plane enumeration and large-norm consequence.
+8. Six-speed spectrum: all infinite families, norm reduction, modular lifting,
+   and exhaustive classification.
+9. Eight-runner equality cases: the norm reduction, complete modular
+   certificates and lifting to the three listed directions.
+10. Nine-runner equality case: the norm reduction, modular certificates and
+    uniqueness of the consecutive direction.
+11. Ten-runner equality case: the corresponding uniform reduction and all
+    modular certificates.
+12. Seven-speed spectrum: the infinite family, all 27 exceptions, norm
+    reduction and complete lifting/enumeration.
+13. Eight-speed spectrum: the infinite family, all listed exceptions, norm
+    reduction and exhaustive lifting.
+14. Eleven-through-fourteen-runner equality: each uniform reduction, all modular
+    certificates and every stated primitive equality list.
+15. Growing rectangles: the geometric packing injection, ordinary-partition
+    estimates and uniform asymptotics over every aspect ratio.
+16. Erdős 607: geometric realization, generating-function correspondence,
+    local probability estimates and the sharp asymptotic prefactor.
+17. Li coefficient sign, last: actual tree properties, all connected partition
+    types, chromatic symmetric functions and coefficient extraction.
 
-`b9b826e46a9c33fb369f2ea46b8a94f36fad2262` supplies the complete fixed-scale
-solitaire counterexample and all three War cycle proofs, plus intermediate
-Pham, Egyptian-fraction and CUT Family B arguments. Its local kernel/audit checks
-and both hosted workflows passed. See `docs/lean-status.md` for exact scope.
+The pair-sum maximum theorem and the checked values of 31 finite speed lists
+are reusable components. They do not establish any exhaustive classification.
+The common interface is `Conjectures.LonelinessPairBridge`.
 
-## Completed extension: Batista
+## Verification and continuation
 
-The complete theorems are `Egyptian.batista_congruence` and
-`Egyptian.batista_admissible_congruence` in `EgyptianTheorem.lean`.
-`EgyptianBounds.lean` proves the unbounded elementary competitor comparison;
-`EgyptianFinite.lean` supplies exhaustive small-case certificates with proved
-search bounds. The combined theorem no longer assumes global pair optimality.
-The complete package passed the full source build, axiom audit (578 project
-theorem declarations), and all nine kernel module rechecks. No global
-optimality, finite-search completeness, or published mathematical result is an
-unproved premise of the completed theorem.
+Use the pinned toolchain and Mathlib manifest in `lean/`. Run
+`scripts/verify_lean.sh` from the repository root. It builds accepted modules
+one at a time, builds the root imports, audits every project theorem including
+private declarations, and replays each accepted module with `leanchecker`.
+The only permitted transitive axioms are `propext`, `Classical.choice` and
+`Quot.sound`.
 
-## Remaining queue
+The hosted Lean action performs setup and cache retrieval; the shared script
+performs the source build. This prevents simultaneous large certificate
+reductions from exhausting runner memory. No source, axiom or kernel gate is
+omitted.
 
-1. CUT arithmetic periodicity (current lane): formalize finite binary automata
-   semantics, option composition and mex emptiness certificates for both games,
-   and the proposed-tail decision test. The checked working foundations are
-   `BinaryAutomata.lean`, `BinaryArithmetic.lean`, `CutPeriodGraph.lean`, and
-   `CutPeriodGraphCertificate.lean`; they prove subset/refinement semantics,
-   high-bit addition/XOR, and the complete 27-state candidate graph language.
-   `BinaryComposition.lean` now proves addition/XOR composition in both
-   directions and sound pruning of rejecting sinks. `BinaryEncoding`,
-   `CutPeriodPiles`, `BinaryOrder` and `BinaryProjection` discharge complete
-   fixed-width padding and the actual positive-pile-list connection.
-   `CutPeriodLowerCertificate` checks the complete 23-state lower-value DFA.
-   `CutPeriodParts2Certificate` now checks the two-pile group completely.
-   All four numerical error-language refinements are now checked.
-   `CutPeriodCertifiedMex` reduces each complete game theorem to the explicit
-   hypothesis that its numerical option DFA recognizes actual legal splits.
-   Next: groups three through nine and the union refinements to discharge that
-   hypothesis. Candidate-function minimal-period claims are already checked;
-   identification with the concrete games remains open. The general decision test
-   and complete candidate enumeration are now proved independently.
-   The generator preserves all representations in a reproducible ignored JSON
-   archive and emits the checked graph Lean certificate. Generated data alone
-   is not acceptance.
-   Do not repeat the low-bit-first construction unchanged: determinization
-   reached 301,768 states for three piles even after pruning rejecting sinks;
-   the unpruned trial used over 5 GiB and was terminated. Original high-bit
-   construction has 179→27 graph states, 402→126 for two parts, 2013→89 for
-   three parts, 2324→22 for four parts, and at most 668 represented states for
-   each later group. Both Python profiling workers were stopped.
-2. CUT Family B: discharge the published base-formula/mex hypothesis, including
-   preservation by additional even cuts. The new large-odd-cut threshold and
-   sharpness arguments are already formalized.
-3. Pham denominator degree: connect the listed truncations to actual limiting
-   reverse-solitaire orbit counts, and prove the required representation/degree
-   bounds or replace that route with an unconditional generating-function proof.
-4. Corrected solitaire theorem: arbitrary admissible layers, return times,
-   interlacing and convergence for every diverging scale.
-5. Growing rectangles: packing injection and uniform partition asymptotics.
-6. Erdős 607: geometric realization, generating-function correspondence, local
-   probability estimate and the sharp asymptotic including its prefactor.
-7. The density and lonely-runner results listed below and in the status table.
-8. Li coefficient sign, after every other result: explicit tree properties,
-   all connected partition types, chromatic symmetric function interpretation,
-   and coefficient extraction.
+Generated CUT stages remain outside the root imports until their complete
+source, axiom and independent kernel gates pass. The local three-pile preparation splits state data into 33 chunks and has a
+72-module manifest. That experimental source set is separate from the
+accepted proof snapshot until its stage checks finish. The generator's
+`--doubling-eight` route preserves the original sequential data while avoiding
+unneeded groups five through seven in the accepted dependency path.
+See [the concrete CUT plan](../results/cut-arithmetic-periodicity/LEAN_PLAN.md).
 
-The campaign is INCOMPLETE until this queue and every gap in
-`docs/lean-status.md` are closed. A passing verifier or CI run does not close an
-unformalized mathematical dependency.
-
-## Next concrete checks
-
-The two-pile generated module passed its source, axiom and kernel checks.
-The three-pile stage is now being checked. The generator supports
-`--parts-until N`, defaulting to the checked graph
-alone. Avoid generating every unchecked stage into the Lean source tree at
-once: build one stage, resolve its proof/performance issues, then proceed.
-
-Current CUT continuation details: `results/cut-arithmetic-periodicity/LEAN_PLAN.md`.
-The first monolithic two-pile check was stopped after exceeding 10 GiB.
-Use cached successor matrices and rowwise proofs before retrying that stage.
-Those changes passed the two-pile stage, together with balanced table lookup,
-symbolic product inverses and checked proof-list aggregation. Larger groups
-also use the kernel-checked digit-choice optimization. See the
-continuation plan for measured limits and approaches already ruled out.
-
-The [distance-graph note](../results/distance-graph-densities/PROOF.md) adds two formalization targets. Conjecture 38 uses the strict prefix reduction, strip shortening and finite strip decision. Conjecture 39 uses the period-58 construction and length-116 exclusion. The [full classification](../results/distance-graph-densities/CLASSIFICATION.md) also needs the nine-cycle strip and the 20 small cases. These results await Lean formalization.
-
-The [two-difference compact-group theorem](../results/two-difference-motzkin/PROOF.md) requires the signed square-grid construction, integration over the relation lattice, finite-quotient approximation and density of character restrictions. Its Lean proof is pending.
-
-The [symmetric four-point density theorem](../results/symmetric-four-point-density/PROOF.md) reduces to the two finite interval obstructions, their density consequences and the periodic constructions. All three steps have passed source, axiom, and independent kernel checks. Common-divisor normalization and literal translation semantics are also proved.
-
-The [nonmixed-gap theorem](../results/nonmixed-gap-packing/PROOF.md) requires the ordering of coprime lattice lifts, the two interval counts, the block-density argument, and the character construction. The full coprime packing and real circle endpoint passed source, axiom, and independent kernel checks. Common-divisor normalization and literal translation semantics are also proved.
-
-The [Haralambis theorem](../results/haralambis-three-differences/LEAN.md) is fully checked. Finite balanced orientations, signed defects, weighted period identities, real interval intersection, and uniform counts prove the exact density for arbitrary triples. The pair-sum maximizer and rational-character construction give an optimal periodic set. The proof avoids a separate infinite cocycle-extension theorem.
-
-
-## Current checked checkpoint and active scopes
-
-Haralambis is complete, including the exact density and pair-sum-period
-attainment. Coalescence and rational subspace extension are checked, and the
-one-, two-, and three-speed lonely-runner lower bounds are discharged. These
-components do not close the five-speed geometric norm bound or its exhaustion.
-
-The current result claims are [distance graphs, #9](https://github.com/1337isnot1337/solved-conjectures/issues/9),
-[growing rectangles, #10](https://github.com/1337isnot1337/solved-conjectures/issues/10),
-and [loneliness classification, #7](https://github.com/1337isnot1337/solved-conjectures/issues/7).
-The distance-graph lane uses the now-proved Haralambis equality and pair-sum
-maximum to replace the strip search with exact arithmetic on three denominators.
-The rectangle lane separates actual shelf packing and injective encodings from
-the sharp Euler-product and cumulative-partition estimates. Li remains last.
+Refresh remote `main` before each publication. Preserve concurrent sources,
+merge shared imports/audit lists additively, and publish a verified snapshot.
+A finite verifier, partial lemma or passing CI run does not close a stronger
+mathematical statement.

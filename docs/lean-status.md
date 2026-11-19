@@ -3,8 +3,9 @@
 The shared package is in [`lean`](../lean/).
 It uses Lean **4.35.0** and Mathlib commit
 `56a005855ea17e0b0958f73ec801ae140b0a1679`, as pinned in the existing manifest.
-The source notes audited for this extension are from repository commit
-`b117a3c03f0a6e3812c57d73084d123e3cf3eed3`.
+The campaign has incorporated the source collection and layout through commit
+`22f3a5a833d5ab1101c5ee0e55ada6d42e323244`. Earlier receipts below retain their
+original checked scope.
 
 A complete formalization here means that Lean checks the mathematical conclusion
 from the definitions in the indicated files. The correspondence between those
@@ -14,27 +15,29 @@ never additional Lean axioms.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
-| L-solitaire | Complete for the fixed-scale counterexample; pre-existing proof replayed | Actual layer-picking dynamics, stable-reference maximality, pointwise limits, and separation at scale 1. The separate arbitrary-layer/diverging-scale theorem is still unformalized. |
+| L-solitaire | Complete for both the counterexample and corrected theorem | Actual moves for arbitrary layer sets containing 1; all recurrent states; classification and maximality of stable references; one-column interlacing; the explicit uniform profile bound and convergence for every diverging scale. The separate fixed-scale counterexample remains checked. |
 | Three-player War | Complete for all three explicit cycling deals | Distinct ranks and round-robin deal sizes; exact transition rules; returns after 90, 180, and 19,320 turns; no earlier positive return; all three players active at every nonnegative time. |
-| Pham denominator degree | Partial | General finite-coefficient identity principle for rational formal power series; both exact polynomial certificates; both coprimality certificates. The orbit-count truncations and the published representation/degree bounds are explicit hypotheses. Reverse-solitaire enumeration and its limiting interpretation are not formalized. |
+| Pham denominator degree | Partial | General finite-coefficient identity principle for rational formal power series; both exact polynomial certificates; both coprimality certificates. The orbit-count truncations and the published representation/degree bounds are explicit hypotheses. The exact multiset reverse moves, their completeness, distinct-preimage correspondence, and mass preservation are now checked. Orbit-count truncations, stabilization, and rationality remain open. |
 | Batista Egyptian fractions | Complete | An ordered lexicographically first solution uniquely maximizes the last denominator for every admissible positive `k` outside residue class 1. The proof uses the elementary global comparison and a kernel-reduced exhaustive certificate below 100, with proved denominator bounds; no published comparison theorem is a hypothesis. |
-| CUT Family B | Partial, including both directions of the new threshold argument | All-size large-cut XOR inequality; mex uniqueness from the actual splitting rules; preservation under all added cuts above `3x`; explicit collision for each smaller admissible odd cut; difference by size `4x`; sharp threshold conditional on the published base formula. Identification of that formula with the base game's mex function is an explicit hypothesis. |
-| CUT arithmetic periodicity | General decision theorem complete; concrete examples partial | A computable finite test constructs exact recognizers for every finite cut set and proposed arithmetic tail, and is equivalent to the actual mex equations. Exhaustive candidate enumeration is sound and complete whenever a representation exists. The specialized three-through-nine-pile and option-union certificates for the two displayed games remain open. |
+| CUT Family B | Complete | The actual well-founded mex games have identical values at every positive pile size iff `3x < y`, including infinite cut sets. The six-block base formula, preservation under all even cuts, and discrepancy by `4x` are proved internally. |
+| CUT arithmetic periodicity | Partial | Binary semantics, complete padding, actual-pile composition, the two-pile DFA, candidate/lower-value DFAs and all four numerical error-language certificates are checked for all words. Candidate parameters and terminating finite emptiness/mex tests with exact recognizers are proved. The uniform terminating arithmetic-periodicity test is complete for every finite cut set and proposed arithmetic tail. Only the two concrete example games still require groups three through nine and their option-union correspondence. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Erdős 607 line sizes | Not formalized | Geometric realization, generating-function correspondence, and the local limit/asymptotic analysis remain to formalize. |
-| Growing rectangles | Not formalized | Packing injection, partition estimates, and uniform asymptotics remain to formalize. |
-| Distance graphs with three missing differences | Not formalized | Strict prefix reduction, strip shortening, the strip classifications, and finite exclusions remain to formalize. |
-| Two-difference Motzkin density | Not formalized | Signed square-grid construction, compact-group measure arguments, and character approximation remain to formalize. |
+| Growing rectangles | Partial | General shelf packing and the exact partition-deletion multiplicity bound are checked. The geometric tiling injection, ordinary-partition estimates and uniform aspect-ratio asymptotics remain open. |
+| Distance-graph classifications | Complete character formulas; density bridge pending | The actual shared circle maximum is proved for every positive k for gaps five and seven, with all small exceptions and the infinite correction branch. The equality with extremal avoiding-set density is being connected to the separately checked Haralambis theorem. |
+| Two-difference Motzkin theorem | Not formalized | The compact-group argument and exact character formula remain open. |
+| Tight six speeds and critical planes | Partial | The consecutive six-speed set has global value `1/7`. Uniqueness, plane classification, and the large-norm consequence remain open. |
+| Six-speed spectrum | Partial | Global values of the consecutive set, nine sporadic examples, and the additional displayed `5/33` example are checked. The full spectrum and classification remain open. |
+| Eight-runner equality cases | Partial | All three displayed sets have global value `1/8`. Exhaustiveness remains open. |
+| Nine-runner equality case | Partial | The consecutive set has global value `1/9`. Uniqueness remains open. |
 | Symmetric four-point density | Complete | Exact real packing and covering densities for every literal translated symmetric four-point integer set, including common-divisor normalization. Both periodic constructions and the two sharp local interval lengths are proved. |
 | Packing with two nonmixed gaps | Complete | The exact three-case packing and real circle formula for every positive gap pair and arbitrary positive gap counts, including gcd normalization, literal tile semantics, periodic attainment, and the stated example. |
 | Haralambis three-difference theorem | Complete | Exact equality of actual extremal density and real circle value for every positive triple, with no coprimality premise. An optimal periodic set has a pair-sum period. The proof includes finite balanced orientations, signed defects, odd periods, interval counting, and the explicit `{2,5,9}` example. |
 | Five-speed spectrum | Partial | Exact real-time maxima for all twelve listed examples; every value s/(5s+1) is realized by the positive primitive distinct family [1,2,3,4,5s]; both critical-family reductions and gcd normalization are proved without Cordella hypotheses. Coordinate coalescence, rational subspace extension, and the one-, two-, and three-speed lower bounds are proved. The norm bound, modular lifting, and exhaustive classification outside these families remain open. |
-| Tight six-speed sets and seven-coordinate critical subtori | Not formalized | The infinite equality classification and critical-plane reduction remain to formalize. |
-| Six-speed spectrum | Not formalized | Infinite family reductions, the norm bound, modular lifting, and exhaustive classification remain to formalize. |
-| Tight seven-speed sets | Not formalized | The infinite equality classification remains to formalize. |
-| Tight eight-speed sets | Not formalized | The infinite equality classification remains to formalize. |
 | Tight nine-speed sets | Not formalized | The infinite equality classification remains to formalize. |
-
+| Seven-speed spectrum | Not formalized | Infinite family, all 27 exceptions, geometric norm bound and exhaustive classification remain open. |
+| Eight-speed spectrum | Not formalized | The infinite families, all listed exceptions, norm bound and exhaustive lifting remain open. |
+| Eleven-through-fourteen-runner equality | Not formalized | Each uniform reduction, the modular certificates and the stated primitive equality lists remain open. |
 
 ## War
 
@@ -117,11 +120,48 @@ conditions by induction on pile size. `sharp_collision` constructs the
 smaller-odd-cut witness, and `small_odd_cut_forces_difference` proves the
 size-`4x` distinction for any game containing that cut.
 
-`family_b_threshold_of_base_formula` proves both directions of the sharp
-threshold. Its assumption `hbase : SatisfiesMex base (value x)` is exactly the
-remaining imported base-game result. For Family B, this assumption combines
-the published explicit formula and the theorem about adding larger even cuts.
-The Lean theorem does not silently treat either publication as an axiom.
+The five new modules `CutFamilyBlocks`, `CutFamilyBase`, `CutFamilyCover`,
+`CutFamilyGame`, and `CutFamilyTheorem` remove the former base-formula
+hypothesis. `gameValue` is defined by well-founded recursion using the mex of
+actual positive-pile split options. Its mex existence and recursion equations
+are proved for arbitrary, possibly infinite cut sets.
+
+`even_base_mex` proves the six-block formula for `{1}` together with any set
+of even cuts whose minimum is the given even `x >= 4`. The proof uses a finite
+XOR-subadditive block cost table and explicit witnesses for every smaller
+value; it is an all-size argument. `family_b` then states the exact comparison
+with `{1,x}` for arbitrary sets of even and odd cuts, with minima `x` and `y`.
+It proves equality at every positive size iff `3*x < y`.
+`family_b_difference_by_four_x` proves the stated finite discrepancy bound.
+No published base formula or mex equation is an unproved hypothesis of these
+two complete theorems.
+
+## Reverse-solitaire dynamics
+
+`DenominatorDynamics.lean` works with actual multisets of positive pile sizes.
+It proves that choosing a legal distinct size gives precisely one reverse
+image, that every positive preimage arises this way, and that different chosen
+sizes give different preimages. Forward and reverse moves preserve mass.
+These results establish the enumeration model, but do not yet prove the
+stabilized orbit coefficients or the representation bounds required by the
+Pham denominator certificate.
+
+## Exact loneliness certificates
+
+`LonelinessMax.lean` defines distance to the nearest integer and the minimum
+of the distances for a finite speed set. It proves continuity, attainment of
+a global maximum, and a pair-sum maximizer: for distinct positive speeds there
+are `a != b` in the set and an integer `0 <= k <= a+b` at which `k/(a+b)` is a
+global maximizer. The proof covers every real time. It uses the intersection
+of phase intervals and a strict improvement argument, not a sampled-time
+assumption.
+
+`LonelinessCertificate.lean` proves sound upper and lower Boolean checks using
+exact natural-number remainder arithmetic. `LonelinessExamples.lean` checks
+31 explicit values by ordinary kernel reduction. The Python generator is an
+untrusted producer. The resulting theorems state an attained value and its
+upper bound at every real time; they do not assert that the examples exhaust
+any classification.
 
 ## Reproduce
 
@@ -320,7 +360,7 @@ and sufficient for the actual CUT mex equations, given exact finite graph,
 lower-value and actual-option recognizers. Construction of those recognizers
 uniformly from an arbitrary proposed arithmetic tail remains open.
 
-The owner paused the campaign. The generated three-pile source build passed
+At the earlier paused checkpoint, the generated three-pile source build passed
 its data, all 27 transition blocks and their aggregation. It was stopped in
 the shared subset-data module. The 39 experimental sources and their ordered
 manifest are preserved, but are not registered in the accepted root imports
@@ -341,6 +381,81 @@ The [six-speed loneliness spectrum](../results/six-speed-spectrum/PROOF.md) has 
 The [eight-runner equality classification](../results/tight-seven-speeds/PROOF.md) has a written computer-assisted proof and an exhaustive mixed-modulus verifier. Its Lean formalization is open.
 
 The [nine-runner equality classification](../results/tight-eight-speeds/PROOF.md) has a written computer-assisted proof and an exhaustive mixed-modulus verifier. Its Lean formalization is open.
+
+## Resumed campaign, 18 November 2026
+
+The new Family B modules passed their source builds, a namespace audit of 575
+project theorem declarations, and all five independent `leanchecker` replays.
+The three loneliness modules, the reverse-solitaire dynamics module, the
+uniform affine/tail graph modules, and the first three packing-density modules
+also passed source builds and independent kernel replay locally. The shared
+package verification is being rerun with the accepted root imports and audit
+requirements. This paragraph does not claim a hosted CI result.
+
+Li remains last in the active queue. The repository-wide campaign is incomplete.
+
+## Complete general CUT decision test
+
+`BinaryFiniteNFA`, `BinaryGenericComposition`, and `BinaryGenericProjection`
+construct executable finite recognizers for arbitrary finite state types.
+Hidden-number completeness uses an explicit common padded width, without an
+assumption that values are bounded by pile size. `BinaryRecognizers` packages
+finite union, difference, composition, projection, and complete emptiness.
+
+`CutArithmeticTest.finiteSetTest_iff_gameValue` states that for every finite
+cut set and every proposed finite prefix plus arithmetic tail, the constructed
+Boolean test accepts iff the candidate equals the actual recursively defined
+game value at every positive size. The test terminates for every input; no
+practical complexity claim is made. No graph, option, projection, or mex
+recognizer is an unproved input. This completes the general test in the note.
+It does not replace the remaining finite certificate work for its two examples.
+
+## Checked analytic solitaire transfer
+
+`Solitaire/ProfileTransfer.lean` proves the explicit error bound
+`4/(a*ε^2) + sqrt(2)/(ε*sqrt(n))`, its convergence to zero for diverging scales,
+uniform convergence on `x >= ε`, and transfer of every pointwise stable limit.
+`Solitaire/GeneralTheorem.lean` discharges every field of the finite input
+`SolitaireGeneral.ProfileComparison` from the actual arbitrary-layer dynamics.
+The completed chain proves return-time rank periodicity, the attained birth
+range, sorted-column interlacing, stable mass and length estimates, and
+classification of every positive fixed configuration. The reference is an
+actual fixed configuration of largest mass at most n.
+
+`corrected_solitaire_uniform` proves uniform convergence away from zero for
+every rule sequence and every recurrent configuration sequence of mass n,
+at every positive horizontal scale tending to infinity.
+`corrected_solitaire_pointwise` transfers every stable pointwise limit.
+`arbitrary_layers_uniform` accepts arbitrary (including infinite) layer sets
+containing the bottom layer. The only recurrence premise is actual periodicity
+under the defined move; no interlacing or return-period lemma is assumed.
+
+All twelve finite-dynamics modules passed warning-as-error source checks and
+independent kernel replay; the finite namespace audit checked 348 theorem
+declarations. ProfileTransfer, StableCore, StableBounds and GeneralTheorem
+also passed source checks and independent kernel replay. The combined package
+gate is being rerun after the concurrent repository merge.
+
+The floor step in the written note was corrected: `floor(a*x) >= a*ε/2` and
+`floor(a*x)+1 > a*ε` follow when `a*ε >= 2`. These valid inequalities give the
+same stated error bound. No stronger floor inequality is assumed in Lean.
+
+## Complete symmetric four-point densities
+
+`PackingFourPoint.symmetric_four_point_densities` proves the exact supremum of
+upper packing densities and infimum of lower covering densities for every
+coprime pair `0<a<b`. Opposite parity gives `1/4` for both. For odd steps,
+`P=ab+b-a` and `Q=ab+a+b` give `(P-1)/(4P)` and `(Q+1)/(4Q)` respectively.
+The density definitions use actual symmetric integer windows and real limsup
+and liminf, not a periodic-only optimization.
+
+The proof combines the all-size local obstruction with uniform count bounds,
+passage to asymptotic density, and fully checked modular constructions.
+`PackingLocalSharpness` additionally proves existence of global packings and
+coverings with exactly-once intervals of lengths `P-1` and `Q-1`; together with
+the obstruction the lengths are optimal. All ten packing modules passed local
+source checks and independent kernel replay. Their main and helper theorems
+are included in the shared whitelist audit.
 
 The [ten-runner equality classification](../results/tight-nine-speeds/PROOF.md) has a written computer-assisted proof and an exhaustive verifier. Its Lean formalization is open.
 
@@ -449,6 +564,38 @@ hypotheses and external exhaustive classifications remain open; the theorem
 is not presented as an unconditional norm bound.
 See [the exact reduction and dependency stack](../results/five-speed-spectrum/NORM_REDUCTION_LEAN.md).
 
+## Common loneliness interface
+
+`LonelinessPairBridge.lean` proves equality of the fractional-part and
+nearest-integer distances, and of finite-set score and list clearance.
+`Loneliness.exists_pair_sum_maximum` gives the pair-sum maximizer for the shared
+`Loneliness.value`; `certified_pair_value` turns the finite Boolean checks into
+that same real supremum. The earlier certificates now live in
+`Loneliness.PairSum`, avoiding declaration collisions.
+
+## Rectangle combinatorial inputs
+
+`RectanglePartitions.shelf_packing` assigns every positive width list to at most Q
+strips of width B when every width is at most M≤B and the total is at most
+Q(B−M). It preserves the input list exactly and applies at every size.
+`RectanglePartitions.deletion_count_bound` proves that deleting parts
+below a from any finite family of partitions of T loses at most a factor
+(T+1)^(a−1). Its proof recovers each original partition from the retained
+multiset and the bounded small-part multiplicities. Both modules passed
+warning-as-error source checks and independent kernel replay.
+
+## Gap-five and gap-seven character classification
+
+The nine `DistanceGraph` modules prove `gap_five_value` and `gap_seven_value`
+for every positive integer parameter, with the seven/nine residue tables and
+21 small value certificates. `corrected_prediction_strict` proves the infinite
+strict-discrepancy branch; `counterexample_character_difference` is the exact
+1/2958 difference at k=50, where the true character value is 25/58.
+All nine modules passed strict source checks and independent kernel replay;
+all 263 namespace theorem declarations passed the standard-axiom audit.
+The actual-density endpoint is tracked separately. Haralambis permits repeated
+entries and therefore also applies directly at k=1.
+
 
 ## Complete Haralambis theorem, 18 November 2026
 
@@ -497,3 +644,33 @@ this checkpoint are tracked separately.
 The earlier density/CUT/loneliness checkpoint `6c095083d6c17eff3797f798cbfe35d0ea98c1f6`
 passed the complete [hosted Lean workflow](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44433833213),
 including the source build, project axiom audit, and every registered kernel replay.
+
+`DistanceGraphOddCycle.lean` separately proves the exact l/(2l+1) density
+for every pair {1,2l}, l>0, with periodic attainment and an upper bound for
+arbitrary avoiding sets. Its source, kernel and 30-theorem axiom checks passed.
+
+## Combined verified checkpoint, 18 November 2026
+
+The immutable combined verification gate completed locally with exit status 0.
+The full source build passed. Both the compiled audit and the direct
+warning-as-error audit checked 6,954 project theorem declarations and accepted
+only `propext`, `Classical.choice`, and `Quot.sound`.
+
+All 152 registered proof modules and both project roots completed the pinned
+`leanchecker` replay. The script checked that the registered list equals the
+local project source-import closure, staged the exact accepted compiled objects
+including private/server data, and used the unchanged checker on the two
+project namespaces. The replay finished with 154 reported targets and its
+success footer. Accepted mathematical sources remained unchanged during the
+gate. The theorem count includes helper declarations and is not a count of
+independent mathematical results.
+
+Two additional negative controls passed: the ownership-based audit rejected
+an unused private project axiom, and the replay helper rejected an incomplete
+module list before launching the checker. Temporary controls are outside the
+repository's proof sources.
+
+The Pham orbit/recurrence extensions, further concrete CUT certificates,
+compact-group Motzkin work, and Erdős 607 work remain separate ongoing source
+trees. Their unfinished scope is not covered by this receipt. Hosted CI for
+the publication is a separate validation run.

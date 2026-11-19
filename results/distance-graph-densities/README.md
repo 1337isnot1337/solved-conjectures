@@ -24,7 +24,7 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-No Lean formalization is currently listed for this result. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
+The complete real character-value formulas for gaps five and seven have passed source, standard-axiom and independent kernel checks for every positive parameter. The connection to the extremal density theorem remains a separate integration step. See [the status report](../../docs/lean-status.md) for checked scope and remaining dependencies.
 
 ## Supporting files
 
