@@ -1,8 +1,11 @@
 # Five-speed finite classification candidates
 
-These files are outside the accepted imports, axiom-audit roots, and replay
-registration. They do not yet establish the complete five-speed classification.
-Work is coordinated in [issue 7](https://github.com/1337isnot1337/solved-conjectures/issues/7).
+This inventory records five-speed candidate lanes. The p179 root component
+and its complete 44-module closure are now registered; its exact scope and
+source flags are in the [p179 verification record](five-speed-p179-verification.md).
+The complete five-speed classification remains unfinished. Other candidate
+lanes retain their separately recorded status. Work is coordinated in
+[issue 7](https://github.com/1337isnot1337/solved-conjectures/issues/7).
 
 The candidate workflow separates these source closures:
 
@@ -16,6 +19,7 @@ The candidate workflow separates these source closures:
 | `projective` | Transfer from the three checked affine charts to arbitrary signed integer parameter vectors |
 | `plane-lift` | A distinct-prime product exceeding the product of explicit form bounds forces an exact integer parameter relation |
 | `root-star` | The normalized root cover at prime 179, using only pair-ratio constraints incident to the coordinates 1 and b |
+| `root-quick179` | Registered `GlobalRootCover 179` component: 14 targets, 44 checked modules, 50 required endpoints; source compilation used `warningAsError=true` and `linter.all=false` |
 | `line-reduction` | All 200 parameter lines, their 164 retained maps, critical/repeated cases, and map-specific primitive-parameter cutoffs |
 
 Each job compiles every local source in its import closure with warnings treated

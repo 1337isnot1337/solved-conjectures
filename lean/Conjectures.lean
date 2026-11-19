@@ -245,3 +245,5 @@ import Conjectures.ErdosGyarfasVoltageGraph
 import Conjectures.ErdosGyarfasVoltageNormalization
 import Conjectures.HadamardBorderNormalizationTransportOps
 import Conjectures.HadamardBorderNormalizationTransport
+
+import Conjectures.LonelinessFiveSpeedRootQuickP0179

@@ -655,6 +655,41 @@ modules=(
   Conjectures.ErdosGyarfasVoltageNormalization
   Conjectures.HadamardBorderNormalizationTransportOps
   Conjectures.HadamardBorderNormalizationTransport
+  Conjectures.LonelinessFiveSpeedGeometricMask
+  Conjectures.LonelinessFiveSpeedMasks
+  Conjectures.LonelinessFiveSpeedMaskArithmetic
+  Conjectures.LonelinessFiveSpeedScalarTable
+  Conjectures.LonelinessFiveSpeedScalarInverse
+  Conjectures.LonelinessFiveSpeedScalarTree
+  Conjectures.LonelinessFiveSpeedPackedScalar
+  Conjectures.LonelinessFiveSpeedScalarTreeMask0179
+  Conjectures.LonelinessFiveSpeedPackedScalar179
+  Conjectures.LonelinessFiveSpeedBitIndexProposal
+  Conjectures.LonelinessFiveSpeedRootMaskScan
+  Conjectures.LonelinessFiveSpeedRootSemanticsForms
+  Conjectures.LonelinessFiveSpeedRootSemanticsDefs
+  Conjectures.LonelinessFiveSpeedRootStar
+  Conjectures.LonelinessFiveSpeedRootStarBlocks
+  Conjectures.LonelinessFiveSpeedRootStarCachedBlocks
+  Conjectures.LonelinessFiveSpeedRootFoldedList
+  Conjectures.LonelinessFiveSpeedRootStarQuickBlocks
+  Conjectures.LonelinessFiveSpeedRootQuickBaseBlocks
+  Conjectures.LonelinessFiveSpeedRootQuickChunkAssembly
+  Conjectures.LonelinessFiveSpeedRootQuickDataP0179
+  Conjectures.LonelinessFiveSpeedRootQuickP0179Part00
+  Conjectures.LonelinessFiveSpeedRootQuickP0179Part01
+  Conjectures.LonelinessFiveSpeedRootQuickP0179Part02
+  Conjectures.LonelinessFiveSpeedRootQuickP0179Part03
+  Conjectures.LonelinessFiveSpeedRootQuickP0179Part04
+  Conjectures.LonelinessFiveSpeedRootQuickP0179Part05
+  Conjectures.LonelinessFiveSpeedRootQuickP0179Part06
+  Conjectures.LonelinessFiveSpeedRootQuickP0179Part07
+  Conjectures.LonelinessFiveSpeedRootQuickP0179Part08
+  Conjectures.LonelinessFiveSpeedRootQuickP0179Part09
+  Conjectures.LonelinessFiveSpeedRootSemanticsNormalize
+  Conjectures.LonelinessFiveSpeedRootSemanticsTransport
+  Conjectures.LonelinessFiveSpeedRootSemantics
+  Conjectures.LonelinessFiveSpeedRootQuickP0179
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

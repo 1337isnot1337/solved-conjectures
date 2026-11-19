@@ -181,7 +181,7 @@
   "generator_path": "results/five-speed-spectrum/generate_lean_root_quick.py",
   "generator_sha256": "5e59128f11203b0e1c038df27a1eb9a7c71c875695fd0032201a77133f51f18c",
   "module_count": 14,
-  "passing_baseline": "local-file:receipt.json",
+  "passing_baseline": "docs/verification/five-speed-root-quick179-c5d11dd3.json",
   "prime": 179,
   "required": [
     "Loneliness.FiveSpeedCertificate.PackedScalars.P179.checked",
@@ -238,10 +238,31 @@
   "required_count": 50,
   "selector_source_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
   "source_bytes": 1552333,
-  "status": "Frozen consolidated candidate; full hosted source/axiom/stock-kernel gates pending",
+  "status": "Verified and registered p179 root component; complete five-speed classification remains unfinished",
   "unchanged_source_passed_modules": [
     "Conjectures.LonelinessFiveSpeedPackedScalar179",
     "Conjectures.LonelinessFiveSpeedRootQuickChunkAssembly",
     "Conjectures.LonelinessFiveSpeedRootQuickDataP0179"
-  ]
+  ],
+  "hosted_verification": {
+    "archive_sha256": "d4514866c33ee2ac70b3288a7757877ad89f9612f8f4f854424e67cdb2a4d3e0",
+    "artifact_id": 14505984269,
+    "audited_project_theorems": 6971,
+    "checked_project_modules": 44,
+    "commit": "c5d11dd3e2c3420aa1fca61f9634a29f7295dfba",
+    "job_id": 135389037274,
+    "receipt": "docs/verification/five-speed-root-quick179-c5d11dd3.json",
+    "receipt_sha256": "5fb38c899c951f533a028500510d9e8050fcf31ed5ae08b1fecba19d2797254f",
+    "registered_project_modules_added": 35,
+    "required_theorems": 50,
+    "run_id": 44473660614,
+    "source_flags": [
+      "-DwarningAsError=true",
+      "-Dlinter.all=false"
+    ],
+    "source_hash_entries": 51,
+    "source_validation_commit": "a48f80f5f0e7d5e27d9429c324ad07097d070161",
+    "targets": 14,
+    "task": "root-quick179"
+  }
 }

@@ -60,6 +60,27 @@
       "receipt_sha256": "40c1c9df1a56431e20a6edd06f86c683c9a33de7de3f44ccd983784e56a0403d",
       "targets": 1,
       "task": "finite-assembly"
+    },
+    {
+      "archive_sha256": "d4514866c33ee2ac70b3288a7757877ad89f9612f8f4f854424e67cdb2a4d3e0",
+      "artifact_id": 14505984269,
+      "audited_project_theorems": 6971,
+      "checked_project_modules": 44,
+      "commit": "c5d11dd3e2c3420aa1fca61f9634a29f7295dfba",
+      "job_id": 135389037274,
+      "receipt": "docs/verification/five-speed-root-quick179-c5d11dd3.json",
+      "receipt_sha256": "5fb38c899c951f533a028500510d9e8050fcf31ed5ae08b1fecba19d2797254f",
+      "registered_project_modules_added": 35,
+      "required_theorems": 50,
+      "run_id": 44473660614,
+      "source_flags": [
+        "-DwarningAsError=true",
+        "-Dlinter.all=false"
+      ],
+      "source_hash_entries": 51,
+      "source_validation_commit": "a48f80f5f0e7d5e27d9429c324ad07097d070161",
+      "targets": 14,
+      "task": "root-quick179"
     }
   ],
   "scope": "Finite assembly remains conditional on coverage. No complete five-speed classification is claimed.",
