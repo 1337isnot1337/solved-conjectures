@@ -1,0 +1,37 @@
+name: Recover verified public proof artifacts
+
+on:
+  push:
+    branches:
+      - verification/recover-verified-44567771879
+    paths:
+      - .github/workflows/recover-verified-components.yml
+      - scripts/recover_verified_components.py
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  recover:
+    name: Recover ${{ matrix.component }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        component:
+          - tight-seven
+          - multiplicities
+          - orbits
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check recovery script syntax
+        run: python3 -m py_compile scripts/recover_verified_components.py
+      - name: Authenticate and emit public evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/recover_verified_components.py --component '${{ matrix.component }}'
