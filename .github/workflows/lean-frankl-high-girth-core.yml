@@ -1,0 +1,68 @@
+name: Lean Frankl actual high-girth graph counts
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-frankl-high-girth-core.yml'
+      - 'scripts/verify_frankl_high_girth_core.py'
+      - 'docs/frankl-high-girth-graph-core-sources.json'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/verify_frankl_orbit_batches.py'
+      - 'scripts/verify_lean_candidate.py'
+      - 'scripts/replay_lean.py'
+      - 'lean/Conjectures/FranklBoundaryAveraging.lean'
+      - 'lean/Conjectures/FranklBoundaryBall.lean'
+      - 'lean/Conjectures/FranklBoundaryConfigurationHelpers.lean'
+      - 'lean/Conjectures/FranklBoundaryConfigurations.lean'
+      - 'lean/Conjectures/FranklBoundaryFibers.lean'
+      - 'lean/Conjectures/FranklFamily.lean'
+      - 'lean/Conjectures/FranklFamilyCanonical.lean'
+      - 'lean/Conjectures/FranklHighGirthGraphCore.lean'
+      - 'lean/Conjectures/FranklIncidence.lean'
+      - 'lean/Conjectures/FranklIncidenceFinite.lean'
+      - 'lean/Conjectures/FranklLargeIncidence.lean'
+      - 'lean/Conjectures/FranklLargeSelection.lean'
+      - 'lean/Conjectures/FranklTreeBall.lean'
+      - 'lean/Conjectures/FranklTreeBranchMessages.lean'
+      - 'lean/Conjectures/FranklTreeCertificate.lean'
+      - 'lean/Conjectures/FranklTreeCone.lean'
+      - 'lean/Conjectures/FranklTreeConfigurationIso.lean'
+      - 'lean/Conjectures/FranklTreeConfigurationMessages.lean'
+      - 'lean/Conjectures/FranklTreeConfigurations.lean'
+      - 'lean/Conjectures/FranklTreeCounts.lean'
+      - 'lean/Conjectures/FranklTreeGluing.lean'
+      - 'lean/Conjectures/FranklTreeOccupation.lean'
+      - 'lean/Conjectures/FranklTreeRoot.lean'
+      - 'lean/Conjectures/FranklTreeSpan.lean'
+      - 'lean/Conjectures/FranklTreeUnfolding.lean'
+      - 'lean/Conjectures/FranklTreeUnfoldingIso.lean'
+
+permissions:
+  contents: read
+
+jobs:
+  graph-counts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: false
+          test: false
+          lint: false
+      - name: Strict source, every owned declaration, exact stock kernel
+        run: python3 scripts/verify_frankl_high_girth_core.py --jobs 4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frankl-high-girth-graph-core
+          path: .candidate-artifacts/frankl-high-girth-graph-core/
+          retention-days: 14

@@ -8,7 +8,8 @@ on:
       - '.github/workflows/lean-frankl-boundary-fibers.yml'
       - 'scripts/verify_frankl_boundary_fibers.py'
       - 'docs/frankl-boundary-fibers-sources.json'
-      - 'lean/Conjectures/FranklBoundary*.lean'
+      - 'lean/Conjectures/FranklBoundaryFibers.lean'
+      - 'lean/Conjectures/FranklBoundaryBall.lean'
       - 'lean/Conjectures/FranklTreeBall.lean'
       - 'lean/Conjectures/FranklIncidence.lean'
 

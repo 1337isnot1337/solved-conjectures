@@ -13,6 +13,10 @@ import verify_frankl_orbit_batches as short_gate
 from preserve_frankl_arithmetic_receipts import ROOT, REPO, api, request, require, sha, encoded, git_bytes
 
 PROFILES = {
+    "Lean Frankl actual high-girth graph counts": {
+        "inventory": "docs/frankl-high-girth-graph-core-sources.json", "group": "high-girth-graph-core"},
+    "Lean Frankl actual tree configuration messages": {
+        "inventory": "docs/frankl-tree-configuration-messages-sources.json", "group": "tree-configuration-messages"},
     "Lean Frankl boundary configuration and averaging": {
         "inventory": "docs/frankl-boundary-configuration-helpers-sources.json", "group": "boundary-configuration-helpers"},
     "Lean Frankl boundary configuration fibers": {
@@ -25,6 +29,10 @@ PROFILES = {
         "inventory": "docs/frankl-tree-unfolding-sources.json", "group": "tree-unfolding"},
 }
 BACKFILL = [
+    {"id": 44513202422, "head": "f1b589498244d12da2419b7f611e7fcdc9582451",
+     "workflow": "Lean Frankl actual tree configuration messages"},
+    {"id": 44511372565, "head": "c0d7a05bd75b554fcae08074761a78a4436e739f",
+     "workflow": "Lean Frankl actual tree configuration counts"},
     {"id": 44508646093, "head": "887ddbd9f534f2a19712c81bda65468b7dca25ec",
      "workflow": "Lean Frankl boundary configuration fibers"},
     {"id": 44506147903, "head": "a00306b9b7324a29afdf383ad49b99e7258f452e",
