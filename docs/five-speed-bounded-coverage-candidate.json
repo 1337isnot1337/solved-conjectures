@@ -62,6 +62,26 @@
       "source_after_sha256": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
       "source_before_sha256": "39a45aee81fc94bf34a652ed869cb92935c5911e74e7c49f2d3d07732cdc29e6",
       "theorem_statements_changed": false
+    },
+    {
+      "changes": [
+        "Replace reported if_pos aliases at lines56/60 with ite_eq_left.",
+        "Replace reported if_neg aliases at lines58/65/112 with ite_eq_right."
+      ],
+      "failed_artifact": {
+        "archive_sha256": "4b96b3d0593e7868209ff6de2e3ff1ac558c6684501d03933553c7dcd5d38b9b",
+        "id": 14533695696
+      },
+      "failed_job_id": 135579896794,
+      "failed_run_id": 44529831695,
+      "historical_recovery_artifact": {
+        "archive_sha256": "8ba37bb4f8dacf997ac5cb49ba5b6b676b601b55c259e4cce628b69797df38f2",
+        "id": 14532259328
+      },
+      "module": "Conjectures.LonelinessFiveSpeedRootMaskScan",
+      "source_after_sha256": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
+      "source_before_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+      "theorem_statements_changed": false
     }
   ],
   "helper_sha256": {
@@ -7816,7 +7836,7 @@
     "Conjectures.LonelinessFiveSpeedPrimitiveDirection": "3331efe2bfb0a848ac343486ea5fab980d311f2122254b7c8c7afda52ad0449d",
     "Conjectures.LonelinessFiveSpeedRelationData": "5c5539cacddfb13fc39eddcde21eac3e2758bb75027fd890a77d6e28e2f5a6af",
     "Conjectures.LonelinessFiveSpeedRelationDefs": "391cef7cab458fe74794b73c03d8e4052fa2dcd37ae48f28c0aecec74da48a1e",
-    "Conjectures.LonelinessFiveSpeedRootMaskScan": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+    "Conjectures.LonelinessFiveSpeedRootMaskScan": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
     "Conjectures.LonelinessFiveSpeedScalarInverse": "e53014e202c3646a680aca4f42bb32b0b8883e88134927fe9a40bfb81340e477",
     "Conjectures.LonelinessFiveSpeedScalarTable": "b780be1150c67c5943e45b9c7314debb835568be12e0e251a1c0585320945965",
     "Conjectures.LonelinessFiveSpeedScalarTree": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",

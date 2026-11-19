@@ -53,16 +53,16 @@ theorem scanWitnessMasks_sound (p : ℕ) (G : ℕ → ℕ) (common fuel times re
   | zero => exact Or.inl hbit
   | succ fuel ih =>
     by_cases hstop : remaining = 0 ∨ times = 0
-    · rw [scanWitnessMasks, if_pos hstop]
+    · rw [scanWitnessMasks, ite_eq_left hstop]
       exact Or.inl hbit
-    · rw [scanWitnessMasks, if_neg hstop]
+    · rw [scanWitnessMasks, ite_eq_right hstop]
       by_cases ht : proposedFirstBitBelow p times < p ∧ common.testBit (proposedFirstBitBelow p times) = true
-      · rw [if_pos ht]
+      · rw [ite_eq_left ht]
         by_cases hg : (G (proposedFirstBitBelow p times)).testBit r = true
         · exact Or.inr ⟨proposedFirstBitBelow p times, ht.1, ht.2, hg⟩
         · exact ih _ _ ((eraseMask_testBit p remaining (G (proposedFirstBitBelow p times)) r hr).mpr
             ⟨hbit, hg⟩)
-      · rw [if_neg ht]
+      · rw [ite_eq_right ht]
         exact ih _ _ hbit
 
 def prefixSpeeds (b c d : ℕ) : List ℕ := [1, b, c, d]
@@ -109,7 +109,7 @@ theorem remainingLeafCheck_sound (p remaining : ℕ) (leaf : ℕ → Bool)
   · simp only [hz, Nat.zero_testBit, Bool.false_eq_true] at hbit
   · have hall : ∀ e ∈ List.range (p / 2 + 1),
         (if remaining.testBit e then leaf e else true) = true := by
-      simpa only [remainingLeafCheck, if_neg hz, List.all_eq_true] using hcheck
+      simpa only [remainingLeafCheck, ite_eq_right hz, List.all_eq_true] using hcheck
     have hh := hall e (List.mem_range.mpr (by omega))
     simpa only [hbit, ↓reduceIte] using hh
 
