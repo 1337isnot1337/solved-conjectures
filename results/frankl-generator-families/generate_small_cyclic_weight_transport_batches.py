@@ -428,6 +428,8 @@ def period{period}Chunk : RowCoverage.Chunk where
   indexMask := {row_mask}
   count := {len(numbered)}
 
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
 theorem period{period}Chunk_entries :
     period{period}Chunk.rows.map RowCoverage.TaggedRow.entry = period{period}Entries := rfl
 
@@ -490,7 +492,9 @@ private theorem checked{index} : Weights.entryCheck {member['period']} Data.targ
         numbered = [i for i, c in enumerate(cases) if c['member']['period'] == period]
         if not numbered:
             continue
-        proof += f'''theorem period{period}_checked :
+        proof += f'''set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+theorem period{period}_checked :
     Weights.batchCheck {period} Data.period{period}Entries = true := by
   simp only [Data.period{period}Entries, Weights.batchCheck, List.all_cons, List.all_nil,
     ''' + ', '.join(f'checked{i}' for i in numbered) + ''', Bool.true_and]
@@ -556,11 +560,15 @@ theorem period{period}_coverage_check :
 theorem period{period}_coverage : RowCoverage.Covers CanonicalWords.count period{period}Chunks :=
   RowCoverage.coverageCheck_sound period{period}_coverage_check
 
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
 theorem period{period}_index_checks :
     period{period}Chunks.all (RowCoverage.indexCheck CanonicalWords.count) = true := by
 '''
         text += proof_all(f'period{period}Chunks', [item['index_check'] for item in selected]) + '\n'
-        text += f'''theorem period{period}_word_checks :
+        text += f'''set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+theorem period{period}_word_checks :
     period{period}Chunks.all (RowCoverage.wordsCheck CanonicalWords.wordAt) = true := by
 '''
         text += proof_all(f'period{period}Chunks', [item['words_check'] for item in selected]) + '\n'
@@ -616,7 +624,9 @@ namespace {RESULT_NS}
     for period in PERIODS:
         selected = [block['periods'][str(period)] for block in blocks
                     if str(period) in block['periods']]
-        text += f'''theorem period{period}_chunk_checks :
+        text += f'''set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+theorem period{period}_chunk_checks :
     Coverage.period{period}Chunks.all (fun chunk =>
       Weights.batchCheck {period} (chunk.rows.map RowCoverage.TaggedRow.entry)) = true := by
 '''
