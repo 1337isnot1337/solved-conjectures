@@ -83,7 +83,8 @@ theorem circulantOptimum_character (N a b : ℕ) [NeZero N]
   rw [← hNm] at hy hxU hyU
   obtain ⟨q,hq⟩ := hdiv
   have hqR : (z.2.2:ZMod N)+(s:ZMod N)*(i:ZMod N)=(m:ZMod N)*(q:ZMod N) := by
-    exact_mod_cast hq
+    simpa only [Nat.cast_add, Nat.cast_mul] using
+      congrArg (fun t : ℕ => (t : ZMod N)) hq
   rw [nsmul_eq_mul] at hma
   simp only [nsmul_eq_mul] at hskb
   have hpair : (b:ZMod N)*(z.2.1:ZMod N)=(a:ZMod N)*(z.2.2:ZMod N) := by
