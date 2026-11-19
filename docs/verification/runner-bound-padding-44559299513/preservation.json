@@ -1,0 +1,55 @@
+{
+  "accepted_registry_changed": false,
+  "artifact_id": 14548326323,
+  "artifact_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44559299513/artifacts/14548326323",
+  "artifact_zip_sha256": "bb67d924fb8f58e9744d4476ed8bae6c0cc9d6f1a755111e7ff4a1087cfe800c",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 327,
+    "modules": 16,
+    "private_declarations": 15,
+    "raw_declarations": 327,
+    "required": 4,
+    "tag": "passed",
+    "theorems": 260
+  },
+  "complete_five_speed_bound_verified": false,
+  "complete_prime_checked": false,
+  "compressed_inventory_sha256": "edb80b651607f9abcc9a4b559f21c39b58cc57bc325dca35f90114434814b4f2",
+  "declaration_inventory_sha256": "3c705b2d44c4b911c3eab0880cc6747d4e55f0b27a97dfb2893e016b47ed2e05",
+  "git_commit": "d59ba2141fb6015f5eb8b7460d75056d16439a71",
+  "hosted_fresh_strict_source_passed": true,
+  "hosted_stock_kernel_closure_passed": true,
+  "local_independent_lean_replay_performed_during_preservation": false,
+  "padding_theorems_verified": true,
+  "preserved_evidence_archive_sha256": "bf60bfe0537f05dc648e4ff1702bb74942646dad42a9b9cd6d258ffb095bcd85",
+  "preserved_evidence_contents": [
+    "receipt",
+    "declaration inventory",
+    "audit source",
+    "proof sources",
+    "generated data where present",
+    "gate controls",
+    "logs",
+    "process profiles"
+  ],
+  "preserved_evidence_members": 100,
+  "proof_scope": {
+    "accepted_registry_changed": false,
+    "checkpoint": "primitive_runner_bound_padding",
+    "complete_higher_runner_classifications": false,
+    "conditional_transport_only": true,
+    "primitive_classification_or_lower_bound_premises_retained": true
+  },
+  "raw_receipt_sha256": "0c4f3f8e1a4f4a3bbb5bc1806fbb45130173eabbf7a33f0485739c5d150bfba3",
+  "run_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44559299513",
+  "schema": "verified-checkpoint-preservation-v1",
+  "source_object_log_and_audit_hashes_revalidated": true,
+  "status": "authenticated_and_preserved",
+  "workflow_job_id": 135683856160,
+  "workflow_run_id": 44559299513
+}

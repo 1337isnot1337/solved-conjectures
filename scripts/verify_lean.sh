@@ -1133,6 +1133,29 @@ modules=(
   Conjectures.LonelinessFiveSpeedPrimitiveDirection
   Conjectures.LonelinessFiveSpeedClassificationCore
   Conjectures.LonelinessSixPlaneFiveInput
+  Conjectures.LonelinessRenaultOrdering
+  Conjectures.LonelinessRenaultAffine
+  Conjectures.LonelinessRenaultGcdOrbit
+  Conjectures.LonelinessRenaultMaximizer
+  Conjectures.LonelinessRenaultPhaseCells
+  Conjectures.LonelinessRenaultPreliminaries
+  Conjectures.LonelinessRenaultTwoMultiples
+  Conjectures.LonelinessRenaultPhaseCertificates
+  Conjectures.LonelinessRenaultSmallPhases
+  Conjectures.LonelinessRenaultThirdObstructions
+  Conjectures.LonelinessRenaultTwoMultiplesPhase
+  Conjectures.LonelinessRenaultParityCases
+  Conjectures.LonelinessRenaultThreeEven
+  Conjectures.LonelinessRenaultReindex
+  Conjectures.LonelinessRenaultTwoMultiplesCase
+  Conjectures.LonelinessRenaultAssembly
+  Conjectures.LonelinessRenaultNormalization
+  Conjectures.LonelinessRenaultRationalOrbit
+  Conjectures.LonelinessRenaultTwoMultiplesFinal
+  Conjectures.LonelinessRenaultFiveSpeed
+  Conjectures.LonelinessFiveSpeedBound
+  Conjectures.LonelinessRunnerBoundTransport
+  Conjectures.LonelinessRunnerBoundPadding
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.
