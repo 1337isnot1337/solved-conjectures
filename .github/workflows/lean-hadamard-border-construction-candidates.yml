@@ -18,6 +18,9 @@ on:
           - compression-rows
           - normalization
           - core-action
+          - inflation
+          - assembly-generic
+          - assembly
   push:
     paths:
       - 'lean/Conjectures/HadamardBorder*.lean'

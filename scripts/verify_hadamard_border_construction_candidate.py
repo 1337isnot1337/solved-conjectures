@@ -83,9 +83,33 @@ TASKS = {
         'HadamardBorderConstruction.core_mul_inflate_transpose_of_normalized',
         'HadamardBorderConstruction.core_gram_of_two_level',
     ]),
+    'inflation': ('Conjectures.HadamardBorderInflation', [
+        'HadamardBorderConstruction.sum_comp_quotient',
+        'HadamardBorderConstruction.sum_comp_blockProjection',
+        'HadamardBorderConstruction.columns_lift_gram',
+        'HadamardBorderConstruction.fixed_border_columns_lift_gram',
+        'HadamardBorderConstruction.rows_lift_gram',
+        'HadamardBorderConstruction.fixed_border_rows_lift_gram',
+        'HadamardBorderConstruction.inflateRows_mul',
+        'HadamardBorderConstruction.columns_lift_sign',
+        'HadamardBorderConstruction.rows_lift_sign',
+    ]),
+    'assembly-generic': ('Conjectures.HadamardBorderAssembly', [
+        'HadamardBorderConstruction.borderedMatrix_sign',
+        'HadamardBorderConstruction.borderedMatrix_gram',
+        'HadamardBorderConstruction.bordered_index_card',
+    ]),
+    'assembly': ('Conjectures.HadamardBorderAssemblyMain', [
+        'HadamardBorderConstruction.borderedMatrix_sign',
+        'HadamardBorderConstruction.borderedMatrix_gram',
+        'HadamardBorderConstruction.bordered_index_card',
+        'HadamardBorderConstruction.exists_bordered_matrix_of_correlation',
+        'HadamardBorderConstruction.exists_hadamard_fin_of_correlation',
+        'HadamardBorderConstruction.exists_hadamard_2396_of_correlation',
+    ]),
 }
 
-DEFAULT_TASKS = ("normalization", "core-action")
+DEFAULT_TASKS = ("assembly",)
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-border-construction-candidates.yml',
  'lean/lake-manifest.json',
