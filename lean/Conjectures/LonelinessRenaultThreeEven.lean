@@ -57,17 +57,29 @@ theorem odd_divides_of_middle_condition (a b c : ℕ) (hb : 0 < b)
   have hqpos : 0 < q := Nat.div_gcd_pos_of_pos_right a hb
   have hfactor : Nat.gcd a b * q = b := Nat.mul_div_cancel' (Nat.gcd_dvd_right a b)
   have hqdiv : q ∣ b := ⟨Nat.gcd a b, by rw [mul_comm]; exact hfactor.symm⟩
-  have hqcop : Nat.Coprime q 6 := Nat.Coprime.of_dvd_left hqdiv hcop
+  have hqcop : Nat.Coprime q 6 := hcop.coprime_dvd_left hqdiv
   have hq1 : q ≠ 1 := by
     intro h
     rw [h, mul_one] at hfactor
     apply hnot
     rw [← hfactor]
     exact Nat.gcd_dvd_left a b
-  have hq2 : q ≠ 2 := by intro h; rw [h] at hqcop; norm_num at hqcop
-  have hq3 : q ≠ 3 := by intro h; rw [h] at hqcop; norm_num at hqcop
-  have hq4 : q ≠ 4 := by intro h; rw [h] at hqcop; norm_num at hqcop
-  have hq6 : q ≠ 6 := by intro h; rw [h] at hqcop; norm_num at hqcop
+  have hq2 : q ≠ 2 := by
+    intro h
+    rw [h] at hqcop
+    exact (by decide : ¬Nat.Coprime 2 6) hqcop
+  have hq3 : q ≠ 3 := by
+    intro h
+    rw [h] at hqcop
+    exact (by decide : ¬Nat.Coprime 3 6) hqcop
+  have hq4 : q ≠ 4 := by
+    intro h
+    rw [h] at hqcop
+    exact (by decide : ¬Nat.Coprime 4 6) hqcop
+  have hq6 : q ≠ 6 := by
+    intro h
+    rw [h] at hqcop
+    exact (by decide : ¬Nat.Coprime 6 6) hqcop
   have hqcase : q = 5 ∨ 7 ≤ q := by omega
   have hqR : (0 : ℝ) < q := by exact_mod_cast hqpos
   have hwindow : ∃ j : ℕ, j < q ∧
@@ -158,15 +170,20 @@ private theorem triple_strict_at_odd_zero
   apply hno s
   intro i
   fin_cases i
-  · rw [hshift, he0, Int.cast_zero, zero_mul, zero_div, add_zero]
+  · change (1 / 6 : ℝ) ≤ distance ((v 0 : ℝ) * s)
+    rw [hshift, he0, Int.cast_zero, zero_mul, zero_div, add_zero]
     exact hsafe0
-  · rw [hshift]
+  · change (1 / 6 : ℝ) ≤ distance ((v 1 : ℝ) * s)
+    rw [hshift]
     simpa [thirdTripleIndex] using hgood 0
-  · rw [hshift]
+  · change (1 / 6 : ℝ) ≤ distance ((v 2 : ℝ) * s)
+    rw [hshift]
     simpa [thirdTripleIndex] using hgood 1
-  · rw [three_even_distance_eq_of_fract_eq hphase3]
+  · change (1 / 6 : ℝ) ≤ distance ((v 3 : ℝ) * s)
+    rw [three_even_distance_eq_of_fract_eq hphase3]
     exact safe_signed_sixth (e 3) he3 b hb hb5
-  · rw [hshift]
+  · change (1 / 6 : ℝ) ≤ distance ((v 4 : ℝ) * s)
+    rw [hshift]
     simpa [thirdTripleIndex] using hgood 2
 
 private theorem distance_time_half_residue (v : ℕ) (e q : ℤ) (t : ℝ)
@@ -212,19 +229,24 @@ private theorem middle_at_first_odd_zero
   apply hno (t + 1 / 2)
   intro i
   fin_cases i
-  · rw [distance_time_half_residue _ _ _ _ (hres 0),
+  · change (1 / 6 : ℝ) ≤ distance ((v 0 : ℝ) * (t + 1 / 2))
+    rw [distance_time_half_residue _ _ _ _ (hres 0),
       distance_add_even_half (e 0) (Or.inl he0)]
     exact hsafe0
-  · rw [distance_time_half_residue _ _ _ _ (hres 1),
+  · change (1 / 6 : ℝ) ≤ distance ((v 1 : ℝ) * (t + 1 / 2))
+    rw [distance_time_half_residue _ _ _ _ (hres 1),
       distance_add_even_half (e 1) (Or.inr he1)]
     exact hs1.le
-  · rw [distance_time_half_residue _ _ _ _ (hres 2),
+  · change (1 / 6 : ℝ) ≤ distance ((v 2 : ℝ) * (t + 1 / 2))
+    rw [distance_time_half_residue _ _ _ _ (hres 2),
       distance_add_even_half (e 2) (Or.inr he2)]
     exact hs2.le
-  · rw [distance_time_half_residue _ _ _ _ (hres 3), distance_add_odd_half (e 3) he3,
+  · change (1 / 6 : ℝ) ≤ distance ((v 3 : ℝ) * (t + 1 / 2))
+    rw [distance_time_half_residue _ _ _ _ (hres 3), distance_add_odd_half (e 3) he3,
       hzdist]
     norm_num
-  · rw [distance_time_half_residue _ _ _ _ (hres 4), distance_add_odd_half (e 4) he4]
+  · change (1 / 6 : ℝ) ≤ distance ((v 4 : ℝ) * (t + 1 / 2))
+    rw [distance_time_half_residue _ _ _ _ (hres 4), distance_add_odd_half (e 4) he4]
     linarith
 
 private theorem middle_at_second_odd_zero
@@ -322,7 +344,7 @@ private theorem small_time_forces_safe
         rw [distance_third_shift_of_dvd (v 0) hdiv]
         exact hsafe0 a ha ha5)
       (by intro i hi; exact hnondiv i (by simpa only [Finset.mem_singleton] using hi))
-      (by norm_num) 1 3 4 (by decide) (by decide) (by decide)
+      (by decide) 1 3 4 (by decide) (by decide) (by decide)
       (by decide) (by decide) (by decide)
       hclose (hsmall 3 hsmall3 a ha5).le (hsmall 4 hsmall4 a ha5).le
     exact hno _ hj

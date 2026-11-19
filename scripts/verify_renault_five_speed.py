@@ -194,8 +194,20 @@ def verify(model, modules, model_digest, stage, runtime_path):
             receipt["reproduction_checks"][path] = result
             save()
             successful(result, "Certificate payload reproduction")
-        failed_modules, blocked_modules, passed_modules = [], [], set()
-        for module in modules:
+        early_modules = runtime.dependency_order(ROOTS[:-1])
+        require(ROOTS[-1] == "Conjectures.LonelinessFiveSpeedBound"
+                and set(early_modules) <= set(modules), "Unexpected source scheduling roots")
+        early_set = set(early_modules)
+        source_order = early_modules + [module for module in modules if module not in early_set]
+        require(len(source_order) == len(modules) and set(source_order) == set(modules),
+                "Source scheduling lost or duplicated a module")
+        receipt["source_compilation_order"] = source_order
+        receipt["early_source_modules"] = early_modules
+        failed_modules, blocked_modules, skipped_modules, passed_modules = [], [], [], set()
+        for position, module in enumerate(source_order):
+            if module not in early_set and (failed_modules or blocked_modules):
+                skipped_modules = source_order[position:]
+                break
             dependencies = [name for name in imports_of(source(stage / "src", module))
                             if name.startswith("Conjectures.")]
             blocked = sorted(set(dependencies) - passed_modules)
@@ -221,10 +233,12 @@ def verify(model, modules, model_digest, stage, runtime_path):
                       Path(result["log"]).read_text()[-12000:], flush=True)
         receipt["source_failures"] = failed_modules
         receipt["source_blocked"] = blocked_modules
+        receipt["source_skipped_after_failure"] = skipped_modules
         save()
-        require(not failed_modules and not blocked_modules and passed_modules == set(modules),
+        require(not failed_modules and not blocked_modules and not skipped_modules
+                and passed_modules == set(modules),
                 "Source closure incomplete; failed=" + repr(failed_modules) +
-                "; blocked=" + repr(blocked_modules))
+                "; blocked=" + repr(blocked_modules) + "; skipped=" + repr(skipped_modules))
         frozen_objects = object_hashes(stage, modules, modern)
         receipt["artifact_sha256"] = frozen_objects
         audit_text = audit.audit_source(modules, REQUIRED, ["Loneliness."])
