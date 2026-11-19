@@ -29,6 +29,7 @@ theorem product_plane_of_repeat_bound
   have hbF : (fun i => (b i : ℚ)) ∈ F :=
     Submodule.subset_span (by simp)
   have hboundF : RepeatDirectionBound F := by
+    dsimp only [F]
     rw [← hE]
     exact repeatDirectionBound_signedCoordinates E hrepeated σ hσ p
   have hnearF : spaceValue (realSpan F) < (229/1596 : ℝ) := by
@@ -87,7 +88,7 @@ theorem large_norm_critical_plane
     ext i
     simp
   rw [hcast]
-  exact Submodule.subset_span (by simp [basisPlane])
+  exact Submodule.subset_span (by simp)
 
 end
 
