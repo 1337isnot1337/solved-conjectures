@@ -856,3 +856,18 @@ Artifact `14544624570` has ZIP SHA256 `541410f007a756a1a10fee1c5abebb53d6cd6c40e
 The accepted registry now includes `Conjectures.LonelinessProductPlaneSpeeds` and its four actual integer-speed endpoints. [Run 44553736720](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44553736720), job `135664057075`, freshly checked its exact 40-module closure, audited 860 owned/raw declarations (730 theorems and 10 private declarations), and separately replayed every project module in the pinned stock kernel. Original source and artifact bytes were authenticated and preserved under [`docs/verification/product-plane-speeds-exact-44553736720`](verification/product-plane-speeds-exact-44553736720/).
 
 The bridge extracts the full integer speed list from membership in an explicitly signed/permuted product plane, with integrality supplied by a base coordinate equal to one. Its final theorem invokes the already proved product-family arithmetic to obtain `W ++ [q*s]` under the stated primitive, positivity, residue, and value hypotheses. Geometric exhaustiveness and every finite spectrum classification premise remain separate. This checkpoint does not change the completion status of any spectrum result.
+
+
+## Five-speed norm component, 19 November 2026
+
+The positive primitive five-speed norm cutoff `347142` at threshold `1/6`
+and the existence of a coordinate-avoiding prime among
+`149, 151, 163, 167, 173` are checked and registered. The two new norm modules
+passed fresh source checking, the all-owned/private axiom audit, and exact
+stock kernel replay of their full 108-module closure. All 15 component
+endpoints are required by the gate. See the
+[original receipt and authenticated evidence](verification/loneliness-five-runner-norm-44555436644/README.md).
+
+The complete five-speed finite classification still requires its separate
+certificate gate. This norm component does not complete a result-directory
+classification or discharge any higher-speed finite enumeration.

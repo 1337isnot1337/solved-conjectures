@@ -2537,3 +2537,28 @@ The theorem uses the actual rational plane spanned by `(W,0)` and the last coord
 This is a membership-to-family bridge. It does not prove that every low-value direction lies in one of these planes, discharge any finite classification premise, or complete the six-, seven-, or eight-speed spectrum result.
 
 The original artifact is `14545500562` (6,623,688 bytes), ZIP SHA-256 `03bfed1335de52058aacd5d81887684eb38368baad81102fc6d0121b539fc002`; the raw receipt SHA-256 is `6b416de0a4c875bfbacf0164c65cc3d8648b1c23f4ef388c367b6504ac11f0c5`. All 53 historical source/control/configuration files match the original Git blobs, and all 245 archived members were authenticated. The unchanged receipt, generated audit source, declaration inventory, process logs, progress records, archive manifest, and preservation record are under [`docs/verification/product-plane-speeds-exact-44553736720`](verification/product-plane-speeds-exact-44553736720/). The recorded validation command is `python3 scripts/verify_higher_spectrum_realization_exact.py product-plane-speeds` at that original source commit; preservation does not claim a new execution of that gate.
+
+
+## Five-speed norm and prime avoidance, 19 November 2026
+
+`LonelinessFiveRunnerNormData` and `LonelinessFiveRunnerNorm` are now registered.
+For every positive primitive vector `v : Fin 5 → ℕ` of actual loneliness at most
+`1/6`, the squared norm is at most `347142`. One of the primes
+`149, 151, 163, 167, 173` divides none of its coordinates. Neither endpoint
+assumes distinct coordinates. The norm certificate and the complete prime
+product argument are proved internally.
+
+[Run 44555436644](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44555436644)
+freshly compiled the exact 108-module project closure, audited 2,824 owned
+declarations including 34 private declarations and all 15 required endpoints,
+and stock-replayed exactly those 108 modules. Only `propext`, `Classical.choice`,
+and `Quot.sound` are allowed. The downloaded artifact was authenticated against
+the published commit, every recorded source/object/log hash, the complete
+private declaration inventory, and the actual replay transcript.
+
+The original receipt and detailed scope are preserved in the
+[component checkpoint](verification/loneliness-five-runner-norm-44555436644/README.md).
+The other 106 dependencies were already registered with identical source bytes.
+This component does not close the five-speed lower bound, either tight-five
+classification, or the full five-speed spectrum theorem. The merged-package
+gate remains separate from this component receipt.

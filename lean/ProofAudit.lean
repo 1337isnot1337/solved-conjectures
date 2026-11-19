@@ -9,6 +9,21 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Loneliness.FiveRunnerNorm.Data.rows_valid,
+    `Loneliness.FiveRunnerNorm.Data.prefix_eq,
+    `Loneliness.FiveRunnerNorm.Data.increment_positive,
+    `Loneliness.FiveRunnerNorm.Data.product_value,
+    `Loneliness.FiveRunnerNorm.Data.numerical_margin,
+    `Loneliness.FiveRunnerNorm.Data.product_lower_bound,
+    `Loneliness.FiveRunnerNorm.lower_runner_bound,
+    `Loneliness.FiveRunnerNorm.squared_norm_le,
+    `Loneliness.FiveRunnerNorm.all_primes,
+    `Loneliness.FiveRunnerNorm.all_primes_gt_135,
+    `Loneliness.FiveRunnerNorm.prime_product,
+    `Loneliness.FiveRunnerNorm.forced_divisor,
+    `Loneliness.FiveRunnerNorm.prime_product_coprime,
+    `Loneliness.FiveRunnerNorm.prime_product_margin,
+    `Loneliness.FiveRunnerNorm.exists_prime_avoiding,
     ``Loneliness.ProductPlaneSpeeds.integer_coordinates,
     ``Loneliness.ProductPlaneSpeeds.absolute_list,
     ``Loneliness.ProductPlaneSpeeds.product_parameters_of_positive_direction,

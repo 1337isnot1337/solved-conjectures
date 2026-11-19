@@ -492,3 +492,5 @@ import Conjectures.LonelinessSixPlaneDataCoverage
 import Conjectures.LonelinessKZSmallData
 import Conjectures.LonelinessSixSpectrumNormGeometry
 import Conjectures.LonelinessProductPlaneSpeeds
+import Conjectures.LonelinessFiveRunnerNormData
+import Conjectures.LonelinessFiveRunnerNorm
