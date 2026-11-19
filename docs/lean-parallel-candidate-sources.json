@@ -10,9 +10,9 @@
     },
     {
       "path": "scripts/replay_lean_parallel.py",
-      "blob_sha": "b750289f499ca8b0786f918a25fbf220c6e344f9",
-      "sha256": "a522cf656d288918ef9c7bbe7b9fb3ae6b162edac947db0345bf1bb7ee1a0e8f",
-      "characters": 14721
+      "blob_sha": "ed18e81374d3eaa184d1756ba5d7d9a795def08e",
+      "sha256": "1ae5adc0a06250d422de77b7625ea3de3635a4d8027d388fc086b59f437ec929",
+      "characters": 17129
     },
     {
       "path": "scripts/test_lean_parallel.py",
@@ -42,7 +42,8 @@
   "fixes": [
     "Reject partial .olean.server/.olean.private facet pairs for legacy and modern sources.",
     "Record the resolved Lean compiler binary, not only Lake/elan.",
-    "Discover descendants from every /proc/PID/task/*/children entry."
+    "Discover descendants from every /proc/PID/task/*/children entry.",
+    "Bind LEAN_SYSROOT to the checked compiler distribution so stock findSysroot does not launch a child and dedicated IO reader."
   ],
   "unchanged": [
     "scripts/verify_lean.sh",
@@ -72,8 +73,8 @@
   },
   "limitations": [
     "No local runtime is currently available.",
-    "The 22 protocol/process tests, fresh seven-module Lean source fixture, and both all-owned audit partitions passed in run 44513618580. Its first kernel measurement was rejected because the guard omitted the runtime's persistent libuv event-loop thread.",
-    "The corrected three-runtime-thread guard and its exact-threshold process test require fresh hosted validation at 1, 2, 3, and 4 requested workers.",
+    "The 22 protocol/process tests, fresh seven-module Lean source fixture, and both all-owned audit partitions passed in run 44515276881. Its first kernel measurement was rejected after observing five OS threads with a four-thread limit.",
+    "This revision binds the checked system root to avoid the stock findSysroot child/IO task. It preserves the same three-runtime-thread overhead and requires fresh hosted validation at 1, 2, 3, and 4 requested workers.",
     "The wrappers are opt-in candidates and do not replace the accepted gate."
   ],
   "workflow": ".github/workflows/lean-parallel-candidate.yml",
@@ -93,7 +94,8 @@
     "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
     "control_threads": 3,
     "fixed_environment": {
-      "LEAN_MAIN_USE_THREAD": "1"
+      "LEAN_MAIN_USE_THREAD": "1",
+      "LEAN_SYSROOT": "${verified_compiler_prefix}"
     },
     "guard": "requested ordinary task workers + three runtime threads (OS launcher, Lean main, libuv event loop); reject any additional threads or any child process",
     "reason": "Generated C main calls lean_run_main. The runtime starts the Lean main function on a separate stack-managed thread and joins it from the OS launcher. Runtime initialization also starts a persistent libuv event-loop thread before Lean main. The checker schedules default-priority replay tasks, and waits for them from the Lean main thread. The total sampled guard remains strict and rejects any extra compensating worker threads.",
@@ -132,6 +134,11 @@
         "path": "src/runtime/uv/event_loop.cpp",
         "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/src/runtime/uv/event_loop.cpp",
         "sha256": "22c387a170adf2118953c1fca9e85fa6ad761c8a6ba32fc09e101a6490d22966"
+      },
+      {
+        "path": "src/Lean/Util/Path.lean",
+        "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/src/Lean/Util/Path.lean",
+        "sha256": "52cf9aa41a82db18d0d3c93bf6257d064f773af9e62b8b43be89ce1b0e00055f"
       }
     ],
     "observed_prior_failure": {
@@ -144,6 +151,20 @@
       "first_kernel_workers": 1,
       "error": "Stock checker exceeded the 3-thread guard",
       "interpretation": "Runtime source inspection identifies the uncounted persistent libuv event-loop thread; no kernel pass is claimed for this failed run."
+    },
+    "sysroot_binding": "Use the validated source receipt's compiler prefix (or the pinned checker's adjacent compiler for a standalone kernel phase); require the same pinned checker in that distribution and Init.olean. Record and recheck both compiler and checker hashes. Keep the three-runtime-thread overhead and all process/RSS limits unchanged.",
+    "observed_latest_failure": {
+      "run_id": 44515276881,
+      "job_id": 135529593443,
+      "head_sha": "3411dd08b4654b2c9947634fb953743128a5654b",
+      "fixture_source": "passed",
+      "fixture_modern_audit": "passed",
+      "fixture_legacy_audit": "passed",
+      "first_kernel_workers": 1,
+      "observed_threads": 5,
+      "thread_guard": 4,
+      "status": "failed",
+      "reason": "Still unexplained excess at the first guarded kernel process. Source inspection additionally identifies the implicit findSysroot child/IO task. The next candidate binds that sysroot explicitly and captures per-thread wait channels if excess persists; it does not increase the guard."
     }
   }
 }

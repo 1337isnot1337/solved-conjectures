@@ -111,6 +111,25 @@ def assert_artifacts(lean, objects, staged, hashes):
             raise ValueError(f"Staged project artifacts changed: {module}")
 
 
+def thread_snapshot(pid):
+    """Public process diagnostics only: no command lines, environment, or memory."""
+    try:
+        tasks = sorted(Path(f"/proc/{pid}/task").iterdir(), key=lambda p: int(p.name))
+    except (FileNotFoundError, ProcessLookupError):
+        return []
+    result = []
+    for task in tasks[:64]:
+        try:
+            fields = {line.split(":", 1)[0]: line.split(":", 1)[1].strip()
+                      for line in (task / "status").read_text().splitlines() if ":" in line}
+            result.append({"tid": int(task.name), "name": fields.get("Name"),
+                           "state": fields.get("State"),
+                           "wait_channel": (task / "wchan").read_text().strip()})
+        except (FileNotFoundError, ProcessLookupError):
+            continue
+    return result
+
+
 def run_checker(command, *, lean, env, log, workers, memory_limit_mib,
                 timeout_seconds, metrics=None):
     if not 1 <= workers <= MAX_WORKERS or memory_limit_mib <= 0 or timeout_seconds <= 0:
@@ -136,7 +155,9 @@ def run_checker(command, *, lean, env, log, workers, memory_limit_mib,
                 if stats["processes"] > 1:
                     raise RuntimeError("Stock checker unexpectedly spawned a child process")
                 if stats["threads"] > workers + RUNTIME_CONTROL_THREADS:
-                    raise RuntimeError(f"Stock checker exceeded the {workers + RUNTIME_CONTROL_THREADS}-thread guard: observed {stats['threads']} threads in {stats['processes']} process(es)")
+                    metrics["thread_snapshot_on_guard"] = thread_snapshot(process.pid)
+                    raise RuntimeError(f"Stock checker exceeded the {workers + RUNTIME_CONTROL_THREADS}-thread guard: observed {stats['threads']} threads in {stats['processes']} process(es); " +
+                                       json.dumps(metrics["thread_snapshot_on_guard"], sort_keys=True))
                 if stats["rss_kib"] > memory_limit_mib * 1024:
                     raise RuntimeError(f"Stock checker exceeded the {memory_limit_mib} MiB RSS guard")
                 if time.monotonic() - started > timeout_seconds:
@@ -225,9 +246,26 @@ def main(argv=None):
             if args.source_receipt:
                 receipt["source_receipt"] = validate_source_receipt(args.source_receipt.absolute(),
                     head=head, modules=graph, inputs=inputs, artifacts=artifacts)
+            # Lean.findSysroot otherwise starts "lean --print-prefix" through
+            # IO.Process.run, including a child and a dedicated stdout-reader task.
+            # Bind the already verified compiler distribution explicitly, before
+            # starting the one-process bounded checker.
+            compiler = (Path(receipt["source_receipt"]["compiler_path"])
+                        if args.source_receipt else checker.resolve().parent / "lean")
+            direct_file(compiler)
+            sysroot = compiler.resolve().parent.parent
+            bundled_checker = sysroot / "bin/leanchecker"
+            direct_file(bundled_checker)
+            if (compiler.resolve() != sysroot / "bin/lean"
+                    or not (sysroot / "lib/lean/Init.olean").is_file()
+                    or sha256(bundled_checker) != CHECKER_SHA256):
+                raise ValueError("Cannot bind the pinned compiler/checker system root")
+            receipt["runtime"] = {"sysroot": str(sysroot), "compiler_path": str(compiler),
+                                  "compiler_sha256": sha256(compiler)}
             env = os.environ.copy()
             env["LEAN_NUM_THREADS"] = str(args.workers)
             env["LEAN_MAIN_USE_THREAD"] = "1"
+            env["LEAN_SYSROOT"] = str(sysroot)
             env["LEAN_PATH"] = staged_search_path(lean, objects, staged, env.get("LEAN_PATH", ""))
             command = [str(checker), "-v", *prefixes]
             stdbuf = shutil.which("stdbuf")
@@ -235,7 +273,8 @@ def main(argv=None):
                 command = [stdbuf, "-oL", "-eL", *command]
             receipt["environment"] = {
                 "LEAN_NUM_THREADS": env["LEAN_NUM_THREADS"],
-                "LEAN_MAIN_USE_THREAD": env["LEAN_MAIN_USE_THREAD"], "LEAN_PATH": env["LEAN_PATH"]}
+                "LEAN_MAIN_USE_THREAD": env["LEAN_MAIN_USE_THREAD"],
+                "LEAN_SYSROOT": env["LEAN_SYSROOT"], "LEAN_PATH": env["LEAN_PATH"]}
             assert_inputs(repo, inputs, head)
             assert_artifacts(lean, objects, staged, artifacts)
             print(json.dumps({"phase": "kernel", "modules": len(graph), "workers": args.workers,
@@ -246,8 +285,10 @@ def main(argv=None):
             replayed = exact_replay_set((output / "kernel.log").read_text(), graph)
             assert_inputs(repo, inputs, head)
             assert_artifacts(lean, objects, staged, artifacts)
-            if sha256(checker) != CHECKER_SHA256:
+            if sha256(checker) != CHECKER_SHA256 or sha256(bundled_checker) != CHECKER_SHA256:
                 raise ValueError("Pinned checker changed during replay")
+            if sha256(compiler) != receipt["runtime"]["compiler_sha256"]:
+                raise ValueError("Bound system-root compiler changed during replay")
             if args.source_receipt:
                 prior = receipt["source_receipt"]
                 if sha256(args.source_receipt) != prior["sha256"]:
