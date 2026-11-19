@@ -86,8 +86,8 @@
   ],
   "sources": {
     "lean/Conjectures/FranklSpanFourGraphEncoding.lean": {
-      "sha256": "5e17276fcdcf8429206f533334f6a22f3c9e7ca886f3810963824ba22a9b1ae9",
-      "bytes": 6136
+      "sha256": "e6a3f9e9e550c5c285ad3b5a035a428c1f67e9a7342e24053f06795ea80954b1",
+      "bytes": 6092
     },
     "lean/Conjectures/FranklSpanFourGraphRank.lean": {
       "sha256": "8d75d743846b45cc6688023cdc485c701b455bfe0b2369fb7226264a2647077e",

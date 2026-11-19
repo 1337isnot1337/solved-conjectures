@@ -36,7 +36,7 @@ theorem letterCode_letterOfCode {a : ℕ} (ha : a < 16) :
 
 def wordCode : {k : ℕ} → Word k → ℕ
   | 0, _ => 0
-  | k + 1, v => letterCode (v 0) + 16 * wordCode (Fin.tail v)
+  | _k + 1, v => letterCode (v 0) + 16 * wordCode (Fin.tail v)
 
 def wordOfCode : (k : ℕ) → ℕ → Word k
   | 0, _ => Fin.elim0
@@ -101,7 +101,9 @@ theorem wordCode_snoc {k : ℕ} (v : Word k) (a : Letter) :
   | zero => simp only [Fin.snoc_zero, wordCode, Nat.mul_zero, Nat.add_zero,
       Nat.pow_zero, Nat.one_mul, Nat.zero_add]
   | succ k ih =>
-      have hs : Fin.snoc v a = Fin.cons (v 0) (Fin.snoc (Fin.tail v) a) := by
+      have hs : @Fin.snoc (k + 1) (fun _ => Letter) v a =
+          @Fin.cons (k + 1) (fun _ => Letter) (v 0)
+            (@Fin.snoc k (fun _ => Letter) (Fin.tail v) a) := by
         rw [Fin.cons_snoc_eq_snoc_cons, Fin.cons_self_tail]
       rw [hs, wordCode_cons, ih]
       change letterCode (v 0) + 16 * (wordCode (Fin.tail v) + 16 ^ k * letterCode a) =
@@ -115,8 +117,7 @@ theorem wordCode_prefix {k : ℕ} (v : Word (k + 1)) :
   have hv : Fin.snoc (wordPrefix v) (v (Fin.last k)) = v := Fin.snoc_init_self v
   rw [hv] at hs
   have hp := wordCode_lt (wordPrefix v)
-  simp only [hs, Nat.add_mod, Nat.mul_mod, Nat.mod_self, Nat.zero_mul,
-    Nat.add_zero, Nat.mod_eq_of_lt hp]
+  rw [hs, Nat.add_mul_mod_self_left, Nat.mod_eq_of_lt hp]
 
 theorem wordCode_suffix {k : ℕ} (v : Word (k + 1)) :
     wordCode (wordSuffix v) = wordCode v / 16 := by
@@ -132,8 +133,8 @@ theorem wordOfCode_prefix {k a : ℕ} (ha : a < 16 ^ (k + 1)) :
 
 theorem wordOfCode_suffix (k a : ℕ) :
     wordSuffix (wordOfCode (k + 1) a) = wordOfCode k (a / 16) := by
-  change Fin.tail (Fin.cons (letterOfCode (a % 16)) (wordOfCode k (a / 16))) = _
-  exact Fin.tail_cons _ _
+  funext i
+  rfl
 
 def decodeWords (k : ℕ) (codes : List ℕ) : List (Word k) := codes.map (wordOfCode k)
 
