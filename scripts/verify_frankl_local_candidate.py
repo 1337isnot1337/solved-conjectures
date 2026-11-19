@@ -29,6 +29,40 @@ TASKS = {
         "FranklLocal.certificateCheck_abundance",
         "FranklLocal.weighted_local_certificate_abundance",
     ]),
+    "mask-checker": ("Conjectures.FranklLocalMaskCertificate", [
+        "FranklLocal.Mask.decode_zero",
+        "FranklLocal.Mask.decode_and",
+        "FranklLocal.Mask.mask_subset_iff",
+        "FranklLocal.Mask.mask_disjoint_iff",
+        "FranklLocal.Mask.decoded_filter",
+        "FranklLocal.Mask.decoded_localCodes",
+        "FranklLocal.Mask.decoded_coveringMasks",
+        "FranklLocal.Mask.decode_coverCode",
+        "FranklLocal.Mask.compatible_test_iff",
+        "FranklLocal.Mask.compatibleCodes_decode",
+        "FranklLocal.Mask.maskImbalance_eq",
+        "FranklLocal.Mask.rowShare_eq",
+        "FranklLocal.Mask.rowShare_compatible",
+        "FranklLocal.Mask.check_certificateCheck",
+        "FranklLocal.Mask.check_weightCertificate",
+        "FranklLocal.Mask.check_abundance",
+        "FranklLocal.Mask.fullCheck_weightCertificate",
+        "FranklLocal.Mask.fullCheck_abundance",
+    ]),
+    "mask-domains": ("Conjectures.FranklLocalMaskDomains", [
+        "FranklLocal.Mask.mem_submasks",
+        "FranklLocal.Mask.submasks_bounded",
+        "FranklLocal.Mask.submasks_nodup",
+        "FranklLocal.Mask.submasks_decode",
+        "FranklLocal.Mask.exists_submasks_decode",
+        "FranklLocal.Mask.submasks_decode_injOn",
+        "FranklLocal.Mask.submasks_length",
+        "FranklLocal.Mask.decode_xor_and",
+        "FranklLocal.Mask.decode_boundaryCode",
+        "FranklLocal.Mask.validDomains_submasks",
+        "FranklLocal.Mask.validDomains_of_submasks",
+        "FranklLocal.Mask.outside_submasks_length",
+    ]),
 }
 
 GATE_INPUTS = (
@@ -54,6 +88,8 @@ def task_closures():
 def task_spec(task, closures=None):
     closures = task_closures() if closures is None else closures
     covered = sorted(name for name in TASKS if closures[name] <= closures[task])
+    # A larger retained closure must also check every endpoint belonging to
+    # its contained tasks, including tasks suppressed by maximal selection.
     required = sorted({endpoint for name in covered for endpoint in TASKS[name][1]})
     target = TASKS[task][0]
     return target, dependency_order([target]), covered, required
@@ -107,7 +143,7 @@ def main():
         "project_modules": modules, "source_sha256": initial,
         "gate_sha256": initial_gate, "required_theorems": required,
         "covered_tasks": covered, "status": "running", "completed_checks": [],
-        "scope": "Local-certificate checker equivalence and soundness; no finite window certificate.",
+        "scope": "Local-certificate checker semantics, exact domains and soundness; no finite window certificate.",
     }
     destination = ROOT / ".candidate-artifacts" / ("frankl-local-" + args.task)
     destination.mkdir(parents=True, exist_ok=True)
