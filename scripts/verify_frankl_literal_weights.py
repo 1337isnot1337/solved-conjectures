@@ -17,6 +17,7 @@ GATE_INPUTS = tuple(dict.fromkeys((*gate.GATE_INPUTS, INVENTORY_PATH,
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--jobs", type=int, choices=range(1, 5), default=4)
+    parser.add_argument("--task", choices=("thin", "assembly"), default="assembly")
     args = parser.parse_args()
     inventory = json.loads((ROOT / INVENTORY_PATH).read_text())
     if inventory["schema"] != "frankl-literal-ten-bridge-v2":
@@ -24,8 +25,9 @@ def main():
     for path, expected in inventory["sources"].items():
         if gate.digest(ROOT / path) != expected:
             raise ValueError("Reviewed source differs: " + path)
-    modules = gate.dependency_order([inventory["root"]])
-    required = inventory["required_endpoints"]
+    selected = inventory["tasks"][args.task]
+    modules = gate.dependency_order([selected["root"]])
+    required = selected["required_endpoints"]
     private = []
     for module in modules:
         source = gate.source(module).read_text()
@@ -37,8 +39,8 @@ def main():
             private += [namespaces[0] + "." + name for name in names]
     if len(private) != len(set(private)):
         raise ValueError("Duplicate private proof")
-    group = {"id": "literal-weights", "rows": 0,
-             "roots": [inventory["root"]], "private_chunks": len(private)}
+    group = {"id": "literal-weights-" + args.task, "rows": 0,
+             "roots": [selected["root"]], "private_chunks": len(private)}
     gate.group_spec = lambda _manifest, _name: (group, modules, required, private)
     gate.GATE_INPUTS = GATE_INPUTS
     old_write = gate.write_receipt
@@ -48,8 +50,8 @@ def main():
         receipt["reviewed_inventory"] = inventory
         old_write(stage, receipt)
     gate.write_receipt = write_receipt
-    gate.run_group(SimpleNamespace(group="literal-weights",
-        artifact_dir=ROOT / ".candidate-artifacts/frankl-literal-weights",
+    gate.run_group(SimpleNamespace(group="literal-weights-" + args.task,
+        artifact_dir=ROOT / (".candidate-artifacts/frankl-literal-weights-" + args.task),
         runtime=None, jobs=args.jobs), {})
 
 if __name__ == "__main__":

@@ -9,6 +9,9 @@ on:
       - 'scripts/verify_frankl_literal_weights.py'
       - 'docs/frankl-literal-ten-bridge-sources.json'
       - 'lean/Conjectures/FranklSpanFourLiteralWeights*.lean'
+      - 'lean/Conjectures/FranklSmallCyclicRowCoverage.lean'
+      - 'lean/Conjectures/FranklSpanFourRowCoverage.lean'
+      - 'lean/Conjectures/Frankl*WeightCoverageHelpers.lean'
 
 permissions:
   contents: read
@@ -27,11 +30,13 @@ jobs:
           build: false
           test: false
           lint: false
-      - name: Strict source, all owned declarations, exact stock kernel
-        run: python3 scripts/verify_frankl_literal_weights.py --jobs 4
+      - name: Check the thin generic helpers before the larger assembly closure
+        run: python3 scripts/verify_frankl_literal_weights.py --task thin --jobs 4
+      - name: Check assembly source, all owned declarations, exact stock kernel
+        run: python3 scripts/verify_frankl_literal_weights.py --task assembly --jobs 4
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: frankl-literal-ten-bridge
-          path: .candidate-artifacts/frankl-literal-weights/
+          path: .candidate-artifacts/frankl-literal-weights-*/
           retention-days: 14

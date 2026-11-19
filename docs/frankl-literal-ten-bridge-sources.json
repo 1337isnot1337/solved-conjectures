@@ -1,9 +1,13 @@
 {
   "schema": "frankl-literal-ten-bridge-v2",
-  "root": "Conjectures.FranklSpanFourLiteralWeights",
+  "root": "Conjectures.FranklSpanFourWeightCoverageHelpers",
   "sources": {
     "lean/Conjectures/FranklSpanFourLiteralWeightsCore.lean": "af86f6a164a9e923bc71284b07f91869ee68e6fb2f3712ee4e57f5f29206019b",
-    "lean/Conjectures/FranklSpanFourLiteralWeights.lean": "477d9878360e52a72cc01d38824cc4bd4681d6eaae917367e1316fd4d6a78e5c"
+    "lean/Conjectures/FranklSpanFourLiteralWeights.lean": "477d9878360e52a72cc01d38824cc4bd4681d6eaae917367e1316fd4d6a78e5c",
+    "lean/Conjectures/FranklSmallCyclicRowCoverage.lean": "5b2a0f8d75398a6c88821b927e24c394f3ecd374bb5440f0ea65014bb0a022ce",
+    "lean/Conjectures/FranklSpanFourRowCoverage.lean": "785883d91bc86f758e47fd0e14540c94be0c0bfb28fc691d07dc72585a9f40e6",
+    "lean/Conjectures/FranklSmallCyclicWeightCoverageHelpers.lean": "64b95953c9a0851afcf55bc3f884596c0b18ced93c1172c17d027fbe89916516",
+    "lean/Conjectures/FranklSpanFourWeightCoverageHelpers.lean": "53b4b7a75da77400f1a18928e7871dcb71e9aa8d1da711b29b35022bb73be8f0"
   },
   "required_endpoints": [
     "FranklSpanFour.LiteralWeights.point_val_of_lt",
@@ -14,8 +18,91 @@
     "FranklSpanFour.LiteralWeights.windowCheck_certificate",
     "FranklSpanFour.LiteralWeights.entryCheck_certificate",
     "FranklSpanFour.LiteralWeights.batchCheck_certificate",
-    "FranklSpanFour.Assembly.weight4Check_of_literalBatch"
+    "FranklSpanFour.Assembly.weight4Check_of_literalBatch",
+    "FranklSmallCyclic.RowCoverage.indexCheck_sound",
+    "FranklSmallCyclic.RowCoverage.wordsCheck_sound",
+    "FranklSmallCyclic.RowCoverage.coverageCheck_sound",
+    "FranklSmallCyclic.RowCoverage.mem_allRows",
+    "FranklSmallCyclic.RowCoverage.chunk_indices_bounded",
+    "FranklSmallCyclic.RowCoverage.indices_bounded",
+    "FranklSmallCyclic.RowCoverage.decode_combinedMask",
+    "FranklSmallCyclic.RowCoverage.indices_toFinset",
+    "FranklSmallCyclic.RowCoverage.allRows_length",
+    "FranklSmallCyclic.RowCoverage.entries_length",
+    "FranklSmallCyclic.RowCoverage.indices_nodup",
+    "FranklSmallCyclic.RowCoverage.entries_checked",
+    "FranklSmallCyclic.RowCoverage.entry_for_index",
+    "FranklSmallCyclic.RowCoverage.checked_entry_for_index",
+    "FranklSmallCyclic.RowCoverage.entry_words_toFinset",
+    "FranklSmallCyclic.RowCoverage.entry_for_original",
+    "FranklSpanFour.Assembly.rowCoverageCheck_of_entry_coverage",
+    "FranklSpanFour.Assembly.rowCoverageCheck_of_indexed_chunks",
+    "FranklSpanFour.Assembly.shortChecked_of_separate_batches"
   ],
-  "scope": "Generic literal ten-point certificate and packet weight-field bridge only. Complete numerical arithmetic, row coverage, transports, and the full span-four theorem remain separate obligations.",
-  "recovery": "These are reconstructed source bytes. Prior local receipts for lost bridge files do not verify this version."
+  "scope": "Generic literal ten-point certificate, exact row-index/word coverage, and separate short-period packet weight fields. Every concrete numerical batch, complete original-word graph coverage, transport table and full span-four theorem remain separate obligations.",
+  "recovery": "Literal-weight source bytes were reconstructed after the outage; row-coverage helpers are new. Earlier receipts do not cover these bytes.",
+  "tasks": {
+    "thin": {
+      "root": "Conjectures.FranklSmallCyclicWeightCoverageHelpers",
+      "required_endpoints": [
+        "FranklSpanFour.LiteralWeights.point_val_of_lt",
+        "FranklSpanFour.LiteralWeights.point_injOn",
+        "FranklSpanFour.LiteralWeights.point_core_image",
+        "FranklSpanFour.LiteralWeights.tileMask_point_image",
+        "FranklSpanFour.LiteralWeights.decoded_windowMasks_image",
+        "FranklSpanFour.LiteralWeights.windowCheck_certificate",
+        "FranklSpanFour.LiteralWeights.entryCheck_certificate",
+        "FranklSpanFour.LiteralWeights.batchCheck_certificate",
+        "FranklSmallCyclic.RowCoverage.indexCheck_sound",
+        "FranklSmallCyclic.RowCoverage.wordsCheck_sound",
+        "FranklSmallCyclic.RowCoverage.coverageCheck_sound",
+        "FranklSmallCyclic.RowCoverage.mem_allRows",
+        "FranklSmallCyclic.RowCoverage.chunk_indices_bounded",
+        "FranklSmallCyclic.RowCoverage.indices_bounded",
+        "FranklSmallCyclic.RowCoverage.decode_combinedMask",
+        "FranklSmallCyclic.RowCoverage.indices_toFinset",
+        "FranklSmallCyclic.RowCoverage.allRows_length",
+        "FranklSmallCyclic.RowCoverage.entries_length",
+        "FranklSmallCyclic.RowCoverage.indices_nodup",
+        "FranklSmallCyclic.RowCoverage.entries_checked",
+        "FranklSmallCyclic.RowCoverage.entry_for_index",
+        "FranklSmallCyclic.RowCoverage.checked_entry_for_index",
+        "FranklSmallCyclic.RowCoverage.entry_words_toFinset",
+        "FranklSmallCyclic.RowCoverage.entry_for_original"
+      ]
+    },
+    "assembly": {
+      "root": "Conjectures.FranklSpanFourWeightCoverageHelpers",
+      "required_endpoints": [
+        "FranklSpanFour.LiteralWeights.point_val_of_lt",
+        "FranklSpanFour.LiteralWeights.point_injOn",
+        "FranklSpanFour.LiteralWeights.point_core_image",
+        "FranklSpanFour.LiteralWeights.tileMask_point_image",
+        "FranklSpanFour.LiteralWeights.decoded_windowMasks_image",
+        "FranklSpanFour.LiteralWeights.windowCheck_certificate",
+        "FranklSpanFour.LiteralWeights.entryCheck_certificate",
+        "FranklSpanFour.LiteralWeights.batchCheck_certificate",
+        "FranklSpanFour.Assembly.weight4Check_of_literalBatch",
+        "FranklSmallCyclic.RowCoverage.indexCheck_sound",
+        "FranklSmallCyclic.RowCoverage.wordsCheck_sound",
+        "FranklSmallCyclic.RowCoverage.coverageCheck_sound",
+        "FranklSmallCyclic.RowCoverage.mem_allRows",
+        "FranklSmallCyclic.RowCoverage.chunk_indices_bounded",
+        "FranklSmallCyclic.RowCoverage.indices_bounded",
+        "FranklSmallCyclic.RowCoverage.decode_combinedMask",
+        "FranklSmallCyclic.RowCoverage.indices_toFinset",
+        "FranklSmallCyclic.RowCoverage.allRows_length",
+        "FranklSmallCyclic.RowCoverage.entries_length",
+        "FranklSmallCyclic.RowCoverage.indices_nodup",
+        "FranklSmallCyclic.RowCoverage.entries_checked",
+        "FranklSmallCyclic.RowCoverage.entry_for_index",
+        "FranklSmallCyclic.RowCoverage.checked_entry_for_index",
+        "FranklSmallCyclic.RowCoverage.entry_words_toFinset",
+        "FranklSmallCyclic.RowCoverage.entry_for_original",
+        "FranklSpanFour.Assembly.rowCoverageCheck_of_entry_coverage",
+        "FranklSpanFour.Assembly.rowCoverageCheck_of_indexed_chunks",
+        "FranklSpanFour.Assembly.shortChecked_of_separate_batches"
+      ]
+    }
+  }
 }

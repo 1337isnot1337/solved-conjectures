@@ -1,0 +1,4 @@
+module
+
+public import Conjectures.FranklSpanFourLiteralWeightsCore
+public import Conjectures.FranklSmallCyclicRowCoverage

@@ -1,0 +1,5 @@
+module
+
+public import Conjectures.FranklSmallCyclicWeightCoverageHelpers
+public import Conjectures.FranklSpanFourLiteralWeights
+public import Conjectures.FranklSpanFourRowCoverage
