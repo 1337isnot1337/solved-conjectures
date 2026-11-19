@@ -38,9 +38,9 @@ theorem gaussianMatrix_mul_conj {ι : Type*} [Fintype ι]
       gaussianMatrix (X * X + Y * Y) (Y * X - X * Y) := by
   funext i j
   apply QuadraticAlgebra.ext
-  · simp [gaussianMatrix, Matrix.mul_apply, gaussian_re_sum, gaussian_im_sum,
+  · simp [gaussianMatrix, Matrix.mul_apply, gaussian_re_sum,
       Finset.sum_add_distrib]
-  · simp [gaussianMatrix, Matrix.mul_apply, gaussian_re_sum, gaussian_im_sum,
+  · simp [gaussianMatrix, Matrix.mul_apply, gaussian_im_sum,
       Finset.sum_add_distrib, Finset.sum_neg_distrib, sub_eq_add_neg] <;> ring
 
 theorem rational_matrix_sum_two_squares {ι : Type*} [Fintype ι] [DecidableEq ι]

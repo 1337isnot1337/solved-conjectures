@@ -247,3 +247,4 @@ import Conjectures.HadamardBorderNormalizationTransportOps
 import Conjectures.HadamardBorderNormalizationTransport
 
 import Conjectures.LonelinessFiveSpeedRootQuickP0179
+import Conjectures.MotzkinCharacterWindow

@@ -46,9 +46,15 @@ checked. Rational-circle density and abstract Borel attainment are included.
 The 48-module closure passed strict sources, an 812-theorem axiom audit, and
 independent replay; see the [cyclic receipt](../../docs/motzkin-cyclic-hosted-receipt.json).
 
-Exhaustive relation-basis existence, explicit rational interval unions,
-the fixed character-window witness, and exact algorithmic complexity claims
-are still candidates.
+The literal fixed character-window witness is now checked. Its unshifted
+half-open preimage has exactly the minimum of the two character distances as
+its measure and avoids both differences, including finite-image and zero-score
+cases. The exact five-module closure passed strict sources, a 53-theorem axiom
+audit, and independent kernel replay; see the
+[character-window receipt](../../docs/verification/motzkin-character-window-fea6cba2.json).
+
+Exhaustive relation-basis existence, explicit rational interval unions, and
+exact algorithmic complexity claims are still candidates.
 See [the status report](../../docs/lean-status.md) for the precise checked scope.
 
 ## Supporting files

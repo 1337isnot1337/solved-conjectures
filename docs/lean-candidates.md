@@ -80,8 +80,12 @@ available as regression checks. New tasks are still unregistered:
 | `sharp-asymptotic` | `LineSizeCoefficientAsymptotic` | Literal count/model ratio and asymptotic equivalence with the stated constant |
 | Motzkin `relations` | `MotzkinLatticeEvaluation` | Exhaustive subgroup bases and compact-density trichotomy |
 | Motzkin `rational-intervals` | `MotzkinRationalIntervals` | Literal half-open interval unions and exact attainment |
-| Motzkin `character-window` | `MotzkinCharacterWindow` | Exact measure and avoidance of the fixed character window, including finite images |
 
 The evaluator task includes its latest source repair. Every task requires
 strict source checking, a complete theorem axiom audit, and independent
 replay of its exact closure. No draft above counts as a completed result.
+
+The Motzkin `character-window` closure has now passed all three strict gates and
+is registered in the accepted package. Its exact five-module/53-theorem scope
+and receipt are recorded in [the accepted status](lean-status.md#exact-fixed-character-window-witness).
+The task remains available as a regression gate.

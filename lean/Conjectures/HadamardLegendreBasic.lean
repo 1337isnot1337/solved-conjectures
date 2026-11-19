@@ -76,7 +76,8 @@ theorem sum_pairCorrelation_of_legendre (f : Rows2 G)
       pairCorrelation f u =
         (if u = 0 then 2 * ((Fintype.card G : ℤ) + 1) else 0) - 2 := by
     by_cases hu : u = 0
-    · simp [hu, pairCorrelation_zero f hf.1] <;> ring
+    · simp [hu, pairCorrelation_zero f hf.1]
+      ring
     · rw [hf.2 u hu, ite_eq_right hu]
       norm_num
   calc
@@ -85,7 +86,8 @@ theorem sum_pairCorrelation_of_legendre (f : Rows2 G)
           2 * ((Fintype.card G : ℤ) + 1) else 0) - 2) :=
       Finset.sum_congr rfl fun u _ => hshape u
     _ = 2 := by
-      simp [Finset.sum_sub_distrib] <;> ring
+      simp [Finset.sum_sub_distrib]
+      ring
 
 private theorem signs_of_two_squares (x y : ℤ) (h : x ^ 2 + y ^ 2 = 2) :
     (x = 1 ∨ x = -1) ∧ (y = 1 ∨ y = -1) := by

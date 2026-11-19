@@ -205,7 +205,7 @@ theorem combinedCorrelation_zero (f : Rows G) (hf : ∀ i, SignValued (f i)) :
     combinedCorrelation f 0 = 4 * (Fintype.card G : ℤ) := by
   have hs (i : Fin 4) (x : G) : f i x * f i x = 1 := by
     rcases hf i x with h | h <;> rw [h] <;> norm_num
-  simp [combinedCorrelation, correlation, hs, nsmul_eq_mul]
+  simp [combinedCorrelation, correlation, hs]
 
 end RowSums
 

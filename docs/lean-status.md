@@ -45,7 +45,7 @@ never additional Lean axioms.
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
 | Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
-| Two-difference Motzkin theorem | Partial: general compact equality complete | Equality of actual Borel-set density and continuous-character supremum for every compact Hausdorff abelian group with invariant probability measure, including zero differences. Rank formulas for the stated relation generators and finite-relation attainment are checked. The cyclic theorem for every positive modulus, gcd scaling, odd-cycle sharpness criterion, exact example, and abstract rational-circle attainment are checked. Exhaustive basis existence, explicit rational interval witnesses, and evaluator/complexity claims remain candidates. |
+| Two-difference Motzkin theorem | Partial: compact equality and fixed character-window witness complete | Equality of actual Borel-set density and continuous-character supremum for every compact Hausdorff abelian group with invariant probability measure, including zero differences. The literal unshifted half-open character window now has its exact measure and avoidance proved, including finite character images. Rank formulas for the stated relation generators, finite-relation attainment, the cyclic theorem for every positive modulus, gcd scaling, the odd-cycle criterion, the exact example, and abstract rational-circle attainment are checked. Exhaustive basis existence, explicit rational interval witnesses, and evaluator/complexity claims remain candidates. |
 | Tight six speeds and critical planes | Partial | The consecutive six-speed set has global value `1/7`. Uniqueness, plane classification, and the large-norm consequence remain open. |
 | Six-speed spectrum | Partial | Global values of the consecutive set, nine sporadic examples, the displayed `5/33` example, and the positive primitive family `[1,2,3,4,5,6s]` for every `s≥1` are checked. The remaining family branch, norm reduction and exhaustive classification remain open. |
 | Eight-runner equality cases | Partial | All three displayed sets have global value `1/8`. Exhaustiveness remains open. |
@@ -1765,3 +1765,40 @@ The final endpoint is
 Its exact two-module closure at `14ab84e7` passed strict source checks,
 a 14-theorem standard-axiom audit, and unchanged pinned-kernel replay.
 [Receipt](verification/hadamard-border-normalization-main-14ab84e7.json).
+
+## Exact fixed character-window witness
+
+The literal witness from the Motzkin note is now checked and registered.
+For an actual measurable additive circle character \(\chi\), write
+\(h=\min(\|\chi(a)\|,\|\chi(b)\|)\). The set
+\(\chi^{-1}([0,h))\) is measurable, avoids both differences, and has measure
+exactly \(h\) under the given invariant probability measure. The proof also
+covers finite character images and \(h=0\); it does not replace the fixed
+window by a separately shifted or abstract maximizing set.
+
+The proof integrates an exact representative identity. For a general endpoint
+\(0\le h\le1\), the measure lemma explicitly requires that \(h\) lie in the
+character image. For the stated minimum-distance endpoint, an actual preimage
+is constructed from one of \(a,-a,b,-b\), so the final witness theorem has no
+extra endpoint-image hypothesis.
+
+Required endpoints are `Motzkin.characterWindow_measure`,
+`Motzkin.character_window_exact`, and
+`Motzkin.continuous_character_window_exact`, together with the two underlying
+representative identities recorded in the receipt. Three newly registered
+modules extend the two already accepted foundations.
+
+The exact five-module closure at
+`fea6cba2091c38a7cca5561b039eac262f4a3f61` passed strict source checks,
+a transitive audit of **53 project theorems**, and unchanged pinned-kernel
+replay. [Passing job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44504300869/job/135494637842)
+· [Exact receipt](verification/motzkin-character-window-fea6cba2.json).
+All sixteen source and gate-input paths were compared with their frozen Git
+blobs before registration and were unchanged. The receipt export independently
+verified original artifact `14520517281`, whose ZIP SHA-256 is
+`47e0b7df5fca6bd5efeabe514071a241841f6754def5100221fe9b26807ef8a8`.
+[Receipt export](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44509280655/job/135508967148).
+
+This is a component registration. The separate basis-existence, explicit
+rational-interval, and evaluator obligations still prevent a complete
+Motzkin-note status. The full merged package has its own verification run.

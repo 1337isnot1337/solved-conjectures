@@ -9,6 +9,11 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Motzkin.representative_sub_window,
+    `Motzkin.coe_norm_eq_or_neg,
+    `Motzkin.characterWindow_measure,
+    `Motzkin.character_window_exact,
+    `Motzkin.continuous_character_window_exact,
     `Loneliness.FiveSpeedCertificate.PackedScalars.P179.checked,
     `Loneliness.FiveSpeedCertificate.PackedScalars.P179.mask_eq_treeMask,
     `Loneliness.FiveSpeedCertificate.PackedScalars.P179.sound,
