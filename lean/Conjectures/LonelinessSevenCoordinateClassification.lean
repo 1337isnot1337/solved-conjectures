@@ -16,11 +16,6 @@ open CoordinateSubspace SubspaceDensity
 
 noncomputable section
 
-def StandardProductPlane (E : Submodule ℚ (Fin 7 → ℚ)) : Prop :=
-  ∃ (σ : Fin 7 → ℤ) (hσ : ∀ i, σ i = 1 ∨ σ i = -1)
-    (p : Equiv.Perm (Fin 7)),
-    E.map (signedCoordinates ℚ σ hσ p).toLinearMap = standardPlane
-
 theorem critical_plane_classification
     (hfive : LonelyRunnerBound 5) (hsix : PrimitiveSixClassification)
     (E : Submodule ℚ (Fin 7 → ℚ)) (hfree : CoordinateFree E)

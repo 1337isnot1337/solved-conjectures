@@ -13,7 +13,8 @@ theorem lonelyRunnerBound_six_of_classification
     (hfive : LonelyRunnerBound 5) (hsix : PrimitiveSixClassification) :
     LonelyRunnerBound 6 := by
   intro ds hnonempty hnodup hlength hpositive
-  change (1/7 : ℝ) ≤ value ds
+  have hden : ((6 : ℕ) : ℝ) + 1 = 7 := by norm_num
+  rw [hden]
   by_cases hsmall : ds.length ≤ 5
   · have hlower := hfive ds hnonempty hnodup hsmall hpositive
     norm_num at hlower
@@ -35,7 +36,9 @@ theorem lonelyRunnerBound_six_of_classification
           (Normalization.value_normalize ds hnonempty hpositive).symm
         _ = value sixBase := CriticalFamilies.value_perm hnormalized
         _ = (1/7 : ℝ) := by
-          simpa [sixBase, List.range'] using consecutive_value 6 (by decide)
+          have h := consecutive_value 6 (by decide)
+          norm_num [sixBase, List.range'] at h ⊢
+          exact h
     rw [hvalue] at hbelow
     exact (lt_irrefl (1/7 : ℝ)) hbelow
 

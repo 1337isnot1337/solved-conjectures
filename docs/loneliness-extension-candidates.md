@@ -2,7 +2,8 @@
 
 These sources are unregistered candidates. Both support interpretations
 and both reduced prime-selection closures have passed their complete gates.
-The other extensions still require their own completed receipts.
+The smooth reciprocal series and fixed/random-shift limiting laws have
+also passed. The other extensions still require their completed receipts.
 The separate extension workflow uses the existing source rebuild,
 all-owned-theorem axiom audit, and stock-kernel replay implementation. The
 receipt hashes both the extension registry and the underlying verification
@@ -14,9 +15,9 @@ code. Allowed axioms remain `propext`, `Classical.choice`, and `Quot.sound`.
 | `seven-primes` | The improved geometric norm ceiling and forced divisor make the first twelve original primes sufficient. | Runner bounds in strictly fewer than seven speeds remain explicit. The original seventeen-prime definitions are unchanged. |
 | `eight-support` | Complete support coverage and binary trees imply the consecutive primitive eight-speed direction. Its exact value is already proved. | The seven-speed runner bound and all numerical coverage/tree checks remain explicit inputs. No mixed-modulus checker is assumed. |
 | `eight-primes` | The improved geometric norm ceiling and forced divisor make the first twenty original primes sufficient. | Runner bounds in strictly fewer than eight speeds remain explicit. The original twenty-six-prime definitions are unchanged. |
-| `hyperplane-laws` | All-threshold CDF convergence for fixed torus shifts and for the actual normalized finite mixture of Haar pushforwards. | The source proofs await checking. The finite mixture is a probability measure when the sample is nonempty, as it eventually is under real admissibility. |
+| `hyperplane-laws` | All-threshold CDF convergence for fixed torus shifts and for the actual normalized finite mixture of Haar pushforwards. | Complete component gate passed at `3f6ee74`. The finite mixture is a probability measure when the sample is nonempty, as it eventually is under real admissibility. |
 | `hyperplane-endpoint-components` | Full-support maximizer rigidity, the primitive residue-line criterion, exact unit-line cardinality, smooth reciprocal series, uniform residue-class density, and one-relation/divisibility counting bounds. | These are component statements. Endpoint density and recursive subspace classification now have separate source candidates; exact quasipolynomial counting remains unfinished. |
-| `hyperplane-series` | The reciprocal series over integers supported on the prime factors of the endpoint modulus is summable and equals the finite Euler product. | This independent source branch has its own complete gate. |
+| `hyperplane-series` | The reciprocal series over integers supported on the prime factors of the endpoint modulus is summable and equals the finite Euler product. | Complete component gate passed at `3f6ee74`. |
 | `hyperplane-residues` | Residue classes in the literal ordered positive distinct sampling box have uniform limiting frequency, with an explicit boundary count. | This is an independent component gate; exact quasipolynomial counting remains separate. |
 | `hyperplane-hit-density` | A unique smooth-scale partition of the actual finite-order hitting event gives its Euler-product density by dominated convergence. The unshifted CDF is also identified. | These new sources are unverified. The final identification with maximum-equality velocities remains separate. |
 | `large-norm` | The geometric prefix bounds and exact product tables imply norm ceilings and original-prime avoidance for nine through thirteen speeds. | All strictly lower-dimensional runner bounds remain explicit mathematical inputs. The twelve-dimensional certificate is split into eight files after a memory failure; its exact rows are preserved and the new source layout awaits checking. |
@@ -50,6 +51,13 @@ checks the initial masks before using their literal values in the tree.
 The endpoint-equality formula, sharpness example, recursive subspace
 classification, and seven-coordinate quantitative consequences use the
 separate [final extension guide](loneliness-final-extension-candidates.md).
+
+At `3f6ee74`, the smooth-series gate passed its one-module closure and
+seven-theorem audit. The fixed/random-shift laws passed all 24 project
+modules and their 421-theorem audit. Both completed independent stock-kernel
+replay with unchanged sources in
+[run 44468683880](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44468683880).
+See [the exact component receipt](loneliness-3f6-component-receipts.json).
 
 The completed basis and prime-arithmetic components are separate from these
 new extensions. At source commit `9a7cb8a`, the basis closure passed all 16

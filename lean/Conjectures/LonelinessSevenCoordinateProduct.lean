@@ -18,6 +18,11 @@ def standardBase : Fin 7 → ℚ := ![1,2,3,4,5,6,0]
 def standardPlane : Submodule ℚ (Fin 7 → ℚ) :=
   Submodule.span ℚ {standardBase, coordinateAxis 6}
 
+def StandardProductPlane (E : Submodule ℚ (Fin 7 → ℚ)) : Prop :=
+  ∃ (σ : Fin 7 → ℤ) (hσ : ∀ i, σ i = 1 ∨ σ i = -1)
+    (p : Equiv.Perm (Fin 7)),
+    E.map (signedCoordinates ℚ σ hσ p).toLinearMap = standardPlane
+
 private theorem missing_coordinate_is_duplicate : ∀ (k : Fin 6) (j : Fin 7),
     ((Finset.univ.erase j).image (fun i => (canonical k i).natAbs)) = Finite.sixSet →
       j = 6 ∨ j = k.castSucc := by
@@ -174,6 +179,8 @@ theorem productForm_standardPlane (k : Fin 6) (b : Vector)
   have hset : T.toLinearMap '' {(fun i => (canonical k i : ℚ)), coordinateAxis j} =
       {(fun i => (canonical k i : ℚ)), coordinateAxis 6} := by
     simp only [Set.image_insert_eq, Set.image_singleton]
+    change {T (fun i => (canonical k i : ℚ)), T (coordinateAxis j)} =
+      {(fun i => (canonical k i : ℚ)), coordinateAxis 6}
     rw [hcanonical, haxis]
   rw [hset]
   exact canonical_axis_last_eq_standardPlane k

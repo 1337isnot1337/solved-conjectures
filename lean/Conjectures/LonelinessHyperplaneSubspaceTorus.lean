@@ -89,7 +89,7 @@ theorem nontrivialFrequency_iff_slice_lt
 theorem nontrivialFrequency_finrank_lt
     (E : Submodule ℝ (ι → ℝ)) (n : ι → ℤ)
     (hn : ¬ CompactSubgroup.TrivialFrequency (torusGroup E) n) :
-    Module.finrank ℝ (E ⊓ relationSpace n) < Module.finrank ℝ E :=
+    Module.finrank ℝ ↥(E ⊓ relationSpace n) < Module.finrank ℝ E :=
   Submodule.finrank_lt_finrank_of_lt ((nontrivialFrequency_iff_slice_lt E n).mp hn)
 
 theorem velocity_mem_torusGroup

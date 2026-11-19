@@ -102,7 +102,7 @@ theorem exists_finite_slice_classification
             ∃ C : Finset (Finset (ι → ℤ)),
               SliceClassification (E ⊓ relationSpace (n : ι → ℤ)) s u C := by
           intro n
-          have hdimlt : Module.finrank ℝ (E ⊓ relationSpace (n : ι → ℤ)) < d := by
+          have hdimlt : Module.finrank ℝ ↥(E ⊓ relationSpace (n : ι → ℤ)) < d := by
             rw [← hdim]
             exact Submodule.finrank_lt_finrank_of_lt (hB n n.2)
           exact ih _ hdimlt _ rfl

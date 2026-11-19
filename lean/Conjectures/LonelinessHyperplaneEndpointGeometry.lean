@@ -33,7 +33,8 @@ theorem unitCircle_center_minus_sign (m : ι → ℤ) (i : ι) (δ : ℝ) :
   · simp only [signChoice, ite_eq_right hi]
     have he : 1 / 2 - δ * (-1) = (1 / 2 - δ) * (-1) + (1 : ℝ) := by ring
     rw [he]
-    exact unitCircle_add_integer _ 1
+    simpa only [Int.cast_one] using
+      unitCircle_add_integer ((1 / 2 - δ) * (-1)) 1
 
 theorem unitCircle_center_plus_sign (m : ι → ℤ) (i : ι) (δ : ℝ) :
     ((1 / 2 + δ * signChoice m i : ℝ) : UnitAddCircle) =
@@ -41,7 +42,8 @@ theorem unitCircle_center_plus_sign (m : ι → ℤ) (i : ι) (δ : ℝ) :
   have he : 1 / 2 + δ * signChoice m i =
       1 - (1 / 2 - δ * signChoice m i) := by ring
   rw [he, AddCircle.coe_sub,
-    show ((1 : ℝ) : UnitAddCircle) = 0 from unitCircle_integer_eq_zero 1,
+    show ((1 : ℝ) : UnitAddCircle) = 0 from
+      (by simpa only [Int.cast_one] using unitCircle_integer_eq_zero 1),
     zero_sub, unitCircle_center_minus_sign]
 
 def unshiftedSignPoint (m : ι → ℤ) : ι → UnitAddCircle :=
@@ -151,7 +153,7 @@ theorem unshiftedSignPoint_unit_multiple
           canonicalResidue m (endpointModulus m) i) := by
   by_cases heven : Even (normalSize m)
   · have hQ : endpointModulus m = 2 := by simp only [endpointModulus, ite_eq_left heven]
-    simp only [hQ]
+    rw [hQ]
     refine ⟨1, ?_⟩
     intro i
     have hθ := predictedValue_zero_even m ((normalSize_even_iff m).mp heven)
@@ -163,7 +165,7 @@ theorem unshiftedSignPoint_unit_multiple
     letI : NeZero (normalSize m) := ⟨hA.ne'⟩
     have hQ : endpointModulus m = normalSize m := by
       simp only [endpointModulus, ite_eq_right heven]
-    simp only [hQ]
+    rw [hQ]
     obtain ⟨k, hk⟩ := (Nat.not_even_iff_odd.mp heven).exists_bit1
     have hzero : (2 : ZMod (normalSize m)) * (k : ZMod (normalSize m)) + 1 = 0 := by
       have hz : ((2 * k + 1 : ℕ) : ZMod (normalSize m)) = 0 := by

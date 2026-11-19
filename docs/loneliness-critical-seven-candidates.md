@@ -1,7 +1,8 @@
 # Seven-coordinate critical-plane candidates
 
-These files are unregistered candidates. No complete source, axiom, and
-kernel gate has passed for them. They use the existing exact-closure gate in
+These files are unregistered candidates. The finite enumeration,
+plane-normalization, and tangent gates have passed source, axiom, and independent kernel checks.
+The other gates remain incomplete. They use the existing exact-closure gate in
 five independent tasks. The accepted root imports are unchanged.
 
 The geometric normalization retains two explicit mathematical premises:
@@ -24,8 +25,11 @@ the kernel memory budget. Each of the 24 source blocks now uses twelve
 Boolean subchecks, each covering 144 assignments. Their separately proved
 interpretation recovers the same universal statement over all 1,728 codes.
 The Boolean interpretation, finite definitions, and coverage reduction have
-passed strict local source compilation. The numerical subchecks and complete
-closure still require verification.
+passed strict local source compilation. At `3f6ee74`, all 24 numerical source
+blocks and their aggregate compiled in the assembly job. The separate finite
+gate then passed its entire 29-module source, axiom, and independent-kernel
+closure. This proves the stated conditional finite implication for all 41,472
+codes; the separate geometric assembly still needs its own completed check.
 
 These tests do not import a native search result or trust a producer.
 The reduction includes a surjectivity proof
@@ -34,6 +38,14 @@ every vector satisfying the necessary equations. The separate geometric
 bridges and final composition are source candidates and must pass their
 gates too. The full critical-plane theorem remains unfinished until the
 lower-dimensional premises are discharged and all five gates are complete.
+
+At `3f6ee74`, the plane-normalization closure passed all 39 project modules
+and audited 666 theorems. The tangent closure passed 12 modules and audited
+203 theorems. The finite enumeration passed all 29 modules. All three
+completed stock-kernel replay with unchanged sources in
+[run 44468683714](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44468683714).
+The exact job identifiers and checks are stored in
+[the component receipt](loneliness-3f6-component-receipts.json).
 
 The related large-norm reduction and its complete-list product-family
 consequence have separate candidate gates described in

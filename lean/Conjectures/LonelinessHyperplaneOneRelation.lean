@@ -29,6 +29,7 @@ theorem eq_of_pairing_eq_of_eq_off
     intro i hip
     exact sub_eq_zero.mpr (hxy i hip)
   have hpair : m p * (x p - y p) = 0 := by
+    change m p * (x - y) p = 0
     rw [← integerPairing_eq_single_term m (x - y) p hz]
     rw [integerPairing_sub, hm, sub_self]
   have hxp : x p = y p := sub_eq_zero.mp ((mul_eq_zero.mp hpair).resolve_left hp)

@@ -55,12 +55,17 @@ theorem basis_second_decompose
     ∃ c : ℝ, KZBasis.realVector (B 1) =
       InnerProductSpace.gramSchmidt ℝ (KZBasis.realFamily B) 1 +
         c • KZBasis.realVector (B 0) := by
-  refine ⟨inner ℝ (KZBasis.realFamily B 0) (KZBasis.realFamily B 1) /
-    ‖KZBasis.realFamily B 0‖^2, ?_⟩
+  refine ⟨inner ℝ (KZBasis.realVector (B 0)) (KZBasis.realVector (B 1)) /
+    ‖KZBasis.realVector (B 0)‖^2, ?_⟩
+  have hzero : InnerProductSpace.gramSchmidt ℝ (KZBasis.realFamily B) 0 =
+      KZBasis.realVector (B 0) :=
+    (InnerProductSpace.gramSchmidt_bot ℝ (KZBasis.realFamily B)).trans
+      (KZBasis.realFamily_apply B 0)
+  have hone : KZBasis.realFamily B 1 = KZBasis.realVector (B 1) :=
+    KZBasis.realFamily_apply B 1
   have h := InnerProductSpace.gramSchmidt_def'' ℝ (KZBasis.realFamily B) 1
-  simpa only [Nat.Iio_eq_range, Finset.sum_range_one, InnerProductSpace.gramSchmidt_bot,
-    RCLike.ofReal_real_eq_id, id_eq, KZBasis.realFamily_apply B (0 : Fin 7),
-    KZBasis.realFamily_apply B (1 : Fin 7)] using h
+  simpa only [Nat.Iio_eq_range, Finset.sum_range_one, hzero, hone,
+    RCLike.ofReal_real_eq_id, id_eq] using h
 
 theorem basis_minor_abs_le
     (B : Module.Basis (Fin 7) ℤ (Fin 7 → ℤ)) (i j : Fin 7) :

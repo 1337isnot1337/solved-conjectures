@@ -1,4 +1,4 @@
-import Conjectures.LonelinessSevenCoordinateClassification
+import Conjectures.LonelinessSevenCoordinateProduct
 import Conjectures.LonelinessProductFamily
 
 /-! The full positive speed list of an integer direction in a signed

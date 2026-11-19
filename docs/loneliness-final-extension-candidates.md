@@ -1,7 +1,7 @@
 # Endpoint and quantitative runner candidates
 
-These modules are unregistered source candidates. None of the gates below
-has a completed receipt at this checkpoint. Each uses the existing exact
+These modules remain unregistered. Five gates below have complete component
+receipts; the remaining gates are source candidates. Each uses the existing exact
 dependency-closure gate: source rebuild, an ownership-based audit of every
 project theorem, and independent replay with the pinned stock Lean kernel.
 Allowed axioms remain `propext`, `Classical.choice`, and `Quot.sound`.
@@ -33,6 +33,23 @@ They are not axioms, and these candidates do not complete the seven-speed
 result while those inputs remain undischarged. The small-norm alternatives
 also remain a separate obligation. The scalar product-family theorem has
 no lower-runner input; membership in that family is proved by other modules.
+
+At `3f6ee74`, the following complete closures passed source, axiom, and
+independent stock-kernel verification with unchanged sources:
+
+| Task | Project modules | Audited theorems |
+| --- | ---: | ---: |
+| `hyperplane-compact-subgroup` | 16 | 279 |
+| `seven-quantitative-arithmetic` | 1 | 11 |
+| `seven-rational-gap` | 5 | 94 |
+| `seven-tangent-gap` | 12 | 203 |
+| `seven-product-family` | 13 | 319 |
+
+The exact jobs are in
+[run 44468683790](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44468683790)
+and [the machine-readable receipt](loneliness-3f6-component-receipts.json).
+The minor bound and six-speed runner adapter subsequently passed repaired
+local source checks; those repairs still need their complete hosted gates.
 
 The hyperplane subspace theorem is separate from exact quasipolynomial
 counting. No eventual counting statement is substituted for an all-positive-
