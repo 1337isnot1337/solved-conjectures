@@ -2704,3 +2704,42 @@ universal equality proof; its interrupted benchmark supplies no speedup result.
 The separate prime-251 closed-lift gate and bounded initial-cut pilot remain
 candidates until their own complete gates pass. The merged accepted package
 still requires its separate complete source, audit and stock-replay run.
+
+## Seven-speed norm and reduced prime sets, 19 November 2026
+
+`LonelinessSevenSpectrumNormGeometry` is verified and registered from source
+`f782472e2ccd4d276ed6090b30727dbd2b92346e`,
+[run 44576585527](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44576585527),
+job `135745583518`. Its full 129-module project closure passed fresh strict
+source compilation, all 27 required endpoints, seven literal quantified
+contracts, the complete owned/private axiom audit, and 129 separate exact
+stock-kernel replays. The audit covered 3,620 declarations, including 2,881
+theorems and 280 private declarations. Only `propext`, `Classical.choice`, and
+`Quot.sound` were permitted.
+
+For an actual positive primitive seven-speed vector with loneliness at most
+`1/7`, the component constructs the integral basis, derives all six Gram-prefix
+bounds and the determinant identity, and proves
+`8993 * squaredNorm v ≤ 1186638179795145`,
+`∑ i, (v i)^2 ≤ 131951315444`, and Euclidean norm strictly below `363252`.
+The remaining premise states that every rational plane containing the vector
+has space value at least `5/33`. The accepted five-speed, four-speed, and
+smaller-runner results discharge the smaller-runner hypotheses.
+
+The original nineteen-prime avoiding theorem is preserved. The sharper norm
+bound also gives an avoiding prime among the first sixteen original primes,
+from `151` through `233`, under the closed threshold `≤ 1/7`. Under the strict
+threshold `< 1/7`, the verified forced factor `420` reduces the set to the
+first fifteen primes, through `229`. The strict assumption is retained in the
+fifteen-prime theorem and its literal contract.
+
+The [original evidence and full scope record](verification/seven-spectrum-norm-exact-44576585527/README.md)
+bind the exact run, job, artifact `14556969731`, and source commit. All 782
+archive members were authenticated. The original ZIP SHA-256 is
+`e94a210f21bbd4f19e37bd1466c82948f25deb0bfb2e02b22562b5e5852bd948`; the unchanged
+receipt SHA-256 is
+`583fcd94f60c5606bb1ebdf9bf1030f59ac573e4b13e92cb1324d6a04216c0b1`.
+Registration adds one module and 27 audit endpoints while preserving every
+previous accepted entry. Li remains outside the accepted roots. The plane gap
+and the final seven-speed finite residue classification remain open;
+no result-directory completion status is promoted.

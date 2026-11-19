@@ -733,3 +733,4 @@ import Conjectures.LonelinessModularSupportOrbits
 import Conjectures.LonelinessTightSevenBinaryRoots
 import Conjectures.LonelinessModularCoverByteCounts
 import Conjectures.LonelinessModularCoverByteCuts
+import Conjectures.LonelinessSevenSpectrumNormGeometry

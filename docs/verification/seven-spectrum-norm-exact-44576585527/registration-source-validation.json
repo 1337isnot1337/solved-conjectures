@@ -1,0 +1,66 @@
+{
+  "added_modules": [
+    "Conjectures.LonelinessSevenSpectrumNormGeometry"
+  ],
+  "added_required_theorems": [
+    "Loneliness.SevenSpectrumNormGeometry.exists_gram_data",
+    "Loneliness.SevenSpectrumNormGeometry.increment_product",
+    "Loneliness.SevenSpectrumNormGeometry.numerical_margin",
+    "Loneliness.SevenSpectrumNormGeometry.squaredNorm_mul_le",
+    "Loneliness.SevenSpectrumNormGeometry.natural_squaredNorm_le",
+    "Loneliness.SevenSpectrumNormGeometry.squaredNorm_lt",
+    "Loneliness.SevenSpectrumNormGeometry.norm_lt",
+    "Loneliness.SevenSpectrumNormGeometry.natural_squaredNorm_lt",
+    "Loneliness.SevenSpectrumNormGeometry.all_primes",
+    "Loneliness.SevenSpectrumNormGeometry.prime_product",
+    "Loneliness.SevenSpectrumNormGeometry.prime_product_margin",
+    "Loneliness.SevenSpectrumNormGeometry.exists_prime_avoiding",
+    "Loneliness.SevenSpectrumNormGeometry.primeSet16_subset",
+    "Loneliness.SevenSpectrumNormGeometry.primeSet16_card",
+    "Loneliness.SevenSpectrumNormGeometry.all_primes16",
+    "Loneliness.SevenSpectrumNormGeometry.prime_product16",
+    "Loneliness.SevenSpectrumNormGeometry.prime_product_margin16",
+    "Loneliness.SevenSpectrumNormGeometry.exists_prime_avoiding16",
+    "Loneliness.SevenSpectrumNormGeometry.forced_divisor_seven",
+    "Loneliness.SevenSpectrumNormGeometry.forced_divisor_of_strict",
+    "Loneliness.SevenSpectrumNormGeometry.primeSet15_subset",
+    "Loneliness.SevenSpectrumNormGeometry.primeSet15_card",
+    "Loneliness.SevenSpectrumNormGeometry.all_primes15",
+    "Loneliness.SevenSpectrumNormGeometry.prime_product15",
+    "Loneliness.SevenSpectrumNormGeometry.prime_product_coprime15",
+    "Loneliness.SevenSpectrumNormGeometry.prime_product_margin15",
+    "Loneliness.SevenSpectrumNormGeometry.exists_prime_avoiding15"
+  ],
+  "all_previous_registration_entries_preserved": true,
+  "axiom_whitelist_unchanged": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "base_commit": "00dbb6259a7690363a523c0a3d1677d53a9b06ef",
+  "checker_prefixes_unchanged": [
+    "Solitaire",
+    "Conjectures"
+  ],
+  "closure_modules_after": 1355,
+  "closure_modules_before": 1354,
+  "li_modules_in_accepted_closure": [],
+  "new_lean_execution_performed": false,
+  "registered_file_sha256": {
+    "docs/lean-status.md": "78d910c75fdadfc171cae5024233716b8682656fe69fef1685ae87d6ca3f6d19",
+    "lean/Conjectures.lean": "e52a29e36602b4484e3d90cef716cf4e017b8eb9da42934afaef71023bf509dc",
+    "lean/ProofAudit.lean": "71df7a98f8f93a5f8801932b4abb21e4b4b8ca654bd584655263f911e4413982",
+    "scripts/verify_lean.sh": "10cf780f348c6861c7b64078116e037734df0912400472f15fe85ad2726b9a69"
+  },
+  "registered_modules_after": 1353,
+  "registered_modules_before": 1352,
+  "required_endpoints_after": 9314,
+  "required_endpoints_before": 9287,
+  "result_directory_status_changed": false,
+  "schema": "seven-spectrum-registration-source-validation-v1",
+  "status": "passed",
+  "verified_component_source_commit": "f782472e2ccd4d276ed6090b30727dbd2b92346e",
+  "verified_gate_input_count": 13,
+  "verified_project_source_count": 129,
+  "verified_source_and_gate_hashes_match": true
+}

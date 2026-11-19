@@ -1358,6 +1358,7 @@ modules=(
   Conjectures.LonelinessTightSevenBinaryRoots
   Conjectures.LonelinessModularCoverByteCounts
   Conjectures.LonelinessModularCoverByteCuts
+  Conjectures.LonelinessSevenSpectrumNormGeometry
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.
