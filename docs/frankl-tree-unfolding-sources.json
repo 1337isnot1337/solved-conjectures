@@ -1,0 +1,23 @@
+{
+  "schema": "frankl-tree-unfolding-v1",
+  "root": "Conjectures.FranklTreeUnfolding",
+  "sources": {
+    "lean/Conjectures/FranklTreeUnfolding.lean": "95e4f223cc2ef85786b07bd5246ee1da981eb0720ac936a92b67f1de78463339"
+  },
+  "required_endpoints": [
+    "FranklTreeUnfolding.endpoint_rootVertex",
+    "FranklTreeUnfolding.walk_rootVertex_support",
+    "FranklTreeUnfolding.walk_length_le",
+    "FranklTreeUnfolding.support_head",
+    "FranklTreeUnfolding.walk_support_injective",
+    "FranklTreeUnfolding.neighbor_not_mem_support",
+    "FranklTreeUnfolding.append_walk_isPath",
+    "FranklTreeUnfolding.walk_isPath",
+    "FranklTreeUnfolding.endpoint_injective",
+    "FranklTreeUnfolding.exists_endpoint_of_path",
+    "FranklTreeUnfolding.root_not_mem_tail",
+    "FranklTreeUnfolding.toBall_bijective",
+    "FranklTreeUnfolding.ball_card_eq"
+  ],
+  "scope": "Neighbor-set recursive unfolding, simple-path and endpoint uniqueness proofs under girth sixteen, and an exact vertex equivalence with every radius-at-most-seven ball. Graph adjacency transport and the full occupation bound remain separate."
+}
