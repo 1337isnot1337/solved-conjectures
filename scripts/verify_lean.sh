@@ -840,6 +840,50 @@ modules=(
   Conjectures.FranklTreeBoundK14
   Conjectures.FranklTreeSmallDegrees
   Conjectures.FranklHighGirthTheorem
+  Conjectures.LineSizeCoefficientIntegralBasis
+  Conjectures.LineSizeGeneratingGaussian
+  Conjectures.LineSizeGeneratingEvaluationBasic
+  Conjectures.LineSizeGeneratingEvaluationCore
+  Conjectures.LineSizeGeneratingEvaluationSum
+  Conjectures.LineSizeGeneratingEvaluation
+  Conjectures.LineSizeGeneratingEvaluationUniform
+  Conjectures.LineSizeCoefficientIntegral
+  Conjectures.LineSizeFourierBounds
+  Conjectures.LineSizeFourierDomination
+  Conjectures.LineSizeGaussianIntegralBasic
+  Conjectures.LineSizeLatticeCells
+  Conjectures.LineSizeGeometricCharacteristic
+  Conjectures.LineSizeFourierScaling
+  Conjectures.LineSizeLatticeGaussian
+  Conjectures.LineSizeGeometricTaylor
+  Conjectures.LineSizeCoefficientIntegralSeries
+  Conjectures.LineSizeLattice
+  Conjectures.LineSizeLatticeHalfGaussian
+  Conjectures.LineSizeLatticeFourierDomination
+  Conjectures.LineSizeEulerMoments
+  Conjectures.LineSizeCoefficientAsymptoticScale
+  Conjectures.LineSizeGaussianIntegral
+  Conjectures.LineSizeSaddleLimits
+  Conjectures.LineSizeEulerRiemann
+  Conjectures.LineSizeGeometricProductBasic
+  Conjectures.LineSizeEulerWeights
+  Conjectures.LineSizeGeometricProductLog
+  Conjectures.LineSizeCoreBounds
+  Conjectures.LineSizeGeometricProductRescale
+  Conjectures.LineSizeCoreGaussian
+  Conjectures.LineSizeGeometricProductLimit
+  Conjectures.LineSizeCoreLimit
+  Conjectures.LineSizeMomentLimits
+  Conjectures.LineSizeSaddleIntegrand
+  Conjectures.LineSizeGeneratingBranches
+  Conjectures.LineSizeSaddleGrid
+  Conjectures.LineSizeGeneratingBranchIntegral
+  Conjectures.LineSizeSaddleIntegral
+  Conjectures.LineSizeGeneratingBranchFactors
+  Conjectures.LineSizeGeneratingBranchInterchange
+  Conjectures.LineSizeGeneratingRescale
+  Conjectures.LineSizeCoefficientAsymptoticBridge
+  Conjectures.LineSizeCoefficientAsymptotic
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

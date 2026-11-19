@@ -181,10 +181,10 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
     certificates and every stated primitive equality list.
 15. Growing rectangles are complete: real tiling semantics, cumulative
     partition estimates, and the uniform asymptotic over every width `w ≥ h`.
-16. Erdős 607: generating-function evaluation, Fourier local limits, and the
-    sharp coefficient prefactor. Actual geometric counting, finite tuple
-    reconstruction, the coefficientwise formal generating function, the exact
-    saddle profile, and the uniform corrected finite Euler product are checked.
+16. Erdős 607 is complete: actual geometric counting, exact formal and
+    analytic generating functions, Fourier extraction, the local limit and
+    tail estimates, and the sharp asymptotic with its exact prefactor are
+    proved and registered.
 17. Graffiti.pc Conjecture 318 is complete, including the all-order theorem
     and sharp five-vertex example.
 18. Loneliness on a fixed hyperplane: uniform fixed-tolerance probability
@@ -603,3 +603,20 @@ Frankl directory and the overall campaign remain incomplete. Li remains last.
 
 [Exact receipt](verification/frankl-components-44516856625/high-girth-theorem.json) ·
 [Scope](lean-status.md#complete-frankl-high-girth-frequency-theorem).
+
+
+## Complete Erdős 607 asymptotic
+
+The literal geometric count now has its full sharp asymptotic, with the exact
+constant from the note. The 78-module closure at `36b13722` passed strict
+sources, the 1,582-project-theorem standard-axiom audit, and independent
+pinned-kernel replay. The actual analytic generating function and Fourier
+coefficient identity passed their 39-module/867-theorem closure at
+`daa7d2c5`. Neither final endpoint assumes a local limit, tail bound,
+measurability, dominating function, or coefficient-transfer theorem specific
+to this problem; the closure supplies them.
+
+The exact unchanged receipts are archived after comparison of all 93 recorded
+paths. This registers 44 proof modules and 20 required endpoints, for
+878 accepted proof modules plus two roots. [Exact statement and receipts](lean-status.md#complete-erdős-607-line-size-asymptotic).
+The full merged gate remains separate. Li remains last.

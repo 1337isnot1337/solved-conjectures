@@ -307,3 +307,5 @@ import Conjectures.FranklTreeDataK14
 import Conjectures.FranklTreeBoundK14
 import Conjectures.FranklTreeSmallDegrees
 import Conjectures.FranklHighGirthTheorem
+import Conjectures.LineSizeCoefficientIntegral
+import Conjectures.LineSizeCoefficientAsymptotic

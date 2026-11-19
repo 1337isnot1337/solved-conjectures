@@ -42,7 +42,7 @@ never additional Lean axioms.
 | Erdős–Gyárfás abelian covers | Complete for the stated voltage-cover theorem and sharpness | Every seven-label voltage cover of the singly subdivided tetrahedron over every abelian group contains an actual simple cycle of length 4, 8, 16, or 32. The 64-node literal certificate, its collision-branch soundness, and voltage normalization are checked. The connected 95-vertex cyclic cover attains least power-of-two cycle length 32. The general minimum-degree-three conjecture is outside this result. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Frankl generating families | Partial: both frequency bounds complete; cyclic span-four pending | The all-point high-girth bound is checked for every `k ≥ 3`: incidence girth at least 16 and exactly three generators through each point imply frequency at least `518208/1000000` among distinct unions. The `k ≥ 15` linear-family bound is also checked with frequency `657/1000`. Both include the empty union. The complete Vaughan shortcut, small-cycle cases, local checker semantics, and conditional all-period assembly are checked. The remaining cyclic span-four graph/transport certificates and unconditional assembly are still being verified. |
-| Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
+| Erdős 607 line sizes | Complete | Lean proves the exact realizability and geometric counting identity for every natural point count, the coefficientwise and analytic generating functions, Fourier extraction, the actual finite-product limit and domination, and the sharp asymptotic for the actual record count with prefactor 3/(16√(6π)A^(1/4)), where A=π²/12+(log 2)²/2. No unproved local-limit, tail, or coefficient-transfer premise remains. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
 | Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
 | Two-difference Motzkin theorem | Complete | The exact compact-group character formula, exhaustive relation-basis trichotomy, all-modulus cyclic formulas, gcd scaling, odd-cycle criterion, and stated example are checked. The literal fixed character window and rational interval unions attain the stated bounds. The exact floor-sum evaluator, Hermite independence number, attaining character, and explicit arithmetic-operation and integer-size bounds are checked and registered. |
@@ -2103,3 +2103,57 @@ The 47 newly registered modules and 34 new required endpoints join the shared
 package. Its full merged-package build and replay are a separate gate.
 The cyclic span-four theorem remains incomplete, so the Frankl result entry
 remains partial. Li remains last.
+
+
+## Complete Erdős 607 line-size asymptotic
+
+The final endpoints concern `lineSizeCount n`, the actual number of records
+of determined-line sizes for finite sets of `n` distinct real-plane points.
+The previously registered geometric theorem identifies this count with the
+canonical tuple count for every natural `n`, including the small cases.
+The final analytic proof retains that definition throughout.
+
+Writing
+\[
+A=\frac{\pi^2}{12}+\frac{(\log 2)^2}{2},
+\]
+`LineSize.CoefficientAsymptotic.lineSizeCount_sharp_ratio` proves that the
+ratio of this actual count to
+\[
+\frac{3}{16\sqrt{6\pi}\,A^{1/4}}\,
+n^{-1/4}\exp(2\sqrt{An})
+\]
+tends to one. The companion `lineSizeCount_sharp_asymptotic` states the
+asymptotic equivalence directly. All local-limit, domination, tail, and
+coefficient-extraction inputs are discharged in the import closure.
+
+The proof uses the literal finite geometric characteristic product, its
+summed cubic logarithmic error, the corrected Euler factor, and the actual
+first and second moment limits. A floor-defined lattice step turns the
+core-length sum into an integral. Its measurable integrand, pointwise limit,
+integrable majorant, and coupled Gaussian constant are all proved. The exact
+saddle choice and negligible constant contribution complete the normalization.
+
+The analytic generating-function closure also proves absolute convergence,
+the actual count's series value, the explicit generating function, and the
+Fourier coefficient identity. It complements the earlier coefficientwise
+formal power-series proof.
+
+| Final component | Snapshot | Modules | Audited project theorems | Passing job | Exact receipt |
+| --- | --- | ---: | ---: | --- | --- |
+| generating-evaluation | `daa7d2c5eb297ee0ebe5519cc256e418208db658` | 39 | 867 | [Job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44512719031/job/135523776951) | [JSON](verification/line-size-generating-evaluation-daa7d2c5.json) |
+| sharp-asymptotic | `36b137220a62a4c9170fcd6a96978dc5ac175bf9` | 78 | 1582 | [Job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44517650047/job/135537784932) | [JSON](verification/line-size-sharp-asymptotic-36b13722.json) |
+
+Both closures passed strict source checks, the transitive standard-axiom
+whitelist, and independent replay with the unchanged pinned kernel checker.
+The module and theorem counts overlap and are not additive. Both artifact
+ZIPs were verified before their unchanged JSON receipts were recovered:
+
+- Artifact `14525466121`: ZIP SHA-256 `c138d6e941eefd2568856ca02e56307779d32d0ed3aba7c328a84be33ad2b0d8`; receipt SHA-256 `93d7bf4cb5ef276f1f25e06fddfa831338dd245ff6168f986e9e53d18af6732a`.
+- Artifact `14527596723`: ZIP SHA-256 `26f545e4418122d186c7bfdc32b0a8133f70f1161fb1d46880a7df6f2265b152`; receipt SHA-256 `16e86762b72ede1922f907ad76af0164ebb0ba18ee646620dbc09c9853ef1c34`.
+
+All 93 distinct recorded source, gate, and pinned-input paths match their
+passing hashes. The registration adds 44 proof modules and 20 required
+declarations, for 878 accepted proof modules plus the two roots.
+This completes the stated Erdős 607 note. The full merged-package gate
+remains separate, and the repository-wide campaign is incomplete.

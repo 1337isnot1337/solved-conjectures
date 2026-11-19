@@ -63,21 +63,14 @@ The ordinary accepted-proof workflow remains unchanged. Li is still deferred
 until the other collection results are complete.
 
 
-## Current line-size analytic candidates
+## Completed line-size analytic components
 
-The accepted finite generating-function and cyclic components have been
-registered from their exact hosted receipts. Their candidate tasks remain
-available as regression checks. New tasks are still unregistered:
-
-| Task | Target | Scope |
-| --- | --- | --- |
-| `analytic-estimates` | `LineSizeAnalyticEstimates` | Actual Gaussian weight bound, core limit, and finite moment limits |
-| `geometric-fourier` | `LineSizeFourierEstimates` | Actual finite characteristic-product limit and domination |
-| `gaussian-integral` | `LineSizeGaussianIntegral` | Coupled Gaussian integral and literal saddle constant |
-| `branch-coefficients` | `LineSizeGeneratingBranchFactors` | Exact arbitrary-index coefficient and characteristic identities |
-| `coefficient-rescale` | `LineSizeGeneratingRescale` | Absolute interchange and the supported Fourier change of variables |
-| `saddle-integral` | `LineSizeSaddleIntegral` | Actual grid, pointwise limit, majorant, and supported integral limit |
-| `sharp-asymptotic` | `LineSizeCoefficientAsymptotic` | Literal count/model ratio and asymptotic equivalence with the stated constant |
+The complete line-size asymptotic and analytic generating-function closures
+are registered from their exact passing receipts. The earlier finite geometry,
+tuple, formal-series, profile, and Euler components were already registered.
+All line-size tasks remain available as regression gates; they no longer
+represent an outstanding mathematical obligation for this note.
+[Exact result and receipts](lean-status.md#complete-erdős-607-line-size-asymptotic).
 
 The Motzkin `evaluator`, `rational-intervals`, and `relations` tasks have passed
 all three strict gates and are registered with their exact receipts. These

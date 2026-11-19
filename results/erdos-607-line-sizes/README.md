@@ -44,6 +44,22 @@ The exact coefficientwise formal generating function is now checked. Its
 and independent kernel replay. See the
 [receipt](../../docs/line-size-generating-function-hosted-receipt.json).
 
-Analytic generating-function evaluation, the Fourier local limit, tail control,
-and sharp coefficient asymptotic remain in progress. See [the obligations](LEAN_PLAN.md) and
-[the checked scope and receipts](../../docs/lean-status.md).
+The analytic generating function, absolute convergence, and exact Fourier
+coefficient identity are now checked. The 39-module closure passed strict
+sources, an 867-theorem standard-axiom audit, and independent kernel replay.
+[Generating-function receipt](../../docs/verification/line-size-generating-evaluation-daa7d2c5.json).
+
+The complete sharp asymptotic is also checked for the actual geometric count:
+\[
+F(n)\sim \frac{3}{16\sqrt{6\pi}\,A^{1/4}}\,
+n^{-1/4}e^{2\sqrt{An}},\qquad
+A=\frac{\pi^2}{12}+\frac{(\log 2)^2}{2}.
+\]
+All finite-product limits, Fourier bounds, measurability, domination, lattice
+steps, Gaussian integrals, and normalization identities are supplied by its
+78-module closure. Strict sources, the 1,582-theorem standard-axiom audit, and
+independent pinned-kernel replay passed.
+[Asymptotic receipt](../../docs/verification/line-size-sharp-asymptotic-36b13722.json).
+
+This completes the stated note. [Checked components](LEAN_PLAN.md) ·
+[Exact formalized scope](../../docs/lean-status.md#complete-erdős-607-line-size-asymptotic).

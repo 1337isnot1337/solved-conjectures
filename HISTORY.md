@@ -1,5 +1,21 @@
 # History
 
+## 2026-11-19 — Complete Erdős 607 line-size asymptotic
+
+Registered the sharp asymptotic for the actual real-plane record count, with
+the exact leading constant. The proof discharges the characteristic-product
+limit, Fourier domination, core-lattice integral, Gaussian constant, and
+normalization. Its 78-module closure passed strict sources, a 1,582-theorem
+standard-axiom audit, and independent pinned-kernel replay at `36b13722`.
+
+The analytic generating function and actual Fourier coefficient identity also
+passed their 39-module/867-theorem closure at `daa7d2c5`. Both exact receipts
+are archived after comparison of all 93 recorded paths. The 44 new proof
+modules and 20 required endpoints complete the stated note, alongside its
+earlier geometry and formal-series proofs. The full merged-package gate is
+separate; Li remains last.
+[Exact statement and receipts](docs/lean-status.md#complete-erdős-607-line-size-asymptotic).
+
 ## 2026-11-19 — Complete Frankl high-girth frequency theorem
 
 Registered the full all-point `518208/1000000` distinct-union bound for every
