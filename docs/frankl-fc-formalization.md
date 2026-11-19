@@ -81,6 +81,29 @@ The pointwise evaluator has a proved equality with the original transfer evaluat
 The [FC-family formalization paper](https://arxiv.org/abs/1207.3604)
 describes the closed-extension and share method that underlies this search.
 
+## Local maximal-cover checker
+
+[`FranklLocalMaximalCover.lean`](../lean/Conjectures/FranklLocalMaximalCover.lean)
+provides a separate checker for the remaining local weight certificates.
+Let `S` be an inside pattern and let `M ⊆ E` be subsets of the boundary.
+Let `C` be the union of all local generators contained in `S ∪ E`.
+The file proves that `S` is compatible exactly when `C ∩ W = S` and `M ⊆ C ∖ W`.
+
+This equivalence uses the existing `localPart` and `compatible` definitions.
+The checker tests inside patterns without enumerating every local union.
+Its final theorem transfers a successful check to abundance in the actual family of distinct unions.
+No finite window certificate is asserted by this helper alone.
+
+The [local receipt](verification/frankl-maximal-cover-local.json)
+records five strict source checks, the 66-theorem axiom audit, and independent kernel replay.
+This local receipt does not replace hosted validation or accepted registration.
+
+Run its separate candidate gate with:
+
+```sh
+python3 scripts/verify_frankl_local_candidate.py maximal-cover
+```
+
 ## Checks
 
 The candidate gate requires all of these checks:
