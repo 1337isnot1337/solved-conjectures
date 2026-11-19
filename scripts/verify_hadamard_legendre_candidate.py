@@ -87,9 +87,24 @@ TASKS = {
         'HadamardLegendre.order_three_difference_range_fixed',
         'HadamardLegendre.order_three_difference_square_zero',
     ]),
+    'domain': ('Conjectures.HadamardLegendreDomain', [
+        'HadamardLegendre.exists_cyclic_subgroup_card_133',
+        'HadamardLegendre.quotientProductHom133_injective',
+        'HadamardLegendre.domainEquiv133_fst',
+        'HadamardLegendre.exists_domain_equiv1197',
+    ]),
+    'compression': ('Conjectures.HadamardLegendreCompression', [
+        'HadamardLegendre.pairCorrelation_compress_eq_fiber_sum',
+        'HadamardLegendre.compressed_pairCorrelation_formula',
+        'HadamardLegendre.compressed_pair_energy',
+        'HadamardLegendre.abs_compress_le_kernel_card',
+        'HadamardLegendre.compressed_rowSum',
+        'HadamardLegendre.compress_equivariant',
+        'HadamardLegendre.compress_comp',
+    ]),
 }
 
-DEFAULT_TASKS = ("centering", "involutions", "order-nine")
+DEFAULT_TASKS = ("involutions", "order-nine", "domain", "compression")
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-legendre-candidates.yml',
  'lean/lake-manifest.json',

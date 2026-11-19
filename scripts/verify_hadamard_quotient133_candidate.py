@@ -50,9 +50,29 @@ TASKS = {
         'HadamardQuotient133.actual_margin_catalogued',
         'HadamardQuotient133.catalog_no_joint_pair',
     ]),
+    'sample': ('Conjectures.HadamardQuotient133LeafSample', [
+        'HadamardQuotient133.feasible_mem_rowsFor',
+        'HadamardQuotient133.actual_margin_catalogued',
+        'HadamardQuotient133.Finite.sample_outer_checked',
+        'HadamardQuotient133.Finite.sample_quotient_leaf_checked',
+        'HadamardQuotient133.Finite.sample_margin_leaf_checked',
+        'HadamardQuotient133.Finite.sample_quotient_catalog_checked',
+        'HadamardQuotient133.Finite.sample_margin_catalog_checked',
+    ]),
+    'orbits': ('Conjectures.HadamardQuotient133Orbits', [
+        'HadamardQuotient133.squareClass7_rep7',
+        'HadamardQuotient133.squareClass19_rep19',
+        'HadamardQuotient133.squareClass7_eq_iff_square_unit',
+        'HadamardQuotient133.squareClass19_eq_iff_square_unit',
+        'HadamardQuotient133.correlation133_squareScale',
+        'HadamardQuotient133.correlation133_neg',
+        'HadamardQuotient133.orbitWitness133_valid',
+        'HadamardQuotient133.correlation133_orbit',
+        'HadamardQuotient133.signatures133_suffice',
+    ]),
 }
 
-DEFAULT_TASKS = ("packet",)
+DEFAULT_TASKS = ("sample", "orbits")
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-quotient133-candidates.yml',
  'lean/lake-manifest.json',
@@ -61,7 +81,12 @@ GATE_INPUTS = {'.github/workflows/lean-hadamard-quotient133-candidates.yml',
  'scripts/plan_lean_candidates.py',
  'scripts/replay_lean.py',
  'scripts/verify_hadamard_quotient133_candidate.py',
- 'scripts/verify_lean_candidate.py'}
+ 'scripts/verify_lean_candidate.py',
+ 'scripts/generate_hadamard_quotient133.mjs',
+ 'results/hadamard-2396/PROOF.md',
+ 'results/hadamard-2396/quotient133.cpp',
+ 'results/hadamard-2396/quotient133.pairs',
+ 'results/hadamard-2396/audit.py'}
 
 
 def dependency_order(target: str) -> list[str]:
@@ -153,6 +178,9 @@ def main() -> None:
     destination = ROOT / ".candidate-artifacts" / ("hadamard-quotient133-" + args.task)
     destination.mkdir(parents=True, exist_ok=True)
     try:
+        if args.task == "sample":
+            run("node", "../scripts/generate_hadamard_quotient133.mjs", "--check", "--sample")
+            receipt["completed_checks"].append("deterministic sample reproduction against four frozen inputs")
         check_sources(modules, receipt)
         receipt["completed_checks"].append("strict source checks, warnings treated as errors")
         audit([target], required, modules, "hadamard-quotient133-" + args.task)

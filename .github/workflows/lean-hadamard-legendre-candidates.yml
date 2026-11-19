@@ -20,10 +20,14 @@ on:
           - prime-quotients
           - involutions
           - order-nine
+          - domain
+          - compression
   push:
     paths:
       - 'lean/Conjectures/HadamardLegendre*.lean'
       - 'lean/Conjectures/HadamardBorderNormalizationTransportOps.lean'
+      - 'lean/Conjectures/HadamardBorderCompression.lean'
+      - 'lean/Conjectures/HadamardBorderSymmetryPrime.lean'
       - 'lean/Conjectures/HadamardAutomorphismArithmeticBasic.lean'
       - 'lean/Conjectures/HadamardAutomorphismFourier.lean'
       - 'lean/lean-toolchain'
@@ -38,6 +42,8 @@ on:
     paths:
       - 'lean/Conjectures/HadamardLegendre*.lean'
       - 'lean/Conjectures/HadamardBorderNormalizationTransportOps.lean'
+      - 'lean/Conjectures/HadamardBorderCompression.lean'
+      - 'lean/Conjectures/HadamardBorderSymmetryPrime.lean'
       - 'lean/Conjectures/HadamardAutomorphismArithmeticBasic.lean'
       - 'lean/Conjectures/HadamardAutomorphismFourier.lean'
       - 'lean/lean-toolchain'
@@ -72,6 +78,9 @@ jobs:
 
   candidates:
     name: Legendre-pair candidate ${{ matrix.task }}
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}-${{ matrix.task }}
+      cancel-in-progress: false
     needs: plan
     if: needs.plan.outputs.tasks != '[]'
     runs-on: ubuntu-latest

@@ -13,6 +13,8 @@ on:
           - catalog
           - model
           - packet
+          - sample
+          - orbits
   push:
     paths:
       - 'lean/Conjectures/HadamardQuotient133*.lean'
@@ -20,6 +22,11 @@ on:
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
       - 'scripts/verify_hadamard_quotient133_candidate.py'
+      - 'scripts/generate_hadamard_quotient133.mjs'
+      - 'results/hadamard-2396/PROOF.md'
+      - 'results/hadamard-2396/quotient133.cpp'
+      - 'results/hadamard-2396/quotient133.pairs'
+      - 'results/hadamard-2396/audit.py'
       - 'scripts/verify_lean_candidate.py'
       - 'scripts/plan_lean_candidates.py'
       - 'scripts/replay_lean.py'
@@ -31,6 +38,11 @@ on:
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
       - 'scripts/verify_hadamard_quotient133_candidate.py'
+      - 'scripts/generate_hadamard_quotient133.mjs'
+      - 'results/hadamard-2396/PROOF.md'
+      - 'results/hadamard-2396/quotient133.cpp'
+      - 'results/hadamard-2396/quotient133.pairs'
+      - 'results/hadamard-2396/audit.py'
       - 'scripts/verify_lean_candidate.py'
       - 'scripts/plan_lean_candidates.py'
       - 'scripts/replay_lean.py'
@@ -59,6 +71,9 @@ jobs:
 
   candidates:
     name: quotient-133 candidate ${{ matrix.task }}
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}-${{ matrix.task }}
+      cancel-in-progress: false
     needs: plan
     if: needs.plan.outputs.tasks != '[]'
     runs-on: ubuntu-latest
