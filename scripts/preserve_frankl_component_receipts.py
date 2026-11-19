@@ -13,6 +13,8 @@ import verify_frankl_orbit_batches as short_gate
 from preserve_frankl_arithmetic_receipts import ROOT, REPO, api, request, require, sha, encoded, git_bytes
 
 PROFILES = {
+    "Lean Frankl full high-girth generator theorem": {
+        "inventory": "docs/frankl-high-girth-theorem-sources.json", "group": "high-girth-theorem"},
     "Lean Frankl actual high-girth graph counts": {
         "inventory": "docs/frankl-high-girth-graph-core-sources.json", "group": "high-girth-graph-core"},
     "Lean Frankl actual tree configuration messages": {

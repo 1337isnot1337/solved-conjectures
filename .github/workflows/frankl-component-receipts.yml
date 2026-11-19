@@ -9,6 +9,7 @@ on:
       - 'scripts/preserve_frankl_component_receipts.py'
   workflow_run:
     workflows:
+      - Lean Frankl full high-girth generator theorem
       - Lean Frankl actual high-girth graph counts
       - Lean Frankl actual tree configuration messages
       - Lean Frankl boundary configuration and averaging
