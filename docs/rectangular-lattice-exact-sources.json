@@ -1,0 +1,97 @@
+{
+  "schema": "rectangular-lattice-exact-model-v1",
+  "tasks": {
+    "algebra": {
+      "accepted_registry_changed": false,
+      "configuration_sha256": {
+        "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+        "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      "helper_sha256": {
+        "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+        "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+        "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+        "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+        "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+        "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+        "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+      },
+      "legacy_prefixes": [
+        "Loneliness."
+      ],
+      "project_module_count": 14,
+      "required_theorem_count": 38,
+      "required_theorems": [
+        "Loneliness.RectangularLattice.left_inverse_mulVec",
+        "Loneliness.RectangularLattice.mulVec_injective",
+        "Loneliness.RectangularLattice.real_left_inverse",
+        "Loneliness.RectangularLattice.parameters_integral",
+        "Loneliness.RectangularLattice.integral_points_iff",
+        "Loneliness.RectangularLattice.isUnimodular_image_iff",
+        "Loneliness.RectangularLattice.imageBasis_apply",
+        "Loneliness.RectangularLattice.exists_basis_first_image",
+        "Loneliness.RectangularLattice.exists_image_basis_first",
+        "Loneliness.RectangularLattice.gram_cast",
+        "Loneliness.RectangularLattice.gram_det_cast",
+        "Loneliness.RectangularLattice.basis_det_sq",
+        "Loneliness.RectangularLattice.gram_det_image_basis",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_left_inverse",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_apply",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_gram_det",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.triangle_integral_points",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_left_inverse",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_apply",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_gram_det",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.shape0_integral_points",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_left_inverse",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_apply",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_gram_det",
+        "Loneliness.RectangularLattice.SixSpectrumMaps.shape1_integral_points",
+        "Loneliness.RectangularGram.det_mul_eq_sum_minors",
+        "Loneliness.RectangularGram.gram_det_eq_sum_minors_sq",
+        "Loneliness.RectangularGram.int_gram_det_nonneg",
+        "Loneliness.RectangularGram.int_minor_sq_le_gram_det",
+        "Loneliness.LatticeCovolume.orthonormal_fundamentalDomain_volume",
+        "Loneliness.LatticeCovolume.gram_det_eq_basis_det_sq",
+        "Loneliness.LatticeCovolume.covolume_sq_eq_gram_det",
+        "Loneliness.LatticeCovolume.covolume_sq_eq_int_gram_det",
+        "Loneliness.LatticeCovolume.one_le_covolume_sq_of_integral_gram",
+        "Loneliness.RectangularGramLowerBound.normalized_gram_det",
+        "Loneliness.RectangularGramLowerBound.normalized_gram_det_ge_six_of_rows",
+        "Loneliness.RectangularGramLowerBound.picked_det_sq_eq_one_of_gram_lt_six",
+        "Loneliness.RectangularGramLowerBound.gram_det_ge_six"
+      ],
+      "roots": [
+        "Conjectures.LonelinessRectangularLattice",
+        "Conjectures.LonelinessRectangularGram",
+        "Conjectures.LonelinessLatticeCovolume",
+        "Conjectures.LonelinessRectangularGramLowerBound"
+      ],
+      "schema": "rectangular-lattice-exact-v1",
+      "scope": "Exact rectangular Cauchy-Binet and Gram-minor identities; integer/real image equality and primitive integer-basis transfer under an integer left inverse; literal six-spectrum map determinants 3, 9, 8; covolume squared equals the Gram determinant of an actual integer-lattice basis, with integral lower bound one; positive Gram determinant of an integer 6-by-4 matrix with nonzero rows distinct up to sign is at least six. These are algebraic components. Rational-space lattice construction and final norm/classification theorems are not asserted.",
+      "source_policy": {
+        "fresh_project_objects": true,
+        "linter_override": false,
+        "warning_as_error": true
+      },
+      "source_sha256": {
+        "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+        "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+        "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+        "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+        "Conjectures.LonelinessHyperplaneArithmetic": "53178525bbbd49c19fa9dd1046f39681841319ef0dae8ac2a77216b34bee5ffa",
+        "Conjectures.LonelinessKZBasisGram": "cbedf5849f99a461e39f8cde2ddb9ffa8b734d0b2deca865451aab49ca50dd0c",
+        "Conjectures.LonelinessKZBasisVectors": "c15824ec759e83dce78210732dcc0405d2d02c992bde00fb2e9ac8fd8053c305",
+        "Conjectures.LonelinessLatticeCovolume": "93d10c0cc3435a5eadda9855df58eb39fe7a9840a731880bf53b641bb2e5648d",
+        "Conjectures.LonelinessNearestPlane": "7ecb53d6a8c77fb9d06accde929d834d0eb4e26fbccd3ce01c8d4c0cef4bc8b9",
+        "Conjectures.LonelinessPrimitiveBasis": "a2a3c31eed4b428f7ff38323dffb0ea3d25d41579da43e4601c2a727a93490ec",
+        "Conjectures.LonelinessRectangularGram": "e6ff1ab710e4c87f7beff59612e977a6adb6d5ce0890f2913a88047a36a4db9e",
+        "Conjectures.LonelinessRectangularGramLowerBound": "0b0c37ce162fc48c870de13ff2a5232663bbdf3b58a2168ed24dc5d784b3380c",
+        "Conjectures.LonelinessRectangularLattice": "b133436eef206a20d085e276a41ac186e9377c43cfda3922328ba60e713b7176",
+        "Conjectures.LonelinessSubspaceDensity": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f"
+      },
+      "verification_status": "unverified candidate"
+    }
+  }
+}
