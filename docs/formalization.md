@@ -735,3 +735,15 @@ gate remains separate. Lower-runner assumptions, exhaustive modular
 classification and final uniqueness remain open, so no result directory
 becomes complete from this reduction.
 [Exact hypotheses, cutoffs and scope](loneliness-large-norm-lean.md).
+
+## Six-speed reduced fraction component
+
+The exact reduced arithmetic forms and their unconditional realization are
+registered in `LonelinessSixSpectrumArithmetic`. This includes the necessary
+odd-denominator/gap consequence and the explicit `4/27` obstruction to treating
+that condition as sufficient. All 12 modules passed strict source checking,
+the all-owned/private standard-axiom audit (421 declarations), eight required
+endpoint checks, and exact stock-kernel replay in job 135607998981 of run
+44537865221. The unchanged evidence was authenticated from the original ZIP.
+[Scope and receipt](lean-status.md#six-speed-spectrum-reduced-fraction-arithmetic).
+The universal classification and merged-package check remain separate.

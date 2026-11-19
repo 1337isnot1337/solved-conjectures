@@ -2330,3 +2330,32 @@ gate remains separate. Lower-runner assumptions, exhaustive modular
 classification and final uniqueness remain open, so no result directory
 becomes complete from this reduction.
 [Exact hypotheses, cutoffs and scope](loneliness-large-norm-lean.md).
+
+## Six-speed spectrum reduced fraction arithmetic
+
+`Conjectures.LonelinessSixSpectrumArithmetic` is registered. It proves the exact
+reduced forms of the proposed values: `a/(6a+1)` for `a≥1`, or
+`(3s+5)/(18s+33)` for `s≥0`. Every member has six distinct positive primitive
+integer speeds realizing that value. The odd-denominator condition and gaps
+one or three are proved necessary. They are not sufficient by themselves:
+`4/27` satisfies both conditions but is outside the proposed parameter set.
+No statement that all six-speed tuples have these values is assumed or proved
+by this component; the universal classification remains open.
+
+[Run 44537865221/job 135607998981](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44537865221/job/135607998981)
+passed at `26ad213ec179acb14affbe5274f8ed4af45ef7d5`: all 12 fresh strict sources,
+all 421 owned declarations (335 theorems, 31 private declarations), all eight
+required theorem endpoints, and all 12 exact singleton stock-kernel replays.
+Only `propext`, `Classical.choice` and `Quot.sound` were allowed. The sibling
+seven/eight-speed job in this run failed; its candidate scope is not accepted
+by this receipt.
+
+The [unchanged raw receipt](verification/six-spectrum-arithmetic-exact-44537865221/receipt.json)
+has SHA-256 `7eeecaabb0f4c334857f415fd9b2e84025600e503c80098e340aa3ba6dd20c45`.
+Artifact `14535809302` has ZIP SHA-256
+`78561160c02bf670763318a1fe7ce8d02451995ae08ddef6d0f4b22912b820fa`.
+The [preservation record](verification/six-spectrum-arithmetic-exact-44537865221/preservation.json)
+records authentication of the original archived source and object bytes,
+reconstructed all-owned audit, and process records. Registration adds one
+proof module and eight required endpoints. The merged-package gate remains
+separate, and the six-speed result remains partial.

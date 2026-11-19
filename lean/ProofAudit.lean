@@ -9,6 +9,14 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Loneliness.SixSpectrumArithmetic.first_family_coprime,
+    `Loneliness.SixSpectrumArithmetic.second_family_coprime,
+    `Loneliness.SixSpectrumArithmetic.first_family_value,
+    `Loneliness.SixSpectrumArithmetic.second_family_value,
+    `Loneliness.SixSpectrumArithmetic.parameter_iff_reduced_families,
+    `Loneliness.SixSpectrumArithmetic.reduced_denominator_restrictions,
+    `Loneliness.SixSpectrumArithmetic.reduced_families_realized,
+    `Loneliness.SixSpectrumArithmetic.denominator_conditions_not_sufficient,
     `Loneliness.NormGeometry.tight_natural_squaredNorm_le,
     `Loneliness.NormGeometry.exists_original_prime_of_tight,
     `Loneliness.NormGeometry.natural_squaredNorm_le_of_product,

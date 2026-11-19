@@ -1,0 +1,310 @@
+{
+  "declaration-inventory.json": {
+    "bytes": 213703,
+    "sha256": "19b79b9956607c254481cc37d0cca891fb8f88c9acb8578d4a6914c7c088a4f8"
+  },
+  "lib/lean/Conjectures/Loneliness.olean": {
+    "bytes": 670688,
+    "sha256": "4e13edf11c42cd4d01ee6b692970cde34603fd7ef263cbd443775fe41e360307"
+  },
+  "lib/lean/Conjectures/LonelinessCertificate.olean": {
+    "bytes": 165904,
+    "sha256": "4d720af719eae7fe1332573c6c87aead98bac953354171d5eb83cb4239502b06"
+  },
+  "lib/lean/Conjectures/LonelinessConsecutiveFamily.olean": {
+    "bytes": 1124528,
+    "sha256": "23524d1c18356f6db6ed3fe674b49d14b11311df0c72424387174e4cd408e332"
+  },
+  "lib/lean/Conjectures/LonelinessConsecutiveFamilyCertificates.olean": {
+    "bytes": 471528,
+    "sha256": "c3d89cee7570f5c9103438599b48e5155cf83a555f7c93bda7bbbba5bf6f210f"
+  },
+  "lib/lean/Conjectures/LonelinessCriticalBase.olean": {
+    "bytes": 597008,
+    "sha256": "30d9e0468833b8eca771d4125313add10f1193a74297f2f5766fb0c5ddc2b37a"
+  },
+  "lib/lean/Conjectures/LonelinessExamples.olean": {
+    "bytes": 139144,
+    "sha256": "74df4a669663e961e62a3bb0abd76c99dd163f7c6dca5d5017ed146557a8a39f"
+  },
+  "lib/lean/Conjectures/LonelinessFiveFamily.olean": {
+    "bytes": 843608,
+    "sha256": "9d841dbdfb2e8ea44054e35aa8504f30d54f8cd1e583bda16d8c98277d5d8334"
+  },
+  "lib/lean/Conjectures/LonelinessMax.olean": {
+    "bytes": 564136,
+    "sha256": "2ef1feecd6e9741e4f5638c65b2a12c098710bc6605b1cb99e9a86c5be91bb2e"
+  },
+  "lib/lean/Conjectures/LonelinessPairBridge.olean": {
+    "bytes": 115000,
+    "sha256": "1d83e336c29a1893da7a08b84439b7a3705eb39da17ae6785ac8f8fa11af03dc"
+  },
+  "lib/lean/Conjectures/LonelinessSixProgression.olean": {
+    "bytes": 2421528,
+    "sha256": "99bf30251b67ae452a1adfc732c65fa09a400a3441c2f8916fbe9e87cd384d57"
+  },
+  "lib/lean/Conjectures/LonelinessSixSpectrumArithmetic.olean": {
+    "bytes": 544288,
+    "sha256": "9aef1bdb6d415353923fe8413443fead5b6cbe6394e84dcd09e057d257b4b253"
+  },
+  "lib/lean/Conjectures/LonelinessSixSpectrumRealization.olean": {
+    "bytes": 132504,
+    "sha256": "14c75354ae2ce4f6f09e9e75d8e93a1aa8fd46562c30434526c7ee7bab3e03ff"
+  },
+  "logs/Conjectures.Loneliness.kernel.log": {
+    "bytes": 33,
+    "sha256": "381ad3ff638b4f35804e7c2a204a14a82ab29219cf5cc060d045acc27b90eb28"
+  },
+  "logs/Conjectures.Loneliness.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/Conjectures.LonelinessCertificate.kernel.log": {
+    "bytes": 44,
+    "sha256": "68c50d04de944e719b9c708f808b2959d1006b6880dc91620c70220fe94184f6"
+  },
+  "logs/Conjectures.LonelinessCertificate.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/Conjectures.LonelinessConsecutiveFamily.kernel.log": {
+    "bytes": 50,
+    "sha256": "96c35a540b560f4f10a5e06d47a1d9309a8fa5fa1ebecbccf4f96637322611a5"
+  },
+  "logs/Conjectures.LonelinessConsecutiveFamily.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/Conjectures.LonelinessConsecutiveFamilyCertificates.kernel.log": {
+    "bytes": 62,
+    "sha256": "87cc60d0d69f9b2e9db9a2aca5e13393f68c32cb02381456a30dbafc6043eb30"
+  },
+  "logs/Conjectures.LonelinessConsecutiveFamilyCertificates.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/Conjectures.LonelinessCriticalBase.kernel.log": {
+    "bytes": 45,
+    "sha256": "0006fcc9df8f4040810ba1a8383d1636b283327a300f369e1dca3274ff0cebf2"
+  },
+  "logs/Conjectures.LonelinessCriticalBase.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/Conjectures.LonelinessExamples.kernel.log": {
+    "bytes": 41,
+    "sha256": "e8ddf2f72c29ab2e5a4bf5cfdc916bb589d466045c11afa8a3e75a068822bc19"
+  },
+  "logs/Conjectures.LonelinessExamples.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/Conjectures.LonelinessFiveFamily.kernel.log": {
+    "bytes": 43,
+    "sha256": "34a6f139b5b00907c71526d36b276ce6e9488a877c161d45ff5ec4260b65e3e2"
+  },
+  "logs/Conjectures.LonelinessFiveFamily.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/Conjectures.LonelinessMax.kernel.log": {
+    "bytes": 36,
+    "sha256": "61edbc0293f5e5d5ee3da2a4bdd1cf0df081f4a7f6a23feed2aba1d303b4eaac"
+  },
+  "logs/Conjectures.LonelinessMax.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/Conjectures.LonelinessPairBridge.kernel.log": {
+    "bytes": 43,
+    "sha256": "c96237d616adcb2981230b7d57e25123ce1333fada41a652466996f55597f8c7"
+  },
+  "logs/Conjectures.LonelinessPairBridge.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/Conjectures.LonelinessSixProgression.kernel.log": {
+    "bytes": 47,
+    "sha256": "3d1d916b3f289153c2c0a0efd699ffacd06102f0deb0e8d76e52d0366cb55243"
+  },
+  "logs/Conjectures.LonelinessSixProgression.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/Conjectures.LonelinessSixSpectrumArithmetic.kernel.log": {
+    "bytes": 54,
+    "sha256": "6e7582eae66359d8f38e357a776718b70bd9bd3c3527d736c08368188016cefe"
+  },
+  "logs/Conjectures.LonelinessSixSpectrumArithmetic.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/Conjectures.LonelinessSixSpectrumRealization.kernel.log": {
+    "bytes": 55,
+    "sha256": "4af03a9efa511c9151d72b6fe6da41f6937ceeee7a4e736e3458d2877a08d962"
+  },
+  "logs/Conjectures.LonelinessSixSpectrumRealization.source.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "logs/all-owned-audit.log": {
+    "bytes": 143964,
+    "sha256": "99247959c9901d886dbd7ea309b8c7eb20ef7101565d12c03e93ad04420688ec"
+  },
+  "progress/Conjectures.Loneliness.kernel.json": {
+    "bytes": 528,
+    "sha256": "424b8c4591de40415d566701b687b2ead9ce2ca6fff7761bf5e4d8ec7f6ae122"
+  },
+  "progress/Conjectures.Loneliness.source.json": {
+    "bytes": 682,
+    "sha256": "b8ff8287b2fafcadf225a5d6fd053103a98bfc654f672684d25fb6e584c91996"
+  },
+  "progress/Conjectures.LonelinessCertificate.kernel.json": {
+    "bytes": 550,
+    "sha256": "162511a67fc1e2980a21484cb662013a88634a5a084f9f3bcbbf8407892578e5"
+  },
+  "progress/Conjectures.LonelinessCertificate.source.json": {
+    "bytes": 726,
+    "sha256": "bcd267faad918ef5d04c1d2d4c680d0575437e79de721b827b9f3fa35720b17f"
+  },
+  "progress/Conjectures.LonelinessConsecutiveFamily.kernel.json": {
+    "bytes": 572,
+    "sha256": "0f03620d183a280a8e9bade4d3e57f83ccd2a02d82bcd8536ab0f549756fbb0e"
+  },
+  "progress/Conjectures.LonelinessConsecutiveFamily.source.json": {
+    "bytes": 735,
+    "sha256": "61ecde6227cc8ad07aade2edaee073deb5478f788904733cb2eb83e98cfd583d"
+  },
+  "progress/Conjectures.LonelinessConsecutiveFamilyCertificates.kernel.json": {
+    "bytes": 586,
+    "sha256": "e9e2ded5564fc1ca1835c6cd34729d77e7096c34ceabad052e338881b9f8965a"
+  },
+  "progress/Conjectures.LonelinessConsecutiveFamilyCertificates.source.json": {
+    "bytes": 791,
+    "sha256": "8ea626c25f4e05c9ff9d6899028f358ccf06de77eeda64d3210cad50fb2ba77a"
+  },
+  "progress/Conjectures.LonelinessCriticalBase.kernel.json": {
+    "bytes": 552,
+    "sha256": "a9379a7dc42c311a82f3b49204a67dc4080e9dc8b10ac7beeea40b4972313f2a"
+  },
+  "progress/Conjectures.LonelinessCriticalBase.source.json": {
+    "bytes": 720,
+    "sha256": "7d485e8faab88f878906cdd35a46fd002302c07c3cf91a14c732e06b155a7cea"
+  },
+  "progress/Conjectures.LonelinessExamples.kernel.json": {
+    "bytes": 544,
+    "sha256": "eb5a36ab36a836240e536ee9c35ca191c138f1a6faea9ea7f3373e86451d0fe7"
+  },
+  "progress/Conjectures.LonelinessExamples.source.json": {
+    "bytes": 718,
+    "sha256": "9bb9f1f9622a9136ef8617ed7c89d1c3cd69b765ca9f8eb2fa23a055fb2e6e1f"
+  },
+  "progress/Conjectures.LonelinessFiveFamily.kernel.json": {
+    "bytes": 548,
+    "sha256": "c6d67c8391a61fa03063b58f290c11e65703de7f275a6083c16907622a179c95"
+  },
+  "progress/Conjectures.LonelinessFiveFamily.source.json": {
+    "bytes": 724,
+    "sha256": "db0aefc9c4be5d8189c7a8f707bd5e622c256a6fc3415aee90b32f435f1b0f2e"
+  },
+  "progress/Conjectures.LonelinessMax.kernel.json": {
+    "bytes": 543,
+    "sha256": "a470a9c927eba88d25d04440219a88e655472355a71f120ab47cfee021ebe254"
+  },
+  "progress/Conjectures.LonelinessMax.source.json": {
+    "bytes": 713,
+    "sha256": "344a3c9bb80b68d8f6b3081a50b64ef00e15713f5e041f60c1e4ef0cb02ac5dc"
+  },
+  "progress/Conjectures.LonelinessPairBridge.kernel.json": {
+    "bytes": 548,
+    "sha256": "642531c0caa2f0a98102cdee28b7c000f00de1a657900da5e5738f29c2cac059"
+  },
+  "progress/Conjectures.LonelinessPairBridge.source.json": {
+    "bytes": 724,
+    "sha256": "0456f01a8312e11e7d1788183e19cacd5a8c64432e868d9eb5cc145841c9fcb1"
+  },
+  "progress/Conjectures.LonelinessSixProgression.kernel.json": {
+    "bytes": 556,
+    "sha256": "68f6b3d55d370c9f85144273bf798d98701d2d5cb51da8a2ac59e94a2e4018f7"
+  },
+  "progress/Conjectures.LonelinessSixProgression.source.json": {
+    "bytes": 746,
+    "sha256": "fbc4d52a88eab11d5271e634dbd3e2d0658bad11b3fbb22d475b885eff25186c"
+  },
+  "progress/Conjectures.LonelinessSixSpectrumArithmetic.kernel.json": {
+    "bytes": 570,
+    "sha256": "c0fc896b4ea49fa55182125739800fe890d4cdfc45d61a629f1ceb46f8cf05ab"
+  },
+  "progress/Conjectures.LonelinessSixSpectrumArithmetic.source.json": {
+    "bytes": 747,
+    "sha256": "b2edca7e62adc1611d8e6d4d5f1c0b307e5f067778201bb186b990fcd34c63cd"
+  },
+  "progress/Conjectures.LonelinessSixSpectrumRealization.kernel.json": {
+    "bytes": 572,
+    "sha256": "1833e176af063a99b4ebee712462508754416cc9267761c53d91fac6b1053aa8"
+  },
+  "progress/Conjectures.LonelinessSixSpectrumRealization.source.json": {
+    "bytes": 750,
+    "sha256": "1f02ebcbdd435bfbbc79acad799d3fa3403609ff0e7f5f2f5fbc190f40e4d40f"
+  },
+  "progress/all-owned-audit.json": {
+    "bytes": 533,
+    "sha256": "89ed5d7ffed136aaf98322955d646d124f40b673c6cd7a52fc84cbaf5fac647a"
+  },
+  "receipt.json": {
+    "bytes": 30541,
+    "sha256": "7eeecaabb0f4c334857f415fd9b2e84025600e503c80098e340aa3ba6dd20c45"
+  },
+  "src/Conjectures/Loneliness.lean": {
+    "bytes": 9269,
+    "sha256": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce"
+  },
+  "src/Conjectures/LonelinessCertificate.lean": {
+    "bytes": 3909,
+    "sha256": "7eccb4390fe8a11a0447a4c69e187d74665dfd31c8e59b8b068f3a7bcb78a99d"
+  },
+  "src/Conjectures/LonelinessConsecutiveFamily.lean": {
+    "bytes": 11569,
+    "sha256": "9bc1e98818ff6ca84dac376bba158eb198caf147a94ef8cd6d864209c50b9a7c"
+  },
+  "src/Conjectures/LonelinessConsecutiveFamilyCertificates.lean": {
+    "bytes": 6452,
+    "sha256": "883c862287510867880d0f5c8fbf698c65fffab11627db0950cb2257aa40e1da"
+  },
+  "src/Conjectures/LonelinessCriticalBase.lean": {
+    "bytes": 7215,
+    "sha256": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24"
+  },
+  "src/Conjectures/LonelinessExamples.lean": {
+    "bytes": 8527,
+    "sha256": "715a3b52bb3fb5747e07883cd1d1417764dab7c52848807b9f50e28c3f929dd9"
+  },
+  "src/Conjectures/LonelinessFiveFamily.lean": {
+    "bytes": 5823,
+    "sha256": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96"
+  },
+  "src/Conjectures/LonelinessMax.lean": {
+    "bytes": 8082,
+    "sha256": "db988be330f37e6ec119204b24738bc9daa7eff40f86bcd8845ce164612ec4b9"
+  },
+  "src/Conjectures/LonelinessPairBridge.lean": {
+    "bytes": 3130,
+    "sha256": "eb4326c07d8695b97b4874e08b15f902338491769d85f77a5b1bd926b09e5435"
+  },
+  "src/Conjectures/LonelinessSixProgression.lean": {
+    "bytes": 13785,
+    "sha256": "87356deb94b12b9b9872f97283080ac28a95a76c164ed7e8f445c10cc93070cb"
+  },
+  "src/Conjectures/LonelinessSixSpectrumArithmetic.lean": {
+    "bytes": 6460,
+    "sha256": "8faa8fea665b8e2d4673645eea5e3cecbe069bac66fb9c816be3d35c8c600774"
+  },
+  "src/Conjectures/LonelinessSixSpectrumRealization.lean": {
+    "bytes": 1636,
+    "sha256": "13cc983823bbea286c83191d9b131934bba7a4122b0d579db34ebd3bb646d55b"
+  },
+  "src/HigherSpectrumRealizationAudit.lean": {
+    "bytes": 6777,
+    "sha256": "4e9a6d630cd8a7ed44428f847de20cd5902c4901e1ce48bc72704398e6e82055"
+  }
+}

@@ -1039,6 +1039,7 @@ modules=(
   Conjectures.LonelinessModularTightPrimeDataThirteen
   Conjectures.LonelinessModularTightPrimeBounds
   Conjectures.LonelinessTightNormBounds
+  Conjectures.LonelinessSixSpectrumArithmetic
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.
