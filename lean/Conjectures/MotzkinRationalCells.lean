@@ -34,8 +34,10 @@ theorem realUnion_subset (A : Finset (ZMod N)) : realUnion A ⊆ Ico (0:ℝ) 1 :
   obtain ⟨j,_,hrj⟩ := Set.mem_iUnion₂.mp hr
   exact realCell_subset j hrj
 
+omit [NeZero N] in
 theorem measurable_realCell (j : ZMod N) : MeasurableSet (realCell j) := measurableSet_Ico
 
+omit [NeZero N] in
 theorem measurable_realUnion (A : Finset (ZMod N)) : MeasurableSet (realUnion A) :=
   A.measurableSet_biUnion (fun j _ => measurable_realCell j)
 
@@ -82,6 +84,7 @@ theorem realUnion_volume_real (A : Finset (ZMod N)) :
 theorem circleUnion_eq_liftSet (A : Finset (ZMod N)) :
     circleUnion A=liftSet (realUnion A) := image_eq_liftSet (realUnion_subset A)
 
+omit [NeZero N] in
 theorem circleUnion_eq_iUnion (A : Finset (ZMod N)) :
     circleUnion A=⋃ j ∈ A, ((↑):ℝ → UnitAddCircle) ''
       Ico ((j.val:ℝ)/(N:ℝ)) (((j.val:ℝ)+1)/(N:ℝ)) := by

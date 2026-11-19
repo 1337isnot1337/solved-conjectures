@@ -15,7 +15,8 @@ def residueScore (m k i y : ℕ) : ℕ :=
 theorem norm_fraction (N r : ℕ) (hN : 0 < N) (hr : r < N) :
     ‖(((r:ℝ)/(N:ℝ):ℝ):UnitAddCircle)‖=(min r (N-r):ℝ)/(N:ℝ) := by
   let _ : NeZero N := ⟨hN.ne'⟩
-  simpa only [ZMod.toAddCircle_natCast,Cyclic.folded,ZMod.val_natCast_of_lt hr]
+  simpa only [ZMod.toAddCircle_natCast,Cyclic.folded,ZMod.val_natCast_of_lt hr,
+    Nat.cast_min,Nat.cast_sub hr.le]
     using Cyclic.norm_toAddCircle (r:ZMod N)
 
 theorem fraction_eq_zero_iff (M q : ℕ) (hM : 0 < M) :
@@ -43,7 +44,7 @@ theorem residuePoint_relations (m k s i y : ℕ) (hm : 0 < m) (hk : 0 < k) :
       rw [← AddCircle.coe_nsmul,← AddCircle.coe_nsmul,← AddCircle.coe_add]
       congr 1
       simp only [nsmul_eq_mul,Nat.cast_add,Nat.cast_mul]
-      field_simp <;> ring
+      field_simp; ring
     rw [he,fraction_eq_zero_iff m (y+s*i) hm]
 
 theorem residuePoint_complete (m k s : ℕ) (hm : 0 < m) (hk : 0 < k)
@@ -81,7 +82,8 @@ theorem residuePoint_score (m k i y : ℕ) (hm : 0 < m) (hk : 0 < k)
   change min ‖(((i:ℝ)/(m:ℝ):ℝ):UnitAddCircle)‖
     ‖(((y:ℝ)/(m*k:ℕ):ℝ):UnitAddCircle)‖=_
   rw [he,norm_fraction (m*k) (k*i) hN hki,norm_fraction (m*k) y hN hy,
-    min_div_div_right (Nat.cast_nonneg (m*k)),residueScore,Nat.cast_min]
+    min_div_div_right (Nat.cast_nonneg (m*k))]
+  simp only [residueScore,Nat.cast_min,Nat.cast_sub hki.le,Nat.cast_sub hy.le]
 
 theorem residueScore_feasible (m k s i y : ℕ) (hi : i < m) (hy : y < m*k)
     (hdiv : m ∣ y+s*i) : Feasible m k s (residueScore m k i y) := by
@@ -124,8 +126,8 @@ theorem optimum_annihilator_maximum (m k s : ℕ) (hm : 0 < m) (hk : 0 < k) :
     obtain ⟨i',y',hi',hy',hdiv',he⟩ := residuePoint_complete m k s hm hk x' z' hx' hz'
     have hle := (optimum_spec m k s hm hk).2 _
       (residueScore_feasible m k s i' y' hi' hy' hdiv')
-    have hx'' := congrArg Prod.fst he
-    have hz'' := congrArg Prod.snd he
+    have hx'' : x' = (residuePoint m k i' y').1 := congrArg Prod.fst he
+    have hz'' : z' = (residuePoint m k i' y').2 := congrArg Prod.snd he
     rw [hx'',hz'',residuePoint_score m k i' y' hm hk hi' hy']
     exact (div_le_div_iff_of_pos_right hN).mpr (by exact_mod_cast hle)
 
