@@ -29,13 +29,13 @@ theorem recover_tagWidths (a b : ℕ) (parts : Multiset ℕ) :
   change ((parts.map (fun c => (b,c))).filter (fun p => p.1=a)).map Prod.snd = _
   by_cases h : b=a
   · subst b
-    simp [Multiset.filter_map,Function.comp_def]
-  · simp [Multiset.filter_map,Function.comp_def,h]
+    simp [Multiset.filter_map]
+  · simp [Multiset.filter_map,h]
 
 theorem recover_units (a n : ℕ) (ha : 1 < a) :
     recoverWidths a (Multiset.replicate n (1,1)) = 0 := by
   have hh := recover_tagWidths a 1 (Multiset.replicate n 1)
-  simpa only [tagWidths,Multiset.map_replicate,if_neg (ne_of_lt ha)] using hh
+  simpa only [tagWidths,Multiset.map_replicate,ite_eq_right (ne_of_lt ha)] using hh
 
 def familyBlocks (I : Finset ℕ) (parts : I → Multiset ℕ) : Multiset BlockType :=
   ∑ a : I, tagWidths a.val (parts a)
