@@ -1101,7 +1101,7 @@
     "Conjectures.FranklSpanFourResidualTailRank": "240e30bf1f24d69d15b855fecf6381f6e399e618b22e37accefe1ba11bf176ee",
     "Conjectures.FranklSpanFourWordCoverage": "eaddd5ba62a43980e76f23acff759a5d0deddc30360478d70b0ed74e5aea6d96",
     "Conjectures.FranklFamilyRelabel": "946c0b7b673ada160c4792e258175b8a1505d312f876c949e9459b9f578b31c0",
-    "Conjectures.FranklSpanFourGraphPacket": "1291ed16eca1f4f1ccb036adf4dfde6df06943206e1dd8daec488d1b4787947f",
+    "Conjectures.FranklSpanFourGraphPacket": "ec47adc8e6729aa419629576ffe34d2ee639b559cd6a8b00640db12bf4a545c0",
     "Conjectures.FranklSpanFourTheorem": "d14b96bf40ec609193e13853188fdbb6ac5821582bcfdc06b9971c6907ddc621"
   },
   "required_by_module": {

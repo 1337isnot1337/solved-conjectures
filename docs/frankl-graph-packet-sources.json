@@ -3,7 +3,7 @@
   "scope": "Install the fixed initial graph in an Assembly.Packet and reduce its complete Checked obligation to the four remaining concrete weight and residual checks. Candidate source; requires the integrated cyclic source, all-declaration audit, and stock-kernel gate.",
   "root": "Conjectures.FranklSpanFourGraphPacket",
   "sources": {
-    "lean/Conjectures/FranklSpanFourGraphPacket.lean": "1291ed16eca1f4f1ccb036adf4dfde6df06943206e1dd8daec488d1b4787947f"
+    "lean/Conjectures/FranklSpanFourGraphPacket.lean": "ec47adc8e6729aa419629576ffe34d2ee639b559cd6a8b00640db12bf4a545c0"
   },
   "direct_imports_sha256": {
     "Conjectures.FranklSpanFourGraphCertificate": "33589a10fbaf32c20e6c0804e340c4d419c0b2baf70897d38a8e06b2433d32aa",

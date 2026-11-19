@@ -23,16 +23,15 @@ def withGraph (P : Assembly.Packet) : Assembly.Packet :=
 
 theorem withGraph_states_checked (P : Assembly.Packet) :
     statesCheck (withGraph P) = true := by
-  change decide (∀ v : Word 6,
-    windowAdmissibleCheck 3 v = true → v ∈ Certificate.states) = true
-  exact decide_eq_true Certificate.states_cover
+  unfold statesCheck
+  apply decide_eq_true
+  exact Certificate.states_cover
 
 theorem withGraph_edges_checked (P : Assembly.Packet) :
     edgesCheck (withGraph P) = true := by
-  change decide (∀ v : Word 7,
-    wordPrefix v ∈ Certificate.states → wordSuffix v ∈ Certificate.states →
-    windowPairCheck v = false → v ∈ Certificate.edges) = true
-  exact decide_eq_true Certificate.edges_cover
+  unfold edgesCheck
+  apply decide_eq_true
+  exact Certificate.edges_cover
 
 theorem withGraph_pair_rank_checked (P : Assembly.Packet) :
     pairRankCheck (withGraph P) = true :=
