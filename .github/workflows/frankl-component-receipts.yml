@@ -9,6 +9,7 @@ on:
       - 'scripts/preserve_frankl_component_receipts.py'
   workflow_run:
     workflows:
+      - Lean Frankl boundary configuration and averaging
       - Lean Frankl boundary configuration fibers
       - Lean Frankl literal ten-point weight bridge
       - Lean Frankl actual tree configuration counts

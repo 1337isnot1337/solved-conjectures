@@ -1,0 +1,45 @@
+name: Lean Frankl boundary configuration and averaging
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-frankl-boundary-configurations.yml'
+      - 'scripts/verify_frankl_boundary_configurations.py'
+      - 'docs/frankl-boundary-configuration-helpers-sources.json'
+      - 'lean/Conjectures/FranklBoundaryConfigurations.lean'
+      - 'lean/Conjectures/FranklBoundaryConfigurationHelpers.lean'
+      - 'lean/Conjectures/FranklTreeConfigurationIso.lean'
+      - 'lean/Conjectures/FranklBoundaryAveraging.lean'
+      - 'lean/Conjectures/FranklBoundaryFibers.lean'
+      - 'lean/Conjectures/FranklTreeConfigurations.lean'
+      - 'lean/Conjectures/FranklTreeGluing.lean'
+      - 'lean/Conjectures/FranklTreeCounts.lean'
+      - 'lean/Conjectures/FranklIncidence.lean'
+
+permissions:
+  contents: read
+
+jobs:
+  boundary-configurations:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: false
+          test: false
+          lint: false
+      - name: Strict source, every owned declaration, exact stock kernel
+        run: python3 scripts/verify_frankl_boundary_configurations.py --jobs 4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frankl-boundary-configuration-helpers
+          path: .candidate-artifacts/frankl-boundary-configuration-helpers/
+          retention-days: 14

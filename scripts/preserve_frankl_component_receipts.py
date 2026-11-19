@@ -13,6 +13,8 @@ import verify_frankl_orbit_batches as short_gate
 from preserve_frankl_arithmetic_receipts import ROOT, REPO, api, request, require, sha, encoded, git_bytes
 
 PROFILES = {
+    "Lean Frankl boundary configuration and averaging": {
+        "inventory": "docs/frankl-boundary-configuration-helpers-sources.json", "group": "boundary-configuration-helpers"},
     "Lean Frankl boundary configuration fibers": {
         "inventory": "docs/frankl-boundary-fibers-sources.json", "group": "boundary-fibers"},
     "Lean Frankl literal ten-point weight bridge": {

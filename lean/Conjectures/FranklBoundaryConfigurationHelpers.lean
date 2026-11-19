@@ -1,0 +1,5 @@
+module
+
+public import Conjectures.FranklBoundaryConfigurations
+public import Conjectures.FranklTreeConfigurationIso
+public import Conjectures.FranklBoundaryAveraging
