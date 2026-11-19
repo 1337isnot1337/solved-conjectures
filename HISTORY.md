@@ -1,5 +1,10 @@
 # History
 
+## 2026-11-19 — Actual Legendre-pair construction and quotient transport
+
+Registered the matrix constructed from an actual Legendre pair, including the order-2396 specialization, and the actual invariant quotient/layer data used to exclude order 27. Their exact closures passed all three gates: construction, five modules and 87 project theorems; quotient transport, eighteen modules and 353 project theorems. Eight previously unregistered modules and thirteen named endpoints were added. The full finite no-lift certificate and final multiplier bound of nine remain pending.
+[Statements and receipts](docs/lean-status.md#actual-legendre-pair-matrix-and-quotient-transport).
+
 ## 2026-11-19 — Complete Erdős 607 line-size asymptotic
 
 Registered the sharp asymptotic for the actual real-plane record count, with

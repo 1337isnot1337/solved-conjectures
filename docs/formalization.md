@@ -620,3 +620,13 @@ The exact unchanged receipts are archived after comparison of all 93 recorded
 paths. This registers 44 proof modules and 20 required endpoints, for
 878 accepted proof modules plus two roots. [Exact statement and receipts](lean-status.md#complete-erdős-607-line-size-asymptotic).
 The full merged gate remains separate. Li remains last.
+
+
+## Actual Legendre-pair matrix and quotient transport
+
+The actual two-row construction is checked for every finite abelian group: a Legendre pair yields a sign matrix of order twice the group cardinality plus two, with the required Hadamard Gram identity. In particular, a length-1197 pair yields an actual order-2396 Hadamard matrix. The proof derives the row-sum normalization internally.
+
+The quotient transport is also checked. From the actual centered rows and an order-27 subgroup of common multipliers, Lean derives the order-133 quotient rows, their bounds, weighted sums and correlations, and the order-21 layer constraints used by the finite no-lift argument. No abstract quotient-data certificate is assumed. The final exclusion of order 27 and the sharper multiplier bound of nine remain pending the complete finite certificate and final assembly.
+
+Both exact closures at `20e04e589d227086cc926579fc70806594d8f817` passed strict source checks with warnings treated as errors, the standard-axiom whitelist audit, and independent pinned-kernel replay. The 29 distinct source, verification-script, workflow and toolchain-pin paths in the two receipts were checked against current main before registration. 8 previously unregistered proof modules and 13 named endpoints are added; the accepted prebuild list grows from 878 to 886 proof modules, plus the two roots. Verification of the merged accepted package remains a separate gate.
+[Exact endpoints and receipts](lean-status.md#actual-legendre-pair-matrix-and-quotient-transport).

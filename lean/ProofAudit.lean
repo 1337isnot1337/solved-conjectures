@@ -9,6 +9,19 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `HadamardLegendre.convolution_commute,
+    `HadamardLegendre.convolution_normal,
+    `HadamardLegendre.pair_convolution_gram,
+    `HadamardLegendre.twoRowCore_gram,
+    `HadamardLegendre.twoRowMatrix_sign,
+    `HadamardLegendre.twoRowMatrix_gram,
+    `HadamardLegendre.twoRowMatrix_isHadamard,
+    `HadamardLegendre.exists_hadamard_of_legendre_pair,
+    `HadamardLegendre.exists_hadamard_2396_of_legendre_pair,
+    `HadamardLegendre.quotientRows133_squareInvariant,
+    `HadamardLegendre.quotientLayers133_squareInvariant,
+    `HadamardLegendre.quotientData133_of_compressed_invariance,
+    `HadamardLegendre.quotientData133_of_fixed_card27,
     `LineSize.Generating.hasSeriesValue_geometric,
     `LineSize.Generating.summable_gaussianWeight,
     `LineSize.Generating.summable_coreMatrix,
