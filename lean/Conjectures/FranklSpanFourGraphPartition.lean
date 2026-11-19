@@ -44,7 +44,8 @@ theorem entriesCheck_lookup {table : Table} {predicate : ℕ → ℕ → Bool}
       · by_cases heq : a = key
         · subst a
           have hvalue : val = value := Option.some.inj (by
-            simpa only [lookup, ite_eq_right hlt, ite_eq_left rfl] using hl)
+            rw [lookup, ite_eq_right hlt, ite_eq_left (Eq.refl key)] at hl
+            exact hl)
           simpa only [hvalue] using hkey
         · apply ihRight hright
           simpa only [lookup, ite_eq_right hlt, ite_eq_right heq] using hl

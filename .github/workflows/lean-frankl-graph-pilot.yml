@@ -127,6 +127,8 @@ jobs:
         if: always()
         with:
           name: frankl-initial-graph-pilot
-          path: .candidate-artifacts/frankl-graph-pilot*/
-          if-no-files-found: warn
+          path: |
+            .candidate-artifacts/frankl-graph-pilot/
+            .candidate-artifacts/frankl-graph-pilot-reproduction/
+          if-no-files-found: error
           retention-days: 14
