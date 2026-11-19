@@ -31,6 +31,10 @@ from build_lean_parallel import (
 from replay_lean import MODULE, PROJECT_NAMESPACES
 
 CHECKER_SHA256 = "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
+# Pinned EmitC calls lean_run_main: one OS launcher joins one Lean main
+# thread, in addition to the ordinary task pool. Worker tasks on this
+# checker path run synchronous imports/replay; any further growth is rejected.
+RUNTIME_CONTROL_THREADS = 2
 
 
 def name_is_prefix(prefix, module):
@@ -112,7 +116,7 @@ def run_checker(command, *, lean, env, log, workers, memory_limit_mib,
     if metrics is None:
         metrics = {}
     metrics.update(sampled_peak_rss_kib=0, sampled_peak_high_water_kib=0,
-                   sampled_peak_threads=0, sampled_peak_processes=0, thread_limit=workers + 1)
+                   sampled_peak_threads=0, sampled_peak_processes=0, thread_limit=workers + RUNTIME_CONTROL_THREADS)
     started = time.monotonic()
     with log.open("w", encoding="utf-8") as stream:
         process = subprocess.Popen(command, cwd=lean, env=env, stdout=stream,
@@ -127,8 +131,8 @@ def run_checker(command, *, lean, env, log, workers, memory_limit_mib,
                 metrics["sampled_peak_processes"] = max(metrics["sampled_peak_processes"], stats["processes"])
                 if stats["processes"] > 1:
                     raise RuntimeError("Stock checker unexpectedly spawned a child process")
-                if stats["threads"] > workers + 1:
-                    raise RuntimeError(f"Stock checker exceeded the {workers + 1}-thread guard")
+                if stats["threads"] > workers + RUNTIME_CONTROL_THREADS:
+                    raise RuntimeError(f"Stock checker exceeded the {workers + RUNTIME_CONTROL_THREADS}-thread guard")
                 if stats["rss_kib"] > memory_limit_mib * 1024:
                     raise RuntimeError(f"Stock checker exceeded the {memory_limit_mib} MiB RSS guard")
                 if time.monotonic() - started > timeout_seconds:
@@ -219,12 +223,15 @@ def main(argv=None):
                     head=head, modules=graph, inputs=inputs, artifacts=artifacts)
             env = os.environ.copy()
             env["LEAN_NUM_THREADS"] = str(args.workers)
+            env["LEAN_MAIN_USE_THREAD"] = "1"
             env["LEAN_PATH"] = staged_search_path(lean, objects, staged, env.get("LEAN_PATH", ""))
             command = [str(checker), "-v", *prefixes]
             stdbuf = shutil.which("stdbuf")
             if stdbuf:
                 command = [stdbuf, "-oL", "-eL", *command]
-            receipt["environment"] = {"LEAN_NUM_THREADS": env["LEAN_NUM_THREADS"], "LEAN_PATH": env["LEAN_PATH"]}
+            receipt["environment"] = {
+                "LEAN_NUM_THREADS": env["LEAN_NUM_THREADS"],
+                "LEAN_MAIN_USE_THREAD": env["LEAN_MAIN_USE_THREAD"], "LEAN_PATH": env["LEAN_PATH"]}
             assert_inputs(repo, inputs, head)
             assert_artifacts(lean, objects, staged, artifacts)
             print(json.dumps({"phase": "kernel", "modules": len(graph), "workers": args.workers,

@@ -10,9 +10,9 @@
     },
     {
       "path": "scripts/replay_lean_parallel.py",
-      "blob_sha": "2c120d86924f601ea7f7979596de85f87498ef73",
-      "sha256": "4bcd8ad7a5a489ae319b532c0dcef6b7ba752463367c947224e459b02f2bf56b",
-      "characters": 13972
+      "blob_sha": "58796b846f8ed7476f7545b0451b635ba5dcd910",
+      "sha256": "31d44eab2e825dfb18b3fbecd1b21655210141eaf30093bf473c630d0499c69f",
+      "characters": 14419
     },
     {
       "path": "scripts/test_lean_parallel.py",
@@ -72,7 +72,7 @@
   },
   "limitations": [
     "No local runtime is currently available.",
-    "The 22 protocol/process tests and fresh seven-module source fixture passed in prior hosted attempts on unchanged scheduler helper bytes.",
+    "The 22 protocol/process tests and fresh seven-module source fixture passed in prior hosted attempts. The corrected two-control-thread bound requires fresh execution with the same test suite.",
     "Prior hosted attempts failed at mixed legacy/modern audit imports before kernel replay; this corrected audit partition still requires fresh hosted validation.",
     "The wrappers are opt-in candidates and do not replace the accepted gate."
   ],
@@ -86,5 +86,36 @@
     ],
     "reason": "Modern import-all auditing and legacy-root auditing require separate Lean module modes; ownership is partitioned exactly and endpoint sets are recombined without duplicates.",
     "layout_root": "Retain the configured fixture-only ProofAudit.lean root importing both project roots, while separately executing and freezing modern and legacy all-owned audits."
+  },
+  "runtime_thread_accounting": {
+    "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "control_threads": 2,
+    "fixed_environment": {
+      "LEAN_MAIN_USE_THREAD": "1"
+    },
+    "guard": "requested ordinary task workers + two control threads; reject any additional threads or any child process",
+    "reason": "Generated C main calls lean_run_main. The runtime starts the Lean main function on a separate stack-managed thread and joins it from the OS launcher. The checker schedules default-priority replay tasks, and waits for them from the Lean main thread.",
+    "sources": [
+      {
+        "path": "src/runtime/thread.cpp",
+        "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/src/runtime/thread.cpp",
+        "sha256": "da93387e057790e22afed42f1fea98a99d020af29a6fff28496137e6d089256b"
+      },
+      {
+        "path": "src/runtime/object.cpp",
+        "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/src/runtime/object.cpp",
+        "sha256": "1dba3476a698ab05f8f0a56c323487755790675046e90219218cb9727658ead4"
+      },
+      {
+        "path": "src/Lean/Compiler/LCNF/EmitC.lean",
+        "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/src/Lean/Compiler/LCNF/EmitC.lean",
+        "sha256": "fb2069c82c5f874a41ce791a6a4e1ab9060fbbe4b178a8d7691f11c579f7317b"
+      },
+      {
+        "path": "src/Init/System/IO.lean",
+        "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/src/Init/System/IO.lean",
+        "sha256": "409886ee25dd6ee5455dbb83269edbef98012dd22c5b6c45198b47514aeaca25"
+      }
+    ]
   }
 }
