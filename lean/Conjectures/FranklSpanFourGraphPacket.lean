@@ -21,17 +21,29 @@ def withGraph (P : Assembly.Packet) : Assembly.Packet :=
     rankPair := Certificate.rankPair
     rank4 := Certificate.rank4 }
 
+/-- Keep the generic decision procedure abstract while applying a proved
+coverage statement to a concrete packet. -/
+private theorem statesCheck_of_cover (Q : Assembly.Packet)
+    (h : ∀ v : Word 6, windowAdmissibleCheck 3 v = true → v ∈ Q.states) :
+    statesCheck Q = true := by
+  unfold statesCheck
+  exact decide_eq_true h
+
+private theorem edgesCheck_of_cover (Q : Assembly.Packet)
+    (h : ∀ v : Word 7,
+      wordPrefix v ∈ Q.states → wordSuffix v ∈ Q.states →
+      windowPairCheck v = false → v ∈ Q.edges) :
+    edgesCheck Q = true := by
+  unfold edgesCheck
+  exact decide_eq_true h
+
 theorem withGraph_states_checked (P : Assembly.Packet) :
     statesCheck (withGraph P) = true := by
-  unfold statesCheck
-  apply decide_eq_true
-  exact Certificate.states_cover
+  exact statesCheck_of_cover (withGraph P) Certificate.states_cover
 
 theorem withGraph_edges_checked (P : Assembly.Packet) :
     edgesCheck (withGraph P) = true := by
-  unfold edgesCheck
-  apply decide_eq_true
-  exact Certificate.edges_cover
+  exact edgesCheck_of_cover (withGraph P) Certificate.edges_cover
 
 theorem withGraph_pair_rank_checked (P : Assembly.Packet) :
     pairRankCheck (withGraph P) = true :=
