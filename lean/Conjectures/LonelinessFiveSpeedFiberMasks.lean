@@ -42,15 +42,15 @@ theorem rowMask_testBit (p : ℕ) (G : ℕ → ℕ) (t : ℕ) (row : FiberRow)
     rw [he]
     simp only [rowMask, hc, ↓reduceIte]
     by_cases hg : goodCheck p t row.offset = true
-    · rw [if_pos hg, fullMask_testBit]
+    · rw [ite_eq_left hg, fullMask_testBit]
       simp only [hz, decide_true, true_iff]
       exact (goodCheck_iff p t row.offset).mp hg
-    · rw [if_neg hg]
+    · rw [ite_eq_right hg]
       simp only [Nat.zero_testBit, Bool.false_eq_true, false_iff]
       exact fun hh => hg ((goodCheck_iff p t row.offset).mpr hh)
   · have hi := rowCheck_nonzero p row hc hrow
     have hu : t * row.slope % p < p := Nat.mod_lt _ hp
-    rw [rowMask, if_neg hc, rotateRight_testBit p _ _ z hz,
+    rw [rowMask, ite_eq_right hc, rotateRight_testBit p _ _ z hz,
       (hG _ hu).2 _ (Nat.mod_lt _ hp)]
     exact good_congr (affine_inverse_mod p t row.slope row.offset row.inverse z hi)
 

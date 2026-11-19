@@ -48,7 +48,7 @@ theorem signedRepresentative_recover (p K a : ℕ) (hp : 0 < p) (hK : 2 * K < p)
   · have hrem : y % (p : ℤ) = y := Int.emod_eq_of_lt hy0 (by omega)
     rw [hrem] at hncast
     have hhalf : 2 * (a % p) ≤ p := by omega
-    simp only [signedRepresentative, if_pos hhalf]
+    simp only [signedRepresentative, ite_eq_left hhalf]
     exact hncast.symm
   · have hrem : y % (p : ℤ) = y + (p : ℤ) := by
       have h := Int.emod_eq_of_lt
@@ -56,7 +56,7 @@ theorem signedRepresentative_recover (p K a : ℕ) (hp : 0 < p) (hK : 2 * K < p)
       simpa only [Int.add_emod_right] using h
     rw [hrem] at hncast
     have hhalf : ¬2 * (a % p) ≤ p := by omega
-    simp only [signedRepresentative, if_neg hhalf]
+    simp only [signedRepresentative, ite_eq_right hhalf]
     omega
 
 /-- A residue has at most one representative satisfying the prescribed bound. -/

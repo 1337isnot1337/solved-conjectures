@@ -82,6 +82,149 @@
       "source_after_sha256": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
       "source_before_sha256": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
       "theorem_statements_changed": false
+    },
+    {
+      "changes": [
+        "Replace only the named deprecated aliases using the pinned compiler replacements already reported for RootMaskScan; preserve argument order and other proof text."
+      ],
+      "diagnostic_basis_job_id": 135579896794,
+      "diagnostic_basis_run_id": 44529831695,
+      "kind": "established_alias_compatibility_batch",
+      "module": "Conjectures.HaralambisCounting",
+      "replacements": [
+        {
+          "from": [
+            "if_pos",
+            "if_neg"
+          ],
+          "line": 50,
+          "to": [
+            "ite_eq_left",
+            "ite_eq_right"
+          ]
+        },
+        {
+          "from": [
+            "if_neg"
+          ],
+          "line": 51,
+          "to": [
+            "ite_eq_right"
+          ]
+        }
+      ],
+      "site_diagnostics_executed_before_edit": false,
+      "source_after_sha256": "b315781d9fed35b6490547c52ba416033d8fa1ce74e234d1ca75c1c08947165f",
+      "source_before_sha256": "fb8af1e529c3e459835eae9f1e6b3fffd11cf2228d0ac5a59f97933c4ceb3519",
+      "theorem_statements_changed": false
+    },
+    {
+      "changes": [
+        "Replace only the named deprecated aliases using the pinned compiler replacements already reported for RootMaskScan; preserve argument order and other proof text."
+      ],
+      "diagnostic_basis_job_id": 135579896794,
+      "diagnostic_basis_run_id": 44529831695,
+      "kind": "established_alias_compatibility_batch",
+      "module": "Conjectures.LonelinessFiveSpeedBoundedSlopeRecovery",
+      "replacements": [
+        {
+          "from": [
+            "if_pos"
+          ],
+          "line": 51,
+          "to": [
+            "ite_eq_left"
+          ]
+        },
+        {
+          "from": [
+            "if_neg"
+          ],
+          "line": 59,
+          "to": [
+            "ite_eq_right"
+          ]
+        }
+      ],
+      "site_diagnostics_executed_before_edit": false,
+      "source_after_sha256": "759e932c27aeb428ae76b5de0e792651f66a3f8695c29f97d5e5e458791f0ad9",
+      "source_before_sha256": "16bce98947ab52954f2b4fc9ffff55f89f619223852ecefe4f6c1e7abd8a8feb",
+      "theorem_statements_changed": false
+    },
+    {
+      "changes": [
+        "Replace only the named deprecated aliases using the pinned compiler replacements already reported for RootMaskScan; preserve argument order and other proof text."
+      ],
+      "diagnostic_basis_job_id": 135579896794,
+      "diagnostic_basis_run_id": 44529831695,
+      "kind": "established_alias_compatibility_batch",
+      "module": "Conjectures.LonelinessFiveSpeedFiberMasks",
+      "replacements": [
+        {
+          "from": [
+            "if_pos"
+          ],
+          "line": 45,
+          "to": [
+            "ite_eq_left"
+          ]
+        },
+        {
+          "from": [
+            "if_neg"
+          ],
+          "line": 48,
+          "to": [
+            "ite_eq_right"
+          ]
+        },
+        {
+          "from": [
+            "if_neg"
+          ],
+          "line": 53,
+          "to": [
+            "ite_eq_right"
+          ]
+        }
+      ],
+      "site_diagnostics_executed_before_edit": false,
+      "source_after_sha256": "529f72684faf311359fc2793bdf29483460f4389638de584404e1481ce506735",
+      "source_before_sha256": "861b7c80f3147bca2a74099ae66d9ccb0e4593d590815dd362bb04517eb955ff",
+      "theorem_statements_changed": false
+    },
+    {
+      "changes": [
+        "Replace only the named deprecated aliases using the pinned compiler replacements already reported for RootMaskScan; preserve argument order and other proof text."
+      ],
+      "diagnostic_basis_job_id": 135579896794,
+      "diagnostic_basis_run_id": 44529831695,
+      "kind": "established_alias_compatibility_batch",
+      "module": "Conjectures.LonelinessFiveSpeedScalarTree",
+      "replacements": [
+        {
+          "from": [
+            "if_pos"
+          ],
+          "line": 44,
+          "to": [
+            "ite_eq_left"
+          ]
+        },
+        {
+          "from": [
+            "if_neg"
+          ],
+          "line": 46,
+          "to": [
+            "ite_eq_right"
+          ]
+        }
+      ],
+      "site_diagnostics_executed_before_edit": false,
+      "source_after_sha256": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1",
+      "source_before_sha256": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+      "theorem_statements_changed": false
     }
   ],
   "helper_sha256": {
@@ -7607,7 +7750,7 @@
   "source_sha256": {
     "Conjectures.BinaryAutomata": "d98fb10dfc3525d4a892cc356a2c483b64ff64cd65147e27d1e7397a2115b57a",
     "Conjectures.FiniteCertificate": "7c65b844602a0d59e3087b0aeee98930c92d2b44adcc9f6543e4c98315bc225f",
-    "Conjectures.HaralambisCounting": "fb8af1e529c3e459835eae9f1e6b3fffd11cf2228d0ac5a59f97933c4ceb3519",
+    "Conjectures.HaralambisCounting": "b315781d9fed35b6490547c52ba416033d8fa1ce74e234d1ca75c1c08947165f",
     "Conjectures.HaralambisDefects": "e97a0a15cbcbfc7962aaac1409051fed8b363f1475b728d20f61117cc363e9c3",
     "Conjectures.HaralambisDensity": "6f5c1d408c7e017f5c1bb60d832a8a566267f137c932498df0826f6a35e1ab25",
     "Conjectures.HaralambisFaces": "bb71842e0b01a8975d847e8011c72e25e6f171f5aecba2865a9f1497caf0aedd",
@@ -7802,12 +7945,12 @@
     "Conjectures.LonelinessFiveSpeedBoundedMap163": "ae322bbd37ac1da28db8a3991a9678eb567116fcc3d8edd6cd6afe8052ce87f4",
     "Conjectures.LonelinessFiveSpeedBoundedMaps": "436e262075ceb631923bc0bad3888123a81096543875146b4775e4cd23fb27a5",
     "Conjectures.LonelinessFiveSpeedBoundedSlope": "fd5d181339d26db98f45941439d0d347f3f508e36b7d11ca0b7b1924b836e54a",
-    "Conjectures.LonelinessFiveSpeedBoundedSlopeRecovery": "16bce98947ab52954f2b4fc9ffff55f89f619223852ecefe4f6c1e7abd8a8feb",
+    "Conjectures.LonelinessFiveSpeedBoundedSlopeRecovery": "759e932c27aeb428ae76b5de0e792651f66a3f8695c29f97d5e5e458791f0ad9",
     "Conjectures.LonelinessFiveSpeedCanonicalImage": "21520e7993554674ec77099b87baf1e2c911072b9f886ccaad707fc637193861",
     "Conjectures.LonelinessFiveSpeedClassificationCore": "fefadf5e54c3a78e823d3f263b2eb14bec26507db305f7d0aad98265e0b8879c",
     "Conjectures.LonelinessFiveSpeedCriticalCheck": "2afef774238e4afaf65a883c356020f0dbbd56c4b6e1f9ef9cd45768e101726a",
     "Conjectures.LonelinessFiveSpeedFamilyCutoff": "99321a69b6ee5b5756dd80a2880e193cfe65d360a7fe2705faac85d8b1cdbac7",
-    "Conjectures.LonelinessFiveSpeedFiberMasks": "861b7c80f3147bca2a74099ae66d9ccb0e4593d590815dd362bb04517eb955ff",
+    "Conjectures.LonelinessFiveSpeedFiberMasks": "529f72684faf311359fc2793bdf29483460f4389638de584404e1481ce506735",
     "Conjectures.LonelinessFiveSpeedFiniteAssembly": "97bc500d9b9e37531ddb7be0bb3a76025aa2ea0ff8d9103792920d24efc74ad1",
     "Conjectures.LonelinessFiveSpeedGeometricMask": "9f497afae28f0eec972aed194ed0eb4459adb4e554bc92a0152a5c4bed6c615b",
     "Conjectures.LonelinessFiveSpeedLineReduction": "f74ce94683d1e639b4e7ec7470d6803fb660fe0bc24f5474bef937a019afdf7d",
@@ -7839,7 +7982,7 @@
     "Conjectures.LonelinessFiveSpeedRootMaskScan": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
     "Conjectures.LonelinessFiveSpeedScalarInverse": "e53014e202c3646a680aca4f42bb32b0b8883e88134927fe9a40bfb81340e477",
     "Conjectures.LonelinessFiveSpeedScalarTable": "b780be1150c67c5943e45b9c7314debb835568be12e0e251a1c0585320945965",
-    "Conjectures.LonelinessFiveSpeedScalarTree": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+    "Conjectures.LonelinessFiveSpeedScalarTree": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1",
     "Conjectures.LonelinessFiveSpeedScalarTreeMask1009": "4da9714de386c1d169f028c4de66935a1dd3dcc810698eb42a68a8520eb85a25",
     "Conjectures.LonelinessFiveSpeedScalarTreeMask1013": "e98c386a4ea9df262ae4fc65c306961658d8a42baa7d4b7552fa20e5f4a17796",
     "Conjectures.LonelinessFiveSpeedSporadic": "bafe0cc6b98c3f2ff6a229b88f8838172c0fc75cfabc8c9dc9808505a48bc985",

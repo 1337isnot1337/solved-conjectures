@@ -47,8 +47,8 @@ theorem occupancy_avoids {d : Fin 3 → ℕ} {A : Set ℤ}
   by_cases ht : (t : ℤ) ∈ A
   · have hnt : ((t + d i : ℕ) : ℤ) ∉ A := by
       simpa only [Nat.cast_add] using hn ht
-    simp only [occupancy, if_pos ht, if_neg hnt, add_zero, le_refl]
-  · simp only [occupancy, if_neg ht, zero_add]
+    simp only [occupancy, ite_eq_left ht, ite_eq_right hnt, add_zero, le_refl]
+  · simp only [occupancy, ite_eq_right ht, zero_add]
     split_ifs <;> omega
 
 noncomputable def pairCount (d : Fin 3 → ℕ) (A : Set ℤ) (i j : Fin 3) : ℕ :=
