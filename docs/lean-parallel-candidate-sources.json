@@ -10,9 +10,9 @@
     },
     {
       "path": "scripts/replay_lean_parallel.py",
-      "blob_sha": "ed18e81374d3eaa184d1756ba5d7d9a795def08e",
-      "sha256": "1ae5adc0a06250d422de77b7625ea3de3635a4d8027d388fc086b59f437ec929",
-      "characters": 17129
+      "blob_sha": "555e739fdf8167fd6cdb667e28b035252f25e984",
+      "sha256": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225",
+      "characters": 17382
     },
     {
       "path": "scripts/test_lean_parallel.py",
@@ -43,7 +43,8 @@
     "Reject partial .olean.server/.olean.private facet pairs for legacy and modern sources.",
     "Record the resolved Lean compiler binary, not only Lake/elan.",
     "Discover descendants from every /proc/PID/task/*/children entry.",
-    "Bind LEAN_SYSROOT to the checked compiler distribution so stock findSysroot does not launch a child and dedicated IO reader."
+    "Bind LEAN_SYSROOT to the checked compiler distribution so stock findSysroot does not launch a child and dedicated IO reader.",
+    "Set the supported libuv UV_USE_IO_URING=0 switch to avoid the kernel SQPOLL helper, retaining the strict worker-plus-three thread guard."
   ],
   "unchanged": [
     "scripts/verify_lean.sh",
@@ -73,8 +74,8 @@
   },
   "limitations": [
     "No local runtime is currently available.",
-    "The 22 protocol/process tests, fresh seven-module Lean source fixture, and both all-owned audit partitions passed in run 44515276881. Its first kernel measurement was rejected after observing five OS threads with a four-thread limit.",
-    "This revision binds the checked system root to avoid the stock findSysroot child/IO task. It preserves the same three-runtime-thread overhead and requires fresh hosted validation at 1, 2, 3, and 4 requested workers.",
+    "The 22 protocol/process tests, fresh seven-module Lean source fixture, and both all-owned audit partitions passed in run 44516414765. Its first kernel measurement was rejected after observing five OS threads with a four-thread limit.",
+    "This revision disables the identified libuv io_uring kernel helper using the pinned library's supported environment switch. It preserves the same three-runtime-thread overhead and requires fresh hosted validation at 1, 2, 3, and 4 requested workers.",
     "The wrappers are opt-in candidates and do not replace the accepted gate."
   ],
   "workflow": ".github/workflows/lean-parallel-candidate.yml",
@@ -95,7 +96,8 @@
     "control_threads": 3,
     "fixed_environment": {
       "LEAN_MAIN_USE_THREAD": "1",
-      "LEAN_SYSROOT": "${verified_compiler_prefix}"
+      "LEAN_SYSROOT": "${verified_compiler_prefix}",
+      "UV_USE_IO_URING": "0"
     },
     "guard": "requested ordinary task workers + three runtime threads (OS launcher, Lean main, libuv event loop); reject any additional threads or any child process",
     "reason": "Generated C main calls lean_run_main. The runtime starts the Lean main function on a separate stack-managed thread and joins it from the OS launcher. Runtime initialization also starts a persistent libuv event-loop thread before Lean main. The checker schedules default-priority replay tasks, and waits for them from the Lean main thread. The total sampled guard remains strict and rejects any extra compensating worker threads.",
@@ -139,6 +141,16 @@
         "path": "src/Lean/Util/Path.lean",
         "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/src/Lean/Util/Path.lean",
         "sha256": "52cf9aa41a82db18d0d3c93bf6257d064f773af9e62b8b43be89ce1b0e00055f"
+      },
+      {
+        "path": "flake.nix",
+        "url": "https://github.com/leanprover/lean4/blob/eb6cafb7290e8bd5f2937522d8d804f58f02bafc/flake.nix",
+        "sha256": "a652d98a19b4b82cca644214ab0e6d6439defe0e8c5a91a3cf9ea1c9c7e8c1d0"
+      },
+      {
+        "path": "libuv/src/unix/linux.c",
+        "url": "https://github.com/libuv/libuv/blob/v1.48.0/src/unix/linux.c",
+        "sha256": "49c580568444b3da02f11ef63c7881afbe6f6f304f1414da55e80c217261c9ce"
       }
     ],
     "observed_prior_failure": {
@@ -154,9 +166,9 @@
     },
     "sysroot_binding": "Use the validated source receipt's compiler prefix (or the pinned checker's adjacent compiler for a standalone kernel phase); require the same pinned checker in that distribution and Init.olean. Record and recheck both compiler and checker hashes. Keep the three-runtime-thread overhead and all process/RSS limits unchanged.",
     "observed_latest_failure": {
-      "run_id": 44515276881,
-      "job_id": 135529593443,
-      "head_sha": "3411dd08b4654b2c9947634fb953743128a5654b",
+      "run_id": 44516414765,
+      "job_id": 135533445926,
+      "head_sha": "19322bfca5e2051669a41b72d91feb7ca025f888",
       "fixture_source": "passed",
       "fixture_modern_audit": "passed",
       "fixture_legacy_audit": "passed",
@@ -164,7 +176,11 @@
       "observed_threads": 5,
       "thread_guard": 4,
       "status": "failed",
-      "reason": "Still unexplained excess at the first guarded kernel process. Source inspection additionally identifies the implicit findSysroot child/IO task. The next candidate binds that sysroot explicitly and captures per-thread wait channels if excess persists; it does not increase the guard."
+      "identified_extra_thread": {
+        "name": "iou-sqp-10278",
+        "wait_channel": "io_sq_thread"
+      },
+      "reason": "The OS thread inventory identifies a kernel io_uring SQPOLL helper, in addition to the three userspace runtime threads and one proof worker. The pinned release uses libuv 1.48.0, whose UV_USE_IO_URING=0 switch disables this helper without changing the checker or increasing its thread guard."
     }
   }
 }

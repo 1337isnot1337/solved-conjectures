@@ -36,6 +36,8 @@ CHECKER_SHA256 = "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbadd
 # runtime/libuv.cpp starts one persistent event-loop lthread. These three
 # runtime threads are additional to the ordinary task pool. Any further
 # growth (including compensating task threads) is rejected by this guard.
+# The pinned Linux distribution uses libuv 1.48.0. Its documented environment
+# switch UV_USE_IO_URING=0 disables the extra kernel SQPOLL helper thread.
 RUNTIME_CONTROL_THREADS = 3
 
 
@@ -266,6 +268,7 @@ def main(argv=None):
             env["LEAN_NUM_THREADS"] = str(args.workers)
             env["LEAN_MAIN_USE_THREAD"] = "1"
             env["LEAN_SYSROOT"] = str(sysroot)
+            env["UV_USE_IO_URING"] = "0"
             env["LEAN_PATH"] = staged_search_path(lean, objects, staged, env.get("LEAN_PATH", ""))
             command = [str(checker), "-v", *prefixes]
             stdbuf = shutil.which("stdbuf")
@@ -274,7 +277,8 @@ def main(argv=None):
             receipt["environment"] = {
                 "LEAN_NUM_THREADS": env["LEAN_NUM_THREADS"],
                 "LEAN_MAIN_USE_THREAD": env["LEAN_MAIN_USE_THREAD"],
-                "LEAN_SYSROOT": env["LEAN_SYSROOT"], "LEAN_PATH": env["LEAN_PATH"]}
+                "LEAN_SYSROOT": env["LEAN_SYSROOT"],
+                "UV_USE_IO_URING": env["UV_USE_IO_URING"], "LEAN_PATH": env["LEAN_PATH"]}
             assert_inputs(repo, inputs, head)
             assert_artifacts(lean, objects, staged, artifacts)
             print(json.dumps({"phase": "kernel", "modules": len(graph), "workers": args.workers,
