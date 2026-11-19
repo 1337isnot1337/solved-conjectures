@@ -11,7 +11,7 @@ open Loneliness.SubspaceDensity
 
 noncomputable section
 
-variable {ι : Type*} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+variable {ι : Type*} [Fintype ι] [Nonempty ι]
 
 private theorem continuous_torus_point : Continuous (torusPointClearance (ι := ι)) := by
   unfold torusPointClearance

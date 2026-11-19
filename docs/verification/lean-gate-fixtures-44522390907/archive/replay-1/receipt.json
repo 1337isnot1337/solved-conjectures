@@ -1,0 +1,103 @@
+{
+  "all_frozen_hashes_unchanged": true,
+  "artifact_sha256": {
+    "Conjectures.ExtensionBad": {
+      ".olean": "fd79bb3682daa5c7ad9f9761c142deadcd1c06f3457f30582332196a4fcaffa8",
+      ".olean.private": "11cef7c27fe5e4a5476aab5fad2b1b5844a780d28f5044e649a5cde659066b75",
+      ".olean.server": "35dbe0b012220860f98e7d0db0a879c19fb4537781c1d441d5519bc0084d26f4"
+    },
+    "Conjectures.ExtensionDependency": {
+      ".olean": "55b1114bf7ac589e27389f1a9143ef7dc1f154fbb2a4927d92c5f8e3902a19ed",
+      ".olean.private": "030f9c8487271247021bc3df192ff47d5ce8d8bb3996c6360e40c7619033d0b4",
+      ".olean.server": "82690b365681086e30ef1e5ae635c9c5f5ef5d83140b4aa0c47c60b97cdae3d8"
+    },
+    "Conjectures.ExtensionGood": {
+      ".olean": "e8df5c473cf5f956f3965aca099db9278afb611e61008b3bd0388091da90dcee",
+      ".olean.private": "c9bff34ad3c39897b9ccd0eaacbbed681efafc119cb7f6dd7e1758bd6254fc83",
+      ".olean.server": "6467361d6773e8e799d9c812d21680c2cc04980bcfadf329f2c25099c57da10c"
+    }
+  },
+  "checker_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+  "checker_prefixes": [
+    "Conjectures"
+  ],
+  "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+  "child_maxrss_kib": 963380,
+  "claims_axiom_audit": false,
+  "claims_source_check": false,
+  "elapsed_seconds": 7.192142608000012,
+  "environment": {
+    "LEAN_MAIN_USE_THREAD": "1",
+    "LEAN_NUM_THREADS": "1",
+    "LEAN_PATH": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-owned-extension/replay-1/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean",
+    "LEAN_SYSROOT": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0",
+    "UV_USE_IO_URING": "0"
+  },
+  "exact_replay_set": [
+    "Conjectures.ExtensionBad",
+    "Conjectures.ExtensionDependency",
+    "Conjectures.ExtensionGood"
+  ],
+  "git_head": "db5e36c57141e4a816cd21dce55a2c3639df5e04",
+  "input_sha256": {
+    "lean/Conjectures/ExtensionBad.lean": "bfb7dd0a4841876ed63e843fe5a2c07f07fc6fc61637d876f0705fd129f16cc4",
+    "lean/Conjectures/ExtensionDependency.lean": "541b555b7faaac06e92c180ca6eef0c605b8f789e166b7bf15421216cfbb1869",
+    "lean/Conjectures/ExtensionGood.lean": "1e88a7e143e40dc03c0e1760bb6c5032b2a0e80a223ac470d40e054886be2394",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/replay_lean_parallel.py": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225",
+    "scripts/test_lean_parallel.py": "53b526e6ce974893f78fb464aa77d002b82b2441c96a3d41a521486bba215700",
+    "scripts/verify_lean_parallel_candidate.py": "6545556b44d03f51a40a1c598b4c9f304f2ccf0eebd3e3f5c9544047d2aec522"
+  },
+  "kernel": {
+    "command": [
+      "/usr/bin/stdbuf",
+      "-oL",
+      "-eL",
+      "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+      "-v",
+      "Conjectures"
+    ],
+    "elapsed_seconds": 7.171314874000018,
+    "exit_code": 0,
+    "log_sha256": "9b6a99faa63a648952014bb9fe7c8b8d46e30ce2cf4965c03d36c69ebda2947a",
+    "runtime_control_threads": 3,
+    "sampled_peak_high_water_kib": 963448,
+    "sampled_peak_processes": 1,
+    "sampled_peak_rss_kib": 963448,
+    "sampled_peak_threads": 4,
+    "thread_limit": 4
+  },
+  "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "memory_limit_mib": 12288,
+  "mode": "candidate",
+  "original_object_directory": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-owned-extension/repo/lean/.lake/build/lib/lean",
+  "output_directory": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-owned-extension/replay-1",
+  "phase": "kernel",
+  "project_modules": [
+    "Conjectures.ExtensionBad",
+    "Conjectures.ExtensionDependency",
+    "Conjectures.ExtensionGood"
+  ],
+  "replayed_module_count": 3,
+  "reuses_prior_kernel_pass": false,
+  "root": "Conjectures.ExtensionBad",
+  "runtime": {
+    "compiler_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "sysroot": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0"
+  },
+  "source_receipt": {
+    "compiler_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "path": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-owned-extension/source/receipt.json",
+    "sha256": "0a27576aeb4cb36fe466c90814cecb12b4aaacf6886bf1696aeec8bb3a8a0938"
+  },
+  "status": "passed",
+  "timeout_seconds": 1800.0,
+  "workers": 1
+}

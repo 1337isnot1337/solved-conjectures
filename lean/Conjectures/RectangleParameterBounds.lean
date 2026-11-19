@@ -114,6 +114,6 @@ theorem M_sq_le_area_power (ε : ℝ) (h w : ℕ) (hh : 1 ≤ h) (hw : h ≤ w) 
   have hs : (M ε h w : ℝ)^2 ≤ ((area h w)^((1/4 : ℝ)*(1-2*ε)))^2 := by
     exact (sq_le_sq₀ (Nat.cast_nonneg (M ε h w)) hr).mpr hm
   rw [← Real.rpow_mul_natCast (area_nonneg h w)] at hs
-  convert hs using 1 <;> congr 1 <;> ring
+  convert hs using 1; congr 1; ring
 
 end RectangleAsymptotics

@@ -200,6 +200,7 @@ function buildQuotientPacket(pairText) {
   recorded.forEach((p,i)=>rd+="def survivor"+pad(i,2)+" : Row × Row := (endpoint"+pad(endpointIndex.get(p.slice(0,9).join(",")),2)+", endpoint"+pad(endpointIndex.get(p.slice(9).join(",")),2)+")\n");
   rd+="\ndef survivors : List (Row × Row) := "+list(recorded.map((_,i)=>"survivor"+pad(i,2)))+"\n\n";
   rd+="def SurvivorValid (p : Row × Row) : Prop :=\n  BoundedOdd p.1 ∧ BoundedOdd p.2 ∧ weightedSum p.1 = 1 ∧ weightedSum p.2 = 1 ∧\n    ∀ k, signature133 p.1 k + signature133 p.2 k = target133 k\n\n";
+  rd+="attribute [local instance 2000] Fintype.decidableForallFintype\nattribute [local instance 2000] Fintype.decidableExistsFintype\n\ninstance survivorValidDecidable (p : Row × Row) : Decidable (SurvivorValid p) := by\n  unfold SurvivorValid BoundedOdd\n  infer_instance\n\n";
   rd+="def survivorCheck (p : Row × Row) : Bool := decide (SurvivorValid p)\n\n";
   quotientLeaves.forEach((l,i)=>rd+="def quotientIndices"+pad(i,4)+" : List ℕ := "+list(l.indices)+"\n");
   rd+="\n";
@@ -264,10 +265,28 @@ function buildQuotientPacket(pairText) {
   const boolChain=calls=>calls.reduceRight((rest,x)=>"("+x+" && "+rest+")","true");
   let catBody="";
   for(const[label,target,count]of[["quotient","targetKey133",Math.ceil(qkeys.length/32)],["margin","targetJointKey",Math.ceil(mkeys.length/32)]]){
-    catBody+="theorem "+label+"_catalog_checked : catalogAllCheck "+label+"Catalog "+target+" = true := by\n  change "+boolChain(Array.from({length:count},(_,b)=>"catalogBatch "+label+"Catalog "+target+" "+b))+" = true\n  simp only ["+
-      Array.from({length:count},(_,b)=>label+"_batch_"+pad(b)).join(", ")+", Bool.true_and]\n\n";
+    const groups=Math.ceil(count/32);
+    for(let group=0;group<groups;group++){
+      catBody+="private theorem "+label+"_catalog_block_"+pad(group)+" :\n"+
+        "    (List.range 32).all (fun offset => if "+group+" * 32 + offset < "+count+" then\n"+
+        "      catalogBatch "+label+"Catalog "+target+" ("+group+" * 32 + offset) else true) = true := by\n"+
+        "  apply List.all_eq_true.mpr\n  intro offset ho\n"+
+        "  have ho' : offset < 32 := List.mem_range.mp ho\n  interval_cases offset\n";
+      for(let offset=0;offset<32;offset++){
+        const index=group*32+offset;
+        catBody+=index<count?"  · exact "+label+"_batch_"+pad(index)+"\n":"  · rfl\n";
+      }
+      catBody+="\n";
+    }
+    catBody+="theorem "+label+"_catalog_checked : catalogAllCheck "+label+"Catalog "+target+" = true := by\n"+
+      "  change (List.range "+count+").all (catalogBatch "+label+"Catalog "+target+") = true\n"+
+      "  apply all_range_of_blocks\n  intro block hb\n"+
+      "  have hb' : block < "+groups+" := by omega\n  interval_cases block\n";
+    for(let group=0;group<groups;group++)
+      catBody+="  · exact "+label+"_catalog_block_"+pad(group)+"\n";
+    catBody+="\n";
   }
-  emitAssembly("HadamardQuotient133CatalogVerified",catModules,catBody);
+  emitAssembly("HadamardQuotient133CatalogVerified",["HadamardQuotient133Assembly",...catModules],catBody);
   const uModules=[];
   chunks(outer,32).forEach((us,bi)=>{
     let body="",imports=[theoremModule.get("quotient_chunks_checked")];
@@ -280,9 +299,14 @@ function buildQuotientPacket(pairText) {
     });const name="HadamardQuotient133UVerified"+pad(bi);uModules.push(name);emitAssembly(name,imports,body);
   });
   let rowsBody="theorem quotient_rows_checked :\n    quotientRowsCheck quotientCatalog endpoints outerTriples quotientCerts = true := by\n"+
-    "  simp only [quotientRowsCheck, outerTriples, quotientCerts, pairedCheck, "+
+    "  change pairedCheck (quotientUCheck quotientCatalog endpoints outerTriples)\n    ["+
+    outer.map((_,i)=>"outer"+pad(i)).join(", ")+"] quotientCerts = true\n"+
+    "  simp only [quotientCerts, pairedCheck, "+
     outer.map((_,i)=>"quotient_u_"+pad(i)+"_checked").join(", ")+", Bool.true_and]\n\n";
-  rowsBody+="theorem endpoints_checked : endpointPairsCheck endpoints survivors = true := by\n  simp only [endpointPairsCheck, endpoints, List.all_cons, List.all_nil, "+
+  rowsBody+="theorem endpoints_checked : endpointPairsCheck endpoints survivors = true := by\n"+
+    "  change (["+endpoints.map((_,i)=>"endpoint"+pad(i,2)).join(", ")+
+    "] : List Row).all (endpointRowCheck endpoints survivors) = true\n"+
+    "  simp only [List.all_cons, List.all_nil, "+
     endpoints.map((_,i)=>"endpoint_row_"+pad(i,2)+"_checked").join(", ")+", Bool.true_and]\n\n";
   rowsBody+="theorem survivors_checked : survivors.all survivorCheck = true := by\n  simp only [survivors, List.all_cons, List.all_nil, "+
     recorded.map((_,i)=>"survivor_"+pad(i,2)+"_checked").join(", ")+", Bool.true_and]\n\n";
@@ -302,7 +326,9 @@ function buildQuotientPacket(pairText) {
   marginSources.forEach(({ri,as})=>{
     const r=pad(ri,2);
     marginBody+="theorem margin_source_"+r+"_checked :\n    marginSourceCheck marginCatalog endpoint"+r+" marginGroups"+r+" marginCert"+r+" = true := by\n"+
-      "  simp only [marginSourceCheck, marginGroups"+r+", Matrix.cons_val_zero, marginGroup"+r+"_0, marginCert"+r+", pairedCheck, "+
+      "  change pairedCheck (marginACheck marginCatalog endpoint"+r+" marginGroups"+r+")\n    ["+
+      as.map(ai=>"marginA"+r+"_"+pad(marginAs[ai].ai)).join(", ")+"] marginCert"+r+" = true\n"+
+      "  simp only [marginCert"+r+", pairedCheck, "+
       as.map(ai=>"margin_a_"+pad(ai,4)+"_checked").join(", ")+", Bool.true_and]\n\n";
     marginBody+="theorem margin_packet_"+r+"_checked : marginPacketCheck marginCatalog endpoint"+r+" marginPacket"+r+" = true := by\n"+
       "  apply Bool.and_eq_true.mpr\n  constructor\n  · simpa only [decide_eq_true_eq] using margin_groups_"+r+"_checked\n  · exact margin_source_"+r+"_checked\n\n";
@@ -349,7 +375,8 @@ for (const [relative, content] of Object.entries(packet.files)) {
       throw new Error("Generated file differs: " + relative);
   } else {
     fs.mkdirSync(path.dirname(filename), {recursive: true});
-    fs.writeFileSync(filename, content);
+    if (!fs.existsSync(filename) || fs.readFileSync(filename, "utf8") !== content)
+      fs.writeFileSync(filename, content);
   }
 }
 console.log(JSON.stringify(packet.stats));

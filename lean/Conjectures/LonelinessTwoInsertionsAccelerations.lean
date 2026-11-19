@@ -36,12 +36,12 @@ theorem accelerated_speed_good (p r m : ℕ) (hp : 3 ≤ p)
     apply (le_div_iff₀ hq).mpr
     have heq : ((m : ℝ)-1+1/(p+2 : ℝ))*(p+2 : ℝ) =
         ((m : ℝ)-1)*(p+2 : ℝ)+1 := by
-      field_simp [hq.ne'] <;> ring
+      field_simp [hq.ne']
     rwa [heq]
   have hhighPhase : ((m*r : ℕ) : ℝ)/(p : ℝ) ≤ (m : ℝ)-1/(p : ℝ) := by
     apply (div_le_iff₀ hpR).mpr
     have heq : ((m : ℝ)-1/(p : ℝ))*(p : ℝ) = (m : ℝ)*(p : ℝ)-1 := by
-      field_simp [hpR.ne'] <;> ring
+      field_simp [hpR.ne']
     rw [heq]
     linarith
   have hnonneg : (0 : ℝ) ≤ (m*r : ℕ) := Nat.cast_nonneg _

@@ -15,7 +15,8 @@ noncomputable section
 
 variable {ι : Type*} [Fintype ι] [Nonempty ι]
 
-theorem coordinatePrefix_eq_span_range (w : ℕ → ι → ℤ) (r : ℕ) :
+omit [Fintype ι] [Nonempty ι] in
+theorem coordinatePrefix_eq_span_range [Fintype ι] [Nonempty ι] (w : ℕ → ι → ℤ) (r : ℕ) :
     coordinatePrefix w r =
       Submodule.span ℝ (Set.range (fun i : Fin r => integerVector (w i.val))) := by
   unfold coordinatePrefix
@@ -40,7 +41,8 @@ theorem coordinatePrefix_finrank (w : ℕ → ι → ℤ) (r : ℕ)
     Module.finrank ℝ (coordinatePrefix w r) = r := by
   rw [coordinatePrefix_eq_span_range, finrank_span_eq_card hind, Fintype.card_fin]
 
-theorem coordinatePrefix_coordinateFree (w : ℕ → ι → ℤ) (r : ℕ)
+omit [Fintype ι] [Nonempty ι] in
+theorem coordinatePrefix_coordinateFree [Fintype ι] [Nonempty ι] (w : ℕ → ι → ℤ) (r : ℕ)
     (hfirst : ∀ j, w 0 j ≠ 0) : CoordinateFree (coordinatePrefix w (r+1)) := by
   intro j
   refine ⟨integerVector (w 0), ?_, ?_⟩

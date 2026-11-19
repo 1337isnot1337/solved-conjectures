@@ -111,3 +111,12 @@ obstruction are all derived. An invariant quotient of order three is also
 constructed. The sharper bound of nine still requires exclusion of order 27
 through the finite quotient/no-lift packet.
 [Reduction receipts](../../docs/lean-status.md#checked-length-1197-reduction-to-order-27).
+
+
+## Actual Legendre-pair matrix and quotient transport
+
+The actual two-row construction is checked for every finite abelian group: a Legendre pair yields a sign matrix of order twice the group cardinality plus two, with the required Hadamard Gram identity. In particular, a length-1197 pair yields an actual order-2396 Hadamard matrix. The proof derives the row-sum normalization internally.
+
+The quotient transport is also checked. From the actual centered rows and an order-27 subgroup of common multipliers, Lean derives the order-133 quotient rows, their bounds, weighted sums and correlations, and the order-21 layer constraints used by the finite no-lift argument. No abstract quotient-data certificate is assumed. The final exclusion of order 27 and the sharper multiplier bound of nine remain pending the complete finite certificate and final assembly.
+
+[Strict source, axiom-audit, and independent-kernel receipts](../../docs/lean-status.md#actual-legendre-pair-matrix-and-quotient-transport).

@@ -41,16 +41,16 @@ periods, and densities are proved in
 
 For `k>=41` and `k mod 9=5`, Lean proves
 
-\[
+```math
 \mu(\{1,k,k+7\})=\frac{4k+25}{9(k+8)}.
-\]
+```
 
 Subtracting this from the predicted value gives exactly
 
-\[
+```math
 \frac{4k-2}{9(k+1)}-\mu(\{1,k,k+7\})
 =\frac{k-41}{9(k+1)(k+8)}.
-\]
+```
 
 The values agree at `k=41`. Every `k=50+9n`, for `n>=0`, is a strict
 counterexample. At `k=50` the difference is `1/2958`. These conclusions are

@@ -1,0 +1,2 @@
+{"phase": "kernel", "modules": 25, "workers": 4, "prefixes": ["Conjectures"], "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-parallel-candidate/real-pilot/replay-4/kernel.log"}
+{"status": "passed", "phase": "kernel", "receipt": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-parallel-candidate/real-pilot/replay-4/receipt.json"}

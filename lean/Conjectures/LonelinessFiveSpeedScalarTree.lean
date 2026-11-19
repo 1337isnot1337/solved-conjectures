@@ -41,9 +41,9 @@ theorem lookup_eq_getElem? (tree : ScalarTree) (n : ℕ)
         simpa only [valid, Bool.and_eq_true, decide_eq_true_eq] using hvalid
       rcases hc with ⟨rfl, hl, hr⟩
       by_cases hn : n < left.toList.length
-      · rw [lookup, if_pos hn, toList, List.getElem?_append_left hn]
+      · rw [lookup, ite_eq_left hn, toList, List.getElem?_append_left hn]
         exact ihl n hl
-      · rw [lookup, if_neg hn, toList,
+      · rw [lookup, ite_eq_right hn, toList,
           List.getElem?_append_right (Nat.le_of_not_gt hn)]
         exact ihr (n - left.toList.length) hr
 

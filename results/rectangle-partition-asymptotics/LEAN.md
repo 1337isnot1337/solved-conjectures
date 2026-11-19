@@ -8,17 +8,17 @@ the note. It has no unproved partition estimate or geometric premise.
 
 For natural numbers `h` and `w`, put
 
-\[
+```math
 N=hw,\qquad U=\min(h,N^{1/4}),\qquad S=\sqrt{N\log U}.
-\]
+```
 
 `RectangleAsymptotics.uniform_log_asymptotic` proves that, for every real
 `ε > 0`, there is a natural `H ≥ 2` such that every `h ≥ H` and `w ≥ h`
 satisfy
 
-\[
+```math
 \left|\frac{\log p(h,w)}{S}-\pi\sqrt{2/3}\right|<\varepsilon.
-\]
+```
 
 `rectangle_log_asymptotic` gives the same limit on the joint rectangle
 filter. `rectangle_log_asymptotic_along` applies it to every sequence or
@@ -58,9 +58,9 @@ These arguments do not import the paper's multiset asymptotic as a premise.
 
 Write `C = π²/6` and
 
-\[
+```math
 L_B(t)=\sum_{a=1}^{B}-\log(1-e^{-at}).
-\]
+```
 
 The Euler-product development proves `L_B(t) ≤ C/t` and
 `t L_B(t) → C` when `t → 0+` and `Bt → ∞`. Mathlib's checked Basel-sum
@@ -69,10 +69,10 @@ theorem supplies the value of `C`.
 `RectanglePartitionAsymptotics.tendsto_log_boundedParts_sqrt` proves the
 sharp cumulative partition limit
 
-\[
-\frac{\log |\operatorname{boundedParts}(1,B,T)|}{\sqrt T}
+```math
+\frac{\log |\mathop{\mathrm{boundedParts}}(1,B,T)|}{\sqrt T}
 \longrightarrow 2\sqrt C
-\]
+```
 
 when `T → ∞` and `B/√T → ∞`. Here `boundedParts` counts partitions with
 total at most `T`. A finite weighted sum and two exponential tail bounds

@@ -1,0 +1,249 @@
+{
+  "status": "candidate source written; Lean source, axiom and independent kernel gates pending",
+  "prime": 199,
+  "modules": [
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickDataP0199",
+      "source_sha256": "6f93961bac870f0ccb52fa72befb651876108d8877e6e790ef473caa8d831818",
+      "source_bytes": 58060
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part00",
+      "source_sha256": "c591b87cc13c6261bf1a4324d38cbb68ff21b4c1cd5f7f8a11a42832aba96d81",
+      "source_bytes": 622916
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part01",
+      "source_sha256": "523469aaf2edd3331cf7ae434f2e85e504cd6a98ae9da2b54a38f79f8aff41aa",
+      "source_bytes": 471713
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part02",
+      "source_sha256": "9f416376201d457fb8ffdfae06b53fc761c0084c38fefe03732ea80c399e4164",
+      "source_bytes": 327133
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part03",
+      "source_sha256": "33db66358136eaa06edfe52a6e6dc519f1ea95e72b53a45da9206a7faeeebef5",
+      "source_bytes": 217555
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part04",
+      "source_sha256": "86b68009c3a04567211c6c6ec7ea64424360f49ff441d84419ef183782515dee",
+      "source_bytes": 121236
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part05",
+      "source_sha256": "c633cce0d3af69d9593ac7ad4c8a67c74c1378a1071e0b6cecc9d85ecac7d118",
+      "source_bytes": 77447
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part06",
+      "source_sha256": "5fa886abaff0719e903a45fd15ee9e62b84dd9fb99239ca2f11831fe393da36a",
+      "source_bytes": 60615
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part07",
+      "source_sha256": "bdad4d2e9251281064062355bf1c91f7f47986aab14114983bce70c9b3e05089",
+      "source_bytes": 40223
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part08",
+      "source_sha256": "ac3400b688a792693f1646b41ceb826ce5cdd89eb0640a437a5b70341c83c625",
+      "source_bytes": 28772
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part09",
+      "source_sha256": "8557f34e9d499b434591b60dff6b7bca73f2a3362a64f240ac1d6f7ae50e9def",
+      "source_bytes": 23043
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part10",
+      "source_sha256": "da0c13e3c2b6b8c4423a53bd5d6830b6f37946fd85abe760ed748ba899008f5a",
+      "source_bytes": 14447
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part11",
+      "source_sha256": "a3d9a0b1e82a59623f46f36a771aa8ef7f9bbf9b15d2cd855818856a636cea70",
+      "source_bytes": 4053
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199",
+      "source_sha256": "1016d726e57bf38bc66907022cb1a3c70dbc8dfe7e15c65d3fe8ab334769af9d",
+      "source_bytes": 15563
+    }
+  ],
+  "module_count": 14,
+  "source_bytes": 2082776,
+  "required": [
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.Data.values_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.Data.eligible_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0002.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0003.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0004.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0005.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0006.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0007.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0008.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0009.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0010.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0011.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0012.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0013.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0014.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0015.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0016.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0017.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0019.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0023.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0024.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0027.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0028.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0029.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0030.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0031.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0032.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0034.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0035.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0036.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0037.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0038.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0039.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0042.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0044.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0045.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0047.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0049.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0052.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0054.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0055.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0060.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0061.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0067.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0068.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0074.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.B0080.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.checked",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.normalized",
+    "Loneliness.FiveSpeedCertificate.RootQuickCertificates.P199.sound"
+  ],
+  "scalar_source_sha256": "c8ae3a69a7c907afdb6dbdd6e7cfe1caee92270a122fec9149ddde62ce1fb545",
+  "generator_sha256": "5e59128f11203b0e1c038df27a1eb9a7c71c875695fd0032201a77133f51f18c",
+  "d_chunk": 32,
+  "c_chunk": 16,
+  "base_chunk": 16,
+  "bases_per_module": 4,
+  "base_parts": [
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part00",
+      "bases": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part01",
+      "bases": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part02",
+      "bases": [
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part03",
+      "bases": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part04",
+      "bases": [
+        19,
+        23,
+        24,
+        27
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part05",
+      "bases": [
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part06",
+      "bases": [
+        32,
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part07",
+      "bases": [
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part08",
+      "bases": [
+        44,
+        45,
+        47,
+        49
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part09",
+      "bases": [
+        52,
+        54,
+        55,
+        60
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part10",
+      "bases": [
+        61,
+        67,
+        68,
+        74
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part11",
+      "bases": [
+        80
+      ]
+    }
+  ],
+  "use_prefix": false,
+  "finite_leaf_count": 3602,
+  "d_leaf_count": 1979,
+  "c_leaf_count": 1606,
+  "split_rows": 609,
+  "note": "Literal cache comparisons and balanced append proofs check the complete intervals; Python choices are not assumptions."
+}

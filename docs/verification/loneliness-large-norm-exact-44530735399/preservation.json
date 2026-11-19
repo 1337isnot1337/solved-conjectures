@@ -1,0 +1,939 @@
+{
+  "accepted_registry_changed": false,
+  "actual_archived_facets_rehashed": 81,
+  "actual_archived_sources_rehashed": 81,
+  "actual_process_logs_rehashed": 163,
+  "actual_progress_receipts_validated": 163,
+  "all_owned_raw_private_inventory_validated": true,
+  "all_required_endpoints_are_theorems": true,
+  "artifact_sha256": {
+    "Conjectures.Loneliness": {
+      ".olean": "4e13edf11c42cd4d01ee6b692970cde34603fd7ef263cbd443775fe41e360307"
+    },
+    "Conjectures.LonelinessCoalescence": {
+      ".olean": "12d146c55086c8dbcbea6f698a5621e535e432269a2e014bcc11854486517b10"
+    },
+    "Conjectures.LonelinessCoalescenceValue": {
+      ".olean": "1796d187ca5da715998d95619cfd91449179b41fdf4a02579cf8d17cb6c5011c"
+    },
+    "Conjectures.LonelinessContinuity": {
+      ".olean": "5df8e58d7511f3fd3e51be7b051fc8437a3a11511f6dccf1cf8da127e4726862"
+    },
+    "Conjectures.LonelinessCoordinateClasses": {
+      ".olean": "ea5f0e46116aca479a2a4f3b520ba757806ba654ee6e2cb7c6931bf4271beaff"
+    },
+    "Conjectures.LonelinessCoordinateSubspace": {
+      ".olean": "84674dd6ab42fc619699f3e2583278d8d29e8b262e35fcc1ff551d7c58963586"
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      ".olean": "30d9e0468833b8eca771d4125313add10f1193a74297f2f5766fb0c5ddc2b37a"
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      ".olean": "9d841dbdfb2e8ea44054e35aa8504f30d54f8cd1e583bda16d8c98277d5d8334"
+    },
+    "Conjectures.LonelinessHyperplaneArithmetic": {
+      ".olean": "3574d1b9227067343c3a869c117f1a78b2f237de9b81c07bfe99b669325ff181"
+    },
+    "Conjectures.LonelinessIntegerDirection": {
+      ".olean": "e0ddc2d872ca0d300e571cad009dd89fe40ff4191c4f1178c5a4c0d3e8cfa71b"
+    },
+    "Conjectures.LonelinessKZBasisGram": {
+      ".olean": "5c4f78a0614fb455b6d3f7c724b493a480874ac169e280d1eb0b81ce32b06092"
+    },
+    "Conjectures.LonelinessKZBasisInteger": {
+      ".olean": "60070f98511dacbcd6944def7c9ac07fb45be9a663bb6f5c2de87d1b302bcd08"
+    },
+    "Conjectures.LonelinessKZBasisOperations": {
+      ".olean": "d260b8fd3e53b38e2c9d078e68afa12904f07b46ec05627d80a3cc2e19d8107c"
+    },
+    "Conjectures.LonelinessKZBasisReduction": {
+      ".olean": "dd7bef0443d49c403ef1125b08d865e8af9137af802c1ae58353558b5ace67d6"
+    },
+    "Conjectures.LonelinessKZBasisStep": {
+      ".olean": "cc911db3f7ddf685d1d005dc39f3af07e07294fe2408c425e6c8a01de742ffa7"
+    },
+    "Conjectures.LonelinessKZBasisVectors": {
+      ".olean": "b1d538f3a974c6349754506d38fe1a157126c6894d50b920b934237ca7cbcc5a"
+    },
+    "Conjectures.LonelinessKZGeneral": {
+      ".olean": "df39fd8f9402c3b9106231dfc60b9cd9e5d52d7dcf2ff549a5f76f008a12c1fe"
+    },
+    "Conjectures.LonelinessKZProduct": {
+      ".olean": "567489893cce3853439b962c4c24a951b36181c6015261592ec8df51ca52b08b"
+    },
+    "Conjectures.LonelinessKZProductAssembly": {
+      ".olean": "066cac24287d936ccc749d108d11ca7c2c8484e982024fdd5e67de106264b889"
+    },
+    "Conjectures.LonelinessKZProductCertificate": {
+      ".olean": "717ac20eb678a078461ca00d161aec1b3b5ebdb0ecc7335635c34062579e9a01"
+    },
+    "Conjectures.LonelinessKZProductDataEleven": {
+      ".olean": "4466845074992580ae4f5d2a4d682f806ebdacfaa456938696a3f47ad6072c04"
+    },
+    "Conjectures.LonelinessKZProductDataNine": {
+      ".olean": "df382cd618ca92e2ddeee363eb7cba57d710682823a404ea2976f36b44968a10"
+    },
+    "Conjectures.LonelinessKZProductDataTen": {
+      ".olean": "75634a4f89dc3479f4baca8e861352b3bf65c4d8e16b9e750ac7a51722c37959"
+    },
+    "Conjectures.LonelinessKZProductDataThirteen": {
+      ".olean": "82f7d1507daf2fd69b69bd769cdbe1f6643b99032ce73c7de85813551961953b"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBase": {
+      ".olean": "ad3c054a3e0b41b361ebf72ce1b340d3d7ab62d1e025b951c761b8ad28af1d9f"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock00": {
+      ".olean": "1d2411a37a816845dda0dc4fffcb5846d63ff6121201f532ed37fd6ad95a08b7"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock01": {
+      ".olean": "0c2b97e93af309b81fbf9a78dbe5fe3e48210c6a87610c08e6a724b6d21f0a7f"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock02": {
+      ".olean": "f0ebd7f18ee6f7e3e660da8c3b3b7cac4a33950bbb4400ea474c24312825adb4"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock03": {
+      ".olean": "d215dd16476c738bc0af08367a1b2de8911d1d4df65ec2209c30562a78af6468"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock04": {
+      ".olean": "c46fbd8d654adfb5411368126e656738c2521f5c463689eb18c86d25d6ee7846"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock05": {
+      ".olean": "1fa6d9cc323fc59e3098a52ca5db7c59fe2ec527f35e3bd6df1b72b46e8be6f9"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock06": {
+      ".olean": "93ae010eab0b72b2d6c8822daad93f500d5bf3f80303438464e4d382139b7f42"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock07": {
+      ".olean": "abe625aeb0d2088667c4b1505a8da21439706d9cc2c6a5bac37bda5ba5356c83"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock08": {
+      ".olean": "02ce3b67c4055563a7ffd7d81142c5b0b23be98f17abadf6e131469445b0e6c8"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock09": {
+      ".olean": "43597f3afa78cb676c4817e945437589432deaa830017d0da022e5ddba6630cb"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock10": {
+      ".olean": "93a8baa628b1d1b24b79764ca182d4c4645ef77b96e66e5bfd682037be25712b"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock11": {
+      ".olean": "ffa7462c25a383d9d5517d035384e41014e9f3692322a40a46d1e87a6159d57e"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock12": {
+      ".olean": "2322d1a75e51bd75db3cc2868eebf74283d0ab81e7d87f1a64dffbe200ae4fa5"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock13": {
+      ".olean": "4c1f6eb9809bc3864b1c3da738ac63eb3605dedca12f4fabf53a51d3b77468aa"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock14": {
+      ".olean": "6c2f4332102839870b3de9a5e6c69ffbb8c971b6957701fcf348e82687edadf4"
+    },
+    "Conjectures.LonelinessKZProductDataThirteenBlock15": {
+      ".olean": "373fb7bfaeb74ef823fcf0cec1b2e46ed5dba34f3f4abf194ff76f5b4b79c739"
+    },
+    "Conjectures.LonelinessKZProductDataTwelve": {
+      ".olean": "0f925b03d430a9383120b29a46e3bf72343b4ddce5ff74a994b34a3ccc9806ef"
+    },
+    "Conjectures.LonelinessKZProductDataTwelveBase": {
+      ".olean": "0116d75b78518c132798a1fcb0aa4e228d15b98f373c33dbc8378a0e6797bb41"
+    },
+    "Conjectures.LonelinessKZProductDataTwelveBlock00": {
+      ".olean": "b99e15946a7f93d4e3d6b3a0c321955e9efdc40a34f934187bdfa2bc0f2d7c32"
+    },
+    "Conjectures.LonelinessKZProductDataTwelveBlock01": {
+      ".olean": "348cc3f6fa14789f674ce5a8b1227b7c12e50b5d6c7f71294a674b59b6167326"
+    },
+    "Conjectures.LonelinessKZProductDataTwelveBlock02": {
+      ".olean": "b943b0fe5985cbcd4001fbe8ee3fc0696cea6d5b87fca02670078e9a0a61b95e"
+    },
+    "Conjectures.LonelinessKZProductDataTwelveBlock03": {
+      ".olean": "3a675c8ed7884a4d7bccc8974bd7c0d37c996543ed6f7162f6096015c18cf995"
+    },
+    "Conjectures.LonelinessKZProductDataTwelveBlock04": {
+      ".olean": "eacdc8ed30e4f5f94f399fe034f3363e5a4a29303c9d062aef8d1e8565113310"
+    },
+    "Conjectures.LonelinessKZProductDataTwelveBlock05": {
+      ".olean": "152aa3dc3e2218d07d6e2d007cc2a8a606fa6f5a2854ac7f9c814e6007942c47"
+    },
+    "Conjectures.LonelinessKZProductDataTwelveBlock06": {
+      ".olean": "eee4a1dcf827f4b70b68281282246de5b179a34d0de02a26551f075e5a6e6390"
+    },
+    "Conjectures.LonelinessKZProductDataTwelveBlock07": {
+      ".olean": "8dbaeff28d056c4b27622289a271cf60127d2aa664d2f0f0b84d1e67371aee05"
+    },
+    "Conjectures.LonelinessKZProductFast": {
+      ".olean": "40b92279d35fdc5b4101639d34d9a163f2035c13e285e7f7923455160fc72ca0"
+    },
+    "Conjectures.LonelinessKZProductOrder": {
+      ".olean": "4bb5b3ec59ce57a40c2962832e15564c071dfecd2053a647acd373fc3634a6da"
+    },
+    "Conjectures.LonelinessModularForcedDivisor": {
+      ".olean": "9b84fd1f2cf94180df92f6816aa9bfd2d91c2a335fd27df9ce01dd608c1c736a"
+    },
+    "Conjectures.LonelinessModularPrimes": {
+      ".olean": "ce0cf36d9df2ca0f6fa13945bae30ff71758c170fad93367636fc94256e4df3b"
+    },
+    "Conjectures.LonelinessModularTightPrimeBounds": {
+      ".olean": "dfd5847379a7eb868b3440a5cec4518b95234755c8ea4af59b562f0cab67ab0b"
+    },
+    "Conjectures.LonelinessModularTightPrimeDataEight": {
+      ".olean": "953cad78e2b6f247235eec8a7597b520b0acb415cf7d40ad9f3f54c9062f3a04"
+    },
+    "Conjectures.LonelinessModularTightPrimeDataEleven": {
+      ".olean": "9b52e20fe77e97f149e8b331a02a8823e4b6698f8243a4c27e98aedfaba665da"
+    },
+    "Conjectures.LonelinessModularTightPrimeDataNine": {
+      ".olean": "3e311646d8b4426ed32dacb30a2511192ed84fcbb91d484b2aa7ea259df2db7c"
+    },
+    "Conjectures.LonelinessModularTightPrimeDataSeven": {
+      ".olean": "a877acffcc017c9a9cedcefa0b17c16b43aab963411ee82115809b87face114c"
+    },
+    "Conjectures.LonelinessModularTightPrimeDataSix": {
+      ".olean": "a84f84bbe9ab625ec595b122c9d884f56cb7ac0271d0fede9afbff249fa1940b"
+    },
+    "Conjectures.LonelinessModularTightPrimeDataTen": {
+      ".olean": "c13a3c66ccd45cde4a6c6d1c5e77d3859032c7d3ffc9c4d492d8d9eeb044258d"
+    },
+    "Conjectures.LonelinessModularTightPrimeDataThirteen": {
+      ".olean": "f2035248b20bfafbc0a4659e502febfd63f72e16d4fddddc818b2dc7e044274d"
+    },
+    "Conjectures.LonelinessModularTightPrimeDataTwelve": {
+      ".olean": "69ceec7069cb2c86855178ea16b9e56c2b4093c9ad2fdb668208abd74bead7b2"
+    },
+    "Conjectures.LonelinessModularTightPrimeDefs": {
+      ".olean": "757f89b5d7662936be183d67b44f54a9abacb184ea851d52b1dd4f8ac0f308fe"
+    },
+    "Conjectures.LonelinessModularTightPrimeProducts": {
+      ".olean": "bb8d8c96ab2b19fd3e47faa9caaf1f304b1c2f5949d71c8e58a80f90c570b003"
+    },
+    "Conjectures.LonelinessModularWitness": {
+      ".olean": "2cf6204fd01e87d40012ff7dde7dcc893eb4742791c88b48979453450f82bbdd"
+    },
+    "Conjectures.LonelinessNearestPlane": {
+      ".olean": "02d0094cfc3f1aa6bf56f78bc560f71bfd6c0168d5570ef2d2d96d97baa98567"
+    },
+    "Conjectures.LonelinessNearestPlanePrefix": {
+      ".olean": "2edfef635f244c95dc75a2b931427b5c991e51b9fbfa0af6194d49b161c5ff41"
+    },
+    "Conjectures.LonelinessNearestPlaneRelative": {
+      ".olean": "140c623ff27296d64a9028852b8cd9f50cda6ca4b068dbb9f67c8d62a57a8e71"
+    },
+    "Conjectures.LonelinessNearestPlaneValue": {
+      ".olean": "b0d94aa13174644eb35f463fc4dde8508575cf50b6e9aef2b47280ace9b31861"
+    },
+    "Conjectures.LonelinessNormGeometry": {
+      ".olean": "e469ef6d1c52eedeb1b51796a8508a14775310673655421bd1b65c828ed6850e"
+    },
+    "Conjectures.LonelinessPrefixProduct": {
+      ".olean": "99b7a39afd6abd4ae750462563015a36dae671dd6f4885077bbca3611b7468bf"
+    },
+    "Conjectures.LonelinessPrefixProductTables": {
+      ".olean": "0b094cf56381c953f76f2294c5a37e1f1c72dab77cf56951b7884798e7da160a"
+    },
+    "Conjectures.LonelinessPrimitiveBasis": {
+      ".olean": "68ca11c84bf1d18ad62f80c550b9e10f2fb91782acf85ac8ee320d91e78bb455"
+    },
+    "Conjectures.LonelinessPrimitiveSpeeds": {
+      ".olean": "7f9f1b47f1a8ce59ae18a7ccf80fc0d2db92073aa19c1a16a4b292a9ffc4c78d"
+    },
+    "Conjectures.LonelinessRational": {
+      ".olean": "945c34917c2011b1fa83483163c423be6960f769809bcb768f210fc47ed0bb73"
+    },
+    "Conjectures.LonelinessRationalSubspace": {
+      ".olean": "22c8979317e1d9f98f8f1e57a4957fdf6833d4c1e68990d408340e963ced9540"
+    },
+    "Conjectures.LonelinessSubspaceDensity": {
+      ".olean": "a53656c78de877401c21b5e42b38cd6c506ed14b6ea08b6e7284acca97b0f603"
+    },
+    "Conjectures.LonelinessTightNormBounds": {
+      ".olean": "db5914830eb1dec6460986a0f9d77ec2628d8f61fc29089cef191a0951c7ab4f"
+    },
+    "Conjectures.LonelinessTightNormCommon": {
+      ".olean": "7e4f7349d38b94ab450ee38a15308d6b8b30eb2cfb6e96d68ff80a945f4e92be"
+    }
+  },
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 1696,
+    "modules": 81,
+    "private_declarations": 538,
+    "raw_declarations": 1696,
+    "required": 25,
+    "tag": "passed",
+    "theorems": 1445
+  },
+  "binding": {
+    "artifact": 14535137698,
+    "attempt": 1,
+    "head": "8162a5dfbe89e441600e7a3bbcc03b573df0880e",
+    "name": "loneliness-large-norm-exact",
+    "receipt_sha256": "fba4b952a87271f9691e983dd69dafc0be5c07617e412884eb82f2894ec2fef5",
+    "run": 44530735399,
+    "workflow": "Lean nine-through-thirteen speed norm bounds",
+    "zip_bytes": 22278069,
+    "zip_sha256": "b6678fb2e27c872d01a2bbd6bea9982abc42411e79999b6c4113961195ab3366"
+  },
+  "complete_serialized_private_import": true,
+  "conditional_norm_reduction_scope_checked": true,
+  "exact_singleton_stock_targets": [
+    "Conjectures.Loneliness",
+    "Conjectures.LonelinessCoalescence",
+    "Conjectures.LonelinessNearestPlane",
+    "Conjectures.LonelinessKZBasisVectors",
+    "Conjectures.LonelinessModularPrimes",
+    "Conjectures.LonelinessPrefixProduct",
+    "Conjectures.LonelinessContinuity",
+    "Conjectures.LonelinessFiveFamily",
+    "Conjectures.LonelinessCoordinateSubspace",
+    "Conjectures.LonelinessKZBasisGram",
+    "Conjectures.LonelinessNearestPlaneRelative",
+    "Conjectures.LonelinessPrefixProductTables",
+    "Conjectures.LonelinessRational",
+    "Conjectures.LonelinessCriticalBase",
+    "Conjectures.LonelinessCoordinateClasses",
+    "Conjectures.LonelinessKZBasisInteger",
+    "Conjectures.LonelinessKZBasisStep",
+    "Conjectures.LonelinessKZProductCertificate",
+    "Conjectures.LonelinessModularWitness",
+    "Conjectures.LonelinessSubspaceDensity",
+    "Conjectures.LonelinessIntegerDirection",
+    "Conjectures.LonelinessKZBasisOperations",
+    "Conjectures.LonelinessKZProductDataEleven",
+    "Conjectures.LonelinessKZProductDataNine",
+    "Conjectures.LonelinessKZProductDataTen",
+    "Conjectures.LonelinessKZProductFast",
+    "Conjectures.LonelinessKZProductOrder",
+    "Conjectures.LonelinessModularForcedDivisor",
+    "Conjectures.LonelinessHyperplaneArithmetic",
+    "Conjectures.LonelinessNearestPlaneValue",
+    "Conjectures.LonelinessRationalSubspace",
+    "Conjectures.LonelinessKZBasisReduction",
+    "Conjectures.LonelinessKZProductDataThirteenBase",
+    "Conjectures.LonelinessKZProductDataTwelveBase",
+    "Conjectures.LonelinessKZProductAssembly",
+    "Conjectures.LonelinessModularTightPrimeDefs",
+    "Conjectures.LonelinessPrimitiveBasis",
+    "Conjectures.LonelinessCoalescenceValue",
+    "Conjectures.LonelinessKZProductDataThirteenBlock00",
+    "Conjectures.LonelinessKZProductDataThirteenBlock01",
+    "Conjectures.LonelinessKZProductDataThirteenBlock02",
+    "Conjectures.LonelinessKZProductDataThirteenBlock03",
+    "Conjectures.LonelinessKZProductDataThirteenBlock04",
+    "Conjectures.LonelinessKZProductDataThirteenBlock05",
+    "Conjectures.LonelinessKZProductDataThirteenBlock06",
+    "Conjectures.LonelinessKZProductDataThirteenBlock07",
+    "Conjectures.LonelinessKZProductDataThirteenBlock08",
+    "Conjectures.LonelinessKZProductDataThirteenBlock09",
+    "Conjectures.LonelinessKZProductDataThirteenBlock10",
+    "Conjectures.LonelinessKZProductDataThirteenBlock11",
+    "Conjectures.LonelinessKZProductDataThirteenBlock12",
+    "Conjectures.LonelinessKZProductDataThirteenBlock13",
+    "Conjectures.LonelinessKZProductDataThirteenBlock14",
+    "Conjectures.LonelinessKZProductDataThirteenBlock15",
+    "Conjectures.LonelinessKZProductDataTwelveBlock00",
+    "Conjectures.LonelinessKZProductDataTwelveBlock01",
+    "Conjectures.LonelinessKZProductDataTwelveBlock02",
+    "Conjectures.LonelinessKZProductDataTwelveBlock03",
+    "Conjectures.LonelinessKZProductDataTwelveBlock04",
+    "Conjectures.LonelinessKZProductDataTwelveBlock05",
+    "Conjectures.LonelinessKZProductDataTwelveBlock06",
+    "Conjectures.LonelinessKZProductDataTwelveBlock07",
+    "Conjectures.LonelinessKZGeneral",
+    "Conjectures.LonelinessModularTightPrimeDataEight",
+    "Conjectures.LonelinessModularTightPrimeDataEleven",
+    "Conjectures.LonelinessModularTightPrimeDataNine",
+    "Conjectures.LonelinessModularTightPrimeDataSeven",
+    "Conjectures.LonelinessModularTightPrimeDataSix",
+    "Conjectures.LonelinessModularTightPrimeDataTen",
+    "Conjectures.LonelinessModularTightPrimeDataThirteen",
+    "Conjectures.LonelinessModularTightPrimeDataTwelve",
+    "Conjectures.LonelinessModularTightPrimeProducts",
+    "Conjectures.LonelinessPrimitiveSpeeds",
+    "Conjectures.LonelinessNearestPlanePrefix",
+    "Conjectures.LonelinessKZProductDataThirteen",
+    "Conjectures.LonelinessKZProductDataTwelve",
+    "Conjectures.LonelinessModularTightPrimeBounds",
+    "Conjectures.LonelinessNormGeometry",
+    "Conjectures.LonelinessKZProduct",
+    "Conjectures.LonelinessTightNormCommon",
+    "Conjectures.LonelinessTightNormBounds"
+  ],
+  "higher_speed_classifications_checked": false,
+  "lower_runner_hypotheses_discharged": false,
+  "new_axiom_audit": false,
+  "new_kernel_replay": false,
+  "new_source_compilation": false,
+  "original_gate_sha256": {
+    ".github/workflows/lean-loneliness-large-norm-exact.yml": "798942b2242558b5746d1bdc4b755f94ffaafe991ec84c3af3fdafecfecf1174",
+    "docs/loneliness-large-norm-exact-sources.json": "12e5fb3bbf9eaaf31984d861a8af2d13fa20cc9443be2a5b7f6f8cec8adb2ec8",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+    "scripts/verify_loneliness_large_norm_exact.py": "dc042e498f6063a68468db31e5828d9cdd85596cb9946dd25561db74dece1440"
+  },
+  "original_theorem_scope": "For nine through thirteen positive primitive natural speeds whose actual real-time loneliness value is at most 1/(k+1), prove the stated squared-norm cutoff and find a listed prime dividing no speed, under the explicit assumption LonelyRunnerBound m for every positive m below k. The basis geometry, KZ product lower bounds, 7,936 subset certificate rows and prime-product estimates are proved internally. This does not discharge the lower-dimensional runner assumptions or prove a higher-speed classification.",
+  "original_visibility_label": "The original complete_serialized_private_import field records complete serialized declaration visibility for this legacy closure.",
+  "preserved_file_sha256": {
+    "LargeNormExactAudit.lean": "c8135ef8df4f7cd2997157c51be8b0ca8f5bc4d6f5fb645ef334a046c1052df4",
+    "controls/.github/workflows/lean-loneliness-large-norm-exact.yml": "798942b2242558b5746d1bdc4b755f94ffaafe991ec84c3af3fdafecfecf1174",
+    "controls/docs/loneliness-large-norm-exact-sources.json": "12e5fb3bbf9eaaf31984d861a8af2d13fa20cc9443be2a5b7f6f8cec8adb2ec8",
+    "controls/lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "controls/lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "controls/lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "controls/scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "controls/scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "controls/scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "controls/scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "controls/scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "controls/scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "controls/scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+    "controls/scripts/verify_loneliness_large_norm_exact.py": "dc042e498f6063a68468db31e5828d9cdd85596cb9946dd25561db74dece1440",
+    "declaration-inventory.json": "b54bb15819ea15b47c2d34cadb6d86068206ba4b85865fa3130a005705b01918",
+    "logs/Conjectures.Loneliness.kernel.log": "381ad3ff638b4f35804e7c2a204a14a82ab29219cf5cc060d045acc27b90eb28",
+    "logs/Conjectures.Loneliness.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessCoalescence.kernel.log": "a20f74731976f0d06df173b5572beb5929a6444aa54b86e3c12eeae125fcb82e",
+    "logs/Conjectures.LonelinessCoalescence.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessCoalescenceValue.kernel.log": "ebb0d72141d5b7fc7acbc632e91f1296867a5cdbd7f218173d6aea07ca509c8d",
+    "logs/Conjectures.LonelinessCoalescenceValue.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessContinuity.kernel.log": "7264f9eab09c0ab1a3907cf0cde588559b77d6c9ad68cc93e6cd9fbb7deef86e",
+    "logs/Conjectures.LonelinessContinuity.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessCoordinateClasses.kernel.log": "77199b6ba099d1d47a3d12edcce867d3d3894deb6bcf25778c347f7dc37eac34",
+    "logs/Conjectures.LonelinessCoordinateClasses.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessCoordinateSubspace.kernel.log": "316ac14d44fe8e0f38f787b88688622f3f07305b4bcb8175d62cd7a2e30bfa89",
+    "logs/Conjectures.LonelinessCoordinateSubspace.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessCriticalBase.kernel.log": "0006fcc9df8f4040810ba1a8383d1636b283327a300f369e1dca3274ff0cebf2",
+    "logs/Conjectures.LonelinessCriticalBase.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessFiveFamily.kernel.log": "34a6f139b5b00907c71526d36b276ce6e9488a877c161d45ff5ec4260b65e3e2",
+    "logs/Conjectures.LonelinessFiveFamily.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessHyperplaneArithmetic.kernel.log": "f061f2731e3773208d8ee0d550c6b5f45d8e6c111d37217c1365ae3fbec9b095",
+    "logs/Conjectures.LonelinessHyperplaneArithmetic.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessIntegerDirection.kernel.log": "28b0971cd5687f1c31db064c0008ef0d356f684b5a88bdef89454808a9df1d0f",
+    "logs/Conjectures.LonelinessIntegerDirection.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZBasisGram.kernel.log": "66191853346122c3072056dee3c2c98a0265f2c4ea279dd78d87440759759126",
+    "logs/Conjectures.LonelinessKZBasisGram.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZBasisInteger.kernel.log": "5ab6f7f4a9bea51c37104dba91368b8cd61af67e4e70230746265c011f6c6b4d",
+    "logs/Conjectures.LonelinessKZBasisInteger.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZBasisOperations.kernel.log": "7454a16f90beb85721cfcfc5e10680ebdc39c8ae61d6701adfc39152f7e6a4f8",
+    "logs/Conjectures.LonelinessKZBasisOperations.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZBasisReduction.kernel.log": "3e9c630d5bc1a99c150d6dc33d5911fddd694366339d6ba0ca4a9fb5bac07bf0",
+    "logs/Conjectures.LonelinessKZBasisReduction.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZBasisStep.kernel.log": "aca326771ae24b0691e629ed3a4679738f927dfc16c5da324dddf3967b679993",
+    "logs/Conjectures.LonelinessKZBasisStep.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZBasisVectors.kernel.log": "f42c5b5f6b1ea0efce9e8472d70f2a74c562dca1e3e2112d1dfee1df9b34587e",
+    "logs/Conjectures.LonelinessKZBasisVectors.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZGeneral.kernel.log": "4f20ba0af11b57984b5ca738dd1a47a45b452c29061ebbed5106cc0504e023c2",
+    "logs/Conjectures.LonelinessKZGeneral.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProduct.kernel.log": "fb8bc89d4c571f87aca07a1e1d3f25e8c9b2de4cc67a04e86ccd5c447c444ac6",
+    "logs/Conjectures.LonelinessKZProduct.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductAssembly.kernel.log": "5431414f4425b1d40af515f3baa881e6b1f785f47aafa7b1844859157d28e4f0",
+    "logs/Conjectures.LonelinessKZProductAssembly.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductCertificate.kernel.log": "d65029ead43039b28ff8be92911fded8399df78f6acbe848b9bd66abf3e0a59f",
+    "logs/Conjectures.LonelinessKZProductCertificate.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataEleven.kernel.log": "e2507866cac63b7f2a44312ac2cd61e7935214ca15b591c159dc1bbe9fc50732",
+    "logs/Conjectures.LonelinessKZProductDataEleven.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataNine.kernel.log": "a3022e0804661ad3c29ff4c35bb776b114d7c139a10bf0c521c72505c1ef87bc",
+    "logs/Conjectures.LonelinessKZProductDataNine.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataTen.kernel.log": "0c1652bb8225247a54e472a68dd86c4cdd9f92fa7ece99b9956a2e7f8c1d8566",
+    "logs/Conjectures.LonelinessKZProductDataTen.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteen.kernel.log": "f2c7b37f7c01d00855604e7ff0899dcbb469cb3a77fe0864a7597e41fc883c98",
+    "logs/Conjectures.LonelinessKZProductDataThirteen.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBase.kernel.log": "9e977ef4dbe898f397cd417fe1eaf7de245bbcfca786f8868b7a58ebb36d6e17",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBase.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock00.kernel.log": "0d515fc56a9cca534ab02302dcdff436ba2236e3e73834532ce48a439b7227f2",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock00.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock01.kernel.log": "cff188e1452f7205c8d301512ff86e653aa6d451a718bddf9d5a046859beb887",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock01.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock02.kernel.log": "2fce41ca1858f19c2d341b7ade18a62a3d24b84baa22b4f3cae1ccb2a27a22a1",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock02.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock03.kernel.log": "cb3012908cbee8d281ccefa3fd5b28d4cece134ff9e4067792123c619cc9aa4b",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock03.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock04.kernel.log": "0ce512c1480445da92e942b257f1bfc8f154605dcbac572ca81a632158450c43",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock04.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock05.kernel.log": "7d4c4298a01bcb1b37bd388168165059ef97e48c708778b1dc819bc6ecf418de",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock05.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock06.kernel.log": "aad89ce38b05179fdf5c9b77521bfe352fc85a708b8cdc7fe71bcd3840064142",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock06.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock07.kernel.log": "8261fe870f301172d36dbd1665ef664ee239849555c5623580f50fde5821a35b",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock07.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock08.kernel.log": "214241520904e050b6c6676c928e7ccd47ec730b7f17d432e20c41385c8ee54e",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock08.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock09.kernel.log": "8d32057c49246a48cd2df9ec5fc5e0a5f02509c3ea1ba761a37713bc05fd3920",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock09.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock10.kernel.log": "2b44cf1b134bba1b25782a10b59f2c97ca7a08f49a9894c7bdf66d223931b589",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock10.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock11.kernel.log": "b20499365f9349e45e4b5736e0a36d1be1ba46a2263dfb8e828c5fadaffad19a",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock11.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock12.kernel.log": "6d01370d4a528b44edfb38d486224774eaaf6cbeb15ad24a866a5cdce5e46430",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock12.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock13.kernel.log": "123ed5a0134992c7c3133f0c558716c293e941d081d813387616dbd1f9682972",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock13.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock14.kernel.log": "f3f652b8d8771b91168105fe8599cc76741b5d3ad8394ba1bd277166bbaa8a21",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock14.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock15.kernel.log": "07872313f853681c5df77ceb6a4442e65e5587e0e48b8dfae081fb301c8bf860",
+    "logs/Conjectures.LonelinessKZProductDataThirteenBlock15.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataTwelve.kernel.log": "9cc28c87da70f30f7497c4bbcdc7f750129fa91789c401561890d22d31860e90",
+    "logs/Conjectures.LonelinessKZProductDataTwelve.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBase.kernel.log": "b1186ac6f5c5edf79f6b87684922db421744e48cbad96ce490753f6adc46d0a1",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBase.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock00.kernel.log": "a3944f57e685dd96d37840ab6ed67113237f3c9ce996ed5917ff737f3eb24219",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock00.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock01.kernel.log": "27191b2315268b2d5d232cfd213a30a546acba2f63633e4a62fc505880110e72",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock01.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock02.kernel.log": "9cfbb17fa8a4a016a07c7bcbe53849603791ceb475e15ea8dcb99b118687ea86",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock02.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock03.kernel.log": "9fbacd2001bbfb42da18ddcb7a1c0b106d1e21f750a1c1bb97a832a0d641c120",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock03.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock04.kernel.log": "a5e9ab964759b9c26b10032eeb23f74f82fecf43c6da1af26d2c98d960fe6782",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock04.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock05.kernel.log": "91bf2dd370f045fbf3c34b8b3dd57c472ea281300e31609aa92dd917ee294888",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock05.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock06.kernel.log": "0b37573ff718a1241aa555ba4b4eb2ff71e56954be9029a1375dd5aae6e486a6",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock06.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock07.kernel.log": "717eed8fc4a88de67ac9639d3ffd0453d07af2036b672cbf9ecee2c256280230",
+    "logs/Conjectures.LonelinessKZProductDataTwelveBlock07.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductFast.kernel.log": "18282e3a3f24905154d54cc649f44a2beaa3357a28272b9288b2cc857af9c2da",
+    "logs/Conjectures.LonelinessKZProductFast.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessKZProductOrder.kernel.log": "cf8406d4c0e428d187ac9285979cf32e2757b9bfdc04aa5f0b29bbeee17f8184",
+    "logs/Conjectures.LonelinessKZProductOrder.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularForcedDivisor.kernel.log": "df5d02a31e86825ca4ce6de8b2c165b6996911f8ef9a6ace5d8bd6fe0bf4093a",
+    "logs/Conjectures.LonelinessModularForcedDivisor.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularPrimes.kernel.log": "1adc83c150426b81ad79c319d731888885eb3dab8940a452ffd3ac3985c06f55",
+    "logs/Conjectures.LonelinessModularPrimes.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularTightPrimeBounds.kernel.log": "e33bf162a15674bf372bbaae97a475e3062b53babde2e6a261e17f394d6604d0",
+    "logs/Conjectures.LonelinessModularTightPrimeBounds.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularTightPrimeDataEight.kernel.log": "7d97fde5f1da0d597cabcd36a7e3ad752635b3ef3839799ea97a452bbf2ade1a",
+    "logs/Conjectures.LonelinessModularTightPrimeDataEight.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularTightPrimeDataEleven.kernel.log": "135c2a5a5ab9692a5ae2edff6bda252ab2f8a4ba9be937933cab5a47862362f1",
+    "logs/Conjectures.LonelinessModularTightPrimeDataEleven.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularTightPrimeDataNine.kernel.log": "310b731bab3cc2852b1e90f65c03a24b1c44854fba0ef97e4407243820f02338",
+    "logs/Conjectures.LonelinessModularTightPrimeDataNine.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularTightPrimeDataSeven.kernel.log": "b2700b770afa246c08b8d4fd4d3bc983757220c38e1c46e333eb167f189fdb48",
+    "logs/Conjectures.LonelinessModularTightPrimeDataSeven.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularTightPrimeDataSix.kernel.log": "598d9e5c6863b201f47d1281cc09d635d08845f6d5524b55434c8bc5601c0613",
+    "logs/Conjectures.LonelinessModularTightPrimeDataSix.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularTightPrimeDataTen.kernel.log": "7633d0b61e92632f7a1a4fd8c1990413a98f7ff20cbae7653dc7bb2399377406",
+    "logs/Conjectures.LonelinessModularTightPrimeDataTen.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularTightPrimeDataThirteen.kernel.log": "986f9fb82c36bba821c5c747e4e26472e0684d5a33a9563c37dfb771d4014ed7",
+    "logs/Conjectures.LonelinessModularTightPrimeDataThirteen.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularTightPrimeDataTwelve.kernel.log": "d8a434401fd15df9aa31e5294f92cd29fd38f11d7ef5d21aacd1422fe3d3f5ce",
+    "logs/Conjectures.LonelinessModularTightPrimeDataTwelve.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularTightPrimeDefs.kernel.log": "444aada91220032fdd41e9f6c66971d032ffef2a77e3dbf65d8970d9eb9ff98d",
+    "logs/Conjectures.LonelinessModularTightPrimeDefs.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularTightPrimeProducts.kernel.log": "e75489afc0d3d8c019bd7d1b843186df982a5a16b627362a7d4409e3bdd50aad",
+    "logs/Conjectures.LonelinessModularTightPrimeProducts.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessModularWitness.kernel.log": "215fe2f525ee3eefe932cbe865c83215dee95c3c14a0fabd8077fcb65c386f86",
+    "logs/Conjectures.LonelinessModularWitness.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessNearestPlane.kernel.log": "0bea0dc6be518207e836ff0582c948bc001d8142813e4c7b5cfc05e063a63f9f",
+    "logs/Conjectures.LonelinessNearestPlane.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessNearestPlanePrefix.kernel.log": "b8dd671ba492c375506fa125431e85d803265205ef12bcab2b8f24b73e9cde65",
+    "logs/Conjectures.LonelinessNearestPlanePrefix.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessNearestPlaneRelative.kernel.log": "0d52f5ff8fd46136e559ef9ecc5901653df27d0c4fad4c772d13c610af20a901",
+    "logs/Conjectures.LonelinessNearestPlaneRelative.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessNearestPlaneValue.kernel.log": "598cf0582fb1ba9072c58d9221ff43aa42e4db89df08a1c3cff864ded3bc1c02",
+    "logs/Conjectures.LonelinessNearestPlaneValue.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessNormGeometry.kernel.log": "ccf8f11627af4fb065c5409deb0277e2afa4d2bf026df5c774342fcea4fa4785",
+    "logs/Conjectures.LonelinessNormGeometry.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessPrefixProduct.kernel.log": "ce508b7bb5c7fdb12bb438fb4d81bd7615ff01f72163b2596907846b81667477",
+    "logs/Conjectures.LonelinessPrefixProduct.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessPrefixProductTables.kernel.log": "496a4a0f18cb38ad83444d726d9311b2d0c231be125aa9b03167b83f61278881",
+    "logs/Conjectures.LonelinessPrefixProductTables.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessPrimitiveBasis.kernel.log": "174b85711e66b6cdc79b8cba25ac6f67407aff449b36d2f84cb08e7abac5fd69",
+    "logs/Conjectures.LonelinessPrimitiveBasis.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessPrimitiveSpeeds.kernel.log": "8699251d88669362b4f0cc5de9b0a696201f297f248761d7cb1c0c00174f0b36",
+    "logs/Conjectures.LonelinessPrimitiveSpeeds.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessRational.kernel.log": "f11f5c56de63f1dedd0214b36fc04f2b4a14a4f9540134552e8b318d7b1f8c66",
+    "logs/Conjectures.LonelinessRational.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessRationalSubspace.kernel.log": "f065daae188d67a83632b686914ad6cda8907a064822ec7956168fe5e991c69c",
+    "logs/Conjectures.LonelinessRationalSubspace.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessSubspaceDensity.kernel.log": "92764656e41481a798fc728a27450c4bef1773ce1a4ad8ba60fcd5aa69af6144",
+    "logs/Conjectures.LonelinessSubspaceDensity.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessTightNormBounds.kernel.log": "587aa2662195bf156b6c87a04277ebd6544f8af5dcda73d3ecba88617057f98c",
+    "logs/Conjectures.LonelinessTightNormBounds.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/Conjectures.LonelinessTightNormCommon.kernel.log": "bffff6c5664063e442dfda619ac9beda27333d5f28fd0a59166af0e6177f65ce",
+    "logs/Conjectures.LonelinessTightNormCommon.source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/all-owned-audit.log": "5f45667a3d857837491b086743c0b95dfddaeb41784393aa12a6b0dcc570c4f9",
+    "progress/Conjectures.Loneliness.kernel.json": "1471eb2378671607d5e3650f1e1f8dcc3a8668646fe5a102533870749defd130",
+    "progress/Conjectures.Loneliness.source.json": "179de0988dd6707bd82faa80a9fa65bfbf1f80629ed91bba83a28ff20e04f366",
+    "progress/Conjectures.LonelinessCoalescence.kernel.json": "01abe66228e783c74489f0bf02b1a163d7dcae91954e86c0771afee55859619b",
+    "progress/Conjectures.LonelinessCoalescence.source.json": "42812890750cfbc30f0861a08325bd0a795170e0b8fb57f5371e714ebe7c19e0",
+    "progress/Conjectures.LonelinessCoalescenceValue.kernel.json": "59b7114de42108c0b116603862d3f118a528884366fd6272240438e189e2ff97",
+    "progress/Conjectures.LonelinessCoalescenceValue.source.json": "5f5a391fa9168f6fddd9b5b86854977e539a4c826812da4557d2295f49434b53",
+    "progress/Conjectures.LonelinessContinuity.kernel.json": "dd25aad7c7df38bc666002dcaca4919bc0e54d315000c61d706816acebf06eee",
+    "progress/Conjectures.LonelinessContinuity.source.json": "72087358b943ce0dec8a868080bebef1d7a4838cf9265a184585c5bacf6f966c",
+    "progress/Conjectures.LonelinessCoordinateClasses.kernel.json": "c74bd1066841074ce28e27cf1591368715964ad4bae7666d97f02a27d38ba411",
+    "progress/Conjectures.LonelinessCoordinateClasses.source.json": "f4b0a4d780d09556d13d4087dceaf922298a91fd0ceb7483b572ae7c0da5d59c",
+    "progress/Conjectures.LonelinessCoordinateSubspace.kernel.json": "c5e55586cfccb78a025de6d69d9be5ec225e24cdeeff902d1a7dca600b99fd81",
+    "progress/Conjectures.LonelinessCoordinateSubspace.source.json": "dd021d40b9a4f721f57aca59f6dc7e83e3b087906953ac18a197f496f8ada588",
+    "progress/Conjectures.LonelinessCriticalBase.kernel.json": "42c5c22cce12adc002530fd9081b60cf4d453800122974ae2ea9be910c8146d9",
+    "progress/Conjectures.LonelinessCriticalBase.source.json": "e5430c38567797bde00a9b442cb32e4d64b0702149fd8573559ec13badc674f2",
+    "progress/Conjectures.LonelinessFiveFamily.kernel.json": "c3ee7361f7a753763e7ccd9f3068745f2c6f56a660cacc4d175e4d6230329ea2",
+    "progress/Conjectures.LonelinessFiveFamily.source.json": "d7021d28e6c088d2c9b32b8cff0809bcf8958b72b6791bee18196c9a9b3a0cca",
+    "progress/Conjectures.LonelinessHyperplaneArithmetic.kernel.json": "21661fc235c7c9f52897cd0422722a5d128ef182bf0e29d00e2b1b6f17c18283",
+    "progress/Conjectures.LonelinessHyperplaneArithmetic.source.json": "c822e8bd6263500301c826dbbda4cf71b844778c365a030961a9833657fa7ffd",
+    "progress/Conjectures.LonelinessIntegerDirection.kernel.json": "3c129ceff0581f3b9bf555dbd05a1515f40d8a4107d1cfe61582b9662dc1b3b5",
+    "progress/Conjectures.LonelinessIntegerDirection.source.json": "bcc4bd010860bfef853a507bdc84882fc7ba752e304263fa2ab4564d107fcf87",
+    "progress/Conjectures.LonelinessKZBasisGram.kernel.json": "9bf4b4bfe8458f3c49287ca0cbf3776d9debc401d77d2e5e5b2396a196c78825",
+    "progress/Conjectures.LonelinessKZBasisGram.source.json": "ac17b3111863bf6d7fd33abff70abbb389c89592d08644a2df91ed74f8eb2b2d",
+    "progress/Conjectures.LonelinessKZBasisInteger.kernel.json": "d3251ef24673603099f4a1e26746207e0bac047999c1b3d199b406d0182961ca",
+    "progress/Conjectures.LonelinessKZBasisInteger.source.json": "8a93e58865f95b8e06828aaa11c487321c144741ecb03f1780c717115f7a9a4a",
+    "progress/Conjectures.LonelinessKZBasisOperations.kernel.json": "fc16ca406057004d8ac03284780b04f688a7e12304dea8b8f1c4fcd57c5a9d91",
+    "progress/Conjectures.LonelinessKZBasisOperations.source.json": "2ed79c195852c92a7b3af5998626d7ec6204bcc8a41c012d1376e1b18a400cc8",
+    "progress/Conjectures.LonelinessKZBasisReduction.kernel.json": "52f67bb157c6310f280a9667dbf112d315725bfc9ec5d2e2263e432474ef5b54",
+    "progress/Conjectures.LonelinessKZBasisReduction.source.json": "c735c871e5a13e76129f74dc08acb1a892c2e0abe97a52368fab44a8177edcc3",
+    "progress/Conjectures.LonelinessKZBasisStep.kernel.json": "f8d3b725aae3874a12f5fa3668264e3c60cf21749fb5147af688e1f1bbcc17ac",
+    "progress/Conjectures.LonelinessKZBasisStep.source.json": "09c3304bd4df47a6fc47c67c814f8541de5091a7adc071fd8b1c40286cae5c0a",
+    "progress/Conjectures.LonelinessKZBasisVectors.kernel.json": "06bf2fca593e649612d68daa56efa40c7039efb75ed63d1c13d31cec773a56ed",
+    "progress/Conjectures.LonelinessKZBasisVectors.source.json": "d8b4e74d0da5f644fb0ce05c09fc086d9b5b9e5699cb9cca48dfbf3d61e83f9f",
+    "progress/Conjectures.LonelinessKZGeneral.kernel.json": "a8fb8fd9ab51335f9d2360a967c8c9cd0d59bed28cbd33f25299df4b2b0edeae",
+    "progress/Conjectures.LonelinessKZGeneral.source.json": "d8faeda02eaef3a891abc6edd1f972f21db64fad4496191002effbc2c4742ed7",
+    "progress/Conjectures.LonelinessKZProduct.kernel.json": "8496293a6f62a765a75adda24f2a9ba4cd5e5688dc04c8f9b51bdde71ffd22f6",
+    "progress/Conjectures.LonelinessKZProduct.source.json": "0d066bdb5641e3e20d644539349fadae38be206ee4ccff70dec133845ad0aa45",
+    "progress/Conjectures.LonelinessKZProductAssembly.kernel.json": "edba3eefd35c5388746457d0212178f04ec84690c2c85a9f6d51e62ce0ec95bb",
+    "progress/Conjectures.LonelinessKZProductAssembly.source.json": "e8e849aa38f302f12f468efda477fafcc0601e3a109e930f9e1aba30045e62bf",
+    "progress/Conjectures.LonelinessKZProductCertificate.kernel.json": "460793b68f3eb2666397e61561d2a57f3396c11b9ff02a319c001bdf52f85bb0",
+    "progress/Conjectures.LonelinessKZProductCertificate.source.json": "74b8400d0756584cb879efcace6fa51c1df67e71e2e0f908664cc2e50b5420a0",
+    "progress/Conjectures.LonelinessKZProductDataEleven.kernel.json": "3d7f2c624471884a270bf071acaa4310f1d635e5960105f127fbfe0218c739c1",
+    "progress/Conjectures.LonelinessKZProductDataEleven.source.json": "c352de78bd361346a8209dad96cfc338bc3db74b2ad4c05f6c070bacf4695fa9",
+    "progress/Conjectures.LonelinessKZProductDataNine.kernel.json": "bb22b2223aaf68915572d6b7003aab1b0f123e16a4792fadc1974d7e7366da17",
+    "progress/Conjectures.LonelinessKZProductDataNine.source.json": "4b3137c9c14fdba51f696b047d1570a44ce8036f00e33fc213fb04c4b11ec112",
+    "progress/Conjectures.LonelinessKZProductDataTen.kernel.json": "a9c0544f17839cc478e7b4fc01d068ba45893d9a2ebd6ca9bcac349972266627",
+    "progress/Conjectures.LonelinessKZProductDataTen.source.json": "52b5dd20099740218115b7e15ad305cae2abf00bc5bef579ead67430e61b24e0",
+    "progress/Conjectures.LonelinessKZProductDataThirteen.kernel.json": "35a7ff6bdb265f6c33aefa1b17d0b673ec408f91a1d1a688ec4355bc23716c1a",
+    "progress/Conjectures.LonelinessKZProductDataThirteen.source.json": "7899a09b3db8128fe715e7035081358af9cd569d98202491d8cec4a39dc2be2f",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBase.kernel.json": "46ddee70e08b4dcf3ecfd57f55d6ee9202886445f5da60d1d36495a4a8bfeef4",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBase.source.json": "9b800ea5307a6dc1e4c488860d4dd989a7553e7fba95e424b5141f221b2a84e2",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock00.kernel.json": "b7edb43798e8f26c55172d9976a943d411eb3121e3e6c0fd022af06cdee62d92",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock00.source.json": "801f8785e9c684cd857cf473003062b1cbe8b1c2928482b81f2a3637af3fbbda",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock01.kernel.json": "70fa187f669e161999775089fab42b4db53a0d46a757be08de3d279707b51517",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock01.source.json": "df1d085fa9ec51aa548fc104df71cfc31c06b419b71f1fe709a4e39b45e2697b",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock02.kernel.json": "58c52b98fb856ca754e613b79c79c7b34c66aafaa2f44064d677603d4fa36db5",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock02.source.json": "ee28e70dd29c693a4e6bf53ed425bd3eac17ae1b145572149186ef2bc21db659",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock03.kernel.json": "343980b68d5a4f5edeb0cc86b8aff8d552466c22779201cf7c5fb92098df5d69",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock03.source.json": "2ef21afa8b8472fbf6fb50ac5609953280462a47b0e66caeb5b6e334dbacf326",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock04.kernel.json": "79e71eae788f44814a3157662fbb0f8789a22aea8c332f55152c1488f3cf95e8",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock04.source.json": "c0bc74e1d8d121f7063c8e9504d0ec6c32e0355ea0d50a6db12f976cfc903249",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock05.kernel.json": "563a926efb4f89da635ed64efe6480c61a77af62996a9d220e7dec077912591e",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock05.source.json": "f213a868a351f0fd3ffbd5e190211bef03803447108be7bd8b8a687026a5e7a4",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock06.kernel.json": "cb3701df01fb0fbaae4a7af942b90421a7bcde7f509b8d38b0849ac9f26b50b4",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock06.source.json": "ae5bb9e512e1ba81bcc15cdede780aa9842ea203b42899501b58fc881ec44f4a",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock07.kernel.json": "7ad0b951d3b6e184e61b1ef9bd525dfd4762ab92f5f9d177ca2ddf3a7baf4076",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock07.source.json": "d5196925bfed9b634f48f89960d5d1df7c7710a3e85099e630b81000a99bd1c6",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock08.kernel.json": "c96d90027f83aabf03e84351b6778d3f9dee4566ed86a0024c657eed6f3c1aa0",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock08.source.json": "8f3e832778390b67da90061212c73f56b564d733d89d763edae60595948a877e",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock09.kernel.json": "cafb7c97145196f0d6177b05f7139a5eaaca75720c2bba410ee9111d381cc11e",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock09.source.json": "fbf6a35e18abdc60735c7e52433ab36a4ebab773ab110c1b9c1112565da58130",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock10.kernel.json": "b379541e05b3d09b046bb17bdc8126efec597bf1005b5647e264050f3abc2fe9",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock10.source.json": "0d5bc92390fdb2c61809d8e4f9ffac3adb96cd2e81a999296165d2a5ad75849d",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock11.kernel.json": "b5e0fcd4ecbe4c62d79ad977cfaa9a8e30bbab5623010b85dfa32b74eea8647f",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock11.source.json": "9fa8d7344c5b7835cd1ec2eec94360ad396077a93e1be46f4828f8accb072b02",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock12.kernel.json": "d0d9ea191476e76f07de6a900f6e8e3cb42b55c69da38f724bc864a30a283abe",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock12.source.json": "720969fadf244fa38c4c02049300e6dbb8b1f0df2b71e64ad948d54fce71f288",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock13.kernel.json": "f6c15636f98e0392b9c448e15624375750346450b48f7ec4c8c33e2a9aab7e85",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock13.source.json": "8f205f93b606366f0c18fb3d8910d3b4b1f7a29c873ec4f8779c960743d092cd",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock14.kernel.json": "6cfa43b8e1ec24e6e0672efaf979447e2a01d808ad74a41dd295b1d2dbba17f6",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock14.source.json": "ce960a89ffd92862fd5d8449f90fb5f486df6628652bee562cc07ba454fdeb8d",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock15.kernel.json": "989868ba58a324d1de5428229ae6d0218dc7e18326c9330897962155bf414541",
+    "progress/Conjectures.LonelinessKZProductDataThirteenBlock15.source.json": "c01c15db3de3f4fc499f363ba0c9aa2efcd8300be528f0d5e407a88cf86e42ee",
+    "progress/Conjectures.LonelinessKZProductDataTwelve.kernel.json": "a6fdd0aa9efb9480cbc4dbebb288ca0e141d15d74c2ec3de60bff1d619f7dbdb",
+    "progress/Conjectures.LonelinessKZProductDataTwelve.source.json": "747c845e97bd031d127545312b43e3cf2c37c4e412b61fd7923e9aee97eb114b",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBase.kernel.json": "8e1a68816f77bdce936ac27297ec578838f7dacc794ce148c0d31d437e0aa305",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBase.source.json": "9c12526fcc2204aa1efb434d0a07f5ee728f1a11a4a2b8674e127b0b12c84079",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock00.kernel.json": "3ab2fd663116237cda9b722518a41b4fd3b6194273f2b6ad1944c1c400b8df1d",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock00.source.json": "96286d100fea87286e1879ff04aa7d23eb358cd5fed80299f686ee5777de42d8",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock01.kernel.json": "bd3bcf7dcba962b471bb0bdf4114326bc170a27cdc2977622971ec9647d1c259",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock01.source.json": "909c2721856ec1e3bfb8958edc597989a99a76818a5d5590bdfc06c910b32191",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock02.kernel.json": "5867453f0a27e5800fbecadd24bc076d288207abeb035cb982258141141c3a82",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock02.source.json": "3169171f4a30ce1e9e2b9500cd8f47c4110ee297c65a24267b50adbc15f02e25",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock03.kernel.json": "c799a421d3d43eab397987bdd00ba33cc67bbce3c2aa0701abbc992510adebd6",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock03.source.json": "0604b8a215389171ae8ce9a193acc945735c8d56238df74b682ffa53a227a919",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock04.kernel.json": "19cd2253a98d41c2976bc43cd709e751ff138f366a8dcebc51e691d411fa1557",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock04.source.json": "4647e7fc69932a62642b57eacec1e885ade1afbc50bf9782c7cffcf0914cda04",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock05.kernel.json": "37037578784851dbd86e4481b485e9b56561bcaabff718a7548c4151d48dfc6a",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock05.source.json": "7b418f2cef9705e3f32974ac1cd9eb4cc87e3da2c54ef94ec5b506c5faa2d319",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock06.kernel.json": "249ea004a634433e5a4eee7ec2063f0370af5ca30e824c4d25e2f13e8bba6df6",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock06.source.json": "437bf873e16a0e65ddaac505fc7af0d3bc5a0a7d4270b6e68372875daab544c2",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock07.kernel.json": "eb2d8d7299439300750599bcc5d5ddadfcdbdde09ed44517d2c17992e450c8e4",
+    "progress/Conjectures.LonelinessKZProductDataTwelveBlock07.source.json": "46bbaa35b4e24b55a0e845a1a22750f187d6bc3d029f4aae2e4e52cac5c1a16a",
+    "progress/Conjectures.LonelinessKZProductFast.kernel.json": "87eedbd5b29fdba63fb5ecb2ccf5f9f5fb30a6f7b000c227c2099147e7459ada",
+    "progress/Conjectures.LonelinessKZProductFast.source.json": "a63ac2737c8f59a56d2af9bfc939adf2288b02f7bf6374abd53209c9deef67b1",
+    "progress/Conjectures.LonelinessKZProductOrder.kernel.json": "33b9357284dca53f70777d1cb3a9ca434112ccc9ee3b1fe4f73b648c6f43fcd7",
+    "progress/Conjectures.LonelinessKZProductOrder.source.json": "a1e159ef461d7fdd67d2ff5d12f85db9a8398292c88c3388a8a1a8ed1b18bf50",
+    "progress/Conjectures.LonelinessModularForcedDivisor.kernel.json": "ac01dc949cc8ffb813ed6ce76dab92539b750bc26d262900282b252e37f47429",
+    "progress/Conjectures.LonelinessModularForcedDivisor.source.json": "f7aa64d9b121911b31b832f915e2d8687a6fa2b6e0034b8ca032498c18683e6c",
+    "progress/Conjectures.LonelinessModularPrimes.kernel.json": "d819b21d188011ea941e6a01e061db76d9ca0a2b10468196f8a5665a94a4b440",
+    "progress/Conjectures.LonelinessModularPrimes.source.json": "f2abe17818be969d1700943746b4c3bf7d214ec0329b0d4549093caaf383b386",
+    "progress/Conjectures.LonelinessModularTightPrimeBounds.kernel.json": "a5af79084727d86a3c9a593a9f4016ec6f9f63ccde873d7c537f8d662bf17645",
+    "progress/Conjectures.LonelinessModularTightPrimeBounds.source.json": "d17a55c2fd9f8743c8bc7ab6a5cf5491f3a29162a15579667ae3351b70b39153",
+    "progress/Conjectures.LonelinessModularTightPrimeDataEight.kernel.json": "fe20f6268ae72c702dcf9e58840bcf59dc88926907b06ac3eeb0ac3af5095509",
+    "progress/Conjectures.LonelinessModularTightPrimeDataEight.source.json": "e62d397b5d2e31a0773f183f8218ec9337489620fd27c6ccfb55c9243357774a",
+    "progress/Conjectures.LonelinessModularTightPrimeDataEleven.kernel.json": "e1d05a472bdc3a83a30c4417d24164e70aa4b41e463bf877a8a6d44392c03404",
+    "progress/Conjectures.LonelinessModularTightPrimeDataEleven.source.json": "04da767e4dbe473f882825f162eb95bf0418c56a6aae185b1683cf1ded4eaa02",
+    "progress/Conjectures.LonelinessModularTightPrimeDataNine.kernel.json": "aa7a0cd9f1b851b1c548987dfed0b3dcbc7362fde66d1d9c7d165fd7862aab19",
+    "progress/Conjectures.LonelinessModularTightPrimeDataNine.source.json": "5122d4aa8bd9d77908d40ac54787e36f8fe41feb0bc6db448cba5f16bd03a4f8",
+    "progress/Conjectures.LonelinessModularTightPrimeDataSeven.kernel.json": "8c84371019d90b774018bc5c370367f27ec95de4409246e9782fdb2706c674fa",
+    "progress/Conjectures.LonelinessModularTightPrimeDataSeven.source.json": "36287364ac20e42f6cb48cdfab6652c38ce0c61b45cc56cc8797e66707e6cdd6",
+    "progress/Conjectures.LonelinessModularTightPrimeDataSix.kernel.json": "82fc89ee2d921f0794a15f28fd6ebb103845d407a6cf262e16667f59ee75dda8",
+    "progress/Conjectures.LonelinessModularTightPrimeDataSix.source.json": "7cb421046fababee0591cb8b0e0ee6f3e3dc072c4ec69e02dd3fcfee739d0299",
+    "progress/Conjectures.LonelinessModularTightPrimeDataTen.kernel.json": "08eeb9414b490d2c006fd27855093b75b2f631d8192b5140c1af90c605d6e7c1",
+    "progress/Conjectures.LonelinessModularTightPrimeDataTen.source.json": "fbf260bc68fe7e9cf0dd4152dc492e08493c76b23a0486bffaa21fa042aa754e",
+    "progress/Conjectures.LonelinessModularTightPrimeDataThirteen.kernel.json": "fd344de8101a67e69d0ae97baacec454e71d4bdbc32342ef9afb756adf51fa41",
+    "progress/Conjectures.LonelinessModularTightPrimeDataThirteen.source.json": "e96a0478126266b63f165e21941488f1cb433fb8a743dca9b3a539ccfc0a36ba",
+    "progress/Conjectures.LonelinessModularTightPrimeDataTwelve.kernel.json": "9ffa0db781d2cf6be9b213b4a91f417fd07a38d4a5c9e792b3c37422af98b5f3",
+    "progress/Conjectures.LonelinessModularTightPrimeDataTwelve.source.json": "968bfaf8e8ac95144808447e880d78d2ee905cdb6a169013d9216b8f945879af",
+    "progress/Conjectures.LonelinessModularTightPrimeDefs.kernel.json": "c9f911d4e261fee379b56abb60cfb696c677522877a4477df06942b7481d3129",
+    "progress/Conjectures.LonelinessModularTightPrimeDefs.source.json": "a0e50d2eb332f986bb1eb29fbd917d6004ca25ede8b377c7cca8b62c11fa3aa5",
+    "progress/Conjectures.LonelinessModularTightPrimeProducts.kernel.json": "69aed539f9e76a59aaedecad8cda5df133a6538a63723f0a1869d76f18eaf2d9",
+    "progress/Conjectures.LonelinessModularTightPrimeProducts.source.json": "a8a433ca0ac3f95fdf09d3a74718a46ca84ba9caa90a094caca8bdeeb8494528",
+    "progress/Conjectures.LonelinessModularWitness.kernel.json": "15d11a588584fe5600f12598bd63ff7d9b5f791e42dd225f44a3887101bec67f",
+    "progress/Conjectures.LonelinessModularWitness.source.json": "382b1a5106b234761c7467742ad593e276e83a4ed6a40738f73fd8584357f122",
+    "progress/Conjectures.LonelinessNearestPlane.kernel.json": "400617152ffa9dd60b11e49fcd4cb0167b943741710c1071949814a5ff411902",
+    "progress/Conjectures.LonelinessNearestPlane.source.json": "fdf575dc0cfc0fb40d4f3827be2e4f1e0182b972b82bec0d0922262caf8a6a70",
+    "progress/Conjectures.LonelinessNearestPlanePrefix.kernel.json": "d648976ec8ef1aa285fbc8852a99dc0f6d8a38e712e8d5408e67b954df648d07",
+    "progress/Conjectures.LonelinessNearestPlanePrefix.source.json": "d13ee35cfd4628b0eac143972b992e702b71db7186aca92698223be3afb36012",
+    "progress/Conjectures.LonelinessNearestPlaneRelative.kernel.json": "9c9f43fd366106573cafcd69f500cca2310520483b861fe0ae9f7e2794771bfe",
+    "progress/Conjectures.LonelinessNearestPlaneRelative.source.json": "c12365c8a719d288450bba05144878cdb7171f906a55ef9c3d4ee2db5e7acda8",
+    "progress/Conjectures.LonelinessNearestPlaneValue.kernel.json": "f30dbaceadad5fd3cae0500b8d7b63b83c91ef7398c056d847b8870a62777899",
+    "progress/Conjectures.LonelinessNearestPlaneValue.source.json": "242c7716abb51d3052676b98650a1e546709f3fe37d8c1562f3f04f013644f8e",
+    "progress/Conjectures.LonelinessNormGeometry.kernel.json": "21664c9bde4e30449809eeb03a3cb40b22c15fbc365fa9d5dc7ed1bc8d941dba",
+    "progress/Conjectures.LonelinessNormGeometry.source.json": "20ba75653690f604a1e32bd7a3c20b3df799b5b63eae3cb17b0f643f247411b7",
+    "progress/Conjectures.LonelinessPrefixProduct.kernel.json": "6e6e24fe67638593f40e583e6857ea7df55ff14515da3816aaf58f6c4846de88",
+    "progress/Conjectures.LonelinessPrefixProduct.source.json": "70ac6d80af342e68e71c8734a4dc5009f2f4bb799bcc38a90eef58baf837a33f",
+    "progress/Conjectures.LonelinessPrefixProductTables.kernel.json": "6d021193134ede382186f6aba9bad05729e793b618ed4f06f111513ae828874d",
+    "progress/Conjectures.LonelinessPrefixProductTables.source.json": "ca615fbe0ca950bd16e26e3d90b80074a32f07a9225616e24bfb0c2dfe168f78",
+    "progress/Conjectures.LonelinessPrimitiveBasis.kernel.json": "1ce3deaa4762b0eef0a88ad9516715f5d5af52b5e093dbf8842a3e78ee327d9d",
+    "progress/Conjectures.LonelinessPrimitiveBasis.source.json": "18a1502929166f7ea7417e8213e8c3f25a1f27564b4aabfa7068d4176026a492",
+    "progress/Conjectures.LonelinessPrimitiveSpeeds.kernel.json": "bf125155db4b2adedc40e880d9ac6c7887fa5e3ca6445217856e1bf77a7f72f1",
+    "progress/Conjectures.LonelinessPrimitiveSpeeds.source.json": "b12919835b1e86cbefc3a8e9254adcd483123be78d117ac31d64dc248f424652",
+    "progress/Conjectures.LonelinessRational.kernel.json": "dfa6106a6fcd864c36eae3baf0a14b65456f57ed73cdec0e3fc0c7db9527ce4a",
+    "progress/Conjectures.LonelinessRational.source.json": "befac207c3e55cb350b4cd0c678d666c97f4933c4175f56d0a37cb9512a90c6f",
+    "progress/Conjectures.LonelinessRationalSubspace.kernel.json": "53eec3a23243537996fe2924a4718643ad76a3c2fe2793f94911ee2147a11e68",
+    "progress/Conjectures.LonelinessRationalSubspace.source.json": "f54a279d188756f811843ba97ce1c4489d9d5663e4690c871d54eb3c409dafb9",
+    "progress/Conjectures.LonelinessSubspaceDensity.kernel.json": "9558d80076453168ea0ee8b043fd5ef36248b422ea90cad9cc653ac23caf9a61",
+    "progress/Conjectures.LonelinessSubspaceDensity.source.json": "ecaa549e05dbcafdc39903ef5e37db48a4eb7daa8ad0954272fb68dbc91985f3",
+    "progress/Conjectures.LonelinessTightNormBounds.kernel.json": "5ab664dac79560908fe7cbc1a6ec4187bcb17850725b02224fb95194adca02ae",
+    "progress/Conjectures.LonelinessTightNormBounds.source.json": "fd937c307d866cfbfe0ee8854685b57d85aa7af3ac0e0a5dbfb4f5cecad276e8",
+    "progress/Conjectures.LonelinessTightNormCommon.kernel.json": "78b5a0b39ef419f6857f40b4d139b3d3dd65dc1c087a3ad6b60645abdb6eceaf",
+    "progress/Conjectures.LonelinessTightNormCommon.source.json": "484a971adee59b63c99f3689dd2ddd001d99a0556466eca96672c783064597b7",
+    "progress/all-owned-audit.json": "720aaa9c3cba4bcdf2c34c8273deef79a7cbf109b2aab7ad1e754dfd11bf12ae",
+    "receipt.json": "fba4b952a87271f9691e983dd69dafc0be5c07617e412884eb82f2894ec2fef5"
+  },
+  "preserver_sha256": "479d825d86c71dcc4fa28fccadf286047717b7ac2440755e317765383ff67844",
+  "project_modules": [
+    "Conjectures.Loneliness",
+    "Conjectures.LonelinessCoalescence",
+    "Conjectures.LonelinessNearestPlane",
+    "Conjectures.LonelinessKZBasisVectors",
+    "Conjectures.LonelinessModularPrimes",
+    "Conjectures.LonelinessPrefixProduct",
+    "Conjectures.LonelinessContinuity",
+    "Conjectures.LonelinessFiveFamily",
+    "Conjectures.LonelinessCoordinateSubspace",
+    "Conjectures.LonelinessKZBasisGram",
+    "Conjectures.LonelinessNearestPlaneRelative",
+    "Conjectures.LonelinessPrefixProductTables",
+    "Conjectures.LonelinessRational",
+    "Conjectures.LonelinessCriticalBase",
+    "Conjectures.LonelinessCoordinateClasses",
+    "Conjectures.LonelinessKZBasisInteger",
+    "Conjectures.LonelinessKZBasisStep",
+    "Conjectures.LonelinessKZProductCertificate",
+    "Conjectures.LonelinessModularWitness",
+    "Conjectures.LonelinessSubspaceDensity",
+    "Conjectures.LonelinessIntegerDirection",
+    "Conjectures.LonelinessKZBasisOperations",
+    "Conjectures.LonelinessKZProductDataEleven",
+    "Conjectures.LonelinessKZProductDataNine",
+    "Conjectures.LonelinessKZProductDataTen",
+    "Conjectures.LonelinessKZProductFast",
+    "Conjectures.LonelinessKZProductOrder",
+    "Conjectures.LonelinessModularForcedDivisor",
+    "Conjectures.LonelinessHyperplaneArithmetic",
+    "Conjectures.LonelinessNearestPlaneValue",
+    "Conjectures.LonelinessRationalSubspace",
+    "Conjectures.LonelinessKZBasisReduction",
+    "Conjectures.LonelinessKZProductDataThirteenBase",
+    "Conjectures.LonelinessKZProductDataTwelveBase",
+    "Conjectures.LonelinessKZProductAssembly",
+    "Conjectures.LonelinessModularTightPrimeDefs",
+    "Conjectures.LonelinessPrimitiveBasis",
+    "Conjectures.LonelinessCoalescenceValue",
+    "Conjectures.LonelinessKZProductDataThirteenBlock00",
+    "Conjectures.LonelinessKZProductDataThirteenBlock01",
+    "Conjectures.LonelinessKZProductDataThirteenBlock02",
+    "Conjectures.LonelinessKZProductDataThirteenBlock03",
+    "Conjectures.LonelinessKZProductDataThirteenBlock04",
+    "Conjectures.LonelinessKZProductDataThirteenBlock05",
+    "Conjectures.LonelinessKZProductDataThirteenBlock06",
+    "Conjectures.LonelinessKZProductDataThirteenBlock07",
+    "Conjectures.LonelinessKZProductDataThirteenBlock08",
+    "Conjectures.LonelinessKZProductDataThirteenBlock09",
+    "Conjectures.LonelinessKZProductDataThirteenBlock10",
+    "Conjectures.LonelinessKZProductDataThirteenBlock11",
+    "Conjectures.LonelinessKZProductDataThirteenBlock12",
+    "Conjectures.LonelinessKZProductDataThirteenBlock13",
+    "Conjectures.LonelinessKZProductDataThirteenBlock14",
+    "Conjectures.LonelinessKZProductDataThirteenBlock15",
+    "Conjectures.LonelinessKZProductDataTwelveBlock00",
+    "Conjectures.LonelinessKZProductDataTwelveBlock01",
+    "Conjectures.LonelinessKZProductDataTwelveBlock02",
+    "Conjectures.LonelinessKZProductDataTwelveBlock03",
+    "Conjectures.LonelinessKZProductDataTwelveBlock04",
+    "Conjectures.LonelinessKZProductDataTwelveBlock05",
+    "Conjectures.LonelinessKZProductDataTwelveBlock06",
+    "Conjectures.LonelinessKZProductDataTwelveBlock07",
+    "Conjectures.LonelinessKZGeneral",
+    "Conjectures.LonelinessModularTightPrimeDataEight",
+    "Conjectures.LonelinessModularTightPrimeDataEleven",
+    "Conjectures.LonelinessModularTightPrimeDataNine",
+    "Conjectures.LonelinessModularTightPrimeDataSeven",
+    "Conjectures.LonelinessModularTightPrimeDataSix",
+    "Conjectures.LonelinessModularTightPrimeDataTen",
+    "Conjectures.LonelinessModularTightPrimeDataThirteen",
+    "Conjectures.LonelinessModularTightPrimeDataTwelve",
+    "Conjectures.LonelinessModularTightPrimeProducts",
+    "Conjectures.LonelinessPrimitiveSpeeds",
+    "Conjectures.LonelinessNearestPlanePrefix",
+    "Conjectures.LonelinessKZProductDataThirteen",
+    "Conjectures.LonelinessKZProductDataTwelve",
+    "Conjectures.LonelinessModularTightPrimeBounds",
+    "Conjectures.LonelinessNormGeometry",
+    "Conjectures.LonelinessKZProduct",
+    "Conjectures.LonelinessTightNormCommon",
+    "Conjectures.LonelinessTightNormBounds"
+  ],
+  "receipt_bytes_unchanged": true,
+  "receipt_member": "receipt.json",
+  "receipt_sha256": "fba4b952a87271f9691e983dd69dafc0be5c07617e412884eb82f2894ec2fef5",
+  "required_theorems": [
+    "Loneliness.NormGeometry.tight_natural_squaredNorm_le",
+    "Loneliness.NormGeometry.exists_original_prime_of_tight",
+    "Loneliness.NormGeometry.natural_squaredNorm_le_of_product",
+    "Loneliness.NormGeometry.exists_tight_gram_data",
+    "Loneliness.NormGeometry.tight_norm_cutoff",
+    "Loneliness.PrimitiveBasis.primitive_speed_basis_extension",
+    "Loneliness.KZBasis.exists_ratio_basis",
+    "Loneliness.KZGeneral.norm_square_cutoff",
+    "Loneliness.KZGeneral.product_of_certificate",
+    "Loneliness.KZProduct.Nine.rows_valid",
+    "Loneliness.KZProduct.Ten.rows_valid",
+    "Loneliness.KZProduct.Eleven.rows_valid",
+    "Loneliness.KZProduct.Twelve.rows_valid",
+    "Loneliness.KZProduct.Thirteen.rows_valid",
+    "Loneliness.KZProduct.product_nine",
+    "Loneliness.KZProduct.product_ten",
+    "Loneliness.KZProduct.product_eleven",
+    "Loneliness.KZProduct.product_twelve",
+    "Loneliness.KZProduct.product_thirteen",
+    "Loneliness.KZProduct.product_lower_bound",
+    "Loneliness.KZProduct.product_minimizer",
+    "Loneliness.KZProduct.increments_feasible",
+    "Loneliness.Modular.TightPrimeBounds.prefix_margin",
+    "Loneliness.Modular.TightPrimeBounds.prime_data_valid",
+    "Loneliness.Modular.TightPrimeBounds.exists_prime_of_tight_bound"
+  ],
+  "root_reachable_exact_import_closure": true,
+  "schema": "loneliness-large-norm-exact-preservation-v1",
+  "scope": "Authenticate and preserve the original conditional norm reduction with all lower-runner hypotheses retained, including strict source, all-owned/private audit and exact stock replay evidence; this exporter runs no new Lean proof check.",
+  "source_sha256": {
+    "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "Conjectures.LonelinessCoalescence": "5518fdfed0369763c2ba701272edb25fbaafde2d230c869f4412f2c441ef9d1d",
+    "Conjectures.LonelinessCoalescenceValue": "b2b7037f036e3fdeb5e52e0314fd7126db2ae921c6c182abf6175c5884a5bcb7",
+    "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "Conjectures.LonelinessCoordinateClasses": "0075b701fd3fa51feef62f59850dfaa3dfece95e3287d51a7afb438a76691b63",
+    "Conjectures.LonelinessCoordinateSubspace": "a6a58ef2dfb5262e43641aae3e18c9d7ddcc8163aebad18cf6eb2416ae46bfea",
+    "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+    "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+    "Conjectures.LonelinessHyperplaneArithmetic": "53178525bbbd49c19fa9dd1046f39681841319ef0dae8ac2a77216b34bee5ffa",
+    "Conjectures.LonelinessIntegerDirection": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6",
+    "Conjectures.LonelinessKZBasisGram": "cbedf5849f99a461e39f8cde2ddb9ffa8b734d0b2deca865451aab49ca50dd0c",
+    "Conjectures.LonelinessKZBasisInteger": "e575961a4d2c5bfe419de63afb5cabe10b37ddd4f216db2a12f3f6fc4d118717",
+    "Conjectures.LonelinessKZBasisOperations": "43917842a85cb92ca6a0f1d44ad118610dcc78997fc6713d3976e3ab9e82d727",
+    "Conjectures.LonelinessKZBasisReduction": "7de1d388440a0eaff74ab6239f89f66038bc8f986e5fcb6880950e3cf80f062d",
+    "Conjectures.LonelinessKZBasisStep": "c7aca10c90546c0aad423b536b932ddc1bfc7187fcb1e97ee23ccfaf9bb3e611",
+    "Conjectures.LonelinessKZBasisVectors": "c15824ec759e83dce78210732dcc0405d2d02c992bde00fb2e9ac8fd8053c305",
+    "Conjectures.LonelinessKZGeneral": "4b18e7faf56c09de417a2f2b745832e61fdf919eff75bcd3ef9f1dc50925a8bc",
+    "Conjectures.LonelinessKZProduct": "969af56b7dc7f456d922eef97d6b5676b457797d3e4dd046ec032221ae7f3cd7",
+    "Conjectures.LonelinessKZProductAssembly": "3287fa3c3a33f37d76d346ecb5658f8b01e5301f79b7a6050f7c0516a3fb2e0c",
+    "Conjectures.LonelinessKZProductCertificate": "a3fa0544e84d9f80137263dc0c342463bfc7fe466bcf78ab8ac81d247479ba23",
+    "Conjectures.LonelinessKZProductDataEleven": "f73c86c145ada8bbea78636c01a95d7075b29ceb57a66d58299a29247c798bfd",
+    "Conjectures.LonelinessKZProductDataNine": "33af60331c8a1c8361f99804c48ca0d7ffcf490b39023ed63cbb75ea269bee0e",
+    "Conjectures.LonelinessKZProductDataTen": "8fdd5e978e8bb9c4b4443249fbb7d27b68e6c4b02841a5431ff92f868576be6f",
+    "Conjectures.LonelinessKZProductDataThirteen": "cb76522d465c2f142092af7a11e313fd6ebcd37fd0dc67a7714ab528cde1989e",
+    "Conjectures.LonelinessKZProductDataThirteenBase": "3753234220689f7e591df00ce6919d2b617c38e776589222960c639b7c06d04d",
+    "Conjectures.LonelinessKZProductDataThirteenBlock00": "d9a880c3d77313cad1bc59d0b3745fa00798ed8fb9c36c14cd3f6d3c429abf12",
+    "Conjectures.LonelinessKZProductDataThirteenBlock01": "2149c4923ca473cfef6f5dca8af5e129c911d0f8411313d53b512ebcb4ad1415",
+    "Conjectures.LonelinessKZProductDataThirteenBlock02": "46fb3e0e82c634073c39c2805698391bb3338745565769311e1590ead7f86379",
+    "Conjectures.LonelinessKZProductDataThirteenBlock03": "16ace8906e1dc3e3263db8a95e984ac9af5a8a9ca5b7c81291faf91aa90509f7",
+    "Conjectures.LonelinessKZProductDataThirteenBlock04": "9589493702cb7bcfb9bc5c8412c8bfdc9d7d9ad4840b23ad6a6e2b857d513399",
+    "Conjectures.LonelinessKZProductDataThirteenBlock05": "eb06e06ff8f8c64b3efb926d1eb8e605eff417c2214e7193737f46a9e710c67e",
+    "Conjectures.LonelinessKZProductDataThirteenBlock06": "13b482823b991239a775198f58fa29812b19f9952170c8cb2bafae50de7702d1",
+    "Conjectures.LonelinessKZProductDataThirteenBlock07": "163ce9c56874df19bf0a065b9b73f52eb8d72d55f03a2f3a1d538c4211b7de7d",
+    "Conjectures.LonelinessKZProductDataThirteenBlock08": "574f6db5dc0ba396b9e67b453166c0c6f2aeda7fc1e5562beb4be3132ea0232e",
+    "Conjectures.LonelinessKZProductDataThirteenBlock09": "b3b9d52d94a0d2ca35f99289602e250c8594e0de7589e7cfba3e136868e4a514",
+    "Conjectures.LonelinessKZProductDataThirteenBlock10": "20cfff584ec626a9ce26636850f95aae1e153c06e5d0d4c1428ca72e4a9bf59c",
+    "Conjectures.LonelinessKZProductDataThirteenBlock11": "e06296625f4a9ef52100ca6803d7907ee10a47a29119c71039060a3ad3abfb67",
+    "Conjectures.LonelinessKZProductDataThirteenBlock12": "c5c52a92b0af1287a7a8891fc93e3c3d89f38f407105e236fa5d8b89133ad93f",
+    "Conjectures.LonelinessKZProductDataThirteenBlock13": "ce8cb44e4475b7d8950281bb4d6d54f143ee0a95523238b35c17f965551c8792",
+    "Conjectures.LonelinessKZProductDataThirteenBlock14": "e8712c0ccdf5f2b2583112ca660f3afa59004649ce9ef5e96c6ffe71fa27102d",
+    "Conjectures.LonelinessKZProductDataThirteenBlock15": "732e88fab28a68ddbb8012a1e51b6d48b43a51cd94cabf8ed01e22aa5378520b",
+    "Conjectures.LonelinessKZProductDataTwelve": "f01ce31ce2468a740d568daf6c4b89d6ee5edc182919e28a761fe2624419802b",
+    "Conjectures.LonelinessKZProductDataTwelveBase": "679789ab118114c185b3291f81e3b5b2a47b83347e8a3d6758d45565ed3ba442",
+    "Conjectures.LonelinessKZProductDataTwelveBlock00": "ba612f5dc03f336f30677ce8b4e34c15b8907c63fcc31c6e8aabf1020ef3f1a6",
+    "Conjectures.LonelinessKZProductDataTwelveBlock01": "8873e4fa495eb57aac37e3912559126b18976099bc36fa6f509abd7b7b63ccf2",
+    "Conjectures.LonelinessKZProductDataTwelveBlock02": "9a521f0ed66029f3d784a119d84e2d6a1b62d835dc6614c7ea35e1064f39af8d",
+    "Conjectures.LonelinessKZProductDataTwelveBlock03": "b8542a80eab95f310de71a3a709cad3c115d77e91f00340dcfcf8df0287668d5",
+    "Conjectures.LonelinessKZProductDataTwelveBlock04": "01fe7c521bb21061ad5bf2806b617ea5afe8e0e3d3c7d3c9690083b78599c797",
+    "Conjectures.LonelinessKZProductDataTwelveBlock05": "158106edc5de16bb9be9875810478a0df85d0797a737a993ec9f1e61b0ead855",
+    "Conjectures.LonelinessKZProductDataTwelveBlock06": "d7419d56f4c6454ac709ba8eb0d390c0277985e7f35c33b301f44c95d27827c4",
+    "Conjectures.LonelinessKZProductDataTwelveBlock07": "35d0d0412275dcbc60ed717328ee398263524eafbc1e901e710f9835f7283de7",
+    "Conjectures.LonelinessKZProductFast": "7a0141ece9dca75c664761e86eca61057dbf9ceed5af445a9221cdcb9563ddf7",
+    "Conjectures.LonelinessKZProductOrder": "fee89ef5a030a7ef33d4259fa90d697b6360593a38b92ae4610233054ac0568a",
+    "Conjectures.LonelinessModularForcedDivisor": "5606d103ca62fdcecefdf0ccba9479faae6cec83e6f1b1c8ca4e4937f76938d8",
+    "Conjectures.LonelinessModularPrimes": "8d8ae90bfce29bdb6e8f9732920c6b9771b7fa312160ec8b51b4e52384a8579a",
+    "Conjectures.LonelinessModularTightPrimeBounds": "5364ca47149fc75af5e5a1ff7bc6a02cc2e97bf83a8e180d8c08fd73d31e0fda",
+    "Conjectures.LonelinessModularTightPrimeDataEight": "87ccd524fa0f90e5d35e00f7252999dd71a266722948be881f22e05530fe2b70",
+    "Conjectures.LonelinessModularTightPrimeDataEleven": "13486b9c131ba01e9bc2652546d8010db062977260ae054fa29d251f9732825c",
+    "Conjectures.LonelinessModularTightPrimeDataNine": "3268c6be4ca5c0bf4307c042a8b2e0995953688c5a03c55cfa07dbbcf85814c1",
+    "Conjectures.LonelinessModularTightPrimeDataSeven": "3547cf0c9d214c16f048b68ad5f3599bdc67bc09580864efe256f2797378cd4a",
+    "Conjectures.LonelinessModularTightPrimeDataSix": "72955c8b9487a45d57bf58ee36c8115d1845540aae02409ab33d3a066922b249",
+    "Conjectures.LonelinessModularTightPrimeDataTen": "75130b46a994b8c500b5fc4f6bef0463585d0376c894098bf20c86ba22e28101",
+    "Conjectures.LonelinessModularTightPrimeDataThirteen": "13bf6f76b1f922e0d1e5ac99d2c8a33b6db3d1f173d747e641f7a05e9a7d0493",
+    "Conjectures.LonelinessModularTightPrimeDataTwelve": "d4ab0c04664d0f485e1edfec8aeda826e96d36b7f77cd37a766612634aef43a3",
+    "Conjectures.LonelinessModularTightPrimeDefs": "7ec0df90ddee7a165a6c9f4137cd839baddd32191e413ae1aae4c45941786c55",
+    "Conjectures.LonelinessModularTightPrimeProducts": "4041037c3785b8e93903f891337a0493d80a7cc42be4c1c99e3b101091195b77",
+    "Conjectures.LonelinessModularWitness": "c5329d2e079f6d04d0079ab3fe90d814d1f3393b2381c74be6375ce091b569fb",
+    "Conjectures.LonelinessNearestPlane": "7ecb53d6a8c77fb9d06accde929d834d0eb4e26fbccd3ce01c8d4c0cef4bc8b9",
+    "Conjectures.LonelinessNearestPlanePrefix": "4c5ce5394a76551b473308c95140ed3e3a4d5fe8b883411adc89457aed72639b",
+    "Conjectures.LonelinessNearestPlaneRelative": "15cf3d48c9120ad8a2ddab46ad0371ed9a1f20a7397ddeea88a103c2c0aff0af",
+    "Conjectures.LonelinessNearestPlaneValue": "03080ec0159a4e74a7ba8c8556a315be481df677a9cb1038fcb1fb210b768703",
+    "Conjectures.LonelinessNormGeometry": "9a6ea8340ad95fd5a656c3938125a5a1662bce25a02616b169d426db8ba16d94",
+    "Conjectures.LonelinessPrefixProduct": "4ba946b6ec3a4a1317129912e9b65bfd9daf7f96981ca444276adb65c0ef929e",
+    "Conjectures.LonelinessPrefixProductTables": "39cceabd3e275af4d4c44e488a229187b62eba186704b6d628a5cfbe53620ba6",
+    "Conjectures.LonelinessPrimitiveBasis": "a2a3c31eed4b428f7ff38323dffb0ea3d25d41579da43e4601c2a727a93490ec",
+    "Conjectures.LonelinessPrimitiveSpeeds": "95829247acbd3e1ebe62b57d1e7ca9f2af22f006df37c390574c690d152427e6",
+    "Conjectures.LonelinessRational": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
+    "Conjectures.LonelinessRationalSubspace": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88",
+    "Conjectures.LonelinessSubspaceDensity": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f",
+    "Conjectures.LonelinessTightNormBounds": "89dfd45512622f5e8a2df3f49ceec03e5a0bca2f03bb7ee7474a2aec0d66bd01",
+    "Conjectures.LonelinessTightNormCommon": "b878b66183be629ee2313a70d8ab68b75916a70c324a623dae0250c061468472"
+  },
+  "status": "original_passed_evidence_authenticated",
+  "strict_commands_validated": true,
+  "toolchain": {
+    "checker_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+    "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "lean_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)"
+  }
+}

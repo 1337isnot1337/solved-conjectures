@@ -15,7 +15,7 @@ open scoped BigOperators Topology ENNReal
 
 noncomputable section
 
-variable {ι : Type*} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+variable {ι : Type*} [Fintype ι] [Nonempty ι]
 
 local instance circleVolume_isProbabilityMeasure :
     IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
@@ -46,6 +46,7 @@ def haarProfileCDF (m : ι → ℤ) (u : ℝ) : ℝ :=
 def haarVelocityCDF (v : ι → ℤ) (u : ℝ) : ℝ :=
   (volume : Measure (ι → UnitAddCircle)).real {s | torusVelocityValue v s ≤ u}
 
+omit [Nonempty ι] in
 theorem haarProfileCDF_nonneg (m : ι → ℤ) (u : ℝ) : 0 ≤ haarProfileCDF m u :=
   ENNReal.toReal_nonneg
 
@@ -55,6 +56,7 @@ theorem haarVelocityCDF_nonneg (v : ι → ℤ) (u : ℝ) : 0 ≤ haarVelocityCD
 theorem haarVelocityCDF_le_one (v : ι → ℤ) (u : ℝ) : haarVelocityCDF v u ≤ 1 :=
   measureReal_le_one
 
+omit [Nonempty ι] in
 theorem haarProfileCDF_eq_uniform (m : ι → ℤ) (hm : PrimitiveNormal m) (u : ℝ) :
     haarProfileCDF m u =
       (ENNReal.ofReal (2 * normalMass m) • (volume : Measure ℝ).restrict
@@ -65,6 +67,7 @@ theorem haarProfileCDF_eq_uniform (m : ι → ℤ) (hm : PrimitiveNormal m) (u :
     Measure.map_apply (continuous_torusPredictedValue m).measurable measurableSet_Iic]
   rfl
 
+omit [Nonempty ι] in
 theorem haarProfileCDF_formula (m : ι → ℤ) (hm : PrimitiveNormal m) (u : ℝ) :
     haarProfileCDF m u =
       max (2 * normalMass m *
@@ -85,6 +88,7 @@ theorem haarProfileCDF_formula (m : ι → ℤ) (hm : PrimitiveNormal m) (u : �
     ← ENNReal.ofReal_mul
       (mul_nonneg (by norm_num) (normalMass_pos m hm).le), ENNReal.toReal_ofReal']
 
+omit [Nonempty ι] in
 theorem continuous_haarProfileCDF (m : ι → ℤ) (hm : PrimitiveNormal m) :
     Continuous (haarProfileCDF m) := by
   change Continuous (fun u : ℝ => haarProfileCDF m u)
@@ -111,6 +115,8 @@ theorem haarVelocityCDF_le_profile_of_gap
   change torusPredictedValue m s ≤ u + ε
   change torusVelocityValue v s ≤ u at hs
   linarith
+
+variable [DecidableEq ι]
 
 def independentShiftCDF (m : ι → ℤ) (u : ℝ) (N : ℕ) : ℝ :=
   (∑ v ∈ positiveBoxAdmissible m N, haarVelocityCDF (positiveBoxCoordinates v) u) /
@@ -174,10 +180,10 @@ theorem independentShiftCDF_upper
         if ε ≤ uniformShiftGap m (positiveBoxCoordinates v) then 1 else 0 := by
     intro v _
     by_cases hv : ε ≤ uniformShiftGap m (positiveBoxCoordinates v)
-    · rw [if_pos hv]
+    · rw [ite_eq_left hv]
       linarith [haarVelocityCDF_le_one (positiveBoxCoordinates v) u,
         haarProfileCDF_nonneg m (u + ε)]
-    · rw [if_neg hv, add_zero]
+    · rw [ite_eq_right hv, add_zero]
       exact haarVelocityCDF_le_profile_of_gap m (positiveBoxCoordinates v) ε
         (lt_of_not_ge hv) u
   have hsum := Finset.sum_le_sum heach

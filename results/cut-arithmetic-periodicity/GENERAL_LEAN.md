@@ -24,18 +24,18 @@ A `Candidate` contains:
 
 These data define a function `f : Nat → Nat` by
 
-\[
+```math
 f(0)=0,
 \qquad
-f(n)=\operatorname{prefixValues}(n-1)\quad(1\le n\le N),
-\]
+f(n)=\mathop{\mathrm{prefixValues}}(n-1)\quad(1\le n\le N),
+```
 
 and
 
-\[
-f(N+1+Pq+r)=sq+\operatorname{tail}(r)
-\quad(q\ge0,\ 0\le r<P).
-\]
+```math
+f(N+1+Pq+r)=sq+\mathop{\mathrm{tail}}(r)
+\quad(q\ge0,\ 0\le r\lt P).
+```
 
 The cut set is supplied as a finite list `cuts : List Nat`. Repetitions have no
 effect. A move splits a positive pile into at least two positive piles. A listed
@@ -46,14 +46,14 @@ parts has total `n`, has an allowed number of parts, and has candidate-value
 XOR `g`. The Lean predicate is
 `CutFamily.OptionValue {d | d ∈ cuts} f n g`. It requires all of the following:
 
-\[
+```math
 \begin{aligned}
-&h_i>0,\\
-&k\ge2,\qquad k-1\in\mathrm{cuts},\\
-&\sum_{i=1}^{k}h_i=n,\\
-&f(h_1)\mathbin\oplus\cdots\mathbin\oplus f(h_k)=g.
+&h_i>0,
+\\ &k\ge2,\qquad k-1\in\mathrm{cuts},
+\\ &\sum_{i=1}^{k}h_i=n,
+\\ &f(h_1)\mathbin\oplus\cdots\mathbin\oplus f(h_k)=g.
 \end{aligned}
-\]
+```
 
 `SatisfiesMex cuts f` states, for every `n > 0`, that `A(n,f(n))` is false and
 `A(n,g)` holds for every `g < f(n)`. These are the actual CUT mex equations.
@@ -81,9 +81,9 @@ game function `G` is that `G` satisfies those defining equations.
 
 The candidate graph is a finite union of prefix singletons and arithmetic rays:
 
-\[
+```math
 (n,g)=(a+Pq,b+sq),\qquad q\ge0.
-\]
+```
 
 Every piece has `a > 0` and `P > 0`. A singleton uses the same representation
 with the additional restriction `q = 0`.
@@ -91,22 +91,22 @@ with the additional restriction `q = 0`.
 Read binary digits from most significant to least significant. The machine
 tracks
 
-\[
+```math
 u=sn-Pg,\qquad n\bmod P,\qquad \min(a+1,n).
-\]
+```
 
 Set
 
-\[
+```math
 M=s+P+sa+Pb.
-\]
+```
 
 The discrepancy counter has the finite range `[-M,M]`. An additional state
 rejects every continuation. For size and value bits `x,y`, its update is
 
-\[
+```math
 u\longmapsto2u+sx-Py.
-\]
+```
 
 `Piece.outside_stays_outside` proves that a counter outside the range cannot
 return. `Piece.classify_step` proves that every transition tracks the exact
@@ -118,9 +118,9 @@ For a singleton, the capped size also requires `n = a`.
 
 The machine has
 
-\[
+```math
 (2M+1)P(a+2)+1
-\]
+```
 
 states before any minimization. `Piece.machine_correct` proves its exact
 language for every binary word. `Candidate.graph_correct` combines the pieces
@@ -131,15 +131,15 @@ and proves the complete candidate graph.
 The general construction permits candidate values larger than their pile sizes.
 It proves a uniform bound
 
-\[
+```math
 f(n)\le Cn\qquad(n>0),
-\]
+```
 
 where the computable constant is
 
-\[
+```math
 C=1+\sum_{\text{pieces }R}(R.b+R.saltus).
-\]
+```
 
 For positive parts with total `n`, the XOR of their candidate values is at most
 their sum, which is at most `Cn`. Each constituent size is also at most `n`.
@@ -160,15 +160,15 @@ as an assumption.
 finite unions have proved language semantics. They construct the two error
 languages:
 
-\[
+```math
 F(n,g)\land A(n,g)
-\]
+```
 
 and
 
-\[
-n>0\land g<f(n)\land\neg A(n,g),
-\]
+```math
+n>0\land g\lt f(n)\land\neg A(n,g),
+```
 
 where `F` is the exact candidate graph.
 
@@ -190,11 +190,11 @@ exact CUT mex equations.
 
 For a candidate `c`, define the explicit search bound
 
-\[
+```math
 B_c=1+N+P+s+
-  \sum_{i<N}\operatorname{prefixValues}(i)+
-  \sum_{r<P}\operatorname{tail}(r).
-\]
+  \sum_{i\lt N}\mathop{\mathrm{prefixValues}}(i)+
+  \sum_{r\lt P}\mathop{\mathrm{tail}}(r).
+```
 
 `verifiedCandidates_complete` proves that a valid candidate `c` occurs in
 `verifiedCandidates cuts B` for every `B ≥ B_c`. Thus exhaustive enumeration

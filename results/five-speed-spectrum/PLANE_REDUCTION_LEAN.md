@@ -11,9 +11,9 @@ proved separately.
 For a rational subspace `E` of `ℚ⁵`, let `realSpan E` be its span in `ℝ⁵`.
 Its value is the supremum, over all points `x` in that real span, of
 
-\[
-  \min_{0\le i<5}\operatorname{dist}(x_i,\mathbb Z).
-\]
+```math
+  \min_{0\le i<5}\mathop{\mathrm{dist}}(x_i,\mathbb Z).
+```
 
 `CoordinateFree E` means that each coordinate is nonzero at some point of
 `E`. Different coordinates may use different witnesses.
@@ -22,9 +22,9 @@ Its value is the supremum, over all points `x` in that real span, of
 speeds have value strictly below `2/9`, their list is a permutation of a
 positive integer multiple of either
 
-\[
+```math
   (1,2,3,4) \qquad\text{or}\qquad (1,3,4,7).
-\]
+```
 
 This predicate is a hypothesis of the plane theorem. It is neither an axiom
 declaration nor a result asserted by the development.
@@ -38,9 +38,9 @@ The main plane theorem, `critical_product_of_low_value`, has these inputs:
 
 It proves that a signed coordinate permutation sends `E` to
 
-\[
-  \operatorname{span}_{\mathbb Q}\{q,e_j\},
-\]
+```math
+  \mathop{\mathrm{span}}_{\mathbb Q}\{q,e_j\},
+```
 
 where `e_j` is the `j`th coordinate axis and the four coordinates of `q`
 outside `j` are exactly one of the two critical quadruples. Thus those four
@@ -50,10 +50,10 @@ The theorem `spectrum_in_critical_product` supplies the next step. If an
 integer vector `w` belongs to such a product plane, every coordinate of
 `w` is nonzero, and its speed value is below `1/5`, then
 
-\[
-  \operatorname{value}(w)=\frac{s}{5s+1}
+```math
+  \mathop{\mathrm{value}}(w)=\frac{s}{5s+1}
   \qquad\text{for some integer }s\ge1.
-\]
+```
 
 The speed list for an integer vector uses its distinct absolute
 coordinates. The proof also uses the full five-entry list, including
@@ -69,9 +69,9 @@ The strengthened coalescence theorem constructs a second such direction
 outside the first direction's line. It does this by choosing a hyperplane
 of the exact form
 
-\[
+```math
   x_a=\varepsilon x_b,\qquad \varepsilon\in\{-1,1\},
-\]
+```
 
 whose restriction to the plane remains coordinate-free and which avoids
 a prescribed vector with all coordinates nonzero. Clearing denominators
@@ -131,10 +131,10 @@ the plane value.
 Write the normalized directions as `q` and `c`. For every pair `a < b`
 and every sign `ε = ±1`, form the integer vector
 
-\[
+```math
   u_k=(q_a-\varepsilon q_b)c_k
        -(c_a-\varepsilon c_b)q_k.
-\]
+```
 
 This vector belongs to the plane and satisfies `u_a = ε u_b`. If every
 coordinate of `u` is nonzero, its distinct absolute speeds number at

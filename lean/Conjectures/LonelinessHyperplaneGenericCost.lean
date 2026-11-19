@@ -1,4 +1,5 @@
 import Mathlib.Algebra.MvPolynomial.Funext
+import Mathlib.Algebra.CharZero.Infinite
 import Mathlib.LinearAlgebra.LinearIndependent.Basic
 import Mathlib.Data.Fintype.Powerset
 import Mathlib.Tactic.Ring
@@ -22,36 +23,44 @@ def Supported (S : Finset ι) (a : ι → ℚ) : Prop := ∀ i ∉ S, a i = 0
 def combination [AddCommGroup V] [Module ℚ V] (g : ι → V) (a : ι → ℚ) : V :=
   ∑ i, a i • g i
 
+omit [DecidableEq ι] in
 theorem combination_zero [AddCommGroup V] [Module ℚ V] (g : ι → V) :
     combination g 0 = 0 := by simp [combination]
 
+omit [DecidableEq ι] in
 theorem combination_add [AddCommGroup V] [Module ℚ V]
     (g : ι → V) (a b : ι → ℚ) :
     combination g (a + b) = combination g a + combination g b := by
   simp only [combination, Pi.add_apply, add_smul, Finset.sum_add_distrib]
 
+omit [DecidableEq ι] in
 theorem combination_sub [AddCommGroup V] [Module ℚ V]
     (g : ι → V) (a b : ι → ℚ) :
     combination g (a - b) = combination g a - combination g b := by
   simp only [combination, Pi.sub_apply, sub_smul, Finset.sum_sub_distrib]
 
+omit [DecidableEq ι] in
 theorem combination_smul [AddCommGroup V] [Module ℚ V]
     (g : ι → V) (r : ℚ) (a : ι → ℚ) :
     combination g (r • a) = r • combination g a := by
   simp only [combination, Pi.smul_apply, smul_eq_mul, mul_smul, Finset.smul_sum]
 
+omit [DecidableEq ι] in
 theorem cost_add (c a b : ι → ℚ) : cost c (a + b) = cost c a + cost c b := by
   simp only [cost, Pi.add_apply, mul_add, Finset.sum_add_distrib]
 
+omit [DecidableEq ι] in
 theorem cost_sub (c a b : ι → ℚ) : cost c (a - b) = cost c a - cost c b := by
   simp only [cost, Pi.sub_apply, mul_sub, Finset.sum_sub_distrib]
 
+omit [DecidableEq ι] in
 theorem cost_smul (c a : ι → ℚ) (r : ℚ) : cost c (r • a) = r * cost c a := by
   simp only [cost, Pi.smul_apply, smul_eq_mul, Finset.mul_sum]
   apply Finset.sum_congr rfl
   intro i _
   ring
 
+omit [DecidableEq ι] in
 theorem combination_eq_sum_of_supported [AddCommGroup V] [Module ℚ V]
     (g : ι → V) (S : Finset ι) (a : ι → ℚ) (ha : Supported S a) :
     combination g a = ∑ i ∈ S, a i • g i := by
@@ -80,6 +89,7 @@ theorem combination_injective_on_independent_support [AddCommGroup V] [Module �
 private def linearCostPolynomial (z : ι → ℚ) : MvPolynomial ι ℚ :=
   ∑ i, MvPolynomial.C (z i) * MvPolynomial.X i
 
+omit [DecidableEq ι] in
 private theorem linearCostPolynomial_eval (z c : ι → ℚ) :
     MvPolynomial.eval c (linearCostPolynomial z) = cost c z := by
   simp only [linearCostPolynomial, map_sum, map_mul, MvPolynomial.eval_C,
@@ -128,18 +138,18 @@ theorem exists_supported_kernel [AddCommGroup V] [Module ℚ V]
   let z : ι → ℚ := fun j => if j ∈ S then f j else 0
   have hsup : Supported S z := by
     intro j hj
-    simp only [z, if_neg hj]
+    simp only [z, ite_eq_right hj]
   refine ⟨z, ?_, hsup, ?_⟩
   · intro hz
     have he := congrFun hz i
-    simp only [z, if_pos hi, Pi.zero_apply] at he
+    simp only [z, ite_eq_left hi, Pi.zero_apply] at he
     exact hfi he
   · rw [combination_eq_sum_of_supported g S z hsup]
     calc
       _ = ∑ j ∈ S, f j • g j := by
         apply Finset.sum_congr rfl
         intro j hj
-        rw [show z j = f j from if_pos hj]
+        rw [show z j = f j from ite_eq_left hj]
       _ = 0 := hf
 
 def GenericCost [AddCommGroup V] [Module ℚ V] (g : ι → V) (c : ι → ℚ) : Prop :=
@@ -156,7 +166,7 @@ theorem exists_genericCost [AddCommGroup V] [Module ℚ V] (g : ι → V) :
   obtain ⟨c, hc⟩ := exists_rational_cost_avoiding z hz
   refine ⟨c, ?_⟩
   intro S hS
-  exact ⟨z ⟨S, hS⟩, hz _, hsupp _, hkernel _, hc _⟩
+  exact ⟨z ⟨S, hS⟩, hz ⟨S, hS⟩, hsupp ⟨S, hS⟩, hkernel ⟨S, hS⟩, hc ⟨S, hS⟩⟩
 
 end
 

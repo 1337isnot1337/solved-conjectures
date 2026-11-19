@@ -1,0 +1,147 @@
+{
+  "checks": {
+    "FuelCounts": {
+      "kernel_peak_rss_kib": 1336544,
+      "kernel_seconds": 8.349,
+      "kernel_system_seconds": 6.137762,
+      "kernel_user_seconds": 1.983649,
+      "module": "Conjectures.LonelinessModularCoverFuelCounts",
+      "object_facets_sha256": {
+        "/workspace/scratch/11c408478f32/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/LonelinessModularCoverFuelCounts.olean": "5bf24e6c329961a23affa8bd7766d6fc266d1d42d28aa7312d609f59df435f6a"
+      },
+      "receipt": "/workspace/scratch/11c408478f32/fuel-counts-kernel.json",
+      "receipt_sha256": "84f61fa7dee501a43c119434659dce7576e0d6f3889876dd26f9bf292ada66b4",
+      "replayed_modules": [
+        "Conjectures.LonelinessModularCoverFuelCounts"
+      ],
+      "source_seconds": 5.003,
+      "source_sha256": "a9ce5f7f9c413edf96f08e5bc4230e33f9bb02cd19e1316d925ae655eba0911e"
+    },
+    "FuelCuts": {
+      "kernel_peak_rss_kib": 1160768,
+      "kernel_seconds": 477.375,
+      "kernel_system_seconds": 211.027128,
+      "kernel_user_seconds": 22.576286,
+      "module": "Conjectures.LonelinessModularCoverFuelCuts",
+      "object_facets_sha256": {
+        "/workspace/scratch/11c408478f32/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/LonelinessModularCoverFuelCuts.olean": "ee08d7ebb4946d7f23d214ef27d4a9aa06c9d29feef3f18d8727370539a461b5"
+      },
+      "receipt": "/workspace/scratch/11c408478f32/fuel-cuts-kernel.json",
+      "receipt_sha256": "59d6f940bb42706eb6bc6b5c2e0587d5b49ebec68f8fcff27cafaff23b118ff7",
+      "replayed_modules": [
+        "Conjectures.LonelinessModularCoverFuelCuts"
+      ],
+      "source_seconds": 24.489,
+      "source_sha256": "d8d9fb0c0b31e07d50e8b1a58ecbaff8540cebffdb1444b492858465070ae368"
+    },
+    "FuelEight": {
+      "kernel_peak_rss_kib": 3256208,
+      "kernel_seconds": 73.322,
+      "kernel_system_seconds": 27.869888,
+      "kernel_user_seconds": 29.991833,
+      "module": "Conjectures.LonelinessSixSpeedPrime0379FuelEightProbe",
+      "object_facets_sha256": {
+        "/workspace/scratch/11c408478f32/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/LonelinessSixSpeedPrime0379FuelEightProbe.olean": "8999e93f6ac9b43b1fba951435ed661bcd6a5dc1b9797c3ba82b6b82422eab31"
+      },
+      "receipt": "/workspace/scratch/11c408478f32/prime379-fuel-eight-kernel.json",
+      "receipt_sha256": "e0f72f1f8a3cd21acd97f82132cea8c878828535c7adb5d067693d89d1fc0519",
+      "replayed_modules": [
+        "Conjectures.LonelinessSixSpeedPrime0379FuelEightProbe"
+      ],
+      "source_seconds": 100.404,
+      "source_sha256": "c141d889984019544d2a127d3754e81c3cb3585376ca541147d70c5fd08de3a5"
+    }
+  },
+  "fast_baseline": {
+    "complete_prime_claimed": false,
+    "exit_code": 130,
+    "files": [
+      {
+        "original": "/workspace/scratch/11c408478f32/solved-conjectures/lean/Conjectures/LonelinessSixSpeedPrime0379FastEightProbe.lean",
+        "preserved": "/workspace/scratch/11c408478f32/prime379-fast-eight-interrupted/LonelinessSixSpeedPrime0379FastEightProbe.lean",
+        "sha256": "a7637f80520374733159ebba58dc763ea8a573f31429961737821f225d1403e5"
+      },
+      {
+        "original": "/workspace/scratch/11c408478f32/prime379-eight-probes.json",
+        "preserved": "/workspace/scratch/11c408478f32/prime379-fast-eight-interrupted/prime379-eight-probes.json",
+        "sha256": "cbe0fa1a3a6277629b3c94d3a9f5e84b9f4c606f5edf584b3fba569cb21b20ce"
+      },
+      {
+        "original": "/workspace/scratch/11c408478f32/prime379-fast-eight-build.log",
+        "preserved": "/workspace/scratch/11c408478f32/prime379-fast-eight-interrupted/prime379-fast-eight-build.log",
+        "sha256": "154b51780e2762a1b2bcab6dad812e7e80662d033bab8d68a1927ee77eb9142e"
+      },
+      {
+        "original": "/workspace/scratch/11c408478f32/solved-conjectures/lean/.lake/build/local-source-records/Conjectures_LonelinessSixSpeedPrime0379FastEightProbe.lean.log",
+        "preserved": "/workspace/scratch/11c408478f32/prime379-fast-eight-interrupted/Conjectures_LonelinessSixSpeedPrime0379FastEightProbe.lean.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "kernel_replayed": false,
+    "preserved_utc_epoch": 1795098835.0134883,
+    "reason": "Parent-directed resource censor after the 300-second source diagnostic budget; no completed timing or proof failure is asserted.",
+    "source_passed": false,
+    "source_sha256": "a7637f80520374733159ebba58dc763ea8a573f31429961737821f225d1403e5",
+    "status": "interrupted"
+  },
+  "scope": "Structural-count helper theory and eight selected original p379 boundedCheck propositions; not a complete prime or five-runner theorem",
+  "selected_frames": [
+    {
+      "available_count": 24,
+      "frame": 0,
+      "kind": "witness",
+      "slots": 4,
+      "uncovered_count": 108
+    },
+    {
+      "available_count": 24,
+      "frame": 1,
+      "kind": "capacity",
+      "slots": 3,
+      "uncovered_count": 78
+    },
+    {
+      "available_count": 175,
+      "frame": 1469,
+      "kind": "capacity",
+      "slots": 3,
+      "uncovered_count": 72
+    },
+    {
+      "available_count": 183,
+      "frame": 1565,
+      "kind": "capacity",
+      "slots": 1,
+      "uncovered_count": 10
+    },
+    {
+      "available_count": 25,
+      "frame": 2,
+      "kind": "split",
+      "slots": 4,
+      "uncovered_count": 108
+    },
+    {
+      "available_count": 187,
+      "frame": 1570,
+      "kind": "split",
+      "slots": 4,
+      "uncovered_count": 108
+    },
+    {
+      "available_count": 179,
+      "frame": 1464,
+      "kind": "retained",
+      "slots": 0,
+      "uncovered_count": 0
+    },
+    {
+      "available_count": 183,
+      "frame": 1566,
+      "kind": "retained",
+      "slots": 0,
+      "uncovered_count": 0
+    }
+  ],
+  "status": "selected_fuel_checks_passed"
+}

@@ -1,0 +1,125 @@
+{
+  "status": "candidate source written; Lean source, axiom and independent kernel gates pending",
+  "prime": 199,
+  "module_count": 14,
+  "source_bytes": 2082776,
+  "scalar_source_sha256": "c8ae3a69a7c907afdb6dbdd6e7cfe1caee92270a122fec9149ddde62ce1fb545",
+  "generator_sha256": "5e59128f11203b0e1c038df27a1eb9a7c71c875695fd0032201a77133f51f18c",
+  "d_chunk": 32,
+  "c_chunk": 16,
+  "base_chunk": 16,
+  "bases_per_module": 4,
+  "base_parts": [
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part00",
+      "bases": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part01",
+      "bases": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part02",
+      "bases": [
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part03",
+      "bases": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part04",
+      "bases": [
+        19,
+        23,
+        24,
+        27
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part05",
+      "bases": [
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part06",
+      "bases": [
+        32,
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part07",
+      "bases": [
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part08",
+      "bases": [
+        44,
+        45,
+        47,
+        49
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part09",
+      "bases": [
+        52,
+        54,
+        55,
+        60
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part10",
+      "bases": [
+        61,
+        67,
+        68,
+        74
+      ]
+    },
+    {
+      "module": "Conjectures.LonelinessFiveSpeedRootQuickP0199Part11",
+      "bases": [
+        80
+      ]
+    }
+  ],
+  "use_prefix": false,
+  "finite_leaf_count": 3602,
+  "d_leaf_count": 1979,
+  "c_leaf_count": 1606,
+  "split_rows": 609,
+  "note": "Literal cache comparisons and balanced append proofs check the complete intervals; Python choices are not assumptions."
+}

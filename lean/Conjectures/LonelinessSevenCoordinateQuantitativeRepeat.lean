@@ -114,7 +114,7 @@ theorem repeat_direction_rescale (u w x : Vector)
       rw [hA]
       push_cast
       field_simp [hCr]
-      <;> ring
+      ring
     · have hAr : (A : ℚ) ≠ 0 := by exact_mod_cast hA
       refine ⟨b/(A : ℚ), ?_⟩
       ext l

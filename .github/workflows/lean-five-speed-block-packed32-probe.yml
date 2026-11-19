@@ -1,0 +1,55 @@
+name: Lean block-packed scalar32 comparison
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-five-speed-block-packed32-probe.yml'
+      - 'scripts/verify_five_speed_block_packed32_probe.py'
+      - 'docs/five-speed-block-packed32-probe-sources.json'
+      - 'results/five-speed-spectrum/generate_lean_block_packed_scalar.py'
+      - 'lean/Conjectures/LonelinessFiveSpeedBlockPackedScalar.lean'
+      - 'lean/Conjectures/LonelinessFiveSpeedBlockPackedScalar1789B32.lean'
+      - 'lean/Conjectures/LonelinessFiveSpeedRootStarQuickLargeOrdinaryBlockPacked32Probe.lean'
+      - 'lean/Conjectures/LonelinessFiveSpeedRootStarQuickLargeMiddleBlockPacked32Probe.lean'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-five-speed-block-packed32-probe
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce literal blocks and inspect the exact source closure
+        run: |
+          python3 -m py_compile scripts/verify_five_speed_block_packed32_probe.py results/five-speed-spectrum/generate_lean_block_packed_scalar.py
+          python3 scripts/verify_five_speed_block_packed32_probe.py --plan
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Fresh strict source, every owned declaration and exact stock replay
+        env:
+          LEAN_NUM_THREADS: 1
+          UV_USE_IO_URING: 0
+        run: python3 scripts/verify_five_speed_block_packed32_probe.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: five-speed-block-packed32-probe
+          path: .candidate-artifacts/five-speed-block-packed32-probe/
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: warn

@@ -1,0 +1,42 @@
+name: Preserve exact six-spectrum realization proof evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/preserve-six-spectrum-realization.yml'
+      - 'scripts/preserve_six_spectrum_realization.py'
+
+permissions:
+  actions: read
+  contents: write
+
+concurrency:
+  group: preserve-six-spectrum-realization-44527134869
+  cancel-in-progress: false
+
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check fixed-exporter syntax and rejection fixtures
+        run: |
+          python3 -m py_compile scripts/preserve_six_spectrum_realization.py
+          python3 scripts/preserve_six_spectrum_realization.py --self-test
+      - name: Authenticate the original archive and preserve unchanged evidence
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/preserve_six_spectrum_realization.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: six-spectrum-realization-preservation
+          path: .candidate-artifacts/six-spectrum-preservation/
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14

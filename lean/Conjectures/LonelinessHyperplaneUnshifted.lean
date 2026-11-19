@@ -14,20 +14,22 @@ open scoped BigOperators Topology
 
 noncomputable section
 
-variable {ι : Type*} [Fintype ι] [DecidableEq ι]
+variable {ι : Type*} [Fintype ι]
 
 def integerSignChoice (m : ι → ℤ) : ι → ℤ :=
   fun i => if 0 ≤ m i then 1 else -1
 
+omit [Fintype ι] in
 theorem integerSignChoice_coe (m : ι → ℤ) (i : ι) :
     (integerSignChoice m i : ℝ) = signChoice m i := by
   by_cases hi : 0 ≤ m i
   · have hiR : (0 : ℝ) ≤ (m i : ℝ) := by exact_mod_cast hi
-    simp only [integerSignChoice, signChoice, if_pos hi, if_pos hiR, Int.cast_one]
+    simp only [integerSignChoice, signChoice, ite_eq_left hi, ite_eq_left hiR, Int.cast_one]
   · have hiR : ¬ (0 : ℝ) ≤ (m i : ℝ) := by exact_mod_cast hi
-    simp only [integerSignChoice, signChoice, if_neg hi, if_neg hiR,
+    simp only [integerSignChoice, signChoice, ite_eq_right hi, ite_eq_right hiR,
       Int.cast_neg, Int.cast_one]
 
+omit [Fintype ι] in
 theorem integerSignChoice_abs (m : ι → ℤ) (i : ι) : |integerSignChoice m i| = 1 := by
   unfold integerSignChoice
   split_ifs <;> norm_num
@@ -39,8 +41,8 @@ theorem integerPairing_integerSignChoice (m : ι → ℤ) :
   apply Finset.sum_congr rfl
   intro i _
   by_cases hi : 0 ≤ m i
-  · simp only [integerSignChoice, if_pos hi, mul_one, abs_of_nonneg hi]
-  · simp only [integerSignChoice, if_neg hi, mul_neg_one, abs_of_neg (lt_of_not_ge hi)]
+  · simp only [integerSignChoice, ite_eq_left hi, mul_one, abs_of_nonneg hi]
+  · simp only [integerSignChoice, ite_eq_right hi, mul_neg_one, abs_of_neg (lt_of_not_ge hi)]
 
 theorem normalMass_eq_normalSize (m : ι → ℤ) : normalMass m = (normalSize m : ℝ) := by
   simp only [normalMass, normalSize, Nat.cast_sum, Nat.cast_natAbs, Int.cast_abs]
@@ -85,6 +87,7 @@ theorem endpointModulus_dvd_normalSize (m : ι → ℤ) :
 def canonicalResidue (m : ι → ℤ) (Q : ℕ) : ι → ZMod Q :=
   fun i => (integerSignChoice m i : ZMod Q)
 
+omit [Fintype ι] in
 theorem canonicalResidue_isUnit (m : ι → ℤ) (Q : ℕ) (i : ι) :
     IsUnit (canonicalResidue m Q i) := by
   unfold canonicalResidue integerSignChoice
@@ -132,15 +135,15 @@ theorem predictedValue_zero_odd
     push_cast
     ring
   rw [predictedValue, hcenter, CriticalFamilies.distance_add_int, distance_half_eq_half]
-  field_simp [(normalMass_pos m hm).ne'] <;> ring
+  field_simp [(normalMass_pos m hm).ne']
 
 theorem predictedValue_zero (m : ι → ℤ) (hm : PrimitiveNormal m) :
     predictedValue m 0 = if Even (normalSize m) then 1 / 2 else
       1 / 2 - 1 / (2 * normalMass m) := by
   by_cases h : Even (normalSize m)
-  · rw [if_pos h]
+  · rw [ite_eq_left h]
     exact predictedValue_zero_even m ((normalSize_even_iff m).mp h)
-  · rw [if_neg h]
+  · rw [ite_eq_right h]
     have hodd : Odd (∑ i, m i) :=
       (normalSize_odd_iff m).mp (Nat.not_even_iff_odd.mp h)
     exact predictedValue_zero_odd m hm hodd
@@ -152,6 +155,8 @@ theorem canonicalResidue_primitive (m : ι → ℤ) (Q : ℕ) [NeZero Q] :
   obtain ⟨i⟩ := ‹Nonempty ι›
   exact primitiveResidue_of_unit_coordinate (canonicalResidue m Q) i
     (canonicalResidue_isUnit m Q i)
+
+variable [DecidableEq ι]
 
 /-- The zero-shift limiting atom is the explicit even/odd value in the
 original hyperplane statement. -/

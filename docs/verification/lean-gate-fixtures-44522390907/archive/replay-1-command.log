@@ -1,0 +1,2 @@
+{"phase": "kernel", "modules": 3, "workers": 1, "prefixes": ["Conjectures"], "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-owned-extension/replay-1/kernel.log"}
+{"status": "passed", "phase": "kernel", "receipt": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-owned-extension/replay-1/receipt.json"}

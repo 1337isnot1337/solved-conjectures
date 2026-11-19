@@ -1,5 +1,70 @@
 # History
 
+## 2026-11-19 — GitHub proof rendering and results index
+
+- Simplified the README results table to directory links and Lean status emoji.
+- Standardized Markdown math for GitHub and kept native MathML on the reading site.
+
+## 2026-11-19 — Conditional norm reductions for nine through thirteen speeds
+
+- Registered the actual primitive-speed norm cutoffs and prime-selection
+  theorems, retaining every smaller-dimensional runner bound as an explicit
+  hypothesis. The basis geometry and all 7,936 KZ subset rows are proved internally.
+- Exact run 44530735399 checked 81 strict sources, 1,696 owned/raw declarations
+  (1,445 theorems and 538 private declarations), 25 required theorem endpoints
+  and 81 exact stock-kernel targets. Original evidence is authenticated under
+  `docs/verification/loneliness-large-norm-exact-44530735399/`.
+- Added 64 proof modules and 25 required endpoints. The equality classifications
+  remain partial; lower-runner bounds, modular exhaustiveness and uniqueness
+  are still required. The merged accepted-package gate remains separate.
+
+## 2026-11-19 — Complete fixed-hyperplane formalization
+
+- Registered the original fixed-hyperplane probability, counting, Haar-shift,
+  endpoint and sharpness statements, preserving the ordered positive distinct
+  sampling model and all original hypotheses.
+- Exact run 44531509741 at `ee1f018fef258cdd54f73af31cdaf6485fd151cb` checked all 72 sources with warnings as
+  errors, all 1,403 owned declarations (1,149 theorems and 44 private declarations),
+  all 106 required theorem endpoints and all 72 exact stock-kernel targets.
+- Preserved the unchanged raw receipt and authenticated original evidence under
+  `docs/verification/hyperplane-main-exact-44531509741/`.
+  Registration adds 63 proof modules and 102 previously unregistered endpoints.
+  The merged accepted-package gate remains separate.
+
+
+## 2026-11-19 — Both six-speed spectrum realization branches
+
+Registered the unconditional existence theorem for every proposed six-speed
+value `(P−1)/(6P)`, for `P ≥ 7` congruent to one or five modulo six.
+The witnesses are positive, distinct and primitive; their exact global
+values include actual attaining times. The 11-module closure passed fresh
+strict sources, the audit of all 392 owned declarations including 30 private
+declarations, and every exact stock-kernel target. All 15 required endpoints
+are theorems. Universal classification remains incomplete.
+[Scope](docs/lean-status.md#six-speed-spectrum-complete-realization) ·
+[Receipt](docs/verification/six-spectrum-realization-44527134869/receipt.json).
+
+
+## 2026-11-19 — Complete unrestricted two-speed insertion theorem
+
+Registered the full two-speed insertion result, including the arbitrary
+positive speeds, prescribed interval, Goddyn–Wong acceleration criterion,
+common-dilation value bound, small and unbounded branches, and literal
+three-insertion obstruction. The exact 27-module closure passed fresh
+strict source checks, an audit of all 563 owned declarations including
+11 private declarations, and exact stock-kernel replay of every module.
+All 49 required endpoints are theorems. The registration adds 18 proof
+modules and preserves the checked source hashes.
+[Scope](docs/lean-status.md#complete-unrestricted-two-speed-insertion-theorem) ·
+[Raw receipt](docs/verification/two-insertions-exact-44524198858/receipt.json).
+The merged-package gate remains separate.
+
+
+## 2026-11-19 — Actual Legendre-pair construction and quotient transport
+
+Registered the matrix constructed from an actual Legendre pair, including the order-2396 specialization, and the actual invariant quotient/layer data used to exclude order 27. Their exact closures passed all three gates: construction, five modules and 87 project theorems; quotient transport, eighteen modules and 353 project theorems. Eight previously unregistered modules and thirteen named endpoints were added. The full finite no-lift certificate and final multiplier bound of nine remain pending.
+[Statements and receipts](docs/lean-status.md#actual-legendre-pair-matrix-and-quotient-transport).
+
 ## 2026-11-19 — Complete Erdős 607 line-size asymptotic
 
 Registered the sharp asymptotic for the actual real-plane record count, with

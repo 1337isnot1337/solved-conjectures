@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lean",
+    "-j1",
+    "-M4500",
+    "-DwarningAsError=true",
+    "-Dprofiler=true",
+    "-Dprofiler.threshold=1000",
+    "-o",
+    "/workspace/scratch/11c408478f32/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/LonelinessSixSpeedPrime0379FuelEightProbe.olean",
+    "Conjectures/LonelinessSixSpeedPrime0379FuelEightProbe.lean"
+  ],
+  "cwd": "/workspace/scratch/11c408478f32/solved-conjectures/lean",
+  "compiler": "/workspace/scratch/470d357cba9a/toolchain/lean-4.35.0-linux/bin/lean",
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "seconds": 100.404,
+  "returncode": 0,
+  "source": "/workspace/scratch/11c408478f32/solved-conjectures/lean/Conjectures/LonelinessSixSpeedPrime0379FuelEightProbe.lean",
+  "source_sha256_before": "c141d889984019544d2a127d3754e81c3cb3585376ca541147d70c5fd08de3a5",
+  "source_sha256_after": "c141d889984019544d2a127d3754e81c3cb3585376ca541147d70c5fd08de3a5",
+  "object_facets_sha256": {
+    "/workspace/scratch/11c408478f32/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/LonelinessSixSpeedPrime0379FuelEightProbe.olean": "8999e93f6ac9b43b1fba951435ed661bcd6a5dc1b9797c3ba82b6b82422eab31"
+  },
+  "stdout_stderr": "/workspace/scratch/11c408478f32/solved-conjectures/lean/.lake/build/local-source-records/Conjectures_LonelinessSixSpeedPrime0379FuelEightProbe.lean.log",
+  "stdout_stderr_sha256": "5bd3cabb79c58a8b33accc4b52a07c896dd9e2e1bf74830fc5fabdfb8a64a7c2"
+}

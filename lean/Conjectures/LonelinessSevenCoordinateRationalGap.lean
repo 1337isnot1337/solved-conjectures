@@ -33,6 +33,7 @@ theorem rational_gap_one_seventh (p q : ℕ) (hq : 0 < q)
     (Q : ℝ) (hQ : 0 < Q) (hqQ : (q : ℝ) ≤ Q)
     (hupper : (p : ℝ)/q < (1 / 7 : ℝ) + 1/(7*Q)) :
     (p : ℝ)/q ≤ (1 / 7 : ℝ) := by
+  have _positive_bound : 0 < Q := hQ
   have hqr : (0 : ℝ) < q := by exact_mod_cast hq
   by_contra hn
   have hlower : (1 / 7 : ℝ) < (p : ℝ)/q := lt_of_not_ge hn
@@ -50,7 +51,6 @@ theorem rational_gap_one_seventh (p q : ℕ) (hq : 0 < q)
     calc
       ((1 / 7 : ℝ)+1/(7*(q : ℝ)))*(q : ℝ) = ((q : ℝ)+1)/7 := by
         field_simp [ne_of_gt hqr]
-        <;> ring
       _ ≤ (p : ℝ) := by
         apply (div_le_iff₀ (by norm_num : (0 : ℝ) < 7)).mpr
         linarith

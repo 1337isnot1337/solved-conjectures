@@ -1,0 +1,1526 @@
+{
+  "accepted_registry_changed": false,
+  "axiom_whitelist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "baseline_reference": {
+    "artifact": 14535312024,
+    "comparison_caveat": "Separate fresh hosted runs; includes module imports and process startup. This metadata is not a new validation of the immutable original artifact.",
+    "head": "497fa455595dcf900cd818d1941cb015140b7bb3",
+    "job": 135584409914,
+    "kernel_peak_rss_kib": 2886716,
+    "kernel_seconds": 512.845,
+    "receipt_sha256": "2dd11c1f513df7cbaf6d8db6ca44b835f25196882549d0248f1beb24ff3f9956",
+    "run": 44531127081,
+    "source_peak_rss_kib": 3165336,
+    "source_seconds": 375.329,
+    "zip_sha256": "30caaf81fadf10d3c770abce626675ce6e2575563e8936c8a9a1bd02474e55f4"
+  },
+  "c_work_budget": 4096,
+  "complete_five_speed_classification_checked": false,
+  "error": "Strict source failed: Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00\nConjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part00.lean:63:2: error: Tactic `decide` failed. The elaborator is able to reduce the `Decidable` instance, but the kernel fails with:\n\n  (kernel) excessive memory consumption detected\n",
+  "gate_sha256": {
+    ".github/workflows/lean-five-speed-root-cblock4096.yml": "b1b08e7c8c9d3ebdce3bf79a3cea5be45c6289803756a59f59beb6a7bc211acd",
+    "docs/five-speed-root-cblock4096-inputs.json": "1e9dc7d30e8ad3c774f28bc62fae1bae522def9eae89aa08fbc3f032731abf48",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "results/five-speed-spectrum/generate_lean_packed_scalar.py": "9bdfc497cf9d7f6b344496e479fc5682d10a1745bfd704de1cae3f7d7b7e233b",
+    "results/five-speed-spectrum/generate_lean_root_cblock_budget.py": "e9a29f99a3cbbbac9fa89781da8d451f7c4390146b41b80cd26dc32a250c5962",
+    "results/five-speed-spectrum/generate_lean_root_quick.py": "5e59128f11203b0e1c038df27a1eb9a7c71c875695fd0032201a77133f51f18c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_five_speed_root_cblock4096.py": "c29b2eabdd4d3d5dacab453ce971556e61f55aabf009a9f31b8d06ddaea542d9",
+    "scripts/verify_frankl_orbit_batches.py": "078252c8a8298cae564b6646be15eaa6432a4890d1dba7a1f6916a131797e7cf",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "generated_inventory": {
+    "path": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/generated-source-inventory.json",
+    "sha256": "32d512156f4367c9e99d262c2988532bddaef665232471357ca04f8c0692130f"
+  },
+  "git_commit": "f581e515221aec50c91ef3741e8e380a7ae6ac43",
+  "kernel_checks": {},
+  "kernel_threads": 1,
+  "modern_modules": {
+    "Conjectures.BinaryAutomata": false,
+    "Conjectures.FiniteCertificate": false,
+    "Conjectures.Loneliness": false,
+    "Conjectures.LonelinessContinuity": false,
+    "Conjectures.LonelinessCriticalBase": false,
+    "Conjectures.LonelinessFiveFamily": false,
+    "Conjectures.LonelinessFiveSpeedBitIndexProposal": false,
+    "Conjectures.LonelinessFiveSpeedGeometricMask": false,
+    "Conjectures.LonelinessFiveSpeedMaskArithmetic": false,
+    "Conjectures.LonelinessFiveSpeedMasks": false,
+    "Conjectures.LonelinessFiveSpeedPackedScalar": false,
+    "Conjectures.LonelinessFiveSpeedPackedScalar199": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockDataP0199B4096": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part01": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part02": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part03": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part04": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part05": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part06": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part07": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part08": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10": false,
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11": false,
+    "Conjectures.LonelinessFiveSpeedRootFoldedList": false,
+    "Conjectures.LonelinessFiveSpeedRootMaskScan": false,
+    "Conjectures.LonelinessFiveSpeedRootQuickBaseBlocks": false,
+    "Conjectures.LonelinessFiveSpeedRootQuickChunkAssembly": false,
+    "Conjectures.LonelinessFiveSpeedRootSemantics": false,
+    "Conjectures.LonelinessFiveSpeedRootSemanticsDefs": false,
+    "Conjectures.LonelinessFiveSpeedRootSemanticsForms": false,
+    "Conjectures.LonelinessFiveSpeedRootSemanticsNormalize": false,
+    "Conjectures.LonelinessFiveSpeedRootSemanticsTransport": false,
+    "Conjectures.LonelinessFiveSpeedRootStar": false,
+    "Conjectures.LonelinessFiveSpeedRootStarBlocks": false,
+    "Conjectures.LonelinessFiveSpeedRootStarCachedBlocks": false,
+    "Conjectures.LonelinessFiveSpeedRootStarQuickBlocks": false,
+    "Conjectures.LonelinessFiveSpeedScalarInverse": false,
+    "Conjectures.LonelinessFiveSpeedScalarTable": false,
+    "Conjectures.LonelinessFiveSpeedScalarTree": false,
+    "Conjectures.LonelinessFiveSpeedScalarTreeMask0199": false,
+    "Conjectures.LonelinessModularNormalize": false,
+    "Conjectures.LonelinessModularWitness": false,
+    "Conjectures.LonelinessRational": false
+  },
+  "original_predicates_and_scalar": true,
+  "other_root_primes_checked": false,
+  "prime": 199,
+  "project_modules": [
+    "Conjectures.FiniteCertificate",
+    "Conjectures.Loneliness",
+    "Conjectures.LonelinessFiveSpeedBitIndexProposal",
+    "Conjectures.LonelinessFiveSpeedGeometricMask",
+    "Conjectures.LonelinessFiveSpeedRootSemanticsForms",
+    "Conjectures.BinaryAutomata",
+    "Conjectures.LonelinessContinuity",
+    "Conjectures.LonelinessFiveFamily",
+    "Conjectures.LonelinessFiveSpeedMasks",
+    "Conjectures.LonelinessRational",
+    "Conjectures.LonelinessCriticalBase",
+    "Conjectures.LonelinessFiveSpeedMaskArithmetic",
+    "Conjectures.LonelinessModularWitness",
+    "Conjectures.LonelinessFiveSpeedRootMaskScan",
+    "Conjectures.LonelinessFiveSpeedScalarTable",
+    "Conjectures.LonelinessModularNormalize",
+    "Conjectures.LonelinessFiveSpeedScalarInverse",
+    "Conjectures.LonelinessFiveSpeedRootSemanticsDefs",
+    "Conjectures.LonelinessFiveSpeedScalarTree",
+    "Conjectures.LonelinessFiveSpeedRootSemanticsNormalize",
+    "Conjectures.LonelinessFiveSpeedRootSemanticsTransport",
+    "Conjectures.LonelinessFiveSpeedRootStar",
+    "Conjectures.LonelinessFiveSpeedPackedScalar",
+    "Conjectures.LonelinessFiveSpeedScalarTreeMask0199",
+    "Conjectures.LonelinessFiveSpeedRootSemantics",
+    "Conjectures.LonelinessFiveSpeedRootStarBlocks",
+    "Conjectures.LonelinessFiveSpeedPackedScalar199",
+    "Conjectures.LonelinessFiveSpeedRootCBlockDataP0199B4096",
+    "Conjectures.LonelinessFiveSpeedRootFoldedList",
+    "Conjectures.LonelinessFiveSpeedRootStarCachedBlocks",
+    "Conjectures.LonelinessFiveSpeedRootStarQuickBlocks",
+    "Conjectures.LonelinessFiveSpeedRootQuickBaseBlocks",
+    "Conjectures.LonelinessFiveSpeedRootQuickChunkAssembly",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part01",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part02",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part03",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part04",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part05",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part06",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part07",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part08",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096"
+  ],
+  "reproduction": {
+    "computational_output_is_proof": false,
+    "file_sha256": {
+      "first/lean/Conjectures/LonelinessFiveSpeedPackedScalar199.lean": "268585c36c19b6636bfbd62899b9cafb2732ecc1a6aede3c6676e0d299ba8f27",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockDataP0199B4096.lean": "db77d2034b96250adf74eba444608ef40c5eb56ab53c793f032ae99685b80676",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096.lean": "5646fba0d7e1b1faff7175c54add78bd926c4d71a02fa4635a51873cb876af20",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part00.lean": "44360e367c0ed4a868fff7d3d59f6b28b55f6d77aa5533ef66088f501ce53f51",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part01.lean": "f04cb36b447fff825d4c3a39c555eb206fe54403957a9133b0d9e1dec6a82781",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part02.lean": "71b9bdf86568a3a353f30e4af4f598268ff148cfd3dea6584ea2c38a3fcff4fd",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part03.lean": "beb84f027fe743fab0fdf130b8b5a77b2abec946573cc62440de07d7a32a2c17",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part04.lean": "cf8f4592331ad1bf407223f4c172766df8598603384c0cc68186fe14cbe75623",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part05.lean": "ebf35d435a0837fa1c7b8f0ea609c2f2982a3bd3c1daf723c02046254e9c0ab5",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part06.lean": "ae8c2be770baf4d4bdc22bf2978a5963167b7712b06f104965b86d147435da26",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part07.lean": "ed4a63a0a1c14735afdd825ecc5c2e44b49683895f964c810321decbe439eb8c",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part08.lean": "d26f87de46d7408585c58dc68479fd33b7bc99b2a55c27b19aedf7440df4a69b",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part09.lean": "69277b6b437357851e83536d2872d4c0c51d868dc7aca887ef13fd2616778783",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part10.lean": "d4a097a67dd1534235795eb2ad2edc846c710b5eaf2c76eda60a67c465b3ab5d",
+      "first/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part11.lean": "cc80ed6fc39c851cc45ff43e271b1819541e2fe3559be9216a1ce59534f37b50",
+      "first/lean/Conjectures/LonelinessFiveSpeedScalarTreeMask0199.lean": "c8ae3a69a7c907afdb6dbdd6e7cfe1caee92270a122fec9149ddde62ce1fb545",
+      "first/packed.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "first/packed.stdout": "2f7dd5567b80e194354c85727e038b1ed724491a8d3db6678d33724ee499e737",
+      "first/quick.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "first/quick.stdout": "d5ae17c3519a58457928f660dbf3015d1708e23f8b7e2af685d2b27cf5efd997",
+      "first/root-generated.json": "20f6783f175c5db9ee569514a4d954739c11d3969d9fc7152d2aba40a58e63cc",
+      "second/lean/Conjectures/LonelinessFiveSpeedPackedScalar199.lean": "268585c36c19b6636bfbd62899b9cafb2732ecc1a6aede3c6676e0d299ba8f27",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockDataP0199B4096.lean": "db77d2034b96250adf74eba444608ef40c5eb56ab53c793f032ae99685b80676",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096.lean": "5646fba0d7e1b1faff7175c54add78bd926c4d71a02fa4635a51873cb876af20",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part00.lean": "44360e367c0ed4a868fff7d3d59f6b28b55f6d77aa5533ef66088f501ce53f51",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part01.lean": "f04cb36b447fff825d4c3a39c555eb206fe54403957a9133b0d9e1dec6a82781",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part02.lean": "71b9bdf86568a3a353f30e4af4f598268ff148cfd3dea6584ea2c38a3fcff4fd",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part03.lean": "beb84f027fe743fab0fdf130b8b5a77b2abec946573cc62440de07d7a32a2c17",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part04.lean": "cf8f4592331ad1bf407223f4c172766df8598603384c0cc68186fe14cbe75623",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part05.lean": "ebf35d435a0837fa1c7b8f0ea609c2f2982a3bd3c1daf723c02046254e9c0ab5",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part06.lean": "ae8c2be770baf4d4bdc22bf2978a5963167b7712b06f104965b86d147435da26",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part07.lean": "ed4a63a0a1c14735afdd825ecc5c2e44b49683895f964c810321decbe439eb8c",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part08.lean": "d26f87de46d7408585c58dc68479fd33b7bc99b2a55c27b19aedf7440df4a69b",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part09.lean": "69277b6b437357851e83536d2872d4c0c51d868dc7aca887ef13fd2616778783",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part10.lean": "d4a097a67dd1534235795eb2ad2edc846c710b5eaf2c76eda60a67c465b3ab5d",
+      "second/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part11.lean": "cc80ed6fc39c851cc45ff43e271b1819541e2fe3559be9216a1ce59534f37b50",
+      "second/lean/Conjectures/LonelinessFiveSpeedScalarTreeMask0199.lean": "c8ae3a69a7c907afdb6dbdd6e7cfe1caee92270a122fec9149ddde62ce1fb545",
+      "second/packed.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "second/packed.stdout": "2f7dd5567b80e194354c85727e038b1ed724491a8d3db6678d33724ee499e737",
+      "second/quick.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "second/quick.stdout": "d5ae17c3519a58457928f660dbf3015d1708e23f8b7e2af685d2b27cf5efd997",
+      "second/root-generated.json": "20f6783f175c5db9ee569514a4d954739c11d3969d9fc7152d2aba40a58e63cc"
+    },
+    "generated_source_sha256": {
+      "Conjectures.LonelinessFiveSpeedPackedScalar199": "268585c36c19b6636bfbd62899b9cafb2732ecc1a6aede3c6676e0d299ba8f27",
+      "Conjectures.LonelinessFiveSpeedRootCBlockDataP0199B4096": "db77d2034b96250adf74eba444608ef40c5eb56ab53c793f032ae99685b80676",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096": "5646fba0d7e1b1faff7175c54add78bd926c4d71a02fa4635a51873cb876af20",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00": "44360e367c0ed4a868fff7d3d59f6b28b55f6d77aa5533ef66088f501ce53f51",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part01": "f04cb36b447fff825d4c3a39c555eb206fe54403957a9133b0d9e1dec6a82781",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part02": "71b9bdf86568a3a353f30e4af4f598268ff148cfd3dea6584ea2c38a3fcff4fd",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part03": "beb84f027fe743fab0fdf130b8b5a77b2abec946573cc62440de07d7a32a2c17",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part04": "cf8f4592331ad1bf407223f4c172766df8598603384c0cc68186fe14cbe75623",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part05": "ebf35d435a0837fa1c7b8f0ea609c2f2982a3bd3c1daf723c02046254e9c0ab5",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part06": "ae8c2be770baf4d4bdc22bf2978a5963167b7712b06f104965b86d147435da26",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part07": "ed4a63a0a1c14735afdd825ecc5c2e44b49683895f964c810321decbe439eb8c",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part08": "d26f87de46d7408585c58dc68479fd33b7bc99b2a55c27b19aedf7440df4a69b",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09": "69277b6b437357851e83536d2872d4c0c51d868dc7aca887ef13fd2616778783",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10": "d4a097a67dd1534235795eb2ad2edc846c710b5eaf2c76eda60a67c465b3ab5d",
+      "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11": "cc80ed6fc39c851cc45ff43e271b1819541e2fe3559be9216a1ce59534f37b50"
+    },
+    "original_predicates_and_scalar": true,
+    "packed_manifest": {
+      "blocks": 100,
+      "generated_source_sha256": "268585c36c19b6636bfbd62899b9cafb2732ecc1a6aede3c6676e0d299ba8f27",
+      "module": "Conjectures.LonelinessFiveSpeedPackedScalar199",
+      "packed_bits": 19900,
+      "prime": 199,
+      "source_bytes": 5959,
+      "tree_source_sha256": "c8ae3a69a7c907afdb6dbdd6e7cfe1caee92270a122fec9149ddde62ce1fb545"
+    },
+    "root_manifest": {
+      "base_parts": [
+        {
+          "bases": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00"
+        },
+        {
+          "bases": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part01"
+        },
+        {
+          "bases": [
+            10,
+            11,
+            12,
+            13
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part02"
+        },
+        {
+          "bases": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part03"
+        },
+        {
+          "bases": [
+            19,
+            23,
+            24,
+            27
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part04"
+        },
+        {
+          "bases": [
+            28,
+            29,
+            30,
+            31
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part05"
+        },
+        {
+          "bases": [
+            32,
+            34,
+            35,
+            36
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part06"
+        },
+        {
+          "bases": [
+            37,
+            38,
+            39,
+            42
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part07"
+        },
+        {
+          "bases": [
+            44,
+            45,
+            47,
+            49
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part08"
+        },
+        {
+          "bases": [
+            52,
+            54,
+            55,
+            60
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09"
+        },
+        {
+          "bases": [
+            61,
+            67,
+            68,
+            74
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10"
+        },
+        {
+          "bases": [
+            80
+          ],
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11"
+        }
+      ],
+      "bases_per_module": 4,
+      "budget": 4096,
+      "c_leaf_count": 47,
+      "cd_prefix_count": 46610,
+      "d_leaf_count": 0,
+      "finite_leaf_count": 64,
+      "generator_sha256": "e9a29f99a3cbbbac9fa89781da8d451f7c4390146b41b80cd26dc32a250c5962",
+      "intervals": [
+        {
+          "base": 2,
+          "cd_prefixes": 4087,
+          "count": 72,
+          "start": 0
+        },
+        {
+          "base": 2,
+          "cd_prefixes": 378,
+          "count": 28,
+          "start": 72
+        },
+        {
+          "base": 3,
+          "cd_prefixes": 4095,
+          "count": 84,
+          "start": 0
+        },
+        {
+          "base": 3,
+          "cd_prefixes": 91,
+          "count": 16,
+          "start": 84
+        },
+        {
+          "base": 4,
+          "cd_prefixes": 4005,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 5,
+          "cd_prefixes": 3570,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 6,
+          "cd_prefixes": 3403,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 7,
+          "cd_prefixes": 2926,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 8,
+          "cd_prefixes": 2850,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 9,
+          "cd_prefixes": 2415,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 10,
+          "cd_prefixes": 2346,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 11,
+          "cd_prefixes": 2080,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 12,
+          "cd_prefixes": 1830,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 13,
+          "cd_prefixes": 1378,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 14,
+          "cd_prefixes": 1275,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 15,
+          "cd_prefixes": 1275,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 16,
+          "cd_prefixes": 1225,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 17,
+          "cd_prefixes": 990,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 19,
+          "cd_prefixes": 820,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 23,
+          "cd_prefixes": 780,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 24,
+          "cd_prefixes": 741,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 27,
+          "cd_prefixes": 528,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 28,
+          "cd_prefixes": 561,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 29,
+          "cd_prefixes": 595,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 30,
+          "cd_prefixes": 496,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 31,
+          "cd_prefixes": 253,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 32,
+          "cd_prefixes": 300,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 34,
+          "cd_prefixes": 378,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 35,
+          "cd_prefixes": 171,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 36,
+          "cd_prefixes": 190,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 37,
+          "cd_prefixes": 66,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 38,
+          "cd_prefixes": 91,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 39,
+          "cd_prefixes": 120,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 42,
+          "cd_prefixes": 91,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 44,
+          "cd_prefixes": 66,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 45,
+          "cd_prefixes": 28,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 47,
+          "cd_prefixes": 36,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 49,
+          "cd_prefixes": 6,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 52,
+          "cd_prefixes": 36,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 54,
+          "cd_prefixes": 15,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 55,
+          "cd_prefixes": 6,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 60,
+          "cd_prefixes": 10,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 61,
+          "cd_prefixes": 3,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 67,
+          "cd_prefixes": 1,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 68,
+          "cd_prefixes": 1,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 74,
+          "cd_prefixes": 1,
+          "count": 100,
+          "start": 0
+        },
+        {
+          "base": 80,
+          "cd_prefixes": 1,
+          "count": 100,
+          "start": 0
+        }
+      ],
+      "module_count": 14,
+      "modules": [
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockDataP0199B4096",
+          "source_bytes": 58080,
+          "source_sha256": "db77d2034b96250adf74eba444608ef40c5eb56ab53c793f032ae99685b80676"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00",
+          "source_bytes": 4419,
+          "source_sha256": "44360e367c0ed4a868fff7d3d59f6b28b55f6d77aa5533ef66088f501ce53f51"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part01",
+          "source_bytes": 3705,
+          "source_sha256": "f04cb36b447fff825d4c3a39c555eb206fe54403957a9133b0d9e1dec6a82781"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part02",
+          "source_bytes": 3721,
+          "source_sha256": "71b9bdf86568a3a353f30e4af4f598268ff148cfd3dea6584ea2c38a3fcff4fd"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part03",
+          "source_bytes": 3721,
+          "source_sha256": "beb84f027fe743fab0fdf130b8b5a77b2abec946573cc62440de07d7a32a2c17"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part04",
+          "source_bytes": 3721,
+          "source_sha256": "cf8f4592331ad1bf407223f4c172766df8598603384c0cc68186fe14cbe75623"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part05",
+          "source_bytes": 3721,
+          "source_sha256": "ebf35d435a0837fa1c7b8f0ea609c2f2982a3bd3c1daf723c02046254e9c0ab5"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part06",
+          "source_bytes": 3721,
+          "source_sha256": "ae8c2be770baf4d4bdc22bf2978a5963167b7712b06f104965b86d147435da26"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part07",
+          "source_bytes": 3721,
+          "source_sha256": "ed4a63a0a1c14735afdd825ecc5c2e44b49683895f964c810321decbe439eb8c"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part08",
+          "source_bytes": 3721,
+          "source_sha256": "d26f87de46d7408585c58dc68479fd33b7bc99b2a55c27b19aedf7440df4a69b"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09",
+          "source_bytes": 3721,
+          "source_sha256": "69277b6b437357851e83536d2872d4c0c51d868dc7aca887ef13fd2616778783"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10",
+          "source_bytes": 3721,
+          "source_sha256": "d4a097a67dd1534235795eb2ad2edc846c710b5eaf2c76eda60a67c465b3ab5d"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11",
+          "source_bytes": 1201,
+          "source_sha256": "cc80ed6fc39c851cc45ff43e271b1819541e2fe3559be9216a1ce59534f37b50"
+        },
+        {
+          "module": "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096",
+          "source_bytes": 15661,
+          "source_sha256": "5646fba0d7e1b1faff7175c54add78bd926c4d71a02fa4635a51873cb876af20"
+        }
+      ],
+      "original_generator_sha256": "5e59128f11203b0e1c038df27a1eb9a7c71c875695fd0032201a77133f51f18c",
+      "prime": 199,
+      "required": [
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.Data.values_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.Data.eligible_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0002.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0003.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0004.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0005.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0006.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0007.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0008.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0009.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0010.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0011.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0012.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0013.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0014.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0015.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0016.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0017.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0019.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0023.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0024.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0027.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0028.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0029.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0030.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0031.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0032.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0034.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0035.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0036.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0037.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0038.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0039.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0042.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0044.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0045.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0047.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0049.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0052.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0054.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0055.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0060.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0061.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0067.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0068.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0074.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0080.base_checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.checked",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.normalized",
+        "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.sound"
+      ],
+      "scalar_source_sha256": "c8ae3a69a7c907afdb6dbdd6e7cfe1caee92270a122fec9149ddde62ce1fb545",
+      "source_bytes": 116555,
+      "status": "untrusted candidate layout; fresh Lean source/audit/kernel gates are separate",
+      "use_prefix": false
+    },
+    "two_renderings_equal": true,
+    "unchanged_original_generator_dependency": true
+  },
+  "required_theorems": [
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.Data.values_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.Data.eligible_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0002.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0003.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0004.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0005.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0006.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0007.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0008.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0009.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0010.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0011.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0012.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0013.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0014.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0015.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0016.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0017.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0019.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0023.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0024.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0027.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0028.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0029.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0030.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0031.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0032.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0034.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0035.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0036.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0037.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0038.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0039.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0042.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0044.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0045.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0047.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0049.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0052.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0054.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0055.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0060.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0061.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0067.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0068.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0074.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.B0080.base_checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.checked",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.normalized",
+    "Loneliness.FiveSpeedCertificate.RootCBlockCertificates.P199B4096.sound",
+    "Loneliness.FiveSpeedCertificate.PackedScalars.P199.checked",
+    "Loneliness.FiveSpeedCertificate.PackedScalars.P199.mask_eq_treeMask",
+    "Loneliness.FiveSpeedCertificate.PackedScalars.P199.sound"
+  ],
+  "roots": [
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096"
+  ],
+  "schema": "five-speed-root-cblock4096-receipt-v1",
+  "scope": "Complete GlobalRootCover 199 using the original scalar oracle, cache, predicates and normalized-cover bridge, with proof leaves regrouped into contiguous C intervals costing at most4096 nontrivial C-D prefixes. This is a measured same-statement layout pilot, not a root-prime-family completion.",
+  "source_checks": {
+    "Conjectures.BinaryAutomata": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/BinaryAutomata.olean",
+        "Conjectures/BinaryAutomata.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.BinaryAutomata.source.log",
+      "log_sha256": "5ba2df2d9088958ee77ffed14e484c723502c8a5f34e509513154af2aded4548",
+      "peak_rss_kib": 1808008,
+      "seconds": 2.005,
+      "system_seconds": 0.48855,
+      "timed_out": false,
+      "user_seconds": 1.3115299999999999
+    },
+    "Conjectures.FiniteCertificate": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/FiniteCertificate.olean",
+        "Conjectures/FiniteCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.FiniteCertificate.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1577948,
+      "seconds": 1.253,
+      "system_seconds": 0.432979,
+      "timed_out": false,
+      "user_seconds": 0.6229709999999999
+    },
+    "Conjectures.Loneliness": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/Loneliness.olean",
+        "Conjectures/Loneliness.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.Loneliness.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1919452,
+      "seconds": 2.506,
+      "system_seconds": 0.524142,
+      "timed_out": false,
+      "user_seconds": 1.793909
+    },
+    "Conjectures.LonelinessContinuity": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessContinuity.olean",
+        "Conjectures/LonelinessContinuity.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessContinuity.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2140484,
+      "seconds": 1.754,
+      "system_seconds": 0.593741,
+      "timed_out": false,
+      "user_seconds": 0.987232
+    },
+    "Conjectures.LonelinessCriticalBase": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessCriticalBase.olean",
+        "Conjectures/LonelinessCriticalBase.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessCriticalBase.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1918416,
+      "seconds": 4.513,
+      "system_seconds": 0.516543,
+      "timed_out": false,
+      "user_seconds": 3.946155
+    },
+    "Conjectures.LonelinessFiveFamily": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveFamily.olean",
+        "Conjectures/LonelinessFiveFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveFamily.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1927392,
+      "seconds": 6.016,
+      "system_seconds": 0.5138929999999999,
+      "timed_out": false,
+      "user_seconds": 5.257906
+    },
+    "Conjectures.LonelinessFiveSpeedBitIndexProposal": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedBitIndexProposal.olean",
+        "Conjectures/LonelinessFiveSpeedBitIndexProposal.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedBitIndexProposal.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 486172,
+      "seconds": 0.501,
+      "system_seconds": 0.130049,
+      "timed_out": false,
+      "user_seconds": 0.176066
+    },
+    "Conjectures.LonelinessFiveSpeedGeometricMask": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedGeometricMask.olean",
+        "Conjectures/LonelinessFiveSpeedGeometricMask.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedGeometricMask.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1911520,
+      "seconds": 2.005,
+      "system_seconds": 0.533758,
+      "timed_out": false,
+      "user_seconds": 1.317872
+    },
+    "Conjectures.LonelinessFiveSpeedMaskArithmetic": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedMaskArithmetic.olean",
+        "Conjectures/LonelinessFiveSpeedMaskArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedMaskArithmetic.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1916388,
+      "seconds": 1.754,
+      "system_seconds": 0.528211,
+      "timed_out": false,
+      "user_seconds": 1.045418
+    },
+    "Conjectures.LonelinessFiveSpeedMasks": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedMasks.olean",
+        "Conjectures/LonelinessFiveSpeedMasks.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedMasks.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1932848,
+      "seconds": 2.005,
+      "system_seconds": 0.529092,
+      "timed_out": false,
+      "user_seconds": 1.457254
+    },
+    "Conjectures.LonelinessFiveSpeedPackedScalar": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedPackedScalar.olean",
+        "Conjectures/LonelinessFiveSpeedPackedScalar.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedPackedScalar.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1908192,
+      "seconds": 1.505,
+      "system_seconds": 0.532293,
+      "timed_out": false,
+      "user_seconds": 0.7874329999999999
+    },
+    "Conjectures.LonelinessFiveSpeedPackedScalar199": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedPackedScalar199.olean",
+        "Conjectures/LonelinessFiveSpeedPackedScalar199.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedPackedScalar199.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1908544,
+      "seconds": 1.504,
+      "system_seconds": 0.507231,
+      "timed_out": false,
+      "user_seconds": 0.786358
+    },
+    "Conjectures.LonelinessFiveSpeedRootCBlockDataP0199B4096": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootCBlockDataP0199B4096.olean",
+        "Conjectures/LonelinessFiveSpeedRootCBlockDataP0199B4096.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootCBlockDataP0199B4096.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2341280,
+      "seconds": 11.784,
+      "system_seconds": 0.8108069999999999,
+      "timed_out": false,
+      "user_seconds": 10.812765
+    },
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part00.olean",
+        "Conjectures/LonelinessFiveSpeedRootCBlockP0199B4096Part00.lean"
+      ],
+      "exit_code": 1,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00.source.log",
+      "log_sha256": "d46feb684a3df3581b45b7964f26a98600f49c4026a0d90952f1c40047a1051d",
+      "peak_rss_kib": 4610008,
+      "seconds": 72.947,
+      "system_seconds": 2.242256,
+      "timed_out": false,
+      "user_seconds": 70.342046
+    },
+    "Conjectures.LonelinessFiveSpeedRootFoldedList": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootFoldedList.olean",
+        "Conjectures/LonelinessFiveSpeedRootFoldedList.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootFoldedList.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2170720,
+      "seconds": 2.256,
+      "system_seconds": 0.5959169999999999,
+      "timed_out": false,
+      "user_seconds": 1.5237889999999998
+    },
+    "Conjectures.LonelinessFiveSpeedRootMaskScan": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootMaskScan.olean",
+        "Conjectures/LonelinessFiveSpeedRootMaskScan.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootMaskScan.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1918748,
+      "seconds": 1.504,
+      "system_seconds": 0.530327,
+      "timed_out": false,
+      "user_seconds": 0.963595
+    },
+    "Conjectures.LonelinessFiveSpeedRootQuickBaseBlocks": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootQuickBaseBlocks.olean",
+        "Conjectures/LonelinessFiveSpeedRootQuickBaseBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootQuickBaseBlocks.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2157144,
+      "seconds": 1.754,
+      "system_seconds": 0.579734,
+      "timed_out": false,
+      "user_seconds": 0.943195
+    },
+    "Conjectures.LonelinessFiveSpeedRootQuickChunkAssembly": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootQuickChunkAssembly.olean",
+        "Conjectures/LonelinessFiveSpeedRootQuickChunkAssembly.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootQuickChunkAssembly.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2152636,
+      "seconds": 1.504,
+      "system_seconds": 0.569556,
+      "timed_out": false,
+      "user_seconds": 0.885865
+    },
+    "Conjectures.LonelinessFiveSpeedRootSemantics": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootSemantics.olean",
+        "Conjectures/LonelinessFiveSpeedRootSemantics.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootSemantics.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2218040,
+      "seconds": 1.755,
+      "system_seconds": 0.6026279999999999,
+      "timed_out": false,
+      "user_seconds": 1.02037
+    },
+    "Conjectures.LonelinessFiveSpeedRootSemanticsDefs": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootSemanticsDefs.olean",
+        "Conjectures/LonelinessFiveSpeedRootSemanticsDefs.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootSemanticsDefs.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2148760,
+      "seconds": 1.754,
+      "system_seconds": 0.59839,
+      "timed_out": false,
+      "user_seconds": 1.015662
+    },
+    "Conjectures.LonelinessFiveSpeedRootSemanticsForms": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootSemanticsForms.olean",
+        "Conjectures/LonelinessFiveSpeedRootSemanticsForms.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootSemanticsForms.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 3168228,
+      "seconds": 21.324,
+      "system_seconds": 1.103136,
+      "timed_out": false,
+      "user_seconds": 20.060478
+    },
+    "Conjectures.LonelinessFiveSpeedRootSemanticsNormalize": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootSemanticsNormalize.olean",
+        "Conjectures/LonelinessFiveSpeedRootSemanticsNormalize.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootSemanticsNormalize.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2149116,
+      "seconds": 1.757,
+      "system_seconds": 0.582096,
+      "timed_out": false,
+      "user_seconds": 1.136188
+    },
+    "Conjectures.LonelinessFiveSpeedRootSemanticsTransport": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootSemanticsTransport.olean",
+        "Conjectures/LonelinessFiveSpeedRootSemanticsTransport.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootSemanticsTransport.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2215264,
+      "seconds": 1.754,
+      "system_seconds": 0.594679,
+      "timed_out": false,
+      "user_seconds": 1.140303
+    },
+    "Conjectures.LonelinessFiveSpeedRootStar": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootStar.olean",
+        "Conjectures/LonelinessFiveSpeedRootStar.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootStar.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2168760,
+      "seconds": 2.005,
+      "system_seconds": 0.593159,
+      "timed_out": false,
+      "user_seconds": 1.2634699999999999
+    },
+    "Conjectures.LonelinessFiveSpeedRootStarBlocks": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootStarBlocks.olean",
+        "Conjectures/LonelinessFiveSpeedRootStarBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootStarBlocks.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2156608,
+      "seconds": 1.755,
+      "system_seconds": 0.5996589999999999,
+      "timed_out": false,
+      "user_seconds": 0.945039
+    },
+    "Conjectures.LonelinessFiveSpeedRootStarCachedBlocks": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootStarCachedBlocks.olean",
+        "Conjectures/LonelinessFiveSpeedRootStarCachedBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootStarCachedBlocks.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2162648,
+      "seconds": 1.754,
+      "system_seconds": 0.613402,
+      "timed_out": false,
+      "user_seconds": 1.135745
+    },
+    "Conjectures.LonelinessFiveSpeedRootStarQuickBlocks": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedRootStarQuickBlocks.olean",
+        "Conjectures/LonelinessFiveSpeedRootStarQuickBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedRootStarQuickBlocks.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2153024,
+      "seconds": 1.505,
+      "system_seconds": 0.5908289999999999,
+      "timed_out": false,
+      "user_seconds": 0.868749
+    },
+    "Conjectures.LonelinessFiveSpeedScalarInverse": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedScalarInverse.olean",
+        "Conjectures/LonelinessFiveSpeedScalarInverse.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedScalarInverse.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1908748,
+      "seconds": 1.504,
+      "system_seconds": 0.520509,
+      "timed_out": false,
+      "user_seconds": 0.822805
+    },
+    "Conjectures.LonelinessFiveSpeedScalarTable": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedScalarTable.olean",
+        "Conjectures/LonelinessFiveSpeedScalarTable.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedScalarTable.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1915892,
+      "seconds": 1.504,
+      "system_seconds": 0.497915,
+      "timed_out": false,
+      "user_seconds": 0.928708
+    },
+    "Conjectures.LonelinessFiveSpeedScalarTree": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedScalarTree.olean",
+        "Conjectures/LonelinessFiveSpeedScalarTree.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedScalarTree.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1920900,
+      "seconds": 1.754,
+      "system_seconds": 0.540586,
+      "timed_out": false,
+      "user_seconds": 1.024004
+    },
+    "Conjectures.LonelinessFiveSpeedScalarTreeMask0199": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessFiveSpeedScalarTreeMask0199.olean",
+        "Conjectures/LonelinessFiveSpeedScalarTreeMask0199.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessFiveSpeedScalarTreeMask0199.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 1934768,
+      "seconds": 1.504,
+      "system_seconds": 0.522041,
+      "timed_out": false,
+      "user_seconds": 0.976077
+    },
+    "Conjectures.LonelinessModularNormalize": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessModularNormalize.olean",
+        "Conjectures/LonelinessModularNormalize.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessModularNormalize.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2152660,
+      "seconds": 2.005,
+      "system_seconds": 0.57385,
+      "timed_out": false,
+      "user_seconds": 1.395067
+    },
+    "Conjectures.LonelinessModularWitness": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessModularWitness.olean",
+        "Conjectures/LonelinessModularWitness.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessModularWitness.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2155584,
+      "seconds": 2.256,
+      "system_seconds": 0.5870099999999999,
+      "timed_out": false,
+      "user_seconds": 1.532027
+    },
+    "Conjectures.LonelinessRational": {
+      "command": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/lib/lean/Conjectures/LonelinessRational.olean",
+        "Conjectures/LonelinessRational.lean"
+      ],
+      "exit_code": 0,
+      "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/five-speed-root-cblock4096/checked/logs/Conjectures.LonelinessRational.source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "peak_rss_kib": 2128616,
+      "seconds": 1.755,
+      "system_seconds": 0.5912069999999999,
+      "timed_out": false,
+      "user_seconds": 0.96171
+    }
+  },
+  "source_policy": {
+    "fresh_project_objects": true,
+    "linter_override": false,
+    "warning_as_error": true
+  },
+  "source_sha256": {
+    "Conjectures.BinaryAutomata": "d98fb10dfc3525d4a892cc356a2c483b64ff64cd65147e27d1e7397a2115b57a",
+    "Conjectures.FiniteCertificate": "7c65b844602a0d59e3087b0aeee98930c92d2b44adcc9f6543e4c98315bc225f",
+    "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "Conjectures.LonelinessCriticalBase": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+    "Conjectures.LonelinessFiveFamily": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+    "Conjectures.LonelinessFiveSpeedBitIndexProposal": "7ec4276987fa6d6e83b1732c6b0c512d85b5d641cd15b01a5b4975fda64c1549",
+    "Conjectures.LonelinessFiveSpeedGeometricMask": "9f497afae28f0eec972aed194ed0eb4459adb4e554bc92a0152a5c4bed6c615b",
+    "Conjectures.LonelinessFiveSpeedMaskArithmetic": "7f8d5c6b16c990d7d2ef8b99265e589756f6cdf7c5329dabd7d75522ff2c1f35",
+    "Conjectures.LonelinessFiveSpeedMasks": "3f03870caef2e3e34443bcc902d2013823e3ee4c652155997ee4bfabbce4ae3b",
+    "Conjectures.LonelinessFiveSpeedPackedScalar": "0d7331eff6378d95a9347119c1ef8f6920b1189c4d53c50c549c1c2de1afc840",
+    "Conjectures.LonelinessFiveSpeedPackedScalar199": "268585c36c19b6636bfbd62899b9cafb2732ecc1a6aede3c6676e0d299ba8f27",
+    "Conjectures.LonelinessFiveSpeedRootCBlockDataP0199B4096": "db77d2034b96250adf74eba444608ef40c5eb56ab53c793f032ae99685b80676",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096": "5646fba0d7e1b1faff7175c54add78bd926c4d71a02fa4635a51873cb876af20",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part00": "44360e367c0ed4a868fff7d3d59f6b28b55f6d77aa5533ef66088f501ce53f51",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part01": "f04cb36b447fff825d4c3a39c555eb206fe54403957a9133b0d9e1dec6a82781",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part02": "71b9bdf86568a3a353f30e4af4f598268ff148cfd3dea6584ea2c38a3fcff4fd",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part03": "beb84f027fe743fab0fdf130b8b5a77b2abec946573cc62440de07d7a32a2c17",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part04": "cf8f4592331ad1bf407223f4c172766df8598603384c0cc68186fe14cbe75623",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part05": "ebf35d435a0837fa1c7b8f0ea609c2f2982a3bd3c1daf723c02046254e9c0ab5",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part06": "ae8c2be770baf4d4bdc22bf2978a5963167b7712b06f104965b86d147435da26",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part07": "ed4a63a0a1c14735afdd825ecc5c2e44b49683895f964c810321decbe439eb8c",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part08": "d26f87de46d7408585c58dc68479fd33b7bc99b2a55c27b19aedf7440df4a69b",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part09": "69277b6b437357851e83536d2872d4c0c51d868dc7aca887ef13fd2616778783",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part10": "d4a097a67dd1534235795eb2ad2edc846c710b5eaf2c76eda60a67c465b3ab5d",
+    "Conjectures.LonelinessFiveSpeedRootCBlockP0199B4096Part11": "cc80ed6fc39c851cc45ff43e271b1819541e2fe3559be9216a1ce59534f37b50",
+    "Conjectures.LonelinessFiveSpeedRootFoldedList": "0c21db008e0822c4a8b22bc7f91f49cbce9e0d91e45d5720e9f4f43694f0d5e8",
+    "Conjectures.LonelinessFiveSpeedRootMaskScan": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
+    "Conjectures.LonelinessFiveSpeedRootQuickBaseBlocks": "39ddbf23388cd459c5fc1043d15a8b21d85cf9518111040065214c6b37c2ade6",
+    "Conjectures.LonelinessFiveSpeedRootQuickChunkAssembly": "5d0bbddc6ff63a4644417f8283022177da37f5dcbf516f004624443e669c709a",
+    "Conjectures.LonelinessFiveSpeedRootSemantics": "0f40fd4f4a488d93cd1e4467ad073c4e0f1a883a188b57f7c3815064f2731234",
+    "Conjectures.LonelinessFiveSpeedRootSemanticsDefs": "224f3bdc6c694529d359e0f5aadffe1a61d6400d9377897ed0007dd998d4869b",
+    "Conjectures.LonelinessFiveSpeedRootSemanticsForms": "da1326f1d3327a3635987873f69751e08593c491cec9185a2773cce9bf0f68ad",
+    "Conjectures.LonelinessFiveSpeedRootSemanticsNormalize": "6913ef544e631210fa61668287ef90c161e744a549a4325555c9e29864d81db8",
+    "Conjectures.LonelinessFiveSpeedRootSemanticsTransport": "ccd1a686ea3b0b7450aa59423f35b274668de8292c2e17ddee6e089f6ee82d79",
+    "Conjectures.LonelinessFiveSpeedRootStar": "151991faf467326d29522c83d15dff26108b88088733e756f60e2925c750c074",
+    "Conjectures.LonelinessFiveSpeedRootStarBlocks": "af63243840adc206af65685bedccf30f158a05f88f2996aac4d3e18d75746c57",
+    "Conjectures.LonelinessFiveSpeedRootStarCachedBlocks": "a0265198f83e84cb88766e32f54c8111284339308e2a6caa3d5691964a9f47da",
+    "Conjectures.LonelinessFiveSpeedRootStarQuickBlocks": "6a7d6fab56d8353a311e12eaa357cb55d5c230fae1257743fefa8b1910c50f43",
+    "Conjectures.LonelinessFiveSpeedScalarInverse": "e53014e202c3646a680aca4f42bb32b0b8883e88134927fe9a40bfb81340e477",
+    "Conjectures.LonelinessFiveSpeedScalarTable": "b780be1150c67c5943e45b9c7314debb835568be12e0e251a1c0585320945965",
+    "Conjectures.LonelinessFiveSpeedScalarTree": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1",
+    "Conjectures.LonelinessFiveSpeedScalarTreeMask0199": "c8ae3a69a7c907afdb6dbdd6e7cfe1caee92270a122fec9149ddde62ce1fb545",
+    "Conjectures.LonelinessModularNormalize": "93319020c093c8dc10302410c6ca95846652ebd4bfa5697c8f3710477ddf5508",
+    "Conjectures.LonelinessModularWitness": "c5329d2e079f6d04d0079ab3fe90d814d1f3393b2381c74be6375ce091b569fb",
+    "Conjectures.LonelinessRational": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684"
+  },
+  "source_workers": 1,
+  "speedup_claimed": false,
+  "status": "failed",
+  "toolchain": {
+    "checker_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+    "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "lean_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)"
+  }
+}

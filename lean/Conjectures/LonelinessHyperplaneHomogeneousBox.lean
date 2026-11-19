@@ -19,7 +19,7 @@ open scoped BigOperators
 
 noncomputable section
 
-variable {ι : Type*} [Fintype ι] [DecidableEq ι]
+variable {ι : Type*} [Fintype ι]
 
 abbrev BoxIndex (ι : Type*) := Option (ι ⊕ ι)
 

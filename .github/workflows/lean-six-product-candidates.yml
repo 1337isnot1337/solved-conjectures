@@ -1,0 +1,108 @@
+name: Lean six-speed product candidate
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'lean/Conjectures/Loneliness.lean'
+      - 'lean/Conjectures/LonelinessCertificate.lean'
+      - 'lean/Conjectures/LonelinessConsecutiveFamily.lean'
+      - 'lean/Conjectures/LonelinessConsecutiveFamilyCertificates.lean'
+      - 'lean/Conjectures/LonelinessContinuity.lean'
+      - 'lean/Conjectures/LonelinessCriticalBase.lean'
+      - 'lean/Conjectures/LonelinessCriticalFamilies.lean'
+      - 'lean/Conjectures/LonelinessCriticalSecond.lean'
+      - 'lean/Conjectures/LonelinessFiveFamily.lean'
+      - 'lean/Conjectures/LonelinessMax.lean'
+      - 'lean/Conjectures/LonelinessModularWitness.lean'
+      - 'lean/Conjectures/LonelinessNormalization.lean'
+      - 'lean/Conjectures/LonelinessPairBridge.lean'
+      - 'lean/Conjectures/LonelinessProductFamily.lean'
+      - 'lean/Conjectures/LonelinessProductFamilySix.lean'
+      - 'lean/Conjectures/LonelinessRational.lean'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/verify_six_product_candidate.py'
+      - 'scripts/verify_lean_candidate.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - '.github/workflows/lean-six-product-candidates.yml'
+  pull_request:
+    paths:
+      - 'lean/Conjectures/Loneliness.lean'
+      - 'lean/Conjectures/LonelinessCertificate.lean'
+      - 'lean/Conjectures/LonelinessConsecutiveFamily.lean'
+      - 'lean/Conjectures/LonelinessConsecutiveFamilyCertificates.lean'
+      - 'lean/Conjectures/LonelinessContinuity.lean'
+      - 'lean/Conjectures/LonelinessCriticalBase.lean'
+      - 'lean/Conjectures/LonelinessCriticalFamilies.lean'
+      - 'lean/Conjectures/LonelinessCriticalSecond.lean'
+      - 'lean/Conjectures/LonelinessFiveFamily.lean'
+      - 'lean/Conjectures/LonelinessMax.lean'
+      - 'lean/Conjectures/LonelinessModularWitness.lean'
+      - 'lean/Conjectures/LonelinessNormalization.lean'
+      - 'lean/Conjectures/LonelinessPairBridge.lean'
+      - 'lean/Conjectures/LonelinessProductFamily.lean'
+      - 'lean/Conjectures/LonelinessProductFamilySix.lean'
+      - 'lean/Conjectures/LonelinessRational.lean'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/verify_six_product_candidate.py'
+      - 'scripts/verify_lean_candidate.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - '.github/workflows/lean-six-product-candidates.yml'
+
+permissions:
+  contents: read
+
+env:
+  LEAN_NUM_THREADS: '1'
+
+jobs:
+  plan:
+    name: Select affected six-speed product proofs
+    runs-on: ubuntu-latest
+    outputs:
+      tasks: ${{ steps.plan.outputs.tasks }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: plan
+        run: python3 scripts/verify_six_product_candidate.py --plan-ci
+
+  candidates:
+    name: Six-speed product candidate ${{ matrix.task }}
+    needs: plan
+    if: needs.plan.outputs.tasks != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}-${{ matrix.task }}
+      cancel-in-progress: false
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        task: ${{ fromJSON(needs.plan.outputs.tasks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Check sources, audit, and replay the exact project closure
+        run: python3 scripts/verify_six_product_candidate.py '${{ matrix.task }}'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: six-product-${{ matrix.task }}-receipt
+          path: .candidate-artifacts/six-product-${{ matrix.task }}/receipt.json
+          if-no-files-found: warn
+          retention-days: 7

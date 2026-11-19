@@ -27,7 +27,7 @@ theorem small_add_mem_even {a b : ℤ} (ha : a ∈ smallDigits) (hb : b ∈ smal
     a + b ∈ evenDigits := by
   have ha' := (mem_smallDigits_iff a).1 ha
   have hb' := (mem_smallDigits_iff b).1 hb
-  simp only [evenDigits, List.mem_cons, List.mem_singleton]
+  simp only [evenDigits, List.mem_cons, List.not_mem_nil, or_false]
   omega
 
 def squareSum (t : Triple) : ℤ := t 0 ^ 2 + t 1 ^ 2 + t 2 ^ 2
@@ -77,6 +77,7 @@ theorem signatures21_of_correlations (a b : Row)
   rw [← correlation21_eq_signature a k, ← correlation21_eq_signature b k]
   rw [h]
   fin_cases k <;> norm_num [shifts21, target21]
+  decide
 
 theorem margin_energy_bound_of_pair (L R : Fin 3 → Row)
     (hL : ∀ k i j, L k i j ∈ smallDigits)
@@ -149,6 +150,7 @@ theorem marginsFor_complete (L : Fin 3 → Row) (source : Row)
   have h1 := squareSum_nonneg (m 1)
   have h2 := squareSum_nonneg (m 2)
   have he' : squareSum (m 0) + 3 * squareSum (m 1) + 3 * squareSum (m 2) ≤ 2261 := he
+  dsimp only [m] at h0 h1 h2 he'
   have hm0 : m 0 ∈ marginTriples (source 0) 1 :=
     project_mem_marginTriples L source hL hs 0 1 (by omega)
   have hm1 : m 1 ∈ marginTriples (source 1) 3 :=

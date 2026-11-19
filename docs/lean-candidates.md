@@ -100,3 +100,9 @@ Legendre `reduction` and `invariant-quotient` closures are registered for
 their proved order-dividing-27 and invariant-quotient scopes. These tasks
 remain available as regression gates. The length-1197 bound of nine, full
 finite quotient/no-lift packet, and two-row construction remain candidates.
+
+
+## Actual Legendre-pair matrix and quotient transport
+
+The `construction` and `quotient-data` Legendre tasks are accepted components after their exact strict-source, axiom-audit, and independent-kernel receipts passed. Their scopes are the actual two-row Hadamard matrix and transport from centered order-27-invariant rows to the actual finite quotient data. The full quotient enumeration/no-lift packet and the final multiplier bound of nine remain candidates.
+[Verification record](lean-status.md#actual-legendre-pair-matrix-and-quotient-transport).

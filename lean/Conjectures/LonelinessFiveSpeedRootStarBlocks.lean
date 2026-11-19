@@ -46,7 +46,7 @@ theorem rootStarBaseCheck_of_cblock (p : ℕ) (G inv : ℕ → ℕ)
     (hcheck : rootStarCBlockCheck p G inv leaf b 0 (p / 2 + 1) = true) :
     rootStarBaseCheck p G inv leaf b = true := by
   by_cases hb : 2 ≤ b ∧ b ≤ p / 2 ∧ b ≤ rootStarRatio p inv 1 b
-  · rw [rootStarBaseCheck, if_pos hb]
+  · rw [rootStarBaseCheck, ite_eq_left hb]
     apply List.all_eq_true.mpr
     intro c hc
     have hc' := (rootStarEligibleMask_testBit p inv b c).mp
@@ -55,8 +55,8 @@ theorem rootStarBaseCheck_of_cblock (p : ℕ) (G inv : ℕ → ℕ)
       ⟨hc'.1, decide_eq_true hc'.2⟩
     have hcblock := List.all_eq_true.mp hcheck c
       (List.mem_range'_1.mpr (show 0 ≤ c ∧ c < 0 + (p / 2 + 1) by omega))
-    simpa only [rootStarCCheck, if_pos hb, if_pos hcguard] using hcblock
-  · simp only [rootStarBaseCheck, if_neg hb]
+    simpa only [rootStarCCheck, ite_eq_left hb, ite_eq_left hcguard] using hcblock
+  · simp only [rootStarBaseCheck, ite_eq_right hb]
 
 theorem normalizedRootCover_of_rootStarBlocks (p : ℕ) (G inv : ℕ → ℕ)
     (hG : ∀ a, GoodMask p a (G a))

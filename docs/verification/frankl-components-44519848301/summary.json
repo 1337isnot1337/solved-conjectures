@@ -1,0 +1,22 @@
+{
+  "accepted_registry_changed": false,
+  "passed_groups": {
+    "family-relabel": {
+      "archive_sha256": "e45dc9b5d56da252365626fe5adf21af943cc20260f47a40a79693c34f1d234a",
+      "artifact_id": 14527822008,
+      "artifact_name": "frankl-family-relabel",
+      "private_chunks": 0,
+      "project_modules": 3,
+      "receipt": "docs/verification/frankl-components-44519848301/family-relabel.json",
+      "receipt_sha256": "878a146638040e053e42284d5c5054e48315633732dcf32c9253c6ec3b696932",
+      "required_endpoints": 9
+    }
+  },
+  "profile_inventory": "docs/frankl-family-relabel-sources.json",
+  "profile_inventory_sha256": "7c1f61b77d6283122e46a10e6873997b126bc5fbaccd33e5859e64baab99a847",
+  "schema": "frankl-exact-component-receipts-v1",
+  "scope": "A bijection of ground types preserves actual finite-family cardinalities, point frequencies, abundance, generator unions, and union closure. Used to retain arbitrary cyclic ground labels in the final span-four theorem.",
+  "source_commit": "2f1bac86c7d1a6e9b1d5a0d642a38f448008b50c",
+  "source_run_id": 44519848301,
+  "workflow": "Lean Frankl family relabeling"
+}

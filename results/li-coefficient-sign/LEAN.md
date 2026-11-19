@@ -2,6 +2,8 @@
 
 **Status: partial formalization.**
 
+Lean formalization contributed by [aadrianvv](https://github.com/aadrianvv) in [PR #35](https://github.com/1337isnot1337/solved-conjectures/pull/35).
+
 Lean proves the structural facts about the explicit 31-vertex tree and the
 coefficient of `e₃e₂¹⁴` in its three-variable chromatic symmetric polynomial,
 which is `+29`. The identification with the full `[e₃e₂¹⁴] X_T` coefficient is

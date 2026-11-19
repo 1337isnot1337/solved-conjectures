@@ -44,7 +44,7 @@ variable [TopologicalSpace G] [IsTopologicalAddGroup G]
 theorem continuous_normalHom (m : ι → ℤ) :
     Continuous (normalHom (G := G) m) := by
   change Continuous (fun x : ι → G => ∑ i, m i • x i)
-  exact continuous_finset_sum _
+  exact continuous_finsetSum _
     (fun i _ => (continuous_zsmul (m i)).comp (continuous_apply i))
 
 end AdditiveGroup
@@ -64,7 +64,7 @@ product. Both have total mass one. -/
 theorem normalHom_measurePreserving (m : ι → ℤ) (hm : PrimitiveNormal m) :
     MeasurePreserving (normalHom (G := UnitAddCircle) m)
       (volume : Measure (ι → UnitAddCircle)) volume := by
-  letI : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
+  let : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
     ⟨UnitAddCircle.measure_univ⟩
   exact (normalHom (G := UnitAddCircle) m).measurePreserving
     (continuous_normalHom m) (normalHom_surjective m hm) (by simp)

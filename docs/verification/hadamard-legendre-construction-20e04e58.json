@@ -1,0 +1,57 @@
+{
+  "checked_sources": [
+    "Conjectures.HadamardBorderNormalizationTransportOps",
+    "Conjectures.HadamardBorderCoreAlgebra",
+    "Conjectures.HadamardLegendreBasic",
+    "Conjectures.HadamardLegendreConstructionAlgebra",
+    "Conjectures.HadamardLegendreConstruction"
+  ],
+  "commit": "20e04e589d227086cc926579fc70806594d8f817",
+  "completed_checks": [
+    "strict source checks, warnings treated as errors",
+    "module-ownership axiom whitelist and required theorems",
+    "independent exact-closure kernel replay"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-hadamard-legendre-candidates.yml": "0e0e3dfeac219f10087ab0550cc4879306b085d66d7f57f431935fcc0dff5992",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_hadamard_legendre_candidate.py": "6465b3116d9bf90221614ca7e6b4cef3ea0888813e20539ea485aa97aea81456",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "project_modules": [
+    "Conjectures.HadamardBorderNormalizationTransportOps",
+    "Conjectures.HadamardBorderCoreAlgebra",
+    "Conjectures.HadamardLegendreBasic",
+    "Conjectures.HadamardLegendreConstructionAlgebra",
+    "Conjectures.HadamardLegendreConstruction"
+  ],
+  "required_theorems": [
+    "HadamardLegendre.convolution_commute",
+    "HadamardLegendre.convolution_normal",
+    "HadamardLegendre.pair_convolution_gram",
+    "HadamardLegendre.twoRowCore_gram",
+    "HadamardLegendre.twoRowMatrix_sign",
+    "HadamardLegendre.twoRowMatrix_gram",
+    "HadamardLegendre.twoRowMatrix_isHadamard",
+    "HadamardLegendre.exists_hadamard_of_legendre_pair",
+    "HadamardLegendre.exists_hadamard_2396_of_legendre_pair"
+  ],
+  "source_failures": {},
+  "source_sha256": {
+    "lean/Conjectures/HadamardBorderCoreAlgebra.lean": "9e1fac5bf8de2777be047d6dcde51c452bc8a5b0385bda72d9c3047c7ef98b34",
+    "lean/Conjectures/HadamardBorderNormalizationTransportOps.lean": "f7d48ea6f29ed5e114266d6c8a17b75bdab18e6cdc7333db4f89ed1d11cd9c06",
+    "lean/Conjectures/HadamardLegendreBasic.lean": "fb5489be942453d0fad374d1126c0ed228c8ec7aa393061848091fe12c2602b3",
+    "lean/Conjectures/HadamardLegendreConstruction.lean": "c5f1e25d8c2c068b5ac3ac23590944275d1f166832b92cfc27b92a99fb07f573",
+    "lean/Conjectures/HadamardLegendreConstructionAlgebra.lean": "0e16e826123cf6204039e7789527c4e7cb48b649fe49ffacfea9d6464d73cb3b",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.HadamardLegendreConstruction",
+  "task": "construction"
+}

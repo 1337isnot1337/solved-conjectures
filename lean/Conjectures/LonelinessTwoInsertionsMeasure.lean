@@ -83,7 +83,7 @@ theorem badIndicator_periodic (δ : ℝ) : Function.Periodic (badIndicator δ) 1
   intro x
   have hd : distance (x+1) = distance x := by
     simpa using CriticalFamilies.distance_add_int x 1
-  simp only [badIndicator, Set.indicator_apply, mem_setOf_eq, hd]
+  simp only [badIndicator, Set.indicator_apply, mem_ofPred_eq, hd]
 
 theorem distance_on_unit (x : ℝ) (hx : x ∈ Icc (0 : ℝ) 1) :
     distance x = min x (1-x) := by

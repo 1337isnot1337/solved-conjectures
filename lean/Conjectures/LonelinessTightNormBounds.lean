@@ -36,7 +36,7 @@ theorem exists_original_prime_of_tight {n : ℕ} (hn : 8 ≤ n) (hn' : n ≤ 12)
     (hLRC : ∀ m : ℕ, 1 ≤ m → m < n+1 → LonelyRunnerBound m) :
     ∃ p ∈ primeSet (n+1), ∀ i, ¬ p ∣ v i := by
   apply exists_prime_of_tight_bound (n+1) (by omega) (by omega) v hpositive
-  · convert hvalue using 1 <;> push_cast <;> ring
+  · convert hvalue using 1; push_cast; ring
   · exact tight_natural_squaredNorm_le hn hn' v hpositive hprimitive hvalue hLRC
 
 end
