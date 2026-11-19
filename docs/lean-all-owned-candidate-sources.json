@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "scripts/audit_lean_all_owned.py",
-      "blob_sha": "cc8497d2f501094848b5184a1dc8bae19a861c0f",
-      "sha256": "48d89743a7a7fd0ff7976367b5a8082b6f5d460232cce5074d3ebdfc3c85e5a0"
+      "blob_sha": "57dfaa9d09e8f4e653b817843df7fa9826358f41",
+      "sha256": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f"
     },
     {
       "path": "scripts/test_lean_all_owned.py",
@@ -109,8 +109,18 @@
     "accepted": "The same command with --accepted; launch only after coordination with the existing complete accepted-package verification run."
   },
   "limitations": [
-    "This new audit and its fixtures have not yet executed.",
+    "The12 protocol tests and all seven fixture sources passed in run44518819881. The first audit attempt rejected a reserved Lean binder spelling; this revision changes that binder and awaits fresh audit/kernel validation.",
     "No complete accepted-closure all-owned verification is claimed by the initial fixture publication.",
     "Stock kernel thread/RSS guards remain strict; worker count must be selected for the measured closure."
-  ]
+  ],
+  "prior_fixture_failure": {
+    "run_id": 44518819881,
+    "job_id": 135541801836,
+    "commit": "12e2a4c4e122004a34ce314e0580abd4471cf6d2",
+    "strict_fixture_sources": "passed",
+    "protocol_tests": 12,
+    "phase": "audit elaboration",
+    "error": "Lean reserves prefix as a keyword; use the ordinary binder p.",
+    "receipt_sha256": "ab759547331c011b1dba211fcd6a895c3db89d2ec93d94849ce69f0c91cded3d"
+  }
 }

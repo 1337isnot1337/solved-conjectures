@@ -132,7 +132,7 @@ run_cmd do
     let userName := privateToUserName name
     let byModule := expectedModules.contains owner
     let bySerialized := rawNames.contains name
-    let byLegacy := legacyPrefixes.any (fun prefix => userName.toString.startsWith prefix)
+    let byLegacy := legacyPrefixes.any (fun p => userName.toString.startsWith p)
     if byModule || bySerialized || byLegacy then
       declarations := declarations + 1
       audited := audited.insert name
