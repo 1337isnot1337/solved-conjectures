@@ -47,6 +47,25 @@ or baseline-pattern enumeration is assumed. All 12 modules passed strict
 sources, a 216-theorem standard-axiom audit, and unchanged pinned-kernel replay.
 [Complete multiplier theorem and receipt](../../docs/lean-status.md#complete-fixed-border-multiplier-and-orbit-bounds).
 
+The finite-border transport is also checked. Starting from the finite
+certificate's explicit sign conditions and five matrix identities, two
+modules construct the actual border matrices for every quotient of
+cardinality four and prove the reflected cross term. The canonical
+sixteen-position layout is connected to the block-product layout. The
+exact closure passed a 66-theorem audit and independent kernel replay.
+The finite identities remain premises; the literal finite data and final
+Hadamard assembly remain separate obligations.
+[Transport statement and receipt](../../docs/lean-status.md#fixed-border-certificate-transport).
+
+The actual row-normalization operations are also checked. Given one constant
+and three single-exception compression shapes, the theorem constructs a
+row permutation, signs, and translations on the original group. The
+resulting rows have the stated normalized compressions, remain sign-valued,
+and preserve every combined periodic autocorrelation. This two-module
+closure passed a 14-theorem audit and independent kernel replay. Deriving
+the input shapes from the raw correlations remains under issue 17.
+[Actual row operations and receipt](../../docs/lean-status.md#actual-row-normalization-from-compression-shapes).
+
 ## Reproduce the finite checks
 
 Run from this directory with a C++17 compiler, Python with assertions enabled, and NumPy.

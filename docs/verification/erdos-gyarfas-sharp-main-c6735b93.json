@@ -1,0 +1,59 @@
+{
+  "checked_sources": [
+    "Conjectures.ErdosGyarfasSharpGraph",
+    "Conjectures.ErdosGyarfasSharpSearch",
+    "Conjectures.ErdosGyarfasSharpCover",
+    "Conjectures.ErdosGyarfasSharpWitness",
+    "Conjectures.ErdosGyarfasSharpSplit",
+    "Conjectures.ErdosGyarfasSharpCertificate",
+    "Conjectures.ErdosGyarfasSharpMain"
+  ],
+  "commit": "c6735b9342ccd271ffe3604876708bbe95266472",
+  "completed_checks": [
+    "strict source checks, warnings treated as errors",
+    "module-ownership axiom whitelist and required theorems",
+    "independent exact-closure kernel replay"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-erdos-gyarfas-sharp-candidates.yml": "b4b50a15dc18f66aff100e1648da42b486354a796c08c4cf59d2ffb757a7f969",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_erdos_gyarfas_sharp_candidate.py": "c5c6bb6ba148c0c374067c6209ba534ad50a625d8b746a69308be682fe35ecb0",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "project_modules": [
+    "Conjectures.ErdosGyarfasSharpGraph",
+    "Conjectures.ErdosGyarfasSharpSearch",
+    "Conjectures.ErdosGyarfasSharpCover",
+    "Conjectures.ErdosGyarfasSharpWitness",
+    "Conjectures.ErdosGyarfasSharpSplit",
+    "Conjectures.ErdosGyarfasSharpCertificate",
+    "Conjectures.ErdosGyarfasSharpMain"
+  ],
+  "required_theorems": [
+    "ErdosGyarfasSharp.cycle_length_not_four_eight_sixteen",
+    "ErdosGyarfasSharp.power_of_two_cycle_length_ge32",
+    "ErdosGyarfasSharp.least_power_of_two_cycle_length",
+    "ErdosGyarfasSharp.sharp95_connected_and_least_power_cycle",
+    "ErdosGyarfasSharp.sharp95_cyclic_cover_and_least_power_cycle"
+  ],
+  "source_failures": {},
+  "source_sha256": {
+    "lean/Conjectures/ErdosGyarfasSharpCertificate.lean": "cfa33e3aaaa06999fc97c52eff85b3d71a3c7d3a8f33e47c01454a806399c655",
+    "lean/Conjectures/ErdosGyarfasSharpCover.lean": "053a0cc4189ad5a5519582b22db6ed7a81a56c1953903e670b977a10a456a8bd",
+    "lean/Conjectures/ErdosGyarfasSharpGraph.lean": "37a357de016b22dee8b02f746e166104a3639de13b99c28346293ca1d55e1890",
+    "lean/Conjectures/ErdosGyarfasSharpMain.lean": "31ef207661d6deabedd953081e1c4592005ad465294c187308a3a54471c8a929",
+    "lean/Conjectures/ErdosGyarfasSharpSearch.lean": "5842299550f9dd0d9c7cc0270e1f6bb3768e8ef6c0171f2278676a74ed543562",
+    "lean/Conjectures/ErdosGyarfasSharpSplit.lean": "69127e2a4bba764dd36624351bc6cb970115b5359860a34af228386e0b1b11f2",
+    "lean/Conjectures/ErdosGyarfasSharpWitness.lean": "67a996ad9efbe97360ec1fd3a789a73bcbd0212ede1059ace8b0ad7885e4f511",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.ErdosGyarfasSharpMain",
+  "task": "main"
+}

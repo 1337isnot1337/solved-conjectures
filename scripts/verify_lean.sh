@@ -642,6 +642,19 @@ modules=(
   Conjectures.FranklSmallCyclicWeights9Pilot
   Conjectures.FranklSpanFourWeightBatches
   Conjectures.FranklSmallCyclicWeightsPilot
+  Conjectures.HadamardFixedBorderTransport
+  Conjectures.HadamardFixedBorderFin16
+  Conjectures.ErdosGyarfasSharpGraph
+  Conjectures.ErdosGyarfasSharpSearch
+  Conjectures.ErdosGyarfasSharpCover
+  Conjectures.ErdosGyarfasSharpWitness
+  Conjectures.ErdosGyarfasSharpSplit
+  Conjectures.ErdosGyarfasSharpCertificate
+  Conjectures.ErdosGyarfasSharpMain
+  Conjectures.ErdosGyarfasVoltageGraph
+  Conjectures.ErdosGyarfasVoltageNormalization
+  Conjectures.HadamardBorderNormalizationTransportOps
+  Conjectures.HadamardBorderNormalizationTransport
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

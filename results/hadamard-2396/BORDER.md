@@ -109,3 +109,27 @@ product coordinates from the actual quotient map and the retraction
 $g\mapsto g-149g$ onto $S$. Conjugation identifies the full row-preserving
 subgroup and its orbit quotient with those in product coordinates. No
 splitting or prescribed coordinate action is an extra hypothesis.
+
+The certificate's transport to an arbitrary quotient is formalized in
+`HadamardFixedBorderTransport.lean` and `HadamardFixedBorderFin16.lean`.
+Given the explicit finite certificate fields and a quotient of cardinality
+four, the theorem constructs the actual relabeled `E` and reflected `F`,
+preserves sign-valuedness, and proves all five transported identities.
+The two-module closure passed strict source checks, a 66-theorem axiom
+audit, and unchanged independent kernel replay.
+[Receipt](../../docs/verification/hadamard-fixed-border-fin16-23b2b187.json).
+
+The step from compression shapes to actual normalized rows is also
+formalized. Given one constant compressed row and three compressed rows
+with exceptional jumps of `2` or `-2`, the theorem constructs the row
+permutation, sign changes, and lifted translations on the original group.
+It proves the exact four normalized compressions, sign-valuedness, and
+preservation of every combined periodic autocorrelation. No split extension
+or positive constant baseline is assumed. The two-module closure passed
+strict source checks, a 14-theorem axiom audit, and independent pinned-kernel
+replay.
+[Receipt](../../docs/verification/hadamard-border-normalization-main-14ab84e7.json).
+
+The variance argument producing the compression shapes, the literal finite
+certificate, and final bordered matrix assembly remain separate obligations
+under issue 17.

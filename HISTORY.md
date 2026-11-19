@@ -1,5 +1,22 @@
 # History
 
+## 2026-11-19 — Checked sharp cover, voltage normalization, and border transport
+
+Registered thirteen unchanged proof modules after four exact hosted closures
+passed strict source checks, standard-axiom audits, and independent replay
+with the unchanged pinned kernel checker. The connected 95-vertex cyclic
+cover has attained least power-of-two cycle length 32; its seven-module
+closure audited 288 project theorems. Arbitrary seven-voltage normalization
+passed in four modules with 131 audited theorems. Finite-border transport
+passed in two modules with 66 audited theorems, retaining its finite
+certificate identities as inputs. Actual-row normalization passed in two
+modules with 14 audited theorems, retaining its compression-shape inputs.
+
+The universal cover theorem remains under issue 18. Deriving the compression
+shapes, checking the literal finite certificate, and final Hadamard assembly
+remain under issue 17. The actual row-operation scope in issue 26 is complete.
+Li remains deferred. [Checked scope and receipts](docs/lean-status.md#complete-sharp-95-vertex-example-and-arbitrary-voltage-normalization).
+
 ## 2026-11-19 — Checked cyclic assembly and weight transport
 
 Registered 32 unchanged proof modules after five hosted source, axiom and

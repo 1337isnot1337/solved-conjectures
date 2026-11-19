@@ -1,0 +1,55 @@
+{
+  "checked_sources": [
+    "Conjectures.ErdosGyarfasSharpGraph",
+    "Conjectures.ErdosGyarfasSharpCover",
+    "Conjectures.ErdosGyarfasVoltageGraph",
+    "Conjectures.ErdosGyarfasVoltageNormalization"
+  ],
+  "commit": "0cf8667d7749ca8316ac02ce5cf9e48d8048f437",
+  "completed_checks": [
+    "strict source checks, warnings treated as errors",
+    "module-ownership axiom whitelist and required theorems",
+    "independent exact-closure kernel replay"
+  ],
+  "gate_sha256": {
+    ".github/workflows/lean-erdos-gyarfas-voltage-candidates.yml": "0bbf1c4df0b0424a90775871db5738122c076d93aad55a3177faba0967a8cff7",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_erdos_gyarfas_voltage_candidate.py": "31270a0bca336b3d948075ebe12ead94ff7c91bc5dd885c3820d636df1be82a3",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c"
+  },
+  "project_modules": [
+    "Conjectures.ErdosGyarfasSharpGraph",
+    "Conjectures.ErdosGyarfasSharpCover",
+    "Conjectures.ErdosGyarfasVoltageGraph",
+    "Conjectures.ErdosGyarfasVoltageNormalization"
+  ],
+  "required_theorems": [
+    "ErdosGyarfasVoltage.normalized_tree_labels",
+    "ErdosGyarfasVoltage.normalized_chord_labels",
+    "ErdosGyarfasVoltage.gaugeLabels_treePotential",
+    "ErdosGyarfasVoltage.gaugeNormalizeIso_apply",
+    "ErdosGyarfasVoltage.gaugeNormalizeIso_symm_apply",
+    "ErdosGyarfasVoltage.gauge_normalized_adj_iff",
+    "ErdosGyarfasVoltage.cycle_length_normalized_iff",
+    "ErdosGyarfasVoltage.edgeVoltage_normalized_eq_chordHom",
+    "ErdosGyarfasVoltage.normalized_adjacency_iff",
+    "ErdosGyarfasVoltage.sharp_voltageCover_eq"
+  ],
+  "source_failures": {},
+  "source_sha256": {
+    "lean/Conjectures/ErdosGyarfasSharpCover.lean": "053a0cc4189ad5a5519582b22db6ed7a81a56c1953903e670b977a10a456a8bd",
+    "lean/Conjectures/ErdosGyarfasSharpGraph.lean": "37a357de016b22dee8b02f746e166104a3639de13b99c28346293ca1d55e1890",
+    "lean/Conjectures/ErdosGyarfasVoltageGraph.lean": "f015e4f17049e4ca926697af1aaccf8b99e04e99bc75167a157f8ff814134c7a",
+    "lean/Conjectures/ErdosGyarfasVoltageNormalization.lean": "6827152f576c8756907bea805d561b42b0052883e5c429d11109c3e5ca6a7b72",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.ErdosGyarfasVoltageNormalization",
+  "task": "normalization"
+}

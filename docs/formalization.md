@@ -483,3 +483,46 @@ transport or coverage tables.
 [Transport receipt](verification/frankl-mask-transport-5d86c291.json) ·
 [Cache receipt](verification/frankl-mask-cached-5d86c291.json) ·
 [Remaining finite work](frankl-cyclic-weight-orbits.md).
+
+## Sharp cyclic cover, voltage normalization, and border transport
+
+Thirteen new modules are registered after four exact component closures
+passed strict source checks, the standard axiom whitelist, and independent
+replay with the unchanged pinned kernel checker.
+
+The sharp connected 95-vertex graph has an actual cyclic covering map, an
+explicit simple 32-cycle, and exhaustive kernel certificates excluding
+lengths 4, 8, and 16. Its seven-module closure audited 288 project theorems
+at `c6735b93`. Arbitrary seven-voltage normalization constructs a graph
+isomorphism for every abelian group, preserves actual cycle lengths, and
+identifies the sharp graph in the same voltage class. Its four-module
+closure audited 131 project theorems at `0cf8667d`. The universal cover
+cycle theorem remains under issue 18.
+
+The finite-border bridge transports the actual matrices and all five
+certificate identities through canonical flattening, quotient relabeling,
+and reflection. Its two-module closure audited 66 project theorems at
+`23b2b187`; the finite certificate identities remain explicit inputs.
+The actual-row bridge constructs a permutation, signs, and lifted translations
+from explicit compression-shape premises. It preserves sign-valuedness and
+every combined autocorrelation. Its two-module closure audited 14 project
+theorems at `14ab84e7`. Deriving the compression shapes, checking the literal
+finite certificate, and final Hadamard assembly remain under issue 17.
+
+Reproduce the four exact closures from the repository root after installing
+the pinned Lean environment:
+
+```sh
+python3 scripts/verify_erdos_gyarfas_sharp_candidate.py main
+python3 scripts/verify_erdos_gyarfas_voltage_candidate.py normalization
+python3 scripts/verify_hadamard_fixed_border_candidate.py fin16
+python3 scripts/verify_hadamard_border_normalization_candidate.py main
+```
+
+The accepted-package root, required-theorem audit, and replay list contain
+all thirteen modules. [Exact statements and receipts](lean-status.md#complete-sharp-95-vertex-example-and-arbitrary-voltage-normalization).
+
+[Sharp example receipt](verification/erdos-gyarfas-sharp-main-c6735b93.json) ·
+[Voltage receipt](verification/erdos-gyarfas-voltage-normalization-0cf8667d.json) ·
+[Finite-border receipt](verification/hadamard-fixed-border-fin16-23b2b187.json) ·
+[Row-operation receipt](verification/hadamard-border-normalization-main-14ab84e7.json).

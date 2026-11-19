@@ -37,9 +37,9 @@ never additional Lean axioms.
 | CUT arithmetic periodicity | Complete | The uniform terminating decision test and exhaustive candidate enumeration are proved for every finite cut set and proposed arithmetic tail. Compact quotient/residue certificates identify both actual example games at every pile size and prove least eventual period 12, saltus 8, and earliest start 7, hence positive-pile preperiod 6. |
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
-| Hadamard order-2396 partial results | Partial overall; automorphism, both norm proofs, and border symmetry bounds complete | For every real Hadamard matrix of order 2396, the full signed row/column automorphism group has no element of order 479, and 479 divides neither its cardinality nor any subgroup-quotient cardinality. Both norm proofs and the exact quadratic-integer model are checked. For the fixed-border core on every finite abelian domain with a subgroup of size 149 and index four, the full common multiplier group is cyclic of order dividing four; every preserving subgroup leaves at least 151 actual sign orbits. The length-1197/598 sequence restrictions, quotient certificates, and fixed-border construction remain obligations under issue 17. |
+| Hadamard order-2396 partial results | Partial overall; automorphism, both norm proofs, and border symmetry bounds complete | For every real Hadamard matrix of order 2396, the full signed row/column automorphism group has no element of order 479, and 479 divides neither its cardinality nor any subgroup-quotient cardinality. Both norm proofs and the exact quadratic-integer model are checked. For the fixed-border core on every finite abelian domain with a subgroup of size 149 and index four, the full common multiplier group is cyclic of order dividing four; every preserving subgroup leaves at least 151 actual sign orbits. Finite-border transport and actual-row normalization are also checked, with the finite identities and compression shapes retained as explicit inputs. The length-1197/598 sequence restrictions, quotient certificates, and full fixed-border construction remain obligations under issue 17. |
 | Lonely-runner two insertions | Not formalized | The arbitrary two-speed insertion theorem, acceleration bridge, unbounded branch, finite cases, and three-insertion obstruction are not registered in the accepted package. Published candidate sources remain under issue 12. |
-| Erdős–Gyárfás abelian covers | Not formalized | The arbitrary abelian-cover cycle theorem and sharp connected 95-vertex example remain under issue 18. The general minimum-degree-three conjecture is outside this result. |
+| Erdős–Gyárfás abelian covers | Partial: sharp example and voltage normalization complete | The literal connected 95-vertex cyclic cover has attained least power-of-two cycle length 32. Every seven-voltage assignment in an abelian group is normalized by an explicit graph isomorphism preserving actual cycles. The universal cover cycle theorem remains under issue 18; the general minimum-degree-three conjecture is outside this result. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
 | Frankl generating families | Partial: large-generator bound and cyclic components checked | The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The full Vaughan shortcut, all cyclic span-four families on at most six sites, conditional residual cases at periods seven through ten, and exact local weight-checker semantics are also checked. The conditional all-period assembly, 48-case literal pilot, and exact injective weight transport are checked. The complete cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete. |
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
@@ -1677,3 +1677,91 @@ transport or coverage tables.
 [Transport receipt](verification/frankl-mask-transport-5d86c291.json) ·
 [Cache receipt](verification/frankl-mask-cached-5d86c291.json) ·
 [Remaining finite work](frankl-cyclic-weight-orbits.md).
+
+## Complete sharp 95-vertex example and arbitrary-voltage normalization
+
+The seven `ErdosGyarfasSharp*.lean` modules prove the exact finite example in
+`results/erdos-gyarfas-abelian-covers/sharpness.py`. The literal graph is a
+connected cyclic nineteen-sheeted cover of the displayed subdivided tetrahedron.
+It has 95 vertices, an explicit simple 32-cycle, and no simple cycles of lengths
+4, 8, or 16. The endpoint `sharp95_cyclic_cover_and_least_power_cycle` states
+that 32 is the attained least power-of-two cycle length.
+
+The covering statement concerns the actual projection: every neighbor map is
+bijective, and actual sheet translations act freely and transitively on each
+fiber. Search soundness excludes actual graph cycles. Translation reduces
+their starting points to five roots. Each complete root search is assembled
+from its checked four-extension frontier and fourteen smaller kernel
+computations, for seventy subtrees in total. The finite data, frontier
+completeness, search semantics, and cycle witness are checked in Lean.
+No native-evaluation axiom or external search result is a premise.
+
+The two `ErdosGyarfasVoltage*.lean` modules normalize every assignment of
+seven voltages in every abelian group. An explicit graph isomorphism
+subtracts the tree potential from each sheet coordinate, making the four
+tree voltages zero and giving three explicit chord voltages. It preserves
+the existence of actual simple cycles of every specified length in both
+directions. Normalized adjacency is expressed through a homomorphism from
+`Fin 3 → ℤ`. The assignment `[0,0,0,0,1,8,0]` over `ZMod 19` is proved to
+give exactly the sharp graph.
+
+| Exact checked snapshot | Project closure | Audited project theorems | Receipt |
+| --- | --- | --- | --- |
+| `c6735b93` | Seven sharp-example modules | 288 | [Sharp example](verification/erdos-gyarfas-sharp-main-c6735b93.json) |
+| `0cf8667d` | Four modules, including the actual base graph | 131 | [Voltage normalization](verification/erdos-gyarfas-voltage-normalization-0cf8667d.json) |
+
+Both exact component closures passed strict source checking, the standard
+transitive axiom whitelist, and independent replay with the unchanged pinned
+kernel checker. The receipts bind the exact sources, toolchain, manifest,
+and gate inputs. The universal theorem asserting a 4-, 8-, 16-, or 32-cycle
+in every abelian cover remains under issue 18. The general minimum-degree-three
+conjecture is outside this result. Li remains deferred.
+
+## Fixed-border certificate transport
+
+`HadamardFixedBorderTransport.lean` and `HadamardFixedBorderFin16.lean` prove
+the reindexing and reflection step of `BORDER.md`. Their input is an explicit
+finite certificate: sign matrices `K`, `E`, and `F`, their three Gram
+identities, the balanced-column identity, and the cross identity. All five
+identities and all three sign conditions remain input premises.
+
+The formalization connects the canonical index `position + 4 * block` with
+`Fin 4 × Fin 4`. For every finite additive quotient `Q` of cardinality four,
+it constructs actual transported matrices on `Fin 4 × Q`, preserving
+sign-valuedness and all five identities with the original corner `K`.
+The left border uses the actual permutation `q ↦ -q`; the reflected cross
+term is proved for those same matrices. Cardinality four supplies the
+labeling equivalence. No splitting of the ambient group, classification
+of order-four groups, or oddness assumption is needed.
+
+The endpoint is `HadamardFixedBorder.exists_transported_matrices_of_card_four`.
+Its exact two-module closure at `23b2b187` passed strict source checks,
+a 66-theorem standard-axiom audit, and independent pinned-kernel replay.
+[Receipt](verification/hadamard-fixed-border-fin16-23b2b187.json).
+The literal finite certificate, derivation of the compression shapes, and
+final bordered Hadamard construction remain separate obligations under issue 17.
+
+## Actual row normalization from compression shapes
+
+`HadamardBorderNormalizationTransportOps.lean` and
+`HadamardBorderNormalizationTransport.lean` construct operations on the
+original sign rows. Their inputs are a surjective additive map, one constant
+compressed row, and three compressed rows with one exceptional coset of
+jump `2` or `-2`. Deriving these shapes from the original autocorrelations
+remains a separate obligation under issue 17.
+
+The theorem constructs a row permutation, signs, and translations in the
+original group. The actual transformed rows are
+`f'_i(x) = ε_i * f_(σ(i))(x + t_i)`. Their compressions are exactly `d`,
+`a + 2δ₀`, `b + 2δ₀`, and `c + 2δ₀`. Every transformed entry remains in
+`{-1,1}`, and the combined periodic autocorrelation is unchanged at every
+group element. The constant compressed row retains its baseline. No
+positivity condition on `d`, split extension, or quotient-cardinality
+premise is added. Surjectivity supplies the lifts that move the exceptional
+cosets to zero.
+
+The final endpoint is
+`HadamardBorderNormalizationTransport.exists_normalized_sign_rows`.
+Its exact two-module closure at `14ab84e7` passed strict source checks,
+a 14-theorem standard-axiom audit, and unchanged pinned-kernel replay.
+[Receipt](verification/hadamard-border-normalization-main-14ab84e7.json).
