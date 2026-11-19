@@ -1,9 +1,11 @@
 # Finite FC certificates and small cyclic cases
 
-These candidate modules prove dependencies of the cyclic span-four result.
+These modules prove dependencies of the cyclic span-four result.
 They do not establish the complete span-four theorem.
 The candidate workflow records source checks, the axiom audit, and independent kernel replay for each exact import closure.
-Registration in the accepted package remains a separate step.
+The FC and small cyclic packet is registered in the accepted package.
+Its [hosted receipt](verification/frankl-fc-packet-6544adcc.json) records the exact 53-module check at `6544adcc`.
+The full merged-package gate remains separate.
 
 ## Mathematical scope
 
@@ -94,9 +96,11 @@ The checker tests inside patterns without enumerating every local union.
 Its final theorem transfers a successful check to abundance in the actual family of distinct unions.
 No finite window certificate is asserted by this helper alone.
 
-The [local receipt](verification/frankl-maximal-cover-local.json)
+The integer checker and maximal-cover helper are registered in the accepted package.
+The [hosted receipt](verification/frankl-maximal-cover-ad07e385.json)
 records five strict source checks, the 66-theorem axiom audit, and independent kernel replay.
-This local receipt does not replace hosted validation or accepted registration.
+A separate [local receipt](verification/frankl-maximal-cover-local.json) records the earlier isolated check.
+The full merged-package check remains separate.
 
 Run its separate candidate gate with:
 

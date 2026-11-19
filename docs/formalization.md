@@ -339,3 +339,57 @@ multiplier bound and 151-orbit statement are now claimed under
 [issue 22](https://github.com/1337isnot1337/solved-conjectures/issues/22), in
 new `HadamardBorderSymmetry*.lean` files. These do not establish Hadamard
 existence at 2396. Li has not been started.
+
+## Frankl local certificate checkers — 19 November 2026
+
+The accepted package now includes `FranklLocalCertificate` and
+`FranklLocalMaximalCover`. The first checker tests every boundary pair
+`M ⊆ E ⊆ B`. A successful nonzero nonnegative integer weight vector gives
+an abundant point in the actual family of distinct unions.
+
+The maximal-cover checker is proved equal to the first checker. For each
+inside pattern, it uses the union of all local generators contained in the
+allowed inside and exterior set. It therefore avoids enumerating every local
+union without changing the compatible-pattern count.
+
+The exact five-module closure at `ad07e385` passed strict source checks, an
+explicit import-all audit of 66 project theorems, all eight required endpoint
+checks, and the unchanged pinned kernel replay.
+[Hosted receipt](verification/frankl-maximal-cover-ad07e385.json) ·
+[Scope and reproduction](frankl-fc-formalization.md#local-maximal-cover-checker).
+
+This registration asserts no finite window weight certificate. The cyclic
+window data, graph reduction, and complete span-four assembly remain separate.
+The full merged-package gate is also separate from this exact component check.
+
+## Frankl FC and small cyclic components — 19 November 2026
+
+The accepted package now contains the full Vaughan shortcut. Every finite
+union-closed family containing three distinct triples through a common point
+has an abundant point in the union of those triples. The proof has no ambient
+ground-size restriction and does not assume that the family contains the
+empty set. Classification, integer certificates, and finite-support transport
+are all proved in Lean.
+
+Every nontrivial cyclic span-four generator family on at most six sites also
+has an abundant point. The proof permits arbitrary generator sizes and cyclic
+overlaps. It uses exact search trees, the Vaughan shortcut, a Pasch certificate,
+and the two-point shortcut.
+
+Further checked results concern the specified 35-edge residual graph. Its
+period-seven, period-eight, and period-ten words are zero. Every nonzero
+period-nine word generates a family with an abundant point. These statements
+retain explicit residual-graph membership. The reduction of arbitrary larger
+cyclic families to that graph still needs its finite window and rank data.
+
+At source snapshot `6544adcc`, the exact 53-module closure passed strict source
+checks, an import-all audit of 2,057 project theorems, 56 required endpoint
+checks, visibility checks for all 534 private certificate nodes, and stock
+kernel replay of every module. The 50 newly registered sources match that
+snapshot byte for byte.
+[Hosted receipt](verification/frankl-fc-packet-6544adcc.json) ·
+[Detailed scope and reproduction](frankl-fc-formalization.md).
+
+The complete span-four theorem and the small-degree high-girth theorem remain
+incomplete. The full merged-package gate is separate from these component
+checks. Li remains deferred.

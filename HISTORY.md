@@ -1,5 +1,24 @@
 # History
 
+## 2026-11-19 — Checked Vaughan theorem and small cyclic components
+
+Registered the full three-triples Vaughan theorem and every nontrivial cyclic
+span-four family on at most six sites. Further period-seven-through-ten
+results retain an explicit residual-graph hypothesis. The exact 53-module
+closure passed strict sources, a 2,057-theorem axiom audit, checks of all 534
+private certificate nodes, and stock kernel replay at `6544adcc`. Its 50 new
+proof sources are unchanged. The full span-four theorem remains incomplete.
+[Receipt](docs/verification/frankl-fc-packet-6544adcc.json).
+
+## 2026-11-19 — Checked Frankl local certificate semantics
+
+Registered the integer local checker and its equivalent maximal-cover checker.
+Their exact five-module closure passed strict source checks, a 66-theorem axiom
+audit, and independent kernel replay at `ad07e385`. Both checkers count actual
+distinct inside patterns. No finite window weight table is asserted by this
+registration. The full merged-package check remains separate.
+[Receipt](docs/verification/frankl-maximal-cover-ad07e385.json).
+
 ## 2026-11-19 — Complete Hadamard automorphism obstruction
 
 The full signed row/column automorphism theorem at order 2396 passed its

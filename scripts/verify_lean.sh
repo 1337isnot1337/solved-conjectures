@@ -491,6 +491,58 @@ modules=(
   Conjectures.FranklFamily
   Conjectures.FranklLocalFibers
   Conjectures.FranklLocalWeights
+  Conjectures.FranklLocalCertificate
+  Conjectures.FranklLocalMaximalCover
+  Conjectures.FranklBasic
+  Conjectures.FranklShareSearch
+  Conjectures.FranklSpanFourShapes
+  Conjectures.FranklSmallCyclicResidual
+  Conjectures.FranklSmallCyclicSearch
+  Conjectures.FranklAbundance
+  Conjectures.FranklFCBitCode
+  Conjectures.FranklFCClosure
+  Conjectures.FranklLocalCertificateWeights
+  Conjectures.FranklVaughanClassification
+  Conjectures.FranklShareFlow
+  Conjectures.FranklSmallCyclicPools
+  Conjectures.FranklSpanFourReduction
+  Conjectures.FranklSmallCyclicMasks
+  Conjectures.FranklSmallCyclicTransport
+  Conjectures.FranklFC
+  Conjectures.FranklShareFlowPointwise
+  Conjectures.FranklSmallCyclicData1
+  Conjectures.FranklSmallCyclicData2
+  Conjectures.FranklSmallCyclicData3
+  Conjectures.FranklSmallCyclicData4
+  Conjectures.FranklSmallCyclicData5
+  Conjectures.FranklSmallCyclicData6
+  Conjectures.FranklSmallCyclicNineWords
+  Conjectures.FranklFCEmbedding
+  Conjectures.FranklFCFiniteDomain
+  Conjectures.FranklSmallCyclicFinite
+  Conjectures.FranklSmallCyclicNineData0
+  Conjectures.FranklSmallCyclicNineData1
+  Conjectures.FranklSmallCyclicNineData2
+  Conjectures.FranklSmallCyclicNineData3
+  Conjectures.FranklSmallCyclicNineData4
+  Conjectures.FranklSmallCyclicNineData5
+  Conjectures.FranklSmallCyclicNineData6
+  Conjectures.FranklSmallCyclicNineData7
+  Conjectures.FranklSmallCyclicPaschCertificate
+  Conjectures.FranklVaughanMatching
+  Conjectures.FranklVaughanPath
+  Conjectures.FranklVaughanPathEdge
+  Conjectures.FranklVaughanStar
+  Conjectures.FranklVaughanTriangle
+  Conjectures.FranklSmallCyclicNineData
+  Conjectures.FranklSmallCyclicPasch
+  Conjectures.FranklFCVaughan
+  Conjectures.FranklSmallCyclicNineEncoding
+  Conjectures.FranklFCFamily
+  Conjectures.FranklSmallCyclicTheorem
+  Conjectures.FranklSmallCyclicZMod
+  Conjectures.FranklSmallCyclicResults
+  Conjectures.FranklFCResults
   Conjectures.FranklIncidence
   Conjectures.FranklArithmetic
   Conjectures.FranklLopsided

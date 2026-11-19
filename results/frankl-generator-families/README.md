@@ -7,3 +7,7 @@ We also obtain a quantitative bound under a different hypothesis. If every gener
 Run `python3 tree_messages.py` and `python3 message_audit.py` for the frequency bound. Run `python3 span_four.py` here with NumPy, SciPy and a C++20 compiler. It constructs the overlap graph and checks every claimed weight vector by explicitly enumerating the compatible unions. The proof is unrefereed; no priority claim is made.
 
 **Lean status:** partial. Parts of the argument have been formalized; the full formalization remains incomplete. See the [authoritative checked scope and remaining gaps](../../docs/lean-status.md).
+
+The integer local checker and its maximal-cover equivalent have passed strict Lean source checks, the axiom audit, and independent kernel replay. These theorems establish checker semantics and soundness. The finite window weight tables remain a separate obligation. [Checker scope and reproduction](../../docs/frankl-fc-formalization.md#local-maximal-cover-checker)
+
+The full Vaughan shortcut and all cyclic span-four families on at most six sites are now checked in Lean. The period-seven-through-ten residual results retain an explicit graph-membership hypothesis. The remaining window and graph data are required for the complete span-four theorem. [Exact checked packet](../../docs/verification/frankl-fc-packet-6544adcc.json)
