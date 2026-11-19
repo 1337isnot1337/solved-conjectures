@@ -1,0 +1,68 @@
+name: Lean six-speed prime certificates
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-six-speed-prime-pipeline.yml'
+      - 'scripts/verify_six_speed_prime_pipeline.py'
+      - 'scripts/generate_six_speed_prime_certificates.py'
+      - 'scripts/generate_six_speed_prime_arithmetic.py'
+      - 'scripts/generate_six_speed_prime_assembly.py'
+      - 'scripts/generate_six_speed_prime_fast.py'
+      - 'lean/Conjectures/LonelinessModularCoverFastCounts.lean'
+      - 'lean/Conjectures/LonelinessModularCoverFastCuts.lean'
+      - 'docs/six-speed-prime-pipeline-sources.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-six-speed-prime-pipeline
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: plan
+        run: |
+          python3 -m py_compile scripts/verify_six_speed_prime_pipeline.py scripts/generate_six_speed_prime_certificates.py scripts/generate_six_speed_prime_arithmetic.py scripts/generate_six_speed_prime_assembly.py scripts/generate_six_speed_prime_fast.py
+          matrix=$(python3 scripts/verify_six_speed_prime_pipeline.py --plan)
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+  verify:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Fresh strict source, all-owned private audit and exact stock replay
+        env:
+          LEAN_NUM_THREADS: 1
+          UV_USE_IO_URING: 0
+        run: python3 scripts/verify_six_speed_prime_pipeline.py --job '${{ matrix.id }}'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: six-speed-prime-${{ matrix.id }}
+          path: .candidate-artifacts/six-speed-prime-pipeline/${{ matrix.id }}/
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
