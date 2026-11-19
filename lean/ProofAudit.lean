@@ -9,6 +9,15 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Loneliness.SixPlane.Data.pilotSmall,
+    `Loneliness.SixPlane.Data.pilotEight,
+    `Loneliness.SixPlane.Data.pilotForty,
+    `Loneliness.SixPlane.Data.directions_complete,
+    `Loneliness.SixPlane.Data.directionCoverageCheck_of_fixed_chunks,
+    `Loneliness.SixPlane.Data.partialCheck_sound,
+    `Loneliness.SixPlane.Data.enumeratedPairsChecked_of_partialChecks,
+    `Loneliness.SixPlane.Data.enumeratedPairsChecked_of_fixed_chunks,
+    `Loneliness.SixPlane.Data.candidatePairsChecked_of_fixed_chunks,
     `Loneliness.SevenLowGapInput.seven_row_low_shapes,
     `Loneliness.SevenLowGapInput.consecutive_low_parameter,
     `Loneliness.SevenLowGapInput.known_seven_low_shapes,

@@ -1093,6 +1093,26 @@ modules=(
   Conjectures.LonelinessSevenCoordinateLargeNorm
   Conjectures.LonelinessSevenCoordinateLargeNormFamily
   Conjectures.LonelinessSevenLowGapInput
+  Conjectures.LonelinessSixPlaneDefs
+  Conjectures.LonelinessSixPlaneDataTables
+  Conjectures.LonelinessSixPlaneEnumeration
+  Conjectures.LonelinessSixPlaneDataDefs
+  Conjectures.LonelinessSixPlaneChunkSoundness
+  Conjectures.LonelinessSixPlaneDataCoverageSoundness
+  Conjectures.LonelinessSixPlaneDataPilotEight
+  Conjectures.LonelinessSixPlaneDataPilotForty
+  Conjectures.LonelinessSixPlaneDataPilotSmall
+  Conjectures.LonelinessSixPlaneDataCoverage00
+  Conjectures.LonelinessSixPlaneDataCoverage01
+  Conjectures.LonelinessSixPlaneDataCoverage02
+  Conjectures.LonelinessSixPlaneDataCoverage03
+  Conjectures.LonelinessSixPlaneDataCoverage04
+  Conjectures.LonelinessSixPlaneDataCoverage05
+  Conjectures.LonelinessSixPlaneDataCoverage06
+  Conjectures.LonelinessSixPlaneDataCoverage07
+  Conjectures.LonelinessSixPlaneDataCoverage08
+  Conjectures.LonelinessSixPlaneDataCoverage09
+  Conjectures.LonelinessSixPlaneDataCoverage
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.
