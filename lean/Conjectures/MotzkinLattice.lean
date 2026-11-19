@@ -53,8 +53,8 @@ theorem triangular_mem_iff (K : AddSubgroup (ℤ × ℤ)) (m k : ℕ) (s : ℤ)
     have hsub : (r-v*s,0) ∈ K := by
       have he : (r-v*s,0)=(r,t)-v • (s,(k:ℤ)) := by
         apply Prod.ext
-        · simp [zsmul_eq_mul]
-        · simp [zsmul_eq_mul,hv]
+        · simp
+        · simp [hv]
       rw [he]
       exact K.sub_mem hrt (K.zsmul_mem hs v)
     obtain ⟨u,hu⟩ := (hm (r-v*s)).mp hsub
@@ -62,7 +62,7 @@ theorem triangular_mem_iff (K : AddSubgroup (ℤ × ℤ)) (m k : ℕ) (s : ℤ)
   · rintro ⟨u,v,rfl,rfl⟩
     have he : (u*(m:ℤ)+v*s,v*(k:ℤ))=
         u • ((m:ℤ),0)+v • (s,(k:ℤ)) := by
-      ext <;> simp [zsmul_eq_mul]
+      ext <;> simp
     rw [he]
     exact K.add_mem (K.zsmul_mem hmK u) (K.zsmul_mem hs v)
 
@@ -73,9 +73,8 @@ theorem normalized_second_generator (K : AddSubgroup (ℤ × ℤ))
   have he : (s%(m:ℤ),(k:ℤ))=(s,(k:ℤ))-(s/(m:ℤ)) • ((m:ℤ),0) := by
     apply Prod.ext
     · change s%(m:ℤ)=s-(s/(m:ℤ)) • (m:ℤ)
-      rw [zsmul_eq_mul]
-      omega
-    · simp [zsmul_eq_mul]
+      simpa using (eq_sub_iff_add_eq.mpr hdiv)
+    · simp
   rw [he]
   exact K.sub_mem hs (K.zsmul_mem hm (s/(m:ℤ)))
 

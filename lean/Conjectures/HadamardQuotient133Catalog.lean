@@ -1,5 +1,5 @@
 import Mathlib.Data.List.Basic
-import Mathlib.Tactic.Omega
+import Lean.Elab.Tactic.Omega
 
 /-!
 # Small certificates for an ordered catalogue

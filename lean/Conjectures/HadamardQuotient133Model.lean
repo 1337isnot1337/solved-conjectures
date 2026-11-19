@@ -3,7 +3,7 @@ import Mathlib.Data.Fintype.Pi
 import Mathlib.Data.ZMod.Basic
 import Mathlib.Tactic.FinCases
 import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Omega
+import Lean.Elab.Tactic.Omega
 import Mathlib.Tactic.Ring
 
 namespace HadamardQuotient133
