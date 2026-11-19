@@ -1,0 +1,75 @@
+name: Recover Frankl graph packet source diagnostic
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/recover-frankl-graph-packet-source-diagnostic.yml'
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read the authenticated original failed source log
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import hashlib, io, json, os, pathlib, urllib.request, zipfile
+          api = "https://api.github.com/repos/1337isnot1337/solved-conjectures"
+          def get(path):
+              req = urllib.request.Request(api + path, headers={
+                  "Authorization": "Bearer " + os.environ["GH_TOKEN"],
+                  "Accept": "application/vnd.github+json",
+                  "User-Agent": "fixed-frankl-failure-recovery"})
+              with urllib.request.urlopen(req, timeout=60) as response:
+                  raw = response.read(64 * 1024 * 1024 + 1)
+              if len(raw) > 64 * 1024 * 1024:
+                  raise RuntimeError("Archive bound exceeded")
+              return raw
+          aid = 14532912378
+          metadata = json.loads(get("/actions/artifacts/" + str(aid)))
+          expected = "d60d381bd6ca7d00c86d315ef59b21b2a2d84a780e658b5f661fb99de7a86f74"
+          assert metadata["id"] == aid
+          assert metadata["name"] == "frankl-graph-packet-composed"
+          assert metadata["workflow_run"]["id"] == 44528458435
+          assert metadata["workflow_run"]["head_sha"] == "9e7909b8674c1c56aac182f6160d0c5b7f5b558c"
+          assert metadata["digest"] == "sha256:" + expected and not metadata["expired"]
+          payload = get("/actions/artifacts/" + str(aid) + "/zip")
+          assert hashlib.sha256(payload).hexdigest() == expected
+          output = pathlib.Path(".candidate-artifacts/frankl-packet-source-diagnostic")
+          output.mkdir(parents=True, exist_ok=True)
+          with zipfile.ZipFile(io.BytesIO(payload)) as archive:
+              names = archive.namelist()
+              assert len(names) == len(set(names))
+              suffix = "logs/Conjectures.FranklSpanFourGraphPacket.source.log"
+              matches = [n for n in names if n.endswith(suffix)]
+              assert len(matches) == 1
+              prefix = matches[0].removesuffix(suffix)
+              raw = archive.read(prefix + "receipt.json")
+              receipt = json.loads(raw)
+              assert receipt["status"] == "failed"
+              assert receipt["git_commit"] == "9e7909b8674c1c56aac182f6160d0c5b7f5b558c"
+              check = receipt["source_checks"]["Conjectures.FranklSpanFourGraphPacket"]
+              log = archive.read(matches[0])
+              assert hashlib.sha256(log).hexdigest() == check["log_sha256"]
+              (output / "receipt.json").write_bytes(raw)
+              (output / "source.log").write_bytes(log)
+              print(json.dumps({"original_status": receipt["status"],
+                  "receipt_sha256": hashlib.sha256(raw).hexdigest(),
+                  "log_sha256": hashlib.sha256(log).hexdigest(),
+                  "exit_code": check["exit_code"], "new_proof_verification": False}))
+              print(log.decode())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: frankl-packet-original-failed-source-diagnostic
+          path: .candidate-artifacts/frankl-packet-source-diagnostic/
+          retention-days: 14
+          if-no-files-found: error
