@@ -2495,3 +2495,12 @@ with its explicit inputs. It does not discharge `h5` or `h6`, and it does not
 establish unconditional seven-speed spectrum exhaustiveness. No result
 directory is marked complete by this registration. The merged-package gate
 remains separate from this exact component evidence.
+
+
+### Accepted seven-speed low-gap input for the eight-coordinate argument
+
+`LonelinessSevenLowGapInput` is now an accepted component. Within the stated seven-speed families and sporadic rows, loneliness strictly below `3/23` leaves exactly the bases `[1,2,3,4,5,6,7]`, `[1,2,3,4,5,7,12]`, and `[1,4,5,6,7,11,13]`, each with value `1/8`. The proof filters every table row, forces the consecutive-family parameter to be one, and retains permutation and positive gcd scaling. Its extension to arbitrary positive distinct seven-speed lists explicitly assumes `PrimitiveClassification`; this registration does not establish that classification or the eight-speed spectrum theorem.
+
+The original passing [run 44551449045](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44551449045), job `135655971010`, checked commit `aac4fff06ba8f6678d60a1665ab4790562cbbc5a`. It compiled all 17 project modules from fresh sources with warnings as errors, audited all 663 owned/raw declarations (494 theorems and 16 private declarations), required all eight endpoints, and replayed all 17 exact project-module targets separately with the unchanged stock checker. Only `propext`, `Classical.choice`, and `Quot.sound` were permitted. No linter override or cached project-proof acceptance was used.
+
+Artifact `14542014520` has ZIP SHA256 `256cfdb7f4e00cee8253f0f8c2e59037d9e3bcb4db428d3484054a7c7ed33077`; its unchanged raw receipt has SHA256 `4d5996deff454e567510b3445317d11bea3ba1b65e8e6047d3637c8e41c30211`. All 30 source/control/helper/configuration files matched the exact passing tree. The archive validator authenticated all 107 members and preserved 75 unchanged evidence files under [`docs/verification/seven-low-gap-exact-44551449045/`](verification/seven-low-gap-exact-44551449045/), including the original receipt, complete owned-declaration inventory, generated audit source, process logs and progress records. Failed or still-running sibling tasks are outside this acceptance checkpoint.

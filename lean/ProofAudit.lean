@@ -9,6 +9,14 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Loneliness.SevenLowGapInput.seven_row_low_shapes,
+    `Loneliness.SevenLowGapInput.consecutive_low_parameter,
+    `Loneliness.SevenLowGapInput.known_seven_low_shapes,
+    `Loneliness.SevenLowGapInput.base_value,
+    `Loneliness.SevenLowGapInput.known_seven_eighth_iff,
+    `Loneliness.SevenLowGapInput.normalized_low_shapes,
+    `Loneliness.SevenLowGapInput.sevenSpeedGap_of_primitiveClassification,
+    `Loneliness.SevenLowGapInput.low_value_eq_eighth,
     `Loneliness.SevenCoordinateCritical.candidate_of_canonicalSigned,
     `Loneliness.SevenCoordinateCritical.repeatShape_of_consecutive,
     `Loneliness.SevenCoordinateCritical.repeatTests_of_low_plane,

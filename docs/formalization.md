@@ -824,3 +824,10 @@ and source checks do not establish unconditional seven-speed exhaustiveness:
 the lower-dimensional hypotheses and the remaining global classification
 are still open. The merged-package gate and original-result completion
 remain separate.
+
+
+### Seven-speed low-gap reduction for the eight-speed proof
+
+The accepted `LonelinessSevenLowGapInput` module proves the exact three seven-speed bases below `3/23` within the stated candidate classification, their value `1/8`, and the positive gcd-scaled conclusion for arbitrary positive distinct lists under the explicit primitive seven-speed classification premise. This supplies the literal low-gap input used by the eight-coordinate plane argument. It does not remove the classification premise or mark an original result complete.
+
+Acceptance uses the original passing job `135655971010` in [run 44551449045](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44551449045) at `aac4fff06ba8f6678d60a1665ab4790562cbbc5a`: 17 fresh strict project modules, all 663 owned/raw declarations (494 theorems, 16 private declarations), eight required endpoints, and 17 exact stock-kernel target replays. Artifact `14542014520` has ZIP SHA256 `256cfdb7f4e00cee8253f0f8c2e59037d9e3bcb4db428d3484054a7c7ed33077`; the raw receipt hash is `4d5996deff454e567510b3445317d11bea3ba1b65e8e6047d3637c8e41c30211`. The authenticated raw evidence is preserved in [`verification/seven-low-gap-exact-44551449045/`](verification/seven-low-gap-exact-44551449045/).

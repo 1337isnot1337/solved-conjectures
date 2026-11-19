@@ -468,3 +468,4 @@ import Conjectures.LonelinessHigherSpectrumBounds
 import Conjectures.LonelinessHigherTriangleConsequences
 import Conjectures.LonelinessSevenCoordinateClassification
 import Conjectures.LonelinessSevenCoordinateLargeNormFamily
+import Conjectures.LonelinessSevenLowGapInput
