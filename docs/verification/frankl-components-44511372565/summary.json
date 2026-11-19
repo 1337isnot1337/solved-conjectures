@@ -1,0 +1,22 @@
+{
+  "accepted_registry_changed": false,
+  "passed_groups": {
+    "tree-configurations": {
+      "archive_sha256": "660c7ff31baa7dee212a955175c6e83cf8812d192d72e3aaa268e4f607196f04",
+      "artifact_id": 14522689522,
+      "artifact_name": "frankl-tree-configurations",
+      "private_chunks": 0,
+      "project_modules": 4,
+      "receipt": "docs/verification/frankl-components-44511372565/tree-configurations.json",
+      "receipt_sha256": "612f45311b3fc952b0dcea612c788999c2878f103fe241d11c5a7c2b21aac695",
+      "required_endpoints": 10
+    }
+  },
+  "profile_inventory": "docs/frankl-tree-configurations-sources.json",
+  "profile_inventory_sha256": "2d0d8102b15a44d37390e4ca5b390a448672ddf88927d50842f01688a17a5045",
+  "schema": "frankl-exact-component-receipts-v1",
+  "scope": "Exact bijections and cardinality recurrence for actual independent-set configurations on disjoint branches attached to a root, with explicit boundary permissions. The identification of a graph ball with such a rooted graph and the numerical high-girth frequency conclusion remain separate.",
+  "source_commit": "c0d7a05bd75b554fcae08074761a78a4436e739f",
+  "source_run_id": 44511372565,
+  "workflow": "Lean Frankl actual tree configuration counts"
+}
