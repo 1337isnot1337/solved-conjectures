@@ -1,0 +1,40 @@
+name: Lean Frankl actual tree configuration counts
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-frankl-tree-configurations.yml'
+      - 'scripts/verify_frankl_tree_configurations.py'
+      - 'docs/frankl-tree-configurations-sources.json'
+      - 'lean/Conjectures/FranklTreeConfigurations.lean'
+      - 'lean/Conjectures/FranklTreeGluing.lean'
+      - 'lean/Conjectures/FranklTreeCounts.lean'
+      - 'lean/Conjectures/FranklIncidence.lean'
+
+permissions:
+  contents: read
+
+jobs:
+  configurations:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: false
+          test: false
+          lint: false
+      - name: Strict source, every owned declaration, exact stock kernel
+        run: python3 scripts/verify_frankl_tree_configurations.py --jobs 4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frankl-tree-configurations
+          path: .candidate-artifacts/frankl-tree-configurations/
+          retention-days: 14

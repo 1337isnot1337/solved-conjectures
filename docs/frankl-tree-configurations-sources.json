@@ -1,0 +1,20 @@
+{
+  "schema": "frankl-tree-configurations-v1",
+  "root": "Conjectures.FranklTreeConfigurations",
+  "sources": {
+    "lean/Conjectures/FranklTreeConfigurations.lean": "1d6d2e540dd0e54d5eb227eafddafcde46369fda29fd9f281fb1db953afc205d"
+  },
+  "required_endpoints": [
+    "FranklTreeConfigurations.omitted_card",
+    "FranklTreeConfigurations.finished_card",
+    "FranklTreeConfigurations.glueSet_branchSet",
+    "FranklTreeConfigurations.branchSet_glueSet",
+    "FranklTreeConfigurations.valid_iff_branches",
+    "FranklTreeConfigurations.dominated_root_iff_branches",
+    "FranklTreeConfigurations.occupied_attached_card",
+    "FranklTreeConfigurations.needsParent_attached_card",
+    "FranklTreeConfigurations.dominated_add_needsParent_attached_card",
+    "FranklTreeConfigurations.dominated_attached_card"
+  ],
+  "scope": "Exact bijections and cardinality recurrence for actual independent-set configurations on disjoint branches attached to a root, with explicit boundary permissions. The identification of a graph ball with such a rooted graph and the numerical high-girth frequency conclusion remain separate."
+}
