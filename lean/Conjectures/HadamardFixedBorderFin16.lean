@@ -45,7 +45,7 @@ modulo four, exactly as in the finite source layout. -/
 theorem flatGamma_apply (Γ : Matrix (Fin 4) (Fin 4) ℤ) (i j : Fin 16) :
     flatGamma Γ i j = Γ (flatIndex.symm i).1 (flatIndex.symm j).1 *
       if i.val % 4 = j.val % 4 then 1 else 0 := by
-  simp only [flatGamma, Matrix.submatrix_apply, gammaPermutation, Equiv.coe_refl,
+  simp only [flatGamma, Matrix.submatrix_apply, gammaPermutation, Equiv.coe_refl, id_eq,
     Fin.ext_iff, flatIndex_symm_snd_val]
 
 theorem flatBlocks_submatrix :
