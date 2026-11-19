@@ -16,8 +16,8 @@ adapter passed its 21-module closure and 284-theorem axiom audit. The
 hyperplane residue and endpoint-component closures also passed, covering
 26 modules/463 theorems and 29 modules/490 theorems respectively. Each job
 rebuilt sources, checked the standard axiom whitelist, independently replayed
-every project kernel object, and confirmed unchanged sources. These remain
-unregistered components. In particular, the adapter retains its five-speed
+every project kernel object, and confirmed unchanged sources. These older receipts retain their original scope; the table below records
+subsequent registrations. In particular, the adapter retains its five-speed
 bound and primitive six-speed classification hypotheses. Exact job links and
 scopes are in [`loneliness-75df-component-receipts.json`](loneliness-75df-component-receipts.json).
 
@@ -35,7 +35,7 @@ never additional Lean axioms.
 | Batista Egyptian fractions | Complete | An ordered lexicographically first solution uniquely maximizes the last denominator for every admissible positive `k` outside residue class 1. The proof uses the elementary global comparison and a kernel-reduced exhaustive certificate below 100, with proved denominator bounds; no published comparison theorem is a hypothesis. |
 | CUT Family B | Complete | The actual well-founded mex games have identical values at every positive pile size iff `3x < y`, including infinite cut sets. The six-block base formula, preservation under all even cuts, and discrepancy by `4x` are proved internally. |
 | CUT arithmetic periodicity | Complete | The uniform terminating decision test and exhaustive candidate enumeration are proved for every finite cut set and proposed arithmetic tail. Compact quotient/residue certificates identify both actual example games at every pile size and prove least eventual period 12, saltus 8, and earliest start 7, hence positive-pile preperiod 6. |
-| Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
+| Loneliness on a fixed hyperplane | Complete | Original ordered positive distinct sample; deterministic maximum and velocity bound; uniform O(1/N) error over all shifts; fixed and independent Haar-shift laws; exact finite-subspace and positive-N quasipolynomial counts with degree bound; full-support endpoint formula including k=2; sharp (1,2,3) example. The complete 72-module closure passed strict sources, all-owned/private audit and exact stock replay. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
 | Hadamard order-2396 partial results | Partial overall; automorphism, fixed-border construction and symmetry, and length-598 obstruction complete | The full signed-automorphism group excludes order 479, with both norm proofs checked. The fixed-border common multiplier group is cyclic of order dividing four and every preserving subgroup leaves at least 151 sign orbits. On any finite abelian group with a subgroup of index four, the original four sign rows and raw correlation equations yield an actual bordered Hadamard matrix; normalization, the literal finite border, and all fourteen size-149 baseline patterns are proved. The length-598 order-eleven obstruction is complete. For length 1197, the actual common multiplier order is proved to divide 27; exclusion of order 27, the finite quotient/no-lift certificates, and the two-row construction remain candidates. |
 | Lonely-runner two insertions | Complete | Every `p ≥ 3` and arbitrary positive integer speeds have a common witness in `[1/(p+2),1/p]` with clearance at least `1/(p+2)`. The unbounded branch, all small cases, interval-good base insertion, Goddyn–Wong acceleration criterion, common-dilation value bound, and literal three-insertion obstruction are proved. |
@@ -2261,3 +2261,41 @@ list now has 906 proof modules plus two roots. This completes the existence
 direction of the spectrum statement. The universal family and off-family
 classification remains incomplete; the result entry remains partial.
 Verification of the merged accepted package is a separate gate.
+
+## Complete fixed-hyperplane theorem
+
+All original statements of the fixed-hyperplane note are registered. They
+use the original ordered positive, pairwise-distinct integer sample and
+the actual time maximum. The general normal is primitive and real-admissible;
+the endpoint formula alone additionally requires every normal coordinate
+to be nonzero.
+
+The theorem closure proves the deterministic bound and exact containing-torus
+maximum, the uniform `O(1/N)` probability error over all shifts, fixed-shift
+and independent Haar-shift laws, the exact finite proper-subspace description,
+the denominator quasipolynomial, the actual subthreshold numerator at every
+`N≥1` with degree at most `k−2`, the endpoint frequency including `k=2`,
+and the sharp `(1,2,3)` example. No density, finite-fan, Ehrhart, counting
+or classification statement is an unproved premise.
+
+[Run 44531509741/job 135585736594](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44531509741/job/135585736594)
+freshly checked the exact 72-module closure at `ee1f018fef258cdd54f73af31cdaf6485fd151cb`.
+Sources used warnings as errors with no linter override. The all-owned audit
+checked 1,403 declarations, including 1,149 theorems and 44
+private declarations, and confirmed theorem kind for all 106 required
+endpoints. Only `propext`, `Classical.choice` and `Quot.sound`
+were allowed. All 72 modules passed exact singleton stock-kernel replay in
+fresh one-worker processes.
+
+The [unchanged raw receipt](verification/hyperplane-main-exact-44531509741/receipt.json)
+has SHA-256 `1c0d6a6fbe2ea16bbcfa88808ec8d83f0e412217e76c03803780ff0737fa1c15`.
+The [preservation record](verification/hyperplane-main-exact-44531509741/preservation.json)
+authenticates the actual original source, object, audit, log and progress
+bytes. Artifact `14535236819` has ZIP SHA-256 `27d65f3b5d667260dfad8d639f6d1182a3b5e54c032a2e2954d7764e060fe638`.
+
+Registration adds 63 previously unregistered proof modules and 102 new
+required endpoints, with all 72 checked source blobs guarded. The accepted
+list has 969 proof modules plus two roots. This completes the fixed-hyperplane
+result; verification of the merged accepted package remains a separate gate.
+The [result-level scope](../results/loneliness-on-a-hyperplane/LEAN.md)
+records the precise sample, formulas and distributional formulation.

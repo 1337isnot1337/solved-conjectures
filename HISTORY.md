@@ -1,5 +1,19 @@
 # History
 
+## 2026-11-19 — Complete fixed-hyperplane formalization
+
+- Registered the original fixed-hyperplane probability, counting, Haar-shift,
+  endpoint and sharpness statements, preserving the ordered positive distinct
+  sampling model and all original hypotheses.
+- Exact run 44531509741 at `ee1f018fef258cdd54f73af31cdaf6485fd151cb` checked all 72 sources with warnings as
+  errors, all 1,403 owned declarations (1,149 theorems and 44 private declarations),
+  all 106 required theorem endpoints and all 72 exact stock-kernel targets.
+- Preserved the unchanged raw receipt and authenticated original evidence under
+  `docs/verification/hyperplane-main-exact-44531509741/`.
+  Registration adds 63 proof modules and 102 previously unregistered endpoints.
+  The merged accepted-package gate remains separate.
+
+
 ## 2026-11-19 — Both six-speed spectrum realization branches
 
 Registered the unconditional existence theorem for every proposed six-speed

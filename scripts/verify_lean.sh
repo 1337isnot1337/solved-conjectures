@@ -912,6 +912,69 @@ modules=(
   Conjectures.LonelinessTwoInsertionsAccelerations
   Conjectures.LonelinessSixProgression
   Conjectures.LonelinessSixSpectrumRealization
+  Conjectures.LonelinessHyperplaneGenericCost
+  Conjectures.LonelinessHyperplaneOptimalSupports
+  Conjectures.LonelinessHyperplaneRationalConeOptimalExistence
+  Conjectures.LonelinessHyperplaneRationalConeFan
+  Conjectures.LonelinessHyperplaneHomogeneousBox
+  Conjectures.LonelinessHyperplaneFundamentalRemainder
+  Conjectures.LonelinessHyperplaneSystemCone
+  Conjectures.LonelinessHyperplaneQuasipolynomialArithmetic
+  Conjectures.LonelinessHyperplaneWeightedPartitions
+  Conjectures.LonelinessHyperplaneWeightedPartitionOffsets
+  Conjectures.LonelinessHyperplaneBoundedPartitions
+  Conjectures.LonelinessHyperplaneSignedBoxCounting
+  Conjectures.LonelinessHyperplaneBoxQuasipolynomial
+  Conjectures.LonelinessHyperplaneQuasipolynomialClosure
+  Conjectures.LonelinessHyperplaneSimplicialArithmetic
+  Conjectures.LonelinessHyperplaneFundamentalRemainderCounting
+  Conjectures.LonelinessHyperplaneQuasipolynomialDegree
+  Conjectures.LonelinessHyperplaneSystemCounting
+  Conjectures.LonelinessHyperplaneCoordinateCompression
+  Conjectures.LonelinessHyperplaneCollisionPartitions
+  Conjectures.LonelinessHyperplaneInjectiveBoxCounting
+  Conjectures.LonelinessHyperplaneLattice
+  Conjectures.LonelinessHyperplaneCounting
+  Conjectures.LonelinessHyperplaneDenominator
+  Conjectures.LonelinessHyperplaneDenominatorQuasipolynomial
+  Conjectures.LonelinessHyperplaneSystemSampling
+  Conjectures.LonelinessHyperplaneSystemUnions
+  Conjectures.LonelinessHyperplaneFourierDensity
+  Conjectures.LonelinessHyperplaneFourier
+  Conjectures.LonelinessHyperplaneHaar
+  Conjectures.LonelinessHyperplaneFourierKernel
+  Conjectures.LonelinessHyperplaneFourierAverage
+  Conjectures.LonelinessHyperplaneFiniteExceptions
+  Conjectures.LonelinessHyperplaneSubgroupFourier
+  Conjectures.LonelinessHyperplaneApproximation
+  Conjectures.LonelinessHyperplaneTorusValue
+  Conjectures.LonelinessHyperplaneSubspaceTorus
+  Conjectures.LonelinessHyperplaneSubspaceExceptions
+  Conjectures.LonelinessHyperplaneSubspaceClassification
+  Conjectures.LonelinessHyperplaneAdmissibility
+  Conjectures.LonelinessHyperplaneProbability
+  Conjectures.LonelinessHyperplaneExceptionalQuasipolynomial
+  Conjectures.LonelinessHyperplaneMaximizers
+  Conjectures.LonelinessHyperplaneFixedShift
+  Conjectures.LonelinessHyperplaneResidueKernel
+  Conjectures.LonelinessHyperplaneEndpointArithmetic
+  Conjectures.LonelinessHyperplaneUnshifted
+  Conjectures.LonelinessHyperplaneEndpointGeometry
+  Conjectures.LonelinessHyperplaneBoundary
+  Conjectures.LonelinessHyperplaneResidueTranslation
+  Conjectures.LonelinessHyperplaneResidueDensity
+  Conjectures.LonelinessHyperplaneOneRelation
+  Conjectures.LonelinessHyperplaneScaledResidues
+  Conjectures.LonelinessHyperplaneSmoothFactorization
+  Conjectures.LonelinessHyperplaneResiduePartition
+  Conjectures.LonelinessHyperplaneSmoothSeries
+  Conjectures.LonelinessHyperplaneSmoothDensity
+  Conjectures.LonelinessHyperplaneHitDensity
+  Conjectures.LonelinessHyperplaneEndpointDensity
+  Conjectures.LonelinessHyperplaneHaarValue
+  Conjectures.LonelinessHyperplaneShiftLaw
+  Conjectures.LonelinessHyperplaneRateSharpness
+  Conjectures.LonelinessHyperplaneMain
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

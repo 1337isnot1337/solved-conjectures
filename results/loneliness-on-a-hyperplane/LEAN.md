@@ -1,96 +1,124 @@
-# Lean formalization: deterministic component
+# Lean formalization: complete fixed-hyperplane theorem
 
-The exact shifted maximum on the containing real hyperplane is formally
-verified. The probabilistic and counting assertions remain open.
+The original statements in [PROOF.md](PROOF.md) are formally verified in
+the exact dependency closure of
+[LonelinessHyperplaneMain](../../lean/Conjectures/LonelinessHyperplaneMain.lean).
+The development proves the actual probability and counting statements from
+their definitions. It assumes no orbit-density, finite-subspace-cover,
+rational-fan, Ehrhart, or counting formula as an extra premise.
 
-## Checked statements
+## Normal, sample and maximum
 
-The namespace is `Loneliness.Hyperplane`. For any nonempty finite coordinate
-set, `PrimitiveNormal m` means that the gcd of the absolute integer
-coordinates of `m` is one. The proof derives integer Bézout coefficients
-from this condition.
+The coordinate type is finite. `PrimitiveNormal m` means that the gcd of the
+absolute coordinates of the integer normal is one; nonzeroness and integer
+Bézout coefficients are proved from that condition. `RealAdmissible m`
+means that the real kernel contains a vector with every coordinate positive
+and with pairwise distinct coordinates.
 
-For every such normal and every real shift `s`,
-`shifted_hyperplane_maximum` constructs a real vector `x` with
-`pairing m x = 0`. Its actual nearest-integer clearance equals
+For box size `N`, the sample consists of labelled functions into `Fin N`.
+Adding one to each coordinate gives precisely the ordered integer vectors
+in `[1,N]^k`. The sample is filtered by the exact integer relation and
+coordinate injectivity. Every admissible velocity is counted once. No
+primitive-velocity restriction is imposed.
+
+`torusVelocityValue` is the actual supremum over circle time, and the
+development proves that this supremum is attained. The equivalent real-lift
+maximum is attained on `[0,1]`. The containing-torus profile is
 
 \[
-\frac12-
-\frac{\operatorname{distance}\!\left(\sum_i m_i(1/2-s_i)\right)}
-     {\sum_i |m_i|}.
+L_m(s)=\frac12-
+ \frac{\|m\cdot((1/2,\ldots,1/2)-s)\|_{\mathbb R/\mathbb Z}}
+      {\sum_i|m_i|}.
 \]
 
-Every other point in that real hyperplane has clearance at most this value.
-Negative and zero normal coordinates are allowed.
+The exact hyperplane maximum has an explicit attaining point. Every
+orthogonal integer velocity satisfies `L(v,s) ≤ L_m(s)` at every shift.
+The normal may have zero coordinates for these statements and for the main
+probability theorem.
 
-| Export | Conclusion |
+## Checked original conclusions
+
+| Conclusion | Lean endpoint |
 | --- | --- |
-| `primitive_bezout` | Integer coefficients satisfy `∑ i, m i * e i = 1`. |
-| `shifted_hyperplane_attainment` | An actual point in the real hyperplane attains the formula. |
-| `shifted_hyperplane_value` | The supremum over that hyperplane equals the formula. |
-| `shiftedVelocityValue_max` | The shifted integer-velocity supremum on `[0,1]` is attained. |
-| `orthogonal_velocity_bound` | Every real time satisfies the upper bound when `∑ i, m i * v i = 0`. |
-| `orthogonal_velocity_value_le` | The actual shifted velocity maximum satisfies the upper bound. |
+| Exact shifted hyperplane maximum and attainment | `shifted_hyperplane_maximum`, `shifted_hyperplane_attainment` |
+| Upper bound for every orthogonal integer velocity | `orthogonal_velocity_value_le` |
+| Uniform inverse-box-size probability estimate over all shifts | `exists_torus_uniform_probability_rate` |
+| Eventual nonempty samples and a vanishing failure probability | `exists_uniform_probability_rate`, `uniformFailureProbability_tendsto_zero` |
+| Fixed-shift limiting distribution at the exact profile | `fixedShift_torus_cdf_tendsto` |
+| Uniform Haar distribution of the profile | `haar_predictedValue_isUniform` |
+| Independent Haar-shift limiting distribution for the actual sampled maximum | `independentShiftLaw_cdf_tendsto_uniform` |
+| Exact finite proper-rational-subspace description of every fixed subthreshold event | `RealSubspace.hyperplane_closed_sublevel_finite_union` |
+| Exact denominator quasipolynomial | `positiveBoxAdmissible_quasipolynomial` |
+| Exact numerator quasipolynomial of degree at most `k−2` for every positive box size | `positiveBoxBelow_progression_polynomials` |
+| Exact unshifted endpoint frequency for full-support normals | `endpointFrequency_tendsto` |
+| Sharp inverse-box-size example on `v₁+v₂=v₃` | `sharp_uniform_failure_probability_two_sided` |
 
-An individual velocity circle receives an upper bound. Its equality cases
-require further arguments. The construction uses rounding and the proved
-Bézout identity, with no density or lattice-counting premise.
+These names are in `Loneliness.Hyperplane`, except for the displayed
+`RealSubspace` subnamespace.
 
-## Sources and verification
+For each positive tolerance, the probability-rate theorem supplies constants
+and a threshold beyond which the sample is nonempty and the probability of
+an error at least that tolerance, with a supremum over all shifts, is at most
+`K/N`. The finite probability definitions are totalized when a small box
+has no sample. Eventual nonemptiness is proved and suffices for all limiting
+statements.
 
-- [Integer arithmetic and Bézout coefficients](../../lean/Conjectures/LonelinessHyperplaneArithmetic.lean)
-- [Circular distance, shifted values, and continuity](../../lean/Conjectures/LonelinessHyperplaneBasic.lean)
-- [Exact hyperplane maximum and velocity bound](../../lean/Conjectures/LonelinessHyperplane.lean)
+The fixed-shift and independent-shift limits are expressed as convergence
+of cumulative distribution functions. The independent-shift law is the
+actual average of the Haar pushforward law for each sampled velocity; its
+limit is uniform on `[1/2−1/(2A), 1/2]`, with `A=∑|mᵢ|`.
+The proof establishes the link from the sampled maxima to that law.
 
-All three modules passed strict source checks on 18 November 2026 (America/Chicago),
-using Lean 4.35.0 and the repository's pinned Mathlib commit
+For fixed `s` and `u<L_m(s)`, the numerator counts the literal event
+`L(v,s)≤u`. Its residue-class polynomials agree with that count for every
+`N≥1` and have degree at most `k−2`. The denominator has an exact
+quasipolynomial of degree at most `k−1`, including `N=0`.
+
+For the endpoint formula only, the shift is zero and every normal
+coordinate is nonzero. Set `Q=2` if `A` is even and `Q=A` otherwise.
+The verified limit is
+
+\[
+\lim_{N\to\infty}\Pr(L(v,0)=L_m(0))
+ =
+ \frac{\varphi(Q)}
+ {Q^{k-1}\prod_{p\mid Q}(1-p^{-(k-1)})}.
+\]
+
+The theorem includes `k=2`. The residue argument proves the canonical
+point's order and primitivity, the exact hit criterion, the original-box
+residue frequencies and the required summable tails. The numerical
+`1/4` endpoint example is an instance of this general formula at the
+normal `(1,1,−1)`. The sharpness development separately proves the profile
+`1/3`, the exact value `1/4` for every positive multiple of `(1,2,3)`,
+the attaining time `1/(4g)`, and matching inverse-box-size bounds.
+
+## Exact verification evidence
+
+[Run 44531509741 / job 135585736594](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44531509741/job/135585736594)
+checked source commit `ee1f018fef258cdd54f73af31cdaf6485fd151cb` with Lean 4.35.0 and Mathlib
 `56a005855ea17e0b0958f73ec801ae140b0a1679`.
-The source checks used one worker, a 2500 MB cap, and warnings as errors.
-Each module then passed a separate `leanchecker` replay with exit status zero.
 
-The module-owned audit checked 41 theorem declarations, including private
-declarations. It also rejected any unapproved module-owned axiom.
-All transitive axiom dependencies were among `propext`, `Classical.choice`,
-and `Quot.sound`. Five headline axiom prints confirmed exactly that set.
-These are local module receipts. The deterministic three-module component is
-registered in the accepted root, required endpoint audit, and kernel replay
-list. Hosted checks are recorded separately.
+All 72 project modules were freshly compiled with warnings treated as errors
+and no linter override. The audit checked every owned declaration, including
+raw serialized private declarations: 1,403 declarations, 1,149
+theorems and 44 private declarations. All 106 required endpoints
+were checked to have theorem kind. Only `propext`, `Classical.choice`
+and `Quot.sound` were allowed as transitive axioms.
 
-## Remaining assertions
+Every one of the 72 modules then passed a fresh process of the unchanged
+pinned stock checker as an exact singleton target. The receipt binds the
+source bytes, all emitted proof-object facets, compiler/checker binaries,
+verification helpers, commands, logs and declaration inventory. The
+preservation process authenticated the actual original archive bytes and
+every recorded evidence file; it ran no new Lean proof check.
 
-The full note remains partially formalized. The
-[probability candidate](../../lean/Conjectures/LonelinessHyperplaneProbability.lean)
-and [Haar-profile candidate](../../lean/Conjectures/LonelinessHyperplaneHaarValue.lean)
-are unregistered. Their complete source, axiom, and kernel checks remain
-incomplete.
+- [Unchanged raw receipt](../../docs/verification/hyperplane-main-exact-44531509741/receipt.json), SHA-256 `1c0d6a6fbe2ea16bbcfa88808ec8d83f0e412217e76c03803780ff0737fa1c15`.
+- [Preservation record](../../docs/verification/hyperplane-main-exact-44531509741/preservation.json).
+- Original artifact `14535236819`, ZIP SHA-256 `27d65f3b5d667260dfad8d639f6d1182a3b5e54c032a2e2954d7764e060fe638`.
+- [Earlier strict/theorem-audit receipt](../../docs/verification/hyperplane-main-original-44525844153/receipt.json), retained with its original scope.
 
-| Assertion | Required scope and remaining work |
-| --- | --- |
-| Uniform probability bound | The candidate uses all ordered positive distinct velocities in the relation box. It targets the actual supremum over torus shifts. |
-| Nonempty samples | Real admissibility must imply a positive distinct integer witness. Probability statements apply after an explicit positive box threshold. Small boxes can have empty samples. |
-| Fixed-shift limit | The uniform probability bound must imply convergence to the exact profile for each fixed shift. |
-| Independent Haar shift | The actual velocity maximum must converge in distribution to the stated uniform law. The profile's Haar distribution alone does not prove this limit. |
-| Exact threshold counts | For fixed `s` and real `u < L_m(s)`, the counted event is `L(v,s) ≤ u`. A recursive cover inside arbitrary rational subspaces remains necessary. |
-| Quasipolynomial counts | The exact count must be a quasipolynomial for every integer `N ≥ 1`. Its nonzero degree must be at most `k − 2`. The sample denominator also needs an exact count theorem. |
-| Endpoint probability | This assertion assumes `s = 0` and every normal coordinate is nonzero. It needs the maximizer classification, exact residue criterion, residue frequencies, and summable tails. |
-| Sharpness of the rate | The example requires exact counts and values for the positive multiples of `(1,2,3)`. The attaining time for `g(1,2,3)` is `1/(4g)`. |
-
-The main probability statement permits zero normal coordinates. The
-endpoint statement has the additional nonzero-coordinate assumption.
-Every probability uses all admissible velocities, with their multiplicities.
-A uniform sample of primitive directions is a different model.
-
-The uniform approximation argument uses orbit density at half the requested
-tolerance. A pointwise strict bound alone does not establish the same strict
-bound for a supremum.
-
-The proposed endpoint proof counts residue classes directly in the original
-box. For each positive `Q`-smooth divisor `g`, it uses `φ(Q)` classes modulo
-`gQ`. Their expected density is `φ(Q)/(gQ)^(k−1)`. A fixed lattice translation
-compares classes through lower-dimensional boundary counts. The tail uses
-the convergent reciprocal-power series over `Q`-smooth integers.
-
-This series converges also in dimension one. The case `k = 2` needs explicit
-treatment because every sampled circle is already the containing torus.
-The exact quasipolynomial claim remains separate from this residue argument
-and the elementary `O(1/N)` probability route.
+The checked closure is registered in the accepted root, required endpoint
+audit and replay list. The repository-wide accepted-package check is a
+separate gate; this component receipt does not claim a new pass of that
+larger package.

@@ -112,9 +112,10 @@ the consecutive family for every parameter and every runner count from 2
 through 14, the two exceptional eight-speed families, and classification
 within all three stated eight-speed product families. The seven- and
 eight-speed exceptional examples have exact global values. These statements
-do not supply exhaustive higher-speed classifications. The exact shifted
-hyperplane maximum and its velocity upper bound are registered; its
-probabilistic and counting assertions remain open.
+do not supply exhaustive higher-speed classifications. The complete fixed-hyperplane theorem is registered, including its original
+uniform probability, exact counting, Haar-shift, endpoint and sharpness
+statements. Its exact 72-module closure passed fresh strict sources, the
+all-owned/raw-private audit, and stock kernel replay.
 
 The verified snapshot `c0cf593` passed its source build, the audit of 6,954
 project theorem declarations, and independent kernel replay of all 152 proof
@@ -187,9 +188,9 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
     proved and registered.
 17. Graffiti.pc Conjecture 318 is complete, including the all-order theorem
     and sharp five-vertex example.
-18. Loneliness on a fixed hyperplane: uniform fixed-tolerance probability
-    bound, exceptional-subspace description,
-    quasipolynomial counts, and the endpoint density for full-support normals.
+18. Loneliness on a fixed hyperplane is complete. Its original uniform
+    probability estimate, exceptional-subspace description, exact counting
+    polynomials, Haar-shift limits, endpoint density and sharpness are proved.
 19. Li coefficient sign, last: actual tree properties, all connected partition
     types, chromatic symmetric functions and coefficient extraction.
 
@@ -665,3 +666,41 @@ Two proof modules and 13 endpoints are registered, with all checked source
 blobs guarded; the accepted list has 906 proof modules plus two roots.
 The universal six-speed classification and merged-package gate remain separate.
 [Scope and original evidence](lean-status.md#six-speed-spectrum-complete-realization).
+
+## Complete fixed-hyperplane theorem
+
+All original statements of the fixed-hyperplane note are registered. They
+use the original ordered positive, pairwise-distinct integer sample and
+the actual time maximum. The general normal is primitive and real-admissible;
+the endpoint formula alone additionally requires every normal coordinate
+to be nonzero.
+
+The theorem closure proves the deterministic bound and exact containing-torus
+maximum, the uniform `O(1/N)` probability error over all shifts, fixed-shift
+and independent Haar-shift laws, the exact finite proper-subspace description,
+the denominator quasipolynomial, the actual subthreshold numerator at every
+`N≥1` with degree at most `k−2`, the endpoint frequency including `k=2`,
+and the sharp `(1,2,3)` example. No density, finite-fan, Ehrhart, counting
+or classification statement is an unproved premise.
+
+[Run 44531509741/job 135585736594](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44531509741/job/135585736594)
+freshly checked the exact 72-module closure at `ee1f018fef258cdd54f73af31cdaf6485fd151cb`.
+Sources used warnings as errors with no linter override. The all-owned audit
+checked 1,403 declarations, including 1,149 theorems and 44
+private declarations, and confirmed theorem kind for all 106 required
+endpoints. Only `propext`, `Classical.choice` and `Quot.sound`
+were allowed. All 72 modules passed exact singleton stock-kernel replay in
+fresh one-worker processes.
+
+The [unchanged raw receipt](verification/hyperplane-main-exact-44531509741/receipt.json)
+has SHA-256 `1c0d6a6fbe2ea16bbcfa88808ec8d83f0e412217e76c03803780ff0737fa1c15`.
+The [preservation record](verification/hyperplane-main-exact-44531509741/preservation.json)
+authenticates the actual original source, object, audit, log and progress
+bytes. Artifact `14535236819` has ZIP SHA-256 `27d65f3b5d667260dfad8d639f6d1182a3b5e54c032a2e2954d7764e060fe638`.
+
+Registration adds 63 previously unregistered proof modules and 102 new
+required endpoints, with all 72 checked source blobs guarded. The accepted
+list has 969 proof modules plus two roots. This completes the fixed-hyperplane
+result; verification of the merged accepted package remains a separate gate.
+The [result-level scope](../results/loneliness-on-a-hyperplane/LEAN.md)
+records the precise sample, formulas and distributional formulation.

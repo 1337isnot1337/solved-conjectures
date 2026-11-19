@@ -14,8 +14,12 @@ For each fixed tolerance, the exceptional fraction is $O(1/N)$ for speeds up to 
 
 ## Lean formalization
 
-The deterministic component is verified: the exact shifted maximum on the
-containing real hyperplane, an attaining point, and the upper bound for every
-orthogonal integer velocity. All three modules passed source checks, a
-module-owned axiom audit, and independent kernel replay. The probabilistic
-and counting assertions remain open. See the [checked scope and receipt](LEAN.md).
+All statements of the note are formally verified: the deterministic bound,
+uniform probability estimate, fixed and independent-shift laws, exact
+quasipolynomial counts and degree bound, endpoint formula, and rate sharpness.
+The original sampling model and mathematical hypotheses are preserved.
+
+The exact 72-module closure passed fresh strict source checks, an audit of
+all 1,403 owned declarations including private declarations, and 72 stock
+kernel replays. All 106 required endpoints have theorem kind. See the
+[checked statements and immutable evidence](LEAN.md).

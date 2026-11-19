@@ -14,7 +14,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | Problem | Proof | Lean |
 | :--- | :---: | :---: |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | [Read](results/haralambis-three-differences/PROOF.md) | ✅ |
-| [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | [Read](results/loneliness-on-a-hyperplane/PROOF.md) | 🟡 |
+| [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | [Read](results/loneliness-on-a-hyperplane/PROOF.md) | Complete |
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | [Read](results/eight-speed-spectrum/PROOF.md) | 🟡 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | [Read](results/seven-speed-spectrum/PROOF.md) | 🟡 |
 | [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | [Read](results/six-speed-spectrum/PROOF.md) · [Complete realization direction](docs/lean-status.md#six-speed-spectrum-complete-realization) | Partial |
