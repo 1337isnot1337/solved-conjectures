@@ -21,6 +21,12 @@ from verify_lean_candidate import (
 
 
 TASKS = {
+    'fin16': ('Conjectures.HadamardFixedBorderFin16', [
+        'HadamardFixedBorder.flatBlocks_apply',
+        'HadamardFixedBorder.flatGamma_apply',
+        'HadamardFixedBorder.flat_border_certificate_transport',
+        'HadamardFixedBorder.exists_transported_matrices_of_card_four',
+    ]),
     'transport': ('Conjectures.HadamardFixedBorderTransport', [
         'HadamardFixedBorder.border_certificate_transport',
         'HadamardFixedBorder.gammaPermutation_submatrix',

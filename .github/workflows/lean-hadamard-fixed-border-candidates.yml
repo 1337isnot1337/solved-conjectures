@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'lean/Conjectures/HadamardFixedBorderTransport*.lean'
+      - 'lean/Conjectures/HadamardFixedBorderFin16*.lean'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
@@ -16,6 +17,7 @@ on:
   pull_request:
     paths:
       - 'lean/Conjectures/HadamardFixedBorderTransport*.lean'
+      - 'lean/Conjectures/HadamardFixedBorderFin16*.lean'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
