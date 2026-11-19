@@ -11,49 +11,49 @@ jobs:
         with:
           python-version: '3.12'
       - name: Verify L-solitaire exhaustive finite checks
-        run: python3 l-solitaire-limit-shapes/verify.py
+        run: python3 results/l-solitaire-limit-shapes/verify.py
       - name: Verify Pham exact main and dual certificates
         run: |
-          python3 pham-denominator-degree/verify.py
-          python3 pham-denominator-degree/verify.py --dual --brute-depth 13
+          python3 results/pham-denominator-degree/verify.py
+          python3 results/pham-denominator-degree/verify.py --dual --brute-depth 13
       - name: Run Pham regression tests
-        run: cd pham-denominator-degree && python3 -m unittest discover -s tests -v
+        run: cd results/pham-denominator-degree && python3 -m unittest discover -s tests -v
       - name: Verify Li non-spider coefficient and partition certificates
         run: |
-          python3 li-coefficient-sign/verify.py
-          python3 li-coefficient-sign/independent_check.py
+          python3 results/li-coefficient-sign/verify.py
+          python3 results/li-coefficient-sign/independent_check.py
       - name: Verify Batista Egyptian-fraction congruence checks
-        run: python3 batista-egyptian-fractions/verify.py
+        run: python3 results/batista-egyptian-fractions/verify.py
       - name: Verify the line-size generating function
-        run: python3 erdos-607-line-sizes/verify.py
+        run: python3 results/erdos-607-line-sizes/verify.py
       - name: Verify rectangle packing and multiset recovery
-        run: python3 rectangle-partition-asymptotics/verify.py
+        run: python3 results/rectangle-partition-asymptotics/verify.py
       - name: Replay standard three-player War deals
-        run: python3 spivey-multiplayer-war/verify.py
+        run: python3 results/spivey-multiplayer-war/verify.py
       - name: Check the CUT Family B threshold against the game rules
-        run: python3 cut-family-b/verify.py
+        run: python3 results/cut-family-b/verify.py
       - name: Prove the two ultimate CUT periods by automata
-        run: python3 cut-arithmetic-periodicity/verify.py
+        run: python3 results/cut-arithmetic-periodicity/verify.py
       - name: Verify both distance-graph density results
         run: |
-          c++ -std=c++20 -O3 distance-graph-densities/verify.cpp -o /tmp/verify-distance-graphs
+          c++ -std=c++20 -O3 results/distance-graph-densities/verify.cpp -o /tmp/verify-distance-graphs
           /tmp/verify-distance-graphs
-          python3 distance-graph-densities/counterexample.py
+          python3 results/distance-graph-densities/counterexample.py
       - name: Check the two-difference Motzkin formula
-        run: python3 two-difference-motzkin/verify.py
+        run: python3 results/two-difference-motzkin/verify.py
       - name: Check the symmetric four-point packing and covering theorem
-        run: python3 symmetric-four-point-density/verify.py
+        run: python3 results/symmetric-four-point-density/verify.py
       - name: Check the nonmixed-gap packing theorem
-        run: python3 nonmixed-gap-packing/verify.py
+        run: python3 results/nonmixed-gap-packing/verify.py
       - name: Check Haralambis three-difference rotation certificates
-        run: python3 haralambis-three-differences/verify.py
+        run: python3 results/haralambis-three-differences/verify.py
       - name: Verify the five-speed loneliness spectrum
-        run: python3 five-speed-spectrum/verify.py
+        run: python3 results/five-speed-spectrum/verify.py
       - name: Verify tight six-speed sets and seven-coordinate critical planes
-        run: python3 tight-six-speeds/verify.py
+        run: python3 results/tight-six-speeds/verify.py
       - name: Verify the six-speed loneliness spectrum
-        run: python3 six-speed-spectrum/verify.py
+        run: python3 results/six-speed-spectrum/verify.py
       - name: Verify all equality cases for eight lonely runners
-        run: python3 tight-seven-speeds/verify.py
+        run: python3 results/tight-seven-speeds/verify.py
       - name: Verify the unique equality case for nine lonely runners
-        run: python3 tight-eight-speeds/verify.py
+        run: python3 results/tight-eight-speeds/verify.py
