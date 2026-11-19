@@ -1,6 +1,7 @@
 import Conjectures.HadamardFixedBorderFin16
 import Mathlib.Data.Fin.VecNotation
 import Mathlib.Data.Fintype.Defs
+import Mathlib.Tactic.FinCases
 
 /-!
 # The literal integer fixed-border certificate
@@ -74,15 +75,18 @@ def F : Matrix (Fin 16) (Fin 12) ℤ :=
 
 theorem K_sign : SignMatrix K := by
   unfold SignMatrix
-  decide +kernel
+  intro i j
+  fin_cases i <;> fin_cases j <;> decide +kernel
 
 theorem E_sign : SignMatrix E := by
   unfold SignMatrix
-  decide +kernel
+  intro i j
+  fin_cases i <;> fin_cases j <;> decide +kernel
 
 theorem F_sign : SignMatrix F := by
   unfold SignMatrix
-  decide +kernel
+  intro i j
+  fin_cases i <;> fin_cases j <;> decide +kernel
 
 theorem K_gram :
     K * Kᵀ = (12 : ℤ) • (1 : Matrix (Fin 12) (Fin 12) ℤ) := by
@@ -98,15 +102,18 @@ theorem F_gram :
     F * Fᵀ = (16 : ℤ) • (1 : Matrix (Fin 16) (Fin 16) ℤ) -
       (4 : ℤ) • flatBlocks := by
   apply Matrix.ext
-  decide +kernel
+  intro i j
+  fin_cases i <;> fin_cases j <;> decide +kernel
 
 theorem balanced : flatBlocks * Eᵀ = 0 := by
   apply Matrix.ext
-  decide +kernel
+  intro i j
+  fin_cases i <;> fin_cases j <;> decide +kernel
 
 theorem cross : flatGamma gamma * Eᵀ + F * Kᵀ = 0 := by
   apply Matrix.ext
-  decide +kernel
+  intro i j
+  fin_cases i <;> fin_cases j <;> decide +kernel
 
 def certificate : FlatCertificate gamma where
   K := K

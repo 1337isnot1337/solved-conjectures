@@ -12,6 +12,7 @@ on:
           - affected
           - catalog
           - model
+          - packet
   push:
     paths:
       - 'lean/Conjectures/HadamardQuotient133*.lean'

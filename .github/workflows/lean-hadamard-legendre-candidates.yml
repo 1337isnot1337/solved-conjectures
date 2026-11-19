@@ -17,6 +17,8 @@ on:
           - fourier
           - cyclotomic
           - inversion
+          - prime-quotients
+          - involutions
   push:
     paths:
       - 'lean/Conjectures/HadamardLegendre*.lean'

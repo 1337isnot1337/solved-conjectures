@@ -39,9 +39,20 @@ TASKS = {
         'HadamardQuotient133.correlation21_eq_signature',
         'HadamardQuotient133.fingerprint_pair',
     ]),
+    'packet': ('Conjectures.HadamardQuotient133Packet', [
+        'HadamardQuotient133.feasible_of_pair',
+        'HadamardQuotient133.feasible_mem_rowsFor',
+        'HadamardQuotient133.marginsFor_complete',
+        'HadamardQuotient133.catalogAllCheck_sound',
+        'HadamardQuotient133.quotientRow_catalogued',
+        'HadamardQuotient133.quotient_pair_endpoints',
+        'HadamardQuotient133.endpointPairsCheck_sound',
+        'HadamardQuotient133.actual_margin_catalogued',
+        'HadamardQuotient133.catalog_no_joint_pair',
+    ]),
 }
 
-DEFAULT_TASKS = ("catalog", "model")
+DEFAULT_TASKS = ("packet",)
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-quotient133-candidates.yml',
  'lean/lake-manifest.json',

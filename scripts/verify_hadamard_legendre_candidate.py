@@ -69,9 +69,21 @@ TASKS = {
         'HadamardLegendre.no_legendre_inverted_character',
         'HadamardLegendre.no_legendre_inverting_prime_quotient',
     ]),
+    'prime-quotients': ('Conjectures.HadamardLegendrePrimeQuotients', [
+        'HadamardLegendre.exists_surjective_prime_quotient',
+        'HadamardLegendre.involution_has_inverting_prime_quotient',
+        'HadamardLegendre.prime_divisor_1197_mod_four_three',
+    ]),
+    'involutions': ('Conjectures.HadamardLegendreInvolutions', [
+        'HadamardLegendre.odd_card_of_no_involutions',
+        'HadamardLegendre.fixedMultiplier_no_involution',
+        'HadamardLegendre.commonMultiplier_no_involution',
+        'HadamardLegendre.commonMultiplierGroup_odd_card',
+        'HadamardLegendre.multiplier_subgroup_odd_card',
+    ]),
 }
 
-DEFAULT_TASKS = ("centering", "inversion")
+DEFAULT_TASKS = ("centering", "involutions")
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-legendre-candidates.yml',
  'lean/lake-manifest.json',
