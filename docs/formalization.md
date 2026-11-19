@@ -259,3 +259,15 @@ axiom, and independent kernel gates. Eight new groups cover all 164 maps;
 the final aggregate and complete root-prime coverage remain open. See
 [the scoped checkpoint](five-speed-packed-bounded-candidates.md). Accepted
 roots are unchanged, and Li remains last.
+
+
+## Five-speed root candidate and component gates, 19 November 2026
+
+The 227-module finite-assembly closure passed hosted source compilation,
+the owned transitive axiom audit, and stock-kernel replay. Its coverage
+hypotheses are still explicit. Five of the 24 scalar/plane groups also
+passed their complete hosted gates. A complete p179 root candidate is now
+published in 14 modules; only its cache, packed oracle, helper, and first
+part have local source evidence so far. Its full hosted gate remains
+pending. See [the exact scope](five-speed-root179-candidate.md) and
+[component receipts](five-speed-receipts/hosted-component-index.json).
