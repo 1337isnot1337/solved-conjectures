@@ -1,0 +1,21 @@
+name: Prune superseded computational replays
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/prune-superseded-computational-runs.yml'
+      - 'scripts/prune_superseded_computational_runs.py'
+permissions:
+  contents: read
+  actions: write
+jobs:
+  prune:
+    if: github.repository == '1337isnot1337/solved-conjectures' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preserve the oldest active and newest computational runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/prune_superseded_computational_runs.py --apply

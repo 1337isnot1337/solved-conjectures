@@ -2,6 +2,10 @@ name: verify conjecture results
 on:
   push:
   pull_request:
+concurrency:
+  group: computational-results-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   verify:
     runs-on: ubuntu-latest
