@@ -43,7 +43,7 @@ theorem representative_sub_window (x : UnitAddCircle) (h : ℝ)
   have he : ((representative x-h:ℝ):UnitAddCircle)=x-(h:UnitAddCircle) := by
     rw [AddCircle.coe_sub,coe_representative]
   by_cases hx : representative x < h
-  · rw [if_pos hx]
+  · rw [ite_eq_left hx]
     have hm : representative x-h+1 ∈ Ico (0:ℝ) 1 :=
       ⟨by linarith [hr.1],by linarith⟩
     calc
@@ -51,7 +51,7 @@ theorem representative_sub_window (x : UnitAddCircle) (h : ℝ)
           representative ((representative x-h+1:ℝ):UnitAddCircle) := by
         rw [AddCircle.coe_add_period,he]
       _=representative x-h+1 := representative_coe hm
-  · rw [if_neg hx,add_zero,← he]
+  · rw [ite_eq_right hx,add_zero,← he]
     apply representative_coe
     exact ⟨by linarith,by linarith [hr.2]⟩
 
