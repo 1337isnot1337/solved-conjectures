@@ -1,0 +1,22 @@
+{
+  "accepted_registry_changed": false,
+  "passed_groups": {
+    "boundary-fibers": {
+      "archive_sha256": "1cf458ea6e943b61f26c9455b54cfd1a4a4dab4432117b889a4e523381fe157c",
+      "artifact_id": 14524197661,
+      "artifact_name": "frankl-boundary-fibers",
+      "private_chunks": 0,
+      "project_modules": 4,
+      "receipt": "docs/verification/frankl-components-44511690791/boundary-fibers.json",
+      "receipt_sha256": "ce5ca3c2d332f281e19fc5bbf380500d6b89b8fb1f31f4ffc06f47454e0db4ec",
+      "required_endpoints": 12
+    }
+  },
+  "profile_inventory": "docs/frankl-boundary-fibers-sources.json",
+  "profile_inventory_sha256": "ae07db14def1e6d5a6ef230067f2c020ae3b5f62f5d4a347d4ae1401453d9d07",
+  "schema": "frankl-exact-component-receipts-v1",
+  "scope": "Exact boundary-conditioned maximal-independent-set fibers and occupation-event counts, including radius-seven balls. This does not yet prove branch decomposition, the cone membership of actual messages, or the full small-degree frequency bound.",
+  "source_commit": "c443762e79d48b962829035d0deb7e4047f6370b",
+  "source_run_id": 44511690791,
+  "workflow": "Lean Frankl boundary configuration fibers"
+}
