@@ -19,11 +19,15 @@ permissions:
   actions: read
 
 concurrency:
-  group: frankl-arithmetic-receipt-publication
+  group: frankl-arithmetic-receipt-publication-${{ github.event.workflow_run.id || github.run_id }}
   cancel-in-progress: false
 
 jobs:
   preserve:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.id == 44503050632 ||
+      github.event.workflow_run.id == 44505005993
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

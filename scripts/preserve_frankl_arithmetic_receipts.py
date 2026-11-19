@@ -142,47 +142,60 @@ def validate_receipt(record, artifact, payload, manifest):
 
 def publish(files, frozen_sources):
     if not files:
-        print("No passed bounded receipts available", flush=True)
+        print("No passed bounded arithmetic receipts", flush=True)
         return
-    base = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
-    for path, raw in files.items():
-        write(path, raw)
-    subprocess.run(["git", "fetch", "origin", "main"], cwd=ROOT, check=True)
-    latest = subprocess.check_output(["git", "rev-parse", "FETCH_HEAD"], cwd=ROOT, text=True).strip()
-    for path, expected in frozen_sources.items():
-        require(sha(git_bytes(latest, path) or b"") == expected,
-                "Concurrent checked-source change before receipt publication: " + path)
-    for path, raw in files.items():
-        current = git_bytes(latest, path)
-        previous = git_bytes(base, path)
-        require(current is None or current == previous or current == raw,
-                "Concurrent receipt-path change: " + path)
-        if path.endswith(".json") and not path.endswith("/summary.json"):
-            require(current is None or current == raw, "Never overwrite different historical receipt")
-    if all(git_bytes(latest, path) == raw for path, raw in files.items()):
-        print("All selected receipts already preserved", flush=True)
-        return
-    with tempfile.TemporaryDirectory(prefix="frankl-receipt-index-") as directory:
-        env = {**os.environ, "GIT_INDEX_FILE": str(Path(directory) / "index"),
-               "GIT_AUTHOR_NAME": "github-actions[bot]", "GIT_COMMITTER_NAME": "github-actions[bot]",
-               "GIT_AUTHOR_EMAIL": "41898282+github-actions[bot]@users.noreply.github.com",
-               "GIT_COMMITTER_EMAIL": "41898282+github-actions[bot]@users.noreply.github.com"}
-        subprocess.run(["git", "read-tree", latest], cwd=ROOT, env=env, check=True)
+    for attempt in range(4):
+        subprocess.run(["git", "fetch", "origin", "main"], cwd=ROOT, check=True)
+        latest = subprocess.check_output(["git", "rev-parse", "FETCH_HEAD"], cwd=ROOT, text=True).strip()
+        for path, expected in frozen_sources.items():
+            require(sha(git_bytes(latest, path) or b"") == expected,
+                    "Concurrent checked-source change: " + path)
         for path, raw in files.items():
-            blob = subprocess.check_output(["git", "hash-object", "-w", "--stdin"],
-                                           cwd=ROOT, input=raw).decode().strip()
-            subprocess.run(["git", "update-index", "--add", "--cacheinfo", "100644", blob, path],
-                           cwd=ROOT, env=env, check=True)
-        tree = subprocess.check_output(["git", "write-tree"], cwd=ROOT, env=env, text=True).strip()
-        message = ("Preserve exact bounded Frankl arithmetic proof receipts\n\n"
-                   "Validate original archive digests, every staged source/object hash, "
-                   "all-declaration audit and exact stock replay. Keep missing groups explicit; "
-                   "no accepted registry or full-conjecture status is changed.\n")
-        commit = subprocess.check_output(["git", "commit-tree", tree, "-p", latest],
-                                         cwd=ROOT, env=env, text=True, input=message).strip()
-        print(json.dumps({"receipt_commit": commit, "parent": latest,
-                          "receipt_files": sorted(files)}), flush=True)
-        subprocess.run(["git", "push", "origin", commit + ":refs/heads/main"], cwd=ROOT, check=True)
+            current = git_bytes(latest, path)
+            if current is not None and current != raw and path.endswith("/summary.json"):
+                previous = json.loads(current)
+                proposed = json.loads(raw)
+                require(all(previous[key] == proposed[key] for key in
+                            ("schema", "source_run_id", "source_commit", "expected_groups")),
+                        "Changed summary identity: " + path)
+                require(set(previous["passed_groups"]) <= set(proposed["passed_groups"]),
+                        "Refusing to regress a preserved group summary: " + path)
+                for name, value in previous["passed_groups"].items():
+                    require(proposed["passed_groups"][name] == value,
+                            "Changed historical group evidence: " + path + ":" + name)
+            else:
+                require(current is None or current == raw,
+                        "Never overwrite a different historical arithmetic receipt: " + path)
+        if all(git_bytes(latest, path) == raw for path, raw in files.items()):
+            print("All selected arithmetic receipts already preserved", flush=True)
+            return
+        with tempfile.TemporaryDirectory(prefix="frankl-arithmetic-receipt-") as directory:
+            env = {**os.environ, "GIT_INDEX_FILE": str(Path(directory) / "index"),
+                   "GIT_AUTHOR_NAME": "github-actions[bot]", "GIT_COMMITTER_NAME": "github-actions[bot]",
+                   "GIT_AUTHOR_EMAIL": "41898282+github-actions[bot]@users.noreply.github.com",
+                   "GIT_COMMITTER_EMAIL": "41898282+github-actions[bot]@users.noreply.github.com"}
+            subprocess.run(["git", "read-tree", latest], cwd=ROOT, env=env, check=True)
+            for path, raw in files.items():
+                blob = subprocess.check_output(["git", "hash-object", "-w", "--stdin"],
+                                               cwd=ROOT, input=raw).decode().strip()
+                subprocess.run(["git", "update-index", "--add", "--cacheinfo", "100644", blob, path],
+                               cwd=ROOT, env=env, check=True)
+            tree = subprocess.check_output(["git", "write-tree"], cwd=ROOT, env=env, text=True).strip()
+            message = ("Preserve exact bounded Frankl arithmetic receipts\n\n"
+                       "Validate original archive digests, all staged source and object hashes, "
+                       "every-declaration audits and exact pinned stock kernel replays. "
+                       "No accepted registry or complete-conjecture status is changed.\n")
+            commit = subprocess.check_output(["git", "commit-tree", tree, "-p", latest],
+                                             cwd=ROOT, env=env, text=True, input=message).strip()
+            pushed = subprocess.run(["git", "push", "origin", commit + ":refs/heads/main"], cwd=ROOT)
+            if pushed.returncode == 0:
+                print(json.dumps({"receipt_commit": commit, "parent": latest, "files": sorted(files)}),
+                      flush=True)
+                return
+        fresh = api("/git/ref/heads/main")["object"]["sha"]
+        require(fresh != latest, "Receipt push failed without a concurrent main update")
+        print(json.dumps({"retry": attempt + 1, "new_head": fresh}), flush=True)
+    raise RuntimeError("Main moved during every bounded receipt-publication attempt")
 
 def main():
     event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text())
