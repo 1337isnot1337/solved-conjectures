@@ -251,5 +251,77 @@ class FinalCompositionProtocol(unittest.TestCase):
                 gate.checked_set(values, ["Conjectures.Fixture"], "Test inventory")
 
 
+    def raw_audit_fixture(self):
+        import json
+        import audit_lean_owned_extension as owned_audit
+        modules = ["Conjectures.Dependency", "Conjectures.Assembly"]
+        fresh = ["Conjectures.Assembly"]
+        hidden = "_private.Conjectures.Dependency.0.hidden"
+        endpoint = "Assembly.endpoint"
+        model = {"source_sha256": {module: "1" * 64 for module in modules},
+                 "required_by_module": {fresh[0]: [endpoint]}}
+        records = []
+        for module, name, private in [(modules[0], hidden, True), (modules[1], endpoint, False)]:
+            records.append({"tag": "import", "module": module, "owned": True})
+            records.append({"tag": "module", "module": module, "modern": True,
+                            "import_all": True, "has_data": True, "names": [name],
+                            "private_count": int(private)})
+            records.append({"tag": "declaration", "name": name, "owner": module,
+                            "kind": "definition" if private else "theorem",
+                            "private_user_name": "Dependency.hidden" if private else None,
+                            "by_module": True, "by_serialized": True, "axioms": []})
+        records.append({"tag": "required", "name": endpoint, "owner": fresh[0]})
+        records.append({"tag": "passed", "imported_modules": 2, "owned_modules": 2,
+                        "declarations": 2, "theorems": 1, "private_declarations": 1,
+                        "raw_declarations": 2, "required_theorems": 1,
+                        "allowed_axioms": list(owned_audit.ALLOWED)})
+        def render(rows):
+            return "\n".join(owned_audit.MARKER + json.dumps(row) for row in rows)
+        return model, modules, fresh, records, render
+
+    def test_full_audit_keeps_dependency_without_named_endpoint(self):
+        model, modules, fresh, records, render = self.raw_audit_fixture()
+        required = gate.full_audit_requirements(model, modules, fresh)
+        self.assertEqual(required[modules[0]], [])
+        result = gate.validate_full_audit(render(records), model, modules, fresh)
+        self.assertEqual(result["summary"]["owned_modules"], 2)
+        self.assertEqual(result["summary"]["private_declarations"], 1)
+
+    def test_full_audit_rejects_omitted_dependency_owned_coverage(self):
+        model, modules, fresh, records, render = self.raw_audit_fixture()
+        records = [row for row in records
+                   if not (row["tag"] == "module" and row["module"] == modules[0])]
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(records), model, modules, fresh)
+
+    def test_full_audit_rejects_missing_serialized_dependency_private(self):
+        model, modules, fresh, records, render = self.raw_audit_fixture()
+        records = [row for row in records
+                   if not (row["tag"] == "declaration" and row["owner"] == modules[0])]
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(records), model, modules, fresh)
+
+    def test_full_audit_rejects_dependency_without_import_all(self):
+        model, modules, fresh, records, render = self.raw_audit_fixture()
+        next(row for row in records
+             if row["tag"] == "module" and row["module"] == modules[0])["import_all"] = False
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(records), model, modules, fresh)
+
+    def test_full_audit_rejects_unapproved_dependency_axiom(self):
+        model, modules, fresh, records, render = self.raw_audit_fixture()
+        next(row for row in records
+             if row["tag"] == "declaration" and row["owner"] == modules[0])["kind"] = "axiom"
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(records), model, modules, fresh)
+
+    def test_full_audit_rejects_dependency_using_unapproved_axiom(self):
+        model, modules, fresh, records, render = self.raw_audit_fixture()
+        next(row for row in records
+             if row["tag"] == "declaration" and row["owner"] == modules[0])["axioms"] = ["Extra.axiom"]
+        with self.assertRaises(ValueError):
+            gate.validate_full_audit(render(records), model, modules, fresh)
+
+
 if __name__ == "__main__":
     unittest.main()

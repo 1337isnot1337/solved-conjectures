@@ -2,9 +2,10 @@
 """Verify the final span-four theorem from exact passed component objects.
 
 Each dependency keeps its original source, all-owned audit and stock replay.
-All reused bytes and every overlap are checked. Only the two assembly modules
-are freshly compiled, audited and replayed here. This is a composed theorem
-check, not a fresh replay of the complete accepted package.
+All reused bytes and every overlap are checked. The complete project closure
+receives a fresh all-owned/raw-private audit. Only the two assembly modules
+are freshly compiled and stock-replayed. The dependency replay receipts remain
+part of the composed theorem evidence.
 """
 from __future__ import annotations
 
@@ -665,6 +666,20 @@ def assert_sources_and_helpers(model, stage=None):
                 "A configuration/helper changed during the gate: " + path)
 
 
+def full_audit_requirements(model, modules, fresh):
+    """Empty dependency endpoint lists never remove owned declarations."""
+    checked_set(modules, model["source_sha256"], "Full audit project closure")
+    checked_set(fresh, model["required_by_module"], "Fresh endpoint owner inventory")
+    require(set(fresh) <= set(modules), "An endpoint owner is outside the audit closure")
+    return {module: model["required_by_module"].get(module, []) for module in modules}
+
+
+def validate_full_audit(text, model, modules, fresh):
+    import audit_lean_owned_extension as owned_audit
+    required = full_audit_requirements(model, modules, fresh)
+    return owned_audit.validate_log(text, modules, modules, required)
+
+
 def verify(model, modules, fresh, stage):
     import audit_lean_owned_extension as owned_audit
     require(readiness(model)["ready"], "All five bound dependency runs must pass")
@@ -742,7 +757,8 @@ def verify(model, modules, fresh, stage):
             for suffix, digest in final_objects[module].items():
                 frozen["lib/lean/" + stem + suffix] = digest
         audit_name = "FinalSpanFourAudit.lean"
-        audit_raw = owned_audit.audit_source(modules, fresh, model["required_by_module"]).encode()
+        audit_required = full_audit_requirements(model, modules, fresh)
+        audit_raw = owned_audit.audit_source(modules, modules, audit_required).encode()
         common.freeze_bytes(stage, "src/" + audit_name, audit_raw, frozen)
         command = [str(compiler / "bin/lean"), "-j1", "-M4500", "-DwarningAsError=true", audit_name]
         audit = orbit.profile(command, stage / "src", environment,
@@ -751,11 +767,21 @@ def verify(model, modules, fresh, stage):
         save()
         common.strict_profile(audit, toolchain, audit_name)
         log_text = Path(audit["log"]).read_text()
-        details = owned_audit.validate_log(log_text, modules, fresh, model["required_by_module"])
+        details = validate_full_audit(log_text, model, modules, fresh)
+        inventory_raw = encoded(details)
+        common.freeze_bytes(stage, "declaration-inventory.json", inventory_raw, frozen)
         audit.update({"source_sha256": sha(audit_raw), "all_owned_declarations_audited": True,
-                      "owned_modules": fresh, "imported_project_modules": modules,
+                      "owned_modules": modules, "imported_project_modules": modules,
+                      "required_by_module": audit_required,
+                      "full_project_closure_audited": True,
+                      "exact_raw_private_visibility": details["exact_owned_raw_private_visibility"],
+                      "complete_serialized_private_import": True,
+                      "declaration_inventory_sha256": sha(inventory_raw),
                       "explicit_import_all_owned_roots": True, "inventory": details})
         frozen["logs/final-owned-audit.log"] = audit["log_sha256"]
+        progress_path = "progress/final-owned-audit.json"
+        common.freeze_bytes(stage, progress_path, (stage / progress_path).read_bytes(), frozen)
+        audit["progress_sha256"] = frozen[progress_path]
         common.assert_frozen(stage, frozen)
         replayed = []
         for module in fresh:
@@ -792,6 +818,7 @@ def verify(model, modules, fresh, stage):
         common.assert_frozen(stage, frozen)
         receipt.update({
             "status": "passed", "all_frozen_hashes_unchanged": True,
+            "complete_project_raw_private_audit": True,
             "complete_initial_graph_checked": True,
             "complete_period_7_to_10_transport_checked": True,
             "complete_residual_tail_checked": True,
@@ -803,7 +830,7 @@ def verify(model, modules, fresh, stage):
     finally:
         save()
     print(json.dumps({"status": "passed", "root": model["root"],
-        "imported_modules": len(modules), "fresh_modules": fresh,
+        "imported_modules": len(modules), "audited_modules": len(modules), "fresh_modules": fresh,
         "required_endpoints": sum(map(len, model["required_by_module"].values())),
         "receipt_sha256": sha((stage / "receipt.json").read_bytes())}), flush=True)
 

@@ -2074,7 +2074,14 @@
       "dependency_private_count": 41866,
       "dependency_required_count": 3659,
       "excluded_modules": [],
-      "binding": null,
+      "binding": {
+        "run_id": 44541216616,
+        "head_sha": "dab1603772bbb2bba21a9196a3c90049b0e44850",
+        "artifact_id": 14538287799,
+        "artifact_name": "frankl-transport-results-composed",
+        "archive_sha256": "1bf553c264359ef5929b9f53dd4a97786c0153e5c1e65f4cf7f5097ceb77e428",
+        "receipt_sha256": "dfa590d7e724123393a70c10f3078e497a31c341a9f5c78a1cab66d42690e070"
+      },
       "compressed_limit": 2147483648,
       "expanded_limit": 8589934592,
       "endpoint_inventory_sha256": "c76a69db65dfc7f5de15c5e5a46706a3c3b4d0e4e377c9adf7b395de76f6abc6"
