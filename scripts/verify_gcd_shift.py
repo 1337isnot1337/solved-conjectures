@@ -186,7 +186,7 @@ example :
 example :
     ∀ (a d : ℕ), 0 < d → ∀ (x r : ℝ) (N : ℕ),
       2 * (d / Nat.gcd a d : ℕ) * r ≤ (N : ℝ) →
-        ((Finset.range d).filter fun j =>
+        ((Finset.range d).filter fun j : ℕ =>
           Loneliness.distance (x + (a : ℝ) * j / d) < r).card ≤ Nat.gcd a d * N :=
   Loneliness.GcdShift.openBadShifts_card_le
 '''
