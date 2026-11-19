@@ -23,6 +23,7 @@ on:
           - assembly
           - subgroup
           - patterns
+          - pattern-reduction
   push:
     paths:
       - 'lean/Conjectures/HadamardBorder*.lean'

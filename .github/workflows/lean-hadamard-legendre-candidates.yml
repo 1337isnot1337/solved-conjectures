@@ -14,11 +14,15 @@ on:
           - centering
           - arithmetic
           - odd-degree
+          - fourier
+          - cyclotomic
+          - inversion
   push:
     paths:
       - 'lean/Conjectures/HadamardLegendre*.lean'
       - 'lean/Conjectures/HadamardBorderNormalizationTransportOps.lean'
       - 'lean/Conjectures/HadamardAutomorphismArithmeticBasic.lean'
+      - 'lean/Conjectures/HadamardAutomorphismFourier.lean'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
@@ -32,6 +36,7 @@ on:
       - 'lean/Conjectures/HadamardLegendre*.lean'
       - 'lean/Conjectures/HadamardBorderNormalizationTransportOps.lean'
       - 'lean/Conjectures/HadamardAutomorphismArithmeticBasic.lean'
+      - 'lean/Conjectures/HadamardAutomorphismFourier.lean'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'

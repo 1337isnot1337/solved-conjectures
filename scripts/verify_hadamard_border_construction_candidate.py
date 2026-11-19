@@ -124,9 +124,13 @@ TASKS = {
         'HadamardBorderConstruction.exists_hadamard_fin_of_subgroup_correlation',
         'HadamardBorderConstruction.exists_hadamard_2396_of_subgroup_correlation',
     ]),
+    'pattern-reduction': ('Conjectures.HadamardBorderPatternReduction', [
+        'HadamardBorderConstruction.exists_pattern_of_odd_equation',
+        'HadamardBorderConstruction.exists_normalized_sign_rows_with_pattern',
+    ]),
 }
 
-DEFAULT_TASKS = ("subgroup", "patterns")
+DEFAULT_TASKS = ("subgroup", "pattern-reduction")
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-border-construction-candidates.yml',
  'lean/lake-manifest.json',

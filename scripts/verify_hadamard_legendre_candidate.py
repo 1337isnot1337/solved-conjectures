@@ -49,9 +49,29 @@ TASKS = {
         'HadamardLegendre.even_finrank_of_sum_two_squares_599',
         'HadamardLegendre.not_sum_two_squares_599_of_odd_finrank',
     ]),
+    'fourier': ('Conjectures.HadamardLegendreFourier', [
+        'HadamardLegendre.fourierSum_conjugate_mul',
+        'HadamardLegendre.pair_fourier_norm',
+        'HadamardLegendre.fourierSum_fixed_of_invariant',
+        'HadamardLegendre.invariant_pair_fourier_squares',
+    ]),
+    'cyclotomic': ('Conjectures.HadamardLegendreCyclotomic', [
+        'HadamardLegendre.cyclotomicConjugation_order',
+        'HadamardLegendre.realFixedField_odd_finrank',
+        'HadamardLegendre.realFixedField_no_two_squares_599',
+        'HadamardLegendre.cyclotomicCharacter_nontrivial',
+        'HadamardLegendre.cyclotomicConjugation_character',
+    ]),
+    'inversion': ('Conjectures.HadamardLegendreInversion', [
+        'HadamardLegendre.invariant_pair_fourier_squares',
+        'HadamardLegendre.realFixedField_odd_finrank',
+        'HadamardLegendre.realFixedField_no_two_squares_599',
+        'HadamardLegendre.no_legendre_inverted_character',
+        'HadamardLegendre.no_legendre_inverting_prime_quotient',
+    ]),
 }
 
-DEFAULT_TASKS = ("centering", "odd-degree")
+DEFAULT_TASKS = ("centering", "inversion")
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-legendre-candidates.yml',
  'lean/lake-manifest.json',
