@@ -961,8 +961,8 @@ The seven-speed literal check retains the six-speed runner bound and does not
 prove initial-support exhaustiveness. The multiplicity and orbit interfaces
 retain their terminal and covering hypotheses. The byte evaluator has a
 universal equality proof; its interrupted benchmark supplies no speedup result.
-The separate prime-251 closed-lift gate and bounded initial-cut pilot remain
-candidates until their own complete gates pass. The merged accepted package
+The separate prime-251 closed-lift gate and bounded initial-cut pilot have
+passed their exact component gates; their limited scopes are recorded below. The merged accepted package
 still requires its separate complete source, audit and stock-replay run.
 
 ## Order-nine automorphism subgroups and orbits
@@ -983,3 +983,31 @@ preserved passing evidence. [Scope, exact receipts, and both outcomes](verificat
 
 This registers two auxiliary modules. The length-1197 order-27 exclusion and
 the finite quotient/no-lift packet remain outstanding.
+
+## Initial cut pilot and prime-251 binary lifts, 19 November 2026
+
+Two further component gates passed from source
+`8abe17f1b329ca1df0ae81f4e0b2c4425d1b03a6` and are registered with their exact
+checked sources. The [scope and preserved evidence](verification/modular-cut-and-closed-lift-components-20261119.md)
+record the source, all-owned/private declaration audit, and stock-kernel checks.
+
+The cut pilot passed its complete 53-module closure and 54 required endpoints
+in [run 44577155795](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44577155795).
+It proves the complete small initial list for five speeds, denominator six and
+prime eleven, plus the validity of all 19 prime-251 rows and only cuts 0 through
+3 of the minimum-pair-four root. Exactly 30 generated sources were compiled,
+audited, replayed and added. The other 105 generated sources remain outside
+this accepted scope. Prime-251 initial-support coverage is still incomplete.
+
+The closed binary-lift component passed 33 modules and 23 required endpoints
+in [run 44577160577](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44577160577).
+It checks all 19 ordered prime-251 roots, 2,451 states and 19 complete
+128-child binary branches, to maximum depth two. Its classification theorem
+retains the six-speed runner bound and the premise that the tuple is
+represented by one of those roots. It does not establish initial-support
+coverage or the full seven-speed classification.
+
+Registration preserves all earlier entries and adds four imports, 68 audit
+names and 33 explicit prebuild/replay modules. No result-directory completion
+status changes. A complete merged-package source, audit and kernel replay
+remains a separate verification obligation.
