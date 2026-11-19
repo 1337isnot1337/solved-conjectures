@@ -344,6 +344,8 @@ The [nine-runner equality classification](../results/tight-eight-speeds/PROOF.md
 
 The [ten-runner equality classification](../results/tight-nine-speeds/PROOF.md) has a written computer-assisted proof and an exhaustive verifier. Its Lean formalization is open.
 
+The [seven-speed spectrum classification](../results/seven-speed-spectrum/PROOF.md) has a written computer-assisted proof and an exhaustive verifier. Its Lean formalization is open.
+
 ## General finite CUT decision theorem
 
 [`CutGeneralDecision.lean`](../lean/Conjectures/CutGeneralDecision.lean),
