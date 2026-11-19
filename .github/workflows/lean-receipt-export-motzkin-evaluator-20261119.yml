@@ -28,7 +28,7 @@ jobs:
                       redirected.remove_header('Authorization')
                   return redirected
           opener = urllib.request.build_opener(PublicArtifactRedirect())
-          specs = [{"task":"motzkin-evaluator","artifact":14522030744,"digest":"4cc7787fc6c4a140cf9a3525dbd96192700f4ef8c078cb974b692505daa61920","modules":65,"required":15,"path":"docs/verification/motzkin-evaluator-df244bd9.json"}]
+          specs = [{"task":"evaluator","artifact":14522030744,"digest":"4cc7787fc6c4a140cf9a3525dbd96192700f4ef8c078cb974b692505daa61920","modules":65,"required":15,"path":"docs/verification/motzkin-evaluator-df244bd9.json"}]
           for spec in specs:
               url = ('https://api.github.com/repos/' + os.environ['GITHUB_REPOSITORY']
                      + '/actions/artifacts/' + str(spec['artifact']) + '/zip')
