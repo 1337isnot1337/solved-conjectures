@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-19 — Partial results for three open problems
+
+Published the two Frankl generator results, the two-speed Lonely Runner insertion theorem and a sharp bound for abelian covers in the Erdős–Gyárfás search. Each entry gives its hypotheses and reproducible checks. [Catalogue](CONTENTS.md#partial-results-on-open-problems)
+
 ## 2026-11-19 — Formal generating function and cyclic Motzkin formulas
 
 - Registered the exact coefficientwise generating function after its
@@ -15,6 +19,7 @@
   coefficients, coefficient rescaling, the actual supported integral limit,
   exhaustive Motzkin relation bases, rational interval witnesses, the fixed
   character window, and the final sharp coefficient theorem.
+
 
 ## 2026-11-19 — Partial results at Hadamard order 2396
 
