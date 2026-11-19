@@ -31,7 +31,8 @@ theorem byteCount_eq (n : ℕ) : byteCount n = Fast.count (n % 256) :=
 
 private theorem fast_count_parity (n : ℕ) :
     Fast.count n = Fast.count (n / 2) + n % 2 := by
-  refine Nat.bitCasesOn n ?_
+  refine Nat.bitCasesOn (motive := fun x =>
+    Fast.count x = Fast.count (x / 2) + x % 2) n ?_
   intro b m
   rw [Fast.count_bit, Nat.bit_div_two, Nat.bit_mod_two]
   cases b <;> rfl
