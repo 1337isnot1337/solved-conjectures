@@ -1,0 +1,873 @@
+{
+  "accepted_gate_changed": false,
+  "all_inputs_unchanged": true,
+  "axiom_audit": {
+    "all_owned_declarations_audited": true,
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-j1",
+      "-M4500",
+      "-DwarningAsError=true",
+      "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/lean/AllOwnedProofAudit.lean"
+    ],
+    "declaration_inventory_sha256": "5707ff8c4fc957a11f959ab43114cdcdbe51cf029dc88240683ac42302b9ab1e",
+    "exact_raw_private_visibility": true,
+    "expected_failure": false,
+    "log_sha256": "1a0a2e983c03e82cb751c2eaa49a03a90cbf6b57e4aad968818c2bb959e5f827",
+    "metrics": {
+      "peak_active_builds": 1,
+      "sampled_peak_processes": 2,
+      "sampled_peak_rss_kib": 1952884,
+      "sampled_peak_threads": 16
+    },
+    "results": [
+      {
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-j1",
+          "-M4500",
+          "-DwarningAsError=true",
+          "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/lean/AllOwnedProofAudit.lean"
+        ],
+        "elapsed_seconds": 2.494724660000003,
+        "exit_code": 0,
+        "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/all-owned-audit.log",
+        "log_sha256": "1a0a2e983c03e82cb751c2eaa49a03a90cbf6b57e4aad968818c2bb959e5f827",
+        "module": "all-owned-audit",
+        "sampled_peak_process_tree_high_water_kib": 1959568
+      }
+    ],
+    "source_sha256": "745a2cc34aceb6004efabdcc1b60b4c9014cf5ccfcc1a04ad725a4139f116a80",
+    "summary": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 23,
+      "modules": 7,
+      "private_declarations": 5,
+      "raw_declarations": 23,
+      "required": 6,
+      "tag": "passed",
+      "theorems": 10
+    }
+  },
+  "elapsed_seconds": 28.274212933000015,
+  "evidence_sha256": {
+    "all-owned-audit.log": "1a0a2e983c03e82cb751c2eaa49a03a90cbf6b57e4aad968818c2bb959e5f827",
+    "declaration-inventory.json": "5707ff8c4fc957a11f959ab43114cdcdbe51cf029dc88240683ac42302b9ab1e",
+    "negative-private-definition.log": "12858f9cfc898143e81c1a5373c552664c80461afe546dd83069b50919c3c31f",
+    "protocol-tests.log": "b53b61335ca4d77d039dcd8ebc9b87ab52ae98f80f44b38be5fcc31929537321",
+    "replay-1-command.log": "c6c9d5b1d103c54b8172dcf916f9e92579c0c283c542aed1b08ab10f37ac2b81",
+    "replay-1/kernel.log": "7ae6bfdbe0c4cd43ec26a9ba1928b069e15d2b334aae19a6a91ace4f9ead8588",
+    "replay-1/receipt.json": "92cd65c513af84853591236ac0e59e7401f69790019cf76f4d5b372480c140f0",
+    "source-command.log": "c7c73bc6a3799d004ae141783bfedb202707925290f91cd5afe9114c159fa8d5",
+    "source/Conjectures.Base.log": "458f45be2592c01cc609fe3b43c86cbeb9a604e1a6b4eaa3963e837790389a56",
+    "source/Conjectures.Left.log": "b9f9d1066a74e632844e2fb72236b6b9d8ae02cab37147d0c10eac737ad1d06c",
+    "source/Conjectures.Right.log": "824f056de5d46057f7f85e111688dbd9f26865fba3d70a58bd32bd2f008206bc",
+    "source/Conjectures.Top.log": "02ea4e50aa865ee84f3d78868176cce1d97597a8f49cba8d8428b5c7bddd7675",
+    "source/Conjectures.log": "367a322b65a4bdf6471a4e8fb63210a81753fdbe0778753485c18986aba55770",
+    "source/Solitaire.Base.log": "1d366f1acd32811af9cd2a04614afac432d974cedb159d44ae08a60cdf78107d",
+    "source/Solitaire.log": "d07b4e1a97dba65b447e39c72a531cfb74046398e1fa1be6eec3f6bc3f5e7ac7",
+    "source/external-preflight.log": "b218ef72499ab53034c5ebbeba93d390c14eeaea957f9e082af567811152d7ba",
+    "source/project-clean.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source/receipt.json": "93398ce87a292c93e20f33f6c61618ba93f44e486ee915cf9d403777a3129412",
+    "source/toolchain-prefix.log": "0d556f7862d5dee71b094d00c91b3e9e69bffd322795555829f436da34018644",
+    "source/toolchain.log": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+  },
+  "git_head": "7e516bfbdd0bb1a39c88d3df249f898a94819157",
+  "input_sha256": {
+    ".github/workflows/lean-all-owned-candidate.yml": "fd9879c6ac29587fb776cb873343f0170aa0a79071e498a88bef447759334654",
+    ".github/workflows/lean-parallel-candidate.yml": "35356b452bc52bcaaa45b95e4068807b69d5cc7e7e9e71d25d4f5d9bbecf0219",
+    "docs/lean-all-owned-candidate-sources.json": "1f76f1142ed5cea3d4644502b2ed11aa46899dfcc824096ea729def379a3293e",
+    "docs/lean-parallel-candidate-sources.json": "6ad32d30f919ad414ed9a61fc600f48df706084fe71a7308ba4eb62d722326f8",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/replay_lean_parallel.py": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225",
+    "scripts/test_lean_all_owned.py": "920788461ebd17dd3bd044656985be47699845efe4970970b387b35f010b0bec",
+    "scripts/test_lean_parallel.py": "53b526e6ce974893f78fb464aa77d002b82b2441c96a3d41a521486bba215700",
+    "scripts/verify_lean.sh": "2671d24ecb1c06913a0b4f185206710cc0c8e121a268157fc91b6970b1f83c0e",
+    "scripts/verify_lean_all_owned_candidate.py": "ec7782d9d24a71290137f32bb4672f151ffb0916eba7b6326d62241a37937bae",
+    "scripts/verify_lean_parallel_candidate.py": "6545556b44d03f51a40a1c598b4c9f304f2ccf0eebd3e3f5c9544047d2aec522"
+  },
+  "isolated_configuration": {
+    "allow_legacy_module_imports": true,
+    "derived_sha256": "251ce508da753d024774c4f39acfe7ffb6c1864f9547d2a2757b84f1004b77f8",
+    "derived_utf8": "allowNonModules = true\nname = \"solved_conjectures\"\nversion = \"0.1.0\"\ndefaultTargets = [\"Solitaire\", \"Conjectures\", \"ProofAudit\"]\n\n[[require]]\nname = \"mathlib\"\ngit = \"https://github.com/leanprover-community/mathlib4.git\"\nrev = \"v4.35.0\"\n\n[[lean_lib]]\nname = \"Solitaire\"\n\n[[lean_lib]]\nname = \"Conjectures\"\nmoreLeanArgs = [\"-j1\", \"-M4500\"]\n\n[[lean_lib]]\nname = \"ProofAudit\"\n",
+    "lake_warning_failure_retained": true,
+    "only_change": "top-level allowNonModules = true",
+    "original_sha256": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "original_utf8": "name = \"solved_conjectures\"\nversion = \"0.1.0\"\ndefaultTargets = [\"Solitaire\", \"Conjectures\", \"ProofAudit\"]\n\n[[require]]\nname = \"mathlib\"\ngit = \"https://github.com/leanprover-community/mathlib4.git\"\nrev = \"v4.35.0\"\n\n[[lean_lib]]\nname = \"Solitaire\"\n\n[[lean_lib]]\nname = \"Conjectures\"\nmoreLeanArgs = [\"-j1\", \"-M4500\"]\n\n[[lean_lib]]\nname = \"ProofAudit\"\n",
+    "public_configuration_unchanged": true,
+    "scope": "The explicit Lake compatibility opt-in suppresses its legacy-import advisory; all other source warnings remain fatal. This is not an unchanged-configuration replay.",
+    "source_path": "lean/lakefile.toml"
+  },
+  "isolated_git_head": "1ee0a59e6081eac65e712ee264ec356276d6149e",
+  "isolated_inputs": {
+    "lean/AllOwnedNegativeAudit.lean": "2dde2a27c97766cfe3efbb3766c466eefbd9a699354e7a6527079f112f21ad8e",
+    "lean/AllOwnedProofAudit.lean": "745a2cc34aceb6004efabdcc1b60b4c9014cf5ccfcc1a04ad725a4139f116a80",
+    "lean/Conjectures.lean": "d8a81f7efb3d760acc3f49f0408b71bad76b4a0959613480b5aefbdc86f4c7bb",
+    "lean/Conjectures/Base.lean": "b513b4591ee82f2a175eeb9fa145182b49557989c61ddfdbd93ab90a3849c8b5",
+    "lean/Conjectures/Left.lean": "554bf978430ea1349748a4c4abbedf56a2506f3d93453e7610dc5bcebf9c377d",
+    "lean/Conjectures/Right.lean": "867475780c159bd6b414482ffc12524e816da38add198c3f627472369dbe94ca",
+    "lean/Conjectures/Top.lean": "d1cbecf5a8870bda879682be671814c72ad43bc01a47d257c9443a3f0d9fed63",
+    "lean/ProofAudit.lean": "db27e0c5943db827edd047a805811abb0be66b33bfe4d76dd7b57f724b3ee7a5",
+    "lean/Solitaire.lean": "f2d0342c943ef5fd4075e087a1a32d836ef739142d0d0b6c7613203b8b1b0421",
+    "lean/Solitaire/Base.lean": "09ce3cccc6dce743982d9795e27a54dc6713983cbe4d4bc6cf0a8de9a68bf62f",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "251ce508da753d024774c4f39acfe7ffb6c1864f9547d2a2757b84f1004b77f8",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "b5c834cc9eac9e0fdc07e78c6c89bd449ef92a9b5035e136a83a449cdea48232",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/replay_lean_parallel.py": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225",
+    "scripts/test_lean_all_owned.py": "920788461ebd17dd3bd044656985be47699845efe4970970b387b35f010b0bec",
+    "scripts/test_lean_parallel.py": "53b526e6ce974893f78fb464aa77d002b82b2441c96a3d41a521486bba215700",
+    "scripts/verify_lean.sh": "2671d24ecb1c06913a0b4f185206710cc0c8e121a268157fc91b6970b1f83c0e",
+    "scripts/verify_lean_all_owned_candidate.py": "ec7782d9d24a71290137f32bb4672f151ffb0916eba7b6326d62241a37937bae",
+    "scripts/verify_lean_parallel_candidate.py": "6545556b44d03f51a40a1c598b4c9f304f2ccf0eebd3e3f5c9544047d2aec522"
+  },
+  "isolated_layout_validator": {
+    "derived_sha256": "b5c834cc9eac9e0fdc07e78c6c89bd449ef92a9b5035e136a83a449cdea48232",
+    "derived_utf8": "#!/usr/bin/env python3\n\"\"\"Select the unchanged full Lean gate from the accepted roots' import closure.\n\nOnly a successfully read diff and a completely understood import header can\nproduce run_full=false. This script does not verify proofs or change the\nsource, axiom-audit, or kernel-replay commands in verify_lean.sh.\n\"\"\"\n\nfrom pathlib import Path, PurePosixPath\nimport argparse\nimport json\nimport os\nimport re\nimport subprocess\nimport tempfile\nimport tomllib\nimport unittest\nfrom unittest.mock import patch\n\nfrom replay_lean import MODULE, header_tokens\n\n\nROOTS = (\"Solitaire\", \"Conjectures\", \"ProofAudit\")\nROOT_PATHS = {f\"lean/{name}.lean\" for name in ROOTS}\n# Preserve the public input list used by the existing selection controls.\nGATE_INPUTS = {\n    \".github/workflows/lean.yml\", \"scripts/verify_lean.sh\",\n    \"scripts/replay_lean.py\", \"scripts/plan_accepted_lean.py\",\n    \"scripts/plan_lean_candidates.py\", \"scripts/verify_lean_candidate.py\",\n    \"scripts/test_plan_accepted_lean.py\", \"scripts/test_replay_lean.py\",\n    \"lean/lean-toolchain\", \"lean/lakefile.toml\", \"lean/lake-manifest.json\",\n}\nCONFIG_PATHS = {\n    \"lean/lean-toolchain\", \"lean/lakefile.toml\", \"lean/lakefile.lean\",\n    \"lean/lake-manifest.json\", \"lean-toolchain\", \"lakefile.toml\",\n    \"lakefile.lean\", \"lake-manifest.json\", \".gitattributes\", \".gitmodules\",\n}\nEXTERNAL_NAMESPACES = {\n    \"Init\", \"Lean\", \"Std\", \"Mathlib\", \"Batteries\", \"Aesop\", \"Qq\",\n    \"ProofWidgets\", \"Cli\", \"Plausible\", \"ImportGraph\", \"LeanSearchClient\", \"Lake\",\n}\n# A known command starts the body. An unrecognized token forces the full gate.\nBODY_HEADS = {\n    \"namespace\", \"section\", \"end\", \"open\", \"export\", \"set_option\", \"attribute\",\n    \"variable\", \"universe\", \"universes\", \"def\", \"theorem\", \"lemma\", \"example\",\n    \"axiom\", \"opaque\", \"abbrev\", \"inductive\", \"structure\", \"class\", \"instance\",\n    \"initialize\", \"builtin_initialize\", \"syntax\", \"macro\", \"macro_rules\", \"elab\",\n    \"elab_rules\", \"notation\", \"infix\", \"infixl\", \"infixr\", \"prefix\", \"postfix\",\n    \"local\", \"scoped\", \"private\", \"protected\", \"noncomputable\", \"unsafe\",\n    \"partial\", \"nonrec\", \"#check\", \"#print\", \"#eval\", \"#reduce\", \"#synth\",\n}\nCOMMIT = re.compile(r\"(?:[0-9a-fA-F]{40}|[0-9a-fA-F]{64})\")\n\n\ndef imports_of(source):\n    \"\"\"Read the pinned ASCII import grammar, rejecting unknown header syntax.\"\"\"\n    tokens = iter(header_tokens(source.read_text(encoding=\"utf-8\")))\n    token = next(tokens, None)\n    if token == \"module\":\n        token = next(tokens, None)\n    if token == \"prelude\":\n        token = next(tokens, None)\n    while token is not None:\n        if token == \"public\":\n            token = next(tokens, None)\n        if token == \"meta\":\n            token = next(tokens, None)\n        if token != \"import\":\n            if token in BODY_HEADS or (token is not None and token.startswith(\"@[\")):\n                return\n            raise ValueError(f\"Unknown Lean header token in {source.name}: {token!r}\")\n        module = next(tokens, None)\n        if module == \"all\":\n            module = next(tokens, None)\n        if module is None or not MODULE.fullmatch(module):\n            raise ValueError(f\"Unsupported import in {source.name}: {module!r}\")\n        yield module\n        token = next(tokens, None)\n\n\ndef check_layout(repo):\n    \"\"\"Reject configurations that could move sources outside the parsed closure.\"\"\"\n    lean = repo / \"lean\"\n    if (lean / \"lakefile.lean\").exists():\n        raise ValueError(\"Unsupported or indirect Lake configuration\")\n    for name in (\"lakefile.toml\", \"lake-manifest.json\", \"lean-toolchain\"):\n        source = lean / name\n        if source.resolve() != source or not source.is_file():\n            raise ValueError(f\"Missing or indirect configuration: {name}\")\n    if (lean / \"lean-toolchain\").read_text(encoding=\"utf-8\").strip() != \"leanprover/lean4:v4.35.0\":\n        raise ValueError(\"The import parser does not cover this Lean toolchain\")\n    with (lean / \"lakefile.toml\").open(\"rb\") as stream:\n        config = tomllib.load(stream)\n    if \"allowNonModules\" in config and config[\"allowNonModules\"] is not True:\n        raise ValueError(\"Candidate allowNonModules must be the boolean true\")\n    if set(config) - {\"name\", \"version\", \"defaultTargets\", \"require\", \"lean_lib\", \"allowNonModules\"}:\n        raise ValueError(\"Unsupported package layout or generated build target\")\n    targets = config.get(\"defaultTargets\")\n    if not isinstance(targets, list) or sorted(targets) != sorted(ROOTS):\n        raise ValueError(\"Lake default targets differ from the accepted roots\")\n    libraries = config.get(\"lean_lib\", [])\n    if sorted(lib[\"name\"] for lib in libraries) != sorted(ROOTS):\n        raise ValueError(\"Unsupported library roots\")\n    for lib in libraries:\n        if set(lib) - {\"name\", \"moreLeanArgs\"} or any(\n                not isinstance(arg, str) or not re.fullmatch(r\"-[jM][1-9][0-9]*\", arg)\n                for arg in lib.get(\"moreLeanArgs\", [])):\n            raise ValueError(\"Unsupported library layout or compiler arguments\")\n    requirements = config.get(\"require\", [])\n    if len(requirements) != 1 or set(requirements[0]) != {\"name\", \"git\", \"rev\"}:\n        raise ValueError(\"Unsupported package requirements\")\n    required = requirements[0]\n    if (required[\"name\"] != \"mathlib\"\n            or required[\"git\"] != \"https://github.com/leanprover-community/mathlib4.git\"\n            or not isinstance(required[\"rev\"], str)):\n        raise ValueError(\"Only the pinned external Mathlib requirement is supported\")\n    manifest = json.loads((lean / \"lake-manifest.json\").read_text(encoding=\"utf-8\"))\n    if (set(manifest) - {\"version\", \"packagesDir\", \"packages\", \"name\", \"lakeDir\", \"fixedToolchain\"}\n            or manifest.get(\"version\") != \"1.3.0\"\n            or manifest.get(\"packagesDir\") != \".lake/packages\"\n            or manifest.get(\"lakeDir\") != \".lake\"):\n        raise ValueError(\"Unsupported dependency manifest layout\")\n    packages = manifest.get(\"packages\", [])\n    names = [package[\"name\"] for package in packages]\n    if \"mathlib\" not in names or len(names) != len(set(names)):\n        raise ValueError(\"Missing or duplicate dependency packages\")\n    for package in packages:\n        if (set(package) - {\"url\", \"type\", \"subDir\", \"scope\", \"rev\", \"name\",\n                            \"manifestFile\", \"inputRev\", \"inherited\", \"configFile\"}\n                or package.get(\"type\") != \"git\" or package.get(\"subDir\") is not None\n                or not re.fullmatch(r\"[A-Za-z_][A-Za-z0-9_]*\", package[\"name\"])\n                or not package.get(\"url\", \"\").startswith(\"https://\")\n                or not COMMIT.fullmatch(package.get(\"rev\", \"\"))\n                or package.get(\"manifestFile\") != \"lake-manifest.json\"\n                or package.get(\"configFile\") not in (\"lakefile.toml\", \"lakefile.lean\")):\n            raise ValueError(\"Unsupported local or indirect dependency package\")\n\n\ndef source_inputs(lean):\n    \"\"\"Read the source closure in the default library layout.\"\"\"\n    sources, possible_paths, visited = set(), set(), set()\n\n    def visit(module):\n        if module in visited:\n            return\n        visited.add(module)\n        relative = \"lean/\" + module.replace(\".\", \"/\") + \".lean\"\n        possible_paths.add(relative)\n        source = lean / (module.replace(\".\", \"/\") + \".lean\")\n        if source.resolve() != source:\n            raise ValueError(f\"Indirect source path: {relative}\")\n        if not source.is_file():\n            if module in ROOTS or module.split(\".\", 1)[0] not in EXTERNAL_NAMESPACES:\n                raise ValueError(f\"Missing local source or unknown external import: {module}\")\n            return\n        sources.add(relative)\n        for imported in imports_of(source):\n            visit(imported)\n\n    for root in ROOTS:\n        visit(root)\n    return sources, possible_paths\n\n\ndef accepted_inputs(repo):\n    \"\"\"Return the closure only after checking the actual package layout.\"\"\"\n    check_layout(repo)\n    return source_inputs(repo / \"lean\")\n\n\ndef always_full(path):\n    if path in ROOT_PATHS or path in CONFIG_PATHS or path in GATE_INPUTS:\n        return True\n    # Preserve the existing gate for generated data and other package inputs.\n    if path.startswith(\"lean/\") and not path.endswith(\".lean\"):\n        return True\n    if path.startswith((\".github/workflows/\", \".github/actions/\", \"lean/.lake/\")):\n        return True\n    name = PurePosixPath(path).name\n    return path.startswith(\"scripts/\") and (\n        name.startswith((\"verify_\", \"plan_\", \"replay_\", \"test_replay_\", \"test_plan_\")))\n\n\ndef _select(lean, files, event_name=None, diff_reason=None, *, check_config):\n    result = {\"run_full\": True, \"reason\": \"\", \"changed_files\": [],\n              \"accepted_source_count\": None, \"matched_files\": []}\n    if event_name == \"workflow_dispatch\":\n        result[\"reason\"] = \"Manual dispatch always runs the full accepted gate\"\n        return result\n    if files is None:\n        result[\"reason\"] = diff_reason or \"Changed-file diff is unavailable\"\n        return result\n    if any(not isinstance(path, str) or not path or \"\\0\" in path\n           or PurePosixPath(path).is_absolute()\n           or any(part in (\".\", \"..\") for part in path.split(\"/\"))\n           or PurePosixPath(path).as_posix() != path for path in files):\n        result[\"reason\"] = \"Changed-file diff contains an unsupported path\"\n        return result\n    result[\"changed_files\"] = sorted(set(files))\n    forced = sorted(path for path in files if always_full(path))\n    if forced:\n        result.update(reason=\"Accepted root, pinned configuration, or verification code changed\",\n                      matched_files=forced)\n        return result\n    try:\n        sources, possible_paths = (accepted_inputs(lean.parent) if check_config\n                                   else source_inputs(lean))\n    except (OSError, UnicodeError, ValueError, TypeError, KeyError, AttributeError, RecursionError) as error:\n        result[\"reason\"] = f\"Accepted import closure is unavailable: {error}\"\n        return result\n    result[\"accepted_source_count\"] = len(sources)\n    matched = sorted(set(files) & possible_paths)\n    if matched:\n        result.update(reason=\"A source in the accepted import closure changed\",\n                      matched_files=matched)\n    else:\n        result.update(run_full=False,\n                      reason=\"Known diff does not change accepted inputs or verification code\")\n    return result\n\n\ndef select(repo, files, event_name=None, diff_reason=None):\n    \"\"\"Production selector: validate the complete supported Lake layout.\"\"\"\n    return _select(repo.resolve() / \"lean\", files, event_name, diff_reason, check_config=True)\n\n\ndef plan(lean, changed):\n    \"\"\"Preserve the default-layout source-selection API and its existing tests.\n\n    This pure closure helper accepts a standalone source directory. The CLI\n    additionally validates the actual package configuration through select.\n    \"\"\"\n    result = _select(lean.resolve(), changed, check_config=False)\n    result[\"run\"] = result.pop(\"run_full\")\n    result[\"affected\"] = result.pop(\"matched_files\")\n    return result\n\n\ndef changed_files(repo, event_name, event_path, expected_head=None):\n    \"\"\"Read push/PR changes without fetching; unavailable history runs all gates.\"\"\"\n    if event_name not in (\"push\", \"pull_request\"):\n        return None, f\"No supported automatic diff for event {event_name!r}\"\n    try:\n        if event_path is None:\n            raise ValueError(\"GitHub event payload is unavailable\")\n        event = json.loads(event_path.read_text(encoding=\"utf-8\"))\n        base = event.get(\"before\") if event_name == \"push\" else event[\"pull_request\"][\"base\"][\"sha\"]\n        if not isinstance(base, str) or not COMMIT.fullmatch(base) or set(base) == {\"0\"}:\n            raise ValueError(\"The diff base is absent, invalid, or a new-branch zero SHA\")\n\n        def git(*args):\n            return subprocess.run([\"git\", *args], cwd=repo, check=True,\n                                  stdout=subprocess.PIPE, stderr=subprocess.PIPE,\n                                  timeout=30).stdout\n\n        if expected_head is not None:\n            if not COMMIT.fullmatch(expected_head):\n                raise ValueError(\"Invalid expected checkout SHA\")\n            if git(\"rev-parse\", \"HEAD\").decode(\"ascii\").strip().lower() != expected_head.lower():\n                raise ValueError(\"Checkout differs from the event SHA\")\n        git(\"cat-file\", \"-e\", base + \"^{commit}\")\n        raw = git(\"diff\", \"--no-ext-diff\", \"--no-textconv\", \"--no-renames\",\n                  \"--name-only\", \"-z\", base, \"HEAD\", \"--\")\n        if raw and not raw.endswith(b\"\\0\"):\n            raise ValueError(\"Git did not return a NUL-terminated path list\")\n        files = [] if not raw else raw[:-1].decode(\"utf-8\").split(\"\\0\")\n        return files, \"\"\n    except (OSError, ValueError, KeyError, TypeError, AttributeError,\n            subprocess.SubprocessError) as error:\n        return None, f\"Changed-file diff is unavailable: {error}\"\n\n\nclass SelectionTests(unittest.TestCase):\n    \"\"\"Offline tests for the selector; none invoke Lean or alter the checkout.\"\"\"\n\n    def setUp(self):\n        temporary = tempfile.TemporaryDirectory(prefix=\"accepted-plan-test-\")\n        self.addCleanup(temporary.cleanup)\n        self.repo = Path(temporary.name).resolve()\n        self.config = ('name = \"fixture\"\\nversion = \"0.1.0\"\\n'\n                       'defaultTargets = [\"Solitaire\", \"Conjectures\", \"ProofAudit\"]\\n'\n                       '[[require]]\\nname = \"mathlib\"\\n'\n                       'git = \"https://github.com/leanprover-community/mathlib4.git\"\\n'\n                       'rev = \"v4.35.0\"\\n' + ''.join(\n                           f'[[lean_lib]]\\nname = \"{name}\"\\n' for name in ROOTS))\n        self.write(\"lean/lakefile.toml\", self.config)\n        self.write(\"lean/lean-toolchain\", \"leanprover/lean4:v4.35.0\\n\")\n        self.manifest = {\n            \"version\": \"1.3.0\", \"packagesDir\": \".lake/packages\", \"lakeDir\": \".lake\",\n            \"packages\": [{\"name\": \"mathlib\", \"type\": \"git\", \"subDir\": None,\n                          \"url\": \"https://github.com/leanprover-community/mathlib4.git\",\n                          \"rev\": \"a\" * 40, \"manifestFile\": \"lake-manifest.json\",\n                          \"configFile\": \"lakefile.lean\"}],\n        }\n        self.write(\"lean/lake-manifest.json\", json.dumps(self.manifest))\n        for name, source in {\n            \"Solitaire\": \"import Solitaire.Base\\n\",\n            \"Solitaire.Base\": \"def base : Nat := 1\\n\",\n            \"Conjectures\": \"import Conjectures.A\\n\",\n            \"Conjectures.A\": \"import Conjectures.B\\nimport Mathlib.Core\\nnamespace A\\n\",\n            \"Conjectures.B\": 'def body : String := \"/-\"\\n',\n            \"ProofAudit\": \"import Conjectures\\nimport Solitaire\\n\",\n            \"Conjectures.Candidate\": \"unknown_candidate_header\\n\",\n        }.items():\n            self.write(\"lean/\" + name.replace(\".\", \"/\") + \".lean\", source)\n\n    def write(self, relative, content):\n        path = self.repo / relative\n        path.parent.mkdir(parents=True, exist_ok=True)\n        path.write_text(content, encoding=\"utf-8\")\n        return path\n\n    def test_transitive_accepted_source(self):\n        result = select(self.repo, [\"lean/Conjectures/B.lean\"])\n        self.assertTrue(result[\"run_full\"])\n        self.assertEqual(result[\"accepted_source_count\"], 6)\n        self.assertEqual(result[\"matched_files\"], [\"lean/Conjectures/B.lean\"])\n\n    def test_candidate_docs_and_known_empty_diff(self):\n        for files in ([\"lean/Conjectures/Candidate.lean\"], [\"README.md\"], []):\n            with self.subTest(files=files):\n                self.assertFalse(select(self.repo, files)[\"run_full\"])\n\n    def test_roots_config_and_gate_changes(self):\n        for path in ROOT_PATHS | CONFIG_PATHS | {\n            \".github/workflows/lean.yml\", \".github/workflows/lean-candidates.yml\",\n            \"scripts/verify_lean.sh\", \"scripts/plan_accepted_lean.py\",\n            \"scripts/replay_lean.py\", \"scripts/test_replay_lean.py\",\n        }:\n            with self.subTest(path=path):\n                self.assertTrue(select(self.repo, [path])[\"run_full\"])\n\n    def test_manual_and_unavailable_diff(self):\n        self.assertTrue(select(self.repo, [], \"workflow_dispatch\")[\"run_full\"])\n        self.assertTrue(select(self.repo, None)[\"run_full\"])\n\n    def test_pinned_header_and_lazy_body(self):\n        self.write(\"lean/Conjectures/A.lean\",\n                   \"/- outer /- import Fake.Hidden -/ -/\\nmodule\\nprelude\\n\"\n                   \"public meta import Conjectures.B\\nimport /- note -/ all\\n\"\n                   'Mathlib.Core -- comment\\ndef body := \"/-\"\\n')\n        self.assertFalse(select(self.repo, [\"README.md\"])[\"run_full\"])\n        self.assertTrue(select(self.repo, [\"lean/Conjectures/B.lean\"])[\"run_full\"])\n\n    def test_unknown_or_unfinished_header_runs_full(self):\n        for source in (\"future_header\\nimport Conjectures.B\\n\", \"import Conjectures.\u03b1\\n\",\n                       \"/- unfinished\", \"import\\n\", \"public\\n\", \"import Missing.Package\\n\"):\n            with self.subTest(source=source):\n                self.write(\"lean/Conjectures/A.lean\", source)\n                self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n\n    def test_missing_project_source_runs_full(self):\n        (self.repo / \"lean/Conjectures/B.lean\").unlink()\n        self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n\n    def test_external_shadow_path_is_an_input_even_after_deletion(self):\n        self.assertTrue(select(self.repo, [\"lean/Mathlib/Core.lean\"])[\"run_full\"])\n\n    def test_changed_root_configuration_runs_full(self):\n        self.write(\"lean/lakefile.toml\", 'defaultTargets = [\"NewRoot\"]\\n')\n        self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n\n    def test_unsupported_source_layouts_run_full_on_later_commits(self):\n        for config in (\n            'srcDir = \"relocated\"\\n' + self.config,\n            self.config + 'srcDir = \"relocated\"\\n',\n            self.config + 'roots = [\"DifferentRoot\"]\\n',\n            self.config + 'globs = [\"Generated.*\"]\\n',\n            self.config + '[[require]]\\nname = \"Local\"\\npath = \"../local\"\\n',\n            self.config + '[[lean_exe]]\\nname = \"generator\"\\n',\n            self.config + 'moreLeanArgs = [\"--load-dynlib=../plugin.so\"]\\n',\n        ):\n            with self.subTest(config=config):\n                self.write(\"lean/lakefile.toml\", config)\n                self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n\n    def test_local_manifest_dependency_and_new_toolchain_run_full(self):\n        original = json.dumps(self.manifest)\n        self.manifest[\"packages\"][0].update(type=\"path\", path=\"../local\")\n        self.write(\"lean/lake-manifest.json\", json.dumps(self.manifest))\n        self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n        self.write(\"lean/lake-manifest.json\", original)\n        self.write(\"lean/lean-toolchain\", \"leanprover/lean4:v4.99.0\\n\")\n        self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n\n    def test_indirect_source_and_unsupported_diff_paths_run_full(self):\n        source = self.repo / \"lean/Conjectures/B.lean\"\n        source.unlink()\n        source.symlink_to(self.write(\"elsewhere.lean\", \"def x := 1\\n\"))\n        self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n        for path in (\"../README.md\", \"/README.md\", \"README.md\\0\", \"./README.md\"):\n            self.assertTrue(select(self.repo, [path])[\"run_full\"])\n\n    def test_push_and_pull_request_diff(self):\n        base, head = \"a\" * 40, \"b\" * 40\n        event_path = self.repo / \"event.json\"\n\n        def git(command, **kwargs):\n            self.assertEqual(kwargs[\"cwd\"], self.repo)\n            if command[1] == \"rev-parse\":\n                output = (head + \"\\n\").encode(\"ascii\")\n            elif command[1] == \"cat-file\":\n                self.assertEqual(command[2:], [\"-e\", base + \"^{commit}\"])\n                output = b\"\"\n            else:\n                self.assertEqual(command, [\"git\", \"diff\", \"--no-ext-diff\", \"--no-textconv\",\n                                          \"--no-renames\", \"--name-only\", \"-z\", base, \"HEAD\", \"--\"])\n                output = b\"README.md\\0lean/Conjectures/Candidate.lean\\0\"\n            return subprocess.CompletedProcess(command, 0, output, b\"\")\n\n        for event_name, payload in ((\"push\", {\"before\": base}),\n                                    (\"pull_request\", {\"pull_request\": {\"base\": {\"sha\": base}}})):\n            with self.subTest(event_name=event_name), patch.object(subprocess, \"run\", side_effect=git):\n                event_path.write_text(json.dumps(payload))\n                files, reason = changed_files(self.repo, event_name, event_path, head)\n                self.assertEqual(reason, \"\")\n                self.assertFalse(select(self.repo, files, event_name)[\"run_full\"])\n\n    def test_unavailable_history_and_malformed_events_run_full(self):\n        event_path = self.write(\"event.json\", '{\"before\": \"' + \"a\" * 40 + '\"}')\n        with patch.object(subprocess, \"run\", side_effect=subprocess.CalledProcessError(128, [\"git\"])):\n            files, reason = changed_files(self.repo, \"push\", event_path)\n            self.assertTrue(select(self.repo, files, \"push\", reason)[\"run_full\"])\n        for payload in (\"{\", \"[]\", '{\"before\": \"' + \"0\" * 40 + '\"}', \"{}\"):\n            event_path.write_text(payload)\n            files, reason = changed_files(self.repo, \"push\", event_path)\n            self.assertIsNone(files)\n            self.assertTrue(select(self.repo, files, \"push\", reason)[\"run_full\"])\n\n\ndef main(argv=None):\n    parser = argparse.ArgumentParser(description=__doc__)\n    parser.add_argument(\"--repo\", type=Path, default=Path(__file__).resolve().parent.parent)\n    parser.add_argument(\"--files\", nargs=\"*\", help=\"explicit known diff, for offline checks\")\n    parser.add_argument(\"--event-name\", default=os.environ.get(\"GITHUB_EVENT_NAME\"))\n    parser.add_argument(\"--event-path\", type=Path, default=os.environ.get(\"GITHUB_EVENT_PATH\"))\n    parser.add_argument(\"--self-test\", action=\"store_true\", help=\"run offline selection tests\")\n    args = parser.parse_args(argv)\n    if args.self_test:\n        result = unittest.TextTestRunner(verbosity=2).run(\n            unittest.defaultTestLoader.loadTestsFromTestCase(SelectionTests))\n        return 0 if result.wasSuccessful() else 1\n    files, reason = args.files, None\n    if files is None and args.event_name != \"workflow_dispatch\":\n        files, reason = changed_files(args.repo.resolve(), args.event_name, args.event_path,\n                                     os.environ.get(\"GITHUB_SHA\"))\n    decision = select(args.repo, files, args.event_name, reason)\n    # Keep the existing workflow/output API while retaining the explicit name.\n    decision[\"run\"] = decision[\"run_full\"]\n    print(json.dumps(decision, indent=2, sort_keys=True))\n    if output := os.environ.get(\"GITHUB_OUTPUT\"):\n        with open(output, \"a\", encoding=\"utf-8\") as stream:\n            value = str(decision[\"run\"]).lower()\n            stream.write(\"run=\" + value + \"\\nrun_full=\" + value + \"\\n\")\n    return 0\n\n\nif __name__ == \"__main__\":\n    raise SystemExit(main())\n",
+    "only_change": "Permit root allowNonModules only when exactly boolean true",
+    "original_sha256": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842",
+    "original_utf8": "#!/usr/bin/env python3\n\"\"\"Select the unchanged full Lean gate from the accepted roots' import closure.\n\nOnly a successfully read diff and a completely understood import header can\nproduce run_full=false. This script does not verify proofs or change the\nsource, axiom-audit, or kernel-replay commands in verify_lean.sh.\n\"\"\"\n\nfrom pathlib import Path, PurePosixPath\nimport argparse\nimport json\nimport os\nimport re\nimport subprocess\nimport tempfile\nimport tomllib\nimport unittest\nfrom unittest.mock import patch\n\nfrom replay_lean import MODULE, header_tokens\n\n\nROOTS = (\"Solitaire\", \"Conjectures\", \"ProofAudit\")\nROOT_PATHS = {f\"lean/{name}.lean\" for name in ROOTS}\n# Preserve the public input list used by the existing selection controls.\nGATE_INPUTS = {\n    \".github/workflows/lean.yml\", \"scripts/verify_lean.sh\",\n    \"scripts/replay_lean.py\", \"scripts/plan_accepted_lean.py\",\n    \"scripts/plan_lean_candidates.py\", \"scripts/verify_lean_candidate.py\",\n    \"scripts/test_plan_accepted_lean.py\", \"scripts/test_replay_lean.py\",\n    \"lean/lean-toolchain\", \"lean/lakefile.toml\", \"lean/lake-manifest.json\",\n}\nCONFIG_PATHS = {\n    \"lean/lean-toolchain\", \"lean/lakefile.toml\", \"lean/lakefile.lean\",\n    \"lean/lake-manifest.json\", \"lean-toolchain\", \"lakefile.toml\",\n    \"lakefile.lean\", \"lake-manifest.json\", \".gitattributes\", \".gitmodules\",\n}\nEXTERNAL_NAMESPACES = {\n    \"Init\", \"Lean\", \"Std\", \"Mathlib\", \"Batteries\", \"Aesop\", \"Qq\",\n    \"ProofWidgets\", \"Cli\", \"Plausible\", \"ImportGraph\", \"LeanSearchClient\", \"Lake\",\n}\n# A known command starts the body. An unrecognized token forces the full gate.\nBODY_HEADS = {\n    \"namespace\", \"section\", \"end\", \"open\", \"export\", \"set_option\", \"attribute\",\n    \"variable\", \"universe\", \"universes\", \"def\", \"theorem\", \"lemma\", \"example\",\n    \"axiom\", \"opaque\", \"abbrev\", \"inductive\", \"structure\", \"class\", \"instance\",\n    \"initialize\", \"builtin_initialize\", \"syntax\", \"macro\", \"macro_rules\", \"elab\",\n    \"elab_rules\", \"notation\", \"infix\", \"infixl\", \"infixr\", \"prefix\", \"postfix\",\n    \"local\", \"scoped\", \"private\", \"protected\", \"noncomputable\", \"unsafe\",\n    \"partial\", \"nonrec\", \"#check\", \"#print\", \"#eval\", \"#reduce\", \"#synth\",\n}\nCOMMIT = re.compile(r\"(?:[0-9a-fA-F]{40}|[0-9a-fA-F]{64})\")\n\n\ndef imports_of(source):\n    \"\"\"Read the pinned ASCII import grammar, rejecting unknown header syntax.\"\"\"\n    tokens = iter(header_tokens(source.read_text(encoding=\"utf-8\")))\n    token = next(tokens, None)\n    if token == \"module\":\n        token = next(tokens, None)\n    if token == \"prelude\":\n        token = next(tokens, None)\n    while token is not None:\n        if token == \"public\":\n            token = next(tokens, None)\n        if token == \"meta\":\n            token = next(tokens, None)\n        if token != \"import\":\n            if token in BODY_HEADS or (token is not None and token.startswith(\"@[\")):\n                return\n            raise ValueError(f\"Unknown Lean header token in {source.name}: {token!r}\")\n        module = next(tokens, None)\n        if module == \"all\":\n            module = next(tokens, None)\n        if module is None or not MODULE.fullmatch(module):\n            raise ValueError(f\"Unsupported import in {source.name}: {module!r}\")\n        yield module\n        token = next(tokens, None)\n\n\ndef check_layout(repo):\n    \"\"\"Reject configurations that could move sources outside the parsed closure.\"\"\"\n    lean = repo / \"lean\"\n    if (lean / \"lakefile.lean\").exists():\n        raise ValueError(\"Unsupported or indirect Lake configuration\")\n    for name in (\"lakefile.toml\", \"lake-manifest.json\", \"lean-toolchain\"):\n        source = lean / name\n        if source.resolve() != source or not source.is_file():\n            raise ValueError(f\"Missing or indirect configuration: {name}\")\n    if (lean / \"lean-toolchain\").read_text(encoding=\"utf-8\").strip() != \"leanprover/lean4:v4.35.0\":\n        raise ValueError(\"The import parser does not cover this Lean toolchain\")\n    with (lean / \"lakefile.toml\").open(\"rb\") as stream:\n        config = tomllib.load(stream)\n    if set(config) - {\"name\", \"version\", \"defaultTargets\", \"require\", \"lean_lib\"}:\n        raise ValueError(\"Unsupported package layout or generated build target\")\n    targets = config.get(\"defaultTargets\")\n    if not isinstance(targets, list) or sorted(targets) != sorted(ROOTS):\n        raise ValueError(\"Lake default targets differ from the accepted roots\")\n    libraries = config.get(\"lean_lib\", [])\n    if sorted(lib[\"name\"] for lib in libraries) != sorted(ROOTS):\n        raise ValueError(\"Unsupported library roots\")\n    for lib in libraries:\n        if set(lib) - {\"name\", \"moreLeanArgs\"} or any(\n                not isinstance(arg, str) or not re.fullmatch(r\"-[jM][1-9][0-9]*\", arg)\n                for arg in lib.get(\"moreLeanArgs\", [])):\n            raise ValueError(\"Unsupported library layout or compiler arguments\")\n    requirements = config.get(\"require\", [])\n    if len(requirements) != 1 or set(requirements[0]) != {\"name\", \"git\", \"rev\"}:\n        raise ValueError(\"Unsupported package requirements\")\n    required = requirements[0]\n    if (required[\"name\"] != \"mathlib\"\n            or required[\"git\"] != \"https://github.com/leanprover-community/mathlib4.git\"\n            or not isinstance(required[\"rev\"], str)):\n        raise ValueError(\"Only the pinned external Mathlib requirement is supported\")\n    manifest = json.loads((lean / \"lake-manifest.json\").read_text(encoding=\"utf-8\"))\n    if (set(manifest) - {\"version\", \"packagesDir\", \"packages\", \"name\", \"lakeDir\", \"fixedToolchain\"}\n            or manifest.get(\"version\") != \"1.3.0\"\n            or manifest.get(\"packagesDir\") != \".lake/packages\"\n            or manifest.get(\"lakeDir\") != \".lake\"):\n        raise ValueError(\"Unsupported dependency manifest layout\")\n    packages = manifest.get(\"packages\", [])\n    names = [package[\"name\"] for package in packages]\n    if \"mathlib\" not in names or len(names) != len(set(names)):\n        raise ValueError(\"Missing or duplicate dependency packages\")\n    for package in packages:\n        if (set(package) - {\"url\", \"type\", \"subDir\", \"scope\", \"rev\", \"name\",\n                            \"manifestFile\", \"inputRev\", \"inherited\", \"configFile\"}\n                or package.get(\"type\") != \"git\" or package.get(\"subDir\") is not None\n                or not re.fullmatch(r\"[A-Za-z_][A-Za-z0-9_]*\", package[\"name\"])\n                or not package.get(\"url\", \"\").startswith(\"https://\")\n                or not COMMIT.fullmatch(package.get(\"rev\", \"\"))\n                or package.get(\"manifestFile\") != \"lake-manifest.json\"\n                or package.get(\"configFile\") not in (\"lakefile.toml\", \"lakefile.lean\")):\n            raise ValueError(\"Unsupported local or indirect dependency package\")\n\n\ndef source_inputs(lean):\n    \"\"\"Read the source closure in the default library layout.\"\"\"\n    sources, possible_paths, visited = set(), set(), set()\n\n    def visit(module):\n        if module in visited:\n            return\n        visited.add(module)\n        relative = \"lean/\" + module.replace(\".\", \"/\") + \".lean\"\n        possible_paths.add(relative)\n        source = lean / (module.replace(\".\", \"/\") + \".lean\")\n        if source.resolve() != source:\n            raise ValueError(f\"Indirect source path: {relative}\")\n        if not source.is_file():\n            if module in ROOTS or module.split(\".\", 1)[0] not in EXTERNAL_NAMESPACES:\n                raise ValueError(f\"Missing local source or unknown external import: {module}\")\n            return\n        sources.add(relative)\n        for imported in imports_of(source):\n            visit(imported)\n\n    for root in ROOTS:\n        visit(root)\n    return sources, possible_paths\n\n\ndef accepted_inputs(repo):\n    \"\"\"Return the closure only after checking the actual package layout.\"\"\"\n    check_layout(repo)\n    return source_inputs(repo / \"lean\")\n\n\ndef always_full(path):\n    if path in ROOT_PATHS or path in CONFIG_PATHS or path in GATE_INPUTS:\n        return True\n    # Preserve the existing gate for generated data and other package inputs.\n    if path.startswith(\"lean/\") and not path.endswith(\".lean\"):\n        return True\n    if path.startswith((\".github/workflows/\", \".github/actions/\", \"lean/.lake/\")):\n        return True\n    name = PurePosixPath(path).name\n    return path.startswith(\"scripts/\") and (\n        name.startswith((\"verify_\", \"plan_\", \"replay_\", \"test_replay_\", \"test_plan_\")))\n\n\ndef _select(lean, files, event_name=None, diff_reason=None, *, check_config):\n    result = {\"run_full\": True, \"reason\": \"\", \"changed_files\": [],\n              \"accepted_source_count\": None, \"matched_files\": []}\n    if event_name == \"workflow_dispatch\":\n        result[\"reason\"] = \"Manual dispatch always runs the full accepted gate\"\n        return result\n    if files is None:\n        result[\"reason\"] = diff_reason or \"Changed-file diff is unavailable\"\n        return result\n    if any(not isinstance(path, str) or not path or \"\\0\" in path\n           or PurePosixPath(path).is_absolute()\n           or any(part in (\".\", \"..\") for part in path.split(\"/\"))\n           or PurePosixPath(path).as_posix() != path for path in files):\n        result[\"reason\"] = \"Changed-file diff contains an unsupported path\"\n        return result\n    result[\"changed_files\"] = sorted(set(files))\n    forced = sorted(path for path in files if always_full(path))\n    if forced:\n        result.update(reason=\"Accepted root, pinned configuration, or verification code changed\",\n                      matched_files=forced)\n        return result\n    try:\n        sources, possible_paths = (accepted_inputs(lean.parent) if check_config\n                                   else source_inputs(lean))\n    except (OSError, UnicodeError, ValueError, TypeError, KeyError, AttributeError, RecursionError) as error:\n        result[\"reason\"] = f\"Accepted import closure is unavailable: {error}\"\n        return result\n    result[\"accepted_source_count\"] = len(sources)\n    matched = sorted(set(files) & possible_paths)\n    if matched:\n        result.update(reason=\"A source in the accepted import closure changed\",\n                      matched_files=matched)\n    else:\n        result.update(run_full=False,\n                      reason=\"Known diff does not change accepted inputs or verification code\")\n    return result\n\n\ndef select(repo, files, event_name=None, diff_reason=None):\n    \"\"\"Production selector: validate the complete supported Lake layout.\"\"\"\n    return _select(repo.resolve() / \"lean\", files, event_name, diff_reason, check_config=True)\n\n\ndef plan(lean, changed):\n    \"\"\"Preserve the default-layout source-selection API and its existing tests.\n\n    This pure closure helper accepts a standalone source directory. The CLI\n    additionally validates the actual package configuration through select.\n    \"\"\"\n    result = _select(lean.resolve(), changed, check_config=False)\n    result[\"run\"] = result.pop(\"run_full\")\n    result[\"affected\"] = result.pop(\"matched_files\")\n    return result\n\n\ndef changed_files(repo, event_name, event_path, expected_head=None):\n    \"\"\"Read push/PR changes without fetching; unavailable history runs all gates.\"\"\"\n    if event_name not in (\"push\", \"pull_request\"):\n        return None, f\"No supported automatic diff for event {event_name!r}\"\n    try:\n        if event_path is None:\n            raise ValueError(\"GitHub event payload is unavailable\")\n        event = json.loads(event_path.read_text(encoding=\"utf-8\"))\n        base = event.get(\"before\") if event_name == \"push\" else event[\"pull_request\"][\"base\"][\"sha\"]\n        if not isinstance(base, str) or not COMMIT.fullmatch(base) or set(base) == {\"0\"}:\n            raise ValueError(\"The diff base is absent, invalid, or a new-branch zero SHA\")\n\n        def git(*args):\n            return subprocess.run([\"git\", *args], cwd=repo, check=True,\n                                  stdout=subprocess.PIPE, stderr=subprocess.PIPE,\n                                  timeout=30).stdout\n\n        if expected_head is not None:\n            if not COMMIT.fullmatch(expected_head):\n                raise ValueError(\"Invalid expected checkout SHA\")\n            if git(\"rev-parse\", \"HEAD\").decode(\"ascii\").strip().lower() != expected_head.lower():\n                raise ValueError(\"Checkout differs from the event SHA\")\n        git(\"cat-file\", \"-e\", base + \"^{commit}\")\n        raw = git(\"diff\", \"--no-ext-diff\", \"--no-textconv\", \"--no-renames\",\n                  \"--name-only\", \"-z\", base, \"HEAD\", \"--\")\n        if raw and not raw.endswith(b\"\\0\"):\n            raise ValueError(\"Git did not return a NUL-terminated path list\")\n        files = [] if not raw else raw[:-1].decode(\"utf-8\").split(\"\\0\")\n        return files, \"\"\n    except (OSError, ValueError, KeyError, TypeError, AttributeError,\n            subprocess.SubprocessError) as error:\n        return None, f\"Changed-file diff is unavailable: {error}\"\n\n\nclass SelectionTests(unittest.TestCase):\n    \"\"\"Offline tests for the selector; none invoke Lean or alter the checkout.\"\"\"\n\n    def setUp(self):\n        temporary = tempfile.TemporaryDirectory(prefix=\"accepted-plan-test-\")\n        self.addCleanup(temporary.cleanup)\n        self.repo = Path(temporary.name).resolve()\n        self.config = ('name = \"fixture\"\\nversion = \"0.1.0\"\\n'\n                       'defaultTargets = [\"Solitaire\", \"Conjectures\", \"ProofAudit\"]\\n'\n                       '[[require]]\\nname = \"mathlib\"\\n'\n                       'git = \"https://github.com/leanprover-community/mathlib4.git\"\\n'\n                       'rev = \"v4.35.0\"\\n' + ''.join(\n                           f'[[lean_lib]]\\nname = \"{name}\"\\n' for name in ROOTS))\n        self.write(\"lean/lakefile.toml\", self.config)\n        self.write(\"lean/lean-toolchain\", \"leanprover/lean4:v4.35.0\\n\")\n        self.manifest = {\n            \"version\": \"1.3.0\", \"packagesDir\": \".lake/packages\", \"lakeDir\": \".lake\",\n            \"packages\": [{\"name\": \"mathlib\", \"type\": \"git\", \"subDir\": None,\n                          \"url\": \"https://github.com/leanprover-community/mathlib4.git\",\n                          \"rev\": \"a\" * 40, \"manifestFile\": \"lake-manifest.json\",\n                          \"configFile\": \"lakefile.lean\"}],\n        }\n        self.write(\"lean/lake-manifest.json\", json.dumps(self.manifest))\n        for name, source in {\n            \"Solitaire\": \"import Solitaire.Base\\n\",\n            \"Solitaire.Base\": \"def base : Nat := 1\\n\",\n            \"Conjectures\": \"import Conjectures.A\\n\",\n            \"Conjectures.A\": \"import Conjectures.B\\nimport Mathlib.Core\\nnamespace A\\n\",\n            \"Conjectures.B\": 'def body : String := \"/-\"\\n',\n            \"ProofAudit\": \"import Conjectures\\nimport Solitaire\\n\",\n            \"Conjectures.Candidate\": \"unknown_candidate_header\\n\",\n        }.items():\n            self.write(\"lean/\" + name.replace(\".\", \"/\") + \".lean\", source)\n\n    def write(self, relative, content):\n        path = self.repo / relative\n        path.parent.mkdir(parents=True, exist_ok=True)\n        path.write_text(content, encoding=\"utf-8\")\n        return path\n\n    def test_transitive_accepted_source(self):\n        result = select(self.repo, [\"lean/Conjectures/B.lean\"])\n        self.assertTrue(result[\"run_full\"])\n        self.assertEqual(result[\"accepted_source_count\"], 6)\n        self.assertEqual(result[\"matched_files\"], [\"lean/Conjectures/B.lean\"])\n\n    def test_candidate_docs_and_known_empty_diff(self):\n        for files in ([\"lean/Conjectures/Candidate.lean\"], [\"README.md\"], []):\n            with self.subTest(files=files):\n                self.assertFalse(select(self.repo, files)[\"run_full\"])\n\n    def test_roots_config_and_gate_changes(self):\n        for path in ROOT_PATHS | CONFIG_PATHS | {\n            \".github/workflows/lean.yml\", \".github/workflows/lean-candidates.yml\",\n            \"scripts/verify_lean.sh\", \"scripts/plan_accepted_lean.py\",\n            \"scripts/replay_lean.py\", \"scripts/test_replay_lean.py\",\n        }:\n            with self.subTest(path=path):\n                self.assertTrue(select(self.repo, [path])[\"run_full\"])\n\n    def test_manual_and_unavailable_diff(self):\n        self.assertTrue(select(self.repo, [], \"workflow_dispatch\")[\"run_full\"])\n        self.assertTrue(select(self.repo, None)[\"run_full\"])\n\n    def test_pinned_header_and_lazy_body(self):\n        self.write(\"lean/Conjectures/A.lean\",\n                   \"/- outer /- import Fake.Hidden -/ -/\\nmodule\\nprelude\\n\"\n                   \"public meta import Conjectures.B\\nimport /- note -/ all\\n\"\n                   'Mathlib.Core -- comment\\ndef body := \"/-\"\\n')\n        self.assertFalse(select(self.repo, [\"README.md\"])[\"run_full\"])\n        self.assertTrue(select(self.repo, [\"lean/Conjectures/B.lean\"])[\"run_full\"])\n\n    def test_unknown_or_unfinished_header_runs_full(self):\n        for source in (\"future_header\\nimport Conjectures.B\\n\", \"import Conjectures.\u03b1\\n\",\n                       \"/- unfinished\", \"import\\n\", \"public\\n\", \"import Missing.Package\\n\"):\n            with self.subTest(source=source):\n                self.write(\"lean/Conjectures/A.lean\", source)\n                self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n\n    def test_missing_project_source_runs_full(self):\n        (self.repo / \"lean/Conjectures/B.lean\").unlink()\n        self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n\n    def test_external_shadow_path_is_an_input_even_after_deletion(self):\n        self.assertTrue(select(self.repo, [\"lean/Mathlib/Core.lean\"])[\"run_full\"])\n\n    def test_changed_root_configuration_runs_full(self):\n        self.write(\"lean/lakefile.toml\", 'defaultTargets = [\"NewRoot\"]\\n')\n        self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n\n    def test_unsupported_source_layouts_run_full_on_later_commits(self):\n        for config in (\n            'srcDir = \"relocated\"\\n' + self.config,\n            self.config + 'srcDir = \"relocated\"\\n',\n            self.config + 'roots = [\"DifferentRoot\"]\\n',\n            self.config + 'globs = [\"Generated.*\"]\\n',\n            self.config + '[[require]]\\nname = \"Local\"\\npath = \"../local\"\\n',\n            self.config + '[[lean_exe]]\\nname = \"generator\"\\n',\n            self.config + 'moreLeanArgs = [\"--load-dynlib=../plugin.so\"]\\n',\n        ):\n            with self.subTest(config=config):\n                self.write(\"lean/lakefile.toml\", config)\n                self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n\n    def test_local_manifest_dependency_and_new_toolchain_run_full(self):\n        original = json.dumps(self.manifest)\n        self.manifest[\"packages\"][0].update(type=\"path\", path=\"../local\")\n        self.write(\"lean/lake-manifest.json\", json.dumps(self.manifest))\n        self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n        self.write(\"lean/lake-manifest.json\", original)\n        self.write(\"lean/lean-toolchain\", \"leanprover/lean4:v4.99.0\\n\")\n        self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n\n    def test_indirect_source_and_unsupported_diff_paths_run_full(self):\n        source = self.repo / \"lean/Conjectures/B.lean\"\n        source.unlink()\n        source.symlink_to(self.write(\"elsewhere.lean\", \"def x := 1\\n\"))\n        self.assertTrue(select(self.repo, [\"README.md\"])[\"run_full\"])\n        for path in (\"../README.md\", \"/README.md\", \"README.md\\0\", \"./README.md\"):\n            self.assertTrue(select(self.repo, [path])[\"run_full\"])\n\n    def test_push_and_pull_request_diff(self):\n        base, head = \"a\" * 40, \"b\" * 40\n        event_path = self.repo / \"event.json\"\n\n        def git(command, **kwargs):\n            self.assertEqual(kwargs[\"cwd\"], self.repo)\n            if command[1] == \"rev-parse\":\n                output = (head + \"\\n\").encode(\"ascii\")\n            elif command[1] == \"cat-file\":\n                self.assertEqual(command[2:], [\"-e\", base + \"^{commit}\"])\n                output = b\"\"\n            else:\n                self.assertEqual(command, [\"git\", \"diff\", \"--no-ext-diff\", \"--no-textconv\",\n                                          \"--no-renames\", \"--name-only\", \"-z\", base, \"HEAD\", \"--\"])\n                output = b\"README.md\\0lean/Conjectures/Candidate.lean\\0\"\n            return subprocess.CompletedProcess(command, 0, output, b\"\")\n\n        for event_name, payload in ((\"push\", {\"before\": base}),\n                                    (\"pull_request\", {\"pull_request\": {\"base\": {\"sha\": base}}})):\n            with self.subTest(event_name=event_name), patch.object(subprocess, \"run\", side_effect=git):\n                event_path.write_text(json.dumps(payload))\n                files, reason = changed_files(self.repo, event_name, event_path, head)\n                self.assertEqual(reason, \"\")\n                self.assertFalse(select(self.repo, files, event_name)[\"run_full\"])\n\n    def test_unavailable_history_and_malformed_events_run_full(self):\n        event_path = self.write(\"event.json\", '{\"before\": \"' + \"a\" * 40 + '\"}')\n        with patch.object(subprocess, \"run\", side_effect=subprocess.CalledProcessError(128, [\"git\"])):\n            files, reason = changed_files(self.repo, \"push\", event_path)\n            self.assertTrue(select(self.repo, files, \"push\", reason)[\"run_full\"])\n        for payload in (\"{\", \"[]\", '{\"before\": \"' + \"0\" * 40 + '\"}', \"{}\"):\n            event_path.write_text(payload)\n            files, reason = changed_files(self.repo, \"push\", event_path)\n            self.assertIsNone(files)\n            self.assertTrue(select(self.repo, files, \"push\", reason)[\"run_full\"])\n\n\ndef main(argv=None):\n    parser = argparse.ArgumentParser(description=__doc__)\n    parser.add_argument(\"--repo\", type=Path, default=Path(__file__).resolve().parent.parent)\n    parser.add_argument(\"--files\", nargs=\"*\", help=\"explicit known diff, for offline checks\")\n    parser.add_argument(\"--event-name\", default=os.environ.get(\"GITHUB_EVENT_NAME\"))\n    parser.add_argument(\"--event-path\", type=Path, default=os.environ.get(\"GITHUB_EVENT_PATH\"))\n    parser.add_argument(\"--self-test\", action=\"store_true\", help=\"run offline selection tests\")\n    args = parser.parse_args(argv)\n    if args.self_test:\n        result = unittest.TextTestRunner(verbosity=2).run(\n            unittest.defaultTestLoader.loadTestsFromTestCase(SelectionTests))\n        return 0 if result.wasSuccessful() else 1\n    files, reason = args.files, None\n    if files is None and args.event_name != \"workflow_dispatch\":\n        files, reason = changed_files(args.repo.resolve(), args.event_name, args.event_path,\n                                     os.environ.get(\"GITHUB_SHA\"))\n    decision = select(args.repo, files, args.event_name, reason)\n    # Keep the existing workflow/output API while retaining the explicit name.\n    decision[\"run\"] = decision[\"run_full\"]\n    print(json.dumps(decision, indent=2, sort_keys=True))\n    if output := os.environ.get(\"GITHUB_OUTPUT\"):\n        with open(output, \"a\", encoding=\"utf-8\") as stream:\n            value = str(decision[\"run\"]).lower()\n            stream.write(\"run=\" + value + \"\\nrun_full=\" + value + \"\\n\")\n    return 0\n\n\nif __name__ == \"__main__\":\n    raise SystemExit(main())\n",
+    "public_validator_unchanged": true,
+    "scope": "Every other accepted source-layout, root, import, package and compiler-argument check is unchanged.",
+    "source_path": "scripts/plan_accepted_lean.py"
+  },
+  "kernel_replay": {
+    "command": [
+      "lake",
+      "env",
+      "/usr/bin/python3",
+      "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/scripts/replay_lean_parallel.py",
+      "--lean-dir",
+      "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/lean",
+      "--workers",
+      "1",
+      "--memory-limit-mib",
+      "12288",
+      "--timeout-seconds",
+      "21600",
+      "--source-receipt",
+      "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/receipt.json",
+      "--output-dir",
+      "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/replay-1",
+      "Conjectures.Base",
+      "Conjectures.Left",
+      "Conjectures.Right",
+      "Conjectures.Top",
+      "Solitaire.Base"
+    ],
+    "expected_failure": false,
+    "kernel": {
+      "all_frozen_hashes_unchanged": true,
+      "artifact_sha256": {
+        "Conjectures": {
+          ".olean": "c59c9be860ee2d3ac869c02026e0120d1bd3ad4887901faf8557233c1a9d63e1"
+        },
+        "Conjectures.Base": {
+          ".olean": "8fbb1360248bee0040c938da13f3bffd542d5f7ab3d395ac09d2de8095ba0b45",
+          ".olean.private": "ce6133137f63db2600120281b9ed5eae6b1ca4b12dc9ee9f44232eb662eaee28",
+          ".olean.server": "abf529a84a0379348883fcc136f64657171aa3e703d86564f82834410b815d49"
+        },
+        "Conjectures.Left": {
+          ".olean": "727c7bb4a07214c56327f43ae89d20e9147af0dece63e1407c88ee65e93a558a",
+          ".olean.private": "f7c8ee48ea3253ac43a54d119a1cb9f4bdcc91287f38c487ad4829b4c6a9ebc7",
+          ".olean.server": "597b46cc46e6cd5446929b21b5dcfef22673f5c1cef15d302064d1e80ba3870f"
+        },
+        "Conjectures.Right": {
+          ".olean": "fd996e45ae55c9e20df948c37148c389e7503666061cc9990e9ef740efaeb4bc",
+          ".olean.private": "93068accef7be5608128e61a615deac8f7cb5374f0858302df430dacb40a6f4b",
+          ".olean.server": "18c4112b3d6796c5f3b6fdb8db1cc3f9c66bea55c1b4a09acb28d5cffd5ac39b"
+        },
+        "Conjectures.Top": {
+          ".olean": "05a41cf158813080dd4606efcf2e4a059df2a1e86a7586a7fe6dba02180bde67",
+          ".olean.private": "06e96ce9ed6d0697f416db7f6d1854acec66012d69f04957b84749f337af4f86",
+          ".olean.server": "010add20cba723b421bc8f7405e6a0db7777116ab90c22a0cb8e9eb20d68e791"
+        },
+        "Solitaire": {
+          ".olean": "8c23e316df53a7d1017e5eb6607c318065e243285395c1470dac9976815c3256"
+        },
+        "Solitaire.Base": {
+          ".olean": "6c2cf5da97306dead0cb8673f6199ac3cb135c123999d00913551ca1cc4a4ea2"
+        }
+      },
+      "checker_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+      "checker_prefixes": [
+        "Solitaire",
+        "Conjectures"
+      ],
+      "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+      "child_maxrss_kib": 949748,
+      "claims_axiom_audit": false,
+      "claims_source_check": false,
+      "elapsed_seconds": 13.318194492000003,
+      "environment": {
+        "LEAN_MAIN_USE_THREAD": "1",
+        "LEAN_NUM_THREADS": "1",
+        "LEAN_PATH": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/replay-1/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/solved-conjectures/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean",
+        "LEAN_SYSROOT": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0",
+        "UV_USE_IO_URING": "0"
+      },
+      "exact_replay_set": [
+        "Conjectures",
+        "Conjectures.Top",
+        "Conjectures.Left",
+        "Conjectures.Right",
+        "Conjectures.Base",
+        "Solitaire.Base",
+        "Solitaire"
+      ],
+      "git_head": "1ee0a59e6081eac65e712ee264ec356276d6149e",
+      "input_sha256": {
+        "lean/Conjectures.lean": "d8a81f7efb3d760acc3f49f0408b71bad76b4a0959613480b5aefbdc86f4c7bb",
+        "lean/Conjectures/Base.lean": "b513b4591ee82f2a175eeb9fa145182b49557989c61ddfdbd93ab90a3849c8b5",
+        "lean/Conjectures/Left.lean": "554bf978430ea1349748a4c4abbedf56a2506f3d93453e7610dc5bcebf9c377d",
+        "lean/Conjectures/Right.lean": "867475780c159bd6b414482ffc12524e816da38add198c3f627472369dbe94ca",
+        "lean/Conjectures/Top.lean": "d1cbecf5a8870bda879682be671814c72ad43bc01a47d257c9443a3f0d9fed63",
+        "lean/ProofAudit.lean": "db27e0c5943db827edd047a805811abb0be66b33bfe4d76dd7b57f724b3ee7a5",
+        "lean/Solitaire.lean": "f2d0342c943ef5fd4075e087a1a32d836ef739142d0d0b6c7613203b8b1b0421",
+        "lean/Solitaire/Base.lean": "09ce3cccc6dce743982d9795e27a54dc6713983cbe4d4bc6cf0a8de9a68bf62f",
+        "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "lean/lakefile.toml": "251ce508da753d024774c4f39acfe7ffb6c1864f9547d2a2757b84f1004b77f8",
+        "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+        "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+        "scripts/plan_accepted_lean.py": "b5c834cc9eac9e0fdc07e78c6c89bd449ef92a9b5035e136a83a449cdea48232",
+        "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+        "scripts/replay_lean_parallel.py": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225",
+        "scripts/test_lean_parallel.py": "53b526e6ce974893f78fb464aa77d002b82b2441c96a3d41a521486bba215700",
+        "scripts/verify_lean.sh": "2671d24ecb1c06913a0b4f185206710cc0c8e121a268157fc91b6970b1f83c0e",
+        "scripts/verify_lean_parallel_candidate.py": "6545556b44d03f51a40a1c598b4c9f304f2ccf0eebd3e3f5c9544047d2aec522"
+      },
+      "kernel": {
+        "command": [
+          "/usr/bin/stdbuf",
+          "-oL",
+          "-eL",
+          "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+          "-v",
+          "Solitaire",
+          "Conjectures"
+        ],
+        "elapsed_seconds": 13.289051139999998,
+        "exit_code": 0,
+        "log_sha256": "7ae6bfdbe0c4cd43ec26a9ba1928b069e15d2b334aae19a6a91ace4f9ead8588",
+        "runtime_control_threads": 3,
+        "sampled_peak_high_water_kib": 949968,
+        "sampled_peak_processes": 1,
+        "sampled_peak_rss_kib": 949968,
+        "sampled_peak_threads": 4,
+        "thread_limit": 4
+      },
+      "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+      "memory_limit_mib": 12288,
+      "mode": "accepted",
+      "original_object_directory": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/lean/.lake/build/lib/lean",
+      "output_directory": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/replay-1",
+      "phase": "kernel",
+      "project_modules": [
+        "Conjectures",
+        "Conjectures.Base",
+        "Conjectures.Left",
+        "Conjectures.Right",
+        "Conjectures.Top",
+        "Solitaire",
+        "Solitaire.Base"
+      ],
+      "replayed_module_count": 7,
+      "reuses_prior_kernel_pass": false,
+      "root": null,
+      "runtime": {
+        "compiler_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+        "sysroot": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0"
+      },
+      "source_receipt": {
+        "compiler_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+        "path": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/receipt.json",
+        "sha256": "93398ce87a292c93e20f33f6c61618ba93f44e486ee915cf9d403777a3129412"
+      },
+      "status": "passed",
+      "timeout_seconds": 21600.0,
+      "workers": 1
+    },
+    "metrics": {
+      "peak_active_builds": 1,
+      "sampled_peak_processes": 3,
+      "sampled_peak_rss_kib": 1815040,
+      "sampled_peak_threads": 18
+    },
+    "receipt": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/replay-1/receipt.json",
+    "receipt_sha256": "92cd65c513af84853591236ac0e59e7401f69790019cf76f4d5b372480c140f0",
+    "results": [
+      {
+        "command": [
+          "lake",
+          "env",
+          "/usr/bin/python3",
+          "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/scripts/replay_lean_parallel.py",
+          "--lean-dir",
+          "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/lean",
+          "--workers",
+          "1",
+          "--memory-limit-mib",
+          "12288",
+          "--timeout-seconds",
+          "21600",
+          "--source-receipt",
+          "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/receipt.json",
+          "--output-dir",
+          "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/replay-1",
+          "Conjectures.Base",
+          "Conjectures.Left",
+          "Conjectures.Right",
+          "Conjectures.Top",
+          "Solitaire.Base"
+        ],
+        "elapsed_seconds": 14.10590425800001,
+        "exit_code": 0,
+        "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/replay-1-command.log",
+        "log_sha256": "c6c9d5b1d103c54b8172dcf916f9e92579c0c283c542aed1b08ab10f37ac2b81",
+        "module": "replay-1-command",
+        "sampled_peak_process_tree_high_water_kib": 1821748
+      }
+    ]
+  },
+  "kernel_workers": 1,
+  "legacy_mathlib_fixture": true,
+  "negative_fixture": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-j1",
+      "-M4500",
+      "-DwarningAsError=true",
+      "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/lean/AllOwnedNegativeAudit.lean"
+    ],
+    "expected_failure": true,
+    "expected_private_definition_rejection": true,
+    "log_sha256": "12858f9cfc898143e81c1a5373c552664c80461afe546dd83069b50919c3c31f",
+    "metrics": {
+      "peak_active_builds": 1,
+      "sampled_peak_processes": 2,
+      "sampled_peak_rss_kib": 1952884,
+      "sampled_peak_threads": 22
+    },
+    "results": [
+      {
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-j1",
+          "-M4500",
+          "-DwarningAsError=true",
+          "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/lean/AllOwnedNegativeAudit.lean"
+        ],
+        "elapsed_seconds": 2.0858916340000064,
+        "exit_code": 1,
+        "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/negative-private-definition.log",
+        "log_sha256": "12858f9cfc898143e81c1a5373c552664c80461afe546dd83069b50919c3c31f",
+        "module": "negative-private-definition",
+        "sampled_peak_process_tree_high_water_kib": 1959576
+      }
+    ],
+    "source_sha256": "2dde2a27c97766cfe3efbb3766c466eefbd9a699354e7a6527079f112f21ad8e"
+  },
+  "protocol_tests": {
+    "command": [
+      "/usr/bin/python3",
+      "/home/runner/work/solved-conjectures/solved-conjectures/scripts/test_lean_all_owned.py"
+    ],
+    "expected_failure": false,
+    "metrics": {
+      "peak_active_builds": 1,
+      "sampled_peak_processes": 1,
+      "sampled_peak_rss_kib": 21944,
+      "sampled_peak_threads": 1
+    },
+    "results": [
+      {
+        "command": [
+          "/usr/bin/python3",
+          "/home/runner/work/solved-conjectures/solved-conjectures/scripts/test_lean_all_owned.py"
+        ],
+        "elapsed_seconds": 0.10108564899999806,
+        "exit_code": 0,
+        "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/protocol-tests.log",
+        "log_sha256": "b53b61335ca4d77d039dcd8ebc9b87ab52ae98f80f44b38be5fcc31929537321",
+        "module": "protocol-tests",
+        "sampled_peak_process_tree_high_water_kib": 21944
+      }
+    ]
+  },
+  "schema": "lean-all-owned-audit-candidate-v1",
+  "scope": "mixed-module-fixture",
+  "source": {
+    "command": [
+      "/usr/bin/python3",
+      "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/scripts/build_lean_parallel.py",
+      "--lean-dir",
+      "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/lean",
+      "--jobs",
+      "2",
+      "--memory-limit-mib",
+      "12288",
+      "--timeout-seconds",
+      "21600",
+      "--output-dir",
+      "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source",
+      "Conjectures.Base",
+      "Conjectures.Left",
+      "Conjectures.Right",
+      "Conjectures.Top",
+      "Solitaire.Base"
+    ],
+    "expected_failure": false,
+    "metrics": {
+      "peak_active_builds": 1,
+      "sampled_peak_processes": 5,
+      "sampled_peak_rss_kib": 3061644,
+      "sampled_peak_threads": 26
+    },
+    "receipt": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/receipt.json",
+    "receipt_sha256": "93398ce87a292c93e20f33f6c61618ba93f44e486ee915cf9d403777a3129412",
+    "results": [
+      {
+        "command": [
+          "/usr/bin/python3",
+          "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/scripts/build_lean_parallel.py",
+          "--lean-dir",
+          "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/repo/lean",
+          "--jobs",
+          "2",
+          "--memory-limit-mib",
+          "12288",
+          "--timeout-seconds",
+          "21600",
+          "--output-dir",
+          "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source",
+          "Conjectures.Base",
+          "Conjectures.Left",
+          "Conjectures.Right",
+          "Conjectures.Top",
+          "Solitaire.Base"
+        ],
+        "elapsed_seconds": 9.307328478000017,
+        "exit_code": 0,
+        "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source-command.log",
+        "log_sha256": "c7c73bc6a3799d004ae141783bfedb202707925290f91cd5afe9114c159fa8d5",
+        "module": "source-command",
+        "sampled_peak_process_tree_high_water_kib": 3064748
+      }
+    ],
+    "source": {
+      "all_inputs_unchanged": true,
+      "artifact_sha256": {
+        "Conjectures": {
+          ".olean": "c59c9be860ee2d3ac869c02026e0120d1bd3ad4887901faf8557233c1a9d63e1"
+        },
+        "Conjectures.Base": {
+          ".olean": "8fbb1360248bee0040c938da13f3bffd542d5f7ab3d395ac09d2de8095ba0b45",
+          ".olean.private": "ce6133137f63db2600120281b9ed5eae6b1ca4b12dc9ee9f44232eb662eaee28",
+          ".olean.server": "abf529a84a0379348883fcc136f64657171aa3e703d86564f82834410b815d49"
+        },
+        "Conjectures.Left": {
+          ".olean": "727c7bb4a07214c56327f43ae89d20e9147af0dece63e1407c88ee65e93a558a",
+          ".olean.private": "f7c8ee48ea3253ac43a54d119a1cb9f4bdcc91287f38c487ad4829b4c6a9ebc7",
+          ".olean.server": "597b46cc46e6cd5446929b21b5dcfef22673f5c1cef15d302064d1e80ba3870f"
+        },
+        "Conjectures.Right": {
+          ".olean": "fd996e45ae55c9e20df948c37148c389e7503666061cc9990e9ef740efaeb4bc",
+          ".olean.private": "93068accef7be5608128e61a615deac8f7cb5374f0858302df430dacb40a6f4b",
+          ".olean.server": "18c4112b3d6796c5f3b6fdb8db1cc3f9c66bea55c1b4a09acb28d5cffd5ac39b"
+        },
+        "Conjectures.Top": {
+          ".olean": "05a41cf158813080dd4606efcf2e4a059df2a1e86a7586a7fe6dba02180bde67",
+          ".olean.private": "06e96ce9ed6d0697f416db7f6d1854acec66012d69f04957b84749f337af4f86",
+          ".olean.server": "010add20cba723b421bc8f7405e6a0db7777116ab90c22a0cb8e9eb20d68e791"
+        },
+        "Solitaire": {
+          ".olean": "8c23e316df53a7d1017e5eb6607c318065e243285395c1470dac9976815c3256"
+        },
+        "Solitaire.Base": {
+          ".olean": "6c2cf5da97306dead0cb8673f6199ac3cb135c123999d00913551ca1cc4a4ea2"
+        }
+      },
+      "child_maxrss_kib": 1093760,
+      "claims_axiom_audit": false,
+      "claims_kernel_replay": false,
+      "compiler_path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+      "dependencies": {
+        "Conjectures": [
+          "Conjectures.Top"
+        ],
+        "Conjectures.Base": [],
+        "Conjectures.Left": [
+          "Conjectures.Base"
+        ],
+        "Conjectures.Right": [
+          "Conjectures.Base"
+        ],
+        "Conjectures.Top": [
+          "Conjectures.Left",
+          "Conjectures.Right"
+        ],
+        "Solitaire": [
+          "Solitaire.Base"
+        ],
+        "Solitaire.Base": []
+      },
+      "elapsed_seconds": 9.163125000999997,
+      "fresh_project_build": true,
+      "git_head": "1ee0a59e6081eac65e712ee264ec356276d6149e",
+      "input_sha256": {
+        "lean/Conjectures.lean": "d8a81f7efb3d760acc3f49f0408b71bad76b4a0959613480b5aefbdc86f4c7bb",
+        "lean/Conjectures/Base.lean": "b513b4591ee82f2a175eeb9fa145182b49557989c61ddfdbd93ab90a3849c8b5",
+        "lean/Conjectures/Left.lean": "554bf978430ea1349748a4c4abbedf56a2506f3d93453e7610dc5bcebf9c377d",
+        "lean/Conjectures/Right.lean": "867475780c159bd6b414482ffc12524e816da38add198c3f627472369dbe94ca",
+        "lean/Conjectures/Top.lean": "d1cbecf5a8870bda879682be671814c72ad43bc01a47d257c9443a3f0d9fed63",
+        "lean/ProofAudit.lean": "db27e0c5943db827edd047a805811abb0be66b33bfe4d76dd7b57f724b3ee7a5",
+        "lean/Solitaire.lean": "f2d0342c943ef5fd4075e087a1a32d836ef739142d0d0b6c7613203b8b1b0421",
+        "lean/Solitaire/Base.lean": "09ce3cccc6dce743982d9795e27a54dc6713983cbe4d4bc6cf0a8de9a68bf62f",
+        "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "lean/lakefile.toml": "251ce508da753d024774c4f39acfe7ffb6c1864f9547d2a2757b84f1004b77f8",
+        "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+        "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+        "scripts/plan_accepted_lean.py": "b5c834cc9eac9e0fdc07e78c6c89bd449ef92a9b5035e136a83a449cdea48232",
+        "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+        "scripts/replay_lean_parallel.py": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225",
+        "scripts/test_lean_parallel.py": "53b526e6ce974893f78fb464aa77d002b82b2441c96a3d41a521486bba215700",
+        "scripts/verify_lean.sh": "2671d24ecb1c06913a0b4f185206710cc0c8e121a268157fc91b6970b1f83c0e",
+        "scripts/verify_lean_parallel_candidate.py": "6545556b44d03f51a40a1c598b4c9f304f2ccf0eebd3e3f5c9544047d2aec522"
+      },
+      "jobs": 2,
+      "lake_path": "/home/runner/.elan/bin/lake",
+      "lake_sha256": "54238e7fc23ede3da0d3705830b1c81c86d1e6e3e4886395e2f9f16375ad0d9b",
+      "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+      "memory_limit_mib": 12288,
+      "metrics": {
+        "peak_active_builds": 2,
+        "sampled_peak_processes": 4,
+        "sampled_peak_rss_kib": 3015696,
+        "sampled_peak_threads": 26
+      },
+      "mode": "accepted",
+      "output_directory": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source",
+      "phase": "source",
+      "prelude": {
+        "external-preflight": {
+          "metrics": {
+            "peak_active_builds": 1,
+            "sampled_peak_processes": 2,
+            "sampled_peak_rss_kib": 845360,
+            "sampled_peak_threads": 21
+          },
+          "results": [
+            {
+              "command": [
+                "/home/runner/.elan/bin/lake",
+                "--no-cache",
+                "--no-build",
+                "build",
+                "+Mathlib.Data.Nat.Basic:olean"
+              ],
+              "elapsed_seconds": 0.7596063430000015,
+              "exit_code": 0,
+              "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/external-preflight.log",
+              "log_sha256": "b218ef72499ab53034c5ebbeba93d390c14eeaea957f9e082af567811152d7ba",
+              "module": "external-preflight",
+              "sampled_peak_process_tree_high_water_kib": 845360
+            }
+          ]
+        },
+        "project-clean": {
+          "metrics": {
+            "peak_active_builds": 1,
+            "sampled_peak_processes": 2,
+            "sampled_peak_rss_kib": 837588,
+            "sampled_peak_threads": 6
+          },
+          "results": [
+            {
+              "command": [
+                "/home/runner/.elan/bin/lake",
+                "--no-cache",
+                "clean",
+                "solved_conjectures"
+              ],
+              "elapsed_seconds": 0.7090898659999993,
+              "exit_code": 0,
+              "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/project-clean.log",
+              "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "module": "project-clean",
+              "sampled_peak_process_tree_high_water_kib": 844752
+            }
+          ]
+        },
+        "toolchain": {
+          "metrics": {
+            "peak_active_builds": 1,
+            "sampled_peak_processes": 2,
+            "sampled_peak_rss_kib": 934736,
+            "sampled_peak_threads": 8
+          },
+          "results": [
+            {
+              "command": [
+                "/home/runner/.elan/bin/lake",
+                "env",
+                "lean",
+                "--version"
+              ],
+              "elapsed_seconds": 2.02345007400001,
+              "exit_code": 0,
+              "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/toolchain.log",
+              "log_sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a",
+              "module": "toolchain",
+              "sampled_peak_process_tree_high_water_kib": 934736
+            }
+          ]
+        },
+        "toolchain-prefix": {
+          "metrics": {
+            "peak_active_builds": 1,
+            "sampled_peak_processes": 2,
+            "sampled_peak_rss_kib": 907496,
+            "sampled_peak_threads": 6
+          },
+          "results": [
+            {
+              "command": [
+                "/home/runner/.elan/bin/lake",
+                "env",
+                "lean",
+                "--print-prefix"
+              ],
+              "elapsed_seconds": 0.7084176439999936,
+              "exit_code": 0,
+              "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/toolchain-prefix.log",
+              "log_sha256": "0d556f7862d5dee71b094d00c91b3e9e69bffd322795555829f436da34018644",
+              "module": "toolchain-prefix",
+              "sampled_peak_process_tree_high_water_kib": 914248
+            }
+          ]
+        }
+      },
+      "project_modules": [
+        "Conjectures",
+        "Conjectures.Base",
+        "Conjectures.Left",
+        "Conjectures.Right",
+        "Conjectures.Top",
+        "Solitaire",
+        "Solitaire.Base"
+      ],
+      "root": null,
+      "source_module_count": 7,
+      "source_results": [
+        {
+          "artifact_sha256": {
+            ".olean": "8fbb1360248bee0040c938da13f3bffd542d5f7ab3d395ac09d2de8095ba0b45",
+            ".olean.private": "ce6133137f63db2600120281b9ed5eae6b1ca4b12dc9ee9f44232eb662eaee28",
+            ".olean.server": "abf529a84a0379348883fcc136f64657171aa3e703d86564f82834410b815d49"
+          },
+          "command": [
+            "/home/runner/.elan/bin/lake",
+            "--no-cache",
+            "--wfail",
+            "--fail-fast",
+            "build",
+            "+Conjectures.Base:olean"
+          ],
+          "elapsed_seconds": 1.0789033789999962,
+          "exit_code": 0,
+          "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/Conjectures.Base.log",
+          "log_sha256": "458f45be2592c01cc609fe3b43c86cbeb9a604e1a6b4eaa3963e837790389a56",
+          "module": "Conjectures.Base",
+          "sampled_peak_process_tree_high_water_kib": 1146992,
+          "source_sha256": "b513b4591ee82f2a175eeb9fa145182b49557989c61ddfdbd93ab90a3849c8b5"
+        },
+        {
+          "artifact_sha256": {
+            ".olean": "6c2cf5da97306dead0cb8673f6199ac3cb135c123999d00913551ca1cc4a4ea2"
+          },
+          "command": [
+            "/home/runner/.elan/bin/lake",
+            "--no-cache",
+            "--wfail",
+            "--fail-fast",
+            "build",
+            "+Solitaire.Base:olean"
+          ],
+          "elapsed_seconds": 1.5937063550000232,
+          "exit_code": 0,
+          "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/Solitaire.Base.log",
+          "log_sha256": "1d366f1acd32811af9cd2a04614afac432d974cedb159d44ae08a60cdf78107d",
+          "module": "Solitaire.Base",
+          "sampled_peak_process_tree_high_water_kib": 1923268,
+          "source_sha256": "09ce3cccc6dce743982d9795e27a54dc6713983cbe4d4bc6cf0a8de9a68bf62f"
+        },
+        {
+          "artifact_sha256": {
+            ".olean": "727c7bb4a07214c56327f43ae89d20e9147af0dece63e1407c88ee65e93a558a",
+            ".olean.private": "f7c8ee48ea3253ac43a54d119a1cb9f4bdcc91287f38c487ad4829b4c6a9ebc7",
+            ".olean.server": "597b46cc46e6cd5446929b21b5dcfef22673f5c1cef15d302064d1e80ba3870f"
+          },
+          "command": [
+            "/home/runner/.elan/bin/lake",
+            "--no-cache",
+            "--wfail",
+            "--fail-fast",
+            "build",
+            "+Conjectures.Left:olean"
+          ],
+          "elapsed_seconds": 1.0282555400000035,
+          "exit_code": 0,
+          "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/Conjectures.Left.log",
+          "log_sha256": "b9f9d1066a74e632844e2fb72236b6b9d8ae02cab37147d0c10eac737ad1d06c",
+          "module": "Conjectures.Left",
+          "sampled_peak_process_tree_high_water_kib": 1140692,
+          "source_sha256": "554bf978430ea1349748a4c4abbedf56a2506f3d93453e7610dc5bcebf9c377d"
+        },
+        {
+          "artifact_sha256": {
+            ".olean": "fd996e45ae55c9e20df948c37148c389e7503666061cc9990e9ef740efaeb4bc",
+            ".olean.private": "93068accef7be5608128e61a615deac8f7cb5374f0858302df430dacb40a6f4b",
+            ".olean.server": "18c4112b3d6796c5f3b6fdb8db1cc3f9c66bea55c1b4a09acb28d5cffd5ac39b"
+          },
+          "command": [
+            "/home/runner/.elan/bin/lake",
+            "--no-cache",
+            "--wfail",
+            "--fail-fast",
+            "build",
+            "+Conjectures.Right:olean"
+          ],
+          "elapsed_seconds": 1.0265621380000027,
+          "exit_code": 0,
+          "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/Conjectures.Right.log",
+          "log_sha256": "824f056de5d46057f7f85e111688dbd9f26865fba3d70a58bd32bd2f008206bc",
+          "module": "Conjectures.Right",
+          "sampled_peak_process_tree_high_water_kib": 1131308,
+          "source_sha256": "867475780c159bd6b414482ffc12524e816da38add198c3f627472369dbe94ca"
+        },
+        {
+          "artifact_sha256": {
+            ".olean": "8c23e316df53a7d1017e5eb6607c318065e243285395c1470dac9976815c3256"
+          },
+          "command": [
+            "/home/runner/.elan/bin/lake",
+            "--no-cache",
+            "--wfail",
+            "--fail-fast",
+            "build",
+            "+Solitaire:olean"
+          ],
+          "elapsed_seconds": 1.6456347840000092,
+          "exit_code": 0,
+          "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/Solitaire.log",
+          "log_sha256": "d07b4e1a97dba65b447e39c72a531cfb74046398e1fa1be6eec3f6bc3f5e7ac7",
+          "module": "Solitaire",
+          "sampled_peak_process_tree_high_water_kib": 1922764,
+          "source_sha256": "f2d0342c943ef5fd4075e087a1a32d836ef739142d0d0b6c7613203b8b1b0421"
+        },
+        {
+          "artifact_sha256": {
+            ".olean": "05a41cf158813080dd4606efcf2e4a059df2a1e86a7586a7fe6dba02180bde67",
+            ".olean.private": "06e96ce9ed6d0697f416db7f6d1854acec66012d69f04957b84749f337af4f86",
+            ".olean.server": "010add20cba723b421bc8f7405e6a0db7777116ab90c22a0cb8e9eb20d68e791"
+          },
+          "command": [
+            "/home/runner/.elan/bin/lake",
+            "--no-cache",
+            "--wfail",
+            "--fail-fast",
+            "build",
+            "+Conjectures.Top:olean"
+          ],
+          "elapsed_seconds": 1.183502997000005,
+          "exit_code": 0,
+          "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/Conjectures.Top.log",
+          "log_sha256": "02ea4e50aa865ee84f3d78868176cce1d97597a8f49cba8d8428b5c7bddd7675",
+          "module": "Conjectures.Top",
+          "sampled_peak_process_tree_high_water_kib": 1133260,
+          "source_sha256": "d1cbecf5a8870bda879682be671814c72ad43bc01a47d257c9443a3f0d9fed63"
+        },
+        {
+          "artifact_sha256": {
+            ".olean": "c59c9be860ee2d3ac869c02026e0120d1bd3ad4887901faf8557233c1a9d63e1"
+          },
+          "command": [
+            "/home/runner/.elan/bin/lake",
+            "--no-cache",
+            "--wfail",
+            "--fail-fast",
+            "build",
+            "+Conjectures:olean"
+          ],
+          "elapsed_seconds": 1.0153283190000195,
+          "exit_code": 0,
+          "log": "/home/runner/work/solved-conjectures/solved-conjectures/.candidate-artifacts/lean-all-owned-candidate/source/Conjectures.log",
+          "log_sha256": "367a322b65a4bdf6471a4e8fb63210a81753fdbe0778753485c18986aba55770",
+          "module": "Conjectures",
+          "sampled_peak_process_tree_high_water_kib": 1313688,
+          "source_sha256": "d8a81f7efb3d760acc3f49f0408b71bad76b4a0959613480b5aefbdc86f4c7bb"
+        }
+      ],
+      "status": "passed",
+      "timeout_seconds": 21600.0
+    }
+  },
+  "source_jobs": 2,
+  "spec": {
+    "checker_prefixes": [
+      "Solitaire",
+      "Conjectures"
+    ],
+    "legacy_prefixes": [],
+    "modules": [
+      "Conjectures",
+      "Conjectures.Base",
+      "Conjectures.Left",
+      "Conjectures.Right",
+      "Conjectures.Top",
+      "Solitaire",
+      "Solitaire.Base"
+    ],
+    "registered_modules": [
+      "Conjectures.Base",
+      "Conjectures.Left",
+      "Conjectures.Right",
+      "Conjectures.Top",
+      "Solitaire.Base"
+    ],
+    "required": [
+      "ParallelFixture.base",
+      "ParallelFixture.Left.value",
+      "ParallelFixture.Right.value",
+      "ParallelFixture.Top.both",
+      "ParallelFixture.Other.value",
+      "ParallelFixture.unreferencedDefinition"
+    ]
+  },
+  "status": "passed",
+  "uses_prior_project_objects": false
+}

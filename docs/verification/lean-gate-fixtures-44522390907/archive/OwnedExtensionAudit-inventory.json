@@ -1,0 +1,143 @@
+{
+  "all_owned_declarations_audited": true,
+  "declarations": {
+    "ExtensionBad.result": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "ExtensionBad.result",
+      "owner": "Conjectures.ExtensionBad",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "ExtensionGood.result": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "ExtensionGood.result",
+      "owner": "Conjectures.ExtensionGood",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "ExtensionGood.value": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "ExtensionGood.value",
+      "owner": "Conjectures.ExtensionGood",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice": {
+      "axioms": [
+        "Classical.choice"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice",
+      "owner": "Conjectures.ExtensionBad",
+      "private_user_name": "ExtensionBad.hiddenOwnedChoice",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice._proof_1": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice._proof_1",
+      "owner": "Conjectures.ExtensionBad",
+      "private_user_name": "ExtensionBad.hiddenOwnedChoice._proof_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ExtensionGood.0.ExtensionGood.hiddenProof": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ExtensionGood.0.ExtensionGood.hiddenProof",
+      "owner": "Conjectures.ExtensionGood",
+      "private_user_name": "ExtensionGood.hiddenProof",
+      "tag": "declaration"
+    }
+  },
+  "dependency_audit_claimed": false,
+  "exact_imported_project_closure": true,
+  "exact_owned_raw_private_visibility": true,
+  "imports": {
+    "Conjectures.ExtensionBad": {
+      "module": "Conjectures.ExtensionBad",
+      "owned": true,
+      "tag": "import"
+    },
+    "Conjectures.ExtensionDependency": {
+      "module": "Conjectures.ExtensionDependency",
+      "owned": false,
+      "tag": "import"
+    },
+    "Conjectures.ExtensionGood": {
+      "module": "Conjectures.ExtensionGood",
+      "owned": true,
+      "tag": "import"
+    }
+  },
+  "kind_counts": {
+    "definition": 2,
+    "theorem": 4
+  },
+  "owned_modules": {
+    "Conjectures.ExtensionBad": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ExtensionBad",
+      "names": [
+        "_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice._proof_1",
+        "_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice",
+        "ExtensionBad.result"
+      ],
+      "private_count": 2,
+      "tag": "module"
+    },
+    "Conjectures.ExtensionGood": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ExtensionGood",
+      "names": [
+        "ExtensionGood.result",
+        "ExtensionGood.value",
+        "_private.Conjectures.ExtensionGood.0.ExtensionGood.hiddenProof"
+      ],
+      "private_count": 1,
+      "tag": "module"
+    }
+  },
+  "private_declarations": {
+    "_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice": "ExtensionBad.hiddenOwnedChoice",
+    "_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice._proof_1": "ExtensionBad.hiddenOwnedChoice._proof_1",
+    "_private.Conjectures.ExtensionGood.0.ExtensionGood.hiddenProof": "ExtensionGood.hiddenProof"
+  },
+  "required_theorems": {
+    "ExtensionBad.result": "Conjectures.ExtensionBad",
+    "ExtensionGood.result": "Conjectures.ExtensionGood"
+  },
+  "summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 6,
+    "imported_modules": 3,
+    "owned_modules": 2,
+    "private_declarations": 3,
+    "raw_declarations": 6,
+    "required_theorems": 2,
+    "tag": "passed",
+    "theorems": 4
+  }
+}

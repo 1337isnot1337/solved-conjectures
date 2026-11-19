@@ -1,0 +1,14 @@
+OWNED-EXTENSION-JSON {"module":"Conjectures.ExtensionDependency","owned":false,"tag":"import"}
+OWNED-EXTENSION-JSON {"module":"Conjectures.ExtensionGood","owned":true,"tag":"import"}
+OWNED-EXTENSION-JSON {"has_data":true,"import_all":true,"modern":true,"module":"Conjectures.ExtensionGood","names":["ExtensionGood.result","ExtensionGood.value","_private.Conjectures.ExtensionGood.0.ExtensionGood.hiddenProof"],"private_count":1,"tag":"module"}
+OWNED-EXTENSION-JSON {"module":"Conjectures.ExtensionBad","owned":true,"tag":"import"}
+OWNED-EXTENSION-JSON {"has_data":true,"import_all":true,"modern":true,"module":"Conjectures.ExtensionBad","names":["_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice._proof_1","_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice","ExtensionBad.result"],"private_count":2,"tag":"module"}
+OWNED-EXTENSION-JSON {"axioms":[],"by_module":true,"by_serialized":true,"kind":"definition","name":"ExtensionGood.value","owner":"Conjectures.ExtensionGood","private_user_name":null,"tag":"declaration"}
+OWNED-EXTENSION-JSON {"axioms":["Classical.choice"],"by_module":true,"by_serialized":true,"kind":"definition","name":"_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice","owner":"Conjectures.ExtensionBad","private_user_name":"ExtensionBad.hiddenOwnedChoice","tag":"declaration"}
+OWNED-EXTENSION-JSON {"axioms":[],"by_module":true,"by_serialized":true,"kind":"theorem","name":"_private.Conjectures.ExtensionBad.0.ExtensionBad.hiddenOwnedChoice._proof_1","owner":"Conjectures.ExtensionBad","private_user_name":"ExtensionBad.hiddenOwnedChoice._proof_1","tag":"declaration"}
+OWNED-EXTENSION-JSON {"axioms":[],"by_module":true,"by_serialized":true,"kind":"theorem","name":"ExtensionBad.result","owner":"Conjectures.ExtensionBad","private_user_name":null,"tag":"declaration"}
+OWNED-EXTENSION-JSON {"axioms":[],"by_module":true,"by_serialized":true,"kind":"theorem","name":"ExtensionGood.result","owner":"Conjectures.ExtensionGood","private_user_name":null,"tag":"declaration"}
+OWNED-EXTENSION-JSON {"axioms":[],"by_module":true,"by_serialized":true,"kind":"theorem","name":"_private.Conjectures.ExtensionGood.0.ExtensionGood.hiddenProof","owner":"Conjectures.ExtensionGood","private_user_name":"ExtensionGood.hiddenProof","tag":"declaration"}
+OWNED-EXTENSION-JSON {"name":"ExtensionBad.result","owner":"Conjectures.ExtensionBad","tag":"required"}
+OWNED-EXTENSION-JSON {"name":"ExtensionGood.result","owner":"Conjectures.ExtensionGood","tag":"required"}
+OWNED-EXTENSION-JSON {"allowed_axioms":["propext","Classical.choice","Quot.sound"],"declarations":6,"imported_modules":3,"owned_modules":2,"private_declarations":3,"raw_declarations":6,"required_theorems":2,"tag":"passed","theorems":4}
