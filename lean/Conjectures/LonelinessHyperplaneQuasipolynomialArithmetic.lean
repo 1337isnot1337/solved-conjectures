@@ -61,12 +61,13 @@ theorem weakComposition_card (n : ℕ) :
     Sym.natCard_sym_eq_choose, Nat.card_eq_fintype_card]
   have hk : 0 < Fintype.card ι := Fintype.card_pos
   have hn : n ≤ Fintype.card ι + n - 1 := by omega
-  rw [Nat.choose_symm hn]
+  rw [← Nat.choose_symm hn]
   congr 1 <;> omega
 
 def shiftedWeakComposition (M T n : ℕ) : Type _ :=
   {q : ι → ℕ // M * (∑ i, q i) + T = n}
 
+omit [Nonempty ι] in
 theorem shiftedWeakComposition_finite (M T n : ℕ) (hM : 0 < M) :
     Finite (shiftedWeakComposition (ι := ι) M T n) := by
   classical
@@ -106,7 +107,7 @@ theorem shiftedWeakComposition_card
     rw [shiftedWeakComposition, Nat.card_congr (Equiv.subtypeEquivRight heq)]
     exact weakComposition_card ((n - T) / M)
   · rw [ite_eq_right hvalid]
-    letI : IsEmpty (shiftedWeakComposition (ι := ι) M T n) := ⟨by
+    let : IsEmpty (shiftedWeakComposition (ι := ι) M T n) := ⟨by
       rintro ⟨q, hq⟩
       apply hvalid
       refine ⟨by omega, ?_⟩
@@ -170,7 +171,7 @@ theorem shiftedWeakComposition_polynomial_on_progressions
           exact weakComposition_card (n - a)
         exact congrArg (fun x : ℕ => (x : ℚ)) hcard
       · rw [ite_eq_right han]
-        letI : IsEmpty (shiftedWeakComposition (ι := ι) M T (M * n + r)) := ⟨by
+        let : IsEmpty (shiftedWeakComposition (ι := ι) M T (M * n + r)) := ⟨by
           rintro ⟨q, hq⟩
           have h := (heq q).mp hq
           omega⟩
@@ -181,7 +182,7 @@ theorem shiftedWeakComposition_polynomial_on_progressions
         have hmod := congrArg (fun x : ℕ => x % M) hq
         simpa only [Nat.add_mod, Nat.mul_mod_right, zero_add, Nat.mod_mod,
           Nat.mod_eq_of_lt r.isLt] using hmod⟩
-      letI := hnone
+      let := hnone
       simp only [P, ite_eq_right hr, eval_zero, Nat.card_of_isEmpty, Nat.cast_zero]
 
 end

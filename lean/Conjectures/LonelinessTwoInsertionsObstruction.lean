@@ -47,8 +47,8 @@ theorem five_speed_outside_witness :
     (1/6 : ℝ) ≤ clearance [1,2,4,6,10] (3/8) := by
   have hcert : LowerCertificate [1,2,4,6,10] (1/6) (3/8) [0,0,1,2,3] :=
     by decide +kernel
-  have hgood := lowerCertificate_sound hcert
-  norm_num at hgood
-  exact le_clearance (by norm_num) hgood
+  convert le_clearance
+    (by norm_num : ((1/6 : ℚ) : ℝ) ≤ 1/2)
+    (lowerCertificate_sound hcert) using 1 <;> norm_num
 
 end Loneliness.TwoInsertions

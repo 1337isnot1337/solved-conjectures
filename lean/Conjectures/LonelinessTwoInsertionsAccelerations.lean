@@ -63,7 +63,7 @@ theorem acceleratedBase_good (p : ℕ) (m : ℕ → ℕ) (hp : 3 ≤ p)
       1/(p+2 : ℝ) ≤ distance ((d : ℝ)*t) := by
   intro d hd t ht
   obtain ⟨r, hr, rfl⟩ := List.mem_map.mp hd
-  obtain ⟨hr1, hrp⟩ := List.mem_range'.mp hr
+  obtain ⟨hr1, hrp⟩ := List.mem_range'_1.mp hr
   have hrlt : r < p := by omega
   obtain ⟨hm, hgap⟩ := h r hr1 hrlt
   exact accelerated_speed_good p r (m r) hp (by omega) hrlt hm hgap t ht
