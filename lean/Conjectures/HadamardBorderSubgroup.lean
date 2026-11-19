@@ -16,6 +16,8 @@ open Matrix
 open HadamardBorderNormalizationTransport
 open HadamardFixedBorder
 
+attribute [local instance] Classical.propDecidable
+
 variable {G : Type*} [Fintype G] [AddCommGroup G]
 
 theorem exists_hadamard_fin_of_subgroup_correlation
@@ -27,7 +29,7 @@ theorem exists_hadamard_fin_of_subgroup_correlation
         (Fin (4 * Fintype.card G + 12)) ℤ,
       SignMatrix M ∧ M * Mᵀ = (4 * (Fintype.card G : ℤ) + 12) • 1 := by
   classical
-  letI : Fintype (G ⧸ H) := Fintype.ofFinite _
+  let : Fintype (G ⧸ H) := Fintype.ofFinite _
   have hQ : Fintype.card (G ⧸ H) = 4 := by
     simpa only [AddSubgroup.index, Nat.card_eq_fintype_card] using hindex
   apply exists_hadamard_fin_of_correlation
@@ -43,7 +45,7 @@ theorem exists_hadamard_2396_of_subgroup_correlation
     ∃ M : Matrix (Fin 2396) (Fin 2396) ℤ,
       SignMatrix M ∧ M * Mᵀ = (2396 : ℤ) • 1 := by
   classical
-  letI : Fintype (G ⧸ H) := Fintype.ofFinite _
+  let : Fintype (G ⧸ H) := Fintype.ofFinite _
   have hQ : Fintype.card (G ⧸ H) = 4 := by
     simpa only [AddSubgroup.index, Nat.card_eq_fintype_card] using hindex
   have hkernel : Nat.card (QuotientAddGroup.mk' H).ker = 149 := by
