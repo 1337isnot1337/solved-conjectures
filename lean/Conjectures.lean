@@ -489,3 +489,5 @@ import Conjectures.LonelinessSixPlaneDataCoverage07
 import Conjectures.LonelinessSixPlaneDataCoverage08
 import Conjectures.LonelinessSixPlaneDataCoverage09
 import Conjectures.LonelinessSixPlaneDataCoverage
+import Conjectures.LonelinessKZSmallData
+import Conjectures.LonelinessSixSpectrumNormGeometry

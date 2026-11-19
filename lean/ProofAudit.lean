@@ -1294,7 +1294,12 @@ run_cmd do
     `Loneliness.PlaneCertificate.all_candidates_checked,
     `Loneliness.PlaneCertificate.critical_product_of_low_value,
     `Loneliness.Pigeonhole.five_speed_finite_or_spectrum,
-    `Loneliness.Pigeonhole.five_speed_finite_or_critical_quadruple]
+    `Loneliness.Pigeonhole.five_speed_finite_or_critical_quadruple,
+    `Loneliness.SixSpectrumNormGeometry.exists_gram_data,
+    `Loneliness.SixSpectrumNormGeometry.numerical_margin,
+    `Loneliness.SixSpectrumNormGeometry.squaredNorm_lt,
+    `Loneliness.SixSpectrumNormGeometry.norm_lt,
+    `Loneliness.SixSpectrumNormGeometry.natural_squaredNorm_lt]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
