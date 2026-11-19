@@ -1,0 +1,305 @@
+{
+  "companion_producer_note": "generate_small_cyclic_weights_lean.py is separately versioned with the Lean pilot. The original producer source hashes and complete canonical row digest above pin this input independently of the generated proof layout.",
+  "deterministic_reproduction": {
+    "accepted_rows": 9088,
+    "algorithm": [
+      "Extend the empty word six times in the public LETTERS order, retaining each prefix accepted by span_four.possible.",
+      "Append each public letter to each six-letter state in order; retain valid overlap states and span_four.pair_survives.",
+      "Retain span_four.recurrent edges without reordering them.",
+      "Compile window_filter.cpp and window_replay.cpp with c++ -O3 -std=c++20.",
+      "Pass all recurrent seven-letter words to window_filter with argument 4; keep each colon-marked word and its first accepted four weights in output order.",
+      "Pass all accepted lines to window_replay with argument 4 and require its accepted count to equal the row count.",
+      "Canonicalize the ordered [word,weights] pairs as the input encoding above."
+    ],
+    "environment": {
+      "compiler": "c++ (Debian 14.2.0-19) 14.2.0",
+      "numpy": "2.3.5",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "scipy": "1.17.0"
+    },
+    "finder_stdout_sha256": "8c52bb6a42f6c3ff9837a71f53ccf7e7d4d8bc121a73b34736d8b0e71893bdc0",
+    "pair_test_edges": 227424,
+    "prefix_counts": [
+      11,
+      76,
+      416,
+      2068,
+      11392,
+      65248
+    ],
+    "public_explicit_union_replay_accepted_rows": 9088,
+    "recurrent_seven_letter_words": 20265,
+    "recurrent_words_text_sha256": "8bd819b7f2bf103c2ef22b40bc39c5dd13b23dd9d95a4467ac3a6c79002cc681",
+    "six_letter_states": 65248,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "unaccepted_recurrent_edges": 35,
+    "unaccepted_rows": 11177
+  },
+  "formal_scope": "This manifest is not a Lean theorem or a proof premise. It does not certify all 9,088 rows in Lean. The separately generated pilot contains 16 selected rows; its exact formal coverage and status are established only by separate source, axiom and kernel receipts.",
+  "independent_literal_modulo_replay": {
+    "boundary_conditions_checked": 2972430,
+    "dependencies": "Python standard library only",
+    "failed_row_period_checks": 0,
+    "input_rows": 9088,
+    "periods": [
+      7,
+      8,
+      9
+    ],
+    "python_version": "3.12.14",
+    "results": {
+      "7": {
+        "boundary_conditions_checked": 244800,
+        "boundary_size_histogram": {
+          "2": 32,
+          "3": 9056
+        },
+        "minimum_imbalance_histogram": {
+          "0": 8912,
+          "2": 176
+        },
+        "row_results_sha256": "91e3a45f397c09920ee7b5936cb1b85b15a9f09a498c8e2c75d4081f4351ba31",
+        "rows_checked": 9088,
+        "rows_failed": 0,
+        "status": "passed"
+      },
+      "8": {
+        "boundary_conditions_checked": 718398,
+        "boundary_size_histogram": {
+          "2": 4,
+          "3": 323,
+          "4": 8761
+        },
+        "minimum_imbalance_histogram": {
+          "0": 9088
+        },
+        "row_results_sha256": "b569734dbcc4b20d65eee14da716d2eb3128cf8fc9adb5c9e0e5034256189ed7",
+        "rows_checked": 9088,
+        "rows_failed": 0,
+        "status": "passed"
+      },
+      "9": {
+        "boundary_conditions_checked": 2009232,
+        "boundary_size_histogram": {
+          "3": 91,
+          "4": 1108,
+          "5": 7889
+        },
+        "minimum_imbalance_histogram": {
+          "0": 9088
+        },
+        "row_results_sha256": "f8a00ef0c1858b681625646057214ff592764cf7839c139cec69460828ac6926",
+        "rows_checked": 9088,
+        "rows_failed": 0,
+        "status": "passed"
+      }
+    },
+    "row_period_checks": 27264,
+    "row_results_digest_encoding": "For each row in order, append canonical JSON bytes for [row_index, distinct_local_generator_count, distinct_local_union_count, sorted_actual_boundary, all_condition_values]. Boundary conditions use lexicographic ternary digits 0=forbidden, 1=optional, 2=mandatory.",
+    "sanity_and_direct_definition_checks": 15,
+    "semantics": {
+      "acceptance": "All condition values are nonnegative and the original nonnegative weight vector is nonzero.",
+      "boundary": "actual local-generator support outside the core",
+      "compatible_family": "C(E,M) = { U intersection W : U is a local union and M subset (U minus W) subset E }.",
+      "condition_value": "Sum over distinct S in C(E,M) of (2 * sum of core weights on S - sum of all four core weights).",
+      "conditions": "all M subset E subset actual boundary",
+      "core": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "counting": "distinct local unions and distinct compatible inside sets",
+      "implementation_independence": "Explicit frozenset unions and actual exterior traces; no finder maximal-cover check, weight search or graph reduction is reused.",
+      "local_generators": "All actual modulo-n generators intersecting the core, with equal generators deduplicated.",
+      "local_unions": "The set of distinct unions of subfamilies of the local generators, including the empty union.",
+      "mapping": "reduce each tile point modulo the period before forming unions",
+      "tiles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "weights": "the four original weights apply to sites 3,4,5,6"
+    },
+    "source_path": "results/frankl-generator-families/replay_small_cyclic_weight_candidates.py",
+    "source_sha256": "2c7d4367201aa93a7ce3136af8dc35a92f898578a106a29a6b25ab22175e5728",
+    "status": "passed"
+  },
+  "input": {
+    "bytes": 269088,
+    "canonical_encoding": "UTF-8 bytes of json.dumps(rows,separators=(',', ':')) + '\\n'",
+    "each_weight_vector_nonzero": true,
+    "first_row": [
+      [
+        0,
+        0,
+        1,
+        4,
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "last_row": [
+      [
+        12,
+        12,
+        12,
+        8,
+        8,
+        10,
+        10
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "letters": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12
+    ],
+    "path": "results/frankl-generator-families/width_four_weight_candidates.json",
+    "row_encoding": "[[word of seven letters],[four nonnegative integer weights]]",
+    "rows": 9088,
+    "sha256": "5594610818abd7f41c76121924259bd1a9a1f86417da91dce2c0f8171bcceb6a",
+    "weight_length": 4,
+    "weight_range": [
+      0,
+      3
+    ],
+    "word_length": 7,
+    "word_order": "lexicographic",
+    "words_unique": true
+  },
+  "original_sources": {
+    "files": [
+      {
+        "bytes": 3862,
+        "git_blob": "cdfa273af904761f188922764a78d7d236a4ffcf",
+        "path": "results/frankl-generator-families/span_four.py",
+        "sha256": "b357783ce1879293e49d50664aeb8ae77d3384a9a8507601131ecfd26e8ffd0a"
+      },
+      {
+        "bytes": 3662,
+        "git_blob": "d7df8db5cd81783f88e38299198574035d13586d",
+        "path": "results/frankl-generator-families/window_filter.cpp",
+        "sha256": "e426f38a573e5013d1892664ccba38de426168a33055a43776c50fcc7d7fb120"
+      },
+      {
+        "bytes": 2808,
+        "git_blob": "e361d6b901f63716d095b3561c4647d7a2504cd5",
+        "path": "results/frankl-generator-families/window_replay.cpp",
+        "sha256": "081796e3465881a4ee95b964f36e073a1e5de3633dcabd5a23843891f7515d04"
+      }
+    ],
+    "repository": "https://github.com/1337isnot1337/solved-conjectures",
+    "source_revision": "d583779cc9aeab3c6011a6d97813debb50092b74"
+  },
+  "pilot_input_correspondence": {
+    "canonical_selected_rows_sha256": "2a9530c942a5758e4cf667a582c77b2f4da8f7f1aa330c7194c032da8e9b7336",
+    "literal_pilot_entries_equal_selected_canonical_rows": true,
+    "scope": "Records input correspondence only; generated Lean layout and proof status are versioned and checked separately.",
+    "selected_rows": 16,
+    "selected_zero_based_indices": [
+      0,
+      143,
+      224,
+      288,
+      469,
+      1553,
+      3447,
+      3506,
+      6030,
+      6279,
+      7962,
+      8172,
+      8307,
+      8361,
+      9045,
+      9087
+    ],
+    "selection_algorithm": "first-last-max-cost-then-greedy-feature-coverage-v1"
+  },
+  "reproduction_commands_from_repository_root": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 results/frankl-generator-families/generate_small_cyclic_weights_lean.py --output-dir /tmp/frankl-width4-reproduction/lean --rows-output /tmp/frankl-width4-reproduction/rows.json --report /tmp/frankl-width4-reproduction/producer-report.json",
+    "sha256sum /tmp/frankl-width4-reproduction/rows.json results/frankl-generator-families/width_four_weight_candidates.json",
+    "python3 results/frankl-generator-families/replay_small_cyclic_weight_candidates.py results/frankl-generator-families/width_four_weight_candidates.json --output /tmp/frankl-width4-reproduction/literal-modulo-replay.json"
+  ],
+  "schema": "frankl-width-four-weight-candidates-v1",
+  "scope": "The complete original 9,088-row width-four finder output and the same weights on literal cyclic grounds of sizes 7, 8 and 9.",
+  "scratch_cache_comparison": {
+    "cache_bytes": 2040115,
+    "cache_is_not_required_for_reproduction": true,
+    "cache_name": "frankl-small-cyclic-local-candidates.json",
+    "cache_sha256": "8b96b18bce8c584974a37c7b547386270550796e5cb3faa11502bcbf26087915",
+    "exact_ordered_row_equality": true,
+    "first_differing_row": null,
+    "key": "10",
+    "other_cached_periods": {
+      "7": {
+        "different_chosen_weights_on_common_words": 7093,
+        "note": "These period-specific scratch weights are not used by the independent replay of original weights.",
+        "original_words_also_present": 9088,
+        "original_words_missing": 0,
+        "scratch_period_specific_candidate_count": 17416
+      },
+      "8": {
+        "different_chosen_weights_on_common_words": 2376,
+        "note": "These period-specific scratch weights are not used by the independent replay of original weights.",
+        "original_words_also_present": 9088,
+        "original_words_missing": 0,
+        "scratch_period_specific_candidate_count": 13817
+      },
+      "9": {
+        "different_chosen_weights_on_common_words": 192,
+        "note": "These period-specific scratch weights are not used by the independent replay of original weights.",
+        "original_words_also_present": 9088,
+        "original_words_missing": 0,
+        "scratch_period_specific_candidate_count": 9758
+      }
+    },
+    "other_cached_periods_scope": "Only membership of the original words and equality of their chosen weights were compared. The larger period-specific cached datasets were not independently reproduced. The literal-modulo replay uses the original key-10 weights unchanged.",
+    "width": 4
+  },
+  "verification_kind": "Untrusted computational provenance and literal finite enumeration."
+}
