@@ -2,6 +2,10 @@
 
 [Home](README.md) · [Catalogue](CONTENTS.md)
 
+## 2026-11-18 — Random lonely runners on a fixed hyperplane
+
+- Added the conditional limiting law for Beck and Everett’s statistical question, the finite-subspace description of exceptional velocities, and the unshifted endpoint density for full-support normals.
+
 ## 2026-11-18 — Graffiti.pc Conjecture 318 (credited to @JesterInABarrel)
 
 - Added the all-order proof of Conjecture 318 **credited to [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)**, its stronger total-dominating-pair theorem, and a sharp five-vertex counterexample to lowering the hypothesis by one.

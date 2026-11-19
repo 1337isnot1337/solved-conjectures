@@ -38,6 +38,7 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 
 | Result | Finding | Lean | Evidence |
 | :--- | :--- | :---: | :--- |
+| [Loneliness on a fixed relation hyperplane](results/loneliness-on-a-hyperplane/) | Explicit conditional limiting law for all admissible normals and shifts, with a uniform $O(1/N)$ fixed-tolerance tail. | ☐ | [Proof](results/loneliness-on-a-hyperplane/PROOF.md) · [Exact checks](results/loneliness-on-a-hyperplane/verify.py) |
 | [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/PROOF.md) | The values below 1/5 are exactly s/(5s+1) for positive integers s. Cordella’s twelve sporadic primitive quintuples exhaust the exceptions to the two known families. | ◐ | [Proof](results/five-speed-spectrum/PROOF.md) and [exhaustive verifier](results/five-speed-spectrum/verify.py) |
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | The values below 1/8 are exactly s/(8s+1). Three infinite families and 17 sporadic tuples exhaust the primitive cases. | ☐ | [Proof](results/eight-speed-spectrum/PROOF.md) and [exhaustive verifier](results/eight-speed-spectrum/verify.py) |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | The values below 1/7 are exactly s/(7s+1), 3/23, 5/37 and 9/65. One infinite family and 27 sporadic tuples exhaust the primitive cases. | ☐ | [Proof](results/seven-speed-spectrum/PROOF.md) and [exhaustive verifier](results/seven-speed-spectrum/verify.py) |
@@ -64,6 +65,7 @@ These are mathematical claims with explicit proofs and computer checks, **not pe
 
 ## Primary sources
 
+- Matthias Beck and Samuel Everett, [*Lonely Runner Relations*, §4](https://arxiv.org/html/2609.06259v2#S4), ask for the statistical behavior on one prescribed relation hyperplane.
 - Ermelinda DeLaViña, [*Written on the Wall II*, Graffiti.pc Conjecture 318](https://www.uhd.edu/academics/sciences/mathematics-statistics/wowii/files/wowiiaii.pdf), announced March 4, 2007; catalogue updated November 5, 2026. Proof shared by [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334) on November 18, 2026; an externally contributed result, not authored by this repository's maintainer.
 - Kimmo Eriksson, Markus Jonsson, Jonas Sjoestrand, [*Limit shapes of stable and recurrent configurations of a generalized Bulgarian solitaire*](https://combinatorialpress.com/article/ojac/vol15/192.pdf), *Online Journal of Analytic Combinatorics* 15 (2020), paper 10. Definitions 2--4, Theorems 3--5, Conjecture 1.
 - Nhung Pham, [*Limiting behavior in growth of Bulgarian solitaire orbits*](https://arxiv.org/abs/2208.14496) (2022), Theorem 1.2 and section 6.

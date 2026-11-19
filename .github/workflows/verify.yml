@@ -10,6 +10,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check conditional lonely-runner examples
+        run: python3 results/loneliness-on-a-hyperplane/verify.py
       - name: Verify L-solitaire exhaustive finite checks
         run: python3 results/l-solitaire-limit-shapes/verify.py
       - name: Verify Pham exact main and dual certificates

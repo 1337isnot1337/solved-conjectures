@@ -71,3 +71,7 @@ The Li verifier also checks all 6,842 partition types of 31 and the coefficient 
 ## Reporting a check
 
 Record the commit, command, toolchain, and result. Distinguish computational tests, source builds, axiom audits, kernel replay, and hosted CI. Do not infer that an unrun check passed.
+
+## Loneliness on a fixed hyperplane
+
+Run `python3 results/loneliness-on-a-hyperplane/verify.py` for exact circle maxima, endpoint congruences, and shifted examples. The limiting theorem is proved in the [mathematical argument](../results/loneliness-on-a-hyperplane/PROOF.md).
