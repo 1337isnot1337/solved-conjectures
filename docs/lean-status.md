@@ -38,6 +38,7 @@ never additional Lean axioms.
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
+| Frankl generating families | Partial | Exact local boundary fibers and the full weighted-certificate implication; distinct-union/maximal-independent-set bijections; finite cardinal lopsided conditioning and all-k≥15 arithmetic. The cyclic span-four certificate and published dependencies, actual incidence conditioning hypotheses, and high-girth graph/tree bridge remain incomplete. |
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
 | Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
@@ -1301,3 +1302,20 @@ published in 14 modules; only its cache, packed oracle, helper, and first
 part have local source evidence so far. Its full hosted gate remains
 pending. See [the exact scope](five-speed-root179-candidate.md) and
 [component receipts](five-speed-receipts/hosted-component-index.json).
+
+
+## Frankl counting components — 19 November 2026
+
+Six proof modules were checked at `57d699c770471fc898850079bde384a269da5d4f` in
+[run 44475531664](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44475531664).
+All four component jobs rebuilt their exact source closures, audited all
+113 project theorem declarations using only `propext`, `Classical.choice`, and
+`Quot.sound`, and replayed all six kernel objects with the unchanged pinned
+checker. The accepted root, required endpoints, and replay list now include
+those exact modules. The full merged-package run is a separate gate.
+
+This verifies the general local-certificate implication, actual graph
+bijection, finite lopsided-conditioning theorem, and numerical inequalities.
+It does not yet verify either complete Frankl result. See
+[the scope and remaining obligations](frankl-formalization.md) and
+[the exact hosted receipt](frankl-foundations-hosted-receipt.json).

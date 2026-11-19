@@ -91,3 +91,9 @@ import Conjectures.MotzkinCyclicBasis
 import Conjectures.MotzkinCyclicExample
 import Conjectures.MotzkinCyclicScaling
 import Conjectures.MotzkinRationalCircle
+import Conjectures.FranklFamily
+import Conjectures.FranklLocalFibers
+import Conjectures.FranklLocalWeights
+import Conjectures.FranklIncidence
+import Conjectures.FranklArithmetic
+import Conjectures.FranklLopsided

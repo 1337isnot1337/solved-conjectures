@@ -488,6 +488,12 @@ modules=(
   Conjectures.MotzkinRationalCircle
   Conjectures.LineSizeGeneratingFunction
   Conjectures.MotzkinCyclicExample
+  Conjectures.FranklFamily
+  Conjectures.FranklLocalFibers
+  Conjectures.FranklLocalWeights
+  Conjectures.FranklIncidence
+  Conjectures.FranklArithmetic
+  Conjectures.FranklLopsided
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

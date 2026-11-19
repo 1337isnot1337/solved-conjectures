@@ -271,3 +271,20 @@ published in 14 modules; only its cache, packed oracle, helper, and first
 part have local source evidence so far. Its full hosted gate remains
 pending. See [the exact scope](five-speed-root179-candidate.md) and
 [component receipts](five-speed-receipts/hosted-component-index.json).
+
+
+## Frankl counting components — 19 November 2026
+
+Six proof modules were checked at `57d699c770471fc898850079bde384a269da5d4f` in
+[run 44475531664](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44475531664).
+All four component jobs rebuilt their exact source closures, audited all
+113 project theorem declarations using only `propext`, `Classical.choice`, and
+`Quot.sound`, and replayed all six kernel objects with the unchanged pinned
+checker. The accepted root, required endpoints, and replay list now include
+those exact modules. The full merged-package run is a separate gate.
+
+This verifies the general local-certificate implication, actual graph
+bijection, finite lopsided-conditioning theorem, and numerical inequalities.
+It does not yet verify either complete Frankl result. See
+[the scope and remaining obligations](frankl-formalization.md) and
+[the exact hosted receipt](frankl-foundations-hosted-receipt.json).

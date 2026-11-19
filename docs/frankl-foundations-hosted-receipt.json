@@ -1,0 +1,53 @@
+{
+  "commit": "57d699c770471fc898850079bde384a269da5d4f",
+  "workflow_run_id": 44475531664,
+  "status": "passed",
+  "scope": "Six Frankl components; neither complete Frankl result",
+  "source_sha256": {
+    "lean/Conjectures/FranklFamily.lean": "f2bd1a70c64b773feb39dcbc1c11e7dd8a40d2ec6fa48332f4820c3ca1197b6b",
+    "lean/Conjectures/FranklLocalFibers.lean": "88d71d763d4499a0ead755ee41790766a919db62612e482e5335a90c99d8081f",
+    "lean/Conjectures/FranklLocalWeights.lean": "c593c57d5e7d3563858708ec8752892b88db91ede626d87f55030ac79d2e0c4d",
+    "lean/Conjectures/FranklIncidence.lean": "c8a2f89dc3c33ac40fb149e771b6d8eb7ced6338e9470e54a2dab95a4f904abb",
+    "lean/Conjectures/FranklArithmetic.lean": "de2c6e31669d021b59cfa70ea46a405661964b24e4da714604e985fe072887a9",
+    "lean/Conjectures/FranklLopsided.lean": "ed6fdd352cfa9564c8417c785781115e45f7b94eb7aef1b22596519f7f72ecee",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953"
+  },
+  "jobs": [
+    {
+      "id": 135395197387,
+      "task": "incidence",
+      "modules": 1,
+      "theorems": 39
+    },
+    {
+      "id": 135395197401,
+      "task": "arithmetic",
+      "modules": 1,
+      "theorems": 10
+    },
+    {
+      "id": 135395197403,
+      "task": "local",
+      "modules": 3,
+      "theorems": 48
+    },
+    {
+      "id": 135395197429,
+      "task": "lopsided",
+      "modules": 1,
+      "theorems": 16
+    }
+  ],
+  "checks": [
+    "strict source compilation with warnings treated as errors",
+    "all-declaration transitive axiom whitelist",
+    "unchanged pinned checker replay of each complete local import closure"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "full_merged_package_gate": "pending separately"
+}

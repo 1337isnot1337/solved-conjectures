@@ -4,12 +4,13 @@ Work is coordinated in [issue 19](https://github.com/1337isnot1337/solved-conjec
 The original cyclic span-four theorem and both frequency bounds remain incomplete.
 Li remains deferred until the other results are fully verified.
 
-## Source-checked components
+## Checked components
 
-The following new sources passed local Lean 4.35.0 compilation with warnings
-treated as errors. They are not yet included in the accepted roots. The
-dedicated candidate workflow checks their complete project import closures,
-audits every theorem's transitive axioms, and runs the pinned kernel checker.
+The following sources passed local strict compilation and all four hosted
+component gates at `57d699c770471fc898850079bde384a269da5d4f`. Their exact import
+closures passed source compilation, the transitive axiom whitelist, and pinned
+kernel replay. They are registered in the accepted roots and full-package gate.
+The complete mathematical results remain incomplete.
 
 | Component | Exact scope |
 | --- | --- |

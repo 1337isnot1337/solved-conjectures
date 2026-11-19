@@ -9,6 +9,16 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FranklLocal.fiber_eq_compatible,
+    `FranklLocal.weighted_local_certificate_abundance,
+    `FranklIncidence.canonical_maximal,
+    `FranklIncidence.canonical_unionOfIndependentSet,
+    `FranklIncidence.absent_iff_occupied,
+    `FranklArithmetic.sufficient_test,
+    `FranklArithmetic.lopsided_criterion,
+    `FranklArithmetic.absence_bound,
+    `Frankl.Lopsided.conditional_card_bound,
+    `Frankl.Lopsided.query_card_bound,
     `LineSize.TupleEncoding.decodeCode_injective,
     `LineSize.TupleEncoding.decodeCode_surjective,
     `LineSize.TupleEncoding.coreCodeEquiv_cost,

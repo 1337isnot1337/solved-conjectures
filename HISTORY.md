@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-19 — Checked Frankl counting foundations
+
+Registered six proof modules after their exact hosted source, transitive axiom,
+and pinned-kernel gates passed at `57d699c7`. The packet proves the general
+weighted local-certificate implication, the incidence-graph bijection, finite
+lopsided conditioning, and the all-parameter numerical criterion. Both full
+Frankl results remain incomplete. [Receipt](docs/frankl-foundations-hosted-receipt.json).
+
 ## 2026-11-19 — Searchable collection website
 
 Added a GitHub Pages site with search, subject filters, and individual result pages.
