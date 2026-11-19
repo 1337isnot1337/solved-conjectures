@@ -2,6 +2,8 @@
 
 **Status: complete for the formalized statements.**
 
+Lean formalization contributed by [aadrianvv](https://github.com/aadrianvv) in [PR #35](https://github.com/1337isnot1337/solved-conjectures/pull/35).
+
 Lean proves the structural facts about the explicit 31-vertex tree, the full
 `e₃e₂¹⁴` coefficient, the count `b_{(3,2¹⁴)}(T) = 8`, and that all 6,842
 connected partition types occur. There is no `sorry`, `admit`,
