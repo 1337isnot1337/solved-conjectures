@@ -56,6 +56,7 @@ theorem exists_tight_gram_data {n : ℕ} (v : Fin (n+1) → ℕ)
   have hnonzero : ∀ i, w 0 i ≠ 0 := by
     intro i
     rw [hwzero]
+    change (v i : ℤ) ≠ 0
     exact_mod_cast (hpositive i).ne'
   have hline : spaceValue (Submodule.span ℝ {integerVector (w 0)}) ≤
       (1 : ℝ) / (n+2 : ℕ) := by
@@ -85,11 +86,15 @@ theorem exists_tight_gram_data {n : ℕ} (v : Fin (n+1) → ℕ)
     have hden : n+1+1-r = (n+1-r)+1 := by omega
     have hbound : (KZProduct.kzBound (n+1) r : ℝ) =
         4 * ((1 : ℝ) / ((n+1-r : ℕ)+1) - 1 / (n+2 : ℕ))^2 := by
-      norm_num [KZProduct.kzBound, hden, Nat.cast_add]
+      unfold KZProduct.kzBound
+      rw [hden, show n+1+1 = n+2 by omega]
+      norm_num [Nat.cast_add]
     rw [hbound]
-    simpa only [Fintype.card_fin, NearestPlane.tailGramSum,
-      NearestPlane.euclideanVector, KZBasis.realFamily, KZBasis.realVector,
-      integerVector, w, t] using hprefix
+    have hfamily : (fun j => NearestPlane.euclideanVector (w j)) =
+        KZBasis.realFamily B := by
+      funext j
+      rfl
+    simpa only [Fintype.card_fin, NearestPlane.tailGramSum, hfamily, t] using hprefix
   · intro i hi
     exact hratio (i+1) (by omega) (by omega)
   · apply (eq_div_iff (squaredNorm_pos v hpositive).ne').mpr
