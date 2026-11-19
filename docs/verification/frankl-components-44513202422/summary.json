@@ -1,0 +1,22 @@
+{
+  "accepted_registry_changed": false,
+  "passed_groups": {
+    "tree-configuration-messages": {
+      "archive_sha256": "32e1a239d4fbcce78e4caa14d6436c314ae08fc42a4a325606ed0d92f588f7a8",
+      "artifact_id": 14525225413,
+      "artifact_name": "frankl-tree-configuration-messages",
+      "private_chunks": 0,
+      "project_modules": 9,
+      "receipt": "docs/verification/frankl-components-44513202422/tree-configuration-messages.json",
+      "receipt_sha256": "79e007d38b32abd5c518a2f630fcebc84140a07869c8731d5ebcecc04a2d0659",
+      "required_endpoints": 30
+    }
+  },
+  "profile_inventory": "docs/frankl-tree-configuration-messages-sources.json",
+  "profile_inventory_sha256": "08671313c5e3263d2db3d66daa533fddee9eb87cefc0cf8d0886371a6678c3aa",
+  "schema": "frankl-exact-component-receipts-v1",
+  "scope": "Actual Occupied/Dom/NeedsParent/Finished vertex-set counts satisfy the real childrenMessage recurrence, including an explicit finite child enumeration, three-child root occupation ratio, and nonnegative boundary-ray cone membership. No numerical degree certificate or finite-graph unfolding assumption is imported.",
+  "source_commit": "f1b589498244d12da2419b7f611e7fcdc9582451",
+  "source_run_id": 44513202422,
+  "workflow": "Lean Frankl actual tree configuration messages"
+}
