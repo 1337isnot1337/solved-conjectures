@@ -52,7 +52,7 @@ theorem common_multiplier_card_le_nine_of_ne_twenty_seven
     (f : Rows2 G) (hf : IsLegendrePair f) (hcard : Fintype.card G = 1197)
     (hnot : Nat.card (commonMultiplierGroup f) ≠ 27) :
     Nat.card (commonMultiplierGroup f) ≤ 9 :=
-  (divisor_twenty_seven_le_nine_or_eq _ (common_multiplier_card_dvd_twenty_seven f hf hcard))
-    .resolve_right hnot
+  (divisor_twenty_seven_le_nine_or_eq _
+    (common_multiplier_card_dvd_twenty_seven f hf hcard)).resolve_right hnot
 
 end HadamardLegendre

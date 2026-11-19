@@ -27,7 +27,7 @@ theorem exists_surjective_quotient_three [Finite R] (hR : Nat.card R = 9) :
   let : Nontrivial R := Finite.one_lt_card_iff_nontrivial.mp (by rw [hR]; decide)
   obtain ⟨p, hp, hpd, π, hπ⟩ := exists_surjective_prime_quotient R
   have hp3 : p ∣ 3 := hp.dvd_of_dvd_pow
-    (show p ∣ 3 ^ 2 by simpa only [hR] using hpd)
+    (show p ∣ 3 ^ 2 by simpa only [hR, show (3 : ℕ) ^ 2 = 9 by decide] using hpd)
   have hpeq : p = 3 :=
     ((show Nat.Prime 3 by decide).eq_one_or_self_of_dvd p hp3).resolve_left hp.ne_one
   subst p
@@ -38,10 +38,13 @@ theorem nonzero_hom_zmod_three_surjective (π : R →+ ZMod 3) (hπ : π ≠ 0) 
   classical
   obtain ⟨x, hx⟩ : ∃ x : R, π x ≠ 0 := by
     by_contra h
-    push_neg at h
+    push Not at h
     exact hπ (AddMonoidHom.ext h)
   have hvalues (z : ZMod 3) : z = 0 ∨ z = 1 ∨ z = 2 := by
-    fin_cases z <;> simp
+    fin_cases z
+    · exact Or.inl rfl
+    · exact Or.inr (Or.inl rfl)
+    · exact Or.inr (Or.inr rfl)
   have hx' : π x = 1 ∨ π x = 2 := (hvalues (π x)).resolve_left hx
   intro z
   rcases hvalues z with rfl | rfl | rfl
@@ -57,6 +60,7 @@ theorem nonzero_hom_zmod_three_surjective (π : R →+ ZMod 3) (hπ : π ≠ 0) 
       decide
     · exact ⟨x, h⟩
 
+@[instance_reducible]
 def quotientCharacterAction {U : Type*} [Group U]
     (φ : U →* Multiplicative (AddAut R)) : MulAction U (R →+ ZMod 3) where
   smul u χ := χ.comp (φ u).toAdd.symm.toAddMonoidHom
@@ -96,7 +100,9 @@ theorem exists_invariant_quotient_three [Finite R] (hR : Nat.card R = 9)
     change (3 : ℕ) • χ.toAdd = 0
     ext x
     change (3 : ℕ) • χ.toAdd x = 0
-    simp [nsmul_eq_mul]
+    rw [nsmul_eq_mul]
+    change (3 : ZMod 3) * χ.toAdd x = 0
+    rw [show (3 : ZMod 3) = 0 by decide, zero_mul]
   have hdiv : 3 ∣ Nat.card X :=
     hX.card_eq_or_dvd.resolve_left Finite.one_lt_card.ne'
   let : MulAction U X := quotientCharacterAction φ

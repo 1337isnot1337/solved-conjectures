@@ -32,6 +32,7 @@ theorem fourierSum_conjugate_mul (χ : AddChar G K) (τ : K ≃ₐ[ℚ] K)
         ∑ x, ∑ y, ((f x : K) * χ (-x)) * ((f y : K) * χ y) := by
       simp only [fourierSum, map_sum, map_mul, map_intCast, hτ,
         Finset.sum_mul, Finset.mul_sum]
+      rw [Finset.sum_comm]
     _ = ∑ x, ∑ u, ((f x : K) * (f (x + u) : K)) * χ u := by
       apply Finset.sum_congr rfl
       intro x hx

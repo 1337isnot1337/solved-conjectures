@@ -114,9 +114,12 @@ theorem borderedMatrix_gram (π : G →+ Q) (hπ : Function.Surjective π)
       Matrix.transpose_transpose, Matrix.transpose_zero] using h
   simp only [borderedMatrix, Matrix.fromBlocks_transpose, Matrix.fromBlocks_multiply]
   rw [htop, hupper, hlower, hbottom]
-  ext u v
-  rcases u with u | u <;> rcases v with v | v <;>
-    simp [Matrix.one_apply]
+  simpa only [Matrix.fromBlocks_one, smul_zero] using
+    (Matrix.fromBlocks_smul (4 * (Fintype.card G : ℤ) + 12)
+      (1 : Matrix (Fin 12) (Fin 12) ℤ)
+      (0 : Matrix (Fin 12) (BlockIndex G) ℤ)
+      (0 : Matrix (BlockIndex G) (Fin 12) ℤ)
+      (1 : Matrix (BlockIndex G) (BlockIndex G) ℤ)).symm
 
 end Gram
 

@@ -110,7 +110,7 @@ def cyclotomicCharacter : AddChar (ZMod p) K :=
 
 theorem cyclotomicCharacter_nontrivial : cyclotomicCharacter p K ≠ 1 := by
   rw [AddChar.zmod_char_ne_one_iff, cyclotomicCharacter_one]
-  exact (zeta_spec p ℚ K).ne_one (Fact.out : Nat.Prime p).ne_one
+  exact (zeta_spec p ℚ K).ne_one (Fact.out : Nat.Prime p).one_lt
 
 theorem cyclotomicConjugation_character (a : ZMod p) :
     cyclotomicConjugation p K (cyclotomicCharacter p K a) =

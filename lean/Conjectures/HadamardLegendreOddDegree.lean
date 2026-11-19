@@ -58,7 +58,9 @@ theorem rational_matrix_sum_two_squares {ι : Type*} [Fintype ι] [DecidableEq �
       algebraMap ℚ GaussianRational q * (if i = j then 1 else 0)
     by_cases hij : i = j
     · simp only [ite_eq_left hij, mul_one]
+      rfl
     · simp only [ite_eq_right hij, mul_zero]
+      rfl
   have hstar : (M.map star).det = star M.det :=
     ((starRingEnd GaussianRational).map_det M).symm
   have hdet := congrArg Matrix.det hprod

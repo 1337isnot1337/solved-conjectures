@@ -36,6 +36,7 @@ theorem reindexRows_pairCorrelation [Fintype G] [Fintype H]
   apply Fintype.sum_equiv e.symm.toEquiv
   intro y
   rw [map_add]
+  rfl
 
 theorem reindexRows_isLegendrePair [Fintype G] [Fintype H]
     (e : G ≃+ H) (f : Rows2 G) (hf : IsLegendrePair f) :

@@ -126,10 +126,10 @@ theorem core_gram_of_correlation_formula
     by_cases hxy : x = y
     · subst y
       simp [hcorrelation, blockOnesG, blockOnes, kernelBlocks]
-      <;> ring
+      ring
     · by_cases hp : π x = π y <;>
         simp [hcorrelation, hxy, hp, map_sub, sub_eq_zero,
-          blockOnesG, blockOnes, kernelBlocks] <;> ring
+          blockOnesG, blockOnes, kernelBlocks]
   · simp [hi, blockOnesG, blockOnes, kernelBlocks]
 
 end Gram

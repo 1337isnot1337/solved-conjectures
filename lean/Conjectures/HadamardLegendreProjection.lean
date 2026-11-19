@@ -34,7 +34,10 @@ theorem nine_nsmul_eq_zero_iff_snd_eq_zero (hR : Nat.card R = 9)
     change (9 : ℕ) • x.2 = 0 at hz
     have hscale := congrArg (fun z : ZMod 133 => (74 : ℕ) • z) hz
     have hinv : (74 : ZMod 133) * 9 = 1 := by decide
-    simpa only [nsmul_eq_mul, ← mul_assoc, hinv, one_mul, mul_zero] using hscale
+    simp only [nsmul_eq_mul, mul_zero] at hscale
+    change (74 : ZMod 133) * ((9 : ZMod 133) * x.2) = 0 at hscale
+    rw [← mul_assoc, hinv, one_mul] at hscale
+    exact hscale
   · intro hz
     exact Prod.ext hr (by change (9 : ℕ) • x.2 = 0; rw [hz, nsmul_zero])
 
@@ -230,7 +233,9 @@ theorem card_dvd_twenty_seven_of_injective_projection {U : Type*} [Group U]
   have hdiv : Nat.card U ∣ 108 := by
     simpa only [units133_card] using Subgroup.card_dvd_of_injective φ hφ
   have hnot : ¬2 ∣ Nat.card U := by
-    simpa only [← even_iff_two_dvd] using hodd.not_even
+    rintro ⟨m, hm⟩
+    obtain ⟨k, hk⟩ := hodd
+    omega
   have hcop : Nat.Coprime (Nat.card U) 4 :=
     ((Nat.prime_two.coprime_iff_not_dvd.mpr hnot).symm).pow_right 2
   exact hcop.dvd_mul_right.mp (show Nat.card U ∣ 27 * 4 from hdiv)

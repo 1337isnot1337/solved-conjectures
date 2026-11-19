@@ -26,10 +26,15 @@ def automorphismFixedSubgroup (u : Multiplicative (AddAut R)) : AddSubgroup R wh
   zero_mem' := map_zero u.toAdd
   add_mem' := by
     intro x y hx hy
-    simpa only [map_add, hx, hy]
+    change u.toAdd x = x at hx
+    change u.toAdd y = y at hy
+    change u.toAdd (x + y) = x + y
+    rw [map_add, hx, hy]
   neg_mem' := by
     intro x hx
-    simpa only [map_neg, hx]
+    change u.toAdd x = x at hx
+    change u.toAdd (-x) = -x
+    rw [map_neg, hx]
 
 @[simp]
 theorem mem_automorphismFixedSubgroup (u : Multiplicative (AddAut R)) (x : R) :
@@ -73,9 +78,9 @@ private theorem prime_fixed_count_nine (p k : ℕ) (hp : p.Prime) (hp2 : p ≠ 2
   rw [hdivisors] at hmem
   simp only [Finset.mem_insert, Finset.mem_singleton] at hmem
   rcases hmem with rfl | rfl | rfl
-  · interval_cases p <;> norm_num [Nat.ModEq] at hp hp2 hmod
+  · interval_cases p <;> norm_num [Nat.ModEq] at *
   · have hp3 : p = 3 := by
-      interval_cases p <;> norm_num [Nat.ModEq] at hp hp2 hmod ⊢
+      interval_cases p <;> norm_num [Nat.ModEq] at *
     exact ⟨hp3, rfl⟩
   · omega
 
@@ -97,7 +102,7 @@ theorem prime_automorphism_fixed_card_nine [Finite R] (hR : Nat.card R = 9)
     exact (automorphismFixedSubgroup u).card_addSubgroup_dvd_card
   obtain ⟨x, hx⟩ : ∃ x : R, u.toAdd x ≠ x := by
     by_contra h
-    push_neg at h
+    push Not at h
     apply hne
     change u.toAdd = 0
     ext x
@@ -146,8 +151,9 @@ theorem order_three_difference_range_fixed [Finite R] (hR : Nat.card R = 9)
   let D := (automorphismDifference u).range
   let ρ : Multiplicative (AddAut R) →* Equiv.Perm R :=
     AddMonoidHom.toMultiplicativeLeft (AddAut.toPerm R)
-  let σ : Equiv.Perm D :=
-    (ρ u).subtypePerm (automorphismDifference_range_invariant u)
+  have hinvariant : ∀ x : R, (ρ u) x ∈ D ↔ x ∈ D :=
+    automorphismDifference_range_invariant u
+  let σ : Equiv.Perm D := (ρ u).subtypePerm hinvariant
   have hpow : (ρ u) ^ 3 = 1 := by rw [← map_pow, hu, map_one]
   have hσpow : σ ^ 3 = 1 := by
     dsimp only [σ]

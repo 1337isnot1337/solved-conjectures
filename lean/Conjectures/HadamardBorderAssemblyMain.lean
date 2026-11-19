@@ -94,12 +94,14 @@ theorem exists_hadamard_2396_of_correlation
     ∃ H : Matrix (Fin 2396) (Fin 2396) ℤ,
       SignMatrix H ∧ H * Hᵀ = (2396 : ℤ) • 1 := by
   have hcard := fintype_card_eq_card_mul_kernel_card π hπ
-  norm_num [hQ, hkernel] at hcard
-  have horder : 4 * Fintype.card G + 12 = 2396 := by rw [hcard]; norm_num
+  rw [hQ, hkernel] at hcard
+  norm_num at hcard
+  have horder : 4 * Fintype.card G + 12 = 2396 := by rw [hcard]
   have hscalar : 4 * (Fintype.card G : ℤ) + 12 = (2396 : ℤ) := by
     rw [hcard]
     norm_num
-  simpa only [horder, hscalar] using
+  rw [← horder]
+  simpa only [hscalar] using
     exists_hadamard_fin_of_correlation π hπ f hQ hf hcorr
 
 end HadamardBorderConstruction

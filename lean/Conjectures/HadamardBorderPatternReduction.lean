@@ -88,25 +88,26 @@ theorem exists_normalized_sign_rows_with_pattern
     exists_normalized_sign_rows_with_equation π hπ f hQ hf hcorr
   have hd : d % 2 = 1 := by
     have h := compressed_parity π hπ (transformRows f σ ε t) hf' 0 0
-    rw [h0] at h
-    norm_num [hkernel] at h
+    rw [h0, hkernel] at h
+    norm_num at h
     exact h
   have ha : a % 2 = 1 := by
     have h := compressed_parity π hπ (transformRows f σ ε t) hf' 1 0
-    rw [h1] at h
-    norm_num [hkernel] at h
+    rw [h1, hkernel] at h
+    norm_num at h
     omega
   have hb : b % 2 = 1 := by
     have h := compressed_parity π hπ (transformRows f σ ε t) hf' 2 0
-    rw [h2] at h
-    norm_num [hkernel] at h
+    rw [h2, hkernel] at h
+    norm_num at h
     omega
   have hc : c % 2 = 1 := by
     have h := compressed_parity π hπ (transformRows f σ ε t) hf' 3 0
-    rw [h3] at h
-    norm_num [hkernel] at h
+    rw [h3, hkernel] at h
+    norm_num at h
     omega
-  norm_num [hkernel] at heq
+  rw [hkernel] at heq
+  norm_num at heq
   obtain ⟨p,hp,hpd,hperm⟩ := exists_pattern_of_odd_equation d a b c hd ha hb hc heq
   exact ⟨k,d,σ,ε,t,a,b,c,p,hσ,hεzero,ht0,hε,hf',hpreserve,h0,h1,h2,h3,
     heq,hp,hpd,hperm⟩

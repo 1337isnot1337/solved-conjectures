@@ -40,10 +40,10 @@ theorem group_card_three_cover {D : Type*} [AddCommGroup D] [Finite D]
   let S : Finset D := {-a, a, 0}
   have hS : S.card = 3 := by
     change ({-a, a, 0} : Finset D).card = 3
-    rw [Finset.card_insert_of_not_mem (by
+    rw [Finset.card_insert_of_notMem (by
       simp only [Finset.mem_insert, Finset.mem_singleton]
       exact not_or.mpr ⟨hneg, hneg0⟩)]
-    rw [Finset.card_insert_of_not_mem (by
+    rw [Finset.card_insert_of_notMem (by
       simpa only [Finset.mem_singleton] using ha), Finset.card_singleton]
   have hSuniv : S = Finset.univ :=
     Finset.eq_of_subset_of_card_le (Finset.subset_univ S) (by
@@ -152,7 +152,9 @@ theorem order_three_compressed_square_nonzero [Fintype R]
         by_cases h : π y = q
         · simp only [ite_eq_left h, hconstant y h]
         · simp only [ite_eq_right h]
-      _ = f x * 3 := by rw [compress_const π hπ, hker]
+      _ = f x * 3 := by
+        rw [compress_const π hπ, hker]
+        norm_num
   change (compress π f q) ^ 2 = 9
   rw [hcompress]
   rcases hsign x with h | h <;> norm_num [h]
@@ -182,14 +184,15 @@ theorem order_three_compressed_energy_ge [Fintype R]
   have hpoint (q : R ⧸ automorphismFixedSubgroup u) :
       9 - 8 * (if q = 0 then (1 : ℤ) else 0) ≤ (compress π f q) ^ 2 := by
     by_cases hq : q = 0
-    · simpa only [hq, ite_true, mul_one] using hzero
+    · simpa only [hq, ite_true, mul_one, show (9 : ℤ) - 8 = 1 by decide] using hzero
     · rw [order_three_compressed_square_nonzero hR u hu hne f hsign hf q hq]
       simp only [ite_eq_right hq, mul_zero, sub_zero, le_refl]
   have hsum := Finset.sum_le_sum
     (fun q (_ : q ∈ (Finset.univ : Finset (R ⧸ automorphismFixedSubgroup u))) => hpoint q)
   have hQ : Fintype.card (R ⧸ automorphismFixedSubgroup u) = 3 := by
     simpa only [Nat.card_eq_fintype_card] using order_three_quotient_card hR u hu hne
-  simpa only [Finset.sum_sub_distrib, ← Finset.mul_sum, Fintype.sum_ite_eq',
-    Finset.sum_const, Finset.card_univ, hQ, nsmul_eq_mul] using hsum
+  norm_num only [Finset.sum_sub_distrib, ← Finset.mul_sum, Fintype.sum_ite_eq',
+    Finset.sum_const, Finset.card_univ, hQ, nsmul_eq_mul] at hsum
+  exact hsum
 
 end HadamardLegendre

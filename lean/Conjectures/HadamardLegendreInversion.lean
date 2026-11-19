@@ -72,12 +72,12 @@ theorem no_legendre_inverting_prime_quotient
       cyclotomicConjugation p K (χ x) = χ (-x) := by
     change cyclotomicConjugation p K (cyclotomicCharacter p K (π x)) =
       cyclotomicCharacter p K (π (-x))
-    rw [map_neg]
+    rw [map_neg π]
     exact cyclotomicConjugation_character p K (π x)
   have hχe (x : G) : χ (e x) = χ (-x) := by
     change cyclotomicCharacter p K (π (e x)) =
       cyclotomicCharacter p K (π (-x))
-    rw [he, map_neg]
+    rw [he, map_neg π]
   exact no_legendre_inverted_character p hp K χ hχ hτχ e hχe f hf hfe hcard
 
 end HadamardLegendre

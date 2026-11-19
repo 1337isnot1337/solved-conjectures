@@ -54,9 +54,10 @@ theorem sum_comp_blockProjection (π : G →+ Q) (hπ : Function.Surjective π)
     (∑ x : BlockIndex G, w (blockProjection π x)) =
       (Nat.card π.ker : ℤ) * ∑ q : BlockIndex Q, w q := by
   simp only [Fintype.sum_prod_type, blockProjection]
-  simp_rw [sum_comp_quotient π hπ]
-  exact (Finset.mul_sum Finset.univ
-    (fun i : Fin 4 => ∑ q : Q, w (i, q)) (Nat.card π.ker : ℤ)).symm
+  rw [Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro i hi
+  exact sum_comp_quotient π hπ (fun q => w (i, q))
 
 /-- Lifting the columns of an actual border repeats each quotient column
 exactly as many times as there are elements in the kernel. -/

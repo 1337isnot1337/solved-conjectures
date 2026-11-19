@@ -1,5 +1,6 @@
 import Conjectures.HadamardLegendreBasic
 import Conjectures.HadamardBorderCompression
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
 
 /-!
 # Compression of an actual Legendre pair
@@ -56,6 +57,7 @@ theorem compressed_pairCorrelation_zero
     (hf : IsLegendrePair f) :
     pairCorrelation (fun i => compress π (f i)) 0 =
       2 * ((Fintype.card G : ℤ) + 1) - 2 * (Nat.card π.ker : ℤ) := by
+  classical
   have hcount : (∑ u : G, if π u = 0 then (1 : ℤ) else 0) =
       (Nat.card π.ker : ℤ) := compress_one π hπ 0
   rw [pairCorrelation_compress_eq_fiber_sum]
@@ -85,7 +87,7 @@ theorem compressed_pairCorrelation_formula
         if t = 0 then 2 * ((Fintype.card G : ℤ) + 1) else 0 := by
   by_cases ht : t = 0
   · subst t
-    rw [compressed_pairCorrelation_zero π hπ f hf, ite_true]
+    rw [compressed_pairCorrelation_zero π hπ f hf, ite_eq_left rfl]
     ring
   · simpa only [ite_eq_right ht, add_zero] using
       compressed_pairCorrelation_nonzero π hπ f hf t ht
@@ -98,6 +100,7 @@ theorem compressed_pair_energy
   simpa only [pairCorrelation, correlation, add_zero, pow_two] using
     compressed_pairCorrelation_zero π hπ f hf
 
+omit [Fintype Q] in
 theorem abs_compress_le_kernel_card
     (π : G →+ Q) (hπ : Function.Surjective π) (f : G → ℤ)
     (hf : SignValued f) (q : Q) :
@@ -118,6 +121,7 @@ theorem compressed_rowSum (π : G →+ Q) (f : G → ℤ) :
     rowSum (compress π f) = rowSum f :=
   sum_compress_eq_sum π f
 
+omit [Fintype Q] in
 theorem compress_equivariant (π : G →+ Q)
     (e : G ≃+ G) (v : Q ≃+ Q) (hπe : ∀ x, π (e x) = v (π x))
     (f : G → ℤ) (hf : ∀ x, f (e x) = f x) (q : Q) :

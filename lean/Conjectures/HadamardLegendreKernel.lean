@@ -62,6 +62,8 @@ theorem no_legendre_order_three_on_nine_factor
   have henergy := compressed_pair_energy ρ hρ f hf
   rw [hcardG, hker] at henergy
   norm_num at henergy
+  change (∑ x : Q × ZMod 133, (compress ρ (f 0) x) ^ 2) +
+    (∑ x : Q × ZMod 133, (compress ρ (f 1) x) ^ 2) = 2390 at henergy
   have hrow : 2527 ≤ ∑ x : Q × ZMod 133, (compress ρ (f 0) x) ^ 2 := by
     calc
       2527 = ∑ _z : ZMod 133, (19 : ℤ) := by norm_num
@@ -79,7 +81,6 @@ theorem no_legendre_order_three_on_nine_factor
         rw [compress_prodMap_id]
   have hrow1 : 0 ≤ ∑ x : Q × ZMod 133, (compress ρ (f 1) x) ^ 2 :=
     Finset.sum_nonneg (fun _ _ => sq_nonneg _)
-  rw [Fin.sum_univ_two] at henergy
   omega
 
 theorem multiplierProjection133_injective_on_odd_fixed
@@ -120,10 +121,12 @@ theorem multiplierProjection133_injective_on_odd_fixed
       rw [← map_pow, ← map_pow, hkp, map_one, map_one]
     have hp2 : p ≠ 2 := by
       intro hp2
-      apply hodd.not_even
-      apply even_iff_two_dvd.mpr
-      rw [← hp2]
-      exact hpd.trans φ.ker.card_subgroup_dvd_card
+      have htwo : 2 ∣ Nat.card U := by
+        rw [← hp2]
+        exact hpd.trans φ.ker.card_subgroup_dvd_card
+      obtain ⟨m, hm⟩ := htwo
+      obtain ⟨n, hn⟩ := hodd
+      omega
     have hp3 := (prime_automorphism_fixed_card_nine hR
       (nineProjection133 hR (κ k)) hp hp2 hninepow hnine).1
     have hpow3 : (nineProjection133 hR (κ k)) ^ 3 = 1 := by

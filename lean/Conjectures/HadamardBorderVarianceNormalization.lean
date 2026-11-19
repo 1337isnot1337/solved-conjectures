@@ -99,9 +99,9 @@ theorem exists_normalized_sign_rows_with_equation
   have hsum (v : ℤ) :
       (∑ q : Q, (v + if q = 0 then 2 else 0)) = 4 * v + 2 := by
     rw [Finset.sum_add_distrib]
-    simp [hQ, nsmul_eq_mul]
+    simp [hQ]
   have hs0 : (∑ q, compress π (transformRows f σ ε t 0) q) = 4 * d := by
-    simp [h0, hQ, nsmul_eq_mul]
+    simp [h0, hQ]
   have hs1 : (∑ q, compress π (transformRows f σ ε t 1) q) = 4 * a + 2 := by
     simpa only [h1] using hsum a
   have hs2 : (∑ q, compress π (transformRows f σ ε t 2) q) = 4 * b + 2 := by

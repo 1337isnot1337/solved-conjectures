@@ -43,7 +43,7 @@ theorem involution_has_inverting_prime_quotient
   classical
   have hex : ∃ x : G, e x ≠ x := by
     by_contra h
-    push_neg at h
+    push Not at h
     apply hne
     ext x
     exact h x
@@ -72,11 +72,16 @@ theorem involution_has_inverting_prime_quotient
 
 theorem prime_divisor_1197_mod_four_three (p : ℕ) (hp : Nat.Prime p)
     (hd : p ∣ 1197) : p % 4 = 3 := by
-  have hm : p ∈ Nat.primeFactors 1197 :=
-    hp.mem_primeFactors hd (by decide)
-  have hpf : Nat.primeFactors 1197 = ({3, 7, 19} : Finset ℕ) := by decide
-  rw [hpf] at hm
-  simp only [Finset.mem_insert, Finset.mem_singleton] at hm
-  rcases hm with rfl | rfl | rfl <;> decide
+  have hd' : p ∣ (3 ^ 2 * 7) * 19 := hd
+  have hvalues : p = 3 ∨ p = 7 ∨ p = 19 := by
+    rcases hp.dvd_mul.mp hd' with h37 | h19
+    · rcases hp.dvd_mul.mp h37 with h3 | h7
+      · exact Or.inl (((show Nat.Prime 3 by decide).eq_one_or_self_of_dvd p
+          (hp.dvd_of_dvd_pow h3)).resolve_left hp.ne_one)
+      · exact Or.inr (Or.inl (((show Nat.Prime 7 by decide).eq_one_or_self_of_dvd p h7).resolve_left
+          hp.ne_one))
+    · exact Or.inr (Or.inr (((show Nat.Prime 19 by decide).eq_one_or_self_of_dvd p h19).resolve_left
+        hp.ne_one))
+  rcases hvalues with rfl | rfl | rfl <;> decide
 
 end HadamardLegendre

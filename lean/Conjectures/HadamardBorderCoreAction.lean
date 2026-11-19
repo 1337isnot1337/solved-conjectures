@@ -74,7 +74,7 @@ theorem positiveHankel_action_of_normalized_compress (π : G →+ Q) (f : G → 
   have hbalance' : (∑ q, w (q - π x)) = 0 := by
     calc
       _ = ∑ q, w q := by
-        simpa only [sub_eq_add_neg] using
+        simpa only [Equiv.coe_addRight, sub_eq_add_neg] using
           Equiv.sum_comp (Equiv.addRight (-π x)) w
       _ = 0 := hbalanced
   calc
@@ -143,7 +143,7 @@ theorem coreBlocks_action_of_normalized (π : G →+ Q) (f : Rows G)
 theorem gammaReflection_mul_apply {I : Type*}
     (Γ : Matrix (Fin 4) (Fin 4) ℤ) (M : Matrix (BlockIndex Q) I ℤ)
     (i : Fin 4) (q : Q) (k : I) :
-    (gammaReflection Γ * M) (i, q) k =
+    (gammaReflection (Q := Q) Γ * M) (i, q) k =
       ∑ j, Γ i j * M (j, -q) k := by
   have htest (r : Q) : q = -r ↔ r = -q := by
     constructor
@@ -169,21 +169,23 @@ theorem core_mul_inflateRows_of_normalized {I : Type*}
       inflateRows (blockProjection π) (gammaReflection gamma * M) := by
   ext ⟨i, x⟩ k
   change (∑ p : BlockIndex G, coreBlocks f i p.1 x p.2 * M (p.1, π p.2) k) =
-    (gammaReflection gamma * M) (i, π x) k
+    (gammaReflection (Q := Q) gamma * M) (i, π x) k
   rw [Fintype.sum_prod_type, gammaReflection_mul_apply]
   apply Finset.sum_congr rfl
   intro j hj
   exact coreBlocks_action_of_normalized π f d a hzero hother
     i j (fun q => M (j, q) k) (hbalanced j k) x
 
+omit [DecidableEq Q] in
 /-- Matrix balance gives the separate sum-zero identities for every column. -/
 theorem column_balance_of_blockOnes_mul_zero {I : Type*}
     (M : Matrix (BlockIndex Q) I ℤ) (hbalanced : blockOnes Q * M = 0) :
     ∀ j k, ∑ q, M (j, q) k = 0 := by
   intro j k
   have hentry := congrArg (fun A : Matrix (BlockIndex Q) I ℤ => A (j, 0) k) hbalanced
-  simpa [Matrix.mul_apply, blockOnes, Fintype.sum_prod_type,
-    ite_mul, Finset.sum_ite_irrel] using hentry
+  change (∑ p : BlockIndex Q, (if j = p.1 then (1 : ℤ) else 0) * M p k) = 0 at hentry
+  rw [Fintype.sum_prod_type, Finset.sum_comm] at hentry
+  simpa only [ite_mul, one_mul, zero_mul, Fintype.sum_ite_eq] using hentry
 
 /-- The fixed-border interface, with the actual transpose of its right border. -/
 theorem core_mul_inflate_transpose_of_normalized {I : Type*}
@@ -198,6 +200,7 @@ theorem core_mul_inflate_transpose_of_normalized {I : Type*}
   core_mul_inflateRows_of_normalized π f Eᵀ d a hzero hother
     (column_balance_of_blockOnes_mul_zero Eᵀ hbalanced)
 
+omit [Fintype Q] in
 /-- Sign rows supply the diagonal correlation; only nonzero correlations are inputs. -/
 theorem core_gram_of_two_level [DecidableEq G]
     (π : G →+ Q) (f : Rows G) (hf : ∀ i, SignValued (f i))
