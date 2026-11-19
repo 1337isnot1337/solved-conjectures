@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-19 — Partial results at Hadamard order 2396
+
+Added two verified symmetry restrictions, the finite enumeration and a conditional border construction for the open order-2396 existence problem. [Scope and checks](results/hadamard-2396/)
+
 ## 2026-11-19 — Relation formulas, Euler correction, and tuple reconstruction
 
 - Registered the Motzkin formulas for stated relation generators and

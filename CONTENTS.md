@@ -4,6 +4,10 @@
 
 Each entry links to the mathematical argument and its accompanying checks. The claims below retain the scope stated in the notes; formalization status is tracked separately.
 
+## Partial results on open problems
+
+- **Hadamard existence conjecture, order 2396 (open).** A length-1197 abelian Legendre pair has at most nine common multipliers. A common multiplier of order eleven is excluded for fixed length-598 bordered quadruples. A [fixed border](results/hadamard-2396/BORDER.md) reduces either abelian index-four construction to its core. Written proofs with exact computations, pending Lean formalization. [Proof](results/hadamard-2396/PROOF.md) · [Reproduce](results/hadamard-2396/)
+
 ## Solitaire and combinatorial games
 
 | Result | Finding | Lean | Evidence |

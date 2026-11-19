@@ -10,6 +10,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Verify partial results at Hadamard order 2396
+        working-directory: results/hadamard-2396
+        run: |
+          python -m pip install numpy==2.2.6
+          c++ -O2 -std=c++17 quotient133.cpp -o "$RUNNER_TEMP/hadamard133"
+          "$RUNNER_TEMP/hadamard133" > "$RUNNER_TEMP/hadamard133.pairs"
+          diff -u quotient133.pairs "$RUNNER_TEMP/hadamard133.pairs"
+          python audit.py
+          python border.py
       - name: Check conditional lonely-runner examples
         run: python3 results/loneliness-on-a-hyperplane/verify.py
       - name: Verify L-solitaire exhaustive finite checks

@@ -4,6 +4,10 @@ A growing collection of proofs, counterexamples, and reproducible verification c
 
 [Full catalogue](CONTENTS.md) · [Verification](docs/verification.md) · [Lean status](docs/lean-status.md) · [History](HISTORY.md)
 
+## Partial results on open problems
+
+- [Hadamard existence, order 2396](results/hadamard-2396/). Symmetry restrictions and a fixed border for a third construction. Existence at this order remains open.
+
 ## Results
 
 | Problem | Proof | Lean |
