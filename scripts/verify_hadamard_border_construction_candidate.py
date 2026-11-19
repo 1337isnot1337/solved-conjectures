@@ -21,6 +21,13 @@ from verify_lean_candidate import (
 
 
 TASKS = {
+    'patterns': ('Conjectures.HadamardBorderPatterns', [
+        'HadamardBorderPatterns.admissible_iff_mem_patterns',
+        'HadamardBorderPatterns.patterns_length',
+        'HadamardBorderPatterns.patterns_nodup',
+        'HadamardBorderPatterns.admissible_baseline_abs_bound',
+        'HadamardBorderPatterns.admissible_pair_sum_lower',
+    ]),
     'variance': ('Conjectures.HadamardBorderVariance', [
         'HadamardBorderVariance.variance_eq_pairwise',
         'HadamardBorderVariance.variance_nonneg',
@@ -107,9 +114,19 @@ TASKS = {
         'HadamardBorderConstruction.exists_hadamard_fin_of_correlation',
         'HadamardBorderConstruction.exists_hadamard_2396_of_correlation',
     ]),
+    'subgroup': ('Conjectures.HadamardBorderSubgroup', [
+        'HadamardBorderConstruction.borderedMatrix_sign',
+        'HadamardBorderConstruction.borderedMatrix_gram',
+        'HadamardBorderConstruction.bordered_index_card',
+        'HadamardBorderConstruction.exists_bordered_matrix_of_correlation',
+        'HadamardBorderConstruction.exists_hadamard_fin_of_correlation',
+        'HadamardBorderConstruction.exists_hadamard_2396_of_correlation',
+        'HadamardBorderConstruction.exists_hadamard_fin_of_subgroup_correlation',
+        'HadamardBorderConstruction.exists_hadamard_2396_of_subgroup_correlation',
+    ]),
 }
 
-DEFAULT_TASKS = ("assembly",)
+DEFAULT_TASKS = ("subgroup", "patterns")
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-border-construction-candidates.yml',
  'lean/lake-manifest.json',

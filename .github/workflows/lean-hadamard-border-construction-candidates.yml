@@ -21,6 +21,8 @@ on:
           - inflation
           - assembly-generic
           - assembly
+          - subgroup
+          - patterns
   push:
     paths:
       - 'lean/Conjectures/HadamardBorder*.lean'
