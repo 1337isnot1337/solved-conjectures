@@ -904,7 +904,7 @@ theorem coeff_29 : (LiElim.partFunOn Li.T Finset.univ W0).c1 = 29 := by
   rw [step30]
   have hS : ((((((((((((((((((((((((((((((Finset.univ.erase 30).erase 29).erase 28).erase 27).erase 26).erase 25).erase 24).erase 23).erase 22).erase 21).erase 20).erase 19).erase 18).erase 17).erase 16).erase 14).erase 13).erase 12).erase 11).erase 10).erase 9).erase 15).erase 8).erase 7).erase 6).erase 5).erase 4).erase 3).erase 2).erase 1) = ({0} : Finset (Fin 31)) := by decide
   rw [hS, partFunOn_zero]
-  simp only [W30, ite_eq_left rfl, T30, Matrix.cons_val_zero, Dual.snd_add]
+  simp only [W30, T30, Matrix.cons_val_zero, Dual.snd_add]
   norm_num
 
 end LiCompute

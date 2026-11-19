@@ -152,7 +152,7 @@ for k in range(1, 31):
     S = f'({S}.erase {l})'
 L.append(f'  have hS : {S} = ({{0}} : Finset (Fin 31)) := by decide')
 L.append('  rw [hS, partFunOn_zero]')
-L.append('  simp only [W30, ite_eq_left rfl, T30, Matrix.cons_val_zero, Dual.snd_add]')
+L.append('  simp only [W30, T30, Matrix.cons_val_zero, Dual.snd_add]')
 L.append('  norm_num')
 L.append('')
 L.append('end LiCompute')

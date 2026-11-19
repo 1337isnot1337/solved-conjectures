@@ -26,13 +26,13 @@ theorem coeff_eq_29 : (MvPolynomial.aeval wPoly (chromPoly T)).coeff 1 = 29 := b
     fin_cases i
     · change truncDual (1 + Polynomial.C (1/2) * Polynomial.X) = Dual.mk 1 (1/2)
       simp [truncDual_C, truncDual_X]
-      ext <;> simp <;> norm_num
+      ext <;> simp
     · change truncDual (-1 + Polynomial.C (1/2) * Polynomial.X) = Dual.mk (-1) (1/2)
       simp [truncDual_C, truncDual_X]
-      ext <;> simp <;> norm_num
+      ext <;> simp
     · change truncDual (-Polynomial.X) = Dual.mk 0 (-1)
-      simp [truncDual_C, truncDual_X]
-      ext <;> simp <;> norm_num
+      simp [truncDual_X]
+      ext <;> simp
   rw [hw]
   have hbridge : MvPolynomial.aeval LiCompute.wR (chromPoly T)
       = LiElim.partFunOn T Finset.univ (fun _ => LiCompute.wR) := by
