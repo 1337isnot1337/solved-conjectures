@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/usr/bin/stdbuf",
+    "-oL",
+    "-eL",
+    "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+    "-v",
+    "Conjectures"
+  ],
+  "elapsed_seconds": 109.65130530199997,
+  "exit_code": 0,
+  "peak_rss_kib": 4243216,
+  "timer_elapsed_seconds": 109.64,
+  "timer_exit_code": 0
+}

@@ -1,0 +1,3 @@
+PASS: 293 project theorems audited; all 0 private certificate-node proofs visible; only standard logical axioms
+PASS: 594 owned declarations audited transitively
+Private certificate-node counts by module: {}
