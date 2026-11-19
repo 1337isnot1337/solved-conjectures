@@ -465,3 +465,4 @@ import Conjectures.LonelinessSixSporadicBounds
 import Conjectures.LonelinessSevenSpectrumRealization
 import Conjectures.LonelinessEightSpectrumRealization
 import Conjectures.LonelinessHigherSpectrumBounds
+import Conjectures.LonelinessHigherTriangleConsequences

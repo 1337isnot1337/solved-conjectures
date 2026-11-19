@@ -2404,3 +2404,15 @@ checking. The full final theorem gate is pending; no result is registered or
 marked complete by this candidate. The structural population counter also
 passed an eight-case source and stock-kernel diagnostic with the original
 checker propositions. [Statements, census, and verification scope](five-runner-exact-candidate.md).
+
+### Higher-speed triangle consequences under primitive classification
+
+`Conjectures.LonelinessHigherTriangleConsequences` is registered after its exact gate passed at commit `788e2572b877750158bd471191ef9701c50b93bd`, [run 44545339492, job 135634276616](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44545339492/job/135634276616). Only the passing triangle job supports this checkpoint; the failed six-plane semantic and data-pilot jobs are excluded.
+
+The module constructs triangles in the actual integer distance graph for both six-speed product families, the signed six-speed third family, all nine six-speed sporadics, the stated seven/eight families, and all 27/17 higher sporadics. The vertices are `0, x, x+y`; the signed third-family identity supplies these vertices without a positivity assumption on its real parameters. The speed list itself remains positive. Permutations and gcd rescaling are handled explicitly.
+
+The final Zhu implications retain the precise primitive classification hypothesis: every positive, distinct, primitive list of length `k` with actual loneliness below `1/k` belongs to the stated candidate class. Under that hypothesis, for `k = 6, 7, 8`, a triangle-free integer distance graph is `k`-colorable, and a graph of chromatic number `k+1` contains a triangle. The classification hypothesis is not discharged here, so this checkpoint does not prove unconditional Zhu or exhaustive speed classification.
+
+The gate rebuilt all 34 project source modules with warnings treated as errors, audited all 1,024 owned/raw declarations (805 theorems, 36 private declarations, all 23 required endpoints), and independently replayed all 34 exact targets with the pinned stock kernel. Only `propext`, `Classical.choice`, and `Quot.sound` are allowed. Artifact `14541661556` has ZIP SHA256 `7dfc4798aed3e9a21b50010b5d9d00108d134253494fab8b41051d5bd0b60291`; the raw receipt SHA256 is `42b1e5aa90a5eef82cd785d70445d6d3273ed1fe13b62b26a62e119abf41dcba`. All 47 original source/control/configuration/helper files match the exact Git tree at the passing commit. Every archived source and object hash, original audit and declaration inventory, process record, and log hash was authenticated.
+
+Unchanged receipt, audit, logs, progress records, archive-member inventory, and preservation record are under [verification/higher-triangle-exact-44545339492](verification/higher-triangle-exact-44545339492/). Registration adds one module and 23 required endpoints. The combined accepted-root gate remains separate, and no result directory is marked complete.

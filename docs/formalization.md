@@ -769,3 +769,9 @@ normalization to target `LonelyRunnerBound 5`. It retains both primitive
 equality directions at `1/6`. Its final closure remains outside the accepted
 root until the fresh strict-source, all-owned/private-axiom, and exact
 stock-kernel gate passes. [Proof components and current scope](five-runner-exact-candidate.md).
+
+### Higher-speed triangle consequence checkpoint
+
+`LonelinessHigherTriangleConsequences` proves actual integer-distance-graph triangles for the stated six/seven/eight candidate families and all 53 sporadic rows, including the signed six-speed third family and gcd rescaling. Its Zhu implications for six, seven, and eight distances keep the exact primitive near-tight classification hypotheses explicit. They establish coloring and triangle consequences from those hypotheses; they do not establish the missing exhaustive classifications.
+
+Exact [run 44545339492, job 135634276616](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44545339492/job/135634276616) at `788e2572b877750158bd471191ef9701c50b93bd` passed 34 fresh strict source checks, the complete 1,024-declaration audit (805 theorems, 36 private declarations), all 23 required endpoints, and 34 independent exact stock-kernel targets. The original ZIP, receipt, source/control snapshot, object facets, audit, and logs were authenticated before preserving the unchanged evidence in [verification/higher-triangle-exact-44545339492](verification/higher-triangle-exact-44545339492/). Registration adds one module and 23 endpoints. Failed six-plane sibling jobs are excluded; the merged-package gate and unconditional result completion remain separate.
