@@ -16,6 +16,9 @@ open NumberField
 variable (K : Type*) [Field K] [NumberField K]
   [IsCyclotomicExtension {479} ℚ K]
 
+@[simp] theorem quadraticGeneratorInFixed479_coe :
+    (quadraticGeneratorInFixed479 K : K) = quadraticGenerator479 K := rfl
+
 theorem quadraticGeneratorInFixed479_sq :
     quadraticGeneratorInFixed479 K ^ 2 = (-479 : quadraticFixedField479 K) := by
   apply Subtype.ext
@@ -39,9 +42,9 @@ theorem quadraticModelToFixed479_injective :
   intro a ha
   apply quadraticGenerator479_not_rational K a
   have h := congrArg (fun x : quadraticFixedField479 K => (x : K)) ha
-  simpa only [IntermediateField.coe_smul, IntermediateField.coe_one,
-    Algebra.smul_def, mul_one, IntermediateField.coe_algebraMap_apply,
-    quadraticGeneratorInFixed479] using h
+  rw [IntermediateField.coe_smul, IntermediateField.coe_one,
+    Algebra.smul_def, mul_one, eq_ratCast, quadraticGeneratorInFixed479_coe] at h
+  exact h
 
 theorem quadraticModelToFixed479_surjective :
     Function.Surjective (quadraticModelToFixed479 K) := by
@@ -49,11 +52,13 @@ theorem quadraticModelToFixed479_surjective :
   obtain ⟨a, b, hx⟩ := quadraticFixedField479_coordinates K (x : K) x.property
   refine ⟨⟨a, b⟩, ?_⟩
   apply Subtype.ext
-  simpa only [quadraticModelToFixed479, QuadraticAlgebra.lift_apply_apply,
-    IntermediateField.coe_add, IntermediateField.coe_smul,
-    IntermediateField.coe_one, Algebra.smul_def, mul_one,
-    IntermediateField.coe_algebraMap_apply,
-    quadraticGeneratorInFixed479] using hx.symm
+  change ((a • (1 : quadraticFixedField479 K) +
+    b • quadraticGeneratorInFixed479 K : quadraticFixedField479 K) : K) = (x : K)
+  rw [IntermediateField.coe_add, IntermediateField.coe_smul,
+    IntermediateField.coe_smul, IntermediateField.coe_one,
+    Algebra.smul_def, Algebra.smul_def, mul_one, eq_ratCast, eq_ratCast,
+    quadraticGeneratorInFixed479_coe]
+  exact hx.symm
 
 def quadraticModelEquiv479 :
     QuadraticAlgebra ℚ (-479) 0 ≃ₐ[ℚ] quadraticFixedField479 K :=
@@ -65,9 +70,10 @@ def quadraticModelEquiv479 :
       (a : K) + (b : K) * quadraticGenerator479 K := by
   change ((a • (1 : quadraticFixedField479 K) +
     b • quadraticGeneratorInFixed479 K : quadraticFixedField479 K) : K) = _
-  simp only [IntermediateField.coe_add, IntermediateField.coe_smul,
-    IntermediateField.coe_one, Algebra.smul_def, mul_one,
-    IntermediateField.coe_algebraMap_apply, quadraticGeneratorInFixed479]
+  rw [IntermediateField.coe_add, IntermediateField.coe_smul,
+    IntermediateField.coe_smul, IntermediateField.coe_one,
+    Algebra.smul_def, Algebra.smul_def, mul_one, eq_ratCast, eq_ratCast,
+    quadraticGeneratorInFixed479_coe]
 
 omit [NumberField K] [IsCyclotomicExtension {479} ℚ K] in
 private theorem quadraticModel_norm479 (a b : ℚ) :
