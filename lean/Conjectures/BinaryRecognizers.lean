@@ -90,7 +90,7 @@ def Recognizer.emptyCheck {P : Nat → Nat → Prop} (A : Recognizer P) : Bool :
 
 theorem Recognizer.emptyCheck_correct {P : Nat → Nat → Prop} (A : Recognizer P) :
     A.emptyCheck=true ↔ ∀ n g, ¬P n g := by
-  letI : Fintype A.State := A.finite
+  let _ : Fintype A.State := A.finite
   rw [Recognizer.emptyCheck,DFA.emptyCheck_correct]
   constructor
   · intro h n g hp
