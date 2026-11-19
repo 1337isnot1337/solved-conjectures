@@ -171,7 +171,7 @@ theorem divisibility_card_pos (v : Fin 5 → ℕ)
     have hi : i ∈ divisibleIndices v l := by
       simp [divisibleIndices, Nat.dvd_of_mod_eq_zero hzero]
     rw [hempty] at hi
-    simpa using hi
+    simp at hi
   have hclear := ProductFamily.nonzero_residue_clearance l hl (List.ofFn v) hres
   have hlR : (0 : ℝ) < l := by exact_mod_cast (show 0 < l by omega)
   have hl6R : (l : ℝ) ≤ 6 := by exact_mod_cast hl6
