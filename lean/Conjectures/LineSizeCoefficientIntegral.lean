@@ -36,9 +36,9 @@ theorem integral_term (q : ℝ) (n m : ℕ) :
   rw [intervalIntegral.integral_const_mul,integral_frequency]
   by_cases hmn : m=n
   · subst m
-    rw [ite_eq_left rfl]
+    simp only [ite_eq_left (show n = n from rfl)]
     ring
-  · rw [ite_eq_right hmn,mul_zero]
+  · simp only [ite_eq_right hmn,mul_zero]
 
 theorem hasSum_integral_term {q : ℝ} (hq : 0 < q) (hq1 : q < 1) (n : ℕ) :
     HasSum (fun m : ℕ => ∫ theta in -Real.pi..Real.pi, term q n m theta)
