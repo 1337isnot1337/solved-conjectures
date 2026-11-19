@@ -4,48 +4,48 @@ A growing collection of proofs, counterexamples, and reproducible verification c
 
 [Full catalogue](CONTENTS.md) · [Verification](docs/verification.md) · [Lean status](docs/lean-status.md) · [History](HISTORY.md)
 
+## Results
+
+| Problem | Proof | Lean |
+| :--- | :---: | :---: |
+| [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | [Read](results/haralambis-three-differences/PROOF.md) | ✅ |
+| [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | [Read](results/loneliness-on-a-hyperplane/PROOF.md) | ⬜ |
+| [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | [Read](results/eight-speed-spectrum/PROOF.md) | ⬜ |
+| [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | [Read](results/seven-speed-spectrum/PROOF.md) | ⬜ |
+| [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | [Read](results/six-speed-spectrum/PROOF.md) | 🟡 |
+| [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | [Read](results/tight-eleven-to-fourteen/PROOF.md) | ⬜ |
+| [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | [Read](results/tight-nine-speeds/PROOF.md) | ⬜ |
+| [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | [Read](results/tight-eight-speeds/PROOF.md) | 🟡 |
+| [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | [Read](results/tight-seven-speeds/PROOF.md) | 🟡 |
+| [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | [Read](results/five-speed-spectrum/PROOF.md) | [🟡](results/five-speed-spectrum/FOUR_SPEED_GAP_LEAN.md) |
+| [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | [Read](results/symmetric-four-point-density/PROOF.md) | ✅ |
+| [Packing with two nonmixed gaps](results/nonmixed-gap-packing/) | [Read](results/nonmixed-gap-packing/PROOF.md) | ✅ |
+| [Two-difference Motzkin density](results/two-difference-motzkin/) | [Read](results/two-difference-motzkin/PROOF.md) · [Checked compact, relation, and cyclic theorems](docs/lean-status.md) | 🟡 |
+| [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | [Read](results/tight-six-speeds/PROOF.md) | 🟡 |
+| [Distance graphs with three missing differences](results/distance-graph-densities/) | [Read](results/distance-graph-densities/PROOF.md) | ✅ |
+| [Growing rectangles](results/rectangle-partition-asymptotics/) | [Read](results/rectangle-partition-asymptotics/PROOF.md) | ✅ |
+| [CUT Family B](results/cut-family-b/) | [Read](results/cut-family-b/PROOF.md) | ✅ |
+| [Line-size sets](results/erdos-607-line-sizes/) | [Read](results/erdos-607-line-sizes/PROOF.md) · [Checked geometry and formal generating function](docs/lean-status.md) | 🟡 |
+| [CUT with a preperiod](results/cut-arithmetic-periodicity/) | [Read](results/cut-arithmetic-periodicity/PROOF.md) | ✅ |
+| [L-solitaire limit shapes](results/l-solitaire-limit-shapes/) | [Read](results/l-solitaire-limit-shapes/PROOF.md) | ✅ |
+| [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) · [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334) | [Read](results/graffiti-pc-318/PROOF.md) | ✅ |
+| [Li's coefficient-sign prediction](results/li-coefficient-sign/) | [Read](results/li-coefficient-sign/PROOF.md) | ⬜ |
+| [Denominator degree](results/pham-denominator-degree/) | [Read](results/pham-denominator-degree/PROOF.md) | ✅ |
+| [Three-player War](results/spivey-multiplayer-war/) | [Read](results/spivey-multiplayer-war/PROOF.md) | ✅ |
+| [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | [Read](results/batista-egyptian-fractions/PROOF.md) | ✅ |
+
+✅ Formalized stated result · 🟡 Partial formalization · ⬜ Not formalized
+
+The [catalogue](CONTENTS.md) gives the exact claims, sources, and scope. The [Lean status report](docs/lean-status.md) distinguishes complete results from partial certificates and remaining dependencies. The solitaire checkmark covers both the fixed-scale counterexample and the corrected theorem for every diverging horizontal scale.
+
+These notes are unrefereed. Computational checks and Lean verification are distinct from peer review and priority claims.
+
 ## Partial results on open problems
 
 - [Frankl’s union-closed sets conjecture](results/frankl-generator-families/). A four-position generator theorem and a frequency bound for regular, high-girth incidence graphs.
 - [Lonely Runner Conjecture](results/lonely-runner-two-insertions/). Two arbitrary speeds can be adjoined to every Goddyn–Wong simultaneous acceleration.
 - [Erdős–Gyárfás power-of-two cycles](results/erdos-gyarfas-abelian-covers/). A sharp cycle-length bound for abelian covers of a singly subdivided tetrahedron.
 - [Hadamard existence, order 2396](results/hadamard-2396/). Order 479 is excluded from the automorphism group of any candidate matrix. The entry also gives sequence restrictions and a fixed border. Existence at this order remains open.
-
-## Results
-
-| Problem | Proof | Lean |
-| :--- | :---: | :---: |
-| [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | [Read](results/haralambis-three-differences/PROOF.md) | ☑ |
-| [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | [Read](results/loneliness-on-a-hyperplane/PROOF.md) | ☐ |
-| [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | [Read](results/eight-speed-spectrum/PROOF.md) | ☐ |
-| [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | [Read](results/seven-speed-spectrum/PROOF.md) | ☐ |
-| [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | [Read](results/six-speed-spectrum/PROOF.md) | ◐ |
-| [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | [Read](results/tight-eleven-to-fourteen/PROOF.md) | ☐ |
-| [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | [Read](results/tight-nine-speeds/PROOF.md) | ☐ |
-| [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | [Read](results/tight-eight-speeds/PROOF.md) | ◐ |
-| [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | [Read](results/tight-seven-speeds/PROOF.md) | ◐ |
-| [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | [Read](results/five-speed-spectrum/PROOF.md) | [◐](results/five-speed-spectrum/FOUR_SPEED_GAP_LEAN.md) |
-| [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | [Read](results/symmetric-four-point-density/PROOF.md) | ☑ |
-| [Packing with two nonmixed gaps](results/nonmixed-gap-packing/) | [Read](results/nonmixed-gap-packing/PROOF.md) | ☑ |
-| [Two-difference Motzkin density](results/two-difference-motzkin/) | [Read](results/two-difference-motzkin/PROOF.md) · [Checked compact, relation, and cyclic theorems](docs/lean-status.md) | ◐ |
-| [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | [Read](results/tight-six-speeds/PROOF.md) | ◐ |
-| [Distance graphs with three missing differences](results/distance-graph-densities/) | [Read](results/distance-graph-densities/PROOF.md) | ☑ |
-| [Growing rectangles](results/rectangle-partition-asymptotics/) | [Read](results/rectangle-partition-asymptotics/PROOF.md) | ☑ |
-| [CUT Family B](results/cut-family-b/) | [Read](results/cut-family-b/PROOF.md) | ☑ |
-| [Line-size sets](results/erdos-607-line-sizes/) | [Read](results/erdos-607-line-sizes/PROOF.md) · [Checked geometry and formal generating function](docs/lean-status.md) | ◐ |
-| [CUT with a preperiod](results/cut-arithmetic-periodicity/) | [Read](results/cut-arithmetic-periodicity/PROOF.md) | ☑ |
-| [L-solitaire limit shapes](results/l-solitaire-limit-shapes/) | [Read](results/l-solitaire-limit-shapes/PROOF.md) | ☑ |
-| [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) · [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334) | [Read](results/graffiti-pc-318/PROOF.md) | ☑ |
-| [Li's coefficient-sign prediction](results/li-coefficient-sign/) | [Read](results/li-coefficient-sign/PROOF.md) | ☐ |
-| [Denominator degree](results/pham-denominator-degree/) | [Read](results/pham-denominator-degree/PROOF.md) | ☑ |
-| [Three-player War](results/spivey-multiplayer-war/) | [Read](results/spivey-multiplayer-war/PROOF.md) | ☑ |
-| [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | [Read](results/batista-egyptian-fractions/PROOF.md) | ☑ |
-
-☑ Formalized stated result · ◐ Partial formalization · ☐ Not formalized
-
-The [catalogue](CONTENTS.md) gives the exact claims, sources, and scope. The [Lean status report](docs/lean-status.md) distinguishes complete results from partial certificates and remaining dependencies. The solitaire checkmark covers both the fixed-scale counterexample and the corrected theorem for every diverging horizontal scale.
-
-These notes are unrefereed. Computational checks and Lean verification are distinct from peer review and priority claims.
 
 ## Layout
 
