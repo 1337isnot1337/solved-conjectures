@@ -364,6 +364,39 @@ def verify_negative(output, cache, args):
     return result
 
 
+def measurement_summary(receipt):
+    result = {}
+    for name in ("fixture", "real_pilot"):
+        phase = receipt.get(name)
+        if not phase:
+            continue
+        source = phase["source"]["source"]
+        audit = phase["axiom_audit"]
+        kernels = {}
+        for workers, entry in phase["kernel_replays"].items():
+            kernel = entry["kernel"]
+            kernels[workers] = {
+                "replayed_modules": kernel["replayed_module_count"],
+                "receipt_sha256": entry["receipt_sha256"],
+                **{key: kernel["kernel"][key] for key in (
+                    "elapsed_seconds", "sampled_peak_rss_kib",
+                    "sampled_peak_high_water_kib", "sampled_peak_threads",
+                    "sampled_peak_processes", "thread_limit")},
+            }
+        result[name] = {
+            "project_modules": len(phase["project_modules"]),
+            "source_seconds": source["elapsed_seconds"],
+            "source_metrics": source["metrics"],
+            "source_receipt_sha256": phase["source"]["receipt_sha256"],
+            "owned_declarations": audit["owned_declarations"],
+            "project_theorems": audit["project_theorems"],
+            "private_proofs": audit["private_proofs"],
+            "required_endpoints": audit["required_endpoints"],
+            "kernel_measurements": kernels,
+        }
+    return result
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output-dir", type=Path, required=True)
@@ -437,8 +470,14 @@ def main(argv=None):
     finally:
         receipt["elapsed_seconds"] = time.monotonic() - started
         build.write_json(output / "receipt.json", receipt)
-        print(json.dumps({"status": receipt["status"], "scope": receipt["scope"],
-                          "receipt": str(output / "receipt.json")}), flush=True)
+        print("SCHEDULER-CANDIDATE " + json.dumps({
+            "status": receipt["status"], "scope": receipt["scope"],
+            "receipt": str(output / "receipt.json"),
+            "receipt_sha256": build.sha256(output / "receipt.json"),
+            "protocol_tests_passed": receipt.get("protocol_tests", {}).get("tests_passed"),
+            "expected_source_failure_observed": receipt.get("expected_source_failure", {}).get(
+                "expected_failure_observed", False),
+            "measurements": measurement_summary(receipt)}), flush=True)
     return 0
 
 
