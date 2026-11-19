@@ -759,3 +759,13 @@ The universal classification and merged-package check remain separate.
 The registered `LonelinessSevenSpectrumRealization` and `LonelinessEightSpectrumRealization` modules construct distinct positive primitive speed tuples for every proposed seven/eight spectrum value. `LonelinessHigherSpectrumBounds` proves the 27 seven-speed and 17 eight-speed table values, all stated candidate-family spectrum forms, reduced-fraction identities, and the sharp bounds `5*d <= 13*q` and `17*d <= 21*q` for every positive representing denominator, with explicit optimality witnesses. Candidate membership and permutations are stated explicitly; universal tuple exhaustiveness is not assumed or concluded.
 
 Exact run `44541874811`, job `135622052992`, passed all 16 fresh strict source checks, the complete 647-declaration audit, and 16 exact stock-kernel replays. The 26 required theorem endpoints and unchanged authenticated evidence are recorded in `docs/verification/seven-eight-spectrum-exact-44541874811/`. The failed sibling triangle and six-plane jobs are excluded from this acceptance record. Full seven/eight classification remains partial.
+
+
+## Direct five-runner lower-bound candidate
+
+The candidate `LonelinessFiveRunnerTheorem` joins the actual KZ geometry,
+all smaller runner bounds, five complete modular certificates, and gcd
+normalization to target `LonelyRunnerBound 5`. It retains both primitive
+equality directions at `1/6`. Its final closure remains outside the accepted
+root until the fresh strict-source, all-owned/private-axiom, and exact
+stock-kernel gate passes. [Proof components and current scope](five-runner-exact-candidate.md).

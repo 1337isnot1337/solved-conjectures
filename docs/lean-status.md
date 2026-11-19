@@ -2390,3 +2390,17 @@ The 27 original seven-speed sporadic rows and 17 eight-speed rows have their sta
 The modules also prove that every listed candidate has a proposed spectrum value and identify every reduced numerator/denominator pair. Seven-speed reduced pairs have `q = 7*p+1` or are exactly `(3,23)`, `(5,37)`, `(9,65)`; eight-speed reduced pairs have `q = 8*p+1`. The corresponding denominator-defect conclusions follow for `KnownSeven` and `KnownEight`. These statements do not assert that every arbitrary low-value tuple belongs to the candidate classes. Universal seven/eight classification remains open in this campaign, so neither directory is marked complete.
 
 The gate freshly checked all 16 project sources with warnings treated as errors, audited all 647 owned/raw declarations (481 theorems, 16 private declarations, 26 required endpoints), and independently replayed all 16 exact module targets with the pinned stock kernel. The only allowed transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. Artifact `14538953168` has ZIP SHA256 `408e523f52846a868217f97aae153d74369ef3f89fa3868d92d45a2a6722e346`; its raw receipt SHA256 is `5ccd2ff37f0928feb38e10e153abcd1f36eb759b0cdd5c264e11ca910ddc9981`. Source and control hashes, every object facet, the original audit and inventory, process records and logs were authenticated before preserving the unchanged evidence in [verification/seven-eight-spectrum-exact-44541874811](verification/seven-eight-spectrum-exact-44541874811/). Registration adds three modules and 26 required endpoints; the combined accepted-root build/audit/replay remains separate.
+
+
+## Five-runner lower-bound candidate
+
+The new `LonelinessFiveRunner*` sources target the unconditional lower bound
+`1/6` for at most five positive speeds and the two primitive equality
+directions `[1,2,3,4,5]` and `[1,3,4,5,9]`. The direct route combines a
+16-row KZ product certificate, a squared-norm cutoff of `347142`, and five
+complete modular packets with 7070 support frames. The finite soundness,
+consequences, and product-certificate modules passed local strict source
+checking. The full final theorem gate is pending; no result is registered or
+marked complete by this candidate. The structural population counter also
+passed an eight-case source and stock-kernel diagnostic with the original
+checker propositions. [Statements, census, and verification scope](five-runner-exact-candidate.md).
