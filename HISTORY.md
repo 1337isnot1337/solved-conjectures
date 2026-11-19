@@ -2,6 +2,10 @@
 
 [Home](README.md) · [Catalogue](CONTENTS.md)
 
+## 2026-11-19 — Eight-speed loneliness spectrum
+
+- Added the full classification below 1/8, the three families, and the table of 17 sporadic tuples.
+
 ## 2026-11-19 — Seven-speed loneliness spectrum
 
 - Added the full classification below 1/7, the table of 27 sporadic tuples and the corollary on Zhu’s triangle conjecture for six and seven distances.

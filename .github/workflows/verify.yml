@@ -61,3 +61,5 @@ jobs:
         run: python3 results/tight-nine-speeds/verify.py
       - name: Verify the seven-speed loneliness spectrum
         run: python3 results/seven-speed-spectrum/verify.py
+      - name: Verify the eight-speed loneliness spectrum
+        run: python3 results/eight-speed-spectrum/verify.py

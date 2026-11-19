@@ -1,4 +1,4 @@
-// Exhaust binary lifts. Each bit of a pair of words represents one of 128 children.
+// Exhaust binary lifts, using one bit per child residue vector.
 #include <algorithm>
 #include <array>
 #include <bit>
@@ -9,16 +9,18 @@
 #include <stdexcept>
 #include <string>
 
-using Speeds = std::array<int,7>;
 using Word = std::uint64_t;
-using Children = std::array<Word,2>;
 
+template<int count, int short_num, int short_den, int depth_limit>
 struct Search {
-    Children matching[128][128]{};
+    using Speeds = std::array<int,count>;
+    static constexpr int child_count=1<<count;
+    using Children = std::array<Word,child_count/64>;
+    Children matching[child_count][child_count]{};
     std::set<Speeds> finite_directions;
 
     Search() {
-        for (int fixed=0; fixed<128; ++fixed) for (int child=0; child<128; ++child)
+        for (int fixed=0; fixed<child_count; ++fixed) for (int child=0; child<child_count; ++child)
             matching[fixed][fixed&child][child/64] |= Word(1)<<(child%64);
     }
 
@@ -32,9 +34,10 @@ struct Search {
     }
 
     void visit(const Speeds& speeds, int modulus, int depth) {
-        if (depth==10) throw std::runtime_error("unresolved residue class");
+        if (depth==depth_limit) throw std::runtime_error("unresolved residue class");
         int next=2*modulus;
-        Children live{~Word(0),~Word(0)};
+        Children live;
+        live.fill(~Word(0));
         if (modulus%2==0) {
             auto odd=std::find_if(speeds.begin(),speeds.end(),[](int x){return x%2;});
             if (odd==speeds.end()) return;
@@ -43,35 +46,35 @@ struct Search {
             live=matching[pivot][0];
         }
         Speeds phase=speeds;
-        for (int t=1; t<=modulus && (live[0] || live[1]); t+=2) {
+        for (int t=1; t<=modulus && std::any_of(live.begin(),live.end(),[](Word w){return w!=0;}); t+=2) {
             int fixed=0, required=0, short_child=0;
             bool short_vector=true;
             Speeds small;
-            for (int i=0; i<7; ++i) {
+            for (int i=0; i<count; ++i) {
                 int low=std::min(phase[i],next-phase[i]);
                 int high=modulus-low;
-                if (7*low<next) { fixed|=1<<i; required|=1<<i; }
-                else if (7*high<next) fixed|=1<<i;
+                if (count*low<next) { fixed|=1<<i; required|=1<<i; }
+                else if (count*high<next) fixed|=1<<i;
                 small[i]=std::min(low,high);
-                if (231*small[i]>4*next) short_vector=false;
+                if (short_den*small[i]>short_num*next) short_vector=false;
                 if (high<low) short_child|=1<<i;
                 phase[i]=(phase[i]+2*speeds[i])%next;
             }
-            // Each child in this mask has all seven distances at least 1/7.
-            for (int j=0; j<2; ++j) live[j]&=~matching[fixed][required][j];
+            // Each child in this mask has all distances at least 1/count.
+            for (int j=0; j<child_count/64; ++j) live[j]&=~matching[fixed][required][j];
             Word bit=Word(1)<<(short_child%64);
             if (short_vector && (live[short_child/64]&bit)) {
                 record(small);
                 live[short_child/64]&=~bit;
             }
         }
-        for (int word=0; word<2; ++word) {
+        for (int word=0; word<child_count/64; ++word) {
             Word bits=live[word];
             while (bits) {
                 int child=64*word+std::countr_zero(bits);
                 bits&=bits-1;
                 Speeds lift=speeds;
-                for (int i=0; i<7; ++i) if (child&(1<<i)) lift[i]+=modulus;
+                for (int i=0; i<count; ++i) if (child&(1<<i)) lift[i]+=modulus;
                 if (std::count_if(lift.begin(),lift.end(),[](int x){return x%2;})>=2)
                     visit(lift,next,depth+1);
             }
@@ -79,15 +82,13 @@ struct Search {
     }
 };
 
-int main(int argc, char** argv) {
-    if (argc!=2) return 2;
-    int p=std::stoi(argv[1]);
-    if (p<53 || p>300) return 2;
-    Search search;
-    Speeds s;
+template<int count, int short_num, int short_den, int depth_limit>
+int enumerate(int p) {
+    Search<count,short_num,short_den,depth_limit> search;
+    std::array<int,count> s;
     std::size_t roots=0;
     while (std::cin>>s[0]) {
-        for (int i=1; i<7; ++i) if (!(std::cin>>s[i])) return 2;
+        for (int i=1; i<count; ++i) if (!(std::cin>>s[i])) return 2;
         if (!std::is_sorted(s.begin(),s.end()) || s.front()<1 || s.back()>p/2) return 2;
         search.visit(s,p,0);
         ++roots;
@@ -97,4 +98,14 @@ int main(int argc, char** argv) {
         for (int x:speeds) std::cout<<x<<' ';
         std::cout<<'\n';
     }
+    return 0;
+}
+
+int main(int argc, char** argv) {
+    if (argc<2 || argc>3) return 2;
+    int p=std::stoi(argv[1]);
+    if (p<53 || p>300) return 2;
+    if (argc==2) return enumerate<7,4,231,10>(p);
+    if (std::string(argv[2])=="--eight-speeds") return enumerate<8,1,92,12>(p);
+    return 2;
 }

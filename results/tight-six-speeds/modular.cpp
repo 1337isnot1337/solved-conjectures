@@ -123,11 +123,12 @@ struct Sieve {
 
 int main(int argc, char** argv) {
     const std::string mode = argc==2 ? argv[1] : "";
-    if (argc>2 || (argc==2 && mode!="--list-sixths" && mode!="--list-eighths" && mode!="--list-ninths" && mode!="--list-tenths" && mode!="--list-sevenths")) return 2;
+    if (argc>2 || (argc==2 && mode!="--list-sixths" && mode!="--list-eighths" && mode!="--list-ninths" && mode!="--list-tenths" && mode!="--spectrum-eight" && mode!="--list-sevenths")) return 2;
     int p;
     while (std::cin>>p) {
         // For the allowed primes a nonzero folded distance never equals 1/6 or 1/8.
-        if (mode=="--list-sevenths") Sieve<7>(p,7,true).check();
+        if (mode=="--spectrum-eight") Sieve<8>(p,8,true).check();
+        else if (mode=="--list-sevenths") Sieve<7>(p,7,true).check();
         else if (mode=="--list-tenths") Sieve<9>(p,10,true).check();
         else if (mode=="--list-ninths") Sieve<8>(p,9,true).check();
         else if (mode=="--list-eighths") Sieve<7>(p,8,true).check();
