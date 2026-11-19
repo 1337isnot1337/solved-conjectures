@@ -44,7 +44,7 @@ theorem prefixProjection_congr (b c : ℕ → E) (r : ℕ)
       InnerProductSpace.gramSchmidt ℝ c i :=
     gramSchmidt_congr_prefix b c i
       (fun j hj => h j (lt_of_le_of_lt hj (Finset.mem_range.mp hi)))
-  rw [hg]
+  rw [Submodule.starProjection_singleton, Submodule.starProjection_singleton, hg]
 
 def adjacentCoefficient (b : ℕ → E) (i : ℕ) : ℝ :=
   inner ℝ (InnerProductSpace.gramSchmidt ℝ b i) (b (i + 1)) /

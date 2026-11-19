@@ -123,10 +123,8 @@ theorem check_sound (cover : ℕ → Finset ℕ) (compatible : ℕ → ℕ → B
       rcases hf with hf | hf
       · apply Finset.card_eq_zero.mp
         omega
-      · apply Finset.eq_empty_iff_forall_not_mem.mpr
-        intro a ha
-        have hh := hsub ha
-        simpa only [hf,Finset.not_mem_empty] using hh
+      · apply Finset.subset_empty.mp
+        simpa only [hf] using hsub
     simpa only [hr,Finset.union_empty] using hterminal selected index hh.2
   | witness t =>
     intro selected available uncovered slots hcheck remaining hsub _hcard hcover _hcompatible

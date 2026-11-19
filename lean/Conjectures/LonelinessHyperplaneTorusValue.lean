@@ -43,6 +43,7 @@ theorem torusVelocityValue_coe (v : ι → ℤ) (s : ι → ℝ) :
   · rintro ⟨t, rfl⟩
     obtain ⟨r, hr, hrt⟩ := exists_unitCircle_representative t
     refine ⟨r, hr, ?_⟩
+    dsimp only
     rw [← hrt, torus_velocity_clearance_coe]
   · rintro ⟨r, _, rfl⟩
     exact ⟨(r : UnitAddCircle), torus_velocity_clearance_coe v s r⟩

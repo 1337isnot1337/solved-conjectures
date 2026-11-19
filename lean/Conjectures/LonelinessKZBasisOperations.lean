@@ -16,7 +16,7 @@ variable {ι M : Type*} [DecidableEq ι] [AddCommGroup M]
 def shearBasis (B : Module.Basis ι ℤ M) (i j : ι) (hij : i ≠ j) (c : ℤ) :
     Module.Basis ι ℤ M :=
   B.map (LinearEquiv.transvection (f := B.coord j) (v := c • B i) (by
-    simp [Module.Basis.coord_apply, hij, Ne.symm hij]))
+    simp [Module.Basis.coord_apply, Ne.symm hij]))
 
 theorem shearBasis_apply (B : Module.Basis ι ℤ M) (i j : ι) (hij : i ≠ j)
     (c : ℤ) (k : ι) :
@@ -34,18 +34,18 @@ def adjacentBasis (B : Module.Basis ι ℤ M) (i j : ι) (hij : i ≠ j) (c : �
 @[simp]
 theorem adjacentBasis_apply_left (B : Module.Basis ι ℤ M) (i j : ι) (hij : i ≠ j)
     (c : ℤ) : adjacentBasis B i j hij c i = B j + c • B i := by
-  simp [adjacentBasis, Module.Basis.reindex_apply, shearBasis_apply, hij, Ne.symm hij]
+  simp [adjacentBasis, Module.Basis.reindex_apply, shearBasis_apply]
 
 @[simp]
 theorem adjacentBasis_apply_right (B : Module.Basis ι ℤ M) (i j : ι) (hij : i ≠ j)
     (c : ℤ) : adjacentBasis B i j hij c j = B i := by
-  simp [adjacentBasis, Module.Basis.reindex_apply, shearBasis_apply, hij, Ne.symm hij]
+  simp [adjacentBasis, Module.Basis.reindex_apply, shearBasis_apply, hij]
 
 theorem adjacentBasis_apply_other (B : Module.Basis ι ℤ M) (i j : ι) (hij : i ≠ j)
     (c : ℤ) (k : ι) (hki : k ≠ i) (hkj : k ≠ j) :
     adjacentBasis B i j hij c k = B k := by
   simp [adjacentBasis, Module.Basis.reindex_apply, shearBasis_apply,
-    Equiv.swap_apply_def, hki, hkj, Ne.symm hki, Ne.symm hkj]
+    Equiv.swap_apply_def, hki, hkj]
 
 end BasisOperations
 
@@ -53,6 +53,7 @@ section GramRestriction
 
 variable {ι κ : Type*} [DecidableEq ι] [Fintype κ] [DecidableEq κ] {N : ℕ}
 
+omit [Fintype κ] in
 theorem adjacent_real_restrict
     (B : Module.Basis ι ℤ (Fin N → ℤ)) (e : κ → ι) (he : Function.Injective e)
     (i j : κ) (hij : i ≠ j) (c : ℤ) :
@@ -70,7 +71,7 @@ theorem adjacent_real_restrict
   have hei : e k ≠ e i := fun h => hki (he h)
   have hej : e k ≠ e j := fun h => hkj (he h)
   rw [adjacentBasis_apply_other B (e i) (e j) (he.ne hij) c (e k) hei hej]
-  simp [Function.comp_apply, Equiv.swap_apply_def, hki, hkj, Ne.symm hki, Ne.symm hkj]
+  simp [Function.comp_apply, Equiv.swap_apply_def, hki, hkj]
 
 theorem gram_det_adjacent_restrict
     (B : Module.Basis ι ℤ (Fin N → ℤ)) (e : κ → ι) (he : Function.Injective e)
