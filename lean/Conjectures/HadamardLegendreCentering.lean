@@ -109,7 +109,8 @@ theorem rowSum_center (f : G → ℤ) : rowSum (center f) = rowSum f :=
 
 theorem moment_center (f : G → ℤ) (hf : rowSum f = 1) :
     moment (center f) = 0 := by
-  rw [center, moment_translate, hf, one_zsmul, sub_self]
+  change moment (fun x => f (x + moment f)) = 0
+  rw [moment_translate, hf, one_zsmul, sub_self]
 
 theorem center_fixed_of_rowMultiplier (f : G → ℤ) (e : G ≃+ G)
     (hf : rowSum f = 1) (he : RowMultiplier f e) :

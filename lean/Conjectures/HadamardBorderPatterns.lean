@@ -102,6 +102,7 @@ theorem admissible_mem_patterns (p : Pattern) (h : Admissible p) :
     p ∈ patterns := by
   rcases p with ⟨d,a,b,c⟩
   have hfields := h
+  dsimp only [Admissible] at hfields
   rcases hfields with ⟨hd,hdodd,haodd,hbodd,hcodd,hab,hbc,heq⟩
   have hdU : d ≤ 12 := by
     by_contra! hh
@@ -125,7 +126,7 @@ theorem admissible_mem_patterns (p : Pattern) (h : Admissible p) :
   exact (finite_classification di ai bi ci).mp h
 
 theorem listed_admissible (p : Pattern) (h : p ∈ patterns) : Admissible p := by
-  simp only [patterns, List.mem_cons, List.mem_singleton] at h
+  simp only [patterns, List.mem_cons, List.not_mem_nil, or_false] at h
   rcases h with rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl
   all_goals norm_num [Admissible]
 
@@ -141,14 +142,14 @@ theorem admissible_baseline_abs_bound (p : Pattern) (h : Admissible p) :
     |p.d| < 36 ∧ |p.a| < 36 ∧ |p.b| < 36 ∧ |p.c| < 36 ∧
       |p.a+2| < 36 ∧ |p.b+2| < 36 ∧ |p.c+2| < 36 := by
   have hp := admissible_mem_patterns p h
-  simp only [patterns, List.mem_cons, List.mem_singleton] at hp
+  simp only [patterns, List.mem_cons, List.not_mem_nil, or_false] at hp
   rcases hp with rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl
   all_goals norm_num
 
 theorem admissible_pair_sum_lower (p : Pattern) (h : Admissible p) :
     1 < |p.d| + |p.a+1| + |p.b+1| + |p.c+1| := by
   have hp := admissible_mem_patterns p h
-  simp only [patterns, List.mem_cons, List.mem_singleton] at hp
+  simp only [patterns, List.mem_cons, List.not_mem_nil, or_false] at hp
   rcases hp with rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl
   all_goals norm_num
 

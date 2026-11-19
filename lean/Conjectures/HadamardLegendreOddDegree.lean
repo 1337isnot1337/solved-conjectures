@@ -41,7 +41,8 @@ theorem gaussianMatrix_mul_conj {ι : Type*} [Fintype ι]
   · simp [gaussianMatrix, Matrix.mul_apply, gaussian_re_sum,
       Finset.sum_add_distrib]
   · simp [gaussianMatrix, Matrix.mul_apply, gaussian_im_sum,
-      Finset.sum_add_distrib, Finset.sum_neg_distrib, sub_eq_add_neg] <;> ring
+      Finset.sum_add_distrib, Finset.sum_neg_distrib, sub_eq_add_neg]
+    ring
 
 theorem rational_matrix_sum_two_squares {ι : Type*} [Fintype ι] [DecidableEq ι]
     (X Y : Matrix ι ι ℚ) (q : ℚ) (hcomm : X * Y = Y * X)
