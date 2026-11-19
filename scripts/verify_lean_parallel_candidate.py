@@ -102,8 +102,9 @@ def audit_source(modules, required, private_nodes):
     private = [name for names in private_nodes.values() for name in names]
     private_names = ", ".join("`" + name for name in private)
     owned = ", ".join(json.dumps(module) for module in sorted(modules))
-    return f'''module
-{imports}
+    # The accepted roots may be legacy sources. A legacy audit can import
+    # both formats while retaining explicit import-all private visibility.
+    return f'''{imports}
 import Lean.Util.CollectAxioms
 import Lean.PrivateName
 

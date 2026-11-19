@@ -22,9 +22,9 @@
     },
     {
       "path": "scripts/verify_lean_parallel_candidate.py",
-      "blob_sha": "d6b391b80e6ea19dbdd693c74e01ee2d46f5297c",
-      "sha256": "3d210d32e1af120b2220c14b284e3d47493f6aa50f56d87898821b8003de3696",
-      "characters": 22266
+      "blob_sha": "a4afa6b92cb129a09c82b163cfcf9a652e93e625",
+      "sha256": "9375fe79533952f0376b84175dd2c462d3f7c9cf96bef7f13817c952128b7ccb",
+      "characters": 22408
     },
     {
       "path": ".github/workflows/lean-parallel-candidate.yml",
