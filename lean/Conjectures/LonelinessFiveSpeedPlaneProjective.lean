@@ -1,7 +1,7 @@
 import Conjectures.LonelinessFiveSpeedPlaneFiberDefs
 import Conjectures.LonelinessModularWitness
 import Conjectures.LonelinessCoalescenceValue
-import Mathlib.Data.ZMod.Basic
+import Mathlib.Algebra.Field.ZMod
 import Mathlib.LinearAlgebra.Matrix.Notation
 import Mathlib.Tactic.FinCases
 
@@ -122,11 +122,12 @@ theorem canonicalProjectiveCover_integer (p : ℕ) (hp : p.Prime) (k : Fin 9)
     exact Or.inl ⟨a, ha, (ZMod.intCast_zmod_eq_zero_iff_dvd _ p).mp hl⟩
   · obtain ⟨t, _, _, hgood⟩ := hwitness
     let m := ((t : ZMod p) * s⁻¹).val
+    have hss : s⁻¹ * s = (1 : ZMod p) := inv_mul_cancel₀ hs
     have hcancel (r : ZMod p) :
         ((t : ZMod p) * s⁻¹) * (s * r) = (t : ZMod p) * r := by
       calc
         ((t : ZMod p) * s⁻¹) * (s * r) = ((t : ZMod p) * (s⁻¹ * s)) * r := by ring
-        _ = (t : ZMod p) * r := by rw [inv_mul_cancel₀ hs, mul_one]
+        _ = (t : ZMod p) * r := by rw [hss, mul_one]
     apply Or.inr
     refine ⟨m, ?_⟩
     intro d hd
