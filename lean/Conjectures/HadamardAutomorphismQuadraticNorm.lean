@@ -158,6 +158,7 @@ theorem quadraticFifthWitness479_product :
   linear_combination -(159859 : quadraticFixedField479 K) ^ 2 *
     quadraticGeneratorInFixed479_sq K
 
+set_option maxRecDepth 4096 in
 theorem quadraticFifthWitness479_norm :
     Algebra.norm ℤ (quadraticFifthWitness479 K) = 599 ^ 5 := by
   apply Int.cast_injective (α := ℚ)

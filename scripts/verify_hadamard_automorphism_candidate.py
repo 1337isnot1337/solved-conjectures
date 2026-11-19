@@ -56,7 +56,15 @@ TASKS = {'arithmetic': ('Conjectures.HadamardAutomorphismArithmeticCandidates',
                'HadamardAutomorphism.hadamard_automorphism_card_not_dvd_479',
                'HadamardAutomorphism.isHadamard_automorphism_card_not_dvd_479']),
  'class_order': ('Conjectures.HadamardAutomorphismClassOrder',
-                 ['HadamardAutomorphism.exists_prime_above599_class_order_five'])}
+                 ['HadamardAutomorphism.exists_prime_above599_class_order_five']),
+ 'class_alternative': ('Conjectures.HadamardAutomorphismRelativeNorm',
+                       ['HadamardAutomorphism.every_prime_above599_class_order_five',
+                        'HadamardAutomorphism.exists_conjugate_prime_pair599_class_inverse',
+                        'HadamardAutomorphism.norm_cube_principal_factorization479_of_coe',
+                        'HadamardAutomorphism.prime599_relative_inertia',
+                        'HadamardAutomorphism.prime599_relative_ideal_norm',
+                        'HadamardAutomorphism.principal_norm_class_exponent479',
+                        'HadamardAutomorphism.cyclotomic_norm_cube_impossible_by_class_group'])}
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-automorphism-candidates.yml',
  'lean/lake-manifest.json',
