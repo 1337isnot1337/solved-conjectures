@@ -1,0 +1,181 @@
+name: Lean seeded filtering and minimum reduction exact sources and kernel
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-prime-filtering-seed-cases-exact.yml'
+      - 'scripts/verify_prime_filtering_seed_cases_exact.py'
+      - 'docs/prime-filtering-seed-cases-exact-sources.json'
+      - 'lean/Conjectures/HaralambisFaces.lean'
+      - 'lean/Conjectures/HaralambisOrientation.lean'
+      - 'lean/Conjectures/HaralambisPeriods.lean'
+      - 'lean/Conjectures/Loneliness.lean'
+      - 'lean/Conjectures/LonelinessMax.lean'
+      - 'lean/Conjectures/LonelinessCoalescence.lean'
+      - 'lean/Conjectures/LonelinessModularPrimes.lean'
+      - 'lean/Conjectures/LonelinessPigeonhole.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringArithmetic.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringChoice.lean'
+      - 'lean/Conjectures/LonelinessRenaultOrdering.lean'
+      - 'lean/Conjectures/NonmixedGapDensity.lean'
+      - 'lean/Conjectures/HaralambisDefects.lean'
+      - 'lean/Conjectures/LonelinessContinuity.lean'
+      - 'lean/Conjectures/LonelinessFiveFamily.lean'
+      - 'lean/Conjectures/LonelinessCertificate.lean'
+      - 'lean/Conjectures/LonelinessCoalescenceAvoiding.lean'
+      - 'lean/Conjectures/LonelinessCoordinateSubspace.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringResidues.lean'
+      - 'lean/Conjectures/LonelinessPrimeFiltering.lean'
+      - 'lean/Conjectures/NonmixedGapPeriodic.lean'
+      - 'lean/Conjectures/NonmixedGapResidues.lean'
+      - 'lean/Conjectures/LonelinessRational.lean'
+      - 'lean/Conjectures/LonelinessCriticalBase.lean'
+      - 'lean/Conjectures/LonelinessCriticalSecond.lean'
+      - 'lean/Conjectures/LonelinessExamples.lean'
+      - 'lean/Conjectures/LonelinessPairBridge.lean'
+      - 'lean/Conjectures/LonelinessCoordinateClasses.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringDigitBound.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringPartial.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringValuation.lean'
+      - 'lean/Conjectures/LonelinessPacking.lean'
+      - 'lean/Conjectures/HaralambisIntervals.lean'
+      - 'lean/Conjectures/LonelinessModularWitness.lean'
+      - 'lean/Conjectures/LonelinessRenaultAffine.lean'
+      - 'lean/Conjectures/LonelinessRenaultGcdOrbit.lean'
+      - 'lean/Conjectures/LonelinessRenaultMaximizer.lean'
+      - 'lean/Conjectures/LonelinessRenaultPhaseCells.lean'
+      - 'lean/Conjectures/LonelinessRenaultPreliminaries.lean'
+      - 'lean/Conjectures/LonelinessSubspaceDensity.lean'
+      - 'lean/Conjectures/LonelinessCriticalFamilies.lean'
+      - 'lean/Conjectures/LonelinessIntegerDirection.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringCorollaryThree.lean'
+      - 'lean/Conjectures/LonelinessPackingLower.lean'
+      - 'lean/Conjectures/HaralambisCounting.lean'
+      - 'lean/Conjectures/LonelinessModularLift.lean'
+      - 'lean/Conjectures/LonelinessModularNormalize.lean'
+      - 'lean/Conjectures/LonelinessModularRationalWitness.lean'
+      - 'lean/Conjectures/LonelinessPrimePowerUnitGrid.lean'
+      - 'lean/Conjectures/LonelinessRenaultTwoMultiples.lean'
+      - 'lean/Conjectures/LonelinessRenaultPhaseCertificates.lean'
+      - 'lean/Conjectures/LonelinessRenaultSmallPhases.lean'
+      - 'lean/Conjectures/LonelinessRenaultThirdObstructions.lean'
+      - 'lean/Conjectures/LonelinessModularShortVector.lean'
+      - 'lean/Conjectures/LonelinessNormalization.lean'
+      - 'lean/Conjectures/LonelinessRationalSubspace.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringCases.lean'
+      - 'lean/Conjectures/HaralambisPairSum.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedEnumeration.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLiftDirections.lean'
+      - 'lean/Conjectures/LonelinessRenaultTwoMultiplesPhase.lean'
+      - 'lean/Conjectures/LonelinessRenaultParityCases.lean'
+      - 'lean/Conjectures/LonelinessRenaultThreeEven.lean'
+      - 'lean/Conjectures/HaralambisDensity.lean'
+      - 'lean/Conjectures/LonelinessModularDirections.lean'
+      - 'lean/Conjectures/LonelinessModularSearch.lean'
+      - 'lean/Conjectures/LonelinessProductFamily.lean'
+      - 'lean/Conjectures/LonelinessRenaultReindex.lean'
+      - 'lean/Conjectures/LonelinessCoalescenceValue.lean'
+      - 'lean/Conjectures/LonelinessSubspaceExtension.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate.lean'
+      - 'lean/Conjectures/LonelinessRenaultTwoMultiplesCase.lean'
+      - 'lean/Conjectures/HaralambisTheorem.lean'
+      - 'lean/Conjectures/LonelinessModularFoldedSearch.lean'
+      - 'lean/Conjectures/LonelinessRenaultAssembly.lean'
+      - 'lean/Conjectures/LonelinessRenaultNormalization.lean'
+      - 'lean/Conjectures/LonelinessRenaultRationalOrbit.lean'
+      - 'lean/Conjectures/LonelinessTwoDirections.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate17.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate29.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate31.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate37.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate41.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate43.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedFastEnumeration.lean'
+      - 'lean/Conjectures/LonelinessSmallRunner.lean'
+      - 'lean/Conjectures/LonelinessRenaultTwoMultiplesFinal.lean'
+      - 'lean/Conjectures/LonelinessPlaneDirections.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificateChunks.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedGeometry.lean'
+      - 'lean/Conjectures/LonelinessPigeonholePlane.lean'
+      - 'lean/Conjectures/LonelinessRenaultFiveSpeed.lean'
+      - 'lean/Conjectures/LonelinessPlaneGap.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate47.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate53.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate59.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificate61.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedFoldedGeometry.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCutoff.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedClassification.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedCertificateAll.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLiftSound.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift17.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift29.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift31.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift37.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift41.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift43.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift47.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift53.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift59.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedLift61.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedFinite.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedClassificationFinite.lean'
+      - 'lean/Conjectures/LonelinessFourSpeedGap.lean'
+      - 'lean/Conjectures/LonelinessFiveSpeedBound.lean'
+      - 'lean/Conjectures/LonelinessPrimePowerFiveSpeedSeed.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringSeedCases.lean'
+      - 'lean/Conjectures/LonelinessPrimeFilteringMinimum.lean'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/audit_lean_all_owned.py'
+      - 'scripts/audit_lean_raw_occurrences.py'
+      - 'scripts/build_lean_parallel.py'
+      - 'scripts/plan_accepted_lean.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - 'scripts/verify_frankl_orbit_batches.py'
+      - 'scripts/verify_lean_candidate.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-prime-filtering-seed-cases-exact-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate exact proof and helper inventory
+        run: |
+          python3 -m py_compile scripts/verify_prime_filtering_seed_cases_exact.py
+          python3 scripts/verify_prime_filtering_seed_cases_exact.py --plan
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+      - name: Fresh strict sources, complete raw-body audit and exact stock replay
+        env:
+          LEAN_NUM_THREADS: 1
+          UV_USE_IO_URING: 0
+        run: python3 scripts/verify_prime_filtering_seed_cases_exact.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: prime-filtering-seed-cases-exact
+          path: .candidate-artifacts/prime-filtering-seed-cases-exact/
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
