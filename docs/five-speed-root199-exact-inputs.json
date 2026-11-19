@@ -60,10 +60,10 @@
     "Conjectures.LonelinessFiveSpeedMaskArithmetic": "7f8d5c6b16c990d7d2ef8b99265e589756f6cdf7c5329dabd7d75522ff2c1f35",
     "Conjectures.LonelinessFiveSpeedScalarTable": "b780be1150c67c5943e45b9c7314debb835568be12e0e251a1c0585320945965",
     "Conjectures.LonelinessFiveSpeedScalarInverse": "e53014e202c3646a680aca4f42bb32b0b8883e88134927fe9a40bfb81340e477",
-    "Conjectures.LonelinessFiveSpeedScalarTree": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
+    "Conjectures.LonelinessFiveSpeedScalarTree": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1",
     "Conjectures.LonelinessFiveSpeedPackedScalar": "0d7331eff6378d95a9347119c1ef8f6920b1189c4d53c50c549c1c2de1afc840",
     "Conjectures.LonelinessFiveSpeedBitIndexProposal": "7ec4276987fa6d6e83b1732c6b0c512d85b5d641cd15b01a5b4975fda64c1549",
-    "Conjectures.LonelinessFiveSpeedRootMaskScan": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+    "Conjectures.LonelinessFiveSpeedRootMaskScan": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
     "Conjectures.LonelinessFiveSpeedRootSemanticsForms": "da1326f1d3327a3635987873f69751e08593c491cec9185a2773cce9bf0f68ad",
     "Conjectures.Loneliness": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
     "Conjectures.LonelinessContinuity": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
@@ -74,7 +74,7 @@
     "Conjectures.LonelinessModularNormalize": "93319020c093c8dc10302410c6ca95846652ebd4bfa5697c8f3710477ddf5508",
     "Conjectures.LonelinessFiveSpeedRootSemanticsDefs": "224f3bdc6c694529d359e0f5aadffe1a61d6400d9377897ed0007dd998d4869b",
     "Conjectures.LonelinessFiveSpeedRootStar": "151991faf467326d29522c83d15dff26108b88088733e756f60e2925c750c074",
-    "Conjectures.LonelinessFiveSpeedRootStarBlocks": "57a340e9798975f42d0474ae18a058964c73b74bbd25a5b836c10d3e32430276",
+    "Conjectures.LonelinessFiveSpeedRootStarBlocks": "af63243840adc206af65685bedccf30f158a05f88f2996aac4d3e18d75746c57",
     "Conjectures.LonelinessFiveSpeedRootStarCachedBlocks": "a0265198f83e84cb88766e32f54c8111284339308e2a6caa3d5691964a9f47da",
     "Conjectures.LonelinessFiveSpeedRootFoldedList": "0c21db008e0822c4a8b22bc7f91f49cbce9e0d91e45d5720e9f4f43694f0d5e8",
     "Conjectures.LonelinessFiveSpeedRootStarQuickBlocks": "6a7d6fab56d8353a311e12eaa357cb55d5c230fae1257743fefa8b1910c50f43",
@@ -251,5 +251,6 @@
     "linter_override": false,
     "fresh_project_objects": true
   },
-  "accepted_registry_changed": false
+  "accepted_registry_changed": false,
+  "shared_source_compatibility": "The reached Masks unused-simp repair and RootMaskScan deprecated-alias diagnostics, plus the same established alias replacements in ScalarTree and RootStarBlocks. No theorem type or numerical table changed; all repaired dependencies are checked fresh."
 }

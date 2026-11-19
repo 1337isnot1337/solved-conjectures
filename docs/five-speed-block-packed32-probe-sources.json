@@ -23,13 +23,13 @@
     "Conjectures.LonelinessFiveSpeedPackedScalar1789": "2f63200e717d8af368c75ac139b1629e8ad7798c144765367e9ebe1b8c585a45",
     "Conjectures.LonelinessFiveSpeedRootStarCachedBlocks": "a0265198f83e84cb88766e32f54c8111284339308e2a6caa3d5691964a9f47da",
     "Conjectures.LonelinessFiveSpeedRootFoldedList": "0c21db008e0822c4a8b22bc7f91f49cbce9e0d91e45d5720e9f4f43694f0d5e8",
-    "Conjectures.LonelinessFiveSpeedRootStarBlocks": "57a340e9798975f42d0474ae18a058964c73b74bbd25a5b836c10d3e32430276",
+    "Conjectures.LonelinessFiveSpeedRootStarBlocks": "af63243840adc206af65685bedccf30f158a05f88f2996aac4d3e18d75746c57",
     "Conjectures.LonelinessFiveSpeedScalarTreeMask0179": "9404351d219767d4bfc9a3638332841517f87203dfd5da2245cb7d4df758ca59",
     "Conjectures.LonelinessFiveSpeedScalarTreeMask1789": "2b23538aa52e920f1e4861fe41538aafb9fd66a5eed751283d38354b423b17a5",
     "Conjectures.LonelinessFiveSpeedPackedScalar": "0d7331eff6378d95a9347119c1ef8f6920b1189c4d53c50c549c1c2de1afc840",
     "Conjectures.LonelinessFiveSpeedRootStar": "151991faf467326d29522c83d15dff26108b88088733e756f60e2925c750c074",
-    "Conjectures.LonelinessFiveSpeedScalarTree": "48ea50821b3da62a071cb38b02e34967dd6eda31e51908aab4c270b834455280",
-    "Conjectures.LonelinessFiveSpeedRootMaskScan": "e488092be972395244068ab3a1032937b8aa23a097d4a810f126178373f7e790",
+    "Conjectures.LonelinessFiveSpeedScalarTree": "993c5aa6aae5835870140363dbeb7bc4d4250197395d774476ce984ccd8c1ae1",
+    "Conjectures.LonelinessFiveSpeedRootMaskScan": "7870510db5cfe0f1059b65065057ea65b02e2d8f136904aa0afaed76d76d8627",
     "Conjectures.LonelinessFiveSpeedRootSemanticsDefs": "224f3bdc6c694529d359e0f5aadffe1a61d6400d9377897ed0007dd998d4869b",
     "Conjectures.LonelinessFiveSpeedScalarInverse": "e53014e202c3646a680aca4f42bb32b0b8883e88134927fe9a40bfb81340e477",
     "Conjectures.LonelinessFiveSpeedMaskArithmetic": "7f8d5c6b16c990d7d2ef8b99265e589756f6cdf7c5329dabd7d75522ff2c1f35",
@@ -114,5 +114,6 @@
     "source_policy": "warningAsError=true with linter.all=false",
     "audit_scope": "owned project theorems and project axioms",
     "reuse_for_current_gate": false
-  }
+  },
+  "shared_source_compatibility": "The reached Masks unused-simp repair and RootMaskScan deprecated-alias diagnostics, plus the same established alias replacements in ScalarTree and RootStarBlocks. No theorem type or numerical table changed; all repaired dependencies are checked fresh."
 }
