@@ -152,6 +152,7 @@ jobs:
         with:
           name: hadamard-quotient133-source-${{ matrix.stage }}
           path: .candidate-artifacts/hadamard-quotient133-staged/${{ matrix.stage }}/
+          include-hidden-files: true
           if-no-files-found: error
           retention-days: 7
 
@@ -184,6 +185,7 @@ jobs:
         with:
           name: hadamard-quotient133-main-receipt
           path: .candidate-artifacts/hadamard-quotient133-main/
+          include-hidden-files: true
           if-no-files-found: error
           retention-days: 7
 
