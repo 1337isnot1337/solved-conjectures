@@ -1,0 +1,132 @@
+name: Lean Frankl graph integration helpers
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'lean/Conjectures/FranklBasic.lean'
+      - 'lean/Conjectures/FranklCyclicCertificates.lean'
+      - 'lean/Conjectures/FranklCyclicGenerators.lean'
+      - 'lean/Conjectures/FranklCyclicPairs.lean'
+      - 'lean/Conjectures/FranklCyclicRank.lean'
+      - 'lean/Conjectures/FranklCyclicRankList.lean'
+      - 'lean/Conjectures/FranklCyclicWords.lean'
+      - 'lean/Conjectures/FranklFCBitCode.lean'
+      - 'lean/Conjectures/FranklFamily.lean'
+      - 'lean/Conjectures/FranklFamilyShortcuts.lean'
+      - 'lean/Conjectures/FranklLocalCertificate.lean'
+      - 'lean/Conjectures/FranklLocalEnumeration.lean'
+      - 'lean/Conjectures/FranklLocalEnumerationCore.lean'
+      - 'lean/Conjectures/FranklLocalEnumerationMap.lean'
+      - 'lean/Conjectures/FranklLocalFibers.lean'
+      - 'lean/Conjectures/FranklLocalFiniteSupport.lean'
+      - 'lean/Conjectures/FranklLocalMaskCertificate.lean'
+      - 'lean/Conjectures/FranklLocalMaskDomains.lean'
+      - 'lean/Conjectures/FranklLocalMaximalCover.lean'
+      - 'lean/Conjectures/FranklLocalWeights.lean'
+      - 'lean/Conjectures/FranklSmallCyclicMaskWindows.lean'
+      - 'lean/Conjectures/FranklSmallCyclicMasks.lean'
+      - 'lean/Conjectures/FranklSmallCyclicWeights.lean'
+      - 'lean/Conjectures/FranklSpanFourAdmissibleCore.lean'
+      - 'lean/Conjectures/FranklSpanFourAssemblyCore.lean'
+      - 'lean/Conjectures/FranklSpanFourCyclicInjective.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphAdmissible.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphCoverage.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphEncoding.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphHelpers.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphIntegrationHelpers.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphLocalData.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphMasks.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphPartition.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphPrefixCoverage.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphRank.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphWordRows.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphWords.lean'
+      - 'lean/Conjectures/FranklSpanFourIrredundant.lean'
+      - 'scripts/verify_frankl_graph_helpers.py'
+      - 'scripts/verify_frankl_graph_pilot.py'
+      - 'scripts/verify_frankl_orbit_batches.py'
+      - 'scripts/verify_frankl_graph_integration_helpers.py'
+      - 'docs/frankl-graph-integration-sources.json'
+      - 'docs/frankl-graph-helpers-sources.json'
+      - '.github/workflows/lean-frankl-graph-integration-helpers.yml'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+  pull_request:
+    paths:
+      - 'lean/Conjectures/FranklBasic.lean'
+      - 'lean/Conjectures/FranklCyclicCertificates.lean'
+      - 'lean/Conjectures/FranklCyclicGenerators.lean'
+      - 'lean/Conjectures/FranklCyclicPairs.lean'
+      - 'lean/Conjectures/FranklCyclicRank.lean'
+      - 'lean/Conjectures/FranklCyclicRankList.lean'
+      - 'lean/Conjectures/FranklCyclicWords.lean'
+      - 'lean/Conjectures/FranklFCBitCode.lean'
+      - 'lean/Conjectures/FranklFamily.lean'
+      - 'lean/Conjectures/FranklFamilyShortcuts.lean'
+      - 'lean/Conjectures/FranklLocalCertificate.lean'
+      - 'lean/Conjectures/FranklLocalEnumeration.lean'
+      - 'lean/Conjectures/FranklLocalEnumerationCore.lean'
+      - 'lean/Conjectures/FranklLocalEnumerationMap.lean'
+      - 'lean/Conjectures/FranklLocalFibers.lean'
+      - 'lean/Conjectures/FranklLocalFiniteSupport.lean'
+      - 'lean/Conjectures/FranklLocalMaskCertificate.lean'
+      - 'lean/Conjectures/FranklLocalMaskDomains.lean'
+      - 'lean/Conjectures/FranklLocalMaximalCover.lean'
+      - 'lean/Conjectures/FranklLocalWeights.lean'
+      - 'lean/Conjectures/FranklSmallCyclicMaskWindows.lean'
+      - 'lean/Conjectures/FranklSmallCyclicMasks.lean'
+      - 'lean/Conjectures/FranklSmallCyclicWeights.lean'
+      - 'lean/Conjectures/FranklSpanFourAdmissibleCore.lean'
+      - 'lean/Conjectures/FranklSpanFourAssemblyCore.lean'
+      - 'lean/Conjectures/FranklSpanFourCyclicInjective.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphAdmissible.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphCoverage.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphEncoding.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphHelpers.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphIntegrationHelpers.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphLocalData.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphMasks.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphPartition.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphPrefixCoverage.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphRank.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphWordRows.lean'
+      - 'lean/Conjectures/FranklSpanFourGraphWords.lean'
+      - 'lean/Conjectures/FranklSpanFourIrredundant.lean'
+      - 'scripts/verify_frankl_graph_helpers.py'
+      - 'scripts/verify_frankl_graph_pilot.py'
+      - 'scripts/verify_frankl_orbit_batches.py'
+      - 'scripts/verify_frankl_graph_integration_helpers.py'
+      - 'docs/frankl-graph-integration-sources.json'
+      - 'docs/frankl-graph-helpers-sources.json'
+      - '.github/workflows/lean-frankl-graph-integration-helpers.yml'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+
+permissions:
+  contents: read
+
+jobs:
+  integration-helpers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Strict source, all-declaration audit and exact stock replay
+        run: python3 scripts/verify_frankl_graph_integration_helpers.py --jobs 4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frankl-graph-integration-helpers
+          path: .candidate-artifacts/frankl-graph-integration-helpers/
+          if-no-files-found: warn
+          retention-days: 14
