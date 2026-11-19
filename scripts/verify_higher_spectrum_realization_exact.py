@@ -58,7 +58,11 @@ ROOTS = {
         "Conjectures.LonelinessHigherSpectrumBounds",
     ],
     "triangles": ["Conjectures.LonelinessHigherTriangleConsequences"],
-    "six-plane-semantics": ["Conjectures.LonelinessSixPlaneClassificationCore"],
+    "six-plane-semantics": [
+        "Conjectures.LonelinessSixPlaneClassificationCore",
+        "Conjectures.LonelinessSixPlaneFiveInput",
+        "Conjectures.LonelinessSixPlaneEnumeration",
+    ],
 }
 
 

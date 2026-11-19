@@ -1,6 +1,7 @@
 import Mathlib.Data.Fintype.Perm
 import Mathlib.Data.Fin.VecNotation
 import Mathlib.Data.Int.Basic
+import Mathlib.Algebra.Ring.Int.Defs
 
 /-! Finite tests for the six-coordinate plane gap. The canonical vectors are
 the two tight five-speed patterns with one entry repeated, in increasing order.
@@ -83,8 +84,8 @@ inductive PairCertificate where
   | line (first second : Fin 6) (positive : Bool)
   | accepted (witness : Acceptance)
 
-/-- Every rejection includes its exact obstruction. The dependent branch uses
-the canonical first coordinate `q 0 = 1`; its soundness requires that identity. -/
+/-- Every rejection includes its exact obstruction. The canonical first
+coordinate `q 0 = 1` makes the dependent branch complete for proportional pairs. -/
 def certificateCheck (q c : Vector) : PairCertificate → Bool
   | .dependent => (List.finRange 6).all fun i => c i == c 0 * q i
   | .coordinate i j positive =>

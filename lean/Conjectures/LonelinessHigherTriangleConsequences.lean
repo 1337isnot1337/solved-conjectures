@@ -1,7 +1,7 @@
 import Conjectures.LonelinessHigherSpectrumBounds
 import Conjectures.LonelinessSixSporadicBounds
 import Conjectures.LonelinessDistanceColoring
-import Mathlib.Data.Matrix.Notation
+import Mathlib.Data.Fin.VecNotation
 
 /-! The Zhu-triangle consequences of the stated six-, seven- and eight-speed
 classifications. Every listed family and sporadic has an actual triangle in
