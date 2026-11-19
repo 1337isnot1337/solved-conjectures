@@ -1,0 +1,19 @@
+{
+  "schema": "gcd-shift-component-checkpoint-v1",
+  "scope": "Conditional arbitrary-modulus nine-speed gcd shift test, retaining LonelyRunnerBound 8.",
+  "run_id": 44562942517,
+  "git_commit": "4f97f1e9936e089a7f33b8d6093ea820661c1f31",
+  "files_sha256": {
+    "README.md": "29712715995d1e7ade818510f85b6dd9f49bcc137fca47a167d77e07cbe23067",
+    "all-owned.audit.log": "0f25fba11d8d6150963ac30d0f794de636264b5de28e461ec4562a46b67b1fa1",
+    "artifact-authentication.json": "f91df8b19fcbccb7b4c5c8e243a46019debada6968215b4c45fbaf07b2ece52a",
+    "artifact-metadata.json": "233e378a5089d05499dc4ed5c6ce2e89cb16e31e002674f00e93e2135ebea804",
+    "declaration-inventory.json": "0212de219b26a6e3595dde9b300495bddd12af68d13c73f7a2c45fceeb3d690e",
+    "job-metadata.json": "4beee83c8d0270384d1a1d5af827900f62d63f1469e30af67bab41db78d0e4fa",
+    "job.log": "be86a9bd78b7179548c5bb2facd09c47005fe4bc9e48e3cc163dedeef1ef13b1",
+    "published-inputs.json": "68c75d6c2b9eae0e09abb592778cd45cab26fb37abbd8d736bfdb0b547b7532e",
+    "receipt.json": "fa7467c262fee9594a147672965ed6bb183aa9b9250b4f584c6a9fae12e09453",
+    "source-stdout.json": "2a885baa908ee13dd0a320618644e479e75d2235a152ed393042137c79496abf",
+    "stock-replay.log": "584ad0a8fe35eaf349e6328d15f5d750ea9e68f6f499dc08d7a56ed9870f4b27"
+  }
+}

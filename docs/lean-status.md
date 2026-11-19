@@ -2606,3 +2606,27 @@ The required endpoints in `Loneliness.SixSpectrumFields` are `triple_card`, `for
 Every prime cover, the prime-product comparison, the actual norm bound, positivity, and the strict real-value hypothesis remain explicit. This component does not discharge finite support/orbit coverage, prove sporadic exhaustion, or complete the six-speed spectrum classification. The larger support transport and coverage modules are separate candidates.
 
 Original artifact `14549736325` has 1,265,230 bytes and ZIP SHA-256 `6ce08dfa9c1cc41e58ebf718befd70143eaf23e35861df05e936c85095272f5f`. The unchanged raw receipt SHA-256 is `15e8e925d8cd36fc5df28d1f03e4e37dae5910f47e1bc80e13aa07960791f7cc`. All 22 historical source/control/configuration files match the original Git blobs. The unchanged receipt, declaration inventory, generated audit source, process logs, progress records, and complete archive manifest are preserved under [`docs/verification/six-fields-product-exact-44559208975`](verification/six-fields-product-exact-44559208975/). The original command was `python3 scripts/verify_higher_spectrum_realization_exact.py six-fields-product`; preservation does not claim a new execution of that gate.
+
+## Conditional gcd shift test (19 November 2026)
+
+`LonelinessGcdShiftCounting` and `LonelinessGcdShift` are registered with
+20 required theorem endpoints. For nine distinct positive integer speeds,
+the final theorem assumes `LonelyRunnerBound 8`, a modulus `d ≥ 2`, a
+nonempty set of coordinates not divisible by `d`, and a gcd-weighted ceiling
+cost strictly below `d`. It concludes that actual loneliness is strictly
+above `1/10`. The floor-cost and residue versions retain their explicit
+positive-cost conditions.
+
+[Run 44562942517](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44562942517)
+at `4f97f1e9936e089a7f33b8d6093ea820661c1f31` passed all 17 fresh strict sources,
+399 owned/raw declarations (319 theorems and 10 private declarations), all
+20 named obligations, five literal statement checks, and exact stock replay
+of the 17-module closure. The downloaded artifact and original receipt were
+authenticated against the published Git blobs and complete source/object/log
+inventories. The other 15 project dependencies were already registered with
+identical source bytes. See the [conditional component checkpoint](verification/loneliness-gcd-shift-44562942517/README.md).
+
+The eight-speed bound remains a hypothesis. This receipt does not establish
+an unconditional nine-speed result, signed-unit transport, or a complete
+finite lift census. Result-level classification status is unchanged; the
+merged-package gate remains separate from this component verification.

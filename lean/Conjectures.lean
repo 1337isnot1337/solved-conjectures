@@ -494,6 +494,8 @@ import Conjectures.LonelinessSixSpectrumNormGeometry
 import Conjectures.LonelinessProductPlaneSpeeds
 import Conjectures.LonelinessFiveRunnerNormData
 import Conjectures.LonelinessFiveRunnerNorm
+import Conjectures.LonelinessGcdShiftCounting
+import Conjectures.LonelinessGcdShift
 import Conjectures.LonelinessFiveSpeedBoundedCandidateDefs
 import Conjectures.LonelinessCriticalScaling
 import Conjectures.LonelinessFiveSpeedCriticalCheck

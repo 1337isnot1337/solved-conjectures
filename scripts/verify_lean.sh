@@ -1118,6 +1118,8 @@ modules=(
   Conjectures.LonelinessProductPlaneSpeeds
   Conjectures.LonelinessFiveRunnerNormData
   Conjectures.LonelinessFiveRunnerNorm
+  Conjectures.LonelinessGcdShiftCounting
+  Conjectures.LonelinessGcdShift
   Conjectures.LonelinessFiveSpeedBoundedCandidateDefs
   Conjectures.LonelinessCriticalScaling
   Conjectures.LonelinessFiveSpeedCriticalCheck

@@ -897,3 +897,21 @@ All three downloaded artifacts and their source/object/control/log/profile/audit
 The accepted registry includes `LonelinessSixSpectrumFieldsDefs` and `LonelinessSixSpectrumFieldsProduct`, with 16 named endpoints. Original [run 44559208975](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44559208975), job `135691218139`, freshly checked all nine project modules, audited 266 owned/raw declarations (202 theorems and 13 private declarations), and separately replayed all nine modules in the pinned stock kernel. Original evidence is authenticated and preserved under [`docs/verification/six-fields-product-exact-44559208975`](verification/six-fields-product-exact-44559208975/).
 
 These proofs identify the exact 80 signed triple factors and show that sufficient finite prime covers, together with the actual squared norm and the explicit prime-product inequality, force an actual additive triangle for a positive sextuple below `1/6`. Prime coverage remains an input over every nonzero raw residue tuple, including repeated residues. No numerical prime certificate, orbit completeness, sporadic exhaustion, or universal spectrum classification is claimed by this checkpoint.
+
+## Conditional gcd shift component (19 November 2026)
+
+The arbitrary-modulus nine-speed gcd shift test is checked and registered.
+With positive distinct speeds, `LonelyRunnerBound 8`, and `d ≥ 2`, a nonempty
+exceptional set with literal gcd-weighted ceiling cost below `d` implies
+loneliness strictly greater than `1/10`. The gate checks the positive
+floor-cost and ceiling-cost formulations, residue transport, and the general
+gcd-weighted grid count.
+
+The two new modules and 20 required endpoints passed fresh compilation of
+their exact 17-module closure, the complete owned/private declaration audit,
+five quantified statement assertions, and exact stock kernel replay in
+[run 44562942517](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44562942517).
+The [authenticated evidence](verification/loneliness-gcd-shift-44562942517/README.md)
+preserves the original receipt and exact scope. The eight-speed hypothesis
+is retained; no unconditional nine-speed classification or finite census
+is accepted by this checkpoint.
