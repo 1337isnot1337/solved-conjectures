@@ -8,13 +8,15 @@ in the accepted package nor establish the complete sharp asymptotic.
 from __future__ import annotations
 
 import argparse
+from graphlib import TopologicalSorter
 import json
 import os
 from pathlib import Path
 
 from plan_lean_candidates import changed_sources
+from replay_lean import imports_of, local_closure
 from verify_lean_candidate import (
-    ROOT, audit, dependency_order, revision, run, source, source_hashes,
+    ROOT, LEAN, audit, revision, run, source, source_hashes,
 )
 
 
@@ -41,6 +43,18 @@ TASKS = {
          "LineSize.EulerKernel.smoothLog_contDiff",
          "LineSize.EulerKernel.smoothLog_eq"],
     ),
+    "tuples": (
+        "Conjectures.LineSizeTuplesCandidate",
+        ["LineSize.tupleCoreLength_zero_iff",
+         "LineSize.tupleCost_eq_shiftedGapWeight",
+         "LineSize.tupleTail_reconstruct",
+         "LineSize.TupleBuild.tupleCoreLength_assemble",
+         "LineSize.TupleBuild.tupleCost_assemble",
+         "LineSize.TupleBuild.assemble_actual",
+         "LineSize.TupleBuild.assemble_reduced_actual",
+         "LineSize.tupleCount_eq_sum_exactCount",
+         "LineSize.one_sub_X_mul_tupleCountSeries"],
+    ),
 }
 GATE_INPUTS = {
     ".github/workflows/lean-line-size-candidates.yml",
@@ -50,6 +64,14 @@ GATE_INPUTS = {
     "scripts/replay_lean.py",
     "lean/lean-toolchain", "lean/lakefile.toml", "lean/lake-manifest.json",
 }
+
+
+def dependency_order(targets: list[str]) -> list[str]:
+    """Use the replay parser for ordinary, public, and meta project imports."""
+    closure = local_closure(LEAN, set(targets))
+    graph = {module: sorted(set(imports_of(source(module))) & closure)
+             for module in sorted(closure)}
+    return list(TopologicalSorter(graph).static_order())
 
 
 def affected(task: str, changed: set[str] | None) -> bool:

@@ -14,13 +14,15 @@ def meanExp (x : ℝ) : ℝ := -dslope (fun y : ℝ => exp (-y)) 0 x
 
 theorem meanExp_of_ne {x : ℝ} (hx : x ≠ 0) :
     meanExp x=(1-exp (-x))/x := by
-  simp only [meanExp,dslope_of_ne _ hx,slope,sub_zero,neg_zero,exp_zero,smul_eq_mul]
+  simp only [meanExp,dslope_of_ne _ hx,slope,sub_zero,neg_zero,exp_zero,smul_eq_mul,
+    vsub_eq_sub]
   rw [div_eq_mul_inv]
   ring
 
 @[simp] theorem meanExp_zero : meanExp 0=1 := by
   have hd : HasDerivAt (fun x : ℝ => exp (-x)) (-1) 0 := by
-    simpa using (Real.hasDerivAt_exp (-(0 : ℝ))).comp 0 (hasDerivAt_id 0).neg
+    simpa [Function.comp_def] using
+      (Real.hasDerivAt_exp (-(0 : ℝ))).comp 0 (hasDerivAt_id 0).neg
   simp [meanExp,dslope_same,hd.deriv]
 
 theorem meanExp_pos (x : ℝ) : 0 < meanExp x := by

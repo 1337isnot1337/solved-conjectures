@@ -9,6 +9,24 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `CutPeriod.Weight.both_games_exact,
+    `CutPeriod.Weight.gameA_mex,
+    `CutPeriod.Weight.gameB_mex,
+    `CutPeriod.Weight.gameA_value,
+    `CutPeriod.Weight.gameB_value,
+    `CutPeriod.Weight.gameA_parameters,
+    `CutPeriod.Weight.gameB_parameters,
+    `LineSize.realizable_cost_le,
+    `LineSize.exists_core_length,
+    `LineSize.core_length_unique,
+    `LineSize.ordinary_line_exists,
+    `LineSize.hasLineSize_eq_card_of_collinear,
+    `LineSize.SelectedGraph.cost_identity,
+    `LineSize.SelectedGraph.core_degree_le,
+    `LineSize.SelectedGraph.tail_degree,
+    `LineSize.CoreGaps.coreEquiv,
+    `LineSize.CoreGaps.coreEquiv_weight,
+    `LineSize.CoreGaps.pointCost_eq_gapWeight,
     `DenominatorForest.pham_denominator_counterexample,
     `DenominatorForest.pham_dual_denominator,
     `DenominatorForest.primary_level_stabilizes,
@@ -228,7 +246,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler."]
+  let prefixes := #["SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

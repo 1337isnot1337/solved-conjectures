@@ -37,7 +37,9 @@ theorem tendsto_symmetricArea_atTop :
     filter_upwards [eventually_gt_atTop 0] with x hx
     exact (f_pos hx).le
   have hzero : Tendsto I (𝓝[Ici 0] 0) (𝓝 0) := by
-    simpa only [I_zero] using continuousWithinAt_I_zero
+    have h := continuousWithinAt_I_zero
+    change Tendsto I (𝓝[Ici 0] 0) (𝓝 (I 0)) at h
+    simpa only [I_zero] using h
   have hif : Tendsto (fun x : ℝ => I (f x)) atTop (𝓝 0) := hzero.comp hf
   change Tendsto (fun x : ℝ => I x+I (f x)-x*f x) atTop (𝓝 (Real.pi^2/6))
   simpa only [add_zero,sub_zero] using

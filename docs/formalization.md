@@ -8,16 +8,16 @@ to `main`. Li is last. The campaign is incomplete.
 
 The four active lanes in [issue 1](https://github.com/1337isnot1337/solved-conjectures/issues/1) are:
 
-- Concrete CUT certificates: the checked composition theorem permits the path
-  2 → 3 → 4 → 8 → 9. The eight-pile recognizer is composed from two four-pile
-  recognizers. The final option unions remain to be checked.
+- Concrete CUT is complete through compact quotient/residue certificates.
+  That worker now handles the exact analytic profile for Erdős 607, including
+  its integral constant, mean, variance, and global phase bound.
 - Pham denominator degree is complete. That worker now handles the
   Sylvester–Gallai dependency and finite core/counting components of Erdős 607.
 - Compact Motzkin: finite signed-grid characters, compact-group measure, and
   the exact two-difference formula. The same worker has completed the
   all-parameter gap-five/gap-seven character formulas and an odd-cycle density
   theorem.
-- Root: shared integration, reduced-denominator minimality, and the finite
+- Root: shared integration and the finite
   geometric/combinatorial front end of Erdős 607 under `LineSize*`.
 
 The other team coordinates in
@@ -60,7 +60,10 @@ stated sharp local bounds. The concurrent team's proofs were published in
 The general finite CUT decision theorem is complete, with two independent
 constructions. Both prove that a finite test accepts exactly the proposed
 representations of the actual game. Candidate enumeration is complete when a
-representation exists. The two concrete games remain separate obligations.
+representation exists. Both concrete games are now complete as well:
+`CutPeriod.Weight.both_games_exact` identifies their actual recursive values
+and proves least eventual period 12, saltus 8, and earliest start 7.
+Its complete 23-module closure passed independent kernel replay.
 
 Pham's primary and dual limiting-series identities are complete. The proof
 derives stabilization from actual finite orbit levels, solves finite-prefix
@@ -81,6 +84,9 @@ independent rectangle modules to resolve a namespace collision, replayed both,
 and passed the combined source build and 7,581-declaration audit.
 Local verification and hosted CI receipts are
 recorded separately.
+The subsequent `18bf908` Pham/finite-Motzkin checkpoint passed the hosted full
+source, audit, and kernel workflow for all 219 accepted proof modules and both
+roots, in [run 44450524136](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44450524136).
 See [the status report](lean-status.md) for declarations and checked scope.
 
 The full growing-rectangle theorem is complete. The real-to-grid bridge,
@@ -98,8 +104,8 @@ remains separate work.
 
 ## Campaign checklist
 
-1. CUT: finish the concrete three-, four-, eight- and nine-pile certificates,
-   both option unions, and the actual game identifications.
+1. CUT is complete: the general finite test, exhaustive candidate enumeration,
+   both actual game identifications, and exact arithmetic parameters are proved.
 2. Pham is complete: actual orbit limits, both rational identities, and exact
    reduced-denominator minimality are proved.
 3. Distance graphs are complete: all density and character formulas, small
@@ -158,12 +164,10 @@ performs the source build. This prevents simultaneous large certificate
 reductions from exhausting runner memory. No source, axiom or kernel gate is
 omitted.
 
-Generated CUT stages remain outside the root imports until their complete
-source, axiom and independent kernel gates pass. The local three-pile preparation splits state data into 33 chunks and has a
-72-module manifest. That experimental source set is separate from the
-accepted proof snapshot until its stage checks finish. The generator's
-`--doubling-eight` route preserves the original sequential data while avoiding
-unneeded groups five through seven in the accepted dependency path.
+The earlier large higher-pile CUT automata remain preserved outside the accepted
+roots. They are no longer needed for either concrete theorem. The accepted
+compact certificate route has seven new modules and independently checked
+collision and lower-option arguments for every pile size.
 See [the concrete CUT plan](../results/cut-arithmetic-periodicity/LEAN_PLAN.md).
 
 Refresh remote `main` before each publication. Preserve concurrent sources,

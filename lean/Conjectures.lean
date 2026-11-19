@@ -63,3 +63,7 @@ import Conjectures.RectangleRealBoundary
 import Conjectures.LonelinessFourSpeedCutoff
 import Conjectures.LonelinessFiveSpeedCutoff
 import Conjectures.LonelinessFiveSpeedFamilyCutoff
+import Conjectures.CutPeriodWeightTheorem
+import Conjectures.LineSizeOrdinary
+import Conjectures.LineSizeGraphCounts
+import Conjectures.LineSizeCoreGaps

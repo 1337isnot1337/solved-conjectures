@@ -12,7 +12,7 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 | [Denominator degree](results/pham-denominator-degree/) | Pham (2022), §6: primitive period-10 necklace with reduced denominator degree 5. | ☑ | [Proof](results/pham-denominator-degree/PROOF.md) · [Check](results/pham-denominator-degree/verify.py) |
 | [Three-player War](results/spivey-multiplayer-war/PROOF.md) | Spivey (2010), Q5: three winner-first conventions admit cycles with all three players active. | ☑ | [Proof](results/spivey-multiplayer-war/PROOF.md) · [Check](results/spivey-multiplayer-war/verify.py) |
 | [CUT Family B](results/cut-family-b/PROOF.md) | Ellis–Thanatipanonda (2022), Conj. 2: nim-sequence matches the base game iff the least odd cut above 1 exceeds three times the least even cut. | ☑ | [Proof](results/cut-family-b/PROOF.md) · [Check](results/cut-family-b/verify.py) |
-| [CUT with a preperiod](results/cut-arithmetic-periodicity/PROOF.md) | Dailly et al., Open Problem 4: finite arithmetic-periodicity test; both examples have preperiod 6, period 12, saltus 8. | ◐ | [Proof](results/cut-arithmetic-periodicity/PROOF.md) · [Check](results/cut-arithmetic-periodicity/verify.py) |
+| [CUT with a preperiod](results/cut-arithmetic-periodicity/PROOF.md) | Dailly et al., Open Problem 4: finite arithmetic-periodicity test; both examples have preperiod 6, period 12, saltus 8. | ☑ | [Proof](results/cut-arithmetic-periodicity/PROOF.md) · [Check](results/cut-arithmetic-periodicity/verify.py) |
 
 ## Graph theory and discrete geometry
 
@@ -20,7 +20,7 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 | :--- | :--- | :---: | :--- |
 | [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | DeLaViña (2007): every total dominating set contains a dominating pair under the given even-distance bound. **Credited to [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334).** | ☐ | [Proof](results/graffiti-pc-318/PROOF.md) · [Check](results/graffiti-pc-318/verify.py) |
 | [Li's coefficient-sign prediction](results/li-coefficient-sign/) | Li (2026), Problems 4.9 and 4.6 (first question): 31-vertex non-spider tree with `[e_3e_2^14]X_T = +29`. | ☐ | [Proof](results/li-coefficient-sign/PROOF.md) · [Check](results/li-coefficient-sign/verify.py) |
-| [Line-size sets](results/erdos-607-line-sizes/PROOF.md) | Erdős Problem 607 / OEIS A401948: sharp counting asymptotic with exact leading prefactor. | ☐ | [Proof](results/erdos-607-line-sizes/PROOF.md) · [Check](results/erdos-607-line-sizes/verify.py) |
+| [Line-size sets](results/erdos-607-line-sizes/PROOF.md) | Erdős Problem 607 / OEIS A401948: sharp counting asymptotic with exact leading prefactor. | ◐ | [Proof](results/erdos-607-line-sizes/PROOF.md) · [Check](results/erdos-607-line-sizes/verify.py) |
 | [Distance graphs with three missing differences](results/distance-graph-densities/PROOF.md) | Carraher et al., arXiv Conjecture 38 proved for all admissible parameters. Conjecture 39 fails for every `k=50,59,68,…`. The [corrected formula](results/distance-graph-densities/CLASSIFICATION.md) gives all densities for gaps five and seven. | ☑ | [Strip verifier](results/distance-graph-densities/verify.cpp) and [counterexample verifier](results/distance-graph-densities/counterexample.py) |
 
 ## Number theory, packing and partitions

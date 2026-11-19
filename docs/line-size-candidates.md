@@ -1,6 +1,6 @@
 # Erdős 607 candidate verification
 
-The separate `Lean line-size candidate proofs` workflow checks three source
+The separate `Lean line-size candidate proofs` workflow checks four source
 closures. These files remain outside the accepted package until their gates
 pass and their statements are reviewed.
 
@@ -9,6 +9,7 @@ pass and their statements are reviewed.
 | `geometry` | Finite real-plane carrier construction, exact line-size realization, and equality of the actual record count with the canonical tuple count, including collinear and small-cardinality cases. |
 | `profile` | The exact integral constant, unique saddle point, curvature, global phase bound, and mean/variance identities for the literal functions in the proof. |
 | `euler-kernel` | A smooth regular part of the finite Euler-product logarithm, including its actual value at zero and its formula away from zero. |
+| `tuples` | Canonical core/tail reconstruction, exact cost weights, cumulative finite counting, and the formal identity relating exact and cumulative cost series. |
 
 Each job builds every project source in dependency order, audits all theorem
 declarations and custom axioms owned by that closure, and runs the unchanged
@@ -22,7 +23,7 @@ The workflow selects closures affected by a source change. Changes to its
 verification scripts or pinned configuration select every candidate. It does
 not modify the separate loneliness and Graffiti candidate workflow.
 
-Even successful jobs for all three candidates would not prove the final sharp
+Even successful jobs for all four candidates would not prove the final sharp
 asymptotic. The exact generating function, corrected Euler-product estimate,
 local Fourier limit, uniform tail bounds, and final coefficient prefactor are
 additional obligations recorded in the result's `LEAN_PLAN.md`.

@@ -32,14 +32,15 @@ theorem f_hasSum {x : ℝ} (hx : 0<x) :
 
 theorem integrableOn_seriesTerm (m : ℕ) : IntegrableOn (seriesTerm m) (Ioi 0) := by
   exact (integrableOn_exp_mul_Ioi
-    (show -((m:ℝ)+1)<0 by positivity) 0).div_const ((m:ℝ)+1)
+    (neg_neg_of_pos (show 0<((m:ℝ)+1) by positivity)) 0).div_const ((m:ℝ)+1)
 
 theorem integral_seriesTerm (m : ℕ) :
     (∫ x in Ioi (0:ℝ), seriesTerm m x)=1/((m:ℝ)+1)^2 := by
   unfold seriesTerm
-  rw [integral_div_const,integral_exp_mul_Ioi (show -((m:ℝ)+1)<0 by positivity)]
+  rw [integral_div,integral_exp_mul_Ioi
+    (neg_neg_of_pos (show 0<((m:ℝ)+1) by positivity))]
   simp only [mul_zero,Real.exp_zero,neg_div_neg_eq]
-  ring
+  rw [div_div,pow_two]
 
 theorem integral_f_Ioi : (∫ x in Ioi (0:ℝ), f x)=Real.pi^2/6 := by
   have hnorm : ∀ m x, ‖seriesTerm m x‖=seriesTerm m x :=
@@ -83,6 +84,7 @@ theorem continuousWithinAt_I_zero : ContinuousWithinAt I (Ici 0) 0 := by
 
 theorem tendsto_I_zero : Tendsto I (𝓝[>] 0) (𝓝 0) := by
   have h := continuousWithinAt_I_zero.mono Ioi_subset_Ici_self
+  change Tendsto I (𝓝[>] 0) (𝓝 (I 0)) at h
   simpa only [I_zero] using h
 
 theorem tendsto_I_atTop : Tendsto I atTop (𝓝 (Real.pi^2/6)) := by
@@ -104,7 +106,8 @@ theorem tendsto_mul_f_zero : Tendsto (fun x : ℝ => x*f x) (𝓝[>] 0) (𝓝 0)
     exact mul_f_le_I hx
 
 theorem integrableOn_meanKernel {u : ℝ} : IntegrableOn meanKernel (Icc 0 u) := by
-  have hc : IntegrableOn (fun _ : ℝ => (1:ℝ)) (Icc 0 u) := integrableOn_const
+  have hc : IntegrableOn (fun _ : ℝ => (1:ℝ)) (Icc 0 u) :=
+    integrableOn_const isCompact_Icc.measure_lt_top.ne
   apply hc.mono' measurable_meanKernel.aestronglyMeasurable
   filter_upwards [ae_restrict_mem measurableSet_Icc] with x hx
   rw [Real.norm_eq_abs,abs_of_nonneg (meanKernel_nonneg hx.1)]
@@ -115,7 +118,8 @@ theorem intervalIntegrable_meanKernel {u : ℝ} (hu : 0≤u) :
   (intervalIntegrable_iff_integrableOn_Icc_of_le hu).2 integrableOn_meanKernel
 
 theorem integrableOn_varianceKernel {u : ℝ} : IntegrableOn varianceKernel (Icc 0 u) := by
-  have hc : IntegrableOn (fun _ : ℝ => Real.exp u) (Icc 0 u) := integrableOn_const
+  have hc : IntegrableOn (fun _ : ℝ => Real.exp u) (Icc 0 u) :=
+    integrableOn_const isCompact_Icc.measure_lt_top.ne
   apply hc.mono' measurable_varianceKernel.aestronglyMeasurable
   filter_upwards [ae_restrict_mem measurableSet_Icc] with x hx
   rw [Real.norm_eq_abs,abs_of_nonneg (varianceKernel_nonneg x)]

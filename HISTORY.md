@@ -1,5 +1,19 @@
 # History
 
+## 2026-11-19 — Complete concrete CUT games and line-size foundations
+
+- Identified both actual recursive CUT games with their proposed sequence at
+  every natural pile size. Proved least eventual arithmetic period 12, saltus
+  8, and earliest period-12 start 7. Seven compact certificate modules passed
+  source checks and the 1,127-declaration ownership audit; all 23 project
+  modules in their exact closure passed independent kernel replay.
+- Checked seven Erdős 607 foundations, including ordinary-line existence for
+  actual finite real-plane point sets, the selected-graph cost identity, and
+  the core-to-gap weight equivalence. Geometric sufficiency and the asymptotic
+  theorem remain in progress.
+- Recorded successful hosted full source, axiom, and kernel verification of
+  the 219-module Pham/finite-Motzkin checkpoint `18bf908`.
+
 [Home](README.md) · [Catalogue](CONTENTS.md)
 
 ## 2026-11-19 — Complete rectangle asymptotic and finite plane reduction

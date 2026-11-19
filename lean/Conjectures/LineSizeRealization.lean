@@ -70,8 +70,8 @@ theorem exists_carrier_realization (d : ℕ → ℕ) (k : ℕ) (hd : Decreasing 
     exact SelectedGraph.cost_identity d k r hd hr
   · intro i hi
     by_cases hir : i < r
-    · simpa only [if_pos hir] using hcounts i hi
-    · rw [hcounts i hi,if_neg hir]
+    · simpa only [ite_eq_left hir] using hcounts i hi
+    · rw [hcounts i hi,ite_eq_right hir]
       exact SelectedGraph.tail_degree d k r hd hr i (by omega) hi
 
 theorem exists_padded_carrier_realization (d : ℕ → ℕ) (k n : ℕ)

@@ -82,8 +82,9 @@ theorem exists_large_record_iff (n : ℕ) (S : Finset ℕ) :
     rw [tupleCost,← hP]
     apply realizable_cost_le P (tupleAt S) S.card
     · intro i hi
-      have hs := tupleAt_mem S i hi
-      rw [← hrecord] at hs
+      have hs : tupleAt S i ∈ largeLineSizeRecord P := by
+        rw [hrecord]
+        exact tupleAt_mem S i hi
       exact ((mem_largeLineSizeRecord P _).mp hs).1
     · intro i j hij hj
       exact (tupleAt_decreasing S i j hij hj).ne'
