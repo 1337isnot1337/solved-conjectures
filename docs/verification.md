@@ -41,6 +41,7 @@ python3 results/tight-seven-speeds/verify.py
 python3 results/tight-eight-speeds/verify.py
 python3 results/eight-speed-spectrum/verify.py
 python3 results/seven-speed-spectrum/verify.py
+python3 results/tight-eleven-to-fourteen/verify.py
 python3 results/tight-nine-speeds/verify.py
 ```
 

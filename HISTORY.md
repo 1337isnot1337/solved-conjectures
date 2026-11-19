@@ -2,6 +2,10 @@
 
 [Home](README.md) · [Catalogue](CONTENTS.md)
 
+## 2026-11-19 — Equality for eleven through fourteen runners
+
+- Classified the primitive equality cases using published binary sieves and an additional integer-direction calculation.
+
 ## 2026-11-19 — Eight-speed loneliness spectrum
 
 - Added the full classification below 1/8, the three families, and the table of 17 sporadic tuples.

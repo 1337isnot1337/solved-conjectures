@@ -63,3 +63,7 @@ jobs:
         run: python3 results/seven-speed-spectrum/verify.py
       - name: Verify the eight-speed loneliness spectrum
         run: python3 results/eight-speed-spectrum/verify.py
+      - name: Verify eleven- through fourteen-runner equality cases
+        run: |
+          curl --fail --silent --show-error --location --retry 3 https://raw.githubusercontent.com/vzsky/13-lonely-runners/29311663c21835d67529b29a4acf6631fcad5c63/result_12 -o "$RUNNER_TEMP/first-lifts.log"
+          python3 results/tight-eleven-to-fourteen/verify.py --legacy-log "$RUNNER_TEMP/first-lifts.log"
