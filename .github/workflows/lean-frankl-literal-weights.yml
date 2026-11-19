@@ -38,5 +38,8 @@ jobs:
         if: always()
         with:
           name: frankl-literal-ten-bridge
-          path: .candidate-artifacts/frankl-literal-weights-*/
+          path: |
+            .candidate-artifacts/frankl-literal-weights-thin/
+            .candidate-artifacts/frankl-literal-weights-assembly/
+          include-hidden-files: true
           retention-days: 14

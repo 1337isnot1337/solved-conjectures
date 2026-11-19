@@ -153,7 +153,7 @@ theorem indices_nodup {size : ℕ} {chunks : List Chunk}
     (hindexed : ∀ chunk ∈ chunks, Indexed size chunk)
     (hcover : Covers size chunks) :
     (indices chunks).Nodup := by
-  change (⟦indices chunks⟧ : Multiset ℕ).Nodup
+  change Multiset.Nodup (⟦indices chunks⟧ : Multiset ℕ)
   apply Multiset.toFinset_card_eq_card_iff_nodup.mp
   change (indices chunks).toFinset.card = (indices chunks).length
   rw [indices_toFinset hindexed hcover, Finset.card_range,
@@ -242,6 +242,11 @@ theorem entry_for_original {size : ℕ} {original : ℕ → List ℕ}
   obtain ⟨target, htarget, hword⟩ :=
     entry_for_index hindexed hcover hwords (List.mem_range.mp hi)
   refine ⟨target, htarget, ?_⟩
-  simp only [shapeWord, hword]
+  funext p
+  change (Finset.univ.filter (fun j : Fin 4 =>
+      (target.word.getD p.val 0).testBit j.val = true)) =
+    Finset.univ.filter (fun j : Fin 4 =>
+      ((original i).getD p.val 0).testBit j.val = true)
+  rw [hword]
 
 end FranklSmallCyclic.RowCoverage
