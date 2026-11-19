@@ -610,6 +610,38 @@ modules=(
   Conjectures.HadamardBorderSymmetryDomain
   Conjectures.HadamardBorderSymmetryMain
   Conjectures.HadamardBorderSymmetryTransfer
+  Conjectures.FranklSpanFourWordCoverage
+  Conjectures.FranklCyclicRank
+  Conjectures.FranklCyclicRankList
+  Conjectures.FranklCyclicWords
+  Conjectures.FranklFamilyShortcuts
+  Conjectures.FranklSpanFourFamily
+  Conjectures.FranklLocalEnumeration
+  Conjectures.FranklLocalEnumerationCore
+  Conjectures.FranklLocalEnumerationMap
+  Conjectures.FranklCyclicGenerators
+  Conjectures.FranklLocalFiniteSupport
+  Conjectures.FranklLocalMaskCached
+  Conjectures.FranklCyclicCertificates
+  Conjectures.FranklSmallCyclicSchedule
+  Conjectures.FranklSpanFourAssemblyCore
+  Conjectures.FranklSpanFourCyclicInjective
+  Conjectures.FranklSpanFourIrredundant
+  Conjectures.FranklLocalMaskEquivalence
+  Conjectures.FranklCyclicPairs
+  Conjectures.FranklSmallCyclicMaskWindows
+  Conjectures.FranklSpanFourAdmissibleCore
+  Conjectures.FranklSmallCyclicWeights
+  Conjectures.FranklSpanFourAdmissible
+  Conjectures.FranklSmallCyclicWeightTransport
+  Conjectures.FranklSmallCyclicWeightsPilotData
+  Conjectures.FranklSpanFourAssembly
+  Conjectures.FranklSmallCyclicMaskTransport
+  Conjectures.FranklSmallCyclicWeights7Pilot
+  Conjectures.FranklSmallCyclicWeights8Pilot
+  Conjectures.FranklSmallCyclicWeights9Pilot
+  Conjectures.FranklSpanFourWeightBatches
+  Conjectures.FranklSmallCyclicWeightsPilot
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

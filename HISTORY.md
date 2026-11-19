@@ -1,5 +1,15 @@
 # History
 
+## 2026-11-19 — Checked cyclic assembly and weight transport
+
+Registered 32 unchanged proof modules after five hosted source, axiom and
+stock-kernel gates passed. The accepted packet includes the conditional
+all-period span-four assembly, its arbitrary-family transfer, the 48-case
+literal weight pilot, exact overlap enumeration, and injective weight
+transport with a proved cached evaluator. The concrete graph, rank and full
+weight tables remain unfinished. No complete span-four theorem is claimed.
+[Scope and receipts](docs/lean-status.md#frankl-cyclic-assembly-and-weight-helpers--19-november-2026).
+
 ## 2026-11-19 — Complete fixed-border multiplier and orbit bounds
 
 Registered all 12 border-symmetry proof modules after their exact closure at

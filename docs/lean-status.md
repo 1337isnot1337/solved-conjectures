@@ -41,7 +41,7 @@ never additional Lean axioms.
 | Lonely-runner two insertions | Not formalized | The arbitrary two-speed insertion theorem, acceleration bridge, unbounded branch, finite cases, and three-insertion obstruction are not registered in the accepted package. Published candidate sources remain under issue 12. |
 | Erdős–Gyárfás abelian covers | Not formalized | The arbitrary abelian-cover cycle theorem and sharp connected 95-vertex example remain under issue 18. The general minimum-degree-three conjecture is outside this result. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
-| Frankl generating families | Partial: large-generator bound and cyclic components checked | The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The full Vaughan shortcut, all cyclic span-four families on at most six sites, conditional residual cases at periods seven through ten, and exact local weight-checker semantics are also checked. The complete cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete. |
+| Frankl generating families | Partial: large-generator bound and cyclic components checked | The full `k ≥ 15` theorem is checked: in every finite `k`-uniform generating family with exactly three generators through each point and pairwise intersections of size at most one, every point belongs to at least `657/1000` of the distinct unions, including the empty union. The full Vaughan shortcut, all cyclic span-four families on at most six sites, conditional residual cases at periods seven through ten, and exact local weight-checker semantics are also checked. The conditional all-period assembly, 48-case literal pilot, and exact injective weight transport are checked. The complete cyclic span-four theorem and the `3 ≤ k ≤ 14` high-girth cases remain incomplete. |
 | Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction, cumulative counting, and the exact coefficientwise formal generating function are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. Analytic evaluation, the Fourier local limit, and the sharp coefficient asymptotic remain open. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
 | Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
@@ -1640,3 +1640,40 @@ and length-598 sequence restrictions, quotient/no-lift certificates, pattern
 enumeration, and fixed-border matrix construction remain under issue 17.
 The full merged-package gate is separate from this exact component check.
 Hadamard existence at order 2396 remains open, and Li remains deferred.
+
+## Frankl cyclic assembly and weight helpers — 19 November 2026
+
+The accepted package includes the all-period span-four assembly with its
+original eleven finite-check premises: eight graph, rank and literal-weight
+checks, plus three actual short-period weight checks. The family transfer
+retains arbitrary finite union-closed families and requires no empty member.
+The theorem is still conditional; the concrete finite packet is unfinished.
+
+The unchanged components passed five hosted proof jobs:
+
+| Closure | Modules | Audited theorems | Private finite nodes |
+| --- | ---: | ---: | ---: |
+| Assembly and weight batches | 76 | 2,440 | 597 |
+| Literal period-7/8/9 pilot | 25 | 378 | 24 |
+| Word coverage | 1 | 22 | 0 |
+| Exact injective transport | 23 | 371 | 0 |
+| Cached mask evaluator | 10 | 155 | 0 |
+
+Each job rebuilt its complete closure, audited every owned theorem with
+explicit private imports, and replayed the exact closure with the unchanged
+pinned stock checker. Only the three standard logical axioms are allowed.
+The closures overlap; their union has 86 modules. This registration adds
+32 unchanged proof modules, bringing the accepted set to 636 proof modules
+plus two roots. The merged full-package gate remains separate.
+
+The pilot checks only 16 original rows at each of periods seven, eight and
+nine. The transport and caching theorems are generic. The 9,448-class orbit
+dataset remains candidate data; it does not prove the full arithmetic,
+transport or coverage tables.
+
+[Assembly receipt](verification/frankl-span-four-77fa9a75.json) ·
+[Pilot receipt](verification/frankl-cyclic-pilot-77fa9a75.json) ·
+[Word-coverage receipt](verification/frankl-word-coverage-77fa9a75.json) ·
+[Transport receipt](verification/frankl-mask-transport-5d86c291.json) ·
+[Cache receipt](verification/frankl-mask-cached-5d86c291.json) ·
+[Remaining finite work](frankl-cyclic-weight-orbits.md).

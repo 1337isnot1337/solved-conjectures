@@ -446,3 +446,40 @@ All 12 sources are now registered in the accepted root, theorem audit, and
 kernel-replay list. The separate merged-package gate still applies. This
 registration does not include the sequence restrictions, quotient certificates,
 pattern enumeration, or matrix border construction owned by issue 17.
+
+## Frankl cyclic assembly and weight helpers — 19 November 2026
+
+The accepted package includes the all-period span-four assembly with its
+original eleven finite-check premises: eight graph, rank and literal-weight
+checks, plus three actual short-period weight checks. The family transfer
+retains arbitrary finite union-closed families and requires no empty member.
+The theorem is still conditional; the concrete finite packet is unfinished.
+
+The unchanged components passed five hosted proof jobs:
+
+| Closure | Modules | Audited theorems | Private finite nodes |
+| --- | ---: | ---: | ---: |
+| Assembly and weight batches | 76 | 2,440 | 597 |
+| Literal period-7/8/9 pilot | 25 | 378 | 24 |
+| Word coverage | 1 | 22 | 0 |
+| Exact injective transport | 23 | 371 | 0 |
+| Cached mask evaluator | 10 | 155 | 0 |
+
+Each job rebuilt its complete closure, audited every owned theorem with
+explicit private imports, and replayed the exact closure with the unchanged
+pinned stock checker. Only the three standard logical axioms are allowed.
+The closures overlap; their union has 86 modules. This registration adds
+32 unchanged proof modules, bringing the accepted set to 636 proof modules
+plus two roots. The merged full-package gate remains separate.
+
+The pilot checks only 16 original rows at each of periods seven, eight and
+nine. The transport and caching theorems are generic. The 9,448-class orbit
+dataset remains candidate data; it does not prove the full arithmetic,
+transport or coverage tables.
+
+[Assembly receipt](verification/frankl-span-four-77fa9a75.json) ·
+[Pilot receipt](verification/frankl-cyclic-pilot-77fa9a75.json) ·
+[Word-coverage receipt](verification/frankl-word-coverage-77fa9a75.json) ·
+[Transport receipt](verification/frankl-mask-transport-5d86c291.json) ·
+[Cache receipt](verification/frankl-mask-cached-5d86c291.json) ·
+[Remaining finite work](frankl-cyclic-weight-orbits.md).

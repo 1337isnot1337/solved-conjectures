@@ -13,3 +13,11 @@ The integer local checker and its maximal-cover equivalent have passed strict Le
 The full Vaughan shortcut and all cyclic span-four families on at most six sites are now checked in Lean. The period-seven-through-ten residual results retain an explicit graph-membership hypothesis. The remaining window and graph data are required for the complete span-four theorem. [Exact checked packet](../../docs/verification/frankl-fc-packet-6544adcc.json)
 
 The exact mask checker and finite-domain constructor are also checked and registered. They support literal short-cycle generator masks. Their [hosted receipt](../../docs/verification/frankl-mask-domains-a632fc82.json) records the ten-module gate. The [reproduced candidate rows](width_four_weight_candidates.json) and [independent literal replay](replay_small_cyclic_weight_candidates.py) remain candidate-data evidence until their full Lean batches pass.
+
+The Lean packet also includes the conditional all-period span-four
+assembly, a 48-case short-period weight pilot, and exact injective transport.
+The complete finite tables remain pending. The
+[orbit scope](../../docs/frankl-cyclic-weight-orbits.md) distinguishes checked
+generic theorems from candidate data; the
+[formalization status](../../docs/lean-status.md#frankl-cyclic-assembly-and-weight-helpers--19-november-2026)
+records all five hosted receipts.

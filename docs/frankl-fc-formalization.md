@@ -193,3 +193,13 @@ The shared-family adapter proves literal equality of the distinct-union and abun
 
 The full cyclic proof still requires the finite window and graph certificates, their schedule interpretation, and the small-cycle assembly.
 Li remains outside this work until the other results are complete.
+
+## Conditional assembly and transported weights
+
+The accepted all-period assembly preserves the original arbitrary-family
+statement while exposing eleven finite checks. The 48-case literal pilot,
+exact word coverage, mask/certificate equivalence, injective support transport
+and cached checker also passed their hosted gates. The finite graph, rank
+and complete weight tables remain unfinished. See the
+[scope and five receipts](lean-status.md#frankl-cyclic-assembly-and-weight-helpers--19-november-2026)
+and [candidate orbit data](frankl-cyclic-weight-orbits.md).
