@@ -104,10 +104,11 @@ def audit_source(modules, required, private_nodes, *, modern):
     private_names = ", ".join("`" + name for name in private)
     owned = ", ".join(json.dumps(module) for module in sorted(modules))
     header = "module\n" if modern else ""
+    support_import = "public meta import " if modern else "import "
+    support = "\n".join(support_import + name for name in (
+        "Lean.Util.CollectAxioms", "Lean.PrivateName", "Lean.Elab.Command"))
     return f'''{header}{imports}
-import Lean.Util.CollectAxioms
-import Lean.PrivateName
-import Lean.Elab.Command
+{support}
 
 open Lean Elab Command in
 run_cmd do
