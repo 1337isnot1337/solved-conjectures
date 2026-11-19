@@ -24,8 +24,6 @@ def compatible (m : ℕ) (inv : ℕ → ℕ) (b a : ℕ) : ℕ :=
 theorem compatible_testBit (m : ℕ) (inv : ℕ → ℕ) (b a c : ℕ) :
     (compatible m inv b a).testBit c=InitialSupport.pairCompatible m inv b a c := by
   apply Bool.eq_iff_iff.mpr
-  change (compatible m inv b a).testBit c=true ↔
-    InitialSupport.pairCompatible m inv b a c=true
   rw [←SupportSearch.Bits.mem_decode,compatible,decode_encode,Finset.mem_filter]
   constructor
   · exact fun h => h.2
