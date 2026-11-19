@@ -1,0 +1,147 @@
+name: Lean candidate proofs
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'lean/Conjectures/Graffiti318*.lean'
+      - 'lean/Conjectures/Loneliness*.lean'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/verify_lean_candidate.py'
+      - '.github/workflows/lean-candidates.yml'
+  pull_request:
+    paths:
+      - 'lean/Conjectures/Graffiti318*.lean'
+      - 'lean/Conjectures/Loneliness*.lean'
+      - 'scripts/verify_lean_candidate.py'
+      - '.github/workflows/lean-candidates.yml'
+
+permissions:
+  contents: read
+
+env:
+  LEAN_NUM_THREADS: '1'
+
+jobs:
+  components:
+    name: Candidate ${{ matrix.task }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        task: [base, product]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Build, audit axioms, and replay project dependencies
+        run: python3 scripts/verify_lean_candidate.py '${{ matrix.task }}'
+
+  four-speed:
+    name: Four-speed prime ${{ matrix.prime }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        prime: [17, 29, 31, 37, 41, 43, 47, 53, 59, 61]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Verify residue coverage and exhaustive lifting trees
+        run: python3 scripts/verify_lean_candidate.py 'four-${{ matrix.prime }}' --export
+      - uses: actions/upload-artifact@v4
+        with:
+          name: checked-four-${{ matrix.prime }}
+          path: .candidate-artifacts/four-${{ matrix.prime }}/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7
+
+  four-assembly:
+    name: Four-speed bounded classification
+    needs: four-speed
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: checked-four-*
+          path: lean/.lake/build
+          merge-multiple: true
+      - name: Validate checked artifacts and verify classification assembly
+        run: python3 scripts/verify_lean_candidate.py four-assembly --reuse four
+
+  kz:
+    name: KZ product for ${{ matrix.dimension }} speeds
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        dimension: [9, 10, 11, 12, 13]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Verify every subset certificate
+        run: python3 scripts/verify_lean_candidate.py 'kz-${{ matrix.dimension }}' --export
+      - uses: actions/upload-artifact@v4
+        with:
+          name: checked-kz-${{ matrix.dimension }}
+          path: .candidate-artifacts/kz-${{ matrix.dimension }}/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7
+
+  kz-assembly:
+    name: KZ product minimization
+    needs: kz
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: checked-kz-*
+          path: lean/.lake/build
+          merge-multiple: true
+      - name: Validate checked artifacts and verify product minimizer
+        run: python3 scripts/verify_lean_candidate.py kz-assembly --reuse kz

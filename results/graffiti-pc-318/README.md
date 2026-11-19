@@ -36,4 +36,10 @@ The standard-library verifier checks 419,235 labeled graphs, including every gra
 
 ## Formalization
 
-No Lean formalization has been completed. See the [Lean status report](../../docs/lean-status.md). This result is unrefereed and has not been independently peer reviewed.
+The all-order Lean theorem and the five-vertex sharpness example have passed local
+source compilation, a transitive axiom audit, and independent kernel replay.
+The three modules are awaiting shared-package registration and hosted validation.
+See the [exact statements and local receipts](LEAN.md), the
+[candidate checks](../../docs/lean-candidates.md), and the
+[Lean status report](../../docs/lean-status.md).
+The result remains unrefereed and lacks independent peer review.
