@@ -24,6 +24,25 @@
       "source_after_sha256": "4f807a024e6eda1b4ec39e7942b2178b41c48b55ab1ed4a8a18c7d535aeaa731",
       "source_before_sha256": "757b0ed6efe8cdfa37cd7753171b23b547b8e21b3af1af0c0535d65026050b13",
       "theorem_statements_changed": false
+    },
+    {
+      "changes": [
+        "Remove the reported redundant trailing <;> ring after field_simp."
+      ],
+      "failed_artifact": {
+        "archive_sha256": "cf5035749a01c45b0f94f1744e52e753478b7788f56833c44e11162ecb69d453",
+        "id": 14533292136
+      },
+      "failed_job_id": 135574585678,
+      "failed_run_id": 44528290143,
+      "historical_recovery_artifact": {
+        "archive_sha256": "e038de9c2b47585cf05f68048fef5188ff60c5edfc9ff98b7f2cb365350d8683",
+        "id": 14533016587
+      },
+      "module": "Conjectures.NonmixedGapPeriodic",
+      "source_after_sha256": "dc479ec5fab7c8912231e3b972f794e2e1558120512666f939b139e8411cc180",
+      "source_before_sha256": "3e5def20a39369ef5c466927c7ec1bf10e531249bf1e980e01ab667aeb26d612",
+      "theorem_statements_changed": false
     }
   ],
   "helper_sha256": {
@@ -7885,7 +7904,7 @@
     "Conjectures.LonelinessSubspaceExtension": "7c2d1387a23f9645b19b5a51994ada69a22898c7ddc61c348900411daa5fac6f",
     "Conjectures.LonelinessTwoDirections": "bc5068105b096a573a618bb46a2c3c0263dfad2c9ef1cd1c979a99d56324d454",
     "Conjectures.NonmixedGapDensity": "4f807a024e6eda1b4ec39e7942b2178b41c48b55ab1ed4a8a18c7d535aeaa731",
-    "Conjectures.NonmixedGapPeriodic": "3e5def20a39369ef5c466927c7ec1bf10e531249bf1e980e01ab667aeb26d612",
+    "Conjectures.NonmixedGapPeriodic": "dc479ec5fab7c8912231e3b972f794e2e1558120512666f939b139e8411cc180",
     "Conjectures.NonmixedGapResidues": "98f3fe3c1fa443c68c8b5d5f80f4e7fc2ec8f6698fc273fc188d9e91b979b737"
   },
   "source_snapshot_base": "9bd0e3fe3a25bf3d7c319425a392770aff98a122"
