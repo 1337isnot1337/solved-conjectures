@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Verify standalone Frankl local-certificate checker extensions.
 
-These tasks prove exact checker semantics and soundness. They do not assert
-that any finite window certificate has passed, or complete the span-four
-theorem. Their closures do not include the Vaughan/Matching data.
+These tasks prove exact checker semantics, caching and injective transport.
+They do not assert that the full finite weight table has passed or complete
+the span-four theorem. Their closures do not include Vaughan/Matching data.
 """
 
 from __future__ import annotations
@@ -11,10 +11,13 @@ from __future__ import annotations
 import argparse
 import json
 import os
+from pathlib import Path
+import re
+import subprocess
 
 from plan_lean_candidates import changed_sources
 from verify_frankl_fc_candidate import audit_exact_closure, maximal_tasks
-from verify_lean_candidate import ROOT, digest, revision, run, source_hashes
+from verify_lean_candidate import ROOT, LEAN, digest, revision, source_hashes
 from verify_line_size_candidate import check_sources, dependency_order
 
 
@@ -63,6 +66,50 @@ TASKS = {
         "FranklLocal.Mask.validDomains_of_submasks",
         "FranklLocal.Mask.outside_submasks_length",
     ]),
+    "mask-cached": ("Conjectures.FranklLocalMaskCached", [
+        "FranklLocal.Mask.rowOfCached_eq",
+        "FranklLocal.Mask.cachedCheck_eq",
+    ]),
+    "mask-equivalence": ("Conjectures.FranklLocalMaskEquivalence", [
+        "FranklLocal.certificateCheck_of_weightCertificate",
+        "FranklLocal.certificateCheck_iff_weightCertificate",
+        "FranklLocal.localGenerators_idem",
+        "FranklLocal.certificateCheck_localGenerators",
+        "FranklLocal.certificateCheck_image_on",
+        "FranklLocal.certificateCheck_image_on_local",
+        "FranklLocal.Mask.certificateCheck_check",
+        "FranklLocal.Mask.check_iff_certificateCheck",
+        "FranklLocal.Mask.check_eq_certificateCheck",
+        "FranklLocal.Mask.check_iff_weightCertificate",
+        "FranklLocal.Mask.check_image_on",
+        "FranklLocal.Mask.check_image_on_local",
+        "FranklLocal.Mask.check_image_local",
+    ]),
+    "small-weight-transport": ("Conjectures.FranklSmallCyclicWeightTransport", [
+        "FranklSmallCyclic.WeightTransport.transportCheck_iff",
+        "FranklSmallCyclic.WeightTransport.transportCheck_periods",
+        "FranklSmallCyclic.WeightTransport.transportCheck_wellFormed",
+        "FranklSmallCyclic.WeightTransport.transportCheck_keys",
+        "FranklSmallCyclic.WeightTransport.transportCheck_injective",
+        "FranklSmallCyclic.WeightTransport.window_domains",
+        "FranklSmallCyclic.WeightTransport.transportCheck_sound",
+        "FranklSmallCyclic.WeightTransport.transportCheck_entryCheck",
+        "FranklSmallCyclic.WeightTransport.transportCheck_of_batch",
+    ]),
+    "small-mask-transport": ("Conjectures.FranklSmallCyclicMaskTransport", [
+        "FranklSmallCyclic.MaskTransport.maskPoints_toFinset",
+        "FranklSmallCyclic.MaskTransport.mem_maskPoints",
+        "FranklSmallCyclic.MaskTransport.decode_pointsMask",
+        "FranklSmallCyclic.MaskTransport.decode_renameMask",
+        "FranklSmallCyclic.MaskTransport.decodedGenerators_rename",
+        "FranklSmallCyclic.MaskTransport.decoded_localCodes",
+        "FranklSmallCyclic.MaskTransport.decode_supportCode",
+        "FranklSmallCyclic.MaskTransport.decode_localCode_subset_support",
+        "FranklSmallCyclic.MaskTransport.maskTransportCheck_iff",
+        "FranklSmallCyclic.MaskTransport.maskTransportCheck_sound",
+        "FranklSmallCyclic.MaskTransport.maskTransportCheck_window",
+        "FranklSmallCyclic.MaskTransport.maskTransportCheck_entryCheck",
+    ]),
 }
 
 GATE_INPUTS = (
@@ -73,6 +120,9 @@ GATE_INPUTS = (
     "scripts/plan_lean_candidates.py",
     "scripts/replay_lean.py",
     ".github/workflows/lean-frankl-local-candidates.yml",
+    "lean/lean-toolchain",
+    "lean/lakefile.toml",
+    "lean/lake-manifest.json",
 )
 
 
@@ -111,6 +161,78 @@ def ci_plan(changed):
             "required_theorems": {task: task_spec(task, closures)[3] for task in retained}}
 
 
+
+def logged_run(command, log_path):
+    print("+ " + " ".join(command), flush=True)
+    output = []
+    with log_path.open("w") as log:
+        process = subprocess.Popen(command, cwd=LEAN, text=True, stdout=subprocess.PIPE,
+                                   stderr=subprocess.STDOUT,
+                                   env={**os.environ, "LEAN_NUM_THREADS": "1"})
+        assert process.stdout is not None
+        for line in process.stdout:
+            print(line, end="", flush=True)
+            log.write(line)
+            output.append(line)
+        result = process.wait()
+    if result:
+        raise subprocess.CalledProcessError(result, command)
+    return "".join(output)
+
+def assert_exact_replay_set(output, modules):
+    replayed = re.findall(r"^replaying ([A-Za-z0-9_.]+)$", output, re.MULTILINE)
+    if len(replayed) != len(set(replayed)):
+        raise RuntimeError("kernel replay reported duplicate project modules")
+    if set(replayed) != set(modules):
+        missing = sorted(set(modules) - set(replayed))
+        extra = sorted(set(replayed) - set(modules))
+        raise RuntimeError(f"kernel replay set mismatch: missing={missing}; extra={extra}")
+    return replayed
+
+def replay_exact_closure(target, modules, destination):
+    log = destination / "kernel-replay.log"
+    output = logged_run(["lake", "env", "python3", "../scripts/replay_lean.py", "--root", target], log)
+    replayed = assert_exact_replay_set(output, modules)
+    return {"replayed_modules": replayed, "exact_replay_set": True,
+            "log_sha256": digest(log)}
+
+def object_hashes(modules):
+    result = {}
+    for module in modules:
+        stem = LEAN / ".lake/build/lib/lean" / module.replace(".", "/")
+        artifacts = {}
+        for suffix in (".olean", ".olean.private", ".olean.server", ".ir", ".ir.sig"):
+            path = Path(str(stem) + suffix)
+            if path.is_symlink():
+                raise RuntimeError(f"project proof artifacts must be materialized: {path}")
+            if not path.is_file():
+                if suffix.startswith(".olean"):
+                    raise RuntimeError(f"missing modern Lean object facet: {path}")
+                continue
+            artifacts[suffix] = digest(path)
+        result[module] = artifacts
+    return result
+
+def check_output_paths(modules):
+    for module in modules:
+        stem = LEAN / ".lake/build/lib/lean" / module.replace(".", "/")
+        for suffix in (".olean", ".olean.private", ".olean.server", ".ir", ".ir.sig"):
+            path = Path(str(stem) + suffix)
+            if path.is_symlink():
+                raise RuntimeError(f"refusing to overwrite a symlinked project artifact: {path}")
+
+def check_pinned_checker():
+    command = ["lake", "env", "python3", "-c",
+               "import shutil; print(shutil.which('leanchecker') or '')"]
+    path = subprocess.check_output(command, cwd=LEAN, text=True).strip()
+    if not path or not Path(path).is_file():
+        raise RuntimeError("pinned Lean checker is unavailable")
+    actual = digest(Path(path))
+    if actual != "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6":
+        raise RuntimeError("Lean checker differs from the reviewed stock pinned binary")
+    return {"path": path, "sha256": actual}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("task", nargs="?", choices=TASKS)
@@ -143,20 +265,26 @@ def main():
         "project_modules": modules, "source_sha256": initial,
         "gate_sha256": initial_gate, "required_theorems": required,
         "covered_tasks": covered, "status": "running", "completed_checks": [],
-        "scope": "Local-certificate checker semantics, exact domains and soundness; no finite window certificate.",
+        "scope": "Local-certificate checker semantics, exact domains, caching and injective transport; no full finite weight table.",
     }
     destination = ROOT / ".candidate-artifacts" / ("frankl-local-" + args.task)
     destination.mkdir(parents=True, exist_ok=True)
     try:
+        receipt["checker"] = check_pinned_checker()
+        check_output_paths(modules)
         check_sources(modules, receipt)
         receipt["completed_checks"].append("strict source checks, warnings treated as errors")
+        initial_objects = object_hashes(modules)
+        receipt["artifact_sha256"] = initial_objects
         receipt["axiom_audit"] = audit_exact_closure(modules, required, destination)
         receipt["completed_checks"].append(
             "explicit import-all axiom whitelist and exact private-node visibility")
-        run("lake", "env", "python3", "../scripts/replay_lean.py", "--root", target)
+        receipt["kernel_replay"] = replay_exact_closure(target, modules, destination)
         receipt["completed_checks"].append("independent exact-closure kernel replay")
         if source_hashes(modules) != initial or gate_hashes() != initial_gate:
             raise RuntimeError("source or gate changed during verification")
+        if object_hashes(modules) != initial_objects or check_pinned_checker() != receipt["checker"]:
+            raise RuntimeError("proof objects or stock checker changed during verification")
         receipt["status"] = "passed"
     except BaseException as exc:
         receipt["status"] = "failed"

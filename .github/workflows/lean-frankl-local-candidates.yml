@@ -4,11 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'lean/Conjectures/FranklBasic.lean'
-      - 'lean/Conjectures/FranklFCBitCode.lean'
-      - 'lean/Conjectures/FranklFamily.lean'
-      - 'lean/Conjectures/FranklLocal*.lean'
-      - 'lean/Conjectures/FranklSmallCyclicMasks.lean'
+      - 'lean/Conjectures/Frankl*.lean'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
@@ -21,11 +17,7 @@ on:
       - '.github/workflows/lean-frankl-local-candidates.yml'
   pull_request:
     paths:
-      - 'lean/Conjectures/FranklBasic.lean'
-      - 'lean/Conjectures/FranklFCBitCode.lean'
-      - 'lean/Conjectures/FranklFamily.lean'
-      - 'lean/Conjectures/FranklLocal*.lean'
-      - 'lean/Conjectures/FranklSmallCyclicMasks.lean'
+      - 'lean/Conjectures/Frankl*.lean'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'

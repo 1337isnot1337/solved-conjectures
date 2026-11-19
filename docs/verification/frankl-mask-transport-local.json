@@ -1,0 +1,98 @@
+{
+  "axiom_whitelist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+  "components": {
+    "frankl-local-mask-cached-gate": {
+      "complete_local_receipt_sha256": "40a7257055474db2b5115f4d63c398b7e7f0ae17e5d8a31da86525beb337d14b",
+      "files": [
+        {
+          "path": "lean/Conjectures/FranklLocalMaskCached.lean",
+          "sha256": "ba85efdc1b869ee793a82c1316ec133930e55927298bba3323575b2bdedba739"
+        }
+      ],
+      "required_endpoints": [
+        "FranklLocal.Mask.rowOfCached_eq",
+        "FranklLocal.Mask.cachedCheck_eq"
+      ],
+      "status": "local source, all-declaration axiom audit, exact stock-kernel replay passed"
+    },
+    "frankl-local-mask-equivalence-gate": {
+      "complete_local_receipt_sha256": "d4838f77d3a3519f7429f63833080357971df1aff224c910c833a95aa63f0636",
+      "files": [
+        {
+          "bytes": 9746,
+          "path": "lean/Conjectures/FranklLocalMaskEquivalence.lean",
+          "sha256": "ad7840874e78543fdcff43756c7af9f516af3dc25f215b71cd827e0eff13e1e9"
+        }
+      ],
+      "required_endpoints": [
+        "FranklLocal.certificateCheck_of_weightCertificate",
+        "FranklLocal.certificateCheck_iff_weightCertificate",
+        "FranklLocal.localGenerators_idem",
+        "FranklLocal.certificateCheck_localGenerators",
+        "FranklLocal.certificateCheck_image_on",
+        "FranklLocal.certificateCheck_image_on_local",
+        "FranklLocal.Mask.certificateCheck_check",
+        "FranklLocal.Mask.check_iff_certificateCheck",
+        "FranklLocal.Mask.check_eq_certificateCheck",
+        "FranklLocal.Mask.check_iff_weightCertificate",
+        "FranklLocal.Mask.check_image_on",
+        "FranklLocal.Mask.check_image_on_local",
+        "FranklLocal.Mask.check_image_local"
+      ],
+      "status": "local source, all-declaration axiom audit, exact stock-kernel replay passed"
+    },
+    "frankl-small-mask-transport-gate": {
+      "complete_local_receipt_sha256": "523b5f6845502f991093443f13d8150c872641752921fcd10c1971e6118d4112",
+      "files": [
+        {
+          "path": "lean/Conjectures/FranklSmallCyclicMaskTransport.lean",
+          "sha256": "121d6c388f8fe14de8a5711ee0a3dde83c52dbb6e8be40e3888fbd73971c2da0",
+          "source": "/workspace/scratch/de408127a9ae/solved-conjectures/lean/Conjectures/FranklSmallCyclicMaskTransport.lean"
+        }
+      ],
+      "required_endpoints": [
+        "FranklSmallCyclic.MaskTransport.maskPoints_toFinset",
+        "FranklSmallCyclic.MaskTransport.mem_maskPoints",
+        "FranklSmallCyclic.MaskTransport.decode_pointsMask",
+        "FranklSmallCyclic.MaskTransport.decode_renameMask",
+        "FranklSmallCyclic.MaskTransport.decodedGenerators_rename",
+        "FranklSmallCyclic.MaskTransport.decoded_localCodes",
+        "FranklSmallCyclic.MaskTransport.decode_supportCode",
+        "FranklSmallCyclic.MaskTransport.decode_localCode_subset_support",
+        "FranklSmallCyclic.MaskTransport.maskTransportCheck_iff",
+        "FranklSmallCyclic.MaskTransport.maskTransportCheck_sound",
+        "FranklSmallCyclic.MaskTransport.maskTransportCheck_window",
+        "FranklSmallCyclic.MaskTransport.maskTransportCheck_entryCheck"
+      ],
+      "status": "local source, all-declaration axiom audit, exact stock-kernel replay passed"
+    },
+    "frankl-small-weight-transport-gate": {
+      "complete_local_receipt_sha256": "a2cef70ce414c9553f08fc9940f600876d05bd3836e6b695b0a3a6f0fde7b95b",
+      "files": [
+        {
+          "bytes": 5689,
+          "path": "lean/Conjectures/FranklSmallCyclicWeightTransport.lean",
+          "sha256": "b5bb295dade1cc55aa26942ba8d646386396202c913ec3651322526543391f83"
+        }
+      ],
+      "required_endpoints": [
+        "FranklSmallCyclic.WeightTransport.transportCheck_iff",
+        "FranklSmallCyclic.WeightTransport.transportCheck_periods",
+        "FranklSmallCyclic.WeightTransport.transportCheck_wellFormed",
+        "FranklSmallCyclic.WeightTransport.transportCheck_keys",
+        "FranklSmallCyclic.WeightTransport.transportCheck_injective",
+        "FranklSmallCyclic.WeightTransport.window_domains",
+        "FranklSmallCyclic.WeightTransport.transportCheck_sound",
+        "FranklSmallCyclic.WeightTransport.transportCheck_entryCheck",
+        "FranklSmallCyclic.WeightTransport.transportCheck_of_batch"
+      ],
+      "status": "local source, all-declaration axiom audit, exact stock-kernel replay passed"
+    }
+  },
+  "scope": "Checker equivalence, cached evaluation and injective finite-support transport; no full weight table."
+}

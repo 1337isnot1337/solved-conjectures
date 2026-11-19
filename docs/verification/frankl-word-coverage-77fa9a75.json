@@ -1,0 +1,89 @@
+{
+  "artifact_id": 14513352288,
+  "artifact_sha256": "439bf9dc6a5511bbaeb1e75bb8f816ce7f599965b332089823eb3ef2f518747d",
+  "axiom_audit": {
+    "audit_source_sha256": "7f266b683ba5757b1651d0d8aa7a09d00a37ceb7409b6c4b85c9d7b810c0707d",
+    "explicit_import_all": true,
+    "log_sha256": "385749480082cf6791b39190236f9c9ebd98da1195cb3f15c78d0747a8104cf6",
+    "private_certificate_nodes_by_module": {},
+    "private_certificate_nodes_visible": 0,
+    "project_modules": 1,
+    "project_theorems": 22,
+    "required_endpoints": 14
+  },
+  "checked_sources": [
+    "Conjectures.FranklSpanFourWordCoverage"
+  ],
+  "checker": {
+    "path": "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+    "sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
+  },
+  "commit": "77fa9a758cb5753693e66c78f8cde44a09fb4a24",
+  "completed_checks": [
+    "strict source rebuild of every project dependency",
+    "import-all audit with exact private-node visibility",
+    "stock kernel replay with exact module-set equality"
+  ],
+  "configuration_mismatches": [],
+  "covered_tasks": [
+    "word-coverage"
+  ],
+  "current_sources_match_hosted_snapshot": true,
+  "gate_sha256": {
+    ".github/workflows/lean-frankl-span-four-candidates.yml": "97d62cde7acc0ed93d15955ef974fa4aae240c368815b2a30ea0a3d3184d0ff2",
+    "docs/frankl-span-four-source-inventory.json": "a35d1b90737c0ac55305bba60d3587594840ee76ecea9d0f8e3200be9a6696a6",
+    "scripts/plan_lean_candidates.py": "4cd0cf01d5094a108d22c0a36fd151113d4dd717a97770f04e3fb0224f19d4e0",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/test_frankl_span_four_candidate.py": "cdc44028142bb4abcacff0160dcabc76083fa683ad9265bf4ea6e53dedc85785",
+    "scripts/verify_frankl_fc_candidate.py": "9cfc9a2e8063f310ba9674e2f5e8471bfba02e354c7ff1008f37a21e643e5047",
+    "scripts/verify_frankl_span_four_candidate.py": "b12daf9ca9babbb0426434d602eacf0636549cb7085153f1bbce298766a6f969",
+    "scripts/verify_lean_candidate.py": "f82848c84354d76f596de3013059d1d19ccb3e26128f8f5784c3a37481975f2c",
+    "scripts/verify_line_size_candidate.py": "37c4e600c62f3ecbbe0ec84c03bb2c2b5e1ee3b18acff9b2e091c6ec6df00300"
+  },
+  "hosted_job_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44492632854/job/135451901879",
+  "import_inventory_mismatches": [],
+  "inventory_sha256": "a35d1b90737c0ac55305bba60d3587594840ee76ecea9d0f8e3200be9a6696a6",
+  "kernel_replay": {
+    "exact_replay_set": true,
+    "log_sha256": "578962b2a9c5b5eb4401b66a6750607014aa2d36e6c81759cd9dcbf192bc98fd",
+    "replayed_modules": [
+      "Conjectures.FranklSpanFourWordCoverage"
+    ]
+  },
+  "missing_peer_sources": [],
+  "missing_sources": [],
+  "original_receipt_sha256": "dab77e8c3bb724e6b4140a33392a0e33b8a6db701fa2d2d3e7b26570cd9be279",
+  "project_modules": [
+    "Conjectures.FranklSpanFourWordCoverage"
+  ],
+  "ready": true,
+  "required_theorems": [
+    "FranklSpanFour.WordCoverage.all_overlapWords_eq_true_iff",
+    "FranklSpanFour.WordCoverage.coverageCheck_eq_true_iff",
+    "FranklSpanFour.WordCoverage.ends_injective",
+    "FranklSpanFour.WordCoverage.filter_overlapWords_covers",
+    "FranklSpanFour.WordCoverage.filteredCoverageCheck_eq_true_iff",
+    "FranklSpanFour.WordCoverage.forall_overlapWords_iff",
+    "FranklSpanFour.WordCoverage.join_ends",
+    "FranklSpanFour.WordCoverage.mem_filter_overlapWords_iff",
+    "FranklSpanFour.WordCoverage.mem_overlapWords_iff",
+    "FranklSpanFour.WordCoverage.overlapWords_covers",
+    "FranklSpanFour.WordCoverage.overlap_iff_exists",
+    "FranklSpanFour.WordCoverage.prefix_join",
+    "FranklSpanFour.WordCoverage.suffix_join",
+    "FranklSpanFour.WordCoverage.suffix_prefix"
+  ],
+  "scope": "generic finite word-overlap coverage; no graph data",
+  "source_failures": {},
+  "source_hash_mismatches": [],
+  "source_policy": "Use reviewed repository sources only; no automatic download or peer publication.",
+  "source_sha256": {
+    "lean/Conjectures/FranklSpanFourWordCoverage.lean": "eaddd5ba62a43980e76f23acff759a5d0deddc30360478d70b0ed74e5aea6d96",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "status": "passed",
+  "target": "Conjectures.FranklSpanFourWordCoverage",
+  "task": "word-coverage"
+}
