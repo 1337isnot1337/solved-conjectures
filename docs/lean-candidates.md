@@ -59,8 +59,9 @@ the pinned package configuration, and every reused artifact hash. Lake then
 checks its normal dependency traces; the assembly job also repeats the axiom
 audit and independent kernel replay.
 
-The ordinary accepted-proof workflow remains unchanged. Li is still deferred
-until the other collection results are complete.
+The ordinary accepted-proof workflow remains unchanged. Li's explicit
+coefficient-sign counterexample has since been fully formalized and registered;
+its verified scope is recorded in [the accepted status](lean-status.md).
 
 
 ## Completed line-size analytic components
