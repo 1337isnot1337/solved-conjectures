@@ -22,8 +22,8 @@
         "Loneliness.",
         "NonmixedGap."
       ],
-      "project_module_count": 58,
-      "required_theorem_count": 47,
+      "project_module_count": 60,
+      "required_theorem_count": 50,
       "required_theorems": [
         "Loneliness.RectangularLattice.left_inverse_mulVec",
         "Loneliness.RectangularLattice.mulVec_injective",
@@ -71,7 +71,10 @@
         "Loneliness.RationalLattice.six_le_covolume_sq",
         "Loneliness.SixSpectrumLatticeNorm.norm_lt_rank_four",
         "Loneliness.SixSpectrumLatticeNorm.norm_lt_five_constant",
-        "Loneliness.SixSpectrumLatticeNorm.norm_lt_six_constant"
+        "Loneliness.SixSpectrumLatticeNorm.norm_lt_six_constant",
+        "Loneliness.RationalLatticeIndex.exists_integer_gram_factor",
+        "Loneliness.RationalLatticeIndex.covolume_sq_le_gram_det",
+        "Loneliness.RationalLatticeIndex.covolume_sq_le_gram_det_of_independent"
       ],
       "roots": [
         "Conjectures.LonelinessRectangularLattice",
@@ -79,10 +82,11 @@
         "Conjectures.LonelinessLatticeCovolume",
         "Conjectures.LonelinessRectangularGramLowerBound",
         "Conjectures.LonelinessRationalLattice",
-        "Conjectures.LonelinessSixSpectrumLatticeNorm"
+        "Conjectures.LonelinessSixSpectrumLatticeNorm",
+        "Conjectures.LonelinessRationalLatticeIndex"
       ],
       "schema": "rectangular-lattice-exact-v1",
-      "scope": "Exact Cauchy-Binet and integer Gram identities; integer/real image and primitive-basis transfer under an integer left inverse; literal map determinants 3, 9, 8; covolume squared equals the Gram determinant of an actual integer-lattice basis; positive Gram determinant of an integer 6-by-4 matrix with nonzero rows distinct up to sign is at least six. Construct the full integer-point lattice of every rational coordinate subspace and derive squared covolume at least one, or at least six in rank four with a contained nonzero sign-distinct integer vector. Derive the original constants 9075, 54450, and 163350 for actual primitive six-speed norms relative to this covolume, retaining the explicit four-speed runner-bound and containing-plane-gap hypotheses. No unconditional plane-gap, runner-bound, or spectrum-classification theorem is asserted.",
+      "scope": "Exact Cauchy-Binet and integer Gram identities; integer/real image and primitive-basis transfer under an integer left inverse; literal map determinants 3, 9, 8; covolume squared equals the Gram determinant of an actual integer-lattice basis; positive Gram determinant of an integer 6-by-4 matrix with nonzero rows distinct up to sign is at least six. Construct the full integer-point lattice of every rational coordinate subspace and derive squared covolume at least one, or at least six in rank four with a contained nonzero sign-distinct integer vector. Derive the original constants 9075, 54450, and 163350 for actual primitive six-speed norms relative to this covolume, retaining the explicit four-speed runner-bound and containing-plane-gap hypotheses. No unconditional plane-gap, runner-bound, or spectrum-classification theorem is asserted. Also prove the squared covolume is at most the integer Gram determinant of every full independent integer column basis, by an actual integer coordinate-change determinant.",
       "source_policy": {
         "fresh_project_objects": true,
         "linter_override": false,
@@ -121,7 +125,7 @@
         "Conjectures.LonelinessKZProductCertificate": "a3fa0544e84d9f80137263dc0c342463bfc7fe466bcf78ab8ac81d247479ba23",
         "Conjectures.LonelinessKZProductOrder": "fee89ef5a030a7ef33d4259fa90d697b6360593a38b92ae4610233054ac0568a",
         "Conjectures.LonelinessKZSmallData": "6dc57df9f114ede637bd201b8c9f8a99ce1bc644f61b3bda1f3d786f66a8d002",
-        "Conjectures.LonelinessLatticeCovolume": "ef8e03c24dca97ea8cb14064a3b2f609f4f3cf38035d50e66e5cb988d5b35786",
+        "Conjectures.LonelinessLatticeCovolume": "b2438d082556ea4765f385c74c195e458976559d1a94f3f2e09d10a08ddeaf4a",
         "Conjectures.LonelinessNearestPlane": "7ecb53d6a8c77fb9d06accde929d834d0eb4e26fbccd3ce01c8d4c0cef4bc8b9",
         "Conjectures.LonelinessNearestPlanePrefix": "4c5ce5394a76551b473308c95140ed3e3a4d5fe8b883411adc89457aed72639b",
         "Conjectures.LonelinessNearestPlaneRelative": "15cf3d48c9120ad8a2ddab46ad0371ed9a1f20a7397ddeea88a103c2c0aff0af",
@@ -135,12 +139,14 @@
         "Conjectures.LonelinessPrimitiveBasis": "a2a3c31eed4b428f7ff38323dffb0ea3d25d41579da43e4601c2a727a93490ec",
         "Conjectures.LonelinessPrimitiveSpeeds": "95829247acbd3e1ebe62b57d1e7ca9f2af22f006df37c390574c690d152427e6",
         "Conjectures.LonelinessRational": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
-        "Conjectures.LonelinessRationalLattice": "8f7836b1e37a249a4023ccd2f3faf4ad451461cb0e96984c4c16cb9084b6ab09",
+        "Conjectures.LonelinessRationalLattice": "9798115e7c7bef4c42212deca956f1162cc49948e7f86008f1b5d88954b3d60a",
+        "Conjectures.LonelinessRationalLatticeCore": "363343b7eed15394d37f6eade27ce3dd9c85a6b73b4ac857528559237ac38a6d",
+        "Conjectures.LonelinessRationalLatticeIndex": "223b9ba75a489d57540d3d092e2aac51769d56d26473c83722ec652b11bd3c68",
         "Conjectures.LonelinessRationalSubspace": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88",
         "Conjectures.LonelinessRectangularGram": "76cdf16b3bd3a8072c23cfebdda74ef2cae4fe0fc22c20120866949f8aaa639d",
-        "Conjectures.LonelinessRectangularGramLowerBound": "0b0c37ce162fc48c870de13ff2a5232663bbdf3b58a2168ed24dc5d784b3380c",
+        "Conjectures.LonelinessRectangularGramLowerBound": "70527d0c5e39f2b8fe1a5abb759f3b21ad66d369b7247265d4fad7cdfb59ea4c",
         "Conjectures.LonelinessRectangularLattice": "8cbc83f677d2d1ef72563beed05128d3fffd9cb76248422d09f5215212620174",
-        "Conjectures.LonelinessSixSpectrumLatticeNorm": "58ee79ba6b9efb7c9449dc4d158487a846a95e120d8c55874c624d16e398552c",
+        "Conjectures.LonelinessSixSpectrumLatticeNorm": "638fa7f812fa29aa4b48502833067018894d5ee5e16aabdd24b1cee293a1b49b",
         "Conjectures.LonelinessSixSpectrumNormGeometry": "c35c05d5c467122e3f79243cf6bdcb4a7130f63c903bfe793b21ff16d0ec434d",
         "Conjectures.LonelinessSmallRunner": "f8ac5325642e26f9c2570293a6b3032dff53d8511f1a3af4c92d8469918ed343",
         "Conjectures.LonelinessSubspaceDensity": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f",

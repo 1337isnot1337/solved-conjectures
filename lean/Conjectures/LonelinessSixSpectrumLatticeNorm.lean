@@ -37,7 +37,7 @@ theorem norm_lt_rank_four (E : Submodule ℚ (Fin 6 → ℚ))
     (hdistinct : Function.Injective v)
     (hprimitive : (List.ofFn v).foldr Nat.gcd 0 = 1)
     (hvalue : value (List.ofFn v) ≤ (1 / 6 : ℝ))
-    (hfour : LonelyRunnerBound 4)
+    (hfour : CoordinateSubspace.LonelyRunnerBound 4)
     (hplane : SixSpectrumNormGeometry.ContainingPlaneGap v)
     (hmem : (fun i => (v i : ℚ)) ∈ E) :
     ‖KZBasis.realVector (fun i => (v i : ℤ))‖ <
@@ -64,7 +64,7 @@ theorem norm_lt_five_constant (E : Submodule ℚ (Fin 6 → ℚ))
     (v : Fin 6 → ℕ) (hpositive : ∀ i, 0 < v i)
     (hprimitive : (List.ofFn v).foldr Nat.gcd 0 = 1)
     (hvalue : value (List.ofFn v) ≤ (1 / 6 : ℝ))
-    (hfour : LonelyRunnerBound 4)
+    (hfour : CoordinateSubspace.LonelyRunnerBound 4)
     (hplane : SixSpectrumNormGeometry.ContainingPlaneGap v) :
     ‖KZBasis.realVector (fun i => (v i : ℤ))‖ <
       54450 * ZLattice.covolume (integerPoints E) :=
@@ -76,7 +76,7 @@ theorem norm_lt_six_constant (E : Submodule ℚ (Fin 6 → ℚ))
     (v : Fin 6 → ℕ) (hpositive : ∀ i, 0 < v i)
     (hprimitive : (List.ofFn v).foldr Nat.gcd 0 = 1)
     (hvalue : value (List.ofFn v) ≤ (1 / 6 : ℝ))
-    (hfour : LonelyRunnerBound 4)
+    (hfour : CoordinateSubspace.LonelyRunnerBound 4)
     (hplane : SixSpectrumNormGeometry.ContainingPlaneGap v) :
     ‖KZBasis.realVector (fun i => (v i : ℤ))‖ <
       163350 * ZLattice.covolume (integerPoints E) := by

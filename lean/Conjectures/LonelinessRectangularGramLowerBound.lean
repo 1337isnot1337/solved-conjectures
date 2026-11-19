@@ -60,9 +60,9 @@ theorem normalized_gram (a b : Fin 4 → R) :
     (normalized a b).transpose * normalized a b =
       (1 : Matrix (Fin 4) (Fin 4) R) + (rowPair a b).transpose * rowPair a b := by
   ext i j
+  simp only [Matrix.add_apply, Matrix.mul_apply, Matrix.transpose_apply, Matrix.one_apply]
   fin_cases i <;> fin_cases j <;>
-    simp [normalized, rowPair, basisRow, Matrix.mul_apply, Matrix.transpose_apply,
-      Matrix.one_apply, Fin.sum_univ_succ]
+    simp [normalized, rowPair, basisRow, Fin.sum_univ_succ]
 
 /-- The determinant of the rank-two update, in squared-norm coordinates. -/
 theorem gram_update_det (a b : Fin 4 → R) :
@@ -70,8 +70,8 @@ theorem gram_update_det (a b : Fin 4 → R) :
         (rowPair a b).transpose * rowPair a b).det =
       (1 + squaredNorm a) * (1 + squaredNorm b) - dot a b ^ 2 := by
   rw [Matrix.det_one_add_mul_comm, Matrix.det_fin_two]
-  simp [rowPair, Matrix.mul_apply, Matrix.transpose_apply, Matrix.one_apply,
-    squaredNorm, dot, pow_two, mul_comm]
+  simp only [Matrix.add_apply, Matrix.one_apply, Matrix.mul_apply, Matrix.transpose_apply]
+  simp [rowPair, squaredNorm, dot, pow_two, mul_comm]
 
 /-- Exact Gram determinant of `[I₄; a; b]`. -/
 theorem normalized_gram_det (a b : Fin 4 → R) :
@@ -244,14 +244,16 @@ theorem normalized_gram_det_ge_six_of_rows (a b : Fin 4 → ℤ)
       have := congrArg Fin.val h
       simp [basisIndex] at this
       omega
-    simpa only [normalized_basis] using hseparate 4 (basisIndex i) hindex
+    have hfour : normalized a b (4 : Fin 6) = a := rfl
+    simpa only [normalized_basis, hfour] using hseparate 4 (basisIndex i) hindex
   · intro i
     have hindex : (5 : Fin 6) ≠ basisIndex i := by
       intro h
       have := congrArg Fin.val h
       simp [basisIndex] at this
       omega
-    simpa only [normalized_basis] using hseparate 5 (basisIndex i) hindex
+    have hfive : normalized a b (5 : Fin 6) = b := rfl
+    simpa only [normalized_basis, hfive] using hseparate 5 (basisIndex i) hindex
   · exact (hseparate 4 5 (by decide)).1
   · exact (hseparate 4 5 (by decide)).2
 
@@ -280,7 +282,7 @@ theorem scaled_rat_gram_update_ge_norms (d : ℚ) (a b : Fin 4 → ℚ) :
   simpa only [squaredNorm_mul, mul_add, mul_one] using h
 
 theorem squaredNorm_int_cast (a : Fin 4 → ℤ) :
-    squaredNorm (fun i => (a i : ℚ)) = (squaredNorm a : ℚ) := by
+    squaredNorm (fun i => (a i : ℚ)) = ((squaredNorm a : ℤ) : ℚ) := by
   simp [squaredNorm]
 
 /-- Integral nonzero numerator rows force a contribution of at least two
@@ -300,8 +302,8 @@ theorem scaled_integral_gram_update_ge (d : ℤ) (a b : Fin 4 → ℚ)
   rw [hu', hv', squaredNorm_int_cast, squaredNorm_int_cast] at h
   have huInt : (1 : ℤ) ≤ squaredNorm u := by have h := squaredNorm_pos u hu; omega
   have hvInt : (1 : ℤ) ≤ squaredNorm v := by have h := squaredNorm_pos v hv; omega
-  have huRat : (1 : ℚ) ≤ (squaredNorm u : ℚ) := Int.cast_le.mpr huInt
-  have hvRat : (1 : ℚ) ≤ (squaredNorm v : ℚ) := Int.cast_le.mpr hvInt
+  have huRat : (1 : ℚ) ≤ ((squaredNorm u : ℤ) : ℚ) := Int.cast_le.mpr huInt
+  have hvRat : (1 : ℚ) ≤ ((squaredNorm v : ℤ) : ℚ) := Int.cast_le.mpr hvInt
   linarith
 
 /-- A determinant value below six forces any nonzero integral normalization
@@ -334,7 +336,7 @@ def pickedIndex (s : RowSet) : Fin 4 ↪o Fin 6 :=
   Set.powersetCard.ofFinEmbEquiv.symm s
 
 theorem remaining_card (s : RowSet) : (s.valᶜ).card = 2 := by
-  simp [Finset.card_compl, s.property]
+  simp [Finset.card_compl]
 
 /-- The increasing enumeration of the two remaining rows. -/
 def remainingIndex (s : RowSet) : Fin 2 ↪o Fin 6 :=
@@ -366,7 +368,7 @@ private theorem sum_ordered_rows {n : ℕ} (s : Finset (Fin 6)) (hs : s.card = n
     (∑ i : Fin n, f (s.orderEmbOfFin hs i)) = ∑ i ∈ s, f i := by
   have h := congrArg (fun t : Finset (Fin 6) => ∑ i ∈ t, f i)
     (Finset.map_orderEmbOfFin_univ s hs)
-  simpa only [Finset.sum_map] using h
+  simpa only [Finset.sum_map, RelEmbedding.coe_toEmbedding] using h
 
 /-- Splitting the row set splits the actual Gram matrix into two Gram matrices. -/
 theorem gram_split (A : Matrix (Fin 6) (Fin 4) R) (s : RowSet) :
@@ -374,13 +376,13 @@ theorem gram_split (A : Matrix (Fin 6) (Fin 4) R) (s : RowSet) :
       (pickedBlock A s).transpose * pickedBlock A s +
       (remainingBlock A s).transpose * remainingBlock A s := by
   ext i j
-  change (∑ k : Fin 6, A k i * A k j) =
-    (∑ k : Fin 4, A (s.val.orderEmbOfFin s.property k) i *
-      A (s.val.orderEmbOfFin s.property k) j) +
-    (∑ k : Fin 2, A ((s.valᶜ).orderEmbOfFin (remaining_card s) k) i *
-      A ((s.valᶜ).orderEmbOfFin (remaining_card s) k) j)
-  rw [sum_ordered_rows, sum_ordered_rows]
-  exact (Finset.sum_add_sum_compl s.val (fun k => A k i * A k j)).symm
+  let f : Fin 6 → R := fun k => A k i * A k j
+  change (∑ k : Fin 6, f k) =
+    (∑ k : Fin 4, f (s.val.orderEmbOfFin s.property k)) +
+    (∑ k : Fin 2, f ((s.valᶜ).orderEmbOfFin (remaining_card s) k))
+  rw [sum_ordered_rows s.val s.property f,
+    sum_ordered_rows (s.valᶜ) (remaining_card s) f]
+  exact (Finset.sum_add_sum_compl s.val f).symm
 
 theorem pickedBlock_mul (A : Matrix (Fin 6) (Fin 4) R)
     (C : Matrix (Fin 4) (Fin 4) R) (s : RowSet) :
@@ -412,7 +414,7 @@ theorem rows_nonzero_mul (A : Matrix (Fin 6) (Fin 4) R)
   intro i hzero
   apply hnonzero i
   apply vecMul_injective_of_right_inverse C E hCE
-  simpa only [Matrix.zero_vecMul] using hzero
+  simpa only [Matrix.mul_apply_eq_vecMul, Matrix.zero_vecMul] using hzero
 
 theorem rows_separate_mul (A : Matrix (Fin 6) (Fin 4) R)
     (C E : Matrix (Fin 4) (Fin 4) R) (hCE : C * E = 1)
@@ -425,7 +427,7 @@ theorem rows_separate_mul (A : Matrix (Fin 6) (Fin 4) R)
   · intro h
     apply (hseparate i j hij).2
     apply vecMul_injective_of_right_inverse C E hCE
-    simpa only [Matrix.neg_vecMul] using h
+    simpa only [Matrix.mul_apply_eq_vecMul, Matrix.neg_vecMul] using h
 
 end
 
@@ -473,8 +475,11 @@ noncomputable section
 theorem gram_det_int_cast (A : Matrix (Fin 6) (Fin 4) ℤ) :
     ((A.transpose * A).det : ℚ) =
       ((A.map (Int.castRingHom ℚ)).transpose * A.map (Int.castRingHom ℚ)).det := by
-  rw [Int.cast_det, Matrix.map_mul]
-  rfl
+  rw [Int.cast_det]
+  congr 1
+  ext i j
+  change ((∑ k, A k i * A k j : ℤ) : ℚ) = ∑ k, (A k i : ℚ) * (A k j : ℚ)
+  simp
 
 theorem rows_nonzero_int_cast (A : Matrix (Fin 6) (Fin 4) ℤ)
     (hnonzero : ∀ i, A i ≠ 0) : ∀ i, A.map (Int.castRingHom ℚ) i ≠ 0 := by
@@ -506,12 +511,12 @@ theorem picked_det_sq_eq_one_of_gram_lt_six (A : Matrix (Fin 6) (Fin 4) ℤ)
     change C.map (Int.castRingHom ℚ) * C.adjugate.map (Int.castRingHom ℚ) = _
     rw [← Matrix.map_mul, Matrix.mul_adjugate]
     ext i j
-    simp [d, Matrix.one_apply, smul_eq_mul]
+    simp [d, Matrix.one_apply, smul_eq_mul, Matrix.intCast_apply]
   have hFC : F * CQ = (d : ℚ) • (1 : Matrix (Fin 4) (Fin 4) ℚ) := by
     change C.adjugate.map (Int.castRingHom ℚ) * C.map (Int.castRingHom ℚ) = _
     rw [← Matrix.map_mul, Matrix.adjugate_mul]
     ext i j
-    simp [d, Matrix.one_apply, smul_eq_mul]
+    simp [d, Matrix.one_apply, smul_eq_mul, Matrix.intCast_apply]
   have hCB : CQ * B = 1 := by
     change CQ * ((d : ℚ)⁻¹ • F) = 1
     rw [Matrix.mul_smul, hCF, smul_smul, inv_mul_cancel₀ hdQ, one_smul]
@@ -541,13 +546,15 @@ theorem picked_det_sq_eq_one_of_gram_lt_six (A : Matrix (Fin 6) (Fin 4) ℤ)
     intro hzero
     apply hNnonzero (remainingIndex s 0)
     rw [hN]
-    change (fun j => (d : ℚ)⁻¹ * (u j : ℚ)) = 0
+    funext j
+    change (d : ℚ)⁻¹ * (u j : ℚ) = 0
     simp [hzero]
   have hv : v ≠ 0 := by
     intro hzero
     apply hNnonzero (remainingIndex s 1)
     rw [hN]
-    change (fun j => (d : ℚ)⁻¹ * (v j : ℚ)) = 0
+    funext j
+    change (d : ℚ)⁻¹ * (v j : ℚ) = 0
     simp [hzero]
   have hdu : ∀ i, (u i : ℚ) = (d : ℚ) * a i := by
     intro i

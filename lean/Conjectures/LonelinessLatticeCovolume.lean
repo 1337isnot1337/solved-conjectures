@@ -25,6 +25,7 @@ variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
 variable [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E]
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
+omit [DecidableEq ι] in
 theorem orthonormal_fundamentalDomain_volume (b₀ : OrthonormalBasis ι ℝ E) :
     volume.real (ZSpan.fundamentalDomain b₀.toBasis) = 1 := by
   rw [measureReal_congr (ZSpan.fundamentalDomain_ae_parallelepiped b₀.toBasis volume)]

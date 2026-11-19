@@ -5,8 +5,8 @@ on:
   push:
     branches: [main]
     paths:
-      - '.github/workflows/lean-rectangular-lattice-exact.yml'
       - 'scripts/verify_rectangular_lattice_exact.py'
+      - '.github/workflows/lean-rectangular-lattice-exact.yml'
       - 'docs/rectangular-lattice-exact-sources.json'
       - 'lean/Conjectures/HaralambisCounting.lean'
       - 'lean/Conjectures/HaralambisDefects.lean'
@@ -55,6 +55,8 @@ on:
       - 'lean/Conjectures/LonelinessPrimitiveSpeeds.lean'
       - 'lean/Conjectures/LonelinessRational.lean'
       - 'lean/Conjectures/LonelinessRationalLattice.lean'
+      - 'lean/Conjectures/LonelinessRationalLatticeCore.lean'
+      - 'lean/Conjectures/LonelinessRationalLatticeIndex.lean'
       - 'lean/Conjectures/LonelinessRationalSubspace.lean'
       - 'lean/Conjectures/LonelinessRectangularGram.lean'
       - 'lean/Conjectures/LonelinessRectangularGramLowerBound.lean'
