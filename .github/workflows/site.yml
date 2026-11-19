@@ -12,6 +12,7 @@ on:
       - 'site/**'
       - 'scripts/build_site.py'
       - 'scripts/check_site.py'
+      - 'scripts/test_build_site.py'
       - '.github/workflows/site.yml'
   pull_request:
     paths:
@@ -23,6 +24,7 @@ on:
       - 'site/**'
       - 'scripts/build_site.py'
       - 'scripts/check_site.py'
+      - 'scripts/test_build_site.py'
       - '.github/workflows/site.yml'
   workflow_dispatch:
 
@@ -44,6 +46,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install --no-install-recommends -y pandoc
+      - name: Test mathematical scope and Lean-status validation
+        run: python3 scripts/test_build_site.py
       - name: Build the complete research site
         run: python3 scripts/build_site.py
       - name: Check content, links, mathematics, and metadata

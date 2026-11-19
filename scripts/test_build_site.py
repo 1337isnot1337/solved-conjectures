@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+"""Regression checks for mathematical scope versus Lean formalization status.
+Run with python3 scripts/test_build_site.py. Requires the builder's Pandoc 3.x.
+"""
+import json
+from pathlib import Path
+import unittest
+
+from build_site import Builder, Document, Result, landing_lean_status, pandoc, READER
+
+
+def doc(name, markdown):
+    ast = json.loads(pandoc(['--from', READER, '--to', 'json'], text=markdown))
+    return Document(name, '', ast, name, '')
+
+
+class StatusChecks(unittest.TestCase):
+    def builder(self, partial_status='partial', rows=None):
+        b = Builder(Path('/tmp/site-status-test'), 'https://example.test/', 1)
+        if rows is None:
+            rows = '| Frankl generating families | Partial | Checked components; remaining bridges open. |'
+        b.documents = {
+            'docs/lean-status.md': doc('docs/lean-status.md', '''| Note | Status | Scope |
+| --- | --- | --- |
+| L-solitaire | Complete | Stated result. |
+''' + rows),
+            'README.md': doc('README.md', '''| Result | Finding | Lean |
+| --- | --- | --- |
+| [Solitaire](results/l-solitaire-limit-shapes/) | Result | ☑ |
+'''),
+        }
+        results = {
+            'l-solitaire-limit-shapes': Result('l-solitaire-limit-shapes', 'Solitaire', 'Games', 'full', 'Result'),
+            'frankl-generator-families': Result('frankl-generator-families', 'Frankl', 'Combinatorics', partial_status, 'Restricted classes', scope='partial'),
+        }
+        return b, results
+
+    def test_partial_math_with_partial_lean_stays_partial_math(self):
+        b, results = self.builder()
+        b.check_authoritative_statuses(results)
+        self.assertEqual(results['frankl-generator-families'].status, 'partial')
+        self.assertEqual(results['frankl-generator-families'].scope, 'partial')
+        self.assertIn('remaining bridges', results['frankl-generator-families'].checked_scope)
+
+    def test_partial_math_with_full_formalization_does_not_promote_scope(self):
+        b, results = self.builder('full', '| Frankl generating families | Complete | Restricted statement only. |')
+        b.check_authoritative_statuses(results)
+        self.assertEqual(results['frankl-generator-families'].scope, 'partial')
+
+    def test_partial_formalization_requires_authoritative_receipt(self):
+        b, results = self.builder(rows='')
+        with self.assertRaisesRegex(ValueError, 'summary mismatch'):
+            b.check_authoritative_statuses(results)
+
+    def test_unformalized_partial_math_retains_legacy_support(self):
+        b, results = self.builder('none', '')
+        b.check_authoritative_statuses(results)
+
+    def test_independent_status_disagreement_still_fails(self):
+        b, results = self.builder('none')
+        with self.assertRaisesRegex(ValueError, 'Stale catalogue status'):
+            b.check_authoritative_statuses(results)
+
+    def test_unknown_or_duplicate_summary_labels_fail(self):
+        for rows, error in [
+            ('| Unmapped result | Partial | Components |', 'Map the Lean summary label'),
+            ('| Frankl generating families | Partial | A |\n| Frankl generating families | Partial | B |', 'Duplicate authoritative'),
+        ]:
+            with self.subTest(rows=rows):
+                b, results = self.builder(rows=rows)
+                with self.assertRaisesRegex(ValueError, error):
+                    b.check_authoritative_statuses(results)
+
+    def test_landing_status_is_explicit(self):
+        self.assertEqual(landing_lean_status('**Lean status:** partial. See checked scope.'), 'partial')
+        self.assertEqual(landing_lean_status('pending Lean formalization'), 'none')
+        for text in ['Some components exist.', '**Lean status:** maybe. No Lean formalization.']:
+            with self.assertRaises(ValueError):
+                landing_lean_status(text)
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -63,6 +63,7 @@ STATUS_LABEL_SLUGS = {
     "Loneliness on a fixed hyperplane": "loneliness-on-a-hyperplane",
     "Graffiti.pc Conjecture 318": "graffiti-pc-318",
     "Li coefficient sign": "li-coefficient-sign",
+    "Frankl generating families": "frankl-generator-families",
     "Erdős 607 line sizes": "erdos-607-line-sizes",
     "Growing rectangles": "rectangle-partition-asymptotics",
     "Distance graphs with three missing differences": "distance-graph-densities",
@@ -80,6 +81,19 @@ STATUS_LABEL_SLUGS = {
     "Eight-speed spectrum": "eight-speed-spectrum",
     "Eleven-through-fourteen-runner equality": "tight-eleven-to-fourteen",
 }
+
+
+def landing_lean_status(source_text: str) -> str:
+    """Mathematical scope and formalization status are independent axes."""
+    explicit = re.search(r"(?im)^\*\*Lean status:\*\*\s*(\w+)\b", source_text)
+    if explicit:
+        status = explicit.group(1).lower()
+        if status not in STATUS_LABELS:
+            raise ValueError(f"Unknown landing-page Lean status: {status}")
+        return status
+    if re.search(r"(?:no Lean formalization|not (?:yet )?formalized|pending Lean formalization)", source_text, re.I):
+        return "none"
+    raise ValueError("Landing page needs an explicit Lean status")
 
 
 def escape(value: object) -> str:
@@ -271,8 +285,10 @@ class Builder:
                     if not landing:
                         raise ValueError(f"No landing page for {slug}")
                     source_text = (ROOT / landing.source).read_text()
-                    if not re.search(r"(?:no Lean formalization|not (?:yet )?formalized|pending Lean formalization)", source_text, re.I):
-                        raise ValueError(f"Partial result {slug} needs an explicit Lean status in its README")
+                    try:
+                        status = landing_lean_status(source_text)
+                    except ValueError as error:
+                        raise ValueError(f"Partial result {slug} needs an explicit Lean status in its README") from error
                     summary_item = json.loads(json.dumps(item))
                     utility_links = {"Local proof", "Frequency proof", "Replay", "Proof", "Reproduce", "Automorphism proof"}
                     for node in nodes(summary_item):
@@ -282,7 +298,7 @@ class Builder:
                     summary = clean_text(plain(summary_item))
                     summary = re.sub(r"(?:\s*·\s*)+$", "", summary)
                     found[slug] = Result(
-                        slug, landing.title, PARTIAL_CATEGORIES.get(slug, category), "none",
+                        slug, landing.title, PARTIAL_CATEGORIES.get(slug, category), status,
                         summary, scope="partial",
                     )
         landing_slugs = {PurePosixPath(source).parts[1] for source in self.documents if re.fullmatch(r"results/[^/]+/README\.md", source)}
@@ -330,6 +346,8 @@ class Builder:
                 slug = next((slug for name, slug in STATUS_LABEL_SLUGS.items() if label == name or label.startswith(name + " (")), None)
                 if slug is None or slug not in results:
                     raise ValueError(f"Map the Lean summary label to its result slug: {label!r}")
+                if slug in checked:
+                    raise ValueError(f"Duplicate authoritative Lean summary row for {slug}")
                 text = clean_text(plain(cells[1][-1]))
                 status = "full" if text.startswith("Complete") else "partial" if text.startswith("Partial") else "none" if text == "Not formalized" else None
                 if status is None:
@@ -339,8 +357,12 @@ class Builder:
                 results[slug].checked_scope = clean_text(plain(cells[2][-1]))
                 checked.add(slug)
         required = {slug for slug, result in results.items() if result.scope != "partial"}
-        if required != checked:
-            raise ValueError(f"Lean status summary mismatch: missing {sorted(required - checked)}, unexpected {sorted(checked - required)}")
+        # Partial progress on an open mathematical problem can itself have
+        # a partial or complete Lean formalization. Require an authoritative
+        # receipt for every formalized claim, without promoting its math scope.
+        summary_required = required | {slug for slug, result in results.items() if result.status != "none"}
+        if not summary_required <= checked:
+            raise ValueError(f"Lean status summary mismatch: missing {sorted(summary_required - checked)}")
         readme_checked = set()
         for block in self.documents["README.md"].ast["blocks"]:
             if block.get("t") != "Table":
