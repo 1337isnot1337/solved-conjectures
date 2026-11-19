@@ -18,11 +18,24 @@ theorem eraseMask_testBit (p remaining mask r : ℕ) (hr : r < p) :
 
 def proposedFirstBit (mask : ℕ) : ℕ := Nat.log2 (mask ^^^ (mask - 1))
 
+/-- A bounded binary search for a set bit. The soundness proof below checks
+its result directly, so it does not assume completeness of this search. -/
+def proposedBitSearch : ℕ → ℕ → ℕ
+  | 0, _ => 0
+  | depth + 1, mask =>
+    let half := 2 ^ depth
+    let lower := mask &&& fullMask half
+    if lower = 0 then half + proposedBitSearch depth (mask >>> half)
+    else proposedBitSearch depth lower
+
+def proposedFirstBitBelow (p mask : ℕ) : ℕ :=
+  proposedBitSearch (Nat.log2 p + 1) mask
+
 def scanWitnessMasks (p : ℕ) (G : ℕ → ℕ) (common : ℕ) : ℕ → ℕ → ℕ → ℕ
   | 0, _, remaining => remaining
   | fuel + 1, times, remaining =>
     if remaining = 0 ∨ times = 0 then remaining else
-      let t := proposedFirstBit times
+      let t := proposedFirstBitBelow p times
       let next := times &&& (times - 1)
       if t < p ∧ common.testBit t = true then
         scanWitnessMasks p G common fuel next (eraseMask p remaining (G t))
@@ -41,11 +54,11 @@ theorem scanWitnessMasks_sound (p : ℕ) (G : ℕ → ℕ) (common fuel times re
     · rw [scanWitnessMasks, if_pos hstop]
       exact Or.inl hbit
     · rw [scanWitnessMasks, if_neg hstop]
-      by_cases ht : proposedFirstBit times < p ∧ common.testBit (proposedFirstBit times) = true
+      by_cases ht : proposedFirstBitBelow p times < p ∧ common.testBit (proposedFirstBitBelow p times) = true
       · rw [if_pos ht]
-        by_cases hg : (G (proposedFirstBit times)).testBit r = true
-        · exact Or.inr ⟨proposedFirstBit times, ht.1, ht.2, hg⟩
-        · exact ih _ _ ((eraseMask_testBit p remaining (G (proposedFirstBit times)) r hr).mpr
+        by_cases hg : (G (proposedFirstBitBelow p times)).testBit r = true
+        · exact Or.inr ⟨proposedFirstBitBelow p times, ht.1, ht.2, hg⟩
+        · exact ih _ _ ((eraseMask_testBit p remaining (G (proposedFirstBitBelow p times)) r hr).mpr
             ⟨hbit, hg⟩)
       · rw [if_neg ht]
         exact ih _ _ hbit

@@ -107,8 +107,10 @@ theorem five_speed_below_additive_of_exhaustion (hexhaustion : SporadicExhaustio
     have hab' := hperm.mem_iff.mp hab
     have hscale (x : ℕ) (hx : x ∈ Normalization.normalize ds) :
         Normalization.gcd ds * x ∈ ds := by
-      rw [← Normalization.rescale_normalize ds]
-      exact List.mem_map.mpr ⟨x, hx, rfl⟩
+      have hmem : Normalization.gcd ds * x ∈
+          (Normalization.normalize ds).map (fun a => Normalization.gcd ds * a) :=
+        List.mem_map.mpr ⟨x, hx, rfl⟩
+      simpa only [Normalization.rescale_normalize] using hmem
     refine ⟨Normalization.gcd ds * a, hscale a ha',
       Normalization.gcd ds * b, hscale b hb', ?_⟩
     simpa only [Nat.mul_add] using hscale (a + b) hab'

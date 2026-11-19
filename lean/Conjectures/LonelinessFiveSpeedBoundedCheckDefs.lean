@@ -54,11 +54,19 @@ theorem containsCriticalCheck_absolute_sound (v : FiveIntegerVector)
   · exact Or.inl (fun a ha => hmem a (h ha))
   · exact Or.inr (fun a ha => hmem a (h ha))
 
+def primitiveDirectionCheck (v : FiveIntegerVector) : List ℕ :=
+  (Loneliness.Normalization.normalize (Modular.absoluteSpeeds v)).insertionSort (· ≤ ·)
+
+theorem primitiveDirectionCheck_eq (v : FiveIntegerVector) :
+    primitiveDirectionCheck v = Modular.primitiveDirection v := by
+  unfold primitiveDirectionCheck Modular.primitiveDirection
+  exact (List.mergeSort_eq_insertionSort (fun a b : ℕ => a ≤ b) _).symm
+
 def boundedTerminalCheck (allowed : List (List ℕ)) (v : FiveIntegerVector) : Bool :=
   decide (∃ i : Fin 5, v i = 0) ||
     (decide (∃ i j : Fin 5, i ≠ j ∧ (v i).natAbs = (v j).natAbs) ||
       (containsCriticalCheck (Modular.absoluteSpeeds v) ||
-        decide (Modular.primitiveDirection v ∈ allowed)))
+        decide (primitiveDirectionCheck v ∈ allowed)))
 
 theorem boundedTerminalCheck_sound (allowed : List (List ℕ)) (v : FiveIntegerVector)
     (hcheck : boundedTerminalCheck allowed v = true)
@@ -74,7 +82,7 @@ theorem boundedTerminalCheck_sound (allowed : List (List ℕ)) (v : FiveIntegerV
       exact (hij (hdistinct he)).elim
     · rcases Bool.or_eq_true_iff.mp hrest with hc | ha
       · exact (hnot (containsCriticalCheck_absolute_sound v hc)).elim
-      · exact of_decide_eq_true ha
+      · simpa only [primitiveDirectionCheck_eq] using (of_decide_eq_true ha)
 
 def boundedSlopePairCheck (p₁ p₂ : ℕ) (G₂ : ℕ → ℕ) (B : TwoParameterMap)
     (K : ℕ) (allowed : List (List ℕ)) (r x : ℕ) : Bool :=

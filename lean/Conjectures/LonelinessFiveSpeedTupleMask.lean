@@ -8,7 +8,7 @@ namespace Loneliness.FiveSpeedCertificate
 
 def tupleMaskWitnessCheck (p : ℕ) (G : ℕ → ℕ) (speeds : List ℕ) : Bool :=
   let common := andMasks p (speeds.map G)
-  let t := proposedFirstBit common
+  let t := proposedFirstBitBelow p common
   decide (t < p) && common.testBit t
 
 theorem tupleMaskWitnessCheck_sound (p : ℕ) (G : ℕ → ℕ) (speeds : List ℕ)
@@ -16,7 +16,7 @@ theorem tupleMaskWitnessCheck_sound (p : ℕ) (G : ℕ → ℕ) (speeds : List �
     (hcheck : tupleMaskWitnessCheck p G speeds = true) :
     Loneliness.Modular.HasWitness 5 p speeds := by
   let common := andMasks p (speeds.map G)
-  let t := proposedFirstBit common
+  let t := proposedFirstBitBelow p common
   have hh : t < p ∧ common.testBit t = true := by
     simpa only [tupleMaskWitnessCheck, Bool.and_eq_true, decide_eq_true_eq] using hcheck
   have hbits := (andMasks_testBit p (speeds.map G) t).mp hh.2

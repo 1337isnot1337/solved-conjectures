@@ -36,7 +36,9 @@ nondegeneracy and noncriticality hypotheses.
 These finite checks use `Modular.absoluteSpeeds`, a computable list. Proved
 membership and witness equivalences connect that list to the semantic
 `integerSpeeds` definition. No noncomputable finite-set enumeration is used
-as an executable checker.
+as an executable checker. The terminal calculation uses structural insertion
+sort, with a proved equality to the semantic merge sort. The original merge
+sort did not reduce inside the kernel for the bounded prototypes.
 
 ## Finite candidates
 
@@ -56,7 +58,9 @@ in their full hosted dependency checks. Generation alone is not a proof.
 
 The root prototype splits the third coordinate into explicit intervals and
 combines those checks by a proved append rule. It tests the folded pattern
-before counting zero forms. Equality with the original structural predicate
+before counting zero forms. A bounded binary search selects witness bits;
+their bounds and actual membership are checked before any candidate is removed.
+This avoids computing `Nat.log2` on a large mask. Equality with the original structural predicate
 is proved. The generic block source and the first block at prime 179 compile
 locally. This single block does not establish the complete root cover.
 
