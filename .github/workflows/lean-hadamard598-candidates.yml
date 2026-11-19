@@ -12,6 +12,9 @@ on:
           - affected
           - fibers
           - compression
+          - exceptions
+          - correlation
+          - multiplier
   push:
     paths:
       - 'lean/Conjectures/Hadamard598*.lean'

@@ -37,9 +37,21 @@ TASKS = {
         'HadamardLegendre.centeredRows_isLegendrePair',
         'HadamardLegendre.commonMultiplierGroup_eq_fixed_centeredRows',
     ]),
+    'arithmetic': ('Conjectures.HadamardLegendreArithmetic', [
+        'HadamardLegendre.integer_sum_two_squares_pow_599_even',
+        'HadamardLegendre.rational_sum_two_squares_pow_599_even',
+        'HadamardLegendre.rational_sum_two_squares_ne_599',
+    ]),
+    'odd-degree': ('Conjectures.HadamardLegendreOddDegree', [
+        'HadamardLegendre.rational_sum_two_squares_pow_599_even',
+        'HadamardLegendre.gaussianMatrix_mul_conj',
+        'HadamardLegendre.rational_matrix_sum_two_squares',
+        'HadamardLegendre.even_finrank_of_sum_two_squares_599',
+        'HadamardLegendre.not_sum_two_squares_599_of_odd_finrank',
+    ]),
 }
 
-DEFAULT_TASKS = ("centering",)
+DEFAULT_TASKS = ("centering", "odd-degree")
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-legendre-candidates.yml',
  'lean/lake-manifest.json',

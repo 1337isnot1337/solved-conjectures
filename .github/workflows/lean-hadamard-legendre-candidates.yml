@@ -12,10 +12,13 @@ on:
           - affected
           - basic
           - centering
+          - arithmetic
+          - odd-degree
   push:
     paths:
       - 'lean/Conjectures/HadamardLegendre*.lean'
       - 'lean/Conjectures/HadamardBorderNormalizationTransportOps.lean'
+      - 'lean/Conjectures/HadamardAutomorphismArithmeticBasic.lean'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
@@ -28,6 +31,7 @@ on:
     paths:
       - 'lean/Conjectures/HadamardLegendre*.lean'
       - 'lean/Conjectures/HadamardBorderNormalizationTransportOps.lean'
+      - 'lean/Conjectures/HadamardAutomorphismArithmeticBasic.lean'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'

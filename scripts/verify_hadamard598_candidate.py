@@ -38,9 +38,35 @@ TASKS = {
         'Hadamard598.original_row_sum_abs_le_two',
         'Hadamard598.compressed_row_sum_eq_original',
     ]),
+    'exceptions': ('Conjectures.Hadamard598Exceptions', [
+        'Hadamard598.compressed_decomposition',
+        'Hadamard598.exceptionRows_values',
+        'Hadamard598.exception_energy_and_mixed',
+        'Hadamard598.exception_energy_eq_five',
+        'Hadamard598.exception_opposite',
+        'Hadamard598.exception_support_card_eq_five',
+    ]),
+    'correlation': ('Conjectures.Hadamard598Correlation', [
+        'Hadamard598.zero_correlation_bounds',
+        'Hadamard598.mixed_correlation_bounds',
+        'Hadamard598.reverse_mixed_correlation_bounds',
+        'Hadamard598.compressed_correlation_expansion',
+        'Hadamard598.exception_correlation_nonzero',
+        'Hadamard598.exception_row_sum_squares_eq_five',
+        'Hadamard598.exception_row_sum_abs_le_one',
+        'Hadamard598.order11_fiber_invariance_impossible',
+    ]),
+    'multiplier': ('Conjectures.Hadamard598Multiplier', [
+        'Hadamard598.units26_card',
+        'Hadamard598.units26_pow11_eq_one',
+        'Hadamard598.order11_components',
+        'Hadamard598.order11_multiplier_invariance_impossible',
+        'Hadamard598.order11_translated_invariance_impossible',
+        'Hadamard598.order11_individual_origins_impossible',
+    ]),
 }
 
-DEFAULT_TASKS = ("fibers", "compression")
+DEFAULT_TASKS = ("multiplier",)
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard598-candidates.yml',
  'lean/lake-manifest.json',
