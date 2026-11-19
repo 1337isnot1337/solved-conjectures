@@ -1,0 +1,21 @@
+{
+  "schema": "frankl-literal-ten-bridge-v2",
+  "root": "Conjectures.FranklSpanFourLiteralWeights",
+  "sources": {
+    "lean/Conjectures/FranklSpanFourLiteralWeightsCore.lean": "af86f6a164a9e923bc71284b07f91869ee68e6fb2f3712ee4e57f5f29206019b",
+    "lean/Conjectures/FranklSpanFourLiteralWeights.lean": "477d9878360e52a72cc01d38824cc4bd4681d6eaae917367e1316fd4d6a78e5c"
+  },
+  "required_endpoints": [
+    "FranklSpanFour.LiteralWeights.point_val_of_lt",
+    "FranklSpanFour.LiteralWeights.point_injOn",
+    "FranklSpanFour.LiteralWeights.point_core_image",
+    "FranklSpanFour.LiteralWeights.tileMask_point_image",
+    "FranklSpanFour.LiteralWeights.decoded_windowMasks_image",
+    "FranklSpanFour.LiteralWeights.windowCheck_certificate",
+    "FranklSpanFour.LiteralWeights.entryCheck_certificate",
+    "FranklSpanFour.LiteralWeights.batchCheck_certificate",
+    "FranklSpanFour.Assembly.weight4Check_of_literalBatch"
+  ],
+  "scope": "Generic literal ten-point certificate and packet weight-field bridge only. Complete numerical arithmetic, row coverage, transports, and the full span-four theorem remain separate obligations.",
+  "recovery": "These are reconstructed source bytes. Prior local receipts for lost bridge files do not verify this version."
+}

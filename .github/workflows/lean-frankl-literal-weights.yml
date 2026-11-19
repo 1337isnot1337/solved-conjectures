@@ -1,0 +1,37 @@
+name: Lean Frankl literal ten-point weight bridge
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-frankl-literal-weights.yml'
+      - 'scripts/verify_frankl_literal_weights.py'
+      - 'docs/frankl-literal-ten-bridge-sources.json'
+      - 'lean/Conjectures/FranklSpanFourLiteralWeights*.lean'
+
+permissions:
+  contents: read
+
+jobs:
+  literal-weights:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: false
+          test: false
+          lint: false
+      - name: Strict source, all owned declarations, exact stock kernel
+        run: python3 scripts/verify_frankl_literal_weights.py --jobs 4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frankl-literal-ten-bridge
+          path: .candidate-artifacts/frankl-literal-weights/
+          retention-days: 14
