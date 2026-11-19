@@ -2,6 +2,8 @@ module
 
 public import Conjectures.FranklTreeBall
 public import Conjectures.FranklTreeGluing
+public import Mathlib.Data.Fintype.Option
+public import Mathlib.Data.Fintype.Sigma
 
 /-! A finite-depth unfolding without immediate reversals.
 
@@ -50,13 +52,15 @@ def graph (G : SimpleGraph V) : ∀ n parent root, SimpleGraph (Vertex G n paren
 
 instance finiteVertex (G : SimpleGraph V) [Finite V] (n : ℕ) (parent root : V) :
     Finite (Vertex G n parent root) := by
+  classical
+  letI : Fintype V := Fintype.ofFinite V
   induction n generalizing parent root with
   | zero =>
       change Finite PUnit
       infer_instance
   | succ n ih =>
-      letI (child : Children G parent root) : Finite (Vertex G n root child.1) :=
-        ih root child.1
+      letI (child : Children G parent root) : Fintype (Vertex G n root child.1) :=
+        @Fintype.ofFinite (Vertex G n root child.1) (ih root child.1)
       change Finite (Option (Σ child : Children G parent root, Vertex G n root child.1))
       infer_instance
 
@@ -88,7 +92,9 @@ theorem walk_support_injective (G : SimpleGraph V) (n : ℕ) (parent root : V) :
   induction n generalizing parent root with
   | zero =>
       intro x y _
-      exact Subsingleton.elim x y
+      cases x
+      cases y
+      rfl
   | succ n ih =>
       intro x y h
       cases x with
@@ -143,11 +149,11 @@ theorem append_walk_isPath {G : SimpleGraph V} (hg : NoShortCycle G 16) {start :
   induction n with
   | zero =>
       intro parent root x p hp _ _
-      simpa only [walk, Walk.append_nil] using hp
+      simpa only [walk, endpoint, Walk.append_nil] using hp
   | succ n ih =>
       intro parent root x p hp hparent hlen
       cases x with
-      | none => simpa only [walk, Walk.append_nil] using hp
+      | none => simpa only [walk, endpoint, Walk.append_nil] using hp
       | some x =>
           rcases x with ⟨child, x⟩
           have hc : child.1 ≠ p.penultimate := by
@@ -161,7 +167,7 @@ theorem append_walk_isPath {G : SimpleGraph V} (hg : NoShortCycle G 16) {start :
             (Or.inr (Walk.penultimate_concat p child.2.1).symm) (by
               simp only [Walk.length_concat]
               omega)
-          simpa only [walk, Walk.concat_append] using hi
+          simpa only [walk, endpoint, Walk.concat_append] using hi
 
 theorem walk_isPath {G : SimpleGraph V} (hg : NoShortCycle G 16)
     (n : ℕ) (hlen : n ≤ 7) (parent root : V) (x : Vertex G n parent root) :

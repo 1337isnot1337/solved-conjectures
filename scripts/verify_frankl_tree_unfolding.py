@@ -18,7 +18,7 @@ def main():
     parser.add_argument("--jobs", type=int, choices=range(1, 5), default=4)
     args = parser.parse_args()
     inventory = json.loads((ROOT / INVENTORY).read_text())
-    if inventory["schema"] != "frankl-tree-unfolding-v1":
+    if inventory["schema"] != "frankl-tree-unfolding-v2":
         raise ValueError("Unexpected tree-unfolding source inventory")
     for path, expected in inventory["sources"].items():
         if gate.digest(ROOT / path) != expected:
@@ -27,7 +27,7 @@ def main():
     if set(modules) != {
         "Conjectures.FranklIncidence", "Conjectures.FranklTreeCounts",
         "Conjectures.FranklTreeGluing", "Conjectures.FranklTreeBall",
-        "Conjectures.FranklTreeUnfolding",
+        "Conjectures.FranklTreeUnfolding", "Conjectures.FranklTreeUnfoldingIso",
     }:
         raise ValueError("Unexpected tree-unfolding helper closure")
     required = inventory["required_endpoints"]

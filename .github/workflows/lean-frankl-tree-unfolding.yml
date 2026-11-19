@@ -8,7 +8,7 @@ on:
       - '.github/workflows/lean-frankl-tree-unfolding.yml'
       - 'scripts/verify_frankl_tree_unfolding.py'
       - 'docs/frankl-tree-unfolding-sources.json'
-      - 'lean/Conjectures/FranklTreeUnfolding.lean'
+      - 'lean/Conjectures/FranklTreeUnfolding*.lean'
       - 'lean/Conjectures/FranklTreeGluing.lean'
       - 'lean/Conjectures/FranklTreeBall.lean'
       - 'lean/Conjectures/FranklTreeCounts.lean'

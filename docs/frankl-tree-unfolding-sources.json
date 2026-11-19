@@ -1,8 +1,9 @@
 {
-  "schema": "frankl-tree-unfolding-v1",
-  "root": "Conjectures.FranklTreeUnfolding",
+  "schema": "frankl-tree-unfolding-v2",
+  "root": "Conjectures.FranklTreeUnfoldingIso",
   "sources": {
-    "lean/Conjectures/FranklTreeUnfolding.lean": "95e4f223cc2ef85786b07bd5246ee1da981eb0720ac936a92b67f1de78463339"
+    "lean/Conjectures/FranklTreeUnfolding.lean": "3b5efb66c0803b37e10d3138cbab2c1b8b5764220fd2b4d22de1ee1d59e00952",
+    "lean/Conjectures/FranklTreeUnfoldingIso.lean": "58d589f0b7b261cbd128b94f52999260e5125c065d43a7b4e19790c9d13edb4b"
   },
   "required_endpoints": [
     "FranklTreeUnfolding.endpoint_rootVertex",
@@ -17,7 +18,15 @@
     "FranklTreeUnfolding.exists_endpoint_of_path",
     "FranklTreeUnfolding.root_not_mem_tail",
     "FranklTreeUnfolding.toBall_bijective",
-    "FranklTreeUnfolding.ball_card_eq"
+    "FranklTreeUnfolding.ball_card_eq",
+    "FranklTreeUnfolding.adjacent_root_child_iff",
+    "FranklTreeUnfolding.adjacent_children_same",
+    "FranklTreeUnfolding.graph_adj_iff_endpoints",
+    "FranklTreeUnfolding.ballIso_root",
+    "FranklTreeUnfolding.root_children_card",
+    "FranklTreeUnfolding.parent_children_card",
+    "FranklTreeUnfolding.endpoint_mem_pathBall_iff",
+    "FranklTreeUnfolding.boundary_layer_iff"
   ],
-  "scope": "Neighbor-set recursive unfolding, simple-path and endpoint uniqueness proofs under girth sixteen, and an exact vertex equivalence with every radius-at-most-seven ball. Graph adjacency transport and the full occupation bound remain separate."
+  "scope": "Recursive unfolding of actual neighbor sets, exact graph isomorphism with radius-at-most-seven induced balls under girth sixteen, root and child cardinalities, and boundary-depth identification. The connection to the final occupation bound is still separate."
 }
