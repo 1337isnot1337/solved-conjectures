@@ -58,6 +58,11 @@ REPLACEMENT_SHA = "9bd0e3fe3a25bf3d7c319425a392770aff98a122"
 FAILED_ROWS_JOB = 135552040110
 ROWS_JOB_NAME = "quotient-133 strict source rows_verified"
 SHA = re.compile(r"[0-9a-f]{40}")
+MAINTENANCE_FILES = (
+    "scripts/prune_legacy_accepted_runs.py",
+    ".github/workflows/prune-legacy-accepted-runs.yml",
+    "scripts/test_prune_legacy_accepted_runs.py",
+)
 
 
 @dataclass(frozen=True)
@@ -165,13 +170,45 @@ def current_main(api, expected: str) -> None:
     require(ref.get("ref") == "refs/heads/main"
             and ref.get("object", {}).get("type") == "commit"
             and ref.get("object", {}).get("sha") == expected,
-            "Current main changed from the selected checkout snapshot")
+            "Current main changed from the selected main snapshot")
 
 
 def ancestor(api, base: str, head: str) -> None:
     require(SHA.fullmatch(base) is not None and SHA.fullmatch(head) is not None,
             "Invalid source SHA")
     validate_ancestry(api(f"/compare/{base}...{head}?per_page=1"), base)
+
+
+def maintenance_blobs(api, head: str) -> dict[str, str]:
+    blobs = {}
+    for path in MAINTENANCE_FILES:
+        item = api(f"/contents/{path}?{urlencode({'ref': head})}")
+        sha = item.get("sha", "")
+        require(item.get("type") == "file" and item.get("path") == path
+                and isinstance(sha, str) and SHA.fullmatch(sha) is not None,
+                f"Maintenance file metadata mismatch: {path}")
+        blobs[path] = sha
+    return blobs
+
+
+def select_main(api, checkout: str, report: dict) -> str:
+    require(SHA.fullmatch(checkout) is not None, "Invalid checkout SHA")
+    report["checkout_sha"] = checkout
+    ref = api("/git/ref/heads/main")
+    head = ref.get("object", {}).get("sha", "")
+    require(ref.get("ref") == "refs/heads/main"
+            and ref.get("object", {}).get("type") == "commit"
+            and isinstance(head, str) and SHA.fullmatch(head) is not None,
+            "Invalid current-main reference")
+    report["selected_head_sha"] = head
+    ancestor(api, checkout, head)
+    bindings = {"checkout": maintenance_blobs(api, checkout),
+                "selected": maintenance_blobs(api, head)}
+    report["maintenance_blob_bindings"] = bindings
+    require(bindings["checkout"] == bindings["selected"],
+            "Reviewed maintenance files changed after checkout")
+    current_main(api, head)
+    return head
 
 
 def checked_run(api, spec: RunSpec) -> dict:
@@ -303,10 +340,9 @@ def main() -> int:
     try:
         require(os.environ.get("GITHUB_REPOSITORY") == REPOSITORY, "Wrong repository")
         require(os.environ.get("GITHUB_REF") == "refs/heads/main", "Wrong workflow ref")
-        head = os.environ.get("GITHUB_SHA", "")
-        require(SHA.fullmatch(head) is not None, "Invalid checkout SHA")
-        report["selected_head_sha"] = head
-        perform(api_client(os.environ["GH_TOKEN"]), head, args.apply, report)
+        api = api_client(os.environ["GH_TOKEN"])
+        head = select_main(api, os.environ.get("GITHUB_SHA", ""), report)
+        perform(api, head, args.apply, report)
         report["status"] = "completed"
         return 0
     except Exception as error:

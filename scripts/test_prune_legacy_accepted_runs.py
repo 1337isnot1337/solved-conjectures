@@ -21,6 +21,37 @@ def failed_rows():
                      "conclusion": "failure"}]}
 
 
+def selection_api(*, ref=None, comparison=None, changed_path=None, advance=False):
+    checkout, head = "a" * 40, "c" * 40
+    good_ref = {"ref": "refs/heads/main", "object": {"type": "commit", "sha": head}}
+    good_comparison = {"status": "ahead", "behind_by": 0,
+                       "base_commit": {"sha": checkout},
+                       "merge_base_commit": {"sha": checkout}}
+    ref_calls = 0
+
+    def api(path, method="GET", body=None):
+        nonlocal ref_calls
+        if method != "GET" or body is not None:
+            raise AssertionError("Snapshot selection must be read-only")
+        if path == "/git/ref/heads/main":
+            ref_calls += 1
+            if advance and ref_calls > 1:
+                return {"ref": "refs/heads/main",
+                        "object": {"type": "commit", "sha": "d" * 40}}
+            return deepcopy(good_ref if ref is None else ref)
+        if path == f"/compare/{checkout}...{head}?per_page=1":
+            return deepcopy(good_comparison if comparison is None else comparison)
+        for index, name in enumerate(prune.MAINTENANCE_FILES, 1):
+            for commit in (checkout, head):
+                if path == f"/contents/{name}?ref={commit}":
+                    sha = str(index) * 40
+                    if commit == head and name == changed_path:
+                        sha = "e" * 40
+                    return {"path": name, "type": "file", "sha": sha}
+        raise AssertionError(f"Unexpected selection read: {path}")
+    return api
+
+
 class RetirementGuards(unittest.TestCase):
     def test_exact_legacy_metadata(self):
         spec = prune.RunSpec(44508611279, prune.TARGETS["44508611279"])
@@ -65,6 +96,45 @@ class RetirementGuards(unittest.TestCase):
         ):
             with self.assertRaises(RuntimeError):
                 prune.current_main(lambda _: changed, head)
+
+    def test_selection_accepts_unchanged_maintenance_on_descendant(self):
+        report = {}
+        selected = prune.select_main(selection_api(), "a" * 40, report)
+        self.assertEqual(selected, "c" * 40)
+        self.assertEqual(report["checkout_sha"], "a" * 40)
+        self.assertEqual(report["selected_head_sha"], selected)
+        self.assertEqual(set(report["maintenance_blob_bindings"]["selected"]),
+                         set(prune.MAINTENANCE_FILES))
+        self.assertEqual(report["maintenance_blob_bindings"]["checkout"],
+                         report["maintenance_blob_bindings"]["selected"])
+
+    def test_selection_rejects_wrong_ref_type_or_sha(self):
+        for ref in (
+            {"ref": "refs/heads/other", "object": {"type": "commit", "sha": "c" * 40}},
+            {"ref": "refs/heads/main", "object": {"type": "tag", "sha": "c" * 40}},
+            {"ref": "refs/heads/main", "object": {"type": "commit", "sha": "invalid"}},
+            {"ref": "refs/heads/main", "object": {"type": "commit", "sha": None}},
+        ):
+            with self.subTest(ref=ref), self.assertRaises(RuntimeError):
+                prune.select_main(selection_api(ref=ref), "a" * 40, {})
+        with self.assertRaises(RuntimeError):
+            prune.select_main(selection_api(), "invalid", {})
+
+    def test_selection_rejects_diverged_checkout(self):
+        comparison = {"status": "diverged", "behind_by": 1,
+                      "base_commit": {"sha": "a" * 40},
+                      "merge_base_commit": {"sha": "b" * 40}}
+        with self.assertRaises(RuntimeError):
+            prune.select_main(selection_api(comparison=comparison), "a" * 40, {})
+
+    def test_selection_rejects_any_changed_maintenance_blob(self):
+        for path in prune.MAINTENANCE_FILES:
+            with self.subTest(path=path), self.assertRaises(RuntimeError):
+                prune.select_main(selection_api(changed_path=path), "a" * 40, {})
+
+    def test_selection_rejects_main_advancing_during_checks(self):
+        with self.assertRaises(RuntimeError):
+            prune.select_main(selection_api(advance=True), "a" * 40, {})
 
     def test_ancestry_must_use_exact_base(self):
         base = prune.QUOTIENT_SHA
