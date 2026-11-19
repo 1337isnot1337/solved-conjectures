@@ -1,6 +1,6 @@
 {
   "accepted_registry_changed": false,
-  "complete_arithmetic_partition": false,
+  "complete_arithmetic_partition": true,
   "expected_groups": [
     "p10g00",
     "p10g01",
@@ -10,14 +10,7 @@
     "p10g05",
     "p10g06"
   ],
-  "missing_groups": [
-    "p10g01",
-    "p10g02",
-    "p10g03",
-    "p10g04",
-    "p10g05",
-    "p10g06"
-  ],
+  "missing_groups": [],
   "passed_groups": {
     "p10g00": {
       "archive_sha256": "6758f65671e8ac21acb0188d861240dc79bcfd417c68aa0ce57b586e334c29ac",
@@ -28,6 +21,66 @@
       "receipt": "docs/verification/frankl-orbit-batches-44505005993/p10g00.json",
       "receipt_sha256": "fa487e44034b87c5bc6e2b7139a45ee00b6f94da24f6511be23837fbe2353c83",
       "rows": 64
+    },
+    "p10g01": {
+      "archive_sha256": "8998156073fa40d692cfa07ca71976a43807f069ad9e8be8aaea12f2817d2539",
+      "artifact_id": 14522526192,
+      "artifact_name": "frankl-literal-orbit-p10g01",
+      "private_chunks": 128,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44505005993/p10g01.json",
+      "receipt_sha256": "84e1bc665e4d00012c2493e89a769e52021cef7a7f29316c80bbff35fddb2b4f",
+      "rows": 256
+    },
+    "p10g02": {
+      "archive_sha256": "289d22bbe58e0bd84ed3306d6c9b9daa389a60dd6fc45a486e5fa83df8ba2ef9",
+      "artifact_id": 14521482363,
+      "artifact_name": "frankl-literal-orbit-p10g02",
+      "private_chunks": 128,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44505005993/p10g02.json",
+      "receipt_sha256": "50d975b46d5ffeeb09a438c097a014c467eb4dae693b808b5e92395813cb17bf",
+      "rows": 256
+    },
+    "p10g03": {
+      "archive_sha256": "1a2cde93032a2e43a596be6e214d4f4fc8ee92ef0a5d4552d4fe530fa866edea",
+      "artifact_id": 14523500177,
+      "artifact_name": "frankl-literal-orbit-p10g03",
+      "private_chunks": 128,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44505005993/p10g03.json",
+      "receipt_sha256": "530964615f14f64ca5836c40ddcad86906297c030cd46352c8e43d36b96199cd",
+      "rows": 256
+    },
+    "p10g04": {
+      "archive_sha256": "1bfd192ad1c572f0e14c234b4d5de81566b1c15a278863ff7a2e13906c320049",
+      "artifact_id": 14523855265,
+      "artifact_name": "frankl-literal-orbit-p10g04",
+      "private_chunks": 128,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44505005993/p10g04.json",
+      "receipt_sha256": "ae74aa8eafd16a306da5f0a63d0ab40b98b708bfe0783c643193fa38c5f325e1",
+      "rows": 256
+    },
+    "p10g05": {
+      "archive_sha256": "0f94475b85a31e5638cb06fc1414394f35d1f6beb08ab4f0250e51a7d11234ae",
+      "artifact_id": 14522239544,
+      "artifact_name": "frankl-literal-orbit-p10g05",
+      "private_chunks": 128,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44505005993/p10g05.json",
+      "receipt_sha256": "fb52593104411f96993b27eca49e13e51e646fff0537369611d8408078ba7cbf",
+      "rows": 256
+    },
+    "p10g06": {
+      "archive_sha256": "9b98cac854b106877ede25c68c5f7c90636016a01b4c5c4eebcb49b71e9d228e",
+      "artifact_id": 14523533643,
+      "artifact_name": "frankl-literal-orbit-p10g06",
+      "private_chunks": 114,
+      "project_modules": 30,
+      "receipt": "docs/verification/frankl-orbit-batches-44505005993/p10g06.json",
+      "receipt_sha256": "57d1b031f2f02c0268bc84a6045f7ee7911a39c1336953279cef170a32b50b17",
+      "rows": 228
     }
   },
   "schema": "frankl-bounded-arithmetic-receipts-v1",
@@ -35,8 +88,8 @@
   "skipped_artifacts": [],
   "source_commit": "050ec13ddc5c454c56ae081e82a2aa4f91fa1722",
   "source_run_id": 44505005993,
-  "verified_private_arithmetic_chunks": 32,
-  "verified_representative_rows": 64,
-  "workflow_conclusion": null,
-  "workflow_status": "queued"
+  "verified_private_arithmetic_chunks": 786,
+  "verified_representative_rows": 1572,
+  "workflow_conclusion": "success",
+  "workflow_status": "completed"
 }
