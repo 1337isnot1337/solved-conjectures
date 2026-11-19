@@ -23,7 +23,7 @@ A growing collection of proofs, counterexamples, and reproducible verification c
 | [Two-difference Motzkin density](results/two-difference-motzkin/) | [Read](results/two-difference-motzkin/PROOF.md) | ◐ |
 | [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | [Read](results/tight-six-speeds/PROOF.md) | ◐ |
 | [Distance graphs with three missing differences](results/distance-graph-densities/) | [Read](results/distance-graph-densities/PROOF.md) | ☑ |
-| [Growing rectangles](results/rectangle-partition-asymptotics/) | [Read](results/rectangle-partition-asymptotics/PROOF.md) | ◐ |
+| [Growing rectangles](results/rectangle-partition-asymptotics/) | [Read](results/rectangle-partition-asymptotics/PROOF.md) | ☑ |
 | [CUT Family B](results/cut-family-b/) | [Read](results/cut-family-b/PROOF.md) | ☑ |
 | [Line-size sets](results/erdos-607-line-sizes/) | [Read](results/erdos-607-line-sizes/PROOF.md) | ☐ |
 | [CUT with a preperiod](results/cut-arithmetic-periodicity/) | [Read](results/cut-arithmetic-periodicity/PROOF.md) | ◐ |

@@ -1,81 +1,122 @@
-# Checked rectangle components
+# Complete growing-rectangle formalization
 
-The growing-rectangle asymptotic is not yet a complete Lean theorem. The
-following finite and analytic components have passed their checks.
+Lean proves the full logarithmic asymptotic, uniformly over every width at
+least the height. The theorem uses the real-position tiling definition from
+the note. It has no unproved partition estimate or geometric premise.
 
-## Finite tilings and partition injection
+## Statement and counted objects
 
-`RectangleCells.lean` defines a placed rectangle by its exact multiset of
-integer cells. `GridTiles` requires that the sum of all placed-cell multisets
-equal the cells of the outer rectangle. Thus every cell is covered exactly
-once. `rectangleCount` counts canonical multisets of side-length pairs that
-admit such a tiling. Rotation and arrangement do not produce different
-counted multisets.
-
-`RectangleShelfPacking.lean` proves that positive widths at most `C` fit in
-at most `Q` shelves of width `B` whenever their total is at most `Q*(B-C)`.
-`RectangleGuillotine.lean` constructs actual tilings from those shelves and
-unit-square filling; its certificates map into the unrestricted grid-tiling
-predicate.
-
-`RectangleEncoding.lean` recovers each selected partition from the rectangles
-with its designated smaller side. It proves injectivity even after an
-arbitrary number of unit squares is added. `RectangleCounting.lean` applies
-this to stacked full-width strips and side-by-side full-height columns.
-It also bounds the actual count by the finite set of area-compatible
-canonical multisets.
-
-`boundedParts a B T` is the finite set of partitions with total at most `T`
-and every part in `[a,B]`. Its membership theorem and positive cardinality
-are checked. Deleting parts below `a` has multiplicity at most
-`(T+1)^(a-1)`. `RectangleLogBounds.lean` combines the injection and deletion
-bound into the logarithmic lower estimate needed by the asymptotic proof.
-
-All seven finite modules passed independent kernel replay. Their namespace
-audit checked 125 theorem declarations with only the permitted logical axioms.
-
-## Sharp Euler-product estimates
-
-Write
+For natural numbers `h` and `w`, put
 
 \[
-L_B(t)=\sum_{a=1}^B-\log(1-e^{-at}),\qquad C=\sum_{m\ge1}m^{-2}.
+N=hw,\qquad U=\min(h,N^{1/4}),\qquad S=\sqrt{N\log U}.
 \]
 
-`RectangleEuler.lean` proves `L_B(t)<=C/t` for every `t>0`. For each fixed
-positive cutoff `K`, `RectangleEulerLimit.lean` proves
+`RectangleAsymptotics.uniform_log_asymptotic` proves that, for every real
+`ε > 0`, there is a natural `H ≥ 2` such that every `h ≥ H` and `w ≥ h`
+satisfy
 
 \[
-tL_B(t)\ge(1-e^{-Bt})\sum_{m=1}^Km^{-2}
--t\sum_{m=1}^Km^{-1}.
+\left|\frac{\log p(h,w)}{S}-\pi\sqrt{2/3}\right|<\varepsilon.
 \]
 
-It follows that `t*L_B(t)` tends to `C` whenever `t` tends to zero through
-positive values and `B*t` tends to infinity. This is stated for arbitrary
-filters and varying natural cutoffs. `RectangleBasel.lean` identifies
-`C=pi^2/6` using the checked Mathlib series theorem.
+`rectangle_log_asymptotic` gives the same limit on the joint rectangle
+filter. `rectangle_log_asymptotic_along` applies it to every sequence or
+filtered family for which the shorter side tends to infinity and `h ≤ w`
+eventually holds. These declarations are in
+[`RectangleAsymptotic.lean`](../../lean/Conjectures/RectangleAsymptotic.lean).
 
-`RectangleEulerUpper.lean` additionally proves exponential decay for large
-arguments, the ordered-product bound
+The count `RectanglePartitions.realRectangleCount` uses finite tilings by
+axis-parallel blocks with positive integer side lengths. Block positions
+are arbitrary real numbers. Blocks lie inside the outer rectangle, their
+interiors are disjoint, and their closed rectangles cover the board.
+Canonical side-length pairs identify rotations. Each multiset of block
+types counts once, regardless of its arrangement.
+
+The real-to-grid bridge is proved. Horizontal and vertical slices force
+the block positions to be integral. `realTiles_iff_gridTiles` identifies
+the real and integer-cell tiling predicates, and `realRectangleCount_eq`
+identifies their counts. `RealTiling.cover_closed` explicitly verifies
+coverage of the board boundary when both dimensions are positive.
+
+## Finite counting and upper bound
+
+The grid model describes each placed block by its exact multiset of cells.
+A tiling covers every board cell once. Shelf packing constructs actual
+tilings from bounded partitions and fills unused cells with unit squares.
+Deleting the unit squares and grouping the remaining blocks by smaller
+side recovers each chosen partition. The resulting map to block multisets
+is injective.
+
+Finite multiplicity vectors give the exponential-product counting bounds.
+The development proves the ordered/unordered product identity, controls
+the diagonal terms, and optimizes the height and area estimates. Their
+minimum gives the required uniform upper bound in both regimes of `U`.
+These arguments do not import the paper's multiset asymptotic as a premise.
+
+## Cumulative partitions and lower bound
+
+Write `C = π²/6` and
 
 \[
-\sum_{a=1}^h L_B(at)
-\le\frac{C(\log(1/t)+2)+4}{t}\quad(0<t\le1),
+L_B(t)=\sum_{a=1}^{B}-\log(1-e^{-at}).
 \]
 
-and the bounded-height estimate `C*H_h/t`. The diagonal sum is at most `C/t`.
-These are the analytic estimates for the unordered rectangle-product upper
-bound after its finite symmetry identity is supplied.
+The Euler-product development proves `L_B(t) ≤ C/t` and
+`t L_B(t) → C` when `t → 0+` and `Bt → ∞`. Mathlib's checked Basel-sum
+theorem supplies the value of `C`.
 
-All four analytic source modules and independent kernel replays passed.
-The analytic namespace audit checked 38 theorem declarations with only
-`propext`, `Classical.choice`, and `Quot.sound`.
+`RectanglePartitionAsymptotics.tendsto_log_boundedParts_sqrt` proves the
+sharp cumulative partition limit
 
-## Remaining work
+\[
+\frac{\log |\operatorname{boundedParts}(1,B,T)|}{\sqrt T}
+\longrightarrow 2\sqrt C
+\]
 
-The full result still requires the finite exponential-product/count bridges,
-the cumulative partition asymptotic, and the uniform choice of strip or
-column parameters. The real-position interpretation also requires a checked
-bridge from the explicit grid model, or matching real-tiling upper and lower
-bounds. These gaps are not treated as mathematical axioms or omitted premises.
-The [analytic plan](ANALYTIC_LEAN_PLAN.md) records the proposed completion.
+when `T → ∞` and `B/√T → ∞`. Here `boundedParts` counts partitions with
+total at most `T`. A finite weighted sum and two exponential tail bounds
+prove this limit internally. `uniform_log_boundedParts_lower` converts
+it into a bound uniform over sufficiently large `T` and `B/√T`.
+
+The rectangle lower bound reserves full-width strips for smaller aspect
+ratios and full-height columns for larger ones. Every floor, width budget,
+height budget, and packing cutoff is checked. The active range has the
+required harmonic mass, and deletion of small parts loses a negligible
+amount after division by `S`. The lower bound is uniform over all `w ≥ h`,
+including widths growing faster than every power of `h`.
+
+The formal proof uses fixed small powers for the reservation parameters;
+this avoids assuming the Hardy–Ramanujan formula. The final squeeze uses
+the checked identity `2√C = π√(2/3)`.
+
+## Verification
+
+The frozen development contains 46 source modules. Every module passed
+source elaboration and independent replay by the pinned stock
+`leanchecker`. The final namespace audit checked 587 theorem declarations
+and allowed only `propext`, `Classical.choice`, and `Quot.sound`.
+The theorem count includes helper declarations.
+
+Eleven inherited modules are byte-identical to accepted commit
+`a7b1ca1a96abc67e1dbc6c547629409c25ad2964`, whose complete
+[hosted Lean workflow](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44439617882)
+passed. The remaining 35 modules passed their local source, axiom, and
+kernel gates. The final audit used a 6 GB Lean allocation limit; a prior
+3 GB import attempt stopped with `memory_exception` and was not counted
+as a pass.
+
+The source hashes and component receipts are recorded in
+[`lean-verification-receipt.json`](lean-verification-receipt.json).
+The accepted root imports, required endpoint audit, and replay list include
+the full development. Repository-wide and hosted integration receipts are
+reported separately in [the status report](../../docs/lean-status.md).
+
+Rebuild and replay the accepted package from the repository root:
+
+```bash
+./scripts/verify_lean.sh
+```
+
+The [analytic plan](ANALYTIC_LEAN_PLAN.md) records the construction used
+during development. Its proposed steps are now implemented.

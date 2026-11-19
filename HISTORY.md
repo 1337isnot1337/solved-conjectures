@@ -2,6 +2,20 @@
 
 [Home](README.md) · [Catalogue](CONTENTS.md)
 
+## 2026-11-19 — Complete rectangle asymptotic and finite plane reduction
+
+- Completed the growing-rectangle theorem for literal real-position tilings,
+  uniformly over every `w ≥ h`. The 46-module proof includes the cumulative
+  partition estimate and passed the 587-declaration axiom audit and kernel replay.
+- Registered the unconditional four-speed cutoff 5,832 and all 64 finite plane
+  certificate blocks, covering 122,880 indexed cases. Both hosted matrix runs
+  passed source, axiom, and stock kernel checks.
+- Registered the plane classification and five-speed cutoff 279,841 with the
+  four-speed gap retained as an explicit mathematical input. The exhaustive
+  five-speed classification remains in progress.
+- Preserved the concurrent completed Pham proof, finite Motzkin theorem, and
+  separate unregistered candidate developments.
+
 ## 2026-11-19 — Complete Pham proof and finite Motzkin theorem
 
 - Derived both Pham limiting-series identities from actual Bulgarian-solitaire

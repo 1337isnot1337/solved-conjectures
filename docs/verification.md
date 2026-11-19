@@ -96,3 +96,23 @@ Record the commit, command, toolchain, and result. Distinguish computational tes
 ## Loneliness on a fixed hyperplane
 
 Run `python3 results/loneliness-on-a-hyperplane/verify.py` for exact circle maxima, endpoint congruences, and shifted examples. The limiting theorem is proved in the [mathematical argument](../results/loneliness-on-a-hyperplane/PROOF.md).
+
+## Complete rectangle proof and finite plane certificates
+
+The accepted Lean root includes the full growing-rectangle theorem, including
+its real-position tiling interpretation and uniform quantifiers over `w ≥ h`.
+Its 46 proof modules passed source checks and independent kernel replay; the
+final rectangle audit checked 587 theorem declarations. See the
+[exact statement and receipt](../results/rectangle-partition-asymptotics/LEAN.md).
+
+The accepted plane development includes all 64 finite certificate blocks and
+their normalization and geometric soundness proofs. The matrix checks all
+122,880 indexed cases by kernel reduction. The two complete hosted matrix
+runs passed; [the source receipts](../results/five-speed-spectrum/plane-certificate-receipts.json)
+bind their sources and generator. Run `python3 scripts/verify_plane_certificates.py --row N` for one row, with `0 ≤ N < 8`. The full accepted package is checked
+by `scripts/verify_lean.sh`.
+
+The accepted four-speed coordinate cutoff 5,832 is unconditional. The plane
+classification and five-speed cutoff 279,841 retain `FourSpeedGap` as an
+explicit premise. Neither the finite matrix nor that conditional cutoff is
+a proof of the exhaustive five-speed classification.

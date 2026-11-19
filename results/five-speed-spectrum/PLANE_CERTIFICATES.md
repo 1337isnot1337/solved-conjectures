@@ -1,7 +1,13 @@
 # Finite critical-plane certificates
 
-Status: the complete matrix is pending verification. These support sources
-and generated candidates are not registered in the accepted theorem root.
+The complete finite matrix passed source compilation, separate kernel replay,
+and the transitive axiom audit in [run 44446557652](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44446557652).
+Every checked source hash matched the local proof sources. The exact receipts
+are in [plane-certificate-receipts.json](plane-certificate-receipts.json).
+The full finite calculation and its geometric composition are registered in
+the accepted root. The plane theorem retains `FourSpeedGap` as an explicit
+input; this is not the full five-speed classification. See
+[the geometric reduction](PLANE_REDUCTION_LEAN.md).
 
 The finite calculation has 64 blocks. Each block fixes two of the eight
 canonical five-coordinate directions obtained by repeating one coordinate
@@ -28,9 +34,9 @@ coordinates equal or opposite. A tested direction with no zero coordinate
 must have one of the two critical absolute supports, up to positive scaling.
 
 The support modules define these tests, prove complete permutation coverage,
-and prove the logical soundness of the certificate interface. Connecting
-this finite calculation to all rational planes also requires the geometric
-normalization and four-speed classification. Those are separate obligations.
+and prove the logical soundness of the certificate interface. The accepted
+geometric normalization connects the finite calculation to every rational
+plane under the explicit `FourSpeedGap` hypothesis.
 
 ## Reproduction
 
@@ -58,6 +64,11 @@ Each successful row prints a `PLANE_CERTIFICATE_RECEIPT` JSON record. The
 record contains the commit, generator hash, support-source hashes, and all
 eight generated-source hashes. The workflow fails if any stage fails.
 
-The matrix verifies candidates. The generated block modules join the accepted
-root imports only after every row passes. A finite certificate alone does
-not establish the exhaustive five-speed classification.
+Every row passed, and all generated block modules are now included in the
+accepted root imports and kernel replay list. The exhaustive classification
+of the original five-speed vectors is a separate remaining obligation.
+
+[Run 44447687031](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44447687031)
+repeated the same checks and retained the generated sources, compiled Lean
+imports, and row receipts as workflow artifacts. The imported artifacts were
+checked against GitHub's ZIP digests and the previously verified source hashes.

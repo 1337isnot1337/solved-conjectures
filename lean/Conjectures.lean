@@ -58,3 +58,8 @@ import Conjectures.RectangleEulerUpper
 import Conjectures.RectangleBasel
 import Conjectures.DenominatorTheorem
 import Conjectures.MotzkinDensity
+import Conjectures.RectangleAsymptotic
+import Conjectures.RectangleRealBoundary
+import Conjectures.LonelinessFourSpeedCutoff
+import Conjectures.LonelinessFiveSpeedCutoff
+import Conjectures.LonelinessFiveSpeedFamilyCutoff

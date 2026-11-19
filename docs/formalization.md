@@ -24,7 +24,7 @@ The other team coordinates in
 [issue 2](https://github.com/1337isnot1337/solved-conjectures/issues/2). It owns
 the independent `ThreeDistanceGraph*` density proof under
 [issue 9](https://github.com/1337isnot1337/solved-conjectures/issues/9),
-the remaining rectangle asymptotics under
+the completed rectangle asymptotic under
 [issue 10](https://github.com/1337isnot1337/solved-conjectures/issues/10), and the
 geometric dependencies of the lonely-runner classifications. Haralambis was
 published in `22f3a5a`; the full distance-graph endpoint was published in
@@ -83,6 +83,19 @@ Local verification and hosted CI receipts are
 recorded separately.
 See [the status report](lean-status.md) for declarations and checked scope.
 
+The full growing-rectangle theorem is complete. The real-to-grid bridge,
+cumulative partition asymptotic, both reservation regimes, and the uniform
+limit for every width at least the height are checked. The 46-module closure
+passed independent kernel replay and its 587-declaration axiom audit.
+
+The unconditional four-speed coordinate cutoff is 5,832 below value `2/9`.
+The finite plane classification covers all 122,880 indexed candidates. Its
+geometric endpoint retains `FourSpeedGap` as an explicit input. With that
+input, every positive primitive five-speed tuple below `1/5` either has all
+coordinates at most 279,841 or contains a dilated critical quadruple.
+In the second case its value is `s/(5s+1)`. The bounded classification
+remains separate work.
+
 ## Campaign checklist
 
 1. CUT: finish the concrete three-, four-, eight- and nine-pile certificates,
@@ -96,8 +109,9 @@ See [the status report](lean-status.md) for declarations and checked scope.
    evaluations, cyclic criteria, and exact algorithmic bounds.
 5. Haralambis is complete: its exact density equality and optimal pair-sum
    periodic attainment were published in `22f3a5a`.
-6. Five-speed spectrum: geometric norm reduction and complete modular
-   lifting/enumeration outside the already checked critical families.
+6. Five-speed spectrum: discharge the four-speed gap input and complete the
+   modular lifting/enumeration outside the checked critical families. The
+   rational-plane certificate and conditional coordinate cutoff are checked.
 7. Tight six speeds and critical planes: the uniform reduction, complete
    equality classification, plane enumeration and large-norm consequence.
 8. Six-speed spectrum: all infinite families, norm reduction, modular lifting,
@@ -114,8 +128,8 @@ See [the status report](lean-status.md) for declarations and checked scope.
     reduction and exhaustive lifting.
 14. Eleven-through-fourteen-runner equality: each uniform reduction, all modular
     certificates and every stated primitive equality list.
-15. Growing rectangles: the geometric packing injection, ordinary-partition
-    estimates and uniform asymptotics over every aspect ratio.
+15. Growing rectangles are complete: real tiling semantics, cumulative
+    partition estimates, and the uniform asymptotic over every width `w ≥ h`.
 16. Erdős 607: geometric realization, generating-function correspondence,
     local probability estimates and the sharp asymptotic prefactor.
 17. Graffiti.pc Conjecture 318: the all-order total-dominating-pair theorem,

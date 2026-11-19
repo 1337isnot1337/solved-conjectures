@@ -212,7 +212,19 @@ run_cmd do
     `RectangleEuler.basel_eq_pi_sq_div_six,
     `RectangleEuler.sum_logEuler_le_harmonic,
     `RectangleEuler.sum_logEuler_le,
-    `RectangleEuler.sum_logFactor_sq_le]
+    `RectangleEuler.sum_logFactor_sq_le,
+    `RectanglePartitions.realTiles_iff_gridTiles,
+    `RectanglePartitions.realRectangleCount_eq,
+    `RectanglePartitionAsymptotics.tendsto_log_boundedParts_sqrt,
+    `RectanglePartitionAsymptotics.uniform_log_boundedParts_lower,
+    `RectangleAsymptotics.rectangle_log_asymptotic,
+    `RectangleAsymptotics.uniform_log_asymptotic,
+    `RectangleAsymptotics.rectangle_log_asymptotic_along,
+    `Loneliness.Pigeonhole.four_speed_cutoff,
+    `Loneliness.PlaneCertificate.all_candidates_checked,
+    `Loneliness.PlaneCertificate.critical_product_of_low_value,
+    `Loneliness.Pigeonhole.five_speed_finite_or_spectrum,
+    `Loneliness.Pigeonhole.five_speed_finite_or_critical_quadruple]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]

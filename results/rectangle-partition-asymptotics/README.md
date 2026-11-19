@@ -22,4 +22,4 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-Partial formalization. Lean checks exact grid-tiling semantics, shelf packing, the injective partition construction, deletion multiplicities, and sharp Euler-product estimates with constant `pi^2/6`. The cumulative partition asymptotic, the real-position interpretation, and the final uniform limit are still in progress. See [the checked components](LEAN.md), [the analytic plan](ANALYTIC_LEAN_PLAN.md), and [the status report](../../docs/lean-status.md).
+Complete formalization. Lean proves the uniform asymptotic for every `w ≥ h` as `h → ∞`, counting integer-sided blocks at arbitrary real positions and identifying rotations and arrangements of the same multiset. The real-to-grid bridge, cumulative partition estimate, packing reservations, and exact leading constant are proved internally. See [the complete checked scope](LEAN.md), [the source and verification receipt](lean-verification-receipt.json), and [the status report](../../docs/lean-status.md).

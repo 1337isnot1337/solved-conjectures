@@ -1,8 +1,16 @@
 # Lean normalization and density transfer
 
-These files prove reusable parts of the five-speed norm reduction. The full
-norm bound and the classification outside the critical families remain open
-formalization tasks.
+These files prove normalization, coefficient-rounding transfer, and the
+arithmetic of the original lattice norm reduction. The original sharp lattice
+bound is not asserted by these files.
+
+A later, independently checked pigeonhole argument supplies an alternative
+finite/infinite reduction. It gives the unconditional four-speed cutoff
+`5832` and, under the explicit four-speed gap, the five-speed nonfamily cutoff
+`279841`. The finite critical-plane classification is fully checked in that
+route. See [Elementary finite/infinite reduction](PIGEONHOLE_REDUCTION_LEAN.md).
+The two finite tuple classifications remain separate; the alternative does
+not require the lattice-volume theorems listed below.
 
 ## Gcd normalization
 
@@ -131,7 +139,7 @@ The analogous three-minimum calculation gives \(A<4374/5\).
 `squared_covolume_integer_bound` proves that an integral squared covolume then
 satisfies \(A^2\le765275\).
 
-## Remaining dependency stack
+## Dependencies of the original lattice route
 
 The source for the external reduction is Yi, Gill and Bu,
 [*Four runners that are barely lonely*, arXiv:2610.40694v1](https://arxiv.org/abs/2610.40694),
@@ -154,6 +162,9 @@ and Minkowski's first convex-body theorem in
 did not find Vaaler's theorem, Minkowski's second theorem, successive minima,
 or a lonely-runner classification.
 
-Consequently these files do not close the full five-speed exhaustion. They
-prove normalization, the density transfer, and the numerical threshold
-calculation without concealing the remaining mathematical inputs.
+These particular files prove normalization, density transfer, and numerical
+threshold calculations. They leave the original lattice hypotheses explicit.
+The later pigeonhole route replaces those hypotheses with elementary finite
+approximation and the checked critical-plane certificate. Completion of the
+four-speed finite classification and the final five-speed finite
+classification is still needed for the full exhaustion theorem.

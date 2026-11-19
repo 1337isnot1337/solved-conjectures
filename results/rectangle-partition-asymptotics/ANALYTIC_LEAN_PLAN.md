@@ -1,8 +1,9 @@
 # Rectangle analytic formalization plan
 
-This is a work plan, not a completed formal proof. The original result and its
-quantifiers remain unchanged. The finite packing and counting modules are
-checked; the analytic modules are being added separately.
+This historical plan is now implemented. The full theorem, including the
+real-position interpretation and uniform quantifiers, passed its source, axiom,
+and independent kernel checks. See [the complete checked scope](LEAN.md).
+The discussion below records the construction and its intermediate estimates.
 
 ## Cumulative partitions
 
