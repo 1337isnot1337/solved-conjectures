@@ -826,3 +826,4 @@ import Conjectures.LiCoefficientExtraction
 import Conjectures.LiEvaluationData
 import Conjectures.LiCoefficientInterpolation
 import Conjectures.LiNegativeCoefficient
+import Conjectures.LonelinessRationalLatticeQuotient

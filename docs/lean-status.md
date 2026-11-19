@@ -3014,3 +3014,13 @@ the independent review SHA-256 is
 `8f14f2f5844973ea3d432b741185e01a8385841fc0d8f8b90e7181e88f5d6aee`.
 The supplement retains the original source-build and stock-replay evidence;
 it does not claim to have repeated those stages.
+
+## Actual rational-lattice quotient index
+
+For a rational coordinate subspace E of dimension r, let L be its actual full integer-point lattice. An integer matrix A with r columns in E and positive Gram determinant generates the sublattice M = columnSubmodule E A. Relative to an actual integer basis of L, the columns have an integer square coordinate matrix C. Lean proves that the quotient cardinality Nat.card (L ⧸ M) equals the absolute determinant of C and is positive. It then proves the exact identity det(AᵀA) = [L:M]² * covolume(L)². The containment, dimension and positive-Gram hypotheses are explicit; no saturation or quotient-index identity is assumed.
+
+This identifies the integer determinant factor in the earlier Gram/covolume comparison with the actual finite lattice quotient. It does not discharge the containing-plane gap or complete the six-speed classification. The six-speed result remains partial.
+
+The complete 20-module hosted gate passed at `a8577e5da31b851ce64333aa921b39c6623e0389` ([run and job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44606981694/job/135853171450)). It checked all fresh strict sources, selected declaration values and types for 446 owned names including 12 private names, all 5 required theorem endpoints, and one exact stock-kernel target per module. The audit includes raw/private-name visibility; it is not a separate audit of every duplicate theorem body occurrence. The permitted axioms were only `propext`, `Classical.choice`, and `Quot.sound`. The unchanged raw receipt has SHA-256 `62b4ab2b3b0dcdaa55b210e5de3e8322e7e6b57201b05e085983d8ff0882afa2`. A merged accepted-package source, audit and kernel pass remains a separate obligation.
+
+[Preserved receipt](verification/rational-lattice-quotient-exact-44606981694/receipt.json).

@@ -1,0 +1,522 @@
+{
+  "archive_sha256": "99d96ef788f06fa92832024b2506cd76f1dbfec4276013a71cd1bf009394cd70",
+  "artifact_id": 14569528998,
+  "files": {
+    "declaration-inventory.json": {
+      "bytes": 226361,
+      "sha256": "16d13f2da378830a5dbfef9238d2e79d28c3ef343510c7682e3161d5099a177a"
+    },
+    "lib/lean/Conjectures/Loneliness.olean": {
+      "bytes": 670688,
+      "sha256": "4e13edf11c42cd4d01ee6b692970cde34603fd7ef263cbd443775fe41e360307"
+    },
+    "lib/lean/Conjectures/LonelinessCoalescence.olean": {
+      "bytes": 1013920,
+      "sha256": "12d146c55086c8dbcbea6f698a5621e535e432269a2e014bcc11854486517b10"
+    },
+    "lib/lean/Conjectures/LonelinessContinuity.olean": {
+      "bytes": 108488,
+      "sha256": "5df8e58d7511f3fd3e51be7b051fc8437a3a11511f6dccf1cf8da127e4726862"
+    },
+    "lib/lean/Conjectures/LonelinessCoordinateClasses.olean": {
+      "bytes": 587696,
+      "sha256": "ea5f0e46116aca479a2a4f3b520ba757806ba654ee6e2cb7c6931bf4271beaff"
+    },
+    "lib/lean/Conjectures/LonelinessCoordinateSubspace.olean": {
+      "bytes": 531184,
+      "sha256": "84674dd6ab42fc619699f3e2583278d8d29e8b262e35fcc1ff551d7c58963586"
+    },
+    "lib/lean/Conjectures/LonelinessCriticalBase.olean": {
+      "bytes": 597008,
+      "sha256": "30d9e0468833b8eca771d4125313add10f1193a74297f2f5766fb0c5ddc2b37a"
+    },
+    "lib/lean/Conjectures/LonelinessFiveFamily.olean": {
+      "bytes": 843608,
+      "sha256": "9d841dbdfb2e8ea44054e35aa8504f30d54f8cd1e583bda16d8c98277d5d8334"
+    },
+    "lib/lean/Conjectures/LonelinessHyperplaneArithmetic.olean": {
+      "bytes": 194472,
+      "sha256": "3574d1b9227067343c3a869c117f1a78b2f237de9b81c07bfe99b669325ff181"
+    },
+    "lib/lean/Conjectures/LonelinessIntegerDirection.olean": {
+      "bytes": 148664,
+      "sha256": "e0ddc2d872ca0d300e571cad009dd89fe40ff4191c4f1178c5a4c0d3e8cfa71b"
+    },
+    "lib/lean/Conjectures/LonelinessKZBasisGram.olean": {
+      "bytes": 342712,
+      "sha256": "5c4f78a0614fb455b6d3f7c724b493a480874ac169e280d1eb0b81ce32b06092"
+    },
+    "lib/lean/Conjectures/LonelinessKZBasisVectors.olean": {
+      "bytes": 177336,
+      "sha256": "b1d538f3a974c6349754506d38fe1a157126c6894d50b920b934237ca7cbcc5a"
+    },
+    "lib/lean/Conjectures/LonelinessLatticeCovolume.ir": {
+      "bytes": 2264,
+      "sha256": "c524b578ad5d3864231659e0f42886d21ee8e1df268598c0c7b383747d007ca7"
+    },
+    "lib/lean/Conjectures/LonelinessLatticeCovolume.ir.sig": {
+      "bytes": 176,
+      "sha256": "bac66b3b91c5971d8d824b7553b793674e92b886823763f5d7cbdc5ebfec6e91"
+    },
+    "lib/lean/Conjectures/LonelinessLatticeCovolume.olean": {
+      "bytes": 41040,
+      "sha256": "d335ad59f6ad453f1657f41a7923ad356d7409b6b12b598edf56664022688cc8"
+    },
+    "lib/lean/Conjectures/LonelinessLatticeCovolume.olean.private": {
+      "bytes": 125248,
+      "sha256": "813df2f24fe2630a8d9fde5e64f5b33a874e36b4c8437f6e3c169671d719b563"
+    },
+    "lib/lean/Conjectures/LonelinessLatticeCovolume.olean.server": {
+      "bytes": 2600,
+      "sha256": "dc7b9d7177391104537692e9c4faf9734434496cdc78c85c1bf4c12b56ad844e"
+    },
+    "lib/lean/Conjectures/LonelinessNearestPlane.olean": {
+      "bytes": 434232,
+      "sha256": "02d0094cfc3f1aa6bf56f78bc560f71bfd6c0168d5570ef2d2d96d97baa98567"
+    },
+    "lib/lean/Conjectures/LonelinessPrimitiveBasis.olean": {
+      "bytes": 201768,
+      "sha256": "68ca11c84bf1d18ad62f80c550b9e10f2fb91782acf85ac8ee320d91e78bb455"
+    },
+    "lib/lean/Conjectures/LonelinessRationalLatticeCore.olean": {
+      "bytes": 637760,
+      "sha256": "76724b2a6993900cdc4ee15a3c0619587944193c845acbf4f36595a8c9218787"
+    },
+    "lib/lean/Conjectures/LonelinessRationalLatticeIndex.olean": {
+      "bytes": 217008,
+      "sha256": "72b7ace1492d649cedfaadf42a21fd26e99e3d86d386bbec6f1d6461ecc24d8a"
+    },
+    "lib/lean/Conjectures/LonelinessRationalLatticeQuotient.olean": {
+      "bytes": 259576,
+      "sha256": "13d5e5911ec9af0d745959a0d23a5dd0b55bc2f81b566f0b4167f3df2a68805b"
+    },
+    "lib/lean/Conjectures/LonelinessRationalSubspace.olean": {
+      "bytes": 356936,
+      "sha256": "22c8979317e1d9f98f8f1e57a4957fdf6833d4c1e68990d408340e963ced9540"
+    },
+    "lib/lean/Conjectures/LonelinessRectangularLattice.olean": {
+      "bytes": 814784,
+      "sha256": "bc657988be1b7880043f4e7fb21415969db3b187314a466a07ebc6c4b062ca7f"
+    },
+    "lib/lean/Conjectures/LonelinessSubspaceDensity.olean": {
+      "bytes": 349664,
+      "sha256": "a53656c78de877401c21b5e42b38cd6c506ed14b6ea08b6e7284acca97b0f603"
+    },
+    "logs/Conjectures.Loneliness.kernel.log": {
+      "bytes": 33,
+      "sha256": "381ad3ff638b4f35804e7c2a204a14a82ab29219cf5cc060d045acc27b90eb28"
+    },
+    "logs/Conjectures.Loneliness.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessCoalescence.kernel.log": {
+      "bytes": 44,
+      "sha256": "a20f74731976f0d06df173b5572beb5929a6444aa54b86e3c12eeae125fcb82e"
+    },
+    "logs/Conjectures.LonelinessCoalescence.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessContinuity.kernel.log": {
+      "bytes": 43,
+      "sha256": "7264f9eab09c0ab1a3907cf0cde588559b77d6c9ad68cc93e6cd9fbb7deef86e"
+    },
+    "logs/Conjectures.LonelinessContinuity.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessCoordinateClasses.kernel.log": {
+      "bytes": 50,
+      "sha256": "77199b6ba099d1d47a3d12edcce867d3d3894deb6bcf25778c347f7dc37eac34"
+    },
+    "logs/Conjectures.LonelinessCoordinateClasses.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessCoordinateSubspace.kernel.log": {
+      "bytes": 51,
+      "sha256": "316ac14d44fe8e0f38f787b88688622f3f07305b4bcb8175d62cd7a2e30bfa89"
+    },
+    "logs/Conjectures.LonelinessCoordinateSubspace.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessCriticalBase.kernel.log": {
+      "bytes": 45,
+      "sha256": "0006fcc9df8f4040810ba1a8383d1636b283327a300f369e1dca3274ff0cebf2"
+    },
+    "logs/Conjectures.LonelinessCriticalBase.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessFiveFamily.kernel.log": {
+      "bytes": 43,
+      "sha256": "34a6f139b5b00907c71526d36b276ce6e9488a877c161d45ff5ec4260b65e3e2"
+    },
+    "logs/Conjectures.LonelinessFiveFamily.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessHyperplaneArithmetic.kernel.log": {
+      "bytes": 53,
+      "sha256": "f061f2731e3773208d8ee0d550c6b5f45d8e6c111d37217c1365ae3fbec9b095"
+    },
+    "logs/Conjectures.LonelinessHyperplaneArithmetic.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessIntegerDirection.kernel.log": {
+      "bytes": 49,
+      "sha256": "28b0971cd5687f1c31db064c0008ef0d356f684b5a88bdef89454808a9df1d0f"
+    },
+    "logs/Conjectures.LonelinessIntegerDirection.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessKZBasisGram.kernel.log": {
+      "bytes": 44,
+      "sha256": "66191853346122c3072056dee3c2c98a0265f2c4ea279dd78d87440759759126"
+    },
+    "logs/Conjectures.LonelinessKZBasisGram.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessKZBasisVectors.kernel.log": {
+      "bytes": 47,
+      "sha256": "f42c5b5f6b1ea0efce9e8472d70f2a74c562dca1e3e2112d1dfee1df9b34587e"
+    },
+    "logs/Conjectures.LonelinessKZBasisVectors.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessLatticeCovolume.kernel.log": {
+      "bytes": 48,
+      "sha256": "8dbdcccb1c267854ff9f6c66306a57e49dc5cc25da494dc26ee5437ce2b573a5"
+    },
+    "logs/Conjectures.LonelinessLatticeCovolume.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessNearestPlane.kernel.log": {
+      "bytes": 45,
+      "sha256": "0bea0dc6be518207e836ff0582c948bc001d8142813e4c7b5cfc05e063a63f9f"
+    },
+    "logs/Conjectures.LonelinessNearestPlane.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessPrimitiveBasis.kernel.log": {
+      "bytes": 47,
+      "sha256": "174b85711e66b6cdc79b8cba25ac6f67407aff449b36d2f84cb08e7abac5fd69"
+    },
+    "logs/Conjectures.LonelinessPrimitiveBasis.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessRationalLatticeCore.kernel.log": {
+      "bytes": 52,
+      "sha256": "0e721781cd3fe50eab80efe69b8318d873b4bea1ab2e27af64715d5cc5435f86"
+    },
+    "logs/Conjectures.LonelinessRationalLatticeCore.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessRationalLatticeIndex.kernel.log": {
+      "bytes": 53,
+      "sha256": "5846d196c757729c8109c7e97947f8f4acc5e3300cb3896ee2de3e72f7e40332"
+    },
+    "logs/Conjectures.LonelinessRationalLatticeIndex.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessRationalLatticeQuotient.kernel.log": {
+      "bytes": 56,
+      "sha256": "571dba30327aa40d2bbc768f89b5744c5a49c2d3e34138d67cebe283de26fac8"
+    },
+    "logs/Conjectures.LonelinessRationalLatticeQuotient.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessRationalSubspace.kernel.log": {
+      "bytes": 49,
+      "sha256": "f065daae188d67a83632b686914ad6cda8907a064822ec7956168fe5e991c69c"
+    },
+    "logs/Conjectures.LonelinessRationalSubspace.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessRectangularLattice.kernel.log": {
+      "bytes": 51,
+      "sha256": "20be339d77a9eb5592a4ad8a9a21bf069ec3579060f8d54a7911c50943fb8338"
+    },
+    "logs/Conjectures.LonelinessRectangularLattice.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/Conjectures.LonelinessSubspaceDensity.kernel.log": {
+      "bytes": 48,
+      "sha256": "92764656e41481a798fc728a27450c4bef1773ce1a4ad8ba60fcd5aa69af6144"
+    },
+    "logs/Conjectures.LonelinessSubspaceDensity.source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/all-owned-audit.log": {
+      "bytes": 153858,
+      "sha256": "19022195be4b3fe359b2e9b673ff4917d33a88be9cd82cede902238363bd2328"
+    },
+    "progress/Conjectures.Loneliness.kernel.json": {
+      "bytes": 532,
+      "sha256": "3b0b4df5b10fccfcb3e89ed08652f43a8bfc6918325b056dba2cd53bb2a0b8a5"
+    },
+    "progress/Conjectures.Loneliness.source.json": {
+      "bytes": 692,
+      "sha256": "935ad02038a335eb8ac24e4f522bcf21e90a76ec04e4bc53a492df7145250182"
+    },
+    "progress/Conjectures.LonelinessCoalescence.kernel.json": {
+      "bytes": 564,
+      "sha256": "aeaa7f1211ad9b0a7e8f1033c19e37aa36c560e3b63777a6d9386afa923a7bc0"
+    },
+    "progress/Conjectures.LonelinessCoalescence.source.json": {
+      "bytes": 725,
+      "sha256": "d5d04b6374e421143cc5a6b6eded94c3a848bf3838e08b35fe92731c2b411fac"
+    },
+    "progress/Conjectures.LonelinessContinuity.kernel.json": {
+      "bytes": 562,
+      "sha256": "2622d3d3b6e96580d9acb2ff0ce1f4f30114d37def2a60a13905a8358d78e886"
+    },
+    "progress/Conjectures.LonelinessContinuity.source.json": {
+      "bytes": 722,
+      "sha256": "7ce0340892aa2bb998c043b8da53d03027a60930c43cc37c14013fcd47d9edbd"
+    },
+    "progress/Conjectures.LonelinessCoordinateClasses.kernel.json": {
+      "bytes": 576,
+      "sha256": "45799e9155b4f66d47f7df46598e7a0c9ac0acee78cdc0f2a0f34963dafc464b"
+    },
+    "progress/Conjectures.LonelinessCoordinateClasses.source.json": {
+      "bytes": 753,
+      "sha256": "ca71d897f29cebc850aebd199adc689a26b260704c6fe2ed8c6449e70f00cb17"
+    },
+    "progress/Conjectures.LonelinessCoordinateSubspace.kernel.json": {
+      "bytes": 568,
+      "sha256": "0cec92c18b0b12261d61914c8ebbe4ffa158e0920e36794a2227fd13734e91bf"
+    },
+    "progress/Conjectures.LonelinessCoordinateSubspace.source.json": {
+      "bytes": 746,
+      "sha256": "2a240abcf68ae1af25c0856392c12bc65b32ff6a5ca63ebbfb00891fc9df18c7"
+    },
+    "progress/Conjectures.LonelinessCriticalBase.kernel.json": {
+      "bytes": 576,
+      "sha256": "c09481f13a19521dfd9f441e072d819356b6a9629e6ffc1c19a2a70648c4ca87"
+    },
+    "progress/Conjectures.LonelinessCriticalBase.source.json": {
+      "bytes": 728,
+      "sha256": "bdac4ef1f1e5c699ac8a0cb68b55cbd5c25cefd1493ac0f134583bfe6ee35bfa"
+    },
+    "progress/Conjectures.LonelinessFiveFamily.kernel.json": {
+      "bytes": 552,
+      "sha256": "8446658305bc3d7fca45c9c3f62b832cfd1593113b212c6ae956adc7771df88e"
+    },
+    "progress/Conjectures.LonelinessFiveFamily.source.json": {
+      "bytes": 722,
+      "sha256": "0c33a27877617a40782c301a17cd80eb6b09dfbf8fc855a9b493261968172f86"
+    },
+    "progress/Conjectures.LonelinessHyperplaneArithmetic.kernel.json": {
+      "bytes": 572,
+      "sha256": "cba7fb2a48485f84d621bc6fcf34c307a2e83f3e52dbc8c14955111cba4e5eb8"
+    },
+    "progress/Conjectures.LonelinessHyperplaneArithmetic.source.json": {
+      "bytes": 762,
+      "sha256": "ffd27a00b7463a395d7e1dc5e8b735a08725a9cfb43e0901c839876562ff04d9"
+    },
+    "progress/Conjectures.LonelinessIntegerDirection.kernel.json": {
+      "bytes": 564,
+      "sha256": "792a8755a73e00e6457c5624f1a2432b4cce999f789539dd4bdccbc69c6e016f"
+    },
+    "progress/Conjectures.LonelinessIntegerDirection.source.json": {
+      "bytes": 738,
+      "sha256": "093ad38084820a974c0760add66049ceabe85bef1fd17a0d85cd7b3db3150568"
+    },
+    "progress/Conjectures.LonelinessKZBasisGram.kernel.json": {
+      "bytes": 564,
+      "sha256": "a602224fefe619e304e4ca5e6e4dd9fae6a75550c10ac82f7a1dbd9ac45b9d2e"
+    },
+    "progress/Conjectures.LonelinessKZBasisGram.source.json": {
+      "bytes": 724,
+      "sha256": "cb1009d84ff38d5daedbc8b3ca4d01e567a60ebc092e95e51b0cc38a72b0d9bf"
+    },
+    "progress/Conjectures.LonelinessKZBasisVectors.kernel.json": {
+      "bytes": 560,
+      "sha256": "abd5efc7500553bcff90bd9192336ebce2ea121ddc16c3290989a01ec4f49840"
+    },
+    "progress/Conjectures.LonelinessKZBasisVectors.source.json": {
+      "bytes": 734,
+      "sha256": "1263d8b98851cd4fd817cb56d13e5807e9b95670152902bcd709f8f14934cca7"
+    },
+    "progress/Conjectures.LonelinessLatticeCovolume.kernel.json": {
+      "bytes": 562,
+      "sha256": "c27018d5e5be58744ff6fc332884eefdf2d1d38227ff7e8eff716aacfa4dc9ab"
+    },
+    "progress/Conjectures.LonelinessLatticeCovolume.source.json": {
+      "bytes": 737,
+      "sha256": "5fb221791208084e4b3b83dd252e8396deff2919d349fd8173f694314fef2db0"
+    },
+    "progress/Conjectures.LonelinessNearestPlane.kernel.json": {
+      "bytes": 556,
+      "sha256": "23b090032d0a305b27c5eb9a45b3db099e99dc05902bb54b56b40c8a7d087071"
+    },
+    "progress/Conjectures.LonelinessNearestPlane.source.json": {
+      "bytes": 728,
+      "sha256": "16851416de159516296ec484b2ebbb31ab4f260ed5532649ddf944275ea28a34"
+    },
+    "progress/Conjectures.LonelinessPrimitiveBasis.kernel.json": {
+      "bytes": 570,
+      "sha256": "b6c5258047d9e753869d6dc5dd4e7fa51cd999a615397832e9702112b1c505a3"
+    },
+    "progress/Conjectures.LonelinessPrimitiveBasis.source.json": {
+      "bytes": 734,
+      "sha256": "4ea8930568a427b04ee10d4e6d910eee0312886116a7fc10465302e8864cf2d3"
+    },
+    "progress/Conjectures.LonelinessRationalLatticeCore.kernel.json": {
+      "bytes": 580,
+      "sha256": "3065b7a8f07094b73d1157c07a923ce053d4dd99c26d33eda8c2d13b79c38237"
+    },
+    "progress/Conjectures.LonelinessRationalLatticeCore.source.json": {
+      "bytes": 759,
+      "sha256": "aad32c4125cccd2c5ce2ea8b6a70d2b249ef5ad4a06999351194ed995a1136ff"
+    },
+    "progress/Conjectures.LonelinessRationalLatticeIndex.kernel.json": {
+      "bytes": 572,
+      "sha256": "ef3e2566884507d661d0945509b32e2746cfdc175e2371d11db670a263618722"
+    },
+    "progress/Conjectures.LonelinessRationalLatticeIndex.source.json": {
+      "bytes": 754,
+      "sha256": "1096c8cfb762bcf8b293439eb5f57cd9d10b2e6f12a40401c75be593da2a304c"
+    },
+    "progress/Conjectures.LonelinessRationalLatticeQuotient.kernel.json": {
+      "bytes": 578,
+      "sha256": "e2e8a379d37d4d24d1a278acc337c2268bcfba2292e41508048e83239fb6d20b"
+    },
+    "progress/Conjectures.LonelinessRationalLatticeQuotient.source.json": {
+      "bytes": 761,
+      "sha256": "1711061ce8f1ef136cbe666d010e1a527d08f84181f9ed2338e8897744e63daa"
+    },
+    "progress/Conjectures.LonelinessRationalSubspace.kernel.json": {
+      "bytes": 584,
+      "sha256": "2d307e0e58bb46d008354380942e72b9a81fa8727a32c1b4f8802e32080b624d"
+    },
+    "progress/Conjectures.LonelinessRationalSubspace.source.json": {
+      "bytes": 740,
+      "sha256": "c8430637c6f7d1f3fa0ea6850c34a61b62f02570fb985e3f17c1f3febbfbf027"
+    },
+    "progress/Conjectures.LonelinessRectangularLattice.kernel.json": {
+      "bytes": 568,
+      "sha256": "f941b5f273305d75a8a7c91498096a471e737cd9693b5332c902971ab1af061d"
+    },
+    "progress/Conjectures.LonelinessRectangularLattice.source.json": {
+      "bytes": 767,
+      "sha256": "137e6180433e1b879b6e618d737c5f38fa843543c8464c4ec764d0b644f6909e"
+    },
+    "progress/Conjectures.LonelinessSubspaceDensity.kernel.json": {
+      "bytes": 562,
+      "sha256": "30becd5b121baaa10e32917486ba5813f423037ec0c15a338b257fa074afc994"
+    },
+    "progress/Conjectures.LonelinessSubspaceDensity.source.json": {
+      "bytes": 737,
+      "sha256": "c531e07c6f1bfc4d179d35d3da76cf129434ac84040f564061d0148aa715fbf3"
+    },
+    "progress/all-owned-audit.json": {
+      "bytes": 535,
+      "sha256": "12a2b606aafd51257f2608e0cdf4426369adddc05ebb078624d0d4d6f11120b2"
+    },
+    "receipt.json": {
+      "bytes": 48581,
+      "sha256": "62b4ab2b3b0dcdaa55b210e5de3e8322e7e6b57201b05e085983d8ff0882afa2"
+    },
+    "src/Conjectures/Loneliness.lean": {
+      "bytes": 9269,
+      "sha256": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce"
+    },
+    "src/Conjectures/LonelinessCoalescence.lean": {
+      "bytes": 7809,
+      "sha256": "5518fdfed0369763c2ba701272edb25fbaafde2d230c869f4412f2c441ef9d1d"
+    },
+    "src/Conjectures/LonelinessContinuity.lean": {
+      "bytes": 2411,
+      "sha256": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae"
+    },
+    "src/Conjectures/LonelinessCoordinateClasses.lean": {
+      "bytes": 8431,
+      "sha256": "0075b701fd3fa51feef62f59850dfaa3dfece95e3287d51a7afb438a76691b63"
+    },
+    "src/Conjectures/LonelinessCoordinateSubspace.lean": {
+      "bytes": 3249,
+      "sha256": "a6a58ef2dfb5262e43641aae3e18c9d7ddcc8163aebad18cf6eb2416ae46bfea"
+    },
+    "src/Conjectures/LonelinessCriticalBase.lean": {
+      "bytes": 7215,
+      "sha256": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24"
+    },
+    "src/Conjectures/LonelinessFiveFamily.lean": {
+      "bytes": 5823,
+      "sha256": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96"
+    },
+    "src/Conjectures/LonelinessHyperplaneArithmetic.lean": {
+      "bytes": 4906,
+      "sha256": "53178525bbbd49c19fa9dd1046f39681841319ef0dae8ac2a77216b34bee5ffa"
+    },
+    "src/Conjectures/LonelinessIntegerDirection.lean": {
+      "bytes": 2798,
+      "sha256": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6"
+    },
+    "src/Conjectures/LonelinessKZBasisGram.lean": {
+      "bytes": 7598,
+      "sha256": "cbedf5849f99a461e39f8cde2ddb9ffa8b734d0b2deca865451aab49ca50dd0c"
+    },
+    "src/Conjectures/LonelinessKZBasisVectors.lean": {
+      "bytes": 4471,
+      "sha256": "c15824ec759e83dce78210732dcc0405d2d02c992bde00fb2e9ac8fd8053c305"
+    },
+    "src/Conjectures/LonelinessLatticeCovolume.lean": {
+      "bytes": 3380,
+      "sha256": "b2438d082556ea4765f385c74c195e458976559d1a94f3f2e09d10a08ddeaf4a"
+    },
+    "src/Conjectures/LonelinessNearestPlane.lean": {
+      "bytes": 7220,
+      "sha256": "7ecb53d6a8c77fb9d06accde929d834d0eb4e26fbccd3ce01c8d4c0cef4bc8b9"
+    },
+    "src/Conjectures/LonelinessPrimitiveBasis.lean": {
+      "bytes": 2743,
+      "sha256": "a2a3c31eed4b428f7ff38323dffb0ea3d25d41579da43e4601c2a727a93490ec"
+    },
+    "src/Conjectures/LonelinessRationalLatticeCore.lean": {
+      "bytes": 13361,
+      "sha256": "363343b7eed15394d37f6eade27ce3dd9c85a6b73b4ac857528559237ac38a6d"
+    },
+    "src/Conjectures/LonelinessRationalLatticeIndex.lean": {
+      "bytes": 4377,
+      "sha256": "223b9ba75a489d57540d3d092e2aac51769d56d26473c83722ec652b11bd3c68"
+    },
+    "src/Conjectures/LonelinessRationalLatticeQuotient.lean": {
+      "bytes": 5904,
+      "sha256": "76744d2def6891b0d7e7bd1dda82e3efc09fa6cca1afebaa3dc5fad057659ab0"
+    },
+    "src/Conjectures/LonelinessRationalSubspace.lean": {
+      "bytes": 6495,
+      "sha256": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88"
+    },
+    "src/Conjectures/LonelinessRectangularLattice.lean": {
+      "bytes": 10598,
+      "sha256": "8cbc83f677d2d1ef72563beed05128d3fffd9cb76248422d09f5215212620174"
+    },
+    "src/Conjectures/LonelinessSubspaceDensity.lean": {
+      "bytes": 8192,
+      "sha256": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f"
+    },
+    "src/RationalLatticeQuotientAudit.lean": {
+      "bytes": 7373,
+      "sha256": "cf783a53cf8319e6eae6702487a0226442b4e1433921599ee186b3673f5e4cab"
+    }
+  }
+}

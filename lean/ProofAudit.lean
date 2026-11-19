@@ -9559,7 +9559,12 @@ run_cmd do
     `LiNegativeCoefficient.five_coefficients,
     `LiNegativeCoefficient.three_variable_negative_coefficient,
     `LiWeighted.weightedHomogeneous_of_aeval,
-    `LiWeighted.weightedHomogeneous_symm]
+    `LiWeighted.weightedHomogeneous_symm,
+    `Loneliness.RationalLatticeQuotient.basisMatrix_mul_coordinateMatrix,
+    `Loneliness.RationalLatticeQuotient.gram_det_eq_coordinate_factor,
+    `Loneliness.RationalLatticeQuotient.quotient_card_eq_natAbs_det,
+    `Loneliness.RationalLatticeQuotient.quotient_card_pos,
+    `Loneliness.RationalLatticeQuotient.gram_det_eq_quotient_card_sq_mul_covolume_sq]
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]

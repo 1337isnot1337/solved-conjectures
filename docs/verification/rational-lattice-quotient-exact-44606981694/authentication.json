@@ -1,0 +1,63 @@
+{
+  "accepted_registry_changed_by_review": false,
+  "all_frozen_source_and_control_bytes_match_published_commit": true,
+  "api_metadata_sha256": {
+    "artifacts.json": "35cd18d8a8413471f8b7ad8a659f703eb63d65e0f384f1a1b61ed69eddb475ca",
+    "job.json": "cd2be17b525923953edac3233fc530418bab5071c9db5e45e29f2f07b43bfcf0",
+    "run.json": "be81845c332a2aa84694a3e6791f4e3abc3240c7438e760356512b5558c425e9"
+  },
+  "archive_bytes": 3016101,
+  "archive_sha256": "99d96ef788f06fa92832024b2506cd76f1dbfec4276013a71cd1bf009394cd70",
+  "artifact_id": 14569528998,
+  "artifact_name": "rational-lattice-quotient-quotient",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 446,
+    "modules": 20,
+    "private_declarations": 12,
+    "raw_declarations": 446,
+    "required": 5,
+    "tag": "passed",
+    "theorems": 352
+  },
+  "authenticated_at_utc": "2026-11-19T20:25:23.645286+00:00",
+  "authenticator_sha256": "d9cbcf8f8ce14d172d6d45a046a32ec4fc6584eb7479005a5013c24a96d2898c",
+  "axiom_whitelist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "candidate_control_review_sha256": "fccd8148f7253148f9b7426d1376fa75a003bd8144bfa77a451b54dfe59fc5ad",
+  "conclusion": "complete_exact_component_gate_passed_and_artifact_authenticated",
+  "exact_stock_replay_targets": 20,
+  "full_review_sha256": "8d468d092fef20b69fe6f24756f0ccc241e7495f3a4fdd05b821dbdc63698b08",
+  "head_sha": "a8577e5da31b851ce64333aa921b39c6623e0389",
+  "job_conclusion": "success",
+  "job_id": 135853171450,
+  "job_log_final_summary_matches_receipt": true,
+  "job_log_sha256": "cfe4bda7eeae0826b932a1d8fd507a9d509aaf90b5a642733cdf9a579468f119",
+  "job_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44606981694/job/135853171450",
+  "kind": "quotient",
+  "project_modules": 20,
+  "receipt_sha256": "62b4ab2b3b0dcdaa55b210e5de3e8322e7e6b57201b05e085983d8ff0882afa2",
+  "registration_condition": "Regenerate and review the guarded registration against fresh main with unchanged checked source/control inputs and preserve this exact evidence. A merged-package gate remains separate.",
+  "repository": "1337isnot1337/solved-conjectures",
+  "required_endpoints_are_theorems": true,
+  "required_theorems": 5,
+  "run_conclusion": "success",
+  "run_id": 44606981694,
+  "run_status": "completed",
+  "run_url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44606981694",
+  "schema": "assigned-hosted-complete-authentication-v1",
+  "scope_limit": "The actual integer-column span is a submodule of the full integer-point lattice. A full-lattice basis converts columns to an integer square coordinate matrix. A positive Gram determinant proves the coordinate determinant nonzero. The actual quotient cardinality equals its absolute determinant by Mathlib Submodule.natAbs_det_basis_change; squared determinant transports the Gram identity to the actual full-lattice covolume. No saturation or quotient-index identity is assumed. Finrank, containment and positive Gram determinant remain explicit where needed.",
+  "source_policy": {
+    "fresh_project_objects": true,
+    "linter_override": false,
+    "warning_as_error": true
+  },
+  "workflow": ".github/workflows/lean-rational-lattice-quotient-exact.yml"
+}

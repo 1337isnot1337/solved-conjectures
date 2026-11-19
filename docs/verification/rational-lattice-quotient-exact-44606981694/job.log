@@ -1,0 +1,515 @@
+﻿2026-11-19T20:16:37.1458650Z Current runner version: '2.338.2'
+2026-11-19T20:16:37.1475960Z ##[group]Runner Image Provisioner
+2026-11-19T20:16:37.1476601Z Hosted Compute Agent
+2026-11-19T20:16:37.1477002Z Version: 20261103.629
+2026-11-19T20:16:37.1477499Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T20:16:37.1478072Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T20:16:37.1478568Z Worker ID: {a89a6c98-87c0-4a98-9a34-81769179771b}
+2026-11-19T20:16:37.1479070Z Region: us-west-2
+2026-11-19T20:16:37.1479450Z Cloud: AWS
+2026-11-19T20:16:37.1479843Z ##[endgroup]
+2026-11-19T20:16:37.1480702Z ##[group]Operating System
+2026-11-19T20:16:37.1481477Z Ubuntu
+2026-11-19T20:16:37.1481865Z 26.04.1
+2026-11-19T20:16:37.1482227Z LTS
+2026-11-19T20:16:37.1482649Z ##[endgroup]
+2026-11-19T20:16:37.1483032Z ##[group]Runner Image
+2026-11-19T20:16:37.1483745Z Image: ubuntu-26.04
+2026-11-19T20:16:37.1484157Z Version: 20261111.82.6
+2026-11-19T20:16:37.1485056Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.82/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-19T20:16:37.1486151Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.82
+2026-11-19T20:16:37.1486826Z ##[endgroup]
+2026-11-19T20:16:37.1487601Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T20:16:37.1489188Z Contents: read
+2026-11-19T20:16:37.1489602Z Metadata: read
+2026-11-19T20:16:37.1490011Z ##[endgroup]
+2026-11-19T20:16:37.1491822Z Secret source: Actions
+2026-11-19T20:16:37.1492480Z Cache mode: write
+2026-11-19T20:16:37.1493030Z Prepare workflow directory
+2026-11-19T20:16:37.1722556Z Prepare all required actions
+2026-11-19T20:16:37.1758268Z Getting action download info
+2026-11-19T20:16:37.5324256Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-19T20:16:40.1967474Z Download action repository 'leanprover/lean-action@v1' (SHA:ba3fdfe5c4476c925da13bf11a005ddb47e47aee)
+2026-11-19T20:16:40.4056231Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-19T20:16:40.7591899Z Getting action download info
+2026-11-19T20:16:40.9057108Z Download action repository 'actions/cache@caa296126883cff596d87d8935842f9db880ef25' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-11-19T20:16:41.2002504Z Complete job name: verify
+2026-11-19T20:16:41.2717292Z ##[group]Run actions/checkout@v4
+2026-11-19T20:16:41.2718316Z with:
+2026-11-19T20:16:41.2719063Z   persist-credentials: false
+2026-11-19T20:16:41.2719959Z   repository: 1337isnot1337/solved-conjectures
+2026-11-19T20:16:41.2726398Z   token: ***
+2026-11-19T20:16:41.2727208Z   ssh-strict: true
+2026-11-19T20:16:41.2727932Z   ssh-user: git
+2026-11-19T20:16:41.2728620Z   clean: true
+2026-11-19T20:16:41.2729371Z   sparse-checkout-cone-mode: true
+2026-11-19T20:16:41.2730227Z   fetch-depth: 1
+2026-11-19T20:16:41.2731122Z   fetch-tags: false
+2026-11-19T20:16:41.2731864Z   show-progress: true
+2026-11-19T20:16:41.2732591Z   lfs: false
+2026-11-19T20:16:41.2733283Z   submodules: false
+2026-11-19T20:16:41.2734062Z   set-safe-directory: true
+2026-11-19T20:16:41.2734893Z   allow-unsafe-pr-checkout: false
+2026-11-19T20:16:41.2735926Z ##[endgroup]
+2026-11-19T20:16:45.2931202Z Syncing repository: 1337isnot1337/solved-conjectures
+2026-11-19T20:16:45.2932628Z ##[group]Getting Git version info
+2026-11-19T20:16:45.2933165Z Working directory is '/home/runner/work/solved-conjectures/solved-conjectures'
+2026-11-19T20:16:45.2934031Z [command]/usr/bin/git version
+2026-11-19T20:16:45.2944261Z git version 2.56.1
+2026-11-19T20:16:45.2957071Z ##[endgroup]
+2026-11-19T20:16:45.2967548Z Temporarily overriding HOME='/home/runner/work/_temp/7890e98d-6610-452e-a44e-4a368c4b297d' before making global git config changes
+2026-11-19T20:16:45.2968546Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T20:16:45.2971477Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T20:16:45.3068080Z Deleting the contents of '/home/runner/work/solved-conjectures/solved-conjectures'
+2026-11-19T20:16:45.3075381Z ##[group]Initializing the repository
+2026-11-19T20:16:45.3079373Z [command]/usr/bin/git init /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T20:16:45.3555114Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T20:16:45.3555734Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T20:16:45.3556352Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T20:16:45.3556770Z hint: call:
+2026-11-19T20:16:45.3557045Z hint:
+2026-11-19T20:16:45.3557381Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T20:16:45.3557690Z hint:
+2026-11-19T20:16:45.3558048Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T20:16:45.3558758Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T20:16:45.3559340Z hint:
+2026-11-19T20:16:45.3559707Z hint: 	git branch -m <name>
+2026-11-19T20:16:45.3560121Z hint:
+2026-11-19T20:16:45.3560599Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T20:16:45.3583915Z Initialized empty Git repository in /home/runner/work/solved-conjectures/solved-conjectures/.git/
+2026-11-19T20:16:45.3592366Z [command]/usr/bin/git remote add origin https://github.com/1337isnot1337/solved-conjectures
+2026-11-19T20:16:45.3662203Z ##[endgroup]
+2026-11-19T20:16:45.3662905Z ##[group]Disabling automatic garbage collection
+2026-11-19T20:16:45.3664079Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-19T20:16:45.3695022Z ##[endgroup]
+2026-11-19T20:16:45.3695457Z ##[group]Setting up auth
+2026-11-19T20:16:45.3695877Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T20:16:45.3710715Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T20:16:45.7829650Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T20:16:45.7856310Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T20:16:45.8028851Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T20:16:45.8050295Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T20:16:45.8221232Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T20:16:45.8244991Z ##[endgroup]
+2026-11-19T20:16:45.8245533Z ##[group]Fetching the repository
+2026-11-19T20:16:45.8250440Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a8577e5da31b851ce64333aa921b39c6623e0389:refs/remotes/origin/main
+2026-11-19T20:16:50.5307150Z From https://github.com/1337isnot1337/solved-conjectures
+2026-11-19T20:16:50.5307918Z  * [new ref]         a8577e5da31b851ce64333aa921b39c6623e0389 -> origin/main
+2026-11-19T20:16:50.5310452Z ##[endgroup]
+2026-11-19T20:16:50.5311149Z ##[group]Determining the checkout info
+2026-11-19T20:16:50.5314074Z ##[endgroup]
+2026-11-19T20:16:50.5318076Z [command]/usr/bin/git sparse-checkout disable
+2026-11-19T20:16:50.5382393Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-19T20:16:50.5397486Z ##[group]Checking out the ref
+2026-11-19T20:16:50.5410173Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-19T20:16:51.5543582Z Switched to a new branch 'main'
+2026-11-19T20:16:51.5550378Z branch 'main' set up to track 'origin/main'.
+2026-11-19T20:16:51.5589018Z ##[endgroup]
+2026-11-19T20:16:51.5648048Z [command]/usr/bin/git log -1 --format=%H
+2026-11-19T20:16:51.5667172Z a8577e5da31b851ce64333aa921b39c6623e0389
+2026-11-19T20:16:51.5675026Z ##[group]Removing auth
+2026-11-19T20:16:51.5678901Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T20:16:51.5708731Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T20:16:51.5907247Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T20:16:51.5923768Z http.https://github.com/.extraheader
+2026-11-19T20:16:51.5927729Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-19T20:16:51.5950342Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T20:16:51.6134798Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T20:16:51.6154415Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T20:16:51.6331601Z ##[endgroup]
+2026-11-19T20:16:51.6489676Z ##[group]Run python3 -m py_compile scripts/verify_rational_lattice_quotient_exact.py
+2026-11-19T20:16:51.6490267Z [36;1mpython3 -m py_compile scripts/verify_rational_lattice_quotient_exact.py[0m
+2026-11-19T20:16:51.6490731Z [36;1mpython3 scripts/verify_rational_lattice_quotient_exact.py quotient --plan[0m
+2026-11-19T20:16:51.6513415Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:16:51.6513681Z ##[endgroup]
+2026-11-19T20:16:51.7784255Z {
+2026-11-19T20:16:51.7784734Z   "modules": [
+2026-11-19T20:16:51.7785011Z     "Conjectures.Loneliness",
+2026-11-19T20:16:51.7785297Z     "Conjectures.LonelinessCoalescence",
+2026-11-19T20:16:51.7785603Z     "Conjectures.LonelinessNearestPlane",
+2026-11-19T20:16:51.7785895Z     "Conjectures.LonelinessKZBasisVectors",
+2026-11-19T20:16:51.7786260Z     "Conjectures.LonelinessLatticeCovolume",
+2026-11-19T20:16:51.7786576Z     "Conjectures.LonelinessContinuity",
+2026-11-19T20:16:51.7786856Z     "Conjectures.LonelinessFiveFamily",
+2026-11-19T20:16:51.7787289Z     "Conjectures.LonelinessCoordinateSubspace",
+2026-11-19T20:16:51.7787813Z     "Conjectures.LonelinessKZBasisGram",
+2026-11-19T20:16:51.7788116Z     "Conjectures.LonelinessCriticalBase",
+2026-11-19T20:16:51.7788467Z     "Conjectures.LonelinessCoordinateClasses",
+2026-11-19T20:16:51.7788768Z     "Conjectures.LonelinessSubspaceDensity",
+2026-11-19T20:16:51.7789118Z     "Conjectures.LonelinessIntegerDirection",
+2026-11-19T20:16:51.7789433Z     "Conjectures.LonelinessHyperplaneArithmetic",
+2026-11-19T20:16:51.7789760Z     "Conjectures.LonelinessRationalSubspace",
+2026-11-19T20:16:51.7790072Z     "Conjectures.LonelinessPrimitiveBasis",
+2026-11-19T20:16:51.7790381Z     "Conjectures.LonelinessRationalLatticeCore",
+2026-11-19T20:16:51.7790744Z     "Conjectures.LonelinessRectangularLattice",
+2026-11-19T20:16:51.7791371Z     "Conjectures.LonelinessRationalLatticeIndex",
+2026-11-19T20:16:51.7791705Z     "Conjectures.LonelinessRationalLatticeQuotient"
+2026-11-19T20:16:51.7791999Z   ],
+2026-11-19T20:16:51.7792211Z   "required": [
+2026-11-19T20:16:51.7792545Z     "Loneliness.RationalLatticeQuotient.basisMatrix_mul_coordinateMatrix",
+2026-11-19T20:16:51.7792978Z     "Loneliness.RationalLatticeQuotient.gram_det_eq_coordinate_factor",
+2026-11-19T20:16:51.7793402Z     "Loneliness.RationalLatticeQuotient.quotient_card_eq_natAbs_det",
+2026-11-19T20:16:51.7793809Z     "Loneliness.RationalLatticeQuotient.quotient_card_pos",
+2026-11-19T20:16:51.7794219Z     "Loneliness.RationalLatticeQuotient.gram_det_eq_quotient_card_sq_mul_covolume_sq"
+2026-11-19T20:16:51.7794612Z   ],
+2026-11-19T20:16:51.7794823Z   "modern": {
+2026-11-19T20:16:51.7795033Z     "Conjectures.Loneliness": false,
+2026-11-19T20:16:51.7795340Z     "Conjectures.LonelinessCoalescence": false,
+2026-11-19T20:16:51.7795858Z     "Conjectures.LonelinessNearestPlane": false,
+2026-11-19T20:16:51.7796173Z     "Conjectures.LonelinessKZBasisVectors": false,
+2026-11-19T20:16:51.7796520Z     "Conjectures.LonelinessLatticeCovolume": true,
+2026-11-19T20:16:51.7796830Z     "Conjectures.LonelinessContinuity": false,
+2026-11-19T20:16:51.7797142Z     "Conjectures.LonelinessFiveFamily": false,
+2026-11-19T20:16:51.7797495Z     "Conjectures.LonelinessCoordinateSubspace": false,
+2026-11-19T20:16:51.7797816Z     "Conjectures.LonelinessKZBasisGram": false,
+2026-11-19T20:16:51.7798187Z     "Conjectures.LonelinessCriticalBase": false,
+2026-11-19T20:16:51.7798510Z     "Conjectures.LonelinessCoordinateClasses": false,
+2026-11-19T20:16:51.7798850Z     "Conjectures.LonelinessSubspaceDensity": false,
+2026-11-19T20:16:51.7799172Z     "Conjectures.LonelinessIntegerDirection": false,
+2026-11-19T20:16:51.7799505Z     "Conjectures.LonelinessHyperplaneArithmetic": false,
+2026-11-19T20:16:51.7799879Z     "Conjectures.LonelinessRationalSubspace": false,
+2026-11-19T20:16:51.7800229Z     "Conjectures.LonelinessPrimitiveBasis": false,
+2026-11-19T20:16:51.7800563Z     "Conjectures.LonelinessRationalLatticeCore": false,
+2026-11-19T20:16:51.7800900Z     "Conjectures.LonelinessRectangularLattice": false,
+2026-11-19T20:16:51.7801522Z     "Conjectures.LonelinessRationalLatticeIndex": false,
+2026-11-19T20:16:51.7801918Z     "Conjectures.LonelinessRationalLatticeQuotient": false
+2026-11-19T20:16:51.7802209Z   },
+2026-11-19T20:16:51.7802410Z   "source_policy": {
+2026-11-19T20:16:51.7802650Z     "fresh_project_objects": true,
+2026-11-19T20:16:51.7802906Z     "linter_override": false,
+2026-11-19T20:16:51.7803197Z     "warning_as_error": true
+2026-11-19T20:16:51.7803427Z   }
+2026-11-19T20:16:51.7803621Z }
+2026-11-19T20:16:51.8154756Z ##[warning]Unexpected input(s) 'check-lean-environment', valid inputs are ['auto-config', 'build', 'test', 'lint', 'mk_all-check', 'mk_all-args', 'build-args', 'test-args', 'lint-args', 'use-mathlib-cache', 'check-reservoir-eligibility', 'leanchecker', 'leanchecker-args', 'lean4checker', 'nanoda', 'nanoda-allow-sorry', 'axiom-audit', 'axiom-audit-allow', 'axiom-audit-root', 'use-github-cache', 'lake-package-directory', 'reinstall-transient-toolchain']
+2026-11-19T20:16:51.8166659Z ##[group]Run leanprover/lean-action@v1
+2026-11-19T20:16:51.8166930Z with:
+2026-11-19T20:16:51.8167181Z   lake-package-directory: lean
+2026-11-19T20:16:51.8167434Z   auto-config: false
+2026-11-19T20:16:51.8167663Z   use-mathlib-cache: true
+2026-11-19T20:16:51.8167995Z   build: false
+2026-11-19T20:16:51.8168210Z   test: false
+2026-11-19T20:16:51.8168464Z   lint: false
+2026-11-19T20:16:51.8168686Z   check-lean-environment: false
+2026-11-19T20:16:51.8168931Z   mk_all-check: false
+2026-11-19T20:16:51.8169276Z   check-reservoir-eligibility: false
+2026-11-19T20:16:51.8169535Z   leanchecker: false
+2026-11-19T20:16:51.8169762Z   lean4checker: false
+2026-11-19T20:16:51.8169977Z   nanoda: false
+2026-11-19T20:16:51.8170252Z   nanoda-allow-sorry: true
+2026-11-19T20:16:51.8170490Z   axiom-audit: false
+2026-11-19T20:16:51.8170757Z   axiom-audit-allow: propext,Classical.choice,Quot.sound
+2026-11-19T20:16:51.8171333Z   use-github-cache: true
+2026-11-19T20:16:51.8171582Z   reinstall-transient-toolchain: false
+2026-11-19T20:16:51.8171871Z ##[endgroup]
+2026-11-19T20:16:51.8228571Z ##[start-action display=install elan;id=__leanprover_lean-action.__run]
+2026-11-19T20:16:51.8253329Z ##[group]Run : Install Elan
+2026-11-19T20:16:51.8253605Z [36;1m: Install Elan[0m
+2026-11-19T20:16:51.8253890Z [36;1m${GITHUB_ACTION_PATH}/scripts/install_elan.sh[0m
+2026-11-19T20:16:51.8272949Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T20:16:51.8273283Z ##[endgroup]
+2026-11-19T20:16:51.8339240Z ##[group]Elan Installation Output
+2026-11-19T20:16:51.9546918Z info: downloading installer
+2026-11-19T20:16:52.5873336Z info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+2026-11-19T20:16:56.9012233Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+2026-11-19T20:17:03.3844498Z Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+2026-11-19T20:17:03.4194293Z Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+2026-11-19T20:17:03.4195537Z ##[endgroup]
+2026-11-19T20:17:03.4195728Z 
+2026-11-19T20:17:03.4212310Z ##[end-action id=__leanprover_lean-action.__run;outcome=success;conclusion=success;duration_ms=11598]
+2026-11-19T20:17:03.4215381Z ##[start-action display=Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25;id=__leanprover_lean-action.cache-restore]
+2026-11-19T20:17:03.5991358Z ##[group]Run actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25
+2026-11-19T20:17:03.5991753Z with:
+2026-11-19T20:17:03.5991994Z   path: lean/.lake
+2026-11-19T20:17:03.5992732Z   key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-a8577e5da31b851ce64333aa921b39c6623e0389
+2026-11-19T20:17:03.5994071Z   restore-keys: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07
+2026-11-19T20:17:03.5994667Z   enableCrossOsArchive: false
+2026-11-19T20:17:03.5994951Z   fail-on-cache-miss: false
+2026-11-19T20:17:03.5995233Z   lookup-only: false
+2026-11-19T20:17:03.5995456Z ##[endgroup]
+2026-11-19T20:17:04.0017274Z Cache hit for restore-key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-7b309c9580c25457ffe1d32a691997d14f7da313
+2026-11-19T20:17:05.3487769Z Received 0 of 2103388534 (0.0%), 0.0 MBs/sec
+2026-11-19T20:17:06.3487550Z Received 75497472 of 2103388534 (3.6%), 36.0 MBs/sec
+2026-11-19T20:17:07.3487414Z Received 134217728 of 2103388534 (6.4%), 42.7 MBs/sec
+2026-11-19T20:17:08.3494840Z Received 226492416 of 2103388534 (10.8%), 54.0 MBs/sec
+2026-11-19T20:17:09.3499833Z Received 297795584 of 2103388534 (14.2%), 56.8 MBs/sec
+2026-11-19T20:17:10.3552187Z Received 390070272 of 2103388534 (18.5%), 62.0 MBs/sec
+2026-11-19T20:17:11.3507109Z Received 452984832 of 2103388534 (21.5%), 61.7 MBs/sec
+2026-11-19T20:17:12.3508709Z Received 532676608 of 2103388534 (25.3%), 63.5 MBs/sec
+2026-11-19T20:17:13.3557518Z Received 599785472 of 2103388534 (28.5%), 63.5 MBs/sec
+2026-11-19T20:17:14.3554172Z Received 666894336 of 2103388534 (31.7%), 63.6 MBs/sec
+2026-11-19T20:17:15.3560507Z Received 725614592 of 2103388534 (34.5%), 62.9 MBs/sec
+2026-11-19T20:17:16.3560105Z Received 801112064 of 2103388534 (38.1%), 63.6 MBs/sec
+2026-11-19T20:17:17.3602705Z Received 851443712 of 2103388534 (40.5%), 62.4 MBs/sec
+2026-11-19T20:17:18.3562619Z Received 914358272 of 2103388534 (43.5%), 62.3 MBs/sec
+2026-11-19T20:17:19.3569375Z Received 956301312 of 2103388534 (45.5%), 60.8 MBs/sec
+2026-11-19T20:17:20.3562703Z Received 1015021568 of 2103388534 (48.3%), 60.5 MBs/sec
+2026-11-19T20:17:21.3570256Z Received 1061158912 of 2103388534 (50.4%), 59.5 MBs/sec
+2026-11-19T20:17:22.3573224Z Received 1103101952 of 2103388534 (52.4%), 58.4 MBs/sec
+2026-11-19T20:17:23.3580392Z Received 1161822208 of 2103388534 (55.2%), 58.3 MBs/sec
+2026-11-19T20:17:24.3587091Z Received 1207959552 of 2103388534 (57.4%), 57.6 MBs/sec
+2026-11-19T20:17:25.3592814Z Received 1233125376 of 2103388534 (58.6%), 56.0 MBs/sec
+2026-11-19T20:17:26.3606098Z Received 1279262720 of 2103388534 (60.8%), 55.4 MBs/sec
+2026-11-19T20:17:27.3605128Z Received 1329594368 of 2103388534 (63.2%), 55.1 MBs/sec
+2026-11-19T20:17:28.3611082Z Received 1350565888 of 2103388534 (64.2%), 53.6 MBs/sec
+2026-11-19T20:17:29.3616333Z Received 1400897536 of 2103388534 (66.6%), 53.4 MBs/sec
+2026-11-19T20:17:30.3619673Z Received 1447034880 of 2103388534 (68.8%), 53.1 MBs/sec
+2026-11-19T20:17:31.3629767Z Received 1472200704 of 2103388534 (70.0%), 52.0 MBs/sec
+2026-11-19T20:17:32.3643590Z Received 1501560832 of 2103388534 (71.4%), 51.1 MBs/sec
+2026-11-19T20:17:33.3651410Z Received 1543503872 of 2103388534 (73.4%), 50.7 MBs/sec
+2026-11-19T20:17:34.3655594Z Received 1581252608 of 2103388534 (75.2%), 50.2 MBs/sec
+2026-11-19T20:17:35.3656946Z Received 1610612736 of 2103388534 (76.6%), 49.5 MBs/sec
+2026-11-19T20:17:36.3660323Z Received 1635778560 of 2103388534 (77.8%), 48.7 MBs/sec
+2026-11-19T20:17:37.3671154Z Received 1681915904 of 2103388534 (80.0%), 48.6 MBs/sec
+2026-11-19T20:17:38.3683509Z Received 1728053248 of 2103388534 (82.2%), 48.4 MBs/sec
+2026-11-19T20:17:39.3684792Z Received 1749024768 of 2103388534 (83.2%), 47.6 MBs/sec
+2026-11-19T20:17:40.3692658Z Received 1799356416 of 2103388534 (85.5%), 47.6 MBs/sec
+2026-11-19T20:17:41.3694330Z Received 1849688064 of 2103388534 (87.9%), 47.6 MBs/sec
+2026-11-19T20:17:42.3696622Z Received 1879048192 of 2103388534 (89.3%), 47.1 MBs/sec
+2026-11-19T20:17:43.3698110Z Received 1925185536 of 2103388534 (91.5%), 47.1 MBs/sec
+2026-11-19T20:17:44.3710517Z Received 1988100096 of 2103388534 (94.5%), 47.4 MBs/sec
+2026-11-19T20:17:45.3718278Z Received 2013265920 of 2103388534 (95.7%), 46.8 MBs/sec
+2026-11-19T20:17:46.3724376Z Received 2071986176 of 2103388534 (98.5%), 47.0 MBs/sec
+2026-11-19T20:17:47.3729865Z Received 2099194230 of 2103388534 (99.8%), 46.5 MBs/sec
+2026-11-19T20:17:47.7328209Z Received 2103388534 of 2103388534 (100.0%), 46.2 MBs/sec
+2026-11-19T20:17:47.7330828Z Cache Size: ~2006 MB (2103388534 B)
+2026-11-19T20:17:47.7439633Z [command]/usr/bin/tar -xf /home/runner/work/_temp/f84952a5-36cd-49ad-ab2c-a2a31c72b8a8/cache.tzst -P -C /home/runner/work/solved-conjectures/solved-conjectures --use-compress-program unzstd
+2026-11-19T20:18:18.3046263Z Cache restored successfully
+2026-11-19T20:18:18.7958868Z Cache restored from key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-7b309c9580c25457ffe1d32a691997d14f7da313
+2026-11-19T20:18:18.8105497Z ##[end-action id=__leanprover_lean-action.cache-restore;outcome=success;conclusion=success;duration_ms=75388]
+2026-11-19T20:18:18.8115938Z ##[start-action display=configure `lean-action`;id=__leanprover_lean-action.config]
+2026-11-19T20:18:18.8165530Z ##[group]Run : Configure Lean Action
+2026-11-19T20:18:18.8165903Z [36;1m: Configure Lean Action[0m
+2026-11-19T20:18:18.8166180Z [36;1m${GITHUB_ACTION_PATH}/scripts/config.sh[0m
+2026-11-19T20:18:18.8185822Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T20:18:18.8186193Z env:
+2026-11-19T20:18:18.8186456Z   AUTO_CONFIG: false
+2026-11-19T20:18:18.8186688Z   BUILD: false
+2026-11-19T20:18:18.8186919Z   TEST: false
+2026-11-19T20:18:18.8187125Z   LINT: false
+2026-11-19T20:18:18.8187365Z ##[endgroup]
+2026-11-19T20:18:18.8267137Z ##[group]Configure lean-action
+2026-11-19T20:18:18.8315824Z ##[end-action id=__leanprover_lean-action.config;outcome=success;conclusion=success;duration_ms=19]
+2026-11-19T20:18:18.8317894Z ##[start-action display=reinstall transient toolchain;id=__leanprover_lean-action.__run_2]
+2026-11-19T20:18:18.8323678Z ##[end-action id=__leanprover_lean-action.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T20:18:18.8326204Z ##[start-action display=ensure all files are imported;id=__leanprover_lean-action.mk_all]
+2026-11-19T20:18:18.8330089Z ##[end-action id=__leanprover_lean-action.mk_all;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T20:18:18.8331988Z ##[start-action display=detect mathlib;id=__leanprover_lean-action.detect-mathlib]
+2026-11-19T20:18:18.8335492Z ##[end-action id=__leanprover_lean-action.detect-mathlib;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T20:18:18.8337051Z ##[start-action display=get mathlib cache;id=__leanprover_lean-action.__run_3]
+2026-11-19T20:18:18.8375852Z ##[group]Run : Get Mathlib Cache
+2026-11-19T20:18:18.8376177Z [36;1m: Get Mathlib Cache[0m
+2026-11-19T20:18:18.8376455Z [36;1mecho "::group::Mathlib Cache"[0m
+2026-11-19T20:18:18.8376809Z [36;1m# Use cache.mathlib.org unless the workflow sets `MATHLIB_CACHE_GET_URL`.[0m
+2026-11-19T20:18:18.8377258Z [36;1m# The cache client reads an empty value as a URL, so unset it to get the client's default.[0m
+2026-11-19T20:18:18.8377864Z [36;1mif [ -z "${MATHLIB_CACHE_GET_URL+x}" ]; then[0m
+2026-11-19T20:18:18.8378254Z [36;1m  export MATHLIB_CACHE_GET_URL="https://cache.mathlib.org/mathlib4"[0m
+2026-11-19T20:18:18.8378621Z [36;1melif [ -z "$MATHLIB_CACHE_GET_URL" ]; then[0m
+2026-11-19T20:18:18.8378923Z [36;1m  unset MATHLIB_CACHE_GET_URL[0m
+2026-11-19T20:18:18.8379165Z [36;1mfi[0m
+2026-11-19T20:18:18.8379385Z [36;1mlake exe cache get[0m
+2026-11-19T20:18:18.8379645Z [36;1mecho "::endgroup::"[0m
+2026-11-19T20:18:18.8379906Z [36;1mecho[0m
+2026-11-19T20:18:18.8396159Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T20:18:18.8396493Z ##[endgroup]
+2026-11-19T20:18:18.8426060Z ##[group]Mathlib Cache
+2026-11-19T20:18:21.5144362Z Current branch: HEAD
+2026-11-19T20:18:21.5144860Z Using cache from origin: (some leanprover-community/mathlib4)
+2026-11-19T20:18:21.5145626Z Attempting to download 9031 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4
+2026-11-19T20:18:21.6216888Z 
+2026-11-19T20:18:21.7238178Z Downloaded: 1 file(s) [attempted 1/9031 = 0%, 154 KB/s]
+2026-11-19T20:18:21.8237009Z Downloaded: 81 file(s) [attempted 81/9031 = 0%, 46 KB/s]
+2026-11-19T20:18:21.9237524Z Downloaded: 203 file(s) [attempted 203/9031 = 2%, 305 KB/s]
+2026-11-19T20:18:22.0434327Z Downloaded: 359 file(s) [attempted 359/9031 = 3%, 1205 KB/s]
+2026-11-19T20:18:22.1453551Z Downloaded: 495 file(s) [attempted 495/9031 = 5%, 517 KB/s]
+2026-11-19T20:18:22.2492189Z Downloaded: 640 file(s) [attempted 640/9031 = 7%, 117 KB/s]
+2026-11-19T20:18:22.3486509Z Downloaded: 792 file(s) [attempted 792/9031 = 8%, 1462 KB/s]
+2026-11-19T20:18:22.4502853Z Downloaded: 938 file(s) [attempted 938/9031 = 10%, 988 KB/s]
+2026-11-19T20:18:22.5496817Z Downloaded: 1090 file(s) [attempted 1090/9031 = 12%, 719 KB/s]
+2026-11-19T20:18:22.6513102Z Downloaded: 1197 file(s) [attempted 1197/9031 = 13%, 759 KB/s]
+2026-11-19T20:18:22.7506436Z Downloaded: 1277 file(s) [attempted 1277/9031 = 14%, 901 KB/s]
+2026-11-19T20:18:22.8509284Z Downloaded: 1390 file(s) [attempted 1390/9031 = 15%, 571 KB/s]
+2026-11-19T20:18:22.9504200Z Downloaded: 1545 file(s) [attempted 1545/9031 = 17%, 817 KB/s]
+2026-11-19T20:18:23.0513176Z Downloaded: 1697 file(s) [attempted 1697/9031 = 18%, 1892 KB/s]
+2026-11-19T20:18:23.1524494Z Downloaded: 1847 file(s) [attempted 1847/9031 = 20%, 440 KB/s]
+2026-11-19T20:18:23.2523408Z Downloaded: 2004 file(s) [attempted 2004/9031 = 22%, 1865 KB/s]
+2026-11-19T20:18:23.3536008Z Downloaded: 2150 file(s) [attempted 2150/9031 = 23%, 3449 KB/s]
+2026-11-19T20:18:23.4535844Z Downloaded: 2313 file(s) [attempted 2313/9031 = 25%, 3961 KB/s]
+2026-11-19T20:18:23.5613076Z Downloaded: 2475 file(s) [attempted 2475/9031 = 27%, 1250 KB/s]
+2026-11-19T20:18:23.6616573Z Downloaded: 2585 file(s) [attempted 2585/9031 = 28%, 2949 KB/s]
+2026-11-19T20:18:23.7615083Z Downloaded: 2738 file(s) [attempted 2738/9031 = 30%, 1146 KB/s]
+2026-11-19T20:18:23.8623808Z Downloaded: 2920 file(s) [attempted 2920/9031 = 32%, 575 KB/s]
+2026-11-19T20:18:23.9626865Z Downloaded: 3005 file(s) [attempted 3005/9031 = 33%, 206 KB/s]
+2026-11-19T20:18:24.0672847Z Downloaded: 3169 file(s) [attempted 3169/9031 = 35%, 3757 KB/s]
+2026-11-19T20:18:24.1719242Z Downloaded: 3321 file(s) [attempted 3321/9031 = 36%, 747 KB/s]
+2026-11-19T20:18:24.2706232Z Downloaded: 3462 file(s) [attempted 3462/9031 = 38%, 363 KB/s]
+2026-11-19T20:18:24.3707175Z Downloaded: 3611 file(s) [attempted 3611/9031 = 39%, 1985 KB/s]
+2026-11-19T20:18:24.4758459Z Downloaded: 3763 file(s) [attempted 3763/9031 = 41%, 93 KB/s]
+2026-11-19T20:18:24.5760323Z Downloaded: 3866 file(s) [attempted 3866/9031 = 42%, 1105 KB/s]
+2026-11-19T20:18:24.6753680Z Downloaded: 3993 file(s) [attempted 3993/9031 = 44%, 983 KB/s]
+2026-11-19T20:18:24.7779236Z Downloaded: 4157 file(s) [attempted 4157/9031 = 46%, 340 KB/s]
+2026-11-19T20:18:24.8822565Z Downloaded: 4316 file(s) [attempted 4316/9031 = 47%, 1124 KB/s]
+2026-11-19T20:18:24.9840395Z Downloaded: 4479 file(s) [attempted 4479/9031 = 49%, 1593 KB/s]
+2026-11-19T20:18:25.0851326Z Downloaded: 4632 file(s) [attempted 4632/9031 = 51%, 217 KB/s]
+2026-11-19T20:18:25.1847264Z Downloaded: 4795 file(s) [attempted 4795/9031 = 53%, 2869 KB/s]
+2026-11-19T20:18:25.2868332Z Downloaded: 4955 file(s) [attempted 4955/9031 = 54%, 2098 KB/s]
+2026-11-19T20:18:25.3863795Z Downloaded: 5102 file(s) [attempted 5102/9031 = 56%, 592 KB/s]
+2026-11-19T20:18:25.4881453Z Downloaded: 5187 file(s) [attempted 5187/9031 = 57%, 540 KB/s]
+2026-11-19T20:18:25.5874149Z Downloaded: 5340 file(s) [attempted 5340/9031 = 59%, 1074 KB/s]
+2026-11-19T20:18:25.6933258Z Downloaded: 5501 file(s) [attempted 5501/9031 = 60%, 1739 KB/s]
+2026-11-19T20:18:25.7936779Z Downloaded: 5661 file(s) [attempted 5661/9031 = 62%, 1873 KB/s]
+2026-11-19T20:18:25.8939762Z Downloaded: 5834 file(s) [attempted 5834/9031 = 64%, 3555 KB/s]
+2026-11-19T20:18:25.9958969Z Downloaded: 5995 file(s) [attempted 5995/9031 = 66%, 695 KB/s]
+2026-11-19T20:18:26.1010208Z Downloaded: 6150 file(s) [attempted 6150/9031 = 68%, 267 KB/s]
+2026-11-19T20:18:26.2003682Z Downloaded: 6334 file(s) [attempted 6334/9031 = 70%, 323 KB/s]
+2026-11-19T20:18:26.3029507Z Downloaded: 6465 file(s) [attempted 6465/9031 = 71%, 262 KB/s]
+2026-11-19T20:18:26.4024374Z Downloaded: 6563 file(s) [attempted 6563/9031 = 72%, 391 KB/s]
+2026-11-19T20:18:26.5041798Z Downloaded: 6726 file(s) [attempted 6726/9031 = 74%, 1440 KB/s]
+2026-11-19T20:18:26.6042193Z Downloaded: 6883 file(s) [attempted 6883/9031 = 76%, 305 KB/s]
+2026-11-19T20:18:26.7033686Z Downloaded: 7063 file(s) [attempted 7063/9031 = 78%, 508 KB/s]
+2026-11-19T20:18:26.8033802Z Downloaded: 7216 file(s) [attempted 7216/9031 = 79%, 432 KB/s]
+2026-11-19T20:18:26.9050517Z Downloaded: 7391 file(s) [attempted 7391/9031 = 81%, 837 KB/s]
+2026-11-19T20:18:27.0044292Z Downloaded: 7557 file(s) [attempted 7557/9031 = 83%, 1025 KB/s]
+2026-11-19T20:18:27.1047885Z Downloaded: 7705 file(s) [attempted 7705/9031 = 85%, 904 KB/s]
+2026-11-19T20:18:27.2053037Z Downloaded: 7811 file(s) [attempted 7811/9031 = 86%, 61 KB/s]
+2026-11-19T20:18:27.3054817Z Downloaded: 7968 file(s) [attempted 7968/9031 = 88%, 408 KB/s]
+2026-11-19T20:18:27.4074098Z Downloaded: 8127 file(s) [attempted 8127/9031 = 89%, 1087 KB/s]
+2026-11-19T20:18:27.5085402Z Downloaded: 8286 file(s) [attempted 8286/9031 = 91%, 808 KB/s]
+2026-11-19T20:18:27.6083983Z Downloaded: 8457 file(s) [attempted 8457/9031 = 93%, 2135 KB/s]
+2026-11-19T20:18:27.7084615Z Downloaded: 8621 file(s) [attempted 8621/9031 = 95%, 391 KB/s]
+2026-11-19T20:18:27.8143928Z Downloaded: 8782 file(s) [attempted 8782/9031 = 97%, 2297 KB/s]
+2026-11-19T20:18:27.8783831Z Downloaded: 8946 file(s) [attempted 8946/9031 = 99%, 1679 KB/s]
+2026-11-19T20:18:27.8784520Z Downloaded: 9031 file(s) [attempted 9031/9031 = 100%, 1679 KB/s]
+2026-11-19T20:18:27.8805510Z Still decompressing downloaded files...
+2026-11-19T20:18:28.2299473Z Decompressed 9031 file(s)
+2026-11-19T20:18:28.2300560Z Already decompressed 9031 file(s)
+2026-11-19T20:18:28.2537281Z ##[endgroup]
+2026-11-19T20:18:28.2537584Z 
+2026-11-19T20:18:28.2543898Z ##[end-action id=__leanprover_lean-action.__run_3;outcome=success;conclusion=success;duration_ms=9420]
+2026-11-19T20:18:28.2556340Z ##[start-action display=build 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.build]
+2026-11-19T20:18:28.2561869Z ##[end-action id=__leanprover_lean-action.build;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T20:18:28.2564775Z ##[start-action display=test 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.test]
+2026-11-19T20:18:28.2568960Z ##[end-action id=__leanprover_lean-action.test;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T20:18:28.2571286Z ##[start-action display=lint 1337isnot1337/solved-conjectures;id=__leanprover_lean-action.lint]
+2026-11-19T20:18:28.2575508Z ##[end-action id=__leanprover_lean-action.lint;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T20:18:28.2577388Z ##[start-action display=Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25;id=__leanprover_lean-action.__actions_cache]
+2026-11-19T20:18:28.3457991Z ##[group]Run actions/cache/save@caa296126883cff596d87d8935842f9db880ef25
+2026-11-19T20:18:28.3458339Z with:
+2026-11-19T20:18:28.3458554Z   path: lean/.lake
+2026-11-19T20:18:28.3459262Z   key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-a8577e5da31b851ce64333aa921b39c6623e0389
+2026-11-19T20:18:28.3460010Z   enableCrossOsArchive: false
+2026-11-19T20:18:28.3460261Z ##[endgroup]
+2026-11-19T20:18:28.4486184Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/solved-conjectures/solved-conjectures --files-from manifest.txt --use-compress-program zstdmt
+2026-11-19T20:18:44.4519623Z Sent 0 of 2102609283 (0.0%), 0.0 MBs/sec
+2026-11-19T20:18:45.4543551Z Sent 0 of 2102609283 (0.0%), 0.0 MBs/sec
+2026-11-19T20:18:46.4537549Z Sent 469762048 of 2102609283 (22.3%), 149.2 MBs/sec
+2026-11-19T20:18:47.4591991Z Sent 872415232 of 2102609283 (41.5%), 207.7 MBs/sec
+2026-11-19T20:18:48.4575701Z Sent 939524096 of 2102609283 (44.7%), 179.0 MBs/sec
+2026-11-19T20:18:49.4582779Z Sent 1275068416 of 2102609283 (60.6%), 202.5 MBs/sec
+2026-11-19T20:18:50.4576474Z Sent 1476395008 of 2102609283 (70.2%), 201.0 MBs/sec
+2026-11-19T20:18:51.4613469Z Sent 1610612736 of 2102609283 (76.6%), 191.8 MBs/sec
+2026-11-19T20:18:52.4587312Z Sent 1699956099 of 2102609283 (80.8%), 180.0 MBs/sec
+2026-11-19T20:18:53.4585774Z Sent 1901282691 of 2102609283 (90.4%), 181.2 MBs/sec
+2026-11-19T20:18:54.4592634Z Sent 1901282691 of 2102609283 (90.4%), 164.7 MBs/sec
+2026-11-19T20:18:55.4597506Z Sent 1901282691 of 2102609283 (90.4%), 151.0 MBs/sec
+2026-11-19T20:18:56.4597672Z Sent 1901282691 of 2102609283 (90.4%), 139.4 MBs/sec
+2026-11-19T20:18:57.4601796Z Sent 1968391555 of 2102609283 (93.6%), 134.0 MBs/sec
+2026-11-19T20:18:58.4605197Z Sent 1968391555 of 2102609283 (93.6%), 125.1 MBs/sec
+2026-11-19T20:18:59.4626173Z Sent 2035500419 of 2102609283 (96.8%), 121.2 MBs/sec
+2026-11-19T20:18:59.5685381Z Sent 2102609283 of 2102609283 (100.0%), 124.4 MBs/sec
+2026-11-19T20:18:59.9565109Z Cache saved with key: lake-Linux-X64-4aaebf30ba9ac013c0c8d1ccc97c59cbb1914eb62107eed7805a02da8a0a6902-7fbbaa348a59d5cf4b5e5c08ed5ecf3fc083054b94e5caffa58a898678fd4b07-a8577e5da31b851ce64333aa921b39c6623e0389
+2026-11-19T20:18:59.9644868Z ##[end-action id=__leanprover_lean-action.__actions_cache;outcome=success;conclusion=success;duration_ms=31706]
+2026-11-19T20:18:59.9647652Z ##[start-action display=check reservoir eligibility;id=__leanprover_lean-action.__run_4]
+2026-11-19T20:18:59.9652989Z ##[end-action id=__leanprover_lean-action.__run_4;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T20:18:59.9655572Z ##[start-action display=check environment with leanchecker;id=__leanprover_lean-action.__run_5]
+2026-11-19T20:18:59.9660404Z ##[end-action id=__leanprover_lean-action.__run_5;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T20:18:59.9662727Z ##[start-action display=check environment with nanoda;id=__leanprover_lean-action.nanoda]
+2026-11-19T20:18:59.9666056Z ##[end-action id=__leanprover_lean-action.nanoda;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T20:18:59.9668040Z ##[start-action display=audit axioms with axiom-audit;id=__leanprover_lean-action.axiom-audit]
+2026-11-19T20:18:59.9671842Z ##[end-action id=__leanprover_lean-action.axiom-audit;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T20:18:59.9740378Z ##[group]Run python3 scripts/verify_rational_lattice_quotient_exact.py quotient
+2026-11-19T20:18:59.9741152Z [36;1mpython3 scripts/verify_rational_lattice_quotient_exact.py quotient[0m
+2026-11-19T20:18:59.9829150Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:18:59.9829630Z env:
+2026-11-19T20:18:59.9829861Z   LEAN_NUM_THREADS: 1
+2026-11-19T20:18:59.9830091Z   UV_USE_IO_URING: 0
+2026-11-19T20:18:59.9830401Z ##[endgroup]
+2026-11-19T20:19:02.1516257Z {"phase": "Conjectures.Loneliness.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 1921044}
+2026-11-19T20:19:04.9082893Z {"phase": "Conjectures.LonelinessCoalescence.source", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2412188}
+2026-11-19T20:19:06.9143708Z {"phase": "Conjectures.LonelinessNearestPlane.source", "exit_code": 0, "seconds": 2.005, "peak_rss_kib": 2990364}
+2026-11-19T20:19:08.6688725Z {"phase": "Conjectures.LonelinessKZBasisVectors.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 2969212}
+2026-11-19T20:19:10.4236787Z {"phase": "Conjectures.LonelinessLatticeCovolume.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 2026004}
+2026-11-19T20:19:11.6775444Z {"phase": "Conjectures.LonelinessContinuity.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 2140188}
+2026-11-19T20:19:15.4372230Z {"phase": "Conjectures.LonelinessFiveFamily.source", "exit_code": 0, "seconds": 3.759, "peak_rss_kib": 1927304}
+2026-11-19T20:19:16.9414006Z {"phase": "Conjectures.LonelinessCoordinateSubspace.source", "exit_code": 0, "seconds": 1.503, "peak_rss_kib": 2382672}
+2026-11-19T20:19:19.1971413Z {"phase": "Conjectures.LonelinessKZBasisGram.source", "exit_code": 0, "seconds": 2.255, "peak_rss_kib": 3229440}
+2026-11-19T20:19:21.9540865Z {"phase": "Conjectures.LonelinessCriticalBase.source", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 1922904}
+2026-11-19T20:19:23.7087828Z {"phase": "Conjectures.LonelinessCoordinateClasses.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 2387248}
+2026-11-19T20:19:25.2131393Z {"phase": "Conjectures.LonelinessSubspaceDensity.source", "exit_code": 0, "seconds": 1.504, "peak_rss_kib": 2202468}
+2026-11-19T20:19:26.4669615Z {"phase": "Conjectures.LonelinessIntegerDirection.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 2397520}
+2026-11-19T20:19:27.7208662Z {"phase": "Conjectures.LonelinessHyperplaneArithmetic.source", "exit_code": 0, "seconds": 1.253, "peak_rss_kib": 2199524}
+2026-11-19T20:19:29.4757215Z {"phase": "Conjectures.LonelinessRationalSubspace.source", "exit_code": 0, "seconds": 1.754, "peak_rss_kib": 2415264}
+2026-11-19T20:19:30.9800615Z {"phase": "Conjectures.LonelinessPrimitiveBasis.source", "exit_code": 0, "seconds": 1.503, "peak_rss_kib": 2699324}
+2026-11-19T20:19:35.4910829Z {"phase": "Conjectures.LonelinessRationalLatticeCore.source", "exit_code": 0, "seconds": 4.51, "peak_rss_kib": 3823792}
+2026-11-19T20:19:40.7535040Z {"phase": "Conjectures.LonelinessRectangularLattice.source", "exit_code": 0, "seconds": 5.261, "peak_rss_kib": 3656572}
+2026-11-19T20:19:55.0361148Z {"phase": "Conjectures.LonelinessRationalLatticeIndex.source", "exit_code": 0, "seconds": 14.282, "peak_rss_kib": 3830080}
+2026-11-19T20:19:57.5430761Z {"phase": "Conjectures.LonelinessRationalLatticeQuotient.source", "exit_code": 0, "seconds": 2.506, "peak_rss_kib": 3831364}
+2026-11-19T20:20:03.8156082Z {"phase": "all-owned-audit", "exit_code": 0, "seconds": 6.264, "peak_rss_kib": 3850480}
+2026-11-19T20:20:06.3262737Z {"phase": "Conjectures.Loneliness.kernel", "exit_code": 0, "seconds": 2.506, "peak_rss_kib": 1621868}
+2026-11-19T20:20:09.0832775Z {"phase": "Conjectures.LonelinessCoalescence.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2084772}
+2026-11-19T20:20:12.0907435Z {"phase": "Conjectures.LonelinessNearestPlane.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2625616}
+2026-11-19T20:20:15.0981452Z {"phase": "Conjectures.LonelinessKZBasisVectors.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2621672}
+2026-11-19T20:20:18.1054465Z {"phase": "Conjectures.LonelinessLatticeCovolume.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 3395352}
+2026-11-19T20:20:20.6116781Z {"phase": "Conjectures.LonelinessContinuity.kernel", "exit_code": 0, "seconds": 2.505, "peak_rss_kib": 1846900}
+2026-11-19T20:20:23.1178812Z {"phase": "Conjectures.LonelinessFiveFamily.kernel", "exit_code": 0, "seconds": 2.505, "peak_rss_kib": 1628928}
+2026-11-19T20:20:25.8747941Z {"phase": "Conjectures.LonelinessCoordinateSubspace.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2079012}
+2026-11-19T20:20:28.8823642Z {"phase": "Conjectures.LonelinessKZBasisGram.kernel", "exit_code": 0, "seconds": 3.007, "peak_rss_kib": 2865296}
+2026-11-19T20:20:31.3887251Z {"phase": "Conjectures.LonelinessCriticalBase.kernel", "exit_code": 0, "seconds": 2.506, "peak_rss_kib": 1627208}
+2026-11-19T20:20:34.1460903Z {"phase": "Conjectures.LonelinessCoordinateClasses.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2075044}
+2026-11-19T20:20:36.9038200Z {"phase": "Conjectures.LonelinessSubspaceDensity.kernel", "exit_code": 0, "seconds": 2.757, "peak_rss_kib": 1897980}
+2026-11-19T20:20:39.6607315Z {"phase": "Conjectures.LonelinessIntegerDirection.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2094752}
+2026-11-19T20:20:42.1666969Z {"phase": "Conjectures.LonelinessHyperplaneArithmetic.kernel", "exit_code": 0, "seconds": 2.505, "peak_rss_kib": 1900668}
+2026-11-19T20:20:44.9236418Z {"phase": "Conjectures.LonelinessRationalSubspace.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2102324}
+2026-11-19T20:20:47.6803701Z {"phase": "Conjectures.LonelinessPrimitiveBasis.kernel", "exit_code": 0, "seconds": 2.756, "peak_rss_kib": 2369060}
+2026-11-19T20:20:51.1888747Z {"phase": "Conjectures.LonelinessRationalLatticeCore.kernel", "exit_code": 0, "seconds": 3.508, "peak_rss_kib": 3407452}
+2026-11-19T20:20:56.4510540Z {"phase": "Conjectures.LonelinessRectangularLattice.kernel", "exit_code": 0, "seconds": 5.261, "peak_rss_kib": 3274040}
+2026-11-19T20:20:59.4577419Z {"phase": "Conjectures.LonelinessRationalLatticeIndex.kernel", "exit_code": 0, "seconds": 3.006, "peak_rss_kib": 3423940}
+2026-11-19T20:21:02.7156839Z {"phase": "Conjectures.LonelinessRationalLatticeQuotient.kernel", "exit_code": 0, "seconds": 3.257, "peak_rss_kib": 3424272}
+2026-11-19T20:21:02.7264445Z {"status": "passed", "project_modules": 20, "required_theorems": 5, "audit_summary": {"allowed_axioms": ["propext", "Classical.choice", "Quot.sound"], "declarations": 446, "modules": 20, "private_declarations": 12, "raw_declarations": 446, "required": 5, "tag": "passed", "theorems": 352}, "receipt_sha256": "62b4ab2b3b0dcdaa55b210e5de3e8322e7e6b57201b05e085983d8ff0882afa2"}
+2026-11-19T20:21:02.7464164Z ##[group]Run actions/upload-artifact@v4
+2026-11-19T20:21:02.7464441Z with:
+2026-11-19T20:21:02.7464738Z   name: rational-lattice-quotient-quotient
+2026-11-19T20:21:02.7465089Z   path: .candidate-artifacts/rational-lattice-quotient-quotient/
+2026-11-19T20:21:02.7465449Z   include-hidden-files: true
+2026-11-19T20:21:02.7465738Z   retention-days: 30
+2026-11-19T20:21:02.7465971Z   if-no-files-found: error
+2026-11-19T20:21:02.7466544Z   compression-level: 6
+2026-11-19T20:21:02.7466788Z   overwrite: false
+2026-11-19T20:21:02.7467030Z ##[endgroup]
+2026-11-19T20:21:02.8706072Z (node:12261) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-19T20:21:02.8707081Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-19T20:21:02.8880116Z With the provided path, there will be 129 files uploaded
+2026-11-19T20:21:02.8880643Z Artifact name is valid!
+2026-11-19T20:21:02.8881585Z Root directory input is valid!
+2026-11-19T20:21:03.4296507Z Beginning upload of artifact content to blob storage
+2026-11-19T20:21:03.7325654Z (node:12261) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-19T20:21:04.6402035Z Uploaded bytes 3016101
+2026-11-19T20:21:04.7403937Z Finished uploading artifact content to blob storage!
+2026-11-19T20:21:04.7404869Z SHA256 digest of uploaded artifact zip is 99d96ef788f06fa92832024b2506cd76f1dbfec4276013a71cd1bf009394cd70
+2026-11-19T20:21:04.7405425Z Finalizing artifact upload
+2026-11-19T20:21:05.1546730Z Artifact rational-lattice-quotient-quotient.zip successfully finalized. Artifact ID 14569528998
+2026-11-19T20:21:05.1547432Z Artifact rational-lattice-quotient-quotient has been successfully uploaded! Final size is 3016101 bytes. Artifact ID is 14569528998
+2026-11-19T20:21:05.1551178Z Artifact download URL: https://github.com/1337isnot1337/solved-conjectures/actions/runs/44606981694/artifacts/14569528998
+2026-11-19T20:21:05.1844169Z Post job cleanup.
+2026-11-19T20:21:05.2495359Z [command]/usr/bin/git version
+2026-11-19T20:21:05.2522637Z git version 2.56.1
+2026-11-19T20:21:05.2544995Z Temporarily overriding HOME='/home/runner/work/_temp/118bc01c-83e9-4f02-936a-2590c58a199d' before making global git config changes
+2026-11-19T20:21:05.2545896Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T20:21:05.2548341Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solved-conjectures/solved-conjectures
+2026-11-19T20:21:05.2574984Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T20:21:05.2597788Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T20:21:05.2832521Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T20:21:05.2853900Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T20:21:05.3047505Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T20:21:05.3068696Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T20:21:05.3356257Z Cleaning up orphan processes
+2026-11-19T20:21:05.3668798Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -1,0 +1,82 @@
+name: Lean actual lattice quotient index
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/verify_rational_lattice_quotient_exact.py'
+      - '.github/workflows/lean-rational-lattice-quotient-exact.yml'
+      - 'docs/rational-lattice-quotient-exact-sources.json'
+      - 'lean/Conjectures/Loneliness.lean'
+      - 'lean/Conjectures/LonelinessCoalescence.lean'
+      - 'lean/Conjectures/LonelinessContinuity.lean'
+      - 'lean/Conjectures/LonelinessCoordinateClasses.lean'
+      - 'lean/Conjectures/LonelinessCoordinateSubspace.lean'
+      - 'lean/Conjectures/LonelinessCriticalBase.lean'
+      - 'lean/Conjectures/LonelinessFiveFamily.lean'
+      - 'lean/Conjectures/LonelinessHyperplaneArithmetic.lean'
+      - 'lean/Conjectures/LonelinessIntegerDirection.lean'
+      - 'lean/Conjectures/LonelinessKZBasisGram.lean'
+      - 'lean/Conjectures/LonelinessKZBasisVectors.lean'
+      - 'lean/Conjectures/LonelinessLatticeCovolume.lean'
+      - 'lean/Conjectures/LonelinessNearestPlane.lean'
+      - 'lean/Conjectures/LonelinessPrimitiveBasis.lean'
+      - 'lean/Conjectures/LonelinessRationalLatticeCore.lean'
+      - 'lean/Conjectures/LonelinessRationalLatticeIndex.lean'
+      - 'lean/Conjectures/LonelinessRationalLatticeQuotient.lean'
+      - 'lean/Conjectures/LonelinessRationalSubspace.lean'
+      - 'lean/Conjectures/LonelinessRectangularLattice.lean'
+      - 'lean/Conjectures/LonelinessSubspaceDensity.lean'
+      - 'scripts/audit_lean_all_owned.py'
+      - 'scripts/build_lean_parallel.py'
+      - 'scripts/plan_accepted_lean.py'
+      - 'scripts/plan_lean_candidates.py'
+      - 'scripts/replay_lean.py'
+      - 'scripts/verify_frankl_orbit_batches.py'
+      - 'scripts/verify_lean_candidate.py'
+      - 'lean/lake-manifest.json'
+      - 'lean/lakefile.toml'
+      - 'lean/lean-toolchain'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-rational-lattice-quotient-exact-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate exact source and control inventory
+        run: |
+          python3 -m py_compile scripts/verify_rational_lattice_quotient_exact.py
+          python3 scripts/verify_rational_lattice_quotient_exact.py quotient --plan
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Fresh strict sources, all-owned audit and exact stock replay
+        env:
+          LEAN_NUM_THREADS: 1
+          UV_USE_IO_URING: 0
+        run: python3 scripts/verify_rational_lattice_quotient_exact.py quotient
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rational-lattice-quotient-quotient
+          path: .candidate-artifacts/rational-lattice-quotient-quotient/
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error

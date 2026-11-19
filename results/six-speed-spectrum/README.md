@@ -98,3 +98,11 @@ The three new six-speed lattice norm bounds supply the proved four-speed runner 
 The new endpoints end in `_of_plane_gap`. They remove the explicit `hfour` input and retain `hplane : SixSpectrumNormGeometry.ContainingPlaneGap v`. The old endpoints keep their original signatures. These results do not prove the containing-plane gap or complete the six-speed classification.
 
 [Exact scope and evidence](../../docs/lean-status.md#six-speed-norm-bounds-with-the-four-speed-input-discharged).
+
+### Actual rational-lattice quotient index
+
+For a rational coordinate subspace E of dimension r, let L be its actual full integer-point lattice. An integer matrix A with r columns in E and positive Gram determinant generates the sublattice M = columnSubmodule E A. Relative to an actual integer basis of L, the columns have an integer square coordinate matrix C. Lean proves that the quotient cardinality Nat.card (L ⧸ M) equals the absolute determinant of C and is positive. It then proves the exact identity det(AᵀA) = [L:M]² * covolume(L)². The containment, dimension and positive-Gram hypotheses are explicit; no saturation or quotient-index identity is assumed.
+
+This identifies the integer determinant factor in the earlier Gram/covolume comparison with the actual finite lattice quotient. It does not discharge the containing-plane gap or complete the six-speed classification. The six-speed result remains partial.
+
+[Exact scope and evidence](../../docs/lean-status.md#actual-rational-lattice-quotient-index).

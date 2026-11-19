@@ -578,3 +578,7 @@ Registered `Conjectures.LonelinessSixSpectrumLatticeNormFourSpeed` and its 3 the
 ## 2026-11-19: Seven-coordinate implications with the five-speed input discharged
 
 Registered `Conjectures.LonelinessSevenCoordinateFiveSpeed` and its 6 theorem endpoints after the complete 171-module hosted source, owned/private axiom, and stock-kernel gate passed. The result status remains partial; the retained hypotheses are stated in the status report.
+
+## 2026-11-19: Actual rational-lattice quotient index
+
+Registered `Conjectures.LonelinessRationalLatticeQuotient` and its 5 theorem endpoints after the complete 20-module hosted source, selected-declaration axiom audit with raw/private visibility, and stock-kernel gate passed. The result status remains partial; the retained hypotheses are stated in the status report.
