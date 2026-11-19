@@ -223,9 +223,12 @@ theorem exists_allSafe_of_first_two_multiples (hLRC4 : CoordinateSubspace.Lonely
     fin_cases i
     · simp at hi
     · exact hge
-    · rcases hb₂ with h | h <;> omega
-    · rcases hb₃ with h | h <;> omega
-    · rcases hb₄ with h | h <;> omega
+    · change 5 * v 2 ≤ v 0
+      rcases hb₂ with h | h <;> omega
+    · change 5 * v 3 ≤ v 0
+      rcases hb₃ with h | h <;> omega
+    · change 5 * v 4 ≤ v 0
+      rcases hb₄ with h | h <;> omega
   have h10 : v 1 < 5 * v 0 := by
     by_contra hn
     have hge : 5 * v 0 ≤ v 1 := le_of_not_gt hn
@@ -236,9 +239,12 @@ theorem exists_allSafe_of_first_two_multiples (hLRC4 : CoordinateSubspace.Lonely
     fin_cases i
     · exact hge
     · simp at hi
-    · rcases hb₂ with h | h <;> omega
-    · rcases hb₃ with h | h <;> omega
-    · rcases hb₄ with h | h <;> omega
+    · change 5 * v 2 ≤ v 1
+      rcases hb₂ with h | h <;> omega
+    · change 5 * v 3 ≤ v 1
+      rcases hb₃ with h | h <;> omega
+    · change 5 * v 4 ≤ v 1
+      rcases hb₄ with h | h <;> omega
   have finish (p q : Fin 5) (hpq : p ≠ q)
       (hpair : (6 * v p ∣ v 0 ∧ 6 * v q ∣ v 0) ∨
         (6 * v p ∣ v 1 ∧ 6 * v q ∣ v 1)) : False := by
