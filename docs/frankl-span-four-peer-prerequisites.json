@@ -1,0 +1,87 @@
+{
+  "public_reference": {
+    "main": "38e45960720e5b11362dd153b186d2331b980d47",
+    "tree": "b3e5c1e4f2215f1a0a60d11473187574abe13eeb",
+    "commit_date": "2026-11-19T08:54:08Z"
+  },
+  "scope": "Exact unchanged peer prerequisites only; preserve issue 19 ownership; no graph, rank or weight-table data added.",
+  "coordination_comments": [
+    "https://github.com/1337isnot1337/solved-conjectures/issues/19#issuecomment-7004385936",
+    "https://github.com/1337isnot1337/solved-conjectures/issues/20#issuecomment-7004386248"
+  ],
+  "sources": [
+    {
+      "module": "Conjectures.FranklCyclicCertificates",
+      "repository_path": "lean/Conjectures/FranklCyclicCertificates.lean",
+      "sha256": "99942d45ff97407638afcacf53599b8aec0a9fbc51afb94dd129a7ff5023bb56",
+      "source_last_modified_utc": "2026-11-19T07:17:29.992036+00:00",
+      "owner_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/19",
+      "source_bytes_unchanged": true
+    },
+    {
+      "module": "Conjectures.FranklCyclicGenerators",
+      "repository_path": "lean/Conjectures/FranklCyclicGenerators.lean",
+      "sha256": "42ba82bb03f90861592e81c16eeec984d988d9db13c7df0b8d1f0eefd3581b95",
+      "source_last_modified_utc": "2026-11-19T07:16:09.899735+00:00",
+      "owner_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/19",
+      "source_bytes_unchanged": true
+    },
+    {
+      "module": "Conjectures.FranklCyclicPairs",
+      "repository_path": "lean/Conjectures/FranklCyclicPairs.lean",
+      "sha256": "19dd46156e8f7d648079d86d736d899b50744fe0e061829a2ba0cdfa73d6df7d",
+      "source_last_modified_utc": "2026-11-19T07:18:44.844604+00:00",
+      "owner_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/19",
+      "source_bytes_unchanged": true
+    },
+    {
+      "module": "Conjectures.FranklCyclicRank",
+      "repository_path": "lean/Conjectures/FranklCyclicRank.lean",
+      "sha256": "633386484fa6933b1e026c93f6cb4c3eee7329b9c01a6a3a60b97d96aafa6ba1",
+      "source_last_modified_utc": "2026-11-19T07:07:47.355635+00:00",
+      "owner_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/19",
+      "source_bytes_unchanged": true
+    },
+    {
+      "module": "Conjectures.FranklCyclicRankList",
+      "repository_path": "lean/Conjectures/FranklCyclicRankList.lean",
+      "sha256": "9320756d6a08a5ee4a633178c2671607d1bbc39c644d956717a4634108a73496",
+      "source_last_modified_utc": "2026-11-19T07:12:48.945203+00:00",
+      "owner_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/19",
+      "source_bytes_unchanged": true
+    },
+    {
+      "module": "Conjectures.FranklCyclicWords",
+      "repository_path": "lean/Conjectures/FranklCyclicWords.lean",
+      "sha256": "0e4abe75198be3d16bd6a5fbb50da2e109ae8c180eb6ec9e0cec61850699184b",
+      "source_last_modified_utc": "2026-11-19T07:09:49.831650+00:00",
+      "owner_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/19",
+      "source_bytes_unchanged": true
+    },
+    {
+      "module": "Conjectures.FranklLocalEnumeration",
+      "repository_path": "lean/Conjectures/FranklLocalEnumeration.lean",
+      "sha256": "4507e0da8f018d3d9b43f20cc617bccb38020875015fb8f19b2e7b7f60d16e05",
+      "source_last_modified_utc": "2026-11-19T07:06:32.371073+00:00",
+      "owner_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/19",
+      "source_bytes_unchanged": true
+    },
+    {
+      "module": "Conjectures.FranklLocalEnumerationCore",
+      "repository_path": "lean/Conjectures/FranklLocalEnumerationCore.lean",
+      "sha256": "2efa905ba13a2a700dcf467eaf4c28a04a9599517c6b302cb1e48c2dfdc03018",
+      "source_last_modified_utc": "2026-11-19T07:15:35.714263+00:00",
+      "owner_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/19",
+      "source_bytes_unchanged": true
+    },
+    {
+      "module": "Conjectures.FranklLocalEnumerationMap",
+      "repository_path": "lean/Conjectures/FranklLocalEnumerationMap.lean",
+      "sha256": "5345dbed171e4a2b7888ab9e6a28bc8ef4008bc5b0dbc7afa393a0e0a5c5777b",
+      "source_last_modified_utc": "2026-11-19T07:12:29.259134+00:00",
+      "owner_issue": "https://github.com/1337isnot1337/solved-conjectures/issues/19",
+      "source_bytes_unchanged": true
+    }
+  ],
+  "verified_receipt_sha256": "7c45fc8ce6bfda3ea4b1ea8b9f0e0af0e85e9c6514e904138cd45071dcc9cc14"
+}
