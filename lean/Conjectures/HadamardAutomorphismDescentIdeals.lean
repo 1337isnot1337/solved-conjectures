@@ -15,7 +15,7 @@ open scoped Pointwise
 variable (K : Type*) [Field K] [NumberField K]
   [IsCyclotomicExtension {479} ℚ K]
 
-local instance : Fact (Nat.Prime 599) := ⟨prime_599⟩
+local instance descentPrime599Fact : Fact (Nat.Prime 599) := ⟨prime_599⟩
 
 omit [IsCyclotomicExtension {479} ℚ K] in
 theorem prime_liesOver599_of_contains_divisor (u : 𝓞 K) (hu : u ≠ 0)

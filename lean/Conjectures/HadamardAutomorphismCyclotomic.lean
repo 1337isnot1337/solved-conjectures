@@ -19,7 +19,7 @@ open scoped Pointwise ComplexConjugate
 variable (K : Type*) [Field K] [NumberField K]
   [IsCyclotomicExtension {479} ℚ K]
 
-local instance : Fact (Nat.Prime 599) := ⟨prime_599⟩
+local instance cyclotomicPrime599Fact : Fact (Nat.Prime 599) := ⟨prime_599⟩
 
 instance prime599_span_isMaximal : (Ideal.span {(599 : ℤ)}).IsMaximal := by
   simpa only [Nat.cast_ofNat] using Int.ideal_span_isMaximal_of_prime 599

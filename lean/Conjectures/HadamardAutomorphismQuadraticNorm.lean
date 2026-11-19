@@ -25,8 +25,9 @@ private theorem quadraticModel_relation479 :
     quadraticGeneratorInFixed479 K * quadraticGeneratorInFixed479 K =
       (-479 : ℚ) • (1 : quadraticFixedField479 K) +
         (0 : ℚ) • quadraticGeneratorInFixed479 K := by
-  simpa only [zero_smul, add_zero, Algebra.smul_def, mul_one, map_neg,
-    map_ofNat, pow_two] using quadraticGeneratorInFixed479_sq K
+  rw [Algebra.smul_def, Algebra.smul_def, map_zero, zero_mul, add_zero,
+    mul_one, map_neg, map_ofNat, ← pow_two]
+  exact quadraticGeneratorInFixed479_sq K
 
 def quadraticModelToFixed479 :
     QuadraticAlgebra ℚ (-479) 0 →ₐ[ℚ] quadraticFixedField479 K :=
@@ -80,8 +81,11 @@ private theorem quadraticModel_norm479 (a b : ℚ) :
       Algebra.lmul ℚ (QuadraticAlgebra ℚ (-479) 0) ⟨a, b⟩ =
         DistribSMul.toLinearMap ℚ (QuadraticAlgebra ℚ (-479) 0)
           (⟨a, b⟩ : QuadraticAlgebra ℚ (-479) 0) := by
-    ext x
-    rfl
+    apply LinearMap.ext
+    intro x
+    change (⟨a, b⟩ : QuadraticAlgebra ℚ (-479) 0) * x =
+      (⟨a, b⟩ : QuadraticAlgebra ℚ (-479) 0) • x
+    exact (smul_eq_mul _ _).symm
   rw [hlinear, QuadraticAlgebra.det_toLinearMap_eq_norm]
   simp only [QuadraticAlgebra.norm_def]
   ring
@@ -112,7 +116,7 @@ theorem quadratic_integer_absNorm_ne599 (x : 𝓞 (quadraticFixedField479 K)) :
     (Algebra.norm ℤ x).natAbs ≠ 599 := by
   intro habs
   have hn : Algebra.norm ℤ x = 599 := by
-    simpa only [habs] using
+    simpa only [habs, Nat.cast_ofNat] using
       (Int.natAbs_of_nonneg (quadratic_integer_norm_nonnegative479 K x)).symm
   obtain ⟨a, b, hx⟩ := quadraticFixedField479_coordinates K
     ((x : quadraticFixedField479 K) : K) (x : quadraticFixedField479 K).property
@@ -131,7 +135,7 @@ def quadraticIntegerGenerator479 : 𝓞 (quadraticFixedField479 K) :=
   ⟨quadraticGeneratorInFixed479 K, by
     apply IsIntegral.of_pow (n := 2) (by decide)
     rw [quadraticGeneratorInFixed479_sq]
-    exact (isIntegral_algebraMap :
+    simpa only [map_neg, map_ofNat] using (isIntegral_algebraMap :
       IsIntegral ℤ (algebraMap ℤ (quadraticFixedField479 K) (-479)))⟩
 
 def quadraticFifthWitness479 : 𝓞 (quadraticFixedField479 K) :=
@@ -162,7 +166,14 @@ theorem quadraticFifthWitness479_norm :
       (((quadraticFifthWitness479 K : 𝓞 (quadraticFixedField479 K)) :
           quadraticFixedField479 K) : K) =
         (8054400 : K) + 159859 * quadraticGenerator479 K := by
-    rfl
+    let ι : 𝓞 (quadraticFixedField479 K) →+* K :=
+      (algebraMap (quadraticFixedField479 K) K).comp
+        (algebraMap (𝓞 (quadraticFixedField479 K)) (quadraticFixedField479 K))
+    have hgen : ι (quadraticIntegerGenerator479 K) = quadraticGenerator479 K := by
+      change (quadraticGeneratorInFixed479 K : K) = quadraticGenerator479 K
+      exact quadraticGeneratorInFixed479_coe K
+    change ι (quadraticFifthWitness479 K) = _
+    rw [quadraticFifthWitness479, map_add, map_mul, map_ofNat, map_ofNat, hgen]
   rw [quadraticFixedField479_norm_coordinates K
     (quadraticFifthWitness479 K : quadraticFixedField479 K) 8054400 159859
       (by simpa only [Rat.cast_ofNat] using hcoords)]

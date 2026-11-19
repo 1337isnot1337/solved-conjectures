@@ -14,7 +14,7 @@ open scoped Pointwise
 variable (K : Type*) [Field K] [NumberField K]
   [IsCyclotomicExtension {479} ℚ K]
 
-local instance : Fact (Nat.Prime 599) := ⟨prime_599⟩
+local instance splittingPrime599Fact : Fact (Nat.Prime 599) := ⟨prime_599⟩
 
 theorem prime599_individual_ramification (P : Ideal (𝓞 K)) [P.IsPrime]
     [P.LiesOver (Ideal.span {(599 : ℤ)})] : P.ramificationIdx ℤ = 1 := by

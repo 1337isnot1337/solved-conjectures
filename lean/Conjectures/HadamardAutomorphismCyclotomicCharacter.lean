@@ -80,7 +80,7 @@ def integerCyclotomicStarRing479 : StarRing (𝓞 K) where
 
 section FieldStar
 
-local instance : StarRing K := cyclotomicStarRing479 K
+local instance characterFieldStarRing479 : StarRing K := cyclotomicStarRing479 K
 
 @[simp] theorem star_eq_conjugation479 (x : K) : star x = conjugation479 K x := rfl
 
@@ -88,7 +88,7 @@ end FieldStar
 
 section IntegerStar
 
-local instance : StarRing (𝓞 K) := integerCyclotomicStarRing479 K
+local instance characterIntegerStarRing479 : StarRing (𝓞 K) := integerCyclotomicStarRing479 K
 
 @[simp] theorem integer_star_eq_conjugation479 (x : 𝓞 K) :
     star x = conjugation479 K • x := rfl

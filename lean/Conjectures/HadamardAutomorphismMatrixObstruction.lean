@@ -18,8 +18,8 @@ open scoped BigOperators Matrix Pointwise
 variable (K : Type*) [Field K] [NumberField K]
   [IsCyclotomicExtension {479} ℚ K]
 
-local instance : Fact (Nat.Prime 599) := ⟨prime_599⟩
-local instance : StarRing (𝓞 K) := integerCyclotomicStarRing479 K
+local instance obstructionPrime599Fact : Fact (Nat.Prime 599) := ⟨prime_599⟩
+local instance obstructionIntegerStarRing479 : StarRing (𝓞 K) := integerCyclotomicStarRing479 K
 
 theorem norm_divisible_of_mem_prime599 (P : Ideal (𝓞 K)) [P.IsMaximal]
     [P.LiesOver (Ideal.span {(599 : ℤ)})] (u : 𝓞 K) (hu : u ∈ P) :

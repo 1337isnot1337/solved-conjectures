@@ -14,7 +14,7 @@ open NumberField IsCyclotomicExtension
 variable (K : Type*) [Field K] [NumberField K]
   [IsCyclotomicExtension {479} ℚ K]
 
-local instance : Fact (Nat.Prime 479) := ⟨prime_479⟩
+local instance gaussPrime479Fact : Fact (Nat.Prime 479) := ⟨prime_479⟩
 
 def quadraticChar479 : MulChar (ZMod 479) K :=
   (quadraticChar (ZMod 479)).ringHomComp (Int.castRingHom K)
