@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fresh strict/all-owned/stock-kernel gate for the prime-257 terminal-row pilot."""
+"""Fresh strict/all-owned/stock-kernel gate for the prime-257 minimum-pair-two pilot."""
 from __future__ import annotations
 
 import argparse
@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MODEL = "docs/six-speed-prime0257-pilot-sources.json"
 OWN_INPUTS = (
     "scripts/verify_six_speed_prime0257_pilot.py",
+    "scripts/test_six_speed_prime0257_pilot.py",
     ".github/workflows/lean-six-speed-prime0257-pilot.yml",
     MODEL,
 )
@@ -51,17 +52,17 @@ def exact_singleton(modules, target):
 
 def preflight(model):
     require(model["schema"] == "six-speed-prime0257-pilot-v1", "Unexpected source model")
-    require(model["roots"] == ["Conjectures.LonelinessSixSpeedPrime0257Rows"],
+    require(model["roots"] == ["Conjectures.LonelinessSixSpeedPrime0257B2"],
             "Unexpected theorem root")
     require(model["legacy_prefixes"] == ["Loneliness."], "Unexpected legacy ownership prefix")
     require(model["source_policy"] == {
         "warning_as_error": True, "linter_override": False, "fresh_project_objects": True},
         "Unexpected strict source policy")
     modules = runtime.dependency_order(model["roots"])
-    require(len(modules) == 37 and set(modules) == set(model["source_sha256"]),
-            "Exact prime-257 terminal-row proof closure differs")
+    require(len(modules) == 76 and set(modules) == set(model["source_sha256"]),
+            "Exact prime-257 b2 proof closure differs")
     required = model["required_theorems"]
-    require(len(required) == len(set(required)) == 14, "Required theorem inventory differs")
+    require(len(required) == len(set(required)) == 63, "Required theorem inventory differs")
     for module in modules:
         require(sha(source(module)) == model["source_sha256"][module],
                 "Pinned proof source differs: " + module)
@@ -69,23 +70,36 @@ def preflight(model):
     for path, digest in {**model["configuration_sha256"], **model["helper_sha256"],
                          **model["producer_sha256"]}.items():
         require(sha(ROOT / path) == digest, "Pinned configuration/helper differs: " + path)
-    require(model["phase"] == "rows" and model["prime"] == 257
-            and model["minimum_pair"] == 2 and model["expected_module_count"] == 37
+    require(model["phase"] == "b2" and model["prime"] == 257
+            and model["minimum_pair"] == 2 and model["expected_module_count"] == 76
             and model["complete_prime_checked"] is False
+            and model["target_minimum_pairs"] == [2]
             and model["initial_minimum_pairs_checked"] == [],
-            "Terminal-row-only scope differs")
+            "Single-minimum-pair pilot scope differs")
+    private = model["explicit_private_theorems"]
+    users = [name for names in private.values() for name in names]
+    require(len(users) == len(set(users)) == 905
+            and len(private) == 29 and set(private) <= set(modules),
+            "Exact 905 private numerical proof inventory differs")
+    private_digest = hashlib.sha256(json.dumps(private, ensure_ascii=False,
+        separators=(",", ":")).encode()).hexdigest()
+    require(private_digest == model["private_inventory_sha256"],
+            "Private inventory digest differs")
     reproduction = subprocess.run(["node", str(ROOT / "scripts/generate_six_speed_prime0257_pilot.mjs"),
                                    "--check"], cwd=ROOT, capture_output=True, text=True, timeout=60)
-    require(reproduction.returncode == 0, "Terminal-row reproduction failed:\n" + reproduction.stderr)
+    require(reproduction.returncode == 0, "B2 pilot reproduction failed:\n" + reproduction.stderr)
     record = json.loads(reproduction.stdout)
-    require(record["phase"] == "rows" and record["prime"] == 257
+    require(record["phase"] == "b2" and record["prime"] == 257
             and record["minimum_pair"] == 2 and record["row_count"] == 3
             and record["complete_prime_checked"] is False
+            and len(model["generated_modules"]) == len(set(model["generated_modules"])) == 33
             and record["generated_sha256"] == {
-                "Conjectures.LonelinessSixSpeedPrime0257Rows":
-                    model["source_sha256"]["Conjectures.LonelinessSixSpeedPrime0257Rows"]}
+                module: model["source_sha256"][module] for module in model["generated_modules"]}
             and record["generator_sha256"] == model["producer_sha256"][
-                "scripts/generate_six_speed_prime0257_pilot.mjs"],
+                "scripts/generate_six_speed_prime0257_pilot.mjs"]
+            and record["explicit_private_proofs"] == 905
+            and record["private_inventory_sha256"] == private_digest
+            and record["numeric_census"] == model["numeric_census"],
             "Reproduction inventory differs")
     model["reproduction"] = record
     modern = {m: next(header_tokens(source(m).read_text()), None) == "module" for m in modules}
@@ -111,6 +125,29 @@ def objects(stage, modules, modern):
                for p in (stage / "lib/lean/Conjectures").rglob("*.olean")}
     require(present == set(modules), "Extra or missing staged project object")
     return result
+
+
+def validate_private_theorems(inventory, expected):
+    matched = {}
+    raw_names = []
+    for module, users in expected.items():
+        require(module in inventory["modules"], "Missing numerical proof owner: " + module)
+        require(len(users) == len(set(users)), "Repeated expected private theorem")
+        serialized = inventory["modules"][module]["names"]
+        matches = {}
+        for user in users:
+            actual = [name for name in serialized
+                      if inventory["declarations"][name]["private_user_name"] == user]
+            require(len(actual) == 1, "Missing or repeated private numerical theorem: " + user)
+            name = actual[0]
+            record = inventory["declarations"][name]
+            require(record["kind"] == "theorem" and record["by_serialized"] is True,
+                    "Numerical certificate is not a serialized theorem: " + user)
+            matches[user] = name
+            raw_names.append(name)
+        matched[module] = matches
+    require(len(raw_names) == len(set(raw_names)), "Reused private numerical declaration")
+    return matched
 
 
 def verify(model, modules, required, modern, stage):
@@ -179,6 +216,9 @@ def verify(model, modules, required, modern, stage):
         require(check["exit_code"] == 0 and check["timed_out"] is False,
                 "All-owned audit failed:\n" + Path(check["log"]).read_text()[-12000:])
         inventory = audit.validate_log(Path(check["log"]).read_text(), spec, modern)
+        explicit_private = validate_private_theorems(inventory, model["explicit_private_theorems"])
+        receipt["explicit_private_theorems"] = explicit_private
+        receipt["explicit_private_theorem_count"] = sum(len(names) for names in explicit_private.values())
         require(all(inventory["declarations"][name]["kind"] == "theorem" for name in required),
                 "A required theorem endpoint is not a theorem declaration")
         (stage / "declaration-inventory.json").write_bytes(encoded(inventory))
@@ -233,7 +273,8 @@ def verify(model, modules, required, modern, stage):
         require(subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
                 == receipt["git_commit"], "Frozen checkout commit changed")
         receipt.update({"status": "passed", "all_frozen_hashes_unchanged": True,
-                        "terminal_row_validity_checked": True})
+                        "terminal_row_validity_checked": True,
+                        "initial_minimum_pairs_checked": [2]})
     except BaseException as error:
         receipt.update({"status": "failed", "error": str(error)})
         raise

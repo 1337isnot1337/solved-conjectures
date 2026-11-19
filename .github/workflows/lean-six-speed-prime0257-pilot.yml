@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/lean-six-speed-prime0257-pilot.yml'
       - 'scripts/verify_six_speed_prime0257_pilot.py'
+      - 'scripts/test_six_speed_prime0257_pilot.py'
       - 'scripts/generate_six_speed_prime0257_pilot.mjs'
       - 'docs/six-speed-prime0257-pilot-sources.json'
       - 'lean/Conjectures/LonelinessModularCoverSearch.lean'
@@ -46,6 +47,45 @@ on:
       - 'lean/Conjectures/LonelinessConsecutive.lean'
       - 'lean/Conjectures/LonelinessSixSpeedFiniteSound.lean'
       - 'lean/Conjectures/LonelinessSixSpeedPrime0257Rows.lean'
+      - 'lean/Conjectures/LonelinessModularCoverChunks.lean'
+      - 'lean/Conjectures/LonelinessModularCoverTape.lean'
+      - 'lean/Conjectures/LonelinessModularCoverBits.lean'
+      - 'lean/Conjectures/LonelinessModularInitialBits.lean'
+      - 'lean/Conjectures/LonelinessModularMemo.lean'
+      - 'lean/Conjectures/LonelinessModularInitialMemo.lean'
+      - 'lean/Conjectures/LonelinessModularCoverCuts.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Data.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks00.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks01.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks02.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks03.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks04.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks05.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks06.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks07.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks08.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks09.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks10.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks11.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks12.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks13.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks14.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks15.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks16.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks17.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks18.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks19.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks20.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks21.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks22.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks23.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks24.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks25.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks26.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks27.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Checks28.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2Facts.lean'
+      - 'lean/Conjectures/LonelinessSixSpeedPrime0257B2.lean'
       - 'scripts/verify_frankl_orbit_batches.py'
       - 'scripts/replay_lean.py'
       - 'scripts/plan_lean_candidates.py'
@@ -67,12 +107,13 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
-      - name: Reproduce terminal rows and validate the exact source inventory
+      - name: Test private inventory, reproduce the exact b2 search and validate sources
         run: |
-          python3 -m py_compile scripts/verify_six_speed_prime0257_pilot.py
+          python3 -m py_compile scripts/verify_six_speed_prime0257_pilot.py scripts/test_six_speed_prime0257_pilot.py
+          python3 scripts/test_six_speed_prime0257_pilot.py
           node --check scripts/generate_six_speed_prime0257_pilot.mjs
           python3 scripts/verify_six_speed_prime0257_pilot.py --plan
       - uses: leanprover/lean-action@v1
