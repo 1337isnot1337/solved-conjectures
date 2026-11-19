@@ -21,8 +21,11 @@ private theorem operations_le_calls_aux (P : ℕ → Bool) (C : ℕ → ℕ)
   | h w ih =>
     intro lo hi hw
     by_cases hs : hi-lo ≤ 1
-    · simp only [operations,calls,dite_eq_left hs,mul_zero,add_zero]
-      exact le_rfl
+    · have hop : operations P C lo hi=2 := by
+        rw [operations,dite_eq_left hs]
+      have hc : calls P lo hi=0 := by
+        rw [calls,dite_eq_left hs]
+      simpa only [hop,hc] using (show (2:ℕ) ≤ 2+(5+B)*0 from le_rfl)
     have hm := midpoint_bounds lo hi (by omega)
     rw [operations,calls,dite_eq_right hs,dite_eq_right hs]
     dsimp only

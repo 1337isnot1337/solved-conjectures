@@ -80,7 +80,15 @@ reduced denominator degrees 5 and 10, and minimality among all nonzero
 alternative denominators. The proof derives rationality from finite prefix
 recursions. See the [direct proof guide](../results/pham-denominator-degree/FORMAL_PROOF.md).
 
-## Finite Motzkin theorem
+## General compact Motzkin theorem
+
+`Conjectures.MotzkinCompact` proves `Motzkin.compact_two_difference_theorem`: the
+actual density equals the continuous-character supremum in any compact
+Hausdorff abelian group with invariant probability measure, including zero
+differences. Its 34-module closure passed strict source, the 664-theorem
+standard-axiom audit, and exact independent kernel replay. The note's further
+evaluation and algorithmic claims remain candidates.
+
 
 `Conjectures.MotzkinDensity` connects actual measurable-set density and the
 continuous-character supremum. `Motzkin.finite_two_difference_theorem` proves

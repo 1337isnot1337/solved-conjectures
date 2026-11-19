@@ -20,7 +20,7 @@ theorem regularIntegral_eq {u : ℝ} (hu : 0 < u) :
       rw [smoothLog_eq hx.1]
       simp only [Profile.f, sub_eq_add_neg]
     _ = (∫ x in 0..u, log x) + (∫ x in 0..u, Profile.f x) :=
-      intervalIntegral.integral_add intervalIntegrable_log (Profile.intervalIntegrable_f hu.le)
+      intervalIntegral.integral_add intervalIntegral.intervalIntegrable_log' (Profile.intervalIntegrable_f hu.le)
     _ = u * log u - u + Profile.I u := by
       rw [integral_log_from_zero]
       rfl
@@ -52,7 +52,7 @@ theorem logEuler_correction_exact {r : ℕ} {t : ℝ} (hr : 0 < r) (ht : 0 < t) 
   unfold logMain regularError
   rw [regularIntegral_eq hu, smoothLog_eq hu, Real.log_mul hrpos.ne' ht.ne']
   field_simp
-  <;> ring
+  ring
 
 theorem logEuler_correction_uniform {a b : ℝ} (ha : 0 < a) (hb : 0 < b) :
     ∃ C : ℝ, 0 < C ∧ ∀ (r : ℕ) (t : ℝ), 0 < r → 0 < t →
@@ -76,7 +76,7 @@ theorem logEuler_correction_uniform {a b : ℝ} (ha : 0 < a) (hb : 0 < b) :
   calc
     _ ≤ |regularError r t| + |stirlingError r| := abs_sub _ _
     _ ≤ B * t + 1 / (12 * (r : ℝ)) := add_le_add (hbound r t hr ht hb') hs
-    _ ≤ B * t + 1 / (12 * a) * t := add_le_add_left hrecip _
+    _ ≤ B * t + 1 / (12 * a) * t := add_le_add le_rfl hrecip
     _ = (B + 1 / (12 * a)) * t := by ring
 
 def finiteProduct (r : ℕ) (t : ℝ) : ℝ :=

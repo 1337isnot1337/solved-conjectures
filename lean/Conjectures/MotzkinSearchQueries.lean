@@ -17,7 +17,9 @@ private theorem mem_queries_bounds_aux (P : ℕ → Bool) (w : ℕ) :
   | h w ih =>
     intro lo hi q hw hq
     by_cases hs : hi-lo ≤ 1
-    · simp only [queries,dite_eq_left hs,Finset.notMem_empty] at hq
+    · have hqueries : queries P lo hi=∅ := by
+        rw [queries,dite_eq_left hs]
+      simp only [hqueries,Finset.notMem_empty] at hq
     have hm := midpoint_bounds lo hi (by omega)
     rw [queries,dite_eq_right hs] at hq
     dsimp only at hq

@@ -42,7 +42,19 @@ theorem relationCompatible_score_le_characterValue {G : Type*} [AddCommGroup G]
   let bQ : (ℤ × ℤ) ⧸ f.ker := QuotientAddGroup.mk' f.ker (0,1)
   have h := algebraic_character_le_characterValue e
     (QuotientAddGroup.kerLift_injective f) aQ bQ ψ
-  simpa [e,ψ,aQ,bQ,f,g,pairSum] using h
+  have hea : e aQ = a := by
+    change f (1,0) = a
+    simp [f,pairSum]
+  have heb : e bQ = b := by
+    change f (0,1) = b
+    simp [f,pairSum]
+  have hψa : ψ aQ = x := by
+    change g (1,0) = x
+    simp [g,pairSum]
+  have hψb : ψ bQ = y := by
+    change g (0,1) = y
+    simp [g,pairSum]
+  simpa only [hea,heb,hψa,hψb] using h
 
 theorem exists_annihilator_maximum {G : Type*} [AddCommGroup G]
     [TopologicalSpace G] [IsTopologicalAddGroup G] [CompactSpace G] [T2Space G]
@@ -53,7 +65,7 @@ theorem exists_annihilator_maximum {G : Type*} [AddCommGroup G]
   let S : Set (UnitAddCircle × UnitAddCircle) :=
     {p | RelationCompatible a b p.1 p.2}
   have hclosed : IsClosed S := by
-    simp only [S,RelationCompatible,Set.setOf_forall]
+    simp only [S,RelationCompatible,Set.ofPred_forall]
     apply isClosed_iInter
     intro u
     apply isClosed_iInter
@@ -66,13 +78,15 @@ theorem exists_annihilator_maximum {G : Type*} [AddCommGroup G]
   have hc : Continuous (fun p : UnitAddCircle × UnitAddCircle => min ‖p.1‖ ‖p.2‖) :=
     continuous_fst.norm.min continuous_snd.norm
   obtain ⟨p,hp,hmax⟩ := hclosed.isCompact.exists_isMaxOn hne hc.continuousOn
+  have hmax' : ∀ q ∈ S, min ‖q.1‖ ‖q.2‖ ≤ min ‖p.1‖ ‖p.2‖ :=
+    isMaxOn_iff.mp hmax
   refine ⟨p.1,p.2,hp,le_antisymm
     (relationCompatible_score_le_characterValue a b p.1 p.2 hp) ?_,?_⟩
   · apply csSup_le (character_candidates_nonempty a b)
     rintro r ⟨χ,rfl⟩
-    exact hmax (character_relationCompatible a b χ.toAddMonoidHom)
+    exact hmax' (χ a,χ b) (character_relationCompatible a b χ.toAddMonoidHom)
   · intro x' y' hxy'
-    exact hmax hxy'
+    exact hmax' (x',y') hxy'
 
 theorem characterValue_le_half {G : Type*} [AddCommGroup G]
     [TopologicalSpace G] (a b : G) : characterValue a b ≤ 1/2 := by

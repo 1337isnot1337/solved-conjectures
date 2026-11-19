@@ -13,6 +13,7 @@ variable {K : Type*} [NormedField K] [CharZero K] [CompleteSpace K]
 
 def recordGenerating (q : K) : K := ∑' n : ℕ, (lineSizeCount n : K)*q^n
 
+omit [CompleteSpace K] in
 theorem lineSizeCount_seriesTerm (n : ℕ) (q : K) :
     (lineSizeCount n : K)*q^n=seriesTerm tupleCountSeries q n := by
   simp only [seriesTerm,coeff_tupleCountSeries,map_natCast,lineSizeCount_eq_tupleCount]
@@ -31,21 +32,26 @@ theorem recordGenerating_eq (q : K) (hq : ‖q‖ < 1) :
     recordGenerating q=exactValue q/(1-q) :=
   (hasSum_lineSizeCount q hq).tsum_eq
 
+omit [CharZero K] [CompleteSpace K] in
 theorem gapValue_eq_inverse_product (r : ℕ) (q : K) :
     gapValue r q=(∏ j : Fin r, (1-q^(j.val+1)))⁻¹ := by
   exact prod_inv_distrib (fun j : Fin r => 1-q^(j.val+1))
 
+omit [CharZero K] [CompleteSpace K] in
 theorem gapValue_eq_range_product (r : ℕ) (q : K) :
     gapValue r q=∏ j ∈ range r, (1-q^(j+1))⁻¹ := by
   exact Fin.prod_univ_eq_prod_range (fun j => (1-q^(j+1))⁻¹) r
 
+omit [CharZero K] [CompleteSpace K] in
 @[simp] theorem gapValue_one (q : K) : gapValue 1 q=(1-q)⁻¹ := by
   simp [gapValue]
 
+omit [CharZero K] [CompleteSpace K] in
 @[simp] theorem gapValue_two (q : K) : gapValue 2 q=((1-q)*(1-q^2))⁻¹ := by
   rw [gapValue_eq_inverse_product]
   simp [Fin.prod_univ_two]
 
+omit [CharZero K] [CompleteSpace K] in
 theorem largeCoreValue_eq (r : ℕ) (q : K) :
     largeCoreValue r q=
       ((2 : K)^(r-3)*q^(r^2)*(1+q^r))/(∏ j : Fin r, (1-q^(j.val+1))) := by

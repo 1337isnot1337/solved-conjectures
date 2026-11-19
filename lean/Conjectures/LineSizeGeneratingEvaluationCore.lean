@@ -1,5 +1,5 @@
 import Conjectures.LineSizeGeneratingEvaluationBasic
-import Conjectures.LineSizeGeneratingFunction
+import Conjectures.LineSizeGeneratingCoefficient
 import Conjectures.LineSizeGeneratingGaussian
 import Mathlib.Topology.Algebra.InfiniteSum.Real
 import Mathlib.Tactic.Linarith
@@ -10,7 +10,7 @@ namespace LineSize.Generating
 
 open Finset PowerSeries
 
-variable {K : Type*} [NormedField K] [CharZero K] [CompleteSpace K]
+variable {K : Type*} [NormedField K]
 
 def gapValue (r : ℕ) (q : K) : K :=
   ∏ j : Fin r, (1-q^(j.val+1))⁻¹
@@ -26,7 +26,8 @@ theorem coreValue_of_ge_three (r : ℕ) (hr : 3 ≤ r) (q : K) :
     coreValue r q=largeCoreValue r q := by
   rw [coreValue,ite_eq_right (by omega),ite_eq_right (by omega),ite_eq_right (by omega)]
 
-theorem hasSeriesValue_largeCoreTerm (r : ℕ) (q : K) (hq : ‖q‖ < 1) :
+theorem hasSeriesValue_largeCoreTerm [CharZero K] [CompleteSpace K]
+    (r : ℕ) (q : K) (hq : ‖q‖ < 1) :
     HasSeriesValue (largeCoreTerm r) q (largeCoreValue r q) := by
   have h := (((hasSeriesValue_X_pow q (r^2)).mul
     ((hasSeriesValue_one q).add (hasSeriesValue_X_pow q r))).mul
@@ -34,7 +35,8 @@ theorem hasSeriesValue_largeCoreTerm (r : ℕ) (q : K) (hq : ‖q‖ < 1) :
   simpa only [largeCoreTerm,largeCoreValue,gapValue,Nat.cast_pow,Nat.cast_ofNat,
     mul_assoc] using h
 
-theorem hasSeriesValue_coreTerm (r : ℕ) (q : K) (hq : ‖q‖ < 1) :
+theorem hasSeriesValue_coreTerm [CharZero K] [CompleteSpace K]
+    (r : ℕ) (q : K) (hq : ‖q‖ < 1) :
     HasSeriesValue (coreTerm r) q (coreValue r q) := by
   rcases r with _ | _ | _ | r
   · simpa [coreValue] using hasSeriesValue_one q

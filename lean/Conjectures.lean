@@ -82,3 +82,4 @@ import Conjectures.LineSizeAnalyticProfile
 import Conjectures.LineSizeEulerKernel
 
 import Conjectures.LonelinessFourSpeedGap
+import Conjectures.MotzkinCompact

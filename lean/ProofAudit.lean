@@ -9,6 +9,14 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `exists_continuous_character_ne_one,
+    `PontryaginDual.eval_surjective_of_discrete,
+    `Motzkin.boxLift_eq_of_project_step,
+    `Motzkin.box_measure_character,
+    `Motzkin.denseRange_dual_map,
+    `Motzkin.algebraic_character_le_characterValue,
+    `Motzkin.compact_measure_le_characterValue,
+    `Motzkin.compact_two_difference_theorem,
     `LineSize.exists_padded_carrier_realization,
     `LineSize.exists_large_record_iff,
     `LineSize.feasibleSizes_iff_realizable,

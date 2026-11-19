@@ -439,6 +439,28 @@ modules=(
   Conjectures.LonelinessFourSpeedFinite
   Conjectures.LonelinessFourSpeedClassificationFinite
   Conjectures.LonelinessFourSpeedGap
+  Conjectures.MotzkinBoxes
+  Conjectures.MotzkinImported.CharacterContinuity
+  Conjectures.MotzkinImported.CharacterIntegral
+  Conjectures.MotzkinImported.CharacterStoneWeierstrass
+  Conjectures.MotzkinImported.CompactOperator
+  Conjectures.MotzkinImported.ContinuousMapIntegral
+  Conjectures.MotzkinImported.DualTransport
+  Conjectures.MotzkinImported.UnitaryWeight
+  Conjectures.MotzkinImported.HaarLpAction
+  Conjectures.MotzkinAveraging
+  Conjectures.MotzkinImported.CharacterSaturation
+  Conjectures.MotzkinImported.Kernel
+  Conjectures.MotzkinImported.DualEvaluation
+  Conjectures.MotzkinImported.EigenspaceWeight
+  Conjectures.MotzkinImported.CompactConvolution
+  Conjectures.MotzkinImported.DiscreteBidual
+  Conjectures.MotzkinImported.HaarConvolution
+  Conjectures.MotzkinBoxTransfer
+  Conjectures.MotzkinImported.HaarCharacter
+  Conjectures.MotzkinDualRestriction
+  Conjectures.MotzkinCharacterTransfer
+  Conjectures.MotzkinCompact
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

@@ -76,8 +76,13 @@ source checks, a 1,080-declaration axiom audit, and independent kernel replay.
 
 The finite Motzkin theorem is also checked: every finite abelian group generated
 by the two marked elements has an attaining independent set and an attaining
-circle character with the same normalized value. The full compact theorem
-remains in progress.
+circle character with the same normalized value. The full compact-group
+equality is now checked as well: actual Borel-set density equals the
+continuous-character supremum for arbitrary compact Hausdorff abelian groups
+with invariant probability measure, including zero differences. Its 34-module
+closure passed strict sources, the 664-theorem axiom audit, and independent
+kernel replay. Rank-based evaluations, cyclic criteria, and the exact
+algorithmic claims remain in progress.
 
 Graffiti.pc Conjecture 318 and its stated sharpness example are complete.
 The theorem is quantified over every finite connected simple graph of order at

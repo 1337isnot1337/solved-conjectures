@@ -35,7 +35,6 @@ theorem meanSmooth_eq {x : ℝ} (hx : 0 < x) : meanSmooth x = Profile.meanKernel
   unfold meanSmooth Profile.meanKernel
   rw [meanExp_of_ne hx.ne', Real.exp_neg]
   field_simp
-  <;> ring
 
 theorem varianceSmooth_eq {x : ℝ} (hx : 0 < x) :
     varianceSmooth x = Profile.varianceKernel x := by
@@ -44,7 +43,6 @@ theorem varianceSmooth_eq {x : ℝ} (hx : 0 < x) :
   unfold varianceSmooth Profile.varianceKernel
   rw [meanExp_of_ne hx.ne', Real.exp_neg]
   field_simp
-  <;> ring
 
 theorem integral_meanSmooth {u : ℝ} (hu : 0 ≤ u) :
     (∫ x in 0..u, meanSmooth x) = ∫ x in 0..u, Profile.meanKernel x := by

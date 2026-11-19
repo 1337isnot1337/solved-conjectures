@@ -15,7 +15,7 @@ noncomputable def independence (a b : ZMod N) : ℕ :=
   Finset.univ.sup (fun t => score t a b)
 
 theorem score_le_independence (a b t : ZMod N) : score t a b ≤ independence a b :=
-  Finset.le_sup (Finset.mem_univ t)
+  Finset.le_sup (f := fun u : ZMod N => score u a b) (Finset.mem_univ t)
 
 theorem exists_score_eq_independence (a b : ZMod N) :
     ∃ t : ZMod N, score t a b=independence a b := by
@@ -82,6 +82,7 @@ theorem finite_cyclic_theorem_all (a b : ZMod N) :
   rw [hcard]
   exact independent_card_le_independence a b B hB
 
+omit [NeZero N] in
 theorem score_natCast (a b t : ℕ) :
     score (t:ZMod N) (a:ZMod N) (b:ZMod N) =
       min (min ((t*a)%N) (N-(t*a)%N)) (min ((t*b)%N) (N-(t*b)%N)) := by

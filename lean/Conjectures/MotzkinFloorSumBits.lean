@@ -20,7 +20,8 @@ theorem eval_le_cubic (N n M A B : ℕ) (hn : n ≤ N) (hA : A ≤ N)
       have hai := Nat.mul_le_mul hA hiN
       have hnum : A*i+B ≤ 3*N^2 := by nlinarith
       exact (Nat.div_le_self _ _).trans hnum
-    _ = n*(3*N^2) := by simp only [Finset.sum_const,Finset.card_range,nsmul_eq_mul]
+    _ = n*(3*N^2) := by
+      simp only [Finset.sum_const,Finset.card_range,nsmul_eq_mul,Nat.cast_id]
     _ ≤ N*(3*N^2) := Nat.mul_le_mul_right _ hn
     _ = 3*N^3 := by ring
 
@@ -116,12 +117,10 @@ theorem cubic_size_bound (N v : ℕ) (hN : 0 < N) (hv : v ≤ 4*N^3) :
   have h₃ := size_mul_le (N*N) N
   have h₄ := size_mul_le 4 (N^3)
   have hpow : N^3=(N*N)*N := by ring
-  rw [hpow] at h₄
   have hfour : (4:ℕ).size=3 := by decide
   rw [hfour] at h₄
-  have hv' := (Nat.size_le_size hv).trans (by
-    rw [hpow]
-    exact h₄)
+  have hv' : v.size ≤ 3+(N^3).size := (Nat.size_le_size hv).trans h₄
+  rw [hpow] at hv'
   rw [← size_eq_log2_add_one hN]
   omega
 

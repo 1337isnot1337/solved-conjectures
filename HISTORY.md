@@ -1,5 +1,15 @@
 # History
 
+## 2026-11-19 — General compact Motzkin equality
+
+- Registered the exact density/continuous-character equality for arbitrary
+  compact Hausdorff abelian groups, including zero differences.
+- The exact 34-module hosted closure passed strict sources, a 664-theorem axiom
+  audit, and independent kernel replay with unchanged source and gate hashes.
+- Added 22 checked proof modules to the concurrent 433-module package. The
+  combined 455-module hosted gate remains pending; ancillary rank, cyclic,
+  evaluation, and complexity claims remain candidates.
+
 ## 2026-11-19 — Exact line-size geometry and saddle profile
 
 - Proved the real-plane realizability criterion and exact geometric record

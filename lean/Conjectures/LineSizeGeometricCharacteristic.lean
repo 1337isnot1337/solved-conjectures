@@ -28,7 +28,7 @@ def perturbation (q x : ℝ) : ℂ := ((q / (1 - q) : ℝ) : ℂ) * (phase x - 1
 
 theorem phase_sub_one_norm (x : ℝ) : ‖phase x - 1‖ ≤ |x| := by
   simpa only [phase, Real.norm_eq_abs] using
-    (Complex.norm_exp_I_mul_ofReal_sub_one_le (x := x))
+    (Real.norm_exp_I_mul_ofReal_sub_one_le (x := x))
 
 theorem denominator_norm_lower {q : ℝ} (hq : 0 ≤ q) (x : ℝ) :
     1 - q ≤ ‖denominator q x‖ := by
@@ -87,7 +87,6 @@ theorem scalarFactor_norm_sq {q : ℝ} (hq : 0 ≤ q) (hq1 : q < 1) (x : ℝ) :
   rw [denominator_normSq] at hd
   unfold modulusBase at hb ⊢
   field_simp
-  <;> ring
 
 theorem scalarFactor_norm_inv_sqrt {q : ℝ} (hq : 0 ≤ q) (hq1 : q < 1) (x : ℝ) :
     ‖scalarFactor q x‖ = (Real.sqrt (modulusBase q x))⁻¹ := by
@@ -98,8 +97,8 @@ theorem scalarFactor_norm_majorant {q : ℝ} (hq : 0 ≤ q) (hq1 : q < 1) (x : �
     ‖scalarFactor q x‖ = LineSize.Fourier.geometricMajorant q x := by
   rw [scalarFactor_norm_inv_sqrt hq hq1]
   unfold LineSize.Fourier.geometricMajorant
+  change (Real.sqrt (modulusBase q x))⁻¹ = (modulusBase q x) ^ (-(1 / 2 : ℝ))
   rw [Real.rpow_neg (modulusBase_pos hq x).le, Real.sqrt_eq_rpow]
-  rfl
 
 theorem factor_norm_majorant {q : ℝ} (hq : 0 ≤ q) (hq1 : q < 1) (j : ℕ) (theta : ℝ) :
     ‖factor q j theta‖ = LineSize.Fourier.geometricMajorant q ((j : ℝ) * theta) :=
@@ -124,8 +123,9 @@ theorem scalarFactor_eq_inv_one_sub {q : ℝ} (hq1 : q < 1) (x : ℝ) :
   have hden : denominator q x = ((1 - q : ℝ) : ℂ) * (1 - perturbation q x) := by
     unfold denominator perturbation
     push_cast
-    field_simp
-    <;> ring
+    have hq0' : (1 : ℂ) - (q : ℂ) ≠ 0 := by exact_mod_cast (sub_pos.mpr hq1).ne'
+    field_simp [hq0']
+    ring
   rw [scalarFactor, hden]
   calc
     _ = ((1 - q : ℝ) : ℂ) *

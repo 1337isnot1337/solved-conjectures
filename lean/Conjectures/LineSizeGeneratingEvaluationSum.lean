@@ -1,4 +1,5 @@
 import Conjectures.LineSizeGeneratingEvaluationCore
+import Conjectures.LineSizeGeneratingFunction
 
 /-! Absolute convergence justifies interchanging the coefficient sum and
 the sum over core lengths. -/
@@ -21,15 +22,18 @@ theorem summable_coreMatrix {R : ℝ} (hR : 0 ≤ R) (hR1 : R < 1) :
   · exact (summable_coreValue hR hR1).congr
       (fun r => (hasSeriesValue_coreTerm r R hnorm).hasSum.tsum_eq.symm)
 
+omit [CharZero K] [CompleteSpace K] in
 theorem norm_natCast_le_real (n : ℕ) : ‖(n : K)‖ ≤ (n : ℝ) := by
   have h : ‖n • (1 : K)‖ ≤ (n : ℝ)*‖(1 : K)‖ := norm_nsmul_le
   simpa only [nsmul_eq_mul,mul_one,norm_one] using h
 
+omit [CompleteSpace K] in
 theorem norm_seriesTerm_coreTerm_le (r n : ℕ) (q : K) :
     ‖seriesTerm (coreTerm r) q n‖ ≤ seriesTerm (coreTerm r) ‖q‖ n := by
   simp only [seriesTerm,coeff_coreTerm,map_natCast,norm_mul,norm_pow]
   exact mul_le_mul_of_nonneg_right (norm_natCast_le_real _) (pow_nonneg (norm_nonneg q) _)
 
+omit [CompleteSpace K] in
 theorem summable_norm_coreMatrix (q : K) (hq : ‖q‖ < 1) :
     Summable (fun p : ℕ × ℕ => ‖seriesTerm (coreTerm p.1) q p.2‖) := by
   apply (summable_coreMatrix (norm_nonneg q) hq).of_nonneg_of_le
@@ -38,6 +42,7 @@ theorem summable_norm_coreMatrix (q : K) (hq : ‖q‖ < 1) :
   · intro p
     exact norm_seriesTerm_coreTerm_le p.1 p.2 q
 
+omit [CompleteSpace K] in
 theorem hasSum_core_column (n : ℕ) (q : K) :
     HasSum (fun r => seriesTerm (coreTerm r) q n) (seriesTerm tupleCostSeries q n) := by
   have hoff : ∀ r ∉ range (n+1), seriesTerm (coreTerm r) q n=0 := by
@@ -53,6 +58,7 @@ theorem hasSum_core_column (n : ℕ) (q : K) :
   rw [← hsum]
   exact hasSum_sum_of_ne_finset_zero hoff
 
+omit [CompleteSpace K] in
 theorem summable_norm_tupleCostSeries (q : K) (hq : ‖q‖ < 1) :
     Summable (fun n => ‖seriesTerm tupleCostSeries q n‖) := by
   have hnorm := summable_norm_coreMatrix q hq

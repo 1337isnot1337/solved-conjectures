@@ -31,8 +31,10 @@ private theorem bracket_aux (P : ℕ → Bool) (w : ℕ) :
     intro lo hi hw hlt hlo hhi
     by_cases hs : hi-lo ≤ 1
     · have he : hi=lo+1 := by omega
-      simpa only [lastTrue,dite_eq_left hs,he,Nat.le_refl,Nat.lt_succ_self,true_and]
-        using And.intro hlo hhi
+      have hlast : lastTrue P lo hi=lo := by
+        rw [lastTrue,dite_eq_left hs]
+      rw [hlast]
+      exact ⟨le_rfl,hlt,hlo,by simpa only [he] using hhi⟩
     have hm := midpoint_bounds lo hi (by omega)
     rw [lastTrue,dite_eq_right hs]
     dsimp only
@@ -83,7 +85,7 @@ private theorem calls_le_size_aux (P : ℕ → Bool) (w : ℕ) :
   | h w ih =>
     intro lo hi hw
     by_cases hs : hi-lo ≤ 1
-    · simp only [calls,dite_eq_left hs]
+    · rw [calls,dite_eq_left hs]
       exact Nat.zero_le _
     have hm := midpoint_bounds lo hi (by omega)
     rw [calls,dite_eq_right hs]

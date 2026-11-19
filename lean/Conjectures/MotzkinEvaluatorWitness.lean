@@ -99,7 +99,8 @@ theorem secondResidue_eq_python (m s h i : ℕ) (hm : 0 < m) (hh : 0 < h) :
   have hmod : (-(s:ℤ)*(i:ℤ)-(h:ℤ)) ≡
       ((secondResidue m s h i:ℤ)-(h:ℤ)) [ZMOD (m:ℤ)] := by
     apply Int.modEq_of_dvd
-    convert hdiv' using 1 <;> ring
+    convert hdiv' using 1
+    ring
   change (-(s:ℤ)*(i:ℤ)-(h:ℤ))%(m:ℤ)=
     ((secondResidue m s h i:ℤ)-(h:ℤ))%(m:ℤ) at hmod
   rw [Int.emod_eq_of_lt (by omega) (by omega)] at hmod

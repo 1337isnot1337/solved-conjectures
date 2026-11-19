@@ -10,7 +10,7 @@ namespace LineSize.Generating
 
 open Finset PowerSeries
 
-variable {K : Type*} [NormedField K] [CharZero K] [CompleteSpace K]
+variable {K : Type*} [NormedField K] [CharZero K]
 
 def seriesTerm (f : PowerSeries ℚ) (q : K) (n : ℕ) : K :=
   Rat.castHom K (coeff n f)*q^n
@@ -44,9 +44,9 @@ theorem HasSeriesValue.add {f g : PowerSeries ℚ} {q a b : K}
     · intro n
       rw [seriesTerm_add]
       exact norm_add_le _ _
-  · exact (hf.hasSum.add hg.hasSum).congr (fun n => (seriesTerm_add f g q n).symm)
+  · exact (hf.hasSum.add hg.hasSum).congr_fun (fun n => seriesTerm_add f g q n)
 
-theorem HasSeriesValue.mul {f g : PowerSeries ℚ} {q a b : K}
+theorem HasSeriesValue.mul [CompleteSpace K] {f g : PowerSeries ℚ} {q a b : K}
     (hf : HasSeriesValue f q a) (hg : HasSeriesValue g q b) :
     HasSeriesValue (f*g) q (a*b) := by
   have habs := summable_norm_sum_mul_antidiagonal_of_summable_norm
@@ -56,7 +56,7 @@ theorem HasSeriesValue.mul {f g : PowerSeries ℚ} {q a b : K}
   rw [hf.hasSum.tsum_eq,hg.hasSum.tsum_eq] at hvalue
   constructor
   · exact habs.congr (fun n => congrArg norm (seriesTerm_mul f g q n).symm)
-  · have h := habs.of_norm.hasSum.congr (fun n => (seriesTerm_mul f g q n).symm)
+  · have h := habs.of_norm.hasSum.congr_fun (fun n => seriesTerm_mul f g q n)
     rw [← hvalue] at h
     exact h
 
@@ -78,7 +78,9 @@ theorem hasSeriesValue_X_pow (q : K) (k : ℕ) :
   · apply summable_of_ne_finset_zero (s := ({k} : Finset ℕ))
     intro n hn
     rw [hoff n hn,norm_zero]
-  · have h := hasSum_sum_of_ne_finset_zero hoff
+  · have h : HasSum (seriesTerm ((PowerSeries.X : PowerSeries ℚ)^k) q)
+        (∑ n ∈ ({k} : Finset ℕ), seriesTerm ((PowerSeries.X : PowerSeries ℚ)^k) q n) :=
+      hasSum_sum_of_ne_finset_zero hoff
     simpa only [sum_singleton,seriesTerm_X_pow,ite_eq_left rfl] using h
 
 theorem hasSeriesValue_one (q : K) :
@@ -87,7 +89,9 @@ theorem hasSeriesValue_one (q : K) :
 
 theorem seriesTerm_nsmul (k : ℕ) (f : PowerSeries ℚ) (q : K) (n : ℕ) :
     seriesTerm (k • f) q n=(k : K)*seriesTerm f q n := by
-  simp only [seriesTerm,map_nsmul,nsmul_eq_mul]
+  unfold seriesTerm
+  rw [map_nsmul,map_nsmul]
+  simp only [nsmul_eq_mul]
   ring
 
 theorem HasSeriesValue.nsmul {f : PowerSeries ℚ} {q a : K}
@@ -97,8 +101,8 @@ theorem HasSeriesValue.nsmul {f : PowerSeries ℚ} {q a : K}
   · convert hf.summable_norm.mul_left ‖(k : K)‖ using 1
     funext n
     rw [seriesTerm_nsmul,norm_mul]
-  · exact (hf.hasSum.mul_left (k : K)).congr
-      (fun n => (seriesTerm_nsmul k f q n).symm)
+  · exact (hf.hasSum.mul_left (k : K)).congr_fun
+      (fun n => seriesTerm_nsmul k f q n)
 
 theorem seriesTerm_geometric_mul (w : ℕ) (q : K) (k : ℕ) :
     seriesTerm (geometric w) q (w*k)=(q^w)^k := by
@@ -111,23 +115,27 @@ theorem seriesTerm_geometric_of_not_mem (w : ℕ) (q : K) (n : ℕ)
     exact hn ⟨k,hk.symm⟩
   rw [seriesTerm,coeff_geometric,ite_eq_right hdiv,map_zero,zero_mul]
 
-theorem hasSeriesValue_geometric (w : ℕ) (hw : 0 < w) (q : K) (hq : ‖q‖ < 1) :
+theorem hasSeriesValue_geometric [CompleteSpace K]
+    (w : ℕ) (hw : 0 < w) (q : K) (hq : ‖q‖ < 1) :
     HasSeriesValue (geometric w) q (1-q^w)⁻¹ := by
   have hpow : ‖q^w‖ < 1 := by
     rw [norm_pow]
     exact pow_lt_one₀ (norm_nonneg q) hq (by omega)
   have hinj : Function.Injective (fun k : ℕ => w*k) :=
     fun _ _ h => Nat.eq_of_mul_eq_mul_left hw h
+  have hoff : ∀ n ∉ Set.range (fun k : ℕ => w*k),
+      ‖seriesTerm (geometric w) q n‖=0 := by
+    intro n hn
+    rw [seriesTerm_geometric_of_not_mem w q n hn,norm_zero]
   constructor
-  · apply (hinj.summable_iff (fun n hn => ?_)).mp
-    · rw [seriesTerm_geometric_of_not_mem w q n hn,norm_zero]
-    · simpa only [Function.comp_def,seriesTerm_geometric_mul,norm_pow] using
-        summable_geometric_of_lt_one (norm_nonneg (q^w)) hpow
+  · apply (hinj.summable_iff hoff).mp
+    simpa only [Function.comp_def,seriesTerm_geometric_mul,norm_pow] using
+      summable_geometric_of_lt_one (norm_nonneg (q^w)) hpow
   · apply (hinj.hasSum_iff (seriesTerm_geometric_of_not_mem w q)).mp
     simpa only [Function.comp_def,seriesTerm_geometric_mul] using
       hasSum_geometric_of_norm_lt_one hpow
 
-theorem hasSeriesValue_prod {ι : Type*} [DecidableEq ι] (s : Finset ι)
+theorem hasSeriesValue_prod [CompleteSpace K] {ι : Type*} [DecidableEq ι] (s : Finset ι)
     (f : ι → PowerSeries ℚ) (v : ι → K) (q : K)
     (h : ∀ i ∈ s, HasSeriesValue (f i) q (v i)) :
     HasSeriesValue (∏ i ∈ s, f i) q (∏ i ∈ s, v i) := by
@@ -141,7 +149,7 @@ theorem hasSeriesValue_prod {ι : Type*} [DecidableEq ι] (s : Finset ι)
     rw [prod_insert hi,prod_insert hi]
     exact (h i (mem_insert_self i s)).mul (ih (fun j hj => h j (mem_insert_of_mem hj)))
 
-theorem hasSeriesValue_gapSeries (r : ℕ) (q : K) (hq : ‖q‖ < 1) :
+theorem hasSeriesValue_gapSeries [CompleteSpace K] (r : ℕ) (q : K) (hq : ‖q‖ < 1) :
     HasSeriesValue (gapSeries r) q (∏ j : Fin r, (1-q^(j.val+1))⁻¹) := by
   apply hasSeriesValue_prod
   intro j _hj

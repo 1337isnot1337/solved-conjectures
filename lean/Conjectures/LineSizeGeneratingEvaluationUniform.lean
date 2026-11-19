@@ -10,6 +10,7 @@ open Finset Filter PowerSeries
 
 variable {K : Type*} [NormedField K] [CharZero K] [CompleteSpace K]
 
+omit [CompleteSpace K] in
 theorem norm_seriesTerm_coreTerm_le_radius (r n : ℕ) (q : K) {R : ℝ}
     (hq : ‖q‖ ≤ R) :
     ‖seriesTerm (coreTerm r) q n‖ ≤ seriesTerm (coreTerm r) R n := by
@@ -34,6 +35,7 @@ theorem uniform_coreValue {R : ℝ} (hR : 0 ≤ R) (hR1 : R < 1) :
   intro r q hq
   exact norm_coreValue_le_radius r q hR hR1 hq
 
+omit [CharZero K] [CompleteSpace K] in
 theorem norm_lineSizeCount_term_le_radius (n : ℕ) (q : K) {R : ℝ}
     (hq : ‖q‖ ≤ R) :
     ‖(lineSizeCount n : K)*q^n‖ ≤ (lineSizeCount n : ℝ)*R^n := by
