@@ -185,3 +185,23 @@ and [authenticated original evidence](verification/two-insertions-exact-44524198
 are public. Receipt preservation performs byte and policy validation;
 it is not an additional Lean proof run. This component pass is separate
 from the full merged-package gate.
+
+## Six-speed spectrum realization
+
+```sh
+python3 scripts/verify_six_spectrum_realization.py --plan
+python3 scripts/verify_six_spectrum_realization.py
+```
+
+This dedicated gate rebuilds the exact 11-module closure, treats all source
+warnings as errors without disabling linters, audits every owned declaration
+and raw private name, requires theorem kind for all 15 endpoints, and replays
+all 11 modules as exact singleton stock-kernel targets. Source, configuration,
+transitive helper, compiler, checker, object and process-evidence hashes are
+fixed and rechecked.
+
+The [passed original receipt](verification/six-spectrum-realization-44527134869/receipt.json)
+and [authenticated evidence](verification/six-spectrum-realization-44527134869/)
+cover 392 owned declarations, 306 theorems and 30 private declarations.
+The gate establishes realization of the proposed six-speed values; universal
+classification and the full accepted-package verification are separate.

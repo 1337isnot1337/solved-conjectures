@@ -651,3 +651,17 @@ were authenticated before registration. Eighteen new proof modules and
 The accepted prebuild list now contains 904 proof modules plus two roots.
 The merged-package gate remains separate. Li remains last.
 [Exact scope](lean-status.md#complete-unrestricted-two-speed-insertion-theorem).
+
+## Six-speed realization direction, 19 November 2026
+
+Both congruence classes in the proposed spectrum now have an unconditional
+Lean realization theorem. Every `P ≥ 7` with `P % 6 = 1 or 5` is realized
+by six distinct positive primitive speeds with exact value `(P−1)/(6P)`.
+The proof includes the all-parameter progression family and `P=11`.
+The exact 11-module closure passed fresh strict sources, the audit of all
+392 owned declarations including 30 private declarations, and 11 exact
+stock-kernel replay targets. All 15 required endpoints are theorems.
+Two proof modules and 13 endpoints are registered, with all checked source
+blobs guarded; the accepted list has 906 proof modules plus two roots.
+The universal six-speed classification and merged-package gate remain separate.
+[Scope and original evidence](lean-status.md#six-speed-spectrum-complete-realization).

@@ -9,6 +9,19 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Loneliness.SixSpectrumRealization.realizes_mod_six_one,
+    `Loneliness.SixSpectrumRealization.realizes,
+    `Loneliness.SixProgression.target_bounds,
+    `Loneliness.SixProgression.target_equation,
+    `Loneliness.SixProgression.family_upper,
+    `Loneliness.SixProgression.family_lower,
+    `Loneliness.SixProgression.family_value,
+    `Loneliness.SixProgression.family_maximum,
+    `Loneliness.SixProgression.speeds_length,
+    `Loneliness.SixProgression.speeds_positive,
+    `Loneliness.SixProgression.speeds_distinct,
+    `Loneliness.SixProgression.speeds_primitive,
+    `Loneliness.SixProgression.realizes_mod_six_five,
     `Loneliness.TwoInsertions.exists_good_on_interval,
     `Loneliness.TwoInsertions.IntervalCertificate.good,
     `Loneliness.TwoInsertions.IntervalCertificate.unbounded_second,

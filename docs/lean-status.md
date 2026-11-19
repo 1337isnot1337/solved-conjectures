@@ -47,7 +47,7 @@ never additional Lean axioms.
 | Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
 | Two-difference Motzkin theorem | Complete | The exact compact-group character formula, exhaustive relation-basis trichotomy, all-modulus cyclic formulas, gcd scaling, odd-cycle criterion, and stated example are checked. The literal fixed character window and rational interval unions attain the stated bounds. The exact floor-sum evaluator, Hermite independence number, attaining character, and explicit arithmetic-operation and integer-size bounds are checked and registered. |
 | Tight six speeds and critical planes | Partial | The consecutive six-speed set has global value `1/7`. The complete split certificate for the prime-257 minimum-pair-20 probe is checked and registered, including its original normalized-support exclusion without a certificate premise. Full prime coverage, uniqueness, unconditional plane classification, and the large-norm consequence remain open. |
-| Six-speed spectrum | Partial | Global values of the consecutive set, nine sporadic examples, the displayed `5/33` example, and the positive primitive family `[1,2,3,4,5,6s]` for every `s≥1` are checked. The remaining family branch, norm reduction and exhaustive classification remain open. |
+| Six-speed spectrum | Partial; complete realization direction | Every proposed value `(P−1)/(6P)` for `P ≥ 7`, `P % 6 = 1 or 5`, is attained by six distinct positive primitive speeds. The consecutive and progression families, the `P=11` boundary and displayed finite examples have checked exact global values. The universal family and off-family classification remains incomplete. |
 | Eight-runner equality cases | Partial | All three displayed sets have global value `1/8`. Exhaustiveness remains open. |
 | Nine-runner equality case | Partial | The consecutive set has global value `1/9`. Uniqueness remains open. |
 | Symmetric four-point density | Complete | Exact real packing and covering densities for every literal translated symmetric four-point integer set, including common-divisor normalization. Both periodic constructions and the two sharp local interval lengths are proved. |
@@ -2217,3 +2217,47 @@ prebuild list to 904 proof modules plus the two roots.
 This completes the original insertion note. The general lonely-runner
 conjecture and the separate spectrum/classification notes remain outside
 this result. Verification of the merged accepted package is separate.
+
+## Six-speed spectrum: complete realization
+
+For every natural `P ≥ 7` with `P % 6 = 1` or `P % 6 = 5`,
+`Loneliness.SixSpectrumRealization.realizes` constructs a list of exactly
+six distinct positive integer speeds with gcd one and actual loneliness
+value \((P-1)/(6P)\), strictly below \(1/6\). It assumes no runner bound,
+critical-plane classification or finite-exhaustion statement.
+
+The residue-one branch uses the proved consecutive family. The residue-five
+branch proves the exact value of
+`[6, 6n+5, 6n+11, 6n+17, 6n+23, 12n+28]` for every natural `n`,
+including zero, with an actual attaining time and an upper bound at every
+real time. A separate checked tuple supplies `P = 11`.
+Both branches retain the positive, distinct and primitive conclusions.
+
+[Run 44527134869/job 135570566146](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44527134869/job/135570566146)
+checked the exact 11-module closure at
+`a3d77bc65f3cd979f92590037eb8895c5c2eb25d`. All project sources were
+freshly compiled with warnings treated as errors and no linter override.
+The audit checked all 392 owned declarations, including 306 theorems and
+30 private declarations; all 15 required endpoints have theorem kind.
+All 11 modules passed exact singleton stock-kernel replay in fresh
+one-worker processes. Only `propext`, `Classical.choice` and
+`Quot.sound` were permitted.
+
+The [unchanged raw receipt](verification/six-spectrum-realization-44527134869/receipt.json)
+has SHA-256
+`6d0d9bb9f7215e2f5138e277d72debf13f99edf9e3519c26eca0bdf6595d8bb9`.
+The [preservation record](verification/six-spectrum-realization-44527134869/preservation.json)
+authenticates all 71 original archive files, including sources, proof
+objects, audit inventory and process evidence. Original artifact
+`14532651083` has ZIP SHA-256
+`b58416de9802b4a54b1d9dd2590144c8933de7368b32e7257ef20de18306b2ce`.
+The raw receipt's `explicit_import_all` label records validated full
+serialized visibility for this legacy-module closure; it does not assert
+that the source used modern `import all` syntax.
+
+Registration adds the two new modules and 13 previously unregistered
+endpoints, with all 11 checked source blobs guarded. The accepted prebuild
+list now has 906 proof modules plus two roots. This completes the existence
+direction of the spectrum statement. The universal family and off-family
+classification remains incomplete; the result entry remains partial.
+Verification of the merged accepted package is a separate gate.

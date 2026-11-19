@@ -22,4 +22,27 @@ See [the verification guide](../../docs/verification.md) for dependencies and th
 
 ## Formalization
 
-Partial formalization. The general pair-sum maximum theorem and the displayed finite examples have checked global loneliness values. Exhaustiveness and the full classification remain open in Lean. See [the status report](../../docs/lean-status.md) for exact scope.
+The realization direction is complete in Lean. For every `P ≥ 7`
+congruent to `1` or `5` modulo six, the formal proof constructs six
+distinct positive integer speeds with gcd one and exact global loneliness
+\((P-1)/(6P)\). This includes both infinite branches, the progression
+parameter zero, and the separate `P=11` case. Each value is attained,
+and the corresponding upper bound holds at every real time.
+
+The exact 11-module closure passed fresh strict compilation, an audit of all
+392 owned declarations including 30 private declarations, and independent
+stock-kernel replay of all 11 modules. All 15 required endpoints are theorems.
+[Exact scope](../../docs/lean-status.md#six-speed-spectrum-complete-realization) ·
+[Raw receipt](../../docs/verification/six-spectrum-realization-44527134869/receipt.json).
+
+The general pair-sum maximum theorem and displayed finite examples also have
+checked global values. Universal classification of the three families and
+exhaustiveness outside them remain incomplete in Lean.
+
+Reproduce the realization gate from the repository root with the pinned Lean
+toolchain and Mathlib cache:
+
+```sh
+python3 scripts/verify_six_spectrum_realization.py
+```
+

@@ -910,6 +910,8 @@ modules=(
   Conjectures.LonelinessTwoInsertionsSmall
   Conjectures.LonelinessTwoInsertions
   Conjectures.LonelinessTwoInsertionsAccelerations
+  Conjectures.LonelinessSixProgression
+  Conjectures.LonelinessSixSpectrumRealization
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

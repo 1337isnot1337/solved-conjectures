@@ -1,5 +1,18 @@
 # History
 
+## 2026-11-19 — Both six-speed spectrum realization branches
+
+Registered the unconditional existence theorem for every proposed six-speed
+value `(P−1)/(6P)`, for `P ≥ 7` congruent to one or five modulo six.
+The witnesses are positive, distinct and primitive; their exact global
+values include actual attaining times. The 11-module closure passed fresh
+strict sources, the audit of all 392 owned declarations including 30 private
+declarations, and every exact stock-kernel target. All 15 required endpoints
+are theorems. Universal classification remains incomplete.
+[Scope](docs/lean-status.md#six-speed-spectrum-complete-realization) ·
+[Receipt](docs/verification/six-spectrum-realization-44527134869/receipt.json).
+
+
 ## 2026-11-19 — Complete unrestricted two-speed insertion theorem
 
 Registered the full two-speed insertion result, including the arbitrary

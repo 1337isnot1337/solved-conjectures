@@ -329,3 +329,5 @@ import Conjectures.LonelinessTwoInsertionsShift
 import Conjectures.LonelinessTwoInsertionsSmall
 import Conjectures.LonelinessTwoInsertions
 import Conjectures.LonelinessTwoInsertionsAccelerations
+import Conjectures.LonelinessSixProgression
+import Conjectures.LonelinessSixSpectrumRealization
