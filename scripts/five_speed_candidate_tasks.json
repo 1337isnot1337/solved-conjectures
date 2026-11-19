@@ -1,4 +1,52 @@
 {
+  "bounded-maps": [
+    [
+      "Conjectures.LonelinessFiveSpeedBoundedMaps"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.bounded_map_natural_candidates",
+      "Loneliness.FiveSpeedCertificate.bounded_map_candidates"
+    ]
+  ],
+  "root-integer": [
+    [
+      "Conjectures.LonelinessFiveSpeedRootIntegerLift"
+    ],
+    [
+      "Loneliness.FiveSpeedRoot.root_integer_relation_lift"
+    ]
+  ],
+  "prime-products": [
+    [
+      "Conjectures.LonelinessFiveSpeedPrimeProducts"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.PrimeData.root_product_large",
+      "Loneliness.FiveSpeedCertificate.PrimeData.plane_product_large",
+      "Loneliness.FiveSpeedCertificate.PrimeData.planePrimes_total_card"
+    ]
+  ],
+  "finite-assembly": [
+    [
+      "Conjectures.LonelinessFiveSpeedRootReduction"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.bounded_root_reduction_of_covers",
+      "Loneliness.FiveSpeedCertificate.sporadicExhaustion_of_coverage"
+    ]
+  ],
+  "root-scale-probes": [
+    [
+      "Conjectures.LonelinessFiveSpeedRootStarBlockScaleProbe",
+      "Conjectures.LonelinessFiveSpeedRootStarLargeFirstProbe",
+      "Conjectures.LonelinessFiveSpeedRootStarLargeMiddleProbe"
+    ],
+    [
+      "Loneliness.FiveSpeedCertificate.RootStarBlockScaleProbe.small_middle",
+      "Loneliness.FiveSpeedCertificate.RootStarLargeFirstProbe.checked",
+      "Loneliness.FiveSpeedCertificate.RootStarLargeMiddleProbe.checked"
+    ]
+  ],
   "bounded-core": [
     [
       "Conjectures.LonelinessFiveSpeedBoundedCheckDefs",

@@ -117,6 +117,69 @@ def render(record):
     )
 
 
+def render_aggregate():
+    imports = "".join(
+        f"import Conjectures.LonelinessFiveSpeedBoundedMap{i:03d}\n" for i in range(164)
+    )
+    cases = "".join(f"  · exact BoundedMapCertificates.M{i}.sound\n" for i in range(164))
+    return imports + """
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+set_option Elab.async false
+
+namespace Loneliness.FiveSpeedCertificate
+
+open Matrix
+open scoped Matrix
+open Loneliness.CoordinateSubspace Loneliness.CriticalFamilies
+
+theorem bounded_map_natural_candidates (m : Fin 164) :
+    ∀ (x : ℕ), 0 < x → x ≤ 23 * boundedMapL m →
+    ∀ (y : ℤ), y.natAbs ≤ 23 * boundedMapL m → Nat.gcd x y.natAbs = 1 →
+    (∀ i, (boundedMaps m *ᵥ ![(x : ℤ), y]) i ≠ 0) →
+    Function.Injective (fun i => ((boundedMaps m *ᵥ ![(x : ℤ), y]) i).natAbs) →
+    ¬ContainsCriticalQuadruple (integerSpeeds (boundedMaps m *ᵥ ![(x : ℤ), y])) →
+    value (integerSpeeds (boundedMaps m *ᵥ ![(x : ℤ), y])) < (1 / 5 : ℝ) →
+    Modular.primitiveDirection (boundedMaps m *ᵥ ![(x : ℤ), y]) ∈ candidateTuples := by
+  fin_cases m
+""" + cases + """
+theorem bounded_map_candidates (m : Fin 164) (w : Fin 2 → ℤ)
+    (hpos : 0 < w 0) (hprimitive : Nat.gcd (w 0).natAbs (w 1).natAbs = 1)
+    (hbound : ∀ j, (w j).natAbs ≤ 23 * boundedMapL m)
+    (hnonzero : ∀ i, (boundedMaps m *ᵥ w) i ≠ 0)
+    (hdistinct : Function.Injective (fun i => ((boundedMaps m *ᵥ w) i).natAbs))
+    (hnot : ¬ContainsCriticalQuadruple (integerSpeeds (boundedMaps m *ᵥ w)))
+    (hlow : value (integerSpeeds (boundedMaps m *ᵥ w)) < (1 / 5 : ℝ)) :
+    Modular.primitiveDirection (boundedMaps m *ᵥ w) ∈ candidateTuples := by
+  let x := (w 0).toNat
+  have hcast : (x : ℤ) = w 0 := Int.toNat_of_nonneg (le_of_lt hpos)
+  have hx : 0 < x := by
+    have hz : (0 : ℤ) < x := by simpa only [hcast] using hpos
+    exact_mod_cast hz
+  have hxabs : x = (w 0).natAbs := by
+    rw [← hcast]
+    simp only [Int.natAbs_natCast]
+  have hxbound : x ≤ 23 * boundedMapL m := by
+    rw [hxabs]
+    exact hbound 0
+  have hcop : Nat.gcd x (w 1).natAbs = 1 := by
+    rw [hxabs]
+    exact hprimitive
+  have hw : ![(x : ℤ), w 1] = w := by
+    funext j
+    fin_cases j <;> simp only [Matrix.cons_val_zero, Matrix.cons_val_one,
+      Matrix.head_cons, hcast]
+  have h := bounded_map_natural_candidates m x hx hxbound (w 1) (hbound 1) hcop
+    (by simpa only [hw] using hnonzero)
+    (by simpa only [hw] using hdistinct)
+    (by simpa only [hw] using hnot)
+    (by simpa only [hw] using hlow)
+  simpa only [hw] using h
+
+end Loneliness.FiveSpeedCertificate
+"""
+
+
 def main():
     parser = ArgumentParser(description=__doc__)
     parser.add_argument("--maps", nargs="*", type=int)
@@ -151,6 +214,13 @@ def main():
               "map_data_sha256": sha256(raw).hexdigest(), "candidate_data_sha256": sha256(candidates_raw).hexdigest(),
               "first_prime": 1009, "second_prime": 1013, "maps": records,
               "counts": aggregate, "elapsed_seconds": round(monotonic() - started, 3)}
+    if args.lean_dir and selected == set(range(164)):
+        content = render_aggregate()
+        name = "LonelinessFiveSpeedBoundedMaps"
+        (args.lean_dir / (name + ".lean")).write_text(content)
+        result["aggregate"] = {"module": "Conjectures." + name,
+                               "source_bytes": len(content.encode()),
+                               "source_sha256": sha256(content.encode()).hexdigest()}
     args.json_output.write_text(json.dumps(result, separators=(",", ":")) + "\n")
     print(json.dumps({"maps": len(records), "bad_slopes": sum(len(row["bad_slopes"]) for row in records),
                       "counts": aggregate, "elapsed_seconds": result["elapsed_seconds"]}))
