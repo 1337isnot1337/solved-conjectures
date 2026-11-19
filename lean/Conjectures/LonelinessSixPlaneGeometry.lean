@@ -22,7 +22,7 @@ theorem standard_linear_combination (kind : Fin 3) (s t : ℚ) :
   fin_cases kind <;> ext i <;> fin_cases i <;> simp [standard] <;> ring
 
 theorem standard_cast (kind : Fin 3) (s t : ℤ) :
-    (fun i => (standard kind s t i : ℚ)) = standard kind (s : ℚ) (t : ℚ) := by
+    (fun i => (standard (K := ℤ) kind s t i : ℚ)) = standard kind (s : ℚ) (t : ℚ) := by
   fin_cases kind <;> ext i <;> fin_cases i <;> simp [standard]
 
 theorem standard_mem (kind : Fin 3) (s t : ℚ) :
@@ -73,12 +73,16 @@ theorem acceptanceCheck_sound (q c : Vector) (r : Acceptance)
       literalTest r.kind (r.transform c) = true := by
     simpa only [acceptanceCheck, Bool.and_eq_true] using h
   let T := signedCoordinates ℚ (fullSigns r.mask) (fullSigns_spec r.mask) r.permutation
+  have htransform (w : Vector) :
+      T (fun i => (w i : ℚ)) = fun i => (r.transform w i : ℚ) := by
+    ext i
+    simp only [T, signedCoordinates_apply, Acceptance.transform, Int.cast_mul]
   have hq : T (fun i => (q i : ℚ)) ∈ standardPlane r.kind := by
-    simpa [T, Acceptance.transform] using
-      literalTest_mem_standardPlane r.kind (r.transform q) hparts.1
+    rw [htransform]
+    exact literalTest_mem_standardPlane r.kind (r.transform q) hparts.1
   have hc : T (fun i => (c i : ℚ)) ∈ standardPlane r.kind := by
-    simpa [T, Acceptance.transform] using
-      literalTest_mem_standardPlane r.kind (r.transform c) hparts.2
+    rw [htransform]
+    exact literalTest_mem_standardPlane r.kind (r.transform c) hparts.2
   have hle : (Submodule.span ℚ {(fun i => (q i : ℚ)), (fun i => (c i : ℚ))}).map
       T.toLinearMap ≤ standardPlane r.kind := by
     rw [Submodule.map_span]
@@ -87,7 +91,9 @@ theorem acceptanceCheck_sound (q c : Vector) (r : Acceptance)
     rcases hu with rfl | hu
     · exact hq
     · rw [Set.mem_singleton_iff] at hu
-      simpa only [hu] using hc
+      rw [hu]
+      change T (fun i => (c i : ℚ)) ∈ standardPlane r.kind
+      exact hc
   refine ⟨fullSigns r.mask, fullSigns_spec r.mask, r.permutation, r.kind, ?_⟩
   apply Submodule.eq_of_le_of_finrank_le hle
   rw [LinearEquiv.finrank_map_eq, hdim]
@@ -106,12 +112,14 @@ theorem criticalPlane_of_signedCoordinates (E : Submodule ℚ (Fin 6 → ℚ))
   have hcomp : (signedCoordinates ℚ τ hτ ρ).toLinearMap.comp
       (signedCoordinates ℚ σ hσ p).toLinearMap =
       (signedCoordinates ℚ ν hν (ρ.trans p)).toLinearMap := by
-    ext x i
+    apply LinearMap.ext
+    intro x
+    funext i
     change (τ i : ℚ) * ((σ (ρ i) : ℚ) * x (p (ρ i))) =
       ((τ i * σ (ρ i) : ℤ) : ℚ) * x (p (ρ i))
     rw [Int.cast_mul, mul_assoc]
   refine ⟨ν, hν, ρ.trans p, kind, ?_⟩
-  rw [Submodule.map_map, hcomp] at heq
+  rw [← Submodule.map_comp, hcomp] at heq
   exact heq
 
 end
