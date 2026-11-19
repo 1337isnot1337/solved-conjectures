@@ -42,7 +42,7 @@ def regularError (r : ℕ) (t : ℝ) : ℝ :=
 
 def logMain (r : ℕ) (t : ℝ) : ℝ :=
   Profile.I ((r : ℝ) * t) / t +
-    (log t - log (2 * pi) - log (1 - exp (-((r : ℝ) * t)))) / 2
+    (log t - log (2 * Real.pi) - log (1 - exp (-((r : ℝ) * t)))) / 2
 
 theorem logEuler_correction_exact {r : ℕ} {t : ℝ} (hr : 0 < r) (ht : 0 < t) :
     RectangleEuler.logEuler r t = logMain r t + regularError r t - stirlingError r := by
@@ -102,21 +102,21 @@ theorem exp_logEuler (r : ℕ) {t : ℝ} (ht : 0 < t) :
 
 theorem exp_logMain {r : ℕ} {t : ℝ} (hr : 0 < r) (ht : 0 < t) :
     exp (logMain r t) = exp (Profile.I ((r : ℝ) * t) / t) *
-      sqrt (t / (2 * pi * (1 - exp (-((r : ℝ) * t))))) := by
+      sqrt (t / (2 * Real.pi * (1 - exp (-((r : ℝ) * t))))) := by
   have hu : 0 < (r : ℝ) * t := mul_pos (Nat.cast_pos.mpr hr) ht
   have hp := Profile.one_sub_exp_neg_pos hu
-  have hden : 0 < 2 * pi * (1 - exp (-((r : ℝ) * t))) := by positivity
-  have hquot : 0 < t / (2 * pi * (1 - exp (-((r : ℝ) * t)))) := div_pos ht hden
-  have hlog : (log t - log (2 * pi) - log (1 - exp (-((r : ℝ) * t)))) / 2 =
-      log (sqrt (t / (2 * pi * (1 - exp (-((r : ℝ) * t)))))) := by
+  have hden : 0 < 2 * Real.pi * (1 - exp (-((r : ℝ) * t))) := by positivity
+  have hquot : 0 < t / (2 * Real.pi * (1 - exp (-((r : ℝ) * t)))) := div_pos ht hden
+  have hlog : (log t - log (2 * Real.pi) - log (1 - exp (-((r : ℝ) * t)))) / 2 =
+      log (sqrt (t / (2 * Real.pi * (1 - exp (-((r : ℝ) * t)))))) := by
     rw [Real.log_sqrt hquot.le, Real.log_div ht.ne' hden.ne',
-      Real.log_mul (by positivity : (2 : ℝ) * pi ≠ 0) hp.ne']
+      Real.log_mul (by positivity : (2 : ℝ) * Real.pi ≠ 0) hp.ne']
     ring
   rw [logMain, Real.exp_add, hlog, Real.exp_log (Real.sqrt_pos.mpr hquot)]
 
 theorem finiteProduct_correction_exact {r : ℕ} {t : ℝ} (hr : 0 < r) (ht : 0 < t) :
     finiteProduct r t = exp (Profile.I ((r : ℝ) * t) / t) *
-      sqrt (t / (2 * pi * (1 - exp (-((r : ℝ) * t))))) *
+      sqrt (t / (2 * Real.pi * (1 - exp (-((r : ℝ) * t))))) *
         exp (regularError r t - stirlingError r) := by
   rw [← exp_logEuler r ht, logEuler_correction_exact hr ht,
     show logMain r t + regularError r t - stirlingError r =

@@ -12,7 +12,7 @@ theorem coefficients_of_generate {R : Type*} [CommRing R] (a b : R)
      map_zero' := by simp,
      map_add' := by intro p q; simp only [Prod.fst_add,Prod.snd_add,add_mul]; ring}
   have hle : AddSubgroup.closure ({a,b} : Set R) ≤ f.range := by
-    apply AddSubgroup.closure_le.mpr
+    apply (AddSubgroup.closure_le f.range).mpr
     intro z hz
     rcases Set.mem_insert_iff.mp hz with rfl | hz
     · exact ⟨(1,0),by simp [f]⟩

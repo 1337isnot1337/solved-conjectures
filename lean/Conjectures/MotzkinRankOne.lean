@@ -76,7 +76,8 @@ theorem rank_one_attainment (u v : ℤ) (hk : 0 < u.natAbs+v.natAbs) :
       change (k:ℝ)*((k/2:ℕ)/(k:ℝ))=(k/2:ℕ)
       field_simp
     rw [he]
-    exact (AddCircle.coe_eq_zero_iff (1:ℝ)).mpr ⟨(k/2:ℕ),by simp⟩
+    exact (AddCircle.coe_eq_zero_iff (1:ℝ)).mpr
+      ⟨Int.ofNat (k/2),by simp only [zsmul_eq_mul,Int.cast_natCast,mul_one]⟩
   · rw [norm_signedReal u r hr hrh,norm_signedReal v r hr hrh,min_self]
 
 noncomputable def relationValue (u v : ℤ) : ℝ :=
@@ -87,9 +88,10 @@ theorem rank_one_value (u v : ℤ) (hk : 0 < u.natAbs+v.natAbs) :
   obtain ⟨x,y,hrel,he⟩ := rank_one_attainment u v hk
   unfold relationValue
   apply le_antisymm
-  · apply csSup_le ⟨min ‖x‖ ‖y‖,x,y,hrel,rfl⟩
-    rintro h ⟨x',y',hrel',rfl⟩
-    exact rank_one_upper u v hk x' y' hrel'
+  · apply csSup_le
+    · exact ⟨min ‖x‖ ‖y‖,x,y,hrel,rfl⟩
+    · rintro h ⟨x',y',hrel',rfl⟩
+      exact rank_one_upper u v hk x' y' hrel'
   · apply le_csSup
     · refine ⟨1/2,?_⟩
       rintro h ⟨x',y',_,rfl⟩

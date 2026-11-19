@@ -34,7 +34,6 @@ theorem trapezoidal_regularSum {r : ℕ} (hr : 0 < r) (t : ℝ) :
   have harg (j : ℕ) :
       ((j : ℝ) + 1) * ((r : ℝ) * t) / (r : ℝ) = ((j : ℝ) + 1) * t := by
     field_simp [hr0]
-    <;> ring
   have hstep : ((r : ℝ) * t) / (r : ℝ) = t := by
     field_simp [hr0]
   simp only [trapezoidal_integral, sub_zero, zero_add, smoothLog_zero, hstep, harg]
@@ -90,7 +89,7 @@ theorem regularSum_error_bound {r : ℕ} {t C : ℝ}
     field_simp
     <;> ring
   rw [hright] at herr
-  exact (mul_le_mul_left ht).mp herr
+  exact (mul_le_mul_iff_right₀ ht).mp herr
 
 theorem regularSum_error_uniform {b : ℝ} (hb : 0 < b) :
     ∃ C : ℝ, 0 < C ∧ ∀ (r : ℕ) (t : ℝ), 0 < r → 0 < t → (r : ℝ) * t ≤ b →

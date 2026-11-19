@@ -30,7 +30,7 @@ theorem spec_split (n M A B : ℕ) (hM : 0 < M) :
     spec n M A B = (A/M)*(n*(n-1)/2)+(B/M)*n+spec n M (A%M) (B%M) := by
   simp only [spec,summand_split M A B _ hM,Finset.sum_add_distrib]
   rw [← Finset.mul_sum,Finset.sum_range_id,Finset.sum_const,Finset.card_range,
-    nsmul_eq_mul]
+    nsmul_eq_mul,Nat.cast_id]
   ring
 
 theorem triangular_contribution (c n : ℕ) :
@@ -112,10 +112,10 @@ theorem reciprocal (n M A B : ℕ) (hM : 0 < M) (hA : 0 < A) (hB : B < M) :
     simpa only [hi,hj] using hp.2
   · rintro ⟨i,j⟩ hp
     simp only [points,Finset.mem_filter,Finset.mem_product,Finset.mem_range] at hp
-    apply Prod.ext <;> simp only [Prod.fst,Prod.snd] <;> omega
+    apply Prod.ext <;> omega
   · rintro ⟨j,i⟩ hp
     simp only [points,Finset.mem_filter,Finset.mem_product,Finset.mem_range] at hp
-    apply Prod.ext <;> simp only [Prod.fst,Prod.snd] <;> omega
+    apply Prod.ext <;> omega
 
 def eval (n M A B : ℕ) : ℕ :=
   if _hM : M=0 then 0 else

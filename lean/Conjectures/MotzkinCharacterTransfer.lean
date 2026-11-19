@@ -59,6 +59,7 @@ theorem algebraic_character_le_characterValue {H G : Type*} [AddCommGroup H] [Ad
     min ‖ψ a‖ ‖ψ b‖ ≤ characterValue (f a) (f b) := by
   let _ : TopologicalSpace H := ⊥
   let _ : DiscreteTopology H := ⟨rfl⟩
+  let _ : T2Space (Multiplicative G) := inferInstanceAs (T2Space G)
   let f' : Multiplicative H →ₜ* Multiplicative G :=
     {toFun := fun x => Multiplicative.ofAdd (f x.toAdd),
      map_one' := f.map_zero,

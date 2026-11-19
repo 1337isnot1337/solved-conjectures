@@ -36,7 +36,7 @@ theorem pair_sum (m k s : ℕ) (r t : ℤ) :
     r • first m k s+t • second m k s=quotient m k s (r,t) := by
   rw [first,second,← map_zsmul,← map_zsmul,← map_add]
   congr 1
-  ext <;> simp [zsmul_eq_mul]
+  ext <;> simp
 
 theorem relation_iff (m k s : ℕ) (r t : ℤ) :
     r • first m k s+t • second m k s=0 ↔
@@ -60,7 +60,7 @@ theorem generated (m k s : ℕ) :
     have h₂ : (0,1) ∈ K := AddSubgroup.subset_closure (by simp)
     apply top_unique
     intro z _
-    have he : z=z.1 • (1,0)+z.2 • (0,1) := by ext <;> simp [zsmul_eq_mul]
+    have he : z=z.1 • (1,0)+z.2 • (0,1) := by ext <;> simp
     rw [he]
     exact K.add_mem (K.zsmul_mem h₁ z.1) (K.zsmul_mem h₂ z.2)
   exact closure_pair_image (quotient m k s) (QuotientAddGroup.mk'_surjective _)
@@ -69,7 +69,7 @@ theorem generated (m k s : ℕ) :
 def representative (m k s : ℕ) (z : Fin m × Fin k) : Group m k s :=
   quotient m k s ((z.1:ℕ),(z.2:ℕ))
 
-theorem representative_injective (m k s : ℕ) (hm : 0 < m) (hk : 0 < k) :
+theorem representative_injective (m k s : ℕ) (_hm : 0 < m) (hk : 0 < k) :
     Function.Injective (representative m k s) := by
   intro x y hxy
   have hmem : (((x.1:ℕ):ℤ)-((y.1:ℕ):ℤ),((x.2:ℕ):ℤ)-((y.2:ℕ):ℤ)) ∈

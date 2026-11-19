@@ -85,7 +85,7 @@ theorem hasDerivAt_Phi {u : ℝ} (hu : 0<u) : HasDerivAt Phi (PhiPrime u) u := b
   have hq := (hasDerivAt_id u).pow 2
   convert (hl.sub hq).add (hasDerivAt_I hu) using 1
   · rfl
-  · simp only [PhiPrime,Nat.cast_ofNat,pow_one,mul_one,id_eq]
+  · simp only [PhiPrime,Nat.cast_ofNat,mul_one,id_eq]
     ring
 
 theorem deriv_Phi {u : ℝ} (hu : 0<u) : deriv Phi u=PhiPrime u :=
@@ -274,10 +274,9 @@ theorem hasDerivAt_mul_meanKernel {u : ℝ} (hu : 0<u) :
   · funext x
     change x*(x/(Real.exp x-1))=x^2/(Real.exp x-1)
     ring
-  · simp only [Nat.cast_ofNat,pow_one,mul_one,id_eq,Pi.pow_apply]
+  · simp only [Nat.cast_ofNat,mul_one,id_eq,Pi.pow_apply]
     unfold meanKernel varianceKernel
-    field_simp
-    <;> ring
+    field_simp; ring
 
 theorem tendsto_mul_meanKernel_zero :
     Tendsto (fun x : ℝ => x*meanKernel x) (𝓝[>] 0) (𝓝 0) := by

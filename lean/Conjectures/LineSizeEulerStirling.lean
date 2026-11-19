@@ -11,12 +11,12 @@ open Real Filter
 open scoped Topology
 
 def stirlingError (r : ℕ) : ℝ :=
-  log (Stirling.stirlingSeq r) - log pi / 2
+  log (Stirling.stirlingSeq r) - log Real.pi / 2
 
 theorem tendsto_stirlingError : Tendsto stirlingError atTop (𝓝 0) := by
   have hlog := (Real.continuousAt_log (Real.sqrt_pos.mpr Real.pi_pos).ne').tendsto.comp
     Stirling.tendsto_stirlingSeq_sqrt_pi
-  have h := hlog.sub_const (log pi / 2)
+  have h := hlog.sub_const (log Real.pi / 2)
   simpa only [stirlingError, Real.log_sqrt Real.pi_pos.le, sub_self] using h
 
 theorem stirlingError_nonneg {r : ℕ} (hr : 0 < r) : 0 ≤ stirlingError r := by
@@ -42,7 +42,9 @@ theorem stirlingError_le {r : ℕ} (hr : 0 < r) :
     stirlingError r ≤ 1 / (12 * (r : ℝ)) := by
   have hm : Monotone (fun n : ℕ =>
       stirlingError (n + 1) - 1 / (12 * ((n : ℝ) + 1))) :=
-    monotone_nat_of_le_succ (fun n => by simpa [Nat.cast_add, add_assoc] using stirlingError_step n)
+    monotone_nat_of_le_succ (fun n => by
+      simpa only [Nat.cast_add, Nat.cast_one, add_assoc,
+        show (1 : ℝ) + 1 = 2 by norm_num] using stirlingError_step n)
   have he : Tendsto (fun n : ℕ => stirlingError (n + 1)) atTop (𝓝 0) :=
     tendsto_stirlingError.comp (tendsto_add_atTop_nat 1)
   have hi : Tendsto (fun n : ℕ => 1 / (12 * ((n : ℝ) + 1))) atTop (𝓝 0) := by
@@ -55,7 +57,7 @@ theorem stirlingError_le {r : ℕ} (hr : 0 < r) :
 theorem log_factorial_stirling_exact {r : ℕ} (hr : 0 < r) :
     log (r.factorial : ℝ) =
       (r : ℝ) * log (r : ℝ) - (r : ℝ) + log (r : ℝ) / 2 +
-        log (2 * pi) / 2 + stirlingError r := by
+        log (2 * Real.pi) / 2 + stirlingError r := by
   have hr0 : (r : ℝ) ≠ 0 := Nat.cast_ne_zero.mpr hr.ne'
   have h := Stirling.log_stirlingSeq_formula r
   rw [Real.log_div hr0 (Real.exp_pos 1).ne', Real.log_exp,

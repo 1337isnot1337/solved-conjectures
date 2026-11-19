@@ -1,8 +1,10 @@
 # Erdős 607 candidate verification
 
 The separate `Lean line-size candidate proofs` workflow checks six source
-closures. These files remain outside the accepted package until their gates
-pass and their statements are reviewed.
+closures. Geometry, profile, and the smooth Euler kernel are registered in
+the accepted package; these tasks also provide strict regression checks.
+The other closures remain candidates until their gates pass and their
+statements are reviewed.
 
 | Candidate | Required scope |
 | --- | --- |
@@ -21,6 +23,16 @@ Only `propext`, `Classical.choice`, and `Quot.sound` are allowed. The receipt
 records the commit, every project source hash, pinned configuration hashes,
 and the gates that actually completed. A failed or interrupted job does not
 provide a passing receipt.
+
+At commit `42fff1a2f87955f29c25beb0d16f23d46e91b489`, the geometry,
+Euler-kernel, and tuple jobs passed all three gates. The tuple job audited
+307 theorem declarations and independently replayed its nine-module closure.
+The profile job exposed unused tactics under its stricter source settings;
+the previous source, axiom, and kernel receipt remains tied to its recorded
+hashes. The repairs require a new unchanged-source receipt. The generating
+function stopped at a gap-series type-inference error. The Euler-correction
+job found namespace and normalization errors in its Stirling and trapezoid
+prerequisites. These candidate repairs are not passing proof receipts.
 
 After a source error the workflow checks unrelated files to expose their
 diagnostics. It skips every dependent source and fails the task before the

@@ -131,6 +131,6 @@ theorem intervalIntegrable_varianceKernel {u : ℝ} (hu : 0≤u) :
 
 theorem V_pos {u : ℝ} (hu : 0<u) : 0<V u :=
   intervalIntegral.intervalIntegral_pos_of_pos_on (intervalIntegrable_varianceKernel hu.le)
-    (fun x hx => varianceKernel_pos hx.1) hu
+    (fun _x hx => varianceKernel_pos hx.1) hu
 
 end LineSize.Profile

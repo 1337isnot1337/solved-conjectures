@@ -74,7 +74,6 @@ theorem hasDerivAt_f {x : ℝ} (hx : 0<x) :
     have hd : Real.exp x-1≠0 := ne_of_gt (exp_sub_one_pos hx)
     rw [Real.exp_neg]
     field_simp
-    <;> ring
 
 theorem continuousAt_f {x : ℝ} (hx : 0<x) : ContinuousAt f x :=
   (hasDerivAt_f hx).continuousAt

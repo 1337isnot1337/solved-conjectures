@@ -110,7 +110,8 @@ theorem coordinate_le_gapWeight (r : ℕ) (z : Fin r → ℕ) (j : Fin r) :
       simpa only [one_mul] using Nat.mul_le_mul_right (z j) (show 1 ≤ j.val+1 by omega)
     _ ≤ gapWeight r z := by
       change (j.val+1)*z j ≤ ∑ i : Fin r, (i.val+1)*z i
-      exact single_le_sum (fun _ _ => Nat.zero_le _) (mem_univ j)
+      exact single_le_sum (f := fun i : Fin r => (i.val+1)*z i)
+        (fun _ _ => Nat.zero_le _) (mem_univ j)
 
 def gapVectors (r n : ℕ) : Finset (Fin r → ℕ) :=
   (gapBox r n).filter (fun z => gapWeight r z=n)
