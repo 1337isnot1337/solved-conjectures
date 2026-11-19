@@ -33,7 +33,12 @@ The exact saddle constant, unique saddle, curvature, global phase bound,
 and mean/variance identities have passed source, axiom, and independent
 kernel checks. The exponential-series integral supplies the constant.
 
-The generating-function evaluation, uniform corrected Euler product,
-Fourier local limit, tail control, and sharp coefficient asymptotic remain
-in progress. See [the obligations](LEAN_PLAN.md) and
+Canonical core/tail reconstruction, cumulative cost counting, and the exact
+corrected finite Euler product are also checked. The Euler proof includes the
+square-root factor and a uniform logarithmic error estimate on positive compact
+ranges of the scaled core length. Its eight-module closure passed strict source,
+the 122-theorem axiom audit, and independent kernel replay.
+
+The full generating-function evaluation, Fourier local limit, tail control,
+and sharp coefficient asymptotic remain in progress. See [the obligations](LEAN_PLAN.md) and
 [the checked scope and receipts](../../docs/lean-status.md).

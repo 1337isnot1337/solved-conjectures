@@ -78,7 +78,11 @@ theorem integral_recordGenerating {q : ℝ} (hq : 0 < q) (hq1 : q < 1) (n : ℕ)
         (fun m : ℕ => ∫ theta in -Real.pi..Real.pi, term q n m theta)
         (∑ m ∈ ({n} : Finset ℕ), ∫ theta in -Real.pi..Real.pi, term q n m theta) :=
       hasSum_sum_of_ne_finset_zero hoff
-    simpa only [sum_singleton,integral_term,ite_eq_left rfl] using h
+    have hself : (∫ theta in -Real.pi..Real.pi, term q n n theta)=
+        (2*(Real.pi : ℂ))*((lineSizeCount n : ℂ)*(q : ℂ)^n) := by
+      rw [integral_term,ite_eq_left rfl]
+    rw [sum_singleton,hself] at h
+    exact h
   exact (hasSum_integral_term hq hq1 n).unique hfinite
 
 theorem two_pi_ne_zero : 2*(Real.pi : ℂ) ≠ 0 := by

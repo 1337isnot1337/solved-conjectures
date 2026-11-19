@@ -78,7 +78,12 @@ TASKS = {
          "LineSize.Fourier.damped_min_le_polynomialEnvelope",
          "LineSize.Fourier.integrable_polynomialEnvelope",
          "LineSize.Fourier.rescaled_fourier_bound",
-         "LineSize.Fourier.integrable_supportedDamping"],
+         "LineSize.Fourier.integrable_supportedDamping",
+         "LineSize.Fourier.geometric_product_scaled_envelope",
+         "LineSize.Geometric.exp_logarithm",
+         "LineSize.Geometric.characteristic_norm",
+         "LineSize.Geometric.logarithm_quadratic_error",
+         "LineSize.Geometric.logarithm_scaled_error_tendsto"],
     ),
     "tuples": (
         "Conjectures.LineSizeTuplesCandidate",
@@ -135,6 +140,19 @@ TASKS = {
          "LineSize.Lattice.leftEndpoint_tendsto",
          "LineSize.Lattice.scaled_tsum_tendsto_of_dominated",
          "LineSize.Lattice.shifted_lattice_gaussian_limit"],
+    ),
+    "lattice-fourier": (
+        "Conjectures.LineSizeLatticeFourierDomination",
+        ["LineSize.Lattice.gaussian_fourier_trade",
+         "LineSize.Lattice.normalized_small_core_gap",
+         "LineSize.Lattice.integrable_jointEnvelope",
+         "LineSize.Lattice.coefficient_half_gaussian_bound",
+         "LineSize.Lattice.measurable_jointStep",
+         "LineSize.Lattice.jointStep_norm_bound",
+         "LineSize.Lattice.integrable_jointStep",
+         "LineSize.Lattice.integral_jointStep",
+         "LineSize.Lattice.jointStep_dominated_convergence",
+         "LineSize.Lattice.scaled_sum_integral_tendsto"],
     ),
 }
 GATE_INPUTS = {

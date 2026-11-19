@@ -83,3 +83,6 @@ import Conjectures.LineSizeEulerKernel
 
 import Conjectures.LonelinessFourSpeedGap
 import Conjectures.MotzkinCompact
+import Conjectures.MotzkinRankTwoRelations
+import Conjectures.LineSizeEulerProduct
+import Conjectures.LineSizeTuplesCandidate

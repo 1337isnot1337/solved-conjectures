@@ -87,7 +87,7 @@ theorem step_norm_le_gaussianEnvelope {h c C : ℝ} (hh : 0 < h) (hh1 : h ≤ 1)
       dsimp [y]
       linarith [hb.2]
     calc
-      ‖step h c A x‖ = ‖A n‖ := by simp only [step, hx, if_false, n]
+      ‖step h c A x‖ = ‖A n‖ := by simp only [step, hx, ite_false, n]
       _ ≤ C * (1+|y|) * Real.exp (-y^2) := hA n
       _ = C * ((1+|y|) * Real.exp (-y^2)) := by ring
       _ ≤ C * (3 * Real.exp 1 * Real.exp (-x^2/4)) :=

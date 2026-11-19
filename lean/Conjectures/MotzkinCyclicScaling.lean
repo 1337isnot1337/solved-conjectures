@@ -40,7 +40,7 @@ noncomputable def independenceNumber (N a b : ℕ) : ℕ :=
 
 theorem independenceNumber_eq (N a b : ℕ) [NeZero N] :
     independenceNumber N a b=independence (a:ZMod N) (b:ZMod N) := by
-  simp only [independenceNumber,dif_pos (NeZero.pos N)]
+  simp only [independenceNumber,dite_eq_left (NeZero.pos N)]
 
 theorem independenceNumber_scale (g M a b : ℕ) (hg : 0 < g) (hM : 0 < M) :
     independenceNumber (g*M) (g*a) (g*b)=g*independenceNumber M a b := by

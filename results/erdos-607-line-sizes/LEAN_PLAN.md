@@ -61,6 +61,11 @@ Derive the displayed formal power series `G(q)` from these bijections and
 identify the coefficient of `G(q)/(1-q)` with the actual geometric record
 count. The empty tuple and the one-line tuple must retain their exact meanings.
 
+Canonical tuple/core/tail reconstruction, exact cost weights, and the
+cumulative exact-cost identity are now accepted from the nine-module,
+307-theorem hosted receipt. The complete explicit series and its analytic
+evaluation remain candidates.
+
 ## Sharp asymptotic
 
 The finite Euler-product estimates from the rectangle lane may be reused,
@@ -106,6 +111,23 @@ the pinned unchanged kernel. Preserve the exact final quantifiers and constant.
 The literal profile and singular-endpoint integral now pass their five-module
 source, 137-theorem axiom, and independent kernel checks. The exact saddle
 value, unique critical point, curvature, global Gaussian phase bound, and
-mean/variance identities are discharged. The corrected Euler-product and
-generating-function developments remain candidates; the local Fourier
-limit and coefficient assembly remain additional obligations.
+mean/variance identities are discharged. The uniform corrected Euler product
+is now accepted as well: its eight-module closure passed strict sources,
+the 122-theorem axiom audit, and independent kernel replay at `0bacde8`.
+The generating-function development, local Fourier limit, and coefficient
+assembly remain additional obligations.
+
+## Current analytic route
+
+The new candidates work with the literal finite product of geometric
+characteristic factors. A summed cubic logarithmic error becomes
+`O(sqrt(t)*abs(y)^3)` under `theta=t*sqrt(t)*y` on a bounded scaled-core range.
+The fixed Fourier prefix provides an integrable frequency envelope. For short
+cores, half of the core Gaussian supplies the missing frequency damping.
+
+A separate floor-defined lattice step converts the scaled infinite sum to
+an actual product-measure integral. Its dominated-convergence theorem keeps
+the actual coefficient bound, measurability, and pointwise limit as explicit
+hypotheses. Those hypotheses and the Gaussian constant must be discharged
+for the present generating function. None of these new candidate implications
+is a substitute for the final sharp asymptotic.

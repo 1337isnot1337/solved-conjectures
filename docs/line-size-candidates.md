@@ -1,8 +1,9 @@
 # Erdős 607 candidate verification
 
-The separate `Lean line-size candidate proofs` workflow checks ten source
-closures. Geometry, profile, and the smooth Euler kernel are registered in
-the accepted package; these tasks also provide strict regression checks.
+The separate `Lean line-size candidate proofs` workflow checks eleven source
+closures. Geometry, profile, the smooth Euler kernel, the corrected Euler
+product, and finite tuple reconstruction are registered in the accepted
+package; these tasks also provide strict regression checks.
 The other closures remain candidates until their gates pass and their
 statements are reviewed.
 
@@ -13,11 +14,12 @@ statements are reviewed.
 | `euler-kernel` | A smooth regular part of the finite Euler-product logarithm, including its actual value at zero and its formula away from zero. |
 | `euler-correction` | A uniform endpoint correction, a bounded Stirling remainder, and the exact finite Euler-product correction with its square-root factor. |
 | `analytic-estimates` | Uniform Riemann errors for the geometric mean and variance, finite Euler-product correction, local saddle limits, and uniform bounds for the literal normalized core weights. |
-| `geometric-fourier` | A trigonometric energy lower bound, finite-product damping, the exact complex characteristic factor, its quantitative second-order logarithmic expansion, and an integrable majorant on the expanding frequency interval. |
+| `geometric-fourier` | A trigonometric energy lower bound, finite-product damping, the literal complex characteristic product, its quantitative logarithmic error and vanishing rescaled error, and an integrable majorant on the expanding frequency interval. |
 | `tuples` | Canonical core/tail reconstruction, exact cost weights, cumulative finite counting, and the formal identity relating exact and cumulative cost series. |
 | `generating-function` | The full coefficient formula, the separate exceptional cores, and the locally finite formal generating function for every tuple cost. |
 | `generating-evaluation` | Absolute convergence of the actual geometric-record generating function for norm less than one, its explicit infinite core formula, uniform convergence on smaller closed norm disks, and exact coefficient Fourier inversion. |
 | `lattice-integral` | Exact integration of the actual floor-defined lattice step, absolute-summability equivalence, an integrable shifted Gaussian envelope, and a filter-level dominated-convergence implication. |
+| `lattice-fourier` | A joint lattice/Fourier integrable envelope, the small-core Gaussian trade, exact integration of the supported infinite core sum, and a joint dominated-convergence implication. The literal coefficient bound, measurability, and pointwise limit remain explicit hypotheses. |
 
 Each job checks every project source in dependency order with warnings treated
 as errors, audits all theorem
@@ -57,7 +59,14 @@ The workflow selects closures affected by a source change. Changes to its
 verification scripts or pinned configuration select every candidate. It does
 not modify the separate loneliness and Graffiti candidate workflow.
 
-Even successful jobs for all ten candidates would not prove the final sharp
+At `0bacde816cd4cfb8811d2d82488f07297c0f7174`, the corrected Euler product
+passed all eight strict sources, a 122-theorem audit, and all eight independent
+kernel replays. Its [exact receipt](line-size-euler-correction-hosted-receipt.json)
+is now part of the accepted registration. The Taylor, saddle, quadrature,
+coefficient, and lattice drafts still required reported source repairs. The
+new product and joint-integral candidates have no passing receipt yet.
+
+Even successful jobs for all eleven candidates would not prove the final sharp
 asymptotic. The moving-core characteristic limit, the actual lattice-limit
 hypotheses, uniform tail passage, and final coefficient prefactor still need
 to be assembled. These obligations are recorded in the result's `LEAN_PLAN.md`.

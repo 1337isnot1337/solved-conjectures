@@ -29,12 +29,14 @@ noncomputable def pointCharacter (m k s : ℕ) (x y : UnitAddCircle)
 theorem pointCharacter_first (m k s : ℕ) (x y : UnitAddCircle)
     (hx : m • x=0) (hy : s • x+k • y=0) :
     pointCharacter m k s x y hx hy (first m k s)=x := by
-  simp [pointCharacter,first,quotient,linearCharacter]
+  change linearCharacter x y (1,0)=x
+  simp [linearCharacter]
 
 theorem pointCharacter_second (m k s : ℕ) (x y : UnitAddCircle)
     (hx : m • x=0) (hy : s • x+k • y=0) :
     pointCharacter m k s x y hx hy (second m k s)=y := by
-  simp [pointCharacter,second,quotient,linearCharacter]
+  change linearCharacter x y (0,1)=y
+  simp [linearCharacter]
 
 theorem character_score_le_optimum (m k s : ℕ) (hm : 0 < m) (hk : 0 < k)
     (χ : Group m k s →+ UnitAddCircle) :

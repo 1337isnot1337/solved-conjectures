@@ -69,11 +69,11 @@ theorem cells_disjoint {h c : ℝ} (hh : 0 < h) {r s : ℕ} (hrs : r ≠ s) :
 theorem step_eq_on_cell {E : Type*} [Zero E] {h c x : ℝ} (hh : 0 < h)
     (A : ℕ → E) {r : ℕ} (hx : x ∈ cell h c r) : step h c A x = A r := by
   obtain ⟨hxc, hr⟩ := (mem_cell_iff hh).1 hx
-  simp only [step, not_lt.mpr hxc, if_false, hr]
+  simp only [step, not_lt.mpr hxc, ite_false, hr]
 
 theorem step_eq_zero_of_lt {E : Type*} [Zero E] {h c x : ℝ}
     (A : ℕ → E) (hx : x < c) : step h c A x = 0 := by
-  simp only [step, hx, if_true]
+  simp only [step, hx, ite_true]
 
 theorem leftEndpoint_bounds {h c x : ℝ} (hh : 0 < h) (hx : c ≤ x) :
     leftEndpoint h c x ≤ x ∧ x < leftEndpoint h c x + h := by
@@ -104,7 +104,7 @@ theorem step_eq_tsum {E : Type*} [AddCommMonoid E] [TopologicalSpace E]
       exact hr ((mem_cell_iff hh).1 hrx).2.symm
 
 theorem volume_cell (h c : ℝ) (r : ℕ) : volume (cell h c r) = ENNReal.ofReal h := by
-  rw [cell, volume_Ico]
+  rw [cell, Real.volume_Ico]
   congr 1
   ring
 
@@ -131,7 +131,7 @@ theorem lintegral_enorm_step {h c : ℝ} (hh : 0 < h) (A : ℕ → ℂ) :
   apply tsum_congr
   intro r
   rw [lintegral_indicator_const (measurableSet_cell h c r), volume_cell,
-    ENNReal.ofReal_mul hh.le, ENNReal.ofReal_norm]
+    ENNReal.ofReal_mul hh.le, ofReal_norm]
   exact mul_comm _ _
 
 theorem integrable_step {h c : ℝ} (hh : 0 < h) (A : ℕ → ℂ)
@@ -158,7 +158,7 @@ theorem integrable_step_iff {h c : ℝ} (hh : 0 < h) (A : ℕ → ℂ) :
 theorem integrable_cell_indicator (h c : ℝ) (A : ℕ → ℂ) (r : ℕ) :
     Integrable ((cell h c r).indicator (fun _ => A r)) := by
   apply (integrable_indicator_iff (measurableSet_cell h c r)).2
-  apply integrableOn_const
+  refine integrableOn_const ?_ (enorm_ne_top (x := A r))
   rw [volume_cell]
   exact ENNReal.ofReal_ne_top
 

@@ -65,7 +65,8 @@ theorem cubic_exp_bound {c s : ℝ} (hc : 0 < c) (hs : 0 ≤ s) :
   nlinarith
 
 theorem integrable_polynomialEnvelope (c : ℝ) : Integrable (polynomialEnvelope c) := by
-  simpa only [polynomialEnvelope, div_eq_mul_inv] using
+  unfold polynomialEnvelope
+  simpa only [div_eq_mul_inv] using
     integrable_inv_one_add_sq.const_mul (dominationConstant c)
 
 theorem damped_min_le_polynomialEnvelope {c t y : ℝ} (hc : 0 < c) (ht : 0 < t)
@@ -89,8 +90,17 @@ theorem damped_min_le_polynomialEnvelope {c t y : ℝ} (hc : 0 < c) (ht : 0 < t)
     have hcubic := cubic_exp_bound hc htinv.le
     have hscaled := mul_le_mul_of_nonneg_left hcubic (sq_nonneg Real.pi)
     have hinv : 0 ≤ 1/c := by positivity
-    unfold dominationConstant
-    nlinarith
+    have hterm : y^2 * Real.exp (-c*t⁻¹) ≤ 27 * Real.pi^2/c^3 := by
+      calc
+        y^2 * Real.exp (-c*t⁻¹) ≤ Real.pi^2*(t⁻¹)^3 * Real.exp (-c*t⁻¹) := hprod
+        _ = Real.pi^2*((t⁻¹)^3 * Real.exp (-c*t⁻¹)) := by ring
+        _ ≤ Real.pi^2*(27/c^3) := hscaled
+        _ = 27 * Real.pi^2/c^3 := by ring
+    calc
+      Real.exp (-c*t⁻¹) * (1+y^2) =
+          Real.exp (-c*t⁻¹) + y^2 * Real.exp (-c*t⁻¹) := by ring
+      _ ≤ 1 + 27 * Real.pi^2/c^3 := add_le_add hexp hterm
+      _ ≤ dominationConstant c := by unfold dominationConstant; linarith
   · rw [min_eq_right (le_of_not_ge hmin)]
     have hexp : Real.exp (-c*y^2) ≤ 1 := by
       rw [← Real.exp_zero]

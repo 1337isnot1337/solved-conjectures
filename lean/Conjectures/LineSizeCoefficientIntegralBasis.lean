@@ -72,7 +72,7 @@ theorem integral_frequency_of_ne (m n : ℕ) (hmn : m ≠ n) :
   have hc : Complex.I*((m : ℂ)-(n : ℂ)) ≠ 0 :=
     mul_ne_zero Complex.I_ne_zero (sub_ne_zero.mpr hmnC)
   unfold frequency
-  rw [intervalIntegral.integral_exp_mul_complex hc,frequency_exp_endpoints,
+  rw [integral_exp_mul_complex hc,frequency_exp_endpoints,
     sub_self,zero_div]
 
 @[simp] theorem integral_frequency_self (n : ℕ) :

@@ -38,7 +38,7 @@ theorem step_tendsto_of_grid_values {ι : Type*} {l : Filter ι} {h c : ι → �
     Tendsto (fun i => step (h i) (c i) (A i) x) l (𝓝 z) := by
   apply Tendsto.congr' ?_ hA
   filter_upwards [(tendsto_atBot.1 clim) x] with i hci
-  simp only [step, not_lt.mpr hci, if_false]
+  simp only [step, not_lt.mpr hci, ite_false]
 
 theorem scaled_tsum_tendsto_of_dominated {ι : Type*} {l : Filter ι}
     [l.IsCountablyGenerated] {h c : ι → ℝ} {A : ι → ℕ → ℂ} {f : ℝ → ℂ}

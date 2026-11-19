@@ -28,10 +28,10 @@ never additional Lean axioms.
 | Loneliness on a fixed hyperplane | Partial | Exact shifted hyperplane maximum, attainment, integer Bézout construction, and the upper bound for every orthogonal integer velocity are checked. The uniform probability estimate, exceptional-subspace counts, Haar limiting law, and endpoint density remain open. |
 | Graffiti.pc Conjecture 318 ([@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)) | Complete | The all-order theorem uses actual graph distances and undirected complement-edge counts. Every total dominating set contains an adjacent total dominating pair; every minimal set has size two. The stated five-vertex graph proves sharpness of a one-unit relaxation. |
 | Li coefficient sign | Not formalized | Tree/partition certificates, chromatic symmetric functions, and the coefficient extraction remain to formalize. |
-| Erdős 607 line sizes | Partial | The exact realizability criterion for actual finite real-plane point sets and equality of geometric record count with the canonical tuple count are proved for every n. The exact saddle value, unique critical point, curvature, Gaussian phase bound, and mean/variance identities are checked. The generating function, corrected Euler product, Fourier local limit, and sharp coefficient asymptotic remain open. |
+| Erdős 607 line sizes | Partial | The exact realizability criterion and geometric counting identity are proved for every n. Canonical core/tail reconstruction and cumulative cost counting are checked. The saddle profile and uniform corrected finite Euler product, including the square-root factor, are checked. The full generating function, Fourier local limit, and sharp coefficient asymptotic remain open. |
 | Growing rectangles | Complete | The logarithmic asymptotic is proved uniformly for every `w ≥ h` as `h → ∞`, for literal integer-sided real-position tilings counted by block multiset. The real-to-grid bridge, cumulative partition asymptotic, both packing reservations, and exact leading constant are checked. |
 | Distance graphs with three missing differences | Complete | The actual extremal densities and circle maxima for `{1,k,k+5}` and `{1,k,k+7}` are classified for every positive `k`, including every small exception. Explicit periodic optima, the exact Conjecture 39 discrepancy, and infinitely many strict counterexamples are proved. |
-| Two-difference Motzkin theorem | Partial: general compact equality complete | Equality of actual Borel-set density and continuous-character supremum for every compact Hausdorff abelian group with invariant probability measure, including zero differences. The finite case also has attaining independent-set and character witnesses. Rank-based evaluations, cyclic criteria and examples, and evaluator/complexity claims remain outside the accepted root. |
+| Two-difference Motzkin theorem | Partial: general compact equality complete | Equality of actual Borel-set density and continuous-character supremum for every compact Hausdorff abelian group with invariant probability measure, including zero differences. Rank formulas for the stated relation generators and finite-relation attainment are checked. Existence of an exhaustive relation-basis classification, cyclic criteria and examples, and evaluator/complexity claims remain outside the accepted root. |
 | Tight six speeds and critical planes | Partial | The consecutive six-speed set has global value `1/7`. Uniqueness, plane classification, and the large-norm consequence remain open. |
 | Six-speed spectrum | Partial | Global values of the consecutive set, nine sporadic examples, the displayed `5/33` example, and the positive primitive family `[1,2,3,4,5,6s]` for every `s≥1` are checked. The remaining family branch, norm reduction and exhaustive classification remain open. |
 | Eight-runner equality cases | Partial | All three displayed sets have global value `1/8`. Exhaustiveness remains open. |
@@ -1166,3 +1166,39 @@ hosted gate remains pending. The
 [integration receipt](motzkin-compact-integration-receipt.json) binds every
 accepted source to this registration snapshot. The note's further rank,
 cyclic, evaluation, and exact complexity claims remain separate candidates.
+
+## Relation formulas, Euler correction, and finite tuple reconstruction
+
+Three previously separate passing components are now registered. Their
+statements retain the hypotheses in their exact source receipts.
+
+| Component | Strict source closure | Theorem axiom audit | Independent kernel replay |
+| --- | --- | --- | --- |
+| Motzkin relation formulas and attainment | 39 modules | 729 theorems | 39 modules |
+| Corrected finite Euler product | 8 modules | 122 theorems | 8 modules |
+| Finite tuple/core/tail reconstruction | 9 modules | 307 theorems | 9 modules |
+
+`Motzkin.rank_zero_density`, `rank_one_density`, and `rank_two_density`
+evaluate the compact density for the relation data stated in each theorem.
+`finite_relation_density_attained` constructs an actual Borel avoiding set
+when two independent finite relations hold. The formulas take relation
+generators as input. A theorem producing the appropriate generators for
+every subgroup of the integer plane is still being formalized.
+
+`LineSize.EulerKernel.finiteProduct_correction_exact` proves the literal
+finite-product correction with its square-root factor. The accompanying
+uniform bound controls the logarithmic error by a constant times the positive
+scale on each fixed compact range of positive `r*t`. The proof includes the
+Stirling remainder and a trapezoidal estimate for the smooth regular part.
+
+The tuple component proves canonical reconstruction, exact cost weights, and
+the identity relating cumulative and exact-cost formal series. It does not
+yet establish the complete explicit generating function.
+
+The new registration adds 13 proof modules to the 455-module package, giving
+468 proof modules and two roots. All inherited proof source hashes match the
+preceding registration. The full merged hosted gate remains pending.
+See the [integration receipt](motzkin-relations-euler-tuples-integration-receipt.json),
+[Motzkin receipt](motzkin-relations-hosted-receipt.json),
+[Euler receipt](line-size-euler-correction-hosted-receipt.json), and
+[tuple receipt](line-size-tuples-hosted-receipt.json).

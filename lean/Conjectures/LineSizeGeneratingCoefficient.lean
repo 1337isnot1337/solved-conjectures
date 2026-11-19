@@ -105,7 +105,7 @@ instance tailChoiceFintype (r : ℕ) : Fintype (TailChoice r) :=
   Fintype.ofFinset (Ico 3 r).powerset (fun _ => mem_powerset)
 
 theorem card_tailChoice (r : ℕ) : Fintype.card (TailChoice r)=2^(r-3) := by
-  letI : Fintype {T : Finset ℕ // T ⊆ Ico 3 r} := tailChoiceFintype r
+  let : Fintype {T : Finset ℕ // T ⊆ Ico 3 r} := tailChoiceFintype r
   calc
     Fintype.card (TailChoice r)=((Ico 3 r).powerset).card :=
       Fintype.card_of_subtype (Ico 3 r).powerset (fun _ => mem_powerset)

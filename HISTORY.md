@@ -1,5 +1,18 @@
 # History
 
+## 2026-11-19 — Relation formulas, Euler correction, and tuple reconstruction
+
+- Registered the Motzkin formulas for stated relation generators and
+  finite-relation Borel attainment after a 39-module strict source check,
+  729-theorem axiom audit, and independent kernel replay.
+- Registered the uniform corrected finite Euler product after its eight-module
+  closure passed strict sources, a 122-theorem audit, and independent replay.
+- Registered finite tuple/core/tail reconstruction and cumulative cost counting
+  from the earlier nine-module, 307-theorem hosted receipt.
+- Added 13 checked proof modules, giving 468 proof modules and two roots.
+  Full merged verification remains pending. Motzkin basis existence and the
+  cyclic/evaluator claims, and the line-size sharp asymptotic, remain open.
+
 ## 2026-11-19 — General compact Motzkin equality
 
 - Registered the exact density/continuous-character equality for arbitrary

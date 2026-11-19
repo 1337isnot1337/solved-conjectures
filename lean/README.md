@@ -86,8 +86,11 @@ recursions. See the [direct proof guide](../results/pham-denominator-degree/FORM
 actual density equals the continuous-character supremum in any compact
 Hausdorff abelian group with invariant probability measure, including zero
 differences. Its 34-module closure passed strict source, the 664-theorem
-standard-axiom audit, and exact independent kernel replay. The note's further
-evaluation and algorithmic claims remain candidates.
+standard-axiom audit, and exact independent kernel replay.
+`MotzkinRankTwoRelations` adds formulas for the stated relation generators and
+finite-relation Borel attainment. Its 39-module closure passed a 729-theorem
+audit and independent replay. Exhaustive basis existence and the cyclic and
+algorithmic claims remain candidates.
 
 
 `Conjectures.MotzkinDensity` connects actual measurable-set density and the
@@ -116,6 +119,9 @@ weight equivalence is checked separately.
 `LineSizeAnalyticProfile` proves the exact saddle value, unique critical
 point, curvature, global Gaussian bound, and moment identities.
 `LineSizeEulerKernel` gives the smooth regular part at the singular endpoint.
+`LineSizeEulerProduct` proves the exact square-root correction and the uniform
+logarithmic error bound for the literal finite product. `LineSizeTuplesCandidate`
+provides canonical core/tail reconstruction and cumulative cost counting.
 All these components have source, axiom, and independent kernel receipts.
 The full generating-function evaluation and sharp coefficient asymptotic
 remain unfinished.

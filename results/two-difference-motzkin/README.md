@@ -36,7 +36,11 @@ The [exact receipt](../../docs/motzkin-compact-hosted-receipt.json) records the
 unchanged sources, gate inputs, and completed checks.
 
 The finite theorem also supplies both an attaining independent set and an
-attaining circle character. The later rank-based evaluations, cyclic criteria
+attaining circle character. The formulas for explicitly stated relation bases
+and Borel attainment under two independent finite relations are now checked;
+their 39-module closure passed a 729-theorem audit and independent replay.
+See [the relation receipt](../../docs/motzkin-relations-hosted-receipt.json).
+The existence of an exhaustive relation-basis classification, cyclic criteria
 and examples, and exact algorithmic complexity claims are still candidates.
 See [the status report](../../docs/lean-status.md) for the precise checked scope.
 

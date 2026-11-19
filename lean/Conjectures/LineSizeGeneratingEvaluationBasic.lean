@@ -81,7 +81,10 @@ theorem hasSeriesValue_X_pow (q : K) (k : ℕ) :
   · have h : HasSum (seriesTerm ((PowerSeries.X : PowerSeries ℚ)^k) q)
         (∑ n ∈ ({k} : Finset ℕ), seriesTerm ((PowerSeries.X : PowerSeries ℚ)^k) q n) :=
       hasSum_sum_of_ne_finset_zero hoff
-    simpa only [sum_singleton,seriesTerm_X_pow,ite_eq_left rfl] using h
+    have hk : seriesTerm ((PowerSeries.X : PowerSeries ℚ)^k) q k=q^k := by
+      rw [seriesTerm_X_pow,ite_eq_left rfl]
+    rw [sum_singleton,hk] at h
+    exact h
 
 theorem hasSeriesValue_one (q : K) :
     HasSeriesValue (1 : PowerSeries ℚ) q (1 : K) := by

@@ -461,6 +461,19 @@ modules=(
   Conjectures.MotzkinDualRestriction
   Conjectures.MotzkinCharacterTransfer
   Conjectures.MotzkinCompact
+  Conjectures.LineSizeEulerStirling
+  Conjectures.LineSizeEulerTrapezoid
+  Conjectures.LineSizeGeneratingCumulative
+  Conjectures.LineSizeTuplesList
+  Conjectures.LineSizeTuplesCore
+  Conjectures.MotzkinCircleGeometry
+  Conjectures.LineSizeEulerProduct
+  Conjectures.LineSizeTuplesBuild
+  Conjectures.MotzkinRankOne
+  Conjectures.LineSizeTuplesCandidate
+  Conjectures.MotzkinRankTwo
+  Conjectures.MotzkinRelations
+  Conjectures.MotzkinRankTwoRelations
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

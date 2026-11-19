@@ -81,7 +81,9 @@ equality is now checked as well: actual Borel-set density equals the
 continuous-character supremum for arbitrary compact Hausdorff abelian groups
 with invariant probability measure, including zero differences. Its 34-module
 closure passed strict sources, the 664-theorem axiom audit, and independent
-kernel replay. Rank-based evaluations, cyclic criteria, and the exact
+kernel replay. The relation-basis formulas and finite-relation attainment
+have also passed a 39-module closure with a 729-theorem audit. Existence of
+the exhaustive relation-basis classification, cyclic criteria, and the exact
 algorithmic claims remain in progress.
 
 Graffiti.pc Conjecture 318 and its stated sharpness example are complete.
@@ -140,9 +142,10 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
    reduced-denominator minimality are proved.
 3. Distance graphs are complete: all density and character formulas, small
    exceptions, periodic attainments, and the infinite discrepancy branch.
-4. Two-difference Motzkin: the compact-group upper bound through finite boxes
-   and dense character restrictions, followed by the note's annihilator
-   evaluations, cyclic criteria, and exact algorithmic bounds.
+4. Two-difference Motzkin: derive the exhaustive relation-basis classification
+   and complete the cyclic criteria and exact algorithmic bounds. The general
+   compact equality, formulas for stated relation bases, and finite-relation
+   attainment are checked.
 5. Haralambis is complete: its exact density equality and optimal pair-sum
    periodic attainment were published in `22f3a5a`.
 6. Five-speed spectrum: complete the modular lifting/enumeration outside the
@@ -166,9 +169,10 @@ value is `s/(5s+1)`. The bounded five-speed classification remains separate work
     certificates and every stated primitive equality list.
 15. Growing rectangles are complete: real tiling semantics, cumulative
     partition estimates, and the uniform asymptotic over every width `w ≥ h`.
-16. Erdős 607: generating-function evaluation, corrected Euler-product
-    asymptotics, Fourier local limits and the sharp coefficient prefactor.
-    Actual geometric counting and the exact saddle profile are checked.
+16. Erdős 607: generating-function evaluation, Fourier local limits, and the
+    sharp coefficient prefactor. Actual geometric counting, finite tuple
+    reconstruction, the exact saddle profile, and the uniform corrected
+    finite Euler product are checked.
 17. Graffiti.pc Conjecture 318 is complete, including the all-order theorem
     and sharp five-vertex example.
 18. Loneliness on a fixed hyperplane: uniform fixed-tolerance probability

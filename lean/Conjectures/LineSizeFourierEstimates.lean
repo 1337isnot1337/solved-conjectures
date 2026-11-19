@@ -1,5 +1,7 @@
 import Conjectures.LineSizeGeometricTaylor
 import Conjectures.LineSizeFourierDomination
+import Conjectures.LineSizeFourierScaling
+import Conjectures.LineSizeGeometricProductRescale
 
-/-! Quantitative finite-product Fourier bounds and an integrable majorant
-on the expanding rescaled frequency interval. -/
+/-! The literal finite characteristic product, its vanishing logarithmic
+error at the Fourier scale, and an integrable frequency majorant. -/

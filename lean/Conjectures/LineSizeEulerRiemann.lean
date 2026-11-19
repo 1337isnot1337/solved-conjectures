@@ -66,10 +66,10 @@ theorem rightSum_error_bound {f : ℝ → ℝ} (hf : ContDiff ℝ 2 f)
   calc
     _ ≤ |t * (rightSum f r t - (f ((r : ℝ) * t) - f 0) / 2) -
         (∫ x in 0..((r : ℝ) * t), f x)| +
-        |t * (f ((r : ℝ) * t) - f 0) / 2| := abs_add _ _
+        |t * (f ((r : ℝ) * t) - f 0) / 2| := abs_add_le _ _
     _ ≤ (r : ℝ) * t ^ 3 * D / 12 + t * |f ((r : ℝ) * t) - f 0| / 2 := by
       rw [abs_div, abs_mul, abs_of_pos ht, abs_of_pos (by norm_num : (0 : ℝ) < 2)]
-      exact add_le_add_right herr _
+      exact add_le_add herr le_rfl
 
 theorem rightSum_error_uniform {f : ℝ → ℝ} (hf : ContDiff ℝ 2 f)
     {b : ℝ} (hb : 0 < b) :
@@ -84,9 +84,8 @@ theorem rightSum_error_uniform {f : ℝ → ℝ} (hf : ContDiff ℝ 2 f)
   refine ⟨b * D / 12 + B + 1, by positivity, ?_⟩
   intro r t ht ht1 hu
   rcases Nat.eq_zero_or_pos r with rfl | hr
-  · simp only [rightSum, range_zero, sum_empty, mul_zero, Nat.cast_zero,
-      intervalIntegral.integral_same, sub_self, abs_zero]
-    positivity
+  · simpa [rightSum] using
+      (show (0 : ℝ) ≤ (b * D / 12 + B + 1) * t by positivity)
   have hrt : 0 ≤ (r : ℝ) * t := by positivity
   have hend : |f ((r : ℝ) * t) - f 0| ≤ 2 * B := by
     have h1 : |f ((r : ℝ) * t)| ≤ B := by

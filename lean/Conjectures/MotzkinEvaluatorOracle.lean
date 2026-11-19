@@ -58,7 +58,7 @@ theorem feasible_spec (m k s h : ℕ) (hm : 0 < m) (hk : 0 < k) :
     · intro _
       refine ⟨0,0,hm,hN,?_,?_,?_,?_,?_⟩ <;> simp
     · intro _
-      simp only [feasible,ite_eq_left rfl]
+      rfl
   have hp : 0 < h := Nat.pos_of_ne_zero hh
   rw [feasible,ite_eq_right hh,decide_eq_true_eq,
     countPairs_pos_iff (m*k) m s h (rowStart h k) (upperRow m k h) hm hp]
@@ -91,7 +91,7 @@ def optimum (m k s : ℕ) : ℕ := Search.lastTrue (feasible m k s) 0 (m*k/2+1)
 theorem optimum_spec (m k s : ℕ) (hm : 0 < m) (hk : 0 < k) :
     Feasible m k s (optimum m k s) ∧
       ∀ h : ℕ, Feasible m k s h → h ≤ optimum m k s := by
-  have hlo : feasible m k s 0=true := by simp only [feasible,ite_eq_left rfl]
+  have hlo : feasible m k s 0=true := rfl
   obtain ⟨htrue,hmax⟩ := Search.is_last_true (feasible m k s) (feasible_mono m k s hm hk)
     0 (m*k/2+1) (by omega) hlo (feasible_half_false m k s hm hk)
   exact ⟨(feasible_spec m k s _ hm hk).mp htrue,

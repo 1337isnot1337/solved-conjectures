@@ -31,7 +31,7 @@ theorem logEuler_le_integral (r : ℕ) {t : ℝ} (ht : 0 < t) :
     rw [zero_add]
     dsimp [F]
     rw [intervalIntegral.integral_comp_mul_right _ ht.ne']
-    simp only [zero_mul, smul_eq_mul, Profile.I, div_eq_mul_inv, mul_comm]
+    simp [smul_eq_mul, Profile.I, div_eq_mul_inv, mul_comm]
   rw [hsum, hint] at h
   exact h
 
@@ -55,7 +55,6 @@ theorem coreWeight_le_phase (r : ℕ) {β t : ℝ} (hβ : 0 ≤ β) (ht : 0 < t)
       (r : ℝ) * log 2 - t * (r : ℝ) ^ 2 + Profile.I ((r : ℝ) * t) / t := by
     unfold Profile.Phi
     field_simp
-    ring
   rw [hid]
   have hnonneg : 0 ≤ t * β * (r : ℝ) := by positivity
   nlinarith
