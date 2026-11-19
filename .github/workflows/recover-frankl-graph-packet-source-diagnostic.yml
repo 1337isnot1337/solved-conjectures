@@ -21,18 +21,13 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           python3 - <<'PY'
-          import hashlib, io, json, os, pathlib, urllib.request, zipfile
-          api = "https://api.github.com/repos/1337isnot1337/solved-conjectures"
+          import hashlib, io, json, pathlib, sys, zipfile
+          helper = pathlib.Path("scripts/preserve_frankl_transport_receipts.py")
+          assert hashlib.sha256(helper.read_bytes()).hexdigest() == "2509cf8ff29420abeedb5df247f31529938387eb272a788349fb36056cb05ef7"
+          sys.path.insert(0, "scripts")
+          import preserve_frankl_transport_receipts as network
           def get(path):
-              req = urllib.request.Request(api + path, headers={
-                  "Authorization": "Bearer " + os.environ["GH_TOKEN"],
-                  "Accept": "application/vnd.github+json",
-                  "User-Agent": "fixed-frankl-failure-recovery"})
-              with urllib.request.urlopen(req, timeout=60) as response:
-                  raw = response.read(64 * 1024 * 1024 + 1)
-              if len(raw) > 64 * 1024 * 1024:
-                  raise RuntimeError("Archive bound exceeded")
-              return raw
+              return network.request(network.API + path, limit=64 * 1024 * 1024)
           aid = 14532912378
           metadata = json.loads(get("/actions/artifacts/" + str(aid)))
           expected = "d60d381bd6ca7d00c86d315ef59b21b2a2d84a780e658b5f661fb99de7a86f74"
