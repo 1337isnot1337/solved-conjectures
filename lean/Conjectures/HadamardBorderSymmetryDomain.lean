@@ -101,8 +101,7 @@ noncomputable def borderQuotientProductEquiv149 [Finite G] (S : AddSubgroup G)
 /-- A subgroup of prime order 149 is additively isomorphic to `ZMod 149`. -/
 noncomputable def subgroupEquivZMod149 (S : AddSubgroup G) (hS : Nat.card S = 149) :
     S ≃+ ZMod 149 := by
-  simpa only [hS] using
-    (zmodAddCyclicAddEquiv (G := S) (isAddCyclic_of_prime_card hS)).symm
+  exact hS ▸ (zmodAddCyclicAddEquiv (G := S) (isAddCyclic_of_prime_card hS)).symm
 
 /-- Product coordinates for every finite abelian domain with a subgroup
 of size 149 and index four. -/
@@ -132,7 +131,7 @@ theorem borderDomainEquiv149_subtype [Finite G] (S : AddSubgroup G)
   · change QuotientAddGroup.mk' S (s : G) = 0
     exact (QuotientAddGroup.eq_zero_iff (s : G)).mpr s.property
   · change subgroupEquivZMod149 S hS (borderRetraction149 S hindex (s : G)) = _
-    rw [borderRetraction149_subtype]
+    rw [borderRetraction149_subtype S hS hindex s]
 
 /-- The image of `S` is the entire second factor, not just a subset of it. -/
 theorem borderDomainEquiv149_map_subgroup [Finite G] (S : AddSubgroup G)

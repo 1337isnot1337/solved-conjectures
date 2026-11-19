@@ -70,7 +70,25 @@ TASKS = {'arithmetic': ('Conjectures.HadamardBorderSymmetryArithmetic',
            'HadamardBorderSymmetry.common_multiplier_card_dvd_four',
            'HadamardBorderSymmetry.common_multiplier_card_le_four',
            'HadamardBorderSymmetry.common_multiplier_isCyclic',
-           'HadamardBorderSymmetry.common_multiplier_orbit_count_ge_151'])}
+           'HadamardBorderSymmetry.common_multiplier_orbit_count_ge_151']),
+ 'transfer': ('Conjectures.HadamardBorderSymmetryTransfer',
+              ['HadamardBorderSymmetry.rowsInProduct149_isBorderCore',
+               'HadamardBorderSymmetry.conjugated_multiplier_mem_iff',
+               'HadamardBorderSymmetry.card_multiplierOrbitOn_eq',
+               'HadamardBorderSymmetry.common_multiplier_card_dvd_four_on_subgroup149',
+               'HadamardBorderSymmetry.common_multiplier_card_le_four_on_subgroup149',
+               'HadamardBorderSymmetry.common_multiplier_isCyclic_on_subgroup149',
+               'HadamardBorderSymmetry.common_multiplier_orbit_count_ge_151_on_subgroup149',
+               'HadamardBorderSymmetry.symmetry_subgroup_card_dvd_four_on_subgroup149',
+               'HadamardBorderSymmetry.symmetry_subgroup_isCyclic_on_subgroup149',
+               'HadamardBorderSymmetry.symmetry_subgroup_orbit_count_ge_151_on_subgroup149'])}
+
+# Check the final assemblies first so their dependency diagnostics are available
+# before independent component jobs finish. Every selected gate remains strict.
+TASKS = {task: TASKS[task] for task in (
+    'transfer', 'main', 'kernel', 'domain', 'group-arithmetic', 'projection',
+    'weighted', 'core', 'prime', 'orbits', 'pairs', 'arithmetic',
+)}
 
 GATE_INPUTS = {'.github/workflows/lean-hadamard-border-symmetry-candidates.yml',
  'lean/lake-manifest.json',

@@ -235,7 +235,7 @@ theorem order37_automorphism_apply149 [Finite Q] (hQ : Nat.card Q = 4)
     (q : Q) (z : ZMod 149) :
     e.toAdd (q, z) = (q, (multiplierProjection149 hQ e : ZMod 149) * z) := by
   simpa only [order37_quotientProjection149_eq_one hQ e he,
-    Multiplicative.toAdd_one, AddAut.zero_apply] using
+    toAdd_one, AddAut.zero_apply] using
     automorphism_product_apply149 hQ e q z
 
 theorem units149_card : Nat.card (ZMod 149)ˣ = 148 := by
