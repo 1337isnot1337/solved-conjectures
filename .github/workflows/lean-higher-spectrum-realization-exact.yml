@@ -49,6 +49,7 @@ on:
       - 'lean/Conjectures/LonelinessCoordinateSubspace.lean'
       - 'lean/Conjectures/LonelinessDistanceColoring.lean'
       - 'lean/Conjectures/LonelinessHigherTriangleConsequences.lean'
+      - 'lean/Conjectures/LonelinessSevenLowGapInput.lean'
       - 'lean/Conjectures/LonelinessIntegerDirection.lean'
       - 'lean/Conjectures/LonelinessPacking.lean'
       - 'lean/Conjectures/LonelinessPackingLower.lean'
@@ -96,6 +97,19 @@ on:
       - 'lean/Conjectures/LonelinessSixPlaneDataPilotForty.lean'
       - 'lean/Conjectures/LonelinessSixPlaneDataPilotSmall.lean'
       - 'lean/Conjectures/LonelinessSixPlaneDataTables.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneChunkSoundness.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverage.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverage00.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverage01.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverage02.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverage03.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverage04.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverage05.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverage06.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverage07.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverage08.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverage09.lean'
+      - 'lean/Conjectures/LonelinessSixPlaneDataCoverageSoundness.lean'
       - 'scripts/verify_frankl_orbit_batches.py'
       - 'scripts/replay_lean.py'
       - 'scripts/plan_lean_candidates.py'
@@ -121,7 +135,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        task: [six-arithmetic, seven-eight, triangles, six-plane-semantics, six-plane-data-pilots]
+        task: [six-arithmetic, seven-eight, triangles, seven-low-gap, six-plane-semantics, six-plane-data-pilots]
     steps:
       - uses: actions/checkout@v4
       - name: Validate exact source and helper inventory

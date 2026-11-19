@@ -12,7 +12,19 @@ open CoordinateSubspace
 
 theorem bool_signs_coverage : ∀ b : Fin 6 → Bool, b 0 = true →
     ∃ mask : Fin 32, ∀ i, signs mask i = if b i then (1 : ℤ) else -1 := by
-  decide +kernel
+  intro b hb
+  let m : ℕ := (if b 1 then 1 else 0) + (if b 2 then 2 else 0) +
+    (if b 3 then 4 else 0) + (if b 4 then 8 else 0) + (if b 5 then 16 else 0)
+  have hm : m < 32 := by
+    dsimp [m]
+    cases b 1 <;> cases b 2 <;> cases b 3 <;> cases b 4 <;> cases b 5 <;> decide +kernel
+  refine ⟨⟨m, hm⟩, ?_⟩
+  intro i
+  fin_cases i
+  · simp [signs, hb]
+  all_goals
+    dsimp [signs, m]
+    cases b 1 <;> cases b 2 <;> cases b 3 <;> cases b 4 <;> cases b 5 <;> decide +kernel
 
 theorem signs_coverage (σ : Fin 6 → ℤ)
     (hσ : ∀ i, σ i = 1 ∨ σ i = -1) (hzero : σ 0 = 1) :
@@ -110,12 +122,12 @@ theorem normalized_low_plane (hfour : LonelyRunnerBound 4) (hfive : FiveSpeedGap
       rcases hu with rfl | hu
       · change T (fun k => (q k : ℚ)) ∈ canonicalPlane i j p mask
         rw [hqT]
-        exact Submodule.smul_mem _ _ (Submodule.subset_span (by simp [canonicalPlane]))
+        exact Submodule.smul_mem _ _ (Submodule.subset_span (by simp))
       · rw [Set.mem_singleton_iff] at hu
         rw [hu]
         change T (fun k => (w k : ℚ)) ∈ canonicalPlane i j p mask
         rw [hwT]
-        exact Submodule.smul_mem _ _ (Submodule.subset_span (by simp [canonicalPlane]))
+        exact Submodule.smul_mem _ _ (Submodule.subset_span (by simp))
     · exact Submodule.span_le.mpr (Set.insert_subset_iff.mpr ⟨hqF, Set.singleton_subset_iff.mpr hcF⟩)
   refine ⟨σ, hσ, π.symm, i, j, p, mask, hFeq, ?_⟩
   rw [← hFeq]

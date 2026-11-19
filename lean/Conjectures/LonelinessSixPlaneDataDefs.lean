@@ -150,12 +150,12 @@ def decodeCertificate (code : ℕ) : PairCertificate :=
     .line ij.1 ij.2 ((code - 31) % 2 == 0)
   else .accepted (acceptances.getD (code - 61) acceptance0)
 
-def rowCertificates (i j : Fin 10) (row : Fin 360) (mask : Fin 32) : PairCertificate :=
+noncomputable def rowCertificates (i j : Fin 10) (row : Fin 360) (mask : Fin 32) : PairCertificate :=
   let wordId := (certificateWordIds.getD (10 * i.val + j.val) #[]).getD row.val 0
   let word := certificateWords.getD wordId 0
   decodeCertificate ((word >>> (8 * mask.val)) % 256)
 
-def partialCheck (i j : Fin 10) (start count : ℕ) : Bool :=
+noncomputable def partialCheck (i j : Fin 10) (start count : ℕ) : Bool :=
   (List.range count).all fun offset =>
     let row : Fin 360 := ⟨(start + offset) % 360, Nat.mod_lt _ (by decide)⟩
     certificateRowCheck directionAt i j row (rowCertificates i j row)

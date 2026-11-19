@@ -58,6 +58,7 @@ ROOTS = {
         "Conjectures.LonelinessHigherSpectrumBounds",
     ],
     "triangles": ["Conjectures.LonelinessHigherTriangleConsequences"],
+    "seven-low-gap": ["Conjectures.LonelinessSevenLowGapInput"],
     "six-plane-semantics": [
         "Conjectures.LonelinessSixPlaneClassificationCore",
         "Conjectures.LonelinessSixPlaneFiveInput",
@@ -67,6 +68,8 @@ ROOTS = {
         "Conjectures.LonelinessSixPlaneDataPilotSmall",
         "Conjectures.LonelinessSixPlaneDataPilotEight",
         "Conjectures.LonelinessSixPlaneDataPilotForty",
+        "Conjectures.LonelinessSixPlaneDataCoverage",
+        "Conjectures.LonelinessSixPlaneChunkSoundness",
     ],
 }
 

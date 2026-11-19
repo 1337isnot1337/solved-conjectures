@@ -29,8 +29,8 @@ theorem standard_mem (kind : Fin 3) (s t : ℚ) :
     standard kind s t ∈ standardPlane kind := by
   rw [standard_linear_combination]
   exact Submodule.add_mem _
-    (Submodule.smul_mem _ _ (Submodule.subset_span (by simp [standardPlane])))
-    (Submodule.smul_mem _ _ (Submodule.subset_span (by simp [standardPlane])))
+    (Submodule.smul_mem _ _ (Submodule.subset_span (by simp)))
+    (Submodule.smul_mem _ _ (Submodule.subset_span (by simp)))
 
 theorem standardPlane_finrank_le_two (kind : Fin 3) :
     Module.finrank ℚ (standardPlane kind) ≤ 2 := by

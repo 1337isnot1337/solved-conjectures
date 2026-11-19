@@ -110,12 +110,12 @@ theorem normalized_low_plane (hgap : FourSpeedGap)
       rcases hu with rfl | hu
       · change T (fun k => (q k : ℚ)) ∈ canonicalPlane i j p mask
         rw [hqT]
-        exact Submodule.smul_mem _ _ (Submodule.subset_span (by simp [canonicalPlane]))
+        exact Submodule.smul_mem _ _ (Submodule.subset_span (by simp))
       · rw [Set.mem_singleton_iff] at hu
         rw [hu]
         change T (fun k => (w k : ℚ)) ∈ canonicalPlane i j p mask
         rw [hwT]
-        exact Submodule.smul_mem _ _ (Submodule.subset_span (by simp [canonicalPlane]))
+        exact Submodule.smul_mem _ _ (Submodule.subset_span (by simp))
     · exact Submodule.span_le.mpr (Set.insert_subset_iff.mpr ⟨hqF, Set.singleton_subset_iff.mpr hcF⟩)
   refine ⟨σ, hσ, π.symm, i, j, p, mask, hFeq, ?_⟩
   rw [← hFeq]
