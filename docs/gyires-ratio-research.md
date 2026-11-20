@@ -77,3 +77,36 @@ An independent colleague supplied another exact counterexample to the one-sided 
 ## Relevant probability literature inspected
 
 Han–Niles-Weed, *Approximate independence of permutation mixtures*, arXiv:2408.09341v3, develops chi-square/permanent identities, zero-sum elementary-symmetric bounds, and PSD doubly-stochastic permanent bounds. Its Sections5.1–5.3 are directly relevant background, but no theorem establishing the global Gyires likelihood inequality was found there. Its overlap matrix is PSD; applying it to AA^T alone does not supply the needed lower bound on per A.
+
+## A radial-monotonicity route also fails exactly
+
+Let A=(I+C3)/2 and A(t)=J3+t(A−J3), 0<=t<=1. Direct symbolic expansion gives
+
+  per A(t)/c3 = P(t)=1+(3/8)t^2−(1/4)t^3.
+
+The row-factor polynomials of A(t) and A(t)^T coincide: their three linear factors are the same up to permutation. The occupancy/Fock inner-product identities therefore give the same normalized permanent for all three squared/product matrices (normality alone would not imply the A(t)^2 equality):
+
+  per(A(t)A(t)^T)/c3 = per(A(t)^T A(t))/c3
+                    = per(A(t)^2)/c3
+                    = D(t)=1+(3/32)t^4+(1/32)t^6.
+
+Hence R(A(t))=P(t)^2/D(t). At t=1, P=9/8, P'=0, D=9/8, D'=9/16, so R'(1)=−9/16<0. Thus the normalized Gyires ratio is NOT monotone increasing along every ray from J, already in order3. This is an obstruction to a proposed proof strategy, not a violation of Gyires: R(A)=9/8>1.
+
+## Exact radial sum-of-squares denominator
+
+Let F(X)=per(J_n+X)/c_n for zero-line-sum real X. If sigma_k(X) denotes the sum of all k-by-k subpermanents, then
+
+  F(tB)=sum_{k=0}^n [n^k/(n)_k] sigma_k(B) t^k.
+
+Set e_k(B;x)=sum_{|I|=k} product_{i in I}(sum_j B_ij x_j), and equip degree-k real polynomials with the Fock inner product <x^alpha,x^beta>=1[alpha=beta]alpha!. The generalized Cauchy–Binet identity gives
+
+  <e_k(B;x),e_k(C;x)>=sigma_k(BC^T).
+
+Consequently the normalized denominator of Gyires along J+tB is exactly
+
+  [F(t^2 BB^T)+F(t^2 B^T B)+2F(t^2 B^2)]/4
+  = sum_{k=0}^n [n^k/(n)_k] ||e_k(B;x)+e_k(B^T;x)||Fock^2 t^(2k)/4.
+
+Its constant coefficient is1, its k=1 term vanishes, and every other coefficient is nonnegative. This is an exact all-order identity, not a proof of the conjecture: the numerator F(tB)^2 has signed coefficients. The C3 example above already rules out coefficientwise positivity of the difference in powers of t, since its cubic term is negative. These identities also show precisely why one cannot replace the needed L2 estimate by a naive permanent contraction.
+
+A finite exact sanity checker for the intermediary obstructions is in check_obstructions.py (Python Fraction plus SymPy for the radial polynomial). It passes. No numerical optimization or Lean verification is involved.
