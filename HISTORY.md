@@ -1,5 +1,22 @@
 # History
 
+## 2026-11-20 — Karp–Vishnyakova–Zhang's Hankel-product conjecture
+
+Added a complete counterexample to closure of sign-regular Hankel kernels
+under pointwise products. The Cauchy kernel and the Gaussian Hankel kernel
+are both strictly sign regular in every order, but their product has
+order-two determinants of opposite signs. A second pair supplies entirely
+rational determinant witnesses.
+
+Independent internal reviews checked the full factor proofs and both
+counterexamples. The exact arithmetic verifier passed locally. The source
+audit records the original numbered conjecture, its continued assertion
+in the published article, and the distinction from total-positivity
+Hadamard closure and ordinary matrix multiplication. No prior resolution
+was found in the documented searches; external peer review and exclusive
+priority are not claimed.
+[Proof, source audit, and exact certificates](results/kvz-hankel-product/).
+
 ## 2026-11-20 — Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture
 
 Added a complete proof that the reciprocal q-gamma Hankel kernel is strictly

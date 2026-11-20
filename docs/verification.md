@@ -18,6 +18,12 @@ The partial-result entries contain their replay commands for the [Frankl generat
 
 These are the commands in [the verification workflow](../.github/workflows/verify.yml). They include finite tests, exact certificates, and exhaustive searches; their mathematical roles are explained in the corresponding proof notes. A passing computation is not a claim that a full theorem has been formalized.
 
+The [Hankel-product verifier](../results/kvz-hankel-product/verify.py) checks
+two exact rational determinants and two rational bounds on exponential
+values. The all-order hypotheses on the two factors are established in the
+[written proof](../results/kvz-hankel-product/PROOF.md), independently of these
+arithmetic checks.
+
 The workflow also regenerates the two compact CUT certificate sources with
 `results/cut-arithmetic-periodicity/generate_weight_certificates.py` into a
 temporary directory and compares them byte for byte with the checked-in files.
@@ -27,6 +33,7 @@ recursive-game identities through `CutPeriodWeightTheorem`.
 
 ```bash
 python3 -m pip install sympy==1.14.0
+python3 results/kvz-hankel-product/verify.py
 python3 results/kvz-reciprocal-qgamma/verify.py
 python3 results/sagan-swanson-normality/verify_model.py
 python3 results/karp-coefficient-positivity/verify.py
