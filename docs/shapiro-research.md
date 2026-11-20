@@ -19,7 +19,7 @@ Lagarias studies a rigidity question for integer Beurling systems under bounded 
 
 Let $E$ consist of the ordinary primes which are absent from $G$. Let $S_E$ be the integers whose prime factors all lie outside $E$. Multiplicative closure gives $S_E\subseteq G$. Any noninteger $\lambda\in G$ and a pair $n,m\in S_E$ satisfying $0\lt |\lambda n-m|\lt1$ contradict separation.
 
-**Theorem 1.** If $\sum_{p\in E}1/p\lt\infty$, all elements of $G$ are integers, and $A(x)\le\pi(x)$ for every $x$. If $\#(E\cap[1,x])=o(\pi(x))$, all *rational* elements of $G$ are integers. In particular, a separated system with a rational noninteger element omits a positive upper proportion of the ordinary primes.
+**Theorem 1.** Under either of the hypotheses $\sum_{p\in E}1/p\lt\infty$ or $\#(E\cap[1,x])=o(\pi(x))$, all elements of $G$ are integers and $A(x)\le\pi(x)$ for every $x$. In particular, any separated system with a noninteger element omits a positive upper proportion of the ordinary primes.
 
 ### Irrational elements when the omitted reciprocals converge
 
@@ -58,7 +58,7 @@ O\left(XV(z_0)\sum_{X^c\lt p\le X^{1-\delta},\ p\in E}\frac1p
    + X^{1-\delta/3}\right)=o(XV(X)).
 ```
 
-It remains to handle $p\gt X^{1-\delta}$. Write $L_1(k)=hp$ first. Then $h\le C X^\delta$ for a constant $C$ depending on the forms, and $h$ itself is $E$-free because $C X^\delta\lt X^c$ for large $X$. Primitivity of $L_1$ gives $\gcd(h,b)=1$. Thus $p$ runs in one class modulo $b$, say $p=r+bu$. The other form is $(ahp-t)/b$, an integral linear form in $u$. For an upper bound, sieve the $u$ interval by all primes up to $z_1=X^{c_*/4}$ for the primality of $p$, and by $E$ up to $z_1$ for the absence of those prime factors in the other form. The interval has length at most $O(X/h)$ and can be enlarged to that length. The primality restriction is valid since $p\gt z_1$, and the upper-sieve range condition holds since $h=O(X^\delta)$.
+It remains to handle $p\gt X^{1-\delta}$. Write $L_1(k)=hp$ first. Then $h\le C X^\delta$ for a constant $C$ depending on the forms, and $h$ itself is $E$-free because $C X^\delta\lt X^c$ for large $X$. Primitivity of $L_1$ gives $\gcd(h,b)=1$. Thus $p$ runs in one class modulo $b$, say $p=r+bu$. The other form is $(ahp-t)/b$, an integral linear form in $u$. For an upper bound, sieve the $u$ interval by all primes up to $z_1=X^{\min(c,c_*/4)}$ for the primality of $p$, and by $E$ up to $z_1$ for the absence of those prime factors in the other form. The interval has length at most $O(X/h)$ and can be enlarged to that length. The primality restriction is valid since $p\gt z_1$, and the upper-sieve range condition holds since $h=O(X^\delta)$.
 
 For primes $q\nmid abt$, the first form has one forbidden residue. If $q\in E$, the second form has a different forbidden residue since $q\nmid h$ and $t\ne0\pmod q$. The primes dividing $abt$ change the product by at most a constant depending on $a,b,t$. Hence the sieve product is at most a constant times $W(z_1)/\log X$. The bound for each $h$ is
 
@@ -82,6 +82,10 @@ The two large-prime counts are therefore at most $O_{a,b}(\delta X V(X))+o(XV(X)
 This excludes the rational noninteger. Convergence of the omitted reciprocal sum does not by itself imply relative prime density zero. For that hypothesis, the rational assertion follows directly from the same local root conditions: among $1\le k\le X$ the density passing a finite set of sieving primes is the corresponding product of $1-\nu(p)/p$, uniformly bounded below away from zero as the set grows. The union bound for the remaining primes gives $O_{a,b}(X\sum_{p\in E\setminus E_0}1/p+\pi(CX))$. Choose the finite set $E_0$ first, then let $X$ increase. This proves the rational part under either hypothesis.
 
 If $G$ contains only integers, the valuation vectors for the generators at most $x$ are linearly independent over the rationals, because an integer relation would equate products with distinct exponent vectors. They are supported on the $\pi(x)$ primes at most $x$, which proves the bound in Theorem 1. The same rank argument proves the eventual bound whenever all generators are rational and only finitely many are nonintegers. In that case take $x$ beyond all prime factors of every exceptional numerator and denominator.
+
+## Irrational elements when the omitted primes have relative density zero
+
+[Proof using continued-fraction lattices](shapiro-irrational-sieve.md). For every irrational $\lambda\gt1$, infinitely many $n$ have both $n$ and $\lfloor\lambda n\rfloor$ in $S_E$. This excludes every noninteger element under the second hypothesis of Theorem 1.
 
 ## Open step
 
