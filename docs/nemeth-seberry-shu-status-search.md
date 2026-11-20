@@ -29,4 +29,4 @@ Search results located original paper, surveys, Lavi status, sparse-degree exper
 
 The uniform determinant estimate is not new. It is used from Divoux–Wang arXiv:2610.23755v1, Proposition 3.1, with their attribution to McCullagh2014. New candidate contribution: binary sinusoidal Fourier profiles with cardinality correction, determinant-factor separation uniformly over a linear number of degrees, and use of the prime congruence to obtain V(p)/p→∞. The cardinality/Fourier lemma, concentration inequality, Parseval identity and modular permanent observation are elementary ingredients, not separately asserted novel.
 
-No explicit polynomial growth rate is claimed. No fixed sparse row-sum conjecture is claimed solved. The conclusion addresses the original all-row-sums O(p) conjecture.
+The [disproof](../results/nemeth-seberry-shu/PROOF.md) gives superlinear growth, and the [quantitative refinement](nss/quadratic-refinement.md) gives a quadratic lower bound. Neither settles the fixed sparse row-sum conjecture.

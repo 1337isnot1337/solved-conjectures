@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-20 — Németh–Seberry–Shu conjecture
+
+Added a written disproof of the all-row-sums conjecture for prime-order
+binary circulant permanents and linked the quadratic strengthening.
+[Result and scope](results/nemeth-seberry-shu/).
+
 ## 2026-11-20 — Horňák–Woźniak and Sonntag–Teichert conjectures
 
 Added written proofs and literature checks for both connected-partition

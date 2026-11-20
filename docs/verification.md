@@ -29,6 +29,7 @@ recursive-game identities through `CutPeriodWeightTheorem`.
 python3 results/erdos-granville-pomerance-spiro/verify.py
 python3 results/hornak-wozniak/verify.py
 python3 results/sonntag-teichert/verify.py
+python3 docs/nss/sanity_check.py --output /tmp/nss-sanity-results.json
 python3 results/l-solitaire-limit-shapes/verify.py
 python3 results/pham-denominator-degree/verify.py
 python3 results/pham-denominator-degree/verify.py --dual --brute-depth 13

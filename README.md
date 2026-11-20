@@ -12,6 +12,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Verification |
 | :--- | :---: |
+| [Németh–Seberry–Shu conjecture](results/nemeth-seberry-shu/) | ⬜ |
 | [Sonntag–Teichert conjecture](results/sonntag-teichert/) | ⬜ |
 | [Horňák–Woźniak conjecture](results/hornak-wozniak/) | ⬜ |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ |

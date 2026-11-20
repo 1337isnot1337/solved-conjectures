@@ -41,6 +41,8 @@ jobs:
         run: python3 results/hornak-wozniak/verify.py
       - name: Check Sonntag–Teichert domination hypergraphs
         run: python3 results/sonntag-teichert/verify.py
+      - name: Check finite prime-order circulant permanent examples
+        run: python3 docs/nss/sanity_check.py --output "$RUNNER_TEMP/nss-sanity-results.json"
       - name: Verify L-solitaire exhaustive finite checks
         run: python3 results/l-solitaire-limit-shapes/verify.py
       - name: Verify Pham exact main and dual certificates
