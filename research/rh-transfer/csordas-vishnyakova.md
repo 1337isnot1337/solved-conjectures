@@ -155,10 +155,16 @@ The following sources and followups were checked:
 
 Searches on 20 November 2026 used both search engines. Queries combined the two authors' names, the exact title, DOI, “Conjecture 3.6,” and “Cardon–Laguerre” with “counterexample,” “disproved,” “correction,” and “erratum.” Additional searches tested the explicit exponential/quartic form and recent indexed literature. No earlier refutation of the exact statement was retrieved.
 
-This is a bounded prior-art audit. An unsuccessful search does not establish exclusive priority. Citation-following and independent review are continuing.
+This is a bounded prior-art audit. An unsuccessful search does not establish exclusive priority. Independent reviewers also searched the exact conjecture and did not retrieve a prior resolution.
 
 ## Review status
 
-Root and an independent analytic worker checked the published hypotheses and the complete algebraic counterexample. Public receipts will be linked after review of this written note.
+Three independent reviews passed:
+
+- [Analytic full-written review](https://github.com/1337isnot1337/solved-conjectures/issues/132#issuecomment-7050109256) checked every coefficient in (9), the local-uniform-limit proof excluding LP, the original fixed-\(p\) quantifier, and Cardon's distinct genus-restricted theorem. It also performed an independent bounded prior-art search.
+- [Arithmetic source and algebra review](https://github.com/1337isnot1337/solved-conjectures/issues/132#issuecomment-7050114169) checked the complete original hypotheses, Newton sums, product identity, and \(L_2(0)=-2\).
+- [Root full-written review](https://github.com/1337isnot1337/solved-conjectures/issues/132#issuecomment-7050119806) independently checked the original publisher statement, every quantifier and sign, formula (9), and the polynomial-limit argument.
+
+No mathematical repair was requested. The published conjecture has no order or genus restriction, and the counterexample is unconditional.
 
 Internal review is not external peer review or Lean verification.
