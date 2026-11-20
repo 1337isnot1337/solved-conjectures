@@ -41,6 +41,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 | [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
 
+Results should be ordered by relative significance. Please put/keep them in that order if they are not
+
 **Verification key**
 
 - ✅ Fully Lean-verified.
