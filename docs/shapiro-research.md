@@ -116,6 +116,10 @@ For the rational proof this follows by bounding $V(z_1)/V(X)$ by $c_1^{-2\eta}(1
 
 because each omitted prime costs at most a fixed multiple of $X V(z_0)/p$. Choose $\eta_0\gt0$ so the medium-prime term is at most $XV(X)/8$ to leading order and the large-prime term is at most $XV(X)/4$ to leading order when $\eta=\eta_0$. These choices are independent of the fixed noninteger element. Its parameters affect the cutoff from which the inequalities apply. Both proofs yield a surviving pair and contradict separation. This proves the asserted lower bound on the limsup.
 
+## A fixed-number-field bound
+
+[Proof using prime ideals and the logarithmic unit lattice](shapiro-contracting-fields.md). If the generators are algebraic integers in one fixed real number field and the other conjugates have absolute value at most one, their count is at most $(1-c_K)\pi(x)$ eventually. The proof only needs multiplicative independence within this class.
+
 ## Open step
 
 The theorem constrains attempts to extend a finite nonintegral counterexample by including almost all ordinary primes. The appearance of a positive proportion of omitted primes does not compare the total of the noninteger and integer generalised generators. A proof of the eventual inequality or a single counterexample violating it for arbitrarily large $x$ remains open.
