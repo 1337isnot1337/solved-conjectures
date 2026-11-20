@@ -139,3 +139,29 @@ Indeed a length-five bundle occupies a three-port rim path, with external-incide
 If t_v≤1, there is no three-port rim path, so no weight-five bundle. Total weight is at least22, and every edge weight is at most4. Therefore degree≥6.
 
 These refinements restrict all possible degree-four cells to rims with at least four edges. They still do not supply the missing triangular-face inequalities or a global contradiction. In particular, neither a full solution nor a novelty claim follows from the degree bounds.
+
+## Why degree and weight inequalities alone still cannot finish
+
+As an abstract relaxation, take a plane octahedral graph J, assign weight4 to every edge, and assign defect r=2 to every vertex. Each vertex then has degree4 and weighted degree16=12+2r. All degree bounds above hold. There are no weight-five edges, so even a prohibition on triangular faces containing two such edges would not rule out this relaxation.
+
+This is not a cover construction: no locally bijective port labels have been supplied, and the cited finite-fold theorem already excludes a corresponding cover at this size. Its purpose is to demonstrate that the proved scalar inequalities are logically insufficient. Any completion must use additional labelled-cell compatibility or a valid reduction operation, not just repeat Euler counting with these inequalities.
+
+## Additional local restriction for weight four
+
+A four-edge strip has a two-port side (a0,a1) and a three-port side (b0,b1,b2). The latter has a full middle port b1, hence two rim edges there. The two-port side contains a defective rim port (rim degree at most1).
+
+If a0 and a1 are not joined by a rim edge, this follows from their consecutive position in the cell rotation. If they are rim adjacent, their labels are not opposite. The interior-neighbor equation at b1 then forces b0=−a1 and b2=−a0. Each ai already has its two strip neighbors and the other aj as neighbors; its fourth required octahedral neighbor is −b1. If both ai had rim degree2, they would share this third rim vertex and form a prohibited rim triangle. Thus at least one is defective.
+
+Consequently weight-four edges can be oriented from their two-port side, which has a rim defect, toward their three-port side, which consumes the full external block of a rim-degree-two port. This generalizes the exclusion of a wheel on the two-port side. It is a potential accounting mechanism, not a completed global charge-transfer argument.
+
+## Triangular faces cannot contain two weight-five edges
+
+This argument passed independent review, including its use of rotation order. Each end of a five-bundle lies strictly inside a port's external block: its anchored end contributes two edges at a port of external degree at least3, and its terminal end contributes one at a port of external degree at least2. The immediately following external edge on the face side must therefore still use the same port. Otherwise the missing external incidences would interrupt the five-bundle internally.
+
+Suppose two five-bundles are consecutive around a face corner. They must share a port x. Two anchored ends would use four external edges at a port having rim degree at least1, impossible. An anchored and a terminal end would put rim neighbors on both sides of x in the cell rotation, contradicting the anchored end's rim degree at most1. Thus both ends are terminal. Their five distinct cyclic ports form a rim path
+
+    a0,a1,x,c1,c0.
+
+Normalize the first three labels to (1,2,3), which is possible because the five-strip equations make them pairwise adjacent. The two external neighbors of x have labels −a0 and −c0. Together with its rim neighbors a1,c1 these must be the four distinct neighbors of label3. Thus c1=−2 and c0=−1. The two external edges at x therefore end at labels −1 and1 in the other two cells.
+
+If the collapsed face were triangular, its third edge would be represented by the immediately adjacent external edge at the relevant endpoints in those cells. Those endpoints are the anchored ports of the original five-bundles; their blocks are partial as above. Hence this closing edge would join those same two ports, whose labels are opposite. This violates the covering map's adjacency requirement. No triangular face of J can therefore contain two weight-five edges.
