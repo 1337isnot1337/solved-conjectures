@@ -1,6 +1,6 @@
 # Merlini–Sala–Sala conjecture
 
-Research date: 20 November 2026. Coordination: [issue #80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
+Research date: 20 November 2026. [Issue #128](https://github.com/1337isnot1337/solved-conjectures/issues/128). Coordination: [issue #80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
 
 ## Exact statement and result
 
@@ -282,8 +282,8 @@ This is a disproof of a full asymptotic assertion about all coefficients, not a 
 
 - **Arias de Reyna (2011)**, [author's full text](https://personal.us.es/arias/56-2RHB.pdf), proves the \(H^2\)/square-summability criterion. That theorem is an established input and is not the lower bound (4). The present proof of the implication needed from it is included in Section 1.
 - **Lagarias (2007)**, [*Li coefficients for automorphic L-functions*](https://www.numdam.org/articles/10.5802/aif.2311/), proves the conditional \(O(\sqrt n\log n)\) estimate for the relevant arithmetic contribution. An upper bound of that size does not resolve the logarithmic/subpower assertion.
-- **Maślanka (2004)**, [*Li's coefficients for the Riemann zeta function*](https://arxiv.org/pdf/math/0402168), provides the trend/tiny decomposition and numerical study. No theorem of the form (4) was found there.
-- **Voros (2022)**, [*The Riemann Hypothesis: a review of recent and current results*](https://arxiv.org/pdf/2204.01036), §3, reviews Keiper–Li asymptotics and a different discretized sequence. Its remainder discussion does not give the present lower bound.
+- **Maślanka (2004)**, [*Effective method of computing Li's coefficients and their properties*](https://arxiv.org/pdf/math/0402168), provides the trend/tiny decomposition and numerical study. No theorem of the form (4) was found there.
+- **Voros (2022)**, [*From asymptotic to closed forms for the Keiper/Li approach to the Riemann Hypothesis*](https://arxiv.org/pdf/2204.01036), §3, reviews Keiper–Li asymptotics and a different discretized sequence. Its remainder discussion does not give the present lower bound.
 
 ### Later papers by the conjecture's authors
 
