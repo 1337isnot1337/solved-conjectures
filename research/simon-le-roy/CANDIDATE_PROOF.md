@@ -2,7 +2,7 @@
 
 ## Status and source
 
-This is a complete candidate disproof, awaiting independent written review and completion of the prior-resolution audit. The conclusion is an interval of counterexamples, established analytically. No numerical evaluation enters the proof.
+This alternative proof establishes an interval of counterexamples analytically. Separate internal reviews of the full written argument found no gap. The shorter explicit construction is in [EXPLICIT_PROOF.md](EXPLICIT_PROOF.md); it uses Dufresne's earlier method. The argument below instead proves positivity by a density perturbation. No numerical evaluation enters either proof. The source and priority audit is recorded in [NOVELTY.md](NOVELTY.md), including its access limits.
 
 The source is Thomas Simon, *Remark on a Mittag-Leffler function of Le Roy type*, arXiv:2012.11018v2, Section 3, printed pages 5–6; published in *Integral Transforms and Special Functions* 33(2) (2022), 108–114, DOI [10.1080/10652469.2021.1913138](https://doi.org/10.1080/10652469.2021.1913138). The [primary preprint](https://arxiv.org/pdf/2012.11018) states the conjecture for every positive $\alpha,\beta,\gamma$:
 
@@ -269,7 +269,7 @@ Subtracting $\eta$ from the Lévy measure, with the corresponding drift adjustme
 
 Since $|\Phi_*(\xi)|\leq e^{2\lambda}|\Phi(\xi)|$, this remaining law has a nonnegative real-analytic density $g$, by (13). Its integral is $1$, so it is not identically zero.
 
-The original law is the convolution of this remaining law with the compound-Poisson law whose jump intensity is $\eta$ and whose jump sizes are $-t$. Its density $p$ therefore satisfies, pointwise,
+The original law is the convolution of this remaining law with the compound-Poisson law whose jump intensity is $\eta$ and whose jump sizes are $-t$. Fourier inversion makes $g$ bounded and uniformly continuous. Its convolution with that probability measure is therefore continuous, so its equality with $p$ holds pointwise, not merely almost everywhere. The compound-Poisson expansion gives
 
 ```math
 p(x)\geq e^{-\lambda}\int_J g(x+t)\,\eta(dt).
@@ -350,4 +350,4 @@ The argument disproves the full universal equivalence stated in Simon's conjectu
 
 The proof does not classify every admissible parameter triple. Such a classification is unnecessary for a disproof of the proposed characterization. It does not claim the already-known sufficiency direction, the gamma integral, Fourier uniqueness, or Gauss's multiplication formula as new.
 
-The source and priority audit are recorded separately in `NOVELTY.md`. The current mathematical result remains labeled a candidate until the written reviews and that audit are complete.
+The source and priority audit are recorded separately in [NOVELTY.md](NOVELTY.md). The bounded search found no earlier resolution of this exact conjecture. The internal reviews establish the reviewers' mathematical conclusion; they do not certify worldwide priority or constitute external peer review.
