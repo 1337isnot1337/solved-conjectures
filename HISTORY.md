@@ -582,3 +582,10 @@ Registered `Conjectures.LonelinessSevenCoordinateFiveSpeed` and its 6 theorem en
 ## 2026-11-19: Actual rational-lattice quotient index
 
 Registered `Conjectures.LonelinessRationalLatticeQuotient` and its 5 theorem endpoints after the complete 20-module hosted source, selected-declaration axiom audit with raw/private visibility, and stock-kernel gate passed. The result status remains partial; the retained hypotheses are stated in the status report.
+
+## 2026-11-20 — Erdős–Granville–Pomerance–Spiro conjecture
+
+Added a written partial result for arbitrary natural density-zero target sets.
+The three input families in the [divisor-sum proof](results/erdos-granville-pomerance-spiro/)
+have combined natural density about 53.46%. The computational workflow checks
+finite algebra and congruence cases. The full conjecture remains open.

@@ -1,7 +1,7 @@
 # Erdős–Granville–Pomerance–Spiro conjecture
 
 The full conjecture remains open. This note extends the
-[dominant-largest-prime argument](erdos-granville-pomerance-spiro.md)
+[dominant-largest-prime argument](PROOF.md)
 to a family where the second-largest prime can be smaller than
 its cofactor. Work is tracked in
 [issue #47](https://github.com/1337isnot1337/solved-conjectures/issues/47).
@@ -47,7 +47,7 @@ logarithm of the $X^\zeta$-smooth part. The inputs divisible
 by the square of any prime at least $X^\zeta$ cost $o(X)$.
 
 Apply the small-prime and normality reductions in the
-[main note](erdos-granville-pomerance-spiro.md#reduction-to-a-second-moment).
+[main note](PROOF.md#reduction-to-a-second-moment).
 Take $Y=y(X^\beta)$ with fixed $\beta>0$ smaller than the
 power lower bounds on $w,r,q$. For $n,m=qrw,w$ the common
 $Y$-smooth part is $d\le\log X$, and we require
@@ -287,7 +287,7 @@ after the discarded upper proportion is taken arbitrarily small.
 The family $\mathcal E$ overlaps $\mathcal B$ whenever
 $q>rw$. The added inputs satisfy $p>\sqrt n$ and $q\le rw$,
 so they are also disjoint from the
-[covered family below the square root](erdos-granville-pomerance-spiro-near-square-root.md#refinement-using-the-cofactor-and-prime-exponents).
+[covered family below the square root](SMALL-COFACTOR.md#refinement-using-the-cofactor-and-prime-exponents).
 For the density on $X/2<n\le X$ use $u,v,t$ for the logarithmic
 exponents of $w,r,q$ with respect to $X$. The region is
 

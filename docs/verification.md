@@ -26,6 +26,7 @@ finite tables, their collision and lower-option interpretation, and both actual
 recursive-game identities through `CutPeriodWeightTheorem`.
 
 ```bash
+python3 results/erdos-granville-pomerance-spiro/verify.py
 python3 results/l-solitaire-limit-shapes/verify.py
 python3 results/pham-denominator-degree/verify.py
 python3 results/pham-denominator-degree/verify.py --dual --brute-depth 13
@@ -91,6 +92,8 @@ unchanged in both modes.
 The [status report](lean-status.md) records the exact statements checked and dependencies that remain. Partial certificates do not establish the full conjecture. Accepted proofs permit only `propext`, `Classical.choice`, and `Quot.sound` as transitive axioms, as required by [the repository instructions](../AGENTS.md).
 
 ## What the checks establish
+
+`results/erdos-granville-pomerance-spiro/verify.py` checks finite instances of the quadratic-root bounds, the bilinear congruence lift and local sieve counts, and the cofactor identities in the [written partial result](../results/erdos-granville-pomerance-spiro/). The asymptotic statements use the analytic proofs.
 
 `results/graffiti-pc-318/verify.py` uses only the Python standard library. It checks all 419,235 labeled graphs on 2–7 vertices with at most `n+1` missing edges; 7,337 satisfy the original hypothesis and each passes the total-domination test. A sharp five-vertex counterexample to a one-unit relaxation is separately verified. See [the all-order proof](../results/graffiti-pc-318/PROOF.md), **credited to [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334)**. This is not a Lean proof.
 

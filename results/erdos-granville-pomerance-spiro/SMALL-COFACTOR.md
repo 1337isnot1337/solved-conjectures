@@ -1,6 +1,6 @@
 # Erdős–Granville–Pomerance–Spiro conjecture
 
-This note extends the [divisor-sum collision argument](erdos-granville-pomerance-spiro.md)
+This note extends the [divisor-sum collision argument](PROOF.md)
 to inputs whose two largest primes leave a small cofactor.
 The full conjecture remains open. Work is tracked in
 [issue #47](https://github.com/1337isnot1337/solved-conjectures/issues/47).
@@ -179,7 +179,7 @@ by the mean of the logarithm of that smooth part. First choose
 $\delta$ small and then $\beta/\delta$ small.
 
 Use the small-prime conditions in the
-[main research note](erdos-granville-pomerance-spiro.md#reduction-to-a-second-moment)
+[main research note](PROOF.md#reduction-to-a-second-moment)
 for each of $n,m=q\ell,\ell$, with $Y=y(X^\beta)$ and
 $d=n_Y\le\log X$. Require $s(\ell)\asymp\ell$,
 $s(m)/\varphi(s(m))\ll1$, and the reciprocal-divisor

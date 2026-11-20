@@ -35,6 +35,8 @@ jobs:
           python results/erdos-gyarfas-abelian-covers/sharpness.py
       - name: Check conditional lonely-runner examples
         run: python3 results/loneliness-on-a-hyperplane/verify.py
+      - name: Check divisor-sum congruences and cofactor identities
+        run: python3 results/erdos-granville-pomerance-spiro/verify.py
       - name: Verify L-solitaire exhaustive finite checks
         run: python3 results/l-solitaire-limit-shapes/verify.py
       - name: Verify Pham exact main and dual certificates
