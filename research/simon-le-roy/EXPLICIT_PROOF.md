@@ -37,7 +37,7 @@ We disprove necessity by an explicit interval of parameters. Put
 
 violates the claimed necessary inequality in (1), already at $z=1/64$. Hence Simon's conjecture is false.
 
-The probability construction used below is an application of **Dufresne's 2010 construction**, Theorem 6.3, including its converse, in *G distributions and the beta-gamma algebra*, *Electronic Journal of Probability* 15, no. 71, 2163–2199, printed pages 2187–2188. The [primary published PDF](https://emis.de/ft/42731) is freely available. We give the construction in full for these parameters. Neither that general construction nor the standard beta-gamma product rules are claimed as new. The contribution under audit is the exact specialization and its consequence for Simon's later conjecture.
+The probability construction used below is an application of **Dufresne's 2010 construction**, Theorem 6.3, including its converse, in *G distributions and the beta-gamma algebra*, *Electronic Journal of Probability* 15, no. 71, 2163–2199, printed pages 2187–2188. The [primary published PDF](https://emis.de/ft/42731) is freely available. We give the construction in full for these parameters. Neither that general construction nor the standard beta-gamma product rules are claimed as new. The contribution documented here is the exact specialization and its consequence for Simon's later conjecture.
 
 An independent proof by density perturbation, using no Dufresne construction, is preserved in [CANDIDATE_PROOF.md](CANDIDATE_PROOF.md). The literature audit is separate from either mathematical argument.
 
@@ -245,4 +245,4 @@ The theorem refutes a necessary condition in a universal characterization. It do
 
 The exact rational partial fractions, quadratic discriminant, normalization, and integer inequality can all be checked by rational arithmetic. The existence of the probability law and complete monotonicity are proved above for the full stated interval, not inferred from those finite checks.
 
-The main proof is a fully credited application of Dufresne's general theorem. The separate prior-resolution audit checks whether this exact specialization or an earlier equivalent disproof had already appeared. The manuscript is a candidate until that audit and the written reviews are complete.
+The main proof is a fully credited application of Dufresne's general theorem. Separate internal reviews found no gap in the written argument. The bounded prior-resolution search located no earlier exact specialization or equivalent disproof; its inspected sources and access limits are recorded in [NOVELTY.md](NOVELTY.md). These are research-team reviews, not external peer review.
