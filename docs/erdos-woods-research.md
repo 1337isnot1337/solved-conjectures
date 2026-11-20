@@ -45,3 +45,104 @@ asks for the stronger statement that $k=3$ suffices.
 The primary sources, recent preprints, problem discussion and related
 claims were checked in November 2026. No unconditional proof of a
 universal length and no family with unbounded matching length were found.
+
+## Every fixed algebraic curve contains finitely many matches
+
+**Theorem.** For any nonzero polynomial $P\in\mathbb{Q}[X,Y]$ and
+any $k\ge3$, there are only finitely many positive integer pairs
+$x\lt y$ with $P(x,y)=0$ and matching blocks of length $k$.
+
+### Proof
+
+Suppose an irreducible component of the plane curve contains infinitely
+many matching pairs. We can work over a number field over which that
+component is geometrically irreducible. Let $C$ be its smooth projective
+normalization, and write $f,g$ for the two coordinate functions.
+Discard the finitely many singular points of the original curve so
+that the remaining pairs lift to points on $C$.
+
+If one coordinate is constant, the radicals of the first two terms
+of the other coordinate are supported on a fixed finite set of primes.
+The pair of consecutive terms is then a solution of an $S$-unit
+equation, of which there are finitely many. Assume both coordinates
+are nonconstant. The function $f-g$ is nonzero since all pairs have
+$x\lt y$.
+
+Let $D_0$ be the union of the geometric poles of $f$ and $g$, and
+let $t=|D_0|$. For each $i$ with $0\le i\lt k$, mark every point
+outside $D_0$ which is a zero of exactly one of $f+i$ and $g+i$.
+Let $D_1$ be the union of these marked points.
+
+The matching pairs give $S$-integral points on
+$C\setminus(D_0\cup D_1)$ for a fixed finite set of places $S$.
+To see this, enlarge the number field to split the finitely many
+poles and zeros involved. Choose a smooth proper model outside
+finitely many places, so that distinct special points have disjoint
+reductions and the zero and pole divisors of the functions have no
+vertical components. At any place outside that set, reducing to
+a pole would give a nonintegral coordinate. Reducing to a point of
+$D_1$ would make exactly one of the two corresponding integers
+divisible by the underlying rational prime. This contradicts
+the aligned equality of their radicals. Therefore all reductions
+outside $S$ avoid the deleted points.
+
+By [Siegel's theorem for $S$-integral points](https://math.berkeley.edu/~vojta/cime/cime.pdf)
+the normalization has genus zero and $t+|D_1|\le2$, since $t>0$.
+Take $d=\max(\deg f,\deg g)$ and exchange the functions in the proof
+if needed so that $\deg f=d$. If $f$ has $t_f$ distinct poles, the
+ramification contribution over infinity is $d-t_f$.
+Riemann–Hurwitz leaves at most $d+t_f-2$ ramification units on
+the finite fibers. Thus the $k$ fibers over $0,-1,\ldots,-(k-1)$
+contain at least $(k-1)d+2-t_f$ distinct points. At most $t-t_f$
+of them lie in $D_0$. Of the remaining points, at most $2-t$ lie
+in $D_1$. Consequently at least $(k-1)d\ge 2d$ distinct points
+are shared with the corresponding fibers of $g$. Each is a zero
+of $f-g$.
+
+There is a common pole of $f$ and $g$. In fact, since both coordinate
+maps are nonconstant, only finitely many curve points can have either
+coordinate in a given finite set. The infinitely many distinct positive
+integer pairs therefore have a subsequence along which both coordinates
+tend to infinity. A limit point on the compact complex curve is a pole
+of both maps. At a common pole the order of the pole of $f-g$ is at most
+the maximum of the two pole orders. It follows that the total pole
+degree of $f-g$ is at most $\deg f + \deg g -1\le2d-1$.
+A nonzero rational function cannot have more distinct zeros than
+its pole degree. This contradicts the shared-fiber count.
+
+### Consequence
+
+If there are infinitely many length-three matches, their pairs are
+Zariski dense in the affine plane. The proof also gives a sufficient
+route to finiteness: an unconditional algebraic constraint placing
+all but finitely many matches on a proper closed subset would finish
+that step. The existing radical divisibility argument gives
+congruence constraints and does not establish such a containment.
+
+## Multiplicative dependence is excluded at every aligned position
+
+Suppose the length is at least three. Then no aligned pair of terms
+can be two powers of a common positive integer base. In particular,
+neither block contains a prime power.
+
+To prove this, consider aligned terms $a^u,a^v$ for integers $a\ge2$
+and $1\le u\lt v$. If they have a matching successor,
+a primitive prime divisor of $a^{2v}-1$ divides $a^v+1$ and cannot
+divide $a^u+1$. By [Zsigmondy's theorem](https://doi.org/10.1007/BF01692444)
+the only applicable exception for $2v\ge4$ is $a=2,v=3$.
+In that case the only equal successor radicals occur at $u=1$,
+giving aligned terms 2 and 8. Their predecessors 1 and 7 have
+different radicals. Their second successors 4 and 10 also have
+different radicals. Thus they cannot be part of a longer match.
+
+If the aligned terms are last, use their predecessors. A primitive
+prime divisor of $a^v-1$ distinguishes the predecessor radicals
+except when $v=2$ and $a+1$ is a power of two, or when $a=2,v=6$.
+In the latter case the support of 63 is $\{3,7\}$, different from
+each of the supports of $2^u-1$ for $1\le u\lt6$. In the former
+case $u=1$, $a$ is odd, and
+$\gcd(a-2,a^2-2)=\gcd(a-2,2)=1$.
+The second predecessors therefore have different radicals because
+$a^2-2>1$. These cases exhaust all positions. A term equal to 1
+also cannot occur in a matching pair of distinct starts because
+its partner would have radical 1.
