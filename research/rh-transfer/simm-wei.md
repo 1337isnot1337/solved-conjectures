@@ -1,4 +1,4 @@
-# Simm–Wei conjecture: RH transfer and complex-coefficient audit
+# Simm–Wei conjecture
 
 Research checkpoint: 20 November 2026. Coordination: [issue #80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
 
