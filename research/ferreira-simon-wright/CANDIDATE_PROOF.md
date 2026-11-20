@@ -12,7 +12,7 @@ Ferreira and Simon define
 \qquad \rho>-1.
 ```
 
-The reciprocal gamma function is interpreted by its entire extension, including its zeros at the nonpositive integers. For $0\leq\alpha<1$ and $\beta\geq0$, their random variable $M_{\alpha,\beta}$ has density
+The reciprocal gamma function is interpreted by its entire extension, including its zeros at the nonpositive integers. For $0<\alpha<1$ and $\beta\geq0$, their random variable $M_{\alpha,\beta}$ has density
 
 ```math
 p_{\alpha,\beta}(x)
@@ -89,7 +89,7 @@ h_{a,b}(x)=\sum_{n=0}^{\infty}(an+b)x^n
 \tag{6}
 ```
 
-Write $u_n=(an+b)t$. For $n\geq1$, the reflection formula gives
+Write $u_n=(an+b)t$. For $n\geq1$, the classical reflection formula ([DLMF 5.5.3](https://dlmf.nist.gov/5.5.E3)) gives
 
 ```math
 \frac{(-1)^n}{t\,n!\Gamma(-n+u_n)}
@@ -104,7 +104,7 @@ This formula also holds when $-n+u_n$ is an integer, by continuity of $1/\Gamma$
 0<u_n<n,\qquad 1<n+1-u_n<n+1.
 ```
 
-Gamma is positive and log convex on the positive half-line. Its values at the endpoints of $[1,n+1]$ are $1$ and $n!$. Hence
+Gamma is positive and log convex on the positive half-line; see the [Bohr–Mollerup characterization](https://dlmf.nist.gov/5.5#iv). Its values at the endpoints of $[1,n+1]$ are $1$ and $n!$. Hence
 
 ```math
 0<\Gamma(n+1-u_n)\leq n!.
@@ -219,4 +219,4 @@ Finally, $p_{\alpha,\beta}=\Gamma(\alpha+\beta)f_t$ multiplies $\Psi_{f_t}$ by t
 
 More generally, every fixed $a>0,b\geq0$ satisfying $a^2>2ab+b^2$ gives the same counterexample family $\alpha=1-at,\beta=bt$ for all sufficiently small $t>0$. If $b>0$, this condition is $a/b>1+\sqrt2$; if $b=0$, it always holds. Equations (8)–(12) prove this statement without further estimates.
 
-The proof disproves the complete conjectured equivalence by disproving its threshold-to-density implication. It makes no claim about the remaining equivalence between density log concavity and reciprocal Mittag–Leffler convexity at parameters outside the theorem. No explicit numerical value of a small parameter is needed: the strict limiting signs prove an interval of admissible counterexamples.
+The proof disproves the complete conjectured equivalence by disproving its threshold-to-density implication. It makes no claim about the remaining equivalence between density log concavity and reciprocal Mittag–Leffler convexity at parameters outside the theorem. Every counterexample has $0<\alpha<1$; the degenerate limit $(1,0)$ is used only to prove the limiting formula. No explicit numerical value of a small parameter is needed: the strict limiting signs prove an interval of admissible counterexamples.
