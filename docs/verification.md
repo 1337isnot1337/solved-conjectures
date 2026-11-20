@@ -4,7 +4,7 @@
 
 ## Requirements
 
-- Python 3.12, matching CI. The Hadamard audit uses NumPy. The Frankl window enumeration uses NumPy and SciPy.
+- Python 3.12, matching CI. The Hadamard audit uses NumPy. The Frankl window enumeration uses NumPy and SciPy. The Chow checks use SymPy 1.14.0.
 - A C++20 compiler available as `c++` for distance-graph checks and the lonely-runner spectrum/equality verifiers. Some Python entry points compile and launch C++ programs themselves.
 - For formal proofs: Lean and Mathlib pinned in [the shared Lean package](../lean/). Use its `lean-toolchain` and `lake-manifest.json`; do not substitute a different toolchain.
 
@@ -26,6 +26,10 @@ finite tables, their collision and lower-option interpretation, and both actual
 recursive-game identities through `CutPeriodWeightTheorem`.
 
 ```bash
+python3 -m pip install sympy==1.14.0
+python3 results/gatzweiler-krattenthaler/verify.py
+python3 results/gilmore-crossing-nesting/verify.py
+python3 results/chow-conjecture/verify.py
 python3 results/erdos-granville-pomerance-spiro/verify.py
 python3 results/hornak-wozniak/verify.py
 python3 results/sonntag-teichert/verify.py
@@ -95,6 +99,12 @@ unchanged in both modes.
 The [status report](lean-status.md) records the exact statements checked and dependencies that remain. Partial certificates do not establish the full conjecture. Accepted proofs permit only `propext`, `Classical.choice`, and `Quot.sound` as transitive axioms, as required by [the repository instructions](../AGENTS.md).
 
 ## What the checks establish
+
+`results/gatzweiler-krattenthaler/verify.py` checks the full cyclotomic factorization, exact polynomial division, degree, and negative coefficients of the counterexample. The [written proof](../results/gatzweiler-krattenthaler/proof.md) independently proves polynomiality, the negative coefficient, and dilation to an infinite family.
+
+`results/gilmore-crossing-nesting/verify.py` compares the literal matrix product and the independently implemented recurrence through row seven, and compares the first column with all perfect matchings on at most twelve vertices. All four variables remain formal. The [written proof](../results/gilmore-crossing-nesting/PROOF.md) proves the identity in every row.
+
+`results/chow-conjecture/verify.py` compares signed-permutation enumeration with the refined recurrence through rank six, checks the separate Stembridge identity through rank 32, and checks exact degree, squarefreeness, consecutive gcd, and cutoff identities. These are finite consistency checks. The [written proof](../results/chow-conjecture/PROOF.md) uses Savage–Visontai's published theorem and a separate strictness argument for every rank.
 
 `results/sonntag-teichert/verify.py` enumerates the minimal dominating sets of every labelled tournament through order six and every labelled oriented graph through order five. It also checks the two-star construction. The [proof](../results/sonntag-teichert/PROOF.md) covers every order.
 

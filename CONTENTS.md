@@ -16,6 +16,14 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 - **Erdős–Gyárfás (partial).** Every abelian cover of $K_4$ with one edge subdivided has a cycle of length 4, 8, 16 or 32. A 19-sheeted cyclic example attains the upper bound. The universal voltage-cover theorem, literal 95-vertex sharpness example, and normalization of all seven voltages are Lean-verified. [Lean scope](docs/lean-status.md#complete-sharp-95-vertex-example-and-arbitrary-voltage-normalization). [Proof](results/erdos-gyarfas-abelian-covers/PROOF.md) · [Replay](results/erdos-gyarfas-abelian-covers/)
 - **Hadamard existence conjecture, order 2396 (open).** The signed automorphism group of any candidate matrix has order coprime to 479. The fixed-border common multiplier group is cyclic of order dividing four, with at least 151 sign orbits. Lean verifies these statements, both norm-obstruction proofs, the complete conditional [fixed-border construction](results/hadamard-2396/BORDER.md) from its original four sign rows, all fourteen size-149 baseline patterns, and the length-598 order-eleven obstruction. Lean also constructs the actual Hadamard matrix from any Legendre pair and proves the invariant quotient transport from the original centered rows. The order and orbit theorems for odd automorphism subgroups on groups of order nine are also checked. For length-1197 Legendre pairs, Lean proves that the common-multiplier order divides 27; the stated sharper bound of nine and the exhaustive quotient/no-lift certificates remain pending. No order-2396 matrix existence is claimed. [Checked scope and receipts](docs/lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns) · [Automorphism proof](results/hadamard-2396/AUTOMORPHISMS.md) · [Sequence proof](results/hadamard-2396/PROOF.md) · [Reproduce](results/hadamard-2396/).
 
+## Polynomial identities and positivity
+
+| Result | Finding | Lean | Evidence |
+| :--- | :--- | :---: | :--- |
+| [Gatzweiler–Krattenthaler conjecture](results/gatzweiler-krattenthaler/) | Conjecture 4 fails: a shifted product with $m=33$, $n=30$ is an integer polynomial of degree 165 whose $q^{50}$ coefficient is $-1$. Dilation gives an infinite family. | ☐ | [Proof](results/gatzweiler-krattenthaler/proof.md) · [Exact certificate](results/gatzweiler-krattenthaler/verify.py) · [Literature check](results/gatzweiler-krattenthaler/literature.md) |
+| [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | Conjecture 6.16 is proved for every row: the product-defined matrix's first column enumerates perfect matchings by crossings and nestings. Its additional parameter counts aligned pairs. | ☐ | [Proof](results/gilmore-crossing-nesting/PROOF.md) · [Checks](results/gilmore-crossing-nesting/verify.py) · [Literature check](results/gilmore-crossing-nesting/NOVELTY.md) |
+| [Chow's conjecture](results/chow-conjecture/) | Ordinary type-D Eulerian polynomials interlace in consecutive ranks, strictly from rank three onward. The weak assertion is a direct deduction from Savage–Visontai's published refinement theorem; the note supplies an additional strictness argument. | ☐ | [Proof](results/chow-conjecture/PROOF.md) · [Checks](results/chow-conjecture/verify.py) · [Attribution and literature check](results/chow-conjecture/NOVELTY.md) |
+
 ## Solitaire and combinatorial games
 
 | Result | Finding | Lean | Evidence |
@@ -70,6 +78,12 @@ See [docs/lean-status.md](docs/lean-status.md) for exact formalized statements a
 
 ## Precise scope
 
+The Gatzweiler–Krattenthaler counterexample resolves their unrestricted shifted-product Conjecture 4. It does not resolve their separate conjectures on Gaussian-binomial quotients or symmetric exponent choices, or Stanton's original all-shifts symmetric assertion.
+
+Gilmore's matching identity concerns his product-defined matrix and proves the complete published Conjecture 6.16 (arXiv Conjecture 6.11). The neighboring shifted reverse Bessel Hankel-total-positivity conjecture remains open.
+
+Chow's weak consecutive-interlacing assertion follows immediately from established stronger refinement results. The note credits those results and does not claim a new compatibility theorem. The current literature audit found no earlier explicit resolution of the consecutive assertion; that is a bounded search, not proof of priority.
+
 The L-solitaire counterexample relies on the original paper's Definitions 2--4 allowing *positive*, not necessarily diverging, horizontal scaling factors. It does **not** refute the natural corrected assertion for diverging scales. The note supplies a proof of that corrected assertion for all admissible layer sets.
 
 The necklace result refutes **only** Pham's exact-degree guess. It does **not** refute the distinct Harris--Nguyen (2025) conjecture that a necklace and its reverse-complement dual admit a common denominator of degree equal to their period. The included dual calculation is consistent with that conjecture.
@@ -79,6 +93,10 @@ The Li example is neither a spider nor a caterpillar and refutes the **non-spide
 These are mathematical claims with explicit proofs and computer checks, **not peer-reviewed publications**. A literature search cannot establish that a counterexample or stronger theorem is the first discovery. Please cite the primary publications when discussing the original conjectures.
 
 ## Primary sources
+
+- Mona Gatzweiler and Christian Krattenthaler, [*A positivity conjecture for a quotient of q-binomial coefficients*](https://doi.org/10.1007/s11139-025-01285-2), *The Ramanujan Journal* 69 (2026), article 13, Conjecture 4; [arXiv:2502.06032](https://arxiv.org/abs/2502.06032).
+- Tomack Gilmore, [*Trees, forests, and total positivity: I. q-trees and q-forests matrices*](https://doi.org/10.37236/10465), *Electronic Journal of Combinatorics* 28(3) (2021), P3.54, Conjecture 6.16.
+- Chak-On Chow, [*New proofs of interlacing of zeros of Eulerian polynomials*](https://doi.org/10.1016/j.jmaa.2022.126019), *Journal of Mathematical Analysis and Applications* 510 (2022), 126019, Section 5. The proof uses Carla D. Savage and Mirkó Visontai, [*The s-Eulerian polynomials have only real roots*](https://arxiv.org/abs/1208.3831), *Transactions of the AMS* 367 (2015), 1441–1466.
 
 - Matthias Beck and Samuel Everett, [*Lonely Runner Relations*, §4](https://arxiv.org/html/2609.06259v2#S4), ask for the statistical behavior on one prescribed relation hyperplane.
 - Ermelinda DeLaViña, [*Written on the Wall II*, Graffiti.pc Conjecture 318](https://www.uhd.edu/academics/sciences/mathematics-statistics/wowii/files/wowiiaii.pdf), announced March 4, 2007; catalogue updated November 5, 2026. Proof shared by [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334) on November 18, 2026; an externally contributed result, not authored by this repository's maintainer.

@@ -12,6 +12,9 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Verification |
 | :--- | :---: |
+| [Gatzweiler–Krattenthaler conjecture](results/gatzweiler-krattenthaler/) | ⬜ |
+| [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ⬜ |
+| [Chow's conjecture](results/chow-conjecture/) | ⬜ |
 | [Németh–Seberry–Shu conjecture](results/nemeth-seberry-shu/) | ⬜ |
 | [Sonntag–Teichert conjecture](results/sonntag-teichert/) | ⬜ |
 | [Horňák–Woźniak conjecture](results/hornak-wozniak/) | ⬜ |

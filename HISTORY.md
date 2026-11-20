@@ -1,5 +1,21 @@
 # History
 
+## 2026-11-20 — Gatzweiler–Krattenthaler, Gilmore, and Chow conjectures
+
+Added an explicit infinite family disproving Gatzweiler–Krattenthaler's
+unrestricted shifted-product positivity conjecture, an all-row proof of
+Gilmore's crossing–nesting matrix identity with an alignment refinement,
+and a proof of consecutive type-D Eulerian interlacing.
+
+The weak Chow assertion is a direct consequence of Savage–Visontai's
+published refinement theorem; that dependency and the separate strictness
+argument are explicit. Each result includes its primary conjecture source,
+a bounded literature audit, precise scope, and reproducible exact checks.
+A second agent independently checked each mathematical argument. The
+published verifiers passed locally on Python 3.12.14, with SymPy 1.14.0 for
+Chow's checks. No Lean work was performed.
+[Result entries and scope](CONTENTS.md#polynomial-identities-and-positivity).
+
 ## 2026-11-20 — Németh–Seberry–Shu conjecture
 
 Added a written disproof of the all-row-sums conjecture for prime-order
