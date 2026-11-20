@@ -1,6 +1,6 @@
 # Nemeth–Seberry–Shu conjecture: candidate asymptotic disproof
 
-Date: 2026-11-20. **Research proof draft. Two independent internal audits found no flaw; external review remains outstanding.**
+Date: 2026-11-20. **Research proof draft. Independent internal AI-assisted checks found no flaw; external review remains outstanding.**
 
 ## Statement and attribution
 
@@ -8,15 +8,17 @@ For a prime p and S⊆Z/pZ, let C_p(S) be the binary circulant with (i,j) entry 
 
     V(p)=#{per C_p(S): S⊆Z/pZ}.
 
-The Nemeth–Seberry–Shu conjecture asserts V(p)=O(p). The statement concerns all supports and all row sums, not a fixed sparse degree. Cheon–Wanless (2005), Conjecture 27, pp.329–330, records exactly this statement and contrasts it with Resta–Sburlati's stronger fixed-degree rival. No symmetry condition is imposed.
+The Nemeth–Seberry–Shu conjecture asserts V(p)=O(p). The statement concerns all supports and all row sums, not a fixed sparse degree. The original 1979 paper, printed p.181, and Cheon–Wanless (2005), Conjecture 27, pp.329–330, record this statement and contrasts it with Resta–Sburlati's stronger fixed-degree rival. No symmetry condition is imposed.
 
 **Candidate theorem.** As p tends to infinity through primes, V(p)/p tends to infinity. In particular V(p) is not O(p).
 
 This does not establish the Resta–Sburlati fixed-degree asymptotic. All supports constructed below have degrees proportional to p.
 
+The Fourier-profile and counting argument below is this note’s contribution. The permanent estimate is external, and the congruence is classical. A separately audited [quantitative candidate extension](nemeth-seberry-shu-rate-candidate.md) is optional; the qualitative proof stands independently of it.
+
 ## External permanent estimate
 
-We use the following established asymptotic estimate, not a result proved in this note. Put J_N=(1/N)11ᵀ. For fixed constants A0<∞ and r<1, if D=J_N+B is an N×N doubly stochastic matrix with
+We use the following cited asymptotic estimate, not a result proved in this note. Put J_N=(1/N)11ᵀ. For fixed constants A0<∞ and r<1, if D=J_N+B is an N×N doubly stochastic matrix with
 
     max_ij |B_ij|≤A0/N,    ||B||op≤r,
 
