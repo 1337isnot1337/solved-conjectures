@@ -1,3 +1,13 @@
+# Priority correction — 20 November 2026
+
+The original negative-search conclusion below is superseded. The algebra reviewer subsequently identified Thomas Simon, *Produit beta-gamma et régularité du signe*, [arXiv:1207.6464](https://arxiv.org/pdf/1207.6464), printed page 16, Remark (b). I have now directly inspected that passage. It gives multiplicative convolution kernels that are individually totally positive in every order, while their pointwise product is not sign regular in every order.
+
+The change of variables $x=e^u$, $y=e^{-v}$ turns these into kernels depending on $u+v$. Reversing the ordered second variable multiplies each minor by $(-1)^{\binom r2}$, which preserves sign regularity and its failure. A fixed translation of both variables moves the finite witnessing grids into the positive quadrant. Thus the older result already implies a counterexample to the general Hankel sign-regular product assertion.
+
+The elementary counterexamples below remain correct, but this target must not be counted as a newly resolved open conjecture. The earlier search missed this implication because the older result was stated for multiplicative convolution kernels. The scope and priority exclusion are tracked in issue 94.
+
+---
+
 # Independent analysis audit
 
 Date: 20 November 2026. Reviewer: the analysis agent, separate from the algebra agent who wrote the proof. This is an internal review, not external peer review.
