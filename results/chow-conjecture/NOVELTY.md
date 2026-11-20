@@ -42,3 +42,11 @@ Because the implication is short, the defensible wording is: a complete explicit
 - [Ma preprint](https://arxiv.org/abs/2608.02357).
 - [Current specialist open-problem page](https://www.symmetricfunctions.com/realRootedOpenProblems.htm).
 - [Current specialist type-A/B/D discussion](https://www.symmetricfunctions.com/realRootedWords.htm).
+
+## Additional public-record check after a catalog false positive
+
+A separate binomial Eulerian audit found explicit October 2026 prior proofs even though the same specialist catalog still listed that target as open; see [the excluded research note](../../research/binomial-eulerian/PROOF.md). We therefore repeated the Chow audit against public issue and pull-request records.
+
+GitHub issue and pull-request searches for A066094 returned no prior result. Searches for Chow, type-D Eulerian, and type-D interlacing in PerAlexandersson/RealRooted found Chow-ring results, coordinator polynomials, and broader research programs, but no explicit proof of consecutive ordinary type-D Eulerian interlacing. In particular, [issue #2511](https://github.com/PerAlexandersson/RealRooted/issues/2511) proves real-rootedness for a different recurrence class and explicitly says consecutive interlacing is false for that class; [issue #2003](https://github.com/PerAlexandersson/RealRooted/issues/2003) is an open cross-degree ordering program, not a proof of this target.
+
+The linked research repository and downstream OEIS repository were not accessible through the public search interface, so their contents were not inspected. Fresh web searches for A066094 with interlacing and for Chow's consecutive assertion returned the primary sources already listed above, without a new explicit prior resolution. This extends the bounded audit; it does not remove the priority caveat or turn a catalog label into proof of novelty. No Lean code was run, changed, or verified.
