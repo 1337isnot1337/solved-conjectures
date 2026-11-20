@@ -150,7 +150,16 @@ B_L(j)=\sum_\ell
 \tag{8}
 ~~~
 
-The strict Selmer group with coefficient Q_ell/Z_ell(-j) has Pontryagin dual injecting into the corresponding H^2 group, by the relevant Poitou–Tate exact sequence. Thus the scalar quantity in (1) is at most the sum of B_L(j) for 1<=j<t.
+For totally imaginary L, the sum in (8) is finite and has the exact interpretation
+
+~~~math
+B_L(j)=\log|K_{2j}(\mathcal O_L)|.
+\tag{8a}
+~~~
+
+This includes ell=2: [Weibel, Algebraic K-Theory of Rings of Integers in Local and Global Fields](https://sites.math.rutgers.edu/~weibel/archive/papers-dir/KZsurvey-published.pdf), Theorem 73, gives the direct sum of these H^2 groups over all primes. The strict Selmer group with coefficient Q_ell/Z_ell(-j) has Pontryagin dual injecting into the corresponding H^2 group, by the relevant Poitou–Tate exact sequence. Thus the scalar quantity in (1) is at most the sum of B_L(j) for 1<=j<t.
+
+There is no real-place 2-cohomology term because L is totally imaginary. This fact, and the exact K-theory comparison (8a), do not determine the 2-primary factor of an analytic special-value formula.
 
 Assume an **integral leading-term formula or inequality** in the explicitly normalized form
 
@@ -166,7 +175,7 @@ B_L(j)
 
 Here R_(2j+1)(L)>0 is the higher regulator in the normalization used by the chosen formula. The nonnegative correction Delta_(L,j) must include any unresolved 2-primary, local, lattice, or comparison contribution. It is not permissible to call such contributions harmless without bounding them.
 
-For a complete integral Lichtenbaum identity with matching conventions, (9) is the associated equality, with its explicitly prescribed correction. A theorem after inverting a prime, a rational equality, or a determinant-line identity without integral comparison does not by itself establish (9) with bounded Delta.
+For a complete integral Lichtenbaum identity with matching conventions, (9) is the associated equality, with its explicitly prescribed correction. A theorem after inverting a prime, a rational equality, or a determinant-line identity without integral comparison does not by itself establish (9) with bounded Delta. For example, if the formula is only specified up to a factor 2^a, the adverse contribution max(0,-a log 2) must be included in Delta. An unspecified rational proportionality factor could contain the torsion being bounded.
 
 Suppose that there are constants C>0 and A>=1, **fixed for the whole family before the moving scale and auxiliary primes are chosen**, such that
 
@@ -292,6 +301,18 @@ Primary statements inspected for this branch include the six results in §6, the
 
 A further current search found El Boukhari's [A Coates–Sinnott-type Theorem for First Derivatives of Artin L-Functions](https://arxiv.org/abs/2608.01486), submitted August 2026. The author-supplied abstract states an ETNC-conditional annihilation result. Its full text was not retrieved during this pass, so it is not used to justify an integral identity or a quantitative bound here.
 
+An independent literature audit also located de la Torre Durán's [Perfect Forms and Torsion Bounds in Algebraic K-Theory over Totally Real and CM Fields](https://arxiv.org/pdf/2611.06300v1), submitted 4 November 2026. Its Theorem 4.5 gives, with d=[F:Q], N=2m+1, and b=dN+1,
+
+~~~math
+\log\operatorname{card}_b K_m(\mathcal O_F)_{\rm tors}
+\le
+\exp\!\bigl(O(N^2d(\log N+\log d))\bigr)
+|D_F|^{O(N^2)}.
+\tag{15}
+~~~
+
+Here card_b removes all primes at most b, and the field is totally real or CM. This is a geometric improvement, but the bound for the logarithm remains exponential in the growing parameters. It does not control the omitted primes and does not automatically apply to the non-CM kernel field. Its stated theorem therefore does not give (11) at the required scale.
+
 No source inspected in this pass supplied a bound of the form (10) uniform in the moving field, weight, and coefficient prime. This is a record of the audited inputs, not a claim of a mathematical impossibility or an exhaustive theorem about the literature.
 
 ## 9. Remaining obligation
@@ -301,3 +322,12 @@ The reusable output is the proved implication (9)+(10) => (11), with the analyti
 To turn it into a Hecke extension, one needs an applicable integral formula (9), and a bound for the adverse higher-regulator and integral-defect contribution whose constants are fixed before x and the auxiliary fields. A direct bound for the corresponding integral Euler-system index or Selmer specialization would serve the same purpose.
 
 The accepted RH archive gives the separate source-specific arithmetic inputs summarized in hecke-bootstrap.md. The main-conjecture results inspected here have not yet replaced those inputs for a non-Dirichlet character.
+
+
+## Internal review receipt
+
+The arithmetic worker independently checked equations (8)–(11), including the direction of Poitou–Tate duality, descent of the scalar unramified classes to G_(L,S), and the all-prime K_(2j) comparison. No defect was found in the conditional deduction. The independent review supplied the precise source for (8a) and retained the unresolved integral special-value factor in (9)–(10).
+
+These receipts record internal mathematical review. They do not establish the unproved regulator hypothesis, replace external review, or report Lean verification.
+
+Updated November 20, 2026.
