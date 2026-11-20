@@ -1,6 +1,8 @@
 # Karp–Vishnyakova–Zhang's gamma-quotient conjecture
 
-Research checkpoint, 20 November 2026. [Issue 97](https://github.com/1337isnot1337/solved-conjectures/issues/97). No full solution is claimed.
+Historical checkpoint, 20 November 2026. [Issue 97](https://github.com/1337isnot1337/solved-conjectures/issues/97).
+
+**Superseded:** the full conjecture is now proved by the gamma-convolution argument in [results/kvz-gamma-quotient](../../results/kvz-gamma-quotient/README.md). The root and analysis agents independently reviewed the complete proof. The earlier derivative-matrix approach below is retained as research history; its unresolved leading-block step is not used by the final proof.
 
 ## Full target
 
