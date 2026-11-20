@@ -12,7 +12,7 @@ The accepted top-level result covers the Riemann zeta function and Dirichlet L-f
 
 ## Reviewed full named outcomes
 
-The following inventory contains twenty-three full historically stated conjectures with complete written deductions in this lane. Ten entries contain proof arguments or deductions developed in this campaign; thirteen use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of twenty-three independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
+The following inventory contains twenty-four full historically stated conjectures with complete written deductions in this lane. Eleven entries contain proof arguments or deductions developed in this campaign; thirteen use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of twenty-four independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
 
 Current prior-art searches have not located an earlier full resolution of the exact targets apart from the accepted input and the established conditional implications. The searches and retrieval limits are recorded individually. Mathematical completeness, historical priority, and external acceptance are different questions.
 
@@ -24,6 +24,7 @@ Current prior-art searches have not located an earlier full resolution of the ex
 | Chaudhary–Khmiri–Mazhouda conjecture | Disproved: an admissible unitary Dirichlet twist has Re(lambda(2)−lambda(1))<−3/2 | Complete internally reviewed unconditional counterexample with exact rational certificate; [note](chaudhary-khmiri-mazhouda.md), [issue #124](https://github.com/1337isnot1337/solved-conjectures/issues/124) |
 | Csordas–Vishnyakova conjecture | Disproved: exp(−z^4) with p(z)=z^4+z^2+1 satisfies every stated coefficient inequality but is not in the Laguerre–Pólya class | Complete internally reviewed unconditional exact counterexample; [note](csordas-vishnyakova.md), [issue #132](https://github.com/1337isnot1337/solved-conjectures/issues/132) |
 | Cardon–Forgács–Piotrowski–Sorensen–White conjecture | Disproved: for every real p>2, sufficiently small positive alpha destroys real-rootedness of a fixed cubic, so the proposed sector-reduction criterion fails | Complete internally reviewed unconditional refutation with an exact rational certificate; [note](cardon-forgacs-piotrowski-sorensen-white.md), [issue #136](https://github.com/1337isnot1337/solved-conjectures/issues/136) |
+| Wang–Yang's conjecture | Disproved: at every fixed Xi-coefficient index, the signed finite differences take each sign infinitely often | Complete internally reviewed unconditional theorem for author-manuscript Conjecture 1.10, with exact version and final-publication access limit; [note](wang-yang.md), [issue #138](https://github.com/1337isnot1337/solved-conjectures/issues/138) |
 | Wagner's conjecture | Disproved: the positive shifted Laguerre–Pólya function exp(z)+1 has first Laguerre transform −exp(z), outside the positive shifted class | Complete internally reviewed unconditional counterexample to author-preprint Conjecture 4.3; exact version and remaining full-text audit limits recorded; [note](wagner.md), [issue #137](https://github.com/1337isnot1337/solved-conjectures/issues/137) |
 | Pomerance's conjecture | Proved in its original 1974 nonexistence form: no integer satisfies his sufficient criterion for a unique totient preimage | Complete internally reviewed deduction from the Ford–Luca prime-tree theorem and accepted Dirichlet GRH; [note](pomerance.md), [issue #129](https://github.com/1337isnot1337/solved-conjectures/issues/129) |
 | Jutila's conjecture | The complete character-sum moment bound holds for every positive integer moment, every length, and every nonprincipal real character of modulus at most X | Full internally reviewed deduction under accepted Dirichlet GRH using established moment methods, including exact unsmoothing and all induced characters; [note](jutila.md), [issue #135](https://github.com/1337isnot1337/solved-conjectures/issues/135) |
@@ -49,6 +50,25 @@ The Borcea–Shapiro finite infinite-divisibility and local-direction questions 
 The [Katkova–Tyaglov–Vishnyakova finite-difference screening](katkova-tyaglov-vishnyakova-screening.md) also remains excluded: an earlier exact quadratic counterexample resolves the same universal stability assertion, and prior counterexamples cover the other inspected assertions.
 
 The [Craven–Csordas rapid-decay counterexample](craven-csordas.md) is mathematically complete but uncounted. A 1996 existential theorem already appears to imply a negative answer to the later question. Its printed example has an algebraic inconsistency, which does not justify ignoring the theorem or claiming a new unresolved target.
+
+### Wang–Yang's conjecture
+
+For the exact coefficients in the author's manuscript,
+~~~math
+\frac18\Xi(z/2)=\sum_{n\ge0}\gamma(n)\frac{(-z^2)^n}{n!},
+~~~
+the [proof](wang-yang.md) establishes that, for every fixed \(n\ge0\), the sequence \((-1)^r\Delta^r\gamma(n)\), as \(r\) varies, has infinitely many strictly positive terms and infinitely many strictly negative terms. This refutes the whole all-orders/all-indices Conjecture 1.10.
+
+With \(G(w)=\sum\gamma(n)w^n/n!\), the exact identity is
+~~~math
+\sum_{r\ge0}(-1)^r\Delta^r\gamma(n)\frac{z^r}{r!}
+=e^zG^{(n)}(-z).
+~~~
+Hardy's classical theorem gives infinitely many negative real zeros of \(G\). Repeated Rolle gives them for every derivative. The right side therefore has infinitely many positive real zeros. A nonzero entire function with eventually one-signed Taylor coefficients cannot have those zeros, because a sufficiently high coefficient dominates the finite opposite-sign polynomial on the positive axis. This proves both infinite sign sets without RH.
+
+An independent Bernstein-weight argument shows that complete monotonicity would force log-convexity, contradicting the coefficients' supergeometric decay. The classical strict Turán inequality supplies another credited contradiction. Neither proof uses numerical zeros or a finite range.
+
+Two independent reviews checked the exact coefficient factor and difference sign, both proofs, and the actual manuscript pages. The final AMS PDF was inaccessible, so the theorem is explicitly attached to the checked author-manuscript statement. The audit excludes the different logarithmic conjecture and the previously refuted broader LP question from this count.
 
 ### Wagner's conjecture
 
@@ -360,6 +380,17 @@ An integral leading-term formula with controlled defects, together with a unifor
 The archive's budget is exp(x^epsilon/2). A polynomial bound in x would imply even the smaller exp(x^(epsilon/2)); the two expressions are not interchangeable. No fixed-strip statement or fieldwise finiteness estimate is substituted for these quantitative requirements.
 
 ## Work allocation
+
+The current live assignments are:
+
+| Worker | Current responsibility | Owned notes |
+|---|---|---|
+| Root | Source checks, proof review, integration and coordination | this index, brent.md, robin.md |
+| analytic_targets | Xi finite differences, current analytic-target audit, independent review | wang-yang.md, craven-csordas.md |
+| arithmetic_targets | Shifted-class counterexample, arithmetic-target audit, independent review | wagner.md, jutila.md, pomerance.md |
+| transfer_targets | Sector-reduction counterexample, stability-preserver targets, prior-art exclusions | cardon-forgacs-piotrowski-sorensen-white.md, borcea-shapiro-screening.md, katkova-tyaglov-vishnyakova-screening.md |
+
+Earlier extraction assignments and their source ownership remain recorded below.
 
 | Worker | Responsibility | Principal owned paths |
 |---|---|---|
