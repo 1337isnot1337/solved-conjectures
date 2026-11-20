@@ -2,14 +2,22 @@
 
 ## Status and exact scope
 
-This is a complete candidate proof of Conjecture 3.1 in David Peter Hadrian
-Ulgenes, *Series and Product Representations of Gamma, Pseudogamma and Inverse
-Gamma Functions*, Maple Transactions 5(1), Article 16090 (2025),
-[DOI 10.5206/mt.v5i1.16090](https://doi.org/10.5206/mt.v5i1.16090).
-The statement is on p. 9 of
-[arXiv:2301.09699v4](https://arxiv.org/pdf/2301.09699v4).
-Independent review and the prior-resolution audit are in progress in
-[issue 113](https://github.com/1337isnot1337/solved-conjectures/issues/113).
+**Excluded from new results: an earlier complete proof was located.**
+
+[Principia Math's full proof dated 17 September 2026](https://github.com/PrincipiaMathOrg/math-solutions/blob/47371706c400c79d06e3fb62190fcf6f7a725c85/site-backup/mathdb-357309/mathdb-357309-solution.tex)
+proves exactly the same conjecture by the same analytic mechanism and gives
+an explicit remainder bound. Its presence in the cited repository revision
+is verified as of 27 October 2026. See [PRIOR-EXCLUSION.md](PRIOR-EXCLUSION.md).
+The present proof is retained only as a research record. It is not a new
+resolution and is not included in the completed-result count.
+
+The source is Conjecture 3.1 in David Peter Hadrian Ulgenes, *Series and
+Product Representations of Gamma, Pseudogamma and Inverse Gamma Functions*,
+Maple Transactions 5(1), Article 16090 (2025),
+[DOI 10.5206/mt.v5i1.16090](https://doi.org/10.5206/mt.v5i1.16090),
+p. 9 of [arXiv:2301.09699v4](https://arxiv.org/pdf/2301.09699v4).
+The local mathematical review passed before the prior-resolution gate
+failed in [issue 113](https://github.com/1337isnot1337/solved-conjectures/issues/113).
 
 Let $\alpha$ be the unique positive zero of the digamma function $\psi$.
 Write $\Gamma^{-1}_{+}$ for the inverse of the restriction of $\Gamma$ to
