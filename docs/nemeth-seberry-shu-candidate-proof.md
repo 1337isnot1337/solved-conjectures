@@ -83,7 +83,9 @@ Write h(x)=−log(1−x)−x. Since λ_(p−1)=conjugate(λ1),
 
 The final sum is o(1) uniformly. To see this without summing p individual error bounds, use h(x)≤x²/[2(1−x)] for 0≤x<1, the maximum bound in (2), and the bounded total mass (4). Thus it is O(log p/p). The exceptional term tends uniformly to h((a/ρ)²), since h has bounded derivative on a fixed compact interval below one. Equations (1) and (5), together with per(C_p(S))=k^p per(D), prove (3). ∎
 
-## Lemma 3: distinct row sums have disjoint permanent values
+## Lemma 3: distinct row sums have disjoint permanent values (classical)
+
+This is the binary-circulant case of Brualdi–Newman (1965), Theorem 3.2, p.161. We include the short proof for completeness.
 
 For prime p,
 
@@ -128,3 +130,5 @@ Checked sources include the original-author publication listing, the 1983 Eades�
 5. P. McCullagh, *An asymptotic approximation for the permanent of a doubly stochastic matrix*, Journal of Statistical Computation and Simulation 84 (2014), 404–414. https://arxiv.org/abs/1205.5723 ; https://doi.org/10.1080/00949655.2012.712122
 6. A. Divoux, S. Wang, *The Maximum Number of Hamiltonian Cycles in Tournaments*, arXiv:2610.23755v1, Proposition 3.1. https://arxiv.org/html/2610.23755v1
 7. Y. Lavi, current status page for Minc Conjecture 27: https://yair-lavi.com/mincs-list/conjecture-27/index.html
+
+8. R. A. Brualdi, M. Newman, *Some Theorems on the Permanent*, Journal of Research of the National Bureau of Standards 69B (1965), 159–163, Theorem 3.2. https://nvlpubs.nist.gov/nistpubs/jres/69B/jresv69Bn3p159_A1b.pdf
