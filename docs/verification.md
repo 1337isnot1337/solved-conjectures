@@ -27,6 +27,7 @@ recursive-game identities through `CutPeriodWeightTheorem`.
 
 ```bash
 python3 -m pip install sympy==1.14.0
+python3 results/sagan-swanson-normality/verify_model.py
 python3 results/karp-coefficient-positivity/verify.py
 python3 results/bernardi-morales-delta/verify.py
 python3 results/bernardi-morales-delta/verify_events.py

@@ -1,5 +1,23 @@
 # History
 
+## 2026-11-20 — Sagan–Swanson conjecture
+
+Added a complete proof of asymptotic normality for all four q-Stirling
+coefficient distributions in the proportional regime of Conjecture 7.8.
+An exact conditioned probability model reduces the elementary and complete
+homogeneous symmetric-function families to one theorem. A direct Fourier
+bound controls the conditioning, and exponential tilting proves convergence
+of the actual means and variances. The limiting variance is positive and
+has order $n^3$.
+
+Independent source/model and analytic audits passed, followed by a separate
+review of the full written proof. The standard-library verifier passed 168
+exact identities against the four original recurrences. These finite checks
+do not replace the asymptotic proof. The literature record distinguishes
+older row-distribution and fixed-parameter theorems, as well as the already
+resolved bottom-heaviness conjecture, and states the access limits.
+[Proof, source audit, and model checks](results/sagan-swanson-normality/).
+
 ## 2026-11-20 — Karp's coefficient-positivity conjecture
 
 Added a complete proof of Conjecture 1 for all degrees, arbitrary positive
