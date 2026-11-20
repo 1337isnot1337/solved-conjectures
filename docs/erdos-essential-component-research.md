@@ -114,4 +114,4 @@ In the last inequality, the successive $l_d$ inside a run are $1,2,\ldots$ up to
 ```math
 \gamma_{2^k}\ll\frac{1+\max_{0\le n\le\lfloor k\log_3 2\rfloor}T(n)}{k}.
 ```
-Since $|S_{2^k}|=O(k^2)$, the upper bound on $g_k$ in terms of $\gamma_{2^k}$ proves the digit condition. The question whether powers of three typically have a positive proportion of digit changes is stronger. For lower bounds on the number of changes in individual powers, see Stewart's results as discussed in the work below. [Pengo–Vávra, Introduction](https://arxiv.org/abs/2607.14774)
+Since $|S_{2^k}|=O(k^2)$, the upper bound on $g_k$ in terms of $\gamma_{2^k}$ proves the digit condition. The lower bound for changes in individual powers from Bugeaud and Kaneko's smooth-number estimate is of order $\log n/\log\log n$. [Bugeaud–Kaneko, Corollary 1.5 and Remark 4.4](https://arxiv.org/abs/1704.00432) · [Stephan, Theorem 1.3](https://arxiv.org/abs/2607.14774)
