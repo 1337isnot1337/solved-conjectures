@@ -10,7 +10,65 @@ The objective is to settle full named open conjectures or prove missing steps co
 
 The accepted top-level result covers the Riemann zeta function and Dirichlet L-functions. It does not automatically supply GRH for arbitrary Hecke or Artin L-functions, independence or simplicity of zeros, central nonvanishing, or pair correlation. Internal arithmetic theorems retain their stated hypotheses.
 
-## Main analytic result
+## Reviewed full named outcomes
+
+The following inventory contains twelve full named statements with complete written deductions in this lane. Three entries use proof arguments developed here; nine discharge the hypothesis of a credited published theorem with the accepted RH/Dirichlet-GRH input. This is not a claim of twelve independent new proofs. Coffey and Keiper concern closely related coefficients, and their dependence is stated in both notes.
+
+Current prior-art searches have not located an earlier full resolution of the exact targets apart from the accepted input and the established conditional implications. The searches and retrieval limits are recorded individually. Mathematical completeness, historical priority, and external acceptance are different questions.
+
+| Named conjecture | Full outcome | Nature of the argument |
+|---|---|---|
+| Nuttall's conjecture | Proved: every fixed order admits a tail cumulant whose kernel has all the required determinant signs for every ordered node set | Complete internally reviewed unconditional proof; [note](nuttall.md), [issue #121](https://github.com/1337isnot1337/solved-conjectures/issues/121) |
+| Coffey–Smith conjecture | Disproved: under RH the union of its two proposed positive-fraction sets has density zero; without RH its upper bound fails | Complete internally reviewed unconditional refutation; [note](coffey-smith.md), [issue #122](https://github.com/1337isnot1337/solved-conjectures/issues/122) |
+| Fujii's conjecture | The reported all-positive-alpha equivalence family is false under the accepted beta GRH; the large-alpha oscillation theorem is unconditional | Complete internally reviewed argument, with direct original-source retrieval still limited; [note](fujii.md) |
+| Banks–Friedlander–Luca–Pappalardi–Shparlinski conjecture | Every value of Carmichael's lambda function has at least two preimages | Published Ford–Luca theorem under exactly Dirichlet ERH, plus checked arithmetic deduction; [note](banks-friedlander-luca-pappalardi-shparlinski.md), [issue #120](https://github.com/1337isnot1337/solved-conjectures/issues/120) |
+| Riffaut's conjecture | No singular modulus of degree at least three is a zero of a rational trinomial of the stated form | Published Bilu–Luca–Pizarro-Madariaga Dirichlet-GRH theorem; [note](riffaut.md), [issue #119](https://github.com/1337isnot1337/solved-conjectures/issues/119) |
+| Coffey's conjecture | The full coefficient upper bound holds, with the stronger bound log(n+2)/sqrt(n) | Published Lagarias RH estimate with exact coefficient normalization; [note](coffey.md), [issue #118](https://github.com/1337isnot1337/solved-conjectures/issues/118) |
+| Keiper's conjecture | The normalized coefficients have the full asymptotic, including the constant term, with a square-summable remainder | Published Arias de Reyna RH theorem; [note](keiper.md), [issue #123](https://github.com/1337isnot1337/solved-conjectures/issues/123) |
+| Soundararajan's conjecture | The original smooth-number equidistribution statement holds for every fixed A in its full asymptotic range | Published Banks–Shparlinski criterion under Dirichlet GRH; [note](soundararajan.md) |
+| Grosswald's conjecture | The full least-primitive-root inequality holds for every prime p>409 | Published McGown–Treviño–Trudgian Dirichlet-GRH theorem, with its finite dependencies imported; [note](grosswald.md) |
+| Knapowski–Turán conjecture | The original modulus-four natural-density assertion is false | Published Kaczorowski Dirichlet-GRH theorem; [note](knapowski-turan.md) |
+| Chebyshev's conjecture | The original Abel-weighted prime difference tends to minus infinity | Classical equivalence with beta GRH; [note](chebyshev.md) |
+| Lindelöf hypothesis | The full subpower bound holds | Classical RH implication, with conductor-uniform Dirichlet version documented; [note](dirichlet-applications.md) |
+
+Already published QRH applications such as Vinogradov and the idoneal-number classification remain excluded. The qualified Simm–Wei formulation and Chandee's matching-order result do not enter this full-statement inventory. Neither do the unresolved Hecke, Artin, Selmer, or correlation reductions below. This inventory does not alter unrelated campaigns' result counts.
+
+### Nuttall's conjecture
+
+For the Riemann theta kernel Phi and its repeated tails
+~~~math
+\Psi_m(u)=\frac1{(m-1)!}\int_0^\infty v^{m-1}\Phi(u+v)\,dv,
+~~~
+the [proof](nuttall.md) establishes, for every fixed r and every sufficiently large m,
+~~~math
+(-1)^{s(s-1)/2}\det[\Psi_m(x_i+y_j)]_{i,j=1}^s>0
+\qquad(1\le s\le r)
+~~~
+for every pair of strictly increasing nonnegative node lists. The original conjecture asks for the corresponding sign regularity. Its existing propagation theorem already makes the eventual-m and existence formulations equivalent.
+
+The argument first proves eventual Wronskian signs for the theta kernel. An exact determinant integral transfers them to the tail cumulants. Uniformly on the remaining compact interval, one separated positive box dominates the entire possibly negative region. Extended-Chebyshev criteria then give every ordered-node determinant. The proof assumes no RH and uses no numerical cutoff. It leaves the separate low-index Toeplitz determinants in Nuttall's proposed RH program untouched.
+
+### Coffey–Smith conjecture
+
+For
+~~~math
+\log\!\left(\frac z{1-z}\zeta\!\left(\frac1{1-z}\right)\right)
+=\sum_{n\ge1}c_nz^n,
+~~~
+the [proof](coffey-smith.md) establishes under RH
+~~~math
+\sum_{N\le n\le2N}|c_n|^2\ll N^{-1/2}\log^3(N+2).
+~~~
+Consequently, for each fixed 0<epsilon<1/4,
+~~~math
+\#\{n\le X:|c_n|>n^{-1/2-\epsilon}\}
+\ll_\epsilon X^{1/2+2\epsilon}\log^3(X+2)=o(X).
+~~~
+This contradicts the original positive-fraction clauses for both signs. The proof combines the established Hardy-space identification with an explicit translation-modulus estimate for the boundary argument of zeta. It needs no simplicity or spacing assumption on zeros. If RH fails, even polynomial coefficient growth fails, so the original upper clause also fails. The refutation of the full conjunction is therefore unconditional.
+
+The separate upper-bound statement named Coffey's conjecture remains valid under accepted RH. The density refutation does not contradict it.
+
+## Fujii's conjecture
 
 The complete written argument in [Fujii's conjecture](fujii.md) proves, without any RH assumption, that there is A>0 such that for every fixed alpha>A,
 ~~~math
