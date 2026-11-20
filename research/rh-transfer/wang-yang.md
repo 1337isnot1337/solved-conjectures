@@ -1,6 +1,6 @@
 # Wang–Yang's conjecture
 
-Status: complete unconditional disproof of the exact publicly stated author-manuscript Conjecture 1.10; independent review requested. This note proves sign oscillation for every fixed coefficient index, rather than relying on a finite numerical counterexample. The final publisher PDF was inaccessible; the version boundary and prior-art limits are recorded below.
+Status: complete unconditional disproof of the exact publicly stated author-manuscript Conjecture 1.10; root and independent arithmetic reviews passed. This note proves sign oscillation for every fixed coefficient index, rather than relying on a finite numerical counterexample. The final publisher PDF was inaccessible; the version boundary and prior-art limits are recorded below.
 
 Issue: [#138](https://github.com/1337isnot1337/solved-conjectures/issues/138). Coordination: [#80](https://github.com/1337isnot1337/solved-conjectures/issues/80). Date: 2026-11-20.
 
@@ -211,6 +211,8 @@ $$
 
 This contradicts (9). Therefore no tail can have all its signed differences nonnegative. The proof is an elementary version of the moment-sequence obstruction to simultaneous complete monotonicity and supergeometric decay; no moment-representation theorem is imported.
 
+There is also a credited classical contradiction at (13): O'Sullivan [OS, equation (1.5)] records the strict Turán inequality proved by Csordas, Norfolk, and Varga in 1986. It gives the opposite strict inequality for these coefficients; the geometric rescaling in (4) preserves its sign. This is another existing input, not an additional target or a claim of new moment theory.
+
 ## 5. Relation to the accepted RH source and mathematical credit
 
 This target arose from the campaign's study of the Riemann Xi function and the Laguerre–Pólya consequences of the accepted source pin
@@ -241,9 +243,11 @@ The published bibliographic record is *Transactions of the American Mathematical
 | Wang–Yang's Theorem 1.8 in [WY] | Eventual positivity in the coefficient index for each fixed difference order. Theorem (2) instead fixes the index and varies the order, so there is no contradiction with that theorem. |
 | pudim project's APP-0085, in the [application inventory][Pindex] and [full version-022 theory][Ptheory] | Gives a counterexample to the separate general Laguerre–Pólya question immediately following Conjectures 1.10–1.11. The example is $(1+4x/15)e^{2x/3}$, not the Riemann Xi coefficients. That prior result is not counted here. |
 | Keita Kawano, [November 4, 2026 preprint][K] | Concerns linear finite differences of $\log\gamma(n)$, namely Conjecture 1.11 for orders at least two, and identifies the first-order sign problem in that separate conjecture. It does not settle the coefficient-difference assertion (WY). Its substantive proof is not needed or certified by this note. |
-| O'Sullivan [OS] | Supplies classical normalization, positivity, and growth facts. These inputs are credited, rather than claimed as new. |
+| O'Sullivan [OS] | Supplies classical normalization, positivity, growth, and strict Turán facts. These inputs are credited, rather than claimed as new. |
+| bramble_trace, rStation paper 41, [version 1][R41v1] and [version 3][R41v3] | Concerns generalized quadratic Laguerre expressions at varying real heights and derivative orders. Its related-work section explicitly distinguishes Wang–Yang's coefficient inequalities. It does not address (WY). |
+| bramble_trace, [rStation paper 36][R36] | Concerns signs of fourth-moment constants and filtered averages of generalized Laguerre forms. Those statements differ from linear finite differences of the Xi coefficient sequence. |
 
-The full version-022 pudim TeX was inspected, including the APP-0085 section. At inspection its Git blob was 91b7ce1b71bf9a36aad5cf60c8c6bb8563d59f2a. The adjacent broad question is already answered negatively there; this note does not rename it as a new target.
+The full version-022 pudim TeX was inspected, including the APP-0085 section. At inspection its Git blob was 91b7ce1b71bf9a36aad5cf60c8c6bb8563d59f2a. The adjacent broad question is already answered negatively there; this note does not rename it as a new target. Its one-factor upstream lemmas, general definitions, and one-way Hausdorff finite-difference criterion were also inspected independently by the arithmetic reviewer. They do not state a Xi-specific result or a general zero obstruction that is applied to Xi there.
 
 ### 6.3. Search scope and limit
 
@@ -256,13 +260,20 @@ The audit, completed on 2026-11-20, used both web search engines and exact-title
 - "Xi coefficients" "Hausdorff";
 - source-specific searches of GitHub application archives, MathDB, and Hexagon.
 
+An additional audit checked the [trureturing source repository][T] underlying its mdBook site. Exact author/name, title, and DOI searches found no matching resolution. The complete inspected Problems tree (2175 entries, tree 339793f74acb8de74032f980ccc4da306e9d3077) and recursive Library tree (3290 entries, tree 1975b8ec489297e43338ba98bbdc7e26660af2c7) had no matching Wang–Yang coefficient-monotonicity dossier or source entry. This is a source and claim audit only; no Lean verification was performed.
+
 The root agent conducted a separate current-status search and found no exact prior refutation of Conjecture 1.10. The accessible primary records above were read to distinguish nearby assertions. No earlier exact resolution or correction of (WY) was located.
 
 This is a bounded literature audit, not a proof of priority or exhaustive access to all publications. The final AMS wording remains an explicit access limitation. If an earlier exact disproof or correction is found, the mathematical argument remains valid but the campaign's new-target classification must be revised.
 
 ## 7. Review record
 
-Independent mathematical and original-statement review requested in [issue #138](https://github.com/1337isnot1337/solved-conjectures/issues/138). Review should check the factor $4$ in (5), the forward-difference sign in (7), the fixed-index quantifiers, and the source-version limitation.
+Two independent reviews passed:
+
+- [Root review, issue #138 comment 7050644736](https://github.com/1337isnot1337/solved-conjectures/issues/138#issuecomment-7050644736): checked both proofs, exact source normalization and quantifiers, the actual rendered manuscript pages, Hardy's original statement, and O'Sullivan's primary source. Confirmed the final AMS full-text access limitation.
+- [Arithmetic review, issue #138 comment 7050690731](https://github.com/1337isnot1337/solved-conjectures/issues/138#issuecomment-7050690731): checked the factor $4$ in (5), the sign in (7), repeated Rolle, the polynomial exception and tail-domination lemma, the Bernstein-weight proof, and the original printed pages. Independently checked the pudim prior result and its upstream scope.
+
+The reviews confirm the mathematical disproof of the specified manuscript statement. They do not remove the explicitly bounded priority audit or establish that the inaccessible final publisher wording is identical.
 
 ## References
 
@@ -274,9 +285,17 @@ Independent mathematical and original-statement review requested in [issue #138]
 [Pindex]: https://github.com/pudim-project/pudim-ai-demo-zetalaw/blob/main/APPLICATIONS.md
 [Ptheory]: https://github.com/pudim-project/pudim-ai-demo-zetalaw/blob/main/theory/versions/v022/THEORY_v022.tex
 [K]: https://www.preprints.org/manuscript/202611.0383
+[R41v1]: https://rstation.ai/problems/riemann_hypothesis/papers/41/v1
+[R41v3]: https://rstation.ai/problems/riemann_hypothesis/papers/41/v3
+[R36]: https://rstation.ai/problems/riemann_hypothesis/papers/36
+[T]: https://github.com/the-omega-institute/trureturing
 
 - [WY] Larry X. W. Wang and Neil N. Y. Yang, *Laguerre inequalities and complete monotonicity for the Riemann Xi-function and the partition function*. Author manuscript, Conjecture 1.10, printed page 6; coefficient normalization, printed page 2. Published bibliographic record: *Trans. Amer. Math. Soc.* **377** (2024), 4703–4725.
 - [OS] Cormac O'Sullivan, *Zeros of Jensen polynomials and asymptotics for the Riemann xi function*, *Research in the Mathematical Sciences* **8** (2021), 46. Section 1, especially (1.1)–(1.2), gives the entire-function order and positive-coefficient convention. DOI: 10.1007/s40687-020-00240-5.
 - [H] G. H. Hardy, *Sur les zéros de la fonction $\zeta(s)$ de Riemann*, *Comptes rendus de l'Académie des sciences de Paris* **158** (1914), 1012–1014. The linked transcription of the original paper's first page states critical-line infinitude. Its scan page number 1014 corresponds to printed page 1012.
 - [Pindex], [Ptheory] pudim-project, APP-0085 and the corresponding version-022 theory section. Used only to record the existing counterexample to the distinct general Laguerre–Pólya question.
 - [K] Keita Kawano, *Logarithmic Inequalities of Arbitrary Order for the Riemann Xi Coefficients*, preprint version 1, posted 2026-11-04. Used for the scope and status of the separate logarithmic conjecture.
+
+- [R41v1], [R41v3] bramble_trace, *Laguerre positivity at logarithmic order: pointwise and arithmetic mean theorems*, version 1, 2026-10-22; revised title *Generalized Laguerre positivity at growing orders*, version 3, 2026-10-23. Used only for precise scope and prior-art comparison.
+- [R36] bramble_trace, *Signs and uniform filtered positivity in fourth moments of Hardy's function*, rStation paper 36. Used only for prior-art scope.
+- [T] the-omega-institute/trureturing, public source and problem records inspected on 2026-11-20.
