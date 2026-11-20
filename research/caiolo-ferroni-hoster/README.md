@@ -119,6 +119,32 @@ conjecture. BCEL use positive zeta arguments in their ordinary-Chow
 amplification. Their result does not automatically provide the negative-argument
 inequality needed here. No example satisfying this condition has been found.
 
+### Exact obstruction for the BCEL affine family
+
+For the entire affine family $M_q$, the required negative-zeta failure is
+impossible. This is a statement about the failed approach, not a claimed
+resolution of the dual Chow conjecture.
+
+Put $c_i=\sum_{|S|=i}\alpha_{M_q}(S)$. Direct chain counting gives
+$Z_{M_q}(t)=\sum_{i=0}^3c_i\binom{t}{i+1}$, with $c_0=1$. Hence
+
+```math
+u_m=-m+c_1\binom{m+1}{2}-c_2\binom{m+2}{3}
+          +c_3\binom{m+3}{4}.
+```
+
+Substitute the exact flag formulas from BCEL Corollary 4.11, with auxiliary
+parameter $(q^2+1)/2$. Expand the polynomial
+$D(q,m)=u_{m+1}^2-u_m u_{m+2}$. The function
+`affine_negative_zeta_certificate()` in the accompanying script calculates
+$D(Q+3,M+1)$ over the rational numbers. It has 133 nonzero coefficients;
+every coefficient, including the constant coefficient, is strictly positive.
+This is a finite exact coefficient certificate for
+$D(q,m)>0$ for all real $q\geq3,m\geq1$, in particular for every admissible
+odd prime power and every positive integer $m$. It is not a parameter-grid
+test. Thus this family cannot supply the amplification obstruction at any
+negative integer argument. The attempted transfer from BCEL is parked.
+
 ## Diagnostic scope
 
 Exact rational Sturm root counts were run for the gamma polynomials of
