@@ -380,3 +380,80 @@ by $O(\log M)$, contradicting the supposed agreement.
 This rules out obtaining the conjectured infinite density
 by modifications of size $o(\sqrt M)$ of these three
 classical cyclic families. The infinite conjecture is open.
+
+## Translated blocks and the constant $1/\sqrt2$
+
+Let $A$ be an infinite Sidon set, and suppose it retains
+a fraction tending to one of each of a sequence of blocks
+$T_i+D_i$, where $T_i\ge0$, $D_i\subseteq[0,M_i-1]$ is
+one of the three classical sets above, and $M_i\to\infty$.
+Then
+
+```math
+ \liminf_{i\to\infty} T_i/M_i\ge1.
+```
+
+Suppose instead that $T_i/M_i\le1-\varepsilon$ along a
+subsequence for some fixed $\varepsilon>0$. For any fixed
+$a\in A$ set $b=a-T_i$. If $b\bmod M_i\notin D_i$,
+we can apply the modular triple argument with that residue.
+To obtain true integer collisions with $a$ in the translated
+block, take the strip $0\le x/M_i+y/M_i-b/M_i<1$.
+For $-1\le\alpha=b/M_i\le0$, its area in the square is
+$(1+\alpha)^2/2$, and its length on the diagonal, in the
+summand coordinate, is $(1+\alpha)/2$. Since $a$ is fixed,
+$\alpha\ge-1+\varepsilon$ and $\alpha\le o(1)$. These
+areas or lengths are bounded below by a positive constant
+depending on $\varepsilon$. At least that fraction, up
+to $o(1)$, of the modular triples turn into true collisions.
+The deletion bound contradicts retention of all but $o(|D_i|)$
+elements of the block.
+
+Consequently each fixed $a\in A$ is eventually present in
+the modular translate $T_i+D_i\pmod{M_i}$. By passing to a
+subsequence, there are cutoffs tending to infinity for which
+all points of the corresponding prefixes are present.
+The recurrence theorem gives $|A\cap[1,N]|=O(\log N)$.
+But the retained block gives $(1-o(1))\sqrt{M_i}$ points
+below $T_i+M_i\le2M_i$ on this subsequence, a contradiction.
+
+In particular, if the prefixes up to $T_i+M_i-1$ differ
+from those translated blocks in $o(\sqrt{M_i})$ points,
+their normalized sizes have upper limit at most $1/\sqrt2$.
+This is sharp within the sparse modification scheme.
+The usual lower-bound construction of
+[Krückeberg](https://doi.org/10.1515/crll.1961.206.53)
+can be implemented by translating each new block by
+$T_i=M_i+2L$, with $L$ the previous largest element.
+Remove at most $L$ elements of the new modular set to
+destroy all its positive differences at most $L$.
+Each such difference occurs at most once. Internal new
+differences are then above the internal old differences,
+and mixed differences exceed $M_i$. Two distinct mixed
+differences cannot agree because this would give an
+internal new difference at most $L$. Taking $M_i$ very
+large compared with $L^2$ gives a prefix with
+$(1-o(1))\sqrt{M_i}$ points at $T_i+M_i\sim2M_i$.
+See also [O'Bryant, Lemma 9](https://arxiv.org/abs/2606.28651)
+for the block construction.
+
+The same argument gives a tradeoff with a fixed fraction
+of deletions. Along any sequence of blocks with $T_i/M_i\to
+\theta\in[0,1)$, an infinite Sidon set must satisfy
+
+```math
+ \liminf_{i\to\infty}\frac{|(T_i+D_i)\setminus A|}{|D_i|}
+    \ge\frac{(1-\theta)^2}{8}.
+```
+
+If a subsequence had deletion fractions smaller by a fixed
+margin, the bounded-frequency calculation would force every
+fixed element of $A$ into the modular translates as before.
+The logarithmic growth bound again contradicts the retained
+block. Thus even if the number of deletions is unrestricted,
+prefixes built from a single such block with $o(\sqrt{M_i})$
+additional points have normalized upper limit at most $7/8$.
+For $0\le\theta\le1$ this follows by maximizing
+$(1-(1-\theta)^2/8)/\sqrt{1+\theta}$, which decreases on
+that interval. For $\theta\ge1$ the whole block contributes
+at most $1/\sqrt2$ after normalization.
