@@ -2,7 +2,15 @@
 
 Audit date: 20 November 2026. Target: the full Karp–Vishnyakova–Zhang assertion that the pointwise product of two $`SR_\infty`$ Hankel kernels on the positive quadrant is again $`SR_\infty`$.
 
-The documented search found no earlier resolution of this exact assertion. It cannot exclude unpublished work, inaccessible sources, or unindexed public work. The proof is elementary; no novelty is claimed for the Cauchy determinant formula, strict positivity of exponential determinants, or the distinction between pointwise multiplication and kernel composition.
+Correction: the earlier search missed a theorem of Thomas Simon that already implies the full negation of the assertion. The result is excluded from newly resolved conjectures. The elementary counterexample remains correct.
+
+## 0. Prior theorem that resolves the assertion
+
+Simon's [*Produit Beta-Gamma et régularité du signe*](https://arxiv.org/pdf/1207.6464), submitted in 2012 and published in 2014, proves that certain products of two totally positive multiplicative kernels are not sign regular. Take the parameters $`b=d=1/2`$ in its main theorem, printed page 4, and the factor discussion on page 16. The factors are $`e^{-x/y}`$ and $`\Psi(1/2,1,x/y)`$; their product is not $`SR_3`$.
+
+The substitution $`x=e^u,y=e^{-v}`$ makes both factors Hankel kernels and changes their signatures by $`(-1)^{\binom r2}`$. Opposite determinant signs for their product are preserved. A common translation of both finite witnessing grid pairs, together with the corresponding translation of the defining functions, puts all grid coordinates in the positive quadrant while preserving all determinant entries. Thus the earlier theorem applies to the exact domain and non-strict hypotheses of the later conjecture.
+
+The [complete correction audit](../../research/kvz-hankel-product/PRIOR-SIMON-CORRECTION.md) supplies the details, checks the factors independently, and records the printed missing-minus typo in Simon's concluding remark. This correction supersedes the earlier no-prior-resolution conclusion. The remaining sections preserve the original search record and the distinctions that were correctly made; they are not evidence that the assertion was open.
 
 ## 1. The statement remains in the published source
 
@@ -74,6 +82,6 @@ The independent [analysis audit](../../research/kvz-hankel-product/AUDIT-ANALYSI
 
 ## 5. Conclusion and boundaries
 
-The exact conjecture is explicitly attributable to Karp, Vishnyakova, and Zhang in its original numbered form and remains endorsed in the published source. No earlier resolution was found in the inspected material. The proof gives a full counterexample to that universal statement with both factors strict in every order.
+The conjecture is explicitly attributable to Karp, Vishnyakova, and Zhang in its original numbered form and remains endorsed in the published source. Nevertheless, its negation already follows from Simon's earlier theorem. The repository proof gives a simpler independently obtained counterexample, with both factors strict in every order, and is retained as exposition rather than counted as a new resolution.
 
 The gamma-quotient example that motivated the product conjecture is a separate mathematical problem. A failure of the proposed general closure theorem does not imply failure of that particular example. The reciprocal q-gamma conjecture is also separate. Neither is counted as resolved by this result.
