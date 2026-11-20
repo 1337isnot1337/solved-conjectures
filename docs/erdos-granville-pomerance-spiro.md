@@ -313,3 +313,82 @@ two-prime sieve and $q$ larger than its remaining cofactor to
 bound the largest collision moduli. These inequalities
 do not hold on all but $o(X)$ inputs. A proof or disproof
 of the full conjecture must control inputs outside this family.
+
+## The margins can be removed on a set of density $({\log 2})^2$
+
+Let $\mathcal B$ be the integers admitting $n=pq\ell$ with $p,q$ prime,
+$p>q\ell$ and $q>\ell$. These inequalities determine the primes
+uniquely as the two largest prime factors. For every set $A$ of
+natural density zero,
+
+```math
+\#\{n\le X:n\in\mathcal B,\ s(n)\in A\}=o(X),
+\qquad
+\#(\mathcal B\cap[1,X])\sim (\log 2)^2 X.
+```
+
+To remove the margins, work on $X/2<n\le X$. For fixed $q,\ell$,
+the number of choices of $p$ is $O(X/(q\ell\log X))$ by the
+prime number theorem, since $q\ell\le\sqrt X$.
+Fix $0<\eta<\delta<1/4$. The inputs with $\ell\le X^\delta$
+have total count
+
+```math
+\ll \frac{X}{\log X}
+   \sum_{\ell\le X^\delta}\frac1\ell
+        \sum_{\ell<q\le X}\frac1q
+ \ll X\delta(1+\log(1/\delta))+o(X).
+```
+
+Here the inner sum is over primes. For $\ell\ge2$ it is
+$O(1+\log(\log X/\log\ell))$ by Mertens' theorem. Summing
+against $1/\ell$ gives the displayed bound. The term $\ell=1$
+contributes $O(X\log\log X/\log X)$.
+
+Among the remaining inputs, failure of $p\ge n^{1/2+\eta}$
+puts $q\ell$ between constant multiples of $X^{1/2-\eta}$
+and $\sqrt X$. The reciprocal sum over these cofactors
+is $O(1+\eta\log X)$, giving $O(\eta X)+o(X)$ inputs.
+Failure of $q\ge n^\eta\ell$ puts $q$ in $(\ell,X^\eta\ell)$.
+As $\ell\ge X^\delta$, the prime reciprocal sum there is
+$O(\eta/\delta)+o(1)$ uniformly in $\ell$, again by Mertens.
+This gives $O((\eta/\delta)X)+o(X)$ inputs.
+
+If the largest prime of $\ell$ is below $n^\eta$, the
+$X^\eta$-smooth part of $n$ contains $\ell$ and hence exceeds
+$X^\delta$. The average logarithm of this smooth part is
+$O(\eta\log X)$, by summing prime-power divisibility. This
+excludes a further $O((\eta/\delta)X)$ inputs. Finally,
+the inputs divisible by a square of a prime at least
+$(X/2)^\eta$ are $o(X)$. Outside these exceptions we are
+in $\mathcal B_\eta$. Taking $\delta=\sqrt{\eta}$ and
+then $\eta$ arbitrarily small gives the preimage assertion.
+
+For the density, first let $C(T)$ count $m\le T$
+of the form $q\ell$ with $q>\ell$ prime. Such representations
+are unique. The prime number theorem gives
+
+```math
+C(T)=\sum_{\ell\le\sqrt T}\big(\pi(T/\ell)-\pi(\ell)\big)
+ \sim T\sum_{\ell\le\sqrt T}\frac{1}{\ell\log(T/\ell)}
+ \sim T\log 2.
+```
+
+The subtracted sum is $O(T/\log T)$, and the last sum
+is computed by integrating $1/(t\log(T/t))$.
+For $n\in\mathcal B$, count the possible prime $p>m$
+over these $m=q\ell\le\sqrt X$. Another use of the
+prime number theorem gives
+
+```math
+\#(\mathcal B\cap[1,X])
+=(1+o(1)) X\!
+    \sum_{\substack{m\le\sqrt X\\ m=q\ell,\ q>\ell}}
+       \frac1{m\log(X/m)}
+  +O(X/\log X).
+```
+
+Partial summation using $C(T)\sim T\log 2$ multiplies
+the unrestricted reciprocal sum by $\log 2$. The latter
+sum tends to $\log 2$ by the same integral. This yields
+the stated density.
