@@ -4,11 +4,11 @@ Research checkpoint: 20 November 2026. Target discussion: [issue #87](https://gi
 
 ## Status
 
-This is a complete proof candidate undergoing independent mathematical and prior-art review. It is not yet entered in the solved-results catalogue. In particular, the original 1988 paper has not yet been directly retrieved; two later sources independently record its all-parameter conjecture.
+The complete written proof has passed three independent agent reviews, covering the Mellin normalization, a separate convolution proof, and the distributional limit and recurrence. It is not yet entered in the solved-results catalogue. Publication priority is not established. The original 1988 paper has not been directly retrieved; three later scholarly sources explicitly record its all-parameter conjecture.
 
 The candidate theorem is qualitative: all sufficiently large fixed smoothing exponents give oscillation. No numerical threshold, finite zero computation, or extension of an admissible numerical range is claimed.
 
-The hypothesis used is RH for zeta and GRH for the nonprincipal character modulo four. Both are supplied by the accepted input of this campaign. No linear independence, zero simplicity, or nonabelian GRH is assumed.
+The theorem needs only GRH for the nonprincipal character modulo four, supplied by the accepted input of this campaign. Section 6 first gives a quantitative proof using zeta RH as well, then removes that additional hypothesis by an independent convolution argument. No linear independence, zero simplicity, or nonabelian GRH is assumed.
 
 ## 1. Target and sources
 
@@ -32,14 +32,15 @@ Sources checked:
 2. M. Suzuki, *On variants of Chebyshev's conjecture*, Ramanujan Journal **68**, 95 (2025), [section 1.2, paragraph following (16)–(17)](https://link.springer.com/article/10.1007/s11139-025-01238-9). This explicitly attributes the all-positive-alpha extension to Fujii.
 3. G. Martin et al., *An annotated bibliography for comparative prime number theory*, [arXiv:2309.08729v3](https://arxiv.org/pdf/2309.08729), entry 192, printed page 55. This independently records the same all-alpha conjecture. Entry 17 records the Hardy–Littlewood oscillation theorem used below.
 4. D. Platt and T. Trudgian, *Fujii's development on Chebyshev's conjecture*, [arXiv:1802.00089](https://arxiv.org/pdf/1802.00089), International Journal of Number Theory **15** (2019), 639–644. Its result covers 0<alpha<20.40442. Its obstruction at 20.40443 is an obstruction to the absolute-value estimate used there, not a disproof of the conjecture.
-5. G. H. Hardy and J. E. Littlewood, *Contributions to the theory of the Riemann zeta-function and the theory of the distribution of primes*, Acta Mathematica **41**, 119–196, section 5. The input needed is the classical result
-   psi(x,chi)=Omega_+(sqrt(x) log log log x), and its negative counterpart.
+5. G. H. Hardy and J. E. Littlewood, *Contributions to the theory of the Riemann zeta-function and the theory of the distribution of primes*, Acta Mathematica **41**, 119–196. [Original scan](https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/5282-11511_2006_Article_BF02422942.pdf), printed page 127 and section 5. The scan was retrieved and its psi_1 definition checked: it is exactly the character-weighted von Mangoldt sum used here. The result is psi(x,chi)=Omega_+(sqrt(x) log log log x), with its negative counterpart. Subsequent fetches of the same server sometimes reject its content type; the original check and those later failures are separate events.
+6. M. Suzuki, *On monotonicity of certain weighted summatory functions associated with L-functions*, [arXiv:1204.1823](https://arxiv.org/pdf/1204.1823), introduction, printed page 2. This third source explicitly states Fujii's conjecture for every positive alpha.
+7. K. Ford and S. Konyagin, *Chebyshev's conjecture and the prime number race*, and J. Kaczorowski and O. Ramare, *Almost periodicity of some error terms in prime number theory*, Acta Arithmetica **106** (2003), 277–297, [DOI](https://doi.org/10.4064/aa106-3-6). These describe classical recurrence machinery in this setting. The recurrence mechanism is not claimed as new. The proposed application to all sufficiently large exponential-power smoothing parameters is the item under prior-art review.
 
 The full statement quantified over alpha is the target. The theorem below would refute it under the accepted GRH input.
 
-## 2. Proposed theorem
+## 2. Theorem
 
-Assume RH for zeta and GRH for beta. Then there is a real A>0 such that, for every fixed alpha>A,
+Assume GRH for beta. Then there is a real A>0 such that, for every fixed alpha>A,
 
 ~~~math
 \limsup_{x\to\infty} S_\alpha(x)=+\infty,
@@ -187,7 +188,7 @@ This is the main qualitative step. It yields all sufficiently large fixed alpha,
 
 This section supplies the normalization needed to ensure that the theorem concerns the original unweighted-prime sum.
 
-For each fixed alpha>0, we claim
+Under beta GRH and zeta RH, for each fixed alpha>0, we claim
 
 ~~~math
 \frac{\log x}{\sqrt{x}}S_\alpha(x)
@@ -196,7 +197,7 @@ For each fixed alpha>0, we claim
 \tag{8}
 ~~~
 
-A proof using a smooth cutoff and the explicit formula follows.
+A proof using a smooth cutoff and the explicit formula follows. Section 6.4 proves the weaker error o_alpha(1), sufficient for the theorem, under beta GRH alone.
 
 ### 6.1 Remove small primes smoothly
 
@@ -245,7 +246,9 @@ The distributional derivative of the first two terms in (10), paired with f_x, y
 \tag{11}
 ~~~
 
-The last integral is O_alpha(x^(1/3) log(x+2)+x^(1/12) log(x+2)), by splitting the cutoff transition from the remaining terms in f_x'. This is o(sqrt(x)/log^2 x). All integrals have support bounded away from t=1, and the weight decreases faster than any power at infinity.
+To justify (11) first multiply f_x by a smooth upper cutoff h(log t-R), where h is one on (-infinity,0] and zero on [1,infinity). The resulting test is compactly supported. For fixed x, the function g_x(u)=e^(u/2)f_x(e^u) is Schwartz, and g_x(u)h(u-R) tends to g_x in every Schwartz seminorm as R tends to infinity. The differentiated zero series paired with these tests converges absolutely by N_beta(T)=O(T log(T+2)); the Fourier transforms decrease faster than any power uniformly along the cutoff limit. The arithmetic integral and the E term converge by domination. Thus (11) follows from the compact-test explicit formula without assuming an unsupported extension to noncompact tests.
+
+In the last integral, differentiating the cutoff gives O(x^(1/12) log x), differentiating 1/log t gives O_alpha(x^(1/3)), and differentiating the exponential weight gives O_alpha(x^(1/3) log x). Their sum is o(sqrt(x)/log^2 x). All integrals have support bounded away from t=1, and the weight decreases faster than any power at infinity. See the independent [Mellin review](fujii-mellin-review.md) for the separate integral estimates.
 
 ### 6.3 A uniform Mellin-transform estimate
 
@@ -305,6 +308,94 @@ The same estimate at gamma=0 handles the main term in (11), giving the constant 
 
 The argument uses distributional explicit formulas only against smooth, rapidly decreasing functions, and its Fourier bounds make all passages to infinite zero sums explicit.
 
+### 6.4 Remove zeta RH
+
+Here is a separate proof that beta GRH alone gives
+
+~~~math
+\frac{\log x}{\sqrt{x}}S_\alpha(x)
+=F_\alpha(\log x)+o_\alpha(1).
+\tag{14}
+~~~
+
+All limits in this subsection keep alpha fixed. Full details are also recorded in the independent [convolution review](fujii-review.md).
+
+Put H(t)=e^(-t/2)theta_chi(e^t), extended by zero for t<log 2. Beta GRH gives H(t)=O((1+t)^2) for t>=0. The ordinary prime number theorem, the prime-power decomposition, and (6) give
+
+~~~math
+H(t)=R(t)+r(t),\qquad r(t)\longrightarrow0
+\quad(t\longrightarrow+\infty).
+\tag{15}
+~~~
+
+This identity holds as distributions on t>0. The zero-counting bound makes R a tempered distribution on the full real line. Multiplying r by a fixed smooth cutoff which is one for t>=2 leaves H-R-r_cut supported in (-infinity,2].
+
+For any Schwartz kernel h whose derivatives decrease exponentially at minus infinity and faster than exponentially at plus infinity, define
+
+~~~math
+B_h(t)=\int_{\mathbb R} H(t+v)h(v)\,dv.
+~~~
+
+Then
+
+~~~math
+B_h(t)=
+-\int_{\mathbb R}h(v)\,dv
+-\sum_\rho\frac{e^{i\gamma t}}{\rho}
+       \int_{\mathbb R}h(v)e^{i\gamma v}\,dv+o(1).
+\tag{16}
+~~~
+
+The zero series is absolutely and uniformly convergent by Fourier decay and zero counting. The bounded function r_cut tends to zero, so its convolution is o(1) by dominated convergence. For the remaining distribution supported to the left of 2, localize h(. - t) to that half-line. Every Schwartz seminorm of the localized test tends to zero at an exponential rate times a polynomial in t; continuity of a tempered distribution makes that contribution o(1). Formula (16) applies to each fixed polynomial multiple v^m h as well. In particular these convolutions are bounded.
+
+Set
+
+~~~math
+k_\alpha(v)=\alpha e^{(\alpha+1/2)v-e^{\alpha v}},
+\qquad
+j_\alpha(v)=e^{v/2-e^{\alpha v}}.
+~~~
+
+Both satisfy the kernel conditions. Direct integration gives
+
+~~~math
+\int k_\alpha(v)e^{i\gamma v}\,dv
+=\Gamma(1+\rho/\alpha),
+\qquad
+\int k_\alpha(v)\,dv=\Gamma(1+1/(2\alpha)).
+~~~
+
+Thus (16) and Gamma(1+z)=z Gamma(z) give
+B_k_alpha(t)=F_alpha(t)+o(1).
+All the moment convolutions B_(v^m k_alpha) and B_(v^m j_alpha) are bounded.
+
+Stieltjes integration by parts, followed by u=e^(t+v), gives the exact identity
+
+~~~math
+t e^{-t/2}S_\alpha(e^t)
+=
+\int_{\log2-t}^\infty
+ H(t+v)k_\alpha(v)\frac{t}{t+v}\,dv
++
+\int_{\log2-t}^\infty
+ H(t+v)j_\alpha(v)\frac{t}{(t+v)^2}\,dv.
+\tag{17}
+~~~
+
+On |v|<=t/2 expand the two rational factors as
+
+~~~math
+\frac{t}{t+v}
+=1-\frac vt+\frac{v^2}{t^2}
+ +O(|v|^3/t^3),\qquad
+\frac{t}{(t+v)^2}
+=\frac1t-\frac{2v}{t^2}+O(v^2/t^3).
+~~~
+
+Since H(t+v)=O(t^2) there, the integrated remainders are O_alpha(1/t). The polynomial moment convolutions just proved bounded control the nonconstant displayed terms by O_alpha(1/t). For v<-t/2 the actual integration range has t+v>=log 2, so denominators are harmless and the kernel tails give exponentially small errors times a polynomial in t. For v>t/2 the errors decrease still faster. These same tail bounds permit extending the central moment integrals to the full line. Consequently (17) is B_k_alpha(t)+O_alpha(1/t), which proves (14).
+
+No zeta RH is used in (15)–(17). In particular, replacing the quantitative error in (8) by the vanishing error in (14) retains every sign conclusion below.
+
 ## 7. Almost periodicity forces both signs arbitrarily far out
 
 Fix alpha>A. By section 5 there are y0 and delta>0 with F_alpha(y0)>2delta.
@@ -315,7 +406,7 @@ For a Bohr almost-periodic function, the set of delta-almost-periods is relative
 \sup_y|F_\alpha(y+\tau_n)-F_\alpha(y)|<\delta.
 ~~~
 
-Hence F_alpha(y0+tau_n)>delta. Apply (8) with x_n=exp(y0+tau_n). For all sufficiently large n,
+Hence F_alpha(y0+tau_n)>delta. Apply (14) with x_n=exp(y0+tau_n). For all sufficiently large n,
 
 ~~~math
 S_\alpha(x_n)>
@@ -324,27 +415,30 @@ S_\alpha(x_n)>
 
 By (2), F_alpha also has a negative value. Repeating the same argument gives a sequence along which S_alpha tends to minus infinity. That argument works for every positive alpha, since the mean is always negative.
 
-This proves the proposed theorem, subject to the stated independent review.
+This proves the theorem under beta GRH. The mathematical argument has passed the independent reviews linked below; that fact does not by itself establish publication priority.
 
 ## 8. What is and is not being claimed
 
 - The threshold A is existential. The proof is not a numerical counterexample and does not assert that 20.40443 itself is inadmissible.
 - No independence hypothesis on beta zeros is used. Almost periodic recurrence repeats an already attained phase configuration; it does not prescribe independent phases.
-- The limit alpha to infinity is taken in distributions to select fixed alpha values. It is not interchanged with the x to infinity asymptotic. Once alpha is selected, (8) and recurrence apply at that fixed alpha.
+- The limit alpha to infinity is taken in distributions to select fixed alpha values. It is not interchanged with the x to infinity asymptotic. Once alpha is selected, (14) and recurrence apply at that fixed alpha.
 - This does not contradict the original Chebyshev conjecture, which has alpha=1 and follows from the accepted Dirichlet GRH.
-- The dependence on RH for zeta occurs only in the quantitative prime-square error in (10). The campaign accepts that hypothesis as well as beta GRH.
+- Zeta RH is needed only for the stronger quantitative error in (8). Section 6.4 removes it from the theorem itself.
 - The all-alpha equivalence, considered as a formal logical statement without the accepted GRH input, must be distinguished from the simultaneous negative-limit assertion. This note claims its failure under the accepted GRH input; it does not silently infer the truth of GRH from the conditional oscillation argument.
 - No original-priority claim is justified until the original Fujii formulation and the relevant later literature have been checked.
 
 ## 9. Prior-art and review log
 
-As of this checkpoint, exact-name, exact-title, all-alpha, large-alpha, counterexample, disproof, and almost-periodic searches found the 1988 source, the 2019 bounded-alpha result, the 2025 bibliography, and the corrected Suzuki article, but no established disproof of the all-alpha extension. Absence of a search result is not a proof of novelty.
+Searches on 20 November 2026 covered the exact name and title, all-alpha and large-alpha variants, counterexamples and disproofs, almost-periodic smoothing and approximate identities, the cited Suzuki papers, Platt–Trudgian, the comparative-prime-number bibliography, and the older recurrence literature. No prior full disproof was found. This records search coverage, not proof of novelty.
 
-Outstanding review work:
+Completed checks:
 
-1. Retrieve Fujii's original text and Hardy–Littlewood's exact oscillation statement.
-2. Independently check the explicit-formula signs, the prime-square normalization, estimate (12), and the two limiting operations.
-3. Check whether the approximate-identity obstruction has already been published under different terminology.
-4. Only after these checks decide whether any solved-conjecture entry is warranted.
+1. Suzuki 2012 and corrected Suzuki 2025 explicitly state the all-positive-alpha equivalence for the original unweighted prime sum. The bibliography independently agrees.
+2. Hardy–Littlewood's original scan was retrieved, and the definition and positive oscillation theorem on printed page 127 were checked against psi_chi in (5).
+3. The [Mellin review](fujii-mellin-review.md) checks the cutoff extension, estimate (12), all error integrals, the square contribution, and the normalization.
+4. The [convolution review](fujii-review.md) supplies an independent normalization proof under beta GRH alone, checks the logical scope, and records the extended prior-art search.
+5. The [distribution and recurrence review](fujii-review-distribution.md) checks the uniform gamma domination, distributional limit, positivity transfer, and recurrence without independence or simplicity of zeros.
 
-Independent review is coordinated in issue #87. This file records the full argument so that the review can identify a specific failing step if there is one.
+Remaining provenance limit: direct access to Fujii's four-page 1988 text is blocked in the available retrieval paths. The exact all-alpha formulation is therefore supported here by the three later scholarly descriptions. No claim is made that the original text was read.
+
+The result remains documented in the research lane pending a decision on catalogue status. Issue #87 contains the review checkpoints and commits.
