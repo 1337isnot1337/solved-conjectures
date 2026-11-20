@@ -150,4 +150,4 @@ No later full unconditional resolution preceding the accepted input was located.
 
 ## Review status
 
-Complete inherited deduction with explicit normalization and full asymptotic constant. Independent review requested. No external peer review or formal verification is claimed.
+Complete inherited deduction with explicit normalization and full asymptotic constant. Root independently checked the original formulation, paired-zero identity, Stieltjes decomposition, Fourier/Bessel step, and smooth integral constant against Arias de Reyna's primary paper. The review passed on 20 November 2026; [receipt in issue #123](https://github.com/1337isnot1337/solved-conjectures/issues/123#issuecomment-7049699771). This is internal mathematical review, not external peer review or formal verification.
