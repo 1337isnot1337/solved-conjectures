@@ -157,7 +157,9 @@ document in those collections.
 
 Global GitHub code searches for the full DOI
 10.1007/s00365-023-09627-3 and its distinctive suffix returned no matching
-file. Global searches combining Kaiser–Bessel with conjecture and Bessel
+file. This included an exact quoted DOI suffix combined with the
+coefficient terminology, rather than only an unquoted identifier search.
+Global searches combining Kaiser–Bessel with conjecture and Bessel
 with pi_n or alpha_n were also screened. The latter generic notation
 queries reached a 100-result cap and were dominated by numerical
 libraries, unrelated zeros, and signal processing. They are explicitly
@@ -166,6 +168,32 @@ incomplete and are not treated as exhaustive negative evidence.
 The sampling-window shape-parameter conjecture and its public solution
 claims concern approximation-error optimization, a different assertion.
 No inference about coefficient positivity is drawn from those titles.
+
+### CoPEER and the editable source corpus
+
+The [CoPEER repository](https://github.com/qqliu/CoPEER) was checked at
+commit 105523fdaf018b62eaf2883347724dfe79935611. The complete repository
+README, discovery README, and twelve-record discovery index were read.
+Bessel code search returned no match; Kaiser returned only an unrelated
+author name in a bibliography. The larger 661-entry retrieval snapshot
+could not be inspected through the contents API, which returned empty
+content. No claim is made to have read that snapshot.
+
+The [editable source corpus](https://github.com/AlexenderSokolov/cross-theory-formal-database)
+was also searched at commit 3b9207c03d9dc146f393f68bcb683bbc4583979a.
+Its exact quoted Kaiser–Bessel and source-DOI searches returned no match.
+The broad Bessel search reached its 100-result cap and is not exhaustive.
+
+The closest result was Salazar's *Riccati Reductions for Modified Bessel
+Ratios: Bernstein Positivity, Exact Certificates, and Transfer
+Obstructions*, arXiv:2607.05538v1. The
+[archived primary source](https://github.com/AlexenderSokolov/cross-theory-formal-database/blob/3b9207c03d9dc146f393f68bcb683bbc4583979a/editable-corpus/sources/204547/source0.tex)
+was fetched. Its abstract, main-result table, and all conjecture and
+asymptotic-coefficient loci were inspected. It proves the Yang–Tian
+Bernstein property, addresses Baricz–Ponnusamy–Vuorinen questions, and
+refutes Baricz's older complete-monotonicity transfer assertion. It does
+not state the present all-degree coefficient comparison. Its pointwise
+Bernstein property is not a coefficientwise asymptotic-series theorem.
 
 ## 5. Web search coverage
 
@@ -190,6 +218,7 @@ unavailable manuscripts are outside this conclusion.
 The [independent analysis audit](AUDIT-ANALYSIS.md) checks the exact primary
 statement, coefficient products, telescoping signs, formal inverse,
 identity, and strict lower bound. It reports no mathematical gap.
+It was committed at f42fe35c0ffaec2661ea0bf5a448c5f29bcf8c9e.
 
 The exact diagnostic in [verify.py](verify.py) separately constructs the
 source product coefficients, uses the source quotient recurrence, and
