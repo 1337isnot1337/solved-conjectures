@@ -31,3 +31,10 @@ This checkpoint reports mathematics completed by multiple concurrent researchers
 Remain on named unrestricted conjectures with live coordination issues; do not switch to Lean. The next technical bottlenecks are independent external scrutiny and current primary-literature access for the ten resolved packages, plus new full targets under the Minc list (#139), matroid dual Chow (#111), natural-descent real-rootedness (#116), and metric-lines/bridges (#114). Partial or conditional work stays in research folders without a solved-count increment.
 
 This checkpoint supersedes the *zero complete results* status of the earlier first-pass source screen for the 583fc lane, but does not rewrite that historical document.
+
+
+## Further research after this checkpoint
+
+**Alexandersson's natural-descent conjecture (#116).** A new exact structural obstruction was committed at [last-row-obstruction.md](alexandersson-natural-descent/last-row-obstruction.md), commit `ebe42b2`. For \(\lambda=(4,3,1)\), two largest-entry-row refinements have the positive combination \(4t^4+21t^3+22t^2+8t+1\), with discriminant \(-6571\). Independent enumeration of all 70 standard tableaux confirms the coefficients. The full natural-descent polynomial itself has four real roots, and the original conjecture is **not resolved**. The corresponding finite numerical scan to partition size 39 is also explicitly labeled non-certifying.
+
+**Sinkhorn's real van der Waerden radius (Minc Problem 13, #141).** Independently audited the partial all-order Frobenius radius \(b(n)\ge 1/(2\sqrt n)\) for \(n\ge4\), \(b(n)\ge1/\sqrt n\) for \(n\ge64\), and \(\liminf\sqrt n\,b(n)\ge\sqrt{c_*}\), \(e^{c_*/2}=1+c_*\). The derivation imports Lavi's zero-margin subpermanent lemma; it does not determine the **sharp** radius and is not an eleventh solved entry. Review recorded on #141.
