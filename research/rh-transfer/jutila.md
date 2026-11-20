@@ -453,6 +453,8 @@ Independent internal reviews are recorded publicly:
 - [Source/input review, comment 7050230403](https://github.com/1337isnot1337/solved-conjectures/issues/135#issuecomment-7050230403): checked the exact full target, the arbitrary-primitive-character logarithm inequality in [GZ25] and [M17], both parities, arbitrary polynomial height, and the treatment of prime squares. The suggested split at \(\sigma=3/2\) is incorporated in the pointwise ceiling.
 - [Full argument review, comment 7050231385](https://github.com/1337isnot1337/solved-conjectures/issues/135#issuecomment-7050231385): checked the original p. 250 raster, the six discriminant classes, constants uniform in the moving moment \(r\), the integrated \(X^{13/25}\) error, half-integer Perron truncation and horizontal edges, all lengths, and the conductor lift. Its editorial repair of the absolute constant in the last line of (8) is incorporated.
 
+- [Second full argument review, comment 7050262951](https://github.com/1337isnot1337/solved-conjectures/issues/135#issuecomment-7050262951): independently checked the actual original pp. 248 and 250 rasters and all stages of the proof, including the distribution tail, Perron cutoff, all character lengths, and conductor-weight Euler product.
+
 The exact original discriminant definition and the injective map to modulus-labelled characters were then added explicitly. These are mathematical internal reviews, not formal verification or external peer review.
 
 ## References
