@@ -1,12 +1,18 @@
 # Source and prior-resolution audit
 
+## Priority correction: excluded from new-result count
+
+A [complete earlier disproof](https://github.com/PrincipiaMathOrg/math-solutions/blob/47371706c400c79d06e3fb62190fcf6f7a725c85/site-backup/mathdb-349140/mathdb-349140-solution.tex) by Principia Math In Progress, dated **11 September 2026**, was located and read on 20 November 2026. The pinned repository revision establishes its presence by **27 October 2026**. It proves the same open interval below the proposed threshold. Simon's named conjecture was therefore already resolved before this repository's work.
+
+The proofs below are retained with attribution. The explicit `13/30` construction supplies additional structure, but it does not constitute a newly resolved conjecture. See [the full exclusion audit](../../research/simon-le-roy/PRIOR-EXCLUSION.md).
+
 ## Status and scope
 
 Audit date: 2026-11-20 UTC.
 
 The target is Simon's full complete-monotonicity equivalence for the three-parameter Le Roy function. It is not the separate convexity question about the threshold, and it is not the unrestricted assertion that every gamma-ratio distribution is logarithmically infinitely divisible. Counterexamples to that unrestricted assertion were known earlier.
 
-The proof gives an explicit interval of counterexamples to Simon's exact statement. Its short proof uses Dufresne's 2010 general construction with full attribution. An independent density-perturbation proof is also preserved. The research team's bounded search has found no earlier publication of this exact specialization or another resolution of the same conjecture. That finding is not a certification of worldwide priority.
+The proof gives an explicit interval of counterexamples to Simon's exact statement. Its short proof uses Dufresne's 2010 general construction with full attribution. An independent density-perturbation proof is also preserved. The initial bounded search missed an exact earlier resolution. Its former negative finding is superseded by the priority correction above. The remainder of this document records the earlier source checks; those checks do not establish novelty.
 
 ## 1. Primary statement
 
