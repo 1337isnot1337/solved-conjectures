@@ -255,7 +255,7 @@ The argument covers every order and every positive parameter difference. The par
 
 ## 9. Review and priority status
 
-The full written proof was independently reviewed by the root and analysis agents. Both reviews passed without a mathematical correction. The separate [analysis audit](../../research/kvz-gamma-quotient/AUDIT-ANALYSIS.md) records the source scope, Wronskian calculation, composition normalization, integrability, strictness, and integer rank. The [root audit](../../research/kvz-gamma-quotient/ROOT_AUDIT.md) records the second review and additional source checks.
+The full written proof was independently reviewed by the root and analysis agents. Both reviews passed without a mathematical correction. The separate [analysis audit](../../research/kvz-gamma-quotient/AUDIT-ANALYSIS.md) records the source scope, Wronskian calculation, composition normalization, integrability, strictness, and integer rank. The [root audit](../../research/kvz-gamma-quotient/AUDIT-ROOT.md) records the second review and additional source checks.
 
 The power kernel, gamma convolution identity, and continuous Cauchy–Binet method are classical ingredients. The result scope is the exact named gamma-quotient statement with its complete signature. The [novelty audit](NOVELTY.md) records the inspected primary results, related public solution bodies, search coverage, and access limits. No earlier complete resolution was found in that inspected material; this is a bounded search conclusion.
 
