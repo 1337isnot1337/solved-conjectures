@@ -129,11 +129,9 @@ The bounded-height portions can be included by enlarging constants. Equation (8)
 
 By (5) and (7),
 \[
-|f(\theta)|\ll \log\frac{2}{|\theta|}
- \qquad(0<|\theta|\le\pi), \tag{9}
+|f(\theta)|\ll 1+\log^+\frac1{|\theta|}
+ \qquad(0<|\theta|\le\pi). \tag{9}
 \]
-where the expression on the right may harmlessly be replaced by
-\(1+\log^+(1/|\theta|)\) to keep it positive over the entire circle.
 
 Between consecutive mapped zero ordinates, \(N(t)\) is constant. Differentiating (6) there gives
 \[
