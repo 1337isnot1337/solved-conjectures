@@ -212,3 +212,92 @@ This reduction is not a new general special-value principle. Soulé explicitly p
 The point specific to the present transfer is the required quantifier order: the degree grows with x, so unquantified constants depending on each field degree are insufficient. Estimate (10), or a weaker estimate that still makes (11) at most (12), must hold uniformly across the moving family.
 
 The coordinating worker independently checked (5) and the elementary cyclotomic-image proof of (7). This review does not assert (9) or (10).
+
+## 6. Exact scope of the main-conjecture and ETNC results
+
+The following primary results were checked at the level of their statements and the relevant comparison maps. None is being asserted to provide (10).
+
+### 6.1. Coates–Sinnott selects the other parity
+
+Gambheera–Popescu, [An unconditional equivariant main conjecture in Iwasawa theory and applications](https://link.springer.com/article/10.1007/s40687-025-00578-8), Theorem 7.14, proves a refined Coates–Sinnott Fitting-ideal identity for every n>=2 and odd p. Its idempotent is
+
+~~~math
+e_n(H/F)=
+\prod_{v\mid\infty}\frac{1+(-1)^n c_v}{2}
+\quad(F\text{ totally real}),
+\qquad
+e_n(H/F)=0\quad(F\text{ not totally real}).
+\tag{13}
+~~~
+
+For a CM extension over a totally real field this becomes (1+(-1)^n c)/2. The group K_(2j) corresponds to n=j+1. Thus for even j the theorem controls the **minus** component; the hard scalar component in the present route is the plus component. With an imaginary quadratic base, (13) is zero and the displayed identity is vacuous. Removing a mu hypothesis from the theorem does not change this idempotent.
+
+For a nonquadratic anticyclotomic eta, conjugation interchanges eta and eta^(-1). An individual eta constituent should not be assigned a plus or minus label without specifying the conjugation-stable representation containing it.
+
+### 6.2. Noncritical imaginary-quadratic results do apply, but retain an index
+
+| Primary source | Exact usable scope | Remaining issue for this route |
+| --- | --- | --- |
+| Johnson–Leung–Kings, [On the equivariant and the non-equivariant main conjecture for imaginary quadratic fields](https://arxiv.org/pdf/0804.2828), Theorem 5.2 and §5.3 | The characterwise main conjecture holds for every p. It identifies the determinant of the torsion quotient of a rank-one H^1 module by elliptic-unit classes with that of H^2. The equivariant version invokes Conjecture 5.5, a specified mu-vanishing statement, proved there for split p not dividing 6. | The quotient by the Euler-system lattice is precisely integral index information. Its existence or characteristic ideal does not give the uniform numerical upper bound (10). |
+| Johnson–Leung, [The local equivariant Tamagawa number conjecture for almost abelian extensions](https://arxiv.org/pdf/1307.2607), Main Theorem and §2.1 | For L/K abelian with K imaginary quadratic, the local ETNC for h^0(Spec L)(r), r<0, holds at rational p not dividing 6 that split in K. The integral statement compares lattices after the archimedean Borel regulator and p-adic Chern-class maps. | This is genuinely a negative-weight result. Its split-prime statement cannot be promoted to an all-prime formula for the moving fields. Even where it applies, the higher regulator remains in the numerical comparison. |
+| Bullach–Hofer, [The equivariant Tamagawa number conjecture for abelian extensions of imaginary quadratic fields](https://ems.press/content/serial-article-files/28566), Theorems A and B | The ETNC is proved at s=0 for abelian extensions of an imaginary quadratic field, at split p, and at nonsplit p under the semisimple or stated mu-vanishing alternatives. The paper also proves the relevant Iwasawa-theoretic Mazur–Rubin–Sano result. | A theorem at s=0 is not automatically an integral theorem for all negative Tate weights. No uniform all-weight regulator estimate is stated here. |
+| Maksoud, [On generalized main conjectures and p-adic Stark conjectures for Artin motives](https://arxiv.org/pdf/2103.06864), §6.4–6.5 | Proposition 6.4.1 relates the CM main conjecture and an explicit reciprocity statement to the Artin Selmer main conjecture, under its splitting, character, and Rubin–Stark hypotheses. The imaginary-quadratic specialization has additional unconditional cases. Theorem 6.5.5 already proves Gross–Kuzmin for abelian extensions of imaginary quadratic fields at every odd p. | These are regulator-sensitive specializations. Gross–Kuzmin gives finiteness of the relevant coinvariants, rather than (10), and is not a new open target in this setting. |
+| Büyükboduk–Sakamoto, [L-invariants, p-adic heights and factorization of p-adic L-functions](https://arxiv.org/pdf/2006.02264), §1.1 and §3 | The work studies noncritical Katz specializations under p-ordinarity and specified character assumptions. Theorem 1.2 uses Sigma-Leopoldt for an exact multivariate vanishing order. For the trivial-character cyclotomic restriction, §1.1.5 explicitly identifies the failure of the critical interpolation range. | The leading terms involve heights or regulators. Nonvanishing and exact vanishing order do not supply a uniform upper bound on their p-adic valuations. |
+
+For the candidate host construction E/K abelian and eta pulled back from K, its kernel field L is also abelian over K: it is the compositum of E with the original kernel field over K. Thus the second row is relevant despite L possibly being non-CM. This avoids an unnecessary field restriction, but does not remove its prime restrictions or the quantitative regulator problem.
+
+The named hypotheses appearing in these approaches are distinct:
+
+- The **integral Lichtenbaum conjecture / ETNC** supplies a special-value identity with integral lattices.
+- In the cited general CM noncritical arguments, **Rubin–Stark**, the **Iwasawa-theoretic Mazur–Rubin–Sano conjecture**, **Sigma-Leopoldt**, or a specified **Iwasawa mu-vanishing conjecture** appear in different comparison steps.
+- The estimate still needed here is the quantitative lower bound (10), including the integral defect. A qualitative nonvanishing statement for a regulator is weaker than (10).
+
+The list is not a claim that every named hypothesis remains necessary in every specialization. Some are proved in the imaginary-quadratic cases in the table. The point is to retain the exact theorem used, rather than substitute a broad label for its hypotheses and quantitative output.
+
+## 7. What characteristic ideals alone leave uncontrolled
+
+Two elementary module examples isolate the extra information a numerical use of a main conjecture would need. They are not examples of Hecke Selmer groups.
+
+First, fix an odd p, a weight value u in p Z_p, and N>=1. Over Lambda=Z_p[[T]], set
+
+~~~math
+M_N=\Lambda/(T-u-p^N).
+~~~
+
+Every M_N has mu=0 and lambda=1. Nevertheless, at the specialization T=u,
+
+~~~math
+M_N\otimes_{\Lambda,T\mapsto u}\mathbb Z_p
+\simeq\mathbb Z_p/p^N\mathbb Z_p.
+\tag{14}
+~~~
+
+Thus the two Iwasawa invariants alone do not bound a chosen specialization. A bound must control proximity to the roots of the distinguished polynomial, or handle the exceptional weights separately. The sparse-window argument in moving-selmer-windows.md does the latter at a fixed finite set of coefficient primes, conditional on a uniform rank bound.
+
+Second, let O be a discrete valuation ring with uniformizer pi, let Lambda_2=O[[T_1,T_2]], and choose a,b in pi O. The module
+
+~~~math
+P_N=\Lambda_2/(T_1-a,T_2-b,\pi^N)
+~~~
+
+is finite-length and has zero divisor at all height-one primes, hence trivial characteristic ideal. Its ordinary fiber at (a,b) is O/pi^N O. The corresponding derived specialization also has Tor terms. Passing to a characteristic ideal loses this finite-length information; bounding an individual cohomology group requires control of those terms or a stronger integral comparison.
+
+These examples do not prove that an arithmetic main conjecture, together with additional structure of its actual Selmer complex, could never imply the required estimate. They show precisely why one must exhibit that additional comparison or bound.
+
+The arithmetic worker's conditional sparse-window extension addresses fixed-prime specialization using a uniform bound on the relevant Iwasawa rank. It explicitly keeps the rank uniform across the auxiliary fields. It does not automatically control all coefficient primes, and a bound on a finite set of primes cannot replace the all-prime sum in (8).
+
+## 8. Search scope and limits
+
+Primary statements inspected for this branch include the six results in §6, the original Soulé regulator proposal in §5, and Johnston–Nickel's [An unconditional proof of the abelian equivariant Iwasawa main conjecture and applications](https://arxiv.org/pdf/2010.03186). The last concerns the relevant totally real Iwasawa setting; its title does not extend the controlled parity in (13) to all finite Hecke eigenspaces.
+
+A further current search found El Boukhari's [A Coates–Sinnott-type Theorem for First Derivatives of Artin L-Functions](https://arxiv.org/abs/2608.01486), submitted August 2026. The author-supplied abstract states an ETNC-conditional annihilation result. Its full text was not retrieved during this pass, so it is not used to justify an integral identity or a quantitative bound here.
+
+No source inspected in this pass supplied a bound of the form (10) uniform in the moving field, weight, and coefficient prime. This is a record of the audited inputs, not a claim of a mathematical impossibility or an exhaustive theorem about the literature.
+
+## 9. Remaining obligation
+
+The reusable output is the proved implication (9)+(10) => (11), with the analytic leading term and the auxiliary torsion factor completely estimated.
+
+To turn it into a Hecke extension, one needs an applicable integral formula (9), and a bound for the adverse higher-regulator and integral-defect contribution whose constants are fixed before x and the auxiliary fields. A direct bound for the corresponding integral Euler-system index or Selmer specialization would serve the same purpose.
+
+The accepted RH archive gives the separate source-specific arithmetic inputs summarized in hecke-bootstrap.md. The main-conjecture results inspected here have not yet replaced those inputs for a non-Dirichlet character.
