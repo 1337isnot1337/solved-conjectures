@@ -4,28 +4,28 @@ Status: proved by the argument in [PROOF.md](PROOF.md). Independent internal aud
 
 Tomack Gilmore's *Trees, forests, and total positivity: I. q-trees and q-forests matrices*, Electronic Journal of Combinatorics 28(3) (2021), P3.54, states this as **Conjecture 6.16**, equation (6.133), printed page 65. The arXiv v2 numbering is **Conjecture 6.11**, equation (6.130).
 
-For the matrix \(M=(m_{n,k})\) defined by Gilmore's product of shifted inverse bidiagonal matrices, the conjecture asserts, for every \(n>1\),
-\[
+For the matrix $M=(m_{n,k})$ defined by Gilmore's product of shifted inverse bidiagonal matrices, the conjecture asserts, for every $n>1$,
+```math
 m_{n,1}(r,s,1,1)=
-\sum_{\pi\in\mathcal M_{2(n-1)}}r^{\operatorname{cr}(\pi)}
-s^{\operatorname{ne}(\pi)}.
-\]
+\sum_{\pi\in\mathcal M_{2(n-1)}}r^{\mathop{\mathrm{cr}}(\pi)}
+s^{\mathop{\mathrm{ne}}(\pi)}.
+```
 
 The proof establishes the stronger identity
-\[
+```math
 m_{n,1}(r,s,\mu,y)=y^{n-1}
 \sum_{\pi\in\mathcal M_{2(n-1)}}
-r^{\operatorname{cr}(\pi)}s^{\operatorname{ne}(\pi)}
-\mu^{\operatorname{al}(\pi)}
-\]
-as a polynomial identity for every \(n\ge1\). Here \(\operatorname{al}\) counts disjoint, nonoverlapping arc pairs.
+r^{\mathop{\mathrm{cr}}(\pi)}s^{\mathop{\mathrm{ne}}(\pi)}
+\mu^{\mathop{\mathrm{al}}(\pi)}
+```
+as a polynomial identity for every $n\ge1$. Here $\mathop{\mathrm{al}}$ counts disjoint, nonoverlapping arc pairs.
 
 The matrix product gives the recurrence
-\[
+```math
 m_{n,k}=y[k]_{r,s}m_{n,k+1}+
 \mu^{n-k}m_{n-1,k-1}.
-\]
-This is the last-step recurrence for weighted Dyck prefixes. At \(k=1\), the prefixes become Dyck excursions, and the classical matching encoding gives the stated crossing, nesting, and alignment weights.
+```
+This is the last-step recurrence for weighted Dyck prefixes. At $k=1$, the prefixes become Dyck excursions, and the classical matching encoding gives the stated crossing, nesting, and alignment weights.
 
 ## Files
 
