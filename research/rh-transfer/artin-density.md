@@ -210,3 +210,192 @@ The restriction is present on the analytic side, not only in a top-level wrapper
 - [TopWin.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean) converts the corresponding weighted Chebyshev bounds on scale windows into zero-freeness for those retained characters.
 
 The next mathematical target is therefore a character-twisted replacement for the weighted Chebyshev comparison and its arithmetic-window supply. It cannot be replaced by a field embedding lemma. The latter local and field conditions are now discharged uniformly; the genuinely new analytic comparison remains unproved.
+
+
+## 8. A class character gives an actual automorphic representation of U(1)
+
+Let K be imaginary quadratic, let $\psi$ be a finite-order ideal class character of K, and let E/F be the auxiliary CM extension from Section 3, with $K\subset E$ and $F=E^+$. Write $\Psi=\psi\circ N_{E/K}$ and write c for complex conjugation. Then $\Psi^c=\Psi^{-1}$ and $\Psi$ is trivial on $\mathbb A_F^\times$: for an idele a of F, $N_{E/K}(a)=N_{F/\mathbb Q}(a)$ as an idele of K coming from $\mathbb Q$, and an ideal class character of K is trivial on the rational ideles.
+
+Put $T=U(1)_{E/F}$. There is a unique finite-order automorphic character $\mu$ of $T(\mathbb A_F)$ satisfying
+
+```math
+\mu(z/c(z))=\Psi(z)\qquad(z\in\mathbb A_E^\times).
+```
+
+Here is a direct construction, including the normalization. Local Hilbert 90 makes $z\mapsto z/c(z)$ surjective onto each local norm-one group. These local lifts can be chosen integral at almost every finite place. For an unramified nonsplit quadratic extension, multiplying a lift by a power of a uniformizer from the base makes it a unit without changing its quotient by its conjugate. At a split place one can lift $(u,u^{-1})$ by $(u,1)$. The kernel of the adelic map is exactly $\mathbb A_F^\times$, on which $\Psi$ is trivial. This defines a continuous finite-order character $\mu$. Global Hilbert 90 shows that $\mu$ is trivial on $T(F)$, since every element of $T(F)$ has a lift in $E^\times$.
+
+Because E/F is unramified at all finite places and $\Psi$ is unramified, the same integral-lift argument proves that $\mu$ is trivial on the maximal compact subgroup at every finite place. Its infinite component is trivial because a finite-order continuous character of a connected compact circle is trivial. Thus the line spanned by $\mu$ in functions on $T(\mathbb A_F)$ is an automorphic representation of weight zero. Directly in the archive's definition, continuity, left rational invariance, open finite-level stabilizer, and finite-dimensional infinite-place translates hold; right translation preserves the line; the line is nonzero and irreducible.
+
+This is the content required for the U(1) input in [BaseChangeDefiniteUnitary.lean, IsAutFormU and IsAutRepU](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/BaseChangeDefiniteUnitary.lean). It is a twisted input to the general [TLiftK statement](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/TLiftK.lean), subject to the other Hermitian-space, splitting-character, and weight hypotheses of that statement. Those other hypotheses are not eliminated merely by constructing $\mu$.
+
+The distinction between descent and restriction matters. Restricting $\Psi$ directly to T gives $\mu^2$, not $\mu$. If the order m of $\Psi$ is odd and $2a\equiv1\pmod m$, one can instead write $\mu(u)=\Psi(u)^a$ for $u\in T(\mathbb A_F)$. The standard normalization $\mu^\sharp(z)=\mu(z/c(z))$ is also recorded in [Brooks–Petrow, *Counting automorphic forms on norm one tori*, Section 2.3](https://arxiv.org/pdf/1606.05367). This construction is standard torus theory, not a new conjecture solution.
+
+## 9. The first failed substitution is the polarization
+
+Let $\varepsilon$ denote the l-adic cyclotomic character restricted to a CM field, and suppose $\psi$ is finite order, $\psi^c=\psi^{-1}$, and $e\ge1$. The archive's rational-Dirichlet three-dimensional diagonal has the shape
+
+```math
+A_{\psi,e}
+ =(\varepsilon^e\psi)\oplus 1
+  \oplus(\varepsilon^{-e}\psi^{-1}).
+```
+
+A rational Dirichlet character restricted from $G_{\mathbb Q}$ is invariant under c. Consequently this diagonal is conjugate self-dual in that setting. For the anticyclotomic character now under consideration,
+
+```math
+A_{\psi,e}^{\,c}
+ =(\varepsilon^e\psi^{-1})\oplus1
+  \oplus(\varepsilon^{-e}\psi).
+```
+
+On the other hand $A_{\psi,e}^{\vee}\cong A_{\psi,e}$. Distinct powers of $\varepsilon$ remain distinct after multiplication by finite-order characters: restrict to the common finite-index subgroup killing those characters and use the infinite image of $\varepsilon$. Comparing the unique constituents with Tate exponent e therefore shows
+
+```math
+A_{\psi,e}^{\,c}\cong A_{\psi,e}^{\vee}
+\quad\Longleftrightarrow\quad
+\psi^2=1.
+```
+
+For a class character of order greater than two, the naive replacement does not even lie in the relevant polarized deformation problem. This is a mathematical obstruction, not a missing type annotation.
+
+A corrected diagonal is
+
+```math
+B_{\psi,e}
+ =(\varepsilon^e\psi)\oplus1
+  \oplus(\varepsilon^{-e}\psi).
+```
+
+It satisfies $B_{\psi,e}^{c}\cong B_{\psi,e}^{\vee}$ and has determinant $\psi^2$. If geometric Frobenius has cyclotomic value $q^{-1}$ and $z=\psi(\operatorname{Frob}_w^{-1})$, its trace is
+
+```math
+T_{q,e}(z)=1+(q^e+q^{-e})z.
+```
+
+The archive's target is instead $\operatorname{eis3}(q,e,z)=1+q^{-e}z+q^ez^{-1}$, as defined in [CongruenceNumberRankThree.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/CongruenceNumberRankThree.lean). The two targets agree for quadratic z; they do not agree uniformly for characters of higher order.
+
+Moreover [AdmissibleUnitaryThreePoint.lean, OneCharU](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/WeightInfinitesimalCharacters/AdmissibleUnitaryThreePoint.lean) explicitly uses a Dirichlet character over $\mathbb Q$, its cyclotomic twist, and the diagonal trace $\chi+1+\chi^{-1}$. The apparently arbitrary field K in PropGK does not enlarge this scope: [Counts.lean, GD](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Counts.lean) requires K to be imaginary quadratic. The proof of [PropGKU](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/WeightInfinitesimalCharacters/PropGKU.lean) makes all other K cases vacuous.
+
+## 10. The corrected trace still has the required congruence bound
+
+The polarization correction does not destroy the counting-and-product estimate. The following lemma carries that part of the argument through completely.
+
+### Corrected-trace product lemma
+
+Let $q\ge7$ and $e\ge1$ be integers. Let S be a finite set with complex numbers $t_s$, such that:
+
+- every automorphism of $\mathbb C$ permutes the indexed family $(t_s)_{s\in S}$;
+- $|t_s|\le3$ for every s;
+- $q^e t_s$ is an algebraic integer for every s.
+
+Let O be a finite set carrying a family $z_o$ of roots of unity, again permuted as an indexed family by every automorphism of $\mathbb C$. The values need not be distinct. Put $Q=q^e$ and define
+
+```math
+T_o=1+(Q+Q^{-1})z_o,\qquad
+F_{o,s}=Q(t_s-T_o)
+       =Qt_s-Q-(Q^2+1)z_o.
+```
+
+Then
+
+```math
+M:=\prod_{o\in O}\prod_{s\in S}F_{o,s}
+ \in\mathbb Z\setminus\{0\},
+\qquad
+\log|M|
+ \le |O|\,|S|\,(2e\log q+1).
+```
+
+If $\ell\nmid q$, every embedding of the algebraic numbers into $\overline{\mathbb Q}_\ell$, and every collection of injections $j_o:I_o\hookrightarrow S$, satisfy
+
+```math
+\sum_{o\in O}\sum_{i\in I_o}
+ v_\ell(t_{j_o(i)}-T_o)\ \le\ v_\ell(M),
+```
+
+where $v_\ell(\ell)=1$. Equivalently, the l-adic absolute value of M is at most the product of the selected trace-difference absolute values.
+
+**Proof.** First,
+
+```math
+|T_o|\ge Q+Q^{-1}-1>3.
+```
+
+Thus $t_s\ne T_o$ and each $F_{o,s}$ is nonzero. Each is an algebraic integer because $Qt_s$ is integral and $z_o$ is a root of unity. Also,
+
+```math
+|F_{o,s}|
+ \le Q|t_s|+Q+(Q^2+1)|z_o|
+ \le Q^2+4Q+1
+ \le2Q^2.
+```
+
+The last inequality holds for $Q\ge7$. Hence
+$\log|F_{o,s}|\le2e\log q+\log2\le2e\log q+1$.
+
+Every complex automorphism permutes the product factors, since it fixes the integers Q and $Q^2+1$ and permutes the two indexed families. The product is therefore a rational algebraic integer, hence an integer. It is nonzero because every factor is nonzero. Summing the factor bounds proves the logarithmic estimate.
+
+Finally every algebraic integer $F_{o,s}$ has nonnegative l-adic valuation. Deleting factors from the full product can only decrease the sum of valuations. The injections ensure that the selected factors use each indexed pair at most once. Because $\ell\nmid q$, division by Q changes none of those valuations. This proves the last assertion. ∎
+
+### Applying an actual archive estimate
+
+The three hypotheses on S and $t_s$ are exactly the contents of [Classifies.lean, TrData](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/Classifies.lean). The archive's [tr3U](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/WeightInfinitesimalCharacters/AdmissibleTwistInverseCyclotomic.lean), deduced from CountKU, states the following for every CM field K:
+
+For suitable constants $c_K,A_K$, every $e,N\ge1$, and every prime w over a rational prime p with $p\nmid N\operatorname{disc}(K)$, there is such a trace family at $q=Nw$, with
+
+```math
+|S|\le c_K\,[N(e+1)]^{A_K}.
+```
+
+For every $\ell\ne2,p$, it classifies the inverse-Frobenius traces of all representations satisfying Adm3U with those parameters, and equal classifier indices imply isomorphic representations. Therefore a family of pairwise nonisomorphic admissible representations produces precisely the injections needed in the product lemma.
+
+Take O to be the embeddings of the value field of a finite-order Hecke character $\psi$ into $\mathbb C$, and $z_o=o(\psi(\operatorname{Frob}_w^{-1}))$. If $\psi$ has order m, then $|O|\le\varphi(m)$. This is a valid Galois-stable indexed orbit even when different embeddings give the same value at w. The corrected-trace lemma yields a nonzero integer M, independent of l, with
+
+```math
+\log|M|
+ \le c_K\varphi(m)[N(e+1)]^{A_K}
+       (2e\log(Nw)+1).
+```
+
+As $Nw=p^f$ with $f\le[K:\mathbb Q]$, enlarging the constant and exponent gives
+
+```math
+\log|M|
+ \le C_K\varphi(m)[N(e+1)]^{A_K+1}\log p.
+```
+
+It bounds the sum of valuations of all selected corrected-trace congruences for all $\ell\ne2,p$. This works for the auxiliary degree-eight CM field E as well as for an imaginary quadratic base. No Dirichlet-character assumption was used in this product argument.
+
+The proof is an adaptation of the archive's [FrobeniusTraceNormNonzeroLogBound.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/BuildingsResidueChars/FrobeniusTraceNormNonzeroLogBound.lean), with its elementary trace-difference estimate replaced by the displayed calculation. This is a proved transfer lemma relative to the accepted archive counting input, not an assertion that the original theorem already has the corrected target.
+
+### What this estimate does not supply
+
+It bounds congruences of admissible representations **once those representations exist**. It does not construct admissible points from a twisted Selmer class. The missing replacement for OneCharU must construct representations with corrected polarization and determinant, control their local levels, account for reducible two-plus-one-dimensional components, and compare Selmer lengths with their trace-congruence valuations. The existing rational-Dirichlet OneCharU does not state this.
+
+Neither a positive-dimensional deformation space nor a finite count of automorphic representations alone gives the required length comparison. A proof must retain the actual extension class, establish the relevant automorphy/rigidity input, and prove the intersection-multiplicity bound. Until that is done, the product lemma gives no new bound for the required Hecke-character Selmer groups.
+
+## 11. A precise analytic endpoint for the twisted route
+
+For a nontrivial finite-order Hecke character $\psi$ of K, define
+
+```math
+\Psi_1(x,\psi)=
+ \sum_{N\mathfrak a\le x}
+  (x-N\mathfrak a)\Lambda_K(\mathfrak a)\psi(\mathfrak a),
+```
+
+with the usual convention that the character is zero on ideals not coprime to its conductor. A sufficient weighted Chebyshev theorem for the route is:
+
+> For every such $\psi$ and every $\delta>0$, there is $C_{\psi,\delta}$ such that $|\Psi_1(x,\psi)|\le C_{\psi,\delta}x^{3/2+\delta}$ for all $x\ge2$.
+
+This assertion remains unproved here. Its analytic implication is elementary and exact. For $\Re s>1$, absolute convergence gives
+
+```math
+-\frac{L'}{L}(s,\psi)
+ =s(s+1)\int_1^\infty
+       \Psi_1(x,\psi)x^{-s-2}\,dx.
+```
+
+Under the displayed estimate, the right side is holomorphic on $\Re s>1/2$: on any compact subset, choose $\delta$ smaller than its distance from the line $\Re s=1/2$. Thus $L(s,\psi)$ has no zero to the right of that line, since a zero would give a pole of its logarithmic derivative. Applying the functional equation, with the same assertion for the conjugate character, places all nontrivial zeros on the critical line.
+
+This identifies what a Hecke-character replacement for the archive's VWin-to-weighted-Chebyshev comparison must ultimately prove. The existing VWin is indexed by rational PChar and cyclotomic fixed fields. The corrected congruence lemma is one usable arithmetic ingredient; the twisted Selmer construction and the Hecke-character geometric/analytic comparison are still separate, unproved steps. No implication from Dirichlet GRH to this assertion has been assumed.
