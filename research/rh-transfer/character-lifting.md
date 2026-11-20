@@ -274,7 +274,7 @@ Assume a generalized graded model retains the source Model point-transport and s
 
 A point with all positive-weight coordinates zero corresponds to a Lower representation. The theorem makes that representation diagonal. The source [ModelSigns](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/ModelSigns.lean) then makes all negative-weight coordinates zero as well.
 
-Thus there are no points with positive-weight coordinates zero and some negative-weight coordinate nonzero, anywhere in this model. In particular there are none above any specified values of the weight-zero coordinates. The second alternative in M3 holds for every nonbase diagonal point.
+Thus there are no points with positive-weight coordinates zero and some negative-weight coordinate nonzero, anywhere in this model. In particular there are none above any specified values of the weight-zero coordinates. One of the two alternatives in M3 therefore holds for every nonbase diagonal point.
 
 This proves M3 directly. It neither requires the diagonal locus to consist of one point nor requires deep congruence to the distinguished point.
 
@@ -341,3 +341,64 @@ A character-specific replacement for OneChar would follow by establishing, for t
 The result of sections 4–6 supplies the M3 component of that program without class-number coprimality. A finite-flatness assertion is not inserted as a substitute for these data.
 
 No conclusion about Vandiver's conjecture, Greenberg's conjecture, or Soulé's full number-field conjecture follows yet. The useful advance is a complete removal of the singleton-diagonal requirement at one specified step, with the remaining extension-sensitive module identified.
+
+
+## 9. Why the available Rankin–Selberg theorems do not close the mixed-block step
+
+This section records an applicability check, not a claim that no other method could work. The module and descent are derived in [artin-density.md](artin-density.md). Write eta_K for the quadratic character of K/Q. After the corner descent, the two factors are
+
+~~~math
+U=V\otimes\operatorname{Ind}_{G_K}^{G_{\mathbb Q}}\nu,
+\qquad
+\det V=\eta_K,
+\qquad
+\det\operatorname{Ind}_{G_K}^{G_{\mathbb Q}}\nu=\eta_K.
+~~~
+
+Here nu is a finite anticyclotomic class character. In the genuinely mixed case it is not generally a rational character. The Hodge–Tate weights of U are {-e,-e,e,e}. The following two failures occur before any question of estimating a nonzero L-value.
+
+### 9.1 The rank-one coinvariant condition fails identically
+
+For every Galois element sigma, the two 2-by-2 matrices M=V(sigma) and N=Ind(nu)(sigma) satisfy det(M)det(N)=1. The linear algebra lemma in [Studnia, On obstructions to the Euler system method for Rankin–Selberg convolutions, Lemma 3.1](https://doi.org/10.1007/s40993-026-00718-1) says that ker(M tensor N - 1) cannot have dimension one; it includes nonsimple Jordan forms. Since a square matrix has equal nullity and cokernel dimension,
+
+~~~math
+\dim_E U/(\sigma-1)U\ne1
+\qquad\text{for every }\sigma\in G_{\mathbb Q}.
+~~~
+
+In particular, the required element tau in the cyclotomic kernel does not exist. Taking a dual does not change the dimension of the fixed space. A Tate twist is trivial on that kernel. Neither operation repairs the condition.
+
+The specific implication in [Loeffler–Zerbes, Rankin–Eisenstein classes in Coleman families, Theorem 8.2.1](https://doi.org/10.1186/s40687-016-0077-6) assumes just such a tau. Its theorem therefore cannot be invoked for this module merely by asserting its other local hypotheses or an L-value nonvanishing.
+
+### 9.2 The near-central reciprocity multiplier also vanishes
+
+There is a second explicit check on that proposed application. Suppose the modular identification and coefficient conventions give M(f)=V(-e), where f has weight 2e+1 and quadratic nebentypus eta_K, and M(g)=Ind(nu), where g has weight one and the same nebentypus. This is the geometric normalization. Then
+
+~~~math
+U=M(f)\otimes M(g)(e),\qquad U^*\simeq U.
+~~~
+
+In the notation of Loeffler–Zerbes, k=2e-1, k'=-1, and j=e. Their representation M(f tensor g)(1+j) is U(1); its dual twisted by one is U, the companion Selmer representation in their Corollary 8.3.2.
+
+At these parameters, their explicit reciprocity multiplier is
+
+~~~math
+c^2-c^{\,2j-k-k'}\varepsilon_f(c)^{-1}\varepsilon_g(c)^{-1}
+=c^2-c^2=0.
+~~~
+
+Thus their displayed reciprocity law does not make the required specialized class nonzero from an L-value at e+1. Their section 8.1 explicitly excludes the cancelling-character case at this value of j. This calculation is conditional only on the modular identification just stated; the obstruction in section 9.1 is independent of that normalization.
+
+Differentiating a family at this exceptional specialization, or constructing a different Euler system, would be a new required argument. No derivative nonvanishing or resulting Selmer bound has been supplied here.
+
+### 9.3 Checks of later results
+
+The theorem in [Bounding Selmer Groups for the Rankin–Selberg Convolution of Coleman Families (2020)](https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/bounding-selmer-groups-for-the-rankinselberg-convolution-of-coleman-families/FF13C12CB84246804BE9509D89C6BCAB), Theorem 7.3.3, retains the big-image hypothesis. Its Appendix A expressly observes that the hypothesis fails when the nebentypus product is trivial. Passing to Coleman families in that result does not avoid section 9.1.
+
+[Castella–Do, Diagonal cycles and anticyclotomic Iwasawa theory of modular forms, version 2 (2025)](https://arxiv.org/abs/2303.06751) provides a different Euler-system construction. Its stated setting is an even-weight form with trivial nebentypus; Theorem A also assumes that the coefficient prime does not divide h_K. Our form has odd weight, and the target class characters are needed precisely when that divisibility may hold. The theorem as stated does not supply the missing mixed-block vanishing.
+
+These are failures of the cited theorems' exact hypotheses. They do not disprove the desired vanishing statement. The unproved step remains a rank-four strict or Bloch–Kato Selmer vanishing theorem for the stated orthogonal tensor, with the local conditions arising from the generalized graded model.
+
+### Review receipt
+
+The root worker independently checked sections 4–6: local opposite flags, the three negative-Tate extension ratios, the conjugate-self-dual centralizer argument, the actual normalization Z_10=a(lambda_0-lambda_2), and the distinction between generic points and integral torsion. The nonabelian-transfer worker independently checked the centralizer and normalization calculation. Neither review found a mathematical failure in that triangular splitting argument. This records internal mathematical review; it is not external review or Lean verification.
