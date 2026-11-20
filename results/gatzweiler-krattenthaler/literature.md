@@ -17,6 +17,8 @@ Checked on 20 November 2026. The conclusion is limited to the sources searched: 
 - [MathDB's exact Stanton-fraction entry](https://mathdb.com/p/373779/gatzweiler-krattenthaler-conjecture-on-positivity-of-stanton), which explicitly gives the arbitrary-exponent, $`m\ge n`$ statement and showed no posted solutions when inspected. This secondary entry was used to discover and cross-check scope; the mathematical statement is supported by the two primary papers above.
 - [MathDB's separate Gaussian-binomial quotient entry](https://mathdb.com/p/373778/gatzweiler-krattenthaler-positivity-conjecture-for-quotients) and [Stanton entry](https://mathdb.com/p/373777/stanton-s-conjecture-on-symmetric-fake-gaussian-sequences). These are distinct statements and are not claimed solved here.
 
+- **Thomas Prellberg**, *A positivity conjecture of Prellberg and Stanton*, [arXiv:2610.26878](https://arxiv.org/abs/2610.26878), October 2026. Section 5 of the [accessible manuscript transcription](https://www.paperpeel.com/paper/2610.26878) explicitly compares its dilation product with Gatzweiler–Krattenthaler Conjectures 1 and 3 and does not identify either as a specialization. It gives no resolution of the arbitrary-exponent Conjecture 4. This later paper was checked because its positivity result and references could otherwise be mistaken for a resolution of the present target. Direct arXiv full-text retrieval failed during this check, so this comparison relies on the manuscript transcription and indexed section text.
+
 ## Search strings
 
 Both available web search engines were used. Queries included:
