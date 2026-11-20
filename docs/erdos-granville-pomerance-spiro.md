@@ -30,13 +30,17 @@ zero.
   specific kinds of sparse sets.
 - [Pollack and Singha Roy](https://arxiv.org/abs/2106.14953) prove
   agreement of $k$-free status almost everywhere for $k\ge4$.
+  [Troupe](https://doi.org/10.1090/proc/15104) treats the set of sums
+  of two squares.
   [Benli et al.](https://arxiv.org/abs/2307.12859) prove the EGPS
   conclusion for missing-digit sets. [A 2026 follow-up](https://arxiv.org/abs/2607.18981)
   develops further digit-distribution results.
 - [Erdős Problem 955](https://www.erdosproblems.com/955) and
-  [the fiber-tightness audit](https://www.erdosproblemaday.com/report/955)
-  record the same full statement and the equivalent question of
-  uniform control of the mass of large finite fibers.
+  [MathWorld](https://mathworld.wolfram.com/Erdos-Granville-Pomerance-SpiroConjecture.html)
+  record the same full statement. The
+  [fiber-tightness audit](https://www.erdosproblemaday.com/report/955)
+  gives the equivalent question of uniform control of the mass of
+  large finite fibers.
 
 The November 2026 search covered the original papers, later
 preprints and their references, and the problem discussion.
@@ -465,6 +469,7 @@ A second-moment argument on a larger family would still need
 to handle $\Delta\ne0$ uniformly in the two tails and the
 ranges of the prime variables.
 
-For a second-moment argument that also reaches some inputs
-with largest prime below the square root, see the
-[proof for two primes near the square root](erdos-granville-pomerance-spiro-near-square-root.md).
+The [small-cofactor theorem](erdos-granville-pomerance-spiro-near-square-root.md)
+also covers inputs whose largest prime is at most the square root
+and whose two largest primes have product at least $n^{6/7}$.
+The two disjoint families have combined density approximately $50.56\%$.

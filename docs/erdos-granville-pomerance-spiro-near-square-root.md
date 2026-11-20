@@ -24,77 +24,82 @@ $F(u,w)\equiv K\pmod M$ is
 
 ```math
  \frac{\nu(M)N_1N_2}{M^2}+
- O_\epsilon\left((AM)^\epsilon\gcd(D,M)
-                  \left(\sqrt{AM}+\frac{P+Q}{M}\right)\right)
+ O_\epsilon\left(M^\epsilon
+       \left[\sqrt{M\gcd(A,M)\gcd(D,M)}
+              +\gcd(D,M)\frac{P+Q}{M}\right]\right).
 ```
 
-for every $\epsilon>0$. This follows from completion and the
-Weil bound for Kloosterman sums, as used for modular hyperbolas
-by [Shparlinski, §3.1](https://arxiv.org/abs/1103.2879).
-The factor $\gcd(D,M)$ allows a nonunit right-hand side.
+This follows from completion and the Weil bound for Kloosterman
+sums, as used for modular hyperbolas by
+[Shparlinski, §3.1](https://arxiv.org/abs/1103.2879).
+The factors involving gcds handle nonunit coefficients and
+nonunit right-hand sides.
 
-To see this, write $e_m(t)=\exp(2\pi i t/m)$ and define
+Write $e_m(t)=\exp(2\pi i t/m)$ and define
 
 ```math
  S_M(h,j)=\sum_{\substack{u,w\bmod M\\F(u,w)\equiv K\ (\mathrm{mod}\ M)}}
               e_M(hu+jw).
 ```
 
-The changes of variable $x=Au+B$ and $y=Aw+B$ identify the
-condition with $xy\equiv D\pmod {AM}$ and
-$x\equiv y\equiv B\pmod A$. Write $L=AM$ and put
-$T_L(H,J)=\sum_{xy\equiv D\ (\mathrm{mod}\ L)}e_L(Hx+Jy)$,
-where $x,y$ range modulo $L$. The additive characters enforcing
-the two restrictions modulo $A$ express $S_M(h,j)$ as an average
-of the sums $T_L(h+rM,j+sM)$ with factors of modulus one.
+We first bound these sums for prime power moduli. The Chinese
+remainder theorem multiplies the bounds, with unit rescalings
+of the two frequencies that preserve the gcds.
 
-Partition the $x$-sum for $T_L(H,J)$ by $g=\gcd(x,L)$.
-For each such $g\mid\gcd(D,L)$ write $x=gz$ with $z$ a unit
-modulo $L/g$. The congruence fixes $y$ modulo $L/g$ and the
-sum over its $g$ lifts vanishes unless $g\mid J$. If $g\mid J$,
-this part of the sum is $g$ times the Kloosterman sum modulo
-$L/g$ with frequencies $H,(J/g)(D/g)$. Weil's bound gives
-
-```math
- |T_L(H,J)|\ll_\epsilon L^{1/2+\epsilon}
-                      \gcd(D,L)\gcd(H,J,L)^{1/2}.
-```
-
-Here we used
-$\gcd(H,(J/g)(D/g),L/g)\le\gcd(D,L)\gcd(H,J,L)$
-and summed over at most $\tau(L)$ values of $g$.
-Since $D\equiv B^2\pmod A$, we have
-$\gcd(D,L)=\gcd(D,M)$. The average of
-$\gcd(h+rM,j+sM,L)^{1/2}$ over the two lifts is
-$O(\gcd(h,j,M)^{1/2})$. To see this, fix a prime power
-$\pi^a\parallel A$ and write $\pi^e\parallel M$, allowing $e=0$.
-If $h,j$ are not both divisible by $\pi^e$, the valuation
-in the gcd is fixed. Otherwise, divisibility of both lifts
-by $\pi^{e+i}$ has probability $\pi^{-2i}$ for $1\le i\le a$.
-The local multiplier is at most
-$1+\sum_{i\ge1}\pi^{-3i/2}$, whose product over primes is bounded.
-It follows that
+For the elementary product congruence $xy\equiv D\pmod L$ put
+$T_L(H,J)=\sum_{xy\equiv D\ (\mathrm{mod}\ L)}e_L(Hx+Jy)$.
+Partition this sum by $g=\gcd(x,L)$. Then $g\mid G$, where
+$G=\gcd(D,L)$, and $x=gz$ with $z$ a unit modulo $L/g$.
+The congruence fixes $y$ modulo $L/g$ and summing over its
+$g$ lifts gives zero unless $g\mid J$. If $g\mid J$, this
+part of the sum is $g$ times the Kloosterman sum modulo
+$L/g$ with frequencies $H,(J/g)(D/g)$. Because
+$\gcd(D/g,L/g)=G/g$, we have
 
 ```math
- |S_M(h,j)|\ll_\epsilon (AM)^\epsilon \sqrt{AM}\,
-                      \gcd(D,M)\gcd(h,j,M)^{1/2}.
+ \gcd\big(H,(J/g)(D/g),L/g\big)
+       \le (G/g)\gcd(H,J,L).
 ```
 
-For $j=0$, the restriction $y\equiv B\pmod A$ already follows
-from $x\equiv B\pmod A$ and $xy\equiv D\pmod L$. Thus only
-one additive projection is required, giving an average of
-$T_L(h+rM,0)$. In this sum the Kloosterman sums are Ramanujan
-sums, of absolute value at most $\gcd(h+rM,L/g)$.
-For one lift, the probability of divisibility by $\pi^{e+i}$
-when $\pi^e\mid h$ is $\pi^{-i}$. The resulting local
-multiplier in the average of $\gcd(h+rM,L)$ is at most
-$a+1$. This gives
+The Weil bound applied separately to these parts gives
+$|T_L(H,J)|\ll_\epsilon L^{1/2+\epsilon}
+\sqrt{G\gcd(H,J,L)}$. For $J=0$, the Kloosterman sums
+become Ramanujan sums, each of absolute value at most
+$\gcd(H,L/g)$. This gives
+$|T_L(H,0)|\ll_\epsilon L^\epsilon G\gcd(H,L)$.
+
+Now take a prime power $m=\pi^e\parallel M$. If $\pi\nmid A$,
+the affine change $x=Au+B$, $y=Aw+B$ transforms $S_m(h,j)$
+into a product-congruence sum modulo $m$ with unit frequency
+rescalings. If $a=v_\pi(A)>0$, then $D$ is a unit at $\pi$
+because $D\equiv B^2\pmod\pi$. For $a\ge e$, a trivial bound
+$|S_m(h,j)|\le m$ suffices, since each $u$ gives a unique $w$.
+For $0<a<e$, use the same change of variables modulo
+$L=\pi^{a+e}$. The variables $x,y$ range over $B\pmod{\pi^a}$,
+and the condition becomes $xy\equiv D\pmod L$.
+The additive projections for the two restrictions express
+$S_m(h,j)$ as an average of $T_L(H,J)$ over lifts of the
+frequencies modulo $m$, up to factors of modulus one and
+a unit rescaling by the inverse of $A/\pi^a$.
+If the two frequencies are divisible by $\pi^e$, the
+probability that both lifts are divisible by $\pi^{e+i}$
+is $\pi^{-2i}$. Otherwise the gcd valuation is fixed.
+Thus the average of $\gcd(H,J,L)^{1/2}$ is at most
+$\gcd(h,j,m)^{1/2}(1+\sum_{i\ge1}\pi^{-3i/2})$.
+In this case $G=1$ and $L=m\gcd(A,m)$.
+When one frequency is zero and $\pi\mid A$, the other
+coordinate is uniform since every coordinate determines
+the other one uniquely. Combining all prime powers gives
 
 ```math
- |S_M(h,0)|\ll_\epsilon (AM)^\epsilon\gcd(D,M)\gcd(h,M),
+ \begin{aligned}
+ |S_M(h,j)| &\ll_\epsilon M^\epsilon
+    \sqrt{M\gcd(A,M)\gcd(D,M)\gcd(h,j,M)},\\
+ |S_M(h,0)| &\ll_\epsilon M^\epsilon\gcd(D,M)\gcd(h,M).
+ \end{aligned}
 ```
 
-and the same estimate with the two coordinates exchanged.
+The second estimate also holds with the coordinates exchanged.
 
 Let $W_i(h)$ be the sum of $e_M(-h v)$ over the respective
 restricted interval. For each $d\mid M$, the geometric-series
@@ -135,10 +140,10 @@ by the Chinese remainder theorem.
 
 ## A preimage theorem below the square root
 
-**Theorem.** Put $\lambda=1/10$. Let $\mathcal C$ consist of
-composite integers with largest prime factor at most $\sqrt n$
-whose two largest prime factors, counted with multiplicity,
-have product at least $n^{1-\lambda}$. For every set
+**Theorem.** Let $\mathcal C$ consist of composite integers
+with largest prime factor at most $\sqrt n$ whose two largest
+prime factors, counted with multiplicity, have product at least
+$n^{6/7}$. For every set
 $\mathcal A$ of natural density zero,
 
 ```math
@@ -149,7 +154,10 @@ The family $\mathcal C$ has positive natural density.
 
 ### Reduction and the collision equation
 
-Work in $X/2<n\le X$. A repeated prime factor of size at least
+First fix $0<\lambda<1/7$ and apply the argument to the
+subfamily whose two largest prime factors have product
+at least $n^{1-\lambda}$. Work in $X/2<n\le X$.
+A repeated prime factor of size at least
 $(X/2)^{1/2-\lambda}$ occurs on $o(X)$ inputs. Write the remaining
 inputs as $n=pq\ell$, where $p>q$ are the two largest primes,
 coprime to $\ell$. We have
@@ -215,7 +223,9 @@ $|I||J|\ll X/\ell'$ and $|I|+|J|\ll X^{1/2}$.
 Over the entire box consider pairs $(u,w)$ with
 $F(u,w)\equiv K\pmod M$. These determine the integer
 $v=(F(u,w)-K)/M$. The retained collisions require
-$u,w,v$ all prime and all above $z=X^{1/1000}$.
+$u,w,v$ all prime and all above $z=X^\theta$, where
+$\theta>0$ is a sufficiently small fixed constant depending
+on $\lambda$.
 
 For any squarefree $k$ coprime to $M$, let $\rho(k)$ be the number
 of residue pairs $(u,w)\bmod k$ for which $k\mid uwv$, where
@@ -225,8 +235,9 @@ of pairs with $k\mid uwv$ is
 
 ```math
  \frac{\nu(M)|I||J|}{M^2}\frac{\rho(k)}{k^2}
- + O\left(k^2 X^{o(1)}\gcd(D,M)
-                \left(\sqrt{AM}+\frac{|I|+|J|}{M}\right)\right).
+ + O\left(k^2 X^{o(1)}\left[
+       \sqrt{M\gcd(A,M)\gcd(D,M)}
+           +\gcd(D,M)\frac{|I|+|J|}{M}\right]\right).
 ```
 
 In each residue pair the numbers of terms in the two intervals
@@ -289,32 +300,46 @@ $k\le z^2$ by at most $3^{\omega(k)}$.
 
 ### Summing the errors
 
-For fixed tails and $Q$, each $h\mid\Delta$ forces
-$aq+b\equiv0\pmod h$ in at most one residue class.
-Every such $h$ is $O(X^{3\lambda})$, smaller than $Q$ by a
-power of $X$. Even summing over integers $q$, we have
+Fix the tails and $Q$ and write $G_q=\gcd(D,M)$ and
+$J_q=\gcd(A,M)$. Then $G_q\mid\Delta$ and $G_q,J_q$ are
+coprime since $\gcd(D,A)=1$. For $g\mid A$ and $h\mid\Delta$
+with $\gcd(g,h)=1$, the condition $gh\mid aq+b$ puts $q$
+in at most one residue class modulo $gh$ because $a,b$
+are coprime. Even over all integers $q$ in the dyadic interval,
 
 ```math
- \sum_{Q\le q<2Q}\gcd(D,M)
-   \le \sum_{h\mid\Delta}h\,\#\{q\in[Q,2Q):h\mid M\}
-   \ll QX^{o(1)}.
+ \begin{aligned}
+ \sum_q \sqrt{J_q G_q}
+  &\le \sum_{\substack{g\mid A,\ h\mid\Delta\\\gcd(g,h)=1}}
+        \sqrt{gh}\,\#\{q:gh\mid M\}
+   \ll (Q+\sqrt{A|\Delta|})X^{o(1)},\\
+ \sum_q G_q
+  &\le \sum_{h\mid\Delta}h\,\#\{q:h\mid M\}
+   \ll (Q+|\Delta|)X^{o(1)}.
+ \end{aligned}
 ```
 
-In a nonempty range $Q\le\sqrt{X/\ell}$, the error term with
-$\sqrt{AM}$ thus costs at most
-$z^{6+o(1)}X^{3/4+o(1)}\sqrt{\ell'}\ell^{-1/4}$, since
-$A\ll\ell'$ and $M\ll\ell Q$. The other error term costs
-at most $z^{6+o(1)}X^{1/2+o(1)}/\ell$ using
-$M\gg\ell Q/d$ and $d\le\log X$. Summing over the tails
-up to $X^\lambda$ and the $O((\log X)^2)$ boxes gives,
-respectively,
+Here $\sqrt{A|\Delta|}\ll X^{2\lambda}\ll Q$ since
+$Q\gg X^{1/2-\lambda}$ and $\lambda<1/7$.
+With $M\ll\ell Q$, the sum of the first error term is
+$O(z^{6+o(1)}\sqrt{\ell}Q^{3/2}X^{o(1)})$, at most
+$z^{6+o(1)}X^{3/4+o(1)}\ell^{-1/4}$ since
+$Q\le\sqrt{X/\ell}$. For the second term use
+$M\gg\ell Q/d$ and $|I|+|J|\ll\sqrt X$, so its sum is
+at most $z^{6+o(1)}X^{1/2+o(1)}(1+|\Delta|/Q)/\ell$.
+We have $|\Delta|/Q\ll X^{4\lambda-1/2}$.
+
+Summing these bounds over $\ell,\ell'\le X^\lambda$
+and the $O((\log X)^2)$ pairs of boxes gives exponents
+at most
 
 ```math
- X^{3/4+(9/4)\lambda+6/1000+o(1)}\quad\text{and}\quad
- X^{1/2+\lambda+6/1000+o(1)}.
+ 3/4+7\lambda/4+6\theta+o(1),\qquad
+ \max(1/2+\lambda,5\lambda)+6\theta+o(1),
 ```
 
-Both are $o(X)$ for the chosen $\lambda$.
+respectively. Both are less than $1$ for sufficiently small
+fixed $\theta$, so the total error is $o(X)$.
 
 ### Summing the main term
 
@@ -327,8 +352,12 @@ $Atb\equiv a t'B\pmod\pi$ and the gcd conditions on $\ell'$
 give $\pi\nmid A t'B$.
 Also $\pi\nmid\sigma(w)$ when $\ell=rw$.
 
-Brun–Titchmarsh bounds the sum of $1/Q$ over the primes
-$q\in[Q,2Q)$ in the required residue class for $h$
+For $h>X^{1/10}$, the sum of $1/Q$ over the eligible $q$
+is at most $O(1/h+1/Q)$ even over integers. There are
+$X^{o(1)}$ eligible divisors of $\Delta$, so this range saves
+a power of $X$ and contributes $o(X)$ in total.
+For $h\le X^{1/10}$, Brun–Titchmarsh bounds the sum of $1/Q$
+over the primes $q\in[Q,2Q)$ in the required class
 by $O(1/(\varphi(h)\log X))$. A class sharing a prime
 with $h$ contains no eligible $q$. Thus summing the main term
 over $q$ costs at most
@@ -397,10 +426,11 @@ be taken arbitrarily small.
 ### Density beyond the dominant-prime family
 
 The family $\mathcal C$ is disjoint from the family $\mathcal B$
-in the main note, which has $p>\sqrt n$. We obtain
+in the main note, which has $p>\sqrt n$. For the subfamily
+$\mathcal C_\lambda$ with $\ell\le n^\lambda$, we obtain
 
 ```math
- \lim_{X\to\infty}\frac{\#(\mathcal C\cap[1,X])}{X}
+ \lim_{X\to\infty}\frac{\#(\mathcal C_\lambda\cap[1,X])}{X}
     =\int_0^\lambda\frac{-\log(1-2u)}{1-u}\,du.
 ```
 
@@ -422,9 +452,14 @@ sum in $q$ converge to the integral
 by partial summation and the prime number theorem.
 Boundary strips of width tending to zero cost a vanishing
 proportion by the same upper estimates. Summing the dyadic
-counts proves the density formula. The union
-$\mathcal B\cup\mathcal C$ has density
+counts proves the density formula, also at $\lambda=1/7$.
+By continuity, the density of the inputs lost by using
+$\lambda<1/7$ tends to zero as $\lambda\to1/7$.
+The preimage assertion thus holds on all of $\mathcal C$.
+The union $\mathcal B\cup\mathcal C$ has density
 
 ```math
- (\log 2)^2+\int_0^{1/10}\frac{-\log(1-2u)}{1-u}\,du.
+ (\log 2)^2+\int_0^{1/7}\frac{-\log(1-2u)}{1-u}\,du,
 ```
+
+approximately $50.56\%$.
