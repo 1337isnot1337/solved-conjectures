@@ -54,7 +54,7 @@ If RH fails, the conjecture's polynomial upper bound fails. These cases exhaust 
 
 This does not assert that either sign occurs only finitely often above that scale. Infinite sets of density zero are compatible with (2). No claim about the exact pointwise order of \(c_n\), zero simplicity, independence of ordinates, or a numerical cutoff is used.
 
-The written proof is complete; independent review and the prior-art audit are recorded below. Priority for the specific corollary remains unclaimed pending that audit.
+The written proof is complete and has passed three independent internal reviews. The bounded prior-art search below found no earlier resolution. Priority for the specific corollary remains unclaimed.
 
 ## 1. The analytic branch and Fourier coefficients
 
@@ -309,12 +309,18 @@ Searches through 20 November 2026 used the exact name with hyphen and en dash, t
 
 The checked material includes the original Smith and Coffey papers, Lagarias's published theorem, Arias de Reyna's full 2011 paper, Voros's asymptotic work, Mazhouda's 2011 saddle-point theorem, current indexed 2026 RH research ledgers, and the [164-page October QRH application inventory](https://hexagonmath.org/pdf/2610.00178v1). The inventory contains no “Coffey,” “Keiper,” or “Li coefficient” match.
 
+A final targeted pass searched “Arias de Reyna” with “weighted,” “mean square,” and “Sobolev,” and “Coffey–Smith” with “density,” “mean,” and “disproof.” It reopened the 2011 paper and checked later Li-coefficient literature, including **M. P. Chaudhary, J. Khmiri, and K. Mazhouda**, *A note on the behavior of the Li coefficients for automorphic L-functions*, *Journal of Classical Analysis* **28** (2026), 107–119, [publisher record and PDF](https://jca.ele-math.com/28-07/A-note-on-the-behavior-of-the-Li-coefficients-for-automorphic-L-functions), DOI 10.7153/jca-2026-28-07. That paper concerns partial positivity, recurrences, and a monotonicity conjecture. Its retrieved theorem statements do not supply the weighted square-sum or density-zero result here. The recent numerical followups to Arias de Reyna's unweighted norm likewise do not resolve Smith's density clauses.
+
 No retrieved primary source states the specific dyadic estimate (1), the density-zero conclusion (2), or a prior resolution of the full named Coffey–Smith conjecture. The representation, argument-principle bounds, Fourier analysis, and \(H^2\) theorem are established material; their authors retain credit. The potentially new contribution is the density-zero corollary and its application to Smith's explicit conjecture. Search silence does not prove priority.
 
 Nearby conjectures excluded from this search include Farmer–Rhoades derivative asymptotics (Coffey 2008/2009), Csordas–Dimitrov kernel concavity (public 2026 proofs), and Zhu's xi-coefficient infinite log-concavity (public October 2026 proof).
 
 ## Review status
 
-Detailed proof committed for independent scrutiny. Review must check the exact analytic branch in (5), the periodic endpoint at \(\pi\), the treatment of intervals crossing zeros, the Parseval normalization, the full original positive-fraction clause, and the complementary no-RH argument.
+Three independent internal reviews passed without a mathematical repair:
+
+- [Analytic-targets review](https://github.com/1337isnot1337/solved-conjectures/issues/122#issuecomment-7049673912) reopened Smith's original statement and checked the branch, periodic endpoint, Hardy-space identification, all three translation regions, and the unconditional case split.
+- [Root review](https://github.com/1337isnot1337/solved-conjectures/issues/122#issuecomment-7049681561) checked commit `4d37c5fbedbf72aa000ca6e9c2c08ca8f6a98070`, the precise Arias normalization, the Parseval factor, the uniform dyadic multiplier, and the absence of a zero-spacing or simplicity hypothesis.
+- [Arithmetic-targets review](https://github.com/1337isnot1337/solved-conjectures/issues/122#issuecomment-7049719787) independently checked the full-segment crossing measure, derivative/Fubini estimate, exceptional-set exponent, original positive-fraction clauses, and complementary non-RH case.
 
 This note does not claim that internal review is external peer review or formal verification.
