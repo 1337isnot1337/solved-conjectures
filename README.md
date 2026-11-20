@@ -38,6 +38,14 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 | [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
 
+**Lean status**
+
+- ✅ Fully Lean-verified for the stated result.
+- 🟡 Partially Lean-verified. Lean checks parts of the proof, with steps still to formalize.
+- ⬜ No Lean formalization.
+
+See the [Lean status report](docs/lean-status.md) for the checked scope and remaining gaps.
+
 ## Partial results on open problems
 
 - [Frankl’s union-closed sets conjecture](results/frankl-generator-families/). A four-position generator theorem and a frequency bound for regular, high-girth incidence graphs. Both all-point frequency bounds are fully Lean-verified, including the high-girth theorem for every uniform generator size at least three. The cyclic span-four formalization remains incomplete. [Checked scope](docs/lean-status.md#complete-frankl-high-girth-frequency-theorem).
