@@ -236,7 +236,7 @@ The following checks were completed after the preceding audit. They strengthen t
 
 ### 7.1 Reflection and the direct positive value
 
-The proof in [fujii-boundary.md](fujii-boundary.md), including section 7 at commit as80f89e233e97d8a36f198ee2936afb68dc8c1aa8, was independently checked.
+The proof in [fujii-boundary.md](fujii-boundary.md), including section 7 at commit 80f89e233e97d8a36f198ee2936afb68dc8c1aa8, was independently checked.
 
 Conjugate-zero reindexing gives
 
