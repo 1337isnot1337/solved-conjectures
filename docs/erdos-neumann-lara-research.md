@@ -86,3 +86,29 @@ Conversely, use a palette of length $q=\max(\max_jt_j,1+s_h)$. Give the root any
 For the twincut graph $G_k$, the tree has height $k-1$, and for levels $2\le j\le k-1$ its sibling graphs are copies of $G_j$. Thus $a_k=\chi_f(G_k)$ satisfies $a_1=1$ and $a_{k+1}=a_k+1/a_k$. In detail, $s_1=1=a_2-1$, and if $s_{j-1}=a_j-1$ then $s_j=a_j-1+1/a_j=a_{j+1}-1$. Squaring the recurrence gives $a_{k+1}^2=a_k^2+2+a_k^{-2}$, so $a_k^2=2k+O(\log k)$.
 
 Mohar and Wu give a maximum dichromatic number of order at least $t/\log t$ when $t=\chi_f$. It follows that $\delta(B_k)=\Omega(k/\log k)$ and $\delta(G_k)=\Omega(\sqrt{k}/\log k)$. An Erdős–Neumann-Lara counterexample family would require a different construction. [Mohar–Wu, Theorem 1.3](https://doi.org/10.1017/fms.2016.28)
+
+## Graphs from the counterexample to the Erdős–Hajnal high-girth conjecture
+
+Kohlmeyer and Kruer disproved the high-girth subgraph conjecture using underlying graphs of line digraphs of acyclic graphs. Nguyen and Walczak sharpened the construction to produce graphs of unbounded chromatic number all of whose $C_4$-free subgraphs are 3-colourable. The construction also permits orientations requiring unboundedly many colours to avoid monochromatic directed four-cycles. [Nguyen–Walczak, Theorems 1.3 and 2.1](https://arxiv.org/abs/2609.40192)
+
+Let $D$ be a finite simple digraph partitioned into nonempty sets $V_1,\ldots,V_m$, with all arcs going from a lower to a higher index. Suppose its maximum outdegree is at most $d\ge1$. Write $L(D)$ for the undirected graph of its arcs, adjacent when consecutive in a directed path. Give each vertex of $V_i$ weight $1/|V_i|$. Suppose each independent set of the underlying graph of $D$ has total weight at most $m/T$. For an integer $q\ge1$, assume
+```math
+|V_i|\ge 4d\log_2(2qd)\sum_{j>i}|V_j|\quad(i<m),
+\qquad
+t=\left\lceil\log_2(1024qd(d+1))\right\rceil .
+```
+If $(3/4)T\gt 2^q(q(t-1)+1)$, then $L(D)$ has an orientation in which every $q$-colouring has a monochromatic directed four-cycle.
+
+**Proof.** Orient the edges of $L(D)$ independently at random. Consider a vertex $v$ of $D$ and any choice of colours and a linear order on its outgoing arcs. Call an incoming arc $e$ *compatible* if for some colour with at least $t$ outgoing arcs, its forward edges in the orientation of $L(D)$ to those arcs form a suffix in their order. The signs for the $r$ edges from $e$ to an outgoing block of size $r$ are uniform on $2^r$ possibilities, of which $r+1$ are suffixes. Thus the chance that $e$ is compatible is at most $q(d+1)2^{-t}$.
+
+Fix a layer $V_i$ and fix the choices of colours and orders at vertices in the higher layers. For $u\in V_i$, call $u$ bad if any arc out of $u$ is compatible at its head. The probability of this is at most $dq(d+1)2^{-t}\le2^{-10}$. These events are independent across $u\in V_i$, because different incoming arcs at each junction use disjoint sets of edges of $L(D)$. For $n_i=|V_i|$ the probability of at least $n_i/4$ bad vertices is at most $2^{n_i}(2^{-10})^{n_i/4}=2^{-3n_i/2}$. Over all vertices in higher layers the number of choices of colours and orders is at most $(q^d d!)^{\sum_{j>i}n_j}\le 2^{n_i/4}$. The failure probability on each layer $i<m$ is thus at most $2^{-n_i}$, and these bounds sum to less than one because the $n_i$ are distinct positive integers. The final layer has no bad vertices. Fix an orientation for which every choice of colours and orders at higher layers leaves at least three quarters of each layer good.
+
+Suppose there is a $q$-colouring of the arc vertices with no monochromatic directed four-cycle. For every junction $v$ and every colour, its incoming and outgoing arcs of that colour induce an oriented complete bipartite graph. It is acyclic, since every cyclic orientation of a complete bipartite graph has a directed four-cycle. Choose the order on outgoing arcs of each colour from a topological order of that bipartite digraph, concatenating the orders over the colours. Any incoming arc whose colour appears on at least $t$ outgoing arcs is now compatible at that junction. Retain the good vertices of $D$ for these choices. Their combined weight is at least $(3/4)m$.
+
+At a retained vertex $v$ let $P(v)$ be the set of colours with at least $t$ outgoing arcs in the original $D$. An arc $u\to v$ with both endpoints retained and $P(u)=P(v)$ must have colour outside this common palette. If its colour belonged to the palette at $v$, $u$ would be bad. There are at most $q(t-1)$ arcs of colours outside the tail palette at any tail. Thus on vertices with any one palette the underlying graph has an acyclic orientation of maximum outdegree at most $q(t-1)$ and is $(q(t-1)+1)$-colourable by reverse topological order. Over at most $2^q$ palettes this gives at most $2^q(q(t-1)+1)$ independent sets partitioning the retained vertices. Their total weight cannot reach $(3/4)m$ under the given bound on $T$. This contradiction proves the assertion.
+
+The proof of Nguyen and Walczak's Theorem 2.1 supplies such a base $D$ for arbitrarily large $T$, with $d=O(T^2\log T)$ and the stated weights. Each vertex has at most one arc to each higher layer, and the decay of the layer sizes in their construction can be taken as fast as the separation inequality above requires. Their Lemma 5.3 bounds the weight of independent sets with the same weights. Use the maximum-degree threshold $d+\binom d2$ there for their 3-colourability conclusion on $C_4$-free subgraphs of $L(D)$. Our orientation gives the simultaneous lower bound
+```math
+\delta(L(D))\ge \log_2 T-2\log_2\log_2 T-O(1),
+```
+by taking $q=\lfloor\log_2 T-2\log_2\log_2 T-C\rfloor$ for a sufficiently large constant $C$. Meanwhile $\chi_f(L(D))\le4$, since independent fair bits assigned to the base vertices select each arc with probability $1/4$ as a $0$-to-$1$ arc, and these selected arcs always form an independent set of $L(D)$.
