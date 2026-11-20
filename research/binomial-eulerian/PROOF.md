@@ -1,6 +1,6 @@
 # Binomial Eulerian interlacing conjecture
 
-Status: complete short deduction from Haglund–Zhang's published theorem; **not counted as a new solution because the prior-resolution audit is unresolved**.
+Status: **excluded as an already resolved target**. The deduction below is retained as a research note, not counted as a new solution.
 
 Issue: [#90](https://github.com/1337isnot1337/solved-conjectures/issues/90).
 
@@ -15,7 +15,7 @@ x^{\operatorname{exc}(\pi)}.
 
 Then $\widetilde A_n$ and $\widetilde A_{n+1}$ strictly interlace for every $n\geq1$.
 
-The weak statement is listed as open on the [current SymCat page](https://www.symmetricfunctions.com/realRootedOpenProblems.htm). The proof below is a direct deduction from the stronger refined-row theorem in [Haglund–Zhang (2019)](https://zhangbiaomath.github.io/papers/2019-aam-bino_eulerian.pdf). It is not a new method.
+The weak statement is still listed as open on the [current SymCat page](https://www.symmetricfunctions.com/realRootedOpenProblems.htm), but explicit public proof records from October 2026 resolve it. The proof below is a direct deduction from the stronger refined-row theorem in [Haglund–Zhang (2019)](https://zhangbiaomath.github.io/papers/2019-aam-bino_eulerian.pdf). It is not a new method.
 
 ## Published ingredients and conventions
 
@@ -111,13 +111,21 @@ Start with $\widetilde A_1=1+x$. Assume $\widetilde A_m=p_{m,0}$ has simple nega
 
 The already proved weak interlacing and absence of common zeros imply strict interlacing. In particular, the $m+1$ roots of $\widetilde A_{m+1}$ are simple. They are negative because its coefficients and constant term are positive. This closes the induction.
 
-## Prior-work obstruction
+## Prior resolution and exclusion
 
-The proof is complete as a deduction, but it is not yet eligible as a new resolution.
+The target is excluded from this campaign. The current catalog label is stale.
 
-1. Haglund–Zhang's refined theorem already contains all ingredients of the weak conclusion. Any description must credit that source directly.
-2. [Athanasiadis (2025), arXiv:2302.00754v5](https://arxiv.org/html/2302.00754v5), Section 3, proves closely related row and column interlacing for Eulerian transforms.
-3. [Liu–Yan (2025), DOI 10.1016/j.aam.2024.102776](https://doi.org/10.1016/j.aam.2024.102776), explicitly states that diagonal binomial-transform sequences are generalized Sturm sequences. Its introduction identifies the binomial Eulerian polynomial as one such transform. The accessible publisher material does not reveal all hypotheses of Theorem 5.1, so overlap has not yet been fully determined.
-4. The later [Yan–Liu (2025), DOI 10.1016/j.disc.2025.114598](https://doi.org/10.1016/j.disc.2025.114598) also studies recurrence criteria for Eulerian and derangement interlacing.
+- [RealRooted PR #1685](https://github.com/PerAlexandersson/RealRooted/pull/1685), merged on **2026-10-13 at 19:48 UTC**, corrects the Haglund–Zhang markers: the collision multiplier is $1+x$ only at threshold zero, and is $1$ at every other threshold. It explicitly adds consecutive interlacing for the corrected binomial Eulerian family and OEIS A046802. [Issue #1683](https://github.com/PerAlexandersson/RealRooted/issues/1683) documents why the earlier marker model was wrong.
+- [RealRooted PR #1723](https://github.com/PerAlexandersson/RealRooted/pull/1723), merged on **2026-10-14 at 18:17 UTC**, separately identifies the downstream order-two recurrence for A046802 with the Eulerian-transform binomial model and supplies real-rootedness and interlacing for that literal presentation. Its description explicitly says that equality with the Haglund–Zhang surface definition is not added there; these are two routes to the stated family, not an asserted new equality theorem.
+- [The project status issue #1332](https://github.com/PerAlexandersson/RealRooted/issues/1332), updated on October 15, records A046802 as completed, including the downstream presentation and regression guards.
 
-A catalog label is not sufficient evidence of novelty when these primary sources raise a specific prior-resolution concern. The result stays in research, with no solved-count change.
+These public records already state the all-index mathematical conclusion. We read their descriptions for the prior-resolution audit; we did not run, modify, or verify Lean. The name of an exported interlacing predicate is not used as evidence of strict inequalities. The catalog's conjecture only asks for consecutive interlacing, so its prior resolution suffices to exclude the target even if the stronger simple-root statement above is phrased differently.
+
+There may also be earlier published coverage:
+
+1. Haglund–Zhang's 2019 refined theorem contains all ingredients of the weak conclusion, as the deduction above shows.
+2. [Athanasiadis (2025), arXiv:2302.00754v5](https://arxiv.org/html/2302.00754v5), Section 3, proves related row and column interlacing for Eulerian transforms.
+3. [Liu–Yan (2025), DOI 10.1016/j.aam.2024.102776](https://doi.org/10.1016/j.aam.2024.102776), states that diagonal binomial-transform sequences are generalized Sturm sequences. Its introduction identifies the binomial Eulerian polynomial as such a transform. The accessible publisher material does not reveal all hypotheses of Theorem 5.1, so the exact scope was not established in this audit.
+4. [Yan–Liu (2025), DOI 10.1016/j.disc.2025.114598](https://doi.org/10.1016/j.disc.2025.114598) also studies recurrence criteria for Eulerian and derangement interlacing.
+
+Resolving that older overlap is unnecessary for exclusion: the explicit October 2026 public proofs already precede this work. No solved-count change is made.
