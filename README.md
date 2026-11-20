@@ -10,22 +10,22 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 ## Results
 
-| Problem | Lean |
+| Problem | Verification |
 | :--- | :---: |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ |
 | [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
-| [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟡 |
-| [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟡 |
-| [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | 🟡 |
-| [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟡 |
-| [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟡 |
-| [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟡 |
-| [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟡 |
-| [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | 🟡 |
+| [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
+| [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
+| [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | 🟢 |
+| [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟢 |
+| [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |
+| [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟢 |
+| [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟢 |
+| [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | 🟢 |
 | [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | ✅ |
 | [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ |
 | [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ |
-| [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟡 |
+| [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
 | [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
 | [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
 | [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
@@ -38,13 +38,14 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 | [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
 
-**Lean status**
+**Verification key**
 
-- ✅ Fully Lean-verified for the stated result.
-- 🟡 Partially Lean-verified. Lean checks parts of the proof, with steps still to formalize.
-- ⬜ No Lean formalization.
+- ✅ Fully Lean-verified.
+- 🟢 Partially Lean-verified, with a computer-assisted proof.
+- 🟡 Partially Lean-verified.
+- ⬜ No computer-assisted proof or Lean verification yet.
 
-See the [Lean status report](docs/lean-status.md) for the checked scope and remaining gaps.
+For the 🟢 Lonely Runner results, the written proofs reduce the classification to finitely many cases. Exact computations exhaust those cases, with some results drawing on archived searches from cited papers. Completing the Lean proofs requires formalizing the remaining reductions and cited bounds and checking the remaining search certificates in Lean. The [verification guide](docs/verification.md#computational-checks) gives the replay commands, and the [Lean status report](docs/lean-status.md) gives the remaining steps for each result.
 
 ## Partial results on open problems
 

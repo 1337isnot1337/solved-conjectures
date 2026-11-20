@@ -27,8 +27,10 @@ definitions and an external publication remains subject to mathematical review.
 Published mathematical theorems that have not been formalized are hypotheses,
 never additional Lean axioms.
 
-The README uses ✅ for complete formalization of the stated result, 🟡 for
-partial formalization, and ⬜ for a result without Lean formalization.
+The README uses ✅ for complete formalization of the stated result, 🟢 for
+partial formalization with a computer-assisted proof, 🟡 for partial
+formalization, and ⬜ when a result has neither a computer-assisted proof nor
+Lean verification.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |

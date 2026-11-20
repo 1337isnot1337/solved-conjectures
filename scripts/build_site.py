@@ -393,7 +393,7 @@ class Builder:
                     if len(cells) != 2:
                         raise ValueError(f"README result row needs two columns: {slug}")
                     text = clean_text(plain(cells[1][-1]))
-                    status = {"✅": "full", "🟡": "partial", "⬜": "none"}.get(text)
+                    status = {"✅": "full", "🟢": "partial", "🟡": "partial", "⬜": "none"}.get(text)
                     if status != results[slug].status:
                         raise ValueError(f"Stale README Lean status for {slug}: {text!r}; expected {results[slug].status}")
                     readme_checked.add(slug)
