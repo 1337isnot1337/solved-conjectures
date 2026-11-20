@@ -76,6 +76,36 @@ def affine_flags(q, packing=False):
             7:q*(q*q+q)*n3+2*m*q**4*(q*q+1)+6*n1*b2+6*b3}
 
 
+def affine_negative_zeta_certificate():
+    """Certify that this amplification route fails for the whole affine family.
+
+    The shift is polynomial algebra over QQ, not a finite grid test.
+    It proves u_(m+1)^2 > u_m*u_(m+2) for every q>=3 and m>=1.
+    """
+    q,m=sp.symbols('q m')
+    n1=q**4
+    n2=q**3*(q**3+q*q+q+1)
+    n3=q*q*(q*q+1)*(q*q+q+1)
+    a=(q*q+1)/2
+    b2=a*(a-1)/2
+    b3=a*(a-1)*(a-2)/6
+    f={0:1,1:n1+a,2:n2+n1*a+b2,4:n3+n1*b2+b3,
+       3:q*n2+2*n1*a+2*b2,
+       5:q*q*n3+a*q*q*(q*q+1)+3*n1*b2+3*b3,
+       6:(q*q+q)*n3+a*q**4*(q*q+1)+3*n1*b2+3*b3,
+       7:q*(q*q+q)*n3+2*a*q**4*(q*q+1)+6*n1*b2+6*b3}
+    c=[sum(v for mask,v in f.items() if mask.bit_count()==i)
+       for i in range(4)]
+    u=-m+c[1]*m*(m+1)/2-c[2]*m*(m+1)*(m+2)/6 \
+       +c[3]*m*(m+1)*(m+2)*(m+3)/24
+    defect=sp.expand(u.subs(m,m+1)**2-u*u.subs(m,m+2))
+    certificate=sp.Poly(sp.expand(defect.subs({q:q+3,m:m+1})),q,m)
+    assert len(certificate.terms())==133
+    assert all(c>0 for c in certificate.coeffs())
+    assert certificate.coeff_monomial(1)>0
+    return certificate
+
+
 def truncated_product_flags(factors, rank):
     """Flag vector of a rank-r truncation from factor flag vectors/ranks."""
     from itertools import product
@@ -104,6 +134,8 @@ def truncated_product_flags(factors, rank):
 
 
 if __name__ == '__main__':
+    certificate=affine_negative_zeta_certificate()
+    print('Affine negative-zeta defect: 133 positive shifted coefficients.',flush=True)
     z = sp.Symbol('z')
     for q in (2,3,5,7,11,23,101):
         for n in sorted({4,q**3}):
