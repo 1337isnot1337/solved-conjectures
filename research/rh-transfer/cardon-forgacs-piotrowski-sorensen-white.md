@@ -23,7 +23,7 @@ This is an unconditional refutation of the full universal assertion in Question 
 
 The candidate arose while studying the entire-function and zero-location methods adjacent to the accepted RH source. The proof does not use RH, Dirichlet GRH, or any hypothesis from the source repository.
 
-**Status:** the algebra and original scope have passed independent preliminary checks. The full written proof and bounded prior-art audit are submitted for independent review. No claim of exhaustive priority verification is made.
+**Status:** the full written proof, original scope, and bounded prior-art audit passed an independent analytic review. Further independent review is in progress. No claim of exhaustive priority verification is made.
 
 ## 1. Why failure on this cubic contradicts sector reduction
 
@@ -243,16 +243,22 @@ whereas the cited sufficient criterion requires this ratio to be at least \(4\).
 - Craven–Csordas, [*Problems and theorems in the theory of multiplier sequences*](https://math.hawaii.edu/~tom/mathfiles/serdica1.pdf), *Serdica Mathematical Journal* **22** (1996), 515–524, was checked, including its rapid-decrease discussion. It supplies different interpolation and preservation questions, not the present explicit counterexample.
 - Cardon's [2026 revision of *Complex zero strip decreasing operators*](https://arxiv.org/pdf/1401.0237) corrects different strip-decreasing conjectures from his 2015 paper. That revision is not treated as a resolution of the 2018 sector question.
 
+- Katkova–Shapiro–Vishnyakova, [*Multiplier sequences and logarithmic mesh*](https://www.numdam.org/item/10.1016/j.crma.2010.11.031.pdf), *Comptes Rendus Mathématique* **349** (2011), 35–38, was read in full. It states the classical finite multiplier criterion and proves logarithmic-mesh preservation. It does not state the exclusion (13) or resolve Question 6.1.
+- Borcea–Shapiro, [*Finite Hermite–Poulain semigroups and finite free additive convolution*](https://staff.math.su.se/shapiro/Articles/Semigroups.pdf), manuscript dated 25 May 2026, studies constant-coefficient differential operators in \(\mathbb R[D]/(D^{n+1})\). Its Theorem 6.3 gives a cubic obstruction for that additive convolution semigroup. The paper explicitly distinguishes its product from Schur–Szegő composition. The family (1) is diagonal in monomials and is not the family treated there.
+- Białas–Białas-Cież, [*Comments on “On Hadamard powers of polynomials”*](https://link.springer.com/article/10.1007/s00498-017-0202-0), *Mathematics of Control, Signals, and Systems* **29** (2017), article 16, studies ordinary coefficient powers \(\sum a_k^t z^k\) and Hurwitz stability. Its Counterexample 1 also discusses Wang–Zhang's [2013 ordinary coefficient-power result](https://doi.org/10.1016/j.laa.2013.08.012). These operations and quantifiers differ from (1); neither is a prior resolution of Question 6.1. The 2017 full text was read directly. The 2013 manuscript was available only as indexed primary text to the independent reviewer, so no full-text inspection is claimed for it.
+
 ### Search coverage and limitation
 
 Searches on 20 November 2026 used both available search engines. Query groups included the exact 2018 title and authors, “Question 6.1,” “zero-sector reducing” with “counterexample,” “false,” “correction,” “disproved,” and “solved,” the sequences \(e^{-\alpha k^p}\) and \(q^{k^p}\), multiplier-sequence semigroups, infinitely divisible multiplier sequences, and Hadamard powers. The current author records and the original arXiv version history were included.
 
-No prior exact disproof was retrieved in those searches. The earlier contrary multiplier assertion was retrieved and is documented above. Further independent checking of nearby semigroup and coefficient-power results is in progress.
+No prior exact disproof was retrieved in those searches. The earlier contrary multiplier assertion was retrieved and is documented above. The nearby semigroup and coefficient-power results examined above do not state an exact resolution of Question 6.1.
 
 This is a bounded literature audit. It does not establish that no unpublished or unindexed argument exists.
 
 ## Review status
 
-Original-scope and algebra checks have been communicated in issue #136 and between reviewers. Full-note review receipts will be appended here when posted.
+The [independent analytic review](https://github.com/1337isnot1337/solved-conjectures/issues/136#issuecomment-7050394975) passed the complete note. It checked the exact original quantifiers, positive-width sector argument, all-real-​\(p>2\) finite-difference proof, discriminant expansion, rational and integral certificates, and the distinction from neighboring coefficient-power results. No mathematical repair was requested.
+
+Further independent reviews will be appended when posted. This is internal mathematical review, not formal verification or external peer review.
 
 No Lean verification was performed.
