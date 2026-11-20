@@ -8,7 +8,7 @@ The distributional limit and recurrence steps in the proposed proof are valid un
 
 The normalization from the zero series to the original sum over primes is a separate obligation. It is proved independently in fujii-review.md using beta GRH and the ordinary prime number theorem; zeta RH is unnecessary for the qualitative conclusion.
 
-No prior disproof of Fujii's all-positive-exponent assertion was found in the searches recorded below. That is a search result, not a proof of novelty. The original 1988 article was not directly retrieved. Its exact all-positive-exponent statement is corroborated by Suzuki's 2012 paper, Suzuki's 2025 article, and the 2025 comparative prime number theory bibliography.
+No explicit earlier disproof of Fujii's all-positive-exponent assertion was found in the searches recorded below. That is a search result, not a proof of novelty. The later [primary-source prior-art audit](fujii-prior-art.md) identifies the boundary-value, smoothing, and recurrence mechanism in Kaczorowski's early-1990s papers and Kaczorowski–Ramaré (2003). The large-alpha argument is a short kernel specialization of that framework; priority for this application remains unclaimed. The original 1988 article was not directly retrieved. Its all-positive-exponent statement is corroborated by Suzuki's 2012 paper, Suzuki's 2025 article, and the 2025 comparative prime number theory bibliography.
 
 ## 1. Definitions
 
@@ -227,7 +227,7 @@ Queries used both available search indexes and included the exact original title
 
 A superficially related preprint, Huan Xiao's *From Littlewood and Fujii to Riemann*, [version 2, 21 January 2026](https://www.preprints.org/manuscript/202501.0292/v2), concerns Fujii's 1991 Goldbach-related result. It is not a disproof of the 1988 all-exponent statement. Its displayed transfer from sharp Littlewood oscillation to a fixed exponential generating function is not justified; such a transfer is not used here.
 
-Other searches led to the established prime-race literature and to different weighted inequalities. No retrieved source contained the distributional-limit obstruction above or an established disproof of the all-exponent conjecture. Some original and subscription texts were inaccessible. A blanket claim that no such argument exists in the literature would therefore exceed the search evidence.
+Other searches led to the established prime-race literature and to different weighted inequalities. A subsequent direct reading of Kaczorowski (1992, 1993), Ford–Konyagin (2002), and Kaczorowski–Ramaré (2003) identified the general boundary-value, smoothing, and recurrence machinery underlying the argument. See [fujii-prior-art.md](fujii-prior-art.md) for the theorem-level comparison and the explicit smoothing deduction. No retrieved source explicitly stated the all-large-alpha Fujii consequence or the phase-zero coefficient. Some original and subscription texts were inaccessible, so the application’s priority remains unclaimed.
 
 
 ## 7. Later independent review: the boundary proof and the non-GRH case
