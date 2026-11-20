@@ -296,6 +296,12 @@ This records a bounded prior-art audit. It does not prove exclusive priority.
 
 ## Review status
 
-The complete lower-translation argument has received an initial independent analytic review. Public review receipts will be appended after review of this written version.
+Three independent internal reviews checked the complete written proof and the original conjecture's normalization:
+
+- [Analytic review](https://github.com/1337isnot1337/solved-conjectures/issues/128#issuecomment-7049980571): verified the original subpower assertion, the factor \(\lambda_{\rm tiny}(n)=n c_n\), the exact boundary derivative, the complete-segment exclusion, and the incompatible translation bounds.
+- [Arithmetic review](https://github.com/1337isnot1337/solved-conjectures/issues/128#issuecomment-7049994642): independently verified the \(H^2\)-to-RH implication, branch-local derivative and positive \(1/2\) term, the constant \(\kappa^2/160\), Parseval normalization, and the contradiction.
+- [Root review](https://github.com/1337isnot1337/solved-conjectures/issues/128#issuecomment-7050043433): checked the complete argument against the original source statements and differentiated generating-function normalization.
+
+All three reviews passed without a requested mathematical repair.
 
 Internal review is not external peer review or Lean verification.
