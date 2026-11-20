@@ -16,7 +16,7 @@ Pomerance's abstract states:
 
 > It is conjectured that no natural numbers satisfy this sufficient condition.
 
-His sufficient condition is (P); it forces \(n\) to be a unique preimage of its totient. The original author scan's indexed text and the journal's abstract agree on the nonexistence statement. Ford [F13, §1] and Barthel–Müller [BM, Theorem 9] confirm the precise condition.
+His sufficient condition is (P); it forces \(n\) to be a unique preimage of its totient. The original two-page author scan has now been downloaded, rendered, and inspected directly. Page 297 contains the quoted abstract and exactly condition (P); page 298 states the ordered prime-product conjecture separately as a sufficient route. The journal's abstract, Ford [F13, §1], and Barthel–Müller [BM, Theorem 9] provide independent textual checks.
 
 **Conclusion under the accepted input.** For every positive integer \(n\), there is a prime \(r\) with
 \[
@@ -173,9 +173,11 @@ A 2022 preprint by A. Das claiming the full Carmichael conjecture was inspected.
 
 Results on Carmichael numbers, the \(\lambda\)-function, Lehmer's problem, and Pomerance's \(P\)-integers were separated from this target. In particular, an RH-conditional theorem about \(P\)-integers is not the theorem proved here.
 
-### Source-access limits
+### Original-source verification
 
-The original scan was opened and its primary indexed text was retrieved. The screenshot tool returned only a textual image placeholder in the reviewers' sessions; it did not supply a raster. No visual inspection is claimed. The original abstract is independently reproduced in the journal's primary record, and the exact mathematical criterion is also available in the readable texts [F13] and [BM].
+The web screenshot endpoint initially returned a textual placeholder, and the earlier review correctly withdrew a visual-inspection claim based on that output. The source was subsequently downloaded from Pomerance's public author archive and rendered locally. Two reviewers inspected the actual images of printed pages 297 and 298. They confirm the abstract's nonexistence statement, the exact implication \(p-1\mid\varphi(x)\Rightarrow p^2\mid x\), and the separate ordered prime-product assertion.
+
+The inspected two-page PDF has SHA-256 `078312129e7e43c7930656caf88127a48dfebe74c8700590508e5bdf11ea7ffd`. The source PDF is not copied into this repository. The journal abstract and readable later sources remain independent textual checks.
 
 ## 6. Independent review
 
@@ -184,6 +186,8 @@ The proof first appeared as §4 of [carmichael.md](carmichael.md), commit [683ab
 An independent internal reviewer checked the entire least-missing-prime-power argument, the case \(p=2\), the tree induction, and the final additive valuation contradiction. [Review receipt](https://github.com/1337isnot1337/solved-conjectures/issues/126#issuecomment-7049900536).
 
 The reviewer corrected an overstatement about screenshot access and separately verified the original abstract using retrieved primary text. [Access correction](https://github.com/1337isnot1337/solved-conjectures/issues/126#issuecomment-7049939194); [primary-text verification](https://github.com/1337isnot1337/solved-conjectures/issues/126#issuecomment-7049949591).
+
+A second independent reviewer checked the source theorem, all-prime-power scope of [FL, Theorem 2], least-missing-prime-power selection, tree induction, and additive valuation contradiction. [Second proof review](https://github.com/1337isnot1337/solved-conjectures/issues/129#issuecomment-7050043812). The later local-raster inspection confirms the original target without changing the proof.
 
 This is internal mathematical review, not external peer review or formal verification.
 
