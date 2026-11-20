@@ -15,6 +15,21 @@ Let J_n be the all-1/n matrix, d_n=n!/n^n, and let b(n) be the largest radius su
 
 Entries of A need not be nonnegative. The source fixes the Frobenius norm for the catalogued problem.
 
+**Sharper algebraic bound.** For every n>=3, let R_n be the unique positive root in (0,1) of the explicit degree-n polynomial equation
+
+~~~math
+T_n(R_n)=1+nR_n^2,
+\qquad T_n(t)=\sum_{j=0}^n\frac{(nt)^j(1-t)^{n-j}}{j!}.
+~~~
+
+Then **b(n)>=R_n** and, as n tends to infinity,
+
+~~~math
+\sqrt n\,R_n\longrightarrow\sqrt{c_*}=1.5852010652\ldots,
+~~~
+
+where c_*>0 solves exp(c_*/2)=1+c_*. The simpler bounds below are explicit consequences. The polynomial root is a certified *lower* radius, not the exact value of b(n).
+
 **Theorem (nonsharp all-order lower bounds).** For n>=4,
 
 ~~~math
@@ -129,6 +144,39 @@ T_n(r)\le1+nr^2.
 If the inequality in (11) is strict, (10) makes per(J_n+X)>d_n for X nonzero. Because (T_n(t)-1)/t^2 is nondecreasing, checking (11) at one proposed radius R suffices for **every** X with 0<||X||_F<=R: write r=||X||_F and note (T_n(r)-1)/r^2 <= (T_n(R)-1)/R^2 < n.
 
 This reduction is valid for **every** zero-margin real X of a given Frobenius norm. There is no entrywise nonnegativity assumption or finite-dimensional search.
+
+## Algebraic radius and its asymptotic limit
+
+The nonnegative coefficients of T_n in (9) make (T_n(t)-1)/t^2 nondecreasing for t>0. Its first terms are
+
+~~~math
+T_n(t)=1+\frac n2t^2+\frac{2n}{3}t^3+O_n(t^4).
+~~~
+
+For n>=3 the ratio is strictly increasing, begins at n/2<n, and exceeds n by t=1: namely T_n(1)=n^n/n!>n+1. The latter inequality holds for n=3 (27/6>4) and propagates by induction because
+
+~~~math
+\frac{(n+1)^{n+1}/(n+1)!}{n^n/n!}=(1+1/n)^n>2.
+~~~
+
+Consequently, there is exactly one root R_n in (0,1) with T_n(R_n)=1+nR_n^2. For all 0<r<=R_n, (11) holds, and (10) shows that the permanent is at least d_n (strictly larger for 0<r<R_n). This proves b(n)>=R_n without any nonnegativity restriction on A.
+
+To analyze the root, fix u>0 and put t=u/sqrt(n) for sufficiently large n. With lambda_n=nt/(1-t)=u sqrt(n)/(1-u/sqrt(n)), the explicit expression (9) becomes
+
+~~~math
+T_n(t)=(1-t)^n e^{\lambda_n}
+\Pr\{N_n\le n\},\qquad N_n\sim\operatorname{Poisson}(\lambda_n).
+~~~
+
+Markov's inequality gives Pr{N_n>n} <=lambda_n/(n+1)=O(n^(-1/2)), so the probability tends to one. Taylor expansion with t=O(n^(-1/2)) gives
+
+~~~math
+n\log(1-t)+\lambda_n
+=n\left[\log(1-t)+\frac{t}{1-t}\right]
+=\frac{u^2}{2}+O(n^{-1/2}).
+~~~
+
+Therefore T_n(u/sqrt(n)) tends to exp(u^2/2). For u below sqrt(c_*) this limit is strictly smaller than 1+u^2; for u above it the limit is strictly larger. Monotonicity of (T_n(t)-1)/t^2 and the intermediate-value characterization of R_n give sqrt(n)R_n -> sqrt(c_*). This is the limit of a **certified lower-bound radius**, not an asymptotic formula for the unknown exact b(n).
 
 ## Universal analytic bound
 
