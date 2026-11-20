@@ -1,5 +1,20 @@
 # History
 
+## 2026-11-20 — Hankel-product prior-resolution correction
+
+Withdrew the earlier novelty conclusion for
+[Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/).
+Simon's 2012 Beta–Gamma theorem and its final section-3 remark already give
+multiplicative totally positive factors whose pointwise product is not sign
+regular. Exponential changes of variables and a common translation give
+the full counterexample on the positive Hankel domain.
+
+The repository's elementary counterexamples remain mathematically valid.
+They are retained as exposition, with the prior implication documented,
+and excluded from claims of newly resolving an open conjecture. Root and
+algebra independently checked the primary theorem; root also inspected the
+PDF image and recorded the remark's missing-minus typographical error.
+
 ## 2026-11-20 — Karp–Vishnyakova–Zhang's gamma-quotient conjecture
 
 Added a complete proof of all-order sign regularity for the additive gamma
@@ -48,9 +63,9 @@ Independent internal reviews checked the full factor proofs and both
 counterexamples. The exact arithmetic verifier passed locally. The source
 audit records the original numbered conjecture, its continued assertion
 in the published article, and the distinction from total-positivity
-Hadamard closure and ordinary matrix multiplication. No prior resolution
-was found in the documented searches; external peer review and exclusive
-priority are not claimed.
+Hadamard closure and ordinary matrix multiplication. The initial prior-resolution conclusion was superseded by the correction
+above: Simon's 2012 theorem already implies the full negation. This entry is
+retained as exposition and is excluded from new-resolution claims.
 [Proof, source audit, and exact certificates](results/kvz-hankel-product/).
 
 ## 2026-11-20 — Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture
