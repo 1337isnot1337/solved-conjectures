@@ -181,7 +181,7 @@ The correction terms in (1) and (2) have the same or smaller growth. Each summan
 g(u)=\mathcal G(e^u)
 ~~~
 
-is measurable and satisfies
+is extended by zero for u below zero, is measurable, and satisfies
 
 ~~~math
 |g(u)|\le C_0 e^{2u}
@@ -385,5 +385,7 @@ For a specified non-Dirichlet finite Hecke character η, it is enough to prove t
 Only ε below one half need be considered. A positive weighted family containing η is equally sufficient.
 
 Alternatively, adapting the archive's arithmetic route requires a Hecke-compatible version of the moving-field estimate (12)–(13), together with the analytic host conditions in §5 and the corresponding comparison constructions. The precise integral Selmer term in (14) is where the current trace first needs information not supplied by Hδ.
+
+The Mellin identities, the nonzero residue formula, and both principal Laurent cancellations were independently reviewed by the arithmetic worker. No correction was needed.
 
 The completed transfer in §§1–2 removes the final analytic layer as an obstacle. The unresolved work is the production of (17), or of the stronger arithmetic and host estimates that imply it.
