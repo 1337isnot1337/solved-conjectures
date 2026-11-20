@@ -1,10 +1,25 @@
 # Jutila's conjecture
 
-Research date: 20 November 2026. Coordination: [issue #80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
+Research date: 20 November 2026. [Issue #135](https://github.com/1337isnot1337/solved-conjectures/issues/135). Coordination: [issue #80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
 
 ## Exact statement and status
 
-For \(X\ge3\), let \(\mathcal S(X)\) contain every nonprincipal real Dirichlet character of modulus at most \(X\), including imprimitive characters. Characters are counted with their moduli. For every positive integer \(m\), Jutila's character-sum moment conjecture asks for constants \(c_1(m),c_2(m)>0\), depending only on \(m\), such that
+Jutila's original character-sum moment conjecture [J73, §5, printed p. 250] uses the set \(\mathcal E\) defined in §2, printed p. 248:
+\[
+\mathcal E=\{D\in\mathbb Z:\ D\text{ is nonsquare},\
+ D\equiv1\pmod4\ \text{or}\ D=4N,\ N\equiv1,2,3\pmod4\}.
+\]
+For every positive integer \(m\), it asks for constants \(c_1(m),c_2(m)>0\), depending only on \(m\), such that
+\[
+ \sum_{\substack{D\in\mathcal E\\|D|\le X}}
+ \left|\sum_{1\le n\le Y}(D/n)\right|^{2m}
+ \le c_1(m)XY^m(\log X)^{c_2(m)}
+ \qquad(X\ge3,\ Y\ge1).
+                                                        \tag{J-original}
+\]
+Here \((D/n)\) is the Kronecker symbol.
+
+We prove the following stronger formulation, also used in [V02, first page] and [GZ25, equation (1.1)]. Let \(\mathcal S(X)\) contain every nonprincipal real Dirichlet character of modulus at most \(X\), including imprimitive characters. Characters are counted with their moduli. Then
 \[
 \boxed{\quad
  \sum_{\chi\in\mathcal S(X)}
@@ -14,9 +29,17 @@ For \(X\ge3\), let \(\mathcal S(X)\) contain every nonprincipal real Dirichlet c
  \quad}                                                   \tag{J}
 \]
 
-The original statement is in [J73, §5, printed p. 250]; its original indexing uses nonsquare discriminants and Kronecker characters. [V02, first page] and [GZ25, equation (1.1)] give the all-nonprincipal-real-character formulation above. Bounding all characters with their moduli also bounds the original Kronecker family, and remains valid if repeated arithmetic functions are counted only once.
+To check the transfer to the literal original family, every \(D\in\mathcal E\) is an integer discriminant. Write \(D=d_0a^2\), where \(d_0\) is fundamental. Then \(n\mapsto(D/n)\) is the real character
+\[
+ \chi_{d_0}(n)\mathbf1_{(n,a)=1}
+\]
+of modulus \(|D|\). Since \(D\) is nonsquare, \(d_0\ne1\), so this character is nonprincipal. This covers the odd, \(4N\), and \(8N\) cases, both signs, and any extra powers of \(2\) in the inducing modulus. The assignment
+\[
+ D\longmapsto \bigl(|D|,\,(D/\mathord\cdot)\bigr)
+\]
+is injective: if the moduli coincide, the only possible different discriminants are \(D\) and \(-D\), whose character values at \(-1\) have opposite signs. Thus the left side of (J-original) is a sub-sum of the left side of (J). Counting repeated arithmetic functions only once can only decrease it.
 
-**Status: complete mathematical draft for independent review.** The proof below establishes (J) from rational Dirichlet GRH. It includes both signs of primitive discriminants, all positive integer moments, all lengths, and the induced-character summation. It does not substitute a smoothed sum or one congruence family for the target.
+**Status: complete mathematical proof with independent internal reviews.** The proof below establishes (J) from rational Dirichlet GRH. It includes both signs of primitive discriminants, all positive integer moments, all lengths, and the induced-character summation. It does not substitute a smoothed sum or one congruence family for the target.
 
 At the repository owner's request, rational Dirichlet GRH is accepted from the source pin [9d5316ec73f5df89c4d95703ed106837b8a4060e](https://github.com/1337isnot1337/riemann-hypothesis-solved/tree/9d5316ec73f5df89c4d95703ed106837b8a4060e). Independently of that accepted input, the result here is conditional on rational Dirichlet GRH.
 
@@ -110,7 +133,7 @@ Pairing overcounts tuples in which one prime occurs more than twice, which is pe
 
 We use the following standard GRH logarithm inequality. It is stated for **every primitive Dirichlet character** in [GZ25, Lemma 2.6], with the earlier source [M17, Proposition 2.3].
 
-For a primitive nonprincipal character \(\chi\) of conductor \(q\), \(\sigma\ge1/2\), real \(t\), and \(x\ge2\),
+For a primitive nonprincipal character \(\chi\) of conductor \(q\), \(1/2\le\sigma\le3/2\), real \(t\), and \(x\ge2\),
 \[
 \begin{split}
  \log|L(\sigma+it,\chi)|
@@ -123,7 +146,7 @@ For a primitive nonprincipal character \(\chi\) of conductor \(q\), \(\sigma\ge1
  +O(1/\log x).                                            \tag{3}
 \end{split}
 \]
-Changing the harmless constants near \(t=0\) gives the same inequality with \(\log(|t|+3)\). At a zero its left side is \(-\infty\), so it remains valid.
+Changing the harmless constants near \(t=0\) gives the same inequality with \(\log(|t|+3)\). Equivalently, apply the height-uniform version with \(T=\max(3,|t|)\); real characters also satisfy \(|L(\sigma-it,\chi)|=|L(\sigma+it,\chi)|\). At a zero its left side is \(-\infty\), so it remains valid. Munsch's subsequent restriction on polylogarithmic shifts, and his exclusion of \(\chi^2=\chi_0\) when removing prime squares, are not hypotheses of Proposition 2.3. We retain the prime squares explicitly below.
 
 Fix \(A\ge1\), and suppose \(q\le X\), \(|t|\le X^A\). Separate odd primes, prime squares, the prime \(2\), and prime powers of exponent at least three. The last two classes contribute \(O(1)\); the prime-square contribution is at most
 \[
@@ -147,7 +170,7 @@ Its coefficients satisfy exactly the hypotheses of Lemma 2. The constants are un
 
 ### A uniform pointwise ceiling
 
-The same reasoning works for every \(\sigma\ge1/2\), since the coefficient magnitudes can only decrease. Set
+The same reasoning works for \(1/2\le\sigma\le3/2\), since the coefficient magnitudes can only decrease. Set
 \[
  x_0=(W/L)^2.
 \]
@@ -155,7 +178,7 @@ For sufficiently large \(X\), \(2\le x_0\le X\) and \(\log x_0\ge L\). The absol
 \[
  \sum_{n\le x_0}n^{-1/2}\le2\sqrt{x_0}=2W/L.
 \]
-Consequently, with a constant \(K_A>0\) depending only on \(A\),
+For \(\sigma\ge3/2\), absolute convergence gives \(|L(\sigma+it,\chi_D)|\le\zeta(3/2)\). Combining the two ranges, with a constant \(K_A>0\) depending only on \(A\),
 \[
  \log|L(\sigma+it,\chi_D)|
  \le K_A W/L
@@ -206,7 +229,7 @@ Markov's inequality and (2) yield
  &\ll X\left(\frac{16rL}{V^2}\right)^r
        +X^{13/25}(2/V)^{2r}\\
  &\ll X(L/V)^r+X^{13/25}\\
- &\le X\exp\bigl(-(2m+3)V\bigr)+CX^{13/25}.                \tag{8}
+ &\le CX\exp\bigl(-(2m+3)V\bigr)+CX^{13/25}.               \tag{8}
 \end{split}
 \]
 In the last line, \(V/L\ge C_0\), \(r\ge V/(200B)\), and the definition of \(C_0\) were used. All constants are independent of \(t\).
@@ -417,23 +440,20 @@ Audit date: 20 November 2026. The audit has not located an unconditional full pr
 
 The original [J73, §5] expressly states the whole integer-moment family. Its first moment was already proved in [J73b]. [A99] improves that known second-power estimate to its sharp logarithmic exponent. [V02] gives an \(X^\varepsilon\) loss for the fourth power and explicitly distinguishes it from the conjectured fixed power of \(\log X\).
 
-[GZ24] proves a smoothed conditional result for \(\chi_{8d}\). [GZ25] proves the corresponding unsmoothed family under GRH and displays the full original conjecture in its introduction. [MT26] sharpens the logarithmic exponent for smoothed sums and supplies new lower bounds; it retains GRH for its high-moment upper bounds. The July 2026 prime-modulus paper [ZZ26] also explicitly retains GRH and treats a subfamily. None is misdescribed here as an unconditional earlier resolution.
+[GZ24] proves a smoothed conditional result for \(\chi_{8d}\). [GZ25] proves the corresponding unsmoothed family under GRH and displays the full original conjecture in its introduction. [MT26] sharpens the logarithmic exponent for smoothed sums and supplies new lower bounds; it retains GRH for its high-moment upper bounds. The July 2026 prime-modulus paper [Z26] also explicitly retains GRH and treats a subfamily. None is misdescribed here as an unconditional earlier resolution.
 
 Both web engines were searched for Jutila's conjecture, real/quadratic character-sum moments, full or unconditional resolution, GRH, QRH, and recent work through November 2026. Current author publication lists and the recent papers' references were checked. Results on circle-problem correlations, divisor-problem increments, the large sieve with an \(X^\varepsilon\) loss, and function-field analogues were excluded from the exact target.
 
-Source access: the original four-page MathNet scan is available, and its extracted text includes the conjecture on printed page 250. The exact formula and ranges are also readable in [V02] and [GZ25]. No visual inspection of an unreturned screenshot is claimed.
+Source access: the original four-page MathNet PDF was downloaded and locally rendered. Actual raster inspection of printed pages 248 and 250 confirmed the discriminant set, the full moment family, and the ranges \(X\ge3\), \(Y\ge1\). The PDF has 308,397 bytes and SHA-256 `9c94f1793b53abfa71a117d08b069fd3603ee2e7ab1a2d92973d448ee14d4109`. The exact formula and ranges were also checked against [V02] and [GZ25]. The source PDF is not redistributed in this repository.
 
 ## 9. Review checkpoint
 
-Independent adversarial review is pending. The principal checks requested are:
+Independent internal reviews are recorded publicly:
 
-1. the six discriminant classes and complete-period cancellation in Lemma 1;
-2. constants independent of \(r\) in Lemma 2, including the nonsquare error;
-3. uniformity in \(|t|\le X^4\), the \(X^{13/25}\) tail error, and its integrated contribution;
-4. the half-integer Perron cutoff and horizontal errors;
-5. the exact \(q=fr\) parametrization and the convergent Euler product in Lemma 5.
+- [Source/input review, comment 7050230403](https://github.com/1337isnot1337/solved-conjectures/issues/135#issuecomment-7050230403): checked the exact full target, the arbitrary-primitive-character logarithm inequality in [GZ25] and [M17], both parities, arbitrary polynomial height, and the treatment of prime squares. The suggested split at \(\sigma=3/2\) is incorporated in the pointwise ceiling.
+- [Full argument review, comment 7050231385](https://github.com/1337isnot1337/solved-conjectures/issues/135#issuecomment-7050231385): checked the original p. 250 raster, the six discriminant classes, constants uniform in the moving moment \(r\), the integrated \(X^{13/25}\) error, half-integer Perron truncation and horizontal edges, all lengths, and the conductor lift. Its editorial repair of the absolute constant in the last line of (8) is incorporated.
 
-This is a mathematical manuscript and internal-review checkpoint, not formal verification or external peer review.
+The exact original discriminant definition and the injective map to modulus-labelled characters were then added explicitly. These are mathematical internal reviews, not formal verification or external peer review.
 
 ## References
 
@@ -449,7 +469,7 @@ This is a mathematical manuscript and internal-review checkpoint, not formal ver
 
 [H13] A. J. Harper, *Sharp conditional bounds for moments of the Riemann zeta function*, 2013. [arXiv:1305.4618](https://arxiv.org/abs/1305.4618). Section 6 and Theorem 2 discuss quadratic-character moments.
 
-[M17] M. Munsch, *Shifted moments of \(L\)-functions and moments of theta functions*, Mathematika **63** (2017), 196–212. Proposition 2.3 is the earlier source cited for the general logarithm bound.
+[M17] M. Munsch, *Shifted moments of \(L\)-functions and moments of theta functions*, Mathematika **63** (2017), 196–212. DOI [10.1112/S0025579316000218](https://doi.org/10.1112/S0025579316000218). [Author version](https://arxiv.org/abs/1512.00918). Proposition 2.3 is the earlier source cited for the general logarithm bound.
 
 [GZ24] P. Gao and L. Zhao, *Bounds for moments of quadratic Dirichlet character sums*, published online 2024; Bulletin of the Australian Mathematical Society **111** (2025), 43–47. DOI [10.1017/S0004972724000327](https://doi.org/10.1017/S0004972724000327). [Author preprint](https://arxiv.org/abs/2403.14634).
 
@@ -457,4 +477,4 @@ This is a mathematical manuscript and internal-review checkpoint, not formal ver
 
 [MT26] M. Munsch and Y. Toma, *Bounds for moments of quadratic character sums and theta functions*, Bulletin des Sciences Mathématiques **210** (June 2026), 103806. DOI [10.1016/j.bulsci.2026.103806](https://doi.org/10.1016/j.bulsci.2026.103806). [Author version](https://arxiv.org/html/2503.05269v2).
 
-[ZZ26] *Bounds for moments of quadratic Dirichlet character sums of prime moduli*, Indagationes Mathematicae **37** (July 2026), 1557–1585. DOI [10.1016/j.indag.2025.11.003](https://doi.org/10.1016/j.indag.2025.11.003). Author metadata and full text to be checked before final bibliography completion.
+[Z26] Y. Zhao, *Bounds for moments of quadratic Dirichlet character sums of prime moduli*, Indagationes Mathematicae **37** (July 2026), 1557–1585. DOI [10.1016/j.indag.2025.11.003](https://doi.org/10.1016/j.indag.2025.11.003). [Author preprint](https://arxiv.org/abs/2412.19151). The primary arXiv record identifies the author as Yuetong Zhao and explicitly retains GRH.
