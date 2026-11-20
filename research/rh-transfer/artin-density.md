@@ -790,3 +790,56 @@ For the corrected target the middle character is 1 and the corner determinant is
 The generic-looking vanishing input in [UnitaryThreeGroups/KatoUse.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/KatoUse.lean) treats a rank-two representation over Q and finite one-dimensional characters of G_Q. The rank-four dihedral tensor in (16.3) is not such an input. Descending the corner is therefore a real algebraic advance but does not, by itself, make the source's Kato application available for the twisted extension module.
 
 The remaining arithmetic question can now be stated precisely: obtain the required strict Selmer vanishing, or a quantitatively adequate replacement, for V tensor Ind_K^Q nu with nu an arbitrary finite anti-cyclotomic class character. Invoking the rank-two rational-character Kato theorem without addressing this factor would lose the character being studied.
+
+
+## 17. A structural obstruction to the usual Rankin Euler-system theorem
+
+The rank-four module in section 16 does not satisfy a necessary hypothesis of the most immediate Rankin--Selberg Selmer-vanishing theorem. This failure is exact, not a missing large-image estimate.
+
+Write eta_K for the quadratic character of K/Q and set
+~~~math
+A=\operatorname{Ind}_{G_K}^{G_{\mathbb Q}}\nu,
+\qquad U=V\otimes A.
+~~~
+The preceding construction gives det V=eta_K. Since nu^c=nu^(-1), the induced representation A also has determinant eta_K: its restriction to G_K has determinant nu*nu^c=1, and complex conjugation interchanges the two induced basis vectors, with determinant -1. Hence
+~~~math
+\det V(g)\,\det A(g)=1
+\qquad (g\in G_{\mathbb Q}).
+\tag{17.1}
+~~~
+
+### 17.1 No element has a one-dimensional fixed quotient
+
+We use the following elementary linear-algebra fact. If M,N are invertible two-by-two matrices over a characteristic-zero field and det M*det N=1, then ker(M tensor N-1) cannot have dimension one.
+
+One may extend scalars to an algebraic closure. If either matrix is scalar, every eigenspace relevant to the tensor has even dimension. If one has a nontrivial Jordan block and the tensor has eigenvalue 1, the determinant identity forces the other matrix to have the reciprocal repeated eigenvalue. If both blocks are nontrivial, the tensor of the two unipotent Jordan blocks minus 1 has rank two. Otherwise both matrices have distinct eigenvalues. The four tensor eigenvalues come in two reciprocal pairs, so 1 cannot occur exactly once.
+
+This is the obstruction recorded in Studnia, [*On obstructions to the Euler system method for Rankin-Selberg convolutions*](https://link.springer.com/article/10.1007/s40993-026-00718-1), Lemma 3.1, which credits the earlier observation to Loeffler. We are applying an existing lemma to the specific representation derived here.
+
+Applying it to (17.1) shows
+~~~math
+\dim_E U/(g-1)U\ne1
+\qquad\hbox{for every }g\in G_{\mathbb Q}.
+\tag{17.2}
+~~~
+The dimensions of the kernel and cokernel of the square matrix g-1 agree. The argument includes nonsemisimple matrices; an eigenvalue-multiplicity argument alone would not cover those.
+
+In particular there is no such element in the cyclotomic kernel G_Q(mu_(ell^infinity)). Dualizing does not change the dimension of the fixed quotient. A Tate twist is trivial on this cyclotomic kernel, so changing between the usual dual and Tate-twist conventions cannot repair (17.2).
+
+### 17.2 Consequence for the proposed bridge
+
+[Loeffler--Zerbes, *Rankin--Eisenstein classes in Coleman families*](https://link.springer.com/article/10.1186/s40687-016-0077-6), Theorem 8.2.1, requires an element tau in the cyclotomic kernel for which the relevant representation modulo tau-1 is one-dimensional. Under that and other hypotheses, a nonzero critical Rankin value gives Bloch--Kato Selmer vanishing. The representation U fails that explicit hypothesis at every coefficient prime.
+
+When V is attached to a modular form f of weight 2e+1, its finite determinant is eta_K. The weight-one theta form associated to nu has the same nebentypus eta_K. Their product nebentypus is therefore trivial, which is the same obstruction expressed in modular-form language. This identification concerns the vanishing-theorem hypothesis; no unresolved choice of cohomological normalization affects its failure on the cyclotomic kernel.
+
+There is a second, independent problem at the proposed critical twist: the reciprocity factor in that paper vanishes when the product nebentypus is trivial and j=(k+k')/2+1. The exact weight substitution and the applicability audit of later literature are recorded in [character-lifting.md](character-lifting.md). They do not supply a replacement vanishing theorem.
+
+This does not disprove the desired Selmer vanishing or Hecke RH. It prevents this particular rank-one Euler-system argument from supplying them. A direct vanishing theorem over K, a suitable higher-rank Euler system, or another argument controlling the rank-four module would be additional mathematics. Neither the archive's rank-two rational-character Kato input nor the cited Rankin theorem already provides it.
+
+### 17.3 Transfer status after this obstruction
+
+The following parts have been proved in this note: construction of a CM host meeting the finite-place conditions; preservation and descent of finite class-character L-functions; a corrected conjugate-self-dual trace and its norm bound; finite-character rigidity at a uniform congruence depth; integral control of the reducible class-character algebra; and explicit descent of the Type II corner while retaining its extension module.
+
+The accompanying [character-lifting.md](character-lifting.md) proves the lower-triangular splitting replacement needed for the weaker point condition M3. That removes one use of the unique-diagonal-point argument.
+
+The remaining extension-sensitive input is still a Selmer statement for U=V tensor Ind_K^Q nu, together with the quantitative and integral compatibility needed by the twisted OneChar argument. No full Artin primitive-root conjecture, Hecke GRH, or nonabelian GRH is claimed. The present route is paused at this exact obligation rather than treating the failed Euler-system hypothesis as a technicality.
