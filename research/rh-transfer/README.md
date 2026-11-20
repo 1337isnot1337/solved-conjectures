@@ -42,6 +42,7 @@ The [Gamma-power clause](fujii-gamma-power.md) has a separate complete proof: fo
 | Lindelöf hypothesis | Full standard implication from accepted RH/Dirichlet GRH; classical attribution retained | [Dirichlet applications](dirichlet-applications.md) |
 | Simm–Wei conjecture | Accepted RH gives Lindelöf and supplies the hypothesis of the cited 2026 moment theorem. The normalized complex limit is proved; coefficient zeros prevent an unqualified all-complex ratio claim | [Simm–Wei](simm-wei.md) |
 | Soundararajan's conjecture | Full smooth-number equidistribution follows for every fixed A and all sufficiently large q from Banks–Shparlinski's published criterion and accepted Dirichlet GRH. The published GRH implication is credited to its authors; application priority remains unclaimed | [Soundararajan](soundararajan.md), [issue #99](https://github.com/1337isnot1337/solved-conjectures/issues/99) |
+| Chandee's conjecture | Complete inherited matching-order theorem and endpoint reduction. Original asymptotic notation/leading-constant scope remains distinct; no full original-conjecture resolution or new count | [Chandee](chandee.md) |
 | Chebyshev's conjecture | Original Abel-weighted assertion follows by the classical equivalence with beta GRH | [Chebyshev](chebyshev.md) |
 | Grosswald's conjecture | Full conclusion for every prime p>409 follows from McGown–Treviño–Trudgian's published 2016 theorem and accepted Dirichlet GRH. The separate 2015 zero-counting defect is not a dependency | [Grosswald](grosswald.md), [dependency review](grosswald-dependency-review.md), [issue #91](https://github.com/1337isnot1337/solved-conjectures/issues/91) |
 | Knapowski–Turán conjecture | Full inherited refutation of the original natural-density conjecture by Kaczorowski's 1992 theorem; both strict race orderings have positive lower natural density | [Knapowski–Turán](knapowski-turan.md) |
@@ -55,7 +56,7 @@ The [Gamma-power clause](fujii-gamma-power.md) has a separate complete proof: fo
 | Vandiver's conjecture | Unresolved. The archive yields a polynomial bound for logarithmic torsion in every K-degree over Z, but a size bound does not force vanishing | [Vandiver and K-theory](vandiver.md) |
 | Greenberg's conjecture | Unresolved. An explicit Iwasawa-module model shows that polynomial specialization bounds do not force lambda=0 | [Arithmetic extraction](vandiver.md) |
 | Schneider's, Jannsen's, and Soulé's conjectures | Unresolved in their full forms. Exact twist signs, known Artin–Tate content, an interpolation countermodel, and missing field-uniform estimates are recorded | [Arithmetic vanishing](arithmetic-vanishing.md) |
-| Artin's primitive-root density conjecture | Unresolved. Exact algebraic transfer lemmas, an irreducible-adjoint obstruction, and a complete small/middle/large index-divisor reduction are proved. The uniform splitting route additionally assumes a separate Hecke strip H(delta), whose full proof has not been audited here | [Artin and nonabelian transfer](artin-density.md), [character lifting](character-lifting.md), [adjoint obstruction](adjoint-transfer.md), [CM descent](cm-character-descent.md), [uniform splitting](artin-uniform-splitting.md) |
+| Artin's primitive-root density conjecture | Unresolved. Exact algebraic transfer lemmas, an irreducible-adjoint obstruction, and a complete small/middle/large index-divisor reduction are proved. The uniform splitting route additionally assumes a separate Hecke strip H(delta), whose full proof has not been audited here | [Artin and nonabelian transfer](artin-density.md), [character lifting](character-lifting.md), [adjoint obstruction](adjoint-transfer.md), [CM descent](cm-character-descent.md), [uniform splitting](artin-uniform-splitting.md), [average reduction](artin-average.md) |
 | Generalized Riemann hypothesis for Hecke L-functions | Unresolved. The archive's final window criterion is extended to finite positive families over arbitrary fields, including principal characters. Near-square-root windows and their moving-field arithmetic/host inputs remain unproved | [Hecke transfer](hecke-bootstrap.md) |
 | Selberg's, Ramanujan's, Artin's, and Fontaine–Mazur's conjectures | No full transfer identified. The traced automorphic package retains regularity, CM, polarization, and existing-attachment hypotheses | [Automorphic scope](automorphic-scope.md) |
 | Other named candidates | Prior resolutions and missing hypotheses are recorded before further work; includes withdrawal of an earlier RecAt source-reading inference | [Screening and source audit](analytic-applications.md) |
@@ -120,14 +121,40 @@ The [Hecke window transfer](hecke-bootstrap.md) removes the final analytic layer
 
 Producing those windows remains open. The accepted archive obtains them for rational Dirichlet characters using a moving-field weighted Selmer estimate, analytic host selection, and comparison constructions. The bound concerns all weights below floor(x^401), with budget exp(x^epsilon/2). A fixed zero-free strip alone does not provide either that integral arithmetic bound or the near-square-root auxiliary-character estimates.
 
+### Exact average and integral bounds still needed
+
+The [Artin average note](artin-average.md) shortens the missing interval to
+~~~math
+x^\eta<q\le\frac{\sqrt{x}}{(\log x)^B}
+~~~
+for any fixed B>0. For the unique nonlinear character of the Kummer Galois group, the exact normalization is q N_a=A_q+T_q. Negligibility of the middle tail is equivalent to the weighted first moment
+~~~math
+\sum_q\frac{|T_q(x)|}{q}=o(x/\log x).
+~~~
+The sufficient second moment has a negligible diagonal. The inspected sieve estimate yields only a big-O bound at the desired scale; a vanishing factor remains unproved. A separate complete deduction shows that the stated weighted zero-density bound would imply the full Artin asymptotic under H(delta) and Dirichlet GRH. That density bound is an additional hypothesis, not a theorem extracted from the archive.
+
+The [moving Selmer note](moving-selmer-windows.md) proves a quantitative restriction lemma without omitting coefficient primes dividing the character order. For an integer t>=1 and a cyclic degree-d extension L/E killing the coefficient character,
+~~~math
+W_{S,\eta}(E,t)\le W_S(L,t)+(t-1)\log d.
+~~~
+The normalization is length over the coefficient ring divided by its ramification index. The restriction kernel is cyclic and killed by d; scalar extension and the error both scale by that ramification index. Local unramified and strict conditions are preserved even at ramified places. This argument has two independent internal reviews.
+
+That note also proves a conditional sparse-window theorem, tracking degree, discriminant, and uniformity before the auxiliary primes are chosen. One common set of at most R exceptional twists must work for every layer in a tower. A controlled mu-primary module contributes at most a times its generator count times the layer degree, so such a term can fit the budget. The uniform finite-rank comparison and the all-prime plus-component estimate remain separate obligations.
+
+The [special-value reduction](hecke-special-values.md) gives a second explicit arithmetic route. The complex functional equation already bounds the logarithm of the leading L-value polynomially in the weight, field degree, and logarithmic conductor. The auxiliary H^0 torsion factor has the same required type of bound. For totally imaginary kernel fields, the all-prime cohomology sum equals log|K_(2j)(O_L)|, including the prime 2.
+
+An integral leading-term formula with controlled defects, together with a uniform polynomial bound on the adverse higher-regulator contribution, would therefore supply the needed moving-field Selmer budget. Both are retained as hypotheses. The literature audit includes current Coates–Sinnott, imaginary-quadratic ETNC, noncritical Katz, and November 2026 geometric torsion bounds. The controlled parity, integral index, omitted primes, or growth in the weight prevents the inspected theorems from closing this step. Soulé already proposed the general regulator route; the present note records its exact quantitative requirements for these moving fields.
+
+The archive's budget is exp(x^epsilon/2). A polynomial bound in x would imply even the smaller exp(x^(epsilon/2)); the two expressions are not interchangeable. No fixed-strip statement or fieldwise finiteness estimate is substituted for these quantitative requirements.
+
 ## Work allocation
 
 | Worker | Responsibility | Principal owned paths |
 |---|---|---|
 | Root | Fujii synthesis and direct zero-count proof, full named analytic targets, independent review, integration | this file, fujii.md, fujii-zero-count.md, grosswald.md, analytic-applications.md |
-| dirichlet_applications | Named analytic consequences, exact prior art, normalization and recurrence refinements | dirichlet-applications.md, simm-wei.md, chebyshev.md, chowla.md, knapowski-turan.md, martin.md, resnikoff-saldana.md, vinogradov.md, soundararajan.md, granville-soundararajan.md, erdos-odlyzko-sarkozy.md, fujii-review.md, fujii-landau.md, fujii-boundary.md |
-| arithmetic_extraction | K-theory and Selmer extraction, integral lifting, arithmetic target scope | vandiver.md, character-lifting.md, arithmetic-vanishing.md, artin-uniform-splitting.md, qrh-prior-art.md, grosswald-dependency-review.md, fujii-mellin-review.md, fujii-gamma-power.md |
-| nonabelian_transfer | Polarized trace families, class-character transfer, automorphic scope, exact obstruction analysis | artin-density.md, adjoint-transfer.md, cm-character-descent.md, hecke-bootstrap.md, automorphic-scope.md, fujii-review-distribution.md, fujii-prior-art.md |
+| dirichlet_applications | Named analytic consequences, exact prior art, normalization and recurrence refinements | dirichlet-applications.md, simm-wei.md, chebyshev.md, chowla.md, knapowski-turan.md, martin.md, resnikoff-saldana.md, vinogradov.md, soundararajan.md, granville-soundararajan.md, erdos-odlyzko-sarkozy.md, chandee.md, artin-average.md, fujii-review.md, fujii-landau.md, fujii-boundary.md |
+| arithmetic_extraction | K-theory and Selmer extraction, integral lifting, arithmetic target scope | vandiver.md, character-lifting.md, arithmetic-vanishing.md, artin-uniform-splitting.md, moving-selmer-windows.md, qrh-prior-art.md, grosswald-dependency-review.md, fujii-mellin-review.md, fujii-gamma-power.md |
+| nonabelian_transfer | Polarized trace families, class-character transfer, automorphic scope, exact obstruction analysis | artin-density.md, adjoint-transfer.md, cm-character-descent.md, hecke-bootstrap.md, hecke-special-values.md, automorphic-scope.md, fujii-review-distribution.md, fujii-prior-art.md |
 
 Workers commit substantive proofs, source traces, or obstructions to main on disjoint paths and coordinate through issues. Other active research campaigns are independent of this lane. Newly assigned paths are announced in the issue before any overlapping edits.
 
