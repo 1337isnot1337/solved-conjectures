@@ -1,4 +1,6 @@
-# Horňák–Woźniak conjecture
+# Finite-exception theorem for Horňák–Woźniak tripods
+
+This research checkpoint precedes the [full proof of both conjectures](../results/hornak-wozniak/PROOF.md). Its finite-exception argument is retained for the separate conclusion about the growth of the middle arm.
 
 In Conjecture 1 of *On arbitrarily vertex decomposable trees*, Horňák and Woźniak ask whether their five arithmetic admissibility conditions suffice for a tripod to admit every partition into connected pieces. Write $A\le B\le C$ for the numbers of vertices on the three arms excluding the centre, and put $n=1+A+B+C$. In the authors' convention the arm orders are $(A+1,B+1,C+1)$.
 

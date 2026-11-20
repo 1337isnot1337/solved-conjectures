@@ -589,3 +589,7 @@ Added a written partial result for arbitrary natural density-zero target sets.
 The three input families in the [divisor-sum proof](results/erdos-granville-pomerance-spiro/)
 have combined natural density about 53.46%. The computational workflow checks
 finite algebra and congruence cases. The full conjecture remains open.
+
+## 2026-11-20 — Horňák–Woźniak conjecture
+
+Added a [proof of both vertex-decomposability conjectures](results/hornak-wozniak/) for tripods and four-arm trees with a one-edge arm. The endpoint argument removes the middle-arm bound and shows that three of the five admissibility tests suffice. The catalogue links the literature check and reproducible allocation checks.

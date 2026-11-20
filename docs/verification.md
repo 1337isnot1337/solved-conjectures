@@ -27,6 +27,7 @@ recursive-game identities through `CutPeriodWeightTheorem`.
 
 ```bash
 python3 results/erdos-granville-pomerance-spiro/verify.py
+python3 results/hornak-wozniak/verify.py
 python3 results/l-solitaire-limit-shapes/verify.py
 python3 results/pham-denominator-degree/verify.py
 python3 results/pham-denominator-degree/verify.py --dual --brute-depth 13
@@ -92,6 +93,8 @@ unchanged in both modes.
 The [status report](lean-status.md) records the exact statements checked and dependencies that remain. Partial certificates do not establish the full conjecture. Accepted proofs permit only `propext`, `Classical.choice`, and `Quot.sound` as transitive axioms, as required by [the repository instructions](../AGENTS.md).
 
 ## What the checks establish
+
+`results/hornak-wozniak/verify.py` compares the five arithmetic tests against direct allocation of prescribed parts on small trees and checks the local transfer lemma by enumerating allocations. The [written proof](../results/hornak-wozniak/PROOF.md) covers both conjectures. The optional [symbolic check](../results/hornak-wozniak/verify_symbolic.py) uses `z3-solver` for the local endpoint implications.
 
 `results/erdos-granville-pomerance-spiro/verify.py` checks finite instances of the quadratic-root bounds, the bilinear congruence lift and local sieve counts, and the cofactor identities in the [written partial result](../results/erdos-granville-pomerance-spiro/). The asymptotic statements use the analytic proofs.
 
