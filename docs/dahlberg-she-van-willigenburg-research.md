@@ -52,7 +52,7 @@ Suppose $n$ is odd and $T$ has a matching missing a single vertex $u$. Give vert
 \tag{3}
 ```
 
-Indeed, the two-color specialization has $X_T(y,z)=(yz)^{(n-1)/2}(y+z)$, so $[e_1e_2^{(n-1)/2}]X_T=1$. In (2) with $r=1,d=2$, the deletion of a vertex $w\ne u$ leaves components of even order exactly when $u$ and the mate of $w$ lie in the same component. That requires that the mate be the parent of $w$. All other vertices are still matched. At the colors $i,-i$ each even component with balanced bipartition contributes 2. The component containing the two unmatched vertices contributes $-2$ if they lie in the same bipartition class, which happens exactly when $\sigma(w)=-1$. Deleting $u$ leaves a perfectly matched forest and gives $2^{\deg(u)}$. This proves (3).
+The [independent check of the earlier Li counterexample](../results/li-coefficient-sign/independent_check.py) uses the corresponding two-color deletion calculation. The matching in (3) identifies exactly which vertices contribute, without enumerating their deletion forests. The two-color specialization has $X_T(y,z)=(yz)^{(n-1)/2}(y+z)$, so $[e_1e_2^{(n-1)/2}]X_T=1$. In (2) with $r=1,d=2$, the deletion of a vertex $w\ne u$ leaves components of even order exactly when $u$ and the mate of $w$ lie in the same component. That requires that the mate be the parent of $w$. All other vertices are still matched. At the colors $i,-i$ each even component with balanced bipartition contributes 2. The component containing the two unmatched vertices contributes $-2$ if they lie in the same bipartition class, which happens exactly when $\sigma(w)=-1$. Deleting $u$ leaves a perfectly matched forest and gives $2^{\deg(u)}$. This proves (3).
 
 If $n$ is even and $T$ has a perfect matching $M$, there is a two-vertex formula:
 
@@ -68,9 +68,9 @@ This applies for $n\ge6$. The pairs in $\mathcal P$ are nonadjacent vertices who
 
 To see this, use three colors $z,y_1,y_2$ with $y_1+y_2=-z$ and $y_1y_2=1+z^2$. Then $e_1=0$, $e_2=1$, $e_3=z+z^3$, so the coefficient of $z^2$ is the left side. With no vertex colored $z$, the term is $2(1+z^2)^{n/2}$. With just $w$ colored $z$, exactly one component of $T-w$ has one unmatched vertex and it contributes a factor $y_1+y_2=-z$. The other $\deg(w)-1$ components are balanced, giving the second term. With two vertices $u,v$ colored $z$, they must be nonadjacent. At $z=0$ their two mates must lie in the same component or the product of the two-color evaluations is zero. This is exactly the path condition in $\mathcal P$. The component with both mates contributes $2$ if their bipartition classes differ and $-2$ otherwise. The remaining components are balanced. There are $\deg(u)+\deg(v)-1$ components in total, giving (4).
 
-## An obstruction to Li's proposed coefficient test
+## An infinite family for Li's coefficient question
 
-Problem 4.9 of [Li](https://arxiv.org/abs/2503.09484) asks if $[e_3e_2^{(n-3)/2}]X_T$ is always negative for an odd-order tree of maximum degree four with connected partitions of every type. This is false even for non-spiders.
+Problem 4.9 of [Li](https://arxiv.org/abs/2503.09484) asks if $[e_3e_2^{(n-3)/2}]X_T$ is always negative for an odd-order tree of maximum degree four with connected partitions of every type. The [31-vertex result in this collection](../results/li-coefficient-sign/) already answers it in the negative, including the non-spider reading. Its source audit records an earlier spider counterexample from the work of Horňák–Woźniak and Zheng. The following calculation extends the non-spider obstruction to an infinite family.
 
 Use the non-spider caterpillar $G_a$ from Proposition 5.2 of [Tang, Wang, and Wang](https://arxiv.org/abs/2610.39481). It consists of a central vertex $v$ with two leaves, a pendant path of length $a-2$ from $v$, and a neighbor $w$ of $v$ with one leaf and a pendant path of length $a$. Path lengths count the vertices beyond the attaching vertex. The order is $2a+3$. The cited proposition proves that this tree has all connected partition types for $a\equiv2\bmod 4$ and $\gcd(2a+3,15)=1$, including $a=60t+10$ for every $t\ge0$.
 
@@ -81,6 +81,8 @@ Match $v$ to one of its leaves, $w$ to its leaf, and the two even paths in conse
 ```
 
 This also explains why the connected-partition information and this particular coefficient can both pass while the chromatic symmetric function has a negative coefficient elsewhere. The general conjecture still requires a sign obstruction for degree-four trees beyond the families already excluded.
+
+The proposed odd-order reduction in Li's Problem 4.8 also fails. [Horňák and Woźniak, Table 2](https://umv.science.upjs.sk/preprints/dokumenty/A3-2006.pdf) list the arbitrarily vertex-decomposable spider with arm *orders* $(2,5,31,57)$. The lengths beyond the central vertex are $(1,4,30,56)$, so this degree-four tree has even order 92. It has exactly one leaf adjacent to its center.
 
 ## Trees with branching vertices separated by long paths
 
