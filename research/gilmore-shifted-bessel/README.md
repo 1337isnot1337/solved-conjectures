@@ -12,13 +12,13 @@ Let M=(m_{n,k}(r,s,mu,y)) be the matrix defined in the companion [crossing–nes
 P_0=1,\qquad
 P_n(x;r,s,\mu,y)=\sum_{k=1}^n m_{n,k}(r,s,\mu,y)
   (rs\mu)^{k(k-1)/2}x^k.
-```math
+```
 
 The conjecture says that every finite minor of the infinite Hankel matrix
 
 ```math
 \bigl(P_{i+j}(x;1+r,1+s,1+\mu,y)\bigr)_{i,j\ge0}
-```math
+```
 
 has nonnegative coefficients jointly in r,s,mu,x,y. An identity for one column, a fixed minor order, or numerical nonnegativity does not settle this statement.
 
@@ -28,7 +28,7 @@ The matrix factorization gives
 
 ```math
 m_{n,k}=y[k]_{r,s}m_{n,k+1}+\mu^{n-k}m_{n-1,k-1}.
-```math
+```
 
 The boundary values are m_{0,0}=1, m_{n,0}=0 for positive n, and m_{n,k}=0 for k>n.
 
@@ -38,7 +38,7 @@ It follows that m_{n,k} is homogeneous in y of degree n-k. It is also homogeneou
 
 ```math
 \binom{n-1}{2}-\binom{k-1}{2}.
-```math
+```
 
 One way to see the latter is to label open arcs at each closing step. Every pair of openers contributes one crossing, nesting, or alignment unless both arcs remain open at the endpoint. There are n-1 openers and k-1 unmatched open arcs.
 
@@ -50,7 +50,7 @@ The appended weight is
 
 ```math
 x\prod_{h=1}^{k-1}(xQ^h)=x^kQ^{k(k-1)/2}.
-```math
+```
 
 Thus P_n/x enumerates Dyck excursions with n-1 up-steps, together with a marked terminal block of special down-steps. The block may be empty. Ordinary down-steps retain weight y[h]_{r,s}; up-steps retain their original weights. This is valid because the appended steps occur after every up-step.
 
@@ -63,7 +63,7 @@ At mu=1 the matrix is an output array with production matrix
 ```math
 P_{j,k}=y^{j+1-k}\prod_{v=k}^{j}[v]_{r,s}\quad(1\le k\le j+1),
 \qquad P_{j,0}=0.
-```math
+```
 
 Writing L_f for the lower bidiagonal matrix with subdiagonal f_n=[n]_{r,s}, and J for the upper shift, this is P=(I-yL_f)^{-1}J.
 
@@ -71,13 +71,13 @@ For the untwisted row polynomials, an ordinary binomial conjugation does not yie
 
 ```math
 A_{2,0}=x(f_2-2f_1)=x(r+s-2).
-```math
+```
 
 Since JB=B(J+xI), the conjugated production matrix is (I-yA)^{-1}(J+xI). Its minor in rows {1,2} and columns {0,1} is
 
 ```math
 -x^3y(r+s-2).
-```math
+```
 
 After r and s are shifted by one this remains negative. This rejects that specific untwisted production-matrix route. It does not refute the conjecture, which includes the column twist. A suitable completion of the twisted first-column vector, perhaps involving a q-binomial matrix, has not been found.
 
