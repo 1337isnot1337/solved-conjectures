@@ -28,6 +28,7 @@ recursive-game identities through `CutPeriodWeightTheorem`.
 ```bash
 python3 results/erdos-granville-pomerance-spiro/verify.py
 python3 results/hornak-wozniak/verify.py
+python3 results/sonntag-teichert/verify.py
 python3 results/l-solitaire-limit-shapes/verify.py
 python3 results/pham-denominator-degree/verify.py
 python3 results/pham-denominator-degree/verify.py --dual --brute-depth 13
@@ -93,6 +94,8 @@ unchanged in both modes.
 The [status report](lean-status.md) records the exact statements checked and dependencies that remain. Partial certificates do not establish the full conjecture. Accepted proofs permit only `propext`, `Classical.choice`, and `Quot.sound` as transitive axioms, as required by [the repository instructions](../AGENTS.md).
 
 ## What the checks establish
+
+`results/sonntag-teichert/verify.py` enumerates the minimal dominating sets of every labelled tournament through order six and every labelled oriented graph through order five. It also checks the two-star construction. The [proof](../results/sonntag-teichert/PROOF.md) covers every order.
 
 `results/hornak-wozniak/verify.py` compares the five arithmetic tests against direct allocation of prescribed parts on small trees and checks the local transfer lemma by enumerating allocations. The [written proof](../results/hornak-wozniak/PROOF.md) covers both conjectures. The optional [symbolic check](../results/hornak-wozniak/verify_symbolic.py) uses `z3-solver` for the local endpoint implications.
 

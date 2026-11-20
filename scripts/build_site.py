@@ -54,6 +54,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Sonntag–Teichert conjecture": "sonntag-teichert",
     "Horňák–Woźniak conjecture": "hornak-wozniak",
     "L-solitaire": "l-solitaire-limit-shapes",
     "Three-player War": "spivey-multiplayer-war",

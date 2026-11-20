@@ -34,6 +34,7 @@ Lean verification.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| Sonntag–Teichert conjecture | Not formalized | Written proof of tournament domination hypergraph connectivity and classification of disconnected oriented cases, with finite cross-checks. |
 | Horňák–Woźniak conjecture | Not formalized | Written proof of both connected-partition conjectures, with separate finite and symbolic cross-checks. |
 | L-solitaire | Complete for both the counterexample and corrected theorem | Actual moves for arbitrary layer sets containing 1; all recurrent states; classification and maximality of stable references; one-column interlacing; the explicit uniform profile bound and convergence for every diverging scale. The separate fixed-scale counterexample remains checked. |
 | Three-player War | Complete for all three explicit cycling deals | Distinct ranks and round-robin deal sizes; exact transition rules; returns after 90, 180, and 19,320 turns; no earlier positive return; all three players active at every nonnegative time. |

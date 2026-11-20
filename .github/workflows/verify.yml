@@ -39,6 +39,8 @@ jobs:
         run: python3 results/erdos-granville-pomerance-spiro/verify.py
       - name: Check Horňák–Woźniak partition allocations
         run: python3 results/hornak-wozniak/verify.py
+      - name: Check Sonntag–Teichert domination hypergraphs
+        run: python3 results/sonntag-teichert/verify.py
       - name: Verify L-solitaire exhaustive finite checks
         run: python3 results/l-solitaire-limit-shapes/verify.py
       - name: Verify Pham exact main and dual certificates
