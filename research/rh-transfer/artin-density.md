@@ -399,3 +399,31 @@ This assertion remains unproved here. Its analytic implication is elementary and
 Under the displayed estimate, the right side is holomorphic on $\Re s>1/2$: on any compact subset, choose $\delta$ smaller than its distance from the line $\Re s=1/2$. Thus $L(s,\psi)$ has no zero to the right of that line, since a zero would give a pole of its logarithmic derivative. Applying the functional equation, with the same assertion for the conjugate character, places all nontrivial zeros on the critical line.
 
 This identifies what a Hecke-character replacement for the archive's VWin-to-weighted-Chebyshev comparison must ultimately prove. The existing VWin is indexed by rational PChar and cyclotomic fixed fields. The corrected congruence lemma is one usable arithmetic ingredient; the twisted Selmer construction and the Hecke-character geometric/analytic comparison are still separate, unproved steps. No implication from Dirichlet GRH to this assertion has been assumed.
+
+
+## 12. Central twisting does not recover the existing deformation theorem
+
+For the corrected diagonal, write the ordered constituents as $r_+,r_0,r_-$, according to Tate exponents $e,0,-e$. Their ratio is
+
+```math
+\frac{r_+r_-}{r_0^2}=\psi^2.
+```
+
+A common character twist $\theta$ multiplies both numerator and denominator by $\theta^2$. The ratio is therefore invariant under central twisting. The archive's diagonal $(\chi,1,\chi^{-1})$ has ratio one. Consequently the corrected diagonal for $\psi^2\ne1$ cannot be turned into that diagonal by a central twist preserving the ordered weight pattern.
+
+In particular, twisting by $\psi^{-1}$ gives
+
+```math
+\varepsilon^e\oplus\psi^{-1}\oplus\varepsilon^{-e},
+\qquad \det=\psi^{-1}.
+```
+
+This removes the finite character from the outer constituents but puts it in the middle. If m is the order of $\psi$ and $3\nmid m$, one can choose $a$ with $3a\equiv-2\pmod m$ and twist by $\psi^a$ to make the determinant trivial. That operation still leaves the invariant ratio $\psi^2$. A determinant correction therefore does not repair the basepoint shape. Central twisting also leaves the adjoint representation and all ratios between constituents unchanged, so it cannot convert the desired twisted extension groups into the untwisted groups of the original diagonal.
+
+The precise source is more permissive in one respect and less permissive in another. [GRepresents.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/GRepresents.lean) defines GLift using a prescribed residual representation and a subsequent generic condition GCond; GLift itself does not impose a fixed determinant. But that residual representation is specifically r0 of a single character on the whole Galois group. [RhoKApply.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/RhoKApply.lean) defines Dat, its local model, and its distinguished point using the cyclotomic twist of a rational Dirichlet character. The generic automorphic trace count does not impose this basepoint restriction; the arithmetic deformation construction does.
+
+One further possible shortcut was tested. If $\psi$ has nontrivial l-power order, its reduction in characteristic l is trivial. The corrected diagonal then has the same residual diagonal as the trivial-character setup, so one might try to regard it as another characteristic-zero augmentation of the same generic deformation ring. However, when $\psi$ is an everywhere-unramified class character of the target imaginary quadratic K, class field theory forces $\ell\mid h_K$. This contradicts GD.l_cop, which requires $\ell\nmid |\operatorname{disc}(K)|h_K$, before the existing Dat/OneChar construction can be instantiated.
+
+That class-number hypothesis is not cosmetic. In [PowEqOneOfUnr.lean, char_eq_one](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/PowEqOneOfUnr.lean), a continuous everywhere-unramified l-adic character congruent to one is forced to be trivial by combining its exponent dividing $h_K$ with $\ell\nmid h_K$. A nontrivial l-power ideal class character is exactly a counterexample if the latter hypothesis is deleted.
+
+These statements exclude the attempted reuse of the existing arithmetic theorem. They do not exclude a new deformation argument with a different augmentation, extra finite unramified characters retained throughout, and a revised rigidity statement. The extension-sensitive part of that new construction is being investigated separately.
