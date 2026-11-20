@@ -427,3 +427,243 @@ One further possible shortcut was tested. If $\psi$ has nontrivial l-power order
 That class-number hypothesis is not cosmetic. In [PowEqOneOfUnr.lean, char_eq_one](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/PowEqOneOfUnr.lean), a continuous everywhere-unramified l-adic character congruent to one is forced to be trivial by combining its exponent dividing $h_K$ with $\ell\nmid h_K$. A nontrivial l-power ideal class character is exactly a counterexample if the latter hypothesis is deleted.
 
 These statements exclude the attempted reuse of the existing arithmetic theorem. They do not exclude a new deformation argument with a different augmentation, extra finite unramified characters retained throughout, and a revised rigidity statement. The extension-sensitive part of that new construction is being investigated separately.
+
+
+## 13. Deep character rigidity without class-number coprimality
+
+This section proves a replacement for one characteristic-zero rigidity step. It does not prove that a Selmer tangent direction lifts to a characteristic-zero point.
+
+The exact archived use is the theorem **UpperTheory.V.U3.pt_fixed** in [UnitaryThreeGroups/RootOfCharpoly.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/RootOfCharpoly.lean). After imposing both Upper and Lower, the proof obtains diagonal characters a_i. It proves:
+
+- hred: each quotient a_i/t^(wt_i) is congruent to 1 modulo the maximal ideal, for every Galois element;
+- hine: each quotient is trivial on every finite inertia group;
+- hall: each quotient is exactly 1, by invoking char_eq_one.
+
+The class-number-coprime assumption enters the last item. The preceding local conclusions instead imply, without that assumption, that the quotients are finite unramified class characters of ell-power order. The finiteness is the Hilbert class field theorem; see [Milne, Class Field Theory, chapter V](https://www.jmilne.org/math/CourseNotes/CFT.pdf). The argument below controls them by congruence depth.
+
+### 13.1 Exact torsion threshold
+
+Let v_ell be normalized by v_ell(ell)=1 on an algebraic closure of Q_ell. If zeta is a nontrivial root of unity and v_ell(zeta-1)>0, then zeta has ell-power order. If its order is ell^r, r>=1, then
+
+~~~math
+v_\ell(\zeta-1)=\frac1{\ell^{r-1}(\ell-1)}
+\le\frac1{\ell-1}.
+\tag{13.1}
+~~~
+
+To prove the first claim, a root of unity of order d prime to ell cannot be congruent to 1: the geometric sum 1+zeta+...+zeta^(d-1) would be congruent to the unit d although it is zero. Raising a root of mixed order to its ell-primary exponent reduces to this case.
+
+For the second claim, Phi_(ell^r)(1)=ell. All primitive ell^r-th roots have the same valuation of 1-zeta, since the ell-adic valuation is invariant under their conjugations. There are ell^(r-1)(ell-1) such roots. Taking valuations in the cyclotomic product gives (13.1).
+
+It follows that any finite character kappa satisfying
+
+~~~math
+v_\ell(\kappa(g)-1)>\frac1{\ell-1}
+\quad\hbox{for every }g
+~~~
+
+is trivial. This bound is independent of the size and exponent of the class group.
+
+More generally, two finite characters whose quotient is everywhere congruent to 1 and whose differences have valuation greater than 1/(ell-1) at every group element are equal. Their values are units, so differences and quotient-minus-one have the same valuation.
+
+In a coefficient DVR O with uniformizer pi and ramification index e_O=v_pi(ell), congruence modulo pi^n is sufficient when
+
+~~~math
+n>\frac{e_O}{\ell-1}.
+\tag{13.2}
+~~~
+
+The ramification factor must not be omitted when ordinary O-lengths are used. It disappears only after normalizing by e_O.
+
+### 13.2 Recovering individual characters from traces
+
+Let ell>=5. Let O be a finite extension DVR of Z_ell with fraction field E. Let Gamma be any group and let
+
+~~~math
+r=\operatorname{diag}(a_1,a_2,a_3),\qquad
+r_*=\operatorname{diag}(b_1,b_2,b_3)
+~~~
+
+be sums of O-valued unit characters. Assume:
+
+1. a_i/b_i is a finite character congruent to 1 modulo pi, for each i;
+2. there is g_0 in Gamma for which the three residues b_i(g_0) are pairwise distinct;
+3. tr r(g) and tr r_*(g) agree modulo pi^n for every g in Gamma.
+
+Then a_i(g) and b_i(g) agree modulo pi^n for every i and every g.
+
+**Proof.** The trace hypothesis at g_0, g_0^2, and g_0^3 says the first three power sums of the two triples of eigenvalues agree modulo pi^n. Newton's identities have denominators only 2 and 6 in rank three. These are units because ell>=5. The two characteristic polynomials at g_0 therefore agree modulo pi^n.
+
+For alpha_i=a_i(g_0) and beta_i=b_i(g_0), evaluate the target characteristic polynomial at alpha_i. The result is divisible by pi^n. Its factors alpha_i-beta_j for j different from i are units, by assumptions 1 and 2. Hence alpha_i-beta_i is divisible by pi^n.
+
+For arbitrary h, use the trace hypothesis at g_0^k h for k=0,1,2. Since these are characters,
+
+~~~math
+\sum_{i=1}^3\beta_i^k(a_i(h)-b_i(h))
+\equiv0\pmod{\pi^n},
+\qquad k=0,1,2.
+~~~
+
+The Vandermonde determinant is the product of the unit differences beta_j-beta_i. Its matrix is invertible over O. Thus every a_i(h)-b_i(h) is divisible by pi^n. This proves the claim.
+
+Combining this with (13.2) gives a characteristic-zero rigidity theorem:
+
+> Under assumptions 1–3, if n>e_O/(ell-1), then r=r_*.
+
+The finite-character assumption is essential. An arbitrary infinite ell-adic character can be nontrivial and arbitrarily close to 1.
+
+### 13.3 Application to the corrected Hecke triple
+
+For the corrected target
+
+~~~math
+r_*=\varepsilon^e\psi\ \oplus\ 1\ \oplus\ \varepsilon^{-e}\psi,
+~~~
+
+a completely reducible point with the same prescribed local character types differs from r_* by unramified finite class characters. If these ratios reduce to 1, the lemma applies whenever the residual target characters are separated at one element.
+
+In the same-residual situation psi is ell-power and therefore reduces to 1. If the residual cyclotomic character on the relevant Galois group has full image, the condition ell-1 not dividing 2e provides an element for which epsilon^e,1,epsilon^(-e) are pairwise distinct. This is an explicit hypothesis on the Galois group; it must be checked after changing the base field. In the archived imaginary-quadratic setup, the corresponding local separation is supplied in dat_facts and used in RootOfCharpoly.lean. For a larger CM host it is not automatic.
+
+The condition ell-1 not dividing 2e also excludes ell=2 and ell=3, so the use of Newton's identities above is compatible with that condition.
+
+This replaces class-number coprimality by a stronger congruence-depth hypothesis. It proves that nontrivial class-character alternatives cannot remain arbitrarily deep in the canonical point's congruence neighborhood.
+
+The archive's IsPt hypothesis supplies only reduction modulo the maximal ideal, not the stronger depth in (13.2). Consequently the lemma cannot simply be substituted into pt_fixed without another argument. In addition, congruence at a few selected counting primes is insufficient: the trace extraction needs all g_0^k h. Congruence on every Frobenius outside a fixed finite set suffices, by density and continuity.
+
+## 14. The finite algebra of reducible class-character points
+
+The residual class-character directions can be described integrally. This gives a finite-flat statement for the abelian part of the deformation problem and records the torsion that disappears in characteristic zero. It does not assert finite flatness of the full nonabelian deformation ring.
+
+### 14.1 Polarized labels over a CM field
+
+Let E_0 be a CM field with complex conjugation c. Fix an odd prime ell and let C=Cl(E_0)(ell), written additively. Conjugation acts on C. Put
+
+~~~math
+C^- = C/(1+c)C.
+~~~
+
+The unramified ell-power characters kappa with kappa^c=kappa^(-1) are precisely the characters of C^-.
+
+Consider a sum of three characters with distinct cyclotomic weights e,0,-e and unramified ell-power finite parts:
+
+~~~math
+\varepsilon^e\kappa_+\ \oplus\
+\kappa_0\ \oplus\
+\varepsilon^{-e}\kappa_-.
+~~~
+
+Conjugate self-duality forces
+
+~~~math
+\kappa_-=(\kappa_+^c)^{-1},
+\qquad
+\kappa_0^c=\kappa_0^{-1}.
+\tag{14.1}
+~~~
+
+This follows by matching the distinct Tate weights in r^c and r^vee. Conversely, these identities give conjugate self-duality.
+
+Thus the unramified finite labels consist of one arbitrary character of C and one character of C^-. In particular they are parametrized by the character group of
+
+~~~math
+G=C\times C^-.
+~~~
+
+For an imaginary quadratic field K, conjugation acts as inversion on Cl(K): the ideal product a*c(a) is the principal norm ideal. Hence C^-=C and (14.1) becomes
+
+~~~math
+\varepsilon^e\kappa_{\rm out}\ \oplus\
+\kappa_{\rm mid}\ \oplus\
+\varepsilon^{-e}\kappa_{\rm out}.
+\tag{14.2}
+~~~
+
+There are two class-character labels, not one. Multiplying every constituent by a single central character does not exhaust them; the ratio of the outer product to the square of the middle character records the distinction.
+
+This describes the restriction to the CM Galois group. Every displayed triple admits the usual conjugate-dual extension using the fixed complex-conjugation element in the unitary semidirect product. No uniqueness claim for all possible global polarized extensions is needed here.
+
+### 14.2 Integral representability and finite flatness
+
+Let O be a complete coefficient DVR of residue characteristic ell. The functor of unramified characters of G_E0 which reduce to 1 is represented by O[C]. For the two labels in (14.1), the representing algebra is
+
+~~~math
+A=\mathcal O[G].
+\tag{14.3}
+~~~
+
+Indeed, a local O-algebra map from O[G] to an Artinian local O-algebra R is exactly a group homomorphism G to R^times. Since G is an ell-group, every such character reduces to the trivial character in the residue field. Conversely every required pair of characters defines that algebra map.
+
+The ring A is finite free over O of rank |G|. It is local and complete. To see locality, write G as a product of cyclic groups of orders ell^(a_j). Then
+
+~~~math
+A/\pi A
+\simeq k[T_1,\ldots,T_d]/
+(T_1^{\ell^{a_1}},\ldots,T_d^{\ell^{a_d}}),
+~~~
+
+where T_j denotes a generator minus 1. This ring has the unique maximal ideal generated by the T_j. Finite O-modules are complete; the maximal-ideal and pi-adic topologies on A are equivalent.
+
+This is a genuine finite-flat character deformation algebra. Its special fiber is generally nonreduced and nonsemisimple. Those facts are compatible with finite flatness.
+
+### 14.3 Exact cotangent torsion
+
+Let I be the augmentation ideal of A. The map g to [g]-1 identifies
+
+~~~math
+I/I^2\simeq G\otimes_{\mathbb Z}\mathcal O.
+\tag{14.4}
+~~~
+
+For a presentation G=direct sum Z/ell^(a_j)Z, the group relation (1+T_j)^(ell^(a_j))=1 becomes ell^(a_j)T_j=0 modulo I^2, and there are no additional linear relations. Therefore
+
+~~~math
+\operatorname{length}_{\mathcal O}(I/I^2)
+=v_\pi(|G|).
+\tag{14.5}
+~~~
+
+At any O-valued character point, twisting the group basis by that character carries its kernel to I, so its cotangent length is the same.
+
+For an imaginary quadratic field this length is exactly 2*v_pi(|Cl(K)(ell)|). It cannot be discarded. In particular, the presence of a nonzero residual tangent space is compatible with a finite algebra whose characteristic-zero points are all reducible character points.
+
+This illustrates why a Selmer tangent direction alone does not establish a nonabelian characteristic-zero lift.
+
+### 14.4 Character separation and its integral cost
+
+Enlarge O finitely so that it contains the values of all characters of G. The Fourier evaluation map embeds A into
+
+~~~math
+B=\prod_{\chi\in\widehat G}\mathcal O.
+~~~
+
+After passing to the fraction field it is an isomorphism. The character idempotents are
+
+~~~math
+e_\chi=\frac1{|G|}\sum_{g\in G}\chi(g)^{-1}[g].
+~~~
+
+Since |G|e_chi lies in A, the quotient B/A is annihilated by |G|. Its O-length is exactly
+
+~~~math
+\operatorname{length}_{\mathcal O}(B/A)
+=\frac{|G|}{2}\,v_\pi(|G|).
+\tag{14.6}
+~~~
+
+For completeness, the character matrix F=(chi(g)) has F^t F=|G|P, where P permutes each group element with its inverse. Thus 2*v_pi(det F)=|G|*v_pi(|G|), which is the index length in (14.6).
+
+For any O-free A-module M of rank r, let M_chi=M intersect e_chi(M tensor E). Then
+
+~~~math
+|G|M\subseteq\bigoplus_\chi M_\chi\subseteq M.
+~~~
+
+The integral failure of the character decomposition is consequently killed by |G| and has length at most r*v_pi(|G|). This statement concerns an O-lattice; it does not turn a general finite torsion Selmer module into a direct sum of character eigenspaces.
+
+If the CM base is fixed, the cost is a fixed field-dependent constant. If its class group is itself varying in the quantity to be bounded, treating that cost as harmless would be circular. No such absorption is claimed here.
+
+### 14.5 Remaining lifting obligation
+
+Sections 13 and 14 prove three specific facts: the reducible class-character alternatives form a finite-flat abelian algebra; its integral cotangent and splitting losses are explicit; and distinct finite-character alternatives have a class-number-independent bound on pointwise congruence depth.
+
+They do not establish that the full twisted Selmer deformation ring is O-flat, that every needed extension survives in characteristic zero, or that every resulting nonabelian point is automorphic with the required level. Those are the remaining obligations for a twisted OneChar theorem. The source's unrestricted residual neighborhood still contains all the class-character points in (14.1); only a deeper neighborhood isolates the prescribed one.
