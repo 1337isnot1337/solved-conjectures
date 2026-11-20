@@ -369,3 +369,127 @@ Additional exact and broad searches included “Fujii Chebyshev almost periodic�
 The bibliography contains typographical defects in some unrelated displayed summaries, including the displayed variables in its entry for Platt–Trudgian. Its description of the target is therefore not the sole basis for attribution: Suzuki's independent 2011 and corrected 2025 descriptions were read and agree on the weight exp(-(p/x)^alpha), the unweighted prime sum, and the proposed extension to every positive alpha. None of these checks substitutes for directly reading Fujii's original paper.
 
 The mathematically new claim being reviewed is the application of this established explicit-formula and recurrence machinery to refute the all-alpha family under beta GRH. Originality of almost-periodic recurrence itself is not claimed.
+
+
+## 11. Independent audit of the zero-count proof
+
+The separate note [fujii-zero-count.md](fujii-zero-count.md), initially committed as 3538288b789cf667a470f1e77444ce7108d3e655, gives a shorter positive-phase proof and an explicit constant:
+
+~~~math
+F_\alpha(0)=
+\left(\frac12-\frac1{\mathrm e}\right)\log\alpha+C_\beta
++O\!\left(\frac{\log(\alpha+2)}{\alpha}\right).
+\tag{19}
+~~~
+
+This section independently checks its new steps. It is an audit of that proof, not a new named result.
+
+### Pairing and the pole term
+
+Put ε=1/(2α) and g(z)=Γ(z)−1/z. For each positive ordinate γ, counted with multiplicity,
+
+~~~math
+\frac{\Gamma((1/2+i\gamma)/\alpha)}{\alpha}
++\frac{\Gamma((1/2-i\gamma)/\alpha)}{\alpha}
+=
+\frac1{1/4+\gamma^2}
++\frac2\alpha\operatorname{Re}g(\varepsilon+i\gamma/\alpha).
+\tag{20}
+~~~
+
+The coefficient of the rational term is exactly one. Indeed,
+1/(1/2+iγ)+1/(1/2−iγ)=1/(1/4+γ²).
+There is no central zero to add because β(1/2)>0. No absolutely convergent unpaired sum of 1/ρ is assumed.
+
+### Uniform estimates
+
+The function g is holomorphic at zero. It and its first derivatives are bounded on 0≤Re z≤1/2, 0≤Im z≤1.
+
+For u≥1, fixed-strip Stirling estimates and
+
+~~~math
+\operatorname{Re}\frac1{\varepsilon+iu}
+=\frac{\varepsilon}{\varepsilon^2+u^2}
+~~~
+
+give, uniformly for 0≤ε≤1/2,
+
+~~~math
+\begin{aligned}
+|\operatorname{Re}g(\varepsilon+iu)|
+&\ll u^{-2}+e^{-cu},\\
+|\partial_\varepsilon\operatorname{Re}g(\varepsilon+iu)|
+&\ll u^{-2}+e^{-cu},\\
+|\partial_u\operatorname{Re}g(\varepsilon+iu)|
+&\ll u^{-3}+e^{-cu}.
+\end{aligned}
+\tag{21}
+~~~
+
+The last estimate uses the real part: the u derivative of the rational real part is −2εu/(ε²+u²)². A bound on the full complex derivative would lose this additional power, although it would still suffice after suitable integration. Near zero, cancellation is performed inside g before differentiating. This avoids a false nonuniform estimate for the pole and gamma terms separately.
+
+These estimates make the u integrals with weights 1+|log u| and log(u+2) uniformly finite, as needed in the proof.
+
+### Counting convention and Stieltjes remainder
+
+Bennett, Martin, O'Bryant and Rechnitzer, [Counting zeros of Dirichlet L-functions](https://personal.math.ubc.ca/~bennett/BeMaObRe-MathComp-2021.pdf), Math. Comp. 90 (2021), 1455–1482, explicitly count both positive and negative ordinates, with multiplicity. For the real primitive character of conductor four, dividing their leading term by two gives
+
+~~~math
+N_+(T)=\frac{T}{2\pi}\log\frac{2T}{\pi\mathrm e}
++O(\log(T+2)).
+\tag{22}
+~~~
+
+This source and its convention were independently opened and checked. Their fixed parity constant can be included in the remainder.
+
+Write N_+=M+E, with M(0)=E(0)=0, and put
+fα(T)=(2/α)Re g(ε+iT/α).
+At zero, E(T) tends to zero: there is a zero-free neighborhood of the nonzero value β(1/2), and M(T) tends to zero. At infinity, E(T)fα(T) tends to zero by the T^−2 bound. Integration by parts therefore gives no boundary contribution.
+
+With T=αu, the error is bounded by
+
+~~~math
+\begin{aligned}
+\left|\int_0^\infty E(T)f_\alpha'(T)\,dT\right|
+&\ll\frac1\alpha
+  \int_0^\infty\log(\alpha u+2)
+  \left|\partial_u\operatorname{Re}g(\varepsilon+iu)\right|du\\
+&\ll\frac{\log(\alpha+2)}{\alpha}.
+\end{aligned}
+\tag{23}
+~~~
+
+The main integral has factor 1/π, since the pair factor 2 in fα cancels the 2π in M′. This checks the possible factor-of-two ambiguity independently.
+
+### Fourier sign and the constant
+
+For ε>0, gamma is the Fourier transform, with positive exponential convention, of the integrable function exp(εv−exp v). Fourier inversion at v=0 gives
+
+~~~math
+\int_0^\infty\operatorname{Re}\Gamma(\varepsilon+iu)\,du
+=\frac{\pi}{\mathrm e}.
+~~~
+
+Subtracting the pole integral π/2 yields the exact identity
+
+~~~math
+\int_0^\infty\operatorname{Re}g(\varepsilon+iu)\,du
+=\pi\left(\frac1{\mathrm e}-\frac12\right).
+\tag{24}
+~~~
+
+This is negative. The zero sum occurs with a minus sign in Fα, so the coefficient of log α in (19) is positive.
+
+The ε derivative bound in (21), including its integrable logarithmic weight, justifies replacing Re g(ε+iu) by Re Γ(iu) in the remaining logarithmic moment at cost O(ε). Finally, Γ(1/(2α))/(2α)=1+O(1/α). The resulting constant is exactly
+
+~~~math
+C_\beta=
+-1-\sum_{\gamma>0}\frac1{1/4+\gamma^2}
+-\frac1\pi\int_0^\infty
+  \operatorname{Re}\Gamma(iu)\log\frac{2u}{\pi}\,du.
+\tag{25}
+~~~
+
+All terms converge absolutely. Near u=0, Re Γ(iu) tends to minus Euler's constant; at infinity it decreases exponentially.
+
+Audit conclusion: no correction was found in the new zero-count argument. It independently proves positivity of Fα(0) for all sufficiently large fixed α, with the stated error. The beta-GRH prime normalization in Sections 2–5 and the recurrence step remain necessary to obtain conclusions about Sα(x) as x tends to infinity. The separate [Landau argument](fujii-landau.md) handles failure of beta GRH and must not be conflated with the GRH-only density corollary in [fujii-boundary.md](fujii-boundary.md).
