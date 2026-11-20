@@ -1,0 +1,13 @@
+best binary terminal 24666487 design 0 run 0
+binary local minimum run 0 permanent 24666487
+best binary terminal 24619960 design 0 run 1
+best binary terminal 24567424 design 1 run 7
+binary local minimum run 25 permanent 24634576
+binary local minimum run 50 permanent 24619960
+binary local minimum run 75 permanent 24649624
+binary local minimum run 100 permanent 24670808
+binary local minimum run 125 permanent 24634576
+binary local minimum run 150 permanent 24668872
+binary local minimum run 175 permanent 24621152
+No nonbinary local minimum found in 200 random starts.
+Best binary permanent 24567424 design terminals 11

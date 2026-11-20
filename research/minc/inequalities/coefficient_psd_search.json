@@ -1,0 +1,1402 @@
+[
+  {
+    "n": 11,
+    "k": 3,
+    "maximum_found": 0.6600000000000011,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 10,
+        "value": 0.23190036174568202,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.002716049382716016,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.6600000000000001,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.6599999999999995,
+        "iterations": 11,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.6599999999998845,
+        "iterations": 43,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.6599999998940607,
+        "iterations": 62,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.6599999997556423,
+        "iterations": 47,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.6599999999971611,
+        "iterations": 58,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.6600000000000011,
+        "iterations": 15,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 11,
+    "k": 4,
+    "maximum_found": 0.45721296296296404,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 10,
+        "value": 0.23375000000000115,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.45721296296296404,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.2969999999999999,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.4572129629629625,
+        "iterations": 17,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.45721296294775804,
+        "iterations": 34,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.4572129629626714,
+        "iterations": 44,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.45721296296246045,
+        "iterations": 78,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.45721296287713975,
+        "iterations": 80,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.45721296296296343,
+        "iterations": 17,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 11,
+    "k": 5,
+    "maximum_found": 0.5633287608596246,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 10,
+        "value": 0.15537324236960756,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.01776917107583828,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.07392000000000011,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.5633287608596246,
+        "iterations": 12,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.563328760216363,
+        "iterations": 29,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.5633287608405028,
+        "iterations": 64,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.5633287608399771,
+        "iterations": 96,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.563328760038153,
+        "iterations": 76,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.5633287608596246,
+        "iterations": 11,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 11,
+    "k": 10,
+    "maximum_found": 0.65972511453561,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 10,
+        "value": 0.0182631016617064,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.3055555555555559,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 8.910000000000001e-08,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.65972511453561,
+        "iterations": 17,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.659725114524961,
+        "iterations": 44,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.6597251145203633,
+        "iterations": 71,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.30555555545664626,
+        "iterations": 91,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.6597251131027783,
+        "iterations": 66,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.305555555555556,
+        "iterations": 16,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 11,
+    "k": 11,
+    "maximum_found": 0.8333333333333343,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 10,
+        "value": 0.011038927395265283,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.8333333333333343,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 1.0000000000000003e-09,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.18658892128279805,
+        "iterations": 18,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.8333333333255754,
+        "iterations": 48,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.8333333315085326,
+        "iterations": 64,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.8333333330784415,
+        "iterations": 75,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.8333333327394266,
+        "iterations": 79,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.18658892128279903,
+        "iterations": 12,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 12,
+    "k": 3,
+    "maximum_found": 0.6611570247933886,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 11,
+        "value": 0.21928097787473794,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 9.901170792338896e-16,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.6611570247933883,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.6611570247933884,
+        "iterations": 12,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.6611570245937028,
+        "iterations": 30,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.6611570246807326,
+        "iterations": 60,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.6611570247793286,
+        "iterations": 59,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.6611570246957619,
+        "iterations": 63,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.6611570247933886,
+        "iterations": 10,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 12,
+    "k": 4,
+    "maximum_found": 0.45454545454545736,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 11,
+        "value": 0.22314049586777077,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.45454545454545736,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.3042824943651364,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.4545454545454545,
+        "iterations": 19,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.45454545454503453,
+        "iterations": 35,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.45454545453224865,
+        "iterations": 61,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.4545454543153898,
+        "iterations": 52,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.45454545449617245,
+        "iterations": 62,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.45454545454545486,
+        "iterations": 16,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 12,
+    "k": 6,
+    "maximum_found": 0.43290043290043345,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 11,
+        "value": 0.09917355371900845,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.4329004329004328,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.013039347784242488,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.43290043290043345,
+        "iterations": 19,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.4329004326279762,
+        "iterations": 32,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.432900432894175,
+        "iterations": 69,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.43290043287432534,
+        "iterations": 65,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.43290043276244317,
+        "iterations": 69,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.43290043290043273,
+        "iterations": 16,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 12,
+    "k": 11,
+    "maximum_found": 0.6997084548104953,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 11,
+        "value": 0.00888862913054532,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": -2.2073252316865613e-16,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 4.205926793776702e-09,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.699708454810492,
+        "iterations": 11,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.6997084548098,
+        "iterations": 44,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.6997084547761059,
+        "iterations": 50,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.6997084532578415,
+        "iterations": 68,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.37499999949079477,
+        "iterations": 102,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.6997084548104953,
+        "iterations": 23,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 12,
+    "k": 12,
+    "maximum_found": 1.0000000000000018,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 11,
+        "value": 0.005141870442427411,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 1.0000000000000018,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 3.855432894295309e-11,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 1.0,
+        "iterations": 19,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.5102040815921636,
+        "iterations": 48,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.5102040809537142,
+        "iterations": 96,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.9999999995631208,
+        "iterations": 68,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.510204081008677,
+        "iterations": 83,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.5102040816326534,
+        "iterations": 18,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 13,
+    "k": 3,
+    "maximum_found": 0.6620370370370376,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 12,
+        "value": 0.20848759720736454,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.001563251563251631,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.6620370370370341,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.6620370370370366,
+        "iterations": 19,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.6620370370364063,
+        "iterations": 45,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.6620370367709165,
+        "iterations": 52,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.6620370370340192,
+        "iterations": 70,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.6620370367577685,
+        "iterations": 67,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.6620370370370376,
+        "iterations": 11,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 13,
+    "k": 4,
+    "maximum_found": 0.4430143269428997,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 12,
+        "value": 0.21440972222221963,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.4430143269428997,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.31032986111110855,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.4430143269428983,
+        "iterations": 16,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.4430143266336306,
+        "iterations": 29,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.4430143267336527,
+        "iterations": 48,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.4430143269184857,
+        "iterations": 67,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.4430143269101671,
+        "iterations": 68,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.44301432694289317,
+        "iterations": 21,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 13,
+    "k": 6,
+    "maximum_found": 0.40130590764141844,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 12,
+        "value": 0.09116592721193148,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.4013059076414066,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.01436712319958827,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.4013059076414182,
+        "iterations": 24,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.4013059076369285,
+        "iterations": 45,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.4013059076287651,
+        "iterations": 45,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.4013059076064232,
+        "iterations": 63,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.40130590750437173,
+        "iterations": 56,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.40130590764141844,
+        "iterations": 13,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 13,
+    "k": 12,
+    "maximum_found": 0.7141113281250013,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 12,
+        "value": 0.004148668208927061,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.2653061224489798,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 1.7642241797619965e-10,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.7141113281250013,
+        "iterations": 15,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.2653061224485414,
+        "iterations": 76,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.7141113281138859,
+        "iterations": 67,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.7141113280770566,
+        "iterations": 95,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.26530612236060097,
+        "iterations": 97,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.7141113281249993,
+        "iterations": 10,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 13,
+    "k": 13,
+    "maximum_found": 0.8571428571428582,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 12,
+        "value": 0.0023050598120868716,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.8571428571428582,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 1.3458798574153822e-12,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.24414062499999967,
+        "iterations": 17,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.857142856233198,
+        "iterations": 54,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.2441406249776301,
+        "iterations": 80,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.8571428550684718,
+        "iterations": 89,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.8571428569165394,
+        "iterations": 160,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.8571428571428548,
+        "iterations": 10,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 14,
+    "k": 3,
+    "maximum_found": 0.662721893491125,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 13,
+        "value": 0.19912314736290235,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 8.696302225339117e-16,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.6627218934911181,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.6627218934911246,
+        "iterations": 7,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.6627218934816506,
+        "iterations": 41,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.6627218934740939,
+        "iterations": 54,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.6627218933210064,
+        "iterations": 70,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.6627218930660487,
+        "iterations": 92,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.662721893491125,
+        "iterations": 8,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 14,
+    "k": 4,
+    "maximum_found": 0.44055944055944135,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 13,
+        "value": 0.2071005917159762,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 0.44055944055944135,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.31543013199818176,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.4405594405594402,
+        "iterations": 16,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.44055944055938157,
+        "iterations": 41,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.42840666277719713,
+        "iterations": 44,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.4284066626369904,
+        "iterations": 53,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.4405594404584441,
+        "iterations": 70,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.4405594405594402,
+        "iterations": 15,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 14,
+    "k": 7,
+    "maximum_found": 0.44686321678321705,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 13,
+        "value": 0.05265065130610139,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": -1.2157563043717934e-16,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 0.001969002709657557,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.44686321678321655,
+        "iterations": 11,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.44686321678238605,
+        "iterations": 44,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.4468632166663763,
+        "iterations": 59,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.31477060657182704,
+        "iterations": 75,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.4468632167350599,
+        "iterations": 117,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.44686321678321705,
+        "iterations": 12,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 14,
+    "k": 13,
+    "maximum_found": 0.6562499999999998,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 13,
+        "value": 0.0018629859288685122,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 1.0796536341563791e-16,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 6.656208965743902e-12,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.6562499999999997,
+        "iterations": 15,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.656249998368871,
+        "iterations": 59,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.47418245853604796,
+        "iterations": 68,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.6562499995796284,
+        "iterations": 63,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.6562499998890213,
+        "iterations": 103,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.6562499999999998,
+        "iterations": 11,
+        "success": true
+      }
+    ]
+  },
+  {
+    "n": 14,
+    "k": 14,
+    "maximum_found": 1.000000000000002,
+    "outcomes": [
+      {
+        "trial": 0,
+        "rank_bound": 13,
+        "value": 0.0009972119173549008,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 1,
+        "rank_bound": 1,
+        "value": 1.000000000000002,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 2,
+        "rank_bound": 1,
+        "value": 4.292198241799142e-14,
+        "iterations": 0,
+        "success": true
+      },
+      {
+        "trial": 3,
+        "rank_bound": 1,
+        "value": 0.028145936150412373,
+        "iterations": 2,
+        "success": true
+      },
+      {
+        "trial": 4,
+        "rank_bound": 2,
+        "value": 0.5624999997165825,
+        "iterations": 57,
+        "success": true
+      },
+      {
+        "trial": 5,
+        "rank_bound": 3,
+        "value": 0.5624999999976891,
+        "iterations": 103,
+        "success": true
+      },
+      {
+        "trial": 6,
+        "rank_bound": 4,
+        "value": 0.562499999096519,
+        "iterations": 80,
+        "success": true
+      },
+      {
+        "trial": 7,
+        "rank_bound": 5,
+        "value": 0.9999999994122819,
+        "iterations": 90,
+        "success": true
+      },
+      {
+        "trial": 8,
+        "rank_bound": 1,
+        "value": 0.09525986892241946,
+        "iterations": 13,
+        "success": true
+      }
+    ]
+  }
+]

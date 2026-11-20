@@ -1,0 +1,8 @@
+design 1 permanent 24601472
+design 2 permanent 24582016
+design 3 permanent 24572288
+design 4 permanent 24567424
+design 5 permanent 24567424
+same Gram matrix: True
+same permanent: False
+minimum among supplied designs: 24567424

@@ -57,3 +57,24 @@ At the parent agent’s request, reviewed the proposed general FPRAS for Problem
 For real zero-margin `X` of Frobenius norm one, tested the proposed bound `|n^k sigma_k(X)/(n)_k|<=1` in orders 3 through 10 and all degrees 3 through n. Twenty optimized starts per pair found no violation. The bound remains unproved. `coefficient_search.py`, `subpermanent_grad.cpp`, and `coefficient_search.json` record the method and observations. These numerical results are not conjecture resolutions.
 
 Bero Roos’s permanent-approximation estimates (https://arxiv.org/pdf/1612.03702) use only column centering and give a parameter of order `n||X||F²` in the relevant normalization, so do not supply the missing uniform radius. Peter McCullagh’s 2012 expansion (https://www.stat.uchicago.edu/~pmcc/pubs/dspermanent.pdf) uses both margins and has a determinantal asymptotic, but imposes additional moment conditions on `nX`; it is not uniform on a fixed Frobenius ball.
+
+
+## Additional independent reviews and failed routes
+
+The final `research/minc/compound_fpras.md` review found no remaining gap after the draft added the full Newton interpolation argument for a positive initial prefix of Perron roots and handled nonpositive sampler output on a failure event. Reviewed the finite geometric grid, constants, rational root computation, zero-root assignment criterion, and n=1 case. A review comment was posted on GitHub issue 140. The cited Leake–Ryder source is *Generalizations of the Matching Polynomial to the Multivariate Independence Polynomial*, Algebraic Combinatorics 2(5) (2019), 781–802, DOI 10.5802/alco.63; the relevant multiaffine-part argument is in the proof of Theorem 3.1, p. 788.
+
+The parent's regular, semiregular and abelian permutation-group dominance deduction was also checked in `research/minc/abelian-dominance.md`; no mathematical gap was found. The Grone–Pierce primary abstract explicitly states the required complex correlation-matrix bound. Allen Herman's 2007 manuscript (*A Maximal Eigenvalue Conjecture Equivalent to Permanental Dominance*, author upload at https://www.researchgate.net/publication/240903668_A_Maximal_Eigenvalue_Conjecture_Equivalent_to_Permanental_Dominance) does not establish those cases: its cyclic example only separates characters within one subgroup. Priority remains unverified because the full Grone–Pierce paper's corollaries have not been inspected.
+
+A tempting strong-Gyires descent is false even in order three. For `A=(ones-I)/2`, `per(A)=1/4`, `per(AA^T)=1/4`, and hence `R(A)=per(A)^2/per(AA^T)=1/4`. Averaging any two rows gives `B`, with `per(B)=1/4`, `per(BB^T)=15/64` and `R(B)=4/15>1/4`. Here A commutes with the averaging matrix, so the same example covers column averaging. Therefore even the normalized Gram ratio is not monotone under ordinary pair averaging. This is an obstruction to a proof method, not a counterexample to Gyires.
+
+A November 2026 primary source relevant to entropy methods is Suvrit Sra, *A new proof of van der Waerden's inequality, and beyond*, https://hexagonmath.org/pdf/2611.00118v1 (first public release 31 October 2026). Theorem 2.1 proves monotonicity under pair averaging for minimum total correlation of a permutation law with prescribed marginals, not for the permanent. Corollary 5.3 gives a quadratic permanent remainder with coefficient `(n-2)! minentry(A)^(n-2)/2`. This vanishes for zero-diagonal inputs and does not supply a uniform Frobenius ball.
+
+The scanned Wanless paper https://users.monash.edu.au/~iwanless/papers/HolDjokLAA.pdf was sought for its exact order-22 Holens–Djokovic counterexample (Figure 1, PDF page index 4), to test structured failures against Lih–Wang and Gyires. Text extraction was inadequate, web screenshots returned only a textual image marker, and Pyroam persistent downloads failed at connector level. No matrix was reconstructed or evaluated from the unreadable scan.
+
+## A reduction for the centered coefficient question
+
+For each fixed k, maximization of `|sigma_k(X)|` over real zero-margin matrices with a fixed Frobenius norm reduces to symmetric positive semidefinite zero-margin matrices. Let `X=U S V^T` be a singular value decomposition on the orthogonal complement of the all-ones vector. In the symmetric-tensor representation, `sigma_k(X)=<v,X^(tensor k)v>`, where v is the sum of squarefree k-tensors. Cauchy–Schwarz after inserting `S^(tensor k/2)` gives
+
+`|sigma_k(X)|^2 <= sigma_k(U S U^T) sigma_k(V S V^T)`.
+
+Both matrices on the right have zero margins and the same Frobenius norm as X. The tensor normalization is the same on both sides and cancels. This reduces the proposed coefficient bound to a positive semidefinite optimization problem; it does not establish the bound.

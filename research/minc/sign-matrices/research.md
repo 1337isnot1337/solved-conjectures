@@ -81,6 +81,24 @@ This obstruction does not contradict nonvanishing. It only rules out a proposed 
 - Hadamard nonvanishing cannot be obtained by carrying the Sylvester row-group argument to matrices whose rows do not form a group. No replacement symmetry or 2-adic invariant has been proved here.
 - Chollet's conjecture remains open. Its Gaussian-moment interpretation does not justify discarding off-diagonal pairs of permutation terms, because those terms can have negative real parts.
 
+## Paired-row reduction for odd orders
+
+Let V be any m by 2m sign matrix with rows v_i. Form a rectangular 2m by (2m+1) sign matrix C whose rows occur in pairs (v_i,+1), (v_i,-1). Its row-form product is
+
+product_i ((v_i dot x)^2-y^2).
+
+Every permanental cofactor obtained by deleting an x-column vanishes: the squarefree monomial in the remaining columns has y-degree one, while the displayed polynomial has only even y-degrees. The cofactor obtained by deleting the last column is per(V doubled), where every row of V is repeated twice. Thus completing C by any sign row gives permanent equal to plus or minus per(V doubled), determined only by the last entry of that row.
+
+Consequently, a sufficient construction for Conjecture 36 at n=2m+1 is an m by 2m sign matrix V with
+
+abs(per(V doubled)) = 2^(2m-floor(log2(m+1))).
+
+This is an exact structural reduction. No general attaining construction for V has been obtained. In particular, replacing V by [A,A] produces the permanent of A tensor J_2, which does not in general equal 2^m per(A); treating it as such would be an invalid induction. At m=2, taking orthogonal sign rows gives a doubled-row permanent of -8, but this small case supplies no universal recurrence.
+
+## Fixed-determinant upper-triangular sign family
+
+For Problem 7 one can restrict attention, as a possible sufficient family, to matrices A satisfying a_ij=1 for j<=i, a_(i,i+1)=-1, and arbitrary signs above the first superdiagonal. Every such matrix has det(A)=2^(n-1). Subtract row i+1 from row i for i=1,...,n-1 simultaneously (or in increasing order so the source rows remain original). The first n-1 transformed rows have zeros through column i and entry -2 at column i+1; the last row is all ones. Expansion in the first column gives the formula. The permanent remains uncontrolled, and no all-order choice attaining absolute permanent 2^(n-1) was proved. The Mersenne-order obstruction prevents any unconditional extension step that ignores the order.
+
 ## Additional Chollet prior-art exclusions
 
 A broader search found rank-four work omitted from the concise Lavi progress summary:
