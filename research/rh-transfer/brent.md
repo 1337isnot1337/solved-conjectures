@@ -4,23 +4,32 @@ Research date: 20 November 2026. [Issue #127](https://github.com/1337isnot1337/s
 
 ## Statement, provenance, and conclusion
 
-In *Irregularities in the distribution of primes and twin primes*, Mathematics of Computation **29** (1975), 43–56, Richard P. Brent proposed on printed page 51, equation (7.3), the logarithmic-mean assertion
+In *Irregularities in the distribution of primes and twin primes*, Mathematics of Computation **29** (1975), 43–56, Richard P. Brent proposed the logarithmic-mean assertion
 \[
 \boxed{\quad
-\frac1{\log X}\int_1^X
-\frac{(L(t)-\pi(t))\log t}{t^{3/2}}\,dt\longrightarrow1.
+\frac1{\log N}\sum_{n=2}^N\frac{s_1(n)}n\longrightarrow1,
+\qquad
+s_1(n)=\frac{(\langle\operatorname{li}(n)\rangle-\pi(n))\log n}{\sqrt n}.
 \quad} \tag{B}
 \]
-Here \(L\) is his logarithmic-integral approximation. The paper uses an integer-part convention in its computational definitions. Replacing it by the usual principal-value \(\operatorname{li}\), or changing the lower integration endpoint to \(2\), changes the numerator in (B) by \(O(1)\). Thus these conventions give exactly the same limit.
+This is equation **(1.22) on printed page 48**. The notation \(\langle y\rangle=\lfloor y+1/2\rfloor\) means nearest integer, as defined on printed page 43. Brent states the equivalent assertion for his Riemann-approximation error \(s_2\) in equation (1.21) on printed page 47.
 
-Primary sources: [Brent's complete original paper](https://maths-people.anu.edu.au/~brent/pd/rpb024.pdf), especially printed pages 43 and 51, and [his updated author page](https://maths-people.anu.edu.au/~brent/pub/pub024.html). The original PDF is a scan. The web screenshot command returned only text placeholders, not actual image data; direct visual verification is therefore still pending. The normalized statement is independently recorded in the comparative-prime-number bibliography and agrees with Brent's updated author page.
+Primary sources: [Brent's complete original paper](https://maths-people.anu.edu.au/~brent/pd/rpb024.pdf), printed pages 43–48, and [his updated author page](https://maths-people.anu.edu.au/~brent/pub/pub024.html). The PDF was downloaded, rendered locally, and the actual page images were inspected. The direct scan check corrected an earlier draft's wrong equation/page reference and its treatment of the discrete sum as a literal integral statement.
 
 **Conclusion under the accepted RH input.** The full original conjecture holds. More precisely,
 \[
+\sum_{n=2}^N
+\frac{(\langle\operatorname{li}(n)\rangle-\pi(n))\log n}{n^{3/2}}
+=\log N+2\log\log N+O(1). \tag{1}
+\]
+We first prove the corresponding integral formula
+\[
 \int_2^X
 \frac{(\operatorname{li}(t)-\pi(t))\log t}{t^{3/2}}\,dt
-=\log X+2\log\log X+O(1). \tag{1}
+=\log X+2\log\log X+O(1), \tag{1a}
 \]
+then prove that the sum and integral differ by \(O(1)\). Thus the common continuous formulation of the conjecture is equivalent, but it is not misquoted as the literal original display.
+
 This is a classical explicit-formula consequence of RH. No new independent prime-distribution estimate or historical priority is claimed.
 
 A distinct arithmetic-progression statement is called Brent's conjecture by Guy Robin in *Irrégularités dans la distribution des nombres premiers dans les progressions arithmétiques*, Annales de la Faculté des Sciences de Toulouse, series 5, **8** (1986–1987), 159–173:
@@ -32,9 +41,9 @@ A distinct arithmetic-progression statement is called Brent's conjecture by Guy 
 \sim\log X.
 \quad} \tag{B4}
 \]
-See [Robin's original paper](https://www.numdam.org/item/AFST_1986-1987_5_8_2_159_0.pdf), printed page 161, display (B), and printed pages 163–164, the theorem and Remark 1. Robin already proved the conditional GRH result. The accepted rational Dirichlet-GRH input supplies that hypothesis.
+See [Robin's original paper](https://www.numdam.org/item/AFST_1986-1987_5_8_2_159_0.pdf), printed pages 160–161, the abstract and display (B), and printed pages 163–164, the theorem and Remark 1. These formula images were also downloaded and inspected locally. Robin already proved the conditional GRH result. The accepted rational Dirichlet-GRH input supplies that hypothesis.
 
-The two statements are recorded separately because the modulus-four formula is not the literal formula in Brent's 1975 equation (7.3). They are counted as one historical target in this campaign, not two new resolutions. We give the full reduction for both, including the signed denominator in (B4).
+The two statements are recorded separately because the modulus-four formula is not the literal formula in Brent's 1975 equation (1.22). They are counted as one historical target in this campaign, not two new resolutions. We give the full reduction for both, including the signed denominator in (B4).
 
 The accepted source is pinned to [9d5316ec73f5df89c4d95703ed106837b8a4060e](https://github.com/1337isnot1337/riemann-hypothesis-solved/tree/9d5316ec73f5df89c4d95703ed106837b8a4060e). Statement (B) uses only its zeta RH conclusion. Statement (B4) uses zeta RH and GRH for the primitive real character modulo \(4\). No linear independence, simple-zero assertion, or general number-field GRH is used.
 
@@ -194,16 +203,43 @@ Apply the lemma with (5) and \(a=-1\). This gives
 \frac{\log t}{t^{3/2}}\,dt
 =-\log X-2\log\log X+O(1),
 \]
-which proves (1).
+which proves (1a).
 
-Replacing \(\operatorname{li}(t)\) by its integer part changes the integral by at most
-\(\int_2^\infty\log t\,t^{-3/2}\,dt\). The omitted interval from \(1\) to \(2\) also has a finite integral: the logarithmic singularity of \(\operatorname{li}\) at \(1\) is integrable after multiplication by \(\log t\). Thus
+We now justify the literal discrete statement. Put
 \[
-\frac1{\log X}\int_1^X
-\frac{(L(t)-\pi(t))\log t}{t^{3/2}}\,dt
-=1+\frac{2\log\log X}{\log X}
-+O\!\left(\frac1{\log X}\right)\longrightarrow1.
+r(t)=\operatorname{li}(t)-\pi(t),\qquad
+h(t)=\frac{\log t}{t^{3/2}}.
 \]
+For \(n\le t<n+1\), \(\pi(t)=\pi(n)\), so
+\[
+|r(t)-r(n)|\ll\frac1{\log n}.
+\]
+Also \(|r(n)|=O(n)\), and the mean-value theorem gives
+\[
+|h(t)-h(n)|\ll\frac{\log n}{n^{5/2}}.
+\]
+It follows that
+\[
+\left|r(n)h(n)-\int_n^{n+1}r(t)h(t)\,dt\right|
+\ll\frac{\log n}{n^{3/2}}.
+\]
+This bound is summable. The final incomplete cell is bounded as well. Therefore the unrounded sum through \(N\) differs from the integral through \(N\) by \(O(1)\).
+
+Rounding \(\operatorname{li}(n)\) to the nearest integer changes the sum by at most
+\[
+\frac12\sum_{n\ge2}\frac{\log n}{n^{3/2}}<\infty.
+\]
+This proves (1), hence the exact original conjecture (B).
+
+The frequently used continuous formulation with lower endpoint \(1\) has the same limit. The logarithmic singularity of \(\operatorname{li}\) at \(1\) is integrable after multiplication by \(\log t\). Changing a logarithmic-integral convention by a bounded amount changes the weighted integral by \(O(1)\).
+
+Brent's equation (1.14), on printed page 45, gives
+\(s_1(x)=s_2(x)+1+O(1/\log x)\).
+Weighted summation shows that his equivalent equation (1.21) follows too:
+\[
+\frac1{\log N}\sum_{n=2}^N\frac{s_2(n)}n\longrightarrow0.
+\]
+This equivalence is part of the same historical conjecture, not an additional count.
 
 ## 5. Robin's modulus-four statement, with its actual weight
 
@@ -280,15 +316,15 @@ This proves the full statement (B4).
 
 The following sources and retrieved text were checked on 20 November 2026. Source-reading limits are stated explicitly.
 
-1. **Brent (1975), original paper.** Equation (7.3) on printed page 51 states the logarithmic conjecture. Equation (7.1) is the different ordinary-mean assertion associated with Shanks. The integer-part convention was checked on the author's page. The PDF's formula image has not yet been directly inspected; its equation number and normalized statement are corroborated by the bibliography. The [updated author page](https://maths-people.anu.edu.au/~brent/pub/pub024.html) also records RH-conditional logarithmic-mean information and later references.
+1. **Brent (1975), original paper.** Actual local rasters of printed pages 43–48 were inspected. Equation (1.22) on page 48 is the discrete \(s_1\) logarithmic mean; equation (1.21) on page 47 is its equivalent \(s_2\) form. The nearest-integer convention is on page 43 and the normalization of \(s_i\) is on page 44. Shanks's different ordinary-mean assertion is equation (1.19) on page 46. The [updated author page](https://maths-people.anu.edu.au/~brent/pub/pub024.html) supplies further RH-conditional mean information and references.
 
-2. **Robin (1986–1987), original paper.** The extracted original text identifies display (B) and its conditional equivalence; the modulus-four formula used above is also explicitly recorded in the bibliography. A direct raster check of this display remains pending. The theorem on printed page 163 assumes no real zeros on \((0,1)\); its part (d) gives the logarithmic asymptotic when the relevant zero supremum is \(1/2\). Remark 1 on printed page 164 explicitly identifies the Brent case. This conditional theorem predates the present work and receives full credit.
+2. **Robin (1986–1987), original paper.** Actual local rasters of printed pages 160, 161, 163, and 164 were inspected. The abstract and display (B) give exactly the modulus-four sum above. The theorem assumes no real zeros on \((0,1)\); part (d) gives the logarithmic asymptotic when the relevant zero supremum is \(1/2\). Remark 1 explicitly identifies the Brent case. This conditional theorem predates the present work and receives full credit.
 
 3. **Martin et al., comparative-prime-number bibliography.** The [author preprint](https://arxiv.org/pdf/2309.08729v3) and the 2025 published bibliography separately describe Brent's original logarithmic conjecture and Robin's conditional modulus-four result. This is a cross-check on scope and subsequent literature, not a substitute for the original statements.
 
 4. **Brent–Platt–Trudgian (2020).** [The mean square of the error term in the prime number theorem](https://maths-people.anu.edu.au/~brent/pd/rpb274-arXiv-v1.pdf) studies a different second-moment quantity and proves nonexistence of an ordinary-scale limit. It is not an earlier unconditional proof of either statement above. Its mean-square refinements are not counted as additional targets.
 
-5. **Current indexed searches.** Both search engines were used for Brent's conjecture together with Robin, logarithmic mean/average, equation (7.3), prime distribution, proof, and recent resolution. The source archive's existing applications were also screened. No earlier unconditional resolution of these exact statements was found in the retrieved sources. This bounded audit does not prove exclusive priority.
+5. **Current indexed searches.** Both search engines were used for Brent's conjecture together with Robin, logarithmic mean/average, equations (1.21)–(1.22), prime distribution, proof, and recent resolution. The source archive's existing applications were also screened. No earlier unconditional resolution of these exact statements was found in the retrieved sources. This bounded audit does not prove exclusive priority.
 
 Shanks's conjecture was already disproved and is excluded. The numerical size of a prime-counting verification is irrelevant here. The full asymptotic statements, not a bounded range, have been deduced.
 
@@ -296,4 +332,15 @@ This note's result category is **inherited RH/Dirichlet-GRH application with a c
 
 ## Review status
 
-The proof is committed for independent review. The main checks are the integrated-zero-series convergence, the prime-square signs, the \(2\log\log X\) term, the real nonvanishing of \(\beta\), and the signed denominator transition in (12)–(13). No Lean verification is used.
+The complete mathematical proof received independent internal review, including the integrated-zero-series convergence, prime-square signs, the \(2\log\log X\) term, real nonvanishing of \(\beta\), and the signed denominator transition. [First proof review](https://github.com/1337isnot1337/solved-conjectures/issues/127#issuecomment-7049933035).
+
+A subsequent review directly inspected the downloaded Brent rasters and checked the added sum–integral bridge. [Exact-source and bridge review](https://github.com/1337isnot1337/solved-conjectures/issues/127#issuecomment-7049994370).
+
+**Source correction.** The first draft wrongly cited equation (7.3) on page 51 and overstated visual inspection. The web screenshot response had contained a text placeholder, not image data. That claim was withdrawn before the actual PDFs were downloaded. The direct raster check established equations (1.21)–(1.22), pages 47–48, and the nearest-integer convention. The proof was completed for the original discrete statement by the bounded-error argument in Section 4.
+
+The downloaded original PDFs have SHA-256 hashes:
+
+- Brent: `65b85b241013a63a40a51515dacf671c2c79939d518ef13e37cd817d728061f1`.
+- Robin: `c9338e2049a7d477594d564c2a7b4238f9145c84b73884edf85a1fba5c0d1b42`.
+
+No copyrighted source PDF is committed. This is internal mathematical review, not external peer review or Lean verification.
