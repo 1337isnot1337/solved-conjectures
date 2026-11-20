@@ -8,7 +8,7 @@ The accepted source remains the RH archive at commit [9d5316ec73f5df89c4d95703ed
 
 ## 1. Which size bound is needed
 
-Write W_eta(E,t) for the sum, over coefficient primes and integers 1 <= j < t, of the normalized logarithmic sizes of the strictly unramified Selmer groups with coefficients eta times the negative Tate twist -j. The local condition at primes over the coefficient prime is splitting. The precise normalization and restriction map are fixed in [moving-selmer-windows.md](moving-selmer-windows.md).
+Write W_eta(E,t) for the sum, over coefficient primes and integers 1 <= j < t, of the normalized logarithmic sizes of the strictly unramified Selmer groups with coefficients (C_ell/O_ell)(eta^(-1) epsilon_ell^(-j)). Thus the finite character is inverted, matching moving-selmer-windows.md exactly. Replacing eta by its inverse changes none of the conductor, kernel-field, or absolute-value estimates below. The local condition at primes over the coefficient prime is splitting. The precise normalization and restriction map are fixed in [moving-selmer-windows.md](moving-selmer-windows.md).
 
 If eta has order m and L/E is its cyclic kernel extension, that note proves
 
@@ -201,7 +201,7 @@ with fixed constants C_0,B_0, and that the character order m is fixed or polynom
 \tag{12}
 ~~~
 
-This is stronger than the arithmetic bound on the selected windows. It does not establish the separate analytic host-selection and comparison inputs described in hecke-bootstrap.md.
+The exponent placements are distinct: (12) is exp(x^(epsilon/2)), whereas the source budget is exp(x^epsilon / 2). For each fixed positive epsilon, (12) is eventually the smaller quantity. Thus (11) supplies a stronger arithmetic bound than the source requires. It does not establish the separate analytic host-selection and comparison inputs described in hecke-bootstrap.md.
 
 The conclusion is conditional on both (9) and (10). Neither is inserted into the accepted RH archive merely because a paper has “main conjecture” or “Tamagawa number” in its title.
 
@@ -211,7 +211,7 @@ This reduction is not a new general special-value principle. Soulé explicitly p
 
 The point specific to the present transfer is the required quantifier order: the degree grows with x, so unquantified constants depending on each field degree are insufficient. Estimate (10), or a weaker estimate that still makes (11) at most (12), must hold uniformly across the moving family.
 
-The coordinating worker independently checked (5) and the elementary cyclotomic-image proof of (7). This review does not assert (9) or (10).
+The coordinating worker independently checked (2), (5), the elementary cyclotomic-image proof of (7), and the conditional polynomial-to-window deduction (9)–(12). No gap was found in those deductions. This review does not assert either hypothesis (9) or (10).
 
 ## 6. Exact scope of the main-conjecture and ETNC results
 
