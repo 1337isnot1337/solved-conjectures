@@ -37,7 +37,7 @@ More generally, let c_* be the unique positive solution of exp(c_*/2)=1+c_* (c_*
 \tag{3}
 ~~~
 
-In all three cases, the permanent inequality is strict for A different from J_n when its distance is at most the stated lower bound.
+For the explicit bounds (1) and (2), the permanent inequality is strict away from J_n. The asymptotic conclusion (3) means every fixed constant smaller than sqrt(c_*) works for all sufficiently large n; it does not assert the endpoint sqrt(c_*) works at each finite n.
 
 This improves the previously recorded generic nonnegativity-ball radius 1/(n-1) in order (1) for n>=6, and changes the asymptotic rate of the displayed lower bound from O(1/n) to Omega(1/sqrt(n)). These bounds are **not asserted to be optimal**. A search of the current catalog and selected literature did not locate this deduction, but that does **not** establish novelty.
 
@@ -126,7 +126,7 @@ T_n(r)\le1+nr^2.
 \tag{11}
 ~~~
 
-If the inequality in (11) is strict, (10) makes per(J_n+X)>d_n for X nonzero.
+If the inequality in (11) is strict, (10) makes per(J_n+X)>d_n for X nonzero. Because (T_n(t)-1)/t^2 is nondecreasing, checking (11) at one proposed radius R suffices for **every** X with 0<||X||_F<=R: write r=||X||_F and note (T_n(r)-1)/r^2 <= (T_n(R)-1)/R^2 < n.
 
 This reduction is valid for **every** zero-margin real X of a given Frobenius norm. There is no entrywise nonnegativity assumption or finite-dimensional search.
 
@@ -164,20 +164,20 @@ If r<1 and
 
 then (12) implies (11) strictly.
 
-For n>=4, set r=1/(2sqrt(n)). Then r<=1/4, nr^2=1/4, and
+For n>=4, choose R=1/(2sqrt(n)). Then R<=1/4, nR^2=1/4, and
 
 ~~~math
-\frac{nr^2}{2(1-r)^2}\le\frac{2}{9}
-<\log(5/4)=\log(1+nr^2).
+\frac{nR^2}{2(1-R)^2}\le\frac{2}{9}
+<\log(5/4)=\log(1+nR^2).
 ~~~
 
 The strict elementary comparison follows from log x > 2(x-1)/(x+1) for x>1, with x=5/4. This proves (1).
 
-For n>=64, set r=1/sqrt(n). Then r<=1/8, nr^2=1, and
+For n>=64, choose R=1/sqrt(n). Then R<=1/8, nR^2=1, and
 
 ~~~math
 \frac{nr^2}{2(1-r)^2}\le\frac{32}{49}
-<\frac23<\log2=\log(1+nr^2).
+<\frac23<\log2=\log(1+nR^2).
 ~~~
 
 Again the logarithmic comparison follows from log x > 2(x-1)/(x+1), now with x=2. This proves (2).
