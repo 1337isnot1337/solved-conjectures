@@ -137,6 +137,143 @@ Even an abstract periodic family with length one at one prime and one residue cl
 
 Searches used both engines and exact names, K-theory formulations, polynomial-bound terminology, later citations, and 2026 updates. No full resolution of Kummer–Vandiver was found. A search cannot establish a universal negative about unpublished work.
 
-## Current next obligation
+## Derived K-theory consequence
 
-Translate *Bound* to the complete group $K_{4n}(\mathbb Z)$, including the local condition at $2$ and the excluded primes $\ell-1\mid2e$. This may give a useful polynomial bound for its logarithmic order, but even such a bound will remain a partial result toward the named conjecture. The residual congruence obstruction above still has to be eliminated to solve it.
+The following is a mathematical consequence of the archive's *Bound*, rather than a consequence of the final RH statement alone. It is recorded here for independent review and is not counted as a solution of Kummer–Vandiver.
+
+**Proposition.** Assuming the source bound stated above, there are absolute constants $C,A$ such that, for every $n\ge1$,
+
+~~~math
+\log\left|K_{4n}(\mathbb Z)\right|\le C(2n+1)^A.
+~~~
+
+The finite group in this statement includes all primes. The argument below removes the exceptional-prime restriction from the source rather than silently omitting it.
+
+### 1. Matching the source Selmer group
+
+Fix an odd prime $\ell$ and a positive even integer $e$. Set
+
+~~~math
+M=\mathbb Q_\ell/\mathbb Z_\ell(-e),\qquad
+T=\mathbb Z_\ell(e+1),\qquad
+S=\{\ell,\infty\}.
+~~~
+
+Use coefficients $\mathcal O=\mathbb Z_\ell$ in *Bound*. The coefficient ramification index is one. The source *len* is the length of classes in $H^1(\mathbb Q,M)$ that are unramified at every finite prime and split at $\ell$ and $2$.
+
+For a finite prime $q\ne\ell$, $M$ is unramified. Its unramified local first cohomology is
+
+~~~math
+H^1_{\rm unr}(\mathbb Q_q,M)
+ =M/(\operatorname{Frob}_q-1)M=0.
+~~~
+
+Indeed, Frobenius acts by $q^{-e}$, up to the reciprocal convention. Its difference from one is a nonzero scalar in $\mathbb Z_\ell$, and every nonzero scalar acts surjectively on the divisible group $\mathbb Q_\ell/\mathbb Z_\ell$. Consequently the extra splitting condition at $2$ is automatic.
+
+Inflation therefore identifies the source group with
+
+~~~math
+\Sha^1_S(M)
+ =\ker\!\left(
+ H^1(G_{\mathbb Q,S},M)
+ \longrightarrow H^1(\mathbb Q_\ell,M)
+ \right).
+~~~
+
+No odd-primary correction comes from the real place. An analogous transport is explicitly developed in the archive's GaloisLibrary/SelmerTransport/ShaLenEq.lean.
+
+### 2. The duality and K-degree
+
+Poitou–Tate duality pairs $\Sha^1_S(M)$ with
+
+~~~math
+\Sha^2_S(T)
+ =\ker\!\left(
+ H^2(G_{\mathbb Q,S},T)
+ \longrightarrow H^2(\mathbb Q_\ell,T)
+ \right).
+~~~
+
+The Tate twist is $e+1$, because the Cartier dual of $M$ is $T$. If $\ell-1\nmid e$, then $H^0(\mathbb Q_\ell,M)=0$: choose a cyclotomic-character value whose $e$th power is not one modulo $\ell$, so its difference from one acts invertibly. Local Tate duality gives $H^2(\mathbb Q_\ell,T)=0$. Hence
+
+~~~math
+\operatorname{length}_{\mathbb Z_\ell}\Sha^1_S(M)
+ =\operatorname{length}_{\mathbb Z_\ell}
+ H^2(\mathbb Z[1/\ell],\mathbb Z_\ell(e+1)).
+~~~
+
+The Quillen–Lichtenbaum comparison identifies the last group with the $\ell$-primary part of $K_{2e}(\mathbb Z)$. A precise published formulation is Weibel's Theorem 70 and Corollary 71. Thus $e=2n$ gives $K_{4n}$, not $K_{4n+2}$.
+
+Here only the local group at $\ell$ and the real place are needed. It would be false to assert that all finite local second cohomology groups vanish: at $q\ne\ell$, the condition $\ell\mid q^e-1$ can give local invariants.
+
+For all primes allowed in *Bound*, $\ell-1\nmid2e$ implies $\ell-1\nmid e$, so this comparison applies.
+
+### 3. Removing the excluded odd primes
+
+The standard mod-$\ell$ comparison gives
+
+~~~math
+K_{2e}(\mathbb Z)/\ell
+ \cong
+ \left(A_\ell/\ell A_\ell\right)^{\omega^{-e}}.
+~~~
+
+One can obtain it from Corollary 71 of Weibel, the Kummer exact sequence over $\mathbb Z[\zeta_\ell,1/\ell]$, and descent through the group of order $\ell-1$. There is a unique prime above $\ell$, and it is principal; the relevant Brauer group is zero. This removes class-group-localization and Brauer corrections. Kurihara's Lemma 1.2 and the discussion following Corollary 1.3 give the same relationship.
+
+Now suppose $\ell-1\mid2e$. The character $\omega^{-e}$ is either trivial or quadratic.
+
+For the trivial character, extension and norm identify the invariant $\ell$-primary class group with that of $\mathbb Q$, which is zero.
+
+For the quadratic character, positivity of its parity follows from evenness of $e$, so $\ell\equiv1\pmod4$. Its fixed field is $F=\mathbb Q(\sqrt\ell)$. Put $H=\operatorname{Gal}(\mathbb Q(\zeta_\ell)/F)$. Its order $(\ell-1)/2$ is prime to $\ell$. If $j$ is extension of ideal classes and $N$ the norm, then for any $H$-invariant $\ell$-primary class $x$,
+
+~~~math
+jN(x)=\sum_{\sigma\in H}\sigma x=|H|x.
+~~~
+
+Multiplication by $|H|$ is invertible on an $\ell$-primary group. Therefore every such invariant class comes from the $\ell$-primary class group of $F$.
+
+That group is zero. To see this without a numerical class-number table, Minkowski's theorem gives an integral ideal of norm at most $B=\sqrt\ell/2$ in each class of $F$. In a quadratic field the number of ideals of norm $m$ is at most the divisor count $d(m)$: at a split prime the local count is $a+1$ for exponent $a$, and at inert or ramified primes it is no larger. Hence, writing $b=\lfloor B\rfloor$,
+
+~~~math
+h_F
+ \le\sum_{m=1}^{b}d(m)
+ \le\sum_{m=1}^{b}m
+ =\frac{b(b+1)}2
+ \le\frac{\ell}{8}+\frac{\sqrt\ell}{4}
+ <\ell.
+~~~
+
+The last inequality holds for every $\ell\ge5$. Thus $\ell\nmid h_F$. For $\ell=3$, only the trivial character occurs because $e$ is even.
+
+In either case, $K_{2e}(\mathbb Z)/\ell=0$. Since $K_{2e}(\mathbb Z)$ is finite, its entire $\ell$-primary part is zero. This handles every odd prime excluded by *Bound*, including $3$.
+
+### 4. Summing the lengths
+
+The established two-primary computation gives $K_{4n}(\mathbb Z)\{2\}=0$; see Weibel §5.8, or Rognes–Weibel. The group $K_{4n}(\mathbb Z)$ is finite. Choose in *Bound* the finite set of all remaining prime divisors of its order and take $e=2n$. The preceding comparisons give
+
+~~~math
+\log|K_{4n}(\mathbb Z)|
+ =\sum_{\substack{\ell\ge5\\ \ell-1\nmid4n}}
+  \log\ell\,
+  \operatorname{length}_{\mathbb Z_\ell}
+      K_{4n}(\mathbb Z)\{\ell\}
+ \le C(2n+1)^A.
+~~~
+
+This proves the proposition from the stated source bound and the cited standard comparison theorems.
+
+### 5. Consequence and remaining obstruction
+
+The proposition bounds every possible torsion prime by $\exp(C(2n+1)^A)$ and the total logarithmic torsion by a fixed-degree polynomial. It does not show the finite group is trivial. In the class-group formulation, it yields a near-$\ell$ even-eigenspace vanishing range with positive Tate weights up to a power of $\log\ell$.
+
+The source's *large_of* already contains the principal vanishing mechanism. The additional work here is the complete K-theory translation, including the primes omitted by *Bound*. This is a derived consequence of Alpöge's arithmetic input, not an independent proof of a named open conjecture.
+
+The earlier Soulé–Gabber bound is qualitatively weaker in its dependence on the K-degree. The comparison is not a complete priority determination: the announcement and its accompanying archive already contain the arithmetic estimate. No original-priority claim is made for the displayed K-theory consequence.
+
+## Review and current next obligation
+
+A second research worker checked the duality signs, the quadratic exceptional-prime argument, and the local-$2$ step, and highlighted the need to use global ramification set $S=\{\ell,\infty\}$. The proof above addresses those points using explicit source definitions and published comparison statements. It has not undergone external peer review.
+
+To solve Kummer–Vandiver, the remaining step is to eliminate nonzero residual congruence classes in the region left by this bound. Coefficient extension, residual periodicity, and the trace-only Frobenius argument above do not do so. The next useful input would be an extension-sensitive obstruction to the rank-three automorphic points constructed from a nonzero class, or an auxiliary-prime congruence theorem forcing the relevant congruence-ideal support to be empty.
+
+Additional duality reference: [Milne, Arithmetic Duality Theorems, second edition](https://www.jmilne.org/math/Books/ADTnot.pdf), Chapter I, local and global duality. This is used as an established theorem, not as an open conjecture to claim.
