@@ -1,6 +1,6 @@
 # Pomerance's conjecture
 
-Research date: 20 November 2026. Coordination: [issue #80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
+Research date: 20 November 2026. [Issue #129](https://github.com/1337isnot1337/solved-conjectures/issues/129). Coordination: [issue #80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
 
 ## Exact statement and conclusion
 
@@ -147,7 +147,7 @@ v_\ell(P-1)\le
 \]
 The Ford–Luca theorem provides a prime with a controlled Pratt tree, but does not require that prime to be smaller than an arbitrary given \(P\). The proof in §2 avoids that ordering requirement.
 
-The title of this note therefore names the author, while §0 identifies the exact original conjecture being proved. The ordered product assertion is not included in the claimed resolution. The \(P\)-integer conjecture about reduced residue systems, also associated with Pomerance, is another distinct problem.
+The title of this note therefore names the author, while the opening paragraph identifies the exact original conjecture being proved. The ordered product assertion is not included in the claimed resolution. The \(P\)-integer conjecture about reduced residue systems, also associated with Pomerance, is another distinct problem.
 
 ## 5. Prior-art audit
 
