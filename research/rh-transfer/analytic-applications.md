@@ -8,7 +8,11 @@ The full Lindelöf hypothesis follows by a classical implication; a conductor-un
 
 The exact Simm–Wei derivative-moment statement needs more care. [Najnudel–Wei, 16 November 2026, Theorems 1.2 and 1.3](https://arxiv.org/html/2611.21551v1) give the full normalized complex moment limit under Lindelöf. The original [Simm–Wei Conjecture 1, equation (1.26)](https://arxiv.org/html/2409.03687v2) uses a ratio asymptotic. Its leading coefficient can vanish at complex parameters, so those two formulations must not be identified without qualification. The full derivation and the coefficient-zero argument are in [simm-wei.md](simm-wei.md). A notation defect is not being advertised as a new conjecture disproof.
 
-The original Abel-summed Chebyshev prime-bias conjecture is being checked separately. Neither the unweighted prime race nor linear independence of zero ordinates follows from accepting Dirichlet GRH.
+The original Abel-summed Chebyshev prime-bias conjecture is completely transferred by the classical beta-GRH equivalence in [chebyshev.md](chebyshev.md). The original Knapowski–Turán natural-density conjecture has the full inherited conditional refutation in [knapowski-turan.md](knapowski-turan.md). Neither result assumes linear independence of zero ordinates.
+
+The full smooth-number equidistribution conjecture of Soundararajan follows from Banks–Shparlinski's published criterion, as proved in [soundararajan.md](soundararajan.md). That implication already appears in their paper and is credited to them. [Grosswald's conjecture](grosswald.md) likewise follows from an existing full conditional theorem. The targeted [dependency review](grosswald-dependency-review.md) excludes a suspected connection to the defective 2015 zero-counting argument.
+
+The complete Fujii-weight oscillation argument is in [fujii.md](fujii.md). Its exact-application priority is unclaimed; [fujii-prior-art.md](fujii-prior-art.md) establishes that its general boundary/smoothing/recurrence mechanism is classical. The shorter [zero-count proof](fujii-zero-count.md) supplies an explicit positive phase.
 
 ## Targets excluded by prior art
 
@@ -23,7 +27,10 @@ These exclusions prevent old or already claimed work from being counted as fresh
 | Montgomery–Vaughan character-sum bound | The bound of order square-root q times log-log q is a classical GRH consequence. October 2026 quasi-GRH implications and [Bhattacharjee–Bhattacharya, hexagon 2610.00256](https://hexagonmath.org/2610.00256v3) make additional prior claims. | Do not count a fresh application of the old theorem as an original solution. |
 | Ankeny–Artin–Chowla conjecture | [Reinhart, arXiv:2410.21864](https://arxiv.org/abs/2410.21864), revised 2025, gives a counterexample; the author's publication list records Algebra & Number Theory acceptance. | Already disproved; exclude. |
 | Vinogradov's least nonresidue and least primitive-root conjectures | Old GRH implications already exist. The October 2026 quasi-RH manuscripts explicitly discuss the least-nonresidue consequence. See [the detailed source audit](dirichlet-applications.md). | No new implication or priority claim. |
+| Hooley's prime-variance conjecture | [Fiorilli–Martin, Disproving Hooley's conjecture, JEMS 25 (2023), 4791–4812](https://ems.press/content/serial-article-files/32980), Theorem 1.1 and the preceding discussion, explicitly gives an unconditional disproof. | Already disproved. The appearances of GRH elsewhere in that paper do not make its main disproof conditional; exclude. |
 | Artin infinitude and positive lower density | October–November 2026 primary claims by OpenAI, Bhargava, and Vojdanovski are documented in [artin-density.md](artin-density.md). | Exact Artin density remains a separate research target; do not relabel infinitude as exact density. |
+
+The dedicated [original-QRH prior-art inventory](qrh-prior-art.md) reads the actual manuscript sources and records the earlier explicit consequences. The [Vinogradov note](vinogradov.md) also checks the dated public primitive-root application. These records prevent the same prior application from being rediscovered under a different name.
 
 The searches checked exact names, original papers, later papers, and recent status claims with both search engines. Search results were followed to primary records where possible. No claim of exhaustive coverage is made.
 
