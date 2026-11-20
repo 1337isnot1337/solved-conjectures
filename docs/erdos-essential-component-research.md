@@ -137,3 +137,19 @@ The Fourier lower bound from Parseval at density $\beta=|X|/q$ is $q\gamma_q\bet
 (h+3)E+D\ge \frac12q\gamma_q\alpha(1-\alpha).
 ```
 Now $D=o(q\gamma_q)$ by the short-sum lower bound, so the result follows with an absolute constant. The gain on the right still tends to zero. A positive gain uniform in $N$ for each $\alpha$ is the issue in the original conjecture.
+
+## Projecting a small boundary to smaller moduli
+
+Let $1\le r\lt k$, $q=2^k$, $q'=2^{k-r}$ and $S'$ be the projection of $S_q$ to $\mathbb Z/q'\mathbb Z$. If $g_k\le\gamma_{2^r}/16$, then there is a set $X'$ of size $q'/2$ satisfying
+```math
+\frac{|X'+S'|-|X'|}{q'}\le C g_k
+```
+with an absolute constant $C$. In particular $g_{k-r}\le Cg_k$, since $S'\supseteq S_{q'}$. The projected set of shifts retains residues of all the smooth numbers up to $2^k$.
+
+Take a minimizing half-density set $X$ modulo $q$ and put $\delta=g_k$. Write $p_c$ for the fraction of a coset $c$ modulo $q'$ occupied by $X$. The shifts in $q'S_{2^r}$ belong to $S_q$ and preserve each coset. Applying the Fourier lower bound inside each coset and averaging yields
+```math
+\frac1{q'}\sum_c p_c(1-p_c)\le\frac{\delta}{\gamma_{2^r}}.
+```
+For a coset $c$, the occupied fraction contributed by $X+S_q$ is at least $M_c=\max_{s\in S'}p_{c-s}$. Indeed every translation carrying $c-s$ to $c$ carries all the points of $X$ in that coset. Consequently $q'^{-1}\sum_c(M_c-p_c)\le\delta$. With $X_t=\{c:p_c\ge t\}$, integrating $|(X_t+S')\setminus X_t|/q'$ over $0\le t\le1$ gives exactly $q'^{-1}\sum_c(M_c-p_c)$. Some $t$ in $[1/4,3/4]$ therefore has normalized expansion at most $2\delta$.
+
+For every such $t$ we have $|1_{\{p_c\ge t\}}-p_c|\le4p_c(1-p_c)$, so $|X_t|/q'$ differs from $1/2$ by at most $4\delta/\gamma_{2^r}\le1/4$. Apply the density adjustment with a fixed $l$ for this interval of densities. Since $1\in S'$, it yields $X'$ of exactly half density with the claimed bound. By the short-sum estimate on $\gamma_{2^r}$, whenever $g_k$ is small this propagation applies for all $r\lt k$ up to a constant times $g_k^{-1}(\log(1/g_k))^{3/2}$.
