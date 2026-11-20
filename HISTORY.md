@@ -1,5 +1,22 @@
 # History
 
+## 2026-11-20 — Karp's coefficient-positivity conjecture
+
+Added a complete proof of Conjecture 1 for all degrees, arbitrary positive
+real shifts, and every nonnegative strictly log-concave input sequence.
+A marked-cycle cancellation expresses the relevant coefficient differences
+as nonnegative unsigned-Stirling minors. A derivative quotient and integral
+then prove positivity, with an explicit strictly positive coefficient bound.
+
+Separate internal reviews checked the cancellation and the full written
+argument. The standard-library verifier passed locally: 46,230 literal
+colored permutations, 280 coefficient comparisons, 2,528 exact marked-cycle
+identities, and 120 original polynomials at rational shifts. The source audit
+separates this statement from previously resolved neighboring conjectures
+and records the limits of the literature search. No external peer review
+or author confirmation is claimed.
+[Proof, source audit, and checks](results/karp-coefficient-positivity/).
+
 ## 2026-11-20 — Bernardi–Morales's delta-process conjecture
 
 Added complete written proofs of the delta-process tree-probability identity

@@ -20,6 +20,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Horňák–Woźniak conjecture](results/hornak-wozniak/) | ⬜ |
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
+| [Karp's coefficient-positivity conjecture](results/karp-coefficient-positivity/) | Exact checks |
 | [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | Exact checks |
 | [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | Exact checks |
 | [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ |
@@ -49,6 +50,7 @@ Entries are ranked approximately by relative mathematical significance, weighing
 
 **Verification key**
 
+- Exact checks: a written proof with reproducible exact diagnostics; no formal verification or external peer review is implied.
 - ✅ Fully Lean-verified.
 - 🟢 Partially Lean-verified, with a computer-assisted proof.
 - 🟡 Partially Lean-verified.

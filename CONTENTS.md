@@ -20,6 +20,7 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 
 | Result | Finding | Lean | Evidence |
 | :--- | :--- | :---: | :--- |
+| [Karp's coefficient-positivity conjecture](results/karp-coefficient-positivity/) | Conjecture 1 is proved for every degree, all positive real shifts, and every admissible strictly log-concave input. The proof gives an explicit positive lower bound for each coefficient. | No | [Proof](results/karp-coefficient-positivity/PROOF.md) · [Checks](results/karp-coefficient-positivity/verify.py) · [Literature check](results/karp-coefficient-positivity/NOVELTY.md) |
 | [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | Published Conjectures 27–28 are proved for all admissible parameters. The tree count holds for every fixed color map, and the stronger event identity holds for every fixed surjection. | ☐ | [Tree proof](results/bernardi-morales-delta/PROOF.md) · [Event proof](results/bernardi-morales-delta/EVENT_PROOF.md) · [Checks](results/bernardi-morales-delta/) · [Literature check](results/bernardi-morales-delta/NOVELTY.md) |
 | [Gatzweiler–Krattenthaler conjecture](results/gatzweiler-krattenthaler/) | Conjecture 4 fails: a shifted product with $m=33$, $n=30$ is an integer polynomial of degree 165 whose $q^{50}$ coefficient is $-1$. Dilation gives an infinite family. | ☐ | [Proof](results/gatzweiler-krattenthaler/proof.md) · [Exact certificate](results/gatzweiler-krattenthaler/verify.py) · [Literature check](results/gatzweiler-krattenthaler/literature.md) |
 | [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | Conjecture 6.16 is proved for every row: the product-defined matrix's first column enumerates perfect matchings by crossings and nestings. Its additional parameter counts aligned pairs. | ☐ | [Proof](results/gilmore-crossing-nesting/PROOF.md) · [Checks](results/gilmore-crossing-nesting/verify.py) · [Literature check](results/gilmore-crossing-nesting/NOVELTY.md) |
@@ -79,6 +80,8 @@ See [docs/lean-status.md](docs/lean-status.md) for exact formalized statements a
 
 ## Precise scope
 
+The Karp result proves the complete general-shift coefficient-positivity Conjecture 1, including admissible zero endpoints. It does not impose the stronger Pólya-frequency hypothesis. The neighboring Hurwitz-stability conjecture has prior counterexamples, and the neighboring unit-shift real-zero conjecture has a separate prior proof claim; neither is counted here.
+
 The Bernardi–Morales result proves the complete delta-process tree-probability conjecture and its stronger event-determinant conjecture: published numbers 27–28, preprint numbers 21–22. The tree proof allows arbitrary fixed color maps, including nonsurjections; the event proof uses a fixed surjection, as in the source. Both statements are recorded under one named investigation. The two exact verifiers check finite instances independently of the general determinant arguments.
 
 The Gatzweiler–Krattenthaler counterexample resolves their unrestricted shifted-product Conjecture 4. It does not resolve their separate conjectures on Gaussian-binomial quotients or symmetric exponent choices, or Stanton's original all-shifts symmetric assertion.
@@ -97,6 +100,7 @@ These are mathematical claims with explicit proofs and computer checks, **not pe
 
 ## Primary sources
 
+- Dmitry Karp, [*Positivity of Toeplitz determinants formed by rising factorial series and properties of related polynomials*](https://doi.org/10.1007/s10958-013-1438-y), *Journal of Mathematical Sciences* 193(1) (2013), 106–114; original POMI 404 (2012), 184–198, Conjecture 1; [arXiv:1203.1482v1](https://arxiv.org/abs/1203.1482v1).
 - Olivier Bernardi and Alejandro H. Morales, [*Some probabilistic trees with algebraic roots*](https://doi.org/10.37236/4954), *Electronic Journal of Combinatorics* 23(2) (2016), P2.36, Conjectures 27–28; [arXiv:1501.01135v1](https://arxiv.org/abs/1501.01135v1), Conjectures 21–22.
 - Mona Gatzweiler and Christian Krattenthaler, [*A positivity conjecture for a quotient of q-binomial coefficients*](https://doi.org/10.1007/s11139-025-01285-2), *The Ramanujan Journal* 69 (2026), article 13, Conjecture 4; [arXiv:2502.06032](https://arxiv.org/abs/2502.06032).
 - Tomack Gilmore, [*Trees, forests, and total positivity: I. q-trees and q-forests matrices*](https://doi.org/10.37236/10465), *Electronic Journal of Combinatorics* 28(3) (2021), P3.54, Conjecture 6.16.
