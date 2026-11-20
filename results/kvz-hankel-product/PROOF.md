@@ -1,5 +1,7 @@
 # Karp–Vishnyakova–Zhang's Hankel-product conjecture
 
+Status: valid elementary counterexample, retained as exposition. This is not a newly resolved open conjecture: Simon's 2012 beta–gamma theorem already implies the full negation. The [prior-resolution correction](../../research/kvz-hankel-product/PRIOR-SIMON-CORRECTION.md) gives the explicit logarithmic coordinate change, signature transfer, and common translation into the positive quadrant.
+
 ## Statement and source
 
 Karp, Vishnyakova, and Zhang proposed that the pointwise product of two sign-regular Hankel kernels of every order on the positive quadrant is again sign regular of every order. A Hankel kernel has the form $`K(x,y)=F(x+y)`$. There is no hypothesis that the two factors have the same signature.
