@@ -43,7 +43,7 @@ For a partition with $a\le i$, each flooring term is either zero or one. Produci
 
 ## 2. Partitions without a smaller extra part
 
-Let the arm capacities be their full orders minus one, and let $n=1+\sum_l x_l$. Let $r(k)\in[1,k]$ represent $n$ modulo $k$. For a modulus $k$ let $\gamma_k$ be the quotient on dividing the sum of the arm residues modulo $k$ by $k$, so this sum equals $r(k)-1+\gamma_k k$. The first admissibility test gives $\gamma_i\le1$ for every index $i$ needed in Theorems 9 and 10. We also have $\gamma_j\le1$ in the same range. At the upper endpoint $j=a_{q-2}+a_{q-1}-1$, the two shorter regular arms contribute $j-1$, the possible one-vertex arm contributes one, and the longest arm contributes at most $j-1$.
+Let the arm capacities be their full orders minus one, and let $n=1+\sum_l x_l$. Let $r(k)\in[1,k]$ represent $n$ modulo $k$. For a modulus $k$ let $\gamma_k$ be the quotient on dividing the sum of the arm residues modulo $k$ by $k$, so this sum equals $r(k)-1+\gamma_k k$. The first admissibility test gives $\gamma_i\le1$ for every index $i$ needed in Theorems 9 and 10. We also have $\gamma_j\le1$ in the same range. At the upper endpoint $j=a_{q-2}+a_{q-1}-1$, the two shorter regular arms contribute $j-1$, the possible one-edge arm contributes one, and the longest arm contributes at most $j-1$.
 
 Suppose a partition into sizes $i,j$ with at least one size-$j$ part exists. Reserve one of the latter for the centre. Among these partitions the smallest possible $b$ is $r(i)-1$ and the corresponding budget is $K=1-\gamma_i\ge0$. All budgets are therefore nonnegative, so (1) reduces the problem to the partition with the largest $b$. At that endpoint
 
@@ -55,7 +55,7 @@ The nonnegative budget implies that $\sum_l q_l\ge a$. If $\gamma_j=0$, (2) perm
 
 ## 3. Three regular arms and one smaller extra part
 
-Here $i\ge2$ and we have three regular arm capacities $x_1,x_2,x_3$, each at least $j+1$. Write $n=1+\lambda+\sum_l x_l$, where $\lambda=0$ for a tripod and $\lambda=1$ when an extra one-vertex arm stays with the centre. Suppose there is a part of size $m$ with $1\le m\lt i$ in addition to the parts of sizes $i,j$. We will reserve size $j$ for the centre, including the one-vertex arm if present, and place size $m$ in a regular arm. Superscript primes will indicate the capacities, quotients, and residues after subtracting $m$ from that arm.
+Here $i\ge2$ and we have three regular arm capacities $x_1,x_2,x_3$, each at least $j+1$. Write $n=1+\lambda+\sum_l x_l$, where $\lambda=0$ for a tripod and $\lambda=1$ when an extra one-edge arm stays with the centre. Suppose there is a part of size $m$ with $1\le m\lt i$ in addition to the parts of sizes $i,j$. We will reserve size $j$ for the centre, including the one-edge arm if present, and place size $m$ in a regular arm. Superscript primes will indicate the capacities, quotients, and residues after subtracting $m$ from that arm.
 
 Set $U=\sum_l u_l$ and $V=\sum_l v_l$, with sums over the three regular arms. The admissibility tests on the residues at $i$ and $j$ give
 
@@ -63,7 +63,7 @@ Set $U=\sum_l u_l$ and $V=\sum_l v_l$, with sums over the three regular arms. Th
 U+\lambda-\max_l u_l<i,\qquad V+\lambda-\max_l v_l<j. \tag{3}
 ```
 
-Indeed, tests 1 and 2 at a modulus $k$ say that the sum of the arm residues other than a largest is less than $k$. For four arms and $k\ge2$, the residue of the one-vertex arm is 1. A largest residue can be taken among the three regular arms unless they are all zero, in which case the corresponding inequality in (3) holds directly. Both $i$ and $j$ lie within the admissibility test range when there is a smaller extra part in Theorems 9 and 10.
+Indeed, tests 1 and 2 at a modulus $k$ say that the sum of the arm residues other than a largest is less than $k$. For four arms and $k\ge2$, the residue of the one-edge arm is 1. A largest residue can be taken among the three regular arms unless they are all zero, in which case the corresponding inequality in (3) holds directly. Both $i$ and $j$ lie within the admissibility test range when there is a smaller extra part in Theorems 9 and 10.
 
 For each regular arm set $w_l=h_l+v_l$ and $d_l=q_l-h_l$. Then
 
@@ -83,7 +83,7 @@ Define $r=V+\lambda-i$. When $r\gt0$, the partition without $m$ with the largest
 v_p\ge r,\qquad w_p\ge i . \tag{5}
 ```
 
-All size-$i$ and size-$j$ parts outside the centre of that partition belong to regular arms, so the existence of an optional one-vertex arm does not change (5).
+All size-$i$ and size-$j$ parts outside the centre of that partition belong to regular arms, so the existence of an optional one-edge arm does not change (5).
 
 ### The endpoint with the most size-$j$ parts
 
@@ -149,4 +149,4 @@ For the tripod, take $\lambda=0$ and $x_l=a_l-1$. Theorem 9 reduces AVD to the p
 
 For the four-arm tree, the shorter sequence $(a_2,a_3,a_4)$ is admissible, so its tree is AVD by Conjecture 1. Theorem 10 then reduces AVD of $S(2,a_2,a_3,a_4)$ to the same two kinds of partitions, now with $a_2$ in place of $a_1$ in the smaller-extra-part range and upper bound $a_2+a_3-2$ for Section 2. For Section 3 take $\lambda=1$ and capacities $a_2-1,a_3-1,a_4-1$. All regular arms have capacity at least $j+1$ in the range in question. This proves Conjecture 2. The proof applies throughout the original ranges and uses no lower bound on the middle arm.
 
-Theorem 12 gives necessity of tests 1, 2 and 5. In the four-arm case, the necessity of decomposability of the remaining tripod follows from Theorem 10. Together with the proof above, the three tests characterize AVD for tripods, and characterize AVD for four-arm trees with a one-vertex arm when also applied to the tripod obtained by removing that leaf.
+Theorem 12 gives necessity of tests 1, 2 and 5. In the four-arm case, the necessity of decomposability of the remaining tripod follows from Theorem 10. Together with the proof above, the three tests characterize AVD for tripods, and characterize AVD for four-arm trees with a one-edge arm when also applied to the tripod obtained by removing that leaf.
