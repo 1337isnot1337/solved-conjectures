@@ -12,7 +12,7 @@ The accepted top-level result covers the Riemann zeta function and Dirichlet L-f
 
 ## Reviewed full named outcomes
 
-The following inventory contains twenty full historically stated conjectures with complete written deductions in this lane. Eight entries contain proof arguments or deductions developed in this campaign; twelve use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of twenty independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
+The following inventory contains twenty-one full historically stated conjectures with complete written deductions in this lane. Eight entries contain proof arguments or deductions developed in this campaign; thirteen use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of twenty-one independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
 
 Current prior-art searches have not located an earlier full resolution of the exact targets apart from the accepted input and the established conditional implications. The searches and retrieval limits are recorded individually. Mathematical completeness, historical priority, and external acceptance are different questions.
 
@@ -32,6 +32,7 @@ Current prior-art searches have not located an earlier full resolution of the ex
 | Keiper's conjecture | The normalized coefficients have the full asymptotic, including the constant term, with a square-summable remainder | Published Arias de Reyna RH theorem; [note](keiper.md), [issue #123](https://github.com/1337isnot1337/solved-conjectures/issues/123) |
 | Csordas–Dimitrov Laguerre conjecture | Every derivative Laguerre inequality holds at every real argument for the original theta-moment entire function | Classical RH-to-Laguerre–Pólya implication applied to the complete original Problem 3.5; [note](csordas-dimitrov.md), [issue #133](https://github.com/1337isnot1337/solved-conjectures/issues/133) |
 | Brent's conjecture | The original discrete logarithmic mean tends to one; Robin's separately stated modulus-four logarithmic mean also holds | Classical RH/Dirichlet-GRH consequences, with full signed-weight and sum–integral deductions; [note](brent.md), [issue #127](https://github.com/1337isnot1337/solved-conjectures/issues/127) |
+| Robin's conjecture | The strict divisor-sum inequality holds for every integer n>5040 | Published Robin RH theorem, with complete threshold and inherited finite dependencies retained; [note](robin.md), [issue #134](https://github.com/1337isnot1337/solved-conjectures/issues/134) |
 | Nicolas's conjecture | The strict Euler-totient inequality holds at every primorial, including the first | Published Nicolas RH theorem with exact endpoint and quantitative cross-check; [note](nicolas.md), [issue #131](https://github.com/1337isnot1337/solved-conjectures/issues/131) |
 | Soundararajan's conjecture | The original smooth-number equidistribution statement holds for every fixed A in its full asymptotic range | Published Banks–Shparlinski criterion under Dirichlet GRH; [note](soundararajan.md) |
 | Grosswald's conjecture | The full least-primitive-root inequality holds for every prime p>409 | Published McGown–Treviño–Trudgian Dirichlet-GRH theorem, with its finite dependencies imported; [note](grosswald.md) |
@@ -79,6 +80,14 @@ For the real entire function \(\varphi(z)=e^{-z^4}\), the relevant product is ex
 \qquad p(z)=\prod_{j=1}^{4}(z+\alpha_j).
 ~~~
 Every coefficient is nonnegative for every real \(x\). Yet \(\varphi(it)\varphi(-it)=e^{-2t^4}\) has a negative coefficient. Such a coefficient is impossible for a compact limit of real-rooted polynomials. The [full proof](csordas-vishnyakova.md) refutes the published implication unconditionally and includes three internal review receipts. Cardon's original genus-restricted theorem is unaffected.
+
+### Robin's conjecture
+
+The [note](robin.md) applies Robin's 1984 theorem to accepted zeta RH and obtains
+~~~math
+\sigma(n)<e^\gamma n\log\log n\qquad(n>5040).
+~~~
+The strict sign and exact threshold were checked in the original extracted theorem and two later primary papers. Robin's published theorem supplies its finite completion as well as the asymptotic argument. The current audit distinguishes restricted and finite results from the full statement and records withdrawn proof claims. This is a credited classical implication, with two independent source and scope reviews.
 
 ### Nicolas's conjecture
 
