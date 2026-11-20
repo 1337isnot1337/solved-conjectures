@@ -81,11 +81,11 @@ This is only a field and character construction. It does not itself change the r
 
 For a fixed number delta with 0<delta<1/2, consider the following input:
 
-> H_delta: For every cyclotomic field F containing the twelfth roots of unity and every nontrivial finite-order Hecke character eta of F, L_F(s,eta) has no zeros in Re(s)>1−delta.
+> H_delta: For every cyclotomic field F containing the twelfth roots of unity and every finite-order Hecke character eta of F, L_F(s,eta) has no zeros in Re(s)>1−delta. The trivial character is included, and its simple pole at s=1 is allowed.
 
 The following deduction needs only this formulation. It does not assume that the input has been established.
 
-The arithmetic worker has identified a separate source claiming such a theorem with delta=10^(-6): the introduction, Theorem 1.2, label thm:hecke-zero-free, in entry 029, *Primitive roots for every admissible integer base*, October 4, 2026, in the openai/math4eaee87 repository. The proof dependency and uniformity audit belongs to that worker. This is not a theorem extracted from the user-accepted riemann-hypothesis-solved archive, and this note does not silently add it to the accepted premises.
+The arithmetic worker has identified a separate source claiming such a theorem with delta=10^(-6): [the introduction, Theorem 1.2, label thm:hecke-zero-free, in entry 029, *Primitive roots for every admissible integer base*, October 4, 2026](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/01-introduction.tex). The source is pinned to openai/math commit 4eaee87548250b2682affda7d05d947c05554bae. The statement explicitly includes the trivial character. The arithmetic worker traced the Mellin deduction at the end of section 06-zero-free, but the full preceding theta estimate has not been audited. This is not a theorem extracted from the user-accepted riemann-hypothesis-solved archive, and this note does not silently add it to the accepted premises.
 
 ## 5. Conditional descent theorem
 
@@ -125,9 +125,25 @@ L_{\mathbb Q}\!\left(s,\operatorname{Ind}_{G_K}^{G_{\mathbb Q}}\nu\right)
 
 This is a whole character-family deduction conditional on H_delta. It is not a proof of dihedral GRH.
 
+## 5.1 General abelian base fields
+
+Because H_delta includes trivial characters, its formal consequence is broader than the odd-character case.
+
+Assume H_delta. Let K/Q be any finite abelian extension and let nu be any finite-order Hecke character of K. Then L_K(s,nu) has no zeros in Re(s)>1−delta, with the pole at s=1 allowed when nu is trivial.
+
+Choose a cyclotomic field F containing K and the twelfth roots of unity. It exists by Kronecker–Weber, and F/K is abelian. Apply H_delta to the finite norm pullback nu_F, whether or not that character is trivial. The factorization (5.2) remains valid.
+
+Every factor on the right has no poles except possibly a simple pole at s=1 for a trivial character. Therefore a zero of L_K(s,nu) at any other point of the stated half-plane would force a zero of the left side. There is no cancellation there.
+
+At s=1, a nontrivial finite-order Hecke character has a nonzero L-value. One standard proof uses the cyclic extension cut out by the character: the quotient of its Dedekind zeta function by zeta_K is the product of the nontrivial character L-functions. The quotient has a finite nonzero value at 1 by the simple-pole residue formulas; all its factors are holomorphic there, so each factor is nonzero. When nu is trivial, zeta_K has a pole rather than a zero.
+
+Thus the common strip descends to every finite-order Hecke L-function over an abelian base field. No preservation of character order is required for this broader zero-free conclusion. Sections 1–2 supply that additional preservation for the odd anti-cyclotomic family, including unramified class characters.
+
+By induction of Artin L-functions, the same conditional strip applies to finite-image representations induced from one-dimensional characters over such abelian base fields. This remains a fixed-width zero-free statement.
+
 ## 6. What this does and does not provide
 
-The order-preservation lemma removes a field-enlargement obstruction. The factorization descends a common zero-free half-plane from cyclotomic hosts to imaginary-quadratic odd-order class characters, provided the external Hecke theorem is available.
+The order-preservation lemma removes a field-enlargement obstruction for the odd anti-cyclotomic family. The factorization descends a common zero-free half-plane from cyclotomic hosts to finite-order Hecke characters over every abelian base field, provided the external H_delta input is available.
 
 The factorization preserves zeros at their original complex arguments. It provides no mechanism for moving a zero toward the line Re(s)=1. Consequently a fixed-width zero-free result does not become RH by this descent.
 
