@@ -1,5 +1,30 @@
 # History
 
+## 2026-11-20 — Three prior-resolution corrections
+
+Withdrew new-resolution claims for Karp's coefficient-positivity conjecture,
+the reciprocal q-gamma conjecture, and Simon's Le Roy conjecture.
+Full public archive proofs predate this campaign: Principia Math In Progress
+MathDB 323156 and 349140 are dated 11 September 2026; Knowledge Sense's
+reciprocal q-gamma preprint is dated 13 October 2026. Root read all three
+complete ordinary mathematical proofs and confirmed the exact target scope.
+
+The proofs and exact verifiers in this repository are preserved with corrected
+attribution. A different proof, a sharper coefficient bound, or an explicit
+parameter family does not make an already resolved named conjecture eligible.
+The initial literature searches missed these public archives. The campaign
+is rechecking the other records using global source-identifier searches and
+direct catalogue inspection, in addition to the existing primary-paper audits.
+
+[Karp correction](results/karp-coefficient-positivity/NOVELTY.md) ·
+[Reciprocal q-gamma correction](results/kvz-reciprocal-qgamma/NOVELTY.md) ·
+[Le Roy correction](results/simon-le-roy/NOVELTY.md).
+
+Also replaced an obsolete bold-math command in the two Chow proof copies
+with standard mathematical markup after it blocked the research-site build.
+The mathematical statement is unchanged.
+
+
 ## 2026-11-20 — Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture
 
 Added a complete proof of the full surviving unimodality assertion for all

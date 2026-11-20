@@ -1,5 +1,24 @@
 # Source and prior-resolution audit
 
+## Correction: the reciprocal conjecture was already resolved
+
+Correction date: 20 November 2026. The original novelty conclusion is withdrawn.
+
+[Knowledge Sense, *Strict sign regularity of the reciprocal Jackson q-gamma kernel*](https://github.com/KnowledgeSense/math/blob/b95a52a54597e8b01c1a28486f2a9b29a3a54c58/preprints/Strict-Sign-Regularity-of-the-Reciprocal-Jackson-q-Gamma-Kernel-October-13-2026/build/source/strict-sign-regularity-of-the-reciprocal-jackson-q-gamma-kernel.tex), is dated 13 October 2026. The full LaTeX source is present in revision `b95a52a54597e8b01c1a28486f2a9b29a3a54c58`, whose recorded commit date is 14 October 2026.
+
+The prior main theorem proves exactly the source's Section 3, item 8: for every q strictly between zero and one, every determinant order, and every pair of strictly increasing positive real grids, the reciprocal Jackson q-gamma determinant has strict sign (-1) to the power r(r-1)/2. The paper also proves an explicit positive lower bound and includes the zero endpoint for the appropriate discrete specialization.
+
+Root read the complete ordinary mathematical proof. The q-binomial theorem expresses the kernel through q-Pochhammer polynomials and powers. The coefficient matrix of the corresponding Newton polynomials is totally nonnegative by the cited Mainar–Peña–Rubio basis theorem; its application uses increasing nonnegative nodes. A finite Cauchy–Binet expansion and generalized Vandermonde signs give nonnegative signed summands. The consecutive-degree summand has an explicit positive bound independent of the truncation, so strictness survives the entrywise limit. Positive row and column factors recover the original kernel. No gap affecting the full statement was found.
+
+This is distinct from Salazar's positive q-gamma theorem and already resolves the reciprocal assertion. Our different two-Cauchy–Binet proof remains useful exposition, but this named target is excluded from new-resolution claims.
+
+Discovery: a global GitHub code search for the exact source identifier `2408.01755` found this preprint. The complete `KnowledgeSense/math` tree and its preprint catalogue were then checked. Earlier ordinary-web and author-page searches had missed the archive.
+
+## Historical audit below
+
+The original audit is retained as a record of the earlier search. Every statement below that no prior solution was found is superseded by this correction.
+
+
 Audit date: 20 November 2026. Target: **Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture**.
 
 ## Exact primary statement

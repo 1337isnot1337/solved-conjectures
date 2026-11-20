@@ -1,6 +1,6 @@
 # Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture
 
-Status: complete proof, with separate internal mathematical reviews.
+Status: previously resolved. [Knowledge Sense, 13 October 2026](https://github.com/KnowledgeSense/math/blob/b95a52a54597e8b01c1a28486f2a9b29a3a54c58/preprints/Strict-Sign-Regularity-of-the-Reciprocal-Jackson-q-Gamma-Kernel-October-13-2026/build/source/strict-sign-regularity-of-the-reciprocal-jackson-q-gamma-kernel.tex), already proves the exact reciprocal Jackson q-gamma conjecture for every order and every admissible grid. This independently developed proof is retained as exposition and is excluded from new-resolution claims. See [the corrected prior-work audit](NOVELTY.md).
 
 ## Statement and source
 

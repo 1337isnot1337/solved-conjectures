@@ -10,7 +10,7 @@ Let $\mathfrak D_n$ be the even-signed permutations of $1,\ldots,n$, and put
 
  D_n(x)=\sum_{\sigma\in\mathfrak D_n}x^{\operatorname{des}_D(\sigma)},\qquad
  \operatorname{des}_D(\sigma)
- ={\bf1}_{\sigma_1+\sigma_2<0}
+ =\mathbf{1}_{\sigma_1+\sigma_2<0}
   +\#\{1\le i<n:\sigma_i>\sigma_{i+1}\}.
 
 ```

@@ -1,5 +1,7 @@
 # Karp's coefficient-positivity conjecture
 
+Status: previously resolved. [Principia Math In Progress, MathDB 323156](https://github.com/PrincipiaMathOrg/math-solutions/blob/47371706c400c79d06e3fb62190fcf6f7a725c85/site-backup/mathdb-323156/mathdb-323156-solution.tex), dated 11 September 2026, already proves the exact full conjecture. This independently developed proof is retained as exposition and is excluded from new-resolution claims. See [the corrected prior-work audit](NOVELTY.md).
+
 This directory gives a proof of Conjecture 1 in D. Karp's *Positivity of Toeplitz determinants formed by rising factorial series and properties of related polynomials*. The theorem applies to every degree, every pair of positive shifts, and every nonnegative strictly log-concave input sequence in the conjecture. The proof also supplies an explicit positive lower bound for each coefficient.
 
 The source is [arXiv:1203.1482v1](https://arxiv.org/abs/1203.1482v1), Section 1, equation (3), Conjecture 1, page 2. The published versions are POMI 404 (2012), 184–198, and Journal of Mathematical Sciences 193(1) (2013), 106–114, DOI [10.1007/s10958-013-1438-y](https://doi.org/10.1007/s10958-013-1438-y). The [original published PDF](https://www.mathnet.ru/php/getFT.phtml?jrnid=znsl&option_lang=eng&paperid=5267&what=fullt) has the statement on printed page 185.
@@ -39,7 +41,7 @@ For each central tail, count permutations whose cycles are colored red or blue a
 
 That coefficient inequality gives a nonnegative polynomial after taking the difference of the two partial derivatives and dividing by the difference of the arguments. Integrating this polynomial along the line that transfers one positive shift between the two arguments proves nonnegativity of every tail coefficient. The first tail is an explicit mixed finite difference of $(x)_n$ and makes every required coefficient strictly positive.
 
-The Stirling-number positivity fact and the Vandermonde identity are classical; the proof includes both needed arguments. The claimed resolution is their marked-cycle application to the entire conjecture.
+The Stirling-number positivity fact and the Vandermonde identity are classical; the proof includes both needed arguments. The marked-cycle application gives an independent proof of the entire conjecture; it does not establish a new resolution.
 
 ## Files and checks
 
@@ -68,7 +70,7 @@ The first check enumerates permutations and their cycle colorings independently 
 
 The primary source attributes this conjecture to Karp alone. Karp–Sitnik proved the earlier pointwise-positivity theorem; pointwise positivity does not imply positivity of individual coefficients. A secondary database combines the names, so its attribution is not adopted here.
 
-The argument was developed by the repository's research agents and has separate internal mathematical reviews. No outside peer review or author confirmation is claimed. The literature search found no earlier resolution of this exact general-shift coefficient conjecture as of 20 November 2026; [NOVELTY.md](NOVELTY.md) records what was checked and the limits of that finding.
+The argument was developed by the repository's research agents and has separate internal mathematical reviews. No outside peer review or author confirmation is claimed. A later GitHub archive check on 20 November 2026 found the earlier complete proof linked above. The initial search conclusion was incorrect and is superseded by [NOVELTY.md](NOVELTY.md). This target is excluded from the campaign's newly resolved conjectures.
 
 The neighboring Hurwitz-stability conjecture already has public counterexamples. The neighboring Pólya-frequency real-zero conjecture has a separate recent proof claim. Neither is used or counted as a new result here.
 

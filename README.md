@@ -54,6 +54,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
 | [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 
+[Karp's coefficient-positivity conjecture](results/karp-coefficient-positivity/), [Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture](results/kvz-reciprocal-qgamma/), and [Simon's Le Roy conjecture](results/simon-le-roy/) were also resolved before this campaign. Public archive proofs dated September and October 2026 were found during a later audit. Their proofs are retained with corrected attribution and excluded from new-resolution claims. The initial literature-search conclusions for these entries are withdrawn.
+
 [Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/) is retained as an elementary exposition of a previously resolved assertion. Simon's 2012 theorem already implies its full negation; it is excluded from new-resolution claims. The [prior implication](results/kvz-hankel-product/NOVELTY.md) supersedes the initial novelty audit.
 
 Entries are ranked approximately by relative mathematical significance, weighing generality, connection to established problems, and the scope of the result. This editorial order does not imply independent verification or priority.

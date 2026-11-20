@@ -1,5 +1,7 @@
 # Karp's coefficient-positivity conjecture
 
+Status: previously resolved. [Principia Math In Progress, MathDB 323156](https://github.com/PrincipiaMathOrg/math-solutions/blob/47371706c400c79d06e3fb62190fcf6f7a725c85/site-backup/mathdb-323156/mathdb-323156-solution.tex), dated 11 September 2026, already proves the exact full conjecture. This independently developed proof is retained as exposition and is excluded from new-resolution claims. See [the corrected prior-work audit](NOVELTY.md).
+
 ## Statement and attribution
 
 The source is D. Karp, *Positivity of Toeplitz determinants formed by rising factorial series and properties of related polynomials*, [arXiv:1203.1482v1](https://arxiv.org/abs/1203.1482v1), Section 1, equation (3) and Conjecture 1, page 2. The journal version is Journal of Mathematical Sciences 193(1) (2013), 106–114, DOI [10.1007/s10958-013-1438-y](https://doi.org/10.1007/s10958-013-1438-y).

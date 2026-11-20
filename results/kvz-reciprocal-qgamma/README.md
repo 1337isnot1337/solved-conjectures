@@ -1,5 +1,7 @@
 # Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture
 
+Status: previously resolved. [Knowledge Sense, 13 October 2026](https://github.com/KnowledgeSense/math/blob/b95a52a54597e8b01c1a28486f2a9b29a3a54c58/preprints/Strict-Sign-Regularity-of-the-Reciprocal-Jackson-q-Gamma-Kernel-October-13-2026/build/source/strict-sign-regularity-of-the-reciprocal-jackson-q-gamma-kernel.tex), already proves the exact reciprocal Jackson q-gamma conjecture for every order and every admissible grid. This independently developed proof is retained as exposition and is excluded from new-resolution claims. See [NOVELTY.md](NOVELTY.md) for the correction.
+
 This directory proves the complete reciprocal q-gamma sign-regularity conjecture in Section 3, item 8 of Karp, Vishnyakova, and Zhang, *Unimodality preservation by ratios of functional series and integral transforms*, Results in Mathematics 80 (2025), article 112, DOI [10.1007/s00025-025-02431-4](https://doi.org/10.1007/s00025-025-02431-4). The statement appears on page 7 of [arXiv:2408.01755v2](https://arxiv.org/abs/2408.01755v2).
 
 ## The theorem
@@ -71,6 +73,6 @@ The infinite-product checks use rational enclosures from a finite prefix and the
 
 The positive $\Gamma_q(x+y)$ Hankel assertion already has a public proof claim by Salazar. That result is a known ingredient, with its elementary argument included, and is not counted as a new resolution. The present theorem proves the distinct reciprocal-kernel conjecture. The ordinary reciprocal-gamma analogue is also not counted separately.
 
-The full written argument passed two separate internal reviews. No outside peer review or author confirmation is claimed. The recorded literature search found no earlier resolution of this exact reciprocal assertion as of 20 November 2026; the search limitations are stated in [NOVELTY.md](NOVELTY.md).
+The full written argument passed two separate internal reviews. No outside peer review or author confirmation is claimed. A later global GitHub source-identifier search on 20 November 2026 found Knowledge Sense's earlier full proof. The initial search conclusion was incorrect and is superseded by [NOVELTY.md](NOVELTY.md). This target is excluded from the campaign's newly resolved conjectures.
 
 Research discussion: [issue #93](https://github.com/1337isnot1337/solved-conjectures/issues/93).

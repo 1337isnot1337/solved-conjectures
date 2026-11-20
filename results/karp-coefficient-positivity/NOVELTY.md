@@ -1,5 +1,24 @@
 # Source and prior-resolution audit
 
+## Correction: the conjecture was already resolved
+
+Correction date: 20 November 2026. The original novelty conclusion is withdrawn.
+
+[Principia Math In Progress, *Positive coefficients of rising-factorial Turán polynomials: A proof of the Karp–Sitnik conjecture, MathDB 323156*](https://github.com/PrincipiaMathOrg/math-solutions/blob/47371706c400c79d06e3fb62190fcf6f7a725c85/site-backup/mathdb-323156/mathdb-323156-solution.tex), is dated 11 September 2026. Its full LaTeX source is present in revision `47371706c400c79d06e3fb62190fcf6f7a725c85`, dated 27 October 2026. Although its title uses the secondary database's joint attribution, its opening theorem explicitly identifies and proves Karp's Conjecture 1.
+
+The prior theorem uses the identical source polynomial, arbitrary n at least three, arbitrary positive real shifts, and every nonnegative sequence satisfying strict log-concavity at the interior indices. It permits zero endpoints. It proves exact degree n minus two and strict positivity of every coefficient from the constant term through that degree. This is the whole target, not the known unit-shift or pointwise assertion.
+
+Root read the complete ordinary mathematical proof. It differentiates symmetric central truncations of the rising-factorial Vandermonde sum, cancels reflected index ranges, and obtains a derivative difference equal to the parameter difference times a polynomial with nonnegative coefficients. Integrating along a shift-transfer line gives strict positivity in every degree. Increasing symmetric weights then give the target by summation by parts. The finite boundary ranges, division at equal parameters, strictness, and zero-endpoint argument were checked. No gap affecting the full statement was found.
+
+Our independent marked-cycle proof and explicit lower bound remain documented, but the named conjecture was already settled by this prior proof. Neither a different proof nor an additional coefficient bound restores eligibility under the campaign's unresolved-target rule. No new-resolution claim is retained.
+
+Discovery: GitHub code search for Karp in `PrincipiaMathOrg/math-solutions`, followed by the full `site-backup/MANIFEST.json` and the pinned source above. The earlier web, author-page, and MathDB checks missed this public archive. That is a coverage failure in the initial search, not evidence that the prior was unavailable.
+
+## Historical audit below
+
+The original audit is retained to show the scope and limits of the earlier search. Every statement below about finding no earlier solution or claiming a new resolution is superseded by this correction.
+
+
 Audit date: 20 November 2026. Target: **Karp's coefficient-positivity conjecture**, Conjecture 1 in the source below. The result concerns the complete statement, with arbitrary $n\geq3$, arbitrary positive real shifts $\alpha,\beta$, and all nonnegative strictly log-concave input sequences.
 
 ## Primary statement and versions
