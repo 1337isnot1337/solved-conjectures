@@ -6,7 +6,7 @@
 
 This file records the exact transferable result and the multiplicative obstruction. It is not counted as a completed named-conjecture resolution.
 
-Source dependency: \`1337isnot1337/riemann-hypothesis-solved\`, accepted pin \`9d5316ec73f5df89c4d95703ed106837b8a4060e\`, through rational Dirichlet GRH. No general Hecke/Artin GRH or Lean verification is used. The mathematical implication below remains conditional on the accepted package when considered independently of that repository.
+Source dependency: `1337isnot1337/riemann-hypothesis-solved`, accepted pin `9d5316ec73f5df89c4d95703ed106837b8a4060e`, through rational Dirichlet GRH. No general Hecke/Artin GRH or Lean verification is used. The mathematical implication below remains conditional on the accepted package when considered independently of that repository.
 
 Coordination: [issue #80](https://github.com/1337isnot1337/solved-conjectures/issues/80). The related, distinct \(\lambda\)-function argument is in [banks-friedlander-luca-pappalardi-shparlinski.md](banks-friedlander-luca-pappalardi-shparlinski.md).
 
@@ -227,7 +227,7 @@ Primary comparisons:
 - [F98] states the Carmichael–Klee lemma and proves strong restrictions on a hypothetical unique preimage. Its result about positive proportions concerns **totient values**, not positive density among all integers.
 - [F99] proves Sierpiński's conjecture for every multiplicity \(k\ge2\). It does not exclude multiplicity one.
 - [P74], [F13], and [BM] distinguish the sufficient counterexample criterion from Carmichael's full assertion. [BM] separately identifies the stronger ordered prime-product conjecture.
-- Saito's 2025 article [S25] studies special cases and explicitly retains the full conjecture as open. It is a current primary status check, not a theorem completing this target.
+- The 2025 article of Shannon, Shiue, He, and Saito [S25] studies special cases and explicitly retains the full conjecture as open. It is a current primary status check, not a theorem completing this target.
 
 No claim of priority is made for the corollary in §4. It is recorded as a complete implication extracted here from the published Ford–Luca theorem. No independent review of this file has yet been recorded.
 
@@ -245,4 +245,4 @@ No claim of priority is made for the corollary in §4. It is recorded as a compl
 
 [BM] J. Barthel and V. Müller, *A conjecture on primes in arithmetic progressions and geometric intervals*, American Mathematical Monthly **129** (2022), 979–983, DOI [10.1080/00029890.2022.2116250](https://doi.org/10.1080/00029890.2022.2116250). Especially Theorem 9, Conjecture 10, Proposition 11, and Remark 13. [Institutional record](https://orbilu.uni.lu/handle/10993/53879).
 
-[S25] C. Saito, *On the special cases of Carmichael's totient conjecture*, Notes on Number Theory and Discrete Mathematics **31** (2025), no. 3, 504–534. DOI [10.7546/nntdm.2025.31.3.504-534](https://doi.org/10.7546/nntdm.2025.31.3.504-534). [Journal page](https://nntdm.net/volume-31-2025/number-3/504-534/).
+[S25] A. G. Shannon, P. J.-S. Shiue, T.-X. He, and C. Saito, *On the special cases of Carmichael's totient conjecture*, Notes on Number Theory and Discrete Mathematics **31** (2025), no. 3, 504–534. DOI [10.7546/nntdm.2025.31.3.504-534](https://doi.org/10.7546/nntdm.2025.31.3.504-534). [Journal page](https://nntdm.net/volume-31-2025/number-3/504-534/).
