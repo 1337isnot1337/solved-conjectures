@@ -1,6 +1,6 @@
 # NSS research materials
 
-`proof.md` gives the candidate asymptotic disproof of the Nemeth–Seberry–Shu conjecture. `independent-audit-erdos.md` is one independent proof audit; `status-search.md` records literature checks. No Lean files are used.
+`../nemeth-seberry-shu-candidate-proof.md` gives the candidate asymptotic disproof of the Nemeth–Seberry–Shu conjecture. `../nemeth-seberry-shu-status-search.md` records literature checks. No Lean files are used.
 
 ## Reproducible numerical sanity check
 
