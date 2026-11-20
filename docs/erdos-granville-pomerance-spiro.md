@@ -54,7 +54,7 @@ $n=pqrw$, where $p>q>r$ are the three largest distinct prime divisors,
 none divides $w$, and
 
 ```math
-p\ge n^{1/2+\eta},\qquad r\ge n^\eta,\qquad q\ge n^\eta(rw)^3.
+p\ge n^{1/2+\eta},\qquad r\ge n^\eta,\qquad q\ge n^\eta rw.
 ```
 
 For every set $A$ of natural density zero,
@@ -81,7 +81,7 @@ m\le X^{1/2-\epsilon},\quad
 r\ge X^\beta,\quad
 \ell\le X^\kappa,\quad
 q\ge X^\alpha,\quad
-3\kappa\lt\gamma\lt\alpha .
+\kappa\lt\alpha,\quad \beta/2\lt\gamma\lt\alpha .
 ```
 
 Here $\beta\le\kappa$. It suffices to show the conclusion on each interval.
@@ -160,7 +160,8 @@ $m\equiv m'\pmod h$. Writing $m=q\ell$ and $m'=q'\ell'$,
 the congruences $h\mid s(m),s(m')$ then give
 
 ```math
-h\mid \ell\sigma(\ell)s(\ell')-\ell'\sigma(\ell')s(\ell).
+h\mid \Delta,\qquad
+\Delta=\ell\sigma(\ell)s(\ell')-\ell'\sigma(\ell')s(\ell).
 ```
 
 Indeed $\gcd(h,\ell\sigma(\ell)s(\ell))=1$. A prime of $h$ in
@@ -170,8 +171,28 @@ It cannot equal $q$, because that would make it a common prime of
 $m$ and $\sigma(m)$ outside $d$. It cannot divide $s(\ell)$
 either, by the corresponding gcd condition on $\ell$. The claimed
 congruence follows by solving for $q$ and $q'$.
-The integer on the right has size $X^{3\kappa+o(1)}$, so it vanishes.
-Therefore $\ell+\ell^2/s(\ell)=\ell'+(\ell')^2/s(\ell')$.
+For $\Delta\ne0$, fix $\ell,\ell'$ and one of the
+$\tau(|\Delta|)=X^{o(1)}$ possible divisors $h$. The
+congruences put $q,q'$ in fixed residue classes modulo $h$.
+In dyadic ranges $q\asymp Q$, $q'\asymp Q'$, their
+reciprocal sums are $O(1/h+1/Q)$ and $O(1/h+1/Q')$.
+If the ranges contain a collision, then
+$h\ll\min(\ell Q,\ell'Q')$ by $h\mid s(m),s(m')$.
+Consequently the product of the two sums, multiplied by $h$,
+is at most a constant times
+
+```math
+\frac1h+\frac1Q+\frac1{Q'}+\frac{h}{QQ'}
+ \ll X^{-\gamma}+X^{-\alpha}+X^{\kappa-\alpha}.
+```
+
+This has a power saving in every dyadic range. Summing over
+$h$, the dyadic ranges, and $\ell,\ell'$ with weights
+$1/(\ell\ell')$ leaves that saving, up to $X^{o(1)}$.
+The factor $D/\varphi(D)\ll\log\log X$ is harmless here.
+
+For $\Delta=0$ we have
+$\ell+\ell^2/s(\ell)=\ell'+(\ell')^2/s(\ell')$.
 The reduced denominators on the two sides are $s(\ell)/d$
 and $s(\ell')/d$, since $\gcd(\ell^2,s(\ell))=d$.
 So $s(\ell)=s(\ell')$, and strict monotonicity with that
@@ -183,7 +204,7 @@ $O(\log X/h)$, even without primality. Using
 $D/\varphi(D)\ll\log\log X$, the bound
 $\tau(s(m'))=X^{o(1)}$, $\sum_{q'\ge X^\alpha}1/q'=O(1)$
 over primes, and $\sum_{\ell\ge X^\beta}1/\ell^2\ll X^{-\beta}$,
-the large-$h$ contribution is $X^{1-\beta+o(1)}$ per stratum.
+the $\Delta=0$ contribution is $X^{1-\beta+o(1)}$ per stratum.
 This is negligible in total since $d\le\log X$.
 
 ### Small and intermediate moduli
@@ -288,7 +309,7 @@ as required.
 
 This treats arbitrary zero-density target sets on the stated
 large-prime family. The proof uses $p$ large for the final
-two-prime sieve and $q$ larger than the cubic cofactor scale to
-make the largest collision modulus rigid. These inequalities
+two-prime sieve and $q$ larger than its remaining cofactor to
+bound the largest collision moduli. These inequalities
 do not hold on all but $o(X)$ inputs. A proof or disproof
 of the full conjecture must control inputs outside this family.
