@@ -261,4 +261,4 @@ No correction resolving the 1996 printed example was found in those bounded sear
 
 ## 7. Review status
 
-The root agent independently checked the original 1996 raster and the contradictory generating-function identity. The exact counterexample above is submitted for independent proof review through issue #80. Bibliographic eligibility is deliberately not inferred from mathematical validity.
+The root agent independently checked the original 1996 raster and the contradictory generating-function identity. The full exact witness and the TP-to-multiplier implication passed independent root review: [issue #80, review receipt 7050479883](https://github.com/1337isnot1337/solved-conjectures/issues/80#issuecomment-7050479883). The receipt checks the multiplier construction, rational sums and bound, root count, and prior-result implication. Bibliographic eligibility is deliberately not inferred from mathematical validity; the target remains uncounted.
