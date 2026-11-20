@@ -156,7 +156,7 @@ The label used in this note identifies Problem 3.5 by its authors and subject. I
 - [Sra, *On some positivity properties of the Riemann \(\Xi\) function*](https://arxiv.org/pdf/2611.02944), arXiv:2611.02944, November 2026: Theorem 1.3 establishes generalized Laguerre inequalities on the interval supplied by a finite verified height. The introduction explicitly leaves global first-order positivity for \(\Xi\) open. That statement concerns \(\Xi\), not exactly \(F\); it is recorded as nearby status evidence, not as a proof that our precise target is open.
 - [Liu–Mao, *Infinite log-concavity of the Taylor coefficients of the Riemann xi-function*](https://arxiv.org/abs/2610.04972), October 2026: explicitly claims a proof of Zhu's coefficient-sequence conjecture. That conjecture is excluded from the project's resolution count and is not (2).
 - [*Generalized Laguerre positivity at growing orders*](https://rstation.ai/problems/riemann_hypothesis/papers/41/v3), October 2026: its stated theorems concern order/height ranges and typical-height conclusions. They do not supply all derivative orders and every real argument in (2).
-- [*Unconditional implications of the Quasi-Riemann Hypothesis*](https://hub.valency.io/works/W_3drjq8uk_v1), November 2026: the retrieved application list contains no matching Laguerre, Csordas, Dimitrov, or Jensen entry. Its weaker zero-free-strip premise is not substituted for RH here.
+- [*Unconditional implications of the Quasi-Riemann Hypothesis*](https://hexagonmath.org/pdf/2610.00178v1), manuscript dated 9 October 2026: both the original 164-page PDF and the [Valency copy](https://hub.valency.io/works/W_3drjq8uk_v1) contain no matching Laguerre, Csordas, Dimitrov, or Jensen entry in the retrieved text. The [portal metadata](https://hub.valency.io/works/W_3drjq8uk?view=contributions) identifies the same Hexagon version as its original source, publication on 11 October, and addition to Valency on 5 November. The November portal date is not the manuscript's publication date. Its weaker zero-free-strip premise is not substituted for RH here.
 
 Searches on 20 November 2026 used both search engines and combinations of the authors' names, exact paper title, “Problem 3.5,” “(3.7),” “Laguerre,” “all real,” “negative,” “proved,” and recent-year filters. No prior unconditional resolution of the exact all-\(q\), all-real-\(x\) Problem 3.5 was retrieved.
 
@@ -164,6 +164,11 @@ The source audit is bounded. The conditional implication is expressly credited a
 
 ## Review status
 
-Full written independent review requested. Public review receipts will be appended.
+Two independent written reviews passed:
+
+- [Analytic review](https://github.com/1337isnot1337/solved-conjectures/issues/133#issuecomment-7050203408) checked the full original Problem 3.5, the exact normalization, genus-zero product, all derivatives, and every real argument.
+- [Root review](https://github.com/1337isnot1337/solved-conjectures/issues/133#issuecomment-7050221251) independently checked the same original equations and the complete proof, including multiplicities and roots.
+
+Neither review requested a mathematical repair. Both retain the accepted-RH dependency, the classical credit, and the bounded scope of the prior-art audit. This is internal mathematical review, not formal verification or external peer review.
 
 No Lean verification was performed.
