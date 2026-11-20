@@ -122,17 +122,18 @@ This is also the elementary \(1<B<2\) part of the Dickman asymptotic, since \(\r
 Because \(1-\log B>0\), (1) at these lengths is equivalent to the genuinely uniform estimate
 \[
  \boxed{
- \sup_{\substack{q\ {\rm prime}\\ \chi\bmod q,\ \chi\ne\chi_0}}
+ \sup_{\substack{\chi\bmod q\\ \chi\ne\chi_0}}
  \frac1{(\log q)^B}
  \left|
  \sum_{m\le x/y}\chi(m)
  \bigl(\Pi_\chi(x/m)-\Pi_\chi(y)\bigr)
  \right|
  \longrightarrow0
+ \quad(q\to\infty,\ q\ {\rm prime})
  }
  \tag{7}
 \]
-as the prime modulus tends to infinity, with \(x=(\log q)^B\) and \(y=Y_A(x,q)\). More formally, the supremum in (7) is taken over characters for each prime \(q\), followed by the limit over prime \(q\).
+as the prime modulus tends to infinity, with \(x=(\log q)^B\) and \(y=Y_A(x,q)\). The supremum is over characters for each prime modulus.
 
 Equation (7) is a necessary subproblem of the full conjecture, not a replacement target or a claimed solution.
 
