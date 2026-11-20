@@ -472,4 +472,5 @@ ranges of the prime variables.
 The [small-cofactor theorem](erdos-granville-pomerance-spiro-near-square-root.md)
 also covers inputs whose largest prime is at most the square root
 and whose two largest primes have product at least $n^{6/7}$.
-The two disjoint families have combined density approximately $50.56\%$.
+A refinement by prime and cofactor size brings the combined
+natural density to approximately $51.96\%$.

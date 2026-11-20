@@ -463,3 +463,74 @@ The union $\mathcal B\cup\mathcal C$ has density
 ```
 
 approximately $50.56\%$.
+
+## Refinement using the cofactor and prime exponents
+
+Use the same largest two prime factors $p,q$ in decreasing
+order, counted with multiplicity, and put $\ell=n/(pq)$.
+Let $\mathcal D$ consist of composite inputs with $p\le\sqrt n$
+and logarithmic coordinates $u=\log\ell/\log n$,
+$v=\log q/\log n$ in the region
+
+```math
+ 0\le u,\qquad 1/2-u\le v\le (1-u)/2,\qquad
+ 5u+3v\le 2,\qquad 9u+v\le 2 .
+```
+
+**Corollary.** For every natural density-zero set $\mathcal A$,
+the inputs in $\mathcal D$ with $s(n)\in\mathcal A$ have
+density zero. The union $\mathcal B\cup\mathcal D$ has
+natural density approximately $51.96\%$.
+
+It suffices to prove the corollary on closed rectangles
+strictly inside the region. The boundaries have density zero
+by the logarithmic prime-and-integer reciprocal count above.
+More precisely, omit strips of an arbitrarily small fixed width
+along the boundary, cover the remaining compact subset by finitely
+many sufficiently small rectangles, and sum the preimage bounds for
+these rectangles. The preimage assertion persists under such a finite
+union, so each second moment needs only to count within one rectangle.
+
+Suppose a rectangle is centered at $(u_0,v_0)$ with side lengths
+at most $2\xi$. On $X/2<n\le X$, the tails of both inputs have size
+$X^{u_0+O(\xi)}$, and $q,q'$ have size $X^{v_0+O(\xi)}$.
+The discarded inputs and small-prime conditions are treated
+as before. The main-term bound also goes through: the region
+has $u\le 3/16$ and $v\ge 5/16$, so the prime intervals in $q$
+have a power margin above the moduli $h\le X^{1/10}$.
+The only change is to keep the sizes in the error terms,
+using
+
+```math
+ M=X^{u_0+v_0+O(\xi)+o(1)},\qquad
+ |I|+|J|\ll X^{1-u_0-v_0+O(\xi)},\qquad
+ |\Delta|\ll X^{3u_0+O(\xi)} .
+```
+
+The first term in the box error, after summing over $q$ and
+the two tails, uses $Q+\sqrt{A|\Delta|}$ and therefore has
+two exponents $(5u_0+3v_0)/2$ and $(9u_0+v_0)/2$,
+up to $6\theta+O(\xi)+o(1)$. The second term uses
+$Q+|\Delta|$ and gives the exponents $1-v_0$ and
+$1+3u_0-2v_0$, up to the same error. The first two exponents
+are strictly below one in the interior. For the last two
+we have $v\ge5/16$ and $3u-2v\le-1/16$ throughout the
+region. Taking $\xi$ and the sieve exponent $\theta$ small
+enough proves the power saving on the rectangle.
+
+To compute the density, the upper boundary for $v$ is
+$U(u)=\min((1-u)/2,(2-5u)/3,2-9u)$, with respective
+intervals $[0,1/7]$, $[1/7,2/11]$, and $[2/11,3/16]$.
+The lower boundary is $1/2-u$. The integral giving the
+density of $\mathcal B\cup\mathcal D$ is
+
+```math
+ (\log 2)^2+
+ \int_0^{3/16}\frac{1}{1-u}
+     \log\left(\frac{U(u)}{(1-u-U(u))(1-2u)}\right)\,du.
+```
+
+This uses the same prime number theorem count on
+$(X/2,X]$ and the integral of $1/(v(1-u-v))$ with
+respect to $v$. Since $p\le\sqrt n$ on $\mathcal D$,
+its density adds to that of $\mathcal B$.
