@@ -54,3 +54,48 @@ More generally, suppose each of the $r$ joined parts of $H$ consists of $s$ cliq
 =O_c(\sqrt{n\log n}).
 ```
 The final estimate follows by bounding the minimum of $rb$ and $s\log(b+1)$ by their geometric mean, and using $n=(K+1)rsb$. The construction attains this order for every fixed $c$. The conjectured sublinear upper bound for arbitrary $c$-hollow graphs remains open.
+
+## A constant upper bound for bounded modular width
+
+The conjecture holds with a constant upper bound for graphs of bounded modular width. Here a graph has modular width at most $k\ge2$ if it can be built from single vertices by substitution into quotient graphs on at most $k$ vertices. Substitution replaces each quotient vertex by a nonempty graph, with all edges between two substituted graphs precisely when their quotient vertices are adjacent. Arbitrary disjoint unions and joins can be built using binary substitutions. This agrees with the convention of bounding the arity of the prime nodes in a modular decomposition. [Maximal clique decompositions by modular width, Section 6.2](https://doi.org/10.3390/math14183352)
+
+**Theorem.** Write $i(G)$ for the minimum size of a maximal independent set. Every nonempty graph $G$ of modular width at most $k\ge2$ satisfies
+```math
+\tau(G)\le \left(\frac{|V(G)|}{i(G)}\right)^{4k+1}.
+```
+In particular, $\tau(G)\le c^{-(4k+1)}$ for every $c$-hollow graph in this class, with no bound on the number of substitution levels. Cooper–Hollars give the sharper estimate $\tau(G)\le 1/c$ for cographs. [Cooper–Hollars, Section 5](https://arxiv.org/abs/2607.15486)
+
+**Packing lemma.** For at most $k$ items of weights $w_j\in(0,1)$ there is a random subset of total weight strictly below $1$ with inclusion probabilities at least $1-w_j^{1/(4k)}$.
+
+Set $a=1/(4k)$ and call an item large if its weight is at least $1/2$. Give each large item $v$ a disjoint interval inside $[0,1]$ of length $e_v=1-w_v^a$. The intervals fit because $e_v\le a\log 2$ and their total length $b$ is at most $1/4$. Choose a uniform point in $[0,1]$. If it belongs to the interval for $v$, take $v$ and every small item of weight strictly below $(1-w_v)/k$. This subset has weight strictly below $1$. The unconditional probability $A_j$ that a small item $j$ is omitted in the union of the intervals satisfies
+```math
+A_j\le \min\{b,2ak^2w_j\}.
+```
+Indeed, omission from the subset in the interval of $v$ requires $1-w_v\le kw_j$, and $1-w_v^a\le 2a(1-w_v)$ by the mean value theorem on $[1/2,1]$. Thus $A_j\le w_j^a$. For $w_j\ge 1/(2k)$ this follows from $b\le 1/4$ and $(2k)^{-a}\ge 1/2$. For $w_j\le 1/(2k)$ it follows from the comparison at $1/(2k)$ and from the fact that $w_j^{1-a}$ is increasing.
+
+On the complement of those intervals, use only the small items with conditional inclusion probabilities
+```math
+z_j=\frac{\max\{0,\,1-w_j^a-b+A_j\}}{1-b}.
+```
+These numbers lie in $[0,1]$ and ensure the required total probabilities. The conditional expected weight satisfies
+```math
+L=\sum_j w_jz_j
+\le \frac{a}{1-b}\sum_j w_j\log(1/w_j)
+\le \frac13.
+```
+To realize the prescribed probabilities, decompose $(z_j)_j$ into extreme points of the polytope $0\le y_j\le1$, $\sum_j w_jy_j=L$. Each extreme point has at most one fractional coordinate, since two such coordinates could move in opposite weighted directions. Sample an extreme point according to the decomposition and round its fractional coordinate up with probability equal to its value. The resulting subset has weight at most $L+1/2\lt1$. This completes the proof of the packing lemma.
+
+**Weighted transversal lemma.** Let $\mathcal F$ be a nonempty family of nonempty subsets on at most $k$ indices. Suppose $x_j,q_j\gt0$, that $\sum_{j\in F}x_j\ge1$ for every $F\in\mathcal F$, and that $\sum_j q_j=1$. For $p=4k+1$, there is a transversal $T$ with
+```math
+\sum_{j\in T}(q_j/x_j)^p\le1.
+```
+Set $r_j=q_j/x_j$. If every $r_j\ge1$, then $1\le\sum_j x_j\le\sum_j q_j=1$. All ratios equal one and every member of $\mathcal F$ contains every index. A singleton suffices. Otherwise apply the packing lemma to the weights $r_j^p$ for indices with $r_j\lt1$. This gives a random set $T$ of cost less than one. For each of those indices the omission probability is at most $r_j^{p/(4k)}\lt r_j$. At the other indices the omission probability is $1\le r_j$. Hence the expected $x$-weight of the indices outside $T$ is strictly below $\sum_j x_jr_j=1$. Some outcome leaves outside weight below one, so its $T$ hits every member of $\mathcal F$.
+
+**Substitution.** For a quotient $Q$ with substituted graphs $G_j$, the maximal independent sets of the result $G$ are precisely the unions of maximal independent sets of the $G_j$ over a maximal independent set of $Q$. The occupied modules must be independent and maximal in the quotient, and the chosen sets within them must be maximal there. Conversely those two properties dominate every vertex of $G$ outside the union. Put $n_j=|V(G_j)|$, $i_j=i(G_j)$, $n=\sum_j n_j$ and $m=i(G)=\min_{S\in\operatorname{MIS}(Q)}\sum_{j\in S} i_j$. Take $q_j=n_j/n$ and $x_j=i_j/m$. The weighted transversal lemma supplies a set $T$ of quotient vertices hitting all its maximal independent sets. The union of transversals in modules indexed by $T$ hits every maximal independent set of $G$. By induction from a single vertex, its size is at most
+```math
+\sum_{j\in T}(n_j/i_j)^p
+=\left(\frac{n}{m}\right)^p \sum_{j\in T}(q_j/x_j)^p
+\le \left(\frac{n}{m}\right)^p.
+```
+
+The same proof gives $h(G)\le (|V(G)|/\alpha(G))^{4k+1}$ for the maximum-independent-set conjecture, where $h$ is the minimum size of a transversal of all maximum independent sets. In this case the quotient family consists of maximum-weight independent sets, with module weights $\alpha(G_j)$, and the chosen sets inside the occupied modules must be maximum independent sets there.
