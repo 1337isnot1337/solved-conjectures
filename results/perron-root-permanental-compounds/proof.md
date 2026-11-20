@@ -300,6 +300,15 @@ R_0=\min_{-J\le\ell\le J}
        \frac{\widehat Z_\ell^{1/t}}{s_\ell^k}.
 ```
 
+The minimum is selected using rational arithmetic: first compute
+
+```math
+R_0^t=\min_{-J\le\ell\le J}
+       \frac{\widehat Z_\ell}{s_\ell^{kt}}.
+```
+
+Only the positive tth root of this one rational number needs approximation; comparisons between algebraic roots are unnecessary.
+
 Equations (4) and the supporting grid point yield
 
 ```math

@@ -18,13 +18,9 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 
 ## Permanental compounds
 
-### Perron root of permanental compounds
-
-For every nonnegative rational matrix and every compound degree, a fully polynomial randomized approximation scheme computes the Perron root to prescribed relative accuracy. Zero roots are detected deterministically. The proof applies Gurvits's coefficient-capacity bound to a stable transfer symbol, represents a sum of powered-compound traces by one ordinary permanent, and uses log-concavity and the Jerrum–Sinclair–Vigoda FPRAS.
-
-This is a theorem for the general approximation formulation of Minc Problem 18. It covers zero diagonals and nonsymmetric, reducible and periodic inputs. It does not claim exact polynomial-time computation or a solution of the characteristic-polynomial problem. Independent internal reviews found no remaining gap; external review and priority remain open.
-
-[Result](results/perron-root-permanental-compounds/) · [Proof](results/perron-root-permanental-compounds/proof.md) · [Source audit](results/perron-root-permanental-compounds/source-audit.md) · [Exact checks](results/perron-root-permanental-compounds/verify.py) · [Issue #140](https://github.com/1337isnot1337/solved-conjectures/issues/140).
+| Result | Finding | Lean | Evidence |
+| :--- | :--- | :---: | :--- |
+| [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | A general FPRAS for every nonnegative rational input and every compound degree, with deterministic zero detection. This answers the randomized approximation formulation of Minc Problem 18; exact polynomial-time eigenvalue computation and the characteristic-polynomial problem are not claimed. The proof is unrefereed and priority remains provisional. | Not formalized | [Proof](results/perron-root-permanental-compounds/proof.md) · [Source audit](results/perron-root-permanental-compounds/source-audit.md) · [Exact checks](results/perron-root-permanental-compounds/verify.py) · [Review](https://github.com/1337isnot1337/solved-conjectures/issues/140) |
 
 ## Polynomial identities and positivity
 

@@ -52,7 +52,7 @@ python3 results/perron-root-permanental-compounds/verify.py
 
 The standard-library verifier checks 126 exact cyclic trace identities, 81 Newton inequalities and 2,048 exact support/degree cases. The checks test the finite reductions. The general theorem depends on the written proof and its cited theorems. The Jerrum–Sinclair–Vigoda sampler is not implemented here; no practical runtime claim is made.
 
-No Lean verification is included.
+No Lean formalization is included.
 
 ## Files
 

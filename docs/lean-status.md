@@ -34,6 +34,7 @@ Lean verification.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| Perron root of permanental compounds | Not formalized | Written FPRAS proof for every nonnegative rational matrix and every compound degree, with deterministic zero detection. Exact finite checks supplement the argument. This is the randomized approximation formulation of Minc Problem 18; exact polynomial-time eigenvalue computation and the characteristic-polynomial problem are outside its scope. |
 | Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture | Not formalized | Written proof of the full surviving unimodality assertion and all monotone/unique-maximum cases; exact series diagnostics are supplementary. |
 | Ferreira–Simon's Wright log-concavity conjecture | Not formalized | Written analytic disproof on continuous boundary and interior parameter families; exact curvature checks are supplementary. |
 | Karp–Vishnyakova–Zhang's gamma-quotient conjecture | Not formalized | Written all-order sign-regularity proof with exact signature and integer rank cutoff; finite determinant checks are supplementary. |
