@@ -1,5 +1,22 @@
 # History
 
+## 2026-11-20 — Alexandersson's Fuss–Catalan conjecture
+
+Recorded a short uniform deduction of the named real-rootedness conjecture.
+Classical Kreweras/cycle-lemma enumeration shows that, after fixing the
+number of north steps and north runs, the Fuss parameter changes only a
+positive scalar. The real-zero polynomial is already known from the
+ordinary-Dyck work of Bóna and coauthors and Wang–Zhang. A self-contained
+Rolle argument is included for independent checking.
+
+The complete argument passed independent review. Direct enumeration of
+10,188 paths across 18 parameter pairs checked the exact source convention.
+These finite comparisons are diagnostic. The attribution record expressly
+credits both classical ingredients and records an inaccessible recent
+paper; no unconditional novelty claim is made. This entry is distinguished
+from a new enumeration or a new root-preserving theorem.
+[Proof, classical attribution, and checks](results/alexandersson-fuss-catalan/).
+
 ## 2026-11-20 — Karp–Vishnyakova–Zhang's Hankel-product conjecture
 
 Added a complete counterexample to closure of sign-regular Hankel kernels

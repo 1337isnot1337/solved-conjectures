@@ -14,6 +14,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check Fuss–Catalan path conventions and exact formula
+        run: python results/alexandersson-fuss-catalan/verify.py
       - name: Check Hankel-product counterexample certificates
         run: python results/kvz-hankel-product/verify.py
       - name: Check reciprocal q-gamma minors and product certificates
