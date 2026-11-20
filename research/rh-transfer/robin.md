@@ -16,7 +16,7 @@ and let \(\gamma\) be Euler's constant. Robin's conjecture is
 
 All logarithms are natural. The target includes every integer above the exact historical threshold. A statement for sufficiently large integers, a finite verification range, or a fixed class of integers is not substituted for (R).
 
-**Status:** complete credited transfer from the accepted RH input; independent review requested. The implication used below is Robin's published theorem. This note supplies the source-to-target application and scope/prior-art audit. It claims no new proof of the classical implication and no result independent of RH.
+**Status:** complete credited transfer from the accepted RH input; independent internal reviews passed. The implication used below is Robin's published theorem. This note supplies the source-to-target application and scope/prior-art audit. It claims no new proof of the classical implication and no result independent of RH.
 
 ## The established theorem
 
@@ -97,6 +97,11 @@ The audit found no established earlier unconditional proof or disproof of the co
 
 The original 1984 statement was read through extracted scan/OCR text. The old archived direct PDF link and some author/publisher endpoints were unavailable. No local raster inspection of that unavailable original PDF is claimed. The two readable later primary papers fix the strict sign and exact endpoint independently of the damaged OCR.
 
-Independent review is requested for the exact theorem match, original threshold, current-status scope, and attribution. This entry represents one full historical target. Restricted families, equivalent rewritings, and finite checks are not additional solutions.
+Two independent source and scope reviews passed:
+
+- [Arithmetic review](https://github.com/1337isnot1337/solved-conjectures/issues/134#issuecomment-7050318149) checked the original extracted Théorème 1 and the two later primary papers, including the strict sign, exact threshold, and imported finite dependencies.
+- [Analytic review](https://github.com/1337isnot1337/solved-conjectures/issues/134#issuecomment-7050321969) independently matched Théorème 1, the original conditional bound on printed page 204, and the complete restatements. It confirmed that accepted zeta RH is the only extra premise.
+
+Neither reviewer requested a correction. This entry represents one full historical target. Restricted families, equivalent rewritings, and finite checks are not additional solutions.
 
 Internal review is distinct from external mathematical acceptance.
