@@ -1,5 +1,22 @@
 # History
 
+## 2026-11-20 — Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture
+
+Added a complete proof that the reciprocal q-gamma Hankel kernel is strictly
+sign regular of every order throughout the conjectured positive domain.
+Two finite Cauchy–Binet expansions determine the signs; retaining a fixed
+positive summand under each limit proves strictness and gives an explicit
+minor lower bound. The known positive q-gamma kernel is an ingredient,
+not a second new-result claim.
+
+Two independent reviews checked the complete argument, exact source, signs,
+index-zero endpoint, and infinite-series limits. The standard-library
+verifier passed 1,983 rational q-Pochhammer minors, 48 finite identities,
+24 lower bounds, and 12 rigorous infinite-product interval certificates.
+The novelty record distinguishes neighboring resolutions and states the
+full-text access limit for the earlier positive-kernel paper.
+[Proof, source audit, and exact checks](results/kvz-reciprocal-qgamma/).
+
 ## 2026-11-20 — Sagan–Swanson conjecture
 
 Added a complete proof of asymptotic normality for all four q-Stirling

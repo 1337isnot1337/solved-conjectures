@@ -20,6 +20,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Horňák–Woźniak conjecture](results/hornak-wozniak/) | ⬜ |
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
+| [Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture](results/kvz-reciprocal-qgamma/) | Exact checks |
 | [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | Exact checks |
 | [Karp's coefficient-positivity conjecture](results/karp-coefficient-positivity/) | Exact checks |
 | [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | Exact checks |
