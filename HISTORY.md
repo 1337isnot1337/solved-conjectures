@@ -1,5 +1,14 @@
 # History
 
+## 2026-11-20 — Horňák–Woźniak and Sonntag–Teichert conjectures
+
+Added written proofs and literature checks for both connected-partition
+conjectures of Horňák and Woźniak and for Sonntag and Teichert's
+tournament domination hypergraph conjecture. The respective exact
+cross-checks pass. The same campaign added partial results for the Erdős
+essential-component, Erdős–Sauer, Bollobás–Erdős–Tuza and Erdős–Oler
+conjectures. [Proofs and research notes](CONTENTS.md).
+
 ## 2026-11-19 — Four-input prime filtering
 
 Registered 20 modules after the complete hosted source, literal-statement,
