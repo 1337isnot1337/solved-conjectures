@@ -12,7 +12,7 @@ The accepted top-level result covers the Riemann zeta function and Dirichlet L-f
 
 ## Reviewed full named outcomes
 
-The following inventory contains twenty-one full historically stated conjectures with complete written deductions in this lane. Eight entries contain proof arguments or deductions developed in this campaign; thirteen use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of twenty-one independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
+The following inventory contains twenty-two full historically stated conjectures with complete written deductions in this lane. Nine entries contain proof arguments or deductions developed in this campaign; thirteen use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of twenty-two independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
 
 Current prior-art searches have not located an earlier full resolution of the exact targets apart from the accepted input and the established conditional implications. The searches and retrieval limits are recorded individually. Mathematical completeness, historical priority, and external acceptance are different questions.
 
@@ -23,6 +23,7 @@ Current prior-art searches have not located an earlier full resolution of the ex
 | Merlini–Sala–Sala conjecture | Disproved: the tiny Li remainder divided by n^(1/4) has infinite absolute limsup, so its proposed subpower and logarithmic bounds fail | Complete internally reviewed unconditional refutation; [note](merlini-sala-sala.md), [issue #128](https://github.com/1337isnot1337/solved-conjectures/issues/128) |
 | Chaudhary–Khmiri–Mazhouda conjecture | Disproved: an admissible unitary Dirichlet twist has Re(lambda(2)−lambda(1))<−3/2 | Complete internally reviewed unconditional counterexample with exact rational certificate; [note](chaudhary-khmiri-mazhouda.md), [issue #124](https://github.com/1337isnot1337/solved-conjectures/issues/124) |
 | Csordas–Vishnyakova conjecture | Disproved: exp(−z^4) with p(z)=z^4+z^2+1 satisfies every stated coefficient inequality but is not in the Laguerre–Pólya class | Complete internally reviewed unconditional exact counterexample; [note](csordas-vishnyakova.md), [issue #132](https://github.com/1337isnot1337/solved-conjectures/issues/132) |
+| Cardon–Forgács–Piotrowski–Sorensen–White conjecture | Disproved: for every real p>2, sufficiently small positive alpha destroys real-rootedness of a fixed cubic, so the proposed sector-reduction criterion fails | Complete internally reviewed unconditional refutation with an exact rational certificate; [note](cardon-forgacs-piotrowski-sorensen-white.md), [issue #136](https://github.com/1337isnot1337/solved-conjectures/issues/136) |
 | Pomerance's conjecture | Proved in its original 1974 nonexistence form: no integer satisfies his sufficient criterion for a unique totient preimage | Complete internally reviewed deduction from the Ford–Luca prime-tree theorem and accepted Dirichlet GRH; [note](pomerance.md), [issue #129](https://github.com/1337isnot1337/solved-conjectures/issues/129) |
 | Jutila's conjecture | The complete character-sum moment bound holds for every positive integer moment, every length, and every nonprincipal real character of modulus at most X | Full internally reviewed deduction under accepted Dirichlet GRH using established moment methods, including exact unsmoothing and all induced characters; [note](jutila.md), [issue #135](https://github.com/1337isnot1337/solved-conjectures/issues/135) |
 | Fujii's conjecture | The reported all-positive-alpha equivalence family is false under the accepted beta GRH; the large-alpha oscillation theorem is unconditional | Complete internally reviewed argument, with direct original-source retrieval still limited; [note](fujii.md) |
@@ -41,6 +42,24 @@ Current prior-art searches have not located an earlier full resolution of the ex
 | Lindelöf hypothesis | The full subpower bound holds | Classical RH implication, with conductor-uniform Dirichlet version documented; [note](dirichlet-applications.md) |
 
 Already published QRH applications such as Vinogradov and the idoneal-number classification remain excluded. The qualified Simm–Wei formulation and Chandee's matching-order result do not enter this full-statement inventory. Neither do the unresolved Hecke, Artin, Selmer, or correlation reductions below. This inventory does not alter unrelated campaigns' result counts.
+
+The Borcea–Shapiro finite infinite-divisibility and local-direction questions are excluded: Arizmendi–Perales had already proved the exact fixed-degree Hermite classification in 2017. The local and all-time formulations are equivalent by composition; the [screening note](borcea-shapiro-screening.md) records the source and the rediscovered proof. The 2026 manuscript's open-problem label does not override the earlier theorem.
+
+### Cardon–Forgács–Piotrowski–Sorensen–White conjecture
+
+The [full counterexample](cardon-forgacs-piotrowski-sorensen-white.md) refutes the proposed criterion that \(T[z^k]=e^{-\alpha k^p}z^k\), with arbitrary \(\alpha>0\), reduces zero sectors exactly when \(p\ge2\). For every fixed real \(p>2\), applying \(T\) to \((z-1)^3\) gives a cubic whose discriminant is
+~~~math
+-27(3^p-3\cdot2^p+3)^2\alpha^2+O_p(\alpha^3)<0
+~~~
+for all sufficiently small positive \(\alpha\). The third finite difference is strictly positive throughout \(p>2\).
+
+An exact instance takes \(p=3\), \(\alpha=\log(16/15)/6\), and a positive change of variable. The resulting cubic
+~~~math
+(15/16)^4w^3-3(15/16)w^2+3w-1
+~~~
+has discriminant \(-72517275/4294967296\). Its nonreal roots contradict sector reduction for a sufficiently narrow positive-width input sector. This is one full refutation, with all three internal reviews recorded.
+
+The proof is unconditional. Its origin is the zero-location research around RH; it does not require the accepted RH theorem. The note also records an older unrestricted-parameter multiplier assertion that conflicts with the exact cubic. The fixed \(\alpha=1\) complex-zero-decreasing question and the complete parameter classification remain unsettled here.
 
 ### Jutila's conjecture
 
