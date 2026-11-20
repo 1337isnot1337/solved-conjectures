@@ -30,3 +30,39 @@ For a fixed positive integer $h$, every $s$ in $[0,q)$ can be approximated from 
 \frac q4\le hE+2C_hR(X)\frac{q}{(\log q)^{\eta h}}.
 ```
 If $E/q\to0$, this forces $R(X)/(\log q)^L\to\infty$ for every fixed $L$. In the opposite direction $R(X)\le E$, since $X+1$ has one new point per run. The exact double-base representation theorem of Dimitrov, Jullien and Miller permits $h=O(\log q/\log\log q)$ with zero error for every $s$, so all half-density sets satisfy $E\gg q\log\log q/\log q$. These estimates leave open the required uniform linear expansion. [Dimitrov–Jullien–Miller, Theorem 1](https://www.acsel-lab.com/arithmetic/arith13/papers/ARITH13_Dimitrov_theory.pdf)
+
+## A Fourier criterion in both directions
+
+For a dyadic order $q$, write $\gamma_q$ for the best lower bound on the nonzero Fourier modes obtained by weighting the shifts. In formulas,
+```math
+\gamma_q=\max_{\substack{w_s\ge0\\ \sum_{s\in S_q}w_s=1}}\
+\min_{j\ne0\bmod q}\
+\sum_{s\in S_q}w_s\bigl(1-\cos(2\pi js/q)\bigr).
+```
+A positive lower bound on $\gamma_q$ for all sufficiently large $q$ proves essentiality. In the other direction, $\gamma_q\log(2|S_q|)\to0$ along a sequence of dyadic orders disproves it. The first argument is the usual Fourier expansion estimate used in the theory of essential components. The second gives a rate at which a small optimum creates a single set with a small **union** of translated boundaries. [Ruzsa, Essential Components](https://doi.org/10.1112/plms/s3-54.1.38) · [Ge–Lê, Lemma 10](https://home.olemiss.edu/~leth/papers/essential_components.pdf)
+
+For a half-density set $X$, let $f=1_X$ and use Fourier coefficients normalized by $1/q$. Parseval gives
+```math
+\frac1q\sum_{s\in S_q}w_s|(X+s)\setminus X|
+=\sum_{j\ne0}|\widehat f(j)|^2\sum_{s\in S_q}w_s(1-\cos(2\pi js/q))
+\ge \frac{\gamma_q}{4}
+```
+when the weights maximize the lower bound. The union of the translated boundaries has at least their weighted mean size.
+
+For the converse, finite minimax gives a probability distribution $\mu$ on the nonzero frequencies such that, for every $s\in S_q$,
+```math
+\sum_{j\ne0}\mu_j(1-\cos(2\pi js/q))\le\gamma_q.
+```
+Take independent standard real Gaussian variables $U_j,V_j$ and set
+```math
+Z_x=\sum_{j\ne0}\sqrt{\mu_j}\bigl(U_j\cos(2\pi jx/q)+V_j\sin(2\pi jx/q)\bigr),\qquad
+X=\{x:Z_x\ge0\}.
+```
+Each $Z_x$ has standard normal law. The process is stationary, and every increment $Z_{x-s}-Z_x$ for $s\in S_q$ has variance at most $2\gamma_q$. For a point in $(X+S_q)\setminus X$, either $|Z_x|\le t$ or some such increment has magnitude at least $t$. Therefore
+```math
+\mathbb E\frac{|(X+S_q)\setminus X|}{q}
+\le O(t)+2|S_q|\exp\bigl(-t^2/(4\gamma_q)\bigr).
+```
+For $L=\log(2|S_q|)$, choose $t=(\gamma_q L)^{1/4}$. If $\gamma_q L\to0$, both terms tend to zero.
+
+The random density $b=|X|/q$ has a positive probability of staying bounded away from zero and one. Indeed the correlations $r(y)=\mathbb E[Z_x Z_{x+y}]=\sum_{j\ne0}\mu_j\cos(2\pi jy/q)$ have average zero over $y$. At least a third of the shifts have $r(y)\le1/2$, since all correlations are at least $-1$. For such a shift the chance of opposite Gaussian signs is $\arccos(r(y))/\pi\ge1/3$, by rotational invariance of two independent standard Gaussians. Consequently $\mathbb E[2b(1-b)]\ge1/9$, giving a fixed positive probability that $b$ stays in a closed subinterval of $(0,1)$. Markov's inequality on the expansion then gives realizations simultaneously of intermediate density and vanishing normalized expansion. The density adjustment and concatenation above produce an infinite counterexample under the stated spectral hypothesis.
