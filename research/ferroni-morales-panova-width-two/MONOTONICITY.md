@@ -1,6 +1,6 @@
 # Ferroni–Morales–Panova conjecture: linear-coefficient monotonicity obstruction
 
-**Status:** rigorous counterexample to an auxiliary *monotonicity strategy*, **not** to Ferroni–Morales–Panova's Conjecture 7.1. Both posets below satisfy its predicted coefficient positivity. This is part of the ongoing work in [issue #105](https://github.com/1337isnot1337/solved-conjectures/issues/105).
+**Status:** rigorous counterexample to an auxiliary *monotonicity strategy*, **not** to Ferroni–Morales–Panova's Conjecture 7.1. Every poset exhibited below satisfies its predicted coefficient positivity. This is part of the ongoing work in [issue #105](https://github.com/1337isnot1337/solved-conjectures/issues/105).
 
 ## Statement
 
@@ -57,7 +57,47 @@ c_1(P)=\frac{2\cdot4}{120}=\frac1{15},\qquad
 c_1(Q)=\frac{2\cdot3\cdot1}{120}=\frac1{20}.
 \]
 
-Therefore \(P\subset Q\) as order relations but \(c_1(Q)<c_1(P)\). The reverse monotonicity assertion is also false: the two-element antichain has c₁=0, while the two-element chain has c₁=1/2. Consequently c₁ has **no universal monotonicity direction** under adding comparabilities, even within width at most two. QED.
+Therefore \(P\subset Q\) as order relations but \(c_1(Q)<c_1(P)\). The reverse monotonicity assertion is also false: the two-element antichain has c₁=0, while the two-element chain has c₁=1/2. Consequently c₁ is not universally nondecreasing when cross-chain relations are added. The reverse failure, still within connected width-two posets, is proved below. QED.
+
+## Opposite direction: an increase within the same connected width-two class
+
+The reverse monotonicity assertion fails without passing through a chain or a disconnected poset.
+
+Define R by the chains \(a_1<a_2\), \(b_1<b_2<b_3\), plus cross relations \(a_1<b_1\) and \(a_2<b_3\), with their transitive consequences. Define S by adding **only** \(b_1<a_2\) to R. Both have exactly width two: in S the pair \(a_2,b_2\) remains incomparable. Both have a unique minimal element \(a_1\) and a unique maximal element \(b_3\), and are thus connected.
+
+**Proposition.** For these posets,
+
+\[
+\boxed{\Omega(R;t)=\frac{t(t+1)(t+2)(t+3)(3t+2)}{120}},\tag{5}
+\]
+
+\[
+\boxed{\Omega(S;t)=\frac{t(t+1)(t+2)(t+3)(2t+3)}{120}}.\tag{6}
+\]
+
+Hence \(c_1(R)=1/10\) while \(c_1(S)=3/20\), so \(c_1\) **increases** when one cross-chain relation is added.
+
+**Direct counting proof.** For a weakly order-preserving map \(f\colon R\to[t]\), fix \(x=f(a_1)\) and \(y=f(b_3)\), and put \(r=y-x+1\). In R the middle variables consist of the free element \(a_2\), with \(r\) possible values, and an independent weakly increasing pair \(b_1\le b_2\), with \(\binom{r+1}{2}\) possibilities. For fixed interval length \(r\), there are \(t-r+1\) choices of \(x\). Thus
+
+\[
+\Omega(R;t)=\frac12\sum_{r=1}^{t}(t-r+1)r^2(r+1).\tag{7}
+\]
+
+In S the middle variables are \(b_1\le a_2\) and \(b_1\le b_2\), with \(a_2,b_2\) incomparable. For a fixed value of \(b_1\), the two upper variables can be chosen independently. The number of middle assignments on an interval of length \(r\) is \(\sum_{s=1}^{r}s^2=r(r+1)(2r+1)/6\). Therefore
+
+\[
+\Omega(S;t)=\frac16\sum_{r=1}^{t}(t-r+1)r(r+1)(2r+1).\tag{8}
+\]
+
+Power sums give (5)–(6). Alternatively the two sums at \(t=0,1,2,3,4,5\) equal respectively
+
+\[
+(0,1,8,33,98,238),\qquad (0,1,7,27,77,182).
+\]
+
+The order polynomials have degree at most five; (5) and (6) match the six integer evaluations, and hence agree identically. Taking the coefficient of \(t\) gives the claimed strict increase. QED.
+
+**Combined conclusion:** Even when both the initial and final posets are connected and have width *exactly* two, adding a single cross-chain relation can either increase or decrease \(c_1\). Equations (1)–(8) provide exact five-element examples of both signs. All four displayed order polynomials still have nonnegative coefficients and furnish **no counterexample** to the named conjecture.
 
 ## Scope and next step
 

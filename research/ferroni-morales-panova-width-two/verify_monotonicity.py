@@ -26,3 +26,27 @@ assert scaled_coefficients(p) == [0, 8, 30, 45, 30, 7]
 assert scaled_coefficients(q) == [0, 6, 35, 50, 25, 4]
 assert scaled_coefficients(q)[1] < scaled_coefficients(p)[1]
 print("PASS: c1 decreases from 1/15 to 1/20 by adding b3<a2")
+
+
+def count_r(t):
+    # R: a1 global minimum; b3 global maximum;
+    # independent middle a2 and b1<b2.
+    return sum((t-r+1)*r*r*(r+1)//2 for r in range(1, t+1))
+
+
+def count_s(t):
+    # S: R plus b1<a2; middle b1<a2 and b1<b2.
+    return sum((t-r+1)*r*(r+1)*(2*r+1)//6 for r in range(1, t+1))
+
+
+r = omega_values(2, 3, [0, 1, 1, 2], [0, 0, 0])
+s = omega_values(2, 3, [0, 1, 1, 2], [0, 0, 1])
+assert r == [0, 1, 8, 33, 98, 238]
+assert s == [0, 1, 7, 27, 77, 182]
+for t in range(6):
+    assert r[t] == count_r(t)
+    assert s[t] == count_s(t)
+assert scaled_coefficients(r) == [0, 12, 40, 45, 20, 3]
+assert scaled_coefficients(s) == [0, 18, 45, 40, 15, 2]
+assert scaled_coefficients(s)[1] > scaled_coefficients(r)[1]
+print("PASS: c1 increases from 1/10 to 3/20 by adding b1<a2")
