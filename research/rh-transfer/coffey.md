@@ -137,4 +137,4 @@ The present note does not claim priority for the RH implication or that search s
 
 ## Review status
 
-Complete written deduction. Awaiting independent review of the normalization, exact original scope, and historical qualifications.
+Complete written deduction. Root independently checked the normalization against Coffey's equation (37), Lagarias's Definition 4.2 and equation (4.8), and Theorem 6.1. The review passed and is recorded in [issue #118, comment 7049574158](https://github.com/1337isnot1337/solved-conjectures/issues/118#issuecomment-7049574158). The inherited estimate and the distinct stronger conjecture remain separated. This is internal mathematical review, not external peer review or formal verification.
