@@ -15,6 +15,23 @@ Theorem 6.3 also passes. This is a mathematical review, not a certification
 that the conjecture has no earlier resolution. The newly located 2010
 theorem must be disclosed in the priority assessment.
 
+### Review of the explicit manuscript
+
+I subsequently read every section of `EXPLICIT_PROOF.md` at commit
+`4f78ff027035b80c238165db1aefbe86ab071059`. That written proof also passes.
+The probability measures in equation (7) have the stated normalization;
+the summable-mean bound proves that their independent sum is finite; and
+the finite product in equation (11) has the correct orientation. The
+independent gamma variable cancels the extra gamma factor. The two beta
+variables then extend existence to every parameter at least thirteen
+thirtieths, including the equality case handled separately. Triplication
+and exponential integrability give the exact Le Roy function. The upper
+endpoint of the counterexample interval is correctly obtained by solving
+the scalar violation at one sixty-fourth. Its integer certificate is
+equivalent to the certificate checked below. No mathematical correction
+is required. The explicit manuscript credits Dufresne's construction and
+leaves the prior-resolution assessment separate.
+
 ## Source and scope
 
 Thomas Simon's [primary preprint](https://arxiv.org/pdf/2012.11018),
