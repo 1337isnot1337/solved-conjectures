@@ -1,5 +1,24 @@
 # History
 
+## 2026-11-20 — Karp–Vishnyakova–Zhang's gamma-quotient conjecture
+
+Added a complete proof of all-order sign regularity for the additive gamma
+quotient with every positive parameter difference. An explicit Wronskian gives
+the signs for the power kernel; two gamma-density integral transforms transfer
+those signs to the quotient through continuous Cauchy–Binet. The proof includes
+absolute integrability, strictness, all integer rank cutoffs, and translated
+domains with positive gamma arguments.
+
+The source's proposed fixed third-order signature is corrected within the same
+result. Two independent reviews of the full proof passed. A standard-library
+verifier passed 115 exact rational checks of half-integer signs, integer rank,
+and gamma-moment normalization. These finite diagnostics are supplementary to
+the all-parameter proof. The source audit records both search engines, primary
+theorem comparisons, public solution checks, and inaccessible-source limits.
+No external peer review or absolute priority guarantee is claimed.
+
+[Proof, source audit, and exact checks](results/kvz-gamma-quotient/).
+
 ## 2026-11-20 — Alexandersson's Fuss–Catalan conjecture
 
 Recorded a short uniform deduction of the named real-rootedness conjecture.

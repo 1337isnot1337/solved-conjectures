@@ -20,6 +20,7 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 
 | Result | Finding | Lean | Evidence |
 | :--- | :--- | :---: | :--- |
+| [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | The gamma quotient is sign regular at every order for every positive parameter difference. The exact signature and integer rank cutoff are proved; the source's fixed third-order signature is corrected. | No | [Proof](results/kvz-gamma-quotient/PROOF.md) · [Exact checks](results/kvz-gamma-quotient/verify.py) · [Literature check](results/kvz-gamma-quotient/NOVELTY.md) |
 | [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | A short classical deduction proves real-rootedness for all parameters: changing the Fuss parameter only multiplies the known ordinary-Dyck polynomial by a positive scalar. Prior-resolution audit qualified. | No | [Proof](results/alexandersson-fuss-catalan/PROOF.md) · [Convention checks](results/alexandersson-fuss-catalan/verify.py) · [Attribution and source limits](results/alexandersson-fuss-catalan/NOVELTY.md) |
 | [Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/) | The full closure assertion is false: two Hankel kernels are strictly sign regular in every order, but their pointwise product has order-two minors of both signs. | No | [Proof](results/kvz-hankel-product/PROOF.md) · [Exact certificates](results/kvz-hankel-product/verify.py) · [Literature check](results/kvz-hankel-product/NOVELTY.md) |
 | [Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture](results/kvz-reciprocal-qgamma/) | The reciprocal q-gamma kernel is strictly sign regular of every order for every $0<q<1$ and all increasing positive argument lists. The exact signature and an explicit positive minor bound are proved. | No | [Proof](results/kvz-reciprocal-qgamma/PROOF.md) · [Exact checks](results/kvz-reciprocal-qgamma/verify.py) · [Literature check](results/kvz-reciprocal-qgamma/NOVELTY.md) |
@@ -83,6 +84,8 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 See [docs/lean-status.md](docs/lean-status.md) for exact formalized statements and gaps.
 
 ## Precise scope
+
+The gamma-quotient result proves the full all-order assertion in Karp–Vishnyakova–Zhang's Section 3, item 11 for all positive gamma arguments and every $c-d>0$. The parameter-dependent signs and integer finite-rank cases belong to this single theorem. The subsidiary order-three sign correction is not counted separately.
 
 The reciprocal q-gamma result proves Karp–Vishnyakova–Zhang's entire Section 3, item 8 conjecture, with determinant signature $(-1)^{\binom r2}$ at every order $r$. The positive q-gamma kernel, ordinary-gamma analogue, and neighboring series-Turanian or Bessel-ratio questions are separately attributed and are not counted as new resolutions here.
 
