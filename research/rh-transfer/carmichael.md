@@ -4,7 +4,7 @@
 
 **Open in this research attempt.** The accepted rational Dirichlet GRH package does yield the complete theorem in §4: Pomerance's 1974 sufficient criterion for a counterexample can never hold. That theorem does not prove Carmichael's conjecture, because the sufficient criterion has not been shown necessary. It also does not prove the stronger prime-product assertion explicitly called Pomerance's conjecture in Barthel–Müller [BM, Conjecture 10].
 
-This file records the exact transferable result and the multiplicative obstruction. It is not counted as a completed named-conjecture resolution.
+This file records the exact transferable result and the multiplicative obstruction. Carmichael's full conjecture is not counted as resolved. The original Pomerance nonexistence statement is now documented separately, with its own scope and audit, in [pomerance.md](pomerance.md) and [issue #129](https://github.com/1337isnot1337/solved-conjectures/issues/129).
 
 Source dependency: `1337isnot1337/riemann-hypothesis-solved`, accepted pin `9d5316ec73f5df89c4d95703ed106837b8a4060e`, through rational Dirichlet GRH. No general Hecke/Artin GRH or Lean verification is used. The mathematical implication below remains conditional on the accepted package when considered independently of that repository.
 
@@ -229,7 +229,7 @@ Primary comparisons:
 - [P74], [F13], and [BM] distinguish the sufficient counterexample criterion from Carmichael's full assertion. [BM] separately identifies the stronger ordered prime-product conjecture.
 - The 2025 article of Shannon, Shiue, He, and Saito [S25] studies special cases and explicitly retains the full conjecture as open. It is a current primary status check, not a theorem completing this target.
 
-No claim of priority is made for the corollary in §4. It is recorded as a complete implication extracted here from the published Ford–Luca theorem. No independent review of this file has yet been recorded.
+No claim of exclusive priority is made for §4. The original 1974 abstract expressly conjectures the entire no-(P) statement; the separate [Pomerance note](pomerance.md) records the expanded prior-art audit and exact naming distinction. An independent internal reviewer checked the full §4 proof, including p=2 and the tree induction: [review receipt](https://github.com/1337isnot1337/solved-conjectures/issues/126#issuecomment-7049900536). The reviewer's source-access correction and subsequent primary-text verification are recorded in [comment 7049939194](https://github.com/1337isnot1337/solved-conjectures/issues/126#issuecomment-7049939194) and [comment 7049949591](https://github.com/1337isnot1337/solved-conjectures/issues/126#issuecomment-7049949591). No visual inspection or external peer review is claimed.
 
 ## References
 
