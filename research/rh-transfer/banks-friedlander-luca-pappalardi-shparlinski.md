@@ -71,7 +71,7 @@ p^b\parallel n_0.
 A larger valuation would force \(p^{a+1}\mid L\). A smaller valuation would allow multiplication of \(n_0\) by \(p\) without changing lambda, since the new prime-power contribution still divides \(L\).
 
 For every prime \(r\) with \(f(r)<p^{a+1}\), we claim \(r^2\mid n_0\). Induct on \(r\). The case \(r=2\) is covered already. For each prime-power factor \(s^c\parallel r-1\), either \(c\ge2\), in which case
-\(s^c\le f(r)<p^{a+1}\) and therefore \(s^c\mid L\), or \(c=1\), in which case \(f(s)<p^{a+1}\). The inductive hypothesis then gives \(s^2\mid n_0\), hence \(s\mid L\). It follows that \(r-1\mid L\), and the previous paragraph gives \(r^2\mid n_0\).
+\(s^c\le f(r)<p^{a+1}\) and therefore \(s^c\mid L\), or \(c=1\), in which case \(f(s)<p^{a+1}\). The inductive hypothesis then gives \(s^2\mid n_0\). For odd \(s\), this implies \(s\mid L\); for \(s=2\), the earlier fact \(16\mid n_0\) supplies \(2\mid L\). It follows that \(r-1\mid L\), and the previous paragraph gives \(r^2\mid n_0\).
 
 Choose \(q\) from (3). Then \(q>p\), \(q^2\mid n_0\), and
 \[
@@ -119,3 +119,7 @@ These are bounded searches. They support treating (1) as a candidate full conseq
 ## Review status
 
 Complete inherited deduction, with the original theorem and the arithmetic implication inspected by root. Independent review is requested. No Lean verification or external peer review is claimed.
+
+## Independent review
+
+On 20 November 2026, a separate analytic worker checked the entire implication against both Ford–Luca PDF versions. The review confirmed the exact Dirichlet-ERH hypothesis, the theorem-number mapping, the minimal-counterexample argument, and all valuations at the prime 2. Its one requested clarification, explicitly using \(16\mid n_0\) in the prime-2 induction step, is included above. The review receipt is [issue #120, comment 7049648213](https://github.com/1337isnot1337/solved-conjectures/issues/120#issuecomment-7049648213). Internal review is not external peer review.
