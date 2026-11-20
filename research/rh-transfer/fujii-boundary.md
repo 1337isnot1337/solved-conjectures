@@ -213,3 +213,177 @@ Directed searches for Fujii with Chebyshev, boundary, singularity, reflection, a
 The reflection identity, both signs in (7)–(8), the local representative on the negative interval, and the use of a negative-support test function were independently checked by a second research agent before this checkpoint.
 
 This is a replacement lemma within the same named-conjecture argument, not an additional solved-target count.
+
+## 7. A positive value at a specified phase
+
+The same boundary calculation gives a more precise result:
+
+~~~math
+F_\alpha(0)
+=\left(\frac12-\frac1e\right)\log\alpha+O(1)
+\qquad(\alpha\to\infty).
+\tag{13}
+~~~
+
+In particular, the positive phase in Section 4 can be chosen to be exactly zero for every sufficiently large alpha. This statement concerns the almost-periodic zero series; recurrence is still applied before passing to large prime-sum arguments.
+
+### 7.1. Excluding a term supported at zero
+
+The punctured formulas (6) and (4) alone do not rule out a distribution supported exactly at zero. That issue must be settled before convolving R against a kernel concentrated at zero.
+
+For real sigma>0,
+
+~~~math
+\beta(\sigma)
+=\sum_{n\ge0}
+ \big((4n+1)^{-\sigma}-(4n+3)^{-\sigma}\big)>0.
+~~~
+
+The paired series converges absolutely, so beta(1/2)>0. Consequently no nontrivial zero has gamma=0. Define
+
+~~~math
+Q(t)=-t-\sum_\rho\frac{e^{i\gamma t}}{i\gamma\rho}.
+\tag{14}
+~~~
+
+The oscillatory series converges absolutely and uniformly: there are finitely many bounded-height zeros, none has gamma=0, and the remaining coefficients have a convergent majorant of order 1/gamma squared. Thus Q is continuous and Q'=R in distributions.
+
+Let R_0 denote the ordinary representative supplied by the explicit formula for t>0 and by (4) for t<0. Assign any value at zero. The logarithmic behavior (7)–(8) makes R_0 locally integrable. Define its continuous, locally absolutely continuous primitive
+
+~~~math
+P(t)=\int_0^t R_0(u)\,du.
+~~~
+
+On each open half-line, (Q-P)'=0 in distributions. Hence Q-P is constant on each half-line. Both Q and P are continuous at zero, so the constants agree. Therefore Q-P is constant on the whole line and
+
+~~~math
+R=R_0
+\quad\hbox{as distributions on }\mathbb R.
+\tag{15}
+~~~
+
+This excludes every additional term supported at zero without assuming pointwise convergence of the original undamped zero sum.
+
+Under beta GRH, the usual explicit-formula estimate gives
+psi_chi(e^t)=O(e^(t/2)(1+t)^2) for t bounded away from zero. Formula (5), followed by reflection for negative t, yields
+
+~~~math
+R_0(t)=O_\delta(1+t^2)\qquad(|t|\ge\delta)
+\tag{16}
+~~~
+
+for every fixed delta>0, with the ordinary one-sided values at jumps. No zeta RH input is required.
+
+### 7.2. The exact convolution
+
+Set
+
+~~~math
+k_\alpha(v)=\alpha
+ \exp\big((\alpha+\tfrac12)v-e^{\alpha v}\big).
+\tag{17}
+~~~
+
+For each fixed alpha>0 this is a Schwartz function. Its Fourier moments, by u=e^(alpha v), are
+
+~~~math
+\int_{\mathbb R}k_\alpha(v)\,dv
+=\Gamma(1+\tfrac1{2\alpha}),
+\qquad
+\int_{\mathbb R}k_\alpha(v)e^{i\gamma v}\,dv
+=\Gamma(1+\tfrac{\rho}{\alpha}).
+~~~
+
+Pairing (1) with k_alpha and using the Gamma functional equation gives
+
+~~~math
+\begin{aligned}
+\langle R,k_\alpha\rangle
+&=-\Gamma(1+\tfrac1{2\alpha})
+ -\sum_\rho
+    \frac{\Gamma(1+\rho/\alpha)}{\rho}\\
+&=-\frac{\Gamma(1/(2\alpha))}{2\alpha}
+ -\sum_\rho\frac{\Gamma(\rho/\alpha)}{\alpha}\\
+&=F_\alpha(0).
+\end{aligned}
+\tag{18}
+~~~
+
+The test-function pairing is justified by absolute convergence in the zero sum. Equation (15) converts (18) to the ordinary integral of R_0(v)k_alpha(v).
+
+Choose 0<delta<log 3 fixed. By (16), the integral over |v|>=delta is O(exp(-c alpha)) for some c>0 as alpha tends to infinity. For the negative tail this follows directly from k_alpha(v)<=alpha exp((alpha+1/2)v). For the positive tail, substitute w=alpha v and use the superexponential decay of exp(w-e^w). Polynomial factors from (16) do not change these conclusions.
+
+### 7.3. Rescaling the local singularity
+
+Combining (7)–(8),
+
+~~~math
+R_0(v)
+=-\frac12\operatorname{sgn}(v)
+       \log\frac1{|v|}+O(1)
+\qquad(0<|v|<\delta),
+\tag{19}
+~~~
+
+where the O(1) is uniform on both sides. Put
+
+~~~math
+q(w)=\exp(w-e^w),\qquad w=\alpha v.
+~~~
+
+Then k_alpha(v)dv=q(w)exp(w/(2alpha))dw. The bounded remainder in (19) integrates to O(1), since the total mass is Gamma(1+1/(2alpha)), uniformly bounded for alpha>=1. The tails are negligible, so (18)–(19) give
+
+~~~math
+F_\alpha(0)
+=-\frac12\log\alpha\, J_\alpha
++\frac12 L_\alpha+O(1),
+\tag{20}
+~~~
+
+where
+
+~~~math
+J_\alpha=\int_{\mathbb R}
+ \operatorname{sgn}(w)q(w)e^{w/(2\alpha)}\,dw,
+\qquad
+L_\alpha=\int_{\mathbb R}
+ \operatorname{sgn}(w)\log|w|\,
+ q(w)e^{w/(2\alpha)}\,dw.
+~~~
+
+Extending the local integrals to the whole line changes (20) by O(1), using exponential decay as w tends to minus infinity, superexponential decay as w tends to plus infinity, and local integrability of log|w|.
+
+The elementary bound
+
+~~~math
+|e^{w/(2\alpha)}-1|
+\le\frac{|w|}{2\alpha}e^{\max(w,0)/2}
+\qquad(\alpha\ge1)
+~~~
+
+and integrability of the corresponding q-weighted moment show
+
+~~~math
+J_\alpha
+=\int_{\mathbb R}\operatorname{sgn}(w)q(w)\,dw
+ +O(\alpha^{-1}).
+\tag{21}
+~~~
+
+Also L_alpha=O(1) uniformly for alpha>=1: near zero the only singularity is log|w|, and the two tails have the decay just stated.
+
+Finally, u=e^w gives
+
+~~~math
+\int_{-\infty}^0 q(w)\,dw
+=\int_0^1 e^{-u}\,du=1-e^{-1},
+\qquad
+\int_0^\infty q(w)\,dw
+=\int_1^\infty e^{-u}\,du=e^{-1}.
+~~~
+
+Thus J_alpha=2/e-1+O(1/alpha). Substitution into (20) proves (13).
+
+The coefficient 1/2-1/e is positive. This supplies a direct positive value, rather than only a positive test pairing, for every sufficiently large alpha. It also identifies why a sharp exponential-power cutoff changes the sign: its logarithmic convolution kernel assigns more mass to the positive singularity on the negative side.
+
+The convolution orientation, coefficient, point-supported ambiguity, and tail estimates were independently checked by two agents. Directed searches for Fujii with large alpha, log alpha, 1/e, and counterexample returned the previously cited literature but no earlier statement of (13) or of the full large-alpha oscillation conclusion. This is a bounded priority check, not a proof that the deduction is unpublished. The target count remains one.
