@@ -322,7 +322,7 @@ The definition on page 108 ranges over irreducible unitary cuspidal representati
 
 - **J. C. Lagarias**, *Li coefficients for automorphic L-functions*, *Annales de l'Institut Fourier* **57** (2007), 1689–1740, [published article](https://www.numdam.org/articles/10.5802/aif.2311/), [preprint](https://arxiv.org/pdf/math/0404394). Its positivity criterion and logarithmic-derivative identities are established inputs, not new claims here.
 - **K. Mazhouda**, *On the Li coefficients for the Dirichlet L-functions*, *Monatshefte für Mathematik* **170** (2013), 405–423, DOI [10.1007/s00605-012-0436-3](https://doi.org/10.1007/s00605-012-0436-3). Its reported result concerns Dirichlet characters. An imaginary norm twist is a unitary Hecke character and is not itself a Dirichlet character.
-- **S. Omar and R. Ouni**, *A note on Li's coefficients for Hecke L-functions*, *International Journal of Number Theory* **13** (2017), 1747–1760, DOI [10.1142/S1793042117501007](https://doi.org/10.1142/S1793042117501007). Its public abstract reports an RH-equivalence for monotonicity in its Hecke setting. The present note does not claim to refute that separate paper or silently extend its statement to all unitary norm twists.
+- **S. Omar and R. Ouni**, *A note on Li's coefficients for Hecke L-functions*, *International Journal of Number Theory* **13** (2017), DOI [10.1142/S1793042117501007](https://doi.org/10.1142/S1793042117501007). Its public abstract reports an RH-equivalence for monotonicity in its Hecke setting. The present note does not claim to refute that separate paper or silently extend its statement to all unitary norm twists.
 - **A.-M. Ernvall-Hytönen, A. Odžak, L. Smajlović, and M. Šušić**, *On the modified Li criterion for a certain class of L-functions*, *Journal of Number Theory* **156** (2015), 340–367, [publisher record](https://www.sciencedirect.com/science/article/pii/S0022314X15001481). This develops modified coefficients and studies certain products of shifted zeta functions; the retrieved statement does not resolve the 2026 universal monotonicity conjecture.
 
 Searches on 20 November 2026 used the authors' names, exact title, DOI, “Li coefficients” with “monotonicity,” “increasing,” “counterexample,” “unitary,” “imaginary twist,” and “central zero,” including current indexed material. They found no earlier refutation of the exact 2026 statement or this twist counterexample. This is a bounded prior-art audit, not proof of exclusive priority.
@@ -331,6 +331,11 @@ The older finite numerical computations and the published Dirichlet or modular-f
 
 ## Review status
 
-The exact certificate and full argument are committed for independent review. The main review gates are the original representation scope, the real-part identity (6), the disk remainder (10), all outward rounding operations, and the finite-to-infinite tail bounds.
+The complete argument passed two independent internal reviews:
+
+- [Analytic-targets review](https://github.com/1337isnot1337/solved-conjectures/issues/124#issuecomment-7049839337) inspected and independently ran the exact certificate. It checked the dyadic interval operations, elementary-function remainder bounds, derivative jets, gamma tails, Euler–Maclaurin disk bound, and Cauchy factors.
+- [Root review](https://github.com/1337isnot1337/solved-conjectures/issues/124#issuecomment-7049870616) independently downloaded and inspected the publisher PDF, confirmed the original class and absence of a norm-central-character normalization, checked the real-part derivative identity, and inspected and ran the certificate.
+
+Both reviews passed the displayed strict decrease. The current prior-art search found no earlier refutation of the exact universal statement; exclusive priority remains unclaimed.
 
 Internal review is not external peer review or Lean verification.
