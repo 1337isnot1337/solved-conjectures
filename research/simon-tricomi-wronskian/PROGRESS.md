@@ -1,6 +1,6 @@
 # Simon's Tricomi-Wronskian conjecture
 
-Date: 20 November 2026. Status: research in progress; no resolution claimed. [Issue 103](https://github.com/1337isnot1337/solved-conjectures/issues/103).
+Date: 20 November 2026. Status: checkpointed while an independent review of another candidate is prioritized; no resolution claimed. [Issue 103](https://github.com/1337isnot1337/solved-conjectures/issues/103).
 
 ## Exact target
 
@@ -47,7 +47,7 @@ follow by differentiation under the integral. The determinant entries are
 A_{ij}(z)=(a+j)_i I_{a+i+j}(z).
 ```
 
-Consequently, its derivative is the negative of b times the sum of determinants obtained by replacing the parameter b by $`b+1`$ in exactly one column's Tricomi functions, leaving the Pochhammer factors unchanged. A sufficient route would be nonnegativity of every one-column replacement, with at least one strictly positive. That stronger statement has not been proved.
+Consequently, its derivative is the negative of b times the sum of determinants obtained by replacing the parameter b by $`b+1`$ in exactly one column's Tricomi functions, leaving the Pochhammer factors unchanged. Nonnegativity of every one-column replacement would suffice, but that stronger statement is false. [FAILED-INVARIANT.md](FAILED-INVARIANT.md) proves a negative replacement determinant for a full parameter interval inside the remaining range. The sum of replacements still requires analysis.
 
 ### Why the direct positive-moment argument stops
 
@@ -107,7 +107,7 @@ That identity proves positivity in the relevant staircase induction. Strict decr
 
 This is floating-point evidence only. It establishes neither an exact finite certificate nor a general theorem. The diagnostic has a fixed small grid and no optimization or adaptive parameter search.
 
-A separate three-point diagnostic examined the individual one-column replacements at $`z=1`$, for $`(n,b,d)=(2,1/4,7/4),(3,5/4,7/4),(6,9/4,13/4)`$. All signs were positive. This only motivates the proposed stronger minor inequality; it does not prove it.
+A separate three-point diagnostic examined the individual one-column replacements at $`z=1`$, for $`(n,b,d)=(2,1/4,7/4),(3,5/4,7/4),(6,9/4,13/4)`$. All signs were positive. A subsequent exact small-argument asymptotic refuted that stronger inequality; see FAILED-INVARIANT.md. The earlier three positive signs were insufficient evidence.
 
 ## Prior-resolution screening and remaining gates
 
