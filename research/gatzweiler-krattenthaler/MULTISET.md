@@ -1,6 +1,6 @@
 # Symmetric first-coefficient search
 
-This is a failed construction search for the separate symmetric conjecture, not a proof of that conjecture. The arbitrary-exponent Conjecture 4 is already disproved in [the result directory](../../results/gatzweiler-krattenthaler/README.md).
+This is a failed construction search for the separate symmetric conjecture, not a proof of that conjecture. The arbitrary-exponent Conjecture 4 is already disproved in [the CoPEER archive](https://github.com/qqliu/CoPEER/blob/105523fdaf018b62eaf2883347724dfe79935611/mathematics/discoveries/entries/number-theory/fake-gaussian-positivity-counterexample.md).
 
 ## Construction being tested
 

@@ -2,7 +2,7 @@
 
 ## Scope of this continuation
 
-The [completed counterexample](../../results/gatzweiler-krattenthaler/) refutes the arbitrary-exponent Conjecture 4. This continuation concerns the separate **symmetric** Conjecture 3 in [the original paper](https://doi.org/10.1007/s11139-025-01285-2): for any positive integers $m,n$ and symmetric nonnegative integer exponents $a_i=a_{n+1-i}$, polynomiality of
+The [earlier CoPEER counterexample](https://github.com/qqliu/CoPEER/blob/105523fdaf018b62eaf2883347724dfe79935611/mathematics/discoveries/entries/number-theory/fake-gaussian-positivity-counterexample.md) refutes the arbitrary-exponent Conjecture 4. This continuation concerns the separate **symmetric** Conjecture 3 in [the original paper](https://doi.org/10.1007/s11139-025-01285-2): for any positive integers $m,n$ and symmetric nonnegative integer exponents $a_i=a_{n+1-i}$, polynomiality of
 ```math
 \prod_{i=1}^n \left(\frac{1-q^{m+i}}{1-q^i}\right)^{a_i}
 ```

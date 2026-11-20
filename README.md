@@ -21,14 +21,10 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
 | [Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture](results/kvz-bessel-unimodality/) | ⬜ |
-| [Simon's Le Roy conjecture](results/simon-le-roy/) | ⬜ |
 | [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ⬜ |
 | [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ⬜ |
-| [Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/) | ⬜ |
-| [Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture](results/kvz-reciprocal-qgamma/) | ⬜ |
 | [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | ⬜ |
-| [Karp's coefficient-positivity conjecture](results/karp-coefficient-positivity/) | ⬜ |
 | [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ⬜ |
 | [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ⬜ |
 | [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ |
@@ -42,7 +38,6 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
 | [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |
 | [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
-| [Gatzweiler–Krattenthaler conjecture](results/gatzweiler-krattenthaler/) | ⬜ |
 | [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
 | [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟢 |
 | [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |
@@ -53,10 +48,6 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
 | [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
 | [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
-
-[Karp's coefficient-positivity conjecture](results/karp-coefficient-positivity/), [Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture](results/kvz-reciprocal-qgamma/), and [Simon's Le Roy conjecture](results/simon-le-roy/) were also resolved before this campaign. Public archive proofs dated September and October 2026 were found during a later audit. Their proofs are retained with corrected attribution and excluded from new-resolution claims. The initial literature-search conclusions for these entries are withdrawn.
-
-[Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/) is retained as an elementary exposition of a previously resolved assertion. Simon's 2012 theorem already implies its full negation; it is excluded from new-resolution claims. The [prior implication](results/kvz-hankel-product/NOVELTY.md) supersedes the initial novelty audit.
 
 Entries are ranked approximately by relative mathematical significance, weighing generality, connection to established problems, and the scope of the result. This editorial order does not imply independent verification or priority.
 

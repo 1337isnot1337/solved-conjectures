@@ -45,7 +45,7 @@ Because the implication is short, the defensible wording is: a complete explicit
 
 ## Additional public-record check after a catalog false positive
 
-A separate binomial Eulerian audit found explicit October 2026 prior proofs even though the same specialist catalog still listed that target as open; see [the excluded research note](../../research/binomial-eulerian/PROOF.md). We therefore repeated the Chow audit against public issue and pull-request records.
+A separate binomial Eulerian audit found explicit October 2026 prior proofs even though the same specialist catalog still listed that target as open; see [the prior formal proof](https://github.com/PerAlexandersson/RealRooted/pull/1685). We therefore repeated the Chow audit against public issue and pull-request records.
 
 GitHub issue and pull-request searches for A066094 returned no prior result. Searches for Chow, type-D Eulerian, and type-D interlacing in PerAlexandersson/RealRooted found Chow-ring results, coordinator polynomials, and broader research programs, but no explicit proof of consecutive ordinary type-D Eulerian interlacing. In particular, [issue #2511](https://github.com/PerAlexandersson/RealRooted/issues/2511) proves real-rootedness for a different recurrence class and explicitly says consecutive interlacing is false for that class; [issue #2003](https://github.com/PerAlexandersson/RealRooted/issues/2003) is an open cross-degree ordering program, not a proof of this target.
 

@@ -16,6 +16,7 @@
 
 ## Collection layout
 
+- Exclude a named conjecture when an earlier proof, disproof, or published theorem settles its exact statement. If a later audit confirms a prior resolution, remove its result directory, duplicate writeups, index entries, and verifier references. Record the correction in `HISTORY.md` and preserve work on distinct open statements.
 - Put each result in `results/<stable-slug>/` with a `README.md` landing page, proof, and reproducible checks. Keep shared formalizations in `lean/`.
 - When adding or revising a result, update the compact index in `README.md`, its full entry in `CONTENTS.md`, its landing page, and the verification workflow and guide where relevant. Preserve precise scope and distinguish partial formalization from a complete result.
 - Use fenced `math` blocks for display equations. Use GitHub's dollar-backtick syntax for inline formulas containing Markdown punctuation. Write named operators as `\mathop{\mathrm{...}}` and use `\lt` when a less-than sign immediately precedes a letter.

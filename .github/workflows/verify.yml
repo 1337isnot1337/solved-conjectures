@@ -16,30 +16,21 @@ jobs:
           python-version: '3.12'
       - name: Check Bessel-ratio Wronskian identities and endpoint terms
         run: python results/kvz-bessel-unimodality/verify.py
-      - name: Check Simon Le Roy exact positive-law construction
-        run: python results/simon-le-roy/verify.py
       - name: Check Wright disproof curvature identities
         run: python results/ferreira-simon-wright/verify.py
       - name: Check gamma-quotient signs, rank, and moment normalization
         run: python results/kvz-gamma-quotient/verify.py
       - name: Check Fuss–Catalan path conventions and exact formula
         run: python results/alexandersson-fuss-catalan/verify.py
-      - name: Check Hankel-product counterexample certificates
-        run: python results/kvz-hankel-product/verify.py
-      - name: Check reciprocal q-gamma minors and product certificates
-        run: python results/kvz-reciprocal-qgamma/verify.py
       - name: Check Sagan–Swanson exact conditional probability models
         run: python results/sagan-swanson-normality/verify_model.py
-      - name: Check Karp coefficient positivity and marked-cycle identity
-        run: python results/karp-coefficient-positivity/verify.py
       - name: Check Bernardi–Morales determinant and tree identities
         run: |
           python results/bernardi-morales-delta/verify.py
           python results/bernardi-morales-delta/verify_events.py
-      - name: Check polynomial conjecture proofs and counterexample
+      - name: Check Gilmore and Chow polynomial conjectures
         run: |
           python -m pip install sympy==1.14.0
-          python results/gatzweiler-krattenthaler/verify.py
           python results/gilmore-crossing-nesting/verify.py
           python results/chow-conjecture/verify.py
       - name: Verify partial results at Hadamard order 2396

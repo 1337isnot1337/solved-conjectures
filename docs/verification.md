@@ -25,14 +25,6 @@ branches. These finite checks diagnose transcription errors; the
 [written argument](../results/kvz-bessel-unimodality/PROOF.md) proves the
 full classification for all orders and scales in the conjecture.
 
-The [Le Roy verifier](../results/simon-le-roy/verify.py) checks the exact
-partial fractions, positivity certificate, probability mass, finite
-product cancellations, triplication identities, beta moments, and the
-integer inequality defining a nonempty counterexample interval.
-The [written proof](../results/simon-le-roy/PROOF.md) supplies convergence
-of the infinite random sum and complete monotonicity for the whole
-parameter interval.
-
 The [Wright verifier](../results/ferreira-simon-wright/verify.py) checks
 the general curvature identity as an exact polynomial in three variables,
 its two parameter-polynomial specializations, and the displayed derivative
@@ -50,12 +42,6 @@ enumerates small paths directly to check the north/east convention and
 both marked factors against the classical formula. Its all-parameter
 real-rootedness proof is written separately and uses no numerical roots.
 
-The [Hankel-product verifier](../results/kvz-hankel-product/verify.py) checks
-two exact rational determinants and two rational bounds on exponential
-values. The all-order hypotheses on the two factors are established in the
-[written proof](../results/kvz-hankel-product/PROOF.md), independently of these
-arithmetic checks.
-
 The workflow also regenerates the two compact CUT certificate sources with
 `results/cut-arithmetic-periodicity/generate_weight_certificates.py` into a
 temporary directory and compares them byte for byte with the checked-in files.
@@ -66,17 +52,12 @@ recursive-game identities through `CutPeriodWeightTheorem`.
 ```bash
 python3 -m pip install sympy==1.14.0
 python3 results/kvz-bessel-unimodality/verify.py
-python3 results/simon-le-roy/verify.py
 python3 results/ferreira-simon-wright/verify.py
 python3 results/kvz-gamma-quotient/verify.py
 python3 results/alexandersson-fuss-catalan/verify.py
-python3 results/kvz-hankel-product/verify.py
-python3 results/kvz-reciprocal-qgamma/verify.py
 python3 results/sagan-swanson-normality/verify_model.py
-python3 results/karp-coefficient-positivity/verify.py
 python3 results/bernardi-morales-delta/verify.py
 python3 results/bernardi-morales-delta/verify_events.py
-python3 results/gatzweiler-krattenthaler/verify.py
 python3 results/gilmore-crossing-nesting/verify.py
 python3 results/chow-conjecture/verify.py
 python3 results/erdos-granville-pomerance-spiro/verify.py
@@ -150,8 +131,6 @@ The [status report](lean-status.md) records the exact statements checked and dep
 ## What the checks establish
 
 The two `results/bernardi-morales-delta/` verifiers use only the Python standard library. `verify.py` directly constructs the delta process and checks all membership coefficients for 71 fixed maps and 111,721 process pairs, including nonsurjective maps. It also checks 25 arbitrary-matrix determinant identities in sizes two through six. `verify_events.py` builds the source's cyclic I/J event matrices literally and compares every membership coefficient for 342 marked-surjection profiles and 438,952 exact determinants. These are independent finite checks of the [tree proof](../results/bernardi-morales-delta/PROOF.md) and [event proof](../results/bernardi-morales-delta/EVENT_PROOF.md), which cover every admissible parameter.
-
-`results/gatzweiler-krattenthaler/verify.py` checks the full cyclotomic factorization, exact polynomial division, degree, and negative coefficients of the counterexample. The [written proof](../results/gatzweiler-krattenthaler/proof.md) independently proves polynomiality, the negative coefficient, and dilation to an infinite family.
 
 `results/gilmore-crossing-nesting/verify.py` compares the literal matrix product and the independently implemented recurrence through row seven, and compares the first column with all perfect matchings on at most twelve vertices. All four variables remain formal. The [written proof](../results/gilmore-crossing-nesting/PROOF.md) proves the identity in every row.
 

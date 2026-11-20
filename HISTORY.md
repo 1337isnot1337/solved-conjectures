@@ -1,26 +1,25 @@
 # History
 
-## 2026-11-20 — Three prior-resolution corrections
+## 2026-11-20 — Removed previously resolved conjectures
 
-Withdrew new-resolution claims for Karp's coefficient-positivity conjecture,
-the reciprocal q-gamma conjecture, and Simon's Le Roy conjecture.
-Full public archive proofs predate this campaign: Principia Math In Progress
-MathDB 323156 and 349140 are dated 11 September 2026; Knowledge Sense's
-reciprocal q-gamma preprint is dated 13 October 2026. Root read all three
-complete ordinary mathematical proofs and confirmed the exact target scope.
+Removed the result entries and duplicate research writeups for Karp's
+coefficient-positivity conjecture, Karp–Vishnyakova–Zhang's reciprocal
+q-gamma and Hankel-product conjectures, Simon's Le Roy conjecture, and
+Gatzweiler–Krattenthaler's unrestricted shifted-product Conjecture 4.
+Earlier exact resolutions were established by Principia Math In Progress
+(MathDB 323156 and 349140), Knowledge Sense's October 2026 preprint,
+Simon's Beta–Gamma theorem, and the CoPEER archive. The
+[prior audits at the pre-removal revision](https://github.com/1337isnot1337/solved-conjectures/tree/a354c349b80c70bb575ffc0230d17c3ced5ec7f7/results)
+record the source and scope for each correction.
 
-The proofs and exact verifiers in this repository are preserved with corrected
-attribution. A different proof, a sharper coefficient bound, or an explicit
-parameter family does not make an already resolved named conjecture eligible.
-The initial literature searches missed these public archives. The campaign
-is rechecking the other records using global source-identifier searches and
-direct catalogue inspection, in addition to the existing primary-paper audits.
+Removed standalone research writeups for the previously resolved binomial
+Eulerian, intrinsic-volume sequence, and inverse-gamma Newton-series
+targets. The catalogue and verification instructions now describe the
+remaining collection.
 
-[Karp correction](results/karp-coefficient-positivity/NOVELTY.md) ·
-[Reciprocal q-gamma correction](results/kvz-reciprocal-qgamma/NOVELTY.md) ·
-[Le Roy correction](results/simon-le-roy/NOVELTY.md).
+## 2026-11-20 — Chow proof rendering
 
-Also replaced an obsolete bold-math command in the two Chow proof copies
+Replaced an obsolete bold-math command in the two Chow proof copies
 with standard mathematical markup after it blocked the research-site build.
 The mathematical statement is unchanged.
 
@@ -43,25 +42,6 @@ peer review or exclusive priority is claimed.
 
 [Proof, classification, exact checks, and source audit](results/kvz-bessel-unimodality/).
 
-## 2026-11-20 — Simon's Le Roy conjecture
-
-Added a complete disproof of the proposed necessary condition for complete
-monotonicity of the Mittag–Leffler function of Le Roy type. A positive
-Laplace-transform construction gives complete monotonicity for every beta
-at least 13/30 when alpha is one third and the exponent is two. The
-conjectured condition fails throughout an explicit nonempty interval
-starting at 13/30. This is an analytic family, not a numerical witness.
-
-The short proof specializes Dufresne's 2010 gamma-moment construction,
-which is credited explicitly. A separate proof uses Mellin inversion,
-strict density positivity, and uniform endpoint estimates. Root, algebra,
-and combinatorics reviewed the argument and the most relevant prior
-theorems. Exact rational construction checks passed. The source audit
-records the original conjecture, later papers, and full-text access
-limits; no external peer review or exclusive priority is claimed.
-
-[Proofs, exact construction checks, and prior-work audit](results/simon-le-roy/).
-
 ## 2026-11-20 — Ferreira–Simon's Wright log-concavity conjecture
 
 Added a complete disproof of the conjectured equivalence between the
@@ -79,21 +59,6 @@ current author records, later primary-paper comparisons, and full-text
 access limits. No outside peer review or exclusive priority is claimed.
 
 [Proof, source audit, and exact algebra](results/ferreira-simon-wright/).
-
-## 2026-11-20 — Hankel-product prior-resolution correction
-
-Withdrew the earlier novelty conclusion for
-[Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/).
-Simon's 2012 Beta–Gamma theorem and its final section-3 remark already give
-multiplicative totally positive factors whose pointwise product is not sign
-regular. Exponential changes of variables and a common translation give
-the full counterexample on the positive Hankel domain.
-
-The repository's elementary counterexamples remain mathematically valid.
-They are retained as exposition, with the prior implication documented,
-and excluded from claims of newly resolving an open conjecture. Root and
-algebra independently checked the primary theorem; root also inspected the
-PDF image and recorded the remark's missing-minus typographical error.
 
 ## 2026-11-20 — Karp–Vishnyakova–Zhang's gamma-quotient conjecture
 
@@ -131,40 +96,6 @@ paper; no unconditional novelty claim is made. This entry is distinguished
 from a new enumeration or a new root-preserving theorem.
 [Proof, classical attribution, and checks](results/alexandersson-fuss-catalan/).
 
-## 2026-11-20 — Karp–Vishnyakova–Zhang's Hankel-product conjecture
-
-Added a complete counterexample to closure of sign-regular Hankel kernels
-under pointwise products. The Cauchy kernel and the Gaussian Hankel kernel
-are both strictly sign regular in every order, but their product has
-order-two determinants of opposite signs. A second pair supplies entirely
-rational determinant witnesses.
-
-Independent internal reviews checked the full factor proofs and both
-counterexamples. The exact arithmetic verifier passed locally. The source
-audit records the original numbered conjecture, its continued assertion
-in the published article, and the distinction from total-positivity
-Hadamard closure and ordinary matrix multiplication. The initial prior-resolution conclusion was superseded by the correction
-above: Simon's 2012 theorem already implies the full negation. This entry is
-retained as exposition and is excluded from new-resolution claims.
-[Proof, source audit, and exact certificates](results/kvz-hankel-product/).
-
-## 2026-11-20 — Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture
-
-Added a complete proof that the reciprocal q-gamma Hankel kernel is strictly
-sign regular of every order throughout the conjectured positive domain.
-Two finite Cauchy–Binet expansions determine the signs; retaining a fixed
-positive summand under each limit proves strictness and gives an explicit
-minor lower bound. The known positive q-gamma kernel is an ingredient,
-not a second new-result claim.
-
-Two independent reviews checked the complete argument, exact source, signs,
-index-zero endpoint, and infinite-series limits. The standard-library
-verifier passed 1,983 rational q-Pochhammer minors, 48 finite identities,
-24 lower bounds, and 12 rigorous infinite-product interval certificates.
-The novelty record distinguishes neighboring resolutions and states the
-full-text access limit for the earlier positive-kernel paper.
-[Proof, source audit, and exact checks](results/kvz-reciprocal-qgamma/).
-
 ## 2026-11-20 — Sagan–Swanson conjecture
 
 Added a complete proof of asymptotic normality for all four q-Stirling
@@ -182,23 +113,6 @@ do not replace the asymptotic proof. The literature record distinguishes
 older row-distribution and fixed-parameter theorems, as well as the already
 resolved bottom-heaviness conjecture, and states the access limits.
 [Proof, source audit, and model checks](results/sagan-swanson-normality/).
-
-## 2026-11-20 — Karp's coefficient-positivity conjecture
-
-Added a complete proof of Conjecture 1 for all degrees, arbitrary positive
-real shifts, and every nonnegative strictly log-concave input sequence.
-A marked-cycle cancellation expresses the relevant coefficient differences
-as nonnegative unsigned-Stirling minors. A derivative quotient and integral
-then prove positivity, with an explicit strictly positive coefficient bound.
-
-Separate internal reviews checked the cancellation and the full written
-argument. The standard-library verifier passed locally: 46,230 literal
-colored permutations, 280 coefficient comparisons, 2,528 exact marked-cycle
-identities, and 120 original polynomials at rational shifts. The source audit
-separates this statement from previously resolved neighboring conjectures
-and records the limits of the literature search. No external peer review
-or author confirmation is claimed.
-[Proof, source audit, and checks](results/karp-coefficient-positivity/).
 
 ## 2026-11-20 — Bernardi–Morales's delta-process conjecture
 
@@ -218,10 +132,9 @@ The literature audit records checked sources and access limits. External
 peer review and author confirmation have not been obtained.
 [Result, both proofs, and checks](results/bernardi-morales-delta/).
 
-## 2026-11-20 — Gatzweiler–Krattenthaler, Gilmore, and Chow conjectures
+## 2026-11-20 — Gilmore and Chow conjectures
 
-Added an explicit infinite family disproving Gatzweiler–Krattenthaler's
-unrestricted shifted-product positivity conjecture, an all-row proof of
+Added an all-row proof of
 Gilmore's crossing–nesting matrix identity with an alignment refinement,
 and a proof of consecutive type-D Eulerian interlacing.
 
