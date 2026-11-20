@@ -53,3 +53,7 @@ Both available search engines were used for exact source/title terms and counter
 The earlier scope checks and access limits remain in [NOVELTY.md](NOVELTY.md). In particular, the separately typeset full journal body was not available through the public preview, and the Srivastava–Tomovski follow-up was not audited in full. Nothing in this additional archive check removes those limitations.
 
 This document records a strengthened search, not a change to the mathematical proof and not an assertion that every public repository or manuscript has been inspected.
+
+## Co-PEER extension of the audit
+
+The additional archive [qqliu/CoPEER](https://github.com/qqliu/CoPEER), at pinned revision `105523fdaf018b62eaf2883347724dfe79935611`, was searched for `2212.07974`, `Wright`, and `Ferreira`. The source identifier and author name returned no hits; the Wright hits were browser-key or TeX-arrow substrings. Its README and record organization were also inspected. A global exact-title query for `log-concavity of the Wright` returned only this repository's records. These additional checks found no exact prior resolution and do not change the bounded nature of the search.
