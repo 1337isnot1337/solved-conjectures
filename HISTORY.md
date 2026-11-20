@@ -1,5 +1,23 @@
 # History
 
+## 2026-11-20 — Ferreira–Simon's Wright log-concavity conjecture
+
+Added a complete disproof of the conjectured equivalence between the
+gamma-defined parameter threshold and log concavity of the Wright density.
+Gamma reflection and log convexity give a uniform summable coefficient
+bound. The resulting differentiated-series limit has explicit curvature
+of the wrong sign on entire intervals of admissible parameters, including
+strictly interior positive beta.
+
+The full written proof passed separate root and algebra reviews. Exact
+rational-polynomial checks passed for the general curvature identity and
+the displayed derivative values. The analytic convergence argument supplies
+the counterexample intervals. The source audit records both search engines,
+current author records, later primary-paper comparisons, and full-text
+access limits. No outside peer review or exclusive priority is claimed.
+
+[Proof, source audit, and exact algebra](results/ferreira-simon-wright/).
+
 ## 2026-11-20 — Hankel-product prior-resolution correction
 
 Withdrew the earlier novelty conclusion for

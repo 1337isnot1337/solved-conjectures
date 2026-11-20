@@ -18,6 +18,12 @@ The partial-result entries contain their replay commands for the [Frankl generat
 
 These are the commands in [the verification workflow](../.github/workflows/verify.yml). They include finite tests, exact certificates, and exhaustive searches; their mathematical roles are explained in the corresponding proof notes. A passing computation is not a claim that a full theorem has been formalized.
 
+The [Wright verifier](../results/ferreira-simon-wright/verify.py) checks
+the general curvature identity as an exact polynomial in three variables,
+its two parameter-polynomial specializations, and the displayed derivative
+values. The [analytic proof](../results/ferreira-simon-wright/PROOF.md) supplies
+the uniform convergence and whole intervals of counterexamples.
+
 The [gamma-quotient verifier](../results/kvz-gamma-quotient/verify.py)
 uses exact rational arithmetic for 115 checks of half-integer determinant
 signs, integer rank cutoffs, and gamma-moment normalization. The complete
@@ -44,6 +50,7 @@ recursive-game identities through `CutPeriodWeightTheorem`.
 
 ```bash
 python3 -m pip install sympy==1.14.0
+python3 results/ferreira-simon-wright/verify.py
 python3 results/kvz-gamma-quotient/verify.py
 python3 results/alexandersson-fuss-catalan/verify.py
 python3 results/kvz-hankel-product/verify.py
