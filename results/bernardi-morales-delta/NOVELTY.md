@@ -2,7 +2,7 @@
 
 ## Audit scope
 
-Search date: 20 November 2026. Target: the whole delta-process tree-probability identity, published as Conjecture 27 and numbered 21 in the original preprint. The source's separate event-determinant Conjecture 28 is outside the claim.
+Search date: 20 November 2026. Targets: the whole delta-process tree-probability identity, published as Conjecture 27 and numbered 21 in the original preprint, and its stronger event-determinant identity, published as Conjecture 28 and numbered 22 in the preprint. These two complete source statements are documented under one named conjecture investigation.
 
 No earlier proof, disproof, or announcement of a resolution was located in the searches below. This records the evidence and its limits; absence from search results cannot certify the absence of unpublished or unindexed work.
 
@@ -10,8 +10,8 @@ No earlier proof, disproof, or announcement of a resolution was located in the s
 
 | Source | What was checked | Finding |
 | --- | --- | --- |
-| [Bernardi–Morales, published paper, EJC 23(2), P2.36](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v23i2p36/pdf/) | Section 5, pages 22–24; definition of delta; Conjectures 27–28; relation to the earlier theorems | The paper explicitly leaves Conjecture 27 unproved. The proved alpha, beta, and gamma processes are different processes. |
-| [arXiv:1501.01135v1](https://arxiv.org/abs/1501.01135v1) | Section 5 and submission history | The same statement is Conjecture 21. The arXiv record lists only the 6 January 2015 version. The journal version renumbers the statement; using only the preprint number would be misleading. |
+| [Bernardi–Morales, published paper, EJC 23(2), P2.36](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v23i2p36/pdf/) | Section 5, pages 22–24; definition of delta; Conjectures 27–28; relation to the earlier theorems; interval-event definitions on page 8 | The paper explicitly leaves Conjecture 27 unproved. Conjecture 28 is stronger. Its endpoint cases with no marked rows or every nonroot row marked are already proved there, but the assertion for arbitrary marked sets is left conjectural. |
+| [arXiv:1501.01135v1](https://arxiv.org/abs/1501.01135v1) | Section 5, page 23, and submission history | The same statements are Conjectures 21 and 22. The arXiv record lists only the 6 January 2015 version. The journal version renumbers them; using only the preprint numbers would be misleading. |
 | [Alejandro H. Morales, conjectures](https://sites.google.com/view/ahmorales/research/conjectures) | The entry for *Probabilistic trees with algebraic roots*, and surrounding status updates | The entry still lists Conjecture 21 without a resolution reference. Other entries explicitly record proofs. This is supporting status evidence, not proof that the list is exhaustive or fully current. |
 | [Olivier Bernardi, publications](https://sites.google.com/brandeis.edu/bernardi/publications) | Original article entry and subsequent publications through the displayed 2026 items | The original article remains listed; no delta-process resolution is identified on this page. |
 | [Morales, papers by topic](https://sites.google.com/view/ahmorales/research/papers-by-topic) | Original article entry and related enumerative work | No later delta-process proof is linked. |
@@ -35,8 +35,16 @@ Both available search engines were used. Searches included the title, author com
 
 - `"Bernardi" "Morales" "delta" conjecture`
 - `"Bernardi" "Morales" "Conjecture 21"`
+- `"Bernardi" "Morales" "Conjecture 22"`
 - `"Bernardi" "Morales" "Conjecture 27"`
 - `"Bernardi" "Morales" "Conjecture 28"`
+- `"Bernardi" "Morales" "Conjecture 28" proof`
+- `"probabilistic trees" "Conjecture 22" proof`
+- `"probabilistic trees" "Conjecture 28" proof -site:academia.edu -site:combinatorics.org`
+- `"Bernardi" "Morales" "Pdet"`
+- `"Morales" "Bernardi" "adjugate"`
+- `"Morales" "probability determinant" conjecture`
+- `"Bernardi" "Morales" "determinant" conjecture site:mathdb.com`
 - `"1501.01135" conjecture`
 - `"Some probabilistic trees with algebraic roots" proof conjecture`
 - `"Some probabilistic trees with algebraic roots" "Schur"`
@@ -54,8 +62,10 @@ A search restricted to the most recent two years for the exact delta-process nam
 
 ## Precise novelty claim
 
-The contribution claimed here is a proof of the complete Bernardi–Morales tree-probability identity, together with the stronger statement that the same count holds for every fixed color map. It is not a claim to invent Schur complements, adjugate identities, Cauchy–Binet, determinant-preserving random matrices, or the matrix-tree theorem.
+The contribution claimed here is a proof of the complete Bernardi–Morales tree-probability identity, together with the stronger statement that the same count holds for every fixed color map, and a separate proof of the paper's full event-determinant conjecture for all marked sets. It is not a claim to invent Schur complements, adjugate identities, Cauchy–Binet, determinant-preserving random matrices, or the matrix-tree theorem. The already proved endpoint cases of the event conjecture are not counted as new results.
 
 The essential identification is specific: a proper subset of a directed cycle produces the delta Laplacian by eliminating that subset, and every proper principal minor of the original cycle Laplacian is 1. The resulting arbitrary-matrix generating identity proves all-minor preservation under precisely the subset weights that encode the original membership constraints. Replacing independent color blocks and extracting those membership coefficients then proves the published conjecture.
 
-The full proof passed independent internal review by the parent research agent. External peer review and author confirmation have not been obtained. The computational checks accompany the proof and do not substitute for any quantified step.
+The event proof uses a different row-replacement identity. Its full-subset cancellation is essential: the adjugate becomes the all-ones matrix, and the fixed last row makes the determinant vanish. The complementary-column expression vanishes for the same reason. Bernoulli averaging then proves the entire event polynomial, not just its two previously known endpoint cases.
+
+The full written proofs passed separate internal reviews. The parent agent developed the event proof; the analysis agent checked it independently and wrote a direct interval-event verifier. External peer review and author confirmation have not been obtained. The computational checks accompany the proofs and do not substitute for any quantified step.
