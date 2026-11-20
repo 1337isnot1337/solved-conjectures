@@ -98,7 +98,7 @@ After enlarging the lower threshold for q as allowed by that proposition, (1) fo
 
 This completes the full quantified implication. No limiting process in A is taken. No bound on the number of prime factors of q, restriction to prime powers, exceptional set of moduli, or numerical verification is introduced.
 
-For beta=1/2 this is the published GRH consequence. The same argument with σ=7/8 or σ=11/12 shows why the earlier proposed QRH input would already suffice. The half-plane threshold affects only how large q must be for a given fixed A; it does not restrict the range of A in the conjecture.
+For σ=1/2 this is the published GRH consequence. The same argument with σ=7/8 or σ=11/12 shows why the earlier proposed QRH input would already suffice. The half-plane threshold affects only how large q must be for a given fixed A; it does not restrict the range of A in the conjecture.
 
 ## 4. Earlier results do not already establish the full unconditional statement
 
