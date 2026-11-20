@@ -115,3 +115,25 @@ In the last inequality, the successive $l_d$ inside a run are $1,2,\ldots$ up to
 \gamma_{2^k}\ll\frac{1+\max_{0\le n\le\lfloor k\log_3 2\rfloor}T(n)}{k}.
 ```
 Since $|S_{2^k}|=O(k^2)$, the upper bound on $g_k$ in terms of $\gamma_{2^k}$ proves the digit condition. The lower bound for changes in individual powers from Bugeaud and Kaneko's smooth-number estimate is of order $\log n/\log\log n$. [Bugeaud–Kaneko, Corollary 1.5 and Remark 4.4](https://arxiv.org/abs/1704.00432) · [Stephan, Theorem 1.3](https://arxiv.org/abs/2607.14774)
+
+## A quantitative gain on every sufficiently long prefix
+
+The same bounds give a finite density gain for every $B$ of Schnirelmann density $\alpha\in(0,1)$. There is an absolute $c\gt0$ such that, for all sufficiently large $N$ depending only on $\alpha$,
+```math
+\frac{|(A+(B\cup\{0\}))\cap[1,N]|}{N}
+\ge \alpha+c\,\alpha(1-\alpha)
+          \frac{(\log\log N)^{3/2}}{\log N}.
+```
+
+Write $C=A+(B\cup\{0\})$, $E=|C\cap[1,N]|-\alpha N$ and $F(t)=|B\cap[1,t]|-\alpha t$ for integers $0\le t\le N$. Then $F(t)\ge0$, $F(N)\le E$, and $|(C\setminus B)\cap[1,N]|\le E$. Fix $h$ large enough that the greedy approximation estimate above has $\eta h\gt2$. Given any $t$, choose a sum $a$ of at most $h$ members of $A$ with $0\le N-t-a\le D$, where $D=O(N/(\log N)^2)$. Translate $B\cap[1,t]$ by the summands one at a time, keeping only points in $B$ at each step. The intermediate sets stay inside $[1,N]$ and each step loses at most $E$ points. Therefore $B\cap[a+1,N]$ contains at least $|B\cap[1,t]|-hE$ points. Adding the prefix of length $a$ yields
+```math
+0\le F(t)\le (h+1)E+D \qquad (0\le t\le N).
+```
+
+Choose the dyadic $q$ with $N/4\lt q\le N/2$, and take $X=B\cap[1,q]$ and $Y=(B\cap[q+1,2q])-q$ as above. Translation by $q$ gives $|X\setminus Y|\le E$. Also $|Y|-|X|=F(2q)-2F(q)\le(h+1)E+D$, so $|Y\setminus X|\le(h+2)E+D$. Every element of $(X+S_q)\setminus X$ lifts to either a point of $(C\setminus B)\cap[1,2q]$ or a point of $Y\setminus X$ after wrapping. Hence $|(X+S_q)\setminus X|\le(h+3)E+D$.
+
+The Fourier lower bound from Parseval at density $\beta=|X|/q$ is $q\gamma_q\beta(1-\beta)$. If $E\ge(1-\alpha)q/(4(h+1))$, the claimed estimate follows at once for sufficiently large $N$. Otherwise the estimate for $F(q)$ and $D=o(q)$ give $\alpha\le\beta\le(1+\alpha)/2$. This gives
+```math
+(h+3)E+D\ge \frac12q\gamma_q\alpha(1-\alpha).
+```
+Now $D=o(q\gamma_q)$ by the short-sum lower bound, so the result follows with an absolute constant. The gain on the right still tends to zero. A positive gain uniform in $N$ for each $\alpha$ is the issue in the original conjecture.
