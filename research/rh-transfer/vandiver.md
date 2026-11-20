@@ -115,6 +115,37 @@ The character-orbit estimate carries a polynomial cost in the conductor and an i
 
 Outcome: no justified amplification.
 
+### Extension-sensitive source statements
+
+The stronger witness statement *SmallClassNumbers.OnePoint* starts with a nonzero Selmer group and produces a characteristic-zero rank-three deformation that is neither upper nor lower, with an admissible automorphic representation of type three or type two. The source therefore does use extension data; describing its entire argument as trace-only would be inaccurate.
+
+The next passage, in *ModularityArgument/ThresholdArguments/DenseThresholdCases/FOneCharU.lean*, applies a deformation-ring length bound and sends a finite set of deformation points to pairwise nonisomorphic admissible representations. The conclusion still bounds the Selmer length by a sum of valuations of trace differences. It does not assert that every nonzero residual class produces arbitrarily many distinct points.
+
+The predicates are explicit in *AutomorphicForms/CongruenceNumberRankThree.lean* and *ModularityArgument/LinkedUnramifiedChains/WeightInfinitesimalCharacters/AdmissibleUnitaryThreePoint.lean*. Type three includes irreducibility, conjugate-self-dual automorphy after the prescribed twist, and weights $(e,0,-e)$. Type two includes a two-dimensional irreducible representation over $\mathbb Q$, attached after twisting to a newform of weight $2e+1$, together with a trivial middle constituent. No contradiction from these conditions has been established.
+
+*KatoTwoW.lean* gives a rational Bloch–Kato Selmer-vanishing statement for the two-dimensional representation and its quadratic twist under its *Used* and automorphy hypotheses. It enters the rigidity argument. It does not identify the original integral rank-one Selmer group with one of these zero vector spaces. Such an identification would lose precisely the torsion being studied.
+
+The apparent general number-field quantifier in *PropGK* also has a restriction. In *FPropGKU.lean*, the proof first tests whether $K$ is imaginary quadratic. Outside that case it selects zero constants and the congruence integer one; the arithmetic hypotheses are impossible because *GD* explicitly requires $[K:\mathbb Q]=2$ and $K$ totally complex. Generic automorphic counting over CM fields is available upstream, but a corresponding generic Selmer-to-automorphic-deformation theorem has not been extracted.
+
+Outcome: the extension-sensitive machinery explains and bounds congruences. No theorem inspected eliminates all the congruences needed for Vandiver.
+
+### An explicit Iwasawa-module test
+
+There is a sharper algebraic test of the proposed weight-amplification route to Greenberg's conjecture. Fix an odd prime $p$, write $\Lambda=\mathbb Z_p[[T]]$, and set
+~~~math
+X=\Lambda/(T-p).
+~~~
+This torsion Iwasawa module has $\mu(X)=0$ and $\lambda(X)=1$. At an integer weight $e\ge2$ that is even, evaluate $T$ at $(1+p)^e-1$. The specialization is finite and has length
+~~~math
+\operatorname{length}_{\mathbb Z_p}X_e
+ =v_p\!\left((1+p)^e-(1+p)\right)
+ =1+v_p(e-1)
+ \le 1+\log_p(e-1).
+~~~
+The equality is the elementary lifting-the-exponent identity. Hence a module with positive $\lambda$ satisfies a polynomial upper bound at every positive even weight. A family supported at this one prime also satisfies the corresponding log-weighted sum bound.
+
+This module is not asserted to occur as the arithmetic class-group module in Greenberg's conjecture. It proves the narrower logical point: polynomial bounds at these specializations, even together with finiteness and $\mu=0$, cannot by themselves imply $\lambda=0$. Additional arithmetic input must exclude such modules.
+
 ### Logical insufficiency of the inequality
 
 Even an abstract periodic family with length one at one prime and one residue class of weights, and zero elsewhere, can satisfy a bound of the displayed form after enlarging $C$. This is not a counterexample in arithmetic. It proves that integrality, the upper bound, and residual periodicity by themselves do not imply universal vanishing.
@@ -134,6 +165,17 @@ Even an abstract periodic family with length one at one prime and one residue cl
 6. **Dutour Sikirić–Elbaz-Vincent–Kupers–Martinet; Kupers.** $K_8(\mathbb Z)=0$ is already proved. [Journal paper](https://www.cambridge.org/core/journals/journal-of-the-institute-of-mathematics-of-jussieu/article/abs/voronoi-complexes-in-higher-dimensions-cohomology-of-glnmathbbz-for-ngeqslant-8-and-the-triviality-of-k8mathbbz/6C1E2AA4FA1AD29554384C091A51D8E5), [Kupers's independent short proof](https://www.utsc.utoronto.ca/people/kupers/wp-content/uploads/sites/50/2021/01/k8zshorter.pdf). It cannot be counted as a new target or resolution.
 
 7. **Reinhart (2024; revised 2025).** *A counterexample to the Conjecture of Ankeny, Artin and Chowla*. [Primary paper](https://arxiv.org/abs/2410.21864). This neighboring named conjecture is already disproved and is excluded. [Author's publication list](https://imsc.uni-graz.at/reinhart/publications.htm) records acceptance in Algebra & Number Theory.
+
+8. **Soulé (2003).** *A bound for the torsion in the K-theory of algebraic integers*. [Original paper](https://www.maths.tcd.ie/EMIS/journals/DMJDMV/vol-kato/soule.dm.pdf), §5.1. Its conjecture seeks polynomial dependence on the K-degree in the logarithm of torsion, uniformly over number fields of fixed degree, with logarithmic discriminant dependence. The printed degree-one case needs a normalization such as $\log\max(2,|D_F|)$; taking its literal $\log1=0$ is not a mathematical resolution of the intended conjecture.
+
+9. **de la Torre Durán (2026).** *Perfect Forms and Torsion Bounds in Algebraic K-Theory over Totally Real and CM Fields*. [Version 2, revised 19 November 2026](https://arxiv.org/html/2611.06300v2), Theorem 4.5. With $r=2m+1$ and $d=[F:\mathbb Q]$, it gives
+~~~math
+\log\operatorname{card}_{b}K_m(\mathcal O_F)_{\rm tors}
+ \le \exp(O(r^2d(\log r+\log d)))\,|D_F|^{O(r^2)}.
+~~~
+Here primes at most $b=dr+1$ are removed; for $F=\mathbb Q$, $b=2m+2$. Thus the rational bound remains exponential in $m^2\log m$, rather than polynomial. The paper states Soulé's conjecture for every degree $d\ge2$, every field of that degree, and every K-degree. Our rational-field consequence does not meet those quantifiers.
+
+Arlettaz's Hurewicz theorem, used in both Emery and de la Torre Durán, controls the kernel away from small primes. It does not itself bound the relevant homology torsion and therefore does not supply a missing polynomial bound. The modern comparison was checked against the papers themselves, not only search-result descriptions.
 
 Searches used both engines and exact names, K-theory formulations, polynomial-bound terminology, later citations, and 2026 updates. No full resolution of Kummer–Vandiver was found. A search cannot establish a universal negative about unpublished work.
 
@@ -270,9 +312,45 @@ The source's *large_of* already contains the principal vanishing mechanism. The 
 
 The earlier Soulé–Gabber bound is qualitatively weaker in its dependence on the K-degree. The comparison is not a complete priority determination: the announcement and its accompanying archive already contain the arithmetic estimate. No original-priority claim is made for the displayed K-theory consequence.
 
+## Corollary for every K-degree over the integers
+
+**Corollary.** Assuming the archive's *Bound*, there are absolute constants $C',B$ such that
+~~~math
+\log\left|K_m(\mathbb Z)_{\rm tors}\right|
+ \le C'(m+1)^B
+ \qquad(m\ge1).
+~~~
+One may take $B=\max(A,2)$ after increasing the constant. This is a consequence for the entire graded K-theory of $\mathbb Z$, with no primes omitted. It is not the full number-field conjecture of Soulé.
+
+**Proof.** The degrees divisible by four are covered by the proposition. The other degrees have established order formulas; we use Weibel's Theorem 1, Propositions 20 and 22, Lemma 27, and Corollary 95. In this paragraph, $B_{2k}$ denotes the usual number-theoretic Bernoulli number, not the survey's reindexed positive convention.
+
+For odd $m=2i-1\ge3$, the torsion order is at most $2w_i(\mathbb Q)$. If $i$ is odd, $w_i=2$. If $i$ is even, the explicit local factors give
+~~~math
+w_i
+ =2^{2+v_2(i)}
+   \prod_{\substack{p\ {\rm odd}\\p-1\mid i}}p^{1+v_p(i)}
+ \le 4i\,(i+1)!.
+~~~
+Indeed, the factors $p^{v_p(i)}$ appearing in this product divide $i$, and the remaining distinct primes are at most $i+1$. Thus the logarithmic torsion in odd degrees is $O(m\log(m+1))$.
+
+For $m=4k-2$, let $c_k$ be the positive numerator of $|B_{2k}|/(4k)$ in reduced terms. The established order formula gives $|K_{4k-2}(\mathbb Z)|\le2c_k$. Von Staudt–Clausen bounds the denominator of $B_{2k}$ by $(2k+1)!$, while Euler's formula gives
+~~~math
+|B_{2k}|
+ =\frac{2(2k)!\,\zeta(2k)}{(2\pi)^{2k}}
+ \le4(2k)!.
+~~~
+Dividing a reduced rational number by the integer $4k$ cannot increase its numerator. Therefore
+~~~math
+|K_{4k-2}(\mathbb Z)|
+ \le 8(2k)!(2k+1)!,
+~~~
+whose logarithm is again $O(m\log(m+1))$. Finally, $K_1(\mathbb Z)$ has order two. These estimates, together with the proposition, prove the corollary.
+
+The Bernoulli order formula does not determine the group structure: this proof does not establish cyclicity of $K_{4k-2}(\mathbb Z)$.
+
 ## Review and current next obligation
 
-A second research worker checked the duality signs, the quadratic exceptional-prime argument, and the local-$2$ step, and highlighted the need to use global ramification set $S=\{\ell,\infty\}$. The proof above addresses those points using explicit source definitions and published comparison statements. It has not undergone external peer review.
+A second research worker checked the duality signs, the quadratic exceptional-prime argument, and the local-$2$ step, and highlighted the need to use global ramification set $S=\{\ell,\infty\}$. The proof above addresses those points using explicit source definitions and published comparison statements. The coordinating researcher then independently checked the source quantifiers, the degree $K_{2e}$, odd-prime localization, and the exceptional-prime removal against the published comparison formulas, and found no concrete gap in those steps. These are internal mathematical reviews; this is not a Lean check or external peer review.
 
 To solve Kummer–Vandiver, the remaining step is to eliminate nonzero residual congruence classes in the region left by this bound. Coefficient extension, residual periodicity, and the trace-only Frobenius argument above do not do so. The next useful input would be an extension-sensitive obstruction to the rank-three automorphic points constructed from a nonzero class, or an auxiliary-prime congruence theorem forcing the relevant congruence-ideal support to be empty.
 
