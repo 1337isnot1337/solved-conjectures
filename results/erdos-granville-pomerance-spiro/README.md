@@ -24,4 +24,6 @@ and congruence steps on finite ranges.
 python3 results/erdos-granville-pomerance-spiro/verify.py
 ```
 
+**Lean status:** None.
+
 [Research discussion](https://github.com/1337isnot1337/solved-conjectures/issues/47)

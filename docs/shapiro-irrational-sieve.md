@@ -1,4 +1,4 @@
-# Shapiro’s conjecture
+# Irrational generators in Shapiro’s conjecture
 
 This supplies the irrational case of [the ordinary-prime omission theorem](shapiro-research.md). It also gives a count for pairs of integers on the two sides of an irrational dilation.
 

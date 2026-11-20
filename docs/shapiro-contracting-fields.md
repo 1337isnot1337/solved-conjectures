@@ -1,4 +1,4 @@
-# Shapiro’s conjecture
+# Shapiro’s conjecture in a fixed contracting number field
 
 The [ordinary-prime omission theorem](shapiro-research.md) concerns systems that retain most of the ordinary primes. Here is an upper bound in a different class. It explains the limitation of using a fixed number field and requiring the conjugates in every other embedding to have absolute value at most one.
 

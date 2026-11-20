@@ -1,4 +1,4 @@
-# Erdős–Oler conjecture
+# Thin boundary faces in Erdős–Oler packings
 
 Use the centre formulation in [the research note](erdos-oler-research.md). Let $n=(k+1)(k+2)/2-1$ centres at pairwise distance at least one fit in an equilateral triangle $\Delta$ of side $L\lt k$. The argument below gives necessary conditions for such a configuration. It uses the area normalisation $B(T)=4\operatorname{area}(T)/\sqrt3$, so a unit equilateral triangle has $B=1$.
 
