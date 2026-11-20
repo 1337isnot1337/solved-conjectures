@@ -8,7 +8,7 @@ The complete written proof has passed three independent agent reviews, covering 
 
 The candidate theorem is qualitative: all sufficiently large fixed smoothing exponents give oscillation. No numerical threshold, finite zero computation, or extension of an admissible numerical range is claimed.
 
-The theorem needs only GRH for the nonprincipal character modulo four, supplied by the accepted input of this campaign. Section 6 first gives a quantitative proof using zeta RH as well, then removes that additional hypothesis by an independent convolution argument. No linear independence, zero simplicity, or nonabelian GRH is assumed.
+The combined oscillation theorem below is unconditional: Sections 3–7 prove it when beta GRH holds, and Section 7.1 handles the complementary case by Landau's theorem. Refuting Fujii's original family of equivalences, rather than the simultaneous negative-limit assertion, uses the campaign's accepted beta GRH input. No linear independence, zero simplicity, or nonabelian GRH is assumed.
 
 ## 1. Target and sources
 
@@ -36,11 +36,11 @@ Sources checked:
 6. M. Suzuki, *On monotonicity of certain weighted summatory functions associated with L-functions*, [arXiv:1204.1823](https://arxiv.org/pdf/1204.1823), introduction, printed page 2. This third source explicitly states Fujii's conjecture for every positive alpha.
 7. K. Ford and S. Konyagin, *Chebyshev's conjecture and the prime number race*, and J. Kaczorowski and O. Ramare, *Almost periodicity of some error terms in prime number theory*, Acta Arithmetica **106** (2003), 277–297, [DOI](https://doi.org/10.4064/aa106-3-6). These describe classical recurrence machinery in this setting. The recurrence mechanism is not claimed as new. The proposed application to all sufficiently large exponential-power smoothing parameters is the item under prior-art review.
 
-The full statement quantified over alpha is the target. The theorem below would refute it under the accepted GRH input.
+The full statement quantified over alpha is the target. The theorem below contradicts the simultaneous negative-limit assertion without any RH assumption. Under the accepted beta GRH input it also refutes the reported family of equivalences. Section 8 distinguishes these two logical statements.
 
 ## 2. Theorem
 
-Assume GRH for beta. Then there is a real A>0 such that, for every fixed alpha>A,
+There is a real A>0 such that, for every fixed alpha>A,
 
 ~~~math
 \limsup_{x\to\infty} S_\alpha(x)=+\infty,
@@ -61,6 +61,8 @@ respectively. In fact the negative-subsequence conclusion holds for every fixed 
 The proof does not require an explicit value of A.
 
 ## 3. A family of almost-periodic functions
+
+For Sections 3–7 assume beta GRH. Section 7.1 treats its negation and completes the unconditional theorem.
 
 Write each nontrivial beta zero as rho=1/2+i gamma, counted with multiplicity. There is no gamma=0: for every real s>0 the convergent paired series
 
@@ -137,25 +139,25 @@ The constant converges to -1 because Gamma(z) is asymptotic to 1/z at zero. The 
 Put
 
 ~~~math
-\psi_\chi(x)=\sum_{n\le x}\Lambda(n)\chi(n).
+\psi_\chi(x)=\sum_{n\le x}\Lambda(n)\chi(n),
+\qquad c_0=\frac{\beta'}{\beta}(0).
 ~~~
 
-At x>1 away from prime powers, the standard explicit formula for the odd primitive character modulo four is
+At x>1 away from prime powers, the standard odd-character explicit formula is
 
 ~~~math
 \psi_\chi(x)=
 -\sum_\rho\frac{x^\rho}{\rho}
--\frac{\beta'}{\beta}(0)
-+\frac12\log\frac{x+1}{x-1}.
+-c_0+\frac12\log\frac{x+1}{x-1}.
 \tag{5}
 ~~~
 
-The symmetric zero sum in (5), interpreted distributionally, agrees with (4). Thus on y>0,
+The trivial zeros at -1,-3,-5,... give the positive logarithmic term. The symmetric zero sum in (5), interpreted distributionally, agrees with (4). Thus on y>0,
 
 ~~~math
 R(y)=
 -1+e^{-y/2}\left(
- \psi_\chi(e^y)+\frac{\beta'}{\beta}(0)
+ \psi_\chi(e^y)+c_0
  -\frac12\log\frac{e^y+1}{e^y-1}
 \right).
 \tag{6}
@@ -163,26 +165,84 @@ R(y)=
 
 This is a locally integrable function, smooth between logarithms of prime powers.
 
-Littlewood's oscillation theorem gives arbitrarily large x for which psi_chi(x)/sqrt(x) is arbitrarily large and positive. The other terms in (6) tend to zero after multiplication by x^(-1/2). It follows that R is positive at some point away from prime powers, and hence positive on an open interval.
+### 5.1 A local reflection argument
 
-There is therefore a nonzero smooth compactly supported function phi>=0 with support in y>0 such that
+Conjugation permutes the beta zeros and preserves their multiplicities. Reindexing the reflected distribution, and using rho+conjugate(rho)=1, gives
+
+~~~math
+R(y)+R(-y)=-2-A(y),\qquad
+A(y)=\sum_\rho\frac{e^{i\gamma y}}{|\rho|^2}.
+~~~
+
+The series defining A converges absolutely and uniformly by zero counting. In particular A is continuous and bounded. Every reindexing is valid because the distributional test pairings converge absolutely.
+
+For 0<y<log 3, psi_chi(e^y)=0. Equation (6) and log((e^y+1)/(e^y-1))=log(2/y)+O(y^2) therefore give
+
+~~~math
+R(y)=-\frac12\log\frac1y+O(1)
+\quad\text{and}\quad
+R(-y)=\frac12\log\frac1y+O(1)
+\qquad(y\downarrow0).
+~~~
+
+The second identity also supplies an ordinary continuous representative of R on the negative punctured interval. It follows that R is positive on an interval (-delta,-delta/2) for some delta>0. Choose a nonnegative, nonzero smooth test function phi compactly supported there. Then
 
 ~~~math
 \langle R,\phi\rangle>0.
 \tag{7}
 ~~~
 
-If an oscillation point is a prime power, move it slightly to the right. The step value persists and the continuous normalizing factors change continuously; the strict inequality remains. No lower bound on the interval's length is needed.
-
-From (4) and (7), there is A such that for every alpha>A,
+Global distributional convergence (4) now gives A_0 such that
 
 ~~~math
-\int F_\alpha(y)\phi(y)\,dy>0.
+\int F_\alpha(y)\phi(y)\,dy>0
+\qquad\text{for every }\alpha>A_0.
 ~~~
 
-Since phi is nonnegative, each such F_alpha has a positive value.
+Thus each such F_alpha has a positive value. The negative location of the test support causes no problem: this statement concerns the zero-series profile on the full real line. Section 7 uses recurrence to move that value to arbitrarily large positive arguments before applying the prime-sum asymptotic.
 
-This is the main qualitative step. It yields all sufficiently large fixed alpha, without estimating a single beta zero.
+This argument needs neither Littlewood's oscillation theorem nor a pointwise interpretation of the undamped zero sum at zero. A complete independent derivation is in [the boundary review](fujii-boundary.md), Sections 2–5.
+
+### 5.2 A stronger direct value and an independent older route
+
+The same boundary analysis also proves
+
+~~~math
+F_\alpha(0)=
+\left(\frac12-\frac1{\mathrm e}\right)\log\alpha+O(1)
+\qquad(\alpha\to\infty).
+~~~
+
+The coefficient is positive. Thus the positive phase can in fact be fixed at zero for every sufficiently large alpha.
+
+Here is the mechanism; the full convergence proof is in [the boundary review, Section 7](fujii-boundary.md). The exact identity is
+
+~~~math
+F_\alpha(0)=\langle R,k_\alpha\rangle,\qquad
+k_\alpha(v)=\alpha
+ e^{(\alpha+1/2)v-e^{\alpha v}}.
+~~~
+
+To replace the pairing by an integral across zero, first exclude a point-supported term. The series
+
+~~~math
+Q(y)=-y-\sum_\rho\frac{e^{i\gamma y}}{i\gamma\rho}
+~~~
+
+converges uniformly and absolutely after the linear term, so Q is continuous and Q'=R in distributions. The locally integrable representative supplied by (6) and reflection has a continuous primitive. These two primitives differ by a constant on each half-line; continuity at zero makes the constants equal. Therefore there is no additional distribution supported at zero.
+
+Away from zero, beta GRH gives R(v)=O_delta(1+v^2). The tails |v|>=delta are consequently exponentially small in alpha when paired with k_alpha. On the remaining interval,
+
+~~~math
+R(v)=-\frac12\operatorname{sgn}(v)
+             \log\frac1{|v|}+O(1).
+~~~
+
+After w=alpha v, the kernel measure becomes
+q(w) exp(w/(2alpha)) dw, where q(w)=exp(w-exp(w)).
+The masses of q on the negative and positive half-lines are 1-1/e and 1/e, respectively. Its absolute log|w| moment is finite. Moreover, replacing exp(w/(2alpha)) by one changes the signed mass by O(1/alpha). Substitution gives the displayed direct-value asymptotic with O(1) remainder.
+
+The earlier proof of (7) remains an independent alternative: Hardy–Littlewood's positive oscillation for psi_chi(x)/sqrt(x), substituted in (6), supplies a positive interval on the positive real axis. That deeper theorem is no longer required by the main argument.
 
 ## 6. Passage from zero series to the actual prime sum
 
@@ -415,7 +475,80 @@ S_\alpha(x_n)>
 
 By (2), F_alpha also has a negative value. Repeating the same argument gives a sequence along which S_alpha tends to minus infinity. That argument works for every positive alpha, since the mean is always negative.
 
-This proves the theorem under beta GRH. The mathematical argument has passed the independent reviews linked below; that fact does not by itself establish publication priority.
+This completes the beta-GRH branch. The following complementary branch removes that hypothesis from the oscillation theorem.
+
+### 7.1 The complementary case and the unconditional conclusion
+
+A full proof, including a proof of the positivity theorem used here, is recorded in [the Landau note](fujii-landau.md). The required application is as follows.
+
+Suppose beta GRH fails. The functional equation supplies a nontrivial zero b+i gamma_0 with b>1/2. Fix alpha>0 and 0<=theta<b. We prove that S_alpha(x)/x^theta is eventually bounded neither above nor below.
+
+On Re s>1 put
+
+~~~math
+P_\chi(s)=\sum_{p>2}\chi(p)p^{-s},
+\qquad
+G_\alpha(s)=\frac{\Gamma(s/\alpha)}{\alpha}.
+~~~
+
+Absolute convergence and a change of variables give
+
+~~~math
+\int_0^\infty S_\alpha(x)x^{-s-1}\,dx
+=G_\alpha(s)P_\chi(s).
+~~~
+
+For each fixed Y>0, the small-x integral
+I_Y(s)=integral_0^Y S_alpha(x)x^(-s-1) dx is entire:
+the prime sum decreases like exp(-c_alpha x^(-alpha)) as x tends to zero. Also S_alpha(x)=O_alpha(x) for large x, by comparison with the corresponding sum over positive integers.
+
+The prime-power remainder
+
+~~~math
+E_\chi(s)=\sum_{p>2}\sum_{m\ge2}
+ \frac{\chi(p)^m}{m p^{ms}}
+~~~
+
+is holomorphic on Re s>1/2 by absolute local uniform convergence. In Re s>1, P_chi+E_chi=log beta, with the Euler-product branch. Since beta(sigma)>0 for every positive real sigma, this branch continues along the positive real axis without obstruction.
+
+If either one-sided bound held, then for some C>=0, Y>=1 and epsilon in {1,-1},
+
+~~~math
+f(x)=C x^\theta+\epsilon S_\alpha(x)\ge0
+\qquad(x\ge Y).
+~~~
+
+Its Mellin transform F has abscissa of convergence sigma_c<=1, possibly minus infinity, and in Re s>1 satisfies
+
+~~~math
+F(s)=\frac{C Y^{\theta-s}}{s-\theta}
++\epsilon G_\alpha(s)P_\chi(s)-\epsilon I_Y(s).
+~~~
+
+Let h=max(1/2,theta), so h<b.
+
+If sigma_c<=h, the integral F is holomorphic on Re s>h. The other displayed terms, including 1/G_alpha, are holomorphic there. Solving for P_chi gives a single-valued holomorphic extension P_tilde to that half-plane. By the identity theorem,
+
+~~~math
+\beta(s)=\exp(P_{\rm tilde}(s)+E_\chi(s))
+\qquad(\operatorname{Re}s>h).
+~~~
+
+This contradicts the zero with real part b>h.
+
+If sigma_c>h, it is finite. Use the local branch of log beta along the positive real axis in the displayed formula for F. It analytically continues F through the real point sigma_c; the possible offset pole at theta lies to the left. This contradicts Landau's theorem that a finite convergence abscissa of the Mellin transform of a nonnegative function is a real singularity.
+
+Both cases are impossible. Therefore, for every alpha>0 and every 0<=theta<b,
+
+~~~math
+\limsup_{x\to\infty}\frac{S_\alpha(x)}{x^\theta}=+\infty,
+\qquad
+\liminf_{x\to\infty}\frac{S_\alpha(x)}{x^\theta}=-\infty.
+~~~
+
+Choose theta strictly between 1/2 and b. This gives both signs at a scale larger than sqrt(x)/log x for every positive alpha. Combined with the beta-GRH branch, it proves Section 2 without an RH hypothesis.
+
+The machinery in this subsection is classical: see Suzuki 2025, Proposition 1, and Ford–Konyagin, Lemma 2.1 and its following off-line-zero argument. The adaptation to the prime Dirichlet series is made single-valued by exponentiation; no global logarithm across a beta zero is assumed.
 
 ## 8. What is and is not being claimed
 
@@ -424,7 +557,7 @@ This proves the theorem under beta GRH. The mathematical argument has passed the
 - The limit alpha to infinity is taken in distributions to select fixed alpha values. It is not interchanged with the x to infinity asymptotic. Once alpha is selected, (14) and recurrence apply at that fixed alpha.
 - This does not contradict the original Chebyshev conjecture, which has alpha=1 and follows from the accepted Dirichlet GRH.
 - Zeta RH is needed only for the stronger quantitative error in (8). Section 6.4 removes it from the theorem itself.
-- The all-alpha equivalence, considered as a formal logical statement without the accepted GRH input, must be distinguished from the simultaneous negative-limit assertion. This note claims its failure under the accepted GRH input; it does not silently infer the truth of GRH from the conditional oscillation argument.
+- The simultaneous assertion that all S_alpha tend to minus infinity is unconditionally false. The family of equivalences E = [for every alpha, S_alpha tends to minus infinity if and only if beta GRH holds] is a different logical statement. The two proof branches show E if and only if beta GRH is false. Thus E is false under this campaign's accepted beta GRH input. The case split does not itself decide beta GRH.
 - No original-priority claim is justified until the original Fujii formulation and the relevant later literature have been checked.
 
 ## 9. Prior-art and review log
@@ -438,6 +571,9 @@ Completed checks:
 3. The [Mellin review](fujii-mellin-review.md) checks the cutoff extension, estimate (12), all error integrals, the square contribution, and the normalization.
 4. The [convolution review](fujii-review.md) supplies an independent normalization proof under beta GRH alone, checks the logical scope, and records the extended prior-art search.
 5. The [distribution and recurrence review](fujii-review-distribution.md) checks the uniform gamma domination, distributional limit, positivity transfer, and recurrence without independence or simplicity of zeros.
+6. The [boundary review](fujii-boundary.md) replaces the deep oscillation input with the reflected logarithmic singularity, and proves the stronger direct value F_alpha(0)=(1/2-1/e)log alpha+O(1). Two agents checked the signs, convolution orientation, point-supported ambiguity, and remainder estimates independently.
+7. The [Landau note](fujii-landau.md), independently reviewed, completes the non-GRH branch, makes the combined oscillation theorem unconditional, and checks the exact logic of the proposed equivalences.
+8. The [Gamma-power note](fujii-gamma-power.md) gives a separate complete equivalence for the second recorded Fujii clause by positive Mellin convolution and Landau's theorem. It is not counted as another named target.
 
 Remaining provenance limit: direct access to Fujii's four-page 1988 text is blocked in the available retrieval paths. The exact all-alpha formulation is therefore supported here by the three later scholarly descriptions. No claim is made that the original text was read.
 
