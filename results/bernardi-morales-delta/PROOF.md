@@ -39,7 +39,7 @@ P_\delta(\boldsymbol p,r)
  {|\mathcal R_{\boldsymbol p,r}|}. \tag{2}
 ```
 
-Equation (2) is the full published conjecture. The fixed-map assertion (1) is stronger: neither surjectivity nor the inequality $r\lt k$ is needed. The separate event-determinant Conjecture 28 is not asserted here.
+Equation (2) is the full published tree-probability conjecture. The fixed-map assertion (1) is stronger: neither surjectivity nor the inequality $r\lt k$ is needed. The companion [EVENT_PROOF.md](EVENT_PROOF.md) proves the separate, stronger event-determinant Conjecture 28. This file gives the tree identity its own proof.
 
 ## 1. The cyclic Laplacian and elimination
 
