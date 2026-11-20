@@ -34,6 +34,7 @@ Lean verification.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| Németh–Seberry–Shu conjecture | Not formalized | Written asymptotic disproof and a quadratic lower bound; finite checks are not part of the proof. |
 | Sonntag–Teichert conjecture | Not formalized | Written proof of tournament domination hypergraph connectivity and classification of disconnected oriented cases, with finite cross-checks. |
 | Horňák–Woźniak conjecture | Not formalized | Written proof of both connected-partition conjectures, with separate finite and symbolic cross-checks. |
 | L-solitaire | Complete for both the counterexample and corrected theorem | Actual moves for arbitrary layer sets containing 1; all recurrent states; classification and maximality of stable references; one-column interlacing; the explicit uniform profile bound and convergence for every diverging scale. The separate fixed-scale counterexample remains checked. |
