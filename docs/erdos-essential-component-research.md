@@ -66,3 +66,29 @@ Each $Z_x$ has standard normal law. The process is stationary, and every increme
 For $L=\log(2|S_q|)$, choose $t=(\gamma_q L)^{1/4}$. If $\gamma_q L\to0$, both terms tend to zero.
 
 The random density $b=|X|/q$ has a positive probability of staying bounded away from zero and one. Indeed the correlations $r(y)=\mathbb E[Z_x Z_{x+y}]=\sum_{j\ne0}\mu_j\cos(2\pi jy/q)$ have average zero over $y$. At least a third of the shifts have $r(y)\le1/2$, since all correlations are at least $-1$. For such a shift the chance of opposite Gaussian signs is $\arccos(r(y))/\pi\ge1/3$, by rotational invariance of two independent standard Gaussians. Consequently $\mathbb E[2b(1-b)]\ge1/9$, giving a fixed positive probability that $b$ stays in a closed subinterval of $(0,1)$. Markov's inequality on the expansion then gives realizations simultaneously of intermediate density and vanishing normalized expansion. The density adjustment and concatenation above produce an infinite counterexample under the stated spectral hypothesis.
+
+## An unconditional lower bound from short sums of powers
+
+For all sufficiently large $k$,
+```math
+\gamma_{2^k}\gg \frac{(\log k)^{3/2}}{k},
+\qquad
+g_k\gg \frac{(\log k)^{3/2}}{k}.
+```
+This improves the lower bound from exact double-base representations by a factor of order $\sqrt{\log k}$.
+
+For an odd integer $a$, a row of $N$ consecutive powers starting at $3^0$ satisfies
+```math
+\frac1N\sum_{n=0}^{N-1}\cos(2\pi a3^n/2^h)\le\frac12
+\qquad
+\bigl(1\le h\le c(\log N)^{3/2}\bigr)
+```
+for a sufficiently small absolute $c\gt0$ and all large $N$. For $h=1$ each cosine equals $-1$. For $h=2,3$ the mean of a complete period of cosines is zero by direct evaluation. For $h\ge4$ the order of $3$ doubles from modulus $2^{h-1}$ to $2^h$, so a complete period has zero exponential sum by pairing terms whose exponents differ by $2^{h-3}$. Remove complete periods and let $R$ be the remaining length. If $R\le N/2$ the bound follows by counting terms. Otherwise use Korobov's short-sum bound as stated in Fuchs, Lemma 7. The absolute value of this remainder is at most
+```math
+C R\exp\!\left(-c_1\frac{(\log R)^3}{(h\log 2)^2}\right).
+```
+Starting at exponent zero instead of one multiplies the odd coefficient by $3^{-1}$ modulo $2^h$, which preserves the bound. Since $R\gt N/2$, shrinking $c$ makes the expression at most $R/2$. [Fuchs, Lemmas 4–7](https://doi.org/10.5802/jtnb.369)
+
+For the modulus $2^k$, the row with first factor $2^m$ has $N_m=1+\lfloor(k-m)\log_3 2\rfloor$ shifts. Put $K=k-\lceil\sqrt{k}\rceil$ and $H=\lfloor c_2(\log k)^{3/2}\rfloor$ with $c_2$ small enough that the row bound holds for every $m\le K$ and $h\le H$. Indeed $N_m\gg\sqrt{k}$ for these rows. Cover the possible denominator exponents $d=1,\ldots,K$ by consecutive blocks of at most $H$ exponents. For the block starting at $d=m+1$, use the uniform probability distribution on the row $2^m3^n$ with $0\le n\lt N_m$. When a nonzero frequency $j/2^k$ reduces to $a/2^d$ with $a$ odd, its cosine mean under that block's distribution is at most $1/2$, using $h=d-m$. For each remaining exponent $d$ with $K\lt d\le k$, include the distribution supported only at $2^{d-1}$, where the cosine for that denominator is $-1$.
+
+Mix these $M=\lceil K/H\rceil+k-K=O(k/(\log k)^{3/2})$ distributions with equal weights. Every nonzero frequency receives a contribution at least $1/(2M)$ to the weighted sum defining $\gamma_{2^k}$, since its own distribution contributes at least that much and the other summands $1-\cos$ are nonnegative. The estimate for $g_k$ follows from Parseval. The bound tends to zero and leaves the uniform expansion question open.
