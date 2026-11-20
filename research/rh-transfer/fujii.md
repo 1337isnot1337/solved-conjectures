@@ -4,7 +4,7 @@ Research checkpoint: 20 November 2026. Target discussion: [issue #87](https://gi
 
 ## Status
 
-The complete written proof has passed three independent agent reviews, covering the Mellin normalization, a separate convolution proof, and the distributional limit and recurrence. It is not yet entered in the solved-results catalogue. Publication priority is not established. The original 1988 paper has not been directly retrieved; three later scholarly sources explicitly record its all-parameter conjecture.
+The complete written proof has received independent internal reviews covering the Mellin normalization, a separate convolution proof, the distributional limit and recurrence, and the direct zero-count proof of the positive phase. It is not yet entered in the solved-results catalogue. Publication priority is not established. The original 1988 paper has not been directly retrieved; three later scholarly sources explicitly record its all-parameter conjecture.
 
 The candidate theorem is qualitative: all sufficiently large fixed smoothing exponents give oscillation. No numerical threshold, finite zero computation, or extension of an admissible numerical range is claimed.
 
@@ -244,6 +244,37 @@ The masses of q on the negative and positive half-lines are 1-1/e and 1/e, respe
 
 The earlier proof of (7) remains an independent alternative: Hardy–Littlewood's positive oscillation for psi_chi(x)/sqrt(x), substituted in (6), supplies a positive interval on the positive real axis. That deeper theorem is no longer required by the main argument.
 
+### 5.3 A shorter zero-count proof with a convergent constant
+
+An independent proof in [fujii-zero-count.md](fujii-zero-count.md) strengthens the asymptotic to
+~~~math
+F_\alpha(0)=
+\left(\frac12-\frac1{\mathrm e}\right)\log\alpha
++C_\beta+
+O\!\left(\frac{\log(\alpha+2)}{\alpha}\right).
+~~~
+The constant is
+~~~math
+C_\beta=-1-\sum_{\gamma>0}\frac1{1/4+\gamma^2}
+-\frac1\pi\int_0^\infty
+ \operatorname{Re}\Gamma(iu)\log\frac{2u}{\pi}\,du,
+~~~
+with absolutely convergent sum and integral.
+
+The proof subtracts the pole of gamma before applying the classical zero-counting formula. With epsilon=1/(2alpha), Fourier inversion gives the exact identity
+~~~math
+\int_0^\infty
+\operatorname{Re}\left(
+ \Gamma(\varepsilon+iu)-\frac1{\varepsilon+iu}
+\right)\,du
+=\frac{\pi}{\mathrm e}-\frac{\pi}{2}.
+~~~
+Stieltjes summation against
+N_+(T)=(T/(2pi))log(2T/(pi e))+O(log(T+2))
+then produces the displayed coefficient. After removing the pole, the real-part derivative is uniformly integrable, so the zero-counting error contributes only O(log(alpha+2)/alpha). This proof avoids the boundary-distribution step altogether. The prime-sum normalization and recurrence are still needed.
+
+The existing general boundary and almost-periodicity framework is classical. [The dedicated prior-art audit](fujii-prior-art.md) shows precisely how Kaczorowski's earlier papers and Kaczorowski–Ramaré (2003) already supply that mechanism. The possible contribution here is the explicit Fujii-weight corollary and its application; priority remains unclaimed.
+
 ## 6. Passage from zero series to the actual prime sum
 
 This section supplies the normalization needed to ensure that the theorem concerns the original unweighted-prime sum.
@@ -475,6 +506,8 @@ S_\alpha(x_n)>
 
 By (2), F_alpha also has a negative value. Repeating the same argument gives a sequence along which S_alpha tends to minus infinity. That argument works for every positive alpha, since the mean is always negative.
 
+There is also a density consequence under beta GRH. For each sufficiently large fixed alpha, each sign occurs with a fixed positive normalized margin on an interval of fixed logarithmic width in every sufficiently long logarithmic window. Almost-periodicity and continuity supply these intervals. Exponentiating them proves positive lower natural density, for both real x and integer x, and positive lower logarithmic density for each sign set. The full interval-to-density calculation is in [fujii-boundary.md, Section 8](fujii-boundary.md). This corollary uses beta GRH; no unconditional positive-density assertion is inferred from the complementary Landau branch.
+
 This completes the beta-GRH branch. The following complementary branch removes that hypothesis from the oscillation theorem.
 
 ### 7.1 The complementary case and the unconditional conclusion
@@ -574,6 +607,8 @@ Completed checks:
 6. The [boundary review](fujii-boundary.md) replaces the deep oscillation input with the reflected logarithmic singularity, and proves the stronger direct value F_alpha(0)=(1/2-1/e)log alpha+O(1). Two agents checked the signs, convolution orientation, point-supported ambiguity, and remainder estimates independently.
 7. The [Landau note](fujii-landau.md), independently reviewed, completes the non-GRH branch, makes the combined oscillation theorem unconditional, and checks the exact logic of the proposed equivalences.
 8. The [Gamma-power note](fujii-gamma-power.md) gives a separate complete equivalence for the second recorded Fujii clause by positive Mellin convolution and Landau's theorem. It is not counted as another named target.
+9. The [zero-count proof](fujii-zero-count.md), independently checked in fujii-review.md, Section 11, proves the sharper specified-phase asymptotic with an explicit constant and vanishing remainder.
+10. The [prior-art audit](fujii-prior-art.md) traces the general boundary, smoothing, and recurrence mechanism directly to its published predecessors. Suzuki's December 2025 correction was checked and does not alter the conjecture paragraph.
 
 Remaining provenance limit: direct access to Fujii's four-page 1988 text is blocked in the available retrieval paths. The exact all-alpha formulation is therefore supported here by the three later scholarly descriptions. No claim is made that the original text was read.
 
