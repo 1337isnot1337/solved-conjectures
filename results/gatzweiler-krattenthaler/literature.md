@@ -19,6 +19,45 @@ Checked on 20 November 2026. The conclusion is limited to the sources searched: 
 
 - **Thomas Prellberg**, *A positivity conjecture of Prellberg and Stanton*, [arXiv:2610.26878](https://arxiv.org/abs/2610.26878), October 2026. Section 5 of the [accessible manuscript transcription](https://www.paperpeel.com/paper/2610.26878) explicitly compares its dilation product with Gatzweiler–Krattenthaler Conjectures 1 and 3 and does not identify either as a specialization. It gives no resolution of the arbitrary-exponent Conjecture 4. This later paper was checked because its positivity result and references could otherwise be mistaken for a resolution of the present target. Direct arXiv full-text retrieval failed during this check, so this comparison relies on the manuscript transcription and indexed section text.
 
+
+## November q-rious counterexample: distinct hypothesis
+
+**Fabián Levicán-Santibáñez, Atsuro Yoshida, OpenAI GPT-6 Astra and OpenAI GPT-6.1 Sol**, *A q-rious counterexample*, submitted 11 November 2026, [Diderot record](https://projectdiderot.com/papers/ae0f59f5-0adf-4644-8fc3-9962ffac8876), [complete six-page manuscript](https://open-author-production.up.railway.app/files/85660a4f-c31f-4fcf-9e1b-4c01f395bccd.pdf), [supplement](https://github.com/iZafiro/q-rious-counterexample/blob/main/verify-lean.md). The manuscript and supplement were inspected. Theorem 1.1 disproves Warnaar–Zudilin positivity for factorial ratios satisfying Landau's condition; Corollary 6.1 also disproves their unimodality conjecture. The March cyclotomic-generating-function paper appears as reference [5]. Neither document states a resolution of the common-shift Conjecture 4.
+
+The following comparison is our deduction, not a claim made in that preprint. It checks that the displayed prior family does not give an implicit counterexample to the present statement.
+
+Use $`B_m=[2m]_q!/([m]_q!)^2`$, $`N=2^k`$, $`H=4kN\operatorname{lcm}(1,\ldots,N)`$ and $`L=H/(4kN)`$. Its equation (2) defines $`P_k=\prod_{m=1}^{4N}B_m^{e_m}`$, where
+
+```math
+e_m/H=\mathbf1_{m=1}-\mathbf1_{m\le N}\mu(m)/m+1/(4kN).
+```
+
+Let $`S_N=\sum_{m\le N}\mu(m)/m`$, and write the unique finite Euler product $`P_k=\prod_{j\ge1}(1-q^j)^{E_j}`$. Uniqueness follows by taking the smallest index with nonzero exponent in the quotient of two such representations: that exponent gives a nonzero first coefficient. Direct expansion gives
+
+```math
+E_1/H=-1+S_N-1/k,\qquad E_{8N}=L>0,
+```
+
+and, for $`4N<j\le8N`$,
+
+```math
+E_j=L(4N-\lceil j/2\rceil+1)\le H/(2k).
+```
+
+All $`E_j`$ vanish for $`j>8N`$. The preprint's equation (6) gives $`|S_N|\le2C/k^2`$, where $`C=C_2/(\log2)^2`$ comes from its cited analytic estimate. Its proof supplies the sufficient conditions
+
+```math
+k\ge24C,\qquad k^2\ge\frac{4C}{1-3/\pi},\qquad
+2^k\ge2048,\qquad
+\frac{41616C}{k^2}+\frac{62424}{k}<\frac9{100}.
+```
+
+These conditions hold for all sufficiently large integer $`k`$; the manuscript does not give a numerical value of $`C`$ or a concrete $`k`$. In particular, these conditions imply $`k>2`$ and $`|S_N|<1/2`$.
+
+Suppose the same $`P_k`$ admitted a common-shift representation with shift $`s\ge n`$ and nonnegative exponents $`a_i`$. Its largest Euler-product index would be $`s+\max\{i:a_i>0\}\le2s`$. Hence $`s\ge4N`$. Since the denominator and numerator index ranges are disjoint, uniqueness also gives $`E_{s+1}=a_1=-E_1`$. But $`-E_1/H=1-S_N+1/k>1/2`$, while $`E_{s+1}/H\le1/(2k)<1/2`$ (or is zero beyond $`8N`$). This is a contradiction.
+
+Thus every member of the prior family satisfying the manuscript's displayed sufficient conditions lies outside the common-shift class. Its November theorem settles a different conjecture and does not supply the five-factor example in this repository. This comparison does not prove an exhaustive absence of other earlier resolutions.
+
 ## Search strings
 
 Both available web search engines were used. Queries included:
