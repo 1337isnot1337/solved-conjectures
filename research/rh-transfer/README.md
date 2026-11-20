@@ -51,6 +51,10 @@ The [Katkova–Tyaglov–Vishnyakova finite-difference screening](katkova-tyaglo
 
 The [Craven–Csordas rapid-decay counterexample](craven-csordas.md) is mathematically complete but uncounted. A 1996 existential theorem already appears to imply a negative answer to the later question. Its printed example has an algebraic inconsistency, which does not justify ignoring the theorem or claiming a new unresolved target.
 
+The separate [Craven–Csordas operator test](craven-csordas-operator-test.md) is also excluded. The all-symbol hypothesis implies the earlier complex Laguerre criterion by the already published cosine–sine identity. The note preserves a short phase-selecting proof, with the earlier theorem credited. The different fixed-cosine conjecture remains unresolved.
+
+The [Karlin audit](karlin-audit.md) distinguishes the already disproved general Hankel/Wronskian conjecture from the classical Xi Toeplitz criterion. Neither is added by name alone.
+
 ### Wang–Yang's conjecture
 
 For the exact coefficients in the author's manuscript,
@@ -265,6 +269,11 @@ The [Gamma-power clause](fujii-gamma-power.md) has a separate complete proof: fo
 | Chaudhary–Khmiri–Mazhouda conjecture | Complete unconditional counterexample to full automorphic Li monotonicity, with exact interval certificate | [Chaudhary–Khmiri–Mazhouda](chaudhary-khmiri-mazhouda.md) |
 | Pomerance's conjecture | Complete accepted-Dirichlet-GRH proof of the original no-criterion assertion; ordered prime-product statement remains open | [Pomerance](pomerance.md) |
 | Brent's conjecture | Full original discrete logarithmic mean and Robin's separately credited modulus-four statement follow from accepted RH/Dirichlet GRH | [Brent](brent.md) |
+| Goldbach's conjecture | Unresolved. The inspected spectral construction needs an additional arithmetic cancellation bound; compactness and self-adjointness do not imply it. An exact rank-one countermodel and the missing effective finite bridge are recorded | [Goldbach spectral bridge](goldbach-spectral-bridge.md) |
+| Gaiotto's positivity conjecture | Unresolved. The proposed radial-kernel transfer fails because the kernel is negative in an uncovered range; the constrained projective average and full filtered form remain open here | [Gaiotto](gaiotto.md) |
+| Kudra's conjecture | Unresolved. Finite coalesced tests have not been promoted to preservation of arbitrary even/odd interlacing pairs. An exact example separates the real-input problem from complex half-plane preservers | [Kudra screening](kudra-screening.md) |
+| Karlin's conjecture | Excluded. The general determinant assertion already has published counterexamples; the distinct Xi Toeplitz assertion is a classical RH criterion | [Karlin audit](karlin-audit.md) |
+| Craven–Csordas operator-test problem | Excluded. The full implication follows from an earlier complex Laguerre criterion and the published cosine–sine decomposition; the direct phase proof is retained without a new count | [Operator-test audit](craven-csordas-operator-test.md) |
 | Carmichael's conjecture | Unresolved. Exact Carmichael–Klee closure and the multiplicative replacement obstruction are documented; no inference from lambda-function noninjectivity | [Carmichael](carmichael.md) |
 | Bellemare–Langlois–Ransford conjecture | Unresolved for its original harmonic weights. A broader decreasing-weight assertion is disproved; the complete Cesàro analogue is proved but not counted | [Bellemare–Langlois–Ransford](bellemare-langlois-ransford.md) |
 | Fujii's conjecture | Complete internally reviewed unconditional large-alpha oscillation theorem; refutation of the reported equivalence family uses accepted beta GRH. Exact-application priority remains unclaimed | [Main proof](fujii.md), [prior art](fujii-prior-art.md) |
@@ -381,7 +390,7 @@ The archive's budget is exp(x^epsilon/2). A polynomial bound in x would imply ev
 
 ## Work allocation
 
-The current live assignments are:
+The latest research assignments are:
 
 | Worker | Current responsibility | Owned notes |
 |---|---|---|
