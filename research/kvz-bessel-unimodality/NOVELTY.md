@@ -16,9 +16,13 @@ a guarantee of exclusive priority or external peer review.
 The initial proof was committed as
 `9a5f90c84d13e85352b79402e4e79fc0f7819c2a`. An independent mathematical
 review is in [AUDIT-ANALYSIS.md](AUDIT-ANALYSIS.md), committed at
-`7c9886eecce9c358544585b16563c8f75cd8839f`. Root is conducting an additional
-independent review and broad primary-literature check. Final result
-publication remains subject to that review.
+`7c9886eecce9c358544585b16563c8f75cd8839f`. A second independent complete
+review and primary-literature audit is in [AUDIT-ROOT.md](AUDIT-ROOT.md),
+committed at `704d221d742cd10bdf95a3610eb5f47802691f1f`. Both reviews pass,
+including all negative-order and equality cases. The exact diagnostic
+verifier independently passed 130 coefficient identities and 10 endpoint
+and coefficient-positivity checks. These bounded algebraic checks support
+the written proof; they do not replace its all-parameter argument.
 
 ## Exact source and version checks
 
@@ -65,13 +69,21 @@ are still necessary.
 | Feng Qi, *Properties of modified Bessel functions and completely monotonic degrees of differences between exponential and trigamma functions*, *Mathematical Inequalities & Applications* 18 (2015), 493–518; [full journal PDF](https://files.ele-math.com/articles/mia-18-37.pdf), [arXiv:1302.6731](https://arxiv.org/abs/1302.6731) | The main theorems and their stated unimodality functions were inspected. These involve the fixed-order functions with orders one or two, exponential expressions, and complete-monotonicity degrees for exponential/trigamma differences. They do not state the arbitrary-order, arbitrary-scale Bessel-ratio theorem. |
 | Zakaria Derbazi, *On Preserving or Reversing Higher-Order Unimodality and Convexity by Sign-Regular Kernels*, [arXiv:2502.13136v2](https://arxiv.org/pdf/2502.13136) | The full searchable preprint concerns general transformation rules. Searches of its text found neither a Bessel application nor a conjecture statement. Its general tools are related to the source paper's topic, but no resolution of the present specific assertion was located. |
 | [DLMF Section 10.28](https://dlmf.nist.gov/10.28) | Records classical Bessel Wronskian identities, including the opposite-order identity at a common argument. It is background for the method, not a located statement of the full two-scale unimodality classification. The proof derives its own Wronskian identity directly from the differential equation. |
+| J. Segura, *Monotonicity Properties for Ratios and Products of Modified Bessel Functions and Sharp Trigonometric Bounds* (2021), [full article](https://link.springer.com/article/10.1007/s00025-021-01531-1) | The relevant definitions and theorems concern adjacent-order ratios at one argument, double ratios, and products of first- and second-kind functions. Theorem 6 concerns a fixed-order logarithmic derivative and double ratio. No arbitrary-order, two-scale unimodality theorem was located. |
+| Z.-H. Yang and S.-Z. Zheng, *Monotonicity of the ratio of modified Bessel functions of the first kind with applications* (2018), [full article](https://link.springer.com/article/10.1186/s13660-018-1648-4) | Theorem 1.1 classifies a rational expression in the adjacent-order ratio multiplied by the argument, with an auxiliary parameter. Its stated applications and prior-result discussion concern that quantity. |
+| Z.-H. Yang and S.-Z. Zheng, *Monotonicity and convexity of the ratios of the first kind modified Bessel functions and applications* (2018), [full PDF](https://files.ele-math.com/articles/mia-21-09.pdf), DOI 10.7153/mia-2018-21-09 | Theorems 1–5 concern products divided by an average-order function, order-convexity of logarithmic derivatives, and same-argument four-factor quotients. Later propositions give adjacent-order bounds. These statements do not supply the full two-scale classification. |
+| Á. Baricz and T. K. Pogány, *Probabilistic and Analytical Aspects of the Symmetric and Generalized Kaiser–Bessel Window Function* (2023), [full article](https://link.springer.com/article/10.1007/s00365-023-09627-3) | Section 4.1 uses a Bessel product formula for density properties. Sections 4.6–4.8 concern parameter derivatives of window densities, whose Bessel factors have a fixed half-order difference and constrained arguments. The inspected statements do not assert the arbitrary-two-order, arbitrary-two-scale ratio theorem. |
 | [Karp's current publication list](https://dmkrp.wordpress.com/publications/) | Inspected through its August 2026 entries. It retains the 2025 source paper and lists later work in other topics. No titled follow-up claiming this unimodality result was located. A publication list is not a full-text audit of every listed article. |
 | [Yi Zhang's current homepage](https://yzhang1616.github.io/) and the author copy above | The homepage was inspected and the accessible author manuscript read at the conjecture. No later resolution was located there. |
 
-Root's independent review additionally screens Segura's 2021 Riccati-ratio
-paper, the Yang–Zheng Bessel-ratio papers, current public solution catalogs,
-and related real-order total-positivity claims. Its exact scope findings
-should be read with the root audit once that file is available.
+The first three added primary-paper checks above are recorded independently
+in [AUDIT-ROOT.md](AUDIT-ROOT.md). That audit also inspected the matched
+Bessel entries in the [Pudim application index](https://github.com/pudim-project/pudim-ai-demo-zetalaw/blob/main/APPLICATIONS.md).
+Their displayed claims concern square-root log-concavity, Riccati
+inequalities, adjacent-order bounds, second-kind functions, or real-order
+total positivity. None of the inspected displayed claims is the present
+two-scale ratio theorem. This index check does not certify every underlying
+proof, and no such broader certification is claimed.
 
 ## Searches and what they found
 
@@ -104,7 +116,8 @@ The Bessel literature is large. These searches cannot rule out an obscure
 earlier corollary or an unpublished argument. The proof should be described
 as an internally reviewed resolution of the full surviving unimodality
 assertion, with no earlier exact resolution located by the documented
-search, if the remaining independent review passes.
+search. Both independent mathematical reviews are complete and pass. No
+claim of external peer review or exhaustive priority certification is made.
 
 The proof does not claim novelty for the differential equation, convergent
 Bessel series, elementary sign analysis, or the general use of Wronskians
