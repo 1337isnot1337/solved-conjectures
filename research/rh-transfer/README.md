@@ -12,7 +12,7 @@ The accepted top-level result covers the Riemann zeta function and Dirichlet L-f
 
 ## Reviewed full named outcomes
 
-The following inventory contains eighteen full historically stated conjectures with complete written deductions in this lane. Seven entries contain proof arguments or deductions developed in this campaign; eleven use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of eighteen independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
+The following inventory contains twenty full historically stated conjectures with complete written deductions in this lane. Eight entries contain proof arguments or deductions developed in this campaign; twelve use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of twenty independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
 
 Current prior-art searches have not located an earlier full resolution of the exact targets apart from the accepted input and the established conditional implications. The searches and retrieval limits are recorded individually. Mathematical completeness, historical priority, and external acceptance are different questions.
 
@@ -24,11 +24,13 @@ Current prior-art searches have not located an earlier full resolution of the ex
 | Chaudhary–Khmiri–Mazhouda conjecture | Disproved: an admissible unitary Dirichlet twist has Re(lambda(2)−lambda(1))<−3/2 | Complete internally reviewed unconditional counterexample with exact rational certificate; [note](chaudhary-khmiri-mazhouda.md), [issue #124](https://github.com/1337isnot1337/solved-conjectures/issues/124) |
 | Csordas–Vishnyakova conjecture | Disproved: exp(−z^4) with p(z)=z^4+z^2+1 satisfies every stated coefficient inequality but is not in the Laguerre–Pólya class | Complete internally reviewed unconditional exact counterexample; [note](csordas-vishnyakova.md), [issue #132](https://github.com/1337isnot1337/solved-conjectures/issues/132) |
 | Pomerance's conjecture | Proved in its original 1974 nonexistence form: no integer satisfies his sufficient criterion for a unique totient preimage | Complete internally reviewed deduction from the Ford–Luca prime-tree theorem and accepted Dirichlet GRH; [note](pomerance.md), [issue #129](https://github.com/1337isnot1337/solved-conjectures/issues/129) |
+| Jutila's conjecture | The complete character-sum moment bound holds for every positive integer moment, every length, and every nonprincipal real character of modulus at most X | Full internally reviewed deduction under accepted Dirichlet GRH using established moment methods, including exact unsmoothing and all induced characters; [note](jutila.md), [issue #135](https://github.com/1337isnot1337/solved-conjectures/issues/135) |
 | Fujii's conjecture | The reported all-positive-alpha equivalence family is false under the accepted beta GRH; the large-alpha oscillation theorem is unconditional | Complete internally reviewed argument, with direct original-source retrieval still limited; [note](fujii.md) |
 | Banks–Friedlander–Luca–Pappalardi–Shparlinski conjecture | Every value of Carmichael's lambda function has at least two preimages | Published Ford–Luca theorem under exactly Dirichlet ERH, plus checked arithmetic deduction; [note](banks-friedlander-luca-pappalardi-shparlinski.md), [issue #120](https://github.com/1337isnot1337/solved-conjectures/issues/120) |
 | Riffaut's conjecture | No singular modulus of degree at least three is a zero of a rational trinomial of the stated form | Published Bilu–Luca–Pizarro-Madariaga Dirichlet-GRH theorem; [note](riffaut.md), [issue #119](https://github.com/1337isnot1337/solved-conjectures/issues/119) |
 | Coffey's conjecture | The full coefficient upper bound holds, with the stronger bound log(n+2)/sqrt(n) | Published Lagarias RH estimate with exact coefficient normalization; [note](coffey.md), [issue #118](https://github.com/1337isnot1337/solved-conjectures/issues/118) |
 | Keiper's conjecture | The normalized coefficients have the full asymptotic, including the constant term, with a square-summable remainder | Published Arias de Reyna RH theorem; [note](keiper.md), [issue #123](https://github.com/1337isnot1337/solved-conjectures/issues/123) |
+| Csordas–Dimitrov Laguerre conjecture | Every derivative Laguerre inequality holds at every real argument for the original theta-moment entire function | Classical RH-to-Laguerre–Pólya implication applied to the complete original Problem 3.5; [note](csordas-dimitrov.md), [issue #133](https://github.com/1337isnot1337/solved-conjectures/issues/133) |
 | Brent's conjecture | The original discrete logarithmic mean tends to one; Robin's separately stated modulus-four logarithmic mean also holds | Classical RH/Dirichlet-GRH consequences, with full signed-weight and sum–integral deductions; [note](brent.md), [issue #127](https://github.com/1337isnot1337/solved-conjectures/issues/127) |
 | Nicolas's conjecture | The strict Euler-totient inequality holds at every primorial, including the first | Published Nicolas RH theorem with exact endpoint and quantitative cross-check; [note](nicolas.md), [issue #131](https://github.com/1337isnot1337/solved-conjectures/issues/131) |
 | Soundararajan's conjecture | The original smooth-number equidistribution statement holds for every fixed A in its full asymptotic range | Published Banks–Shparlinski criterion under Dirichlet GRH; [note](soundararajan.md) |
@@ -38,6 +40,31 @@ Current prior-art searches have not located an earlier full resolution of the ex
 | Lindelöf hypothesis | The full subpower bound holds | Classical RH implication, with conductor-uniform Dirichlet version documented; [note](dirichlet-applications.md) |
 
 Already published QRH applications such as Vinogradov and the idoneal-number classification remain excluded. The qualified Simm–Wei formulation and Chandee's matching-order result do not enter this full-statement inventory. Neither do the unresolved Hecke, Artin, Selmer, or correlation reductions below. This inventory does not alter unrelated campaigns' result counts.
+
+### Jutila's conjecture
+
+The [full proof](jutila.md) establishes, for each positive integer \(m\), constants depending only on \(m\) such that
+~~~math
+\sum_{\substack{\chi\ {\rm real,\ nonprincipal}\\
+                 {\rm modulus}(\chi)\le X}}
+\left|\sum_{n\le Y}\chi(n)\right|^{2m}
+\ll_m XY^m(\log X)^{C_m}
+\qquad(X\ge3,\ Y\ge1).
+~~~
+Characters are counted with their moduli, including imprimitive characters. The original nonsquare-discriminant family injects into this family; its exact definition was checked on the actual 1973 scan.
+
+The accepted rational Dirichlet GRH supplies a published logarithm bound for every primitive character. Elementary quadratic orthogonality and a large-deviation argument give the needed moments uniformly in height. A half-integer Perron cutoff recovers the unsmoothed sums. Möbius inversion and a convergent Euler product control every induced character, with only one further logarithm. All moments and all lengths belong to this one historical target.
+
+The logarithmic exponent is deliberately nonsharp. The complete derivation uses established conditional methods, which retain their original credit. The note includes independent source/input and full-argument reviews.
+
+### Csordas–Dimitrov Laguerre conjecture
+
+For the exact entire function \(F\) in their 2000 Problem 3.5, the [note](csordas-dimitrov.md) proves
+~~~math
+(F^{(q)}(x))^2-F^{(q-1)}(x)F^{(q+1)}(x)\ge0
+\qquad(q\ge1,\ x\in\mathbb R).
+~~~
+Under accepted RH, \(F\) has only negative real zeros and order \(1/2\). Its genus-zero product is a compact limit of real-rooted polynomials. Rolle's theorem and convergence of derivatives prove every requested inequality. This is the classical implication already indicated by the original authors. The previously established nonnegative-real-argument case is not counted separately.
 
 ### Csordas–Vishnyakova conjecture
 
