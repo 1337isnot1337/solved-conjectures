@@ -67,3 +67,17 @@ The full [Principia MathDB 358005 solution](https://github.com/PrincipiaMathOrg/
 Successful archive-scoped searches included Gilmore and 2106.00656, Bernardi/Morales and 1501.01135, Sagan/Swanson and 2205.14078, “delta-process”, and q-Stirling/normality terms. The three exact source identifiers returned no CoPEER matches. The CoPEER Bernardi search matched the unrelated given name Bernardino in a FunSearch citation; the crossing/nesting search matched an unrelated feedback-vertex-set attempt. Their returned statements do not overlap the target mathematics.
 
 Global exact-title/DOI searches for “Some probabilistic trees with algebraic roots” and “10.37236/10465” exposed no prior solution outside this repository. Global Sagan/Swanson/normality searches returned the distinct Trure bottom-heaviness record discussed above. No accepted record was downgraded merely because an archive had a related title.
+
+## Final global source-ID sweep
+
+A final REST code-search pass excluded this repository and exposed both `total_count` and `incomplete_results`. The three source-ID-only queries returned:
+
+| Query, excluding `1337isnot1337/solved-conjectures` | Total results | Incomplete results |
+| --- | ---: | --- |
+| `"2106.00656"` | 9 | false |
+| `"1501.01135"` | 19 | false |
+| `"2205.14078"` | 12 | false |
+
+Every returned path was screened. The Gilmore hits consist of the empty mathematical reading note, numeric data, and an incorrect talking-head-dataset citation duplicated by a catalog. The Bernardi–Morales hits are numeric data, including the coordinate 1501.0113525390625 in a manuscript image annotation; none is a mathematical proof. The q-Stirling hits are bibliographic feeds, numeric data, the Principia bottom-heaviness proof, and Trure records for that same bottom-heaviness theorem. The additional [Trure source anchor](https://github.com/the-omega-institute/trureturing/blob/48d6c83d40f4e938aaf53862ba583d37cc4b0d0b/Library/RecurrenceComposition/sagan2022qstirling.md) was read in full and explicitly binds its claim to Conjecture 7.6.
+
+Adding a distinctive source word gives totals 1, 0, and 7 respectively, again with `incomplete_results=false`. Scoped searches for each of the three source IDs in the newly discovered `eliottcassidy2000/math` archive returned zero, also with `incomplete_results=false`. These flags describe GitHub's returned search results; they do not prove its index is exhaustive.
