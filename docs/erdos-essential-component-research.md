@@ -39,7 +39,11 @@ For a dyadic order $q$, write $\gamma_q$ for the best lower bound on the nonzero
 \min_{j\ne0\bmod q}\
 \sum_{s\in S_q}w_s\bigl(1-\cos(2\pi js/q)\bigr).
 ```
-A positive lower bound on $\gamma_q$ for all sufficiently large $q$ proves essentiality. In the other direction, $\gamma_q\log(2|S_q|)\to0$ along a sequence of dyadic orders disproves it. The first argument is the usual Fourier expansion estimate used in the theory of essential components. The second gives a rate at which a small optimum creates a single set with a small **union** of translated boundaries. [Ruzsa, Essential Components](https://doi.org/10.1112/plms/s3-54.1.38) · [Ge–Lê, Lemma 10](https://home.olemiss.edu/~leth/papers/essential_components.pdf)
+There is an absolute constant $C$ such that
+```math
+\frac{\gamma_{2^k}}4\le g_k\le C\sqrt{\gamma_{2^k}\log(2|S_{2^k}|)}.
+```
+A uniform positive lower bound on $\gamma_q$ proves essentiality, while $\gamma_q\log(2|S_q|)\to0$ along a sequence of dyadic orders disproves it. The first argument is the Fourier expansion estimate used in the theory of essential components. The second uses a Gaussian process on a cyclic group to control the one-sided boundary at half density. Reweighted eigenvalues for general directed vertex expansion are studied by Lau, Tung and Wang. [Ruzsa, Essential Components](https://doi.org/10.1112/plms/s3-54.1.38) · [Ge–Lê, Lemma 10](https://home.olemiss.edu/~leth/papers/essential_components.pdf) · [Lau–Tung–Wang](https://arxiv.org/abs/2211.09776)
 
 For a half-density set $X$, let $f=1_X$ and use Fourier coefficients normalized by $1/q$. Parseval gives
 ```math
@@ -58,14 +62,13 @@ Take independent standard real Gaussian variables $U_j,V_j$ and set
 Z_x=\sum_{j\ne0}\sqrt{\mu_j}\bigl(U_j\cos(2\pi jx/q)+V_j\sin(2\pi jx/q)\bigr),\qquad
 X=\{x:Z_x\ge0\}.
 ```
-Each $Z_x$ has standard normal law. The process is stationary, and every increment $Z_{x-s}-Z_x$ for $s\in S_q$ has variance at most $2\gamma_q$. For a point in $(X+S_q)\setminus X$, either $|Z_x|\le t$ or some such increment has magnitude at least $t$. Therefore
+Each $Z_x$ has standard normal law. The process is stationary. Write $r(s)=\mathbb E[Z_xZ_{x-s}]$ and decompose $Z_{x-s}=r(s)Z_x+W_s$ for each fixed $x$. By minimax, $1-r(s)\le\gamma_q$. If $\gamma_q\ge1/2$ the claimed upper bound follows from $g_k\le1/2$, so assume $\gamma_q\lt1/2$. The joint Gaussian vector of residuals $W_s$ is independent of $Z_x$, and each residual has variance $1-r(s)^2\le2\gamma_q$. Membership of $x$ in $(X+S_q)\setminus X$ implies $Z_x\lt0$ and $|Z_x|\le2\max(0,\max_s W_s)$. By independence and the bounded normal density, the probability of this event is at most an absolute constant times $\mathbb E\max(0,\max_s W_s)$. For $u\gt0$ that expectation is at most
 ```math
-\mathbb E\frac{|(X+S_q)\setminus X|}{q}
-\le O(t)+2|S_q|\exp\bigl(-t^2/(4\gamma_q)\bigr).
+\frac{\log(1+|S_q|)}{u}+u\gamma_q.
 ```
-For $L=\log(2|S_q|)$, choose $t=(\gamma_q L)^{1/4}$. If $\gamma_q L\to0$, both terms tend to zero.
+This follows by bounding the exponential of the maximum by the sum of the individual exponentials and applying Jensen's inequality. Optimizing in $u$ bounds the expected normalized expansion by $O(\sqrt{\gamma_q\log(2|S_q|)})$.
 
-The random density $b=|X|/q$ has a positive probability of staying bounded away from zero and one. Indeed the correlations $r(y)=\mathbb E[Z_x Z_{x+y}]=\sum_{j\ne0}\mu_j\cos(2\pi jy/q)$ have average zero over $y$. At least a third of the shifts have $r(y)\le1/2$, since all correlations are at least $-1$. For such a shift the chance of opposite Gaussian signs is $\arccos(r(y))/\pi\ge1/3$, by rotational invariance of two independent standard Gaussians. Consequently $\mathbb E[2b(1-b)]\ge1/9$, giving a fixed positive probability that $b$ stays in a closed subinterval of $(0,1)$. Markov's inequality on the expansion then gives realizations simultaneously of intermediate density and vanishing normalized expansion. The density adjustment and concatenation above produce an infinite counterexample under the stated spectral hypothesis.
+The random density $b=|X|/q$ lies in $[1/72,71/72]$ with probability at least $1/6$. Indeed, the correlations $r(y)=\sum_{j\ne0}\mu_j\cos(2\pi jy/q)$ have average zero over $y$. At least a third of the shifts have $r(y)\le1/2$, since all correlations are at least $-1$. For such a shift the chance of opposite Gaussian signs is $\arccos(r(y))/\pi\ge1/3$, by rotational invariance of two independent standard Gaussians. Consequently $\mathbb E[2b(1-b)]\ge1/9$. Outside the stated interval $2b(1-b)\le1/36$, and inside it $2b(1-b)\le1/2$. Markov's inequality then gives a realization in the interval with normalized expansion at most a constant times its expectation. Apply the density adjustment with $\alpha=1/2$ and with $l$ uniform over the interval. This multiplies the expansion by at most an absolute constant and proves the upper bound.
 
 ## An unconditional lower bound from short sums of powers
 
@@ -92,3 +95,23 @@ Starting at exponent zero instead of one multiplies the odd coefficient by $3^{-
 For the modulus $2^k$, the row with first factor $2^m$ has $N_m=1+\lfloor(k-m)\log_3 2\rfloor$ shifts. Put $K=k-\lceil\sqrt{k}\rceil$ and $H=\lfloor c_2(\log k)^{3/2}\rfloor$ with $c_2$ small enough that the row bound holds for every $m\le K$ and $h\le H$. Indeed $N_m\gg\sqrt{k}$ for these rows. Cover the possible denominator exponents $d=1,\ldots,K$ by consecutive blocks of at most $H$ exponents. For the block starting at $d=m+1$, use the uniform probability distribution on the row $2^m3^n$ with $0\le n\lt N_m$. When a nonzero frequency $j/2^k$ reduces to $a/2^d$ with $a$ odd, its cosine mean under that block's distribution is at most $1/2$, using $h=d-m$. For each remaining exponent $d$ with $K\lt d\le k$, include the distribution supported only at $2^{d-1}$, where the cosine for that denominator is $-1$.
 
 Mix these $M=\lceil K/H\rceil+k-K=O(k/(\log k)^{3/2})$ distributions with equal weights. Every nonzero frequency receives a contribution at least $1/(2M)$ to the weighted sum defining $\gamma_{2^k}$, since its own distribution contributes at least that much and the other summands $1-\cos$ are nonnegative. The estimate for $g_k$ follows from Parseval. The bound tends to zero and leaves the uniform expansion question open.
+
+## A binary digit condition necessary for essentiality
+
+Let $T(n)$ count changes between adjacent digits in the ordinary binary expansion of $3^n$. A positive answer to the conjecture would imply
+```math
+\max_{0\le n\le\lfloor k\log_3 2\rfloor} T(n) \gg \frac{k}{\log k}
+```
+for every sufficiently large $k$. In particular, a sequence of $k$ along which this maximum is $o(k/\log k)$ would disprove essentiality.
+
+To see this, use the uniform distribution on the $k$ distinct frequencies $j/2^k=1/2^d$, $1\le d\le k$, in the minimax formula for $\gamma_{2^k}$. Write the residue of $s$ in $k$ bits, starting with the least significant bit. For a prefix of length $d$, let $l_d$ be the length of its terminal run of equal digits. The fractional part of $s/2^d$ begins with $l_d$ identical bits, so its distance to the nearest integer is at most $2^{-l_d}$. Therefore
+```math
+\sum_{d=1}^k\bigl(1-\cos(2\pi s/2^d)\bigr)
+\le 2\pi^2\sum_{d=1}^k4^{-l_d}
+\le \frac{2\pi^2}{3}\,(\text{number of runs in the }k\text{ bits}).
+```
+In the last inequality, the successive $l_d$ inside a run are $1,2,\ldots$ up to its length. For $s=2^m3^n\lt2^k$, multiplying by $2^m$ and padding to $k$ bits can add at most two runs to the $T(n)+1$ runs of $3^n$. The zero residue has zero cosine cost. Thus
+```math
+\gamma_{2^k}\ll\frac{1+\max_{0\le n\le\lfloor k\log_3 2\rfloor}T(n)}{k}.
+```
+Since $|S_{2^k}|=O(k^2)$, the upper bound on $g_k$ in terms of $\gamma_{2^k}$ proves the digit condition. The question whether powers of three typically have a positive proportion of digit changes is stronger. For lower bounds on the number of changes in individual powers, see Stewart's results as discussed in the work below. [Pengo–Vávra, Introduction](https://arxiv.org/abs/2607.14774)
