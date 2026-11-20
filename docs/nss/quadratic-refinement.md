@@ -43,3 +43,7 @@ uniformly. As \(\Delta(1)\ge1\), taking logarithms retains this error order.
 ## 3. Count
 
 For every \(k,a\) in the specified ranges a suitable support therefore has log normalized permanent \(F(\rho,a)+O(p^{-1})\), uniformly. On the compact rectangle of parameters, \(\partial_a F\ge b>0\). Let \(C\) bound the error by \(C/p\). Take an amplitude grid from \(1/24\) in steps of \(L/p\) up to \(1/12\), with fixed \(L>2C/b\). Adjacent values of the target function differ by at least \(bL/p\), so all corresponding permanents for a fixed \(k\) are distinct. This gives \(\gg p\) values for each of \(\gg p\) distinct row sums. The classical congruence \(\operatorname{per}C_p(S)\equiv k\pmod p\) ensures that values for different row sums are disjoint, proving the proposed bound.
+
+## Related literature
+
+[Kocharovsky, Kocharovsky and Tarasov (2020), §7.2](https://pmc.ncbi.nlm.nih.gov/articles/PMC7516781/) also use a determinantal approximation and Fourier diagonalization for positive weighted circulants. That calculation does not count distinct permanent values of binary circulants. The [literature search](../nemeth-seberry-shu-status-search.md) distinguishes the all-row-sums question from earlier fixed-degree work. Follow-up searches for a quadratic lower bound across all row sums did not locate a prior proof; this is not a priority certification.
