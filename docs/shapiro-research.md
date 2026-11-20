@@ -19,7 +19,7 @@ Lagarias studies a rigidity question for integer Beurling systems under bounded 
 
 Let $E$ consist of the ordinary primes which are absent from $G$. Let $S_E$ be the integers whose prime factors all lie outside $E$. Multiplicative closure gives $S_E\subseteq G$. Any noninteger $\lambda\in G$ and a pair $n,m\in S_E$ satisfying $0\lt |\lambda n-m|\lt1$ contradict separation.
 
-**Theorem 1.** Under either of the hypotheses $\sum_{p\in E}1/p\lt\infty$ or $\#(E\cap[1,x])=o(\pi(x))$, all elements of $G$ are integers and $A(x)\le\pi(x)$ for every $x$. In particular, any separated system with a noninteger element omits a positive upper proportion of the ordinary primes.
+**Theorem 1.** Under either of the hypotheses $\sum_{p\in E}1/p\lt\infty$ or $\#(E\cap[1,x])=o(\pi(x))$, all elements of $G$ are integers and $A(x)\le\pi(x)$ for every $x$. In particular, any separated system with a noninteger element omits a positive upper proportion of the ordinary primes. The last section shows that this upper proportion is bounded below by an absolute positive constant.
 
 ### Irrational elements when the omitted reciprocals converge
 
@@ -60,20 +60,19 @@ O\left(XV(z_0)\sum_{X^c\lt p\le X^{1-\delta},\ p\in E}\frac1p
 
 It remains to handle $p\gt X^{1-\delta}$. Write $L_1(k)=hp$ first. Then $h\le C X^\delta$ for a constant $C$ depending on the forms, and $h$ itself is $E$-free because $C X^\delta\lt X^c$ for large $X$. Primitivity of $L_1$ gives $\gcd(h,b)=1$. Thus $p$ runs in one class modulo $b$, say $p=r+bu$. The other form is $(ahp-t)/b$, an integral linear form in $u$. For an upper bound, sieve the $u$ interval by all primes up to $z_1=X^{\min(c,c_*/4)}$ for the primality of $p$, and by $E$ up to $z_1$ for the absence of those prime factors in the other form. The interval has length at most $O(X/h)$ and can be enlarged to that length. The primality restriction is valid since $p\gt z_1$, and the upper-sieve range condition holds since $h=O(X^\delta)$.
 
-For primes $q\nmid abt$, the first form has one forbidden residue. If $q\in E$, the second form has a different forbidden residue since $q\nmid h$ and $t\ne0\pmod q$. The primes dividing $abt$ change the product by at most a constant depending on $a,b,t$. Hence the sieve product is at most a constant times $W(z_1)/\log X$. The bound for each $h$ is
+For every $q\in E$ the local factor of this new sieve is $1-\nu(q)/q$. If $q\nmid b$, the zero condition on $p$ is one residue class. Its overlap with the zero condition on the other form is exactly as for $L_1,L_2$, because multiplication by $h$ is invertible modulo $q$. If $q\mid b$, the fixed prime residue $r$ is nonzero modulo $q$ and the other form has one zero residue, just as in the original sieve. For $q\notin E$, there is only the primality condition, which erases one class for $q\nmid b$ and none for $q\mid b$. Thus the product for this sieve is exactly
 
 ```math
-O_{a,b}\left(\frac{X}{h\log X}W(z_1)+(X/h)^{2/3}\right).
+U(z_1)=V(z_1)\prod_{q\le z_1,\ q\notin E,\ q\nmid b}(1-1/q).
 ```
 
-There is the same bound with the two forms interchanged. For $Y=C X^\delta$, the Euler product and Mertens’ theorem give
+Let $Y=C X^\delta$. Summing the upper bound over $h\le Y$ coprime to $b$ and $E$-free, the sum of $1/h$ is bounded by the Euler product over $q\le Y$ outside $E$ and coprime to $b$. For large $X$, both $z_1$ and $Y$ exceed every prime factor of $b$, whose factors cancel in the resulting ratio. Mertens’ theorem then gives a total main-term bound
 
 ```math
-\sum_{h\le Y,\ h\text{ is }E\text{-free}}\frac1h
-\le \prod_{q\le Y,\ q\notin E}(1-1/q)^{-1}\ll W(Y)\log Y.
+(2+o(1))X V(z_1)\frac{\log Y}{\log z_1}\frac{W(Y)}{W(z_1)}.
 ```
 
-The two large-prime counts are therefore at most $O_{a,b}(\delta X V(X))+o(XV(X))$, with a constant independent of $\delta$. Here $W(z_1)W(Y)\sim W(X)^2$, and the summed remainders are $O_{a,b}(X^{(2+\delta)/3})$. Fix $\delta$ sufficiently small that this large-prime bound and the medium-prime error leave a positive number of survivors. For any such $k$,
+The two forms can be interchanged, and the summed remainders are $O_{a,b}(X^{(2+\delta)/3})$. Since $V(z_1)\sim V(X)$ and $W(Y)\sim W(z_1)$ for relative-density-zero $E$, the two large-prime counts total $O(\delta X V(X))+o(XV(X))$ with an absolute constant once $c$ is fixed. Fix $\delta$ sufficiently small that this large-prime bound and the medium-prime error leave a positive number of survivors. For any such $k$,
 
 ```math
 0\lt \left|\lambda L_1(k)-L_2(k)\right|=t/b\lt1.
@@ -86,6 +85,36 @@ If $G$ contains only integers, the valuation vectors for the generators at most 
 ## Irrational elements when the omitted primes have relative density zero
 
 [Proof using continued-fraction lattices](shapiro-irrational-sieve.md). For every irrational $\lambda\gt1$, infinitely many $n$ have both $n$ and $\lfloor\lambda n\rfloor$ in $S_E$. This excludes every noninteger element under the second hypothesis of Theorem 1.
+
+## An absolute lower bound on the omitted proportion
+
+The same sieves give an absolute $\eta_0\gt0$ such that every separated system with any noninteger element satisfies
+
+```math
+\limsup_{x\to\infty}\frac{\#(E\cap[1,x])}{\pi(x)}\ge\eta_0.
+```
+
+Indeed, suppose the omitted-prime count is at most $\eta\pi(x)$ for all large $x$, where $\eta$ will be a small absolute constant. Partial summation gives, for $0\lt u\lt v$ fixed,
+
+```math
+\sum_{X^u\lt p\le X^v,\ p\in E}\frac1p
+\le\eta\log(v/u)+o(1),\qquad
+\frac{W(X^u)}{W(X^v)}\le(v/u)^\eta(1+o(1)).
+```
+
+The product $W(X)$ is bounded below by a negative power of $\log X$, so all the power-saving remainders still vanish relative to the main term. For the irrational argument take $V=W^2$, and for the rational argument take the $V$ defined above. In both, $V(X^u)/V(X^v)\le(v/u)^{2\eta}(1+o(1))$, since the rational local factors differ from $(1-1/p)^2$ by a factor whose product converges to a positive limit. Fix the small-prime threshold exponent $c$ so the lower sieve is at least $(3/4-o(1))XV(X)$ in both proofs. Fix the large-prime upper-sieve exponent $c_1$ (the exponent of $z_1$) small enough in both and then choose $\delta\lt\min(c,c_1,1/10)$. The cancellation of the factors of $b$ in the rational proof and the uniform lattice sieve in the irrational proof give an absolute constant $C_1$, independent of $\delta,\eta$ and $\lambda$, multiplying the bound
+
+```math
+\big(\delta^{1-\eta}c_1^{-\eta}+o(1)\big)XV(X).
+```
+
+For the rational proof this follows by bounding $V(z_1)/V(X)$ by $c_1^{-2\eta}(1+o(1))$ and $W(Y)/W(z_1)$ by $(c_1/\delta)^\eta(1+o(1))$. For the irrational proof use $W(Y)W(z_1)/W(X)^2$. First fix $\delta$ with $C_1\delta\lt1/8$. With this choice, fix the medium-prime sieve exponent $c_0$ (the exponent of $z_0$) small enough in both arguments. The combined medium-prime main term is bounded by an absolute constant times
+
+```math
+\big(c_0^{-2\eta}\eta\log((1-\delta)/c)+o(1)\big)XV(X),
+```
+
+because each omitted prime costs at most a fixed multiple of $X V(z_0)/p$. Choose $\eta_0\gt0$ so the medium-prime term is at most $XV(X)/8$ to leading order and the large-prime term is at most $XV(X)/4$ to leading order when $\eta=\eta_0$. These choices are independent of the fixed noninteger element. Its parameters affect the cutoff from which the inequalities apply. Both proofs yield a surviving pair and contradict separation. This proves the asserted lower bound on the limsup.
 
 ## Open step
 
