@@ -159,3 +159,224 @@ integer Sidon set can have collisions after reduction modulo
 a number close to the length of its containing interval.
 That is an additional gap between this obstruction and
 the full infinite conjecture.
+
+## A deletion bound for all three cyclic constructions
+
+**Theorem.** Let $D\subseteq[0,M-1]$ be the standard integer
+representatives of any affine Singer, Bose–Chowla or Ruzsa
+Sidon set. Let $A$ be an integer Sidon set that contains
+some $a\in[0,M-1]\setminus D$. Then
+
+```math
+ |D\setminus A|\ge (1/8-o(1))|D|,
+ \qquad M\longrightarrow\infty,
+```
+
+uniformly in $D$ and $a$. The [earlier deletion bound for
+Singer sets](https://www.erdosproblemaday.com/day/44-sidon-density-completion)
+gives the constant $1/16$ in that family. Here the count comes
+from equidistribution of the two summands in a representation
+of $a$ as a sum minus a third element.
+
+First count modular solutions $x+y-z\equiv a\pmod M$ in $D$.
+We will show that at least $(1/2-o(1))|D|$ of the ordered
+solutions satisfy the same equality over the integers.
+Since $a\notin D$, fixing a value as the first summand
+determines at most one ordered difference $y-z$ in the
+modular Sidon set. The same holds for the second summand.
+Fixing $z$ determines at most two ordered pairs $x,y$.
+Thus removing any one element destroys at most four
+ordered solutions. Every genuine integer solution must
+lose at least one of its three elements if we adjoin $a$.
+The claimed lower bound follows.
+
+### Character sums for Singer sets
+
+Write $K=\mathbb F_q$, $E=\mathbb F_{q^3}$, and let $U$
+be the trace-zero subspace of $E$. Under the affine
+identification the indices of $D$ correspond to the classes
+of $U\setminus\{0\}$ in $E^\times/K^\times$.
+Let $\delta$ be a representative of the class for $a$.
+It is outside $U$, and a modular solution corresponds to
+classes $X,Y,Z$ with $XY/Z=\delta$ in the quotient.
+Equivalently, $X,Y\in U$ satisfy
+$\operatorname{Tr}(XY/\delta)=0$, with $Z$ determined.
+
+The bilinear form $\operatorname{Tr}(XY/\delta)$ is
+nondegenerate on $U$. Its radical would consist of the
+vectors in $U$ for which $X/\delta$ is in the trace
+annihilator of $U$, namely $K$. As $\delta\notin U$,
+the radical is zero. Consequently each projective $X$
+determines $Y$ by an invertible projective linear map of
+$\mathbb P^1(K)$. Choose representatives for the finite
+parameters of the projective line in the form
+
+```math
+ X(t)=a_0+a_1t,\qquad Y(t)=b_0+b_1t,\qquad t\in K,
+```
+
+where each pair of coefficients is linearly independent
+over $K$. The parameter at infinity affects the counts
+by at most one.
+
+Let $\chi$ generate the characters of $E^\times/K^\times$
+in the chosen exponent coordinate. For any fixed integer
+frequencies $h,k$, the Fourier coefficient for the ordered
+summands is, up to a constant of modulus one, the sum of
+$\chi^{h}(X(t))\chi^{k}(Y(t))$ over $t\in K$.
+Here and below the affine changes of the indices only change
+the generator of the character group and the constant factor.
+Put $\xi=-a_0/a_1$ and $\upsilon=-b_0/b_1$.
+Both have degree three over $K$.
+
+If their minimal polynomials are distinct, the character
+sum is a sum over monic degree-one polynomials for
+a Dirichlet character of $K[T]$ modulo the product of
+those two cubics. This follows by identifying the quotient
+at each cubic with $E$ by evaluation at its root.
+For a nonzero fixed frequency pair and sufficiently
+large $q$, at least one local character is nontrivial.
+Weil's bound gives $O(\sqrt q)$ for this sum. In the
+[function-field Dirichlet formulation](https://c.pgdm.ch/publications/roots-L-functions-characters.pdf),
+the sum is the coefficient of degree one in the
+$L$-polynomial, and the degree of the modulus is bounded.
+A trivial local character can be removed from the modulus
+since none of the tested linear polynomials vanishes there.
+
+If $\upsilon=\xi^{q^j}$ for $j=1$ or $2$, the two
+characters combine into a character at the same cubic
+with exponent $h+q^j k$ modulo $M=q^2+q+1$.
+This is nonzero modulo $M$ for a fixed nonzero pair
+and sufficiently large $q$. For $j=2$ use
+$q^2\equiv-q-1\pmod M$. The same square-root bound applies.
+In the remaining case $\upsilon=\xi$, the two field
+representatives are proportional by a fixed scalar.
+This scalar preserves $U$, so it lies in $K^\times$ by
+the trace annihilator property. The modular solutions then
+have $x=y$. Their single coordinate is equidistributed,
+since the nontrivial character sums of a Singer difference
+set have magnitude $\sqrt q$.
+
+### Character sums for Bose–Chowla sets
+
+Now take $E=\mathbb F_{q^2}$, and identify $D$ with
+$\vartheta+K\subseteq E^\times$ for $\vartheta\notin K$.
+Write $L:E\to K$ for the linear functional with $L(1)=0$
+and $L(\vartheta)=1$. Let $\delta\notin\vartheta+K$ be
+the nonzero field element corresponding to $a$. With
+$X=\vartheta+t$, the equations for $Y=\vartheta+s$ become
+
+```math
+ L(X\vartheta/\delta)+s L(X/\delta)=1.
+```
+
+For all but at most one $t$, the coefficient of $s$ is
+nonzero, giving $s$ as a linear fractional function of $t$.
+When the coefficient vanishes, $X/\delta$ lies in $K^\times$,
+so the equation would force $X=\delta$, which is excluded.
+The same argument with $X,Y$ exchanged proves that the
+fractional function is nonconstant for large $q$. In
+particular it has the form $s=(A+Bt)/(C+Dt)$ with
+$BC-AD\ne0$ in $K$. Therefore
+
+```math
+ Y(t)=\frac{(\vartheta C+A)+(\vartheta D+B)t}{C+Dt}.
+```
+
+The numerator coefficients are independent over $K$.
+The numerator and $X(t)$ give irreducible quadratics in
+the function-field Dirichlet character argument, and a
+nonconstant denominator gives a linear factor. The
+multiplicative character now has order $q^2-1$ on
+$E^\times$ and order $q-1$ on $K^\times$.
+
+If the two quadratic factors are distinct, a nonzero
+frequency gives a nontrivial character at at least one
+factor. If the roots are distinct conjugates, the exponent
+at their common quadratic is $h+qk$, which gives a nontrivial
+character for any fixed nonzero pair and large $q$.
+If the roots are equal and $C+Dt$
+is nonconstant, the denominator factor is nontrivial
+when $k\ne0$ for large $q$. When $k=0$ the first
+frequency gives a nontrivial character. All three cases
+give a square-root bound. Removing the possible pole
+changes the bound by $O(1)$.
+
+Finally, if the quadratic roots are equal and the
+denominator constant, then $Y(t)$ is a fixed scalar
+multiple of $X(t)$. Preservation of the affine line
+forces the scalar to be in $K^\times$ by taking differences
+and then to be $1$ by applying $L$. These are diagonal
+solutions. The single summand coordinate is equidistributed
+by the same character bound for one irreducible quadratic.
+
+### Character sums for Ruzsa sets
+
+Use the cyclic group model $\mathbb F_p\times\mathbb F_p^\times$,
+with addition in the first coordinate and multiplication
+in the second. The set is the diagonal $(x,x)$ with
+$x\in\mathbb F_p^\times$. If the image of $a$ is
+$(b,c)$, then $b\ne c$ and $c\ne0$. The modular equation
+determines the second summand by
+
+```math
+ y(x)=\frac{c(x-b)}{x-c}.
+```
+
+There are only $O(1)$ excluded values where a denominator
+or one of the required nonzero coordinates vanishes.
+A generating character in the exponent coordinate
+splits into a nontrivial additive character $\psi$ and
+a generating multiplicative character $\chi$.
+The sum for each fixed nonzero frequency pair $(h,k)$,
+apart from a constant of modulus one, is
+
+```math
+ \sum_x \psi(hx+k y(x))\chi(x^h y(x)^k).
+```
+
+For sufficiently large $p$, the additive argument has a
+simple pole at $x=c$ if $k\ne0$, and a simple pole at
+infinity if $k=0$ and $h\ne0$. This excludes the
+Artin–Schreier exceptional form, since the poles of
+$H^p-H$ have orders divisible by $p$. Thus the mixed
+[Weil character bound](https://www.mathnet.ru/eng/mzm6857)
+gives $O_{h,k}(\sqrt p)$.
+
+### From modular to integer solutions
+
+In the cases with the two-dimensional character bounds,
+the pairs $(x/M,y/M)$ are equidistributed in the unit square
+by the Fourier criterion. The number of modular solutions
+is $|D|+O(1)$ by the parameterizations. A modular solution
+becomes an integer solution precisely when
+$0\le x/M+y/M-a/M<1$. For $\alpha=a/M\in[0,1)$
+the strip has area $1/2+\alpha-\alpha^2\ge1/2$.
+In the diagonal cases, the corresponding interval for
+$x/M$ has length $1/2$. These estimates are uniform in
+the choice of $\alpha$. Indeed any subsequence of choices
+has a further subsequence with $\alpha$ convergent, where
+the strip or interval boundaries have limiting measure
+zero. In every case at least $(1/2-o(1))|D|$ ordered
+solutions are integer solutions, as claimed.
+
+### Consequence for an infinite Sidon set
+
+For every infinite integer Sidon set $A\subseteq\mathbb N$,
+the fraction of agreement with these classical sets satisfies
+
+```math
+ \limsup_{M\to\infty}\ \sup_D\frac{|A\cap D|}{|D|}
+   \le \frac78,
+```
+
+where the supremum is over these affine constructions
+at the available moduli. Indeed, agreement above
+$7/8+\epsilon$ along an unbounded sequence of moduli
+would force every element of $A\cap[1,M-1]$ to be in $D$
+for all sufficiently large members of the sequence.
+The recurrence theorem would then bound these prefixes
+by $O(\log M)$, contradicting the supposed agreement.
+This rules out obtaining the conjectured infinite density
+by modifications of size $o(\sqrt M)$ of these three
+classical cyclic families. The infinite conjecture is open.
