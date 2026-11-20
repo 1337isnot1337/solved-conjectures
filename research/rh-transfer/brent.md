@@ -13,7 +13,7 @@ In *Irregularities in the distribution of primes and twin primes*, Mathematics o
 \]
 Here \(L\) is his logarithmic-integral approximation. The paper uses an integer-part convention in its computational definitions. Replacing it by the usual principal-value \(\operatorname{li}\), or changing the lower integration endpoint to \(2\), changes the numerator in (B) by \(O(1)\). Thus these conventions give exactly the same limit.
 
-Primary sources: [Brent's complete original paper](https://maths-people.anu.edu.au/~brent/pd/rpb024.pdf), especially printed pages 43 and 51, and [his updated author page](https://maths-people.anu.edu.au/~brent/pub/pub024.html). The original page was inspected as a scan, not inferred from a search snippet.
+Primary sources: [Brent's complete original paper](https://maths-people.anu.edu.au/~brent/pd/rpb024.pdf), especially printed pages 43 and 51, and [his updated author page](https://maths-people.anu.edu.au/~brent/pub/pub024.html). The original PDF is a scan. The web screenshot command returned only text placeholders, not actual image data; direct visual verification is therefore still pending. The normalized statement is independently recorded in the comparative-prime-number bibliography and agrees with Brent's updated author page.
 
 **Conclusion under the accepted RH input.** The full original conjecture holds. More precisely,
 \[
@@ -278,11 +278,11 @@ This proves the full statement (B4).
 
 ## 6. Prior results and novelty check
 
-The following sources were inspected on 20 November 2026.
+The following sources and retrieved text were checked on 20 November 2026. Source-reading limits are stated explicitly.
 
-1. **Brent (1975), original paper.** Equation (7.3) on printed page 51 states the logarithmic conjecture. Equation (7.1) is the different ordinary-mean assertion associated with Shanks. The original definitions and integer-part convention were checked. The [updated author page](https://maths-people.anu.edu.au/~brent/pub/pub024.html) also records RH-conditional logarithmic-mean information and later references.
+1. **Brent (1975), original paper.** Equation (7.3) on printed page 51 states the logarithmic conjecture. Equation (7.1) is the different ordinary-mean assertion associated with Shanks. The integer-part convention was checked on the author's page. The PDF's formula image has not yet been directly inspected; its equation number and normalized statement are corroborated by the bibliography. The [updated author page](https://maths-people.anu.edu.au/~brent/pub/pub024.html) also records RH-conditional logarithmic-mean information and later references.
 
-2. **Robin (1986–1987), original paper.** The display (B) on printed page 161 is the modulus-four sum used above. The theorem on printed page 163 assumes no real zeros on \((0,1)\); its part (d) gives the logarithmic asymptotic when the relevant zero supremum is \(1/2\). Remark 1 on printed page 164 explicitly identifies the Brent case. This conditional theorem predates the present work and receives full credit.
+2. **Robin (1986–1987), original paper.** The extracted original text identifies display (B) and its conditional equivalence; the modulus-four formula used above is also explicitly recorded in the bibliography. A direct raster check of this display remains pending. The theorem on printed page 163 assumes no real zeros on \((0,1)\); its part (d) gives the logarithmic asymptotic when the relevant zero supremum is \(1/2\). Remark 1 on printed page 164 explicitly identifies the Brent case. This conditional theorem predates the present work and receives full credit.
 
 3. **Martin et al., comparative-prime-number bibliography.** The [author preprint](https://arxiv.org/pdf/2309.08729v3) and the 2025 published bibliography separately describe Brent's original logarithmic conjecture and Robin's conditional modulus-four result. This is a cross-check on scope and subsequent literature, not a substitute for the original statements.
 
