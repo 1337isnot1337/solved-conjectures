@@ -387,3 +387,126 @@ Thus J_alpha=2/e-1+O(1/alpha). Substitution into (20) proves (13).
 The coefficient 1/2-1/e is positive. This supplies a direct positive value, rather than only a positive test pairing, for every sufficiently large alpha. It also identifies why a sharp exponential-power cutoff changes the sign: its logarithmic convolution kernel assigns more mass to the positive singularity on the negative side.
 
 The convolution orientation, coefficient, point-supported ambiguity, and tail estimates were independently checked by two agents. Directed searches for Fujii with large alpha, log alpha, 1/e, and counterexample returned the previously cited literature but no earlier statement of (13) or of the full large-alpha oscillation conclusion. This is a bounded priority check, not a proof that the deduction is unpublished. The target count remains one.
+
+## 8. Positive lower density of both sign sets
+
+Assume beta GRH. For every sufficiently large fixed alpha, there exist constants c_+, c_-, kappa_+, kappa_->0 such that
+
+~~~math
+\begin{aligned}
+\liminf_{X\to\infty}\frac1X
+ \operatorname{meas}\left\{2\le x\le X:
+ S_\alpha(x)>c_+\frac{\sqrt x}{\log x}\right\}
+ &\ge \kappa_+,\\
+\liminf_{X\to\infty}\frac1X
+ \operatorname{meas}\left\{2\le x\le X:
+ S_\alpha(x)<-c_-\frac{\sqrt x}{\log x}\right\}
+ &\ge \kappa_-.
+\end{aligned}
+\tag{22}
+~~~
+
+Here meas is Lebesgue measure. Both assertions also hold when the sets are restricted to integers and measure is replaced by cardinality. In particular, both sign sets have positive lower natural density and positive lower logarithmic density.
+
+This conclusion is conditional on beta GRH. The complementary Landau argument proves oscillation when beta GRH fails, but the argument in that branch does not establish these density assertions.
+
+### 8.1. A general recurrence lemma
+
+Let F be a continuous real Bohr almost-periodic function and suppose F(t_0)>0. Choose c>0 and delta>0 such that
+
+~~~math
+F(t)>3c\qquad(|t-t_0|\le\delta).
+\tag{23}
+~~~
+
+The c-almost-periods are relatively dense: there is L>0 such that every interval of length L contains a tau with
+
+~~~math
+\sup_{t\in\mathbb R}|F(t+\tau)-F(t)|<c.
+\tag{24}
+~~~
+
+For the functions here, this property follows from uniform convergence of the trigonometric series. Finite trigonometric sums have relatively dense almost-periods by compactness of their orbit closure on a finite-dimensional torus, and a uniformly small tail preserves (24).
+
+Let Y be large. Apply (24) to the interval
+
+~~~math
+[Y-t_0-L-\delta,\;Y-t_0-\delta].
+~~~
+
+Choose an almost-period tau in that interval and put b=t_0+tau. Then
+
+~~~math
+Y-L-\delta\le b\le Y-\delta,
+\qquad
+F(t)>2c\quad(b-\delta\le t\le b+\delta).
+\tag{25}
+~~~
+
+Thus every sufficiently long logarithmic window has a positive interval of the same fixed width 2delta.
+
+### 8.2. Passing to prime sums and real natural density
+
+Apply the lemma with F=F_alpha. Section 7 provides its positive value for every sufficiently large alpha. The already proved asymptotic (12) says that for all sufficiently large t,
+
+~~~math
+\left|t e^{-t/2}S_\alpha(e^t)-F_\alpha(t)\right|<c.
+\tag{26}
+~~~
+
+The bound holds throughout the interval in (25) once Y-L-2delta is sufficiently large. Hence
+
+~~~math
+S_\alpha(x)>c\frac{\sqrt x}{\log x}
+\qquad
+(e^{b-\delta}\le x\le e^{b+\delta}).
+\tag{27}
+~~~
+
+Set X=e^Y. This interval lies in [2,X], and its length is at least
+
+~~~math
+\begin{aligned}
+e^{b+\delta}-e^{b-\delta}
+&=e^{b-\delta}(e^{2\delta}-1)\\
+&\ge X e^{-L-2\delta}(e^{2\delta}-1)\\
+&=X e^{-L}(1-e^{-2\delta}).
+\end{aligned}
+\tag{28}
+~~~
+
+Therefore the first lower bound in (22) holds with
+
+~~~math
+c_+=c,\qquad \kappa_+=e^{-L}(1-e^{-2\delta})>0.
+\tag{29}
+~~~
+
+For the other sign, the Bohr mean of F_alpha is
+
+~~~math
+-\frac{\Gamma(1/(2\alpha))}{2\alpha}<0.
+~~~
+
+There is no zero-frequency contribution from a nontrivial zero, because beta(1/2)>0. A function with negative mean must take a negative value. Apply the same argument to -F_alpha and -S_alpha. This supplies c_- and kappa_- and proves the second assertion in (22).
+
+The constants may depend on alpha and on the selected phase. No uniform assertion as alpha tends to infinity is needed or claimed.
+
+### 8.3. Integer density and logarithmic density
+
+Every closed real interval [a,b] contains at least b-a-1 integers. The interval in (27) therefore contributes at least kappa_+ X-1 positive integers below X, for all sufficiently large X. Dividing by floor(X) and taking a lower limit proves the integer assertion. Applying the same argument to the negative interval proves its counterpart.
+
+For completeness, positive lower natural density implies positive lower logarithmic density in both settings. If A(X) denotes the measure or counting function of one of the sets, then for every fixed 0<kappa'<kappa, one has A(X)>=kappa' X for all sufficiently large X. Integration by parts gives, respectively,
+
+~~~math
+\int_{\substack{2\le x\le X\\x\in E}}\frac{dx}{x}
+ =\frac{A(X)}X+\int_2^X\frac{A(u)}{u^2}\,du,
+\qquad
+\sum_{\substack{2\le n\le X\\n\in E}}\frac1n
+ =\frac{A(X)}X+\int_2^X\frac{A(u)}{u^2}\,du,
+\tag{30}
+~~~
+
+up to a fixed lower-endpoint constant if a different convention for A is used. The right-hand side is at least kappa' log X-O(1). Letting kappa' increase to kappa proves the stated logarithmic-density conclusion.
+
+This is a corollary within the same Fujii argument. It adds no named-conjecture count.
