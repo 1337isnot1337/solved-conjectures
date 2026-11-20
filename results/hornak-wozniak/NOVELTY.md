@@ -10,6 +10,7 @@
 | [Barth and Fournier (2006), §4](https://webusers.imj-prg.fr/~herve.fournier/publications/trees.pdf) | Maximum degree at most four, a leaf adjacent to each degree-four vertex, and a polynomial algorithm for multipodes. Lemma 10 yields the reduction used in Theorem 10. |
 | [Horňák, Tuza and Woźniak (2007), §4](https://doi.org/10.1016/j.dam.2007.02.011) | Online decomposability and short-arm results for the ordinary problem. |
 | [Barth, Fournier and Ravaux (2009), Theorem 7](https://webusers.imj-prg.fr/~herve.fournier/publications/shape.pdf) | Constructions of arbitrarily long-arm decomposable combs, including the relevant tripod shapes. This addresses existence rather than sufficiency of the five tests. |
+| [Horňák, Marczyk and Woźniak (2010), Questions 22.1–22.2](https://hereditarnia.ics.upjs.sk/data_files/1297834445_WorkshopProblems2010.pdf) | States existence at every prescribed shortest regular arm as open in both classes. The [explicit construction](EXISTENCE.md) answers these questions. |
 | [Juszczyk and Zioło (2010), §§1–2](https://opuscula.agh.edu.pl/vol30/2/art/opuscula_math_3010.pdf) | Restates the partition reductions and characterizes the particular families $S(2,3,b,c)$ and $S(4,b,c)$ in its notation. |
 | [Ravaux (2010)](https://doi.org/10.1016/j.tcs.2010.04.032) | Decomposability criteria and an algorithm for trees of large diameter. |
 | [Liu, Wu and Meng (2020)](https://bibliotekanauki.pl/articles/32361721.pdf) | Characterization for a class of forbidden-subgraph graphs and references to the literature on decomposable trees. |

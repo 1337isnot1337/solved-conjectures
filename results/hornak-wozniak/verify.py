@@ -3,6 +3,7 @@
 
 from functools import cache
 from itertools import combinations_with_replacement, product
+from math import lcm
 
 
 def consecutive_partitions(total, size):
@@ -130,8 +131,21 @@ def check_local_transfer():
     return checks
 
 
+def check_explicit_families():
+    checks = 0
+    for shortest, multiplier in product(range(1, 6), (1, 2)):
+        middle = multiplier * lcm(*range(1, 2 * shortest + 2))
+        longest = shortest + middle + 1
+        regular = (shortest, middle, longest)
+        for arms in (regular, (1,) + regular):
+            assert admissible(arms), arms
+            checks += 1
+    return checks
+
+
 if __name__ == "__main__":
     trees, partitions = check_small_trees()
     print(f"Checked {trees:,} small trees against {partitions:,} prescribed partitions.")
     transfer = check_local_transfer()
     print(f"Checked {transfer:,} local transfers by direct allocation.")
+    print(f"Checked {check_explicit_families():,} constructed trees against the five tests.")
