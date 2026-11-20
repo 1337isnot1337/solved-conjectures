@@ -56,3 +56,7 @@ The new claim is the structural failure of the source's threshold-to-log-concavi
 Its ingredients are classical: gamma reflection, gamma log convexity, dominated convergence of power series, and the second derivative criterion for log concavity. The gamma identities are recorded in [DLMF §5.5](https://dlmf.nist.gov/5.5), especially (5.5.1), (5.5.3), and the Bohr–Mollerup characterization. No novelty is claimed for those tools.
 
 The search supports “no earlier exact resolution found in the inspected sources,” not an exhaustive priority guarantee. Independent mathematical reviews and the exact algebra check are recorded in issue 100 and the accompanying audit files. These are internal reviews, not outside peer review.
+
+## Additional public-archive audit
+
+On 20 November 2026, exact arXiv/DOI identifiers, names, and formula fragments were searched in PrincipiaMathOrg/math-solutions, KnowledgeSense/math, Pudim, and Trure, with global exact-source queries as well. The full Principia file manifest, KnowledgeSense catalogue, and Pudim applications record were checked. Relevant matches were read at their actual statements: they concern Mills ratios, rising-factorial or gamma-ratio generating series, incomplete beta functions, or a different fractional-diffusion question. No exact prior resolution of this Wright-density conjecture was identified. The negative search remains bounded and is not a priority guarantee. See [the full archive audit](ARCHIVE-REAUDIT.md).
