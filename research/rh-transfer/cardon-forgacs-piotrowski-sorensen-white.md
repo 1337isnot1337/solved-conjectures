@@ -23,7 +23,7 @@ This is an unconditional refutation of the full universal assertion in Question 
 
 The candidate arose while studying the entire-function and zero-location methods adjacent to the accepted RH source. The proof does not use RH, Dirichlet GRH, or any hypothesis from the source repository.
 
-**Status:** the full written proof, original scope, and bounded prior-art audit passed an independent analytic review. Further independent review is in progress. No claim of exhaustive priority verification is made.
+**Status:** the full written proof and original scope passed three independent internal reviews. The bounded prior-art audit found no earlier exact disproof; conflicting earlier assertions and nearby resolved problems are recorded below. No claim of exhaustive priority verification is made.
 
 ## 1. Why failure on this cubic contradicts sector reduction
 
@@ -257,8 +257,13 @@ This is a bounded literature audit. It does not establish that no unpublished or
 
 ## Review status
 
-The [independent analytic review](https://github.com/1337isnot1337/solved-conjectures/issues/136#issuecomment-7050394975) passed the complete note. It checked the exact original quantifiers, positive-width sector argument, all-real-​\(p>2\) finite-difference proof, discriminant expansion, rational and integral certificates, and the distinction from neighboring coefficient-power results. No mathematical repair was requested.
+The [independent analytic review](https://github.com/1337isnot1337/solved-conjectures/issues/136#issuecomment-7050394975) passed the complete note. It checked the exact original quantifiers, positive-width sector argument, all-real-\(p>2\) finite-difference proof, discriminant expansion, rational and integral certificates, and the distinction from neighboring coefficient-power results. No mathematical repair was requested.
 
-Further independent reviews will be appended when posted. This is internal mathematical review, not formal verification or external peer review.
+Two further independent reviews also passed:
+
+- [Arithmetic review](https://github.com/1337isnot1337/solved-conjectures/issues/136#issuecomment-7050415504) checked the exact original question, positive-width sector reduction, finite-difference argument, and both exact discriminant certificates.
+- [Root review](https://github.com/1337isnot1337/solved-conjectures/issues/136#issuecomment-7050423888) checked the full written proof and original source scope independently.
+
+No reviewer requested a mathematical repair. All three reviews retain the unconditional nature of the counterexample and the bounded scope of the priority search. This is internal mathematical review, not formal verification or external peer review.
 
 No Lean verification was performed.
