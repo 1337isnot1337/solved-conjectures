@@ -667,3 +667,126 @@ If the CM base is fixed, the cost is a fixed field-dependent constant. If its cl
 Sections 13 and 14 prove three specific facts: the reducible class-character alternatives form a finite-flat abelian algebra; its integral cotangent and splitting losses are explicit; and distinct finite-character alternatives have a class-number-independent bound on pointwise congruence depth.
 
 They do not establish that the full twisted Selmer deformation ring is O-flat, that every needed extension survives in characteristic zero, or that every resulting nonabelian point is automorphic with the required level. Those are the remaining obligations for a twisted OneChar theorem. The source's unrestricted residual neighborhood still contains all the class-character points in (14.1); only a deeper neighborhood isolates the prescribed one.
+
+
+## 15. The same depth bound controls Type II character ambiguities
+
+The source has another use of class-number coprimality. In [UnitaryThreeGroups/CoboundaryLemmaNoColumn.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CoboundaryLemmaNoColumn.lean), **typeII_facts** invokes char_eq_one first for the middle character and then for the total determinant. It obtains middle character 1 and corner determinant 1; the latter is the input to W_facts, which descends the corner to an odd rank-two representation over Q.
+
+Section 13's diagonal argument extends to the middle and determinant of a genuine rank-two-plus-rank-one point.
+
+### 15.1 Spectral-projector lemma
+
+Let ell>=5, let O be a complete DVR, and suppose rho is an integral rank-three representation whose characteristic-zero representation is the direct sum of a character kappa and a two-dimensional representation W. Let
+
+~~~math
+\rho_* = b_+\oplus b_0\oplus b_-
+~~~
+
+be the prescribed diagonal reference. Assume:
+
+- there is g_0 for which the three reference eigenvalues have pairwise distinct residues;
+- kappa has the residual middle character b_0;
+- tr rho(g) agrees with tr rho_*(g) modulo pi^n for every g.
+
+Then kappa agrees with b_0 modulo pi^n at every g, and det rho agrees with det rho_* modulo pi^n at every g.
+
+To prove the middle assertion, apply Newton's identities at g_0 exactly as in section 13. The characteristic polynomial has three distinct simple residual roots, so Hensel's lemma gives roots alpha_+,alpha_0,alpha_- in O matching the reference roots beta_+,beta_0,beta_- modulo pi^n. The middle root is kappa(g_0). Define
+
+~~~math
+P_0(X)=
+\frac{(X-\alpha_+)(X-\alpha_-)}
+ {(\alpha_0-\alpha_+)(\alpha_0-\alpha_-)}.
+~~~
+
+Its coefficients lie in O, and they agree modulo pi^n with the corresponding reference polynomial. The operator P_0(rho(g_0)) is the identity on the kappa summand and zero on W. This remains true when W is irreducible: its two eigenvalues at g_0 are the other two roots.
+
+For each h,
+
+~~~math
+\kappa(h)
+=\operatorname{tr}\big(P_0(\rho(g_0))\rho(h)\big).
+~~~
+
+Expand the degree-two polynomial. The all-element trace congruence at g_0^j h, j=0,1,2, then gives kappa(h) congruent to b_0(h). For the determinant assertion, apply Newton's identities to the traces at h,h^2,h^3.
+
+If kappa/b_0 and det rho/det rho_* are finite characters, the torsion threshold of section 13 therefore gives
+
+~~~math
+\kappa=b_0,\qquad \det\rho=\det\rho_*
+\quad\hbox{whenever}\quad n>e_{\mathcal O}/(\ell-1).
+\tag{15.1}
+~~~
+
+This controls both character ambiguities in typeII_facts under the stronger depth hypothesis. It does not require W to split into characters.
+
+For the corrected target, b_0=1 and det rho_*=psi^2. Thus (15.1) gives middle character 1 and corner determinant psi^2. It does not make the corner determinant 1 before twisting.
+
+As before, the needed all-element depth is not an existing consequence of IsPt, and a finite list of counting-prime congruences is not enough. The lemma is a proved conditional replacement, not a claim that the original theorem can already be instantiated with a Hecke character.
+
+## 16. The corner descends after twisting, but the cohomology retains a dihedral factor
+
+There is no abstract descent obstruction for the determinant-one corner. The matrix calculation is explicit.
+
+Let K be imaginary quadratic, H=G_K, Gamma=G_Q, and choose complex conjugation c of order two. Put
+
+~~~math
+J_s=\begin{pmatrix}0&1\\1&0\end{pmatrix},
+\qquad
+J_a=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+\qquad
+D=J_sJ_a=\begin{pmatrix}-1&0\\0&1\end{pmatrix}.
+~~~
+
+Suppose the corner representation W:H to GL_2(E) satisfies the literal unitary relation
+
+~~~math
+W(chc)=J_s W(h)^{-t}J_s.
+\tag{16.1}
+~~~
+
+Let xi be a finite anti-cyclotomic character with det W=xi^2, and define V=W tensor xi^(-1). Then det V=1 and (16.1) is preserved by the twist, because xi(chc)=xi(h)^(-1).
+
+For a determinant-one two-by-two matrix A,
+
+~~~math
+A^{-t}=J_a A J_a^{-1}.
+~~~
+
+Consequently
+
+~~~math
+V(chc)=D V(h)D,\qquad D^2=1.
+~~~
+
+This supplies a continuous extension to Gamma by setting V(c)=D. Its determinant is the quadratic character of K/Q, and it is odd because det D=-1. No choice of square root of an intertwining scalar is required.
+
+For ell-primary class characters and ell odd, every such determinant character has a unique ell-primary square root xi: multiplication by two is an automorphism of the finite ell-primary character group. Over an imaginary quadratic field all unramified class characters are anti-cyclotomic. Thus retaining finite class determinants still permits this corner descent.
+
+The extension-sensitive coefficient module does not become untwisted. If kappa is the middle character, then
+
+~~~math
+\operatorname{Hom}(\kappa,W)
+=V|_H\otimes\nu,\qquad \nu=\xi/\kappa.
+\tag{16.2}
+~~~
+
+Shapiro's lemma and the tensor identity give
+
+~~~math
+H^1(H,V|_H\otimes\nu)
+\simeq
+H^1\!\left(\Gamma,
+ V\otimes\operatorname{Ind}_H^\Gamma\nu\right).
+\tag{16.3}
+~~~
+
+The same identification respects the corresponding induced local conditions when those are transported under the local Shapiro maps. Equation (16.3) has rank four when V has rank two.
+
+An anti-cyclotomic character nu can extend as a one-dimensional character of Gamma only if nu^c=nu. Combining this with nu^c=nu^(-1) forces nu^2=1. For odd-order nu this forces nu=1. If nu has order greater than two, Ind_H^Gamma nu is irreducible: its restriction to H is the sum of the two distinct characters nu and nu^(-1), which complex conjugation exchanges.
+
+For the corrected target the middle character is 1 and the corner determinant is psi^2, so xi=psi and nu=psi. The nontrivial anti-cyclotomic character therefore survives precisely in the induced two-dimensional factor in (16.3).
+
+The generic-looking vanishing input in [UnitaryThreeGroups/KatoUse.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/KatoUse.lean) treats a rank-two representation over Q and finite one-dimensional characters of G_Q. The rank-four dihedral tensor in (16.3) is not such an input. Descending the corner is therefore a real algebraic advance but does not, by itself, make the source's Kato application available for the twisted extension module.
+
+The remaining arithmetic question can now be stated precisely: obtain the required strict Selmer vanishing, or a quantitatively adequate replacement, for V tensor Ind_K^Q nu with nu an arbitrary finite anti-cyclotomic class character. Invoking the rank-two rational-character Kato theorem without addressing this factor would lose the character being studied.
