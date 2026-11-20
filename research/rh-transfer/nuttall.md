@@ -1,6 +1,6 @@
 # Nuttall's conjecture
 
-Status, 20 November 2026: complete proof candidate for the full cumulant conjecture; independent review and prior-art investigation in progress. No solved-count or priority claim is made at this checkpoint. The proof below is unconditional and uses no computation or Lean. It arose from the Riemann-hypothesis applications campaign.
+Status, 20 November 2026: complete proof of the full cumulant conjecture, with an independent internal mathematical review and a bounded primary-source prior-art audit recorded below. The argument is unconditional and uses no computation or Lean. It arose from the Riemann-hypothesis applications campaign. Internal review is not external peer review, and priority is not certified.
 
 ## 1. Exact target
 
@@ -285,7 +285,7 @@ Thus the positive box dominates the entire possibly negative contribution, unifo
 \]
 for every sufficiently large integer \(m\).
 
-Combined with (10), this establishes (3) for the chosen \(s\). Taking the maximum of the finitely many thresholds for \(1\le s\le r\), and applying the criterion of §2, proves (1) for every sufficiently large \(m\). This completes the candidate proof of Nuttall's full cumulant conjecture.
+Combined with (10), this establishes (3) for the chosen \(s\). Taking the maximum of the finitely many thresholds for \(1\le s\le r\), and applying the criterion of §2, proves (1) for every sufficiently large \(m\). This completes the proof of Nuttall's full cumulant conjecture.
 
 ## 7. Scope and relation to the RH campaign
 
@@ -295,15 +295,35 @@ No claim that the original kernel \(\Phi(x+y)\) is reverse regular of every orde
 
 The full statement is quantified over every order and every pair of ordered nonnegative node sets. It is not a finite-order verification or an improvement of a numerical threshold. The seven additional Conrey–Ghosh kernels are not being counted as seven new conjectures.
 
-## 8. Prior-art audit and review obligations
+## 8. Prior-art audit
 
 The following primary sources were inspected on 20 November 2026.
 
-- [N1] John Nuttall, *Wronskians, Cumulants, and the Riemann Hypothesis*, Constructive Approximation 38 (2013), 193–208, DOI [10.1007/s00365-013-9200-8](https://doi.org/10.1007/s00365-013-9200-8). [Author manuscript](https://publish.uwo.ca/~jnuttall/det3CAEXP_2.pdf). The full target is Conjecture1, §4.5. Lemma2.1 provides the underlying Wronskian criterion; §4.6 identifies the remaining RH gap.
-- [N2] John Nuttall, *Wronskians and the Riemann Hypothesis*, August2012. [Author manuscript](https://publish.uwo.ca/~jnuttall/wronskRH.pdf). It studies the first theta summand and describes the full cumulant assertion as a remaining task.
-- [N3] John Nuttall, *Cumulants, the Riemann Hypothesis, and Similar Problems*. [Author manuscript](https://publish.uwo.ca/~jnuttall/cumanal_a.pdf). Its Theorem5.6 proves the analogous assertion for one Conrey–Ghosh kernel \(\Theta_1\). Its introduction explicitly treats extension to the Riemann theta kernel as prospective. Its determinant-integral and first-summand dominance strategy are close prior art; no claim to have invented those ingredients is made.
-- [N4] [Author's current publication index](https://publish.uwo.ca/~jnuttall/index.html), sections2.1.14–2.1.16. It identifies the later proof as covering one Conrey–Ghosh case.
+- [N1] John Nuttall, *Wronskians, Cumulants, and the Riemann Hypothesis*, Constructive Approximation 38 (2013), 193–208, DOI [10.1007/s00365-013-9200-8](https://doi.org/10.1007/s00365-013-9200-8). [Author manuscript](https://publish.uwo.ca/~jnuttall/det3CAEXP_2.pdf). The full target is Conjecture 1, §4.5. Lemma 2.1 provides the underlying Wronskian criterion; §4.6 identifies the remaining RH gap.
+- [N2] John Nuttall, *Wronskians and the Riemann Hypothesis*, August 2012. [Author manuscript](https://publish.uwo.ca/~jnuttall/wronskRH.pdf). It studies the first theta summand and describes the full cumulant assertion as a remaining task.
+- [N3] John Nuttall, *Cumulants, the Riemann Hypothesis, and Similar Problems*. [Author manuscript](https://publish.uwo.ca/~jnuttall/cumanal_a.pdf). Its Theorem 5.6 proves the analogous assertion for one Conrey–Ghosh kernel \(\Theta_1\). Its introduction explicitly treats extension to the Riemann theta kernel as prospective. Its determinant-integral and first-summand dominance strategy are close prior art; no claim to have invented those ingredients is made.
+- [N4] [Author's current publication index](https://publish.uwo.ca/~jnuttall/index.html), sections 2.1.14–2.1.16. It identifies the later proof as covering one Conrey–Ghosh case.
 
-Both search engines were queried for the exact author/conjecture/cumulant/sign-regularity terms, and the original manuscript and author followups were compared directly. This search has not located a prior full proof for \(\Phi\). That is a search result, not proof of priority. A further check of later citing papers and general eventual-positivity theorems is ongoing.
+- [N5] Karlheinz Gröchenig, *Schoenberg's Theory of Totally Positive Functions and the Riemann Zeta Function*, [arXiv:2007.12889](https://arxiv.org/pdf/2007.12889), published 2023, DOI [10.1007/978-3-031-41130-4_9](https://doi.org/10.1007/978-3-031-41130-4_9). Its citation to Nuttall concerns the Taylor-coefficient Toeplitz criterion. Its reciprocal-\(\Xi\) and inverse-Laplace characterization does not assert eventual reverse regularity of the repeated tail integrals.
+- [N6] Karlheinz Gröchenig, *Infinite totally positive matrices: some open problems*, 17 August 2026, DOI [10.1007/s44146-026-00264-3](https://link.springer.com/article/10.1007/s44146-026-00264-3). Its questions concern variation diminution and invertibility of matrices already assumed totally positive; this does not supply the sign-regularity assertion proved here.
+- [N7] Jaume de Dios Pont, Karlheinz Gröchenig, Lukas Liehr, Irina Shafkulovska and Mitchell A. Taylor, *Gabor Frames of Totally Positive Functions: A Complete Characterization*, [arXiv:2608.04992](https://arxiv.org/abs/2608.04992). Its frame-set result assumes total positivity of the generating function. It does not establish the cumulant conjecture.
+- [N8] Bao-Xuan Zhu, *Coefficientwise Hankel-total positivity from a universal cumulant lifting*, [arXiv:2611.01172](https://arxiv.org/abs/2611.01172). The term “cumulant” there means probabilistic logarithmic cumulants of moment sequences. It is not the repeated tail integration in the present problem.
 
-Independent review should focus on the differentiable asymptotic induction in §3; the two sign cancellations in (9); the all-prefix Wronskian hypothesis in §2; and uniformity in \(u\) of (11), (15), and (17). The candidate has not yet been promoted to the repository's solved-results index.
+The two collaborating audit lanes queried both search engines with the exact author, title, conjecture, cumulant, sign-regularity and \(RR_r\) terms; compared the original manuscripts and author followups; checked later citing papers and 2025–2026 results; and searched the public OpenAI/math and qqliu/CoPEER research inventories. The full-text comparison of [N1]–[N5] distinguishes the Riemann kernel from the one Conrey–Ghosh case. The scope checks [N6]–[N8] address possible subsumption by more general recent total-positivity results.
+
+No full earlier proof of the exact assertion for \(\Phi\) was located in the inspected sources. That is bounded negative search evidence, not proof of priority or a guarantee that no unindexed result exists. The determinant identities, extended-Chebyshev criterion, first-summand asymptotics and dominance strategy are established ingredients. The proof's claimed contribution is their uniform combination for all \(u\ge0\) in the full Riemann-kernel cumulant assertion.
+
+## 9. Independent review
+
+The root research agent independently checked the exact target against [N1, §4.5] and reviewed the complete proof in [issue #121, review comment](https://github.com/1337isnot1337/solved-conjectures/issues/121#issuecomment-7049681840). The review checked:
+
+- all initial Wronskians in both applications of the extended-Chebyshev criterion;
+- the differentiable asymptotic expansion and the Sylvester identity;
+- both sign cancellations in the Andreief formula;
+- the compact-\(u\) bad-region bound and the separated-box lower bound;
+- the ratio in (18), the all-\(u\) conclusion and the quantifier “every sufficiently large \(m\)”;
+- the distinction between this full conjecture and the separate RH-equivalent Toeplitz positivity problem.
+
+The reviewer requested one wording correction: the ranges of \(y_i/\sqrt m\), as the common \(u\) varies, need not be globally disjoint. The required uniform pairwise separation is valid and is now stated directly in §6. This correction was committed in [871c019](https://github.com/1337isnot1337/solved-conjectures/commit/871c01965c916034cb4d549f0d926cb1f4024d39). No other proof defect was found in that review.
+
+The first complete draft was committed in [4dcac9d](https://github.com/1337isnot1337/solved-conjectures/commit/4dcac9dba3b2933c481e8c3f98ccbb0a97619892). Discussion and subsequent checks are recorded in [issue #121](https://github.com/1337isnot1337/solved-conjectures/issues/121). This is an internal review record, not a claim of external peer review or formal verification.
