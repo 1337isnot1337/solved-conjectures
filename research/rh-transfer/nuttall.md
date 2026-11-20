@@ -224,7 +224,18 @@ For \(0\le u\le U\), put
  y_i=\pi e^{4(u+v_i)}
      =\pi e^{4u}\sqrt m\,e^{4(v_i-w_m)}.
 \]
-The \(y_i/\sqrt m\) lie in fixed disjoint positive compact intervals, with a uniform positive separation. From (4), for \(0\le j<s\),
+Uniformly for \(u\in[0,U]\) and throughout the box, there are constants \(0<c_{s,U}<C_{s,U}\) such that
+\[
+ c_{s,U}\sqrt m\le y_i\le C_{s,U}\sqrt m,\qquad
+ y_j-y_i\ge c_{s,U}\sqrt m\quad(i<j).
+\]
+Indeed,
+\[
+ y_j-y_i
+ =\pi e^{4u}\sqrt m
+ \left(e^{4(v_j-w_m)}-e^{4(v_i-w_m)}\right),
+\]
+and the chosen intervals \(I_i\) are separated. The same \(u\) occurs in every \(y_i\); no global disjointness assertion for their ranges as \(u\) varies is needed. From (4), for \(0\le j<s\),
 \[
  \frac{\Phi^{(j)}(u+v_i)}{\Phi(u+v_i)}
  =(-4y_i)^j+O_s(y_i^{j-1}),                            \tag{14}
