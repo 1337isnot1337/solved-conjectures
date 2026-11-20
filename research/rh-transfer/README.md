@@ -12,7 +12,7 @@ The accepted top-level result covers the Riemann zeta function and Dirichlet L-f
 
 ## Reviewed full named outcomes
 
-The following inventory contains twelve full named statements with complete written deductions in this lane. Three entries use proof arguments developed here; nine discharge the hypothesis of a credited published theorem with the accepted RH/Dirichlet-GRH input. This is not a claim of twelve independent new proofs. Coffey and Keiper concern closely related coefficients, and their dependence is stated in both notes.
+The following inventory contains sixteen full historically stated conjectures with complete written deductions in this lane. Six entries contain proof arguments or deductions developed in this campaign; ten use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of sixteen independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
 
 Current prior-art searches have not located an earlier full resolution of the exact targets apart from the accepted input and the established conditional implications. The searches and retrieval limits are recorded individually. Mathematical completeness, historical priority, and external acceptance are different questions.
 
@@ -20,11 +20,15 @@ Current prior-art searches have not located an earlier full resolution of the ex
 |---|---|---|
 | Nuttall's conjecture | Proved: every fixed order admits a tail cumulant whose kernel has all the required determinant signs for every ordered node set | Complete internally reviewed unconditional proof; [note](nuttall.md), [issue #121](https://github.com/1337isnot1337/solved-conjectures/issues/121) |
 | Coffey–Smith conjecture | Disproved: under RH the union of its two proposed positive-fraction sets has density zero; without RH its upper bound fails | Complete internally reviewed unconditional refutation; [note](coffey-smith.md), [issue #122](https://github.com/1337isnot1337/solved-conjectures/issues/122) |
+| Merlini–Sala–Sala conjecture | Disproved: the tiny Li remainder divided by n^(1/4) has infinite absolute limsup, so its proposed subpower and logarithmic bounds fail | Complete internally reviewed unconditional refutation; [note](merlini-sala-sala.md), [issue #128](https://github.com/1337isnot1337/solved-conjectures/issues/128) |
+| Chaudhary–Khmiri–Mazhouda conjecture | Disproved: an admissible unitary Dirichlet twist has Re(lambda(2)−lambda(1))<−3/2 | Complete internally reviewed unconditional counterexample with exact rational certificate; [note](chaudhary-khmiri-mazhouda.md), [issue #124](https://github.com/1337isnot1337/solved-conjectures/issues/124) |
+| Pomerance's conjecture | Proved in its original 1974 nonexistence form: no integer satisfies his sufficient criterion for a unique totient preimage | Complete internally reviewed deduction from the Ford–Luca prime-tree theorem and accepted Dirichlet GRH; [note](pomerance.md), [issue #129](https://github.com/1337isnot1337/solved-conjectures/issues/129) |
 | Fujii's conjecture | The reported all-positive-alpha equivalence family is false under the accepted beta GRH; the large-alpha oscillation theorem is unconditional | Complete internally reviewed argument, with direct original-source retrieval still limited; [note](fujii.md) |
 | Banks–Friedlander–Luca–Pappalardi–Shparlinski conjecture | Every value of Carmichael's lambda function has at least two preimages | Published Ford–Luca theorem under exactly Dirichlet ERH, plus checked arithmetic deduction; [note](banks-friedlander-luca-pappalardi-shparlinski.md), [issue #120](https://github.com/1337isnot1337/solved-conjectures/issues/120) |
 | Riffaut's conjecture | No singular modulus of degree at least three is a zero of a rational trinomial of the stated form | Published Bilu–Luca–Pizarro-Madariaga Dirichlet-GRH theorem; [note](riffaut.md), [issue #119](https://github.com/1337isnot1337/solved-conjectures/issues/119) |
 | Coffey's conjecture | The full coefficient upper bound holds, with the stronger bound log(n+2)/sqrt(n) | Published Lagarias RH estimate with exact coefficient normalization; [note](coffey.md), [issue #118](https://github.com/1337isnot1337/solved-conjectures/issues/118) |
 | Keiper's conjecture | The normalized coefficients have the full asymptotic, including the constant term, with a square-summable remainder | Published Arias de Reyna RH theorem; [note](keiper.md), [issue #123](https://github.com/1337isnot1337/solved-conjectures/issues/123) |
+| Brent's conjecture | The original discrete logarithmic mean tends to one; Robin's separately stated modulus-four logarithmic mean also holds | Classical RH/Dirichlet-GRH consequences, with full signed-weight and sum–integral deductions; [note](brent.md), [issue #127](https://github.com/1337isnot1337/solved-conjectures/issues/127) |
 | Soundararajan's conjecture | The original smooth-number equidistribution statement holds for every fixed A in its full asymptotic range | Published Banks–Shparlinski criterion under Dirichlet GRH; [note](soundararajan.md) |
 | Grosswald's conjecture | The full least-primitive-root inequality holds for every prime p>409 | Published McGown–Treviño–Trudgian Dirichlet-GRH theorem, with its finite dependencies imported; [note](grosswald.md) |
 | Knapowski–Turán conjecture | The original modulus-four natural-density assertion is false | Published Kaczorowski Dirichlet-GRH theorem; [note](knapowski-turan.md) |
@@ -68,6 +72,47 @@ This contradicts the original positive-fraction clauses for both signs. The proo
 
 The separate upper-bound statement named Coffey's conjecture remains valid under accepted RH. The density refutation does not contradict it.
 
+### Merlini–Sala–Sala conjecture
+
+For the same coefficients \(c_n\), the authors' tiny remainder is \(\lambda_{\rm tiny}(n)=n c_n\). The [proof](merlini-sala-sala.md) gives
+~~~math
+\limsup_{n\to\infty}\frac{|\lambda_{\rm tiny}(n)|}{n^{1/4}}=\infty.
+~~~
+It refutes their full logarithmic/subpower conjecture. Assuming the contrary bound first supplies an analytic logarithm and an \(H^2\) boundary function. On zero-free arcs corresponding to \(T\le t\le2T\), its argument has angular derivative of order \(T^2\log T\). The zero count leaves enough whole short arcs to force a squared translation modulus at least \(c/T\); the assumed coefficient bound gives \(O(1/(T\sqrt{\log T}))\). The contradiction is unconditional and requires no zero-spacing assumption.
+
+### Chaudhary–Khmiri–Mazhouda conjecture
+
+The [counterexample](chaudhary-khmiri-mazhouda.md) uses the unitary GL1 twist
+~~~math
+L(s,\pi_8)=L(s+8i,\chi_{-3}).
+~~~
+It belongs to the exact class in the 2026 original paper. A Hadamard-product calculation reduces the first coefficient decrease to two logarithmic derivatives at \(1+8i\). Explicit Euler–Maclaurin and gamma-series remainders, enclosed by [integer interval arithmetic](certificates/chaudhary-khmiri-mazhouda.py), prove
+~~~math
+\operatorname{Re}\lambda_{\pi_8}(2)
+-\operatorname{Re}\lambda_{\pi_8}(1)
+\in[-1.660157075630,-1.655616272869].
+~~~
+This is a full counterexample to universal monotonicity. Its proof does not assume RH; it remains a counterexample under accepted Dirichlet GRH.
+
+### Pomerance's conjecture
+
+The original 1974 abstract conjectures that no positive integer \(n\) satisfies
+~~~math
+r-1\mid\varphi(n)\quad\Longrightarrow\quad r^2\mid n
+\qquad\text{for every prime }r.
+~~~
+The [proof](pomerance.md) selects the smallest prime power missing from \(\varphi(n)\), propagates the assumed condition down Pratt trees, and uses Ford–Luca's Dirichlet-GRH theorem to force one extra valuation. It settles that complete original nonexistence statement. The stronger ordered prime-product conjecture and Carmichael's full totient conjecture remain open here.
+
+### Brent's conjecture
+
+The [note](brent.md) proves Brent's literal discrete mean, equation (1.22) in the original:
+~~~math
+\sum_{n=2}^N
+\frac{(\langle\operatorname{li}(n)\rangle-\pi(n))\log n}{n^{3/2}}
+=\log N+2\log\log N+O(1),
+~~~
+where angle brackets mean nearest integer. The prime-square term supplies the mean after the integrated explicit formula. A summable cell error connects the integral proof to the exact discrete statement. Robin's modulus-four version is credited to his existing GRH theorem and also receives a complete signed-weight deduction. The downloaded original scans and an independent review establish the precise historical formulas.
+
 ## Fujii's conjecture
 
 The complete written argument in [Fujii's conjecture](fujii.md) proves, without any RH assumption, that there is A>0 such that for every fixed alpha>A,
@@ -95,6 +140,12 @@ The [Gamma-power clause](fujii-gamma-power.md) has a separate complete proof: fo
 
 | Named target or source application | Recorded outcome | Note |
 |---|---|---|
+| Merlini–Sala–Sala conjecture | Complete unconditional refutation of full logarithmic/subpower remainder growth; separate linear stability bound remains unresolved | [Merlini–Sala–Sala](merlini-sala-sala.md) |
+| Chaudhary–Khmiri–Mazhouda conjecture | Complete unconditional counterexample to full automorphic Li monotonicity, with exact interval certificate | [Chaudhary–Khmiri–Mazhouda](chaudhary-khmiri-mazhouda.md) |
+| Pomerance's conjecture | Complete accepted-Dirichlet-GRH proof of the original no-criterion assertion; ordered prime-product statement remains open | [Pomerance](pomerance.md) |
+| Brent's conjecture | Full original discrete logarithmic mean and Robin's separately credited modulus-four statement follow from accepted RH/Dirichlet GRH | [Brent](brent.md) |
+| Carmichael's conjecture | Unresolved. Exact Carmichael–Klee closure and the multiplicative replacement obstruction are documented; no inference from lambda-function noninjectivity | [Carmichael](carmichael.md) |
+| Bellemare–Langlois–Ransford conjecture | Unresolved for its original harmonic weights. A broader decreasing-weight assertion is disproved; the complete Cesàro analogue is proved but not counted | [Bellemare–Langlois–Ransford](bellemare-langlois-ransford.md) |
 | Fujii's conjecture | Complete internally reviewed unconditional large-alpha oscillation theorem; refutation of the reported equivalence family uses accepted beta GRH. Exact-application priority remains unclaimed | [Main proof](fujii.md), [prior art](fujii-prior-art.md) |
 | Fujii's conjecture, Gamma-power clause | Complete equivalence for the entire integer-k family by classical positive convolution and Landau; no separate target count | [Gamma-power proof](fujii-gamma-power.md) |
 | Lindelöf hypothesis | Full standard implication from accepted RH/Dirichlet GRH; classical attribution retained | [Dirichlet applications](dirichlet-applications.md) |
