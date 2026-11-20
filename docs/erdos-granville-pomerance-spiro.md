@@ -474,3 +474,8 @@ also covers inputs whose largest prime is at most the square root
 and whose two largest primes have product at least $n^{6/7}$.
 A refinement by prime and cofactor size brings the combined
 natural density to approximately $51.96\%$.
+
+A [third-prime theorem](erdos-granville-pomerance-spiro-third-prime.md)
+also treats $n=pqrw$ with $p>\sqrt n$ and $r>w^3$, including
+inputs with $q\le rw$. The three proved families have combined
+natural density approximately $53.46\%$.
