@@ -27,7 +27,7 @@ is strictly sign-reverse regular through order \(r\). Explicitly, for every \(1\
 \[
  \epsilon_s\det[\Psi_m(x_i+y_j)]_{i,j=1}^s>0.                 \tag{1}
 \]
-The existence of a least such integer then follows from well-ordering. We prove the stronger quantifier statement that (1) holds for **every sufficiently large integer \(m\)**, with the threshold depending only on \(r\).
+The existence of a least such integer then follows from well-ordering. We prove the strict determinant conclusion (1) for **every sufficiently large integer \(m\)**, with the threshold depending only on \(r\). The eventual-all-\(m\) quantifier is not claimed as a new strengthening: [N1, Remark 4.1] already propagates a successful cumulant order to every larger order. The proof below gives that conclusion directly with strict signs.
 
 This is different from the positivity of every Toeplitz determinant of the normalized even moments of \(\Phi\). That latter condition is equivalent to RH; the cumulant conjecture by itself does not establish it. Nuttall states the remaining gap explicitly in [N1, §§1.5, 4.6].
 
