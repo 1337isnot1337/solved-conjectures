@@ -2,6 +2,9 @@
 
 Cinna Davis and GPT-6.2 Astra, 20 November 2026.
 
+**Status: previously disproved; excluded from new-resolution claims.** The [CoPEER archive](https://github.com/qqliu/CoPEER/blob/105523fdaf018b62eaf2883347724dfe79935611/mathematics/discoveries/entries/number-theory/fake-gaussian-positivity-counterexample.md) contains an exact counterexample to Conjecture 4, with an internal deposition date of 11 September 2026. Its [public repository commit](https://github.com/qqliu/CoPEER/commit/105523fdaf018b62eaf2883347724dfe79935611) is dated 24 October 2026. The complete source binding and arithmetic were independently checked on 20 November 2026. The five-factor family below is retained as an independently found exposition of the same already resolved conjecture.
+
+
 ## Statement and scope
 
 Gatzweiler and Krattenthaler state the following as Conjecture 4 in *A positivity conjecture for a quotient of q-binomial coefficients*, Ramanujan Journal **69** (2026), Article 13, [doi:10.1007/s11139-025-01285-2](https://doi.org/10.1007/s11139-025-01285-2), [arXiv:2502.06032v3](https://arxiv.org/abs/2502.06032v3).
@@ -116,4 +119,4 @@ The proof is elementary and does not depend on a search bound, a floating-point 
 
 A bounded mixed-integer feasibility search suggested the support. That search was a discovery tool, not a proof of either polynomiality or negativity. Exact integer checks and a separate independent review then confirmed the argument. No minimality claim is made.
 
-The [literature record](literature.md) documents searches and scope checks. No earlier resolution of the full shifted-product conjecture was found in the sources checked on 20 November 2026. This is a literature-search conclusion, not a guarantee of priority. This note is unrefereed.
+The [literature record](literature.md) documents the earlier CoPEER disproof and corrects the initial, incomplete prior-resolution search. Its witness has $`n=21`$, $`m=22`$, $`a_6=a_{21}=1`$, and $`a_{14}=a_{18}=a_{20}=2`$, with coefficient $`[q^{43}]F=-1`$. The public commit predates this note. Our different five-factor family is retained as exposition and is excluded from new-resolution claims. This note is unrefereed.
