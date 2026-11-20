@@ -1,3 +1,9 @@
+# README verification
+
+- Every row in the root `README.md` Results table has two cells: a link to the result directory and exactly one of `✅`, `🟢`, `🟡`, `⬜`. Plain-text labels such as `No Lean verification` and `Exact checks` are invalid, including on newly added results.
+- Use `✅` for full Lean verification, `🟢` for partial Lean verification with a computer-assisted proof, `🟡` for partial Lean verification, and `⬜` for results without Lean verification or a computer-assisted proof. A written proof with scripts that cross-check calculations belongs under `⬜` when it has no Lean verification. Describe the checks in `CONTENTS.md` or the result's landing page.
+- Before publishing any change to the Results table, run `python3 scripts/check_readme_verification.py` on the exact README being published. This applies to Git pushes and GitHub API edits. Fix every reported row before publishing.
+
 # Formalization campaign
 
 - Work on `main`. The owner explicitly requested that all work be on `main` and other branches be removed. Preserve unique work before deleting any branch; do not create persistent side branches.
@@ -12,6 +18,5 @@
 
 - Put each result in `results/<stable-slug>/` with a `README.md` landing page, proof, and reproducible checks. Keep shared formalizations in `lean/`.
 - When adding or revising a result, update the compact index in `README.md`, its full entry in `CONTENTS.md`, its landing page, and the verification workflow and guide where relevant. Preserve precise scope and distinguish partial formalization from a complete result.
-- Keep the README results table to a problem link to its directory and one verification status emoji (`✅`, `🟢`, `🟡`, or `⬜`).
 - Use fenced `math` blocks for display equations. Use GitHub's dollar-backtick syntax for inline formulas containing Markdown punctuation. Write named operators as `\mathop{\mathrm{...}}` and use `\lt` when a less-than sign immediately precedes a letter.
 - Keep repository descriptions and citation metadata count-free. Record collection-level changes in `HISTORY.md`; use `docs/lean-status.md` for checked formalization status.

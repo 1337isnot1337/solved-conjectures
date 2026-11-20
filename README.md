@@ -20,9 +20,9 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Horňák–Woźniak conjecture](results/hornak-wozniak/) | ⬜ |
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
-| [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | No Lean verification |
-| [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | No Lean verification |
-| [Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/) | No Lean verification |
+| [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ⬜ |
+| [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ⬜ |
+| [Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture](results/kvz-reciprocal-qgamma/) | ⬜ |
 | [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | ⬜ |
 | [Karp's coefficient-positivity conjecture](results/karp-coefficient-positivity/) | ⬜ |
