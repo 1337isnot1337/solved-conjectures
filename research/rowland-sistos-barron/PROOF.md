@@ -275,7 +275,7 @@ predicted individual coefficient degree for $49\le M\le180$. It also
 checks the exact expansion ranks for $1\le M\le8$ against the
 Berlekamp–Massey algorithm applied to actual sequence values modulo
 $1{,}000{,}000{,}007$. All checks pass; the full output is in
-`verification.json`. Run `python verify_rowland_sistos_barron.py` to replay.
+`verification.json`. Run `python3 research/rowland-sistos-barron/verify.py` to replay.
 
 This draft is not peer reviewed and has no Lean formalization. The source's
 term “pseudo-polynomial” is not defined explicitly, so the exact mathematical
