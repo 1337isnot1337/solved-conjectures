@@ -68,7 +68,7 @@ Even if that additional hypothesis were supplied, the stated Theorem 3 would sti
 
 ## 5. Contemporary cross-check
 
-[Blomer, Corbett, and Saha, *Bounds on Fourier coefficients and global sup-norms for Siegel cusp forms of degree 2*, Journal of the London Mathematical Society (2025), DOI 10.1112/jlms.70119](https://londmathsoc.onlinelibrary.wiley.com/doi/full/10.1112/jlms.70119), formulate an individual-coefficient refinement of Resnikoff–Saldaña and explain that its proof remains beyond the available standard-GRH arguments. Their discussion separates averaged coefficient information from control of individual coefficients.
+[Comtat, Marzec-Ballesteros, and Saha, *Bounds on Fourier coefficients and global sup-norms for Siegel cusp forms of degree 2*, Journal of the London Mathematical Society (2025), DOI 10.1112/jlms.70119](https://londmathsoc.onlinelibrary.wiley.com/doi/full/10.1112/jlms.70119), formulate an individual-coefficient refinement of Resnikoff–Saldaña and explain that its proof remains beyond the available standard-GRH arguments. Their discussion separates averaged coefficient information from control of individual coefficients.
 
 This source corroborates the quantifier obstruction. It is not used to assert that no future proof is possible, or that the conjecture is logically independent of Dirichlet GRH.
 
