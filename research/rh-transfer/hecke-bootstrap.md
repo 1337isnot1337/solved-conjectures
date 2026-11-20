@@ -388,4 +388,6 @@ Alternatively, adapting the archive's arithmetic route requires a Hecke-compatib
 
 The Mellin identities, the nonzero residue formula, and both principal Laurent cancellations were independently reviewed by the arithmetic worker. No correction was needed.
 
+The coordinating worker separately checked the Mellin kernel, principal Laurent cancellation, grouped-coefficient growth bound, positive-family residue noncancellation, and conversion from multiplicative pointwise windows to the integral window hypothesis. No error was found in those steps. The exact source statement allows every positive δ, hence every λ greater than one. Its order of quantifiers is: for every positive integral-error exponent and every lower threshold, choose a later window. The pointwise bound supplies that order by increasing the lower threshold; no uniformity in the field or in ε is being inserted.
+
 The completed transfer in §§1–2 removes the final analytic layer as an obstacle. The unresolved work is the production of (17), or of the stronger arithmetic and host estimates that imply it.
