@@ -81,3 +81,94 @@ Match $v$ to one of its leaves, $w$ to its leaf, and the two even paths in conse
 ```
 
 This also explains why the connected-partition information and this particular coefficient can both pass while the chromatic symmetric function has a negative coefficient elsewhere. The general conjecture still requires a sign obstruction for degree-four trees beyond the families already excluded.
+
+## Trees with branching vertices separated by long paths
+
+Take a tree $H$ with at least one edge. For each vertex $v$ of $H$, put $k_v=\deg_H(v)$ and choose a number $\ell_v$ of additional leaves. Make $T$ by replacing every edge $e$ of $H$ by a path of length $L_e$ and adjoining $\ell_v$ pendant leaves directly to $v$. Suppose every $k_v+\ell_v\le4$ and every vertex with $k_v+\ell_v=4$ has $\ell_v\ge1$.
+
+- There is an absolute constant $C$ such that $X_T$ is not $e$-positive if there is at least one degree-four vertex and every $L_e\ge C\log|V(T)|$. The constant is independent of $H$.
+- If the number of degree-four vertices is odd, the same conclusion holds for every $L_e\ge150$.
+
+This uses color transfer along paths, as in [Tang, Wang, and Wang](https://arxiv.org/abs/2610.39481), together with the rank-one limit of that transfer. The logarithmic statement also handles even numbers of degree-four vertices by evaluating at an interior zero of one local factor.
+
+### Transfer and local factors
+
+Use $m$ colors $x_i$ with elementary functions $e_1=0$, $e_2,\ldots,e_m\ge0$, and $\sum_{j=2}^m(j-1)e_j=1$. Set $K_{ij}=1$ for $i\ne j$, $K_{ii}=0$, $D=\operatorname{diag}(x_i)$ and $P=KD$. With the endpoints of a path of length $L_e$ fixed at colors $i,j$, the sum of the weights on its interior vertices is $(P^{L_e-1}K)_{ij}$. Directly attached leaves have weight sum $-x_i$ when the adjacent vertex has color $i$. Thus the weight at a vertex of $H$ is $x_i(-x_i)^{\ell_v}$.
+
+Put $R(z)=\prod_i(z+x_i)$ and $J(z)=\sum_i x_i/(z+x_i)$. Expanding the determinant of the diagonal matrix minus a rank-one matrix gives
+
+```math
+\det(zI-P)=R(z)(1-J(z))=z^m-\sum_{j=2}^m(j-1)e_jz^{m-j}.
+```
+
+In the specializations below, the eigenvalue 1 is simple and all other eigenvalues have modulus less than 1. For the four-color specialization this follows from strict positivity of $e_2,e_3,e_4$ and the triangle inequality in the displayed polynomial. Equality on the unit circle forces $z=1$. The three-color specialization is checked explicitly below. Set $b_i=1/(1+x_i)$. The right and left eigenvectors are $b_i$ and $x_i b_i$, respectively, since $J(1)=1$. The left eigenvector multiplied by $K$ is the row $b^\top$. Write
+
+```math
+F_{k,\ell}=\sum_i x_i(-x_i)^\ell b_i^k,\qquad B_2=F_{2,0}.
+```
+
+The eigenprojection times $K$ is $b b^\top/B_2$. On a compact neighborhood of either positive four-color specialization used below there are constants $M\lt \infty$ and $0\lt \rho\lt 1$ with
+
+```math
+B_2P^{L-1}K=b b^\top+E_L,\qquad \|E_L\|_\infty\le M\rho^{L}.
+\tag{5}
+```
+
+For example, integrate the resolvent $(zI-P)^{-1}$ against $z^{L-1}$ on a fixed circle strictly between the other eigenvalues and 1 to bound the residual power. The color roots stay bounded, and $R(1)>0$ keeps all $1+x_i$ away from zero. These estimates are uniform over permutations of the color roots.
+
+For reference, with $B=R(1)$, differentiation of $1-J(z)=\det(zI-P)/R(z)$ gives
+
+```math
+F_{1,0}=1,\qquad F_{2,0}=\frac{\sum_j j(j-1)e_j}{B},\qquad
+F_{3,0}=\frac{\sum_j j(j-1)^2 e_j}{2B}.
+```
+
+Here $R'(1)=(m-1)B$, since $\sum_j j e_j=B$. Using $x_i b_i=1-b_i$, $e_1=0$, $\sum_i x_i^2=-2e_2$ and $\sum_i x_i^3=3e_3$, the other needed factors are
+
+```math
+F_{1,1}=1,\quad F_{2,1}=F_{2,0}-1,\quad F_{1,2}=1-2e_2,\quad
+F_{3,1}=F_{3,0}-F_{2,0},\quad F_{2,2}=F_{2,0}-2,\quad
+F_{1,3}=1-2e_2-3e_3 .
+```
+
+### An absolute bound for odd parity
+
+Use $m=3$ and $e_2=e_3=1/3$. The characteristic polynomial of $P$ is $(z-1)(z^2+z+2/3)$. The two other eigenvalues have modulus $\sqrt{2/3}$, mutual distance greater than 1, and distances greater than 1 from the eigenvalue 1. The three colors satisfy $x_i^3+x_i/3-1/3=0$, giving $|x_i|\lt0.9$, $\|P\|_\infty\lt 2$ and $\|b\|_\infty\le10$. The two other spectral projections, written by Lagrange interpolation in $P$, each have norm at most 9. Thus the difference between $P^t$ and its rank-one limit is bounded by $18(2/3)^{t/2}$ in row-sum norm.
+
+The local factors for total degree at most three are $1,8/5,7/5,1,3/5,1/3$ in the order $(1,0),(2,0),(3,0),(1,1),(2,1),(1,2)$. The factors for total degree four with $\ell\ge1$ are $-1/5,-2/5,-2/3$ for $(3,1),(2,2),(1,3)$.
+
+Root $H$ at any vertex. For a child with a path to its parent, the message to the parent is the vector of sums of coloring weights conditional on the parent's color, excluding the weight of the parent. We prove that each message can be written $a(b+\delta)$, with a nonzero real $a$ and $\|\delta\|_\infty\le10^{-6}$. Its sign is the product of the signs of the local factors in the corresponding subtree of $H$.
+
+Indeed, at a vertex $v$, factor out the product of its child message scalars. The new conditional vector at $v$ is then $U_i=x_i(-x_i)^{\ell_v}\prod_w(b_i+\delta_{w,i})$. The product has at most three factors. Its leading scalar after the transfer to the parent is $b^\top U/B_2$. The numerator differs from $F_{k_v,\ell_v}$ by at most $3\cdot10\cdot 3\cdot 11^2\cdot10^{-6}\lt0.1$. All vectors are invariant under conjugation combined with permuting the conjugate color labels, so the scalar is real. Its modulus exceeds $1/16$, since $B_2=8/5$ and $|F_{k_v,\ell_v}|\ge1/5$. The error in the message is bounded in norm by $18(2/3)^{(L_e-1)/2}\cdot 2\cdot 11^3$. Dividing by the modulus of the scalar gives an error less than $10^{-6}$ when $L_e\ge150$. These bounds also apply when the child product is empty. At the root the final sum uses $\sum_i U_i$, whose sign equals that of the root's local factor by the same product estimate. Hence the full specialization has sign $(-1)^s$, where $s$ is the number of degree-four vertices. Negative evaluation at these nonnegative elementary values precludes $e$-positivity.
+
+### A logarithmic bound for either parity
+
+If a vertex has three directly attached leaves and total degree four, the tree has no matching covering all but at most one vertex. Wolfgang's connected-partition test then excludes $e$-positivity using blocks of size two with at most one singleton. We may therefore assume all degree-four vertices have type $(3,1)$ or $(2,2)$.
+
+Use $m=4$. The normalization implies $e_2+2e_3+3e_4=1$, and the two degree-four factors simplify to
+
+```math
+F_{3,1}=\frac{-e_2+6e_4}{B},\qquad
+F_{2,2}=\frac{-2e_2+4e_4}{B}.
+```
+
+Choose one of these types that actually occurs. Set $e_4=1/30$ and choose $e_2=6e_4$ for the first type or $e_2=2e_4$ for the second. Determine $e_3$ by the normalization. These values are strictly positive. At this point the chosen local factor vanishes, the other does not vanish, and all factors for degree at most three are positive by the formulas above. Perturb $e_2$ by $\tau$ and $e_3$ by $-\tau/2$. The vanishing factor has a simple zero at $\tau=0$. Fix constants in (5) on a sufficiently small neighborhood along this curve.
+
+Write $N=|V(T)|$, $L=\min_e L_e$, and $Y(\tau)=B_2(\tau)^{|E(H)|}X_T(e(\tau))$. Expanding (5) at each edge gives a sum over subsets $A\subseteq E(H)$ where the error is used. The term for $A=\varnothing$ is $\prod_v F_{k_v,\ell_v}(\tau)$. If $V(A)$ is the set of vertices incident to edges of $A$, the absolute value of any term is at most
+
+```math
+(M_1\rho^L)^{|A|}\prod_{v\notin V(A)}|F_{k_v,\ell_v}(\tau)|
+\tag{6}
+```
+
+with an absolute $M_1$. Every unexposed vertex contributes its exact local factor. At the exposed vertices, each color and each incident factor is bounded on the fixed neighborhood. There are at most $2|A|$ such vertices, each of degree at most four, so these bounds cost only a constant to the power $|A|$.
+
+Let $S$ be the vertices of the vanishing type, $s=|S|\ge1$, and $U=\prod_{v\notin S}|F_{k_v,\ell_v}(0)|$. At $\tau=0$, contributions are possible only when $V(A)\supseteq S$, so $|A|\ge s/2$. The other factors are bounded away from zero, allowing the omitted exposed factors in (6) to be charged by increasing the absolute constant. Since $|E(H)|\le N$, this yields
+
+```math
+|Y(0)|\le 2U(M_2N\rho^L)^{s/2}
+```
+
+once $M_2N\rho^L\lt1/2$. At $\tau=1/N$, all factors have modulus at least $c/N$ for some absolute $c>0$. The contribution of the nonempty $A$'s is bounded relative to the empty term by $(1+M_3N^2\rho^L)^N-1$. The empty term has modulus at least $c_1 U(c_2/N)^s$, because each of the nonvanishing factors changes by a relative $O(1/N)$. If $L\ge C\log N$ with a sufficiently large absolute $C$, we have $\rho^L\le N^{-6}$. These estimates give $|Y(0)|/|Y(1/N)|=o(1)$ uniformly, including when $s$ grows.
+
+On the other hand, if $X_T$ is $e$-positive, the ratio of the values of each surviving monomial at $\tau=1/N$ and $\tau=0$ is at most $(1+C_1/N)^N$, since the sum of its exponents is at most $N$. The zero variables are the same at both points. The ratio of the positive normalization factors $B_2^{|E(H)|}$ is also bounded. Consequently $0\lt Y(1/N)\le C_2Y(0)$, which contradicts the estimates. All constants can be taken uniformly since there are just two choices of the vanishing type. Increasing the constant in the lower bound on $L$ handles the bounded range of $N$.
