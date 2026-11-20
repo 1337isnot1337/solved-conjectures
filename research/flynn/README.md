@@ -64,3 +64,10 @@ The first nonconstant polynomial is $\ell_2(n)=1-n/2$, giving the stated zero $(
 On 20 November 2026, the original eight-page preprint, its exact conjecture statement and generating-function convention, the [MathDB entry](https://mathdb.com/p/358309/the-uniqueness-conjecture-for-zeros-of-diagonal-laguerre-fun), and both-engine searches for the author, paper title, diagonal Laguerre zeros, proof, and counterexample were inspected. No prior complete resolution was located. No novelty is asserted for the elementary observations in this note.
 
 The missing step is uniform exclusion of the remaining positive even integer zeros. Extending a numerical search in $j$ or $n$ would not settle that step. A useful continuation would need a uniform arithmetic argument for the recurrence, an applicable irreducibility theorem with the parameter allowed to vary, or a rigorously certified counterexample.
+
+
+### Later-source and attribution check
+
+The [author's current publication list](https://stevenpatrickflynn.github.io/publications/) links the October 2026 version of [*Injectivity and stability for the sub-Riemannian X-ray transform on H-type groups*, arXiv:2312.00594v3](https://arxiv.org/pdf/2312.00594). Its page 8 defines $A_k=\{a\ge0:L_a^{(k)}(k)=0\}$ and explicitly states that $A_k$ is empty for odd $k$, citing Flynn's 2021 *Journal of Functional Analysis* paper, *Injectivity of the Heisenberg X-ray Transform*, 280(5), 108886. The odd-parameter exclusion above is therefore prior mathematics, independently rederived here. The new paper retains the set $A_{|k|}$ in its even-parameter statements (Theorem 2.8), and does not classify those zeros.
+
+The recently circulated [*Uniform irreducibility and Galois groups of generalized Laguerre polynomials*](https://hexagonmath.org/pdf/2611.00087v1) was also checked for applicability. Its equation (1.4) concerns $L_N^{(-N-s)}$ with positive $s$, a negative-parameter family. It does not supply the needed theorem for the remaining positive parameters here. The identifier on that manuscript is a Hexagon identifier, not an arXiv identifier.
