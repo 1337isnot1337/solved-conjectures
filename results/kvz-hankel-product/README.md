@@ -1,6 +1,8 @@
 # Karp–Vishnyakova–Zhang's Hankel-product conjecture
 
-The conjecture is false. Two Hankel kernels can each be strictly sign regular in every order while their pointwise product is not sign regular even in order two.
+Status: independently obtained counterexample to an assertion already contradicted by prior results. This is excluded from the project's newly resolved conjectures. Simon's 2012 theorem on beta–gamma kernels implies the full negation after a logarithmic change of variables and a common translation; see the [prior-resolution correction](../../research/kvz-hankel-product/PRIOR-SIMON-CORRECTION.md).
+
+The elementary proof retained here shows that two Hankel kernels can each be strictly sign regular in every order while their pointwise product is not sign regular even in order two.
 
 The counterexample is
 
@@ -32,7 +34,8 @@ The published paper's numbered Conjecture 1 is a different Bessel-function asser
 - [PROOF.md](PROOF.md): complete all-order factor proofs and two exact counterexamples to product closure.
 - [NOVELTY.md](NOVELTY.md): source-version history, prior-resolution searches, and distinctions from existing closure theorems.
 - [verify.py](verify.py): Python standard-library checks of the exact arithmetic certificates.
-- [Independent mathematical and source audit](../../research/kvz-hankel-product/AUDIT-ANALYSIS.md).
+- [Prior-resolution correction and explicit transfer from Simon's theorem](../../research/kvz-hankel-product/PRIOR-SIMON-CORRECTION.md).
+- [Earlier independent mathematical and source audit](../../research/kvz-hankel-product/AUDIT-ANALYSIS.md); its novelty conclusion is superseded by the correction.
 - [Research issue #94](https://github.com/1337isnot1337/solved-conjectures/issues/94).
 
 ## Verification and status
@@ -43,4 +46,4 @@ Run from the repository root:
 python results/kvz-hankel-product/verify.py
 ```
 
-Local execution passed the two rational determinants and the two exponential-sign bounds. The written proof, rather than finite numerical testing, establishes the all-order hypotheses. Independent internal mathematical and source audits passed. The note is unrefereed. No earlier resolution was found in the documented search as of 20 November 2026; this is a bounded search, not a guarantee of exclusive priority.
+Local execution passed the two rational determinants and the two exponential-sign bounds. The written proof, rather than finite numerical testing, establishes the all-order hypotheses. The written elementary proof passed independent internal mathematical audits and is unrefereed. A later source check on 20 November 2026 found Simon's earlier theorem, which already implies the whole negation. The previous no-prior-resolution conclusion was incorrect and has been withdrawn.
