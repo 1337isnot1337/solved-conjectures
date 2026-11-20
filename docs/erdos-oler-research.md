@@ -43,7 +43,7 @@ required for $n_k-1$ centers.
 
 **Lemma.** In an equilateral triangle of side $L$, a convex
 polygon with successive vertices at distance at least one has
-at most $3\lfloor L\rfloor$ boundary vertices. Atoms on a
+at most $3\lfloor L\rfloor$ boundary vertices. Points on a
 straight side of the polygon may be counted as successive
 vertices.
 
@@ -113,8 +113,8 @@ For $L\lt k$ the right side is strictly below $n_k-3/2$,
 so the integer count is at most $n_k-2$. A collinear
 packing has at most $\lfloor L\rfloor+1$ centers and
 also meets the desired bound when $L\lt k$.
-The aligned triangular lattice gives the equality case
-at side $k$ by deleting one site.
+The aligned triangular lattice attains side $k$
+after deleting one site.
 
 The same proof applies to any packing with a triangulation
 whose faces all have area at least $\sqrt3/4$. Conversely,
@@ -139,3 +139,117 @@ packing, contrary to Oler's bound for $n_k$ centers.
 
 The remaining problem is to control these exterior
 circumcenters and the total area deficit of their faces.
+
+## Local rigidity after deleting any site
+
+Let $V_k$ be the aligned triangular lattice patch of side $k$,
+and remove any one site $o$. The packing $V_k\setminus\{o\}$
+is infinitesimally rigid inside the fixed containing triangle.
+In fact, if another packing in the same triangle can be put
+in correspondence with these sites so that each displacement
+has norm less than $1/(2000 k^2)$, all displacements are zero.
+This concerns perturbations of a single-deletion configuration.
+A global comparison with all possible packings is still needed.
+
+### Balancing contact forces
+
+Start with the full lattice patch. Give weight one to every
+unit contact. At a site $v$ let the force be the sum of the
+weighted unit vectors from $v$ to the sites that touch it.
+The force is zero at interior sites. At a side site it is
+$\sqrt3$ times the inward unit normal. At a corner it is
+$\sqrt3$ times the sum of the two inward unit normals.
+
+After deleting $o$, double the weight of each contact joining
+consecutive surviving neighbors in the unit ring about $o$.
+If a neighbor $o+e$ has its two adjacent ring neighbors
+$o+e_-,o+e_+$, the added force there is
+$e_-+e_+-2e=-e$. This replaces the original force of the
+contact with $o$ exactly.
+
+If $o$ is on a side or at a corner, the surviving part of the
+ring is a path. At either endpoint $o+e$, the net change in
+force after the deletion and doubling is the one adjacent
+unit vector in the ring. Write that vector as
+$e/2+(\sqrt3/2)n$, with $n$ the inward unit normal to the
+wall along $e$. From $o+e$ follow that wall in direction $e$
+to the next corner. Reduce the weights of all contacts along
+this segment from one to one half. If the segment has positive
+length, this removes the tangential component at its starting
+point, leaves the net force unchanged at intervening points,
+and adds $e/2$ to the force at its far corner. If the segment
+has length zero, the force change $e/2+(\sqrt3/2)n$ is already
+at that corner.
+
+The two endpoints lead to different corners, so each remaining
+corner receives at most one tangential adjustment. In terms of
+the two inward unit normals at the far corner, adding $e/2$
+reduces their coefficients by $1/(2\sqrt3)$ and $1/\sqrt3$,
+in some order. Thus at every surviving boundary site the
+modified force is still a positive sum of all its active
+inward normals, with each coefficient at least $2/\sqrt3$.
+Every contact weight is between one half and two.
+
+### Infinitesimal motions
+
+Give each surviving site $v$ a velocity $u_v$ that is feasible
+to first order. An edge $vw$ requires
+$(w-v)\cdot(u_w-u_v)\ge0$. At every active wall with inward
+normal $n$, we require $n\cdot u_v\ge0$.
+Sum the edge derivatives with the modified weights. By the
+force balance, the sum is the negative of the sum of inward
+wall derivatives with their positive coefficients.
+Hence all edge derivatives and all wall derivatives vanish.
+
+At a remaining corner both wall projections vanish, so the
+velocity is zero. Each connected part of a side after one
+deletion contains a remaining corner. Along that part, the
+side's unit contacts carry the zero tangential projection
+from the corner to every site, and the zero wall derivative
+gives the other projection. All boundary velocities are zero.
+
+At an interior site, two of the three lattice-direction rows
+through the site avoid $o$. Indeed, express the sites by three
+integer barycentric coordinates summing to $k$. A row in one
+direction fixes one coordinate, and two distinct sites cannot
+agree in two coordinates. The velocities along each intact
+row have equal projections into its direction, by the contact
+derivatives, and the endpoints are on the boundary. Thus the
+two corresponding projections at the interior site are zero.
+The directions are independent, so this velocity is zero as
+well.
+
+### A displacement bound
+
+For an actual packing inside the same triangle, let
+$\varepsilon=\max_v|u_v|$, now with $u_v$ the displacement
+of the point matched to site $v$. Put
+$\tau_{vw}=(w-v)\cdot(u_w-u_v)$ for each unit contact.
+The condition on the new length gives $\tau_{vw}\ge-2\varepsilon^2$,
+and all inward wall projections of displaced sites are
+nonnegative. There are at most $9k^2$ contacts. The sum of the
+negative parts of the weighted edge derivatives is at most
+$36k^2\varepsilon^2$. The force identity bounds the sum of the
+positive parts of the weighted derivatives and the total
+weighted wall projection by this same quantity. In particular,
+
+```math
+ \sum_{vw}|\tau_{vw}|\le144 k^2\varepsilon^2,
+ \qquad
+ 0\le n\cdot u_v\le36 k^2\varepsilon^2
+       \quad\text{at each active wall}.
+```
+
+At a corner the two projections imply
+$|u_v|\le144k^2\varepsilon^2$. Along every side component,
+the first inequality bounds the variation of the tangential
+projection from its remaining corner. Together with the wall
+projection this gives $|u_v|\le324k^2\varepsilon^2$ at each
+boundary site. At any interior site, the two intact rows give
+two directional projections each at most
+$468k^2\varepsilon^2$ in absolute value. For unit directions
+meeting at $60^\circ$ or $120^\circ$, a vector's norm is
+at most twice the sum of its two absolute projections.
+Consequently $\varepsilon\le1872 k^2\varepsilon^2$.
+If $\varepsilon\lt1/(2000k^2)$ then $\varepsilon=0$,
+as asserted.
