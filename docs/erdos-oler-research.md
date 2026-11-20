@@ -253,3 +253,158 @@ at most twice the sum of its two absolute projections.
 Consequently $\varepsilon\le1872 k^2\varepsilon^2$.
 If $\varepsilon\lt1/(2000k^2)$ then $\varepsilon=0$,
 as asserted.
+
+## A separation radius independent of the side length
+
+The local rigidity radius can be chosen uniformly in $k$.
+There is an absolute $c>0$ such that a packing in the same
+triangle matched to a single-deletion triangular arrangement
+with maximum displacement less than $c$ must coincide with
+that arrangement. The proof combines the contact stress with
+a discrete strain inequality.
+
+### Extending through the deleted site
+
+Use the standard small equilateral faces of side one in
+the full lattice patch. For a vector-valued displacement $u$
+write $E_{\rm str}(u)$ for the sum of the squares of its
+projected contact differences $\tau_{vw}$ and of all its
+normal projections on active walls. In this definition use
+only the surviving sites and their contacts.
+
+We first extend $u$ to the missing site so the same strain
+energy on the full patch is at most $C E_{\rm str}(u)$ with
+an absolute $C$. It suffices to take $k\ge6$, since the explicit
+displacement bound above treats smaller $k$.
+In integer barycentric coordinates, write the deleted site
+as $(a_1,a_2,a_3)$ with $a_1+a_2+a_3=k$. Choose integers
+$\min(a_j,2)\le b_j\le a_j$ with $b_1+b_2+b_3=6$.
+This is possible since the sum of the lower bounds is at
+most six and the sum of the upper bounds is $k$.
+The sites with coordinates at least $a_j-b_j$ in each
+position form an aligned triangle of side six. The hole
+has local coordinates $(b_1,b_2,b_3)$. The small triangle
+contains every contact incident to the hole in the full
+triangle. Each local side for which the corresponding
+$b_j\le1$ is a wall of the full triangle, since in that
+case $b_j=a_j$.
+
+On the small patch, use the energy of the surviving
+contacts and the normals on those physical walls. Consider
+its kernel. Zero projected difference on each edge of a
+unit triangle makes the displacement on it infinitesimally
+rigid. A common edge forces the same rigid motion on two
+neighboring triangles. This follows because an infinitesimal
+rigid motion in the plane is a translation plus a scalar
+multiple of rotation by a right angle, and two point values
+determine it.
+
+If at most one local coordinate is at most one, the union
+of the removed unit triangles meets at most one side.
+The other unit triangles are connected by common edges
+and contain every surviving vertex. For the connectivity,
+the removed triangles form the hexagon of unit neighbors
+of the hole, clipped by the containing triangle in the
+boundary case. Its complement has connected interior
+when it meets at most one outer side. Each surviving
+interior vertex belongs to six original unit triangles,
+and each noncorner boundary vertex belongs to three.
+At most two incident triangles can be removed at any
+one surviving vertex. No corner is a neighbor of the hole
+in this case. Thus the kernel displacement is one rigid
+motion on the patch, and its value at the hole gives zero
+projected difference on the restored contacts. If the hole
+is on a physical wall, this rigid motion already has zero
+normal projection at two surviving sites on that wall,
+so it also has zero normal projection at the hole.
+
+The cases with two local coordinates at most one are,
+up to permuting the coordinates, $(0,0,6)$, $(0,1,5)$ and
+$(1,1,4)$. For $(0,0,6)$ the deleted site is the corner.
+The remaining unit triangles form the truncated triangular
+patch and are connected by edges. The two physical walls
+through the corner constrain the resulting rigid motion
+to zero.
+
+For $(0,1,5)$ let $O$ be the nearby corner and let $e_1,e_2$
+be the two unit directions along its sides, with the hole
+at $O+e_2$. The corner is the only surviving site in no
+remaining unit triangle. The bulk triangles form a connected
+patch meeting both physical walls in runs of at least two
+sites. These wall projections force its rigid motion to
+vanish. The corner has two wall projections and is fixed.
+For $(1,1,4)$ the hole is at $O+e_1+e_2$. The closed hexagon
+of removed triangles meets the two sides of $O$ between
+distances one and two on each side. It leaves the separate
+unit triangle with vertices $O,O+e_1,O+e_2$ and the connected
+bulk patch. Each component has contacts with both physical
+walls on intervals, giving zero motion on each. In these
+three cases the zero extension at the hole works for the
+kernel.
+
+There are finitely many choices of the hole in the side-six
+patch. In each pattern choose a linear extension at the hole
+that agrees with the indicated one on the kernel of the
+local strain energy. For example, extend its orthogonal
+projection to that kernel and set the complementary part to
+zero at the hole. The resulting projected differences on
+the new contacts and wall projections at the hole form a
+linear map vanishing on the kernel. Its squared norm is
+therefore at most a constant times the local strain energy
+by equivalence of norms on the finite-dimensional quotient.
+Taking the maximum constant gives the claimed extension
+estimate uniformly.
+
+### From strain to full displacement differences
+
+Interpolate the extended displacements affinely on each
+small equilateral face, obtaining a continuous function
+$U$ on the triangle $T_k$. Korn's inequality on the unit
+triangle, followed by dilation, gives
+
+```math
+ \int_{T_k}|\nabla U|^2
+  \ll \int_{T_k}|\operatorname{sym}\nabla U|^2
+     + k^{-1}\int_{\partial T_k}|U\cdot n|^2 .
+```
+
+Here is the boundary step in this form of the inequality.
+On the unit triangle, the usual Korn inequality modulo
+infinitesimal rigid motions bounds $U-R$ in $H^1$ for an
+appropriate rigid motion $R$. The trace estimate controls
+the boundary normal projection of $U-R$. A rigid motion
+with zero normal projection along the triangle boundary
+must be zero, since it would be tangent along two
+nonparallel line segments. Its norm is therefore controlled
+by its normal trace by finite dimensionality. The factor
+$k^{-1}$ comes from scaling boundary length. See
+[Ayuso de Dios, Brezzi, Marini, Xu and Zikatanov, §2](https://mate.unipv.it/brezzi/papers/XXXXX.pdf)
+for the normal-trace argument in Korn inequalities.
+
+On each unit face the three directional projections along
+its edges determine the symmetric part of the gradient.
+Thus the integral of $|\operatorname{sym}\nabla U|^2$
+is bounded by a constant times the sum of the squared
+contact projections. The boundary integral is bounded
+by the sum of the squared normal projections at the lattice
+sites by linear interpolation. The integral of $|\nabla U|^2$
+controls the sum of squares of the full vector differences
+across the surviving contacts. By the extension estimate,
+
+```math
+ E:=\sum_{vw}|u_w-u_v|^2 \ll E_{\rm str}(u)
+```
+
+with a constant independent of $k$ and of the deleted site.
+
+For an actual packing in the same triangle we have
+$\tau_{vw}\ge-|u_w-u_v|^2/2$, and the wall projections are
+nonnegative. The contact stress implies that the sum of
+absolute contact projections and the sum of nonnegative
+wall projections are both $O(E)$. If
+$\varepsilon=\max_v|u_v|$, each projection has absolute
+value at most $2\varepsilon$. Hence
+$E_{\rm str}(u)\ll\varepsilon E$. The two inequalities
+force $E=0$ when $\varepsilon$ is below an absolute
+constant. Then all the contact and wall projections
+vanish, and the earlier rigidity argument gives $u=0$.
