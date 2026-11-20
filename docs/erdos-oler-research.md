@@ -137,8 +137,7 @@ outside the containing triangle. Otherwise the empty
 circumdisk would allow adding that circumcenter to the
 packing, contrary to Oler's bound for $n_k$ centers.
 
-The remaining problem is to control these exterior
-circumcenters and the total area deficit of their faces.
+The [boundary-face analysis](erdos-oler-boundary-faces.md) shows that a counterexample can be assumed to occupy all three corners. Its exterior Delaunay faces lead to individual boundary edges, and the total normalised area of the deficient faces is less than $1+\sqrt3$. The possibility of several very thin deficient faces remains.
 
 ## Local rigidity after deleting any site
 
