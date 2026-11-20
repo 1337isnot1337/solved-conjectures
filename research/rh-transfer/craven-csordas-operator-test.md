@@ -105,3 +105,5 @@ Sources were inspected through primary PDF text on 20 November 2026. No visual i
 4. G. Csordas and R. S. Varga, *Necessary and sufficient conditions and the Riemann hypothesis*, Advances in Applied Mathematics **11** (1990), 328–357, Theorem 2.10. The exact criterion was checked in its primary-author restatement as Theorem 3.8 in source 1; this note does not claim separate inspection of the full 1990 article.
 
 The root, analytic and arithmetic workers independently checked the exact quantifiers, the full-scope criterion, identity (3), and the exclusion decision. No dedicated resolution issue was created. This note preserves the proof and prevents repeated rediscovery.
+
+Independent analytic review and exclusion receipt: [issue 80, comment 7050810845](https://github.com/1337isnot1337/solved-conjectures/issues/80#issuecomment-7050810845). The reviewer also checked the indexed primary text of the original 1990 definition (2.66) and Theorem 2.10.
