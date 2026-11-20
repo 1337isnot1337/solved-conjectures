@@ -258,7 +258,7 @@ The argument behind PartA does extend beyond abelian fields once its quantitativ
 Fix a totally complex field F, a finite set P of coefficient primes, C_K≥1, and C_t≥1. For each ℓ in P and each permitted q,d, suppose there is a base field L_(0,ℓ)(q,d) with the required ℓ-power roots of unity, and a cyclotomic tower over it. Assume:
 
 1. The relevant moving layer has degree ℓ^r over its base, with r≤C_0+C_1 log_ℓ x. The degree of the base is bounded independently of q,d.
-2. There are fixed integers R_ℓ, independent of q,d, giving the source's ABound and SecondBound. Equivalently for the following proof, for every Z there is a set Exc_ℓ⊂[1,Z] of at most R_ℓ exceptional twists, outside which the length is O(R_ℓ(r+1+log_ℓ Z)).
+2. There are fixed integers R_ℓ, independent of q,d, giving the source's ABound and SecondBound. In the exceptional-set form used in the proof: for each fixed q,d,Z there is **one** set Exc_ℓ⊂[1,Z] of at most R_ℓ integers that works simultaneously for every moving layer index r and every field representing that layer. For every 1≤j≤Z outside this same set, the length is O(R_ℓ(r+1+log_ℓ Z)). The set may depend on q,d,Z, but it cannot be chosen separately as r or x varies. The source's ABound has exactly this uniformity: its finite list of roots is chosen before the universal quantifiers over the twist and layer, and its FirstBound quantifies over every layer after choosing Exc.
 3. The fixed comparison layer, of index j_0=⌊log_ℓ R_ℓ⌋+3 as in the source, has degree at most n_0 and log(2|D|)≤C_2(1+log(qd)), with n_0,C_2 independent of q,d.
 4. The scalar target differs from the moving layer by a bounded cyclic restriction loss, as in Proposition (2.1).
 
