@@ -27,7 +27,7 @@ For a number field E, a coefficient prime ℓ, and j≥1, write
 
 Thus classes are unramified at every finite place away from ℓ, and strictly zero at each ℓ-adic place. This is the scalar strict/unramified condition used by the source's shaLen.
 
-For a finite set S of rational primes, set
+Throughout, t is an integer with t≥1. For a finite set S of rational primes, set
 
 ~~~math
 W_S(E,t)=\sum_{\ell\in S}\log\ell
@@ -408,5 +408,9 @@ There are therefore two precise routes available for further work:
 - Prove the twisted all-prime congruence bound directly over the CM host, and supply the finite-prime tower hypotheses of section 5, allowing a controlled μ-primary term if appropriate.
 
 Neither route is complete in this checkpoint. The achieved results are the exact cyclic restriction cost, the conditional window theorem with all growing parameters tracked, and the μ-primary algebraic bound. They narrow the missing arithmetic input without claiming a named conjecture has been resolved.
+
+## Review receipt
+
+The coordinating researcher independently checked the cyclic restriction proof, degree and discriminant bounds, empty-interval window construction, and μ-primary module calculation. A second researcher independently checked the restriction proof against the pinned definitions of QO, eO, nrm, ShaU, and shaLen, including primes dividing the extension degree and preservation of every local zero condition. Neither found a substantive gap in those deductions. The common exceptional-set quantifier and the integer height convention were made explicit after review. This is internal mathematical review, not external peer review or Lean verification.
 
 Updated November 20, 2026.
