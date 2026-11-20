@@ -79,10 +79,10 @@ The delayed gamma term cannot simply be assumed to interlace the previous gamma 
 ```math
 a_6(z)=1+52z+136z^2,
 \qquad
-a_3(z)^2=(1+2z)^2.
+z\,a_3(z)^2=z(1+2z)^2.
 ```
 
-The roots of the first are $(-52\pm\sqrt{2160})/272$, both strictly greater than $-1/2$. The second has its double root at $-1/2$. Their roots do not alternate. Therefore the usual derivative-plus-interlacing-lag proof needs a stronger invariant; merely copying the derangement proof is invalid.
+The roots of the first are $(-52\pm\sqrt{2160})/272$, both strictly greater than $-1/2$. The second has a double root at $-1/2$ and a root at $0$. Their roots do not alternate. Therefore the usual derivative-plus-interlacing-lag proof needs a stronger invariant; merely copying the derangement proof is invalid.
 
 This does not refute the conjecture: the complete recurrence includes the derivative term and a specific positive coefficient.
 
