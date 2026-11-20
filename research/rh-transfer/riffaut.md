@@ -75,3 +75,7 @@ The following were checked on 20 November 2026.
 | Both web search systems, exact-name queries with “proved”, “solved”, “disproved”, “unconditional”, “quasi-Riemann”, and 2023–2026 date filters | Returned the published conditional theorem and neighboring results, not a later full unconditional resolution. |
 
 Search absence is not proof of historical priority. The mathematical implication is complete; its novelty is not asserted. This entry is kept in the RH-transfer research lane and does not modify the repository's unrelated solved-result count.
+
+## Independent review
+
+Root independently checked the complete reduction against arXiv:2003.06547v2 on 20 November 2026. The review confirmed the degree and coefficient scope, the primitive odd Dirichlet character, the matching strict/non-strict split-prime thresholds, and the absence of an exceptional finite range. [Review receipt](https://github.com/1337isnot1337/solved-conjectures/issues/119#issuecomment-7049574504). This is an internal mathematical review, not external peer review or Lean verification.
