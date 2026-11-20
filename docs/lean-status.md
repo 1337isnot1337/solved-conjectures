@@ -34,6 +34,19 @@ Lean verification.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture | Not formalized | Written proof of the full surviving unimodality assertion and all monotone/unique-maximum cases; exact series diagnostics are supplementary. |
+| Simon's Le Roy conjecture | Not formalized | Two written proofs of a whole explicit counterexample interval; exact rational construction checks are supplementary. |
+| Ferreira–Simon's Wright log-concavity conjecture | Not formalized | Written analytic disproof on continuous boundary and interior parameter families; exact curvature checks are supplementary. |
+| Karp–Vishnyakova–Zhang's gamma-quotient conjecture | Not formalized | Written all-order sign-regularity proof with exact signature and integer rank cutoff; finite determinant checks are supplementary. |
+| Alexandersson's Fuss–Catalan conjecture | Not formalized | Written deduction from classical enumeration and ordinary-case real-rootedness, with attribution caveats and finite path checks. |
+| Karp–Vishnyakova–Zhang's Hankel-product conjecture | Not formalized | Elementary exposition of a previously resolved assertion; Simon's 2012 theorem already implies its negation. Excluded from new-resolution claims. |
+| Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture | Not formalized | Written strict sign-regularity proof at every order and all admissible arguments; finite exact checks are supplementary. |
+| Sagan–Swanson conjecture | Not formalized | Written proof of all four stated asymptotic normality assertions using actual means and variances; finite model checks are supplementary. |
+| Karp's coefficient-positivity conjecture | Not formalized | Written all-degree proof for all positive real shifts and admissible strictly log-concave input; finite algebraic checks are supplementary. |
+| Bernardi–Morales's delta-process conjecture | Not formalized | Written proofs of the full tree and event identities, with exact finite checks. |
+| Gatzweiler–Krattenthaler conjecture | Not formalized | Written exact polynomial counterexample and its infinite dilation family; arithmetic certificate is reproducible. |
+| Gilmore's crossing–nesting conjecture | Not formalized | Written weighted-path proof of the full matching-enumerator identity; finite recurrence checks are supplementary. |
+| Chow's conjecture | Not formalized | Written deduction of weak interlacing from Savage–Visontai, with a separate strictness argument and explicit attribution caveat. |
 | Németh–Seberry–Shu conjecture | Not formalized | Written asymptotic disproof and a quadratic lower bound; finite checks are not part of the proof. |
 | Sonntag–Teichert conjecture | Not formalized | Written proof of tournament domination hypergraph connectivity and classification of disconnected oriented cases, with finite cross-checks. |
 | Horňák–Woźniak conjecture | Not formalized | Written proof of both connected-partition conjectures, with separate finite and symbolic cross-checks. |

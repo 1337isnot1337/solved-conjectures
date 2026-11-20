@@ -18,6 +18,13 @@ The partial-result entries contain their replay commands for the [Frankl generat
 
 These are the commands in [the verification workflow](../.github/workflows/verify.yml). They include finite tests, exact certificates, and exhaustive searches; their mathematical roles are explained in the corresponding proof notes. A passing computation is not a claim that a full theorem has been formalized.
 
+The [Bessel-ratio verifier](../results/kvz-bessel-unimodality/verify.py)
+compares independently multiplied rational series coefficients with the
+Wronskian derivative identity and checks the leading terms in all sign
+branches. These finite checks diagnose transcription errors; the
+[written argument](../results/kvz-bessel-unimodality/PROOF.md) proves the
+full classification for all orders and scales in the conjecture.
+
 The [Le Roy verifier](../results/simon-le-roy/verify.py) checks the exact
 partial fractions, positivity certificate, probability mass, finite
 product cancellations, triplication identities, beta moments, and the
@@ -58,6 +65,7 @@ recursive-game identities through `CutPeriodWeightTheorem`.
 
 ```bash
 python3 -m pip install sympy==1.14.0
+python3 results/kvz-bessel-unimodality/verify.py
 python3 results/simon-le-roy/verify.py
 python3 results/ferreira-simon-wright/verify.py
 python3 results/kvz-gamma-quotient/verify.py

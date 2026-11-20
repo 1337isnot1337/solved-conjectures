@@ -1,5 +1,7 @@
 # Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture
 
+**Lean status:** none.
+
 ## Result
 
 The full surviving unimodality assertion is proved for every

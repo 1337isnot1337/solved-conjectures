@@ -1,5 +1,23 @@
 # History
 
+## 2026-11-20 — Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture
+
+Added a complete proof of the full surviving unimodality assertion for all
+ordered real orders greater than minus one and all ordered positive scales.
+The Bessel differential equation gives a Wronskian derivative with at most
+one positive-to-negative sign change. Positive series terms determine the
+endpoint signs and give the complete monotonicity/unique-maximum
+classification, including negative orders and every equality case.
+
+The separate stronger log-concavity clause was already refuted and is not
+claimed here. Root and analysis completed independent written audits.
+Exact rational series checks passed 130 coefficient identities and ten
+endpoint/positivity checks. The prior-work audit distinguishes adjacent-order,
+same-argument, and Kaiser–Bessel results from this full assertion. No outside
+peer review or exclusive priority is claimed.
+
+[Proof, classification, exact checks, and source audit](results/kvz-bessel-unimodality/).
+
 ## 2026-11-20 — Simon's Le Roy conjecture
 
 Added a complete disproof of the proposed necessary condition for complete
