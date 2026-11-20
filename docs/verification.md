@@ -27,6 +27,8 @@ recursive-game identities through `CutPeriodWeightTheorem`.
 
 ```bash
 python3 -m pip install sympy==1.14.0
+python3 results/bernardi-morales-delta/verify.py
+python3 results/bernardi-morales-delta/verify_events.py
 python3 results/gatzweiler-krattenthaler/verify.py
 python3 results/gilmore-crossing-nesting/verify.py
 python3 results/chow-conjecture/verify.py
@@ -99,6 +101,8 @@ unchanged in both modes.
 The [status report](lean-status.md) records the exact statements checked and dependencies that remain. Partial certificates do not establish the full conjecture. Accepted proofs permit only `propext`, `Classical.choice`, and `Quot.sound` as transitive axioms, as required by [the repository instructions](../AGENTS.md).
 
 ## What the checks establish
+
+The two `results/bernardi-morales-delta/` verifiers use only the Python standard library. `verify.py` directly constructs the delta process and checks all membership coefficients for 71 fixed maps and 111,721 process pairs, including nonsurjective maps. It also checks 25 arbitrary-matrix determinant identities in sizes two through six. `verify_events.py` builds the source's cyclic I/J event matrices literally and compares every membership coefficient for 342 marked-surjection profiles and 438,952 exact determinants. These are independent finite checks of the [tree proof](../results/bernardi-morales-delta/PROOF.md) and [event proof](../results/bernardi-morales-delta/EVENT_PROOF.md), which cover every admissible parameter.
 
 `results/gatzweiler-krattenthaler/verify.py` checks the full cyclotomic factorization, exact polynomial division, degree, and negative coefficients of the counterexample. The [written proof](../results/gatzweiler-krattenthaler/proof.md) independently proves polynomiality, the negative coefficient, and dilation to an infinite family.
 

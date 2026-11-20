@@ -20,19 +20,20 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Horňák–Woźniak conjecture](results/hornak-wozniak/) | ⬜ |
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
-| [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ⬜ |
+| [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | Exact checks |
+| [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | Exact checks |
 | [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ |
 | [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | 🟢 |
 | [Five-speed Loneliness Spectrum Conjecture](results/five-speed-spectrum/) | 🟢 |
 | [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ |
 | [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
 | [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
-| [Chow's conjecture](results/chow-conjecture/) | ⬜ |
+| [Chow's conjecture](results/chow-conjecture/) | Exact checks |
 | [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
 | [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
 | [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |
 | [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
-| [Gatzweiler–Krattenthaler conjecture](results/gatzweiler-krattenthaler/) | ⬜ |
+| [Gatzweiler–Krattenthaler conjecture](results/gatzweiler-krattenthaler/) | Exact checks |
 | [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
 | [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟢 |
 | [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |

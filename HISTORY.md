@@ -1,5 +1,23 @@
 # History
 
+## 2026-11-20 — Bernardi–Morales's delta-process conjecture
+
+Added complete written proofs of the delta-process tree-probability identity
+and the stronger event-determinant identity, published as Conjectures 27–28
+and numbered 21–22 in the preprint. The tree count holds for each fixed
+color map, and the event identity holds for each fixed surjection.
+
+The two arguments use cycle Laplacians and cyclic adjugates, respectively.
+The event proof explicitly handles full subsets, where the cycle matrix is
+singular. Separate internal reviews checked the original event definitions,
+the determinant identities, and membership-coefficient extraction.
+The standard-library verifiers passed locally on Python 3.12.14: 71 fixed
+maps and 111,721 tree-process pairs; 25 arbitrary-matrix determinant checks;
+and 342 marked-surjection profiles with 438,952 literal event determinants.
+The literature audit records checked sources and access limits. External
+peer review and author confirmation have not been obtained.
+[Result, both proofs, and checks](results/bernardi-morales-delta/).
+
 ## 2026-11-20 — Gatzweiler–Krattenthaler, Gilmore, and Chow conjectures
 
 Added an explicit infinite family disproving Gatzweiler–Krattenthaler's
