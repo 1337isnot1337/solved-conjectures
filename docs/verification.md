@@ -97,6 +97,10 @@ python3 results/tight-nine-speeds/verify.py
 
 The latest workflow is the executable reference when new checks are added.
 
+## Perron root of permanental compounds
+
+Run `python3 results/perron-root-permanental-compounds/verify.py` with assertions enabled. It uses only the Python standard library and checks 126 exact cyclic-permanent identities, 81 Newton inequalities and 2,048 support/zero-root comparisons. These finite checks validate the reduction formulas. They do not implement the permanent approximation sampler or prove the FPRAS's unbounded scope; those claims depend on the [written proof](../results/perron-root-permanental-compounds/proof.md), Gurvits's theorem and the Jerrum–Sinclair–Vigoda theorem. The result has no Lean verification or computer-assisted proof badge.
+
 ## Lean proofs
 
 ```bash
@@ -333,3 +337,4 @@ gate remains separate. Lower-runner assumptions, exhaustive modular
 classification and final uniqueness remain open, so no result directory
 becomes complete from this reduction.
 [Exact hypotheses, cutoffs and scope](loneliness-large-norm-lean.md).
+

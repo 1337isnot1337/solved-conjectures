@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-20 — Perron root of permanental compounds
+
+Added a general FPRAS theorem for Minc Problem 18's approximation formulation. The result covers every nonnegative rational input and every compound degree, with deterministic zero detection. A stable-symbol trace bound, cyclic permanent reduction and rational grid give the algorithm without constructing the compound. The directory includes the full proof, exact finite checks, two independent reviews and a source audit. This is not an exact polynomial-time eigenvalue-computation claim, and it does not solve the characteristic-polynomial problem. No Lean verification was performed.
+
+The Minc research record also documents partial Gyires and integrality results without counting them as full resolutions.
+
 ## 2026-11-20 — Removed previously resolved conjectures
 
 Removed the result entries and duplicate research writeups for Karp's
@@ -759,3 +765,4 @@ Added a [proof of both vertex-decomposability conjectures](results/hornak-woznia
 ## 2026-11-20 — Sonntag–Teichert conjecture
 
 Added a [proof of connectivity for tournament domination hypergraphs](results/sonntag-teichert/) on their nonisolated vertices. The argument uses minimal closed in-neighbourhoods and also characterizes the disconnected cases for oriented graphs.
+

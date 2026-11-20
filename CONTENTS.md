@@ -16,6 +16,16 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 - **Erdős–Gyárfás (partial).** Every abelian cover of $K_4$ with one edge subdivided has a cycle of length 4, 8, 16 or 32. A 19-sheeted cyclic example attains the upper bound. The universal voltage-cover theorem, literal 95-vertex sharpness example, and normalization of all seven voltages are Lean-verified. [Lean scope](docs/lean-status.md#complete-sharp-95-vertex-example-and-arbitrary-voltage-normalization). [Proof](results/erdos-gyarfas-abelian-covers/PROOF.md) · [Replay](results/erdos-gyarfas-abelian-covers/)
 - **Hadamard existence conjecture, order 2396 (open).** The signed automorphism group of any candidate matrix has order coprime to 479. The fixed-border common multiplier group is cyclic of order dividing four, with at least 151 sign orbits. Lean verifies these statements, both norm-obstruction proofs, the complete conditional [fixed-border construction](results/hadamard-2396/BORDER.md) from its original four sign rows, all fourteen size-149 baseline patterns, and the length-598 order-eleven obstruction. Lean also constructs the actual Hadamard matrix from any Legendre pair and proves the invariant quotient transport from the original centered rows. The order and orbit theorems for odd automorphism subgroups on groups of order nine are also checked. For length-1197 Legendre pairs, Lean proves that the common-multiplier order divides 27; the stated sharper bound of nine and the exhaustive quotient/no-lift certificates remain pending. No order-2396 matrix existence is claimed. [Checked scope and receipts](docs/lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns) · [Automorphism proof](results/hadamard-2396/AUTOMORPHISMS.md) · [Sequence proof](results/hadamard-2396/PROOF.md) · [Reproduce](results/hadamard-2396/).
 
+## Permanental compounds
+
+### Perron root of permanental compounds
+
+For every nonnegative rational matrix and every compound degree, a fully polynomial randomized approximation scheme computes the Perron root to prescribed relative accuracy. Zero roots are detected deterministically. The proof applies Gurvits's coefficient-capacity bound to a stable transfer symbol, represents a sum of powered-compound traces by one ordinary permanent, and uses log-concavity and the Jerrum–Sinclair–Vigoda FPRAS.
+
+This is a theorem for the general approximation formulation of Minc Problem 18. It covers zero diagonals and nonsymmetric, reducible and periodic inputs. It does not claim exact polynomial-time computation or a solution of the characteristic-polynomial problem. Independent internal reviews found no remaining gap; external review and priority remain open.
+
+[Result](results/perron-root-permanental-compounds/) · [Proof](results/perron-root-permanental-compounds/proof.md) · [Source audit](results/perron-root-permanental-compounds/source-audit.md) · [Exact checks](results/perron-root-permanental-compounds/verify.py) · [Issue #140](https://github.com/1337isnot1337/solved-conjectures/issues/140).
+
 ## Polynomial identities and positivity
 
 | Result | Finding | Lean | Evidence |
@@ -125,3 +135,4 @@ These are mathematical claims with explicit proofs and computer checks, **not pe
 - Václav Kotesovec’s [conjectured exponential base](https://oeis.org/A401948) for the counting function in [Erdős Problem 607](https://www.erdosproblems.com/607). The verifier accepts the [10,000-term reference table](https://oeis.org/A401948/b401948.txt) with the option `--table b401948.txt`.
 
 For the other entries, primary publications and conjecture identifiers are cited in their linked proof notes.
+

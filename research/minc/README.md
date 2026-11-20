@@ -53,9 +53,11 @@ The ten entries already marked resolved by the source are excluded: conjectures 
 
 ## Checked research checkpoints
 
-- [Real van der Waerden radius](sinkhorn_frobenius_radius.md): analytic all-order Frobenius-radius lower bound `b(n) >= 1/(2 sqrt(n))` for `n>=4`, `b(n) >= 1/sqrt(n)` for `n>=64`, and asymptotic `liminf sqrt(n) b(n) >= 1.5852...`. Deduction from Lavi's zero-margin subpermanent lemma. This does **not** determine the sharp radius and does **not** count as a completed entry; independent review and prior-art audit remain pending.
-- [Perron root of permanental compounds](compound_fpras.md): complete candidate proof of an FPRAS for every nonnegative rational input and every compound degree, with deterministic zero detection. Independent reviews are in [sign-matrices/p18_independent_review.md](sign-matrices/p18_independent_review.md) and [inequalities/perron_review.md](inequalities/perron_review.md); the [prior-art audit](combinatorial/p18_prior_art.md) found no full-domain result. This settles the approximation formulation if the proof and novelty assessment withstand external review; it is not an exact computation theorem.
+- [Perron root of permanental compounds](../../results/perron-root-permanental-compounds/): complete candidate proof of an FPRAS for every nonnegative rational input and every compound degree, with deterministic zero detection. Independent reviews are in [sign-matrices/p18_independent_review.md](sign-matrices/p18_independent_review.md) and [inequalities/perron_review.md](inequalities/perron_review.md); the [prior-art audit](../../results/perron-root-permanental-compounds/source-audit.md) found no full-domain result. This settles the approximation formulation if the proof and novelty assessment withstand external review; it is not an exact computation theorem.
 - [Gyires's ratio inequality](inequalities/gyires_spectral.md): a proved sufficient condition on a spectral-norm neighborhood, using cited prior results. The unrestricted conjecture remains open here.
 - [Integrality of the minimum permanent](combinatorial/switch_descent_obstruction.md): an exact infinite-family obstruction to a proposed four-cycle descent strategy, with a six-cycle improvement. This disproves the proposed strategy lemma, not Conjecture 24.
 - [Earlier open-path reduction](perron-compound.md): historical derivation and the convergence obstacle bypassed by the trace argument.
+
+
+- [Permanent dominance for degree-one characters](abelian-dominance.md): proves the semiregular-action case for every character and the abelian-subgroup case in every order as consequences of Grone–Pierce and Lieb–Fischer. This is a structural subcase, not a full solution of Problem 2 or Conjecture 42; priority is unasserted.
 

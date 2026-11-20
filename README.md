@@ -48,6 +48,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
 | [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
 | [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
+| [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ |
 
 Entries are ranked approximately by relative mathematical significance, weighing generality, connection to established problems, and the scope of the result. This editorial order does not imply independent verification or priority.
 
@@ -117,3 +118,4 @@ See [the scope notes](CONTENTS.md#precise-scope) and each result's proof for hyp
 ## Primary sources
 
 Sources are linked in the [catalogue](CONTENTS.md#primary-sources) and individual proofs.
+
