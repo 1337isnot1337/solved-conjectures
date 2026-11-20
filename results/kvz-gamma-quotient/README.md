@@ -46,7 +46,7 @@ transfers those signs to the quotient through two continuous Cauchy–Binet form
 - [PROOF.md](PROOF.md) contains the complete proof, including the Wronskian criterion, translated domains, and integer rank.
 - [NOVELTY.md](NOVELTY.md) records the exact source, related results, public-solution checks, and access limits.
 - [verify.py](verify.py) is a standard-library exact rational diagnostic. Run `python results/kvz-gamma-quotient/verify.py` from the repository root.
-- [Independent analysis audit](../../research/kvz-gamma-quotient/AUDIT-ANALYSIS.md) and [root audit](../../research/kvz-gamma-quotient/ROOT_AUDIT.md) record two separate internal reviews.
+- [Independent analysis audit](../../research/kvz-gamma-quotient/AUDIT-ANALYSIS.md) and [root audit](../../research/kvz-gamma-quotient/AUDIT-ROOT.md) record two separate internal reviews.
 
 The verifier passes 115 exact rational checks. It verifies half-integer signs, integer rank cutoffs, and integer gamma-moment normalizations. As a small certificate for the order-three correction, at $`\delta=1/2`$ and $`x_i=y_i\in\{1/2,3/2,5/2\}`$, the determinant is $`5\pi^{3/2}/8192>0`$. Finite checks are supplementary to the general proof.
 
