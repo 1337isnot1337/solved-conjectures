@@ -180,3 +180,33 @@ Finally, even GRH for every imaginary-quadratic class character would not itself
 4. For an Artin-density result, prove the required Kummer-family splitting estimate or a sufficient weaker uniform replacement. Do not report a fixed cubic example as the full conjecture.
 
 No named open conjecture has been resolved by this note.
+
+## 7. A rigorous limit on the field-containment approach
+
+**Proposition.** Let K be imaginary quadratic, and let $\psi$ be a class character of order $m>2$. Let H/K be the cyclic extension cut out by $\psi$. Then H cannot be embedded in any CM field.
+
+**Proof.** Conjugation acts by inversion on the ideal class group of K: the product of an ideal with its conjugate is principal. It preserves the kernel of $\psi$, so H is Galois over Q and
+
+```math
+\mathop{\mathrm{Gal}}(H/\mathbb Q)
+\simeq C_m\rtimes C_2,\qquad c\sigma c^{-1}=\sigma^{-1}.
+```
+
+Because $m>2$, complex conjugation c is not central.
+
+If H were contained in a CM field M, take the Galois closure of M over Q. This closure is still CM, and its complex conjugation is central. Restricting that central element to the Galois subfield H would give central complex conjugation in $\mathop{\mathrm{Gal}}(H/\mathbb Q)$, a contradiction. The two used CM-field facts are [Milne, *Complex Multiplication*, Proposition 1.4 and Corollary 1.5](https://www.jmilne.org/math/CourseNotes/CM.pdf). ∎
+
+The same obstruction appears in the Kummer fields needed for Artin's conjecture. If $\ell$ is an odd prime and the rational integer g is not an $\ell$th power, put $M=\mathbb Q(\zeta_\ell,g^{1/\ell})$, taking the real $\ell$th root of g. The automorphism $\tau$ multiplying that root by $\zeta_\ell$ has order $\ell$, and complex conjugation satisfies $c\tau c^{-1}=\tau^{-1}$. It is noncentral, so M cannot embed in a CM field. This rules out an entire proposed containment mechanism; it does not prove that theta methods over CM bases cannot control the corresponding representations.
+
+There is no conflict with Section 3: E contains the quadratic base K, not its non-CM class field H. Section 4 preserves H through disjointness rather than placing H inside E. A successful transfer must keep the chosen class character explicitly in the analytic and geometric comparison.
+
+### Exact source boundary
+
+The restriction is present on the analytic side, not only in a top-level wrapper:
+
+- [PrimePairSizeCondition.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/PrimePairSizeCondition.lean) defines PChar as a primitive Dirichlet character with integer modulus.
+- [ExplicitFormulaErrorOfHostConditions.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean) defines ZeroFreeAbove using that Dirichlet L-function, Gm using a finite set of these characters, and Level.cyc using powers of one Dirichlet character.
+- [TwistForm.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Development/AutomorphicArithmetic/CharacterBoxes/TwistForm.lean) states KerChi using a rational residue class and its Artin symbol.
+- [TopWin.lean](https://github.com/1337isnot1337/riemann-hypothesis-solved/blob/9d5316ec73f5df89c4d95703ed106837b8a4060e/extracted/lean/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean) converts the corresponding weighted Chebyshev bounds on scale windows into zero-freeness for those retained characters.
+
+The next mathematical target is therefore a character-twisted replacement for the weighted Chebyshev comparison and its arithmetic-window supply. It cannot be replaced by a field embedding lemma. The latter local and field conditions are now discharged uniformly; the genuinely new analytic comparison remains unproved.
