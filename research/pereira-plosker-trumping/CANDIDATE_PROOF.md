@@ -146,7 +146,7 @@ Every coefficient of $Q$ is positive. The sine recurrence gives the exact identi
 +\frac{\sin((N-1)\theta)}{\sin\theta}u^N.
 ```
 
-Since $(N-1)\theta\lt\pi\leq N\theta\lt\pi+\theta\lt2\pi$, the two displayed nonconstant coefficients are nonnegative. Thus every real factor belongs to $\mathcal S$, and so does $P$ by multiplicative closure. This finite polynomial construction is classical; it is included to make the approximation step explicit.
+Since $(N-1)\theta\lt\pi\leq N\theta\lt\pi+\theta\lt2\pi$, the two displayed nonconstant coefficients are nonnegative. Thus every real factor belongs to $\mathcal S$, and so does $P$ by multiplicative closure. This finite polynomial construction is classical; see Filaseta's [1988 paper](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A507ABBDF3D0A59A08A2C754BA7A7565/S0008414X00000134a.pdf/div-class-title-irreducibility-criteria-for-polynomials-with-non-negative-coefficients-div.pdf), the lemma and comment on printed pages 347–348. It is included to make the approximation step explicit.
 
 ### 3.3. Approximation in the summable-coefficient norm
 
@@ -561,7 +561,7 @@ This also proves that $\zeta$ in (20) cannot extend holomorphically through a ne
 
 ## 9. Remaining work and priority limit
 
-Separate internal mathematical reviews have found no gap in the convolution criterion, the Dirichlet conversion, or the boundary counterexample. The constructive replacement of the multiplier lemma is being checked separately. The prior-theorem audit must inspect Diamond–Essén (1978), whose exact hypotheses remain inaccessible in the material retrieved so far.
+Separate internal mathematical reviews have found no gap in either multiplier proof, the convolution criterion, the Dirichlet conversion, or the boundary counterexample. One full review is recorded in [AUDIT-ALGEBRA.md](AUDIT-ALGEBRA.md). The prior-theorem audit must inspect Diamond–Essén (1978), whose exact hypotheses remain inaccessible in the material retrieved so far; see [NOVELTY.md](NOVELTY.md).
 
 Even if the proofs pass review, the named conjecture's interpretation must be reported honestly: the holomorphic statement is proved, the finite-right-derivative statement is disproved, and the source has not yet been checked to resolve this boundary convention. No finite diagnostic calculation is being used as a replacement for either general argument.
 
