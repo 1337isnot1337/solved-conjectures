@@ -93,3 +93,18 @@ For the present unbalanced ratio, the printed condition would require $2\beta\ge
 ## Limits of this review
 
 This is an internal mathematical review, not external peer review. The analytic proof is complete; the explicit classical-construction route is independently reconstructed and checked. The final shorter written proof and the prior-resolution record should also be read before integration. No assertion here establishes that an earlier unlocated publication cannot exist.
+
+## Final explicit manuscript review
+
+I subsequently read all 249 lines of [EXPLICIT_PROOF.md at commit 4f78ff027035b80c238165db1aefbe86ab071059](https://github.com/1337isnot1337/solved-conjectures/blob/4f78ff027035b80c238165db1aefbe86ab071059/research/simon-le-roy/EXPLICIT_PROOF.md). The written short proof passes.
+
+The finite-product factors are in the correct orientation. Their gamma asymptotics cancel because the numerator and denominator lists have equal length. The explicit summable-mean bound justifies the almost-sure finite sum, so the resulting random variable is strictly positive. Multiplication by a gamma variable of shape 2 removes exactly the auxiliary denominator. The two independent beta factors give the extension to every $\beta\ge13/30$, including the separately defined equality case. The triplication normalization and exponential-series argument then prove complete monotonicity at all positive arguments.
+
+The explicit counterexample interval is
+\[
+\frac{13}{30}\le\beta<
+\frac13\left(1+\frac{\log(32/21)}{\log4}\right).
+\]
+Its upper endpoint exceeds its lower endpoint by the strict integer certificate in the proof. For every parameter in this interval, the scalar inequality fails at the same point $z=1/64$.
+
+I retrieved and ran the verifier from commit 4b1276b1611b11957e4199ca448a11d6ebc94381 locally. It passed the exact polynomial partial-fraction and completed-square identities, mass normalization, strict integer comparison, 54 finite-product identities, 21 triplication normalization checks, and 80 beta-product moment identities. These finite checks support the algebra; the probability construction and infinite assertions are proved in the manuscript.
