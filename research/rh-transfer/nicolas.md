@@ -2,7 +2,7 @@
 
 Date: 2026-11-20.
 
-Status: **complete credited transfer under the accepted RH input; independent review pending.** The implication from RH is Nicolas's published theorem. This note contributes a scope check, a source-to-target application, and an audit of several apparent prior-resolution claims. It does not claim a new proof of Nicolas's implication or a mathematical consequence independent of RH.
+Status: **complete credited transfer under the accepted RH input; independent review passed.** The implication from RH is Nicolas's published theorem. This note contributes a scope check, a source-to-target application, and an audit of several apparent prior-resolution claims. It does not claim a new proof of Nicolas's implication or a mathematical consequence independent of RH.
 
 ## Statement
 
@@ -163,6 +163,12 @@ These checks reject the displayed arguments, not their desired conclusion. The p
 - Extra unproved analytic hypothesis: none.
 - Finite or dimension-specific substitute: none.
 - Related quantitative consequences are not counted separately.
-- Independent review: requested after this commit.
+- Independent review: passed; see the receipt below.
 
 Coordination: [issue #80](https://github.com/1337isnot1337/solved-conjectures/issues/80).
+
+## Independent review receipt
+
+The [root review on issue #131](https://github.com/1337isnot1337/solved-conjectures/issues/131#issuecomment-7050164303) independently checked Nicolas's own 2012 introduction and Theorem 1.1, equation (1.7), and Choie–Planat–Solé's explicit attribution to Nicolas 1983, Theorem 2(a). The review confirms the strict inequality for every primorial index, the direct endpoint argument at k=1, and the positive quantitative lower bound. It also checked the elementary counterexamples to the invalid limit and subsequence inferences recorded above; it does not claim a second reading of every apparent-proof manuscript.
+
+No extra analytic hypothesis was introduced. The result remains a credited application of Nicolas's established conditional theorem to the user-accepted RH source. Internal review is not external peer review.
