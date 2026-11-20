@@ -12,7 +12,7 @@ The accepted top-level result covers the Riemann zeta function and Dirichlet L-f
 
 ## Main analytic result
 
-The complete written argument in [Fujii's conjecture](fujii.md), checked in three independent reviews, proves under beta GRH that there is A>0 such that, for every fixed alpha>A,
+The complete written argument in [Fujii's conjecture](fujii.md), with independent reviews of its analytic steps, proves without any RH assumption that there is A>0 such that, for every fixed alpha>A,
 
 ~~~math
 S_\alpha(x)=\sum_{p>2}\chi_4(p)e^{-(p/x)^\alpha}
@@ -23,7 +23,7 @@ S_\alpha(x)=\sum_{p>2}\chi_4(p)e^{-(p/x)^\alpha}
 
 This contradicts the all-positive-alpha extension under the accepted beta GRH input. It is a statement about every sufficiently large fixed exponent, not a numerical extension of the previously admissible range. No linear independence or simple-zero assumption is used.
 
-The proof combines an absolutely convergent almost-periodic zero series, a distributional limit to the sharp prime-race expression, Hardy–Littlewood oscillation, and recurrence. A separate convolution proof removes an initially unnecessary zeta-RH assumption. Direct retrieval of Fujii's 1988 text remains blocked; Suzuki 2012, corrected Suzuki 2025, and the comparative-prime-number bibliography independently record the exact all-alpha conjecture. Searches found no prior full disproof, but priority is unclaimed. The result remains in the research lane while its status is assessed.
+In the beta-GRH case the proof combines an absolutely convergent almost-periodic zero series, a reflected local logarithmic singularity, and recurrence. The stronger direct-value calculation is F_alpha(0)=(1/2-1/e)log alpha+O(1). A separate convolution proof supplies the prime-sum normalization. In the complementary case, Landau's theorem forces both signs for every positive alpha, completing the unconditional case split. The original Hardy–Littlewood route remains an independent alternative. Direct retrieval of Fujii's 1988 text remains blocked; Suzuki 2012, corrected Suzuki 2025, and the comparative-prime-number bibliography independently record the exact all-alpha conjecture. Searches found no prior full disproof, but priority is unclaimed. The result remains in the research lane while its status is assessed.
 
 The [Gamma-power clause](fujii-gamma-power.md) has a separate complete proof: for every integer k>=1, the unweighted prime sum with Mellin weight Gamma(s)^k tends to minus infinity if and only if beta GRH holds. The proof uses the classical k=1 Chebyshev theorem, positive Mellin convolution, and Landau's theorem. It is not counted as another named conjecture.
 
@@ -31,11 +31,12 @@ The [Gamma-power clause](fujii-gamma-power.md) has a separate complete proof: fo
 
 | Named target or source application | Recorded outcome | Note |
 |---|---|---|
-| Fujii's conjecture | Complete reviewed proof of large-alpha oscillation under beta GRH; original-paper retrieval and priority remain provenance limits | [Main proof](fujii.md) |
+| Fujii's conjecture | Complete reviewed unconditional large-alpha oscillation theorem; the reported equivalence family is false under the accepted beta GRH input; original-paper retrieval and priority remain provenance limits | [Main proof](fujii.md) |
 | Fujii's conjecture, Gamma-power clause | Complete equivalence for the entire integer-k family by classical positive convolution and Landau; no priority claim | [Gamma-power proof](fujii-gamma-power.md) |
 | Lindelöf hypothesis | Full standard implication from the accepted RH/Dirichlet GRH; classical attribution retained | [Dirichlet applications](dirichlet-applications.md) |
 | Simm–Wei conjecture | Accepted RH gives Lindelöf, which supplies the hypothesis of the cited 2026 conditional moment theorem; normalized complex limit and coefficient zeros are handled explicitly | [Simm–Wei](simm-wei.md) |
 | Chebyshev's conjecture | Original Abel-weighted assertion follows by the classical equivalence with beta GRH | [Chebyshev](chebyshev.md) |
+| Grosswald's conjecture | Full conclusion for every prime p>409 follows from the accepted input and McGown–Treviño–Trudgian's published 2016 theorem; original authors retain proof credit | [Grosswald](grosswald.md), [issue #91](https://github.com/1337isnot1337/solved-conjectures/issues/91) |
 | Chowla's conjecture | Unresolved. A complete Montgomery-error-to-least-prime implication is written; the necessary cross-character cancellation is not supplied by GRH alone | [Chowla](chowla.md) |
 | Vandiver's conjecture | Unresolved. Archive bounds give a global polynomial bound for log torsion in K_m(Z), plus a first-order twisted-Selmer bridge; neither forces vanishing | [Vandiver and arithmetic extraction](vandiver.md) |
 | Greenberg's conjecture | Unresolved. An explicit Iwasawa-module model proves that polynomial specialization bounds alone do not force lambda=0 | [Arithmetic extraction](vandiver.md) |
@@ -47,6 +48,8 @@ The [Gamma-power clause](fujii-gamma-power.md) has a separate complete proof: fo
 - [Convolution and logical review](fujii-review.md): a second proof of the prime-sum normalization under beta GRH alone, quantifier checks, and primary-source/prior-art coverage.
 - [Mellin review](fujii-mellin-review.md): the compact-to-Schwartz cutoff limit, uniform Fourier error, square term, and sum over all zeros.
 - [Distribution and recurrence review](fujii-review-distribution.md): domination uniform in alpha, positive-test transfer, finite-torus recurrence, and stronger profile extrema.
+- [Boundary review](fujii-boundary.md): the local reflection argument and the explicit positive value at phase zero, including the exclusion of a point-supported term and the uniform asymptotic remainder.
+- [Landau complement](fujii-landau.md): the non-GRH case, the unconditional theorem, and the exact distinction between the simultaneous negative limits and the family of equivalences.
 
 ## Arithmetic results extracted so far
 
@@ -71,8 +74,8 @@ Its negative-simple-root adjoint plane is an induced representation, so Shapiro 
 
 | Worker | Current responsibility | Owned paths |
 |---|---|---|
-| Root | Fujii synthesis, full named analytic targets, independent review and campaign index | this file, fujii.md, analytic-applications.md |
-| dirichlet_applications | Fujii complementary Landau case, conditional analytic consequences, exact prior art | dirichlet-applications.md, simm-wei.md, chebyshev.md, chowla.md, fujii-review.md |
+| Root | Fujii synthesis, full named analytic targets, independent review and campaign index | this file, fujii.md, grosswald.md, analytic-applications.md |
+| dirichlet_applications | Named analytic consequences, Fujii proof refinements, exact prior art | dirichlet-applications.md, simm-wei.md, chebyshev.md, chowla.md, fujii-review.md, fujii-landau.md, fujii-boundary.md |
 | arithmetic_extraction | Arithmetic specialization and Selmer-to-characteristic-zero transfer | vandiver.md, fujii-mellin-review.md, fujii-gamma-power.md |
 | nonabelian_transfer | Corrected polarized trace families, deep class-character rigidity, Hecke transfer | artin-density.md, fujii-review-distribution.md |
 
