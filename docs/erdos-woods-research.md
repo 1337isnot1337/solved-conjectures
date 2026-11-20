@@ -146,3 +146,63 @@ The second predecessors therefore have different radicals because
 $a^2-2>1$. These cases exhaust all positions. A term equal to 1
 also cannot occur in a matching pair of distinct starts because
 its partner would have radical 1.
+
+## Counting matches by averaging both coordinates
+
+Let $P_k(X)$ count pairs of positive integers $x\lt y\le X$ with
+matching blocks of length $k$. For fixed $k\ge2$,
+
+```math
+P_k(X)\ll_k X^{1/k}
+  \exp\!\left(O\!\left(
+       \left(\frac{\log X}{\log\log X}\right)^{2/3}
+        \right)\right).
+```
+
+This gives a smaller subexponential factor than the one in
+[Lebowitz-Lockard, Theorem 6](https://arxiv.org/abs/2507.09899).
+The power $X^{1/k}$ is the same.
+
+For a matched pair, put $r_i=\operatorname{rad}(y+i)$.
+The least common multiple of the $r_i$ divides $y-x$.
+A prime $p$ occurs in at most $1+\lfloor(k-1)/p\rfloor$ terms.
+Consequently the product of the $r_i$ is at most $X C_k$, where
+
+```math
+C_k=\prod_{p\le k-1}p^{\lfloor(k-1)/p\rfloor}.
+```
+
+There is at least one shift $i$ with $r_i\le B=(X C_k)^{1/k}$.
+Put $Y=X+k$. For a fixed choice of shift, the number of candidate pairs
+is at most $\sum_{r\le B} N(Y,r)^2$, where $N(Y,r)$ counts positive
+integers at most $Y$ with radical exactly $r$. The full count is
+at most $k$ times that sum.
+
+For squarefree $r$ and $\eta>0$, multiplying the geometric series
+for the exponents of its primes gives
+
+```math
+N(Y,r)\le Y^\eta \prod_{p\mid r}(p^\eta-1)^{-1}.
+```
+
+Using $1\le B/r$ in the sum and then expanding an Euler product
+gives the following bound for the candidate pairs at a fixed shift.
+
+```math
+\sum_{r\le B}N(Y,r)^2
+ \le B Y^{2\eta}\prod_p\left(1+\frac{1}{p(p^\eta-1)^2}\right).
+```
+
+The product converges for every fixed positive $\eta$. For small
+$\eta$, put $Z=1/\eta$. The logarithms of factors for $p\le Z$
+sum to $O(Z)$: each is $O(\log Z)$, and Chebyshev's bound gives
+$O(Z/\log Z)$ such primes. For $p>Z$, use
+$p^\eta-1\ge\eta\log p$. Partial summation with Chebyshev's
+bound gives $\sum_{p>Z}1/(p(\log p)^2)=O((\log Z)^{-2})$.
+The logarithm of the product is therefore
+$O(\eta^{-2}/\log^2(1/\eta))$. Taking
+$\eta=(\log Y\,(\log\log Y)^2)^{-1/3}$ proves the estimate.
+
+This bound controls the number of candidates below a height cutoff.
+A proof of an absolute upper bound on matching length still requires
+an argument covering arbitrarily sparse, unbounded pairs.
