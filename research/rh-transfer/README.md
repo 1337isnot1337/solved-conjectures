@@ -12,7 +12,7 @@ The accepted top-level result covers the Riemann zeta function and Dirichlet L-f
 
 ## Reviewed full named outcomes
 
-The following inventory contains sixteen full historically stated conjectures with complete written deductions in this lane. Six entries contain proof arguments or deductions developed in this campaign; ten use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of sixteen independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
+The following inventory contains eighteen full historically stated conjectures with complete written deductions in this lane. Seven entries contain proof arguments or deductions developed in this campaign; eleven use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of eighteen independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
 
 Current prior-art searches have not located an earlier full resolution of the exact targets apart from the accepted input and the established conditional implications. The searches and retrieval limits are recorded individually. Mathematical completeness, historical priority, and external acceptance are different questions.
 
@@ -22,6 +22,7 @@ Current prior-art searches have not located an earlier full resolution of the ex
 | Coffey–Smith conjecture | Disproved: under RH the union of its two proposed positive-fraction sets has density zero; without RH its upper bound fails | Complete internally reviewed unconditional refutation; [note](coffey-smith.md), [issue #122](https://github.com/1337isnot1337/solved-conjectures/issues/122) |
 | Merlini–Sala–Sala conjecture | Disproved: the tiny Li remainder divided by n^(1/4) has infinite absolute limsup, so its proposed subpower and logarithmic bounds fail | Complete internally reviewed unconditional refutation; [note](merlini-sala-sala.md), [issue #128](https://github.com/1337isnot1337/solved-conjectures/issues/128) |
 | Chaudhary–Khmiri–Mazhouda conjecture | Disproved: an admissible unitary Dirichlet twist has Re(lambda(2)−lambda(1))<−3/2 | Complete internally reviewed unconditional counterexample with exact rational certificate; [note](chaudhary-khmiri-mazhouda.md), [issue #124](https://github.com/1337isnot1337/solved-conjectures/issues/124) |
+| Csordas–Vishnyakova conjecture | Disproved: exp(−z^4) with p(z)=z^4+z^2+1 satisfies every stated coefficient inequality but is not in the Laguerre–Pólya class | Complete internally reviewed unconditional exact counterexample; [note](csordas-vishnyakova.md), [issue #132](https://github.com/1337isnot1337/solved-conjectures/issues/132) |
 | Pomerance's conjecture | Proved in its original 1974 nonexistence form: no integer satisfies his sufficient criterion for a unique totient preimage | Complete internally reviewed deduction from the Ford–Luca prime-tree theorem and accepted Dirichlet GRH; [note](pomerance.md), [issue #129](https://github.com/1337isnot1337/solved-conjectures/issues/129) |
 | Fujii's conjecture | The reported all-positive-alpha equivalence family is false under the accepted beta GRH; the large-alpha oscillation theorem is unconditional | Complete internally reviewed argument, with direct original-source retrieval still limited; [note](fujii.md) |
 | Banks–Friedlander–Luca–Pappalardi–Shparlinski conjecture | Every value of Carmichael's lambda function has at least two preimages | Published Ford–Luca theorem under exactly Dirichlet ERH, plus checked arithmetic deduction; [note](banks-friedlander-luca-pappalardi-shparlinski.md), [issue #120](https://github.com/1337isnot1337/solved-conjectures/issues/120) |
@@ -29,6 +30,7 @@ Current prior-art searches have not located an earlier full resolution of the ex
 | Coffey's conjecture | The full coefficient upper bound holds, with the stronger bound log(n+2)/sqrt(n) | Published Lagarias RH estimate with exact coefficient normalization; [note](coffey.md), [issue #118](https://github.com/1337isnot1337/solved-conjectures/issues/118) |
 | Keiper's conjecture | The normalized coefficients have the full asymptotic, including the constant term, with a square-summable remainder | Published Arias de Reyna RH theorem; [note](keiper.md), [issue #123](https://github.com/1337isnot1337/solved-conjectures/issues/123) |
 | Brent's conjecture | The original discrete logarithmic mean tends to one; Robin's separately stated modulus-four logarithmic mean also holds | Classical RH/Dirichlet-GRH consequences, with full signed-weight and sum–integral deductions; [note](brent.md), [issue #127](https://github.com/1337isnot1337/solved-conjectures/issues/127) |
+| Nicolas's conjecture | The strict Euler-totient inequality holds at every primorial, including the first | Published Nicolas RH theorem with exact endpoint and quantitative cross-check; [note](nicolas.md), [issue #131](https://github.com/1337isnot1337/solved-conjectures/issues/131) |
 | Soundararajan's conjecture | The original smooth-number equidistribution statement holds for every fixed A in its full asymptotic range | Published Banks–Shparlinski criterion under Dirichlet GRH; [note](soundararajan.md) |
 | Grosswald's conjecture | The full least-primitive-root inequality holds for every prime p>409 | Published McGown–Treviño–Trudgian Dirichlet-GRH theorem, with its finite dependencies imported; [note](grosswald.md) |
 | Knapowski–Turán conjecture | The original modulus-four natural-density assertion is false | Published Kaczorowski Dirichlet-GRH theorem; [note](knapowski-turan.md) |
@@ -36,6 +38,29 @@ Current prior-art searches have not located an earlier full resolution of the ex
 | Lindelöf hypothesis | The full subpower bound holds | Classical RH implication, with conductor-uniform Dirichlet version documented; [note](dirichlet-applications.md) |
 
 Already published QRH applications such as Vinogradov and the idoneal-number classification remain excluded. The qualified Simm–Wei formulation and Chandee's matching-order result do not enter this full-statement inventory. Neither do the unresolved Hecke, Artin, Selmer, or correlation reductions below. This inventory does not alter unrelated campaigns' result counts.
+
+### Csordas–Vishnyakova conjecture
+
+The original 2013 Conjecture 3.6 removes the growth restriction from a preceding Laguerre–Pólya criterion. Its fixed admissible polynomial may be
+~~~math
+p(z)=z^4+z^2+1.
+~~~
+For the real entire function \(\varphi(z)=e^{-z^4}\), the relevant product is exactly
+~~~math
+\prod_{j=1}^{4}\varphi(x+\alpha_jt)
+=e^{-4x^4}\,e^{12x^2t^2}\,e^{2t^4},
+\qquad p(z)=\prod_{j=1}^{4}(z+\alpha_j).
+~~~
+Every coefficient is nonnegative for every real \(x\). Yet \(\varphi(it)\varphi(-it)=e^{-2t^4}\) has a negative coefficient. Such a coefficient is impossible for a compact limit of real-rooted polynomials. The [full proof](csordas-vishnyakova.md) refutes the published implication unconditionally and includes three internal review receipts. Cardon's original genus-restricted theorem is unaffected.
+
+### Nicolas's conjecture
+
+For \(N_k=\prod_{j\le k}p_j\), the [note](nicolas.md) applies Nicolas's established theorem to obtain
+~~~math
+\frac{N_k}{\varphi(N_k)}>e^\gamma\log\log N_k
+\qquad(k\ge1).
+~~~
+The accepted input here is zeta RH alone. Nicolas's original conditional implication retains full credit. His later quantitative theorem provides a separate source check for every index. The current-status audit also records concrete flaws in several apparent prior-proof claims, with exact versions and access limits.
 
 ### Nuttall's conjecture
 
