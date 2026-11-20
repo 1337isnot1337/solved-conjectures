@@ -165,3 +165,16 @@ Suppose two five-bundles are consecutive around a face corner. They must share a
 Normalize the first three labels to (1,2,3), which is possible because the five-strip equations make them pairwise adjacent. The two external neighbors of x have labels −a0 and −c0. Together with its rim neighbors a1,c1 these must be the four distinct neighbors of label3. Thus c1=−2 and c0=−1. The two external edges at x therefore end at labels −1 and1 in the other two cells.
 
 If the collapsed face were triangular, its third edge would be represented by the immediately adjacent external edge at the relevant endpoints in those cells. Those endpoints are the anchored ports of the original five-bundles; their blocks are partial as above. Hence this closing edge would join those same two ports, whose labels are opposite. This violates the covering map's adjacency requirement. No triangular face of J can therefore contain two weight-five edges.
+
+## Follow-up: local weight-four classification and failed intersection route
+
+A necessary-condition enumerator tests a defect-two, degree-four cell with all four incident weights equal to4. It ranges over all cyclic port-label orders, choices of four rim edges, cyclic cuts into four-edge strips, and the exact neighbor-label equations. The other cells are not completed or identified. Therefore its outputs are local compatibility witnesses only, never planar covers.
+
+The first-witness enumeration finds 144 feasible rim/label/cut combinations with port0 fixed to label0, using opposite pairs (0,1),(2,3),(4,5). All have a five-vertex rim path and an isolated port; no other four-edge rim type survives these local equations. This computational classification has not had independent implementation review and is not used in the proved lemmas above.
+
+The proposed next step was to classify four-bundles as straight or curved according to whether the two-port side has opposite labels, orient each toward its three-port side, and derive an intersection-number contradiction. The computation blocked this strategy in two concrete ways:
+
+1. Some surviving states have only curved bundles, rather than one incoming/outgoing edge of each type.
+2. Among states with one incoming and outgoing edge of each type, matching a straight bundle across two cells either preserves the isolated label and the local crossing sign, or changes the label to its opposite and reverses the crossing sign. Thus equal crossing signs along a directed straight cycle do not follow from the local equations.
+
+No global intersection obstruction was obtained. This records a failed extension, not a theorem that no intersection approach can work. The all-cover problem remains open, with the mixed triangular-face compatibility step unresolved.
