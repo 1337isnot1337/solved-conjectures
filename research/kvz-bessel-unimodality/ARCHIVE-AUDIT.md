@@ -77,6 +77,27 @@ The full source record had already been read in the original review.
 
 ## Conclusion and limits
 
+An additional check covered [CoPEER](https://github.com/qqliu/CoPEER)
+at commit 105523fdaf018b62eaf2883347724dfe79935611. Its complete README,
+discovery README, and twelve-record discovery index were read. A Bessel
+code search returned no match. The separate 661-record retrieval snapshot
+was not successfully fetched; the contents API returned empty content.
+
+The [editable source corpus](https://github.com/AlexenderSokolov/cross-theory-formal-database)
+was checked at commit 3b9207c03d9dc146f393f68bcb683bbc4583979a.
+Exact 2408.01755 search returned no match. Broad Bessel search reached a
+100-result cap, so its negative coverage is limited.
+The closest primary text located was Salazar's
+*Riccati Reductions for Modified Bessel Ratios: Bernstein Positivity,
+Exact Certificates, and Transfer Obstructions*, arXiv:2607.05538v1,
+[full archived source](https://github.com/AlexenderSokolov/cross-theory-formal-database/blob/3b9207c03d9dc146f393f68bcb683bbc4583979a/editable-corpus/sources/204547/source0.tex).
+Its abstract, main-result table, and all conjecture and unimodality loci
+were inspected. It treats adjacent-order Bernstein properties,
+log-concavity of a single weighted I-Bessel function, K-Bessel derivative
+ratios, and an older coefficient-transfer problem. Its explicit
+half-order unimodality result concerns K'/K², not the present two-scale
+I-Bessel quotient. No exact resolution was located there.
+
 The expanded archive screen has not located an earlier exact proof of
 the surviving whole unimodality assertion. It does not establish global
 priority or completeness. It supplements, rather than replaces, the
