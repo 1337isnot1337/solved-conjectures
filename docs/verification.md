@@ -18,6 +18,14 @@ The partial-result entries contain their replay commands for the [Frankl generat
 
 These are the commands in [the verification workflow](../.github/workflows/verify.yml). They include finite tests, exact certificates, and exhaustive searches; their mathematical roles are explained in the corresponding proof notes. A passing computation is not a claim that a full theorem has been formalized.
 
+The [Le Roy verifier](../results/simon-le-roy/verify.py) checks the exact
+partial fractions, positivity certificate, probability mass, finite
+product cancellations, triplication identities, beta moments, and the
+integer inequality defining a nonempty counterexample interval.
+The [written proof](../results/simon-le-roy/PROOF.md) supplies convergence
+of the infinite random sum and complete monotonicity for the whole
+parameter interval.
+
 The [Wright verifier](../results/ferreira-simon-wright/verify.py) checks
 the general curvature identity as an exact polynomial in three variables,
 its two parameter-polynomial specializations, and the displayed derivative
@@ -50,6 +58,7 @@ recursive-game identities through `CutPeriodWeightTheorem`.
 
 ```bash
 python3 -m pip install sympy==1.14.0
+python3 results/simon-le-roy/verify.py
 python3 results/ferreira-simon-wright/verify.py
 python3 results/kvz-gamma-quotient/verify.py
 python3 results/alexandersson-fuss-catalan/verify.py

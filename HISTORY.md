@@ -1,5 +1,24 @@
 # History
 
+## 2026-11-20 — Simon's Le Roy conjecture
+
+Added a complete disproof of the proposed necessary condition for complete
+monotonicity of the Mittag–Leffler function of Le Roy type. A positive
+Laplace-transform construction gives complete monotonicity for every beta
+at least 13/30 when alpha is one third and the exponent is two. The
+conjectured condition fails throughout an explicit nonempty interval
+starting at 13/30. This is an analytic family, not a numerical witness.
+
+The short proof specializes Dufresne's 2010 gamma-moment construction,
+which is credited explicitly. A separate proof uses Mellin inversion,
+strict density positivity, and uniform endpoint estimates. Root, algebra,
+and combinatorics reviewed the argument and the most relevant prior
+theorems. Exact rational construction checks passed. The source audit
+records the original conjecture, later papers, and full-text access
+limits; no external peer review or exclusive priority is claimed.
+
+[Proofs, exact construction checks, and prior-work audit](results/simon-le-roy/).
+
 ## 2026-11-20 — Ferreira–Simon's Wright log-concavity conjecture
 
 Added a complete disproof of the conjectured equivalence between the

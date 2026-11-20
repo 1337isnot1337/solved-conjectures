@@ -20,6 +20,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Horňák–Woźniak conjecture](results/hornak-wozniak/) | ⬜ |
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
+| [Simon's Le Roy conjecture](results/simon-le-roy/) | ⬜ |
 | [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ⬜ |
 | [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ⬜ |
