@@ -86,6 +86,15 @@ H^2(G_{F,S},\mathbb Q_p/\mathbb Z_p(1-r))=0,
 
 The source LemmaK has 1-r=e+1, hence r=-e<0. The strict H^1 representation in soBar has exactly that exponent r=-e.
 
+At a finite place v not above p, the unramified subgroup for A(-e) is also zero. On the inertia invariants, Frobenius eigenvalues are a root of unity times (Nv)^(-e), so none is 1. Hence
+
+~~~math
+H^1_{\mathrm{unr}}(F_v,A(-e))
+=A(-e)^{I_v}/(\operatorname{Frob}_v-1)A(-e)^{I_v}=0.
+~~~
+
+Thus the strict group in section 2 is indeed the kernel of localization at all finite decomposition groups in this negative-twist setting, as required by the duality comparison.
+
 The distinction can be displayed without any conjectural identification:
 
 | Available statement | Dual cohomological direction |
