@@ -12,7 +12,7 @@ The accepted top-level result covers the Riemann zeta function and Dirichlet L-f
 
 ## Reviewed full named outcomes
 
-The following inventory contains twenty-two full historically stated conjectures with complete written deductions in this lane. Nine entries contain proof arguments or deductions developed in this campaign; thirteen use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of twenty-two independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
+The following inventory contains twenty-three full historically stated conjectures with complete written deductions in this lane. Ten entries contain proof arguments or deductions developed in this campaign; thirteen use established conditional implications with the accepted RH/Dirichlet-GRH input. This is not a claim of twenty-three independent new breakthroughs. Coffey and Keiper concern closely related coefficients; Coffey–Smith and Merlini–Sala–Sala use related boundary analysis. Pomerance's entry identifies the exact 1974 nonexistence conjecture, not the different ordered prime-product assertion.
 
 Current prior-art searches have not located an earlier full resolution of the exact targets apart from the accepted input and the established conditional implications. The searches and retrieval limits are recorded individually. Mathematical completeness, historical priority, and external acceptance are different questions.
 
@@ -24,6 +24,7 @@ Current prior-art searches have not located an earlier full resolution of the ex
 | Chaudhary–Khmiri–Mazhouda conjecture | Disproved: an admissible unitary Dirichlet twist has Re(lambda(2)−lambda(1))<−3/2 | Complete internally reviewed unconditional counterexample with exact rational certificate; [note](chaudhary-khmiri-mazhouda.md), [issue #124](https://github.com/1337isnot1337/solved-conjectures/issues/124) |
 | Csordas–Vishnyakova conjecture | Disproved: exp(−z^4) with p(z)=z^4+z^2+1 satisfies every stated coefficient inequality but is not in the Laguerre–Pólya class | Complete internally reviewed unconditional exact counterexample; [note](csordas-vishnyakova.md), [issue #132](https://github.com/1337isnot1337/solved-conjectures/issues/132) |
 | Cardon–Forgács–Piotrowski–Sorensen–White conjecture | Disproved: for every real p>2, sufficiently small positive alpha destroys real-rootedness of a fixed cubic, so the proposed sector-reduction criterion fails | Complete internally reviewed unconditional refutation with an exact rational certificate; [note](cardon-forgacs-piotrowski-sorensen-white.md), [issue #136](https://github.com/1337isnot1337/solved-conjectures/issues/136) |
+| Wagner's conjecture | Disproved: the positive shifted Laguerre–Pólya function exp(z)+1 has first Laguerre transform −exp(z), outside the positive shifted class | Complete internally reviewed unconditional counterexample to author-preprint Conjecture 4.3; exact version and remaining full-text audit limits recorded; [note](wagner.md), [issue #137](https://github.com/1337isnot1337/solved-conjectures/issues/137) |
 | Pomerance's conjecture | Proved in its original 1974 nonexistence form: no integer satisfies his sufficient criterion for a unique totient preimage | Complete internally reviewed deduction from the Ford–Luca prime-tree theorem and accepted Dirichlet GRH; [note](pomerance.md), [issue #129](https://github.com/1337isnot1337/solved-conjectures/issues/129) |
 | Jutila's conjecture | The complete character-sum moment bound holds for every positive integer moment, every length, and every nonprincipal real character of modulus at most X | Full internally reviewed deduction under accepted Dirichlet GRH using established moment methods, including exact unsmoothing and all induced characters; [note](jutila.md), [issue #135](https://github.com/1337isnot1337/solved-conjectures/issues/135) |
 | Fujii's conjecture | The reported all-positive-alpha equivalence family is false under the accepted beta GRH; the large-alpha oscillation theorem is unconditional | Complete internally reviewed argument, with direct original-source retrieval still limited; [note](fujii.md) |
@@ -44,6 +45,26 @@ Current prior-art searches have not located an earlier full resolution of the ex
 Already published QRH applications such as Vinogradov and the idoneal-number classification remain excluded. The qualified Simm–Wei formulation and Chandee's matching-order result do not enter this full-statement inventory. Neither do the unresolved Hecke, Artin, Selmer, or correlation reductions below. This inventory does not alter unrelated campaigns' result counts.
 
 The Borcea–Shapiro finite infinite-divisibility and local-direction questions are excluded: Arizmendi–Perales had already proved the exact fixed-degree Hermite classification in 2017. The local and all-time formulations are equivalent by composition; the [screening note](borcea-shapiro-screening.md) records the source and the rediscovered proof. The 2026 manuscript's open-problem label does not override the earlier theorem.
+
+The [Katkova–Tyaglov–Vishnyakova finite-difference screening](katkova-tyaglov-vishnyakova-screening.md) also remains excluded: an earlier exact quadratic counterexample resolves the same universal stability assertion, and prior counterexamples cover the other inspected assertions.
+
+The [Craven–Csordas rapid-decay counterexample](craven-csordas.md) is mathematically complete but uncounted. A 1996 existential theorem already appears to imply a negative answer to the later question. Its printed example has an algebraic inconsistency, which does not justify ignoring the theorem or claiming a new unresolved target.
+
+### Wagner's conjecture
+
+The [full counterexample](wagner.md) concerns Conjecture 4.3 in the 2022 author preprint. The common polynomial approximants
+~~~math
+f_N(z)=(1+z/N)^N+1
+~~~
+converge locally uniformly to \(e^z+1\). For each fixed \(d\) and every \(N\ge d+1\), their \((N-d)\)-th derivatives are a positive multiple of \((1+z/N)^d\), with all zeros at \(-N\). The limiting Taylor coefficients are all positive. Thus the function belongs to the exact positive shifted Laguerre–Pólya class.
+
+But the first Laguerre operator gives
+~~~math
+L_1(e^z+1)=(e^z)^2-(e^z+1)e^z=-e^z,
+~~~
+whose coefficients are all negative. This refutes the whole universal function-class preservation statement. Parameter variants and higher odd operators are part of the same counterexample mechanism, not additional targets.
+
+The argument is unconditional and has two independent review receipts. The exact final publisher PDF and the full Fan–Wang 2026 paper were not accessible; the note pins the refuted statement to the author preprint and preserves those priority-audit limits.
 
 ### Cardon–Forgács–Piotrowski–Sorensen–White conjecture
 
