@@ -1,0 +1,37 @@
+best m 12 score -0.381279 delta -167 per 438 restart 0 step 24
+best m 12 score -0.314208 delta -115 per 366 restart 0 step 72
+best m 12 score -0.257732 delta -75 per 291 restart 0 step 80
+best m 12 score -0.25188 delta -67 per 266 restart 0 step 102
+best m 12 score -0.242152 delta -54 per 223 restart 0 step 127
+best m 12 score -0.222222 delta -46 per 207 restart 0 step 172
+best m 12 score -0.219048 delta -46 per 210 restart 0 step 197
+best m 12 score -0.18593 delta -37 per 199 restart 0 step 226
+best m 12 score -0.181347 delta -35 per 193 restart 0 step 347
+best m 12 score -0.18 delta -36 per 200 restart 0 step 2159
+best m 12 score -0.174359 delta -34 per 195 restart 0 step 2293
+best m 12 score -0.165829 delta -33 per 199 restart 0 step 2716
+best m 12 score -0.162162 delta -36 per 222 restart 0 step 3203
+best m 12 score -0.16 delta -32 per 200 restart 0 step 4482
+best m 12 score -0.153846 delta -32 per 208 restart 0 step 7606
+best m 12 score -0.15311 delta -32 per 209 restart 0 step 25486
+best m 12 score -0.152709 delta -31 per 203 restart 0 step 25806
+best m 12 score -0.148515 delta -30 per 202 restart 0 step 26032
+best m 12 score -0.148148 delta -32 per 216 restart 0 step 38352
+best m 12 score -0.142857 delta -32 per 224 restart 0 step 40340
+best m 12 score -0.138614 delta -28 per 202 restart 0 step 54670
+best m 12 score -0.134615 delta -28 per 208 restart 5 step 97525
+finished best score -0.134615 delta -28 per 208
+13
+0 0 0 0 0 0 0 0 0 1 1 0 1
+0 1 0 0 1 0 0 0 1 0 0 0 0
+0 0 0 0 0 0 1 1 0 0 1 0 0
+0 0 0 1 0 1 0 0 1 0 0 0 0
+0 0 0 0 0 1 0 0 1 0 0 1 0
+0 1 0 0 1 0 1 0 0 0 0 0 0
+0 1 1 0 0 0 0 0 0 1 0 0 0
+0 0 1 0 0 1 0 0 0 0 1 0 0
+1 0 0 1 0 0 0 0 0 0 0 1 0
+0 0 1 0 1 0 0 0 0 1 0 0 0
+0 0 0 1 0 0 0 1 0 0 0 1 0
+1 0 0 0 0 0 1 1 0 0 0 0 0
+1 0 0 0 0 0 0 0 0 0 0 0 2

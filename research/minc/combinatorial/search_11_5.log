@@ -1,0 +1,61 @@
+best 11 5 26793 collisions 12 restart 0 step 11
+best 11 5 24702 collisions 11 restart 0 step 20
+best 11 5 24478 collisions 12 restart 0 step 41
+best 11 5 24441 collisions 10 restart 0 step 48
+best 11 5 23630 collisions 9 restart 0 step 58
+best 11 5 23216 collisions 9 restart 0 step 121
+best 11 5 22858 collisions 9 restart 0 step 130
+best 11 5 21178 collisions 8 restart 0 step 148
+best 11 5 20986 collisions 8 restart 0 step 152
+best 11 5 19790 collisions 7 restart 0 step 176
+best 11 5 17505 collisions 6 restart 0 step 224
+best 11 5 17028 collisions 5 restart 0 step 229
+best 11 5 16923 collisions 5 restart 0 step 263
+best 11 5 16913 collisions 5 restart 0 step 340
+best 11 5 16652 collisions 5 restart 0 step 350
+best 11 5 16534 collisions 5 restart 0 step 393
+best 11 5 16482 collisions 5 restart 0 step 410
+best 11 5 16397 collisions 5 restart 0 step 484
+best 11 5 16370 collisions 5 restart 0 step 533
+best 11 5 16368 collisions 5 restart 0 step 555
+best 11 5 16264 collisions 4 restart 0 step 957
+best 11 5 15998 collisions 4 restart 0 step 964
+best 11 5 15936 collisions 4 restart 0 step 968
+best 11 5 15888 collisions 4 restart 0 step 996
+best 11 5 15886 collisions 4 restart 0 step 1004
+best 11 5 15690 collisions 4 restart 0 step 1007
+best 11 5 15648 collisions 4 restart 0 step 1043
+best 11 5 13526 collisions 2 restart 0 step 1071
+best 11 5 13448 collisions 2 restart 0 step 1072
+best 11 5 13006 collisions 1 restart 0 step 1112
+best 11 5 12994 collisions 1 restart 0 step 1130
+best 11 5 12984 collisions 1 restart 0 step 1164
+best 11 5 12377 collisions 0 restart 0 step 1204
+best 11 5 12352 collisions 0 restart 0 step 1206
+best 11 5 12339 collisions 0 restart 0 step 1232
+best 11 5 12326 collisions 0 restart 0 step 2108
+best 11 5 12294 collisions 0 restart 0 step 2145
+best 11 5 12280 collisions 0 restart 0 step 2159
+best 11 5 12268 collisions 0 restart 0 step 2501
+best 11 5 12260 collisions 0 restart 0 step 3840
+best 11 5 12256 collisions 0 restart 0 step 6631
+best 11 5 12244 collisions 0 restart 0 step 6637
+best 11 5 12240 collisions 0 restart 0 step 11397
+best 11 5 12230 collisions 0 restart 0 step 13069
+best 11 5 12210 collisions 0 restart 0 step 14072
+best 11 5 12196 collisions 0 restart 0 step 15877
+best 11 5 12192 collisions 0 restart 0 step 21329
+best 11 5 12168 collisions 0 restart 0 step 21972
+best 11 5 12144 collisions 0 restart 0 step 25806
+finished proposals 51688 accepted 9153 min 12144 collisions 0
+1 0 0 1 0 1 1 0 0 1 0
+1 1 0 1 0 1 0 0 0 1 0
+1 0 1 0 1 0 0 1 0 1 0
+0 1 1 0 0 1 1 0 1 0 0
+0 1 1 1 0 0 1 0 0 0 1
+0 1 0 0 0 1 0 1 1 0 1
+1 1 0 0 1 0 0 0 0 1 1
+0 0 0 0 1 1 1 1 0 0 1
+1 0 1 0 0 0 0 1 1 1 0
+0 0 0 1 1 0 1 1 1 0 0
+0 0 1 1 1 0 0 0 1 0 1

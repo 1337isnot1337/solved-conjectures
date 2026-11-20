@@ -1,0 +1,20 @@
+best m 8 score -0.258065 delta -16 per 62 restart 0 step 10
+best m 8 score -0.253968 delta -16 per 63 restart 0 step 15
+best m 8 score -0.216667 delta -13 per 60 restart 0 step 37
+best m 8 score -0.2 delta -12 per 60 restart 0 step 43
+best m 8 score -0.178571 delta -10 per 56 restart 0 step 57
+best m 8 score -0.175439 delta -10 per 57 restart 0 step 520
+best m 8 score -0.163636 delta -9 per 55 restart 0 step 795
+best m 8 score -0.16129 delta -10 per 62 restart 0 step 959
+best m 8 score -0.142857 delta -8 per 56 restart 0 step 1132
+finished best score -0.142857 delta -8 per 56
+9
+0 0 0 1 0 1 0 0 1
+0 1 1 0 0 1 0 0 0
+0 0 0 1 1 0 0 1 0
+0 1 0 0 0 0 1 1 0
+0 0 1 0 0 1 1 0 0
+1 0 1 0 1 0 0 0 0
+0 0 0 1 1 0 0 1 0
+1 1 0 0 0 0 1 0 0
+1 0 0 0 0 0 0 0 2

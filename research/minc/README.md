@@ -6,7 +6,7 @@ Research started 20 November 2026. Coordination: [issue #139](https://github.com
 
 Only full open entries on [Yair Lavi’s Minc list](https://yair-lavi.com/mincs-list/) are eligible. The source marks 24 entries open at the start of this investigation. A finite-order extension, a conditional implication, a bound, an algorithm that merely enumerates the definition, or a renamed subproblem is not a completed entry. No Lean verification is in scope.
 
-**Completed new entries: 0.** This is a research record, not a list of claimed solutions.
+**Completed unqualified entries: 0.** One complete candidate theorem now gives a general FPRAS for the approximation formulation of Problem 18. Its exact scope, proof and priority audit are recorded below. No exact polynomial-time Perron computation is claimed.
 
 ## Assignments
 
@@ -50,3 +50,11 @@ The ten entries already marked resolved by the source are excluded: conjectures 
 - H. Minc, *Theory of permanents 1982–1985*, Linear and Multilinear Algebra 21 (1987), 109–148, https://doi.org/10.1080/03081088708817786.
 - G.-S. Cheon and I. M. Wanless, *An update on Minc’s survey of open problems involving permanents*, Linear Algebra and its Applications 403 (2005), 314–342, https://doi.org/10.1016/j.laa.2005.02.030.
 - Yair Lavi, [Minc’s list](https://yair-lavi.com/mincs-list/), accessed 20 November 2026. The source’s individual pages supply exact statements and partial results; fresh literature checks are still required.
+
+## Checked research checkpoints
+
+- [Perron root of permanental compounds](compound_fpras.md): complete candidate proof of an FPRAS for every nonnegative rational input and every compound degree, with deterministic zero detection. Independent reviews are in [sign-matrices/p18_independent_review.md](sign-matrices/p18_independent_review.md) and [inequalities/perron_review.md](inequalities/perron_review.md); the [prior-art audit](combinatorial/p18_prior_art.md) found no full-domain result. This settles the approximation formulation if the proof and novelty assessment withstand external review; it is not an exact computation theorem.
+- [Gyires's ratio inequality](inequalities/gyires_spectral.md): a proved sufficient condition on a spectral-norm neighborhood, using cited prior results. The unrestricted conjecture remains open here.
+- [Integrality of the minimum permanent](combinatorial/switch_descent_obstruction.md): an exact infinite-family obstruction to a proposed four-cycle descent strategy, with a six-cycle improvement. This disproves the proposed strategy lemma, not Conjecture 24.
+- [Earlier open-path reduction](perron-compound.md): historical derivation and the convergence obstacle bypassed by the trace argument.
+

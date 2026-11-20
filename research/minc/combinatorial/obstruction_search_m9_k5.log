@@ -1,0 +1,44 @@
+best m 9 k 5 score -0.0660317 delta -416 per 6300 restart 0 step 4
+best m 9 k 5 score -0.064433 delta -400 per 6208 restart 0 step 6
+best m 9 k 5 score -0.0559896 delta -344 per 6144 restart 0 step 88
+best m 9 k 5 score -0.0544861 delta -334 per 6130 restart 0 step 90
+best m 9 k 5 score -0.0519395 delta -316 per 6084 restart 0 step 122
+best m 9 k 5 score -0.0507079 delta -308 per 6074 restart 0 step 160
+best m 9 k 5 score -0.0506246 delta -308 per 6084 restart 0 step 194
+best m 9 k 5 score -0.0468545 delta -286 per 6104 restart 0 step 539
+best m 9 k 5 score -0.0462295 delta -282 per 6100 restart 0 step 695
+best m 9 k 5 score -0.0449901 delta -273 per 6068 restart 0 step 2838
+best m 9 k 5 score -0.0436436 delta -264 per 6049 restart 0 step 2855
+best m 9 k 5 score -0.0422629 delta -254 per 6010 restart 0 step 2859
+best m 9 k 5 score -0.0420685 delta -253 per 6014 restart 0 step 2860
+best m 9 k 5 score -0.0417492 delta -253 per 6060 restart 0 step 2867
+best m 9 k 5 score -0.0416528 delta -250 per 6002 restart 0 step 3446
+best m 9 k 5 score -0.0415697 delta -250 per 6014 restart 0 step 6711
+best m 9 k 5 score -0.0377358 delta -228 per 6042 restart 0 step 6755
+best m 9 k 5 score -0.0346078 delta -210 per 6068 restart 0 step 9539
+best m 9 k 5 score -0.0343907 delta -206 per 5990 restart 0 step 9564
+best m 9 k 5 score -0.0339967 delta -205 per 6030 restart 0 step 9569
+best m 9 k 5 score -0.0339067 delta -205 per 6046 restart 0 step 19394
+best m 9 k 5 score -0.0329046 delta -197 per 5987 restart 0 step 29908
+best m 9 k 5 score -0.0326797 delta -200 per 6120 restart 0 step 32484
+best m 9 k 5 score -0.0326503 delta -196 per 6003 restart 0 step 33068
+best m 9 k 5 score -0.0324503 delta -196 per 6040 restart 0 step 33975
+best m 9 k 5 score -0.0322311 delta -193 per 5988 restart 0 step 38953
+best m 9 k 5 score -0.031996 delta -193 per 6032 restart 0 step 39807
+best m 9 k 5 score -0.031746 delta -192 per 6048 restart 0 step 45376
+best m 9 k 5 score -0.0303922 delta -186 per 6120 restart 0 step 45865
+best m 9 k 5 score -0.0302932 delta -186 per 6140 restart 0 step 46662
+best m 9 k 5 score -0.0291107 delta -182 per 6252 restart 0 step 47217
+best m 9 k 5 score -0.0291022 delta -188 per 6460 restart 1 step 78817
+finished best score -0.0291022 delta -188 per 6460
+10
+0 0 0 1 0 0 1 1 1 1
+0 0 0 1 0 1 0 1 1 1
+0 0 0 0 1 0 1 1 1 1
+0 1 1 1 1 1 0 0 0 0
+1 1 0 0 1 1 1 0 0 0
+1 0 0 1 0 0 1 1 1 0
+1 1 1 0 1 1 0 0 0 0
+1 1 1 0 1 1 0 0 0 0
+0 0 1 1 0 0 1 1 1 0
+1 1 1 0 0 0 0 0 0 2

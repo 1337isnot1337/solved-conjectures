@@ -1,0 +1,48 @@
+best m 16 score -0.431208 delta -1028 per 2384 restart 0 step 10
+best m 16 score -0.426004 delta -806 per 1892 restart 0 step 19
+best m 16 score -0.38292 delta -556 per 1452 restart 0 step 57
+best m 16 score -0.356757 delta -396 per 1110 restart 0 step 139
+best m 16 score -0.354338 delta -388 per 1095 restart 0 step 182
+best m 16 score -0.279096 delta -247 per 885 restart 0 step 203
+best m 16 score -0.251282 delta -196 per 780 restart 0 step 297
+best m 16 score -0.242782 delta -185 per 762 restart 0 step 405
+best m 16 score -0.234332 delta -172 per 734 restart 0 step 471
+best m 16 score -0.226667 delta -170 per 750 restart 0 step 557
+best m 16 score -0.223611 delta -161 per 720 restart 0 step 601
+best m 16 score -0.222973 delta -165 per 740 restart 0 step 659
+best m 16 score -0.22027 delta -163 per 740 restart 0 step 664
+best m 16 score -0.217808 delta -159 per 730 restart 0 step 747
+best m 16 score -0.208219 delta -152 per 730 restart 0 step 748
+best m 16 score -0.20788 delta -153 per 736 restart 0 step 809
+best m 16 score -0.205195 delta -158 per 770 restart 0 step 3339
+best m 16 score -0.198087 delta -145 per 732 restart 0 step 3497
+best m 16 score -0.18608 delta -131 per 704 restart 0 step 3504
+best m 16 score -0.185286 delta -136 per 734 restart 0 step 4328
+best m 16 score -0.167364 delta -120 per 717 restart 0 step 4353
+best m 16 score -0.164179 delta -121 per 737 restart 0 step 5599
+best m 16 score -0.161028 delta -119 per 739 restart 0 step 5693
+best m 16 score -0.159675 delta -118 per 739 restart 0 step 6906
+best m 16 score -0.158184 delta -115 per 727 restart 0 step 7094
+best m 16 score -0.152778 delta -110 per 720 restart 0 step 7262
+best m 16 score -0.151351 delta -112 per 740 restart 0 step 7945
+best m 16 score -0.149596 delta -111 per 742 restart 0 step 8837
+best m 16 score -0.143432 delta -107 per 746 restart 0 step 9214
+finished best score -0.143432 delta -107 per 746
+17
+0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1
+1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0
+0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0
+0 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0
+0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0
+0 0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0
+0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0
+1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 1 1 0 0 0 0 1 0 0 0
+0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0
+0 0 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0
+0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 0
+0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0
+0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2

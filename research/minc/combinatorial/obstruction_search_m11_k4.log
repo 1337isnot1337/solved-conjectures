@@ -1,0 +1,56 @@
+best m 11 k 4 score -0.115528 delta -372 per 3220 restart 0 step 24
+best m 11 k 4 score -0.0946822 delta -292 per 3084 restart 0 step 43
+best m 11 k 4 score -0.0946619 delta -266 per 2810 restart 0 step 221
+best m 11 k 4 score -0.0842105 delta -224 per 2660 restart 0 step 222
+best m 11 k 4 score -0.0823171 delta -216 per 2624 restart 0 step 291
+best m 11 k 4 score -0.0811437 delta -210 per 2588 restart 0 step 462
+best m 11 k 4 score -0.0805833 delta -210 per 2606 restart 0 step 482
+best m 11 k 4 score -0.0800593 delta -216 per 2698 restart 0 step 586
+best m 11 k 4 score -0.08 delta -208 per 2600 restart 0 step 1192
+best m 11 k 4 score -0.0781129 delta -202 per 2586 restart 0 step 2874
+best m 11 k 4 score -0.0751105 delta -204 per 2716 restart 0 step 3304
+best m 11 k 4 score -0.0727412 delta -190 per 2612 restart 0 step 5001
+best m 11 k 4 score -0.06894 delta -186 per 2698 restart 0 step 11119
+best m 11 k 4 score -0.0687593 delta -184 per 2676 restart 0 step 21838
+best m 11 k 4 score -0.0670732 delta -176 per 2624 restart 0 step 24783
+best m 11 k 4 score -0.0650888 delta -176 per 2704 restart 0 step 27687
+best m 11 k 4 score -0.0645161 delta -176 per 2728 restart 0 step 28566
+best m 11 k 4 score -0.0626822 delta -172 per 2744 restart 0 step 30084
+best m 11 k 4 score -0.0619469 delta -168 per 2712 restart 0 step 30227
+best m 11 k 4 score -0.0610465 delta -168 per 2752 restart 0 step 30923
+best m 11 k 4 score -0.0605187 delta -168 per 2776 restart 0 step 31056
+best m 11 k 4 score -0.0603448 delta -168 per 2784 restart 0 step 31819
+best m 11 k 4 score -0.0584046 delta -164 per 2808 restart 0 step 32551
+best m 11 k 4 score -0.0579096 delta -164 per 2832 restart 0 step 32844
+best m 11 k 4 score -0.0571031 delta -164 per 2872 restart 0 step 33150
+best m 11 k 4 score -0.0566572 delta -160 per 2824 restart 0 step 33985
+best m 11 k 4 score -0.0566434 delta -162 per 2860 restart 0 step 36346
+best m 11 k 4 score -0.0564972 delta -160 per 2832 restart 0 step 36462
+best m 11 k 4 score -0.0561798 delta -160 per 2848 restart 0 step 37381
+best m 11 k 4 score -0.0531469 delta -152 per 2860 restart 0 step 38089
+best m 11 k 4 score -0.0529248 delta -152 per 2872 restart 0 step 43872
+best m 11 k 4 score -0.0517956 delta -150 per 2896 restart 0 step 44805
+best m 11 k 4 score -0.0501393 delta -144 per 2872 restart 0 step 58977
+best m 11 k 4 score -0.0486842 delta -148 per 3040 restart 1 step 45785
+best m 11 k 4 score -0.0485934 delta -152 per 3128 restart 1 step 48179
+best m 11 k 4 score -0.0474934 delta -144 per 3032 restart 1 step 48600
+best m 11 k 4 score -0.0445946 delta -132 per 2960 restart 2 step 48060
+best m 11 k 4 score -0.0384615 delta -120 per 3120 restart 2 step 53172
+best m 11 k 4 score -0.0378788 delta -120 per 3168 restart 2 step 53413
+best m 11 k 4 score -0.03125 delta -96 per 3072 restart 2 step 53752
+best m 11 k 4 score -0.0241935 delta -72 per 2976 restart 2 step 53995
+best m 11 k 4 score -0.0238095 delta -72 per 3024 restart 2 step 54225
+finished best score -0.0238095 delta -72 per 3024
+12
+0 0 0 0 1 1 1 0 0 0 0 1
+0 0 0 0 1 1 1 0 0 0 0 1
+0 0 0 0 1 1 1 0 1 0 0 0
+0 1 1 0 0 0 0 0 0 1 1 0
+0 0 0 0 0 0 0 1 1 1 1 0
+0 0 0 1 0 0 0 1 1 0 1 0
+1 0 1 1 0 0 0 0 0 1 0 0
+1 1 1 0 0 0 0 0 0 0 1 0
+1 1 0 1 0 0 0 0 0 1 0 0
+0 0 0 0 1 1 1 1 0 0 0 0
+0 0 1 1 0 0 0 1 1 0 0 0
+1 1 0 0 0 0 0 0 0 0 0 2

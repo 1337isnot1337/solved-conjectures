@@ -56,4 +56,5 @@ int main(int argc,char**argv){
   }
  }
  std::cout<<"finished proposals "<<proposals<<" accepted "<<accepted<<" min "<<best<<" collisions "<<collisions(bestA)<<'\n';print(bestA,n);
+ return 0;
 }

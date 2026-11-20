@@ -45,16 +45,24 @@ The stored log files include the final matrices. These are research diagnostics,
 
 For a nonnegative integer matrix A define the collision count
 
-```math
+\[
  C(A)=\sum_{ij}\binom{a_{ij}}2.
-```
+\]
 
 For a legal switch subtracting one at (i,j),(r,s) and adding one at (i,s),(r,j), the collision-count change is exactly
 
-```math
+\[
  \Delta C=2-a_{ij}-a_{rs}+a_{is}+a_{rj}.
-```
+\]
 
-If every nonbinary regular A of degree at most n had a switch with both `Delta C < 0` and nonincreasing permanent, iteration would prove Conjecture 24. This is a stronger auxiliary conjecture and is not proved. `check_switch_descent.cpp` tests it on random sums of permutation matrices. No obstruction appeared in 96,140 nonbinary samples at (5,3), 99,877 at (8,4), or 100,000 at (10,6). This limited evidence is weak because random sums usually have many repeated edges; matrices close to binary and rare-edge constructions are more informative.
+If every nonbinary regular A of degree at most n had a switch with both `Delta C < 0` and nonincreasing permanent, iteration would prove Conjecture 24. This stronger auxiliary assertion is false. The complete proof and an explicit infinite family are in `switch_descent_obstruction.md`.
+
+Before the obstruction was found, `check_switch_descent.cpp` tested random sums of permutation matrices. No obstruction appeared in 96,140 nonbinary samples at (5,3), 99,877 at (8,4), or 100,000 at (10,6). The explicit family shows why that evidence was insufficient: random sums usually have many repeated edges, whereas the obstruction has exactly one double entry.
 
 The permanent along a four-cycle switch is quadratic with nonnegative leading coefficient, namely twice the permanent after deleting the two switched rows and columns. Thus simple concavity/pipage-rounding arguments run in the wrong direction and do not prove the descent assertion.
+
+For every k >= 5 the obstruction is a 2k-by-2k, k-regular integer matrix with exactly one double entry, and every collision-reducing four-cycle switch strictly increases its permanent. A specified six-edge alternating-cycle switch produces a binary matrix with a strictly smaller permanent. This refutes only the proposed four-cycle proof mechanism; it does not refute Conjecture 24.
+
+## Problem 18 literature audit
+
+The agent was redirected to the independent prior-art audit of the team's candidate full-domain Perron-root approximation theorem. See `p18_prior_art.md` for the exact scope, primary sources, alternate zeon terminology, current-paper searches, and limitations of the audit. No existing full-domain FPRAS was found. The one-step trace identity is classical and explicitly credited.

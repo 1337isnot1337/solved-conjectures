@@ -1,0 +1,41 @@
+best 13 4 5516 collisions 0 restart 0 step 21
+best 13 4 5504 collisions 0 restart 0 step 128
+best 13 4 5208 collisions 0 restart 0 step 156
+best 13 4 4800 collisions 0 restart 0 step 289
+best 13 4 4568 collisions 0 restart 0 step 326
+best 13 4 4492 collisions 0 restart 0 step 341
+best 13 4 4448 collisions 0 restart 0 step 354
+best 13 4 4444 collisions 0 restart 0 step 416
+best 13 4 4352 collisions 0 restart 0 step 473
+best 13 4 4328 collisions 0 restart 0 step 525
+best 13 4 4208 collisions 0 restart 0 step 555
+best 13 4 4188 collisions 0 restart 0 step 708
+best 13 4 4140 collisions 0 restart 0 step 757
+best 13 4 4112 collisions 0 restart 0 step 894
+best 13 4 4104 collisions 0 restart 0 step 1841
+best 13 4 4084 collisions 0 restart 0 step 3102
+best 13 4 4060 collisions 0 restart 0 step 3216
+best 13 4 4012 collisions 0 restart 0 step 3768
+best 13 4 4004 collisions 0 restart 0 step 7457
+best 13 4 4000 collisions 0 restart 0 step 7599
+best 13 4 3972 collisions 0 restart 0 step 7872
+best 13 4 3968 collisions 0 restart 0 step 8047
+best 13 4 3936 collisions 0 restart 0 step 8947
+best 13 4 3932 collisions 0 restart 0 step 9759
+best 13 4 3924 collisions 0 restart 0 step 9765
+best 13 4 3920 collisions 0 restart 0 step 11235
+best 13 4 3884 collisions 0 restart 0 step 11613
+finished proposals 10066 accepted 2023 min 3884 collisions 0
+0 0 0 1 0 1 1 0 0 0 0 0 1
+1 0 0 0 1 0 1 1 0 0 0 0 0
+0 0 0 0 0 0 1 1 0 1 0 1 0
+0 0 0 0 1 0 0 0 0 1 1 0 1
+0 0 1 0 0 0 1 0 1 0 1 0 0
+0 1 0 0 1 1 0 0 1 0 0 0 0
+0 0 0 1 0 1 0 1 0 0 1 0 0
+1 0 0 0 0 0 0 0 1 0 0 1 1
+0 1 1 0 0 0 0 1 0 0 0 0 1
+0 0 1 1 1 0 0 0 0 0 0 1 0
+0 1 0 1 0 0 0 0 1 1 0 0 0
+1 0 1 0 0 1 0 0 0 1 0 0 0
+1 1 0 0 0 0 0 0 0 0 1 1 0
