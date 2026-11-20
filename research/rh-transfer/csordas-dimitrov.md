@@ -164,11 +164,13 @@ The source audit is bounded. The conditional implication is expressly credited a
 
 ## Review status
 
-Two independent written reviews passed:
+Three independent written reviews passed:
 
 - [Analytic review](https://github.com/1337isnot1337/solved-conjectures/issues/133#issuecomment-7050203408) checked the full original Problem 3.5, the exact normalization, genus-zero product, all derivatives, and every real argument.
 - [Root review](https://github.com/1337isnot1337/solved-conjectures/issues/133#issuecomment-7050221251) independently checked the same original equations and the complete proof, including multiplicities and roots.
 
-Neither review requested a mathematical repair. Both retain the accepted-RH dependency, the classical credit, and the bounded scope of the prior-art audit. This is internal mathematical review, not formal verification or external peer review.
+- [Arithmetic review](https://github.com/1337isnot1337/solved-conjectures/issues/133#issuecomment-7050248919) independently checked the original normalization, the complete all-order statement, the genus-zero product, Rolle's theorem, and derivative limits.
+
+No review requested a mathematical repair. All three retain the accepted-RH dependency, the classical credit, and the bounded scope of the prior-art audit. This is internal mathematical review, not formal verification or external peer review.
 
 No Lean verification was performed.
