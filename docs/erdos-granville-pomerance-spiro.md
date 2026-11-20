@@ -464,3 +464,7 @@ Summing over $\ell\ge X^\beta$ gives the claimed bound.
 A second-moment argument on a larger family would still need
 to handle $\Delta\ne0$ uniformly in the two tails and the
 ranges of the prime variables.
+
+For a second-moment argument that also reaches some inputs
+with largest prime below the square root, see the
+[proof for two primes near the square root](erdos-granville-pomerance-spiro-near-square-root.md).
