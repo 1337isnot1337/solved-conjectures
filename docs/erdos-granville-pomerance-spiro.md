@@ -202,7 +202,7 @@ Thus $q\ne q'$ and $q\equiv q'\pmod h$. Choose the
 order $q>q'$. The reciprocal sum of such $q$ is at most
 $O(\log X/h)$, even without primality. Using
 $D/\varphi(D)\ll\log\log X$, the bound
-$\tau(s(m'))=X^{o(1)}$, $\sum_{q'\ge X^\alpha}1/q'=O(1)$
+$\tau(s(m'))=X^{o(1)}$, $\sum_{X^\alpha\le q'\le X}1/q'=O(1)$
 over primes, and $\sum_{\ell\ge X^\beta}1/\ell^2\ll X^{-\beta}$,
 the $\Delta=0$ contribution is $X^{1-\beta+o(1)}$ per stratum.
 This is negligible in total since $d\le\log X$.
@@ -392,3 +392,75 @@ Partial summation using $C(T)\sim T\log 2$ multiplies
 the unrestricted reciprocal sum by $\log 2$. The latter
 sum tends to $\log 2$ by the same integral. This yields
 the stated density.
+
+## Collisions with a zero cofactor determinant
+
+Write each input as $n=pq\ell$, with two distinct primes $p,q$
+coprime to $\ell$. Put $a=s(\ell)$ and $b=\sigma(\ell)$, and
+use primes on the coefficients for the other input
+$n'=p'q'\ell'$. The shifted-product identity from
+[Pollack, Pomerance, and Thompson, §3](https://arxiv.org/abs/1706.03120)
+is
+
+```math
+ a s(n)+\ell b=(a p+b)(a q+b).
+```
+
+In particular, a collision implies
+
+```math
+ a'(a p+b)(a q+b)-a(a'p'+b')(a'q'+b')
+  = \Delta,\qquad \Delta=a'\ell b-a\ell'b'.
+```
+
+**Proposition.** Fix $\beta>0$ and $0<c_0<C_0$. Consider
+inputs $n=pq\ell\le X$ with $\ell\ge X^\beta$,
+$c_0\ell\le s(\ell)\le C_0\ell$, and the small-prime
+conditions above for $n,\ell$, including $d\le\log X$.
+The number of ordered pairs of distinct such inputs having
+$s(n)=s(n')$ and $\Delta=0$ is $O(X^{1-\beta+o(1)})$.
+There is no dominance condition on either of the two primes.
+
+In a collision the two small-prime parts $d=(s(n))_Y$
+are equal. For $\Delta=0$, the denominator argument above
+gives $\ell=\ell'$. For this common $\ell$, set
+$A=s(\ell)/d$ and $B=\sigma(\ell)/d$. These are relatively
+prime, and $B/A$ is bounded in terms of $c_0$. The two shifted
+products are equal. Writing the gcd of $Ap+B$ and $Ap'+B$
+as $x$ yields a factorization
+
+```math
+ Ap+B=cx,\quad Ap'+B=ex,\quad
+ Aq+B=ey,\quad Aq'+B=cy,\qquad \gcd(c,e)=1 .
+```
+
+All four integers $c,e,x,y$ are units modulo $A$. Comparing
+the shifted factors gives $c\equiv e\pmod A$,
+$x\equiv y\pmod A$, and $ey\equiv B\pmod A$.
+If $c=e$ or $x=y$, the two unordered prime pairs coincide.
+For distinct inputs, by interchanging the two inputs and
+the prime labels we may count only $c>e$ and $x>y$ at a
+constant factor in the bound.
+
+Split the four integers into intervals of the form $[H,2H)$
+with $H$ a power of two. Write $C,E,T,U$ for the four lower
+endpoints. In a nonempty box we have $C,T\gg A$, since the
+respective differences are positive multiples of $A$.
+Also $EU\gg A$, since $ey=Aq+B$. There are
+$O((EU/A+1)X^{o(1)})$ possibilities for $e,y$:
+count their possible products in the residue class $B$
+and use the divisor bound. Once $e,y$ are fixed, the other
+two residue classes allow $O(CT/A^2)$ choices of $c,x$.
+Finally, the bound $n\le X$ gives
+
+```math
+ CETU\le cexy=(Ap+B)(Aq+B)\ll A^2X/\ell.
+```
+
+The count per box is thus at most $X^{1+o(1)}/(A\ell)$.
+There are $O((\log X)^4)$ boxes, and $A\gg\ell/\log X$.
+Summing over $\ell\ge X^\beta$ gives the claimed bound.
+
+A second-moment argument on a larger family would still need
+to handle $\Delta\ne0$ uniformly in the two tails and the
+ranges of the prime variables.
