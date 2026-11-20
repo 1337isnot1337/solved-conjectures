@@ -1,0 +1,286 @@
+{
+  "seed": 52719,
+  "records": [
+    {
+      "restart": 0,
+      "log_ratio": 1.8474111129760898e-13,
+      "iterations": 11,
+      "success": true,
+      "eq_error": 1.1102230246251565e-16
+    },
+    {
+      "restart": 1,
+      "log_ratio": 1.9584334154385843e-13,
+      "iterations": 16,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 2,
+      "log_ratio": 6.028511023712782e-13,
+      "iterations": 17,
+      "success": true,
+      "eq_error": 1.1102230246251565e-16
+    },
+    {
+      "restart": 3,
+      "log_ratio": 4.2899017671506845e-13,
+      "iterations": 21,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 4,
+      "log_ratio": 3.9079850466804747e-14,
+      "iterations": 11,
+      "success": true,
+      "eq_error": 1.1102230246251565e-16
+    },
+    {
+      "restart": 5,
+      "log_ratio": 6.818989817245386e-13,
+      "iterations": 14,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 6,
+      "log_ratio": 1.942890293093835e-13,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 7,
+      "log_ratio": 1.0391687510490925e-13,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 8,
+      "log_ratio": 3.508304757815433e-14,
+      "iterations": 11,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 9,
+      "log_ratio": 4.218847493575506e-14,
+      "iterations": 17,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 10,
+      "log_ratio": 3.8902214782857917e-13,
+      "iterations": 19,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 11,
+      "log_ratio": 4.6407322429330464e-14,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 12,
+      "log_ratio": 6.084022174945672e-14,
+      "iterations": 12,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 13,
+      "log_ratio": 4.685141163918051e-14,
+      "iterations": 16,
+      "success": true,
+      "eq_error": 1.1102230246251565e-16
+    },
+    {
+      "restart": 14,
+      "log_ratio": 1.7985612998925918e-13,
+      "iterations": 18,
+      "success": true,
+      "eq_error": 0.0
+    },
+    {
+      "restart": 15,
+      "log_ratio": 4.654054919227573e-13,
+      "iterations": 23,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 16,
+      "log_ratio": 2.0849988402458266e-13,
+      "iterations": 11,
+      "success": true,
+      "eq_error": 3.3306690738754696e-16
+    },
+    {
+      "restart": 17,
+      "log_ratio": 5.977440764580057e-13,
+      "iterations": 14,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 18,
+      "log_ratio": 3.554934124849119e-13,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 19,
+      "log_ratio": 2.0361490271623298e-13,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 20,
+      "log_ratio": 1.822986206434341e-13,
+      "iterations": 11,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 21,
+      "log_ratio": 7.438494264988272e-14,
+      "iterations": 15,
+      "success": true,
+      "eq_error": 0.0
+    },
+    {
+      "restart": 22,
+      "log_ratio": 6.372680161348195e-14,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 23,
+      "log_ratio": 4.4830805734353774e-13,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 24,
+      "log_ratio": 1.1168843627728451e-13,
+      "iterations": 12,
+      "success": true,
+      "eq_error": 1.1102230246251565e-16
+    },
+    {
+      "restart": 25,
+      "log_ratio": 1.6764367671838458e-13,
+      "iterations": 13,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 26,
+      "log_ratio": 3.128608483393202e-13,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 27,
+      "log_ratio": 3.361755318564409e-13,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 1.1102230246251565e-16
+    },
+    {
+      "restart": 28,
+      "log_ratio": 1.5232259897855987e-13,
+      "iterations": 11,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 29,
+      "log_ratio": 4.26325641456051e-14,
+      "iterations": 17,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 30,
+      "log_ratio": 1.2345680033830978e-13,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 31,
+      "log_ratio": 6.767919558112664e-13,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 32,
+      "log_ratio": 5.275779813017352e-13,
+      "iterations": 11,
+      "success": true,
+      "eq_error": 1.1102230246251565e-16
+    },
+    {
+      "restart": 33,
+      "log_ratio": 1.8673951274193389e-13,
+      "iterations": 17,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 34,
+      "log_ratio": 4.5119463720756184e-13,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 35,
+      "log_ratio": 4.2166270475254555e-13,
+      "iterations": 23,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 36,
+      "log_ratio": 5.100364575126669e-13,
+      "iterations": 11,
+      "success": true,
+      "eq_error": 3.3306690738754696e-16
+    },
+    {
+      "restart": 37,
+      "log_ratio": 7.127631818093251e-14,
+      "iterations": 17,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 38,
+      "log_ratio": 9.880984919163405e-14,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 2.220446049250313e-16
+    },
+    {
+      "restart": 39,
+      "log_ratio": 2.5912605394747796e-13,
+      "iterations": 20,
+      "success": true,
+      "eq_error": 1.1102230246251565e-16
+    }
+  ],
+  "min_log_ratio": 3.508304757815433e-14
+}
