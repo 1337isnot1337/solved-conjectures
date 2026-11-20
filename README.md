@@ -51,6 +51,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
 | [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 
+[Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/) is retained as an elementary exposition of a previously resolved assertion. Simon's 2012 theorem already implies its full negation; it is excluded from new-resolution claims. The [prior implication](results/kvz-hankel-product/NOVELTY.md) supersedes the initial novelty audit.
+
 Entries are ranked approximately by relative mathematical significance, weighing generality, connection to established problems, and the scope of the result. This editorial order does not imply independent verification or priority.
 
 **Verification key**
