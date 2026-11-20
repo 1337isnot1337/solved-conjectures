@@ -1,6 +1,37 @@
 # Literature and scope record
 
-Checked on 20 November 2026. The conclusion is limited to the sources searched: no earlier proof or disproof of the arbitrary-exponent shifted-product conjecture was located. Search-engine absence cannot establish priority by itself.
+Corrected on 20 November 2026. An earlier exact disproof was found in the CoPEER public archive after the initial search missed it. This result is excluded from new-resolution claims. The original search record is retained below so that the failed priority check remains visible.
+
+## Earlier exact disproof found in the archive audit
+
+The [CoPEER record](https://github.com/qqliu/CoPEER/blob/105523fdaf018b62eaf2883347724dfe79935611/mathematics/discoveries/entries/number-theory/fake-gaussian-positivity-counterexample.md) states the same arbitrary-exponent common-shift Conjecture 4 and gives the following counterexample:
+
+```math
+n=21,\qquad m=22,\qquad a_6=a_{21}=1,\qquad a_{14}=a_{18}=a_{20}=2,
+```
+
+with all other exponents zero. Thus the denominator exponents, including multiplicities, are $\{6,14,14,18,18,20,20,21\}$, and the numerator exponents are $\{28,36,36,40,40,42,42,43\}$. In particular, $m\ge n$ and every hypothesis of Conjecture 4 holds. Symmetry and polynomiality for other shifts are not hypotheses of this conjecture.
+
+The nonzero cyclotomic valuations are
+
+```math
+e_4=3,\ e_6=1,\ e_8=2,\ e_{12}=2,\ e_{14}=e_{21}=e_{28}=1,
+\qquad e_{36}=e_{40}=e_{42}=2,\ e_{43}=1.
+```
+
+They are all nonnegative and all indices above 43 have valuation zero, so the quotient is an integer polynomial. Writing $p_j$ for coefficients of the reciprocal denominator gives $p_{43}=p_{15}=p_7=p_3=p_1=0$ and $p_0=1$. These vanishings follow from the support equation: all denominator exponents except 21 are even, and $43-21=22$ is not a nonnegative combination of $6,14,18,20$. The other four positive indices are odd and less than 21. Hence
+
+```math
+[q^{43}]F=p_{43}-p_{15}-2p_7-2p_3-2p_1-p_0=-1.
+```
+
+This is a complete mathematical disproof, independently checked during this audit. We did not run the archive's Lean files or rely on its model-audit verdict.
+
+The card reports an internal deposition date of **11 September 2026**. Its [GitHub commit](https://github.com/qqliu/CoPEER/commit/105523fdaf018b62eaf2883347724dfe79935611) is dated **24 October 2026, 23:43:15 UTC**, with message “Public repository for copeer”; the path history contains this root commit. The September date is an internal provenance date, while October 24 is the date recorded in the retrieved repository history. Both precede this repository's November 20 construction. The archive labels the deposit a draft and makes no global priority claim; neither qualification removes its explicit valid disproof from the prior-resolution audit.
+
+The initial global source-ID search timed out twice. Adding the distinctive word in the query `"2502.06032" "positivity"` found the record. Searches only through conventional web indexes, author pages, MathDB, PrincipiaMathOrg/math-solutions, and KnowledgeSense/math had missed it. The discovery demonstrates why absence from those sources was insufficient.
+
+The five-factor family in this repository remains mathematically valid, but its infinite dilation and different support do not make the already resolved named conjecture a new target. The separate symmetric Conjecture 3 remains outside both disproofs.
 
 ## Primary statements
 
@@ -87,4 +118,4 @@ The exact support and numerator searches did not locate a mathematical source fo
 
 The candidate was discovered by imposing cyclotomic polynomiality constraints and a gap at the first numerator exponent, rather than by optimizing a coefficient over random polynomials. The resulting five-factor identity was then verified by exact polynomial division in SymPy and independently by a standard-library integer verifier. A second agent independently checked the original conjecture's assumptions, the cyclotomic support, the degree, and the four negative coefficients. The complete proof in [proof.md](proof.md) does not rely on either implementation.
 
-This is a new unrefereed result in the repository, subject to correction if an earlier resolution or a mathematical error is identified. No assertion of journal acceptance or external expert review is made.
+The earlier exact CoPEER disproof was found during the expanded archive audit. The new-resolution claim is therefore withdrawn. The independently found five-factor example and its verifier are retained as exposition. No assertion of journal acceptance or external expert review is made.
