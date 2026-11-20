@@ -312,6 +312,143 @@ The source's *large_of* already contains the principal vanishing mechanism. The 
 
 The earlier Soulé–Gabber bound is qualitatively weaker in its dependence on the K-degree. The comparison is not a complete priority determination: the announcement and its accompanying archive already contain the arithmetic estimate. No original-priority claim is made for the displayed K-theory consequence.
 
+## First-order transfer for anticyclotomic characters
+
+This subsection proves an elementary replacement for the cohomological first step of a proposed twisted *OneChar* theorem. It does not prove the subsequent lifting or automorphy theorem. The construction uses standard induction and Shapiro's lemma; it is recorded to make the proposed extension precise, not claimed as a new standalone result.
+
+Let $K/\mathbb Q$ be imaginary quadratic. Write $\Gamma=G_{\mathbb Q}$, $H=G_K$, and choose complex conjugation $c\in\Gamma$. Then $\Gamma=H\rtimes\langle c\rangle$ and $c^2=1$. Let $\ell$ be odd, let $\mathcal O$ be the integers of a finite extension $E/\mathbb Q_\ell$, and let
+~~~math
+\psi:H\longrightarrow\mathcal O^\times,
+\qquad
+\psi(chc^{-1})=\psi(h)^{-1},
+~~~
+be a continuous finite-order character. Let $\varepsilon$ be the cyclotomic character restricted to $H$. Fix an integer $e\ge1$. Define
+~~~math
+d(h)=\operatorname{diag}
+ \bigl(\varepsilon(h)^e\psi(h),\,1,\,
+       \varepsilon(h)^{-e}\psi(h)\bigr).
+~~~
+
+### Polarization and complex conjugation
+
+Let $J$ be the matrix with ones on the anti-diagonal and zeros elsewhere. The map
+~~~math
+\tau(g)=J(g^{\mathsf t})^{-1}J
+~~~
+is an involutive automorphism of $\operatorname{GL}_3$. Form the semidirect product $\operatorname{GL}_3\rtimes_\tau\{1,-1\}$. Direct calculation gives
+~~~math
+\tau(d(h))
+ =\operatorname{diag}
+  \bigl(\varepsilon(h)^e\psi(h)^{-1},\,1,\,
+        \varepsilon(h)^{-e}\psi(h)^{-1}\bigr)
+ =d(chc^{-1}).
+~~~
+Therefore
+~~~math
+r_0(h)=(d(h),1),\qquad r_0(c)=(I_3,-1)
+~~~
+defines a continuous representation of $\Gamma$. In particular, $r_0(c)^2=(I_3,1)$. The calculation uses conjugation invariance of $\varepsilon|_H$; it does not assign a value $\psi(c)$, which is undefined. The fact that $\varepsilon(c)=-1$ causes no missing sign because the value of $r_0$ at $c$ was specified separately. The construction works for every integer $e$, including the positive even weights used earlier.
+
+This corrected diagonal is essential. The naive diagonal
+$\operatorname{diag}(\varepsilon^e\psi,1,\varepsilon^{-e}\psi^{-1})$
+is conjugate self-dual only when $\psi^2=1$. The distinct cyclotomic weights force that condition. Moreover, a common scalar twist cannot turn the corrected diagonal into the source's one-parameter torus $\operatorname{diag}(\Psi,1,\Psi^{-1})$: the geometric-progression relation between its three constituents would require $\psi^2=1$. Multiplying all constituents by a common character preserves that relation.
+
+### The induced adjoint submodule
+
+Let $A$ be a finite $\mathcal O$-module, with trivial square-zero multiplication when used as an ideal. In the adjoint representation on $3$-by-$3$ matrices with entries in $A$, consider
+~~~math
+V_-=A E_{21}\oplus A E_{32}.
+~~~
+Writing
+~~~math
+\alpha=\varepsilon^{-e}\psi^{-1},
+\qquad
+\alpha^c(h)=\alpha(chc^{-1})
+          =\varepsilon(h)^{-e}\psi(h),
+~~~
+the action of $h\in H$ on $V_-$ is
+~~~math
+h\cdot(x,y)=(\alpha(h)x,\alpha^c(h)y).
+~~~
+The differential of $\tau$ is $X\mapsto-JX^{\mathsf t}J$. Thus
+~~~math
+c\cdot(x,y)=(-y,-x).
+~~~
+Applying this operation twice gives $(x,y)$, as required. Changing the sign of the second basis vector identifies $V_-$ with
+$\operatorname{Ind}_H^\Gamma A(\alpha)$.
+
+Here is an explicit degree-one cohomology identification. Given a continuous cocycle $z:H\to A(\alpha)$, set
+~~~math
+Z(h)=\bigl(z(h),-z(chc^{-1})\bigr),\qquad
+Z(c)=0,\qquad Z(hc)=Z(h).
+~~~
+The cocycle identity on $H$ follows coordinate by coordinate. The relation
+$Z(chc^{-1})=c\cdot Z(h)$ proves that it extends to a cocycle on $\Gamma$.
+
+If $z(h)=\alpha(h)a-a$, then $Z$ is the coboundary of $(a,-a)$. Conversely, the first coordinate of a coboundary on restriction to $H$ is a coboundary for $A(\alpha)$, so the resulting map on cohomology is injective. It is also surjective: for any $\Gamma$-cocycle, its value at $c$ lies in the minus eigenspace of $c$ and can be removed by a coboundary because $2$ is invertible. The remaining relation at $chc^{-1}$ forces its second coordinate to be minus the conjugate of the first. Consequently,
+~~~math
+H^1(K,A(\alpha))
+ \simeq H^1(\mathbb Q,V_-).
+~~~
+
+The complement spanned by the remaining seven matrix units is also invariant under $H$ and $c$. Hence $V_-$ is an equivariant direct summand of the full adjoint module. The displayed group therefore injects into $H^1(\mathbb Q,\operatorname{ad}(r_0)\otimes A)$, with no loss from taking coboundaries in the larger module.
+
+### Local conditions
+
+For a rational place $v$, the Mackey decomposition followed by local Shapiro gives
+~~~math
+H^1(\mathbb Q_v,V_-)
+ \simeq\bigoplus_{w\mid v}H^1(K_w,A(\alpha)).
+~~~
+This is compatible with the global isomorphism and localization maps. Applying the same decomposition to inertia shows that a local class on the left is unramified exactly when every corresponding class on the right is unramified. At a place required to split, the zero local condition corresponds to zero at every $w\mid v$.
+
+This comparison includes split, inert, and ramified places. It does not assume that complex conjugation belongs to a finite decomposition group. At the real place, $K$ has only complex places, and the induced degree-one cohomology is zero.
+
+Thus, for any set of rational primes at which strict splitting is imposed, the isomorphism identifies the Selmer groups defined by those strict conditions and by unramified conditions elsewhere. For a published treatment of induced Selmer structures and local compatibility, see [Morgan–Smith (2024), *Field change for the Cassels–Tate pairing and applications to class groups*](https://doi.org/10.1007/s40993-024-00545-2), §4.1.
+
+### From finite coefficients to the torsion Selmer group
+
+There is a precise version for the divisible coefficients used in the archive. Suppose in addition that $\psi$ is unramified at every finite place, $\ell$ is unramified in $K$, and $\ell-1\nmid e$. Put
+~~~math
+M=(E/\mathcal O)(\alpha),\qquad
+A_r=(\mathcal O/\varpi^r)(\alpha),
+~~~
+where $\varpi$ is a uniformizer. Define $\operatorname{Sel}_K(M)$ using unramified conditions at all finite places and strict zero conditions at the places above $\ell$.
+
+At every $w\mid\ell$, the residual cyclotomic character on inertia has order $\ell-1$, while $\psi$ is unramified. There is therefore an inertia element on which $\alpha-1$ is a unit. It follows that $H^0(K,M)=0$ and $H^0(K_w,M)=0$. The coefficient exact sequence then gives
+~~~math
+H^1(K,A_r)\simeq H^1(K,M)[\varpi^r],
+~~~
+and the strict local conditions at $\ell$ agree under this identification.
+
+Away from $\ell$, inertia acts trivially on $M$, and $M$ is divisible. The same coefficient sequence makes
+$H^1(I_w,A_r)\to H^1(I_w,M)$ injective. Hence the unramified conditions also agree. We obtain
+~~~math
+\operatorname{Sel}_K(A_r)
+ \simeq \operatorname{Sel}_K(M)[\varpi^r].
+~~~
+This avoids silently replacing divisible-coefficient Selmer torsion by finite-coefficient cohomology with different local conditions.
+
+Combining this isomorphism with the adjoint embedding above realizes each finite torsion layer of the desired Selmer group as infinitesimal polarized deformations. Explicitly, over the square-zero algebra $\mathcal O\oplus A_r$, the formula
+~~~math
+r_Z(g)=(I_3+Z(g))\,r_0(g)
+~~~
+defines a representation because the cocycle identity is precisely its multiplicativity condition. Two cocycles differing by a coboundary give strictly conjugate infinitesimal representations.
+
+### What is still missing
+
+A nonzero infinitesimal deformation does not imply another characteristic-zero point. For example,
+~~~math
+R=\mathcal O[x]/(\varpi x,x^2)
+~~~
+has nonzero augmentation cotangent module $(x)/(x)^2\simeq\mathcal O/\varpi$ but $R\otimes_{\mathcal O}E=E$. There is no second generic point. This is why the source's global deformation, finiteness, and rigidity arguments cannot be replaced by the first-order calculation.
+
+The relevant source path is now explicit: *RhoKApply.lean* defines *Dat* and its canonical diagonal; *ShaInjGen.lean* embeds a single rational character by $t\mapsto t(E_{21}-E_{32})$; *VlenLe.lean* passes through *ShaInj* and *ModelLower*; *FOneCharU.lean* then uses global automorphy and point rigidity. The two-dimensional induced plane above replaces the first cohomological embedding, but the remaining theorems have not been proved for this new base point.
+
+There is also a substantive arithmetic hypothesis. The source's *GD* requires $\ell\nmid h_K$. In *UnitaryThreeGroups/PowEqOneOfUnr.lean*, *char_eq_one* uses it to force every everywhere-unramified character congruent to one modulo $\ell$ to be trivial: class field theory gives $\kappa^{h_K}=1$, and $h_K$ is an $\ell$-adic unit. If $\psi$ is a nontrivial unramified character of $\ell$-power order, then $\ell\mid h_K$ and that exact hypothesis fails. Such a character cannot be inserted into the old theorem by keeping its original hypotheses.
+
+Finally, even a fixed-field twisted Selmer bound would not yet prove Soulé's full conjecture. The available automorphic counts have constants depending on the field. The conjecture requires a bound uniform in all fields of a fixed degree with only $\log|D_F|$ on the logarithmic-torsion side. Polynomial costs in $|D_F|$ do not satisfy that requirement.
+
 ## Corollary for every K-degree over the integers
 
 **Corollary.** Assuming the archive's *Bound*, there are absolute constants $C',B$ such that
