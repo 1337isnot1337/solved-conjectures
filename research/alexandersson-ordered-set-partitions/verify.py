@@ -61,8 +61,8 @@ def check_newton(j, rows):
     for n, row in enumerate(rows):
         d = len(row)-1
         for k in range(1,d):
-            assert (row[k]**2 * (k+1)*(d-k+1)
-                    >= row[k-1]*row[k+1] * k*(d-k)), (j,n,k)
+            assert (row[k]**2 * k*(d-k)
+                    >= row[k-1]*row[k+1] * (k+1)*(d-k+1)), (j,n,k)
 
 
 def main():
