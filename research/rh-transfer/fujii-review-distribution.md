@@ -228,3 +228,79 @@ Queries used both available search indexes and included the exact original title
 A superficially related preprint, Huan Xiao's *From Littlewood and Fujii to Riemann*, [version 2, 21 January 2026](https://www.preprints.org/manuscript/202501.0292/v2), concerns Fujii's 1991 Goldbach-related result. It is not a disproof of the 1988 all-exponent statement. Its displayed transfer from sharp Littlewood oscillation to a fixed exponential generating function is not justified; such a transfer is not used here.
 
 Other searches led to the established prime-race literature and to different weighted inequalities. No retrieved source contained the distributional-limit obstruction above or an established disproof of the all-exponent conjecture. Some original and subscription texts were inaccessible. A blanket claim that no such argument exists in the literature would therefore exceed the search evidence.
+
+
+## 7. Later independent review: the boundary proof and the non-GRH case
+
+The following checks were completed after the preceding audit. They strengthen the argument and remove its dependence on the Littlewood oscillation input.
+
+### 7.1 Reflection and the direct positive value
+
+The proof in [fujii-boundary.md](fujii-boundary.md), including section 7 at commit as80f89e233e97d8a36f198ee2936afb68dc8c1aa8, was independently checked.
+
+Conjugate-zero reindexing gives
+
+~~~math
+R(t)+R(-t)
+=-2-\sum_\rho\frac{e^{i\gamma t}}{|\rho|^2}.
+~~~
+
+The sum converges absolutely and uniformly. On 0<t<log 3, the prime-power term psi_chi(e^t) is zero, and the exact odd-beta explicit formula gives
+
+~~~math
+R(t)=-\frac12\log(1/t)+O(1),\qquad
+R(-t)=\frac12\log(1/t)+O(1).
+~~~
+
+A nonnegative smooth test supported at negative t close to zero therefore has a positive pairing with R. Global distributional convergence and almost-periodic recurrence apply to that test, and transport the resulting positive value to arbitrarily large positive arguments. No interpretation of prime sums at negative logarithmic time is used.
+
+The stronger value at phase zero is
+
+~~~math
+F_\alpha(0)=
+\left(\frac12-\frac1e\right)\log\alpha+O(1).
+\tag{F}
+~~~
+
+Its proof required one extra check: the punctured formulas and reflection alone could leave an odd distribution supported at zero. That ambiguity is absent because
+
+~~~math
+Q(t)=-t-\sum_\rho\frac{e^{i\gamma t}}{i\gamma\rho}
+~~~
+
+is continuous, by absolute uniform convergence, and Q'=R in distributions. Integrate the punctured logarithmic representative across zero to obtain a continuous absolutely continuous primitive P. Then Q-P is constant on each half-line and continuity matches the constants, so R is exactly that locally integrable representative.
+
+The convolution orientation is
+
+~~~math
+F_\alpha(0)=\int_{\mathbb R}
+ R(v)\,\alpha e^{(\alpha+1/2)v-e^{\alpha v}}\,dv.
+~~~
+
+After w=alpha*v, the limiting kernel is q(w)=exp(w-exp(w)). It has mass 1-1/e on w<0 and 1/e on w>0. This gives the positive coefficient in (F).
+
+The remainder was checked uniformly: away from zero R(v)=O(1+v^2) under beta GRH; the kernel outside any fixed small interval has exponentially decreasing mass; log|w| is integrable against q; and replacing exp(w/(2alpha)) by 1 changes the signed mass by O(1/alpha). Consequently the error after the logarithmic main term is O(1), not an unbounded or alpha-dependent untracked error.
+
+This proof can replace the Littlewood step above. The earlier Littlewood-based argument remains a valid alternative.
+
+### 7.2 Landau complement
+
+The proof in [fujii-landau.md](fujii-landau.md), first recorded at commit 87a01d0e4abf12e735af97000aae62b1de9da6b3, was independently checked.
+
+If beta has a zero b+i gamma with b>1/2, the Mellin multiplier Gamma(s/alpha)/alpha never vanishes in Re s>0. The prime-power remainder relating the prime Dirichlet series to log beta is holomorphic on Re s>1/2. The omitted small-x Mellin integral is entire.
+
+Assuming eventual one-sided boundedness after subtraction of C*x^theta, theta<b, produces a nonnegative Mellin transform. If its abscissa lies at or left of max(1/2,theta), solving for the prime Dirichlet series and exponentiating gives a nonvanishing holomorphic expression equal to beta at the off-line zero, a contradiction. If the abscissa lies to the right, continuation along the positive real axis contradicts Landau's theorem, since beta has no positive real zeros. The case of abscissa minus infinity is explicitly included.
+
+Thus the non-GRH branch gives both unbounded signs for every fixed positive alpha. Combining it with the boundary proof makes the large-alpha oscillation theorem unconditional.
+
+The exact original biconditional family still needs the logical qualification in fujii-landau.md: if G denotes beta GRH and C_alpha the negative-limit assertion, then the proposed statement “for every alpha, C_alpha iff G” is equivalent to not-G under these results. Its failure follows from the campaign's accepted G input. The unconditional oscillation theorem alone does not decide G.
+
+## 8. Screening the next named prime-race targets
+
+The same recurrence idea was checked against two nearby named targets.
+
+**Knapowski–Turán's density conjecture** is excluded as a new target. Kaczorowski already proved, under Dirichlet GRH alone, positive lower density for both directions of the race between the class 1 and another reduced class. In particular, his 1992 theorem disproves the proposed density-one statement under exactly the type of GRH input available here. Source: [J. Kaczorowski, The boundary values of generalized Dirichlet series and a problem of Chebyshev, Astérisque 209 (1992), 227–235](https://smf.emath.fr/publications/boundary-values-generalized-dirichlet-series-and-problem-chebyshev). Reproducing that consequence would not satisfy the requirement of an untouched conjecture.
+
+**The Shanks–Rényi race problem** asks for every ordering of all reduced residue classes to occur infinitely often. The current argument does not establish it. Almost-periodic recurrence repeats an ordering already present; it cannot manufacture every ordering or replace an unproved independence hypothesis for the zeros. The full formulation and a GRH-based partial result are in [Kaczorowski, On the Shanks–Rényi race problem, Acta Arithmetica 74 (1996)](https://personal.math.ubc.ca/~gerg/teaching/592-Fall2018/papers/1996.Kaczorowski.pdf).
+
+The source screen did not produce another untouched full named conjecture that follows from this smoothing argument. The separate arithmetic investigation therefore returned to the explicit Hecke-character lifting obstruction, documented in artin-density.md and character-lifting.md. No additional solved-conjecture count was added.
