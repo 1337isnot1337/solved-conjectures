@@ -91,7 +91,7 @@ Let $\mathcal A=\ell^1(\mathbb N_0,\mathbb R)$ with convolution multiplication a
 
 **Lemma.** If $a(x)>0$ for every $x\in[0,1]$, there exists $b\in\mathcal A$ with $b_n\geq0$, $b_0>0$, and $a*b$ coefficientwise nonnegative.
 
-### 3.1. A cone with an interior point
+### 3.1. Closure and the Neumann estimate
 
 Let $\mathcal P$ be the coefficientwise nonnegative cone, and define
 
@@ -125,7 +125,50 @@ converges in $\ell^1$, has nonnegative coefficients, and has positive constant c
 
 we have $M1\pm u\in\mathcal S$. In particular, the open unit ball around $1$ is contained in $\mathcal S$.
 
-### 3.2. Separation and extreme states
+### 3.2. A constructive proof for polynomials
+
+Suppose first that $P$ is a real polynomial positive on $[0,1]$. Factor it over the reals, normalizing each factor to have constant coefficient one and leaving the positive factor $P(0)$ outside the product.
+
+A negative real root gives a factor $1+x/r$ with $r>0$, already coefficientwise positive. A positive real root must satisfy $r>1$. Its factor $1-x/r$ has the coefficientwise positive inverse $\sum_{j\geq0}(x/r)^j$ in $\ell^1$.
+
+A conjugate pair of roots $re^{\pm i\theta}$, with $r>0$ and $0\lt\theta\lt\pi$, gives a factor $1-2\cos\theta\,u+u^2$, where $u=x/r$. Put $N=\lceil\pi/\theta\rceil$ and
+
+```math
+Q(u)=\sum_{j=0}^{N-2}
+\frac{\sin((j+1)\theta)}{\sin\theta}\,u^j.
+```
+
+Every coefficient of $Q$ is positive. The sine recurrence gives the exact identity
+
+```math
+(1-2\cos\theta\,u+u^2)Q(u)
+=1-\frac{\sin(N\theta)}{\sin\theta}u^{N-1}
++\frac{\sin((N-1)\theta)}{\sin\theta}u^N.
+```
+
+Since $(N-1)\theta\lt\pi\leq N\theta\lt\pi+\theta\lt2\pi$, the two displayed nonconstant coefficients are nonnegative. Thus every real factor belongs to $\mathcal S$, and so does $P$ by multiplicative closure. This finite polynomial construction is classical; it is included to make the approximation step explicit.
+
+### 3.3. Approximation in the summable-coefficient norm
+
+Let $m=\min_{x\in[0,1]}a(x)>0$. Choose $0\lt\varepsilon\lt m/3$ and a polynomial $P$ with $\|a-P\|_1\lt\varepsilon$. Then $P-\varepsilon>0$ on $[0,1]$, so $P-\varepsilon\in\mathcal S$ by Section 3.2. Also
+
+```math
+\varepsilon+(a-P)\in\mathcal S
+```
+
+by the Neumann estimate (6), with $M=\varepsilon$ and $u=a-P$. Closure under addition now gives
+
+```math
+a=(P-\varepsilon)+(\varepsilon+a-P)\in\mathcal S.
+```
+
+This proves the lemma. Replacing its multiplier $b(x)$ by $b(x)/(1-x/2)$ makes every coefficient strictly positive while preserving absolute summability and nonnegativity of $ab$.
+
+### 3.4. An independent separation proof
+
+The following alternative proof records the original derivation. It is unnecessary for the constructive proof above.
+
+#### Separation and extreme states
 
 Suppose $a\notin\mathcal S$. Hahn–Banach separation of the open convex interior of $\mathcal S$ from $a$ gives a nonzero continuous real functional $L$ satisfying
 
@@ -145,7 +188,7 @@ Thus $\mathcal E$ is a weak-* closed subset of the dual unit ball and is weak-* 
 
 The face on which $L(a)$ attains its minimum is nonempty and compact. Choose an extreme point of that face by Krein–Milman. This point, still denoted $L$, is extreme in $\mathcal E$, and satisfies $L(a)\leq0$.
 
-### 3.3. Extreme states are evaluations
+#### Extreme states are evaluations
 
 Fix $s\in\mathcal S$, and choose $M>\|s\|_1$. Then $M1-s\in\mathcal S$. The functionals $u\mapsto L(su)$ and $u\mapsto L((M1-s)u)$ are positive on $\mathcal S$.
 
@@ -177,9 +220,7 @@ Every element of $\mathcal A$ is a difference of elements of $\mathcal S$, by (6
 
 Let $e=(0,1,0,\ldots)$ and set $x=L(e)$. Positivity gives $x\geq0$, and the norm bound gives $x\leq1$. Multiplicativity determines $L$ on polynomials as evaluation at $x$. Polynomial sequences are dense in $\ell^1$, so continuity gives $L(u)=u(x)$ for every $u\in\mathcal A$.
 
-Thus $L(a)=a(x)>0$, contradicting the separating state. This proves the lemma.
-
-Finally, replacing $b(x)$ by $b(x)/(1-x/2)$ makes every coefficient strictly positive while preserving absolute summability and nonnegativity of $ab$.
+Thus $L(a)=a(x)>0$, contradicting the separating state. This proves the same lemma by a second route.
 
 ## 4. Sufficiency: round the atoms in a direction that decreases h
 
@@ -520,8 +561,9 @@ This also proves that $\zeta$ in (20) cannot extend holomorphically through a ne
 
 ## 9. Remaining work and priority limit
 
-The mathematical arguments above require adversarial review, especially the source-to-density equivalence and the semiring separation step. The prior-theorem audit must inspect Diamond–Essén (1978), whose exact hypotheses remain inaccessible in the material retrieved so far.
+Separate internal mathematical reviews have found no gap in the convolution criterion, the Dirichlet conversion, or the boundary counterexample. The constructive replacement of the multiplier lemma is being checked separately. The prior-theorem audit must inspect Diamond–Essén (1978), whose exact hypotheses remain inaccessible in the material retrieved so far.
 
 Even if the proofs pass review, the named conjecture's interpretation must be reported honestly: the holomorphic statement is proved, the finite-right-derivative statement is disproved, and the source has not yet been checked to resolve this boundary convention. No finite diagnostic calculation is being used as a replacement for either general argument.
 
 Coordination and receipts: [issue 96](https://github.com/1337isnot1337/solved-conjectures/issues/96).
+
