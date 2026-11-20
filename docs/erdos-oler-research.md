@@ -83,10 +83,11 @@ chains partition the boundary edges, proving the lemma.
 
 ## All lattice packings and a condition on unrestricted counterexamples
 
-**Proposition.** The Erdős–Oler equality holds, for every
-$k$, when the centers are required to be in a translate of
-any lattice whose minimum nonzero vector length is at least one.
-The lattice orientation and shape are arbitrary.
+**Proposition.** The Erdős–Oler lower bound holds, for every
+$k$, for centers lying in a translate of any lattice whose minimum
+nonzero vector length is at least one. The lattice orientation and
+shape are arbitrary. Equality is attained in the class of such
+packings by the aligned triangular lattice.
 
 In fact, let $S$ be any noncollinear subset of such a lattice
 in an equilateral triangle of side $L$, let $H$ be its convex
