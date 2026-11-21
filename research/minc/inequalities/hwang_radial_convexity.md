@@ -53,7 +53,7 @@ In particular, at `s=1/3`,
 
 Every entry of `B_(1/3)` is at least `2/9`, and for `|h|<1/18` every entry of `B_(1/3)+hD` is greater than `1/6`. Thus this entire short segment lies in the interior of the region with entrywise lower bound `J_3/2`, while the permanent is strictly concave on it.
 
-This is not a counterexample to Hwang: `D` is not the radial direction `P^2-J_3`. It blocks a proof that tries to establish positive semidefiniteness of the full tangent Hessian throughout the half region. The fixed-degree global convexity estimate in [the quantitative Kopotun note](../kopotun/proof.md) also does not apply to the full permanent: its condition `n>=16k^2` excludes `k=n`.
+This is not a counterexample to Hwang: `D` is not the radial direction `P^2-J_3`. It blocks a proof that tries to establish positive semidefiniteness of the full tangent Hessian throughout the half region. The fixed-degree global convexity estimate in `kopotun_eventual_convexity.md` also does not apply to the full permanent: its condition `n>=16k^2` excludes `k=n`.
 
 ## Exact radial moment formulations
 
@@ -244,6 +244,7 @@ In particular, the degree-seven coefficient is negative. This exact example rule
 
 The all-direction Hessian shortcut is ruled out by (2). The known fixed-degree coefficient bounds give an interval that shrinks with the matrix order when applied to the full permanent, not the required half interval. The uniform-block construction provides a concrete transfer test (9)–(11), but its required curvature sign has not been determined in general. Hwang's conjecture and Lih–Wang Conjecture 34 remain unresolved by this work.
 
-## Independent check
 
-The root reviewer checked the Bernstein moment numerator, the exact block-matching multiplicity, the uniform convergence through two derivatives, and the total Poisson intensity in the occupancy formula. The transverse Hessian and negative Taylor coefficient were also independently expanded. The companion [exact checker](hwang_radial_certificates.py) verifies the general derivative identity and a nonsymmetric rational core's block identity, alongside the two auxiliary obstructions. It passed. It requires SymPy and performs no numerical search or conjecture verification at a selected order.
+## Subsequent first-derivative theorem
+
+The [matching-limit monotonicity proof](hwang_matching_monotonicity.md), with its [independent review](hwang_matching_monotonicity_review.md), now proves `F_A'(t)>0` for every doubly stochastic core on `0<t<=1/2`. Together with the `C^2` convergence above and `F_A''(0)=||A||_F^2>0`, it gives first-derivative positivity of the finite padding path for all sufficiently large tails. The second-derivative sign required by Hwang remains unproved. This subsequent theorem does not invalidate the negative-curvature transfer test or supply a counterexample core.

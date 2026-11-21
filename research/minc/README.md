@@ -188,3 +188,14 @@ The result does not extend by subtracting cumulative two-row upper bounds, by ap
 The [uniform-recurrence theorem](sign-matrices/p_recursive_obstruction.md) extends the Wang construction obstruction to P-recursive permanent and determinant sequences. It also proves that finitely many all-order families with P-recursive permanent sequences cannot, between them, attain Kräuter's proposed minimum in every sufficiently large order. The key uniform recurrence is independent of a scalar parameter; long order intervals force too many distinct eventual exponential values for a finite set of families.
 
 This excludes a class of construction methods. It does not disprove attainment in any order, establish the expected Wang classification, or settle either original conjecture. Binary-dependent constructions and genuinely unbounded families remain available. No full resolution is added.
+
+
+## Matching-limit monotonicity and checked lift restrictions
+
+The [matching-limit theorem](inequalities/hwang_matching_monotonicity.md) proves `F_A'(t)>0` for every finite doubly stochastic core and every `0<t<=1/2`. It combines the weighted alternating-path identity with an exact scalar averaging certificate. The [independent review](inequalities/hwang_matching_monotonicity_review.md) found no gap, and the [exact checker](inequalities/hwang_matching_monotonicity.py) passed. Uniform convergence with two derivatives also proves half-interval monotonicity of the actual permanent path for `A direct_sum J_M` for every sufficiently large `M`, with a threshold depending on the core. Neither convexity nor monotonicity on the full unit interval follows. A vertexwise strengthening is false, with an exact hub-family obstruction recorded in the note. Historical priority of this partial theorem is unasserted.
+
+The [paired-row sign-matrix formulas](sign-matrices/paired_row_lift.md) give exact even/odd determinant and coefficient identities for a possible binary construction. The canonical transitive choice always has zero permanent in even order, so it cannot propagate the needed equality. The required coefficient invariant is still missing.
+
+The [Pate partition-lift obstruction](inequalities/pate_partition_lift_obstruction.md) retains the complementary factors in a many-copy indicator lift. Exact rank-one examples disprove a direct averaged lower bound and a nonlinear repair; an all-singleton version of the latter would already imply full Chollet through identity padding. These are excluded proof methods, not conjecture counterexamples.
+
+This checkpoint adds no full named conjecture resolution. The ten-resolution target remains unmet.
