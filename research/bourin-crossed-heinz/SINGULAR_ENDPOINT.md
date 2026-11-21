@@ -1,6 +1,6 @@
 # Fixed-pair endpoint neighborhoods for semidefinite matrices
 
-Status: research lemma, independently checked by the algebra lane in `SINGULAR_REVIEW.md`. This extends the positive-definite endpoint argument in `ENDPOINT.md`; it does not give a uniform interval or resolve Bourin's conjecture. The global operator-norm bound used in the equality case is the prior Tian–Xu theorem cited there. No priority claim is made.
+Status: research lemma, with completed [algebra review](SINGULAR_REVIEW.md) and [root review](ROOT_ENDPOINT_REVIEW.md). This extends the positive-definite endpoint argument in `ENDPOINT.md`; it does not give a uniform interval or resolve Bourin's conjecture. The global operator-norm bound used in the equality case is the prior Tian–Xu theorem cited there. No priority claim is made.
 
 ## Statement
 
@@ -15,9 +15,9 @@ For each Ky Fan sum $`N_k`$, either $`N_k(C_t)=N_k(S)`$ for all interior paramet
 
 ```math
 N_k(C_t)<N_k(S)
-\quad\hbox{if}\quad
+\quad\text{if}\quad
 0<t<\varepsilon_k(A,B)
-\quad\hbox{or}\quad
+\quad\text{or}\quad
 0<1-t<\varepsilon_k(A,B).
 ```
 

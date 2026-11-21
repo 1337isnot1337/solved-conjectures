@@ -107,10 +107,50 @@ The standard block-matrix Cauchy–Schwarz inequality therefore gives, for every
 
 Thus $`R_t\prec_w S`$ would suffice for the full target. It is a stronger sufficient statement, not an established fact of this checkpoint. At $`t=1/2`$ one has $`R_t=S`$ for positive definite summands; the desired conclusion for semidefinite summands follows by regularization.
 
-This sandwiched expression is already the functional studied by Mostafa Hayajneh, Saja Hayajneh, and Fuad Kittaneh, *A Unitarily Invariant Norm Inequality for Positive Semidefinite Matrices and a Question of Bourin*, Results in Mathematics 78:158 (2023), [DOI10.1007/s00025-023-01929-z](https://doi.org/10.1007/s00025-023-01929-z). Their notation uses the complementary parameter. The publisher abstract and its first-page preview give exactly
+The block reduction and the auxiliary question originate in Mostafa Hayajneh, Saja Hayajneh, and Fuad Kittaneh, *Norm inequalities for positive semi-definite matrices and a question of Bourin II*, International Journal of Mathematics 32 (2021), 2150043, [DOI10.1142/S0129167X21500439](https://doi.org/10.1142/S0129167X21500439). This attribution is explicit in equations (2)–(3), Question 1.2, and reference [14] of Darweesh–Hayajneh–Hayajneh–Kittaneh, [DOI10.1080/03081087.2022.2091507](https://doi.org/10.1080/03081087.2022.2091507); those passages were read in the [primary paper's online copy](https://www.scribd.com/document/1073369425/darweesh2022). The auxiliary all-norm assertion was already posed there; this checkpoint does not introduce it.
+
+The later Hayajneh–Hayajneh–Kittaneh paper *A Unitarily Invariant Norm Inequality for Positive Semidefinite Matrices and a Question of Bourin*, Results in Mathematics 78:158 (2023), [DOI10.1007/s00025-023-01929-z](https://doi.org/10.1007/s00025-023-01929-z), obtains a quantitative bound for the same functional. Their notation uses the complementary parameter. The publisher abstract and its first-page preview give exactly
 
 ```math
 \|R_t\|_u\leq 2^{1-4t}\|S\|_u,\qquad 0\leq t\leq1/4.
 ```
 
 The same preview explicitly connects the constant-one endpoint to Bourin's inequality at $`t=1/4`$. Only the publisher abstract and first page of this nine-page paper were available in this check, so this note makes no assertion about its other intermediate statements. It records the prior route to prevent mistaking the block reduction or the sandwiched functional for a new conjecture resolution.
+
+## An unresolved midpoint derivative of the auxiliary expression
+
+For a positive definite pair let $`E=\log A-\log B`$. Differentiation of the sandwiched expression at its right endpoint gives
+
+```math
+R_{1/2}=S,\qquad
+R'_{1/2}=2\bigl(A^{1/2}EA^{1/2}-B^{1/2}EB^{1/2}\bigr).
+```
+
+Since the approach is from below, the appropriate directional derivative of a Ky Fan sum is
+
+```math
+N_k(R_{1/2-h})
+=N_k(S)-h\min_{P\in\mathcal P_k(S)}
+\mathop{\mathrm{tr}}\nolimits(PR'_{1/2})+o(h),\qquad h\downarrow0.
+```
+
+A negative trace for any maximizing projection would therefore refute the stronger auxiliary inequality near this endpoint. This is not the resolvent expression from `ENDPOINT.md`; no universal sign is proved here. Even a failure would concern the sufficient auxiliary statement, not directly Bourin's original conjecture.
+
+A restricted exact diagnostic used $`B=JAJ`$ with $`J=\mathop{\mathrm{diag}}(1,-1,-1)`$, where $`A`$ is an arrowhead matrix of spectrum $`\{1,4,16\}`$. Its leaf diagonal entries satisfy $`1<b<4<c<16`$ and its center is $`a=21-b-c`$. The squared off-diagonal entries are determined by the characteristic polynomial. In this family the square root and logarithm are exact polynomials:
+
+```math
+A^{1/2}=-\frac{A^2}{90}+\frac{7A}{18}+\frac{28I}{45},
+\qquad
+\frac{\log A}{\log4}=-\frac{A^2}{60}+\frac{5A}{12}-\frac{2I}{5}.
+```
+
+Substitution gives nonnegative diagonal derivative entries throughout this restricted family. To see the leaf signs explicitly, put $`G=R'_{1/2}/(2\log4)`$ and let $`x_r`$ be the coupling from the center to a leaf with diagonal $`r`$, the other leaf having diagonal $`q`$. For $`(r,q)=(b,c)`$ or $`(c,b)`$, the factor is
+
+```math
+G_{rr}=\frac{x_r^2(q+14)}{60750}
+\bigl(rq^2+18rq+56r+4q^2-28q+624\bigr)>0.
+```
+
+Here $`r,q>0`$ and $`4q^2-28q+624`$ has negative discriminant. The center entry is a covariance of the increasing scalar functions $`\log x`$ and $`\sqrt x`$. Thus this diagnostic supplies no separator. It is not a separately claimed result and gives no sign theorem for arbitrary pairs or dimensions.
+
+Two bounded floating-point probes were also used only to assess this route: 6,000 real two-dimensional pairs for the operator norm of $`R_t`$, and 400 pairs in each of dimensions two, three, and four for the displayed midpoint traces. They reported no violating candidate, and no rigorous inference about the universal inequalities is drawn. They are not validation of either endpoint proof. The unresolved general sign and the all-parameter Ky Fan control remain the mathematical obstacles.
