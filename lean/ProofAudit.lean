@@ -29,6 +29,8 @@ run_cmd do
     `ChenKhareSahi.partitions_complete,
     `ChenKhareSahi.covers_exact,
     `ChenKhareSahi.dominance_decomposes,
+    `ChenKhareSahi.HomSemiring.degree_six_reduces,
+    `ChenKhareSahi.HomSemiring.excludes_counterexample,
     `ChenKhareSahi.product_decomposition,
     `ChenKhareSahi.realCoeff_nonnegative,
     `ChenKhareSahi.ReducedCone.separator_nonnegative,
