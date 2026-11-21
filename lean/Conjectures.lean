@@ -1,3 +1,12 @@
+import Conjectures.OravcovaSotakBasic
+import Conjectures.OravcovaSotakBaseChange
+import Conjectures.OravcovaSotakBounds
+import Conjectures.OravcovaSotakLoops
+import Conjectures.OravcovaSotakNormalization
+import Conjectures.OravcovaSotakExceptions
+import Conjectures.OravcovaSotakCertificates
+import Conjectures.OravcovaSotakTwoParameter
+import Conjectures.OravcovaSotakClassification
 import Conjectures.VishnyakovaRootRadius
 import Conjectures.VishnyakovaPolarization
 import Conjectures.VishnyakovaBinomial

@@ -1,0 +1,511 @@
+{
+  "root": "Conjectures.OravcovaSotakClassification",
+  "scope": "Full Oravcova-Sotak Theorem A relative to the explicit R5, R6, R7, R8 hypotheses",
+  "status": "partial; R5-R8 are not proved by this closure",
+  "new_modules": [
+    {
+      "module": "Conjectures.OravcovaSotakBaseChange",
+      "source_sha256": "12dc36490f0aa105109c149b53261e1d9a49d924e0605fb4b23c4ffba6c06ffe",
+      "object_sha256": "93a2b8710920057c69fb59d058b7a990d690b7e8e9be0b08535269d5438ec23d"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakBasic",
+      "source_sha256": "b8432f4b5f3de8da30f06eaab0dc361b4faad73005a50269d95fae2ad9728a36",
+      "object_sha256": "7121b1bbae16e15464e996c8c6f3187074137eaea2920cbfa945933103aa0d34"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakBounds",
+      "source_sha256": "bd513cfc7babe0ddf0dea8e6bcf9e34a76bf44637cfa4ffbb077a3d48e350032",
+      "object_sha256": "f4c56629b2fdc166a2b0a1b6ebc2372c33e7f39c397ee9106f5f4aefb0468064"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakCertificates",
+      "source_sha256": "94587d751347e0785b60e4d0209f506d144b5fb50c01954e40a85d020c67cefc",
+      "object_sha256": "46e18420906eb82ba19b6278d709f41e1cbc1806942c0561d5489c90686fe057"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakClassification",
+      "source_sha256": "e058d3c0a0c9d4819247c14f6781e2cf8f153c49879c5e6319e794d02199b289",
+      "object_sha256": "3b343ba9f8ecfab054f394593b517b70feca7863041c3549e7cdabcd9ee1bd1a"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakExceptions",
+      "source_sha256": "e861c17c3cbef72ba43fa4124dc7f2c6326b42ec8e3cac24db8da7935b7e9b9b",
+      "object_sha256": "850f220e7ef80003d1a00760e256fea9523cf851fe0e305fec40274c4b4130d3"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakLoops",
+      "source_sha256": "7602ca8442fc46469c647487c653a55d9b8b8b1be7eae6f4c6ac56214f7b5cff",
+      "object_sha256": "d127f5d219f5c9150ba3cf75c1d217286471a3fb26e26f591327807311058cbc"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakNormalization",
+      "source_sha256": "1e198af756ab6708ab192240dfb6405256e5bdef3213281ce23b633f265690d9",
+      "object_sha256": "436b863f1334c11852c2555dd95c0be7180827d37a00901e594ab675b77b24dc"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakTwoParameter",
+      "source_sha256": "c2c998d5a0a2244a882c6ffbe29b66d23748c162bf637693a562b0f97c689b75",
+      "object_sha256": "ba01ca0087606bbb24fd763025f6d0f9e0bb3b417d9054aded4ebc93d898872b"
+    }
+  ],
+  "project_import_closure": [
+    {
+      "module": "Conjectures.BabaiPathSpectrum",
+      "source_sha256": "6abb6b387d3756df4f59d736ca6f9f83234cd48c8024156d72dd1b7e9b7392bb",
+      "object_sha256": "456f5bb7be0552dc6088f7421af378fa8ad0ae5b08bfa8570d21291418f64378"
+    },
+    {
+      "module": "Conjectures.Loneliness",
+      "source_sha256": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+      "object_sha256": "4e13edf11c42cd4d01ee6b692970cde34603fd7ef263cbd443775fe41e360307"
+    },
+    {
+      "module": "Conjectures.LonelinessCoalescence",
+      "source_sha256": "5518fdfed0369763c2ba701272edb25fbaafde2d230c869f4412f2c441ef9d1d",
+      "object_sha256": "12d146c55086c8dbcbea6f698a5621e535e432269a2e014bcc11854486517b10"
+    },
+    {
+      "module": "Conjectures.LonelinessCoalescenceValue",
+      "source_sha256": "b2b7037f036e3fdeb5e52e0314fd7126db2ae921c6c182abf6175c5884a5bcb7",
+      "object_sha256": "1796d187ca5da715998d95619cfd91449179b41fdf4a02579cf8d17cb6c5011c"
+    },
+    {
+      "module": "Conjectures.LonelinessContinuity",
+      "source_sha256": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+      "object_sha256": "5df8e58d7511f3fd3e51be7b051fc8437a3a11511f6dccf1cf8da127e4726862"
+    },
+    {
+      "module": "Conjectures.LonelinessCoordinateClasses",
+      "source_sha256": "0075b701fd3fa51feef62f59850dfaa3dfece95e3287d51a7afb438a76691b63",
+      "object_sha256": "ea5f0e46116aca479a2a4f3b520ba757806ba654ee6e2cb7c6931bf4271beaff"
+    },
+    {
+      "module": "Conjectures.LonelinessCoordinateSubspace",
+      "source_sha256": "a6a58ef2dfb5262e43641aae3e18c9d7ddcc8163aebad18cf6eb2416ae46bfea",
+      "object_sha256": "84674dd6ab42fc619699f3e2583278d8d29e8b262e35fcc1ff551d7c58963586"
+    },
+    {
+      "module": "Conjectures.LonelinessCriticalBase",
+      "source_sha256": "3808e247b0a7a2e18f4f1e47b56fc8fa7ba842b6359f6d1dd41f034a8e8a2a24",
+      "object_sha256": "30d9e0468833b8eca771d4125313add10f1193a74297f2f5766fb0c5ddc2b37a"
+    },
+    {
+      "module": "Conjectures.LonelinessCriticalFamilies",
+      "source_sha256": "5af9b0de9ff77080a5004dec137d5732954d24e645aa630be86a8d5a875e70fa",
+      "object_sha256": "437da03bd240cf3d6a32a15e877e312e77e2bf4653003815473983e173ac9dc8"
+    },
+    {
+      "module": "Conjectures.LonelinessCriticalSecond",
+      "source_sha256": "0e35e354cecf67c33ada97aa20c1d5064209e770adea093cd522327ea47710cf",
+      "object_sha256": "9f5aeda20bcc2a7fd3d58ec5053618e07fd079964d61ba5ca188cb7227fa2e43"
+    },
+    {
+      "module": "Conjectures.LonelinessDistanceColoring",
+      "source_sha256": "d19c38a1a137ca8c051ba636650dae4f85341c9fe2a03f189ed1bb5124496ade",
+      "object_sha256": "1fec450d039351f1958a95946cb2455ccf9402bec3d734adfdbd1fed81a1d38d"
+    },
+    {
+      "module": "Conjectures.LonelinessFiveFamily",
+      "source_sha256": "512358c18c0b6701b4467a59cd74c0c15215e74d58e7571c5a770c98ffa1bf96",
+      "object_sha256": "9d841dbdfb2e8ea44054e35aa8504f30d54f8cd1e583bda16d8c98277d5d8334"
+    },
+    {
+      "module": "Conjectures.LonelinessIntegerDirection",
+      "source_sha256": "a767f65ddcdc4d4fab25fc1cf3a26e11577b507292976380307a618f6ecda5d6",
+      "object_sha256": "e0ddc2d872ca0d300e571cad009dd89fe40ff4191c4f1178c5a4c0d3e8cfa71b"
+    },
+    {
+      "module": "Conjectures.LonelinessModularWitness",
+      "source_sha256": "c5329d2e079f6d04d0079ab3fe90d814d1f3393b2381c74be6375ce091b569fb",
+      "object_sha256": "2cf6204fd01e87d40012ff7dde7dcc893eb4742791c88b48979453450f82bbdd"
+    },
+    {
+      "module": "Conjectures.LonelinessNormalization",
+      "source_sha256": "c89287e3561d2692be2c6a68098bcc27c34da7fd0e962522dcc4c890d2c993a7",
+      "object_sha256": "2d352223e342561e911b526bbf93febf4c961867883682f191ebf0eda9c89c68"
+    },
+    {
+      "module": "Conjectures.LonelinessProductFamily",
+      "source_sha256": "5bfba7ae7276035a3c5247b982f11493a287d9a7d68c1f56c1dca15ce2ea9fb1",
+      "object_sha256": "d3b3c6042e977de4dce807472ddbaab5058b11dfc32cf3ac81012734d5332cb4"
+    },
+    {
+      "module": "Conjectures.LonelinessRational",
+      "source_sha256": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
+      "object_sha256": "945c34917c2011b1fa83483163c423be6960f769809bcb768f210fc47ed0bb73"
+    },
+    {
+      "module": "Conjectures.LonelinessRationalSubspace",
+      "source_sha256": "514cfa022c82e38b40048ce5c5dbbb06a2976f5017865b095f708acd864f1e88",
+      "object_sha256": "22c8979317e1d9f98f8f1e57a4957fdf6833d4c1e68990d408340e963ced9540"
+    },
+    {
+      "module": "Conjectures.LonelinessSubspaceDensity",
+      "source_sha256": "26133697b51a104f873f5b05d7f057ad7bf1097d4825fbcfa18a3d9f7f10528f",
+      "object_sha256": "a53656c78de877401c21b5e42b38cd6c506ed14b6ea08b6e7284acca97b0f603"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakBaseChange",
+      "source_sha256": "12dc36490f0aa105109c149b53261e1d9a49d924e0605fb4b23c4ffba6c06ffe",
+      "object_sha256": "93a2b8710920057c69fb59d058b7a990d690b7e8e9be0b08535269d5438ec23d"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakBasic",
+      "source_sha256": "b8432f4b5f3de8da30f06eaab0dc361b4faad73005a50269d95fae2ad9728a36",
+      "object_sha256": "7121b1bbae16e15464e996c8c6f3187074137eaea2920cbfa945933103aa0d34"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakBounds",
+      "source_sha256": "bd513cfc7babe0ddf0dea8e6bcf9e34a76bf44637cfa4ffbb077a3d48e350032",
+      "object_sha256": "f4c56629b2fdc166a2b0a1b6ebc2372c33e7f39c397ee9106f5f4aefb0468064"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakCertificates",
+      "source_sha256": "94587d751347e0785b60e4d0209f506d144b5fb50c01954e40a85d020c67cefc",
+      "object_sha256": "46e18420906eb82ba19b6278d709f41e1cbc1806942c0561d5489c90686fe057"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakClassification",
+      "source_sha256": "e058d3c0a0c9d4819247c14f6781e2cf8f153c49879c5e6319e794d02199b289",
+      "object_sha256": "3b343ba9f8ecfab054f394593b517b70feca7863041c3549e7cdabcd9ee1bd1a"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakExceptions",
+      "source_sha256": "e861c17c3cbef72ba43fa4124dc7f2c6326b42ec8e3cac24db8da7935b7e9b9b",
+      "object_sha256": "850f220e7ef80003d1a00760e256fea9523cf851fe0e305fec40274c4b4130d3"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakLoops",
+      "source_sha256": "7602ca8442fc46469c647487c653a55d9b8b8b1be7eae6f4c6ac56214f7b5cff",
+      "object_sha256": "d127f5d219f5c9150ba3cf75c1d217286471a3fb26e26f591327807311058cbc"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakNormalization",
+      "source_sha256": "1e198af756ab6708ab192240dfb6405256e5bdef3213281ce23b633f265690d9",
+      "object_sha256": "436b863f1334c11852c2555dd95c0be7180827d37a00901e594ab675b77b24dc"
+    },
+    {
+      "module": "Conjectures.OravcovaSotakTwoParameter",
+      "source_sha256": "c2c998d5a0a2244a882c6ffbe29b66d23748c162bf637693a562b0f97c689b75",
+      "object_sha256": "ba01ca0087606bbb24fd763025f6d0f9e0bb3b417d9054aded4ebc93d898872b"
+    }
+  ],
+  "required_declarations": [
+    "OravcovaSotak.wordCertificate_hasPeriod",
+    "OravcovaSotak.transport_extra_distance",
+    "OravcovaSotak.loop_wordCertificate",
+    "OravcovaSotak.loop_concatenate",
+    "OravcovaSotak.loopExists_all_ge",
+    "OravcovaSotak.extra_distance_of_large_periods",
+    "OravcovaSotak.base_change",
+    "OravcovaSotak.distance_colorable_card_add_one",
+    "OravcovaSotak.cliqueFamily_not_colorable",
+    "OravcovaSotak.cliqueFamily_chromaticNumber",
+    "OravcovaSotak.cliqueFamily_has_clique",
+    "OravcovaSotak.sporadicCertificates_valid",
+    "OravcovaSotak.sporadic_covered",
+    "OravcovaSotak.sporadic_colorable",
+    "OravcovaSotak.A5_family",
+    "OravcovaSotak.A6_family",
+    "OravcovaSotak.W2_family",
+    "OravcovaSotak.W3_family",
+    "OravcovaSotak.base_all_large_periods",
+    "OravcovaSotak.finite_region_covered",
+    "OravcovaSotak.two_parameter_colorable",
+    "OravcovaSotak.normalize_clique_coloring",
+    "OravcovaSotak.exceptional5a_finite",
+    "OravcovaSotak.exceptional5b_finite",
+    "OravcovaSotak.exceptional7_finite",
+    "OravcovaSotak.exceptional5a_chromaticNumber",
+    "OravcovaSotak.exceptional5b_chromaticNumber",
+    "OravcovaSotak.exceptional7_chromaticNumber",
+    "OravcovaSotak.real_dilation_integer",
+    "OravcovaSotak.complete_scaled_subset",
+    "OravcovaSotak.primitive_form_parameters",
+    "OravcovaSotak.productForm_of_dilation",
+    "OravcovaSotak.twoParameterForm_integer",
+    "OravcovaSotak.product_reduced",
+    "OravcovaSotak.classified_of_not_colorable",
+    "OravcovaSotak.classified_chromaticNumber",
+    "OravcovaSotak.theorem_A_relative",
+    "OravcovaSotak.other_sets_colorable_relative",
+    "OravcovaSotak.oravcova_sotak_relative",
+    "OravcovaSotak.triangle_free_colorable_relative"
+  ],
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "strict_source_gate": "All nine new modules and the entire local dependency closure passed -DwarningAsError=true",
+  "source_logs": "/workspace/scratch/259689a4e588/oravcova-validation",
+  "independent_literal_data_comparison": "/workspace/scratch/259689a4e588/oravcova-validation/literal-data-comparison.json",
+  "all_owned_audit": {
+    "command": [
+      "flock",
+      "/workspace/scratch/259689a4e588/lean-heavy.lock",
+      "python3",
+      "/workspace/scratch/259689a4e588/run_lean_with_resources.py",
+      "/workspace/scratch/259689a4e588/oravcova-validation/all-owned-audit.resource.json",
+      "/home/agent/.elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-M4500",
+      "-DwarningAsError=true",
+      "/workspace/scratch/259689a4e588/OravcovaAudit.lean"
+    ],
+    "log": "/workspace/scratch/259689a4e588/oravcova-validation/all-owned-audit.log",
+    "resource": {
+      "command": [
+        "/home/agent/.elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "/workspace/scratch/259689a4e588/OravcovaAudit.lean"
+      ],
+      "minimum_available_memory_kib": 3145728,
+      "resource_sampling_seconds": 5,
+      "status": "finished",
+      "compiler_start_utc": "2026-11-21T16:48:21.181338+00:00",
+      "available_memory_at_start_kib": 3377536,
+      "observed_utc": "2026-11-21T16:53:26.760684+00:00",
+      "active_seconds": 307.701,
+      "processes": [
+        {
+          "pid": 83,
+          "ppid": 82,
+          "name": "lake",
+          "state": "S",
+          "rss_kib": 822440,
+          "cpu_user_seconds": 1.1,
+          "cpu_system_seconds": 0.47,
+          "wait_channel": "__futex_wait",
+          "io": {
+            "rchar": 42388742,
+            "wchar": 847,
+            "syscr": 11695,
+            "syscw": 46,
+            "read_bytes": 93626368,
+            "write_bytes": 0,
+            "cancelled_write_bytes": 0
+          },
+          "command": "/home/agent/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake env lean -j1 -M4500 -DwarningAsError=true /workspace/scratch/259689a4e588/OravcovaAudit.lean "
+        },
+        {
+          "pid": 149,
+          "ppid": 83,
+          "name": "lean",
+          "state": "S",
+          "rss_kib": 1799164,
+          "cpu_user_seconds": 23.83,
+          "cpu_system_seconds": 100.6,
+          "wait_channel": "__futex_wait",
+          "io": {
+            "rchar": 1609119,
+            "wchar": 2,
+            "syscr": 18066,
+            "syscw": 2,
+            "read_bytes": 116740833280,
+            "write_bytes": 0,
+            "cancelled_write_bytes": 0
+          },
+          "command": "lean -j1 -M4500 -DwarningAsError=true /workspace/scratch/259689a4e588/OravcovaAudit.lean "
+        }
+      ],
+      "rss_peak_sampled_kib": 2621604,
+      "available_memory_kib": 3436576,
+      "available_memory_min_sampled_kib": 2678808,
+      "available_memory_max_sampled_kib": 3507272,
+      "last_observed_processes": [
+        {
+          "pid": 83,
+          "ppid": 82,
+          "name": "lake",
+          "state": "S",
+          "rss_kib": 822440,
+          "cpu_user_seconds": 1.1,
+          "cpu_system_seconds": 0.47,
+          "wait_channel": "__futex_wait",
+          "io": {
+            "rchar": 42388742,
+            "wchar": 847,
+            "syscr": 11695,
+            "syscw": 46,
+            "read_bytes": 93626368,
+            "write_bytes": 0,
+            "cancelled_write_bytes": 0
+          },
+          "command": "/home/agent/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake env lean -j1 -M4500 -DwarningAsError=true /workspace/scratch/259689a4e588/OravcovaAudit.lean "
+        },
+        {
+          "pid": 149,
+          "ppid": 83,
+          "name": "lean",
+          "state": "S",
+          "rss_kib": 1799164,
+          "cpu_user_seconds": 23.83,
+          "cpu_system_seconds": 100.6,
+          "wait_channel": "__futex_wait",
+          "io": {
+            "rchar": 1609119,
+            "wchar": 2,
+            "syscr": 18066,
+            "syscw": 2,
+            "read_bytes": 116740833280,
+            "write_bytes": 0,
+            "cancelled_write_bytes": 0
+          },
+          "command": "lean -j1 -M4500 -DwarningAsError=true /workspace/scratch/259689a4e588/OravcovaAudit.lean "
+        }
+      ],
+      "finished_utc": "2026-11-21T16:53:28.882528+00:00",
+      "max_rss_kib": 2004452,
+      "cpu_user_seconds": 25.722134,
+      "cpu_system_seconds": 103.629829,
+      "exit_code": 0
+    },
+    "wall_seconds_with_lock": 462.324,
+    "exit_code": 0
+  },
+  "all_owned_inventory": "/workspace/scratch/259689a4e588/oravcova-validation/all-owned-inventory.json",
+  "stock_kernel_replay": {
+    "command": [
+      "flock",
+      "/workspace/scratch/259689a4e588/lean-heavy.lock",
+      "python3",
+      "/workspace/scratch/259689a4e588/run_lean_with_resources.py",
+      "/workspace/scratch/259689a4e588/oravcova-validation/kernel-replay.resource.json",
+      "/home/agent/.elan/bin/lake",
+      "env",
+      "python3",
+      "/workspace/scratch/259689a4e588/solved-conjectures/scripts/replay_lean.py",
+      "--root",
+      "Conjectures.OravcovaSotakClassification"
+    ],
+    "log": "/workspace/scratch/259689a4e588/oravcova-validation/kernel-replay.log",
+    "resource": {
+      "command": [
+        "python3",
+        "/workspace/scratch/259689a4e588/solved-conjectures/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.OravcovaSotakClassification"
+      ],
+      "requested_command": [
+        "/home/agent/.elan/bin/lake",
+        "env",
+        "python3",
+        "/workspace/scratch/259689a4e588/solved-conjectures/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.OravcovaSotakClassification"
+      ],
+      "runtime_environment_file": "/workspace/scratch/259689a4e588/lean-runtime-env.json",
+      "minimum_available_memory_kib": 3145728,
+      "resource_sampling_seconds": 5,
+      "status": "finished",
+      "compiler_start_utc": "2026-11-21T16:55:23.017145+00:00",
+      "available_memory_at_start_kib": 3574692,
+      "observed_utc": "2026-11-21T17:10:44.220154+00:00",
+      "active_seconds": 922.897,
+      "processes": [
+        {
+          "pid": 156,
+          "ppid": 155,
+          "name": "python3",
+          "state": "S",
+          "rss_kib": 11008,
+          "cpu_user_seconds": 0.05,
+          "cpu_system_seconds": 0.01,
+          "wait_channel": "do_wait",
+          "io": {
+            "rchar": 1500391,
+            "wchar": 133,
+            "syscr": 167,
+            "syscw": 1,
+            "read_bytes": 905216,
+            "write_bytes": 61440,
+            "cancelled_write_bytes": 0
+          },
+          "command": "python3 /workspace/scratch/259689a4e588/solved-conjectures/scripts/replay_lean.py --root Conjectures.OravcovaSotakClassification "
+        },
+        {
+          "pid": 157,
+          "ppid": 156,
+          "name": "leanchecker",
+          "state": "S",
+          "rss_kib": 1507272,
+          "cpu_user_seconds": 103.87,
+          "cpu_system_seconds": 286.15,
+          "wait_channel": "__futex_wait",
+          "io": {
+            "rchar": 77043850,
+            "wchar": 1340,
+            "syscr": 448949,
+            "syscw": 32,
+            "read_bytes": 302484447232,
+            "write_bytes": 151552,
+            "cancelled_write_bytes": 0
+          },
+          "command": "leanchecker -v Conjectures "
+        }
+      ],
+      "rss_peak_sampled_kib": 2167816,
+      "available_memory_kib": 3865908,
+      "available_memory_min_sampled_kib": 1316716,
+      "available_memory_max_sampled_kib": 4434780,
+      "last_observed_processes": [
+        {
+          "pid": 156,
+          "ppid": 155,
+          "name": "python3",
+          "state": "S",
+          "rss_kib": 11008,
+          "cpu_user_seconds": 0.05,
+          "cpu_system_seconds": 0.01,
+          "wait_channel": "do_wait",
+          "io": {
+            "rchar": 1500391,
+            "wchar": 133,
+            "syscr": 167,
+            "syscw": 1,
+            "read_bytes": 905216,
+            "write_bytes": 61440,
+            "cancelled_write_bytes": 0
+          },
+          "command": "python3 /workspace/scratch/259689a4e588/solved-conjectures/scripts/replay_lean.py --root Conjectures.OravcovaSotakClassification "
+        },
+        {
+          "pid": 157,
+          "ppid": 156,
+          "name": "leanchecker",
+          "state": "S",
+          "rss_kib": 1507272,
+          "cpu_user_seconds": 103.87,
+          "cpu_system_seconds": 286.15,
+          "wait_channel": "__futex_wait",
+          "io": {
+            "rchar": 77043850,
+            "wchar": 1340,
+            "syscr": 448949,
+            "syscw": 32,
+            "read_bytes": 302484447232,
+            "write_bytes": 151552,
+            "cancelled_write_bytes": 0
+          },
+          "command": "leanchecker -v Conjectures "
+        }
+      ],
+      "finished_utc": "2026-11-21T17:10:45.913935+00:00",
+      "max_rss_kib": 2207544,
+      "cpu_user_seconds": 104.138781,
+      "cpu_system_seconds": 286.974572,
+      "exit_code": 0
+    },
+    "wall_seconds_with_lock": 1036.913,
+    "exit_code": 0
+  },
+  "checked_utc": "2026-11-21T17:10:46.137437+00:00"
+}

@@ -1,6 +1,8 @@
 # Distance graphs with maximum chromatic number: five to eight distances
 
-**Status.** Written proof with machine-checkable certificates. No Lean formalization. Unrefereed. The main theorem is proved *relative to* four classification theorems of this repository (the loneliness spectra below $1/k$ for $k=5,6,7,8$ speeds), which are themselves computer-assisted and unrefereed. Every other step is proved below or checked by [`verify.py`](verify.py), which needs only the Python standard library.
+Lean status: the complete relative deduction and all explicit coloring certificates are now formalized and kernel-replayed. The four spectrum hypotheses remain explicit and unproved by this closure. See the [landing page](README.md) for exact scope and evidence.
+
+**Status.** Written proof with machine-checkable certificates and a partial Lean formalization. Unrefereed. The main theorem is proved *relative to* four classification theorems of this repository (the loneliness spectra below $1/k$ for $k=5,6,7,8$ speeds), which are themselves computer-assisted and unrefereed. Every other step is proved below or checked by [`verify.py`](verify.py), which needs only the Python standard library.
 
 ## Statement
 

@@ -15,6 +15,12 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Oravcová–Soták relative classification, 21 November 2026
+
+The formalization uses the actual distance graph on the integers. Its unconditional results include the greedy upper bound, periodic-word transport, loop concatenation, integer base change, the four unbounded one-parameter coloring families, the full two-parameter family, and the exceptional chromatic numbers. Theorem A, the Oravcová–Soták clique conclusion, and the primitive triangle-free corollary retain the explicitly named propositions `R5`, `R6`, `R7`, and `R8` as hypotheses. Those four real-loneliness classifications are not proved by this closure.
+
+All nine new modules passed strict compilation with warnings treated as errors. The exact 28-module project closure passed an all-owned audit of 1239 declarations (1084 theorem declarations and 40 required endpoints) and independent stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. [Receipt](verification/lean-named-20261121/oravcova-receipt.json) and [source records](verification/lean-named-20261121/oravcova-source-evidence.json). The first five modules reproduced the audited objects exactly on their recorded recheck. All required endpoints are theorem declarations. The result remains partial, and no combined repository or hosted gate is claimed.
+
 ## Vishnyakova root-radius theorems, 21 November 2026
 
 Lean proves the original sampled-sequence theorem and the weighted theorem.

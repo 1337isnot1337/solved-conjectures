@@ -6,7 +6,11 @@
 
 **Contributor:** [@aadrianvv](https://github.com/aadrianvv). Proof, certificates, verifier, and result package submitted in [PR #144](https://github.com/1337isnot1337/solved-conjectures/pull/144).
 
-**Lean status:** none. No Lean formalization is included.
+**Lean status:** partial. The formalization uses the actual distance graph on the integers. Its unconditional results include the greedy upper bound, periodic-word transport, loop concatenation, integer base change, the four unbounded one-parameter coloring families, the full two-parameter family, and the exceptional chromatic numbers. Theorem A, the Oravcová–Soták clique conclusion, and the primitive triangle-free corollary retain the explicitly named propositions `R5`, `R6`, `R7`, and `R8` as hypotheses. Those four real-loneliness classifications are not proved by this closure.
+
+All nine new modules passed strict compilation with warnings treated as errors. The exact 28-module project closure passed an all-owned audit of 1239 declarations (1084 theorem declarations and 40 required endpoints) and independent stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. [Receipt](../../docs/verification/lean-named-20261121/oravcova-receipt.json), [source records](../../docs/verification/lean-named-20261121/oravcova-source-evidence.json), [complete inventory](../../docs/verification/lean-named-20261121/oravcova-all-owned-inventory.json).
+
+The five initial source checks were repeated with complete contemporaneous records and reproduced the audited objects exactly. The combined repository gate and hosted validation remain separate. The original proof and certificates remain credited to @aadrianvv.
 
 Primary source: J. Oravcová and R. Soták, *On a problem concerning integer distance graphs*, [arXiv:2401.12347](https://arxiv.org/abs/2401.12347), Conjecture 2.7.
 

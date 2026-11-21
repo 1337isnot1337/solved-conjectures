@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Oravcová–Soták relative theorem formalized
+
+Added nine modules for the actual integer distance graphs, all explicit coloring certificates and unbounded families, and the complete classification deduction relative to four stated spectrum propositions. Preserved @aadrianvv’s proof and certificate attribution. All nine new modules passed strict compilation with warnings treated as errors. The exact 28-module project closure passed an all-owned audit of 1239 declarations (1084 theorem declarations and 40 required endpoints) and independent stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. The README remains partial because `R5`–`R8` are still hypotheses. The shared-package gate remains pending.
+
 ## 2026-11-21 — Original Vishnyakova theorem verified in Lean
 
 Completed the sampled-sequence theorem using all ordered finite Toeplitz

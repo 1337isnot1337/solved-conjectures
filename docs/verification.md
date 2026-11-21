@@ -2,6 +2,10 @@
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
 
+## Oravcová–Soták local verification checkpoint
+
+All nine new modules passed strict compilation with warnings treated as errors. The exact 28-module project closure passed an all-owned audit of 1239 declarations (1084 theorem declarations and 40 required endpoints) and independent stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. The [receipt](verification/lean-named-20261121/oravcova-receipt.json) binds the exact project sources and objects, the full declaration audit and the kernel replay. [Source records](verification/lean-named-20261121/oravcova-source-evidence.json) cover every new file. The [literal data comparison](verification/lean-named-20261121/oravcova-literal-data-comparison.json) independently matches the source certificate tables. `R5`–`R8` remain explicit inputs. The combined package gate and hosted validation are separate.
+
 ## Vishnyakova complete local verification
 
 The original sampled-sequence and weighted root-radius theorems have a
@@ -290,7 +294,7 @@ The existing result package's standard-library diagnostic is `python3 results/ba
 
 ## Oravcová–Soták distance-graph classification
 
-Run `python3 results/oravcova-sotak/verify.py` with assertions enabled. The standard-library script checks the 65 spectrum-table sets and their exact `L(D)`, the 62 periodic colourings, the three exceptional sets, the 37 loop certificates for the four one-parameter families, the two-parameter family, and the small cases of the clique lemma. The classification is [proved relative to](../results/oravcova-sotak/PROOF.md) the repository's five- to eight-speed spectrum classifications. The optional SAT scan in `search/` is independent of those classifications and is not run by CI. No Lean verification is included.
+Run `python3 results/oravcova-sotak/verify.py` with assertions enabled. The standard-library script checks the 65 spectrum-table sets and their exact `L(D)`, the 62 periodic colourings, the three exceptional sets, the 37 loop certificates for the four one-parameter families, the two-parameter family, and the small cases of the clique lemma. The classification is [proved relative to](../results/oravcova-sotak/PROOF.md) the repository's five- to eight-speed spectrum classifications. The optional SAT scan in `search/` is independent of those classifications and is not run by CI. The [Lean checkpoint](verification/lean-named-20261121/oravcova-receipt.json) verifies all explicit coloring certificates and the full relative deduction; `R5`–`R8` remain unproved inputs.
 
 ## Johnson–Kaya–Matzke path spectra
 

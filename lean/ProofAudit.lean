@@ -9,6 +9,46 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `OravcovaSotak.wordCertificate_hasPeriod,
+    `OravcovaSotak.transport_extra_distance,
+    `OravcovaSotak.loop_wordCertificate,
+    `OravcovaSotak.loop_concatenate,
+    `OravcovaSotak.loopExists_all_ge,
+    `OravcovaSotak.extra_distance_of_large_periods,
+    `OravcovaSotak.base_change,
+    `OravcovaSotak.distance_colorable_card_add_one,
+    `OravcovaSotak.cliqueFamily_not_colorable,
+    `OravcovaSotak.cliqueFamily_chromaticNumber,
+    `OravcovaSotak.cliqueFamily_has_clique,
+    `OravcovaSotak.sporadicCertificates_valid,
+    `OravcovaSotak.sporadic_covered,
+    `OravcovaSotak.sporadic_colorable,
+    `OravcovaSotak.A5_family,
+    `OravcovaSotak.A6_family,
+    `OravcovaSotak.W2_family,
+    `OravcovaSotak.W3_family,
+    `OravcovaSotak.base_all_large_periods,
+    `OravcovaSotak.finite_region_covered,
+    `OravcovaSotak.two_parameter_colorable,
+    `OravcovaSotak.normalize_clique_coloring,
+    `OravcovaSotak.exceptional5a_finite,
+    `OravcovaSotak.exceptional5b_finite,
+    `OravcovaSotak.exceptional7_finite,
+    `OravcovaSotak.exceptional5a_chromaticNumber,
+    `OravcovaSotak.exceptional5b_chromaticNumber,
+    `OravcovaSotak.exceptional7_chromaticNumber,
+    `OravcovaSotak.real_dilation_integer,
+    `OravcovaSotak.complete_scaled_subset,
+    `OravcovaSotak.primitive_form_parameters,
+    `OravcovaSotak.productForm_of_dilation,
+    `OravcovaSotak.twoParameterForm_integer,
+    `OravcovaSotak.product_reduced,
+    `OravcovaSotak.classified_of_not_colorable,
+    `OravcovaSotak.classified_chromaticNumber,
+    `OravcovaSotak.theorem_A_relative,
+    `OravcovaSotak.other_sets_colorable_relative,
+    `OravcovaSotak.oravcova_sotak_relative,
+    `OravcovaSotak.triangle_free_colorable_relative,
     `VishnyakovaRootRadius.reciprocal_segment,
     `VishnyakovaRootRadius.reciprocal_segment_sqrt,
     `VishnyakovaRootRadius.rayleigh_disk_bound,
@@ -10285,7 +10325,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales."]
+  let prefixes := #["SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

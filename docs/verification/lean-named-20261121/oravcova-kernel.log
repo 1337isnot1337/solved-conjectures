@@ -1,0 +1,30 @@
+Replaying all 28 local project modules imported by Conjectures.OravcovaSotakClassification, including that root (prefix Conjectures)
+replaying Conjectures.LonelinessCriticalSecond
+replaying Conjectures.OravcovaSotakNormalization
+replaying Conjectures.LonelinessSubspaceDensity
+replaying Conjectures.BabaiPathSpectrum
+replaying Conjectures.LonelinessNormalization
+replaying Conjectures.LonelinessRationalSubspace
+replaying Conjectures.LonelinessCoalescenceValue
+replaying Conjectures.LonelinessModularWitness
+replaying Conjectures.LonelinessProductFamily
+replaying Conjectures.OravcovaSotakLoops
+replaying Conjectures.OravcovaSotakExceptions
+replaying Conjectures.LonelinessDistanceColoring
+replaying Conjectures.OravcovaSotakBasic
+replaying Conjectures.OravcovaSotakBounds
+replaying Conjectures.LonelinessCoordinateClasses
+replaying Conjectures.OravcovaSotakTwoParameter
+replaying Conjectures.LonelinessRational
+replaying Conjectures.LonelinessContinuity
+replaying Conjectures.OravcovaSotakBaseChange
+replaying Conjectures.LonelinessCriticalFamilies
+replaying Conjectures.LonelinessFiveFamily
+replaying Conjectures.LonelinessCriticalBase
+replaying Conjectures.OravcovaSotakCertificates
+replaying Conjectures.LonelinessIntegerDirection
+replaying Conjectures.LonelinessCoordinateSubspace
+replaying Conjectures.LonelinessCoalescence
+replaying Conjectures.Loneliness
+replaying Conjectures.OravcovaSotakClassification
+PASS: the entire local import closure of Conjectures.OravcovaSotakClassification completed the pinned kernel replay

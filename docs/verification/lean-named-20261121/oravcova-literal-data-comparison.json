@@ -1,0 +1,44 @@
+{
+  "check": "Independent literal-data comparison, without importing the generator",
+  "sporadic_tables": {
+    "5": 12,
+    "6": 9,
+    "7": 27,
+    "8": 17
+  },
+  "sporadic_sets": 65,
+  "color_certificates": 62,
+  "loop_words": 41,
+  "direct_words": 9,
+  "families": [
+    {
+      "name": "A5",
+      "loops": 14,
+      "direct_words": 2
+    },
+    {
+      "name": "A6",
+      "loops": 6,
+      "direct_words": 3
+    },
+    {
+      "name": "W2",
+      "loops": 4,
+      "direct_words": 2
+    },
+    {
+      "name": "W3",
+      "loops": 13,
+      "direct_words": 2
+    },
+    {
+      "name": "base",
+      "loops": 4,
+      "direct_words": 0
+    }
+  ],
+  "source_json_sha256": "e3ed874defa44a59d36b843aaaf118d4df238292f02dadb22b7f2060aacadd71",
+  "lean_source_sha256": "94587d751347e0785b60e4d0209f506d144b5fb50c01954e40a85d020c67cefc",
+  "checked_utc": "2026-11-21T16:23:57.926117+00:00",
+  "passed": true
+}

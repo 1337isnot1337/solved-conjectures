@@ -54,7 +54,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ |
 | [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
 | [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
-| [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | ⬜ |
+| [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | 🟢 |
 | [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |
 | [Chow's conjecture](results/chow-conjecture/) | ⬜ |
 | [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
