@@ -87,7 +87,8 @@ hypothesis. Neither lemma closes permanent dominance.
 The [positive-border construction](sign/bordered_partition_lifts.md) derives
 the complete triangular replacement-column recurrence. The
 [induction-gap addendum](sign/triangular_recurrence_invariant_gap.md) gives
-an exact unextendable seed at an admissible transition, together with the
+an exact failure of the specified one-step triangular append at an admissible
+transition, together with the
 general two-step formula. Its [independent review](reviews/triangular_recurrence_review.md)
 also records the full two-step replacement hierarchy. An invariant forcing
 future sign choices remains missing. The
@@ -96,6 +97,25 @@ Problems 8, 11, 12 and 13. The
 [root review](reviews/subgroup_triangular_root_review.md) records the exact
 checks, primary sources, and limits of this checkpoint. Full resolutions
 from this continuation remain zero.
+
+The [mixed-block projection audit](inequalities/mixed_block_projection_obstruction.md)
+uses Sra's published normalized Schur-function theorem to determine the
+optimal relative multipliers for invariant positive rank reductions. Haar
+projections attain the optimum; random spectra, scales, and positive mixtures
+cannot remove the loss. The [correction audit](reviews/mixed_block_correction_obstruction.md)
+retains the diagonal-product term exactly and supplies formal Fourier data
+satisfying every listed averaged bound while violating the desired dominance
+comparison. Those data are explicitly not a Gram-matrix counterexample.
+The obstruction applies to the stated inequalities and methods only.
+
+The [fixed-reset note](sign/triangular_fixed_reset_obstruction.md) and its
+[independent review](reviews/triangular_fixed_reset_review.md) prove that
+every fixed seed and direction can attain Wang's equality only finitely
+often under one specified repeated two-row reset. An exact differential
+conjugacy gives factorial growth of the permanent against geometric growth
+of the determinant. Adaptive directions and other constructions remain
+outside this exclusion. These all-order method obstructions do not resolve
+the original named conjectures.
 
 The previous campaign's general P18 approximation theorem, Pula-Song-Wanless threshold, and Malek endpoint theorem retain the different scopes in [the existing continuation record](../NEXT.md). They are not new results of this continuation and are not counted here as three full numbered entries.
 

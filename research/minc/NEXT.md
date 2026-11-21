@@ -166,3 +166,22 @@ recorded symbolic and independent exact checks passed. The explicit scope
 exclusions and the Chollet priority correction remain in force. The
 continuation has zero completed eligible conjectures; the requested ten
 have not been obtained.
+
+## 20 November 2026: precise limits of the two extension methods
+
+The [projection-factor audit](continuation-2026-11-20/inequalities/mixed_block_projection_obstruction.md)
+applies Sra's prior normalized Schur-function theorem to prove that Haar
+rank projections are optimal among invariant positive metric averages with
+a fixed rank cap. The [correction review](continuation-2026-11-20/reviews/mixed_block_correction_obstruction.md)
+checks the diagonal-product term and gives a formal Fourier-data separator.
+It is not a Gram counterexample. Configuration-dependent maps and further
+Gram relations remain outside the obstruction.
+
+The [fixed-reset obstruction](continuation-2026-11-20/sign/triangular_fixed_reset_obstruction.md)
+has an [independent analytic review](continuation-2026-11-20/reviews/triangular_fixed_reset_review.md).
+For each fixed seed and initial direction, the specified two-row reset can
+satisfy nonzero permanent-determinant equality only finitely often. Its
+cutoff need not be uniform in the seed. Root checked the exact operator,
+nearest-pole asymptotic, and determinant normalization and ran the symbolic
+checker. Adaptive constructions remain unexcluded. These deductions add
+zero full eligible Minc resolutions.
