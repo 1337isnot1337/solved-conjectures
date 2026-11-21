@@ -15,8 +15,9 @@ The theorem `tournament_no_separation` states directly that the family of
 minimal dominating sets of a finite tournament cannot be split across two
 disjoint vertex sets with an edge on each side. The proof includes finite
 blocker duality, the split-product lemma, representative counting and the
-source case. The forward two-star classification for arbitrary oriented graphs is
-`oriented_separation_stars`; the converse realization is not yet included.
+source case. The forward two-star classification is `oriented_separation_stars`;
+`build_realizes_two_stars` constructs every such pair, with arbitrary extra
+vertices shown isolated by `build_remaining_vertices_isolated`.
 -/
 
 noncomputable section
@@ -1085,6 +1086,193 @@ theorem oriented_separation_stars (arc : V → V → Prop)
     have hsingleton := hits_mono (neighbourhoods arc) hsub hehits
     exact hsource ⟨v, (domination_iff_hits arc {v}).mpr hsingleton⟩
   exact oriented_two_star_structure arc oriented F G X Y hF hG hXY hFn hGn hFne hGne hD hNo
+
+def buildArc (A B : Finset V) (u w r s : V) (x y : V) : Prop :=
+  x ≠ y ∧
+  if y = u then x = w
+  else if y = w then x ∈ A
+  else if y = r then x ∈ A ∨ x ∈ B
+  else if y = s then x = u ∨ x ∈ B
+  else if y ∈ A then x = u ∨ x ∈ B
+  else if y ∈ B then x = u ∨ x = w
+  else x = u ∨ x = w ∨ x ∈ A ∨ x ∈ B
+
+omit [Fintype V] in
+theorem build_oriented (A B : Finset V) (u w r s : V)
+    (hAB : Disjoint A B) (huA : u ∉ A) (huB : u ∉ B) (hwA : w ∉ A) (hwB : w ∉ B)
+    (_huw : u ≠ w) (hr : r ∈ A) (hs : s ∈ B) :
+    ∀ x y, buildArc A B u w r s x y → ¬ buildArc A B u w r s y x := by
+  classical
+  intro x y hxy hyx
+  have hdis : ∀ z, z ∈ A → z ∈ B → False := fun _ ha hb => (disjoint_left.mp hAB) ha hb
+  simp only [buildArc] at hxy hyx
+  rcases hxy with ⟨hxyne,hxy⟩
+  rcases hyx with ⟨hyxne,hyx⟩
+  split_ifs at hxy hyx <;> simp_all
+
+theorem build_neighbourhoods (A B : Finset V) (u w r s : V)
+    (hAB : Disjoint A B) (huA : u ∉ A) (huB : u ∉ B) (hwA : w ∉ A) (hwB : w ∉ B)
+    (huw : u ≠ w) (hr : r ∈ A) (hs : s ∈ B) :
+    inClosed (buildArc A B u w r s) u = {u} ∪ {w} ∧
+    inClosed (buildArc A B u w r s) w = A ∪ {w} ∧
+    inClosed (buildArc A B u w r s) r = A ∪ B ∧
+    inClosed (buildArc A B u w r s) s = {u} ∪ B := by
+  classical
+  have hru : r ≠ u := by intro h; subst r; exact huA hr
+  have hrw : r ≠ w := by intro h; subst r; exact hwA hr
+  have hsu : s ≠ u := by intro h; subst s; exact huB hs
+  have hsw : s ≠ w := by intro h; subst s; exact hwB hs
+  have hrs : r ≠ s := by intro h; subst r; exact (disjoint_left.mp hAB) hr hs
+  constructor
+  · ext x
+    simp [inClosed, buildArc]
+    tauto
+  constructor
+  · ext x
+    simp [inClosed, buildArc, Ne.symm huw]
+    tauto
+  constructor
+  · ext x
+    by_cases hx : x = r
+    · subst x
+      simp [inClosed, buildArc, hru, hrw, hr]
+    · simp [inClosed, buildArc, hru, hrw, hx]
+  · ext x
+    by_cases hx : x = s
+    · subst x
+      simp [inClosed, buildArc, hsu, hsw, Ne.symm hrs, hs]
+    · simp [inClosed, buildArc, hsu, hsw, Ne.symm hrs, hx]
+
+theorem build_coverage (A B : Finset V) (u w r s : V)
+    (hAB : Disjoint A B) (huA : u ∉ A) (huB : u ∉ B) (hwA : w ∉ A) (hwB : w ∉ B)
+    (huw : u ≠ w) (hr : r ∈ A) (hs : s ∈ B) (v : V) :
+    ∃ e ∈ quad {u} A {w} B, e ⊆ inClosed (buildArc A B u w r s) v := by
+  classical
+  obtain ⟨hIu,hIw,hIr,hIs⟩ := build_neighbourhoods A B u w r s hAB huA huB hwA hwB huw hr hs
+  by_cases hvu : v = u
+  · subst v
+    exact ⟨{u} ∪ {w}, by simp [quad], by rw [hIu]⟩
+  by_cases hvw : v = w
+  · subst v
+    exact ⟨A ∪ {w}, by simp [quad], by rw [hIw]⟩
+  by_cases hvr : v = r
+  · subst v
+    exact ⟨A ∪ B, by simp [quad], by rw [hIr]⟩
+  by_cases hvs : v = s
+  · subst v
+    exact ⟨{u} ∪ B, by simp [quad], by rw [hIs]⟩
+  by_cases hvA : v ∈ A
+  · refine ⟨{u} ∪ B, by simp [quad], ?_⟩
+    intro x hx
+    simp only [mem_union, mem_singleton] at hx
+    by_cases hxv : x = v
+    · subst x; simp [inClosed]
+    · simp [inClosed, buildArc, hvu, hvw, hvr, hvs, hvA, hxv]
+      exact hx
+  by_cases hvB : v ∈ B
+  · refine ⟨{u} ∪ {w}, by simp [quad], ?_⟩
+    intro x hx
+    simp only [mem_union, mem_singleton] at hx
+    by_cases hxv : x = v
+    · subst x; simp [inClosed]
+    · simp [inClosed, buildArc, hvu, hvw, hvr, hvs, hvA, hvB, hxv]
+      exact hx
+  · refine ⟨{u} ∪ {w}, by simp [quad], ?_⟩
+    intro x hx
+    simp only [mem_union, mem_singleton] at hx
+    by_cases hxv : x = v
+    · subst x; simp [inClosed]
+    · simp [inClosed, buildArc, hvu, hvw, hvr, hvs, hvA, hvB, hxv]
+      tauto
+
+theorem build_hits_quad (A B : Finset V) (u w r s : V)
+    (hAB : Disjoint A B) (huA : u ∉ A) (huB : u ∉ B) (hwA : w ∉ A) (hwB : w ∉ B)
+    (huw : u ≠ w) (hr : r ∈ A) (hs : s ∈ B) (t : Finset V) :
+    hits (neighbourhoods (buildArc A B u w r s)) t ↔ hits (quad {u} A {w} B) t := by
+  classical
+  obtain ⟨hIu,hIw,hIr,hIs⟩ := build_neighbourhoods A B u w r s hAB huA huB hwA hwB huw hr hs
+  have hsubset : quad {u} A {w} B ⊆ neighbourhoods (buildArc A B u w r s) := by
+    intro e he
+    simp only [quad, mem_insert, mem_singleton] at he
+    rcases he with rfl | rfl | rfl | rfl
+    · exact mem_image.mpr ⟨u, mem_univ u, hIu⟩
+    · exact mem_image.mpr ⟨s, mem_univ s, hIs⟩
+    · exact mem_image.mpr ⟨w, mem_univ w, hIw⟩
+    · exact mem_image.mpr ⟨r, mem_univ r, hIr⟩
+  constructor
+  · intro h e he
+    exact h e (hsubset he)
+  · intro h e he
+    obtain ⟨v,_,rfl⟩ := mem_image.mp he
+    obtain ⟨c,hc,hsub⟩ := build_coverage A B u w r s hAB huA huB hwA hwB huw hr hs v
+    obtain ⟨x,hxt,hxc⟩ := h c hc
+    exact ⟨x,hxt,hsub hxc⟩
+
+theorem build_blocker_quad (A B : Finset V) (u w r s : V)
+    (hAB : Disjoint A B) (huA : u ∉ A) (huB : u ∉ B) (hwA : w ∉ A) (hwB : w ∉ B)
+    (huw : u ≠ w) (hr : r ∈ A) (hs : s ∈ B) :
+    blocker (neighbourhoods (buildArc A B u w r s)) = blocker (quad {u} A {w} B) := by
+  ext t
+  rw [mem_blocker, mem_blocker]
+  have heq : hits (neighbourhoods (buildArc A B u w r s)) = hits (quad {u} A {w} B) := by
+    funext t
+    exact propext (build_hits_quad A B u w r s hAB huA huB hwA hwB huw hr hs t)
+  rw [heq]
+
+theorem build_realizes_two_stars (A B : Finset V) (u w r s : V)
+    (hAB : Disjoint A B) (huA : u ∉ A) (huB : u ∉ B) (hwA : w ∉ A) (hwB : w ∉ B)
+    (huw : u ≠ w) (hr : r ∈ A) (hs : s ∈ B) :
+    (∀ x y, buildArc A B u w r s x y → ¬ buildArc A B u w r s y x) ∧
+    blocker (neighbourhoods (buildArc A B u w r s)) = pairs {u} A ∪ pairs {w} B := by
+  classical
+  constructor
+  · exact build_oriented A B u w r s hAB huA huB hwA hwB huw hr hs
+  · rw [build_blocker_quad A B u w r s hAB huA huB hwA hwB huw hr hs]
+    have hXY : Disjoint ({u} ∪ A) ({w} ∪ B) := by
+      apply disjoint_left.mpr
+      intro v hx hy
+      simp only [mem_union, mem_singleton] at hx hy
+      rcases hx with rfl | hx <;> rcases hy with hy | hy
+      · exact huw hy
+      · exact huB hy
+      · subst v; exact hwA hx
+      · exact (disjoint_left.mp hAB) hx hy
+    have hAA : Disjoint ({u} : Finset V) A := by simpa [disjoint_left] using huA
+    have hBB : Disjoint ({w} : Finset V) B := by simpa [disjoint_left] using hwB
+    exact blocker_quad {u} A {w} B ({u} ∪ A) ({w} ∪ B) hXY hAA hBB
+      (subset_union_left) (subset_union_right) (subset_union_left) (subset_union_right)
+
+theorem build_remaining_vertices_isolated (A B : Finset V) (u w r s : V)
+    (hAB : Disjoint A B) (huA : u ∉ A) (huB : u ∉ B) (hwA : w ∉ A) (hwB : w ∉ B)
+    (huw : u ≠ w) (hr : r ∈ A) (hs : s ∈ B) (v : V)
+    (hvu : v ≠ u) (hvw : v ≠ w) (hvA : v ∉ A) (hvB : v ∉ B) :
+    ∀ e ∈ blocker (neighbourhoods (buildArc A B u w r s)), v ∉ e := by
+  classical
+  intro e he
+  have hreal := (build_realizes_two_stars A B u w r s hAB huA huB hwA hwB huw hr hs).2
+  rw [hreal] at he
+  simp only [mem_union, pairs, mem_filter, mem_univ, true_and] at he
+  rcases he with ⟨x,hx,y,hy,rfl⟩ | ⟨x,hx,y,hy,rfl⟩
+  · have hx' : x = u := by simpa using hx
+    subst x
+    intro hv
+    simp only [mem_insert, mem_singleton] at hv
+    rcases hv with hv | hv
+    · exact hvu hv
+    · subst y; exact hvA hy
+  · have hx' : x = w := by simpa using hx
+    subst x
+    intro hv
+    simp only [mem_insert, mem_singleton] at hv
+    rcases hv with hv | hv
+    · exact hvw hv
+    · subst y; exact hvB hy
+
+omit [Fintype V] in
+theorem build_irreflexive (A B : Finset V) (u w r s : V) :
+    ∀ v, ¬ buildArc A B u w r s v v := by
+  intro v h
+  exact h.1 rfl
 
 end Sonntag
 end

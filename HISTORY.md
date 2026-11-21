@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Complete Sonntag–Teichert realization in Lean
+
+Formalized an explicit oriented graph realizing any two disjoint stars and proving all additional vertices are isolated in its domination hypergraph. Together with the tournament theorem and forward classification, this completes the result package in Lean. Strict source compilation, all-owned axiom audit and stock-kernel replay passed; the combined repository gate remains pending.
+
 ## 2026-11-21 — Sonntag–Teichert oriented-graph classification in Lean
 
 Proved the forward two-star classification for separated domination hypergraphs of arbitrary finite oriented graphs. The proof checks the blocker product, both bicliques and singleton-part argument. Strict source compilation, all-owned axiom audit and stock-kernel replay passed. The converse realization and combined repository gate remain pending.

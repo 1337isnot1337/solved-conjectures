@@ -9,6 +9,9 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Sonntag.build_realizes_two_stars,
+    `Sonntag.build_remaining_vertices_isolated,
+    `Sonntag.build_irreflexive,
     `Sonntag.oriented_separation_stars,
     `Sonntag.blocker_quad,
     `Sonntag.quad_rows_have_singleton,
