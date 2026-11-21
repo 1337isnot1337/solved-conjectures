@@ -16,7 +16,7 @@ L_\beta\!\left(\sum_{k=0}^n q_k
  =\sum_{k=0}^nq_kw^k.
 ```
 
-Let $`U_{n,\\beta}`$ consist of the degree-$`n`$ real polynomials $`P`$ such that all zeros of $`L_\\beta(P)`$ lie in $`[-1,0]`$. Multiplying $`P`$ by a nonzero constant does not affect any zero under discussion. The weighted conjecture says
+Let $`U_{n,\beta}`$ consist of the degree-$`n`$ real polynomials $`P`$ such that all zeros of $`L_\beta(P)`$ lie in $`[-1,0]`$. Multiplying $`P`$ by a nonzero constant does not affect any zero under discussion. The weighted conjecture says
 
 ```math
 \sup_{P\in U_{n,\beta}}
@@ -29,7 +29,7 @@ We prove the stronger disk theorem.
 
 An earlier [7 October 2026 public report](https://github.com/10m-u/open-problems-catalog/blob/ca8d4d44ba3db527f19f28928c240168f545ecfe/solutions/b3-continuation-2026-10-07/interpolation/REPORT.md) already proved this disk bound for $`\beta=1`$ through degree five, and for equal parameters in every degree. Its all-degree equal-parameter argument includes the generating function, three-term recurrence, and tridiagonal representation used below in weighted form. The report explicitly leaves independent parameters in every degree open. The new step here is the exclusion for complex upper-half-plane parameters and the consequent polarization argument, which handles all independent real parameters at all degrees.
 
-**Theorem.** If $`\beta>0`$, $`n\ge 1`$, and $`P\in U_{n,\\beta}`$, then every zero of $`P`$ lies in
+**Theorem.** If $`\beta>0`$, $`n\ge 1`$, and $`P\in U_{n,\beta}`$, then every zero of $`P`$ lies in
 
 ```math
 \left|z+\frac\beta2\right|\le n-1+\frac\beta2.
@@ -40,7 +40,7 @@ Consequently the weighted conjecture holds, including its sharp constant. In par
 
 ## 1. A symmetric multiaffine family
 
-Normalize $`L_\\beta(P)`$ to be monic and factor it as
+Normalize $`L_\beta(P)`$ to be monic and factor it as
 
 ```math
 Q(w)=\prod_{i=1}^n(w+a_i),\qquad 0\le a_i\le1.
@@ -166,7 +166,7 @@ The determinant recurrence for this tridiagonal matrix and (4) give
 \tag{9}
 ```
 
-Suppose, toward a contradiction, that $`z\in \Omega_{n,\\beta}`$ is an eigenvalue for some $`t\in H`$. Choose an eigenvector $`v`$ with $`v^* v=1`$, and write
+Suppose, toward a contradiction, that $`z\in \Omega_{n,\beta}`$ is an eigenvalue for some $`t\in H`$. Choose an eigenvector $`v`$ with $`v^* v=1`$, and write
 
 ```math
 d=v^*Dv\in[0,n-1],\qquad k=v^*Kv\in\mathbb R.
@@ -213,12 +213,12 @@ This contradicts (6) and establishes (7).
 
 ## 4. Polarization and real specialization
 
-Fix $`z\in \Omega_{n,\\beta}`$. By (7), the diagonal polynomial
+Fix $`z\in \Omega_{n,\beta}`$. By (7), the diagonal polynomial
 $`t\longmapsto F_{n,\beta}(z;t,\ldots,t)`$ has no zero in the open upper half-plane. The Grace–Walsh–Szegő coincidence theorem for the convex circular domain $`H`$ therefore implies
 
 ```math
 F_{n,\beta}(z;a_1,\ldots,a_n)\ne0
- \quad\hbox{whenever every }a_i\in H.
+ \quad\text{whenever every }a_i\in H.
 \tag{12}
 ```
 
@@ -230,7 +230,7 @@ Now fix arbitrary **real** parameters $`a_1,\ldots,a_n`$. For every $`\epsilon>0
 z\longmapsto F_{n,\beta}(z;a_1+i\epsilon,\ldots,a_n+i\epsilon)
 ```
 
-has no zero on $`\Omega_{n,\\beta}`$, by (12). These polynomials converge locally uniformly there to $`F_{n,\beta}(z;\mathbf a)`$. The domain in (6) is connected. Hurwitz's theorem shows that the limit is either zero-free there or identically zero. Its fixed, nonzero leading coefficient $`1/(\beta)_n`$ excludes the latter possibility. Thus it has no zero on $`\Omega_{n,\\beta}`$. Its coefficients are real, so conjugation gives the same conclusion in the lower half-plane.
+has no zero on $`\Omega_{n,\beta}`$, by (12). These polynomials converge locally uniformly there to $`F_{n,\beta}(z;\mathbf a)`$. The domain in (6) is connected. Hurwitz's theorem shows that the limit is either zero-free there or identically zero. Its fixed, nonzero leading coefficient $`1/(\beta)_n`$ excludes the latter possibility. Thus it has no zero on $`\Omega_{n,\beta}`$. Its coefficients are real, so conjugation gives the same conclusion in the lower half-plane.
 
 We have proved a statement stronger than the nonreal part needed below: for **every real parameter vector** $`a`$, every nonreal zero of (2) belongs to the disk in (1).
 
@@ -254,7 +254,7 @@ Here is a direct derivation. For any polynomial $`Q(w)=\sum_jq_jw^j`$, the finit
  =\frac{(z+\beta)_j}{(\beta)_j}.
 ```
 
-Expanding $`Q(-w-1)`$ contributes an overall factor $`(-1)^j`$ for its term of degree $`j`$. Applying $`L_\\beta^{-1}`$ therefore gives
+Expanding $`Q(-w-1)`$ contributes an overall factor $`(-1)^j`$ for its term of degree $`j`$. Applying $`L_\beta^{-1}`$ therefore gives
 
 ```math
 L_\beta^{-1}[Q(-w-1)](z)
@@ -273,7 +273,7 @@ F_{n,\beta}(z;1,\ldots,1)
  =\frac{(z+\beta)_n}{(\beta)_n}.
 ```
 
-It has the zero $`z=-(\beta+n-1)`$ and belongs to $`U_{n,\\beta}`$ because its transform is $`(w+1)^n`$. On the other hand, (1) implies $`|z|\le n-1+\beta`$ for every root of every polynomial in that class. The supremum is therefore attained and equals $`n-1+\beta`$. QED.
+It has the zero $`z=-(\beta+n-1)`$ and belongs to $`U_{n,\beta}`$ because its transform is $`(w+1)^n`$. On the other hand, (1) implies $`|z|\le n-1+\beta`$ for every root of every polynomial in that class. The supremum is therefore attained and equals $`n-1+\beta`$. QED.
 
 ## Scope
 
