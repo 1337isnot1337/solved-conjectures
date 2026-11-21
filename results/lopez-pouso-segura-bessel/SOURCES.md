@@ -133,3 +133,8 @@ constant arithmetic; it does not replace the analytic argument.
 Treat these three closely related source conjectures as one named
 result in the requested tally. This avoids splitting one common
 argument into multiple entries.
+
+
+## Additional independent corpus audit
+
+A second reviewer recorded [an additional corpus and issue priority audit](../../research/2026-11-21-lopez-pouso-segura-independent-priority/AUDIT.md), including complete available directory inventories, five full nearby Bessel manuscripts, and eight further global issue queries. No earlier exact resolution was found in that scope. The note preserves the unavailable GitHub code search, unexported corpus entries, and inaccessible Morel full text as explicit limits.
