@@ -1,17 +1,3 @@
-import Conjectures.GrochenigBlocksAlgebra
-import Conjectures.GrochenigGaussianBasic
-import Conjectures.GrochenigBlocks
-import Conjectures.GrochenigSeparation
-import Conjectures.GrochenigSeriesCoefficients
-import Conjectures.GrochenigSeriesAnalytic
-import Conjectures.GrochenigDensityDefinitions
-import Conjectures.GrochenigSeries
-import Conjectures.GrochenigSignPreservation
-import Conjectures.GrochenigDensity
-import Conjectures.GrochenigWitness
-import Conjectures.GrochenigGaussian
-import Conjectures.GrochenigDensityLocalFiniteness
-import Conjectures.Grochenig
 import Conjectures.ChenKhareSahiOrthogonalityData
 import Conjectures.ChenKhareSahiOrthogonalityTransition
 import Conjectures.ChenKhareSahiOrthogonalityGram

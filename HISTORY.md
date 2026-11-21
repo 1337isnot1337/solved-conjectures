@@ -1,10 +1,19 @@
 # History
 
+## 2026-11-21 — Gröchenig result withdrawn after checked prior resolution
+
+The upper-density assertion in Gröchenig’s Problem 4.12 was already refuted by Alexanja Senke’s public September 2026 manuscript. The [correction record](research/bounty-continuation-2026-11-21/grochenig-prior-resolution/) contains two independent mathematical reconstructions, root’s check, the exact hypothesis comparison, signed-source chronology, and the separate direct-payment eligibility audit. The earlier proof gives coefficient sign-change densities 1/Q and infinite upper zero density for every positive integer Q; Q=2 strictly covers the repository’s upper-density counterexample. The separate lower-density and central-dominance sections of the prior manuscript were not certified by this review.
+
+Under the collection-exclusion rule, removed the duplicate result directory and independent writeups, fourteen dedicated Lean modules, their root imports and required endpoints, replay entries, the Python verification step, catalogue and site references, and the dedicated historical verification packet. All six reused KVZ modules and their canonical verification evidence remain. The valid independent construction and completed Lean verification remain available at [commit 628270dc](https://github.com/1337isnot1337/solved-conjectures/commit/628270dc5e07d7924de265d2ac1beee4b5634b80).
+
+The selected joint ledger changes from twelve packages and ten named families to eleven packages and nine named families. The parallel campaign’s current table changes from thirteen packages to twelve, comprising seven proofs and five disproofs. These arithmetic corrections do not constitute a fresh review or bounty-eligibility endorsement of the other packages. Earlier entries below record historical actions and are superseded wherever they count Gröchenig as a new resolution. No exact direct-payment offer was verified, and the paid-target continuation remains at zero completions.
+
+
 ## 2026-11-21 — Gröchenig upper-density disproof verified in Lean
 
 Lean constructs one real coefficient sequence in ℓ¹(ℤ), with absolute mass one and support on the even integers. Its actual Gaussian shift sum is nonzero, has an entire extension and locally finite real zeros, and satisfies D⁺(c)=1/2 and D⁺(Z(f))≥1. Coefficient sign changes use the source convention that skips zero coefficients.
 
-All 20 modules in the exact closure passed strict source checks, the complete owned-declaration axiom audit, and stock-kernel replay. The closure contains 14 Gröchenig modules and six reused KVZ kernel modules; all 20 were audited as owned modules. The audit covers 351 declarations, 310 theorem declarations, 78 private declarations, and 157 required endpoints. The [receipt](docs/verification/lean-grochenig-20261121/receipt.json) retains the exact gate evidence.
+All 20 modules in the exact closure passed strict source checks, the complete owned-declaration axiom audit, and stock-kernel replay. The closure contains 14 Gröchenig modules and six reused KVZ kernel modules; all 20 were audited as owned modules. The audit covers 351 declarations, 310 theorem declarations, 78 private declarations, and 157 required endpoints. The [receipt](https://github.com/1337isnot1337/solved-conjectures/blob/628270dc5e07d7924de265d2ac1beee4b5634b80/docs/verification/lean-grochenig-20261121/receipt.json) retains the exact gate evidence.
 
 The separate lower-density inequality remains unresolved here. The combined repository gate and hosted validation remain separate checks.
 

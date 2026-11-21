@@ -1,16 +1,16 @@
 # Supplemental attribution audit: Han–Sabag–Kostina–Hassibi
 
-**Counting correction, 21 November 2026:** Fang–Zhang–Zhao Conjecture 4.3 is excluded following the [confirmed earlier full disproof](https://github.com/PrincipiaMathOrg/math-solutions/blob/c18609e47b635722206b9a2e9dcd402d0edcfb0a/mathdb/368345/solution.tex). The pre-Han selection is therefore nine strict families; adding the independently reviewed Han–Sabag–Kostina–Hassibi package gives ten. This correction changes no claim or credit concerning the Han package.
+**Counting correction, 21 November 2026:** Fang–Zhang–Zhao Conjecture 4.3 is excluded following the [confirmed earlier full disproof](https://github.com/PrincipiaMathOrg/math-solutions/blob/c18609e47b635722206b9a2e9dcd402d0edcfb0a/mathdb/368345/solution.tex). After also excluding Gröchenig under the [checked September prior proof](../bounty-continuation-2026-11-21/grochenig-prior-resolution/), the pre-Han selection is eight strict families; adding the independently reviewed Han–Sabag–Kostina–Hassibi package gives nine. This correction changes no claim or credit concerning the Han package.
 
 Review date: 21 November 2026. Reviewer: the current group's graph/number-theory worker.
 
 **Verdict:** the package is a contemporaneous contribution of the parallel campaign, absent from the original repository catalogue and history. Its target is the explicit universal matrix assertion in the source's Conjecture 1. The proposed strict separation of infima would refute that whole assertion; it is not a positive result restricted to one parameter value or dimension.
 
-This note supplements, and does not replace, the corrected selected nine-family attribution audit. It does not itself admit the package into that checkpoint. Additional mathematical and priority reviews are being handled separately. No remote files were changed in preparing this note.
+This note supplements, and does not replace, the corrected selected eight-family attribution audit. It does not itself admit the package into that checkpoint. Additional mathematical and priority reviews are being handled separately. No remote files were changed in preparing this note.
 
 ## Admission update
 
-The additional mathematical review passed at commit 2615371016744f9629cd6dea9e7e8f326fadf1d5, and the additional priority review passed within its documented scope at 77aef2d485251831095593045fedbf6095929ef8. Both are linked from the [current joint ledger](README.md), which admits this package as its tenth retained family. The conditional wording below preserves this audit's sequence of checks and the separate roles of the reviews.
+The additional mathematical review passed at commit 2615371016744f9629cd6dea9e7e8f326fadf1d5, and the additional priority review passed within its documented scope at 77aef2d485251831095593045fedbf6095929ef8. Both are linked from the [current joint ledger](README.md), which admits this package as its ninth retained family. The conditional wording below preserves this audit's sequence of checks and the separate roles of the reviews.
 
 ## 1. Baseline absence
 
@@ -88,14 +88,14 @@ The provenance and original-source scope pass this audit. Complete mathematical 
 If the root worker admits this package after those reviews pass, it would add one parallel-group package and one distinct literal-source family. Relative to the existing selected checkpoint, the arithmetic would become:
 
 ```math
-7+5=12\quad\text{retained reviewed packages},
+7+4=11\quad\text{retained reviewed packages},
 \qquad
-12-1=11\quad\text{literal-source packages},
+11-1=10\quad\text{literal-source packages},
 \qquad
-11-1=10\quad\text{named families}.
+10-1=9\quad\text{named families}.
 ```
 
-The subtractions would still remove corrected-source Novelli–Thibon from the strict tally and merge the two López Pouso–Segura packages. The joint ledger now records this admission after the explicit Fang–Zhang–Zhao exclusion; the historical pre-admission audit retains its separate nine-family scope.
+The subtractions would still remove corrected-source Novelli–Thibon from the strict tally and merge the two López Pouso–Segura packages. The joint ledger now records this admission after the explicit Fang–Zhang–Zhao and Gröchenig exclusions; the historical pre-admission audit retains its separate eight-family scope.
 
 This file was prepared locally for possible atomic publication by the coordinating root worker. No remote issue comment or repository mutation was made for this supplemental audit.
 

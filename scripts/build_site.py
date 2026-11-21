@@ -65,7 +65,6 @@ STATUS_LABEL_SLUGS = {
     "Ferreira–Simon's conjecture": "ferreira-simon-beta-prime",
     "Lyon's conjecture": "lyon-gamma-median",
     "Han–Sabag–Kostina–Hassibi's conjecture": "han-sabag-kostina-hassibi",
-    "Gröchenig's problem": "grochenig-zero-density",
     "López Pouso–Segura's node conjecture": "lopez-pouso-segura-quadrature",
     "Vishnyakova's conjecture": "vishnyakova-root-radius",
     "Novelli–Thibon's conjecture": "novelli-thibon",

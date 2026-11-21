@@ -70,8 +70,6 @@ jobs:
         run: python results/lyon-gamma-median/verify.py
       - name: Check Han-Sabag-Kostina-Hassibi exact Lyapunov counterexample
         run: python results/han-sabag-kostina-hassibi/verify.py
-      - name: Check Grochenig Gaussian-block identities and error budgets
-        run: python results/grochenig-zero-density/verify.py
       - name: Check Vishnyakova polynomial-transform identities
         run: python results/vishnyakova-root-radius/verify.py
       - name: Check Franklin profile identities

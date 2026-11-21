@@ -31,7 +31,7 @@ Neither this correction nor the mathematical review certifies Senke's separate l
 
 ## Repository handling and accounting
 
-The repository's `AGENTS.md` collection rule requires excluding a named result when an earlier proof settles its exact assertion. The active result directory, duplicate writeups, result-index entries, and active verifier references are therefore scheduled for removal in the coordinated correction. Distinct results and reused general modules must remain intact. This audit stays as the correction record.
+The repository's `AGENTS.md` collection rule requires excluding a named result when an earlier proof settles its exact assertion. The active result directory, duplicate writeups, result-index entries, and active verifier references are therefore removed in the coordinated correction. Distinct results and reused general modules must remain intact. This audit stays as the correction record.
 
 The independent analytic construction is preserved at [first proof commit d707c6a](https://github.com/1337isnot1337/solved-conjectures/commit/d707c6a032f7210ac8d5e957bfc77c5b00fcaa3f). The completed Lean work and its verification receipts are preserved at [commit 628270dc](https://github.com/1337isnot1337/solved-conjectures/commit/628270dc5e07d7924de265d2ac1beee4b5634b80). This review did not rerun that complete Lean build and does not attribute it to the paid-target continuation.
 

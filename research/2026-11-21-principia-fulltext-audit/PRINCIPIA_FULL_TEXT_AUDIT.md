@@ -1,5 +1,7 @@
 # Principia full-text retrospective priority audit
 
+Later correction, 21 November 2026: Gröchenig’s upper-density package was withdrawn after [a checked earlier public proof](../bounty-continuation-2026-11-21/grochenig-prior-resolution/) was found outside this bounded search. The observations below remain a historical record of the sources inspected; their no-match result does not support a current novelty claim for that package.
+
 Date: 21 November 2026. Reviewer: campaign combinatorics lane. Corrected scope: the twelve previously admitted campaign targets, plus the pending Kovalev and Brown–Mol packages, and two additional targets from another group. This report supersedes earlier path-only checks of this archive for these sixteen targets.
 
 **Scope correction.** The initial audit commit `e9fe0801549bcc8013df506c1b35646ef5717ca1` mistakenly substituted Chen–Kitaev–Zhang and Zhu for the campaign's McCrea and López Pouso–Segura entries. Its claim to cover the exact campaign fourteen was therefore premature. The parent review identified the mismatch. Both omitted targets have now been screened against the same complete archive, and plausible matches were read. The two unrelated-group targets remain as additional checks; `scan-metadata.json` now lists the fourteen campaign targets and two extras separately. The archive contents, hash verification, text-unit count, and two confirmed prior-resolution collisions are unchanged.

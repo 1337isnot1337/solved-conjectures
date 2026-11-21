@@ -1,5 +1,7 @@
 # Trure, mxym, and AFTD retrospective priority audit
 
+Later correction, 21 November 2026: Gröchenig’s upper-density package was withdrawn after [a checked earlier public proof](../bounty-continuation-2026-11-21/grochenig-prior-resolution/) was found outside this bounded search. The observations below remain a historical record of the sources inspected; their no-match result does not support a current novelty claim for that package.
+
 Date: 21 November 2026. Reviewer: campaign analysis lane.
 
 This audit covers the exact fourteen campaign families listed below. It replaces filename-only checks of the two large source archives with complete text-content searches, PDF extraction, compressed-source searches, and inspection of plausible matching claims. It also checks the public AFTD knowledgebase and all-state Trure issue searches.

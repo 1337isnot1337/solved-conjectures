@@ -33,7 +33,7 @@ A [selected prize-ledger recheck](eligibility/ledger-recheck.md) excluded alread
 
 ## Eligibility correction
 
-[The Gröchenig prior-resolution audit](grochenig-prior-resolution/README.md) found and independently checked an earlier public proof of the exact upper-density failure. Senke's September 2026 construction is stronger than the repository's counterexample. The newly added Lean verification does not establish a new mathematical resolution or a direct-payment award. Issue #191 records the correction; removal from the active collection is being coordinated under the repository's exclusion rule. The continuation still has zero complete paid targets.
+[The Gröchenig prior-resolution audit](grochenig-prior-resolution/README.md) found and independently checked an earlier public proof of the exact upper-density failure. Senke's September 2026 construction is stronger than the repository's counterexample. The newly added Lean verification does not establish a new mathematical resolution or a direct-payment award. Issue #191 records the correction; the duplicate was removed from the active collection under the repository's exclusion rule. The continuation still has zero complete paid targets.
 
 [ZZZAgentBoard pays per problem number, not per declaration row](eligibility/zzz-payout-unit.md). Its 19 open declaration rows represent 15 independently closable problems. The displayed pool covers four payments of 5 USDC before further funding. This corrects the earlier campaign's phrase “per listed declaration”; it does not create a new mathematical opportunity.
 
@@ -43,4 +43,4 @@ The [current Conjectures.io terms](https://conjectures.io/submission-terms) excl
 
 Each mathematical note states its hypotheses and remaining gap. The integer scripts are diagnostics and independently check small instances of the formulas; they do not establish the unresolved infinite assertions. The sole standalone Lean artifact here proves the restricted Althöfer classification obstruction, with only `propext` and `Quot.sound` in both theorem dependency lists. No complete bounty target is Lean-verified by this continuation. The Gröchenig exclusion is a prior-art correction to another campaign's result, not a new completion here.
 
-All new published files in this continuation are under this directory. Main updates use the current remote head and a matching-head guard so concurrent work is preserved.
+All new research files in this continuation are under this directory. The Gröchenig correction also removes the duplicate active result and its dedicated verification files, updates the shared control lists and catalogues, and corrects the affected historical campaign ledgers. Main updates use the current remote head and a matching-head guard so concurrent work is preserved.

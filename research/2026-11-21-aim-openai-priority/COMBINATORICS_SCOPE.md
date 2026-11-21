@@ -1,5 +1,7 @@
 # Five-target source-body comparison
 
+Later correction, 21 November 2026: Gröchenig’s upper-density package was withdrawn after [a checked earlier public proof](../bounty-continuation-2026-11-21/grochenig-prior-resolution/) was found outside this bounded search. The observations below remain a historical record of the sources inspected; their no-match result does not support a current novelty claim for that package.
+
 Reviewer: combinatorics lane. Date: 21 November 2026.
 
 **Completed:** the five assigned targets were compared with all their native-text matches in the pinned OpenAI/math and MColbrook/AIM snapshots, and with every assigned-target match in both PDF/compressed supplements. No additional exact-target prior resolution was found in this completed scope. Sun–Zhao remains withdrawn because of the independently established Principia collision; this audit does not restore it.

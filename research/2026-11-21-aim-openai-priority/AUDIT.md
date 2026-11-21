@@ -1,5 +1,7 @@
 # AIM and OpenAI full-content priority audit
 
+Later correction, 21 November 2026: Gröchenig’s upper-density package was withdrawn after [a checked earlier public proof](../bounty-continuation-2026-11-21/grochenig-prior-resolution/) was found outside this bounded search. The observations below remain a historical record of the sources inspected; their no-match result does not support a current novelty claim for that package.
+
 Date: 21 November 2026.
 
 ## Finding and scope

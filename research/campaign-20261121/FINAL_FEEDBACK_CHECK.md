@@ -1,5 +1,7 @@
 # Final feedback check
 
+Later correction, 21 November 2026: Gröchenig’s upper-density package was withdrawn after [a checked earlier public proof](../bounty-continuation-2026-11-21/grochenig-prior-resolution/) was found outside this bounded search. The observations below remain a historical record of the sources inspected; their no-match result does not support a current novelty claim for that package.
+
 **Finding:** no new mathematical objection, priority collision, withdrawal, or scope correction was found in the inspected feedback. This check changes no result status or count.
 
 ## Sources and times

@@ -1,20 +1,22 @@
 # Joint conjecture results
 
+Priority correction, 21 November 2026: [the checked September proof](../bounty-continuation-2026-11-21/grochenig-prior-resolution/) resolves the same upper-density assertion as the now-excluded Gröchenig package. The selected joint tally is nine named families. The earlier analytic proof and later Lean verification remain in Git history; neither supplies a new-resolution count.
+
 Research checkpoint: 21 November 2026. Coordination: [issue 156](https://github.com/1337isnot1337/solved-conjectures/issues/156).
 
 ## Count and attribution
 
-After the prior-resolution correction below, this reviewed joint checkpoint includes twelve complete proposed result packages from two concurrent groups. Eleven packages resolve the printed source assertions directly; grouping the two López Pouso–Segura packages gives **ten named conjecture/problem families** in the strict tally below. Fang–Zhang–Zhao's infinite-log-convexity disproof is excluded because the complete argument was already public on 26 October 2026.
+After the prior-resolution correction below, this reviewed joint checkpoint includes eleven complete proposed result packages from two concurrent groups. Ten packages resolve the printed source assertions directly; grouping the two López Pouso–Segura packages gives **nine named conjecture/problem families** in the strict tally below. Fang–Zhang–Zhao's infinite-log-convexity disproof is excluded because the complete argument was already public on 26 October 2026.
 
-The remaining package proves Novelli–Thibon's intended monomial-product conjecture with a source-supported correction of its printed exponent index. It is documented as an additional result and is not needed to reach the strict ten-family tally.
+The remaining package proves Novelli–Thibon's intended monomial-product conjecture with a source-supported correction of its printed exponent index. It is documented as an additional result outside the strict nine-family tally.
 
-Seven packages were developed by the current four-worker group: Chen–Kitaev–Zhang, Zhu, the two Ferreira–Simon problems, Simon, Novelli–Thibon, and the López Pouso–Segura quadrature disproof. Five retained packages were developed by the parallel group recorded in [its checkpoint](../campaign-20261121/): McCrea, the López Pouso–Segura Bessel proofs, Vishnyakova, Gröchenig, and Han–Sabag–Kostina–Hassibi. The current group independently reviewed those five packages before including them here. Its mathematically valid Fang–Zhang–Zhao review is preserved as a review of a rediscovery, with no new-result credit. The [original attribution audit](ATTRIBUTION.md) and [Han–Sabag–Kostina–Hassibi supplement](ATTRIBUTION_HAN.md) check the baseline, exact publication histories and counting arithmetic. This is an attributable joint tally. Other packages in the parallel group's live checkpoint remain outside this selected review unless separately admitted after cross-review.
+Seven packages were developed by the current four-worker group: Chen–Kitaev–Zhang, Zhu, the two Ferreira–Simon problems, Simon, Novelli–Thibon, and the López Pouso–Segura quadrature disproof. Four retained packages were developed by the parallel group recorded in [its checkpoint](../campaign-20261121/): McCrea, the López Pouso–Segura Bessel proofs, Vishnyakova, and Han–Sabag–Kostina–Hassibi. The current group independently reviewed those four retained packages before including them here. Its mathematically valid Fang–Zhang–Zhao review is preserved as a review of a rediscovery, with no new-result credit. The [original attribution audit](ATTRIBUTION.md) and [Han–Sabag–Kostina–Hassibi supplement](ATTRIBUTION_HAN.md) check the baseline, exact publication histories and counting arithmetic. This is an attributable joint tally. Other packages in the parallel group's live checkpoint remain outside this selected review unless separately admitted after cross-review.
 
-Each package has a complete written proof or exact refutation with its precise source scope stated, a separate internal mathematical review, and a documented search for earlier resolutions. All remain unrefereed. The searches found no earlier full resolution for the retained packages within their stated scope; inaccessible sources and indexing limits are recorded. Subsequent direct archive inspection superseded the earlier negative search for Fang–Zhang–Zhao and Sun–Zhao, as documented below. A search cannot establish worldwide absence of prior work.
+Each package has a complete written proof or exact refutation with its precise source scope stated, a separate internal mathematical review, and a documented search for earlier resolutions. All remain unrefereed. The searches found no earlier full resolution for the retained packages within their stated scope; inaccessible sources and indexing limits are recorded. Subsequent direct archive inspection superseded the earlier negative search for Fang–Zhang–Zhao, Sun–Zhao, and Gröchenig, as documented below. A search cannot establish worldwide absence of prior work.
 
-No Lean work was performed. Exact algebraic computations check identities and source conventions. Positive finite tests are not used as proofs of universal statements.
+No Lean work was performed during the original research campaign. Exact algebraic computations check identities and source conventions. Positive finite tests are not used as proofs of universal statements.
 
-## The ten families
+## The nine families
 
 | # | Named conjecture | Complete result | Origin and discussion |
 | --- | --- | --- | --- |
@@ -26,13 +28,12 @@ No Lean work was performed. Exact algebraic computations check identities and so
 | 6 | López Pouso–Segura's conjectures: [Bessel sequences](../../results/lopez-pouso-segura-bessel/) and [quadrature upper bounds](../../results/lopez-pouso-segura-quadrature/) | Published Conjectures 2, 5 and 8 hold in full. The strict upper inequalities in Conjectures 3 and 7 are false. Two packages count as one family. | Parallel group: Bessel; current group: quadrature. [177](https://github.com/1337isnot1337/solved-conjectures/issues/177), [184](https://github.com/1337isnot1337/solved-conjectures/issues/184) |
 | 7 | [McCrea's conjecture](../../results/mccrea-single-crossover/) | Original Conjecture 9.2 holds: a unique crossover density exists for every permitted modulus, with the eventual strict comparisons for every fixed density in the source interval on either side of the crossing. | Parallel group; [168](https://github.com/1337isnot1337/solved-conjectures/issues/168) |
 | 8 | [Vishnyakova's root-radius conjecture](../../results/vishnyakova-root-radius/) | The full outer-root-radius bound holds for every positive degree, every positive weight, and arbitrary independent parameters. A stronger disk bound is proved and the extremizer is identified. Original and weighted formulations count together. | Parallel group; [182](https://github.com/1337isnot1337/solved-conjectures/issues/182) |
-| 9 | [Gröchenig's problem](../../results/grochenig-zero-density/) | The upper Beurling-density comparison in Problem 4.12 is false, by one infinite Gaussian shift sum with absolutely summable coefficients. The separate lower-density inequality remains open. | Parallel group; [191](https://github.com/1337isnot1337/solved-conjectures/issues/191) |
-| 10 | [Han–Sabag–Kostina–Hassibi's conjecture](../../results/han-sabag-kostina-hassibi/) | The universal Lyapunov-positivity sparse-optimality assertion is false. An exact feasible encoder beats the infimum over every sparse assignment, with a strict gap on an open family. | Parallel group; [197](https://github.com/1337isnot1337/solved-conjectures/issues/197) |
+| 9 | [Han–Sabag–Kostina–Hassibi's conjecture](../../results/han-sabag-kostina-hassibi/) | The universal Lyapunov-positivity sparse-optimality assertion is false. An exact feasible encoder beats the infimum over every sparse assignment, with a strict gap on an open family. | Parallel group; [197](https://github.com/1337isnot1337/solved-conjectures/issues/197) |
 
 
 ## Additional corrected-source result
 
-[Novelli–Thibon's monomial-product conjecture](../../results/novelli-thibon/) is proved for all partition pairs and independent parameters, using the exponent index required by the source's own worked example. The correction and the exact intended statement are explicit. This additional result, including its hook-formula consequence, contributes zero to the strict ten-family count. Discussion: [issue 180](https://github.com/1337isnot1337/solved-conjectures/issues/180).
+[Novelli–Thibon's monomial-product conjecture](../../results/novelli-thibon/) is proved for all partition pairs and independent parameters, using the exponent index required by the source's own worked example. The correction and the exact intended statement are explicit. This additional result, including its hook-formula consequence, contributes zero to the strict nine-family count. Discussion: [issue 180](https://github.com/1337isnot1337/solved-conjectures/issues/180).
 
 ## Mathematical content
 
@@ -153,20 +154,6 @@ A complex-parameter tridiagonal argument and reciprocal-segment lemma give half-
 
 [Proof](../../results/vishnyakova-root-radius/PROOF.md), [independent review](../2026-11-21-vishnyakova-independent-review/AUDIT.md), [source audit](../../results/vishnyakova-root-radius/SOURCE_AUDIT.md).
 
-### Gröchenig
-
-One nonzero entire Gaussian shift sum with an absolutely summable real coefficient sequence satisfies
-```math
-D^+(c)=\frac12,
-\qquad
-D^+(Z(f))\ge1.
-```
-This refutes the source's universal upper-density comparison. Finite blocks place $`N`$ simple zeros in an interval of length $`N`$, while their alternating coefficients occupy even integer positions over length $`2N`$. Recursive separation makes interference smaller than the nonzero test values in each block. A summable coefficient-mass budget gives an entire infinite sum, and every block retains its sign changes.
-
-The coefficient sign-change set is contained in the even integers and contains arbitrarily long alternating blocks, so its upper density is exactly one half. Arbitrarily long zero-rich intervals give upper zero density at least one. The construction uses one fixed infinite sequence, not a finite numerical instance. The separate lower-density assertion remains open.
-
-[Proof](../../results/grochenig-zero-density/PROOF.md), [additional independent mathematical review](../2026-11-21-grochenig-independent-review/AUDIT.md), [additional independent priority audit](../2026-11-21-grochenig-independent-review/PRIORITY.md).
-
 ### Han–Sabag–Kostina–Hassibi
 
 The explicit matrix conjecture asks whether every feasible diagonal-matrix instance admits an optimal encoder with exactly one nonzero entry per column. The displayed feasible set allows independent diagonal positive semidefinite $`\Pi`$ and arbitrary real $`\Gamma`$; no extra relation between them is assumed.
@@ -201,10 +188,11 @@ The [final global issue-history refresh](PRIORITY_REFRESH.md) supplements the in
 
 ## Prior-resolution corrections
 
-The following mathematically valid reproofs do not contribute to the ten-family count.
+The following mathematically valid reproofs do not contribute to the nine-family count.
 
 | Excluded target | Decisive earlier resolution | Repository action |
 | --- | --- | --- |
+| Gröchenig's upper-density assertion | [Senke's public September manuscript](https://github.com/interlink-Bridge/groechenig-problem-4-12-gaussian-density/blob/66bfb67ebb919ad6e8c373beb190cfa0144bd84f/paper/main.tex), Section 3, gives a stronger counterexample to the same assertion. Two independent reviewers and root checked the proof. | Removed from the active collection and all current counts; [correction and dated evidence](../bounty-continuation-2026-11-21/grochenig-prior-resolution/). The valid independent proof and Lean verification remain in immutable Git history. |
 | Fang–Zhang–Zhao's infinite-log-convexity conjecture | [Complete earlier disproof](https://github.com/PrincipiaMathOrg/math-solutions/blob/c18609e47b635722206b9a2e9dcd402d0edcfb0a/mathdb/368345/solution.tex), public commit `c18609e4`, 26 October 2026. Identical exact witnesses and all-parameter polynomial proof. | Excluded from the strict tally; [corrected independent priority audit](../2026-11-21-special-functions-fzz-priority/AUDIT.md). |
 | Sun–Zhao's iterated-ratio conjecture | [Complete earlier disproof](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-332483/mathdb-332483-solution.tex), public commit `34b8b155`, 27 October 2026, 02:59:18 UTC. Same twelfth iterate and retained indices 12, 13, 14, with an exact integer certificate. | Definitively excluded; [corrected priority audit](../2026-11-21-sun-zhao-independent-review/PRIORITY.md). It was already outside this joint strict tally. |
 | Fang–Zhang–Zhao's Sturm conjecture | Full ordinary proof in [TT 18758](https://github.com/the-omega-institute/trureturing/issues/18758), 18 October 2026, with the same stronger real-base/all-parameter theorem. Later incomplete formalization does not change ordinary-proof priority. | Removed result/status/verifier registrations at [6670242](https://github.com/1337isnot1337/solved-conjectures/commit/66702422a6e04fa7a2fe1ca30ad529531442ab69); retained [credited research](../fang-zhang-zhao-sturm/). |
@@ -224,7 +212,7 @@ Coulter–Do–Moskovsky's full-profile limiting roots and eventual monotone tai
 
 The [Rivero scope note](../2026-11-21-special-functions-rivero/SCOPE.md) documents an arithmetic obstruction to the literal real-threshold tail equivalence. The intended nonarithmetic scope and related prior full text remain unsettled, so this is also uncounted.
 
-Sun–Zhao's iterated-ratio counterexample passed [independent mathematical and source-indexing review](../2026-11-21-sun-zhao-independent-review/AUDIT.md), but direct inspection subsequently located the same complete disproof in the [earlier Principia source](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-332483/mathdb-332483-solution.tex). Its public commit predates this campaign by 25 days. The package is definitively excluded as prior work, not merely held for unread sources. The journal and Maple [access history](../2026-11-21-sun-zhao-independent-review/SOURCE_ACCESS.md) is preserved as a historical record; those access gaps no longer determine the priority decision. Sun–Zhao was never in this joint strict tally, so its exclusion does not reduce the ten-family count again.
+Sun–Zhao's iterated-ratio counterexample passed [independent mathematical and source-indexing review](../2026-11-21-sun-zhao-independent-review/AUDIT.md), but direct inspection subsequently located the same complete disproof in the [earlier Principia source](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-332483/mathdb-332483-solution.tex). Its public commit predates this campaign by 25 days. The package is definitively excluded as prior work, not merely held for unread sources. The journal and Maple [access history](../2026-11-21-sun-zhao-independent-review/SOURCE_ACCESS.md) is preserved as a historical record; those access gaps no longer determine the priority decision. Sun–Zhao was never in this joint strict tally, so its exclusion does not reduce the nine-family count again.
 
 ## Delivery and review
 

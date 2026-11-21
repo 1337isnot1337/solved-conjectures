@@ -1,16 +1,8 @@
 # Verification
 
+Gröchenig’s upper-density result is excluded after a [checked earlier resolution](../research/bounty-continuation-2026-11-21/grochenig-prior-resolution/). Its independent proof and verification receipts remain in [immutable Git history](https://github.com/1337isnot1337/solved-conjectures/blob/628270dc5e07d7924de265d2ac1beee4b5634b80/docs/verification/lean-grochenig-20261121/receipt.json). The reused KVZ results remain active.
+
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
-
-## Gröchenig complete local verification
-
-All 20 modules in the exact closure passed strict source checks, the complete owned-declaration axiom audit, and stock-kernel replay. The closure contains 14 Gröchenig modules and six reused KVZ kernel modules; all 20 were audited as owned modules. The audit covers 351 declarations, 310 theorem declarations, 78 private declarations, and 157 required endpoints.
-
-The [receipt](verification/lean-grochenig-20261121/receipt.json) retains strict source evidence for all 20 modules, the exact source/object/control hashes, the current raw audit log and its revalidation, and the unchanged stock replay. It includes the literal final infinite witness and the source upper-density disproof.
-
-Lean constructs one real coefficient sequence in ℓ¹(ℤ), with absolute mass one and support on the even integers. Its actual Gaussian shift sum is nonzero, has an entire extension and locally finite real zeros, and satisfies D⁺(c)=1/2 and D⁺(Z(f))≥1. Coefficient sign changes use the source convention that skips zero coefficients.
-
-The separate lower-density inequality remains unresolved here. The combined repository gate and hosted validation remain separate checks.
 
 ## Chen–Khare–Sahi stable Hall local verification
 
@@ -204,11 +196,6 @@ python3 results/han-sabag-kostina-hassibi/verify.py
 ```
 
 
-The [Gröchenig checker](../results/grochenig-zero-density/verify.py) runs 784 exact standard-library checks of finite Gaussian-block identities, signs, normalization, geometric error budgets, and interval counts. The [written proof](../results/grochenig-zero-density/PROOF.md) constructs the infinite counterexample and proves convergence and both upper-density bounds. The checks diagnose algebra and transcription errors; no finite screen establishes the infinite assertion.
-
-```bash
-python3 results/grochenig-zero-density/verify.py
-```
 
 
 

@@ -83,12 +83,6 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 | --- | --- | --- | --- |
 | [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | Complete proposed disproof of the Lyapunov positivity conjecture. A rational feasible encoder has power strictly below the infimum over every encoder with one nonzero per column. All sparse assignments are exhausted, and the same failure holds on an open interval of channel gains. The full matrix assertion is refuted; no separate communication-code theorem is claimed. | Complete source formalization; merged-package gate pending | [Proof](results/han-sabag-kostina-hassibi/PROOF.md) · [Source audit](results/han-sabag-kostina-hassibi/SOURCES.md) · [Algebra review](results/han-sabag-kostina-hassibi/ALGEBRA_REVIEW.md) · [Analysis review](results/han-sabag-kostina-hassibi/ANALYSIS_REVIEW.md) · [Checks](results/han-sabag-kostina-hassibi/verify.py) · [Issue 197](https://github.com/1337isnot1337/solved-conjectures/issues/197) |
 
-## Zeros of Gaussian shift sums
-
-| Problem | Result | Formalization | Evidence |
-| --- | --- | --- | --- |
-| [Gröchenig's problem](results/grochenig-zero-density/) | Lean constructs one real coefficient sequence in ℓ¹(ℤ), with absolute mass one and support on the even integers. Its actual Gaussian shift sum is nonzero, has an entire extension and locally finite real zeros, and satisfies D⁺(c)=1/2 and D⁺(Z(f))≥1. Coefficient sign changes use the source convention that skips zero coefficients. This disproves the universal upper-density assertion in Problem 4.12. The separate lower-density assertion remains unresolved. | Complete for the upper-density disproof; full 20-module source/audit/replay closure passed | [Proof](results/grochenig-zero-density/PROOF.md) · [Source audit](results/grochenig-zero-density/SOURCES.md) · [Root review](results/grochenig-zero-density/ROOT_REVIEW.md) · [Algebra review](results/grochenig-zero-density/ALGEBRA_REVIEW.md) · [Checks](results/grochenig-zero-density/verify.py) · [Issue 191](https://github.com/1337isnot1337/solved-conjectures/issues/191) · [Lean receipt](docs/verification/lean-grochenig-20261121/receipt.json) |
-
 ## Zeros of polynomial transforms
 
 | Problem | Result | Formalization | Evidence |
@@ -251,7 +245,6 @@ These are mathematical claims with explicit proofs and computer checks, **not pe
 
 - Roos–Seiringer: *BCS Critical Temperature on Half-Spaces*, Archive for Rational Mechanics and Analysis 249 (2025), article 20, [DOI 10.1007/s00205-025-02088-x](https://link.springer.com/article/10.1007/s00205-025-02088-x), §5, the unnumbered radial-kernel nonnegativity assertion following Lemma 5.1 and Figures 1–2. The full scalar assertion is distinct from positivity of the unaveraged kernel.
 
-- Karlheinz Gröchenig, *Infinite totally positive matrices: some open problems*, Acta Scientiarum Mathematicarum (2026), [DOI 10.1007/s44146-026-00264-3](https://doi.org/10.1007/s44146-026-00264-3), Problem 4.12. The upper-density assertion is refuted; the separate lower-density assertion is not resolved here.
 
 - Anna Vishnyakova, *Polynomials interpolated totally positive sequences*, [arXiv:2607.06207v1](https://arxiv.org/abs/2607.06207), Open Problem 6.2, and *Polynomially Deformed Normalized Pochhammer Sequences Having Generating Functions With Only Real Non-positive Zeros*, [arXiv:2608.03723v1](https://arxiv.org/abs/2608.03723), Open Problem 7.2.
 - Jean-Christophe Novelli and Jean-Yves Thibon, *Noncommutative chromatic quasi-symmetric functions, Macdonald polynomials, and the Yang–Baxter equation*, JCTA 220 (2026), 106130, [arXiv:2502.09072v2](https://arxiv.org/html/2502.09072v2), Conjecture 5.7 and the following hook-coefficient assertion.
