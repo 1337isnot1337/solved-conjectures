@@ -86,6 +86,38 @@ For \(B\ne0\), it is positive. Termwise differentiation of (2) proves the quanti
 
 The [full-interval \(C^2\) strengthening](hwang_substochastic_padding.md#full-interval-c2-strengthening) of the padding theorem gives \(p_M/d_{M+m}\to F_B\) uniformly with two derivatives on **\([0,1]\)**, where \(p_M(t)=\operatorname{per}((1-t)J_{M+m}+tA_M(B))\). This uses \(M>q=m-s\) to keep the tail factor positive at the endpoint. Thus eventually \(p_M''/d_{M+m}\ge\|B\|_F^2/2>0\) throughout. Since \(p_M'(0)=0\), integration gives the finite conclusion.
 
+## Quantified finite Lih-Wang chord gap
+
+The full-segment \(C^2\) transfer gives more than monotonicity. For
+every fixed nonzero core \(B\) in the theorem, choose \(M\) sufficiently
+large that
+
+~~~math
+p_M''(t)\ge \tfrac12d_{M+m}\|B\|_F^2
+\qquad (0\le t\le1).
+~~~
+
+For a twice-differentiable real function \(f\) with \(f''\ge c\)
+on \([0,1]\), the function \(f(t)-ct^2/2\) is convex. Its chord inequality
+rearranges to
+\(f(t)\le(1-t)f(0)+tf(1)-ct(1-t)/2\).
+Applying this with \(f=p_M\), \(c=d_{M+m}\|B\|_F^2/2\), and
+\(p_M(0)=d_{M+m}\), gives for **every \(0\le t\le1\)**
+
+~~~math
+\operatorname{per}((1-t)J_{M+m}+tA_M(B))
+\le (1-t)d_{M+m}+t\,\operatorname{per}A_M(B)
+-\frac{d_{M+m}}4\|B\|_F^2t(1-t).
+\tag{4}
+~~~
+
+The inequality is strict relative to the ordinary chord for
+\(0<t<1\). It proves the full Lih-Wang chord comparison for these
+genuine **indefinite, sometimes boundary** matrices, including
+the conjecture's required half segment. It does not prove C34 for
+unrestricted doubly stochastic matrices, and is not a new complete
+Minc-entry resolution.
+
 ## Indefinite finite-completion example
 
 Take the connected three-by-three Gram core
