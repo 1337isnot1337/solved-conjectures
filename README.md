@@ -55,6 +55,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | ⬜ |
 | [Chow's conjecture](results/chow-conjecture/) | ⬜ |
 | [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
+| [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | ⬜ |
 | [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
 | [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |
 | [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |

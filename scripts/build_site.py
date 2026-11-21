@@ -88,6 +88,7 @@ STATUS_LABEL_SLUGS = {
     "Németh–Seberry–Shu conjecture": "nemeth-seberry-shu",
     "Sonntag–Teichert conjecture": "sonntag-teichert",
     "Horňák–Woźniak conjecture": "hornak-wozniak",
+    "Circulants with circular chromatic index in the upper half": "circular-index-upper-half-circulants",
     "L-solitaire": "l-solitaire-limit-shapes",
     "Three-player War": "spivey-multiplayer-war",
     "Pham denominator degree": "pham-denominator-degree",
