@@ -30,6 +30,7 @@ modules=(
   Conjectures.ChenKhareSahiSaturation
   Conjectures.ChenKhareSahiHall
   Conjectures.ChenKhareSahiParameter
+  Conjectures.ChenKhareSahiUnique
   Conjectures.ChenKhareSahiCovers
   Conjectures.FussCatalan
   Conjectures.BrownMolGeneralRoot
