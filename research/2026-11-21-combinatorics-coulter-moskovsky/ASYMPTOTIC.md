@@ -1,8 +1,8 @@
 # Coulter–Do–Moskovsky's conjecture: genus-asymptotic roots
 
-Research manuscript, 21 November 2026. Proposed theorem: all fixed profiles have
+Research manuscript, 21 November 2026. Internally audited theorem: all fixed profiles have
 the conjectured root limits and eventually strict monotone convergence from the
-predicted side. Independent mathematical and source-scope review is pending.
+predicted side. Independent mathematical and primary-source review passed.
 Monotonicity from genus zero is not established. No completed-conjecture count
 is assigned to this note while that scope distinction remains unresolved.
 
@@ -227,6 +227,7 @@ normalization in Section 1, prove (1).
 
 ## 5. Roots and strict monotone tails
 
+The source's Proposition 3.9 gives the exact degree d−1 of H_g for d≥2.
 Since L_d has d−1 distinct real roots, coefficientwise convergence F_g→L_d
 gives one real root of F_g in each of d−1 disjoint small real neighborhoods
 for sufficiently large g. This can be proved directly by preserving the
@@ -280,11 +281,12 @@ the source illustrates its monotonicity claim with genera 10 through 20.
 The theorem above proves all the specified limits and the asserted direction
 on a sufficiently large tail, uniformly over no finite profile cutoff.
 
-If “the convergence ... is increasing from below” is intended to require
-monotonicity at every genus starting with zero, that stronger assertion is
-not proved here. A full-resolution label is withheld until independent
-source-scope review decides whether the precise asymptotic theorem resolves
-the published conjecture or is a substantive partial result. The separate
+The independent source review checked the published PDF, pages 23–24: its
+monotonicity clause has no eventual qualifier. The finite range in Figure 3
+is evidence, not a restriction of the conjecture's scope. Monotonicity at
+every genus starting with zero is not proved here. The result is therefore
+retained conservatively as a substantive partial theorem, without a
+full-resolution label or completed-conjecture count. The separate
 Conjectures 3.13–3.14, which require all-genus real-rootedness and
 profile-increment interlacing, are not proved by this argument.
 
