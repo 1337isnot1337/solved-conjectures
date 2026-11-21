@@ -83,7 +83,7 @@ The second expression for $T_m$ pairs $k$ with $m-k$. In $T_{m+2}$ separate the 
 
 ```math
  T_{m+2}=D_{m+1}-\frac{m+2}{2}T_m-\frac12 U_m
-       +\frac12\,{\bf1}_{2\mid m}(-1)^{m/2}D_{m/2}.
+       +\frac12\,\mathbf{1}_{2\mid m}(-1)^{m/2}D_{m/2}.
 \tag{5}
 ```
 
