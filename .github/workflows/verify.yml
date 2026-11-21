@@ -151,8 +151,10 @@ jobs:
         run: python3 results/nonmixed-gap-packing/verify.py
       - name: Check Haralambis three-difference rotation certificates
         run: python3 results/haralambis-three-differences/verify.py
-      - name: Check the upper-half circulant theorems for the circular chromatic index
-        run: python3 results/circular-index-upper-half-circulants/verify.py
+      - name: Check the upper-half circulant theorems and supplementary certificates
+        run: |
+          python3 results/circular-index-upper-half-circulants/verify.py
+          python3 results/circular-index-upper-half-circulants/verify_part2.py
       - name: Verify the five-speed loneliness spectrum
         run: python3 results/five-speed-spectrum/verify.py
       - name: Verify tight six-speed sets and seven-coordinate critical planes
