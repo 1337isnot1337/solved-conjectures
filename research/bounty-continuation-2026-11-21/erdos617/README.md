@@ -59,6 +59,14 @@ It is independence-critical and ratio-minimal: every proper induced subgraph W h
 
 The core still satisfies a nonempty permitted edge interval. The connected-case bound q(q−1)<r and the cross-color arguments concern a different graph and cannot be transferred to this normalization. The normalization is a reduction, not an exclusion of the core or a coloring construction.
 
+The [compression-gap audit](erdos617-core-compression-gap.md) proves that replacing any nonempty subset of the final core by isolated cliques of order at most r necessarily raises its independence number. Independent-set neighborhood expansion is already implied by ratio-minimality. For a genuine (r+1)-critical subgraph F, the audit retains its order f, extra induced edges a, and boundary edges b and proves
+
+```math
+(r-2)(f-r-1)+2ra+rb\le qr^2.
+```
+
+This is a legitimate transfer of the Kostochka–Yancey edge bound; it does not assume the whole core is chromatic-critical. The inequality still leaves a nonempty permitted range. Even an unproved spanning-critical hypothesis would only give 2s≤r+2, which does not eliminate every surviving configuration.
+
 ## Prior-work correction
 
 The [earlier local-independence record](https://erdosproblems.ai/wiki/research/erdos_617/independent/growing_local_independence_range) already proves the independence-number-three exclusion and gives a pentagon-core obstruction to the weak one-color route. Those ideas were rediscovered during this work, then identified by the literature audit. The companion notes explicitly credit the earlier record. They must not be counted as new solutions or novel partial theorems.
