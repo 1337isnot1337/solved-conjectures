@@ -75,7 +75,6 @@ STATUS_LABEL_SLUGS = {
     "Malek's conjecture": "malek-subpermanent",
     "Pula–Song–Wanless conjecture": "pula-song-wanless",
     "Perron root of permanental compounds": "perron-root-permanental-compounds",
-    "Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture": "kvz-bessel-unimodality",
     "Ferreira–Simon's Wright log-concavity conjecture": "ferreira-simon-wright",
     "Karp–Vishnyakova–Zhang's gamma-quotient conjecture": "kvz-gamma-quotient",
     "Alexandersson's Fuss–Catalan conjecture": "alexandersson-fuss-catalan",

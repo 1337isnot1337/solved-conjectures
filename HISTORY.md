@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Prior-resolution correction for KVZ Bessel-ratio unimodality
+
+Withdrew the older Karp–Vishnyakova–Zhang Bessel-ratio unimodality entry after reading [Trure issue 25199](https://github.com/the-omega-institute/trureturing/issues/25199), created and last updated on 1 November 2026. It supplies a complete correct analytic proof for every ordered real order pair above minus one and every ordered positive scale pair, including equal orders, equal scales, and negative orders. The remaining tasks named in that issue are formal translation and repository admission, not missing mathematics.
+
+The result directory, duplicate research proof/checker, active catalogue and status entries, site alias, and verifier workflow references are removed. Historical reviews remain with prominent superseding corrections and immutable links to the earlier local proof. The [correction record](research/kvz-bessel-unimodality/PRIOR_RESOLUTION_CORRECTION.md) gives the exact statement comparison and verified Wronskian argument. Mathematical correctness of the independent reproof does not restore priority. This older entry was outside the current fourteen-target audit, so the current subgroup tally is unchanged. No Lean source or proof execution is part of this correction.
+
 ## 2026-11-21 — Sonntag–Teichert tournament theorem in Lean
 
 Formalized the tournament domination-hypergraph theorem from finite arc and domination definitions. Strict standalone compilation, an all-owned axiom audit and stock-kernel replay passed. The additional classification and realization of oriented graphs with missing arcs, and the combined repository gate, remain pending.
@@ -242,6 +248,8 @@ The mathematical statement is unchanged.
 
 ## 2026-11-20 — Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture
 
+**Superseded on 21 November 2026:** the exact conjecture was already proved in [Trure issue 25199](https://github.com/the-omega-institute/trureturing/issues/25199) on 1 November. The following entry records the historical independent reproof, which is excluded from the original-result collection.
+
 Added a complete proof of the full surviving unimodality assertion for all
 ordered real orders greater than minus one and all ordered positive scales.
 The Bessel differential equation gives a Wronskian derivative with at most
@@ -256,7 +264,7 @@ endpoint/positivity checks. The prior-work audit distinguishes adjacent-order,
 same-argument, and Kaiser–Bessel results from this full assertion. No outside
 peer review or exclusive priority is claimed.
 
-[Proof, classification, exact checks, and source audit](results/kvz-bessel-unimodality/).
+[Historical proof, classification, exact checks, and source audit](https://github.com/1337isnot1337/solved-conjectures/tree/260d8cd070fc6642edd722b16e52370a91ab73f7/results/kvz-bessel-unimodality/).
 
 ## 2026-11-20 — Ferreira–Simon's Wright log-concavity conjecture
 

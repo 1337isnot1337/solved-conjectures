@@ -1,17 +1,15 @@
 # Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture
 
-## Scope and current conclusion
+> **Prior-resolution correction, 21 November 2026.** [Trure issue 25199](https://github.com/the-omega-institute/trureturing/issues/25199), public since 1 November, already proves the exact full-domain unimodality assertion. The independent proof remains mathematically valid, but this historical review does not establish novelty. The result has been withdrawn; see [PRIOR_RESOLUTION_CORRECTION.md](PRIOR_RESOLUTION_CORRECTION.md).
+
+## Historical scope and conclusion (superseded)
 
 Audit date: 20 November 2026. The target is the full unimodality assertion
 for arbitrary ordered real orders greater than minus one and arbitrary
 ordered positive scales. It is the first assertion of Conjecture 1 in
 arXiv:2408.01755v2, not the separate log-concavity clause.
 
-No earlier proof of this exact all-parameter assertion has been located in
-the inspected sources. The new argument is a short application of the
-classical Bessel differential equation and a Wronskian identity. Those
-tools are not claimed as new. This is a bounded literature assessment, not
-a guarantee of exclusive priority or external peer review.
+The 20 November audit reported that it had located no earlier proof. That assessment missed the complete 1 November proof in Trure issue 25199 and is superseded by the correction above. The Bessel differential-equation and Wronskian argument is an independent reproof of an already resolved assertion.
 
 The initial proof was committed as
 `9a5f90c84d13e85352b79402e4e79fc0f7819c2a`. An independent mathematical

@@ -115,12 +115,7 @@ The Fang–Zhang–Zhao infinite-log-convexity and Sun–Zhao iterated-ratio dis
 
 These are the commands in [the verification workflow](../.github/workflows/verify.yml). They include finite tests, exact certificates, and exhaustive searches; their mathematical roles are explained in the corresponding proof notes. A passing computation is not a claim that a full theorem has been formalized.
 
-The [Bessel-ratio verifier](../results/kvz-bessel-unimodality/verify.py)
-compares independently multiplied rational series coefficients with the
-Wronskian derivative identity and checks the leading terms in all sign
-branches. These finite checks diagnose transcription errors; the
-[written argument](../results/kvz-bessel-unimodality/PROOF.md) proves the
-full classification for all orders and scales in the conjecture.
+The older Karp–Vishnyakova–Zhang Bessel-ratio unimodality package was withdrawn after [a complete earlier analytic proof](https://github.com/the-omega-institute/trureturing/issues/25199) was found. Its duplicate verifier and workflow step are removed. The [priority correction](../research/kvz-bessel-unimodality/PRIOR_RESOLUTION_CORRECTION.md) preserves the exact domain comparison and historical proof links.
 
 The [Wright verifier](../results/ferreira-simon-wright/verify.py) checks
 the general curvature identity as an exact polynomial in three variables,
@@ -148,7 +143,6 @@ recursive-game identities through `CutPeriodWeightTheorem`.
 
 ```bash
 python3 -m pip install sympy==1.14.0
-python3 results/kvz-bessel-unimodality/verify.py
 python3 results/ferreira-simon-wright/verify.py
 python3 results/kvz-gamma-quotient/verify.py
 python3 results/alexandersson-fuss-catalan/verify.py

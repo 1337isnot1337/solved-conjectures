@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Prior-resolution withdrawal, 21 November 2026
+
+The Karp–Vishnyakova–Zhang Bessel-ratio unimodality entry is no longer an active collection target. [Trure issue 25199](https://github.com/the-omega-institute/trureturing/issues/25199), published on 1 November, already contains a complete analytic proof for the same full domain. The [correction record](../research/kvz-bessel-unimodality/PRIOR_RESOLUTION_CORRECTION.md) preserves the mathematical reviews and attributes the prior resolution. The duplicate result and computational checks are removed; no shared Lean source or formalization receipt is changed, and no Lean work was performed for this correction.
+
 ## Zhu Jacobi–Stirling checkpoint
 
 `Conjectures.ZhuJacobiStirling` derives the complete coefficientwise counterexample from the recurrence and checks the determinant identity and ordered-field negative region. The standalone strict source check, all-owned axiom audit and stock-kernel replay passed; the merged-package gate is pending. See [issue 163](https://github.com/1337isnot1337/solved-conjectures/issues/163).

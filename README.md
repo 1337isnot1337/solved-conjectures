@@ -32,7 +32,6 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
 | [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
-| [Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture](results/kvz-bessel-unimodality/) | ⬜ |
 | [Simon's stable-infimum conjecture](results/simon-stable-infimum/) | ⬜ |
 | [Ferreira–Simon's stochastic-order conjecture](results/ferreira-simon-stochastic/) | ⬜ |
 | [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | ⬜ |

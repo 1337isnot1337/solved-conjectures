@@ -1,5 +1,7 @@
 # Expanded public solution archive audit
 
+> **Prior-resolution correction, 21 November 2026.** [Trure issue 25199](https://github.com/the-omega-institute/trureturing/issues/25199), public since 1 November, already proves the exact full-domain unimodality assertion. The independent proof remains mathematically valid, but this historical review does not establish novelty. The result has been withdrawn; see [PRIOR_RESOLUTION_CORRECTION.md](PRIOR_RESOLUTION_CORRECTION.md).
+
 Audit date: 20 November 2026.
 
 This supplement concerns only the complete unimodality assertion for

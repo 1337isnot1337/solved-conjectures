@@ -30,8 +30,6 @@ jobs:
         run: python results/malek-subpermanent/verify.py
       - name: Check permanental-compound trace and support identities
         run: python results/perron-root-permanental-compounds/verify.py
-      - name: Check Bessel-ratio Wronskian identities and endpoint terms
-        run: python results/kvz-bessel-unimodality/verify.py
       - name: Check Wright disproof curvature identities
         run: python results/ferreira-simon-wright/verify.py
       - name: Check gamma-quotient signs, rank, and moment normalization
