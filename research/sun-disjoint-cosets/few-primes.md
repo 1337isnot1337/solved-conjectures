@@ -43,3 +43,14 @@ The projected coset of index $n$ has measure $1/n_S$. Choose $S$ to consist of t
 When $h=1$, apply the projection inequality to each singleton. The product of the projections contains $E$ and has measure at most $1/m$, so equality holds everywhere and $E$ is that entire product. For each further coset, containment gives $n_p\ge m_p$ for every $p$, hence $m\mid n$. Two disjoint further cosets must be disjoint in some coordinate. Neither can equal the whole projection there, so both local indices strictly exceed $m_p$ and are divisible by $p m_p$. Their global gcd is divisible by $pm$.
 
 This complement argument uses the sizes of boxes and finite fibers. The factors of the complementary product need not themselves be cosets. It rules out every proposed counterexample with largest pairwise gcd $m$ and at least $m-1$ cosets of index $m$, provided there are at least $m+1$ cosets in the family.
+
+## Rounding the available space in a fiber
+
+There is another obstruction when the cosets have several different indices. In the same finite nilpotent setting, let $S$ be any collection of Sylow coordinates and $B$ a positive integer. Write $T=S^c$ and $J=\{i:(n_i)_S\nmid B\}$, where $(n_i)_S$ is the product of the prime parts in $S$. Then
+$$
+ B\sum_{i\notin J}\frac1{n_i}
+ +\mu_T\!\left(\bigcup_{j\in J}\operatorname{proj}_T C_j\right)\le B.
+$$
+Indeed, fixing the $T$ coordinates, each surviving box outside $J$ occupies an integer number of $1/B$ units of the $S$-fiber. Wherever any box in $J$ survives, the total of these integers is at most $B-1$. Integrating gives the bound. In particular the union term is at least $\max_{j\in J}1/(n_j)_T$ when $J$ is nonempty. If an exceptional index is supported entirely on $S$, this term equals one.
+
+For example, consider two index-9 cosets, eight index-12 cosets and one each of indices 24, 27 and 36. This numerical pattern would refute Sun's conjecture if realizable. Take $S=\{3\}$ and $B=3$. The index-27 box projects onto the entire complementary factor. The index-12 and index-24 boxes alone require $3(8/12+1/24)=17/8$ units on average, exceeding the two available. This excludes the pattern in every finite nilpotent group without a search over subgroups.
