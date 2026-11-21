@@ -840,3 +840,5 @@ import Conjectures.SonntagTeichert
 import Conjectures.BrownMolRootBound
 import Conjectures.BrownMolIntegerCert
 import Conjectures.BrownMolFiniteRoot
+import Conjectures.BrownMolTree
+import Conjectures.BrownMolCounterexample

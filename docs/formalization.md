@@ -33,7 +33,7 @@ The Karp–Vishnyakova–Zhang Bessel-ratio unimodality entry is no longer an ac
 
 ## Brown–Mol finite-root checkpoint
 
-`Conjectures.BrownMolFiniteRoot` proves the explicit r=200 polynomial factor has a nonzero root inside the forbidden disk using a checked log-derivative bound and exact integer arithmetic. The literal tree/subtree-polynomial identification and infinite family remain. Strict standalone source checks, all-owned axiom audit and stock-kernel replay passed; the combined gate is pending. See [issue 210](https://github.com/1337isnot1337/solved-conjectures/issues/210).
+`Conjectures.BrownMolCounterexample` proves the literal 1001-vertex tree has a nonzero subtree root inside the forbidden disk, using a general log-derivative bound, exact integer arithmetic and a count of its connected induced vertex sets. The all-large-parameter infinite family remains. Strict standalone source checks, all-owned axiom audit and stock-kernel replay passed; the combined gate is pending. See [issue 210](https://github.com/1337isnot1337/solved-conjectures/issues/210).
 
 ## Coordination, 18 November 2026
 

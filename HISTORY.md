@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Brown–Mol finite tree counterexample in Lean
+
+Formalized the literal branch graph as a tree, its all-parameter subtree generating function and the explicit 1001-vertex counterexample. Strict source compilation, all-owned axiom audit and kernel replay of the five-module closure passed. The stronger infinite-family result and combined repository gate remain pending.
+
 ## 2026-11-21 — Brown–Mol finite polynomial root in Lean
 
 Checked the r=200 polynomial factor has a nonzero root inside the forbidden disk via an exact Gaussian-integer certificate and a general log-derivative bound. Strict standalone source compilation, all-owned axiom audit and stock-kernel replay passed. The tree/subtree-polynomial identification, infinite family and combined gate remain pending.
