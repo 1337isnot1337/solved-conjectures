@@ -842,3 +842,11 @@ import Conjectures.BrownMolIntegerCert
 import Conjectures.BrownMolFiniteRoot
 import Conjectures.BrownMolTree
 import Conjectures.BrownMolCounterexample
+import Conjectures.BrownMolGeneralRoot
+import Conjectures.BrownMolRootTargets
+import Conjectures.BrownMolSequenceRoot
+import Conjectures.BrownMolPreimages
+import Conjectures.BrownMolBasePoint
+import Conjectures.BrownMolFamily
+import Conjectures.BrownMolDiameter
+import Conjectures.BrownMolInfiniteFamily

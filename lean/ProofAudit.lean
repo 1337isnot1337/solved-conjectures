@@ -9,6 +9,13 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BrownTree.graph_diameter_four,
+    `BrownMol.infinite_tree_counterfamily,
+    `BrownMol.polynomial_family_roots_converge,
+    `BrownTargets.target_power,
+    `BrownTargets.target_tendsto,
+    `BrownBase.exists_base,
+    `BrownMol.root_near_of_derivative_bound,
     `BrownTree.graph_isTree,
     `BrownTree.connected_iff_induced_connected,
     `BrownTree.subtree_sum,

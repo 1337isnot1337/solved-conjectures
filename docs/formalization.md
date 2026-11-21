@@ -31,9 +31,9 @@ The Karp–Vishnyakova–Zhang Bessel-ratio unimodality entry is no longer an ac
 
 `Conjectures.SonntagTeichert` proves the finite tournament theorem via blocker duality and representative counting. The forward oriented-graph two-star classification and an explicit realization with arbitrary additional isolated vertices are checked. The standalone strict source check, all-owned axiom audit and stock-kernel replay passed; the combined repository gate is pending. See [issue 70](https://github.com/1337isnot1337/solved-conjectures/issues/70).
 
-## Brown–Mol finite-root checkpoint
+## Brown–Mol counterfamily
 
-`Conjectures.BrownMolCounterexample` proves the literal 1001-vertex tree has a nonzero subtree root inside the forbidden disk, using a general log-derivative bound, exact integer arithmetic and a count of its connected induced vertex sets. The all-large-parameter infinite family remains. Strict standalone source checks, all-owned axiom audit and stock-kernel replay passed; the combined gate is pending. See [issue 210](https://github.com/1337isnot1337/solved-conjectures/issues/210).
+`Conjectures.BrownMolInfiniteFamily` proves the literal trees have diameter four and a nonzero subtree root inside the forbidden disk for all sufficiently large parameters. `Conjectures.BrownMolCounterexample` separately verifies the explicit 1001-vertex example by exact integer arithmetic. Both results use a count of actual connected induced vertex sets. Strict standalone source checks, all-owned axiom audit and stock-kernel replay passed; the combined gate is pending. See [issue 210](https://github.com/1337isnot1337/solved-conjectures/issues/210).
 
 ## Coordination, 18 November 2026
 

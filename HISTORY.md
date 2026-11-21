@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Brown–Mol infinite counterfamily in Lean
+
+Formalized the all-sufficiently-large diameter-four counterfamily, including the analytic root existence argument, the exact tree diameter and the literal subtree generating function. Strict source compilation, all-owned axiom audit and kernel replay passed; the combined repository gate is pending.
+
 ## 2026-11-21 — Brown–Mol finite tree counterexample in Lean
 
 Formalized the literal branch graph as a tree, its all-parameter subtree generating function and the explicit 1001-vertex counterexample. Strict source compilation, all-owned axiom audit and kernel replay of the five-module closure passed. The stronger infinite-family result and combined repository gate remain pending.
