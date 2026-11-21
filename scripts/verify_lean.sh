@@ -112,6 +112,14 @@ modules=(
   Conjectures.LopezPousoSeguraBesselReference
   Conjectures.JohnsonPfaffianFour
   Conjectures.JohnsonPfaffianUncross
+  Conjectures.JohnsonPfaffianIntervals
+  Conjectures.JohnsonPfaffianSummation
+  Conjectures.JohnsonPfaffianTelescoping
+  Conjectures.JohnsonPfaffianSource
+  Conjectures.JohnsonPfaffianProduct
+  Conjectures.JohnsonPfaffianScaling
+  Conjectures.JohnsonPfaffianMatching
+  Conjectures.JohnsonPfaffianSmall
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany

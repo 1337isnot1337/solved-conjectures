@@ -46,6 +46,14 @@ import Conjectures.LopezPousoSeguraBesselConditional
 import Conjectures.LopezPousoSeguraBesselReference
 import Conjectures.JohnsonPfaffianFour
 import Conjectures.JohnsonPfaffianUncross
+import Conjectures.JohnsonPfaffianIntervals
+import Conjectures.JohnsonPfaffianSummation
+import Conjectures.JohnsonPfaffianTelescoping
+import Conjectures.JohnsonPfaffianSource
+import Conjectures.JohnsonPfaffianProduct
+import Conjectures.JohnsonPfaffianScaling
+import Conjectures.JohnsonPfaffianMatching
+import Conjectures.JohnsonPfaffianSmall
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
