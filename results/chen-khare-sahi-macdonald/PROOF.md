@@ -1,5 +1,9 @@
 # Chen–Khare–Sahi's conjecture
 
+## Formalization scope
+
+The current endpoints use the standard monic triangular Macdonald eigenfunctions. Stable Hall orthogonality followed by specialization is being formalized separately. The manuscript's literal truncated finite-variable Hall pairing conflicts with that convention; the [degree-three diagnostic](https://github.com/1337isnot1337/solved-conjectures/issues/201#issuecomment-7065320695) must be reconciled before claiming a full literal-source formalization.
+
 ## Statement and result
 
 This note disproves **Conjecture 5** in Hong Chen, Apoorva Khare and

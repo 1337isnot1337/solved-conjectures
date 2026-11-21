@@ -7,7 +7,8 @@ theorem realM_average (a b c : ℕ) (x y z : ℝ) :
       (x^a*y^b*z^c + x^a*y^c*z^b + x^b*y^a*z^c + x^b*y^c*z^a +
        x^c*y^a*z^b + x^c*y^b*z^a) / 6 := by
   by_cases hab : a=b <;> by_cases hac : a=c <;> by_cases hbc : b=c
-  all_goals simp_all [realM, orbit, Finset.sum_insert, Finset.sum_singleton] <;> ring
+  all_goals simp_all [realM, orbit, Finset.sum_insert, Finset.sum_singleton]
+  all_goals ring
 
 theorem realM_translate (a b c r : ℕ) (x y z : ℝ) :
     realM (a+r) (b+r) (c+r) x y z = (x*y*z)^r * realM a b c x y z := by

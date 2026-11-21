@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-21 — Chen–Khare–Sahi strict compatibility repairs
+
+Replaced repeated monomial-product proof search with 115 proved pair identities and an indexed degree-at-most-six dispatch. Repaired strict-linter, arithmetic-normalization and deprecated-lemma failures in Translate, Boundary, Parameter and Unique. The existing public definitions and theorem statements are unchanged.
+
+All 16 existing modules passed fresh strict Lean 4.35 compilation with warnings treated as errors. The complete owned/private audit checked 1,454 declarations, including 1,254 theorem declarations, 816 private declarations and all 49 required endpoints. Only `propext`, `Classical.choice` and `Quot.sound` are allowed. Independent stock-kernel replay of the revised closure and the combined repository gate remain pending. The README badge remains partial.
+
+The current endpoints use the standard monic triangular Macdonald eigenfunctions. Stable Hall orthogonality followed by specialization is being formalized separately. The manuscript's literal truncated finite-variable Hall pairing conflicts with that convention; the [degree-three diagnostic](https://github.com/1337isnot1337/solved-conjectures/issues/201#issuecomment-7065320695) must be reconciled before claiming a full literal-source formalization.
+
 ## 2026-11-21 — Chow conjecture fully verified in Lean
 
 Proved consecutive interlacing of the ordinary type-D Eulerian polynomials

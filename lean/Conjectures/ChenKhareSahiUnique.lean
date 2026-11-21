@@ -21,7 +21,7 @@ theorem matrix420_det (q t : ℝ) :
   simp only [Matrix.det_fin_three]
   norm_num [matrix420, eigenResidual, paramOperator, realDelta, basis420, points420,
     realMonomial, realM_average, orbit, Matrix.submatrix, Fin.succ, Fin.succAbove]
-  <;> ring
+  all_goals ring
 
 
 noncomputable def linear420 (a b c d : ℝ) : SymFun := fun x y z =>
@@ -32,7 +32,7 @@ theorem matrix420_mulVec (q t a b c d : ℝ) (i : Fin 4) :
     (matrix420 q t).mulVec ![a,b,c,d] i =
       eigenResidual q t (q^4*t^2+q^2*t+1) (linear420 a b c d) (points420 i) := by
   fin_cases i <;>
-    simp [Matrix.mulVec, dotProduct, Matrix.vecHead, Matrix.vecTail, Fin.sum_univ_four, matrix420, eigenResidual, paramOperator,
+    simp [Matrix.mulVec, dotProduct, Fin.sum_univ_four, matrix420, eigenResidual, paramOperator,
       realDelta, basis420, points420, linear420] <;> ring
 
 theorem residual420_difference (q t a b c d : ℝ) (v : ℝ × ℝ × ℝ) :
@@ -86,7 +86,7 @@ theorem matrix411_det (q t : ℝ) :
     (matrix411 q t).det = -34560*q^2*t*(q-1)^2*(q*t-1)*(q^2*t-1)*(q*t+t+1) := by
   rw [Matrix.det_fin_two]
   norm_num [matrix411, eigenResidual, paramOperator, realDelta, basis411, points411, realMonomial, realM_average, orbit]
-  <;> ring
+  all_goals ring
 
 noncomputable def linear411 (a b : ℝ) : SymFun := fun x y z =>
   a*realMonomial 3 2 1 x y z + b*realMonomial 2 2 2 x y z
@@ -95,7 +95,7 @@ theorem matrix411_mulVec (q t a b : ℝ) (i : Fin 2) :
     (matrix411 q t).mulVec ![a,b] i =
       eigenResidual q t (q^4*t^2+q*t+q) (linear411 a b) (points411 i) := by
   fin_cases i <;>
-    simp [Matrix.mulVec, dotProduct, Matrix.vecHead, Matrix.vecTail, Fin.sum_univ_two, matrix411,
+    simp [Matrix.mulVec, dotProduct, Fin.sum_univ_two, matrix411,
       eigenResidual, paramOperator, realDelta, basis411, points411, linear411] <;> ring
 
 theorem residual411_difference (q t a b : ℝ) (v : ℝ × ℝ × ℝ) :
@@ -140,9 +140,15 @@ theorem parameter_nonzero (q t : ℝ) (hq0 : 0 < q) (hq1 : q < 1) (ht0 : 0 < t) 
   have hq2 : q^2 < 1 := pow_lt_one₀ (le_of_lt hq0) hq1 (by norm_num)
   have hq3 : q^3 < 1 := pow_lt_one₀ (le_of_lt hq0) hq1 (by norm_num)
   have ht2 : t^2 ≤ 1 := pow_le_one₀ (le_of_lt ht0) (le_of_lt ht1)
-  have hqt : q*t < 1 := mul_lt_one_of_nonneg_of_lt_one_left (le_of_lt hq0) hq1 (le_of_lt ht1)
-  have hq2t : q^2*t < 1 := mul_lt_one_of_nonneg_of_lt_one_left (sq_nonneg q) hq2 (le_of_lt ht1)
-  have hq3t2 : q^3*t^2 < 1 := mul_lt_one_of_nonneg_of_lt_one_left (by positivity) hq3 ht2
+  have hqt : q*t < 1 := calc
+    q*t ≤ q*1 := mul_le_mul_of_nonneg_left ht1.le hq0.le
+    _ < 1 := by simpa only [mul_one] using hq1
+  have hq2t : q^2*t < 1 := calc
+    q^2*t ≤ q^2*1 := mul_le_mul_of_nonneg_left ht1.le (sq_nonneg q)
+    _ < 1 := by simpa only [mul_one] using hq2
+  have hq3t2 : q^3*t^2 < 1 := calc
+    q^3*t^2 ≤ q^3*1 := mul_le_mul_of_nonneg_left ht2 (by positivity)
+    _ < 1 := by simpa only [mul_one] using hq3
   have hqtp : 0 < q*t := mul_pos hq0 ht0
   exact ⟨by linarith, by linarith, by linarith, by linarith, by linarith⟩
 

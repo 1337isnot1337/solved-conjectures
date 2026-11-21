@@ -90,7 +90,9 @@ theorem unshift_shift (p : Partition) (r : ℕ) (h : r ≤ p.2.2)
     (hp1 : p.2.1 ≤ p.1) (hp2 : p.2.2 ≤ p.2.1) :
     shiftPartition (unshiftPartition p r) r = p := by
   rcases p with ⟨a,b,c⟩
-  simp only [Prod.fst, Prod.snd] at *
+  change r ≤ c at h
+  change b ≤ a at hp1
+  change c ≤ b at hp2
   simp only [unshiftPartition, shiftPartition, Prod.mk.injEq]
   omega
 

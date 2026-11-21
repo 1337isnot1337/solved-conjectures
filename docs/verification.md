@@ -2,6 +2,12 @@
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
 
+## Chen–Khare–Sahi compatibility checkpoint
+
+All 16 existing modules passed fresh strict Lean 4.35 compilation with warnings treated as errors. The complete owned/private audit checked 1,454 declarations, including 1,254 theorem declarations, 816 private declarations and all 49 required endpoints. Only `propext`, `Classical.choice` and `Quot.sound` are allowed. Independent stock-kernel replay of the revised closure and the combined repository gate remain pending. The README badge remains partial.
+
+[Receipt](verification/lean-cks-compatibility-20261121/receipt.json) and [complete owned audit](verification/lean-cks-compatibility-20261121/audit.log). The current endpoints use the standard monic triangular Macdonald eigenfunctions. Stable Hall orthogonality followed by specialization is being formalized separately. The manuscript's literal truncated finite-variable Hall pairing conflicts with that convention; the [degree-three diagnostic](https://github.com/1337isnot1337/solved-conjectures/issues/201#issuecomment-7065320695) must be reconciled before claiming a full literal-source formalization.
+
 ## Chow complete local verification
 
 The full all-rank theorem has a checked 11-module closure.

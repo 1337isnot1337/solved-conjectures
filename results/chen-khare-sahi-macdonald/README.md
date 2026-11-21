@@ -1,8 +1,8 @@
 # Chen–Khare–Sahi's conjecture
 
-The Muirhead-semiring implication in Conjecture 5 of Chen, Khare and Sahi's
+The proposed counterexample to Conjecture 5 of Chen, Khare and Sahi's
 *Majorization via positivity of Jack and Macdonald polynomial differences*
-is false. The normalized Macdonald difference for
+uses the standard monic Macdonald family. The normalized difference for
 $`(4,2,0)\succeq(4,1,1)`$ at $`q=1/10,t=9/10`$ lies outside the full
 Muirhead semiring.
 
@@ -20,10 +20,18 @@ rectangular translate of the partition pair is a counterexample. A
 Hall–Littlewood calculation supplies a continuous family of parameters
 with the same obstruction.
 
-This disproves the full equivalence asserted in Conjecture 5 through its
-semiring clause. The weaker evaluation-positivity inequality remains a
+Under this standard Macdonald convention, this refutes the equivalence
+asserted in Conjecture 5 through its semiring clause. The weaker evaluation-positivity inequality remains a
 separate question; Sra has proved that inequality for this same partition
 pair. The Jack-semiring Conjecture 4 is not resolved by this package.
+
+## Current formalization scope
+
+The current endpoints use the standard monic triangular Macdonald eigenfunctions. Stable Hall orthogonality followed by specialization is being formalized separately. The manuscript's literal truncated finite-variable Hall pairing conflicts with that convention; the [degree-three diagnostic](https://github.com/1337isnot1337/solved-conjectures/issues/201#issuecomment-7065320695) must be reconciled before claiming a full literal-source formalization.
+
+All 16 existing modules passed fresh strict Lean 4.35 compilation with warnings treated as errors. The complete owned/private audit checked 1,454 declarations, including 1,254 theorem declarations, 816 private declarations and all 49 required endpoints. Only `propext`, `Classical.choice` and `Quot.sound` are allowed. Independent stock-kernel replay of the revised closure and the combined repository gate remain pending. The README badge remains partial.
+
+[Compatibility receipt](../../docs/verification/lean-cks-compatibility-20261121/receipt.json).
 
 ## Files
 
@@ -53,7 +61,7 @@ python independent_orthogonality_check.py
 
 The written argument and rational certificates are complete. They have
 been independently reviewed within this research campaign; no external
-peer-review claim is made. Lean formalizes the exact source counterexample, the rectangular-translate family, and the continuous-parameter refinement, including the full real semiring and monic triangular eigenfunction characterizations. The repository-wide verification gate remains pending; see the [Lean status report](../../docs/lean-status.md).
+peer-review claim is made. Lean checks the semiring separation and both families for the explicit monic triangular eigenfunction characterization. The repository-wide verification gate remains pending; see the [Lean status report](../../docs/lean-status.md).
 
 Primary source: Hong Chen, Apoorva Khare and Siddhartha Sahi,
 [arXiv:2509.19649v2](https://arxiv.org/html/2509.19649v2), Conjecture 5,

@@ -108,7 +108,7 @@ theorem paramP411_eigen (q t x y z : ℝ) (h1 : q*t-1 ≠ 0) (h2 : q^2*t-1 ≠ 0
   unfold paramOperator paramP411 candidate411 cE cF realDelta
   field_simp [h1', h2']
   norm_num [realMonomial, realM_average, orbit]
-  <;> ring
+  all_goals ring
 
 
 set_option maxRecDepth 8192 in
@@ -121,6 +121,6 @@ theorem paramP420_eigen (q t x y z : ℝ) (h1 : q*t-1 ≠ 0) (h2 : q*t+1 ≠ 0) 
   unfold paramOperator paramP420 candidate420 cA cC cD realDelta
   field_simp [h1',h2',h3']
   norm_num [realMonomial, realM_average, orbit]
-  <;> ring
+  all_goals ring
 
 end ChenKhareSahi

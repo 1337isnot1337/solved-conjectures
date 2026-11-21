@@ -10373,7 +10373,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do
