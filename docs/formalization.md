@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak exceptional-piece foundations, 21 November 2026
+
+Lean realizes reduced-arm allocations as actual connected partitions with one exceptional piece and proves the zero-carry and no-quotient-loss subcases, plus wrapped-residue identities. The other exceptional cases, full source-test and AVD reductions, and existence constructions remain. Strict compilation, a 280-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak regular case, 21 November 2026
 
 The regular two-size connected-partition case now follows for actual star graphs from the residue bounds and fifth-test witness, with no separate extremal-count hypothesis. Extra-piece cases, full source-test and AVD reductions, and existence constructions remain. Strict compilation, a 226-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.

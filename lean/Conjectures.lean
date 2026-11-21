@@ -919,3 +919,5 @@ import Conjectures.HornakResidues
 import Conjectures.HornakSegments
 import Conjectures.HornakTiling
 import Conjectures.HornakEndpoint
+import Conjectures.HornakExtraTiling
+import Conjectures.HornakExtraResidues

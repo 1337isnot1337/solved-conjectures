@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak exceptional-piece foundations
+
+Constructed actual connected graph partitions with one exceptional piece from reduced-arm allocations; proved the zero-carry and no-quotient-loss subcases and wrapped-residue identities. Strict compilation, a 280-theorem axiom audit and isolated kernel replay passed; remaining exceptional cases, AVD reductions and the full gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak regular two-size case
 
 Proved the regular two-consecutive-size connected-partition case for actual star graphs from the residue bounds and fifth-test witness, including extremal-count construction and transfer. Strict compilation, a 226-theorem axiom audit and isolated kernel replay passed; extra-piece cases, full reductions and the full gate remain.
