@@ -23,6 +23,7 @@ import Conjectures.LopezPousoSeguraFactors
 import Conjectures.LopezPousoSeguraLegendre
 import Conjectures.LopezPousoSeguraBesselConvex
 import Conjectures.LopezPousoSeguraBesselMidpoint
+import Conjectures.LopezPousoSeguraBesselAverage
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
