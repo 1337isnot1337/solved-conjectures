@@ -1,0 +1,82 @@
+{
+  "checkpoint": 22,
+  "date": "2026-11-21",
+  "base_main": "1f3e7edd413ce84812324101c2cdf9458bb1392b",
+  "new_full_solutions": 0,
+  "campaign_proposed_full_solutions": 1,
+  "accepted_or_paid_awards": 0,
+  "files": [
+    {
+      "source": "agents/conjectures/chen-hazan-best-comparator-interface.md",
+      "source_sha256": "de2a2426c3e7e4054cf07309cfc29484d80c7e6907a20fdeea62759841686bed",
+      "published_path": "research/bounty-continuation-2026-11-21/chen-hazan/best-comparator-interface.md",
+      "published_sha256": "258dfca99bc0200742ca2524a17067f78864a6379aecd19e7872bffb3426d2a1"
+    },
+    {
+      "source": "agents/demath_zzz/chen-hazan-interface-independent-review.md",
+      "source_sha256": "5e1c0169dcfd6178872f695329ed4f0847ef35d7c080c40fa673935fcc913ec6",
+      "published_path": "research/bounty-continuation-2026-11-21/chen-hazan/INTERFACE_REVIEW.md",
+      "published_sha256": "ac4ebefcc926455172e67fff4a6b3a4b907f563c873cb3a5a150504228f1fa1e"
+    },
+    {
+      "source": "agents/root749/vc-endpoint-product-review.md",
+      "source_sha256": "fa1db2dd0205abb3e935af68c6e019ad323e021d6ec04d3da5216d0f4a19eae9",
+      "published_path": "research/bounty-continuation-2026-11-21/learning-information/vc-endpoint-product-review.md",
+      "published_sha256": "d7412abf4023ab19bd036e9d23acaaf094ce2b15c93f74500a63f81fe5971349"
+    },
+    {
+      "source": "agents/other_paid/canonne2024/target-and-prior-audit.md",
+      "source_sha256": "853605713a063aa5511fccc77e816c3832e24f16bbbba7d8dec3393f153d480d",
+      "published_path": "research/bounty-continuation-2026-11-21/canonne2024/target-and-prior-audit.md",
+      "published_sha256": "853605713a063aa5511fccc77e816c3832e24f16bbbba7d8dec3393f153d480d"
+    },
+    {
+      "source": "agents/other_paid/canonne2024/head-tail-functional-attempt.md",
+      "source_sha256": "43701ec9236ec5ba572fcc916fb611dc0bb74cc267c1d8bc075881f2c1e7dc86",
+      "published_path": "research/bounty-continuation-2026-11-21/canonne2024/head-tail-functional-attempt.md",
+      "published_sha256": "a3b5afdb6f61a3115371ab0f260a5194439dd6b702da03880771dc1cd09b3e30"
+    },
+    {
+      "source": "agents/root749/canonne-tail-independent-review.md",
+      "source_sha256": "875230e4e3d1ae112cd4c1e86ffb785e278314db7db0b894b3798ac2dcfc0773",
+      "published_path": "research/bounty-continuation-2026-11-21/canonne2024/TAIL_REVIEW.md",
+      "published_sha256": "cb9f5738a09c8172f8b16d4b388857b92eb5b24d6d998645e6307322c69668f0"
+    },
+    {
+      "source": "agents/other_paid/canonne2024/prefix-cutoff-obstruction.md",
+      "source_sha256": "c7b337ddfd70fafe9ecbfc6d3986110c7360e3848abcd840fb249d8d890dbd66",
+      "published_path": "research/bounty-continuation-2026-11-21/canonne2024/prefix-cutoff-obstruction.md",
+      "published_sha256": "c88093f11d260cceb96658b2101f948b7200fc5640f03fb4224692fb0682b29c"
+    },
+    {
+      "source": "agents/root749/canonne-prefix-independent-review.md",
+      "source_sha256": "697c54bbaca07b371a725ad9230db85a314111991222a5c6bde0b98fda6bbb2c",
+      "published_path": "research/bounty-continuation-2026-11-21/canonne2024/PREFIX_REVIEW.md",
+      "published_sha256": "80cf3a241da66c9bb0e1db233dc800ef6c8079266b6e6b94e086a05a74d16163"
+    },
+    {
+      "source": "agents/other_paid/older_colt/cash-screen-audit.md",
+      "source_sha256": "b50072e166ae1b206463548b4a1a7e2a3de8c45f9dcb4bee9484c368bd2a0bfd",
+      "published_path": "research/bounty-continuation-2026-11-21/eligibility/older-colt-cash-audit.md",
+      "published_sha256": "b50072e166ae1b206463548b4a1a7e2a3de8c45f9dcb4bee9484c368bd2a0bfd"
+    },
+    {
+      "source": "agents/conjectures/hu-mehta-2024-prior-resolution-audit.md",
+      "source_sha256": "26b99432957a3c0c117222380c4d62558f32d80ad49ddfc951e222338a5fe9df",
+      "published_path": "research/bounty-continuation-2026-11-21/eligibility/hu-mehta-prior-resolution.md",
+      "published_sha256": "6edb20dc0b092d61e4eb4597688ef713650ff516b573f51fd272d04d8922f529"
+    },
+    {
+      "source": "agents/conjectures/foster-2020-prior-resolution-audit.md",
+      "source_sha256": "257bc8cb9060c93c64de9b9d7b0f4f97e34249fcf7160bbbd6068b1da8f5ce2e",
+      "published_path": "research/bounty-continuation-2026-11-21/eligibility/foster2020-prior-resolution.md",
+      "published_sha256": "257bc8cb9060c93c64de9b9d7b0f4f97e34249fcf7160bbbd6068b1da8f5ce2e"
+    },
+    {
+      "source": "agents/conjectures/woodworth-srebro-2019-question2-audit.md",
+      "source_sha256": "9b482f50a7fc458747b6a0a2efe2bebc29f94235c7a76e7a4e3809abd84a32bf",
+      "published_path": "research/bounty-continuation-2026-11-21/woodworth-srebro/question2-audit.md",
+      "published_sha256": "22d49d29c45e9a8a9bbf7beb6f57e1f222defbdec76b2acf339430c2c3334f83"
+    }
+  ]
+}
