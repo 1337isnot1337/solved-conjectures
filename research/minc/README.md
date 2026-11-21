@@ -199,3 +199,7 @@ The [paired-row sign-matrix formulas](sign-matrices/paired_row_lift.md) give exa
 The [Pate partition-lift obstruction](inequalities/pate_partition_lift_obstruction.md) retains the complementary factors in a many-copy indicator lift. Exact rank-one examples disprove a direct averaged lower bound and a nonlinear repair; an all-singleton version of the latter would already imply full Chollet through identity padding. These are excluded proof methods, not conjecture counterexamples.
 
 This checkpoint adds no full named conjecture resolution. The ten-resolution target remains unmet.
+
+## Substochastic padding checkpoint
+
+The [substochastic-core construction](inequalities/hwang_substochastic_padding.md) extends uniform padding to every doubly substochastic core. Its exact finite permanent formula converges with two derivatives to a matching sum with nonuniform monomer factors. A negative second derivative of that sum would transfer to finite counterexamples to Hwang's conjecture. The [exact checker](inequalities/hwang_substochastic_padding.py) passes twelve comparisons against full permanent enumeration. No negative-curvature core, general curvature theorem, or new conjecture resolution is claimed.

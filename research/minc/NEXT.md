@@ -42,6 +42,8 @@ The [radial convexity note](inequalities/hwang_radial_convexity.md) gives an exa
 `F_A(t)=exp(mt)(1-t)^(2m) R_A(t/(1-t)^2)`.
 The [matching-limit theorem](inequalities/hwang_matching_monotonicity.md) now proves strict positivity of the first derivative for every core on `0<t<=1/2`, and half-interval monotonicity of the finite padding family for all sufficiently large tails. Curvature remains unresolved. A core with negative second derivative would disprove Hwang by an all-order family; none is known here. The exact remaining formula is `(log F)''(1/2)=36 Var(K)-4m-4(m-EK)` at matching activity `z=2`; the stronger proposed variance comparison `Var(K)>=m/6` is unproved and must not be used as an input. Global Hessian positivity, ordinary real-rootedness of the permanent pencil, and nonnegative coefficients of the entire limiting series are false shortcuts.
 
+The [substochastic-core extension](inequalities/hwang_substochastic_padding.md) supplies a wider exact transfer: every nonnegative core with row and column sums at most one has a doubly stochastic completion whose normalized permanent path converges in `C²([0,1/2])` to the displayed weighted matching sum. Twelve exact finite counting checks pass. The all-core monotonicity theorem uses double stochasticity and does not automatically extend to this larger class. No core with negative curvature has been obtained.
+
 The full C34 chord inequality is a separate weighted average of normalized subpermanent sums. The [source audit](sign-matrices/lihw_source_audit.md) explains why the known large cofactor-ratio examples and small-transform estimates do not settle it.
 
 ### Gyires's ratio inequality
