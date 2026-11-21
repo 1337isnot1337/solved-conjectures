@@ -31,3 +31,28 @@ python3 verify.py
 c++ -O3 -std=c++17 -Wall -Wextra -Werror progression.cpp -o /tmp/hou-zeng-sieve
 /tmp/hou-zeng-sieve 49999999999999 1000000
 ```
+
+## A progression with a smaller exact exponent
+
+There is a subprogression of the first class on which the mean number of representations has order $(\log X)^{\log_{19}10}$, with $\log_{19}10=0.782011\ldots$ in place of $\log_{23}12=0.792509\ldots$. Its modulus and residue are
+
+```math
+M'=312018\cdot47\cdot107\cdot1103=1730759789766,
+\qquad r'=182449613961.
+```
+
+The argument uses digit restrictions in two multiplicatively independent bases. Write $A_q=\{j:q\nmid C_j\}$ for an odd prime $q$ and $D_q$ for the integers with every base-$q$ digit at most $(q-1)/2$. The carry criterion above shows that for $j\in A_q$, every digit of $j+1$ above the units position has this bound. Indeed, if $j$ has no trailing digit $q-1$, adding one can change only the units digit. If it has trailing digits $q-1$, the first preceding digit is at most $(q-3)/2$, interpreting a leading zero if needed. Thus $A_q$ lies in the finite union of $qD_q+a-1$ for $0\le a<q$. For distinct odd primes $p,q$, Theorem B of Glasscock, Moreira and Richter applied to each pair of affine images gives
+
+```math
+\#(A_p\cap A_q\cap[0,T])\ll_{p,q,\varepsilon}
+T^{\max(0,\alpha_p+\alpha_q-1)+\varepsilon},
+\qquad \alpha_q=\log_q((q+1)/2).
+```
+
+The deleted-digit sets are invariant under truncation at either end, and their dimensions $\alpha_q$ follow by counting words of length $b$. Distinct prime bases are multiplicatively independent. For $p=2$ we use the earlier $O(\log T)$ count. [Glasscock, Moreira and Richter, Theorem B](https://doi.org/10.1112/jlms.12902)
+
+The CRT conditions added to $r\equiv208641\pmod{312018}$ are $r'\equiv1,8,378$ modulo $47,107,1103$, respectively. In the old modulus the only Fibonacci indices for which $\gcd(r-F_i,M)=23$ are $6,66,102,114$ modulo 144. In the new modulus the Fibonacci period is 288. Every lift of indices 6 and 102 also satisfies $F_i\equiv8\pmod{107}$. Of the four lifts of indices 66 and 114, indices 66 and 258 satisfy $F_i\equiv1\pmod{47}$ and indices 114 and 210 satisfy $F_i\equiv378\pmod{1103}$. All assertions follow by iterating $(a,b)\mapsto(b,a+b)$ modulo $M'$. The checker below verifies the full period and all residue claims.
+
+For the upper bound, first discard triples whose prime divides $M'$. There are $O((\log X)^2)$ such triples in total, which contribute $o(1)$ to the mean. Any remaining triple either has $C_j$ indivisible by one of $2,3,7,17,19$, or its Fibonacci index is covered by both 23 and one of $47,107,1103$. In this last case $C_j$ must be indivisible by both primes. For all three pairs $\alpha_{23}+\alpha_q-1<0.70<\alpha_{19}$. The preceding intersection bound gives $O(T^{\alpha_{19}})$ candidate Catalan indices up to $T$ in total. Taking $T=O(\log X)$ and applying the same prime count as above gives the upper bound.
+
+For the lower bound take $i\equiv3\pmod{288}$, so $\gcd(r'-F_i,M')=19$. Start with the $\gg T^{\alpha_{19}}$ indices in $A_{19}$ up to $T$. For every other odd prime $q\mid M'$, $\alpha_{19}+\alpha_q-1<\alpha_{19}$ since $\alpha_q<1$. Removing the finitely many intersections with $A_q$, and the indices in $A_2$, leaves $\gg T^{\alpha_{19}}$ choices. For each such $j$, $r'-F_i-C_j$ is coprime to $M'$. Take $T$ a sufficiently small constant times $\log X$ and apply the prime number theorem in reduced classes modulo $M'$ as in the first lower bound. This proves the asserted order. It leaves the least number of representations in the progression open. [Exact checks](verify.py)
