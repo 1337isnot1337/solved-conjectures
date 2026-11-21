@@ -1,0 +1,266 @@
+{
+  "status": "floating search only",
+  "parameters": {
+    "blocks": 5,
+    "ranks": [
+      3,
+      4,
+      5,
+      6,
+      8
+    ],
+    "starts": 6,
+    "iterations": 200,
+    "seed": 20261121,
+    "orthonormal": true,
+    "output": "marcus_search_orthonormal.json"
+  },
+  "checks": {
+    "finite_difference_error": 5.452696627550324e-11,
+    "permutation_error": 1.8207657603852567e-14
+  },
+  "runs": [
+    {
+      "rank": 3,
+      "start": 0,
+      "best_log_ratio": 2.7168762154754176,
+      "iterations": 48,
+      "calls": 55,
+      "success": true
+    },
+    {
+      "rank": 3,
+      "start": 1,
+      "best_log_ratio": 2.7168762154748296,
+      "iterations": 43,
+      "calls": 45,
+      "success": true
+    },
+    {
+      "rank": 3,
+      "start": 2,
+      "best_log_ratio": 2.7168762154749566,
+      "iterations": 50,
+      "calls": 55,
+      "success": true
+    },
+    {
+      "rank": 3,
+      "start": 3,
+      "best_log_ratio": 2.716876215475071,
+      "iterations": 46,
+      "calls": 50,
+      "success": true
+    },
+    {
+      "rank": 3,
+      "start": 4,
+      "best_log_ratio": 2.716876215474847,
+      "iterations": 46,
+      "calls": 51,
+      "success": true
+    },
+    {
+      "rank": 3,
+      "start": 5,
+      "best_log_ratio": 2.716876215474796,
+      "iterations": 42,
+      "calls": 46,
+      "success": true
+    },
+    {
+      "rank": 4,
+      "start": 0,
+      "best_log_ratio": 1.9993988340065096,
+      "iterations": 71,
+      "calls": 77,
+      "success": true
+    },
+    {
+      "rank": 4,
+      "start": 1,
+      "best_log_ratio": 1.9994913563868713,
+      "iterations": 61,
+      "calls": 67,
+      "success": true
+    },
+    {
+      "rank": 4,
+      "start": 2,
+      "best_log_ratio": 1.9994913563868255,
+      "iterations": 48,
+      "calls": 53,
+      "success": true
+    },
+    {
+      "rank": 4,
+      "start": 3,
+      "best_log_ratio": 2.043926160591603,
+      "iterations": 67,
+      "calls": 72,
+      "success": true
+    },
+    {
+      "rank": 4,
+      "start": 4,
+      "best_log_ratio": 1.9993988340064777,
+      "iterations": 62,
+      "calls": 71,
+      "success": true
+    },
+    {
+      "rank": 4,
+      "start": 5,
+      "best_log_ratio": 2.043926160591391,
+      "iterations": 71,
+      "calls": 76,
+      "success": true
+    },
+    {
+      "rank": 5,
+      "start": 0,
+      "best_log_ratio": 1.6094379142990318,
+      "iterations": 200,
+      "calls": 210,
+      "success": false
+    },
+    {
+      "rank": 5,
+      "start": 1,
+      "best_log_ratio": 1.7377722383590901,
+      "iterations": 61,
+      "calls": 65,
+      "success": true
+    },
+    {
+      "rank": 5,
+      "start": 2,
+      "best_log_ratio": 1.7512681078735404,
+      "iterations": 98,
+      "calls": 103,
+      "success": true
+    },
+    {
+      "rank": 5,
+      "start": 3,
+      "best_log_ratio": 1.833843596159021,
+      "iterations": 191,
+      "calls": 209,
+      "success": true
+    },
+    {
+      "rank": 5,
+      "start": 4,
+      "best_log_ratio": 1.833843596158838,
+      "iterations": 146,
+      "calls": 153,
+      "success": true
+    },
+    {
+      "rank": 5,
+      "start": 5,
+      "best_log_ratio": 1.6094379127206953,
+      "iterations": 188,
+      "calls": 203,
+      "success": true
+    },
+    {
+      "rank": 6,
+      "start": 0,
+      "best_log_ratio": 1.3062516540191758,
+      "iterations": 200,
+      "calls": 215,
+      "success": false
+    },
+    {
+      "rank": 6,
+      "start": 1,
+      "best_log_ratio": 1.306251653842031,
+      "iterations": 116,
+      "calls": 124,
+      "success": true
+    },
+    {
+      "rank": 6,
+      "start": 2,
+      "best_log_ratio": 1.3062516538884483,
+      "iterations": 146,
+      "calls": 160,
+      "success": true
+    },
+    {
+      "rank": 6,
+      "start": 3,
+      "best_log_ratio": 1.3062516593153335,
+      "iterations": 200,
+      "calls": 215,
+      "success": false
+    },
+    {
+      "rank": 6,
+      "start": 4,
+      "best_log_ratio": 1.318018095609229,
+      "iterations": 60,
+      "calls": 62,
+      "success": true
+    },
+    {
+      "rank": 6,
+      "start": 5,
+      "best_log_ratio": 1.306251653522383,
+      "iterations": 186,
+      "calls": 192,
+      "success": true
+    },
+    {
+      "rank": 8,
+      "start": 0,
+      "best_log_ratio": 0.6131044728865114,
+      "iterations": 43,
+      "calls": 44,
+      "success": true
+    },
+    {
+      "rank": 8,
+      "start": 1,
+      "best_log_ratio": 0.6929463241807418,
+      "iterations": 60,
+      "calls": 64,
+      "success": true
+    },
+    {
+      "rank": 8,
+      "start": 2,
+      "best_log_ratio": 0.61310447288645,
+      "iterations": 54,
+      "calls": 58,
+      "success": true
+    },
+    {
+      "rank": 8,
+      "start": 3,
+      "best_log_ratio": 0.613104472886434,
+      "iterations": 41,
+      "calls": 47,
+      "success": true
+    },
+    {
+      "rank": 8,
+      "start": 4,
+      "best_log_ratio": 0.6131044728864311,
+      "iterations": 53,
+      "calls": 58,
+      "success": true
+    },
+    {
+      "rank": 8,
+      "start": 5,
+      "best_log_ratio": 0.6131044728864883,
+      "iterations": 43,
+      "calls": 46,
+      "success": true
+    }
+  ],
+  "elapsed_seconds": 4.730290371000592,
+  "minimum_log_ratio": 0.6131044728864311
+}

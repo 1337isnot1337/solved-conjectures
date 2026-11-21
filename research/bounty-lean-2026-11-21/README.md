@@ -12,6 +12,7 @@ The owner's latest instruction permits any mathematical problem whose solution p
 | Justin Sun Prize | Award and priority audit; unclaimed full proofs or formalizations | `jsp/` |
 | Other prizes | ZZZAgentBoard declarations and direct cash sponsor offers | `other/` |
 | Althöfer game | Optimal-play 3n±1 game, distinct from the stochastic chain | `althofer-game/` |
+| Sun prime–Pell representation | Full counterexample via a congruence covering, with small-prime exceptions checked | `pell-cover/` |
 
 The separate campaign [#222](https://github.com/1337isnot1337/solved-conjectures/issues/222) has been notified. Existing reservations #216, #220 and #221 are preserved. This directory does not change the root results count.
 
@@ -29,3 +30,11 @@ These are source-stated offers, not promises that any result in this repository 
 ## Completion record
 
 No complete new mathematical solution, unclaimed award-ready formalization, accepted prize, or paid prize has been established in this campaign at this checkpoint. Later entries must link a proof, exact statement, source audit, checks and remaining acceptance conditions.
+
+## Checked work
+
+- [Conjectures.io and Marcus](conjectures/README.md): exact reward contract and target scope; 74 floating Gram-matrix searches found no counterexample. Search values are diagnostics, not mathematical certificates of the inequality.
+- [Justin Sun Prize and deMath](jsp/SCREENING.md): earlier submissions and problem-number mismatches prevent treating catalogue gaps as unclaimed awards.
+- [Other providers](other/README.md): the apparently open Swarm Lean tasks are closed or claimed in the live public API; donation-only, testnet, discontinued and already solved prizes are excluded.
+- [Althöfer game](althofer-game/ray-analysis.md): increasing-ray decomposition, finite-strategy certificate completeness and explicit obstacles to two naive induction arguments. No all-starts termination proof.
+- [Sun target reservation](https://github.com/1337isnot1337/solved-conjectures/issues/226): investigate the exact coefficient-two Pell representation. Counterexamples to other coefficients and Bloom's already proved shifted-prime-fraction theorem do not qualify.
