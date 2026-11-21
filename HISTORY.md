@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-20 — Repaired an omitted result registration
+
+Registered the existing `baricz-pogany-coefficients` package in the shared catalogue, root index and status map after its orphan landing page blocked the site build. The mathematical files and their stated scope were preserved. This is integration of previously published work from issue #112, not a new result of the Minc campaign.
+
 ## 2026-11-20 — Pula–Song–Wanless conjecture
 
 Added a complete proposed proof of the named threshold conjecture for all positive block sizes with `n>1`. At `n>=m+sqrt(m)` the stated boundary matrix uniquely minimizes the permanent. The equality threshold is included. A real-rooted-minor argument replaces a gap in the available 2011 equalization proof; a separate van der Waerden completion proves uniqueness. The known cohesive and non-barycentric directions are credited and independently checked. The result includes two written independent reviews, exact identity audits and a source audit through November 2026. The notes are unrefereed and priority remains provisional. This does not resolve the unrestricted Minc Problems 14 or 15, and no Lean verification was performed.

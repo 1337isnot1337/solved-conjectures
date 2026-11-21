@@ -105,6 +105,10 @@ Run `python3 results/perron-root-permanental-compounds/verify.py` with assertion
 
 Run `python3 results/pula-song-wanless/verify.py` with assertions enabled and SymPy 1.14.0 installed. The script audits generic derivative/crossing identities, 72 coefficient ODE/variance cases, 48 direct permanent counts and 42 exact barycenter inequalities. The full proof, including the real-rooted-minor reduction repair and independent uniqueness argument, is [written separately](../results/pula-song-wanless/proof.md). These finite checks do not establish the unbounded statement on their own. No Lean verification is included.
 
+## Baricz–Pogány coefficient positivity
+
+The existing result package's standard-library diagnostic is `python3 results/baricz-pogany-coefficients/verify.py`. It checks the formal-series identities and finite source fixtures described in its [landing page](../results/baricz-pogany-coefficients/). The general statement rests on the written proof; no formal verification is claimed.
+
 ## Lean proofs
 
 ```bash

@@ -54,6 +54,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Baricz–Pogány's asymptotic-coefficient positivity conjecture": "baricz-pogany-coefficients",
     "Pula–Song–Wanless conjecture": "pula-song-wanless",
     "Perron root of permanental compounds": "perron-root-permanental-compounds",
     "Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture": "kvz-bessel-unimodality",

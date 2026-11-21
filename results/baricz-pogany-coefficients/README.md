@@ -13,6 +13,8 @@ contains an unlinked submitted follow-up on the four-parameter
 Kaiser–Bessel distribution; its contents were not available for review.
 The proof is complete, but exclusive priority is not guaranteed.
 
+**Lean status:** none. No Lean formalization is included.
+
 ## The statement
 
 The source defines the coefficients in the large-argument expansion
