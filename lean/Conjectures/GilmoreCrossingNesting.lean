@@ -442,6 +442,35 @@ theorem completePath_matching {u : ℕ} (p : Path u u) (l : Labels p) :
     · exact closedArcs_ordered p l
 
 
+theorem openEndpoints_sorted {u d : ℕ} (p : Path u d) (l : Labels p) :
+    (openEndpoints p l).Pairwise (· < ·) := by
+  induction p with
+  | empty => simp [openEndpoints]
+  | @up u d p ih =>
+    change Labels p at l
+    simp only [openEndpoints, List.pairwise_append]
+    refine ⟨ih l, by simp, ?_⟩
+    intro x hx z hz
+    simp only [List.mem_singleton] at hz
+    subst z
+    exact openEndpoints_before p l x hx
+  | @down u d p h ih =>
+    change Labels p × Fin (u-d) at l
+    simp only [openEndpoints]
+    exact (ih l.1).eraseIdx l.2.val
+
+
+theorem closing_rank_order {u d : ℕ} (p : Path u d) (l : Labels p)
+    (i j : Fin (u-d)) (hij : i < j) :
+    (openEndpoints p l).getD i.val 0 < (openEndpoints p l).getD j.val 0 := by
+  have hi : i.val < (openEndpoints p l).length := by rw [openEndpoints_length]; exact i.isLt
+  have hj : j.val < (openEndpoints p l).length := by rw [openEndpoints_length]; exact j.isLt
+  rw [List.getD_eq_getElem?_getD, List.getElem?_eq_getElem hi,
+    List.getD_eq_getElem?_getD, List.getElem?_eq_getElem hj]
+  simp only [Option.getD_some]
+  exact (List.pairwise_iff_getElem.mp (openEndpoints_sorted p l)) i.val j.val hi hj hij
+
+
 section Ring
 variable {S : Type*} [CommRing S]
 

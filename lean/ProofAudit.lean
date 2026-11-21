@@ -19,6 +19,7 @@ run_cmd do
     `BrownInteger.derivative_bound,
     `BrownMol.P_degree,
     `BrownMol.finite_root,
+    `GilmoreCrossingNesting.closing_rank_order,
     `GilmoreCrossingNesting.completePath_matching,
     `GilmoreCrossingNesting.matrixEntry_eq_labelledPathSum,
     `GilmoreCrossingNesting.matrixEntry_row_formula,
