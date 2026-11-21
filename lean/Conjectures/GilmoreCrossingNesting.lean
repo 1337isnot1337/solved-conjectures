@@ -471,6 +471,65 @@ theorem closing_rank_order {u d : ℕ} (p : Path u d) (l : Labels p)
   exact (List.pairwise_iff_getElem.mp (openEndpoints_sorted p l)) i.val j.val hi hj hij
 
 
+
+private theorem filter_lt_getElem_length (xs : List ℕ) (i : ℕ) (hi : i < xs.length)
+    (hs : xs.Pairwise (· < ·)) : (xs.filter (· < xs[i])).length = i := by
+  induction xs generalizing i with
+  | nil => simp at hi
+  | cons x xs ih =>
+    cases i with
+    | zero =>
+      simp only [List.getElem_cons_zero, List.filter_cons, lt_self_iff_false]
+      have hx : ∀ y ∈ xs, x < y := (List.pairwise_cons.mp hs).1
+      have hf : xs.filter (· < x) = [] := by
+        apply List.filter_eq_nil_iff.mpr
+        intro y hy
+        simpa using Nat.not_lt_of_ge (Nat.le_of_lt (hx y hy))
+      simp [hf]
+    | succ i =>
+      have hi' : i < xs.length := by simpa using hi
+      have hs' := (List.pairwise_cons.mp hs).2
+      have hx : x < xs[i] := (List.pairwise_cons.mp hs).1 _ (List.getElem_mem hi')
+      simp only [List.getElem_cons_succ, List.filter_cons]
+      simp [hx, ih i hi' hs']
+
+private theorem filter_gt_getElem_length (xs : List ℕ) (i : ℕ) (hi : i < xs.length)
+    (hs : xs.Pairwise (· < ·)) : (xs.filter (xs[i] < ·)).length = xs.length - i - 1 := by
+  induction xs generalizing i with
+  | nil => simp at hi
+  | cons x xs ih =>
+    cases i with
+    | zero =>
+      simp only [List.getElem_cons_zero, List.filter_cons, lt_self_iff_false]
+      have hx : ∀ y ∈ xs, x < y := (List.pairwise_cons.mp hs).1
+      have hf : xs.filter (x < ·) = xs := by
+        apply List.filter_eq_self.mpr
+        intro y hy
+        simpa using hx y hy
+      simp [hf]
+    | succ i =>
+      have hi' : i < xs.length := by simpa using hi
+      have hs' := (List.pairwise_cons.mp hs).2
+      have hx : ¬ xs[i] < x := Nat.not_lt_of_ge (Nat.le_of_lt ((List.pairwise_cons.mp hs).1 _ (List.getElem_mem hi')))
+      simp only [List.getElem_cons_succ, List.filter_cons]
+      simp [hx, ih i hi' hs']
+
+
+theorem closing_rank_counts {u d : ℕ} (p : Path u d) (l : Labels p) (i : Fin (u-d)) :
+    let xs := openEndpoints p l
+    let x := xs.getD i.val 0
+    (xs.filter (· < x)).length = i.val ∧
+      (xs.filter (x < ·)).length = u-d-1-i.val := by
+  have hi : i.val < (openEndpoints p l).length := by
+    rw [openEndpoints_length]
+    exact i.isLt
+  simp only [List.getD_eq_getElem?_getD, List.getElem?_eq_getElem hi, Option.getD_some]
+  constructor
+  · exact filter_lt_getElem_length _ _ hi (openEndpoints_sorted p l)
+  · rw [filter_gt_getElem_length _ _ hi (openEndpoints_sorted p l), openEndpoints_length]
+    omega
+
+
 theorem labels_injective_for_path {u d : ℕ} (p : Path u d) :
     Function.Injective (fun l : Labels p => (openEndpoints p l, closedArcs p l)) := by
   induction p with
