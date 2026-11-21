@@ -9,6 +9,8 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `ZhangDeletion.small_deletion_lower,
+    `ZhangDeletion.leastDenominator_minimal,
     `ZhangDeletion.large_deletion_exact,
     `ZhangDeletion.question84,
     `ZhangDeletion.modular_lower,

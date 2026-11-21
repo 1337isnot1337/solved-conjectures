@@ -120,7 +120,7 @@ theorem distance_bound (D v j a : ℕ) (hD : 0 < D)
 
 def speeds (n r : ℕ) : List ℕ := (List.range' 1 (n-1)).filter (· != r)
 
-theorem modular_lower (n r D : ℕ) (hn : 4 ≤ n) (hr : 1 ≤ r)
+theorem modular_lower (n r D : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
     (hD : n+r ≤ D) (hc : Nat.Coprime r D) :
     (2 : ℝ) / D ≤ Loneliness.value (speeds n r) := by
   obtain ⟨j, hjD, hj⟩ := modular_witness n r D (by omega) hr hD hc
@@ -159,7 +159,7 @@ theorem small_deletion_strict (n r : ℕ) (hn : 4 ≤ n) (hr : 1 ≤ r)
   have hstrict : (1 : ℝ) / (n-1) < 2 / D := by
     apply (div_lt_div_iff₀ (by linarith) hDR).2
     linarith
-  exact hstrict.trans_le (modular_lower n r D hn hr hD hc.symm)
+  exact hstrict.trans_le (modular_lower n r D (by omega) hr hD hc.symm)
 
 theorem large_deletion_lower (n r : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
     (hrn : r ≤ n-1) (hlarge : n-1 < 2*r) :
@@ -237,5 +237,28 @@ theorem large_deletion_exact (n r : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
     Loneliness.value (speeds n r) = (1 : ℝ) / r :=
   le_antisymm (large_deletion_upper n r hn hr hrn hlarge)
     (large_deletion_lower n r hn hr hrn hlarge)
+
+noncomputable def leastDenominator (n r : ℕ) (hn : 1 ≤ n) (hr : 1 ≤ r) : ℕ :=
+  Nat.find (coprime_in_window n r hn hr)
+
+theorem leastDenominator_spec (n r : ℕ) (hn : 1 ≤ n) (hr : 1 ≤ r) :
+    n+r ≤ leastDenominator n r hn hr ∧
+      Nat.Coprime (leastDenominator n r hn hr) r := by
+  have h := Nat.find_spec (coprime_in_window n r hn hr)
+  exact ⟨h.1, h.2.2⟩
+
+theorem leastDenominator_minimal (n r : ℕ) (hn : 1 ≤ n) (hr : 1 ≤ r)
+    (d : ℕ) (hd : n+r ≤ d) (hc : Nat.Coprime d r) :
+    leastDenominator n r hn hr ≤ d := by
+  by_cases h : d ≤ n+2*r-1
+  · exact Nat.find_min' (coprime_in_window n r hn hr) ⟨hd, h, hc⟩
+  · have hspec := Nat.find_spec (coprime_in_window n r hn hr)
+    change Nat.find (coprime_in_window n r hn hr) ≤ d
+    omega
+
+theorem small_deletion_lower (n r : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r) :
+    (2 : ℝ) / leastDenominator n r (by omega) hr ≤ Loneliness.value (speeds n r) := by
+  have h := leastDenominator_spec n r (by omega) hr
+  exact modular_lower n r _ hn hr h.1 h.2.symm
 
 end ZhangDeletion
