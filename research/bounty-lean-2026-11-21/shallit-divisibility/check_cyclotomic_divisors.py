@@ -2,7 +2,7 @@
 
 from functools import cache
 from itertools import product
-from math import gcd
+from math import gcd, lcm
 from random import Random
 
 
@@ -158,7 +158,48 @@ def check_unary_automaton():
     return start, period
 
 
+def check_repeated_factor_lifts():
+    rng = Random(196)
+    checked = attainable = obstructed = 0
+    for base, m in product((2, 3, 4, 5, 6, 7, 9), range(1, 5)):
+        x = base**m
+        for factor, h in ((x - 1, 1), (x + 1, 2), (x * x + x + 1, 3)):
+            for exponent in (2, 3):
+                modulus = factor**exponent
+                if not 1 < modulus <= 9000:
+                    continue
+                for width in (1, 2, 3):
+                    block_slope = base**width
+                    period = lcm(2, h, width)
+                    w = x**period - 1
+                    for _ in range(4):
+                        prefix = rng.randrange(10)
+                        digit_block = rng.randrange(1, block_slope)
+                        coefficient = (block_slope - 1) * prefix + digit_block
+                        suffix_width = rng.randrange(1, 6)
+                        tail_slope = base**suffix_width
+                        tail = rng.randrange(tail_slope)
+                        numerator = prefix * tail_slope + tail
+                        g = gcd(modulus, coefficient * w // (block_slope - 1))
+                        orbit = set()
+                        state = prefix % modulus
+                        increment = digit_block * w // (block_slope - 1)
+                        while state not in orbit:
+                            orbit.add(state)
+                            state = ((1 + w) * state + increment) % modulus
+                        assert state == prefix % modulus
+                        direct = {(r * tail_slope + tail) % modulus for r in orbit}
+                        assert direct == set(range(numerator % g, modulus, g))
+                        if 0 in direct:
+                            attainable += 1
+                        else:
+                            obstructed += 1
+                        checked += 1
+    return checked, attainable, obstructed
+
+
 if __name__ == "__main__":
     print("Modular translations checked:", check_loop_insertions())
     print("Folded divisible and nondivisible inputs:", check_polynomial_folding())
     print("Unary automaton preperiod and period:", check_unary_automaton())
+    print("Lift orbits, with and without a multiple:", check_repeated_factor_lifts())
