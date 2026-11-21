@@ -54,6 +54,8 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Karp–Vishnyakova–Zhang's Hankel-product conjecture": "kvz-hankel-product",
+    "McCrea's conjecture": "mccrea-single-crossover",
     "Chen–Kitaev–Zhang's record conjectures": "chen-kitaev-zhang-records",
     "Zhu's generalized Jacobi–Stirling conjecture": "zhu-jacobi-stirling",
     "Fang–Zhang–Zhao's Sturm conjecture": "fang-zhang-zhao-sturm",

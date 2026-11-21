@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Hankel products and McCrea's conjecture
+
+Added a complete proposed disproof of Karp–Vishnyakova–Zhang's general sign-regular Hankel-product conjecture. An elementary family has exact rational order-two minors of opposite signs; a second family has strictly sign-regular factors of every order and the same failure. Both families resolve one conjecture, with the original unrestricted-signature hypothesis checked directly. Root and combinatorics reviews passed. The published final-page access limit is recorded alongside the verified arXiv versions.
+
+Added a complete proposed proof of McCrea's unique linear-density crossover conjecture for every modulus at least three. Positive large-power generating functions yield local coefficient asymptotics through a self-contained Fourier argument that handles the floor. Between the two means, the exponent difference is strictly decreasing with opposite endpoint signs. Independent analysis review and exact profile-word diagnostics passed. This is distinct from the previously resolved fixed-number Franklin inequality. Both packages include current priority audits, remain unrefereed, and add no Lean work.
+
 ## 2026-11-21 — Chen–Kitaev–Zhang and Zhu conjectures
 
 Added complete proposed proofs of Chen–Kitaev–Zhang's original record Conjectures 1 and 3, and a complete disproof of Zhu's unweighted generalized Jacobi–Stirling conjecture. The record proof supplies three all-length coefficient comparisons and credits the previously public Conjecture 2 tail argument. Zhu's disproof is an exact polynomial determinant identity with a negative coefficient and an open real counterexample region.

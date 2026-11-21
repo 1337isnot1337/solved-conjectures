@@ -16,6 +16,13 @@ The partial-result entries contain their replay commands for the [Frankl generat
 
 ## Computational checks
 
+The [Hankel-product checker](../results/kvz-hankel-product/verify.py) checks the exact polynomial identity and both rational and radical minor witnesses. The [McCrea checker](../results/mccrea-single-crossover/verify.py) independently enumerates profile words and checks both generating-function rewrites and mean values. Both use only the Python standard library; their full parameter claims are proved in the accompanying notes.
+
+```bash
+python3 results/kvz-hankel-product/verify.py
+python3 results/mccrea-single-crossover/verify.py
+```
+
 The [Chen–Kitaev–Zhang verifier](../results/chen-kitaev-zhang-records/verify.py) checks exact polynomial identities, regenerates the sixteen certificates in the credited tail argument, and checks the class conventions by enumerating separable permutations through length eight. The new result is the full written all-length proof. The [Zhu verifier](../results/zhu-jacobi-stirling/verify.py) independently constructs sparse integer polynomials from the original recurrence and expands the complete determinant by permutations. It verifies the disproof identity, including its negative coefficient. Both scripts use only the standard library.
 
 ```bash
