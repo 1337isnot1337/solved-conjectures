@@ -93,6 +93,7 @@ python3 results/eight-speed-spectrum/verify.py
 python3 results/seven-speed-spectrum/verify.py
 python3 results/tight-eleven-to-fourteen/verify.py
 python3 results/tight-nine-speeds/verify.py
+python3 results/zhang-deletion-values/verify.py
 ```
 
 The latest workflow is the executable reference when new checks are added.
@@ -108,6 +109,10 @@ Run `python3 results/malek-subpermanent/verify.py` with assertions enabled. The 
 ## Pula–Song–Wanless conjecture
 
 Run `python3 results/pula-song-wanless/verify.py` with assertions enabled and SymPy 1.14.0 installed. The script audits generic derivative/crossing identities, 72 coefficient ODE/variance cases, 48 direct permanent counts and 42 exact barycenter inequalities. The full proof, including the real-rooted-minor reduction repair and independent uniqueness argument, is [written separately](../results/pula-song-wanless/proof.md). These finite checks do not establish the unbounded statement on their own. No Lean verification is included.
+
+## Zhang's Question 8.4
+
+Run `python3 results/zhang-deletion-values/verify.py` with assertions enabled. The standard-library script checks the closed deletion-value formula in all 779 cases with `3 <= n <= 40`, the strict inequality in all 740 cases with `n >= 4` and `r <= n-2`, and the witness time used in the second case. The [elementary proof](../results/zhang-deletion-values/PROOF.md) is unconditional; the finite check confirms the formula in the stated range. No Lean verification is included.
 
 ## Baricz–Pogány coefficient positivity
 

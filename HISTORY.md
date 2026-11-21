@@ -26,6 +26,10 @@ Added a general FPRAS theorem for Minc Problem 18's approximation formulation. T
 
 The Minc research record also documents partial Gyires and integrality results without counting them as full resolutions.
 
+## 2026-11-20 — Zhang's Question 8.4
+
+Answered Zhang's Question 8.4: the deletion values `LR([n-1] \ {r})` are `1/r` when `2r > n-1` and `2/D_r` when `2r <= n-1`, so the strict inequality holds for all `n >= 4` and `1 <= r <= n-2`. The package contains an elementary proof and an exact standard-library verifier for `n <= 40`. The note is unrefereed; no Lean verification was performed.
+
 ## 2026-11-20 — Removed previously resolved conjectures
 
 Removed the result entries and duplicate research writeups for Karp's

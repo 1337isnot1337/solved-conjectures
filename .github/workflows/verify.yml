@@ -126,6 +126,8 @@ jobs:
         run: python3 results/tight-eight-speeds/verify.py
       - name: Verify the unique equality case for ten lonely runners
         run: python3 results/tight-nine-speeds/verify.py
+      - name: Verify Zhang's lonely-runner deletion values
+        run: python3 results/zhang-deletion-values/verify.py
       - name: Verify the seven-speed loneliness spectrum
         run: python3 results/seven-speed-spectrum/verify.py
       - name: Verify the eight-speed loneliness spectrum
