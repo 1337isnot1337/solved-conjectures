@@ -221,6 +221,64 @@ approximate its maximum. Applying (11) to these matrices proves
 the matching liminf bound. Combined with the previous limsup
 bound, this proves (2).
 
+## Cancellation of the fourth-order cycle terms
+
+The constrained maximum in (1) has a sharper form. Let
+\(E=\{\{i,j\}:1\le i<j\le n\}\) and put
+\(w_{ij}=|h_{ij}|^2\), \(S=\sum_{i<j}w_{ij}=s_2/2\).
+Write \(A\) for the sum of \(w_e w_f\) over pairs of distinct
+edges sharing one vertex, \(D\) for the same sum over disjoint
+edges, and \(C\) for the sum of the real parts of edge-products
+around all unoriented simple four-cycles. These sums are zero
+if the requisite edges do not exist. Enumerating the closed
+four-step walks and the derangements of a four-element set gives
+
+$
+\begin{aligned}
+s_4&=2\sum_{e\in E}w_e^2+4A+8C,\\
+q_4(H)&=D+2C,\\
+S^2&=\sum_{e\in E}w_e^2+2A+2D,\\
+\sum_i r_i(H)^2&=2\sum_{e\in E}w_e^2+2A.
+\end{aligned}
+\tag{14}
+$
+
+The last equality counts each squared edge twice and each
+pair of incident edges twice. The first distinguishes closed
+walks on two, three, and four distinct vertices. Eliminating
+\(A,D,C\), and using \(\sum_i r_i=s_2\), yields the exact
+cancellation
+
+$
+q_4(H)+\sum_i\left(r_i(H)-\frac{s_2}{n}\right)^2
+=\frac{s_4}{4}
++\left(\frac18-\frac1n\right)s_2^2
++\sum_{i<j}|h_{ij}|^4.
+\tag{15}
+$
+
+Consequently the coefficient in (2) admits the simpler form
+
+$
+\boxed{\quad
+\Gamma_n(x)=\frac{s_4}{4}
++\left(\frac18-\frac1n\right)s_2^2
++\max_{\substack{H=U\operatorname{diag}(x)U^*\\
+                 \operatorname{diag}H=0}}
+\ \sum_{i<j}|h_{ij}|^4.
+\quad}
+\tag{16}
+$
+
+This is an exact reduction to the entrywise fourth-power
+concentration of a zero-diagonal Hermitian matrix with prescribed
+spectrum. It eliminates all four-cycle phase terms from the
+fourth-order variational objective, but does not evaluate
+the remaining maximum. The diagonal-drift term in (1) is
+essential for the cancellation: omitting it would give the
+wrong coefficient, already for the order-three example where
+\(q_4=0\) but the true coefficient is \(98/3\).
+
 ## A separate spectral monotonicity
 
 There is an independent all-order consequence of the nonnegative
@@ -264,7 +322,7 @@ connected zero-diagonal cores. The coefficients are
 - Order three: \(1,0,14,12,98/3\), with \(q_4=0\) and drift gain \(98/3\).
 - Order four: \(1,0,20,34,131\), with \(q_4=49\) and drift gain \(82\).
 
-These are checks of the exact coefficient algebra, not order-specific
+An additional 40 exact rational zero-diagonal matrices of orders three through six verify the cancellation (15). These are checks of the exact coefficient algebra, not order-specific
 resolutions of Problem 1.
 
 ## Source status and remaining gap
@@ -285,7 +343,7 @@ Exact phrases were also searched in current public sources.
 That is not an exhaustive novelty certificate, and the present
 theorem has no external mathematical review.
 
-The missing implication is an explicit evaluation of (1) for
+The missing implication is an explicit evaluation of the entrywise fourth-power maximum in (16) for
 general spectra, followed by control away from the scalar
 regime. The quartic functional still requires optimization over
 an entire zero-diagonal unitary orbit. Replacing that optimization

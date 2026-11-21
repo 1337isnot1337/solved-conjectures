@@ -112,3 +112,18 @@ if __name__ == "__main__":
                 t * z for t, z in zip(d, r))
             checked += 1
     print("traceless coefficient identity checks:", checked)
+    for n in (3, 4, 5, 6):
+        for seed in range(10):
+            h = [[Q(0) for _ in range(n)] for _ in range(n)]
+            for i in range(n):
+                for j in range(i):
+                    h[i][j] = h[j][i] = Q((7 * i + 3 * j + seed) % 13 - 6, 3)
+            h2 = mm(h, h)
+            s2 = trace(h2)
+            s4 = trace(mm(h2, h2))
+            r = [h2[i][i] for i in range(n)]
+            left = qk(h, 4) + sum((ri - s2 / n) ** 2 for ri in r)
+            right = (s4 / 4 + s2 ** 2 / 8 - s2 ** 2 / n
+                     + sum(h[i][j] ** 4 for i in range(n) for j in range(i)))
+            assert left == right
+    print("quartic spectral-offdiagonal reduction: 40 exact cases")
