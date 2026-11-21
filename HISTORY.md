@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Kauers–Koutschan recurrence conjecture
+
+Added a complete proposed proof of the two published recurrences for A189281. Inclusion–exclusion and a rank-one complex Gaussian matrix give a Schur sum in derangement numbers. Exact polynomial substitution gives zero for every coefficient in both parity classes. [Proof and checker](results/kauers-koutschan-recurrence/) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/218)
+
 ## 2026-11-21 — Horňák–Woźniak short arms of length at most two
 
 Proved arbitrary vertex decomposability for tripods with positive short arm at most two under source tests 1 and 5, and established the unique-largest balancing step for general star graphs. Strict compilation, a 958-theorem full-chain axiom audit and isolated kernel replay passed. The general all-small case, four-arm reduction, existence constructions and combined gate remain.

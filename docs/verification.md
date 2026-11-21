@@ -2,6 +2,10 @@
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
 
+## Kauers–Koutschan recurrence conjecture
+
+With SymPy 1.14 installed, run `python results/kauers-koutschan-recurrence/verify.py`. The checker substitutes the exact Schur sum into both published operators over a rational polynomial ring, verifies the initial indices separately, and compares the count with all permutations through length eight. [Proof](../results/kauers-koutschan-recurrence/PROOF.md) · [Checker](../results/kauers-koutschan-recurrence/verify.py)
+
 ## Circular-index local verification checkpoint
 
 The main circulant theorems and C31/C33 regular examples have a checked 19-module closure. The [receipt](verification/lean-named-20261121/circular-receipt.json), [all-owned inventory](verification/lean-named-20261121/circular-all-owned-inventory.json), and [raw kernel log](verification/lean-named-20261121/circular-kernel.log) record the exact source/object hashes, compiler/checker pins, 171 required theorem endpoints, and replay of only that closure. The receipt distinguishes the individual strict source checks from the subsequent combined audit and replay. It does not attest to the complete shared-package gate or to the nonregular Section 7 certificates.
