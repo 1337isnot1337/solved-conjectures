@@ -1,6 +1,6 @@
 # Standard Simplex conjecture: a small positive correlation regime
 
-Proposed partial theorem, 21 November 2026. The proof below combines the credited all-cell balanced first-moment extremum with quantitative covariance coercivity and the new comparison notes in this directory. It concerns a positive interval of correlations next to zero for every fixed number of cells. It does not resolve the Standard Simplex conjecture for all positive correlations, its negative-correlation clause, or the full named conjecture. The proof and the priority comparison are being reviewed; no result-count change or first-discovery claim is made.
+Proposed partial theorem, 21 November 2026. The proof below combines the credited all-cell balanced first-moment extremum with quantitative covariance coercivity and the new comparison notes in this directory. It concerns a positive interval of correlations next to zero for every fixed number of cells. It does not resolve the Standard Simplex conjecture for all positive correlations, its negative-correlation clause, or the full named conjecture. The [root](SMALL_CORRELATION_ROOT_REVIEW.md), [algebra](NOISE_CORE_ALGEBRA_REVIEW.md), and [combinatorics](SMALL_CORRELATION_COMBINATORICS_REVIEW.md) reviews found no gap in the written argument. The [bounded source audit](LOW_CORRELATION_PRIOR_AUDIT.md) is complete. These checks are not external acceptance or a worldwide-priority claim; no resolution count changes.
 
 ## 1. Statement
 
@@ -245,4 +245,4 @@ The conclusion is an interval $`0<\rho\le\rho_q`$ for every fixed number of cell
 
 The mathematical dependency is the credited all-cell balanced first-moment extremum and covariance comparison. The proof does not import an unrestricted-mass first-moment theorem, does not identify conditioned and original noise stability, and does not assume the full Standard Simplex conjecture. The use of unequal masses is confined to the explicit quadratic-error core lemma.
 
-Before any novelty claim, the literature comparison must distinguish low correlation $`\rho\downarrow0`$ from small noise $`\rho\uparrow1`$, and must inspect prior all-cell consequences of the recent balanced first-moment theorem. The source review remains separate from the mathematical proof review.
+The [completed bounded literature comparison](LOW_CORRELATION_PRIOR_AUDIT.md) distinguishes low correlation $`\rho\downarrow0`$ from small noise $`\rho\uparrow1`$ and inspects prior all-cell consequences of the recent balanced first-moment theorem. Its source limits remain separate from the mathematical proof review. [NOISE_STABILITY.md](NOISE_STABILITY.md) derives the sharp quadratic noise-deficit estimate from this same argument after shrinking the threshold.

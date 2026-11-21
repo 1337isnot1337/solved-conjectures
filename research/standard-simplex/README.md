@@ -111,6 +111,23 @@ The constants are chosen in the order: moment coercivity, tail radius, then corr
 
 [LOW_CORRELATION_PRIOR_AUDIT.md](LOW_CORRELATION_PRIOR_AUDIT.md) records the completed bounded exact-scope comparison. The expanded six-archive pass covers 292,845 native UTF-8 bodies, 1,871 converted PDFs, and bounded compressed text, with an independent AIM/OpenAI supplement and a broader native-term residual. The [semantic comparison](LOW_CORRELATION_ARCHIVE_SCOPE.md), compact manifests, source hashes, and explicit decoding limits accompany the scripts. The unrefereed partial theorem remains distinct from a full resolution of Standard Simplex.
 
+### Sharp quantitative noise stability
+
+[NOISE_STABILITY.md](NOISE_STABILITY.md) extracts a quantitative corollary after decreasing the same positive threshold. There are constants $`\widehat\rho_q,\nu_q>0`$, depending only on the number of cells, such that every balanced measurable partition in every allowed ambient dimension satisfies
+
+```math
+S_\rho(\mathcal C)-S_\rho(\mathcal A)
+\ge\nu_q\rho\left[
+\inf_{\mathcal D\in\mathscr S_{q,d}}
+\sum_i\gamma_d(A_i\mathbin{\triangle}D_i)
+\right]^2
+\qquad(0<\rho\le\widehat\rho_q).
+```
+
+The proof divides competitors into large and small noise deficits. The small-deficit branch enters the same polar-aligned core neighborhood as the earlier theorem. Its weighted transfer bound then controls the partition distance by a union of Gaussian facet slabs. A balanced exchange of reflected strips shows that the squared-distance power is sharp, with noise deficit of order $`\rho t^2`$ and partition distance of order $`t`$, uniformly over this correlation interval and the ambient dimension.
+
+The [combinatorics review](NOISE_STABILITY_COMBINATORICS_REVIEW.md) and [root review](NOISE_STABILITY_ROOT_REVIEW.md) check the global dichotomy, constants, alignment, and sharpness. This is a corollary within the same partial research program. It does not add a resolved conjecture or extend the proof to all correlations.
+
 ## Source and archive record
 
 [PRIOR_AUDIT.md](PRIOR_AUDIT.md) records the direct source comparisons, issue search, pinned archive screen, and remaining gaps. [PRIOR_SCAN.json](PRIOR_SCAN.json) records the exact native-text search coverage; [scan_native_prior.py](scan_native_prior.py) performs that screen on separately downloaded public archives.

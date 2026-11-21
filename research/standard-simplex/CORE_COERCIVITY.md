@@ -1,6 +1,6 @@
 # First-moment coercivity with mass and rotation errors
 
-Working proof, 21 November 2026. This note is a deduction from the covariance stability estimate in `FIRST_MOMENT_STABILITY.md`. It supplies a local, fixed-simplex estimate for a fractional partition whose cell masses need not be exactly equal. It does not by itself prove noise stability or settle Standard Simplex.
+Reviewed research lemma, 21 November 2026. This note is a deduction from the covariance stability estimate in [FIRST_MOMENT_STABILITY.md](FIRST_MOMENT_STABILITY.md). It supplies a local, fixed-simplex estimate for a fractional partition whose cell masses need not be exactly equal. The [algebra review](NOISE_CORE_ALGEBRA_REVIEW.md) and [combinatorics review](SMALL_CORRELATION_COMBINATORICS_REVIEW.md) independently check this root-authored argument. Its use in the partial noise theorem is given in [SMALL_CORRELATION.md](SMALL_CORRELATION.md), with the [completed bounded source audit](LOW_CORRELATION_PRIOR_AUDIT.md). The lemma does not by itself prove noise stability or settle Standard Simplex; these checks are not external acceptance.
 
 ## 1. Coordinates and statement
 

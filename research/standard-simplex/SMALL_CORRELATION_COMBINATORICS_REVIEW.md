@@ -103,7 +103,7 @@ Substitution therefore gives the coefficients
 
 ```math
 -\kappa/4+H\rho/\ell
-\quad\hbox{and}\quad
+\quad\text{and}\quad
 -3b/2+H\rho.
 ```
 
