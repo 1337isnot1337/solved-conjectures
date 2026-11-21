@@ -21,6 +21,21 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 ## Resolution count
 
-New complete resolutions established in this run: **0** at the opening checkpoint.
+Complete proposed resolutions with separate internal review and a documented current status audit: **3** at this checkpoint. All remain unrefereed.
+
+| Conjecture | Result | Evidence |
+| --- | --- | --- |
+| Fang–Zhang–Zhao's infinite-log-convexity conjecture | Disproved for every Hoggatt parameter at least four; one resolution of the full universal statement | [Package](../../results/fang-zhang-zhao/) · [Issue 160](https://github.com/1337isnot1337/solved-conjectures/issues/160) |
+| Fang–Zhang–Zhao's Sturm conjecture | Proved throughout the source's full range, with a stronger real-base and all-parameter theorem | [Package](../../results/fang-zhang-zhao-sturm/) · [Issue 162](https://github.com/1337isnot1337/solved-conjectures/issues/162) |
+| Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture | Proved at all determinant orders, arbitrary positive real nodes and every base between zero and one | [Package](../../results/kvz-reciprocal-qgamma/) · [Issue 164](https://github.com/1337isnot1337/solved-conjectures/issues/164) |
+
+The original opening count was zero. The separate Baxter-number conjecture is not resolved by the first row. A bounded floating-point screen of its first 400 terms through 120 iterates found no negative value and supplies no proof. The reciprocal discrete-kernel corollary is not an additional resolution.
+
+## Exclusions and active work
+
+[Segura's conjecture](segura-prior-resolution.md) was excluded after its complete prior resolution by Segura–Suzuki was located. Other screened targets excluded because of earlier resolutions include Chapoton's arbor-root claim, Athanasiadis–Chapoton preorder real-rootedness, the Bourin–Lee three-contraction conjecture and the Johnston–Plosker–Torrance–Varona power inequality. Existing repository results and external contributions remain outside this count.
+
+The Karp–Vishnyakova–Zhang Hankel-product closure claim has a candidate counterexample under source/priority review. Zeng's endpoint q-Narayana total-nonnegativity conjecture and Alexandersson's balanced-array conjecture are active research; no resolution is claimed.
 
 The requested goal is ten; this file records evidence and does not treat that goal as a reason to lower the proof or novelty requirements.
+

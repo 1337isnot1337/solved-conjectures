@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Hoggatt and reciprocal q-gamma conjectures
+
+Added three complete proposed resolutions from the named-conjecture research in [issue 156](https://github.com/1337isnot1337/solved-conjectures/issues/156). Fang–Zhang–Zhao's Sturm conjecture follows from geometric root separation, a Jackson derivative interlacing lemma, and an all-row Hadamard induction; the proof covers every real base greater than one and every integer Hoggatt parameter at least two. Their distinct universal infinite-log-convexity conjecture is false for every parameter at least four, by an exact parameter-polynomial factorization and two explicit integer calculations. Karp–Vishnyakova–Zhang's reciprocal q-gamma kernel is strictly sign regular at every order throughout the source's full base interval, by a q-binomial double series and two finite Cauchy–Binet expansions.
+
+Each argument has a separate internal mathematical review and a documented current prior-resolution search. The Hoggatt disproof also has independent direct plane-partition enumeration. The two Hoggatt packages and reciprocal-kernel package include reproducible exact diagnostics. The proofs remain unrefereed, and inaccessible later full texts are recorded as priority limitations. Parameter subcases and the discrete reciprocal-kernel corollary are not counted separately. No Lean work was performed. Segura's modified-Bessel-product conjecture was excluded after a 2026 prior resolution was located.
+
 ## 2026-11-20 — Malek's conjecture
 
 Added a complete proposed proof of Malek's all-degree negative-transform subpermanent inequality, including equality. The reciprocal-mean capacity cost improves the optimized-slice estimate enough to separate the lower and upper constants in every proper degree. The permanent endpoint is credited to prior work. Two independent internal reviews and a standard-library rational checker found no gap; the proof is unrefereed. A bounded audit of primary literature, recent transform followups, and public repositories found no earlier complete endpoint theorem. The original 1989 full text remained inaccessible, while Cheon–Wanless's 2005 survey states the exact conjecture. This is a named subsidiary in the Minc site's linked literature, not an additional numbered entry. No Lean work was performed.
@@ -793,4 +799,5 @@ Added a [proof of both vertex-decomposability conjectures](results/hornak-woznia
 ## 2026-11-20 — Sonntag–Teichert conjecture
 
 Added a [proof of connectivity for tournament domination hypergraphs](results/sonntag-teichert/) on their nonisolated vertices. The argument uses minimal closed in-neighbourhoods and also characterizes the disconnected cases for oriented graphs.
+
 

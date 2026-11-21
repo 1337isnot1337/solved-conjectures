@@ -20,6 +20,9 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Horňák–Woźniak conjecture](results/hornak-wozniak/) | ⬜ |
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
+| [Fang–Zhang–Zhao's Sturm conjecture](results/fang-zhang-zhao-sturm/) | ⬜ |
+| [Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture](results/kvz-reciprocal-qgamma/) | ⬜ |
+| [Fang–Zhang–Zhao's infinite-log-convexity conjecture](results/fang-zhang-zhao/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture](results/kvz-bessel-unimodality/) | ⬜ |
 | [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ⬜ |
@@ -125,4 +128,5 @@ See [the scope notes](CONTENTS.md#precise-scope) and each result's proof for hyp
 ## Primary sources
 
 Sources are linked in the [catalogue](CONTENTS.md#primary-sources) and individual proofs.
+
 
