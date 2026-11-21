@@ -33,3 +33,5 @@ The same conclusion holds for groups with any number of nonabelian composition f
 For normal subgroups of arbitrary groups the prime-power-gcd conclusion also holds. For normal subgroups, or arbitrary subgroups of finite nilpotent groups, squarefree pairwise gcds allow a transfer to integer residue classes with identical moduli. [Proof and quantitative bound](squarefree-gcds.md)
 
 There is an exact bound in the squarefree transfer when each index uses at most two shared primes, an additive logarithmic bound for arbitrary two-prime indices, and a projection constraint when many cosets share an index. [Proofs](few-primes.md)
+
+The search for a nonnilpotent counterexample includes a replayable GAP export, a SAT checker, and a positive control using Menon's construction. [Method and completed searches](small-groups.md)
