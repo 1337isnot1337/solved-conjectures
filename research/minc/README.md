@@ -203,3 +203,9 @@ This checkpoint adds no full named conjecture resolution. The ten-resolution tar
 ## Substochastic padding checkpoint
 
 The [substochastic-core construction](inequalities/hwang_substochastic_padding.md) extends uniform padding to every doubly substochastic core. Its exact finite permanent formula converges with two derivatives to a matching sum with nonuniform monomer factors. A negative second derivative of that sum would transfer to finite counterexamples to Hwang's conjecture. The [exact checker](inequalities/hwang_substochastic_padding.py) passes twelve comparisons against full permanent enumeration. No negative-curvature core, general curvature theorem, or new conjecture resolution is claimed.
+
+## Face entropy and Ryser checkpoint
+
+The [face entropy reformulation](combinatorial/face_entropy_reformulation.md), with [independent review](combinatorial/face_entropy_review.md), proves that permanent minimizers on any Birkhoff face are exactly the maximizers of the prescribed-marginal total-correlation functional. It gives exact relative-entropy and quadratic derivative identities, but no new interior-attainment theorem or convergence assertion. The [Lih--Wang audit](sign-matrices/lihw_source_audit.md) now includes the recent entropy and endpoint-condition sources.
+
+The [Ryser reduction](combinatorial/ryser_cycle_reduction.md) gives exact four-cycle and six-cycle codegree identities and a directly derived regular loop expansion. Its signed generalized loops prevent a termwise comparison from minimum four-cycle counts. The [source audit](combinatorial/ryser_source_audit.md) preserves the existential design statement and rules out unrelated Ryser name collisions. The [exact checker](combinatorial/verify_ryser_cycle.py) passes. None of these notes resolves a full conjecture.

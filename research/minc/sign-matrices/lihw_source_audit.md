@@ -237,3 +237,13 @@ Ordinary real-rootedness of the interpolation, polynomial pointwise
 control of the near-top matching coefficients, an unproved radial
 convexity assertion, and the existing small-transform Frobenius estimates
 are not valid substitutes for that task.
+
+## Further primary inputs checked
+
+The later source pass inspected Suvrit Sra's [31 October 2026 manuscript](https://hexagonmath.org/pdf/2611.00118v1), particularly Theorem 2.1, Lemma 2.2, and Corollary 5.3. Its monotone quantity is the minimum total correlation of a permutation law with prescribed marginals. The explicit quadratic permanent remainder depends on the smallest matrix entry and vanishes on the boundary when the degree exceeds two. It is not a proof of the half-segment chord inequality.
+
+The [face entropy note](../combinatorial/face_entropy_reformulation.md) and its independent review make the remaining distinction exact: `log per A = -I(A) + KL(nu_A || mu_A)`. Pair averaging controls `I`, while this nonnegative residual also varies. On each fixed Birkhoff face, minimizing the permanent is exactly equivalent to maximizing `I`, with the same optimizers. The reformulation supplies no concavity or interior-attainment theorem.
+
+Carptopus's [7 October 2026 technical draft](https://github.com/Carptopus/MathExplore-Notes/blob/master/research/lih-wang-endpoint-and-cycle-products/manuscript.md) states a sufficient endpoint condition `per A >= 2^(2-n)` for all nonnegative row-stochastic matrices, and several cycle-forest results. The theorem statement and the one-collision envelope were inspected. These are partial domains, and no assertion of external verification of the complete draft is made here. The condition is not universal: `d_n < 2^(2-n)` for every `n>=2`, so it does not cover all matrices even near the uniform matrix.
+
+Both web search engines and the current catalogue were rechecked for a full resolution. No full proof or counterexample was found in the inspected sources. These newer inputs therefore remain credited prior work and possible tools; they do not change the target or the resolution count.

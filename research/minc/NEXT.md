@@ -16,11 +16,18 @@ Each result directory contains its source audit, reviews and reproducible checks
 
 ## Current full targets and exact gaps
 
+### Ryser's design conjecture
+
+The [source audit](combinatorial/ryser_source_audit.md) confirms the existential statement: some symmetric design must minimize the permanent when such a design exists; it does not require every design to minimize. The [codegree and loop note](combinatorial/ryser_cycle_reduction.md) proves the exact four-cycle excess and the compensating six-cycle identity. Generalized loops can have negative weight. No comparison of the full signed expansion is proved, and no switch sweep or added order is being counted.
+
+
 ### Brualdi's cohesive family
 
 For every global minimizer on the face of `C_n=J-I+E_nn`, the [structural reduction](combinatorial/brualdi_structure.md) proves that the free row and column are positive, the prescribed diagonal zeros have strict cofactor deficits, and any additional zeros form a directed acyclic graph. The [border and similarity reduction](sign-matrices/brualdi_similarity_reduction.md) adds the full border stationarity equations, a necessary matrix inequality from diagonal similarity, and `0<a_nn<1/2`.
 
 The missing step is to prove that the extra-zero graph is empty. Equal maximal minors, strict Alexandrov–Fenchel, and the recorded scalar bound have not proved this. The inverse-sign and transpose-averaging shortcuts have explicit obstructions. A further restricted-order verification would not settle the target.
+
+The [face entropy reformulation](combinatorial/face_entropy_reformulation.md) supplies an exact alternative objective with the same minimizers on every Birkhoff face. Its natural tangent direction vanishes at a hypothetical boundary minimizer, so it does not remove the extra-zero graph. The independent review checks boundary supports and coincident optimizer sets. No concavity or global-convergence theorem is asserted.
 
 ### Wang's sign-matrix problem
 
@@ -44,7 +51,7 @@ The [matching-limit theorem](inequalities/hwang_matching_monotonicity.md) now pr
 
 The [substochastic-core extension](inequalities/hwang_substochastic_padding.md) supplies a wider exact transfer: every nonnegative core with row and column sums at most one has a doubly stochastic completion whose normalized permanent path converges in `C²([0,1/2])` to the displayed weighted matching sum. Twelve exact finite counting checks pass. The all-core monotonicity theorem uses double stochasticity and does not automatically extend to this larger class. No core with negative curvature has been obtained.
 
-The full C34 chord inequality is a separate weighted average of normalized subpermanent sums. The [source audit](sign-matrices/lihw_source_audit.md) explains why the known large cofactor-ratio examples and small-transform estimates do not settle it.
+The full C34 chord inequality is a separate weighted average of normalized subpermanent sums. The recent entropy averaging theorem and endpoint-permanent condition have been audited; neither supplies the missing universal chord comparison. The [source audit](sign-matrices/lihw_source_audit.md) explains why the known large cofactor-ratio examples and small-transform estimates do not settle it.
 
 ### Gyires's ratio inequality
 
