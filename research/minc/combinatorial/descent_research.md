@@ -4,6 +4,22 @@ Date: 20 November 2026. These are research reductions and diagnostics. Neither C
 
 ## Conjecture 24: a broader local-descent question
 
+### A general reduction: a minimizing support is connected
+
+For k≥2, an integer k-regular global permanent minimizer cannot split into two nonempty square blocks. This elementary reduction is recorded for use in longer-cycle arguments; no novelty or conjecture resolution is claimed.
+
+Suppose A=B⊕C, with both blocks k-regular. Write P_B=per B and P_C=per C. Each positive entry is contained in a perfect matching, since a regular integer bipartite multigraph decomposes into k perfect matchings. In particular all its positive-entry cofactors are positive. The weighted mean of the ratios per B(i|j)/P_B over entries, with weights b_ij, is 1/k: summing the row Laplace expansions gives Σ_ij b_ij per B(i|j)=dim(B)P_B, while Σ_ij b_ij=k dim(B).
+
+Choose positive entries in B and C with cofactor ratios x≤1/k and y≤1/k. Subtract one at these two positions and add one at the two cross-block positions. The resulting matrix is a feasible integer k-regular matrix. Exact expansion gives
+
+```math
+ \frac{\operatorname{per}A'-\operatorname{per}A}{P_BP_C}
+ =-x-y+2xy<0,
+```
+because 0<x,y≤1/2. This excludes every decomposable support. Consequently a minimizer has no entry equal to k: such an entry isolates its row and column as a one-by-one block. The remaining difficulty is a fully indecomposable support with entries between 0 and k−1.
+
+### The still-unproved descent criterion
+
 The infinite family in `switch_descent_obstruction.md` defeats the requirement that every step reduce the collision count immediately. It does not defeat the following stronger search mechanism:
 
 > Does every nonbinary k-regular nonnegative integer matrix of order n, with k <= n, admit a unit 2-by-2 switch that decreases the pair (permanent, collision count) in lexicographic order?
@@ -52,6 +68,22 @@ If a_ij > 0 and A has no permanent-decreasing switch, every switch in the weight
 ```
 
 This consequence has not provided the missing binary-entry conclusion. In particular, it does not distinguish an entry equal to one from an entry greater than one.
+
+### Longer alternating cycles
+
+Let D be the difference of the two perfect matchings on an alternating cycle using l distinct rows and l distinct columns. Outside those positions D is zero. The exact redistribution polynomial is
+
+```math
+ \operatorname{per}(A+tD)
+ =\sum_{r=0}^{l}t^r
+ \sum_{\substack{I,J\text{ on the cycle}\\|I|=|J|=r}}
+ \operatorname{per}D[I,J]\operatorname{per}A[I^c,J^c].
+```
+For the full l-by-l cycle, per D=1+(−1)^l. Thus the leading coefficient vanishes when l is odd; in particular a six-edge alternating-cycle redistribution is a polynomial of degree at most two. Every coefficient is an exact signed sum of permanental minors. This gives an analytic object for a longer-cycle descent proof, but does not give the required sign.
+
+The real-rooted operator used in the PSW repair does not apply to these signed directions. Even for the regular matrix A=I_3+P_3 and D=P_3−I_3, the redistribution polynomial is 2+6t², with nonreal roots. For the nonbinary 3-regular matrix A=2I_3+P_3 it is 9−9t+9t². Thus neither real-rootedness nor concavity can be asserted for general alternating-cycle directions.
+
+There is also a discrete-versus-continuous distinction. An integer-grid minimizer only implies nonnegative changes at feasible integer steps. It does not satisfy Foregger's equality of positive-entry cofactors for a continuous face minimizer. Any argument importing those cofactor equalities into Conjecture 24 would leave a gap.
 
 ### Search implementation and outcomes
 

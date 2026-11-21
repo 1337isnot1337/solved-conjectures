@@ -78,3 +78,31 @@ For each fixed k, maximization of `|sigma_k(X)|` over real zero-margin matrices 
 `|sigma_k(X)|^2 <= sigma_k(U S U^T) sigma_k(V S V^T)`.
 
 Both matrices on the right have zero margins and the same Frobenius norm as X. The tensor normalization is the same on both sides and cancels. This reduces the proposed coefficient bound to a positive semidefinite optimization problem; it does not establish the bound.
+
+## Further full-target investigation
+
+Problem 17, the characteristic polynomial of a general permanental compound, was examined after the PSW review. The exact symmetric-power and Ryser/subset-transform representations do not presently yield a faster unrestricted algorithm. The growing-degree hypothesis in recent near-linear multivariate multipoint-evaluation results does not directly cover the multilinear transform needed here. Full details, sources, and the multiplicativity obstruction are in `compound_charpoly_obstruction.md`. No resolution is claimed.
+
+The independent PSW review is in `psw_review.md`. It includes the repaired repeated-row reduction, the Laguerre logarithmic-derivative crossing argument, the threshold equality case, and a separate uniqueness deduction from van der Waerden's equality case. This resolves the full named Pula–Song–Wanless subsidiary conjecture if the reviewed proof and priority audit stand, but does not resolve the entire Minc Problem 14 or 15. The independent review was posted on GitHub issue 142.
+
+The stable-polynomial route to Lih–Wang is documented in `lihw_stability_obstruction.md`: the interpolation permanent need not be real rooted, and the desired upper bound does not follow from a capacity lower bound. The stronger coefficientwise chord inequality is already false for the uniform zero-diagonal matrix of order three.
+
+## Entropy and radial obstructions
+
+Sra's minimum-total-correlation functional `I(P)=S(P)-H_perm(P)` gives the exact variational identity
+
+`log per A = max_(Q doubly stochastic) {-I(Q)-D(Q||A)}`,
+
+where `D(Q||A)=sum_ij q_ij log(q_ij/a_ij)` and distributions outside the support of A have infinite divergence. This follows directly from the Gibbs variational principle. Strong Gyires compares this infimal convolution at A and at `AA^T`; pair-averaging monotonicity of I does not itself supply the required comparison under matrix composition. The stable-pairing results in Section 6 of Sra's paper are lower bounds on Fischer pairings, whereas Gyires needs an upper bound relative to the central coefficient.
+
+The normalized multinomial formulation is exact: if `p_alpha` are the coefficients of `product_i sum_j a_ij x_j`, `d=n!/n^n`, and `pi_alpha=d/alpha!`, then `per(AA^T)=d E_pi[(p/pi)^2]` and `per A=d (p/pi)(1,...,1)`. Strong Gyires requires the latter likelihood-ratio value to dominate its L2 norm. The pointwise repeated-column shortcut was already disproved above.
+
+Radial ratio monotonicity also fails exactly. With normalized `J_3`, put `A_t=J_3-(t/2)(I-J_3)`, `0<=t<=1`. Then
+
+`per(A_t)/d_3 = 1+3t^2/8-t^3/4`,
+
+`per(A_t A_t^T)/d_3 = 1+3t^4/32+t^6/32`.
+
+The first expression has derivative zero at t=1, whereas the second has derivative 9/16. Therefore the derivative at t=1 of `per(A_t)^2/per(A_t A_t^T)` is negative. This is not a counterexample to Gyires; it excludes another proposed monotonicity proof.
+
+Finally, I is not concave even on the zero-diagonal face. An exact Gibbs/covariance witness is documented in `entropy_nonconcavity.md` and reproduced by `entropy_nonconcavity.py`. The sign-matrix worker separately gave an exact failure of simultaneous transposition-conjugation entropy monotonicity. Neither is a full-conjecture counterexample.

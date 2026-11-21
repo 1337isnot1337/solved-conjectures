@@ -111,3 +111,27 @@ For a symmetric Paley conference matrix H of order q+1, H^2=qI. Therefore A=sqrt
 ```
 
 chollet_conference.py checks H^2=qI exactly and computes per(A) in the quadratic integer ring. At q=9,13,17, the ranks are 5,7,9. The exact gaps per(A)^2-per(|A|^2) are positive. Ratios are about 0.0120143, 0.00174859, and 0.000230656 respectively. These matrices are far from violating Chollet, so further order-by-order testing of the same real conference family is not a promising direction. No finite result is counted as a conjecture resolution.
+# Gaussian averaging route: exact obstruction
+
+Let X^(1),...,X^(m),Y^(1),...,Y^(m) be independent proper complex Gaussian vectors, each with covariance A. Set
+
+Z_i^(m) = m^(-1/2) sum_(l=1)^m X_i^(l) conjugate(Y_i^(l)).
+
+If a_sigma=product_i A_(i,sigma(i)), Wick expansion gives the exact finite formula
+
+F_m(A) := E product_i |Z_i^(m)|^2
+ = sum_(sigma,tau in S_n) m^(cycles(sigma^(-1)tau)-n) a_sigma conjugate(a_tau).
+
+The label constraints in the two Wick contractions identify labels around the cycles of sigma^(-1)tau, giving the stated power of m. Consequently,
+
+F_1(A) = per(A)^2,
+lim_(m->infinity) F_m(A) = per(A Hadamard-product conjugate(A)).
+
+Thus monotonicity of F_m on positive integers would imply self-Chollet, but no such monotonicity was proved. Nonnegativity of the coefficients in powers of 1/m is false. For the positive semidefinite matrix A=(3I-J)/2 of order three, whose eigenvalues are 0,3/2,3/2, exact permutation summation gives
+
+F_m(A) = 39/32 + 9/(8m) - 3/(32m^2).
+
+In particular, the last coefficient is negative even in a settled small case. One cannot prove the unrestricted conjecture by discarding all cross-permutation terms as nonnegative or by asserting that the Gaussian-averaging expansion has nonnegative coefficients.
+
+The 2026 preprint by Ouimet and Greaves, *A proof of the strong Gaussian product inequality conjecture*, https://arxiv.org/html/2609.20234v1 , was inspected for a possible bridge. Its theorem compares a Gaussian product moment with a product of one-dimensional moments. It does not supply the covariance-changing comparison above, and no implication from that result to Chollet was established here. This is a source exclusion, not a claim about that preprint's full external validation.
+

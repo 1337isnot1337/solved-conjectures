@@ -108,3 +108,35 @@ A broader search found rank-four work omitted from the concise Lavi progress sum
 - Pant and Singh's actual arXiv title is *On Chollet's Permanent Conjecture for Graph Laplacians*: https://arxiv.org/html/2604.24192v1 . Section 4.2.1 already contains a diagonal-closure lemma, so deriving closure under nonnegative diagonal additions is not new progress.
 
 These exclusions prevent treating rank-four cases or elementary diagonal closure as fresh resolutions. None of the sources above claims unrestricted Chollet for all ranks.
+
+## Hadamard signed-automorphism obstruction
+
+For a real Hadamard matrix H of order n>2, every signed monomial automorphism changes the signs of an even number of rows and an even number of columns. Therefore no such automorphism can prove per(H)=0 by sending the permanent to its negative.
+
+Proof: n is divisible by four. Orthogonality makes the Hamming distance between any two rows n/2, which is even. Thus every row has the same entry product r in {+1,-1}. Every column likewise has the same entry product c. Suppose row and column permutations together with row signs epsilon_i and column signs delta_j send H to itself. The product of the entries in any resulting row is r times product_j delta_j; row signs contribute epsilon_i^n=1. Since the resulting row product remains r, product_j delta_j=1. The column argument gives product_i epsilon_i=1. Their product, the multiplier of the permanent, is therefore +1.
+
+The order-two exception has unequal row products, so the argument does not apply there. This is an elementary all-order obstruction to a proposed route, not a nonvanishing theorem or a resolved Minc entry. The same total-sign obstruction persists if transposition is included: the row and column products are interchanged, so the two sign products multiply to (r/c)(c/r)=1.
+
+## Permanent recurrence in the fixed-determinant family
+
+Let A have +1 on and below its diagonal and arbitrary signs above it, with every first-superdiagonal entry -1. Let N=(J-A)/2. Then N is a strictly upper-triangular zero-one matrix containing its first superdiagonal. Its directed graph is acyclic. A partition of [n] into increasing directed paths is the same as a matching in the row-column bipartite graph of N: the selected edges have in-degree and out-degree at most one, and there are no directed cycles.
+
+Let c_k count these path partitions with k paths and write C_N(x)=sum_k c_k x^k. The usual rook expansion gives
+
+per(A)=sum_k (-1)^(n+k) 2^(n-k) k! c_k,
+
+since c_k is the rook number r_(n-k)(N). Thus the fixed determinant 2^(n-1) family reduces P7 to an exact weighted path-cover sum.
+
+There is also a direct principal-minor explanation. For S={s_1<...<s_r}, subtract successive rows within A[S,S]. Its determinant is 2^(r-1) if every edge s_i -> s_(i+1) is negative in A, and zero otherwise. Expanding 1/det(I-diag(x)A) then gives the same path-partition formula.
+
+Two especially simple column choices give a closed polynomial recurrence. If the new vertex receives a negative edge only from the previous last vertex, then every old path cover has one optional extension, and
+
+S(C)=(x+1)C.
+
+If it receives a negative edge from every previous vertex, each path cover with k paths has k possible extensions, and
+
+T(C)=x(C+C').
+
+Starting with C=x, this is an exact description of all matrices in the restricted binary-column family. The last choice changes only the sign of the resulting permanent: the linear functional Phi(C)=integral_0^infinity e^(-t) C(-t/2) dt satisfies Phi(TC)=-Phi(SC) by integration by parts.
+
+This recurrence does not yield a uniform P7 construction. Exact enumeration of its 2^(n-1) words already excludes order 8: none has permanent +/-128 although order 8 is an admissible order for the unrestricted problem. The small exact script `hessenberg_recurrence.py` records this family obstruction. It is not presented as a finite-order advance or a resolution of P7. More general upper-entry choices remain uncontrolled.
