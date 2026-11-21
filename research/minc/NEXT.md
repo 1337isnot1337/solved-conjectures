@@ -291,3 +291,16 @@ The cofactor kernel note now gives the exact angle inequality needed on
 the omitted-index projected span. None of these computations establishes
 that angle bound, excludes every negative minimum, or changes the full
 resolution count.
+
+The [Marcus route review](nov20-independent/root/marcus_route_review.md)
+checks two further obstructions. Fixed orthogonal auxiliary padding
+that preserves every coarse permanent forces a rank-one auxiliary
+coarse Gram and loses at least a factor of the factorial of the block
+count. Even the corresponding universal domination step is impossible.
+The normalized binary-quadratic central-limit construction has a
+nonnegative leading correction on every product test; its negative
+cumulant direction is detectable by a nonproduct test and cannot by
+itself supply a conjecture counterexample. The finite-copy expression
+is not controlled. Tubbenhauer's November preprint and its remaining
+small-block gap were already in the earlier source audit, not first
+found at this checkpoint. These deductions do not resolve C9.
