@@ -24,7 +24,7 @@ The sweep also finished all 180 nonnilpotent group types of order 96 and all 35 
 [Independent group-arithmetic replay](replay.g) reconstructs a subgroup from each proposed right coset, verifies equality and index, then inverts each coset and recomputes all intersections and gcds. Run `ReplayPacking(order, id, entries)` in GAP, where each entry is a two-element list from the Python checker's `right_cosets` field. The positive control returned five disjoint cosets and maximum gcd six. Changing one recorded index from six to seven caused replay to reject the certificate.
 
 
-All 42 nonnilpotent group types of order 120 have now been tested for seven cosets, covering 940 group-and-signature pairs without a witness.
+The seven-coset sweep finished all 42 nonnilpotent group types of order 120 and all 169 of order 144, covering 940 and 2,122 group-and-signature pairs respectively. Across the six orders 48, 72, 96, 108, 120 and 144, the completed log contains all 504 exported group types exactly once and 3,755 group-and-signature pairs. The search returned no witness.
 
 For the simple groups PSL(2,7) and A6, GAP identifies the groups as SmallGroup(168,42) and SmallGroup(360,118). For family sizes seven, eight, and nine, the candidate index multisets surviving counting and gcd filters numbered 0, 3, and 4 for PSL(2,7) and 20, 3, and 0 for A6. The SAT search found no witness for these multisets. The zero entries follow from the index and counting filters alone. To reproduce the two input files, load the GAP exporter with an empty list of orders, then run the following calls.
 
