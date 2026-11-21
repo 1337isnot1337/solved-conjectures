@@ -1,0 +1,4 @@
+n 13 k 4 permanent 3852
+rows 0 1 2 3 4 leaves 924420 pruned 6235804 min 3852 target 3852
+rows 0 1 2 4 5 leaves 743980 pruned 5022334 min 3852 target 3852
+rows 0 1 2 4 9 leaves 593390 pruned 4111885 min 3852 target 3852
