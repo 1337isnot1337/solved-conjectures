@@ -1,12 +1,14 @@
 # Fang–Zhang–Zhao conjecture
 
+**Priority correction, 21 November 2026:** this remains a valid mathematical review of a rediscovery. The [complete earlier disproof](https://github.com/PrincipiaMathOrg/math-solutions/blob/c18609e47b635722206b9a2e9dcd402d0edcfb0a/mathdb/368345/solution.tex) was public at commit `c18609e47b635722206b9a2e9dcd402d0edcfb0a`, 26 October 2026, 14:00:38 UTC. It contains the same two exact witnesses and the same all-parameter polynomial certificate. Conjecture 4.3 contributes **zero new resolutions**; the historical proof link below is pinned because the active result entry is withdrawn.
+
 Independent mathematical review, 21 November 2026. Coordination: [issue #160](https://github.com/1337isnot1337/solved-conjectures/issues/160).
 
-**Verdict: the proposed disproof of Conjecture 4.3 passes this review.** The argument establishes failure for every integer $m\ge4$, with an exact polynomial argument covering the infinite family $m\ge6$. This review does not certify novelty; a separate reviewer is checking prior resolutions. No assertion is made about Conjecture 4.2 for Baxter numbers.
+**Verdict: the proposed disproof of Conjecture 4.3 passes this review.** The argument establishes failure for every integer $m\ge4$, with an exact polynomial argument covering the infinite family $m\ge6$. This review does not certify novelty; the separate prior-resolution check has now confirmed an earlier complete disproof. No assertion is made about Conjecture 4.2 for Baxter numbers.
 
 ## Material reviewed
 
-The proof reviewed is [results/fang-zhang-zhao/PROOF.md](../../results/fang-zhang-zhao/PROOF.md), Git blob `f99ae49459963fa08434a6af4043236e05e2e44e`. The accompanying earlier review and independent symbolic checker were also read. The original definitions and exact conjecture were checked directly in Hanqian Fang, Candice X. T. Zhang and James J. Y. Zhao, [Analytic properties arising from the Baxter numbers, arXiv:2505.05873v1](https://arxiv.org/html/2505.05873v1), Sections 1 and 4. The full journal text was not used in this mathematical review.
+The proof reviewed is [results/fang-zhang-zhao/PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/498434927da303b114869330552a875eea75bbbd/results/fang-zhang-zhao/PROOF.md), Git blob `f99ae49459963fa08434a6af4043236e05e2e44e`. The accompanying earlier review and independent symbolic checker were also read. The original definitions and exact conjecture were checked directly in Hanqian Fang, Candice X. T. Zhang and James J. Y. Zhao, [Analytic properties arising from the Baxter numbers, arXiv:2505.05873v1](https://arxiv.org/html/2505.05873v1), Sections 1 and 4. The full journal text was not used in this mathematical review.
 
 ## Original scope and conventions
 
@@ -73,4 +75,5 @@ Both signs are strict. These computations complete the asserted theorem for all 
 
 Run `python3 fraction_check.py` in this directory. The script uses only Python's standard library and checks the polynomial identity, the sign pattern, $Q(6)$, and the two exact remaining witnesses. It completed successfully in this review.
 
-The proposed theorem refutes one universal conjecture, Conjecture 4.3. It does not prove failure for the Catalan case $m=2$, and it does not settle the separate Baxter case $m=3$ or the separate Sturm-sequence Conjecture 4.1. Different values of $m$ are not separate conjecture resolutions. No mathematical gap was found. Priority and publication status remain governed by the separately documented literature audit; this is an independent internal review, not external peer review.
+The proposed theorem refutes one universal conjecture, Conjecture 4.3. It does not prove failure for the Catalan case $m=2$, and it does not settle the separate Baxter case $m=3$ or the separate Sturm-sequence Conjecture 4.1. Different values of $m$ are not separate conjecture resolutions. No mathematical gap was found. Priority is now settled negatively for this campaign by the earlier public disproof, as documented in the corrected literature audit; this is an independent internal review, not external peer review.
+

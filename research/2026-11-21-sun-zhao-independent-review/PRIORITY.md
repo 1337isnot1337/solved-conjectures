@@ -1,14 +1,16 @@
 # Sun–Zhao: independent priority review
 
+**Confirmed prior resolution, 21 November 2026:** the [complete earlier disproof](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-332483/mathdb-332483-solution.tex) is pinned at Principia commit `34b8b155d7db464ad7306f70b16d3af9cee34501`, 27 October 2026, 02:59:18 UTC. It uses the identical twelfth ratio iteration, retained indices 12, 13, 14, and an exact integer-product certificate from the same fifteen source terms. The internal manuscript date of 11 September is not the publication evidence. This campaign's counterexample is a rediscovery and is definitively excluded from new-result counts. Historical mathematical and access checks below are preserved; their former priority conclusions are superseded.
+
 Date: 21 November 2026. Related issue: [198](https://github.com/1337isnot1337/solved-conjectures/issues/198).
 
 ## Decision
 
-No earlier proof, disproof, or theorem settling the inspected statement was located in this bounded review. The target is Conjecture 5.2 of Brian Y. Sun and James J. Y. Zhao, *Log-behavior of two sequences related to the elliptic integrals*, [arXiv:1602.04359v4](https://arxiv.org/html/1602.04359v4).
+The original bounded review missed the complete earlier public disproof linked above. Its no-prior-found conclusion is withdrawn. The target is Conjecture 5.2 of Brian Y. Sun and James J. Y. Zhao, *Log-behavior of two sequences related to the elliptic integrals*, [arXiv:1602.04359v4](https://arxiv.org/html/1602.04359v4).
 
-The priority review remains **incomplete**. Keep the counterexample to that explicit arXiv statement outside the strict joint tally until the final conjecture section of the 2020 journal article and the author's linked Maple archive have been read. The unread journal version postdates the inspected arXiv revision, and the archive is a concrete source associated with the authors' computations. Neither is cleared by an unsuccessful retrieval. This recommendation concerns source-version and priority coverage; the mathematical audit is separate.
+The new-result priority gate is now **failed**. The earlier source proves the same violation and gives the exact rational product enclosure $`999999999814/10^{12}<A/B<999999999815/10^{12}<1`$. This is already a complete disproof, so the campaign's finer logarithmic enclosure does not create a new resolution. The journal and Maple retrieval gaps remain historical access limitations, but further retrieval cannot restore novelty to this identical counterexample. The mathematical audit remains separate.
 
-The existing [NOVELTY.md](../../results/sun-zhao-iterated-ratios/NOVELTY.md) was read in full before this review. Its limitations are retained. The independent [SOURCE_ACCESS.md](SOURCE_ACCESS.md), committed at [b864136886416ac14c168c1f7119621bd843ebe3](https://github.com/1337isnot1337/solved-conjectures/commit/b864136886416ac14c168c1f7119621bd843ebe3), documents the focused follow-up on both inaccessible sources.
+The existing [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/fa34b035f4853c8e790bd520171739ee17923a56/results/sun-zhao-iterated-ratios/NOVELTY.md) was read in full before this review. Its limitations are retained. The independent [SOURCE_ACCESS.md](SOURCE_ACCESS.md), committed at [b864136886416ac14c168c1f7119621bd843ebe3](https://github.com/1337isnot1337/solved-conjectures/commit/b864136886416ac14c168c1f7119621bd843ebe3), documents the focused follow-up on both inaccessible sources.
 
 ## Exact statement and distinctions
 
@@ -73,4 +75,5 @@ No complete forward-citation database export was obtained. Some related works re
 
 ## Recommendation
 
-Preserve the exact counterexample, its mathematical review and this audit as documented work on the explicit arXiv assertion. Describe the result as a disproof of that inspected statement with priority and journal-version checks incomplete. Do not add it to the strict count on the strength of failed source access. Reconsider the priority decision when the two concrete source leads are readable; no additional numerical testing addresses those gaps.
+Preserve the exact counterexample and mathematical review as credited research on a prior-resolved conjecture. Remove the active new-result entry and count. The authenticated 27 October public proof is decisive, independently of the unresolved journal and Maple access history; additional numerical testing or finer bounds cannot change that priority conclusion.
+

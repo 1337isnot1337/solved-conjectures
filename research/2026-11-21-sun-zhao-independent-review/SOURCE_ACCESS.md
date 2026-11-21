@@ -1,10 +1,12 @@
 # Sun–Zhao: focused source-access review
 
+**Confirmed prior resolution, 21 November 2026:** the [complete earlier disproof](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-332483/mathdb-332483-solution.tex) is pinned at Principia commit `34b8b155d7db464ad7306f70b16d3af9cee34501`, 27 October 2026, 02:59:18 UTC. It uses the identical twelfth ratio iteration, retained indices 12, 13, 14, and an exact integer-product certificate from the same fifteen source terms. The internal manuscript date of 11 September is not the publication evidence. This campaign's counterexample is a rediscovery and is definitively excluded from new-result counts. Historical mathematical and access checks below are preserved; their former priority conclusions are superseded.
+
 Date: 21 November 2026. Related issue: [198](https://github.com/1337isnot1337/solved-conjectures/issues/198).
 
-**Outcome:** neither the complete journal text nor the author's Maple archive was obtained. This review supplies no evidence that changes the scope or prior-resolution status of Conjecture 5.2. The result must continue to identify its verified target as the explicit latest arXiv statement; publication-stage equivalence and archive contents remain unchecked.
+**Historical access outcome:** neither the complete journal text nor the author's Maple archive was obtained during this follow-up. Those retrieval limits remain accurate. A later, separate direct archive check found the complete earlier disproof, so Conjecture 5.2 is now definitively excluded as prior work; it is no longer merely a candidate awaiting these source files.
 
-The package's source audit is named [NOVELTY.md](../../results/sun-zhao-iterated-ratios/NOVELTY.md), not SOURCES.md. That full audit and the issue history were read before this focused follow-up. Mathematical verification and the broader priority review are separate work.
+The package's source audit is named [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/fa34b035f4853c8e790bd520171739ee17923a56/results/sun-zhao-iterated-ratios/NOVELTY.md), not SOURCES.md. That full audit and the issue history were read before this focused follow-up. Mathematical verification and the broader priority review are separate work.
 
 ## Journal text
 
@@ -33,4 +35,5 @@ No archive member names, Maple code, stored computations or modification dates w
 
 ## Claim boundary
 
-The existing package already discloses both gaps; this follow-up does not remove those caveats. Its exact arXiv counterexample is assessed by the mathematical reviews. This source-access note neither independently certifies novelty nor supplies evidence against it, and makes no change to shared indexes or result counts.
+The historical package disclosed both gaps, and this follow-up did not remove them. Its exact arXiv counterexample remains mathematically valid. The subsequently authenticated earlier public proof supersedes the former unresolved-priority status: the campaign's package is a rediscovery and contributes zero. This note preserves what was and was not retrieved; it does not treat failed access as evidence for novelty.
+

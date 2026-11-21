@@ -1,5 +1,7 @@
 # Fang–Zhang–Zhao priority audit
 
+**Superseding correction, 21 November 2026:** both conjectures reviewed here are prior-resolved and excluded. In addition to the already recorded Sturm proof, [Principia's complete Conjecture 4.3 disproof](https://github.com/PrincipiaMathOrg/math-solutions/blob/c18609e47b635722206b9a2e9dcd402d0edcfb0a/mathdb/368345/solution.tex) was public on 26 October 2026. The earlier no-prior-found conclusion below is withdrawn; historical searches are retained with their actual limitations.
+
 Audit date: November 21, 2026. This audit independently reviews the two results previously promoted in issues [160](https://github.com/1337isnot1337/solved-conjectures/issues/160) and [162](https://github.com/1337isnot1337/solved-conjectures/issues/162). It supplements the packages' mathematical reviews; it does not claim another resolution.
 
 ## Sturm conjecture: excluded from the new-result count
@@ -39,11 +41,15 @@ The comment also corrects a degenerate generic lemma when the lower-degree polyn
 
 The conclusion is therefore conservative and definite: the repository package is a reproof of an earlier public ordinary argument. It contributes **zero new resolutions**, irrespective of whether either argument has a completed formalization or journal publication. No Lean work was performed for this audit.
 
-## Infinite-log-convexity conjecture: separate audit
+## Infinite-log-convexity conjecture: prior resolution confirmed
 
 Conjecture 4.3 concerns infinite iterated log-convexity of the row sums for every fixed integer $`m\geq2`$. It is distinct from Conjecture 4.1 and from the Baxter-only Conjecture 4.2. The source's complete Section 4 was reread. The earlier Sturm issue explicitly leaves the Baxter problem outside its scope and contains no disproof of Conjecture 4.3.
 
-No earlier disproof of Conjecture 4.3 was located in this independent audit. The current package's exact all-$`m\geq4`$ refutation has no detected priority conflict. Absence from these searches is bounded evidence, not a proof that all unindexed material is absent. In particular, the unavailable September Chern–Shi and August Liu–Mao full texts remain unresolved access limitations.
+The initial audit missed an earlier complete disproof. Direct inspection of `PrincipiaMathOrg/math-solutions/mathdb/368345/solution.tex` located the [full prior source](https://github.com/PrincipiaMathOrg/math-solutions/blob/c18609e47b635722206b9a2e9dcd402d0edcfb0a/mathdb/368345/solution.tex) at public commit `c18609e47b635722206b9a2e9dcd402d0edcfb0a`, with author and committer timestamp 26 October 2026, 14:00:38 UTC. The path history returns that single insertion commit, and its file is identical to the current file. The internal manuscript date of 18 September is not used to establish public chronology. The referenced upstream branch could not be accessed, so no earlier public date is asserted.
+
+The prior source gives the identical negative fourth iterates for $`m=4,5`$, the same degree-17 polynomial (called $`P`$ there and $`Q`$ here), the same factor $`m^4(m-1)^4(m+1)^5(m+2)^2(m^4+9m^3+26m^2+36m+72)`$, and denominator $`1547934105600`$. It proves negativity of the third iterate for every $`m\ge6`$, hence the entire $`m\ge4`$ counterfamily. Its qualification about an unread final-journal source does not erase the complete public disproof of the preprint statement. This campaign's argument is a rediscovery and contributes **zero**.
+
+The later literature checks and access gaps below describe the original audit. They no longer leave novelty undecided: the directly read prior proof settles that gate.
 
 ### Later primary literature independently checked
 
@@ -67,8 +73,9 @@ Global GitHub issue searches were run without restricting to this repository. Th
 
 The exact negative witness search returned only issue 160. The log-convexity searches also found [trureturing issue 25307](https://github.com/the-omega-institute/trureturing/issues/25307), which refutes a different transformation-preservation question in Zeng's q-Narayana paper. Its stated kernels, input sequence, and negative two-by-two minors were inspected; it is not a refutation of ordinary Hoggatt row-sum infinite log-convexity. [RealRooted issue 2548](https://github.com/PerAlexandersson/RealRooted/issues/2548) is explicitly about the already proved classical $`q=1`$ Sturm theorem, not the remaining deformation or iterated row-sum claim.
 
-The [Principia archive manifest](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/MANIFEST.json) and KnowledgeSense's current preprint directory names were screened for Hoggatt, Baxter, Fang, and related log-convexity titles. The current README indexes of [Principia](https://github.com/PrincipiaMathOrg/math-solutions), [pudim](https://github.com/pudim-project/pudim-ai-demo-zetalaw), and [CoPEER](https://github.com/qqliu/CoPEER) were also searched. No matching full target was found. These are title/manifest/index searches; they are not represented as a full-text search of every manuscript in those archives.
+The [Principia archive manifest](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/MANIFEST.json) and KnowledgeSense's current preprint directory names were screened for Hoggatt, Baxter, Fang, and related log-convexity titles. The current README indexes of [Principia](https://github.com/PrincipiaMathOrg/math-solutions), [pudim](https://github.com/pudim-project/pudim-ai-demo-zetalaw), and [CoPEER](https://github.com/qqliu/CoPEER) were also searched. No matching full target was found in those title-level checks. The later direct read of `mathdb/368345/solution.tex` shows that the archive did contain the complete disproof. These are title/manifest/index searches; they are not represented as a full-text search of every manuscript in those archives.
 
 Global GitHub code search was unavailable: a Hoggatt query at approximately 07:10 UTC on November 21 returned HTTP 429 with a retry delay of 834 seconds. That failure is not a negative search result. Further retries were stopped to avoid resetting a shared limit. Public web searches using both available engines and current primary-source checks supplement the successful issue search. They included the exact source identifier and conjecture number, Hoggatt with infinite log-convexity, counterexample, disproof, proof, and the exact negative witness, as well as the later paper identifiers. The inaccessible September Chern–Shi and August Liu–Mao full texts remain explicit limits.
 
-The successful issue search supplies a decisive exclusion of the Sturm package. The separate infinite-log-convexity package has no detected earlier resolution after the additional searches above, subject to the stated access limits. The mathematical result and the priority status must remain separately assessable.
+The successful issue search excludes the Sturm package. The later direct archive inspection and authenticated 26 October commit also exclude the infinite-log-convexity package. Both ordinary mathematical arguments remain valid, but neither is a new resolution for this campaign.
+

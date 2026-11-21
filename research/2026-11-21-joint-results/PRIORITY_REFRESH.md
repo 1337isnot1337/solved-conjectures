@@ -1,5 +1,7 @@
 # Final global issue-history priority refresh
 
+**Later direct-archive correction, 21 November 2026:** the issue-history refresh below missed complete public disproofs of [Fang–Zhang–Zhao Conjecture 4.3](https://github.com/PrincipiaMathOrg/math-solutions/blob/c18609e47b635722206b9a2e9dcd402d0edcfb0a/mathdb/368345/solution.tex) (26 October 2026) and [Sun–Zhao Conjecture 5.2](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-332483/mathdb-332483-solution.tex) (27 October 2026). Both are definitively excluded. The successful and failed historical searches remain documented below; an empty issue query did not establish absence from repository files.
+
 Date: 21 November 2026. This is a supplement to the package-specific source audits, not a replacement for their primary-source and full-text checks.
 
 ## Why this check mattered
@@ -38,12 +40,14 @@ A separate independent audit directly enumerated five public proof collections a
 
 ## Parallel-group targets
 
-- Fang–Zhang–Zhao: [independent audit](../2026-11-21-special-functions-fzz-priority/AUDIT.md). This distinguishes the prior Sturm proof from the separately reviewed infinite-log-convexity disproof. The June Chern–Shi full text was recovered from the author's site and read; two other later full-text access gaps remain explicit.
+- Fang–Zhang–Zhao: [corrected independent audit](../2026-11-21-special-functions-fzz-priority/AUDIT.md). Both the Sturm proof and the infinite-log-convexity disproof are prior resolutions and are excluded. The latter was found by direct inspection of `mathdb/368345/solution.tex` at the immutable 26 October Principia commit; the earlier issue and title/manifest searches missed it.
 - McCrea: [independent audit](../2026-11-21-mccrea-independent-review/PRIORITY.md). Seven narrow global issue queries and direct corpus manifests found no earlier density-crossover theorem. The earlier fixed-number theorem is credited; the primary November 5 source states the new uniqueness question separately.
 - Vishnyakova: [independent mathematical/source review](../2026-11-21-vishnyakova-independent-review/AUDIT.md) and [package source audit](../../results/vishnyakova-root-radius/SOURCE_AUDIT.md). The earlier equal-parameter and bounded-degree results do not establish arbitrary independent-parameter root exclusion.
 - Gröchenig: [independent audit](../2026-11-21-grochenig-independent-review/PRIORITY.md). The exact published source scope, all returned comments of repository issues 80 and 121, global issue histories, the 2,500-comment broad-search lead, the closest Gaussian/Gabor corpus manuscript and related primary papers were checked. No earlier full resolution of the upper-density comparison was found within the documented scope.
 
 - Han–Sabag–Kostina–Hassibi: [independent audit](../2026-11-21-han-sabag-independent-review/PRIORITY.md). Both v1 and v2 state the same standalone matrix feasible set and sparse-optimality assertion. Global issue leads, the closest feedback-capacity and detectability papers, and public proof inventories yielded no matching earlier resolution. The conference PDF and secondary summary access limits remain explicit.
+
+- Sun–Zhao: the [corrected priority audit](../2026-11-21-sun-zhao-independent-review/PRIORITY.md) records the earlier complete twelfth-ratio counterexample at the immutable 27 October Principia commit. This candidate was already outside the selected joint count, and is now definitively excluded rather than awaiting source access.
 
 ## Limits and disposition
 
@@ -51,4 +55,5 @@ Global GitHub code search repeatedly returned HTTP 429 with renewed retry delays
 
 The package audits also name inaccessible related full texts. In particular the Morel differencing paper remains a concrete limit for the López Pouso–Segura priority check. No exhaustive bibliographic claim is made.
 
-No earlier matching complete result was found for the retained packages within the documented audit. Three already-resolved result packages were removed from the active catalogue, and other independently derived prior consequences were never promoted. New-result accounting remains subject to correction if further prior work is located.
+The original issue-history refresh found no earlier matching complete result for the packages it then retained. Direct archive inspection later disproved that negative finding for Fang–Zhang–Zhao and Sun–Zhao; both are now excluded. The earlier three withdrawals and other unpromoted prior consequences remain excluded as well. The corrected joint ledger has ten strict families, and future prior discoveries must likewise change the accounting.
+

@@ -1,8 +1,10 @@
 # Independent review of the disproof of Sun–Zhao's conjecture
 
+**Confirmed prior resolution, 21 November 2026:** the [complete earlier disproof](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-332483/mathdb-332483-solution.tex) is pinned at Principia commit `34b8b155d7db464ad7306f70b16d3af9cee34501`, 27 October 2026, 02:59:18 UTC. It uses the identical twelfth ratio iteration, retained indices 12, 13, 14, and an exact integer-product certificate from the same fifteen source terms. The internal manuscript date of 11 September is not the publication evidence. This campaign's counterexample is a rediscovery and is definitively excluded from new-result counts. Historical mathematical and access checks below are preserved; their former priority conclusions are superseded.
+
 Review date: 21 November 2026. Reviewer: the current group's graph/number-theory worker, independently of the parallel group that authored the result.
 
-Reviewed [PROOF.md](../../results/sun-zhao-iterated-ratios/PROOF.md), blob `fe1eae10747b29a27519d148f513b4937ae117ae`, and the exact primary statement. **Verdict: the complete disproof of Conjecture 5.2 in arXiv:1602.04359v4 passes mathematical and source-scope review.** The priority assessment is separate; the full journal version was not read and is not presumed to have identical wording.
+Reviewed [PROOF.md](https://github.com/1337isnot1337/solved-conjectures/blob/fa34b035f4853c8e790bd520171739ee17923a56/results/sun-zhao-iterated-ratios/PROOF.md), blob `fe1eae10747b29a27519d148f513b4937ae117ae`, and the exact primary statement. **Verdict: the complete disproof of Conjecture 5.2 in arXiv:1602.04359v4 passes mathematical and source-scope review.** The separate priority assessment now confirms a complete earlier public disproof. The full journal version was not read in this original mathematical review and is not presumed here to have identical wording.
 
 ## 1. Primary source and precise truncation
 
@@ -145,7 +147,7 @@ This is an exact counterexample to the whole printed universal Conjecture 5.2 in
 
 It does not prove that every larger iteration order fails. It does not refute a different conjecture with an unspecified order-dependent eventual threshold. The determinant-transform Conjecture 5.1, the other sequence's Conjecture 5.3, and the earlier first-ratio and root-sequence theorems are different assertions.
 
-The package's [NOVELTY.md](../../results/sun-zhao-iterated-ratios/NOVELTY.md) records the separate search for earlier resolutions. This review did not repeat that full search. In particular, the complete 2020 journal article and the author's Maple archive remain access limits in that audit. The exact statement verified here is arXiv:1602.04359v4; this review makes no assertion that the journal's final wording is unchanged. No mathematical or source-scope gap was found in the inspected claim. Priority and external acceptance are separate questions.
+The package's [NOVELTY.md](https://github.com/1337isnot1337/solved-conjectures/blob/fa34b035f4853c8e790bd520171739ee17923a56/results/sun-zhao-iterated-ratios/NOVELTY.md) records the separate search for earlier resolutions. This review did not repeat that full search. In particular, the complete 2020 journal article and the author's Maple archive remain access limits in that audit. The exact statement verified here is arXiv:1602.04359v4; this review makes no assertion that the journal's final wording is unchanged. No mathematical or source-scope gap was found in the inspected claim. Priority and external acceptance are separate questions.
 
 ## 7. Contemporaneous campaign provenance
 
@@ -158,3 +160,4 @@ The full-proof path `results/sun-zhao-iterated-ratios/PROOF.md` has one publicat
 This supports attribution as a new parallel-campaign package, followed by the present group's independent review. It is not an initial catalogue result being re-counted. Repository provenance does not by itself certify external mathematical priority.
 
 No shared index or result file is modified by this research-only audit. The coordinating worker retains this package outside the joint strict tally pending the concrete journal-version and author-archive checks. Mathematical correctness and exact arXiv scope pass; the remaining source/priority gates are not silently treated as complete.
+
