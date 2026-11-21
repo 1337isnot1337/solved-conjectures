@@ -54,6 +54,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Pula–Song–Wanless conjecture": "pula-song-wanless",
     "Perron root of permanental compounds": "perron-root-permanental-compounds",
     "Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture": "kvz-bessel-unimodality",
     "Ferreira–Simon's Wright log-concavity conjecture": "ferreira-simon-wright",

@@ -35,6 +35,8 @@ jobs:
           python -m pip install sympy==1.14.0
           python results/gilmore-crossing-nesting/verify.py
           python results/chow-conjecture/verify.py
+      - name: Check Pula–Song–Wanless identities and parameter conventions
+        run: python results/pula-song-wanless/verify.py
       - name: Verify partial results at Hadamard order 2396
         working-directory: results/hadamard-2396
         run: |

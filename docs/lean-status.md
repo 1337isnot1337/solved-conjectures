@@ -34,6 +34,7 @@ Lean verification.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| Pula–Song–Wanless conjecture | Not formalized | Complete written proof of the all-parameter threshold, including its equality case and unique boundary minimizer. Real-rooted minor equalization and van der Waerden completion replace disputed dependencies. Exact identity checks supplement the proof. The full Minc Problems 14 and 15 remain outside its scope. |
 | Perron root of permanental compounds | Not formalized | Written FPRAS proof for every nonnegative rational matrix and every compound degree, with deterministic zero detection. Exact finite checks supplement the argument. This is the randomized approximation formulation of Minc Problem 18; exact polynomial-time eigenvalue computation and the characteristic-polynomial problem are outside its scope. |
 | Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture | Not formalized | Written proof of the full surviving unimodality assertion and all monotone/unique-maximum cases; exact series diagnostics are supplementary. |
 | Ferreira–Simon's Wright log-concavity conjecture | Not formalized | Written analytic disproof on continuous boundary and interior parameter families; exact curvature checks are supplementary. |
