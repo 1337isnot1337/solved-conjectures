@@ -29,3 +29,5 @@ The prime $p$ of the full block is the only prime dividing any two indices. If a
 For arbitrary index patterns the incidence blocks can intersect in two or more points, so the off-diagonal entries in the rank argument need not equal one. For arbitrary groups the series can have factors mixing shared and private primes. Both cases remain part of the sponsor's problem. Zhu studies small numbers of cosets. Fornal and Sun obtain an asymptotic large-gcd bound for integer residue classes. [Zhu](https://arxiv.org/abs/0807.2207) · [Fornal and Sun](https://arxiv.org/abs/2607.24655)
 
 The same conclusion holds for groups with any number of nonabelian composition factors isomorphic to $A_5$ when these are the only nonabelian composition factors. [Local measures and exact finite check](simple-factors.md)
+
+For normal subgroups of arbitrary groups the prime-power-gcd conclusion also holds. For normal subgroups, or arbitrary subgroups of finite nilpotent groups, squarefree pairwise gcds allow a transfer to integer residue classes with identical moduli. [Proof and quantitative bound](squarefree-gcds.md)
