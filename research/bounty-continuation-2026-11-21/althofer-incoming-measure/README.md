@@ -266,6 +266,24 @@ $`\sum_{n\in\mathcal S}n^{-s}F_s(n)\lt \infty`$. Those arithmetic pointwise and
 summability estimates remain unproved. The construction cannot be transferred
 to all integer starts by treating their residues as random.
 
+## Further integer transfer and the remaining mass estimate
+
+The subsequent [integer-transfer note](three-adic-integer-transfer.md), checked in a [separate independent review](TRANSFER_REVIEW.md), gives an exact probabilistic transfer. Define
+
+```math
+\Gamma_t(s)=\sum_{m\in\mathcal S}m^{-s}\mathcal L_s^t1(m).
+```
+
+A positive stopped product martingale and Hölder's inequality prove
+
+```math
+\Pr_n(\tau_1>t)^{s+1}\le n^s\Gamma_t(s).
+```
+
+Consequently, subsequential decay of this integer mass to zero would imply absorption from every start. Full summability is a stronger sufficient condition; a uniform exponential bound is unnecessary for this implication. No such total decay has been proved.
+
+The note bounds the entire contribution with $`m\ge3^{t+1}`$ and the contribution of one arbitrary inverse jump followed by a binary phase near either endpoint. The complementary region still contains every fixed integer for all sufficiently large times, and repeated phases have no proved contraction. It also proves dense three-adic poles and a family of large values at actual odd integers, showing why finiteness cannot be inferred from the Haar integral or simple endpoint-distance bounds. Those large values do not prove failure of integer summability.
+
 ## Outcome of this global attempt
 
 The average in (5) suggested a summable incoming-flow measure. The pointwise certificate fails for every periodic power weight and even for an arbitrary additional correction by the current two-adic phase height. Enlarging a finite residue linear program cannot remove this obstruction.
