@@ -1290,4 +1290,4 @@ This formalizes a previously resolved result. A complete ordinary disproof was p
 
 ## Gilmore crossing–nesting recurrence
 
-`GilmoreCrossingNesting.row_recurrence` proves the generic finite row-sum recurrence over any commutative semiring. The matrix-product identification and actual path/matching bijection remain unformalized. Strict compilation, isolated kernel replay and axiom check passed; the combined gate is pending.
+`GilmoreCrossingNesting.row_formula_implies_paths` proves that any array satisfying the explicit finite row formula and boundary values equals the exhaustively enumerated weighted Dyck-path sums, over any commutative semiring. The product-defined matrix must still be shown to satisfy the row formula; the matching bijection also remains unformalized. Strict compilation, isolated kernel replay and axiom check passed; the combined gate is pending.
