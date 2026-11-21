@@ -23,3 +23,5 @@ This refutes the published universal assertion once. The separate lower-density 
 Run `python3 verify.py` in this directory. The script supports the written proof; it does not establish the infinite construction by finite testing. No Lean verification is claimed.
 
 Research coordination: [issue 191](https://github.com/1337isnot1337/solved-conjectures/issues/191).
+
+**Lean status:** none.
