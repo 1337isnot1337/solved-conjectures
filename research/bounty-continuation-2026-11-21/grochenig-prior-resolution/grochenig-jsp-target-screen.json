@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-21",
+  "scope": "Exact-target eligibility screen only; SHA values are those advertised by the directory listing, not independently recomputed content hashes.",
+  "files": [
+    {
+      "path": "problems/README.md",
+      "sha": "d807901a74d1b273f583e56cbb673fc9819a58d7",
+      "bytes": 227635,
+      "hits": []
+    },
+    {
+      "path": "problems/catalog-0001-0100.md",
+      "sha": "574230f1d41129780ae33092ff5085e5f95d6466",
+      "bytes": 110682,
+      "hits": []
+    },
+    {
+      "path": "problems/catalog-0101-0200.md",
+      "sha": "d8ffc9dc3b32018c0e8ed6a51ec8e2f798a9ea69",
+      "bytes": 106002,
+      "hits": []
+    },
+    {
+      "path": "problems/catalog-0201-0300.md",
+      "sha": "9ca215c886b5e76113af6492fbf9e7f594891ea0",
+      "bytes": 86009,
+      "hits": [
+        {
+          "line": 1510,
+          "text": "| Elapsed years | About 46 years (since 1980) |\n| Publication details | &#91;Gr64d&#93; [A property of Fibonacci numbers](https://doi.org/10.1080/00150517.1964.12431522) — Fibonacci Quart. (1964), 1-10.<br>&#91;ErGr80&#93; Old and new problems and results in combinatorial number theory — Monographies de L'Enseignement Mathematique (1980). |\n| Scholarly recognition | Unverified: no public recognition specifically identifying this result was found (such as an award citation or authoritative public confirmation). |\n"
+        }
+      ]
+    },
+    {
+      "path": "problems/catalog-0301-0400.md",
+      "sha": "3299b025d44dac86064f33f690a3778fb21273ba",
+      "bytes": 91812,
+      "hits": []
+    },
+    {
+      "path": "problems/catalog-0401-0500.md",
+      "sha": "682654d4ca8be1161d7f4edb26cb85d78bd94fc8",
+      "bytes": 88952,
+      "hits": []
+    },
+    {
+      "path": "problems/catalog-0501-0600.md",
+      "sha": "1adf510bd9492acb7caf72ffc7c29900be1f45c8",
+      "bytes": 127099,
+      "hits": []
+    },
+    {
+      "path": "problems/catalog-0601-0700.md",
+      "sha": "dfb0480e7e0cfa86ac2891c532b790a724ea07fa",
+      "bytes": 90952,
+      "hits": []
+    },
+    {
+      "path": "problems/catalog-0701-0800.md",
+      "sha": "d08a1bc839fb69478c58bd153e542f85891ad543",
+      "bytes": 191833,
+      "hits": []
+    },
+    {
+      "path": "problems/catalog-0801-0900.md",
+      "sha": "e81e9d6a69dc7373db2f4ec2ed917a9fb17e0bc9",
+      "bytes": 116372,
+      "hits": [
+        {
+          "line": 1124,
+          "text": "| Elapsed years | About 66 years (since 1958) |\n| Publication details | &#91;EHP58&#93; [Metric properties of polynomials](https://doi.org/10.1007/bf02790232) — J. Analyse Math. (1958), 125-148.<br>&#91;GhRa24&#93; [Number of components of polynomial lemniscates: A problem of Erdös, Herzog, and Piranian](https://doi.org/10.1016/j.jmaa.2024.128571) — J. Math. Anal. Appl. (2024), Paper No. 128571, 21. |\n| Scholarly recognition | Unverified: no public recognition specifically identifying this result was found (such as an award citation or authoritative public confirmation). |\n"
+        }
+      ]
+    },
+    {
+      "path": "problems/catalog-0901-1000.md",
+      "sha": "d85eb03753ac6d744b63cdb3862c6c99adbe7f3b",
+      "bytes": 89624,
+      "hits": []
+    },
+    {
+      "path": "problems/catalog-1001-1022.md",
+      "sha": "5f227d072117c7d6e01ab22a7c9cf63b618537ed",
+      "bytes": 149497,
+      "hits": []
+    },
+    {
+      "path": "problems/mathdb-pilot.md",
+      "sha": "964574bc9a73db84466c86bd0751d407588573c3",
+      "bytes": 10026,
+      "hits": []
+    }
+  ]
+}
