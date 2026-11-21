@@ -100,3 +100,45 @@ The [Poisson composition identity](inequalities/gyires_poisson_gram_equivalence.
 - The stationary but non-barycentric cyclic-block family is classical Fischer–Hwang work, reconstructed in the [stationarity audit](combinatorial/barycentric_stationarity_audit.md).
 
 The full historical record and further unresolved routes remain in [the research index](README.md). No Lean work is part of this campaign.
+
+
+## Further continuation, 20 November 2026
+
+The [continuation index](continuation-2026-11-20/README.md) records the next
+four-worker investigation. It has **zero new complete resolutions**; no
+restricted-rank theorem, construction obstruction, or finite probe is
+counted toward the requested ten.
+
+- [Chollet rank-square theorem](continuation-2026-11-20/inequalities/chollet_projection_checkpoint.md):
+  an independently reviewed sphere-tilt proof covers rank r at least five
+  and n at least r squared, with exact rational intervals and an analytic
+  large-rank tail. The unrestricted rank-reduction bridge is missing.
+  [Variational identities](continuation-2026-11-20/inequalities/chollet_laplacian_checkpoint.md)
+  do not establish that bridge.
+- [Brualdi support theorem](continuation-2026-11-20/sign/brualdi_symmetric_support.md):
+  every minimizing row and column has strict-majority support, and the
+  mutual-positive support is fully indecomposable. This enables symmetric
+  scaling but does not bound its permanent. An
+  [exact low-permanent example](continuation-2026-11-20/sign/brualdi_low_permanent_scaling_obstruction.md)
+  shows why the derangement threshold alone cannot supply that bound.
+- [C24 averaging obstruction](continuation-2026-11-20/regular/integer_complement_average_obstruction.md):
+  uniform complement replacement fails on an infinite integer-regular
+  family. A useful individual replacement or a minimizer-specific theorem
+  is still possible.
+- [Lih--Wang coefficient obstruction](continuation-2026-11-20/regular/lihw_coefficient_obstruction.md)
+  rejects a pointwise proxy using published Jerrum graphs. The
+  [full rook transfer](continuation-2026-11-20/regular/jerrum_lihw_transfer.md)
+  evaluates the actual aggregate gap, including weighted flat completions;
+  no uniformly positive gap or full-family sign theorem was found.
+- [Wang sign-skeleton identities](continuation-2026-11-20/sign/p7_skeleton_lifts.md)
+  give exact determinant and permanent formulas and prove that fixed
+  one-vertex stretching produces only finitely many equality solutions.
+  Simultaneous growth and changing skeletons remain outside this obstruction.
+- The [P17 review](continuation-2026-11-20/reviews/permanental_compound_jacobi_review.md)
+  supplies an all-spectrum complementary-minor identity but rejects its
+  generic cost as a uniform speed improvement.
+
+Proofs, primary-source links, independent reviews, and exact checkers are
+linked from the continuation index. Issue 139 records assignments and
+commit checkpoints. The separate C6, C20, C44, and P1 workers' files were
+preserved.
