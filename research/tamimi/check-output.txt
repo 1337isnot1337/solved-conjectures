@@ -1,0 +1,4 @@
+PASS: 24 exact graph Laplacians and 24 exact reduced presentations.
+Range: 3 <= r <= 6, 3 <= n <= 8.
+All invariant factors match the full conjectured formula.
+These finite checks supplement, and do not replace, PROOF.md.
