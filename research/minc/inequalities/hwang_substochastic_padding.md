@@ -258,3 +258,56 @@ Thus a proof cannot replace the average bound by a uniform vertexwise comparison
 
 The completion, finite counting formula, $`C^2`$ limit, and Poisson representation are elementary deductions supplied here. They extend the prior uniform-block calculation. No novelty or solved-conjecture claim is attached to them. The remaining step is a curvature sign for (8), or an exact core with negative curvature; neither has been obtained.
 
+
+
+## Full-interval C2 strengthening
+
+The limit (7) in fact holds in \(C^2([0,1])\), for **every** fixed
+nonnegative doubly substochastic core \(B\), provided \(M\) tends to
+infinity through integers greater than \(q=m-s\). This strengthens
+the half-interval assertion without assuming that \(B\) is PSD.
+
+The only potential endpoint obstruction in formula (4) is the factor
+\(b^{-h}\). But the exact affine identity from (2) is
+
+~~~math
+Mb=1-\frac{m(1-t)}{M+m}-\frac{qt}{M}.
+~~~
+
+For all \(0\le t\le1\) and sufficiently large \(M\), this is bounded
+below by \(1-\max\{m/(M+m),q/M\}\ge1/2\). Its first derivative is
+\(O(1/M)\), its second derivative vanishes. Consequently
+\((Mb)^{-h}\) and its first two derivatives converge uniformly to one.
+The remaining factors in formula (4), rewritten using \(M\ell_i\),
+\(M\rho_j\), and \((M)_h/M^h\), also converge in \(C^2([0,1])\).
+Monomer factors may vanish at \(t=1\); we never divide by them.
+
+The common prefactor satisfies
+
+~~~math
+\frac{M!b^M}{d_{M+m}}=\frac{d_M}{d_{M+m}}(Mb)^M,\qquad
+M\log(Mb)\longrightarrow -m(1-t)-qt=-m+st
+\quad\text{in }C^2([0,1]).
+~~~
+
+The convergence of the logarithm and its first two derivatives is
+uniform: its affine decrement is \(O(1/M)\); the second derivative of
+the logarithm after multiplication by \(M\) is \(O(1/M)\).
+As \(d_M/d_{M+m}\to e^m\), the prefactor converges to \(e^{st}\)
+in \(C^2([0,1])\). The sum in (4) has finitely many terms depending
+only on \(m\), proving
+
+~~~math
+\frac{p_M}{d_{M+m}}\longrightarrow F_B^{\mathrm{ext}}
+\quad\text{in }C^2([0,1]).
+~~~
+
+This is not a curvature theorem for arbitrary cores. A strictly
+negative derivative of the limiting function at an interior point
+would transfer to finite nonmonotone doubly stochastic segments.
+For symmetric PSD cores, the independent
+[Gram-square theorem](hwang_psd_gram_core.md) gives
+\(F_B''(t)\ge\|B\|_F^2>0\) for all \(t\ge0\), so the entire
+finite segment is strictly convex and increasing for all sufficiently
+large \(M\), even in some indefinite boundary completions.
+Neither complete P8 classification nor unrestricted C34 follows.

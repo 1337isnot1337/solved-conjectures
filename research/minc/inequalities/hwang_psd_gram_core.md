@@ -33,10 +33,10 @@ Let \(A_M(B)\) be the genuine doubly stochastic completion defined by equation (
 
 ~~~math
 \frac{d^2}{dt^2}\operatorname{per}((1-t)J_{M+m}+tA_M(B))>0
-\quad(0\le t\le\tfrac12).
+\quad(0\le t\le1).
 ~~~
 
-The permanent therefore increases strictly on \(0<t\le1/2\). If \(B\) has a zero entry these are boundary directions. Nothing is claimed on the full segment for finite \(M\), or for arbitrary indefinite/asymmetric cores.
+The permanent therefore increases strictly on the **full segment** \(0<t\le1\). If \(B\) has a zero entry these are boundary directions. No uniform effective threshold in \(M\) is claimed, nor any result for arbitrary indefinite/asymmetric cores.
 
 ## Proof: exact Gram squares
 
@@ -84,7 +84,7 @@ c_2=\frac12\sum_a\left(\sum_i v_{ia}^2\right)^2+
 
 For \(B\ne0\), it is positive. Termwise differentiation of (2) proves the quantitative bounds.
 
-The existing [exact padding formula and \(C^2\) convergence](hwang_substochastic_padding.md) give \(p_M/d_{M+m}\to F_B\) uniformly with two derivatives on \([0,1/2]\), where \(p_M(t)=\operatorname{per}((1-t)J_{M+m}+tA_M(B))\). Thus eventually \(p_M''/d_{M+m}\ge\|B\|_F^2/2>0\) throughout. Since \(p_M'(0)=0\), integration gives the finite conclusion.
+The [full-interval \(C^2\) strengthening](hwang_substochastic_padding.md#full-interval-c2-strengthening) of the padding theorem gives \(p_M/d_{M+m}\to F_B\) uniformly with two derivatives on **\([0,1]\)**, where \(p_M(t)=\operatorname{per}((1-t)J_{M+m}+tA_M(B))\). This uses \(M>q=m-s\) to keep the tail factor positive at the endpoint. Thus eventually \(p_M''/d_{M+m}\ge\|B\|_F^2/2>0\) throughout. Since \(p_M'(0)=0\), integration gives the finite conclusion.
 
 ## Indefinite finite-completion example
 
@@ -105,7 +105,7 @@ B&u\mathbf1_M^{\mathsf T}/M\\
 \end{pmatrix}
 ~~~
 
-has quadratic form \(-2\varepsilon+(M-1)\varepsilon^2<0\) at \((h,-\varepsilon\mathbf1_M)\) for small positive \(\varepsilon\). Thus it is **indefinite for every \(M\)**. The preceding argument nevertheless proves strict half-segment convexity for all sufficiently large \(M\). Its zero entries make it a genuine boundary example, outside the earlier star-forest and two-by-two-support theorems and outside the classical PSD-finite-matrix deduction.
+has quadratic form \(-2\varepsilon+(M-1)\varepsilon^2<0\) at \((h,-\varepsilon\mathbf1_M)\) for small positive \(\varepsilon\). Thus it is **indefinite for every \(M\)**. The preceding argument nevertheless proves strict **full-segment** convexity and monotonicity for all sufficiently large \(M\). Its zero entries make it a genuine boundary example, outside the earlier star-forest and two-by-two-support theorems and outside the classical PSD-finite-matrix deduction.
 
 ## Verification, sources and limits
 
