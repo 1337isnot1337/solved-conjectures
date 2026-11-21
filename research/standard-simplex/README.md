@@ -2,7 +2,7 @@
 
 Research checkpoint, 21 November 2026. Coordination: [issue 212](https://github.com/1337isnot1337/solved-conjectures/issues/212).
 
-**Status: unresolved in this work.** The source screen has not found a full prior resolution. The accompanying calculation identifies a limit of an auxiliary-coordinate second-variation approach; it is not a conjecture resolution or a claimed new theorem of independent significance.
+**Status: unresolved in this work.** The source screen has not found a full prior resolution. The current checkpoint contains a proposed quantitative first-moment stability deduction, reviewed independently, together with its sharp exponent and a small-correlation localization consequence. It also records a limit of an auxiliary-coordinate second-variation approach. None of these is a resolution of the Standard Simplex conjecture, and no worldwide-priority claim is made for the quantitative deduction.
 
 ## Exact original target
 
@@ -63,9 +63,26 @@ This closes one attempted inference. It does not derive hyperstability, classify
 
 The next substantive question is a classification or sharp comparison in the base variables. A simple spherical rearrangement is inadequate for four or more cells: the primary 2026 source explains that spherical balls are not the triangular faces of a tetrahedral partition, and separate spherical optimization can discard the measure constraints. A semigroup interpolation based only on translated regular-simplex profiles also needs care because the unequal-mass extension is already false.
 
-### Follow-up under investigation
+### Quantitative first-moment deduction
 
-Heilman's [2014 paper](https://arxiv.org/pdf/1211.7138v2), Section 8, identifies quantitative stability for the balanced first-moment extremum as an input needed to extend its small-positive-correlation method beyond three cells. The public `mxym/math` proof supplies a nonnegative covariance-deficit integral. We are checking whether it yields a uniform quadratic covariance gap and then a Gaussian assignment-margin bound for arbitrary near-maximizing partitions. We have not completed a new stability theorem or the extension of the noise-stability argument. Even a completed small-correlation theorem would remain partial progress toward the original target.
+Heilman's [2014 paper](https://arxiv.org/pdf/1211.7138v2), Section 8, identifies quantitative stability for the balanced first-moment extremum as an input needed to extend its small-positive-correlation method beyond three cells. The public `mxym/math` proof supplies a nonnegative covariance-deficit integral. The completed argument in [FIRST_MOMENT_STABILITY.md](FIRST_MOMENT_STABILITY.md) derives a uniform quadratic covariance gap and a Gaussian assignment-margin estimate. For every fixed $`q\ge3`$, it gives a finite constant $`K_q`$ such that
+
+```math
+\inf_{\mathcal C}\sum_i\gamma_d(A_i\mathbin{\triangle}C_i)
+\le K_q\left[F_q-\sum_i\left|\int_{A_i}x\,d\gamma_d\right|^2\right]^{1/2},
+```
+
+where $`F_q=(\mathbb E\max_{i\le q}Z_i)^2/(q-1)`$ is the **prior** exact maximum, the infimum is over central regular-simplex partitions, and $`d\ge q-1`$ is arbitrary. The source's first-moment extremum and covariance identities remain explicitly credited. A mirrored exchange of two small strips on one facet shows that the power one half cannot be increased.
+
+The Hermite expansion then localizes any balanced partition whose positive-correlation noise value is within $`\eta`$ below the simplex benchmark to symmetric-difference distance at most
+
+```math
+K_q\sqrt{\rho(1-1/q)+\eta/\rho}.
+```
+
+This does not compare the noise values exactly at a fixed positive correlation. Volume multipliers, the quadratic higher-Hermite term, and the linear noise-potential difference still need control. In particular, the first-moment deficit alone does not justify replacing the full objective by its degree-one part.
+
+[The root review](ROOT_STABILITY_REVIEW.md), [the combinatorics review](FIRST_MOMENT_COMBINATORICS_REVIEW.md) and [the algebra review](FIRST_MOMENT_ALGEBRA_REVIEW.md) check the complete deduction, the ambient-dimension and singular-covariance cases, localization and sharpness. [STABILITY_PRIOR_AUDIT.md](STABILITY_PRIOR_AUDIT.md) records the bounded quantitative prior comparison and its remaining gaps. This is research progress only; no result-table entry or resolution count is added.
 
 ## Source and archive record
 
