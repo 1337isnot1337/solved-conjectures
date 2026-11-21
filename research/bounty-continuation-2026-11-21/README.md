@@ -10,10 +10,12 @@ There is no complete bounty solution, unclaimed award-ready formalization, accep
 
 | Worker | Exact scope | Current output |
 | --- | --- | --- |
-| `conjectures_bounties` | Erdős 49, exact maximal increasing-totient subsequence equality | [Prime-interval deficit reformulation](erdos49/README.md), independently reviewed; exact diagnostics through two million; full problem unresolved |
-| `demath_zzz_bounties` | Erdős 552(ii), unbounded additive Ramsey deficit | [Countermodel to one proposed inference](erdos552/README.md); this is not a counterexample to the Ramsey conjecture |
-| `other_paid_math` | Unclaimed JSP formalizations and other direct-payment offers; independent proof review | [Selected JSP and RoundSquare exclusions](eligibility/jsp-and-roundsquare.md); independent Shallit proof review; no award-ready candidate established |
-| Root | [Shallit 14](https://github.com/1337isnot1337/solved-conjectures/issues/229), divisibility in automatic relations | [Finite-prime-support promise theorem](shallit/finite-prime-support-promise.md), independently reviewed; [composite-base obstruction](shallit/composite-base-obstruction.md); full decision problem unresolved |
+| `conjectures_bounties` | Erdős 835 spectral and algebraic constraints | [Uniform feasibility of the specified cubic constraints](erdos835/erdos835-cubic-feasibility-barrier.md); no coloring or full nonexistence proof |
+| `demath_zzz_bounties` | Erdős 835 local design compatibility; independent proof reviews | [Exact radius-two compatibility problem](erdos835/target-and-local-compatibility.md); simultaneous partition and global extension unresolved |
+| `other_paid_math` | Erdős 708 analytic inequality; stochastic Althöfer absorption | [Signed-prime obstruction and unproved global comparison](erdos708/signed-analytic-route-obstruction.md); no full-target resolution |
+| Root | Independent mathematics and source review; shared repository coordination | Reviewed deductions, prior-resolution corrections, and guarded commits; no complete paid target |
+
+Earlier work includes the [Erdős 49 prime-interval deficit reformulation](erdos49/README.md), the [Erdős 552 countermodel to one inference](erdos552/README.md), and the [Shallit 14 finite-prime-support promise theorem](shallit/finite-prime-support-promise.md) with its [composite-base obstruction](shallit/composite-base-obstruction.md). The JSP and RoundSquare [candidate exclusions](eligibility/jsp-and-roundsquare.md) are also preserved. None resolves its unrestricted paid target.
 
 ## Subsequent mathematical attempts
 
@@ -28,6 +30,10 @@ The later E617 checkpoint adds [near-clique blocks](erdos617/erdos617-near-cliqu
 The [E617 compression-gap audit](erdos617/erdos617-core-compression-gap.md) shows that every further replacement of core vertices by isolated cliques violates the independence threshold. It also derives the valid edge-excess transfer from an actual chromatic-critical subgraph and identifies the surviving size and attachment terms. The core is not proved chromatic-critical, and the resulting inequality still permits a nonempty parameter range.
 
 [Erdős 708](erdos708/README.md), coordinated in [issue #233](https://github.com/1337isnot1337/solved-conjectures/issues/233), now has a credited source audit and independent review of Wang's existing quadratic theorem. The smooth-prime extension investigated here was already contained in Wang's October raw finite envelope, so it receives no new-result credit. The full asymptotic coefficient-two bound still requires a uniform fractional estimate. This work has not proved that estimate.
+
+The subsequent [signed E708 analysis](erdos708/signed-analytic-route-obstruction.md) proves a negative complete prime increment using an unconditional rough-interval theorem. It leaves global compensation unproved. Averaging over all prime orders produces an exact identity and an explicit remaining joint-overlap inequality, not a solution.
+
+[Erdős 835](erdos835/README.md), coordinated in [issue #236](https://github.com/1337isnot1337/solved-conjectures/issues/236), has two independently reviewed routes. The local route isolates the simultaneous factorization array required by the first two distance layers. The spectral route proves that its specified symmetrized cubic probabilities and conditional covariance conditions remain feasible uniformly for all even k≥14. This blocks that particular attempted contradiction. No full coloring or all-parameter nonexistence theorem has been obtained.
 
 The [six additional JSP source reviews](eligibility/jsp-six-candidate-review.md) identify earlier full-target endpoints, including corrections to misleading filenames and weaker finite claims. The complete imported proofs were not rebuilt. [Ten further records](eligibility/jsp-ten-follow-up.md) also have prior submissions; four matching source endpoints were inspected directly. A [further twenty-record screen](eligibility/jsp-further-screen/README.md) also found prior submissions for every selected entry, with seven pinned source endpoints inspected. These screens are not an exhaustive audit of all 292 catalog entries marked solved without Lean. No new award-ready formalization was obtained.
 

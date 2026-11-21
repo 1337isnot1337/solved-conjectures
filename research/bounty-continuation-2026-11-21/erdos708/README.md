@@ -52,4 +52,12 @@ g(n)\le2n+\pi(4n)=(2+o(1))n.
 
 The hypothesis is still missing. The quadratic theorem allows attention to M<16n², but does not prove the inequality there. Positive kernel arguments for bounded prime support do not automatically extend to arbitrary support; this limitation is already recorded in Wang's historical obstruction notes.
 
+The [signed analytic route audit](signed-analytic-route-obstruction.md) retains the exact alternating floor discrepancies. Using Hensley–Richards' unconditional rough-number theorem, it proves that integrating over a threshold does not make every individual prime increment nonnegative. That is an obstruction to the proposed induction, not a counterexample to the complete hinge inequality.
+
+A follow-up averages over every prime order. Its allocation identity is exact, but the required joint-overlap inequality remains unproved. The note gives the reciprocal form of that missing assertion and an abstract six-coordinate countermodel showing why marginal counts alone do not establish it. The countermodel is not an arithmetic interval. A [bounded exact diagnostic](probe_order_average.py) found no violating coordinate in its selected inputs; [the output](order-average-probe.json) supports no universal conclusion.
+
 All conditional statements retain their hypotheses. The current completion count for this target is zero.
+
+## Review of an unmatched formal claim
+
+[PR 235](https://github.com/1337isnot1337/solved-conjectures/pull/235), inspected at commit `edb8760ce951d8a3f4affae3e2b55a8fcd6923df`, claims an asymptotic formalization but states only `∃ c : ℝ, c ≤ 2`. Its proposed cover predicate ends in `True`, and its workflow writes a success message without invoking Lean. The coordinator requested changes in [review 6007726911](https://github.com/1337isnot1337/solved-conjectures/pull/235#pullrequestreview-6007726911). That artifact proves no interval-cover assertion, supplies no kernel-verification evidence, and does not close this target.

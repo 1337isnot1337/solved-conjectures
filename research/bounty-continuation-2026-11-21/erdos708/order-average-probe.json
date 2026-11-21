@@ -1,0 +1,9 @@
+{
+  "scope": "finite falsification probe of per-prime order-averaged bounded-profile comparison",
+  "full_hinge_solved": false,
+  "erdos708_solved": false,
+  "period": 30030,
+  "profile_length_cases_examined": 1022,
+  "witness": null,
+  "interpretation": "A witness refutes only this sufficient per-prime step; no witness proves nothing universal."
+}
