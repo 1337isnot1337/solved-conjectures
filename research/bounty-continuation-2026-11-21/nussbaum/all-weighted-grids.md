@@ -72,6 +72,16 @@ For each admitted $`a,n`$, the verifier covers the complete integer interval $`a
 
 If the relaxed conditions are incompatible, the verifier eliminates the whole subinterval. Otherwise it divides it into two disjoint consecutive subintervals. It raises an error for any surviving singleton. It checked 30,339 nonempty parameter intervals and terminated without a survivor for all 21 shorter sides. Together with the large-side argument this proves the theorem.
 
+## Connected orbits with at most two maximal cliques per state
+
+There is also a criterion that can be read directly from the compatibility graph. If it is connected and each state belongs to at most two maximal cliques, its period is at most $`2^n`$. This includes faces with arbitrarily many free coordinates.
+
+Cyclic transitivity makes the number of maximal cliques through a state constant. If there is only one per state, connectedness makes the entire graph a clique and Sperner's bound applies. Otherwise each state determines an unordered pair of distinct maximal cliques. Merge all states giving the same pair. Each resulting class has the same size $`m`$, because the action is transitive. Different classes meet in the compatibility graph exactly when their pairs share a clique.
+
+Form the graph with maximal cliques as vertices and the distinct pairs as edges. It is simple, connected and triangle-free. A triangle would give three pairwise compatible representatives whose common maximal clique would have to be in all three pairs, which have empty intersection. Cyclic translation acts transitively on edges. As in the [connected-component classification](local-grid-and-one-star-orbit.md), such a graph is a cycle or a complete bipartite graph (including a single edge). Briefly, with one vertex orbit the faithful abelian action is free on vertices, so the edge count is at most the vertex count. Regularity then gives a cycle or a single edge. With two vertex orbits, a vertex stabilizer fixes every vertex in its orbit and acts transitively on its neighbors. Vertices on the same side sharing a neighbor therefore have identical neighborhoods, which by connectedness gives a complete bipartite graph.
+
+The complete bipartite case gives the weighted grid of this theorem. In the cycle case the generator acts transitively on its edges and therefore induces a rotation of full order: a reflection has order at most two, whereas the triangle-free cycle has length at least four. Its kernel on the cycle is consequently the stabilizer of **each** maximal clique. The [least-stabilizer theorem](prime-power-periods.md) gives the bound in this case as well. This argument does not require an orbit state with exactly one free coordinate.
+
 ## Consequence for the bounty problem
 
 The [two-stabilizer classification](two-generating-stabilizers.md) now gives $`p\le2^n`$ for **every** period whose maximal compatibility cliques have exactly two inclusion-minimal stabilizers generating the cyclic group. In particular, if the common stabilizer has index $`qr`$ for distinct primes, all multiplicities and both prime sizes are covered. A least stabilizer is already covered by the [separate local theorem](prime-power-periods.md).
