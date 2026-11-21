@@ -15,6 +15,15 @@ There is no complete bounty solution, unclaimed award-ready formalization, accep
 | `other_paid_math` | Unclaimed JSP formalizations and other direct-payment offers; independent proof review | [Selected JSP and RoundSquare exclusions](eligibility/jsp-and-roundsquare.md); independent Shallit proof review; no award-ready candidate established |
 | Root | [Shallit 14](https://github.com/1337isnot1337/solved-conjectures/issues/229), divisibility in automatic relations | [Finite-prime-support promise theorem](shallit/finite-prime-support-promise.md), independently reviewed; [composite-base obstruction](shallit/composite-base-obstruction.md); full decision problem unresolved |
 
+## Subsequent mathematical attempts
+
+- [Erdős 389](erdos389/README.md), coordinated in [issue #232](https://github.com/1337isnot1337/solved-conjectures/issues/232): two independent derivations reduce the remaining prime obstructions to exact cofactor carry inequalities. A congruence handles all small primes. An explicit family shows that subpolynomial smoothness and that congruence still do not imply the required carries. Both diagnostic scripts were replayed by the coordinator. The required all-starts existence construction remains missing.
+- [Sun's disjoint cosets](sun-cosets/README.md), coordinated with the pre-existing [issue #231](https://github.com/1337isnot1337/solved-conjectures/issues/231): exact subgroup and coset generation for `A5` and `A6` supported a counterexample search. No counterexample was found. Solver optimality or infeasibility reports are recorded as search evidence, not independent mathematical certificates. The finite search has stopped at its documented construction.
+- Erdős 617 continues in the existing [issue #45](https://github.com/1337isnot1337/solved-conjectures/issues/45), after reading the earlier affine-plane and clique-packing work. A proposed uniform one-colour extremal shortcut has a counterfamily; stronger constraints involving the other colours are under investigation.
+- The Althöfer game continues in [issue #224](https://github.com/1337isnot1337/solved-conjectures/issues/224), with symbolic strategy analysis beyond the earlier ray decomposition. A finite numerical window is not being substituted for the all-starts prize theorem.
+
+The [six additional JSP source reviews](eligibility/jsp-six-candidate-review.md) identify earlier full-target endpoints, including corrections to misleading filenames and weaker finite claims. The complete imported proofs were not rebuilt. [Ten further records](eligibility/jsp-ten-follow-up.md) also have prior submissions; four matching source endpoints were inspected directly. No new award-ready formalization was obtained.
+
 The prior 326-header Conjectures.io screen, JSP screening, and existing Shallit, Sun, Althöfer, Marcus and clique-transversal investigations have been read. They are not new discoveries of this continuation. New targets or extensions are announced in the existing issue threads before publication.
 
 ## Eligibility correction

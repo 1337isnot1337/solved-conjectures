@@ -1,0 +1,158 @@
+{
+  "checked": "2026-11-21",
+  "scope": "Full theorem endpoint inspection; dependency closure not rebuilt",
+  "contributing_sha": "33035cb6ee2cb4df5d0e98268dcb94496fbec14e",
+  "rows": [
+    {
+      "jsp": 126,
+      "erdos": 118,
+      "pr": [
+        997,
+        1668,
+        5486
+      ],
+      "file": "src/latest/ErdosProblems/Erdos118.lean",
+      "theorem": "Erdos118.not_erdos_118",
+      "scope": "Counterexample to ordinal partition implication; positive-three/negative-five pair at omega^(omega^2).",
+      "checked": "2026-11-21",
+      "status": "Earlier matching full-target source endpoint found; not independently rebuilt; no new priority or eligibility established",
+      "repo": "plby/lean-proofs",
+      "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+      "source_url": "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos118.lean",
+      "search_returned_count": 6,
+      "search_cap": 8,
+      "pr_urls": [
+        "https://github.com/TheJustinSunPrize/awards/pull/997",
+        "https://github.com/TheJustinSunPrize/awards/pull/1668",
+        "https://github.com/TheJustinSunPrize/awards/pull/5486"
+      ]
+    },
+    {
+      "jsp": 242,
+      "erdos": 284,
+      "pr": [
+        607,
+        1364,
+        5464
+      ],
+      "file": "src/latest/ErdosProblems/Erdos284.lean",
+      "theorem": "Erdos284.erdos_284",
+      "scope": "Limit f(k)/k=1/(e-1), exact strictly increasing k-term representations; original definition and eventual attainment included.",
+      "checked": "2026-11-21",
+      "status": "Earlier matching full-target source endpoint found; not independently rebuilt; no new priority or eligibility established",
+      "repo": "plby/lean-proofs",
+      "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+      "source_url": "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos284.lean",
+      "search_returned_count": 8,
+      "search_cap": 8,
+      "pr_urls": [
+        "https://github.com/TheJustinSunPrize/awards/pull/607",
+        "https://github.com/TheJustinSunPrize/awards/pull/1364",
+        "https://github.com/TheJustinSunPrize/awards/pull/5464"
+      ]
+    },
+    {
+      "jsp": 243,
+      "erdos": 286,
+      "pr": [
+        1365,
+        1945,
+        2188,
+        2280
+      ],
+      "file": "src/latest/ErdosProblems/Erdos286.lean",
+      "theorem": "Erdos286.erdos_286",
+      "scope": "All sufficiently large k admit exact k distinct positive denominators in interval width(e-1+o(1))k.",
+      "trap": "PR2188/2280 finite minimal span4 is a different claim.",
+      "checked": "2026-11-21",
+      "status": "Earlier matching full-target source endpoint found; not independently rebuilt; no new priority or eligibility established",
+      "repo": "plby/lean-proofs",
+      "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+      "source_url": "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos286.lean",
+      "search_returned_count": 8,
+      "search_cap": 8,
+      "pr_urls": [
+        "https://github.com/TheJustinSunPrize/awards/pull/1365",
+        "https://github.com/TheJustinSunPrize/awards/pull/1945",
+        "https://github.com/TheJustinSunPrize/awards/pull/2188",
+        "https://github.com/TheJustinSunPrize/awards/pull/2280"
+      ]
+    },
+    {
+      "jsp": 356,
+      "erdos": 437,
+      "pr": [
+        174,
+        1427,
+        3957
+      ],
+      "file": "src/latest/ErdosProblems/Erdos437.lean",
+      "theorem": "Erdos437.erdos_437",
+      "scope": "For every epsilon>0 and all sufficiently large x, increasing list in[1,x] has >x^(1-epsilon) square initial products.",
+      "checked": "2026-11-21",
+      "status": "Earlier matching full-target source endpoint found; not independently rebuilt; no new priority or eligibility established",
+      "repo": "plby/lean-proofs",
+      "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+      "source_url": "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos437.lean",
+      "search_returned_count": 8,
+      "search_cap": 8,
+      "pr_urls": [
+        "https://github.com/TheJustinSunPrize/awards/pull/174",
+        "https://github.com/TheJustinSunPrize/awards/pull/1427",
+        "https://github.com/TheJustinSunPrize/awards/pull/3957"
+      ]
+    },
+    {
+      "jsp": 358,
+      "erdos": 439,
+      "pr": [
+        285,
+        923,
+        1268,
+        5438
+      ],
+      "file": "submissions/jsp-000358-cyr/Erdos439Power/Goal.lean",
+      "theorem": "Erdos439Power.full_resolution_explicit; Erdos439Power.integer_resolution_explicit",
+      "scope": "All k+2 and all finite colorings; distinct positive summands with sum a power. Separate integer endpoint.",
+      "trap": "plby top-levelErdos439.lean gives E438 density; PowerSums.lean is conditional for k>=2. Earlier PR285 links actual completion endpoint.",
+      "checked": "2026-11-21",
+      "status": "Earlier matching full-target source endpoint found; not independently rebuilt; no new priority or eligibility established",
+      "repo": "CollinYuanjieRen/awards",
+      "commit": "ed2c0a66433a4d07fa697b4b7748853fd94102d4",
+      "source_url": "https://github.com/CollinYuanjieRen/awards/blob/ed2c0a66433a4d07fa697b4b7748853fd94102d4/submissions/jsp-000358-cyr/Erdos439Power/Goal.lean",
+      "search_returned_count": 7,
+      "search_cap": 8,
+      "pr_urls": [
+        "https://github.com/TheJustinSunPrize/awards/pull/285",
+        "https://github.com/TheJustinSunPrize/awards/pull/923",
+        "https://github.com/TheJustinSunPrize/awards/pull/1268",
+        "https://github.com/TheJustinSunPrize/awards/pull/5438"
+      ]
+    },
+    {
+      "jsp": 383,
+      "erdos": 471,
+      "pr": [
+        1202,
+        1297,
+        5419
+      ],
+      "file": "src/latest/ErdosProblems/Erdos471.lean",
+      "theorem": "Erdos471.erdos_471",
+      "scope": "Exists finite prime set with unbounded generations under exact distinct three-prime-sum closure; unconditional endpoint imports Vinogradov.",
+      "checked": "2026-11-21",
+      "status": "Earlier matching full-target source endpoint found; not independently rebuilt; no new priority or eligibility established",
+      "repo": "plby/lean-proofs",
+      "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+      "source_url": "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos471.lean",
+      "search_returned_count": 6,
+      "search_cap": 8,
+      "pr_urls": [
+        "https://github.com/TheJustinSunPrize/awards/pull/1202",
+        "https://github.com/TheJustinSunPrize/awards/pull/1297",
+        "https://github.com/TheJustinSunPrize/awards/pull/5419"
+      ]
+    }
+  ]
+}
+
