@@ -1,6 +1,6 @@
 # Han–Sabag–Kostina–Hassibi's conjecture
 
-Status: complete written disproof; the full counterexample and open-family gap are [Lean-checked](../../lean/Conjectures/HanSabagCounterexample.lean). The separate exact infimum for each assignment has not yet been fully formalized. The standalone source, all-owned axiom audit and stock-kernel replay passed; the merged-package gate is pending.
+Status: complete written disproof; the full counterexample, exact sparse infimum and open-family gap are [Lean-checked](../../lean/Conjectures/HanSabagCounterexample.lean). The separate exact infimum for each assignment has not yet been fully formalized. The standalone source, all-owned axiom audit and stock-kernel replay passed; the merged-package gate is pending.
 
 The Lyapunov positivity conjecture in [arXiv:2406.17196v2](https://arxiv.org/pdf/2406.17196v2), Conjecture 1, is false. The [proof](PROOF.md) constructs a rational feasible encoder of power $`23825/22491`$, while every encoder with exactly one nonzero entry per column has infimal power at least $`481/441`$. The strict gap is $`706/22491`$.
 

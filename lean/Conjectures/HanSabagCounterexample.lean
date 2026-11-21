@@ -472,6 +472,93 @@ theorem concrete_variable_power : Pvar (7/4) = P := by
   ext i j
   fin_cases i <;> fin_cases j <;> norm_num [Pvar, P, diag2, Matrix.diagonal_apply]
 
+def symmetric2 (a b c : ℝ) : Mat :=
+  fun i j => if i = 0 then (if j = 0 then a else b) else (if j = 0 then b else c)
+
+theorem symmetric2_posDef (a b c : ℝ) (ha : 0 < a) (hdet : 0 < a*c-b^2) :
+    (symmetric2 a b c).PosDef := by
+  rw [Matrix.posDef_iff_dotProduct_mulVec]
+  constructor
+  · apply Matrix.IsHermitian.ext
+    intro i j
+    fin_cases i <;> fin_cases j <;> simp [symmetric2]
+  · intro x hx
+    simp [dotProduct, Matrix.mulVec, Fin.sum_univ_two, symmetric2]
+    by_cases h1 : x 1 = 0
+    · have h0 : x 0 ≠ 0 := by
+        intro h0
+        apply hx
+        funext i
+        fin_cases i <;> simp [h0,h1]
+      have hs : 0 < (x 0)^2 := sq_pos_of_ne_zero h0
+      have ht := mul_pos ha hs
+      simp [h1]
+      nlinarith
+    · have hs : 0 < (x 1)^2 := sq_pos_of_ne_zero h1
+      have ht := mul_pos hdet hs
+      have hs2 := sq_nonneg (a*x 0+b*x 1)
+      nlinarith
+
+def sameChannelEncoder : Mat := fun i _ => if i = 0 then 1 else 0
+
+def channelJ (d : ℝ) : Mat := symmetric2 (q11 d) (q12 d) (q22 d)
+
+theorem channelJ_pos (d : ℝ) (hd : 0 < d) (ht : d < 144/625) : (channelJ d).PosDef := by
+  apply symmetric2_posDef
+  · simp only [q11]
+    linarith
+  · rw [one_channel_determinant]
+    have h1 : 0 < 1-d := by linarith
+    have h2 : 0 < 144-625*d := by linarith
+    positivity
+
+theorem same_channel_solution (p q : ℝ) :
+    channelJ (1/(1+(49/16)*p)) =
+      B * channelJ (1/(1+(49/16)*p)) * B -
+      sameChannelEncoder.transpose * noise p q * sameChannelEncoder +
+      B * sameChannelEncoder.transpose * sameChannelEncoder * B := by
+  ext i k
+  fin_cases i <;> fin_cases k <;>
+    simp [B, noise, channelJ, symmetric2, q11, q12, q22, sameChannelEncoder,
+      diag2, Matrix.mul_apply, Fin.sum_univ_two, Matrix.diagonal_apply] <;> ring
+
+theorem same_channel_feasible (p : ℝ) (hp : (481/441 : ℝ) < p) :
+    Feasible (diag2 p 0) sameChannelEncoder (channelJ (1/(1+(49/16)*p))) ∧
+      Sparse sameChannelEncoder := by
+  have hp0 : 0 ≤ p := by linarith
+  have hden : 0 < 1+(49/16)*p := by positivity
+  have hdpos : 0 < 1/(1+(49/16)*p) := by positivity
+  have hdlt : 1/(1+(49/16)*p) < 144/625 := by
+    apply (div_lt_iff₀ hden).2
+    linarith
+  have hpsem : (diag2 p 0).PosSemidef := by
+    apply Matrix.PosSemidef.diagonal
+    intro i
+    fin_cases i <;> simp [hp0]
+  refine ⟨⟨hpsem, ?_, ?_, channelJ_pos _ hdpos hdlt, ?_⟩, ?_⟩
+  · norm_num [diag2, Matrix.diagonal_apply]
+  · norm_num [diag2, Matrix.diagonal_apply]
+  · rw [noise_eq_inverse p 0 hp0 (by norm_num)]
+    exact same_channel_solution p 0
+  · intro i
+    right
+    simp [sameChannelEncoder]
+
+theorem sparse_infimum_exact :
+    (∀ p g j, Feasible p g j → Sparse g → (481/441 : ℝ) ≤ p.trace) ∧
+    ∀ ε : ℝ, 0 < ε → ∃ p g j, Feasible p g j ∧ Sparse g ∧ p.trace < (481/441 : ℝ)+ε := by
+  constructor
+  · intro p g j hf hs
+    exact le_of_lt (sparse_feasible_power p g j hf hs)
+  · intro ε hε
+    let t : ℝ := 481/441 + ε/2
+    have ht : (481/441 : ℝ) < t := by dsimp [t]; linarith
+    obtain ⟨hf, hs⟩ := same_channel_feasible t ht
+    refine ⟨diag2 t 0, sameChannelEncoder, channelJ (1/(1+(49/16)*t)), hf, hs, ?_⟩
+    simp [Matrix.trace, diag2]
+    dsimp [t]
+    linarith
+
 theorem power_gap : (1168/1323 : ℝ) + 3/17 = 23825/22491 ∧
     (23825/22491 : ℝ) < 481/441 := by norm_num
 

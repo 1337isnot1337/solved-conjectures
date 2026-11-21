@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Exact sparse infimum in Lean
+
+Proved the sparse infimum is exactly 481/441 by constructing feasible sparse encoders with power arbitrarily close to the lower bound. Strict source compilation, all-owned axiom audit and stock-kernel replay passed; the combined repository gate remains pending. The separate exact infima for the other assignments remain to be formalized.
+
 ## 2026-11-21 — Han–Sabag–Kostina–Hassibi Lean counterexample
 
 Formalized the actual real-matrix witness, the universal sparse-encoder lower bound and a uniform gap across the stated open channel-gain interval. Standalone strict compilation, an all-owned axiom audit and stock-kernel replay passed. The individual exact assignment infima and combined repository gate remain pending.
