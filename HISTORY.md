@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Sun–Zhao's conjecture
+
+Added a complete proposed disproof of Conjecture 5.2 in arXiv:1602.04359v4. The twelfth iterated ratio sequence fails its required log-convexity at center thirteen, using only entries retained after the specified truncation. An exact binomial-product comparison and a rational logarithm certificate give the same strict sign. The root reviewer independently regenerated the recurrence, used a different logarithm truncation and remainder, and directly iterated the ratios.
+
+The [package](results/sun-zhao-iterated-ratios/) includes both reviews and a multi-source prior-resolution audit. The full journal version and author's Maple archive were inaccessible; the resolved statement is the fully inspected latest arXiv conjecture. Neither the first-ratio theorem nor the different quadratic log-convexity transform is misidentified as the target. This subgroup's reviewed tally is seven; no Lean work was performed.
+
 ## 2026-11-21 — Han–Sabag–Kostina–Hassibi's conjecture
 
 Added a complete proposed disproof of the explicit Lyapunov positivity conjecture in arXiv:2406.17196v2. A rational two-channel encoder has power 23825/22491, while the infimum over all encoders with one nonzero per column is 481/441. The strict gap is 706/22491. The proof classifies every sparse assignment with arbitrary nonzero coefficients and extends the example to an open interval of channel gains. It does not rely on optimizer nonattainment or claim a separate general communication-code result.

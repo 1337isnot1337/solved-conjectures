@@ -22,6 +22,13 @@ The [Simon stable-infimum proof](../results/simon-stable-infimum/PROOF.md) is al
 
 ## Computational checks
 
+The [Sun–Zhao checker](../results/sun-zhao-iterated-ratios/check.py) uses only exact integers and rational arithmetic. It regenerates the source sequence, checks two binomial representations, compares the two 582535-bit products, certifies a strictly negative fourteenth logarithmic difference with an explicit series remainder, and directly applies twelve ratio iterations. The [proof](../results/sun-zhao-iterated-ratios/PROOF.md) identifies why the violated inequality belongs to the conjectured retained sequence.
+
+```bash
+python3 results/sun-zhao-iterated-ratios/check.py
+```
+
+
 The [Han–Sabag–Kostina–Hassibi checker](../results/han-sabag-kostina-hassibi/verify.py) performs 16 exact rational and symbolic checks of the feasible Lyapunov solution, all four sparse power thresholds, the strict objective gap, the determinant factorization and the open family. SymPy supplies only symbolic identity checks. The [written proof](../results/han-sabag-kostina-hassibi/PROOF.md) supplies the exhaustive classification and full disproof.
 
 ```bash

@@ -12,6 +12,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Verification |
 | :--- | :---: |
+| [Sun–Zhao's conjecture](results/sun-zhao-iterated-ratios/) | ⬜ |
 | [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | ⬜ |
 | [Gröchenig's problem](results/grochenig-zero-density/) | ⬜ |
 | [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | ⬜ |

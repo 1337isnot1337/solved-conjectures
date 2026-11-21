@@ -54,6 +54,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Sun–Zhao's conjecture": "sun-zhao-iterated-ratios",
     "Han–Sabag–Kostina–Hassibi's conjecture": "han-sabag-kostina-hassibi",
     "Gröchenig's problem": "grochenig-zero-density",
     "López Pouso–Segura's node conjecture": "lopez-pouso-segura-quadrature",
