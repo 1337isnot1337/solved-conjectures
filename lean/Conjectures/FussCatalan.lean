@@ -407,4 +407,15 @@ theorem enumeratorFactor_splits (a b : ℕ) : (enumeratorFactor a b).Splits := b
   rw [enumeratorFactor_identity]
   exact (Splits.C _ |>.mul Splits.X).mul (binomialPolynomial_splits _ _ (min_le_max))
 
+/-- The closed-form Fuss--Catalan polynomial, before its path enumeration is established. -/
+noncomputable def closedForm (m n k : ℕ) : ℝ[X] :=
+  if n = k then C (((m*n+1).choose n : ℝ) / (m*n+1))
+  else C (((m*n+1).choose k : ℝ) / (m*n+1)) * enumeratorFactor (k-1) (n-k-1)
+
+theorem closedForm_splits (m n k : ℕ) : (closedForm m n k).Splits := by
+  unfold closedForm
+  split
+  · exact Splits.C _
+  · exact (Splits.C _).mul (enumeratorFactor_splits _ _)
+
 end FussCatalan

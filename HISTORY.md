@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Fuss–Catalan cycle lemma in Lean
+
+Proved unique good rotation and aperiodicity for integer sequences summing to -1 and verified real-rootedness of the complete closed-form polynomial including the constant boundary. The finite counting bridge to the actual path enumerator remains. Strict compilation, 123-theorem axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
+
 ## 2026-11-21 — Fuss–Catalan real-rooted binomial sum in Lean
 
 Proved the real-rootedness of the exact indexed binomial sum in the written coefficient formula for all parameters, including its derivative factorization and fractional-linear substitution. The path enumeration remains. Strict compilation, all-owned axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.

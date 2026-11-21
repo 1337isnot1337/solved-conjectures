@@ -851,3 +851,4 @@ import Conjectures.BrownMolFamily
 import Conjectures.BrownMolDiameter
 import Conjectures.BrownMolInfiniteFamily
 import Conjectures.FussCatalan
+import Conjectures.FussCycle

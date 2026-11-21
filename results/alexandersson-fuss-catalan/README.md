@@ -2,7 +2,7 @@
 
 **Status: proved as a short deduction from classical results; priority qualified.**
 
-**Lean status: partial.** `Conjectures.FussCatalan` proves that the exact indexed binomial sum in the formula is real-rooted for all parameters, via the derivative factorization and fractional-linear substitution. Connecting that formula to the actual Fuss–Dyck path enumerator and its constant boundary case remains; the combined repository gate is pending.
+**Lean status: partial.** `Conjectures.FussCatalan` proves the closed-form polynomial is real-rooted, including the constant boundary case. `Conjectures.FussCycle` proves the cycle lemma and aperiodicity for integer sequences summing to −1. The finite counting bridge identifying the closed form with the actual Fuss–Dyck path enumerator remains; the combined repository gate is pending.
 
 For every $m,n\geq1$ and $1\leq k\leq n$, the polynomial counting $m$-Dyck paths with exactly $k$ factors $NE$, by the number of factors $NNE$, is real-rooted. The Fuss parameter changes this polynomial only by a positive scalar.
 
