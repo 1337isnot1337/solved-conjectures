@@ -63,6 +63,8 @@ The full C34 chord inequality is a separate weighted average of normalized subpe
 
 The [occupation-law reformulation](sign-matrices/gyires_multinomial_reduction.md) is exact. The needed comparison between a central density and its norm is unproved. Boundary local minima exist and cannot simply be excluded. The [symmetrized-polynomial obstruction](inequalities/gyires_symmetrized_polynomial.md) blocks direct application of stability to the sum of row and column polynomials. It does **not** block deriving the weak inequality from a valid stronger stable-polynomial inequality applied to the two summands separately.
 
+The [exact completion transfer](inequalities/gyires_substochastic_transfer.md) and [independent review](inequalities/gyires_transfer_review.md) give a new sufficient route to a full counterexample: find a doubly substochastic core with `4F(B)^2<F(BB^T)+F(B^TB)+2F(B²)`. The completion product is exact, with a rank-one correction tending to zero, and the normalized permanent limit is uniform at saturated margins. A failure of only one self-Gram factor does not settle the four-term conjecture. For symmetric cores the criterion is `F(B)^2<F(B²)`; the symmetric dilation yields the product criterion `F(B)^4<F(BB^T)F(B^TB)`. No negative core is known. The additive inequality `per(AA^T)<=2perA-d_n` is false and must not be used. Proving the limiting inequality for all cores would still leave the finite-order constant gap.
+
 ## Prior-art exclusions
 
 - The [Kopotun quantitative convexity theorem](kopotun/) is an uncounted refinement: an accessible earlier scalar bound already implies eventual global convexity by polarization.
