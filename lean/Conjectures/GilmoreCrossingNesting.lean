@@ -3,6 +3,7 @@ import Mathlib.Algebra.BigOperators.Ring.Finset
 import Mathlib.Data.Matrix.Mul
 import Mathlib.Data.Fintype.Prod
 import Mathlib.Data.List.Perm.Basic
+import Mathlib.Data.List.Sort
 import Mathlib.Algebra.BigOperators.Fin
 import Mathlib.Tactic.Ring
 
@@ -528,6 +529,50 @@ theorem closing_rank_counts {u d : ℕ} (p : Path u d) (l : Labels p) (i : Fin (
   · exact filter_lt_getElem_length _ _ hi (openEndpoints_sorted p l)
   · rw [filter_gt_getElem_length _ _ hi (openEndpoints_sorted p l), openEndpoints_length]
     omega
+
+
+
+-- Inserting a new opener gives a sorted predecessor state, with a valid
+-- closing index whose removal recovers the original open endpoints.
+theorem predecessor_insert (xs : List ℕ) (x : ℕ) (hx : x ∉ xs)
+    (hs : xs.Pairwise (· ≤ ·)) (hnodup : xs.Nodup) :
+    ∃ (ys : List ℕ) (i : ℕ) (hi : i < ys.length),
+      ys.Pairwise (· ≤ ·) ∧ ys.Perm (x :: xs) ∧ ys[i] = x ∧ ys.eraseIdx i = xs := by
+  let ys := xs.orderedInsert (· ≤ ·) x
+  have hperm : ys.Perm (x :: xs) := List.perm_orderedInsert _ _ _
+  have hsorted : ys.Pairwise (· ≤ ·) := hs.orderedInsert x xs
+  have hmem : x ∈ ys := hperm.mem_iff.mpr (by simp)
+  obtain ⟨i, hi, he⟩ := List.getElem_of_mem hmem
+  have herase : ys.erase x = xs := by
+    dsimp [ys]
+    exact List.erase_orderedInsert (r := (· ≤ ·)) x xs
+  have hn : ys.Nodup := by
+    rw [hperm.nodup_iff]
+    exact List.nodup_cons.mpr ⟨hx, hnodup⟩
+  refine ⟨ys, i, hi, hsorted, hperm, he, ?_⟩
+  rw [← hn.erase_getElem i hi, he, herase]
+
+
+theorem decode_down_of_reachable {u d : ℕ} (p : Path u d) (l : Labels p) (h : d < u)
+    (xs : List ℕ) (x : ℕ) (hx : x ∉ xs)
+    (hs : xs.Pairwise (· ≤ ·)) (hnodup : xs.Nodup)
+    (hp : (openEndpoints p l).Perm (x :: xs)) :
+    ∃ labels : Labels (Path.down p h),
+      openEndpoints (Path.down p h) labels = xs ∧
+      closedArcs (Path.down p h) labels = (x, u+d) :: closedArcs p l := by
+  obtain ⟨ys, i, hi, hys, hysp, hyse, hyserase⟩ := predecessor_insert xs x hx hs hnodup
+  have hopen : openEndpoints p l = ys := by
+    have hsopen : (openEndpoints p l).Pairwise (· ≤ ·) :=
+      List.Pairwise.imp (fun h => Nat.le_of_lt h) (openEndpoints_sorted p l)
+    exact List.Perm.eq_of_pairwise' hsopen hys (hp.trans hysp.symm)
+  have hi' : i < u-d := by
+    rw [← openEndpoints_length p l, hopen]
+    exact hi
+  refine ⟨(l, ⟨i, hi'⟩), ?_, ?_⟩
+  · simpa [openEndpoints, hopen] using hyserase
+  · simp only [closedArcs]
+    rw [hopen, List.getD_eq_getElem?_getD, List.getElem?_eq_getElem hi]
+    simp [hyse]
 
 
 theorem labels_injective_for_path {u d : ℕ} (p : Path u d) :
