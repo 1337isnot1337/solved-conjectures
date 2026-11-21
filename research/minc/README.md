@@ -136,3 +136,14 @@ The [zero-diagonal Hessian obstruction](inequalities/c44_hessian_obstruction.md)
 The [boundary-endpoint obstruction](combinatorial/boundary_endpoint_obstruction.md) proves that a strictly positive endpoint radial derivative does not characterize monotone boundary directions. It combines the published Jerrum–Wanless ratio family with an exact direct-sum identity, and produces at least two interior stationary points. It is not a full solution of Problem 8. The [unitary-orbit source audit](combinatorial/unitary_orbit_source_audit.md) records earlier general algebraic prescriptions, complete exceptional-spectrum formulas and classical equality results; none is counted as new work here.
 
 This checkpoint adds no full resolution. The ten-resolution target remains unmet.
+
+
+## Radial convexity and further priority checks
+
+The [Hwang radial-convexity checkpoint](inequalities/hwang_radial_convexity.md) gives an exact Bernstein moment criterion and a uniform-block padding limit. For a fixed doubly stochastic core `A` of order `m`, the normalized radial permanent converges with two derivatives to `exp(mt)(1-t)^(2m) R_A(t/(1-t)^2)`. Negative curvature of this limit on the half interval would give a full counterexample family, but no such core is known here. The same function is a balanced Poisson occupancy correlation. An exact negative Taylor coefficient rules out a coefficientwise positivity proof. The [symbolic checker](inequalities/hwang_radial_certificates.py) passed; Hwang and C34 remain open.
+
+The [two-sparse Gyires review](sign-matrices/gyires_sparse_review.md) checks the other worker's full proof and its 288 exact diagnostics. It also shows that the entire non-strict class follows from Lavi's prior two-permutation theorem by reflecting each cycle and multiplying the block inequalities. Different component weights do not establish a new class. The [self-Gram polynomial obstruction](sign-matrices/gyires_self_gram_obstruction.md), with an [exact checker](sign-matrices/gyires_self_gram_obstruction.py), shows that even using the same matrix on both sides does not make the relevant occupation polynomial stable or Lorentzian. The scalar Gyires inequality still holds at that witness.
+
+The [barycenter-stationarity audit](combinatorial/barycentric_stationarity_audit.md) reconstructs the Fischer–Hwang 1996 cyclic-block obstruction and records the exact covariance Hessian formula. Stationarity is insufficient; adding local minimality still includes the unresolved C44 global problem. This is a prior-art exclusion, not a new P15 resolution.
+
+No new full conjecture resolution is claimed in this checkpoint.
