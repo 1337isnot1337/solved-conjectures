@@ -1,0 +1,22 @@
+{
+  "status": "all exact arithmetic checks passed",
+  "one_variable_range": [
+    1,
+    1000000
+  ],
+  "alternative_a_range": [
+    1,
+    2000
+  ],
+  "alternative_b_range": [
+    1,
+    100
+  ],
+  "square_parameter_range": [
+    2,
+    1000
+  ],
+  "new_ramsey_values": 0,
+  "bounty_solutions": 0,
+  "meaning": "finite checks of a proved abstract model; not an actual Ramsey construction"
+}

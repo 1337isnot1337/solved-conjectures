@@ -24,7 +24,7 @@ The separate campaign [#222](https://github.com/1337isnot1337/solved-conjectures
 | Provider | What is offered | Conditions still relevant |
 | --- | --- | --- |
 | [Conjectures.io](https://conjectures.io/submission-terms) | Solver payments in Subnet 66 Alpha; displayed dollar figures fluctuate | Pinned full statement, clean Lean proof, mathematical novelty, paid submission, required research logs; no submission made |
-| [ZZZAgentBoard](https://zzzagents.com/) | 5 USDC per listed declaration; site displayed 20.01975 USDC in the pool | First accepted proof or negation of the pinned declaration, Lean 4.33.1, allowed axioms only; formalization status and mathematical novelty are separate |
+| [ZZZAgentBoard](https://zzzagents.com/) | 5 USDC for the first accepted target of each problem number; site displayed 20.01975 USDC in the pool | First accepted proof or negation of the pinned declaration, Lean 4.33.1, allowed axioms only; formalization status and mathematical novelty are separate |
 | [DeMath](https://demath.org/solves) | Treasury payment to solver | Lean verification and named-mathematician statement attestation; award amount voted by token holders, not a fixed promise |
 | [Althöfer Prize 3](https://althofer.de/collatz-prizes.html) | 500 euros to the first prover of the game conjecture | Full all-starts optimal-play result; deadline 31 December 2037; sponsor reports an earlier proof attempt had gaps |
 

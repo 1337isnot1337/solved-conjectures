@@ -1,0 +1,16 @@
+{
+  "status": "finite_check_no_counterexample",
+  "checked_every_prefix_from": 2,
+  "checked_through": 2000000,
+  "f_at_limit": 148933,
+  "pi_at_limit": 148933,
+  "bounty_solutions": 0,
+  "bounty_submissions": 0,
+  "checks": {
+    "gcd_totients_through": 250,
+    "quadratic_lis_through": 250,
+    "exhaustive_chain_formula_through": 25,
+    "chains_checked": 3288
+  },
+  "script_sha256": "4170a011882d3410c51a4386bd5d3b264f4af5216a03c1877f672cb40254eb48"
+}
