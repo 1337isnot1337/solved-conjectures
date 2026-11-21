@@ -1000,3 +1000,5 @@ import Conjectures.HornakAdmissibleRange
 import Conjectures.FerreiraSimonWright
 import Conjectures.HornakGrouping
 import Conjectures.HornakGroupGraph
+import Conjectures.HornakPath
+import Conjectures.HornakMerge

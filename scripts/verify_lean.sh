@@ -4,6 +4,8 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.HornakPath
+  Conjectures.HornakMerge
   Conjectures.CircularIndexConnectivity
   Conjectures.CircularIndexBase
   Conjectures.CircularIndexAtoms

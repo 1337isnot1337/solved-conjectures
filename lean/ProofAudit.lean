@@ -9,6 +9,9 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Hornak.tripod_partition_of_short_arm_sublist,
+    `Hornak.tripod_merge_two_noncentral,
+    `Hornak.tripod_reduce_to_unmergeable,
     `CircularIndex.baseLeft_mem,
     `CircularIndex.baseRight_mem,
     `CircularIndex.baseVertex_lt_order,

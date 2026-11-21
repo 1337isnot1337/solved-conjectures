@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak short-arm subset and merging
+
+Proved unconditionally that a positive partition with a sublist summing to the shortest arm is realizable, and reduced all other partitions to the case without a mergeable noncentral pair. Strict compilation, a 945-theorem full-chain axiom audit and isolated kernel replay passed. The remaining all-small case, four-arm reduction, existence constructions and combined gate remain.
+
 ## 2026-11-21 — Circular-index main theorems and regular examples formalized
 
 Added the complete all-parameter circulant construction, the 25-vertex theorem, and both 31/33-vertex regular examples, with actual real circular chromatic indices, regular degrees, and vertex-deletion connectivity. The atom and subgroup proofs are internal to the formalization. The 19-module closure passed strict sources, an all-owned audit of 601 declarations/500 theorem declarations and 171 required endpoints, and exact pinned stock-kernel replay. Registered the checked closure and synchronized the partial overall badge; the nonregular examples, remaining Section 7 claims, combined package gate, and hosted validation remain separate.
