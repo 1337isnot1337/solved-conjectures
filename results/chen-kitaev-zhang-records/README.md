@@ -14,7 +14,7 @@ The proof establishes three new coefficient comparisons and uses the credited, p
 
 The complete written proof passed a separate internal mathematical audit. The [source audit](SOURCES.md) records both search engines, primary manuscripts, author records and public solution archives. No earlier resolution of Conjectures 1 or 3 was found in those sources. The publisher's complete typeset body and every citing paper were not exhaustively retrieved; the notes remain unrefereed and priority is subject to correction.
 
-**Lean status:** none.
+**Lean status:** partial. Lean checks the Schröder series, low-record algebra and uniform numerator bounds, and the 16 finite integer certificates, with the executable list operations related to the stated polynomials. The all-index coefficient inequalities and actual permutation-class identifications remain. Strict standalone compilation, axiom audit and isolated kernel replay passed; the combined repository gate is pending.
 
 ## Reproduce
 

@@ -868,3 +868,6 @@ import Conjectures.FussBlocks
 import Conjectures.FussSlot
 import Conjectures.FussFinal
 import Conjectures.FussRoots
+import Conjectures.CKZLow
+import Conjectures.CKZCertificates
+import Conjectures.CKZPolynomial

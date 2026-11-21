@@ -9,6 +9,20 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `CKZ.schroderSeries_equation,
+    `CKZ.schroderSeries_coeff,
+    `CKZ.low1_reduction,
+    `CKZ.low2_reduction,
+    `CKZ.low3_reduction,
+    `CKZ.low1_numerator_positive,
+    `CKZ.low2_numerator_positive,
+    `CKZ.low3_numerator_positive,
+    `CKZCertificates.cert_G0,
+    `CKZCertificates.cert_G11,
+    `CKZCertificates.cert_E2T14,
+    `CKZCertificates.toPolynomial_T,
+    `CKZCertificates.toPolynomial_G,
+    `CKZCertificates.toPolynomial_numerator,
     `FussRoots.actual_roots_simple_and_count,
     `FussRoots.actual_roots_independent_of_fuss,
     `FussRoots.transfer_root_relation,

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — CKZ Lean checkpoint
+
+Checked the Schröder series and three low-record reductions, uniform numerator inequalities and all 16 finite integer-list certificates, together with the interpretation of list operations as the stated polynomials. The all-index coefficient argument and permutation-class bridge remain. Strict compilation, 123-theorem all-owned axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
+
 ## 2026-11-21 — Fuss–Catalan simple roots in Lean
 
 Verified the exact simple-negative-root count and proved that arbitrary ordinary-case root relations transfer to the Fuss case via equality of root multisets. The cited ordinary-case interlacing results themselves are not re-proved. Strict compilation, 448-theorem all-owned axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
