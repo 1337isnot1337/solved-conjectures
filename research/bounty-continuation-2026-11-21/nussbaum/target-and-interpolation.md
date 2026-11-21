@@ -224,3 +224,5 @@ the information-order antichain observation, and elementary representation
 facts are not claimed as new mathematical discoveries.
 
 The subsequent [local grid theorem](local-grid-and-one-star-orbit.md) proves the period bound whenever an orbit contains at least one one-star state, including mixed-face orbits. It passed [independent review](GRID_REVIEW.md) and [coordinator review](COORDINATOR_REVIEW.md). This is a uniform partial theorem, not a solution of the full sponsor statement.
+
+Three further arguments apply with any number of stars per state. The [prime-power proof](prime-power-periods.md) counts Boolean vertices by lifting a common vertex of a maximal clique to distinct orbit faces. The [semiprime proof](semiprime-periods.md) reduces two distinct prime factors to the grid theorem. The [disconnected incompatibility proof](disconnected-conflicts.md) separates the coordinates responsible for different graph components. Other mixed-prime periods with connected incompatibility graphs remain unresolved in this work.
