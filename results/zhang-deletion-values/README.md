@@ -4,6 +4,8 @@
 
 **Status:** Complete elementary proof. The answer to Question 8.4 of Zhang's *Tight instances of the Lonely Runner Conjecture* is yes for all `n >= 4`. The note is unrefereed.
 
+**Contributor:** [@aadrianvv](https://github.com/aadrianvv). Original proof, verifier, and result package submitted in [PR #143](https://github.com/1337isnot1337/solved-conjectures/pull/143).
+
 **Lean status:** none. No Lean formalization is included.
 
 ## Result
