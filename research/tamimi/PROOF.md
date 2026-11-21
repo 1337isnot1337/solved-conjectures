@@ -2,7 +2,7 @@
 
 ## Status and exact scope
 
-Complete proposed proof of Conjecture 4.4.2 in Baha Tamimi, *The Sandpile & Smith Groups of Certain Classes of Graphs*, University of Essex PhD thesis (2022), printed page 115. Independent review and the full priority audit are in progress. Nothing here is counted as a new result until those checks pass.
+**Excluded from the novelty tally.** This is an independently reviewed reproof of the formula in Conjecture 4.4.2 of Baha Tamimi, *The Sandpile & Smith Groups of Certain Classes of Graphs*, University of Essex PhD thesis (2022), printed page 115. The exact full formula already appears in the publicly reproduced abstract of Xianghua Tan's 2011 thesis *Critical groups of several corona graphs*. The original 2011 thesis has not been retrieved; that limitation does not justify presenting the matching formula as new. See `PRIOR_STATUS.md` for the exact substitution and the independently checked earlier triangle case.
 
 Let $`r,n\geq 3`$ be integers. Start with the cycle whose vertices are $`v_0,\ldots,v_{r-1}`$, with subscripts read modulo $`r`$. For each edge $`v_iv_{i+1}`$, attach $`n-2`$ new vertices and make those vertices together with the two edge endpoints a copy of $`K_n`$. New vertices attached to different edges are disjoint. Call the resulting graph $`G_{r,n}`$.
 
@@ -179,6 +179,7 @@ In both cases $`H`$ is finite. It is therefore exactly the torsion subgroup of t
 
 - Original thesis repository: <https://repository.essex.ac.uk/33230/>.
 - Original thesis PDF: <https://repository.essex.ac.uk/33230/1/baha_tamimi_phd_thesis_05_08_2022.pdf>.
-- Exact conjecture: Conjecture 4.4.2, printed page 115. The primary search extraction reproduces the group formula and all quantifiers; full-PDF access and the edge-tiling definition are undergoing independent audit.
+- Exact conjecture: Conjecture 4.4.2, printed page 115. The primary search extraction reproduces the group formula and all quantifiers. Full-PDF retrieval failed; the indexed definition of edge tiling confirms that the duplicate shared edge is removed.
 - Companion finite Smith-form calculations are diagnostic checks of the transcription and presentation. The unbounded result is proved by the integral transformations above.
 - The distinct cycle-tiling Conjecture 4.4.3 is not claimed as an additional result.
+- The proof passed the independent mathematical review in `ALGEBRA_REVIEW.md`; the prior exact formula prevents admission as a new conjecture resolution.
