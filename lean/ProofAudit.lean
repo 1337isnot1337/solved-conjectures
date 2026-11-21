@@ -12,6 +12,8 @@ run_cmd do
     `CKZBridge.four_records_unimodal,
     `CKZBridge.four_class_decreasing,
     `D5.S1.Words.Patterns.Separable.RecordAllIndex.actual_ckz_conjecture_two,
+    `LopezPousoSegura.amplitude_approximation,
+    `LopezPousoSegura.eventual_violation_of_three_approximations,
     `LopezPousoSegura.scaled_limit_of_product_approx,
     `LopezPousoSegura.eventual_violation_of_product_approx,
     `LopezPousoSegura.eventual_violation_of_scaled_limit,

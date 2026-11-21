@@ -69,6 +69,7 @@ modules=(
   Conjectures.LopezPousoSegura
   Conjectures.LopezPousoSeguraAsymptotic
   Conjectures.LopezPousoSeguraAsymptoticBridge
+  Conjectures.LopezPousoSeguraFactors
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany

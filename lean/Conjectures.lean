@@ -19,6 +19,7 @@ import Conjectures.DospolovaGermanskovZaporozhets
 import Conjectures.LopezPousoSegura
 import Conjectures.LopezPousoSeguraAsymptotic
 import Conjectures.LopezPousoSeguraAsymptoticBridge
+import Conjectures.LopezPousoSeguraFactors
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
