@@ -6,6 +6,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
   Conjectures.FussCycle
   Conjectures.ChenKhareSahi
+  Conjectures.ChenKhareSahiCovers
   Conjectures.FussCatalan
   Conjectures.BrownMolGeneralRoot
   Conjectures.BrownMolRootTargets

@@ -1294,4 +1294,4 @@ This formalizes a previously resolved result. A complete ordinary disproof was p
 
 ## Chen–Khare–Sahi semiring separator
 
-`ChenKhareSahi.generatorValues_exact` checks all 38 listed rational separator values and `separation_negative` checks the negative value at the displayed normalized polynomials. `P420_eigen` and `P411_eigen` check their cleared rational eigenoperator identities. Exhaustiveness of the semiring reduction and identification with the source Macdonald polynomials remain unformalized. The isolated replay passed; the combined gate is pending.
+`ChenKhareSahi.generatorValues_exact` checks all 38 listed rational separator values and `separation_negative` checks the negative value at the displayed normalized polynomials. `P420_eigen` and `P411_eigen` check their cleared rational eigenoperator identities. `dominance_decomposes` proves that every majorization difference through degree six telescopes into the explicitly enumerated covers. The remaining semiring reduction and identification with the source Macdonald polynomials remain unformalized. The isolated replay passed; the combined gate is pending.

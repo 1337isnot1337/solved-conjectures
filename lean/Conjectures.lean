@@ -1,4 +1,5 @@
 import Conjectures.ChenKhareSahi
+import Conjectures.ChenKhareSahiCovers
 import Conjectures.GilmoreCrossingNesting
 import Conjectures.DospolovaGermanskovZaporozhets
 import Conjectures.LopezPousoSegura
