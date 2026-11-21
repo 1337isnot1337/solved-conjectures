@@ -32,3 +32,9 @@ For the simple groups PSL(2,7) and A6, GAP identifies the groups as SmallGroup(1
 WriteCounterexampleData(168, 42);
 WriteCounterexampleData(360, 118);
 ```
+
+For 16 cosets in A6, the same counting filters leave 65 candidate index multisets. The SAT search returned no packing for all 65. A separate manifest comparison checked that every candidate was logged exactly once. Reproduce this run with the group file from the second GAP command above and the following invocation. [Run report](https://github.com/1337isnot1337/solved-conjectures/issues/231#issuecomment-7069506715)
+
+```sh
+python counterexample.py 16 360-118.dat
+```
