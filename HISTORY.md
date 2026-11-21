@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Fuss–Catalan path bijection in Lean
+
+Constructed the explicit equivalence between good block sequences and literal Fuss–Dyck words and verified both pattern counts. The slot-data-to-block bijection remains. Strict compilation, 236-theorem axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
+
 ## 2026-11-21 — Fuss–Catalan slot count in Lean
 
 Verified the exact binomial count for choosing occupied and excess-bearing slots and distributing positive excess by stars and bars. The bijections to block sequences and actual paths remain. Strict compilation, 151-theorem axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.

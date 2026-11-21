@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FussWords.goodBlocksEquivPaths,
+    `FussWords.countNE_encode,
+    `FussWords.countNNE_encode,
+    `FussWords.safeWord_encode_iff_good,
     `FussCounting.blockData_card_for_excess,
     `FussCounting.positiveCompositions_card,
     `FussCounting.blockShapes_card,
