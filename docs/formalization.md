@@ -15,6 +15,12 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Gilmore full matching identity rechecked, 21 November 2026
+
+The complete `Conjectures.GilmoreCrossingNesting` source passed a fresh strict check, an all-owned audit of 449 declarations (346 theorem declarations, including 25 private declarations in the complete inventory) and all 20 required endpoints, and exact-closure stock-kernel replay. The audit includes the literal perfect-matching characterization, decoder surjectivity, statistic-preservation bridge, stabilized matrix product, and both final identities. [Receipt](verification/lean-named-20261121/gilmore-receipt.json).
+
+The landing page previously described surjectivity and statistic preservation as unfinished despite those proofs already being present. The page and result-level verification status are now synchronized with the checked source. The combined package gate and hosted validation are not claimed by this receipt.
+
 ## Babai path spectra and Baricz–Pogány source recurrence, 21 November 2026
 
 `BabaiPathSpectrum.spectrum_eq_interval` proves the full path-spectrum theorem for every `n ≥ 2`, `1 ≤ k < n`. It uses the actual finite distance graph and proves both inclusions, including the greedy upper bound and every modular-coloring/clique realization. Strict source compilation, the all-owned audit of 43 declarations and 12 required endpoints, and stock-kernel replay passed. [Receipt](verification/lean-named-20261121/babai-receipt.json).

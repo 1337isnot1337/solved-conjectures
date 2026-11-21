@@ -49,11 +49,12 @@ The neighboring shifted reverse Bessel Hankel-total-positivity conjecture remain
 - [Published PDF repository record](https://discovery.ucl.ac.uk/id/eprint/10138471/).
 - [arXiv v2](https://arxiv.org/abs/2106.00656v2).
 
-The [Lean formalization](../../lean/Conjectures/GilmoreCrossingNesting.lean)
+The [complete Lean formalization](../../lean/Conjectures/GilmoreCrossingNesting.lean)
 proves the source conjecture in `GilmoreCrossingNesting.original_conjecture`
 and the four-parameter identity in `GilmoreCrossingNesting.gilmore_conjecture`,
 for every `n ≥ 1` over any commutative ring. It starts from the actual stabilized
 product of shifted inverse bidiagonal matrices. The matching decoder is
 surjective and injective in canonical closing-end order, and the weights are
-identified with literal crossings, nestings, and alignments. Strict compilation
-and isolated kernel replay passed; the combined repository gate remains pending.
+identified with literal crossings, nestings, alignments, and size.
+
+Fresh strict source compilation, an all-owned audit of 449 declarations and all 20 required theorem endpoints, and independent stock-kernel replay passed. Only `propext`, `Classical.choice`, and `Quot.sound` occur as transitive axioms. [Validation receipt](../../docs/verification/lean-named-20261121/gilmore-receipt.json). The combined repository gate and hosted validation remain separate.

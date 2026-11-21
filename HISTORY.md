@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Gilmore full matching identity rechecked
+
+Rechecked the complete Gilmore source with strict compilation, an all-owned declaration/axiom audit and stock-kernel replay. The checks cover 449 declarations and all 20 required endpoints, including the exhaustive matching bijection and preservation of the source statistics. Corrected the stale landing page and synchronized the full result-level verification badge. The combined package gate and hosted validation remain separate.
+
 ## 2026-11-21 — Babai spectra fully formalized; Baricz–Pogány source recurrence verified
 
 Added the complete Babai path-spectrum formalization, including both bounds and constructive realization for every allowed value, with credit to aadrianvv for the written proof. Added source-recurrence uniqueness and a direct source-recurrence inequality endpoint to Baricz–Pogány. Both passed strict source checks, all-owned axiom audits, and stock-kernel replay. Registered the Babai module and all new endpoints, corrected the stale Baricz–Pogány landing-page claims, and synchronized the full result-level badges and status pages. The combined repository gate and hosted validation remain separate.
