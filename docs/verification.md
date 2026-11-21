@@ -22,6 +22,12 @@ The [Simon stable-infimum proof](../results/simon-stable-infimum/PROOF.md) is al
 
 ## Computational checks
 
+The [Novelli–Thibon checker](../results/novelli-thibon/verify.py) independently converts permutation fundamental expansions to Schur coefficients using Kostka numbers. It checks all first-moment identities for 209 partition pairs and all 135 hook coefficients through size six, and exactly matches the source's printed polynomial. These finite checks verify conventions; the [written proof](../results/novelli-thibon/PROOF.md) establishes both identities for every size. The script uses only the Python standard library.
+
+```bash
+python3 results/novelli-thibon/verify.py
+```
+
 The [López Pouso–Segura checker](../results/lopez-pouso-segura-bessel/verify.py) checks exact polynomial and rational identities used by the analytic proof, with the square of pi treated as a formal variable. The full all-index signs, strict monotonicity, and limits follow from the [written argument](../results/lopez-pouso-segura-bessel/PROOF.md), which has two independent internal reviews. The checker uses only the Python standard library and performs no floating-point root screen.
 
 ```bash
@@ -393,6 +399,7 @@ gate remains separate. Lower-runner assumptions, exhaustive modular
 classification and final uniqueness remain open, so no result directory
 becomes complete from this reduction.
 [Exact hypotheses, cutoffs and scope](loneliness-large-norm-lean.md).
+
 
 
 

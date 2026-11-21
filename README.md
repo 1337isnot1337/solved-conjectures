@@ -12,6 +12,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Verification |
 | :--- | :---: |
+| [Novelli–Thibon's conjecture](results/novelli-thibon/) | ⬜ |
 | [López Pouso–Segura's conjectures](results/lopez-pouso-segura-bessel/) | ⬜ |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ |
 | [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | ⬜ |
@@ -134,6 +135,7 @@ See [the scope notes](CONTENTS.md#precise-scope) and each result's proof for hyp
 ## Primary sources
 
 Sources are linked in the [catalogue](CONTENTS.md#primary-sources) and individual proofs.
+
 
 
 

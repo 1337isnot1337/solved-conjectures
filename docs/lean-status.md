@@ -34,6 +34,7 @@ Lean verification.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| Novelli–Thibon's conjecture | Not formalized | Complete proposed proof of the intended monomial-product Conjecture 5.7 for all partitions and independent parameters, plus the adjacent all-size hook-coefficient formula. Two internal mathematical reviews and exact convention checks passed. The source index correction and priority limits are explicit; Schur positivity and general traces are not claimed. |
 | López Pouso–Segura's conjectures | Not formalized | Complete proposed proofs of the three published Bessel-weight sequence conjectures, counted together. Signs, strict monotonicity, and exact limits hold at every index. Two independent internal reviews and exact algebraic checks passed. No finite-degree Gauss–Legendre or Lean claim is included. |
 | Simon's stable-infimum conjecture | Not formalized | Complete proposed proof of the full parameterwise convex order, including the Brownian endpoint. The independent review checks the prior Mellin transform, increasing logarithmic Lévy measures, exponential integrability and conditional Jensen argument. No numerical or finite-case inference is used. |
 | Ferreira–Simon's stochastic-order conjecture | Not formalized | Complete proposed proof for every pair of real parameters in the source interval. The Poisson-series scale and strict sequence-norm comparison give a simultaneous coupling, both endpoint limits and the associated Mittag–Leffler inequalities. Independent internal review passed. |
@@ -3052,5 +3053,6 @@ This identifies the integer determinant factor in the earlier Gram/covolume comp
 The complete 20-module hosted gate passed at `a8577e5da31b851ce64333aa921b39c6623e0389` ([run and job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44606981694/job/135853171450)). It checked all fresh strict sources, selected declaration values and types for 446 owned names including 12 private names, all 5 required theorem endpoints, and one exact stock-kernel target per module. The audit includes raw/private-name visibility; it is not a separate audit of every duplicate theorem body occurrence. The permitted axioms were only `propext`, `Classical.choice`, and `Quot.sound`. The unchanged raw receipt has SHA-256 `62b4ab2b3b0dcdaa55b210e5de3e8322e7e6b57201b05e085983d8ff0882afa2`. A merged accepted-package source, audit and kernel pass remains a separate obligation.
 
 [Preserved receipt](verification/rational-lattice-quotient-exact-44606981694/receipt.json).
+
 
 

@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Novelli–Thibon's conjecture
+
+Added a complete proposed proof of the intended monomial-product Conjecture 5.7 for all partitions and independent parameters. A universal word-comparison identity determines every first derivative at the unit parameter point, and the Pieri rule extracts the tableau exponent. The source's printed exponent index is corrected using its own example. A separate product evaluation, derived from the credited Carlsson–Mellit theorem, also proves the adjacent hook-coefficient formula; it is part of the same named package.
+
+Two internal mathematical reviews passed. The result includes an exact standard-library checker and a bounded source and priority audit covering both arXiv versions, published metadata, related primary literature, web searches, global GitHub proof searches and repository history. No earlier full monomial-product resolution was found in the inspected material; the access limits are recorded. The notes remain unrefereed. The separate Schur-positivity and general trace conjectures remain outside the claim, and no Lean work was performed.
+
 ## 2026-11-21 — Restored prior-resolution exclusions for two KVZ targets
 
 Removed the reintroduced reciprocal q-gamma and Hankel-product packages and their result, status and verifier registrations. Both targets had already been excluded on November 20; today's reintroduction mistakenly reversed that established priority decision. Neither counts as a new resolution. The other Karp–Vishnyakova–Zhang targets are separate and are retained.
@@ -845,6 +851,7 @@ Added a [proof of both vertex-decomposability conjectures](results/hornak-woznia
 ## 2026-11-20 — Sonntag–Teichert conjecture
 
 Added a [proof of connectivity for tournament domination hypergraphs](results/sonntag-teichert/) on their nonisolated vertices. The argument uses minimal closed in-neighbourhoods and also characterizes the disconnected cases for oriented graphs.
+
 
 
 

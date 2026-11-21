@@ -69,6 +69,7 @@ These proofs are unrefereed. The audits found no earlier resolution in the inspe
 
 | Result | Finding | Lean | Evidence |
 | :--- | :--- | :---: | :--- |
+| [Novelli–Thibon's conjecture](results/novelli-thibon/) | Complete proposed proof of the intended monomial-product Conjecture 5.7 for all partitions and independent parameters. A universal first-derivative identity and the Pieri rule prove the product formula; a plethystic evaluation also gives every hook coefficient. The source index typo is corrected explicitly. Two internal mathematical reviews passed. | Not formalized | [Proof](results/novelli-thibon/PROOF.md) · [Source audit](results/novelli-thibon/SOURCES.md) · [Independent review](results/novelli-thibon/AUDIT.md) · [Checks](results/novelli-thibon/verify.py) · [Issue 180](https://github.com/1337isnot1337/solved-conjectures/issues/180) |
 | [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | Complete proposed proofs of the original Conjectures 1 and 3 for every permitted length. New one-, two- and three-record comparisons combine with the credited earlier Conjecture 2 tail theorem. Independent internal review passed; no separate count is assigned to individual statistics. | Not formalized | [Proof](results/chen-kitaev-zhang-records/PROOF.md) · [Source audit](results/chen-kitaev-zhang-records/SOURCES.md) · [Review](results/chen-kitaev-zhang-records/AUDIT.md) · [Checks](results/chen-kitaev-zhang-records/verify.py) · [Issue 157](https://github.com/1337isnot1337/solved-conjectures/issues/157) |
 | [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | Complete disproof of the unweighted coefficientwise Hankel-total-positivity conjecture. The leading three-by-three determinant has coefficient minus four at a squared times x to the fourth power. A symbolic identity also supplies an open region of strictly positive real counterexamples. Independent internal review passed. | Not formalized | [Proof](results/zhu-jacobi-stirling/PROOF.md) · [Source audit](results/zhu-jacobi-stirling/SOURCES.md) · [Review](results/zhu-jacobi-stirling/AUDIT.md) · [Checks](results/zhu-jacobi-stirling/verify.py) · [Issue 163](https://github.com/1337isnot1337/solved-conjectures/issues/163) |
 | [Baricz–Pogány's asymptotic-coefficient positivity conjecture](results/baricz-pogany-coefficients/) | Previously published result package: every asymptotic coefficient of degree at least two exceeds the stated geometric term for every permitted real Bessel order. A formal-series factorization supplies a strict positive lower bound. The source audit records an inaccessible submitted follow-up and does not assert exclusive priority. | Not formalized | [Proof](results/baricz-pogany-coefficients/PROOF.md) · [Exact diagnostics](results/baricz-pogany-coefficients/verify.py) · [Source audit](results/baricz-pogany-coefficients/NOVELTY.md) |
@@ -157,6 +158,7 @@ These are mathematical claims with explicit proofs and computer checks, **not pe
 
 ## Primary sources
 
+- Jean-Christophe Novelli and Jean-Yves Thibon, *Noncommutative chromatic quasi-symmetric functions, Macdonald polynomials, and the Yang–Baxter equation*, JCTA 220 (2026), 106130, [arXiv:2502.09072v2](https://arxiv.org/html/2502.09072v2), Conjecture 5.7 and the following hook-coefficient assertion.
 - Chen–Kitaev–Zhang: *Distributions of statistics on separable permutations*, Discrete Applied Mathematics 355 (2024), 169–179, [arXiv:2404.18517](https://arxiv.org/abs/2404.18517). The result proves original Conjectures 1 and 3; Conjecture 2 was previously resolved and is credited in the proof.
 - Zhu: *Coefficientwise Hankel-total positivity of the row-generating polynomials for the output matrices of certain production matrices*, Advances in Mathematics 444 (2024), 109695, [arXiv:2202.03793](https://arxiv.org/abs/2202.03793), §5.2. The disproof concerns the unweighted conjecture preceding Proposition 5.7.
 
@@ -182,6 +184,7 @@ These are mathematical claims with explicit proofs and computer checks, **not pe
 - Václav Kotesovec’s [conjectured exponential base](https://oeis.org/A401948) for the counting function in [Erdős Problem 607](https://www.erdosproblems.com/607). The verifier accepts the [10,000-term reference table](https://oeis.org/A401948/b401948.txt) with the option `--table b401948.txt`.
 
 For the other entries, primary publications and conjecture identifiers are cited in their linked proof notes.
+
 
 
 
