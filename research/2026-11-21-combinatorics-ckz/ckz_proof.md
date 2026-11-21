@@ -1,6 +1,6 @@
 # Chen–Kitaev–Zhang's record conjectures
 
-Date: 21 November 2026. Status: complete proposed proof of Conjectures 1 and 3; independent review and priority audit pending.
+Date: 21 November 2026. Status: complete proposed proof of Conjectures 1 and 3, independently checked within this research campaign; external review remains open. The bounded priority audit is recorded separately.
 
 ## Statement and attribution
 
@@ -11,7 +11,7 @@ Chen, Kitaev and Zhang, *Distributions of statistics on separable permutations*,
 
 These are Conjectures 1 and 3, respectively. “Irreducible” means indecomposable under direct sum; the singleton is irreducible, and the empty permutation belongs to neither positive class. Records are strict and unshifted.
 
-The proof below supplies the missing comparisons involving one, two and three records, and combines them with the all-index declining tail used in the previously published proof of Conjecture 2. That tail method is due to the [trureturing project](https://github.com/the-omega-institute/trureturing/blob/bba1aad31d92f0ac31774c3a7e7c04a3db945c56/Blueprint/D5/S1/Words/Patterns/Separable/RecordAllIndex.md). Sections 3–5 reconstruct its mathematical argument, with independently regenerated exact certificates, so the present proof can be checked without trusting a claim about a formal build. No new credit is claimed for Conjecture 2 or its Newton-kernel method. No Lean work is performed here.
+The proof below supplies the missing comparisons involving one, two and three records, and combines them with the all-index declining tail used in the previously public proof of Conjecture 2. That tail method is due to the [trureturing project](https://github.com/the-omega-institute/trureturing/blob/bba1aad31d92f0ac31774c3a7e7c04a3db945c56/Blueprint/D5/S1/Words/Patterns/Separable/RecordAllIndex.md). Its [ordinary-mathematics manuscript](https://github.com/the-omega-institute/trureturing-source-theories/blob/2a39da5107abbfa3a72cc883486dbc15a15994a1/docs/develop/theory/SEPARABLE_SIGNED_RECORD_WEIGHTS.md), especially Theorems 7.2, 8.2 and 8.3, gives the complete argument. Sections 3–5 reconstruct that argument, with independently regenerated exact certificates, so the present proof can be checked without trusting a claim about a formal build. No new credit is claimed for Conjecture 2 or its Newton-kernel method. No Lean work is performed here.
 
 The current literature audit found no earlier complete statement of Conjecture 1 or 3 in the inspected material. This remains a bounded priority finding; see the separate source audit.
 
