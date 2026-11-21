@@ -14,7 +14,7 @@ Replaced an unsupported fixed-width TeX spacing command by standard spacing in t
 
 ## 2026-11-20 — Oravcová–Soták distance-graph conjecture
 
-Added the classification of primitive distance sets of size five through eight with maximum chromatic number, relative to the repository's five-, six-, seven- and eight-speed spectrum classifications. The package contains a written proof, 62 periodic colourings, loop certificates for four one-parameter families, base loops for the two-parameter six-distance family, an independent standard-library verifier, and a separate SAT scan. The note is unrefereed and conditional on the spectrum classifications; no Lean verification was performed.
+Added the classification of primitive distance sets of size five through eight with maximum chromatic number, relative to the repository's five-, six-, seven- and eight-speed spectrum classifications. The package contains a written proof, 62 periodic colourings, loop certificates for four one-parameter families, base loops for the two-parameter six-distance family, an independent standard-library verifier, and a separate SAT scan. The note is unrefereed and conditional on the spectrum classifications; no Lean verification was performed. Contributed by [@aadrianvv](https://github.com/aadrianvv) in [PR #144](https://github.com/1337isnot1337/solved-conjectures/pull/144).
 
 ## 2026-11-20 — Repaired an omitted result registration
 
@@ -32,7 +32,7 @@ The Minc research record also documents partial Gyires and integrality results w
 
 ## 2026-11-20 — Zhang's Question 8.4
 
-Answered Zhang's Question 8.4: the deletion values `LR([n-1] \ {r})` are `1/r` when `2r > n-1` and `2/D_r` when `2r <= n-1`, so the strict inequality holds for all `n >= 4` and `1 <= r <= n-2`. The package contains an elementary proof and an exact standard-library verifier for `n <= 40`. The note is unrefereed; no Lean verification was performed.
+Answered Zhang's Question 8.4: the deletion values `LR([n-1] \ {r})` are `1/r` when `2r > n-1` and `2/D_r` when `2r <= n-1`, so the strict inequality holds for all `n >= 4` and `1 <= r <= n-2`. The package contains an elementary proof and an exact standard-library verifier for `n <= 40`. The note is unrefereed; no Lean verification was performed. Contributed by [@aadrianvv](https://github.com/aadrianvv) in [PR #143](https://github.com/1337isnot1337/solved-conjectures/pull/143).
 
 ## 2026-11-20 — Removed previously resolved conjectures
 
