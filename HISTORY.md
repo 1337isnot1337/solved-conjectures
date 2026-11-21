@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak wrapped endpoint
+
+Proved the wrapped-residue exceptional-piece endpoint through an actual connected partition under the required chosen-arm bounds. Strict compilation, a 289-theorem axiom audit and isolated kernel replay passed; chosen-arm existence in the remaining cases, full AVD reductions and the full gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak exceptional-piece foundations
 
 Constructed actual connected graph partitions with one exceptional piece from reduced-arm allocations; proved the zero-carry and no-quotient-loss subcases and wrapped-residue identities. Strict compilation, a 280-theorem axiom audit and isolated kernel replay passed; remaining exceptional cases, AVD reductions and the full gate remain.
