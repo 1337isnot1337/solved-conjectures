@@ -10,10 +10,10 @@ This continuation has one complete proposed solution of a separately paid mathem
 
 | Worker | Exact scope | Current output |
 | --- | --- | --- |
-| `conjectures_bounties` | Fresh direct-pay full-target screening and independent review | [Shallit 9 symbolic stopping point](shallit9/symbolic-closure-gap.md); [Shallit 2 independent review](shallit2/INDEPENDENT_REVIEW.md); no new full target from the subsequent sponsor screen |
-| `demath_zzz_bounties` | Erdős 517 full Fejér–Pólya target; earlier Erdős 600 review | [E600 sparse insertion and necessary extremizer restrictions](erdos600/sparse-insertion-gap.md); E517 source audit and research reserved in [issue 223](https://github.com/1337isnot1337/solved-conjectures/issues/223#issuecomment-7069494775) |
-| `other_paid_math` | Fresh direct-pay screening after the Shallit 2 attempt | [Uniform separator-route obstruction](shallit2/short-factor-parity-route.md); [Gaussian first-cycle prior-resolution exclusion](eligibility/gaussian-aliquot-excluded.md) |
-| Root | Independent mathematics, source review, and repository coordination | Reviewed the full threshold proof and new partial results; guarded publication preserving concurrent work |
+| `conjectures_bounties` | Chen–Hazan exact black-box optimization reduction | [Erdős 789 model-height stopping point](erdos789/model-height-and-visibility-gap.md), with [review](erdos789/INDEPENDENT_REVIEW.md); [Chen–Hazan prior-scope audit](chen-hazan/status-and-scope.md) |
+| `demath_zzz_bounties` | Langford cross-validation prize and independent source audits | [Erdős 517 zero-persistence](erdos517/target-and-zero-persistence.md) and [logarithmic-derivative](erdos517/logarithmic-derivative-obligation.md) attempts stopped with their exact gaps; [Langford CPE prior-runtime audit](langford-cpe/prior-proof-and-runtime-audit.md) |
+| `other_paid_math` | Older COLT direct-pay screening | [Erdős 50 tangent reductions](erdos50/tangent-cylinder-reduction.md), [inverse-scale strengthening](erdos50/inverse-scale-cutoff.md), and [review](erdos50/INDEPENDENT_REVIEW.md); [2025–2026 cash-offer audit](eligibility/colt-2025-2026-cash-audit.md) excludes the ten screened papers |
+| Root | Independent proof review, source checks, and repository coordination | [Deterministic threshold extension review](learning-information/threshold-deterministic-independent-review.md), reviews of the partial research, and guarded publication preserving concurrent work |
 
 Earlier work includes the [Erdős 49 prime-interval deficit reformulation](erdos49/README.md), the [Erdős 552 countermodel to one inference](erdos552/README.md), and the [Shallit 14 finite-prime-support promise theorem](shallit/finite-prime-support-promise.md) with its [composite-base obstruction](shallit/composite-base-obstruction.md). The JSP and RoundSquare [candidate exclusions](eligibility/jsp-and-roundsquare.md) are also preserved. None resolves its unrestricted paid target.
 
@@ -36,6 +36,12 @@ Earlier work includes the [Erdős 49 prime-interval deficit reformulation](erdos
 These are source-stated direct-pay offers; no fresh sponsor promise, award decision, or payment is claimed. The threshold theorem is a complete proposed resolution; the other targets in this section remain unresolved here. The existing repository work and its earlier mathematical gaps remain preserved below.
 
 ## Subsequent mathematical attempts
+
+The [Erdős 50 audit](erdos50/target-and-prior-audit.md) confirms the full pointwise derivative question and its direct-pay offers. The [finite-prime tangent reduction](erdos50/tangent-cylinder-reduction.md) proves an exact weighted-product reformulation with negligible truncation error and a necessary bound on every nearby individual cylinder. The [inverse-scale cutoff](erdos50/inverse-scale-cutoff.md) sharpens the necessary reduction using the derivative's local mass bound. Both pass [independent review](erdos50/INDEPENDENT_REVIEW.md). The aggregate of many small cylinders remains uncontrolled, so no positive derivative is ruled out universally.
+
+The [Erdős 517 audit and zero-persistence lemma](erdos517/target-and-zero-persistence.md) pass [independent review](erdos517/ZERO_REVIEW.md), including a direct visual check of Murai's circle indices. The separate [logarithmic-derivative note](erdos517/logarithmic-derivative-obligation.md), with [review](erdos517/LOGARITHMIC_REVIEW.md), states an exact fixed-pole criterion. An explicit Fabry-gap function of infinite lower order has every Newton coefficient nonzero, so Taylor gaps do not transfer to that logarithmic derivative. The product has infinitely many zeros and is no counterexample to the paid target.
+
+The [Erdős 789 audit](erdos789/target-and-prior-audit.md) compares the full arbitrary-host square-root target with the known interval theorem and Korsky's actual weaker-bound proof. The [model-height note](erdos789/model-height-and-visibility-gap.md), with [review](erdos789/INDEPENDENT_REVIEW.md), shows that an exponential-height short-relation model on a positive fraction would suffice. A uniform family defeats fixed-prime visibility inferred solely from quotient rank. Neither the height hypothesis nor an alternative useful-prime hypothesis is proved.
 
 The [Erdős 600 sparse-insertion follow-up](erdos600/sparse-insertion-gap.md), with [independent review](erdos600/SPARSE_REVIEW.md), gives a compatible insertion family with a denominator proportional to maximum degree. A bounded-gap sequence of extremizers would eventually be connected, have maximum degree sublinear in the order, and have only sublinearly many useful nonedges. Kneser examples exclude a proposed three-halves density shortcut. The near-quadratic extremal-density step remains unproved.
 
@@ -97,6 +103,12 @@ The [checkpoint 19 provenance record](checkpoint19-provenance.json) maps the rev
 The [Gaussian aliquot-cycle audit](eligibility/gaussian-aliquot-excluded.md) found the prior exact period-one example already recorded in campaign 223, under the sponsor's actual divisor convention. The older public $50 offer therefore does not supply a new first-cycle target. The separate Spira divisor sum and a newly invented period-at-least-two variant are not substituted for the sponsor statement.
 
 The [checkpoint 20 provenance record](checkpoint20-provenance.json) pins the reviewed sources and normalized published copies. The completion count remains one proposed threshold solution. The added symbolic, graph, density and separator results are partial deductions and method obstructions.
+
+The [deterministic threshold extension review](learning-information/threshold-deterministic-independent-review.md) independently checks the written entropy argument, including duplicate-feature row allocation and use of the actual ordered input. The deterministic learner, finite-coin learner and original randomized construction remain versions of the same one proposed solution. This review is not an implementation replay, Lean formalization or sponsor acceptance.
+
+The [Chen–Hazan scope audit](chen-hazan/status-and-scope.md) separates the original best-comparator target from the revised 2026 paper's extra variance term and fixed-comparator lower bound. The [Langford CPE audit](langford-cpe/prior-proof-and-runtime-audit.md) verifies the existing constant-regret construction while preserving its stated quadratic-logarithmic computation versus the sponsor's logarithmic-time wording. Neither audit claims a new solution or an award decision. The [COLT 2025–2026 screen](eligibility/colt-2025-2026-cash-audit.md) finds a donation-only prize and nine papers with no established cash offer; those are not reserved as direct-pay targets.
+
+The [checkpoint 21 provenance record](checkpoint21-provenance.json) pins the reviewed sources and normalized publication copies. These additions contribute zero full resolutions; the campaign count remains one proposed threshold solution.
 
 ## Verification scope
 
