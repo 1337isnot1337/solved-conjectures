@@ -1,8 +1,23 @@
 # Chollet's conjecture
 
-Research checkpoint, 2026-11-21. No full-conjecture resolution and no priority
+Research checkpoint, 20 November 2026 (America/Chicago). No full-conjecture resolution and no priority
 claim. The result below is an auxiliary rank bound intended for a possible
 full-scope reduction. It is not counted as a solved named conjecture.
+
+## Priority correction
+
+The [later source audit](../reviews/chollet_rank_priority_audit.md) shows that
+Yuan--Parrilo's 2021 approximation theorem, combined with the published
+untilted sphere bound, already implies every case below with rank at least
+18. It also covers all sufficiently large orders at each smaller rank. The
+possible residual outside the audit's conservative criteria consists of
+finitely many rank/order pairs with ranks 5 through 17. No priority is
+certified for that residual. The exponential estimate for rank at least
+64 is weaker than the prior consequence, which gives exp(-51n/50).
+
+The argument below is retained as an independently checked proof and a
+record of the failed full-conjecture reduction. It must not be presented
+as a new large-rank Chollet theorem or counted as a complete resolution.
 
 ## Scope and current literature
 
@@ -26,10 +41,9 @@ rank-four class at order nine. Its Sections 2 and 3 provide the Bregman
 row-sum bound and the complex-sphere method used below. Its Sections 5 and 6
 already use polynomial tilts, so polynomial tilting itself is prior art.
 
-Searches for Chollet together with rank, square, r^2, sqrt, monomial, extreme
-correlation matrices, and analytic maximization did not locate the precise
-rank-square statement below. This is a bounded search, not an establishment
-of historical novelty. Fuzhen Zhang's
+The initial title and rank searches did not identify the implications of
+Yuan--Parrilo's theorem. The later audit above corrects that attribution;
+a failed search is not evidence of novelty. Fuzhen Zhang's
 [2013 analytic approach](https://nsuworks.nova.edu/math_facarticles/26/),
 DOI 10.1016/j.laa.2011.09.034, is relevant prior work on maximizing partners.
 His [2016 survey, Section 5](https://scholars.nova.edu/ws/portalfiles/portal/42826589/An%20Update%20on%20a%20Few%20Permanent%20Conjectures.pdf)

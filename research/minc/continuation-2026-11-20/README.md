@@ -12,7 +12,7 @@ This continuation investigates full unresolved entries on [the live Minc list](h
 | C9, Marcus's block-permanent inequality | Updated primary literature; two exact padding obstructions | Full inequality unresolved |
 | C24, integrality of the minimum permanent | Entropy audit and an infinite-family obstruction to uniform complement averaging | Global-minimizer replacement inequality remains unproved |
 | C34, Lih-Wang inequality | Pointwise coefficient proposal rejected; exact full rook transfer for Jerrum graphs and weighted extensions | Aggregate inequality unresolved |
-| C30, Chollet's conjecture | Sphere-tilt proof for rank r and order n at least r squared; exact projection obstruction | Auxiliary theorem reviewed; reduction from arbitrary rank remains unproved |
+| C30, Chollet's conjecture | Independent sphere-tilt proof; later audit attributes the entire large-rank range to prior bounds | Full conjecture unresolved; possible residual is a finite rank/order region |
 | C36 and P7, sign-matrix problems | Modular obstruction, block-expansion identities, and a finiteness theorem for fixed-skeleton one-vertex stretching | Full conjectures unresolved; independently reviewed |
 | P17, permanental-compound characteristic polynomial | Symmetric-power compression and collision-state resolvent route | No uniformly faster algorithm established |
 | P2 and C42, permanent dominance | Exact subgroup projections, marker obstruction, and all-vector extension certificates for two known cores | No counterexample to the original conjecture |
@@ -32,8 +32,14 @@ feasibility step for geometric symmetrization, with an explicit remaining
 capacity comparison. The [Chollet rank-bound note](inequalities/chollet_projection_checkpoint.md)
 has a [complete argument and certificate review](reviews/chollet_rank_square_review.md).
 Its exact rational intervals cover continuous spectral ranges and are extended
-analytically to all larger orders and ranks. The rank restriction remains;
-this is not a full resolution and is not counted toward ten.
+analytically to all larger orders and ranks. A later
+[priority audit](reviews/chollet_rank_priority_audit.md) shows that published
+Yuan--Parrilo and sphere bounds already imply every case with rank at least
+18 in this region, as well as all sufficiently large orders at each smaller
+rank. Only finitely many rank/order pairs with ranks 5 through 17 remain
+outside the conservative prior criteria; no novelty is certified for them.
+The large-rank exponential estimate is weaker than the prior consequence.
+This is not a full resolution and is not counted toward ten.
 
 The [further review](reviews/continuation_obstructions_review.md) covers the
 [failed Lih--Wang coefficient bound](regular/lihw_coefficient_obstruction.md),

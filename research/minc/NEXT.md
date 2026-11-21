@@ -111,8 +111,11 @@ counted toward the requested ten.
 
 - [Chollet rank-square theorem](continuation-2026-11-20/inequalities/chollet_projection_checkpoint.md):
   an independently reviewed sphere-tilt proof covers rank r at least five
-  and n at least r squared, with exact rational intervals and an analytic
-  large-rank tail. The unrestricted rank-reduction bridge is missing.
+  and n at least r squared. A [later priority audit](continuation-2026-11-20/reviews/chollet_rank_priority_audit.md)
+  attributes the entire range r at least 18, and all sufficiently large n
+  at smaller ranks, to prior Yuan--Parrilo and sphere bounds. Only a finite
+  rank/order region remains outside its conservative criteria, with no
+  priority certified. The unrestricted rank-reduction bridge is missing.
   [Variational identities](continuation-2026-11-20/inequalities/chollet_laplacian_checkpoint.md)
   do not establish that bridge.
 - [Brualdi support theorem](continuation-2026-11-20/sign/brualdi_symmetric_support.md):

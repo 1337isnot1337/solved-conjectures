@@ -11,6 +11,15 @@ For r at least 64 the displayed exponential bound also follows.
 This is a restricted theorem. It does not resolve Chollet's conjecture and
 is not counted toward the requested ten resolutions.
 
+## Later priority correction
+
+The [source audit](chollet_rank_priority_audit.md) establishes that the
+entire range with rank at least 18 follows from published inequalities.
+At smaller ranks, prior work also covers every sufficiently large order.
+Only a finite rank/order region remains outside the audit's conservative
+criteria, and this review establishes no novelty there. The proof check
+below remains valid; it does not make the large-rank result new.
+
 ## Tilt and upper bound
 
 The sphere identity has the correct normalization. A standard complex
