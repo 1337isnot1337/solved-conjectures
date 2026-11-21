@@ -908,3 +908,4 @@ import Conjectures.CKZBridge
 import Conjectures.HornakGraph
 import Conjectures.HornakPacking
 import Conjectures.HornakMaximum
+import Conjectures.HornakResidues

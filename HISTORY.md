@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak endpoint packing
+
+Proved the complementary quotient and carry formulas, regular endpoint packing under its explicit carry witness, and transfer across arbitrarily many budget steps. Strict compilation, a 120-theorem axiom audit and isolated kernel replay passed; graph realization, remaining endpoint conditions, AVD reductions and the full gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak packing criterion
 
 Proved the exact per-arm ceiling-cost formula, the finite maximum for larger-piece allocations, the full two-size arm-packing criterion and the budget-transfer bound. Strict compilation, an 82-theorem axiom audit and isolated kernel replay passed; graph realization, endpoints, AVD reductions and the full gate remain.

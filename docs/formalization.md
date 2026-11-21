@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak endpoint packing, 21 November 2026
+
+Lean proves the complementary quotient/carry formulas, the regular endpoint packing with its explicit carry witness and transfer across any number of steps. Graph realization, remaining endpoint conditions, extra-piece cases and the AVD reductions remain. Strict compilation, a 120-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak packing criterion, 21 November 2026
 
 Lean now proves the exact ceiling-cost formula, the finite maximum and its one-step bound, the two-size arm-packing criterion and transfer to fewer larger pieces. Actual graph realization, endpoints and the AVD reductions remain. Strict compilation, an 82-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.
