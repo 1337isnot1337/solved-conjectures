@@ -12,6 +12,7 @@ import Conjectures.ChenKhareSahiSaturation
 import Conjectures.ChenKhareSahiHall
 import Conjectures.ChenKhareSahiParameter
 import Conjectures.ChenKhareSahiUnique
+import Conjectures.ChenKhareSahiShiftUnique
 import Conjectures.ChenKhareSahiCovers
 import Conjectures.GilmoreCrossingNesting
 import Conjectures.DospolovaGermanskovZaporozhets

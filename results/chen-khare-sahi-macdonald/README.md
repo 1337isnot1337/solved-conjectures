@@ -53,7 +53,7 @@ python independent_orthogonality_check.py
 
 The written argument and rational certificates are complete. They have
 been independently reviewed within this research campaign; no external
-peer-review claim is made. Lean formalizes the exact source counterexample, including the full real semiring and monic triangular eigenfunction characterizations. The rectangular-translate and continuous-parameter refinements are not yet formalized; see the [Lean status report](../../docs/lean-status.md).
+peer-review claim is made. Lean formalizes the exact source counterexample, the rectangular-translate family, and the continuous-parameter refinement, including the full real semiring and monic triangular eigenfunction characterizations. The repository-wide verification gate remains pending; see the [Lean status report](../../docs/lean-status.md).
 
 Primary source: Hong Chen, Apoorva Khare and Siddhartha Sahi,
 [arXiv:2509.19649v2](https://arxiv.org/html/2509.19649v2), Conjecture 5,
