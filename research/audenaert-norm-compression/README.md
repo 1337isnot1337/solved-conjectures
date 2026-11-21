@@ -15,6 +15,8 @@ The primary source is [Audenaert, Conjecture 1](https://arxiv.org/abs/math/07021
 
 - [Source audit](SOURCE_AUDIT.md): exact source comparison, a correction to a misleading claimed-resolution summary, prior endpoint and interior work, and bounded archive coverage.
 - [Entropy derivative](ENTROPY_DERIVATIVE.md): a self-contained necessary entropy inequality, including the derivative of the compressed entries and singular boundary cases. A strict entropy violation would refute the full conjecture on an interval of exponents around two. No such violation is supplied.
+- [Row and column entropy tradeoff](HOLEVO_TRADEOFF.md): an exact decomposition into two Holevo quantities. Neither term alone gives the required scalar entropy; the note states the additional comparison that remains unproved.
+- [Gram formulation](GRAM_FORMULATION.md): the equivalence of the two-row norm assertion and the prescribed-diagonal-block positive-matrix assertion when dimensions are universally quantified. This is a reduction, with no resolution or priority claim.
 - [Joint-measure route](HANNER_ROUTE.md): an exact pair of scalar examples with identical global row-pencil data and different compression targets. This identifies the additional compatibility with columns needed to use Heinävaara’s theorem.
 - [Independent review](COMBINATORICS_REVIEW.md): the derivative and boundary cases pass. An exact infinite family shows why a direct application of the recent Schur-weighted entropy theorem cannot provide the missing bound.
 - [Native archive scanner](scan_native_archives.py): an offline discovery tool with explicit size and encoding limits. It does not perform formal verification or prove absence of prior work.

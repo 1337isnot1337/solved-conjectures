@@ -85,9 +85,11 @@ y_i=\mathop{\mathrm{Tr}}W_i.
 
 The additional terms are the normalized entropies within `H_ii` and `W_i`, with their indicated scalar weights. The positive-semidefinite hypothesis on `H` is indispensable when fitting a given `TT*` to this representation. A scalar bound on the block Frobenius masses does not automatically provide such an `H`.
 
+Wu uses entropy in bits. Multiplication by `log(2)` converts the entire inequality to the natural-logarithm convention used here, with no change in its direction or hypotheses.
+
 The theorem is relevant prior work, but no general substitution proving (R2)'s required entropy inequality has been established. The following family shows that a **single direct application with the original two-row partition** can be too weak even when the conjectured entropy inequality is strictly true.
 
-I also read the primary [Tang–Zhu–Bai–Wang paper, arXiv:2609.28592v1](https://arxiv.org/html/2609.28592v1) and the complete preserved OpenAI `block.tex` proof. Their triangular/one-zero-block statement has the scalar binary-spectrum term corresponding to that zero pattern. It is a genuine prior special case; it does not state the arbitrary two-row, arbitrary-column inequality in the derivative note. This review did not execute or inspect Lean verification.
+I also read Theorem 4.2, equations (4.4)–(4.6), of the primary [Tang–Zhu–Bai–Wang paper, arXiv:2609.28592v1](https://arxiv.org/html/2609.28592v1), and the complete preserved OpenAI `block.tex` proof. The primary theorem allows arbitrary compatible rectangular blocks in the pattern `[[A,0],[B,D]]`, including zero weights. Its scalar entropy is exactly the entropy of the Gram of `[[sqrt(alpha),0],[sqrt(beta),sqrt(gamma)]]`. This is a genuine prior special case; it does not state the arbitrary two-row, arbitrary-column inequality in the derivative note. This review did not execute or inspect Lean verification.
 
 ## 6. A family obstructing the direct Schur representation
 
