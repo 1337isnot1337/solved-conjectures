@@ -879,3 +879,4 @@ import Conjectures.CKZPolynomial
 import Conjectures.CKZPell
 import Conjectures.CKZSoundness
 import Conjectures.CKZComposition
+import Conjectures.CKZLowSeries

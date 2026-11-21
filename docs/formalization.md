@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## CKZ low-record series, 21 November 2026
+
+Three direct Pell certificates prove the required low-record generating-function coefficient inequalities, with the length-one exception explicit. Their identification with actual permutation counts and the arbitrary-index tail remain. Strict compilation, axiom audit and isolated kernel replay passed.
+
 ## CKZ certificate soundness, 21 November 2026
 
 The CKZ checkpoint proves the verified finite polynomial certificates control their infinite Pell tails and give coefficientwise nonnegative Schröder substitutions for twelve tail-polynomial cases and four recurrence seeds. Arbitrary-index propagation and the actual permutation-class bridge remain open in this checkpoint. Strict compilation, a 213-theorem axiom audit and isolated kernel replay passed; the combined repository gate is pending.

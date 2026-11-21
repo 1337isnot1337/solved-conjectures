@@ -14,7 +14,7 @@ The proof establishes three new coefficient comparisons and uses the credited, p
 
 The complete written proof passed a separate internal mathematical audit. The [source audit](SOURCES.md) records both search engines, primary manuscripts, author records and public solution archives. No earlier resolution of Conjectures 1 or 3 was found in those sources. The publisher's complete typeset body and every citing paper were not exhaustively retrieved; the notes remain unrefereed and priority is subject to correction.
 
-**Lean status:** partial. Lean checks the Schröder-series equation, low-record reductions and uniform numerator bounds, and proves soundness of all 16 finite certificates, including their infinite Pell-series tails. It establishes coefficientwise nonnegativity after Schröder substitution for the first twelve tail polynomials and four recurrence seeds. The arbitrary-index propagation and actual permutation-class bridges remain. Strict standalone compilation, 213-theorem axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
+**Lean status:** partial. Lean checks the Schröder-series equation and proves all three low-record generating-function inequalities coefficientwise using direct Pell certificates. It also proves soundness of all 16 earlier certificates, including their infinite Pell-series tails, and establishes coefficientwise nonnegativity after Schröder substitution for the first twelve tail polynomials and four recurrence seeds. Arbitrary-index tail propagation and the actual permutation-class bridges remain. Strict standalone compilation, all-owned axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
 
 ## Reproduce
 

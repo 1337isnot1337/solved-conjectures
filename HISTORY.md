@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — CKZ low-record series inequalities
+
+Proved the three low-record generating-function coefficient inequalities with direct Pell certificates, including the exceptional length-one term in the first comparison. Strict compilation, all-owned axiom audit and isolated kernel replay passed. The actual permutation-count bridge and all-index tail remain.
+
 ## 2026-11-21 — CKZ certificate soundness
 
 Proved the finite certificates imply nonnegative infinite Pell series and, after Schröder substitution, nonnegative coefficients for twelve tail-polynomial cases and four recurrence seeds. Strict compilation, a 213-theorem axiom audit and isolated stock-kernel replay passed; arbitrary-index propagation, actual permutation-class connections and the combined repository gate remain.

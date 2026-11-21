@@ -9,6 +9,9 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `CKZLowSeries.low1_coeff,
+    `CKZLowSeries.low2_coeff,
+    `CKZLowSeries.low3_coeff,
     `CKZCertificates.certificate_sound,
     `CKZComposition.certified_composition_nonneg,
     `CKZComposition.G_prefix_nonneg,
