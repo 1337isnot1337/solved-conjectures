@@ -2,7 +2,7 @@
 
 Research checkpoint, 21 November 2026. Coordination: [issue 212](https://github.com/1337isnot1337/solved-conjectures/issues/212).
 
-**Status: unresolved in this work.** The current checkpoint contains a proposed partial theorem: for every fixed number of cells, the regular-simplex partition uniquely maximizes balanced Gaussian noise stability at every sufficiently small positive correlation, with a threshold independent of the ambient dimension. Three mathematical reviews found no gap in the written argument and its explicit first-moment dependency. The deeper current prior-work audit is still running, so no first-discovery claim is made. Larger positive correlations and the entire negative-correlation clause remain outside this theorem. No full-resolution count is added.
+**Status: unresolved in this work.** The current checkpoint contains a proposed partial theorem: for every fixed number of cells, the regular-simplex partition uniquely maximizes balanced Gaussian noise stability at every sufficiently small positive correlation, with a threshold independent of the ambient dimension. Three mathematical reviews found no gap in the written argument and its explicit first-moment dependency. The completed bounded prior-work audit found no earlier theorem with that exact scope in the inspected primary sources and matched archive bodies; it does not establish worldwide priority or external acceptance. Larger positive correlations and the entire negative-correlation clause remain outside this theorem. No full-resolution count is added.
 
 The directory also contains quantitative first-moment stability with a sharp exponent, the exact tail and noise comparisons used in the partial theorem, and a limit of an auxiliary-coordinate second-variation approach.
 
@@ -109,7 +109,7 @@ The constants are chosen in the order: moment coercivity, tail radius, then corr
 
 [The root review](SMALL_CORRELATION_ROOT_REVIEW.md), [the algebra review](NOISE_CORE_ALGEBRA_REVIEW.md), and [the combinatorics review](SMALL_CORRELATION_COMBINATORICS_REVIEW.md) check the complete proof. A [separate tail review](TAIL_CONTROL_COMBINATORICS_REVIEW.md) checks the cutoff argument in detail. Root authored the core coercivity and part of the potential argument; the algebra and combinatorics reviews independently check those portions.
 
-[LOW_CORRELATION_PRIOR_AUDIT.md](LOW_CORRELATION_PRIOR_AUDIT.md) records the current exact-scope comparison. The expanded six-archive native/PDF/compressed scan is in progress at this checkpoint. Its script is [scan_low_correlation_prior.py](scan_low_correlation_prior.py). The unrefereed partial theorem is published for inspection while that source pass finishes. It remains distinct from a full resolution of Standard Simplex.
+[LOW_CORRELATION_PRIOR_AUDIT.md](LOW_CORRELATION_PRIOR_AUDIT.md) records the completed bounded exact-scope comparison. The expanded six-archive pass covers 292,845 native UTF-8 bodies, 1,871 converted PDFs, and bounded compressed text, with an independent AIM/OpenAI supplement and a broader native-term residual. The [semantic comparison](LOW_CORRELATION_ARCHIVE_SCOPE.md), compact manifests, source hashes, and explicit decoding limits accompany the scripts. The unrefereed partial theorem remains distinct from a full resolution of Standard Simplex.
 
 ## Source and archive record
 

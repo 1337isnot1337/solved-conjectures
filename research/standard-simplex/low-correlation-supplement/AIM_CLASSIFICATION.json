@@ -1,0 +1,492 @@
+{
+  "repository": "MColbrook/AIM",
+  "commit": "b2ec0fac559f532fc0ed04fce81deea0ce07c68b",
+  "archive_sha256": "ce1e24640f6996977e868b03c865c565a077d919406a2b5561d2f3febb643f4d",
+  "scan_scope": "PDF and recursively decoded compressed bodies from the prior native scan non-UTF8 manifest, plus separate split-file pass; this file does not independently claim a full native-source scan.",
+  "records": 2173,
+  "pdf_records": 144,
+  "embedded_text_records": 2029,
+  "matched_records": 36,
+  "limitations": {
+    "total": 124,
+    "reasons": {
+      "nontext_unconverted": 124
+    },
+    "suffixes": {
+      ".png": 2,
+      ".npy": 122
+    }
+  },
+  "split_pass": {
+    "records": 0,
+    "matches": 0,
+    "limitations": 0
+  },
+  "result": "No earlier all-q low-positive-correlation theorem found in the inspected matched bodies. This is a bounded archive audit, not a universal priority conclusion.",
+  "classifications": [
+    {
+      "index": 0,
+      "path": "research/catalogue-backfill-2026-10-30/before/original_pages.zip!cut_problems/selection.csv",
+      "tags": [
+        "simplex",
+        "noise"
+      ],
+      "matched_body_file": "6cb99fe97b48ff17866b6fb378bc0592f9f64c1917712e1cf482f31f82f488a8.txt",
+      "matched_text_sha256": "0c3d69c3449ff0f2e07a69014960a701a2182d0e78582a24b21060656c7ae8e7",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 1,
+      "path": "research/catalogue-backfill-2026-10-30/before/original_pages.zip!data/stochastic3.json",
+      "tags": [
+        "simplex",
+        "noise"
+      ],
+      "matched_body_file": "e35532a41909c7ba85021562c82c4990bd9b23b34edaa4455238d5b41d0d9ef0.txt",
+      "matched_text_sha256": "02f719366071f6c1e01f3c20242da9b863be5d365ac2c8411615c960349e4da2",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 2,
+      "path": "research/catalogue-backfill-2026-10-30/before/original_pages.zip!FURTHER_problems/probability-statistics/lead-66091664200dfc8f.md",
+      "tags": [
+        "simplex",
+        "names"
+      ],
+      "matched_body_file": "c27620a458218e98fc458b9014a355d18bd08685a4c5f84a958d093a448e3d29.txt",
+      "matched_text_sha256": "d6f43bae8eddecd6c3ff6195046a916400b4eea5a8dd9e57a19f8942cb5a399a",
+      "classification": "different_geometric_problem",
+      "comparison": "The complete conjecture concerns symmetric Gaussian perimeter minimizers and cylinders/complements. It is not balanced multi-cell noise stability.",
+      "reading_scope": "Complete short problem statement read."
+    },
+    {
+      "index": 3,
+      "path": "research/catalogue-backfill-2026-10-30/before/original_pages.zip!FURTHER_problems/probability-statistics/lead-e672ccf566fc3b55.md",
+      "tags": [
+        "simplex",
+        "noise",
+        "identifiers",
+        "names"
+      ],
+      "matched_body_file": "5e3117debaa417642168ffecb0c15bca311c8f8757f6354a57e52fbec852a58f.txt",
+      "matched_text_sha256": "8597c9529a04ccf330edec817c5d7056472e196aab7786c78a8c5b3dedc77856",
+      "classification": "negative_correlation_problem",
+      "comparison": "The complete conjecture quantifies over negative correlations and allows unrestricted competitor cell masses. It explicitly separates the positive balanced AIM294 target and credits only a three-cell negative result.",
+      "reading_scope": "Complete short problem statement read."
+    },
+    {
+      "index": 4,
+      "path": "research/catalogue-backfill-2026-10-30/before/original_pages.zip!PROBLEM_SCORING/FURTHER.md",
+      "tags": [
+        "simplex"
+      ],
+      "matched_body_file": "b372348aa538158c0ae3dc776c7ceffff98e1d783b9682d6d473c2e3ad0b01f6.txt",
+      "matched_text_sha256": "7782d01b9a96b011aa9f021da2ca1d286e3bd456c3b48fa7928da34f6dbea06f",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 5,
+      "path": "research/catalogue-backfill-2026-10-30/before/original_pages.zip!PROBLEM_SCORING/scores.json",
+      "tags": [
+        "simplex",
+        "noise",
+        "identifiers",
+        "names",
+        "correlation_regime"
+      ],
+      "matched_body_file": "bf14aecca9e2e567a33c53f70048b2dd54841484c7b9fcfa27adf467c99c665f.txt",
+      "matched_text_sha256": "39fccd61d118be0c071de19830b308dceedb6acfffa666f69350afb79a42e1fb",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 6,
+      "path": "research/catalogue-backfill-2026-10-30/before/original_pages.zip!research/catalogue-backfill-2026-10-30/review_plan.json",
+      "tags": [
+        "simplex"
+      ],
+      "matched_body_file": "c73fa04b109d961067ec1f298d0ac248e50dcf3746a1ce73a7231266c616c6de.txt",
+      "matched_text_sha256": "ee4a8baa56ec66ec2d6fe3be565652a1e1ebf675cc4a45ce66457195b95795d7",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 7,
+      "path": "research/catalogue-backfill-2026-10-30/before/replacement-106.zip!catalogue.json",
+      "tags": [
+        "simplex"
+      ],
+      "matched_body_file": "f15b7ddc7fc3cf0892331ac038a3325847642f765837412ea4fb33e1e060858d.txt",
+      "matched_text_sha256": "eac973fbfc7de152fd89b737011a757fb81f5b92b023917f3b170f97310c4e34",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 8,
+      "path": "research/catalogue-backfill-2026-10-30/before/replacement-106.zip!cut_problems/selection.csv",
+      "tags": [
+        "simplex",
+        "noise"
+      ],
+      "matched_body_file": "9aa7b4fb4db8d6510486581449c6be326336d6f7a689df4ef297aea75b6b9995.txt",
+      "matched_text_sha256": "38ae552489821a26f7ba3a73457550f7b97f5e5037d5f1115af720395d89d4e4",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 9,
+      "path": "research/catalogue-backfill-2026-10-30/before/replacement-106.zip!PROBLEM_SCORING/FURTHER.md",
+      "tags": [
+        "simplex"
+      ],
+      "matched_body_file": "dfc6eabb4dc9ecb5e8ce04a7a1505c1bd46685bd24df927c4370a573dd8d7517.txt",
+      "matched_text_sha256": "1470b2459559c8ce9f6c1f7f7c039687af710fd4b616a2d7d2d365be9510f28d",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 10,
+      "path": "research/catalogue-backfill-2026-10-30/before/replacement-106.zip!PROBLEM_SCORING/scores.json",
+      "tags": [
+        "simplex",
+        "noise",
+        "identifiers",
+        "names",
+        "correlation_regime"
+      ],
+      "matched_body_file": "64335b2df52aac2fb6abd0e517e453e176e2c476451ee988159e6f563b6aae4f.txt",
+      "matched_text_sha256": "a63a0681b98059d9f5fdaa73efc4066948e4b97e0115389b3e2814a6b30eea60",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 11,
+      "path": "research/catalogue-backfill-2026-10-30/before/replacement-106.zip!research/catalogue-backfill-2026-10-30/checked_candidates.json",
+      "tags": [
+        "simplex",
+        "identifiers",
+        "names"
+      ],
+      "matched_body_file": "f41be30ee47505818ee76b3e812beb7405390bc5a13704f24229ff2cc02eef2b.txt",
+      "matched_text_sha256": "3b1a86ceeeb65e8000886c511840a8bfff8d21845b35235f236c768e86ec23e7",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 12,
+      "path": "research/catalogue-backfill-2026-10-30/before/replacement-106.zip!research/catalogue-backfill-2026-10-30/manifest.json",
+      "tags": [
+        "simplex",
+        "identifiers",
+        "names"
+      ],
+      "matched_body_file": "e74fd74e5de50bb50cb820d4cb394e39e20421a845c6e7b5644b091d24d45840.txt",
+      "matched_text_sha256": "ff3dead66a4aacd10cf425950600e965bf2386ce30d11b44c88161b7efd38587",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 13,
+      "path": "research/catalogue-backfill-2026-10-30/before/replacement-106.zip!research/catalogue-backfill-2026-10-30/online_searches.json",
+      "tags": [
+        "simplex",
+        "noise",
+        "plurality",
+        "identifiers",
+        "names"
+      ],
+      "matched_body_file": "7f13b4b00fc186a61d57594c4bbf895da4105047d2a7eef6c602c9017f6da01e.txt",
+      "matched_text_sha256": "9f18d73b15f86b702e6498ec5f9b98892f13fc4099c5e824bd68bcaf0592fb74",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 14,
+      "path": "research/catalogue-backfill-2026-10-30/before/replacement-106.zip!research/catalogue-backfill-2026-10-30/README.md",
+      "tags": [
+        "simplex"
+      ],
+      "matched_body_file": "25c80a51e6ce17f059b8b3e0ce89df4d342e7176fd7c5e5ca9d9436dcc32c179.txt",
+      "matched_text_sha256": "35b8876862ab1da4f180b4c3143619ef945034c9db8d08041bf44d7f361f1588",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 15,
+      "path": "research/catalogue-backfill-2026-10-30/before/replacement-106.zip!research/catalogue-backfill-2026-10-30/review_plan.json",
+      "tags": [
+        "simplex",
+        "identifiers",
+        "names"
+      ],
+      "matched_body_file": "a69d04222d01ec4b83d16f79018ca507adf127cfd891074f78be925fe38895b6.txt",
+      "matched_text_sha256": "dd4a938b282aadd230582eeeb41169e4b6c80832e1bb71093e7f6b908d58ce72",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 16,
+      "path": "research/further-integration-2026-10-30/original_problem_pages.zip!FURTHER_problems/geometry-topology/lead-3ad616ecb349a6b8.md",
+      "tags": [
+        "correlation_regime"
+      ],
+      "matched_body_file": "9973c61b374fe92ba1854110997e287784c5dcb53e6dbaa65b8fb568ec2d07cc.txt",
+      "matched_text_sha256": "b3b4dade15f1cdf0648c36dccb7d353983030dc73c1b517e240b3c4124d5371c",
+      "classification": "substring_false_positive",
+      "comparison": "The phrase near independence occurs inside linear independence; this is an irrationality question for hyperbolic three-manifold volumes.",
+      "reading_scope": "Complete short problem statement read; duplicate checked by matching content."
+    },
+    {
+      "index": 17,
+      "path": "research/further-integration-2026-10-30/original_problem_pages.zip!FURTHER_problems/probability-statistics/lead-dc277d0d2f6f2a7d.md",
+      "tags": [
+        "correlation_regime"
+      ],
+      "matched_body_file": "f93b7aa63711cb6b0809616e9c24600e1690e0bcd584daadc1d182907a9dd257.txt",
+      "matched_text_sha256": "bda65b027aad7af376b466902902df30c374682c5be68730826804379ded4e0f",
+      "classification": "different_probability_problem",
+      "comparison": "Propagation of chaos for interacting diffusions with transport assumptions on the initial distribution; small correlations are not Gaussian partition noise stability.",
+      "reading_scope": "Complete short problem statement read; duplicate checked by matching content."
+    },
+    {
+      "index": 18,
+      "path": "research/further-integration-2026-10-30/pre_migration.zip!catalogue.json",
+      "tags": [
+        "simplex"
+      ],
+      "matched_body_file": "b437b2bf6b9714df644de18b92262cd9261788bbf5c13f1d915281017fb59dfc.txt",
+      "matched_text_sha256": "d4c00dc454e5a6f525d617f0e97e96b15a7ddfa1ed61b4e5d06f05919f6781df",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 19,
+      "path": "research/further-integration-2026-10-30/pre_migration.zip!cut_problems/selection.csv",
+      "tags": [
+        "simplex",
+        "noise"
+      ],
+      "matched_body_file": "41ad1d3e24ce8f005c2c82ec22f43985ca9ae328d591069b79fb2c2291013ee7.txt",
+      "matched_text_sha256": "cf4e4b0de9d67f4fef596bd3012478dc7c10d1f5c8ab07f006dfbf6d9b75607e",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 20,
+      "path": "research/further-integration-2026-10-30/pre_migration.zip!data/probability-statistics.json",
+      "tags": [
+        "simplex",
+        "noise"
+      ],
+      "matched_body_file": "013c70d48d277a28a3d5765a611e298070cde265cb639ee1b848f432c8bba530.txt",
+      "matched_text_sha256": "cbc268b23e6b9fb758b3fff503d11d7d4e4ca1869077ee66c1c36ef635f9fe4f",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 21,
+      "path": "research/further-integration-2026-10-30/pre_migration.zip!data/stochastic3.json",
+      "tags": [
+        "simplex",
+        "noise"
+      ],
+      "matched_body_file": "b5b3eada5b4effcb0dabb3b694ac8117d136a210df47054b25f6f96748e5f7f9.txt",
+      "matched_text_sha256": "0cce109fdfa5850eab896030608f157db7d66601ad1a2096036d58713bab6104",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 22,
+      "path": "research/further-integration-2026-10-30/pre_migration.zip!FURTHER_problems/geometry-topology/lead-3ad616ecb349a6b8.md",
+      "tags": [
+        "correlation_regime"
+      ],
+      "matched_body_file": "0c3c3adf99098b1615bb14bd6f4da57830391b928f3619f1bb79e1d943256b9e.txt",
+      "matched_text_sha256": "b3b4dade15f1cdf0648c36dccb7d353983030dc73c1b517e240b3c4124d5371c",
+      "classification": "substring_false_positive",
+      "comparison": "The phrase near independence occurs inside linear independence; this is an irrationality question for hyperbolic three-manifold volumes.",
+      "reading_scope": "Complete short problem statement read; duplicate checked by matching content."
+    },
+    {
+      "index": 23,
+      "path": "research/further-integration-2026-10-30/pre_migration.zip!FURTHER_problems/probability-statistics/lead-dc277d0d2f6f2a7d.md",
+      "tags": [
+        "correlation_regime"
+      ],
+      "matched_body_file": "16308e278ada821fe2df0436400a3973e84640842b22b7eee3ad478010ff562d.txt",
+      "matched_text_sha256": "bda65b027aad7af376b466902902df30c374682c5be68730826804379ded4e0f",
+      "classification": "different_probability_problem",
+      "comparison": "Propagation of chaos for interacting diffusions with transport assumptions on the initial distribution; small correlations are not Gaussian partition noise stability.",
+      "reading_scope": "Complete short problem statement read; duplicate checked by matching content."
+    },
+    {
+      "index": 24,
+      "path": "research/further-integration-2026-10-30/pre_migration.zip!PROBLEM_SCORING/FURTHER.md",
+      "tags": [
+        "simplex"
+      ],
+      "matched_body_file": "50b00284c0e7a731866b2da7a9adff8172f46779164ce32b795f7d11df52f9f0.txt",
+      "matched_text_sha256": "97fc53c4517776c3422e852481a5ffedf225baa1c686e75e64a33d042873c0f2",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 25,
+      "path": "research/further-integration-2026-10-30/pre_migration.zip!PROBLEM_SCORING/scores.json",
+      "tags": [
+        "simplex",
+        "noise",
+        "identifiers",
+        "names",
+        "correlation_regime"
+      ],
+      "matched_body_file": "77058128053b202a1f49e025b031a430be1ca41a80f295aa14e78c5e07ccff77.txt",
+      "matched_text_sha256": "b2885ff13dacc5b4668b4458d3ebfcefc7bf16b448d64af1d0eb4776c456e37e",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 26,
+      "path": "research/further-integration-2026-10-30/pre_migration.zip!research/catalogue-backfill-2026-10-30/README.md",
+      "tags": [
+        "simplex"
+      ],
+      "matched_body_file": "b1af65cb3e491107cc3f2cb0f7b1ef032d043ea59420cca9d82230b4a8238b5d.txt",
+      "matched_text_sha256": "2d228de19f49a98baba990cd12d41f1039231449aa1ac7b6c3dbcb614a593a77",
+      "classification": "catalogue_or_search_record",
+      "comparison": "Archived AIM294 states the balanced all-q positive-correlation problem and records it open; AIM637 is the different negative-correlation problem. Matched records cite three-cell and conditional hyperstable results. None states an unconditional all-q low-positive-correlation theorem.",
+      "reading_scope": "Matched entries and surrounding contexts read; relevant AIM294/AIM637 score/status records read in full; the search log was read for its simplex-related results, not unrelated search batches."
+    },
+    {
+      "index": 27,
+      "path": "research/lean/114/verification/linux-2026-10-05-expanded-25/source.tar.gz!gzip!source/FORMALIZATION_ROADMAP.md",
+      "tags": [
+        "correlation_regime"
+      ],
+      "matched_body_file": "49b0ab0ececbbab1eddade92b23516a9e18bc8922087d0893c809eb44e16ae80.txt",
+      "matched_text_sha256": "84e1435ddeb11400d400ffb62c63bccad5e5577042d3e3f8f02ad98365e201d8",
+      "classification": "substring_false_positive",
+      "comparison": "The phrase near independence occurs inside linear independence. The matched prose concerns rational independence of prime square roots and graph edge lengths.",
+      "reading_scope": "Matched mathematical-scope passages read only; no formalization was run or verified."
+    },
+    {
+      "index": 28,
+      "path": "research/lean/114/verification/linux-2026-10-05-expanded-25/source.tar.gz!gzip!source/reviews/mixture-proof-referee-2.md",
+      "tags": [
+        "first_moment"
+      ],
+      "matched_body_file": "375d07e8d12fe28f28ad03cd0ec028baffe4ca8e25f798281b645337edc5ec16.txt",
+      "matched_text_sha256": "58ac7ad8f0554e2110544999b112b5a56ad6e1f79f3980fa192c9aef38e98a58",
+      "classification": "different_gaussian_moment_problem",
+      "comparison": "Gaussian first moment refers to the scalar mean of a standardized variance mixture in a quantum-graph nodal-surplus application. Its fourth-moment identity is 3 E(V^2)/(E V)^2, not the moment objective of a balanced Gaussian partition.",
+      "reading_scope": "Substantive variance-mixture mathematical statement and moment calculation read; duplicate prose checked. No formalization was run or verified."
+    },
+    {
+      "index": 29,
+      "path": "research/lean/114/verification/linux-2026-10-05-final-31/source.tar.gz!gzip!source/FORMALIZATION_ROADMAP.md",
+      "tags": [
+        "correlation_regime"
+      ],
+      "matched_body_file": "a2590fe703c344ee5baa4b34fcd65e0e4bec782c76189b4d1a19d53d03f24694.txt",
+      "matched_text_sha256": "62f83b00bb32e391f84edeed4c49defa314fbd57f3f64d06ca72111a2720c56f",
+      "classification": "substring_false_positive",
+      "comparison": "The phrase near independence occurs inside linear independence. The matched prose concerns rational independence of prime square roots and graph edge lengths.",
+      "reading_scope": "Matched mathematical-scope passages read only; no formalization was run or verified."
+    },
+    {
+      "index": 30,
+      "path": "research/lean/114/verification/linux-2026-10-05-final-31/source.tar.gz!gzip!source/LENGTH_TARGETS.md",
+      "tags": [
+        "correlation_regime"
+      ],
+      "matched_body_file": "d23b3128a6e7c4af1cc82aaa29726f8f51335517f5fb0ac801eb04cf011815be.txt",
+      "matched_text_sha256": "765439e1e49999c292a0c30a37ee1a1925e8b808770dcde9f30000bd835ee3dd",
+      "classification": "substring_false_positive",
+      "comparison": "The phrase near independence occurs inside linear independence. The matched prose concerns rational independence of prime square roots and graph edge lengths.",
+      "reading_scope": "Matched mathematical-scope passages read only; no formalization was run or verified."
+    },
+    {
+      "index": 31,
+      "path": "research/lean/114/verification/linux-2026-10-05-final-31/source.tar.gz!gzip!source/reviews/length-statement-referee-2.md",
+      "tags": [
+        "correlation_regime"
+      ],
+      "matched_body_file": "e023ea580d0523cffa93414b5164f56c4138dd1d5ce9f76b4e865fb5ccc69014.txt",
+      "matched_text_sha256": "42683d8d155fcf925334f454e65284cf9bf3f4c44c7c562f98ff7df4710a55ec",
+      "classification": "substring_false_positive",
+      "comparison": "The phrase near independence occurs inside linear independence. The matched prose concerns rational independence of prime square roots and graph edge lengths.",
+      "reading_scope": "Matched mathematical-scope passages read only; no formalization was run or verified."
+    },
+    {
+      "index": 32,
+      "path": "research/lean/114/verification/linux-2026-10-05-final-31/source.tar.gz!gzip!source/reviews/mixture-proof-referee-2.md",
+      "tags": [
+        "first_moment"
+      ],
+      "matched_body_file": "3dd67666aaca065c4e91cc153d9f77bf728484cadc776a5dd3e01c79ce666fc6.txt",
+      "matched_text_sha256": "58ac7ad8f0554e2110544999b112b5a56ad6e1f79f3980fa192c9aef38e98a58",
+      "classification": "different_gaussian_moment_problem",
+      "comparison": "Gaussian first moment refers to the scalar mean of a standardized variance mixture in a quantum-graph nodal-surplus application. Its fourth-moment identity is 3 E(V^2)/(E V)^2, not the moment objective of a balanced Gaussian partition.",
+      "reading_scope": "Substantive variance-mixture mathematical statement and moment calculation read; duplicate prose checked. No formalization was run or verified."
+    },
+    {
+      "index": 33,
+      "path": "research/lean/114/verification/linux-2026-10-05-final-31/source.tar.gz!gzip!source/verification/linux-2026-10-05-expanded-25/source.tar.gz!gzip!source/FORMALIZATION_ROADMAP.md",
+      "tags": [
+        "correlation_regime"
+      ],
+      "matched_body_file": "9a2f758f5b3e6ea3bedfc655f5155cd4db0668fbab67b248a71f23702b2ca642.txt",
+      "matched_text_sha256": "84e1435ddeb11400d400ffb62c63bccad5e5577042d3e3f8f02ad98365e201d8",
+      "classification": "substring_false_positive",
+      "comparison": "The phrase near independence occurs inside linear independence. The matched prose concerns rational independence of prime square roots and graph edge lengths.",
+      "reading_scope": "Matched mathematical-scope passages read only; no formalization was run or verified."
+    },
+    {
+      "index": 34,
+      "path": "research/lean/114/verification/linux-2026-10-05-final-31/source.tar.gz!gzip!source/verification/linux-2026-10-05-expanded-25/source.tar.gz!gzip!source/reviews/mixture-proof-referee-2.md",
+      "tags": [
+        "first_moment"
+      ],
+      "matched_body_file": "0ee4f4d4ff2f1414cac877b8b0099eef30b470e0fa9b2342990844e6b0ab1114.txt",
+      "matched_text_sha256": "58ac7ad8f0554e2110544999b112b5a56ad6e1f79f3980fa192c9aef38e98a58",
+      "classification": "different_gaussian_moment_problem",
+      "comparison": "Gaussian first moment refers to the scalar mean of a standardized variance mixture in a quantum-graph nodal-surplus application. Its fourth-moment identity is 3 E(V^2)/(E V)^2, not the moment objective of a balanced Gaussian partition.",
+      "reading_scope": "Substantive variance-mixture mathematical statement and moment calculation read; duplicate prose checked. No formalization was run or verified."
+    },
+    {
+      "index": 35,
+      "path": "research/solutions/kaiwen-jin-562-tensor-singular-values/paper/main.pdf",
+      "tags": [
+        "correlation_regime"
+      ],
+      "matched_body_file": "fc2c1fc8668abbf40cc31958d49acea70b86a08f1a655fce57dac73e70b3053e.txt",
+      "matched_text_sha256": "9f383c423e571c2aeaa72d870e19f3459ae4565bf9cdf31cea47d7b8864f389d",
+      "classification": "different_random_matrix_theorem",
+      "comparison": "The PDF proves asymptotics for the least singular value of matrices with independent random tensor columns, using Gaussian quadratic Gram moments. It does not assert a partition noise-stability theorem.",
+      "reading_scope": "PDF introduction, Theorem 1 and surrounding proof setup read; not a line-by-line audit of the entire unrelated proof."
+    }
+  ]
+}

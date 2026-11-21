@@ -2,6 +2,8 @@
 
 Checked 21 November 2026. The estimate in [FIRST_MOMENT_STABILITY.md](FIRST_MOMENT_STABILITY.md) is a proposed quantitative deduction from an explicitly credited existing extremum. The mathematical reviews found no gap in the deduction. This note does not certify first discovery, and the Standard Simplex conjecture remains unresolved here.
 
+Subsequent checkpoint: the separate [low-correlation proof](SMALL_CORRELATION.md) closes the additional comparison estimates described below on a positive interval depending only on the cell count. Its [completed source audit](LOW_CORRELATION_PRIOR_AUDIT.md) also supplies the later six-archive PDF/compressed and broader native-text coverage. The present note preserves the earlier exact first-moment comparisons; neither checkpoint claims worldwide priority.
+
 ## Exact quantitative claim being screened
 
 For every fixed cell count $`q\ge3`$, a constant depending only on $`q`$ bounds the Gaussian symmetric-difference distance of an arbitrary balanced partition from some regular-simplex partition by the square root of its first-moment energy deficit. The bound is uniform in ambient dimension $`d\ge q-1`$. The exponent is sharp. The corresponding product $`L^2`$ exponent is one quarter.
@@ -27,7 +29,7 @@ These comparisons are of the actual mathematical statements and relevant argumen
 
 [Euclidean Partitions Optimizing Noise Stability](https://arxiv.org/pdf/1211.7138v2), Definition 2.3, Lemma 2.8 and Section 8, were read in the primary PDF. Lemma 2.8 is an unrestricted three-cell estimate with product $`L^2`$ exponent one eighth. Section 8 identifies a balanced higher-cell stability estimate as a missing ingredient. The present deduction is not a relabelling of that three-cell theorem.
 
-The extension to finite positive correlation cannot be read off from this comparison. The old proof maximizes a correlation derivative over unrestricted three-cell partitions. The all-cell balanced problem has volume multipliers, and the higher-Hermite remainder and linear noise-potential difference need separate control. The proof note states these remaining gates.
+The extension to finite positive correlation cannot be read off from this comparison alone. The old proof maximizes a correlation derivative over unrestricted three-cell partitions. The all-cell balanced problem has volume multipliers, and the higher-Hermite remainder and linear noise-potential difference need separate control. Those additional estimates are now given in the later [small-correlation assembly](SMALL_CORRELATION.md), not inferred from the first-moment stability lemma by itself.
 
 The PDF used has 540,040 bytes and SHA-256 `5e5fe4c3cca5db6c46293bebf70e27e4958cff853ff6c4390e7892848424fcf3`.
 
@@ -48,4 +50,4 @@ Both web engines were queried using Gaussian first-moment stability, balanced Ga
 
 An exact global GitHub issue query for `gaussian-balanced-simplex-all-k` returned zero matches. A repository-restricted Trure query returned twelve unrelated or only broadly Gaussian topics, not an exact stability claim. A broader `first-moment`/`balanced` query returned hundreds of mostly irrelevant matches; only its first page was inspected, so it supplies no absence evidence. Several global Gaussian/simplex/stability issue queries failed with `Transport closed`. Those failures are not negative search results.
 
-The entire PDF and compressed-source supplements of the pinned archives have not yet been rescanned for this quantitative target. Differently named or unindexed equivalent results may remain. Accordingly the checkpoint uses the wording **proposed quantitative deduction**, credits the existing exact extremum and deficit identity, and makes no worldwide-priority claim.
+The later [expanded audit](LOW_CORRELATION_PRIOR_AUDIT.md) rescans the pinned archives' native, PDF, and bounded compressed text with first-moment stability among its explicit terms and reads the relevant neighbouring statements. Its remaining binary, size, naming, and indexing limits are recorded there. Differently named or unindexed equivalent results may remain. Accordingly this checkpoint uses the wording **proposed quantitative deduction**, credits the existing exact extremum and deficit identity, and makes no worldwide-priority claim.
