@@ -147,3 +147,14 @@ The [two-sparse Gyires review](sign-matrices/gyires_sparse_review.md) checks the
 The [barycenter-stationarity audit](combinatorial/barycentric_stationarity_audit.md) reconstructs the Fischer–Hwang 1996 cyclic-block obstruction and records the exact covariance Hessian formula. Stationarity is insufficient; adding local minimality still includes the unresolved C44 global problem. This is a prior-art exclusion, not a new P15 resolution.
 
 No new full conjecture resolution is claimed in this checkpoint.
+
+
+## Whole-matching replacement and occupation-law residuals
+
+The [whole-matching replacement note](combinatorial/matching_replacement_research.md) records a different C24 strategy from local switches: remove one supported permutation and add another. It proves the exact collision change, the uniform-permutation average and the weighted triple-minor formula. The required simultaneous control of permanent and collisions is unproved; a weaker lexicographic theorem would also suffice. Bounded diagnostics are documented as diagnostics and do not establish any order case.
+
+The [multinomial reformulation](sign-matrices/gyires_multinomial_reduction.md) identifies strong Gyires with an exact density inequality: the L2 norm of the occupation law relative to the uniform multinomial law must not exceed its density at the all-ones occupation. The central-density maximum and ordinary relative log-concavity shortcuts are false. No density inequality is proved.
+
+For the original weak Gyires inequality, the [symmetrized-row-polynomial note](inequalities/gyires_symmetrized_polynomial.md) gives an exact central-coefficient/Fischer-norm equivalence. It then supplies an explicit doubly stochastic witness showing that the row polynomial plus the column polynomial is neither stable nor Lorentzian; the obstruction persists under a sufficiently small positive uniform perturbation. The witness satisfies Gyires strictly. The [exact checker](inequalities/gyires_symmetrized_polynomial.py) passed, and the inequalities worker independently checked the obstruction.
+
+These files preserve the remaining proof obligations and excluded methods. They add no full conjecture resolution.
