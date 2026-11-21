@@ -20,7 +20,9 @@ P_{100},L_{011},P_{111},L_{110},P_{110},L_{001}.
 
 Every listed pairing is zero, and these three paths have disjoint edge sets. Edge transitivity gives three edge-disjoint paths between the endpoints of every edge. A nonempty cut of size at most two would separate the endpoints of one of its edges and contradict those three paths. Connectedness follows directly because two distinct vectors lie in a common two-dimensional kernel and every covector has vector neighbors. Hence no such cut exists.
 
-Form `G` by doubling every edge of `H`. Each parallel class in `G` has exactly two elements. There are no series pairs: every cut in `G` has twice the size of the corresponding cut in `H`, so every nonempty cut has at least six edges. In particular no three-edge bond contains a parallel pair. Deleting a complete parallel pair leaves a bridgeless graph, because deleting one edge from the three-edge-connected graph `H` leaves a two-edge-connected graph and the other edges are still doubled.
+The graph is also two-vertex-connected. If a vertex were a cut vertex, each component after its removal would have at least three edges to that vertex by three-edge-connectivity. Two such components would require at least six incident edges, contradicting cubicity. Thus its cycle matroid is connected.
+
+Form `G` by doubling every edge of `H`. Its cycle matroid remains connected, and each parallel class in `G` has exactly two elements. There are no series pairs: every cut in `G` has twice the size of the corresponding cut in `H`, so every nonempty cut has at least six edges. In particular no three-edge bond contains a parallel pair. Deleting a complete parallel pair leaves a bridgeless graph, because deleting one edge from the three-edge-connected graph `H` leaves a two-edge-connected graph and the other edges are still doubled.
 
 ## Exact tree marginals
 

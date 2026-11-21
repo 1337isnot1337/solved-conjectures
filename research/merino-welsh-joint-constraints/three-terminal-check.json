@@ -1,0 +1,47 @@
+{
+  "scope": "abstract boundary-data relaxation, not a graph counterexample",
+  "normalized_data": {
+    "r": [
+      "11/8",
+      "11/8",
+      "11/8"
+    ],
+    "d": "363/256",
+    "a": [
+      "99/100",
+      "99/100",
+      "99/100"
+    ],
+    "b": "49/50",
+    "c": [
+      "101/100",
+      "21/10",
+      "21/10",
+      "21/10",
+      "27/10"
+    ]
+  },
+  "exact_checks_passed": 132,
+  "smaller_star_checks": 52,
+  "smaller_triangle_checks": 56,
+  "least_smaller_star_margin": "1/25",
+  "least_smaller_star_q": [
+    0,
+    0,
+    2
+  ],
+  "least_smaller_triangle_margin": "1/100",
+  "least_smaller_triangle_q": [
+    0,
+    0,
+    0
+  ],
+  "doubled_star": {
+    "A_over_A0": "159/20",
+    "A0_C_over_t0_squared": "3442/25",
+    "t_over_t0": "1083/32",
+    "normalized_MW_margin": "-6507957/128000",
+    "pair_tree_inclusion": "41/57"
+  },
+  "proof_of_Merino_Welsh_claimed": false
+}
