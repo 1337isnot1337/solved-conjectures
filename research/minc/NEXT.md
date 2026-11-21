@@ -185,3 +185,26 @@ cutoff need not be uniform in the seed. Root checked the exact operator,
 nearest-pole asymptotic, and determinant normalization and ran the symbolic
 checker. Adaptive constructions remain unexcluded. These deductions add
 zero full eligible Minc resolutions.
+
+## 20 November 2026: legal wreath transfer and its remaining obstruction
+
+The [wreath-transfer note](continuation-2026-11-20/inequalities/wreath_power_trace_obstruction.md)
+now realizes Fourier-block power traces using an actual subgroup and retains
+the character-degree factor. The self-contained classical apolar-norm
+argument proves the factorial denominator bound, excluding every
+identical-copy wreath transfer of a base normalized character already
+bounded by the permanent. For a general PSD block metric, the ratio is
+bounded by kappa_A^m times that metric's self-Chollet ratio. All four exact
+core factors satisfy kappa_A<1. Thus a counterexample by this route would
+already require a self-Chollet counterexample in the metric. This is a
+conditional reduction, not a proof of Chollet or unrestricted dominance.
+
+The [independent review](continuation-2026-11-20/reviews/wreath_power_trace_review.md)
+checks the group convention, character degree, Fock normalization, both
+Fischer bounds, zero cases, and exact factors. Root checked the same proof,
+read the primary norm source, and reran the rational checker. An
+[additional source audit](continuation-2026-11-20/reviews/schubr_rank_four_source_audit.md)
+records a prior rank-four claim whose continuation was checked but whose
+singular-five certificate remains uninspected. No novelty or full-conjecture
+credit is assigned to that claim. Full eligible resolutions from this
+continuation remain zero; the requested ten are not achieved.

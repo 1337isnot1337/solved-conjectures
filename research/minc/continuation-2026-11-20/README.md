@@ -117,6 +117,25 @@ of the determinant. Adaptive directions and other constructions remain
 outside this exclusion. These all-order method obstructions do not resolve
 the original named conjectures.
 
+The [wreath-product transfer note](inequalities/wreath_power_trace_obstruction.md)
+and [independent review](reviews/wreath_power_trace_review.md) derive a legal
+power-trace construction with its full character-degree factor. The
+identical-copy construction cannot amplify a base character already bounded
+by the permanent: the classical apolar product inequality gives the needed
+factorial lower bound for the denominator at every copy count. For arbitrary
+PSD block metrics, a quantitative bound reduces any violation from the four
+checked cores to a self-Chollet violation in the block metric itself. The
+[exact arithmetic checker](reviews/wreath_core_factor_checks.py) verifies
+the four strict transfer factors. No unrestricted dominance or Chollet
+inequality is proved.
+
+The [additional rank-four source audit](reviews/schubr_rank_four_source_audit.md)
+records Schubr's prior all-order rank-four claim. The accessible continuation
+argument was checked conditional on a singular-order-five certificate that
+could not be fully inspected. The note does not accept that unverified
+dependency as a proved theorem. This does not affect the earlier residual
+rank range or supply a result of this continuation.
+
 The previous campaign's general P18 approximation theorem, Pula-Song-Wanless threshold, and Malek endpoint theorem retain the different scopes in [the existing continuation record](../NEXT.md). They are not new results of this continuation and are not counted here as three full numbered entries.
 
 ## Coordination boundaries
