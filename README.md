@@ -12,6 +12,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Verification |
 | :--- | :---: |
+| [Gröchenig's problem](results/grochenig-zero-density/) | ⬜ |
 | [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | ⬜ |
 | [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | ⬜ |
 | [Novelli–Thibon's conjecture](results/novelli-thibon/) | ⬜ |

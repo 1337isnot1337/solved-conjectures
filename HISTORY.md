@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-21 — Gröchenig's problem
+
+Added a complete proposed counterexample to the upper Beurling-density comparison in Problem 4.12. Finite Gaussian blocks with alternating coefficient signs place zeros twice as densely as their coefficient support; recursive separation and a summable tail budget combine them into one nonzero entire function with absolutely summable coefficients. The coefficient sign-change upper density is exactly one half, while the real-zero upper density is at least one. The separate lower-density assertion remains undecided here.
+
+Two independent internal mathematical reviews and 784 exact algebra and error-budget checks passed. The prior-art audit includes the original problem, related sampling and sign-retrieval papers, recent November 2026 literature, public solution archives, and repository issues 80 and 121. No earlier resolution of the exact upper comparison was located within that documented audit. The issue-156 campaign tally is five proposed resolutions; all remain unrefereed. No Lean work was performed.
+
+
+
 ## 2026-11-21 — López Pouso–Segura's node conjecture
 
 Added a complete proposed disproof of the published strict node and partial-moment upper inequalities, Conjectures 3 and 7. The exact two-point Gauss–Legendre rule supplies one common counterexample. A controlled expansion from the Legendre equation proves a positive fourth-order correction at the smallest positive node for every sufficiently large even degree, so an eventual interpretation of the exact node bound also fails.

@@ -22,6 +22,14 @@ The [Simon stable-infimum proof](../results/simon-stable-infimum/PROOF.md) is al
 
 ## Computational checks
 
+The [Gröchenig checker](../results/grochenig-zero-density/verify.py) runs 784 exact standard-library checks of finite Gaussian-block identities, signs, normalization, geometric error budgets, and interval counts. The [written proof](../results/grochenig-zero-density/PROOF.md) constructs the infinite counterexample and proves convergence and both upper-density bounds. The checks diagnose algebra and transcription errors; no finite screen establishes the infinite assertion.
+
+```bash
+python3 results/grochenig-zero-density/verify.py
+```
+
+
+
 The [López Pouso–Segura node disproof](../results/lopez-pouso-segura-quadrature/PROOF.md) has an exact rational comparison at the two-point Gauss–Legendre rule and an all-large-even-degree argument from the Legendre differential equation. The [independent audit](../results/lopez-pouso-segura-quadrature/AUDIT.md) reconstructs the perturbation coefficients, the central normalization, the Gaussian weight conversion and the strictly positive fourth-order term, with analytic remainder justification. Symbolic consistency checks supplement the written proof; no finite root screen or Lean formalization is used.
 
 The [Vishnyakova checker](../results/vishnyakova-root-radius/verify.py) uses SymPy for 73 exact algebraic checks of the generating recurrence, reflection, finite Vandermonde identity, tridiagonal characteristic polynomials, matrix quadratic estimate, reciprocal-segment crossing, and sharpness witness. The [written proof](../results/vishnyakova-root-radius/PROOF.md) covers every degree, every positive weight, and arbitrary independent parameters. The finite checks diagnose algebra and transcription errors; they are not the unrestricted proof.

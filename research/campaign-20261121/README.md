@@ -21,10 +21,11 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 ## Resolution count
 
-Complete proposed resolutions with separate internal review and a documented current status audit: **4** at this checkpoint. All remain unrefereed.
+Complete proposed resolutions with separate internal review and a documented current status audit: **5** at this checkpoint. All remain unrefereed.
 
 | Conjecture | Result | Evidence |
 | --- | --- | --- |
+| Gröchenig's problem | Disproved the full universal upper-density comparison by one infinite Gaussian shift sum; the separate lower comparison is not counted or resolved | [Package](../../results/grochenig-zero-density/) · [Issue 191](https://github.com/1337isnot1337/solved-conjectures/issues/191) |
 | Vishnyakova's conjecture | Proved the full outer-root-radius conjecture for every degree and positive weight, with a stronger disk bound; one result | [Package](../../results/vishnyakova-root-radius/) · [Issue 182](https://github.com/1337isnot1337/solved-conjectures/issues/182) |
 | López Pouso–Segura's conjectures | Proved the complete sign, strict monotonicity and exact limit assertions for the three linked Bessel-weight sequences; one result | [Package](../../results/lopez-pouso-segura-bessel/) · [Issue 177](https://github.com/1337isnot1337/solved-conjectures/issues/177) |
 | Fang–Zhang–Zhao's infinite-log-convexity conjecture | Disproved for every Hoggatt parameter at least four; one resolution of the full universal statement | [Package](../../results/fang-zhang-zhao/) · [Issue 160](https://github.com/1337isnot1337/solved-conjectures/issues/160) |

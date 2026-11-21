@@ -16,6 +16,12 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 - **Erdős–Gyárfás (partial).** Every abelian cover of $K_4$ with one edge subdivided has a cycle of length 4, 8, 16 or 32. A 19-sheeted cyclic example attains the upper bound. The universal voltage-cover theorem, literal 95-vertex sharpness example, and normalization of all seven voltages are Lean-verified. [Lean scope](docs/lean-status.md#complete-sharp-95-vertex-example-and-arbitrary-voltage-normalization). [Proof](results/erdos-gyarfas-abelian-covers/PROOF.md) · [Replay](results/erdos-gyarfas-abelian-covers/)
 - **Hadamard existence conjecture, order 2396 (open).** The signed automorphism group of any candidate matrix has order coprime to 479. The fixed-border common multiplier group is cyclic of order dividing four, with at least 151 sign orbits. Lean verifies these statements, both norm-obstruction proofs, the complete conditional [fixed-border construction](results/hadamard-2396/BORDER.md) from its original four sign rows, all fourteen size-149 baseline patterns, and the length-598 order-eleven obstruction. Lean also constructs the actual Hadamard matrix from any Legendre pair and proves the invariant quotient transport from the original centered rows. The order and orbit theorems for odd automorphism subgroups on groups of order nine are also checked. For length-1197 Legendre pairs, Lean proves that the common-multiplier order divides 27; the stated sharper bound of nine and the exhaustive quotient/no-lift certificates remain pending. No order-2396 matrix existence is claimed. [Checked scope and receipts](docs/lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns) · [Automorphism proof](results/hadamard-2396/AUTOMORPHISMS.md) · [Sequence proof](results/hadamard-2396/PROOF.md) · [Reproduce](results/hadamard-2396/).
 
+## Zeros of Gaussian shift sums
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Gröchenig's problem](results/grochenig-zero-density/) | Complete proposed disproof of the universal upper-density comparison in Problem 4.12. One nonzero Gaussian shift sum with absolutely summable real coefficients has coefficient sign-change upper density one half and zero-set upper density at least one. An infinite block construction preserves sign witnesses at arbitrarily large scales. The separate lower-density assertion remains undecided here. | Not formalized | [Proof](results/grochenig-zero-density/PROOF.md) · [Source audit](results/grochenig-zero-density/SOURCES.md) · [Root review](results/grochenig-zero-density/ROOT_REVIEW.md) · [Algebra review](results/grochenig-zero-density/ALGEBRA_REVIEW.md) · [Checks](results/grochenig-zero-density/verify.py) · [Issue 191](https://github.com/1337isnot1337/solved-conjectures/issues/191) |
+
 ## Zeros of polynomial transforms
 
 | Problem | Result | Formalization | Evidence |
@@ -168,6 +174,8 @@ The Li example is neither a spider nor a caterpillar and refutes the **non-spide
 These are mathematical claims with explicit proofs and computer checks, **not peer-reviewed publications**. A literature search cannot establish that a counterexample or stronger theorem is the first discovery. Please cite the primary publications when discussing the original conjectures.
 
 ## Primary sources
+
+- Karlheinz Gröchenig, *Infinite totally positive matrices: some open problems*, Acta Scientiarum Mathematicarum (2026), [DOI 10.1007/s44146-026-00264-3](https://doi.org/10.1007/s44146-026-00264-3), Problem 4.12. The upper-density assertion is refuted; the separate lower-density assertion is not resolved here.
 
 - Anna Vishnyakova, *Polynomials interpolated totally positive sequences*, [arXiv:2607.06207v1](https://arxiv.org/abs/2607.06207), Open Problem 6.2, and *Polynomially Deformed Normalized Pochhammer Sequences Having Generating Functions With Only Real Non-positive Zeros*, [arXiv:2608.03723v1](https://arxiv.org/abs/2608.03723), Open Problem 7.2.
 - Jean-Christophe Novelli and Jean-Yves Thibon, *Noncommutative chromatic quasi-symmetric functions, Macdonald polynomials, and the Yang–Baxter equation*, JCTA 220 (2026), 106130, [arXiv:2502.09072v2](https://arxiv.org/html/2502.09072v2), Conjecture 5.7 and the following hook-coefficient assertion.
