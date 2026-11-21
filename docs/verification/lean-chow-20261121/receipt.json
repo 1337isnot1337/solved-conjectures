@@ -1,0 +1,556 @@
+{
+  "status": "passed",
+  "base_commit": "b1684d3a8061de346fc3a05fc252ecfaa15da919",
+  "completed_utc": "2026-11-21T17:43:17.310182+00:00",
+  "roots": [
+    "Conjectures.Chow"
+  ],
+  "imported_project_modules": [
+    "Conjectures.ChowRefinement",
+    "Conjectures.ChowCone",
+    "Conjectures.ChowBase",
+    "Conjectures.ChowRowProperties",
+    "Conjectures.ChowRootSigns",
+    "Conjectures.ChowInitial",
+    "Conjectures.ChowStrictInterlacing",
+    "Conjectures.ChowSignedPermutationsBasic",
+    "Conjectures.ChowSignedPermutationsParity",
+    "Conjectures.ChowSignedPermutations",
+    "Conjectures.Chow"
+  ],
+  "owned_modules": [
+    "Conjectures.ChowRefinement",
+    "Conjectures.ChowCone",
+    "Conjectures.ChowBase",
+    "Conjectures.ChowRowProperties",
+    "Conjectures.ChowRootSigns",
+    "Conjectures.ChowInitial",
+    "Conjectures.ChowStrictInterlacing",
+    "Conjectures.ChowSignedPermutationsBasic",
+    "Conjectures.ChowSignedPermutationsParity",
+    "Conjectures.ChowSignedPermutations",
+    "Conjectures.Chow"
+  ],
+  "required_theorems": [
+    "Chow.cutoff_monotone",
+    "Chow.cutoff_le",
+    "Chow.cutoff_surjective",
+    "Chow.nextRow_first",
+    "Chow.refinedRow_first",
+    "Chow.cone_step_first_identity",
+    "Chow.cone_step_second_identity",
+    "Chow.cone_step",
+    "Chow.orderedCone_cutValue",
+    "Chow.refinedRow_two",
+    "Chow.baseValue4_orderedCone",
+    "Chow.refinedRow_orderedCone",
+    "Chow.refinedRow_coeff_nonneg",
+    "Chow.totalRow_natDegree",
+    "Chow.totalRow_leadingCoeff_pos",
+    "Chow.totalRow_eval_zero_pos",
+    "Chow.refinedRow_no_common_zero",
+    "Chow.cone_root_sign",
+    "Chow.refinedRow_sign_at_total_root",
+    "Chow.rankThreeRoots_strictMono",
+    "Chow.rankThreeRoots_neg",
+    "Chow.totalRow_zero_explicit",
+    "Chow.totalRow_one_explicit",
+    "Chow.rankThreeRoots_product",
+    "Chow.totalRow_one_roots",
+    "Chow.totalRow_zero_roots",
+    "Chow.initial_weak_interlacing",
+    "Chow.derivative_eval_ordered_product",
+    "Chow.derivative_ne_zero_of_ordered_product",
+    "Chow.strict_interlacing_extension",
+    "Chow.entry_natAbs",
+    "Chow.entry_natAbs_injective",
+    "Chow.negativeCount_eq_window",
+    "Chow.letterValue_lift_lt_iff",
+    "Chow.letterValue_lift_sum_neg_iff",
+    "Chow.appendSigned_bijective",
+    "Chow.flipFirst_involutive",
+    "Chow.allSignedEulerian_eq_two_typeDEulerian",
+    "Chow.desD_appendSigned",
+    "Chow.literalRefinedRow_succ",
+    "Chow.literalRefinedRow_zero",
+    "Chow.literalRefinedRow_eq_refinedRow",
+    "Chow.totalRow_eq_two_typeDEulerian",
+    "Chow.totalRow_strict_roots",
+    "Chow.totalRow_interlacing",
+    "Chow.totalRow_strict_interlacing",
+    "Chow.typeD_consecutive_interlacing",
+    "Chow.typeD_consecutive_strict_interlacing"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/ChowRefinement.lean": "54699024d10a9bbecc77f0c4a72dabc75730028b36b35678fbf8db6326ee9acc",
+    "lean/Conjectures/ChowCone.lean": "b005cf35ce83875ef3a87058ca8ec0c7909aa1787ef812eaf3a5f4a0f4e130a4",
+    "lean/Conjectures/ChowBase.lean": "58dc0f1525b773e082dadad50ae8766c6493deb76dabce47fcaf5cfd6378072f",
+    "lean/Conjectures/ChowRowProperties.lean": "dfd6e3ff4bfcd6f36cd5f26ae24586fc27579887f2e24a4418f0ef6718ba6d02",
+    "lean/Conjectures/ChowRootSigns.lean": "3a26e07a5680944b857203eeaa8af574bbbda28c2a85fc6d5b2a7b3e9ac6895b",
+    "lean/Conjectures/ChowInitial.lean": "2dd59b4377695b5e7c68e840d560654999a3afe8e499b455449ca4912238d342",
+    "lean/Conjectures/ChowStrictInterlacing.lean": "5eb95ef049c303902270b2f6710e21f530bcbd58cc25a09a8cab6fa3d91fc7d8",
+    "lean/Conjectures/ChowSignedPermutationsBasic.lean": "4589dec8b66d6217cc10d148830f9ee927c716f3253e7bcbd781699b7818ab96",
+    "lean/Conjectures/ChowSignedPermutationsParity.lean": "31e5c3f7dc59bd43618c5bc53cb34b8b85a4d649647abce9743fe433304e3b8b",
+    "lean/Conjectures/ChowSignedPermutations.lean": "a22dba3ac431389b11eac7d12cfc348e9674fdad0d61e6b2fc2275914d88b784",
+    "lean/Conjectures/Chow.lean": "66046628c1f5ca8104157b409ce80119e2aa182fc9aa1b9e24c805c13b41758c",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "scripts/audit_lean_owned_extension.py": "6b520a346907fe9e8a7c025daa9a9a831ec8188aab26014443bb760f557f3bca",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c"
+  },
+  "artifact_sha256": {
+    "lean/.lake/build/lib/lean/Conjectures/ChowRefinement.olean": "4f1456ff9da7d483b9a6b36109f8c888687afae3a0d597ea2bb06b4bda7cde38",
+    "lean/.lake/build/lib/lean/Conjectures/ChowRefinement.olean.private": "6256570f0f60eead5cd0328ccc1e36cf82ab72a7efd3ff8d4352436598672f78",
+    "lean/.lake/build/lib/lean/Conjectures/ChowRefinement.olean.server": "0856a8de141b708db8f35f1b524819c92681a6fd57883d558d48458efee8bd82",
+    "lean/.lake/build/lib/lean/Conjectures/ChowCone.olean": "4145c3fa0c91af78ddff74a5905d60cc5d24fcde40c66c33cb47ee0cf34663d5",
+    "lean/.lake/build/lib/lean/Conjectures/ChowCone.olean.private": "0da71dee8e8988a3cc290219f4142670246c2ac40e38b07f788206bfc4a271ae",
+    "lean/.lake/build/lib/lean/Conjectures/ChowCone.olean.server": "e0031ae83d8cc6896628e96cd6481f703aecc99e9fe62552038f6b06f19c3bc7",
+    "lean/.lake/build/lib/lean/Conjectures/ChowBase.olean": "efbd9bc9386fc5cbc7d0cb1f8c35ce1f2e63d284f984b0e86236e4abf85613c6",
+    "lean/.lake/build/lib/lean/Conjectures/ChowBase.olean.private": "020e56f22f979a3b712b36c2271bb419d4ba0225f6efa3b8f1b9f6190981c3de",
+    "lean/.lake/build/lib/lean/Conjectures/ChowBase.olean.server": "83f45f1e3b2c5e6bf7014b479ac4dee80c4d716d960c0b77722c83664fef4d50",
+    "lean/.lake/build/lib/lean/Conjectures/ChowRowProperties.olean": "0a5f9c09f1338441d6624d6ef204dddad2346b951bca3f70f87ef429d660f830",
+    "lean/.lake/build/lib/lean/Conjectures/ChowRowProperties.olean.private": "cf781d21ec7f251123223b9a1c913e1728e3e12eacc0e6f984b0d144bd1ce2e6",
+    "lean/.lake/build/lib/lean/Conjectures/ChowRowProperties.olean.server": "572497416dd811d2c9b22755d9faa5a6100662f151783dc2848fa8af41090eef",
+    "lean/.lake/build/lib/lean/Conjectures/ChowRootSigns.olean": "0fc25b614b9d54d3a394f3802131878b0945732aa534110dddd28017d98d0903",
+    "lean/.lake/build/lib/lean/Conjectures/ChowRootSigns.olean.private": "ffaf6eab265756554b0fb0458bb931954a6422b8985e6599040e1b16e4431fc3",
+    "lean/.lake/build/lib/lean/Conjectures/ChowRootSigns.olean.server": "428c4c7c0a5e877925648460451ceb77e60f5f678860987f207b34d85d39c17a",
+    "lean/.lake/build/lib/lean/Conjectures/ChowInitial.olean": "70a92c1fc9bcdddb958ebb05845203701081f126f4e97a9ba9f251d15f7757ca",
+    "lean/.lake/build/lib/lean/Conjectures/ChowInitial.olean.private": "37e87479c3d7fd8f588b6640d64a75df8f2bbe13650e1b3ff05db45718e53aa6",
+    "lean/.lake/build/lib/lean/Conjectures/ChowInitial.olean.server": "33e8325fb30b27aa5b1882ad66d065d6a3635ca696bc2b28ef0572429ce1d803",
+    "lean/.lake/build/lib/lean/Conjectures/ChowStrictInterlacing.olean": "824d1604cf758a3470b85b8e1067b4e2ab722bab8a6527ed408e36b57f8ab16c",
+    "lean/.lake/build/lib/lean/Conjectures/ChowStrictInterlacing.olean.private": "085050915ff36ddd759012538f98aef18cddc8102b743713ffdf92bb5ef80b97",
+    "lean/.lake/build/lib/lean/Conjectures/ChowStrictInterlacing.olean.server": "9c34052594c7af5ae1b1b4f48a015e8c428c9819f0cb5caf0d933c5901b320bc",
+    "lean/.lake/build/lib/lean/Conjectures/ChowSignedPermutationsBasic.olean": "0c8896d4e8354e784d91105677f752c25abb8e880c360c7350dab5faa52e3f90",
+    "lean/.lake/build/lib/lean/Conjectures/ChowSignedPermutationsBasic.olean.private": "d331f82c1fc89e8a6ff5dd5e4c939324babd21bf9a1b45f7637a9ceaf9da8010",
+    "lean/.lake/build/lib/lean/Conjectures/ChowSignedPermutationsBasic.olean.server": "c06b5a07ab539e42343cde4ace0af0ca9f94cf2edf98cd2149cc8db4c13660fc",
+    "lean/.lake/build/lib/lean/Conjectures/ChowSignedPermutationsParity.olean": "67e4fda7188329a58a3027e62d7efd17dabf648b321fe0f71ea95ba3eb51dbf9",
+    "lean/.lake/build/lib/lean/Conjectures/ChowSignedPermutationsParity.olean.private": "6c41f7f4aebe4eeb7dfb91c922e5a1e7a980e11a74485a87261e91236f403e19",
+    "lean/.lake/build/lib/lean/Conjectures/ChowSignedPermutationsParity.olean.server": "9ec5be3493921bd86d7deb949acfb63fae1c6ef13ca1ac189cad8cb1444aab24",
+    "lean/.lake/build/lib/lean/Conjectures/ChowSignedPermutations.olean": "af688fdb8ffc8ca2a90102241dc13e1c67c9c31ac20c4c063b2bd7c187d10ba5",
+    "lean/.lake/build/lib/lean/Conjectures/ChowSignedPermutations.olean.private": "52e0f5a08f8c96c31a38f6bd47f42897167d64d6a072f660652f8e9899fcafd0",
+    "lean/.lake/build/lib/lean/Conjectures/ChowSignedPermutations.olean.server": "7648d765df0d9453f38261d22aecb688d9e501c32d4f9031eecbb462a1b363b3",
+    "lean/.lake/build/lib/lean/Conjectures/Chow.olean": "526fd9de1733582bff58b29eab2e32549ef40cb44c78e6b88561ca44f9a2e63f",
+    "lean/.lake/build/lib/lean/Conjectures/Chow.olean.private": "24c7d982f3cb00438e74648e2eb4def748c87e8aa14c14983a8714740e421caa",
+    "lean/.lake/build/lib/lean/Conjectures/Chow.olean.server": "ea8063d4923de67586ea767c526e552d1dcd403904e1d5bd6248e54bc9213ed0"
+  },
+  "pinned_executable_sha256": {
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
+  },
+  "sources_and_objects_unchanged_since_frozen_inventory": true,
+  "all_owned_declarations_audited": true,
+  "exact_owned_raw_private_visibility": true,
+  "exact_imported_project_closure": true,
+  "axiom_audit": {
+    "tag": "passed",
+    "imported_modules": 11,
+    "owned_modules": 11,
+    "declarations": 329,
+    "theorems": 286,
+    "private_declarations": 149,
+    "raw_declarations": 329,
+    "required_theorems": 48,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "combined_repository_gate": false,
+  "hosted_validation_claimed": false,
+  "commands": [
+    {
+      "label": "strict-source",
+      "module": "Conjectures.ChowRefinement",
+      "command": [
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChowRefinement.olean",
+        "Conjectures/ChowRefinement.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "refinement-source.log",
+      "metrics": {
+        "module": "Conjectures.ChowRefinement",
+        "command": [
+          "lean",
+          "-j1",
+          "-M3000",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChowRefinement.olean",
+          "Conjectures/ChowRefinement.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 60.59787771599986,
+        "user_seconds": 4.625024,
+        "system_seconds": 16.349499,
+        "maxrss_kib": 562616
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.ChowBase",
+      "command": [
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChowBase.olean",
+        "Conjectures/ChowBase.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "base-source.log",
+      "metrics": {
+        "module": "Conjectures.ChowBase",
+        "command": [
+          "lean",
+          "-j1",
+          "-M3000",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChowBase.olean",
+          "Conjectures/ChowBase.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 361.68448250299934,
+        "user_seconds": 100.595379,
+        "system_seconds": 109.520089,
+        "maxrss_kib": 827260
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.ChowRowProperties",
+      "command": [
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChowRowProperties.olean",
+        "Conjectures/ChowRowProperties.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "rowproperties-source.log",
+      "metrics": {
+        "module": "Conjectures.ChowRowProperties",
+        "command": [
+          "lean",
+          "-j1",
+          "-M3000",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChowRowProperties.olean",
+          "Conjectures/ChowRowProperties.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 30.16769092100003,
+        "user_seconds": 5.221511,
+        "system_seconds": 9.079385,
+        "maxrss_kib": 716352
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.ChowRootSigns",
+      "command": [
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChowRootSigns.olean",
+        "Conjectures/ChowRootSigns.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "rootsigns-source.log",
+      "metrics": {
+        "module": "Conjectures.ChowRootSigns",
+        "command": [
+          "lean",
+          "-j1",
+          "-M3000",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChowRootSigns.olean",
+          "Conjectures/ChowRootSigns.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 40.307898426000065,
+        "user_seconds": 5.092087,
+        "system_seconds": 10.367831,
+        "maxrss_kib": 730056
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.ChowInitial",
+      "command": [
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChowInitial.olean",
+        "Conjectures/ChowInitial.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "initial-source.log",
+      "metrics": {
+        "module": "Conjectures.ChowInitial",
+        "command": [
+          "lean",
+          "-j1",
+          "-M3000",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChowInitial.olean",
+          "Conjectures/ChowInitial.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 26.855502463000448,
+        "user_seconds": 5.284534,
+        "system_seconds": 7.57771,
+        "maxrss_kib": 774048
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.ChowSignedPermutations",
+      "command": [
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChowSignedPermutations.olean",
+        "Conjectures/ChowSignedPermutations.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "signedpermutations-source.log",
+      "metrics": {
+        "module": "Conjectures.ChowSignedPermutations",
+        "command": [
+          "lean",
+          "-j1",
+          "-M3000",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChowSignedPermutations.olean",
+          "Conjectures/ChowSignedPermutations.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 23.892689334999886,
+        "user_seconds": 8.241652,
+        "system_seconds": 6.284464,
+        "maxrss_kib": 875628
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.Chow",
+      "command": [
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/Chow.olean",
+        "Conjectures/Chow.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "final-source.log",
+      "metrics": {
+        "module": "Conjectures.Chow",
+        "command": [
+          "lean",
+          "-j1",
+          "-M3000",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/Chow.olean",
+          "Conjectures/Chow.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 34.5481213209996,
+        "user_seconds": 6.582744,
+        "system_seconds": 10.884481,
+        "maxrss_kib": 836220
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.ChowCone",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChowCone.olean",
+        "Conjectures/ChowCone.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "cone-source.log",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M4500",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChowCone.olean",
+          "Conjectures/ChowCone.lean"
+        ],
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "elapsed_seconds": 3.834,
+        "peak_kib": 988704,
+        "exit_status": 0
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.ChowStrictInterlacing",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChowStrictInterlacing.olean",
+        "Conjectures/ChowStrictInterlacing.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strictinterlacing-source.log",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M4500",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChowStrictInterlacing.olean",
+          "Conjectures/ChowStrictInterlacing.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 158.34597472699988,
+        "maxrss_kib": 822056,
+        "user_seconds": 12.095048,
+        "system_seconds": 48.331387
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.ChowSignedPermutationsBasic",
+      "command": [
+        "timeout",
+        "600s",
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChowSignedPermutationsBasic.olean",
+        "Conjectures/ChowSignedPermutationsBasic.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "signedpermutationsbasic-source.log",
+      "timing_recorded": false,
+      "provenance": "Successful strict object build recorded by the assigned proof agent; no process timing was captured."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.ChowSignedPermutationsParity",
+      "command": [
+        "timeout",
+        "600s",
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChowSignedPermutationsParity.olean",
+        "Conjectures/ChowSignedPermutationsParity.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "signedpermutationsparity-source.log",
+      "timing_recorded": false,
+      "provenance": "Successful strict object build recorded by the assigned proof agent; no process timing was captured."
+    },
+    {
+      "label": "all-owned-axioms",
+      "working_directory": "lean",
+      "log": "audit.log",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "/workspace/scratch/17b12d3ee06e/ChowCompleteOwnedAudit.lean"
+      ],
+      "returncode": 0,
+      "wall_seconds": 38.317720444999395,
+      "user_seconds": 9.053117,
+      "system_seconds": 10.374424999999999,
+      "maxrss_kib": 939944
+    },
+    {
+      "label": "stock-kernel",
+      "working_directory": "lean",
+      "log": "kernel.log",
+      "command": [
+        "python3",
+        "../scripts/replay_lean.py",
+        "--root",
+        "Conjectures.Chow"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1020.1002935209999,
+      "user_seconds": 68.025247,
+      "system_seconds": 349.684297,
+      "maxrss_kib": 1585596
+    }
+  ],
+  "scope": {
+    "proved": "For every actual rank n>=2, the ordinary type-D Eulerian polynomial of even-signed permutations with the literal type-D descent statistic interlaces the next rank. Interlacing is strict for every n>=3. The root-vector predicates include full factorizations, negative roots, and positive leading coefficients.",
+    "not_claimed": [
+      "A combined repository gate or hosted validation of this checkpoint."
+    ]
+  },
+  "source_bridge": "The append/delete signed-permutation bijection proves the refinement recurrence. The first-sign involution proves the exact factor of two relating the row sum and the even-signed source polynomial. Ordered cone identities and root sign arguments are proved internally, with no assumed published interlacing theorem.",
+  "serialization_repair": "The strict owned audit initially rejected a duplicated lazy equation declaration. Defining equations were generated in ChowRefinement, all affected dependent sources were rebuilt, and the unchanged strict audit then passed.",
+  "resource_metrics_note": "The seven rebuild records use wait4 for individual-child memory. Other getrusage(RUSAGE_CHILDREN) high-water memory records can be cumulative upper bounds.",
+  "log_sha256": {
+    "refinement-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rootsigns-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signedpermutationsparity-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kernel.log": "f792ee3f23e1c028888f2aa37d679b8d58e17091b7bbd448c00ce98c303258f2",
+    "audit.log": "ec3eb86c49a14fc88de720d612df45b978c029069307ed50bfee4d39f92ef8fd",
+    "signedpermutations-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rowproperties-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "final-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strictinterlacing-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "base-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cone-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "initial-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signedpermutationsbasic-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "audit_source_sha256": "e12515e61176580a79e078c14860c85c046c79d31304a6c915b04ec76bb800af"
+}

@@ -17,7 +17,24 @@ The proof is a short deduction from established results. The refinement and its 
 
 ## Verification
 
-The proof covers every rank and does not depend on a finite enumeration. It has received an independent mathematical review within this session. There is no Lean verification.
+Lean verifies the full assertion for every rank. The formal source polynomial
+counts actual even-signed permutations by the type-D descent statistic.
+The append/delete bijection proves the refinement recurrence, and a sign
+involution proves the factor of two between the total row and the source
+polynomial. The ordered cone inequalities and strict root sign argument
+are proved inside Lean.
+
+The conclusion includes full polynomial factorizations, root multiplicities,
+and the actual alternating root inequalities. Interlacing holds for every
+rank at least two and is strict from rank three.
+
+All 11 modules passed strict source checks, the complete declaration and
+axiom audit, and independent stock-kernel replay. The audit covers 329
+declarations, including 286 theorem declarations and 149 private declarations.
+All 48 required endpoints passed. See the
+[formal theorem](../../lean/Conjectures/Chow.lean) and
+[verification receipt](../../docs/verification/lean-chow-20261121/receipt.json).
+The combined repository gate remains a separate pending check.
 
 The script checks the formula conventions by direct enumeration of signed permutations for $2\le n\le6$, independently compares the refined recurrence with Stembridge's identity for $2\le n\le32$, and checks the cutoff and row-difference identities exactly. It requires Python and SymPy. Run:
 

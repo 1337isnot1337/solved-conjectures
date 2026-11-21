@@ -1,0 +1,72 @@
+{
+  "Conjectures.ChowRefinement": [
+    "Chow.cutoff_monotone",
+    "Chow.cutoff_le",
+    "Chow.cutoff_surjective",
+    "Chow.nextRow_first",
+    "Chow.refinedRow_first"
+  ],
+  "Conjectures.ChowCone": [
+    "Chow.cone_step_first_identity",
+    "Chow.cone_step_second_identity",
+    "Chow.cone_step",
+    "Chow.orderedCone_cutValue"
+  ],
+  "Conjectures.ChowBase": [
+    "Chow.refinedRow_two",
+    "Chow.baseValue4_orderedCone",
+    "Chow.refinedRow_orderedCone"
+  ],
+  "Conjectures.ChowRowProperties": [
+    "Chow.refinedRow_coeff_nonneg",
+    "Chow.totalRow_natDegree",
+    "Chow.totalRow_leadingCoeff_pos",
+    "Chow.totalRow_eval_zero_pos",
+    "Chow.refinedRow_no_common_zero"
+  ],
+  "Conjectures.ChowRootSigns": [
+    "Chow.cone_root_sign",
+    "Chow.refinedRow_sign_at_total_root"
+  ],
+  "Conjectures.ChowInitial": [
+    "Chow.rankThreeRoots_strictMono",
+    "Chow.rankThreeRoots_neg",
+    "Chow.totalRow_zero_explicit",
+    "Chow.totalRow_one_explicit",
+    "Chow.rankThreeRoots_product",
+    "Chow.totalRow_one_roots",
+    "Chow.totalRow_zero_roots",
+    "Chow.initial_weak_interlacing"
+  ],
+  "Conjectures.ChowStrictInterlacing": [
+    "Chow.derivative_eval_ordered_product",
+    "Chow.derivative_ne_zero_of_ordered_product",
+    "Chow.strict_interlacing_extension"
+  ],
+  "Conjectures.ChowSignedPermutationsBasic": [
+    "Chow.entry_natAbs",
+    "Chow.entry_natAbs_injective",
+    "Chow.negativeCount_eq_window",
+    "Chow.letterValue_lift_lt_iff",
+    "Chow.letterValue_lift_sum_neg_iff",
+    "Chow.appendSigned_bijective"
+  ],
+  "Conjectures.ChowSignedPermutationsParity": [
+    "Chow.flipFirst_involutive",
+    "Chow.allSignedEulerian_eq_two_typeDEulerian"
+  ],
+  "Conjectures.ChowSignedPermutations": [
+    "Chow.desD_appendSigned",
+    "Chow.literalRefinedRow_succ",
+    "Chow.literalRefinedRow_zero",
+    "Chow.literalRefinedRow_eq_refinedRow",
+    "Chow.totalRow_eq_two_typeDEulerian"
+  ],
+  "Conjectures.Chow": [
+    "Chow.totalRow_strict_roots",
+    "Chow.totalRow_interlacing",
+    "Chow.totalRow_strict_interlacing",
+    "Chow.typeD_consecutive_interlacing",
+    "Chow.typeD_consecutive_strict_interlacing"
+  ]
+}

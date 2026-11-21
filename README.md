@@ -56,7 +56,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
 | [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | 🟢 |
 | [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |
-| [Chow's conjecture](results/chow-conjecture/) | ⬜ |
+| [Chow's conjecture](results/chow-conjecture/) | ✅ |
 | [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
 | [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
 | [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |

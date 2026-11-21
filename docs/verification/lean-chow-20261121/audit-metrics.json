@@ -1,0 +1,14 @@
+{
+  "command": [
+    "lean",
+    "-j1",
+    "-M4500",
+    "-DwarningAsError=true",
+    "/workspace/scratch/17b12d3ee06e/ChowCompleteOwnedAudit.lean"
+  ],
+  "returncode": 0,
+  "wall_seconds": 38.317720444999395,
+  "user_seconds": 9.053117,
+  "system_seconds": 10.374424999999999,
+  "maxrss_kib": 939944
+}

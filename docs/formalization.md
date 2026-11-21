@@ -15,6 +15,21 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Chow full interlacing theorem, 21 November 2026
+
+Lean proves consecutive interlacing for every type-D rank at least two,
+with strict interlacing from rank three. The formal polynomials enumerate
+the actual even-signed permutations using the source descent statistic.
+The recurrence, factor of two, ordered cone inequalities, and strictness
+argument are all proved internally.
+
+All 11 sources passed strict checks. The complete audit covers 329
+declarations, including 286 theorem declarations, 149 private declarations,
+and all 48 required endpoints. The pinned stock checker replayed the
+exact closure. The [receipt](verification/lean-chow-20261121/receipt.json)
+records the source and object hashes. The combined repository gate remains
+pending. Existing mathematical attribution is preserved.
+
 ## Oravcová–Soták relative classification, 21 November 2026
 
 The formalization uses the actual distance graph on the integers. Its unconditional results include the greedy upper bound, periodic-word transport, loop concatenation, integer base change, the four unbounded one-parameter coloring families, the full two-parameter family, and the exceptional chromatic numbers. Theorem A, the Oravcová–Soták clique conclusion, and the primitive triangle-free corollary retain the explicitly named propositions `R5`, `R6`, `R7`, and `R8` as hypotheses. Those four real-loneliness classifications are not proved by this closure.

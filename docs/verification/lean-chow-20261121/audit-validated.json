@@ -1,0 +1,5101 @@
+{
+  "summary": {
+    "tag": "passed",
+    "imported_modules": 11,
+    "owned_modules": 11,
+    "declarations": 329,
+    "theorems": 286,
+    "private_declarations": 149,
+    "raw_declarations": 329,
+    "required_theorems": 48,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "imports": {
+    "Conjectures.ChowCone": {
+      "module": "Conjectures.ChowCone",
+      "owned": true,
+      "tag": "import"
+    },
+    "Conjectures.ChowRefinement": {
+      "module": "Conjectures.ChowRefinement",
+      "owned": true,
+      "tag": "import"
+    },
+    "Conjectures.ChowBase": {
+      "module": "Conjectures.ChowBase",
+      "owned": true,
+      "tag": "import"
+    },
+    "Conjectures.ChowRowProperties": {
+      "module": "Conjectures.ChowRowProperties",
+      "owned": true,
+      "tag": "import"
+    },
+    "Conjectures.ChowInitial": {
+      "module": "Conjectures.ChowInitial",
+      "owned": true,
+      "tag": "import"
+    },
+    "Conjectures.ChowRootSigns": {
+      "module": "Conjectures.ChowRootSigns",
+      "owned": true,
+      "tag": "import"
+    },
+    "Conjectures.ChowSignedPermutationsBasic": {
+      "module": "Conjectures.ChowSignedPermutationsBasic",
+      "owned": true,
+      "tag": "import"
+    },
+    "Conjectures.ChowSignedPermutationsParity": {
+      "module": "Conjectures.ChowSignedPermutationsParity",
+      "owned": true,
+      "tag": "import"
+    },
+    "Conjectures.ChowSignedPermutations": {
+      "module": "Conjectures.ChowSignedPermutations",
+      "owned": true,
+      "tag": "import"
+    },
+    "Conjectures.ChowStrictInterlacing": {
+      "module": "Conjectures.ChowStrictInterlacing",
+      "owned": true,
+      "tag": "import"
+    },
+    "Conjectures.Chow": {
+      "module": "Conjectures.Chow",
+      "owned": true,
+      "tag": "import"
+    }
+  },
+  "owned_modules": {
+    "Conjectures.ChowCone": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ChowCone",
+      "names": [
+        "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_6",
+        "Chow.cone_step",
+        "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_2",
+        "Chow.cutValue_pair",
+        "Chow.cutValue",
+        "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_5",
+        "Chow.cone_step_first_identity",
+        "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_7",
+        "Chow.OrderedCone",
+        "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_1",
+        "Chow.orderedCone_cutValue",
+        "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_11",
+        "Chow.orderedCone_sum_pair",
+        "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_4",
+        "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_9",
+        "Chow.cone_step_second_identity",
+        "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_10",
+        "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_3",
+        "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_8"
+      ],
+      "private_count": 11,
+      "tag": "module"
+    },
+    "Conjectures.ChowRefinement": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ChowRefinement",
+      "names": [
+        "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_4",
+        "Chow.refinedRow.eq_1",
+        "Chow.refinedRow_first",
+        "Chow.cutoff_le",
+        "Chow.cutoff_monotone",
+        "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.splitter",
+        "Chow.cutoff_surjective",
+        "Chow.totalRow_eq_sum",
+        "Chow.refinedRow_zero",
+        "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_1",
+        "_private.Conjectures.ChowRefinement.0.Chow.cutoff_le._proof_1_1",
+        "Chow.refinedRow.match_1",
+        "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_3",
+        "Chow.refinedRow_first._proof_2",
+        "Chow.baseRow2",
+        "Chow.refinedRow._unsafe_rec",
+        "Chow.refinedRow_succ",
+        "Chow.nextRow_first",
+        "Chow.cutoff",
+        "Chow.cutoff_zero",
+        "Chow.refinedRow",
+        "Chow.refinedRow.eq_2",
+        "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_1",
+        "Chow.refinedRow.eq_def",
+        "Chow.nextRow_first._proof_2",
+        "Chow.cutoff.eq_1",
+        "Chow.baseRow2._proof_1",
+        "Chow.baseRow2_apply",
+        "Chow.baseRow2.eq_1",
+        "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_3",
+        "_private.Conjectures.ChowRefinement.0.Chow.cutoff_le._proof_1_2",
+        "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_2",
+        "Chow.refinedRow._sunfold",
+        "Chow.totalRow",
+        "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.eq_2",
+        "_private.Conjectures.ChowRefinement.0.Chow.nextRow_first._proof_1",
+        "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.eq_1",
+        "Chow.nextRow.eq_1",
+        "_private.Conjectures.ChowRefinement.0.Chow.refinedRow_first._proof_1",
+        "Chow.nextRow",
+        "Chow.totalRow.eq_1",
+        "Chow.refinedRow._f"
+      ],
+      "private_count": 13,
+      "tag": "module"
+    },
+    "Conjectures.ChowBase": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ChowBase",
+      "names": [
+        "Chow.baseRow4._proof_7",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_3_5",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_1_5",
+        "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_2",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_3_7",
+        "Chow.baseRow4.eq_1",
+        "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_5",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_1_3",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_5_7",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_2_4",
+        "Chow.ceval",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_3_6",
+        "Chow.baseRow4._proof_5",
+        "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_6",
+        "Chow.baseRow4",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_5_6",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_4_5",
+        "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_4",
+        "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_8",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_0_5",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_4_6",
+        "Chow.baseValue4_orderedCone",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_6_7",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_0_1",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_2_7",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_1_4",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_0_6",
+        "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.splitter",
+        "Chow.baseRow4_ceval",
+        "Chow.refinedRow_orderedCone",
+        "Chow.baseRow4.match_1",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_1_2",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_3_4",
+        "Chow.cutValue.eq_1",
+        "Chow.baseValue4",
+        "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_1",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_2_6",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_4_7",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_2_5",
+        "Chow.baseRow4._proof_6",
+        "Chow.baseValue4.eq_1",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_0_2",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_1_6",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_1_7",
+        "Chow.ceval.eq_1",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_0_3",
+        "Chow.baseRow4._proof_1",
+        "Chow.ceval_nextRow",
+        "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_7",
+        "Chow.baseRow4._proof_4",
+        "Chow.baseRow4._proof_2",
+        "Chow.baseRow4._proof_3",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_2_3",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_0_7",
+        "_private.Conjectures.ChowBase.0.Chow.base_pair_0_4",
+        "Chow.refinedRow_two",
+        "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_3"
+      ],
+      "private_count": 37,
+      "tag": "module"
+    },
+    "Conjectures.ChowRowProperties": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ChowRowProperties",
+      "names": [
+        "Chow.refinedRow_coeff_nonneg",
+        "Chow.refinedRow_no_common_zero",
+        "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_natDegree_le._proof_1_1",
+        "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_last._proof_1",
+        "Chow.refinedRow_last",
+        "Chow.totalRow_natDegree_le",
+        "_private.Conjectures.ChowRowProperties.0.Chow.nextRow_last._proof_1",
+        "Chow.cutValue_succ",
+        "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_2",
+        "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_3",
+        "Chow.refinedRow_eval_one_pos",
+        "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._proof_1_2",
+        "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._proof_1_3",
+        "Chow.refinedRow_natDegree_le",
+        "Chow.totalRow_top_coeff_pos",
+        "_private.Conjectures.ChowRowProperties.0.Chow.totalRow_eval_zero_pos._proof_1_1",
+        "Chow.nextRow_last",
+        "Chow.totalRow_natDegree",
+        "Chow.refinedRow_last._proof_2",
+        "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_1",
+        "Chow.totalRow_coeff_nonneg",
+        "Chow.ceval_ofReal",
+        "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_natDegree_le._proof_1_2",
+        "Chow.totalRow_leadingCoeff_pos",
+        "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._simp_1_1",
+        "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_eval_one_pos._proof_1_1",
+        "_private.Conjectures.ChowRowProperties.0.Chow.nextRow_last._proof_1_1",
+        "Chow.nextRow_last._proof_2",
+        "Chow.totalRow_eval_zero_pos"
+      ],
+      "private_count": 13,
+      "tag": "module"
+    },
+    "Conjectures.ChowInitial": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ChowInitial",
+      "names": [
+        "Chow.rankThreeRoots._proof_2",
+        "Chow.rankThreeRoots._proof_3",
+        "Chow.totalRow_one_roots",
+        "Chow.rankThreeRoots.eq_1",
+        "Chow.totalRow_zero_roots",
+        "Chow.totalRow_one_explicit",
+        "Chow.rankThreeRoots_neg",
+        "Chow.rankThreeRoots_strictMono",
+        "Chow.rankThreeRoots._proof_1",
+        "Chow.rankThreeRoots",
+        "Chow.rankThreeRoots_product",
+        "Chow.initial_weak_interlacing",
+        "Chow.totalRow_zero_explicit"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.ChowRootSigns": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ChowRootSigns",
+      "names": [
+        "_private.Conjectures.ChowRootSigns.0.Chow.refinedRow_sign_at_total_root._proof_1_1",
+        "Chow.imaginary_factor_identity",
+        "Chow.refinedRow_sign_at_total_root",
+        "_private.Conjectures.ChowRootSigns.0.Chow.refinedRow_sign_at_total_root._proof_1_2",
+        "Chow.cone_root_sign"
+      ],
+      "private_count": 2,
+      "tag": "module"
+    },
+    "Conjectures.ChowSignedPermutationsBasic": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ChowSignedPermutationsBasic",
+      "names": [
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_3",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_neg_iff._proof_1_2",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex._proof_1",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_neg_iff._proof_1_3",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex._proof_3",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_5",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_natAbs._proof_1_1",
+        "Chow.desD._proof_1",
+        "Chow.allSignedEulerian",
+        "Chow.entry",
+        "Chow.appendPermutation_castSucc",
+        "Chow.appendSigned_entry_last",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_1",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex_indexLetter._proof_1_3",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_4",
+        "Chow.appendSigned.eq_1",
+        "Chow.negativeCount_eq_window",
+        "Chow.liftLetter.eq_1",
+        "Chow.indexLetter_letterIndex",
+        "Chow.literalRefinedRow",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_5",
+        "Chow.letterValue_lift_sum_neg_iff",
+        "Chow.letterIndex._proof_2",
+        "Chow.letterValue_neg_iff._simp_1",
+        "Chow.indexLetter._proof_2",
+        "Chow.appendSigned_entry_castSucc",
+        "Chow.desD",
+        "Chow.entry_natAbs",
+        "Chow.indexLetter",
+        "Chow.negLetter",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter._proof_3",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter._proof_1",
+        "Chow.letterIndex_indexLetter",
+        "Chow.SignedPermutation",
+        "Chow.liftLetter",
+        "Chow.letterIndex.eq_1",
+        "Chow.appendPermutation.eq_1",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.entry_natAbs_injective._simp_1_1",
+        "Chow.appendSigned_bijective",
+        "Chow.indexLetter._proof_4",
+        "Chow.indexLetter.eq_1",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_sum_neg_iff._proof_1_1",
+        "Chow.letterIndex._proof_4",
+        "Chow.letterIndex",
+        "Chow.negLetter.eq_1",
+        "Chow.sum_literalRefinedRow",
+        "Chow.appendPermutation",
+        "Chow.entry_natAbs_injective",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_ne_zero._proof_1_3",
+        "Chow.letterValue_negLetter",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_ne_zero._proof_1_2",
+        "Chow.letterValue_natAbs",
+        "Chow.appendSigned",
+        "Chow.letterValue_lift_lt_iff",
+        "Chow.entry.eq_1",
+        "Chow.letterIndexEquiv",
+        "Chow.letterValue_neg_iff",
+        "Chow.SignedLetter",
+        "Chow.negativeCount.eq_1",
+        "Chow.lastIndex.eq_1",
+        "Chow.letterValue.eq_1",
+        "Chow.letterValue_ne_zero",
+        "Chow.appendSigned_lastIndex",
+        "Chow.letterValue",
+        "Chow.appendSigned_injective",
+        "Chow.appendPermutation_last",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_6",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_4",
+        "Chow.typeDEulerian",
+        "Chow.negativeCount",
+        "Chow.lastIndex",
+        "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex_indexLetter._proof_1_4",
+        "Chow.appendSignedEquiv"
+      ],
+      "private_count": 20,
+      "tag": "module"
+    },
+    "Conjectures.ChowSignedPermutationsParity": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ChowSignedPermutationsParity",
+      "names": [
+        "Chow.flipFirst._proof_1",
+        "Chow.allSignedEulerian_eq_two_typeDEulerian",
+        "_private.Conjectures.ChowSignedPermutationsParity.0.Chow.desD_flipFirst._proof_1_1",
+        "Chow.flipFirst_involutive",
+        "Chow.flipFirst.eq_1",
+        "Chow.entry_flipFirst_succ",
+        "Chow.entry_flipFirst_zero",
+        "Chow.entry_flipFirst_of_ne_zero",
+        "Chow.even_negativeCount_flipFirst",
+        "Chow.even_negativeCount_flipFirst._simp_1",
+        "Chow.flipFirst",
+        "_private.Conjectures.ChowSignedPermutationsParity.0.Chow.desD_flipFirst._proof_1_2",
+        "Chow.desD_flipFirst",
+        "Chow.flipFirstEquiv",
+        "Chow.typeDEulerian.eq_1",
+        "Chow.negativeCount_eq_sum"
+      ],
+      "private_count": 2,
+      "tag": "module"
+    },
+    "Conjectures.ChowSignedPermutations": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ChowSignedPermutations",
+      "names": [
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.desD_two",
+        "Chow.desD_appendSigned",
+        "Chow.literalRefinedRow_zero",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_11",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_4",
+        "Chow.liftLetter_gt_iff_cutoff",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.univ_perm_two",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_9",
+        "_private.Conjectures.ChowSignedPermutations.0.Fin.succ.match_1.eq_1",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_10",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_12",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_2",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_3",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_8",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_6",
+        "_private.Conjectures.ChowSignedPermutations.0.Fin.succ.match_1.splitter",
+        "Fin.succ.eq_1",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.univ_signs_two",
+        "Chow.totalRow_eq_two_typeDEulerian",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_5",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_13",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.desD_appendSigned._proof_1_1",
+        "Chow.weighted_literalRefinedRow",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_14",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_7",
+        "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._simp_1_1",
+        "Chow.literalRefinedRow_eq_refinedRow",
+        "Chow.literalRefinedRow_succ"
+      ],
+      "private_count": 20,
+      "tag": "module"
+    },
+    "Conjectures.ChowStrictInterlacing": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.ChowStrictInterlacing",
+      "names": [
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.factorization_of_distinct_roots",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_8",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg",
+        "Chow.derivative_eval_ordered_product",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_2",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_3",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_11",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_right_of_last",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_9",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg._proof_1_1",
+        "Chow.derivative_ne_zero_of_ordered_product",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_4",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.derivative_last_pos",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.eval_mul_first_derivative_neg._proof_1_1",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_5",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.derivative_last_pos._proof_1_1",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg._proof_1_2",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_7",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_6",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.positive_mul_of_negative_shared",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_1",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.ordered_product_degree",
+        "Chow.strict_interlacing_extension",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_between_adjacent._proof_1_1",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first._proof_1_1",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_10",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.eval_mul_first_derivative_neg",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first._simp_1_2",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_between_adjacent",
+        "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first"
+      ],
+      "private_count": 27,
+      "tag": "module"
+    },
+    "Conjectures.Chow": {
+      "has_data": true,
+      "import_all": true,
+      "modern": true,
+      "module": "Conjectures.Chow",
+      "names": [
+        "Chow.typeD_consecutive_strict_interlacing",
+        "_private.Conjectures.Chow.0.Chow.next_total_roots._proof_1_1",
+        "Chow.typeDEulerian_ordered_roots",
+        "Chow.typeDEulerian_strict_roots",
+        "Chow.totalRow_strict_interlacing",
+        "Chow.StrictlyOrderedNegativeRoots",
+        "Chow.StrictlyOrderedNegativeRoots.weak",
+        "Chow.totalRow_interlacing",
+        "_private.Conjectures.Chow.0.Chow.totalRow_interlacing._proof_1_1",
+        "Chow.totalRow_strict_roots",
+        "Chow.OrderedNegativeRoots",
+        "_private.Conjectures.Chow.0.Chow.next_total_roots",
+        "Chow.ConsecutiveInterlacing",
+        "Chow.typeD_consecutive_interlacing",
+        "_private.Conjectures.Chow.0.Chow.half_factorization",
+        "Chow.StrictConsecutiveInterlacing",
+        "Chow.StrictConsecutiveInterlacing.weak"
+      ],
+      "private_count": 4,
+      "tag": "module"
+    }
+  },
+  "declarations": {
+    "Chow.refinedRow_orderedCone": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_orderedCone",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.even_negativeCount_flipFirst._simp_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.even_negativeCount_flipFirst._simp_1",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_5": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_5",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.strict_interlacing_extension._proof_1_5",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg._proof_1_1",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.adjacent_derivative_product_neg._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.refinedRow.eq_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow.eq_2",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_13": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_13",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_13",
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_first": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_first",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_zero",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_10": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_10",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.strict_interlacing_extension._proof_1_10",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.entry_natAbs_injective._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.entry_natAbs_injective._simp_1_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.entry_natAbs_injective._simp_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first._simp_1_2": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first._simp_1_2",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.root_left_of_first._simp_1_2",
+      "tag": "declaration"
+    },
+    "Chow.baseRow4._proof_5": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow4._proof_5",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.letterValue": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.letterValue",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.baseRow4._proof_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow4._proof_1",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_1",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.strict_interlacing_extension._proof_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_3",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.refinedRow_no_common_zero._proof_1_3",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_natAbs._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_natAbs._proof_1_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterValue_natAbs._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_sign_at_total_root": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_sign_at_total_root",
+      "owner": "Conjectures.ChowRootSigns",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_3",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.strict_interlacing_extension._proof_1_3",
+      "tag": "declaration"
+    },
+    "Chow.entry_flipFirst_zero": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.entry_flipFirst_zero",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.cutValue": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.cutValue",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.cutValue_succ": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cutValue_succ",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_12": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_12",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_12",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_5": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_5",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.baseRow4.match_1.eq_5",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_0_4",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_0_4",
+      "tag": "declaration"
+    },
+    "Chow.nextRow_first._proof_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.nextRow_first._proof_2",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.cutValue_pair": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cutValue_pair",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.baseRow4._proof_7": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow4._proof_7",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.StrictlyOrderedNegativeRoots.weak": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.StrictlyOrderedNegativeRoots.weak",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first._proof_1_1",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.root_left_of_first._proof_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.positive_mul_of_negative_shared": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.positive_mul_of_negative_shared",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.positive_mul_of_negative_shared",
+      "tag": "declaration"
+    },
+    "Chow.entry_flipFirst_succ": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.entry_flipFirst_succ",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_6": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_6",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.baseRow4.match_1.eq_6",
+      "tag": "declaration"
+    },
+    "Chow.refinedRow.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow.eq_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_6_7": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_6_7",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_6_7",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._simp_1_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._simp_1_1",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._simp_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_natDegree_le._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_natDegree_le._proof_1_2",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.refinedRow_natDegree_le._proof_1_2",
+      "tag": "declaration"
+    },
+    "Chow.nextRow.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.nextRow.eq_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.typeDEulerian.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.typeDEulerian.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.rankThreeRoots.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.rankThreeRoots.eq_1",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.literalRefinedRow_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.literalRefinedRow_zero",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.cutoff_monotone._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.typeDEulerian_ordered_roots": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.typeDEulerian_ordered_roots",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.flipFirstEquiv": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.flipFirstEquiv",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.appendSignedEquiv": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.appendSignedEquiv",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.nextRow_last._proof_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.nextRow_last._proof_1",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.nextRow_last._proof_1",
+      "tag": "declaration"
+    },
+    "Chow.lastIndex.eq_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.lastIndex.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.baseRow4.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow4.eq_1",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.typeD_consecutive_strict_interlacing": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.typeD_consecutive_strict_interlacing",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_two": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_two",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.negLetter": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.negLetter",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_4",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": "Chow.cutValue_pair._proof_1_4",
+      "tag": "declaration"
+    },
+    "Chow.totalRow_one_roots": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_one_roots",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_2_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_2_4",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_2_4",
+      "tag": "declaration"
+    },
+    "Chow.letterValue_ne_zero": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterValue_ne_zero",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.adjacent_derivative_product_neg",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_3",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.cutoff_surjective._proof_1_3",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_11": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_11",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.strict_interlacing_extension._proof_1_11",
+      "tag": "declaration"
+    },
+    "Chow.indexLetter.eq_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.indexLetter.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_3_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_3_4",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_3_4",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Chow.0.Chow.totalRow_interlacing._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.Chow.0.Chow.totalRow_interlacing._proof_1_1",
+      "owner": "Conjectures.Chow",
+      "private_user_name": "Chow.totalRow_interlacing._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.letterValue.eq_1": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterValue.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.cutoff": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.cutoff",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.appendSigned.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.appendSigned.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.letterValue_neg_iff._simp_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterValue_neg_iff._simp_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.baseValue4.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseValue4.eq_1",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_11": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_11",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_11",
+      "tag": "declaration"
+    },
+    "Chow.rankThreeRoots": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.rankThreeRoots",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_last._proof_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_last._proof_1",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.refinedRow_last._proof_1",
+      "tag": "declaration"
+    },
+    "Chow.derivative_ne_zero_of_ordered_product": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.derivative_ne_zero_of_ordered_product",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.letterIndex._proof_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterIndex._proof_4",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_2_5": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_2_5",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_2_5",
+      "tag": "declaration"
+    },
+    "Chow.negativeCount": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.negativeCount",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.indexLetter_letterIndex._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_last": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_last",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_5": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_5",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterValue_lift_lt_iff._proof_1_5",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Fin.succ.match_1.splitter": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Fin.succ.match_1.splitter",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Fin.succ.match_1.splitter",
+      "tag": "declaration"
+    },
+    "Chow.nextRow_last._proof_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.nextRow_last._proof_2",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_1_6",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_1_6",
+      "tag": "declaration"
+    },
+    "Chow.rankThreeRoots_strictMono": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.rankThreeRoots_strictMono",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.baseRow4_ceval": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow4_ceval",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRootSigns.0.Chow.refinedRow_sign_at_total_root._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRootSigns.0.Chow.refinedRow_sign_at_total_root._proof_1_1",
+      "owner": "Conjectures.ChowRootSigns",
+      "private_user_name": "Chow.refinedRow_sign_at_total_root._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.cone_root_sign": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cone_root_sign",
+      "owner": "Conjectures.ChowRootSigns",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_9": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_9",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.strict_interlacing_extension._proof_1_9",
+      "tag": "declaration"
+    },
+    "Chow.weighted_literalRefinedRow": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.weighted_literalRefinedRow",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.baseRow2.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow2.eq_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._proof_1_3",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.cutValue_succ._proof_1_3",
+      "tag": "declaration"
+    },
+    "Chow.appendSigned_lastIndex": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.appendSigned_lastIndex",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_6",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterValue_lift_lt_iff._proof_1_6",
+      "tag": "declaration"
+    },
+    "Chow.negativeCount_eq_sum": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.negativeCount_eq_sum",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.rankThreeRoots_product": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.rankThreeRoots_product",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_between_adjacent._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_between_adjacent._proof_1_1",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.root_between_adjacent._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.ConsecutiveInterlacing": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.ConsecutiveInterlacing",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.cutoff_monotone": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cutoff_monotone",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.liftLetter": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.liftLetter",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.letterValue_lift_lt_iff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterValue_lift_lt_iff",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.letterIndex": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.letterIndex",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.rankThreeRoots._proof_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.rankThreeRoots._proof_2",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_2_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_2_6",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_2_6",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_le._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.cutoff_le._proof_1_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.cutoff_le._proof_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_5": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_5",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_5",
+      "tag": "declaration"
+    },
+    "Chow.refinedRow.eq_def": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow.eq_def",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.appendSigned_bijective": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.appendSigned_bijective",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.baseRow4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.baseRow4",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_1_3",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_1_3",
+      "tag": "declaration"
+    },
+    "Chow.cone_step_first_identity": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cone_step_first_identity",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex_indexLetter._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex_indexLetter._proof_1_4",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterIndex_indexLetter._proof_1_4",
+      "tag": "declaration"
+    },
+    "Chow.nextRow_last": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.nextRow_last",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.appendPermutation_castSucc": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.appendPermutation_castSucc",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.letterValue_natAbs": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterValue_natAbs",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.cutoff_zero": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cutoff_zero",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_4",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_4",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_5_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_5_6",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_5_6",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_9": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_9",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": "Chow.cutValue_pair._proof_1_9",
+      "tag": "declaration"
+    },
+    "Chow.totalRow_natDegree": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_natDegree",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.refinedRow.match_1": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.refinedRow.match_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_8": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_8",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.baseRow4.match_1.eq_8",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_0_1",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_0_1",
+      "tag": "declaration"
+    },
+    "Chow.SignedPermutation": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.SignedPermutation",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_ne_zero._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_ne_zero._proof_1_3",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterValue_ne_zero._proof_1_3",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_5": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_0_5",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_0_5",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_10": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_10",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": "Chow.cutValue_pair._proof_1_10",
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_succ": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_succ",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_5": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_5",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": "Chow.cutValue_pair._simp_1_5",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_9": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_9",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_9",
+      "tag": "declaration"
+    },
+    "Chow.baseRow2_apply": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow2_apply",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.OrderedCone": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.OrderedCone",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.refinedRow_first._proof_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.refinedRow_first._proof_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.refinedRow_first._proof_1",
+      "tag": "declaration"
+    },
+    "Chow.flipFirst": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.flipFirst",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.even_negativeCount_flipFirst": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.even_negativeCount_flipFirst",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.flipFirst_involutive": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.flipFirst_involutive",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.appendSigned_entry_castSucc": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.appendSigned_entry_castSucc",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.baseRow4._proof_2": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow4._proof_2",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.rankThreeRoots._proof_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.rankThreeRoots._proof_1",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.cone_step": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cone_step",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.totalRow_eval_zero_pos._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.totalRow_eval_zero_pos._proof_1_1",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.totalRow_eval_zero_pos._proof_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter._proof_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter._proof_3",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.indexLetter._proof_3",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_4": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_4",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.baseRow4.match_1.eq_4",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Chow.0.Chow.next_total_roots._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.Chow.0.Chow.next_total_roots._proof_1_1",
+      "owner": "Conjectures.Chow",
+      "private_user_name": "Chow.next_total_roots._proof_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex._proof_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex._proof_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterIndex._proof_1",
+      "tag": "declaration"
+    },
+    "Chow.appendPermutation.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.appendPermutation.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.cutoff_le": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cutoff_le",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.rankThreeRoots._proof_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.rankThreeRoots._proof_3",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.nextRow_last._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.nextRow_last._proof_1_1",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.nextRow_last._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.cone_step_second_identity": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cone_step_second_identity",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_5": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_1_5",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_1_5",
+      "tag": "declaration"
+    },
+    "Chow.totalRow_one_explicit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_one_explicit",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_5_7": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_5_7",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_5_7",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_2",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.refinedRow_no_common_zero._proof_1_2",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_3",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": "Chow.cutValue_pair._proof_1_3",
+      "tag": "declaration"
+    },
+    "Chow.derivative_eval_ordered_product": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.derivative_eval_ordered_product",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_3": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_3",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.baseRow4.match_1.eq_3",
+      "tag": "declaration"
+    },
+    "Chow.letterValue_lift_sum_neg_iff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterValue_lift_sum_neg_iff",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_neg_iff._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_neg_iff._proof_1_2",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterValue_neg_iff._proof_1_2",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Chow.0.Chow.half_factorization": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.Chow.0.Chow.half_factorization",
+      "owner": "Conjectures.Chow",
+      "private_user_name": "Chow.half_factorization",
+      "tag": "declaration"
+    },
+    "Chow.indexLetter._proof_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.indexLetter._proof_4",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_8": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_8",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_8",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_11": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_11",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": "Chow.cutValue_pair._proof_1_11",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_right_of_last": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_right_of_last",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.root_right_of_last",
+      "tag": "declaration"
+    },
+    "Chow.totalRow_coeff_nonneg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_coeff_nonneg",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.refinedRow": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.refinedRow",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsParity.0.Chow.desD_flipFirst._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsParity.0.Chow.desD_flipFirst._proof_1_1",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": "Chow.desD_flipFirst._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_no_common_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_no_common_zero",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.baseRow4._proof_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow4._proof_3",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_natDegree_le._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_natDegree_le._proof_1_1",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.refinedRow_natDegree_le._proof_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_6",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.strict_interlacing_extension._proof_1_6",
+      "tag": "declaration"
+    },
+    "Chow.negativeCount.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.negativeCount.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Fin.succ.match_1.eq_1": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Fin.succ.match_1.eq_1",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Fin.succ.match_1.eq_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRootSigns.0.Chow.refinedRow_sign_at_total_root._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRootSigns.0.Chow.refinedRow_sign_at_total_root._proof_1_2",
+      "owner": "Conjectures.ChowRootSigns",
+      "private_user_name": "Chow.refinedRow_sign_at_total_root._proof_1_2",
+      "tag": "declaration"
+    },
+    "Chow.baseRow4.match_1": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.baseRow4.match_1",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_6": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_6",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": "Chow.cutValue_pair._proof_1_6",
+      "tag": "declaration"
+    },
+    "Chow.ceval.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.ceval.eq_1",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_6",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_6",
+      "tag": "declaration"
+    },
+    "Chow.ceval": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.ceval",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_14": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_14",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_14",
+      "tag": "declaration"
+    },
+    "Chow.cutoff_surjective": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cutoff_surjective",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.appendSigned": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.appendSigned",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.liftLetter.eq_1": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.liftLetter.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_3",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterValue_lift_lt_iff._proof_1_3",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsParity.0.Chow.desD_flipFirst._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsParity.0.Chow.desD_flipFirst._proof_1_2",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": "Chow.desD_flipFirst._proof_1_2",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.univ_perm_two": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.univ_perm_two",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.univ_perm_two",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_3",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_3",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_2_7": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_2_7",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_2_7",
+      "tag": "declaration"
+    },
+    "Chow.totalRow_zero_explicit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_zero_explicit",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.cutoff.eq_1": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cutoff.eq_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_2",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_2",
+      "tag": "declaration"
+    },
+    "Chow.refinedRow._sunfold": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.refinedRow._sunfold",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_last._proof_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_last._proof_2",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.OrderedNegativeRoots": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.OrderedNegativeRoots",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.univ_signs_two": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.univ_signs_two",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.univ_signs_two",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_ne_zero._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_ne_zero._proof_1_2",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterValue_ne_zero._proof_1_2",
+      "tag": "declaration"
+    },
+    "Fin.succ.eq_1": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Fin.succ.eq_1",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_7": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_7",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.strict_interlacing_extension._proof_1_7",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_1": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_1",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.baseRow4.match_1.eq_1",
+      "tag": "declaration"
+    },
+    "Chow.appendSigned_injective": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.appendSigned_injective",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_neg_iff._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_neg_iff._proof_1_3",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterValue_neg_iff._proof_1_3",
+      "tag": "declaration"
+    },
+    "Chow.totalRow_eq_sum": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_eq_sum",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_1",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.refinedRow_no_common_zero._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.nextRow_first": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.nextRow_first",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.entry_natAbs": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.entry_natAbs",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.derivative_last_pos._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.derivative_last_pos._proof_1_1",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.derivative_last_pos._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.totalRow_leadingCoeff_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_leadingCoeff_pos",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_2",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.strict_interlacing_extension._proof_1_2",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_1_2",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_1_2",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.eq_1": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.eq_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.refinedRow.match_1.eq_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_4",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.strict_interlacing_extension._proof_1_4",
+      "tag": "declaration"
+    },
+    "Chow.literalRefinedRow": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.literalRefinedRow",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.rankThreeRoots_neg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.rankThreeRoots_neg",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_8": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_8",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": "Chow.cutValue_pair._proof_1_8",
+      "tag": "declaration"
+    },
+    "Chow.cutValue.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.cutValue.eq_1",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._simp_1_1",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.cutValue_succ._simp_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.nextRow_first._proof_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.nextRow_first._proof_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.nextRow_first._proof_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_7": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_1_7",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_1_7",
+      "tag": "declaration"
+    },
+    "Chow.appendPermutation": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.appendPermutation",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.totalRow_eq_two_typeDEulerian": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_eq_two_typeDEulerian",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_7": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_7",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.baseRow4.match_1.eq_7",
+      "tag": "declaration"
+    },
+    "Chow.liftLetter_gt_iff_cutoff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.liftLetter_gt_iff_cutoff",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_4_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_4_6",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_4_6",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_between_adjacent": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_between_adjacent",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.root_between_adjacent",
+      "tag": "declaration"
+    },
+    "Chow.entry.eq_1": {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.entry.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.eval_mul_first_derivative_neg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.eval_mul_first_derivative_neg",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.eval_mul_first_derivative_neg",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_sum_neg_iff._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_sum_neg_iff._proof_1_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterValue_lift_sum_neg_iff._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.nextRow": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.nextRow",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.imaginary_factor_identity": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.imaginary_factor_identity",
+      "owner": "Conjectures.ChowRootSigns",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.eval_mul_first_derivative_neg._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.eval_mul_first_derivative_neg._proof_1_1",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.eval_mul_first_derivative_neg._proof_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_3_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_3_6",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_3_6",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex_indexLetter._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex_indexLetter._proof_1_3",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterIndex_indexLetter._proof_1_3",
+      "tag": "declaration"
+    },
+    "Chow.baseRow2._proof_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow2._proof_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.literalRefinedRow_succ": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.literalRefinedRow_succ",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.negativeCount_eq_window": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.negativeCount_eq_window",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_2_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_2_3",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_2_3",
+      "tag": "declaration"
+    },
+    "Chow.ceval_ofReal": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.ceval_ofReal",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_1_4",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_1_4",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_le._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.cutoff_le._proof_1_2",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.cutoff_le._proof_1_2",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_8": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_8",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.strict_interlacing_extension._proof_1_8",
+      "tag": "declaration"
+    },
+    "Chow.lastIndex": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.lastIndex",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.baseValue4_orderedCone": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseValue4_orderedCone",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.appendPermutation_last": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.appendPermutation_last",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_eval_one_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_eval_one_pos",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.refinedRow._unsafe_rec": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.refinedRow._unsafe_rec",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.totalRow": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.totalRow",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.indexLetter._proof_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.indexLetter._proof_2",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.letterIndex_indexLetter": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterIndex_indexLetter",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.typeDEulerian": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.typeDEulerian",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_4",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.cutoff_surjective._proof_1_4",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg._proof_1_2",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.adjacent_derivative_product_neg._proof_1_2",
+      "tag": "declaration"
+    },
+    "Chow.StrictConsecutiveInterlacing.weak": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.StrictConsecutiveInterlacing.weak",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.letterIndex.eq_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterIndex.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.desD_appendSigned._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.desD_appendSigned._proof_1_1",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.desD_appendSigned._proof_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.cutoff_surjective._proof_1_1",
+      "tag": "declaration"
+    },
+    "Chow.SignedLetter": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.SignedLetter",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.flipFirst.eq_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.flipFirst.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.orderedCone_sum_pair": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.orderedCone_sum_pair",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_2",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.cutoff_monotone._proof_1_2",
+      "tag": "declaration"
+    },
+    "Chow.ceval_nextRow": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.ceval_nextRow",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.desD_appendSigned": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.desD_appendSigned",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.allSignedEulerian": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.allSignedEulerian",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._proof_1_2",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.cutValue_succ._proof_1_2",
+      "tag": "declaration"
+    },
+    "Chow.baseRow4._proof_4": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow4._proof_4",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.Chow.0.Chow.next_total_roots": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.Chow.0.Chow.next_total_roots",
+      "owner": "Conjectures.Chow",
+      "private_user_name": "Chow.next_total_roots",
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_natDegree_le": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_natDegree_le",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.letterValue_neg_iff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterValue_neg_iff",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_eval_one_pos._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_eval_one_pos._proof_1_1",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": "Chow.refinedRow_eval_one_pos._proof_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_0_2",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_0_2",
+      "tag": "declaration"
+    },
+    "Chow.totalRow_strict_interlacing": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_strict_interlacing",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.totalRow_interlacing": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_interlacing",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_4_7": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_4_7",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_4_7",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_0_6",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_0_6",
+      "tag": "declaration"
+    },
+    "Chow.typeDEulerian_strict_roots": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.typeDEulerian_strict_roots",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.appendSigned_entry_last": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.appendSigned_entry_last",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_7": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_7",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": "Chow.cutValue_pair._proof_1_7",
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_first._proof_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_first._proof_2",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.totalRow_zero_roots": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_zero_roots",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.entry": {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.entry",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.desD_two": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.desD_two",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.desD_two",
+      "tag": "declaration"
+    },
+    "Chow.letterValue_negLetter": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterValue_negLetter",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.indexLetter_letterIndex": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.indexLetter_letterIndex",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.desD._proof_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.desD._proof_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.factorization_of_distinct_roots": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.factorization_of_distinct_roots",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.factorization_of_distinct_roots",
+      "tag": "declaration"
+    },
+    "Chow.totalRow_top_coeff_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_top_coeff_pos",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.derivative_last_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.derivative_last_pos",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.derivative_last_pos",
+      "tag": "declaration"
+    },
+    "Chow.baseValue4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.baseValue4",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_1",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": "Chow.cutValue_pair._simp_1_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_2": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_2",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.baseRow4.match_1.eq_2",
+      "tag": "declaration"
+    },
+    "Chow.desD": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.desD",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.StrictlyOrderedNegativeRoots": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.StrictlyOrderedNegativeRoots",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.letterIndex._proof_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.letterIndex._proof_2",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_7": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_0_7",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_0_7",
+      "tag": "declaration"
+    },
+    "Chow.entry_natAbs_injective": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.entry_natAbs_injective",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.sum_literalRefinedRow": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.sum_literalRefinedRow",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.orderedCone_cutValue": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.orderedCone_cutValue",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex._proof_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex._proof_3",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterIndex._proof_3",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_3_7": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_3_7",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_3_7",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_3_5": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_3_5",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_3_5",
+      "tag": "declaration"
+    },
+    "Chow.totalRow_natDegree_le": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_natDegree_le",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.refinedRow._f": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.refinedRow._f",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.baseRow4._proof_6": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.baseRow4._proof_6",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_4",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.indexLetter_letterIndex._proof_1_4",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_2",
+      "owner": "Conjectures.ChowCone",
+      "private_user_name": "Chow.cutValue_pair._simp_1_2",
+      "tag": "declaration"
+    },
+    "Chow.allSignedEulerian_eq_two_typeDEulerian": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.allSignedEulerian_eq_two_typeDEulerian",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.desD_flipFirst": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.desD_flipFirst",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.literalRefinedRow_eq_refinedRow": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.literalRefinedRow_eq_refinedRow",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.root_left_of_first",
+      "tag": "declaration"
+    },
+    "Chow.typeD_consecutive_interlacing": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.typeD_consecutive_interlacing",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_4_5": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_4_5",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_4_5",
+      "tag": "declaration"
+    },
+    "Chow.letterIndexEquiv": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.letterIndexEquiv",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.eq_2": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.eq_2",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.refinedRow.match_1.eq_2",
+      "tag": "declaration"
+    },
+    "Chow.totalRow_strict_roots": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_strict_roots",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.strict_interlacing_extension": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.strict_interlacing_extension",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.ordered_product_degree": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowStrictInterlacing.0.Chow.ordered_product_degree",
+      "owner": "Conjectures.ChowStrictInterlacing",
+      "private_user_name": "Chow.ordered_product_degree",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_10": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_10",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_10",
+      "tag": "declaration"
+    },
+    "Chow.baseRow2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.baseRow2",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter._proof_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter._proof_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.indexLetter._proof_1",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_5": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_5",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.indexLetter_letterIndex._proof_1_5",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.splitter": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.splitter",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.refinedRow.match_1.splitter",
+      "tag": "declaration"
+    },
+    "Chow.negLetter.eq_1": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.negLetter.eq_1",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.totalRow_eval_zero_pos": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow_eval_zero_pos",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_7": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_7",
+      "owner": "Conjectures.ChowSignedPermutations",
+      "private_user_name": "Chow.liftLetter_gt_iff_cutoff._proof_1_7",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_3",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": "Chow.cutoff_monotone._proof_1_3",
+      "tag": "declaration"
+    },
+    "Chow.initial_weak_interlacing": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.initial_weak_interlacing",
+      "owner": "Conjectures.ChowInitial",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.totalRow.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.totalRow.eq_1",
+      "owner": "Conjectures.ChowRefinement",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.splitter": {
+      "axioms": [],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.splitter",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.baseRow4.match_1.splitter",
+      "tag": "declaration"
+    },
+    "Chow.indexLetter": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.indexLetter",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.StrictConsecutiveInterlacing": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "Chow.StrictConsecutiveInterlacing",
+      "owner": "Conjectures.Chow",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.entry_flipFirst_of_ne_zero": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.entry_flipFirst_of_ne_zero",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowBase.0.Chow.base_pair_0_3",
+      "owner": "Conjectures.ChowBase",
+      "private_user_name": "Chow.base_pair_0_3",
+      "tag": "declaration"
+    },
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_4",
+      "owner": "Conjectures.ChowSignedPermutationsBasic",
+      "private_user_name": "Chow.letterValue_lift_lt_iff._proof_1_4",
+      "tag": "declaration"
+    },
+    "Chow.flipFirst._proof_1": {
+      "axioms": [
+        "propext"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.flipFirst._proof_1",
+      "owner": "Conjectures.ChowSignedPermutationsParity",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "Chow.refinedRow_coeff_nonneg": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "Chow.refinedRow_coeff_nonneg",
+      "owner": "Conjectures.ChowRowProperties",
+      "private_user_name": null,
+      "tag": "declaration"
+    }
+  },
+  "private_declarations": {
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_5": "Chow.strict_interlacing_extension._proof_1_5",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg._proof_1_1": "Chow.adjacent_derivative_product_neg._proof_1_1",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_13": "Chow.liftLetter_gt_iff_cutoff._proof_1_13",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_10": "Chow.strict_interlacing_extension._proof_1_10",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.entry_natAbs_injective._simp_1_1": "Chow.entry_natAbs_injective._simp_1_1",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first._simp_1_2": "Chow.root_left_of_first._simp_1_2",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_1": "Chow.strict_interlacing_extension._proof_1_1",
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_3": "Chow.refinedRow_no_common_zero._proof_1_3",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_natAbs._proof_1_1": "Chow.letterValue_natAbs._proof_1_1",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_3": "Chow.strict_interlacing_extension._proof_1_3",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_12": "Chow.liftLetter_gt_iff_cutoff._proof_1_12",
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_5": "Chow.baseRow4.match_1.eq_5",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_4": "Chow.base_pair_0_4",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first._proof_1_1": "Chow.root_left_of_first._proof_1_1",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.positive_mul_of_negative_shared": "Chow.positive_mul_of_negative_shared",
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_6": "Chow.baseRow4.match_1.eq_6",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_6_7": "Chow.base_pair_6_7",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._simp_1_1": "Chow.liftLetter_gt_iff_cutoff._simp_1_1",
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_natDegree_le._proof_1_2": "Chow.refinedRow_natDegree_le._proof_1_2",
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_1": "Chow.cutoff_monotone._proof_1_1",
+    "_private.Conjectures.ChowRowProperties.0.Chow.nextRow_last._proof_1": "Chow.nextRow_last._proof_1",
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_4": "Chow.cutValue_pair._proof_1_4",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_2_4": "Chow.base_pair_2_4",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg": "Chow.adjacent_derivative_product_neg",
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_3": "Chow.cutoff_surjective._proof_1_3",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_11": "Chow.strict_interlacing_extension._proof_1_11",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_3_4": "Chow.base_pair_3_4",
+    "_private.Conjectures.Chow.0.Chow.totalRow_interlacing._proof_1_1": "Chow.totalRow_interlacing._proof_1_1",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_11": "Chow.liftLetter_gt_iff_cutoff._proof_1_11",
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_last._proof_1": "Chow.refinedRow_last._proof_1",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_2_5": "Chow.base_pair_2_5",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_1": "Chow.indexLetter_letterIndex._proof_1_1",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_5": "Chow.letterValue_lift_lt_iff._proof_1_5",
+    "_private.Conjectures.ChowSignedPermutations.0.Fin.succ.match_1.splitter": "Fin.succ.match_1.splitter",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_6": "Chow.base_pair_1_6",
+    "_private.Conjectures.ChowRootSigns.0.Chow.refinedRow_sign_at_total_root._proof_1_1": "Chow.refinedRow_sign_at_total_root._proof_1_1",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_9": "Chow.strict_interlacing_extension._proof_1_9",
+    "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._proof_1_3": "Chow.cutValue_succ._proof_1_3",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_6": "Chow.letterValue_lift_lt_iff._proof_1_6",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_between_adjacent._proof_1_1": "Chow.root_between_adjacent._proof_1_1",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_2_6": "Chow.base_pair_2_6",
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_le._proof_1_1": "Chow.cutoff_le._proof_1_1",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_5": "Chow.liftLetter_gt_iff_cutoff._proof_1_5",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_3": "Chow.base_pair_1_3",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex_indexLetter._proof_1_4": "Chow.letterIndex_indexLetter._proof_1_4",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_4": "Chow.liftLetter_gt_iff_cutoff._proof_1_4",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_5_6": "Chow.base_pair_5_6",
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_9": "Chow.cutValue_pair._proof_1_9",
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_8": "Chow.baseRow4.match_1.eq_8",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_1": "Chow.base_pair_0_1",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_ne_zero._proof_1_3": "Chow.letterValue_ne_zero._proof_1_3",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_5": "Chow.base_pair_0_5",
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_10": "Chow.cutValue_pair._proof_1_10",
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_5": "Chow.cutValue_pair._simp_1_5",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_9": "Chow.liftLetter_gt_iff_cutoff._proof_1_9",
+    "_private.Conjectures.ChowRefinement.0.Chow.refinedRow_first._proof_1": "Chow.refinedRow_first._proof_1",
+    "_private.Conjectures.ChowRowProperties.0.Chow.totalRow_eval_zero_pos._proof_1_1": "Chow.totalRow_eval_zero_pos._proof_1_1",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter._proof_3": "Chow.indexLetter._proof_3",
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_4": "Chow.baseRow4.match_1.eq_4",
+    "_private.Conjectures.Chow.0.Chow.next_total_roots._proof_1_1": "Chow.next_total_roots._proof_1_1",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex._proof_1": "Chow.letterIndex._proof_1",
+    "_private.Conjectures.ChowRowProperties.0.Chow.nextRow_last._proof_1_1": "Chow.nextRow_last._proof_1_1",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_5": "Chow.base_pair_1_5",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_5_7": "Chow.base_pair_5_7",
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_2": "Chow.refinedRow_no_common_zero._proof_1_2",
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_3": "Chow.cutValue_pair._proof_1_3",
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_3": "Chow.baseRow4.match_1.eq_3",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_neg_iff._proof_1_2": "Chow.letterValue_neg_iff._proof_1_2",
+    "_private.Conjectures.Chow.0.Chow.half_factorization": "Chow.half_factorization",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_8": "Chow.liftLetter_gt_iff_cutoff._proof_1_8",
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_11": "Chow.cutValue_pair._proof_1_11",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_right_of_last": "Chow.root_right_of_last",
+    "_private.Conjectures.ChowSignedPermutationsParity.0.Chow.desD_flipFirst._proof_1_1": "Chow.desD_flipFirst._proof_1_1",
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_natDegree_le._proof_1_1": "Chow.refinedRow_natDegree_le._proof_1_1",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_6": "Chow.strict_interlacing_extension._proof_1_6",
+    "_private.Conjectures.ChowSignedPermutations.0.Fin.succ.match_1.eq_1": "Fin.succ.match_1.eq_1",
+    "_private.Conjectures.ChowRootSigns.0.Chow.refinedRow_sign_at_total_root._proof_1_2": "Chow.refinedRow_sign_at_total_root._proof_1_2",
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_6": "Chow.cutValue_pair._proof_1_6",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_6": "Chow.liftLetter_gt_iff_cutoff._proof_1_6",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_14": "Chow.liftLetter_gt_iff_cutoff._proof_1_14",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_3": "Chow.letterValue_lift_lt_iff._proof_1_3",
+    "_private.Conjectures.ChowSignedPermutationsParity.0.Chow.desD_flipFirst._proof_1_2": "Chow.desD_flipFirst._proof_1_2",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.univ_perm_two": "Chow.univ_perm_two",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_3": "Chow.liftLetter_gt_iff_cutoff._proof_1_3",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_2_7": "Chow.base_pair_2_7",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_2": "Chow.liftLetter_gt_iff_cutoff._proof_1_2",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.univ_signs_two": "Chow.univ_signs_two",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_ne_zero._proof_1_2": "Chow.letterValue_ne_zero._proof_1_2",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_7": "Chow.strict_interlacing_extension._proof_1_7",
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_1": "Chow.baseRow4.match_1.eq_1",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_neg_iff._proof_1_3": "Chow.letterValue_neg_iff._proof_1_3",
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_no_common_zero._proof_1_1": "Chow.refinedRow_no_common_zero._proof_1_1",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.derivative_last_pos._proof_1_1": "Chow.derivative_last_pos._proof_1_1",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_2": "Chow.strict_interlacing_extension._proof_1_2",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_2": "Chow.base_pair_1_2",
+    "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.eq_1": "Chow.refinedRow.match_1.eq_1",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_4": "Chow.strict_interlacing_extension._proof_1_4",
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_8": "Chow.cutValue_pair._proof_1_8",
+    "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._simp_1_1": "Chow.cutValue_succ._simp_1_1",
+    "_private.Conjectures.ChowRefinement.0.Chow.nextRow_first._proof_1": "Chow.nextRow_first._proof_1",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_7": "Chow.base_pair_1_7",
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_7": "Chow.baseRow4.match_1.eq_7",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_4_6": "Chow.base_pair_4_6",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_between_adjacent": "Chow.root_between_adjacent",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.eval_mul_first_derivative_neg": "Chow.eval_mul_first_derivative_neg",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_sum_neg_iff._proof_1_1": "Chow.letterValue_lift_sum_neg_iff._proof_1_1",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.eval_mul_first_derivative_neg._proof_1_1": "Chow.eval_mul_first_derivative_neg._proof_1_1",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_3_6": "Chow.base_pair_3_6",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex_indexLetter._proof_1_3": "Chow.letterIndex_indexLetter._proof_1_3",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_2_3": "Chow.base_pair_2_3",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_1_4": "Chow.base_pair_1_4",
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_le._proof_1_2": "Chow.cutoff_le._proof_1_2",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.strict_interlacing_extension._proof_1_8": "Chow.strict_interlacing_extension._proof_1_8",
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_4": "Chow.cutoff_surjective._proof_1_4",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.adjacent_derivative_product_neg._proof_1_2": "Chow.adjacent_derivative_product_neg._proof_1_2",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.desD_appendSigned._proof_1_1": "Chow.desD_appendSigned._proof_1_1",
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_surjective._proof_1_1": "Chow.cutoff_surjective._proof_1_1",
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_2": "Chow.cutoff_monotone._proof_1_2",
+    "_private.Conjectures.ChowRowProperties.0.Chow.cutValue_succ._proof_1_2": "Chow.cutValue_succ._proof_1_2",
+    "_private.Conjectures.Chow.0.Chow.next_total_roots": "Chow.next_total_roots",
+    "_private.Conjectures.ChowRowProperties.0.Chow.refinedRow_eval_one_pos._proof_1_1": "Chow.refinedRow_eval_one_pos._proof_1_1",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_2": "Chow.base_pair_0_2",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_4_7": "Chow.base_pair_4_7",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_6": "Chow.base_pair_0_6",
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._proof_1_7": "Chow.cutValue_pair._proof_1_7",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.desD_two": "Chow.desD_two",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.factorization_of_distinct_roots": "Chow.factorization_of_distinct_roots",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.derivative_last_pos": "Chow.derivative_last_pos",
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_1": "Chow.cutValue_pair._simp_1_1",
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.eq_2": "Chow.baseRow4.match_1.eq_2",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_7": "Chow.base_pair_0_7",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterIndex._proof_3": "Chow.letterIndex._proof_3",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_3_7": "Chow.base_pair_3_7",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_3_5": "Chow.base_pair_3_5",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_4": "Chow.indexLetter_letterIndex._proof_1_4",
+    "_private.Conjectures.ChowCone.0.Chow.cutValue_pair._simp_1_2": "Chow.cutValue_pair._simp_1_2",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.root_left_of_first": "Chow.root_left_of_first",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_4_5": "Chow.base_pair_4_5",
+    "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.eq_2": "Chow.refinedRow.match_1.eq_2",
+    "_private.Conjectures.ChowStrictInterlacing.0.Chow.ordered_product_degree": "Chow.ordered_product_degree",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_10": "Chow.liftLetter_gt_iff_cutoff._proof_1_10",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter._proof_1": "Chow.indexLetter._proof_1",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.indexLetter_letterIndex._proof_1_5": "Chow.indexLetter_letterIndex._proof_1_5",
+    "_private.Conjectures.ChowRefinement.0.Chow.refinedRow.match_1.splitter": "Chow.refinedRow.match_1.splitter",
+    "_private.Conjectures.ChowSignedPermutations.0.Chow.liftLetter_gt_iff_cutoff._proof_1_7": "Chow.liftLetter_gt_iff_cutoff._proof_1_7",
+    "_private.Conjectures.ChowRefinement.0.Chow.cutoff_monotone._proof_1_3": "Chow.cutoff_monotone._proof_1_3",
+    "_private.Conjectures.ChowBase.0.Chow.baseRow4.match_1.splitter": "Chow.baseRow4.match_1.splitter",
+    "_private.Conjectures.ChowBase.0.Chow.base_pair_0_3": "Chow.base_pair_0_3",
+    "_private.Conjectures.ChowSignedPermutationsBasic.0.Chow.letterValue_lift_lt_iff._proof_1_4": "Chow.letterValue_lift_lt_iff._proof_1_4"
+  },
+  "required_theorems": {
+    "Chow.totalRow_strict_roots": "Conjectures.Chow",
+    "Chow.totalRow_interlacing": "Conjectures.Chow",
+    "Chow.totalRow_strict_interlacing": "Conjectures.Chow",
+    "Chow.typeD_consecutive_interlacing": "Conjectures.Chow",
+    "Chow.typeD_consecutive_strict_interlacing": "Conjectures.Chow",
+    "Chow.refinedRow_two": "Conjectures.ChowBase",
+    "Chow.baseValue4_orderedCone": "Conjectures.ChowBase",
+    "Chow.refinedRow_orderedCone": "Conjectures.ChowBase",
+    "Chow.cone_step_first_identity": "Conjectures.ChowCone",
+    "Chow.cone_step_second_identity": "Conjectures.ChowCone",
+    "Chow.cone_step": "Conjectures.ChowCone",
+    "Chow.orderedCone_cutValue": "Conjectures.ChowCone",
+    "Chow.rankThreeRoots_strictMono": "Conjectures.ChowInitial",
+    "Chow.rankThreeRoots_neg": "Conjectures.ChowInitial",
+    "Chow.totalRow_zero_explicit": "Conjectures.ChowInitial",
+    "Chow.totalRow_one_explicit": "Conjectures.ChowInitial",
+    "Chow.rankThreeRoots_product": "Conjectures.ChowInitial",
+    "Chow.totalRow_one_roots": "Conjectures.ChowInitial",
+    "Chow.totalRow_zero_roots": "Conjectures.ChowInitial",
+    "Chow.initial_weak_interlacing": "Conjectures.ChowInitial",
+    "Chow.cutoff_monotone": "Conjectures.ChowRefinement",
+    "Chow.cutoff_le": "Conjectures.ChowRefinement",
+    "Chow.cutoff_surjective": "Conjectures.ChowRefinement",
+    "Chow.nextRow_first": "Conjectures.ChowRefinement",
+    "Chow.refinedRow_first": "Conjectures.ChowRefinement",
+    "Chow.cone_root_sign": "Conjectures.ChowRootSigns",
+    "Chow.refinedRow_sign_at_total_root": "Conjectures.ChowRootSigns",
+    "Chow.refinedRow_coeff_nonneg": "Conjectures.ChowRowProperties",
+    "Chow.totalRow_natDegree": "Conjectures.ChowRowProperties",
+    "Chow.totalRow_leadingCoeff_pos": "Conjectures.ChowRowProperties",
+    "Chow.totalRow_eval_zero_pos": "Conjectures.ChowRowProperties",
+    "Chow.refinedRow_no_common_zero": "Conjectures.ChowRowProperties",
+    "Chow.desD_appendSigned": "Conjectures.ChowSignedPermutations",
+    "Chow.literalRefinedRow_succ": "Conjectures.ChowSignedPermutations",
+    "Chow.literalRefinedRow_zero": "Conjectures.ChowSignedPermutations",
+    "Chow.literalRefinedRow_eq_refinedRow": "Conjectures.ChowSignedPermutations",
+    "Chow.totalRow_eq_two_typeDEulerian": "Conjectures.ChowSignedPermutations",
+    "Chow.entry_natAbs": "Conjectures.ChowSignedPermutationsBasic",
+    "Chow.entry_natAbs_injective": "Conjectures.ChowSignedPermutationsBasic",
+    "Chow.negativeCount_eq_window": "Conjectures.ChowSignedPermutationsBasic",
+    "Chow.letterValue_lift_lt_iff": "Conjectures.ChowSignedPermutationsBasic",
+    "Chow.letterValue_lift_sum_neg_iff": "Conjectures.ChowSignedPermutationsBasic",
+    "Chow.appendSigned_bijective": "Conjectures.ChowSignedPermutationsBasic",
+    "Chow.flipFirst_involutive": "Conjectures.ChowSignedPermutationsParity",
+    "Chow.allSignedEulerian_eq_two_typeDEulerian": "Conjectures.ChowSignedPermutationsParity",
+    "Chow.derivative_eval_ordered_product": "Conjectures.ChowStrictInterlacing",
+    "Chow.derivative_ne_zero_of_ordered_product": "Conjectures.ChowStrictInterlacing",
+    "Chow.strict_interlacing_extension": "Conjectures.ChowStrictInterlacing"
+  },
+  "kind_counts": {
+    "theorem": 286,
+    "definition": 43
+  },
+  "all_owned_declarations_audited": true,
+  "exact_owned_raw_private_visibility": true,
+  "exact_imported_project_closure": true,
+  "dependency_audit_claimed": false
+}

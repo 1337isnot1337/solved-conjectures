@@ -71,7 +71,7 @@ proofs are documented separately in the catalogue and result package.
 | Bernardi–Morales's delta-process conjecture | Complete | Lean proves published Conjectures 27–28 for all admissible parameters: the literal delta-map tree count for every fixed color map, and the complete marked interval-event count and source probability determinant for every fixed surjection. Full subsets, singleton complements and the singular averaging case are included. The 13-module closure passed strict compilation with warnings treated as errors, an all-owned audit of 269 declarations (205 theorem declarations and 23 required endpoints), and independent replay by the pinned stock kernel. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. [Receipt](verification/lean-named-20261121/bernardi-receipt.json). Combined package gate and hosted validation remain separate. |
 | Gilmore's crossing–nesting conjecture | Complete | Lean proves the full crossing–nesting identity for the stabilized product-defined matrix, with alignment and size refinements, over every commutative ring. Canonical matching lists enumerate exactly the literal perfect matchings; their weights count the actual crossing, nesting and alignment inequalities. Fresh strict compilation, the all-owned audit of 449 declarations (346 theorem declarations, including private declarations) and all 20 required endpoints, and stock-kernel replay passed. [Local receipt](verification/lean-named-20261121/gilmore-receipt.json). The combined repository gate and hosted validation are separate. |
 | Currie's conjecture on complexity 2n+1 and critical exponent | Not formalized | Written proof for all twenty words of the journal and arXiv versions, computer-assisted in finitely many described places, after one independent model referee pass. The standard-library verifier checks the morphism identities, exact factor sets, the hypotheses of the insertion lemmas, the short bispecial factors and the exact inequalities in `Q(λ)` for the 72 families; brute-force cross-checks cover bounded lengths and prefixes. No proof-assistant formalization is claimed. |
-| Chow's conjecture | Not formalized | Written deduction of weak interlacing from Savage–Visontai, with a separate strictness argument and explicit attribution caveat. |
+| Chow's conjecture | Complete | Lean proves consecutive interlacing at every rank at least two, strictly from rank three, for the actual even-signed permutation enumerators. The proof derives the refinement recurrence and all root inequalities internally. All 11 modules passed strict sources, the complete axiom audit, and stock-kernel replay. |
 | Németh–Seberry–Shu conjecture | Not formalized | Written asymptotic disproof and a quadratic lower bound; finite checks are not part of the proof. |
 | Sonntag–Teichert conjecture | Complete source formalization; merged-package gate pending | Lean proves the tournament theorem, the forward classification of separated oriented-graph cases as two stars, and an explicit realization for every pair of stars with arbitrary additional isolated vertices. The standalone strict source check, all-owned axiom audit and stock-kernel replay passed; the combined repository gate is pending. |
 | Horňák–Woźniak conjecture | Partial | Lean proves arbitrary vertex decomposability for tripods with a positive short arm of length at most two, conditional on source tests 1 and 5. For all positive short-arm lengths it proves partitions containing a larger part under those tests, realizes partitions with a sublist summing to the short arm unconditionally, and reduces the remainder to partitions with no mergeable noncentral pair. The general all-small case, four-arm reduction, existence constructions and combined gate remain. Strict compilation, a 958-theorem full-chain axiom audit and isolated kernel replay passed. |
@@ -105,6 +105,26 @@ proofs are documented separately in the catalogue and result package.
 | Seven-speed spectrum | Partial | Realization, the 27 displayed exceptional values, and sharp candidate bounds are checked. The critical-plane classification and large-norm family bridge are registered under explicit `LonelyRunnerBound 5` and primitive tight-six classification hypotheses. Unconditional tuple exhaustiveness remains open. |
 | Eight-speed spectrum | Partial | All three displayed product families are classified and evaluated within those families, including both exceptional `s=1` values. All 17 displayed sporadic values are checked. The norm bound and exhaustive classification outside the families remain open. |
 | Eleven-through-fourteen-runner equality | Partial | The displayed equality directions have their exact global values. Norm cutoffs and prime selection are checked under explicit smaller-dimensional runner bounds. Those bounds, modular exhaustiveness and uniqueness remain open. |
+
+## Complete Chow interlacing theorem
+
+Lean defines the source polynomials by summing the actual type-D descent
+statistic over even-signed permutations. An append/delete bijection proves
+the refinement recurrence. A first-sign involution proves that each total
+row equals twice the source polynomial.
+
+Exact rank-four identities establish the initial ordered cone inequalities.
+Their preservation, exclusion of common row zeros, and a derivative sign
+argument prove interlacing at every rank. The conclusion is strict from
+rank three. The rank-two pair is checked separately.
+
+The root predicates include complete factorizations and multiplicities.
+All 11 sources passed strict checks. The complete audit covers 329
+declarations, 286 theorem declarations, 149 private declarations, and all
+48 required endpoints. Stock-kernel replay passed on the exact closure.
+See the [receipt](verification/lean-chow-20261121/receipt.json) and
+[complete inventory](verification/lean-chow-20261121/audit-validated.json).
+The combined repository gate remains a separate pending check.
 
 ## Complete root-radius theorems
 

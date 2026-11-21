@@ -2,6 +2,15 @@
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
 
+## Chow complete local verification
+
+The full all-rank theorem has a checked 11-module closure.
+The [receipt](verification/lean-chow-20261121/receipt.json) records every strict
+source command, all source and object hashes, the complete owned/private
+axiom audit, and exact stock-kernel replay. All 48 required endpoints passed.
+The source bridge uses actual signed permutations and their descent statistic.
+The combined repository gate and hosted verification remain separate.
+
 ## Oravcová–Soták local verification checkpoint
 
 All nine new modules passed strict compilation with warnings treated as errors. The exact 28-module project closure passed an all-owned audit of 1239 declarations (1084 theorem declarations and 40 required endpoints) and independent stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. The [receipt](verification/lean-named-20261121/oravcova-receipt.json) binds the exact project sources and objects, the full declaration audit and the kernel replay. [Source records](verification/lean-named-20261121/oravcova-source-evidence.json) cover every new file. The [literal data comparison](verification/lean-named-20261121/oravcova-literal-data-comparison.json) independently matches the source certificate tables. `R5`–`R8` remain explicit inputs. The combined package gate and hosted validation are separate.
