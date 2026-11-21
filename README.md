@@ -23,7 +23,6 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Horňák–Woźniak conjecture](results/hornak-wozniak/) | ⬜ |
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
-| [Fang–Zhang–Zhao's Sturm conjecture](results/fang-zhang-zhao-sturm/) | ⬜ |
 | [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
 | [Fang–Zhang–Zhao's infinite-log-convexity conjecture](results/fang-zhang-zhao/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture](results/kvz-bessel-unimodality/) | ⬜ |

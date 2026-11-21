@@ -53,13 +53,12 @@ python3 results/chen-kitaev-zhang-records/verify.py
 python3 results/zhu-jacobi-stirling/verify.py
 ```
 
-The [Hoggatt disproof](../results/fang-zhang-zhao/) has a symbolic parameter identity, exact integer witnesses, and independent plane-partition enumeration. The [Hoggatt Sturm verifier](../results/fang-zhang-zhao-sturm/verify.py) checks the Jackson identity and MacMahon transfer and isolates roots exactly in small cases. These computations diagnose transcription and algebra errors; the unrestricted claims are established in the written proofs.
+The [Hoggatt disproof](../results/fang-zhang-zhao/) has a symbolic parameter identity, exact integer witnesses, and independent plane-partition enumeration. These computations check the algebra behind the unrestricted written disproof. The separate Sturm conjecture was already proved in October 2026; its independent reproof and diagnostics are retained only as [credited research](../research/fang-zhang-zhao-sturm/).
 
 ```bash
 python3 results/fang-zhang-zhao/verify.py
 python3 results/fang-zhang-zhao/independent_check.py
 python3 results/fang-zhang-zhao/independent_symbolic_check.py
-python3 results/fang-zhang-zhao-sturm/verify.py
 ```
 
 These are the commands in [the verification workflow](../.github/workflows/verify.yml). They include finite tests, exact certificates, and exhaustive searches; their mathematical roles are explained in the corresponding proof notes. A passing computation is not a claim that a full theorem has been formalized.

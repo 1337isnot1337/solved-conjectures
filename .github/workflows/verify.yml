@@ -54,7 +54,6 @@ jobs:
           python results/fang-zhang-zhao/verify.py
           python results/fang-zhang-zhao/independent_check.py
           python results/fang-zhang-zhao/independent_symbolic_check.py
-          python results/fang-zhang-zhao-sturm/verify.py
       - name: Check Franklin profile identities
         run: python results/mccrea-single-crossover/verify.py
       - name: Check Pula–Song–Wanless identities and parameter conventions

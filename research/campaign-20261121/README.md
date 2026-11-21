@@ -21,14 +21,13 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 ## Resolution count
 
-Complete proposed resolutions with separate internal review and a documented current status audit: **5** at this checkpoint. All remain unrefereed.
+Complete proposed resolutions with separate internal review and a documented current status audit: **4** at this checkpoint. All remain unrefereed.
 
 | Conjecture | Result | Evidence |
 | --- | --- | --- |
 | Vishnyakova's conjecture | Proved the full outer-root-radius conjecture for every degree and positive weight, with a stronger disk bound; one result | [Package](../../results/vishnyakova-root-radius/) · [Issue 182](https://github.com/1337isnot1337/solved-conjectures/issues/182) |
 | López Pouso–Segura's conjectures | Proved the complete sign, strict monotonicity and exact limit assertions for the three linked Bessel-weight sequences; one result | [Package](../../results/lopez-pouso-segura-bessel/) · [Issue 177](https://github.com/1337isnot1337/solved-conjectures/issues/177) |
 | Fang–Zhang–Zhao's infinite-log-convexity conjecture | Disproved for every Hoggatt parameter at least four; one resolution of the full universal statement | [Package](../../results/fang-zhang-zhao/) · [Issue 160](https://github.com/1337isnot1337/solved-conjectures/issues/160) |
-| Fang–Zhang–Zhao's Sturm conjecture | Proved throughout the source's full range, with a stronger real-base and all-parameter theorem | [Package](../../results/fang-zhang-zhao-sturm/) · [Issue 162](https://github.com/1337isnot1337/solved-conjectures/issues/162) |
 | McCrea's conjecture | Proved unique linear-density crossover for every permitted modulus and density | [Package](../../results/mccrea-single-crossover/) · [Issue 168](https://github.com/1337isnot1337/solved-conjectures/issues/168) |
 
 A previous six-result checkpoint incorrectly included the already-refuted Hankel-product assertion. Simon's 2012 theorem and repository issue 94 settle that exact statement; it has been removed from this tally and the result catalogue. The new examples do not establish novelty.
@@ -36,6 +35,8 @@ A previous six-result checkpoint incorrectly included the already-refuted Hankel
 The original opening count was zero. The separate Baxter-number conjecture is not resolved by the Hoggatt disproof. A bounded floating-point screen of its first 400 terms through 120 iterates found no negative value and supplies no proof.
 
 ## Exclusions and active work
+
+Fang–Zhang–Zhao's Sturm conjecture was also excluded after the full [18 October proof](https://github.com/the-omega-institute/trureturing/issues/18758) was located. The six-step proof already covers every real base at least one and every integer Hoggatt parameter at least two. Our independent reproof is preserved as [credited research](../fang-zhang-zhao-sturm/); its incomplete formalization in the earlier repository is irrelevant to ordinary-proof priority. This correction reduces the five-result checkpoint above to four. The [scope audit](../2026-11-21-special-functions-fzz-priority/AUDIT.md) records the comparison.
 
 Alexandersson–Saud Maia Leite's peak-nesting conjecture was excluded after the [earlier 3 November full informal disproof](https://github.com/the-omega-institute/trureturing/issues/25927) was found. An independently checked elementary reproof and exact coefficient certificates are preserved as [credited research](../alexandersson-leite-prior-resolution/), not as a new resolution.
 

@@ -1,5 +1,7 @@
 # Fang–Zhang–Zhao's Sturm conjecture
 
+> Priority correction, 21 November 2026: this target was already proved in [TT issue 18758](https://github.com/the-omega-institute/trureturing/issues/18758). The following independent argument or earlier search record is retained for provenance, not counted as a new resolution. See [the scope audit](../2026-11-21-special-functions-fzz-priority/AUDIT.md).
+
 Complete proposed proof, 21 November 2026. Two independent internal mathematical reviews found no gap. The [priority audit](NOVELTY.md) records the sources checked and access limits. This work is unrefereed.
 
 ## Statement

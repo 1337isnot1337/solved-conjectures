@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Corrected Fang–Zhang–Zhao Sturm priority
+
+Removed the Sturm package from the result catalogue and active status/verifier registrations after locating the full earlier proof in [TT issue 18758](https://github.com/the-omega-institute/trureturing/issues/18758), posted on 18 October 2026. Its all-real-base, all-Hoggatt-parameter theorem and six-step Jackson/Hadamard proof already settle the exact conjecture. The later incomplete Lean formalization does not affect this ordinary mathematical priority determination.
+
+The independent reproof is retained as [credited research](research/fang-zhang-zhao-sturm/), with the [detailed prior comparison](research/2026-11-21-special-functions-fzz-priority/AUDIT.md). It counts as zero new resolutions. The separate issue-156 subgroup checkpoint is corrected from five to four; the universal infinite-log-convexity disproof is a different assertion and is audited separately. Earlier addition entries below are historical and superseded by this correction.
+
 ## 2026-11-21 — Vishnyakova's conjecture
 
 Added a complete proposed proof of the outer-root-radius conjecture for every polynomial degree and every positive real weight. The proof gives the stronger disk centered at minus half the weight, and the all-one parameter vector attains the claimed outer radius. A complex-parameter tridiagonal argument and reciprocal-segment lemma establish half-plane zero exclusion; Grace–Walsh–Szegő and Hurwitz extend it to arbitrary independent real parameters. The equal-parameter recurrence and disk theorem from the earlier October report are credited explicitly. The original and weighted conjectures count as one family.
