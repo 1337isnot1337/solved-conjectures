@@ -20,6 +20,7 @@ run_cmd do
     `Han.sparse_encoders_strictly_worse,
     `Han.open_family_gap,
     `Han.concrete_gain_in_interval,
+    `ZhangDeletion.high_residue_certificate,
     `ZhangDeletion.denominator_bound,
     `ZhangDeletion.retained_double_bound,
     `ZhangDeletion.positive_residues_denominator,

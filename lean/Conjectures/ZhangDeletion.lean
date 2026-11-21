@@ -338,4 +338,104 @@ theorem opposite_last_to_one (p r j : ℕ) (hp : 2 < p) (hr : r < p)
     rw [Nat.mod_eq_of_lt (by omega : ((p-r)*j)%p + (p-1)-p < p)] at hm
     omega
 
+theorem inverse_is_removed (n r p j : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
+    (hsmall : 2*r ≤ n-1) (hp : n ≤ p) (hpmax : p ≤ 2*(n-1))
+    (hj : Nat.Coprime p j)
+    (hretained : ∀ v, 1 ≤ v → v < n → v ≠ r →
+      2 ≤ (v*j)%p ∧ (v*j)%p + 2 ≤ p) :
+    (r*j)%p = 1 ∨ (r*j)%p = p-1 := by
+  have hp2 : 2 < p := by omega
+  obtain ⟨a, hap, _, haj⟩ := inverse_witness p j (by omega) hj.symm
+  have haj' : (a*j)%p = 1 := by simpa [Nat.mul_comm] using haj
+  have ha : 1 ≤ a := by
+    by_contra h
+    have : a = 0 := by omega
+    subst a
+    simp at haj'
+  by_cases han : a < n
+  · have har : a = r := by
+      by_contra hne
+      have hh := hretained a ha han hne
+      omega
+    left
+    simpa [har] using haj'
+  · have hpan : p-a < n := by omega
+    have hpa : 1 ≤ p-a := by omega
+    have hlast := opposite_residue p a j (by omega) hap haj'
+    have hpar : p-a = r := by
+      by_contra hne
+      have hh := hretained (p-a) hpa hpan hne
+      omega
+    right
+    simpa [hpar] using hlast
+
+theorem signed_inverse_coprime (p r j : ℕ) (hp : 2 < p) (hr : r < p)
+    (h : (r*j)%p = 1 ∨ (r*j)%p = p-1) : Nat.Coprime r p := by
+  rcases h with h | h
+  · apply Nat.coprime_of_mul_modEq_one j
+    change (r*j)%p = 1%p
+    simpa [Nat.mod_eq_of_lt (show 1 < p by omega)] using h
+  · have hop := opposite_last_to_one p r j hp hr h
+    have hc : Nat.Coprime (p-r) p := by
+      apply Nat.coprime_of_mul_modEq_one j
+      change ((p-r)*j)%p = 1%p
+      simpa [Nat.mod_eq_of_lt (show 1 < p by omega)] using hop
+    exact (Nat.coprime_self_sub_left (by omega : r ≤ p)).1 hc
+
+theorem signed_denominator_bound (n r p j : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
+    (hsmall : 2*r ≤ n-1) (hp : n ≤ p)
+    (hunit : (r*j)%p = 1 ∨ (r*j)%p = p-1)
+    (hretained : ∀ v, 1 ≤ v → v < n → v ≠ r →
+      2 ≤ (v*j)%p ∧ (v*j)%p + 2 ≤ p) : n+r ≤ p := by
+  rcases hunit with h | h
+  · exact denominator_bound n r p j hn hr hsmall (by omega) h hretained
+  · have hop := opposite_last_to_one p r j (by omega) (by omega) h
+    by_contra hnot
+    have hv := hretained (p-r) (by omega) (by omega) (by omega)
+    omega
+
+theorem double_residue_negative (p r j : ℕ) (hp : 2 < p)
+    (h : (r*j)%p = p-1) : ((2*r)*j)%p = p-2 := by
+  have he : (2*r)*j = r*j + r*j := by simp [Nat.two_mul, Nat.add_mul]
+  rw [he, Nat.add_mod, h]
+  have hle : p ≤ p-1+(p-1) := by omega
+  rw [Nat.mod_eq_sub_mod hle]
+  have hs : p-1+(p-1)-p = p-2 := by omega
+  rw [hs, Nat.mod_eq_of_lt (by omega)]
+
+theorem signed_double_bound (n r p j q : ℕ) (hr : 1 ≤ r)
+    (hsmall : 2*r ≤ n-1) (hp : 2 < p)
+    (hunit : (r*j)%p = 1 ∨ (r*j)%p = p-1)
+    (hq : ∀ v, 1 ≤ v → v < n → v ≠ r →
+      q ≤ (v*j)%p ∧ (v*j)%p + q ≤ p) : q ≤ 2 := by
+  have hv := hq (2*r) (by omega) (by omega) (by omega)
+  rcases hunit with h | h
+  · rw [double_residue p r j hp h] at hv
+    omega
+  · rw [double_residue_negative p r j hp h] at hv
+    omega
+
+theorem high_residue_certificate (n r p j q : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
+    (hsmall : 2*r ≤ n-1) (hp : 1 ≤ p) (hpmax : p ≤ 2*(n-1))
+    (hj : Nat.Coprime p j) (hq : 2 ≤ q)
+    (hretained : ∀ v, 1 ≤ v → v < n → v ≠ r →
+      q ≤ (v*j)%p ∧ (v*j)%p + q ≤ p) :
+    leastDenominator n r (by omega) hr ≤ p ∧ q ≤ 2 := by
+  have hpos : ∀ v, 1 ≤ v → v < n → v ≠ r → 1 ≤ (v*j)%p := by
+    intro v h1 h2 h3
+    have h := hretained v h1 h2 h3
+    omega
+  have hpn : n ≤ p := positive_residues_denominator n r p j hr hsmall hp hpos
+  have hret2 : ∀ v, 1 ≤ v → v < n → v ≠ r →
+      2 ≤ (v*j)%p ∧ (v*j)%p + 2 ≤ p := by
+    intro v h1 h2 h3
+    have h := hretained v h1 h2 h3
+    omega
+  have hi := inverse_is_removed n r p j hn hr hsmall hpn hpmax hj hret2
+  have hcop := signed_inverse_coprime p r j (by omega) (by omega) hi
+  have hd := signed_denominator_bound n r p j hn hr hsmall hpn hi hret2
+  constructor
+  · exact leastDenominator_minimal n r (by omega) hr p hd hcop.symm
+  · exact signed_double_bound n r p j q hr hsmall (by omega) hi hretained
+
 end ZhangDeletion
