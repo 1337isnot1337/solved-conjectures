@@ -34,7 +34,7 @@ Thus the original [Gyires inequality](https://yair-lavi.com/mincs-list/conjectur
 \qquad d_n=\frac{n!}{n^n}.
 ```
 
-When A is doubly stochastic, q_A/2 has value one and every first partial derivative equal to one at the all-ones vector. It therefore has the balance conditions of the proposed stable-polynomial norm inequality discussed in [the polarization note](gyires_polarization.md). That norm inequality is itself unproved. In addition, the polynomial q_A need not be stable or Lorentzian, so the proposed stable-polynomial statement would not apply to the whole weak Gyires problem even if established.
+When A is doubly stochastic, q_A/2 has value one and every first partial derivative equal to one at the all-ones vector. It therefore has the balance conditions of the proposed stable-polynomial norm inequality discussed in [the polarization note](gyires_polarization.md). That norm inequality is itself unproved. The polynomial q_A need not be stable or Lorentzian, so stability does not justify applying such a theorem directly to q_A. This does not rule out the stable-polynomial approach through the two summands: a valid norm theorem for p_A and p_{A^T} would give both stronger Gram inequalities, and the triangle inequality would then give the original weak Gyires inequality. The obstruction here concerns only the proposed closure under this particular sum.
 
 ## Exact counterexample to the closure claim
 
