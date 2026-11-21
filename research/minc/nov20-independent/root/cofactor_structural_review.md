@@ -160,3 +160,66 @@ for all positive semidefinite matrices, or an exact witness against the
 actual Chollet inequality. The broader-compound witness only excludes
 one stronger method. The common kernel and singular reduction remove
 neither the norm bound nor the unbounded-order singular case.
+
+## 6. Further exact boundaries
+
+The projection formulation added to the common-kernel note has the
+correct normalization. With $`m=n-1`$, simultaneous symmetrization gives
+the paired permanent divided by $`m!`$; separate symmetrizations give
+the squared cofactor modulus divided by $`(m!)^2`$. Since the separate
+projection lies below the simultaneous one, their orthogonal difference
+gives exactly
+
+```math
+z^*(G-L)z=m!\left((m!-1)\|P_{\rm sep}W\|^2
+ -\|(P_{\rm diag}-P_{\rm sep})W\|^2\right).
+```
+
+The common kernel proves injectivity on the span of the simultaneously
+projected omitted products. It need not prove injectivity on their raw
+tensor span. The revised note makes that restriction explicit.
+
+The [derivative-remainder obstruction](../sign/cofactor_derivative_obstruction.md)
+uses actual omitted-product derivatives. I checked its Gram realization
+and directly computed the $`t=2`$ cofactors: the first cofactor rises
+from $`34`$ to $`38`$, while the corresponding squared-entry cofactor
+rises from $`706`$ to $`774`$. Thus the residual is
+$`4^2-68=-52`$. For general $`t`$, its first entry is
+$`4(3-t^4)`$. The base and cross terms are retained in the note;
+their sum with this residual is positive. I reran its symbolic checker,
+which verifies the full positive semidefinite decomposition and the
+positive averaged gap as identities in $`t`$. This is a failed
+separate-positivity argument, not a cofactor counterexample.
+
+The [signed-curvature note](../inequalities/chollet_signed_curvature.md)
+uses the counting inner product on the symmetric group. I checked the
+complex Hermitian completeness relation, the factor two in
+$`\Delta f=2Tf`$, and the quotient drift term. These are identities at
+the identity Gram metric, not a constant-coefficient differential
+equation at every metric. The operator $`K=C-nI`$ has eigenvalues
+$`n!-n`$, $`n!/(n-1)-n`$, and $`-n`$ on the stated isotypic parts.
+The content bound outside the first two parts follows from the explicit
+box-moving argument, including the separate case $`n=3`$.
+
+The resulting energy estimate is
+
+```math
+E_K\le4(n-1)G-4(n-1)k_0\|f_0\|^2
+ -2(n-2)k_1\|f_1\|^2.
+```
+
+Thus $`G<0`$ implies $`E_K<0`$. The term $`-E_K`$ supplies positive
+curvature in the quotient-Laplacian identity, so it cannot alone
+contradict a negative minimum. The remaining gradient form is signed.
+Restricting to diagonal-preserving Gram directions also invalidates
+substitution of the full-basis completeness relation. The note correctly
+leaves a new tangent Hessian comparison as the missing rank-reduction
+step. No unconditional positivity, rank bound, or full resolution
+follows from these identities.
+
+A second internal reviewer independently checked the signed-curvature
+normalizations, spectral bound, restricted tangent formula, and primary
+transposition source. The same reviewer independently checked the
+border residual family. No correction was required. These are internal
+mathematical reviews, not external peer review or historical-priority
+certification.

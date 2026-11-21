@@ -276,3 +276,18 @@ historical priority, external peer review, or ten completed results is
 made. The hourly Minc research task is already enabled; future workers
 should fetch current main and the latest issue comments before assigning
 files or continuing one of these gaps.
+
+Two subsequent C30 calculations prevent repeating invalid shortcuts.
+The [exact derivative family](nov20-independent/sign/cofactor_derivative_obstruction.md)
+has residual T entrywise-squared minus U equal to diag(4(3-t^4),0,0),
+although its full cofactor difference has an explicit positive
+semidefinite decomposition. Separate positivity of derivative Grams
+does not control that residual. The [signed-curvature identity](nov20-independent/inequalities/chollet_signed_curvature.md)
+proves E_K<0 whenever the hypothetical averaged gap G<0, so its central
+term contributes positive curvature at a negative minimum. The remaining
+gradient comparison is signed and unproved; the diagonal-preserving
+tangent contraction is not the full central transposition operator.
+The cofactor kernel note now gives the exact angle inequality needed on
+the omitted-index projected span. None of these computations establishes
+that angle bound, excludes every negative minimum, or changes the full
+resolution count.

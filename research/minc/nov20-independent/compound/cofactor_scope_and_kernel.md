@@ -201,3 +201,71 @@ The failed general-compound statement acts on a different span and
 does not settle the contraction on the omitted-index family. No
 positivity proof for that contraction is supplied here, and no
 historical-priority claim is made for the witness or kernel calculation.
+
+## 5. Exact projection and angle formulation
+
+The factorial constants can be made explicit in ordinary tensor
+products. Put m=n-1. For each omitted index i, choose an ordering of
+the remaining vectors and form
+
+```math
+W_i=\bigotimes_{j\ne i}(v_j\otimes\overline{v_j}).
+```
+
+Regroup the factors into V^tensor m tensor conjugate(V)^tensor m.
+Let P_diag average simultaneous permutations of the two groups of
+factors, and let P_sep average their permutations independently:
+
+```math
+P_{\rm diag}=\frac1{m!}\sum_{\sigma\in S_m}
+ U_\sigma\otimes\overline{U_\sigma},\qquad
+P_{\rm sep}=\left(\frac1{m!}\sum_{\sigma\in S_m}U_\sigma\right)
+ \otimes
+ \left(\frac1{m!}\sum_{\tau\in S_m}\overline{U_\tau}\right).
+```
+
+Both are orthogonal projections and P_sep P_diag=P_sep, so
+P_sep<=P_diag. The two symmetrized Gram identities are
+
+```math
+G_{ij}=(m!)^2\langle P_{\rm sep}W_i,P_{\rm sep}W_j\rangle,
+\qquad
+L_{ij}=m!\langle P_{\rm diag}W_i,P_{\rm diag}W_j\rangle.
+                                                               \tag{5}
+```
+
+Indeed, simultaneous symmetrization has m! terms and gives a
+permanent divided by m!. Independent symmetrizations give two such
+factors, hence the squared modulus divided by (m!)^2. Changing an
+ordering of W_i leaves both projected vectors unchanged.
+
+For W=sum_i z_i W_i, equation (5) gives the exact identity
+
+```math
+z^*(G-L)z
+=m!\left((m!-1)\|P_{\rm sep}W\|^2
+          -\|(P_{\rm diag}-P_{\rm sep})W\|^2\right).       \tag{6}
+```
+
+Thus (1) is equivalent to the angle bound
+
+```math
+\|(P_{\rm diag}-P_{\rm sep})Y\|^2
+\le(m!-1)\|P_{\rm sep}Y\|^2
+\quad\text{for every }Y\in
+\mathcal E:=\operatorname{span}\{P_{\rm diag}W_i\}.         \tag{7}
+```
+
+Equivalently, the minimum singular value of P_sep restricted to E
+would have to be at least 1/sqrt(m!). The common-kernel result proves
+that this restriction is injective. It does not prove the lower bound
+on its singular values. Injectivity is asserted on E, not on the
+unprojected span of the W_i, which can contain vectors killed by both
+projections.
+
+Equation (7) is a reformulation, not an estimate. On the full tensor
+space, P_diag-P_sep has a residual sector with the wrong sign for
+unrestricted positivity in (6). The special omitted-index space E is
+therefore essential. The exact arbitrary-compound witness in Section 2
+already shows that replacing E by arbitrary paired-product spans is
+invalid.

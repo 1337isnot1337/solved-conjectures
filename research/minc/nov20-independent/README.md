@@ -58,3 +58,13 @@ These checks validate displayed algebra and implementations. They do not
 replace the general proofs or count as additional conjecture resolutions.
 The notes credit their classical inputs and leave priority unverified.
 
+Two further [cofactor induction](sign/cofactor_derivative_obstruction.md)
+and [signed-curvature](inequalities/chollet_signed_curvature.md) notes
+close proposed shortcuts without resolving C30. The former gives an
+arbitrarily negative genuine derivative remainder with explicit positive
+compensation in the full matrix. The latter proves that the central
+transposition energy is negative at every hypothetical negative averaged
+gap, so that term has the wrong sign to exclude a negative minimum.
+The [combined review](root/cofactor_structural_review.md#6-further-exact-boundaries)
+checks both calculations and the exact projection-angle reformulation.
+
