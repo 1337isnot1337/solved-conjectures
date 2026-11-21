@@ -60,6 +60,7 @@ import Conjectures.JohnsonPfaffianSwap
 import Conjectures.JohnsonPfaffianParity
 import Conjectures.JohnsonPfaffianResidual
 import Conjectures.JohnsonPfaffianSparse
+import Conjectures.JohnsonPfaffianRestriction
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
