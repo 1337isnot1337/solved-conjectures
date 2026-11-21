@@ -10,6 +10,10 @@ Only full open entries on [Yair Lavi’s Minc list](https://yair-lavi.com/mincs-
 
 [Current proof gaps and continuation state](NEXT.md) give a compact reading order for the latest work.
 
+## Rank-two matrices and two row types
+
+The [signed rank-two unit-ball theorem](real-radius/signed_rank_two_unit_ball.md) gives the sharp universal radius for radial monotonicity in every order and the large-order limit of Sinkhorn's rank-two radius. The [finite-order algorithm](real-radius/rank_one_envelope.md) computes that radius exactly. For nonnegative rank-two matrices the [subpermanent theorem](inequalities/rank_two_monotonicity.md) gives all the Holens–Đoković inequalities. For matrices with at most two distinct rows or columns, separate arguments establish [full-segment strict convexity](inequalities/two_row_convexity.md) and [both Gyires Gram bounds](inequalities/two_row_gram.md).
+
 ## Maximum permanent on a unitary orbit: local spectral reduction
 
 The [fourth-order germ](combinatorial/unitary_orbit_quartic_germ.md) proves an all-order near-scalar expansion and an exact fourth-order zero-diagonal orbit optimization with a sharp spectral envelope and sign-symmetric equality classification, with [rational coefficient checks](combinatorial/verify_unitary_orbit_quartic.py). It also proves multiplicative Schur monotonicity and second-order convergence to constant diagonal for all maximizers. No full P1 maximum formula or novelty priority is claimed, and the earlier Holden algebraic prescription and exceptional-spectrum formula are credited. **P1 remains open as a structural problem** under the live list's criteria.
