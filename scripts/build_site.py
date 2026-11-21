@@ -92,6 +92,7 @@ STATUS_LABEL_SLUGS = {
     "Sonntag–Teichert conjecture": "sonntag-teichert",
     "Horňák–Woźniak conjecture": "hornak-wozniak",
     "Circulants with circular chromatic index in the upper half": "circular-index-upper-half-circulants",
+    "Graphs with circular chromatic index in the upper half for Δ ≡ 2 mod 4": "circular-index-upper-half-delta-2-mod-4",
     "L-solitaire": "l-solitaire-limit-shapes",
     "Three-player War": "spivey-multiplayer-war",
     "Pham denominator degree": "pham-denominator-degree",
