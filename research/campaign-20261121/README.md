@@ -61,6 +61,15 @@ The Gray–Payne–Swisher–Watson fixed-number Franklin inequality and their m
 
 Mao–Wang's joint triangle-square conjecture has a reviewed proof of the Delannoy clause, with the Eulerian clause still open; it is not counted. Zeng's endpoint q-Narayana total-nonnegativity conjecture and Alexandersson's balanced-array conjecture have finite diagnostics but no resolution. Research continues. [Parking-polytope research](../parking-magic/) has complete symbolic coefficient checks through dimension six, with no arbitrary-dimension proof. [Further exclusions](exclusions-checkpoint.md) record exact prior resolutions found during the current search.
 
-The requested threshold does not lower the proof or novelty requirements. New discovery follows the repository's substantial-target policy. Current research includes [Merino–Welsh](../merino-welsh-joint-constraints/TARGET_SCREEN.md); diagnostic calculations and proved route obstructions are not counted as resolutions. Johnson's reviewed complete argument has moved to the result table above.
+The requested threshold does not lower the proof or novelty requirements. New discovery follows the repository's substantial-target policy. Johnson's reviewed complete argument has moved to the result table above.
+
+## Further work on established conjectures
+
+These research checkpoints do not increase the resolution count.
+
+- **Standard Simplex.** A [reviewed quantitative deduction](../standard-simplex/FIRST_MOMENT_STABILITY.md) from the credited prior all-cell first-moment theorem bounds the distance of a balanced Gaussian partition from a regular simplex by a constant times the square root of its moment deficit. The constant depends only on the number of cells. A mass-preserving strip construction proves this exponent is optimal, even after rotations and relabeling. A Hermite expansion also localizes nearly optimal small-noise partitions. [Three separate reviews and the quantitative source audit](../standard-simplex/) are included. This does not establish optimality at any fixed positive correlation, and no worldwide first-discovery claim is made.
+- **Audenaert.** The [norm-compression checkpoint](../audenaert-norm-compression/) derives the necessary entropy inequality at the Hilbert–Schmidt exponent, including singular and zero blocks. It identifies the missing sum of a scalar-shadow entropy and average internal block entropies, and records exact obstructions to two proposed applications of existing theorems. A claimed-resolution catalogue entry was checked against its primary paper and found to concern a different Audenaert inequality. The full two-row norm-compression conjecture remains unresolved here.
+- **Marcus–de Oliveira.** A [reviewed spectral-jet reduction](../marcus-de-oliveira-spectral-jet/) shows how an exact strict separator at a real spectral base would produce a full analytic counterexample family by imaginary perturbation. No separator was found. Floating-point linear-programming screens are diagnostic only.
+- **Merino–Welsh.** The [joint orientation/Tutte-factor research](../merino-welsh-joint-constraints/) isolates an unproved coupling inequality and records exact block decompositions and minimum-counterexample constraints. Infinite graph families disprove a proposed shortcut that discarded the Tutte factor. They do not disprove Merino–Welsh.
 
 
