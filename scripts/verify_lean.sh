@@ -137,6 +137,7 @@ modules=(
   Conjectures.JohnsonPfaffianResidual
   Conjectures.JohnsonPfaffianSparse
   Conjectures.JohnsonPfaffianRestriction
+  Conjectures.JohnsonPfaffianCoefficients
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany

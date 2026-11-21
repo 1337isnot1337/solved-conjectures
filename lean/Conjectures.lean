@@ -61,6 +61,7 @@ import Conjectures.JohnsonPfaffianParity
 import Conjectures.JohnsonPfaffianResidual
 import Conjectures.JohnsonPfaffianSparse
 import Conjectures.JohnsonPfaffianRestriction
+import Conjectures.JohnsonPfaffianCoefficients
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
