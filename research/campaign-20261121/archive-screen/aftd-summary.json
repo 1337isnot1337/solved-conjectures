@@ -1,0 +1,17 @@
+{
+  "repository": "rainwangphy/aftd-platform",
+  "commit": "a92dfddb67e6569f576a813bc2079f5233540ac9",
+  "knowledgebase_url": "https://raw.githubusercontent.com/rainwangphy/aftd-platform/a92dfddb67e6569f576a813bc2079f5233540ac9/web/data/kb.json.gz",
+  "knowledgebase_bytes": 26244074,
+  "knowledgebase_sha256": "c13c9c28517de2a883717f22b8d6dfa9f58c84367c81540a6bd0ab104b64f372",
+  "news_url": "https://raw.githubusercontent.com/rainwangphy/aftd-platform/a92dfddb67e6569f576a813bc2079f5233540ac9/web/news.json",
+  "news_sha256": "8405a35d00faa482abc45181757c588f53101ed8fd9c4c6ab66cb8470370e863",
+  "generated": "2026-11-20T21:14:25Z",
+  "section_counts": {
+    "declarations": 17937,
+    "open": 6424,
+    "literature": 1647
+  },
+  "news_entries": 79,
+  "raw_substring_matches": 1
+}

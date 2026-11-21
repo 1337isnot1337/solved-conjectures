@@ -1,0 +1,701 @@
+{
+  "date": "2026-11-21",
+  "note": "Grouped query descriptions preserve searched term groups; narrow query strings are exact. Failed initial 422 queries are excluded. All successful searches report incomplete_results=false. Results are GitHub's indexed issue bodies/comments, not an exhaustive download of every issue.",
+  "queries": [
+    {
+      "query_description": "repo:the-omega-institute/trureturing is:issue (\"2306.05824\" OR \"2507.11626\" OR \"2509.19649\" OR \"2108.09244\")",
+      "total_count": 1,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 22716,
+          "title": "Open problem (preregistration): refute Ferreira–Simon Conjecture 3 on Gaussian Mills derivative quotients (arXiv:2108.09244)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/22716",
+          "created_at": "2026-10-27T11:23:52Z",
+          "updated_at": "2026-10-29T02:18:46Z",
+          "comments": 2
+        }
+      ]
+    },
+    {
+      "query_description": "repo:the-omega-institute/trureturing is:issue (\"2611.14429\" OR \"0251626\" OR \"0288601\" OR \"1602.04359\")",
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    {
+      "query_description": "repo:the-omega-institute/trureturing is:issue (\"2406.17196\" OR \"00264-3\" OR \"2607.06207\" OR \"2608.03723\")",
+      "total_count": 4,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 5907,
+          "title": "第一档靶 ×3:Vishnyakova (arXiv:2608.03723) 的 Open Problem 7.1 / 7.2 在 n=2 与 1.9 的一次因子情形 —— 原文与数值均已核验",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/5907",
+          "created_at": "2026-09-06T15:09:19Z",
+          "updated_at": "2026-09-06T18:31:59Z",
+          "comments": 5
+        },
+        {
+          "number": 25199,
+          "title": "Open problem (preregistration): prove Karp–Vishnyakova–Zhang Conjecture 1, first sentence (arXiv:2408.01755v2): full real-order modified-Bessel ratio unimodality",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25199",
+          "created_at": "2026-11-01T10:29:40Z",
+          "updated_at": "2026-11-01T10:29:40Z",
+          "comments": 0
+        },
+        {
+          "number": 5952,
+          "title": "线 A(5040 / Robin)专项搜题第一轮:2 条候选 + 淘汰记录;并记「候选池又薄又贵」这一读数",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/5952",
+          "created_at": "2026-09-06T18:30:27Z",
+          "updated_at": "2026-09-10T08:54:01Z",
+          "comments": 14
+        },
+        {
+          "number": 6160,
+          "title": "[常设 LANE] GPT PRO arXiv 开放问题搜寻(5040 / 量子 RH)—— 选题函数、已证伪形态、已验上游、轮次日志",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/6160",
+          "created_at": "2026-09-07T10:09:29Z",
+          "updated_at": "2026-09-10T18:43:41Z",
+          "comments": 109
+        }
+      ]
+    },
+    {
+      "query_description": "repo:the-omega-institute/trureturing is:issue (\"2305.19128\" OR \"2505.05873\" OR \"2609.12005\" OR \"2607.17373\" OR \"1810.08655\")",
+      "total_count": 2,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 18758,
+          "title": "Open problem (preregistration): prove Fang-Zhang-Zhao Conjecture 4.1 (JMAA 561, 2026; arXiv:2505.05873) that the q,t-Hoggatt polynomials form a Sturm sequence",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/18758",
+          "created_at": "2026-10-18T07:44:10Z",
+          "updated_at": "2026-10-27T13:38:19Z",
+          "comments": 1
+        },
+        {
+          "number": 15111,
+          "title": "Preregister (research line): prove Zhang–Zhao Conjecture 4.8 (arXiv:2408.15506) — asymptotic normality of Speyer's g-polynomial coefficients for growing rank",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/15111",
+          "created_at": "2026-10-10T13:28:30Z",
+          "updated_at": "2026-10-14T09:35:17Z",
+          "comments": 4
+        }
+      ]
+    },
+    {
+      "query_description": "Roos OR Dospolova OR Germanskov OR Lyon (same repository, all issue states)",
+      "total_count": 4,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 25537,
+          "title": "Open problem: MO469781 weighted orthogonal-minor inequality",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25537",
+          "created_at": "2026-11-02T04:42:18Z",
+          "updated_at": "2026-11-02T09:54:18Z",
+          "comments": 2
+        },
+        {
+          "number": 29109,
+          "title": "Preregister source: OEIS A012200 — Kotesovec inverse-composition coefficient asymptotic",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/29109",
+          "created_at": "2026-11-11T02:49:57Z",
+          "updated_at": "2026-11-11T02:49:57Z",
+          "comments": 0
+        },
+        {
+          "number": 20116,
+          "title": "Open problem (preregistration): prove Hutton–Mehta–Vukovic Conjecture 1.5 (arXiv:2508.10664, §1): k orthogonal pure inputs to a C–Q channel have average output overlap at least the minimum over k distinct basis inputs",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/20116",
+          "created_at": "2026-10-21T22:58:16Z",
+          "updated_at": "2026-10-30T13:38:16Z",
+          "comments": 2
+        },
+        {
+          "number": 8333,
+          "title": "theory(quantum): 提交完整理论稿「二值观察、量子预测商与连续完备化」",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/8333",
+          "created_at": "2026-09-16T17:18:38Z",
+          "updated_at": "2026-09-16T17:22:47Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "query_description": "Ferreira Simon OR Sun Zhao OR Catalan-Larcombe OR Hoggatt (same repository, all issue states)",
+      "total_count": 14,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 18758,
+          "title": "Open problem (preregistration): prove Fang-Zhang-Zhao Conjecture 4.1 (JMAA 561, 2026; arXiv:2505.05873) that the q,t-Hoggatt polynomials form a Sturm sequence",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/18758",
+          "created_at": "2026-10-18T07:44:10Z",
+          "updated_at": "2026-10-27T13:38:19Z",
+          "comments": 1
+        },
+        {
+          "number": 25307,
+          "title": "Open problem (preregistration): refute Jiang Zeng’s Section 13(4) strong q-log-convexity preservation question for the kernel (1.3) in arXiv:2610.28691v1",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25307",
+          "created_at": "2026-11-01T17:59:01Z",
+          "updated_at": "2026-11-01T17:59:01Z",
+          "comments": 0
+        },
+        {
+          "number": 22716,
+          "title": "Open problem (preregistration): refute Ferreira–Simon Conjecture 3 on Gaussian Mills derivative quotients (arXiv:2108.09244)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/22716",
+          "created_at": "2026-10-27T11:23:52Z",
+          "updated_at": "2026-10-29T02:18:46Z",
+          "comments": 2
+        },
+        {
+          "number": 17022,
+          "title": "Research claim: whole Otmani supercongruence (arXiv 2608.14453v2, Conjecture 3.9)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/17022",
+          "created_at": "2026-10-14T20:10:19Z",
+          "updated_at": "2026-10-14T20:21:30Z",
+          "comments": 0
+        },
+        {
+          "number": 16084,
+          "title": "Preregistration: refute Sun's weighted distinct-sum conjecture (arXiv:1811.10503, Conjecture 4.9) at n = 2, |A| = 3",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/16084",
+          "created_at": "2026-10-13T01:55:31Z",
+          "updated_at": "2026-10-14T05:58:08Z",
+          "comments": 1
+        },
+        {
+          "number": 25120,
+          "title": "Open problem (preregistration): prove Werner Schulte’s second FORMULA conjecture in OEIS A378145 (2024; no arXiv identifier): the floor-weighted Catalan row sum",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25120",
+          "created_at": "2026-11-01T05:33:30Z",
+          "updated_at": "2026-11-01T05:33:30Z",
+          "comments": 0
+        },
+        {
+          "number": 17812,
+          "title": "Open problem (preregistration): refute the L-entropy faithfulness conjecture of Basak–Malvimat–Yoon (arXiv:2602.00617, PRL 2026) by a GME state of two Bell pairs with zero L-entropy",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/17812",
+          "created_at": "2026-10-16T13:34:56Z",
+          "updated_at": "2026-10-19T19:37:38Z",
+          "comments": 2
+        },
+        {
+          "number": 26755,
+          "title": "Open problem (preregistration): refute Mao–Xue Theorem 2 repeated-coordinate clause (arXiv:2512.06880), reposed in arXiv:2608.23998 §7 Remark, by an exact-half occupancy family",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/26755",
+          "created_at": "2026-11-05T01:54:47Z",
+          "updated_at": "2026-11-05T01:54:47Z",
+          "comments": 0
+        },
+        {
+          "number": 14674,
+          "title": "Preregister: refute the attainment clause of Mane Conjecture 6.6 (arXiv:2507.11596) — ζ_{−15,3} < 5 for the negative-index tribonacci polynomial",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/14674",
+          "created_at": "2026-10-09T03:36:01Z",
+          "updated_at": "2026-10-09T06:21:50Z",
+          "comments": 1
+        },
+        {
+          "number": 23509,
+          "title": "Open problem (preregistration): prove Wolfdieter Lang's OEIS A052952 FORMULA conjecture (2012), complex Fibonacci modulus floors (no source arXiv identifier)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/23509",
+          "created_at": "2026-10-29T04:30:25Z",
+          "updated_at": "2026-10-29T04:30:25Z",
+          "comments": 0
+        },
+        {
+          "number": 18768,
+          "title": "Open problem (preregistration): prove Amdeberhan-Chen-Moll-Sagan Conjecture 4.6 (Ann. Comb. 18, 2014; arXiv:1306.6511), first clause: the floor of the reciprocal tail sum of generalized Fibonacci numbers {rk}_{s,-t}",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/18768",
+          "created_at": "2026-10-18T08:30:56Z",
+          "updated_at": "2026-10-23T23:06:31Z",
+          "comments": 1
+        },
+        {
+          "number": 22376,
+          "title": "Open problem (preregistration): refute Garrappa–Gerhold–Popolizio–Simon Conjecture 25 (arXiv:2410.11852): the reverse Mittag-Leffler modulus characterization fails on a parameter family",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/22376",
+          "created_at": "2026-10-26T14:52:56Z",
+          "updated_at": "2026-11-01T05:33:59Z",
+          "comments": 1
+        },
+        {
+          "number": 23075,
+          "title": "Open problem (preregistration): refute Dmitry Karp’s Conjecture 4 (SF21 2011; no arXiv identifier located): fractional-degree Legendre Turán inequality (Refuted)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/23075",
+          "created_at": "2026-10-28T07:36:12Z",
+          "updated_at": "2026-11-10T20:27:34Z",
+          "comments": 1
+        },
+        {
+          "number": 31254,
+          "title": "Open problem (preregistration): prove Kam Cheong Au’s Conjecture 4.3 (arXiv:2602.08721v4): the coefficient-space Hilbert series of Example VIII",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/31254",
+          "created_at": "2026-11-17T02:50:07Z",
+          "updated_at": "2026-11-17T02:50:07Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "query_description": "Grochenig OR Gröchenig OR Pouso OR McCrea OR Kovalev (same repository, all issue states)",
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    {
+      "query_description": "Han Sabag OR Lyapunov positivity OR Brown Mol OR subtree annulus OR Macdonald semiring (same repository, all issue states; broad OR result, supplemented by narrow queries)",
+      "total_count": 28,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 30334,
+          "title": "Audit native corona configuration and partition source registrations",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/30334",
+          "created_at": "2026-11-14T08:28:31Z",
+          "updated_at": "2026-11-14T08:28:31Z",
+          "comments": 0
+        },
+        {
+          "number": 22960,
+          "title": "Escape audit unfinished: dictionary-dependent state of Shapiro regular trace identity",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/22960",
+          "created_at": "2026-10-28T00:48:33Z",
+          "updated_at": "2026-10-28T00:48:33Z",
+          "comments": 0
+        },
+        {
+          "number": 25374,
+          "title": "Escape audit unfinished: KurkovConvolutionRowRecursion",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25374",
+          "created_at": "2026-11-01T21:21:46Z",
+          "updated_at": "2026-11-06T16:49:18Z",
+          "comments": 0
+        },
+        {
+          "number": 29843,
+          "title": "Preregister: arXiv:2609.38657v1 Conjecture 3.6 — all finite-variable linear Boolean prime ideals",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/29843",
+          "created_at": "2026-11-13T03:48:21Z",
+          "updated_at": "2026-11-13T04:26:56Z",
+          "comments": 3
+        },
+        {
+          "number": 24084,
+          "title": "worktree: idle disk-pressure removal timeout leaves a partially deleted registered tree",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/24084",
+          "created_at": "2026-10-30T06:39:16Z",
+          "updated_at": "2026-11-10T19:00:39Z",
+          "comments": 3
+        },
+        {
+          "number": 25414,
+          "title": "Open problem (preregistration): refute Madhusudan Manjunath’s Section 7 expectation after Definitions 7.6–7.7 (arXiv:2410.15426v1)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25414",
+          "created_at": "2026-11-01T22:59:43Z",
+          "updated_at": "2026-11-10T07:06:10Z",
+          "comments": 1
+        },
+        {
+          "number": 18961,
+          "title": "Resolve the five original localized-character audit bindings",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/18961",
+          "created_at": "2026-10-18T17:13:36Z",
+          "updated_at": "2026-10-18T17:13:36Z",
+          "comments": 0
+        },
+        {
+          "number": 26349,
+          "title": "Open problem (preregistration): prove Vega Coso’s Section 7 item 4 odd-orbit-power length interval (arXiv:2610.23684v2)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/26349",
+          "created_at": "2026-11-04T03:55:10Z",
+          "updated_at": "2026-11-04T03:55:10Z",
+          "comments": 0
+        },
+        {
+          "number": 32371,
+          "title": "Research unit: classify zero-weight graphical rectangle factorization",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/32371",
+          "created_at": "2026-11-20T17:36:36Z",
+          "updated_at": "2026-11-20T19:59:38Z",
+          "comments": 5
+        },
+        {
+          "number": 24595,
+          "title": "Research unit: algebraic homological perturbation for arbitrary modules",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/24595",
+          "created_at": "2026-10-31T04:28:27Z",
+          "updated_at": "2026-10-31T20:51:53Z",
+          "comments": 1
+        },
+        {
+          "number": 32201,
+          "title": "Information audit for parity modulus equality and promoted helpers",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/32201",
+          "created_at": "2026-11-20T10:33:16Z",
+          "updated_at": "2026-11-21T05:00:00Z",
+          "comments": 16
+        },
+        {
+          "number": 32272,
+          "title": "Research: clique factorization from multiplicative nonedge relations",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/32272",
+          "created_at": "2026-11-20T13:40:14Z",
+          "updated_at": "2026-11-21T00:14:13Z",
+          "comments": 10
+        },
+        {
+          "number": 30232,
+          "title": "Preregister: finite Boolean nonconformal obstruction on arbitrary variables",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/30232",
+          "created_at": "2026-11-14T02:26:39Z",
+          "updated_at": "2026-11-14T03:54:59Z",
+          "comments": 8
+        },
+        {
+          "number": 24109,
+          "title": "Open problem (preregistration): prove Mikhail Kurkov’s OEIS A340991 Conjecture (A340991, no arXiv id): the universal convolution-row recursion",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/24109",
+          "created_at": "2026-10-30T08:06:02Z",
+          "updated_at": "2026-11-06T19:48:15Z",
+          "comments": 1
+        },
+        {
+          "number": 11537,
+          "title": "Lean report universe omits source-owner Reg assessments",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/11537",
+          "created_at": "2026-09-30T17:16:59Z",
+          "updated_at": "2026-10-01T06:00:36Z",
+          "comments": 2
+        },
+        {
+          "number": 10423,
+          "title": "Register the two-generator Koszul local-exactness theorem with its implicit instances",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/10423",
+          "created_at": "2026-09-26T21:10:38Z",
+          "updated_at": "2026-09-26T21:15:41Z",
+          "comments": 1
+        },
+        {
+          "number": 25824,
+          "title": "Planar rigidity geometry: unresolved source readout and 49 public theorem audits",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25824",
+          "created_at": "2026-11-02T21:14:47Z",
+          "updated_at": "2026-11-02T21:24:16Z",
+          "comments": 0
+        },
+        {
+          "number": 16937,
+          "title": "Registration blocked: §3.9 readouts of TwoQubitSVDEntropyLowerBound.result and MatrixTracePowerSum.trace_pow_add_two report IE-C050",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/16937",
+          "created_at": "2026-10-14T17:25:32Z",
+          "updated_at": "2026-11-02T17:11:50Z",
+          "comments": 24
+        },
+        {
+          "number": 26267,
+          "title": "Open problem (preregistration): refute Proposition 4.16’s generic global uniqueness extension to N ≤ m in Juan Antonio Vega Coso, arXiv:2610.16454v1",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/26267",
+          "created_at": "2026-11-03T23:08:51Z",
+          "updated_at": "2026-11-08T21:24:23Z",
+          "comments": 0
+        },
+        {
+          "number": 7587,
+          "title": "预登记(第一档,反驳):OEIS A175406(Greathouse 2012)「a(n)=⌊(n+1/2)·log 2⌋」在 n = 1121626023352383 为假",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/7587",
+          "created_at": "2026-09-13T15:37:22Z",
+          "updated_at": "2026-11-15T09:51:07Z",
+          "comments": 4
+        },
+        {
+          "number": 28159,
+          "title": "Original-D Frobenius consumer: faithful source-bound escape registrations remain unfinished",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/28159",
+          "created_at": "2026-11-08T17:14:13Z",
+          "updated_at": "2026-11-09T16:27:47Z",
+          "comments": 0
+        },
+        {
+          "number": 24016,
+          "title": "Open problem (preregistration): prove Ridouane Oudra’s FORMULA conjecture for Clark Kimberling’s OEIS A248183 (2023; arXiv id: none): the exact square-root floor threshold",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/24016",
+          "created_at": "2026-10-30T02:45:14Z",
+          "updated_at": "2026-10-30T02:45:14Z",
+          "comments": 0
+        },
+        {
+          "number": 24542,
+          "title": "Escape audit unfinished: literal Specht submodule and complex simplicity suppliers",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/24542",
+          "created_at": "2026-10-31T02:14:39Z",
+          "updated_at": "2026-10-31T23:48:46Z",
+          "comments": 6
+        },
+        {
+          "number": 22829,
+          "title": "Research unit (preregistration): Merca Conjecture 1 — full finite-truncation positivity (arXiv:2609.33770v1)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/22829",
+          "created_at": "2026-10-27T19:10:42Z",
+          "updated_at": "2026-10-27T20:46:07Z",
+          "comments": 4
+        },
+        {
+          "number": 25330,
+          "title": "Open problem (preregistration): prove Susumu Kubo’s Section 5 “Bi-Lipschitz embeddings” question (a) with an explicit inverse constant (arXiv:2606.30184v1)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25330",
+          "created_at": "2026-11-01T19:12:36Z",
+          "updated_at": "2026-11-01T19:12:36Z",
+          "comments": 0
+        },
+        {
+          "number": 32551,
+          "title": "Research unit: transfer logarithmic-frequency pole oscillation to prime-tail window mass",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/32551",
+          "created_at": "2026-11-20T23:57:08Z",
+          "updated_at": "2026-11-21T08:10:50Z",
+          "comments": 10
+        },
+        {
+          "number": 27532,
+          "title": "Open problem (preregistration): refute Lin–Yoshida Conjecture 23 (arXiv:1604.04674): essential samples can have a unique nonstar tropical Fermat–Weber tree",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/27532",
+          "created_at": "2026-11-07T02:23:54Z",
+          "updated_at": "2026-11-07T02:23:54Z",
+          "comments": 0
+        },
+        {
+          "number": 5214,
+          "title": "逃逸登记判官：现役接口、告警与剩余问题协调",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/5214",
+          "created_at": "2026-09-04T04:41:43Z",
+          "updated_at": "2026-11-12T15:52:21Z",
+          "comments": 335
+        }
+      ]
+    },
+    {
+      "query": "repo:the-omega-institute/trureturing is:issue \"Muirhead\"",
+      "total_count": 2,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 22287,
+          "title": "Open problem (preregistration): refute Meštrović–Andjić Conjecture 1.6 (arXiv:1804.00542v1): the four-means real-exponent range",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/22287",
+          "comments": 0
+        },
+        {
+          "number": 15145,
+          "title": "Preregister (research line): prove the p = ∞ endpoint of Gibilisco–Isola Conjecture 4.1 (math-ph/0407007) — logarithmic α-geometry scalar curvature is strictly Schur-increasing",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/15145",
+          "comments": 2
+        }
+      ]
+    },
+    {
+      "query": "repo:the-omega-institute/trureturing is:issue \"Brown\" \"Mol\"",
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    {
+      "query": "repo:the-omega-institute/trureturing is:issue \"Han\" \"Sabag\"",
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    {
+      "query": "repo:the-omega-institute/trureturing is:issue \"beta\" \"prime\" \"convolution\"",
+      "total_count": 19,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 25566,
+          "title": "Open problem: Migita all-degree continuous-convolution polynomial rigidity",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25566",
+          "comments": 1
+        },
+        {
+          "number": 26072,
+          "title": "Preregister: OEIS A322026 — Sequence Machine whole Dirichlet-inverse identity",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/26072",
+          "comments": 2
+        },
+        {
+          "number": 21709,
+          "title": "Conditional actual-C68 endpoint and strict physical-frequency sectors",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/21709",
+          "comments": 2
+        },
+        {
+          "number": 11890,
+          "title": "Preregister Weiss Pascal-matrix generation over prime fields",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/11890",
+          "comments": 0
+        },
+        {
+          "number": 24068,
+          "title": "Open problem (preregistration): prove the sharp answer to Lukang Sun’s Section VI lower-endpoint question (Theorem 2 / Remark 20; arXiv:2601.12944): for 0<q<1, Euclidean Tsallis heat-flow concavity iff q ≥ 2(d−1)²/(2d²+1)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/24068",
+          "comments": 1
+        },
+        {
+          "number": 27953,
+          "title": "Open problem (preregistration): answer Roynette–Yor (2005), (V.35), negatively for 0<α<1/2 (restated in arXiv:2611.02944v1)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/27953",
+          "comments": 2
+        },
+        {
+          "number": 27000,
+          "title": "Open problem (preregistration): prove Svinin’s Section 6 unnumbered gcd conjecture (arXiv:2611.02309v1): powers of two with nondecreasing exponents at every forward index",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/27000",
+          "comments": 1
+        },
+        {
+          "number": 27647,
+          "title": "Open problem (preregistration): refute Wenguang Zhai Conjecture 1 (arXiv:2607.17474; 2024): a fixed positive bounded function has square-root-sized fractional-sum errors",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/27647",
+          "comments": 0
+        },
+        {
+          "number": 22829,
+          "title": "Research unit (preregistration): Merca Conjecture 1 — full finite-truncation positivity (arXiv:2609.33770v1)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/22829",
+          "comments": 4
+        },
+        {
+          "number": 5952,
+          "title": "线 A(5040 / Robin)专项搜题第一轮:2 条候选 + 淘汰记录;并记「候选池又薄又贵」这一读数",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/5952",
+          "comments": 14
+        },
+        {
+          "number": 22716,
+          "title": "Open problem (preregistration): refute Ferreira–Simon Conjecture 3 on Gaussian Mills derivative quotients (arXiv:2108.09244)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/22716",
+          "comments": 2
+        },
+        {
+          "number": 29199,
+          "title": "Open problem (preregistration): refute Arts Remark 1 (arXiv:2609.15793): pointwise necessity of C >= 1 for exact recovery in the degree-corrected Poisson SBM",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/29199",
+          "comments": 1
+        },
+        {
+          "number": 25275,
+          "title": "Open problem (preregistration): prove Congyi Luo Problem 10.3 (arXiv:2609.11418v2): positive midpoint entropy curvature for every 4/7 < q ≤ 2−√2",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25275",
+          "comments": 1
+        },
+        {
+          "number": 23253,
+          "title": "Open problem (preregistration): prove Han–Pedon Conjecture C (arXiv:2610.36132v1): all higher-shift q-metallic Hankel determinants are quasipolynomials of the stated period",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/23253",
+          "comments": 10
+        },
+        {
+          "number": 6160,
+          "title": "[常设 LANE] GPT PRO arXiv 开放问题搜寻(5040 / 量子 RH)—— 选题函数、已证伪形态、已验上游、轮次日志",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/6160",
+          "comments": 109
+        },
+        {
+          "number": 5214,
+          "title": "逃逸登记判官：现役接口、告警与剩余问题协调",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/5214",
+          "comments": 335
+        },
+        {
+          "number": 23079,
+          "title": "Open problem (preregistration): refute Lacalle–Pozo Coronado–Martín-Cuevas Conjecture 1 on fidelity composition (2026, DOI 10.1007/s11128-025-05037-5; arXiv id unlocated)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/23079",
+          "comments": 1
+        },
+        {
+          "number": 26680,
+          "title": "Open problem (preregistration): prove Dikshtein–Ordentlich–Shamai Conjecture 3 on exact low-correlation BSC optimality (Entropy 2022; retained in arXiv:2609.27991v1)",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/26680",
+          "comments": 0
+        },
+        {
+          "number": 20336,
+          "title": "Research unit: prospective native Q probe with current source contracts",
+          "url": "https://github.com/the-omega-institute/trureturing/issues/20336",
+          "comments": 30
+        }
+      ]
+    }
+  ],
+  "comments_screened": [
+    {
+      "issue": 5907,
+      "count": 5
+    },
+    {
+      "issue": 6160,
+      "count": 109
+    },
+    {
+      "issue": 22716,
+      "count": 2
+    },
+    {
+      "issue": 5952,
+      "count": 14
+    }
+  ],
+  "comment_matches": [
+    {
+      "source": "trure_comments_5907_1",
+      "id": 5560874470,
+      "url": "https://github.com/the-omega-institute/trureturing/issues/5907#issuecomment-5560874470",
+      "tags": [
+        "vish"
+      ],
+      "lines": [
+        "lane/math/vishnyakova-quadratic-radii-0907."
+      ]
+    },
+    {
+      "source": "trure_comments_5907_1",
+      "id": 5561093541,
+      "url": "https://github.com/the-omega-institute/trureturing/issues/5907#issuecomment-5561093541",
+      "tags": [
+        "vish"
+      ],
+      "lines": [
+        "lane/math/vishnyakova-linear-factor-0907, based on",
+        "retrieved arXiv:2608.03723v1 HTML and checked the explicit open statement and"
+      ]
+    },
+    {
+      "source": "trure_comments_5907_1",
+      "id": 5561273644,
+      "url": "https://github.com/the-omega-institute/trureturing/issues/5907#issuecomment-5561273644",
+      "tags": [
+        "vish"
+      ],
+      "lines": [
+        "arXiv:2608.03723 这一篇里,本仓现已推进**四条**编号问题:Conjecture 6.5(`k=1`,#5859 已合入)、Open Problem 7.1、7.2(`n=2`,#5943)、Open Problem 1.9(一次因子情形,#5949)。**后三条都在今天**,且都复用 #5859 建立的 `lOp` / `m2` / `c2` 地基 —— 这正是 #5907 立单时押的那一注:同一篇论文的先验命中率已被实证抬高。"
+      ]
+    },
+    {
+      "source": "trure_comments_6160_1",
+      "id": 5577057850,
+      "url": "https://github.com/the-omega-institute/trureturing/issues/6160#issuecomment-5577057850",
+      "tags": [
+        "vish"
+      ],
+      "lines": [
+        "- **Katkova–Shapiro–Vishnyakova 2024** 的 Newton 型不等式:"
+      ]
+    }
+  ]
+}
