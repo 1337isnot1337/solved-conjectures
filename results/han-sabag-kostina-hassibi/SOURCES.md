@@ -46,3 +46,7 @@ The mathematical conclusion is the failure of the proposed sparse optimality ass
 
 Two independent internal reviews reproduce the source scope, feasible point, all four sparse alternatives and open family. They certify only their stated mathematical checks, not priority or peer review.
 
+
+## Additional independent review
+
+The [additional mathematical audit](../../research/2026-11-21-han-sabag-independent-review/AUDIT.md) reconstructs the original Lyapunov system, exhausts all sparse assignments, and verifies the open family with a separate exact checker. The [additional priority audit](../../research/2026-11-21-han-sabag-independent-review/PRIORITY.md) successfully reads v1's HTML and confirms that its Conjecture 1 has the same feasible set and sparse assertion as v2; this closes the earlier v1 access gap. It also checks the concrete global issue leads and related primary papers, while retaining the conference-PDF and indexing limits. Both reviews passed within their stated scope.

@@ -43,6 +43,8 @@ A separate independent audit directly enumerated five public proof collections a
 - Vishnyakova: [independent mathematical/source review](../2026-11-21-vishnyakova-independent-review/AUDIT.md) and [package source audit](../../results/vishnyakova-root-radius/SOURCE_AUDIT.md). The earlier equal-parameter and bounded-degree results do not establish arbitrary independent-parameter root exclusion.
 - Gröchenig: [independent audit](../2026-11-21-grochenig-independent-review/PRIORITY.md). The exact published source scope, all returned comments of repository issues 80 and 121, global issue histories, the 2,500-comment broad-search lead, the closest Gaussian/Gabor corpus manuscript and related primary papers were checked. No earlier full resolution of the upper-density comparison was found within the documented scope.
 
+- Han–Sabag–Kostina–Hassibi: [independent audit](../2026-11-21-han-sabag-independent-review/PRIORITY.md). Both v1 and v2 state the same standalone matrix feasible set and sparse-optimality assertion. Global issue leads, the closest feedback-capacity and detectability papers, and public proof inventories yielded no matching earlier resolution. The conference PDF and secondary summary access limits remain explicit.
+
 ## Limits and disposition
 
 Global GitHub code search repeatedly returned HTTP 429 with renewed retry delays. Those calls supply no negative evidence, and repeated retries were stopped. Successful earlier repository-specific searches, directly read corpus files and the global issue searches are separate evidence.

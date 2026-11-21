@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Joint eleven-family checkpoint
+
+Admitted Han–Sabag–Kostina–Hassibi's exact matrix disproof to the [joint ledger](research/2026-11-21-joint-results/) after additional independent mathematical, source, priority and provenance reviews. The selected reviewed set now contains thirteen packages: seven from the current four-worker group and six from the parallel campaign. Removing corrected-source Novelli–Thibon from the strict count and merging the two López Pouso–Segura packages gives eleven named families. Other newer parallel packages remain outside this selected review until separately admitted.
+
+The [mathematical audit](research/2026-11-21-han-sabag-independent-review/AUDIT.md) reconstructs the exact feasible point, all sparse assignments and the open family, using a separate rational Gaussian-elimination checker. The [priority audit](research/2026-11-21-han-sabag-independent-review/PRIORITY.md) compares both source versions and records bounded search coverage and access gaps. The strict gap between infima avoids relying on optimizer nonattainment. The result remains confined to the displayed matrix conjecture, with no new general communication-code claim. Sun–Zhao's additional exact ratio counterexample passed independent mathematical review but remains outside this strict tally pending the full 2020 journal version and the author's Maple archive. No Lean work was performed.
+
 ## 2026-11-21 — Lyon's conjecture
 
 Added a complete proposed computer-assisted proof of the strict decrease of the transformed gamma median for every positive real shape. Analytic arguments prove the ranges at most one tenth and at least seven. On the intervening compact interval, exact outward-rounded integer arithmetic certifies 4258 median brackets and 4256 covering cells. A written convexity argument extends each strict bound to every real point in its cell; this is not a sample-based monotonicity inference.

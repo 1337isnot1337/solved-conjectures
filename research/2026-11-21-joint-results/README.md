@@ -4,17 +4,17 @@ Research checkpoint: 21 November 2026. Coordination: [issue 156](https://github.
 
 ## Count and attribution
 
-This reviewed joint checkpoint includes twelve complete proposed result packages from two concurrent groups. Eleven packages resolve the printed source assertions directly; grouping the two López Pouso–Segura packages gives **ten named conjecture/problem families** in the strict tally below.
+This reviewed joint checkpoint includes thirteen complete proposed result packages from two concurrent groups. Twelve packages resolve the printed source assertions directly; grouping the two López Pouso–Segura packages gives **eleven named conjecture/problem families** in the strict tally below.
 
-The remaining package proves Novelli–Thibon's intended monomial-product conjecture with a source-supported correction of its printed exponent index. It is documented as an additional result and is not needed to reach the strict ten-family tally.
+The remaining package proves Novelli–Thibon's intended monomial-product conjecture with a source-supported correction of its printed exponent index. It is documented as an additional result and is not needed to reach the strict eleven-family tally.
 
-Seven packages were developed by the current four-worker group: Chen–Kitaev–Zhang, Zhu, the two Ferreira–Simon problems, Simon, Novelli–Thibon, and the López Pouso–Segura quadrature disproof. Five packages were developed by the parallel group recorded in [its checkpoint](../campaign-20261121/): Fang–Zhang–Zhao's infinite-log-convexity disproof, McCrea, the López Pouso–Segura Bessel proofs, Vishnyakova, and Gröchenig. The current group independently reviewed those five packages before including them here. The [independent attribution audit](ATTRIBUTION.md) checks the baseline, exact publication histories and counting arithmetic. This is an attributable joint tally. Later packages in the parallel group's live checkpoint, including Han–Sabag–Kostina–Hassibi, are outside this twelve-package review.
+Seven packages were developed by the current four-worker group: Chen–Kitaev–Zhang, Zhu, the two Ferreira–Simon problems, Simon, Novelli–Thibon, and the López Pouso–Segura quadrature disproof. Six packages were developed by the parallel group recorded in [its checkpoint](../campaign-20261121/): Fang–Zhang–Zhao's infinite-log-convexity disproof, McCrea, the López Pouso–Segura Bessel proofs, Vishnyakova, Gröchenig, and Han–Sabag–Kostina–Hassibi. The current group independently reviewed those six packages before including them here. The [original attribution audit](ATTRIBUTION.md) and [Han–Sabag–Kostina–Hassibi supplement](ATTRIBUTION_HAN.md) check the baseline, exact publication histories and counting arithmetic. This is an attributable joint tally. Other packages in the parallel group's live checkpoint remain outside this selected review unless separately admitted after cross-review.
 
 Each package has a complete written proof or exact refutation with its precise source scope stated, a separate internal mathematical review, and a documented search for earlier resolutions. All remain unrefereed. The searches found no earlier full resolution within their stated scope; inaccessible sources and indexing limits are recorded. A search cannot establish worldwide absence of prior work.
 
 No Lean work was performed. Exact algebraic computations check identities and source conventions. Positive finite tests are not used as proofs of universal statements.
 
-## The ten families
+## The eleven families
 
 | # | Named conjecture | Complete result | Origin and discussion |
 | --- | --- | --- | --- |
@@ -28,11 +28,12 @@ No Lean work was performed. Exact algebraic computations check identities and so
 | 8 | [McCrea's conjecture](../../results/mccrea-single-crossover/) | Original Conjecture 9.2 holds: a unique crossover density exists for every permitted modulus, with the eventual strict comparisons for every fixed density in the source interval on either side of the crossing. | Parallel group; [168](https://github.com/1337isnot1337/solved-conjectures/issues/168) |
 | 9 | [Vishnyakova's root-radius conjecture](../../results/vishnyakova-root-radius/) | The full outer-root-radius bound holds for every positive degree, every positive weight, and arbitrary independent parameters. A stronger disk bound is proved and the extremizer is identified. Original and weighted formulations count together. | Parallel group; [182](https://github.com/1337isnot1337/solved-conjectures/issues/182) |
 | 10 | [Gröchenig's problem](../../results/grochenig-zero-density/) | The upper Beurling-density comparison in Problem 4.12 is false, by one infinite Gaussian shift sum with absolutely summable coefficients. The separate lower-density inequality remains open. | Parallel group; [191](https://github.com/1337isnot1337/solved-conjectures/issues/191) |
+| 11 | [Han–Sabag–Kostina–Hassibi's conjecture](../../results/han-sabag-kostina-hassibi/) | The universal Lyapunov-positivity sparse-optimality assertion is false. An exact feasible encoder beats the infimum over every sparse assignment, with a strict gap on an open family. | Parallel group; [197](https://github.com/1337isnot1337/solved-conjectures/issues/197) |
 
 
 ## Additional corrected-source result
 
-[Novelli–Thibon's monomial-product conjecture](../../results/novelli-thibon/) is proved for all partition pairs and independent parameters, using the exponent index required by the source's own worked example. The correction and the exact intended statement are explicit. This additional result, including its hook-formula consequence, contributes zero to the strict ten-family count. Discussion: [issue 180](https://github.com/1337isnot1337/solved-conjectures/issues/180).
+[Novelli–Thibon's monomial-product conjecture](../../results/novelli-thibon/) is proved for all partition pairs and independent parameters, using the exponent index required by the source's own worked example. The correction and the exact intended statement are explicit. This additional result, including its hook-formula consequence, contributes zero to the strict eleven-family count. Discussion: [issue 180](https://github.com/1337isnot1337/solved-conjectures/issues/180).
 
 ## Mathematical content
 
@@ -167,11 +168,41 @@ The coefficient sign-change set is contained in the even integers and contains a
 
 [Proof](../../results/grochenig-zero-density/PROOF.md), [additional independent mathematical review](../2026-11-21-grochenig-independent-review/AUDIT.md), [additional independent priority audit](../2026-11-21-grochenig-independent-review/PRIORITY.md).
 
+### Han–Sabag–Kostina–Hassibi
+
+The explicit matrix conjecture asks whether every feasible diagonal-matrix instance admits an optimal encoder with exactly one nonzero entry per column. The displayed feasible set allows independent diagonal positive semidefinite $`\Pi`$ and arbitrary real $`\Gamma`$; no extra relation between them is assumed.
+
+For $`B=\operatorname{diag}(4/5,3/5)`$ and $`H=\operatorname{diag}(7/4,1)`$, the package gives rational $`\Pi,\Gamma`$ with unique Lyapunov solution
+```math
+J=\operatorname{diag}\left(\frac{211}{57600},
+\frac{35289}{246113344}\right)\succ0
+```
+and feasible power $`23825/22491`$. All four sparse assignments, with arbitrary signs and magnitudes of their nonzero entries, have infima
+```math
+\frac{481}{441},\quad\frac{481}{144},\quad
+\frac{865}{441},\quad\frac{8065}{7056}.
+```
+Consequently
+```math
+P_{\mathrm{unrestricted}}\le\frac{23825}{22491}
+<\frac{481}{441}=P_{\mathrm{sparse}},
+\qquad
+P_{\mathrm{sparse}}-\frac{23825}{22491}
+=\frac{706}{22491}>0.
+```
+The same construction works for every gain with
+```math
+\frac{1360}{567}<h^2<\frac{4675}{1296}.
+```
+The strict infimum gap rules out sparse minimizing sequences as well as sparse optimizers. This refutes the complete matrix assertion; no separate general communication-code stabilization claim is added.
+
+The additional checker solves the four-variable Lyapunov system by rational Gaussian elimination and imports no package code. [Disproof](../../results/han-sabag-kostina-hassibi/PROOF.md), [independent mathematical review](../2026-11-21-han-sabag-independent-review/AUDIT.md), [independent priority review](../2026-11-21-han-sabag-independent-review/PRIORITY.md). The latter compares both source versions and records the remaining conference-PDF and indexing limits.
+
 The [final global issue-history refresh](PRIORITY_REFRESH.md) supplements the individual source audits and records the decisive prior-proof exclusions.
 
 ## Prior-resolution corrections
 
-The following mathematically valid reproofs do not contribute to the ten-family count.
+The following mathematically valid reproofs do not contribute to the eleven-family count.
 
 | Excluded target | Decisive earlier resolution | Repository action |
 | --- | --- | --- |
@@ -192,10 +223,14 @@ Coulter–Do–Moskovsky's full-profile limiting roots and eventual monotone tai
 
 The [Rivero scope note](../2026-11-21-special-functions-rivero/SCOPE.md) documents an arithmetic obstruction to the literal real-threshold tail equivalence. The intended nonarithmetic scope and related prior full text remain unsettled, so this is also uncounted.
 
+Sun–Zhao's latest-arXiv iterated-ratio conjecture has an exact counterexample that passed [independent mathematical and source-indexing review](../2026-11-21-sun-zhao-independent-review/AUDIT.md). The full 2020 journal version and the author's Maple archive remain unread despite the [focused access check](../2026-11-21-sun-zhao-independent-review/SOURCE_ACCESS.md). Those are concrete unresolved source and priority leads, so this additional package remains outside the strict joint tally.
+
 ## Delivery and review
 
 All packages are on main and linked from the repository catalogue. The quadrature publication at [a0dad99](https://github.com/1337isnot1337/solved-conjectures/commit/a0dad99107f4ae66a6b1a525bd632464386c68e6) passed the exact README gate for 53 entries and strict MathML rendering of all nine affected Markdown pages, comprising 233 expressions. A subsequent site failure exposed doubled TeX escapes in the independently published Vishnyakova package; those escapes, an unsupported text command and its missing explicit status marker were corrected. Its landing page and proof then rendered 138 expressions successfully.
 
 The complete research-site build and its content, link, mathematics and metadata checks passed at commit 444696374a21085f0c8193db5facab49ede6e616, [run 44879720088](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44879720088). This check includes the Gröchenig publication and the Vishnyakova rendering repairs.
+
+The subsequent [full research-site run 44880555899](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44880555899) passed at the strict ten-family checkpoint commit a331a79e4f440a9c95f66aeb3f68a3433ffd61f9. Its checked repository also contains the Han–Sabag–Kostina–Hassibi package now admitted above.
 
 The written proofs and source audits are the mathematical evidence. Automated algebra and rendering checks establish their stated technical properties, not external acceptance or global priority.
