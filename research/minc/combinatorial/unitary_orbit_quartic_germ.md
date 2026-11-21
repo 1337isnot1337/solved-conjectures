@@ -546,6 +546,16 @@ Exact phrases were also searched in current public sources.
 That is not an exhaustive novelty certificate, and the present
 theorem has no external mathematical review.
 
+The [targeted quartic priority audit](unitary_orbit_quartic_priority_addendum.md)
+credits the principal-subpermanent expansion to earlier work, including
+Merris–Rebman–Watkins and Grover's derivative formula. It also records the
+classical cycle expansion and the elementary Gram-norm origin of the
+deficit identity. No separate novelty is claimed for those ingredients.
+The potentially distinct statement is the optimized fourth-order
+asymptotic with attainable diagonal drift. The audit found no earlier
+full counterpart, but several original extremal papers remain
+inaccessible in full; historical priority remains provisional.
+
 The missing implication is an explicit evaluation of the nonnegative deficit minimum in (19), equivalently the entrywise fourth-power maximum in (16), for
 general spectra, followed by control away from the scalar
 regime. The quartic functional still requires optimization over

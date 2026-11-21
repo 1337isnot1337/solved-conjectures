@@ -83,3 +83,7 @@ Dropping the requirement that these weights come from one unitary product gives 
 The nearby maximum-permanent theorem for nonnegative stochastic matrices of bounded rank is also already claimed in [Lavi's 2026 paper](https://yair-lavi.com/publications/bounded-rank-permanent/), [primary text](https://hexagonmath.org/pdf/2611.00353v1). Its hypotheses do not include general complex PSD matrices or arbitrary unitary orbits. Taking entrywise absolute values does not preserve the spectrum or rank, so it supplies no immediate reduction of Problem 1.
 
 No new structural formula or qualifying named subsidiary has emerged from this pass. The P8 endpoint obstruction is recorded separately; neither note changes the solved-conjecture count.
+
+## Fourth-order expansion follow-up
+
+The [quartic priority addendum](unitary_orbit_quartic_priority_addendum.md) separates the classical principal-subpermanent and cycle expansions from the proposed optimized fourth-order asymptotic. It obtains the 1986 Grone–Johnson–de Sá–Wolkowicz paper and checks the relevant Grover derivative and graph-cycle formulas. The elementary deficit inequality and matching-support equality are not assigned separate novelty. The optimized diagonal-drift argument is the potentially distinct claim; no earlier full counterpart was found in this bounded audit. Drew–Johnson and Hu full-text access limits remain. The local result does not compute the full P1 maximum.
