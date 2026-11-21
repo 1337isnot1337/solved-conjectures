@@ -1,5 +1,7 @@
 # Malek's conjecture
 
+**Lean status:** none
+
 For every nonnegative doubly stochastic matrix $`A`$ of order $`n\ge2`$ and every subpermanent degree $`0\le k\le n`$,
 
 ```math

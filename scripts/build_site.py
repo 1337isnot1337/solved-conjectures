@@ -55,6 +55,7 @@ SOURCE_TITLES = {
 }
 STATUS_LABEL_SLUGS = {
     "Baricz–Pogány's asymptotic-coefficient positivity conjecture": "baricz-pogany-coefficients",
+    "Malek's conjecture": "malek-subpermanent",
     "Pula–Song–Wanless conjecture": "pula-song-wanless",
     "Perron root of permanental compounds": "perron-root-permanental-compounds",
     "Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture": "kvz-bessel-unimodality",
