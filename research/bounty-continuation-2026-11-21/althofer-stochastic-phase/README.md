@@ -30,7 +30,7 @@ Y=\sigma+2^{h-S_T}3^T c.
 An exact hit S_T=d leaves height two and lands in a good residue class. An overshoot S_T=d+1 leaves an exponent one relative to the old sign. After re-encoding the sign, its new height is
 
 ```math
-h_{\rm next}=1+v_2(3^T c+\sigma).
+h_{\mathrm{next}}=1+v_2(3^T c+\sigma).
 \tag{1}
 ```
 
@@ -99,7 +99,7 @@ For k>=3, the order of 3 modulo 2^k is 2^(k-2). Because c is odd, the congruence
 is either insoluble or specifies one residue class of t modulo 2^(k-2). Equations (1)–(5) thus imply, for H>=4,
 
 ```math
-\Pr(h_{\rm next}\ge H)
+\Pr(h_{\mathrm{next}}\ge H)
 \le \frac{a_d}{2^{H-3}}+p_d^*
 \le 2^{2-H}+\frac1{\sqrt{2d}}.
 \tag{6}
@@ -116,7 +116,7 @@ M=\left\lceil\mathop{\mathrm{log}}_2(3^d c+1)\right\rceil+1.
 Equation (1) gives h_next<=M. Summing (6), and bounding the H=3 tail by a_d<=1/2, yields
 
 ```math
-\mathbb E h_{\rm next}
+\mathbb E h_{\mathrm{next}}
 \le 3+M p_d^*
 \le 3+\frac{M}{\sqrt{2d}}.
 \tag{7}
@@ -154,16 +154,16 @@ Y=1+2\cdot3^{t_0}c=2^H-1.
 Its next sign is -1 and its next bad height is exactly H. Therefore
 
 ```math
-\Pr(h_{\rm next}=H)\ge b_d(t_0)>0,
+\Pr(h_{\mathrm{next}}=H)\ge b_d(t_0)>0,
 \qquad
-\mathbb E h_{\rm next}\ge b_d(t_0)H.
+\mathbb E h_{\mathrm{next}}\ge b_d(t_0)H.
 \tag{9}
 ```
 
 The initial height h=d+2 stays fixed while L, H and c tend to infinity. Thus
 
 ```math
-\sup_{c\text{ odd}}\mathbb E h_{\rm next}=\infty
+\sup_{c\text{ odd}}\mathbb E h_{\mathrm{next}}=\infty
 \qquad\text{for each fixed }h\ge3.
 \tag{10}
 ```
@@ -210,3 +210,5 @@ The phase-duration distribution does suppress long congruence conditions down to
 The accompanying checker verifies the overshoot mass formula against an independent stopped-walk dynamic program, checks the finite arithmetic-progression inequality in exact rational arithmetic, and verifies examples of the symbolic family (8) with literal signed Collatz transitions. Those checks test the formulas. They do not verify the conjecture on a numerical range or replace the all-parameter arguments above.
 
 The coordinator independently reviewed the all-parameter argument and replayed the checker. It passed 60 renewal-depth comparisons, 9,180 exact arithmetic-progression checks, and 40 literal checks of the constructed transition family. The saved JSON records these checks, not a solved-conjecture count.
+
+A subsequent [incoming-flow investigation](../althofer-incoming-measure/README.md) studies a different global certificate. It excludes power weights multiplied by an arbitrary positive function of a fixed residue class and the current phase height. Its three-adic almost-everywhere construction still lacks the required pointwise finiteness and summability on positive integers. Neither investigation proves absorption.
