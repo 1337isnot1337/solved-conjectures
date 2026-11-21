@@ -121,5 +121,8 @@ include arbitrary complex phases. The
 and [Wanless's survey](https://arxiv.org/abs/2202.01867) concern the
 unrestricted question. Searches using the block-permanent, wreath-product,
 rank-two, symmetric product and sphere-bound formulations found these
-related results. Priority of the combined rank test is unverified. The
+related results. McNulty’s [1998 doctoral thesis](https://hdl.handle.net/10044/1/122572),
+Theorem 5.15, concerns ordinary immanants indexed by partitions; it
+does not give the fixed wreath-subgroup sum before conjugacy averaging.
+Priority of the combined rank test is unverified. The
 unrestricted numbered entry receives no credit from this partial theorem.

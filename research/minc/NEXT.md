@@ -343,3 +343,14 @@ dimension. The [equality proof](orbit-bounds/equality.md) classifies
 the equal-block maximizers up to phases and permutations and identifies
 the strict gap in the same bound for other spectra. Its magnitude and
 the general orbit maximum remain open. This contributes zero full entries.
+
+**C9 and P2/C42.** The [packet Gram bound](orbit-bounds/marcus_packets.md)
+proves Marcus's inequality for arbitrary complex rank-two inputs in all
+block parameters, using earlier small-packet-count results and an explicit
+all-rank sufficient test. The [cycle-matching bound](orbit-bounds/primitive_dominance.md)
+gives degree-one permanent dominance for every sufficiently large primitive
+action and all-character dominance there except for the natural alternating
+and symmetric groups. Imprimitive wreath products remain an obstruction
+to extending either argument. These results and P1 were separately
+reviewed by other workers. To replay the auxiliary identities with SymPy,
+run `python research/minc/orbit-bounds/verify.py`.
