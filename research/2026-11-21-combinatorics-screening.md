@@ -29,3 +29,19 @@ Active, unresolved. The full Conjecture 4 of [arXiv:2502.17117v1](https://arxiv.
 Screened but not reserved. [Ultra log-concavity and real-rootedness of dependence polynomials, arXiv:2408.09152v2](https://arxiv.org/html/2408.09152v2), revised 10 October 2026, retains the general dependence-polynomial conjecture and the stronger 2-matroid conjecture. Its proven cases concern graphs avoiding an induced edge plus two isolated vertices, and graphs with an independent set of codimension two. No general proof was found in this screening, and no result is claimed here.
 
 All candidate statuses must also be checked against public GitHub proof repositories, since general web search has missed relevant earlier manuscripts during this campaign.
+
+## Celano–Sieger–Spiro's conjectures
+
+Excluded: the [Eulerian-graph recurrence](https://mathdb.com/p/359926/the-eulerian-graph-recurrence-conjecture-for-bd-g) and the [multipartite orientation multiplicity](https://mathdb.com/p/359927/the-multipartite-orientation-conjecture-for-the-multiplicity) already have public complete proof notes. The first uses cyclic rotation in a balanced orientation. The second pairs consecutive vertices and obtains a nonzero first coefficient at the predicted root multiplicity by an odd-parity count of minimal pairings. Their database status labels do not erase those earlier arguments.
+
+## Sokal's functional-digraph conjecture
+
+Excluded: Bao-Xuan Zhu, [*Coefficientwise Hankel-total positivity from a universal cumulant lifting*, arXiv:2611.01172v1](https://arxiv.org/html/2611.01172v1), Theorem 1.3, proves the coefficientwise Hankel total positivity of the component polynomials. The abstract and theorem explicitly identify Sokal's conjecture. The broader joint refinement by cyclic vertices and components has different scope and is not resolved by that theorem.
+
+## Bóna–Dimitrov–Labelle–Li–Pappe–Vindas-Meléndez–Zhuang's conjectures
+
+The proposed Sturm and Sturm-unimodality assertions are explicitly marked resolved immediately after Conjectures 5.4–5.5 in [arXiv:2212.10586v2](https://arxiv.org/pdf/2212.10586). The real-rootedness classification in Conjecture 5.12 has a previously reported boundary counterexample and a candidate corrected-classification manuscript by Shunpei Shimizu; see the [source record](https://mathdb.com/p/405372/real-rootedness-classification-for-refined-narayana-polynomi). Neither is a fresh target.
+
+## Kellner's conjectures
+
+Excluded after independent derivation. Conjectures 1.4 and 4.6 of [arXiv:2509.05235v1](https://arxiv.org/html/2509.05235v1) follow from a closed formal generating function obtained by summing the exact defining recurrence. However, the separate reviewer located Yutaro Matsuno, [*A resolution of Kellner's conjectures on Wilson quotients*, arXiv:2607.10106v1](https://arxiv.org/abs/2607.10106), July 2026. Its abstract explicitly reports the generating function and the two resolutions. A calculation note is retained only as an excluded rediscovery. The prior hit came from a global GitHub search by author and conjecture, despite no relevant hit from the original arXiv identifier. This is a concrete reason to search both identifiers and names before publication.
