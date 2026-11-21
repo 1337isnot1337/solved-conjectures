@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-21 — Johnson's conjecture
+
+Added the [complete proposed proof](results/johnson-pfaffian/) of Conjecture 7.1 for all positive nonincreasing log-convex kernels, all finite even ordered real configurations, and all perfect matchings. The argument proves a stronger matrix theorem for products of circular interval factors. Replacing a wrapped interval by its complement changes only positive vertex factors, so Johnson's existing additive-interval endpoint inequality applies after any cyclic cut. Adjacent-pair deletion proves all noncrossing matching bounds, and the credited uncrossing reduction gives all matchings. The source's endpoint theorem, rainbow bound, and earlier nonvanishing resolution are not claimed as new.
+
+Separate combinatorics, analysis, and root mathematical reviews passed. The supplementary exact checker passed its gauge, cyclic-sign, adjacent-pair, and logarithmic-reconstruction checks; no finite computation is a premise of the universal proof. The primary-source and seven-archive priority audit found no earlier exact resolution within its explicit limits. The additional [AIM/OpenAI audit](research/2026-11-21-aim-openai-priority/AUDIT.md), committed separately, covers 178,246 native UTF-8 bodies, 933 PDF extractions, and 2,029 embedded text records, including a complete normalized native residual pass. Binary exclusions and semantic-search limits remain explicit.
+
+This subgroup's reviewed proposed-resolution tally is now thirteen: seven proofs and six disproofs. The earlier withdrawn families remain excluded. These are unrefereed claims with internal reviews. No Lean work was performed for this result.
+
 ## 2026-11-21 — Complete Sonntag–Teichert realization in Lean
 
 Formalized an explicit oriented graph realizing any two disjoint stars and proving all additional vertices are isolated in its domination hypergraph. Together with the tournament theorem and forward classification, this completes the result package in Lean. Strict source compilation, all-owned axiom audit and stock-kernel replay passed; the combined repository gate remains pending.

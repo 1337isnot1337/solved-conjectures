@@ -23,6 +23,16 @@ The [Ferreira–Simon stochastic-order proof](../results/ferreira-simon-stochast
 
 The [Simon stable-infimum proof](../results/simon-stable-infimum/PROOF.md) is also analytic. Its [independent audit](../results/simon-stable-infimum/AUDIT.md) verifies the source normalization, prior Mellin transform, Brownian endpoint, positivity and parameter monotonicity of the logarithmic Lévy kernels, exponential integrability and independent mean-one multiplier. Conditional Jensen gives the full convex order. There is no numerical verifier or workflow test for this argument; the [source audit](../results/simon-stable-infimum/SOURCES.md) documents priority separately.
 
+## Johnson's analytic proof and supplementary checks
+
+The [Johnson proof](../results/johnson-pfaffian/PROOF.md) is a finite algebraic argument valid in every even order. Its use of Johnson's published additive-interval endpoint theorem is explicit. Three [independent mathematical reviews](../results/johnson-pfaffian/ROOT_REVIEW.md) check the complement scaling, cyclic Pfaffian signs, closure under deleting adjacent pairs, uncrossing, and nonnegative mixed-difference reconstruction. The separate [priority audit](../results/johnson-pfaffian/PRIOR_AUDIT.md) compares the exact source statement and seven public archives.
+
+```sh
+python3 results/johnson-pfaffian/verify.py
+```
+
+The standard-library checker uses exact rational arithmetic for supplementary identity and indexing checks. It explicitly records that finite checks do not prove the universal assertion. No Lean formalization is claimed.
+
 ## Analytic disproofs with supplementary exact checks
 
 The [Brown–Mol disproof](../results/brown-mol/PROOF.md) establishes an infinite tree counterfamily by an analytic local zero argument. Its checker verifies exact polynomial identities, independently enumerates the connected vertex sets of three small trees, and proves a separate Rouché certificate for a 1001-vertex example. The finite checks are not the basis for the infinite-family conclusion.

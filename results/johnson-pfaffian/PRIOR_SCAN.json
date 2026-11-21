@@ -1,0 +1,387 @@
+{
+  "date": "2026-11-21",
+  "target": "Johnson, arXiv:2610.24371v1, Conjecture 7.1",
+  "status": "No exact prior resolution found in the inspected primary sources and seven pinned archive snapshots; completed AIM/OpenAI supplements and normalized native residual scans are included, with explicit binary limits.",
+  "native_patterns": {
+    "exact-id": [
+      "2610.24371",
+      "convex-pfaffian-positivity",
+      "pfaffian positivity for convex kernels"
+    ],
+    "broad-pfaffian": [
+      "pfaffian",
+      "pfa\ufb03an"
+    ],
+    "author": [
+      "william johnson",
+      "wlpjohnson",
+      "wlj1@umd"
+    ],
+    "characteristic": [
+      "multiplicative interval",
+      "circular interval",
+      "matching-product bound",
+      "matching product bound"
+    ]
+  },
+  "archives": [
+    {
+      "name": "trure",
+      "repository": "the-omega-institute/trureturing",
+      "commit": "de22a48707da1c7a48d032909e821bd481947b45",
+      "archive_sha256": "ace9dc893da3c557b0d7423e0360426426a520fd2187827b0b558cc394c526e2",
+      "native_texts": 75410,
+      "broad_matching_native_files": 50,
+      "matching_paths": [
+        "Blueprint/D5/S0/Certificates/Combinatorics/DeformedJucysMurphyNoncommutation.md",
+        "Blueprint/D5/S0/Certificates/Combinatorics/DeformedJucysMurphyNoncommutation.scribe.cs",
+        "Blueprint/D5/S0/Certificates/Combinatorics/NormalizedPfaffian.md",
+        "Blueprint/D5/S0/Certificates/Combinatorics/NormalizedPfaffian.scribe.cs",
+        "Blueprint/D5/S0/Certificates/IshikawaKoutschanMotzkinPfaffianRefutation.md",
+        "Blueprint/D5/S0/Certificates/IshikawaKoutschanMotzkinPfaffianRefutation.scribe.cs",
+        "Blueprint/D5/S3/Combinatorics/Graph/PlanarMatching/RotationBoundary.md",
+        "Blueprint/D5/S3/Combinatorics/Graph/PlanarMatching/RotationBoundary.scribe.cs",
+        "Blueprint/D5/S3/Combinatorics/Graph/PlanarMatching/RotationFaces.md",
+        "Blueprint/D5/S3/Combinatorics/Graph/PlanarMatching/RotationFaces.scribe.cs",
+        "Blueprint/D5/S3/Combinatorics/PerfectMatchings/AlternatingCyclePfaffian.md",
+        "Blueprint/D5/S3/Combinatorics/PerfectMatchings/AlternatingCyclePfaffian.scribe.cs",
+        "Blueprint/D5/S3/Combinatorics/PerfectMatchings/CallanA002067Hafnian.md",
+        "Blueprint/D5/S3/Combinatorics/PerfectMatchings/CallanA002067Hafnian.scribe.cs",
+        "Blueprint/D5/S3/Combinatorics/PerfectMatchings/InvolutionEvenCycles.md",
+        "Blueprint/D5/S3/Combinatorics/PerfectMatchings/InvolutionEvenCycles.scribe.cs",
+        "Blueprint/D5/S3/Quantum/SpinChains/HKNNBlockBlochLargestWeight/PairingCoefficients.md",
+        "Blueprint/D5/S3/Quantum/SpinChains/HKNNBlockBlochLargestWeight/PairingCoefficients.scribe.cs",
+        "Blueprint/D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.md",
+        "Blueprint/D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.scribe.cs",
+        "Blueprint/D5/S3/StatisticalMechanics/BoseSelectionFixedBathConstruction.md",
+        "Blueprint/D5/S3/StatisticalMechanics/BoseSelectionFixedBathConstruction.scribe.cs",
+        "Blueprint/D5/S3/StatisticalMechanics/BoseSelectionFixedOrthogonalBaths.md",
+        "Blueprint/D5/S3/StatisticalMechanics/BoseSelectionFixedOrthogonalBaths.scribe.cs",
+        "D5/S0/Certificates/Combinatorics/DeformedJucysMurphyNoncommutation.lean",
+        "D5/S0/Certificates/Combinatorics/NormalizedPfaffian.lean",
+        "D5/S0/Certificates/IshikawaKoutschanMotzkinPfaffianRefutation.lean",
+        "D5/S1/Words/Complexity/AlloucheReflectionComplexityConjecture28.lean",
+        "D5/S3/Combinatorics/PerfectMatchings/AlternatingCyclePfaffian.lean",
+        "D5/S3/Combinatorics/PerfectMatchings/CallanA002067Hafnian.lean",
+        "D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.lean",
+        "D5/S3/StatisticalMechanics/BoseSelectionFixedBathConstruction.lean",
+        "D5/S3/StatisticalMechanics/BoseSelectionFixedOrthogonalBaths.lean",
+        "Golden/Frozen/state/D5/S0/Certificates/Combinatorics/NormalizedPfaffian.lean.json",
+        "Golden/Frozen/state/D5/S0/Certificates/IshikawaKoutschanMotzkinPfaffianRefutation.lean.json",
+        "Golden/Frozen/state/D5/S3/Combinatorics/PerfectMatchings/AlternatingCyclePfaffian.lean.json",
+        "Golden/Frozen/state/D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.lean.json",
+        "Golden/Frozen/state/D5/S3/StatisticalMechanics/BoseSelectionFixedBathConstruction.lean.json",
+        "Library/Certificates/ishikawa2012holonomic.md",
+        "Library/Certificates/oh2018identities.md",
+        "Library/Combinatorics/egecioglu1990pfaffian.md",
+        "Library/RecurrenceComposition/callan2017a002067.md",
+        "Library/RibbonEmbeddings/cimasoni2007dimers.md",
+        "Library/StatisticalMechanics/schnellketzmerickeckardt2018bose.md",
+        "Library/Weil/bombieri2000quadratic.md",
+        "Problems/ishikawa-koutschan-2012-motzkin-triangle-pfaffian-refutation.md",
+        "Problems/schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation.md",
+        "Reg/D5/S0/Certificates/Combinatorics/NormalizedPfaffian.lean",
+        "Reg/D5/S3/Combinatorics/PerfectMatchings/AlternatingCyclePfaffian.lean",
+        "Reg/Support/PfaffianSourceReadouts.lean"
+      ],
+      "initial_skipped_count": 3
+    },
+    {
+      "name": "mxym",
+      "repository": "mxym/math",
+      "commit": "4a51ff772a566451627b9ff41f6248518561d9d4",
+      "archive_sha256": "ea9b7ccdc1e8147e8ca02af9099f832b1bd1ff35d082c2a692a4dafd010dca5f",
+      "native_texts": 23631,
+      "broad_matching_native_files": 1,
+      "matching_paths": [
+        "notes/simultaneous-harmonic-degree-blocks/README.md"
+      ],
+      "initial_skipped_count": 487,
+      "supplement": {
+        "records": 24224,
+        "pdf_texts": 192,
+        "matching_records": 0,
+        "reported_limits": {
+          "gzip_failure": 5,
+          "nontext_unconverted": 35
+        },
+        "max_entry_bytes": 268435456,
+        "max_depth": 8
+      },
+      "split-supplement": {
+        "records": 1454,
+        "pdf_texts": 0,
+        "matching_records": 0,
+        "reported_limits": {},
+        "max_entry_bytes": 268435456,
+        "max_depth": 8
+      }
+    },
+    {
+      "name": "principia",
+      "repository": "PrincipiaMathOrg/math-solutions",
+      "commit": "47371706c400c79d06e3fb62190fcf6f7a725c85",
+      "pattern": "pfaff|2610\\.24371|wlpjohnson|william\\s+johnson|kalmanson|multiplicative[\\s_-]+interval|circular[\\s_-]+interval",
+      "counts": {
+        "native_text": 1453,
+        "pdf_text": 274,
+        "zip_text": 13
+      },
+      "matched_units": 6,
+      "matching_identifiers": [
+        "site-backup/mathdb-378712/mathdb-378712-solution.tex",
+        "mathdb/368345/solution.tex",
+        "mathdb/Principia/Common/BanachOrderedProducts.lean",
+        "mathdb/Principia/MathDB/Problem378712.lean",
+        "PDF/site-backup__mathdb-378712__mathdb-378712-solution.pdf.txt",
+        "PDF/mathdb__368345__solution.pdf.txt"
+      ],
+      "normalization": "Unicode NFKC then casefold",
+      "normalized_rescan_additional_matches": 0
+    },
+    {
+      "name": "aftd",
+      "repository": "rainwangphy/aftd-platform",
+      "commit": "a92dfddb67e6569f576a813bc2079f5233540ac9",
+      "pattern": "pfaff|2610\\.24371|wlpjohnson|william\\s+johnson|kalmanson|multiplicative[\\s_-]+interval|circular[\\s_-]+interval",
+      "counts": {
+        "aftd-kb.json:schema": 1,
+        "aftd-kb.json:generated": 1,
+        "aftd-kb.json:trusted_axioms": 3,
+        "aftd-kb.json:totals": 1,
+        "aftd-kb.json:domains": 7,
+        "aftd-kb.json:declarations": 17937,
+        "aftd-kb.json:open": 6424,
+        "aftd-kb.json:literature": 1647,
+        "aftd-kb.json:grants": 0,
+        "aftd-news.json:about": 1,
+        "aftd-news.json:entries": 79
+      },
+      "matched_units": 13,
+      "matching_identifiers": [
+        "aftd-aftd-kb.json-declarations-9021.txt",
+        "aftd-aftd-kb.json-declarations-9700.txt",
+        "aftd-aftd-kb.json-declarations-14006.txt",
+        "aftd-aftd-kb.json-declarations-14007.txt",
+        "aftd-aftd-kb.json-declarations-14008.txt",
+        "aftd-aftd-kb.json-declarations-14009.txt",
+        "aftd-aftd-kb.json-declarations-14010.txt",
+        "aftd-aftd-kb.json-declarations-14011.txt",
+        "aftd-aftd-kb.json-literature-429.txt",
+        "aftd-aftd-kb.json-literature-714.txt",
+        "aftd-aftd-kb.json-literature-715.txt",
+        "aftd-aftd-kb.json-literature-857.txt",
+        "aftd-aftd-news.json-entries-15.txt"
+      ],
+      "normalization": "Unicode NFKC then casefold",
+      "normalized_rescan_additional_matches": 0
+    },
+    {
+      "name": "aim",
+      "repository": "MColbrook/AIM",
+      "commit": "b2ec0fac559f532fc0ed04fce81deea0ce07c68b",
+      "archive_sha256": "ce1e24640f6996977e868b03c865c565a077d919406a2b5561d2f3febb643f4d",
+      "archive_bytes": 76167876,
+      "native_utf8_files": 4624,
+      "johnson_native_matching_files": 12,
+      "supplement": {
+        "counts": {
+          "pdf": 144,
+          "embedded_text": 2029
+        },
+        "johnson_matching_records": 0,
+        "nontext_limitations": 124,
+        "nontext_suffix_counts": {
+          ".png": 2,
+          ".npy": 122
+        },
+        "max_entry_bytes": 268435456,
+        "max_depth": 8,
+        "size_or_depth_limit_hits": 0
+      },
+      "normalized_native_residual": {
+        "normalization": "Unicode NFKC then casefold",
+        "files_checked": 4624,
+        "additional_target_file_matches": 0
+      },
+      "audit": "../../research/2026-11-21-aim-openai-priority/AUDIT.md",
+      "scope_reviews": [
+        "../../research/2026-11-21-aim-openai-priority/ROOT_SCOPE.md",
+        "../../research/2026-11-21-aim-openai-priority/ANALYSIS_SCOPE.md"
+      ],
+      "conclusion": "No exact prior resolution found within declared source scope and limits."
+    },
+    {
+      "name": "openai",
+      "repository": "openai/math",
+      "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+      "archive_sha256": "4fee0780fe7cfa1bf7bdd9043e947b70e91ed9727bbecf08adc664d868d22f55",
+      "archive_bytes": 896084751,
+      "native_utf8_files": 173622,
+      "johnson_native_matching_files": 113,
+      "supplement": {
+        "counts": {
+          "pdf": 789
+        },
+        "johnson_matching_records": 26,
+        "nontext_limitations": 113,
+        "nontext_suffix_counts": {
+          ".png": 3,
+          ".bin": 110
+        },
+        "max_entry_bytes": 268435456,
+        "max_depth": 8,
+        "size_or_depth_limit_hits": 0
+      },
+      "normalized_native_residual": {
+        "normalization": "Unicode NFKC then casefold",
+        "files_checked": 173622,
+        "additional_target_file_matches": 0
+      },
+      "audit": "../../research/2026-11-21-aim-openai-priority/AUDIT.md",
+      "scope_reviews": [
+        "../../research/2026-11-21-aim-openai-priority/ROOT_SCOPE.md",
+        "../../research/2026-11-21-aim-openai-priority/ANALYSIS_SCOPE.md"
+      ],
+      "conclusion": "No exact prior resolution found within declared source scope and limits."
+    }
+  ],
+  "github_issue_queries": [
+    {
+      "query": "is:issue \"2610.24371\"",
+      "count": 0,
+      "incomplete": false,
+      "urls": []
+    },
+    {
+      "query": "is:issue Pfaffian Johnson",
+      "count": 11,
+      "incomplete": false,
+      "urls": [
+        "https://github.com/1337isnot1337/solved-conjectures/issues/211",
+        "https://github.com/cslib-community/cslib-frontier/issues/3052",
+        "https://github.com/the-omega-institute/trureturing/issues/24591",
+        "https://github.com/1337isnot1337/solved-conjectures/issues/156",
+        "https://github.com/awdawmip/enterprise-math/issues/240",
+        "https://github.com/StanleyLl0yd/morph-kem/issues/196",
+        "https://github.com/midodoku/arxiv_daily/issues/219",
+        "https://github.com/1337isnot1337/solved-conjectures/issues/139",
+        "https://github.com/midodoku/arxiv_daily/issues/84",
+        "https://github.com/midodoku/arxiv_daily/issues/113",
+        "https://github.com/StanleyLl0yd/morph-kem/issues/194"
+      ]
+    },
+    {
+      "query": "is:issue \"log-convex\" Pfaffian",
+      "count": 3,
+      "incomplete": false,
+      "urls": [
+        "https://github.com/1337isnot1337/solved-conjectures/issues/211",
+        "https://github.com/1337isnot1337/integer-factoring/issues/8",
+        "https://github.com/StanleyLl0yd/morph-kem/issues/194"
+      ]
+    },
+    {
+      "query": "is:issue \"Pfaffian Positivity for Convex Kernels\"",
+      "count": 1,
+      "incomplete": false,
+      "urls": [
+        "https://github.com/1337isnot1337/solved-conjectures/issues/211"
+      ]
+    },
+    {
+      "query": "is:issue \"wlpjohnson\"",
+      "count": 1,
+      "incomplete": false,
+      "urls": [
+        "https://github.com/the-omega-institute/trureturing/issues/29296"
+      ]
+    },
+    {
+      "query": "is:issue \"Pfaffian\" \"Kalmanson\"",
+      "count": 1,
+      "incomplete": false,
+      "urls": [
+        "https://github.com/1337isnot1337/solved-conjectures/issues/211"
+      ]
+    },
+    {
+      "query": "is:issue \"Pfaffian\" \"logarithmic Monge\"",
+      "count": 0,
+      "incomplete": false,
+      "urls": []
+    },
+    {
+      "query": "is:issue \"Pfaffian\" \"every matching\"",
+      "count": 9,
+      "incomplete": false,
+      "urls": [
+        "https://github.com/1337isnot1337/solved-conjectures/issues/211",
+        "https://github.com/the-omega-institute/trureturing/issues/24591",
+        "https://github.com/awdawmip/enterprise-math/issues/1509",
+        "https://github.com/tensor4all/t4a-faer/issues/178",
+        "https://github.com/StanleyLl0yd/morph-kem/issues/196",
+        "https://github.com/techrote/radiCADSAC/issues/100",
+        "https://github.com/the-omega-institute/trureturing/issues/23975",
+        "https://github.com/1337isnot1337/solved-conjectures/issues/139",
+        "https://github.com/StanleyLl0yd/morph-kem/issues/194"
+      ]
+    },
+    {
+      "query": "is:issue \"Pfaffian\" \"all matchings\"",
+      "count": 7,
+      "incomplete": false,
+      "urls": [
+        "https://github.com/1337isnot1337/solved-conjectures/issues/211",
+        "https://github.com/the-omega-institute/trureturing/issues/24591",
+        "https://github.com/robmitchellengineering-hub/pacland/issues/431",
+        "https://github.com/StanleyLl0yd/morph-kem/issues/196",
+        "https://github.com/the-omega-institute/trureturing/issues/23975",
+        "https://github.com/1337isnot1337/solved-conjectures/issues/139",
+        "https://github.com/naoki-cpp/LeanCondensedMatter/issues/903"
+      ]
+    }
+  ],
+  "artificialzeng_independent_scan": {
+    "repository": "ArtificialZeng/AI-Has-Taste",
+    "commit": "65eb1f5a92a3a8b80c9e92187825ac9231f86fb2",
+    "utf8_files": 14105,
+    "skipped_nonutf8": 612,
+    "pdf_text_files": 472,
+    "pattern": "pfaff|2610[.]24371|wlpjohnson|kalmanson",
+    "normalization": "Unicode NFKC then casefold",
+    "hits": []
+  },
+  "primary_copies": [
+    {
+      "title": "Johnson source",
+      "url": "https://arxiv.org/pdf/2610.24371v1",
+      "sha256": "f672f2ce55d8567c9b89a506140d101d783225effb7b8f6d6fcaa3d58cc49193"
+    },
+    {
+      "title": "Ferrario current v2",
+      "url": "https://arxiv.org/pdf/2604.14827",
+      "sha256": "672f0b92f890a15c25a28a2813e3d6dfd1a2d569a3221fd4123bd710b8ef466e"
+    },
+    {
+      "title": "Galashin-Pylyavskyy author PDF",
+      "url": "https://www.math.ucla.edu/~galashin/papers/ising.pdf",
+      "sha256": "bb7a95026b2a660432762c1cee3ca5aceb64a3a2dbd6032bdb7288a7f71e3a30"
+    }
+  ],
+  "author_repo": {
+    "repository": "wlpjohnson-math/convex-pfaffian-positivity-lean",
+    "commit": "e09d0d825c7609530eeb36f32965f35e2c7d8687",
+    "commit_date": "2026-10-17T00:58:35Z",
+    "issues_all_states": 0
+  },
+  "reproduction": {
+    "generic_native_scanner": "research/campaign-20261121/archive-screen/scan_archive.py",
+    "generic_supplement_scanner": "research/campaign-20261121/archive-screen/scan_supplement.py",
+    "new_local_index_scanner": "research/johnson-pfaffian/scan_local_indexes.py",
+    "working_directory": "agent-analysis/johnson-priority",
+    "note": "The large downloaded public archives are reused; archived code is not executed.",
+    "local_index_scanner_command": "python3 research/johnson-pfaffian/scan_local_indexes.py --workspace /path/to/archive-workspace --output /path/to/audit-output",
+    "local_index_scanner_note": "The input workspace must contain the agent-combinatorics/retrospective-priority Principia tree and pdf-text directory, plus the agent-analysis/retrospective-priority AFTD JSON files. Missing inputs are rejected."
+  }
+}

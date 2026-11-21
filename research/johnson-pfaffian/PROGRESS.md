@@ -1,6 +1,6 @@
 # Johnson's conjecture
 
-Research checkpoint, 21 November 2026. Issue: [#211](https://github.com/1337isnot1337/solved-conjectures/issues/211).
+Historical research checkpoint, 21 November 2026. The subsequent [maintained result package](../../results/johnson-pfaffian/) records the completed mathematical and bounded priority reviews; pending wording below describes the earlier checkpoint. Issue: [#211](https://github.com/1337isnot1337/solved-conjectures/issues/211).
 
 ## Target and significance
 
