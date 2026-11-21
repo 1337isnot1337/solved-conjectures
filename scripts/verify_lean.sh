@@ -15,6 +15,9 @@ modules=(
   Conjectures.ChenKhareSahiCone
   Conjectures.ChenKhareSahiProducts
   Conjectures.ChenKhareSahiGraded
+  Conjectures.ChenKhareSahiEigen
+  Conjectures.ChenKhareSahiMixed
+  Conjectures.ChenKhareSahiTheorem
   Conjectures.ChenKhareSahiCovers
   Conjectures.FussCatalan
   Conjectures.BrownMolGeneralRoot

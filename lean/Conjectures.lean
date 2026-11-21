@@ -3,6 +3,9 @@ import Conjectures.ChenKhareSahiReal
 import Conjectures.ChenKhareSahiCone
 import Conjectures.ChenKhareSahiProducts
 import Conjectures.ChenKhareSahiGraded
+import Conjectures.ChenKhareSahiEigen
+import Conjectures.ChenKhareSahiMixed
+import Conjectures.ChenKhareSahiTheorem
 import Conjectures.ChenKhareSahiCovers
 import Conjectures.GilmoreCrossingNesting
 import Conjectures.DospolovaGermanskovZaporozhets

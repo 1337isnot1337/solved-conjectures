@@ -320,6 +320,7 @@ theorem WordCone.difference (n : ℕ) (hn : n ≤ 6) (a b : Partition)
 
 
 inductive HomSemiring : ℕ → SymFun → Prop
+  | zero (n : ℕ) : HomSemiring n (fun _ _ _ => 0)
   | monomial (n : ℕ) (p : Partition) : p.2.1 ≤ p.1 → p.2.2 ≤ p.2.1 → degree p = n →
       HomSemiring n (fun x y z => realP p x y z)
   | difference (n : ℕ) (a b : Partition) :
@@ -332,6 +333,7 @@ inductive HomSemiring : ℕ → SymFun → Prop
 
 theorem HomSemiring.toWord {n : ℕ} {f : SymFun} (hf : HomSemiring n f) : n ≤ 6 → WordCone n f := by
   induction hf with
+  | zero n => intro hn; exact WordCone.mono MonoCone.zero
   | monomial n p h1 h2 hd =>
     intro hn
     apply WordCone.mono
