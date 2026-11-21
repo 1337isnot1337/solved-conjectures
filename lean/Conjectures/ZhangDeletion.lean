@@ -261,4 +261,81 @@ theorem small_deletion_lower (n r : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r) :
   have h := leastDenominator_spec n r (by omega) hr
   exact modular_lower n r _ hn hr h.1 h.2.symm
 
+theorem opposite_residue (p r j : ℕ) (hp : 1 < p) (hr : r < p)
+    (h : (r*j)%p = 1) : ((p-r)*j)%p = p-1 := by
+  have he : (p-r)*j + r*j = p*j := by
+    rw [← Nat.add_mul]
+    congr 1
+    omega
+  have hm := congrArg (fun x : ℕ => x % p) he
+  rw [Nat.add_mod, h] at hm
+  simp only [Nat.mul_mod_right, Nat.zero_mod] at hm
+  have hlt := Nat.mod_lt ((p-r)*j) (by omega : 0 < p)
+  have hlt2 : ((p-r)*j)%p + 1 ≤ p := by omega
+  by_cases heq : ((p-r)*j)%p + 1 < p
+  · rw [Nat.mod_eq_of_lt heq] at hm
+    omega
+  · omega
+
+theorem denominator_bound (n r p j : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
+    (hsmall : 2*r ≤ n-1) (hp : n-1 < p)
+    (hunit : (r*j)%p = 1)
+    (hretained : ∀ v, 1 ≤ v → v < n → v ≠ r →
+      2 ≤ (v*j)%p ∧ (v*j)%p + 2 ≤ p) : n+r ≤ p := by
+  have hrl : r < p := by omega
+  have hp1 : 1 < p := by omega
+  have hlast := opposite_residue p r j hp1 hrl hunit
+  by_contra h
+  have hpr : 1 ≤ p-r := by omega
+  have hprn : p-r < n := by omega
+  have hne : p-r ≠ r := by omega
+  have hh := hretained (p-r) hpr hprn hne
+  omega
+
+theorem double_residue (p r j : ℕ) (hp : 2 < p)
+    (h : (r*j)%p = 1) : ((2*r)*j)%p = 2 := by
+  have he : (2*r)*j = r*j + r*j := by simp [Nat.two_mul, Nat.add_mul]
+  rw [he, Nat.add_mod, h]
+  norm_num [Nat.mod_eq_of_lt hp]
+
+theorem retained_double_bound (n r p j : ℕ) (hr : 1 ≤ r)
+    (hsmall : 2*r ≤ n-1) (hp : 2 < p) (h : (r*j)%p = 1)
+    (q : ℕ) (hq : ∀ v, 1 ≤ v → v < n → v ≠ r → q ≤ (v*j)%p) : q ≤ 2 := by
+  have hv := hq (2*r) (by omega) (by omega) (by omega)
+  rw [double_residue p r j hp h] at hv
+  exact hv
+
+theorem positive_residues_denominator (n r p j : ℕ) (hr : 1 ≤ r)
+    (hsmall : 2*r ≤ n-1) (hp : 1 ≤ p)
+    (hpositive : ∀ v, 1 ≤ v → v < n → v ≠ r → 1 ≤ (v*j)%p) : n ≤ p := by
+  by_contra h
+  have hpn : p < n := by omega
+  by_cases heq : p = r
+  · have hv := hpositive (2*r) (by omega) (by omega) (by omega)
+    subst p
+    have hz : ((2*r)*j)%r = 0 := by
+      rw [Nat.mul_assoc, Nat.mul_comm r j, ← Nat.mul_assoc]
+      simp
+    omega
+  · have hv := hpositive p hp hpn heq
+    simp at hv
+
+theorem opposite_last_to_one (p r j : ℕ) (hp : 2 < p) (hr : r < p)
+    (h : (r*j)%p = p-1) : ((p-r)*j)%p = 1 := by
+  have he : (p-r)*j + r*j = p*j := by
+    rw [← Nat.add_mul]
+    congr 1
+    omega
+  have hm := congrArg (fun x : ℕ => x % p) he
+  rw [Nat.add_mod, h] at hm
+  simp only [Nat.mul_mod_right] at hm
+  have hlt := Nat.mod_lt ((p-r)*j) (by omega : 0 < p)
+  have hsum : ((p-r)*j)%p + (p-1) < 2*p := by omega
+  by_cases hsmall : ((p-r)*j)%p + (p-1) < p
+  · rw [Nat.mod_eq_of_lt hsmall] at hm
+    omega
+  · rw [Nat.mod_eq_sub_mod (by omega : p ≤ ((p-r)*j)%p + (p-1))] at hm
+    rw [Nat.mod_eq_of_lt (by omega : ((p-r)*j)%p + (p-1)-p < p)] at hm
+    omega
+
 end ZhangDeletion
