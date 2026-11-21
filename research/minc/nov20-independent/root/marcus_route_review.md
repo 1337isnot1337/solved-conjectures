@@ -1,4 +1,4 @@
-# Review of two Marcus routes
+# Review of Marcus comparison routes
 
 Date: 20 November 2026 (America/Chicago).
 
@@ -82,3 +82,52 @@ expression. Both scope restrictions are retained.
 No finite-order computation is needed for these proofs. The review
 checks identities and quantified deductions; it contributes zero
 complete numbered-list resolutions.
+
+## Exact finite-copy follow-up
+
+The [finite-copy proof](../inequalities/quadratic_packet_finite_copy.md)
+was checked independently after the preceding review. It strengthens
+the conclusion for the specified family and supersedes the earlier
+missing finite-copy sign when $`N\ge2`$.
+
+The real Gaussian quadratic integral, including the change from four
+real variables to two proper complex variables, gives exactly
+
+```math
+K_N(t,s)=\left(1-\frac{2t\cdot s}{N}
+ +\frac{\rho(t)\rho(s)}{N^2}\right)^{-N/2}.
+```
+
+The bidegree-$`(m,m)`$ part of this kernel is the displayed sum of
+kernels for $`M_\rho^j\Delta^j`$. The factors $`j!`$,
+$`(m-2j)!`$, and $`N^m`$ were checked by direct expansion.
+For $`\nu=N/2`$, the finite binomial coefficient identity in the
+note evaluates the eigenvalue on $`\rho^s\mathcal H_{m-2s}`$ as
+
+```math
+\lambda_{m,s}(N)=\nu^{-m}(\nu)_{m-s}(\nu-1/2)_s.
+```
+
+The finite coefficient proof introduces no hypergeometric denominator
+at exceptional integer parameters. The eigenvalues decrease with
+$`s`$. The exact smallest-eigenvalue recurrences start from
+$`\lambda_{3,1}=1+(\nu-1)/(2\nu^2)`$ and establish the
+comparison in every degree at least three for every $`N\ge2`$.
+The only nonzero homogeneous equality case in those degrees is
+$`N=2,m=3,h\in\rho\mathcal H_1`$. Irreducibility of the
+rank-three quadratic $`\rho`$ excludes that case for a nonzero
+product of linear forms. The degree-two rank bound and the exact
+equality condition are consistent with the fourth-cumulant formula.
+
+At one copy all sectors with $`s\ge1`$ vanish. Thus the argument
+does not prove the remaining top-harmonic product estimate. Summed
+quadratic packets also need not factor into two linear forms. These
+two limitations prevent an unrestricted Marcus conclusion.
+
+Root opened the DLMF generating and connection formulas and Upmeier's
+Section 2, including the spin-factor parameters and the Faraut--Koranyi
+kernel expansion. The spectral coefficient is classical; the proof
+keeps its own standard Gaussian normalization explicit. The independent
+compound review gives a second derivation through the classical
+harmonic reproducing kernels. No numerical extrapolation, historical
+priority claim, or full-entry resolution is used.

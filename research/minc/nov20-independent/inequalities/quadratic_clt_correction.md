@@ -9,6 +9,10 @@ It does not prove Marcus's block-permanent inequality, the general
 homogeneous product inequality, or the sign of the full finite-$`N`$
 difference. No full Minc entry is resolved.
 
+The subsequent [exact finite-copy calculation](quadratic_packet_finite_copy.md)
+now proves the product comparison for this family for every $`N\ge2`$.
+The present note retains the separate leading-order derivation.
+
 ## 1. The family and the test
 
 Let $`x,y`$ be independent standard proper complex Gaussian variables.
@@ -266,4 +270,7 @@ No sign for the terms of order $`N^{-2}`$ and smaller has been proved
 here. The conclusion excludes this leading-correction construction;
 it is not a covariance-preserving comparison for all homogeneous
 polynomials or a solution of the full block-permanent conjecture.
+The linked finite-copy follow-up supplies the full sign for this
+specific family when $`N\ge2`$, with a separate unresolved
+top-harmonic product estimate at $`N=1`$.
 

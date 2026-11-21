@@ -300,7 +300,16 @@ count. Even the corresponding universal domination step is impossible.
 The normalized binary-quadratic central-limit construction has a
 nonnegative leading correction on every product test; its negative
 cumulant direction is detectable by a nonproduct test and cannot by
-itself supply a conjecture counterexample. The finite-copy expression
-is not controlled. Tubbenhauer's November preprint and its remaining
+itself supply a conjecture counterexample. The
+[exact finite-copy follow-up](nov20-independent/inequalities/quadratic_packet_finite_copy.md)
+now proves the product comparison for this specific family for every
+$`N\ge2`$, strictly for nonzero products of degree at least three.
+Its moment operator has eigenvalues
+$`(2/N)^m(N/2)_{m-s}((N-1)/2)_s`$ on
+$`\rho^s\mathcal H_{m-2s}`$. These are classical
+Faraut--Koranyi coefficients with the Gaussian scale included.
+The one-copy top-harmonic product estimate is still unproved here;
+the summed quadratic packets need not factor into two linear forms.
+Tubbenhauer's November preprint and its remaining
 small-block gap were already in the earlier source audit, not first
 found at this checkpoint. These deductions do not resolve C9.

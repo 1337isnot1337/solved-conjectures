@@ -75,8 +75,14 @@ that preserves every coarse permanent loses a factor of at least
 $`m!`$; a universal domination variant is also impossible. The
 [quadratic-packet central-limit calculation](inequalities/quadratic_clt_correction.md)
 has a nonnegative first correction for every product test, despite a
-negative cumulant direction on arbitrary tests. It makes no claim
-about the entire finite-copy comparison. The cited Tubbenhauer partial
+negative cumulant direction on arbitrary tests. The subsequent
+[exact finite-copy theorem](inequalities/quadratic_packet_finite_copy.md)
+proves the full product comparison for this family for every number
+of copies $`N\ge2`$, with strict inequality for nonzero products of
+at least three factors. Its harmonic spectrum is a specialization of
+the classical Faraut--Koranyi formula. The one-copy top-harmonic
+estimate and the unrestricted packet comparison remain untreated.
+The cited Tubbenhauer partial
 theorem was already recorded in the repository and is not a new
 discovery or an unrestricted resolution. C9 remains open here.
 
