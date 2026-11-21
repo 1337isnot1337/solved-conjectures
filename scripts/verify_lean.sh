@@ -82,6 +82,10 @@ modules=(
   Conjectures.LopezPousoSeguraBesselGap
   Conjectures.LopezPousoSeguraBesselConstant
   Conjectures.LopezPousoSeguraBesselDiverge
+  Conjectures.LopezPousoSeguraBesselMixture
+  Conjectures.LopezPousoSeguraBesselODE
+  Conjectures.LopezPousoSeguraBesselEndpoint
+  Conjectures.LopezPousoSeguraBesselFinite
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany

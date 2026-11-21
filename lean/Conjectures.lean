@@ -28,6 +28,10 @@ import Conjectures.LopezPousoSeguraBesselLimit
 import Conjectures.LopezPousoSeguraBesselGap
 import Conjectures.LopezPousoSeguraBesselConstant
 import Conjectures.LopezPousoSeguraBesselDiverge
+import Conjectures.LopezPousoSeguraBesselMixture
+import Conjectures.LopezPousoSeguraBesselODE
+import Conjectures.LopezPousoSeguraBesselEndpoint
+import Conjectures.LopezPousoSeguraBesselFinite
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao

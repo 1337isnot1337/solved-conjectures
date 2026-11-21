@@ -9,6 +9,17 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BesselWeights.kernel_integrable_finite,
+    `BesselWeights.finite_mixture_inverse_phase,
+    `BesselWeights.signs_from_finite_mixture,
+    `BesselWeights.strictConvex_extend_zero,
+    `BesselWeights.mixture_inverse_phase,
+    `BesselWeights.signs_from_mixture,
+    `BesselWeights.inverse_phase_strictConvex,
+    `BesselWeights.kernel_deriv,
+    `BesselWeights.kernel_deriv2,
+    `BesselWeights.kernel_strictConvex,
+    `BesselWeights.mixture_strictConvex,
     `BesselWeights.sourceWeightSum_tendsto,
     `BesselWeights.all_three_limits_from_source_asymptotics,
     `Hornak.remaining_large_capacity,
