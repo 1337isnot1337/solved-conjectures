@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak positive-slack exceptional case
+
+Derived the largest-count endpoint and all smaller counts with positive quotient slack under the stated residue and fifth-test hypotheses, and handled a fourth arm reserved in the center. Strict compilation, a 407-theorem axiom audit and isolated kernel replay passed; zero slack, full reductions and the combined gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak rho-two endpoint
 
 Proved the three-arm rho-two endpoint construction through actual connected partitions under its explicit endpoint equations, residue conditions and fifth-test input. Strict compilation, a 396-theorem axiom audit and isolated kernel replay passed; the smallest-count endpoint, derivation of hypotheses, full AVD reductions and combined gate remain.

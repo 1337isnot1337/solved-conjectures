@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak positive-slack exceptional case, 21 November 2026
+
+Lean derives the largest-count endpoint and all smaller counts with positive quotient slack under stated residue and fifth-test hypotheses, and handles a fourth arm reserved in the center. Zero slack, full source-test and AVD reductions, and existence constructions remain. Strict compilation, a 407-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak rho-two endpoint, 21 November 2026
 
 Lean proves the rho-two exceptional endpoint construction for actual connected partitions under explicit endpoint equations, residue conditions and fifth-test input. Deriving those hypotheses, the smallest-count endpoint, full source-test and AVD reductions, and existence constructions remain. Strict compilation, a 396-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.

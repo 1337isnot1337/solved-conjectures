@@ -939,3 +939,5 @@ import Conjectures.HornakWrap
 import Conjectures.HornakChooseArm
 import Conjectures.HornakCarries
 import Conjectures.HornakRhoTwo
+import Conjectures.HornakReservedArm
+import Conjectures.HornakLargest
