@@ -1,0 +1,90 @@
+{
+  "scope": "explicit construction verification, not enumeration or a bounty solution",
+  "general_claim_proved_in_companion_note": true,
+  "full_bounty_solutions": 0,
+  "witness_sha256": "e288b94f6d7f9c21ccf8b3b85ef3fe56e901ed5927c9f38606378202e41418d9",
+  "reports": [
+    {
+      "m": 1,
+      "k": 3,
+      "vertices": 48,
+      "edges": 180,
+      "facets": 128,
+      "group_sizes": [
+        52,
+        74,
+        1,
+        1
+      ],
+      "private_edge_components": 4,
+      "reduced_matrix_rows": 2,
+      "rational_nullity": 2,
+      "private_edge_connectivity_and_boundary_identity": "PASS"
+    },
+    {
+      "m": 1,
+      "k": 3,
+      "facets": 128,
+      "boundary_rows": 180,
+      "modular_prime": 101,
+      "modular_rank": 126,
+      "independent_integer_kernel_vectors": 2,
+      "exact_rational_nullity": 2,
+      "result": "PASS"
+    },
+    {
+      "m": 1,
+      "k": 4,
+      "facets": 256,
+      "boundary_rows": 488,
+      "modular_prime": 101,
+      "modular_rank": 254,
+      "independent_integer_kernel_vectors": 2,
+      "exact_rational_nullity": 2,
+      "result": "PASS"
+    },
+    {
+      "m": 2,
+      "k": 3,
+      "vertices": 92,
+      "edges": 354,
+      "facets": 252,
+      "group_sizes": [
+        100,
+        74,
+        1,
+        1,
+        74,
+        1,
+        1
+      ],
+      "private_edge_components": 7,
+      "reduced_matrix_rows": 4,
+      "rational_nullity": 3,
+      "private_edge_connectivity_and_boundary_identity": "PASS"
+    },
+    {
+      "m": 2,
+      "k": 3,
+      "facets": 252,
+      "boundary_rows": 354,
+      "modular_prime": 101,
+      "modular_rank": 249,
+      "independent_integer_kernel_vectors": 3,
+      "exact_rational_nullity": 3,
+      "result": "PASS"
+    },
+    {
+      "m": 2,
+      "k": 4,
+      "facets": 504,
+      "boundary_rows": 960,
+      "modular_prime": 101,
+      "modular_rank": 501,
+      "independent_integer_kernel_vectors": 3,
+      "exact_rational_nullity": 3,
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS"
+}

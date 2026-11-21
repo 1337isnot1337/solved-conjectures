@@ -109,6 +109,8 @@ The companion [minimal-support counting diagnosis](minimal-support-counting-gap.
 
 A local-lemma approach would instead need an estimate for inclusion-minimal ternary supports. No required uniform estimate was found in the bounded primary-literature comparison. A general integer-matrix example also shows why such minimal supports cannot automatically be identified with rational matroid circuits.
 
+The subsequent [simplicial construction](simplicial-minimality-obstruction.md) strengthens that warning inside the actual boundary matrices: ternary-minimal supports can have rational nullity growing linearly in the number of ambient vertices. The construction has dissociated coloring number two, so it does not supply the desired unbounded coloring number. Its uniform proof passed [independent review](SIMPLICIAL_REVIEW.md), and its explicit generator was replayed separately. The appended Gaussian calculation controls macroscopic supports conditional on the cited external lattice theorem; small and intermediate minimal supports remain untreated.
+
 The substantive target remains one of the following:
 
 1. A uniform partition theorem for every proportionately dissociated integer set; or

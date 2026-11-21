@@ -282,7 +282,15 @@ A positive stopped product martingale and Hölder's inequality prove
 
 Consequently, subsequential decay of this integer mass to zero would imply absorption from every start. Full summability is a stronger sufficient condition; a uniform exponential bound is unnecessary for this implication. No such total decay has been proved.
 
-The note bounds the entire contribution with $`m\ge3^{t+1}`$ and the contribution of one arbitrary inverse jump followed by a binary phase near either endpoint. The complementary region still contains every fixed integer for all sufficiently large times, and repeated phases have no proved contraction. It also proves dense three-adic poles and a family of large values at actual odd integers, showing why finiteness cannot be inferred from the Haar integral or simple endpoint-distance bounds. Those large values do not prove failure of integer summability.
+The note bounds the entire contribution with $`m\ge3^{t+1}`$ and the contribution of one arbitrary inverse jump followed by a binary phase near either endpoint. The complementary region still contains every fixed integer for all sufficiently large times, and the full collection of recurrent phases has no proved contraction. It also proves dense three-adic poles and a family of large values at actual odd integers, showing why finiteness cannot be inferred from the Haar integral or simple endpoint-distance bounds. Those large values do not prove failure of integer summability.
+
+## Recurrent binary phases and larger-division bridges
+
+The subsequent [recurrent-phase note](recurrent-binary-phases.md), checked in a [separate independent review](RECURRENT_REVIEW.md), proves a weighted Green-sum bound for the restricted inverse operator retaining only division exponents one and two. It handles arbitrarily many binary phases, the first entrance, and phase holding time. A logarithmically weighted first-return measure contracts by the explicit factor 3021/3136, and the resulting total binary Green mass is finite at s=3/2.
+
+The full operator does not inherit this contraction. For every nonnegative integer t, both fair-sign successors of 19+96t return to the boundary set in one step, with division exponents three and one. The exact full return density for the power weight exceeds one. For a logarithmic multiplier the ratio tends to one, ruling out any common factor below one. The larger branch's incoming contribution tends to one half, so its small raw inverse coefficient is not a valid measure-norm bound.
+
+A regular logarithmic correction has negative unnormalized drift on this particular family. That limited fact does not prove the required inequality at other boundary states. The full integer-mass estimate remains open, and this route has stopped at that gap.
 
 ## Outcome of this global attempt
 

@@ -1,0 +1,152 @@
+{
+  "checked_date": "2026-11-21",
+  "bounty_url": "https://conjectures.io/problems/erdos749-erdos-749",
+  "displayed_usd_estimate": 2540,
+  "award_currency": "Alpha; displayed USD estimate is not a guaranteed cash amount",
+  "task_repository_commit": "eab6d807916924af32ff4f15e0433a381a318f5f",
+  "source_repository_commit": "7d1a8c9912747679d0093f6d1216420c33ee5ffa",
+  "manifest_url": "https://github.com/conjectures-io/conjectures-tasks/blob/eab6d807916924af32ff4f15e0433a381a318f5f/versions/fc-v2-erdos749-erdos-749-324c45dc13df94c63dd7a02d-formalized/manifest.json",
+  "manifest": {
+    "adapter_version": 2,
+    "answer_policy": {},
+    "challenge_module": "Challenge",
+    "classification": "DIRECT_PROP",
+    "definition_names": [],
+    "dependency_identity_sha256": "sha256:7787893ac57ea7b9968136be1a0f03243ba9bc74187de385ca7d93177680df13",
+    "enable_nanoda": false,
+    "environment_identity_sha256": "sha256:99d8786c19a5df8bd927a0735e11c39cd40849596933134f685ed74f0b43b3f2",
+    "forbidden_dependencies": [
+      "Erdos749.erdos_749"
+    ],
+    "generated_target_type_hash": "sha256:2ffbf4c16caf1f45cafa6abf530838c58e817633bf60d0fa1f04b6d1ab8615c1",
+    "known_proof_collisions": [],
+    "max_submission_bytes": 31457280,
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "production_eligible": true,
+    "provenance": "dependency-identity-v2",
+    "schema_version": 3,
+    "solution_module": "Solution",
+    "source_module": "FormalConjectures.ErdosProblems.«749»",
+    "source_path": "FormalConjectures/ErdosProblems/749.lean",
+    "source_theorem": "Erdos749.erdos_749",
+    "source_type_hash": "sha256:2ffbf4c16caf1f45cafa6abf530838c58e817633bf60d0fa1f04b6d1ab8615c1",
+    "target_theorem": "Bounty.target",
+    "task_id": "fc-v2-erdos749-erdos-749-324c45dc13df94c63dd7a02d-formalized",
+    "task_mode": "formalized",
+    "theorem_names": [
+      "Bounty.target"
+    ],
+    "timeout_seconds": 14400,
+    "trusted_file_hashes": {
+      "Challenge.lean": "sha256:052dd0df080e0a8d13da85db605e6230c166616ec0bf6cd887ca52626f80e51e",
+      "SolutionFooter.lean.txt": "sha256:0eed8ce76c1cdb94613104059cf4e58d4d7860cc95bd85c234db2d73534a5fb9",
+      "SolutionHeader.lean.txt": "sha256:d4a14e80747d388c70dcb2b86f1b86142962bf452077b152777177c8328750b1",
+      "comparator-config.json": "sha256:7415f4e04c714829831824c8f31215983d0eafa25064418d4833de03e850bbf6",
+      "source-metadata.json": "sha256:74d2ba71761fbb2599e92dd5f399b106d375170bb04be346424006cd26f2e550",
+      "task-version.json": "sha256:8d577a14e1941ae16bdf4fbba3d0d58d34a5de4f5ee59af0eb384a3d3c71627a"
+    }
+  },
+  "source_metadata": {
+    "adapter_version": 2,
+    "ams_subjects": [
+      11
+    ],
+    "answer_occurrences": [],
+    "category": "research open",
+    "classification": "DIRECT_PROP",
+    "contains_answer_annotation": false,
+    "contains_sorry_in_type": false,
+    "contains_sorry_in_value": false,
+    "declaration_kind": "theorem",
+    "depends_on_sorry": true,
+    "docstring": "Let $\\epsilon>0$. Does there exist $A\\subseteq \\mathbb{N}$\nsuch that the lower density of $A+A$ is at least $1-\\epsilon$\nand yet $1_A\\ast 1_A(n) \\ll_\\epsilon 1$ for all $n$?\n",
+    "finite_constructors": [],
+    "formal_proof_kind": null,
+    "formal_proof_link": null,
+    "has_parameters": false,
+    "is_prop": true,
+    "module": "FormalConjectures.ErdosProblems.«749»",
+    "pointer_target": null,
+    "references": [
+      "[erdosproblems.com/749](https://www.erdosproblems.com/749)"
+    ],
+    "source_path": "FormalConjectures/ErdosProblems/749.lean",
+    "supported_modes": [
+      "formalized",
+      "counterexample"
+    ],
+    "theorem": "Erdos749.erdos_749",
+    "transitive_axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "type_hash": "sha256:2ffbf4c16caf1f45cafa6abf530838c58e817633bf60d0fa1f04b6d1ab8615c1",
+    "type_pretty": "True ↔\n  ∀ ε > 0, ∃ A, 1 - ε ≤ (A + A).lowerDensity ∧ (Nat.cast ∘ AdditiveCombinatorics.sumRep A) =O[Filter.atTop] fun n => 1"
+  },
+  "environment": {
+    "comparator_commit": "32bd61da1d68fbaa310234964e9b820b03a0f82f",
+    "generator_version": "fc-task-generator-v2.0",
+    "lake_packages": [
+      [
+        "Cli",
+        "2842b9871b04862f944c032e34052cb9448ccb71"
+      ],
+      [
+        "LeanSearchClient",
+        "95e037bfdc31d3916ac615446847fb01960e2719"
+      ],
+      [
+        "Qq",
+        "786b7acdca7eb4e9c76c5d1d5bd810e7e5c56334"
+      ],
+      [
+        "aesop",
+        "75d936c7af167cc93fac0d31237682fc2204591d"
+      ],
+      [
+        "batteries",
+        "ed9b316aabe389fec1ef43c3326ab48c7e59be42"
+      ],
+      [
+        "importGraph",
+        "10930f8138f0462dbd744a91fc03a16fae0e046f"
+      ],
+      [
+        "mathlib",
+        "065356127b1dc0016f66b7283ce0ce2c4055aa55"
+      ],
+      [
+        "plausible",
+        "e50948299c4dc4a4c21b1c34b6a6a4fddc19f912"
+      ],
+      [
+        "proofwidgets",
+        "4c70ac059693669e5756e32a7a94b57ee1e99dc5"
+      ]
+    ],
+    "lean4export_commit": "6cea97789dc088ea47fcea15692db85685aedac5",
+    "lean_commit": "11acb17ec6b07a8f9e9173e6845197929540936b",
+    "lean_toolchain": "leanprover/lean4:v4.35.0-rc2",
+    "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+    "schema_version": 1,
+    "task_support_sha256": "sha256:58a80a223dbd7383d92eb2a57b1ec207c0991131a1a1bf24585a4452777c257e",
+    "verification_policy": {
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "static_policy_sha256": "sha256:881edec4c5d015eba055312e94554c8e6db2c5f23336374f483f6500d6e8be13",
+      "version": "fc-verification-policy-v1"
+    },
+    "workspace_template_sha256": "sha256:e67396023f995786c5b89ac5720ae8581c07b4d6a912892386b9437723e1f539"
+  },
+  "status": "No full proof, refutation, formalization, submission, accepted award, or payment. Standard automatic-set obstruction only.",
+  "interpretation": "The upstream declaration depends on sorryAx because it is an open target. It is forbidden as a solution dependency; only the permitted standard axioms are allowed."
+}
