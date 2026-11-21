@@ -49,7 +49,7 @@ e(G)\le B_r:=\frac{r(r^2+1)}2.
 \tag{2}
 ```
 
-The inequality restricted only to `(r+1)`-sets is insufficient to prove `e(G)>B_r`. The independent companion note `erdos617-one-color-review.md` gives a counterfamily to that proposed intermediate implication. Its first example is `5 K_7` disjoint from `C_5[K_3]`: it has 50 vertices, independence number 7, 165 edges rather than the budget 175, and at most 22 edges on every eight-set. The stronger hereditary inequality (1) rejects it on its 15-vertex pentagon component. This graph is not a coloring counterexample to Erdős 617.
+The inequality restricted only to `(r+1)`-sets is insufficient to prove `e(G)>B_r`. Section 5 and the failure ledger of the prior public growing-range note already give this counterfamily strategy, using `(r-2) K_r` and a pentagon blow-up core. The independent companion note `erdos617-one-color-review.md` checks a uniform subfamily and its smaller initial example, without claiming the general obstruction is new. Its first example is `5 K_7` disjoint from `C_5[K_3]`: it has 50 vertices, independence number 7, 165 edges rather than the budget 175, and at most 22 edges on every eight-set. The stronger hereditary inequality (1) rejects it on its 15-vertex pentagon component. This graph is not a coloring counterexample to Erdős 617.
 
 ## Minimal induced subgraph with too small an independent set
 
@@ -129,6 +129,17 @@ For `r>=6`, any hypothetical counterexample has a sparsest color graph with a mi
 ```
 
 The middle range is not excluded. In particular, the lemma does not settle Erdős 617.
+
+A further checked observation is that this minimal core contains no `K_r`. Indeed, if `Q=K_r` were contained in `H`, minimality on the proper set `H-Q`, of order `(a-1)r+1`, would give an independent `a`-set there. Since `a<=r-1`, its vertices forbid at most `a<r` vertices of `Q`, so the set extends to an independent `(a+1)`-set in `H`, a contradiction.
+
+Consequently, applying the subsequently located [Abiad–Kumar–Pragada localized independence inequality](https://borowiecki.dev/pdf/2609.00210) to this core gives
+
+```math
+e(H)\ge\frac{(ar+1)^2}{a}-\frac{r(ar+1)}2
+=\frac{r|H|}{2}+r+\frac1a.
+```
+
+This improves the lower bound in (4), but still leaves a positive gap below (3) for `a>=4`. It is not a proof of the missing middle range.
 
 ## Chromatic-critical density: an exact boundary and a non-transfer warning
 

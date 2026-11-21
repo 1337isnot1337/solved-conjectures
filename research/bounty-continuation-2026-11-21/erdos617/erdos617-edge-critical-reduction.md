@@ -15,7 +15,7 @@ The following conditions survive:
 
 For the last point, any full clique of `H` was already a full clique before deletion, and deletion cannot add a neighbor. Equivalently, the retained `(r+1)`-set upper bound itself implies the external-neighbor condition.
 
-The reduced graph is not asserted to be a color class in a new literal partition of the complete graph. Deleted edges are simply discarded; they are not recolored. Every deduction after this reduction must use only the preserved conditions, not a new simultaneous coloring.
+Edge deletion alone discards edges and therefore does not itself give a new partition into colors. There is, however, an explicit recoloring that restores a balanced coloring: assign all deleted color-1 edges to color 2. Color 1 still has independence number at most r, color 2 only gains edges, and the other colors are unchanged. Thus H may be taken as an actual color class of this new coloring. It retains its established edge budget, although it need not remain a sparsest color. Cross-color arguments in the [later note](erdos617-cross-color-rook-reduction.md) use this explicit recoloring.
 
 In fact `alpha(H)=r`. Otherwise deleting any edge could increase independence number by at most one and would preserve the threshold. The edgeless graph has independence number `r^2+1>r`, so at least one edge remains. Minimality therefore means
 
@@ -41,6 +41,8 @@ The reverse inequality follows because an independent set in `C` uses at most on
 Any edge from `Q` to `C-Q` would then be redundant for the independence number. Deleting it leaves `Q` complete, so every independent set still uses at most one vertex of `Q` and at most `a-1` vertices of `C-Q`. This contradicts (1). There are no such cross edges, and connectedness gives `C=Q`.
 
 Therefore, if `H` is disconnected, every full clique is an isolated connected component. Independence numbers add across components, and every proper nonempty component has independence number less than `r`, so the preceding argument applies to each component containing a full clique.
+
+This component-isolation result was already proved in section 7.3 of the [earlier clique-residue record](https://erdosproblems.ai/wiki/research/erdos_617/independent/clique_residue_and_affine_repair). The proof above is a reconstruction, not a priority claim.
 
 The clique-coverage estimate from the localized independence bound requires at least `2r+1` vertices lying in full cliques. Thus a disconnected `H` has at least three isolated `K_r` components. In particular:
 
@@ -113,8 +115,8 @@ For completeness, the classification follows because both `L` and its complement
 
 There are six rows because the packing-two situation allows two shapes on three cliques, three on four cliques, and one on five cliques. This classifies only how the full cliques intersect. It does not classify the remaining vertices, all other edges, or the original coloring.
 
-## Remaining gap
+## Historical scope and subsequent progress
 
-The reduction gives a connected edge-critical graph when the packing number is two, together with the intersection patterns above. Maximum independent sets and essential-edge certificates impose further restrictions on attachments to the cliques, but no argument here excludes all six patterns.
+This note originally stopped at the six intersection patterns above. The subsequent [three-clique proof](erdos617-forced-three-cliques.md) excludes those patterns, and the [general disjointness proof](erdos617-disjoint-full-cliques.md) excludes every intersection between full cliques in H. The six-pattern classification remains a valid intermediate deduction.
 
-Packing numbers at least three also remain. The earlier exclusion of a packing of size `r` does not eliminate that intermediate range. The general bounty target is still unresolved.
+The remaining case has at least three pairwise disjoint full cliques. The [connected-case bound](erdos617-connected-small-packing.md) further gives q(q−1)<r when H is connected. Connected and disconnected configurations remain unresolved. The general bounty target is still open in this work.

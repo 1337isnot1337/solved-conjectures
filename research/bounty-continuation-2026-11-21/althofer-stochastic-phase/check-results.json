@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "date_utc": "2026-11-21",
+  "command": "python agents/other_paid/althofer_stochastic_phase/check_phase.py",
+  "exit_code": 0,
+  "renewal_depths_checked": 60,
+  "exact_progression_checks": 9180,
+  "literal_constructed_transition_checks": 40,
+  "scope": "Formula checks only; no conjecture verification range or absorption claim.",
+  "examples": [
+    {
+      "d": 1,
+      "duration": 1,
+      "initial_height": 3,
+      "next_height": 5,
+      "event_probability": "1/2",
+      "initial_integer_bit_length": 6,
+      "mean_next_height": "7/2"
+    },
+    {
+      "d": 2,
+      "duration": 2,
+      "initial_height": 4,
+      "next_height": 13,
+      "event_probability": "1/4",
+      "initial_integer_bit_length": 13,
+      "mean_next_height": "19/4"
+    },
+    {
+      "d": 3,
+      "duration": 2,
+      "initial_height": 5,
+      "next_height": 13,
+      "event_probability": "1/4",
+      "initial_integer_bit_length": 14,
+      "mean_next_height": "19/4"
+    },
+    {
+      "d": 3,
+      "duration": 3,
+      "initial_height": 5,
+      "next_height": 37,
+      "event_probability": "1/8",
+      "initial_integer_bit_length": 37,
+      "mean_next_height": "51/8"
+    }
+  ]
+}
