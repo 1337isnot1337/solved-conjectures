@@ -61,8 +61,16 @@ For $`m\ge1`$, let $`e_m=|u_{2m-1,0}|`$. The minimum nonzero entry in absolute v
 
 The generating function or recurrence gives $`e_3=1/2`$, hence $`e_m\ge1/2`$ for every $`m\ge3`$. Consequently the absolute nonzero permanent is at least $`2^{n-1}`$ in even orders $`n\ge6`$, or $`2^{n-2}`$ in odd orders $`n\ge7`$, whenever $`D\le1`$. Each bound strictly exceeds $`2^{n-\lfloor\log_2(n+1)\rfloor}`$ in its stated range. Together with the factor of three for wider boards this proves the exclusion.
 
+## Moving away from nested supports
+
+Let the sign matrix differ from the Ferrers matrix on a set of cells whose largest nonattacking subset has size $t$. The odd part of $\max(0,D+1-2t)!$ still divides its permanent. In particular, any edits confined to $t$ rows and columns in total obey the same bound.
+
+Delete a row at level $h$ and a column in position $j$. At every surviving column $i$ the root coordinate changes by $\mathbf1_{i>j}-\mathbf1_{b_i>h}$, using levels numbered from zero. Both indicators describe suffixes, so the differences range over at most two consecutive integers. Removing one coordinate from a sequence that attains all the intermediate integers shrinks its span by at most one, as long as at least one coordinate remains. The shifts shrink it by at most one further unit. Every nonempty minor obtained with $s$ paired deletions therefore has width at least $D-2s$. Expand the permanent by multilinearity in the changed entries. A term using $s$ changes uses nonattacking positions and a complementary Ferrers minor. Its odd factorial divisor is a multiple of the asserted one since $s\le t$. If a term uses the empty minor, then $t=n$ and the asserted divisor is one.
+
 ## Sources and scope
 
 Miceli and Remmel state the classical factorial rook polynomial identity in their [primary article on product formulas](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v15i1r85). Ingram and Razborov study the range on unrestricted sign matrices and identify exact minimum attainment as open. [Ingram and Razborov](https://arxiv.org/html/2507.09433v1)
 
 The repository previously checked the failure of the Ferrers construction in order six. Searches for Ferrers sign permanents, hit polynomials at minus one, the factorial rook polynomial, Euler umbral evaluations, and Kräuter’s attainment conjecture located the classical identities and no earlier all-orders exclusion in the sources inspected. The theorem excludes a construction class and contributes zero full Minc entries. [Earlier repository check](sign_lift_audit.md)
+
+The [exact checker](verify_ferrers_extremizers.py) evaluates all 4,706 Ferrers boards through order seven by a separate signed subset recurrence. It also tests one row and one column of perturbations for 4,704 boards and checks the Euler recurrence bounds through order 100.
