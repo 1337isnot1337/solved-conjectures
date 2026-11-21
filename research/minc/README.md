@@ -125,3 +125,14 @@ The [complete proposed proof](../../results/malek-subpermanent/proof.md) covers 
 The [source audit](../../results/malek-subpermanent/source-audit.md) found no earlier complete endpoint proof in the inspected primary texts, recent followups and public repositories. It records the source-access limit and a stricter eligibility limit: the current C3 page cites Malek, but the all-degree conjecture is explicitly stated in the Minc index's linked 2005 survey, not on that live page. Thus this is a named subsidiary through the source chain, not a new numbered C3 resolution. [Two internal reviews](../../results/malek-subpermanent/review-inequalities.md) and the [exact scalar checker](../../results/malek-subpermanent/verify.py) accompany it. [Issue #145](https://github.com/1337isnot1337/solved-conjectures/issues/145) tracks the result.
 
 The unqualified numbered-entry count remains zero. The ten-resolution target remains unmet.
+
+
+## Convexity priority exclusion and exact route obstructions
+
+The [Kopotun quantitative theorem](kopotun/) proves global strict convexity of the degree-`k` subpermanent sum for every `n>=16k^2`. Two independent reviews and exact tensor/coefficient checks support its proof. However, a prior August 2026 centered coefficient bound already implies eventual global convexity by [ordinary polarization](kopotun/prior-bound-implication.md). Its mathematical proof is available in the earlier repository's exposition even though one referenced note is absent. The [complete audit](kopotun/source-audit.md) records this overlap. The result is retained as a quantitative refinement and is not registered or counted as a newly resolved conjecture.
+
+The [zero-diagonal Hessian obstruction](inequalities/c44_hessian_obstruction.md), with an [exact rational checker](inequalities/c44_hessian_certificate.py), disproves convexity and even local quasiconvexity throughout the published candidate ball for Conjecture 44. The witness still has permanent above the proposed minimum. It rules out those proof methods, not C44.
+
+The [boundary-endpoint obstruction](combinatorial/boundary_endpoint_obstruction.md) proves that a strictly positive endpoint radial derivative does not characterize monotone boundary directions. It combines the published Jerrum–Wanless ratio family with an exact direct-sum identity, and produces at least two interior stationary points. It is not a full solution of Problem 8. The [unitary-orbit source audit](combinatorial/unitary_orbit_source_audit.md) records earlier general algebraic prescriptions, complete exceptional-spectrum formulas and classical equality results; none is counted as new work here.
+
+This checkpoint adds no full resolution. The ten-resolution target remains unmet.
