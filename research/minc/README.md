@@ -82,3 +82,12 @@ All three parallel workers completed their written checkpoints. No extra full co
 The [partial-diagonal proof](combinatorial/partial_diagonal_nonbarycentric.md) shows that for every `n >= 3` and `2 <= k < n`, the barycenter of the doubly stochastic face with zeros in the first `k` diagonal positions is not even stationary. It completes the all-parameter assertion suggested by the earlier partial results on this family. The proof uses the stationary-barycenter matching law and a strict log-convexity determinant for derangement counts. Root and inequalities reviews found no gap; the written argument covers all parameters.
 
 The [source review](combinatorial/partial_diagonal_root_review.md) states the limits: Minc's 1994 full text was not obtained, no separate named conjecture was verified, and priority remains unconfirmed. This is kept as research, not added to the solved-conjecture count. It does not settle the unrestricted Problem 15 or the zero-diagonal Conjecture 44.
+
+## Brualdi structural reduction and further obstructions
+
+The [Brualdi structural theorem](combinatorial/brualdi_structure.md), with a [root review](combinatorial/brualdi_root_review.md) and [source audit](sign-matrices/brualdi_source_audit.md), restricts every minimizer on the face of `C_n=J-I+E_nn`, for all `n>=4`. It excludes large zero rectangles, proves positivity of the entire free row and column, proves strict cofactor deficits at the prescribed diagonal zeros, and shows that any extra zeros form a directed acyclic graph. **The graph has not been proved empty. Brualdi's cohesiveness conjecture remains unresolved.** Classical strictness is credited to Bapat and Panov. Historical priority for the combined restrictions is unverified.
+
+Two additional checked route audits are recorded without adding any completed entry:
+
+- [Marcus's block-permanent inequality](inequalities/marcus_gaussian_routes.md): exact counterexamples rule out a universal holomorphic-test comparison, block-commutator positivity, and higher-cumulant positivity. The simplest lift of Tran's permanent-on-top example has a strictly positive full Marcus gap. [Exact certificate script](inequalities/marcus_gaussian_certificates.py).
+- [Sign-matrix constructions](sign-matrices/sign_lift_audit.md): projective row and column multiplicity restrictions, a rank lower bound for nonzero pure-power permanents, and exact obstructions to Ferrers and double-pairing construction families. [Exact certificate script](sign-matrices/sign_lift_audit.py). These exclude methods, not the original conjectures.
