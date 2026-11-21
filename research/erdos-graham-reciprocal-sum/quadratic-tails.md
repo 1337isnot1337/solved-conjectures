@@ -90,7 +90,7 @@ Fix a root $r$ of $Q$ modulo the indicated prime. Start with the singleton $V_0=
 | 1932 | 11 | 5 | 1, 0 |
 | 2700 | 11 | 4 | 1, 2, 4, 5, 2, 0 |
 
-The empty sets exclude every remaining coefficient. This proves bounded gaps between disagreements.
+The empty sets exclude every remaining coefficient. This proves bounded gaps between disagreements. Lean 4.35.0 checks all five empty sets by kernel reduction and proves that an exact trajectory belongs to each successive preimage. From the repository’s `lean` directory, run `lake env lean ../research/erdos-graham-reciprocal-sum/QuadraticWindows.lean`. [Lean certificate](QuadraticWindows.lean)
 
 ## From the rate to a quadratic
 
