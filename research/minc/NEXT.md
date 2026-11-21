@@ -29,6 +29,10 @@ The missing step is to prove that the extra-zero graph is empty. Equal maximal m
 
 The [face entropy reformulation](combinatorial/face_entropy_reformulation.md) supplies an exact alternative objective with the same minimizers on every Birkhoff face. Its natural tangent direction vanishes at a hypothetical boundary minimizer, so it does not remove the extra-zero graph. The independent review checks boundary supports and coincident optimizer sets. No concavity or global-convergence theorem is asserted.
 
+### Wang's Hadamard problem
+
+The [characteristic-three checkpoint](sign-matrices/wang_hadamard_characteristic_three.md) and its [independent review](sign-matrices/wang_f3_review.md) verify nonvanishing for Hadamard orders congruent to one modulo three. This is treated as a deduction from classical machinery, with explicit evidence for an existing squared-permanent corollary, and is not counted. Orders congruent to two modulo three have permanent zero modulo three; orders divisible by three have singular reduction. Neither case is settled over the integers. The arbitrary-order two-adic cancellation needed for Wanless's proposed valuation remains missing. Do not restart a class-only or finite-order extension as a claimed resolution.
+
 ### Wang's sign-matrix problem
 
 P7 asks which orders admit a sign matrix with equal absolute permanent and determinant. The full classification remains open. The [polynomial-recurrence obstruction](sign-matrices/p_recursive_obstruction.md) proves that finitely many all-order families whose permanents and determinants are P-recursive cannot cover every sufficiently large non-Mersenne order. It uses the classical Mersenne-order obstruction and arbitrarily long runs of zeros. The same note proves that finitely many families with P-recursive permanent sequences cannot attain Kräuter's proposed minimum in every sufficiently large order; its uniform recurrence is independent of the piecewise exponential scale.
