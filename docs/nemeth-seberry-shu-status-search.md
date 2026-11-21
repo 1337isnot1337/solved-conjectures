@@ -11,7 +11,8 @@ Checked 2026-11-20. This is a search record, not a guarantee that no unpublished
 
 ## Contemporary status
 
-- Yair Lavi, specialist Conjecture 27 page: https://yair-lavi.com/mincs-list/conjecture-27/index.html . Listed Open, updated November 15, 2026. Finite row-sum-four counts are explicitly distinguished from a disproof of an unspecified O(p) bound.
+- Yair Lavi, specialist Conjecture 27 page: https://yair-lavi.com/mincs-list/conjecture-27/index.html . **Historical status (November 15, 2026):** listed Open. Finite row-sum-four counts were explicitly distinguished from a disproof of an unspecified O(p) bound.
+- **Status update (November 20, 2026):** [Lavi's Conjecture 27 page](https://yair-lavi.com/mincs-list/conjecture-27/index.html) now lists **Disproved by others**, credits Cinna Davis and GPT-6.2 Astra, and says an independent audit found no gap in the argument. The public page records both the qualitative disproof and quadratic lower bound. This is external confirmation, not a refereed publication.
 - Repository open coordination issues examined before proposing lane. Existing claims concerned other named conjectures; no NSS claim found.
 
 ## Query families checked
