@@ -2,7 +2,7 @@
 
 Erdős and Graham ask whether every representation of one by distinct unit fractions with denominators greater than one has two successive denominators differing by at least three. Call an integer $`M`$ excluded if no counterexample can have largest denominator $`M`$. [Original problem and references](https://www.erdosproblems.com/287) · [Solver bounty](https://conjectures.io/problems/erdos287-erdos-287)
 
-The [logarithmic density theorem](log-density.md) proves that the excluded maxima have logarithmic density one. The argument below supplies the arithmetic obstruction and the prime pairs used in that proof.
+The [logarithmic density theorem](log-density.md) proves that the excluded maxima have logarithmic density one. The [quantitative bound](quantitative.md) gives a rate for the exceptional harmonic sum. The argument below supplies the arithmetic obstruction and the prime pairs used in both proofs.
 
 **Partial theorem.** There is a constant $`C>1`$ such that, for every sufficiently large real $`X`$, some integer $`y\in[X,CX]`$ has the following property. Every integer $`M`$ from $`y+1`$ through $`\lfloor ey\rfloor`$ is excluded. In particular the excluded maxima have positive lower natural density. The proof is unconditional.
 
