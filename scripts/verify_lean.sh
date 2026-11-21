@@ -144,6 +144,7 @@ modules=(
   Conjectures.JohnsonPfaffianRestriction
   Conjectures.JohnsonPfaffianCoefficients
   Conjectures.JohnsonPfaffianPositive
+  Conjectures.JohnsonPfaffianPrefix
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany

@@ -49,6 +49,8 @@ run_cmd do
     `Hornak.exceptional_packing_weak,
     `Hornak.exceptional_partition_weak,
     `Hornak.exceptional_partition_with_reserved_arm_weak,
+    `JohnsonPfaffian.border_prefix_matching_nonnegative,
+    `JohnsonPfaffian.intervalPfaffian_deriv_border,
     `JohnsonPfaffian.intervalPfaffian_nonnegative,
     `JohnsonPfaffian.intervalPfaffian_coefficients_nonnegative,
     `JohnsonPfaffian.intervalPfaffian_homogeneous,

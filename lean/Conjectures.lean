@@ -63,6 +63,7 @@ import Conjectures.JohnsonPfaffianSparse
 import Conjectures.JohnsonPfaffianRestriction
 import Conjectures.JohnsonPfaffianCoefficients
 import Conjectures.JohnsonPfaffianPositive
+import Conjectures.JohnsonPfaffianPrefix
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
