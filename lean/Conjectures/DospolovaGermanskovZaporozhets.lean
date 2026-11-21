@@ -1,6 +1,7 @@
 import Mathlib.Basic.Real.Basic
 import Mathlib.MeasureTheory.Integral.Bochner.Basic
 import Mathlib.Probability.Distributions.Gaussian.Real
+import Mathlib.Probability.Distributions.Gaussian.IsGaussianProcess.Basic
 import Mathlib.Data.Nat.Factorial.Basic
 import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.Ring
@@ -73,7 +74,7 @@ theorem ae_bound_of_countable_limit {Ω : Type*} [MeasurableSpace Ω] (μ : Meas
   exact le_of_tendsto' hlim hx
 
 theorem gaussian_tail_positive {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω)
-    (X : Ω → ℝ) (hX : Measurable X) (m : ℝ) (v : NNReal) (hv : v ≠ 0)
+    (X : Ω → ℝ) (hX : AEMeasurable X μ) (m : ℝ) (v : NNReal) (hv : v ≠ 0)
     (hlaw : μ.map X = ProbabilityTheory.gaussianReal m v) (a : ℝ) :
     0 < μ {x | a < X x} := by
   have hgauss : 0 < ProbabilityTheory.gaussianReal m v (Set.Ioi a) := by
@@ -83,29 +84,100 @@ theorem gaussian_tail_positive {Ω : Type*} [MeasurableSpace Ω] (μ : Measure �
     have hz' := hac hz
     rw [Real.volume_Ioi] at hz'
     exact ENNReal.top_ne_zero hz'
-  rw [← hlaw, Measure.map_apply hX measurableSet_Ioi] at hgauss
+  rw [← hlaw, Measure.map_apply_of_aemeasurable hX measurableSet_Ioi] at hgauss
   exact hgauss
 
 theorem gaussian_forces_strict_mean {Ω : Type*} [MeasurableSpace Ω]
     (μ : Measure Ω) [IsProbabilityMeasure μ] (range X : Ω → ℝ) (a m : ℝ) (v : NNReal)
-    (hv : v ≠ 0) (hX : Measurable X)
+    (hv : v ≠ 0) (hX : AEMeasurable X μ)
     (hlaw : μ.map X = ProbabilityTheory.gaussianReal m v)
-    (hdom : ∀ x, X x ≤ range x) (hint : Integrable range μ)
+    (hdom : ∀ᵐ x ∂μ, X x ≤ range x) (hint : Integrable range μ)
     (hbound : ∀ᵐ x ∂μ, a ≤ range x) : a < ∫ x, range x ∂μ := by
   apply mean_strict_of_tail μ range a hint hbound
   apply lt_of_lt_of_le (gaussian_tail_positive μ X hX m v hv hlaw a)
-  apply measure_mono
-  intro x hx
-  change a < X x at hx
-  change a < range x
-  exact lt_of_lt_of_le hx (hdom x)
+  apply measure_mono_ae
+  filter_upwards [hdom] with x hx htail
+  change a < X x at htail
+  exact lt_of_lt_of_le htail hx
 
 theorem no_saturated_gaussian_range {Ω : Type*} [MeasurableSpace Ω]
     (μ : Measure Ω) [IsProbabilityMeasure μ] (range X : Ω → ℝ) (a m : ℝ) (v : NNReal)
-    (hv : v ≠ 0) (hX : Measurable X)
+    (hv : v ≠ 0) (hX : AEMeasurable X μ)
     (hlaw : μ.map X = ProbabilityTheory.gaussianReal m v)
-    (hdom : ∀ x, X x ≤ range x) (hint : Integrable range μ)
+    (hdom : ∀ᵐ x ∂μ, X x ≤ range x) (hint : Integrable range μ)
     (hbound : ∀ᵐ x ∂μ, a ≤ range x) : (∫ x, range x ∂μ) ≠ a := by
   exact ne_of_gt (gaussian_forces_strict_mean μ range X a m v hv hX hlaw hdom hint hbound)
+
+noncomputable def sampleRange {T Ω : Type*} (K : Set T) (X : T → Ω → ℝ) (ω : Ω) : ℝ :=
+  sSup ((fun t => X t ω) '' K) - sInf ((fun t => X t ω) '' K)
+
+theorem increment_le_sampleRange {T Ω : Type*} (K : Set T) (X : T → Ω → ℝ)
+    (s t : T) (hs : s ∈ K) (ht : t ∈ K) (ω : Ω)
+    (hupper : BddAbove ((fun u => X u ω) '' K))
+    (hlower : BddBelow ((fun u => X u ω) '' K)) :
+    X s ω - X t ω ≤ sampleRange K X ω := by
+  unfold sampleRange
+  have h1 : X s ω ≤ sSup ((fun u => X u ω) '' K) := le_csSup hupper ⟨s, hs, rfl⟩
+  have h2 : sInf ((fun u => X u ω) '' K) ≤ X t ω := csInf_le hlower ⟨t, ht, rfl⟩
+  linarith
+
+theorem process_range_strict {T Ω : Type*} [MeasurableSpace Ω]
+    (μ : Measure Ω) [IsProbabilityMeasure μ] (K : Set T) (X : T → Ω → ℝ)
+    (s t : T) (hs : s ∈ K) (ht : t ∈ K) (a m : ℝ) (v : NNReal)
+    (hv : v ≠ 0) (hX : AEMeasurable (fun ω => X s ω - X t ω) μ)
+    (hlaw : μ.map (fun ω => X s ω - X t ω) = ProbabilityTheory.gaussianReal m v)
+    (hbounded : ∀ᵐ ω ∂μ, BddAbove ((fun u => X u ω) '' K) ∧ BddBelow ((fun u => X u ω) '' K))
+    (hint : Integrable (sampleRange K X) μ)
+    (hbound : ∀ᵐ ω ∂μ, a ≤ sampleRange K X ω) :
+    a < ∫ ω, sampleRange K X ω ∂μ := by
+  apply gaussian_forces_strict_mean μ (sampleRange K X) (fun ω => X s ω - X t ω)
+    a m v hv hX hlaw ?_ hint hbound
+  filter_upwards [hbounded] with ω hω
+  exact increment_le_sampleRange K X s t hs ht ω hω.1 hω.2
+
+theorem gaussian_process_range_strict {T Ω : Type*} [MeasurableSpace Ω]
+    (μ : Measure Ω) [IsProbabilityMeasure μ] (K : Set T) (X : T → Ω → ℝ)
+    (hX : ProbabilityTheory.IsGaussianProcess X μ)
+    (s t : T) (hs : s ∈ K) (ht : t ∈ K) (a : ℝ)
+    (hvariance : 0 < ProbabilityTheory.variance (fun ω => X s ω - X t ω) μ)
+    (hbounded : ∀ᵐ ω ∂μ, BddAbove ((fun u => X u ω) '' K) ∧ BddBelow ((fun u => X u ω) '' K))
+    (hint : Integrable (sampleRange K X) μ)
+    (hbound : ∀ᵐ ω ∂μ, a ≤ sampleRange K X ω) :
+    a < ∫ ω, sampleRange K X ω ∂μ := by
+  have hgauss := hX.hasGaussianLaw_fun_sub (s := s) (t := t)
+  have hv : (ProbabilityTheory.variance (fun ω => X s ω - X t ω) μ).toNNReal ≠ 0 :=
+    ne_of_gt (Real.toNNReal_pos.mpr hvariance)
+  exact process_range_strict μ K X s t hs ht a
+    (∫ ω, (X s ω - X t ω) ∂μ)
+    (ProbabilityTheory.variance (fun ω => X s ω - X t ω) μ).toNNReal
+    hv hgauss.aemeasurable hgauss.map_eq_gaussianReal hbounded hint hbound
+
+theorem gaussian_process_strict_from_local_bounds {T Ω : Type*} [MeasurableSpace Ω]
+    (μ : Measure Ω) [IsProbabilityMeasure μ] (K : Set T) (X : T → Ω → ℝ)
+    (hX : ProbabilityTheory.IsGaussianProcess X μ)
+    (s t : T) (hs : s ∈ K) (ht : t ∈ K) (a : ℝ) (b : ℕ → ℝ)
+    (hvariance : 0 < ProbabilityTheory.variance (fun ω => X s ω - X t ω) μ)
+    (hbounded : ∀ᵐ ω ∂μ, BddAbove ((fun u => X u ω) '' K) ∧ BddBelow ((fun u => X u ω) '' K))
+    (hint : Integrable (sampleRange K X) μ) (hlim : Tendsto b atTop (𝓝 a))
+    (hlocal : ∀ n, ∀ᵐ ω ∂μ, b n ≤ sampleRange K X ω) :
+    a < ∫ ω, sampleRange K X ω ∂μ :=
+  gaussian_process_range_strict μ K X hX s t hs ht a hvariance hbounded hint
+    (ae_bound_of_countable_limit μ (sampleRange K X) b a hlim hlocal)
+
+theorem gaussian_process_strict_from_local_sup {T Ω : Type*} [MeasurableSpace Ω]
+    (μ : Measure Ω) [IsProbabilityMeasure μ] (K : Set T) (X : T → Ω → ℝ)
+    (hX : ProbabilityTheory.IsGaussianProcess X μ)
+    (s t : T) (hs : s ∈ K) (ht : t ∈ K) (S : Set ℝ)
+    (hS : S.Nonempty) (hSbound : BddAbove S)
+    (hvariance : 0 < ProbabilityTheory.variance (fun ω => X s ω - X t ω) μ)
+    (hbounded : ∀ᵐ ω ∂μ, BddAbove ((fun u => X u ω) '' K) ∧ BddBelow ((fun u => X u ω) '' K))
+    (hint : Integrable (sampleRange K X) μ)
+    (hlocal : ∀ b ∈ S, ∀ᵐ ω ∂μ, b ≤ sampleRange K X ω) :
+    sSup S < ∫ ω, sampleRange K X ω ∂μ := by
+  obtain ⟨b, _, hlim, hb⟩ := exists_seq_tendsto_sSup hS hSbound
+  apply gaussian_process_strict_from_local_bounds μ K X hX s t hs ht (sSup S) b
+    hvariance hbounded hint hlim
+  intro n
+  exact hlocal (b n) (hb n)
 
 end DospolovaGermanskovZaporozhets

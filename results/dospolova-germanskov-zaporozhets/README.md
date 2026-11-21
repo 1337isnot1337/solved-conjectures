@@ -27,4 +27,4 @@ Three independent mathematical reviews passed. No computation or Lean verificati
 
 Coordination: [issue #199](https://github.com/1337isnot1337/solved-conjectures/issues/199).
 
-A [partial Lean formalization](../../lean/Conjectures/DospolovaGermanskovZaporozhets.lean) checks the factorial equalities and abstract strict Gaussian-tail step. The intrinsic-volume and Gaussian-process bridge remains open in Lean. Strict compilation and isolated kernel replay passed; the full repository gate is pending.
+A [partial Lean formalization](../../lean/Conjectures/DospolovaGermanskovZaporozhets.lean) checks the factorial equalities and strict sample range for Gaussian processes under explicit assumptions. The intrinsic-volume and local-oscillation bridge remains open in Lean. Strict compilation and isolated kernel replay passed; the full repository gate is pending.
