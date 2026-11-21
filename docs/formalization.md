@@ -29,7 +29,7 @@ The Karp–Vishnyakova–Zhang Bessel-ratio unimodality entry is no longer an ac
 
 ## Sonntag–Teichert checkpoint
 
-`Conjectures.SonntagTeichert` proves the finite tournament theorem via blocker duality and representative counting. The stronger oriented-graph classification and converse construction remain to be formalized. The standalone strict source check, all-owned axiom audit and stock-kernel replay passed; the combined repository gate is pending. See [issue 70](https://github.com/1337isnot1337/solved-conjectures/issues/70).
+`Conjectures.SonntagTeichert` proves the finite tournament theorem via blocker duality and representative counting. The forward oriented-graph two-star classification is checked; the converse construction remains to be formalized. The standalone strict source check, all-owned axiom audit and stock-kernel replay passed; the combined repository gate is pending. See [issue 70](https://github.com/1337isnot1337/solved-conjectures/issues/70).
 
 ## Coordination, 18 November 2026
 

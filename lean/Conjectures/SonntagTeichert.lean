@@ -3,6 +3,8 @@ import Mathlib.Data.Fintype.Powerset
 import Mathlib.Data.Finset.BooleanAlgebra
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Tauto
+import Mathlib.Tactic.FinCases
 import Mathlib.Data.Fintype.Prod
 import Mathlib.Data.Fintype.Sum
 
@@ -13,8 +15,8 @@ The theorem `tournament_no_separation` states directly that the family of
 minimal dominating sets of a finite tournament cannot be split across two
 disjoint vertex sets with an edge on each side. The proof includes finite
 blocker duality, the split-product lemma, representative counting and the
-source case. The classification and converse construction for arbitrary
-oriented graphs are not included in this module.
+source case. The forward two-star classification for arbitrary oriented graphs is
+`oriented_separation_stars`; the converse realization is not yet included.
 -/
 
 noncomputable section
@@ -521,6 +523,57 @@ theorem separated_blockers_impossible (arc : V → V → Prop)
   · exact (disjoint_left.mp hXY) (haX' hwa') (hbY hwb)
   · exact (disjoint_left.mp hbdis) hwb hwb'
 
+theorem separated_blockers_count (arc : V → V → Prop)
+    (oriented : ∀ u v, arc u v → ¬ arc v u)
+    (F G : Finset (Finset V)) (X Y : Finset V)
+    (hF : ∀ e ∈ F, e ⊆ X) (hG : ∀ e ∈ G, e ⊆ Y) (hXY : Disjoint X Y)
+    (hFn : F.Nonempty) (hGn : G.Nonempty)
+    (hFne : ∀ e ∈ F, e.Nonempty) (hGne : ∀ e ∈ G, e.Nonempty)
+    (hD : blocker (neighbourhoods arc) = F ∪ G)
+    (hNo : ∀ v : V, ¬ hits (blocker (F ∪ G)) {v}) :
+    (blocker F).card = 2 ∧ (blocker G).card = 2 := by
+  classical
+  have hNo' : ∀ v : V, ¬ hits (blocker (G ∪ F)) {v} := by
+    simpa [union_comm] using hNo
+  obtain ⟨a, ha, a', ha', hane⟩ := no_singleton_implies_two_left F G X Y hF hG hXY hFn hFne hNo
+  obtain ⟨b, hb, b', hb', hbne⟩ := no_singleton_implies_two_left G F Y X hG hF hXY.symm hGn hGne hNo'
+  have hcarda : 2 ≤ (blocker F).card := (Finset.one_lt_card.mpr ⟨a,ha,a',ha',hane⟩)
+  have hcardb : 2 ≤ (blocker G).card := (Finset.one_lt_card.mpr ⟨b,hb,b',hb',hbne⟩)
+  let A := {z // z ∈ blocker F}
+  let B := {z // z ∈ blocker G}
+  let row : A → Finset V := fun z => z.val
+  let col : B → Finset V := fun z => z.val
+  have hr : ∀ z, row z ⊆ X := by
+    intro z
+    exact minimal_hits_subset F X z.val hF ((mem_blocker F z.val).mp z.property)
+  have hc : ∀ z, col z ⊆ Y := by
+    intro z
+    exact minimal_hits_subset G Y z.val hG ((mem_blocker G z.val).mp z.property)
+  have hasrep : ∀ (r : A) (c : B), ∃ v, inClosed arc v = row r ∪ col c := by
+    intro r c
+    have hm : row r ∪ col c ∈ blocker (F ∪ G) :=
+      (blocker_split F G X Y _ hF hG hXY).mpr ⟨r.val, r.property, c.val, c.property, rfl⟩
+    rw [← hD, domination_double_blocker] at hm
+    have hm' := (mem_minEdges (neighbourhoods arc) _).mp hm
+    obtain ⟨v, _, hv⟩ := mem_image.mp hm'.1
+    exact ⟨v, hv⟩
+  let rep : A → B → V := fun r c => Classical.choose (hasrep r c)
+  have hrep : ∀ r c, inClosed arc (rep r c) = row r ∪ col c := fun r c => Classical.choose_spec (hasrep r c)
+  have hcover : ∀ r c, rep r c ∈ row r ∨ rep r c ∈ col c := by
+    intro r c
+    have hself : rep r c ∈ inClosed arc (rep r c) := by simp [inClosed]
+    rw [hrep] at hself
+    exact mem_union.mp hself
+  have hrow : ∀ r c c', rep r c ∈ row r → rep r c' ∈ row r → c = c' :=
+    row_representatives_unique arc oriented X Y hXY row col hr hc Subtype.val_injective rep hrep
+  have hcol : ∀ c r r', rep r c ∈ col c → rep r' c ∈ col c → r = r' :=
+    column_representatives_unique arc oriented X Y hXY row col hr hc Subtype.val_injective rep hrep
+  have hcount := representatives_bound row col rep hcover hrow hcol
+  have hprod : (blocker F).card * (blocker G).card ≤ (blocker F).card + (blocker G).card := by
+    simpa [A, B, Fintype.card_coe] using hcount
+  obtain ⟨hca, hcb⟩ := card_two_of_product_bound _ _ hcarda hcardb hprod
+  exact ⟨hca,hcb⟩
+
 omit [Fintype V] in
 theorem source_mem_dominating (arc : V → V → Prop)
     (oriented : ∀ u v, arc u v → ¬ arc v u)
@@ -598,6 +651,440 @@ theorem tournament_no_separation (arc : V → V → Prop)
       have hsingleton := hits_mono (neighbourhoods arc) hsub hehits
       exact hsource ⟨v, (domination_iff_hits arc {v}).mpr hsingleton⟩
     exact separated_blockers_impossible arc oriented total F G X Y hF hG hXY hFn hGn hFne hGne hD hNo
+
+def quad (a a' b b' : Finset V) : Finset (Finset V) := {a ∪ b, a ∪ b', a' ∪ b, a' ∪ b'}
+
+def meets (s a : Finset V) : Prop := ∃ v, v ∈ s ∧ v ∈ a
+
+omit [Fintype V] in
+theorem hits_quad_iff (a a' b b' s : Finset V) :
+    hits (quad a a' b b') s ↔ (meets s a ∧ meets s a') ∨ (meets s b ∧ meets s b') := by
+  classical
+  have hsplit (x y : Finset V) : (∃ v, v ∈ s ∧ v ∈ x ∪ y) ↔ meets s x ∨ meets s y := by
+    simp only [meets, mem_union, and_or_left, exists_or]
+  simp only [hits, quad, mem_insert, mem_singleton, forall_eq_or_imp, forall_eq, hsplit]
+  tauto
+
+noncomputable def pairs (a a' : Finset V) : Finset (Finset V) :=
+  univ.filter (fun e => ∃ x ∈ a, ∃ y ∈ a', e = {x,y})
+
+omit [Fintype V] in
+theorem quad_minimal_forward (a a' b b' s : Finset V)
+    (hs : Minimal (hits (quad a a' b b')) s) :
+    (∃ x ∈ a, ∃ y ∈ a', s = {x,y}) ∨ (∃ x ∈ b, ∃ y ∈ b', s = {x,y}) := by
+  classical
+  rcases (hits_quad_iff a a' b b' s).mp hs.1 with ⟨⟨x,hxs,hxa⟩,⟨y,hys,hya⟩⟩ | ⟨⟨x,hxs,hxb⟩,⟨y,hys,hyb⟩⟩
+  · left
+    have hp : hits (quad a a' b b') {x,y} := (hits_quad_iff a a' b b' _).mpr
+      (Or.inl ⟨⟨x, by simp, hxa⟩, ⟨y, by simp, hya⟩⟩)
+    have hsub : ({x,y} : Finset V) ⊆ s := by simp [hxs, hys, insert_subset]
+    have heq : s = {x,y} := Subset.antisymm (hs.2 hp hsub) hsub
+    exact ⟨x,hxa,y,hya,heq⟩
+  · right
+    have hp : hits (quad a a' b b') {x,y} := (hits_quad_iff a a' b b' _).mpr
+      (Or.inr ⟨⟨x, by simp, hxb⟩, ⟨y, by simp, hyb⟩⟩)
+    have hsub : ({x,y} : Finset V) ⊆ s := by simp [hxs, hys, insert_subset]
+    have heq : s = {x,y} := Subset.antisymm (hs.2 hp hsub) hsub
+    exact ⟨x,hxb,y,hyb,heq⟩
+
+omit [Fintype V] in
+theorem quad_pair_minimal (a a' b b' X Y : Finset V) (x y : V)
+    (hXY : Disjoint X Y) (hAA : Disjoint a a')
+    (ha : a ⊆ X) (ha' : a' ⊆ X) (hb : b ⊆ Y)
+    (hxa : x ∈ a) (hya : y ∈ a') :
+    Minimal (hits (quad a a' b b')) ({x,y} : Finset V) := by
+  classical
+  constructor
+  · exact (hits_quad_iff a a' b b' _).mpr
+      (Or.inl ⟨⟨x, by simp, hxa⟩, ⟨y, by simp, hya⟩⟩)
+  · intro t ht hsub
+    rcases (hits_quad_iff a a' b b' t).mp ht with ⟨⟨u,hut,hua⟩,⟨v,hvt,hva⟩⟩ | ⟨⟨u,hut,hub⟩,_⟩
+    · have hu : u = x := by
+        have hm : u = x ∨ u = y := by simpa using hsub hut
+        rcases hm with h | h
+        · exact h
+        · subst u
+          exact False.elim ((disjoint_left.mp hAA) hua hya)
+      have hv : v = y := by
+        have hm : v = x ∨ v = y := by simpa using hsub hvt
+        rcases hm with h | h
+        · subst v
+          exact False.elim ((disjoint_left.mp hAA) hxa hva)
+        · exact h
+      subst u
+      subst v
+      intro z hz
+      have hz' : z = x ∨ z = y := by simpa using hz
+      rcases hz' with rfl | rfl <;> assumption
+    · have hm : u = x ∨ u = y := by simpa using hsub hut
+      rcases hm with h | h
+      · subst u
+        exact False.elim ((disjoint_left.mp hXY) (ha hxa) (hb hub))
+      · subst u
+        exact False.elim ((disjoint_left.mp hXY) (ha' hya) (hb hub))
+
+omit [Fintype V] in
+theorem quad_swap (a a' b b' : Finset V) : quad a a' b b' = quad b b' a a' := by
+  ext s
+  simp only [quad, mem_insert, mem_singleton, union_comm b a, union_comm b' a,
+    union_comm b a', union_comm b' a']
+  tauto
+
+theorem blocker_quad (a a' b b' X Y : Finset V)
+    (hXY : Disjoint X Y) (hAA : Disjoint a a') (hBB : Disjoint b b')
+    (ha : a ⊆ X) (ha' : a' ⊆ X) (hb : b ⊆ Y) (hb' : b' ⊆ Y) :
+    blocker (quad a a' b b') = pairs a a' ∪ pairs b b' := by
+  classical
+  ext s
+  rw [mem_blocker]
+  simp only [mem_union, pairs, mem_filter, mem_univ, true_and]
+  constructor
+  · exact quad_minimal_forward a a' b b' s
+  · rintro (⟨x,hx,y,hy,rfl⟩ | ⟨x,hx,y,hy,rfl⟩)
+    · exact quad_pair_minimal a a' b b' X Y x y hXY hAA ha ha' hb hx hy
+    · rw [quad_swap]
+      exact quad_pair_minimal b b' a a' Y X x y hXY.symm hBB hb hb' ha hx hy
+
+theorem blocker_double_of_blocker (F : Finset (Finset V)) : blocker (blocker (blocker F)) = blocker F := by
+  rw [blocker_involution]
+  classical
+  ext s
+  rw [mem_minEdges]
+  constructor
+  · exact fun h => h.1
+  · intro hs
+    refine ⟨hs, ?_⟩
+    intro t ht hts
+    have ht' := (mem_blocker F t).mp ht
+    exact ((mem_blocker F s).mp hs).2 ht'.1 hts
+
+theorem split_blocker_quad (F G : Finset (Finset V)) (X Y a a' b b' : Finset V)
+    (hF : ∀ e ∈ F, e ⊆ X) (hG : ∀ e ∈ G, e ⊆ Y) (hXY : Disjoint X Y)
+    (ha : blocker F = {a,a'}) (hb : blocker G = {b,b'}) :
+    blocker (F ∪ G) = quad a a' b b' := by
+  classical
+  ext s
+  rw [blocker_split F G X Y s hF hG hXY]
+  simp only [ha, hb, mem_insert, mem_singleton, quad]
+  constructor
+  · rintro ⟨r, (rfl | rfl), c, (rfl | rfl), rfl⟩ <;> simp
+  · intro hs
+    rcases hs with rfl | rfl | rfl | rfl
+    · exact ⟨a, Or.inl rfl, b, Or.inl rfl, rfl⟩
+    · exact ⟨a, Or.inl rfl, b', Or.inr rfl, rfl⟩
+    · exact ⟨a', Or.inr rfl, b, Or.inl rfl, rfl⟩
+    · exact ⟨a', Or.inr rfl, b', Or.inr rfl, rfl⟩
+
+theorem separated_oriented_bicliques (arc : V → V → Prop)
+    (oriented : ∀ u v, arc u v → ¬ arc v u)
+    (F G : Finset (Finset V)) (X Y : Finset V)
+    (hF : ∀ e ∈ F, e ⊆ X) (hG : ∀ e ∈ G, e ⊆ Y) (hXY : Disjoint X Y)
+    (hFn : F.Nonempty) (hGn : G.Nonempty)
+    (hFne : ∀ e ∈ F, e.Nonempty) (hGne : ∀ e ∈ G, e.Nonempty)
+    (hD : blocker (neighbourhoods arc) = F ∪ G)
+    (hNo : ∀ v : V, ¬ hits (blocker (F ∪ G)) {v}) :
+    ∃ a a' b b' : Finset V, a.Nonempty ∧ a'.Nonempty ∧ b.Nonempty ∧ b'.Nonempty ∧
+      Disjoint a a' ∧ Disjoint b b' ∧ a ⊆ X ∧ a' ⊆ X ∧ b ⊆ Y ∧ b' ⊆ Y ∧
+      blocker (neighbourhoods arc) = pairs a a' ∪ pairs b b' ∧
+      minEdges (neighbourhoods arc) = quad a a' b b' := by
+  classical
+  obtain ⟨hca,hcb⟩ := separated_blockers_count arc oriented F G X Y hF hG hXY hFn hGn hFne hGne hD hNo
+  obtain ⟨a,a',hane,ha⟩ := Finset.card_eq_two.mp hca
+  obtain ⟨b,b',hbne,hb⟩ := Finset.card_eq_two.mp hcb
+  have h1 : a ∈ blocker F := by rw [ha]; simp
+  have h2 : a' ∈ blocker F := by rw [ha]; simp
+  have h3 : b ∈ blocker G := by rw [hb]; simp
+  have h4 : b' ∈ blocker G := by rw [hb]; simp
+  have haX := minimal_hits_subset F X a hF ((mem_blocker F a).mp h1)
+  have haX' := minimal_hits_subset F X a' hF ((mem_blocker F a').mp h2)
+  have hbY := minimal_hits_subset G Y b hG ((mem_blocker G b).mp h3)
+  have hbY' := minimal_hits_subset G Y b' hG ((mem_blocker G b').mp h4)
+  have had := two_blocker_members_disjoint F G X Y hF hG hXY hNo hca a a' h1 h2 hane
+  have hNo' : ∀ v : V, ¬ hits (blocker (G ∪ F)) {v} := by simpa [union_comm] using hNo
+  have hbd := two_blocker_members_disjoint G F Y X hG hF hXY.symm hNo' hcb b b' h3 h4 hbne
+  have hquad : blocker (blocker (neighbourhoods arc)) = quad a a' b b' := by
+    rw [hD]
+    exact split_blocker_quad F G X Y a a' b b' hF hG hXY ha hb
+  have hstructure : blocker (neighbourhoods arc) = pairs a a' ∪ pairs b b' := by
+    calc
+      blocker (neighbourhoods arc) = blocker (blocker (blocker (neighbourhoods arc))) := (blocker_double_of_blocker _).symm
+      _ = blocker (quad a a' b b') := congrArg blocker hquad
+      _ = pairs a a' ∪ pairs b b' := blocker_quad a a' b b' X Y hXY had hbd haX haX' hbY hbY'
+  exact ⟨a,a',b,b', blocker_member_nonempty F hFn a h1,
+    blocker_member_nonempty F hFn a' h2, blocker_member_nonempty G hGn b h3,
+    blocker_member_nonempty G hGn b' h4, had, hbd, haX, haX', hbY, hbY', hstructure,
+    by simpa only [blocker_involution] using hquad⟩
+
+omit [Fintype V] in
+theorem quad_inside_forced (a a' b b' t : Finset V) (u w : V)
+    (hu : u ∈ a) (hw : w ∈ b') (hnu : u ∉ t) (hnw : w ∉ t)
+    (hex : ∃ e ∈ quad a a' b b', e ⊆ t) : a' ⊆ t ∧ b ⊆ t := by
+  classical
+  obtain ⟨e, he, hsub⟩ := hex
+  simp only [quad, mem_insert, mem_singleton] at he
+  rcases he with rfl | rfl | rfl | rfl
+  · exact False.elim (hnu (hsub (mem_union_left b hu)))
+  · exact False.elim (hnu (hsub (mem_union_left b' hu)))
+  · exact ⟨fun v hv => hsub (mem_union_left b hv), fun v hv => hsub (mem_union_right a' hv)⟩
+  · exact False.elim (hnw (hsub (mem_union_right a' hw)))
+
+theorem closed_contains_minimal_neighbourhood (arc : V → V → Prop) (v : V) :
+    ∃ e ∈ minEdges (neighbourhoods arc), e ⊆ inClosed arc v := by
+  have he : inClosed arc v ∈ neighbourhoods arc := by simp [neighbourhoods]
+  obtain ⟨e, hsub, hmin⟩ := exists_minimal_le_of_wellFoundedLT (fun e => e ∈ neighbourhoods arc) _ he
+  exact ⟨e, (mem_minEdges _ _).mpr hmin, hsub⟩
+
+theorem arc_from_closed (arc : V → V → Prop) (x y : V) (hne : x ≠ y)
+    (h : x ∈ inClosed arc y) : arc x y := by
+  have h' : x = y ∨ arc x y := by simpa [inClosed] using h
+  exact h'.resolve_left hne
+
+theorem closed_excludes_outgoing (arc : V → V → Prop)
+    (oriented : ∀ u v, arc u v → ¬ arc v u) (x y : V) (hne : x ≠ y)
+    (hxy : arc x y) : y ∉ inClosed arc x := by
+  intro h
+  have hyx := arc_from_closed arc y x (Ne.symm hne) h
+  exact oriented x y hxy hyx
+
+omit [Fintype V] in
+theorem quad_swap_both (a a' b b' : Finset V) : quad a a' b b' = quad a' a b' b := by
+  ext s
+  simp only [quad, mem_insert, mem_singleton]
+  tauto
+
+theorem two_stars_row (arc : V → V → Prop)
+    (oriented : ∀ u v, arc u v → ¬ arc v u)
+    (a a' b b' X Y : Finset V) (u w u' w' : V)
+    (hXY : Disjoint X Y) (hAA : Disjoint a a')
+    (haX : a ⊆ X) (haX' : a' ⊆ X) (hbY : b ⊆ Y) (hbY' : b' ⊆ Y)
+    (hu : u ∈ a) (hw : w ∈ b') (hu' : u' ∈ a') (hw' : w' ∈ b)
+    (hIu : inClosed arc u = a ∪ b) (hIw : inClosed arc w = a ∪ b')
+    (hIu' : inClosed arc u' = a' ∪ b') (hIw' : inClosed arc w' = a' ∪ b)
+    (hmin : minEdges (neighbourhoods arc) = quad a a' b b') :
+    a = {u} ∨ a' = {u'} := by
+  classical
+  by_contra hn
+  have ha_ne : a ≠ {u} := fun h => hn (Or.inl h)
+  have ha'_ne : a' ≠ {u'} := fun h => hn (Or.inr h)
+  have hx : ∃ x ∈ a, x ≠ u := by
+    by_contra hh
+    have hsub : a ⊆ {u} := by
+      intro x hx
+      have heq : x = u := by
+        by_contra hne
+        exact hh ⟨x,hx,hne⟩
+      simp [heq]
+    exact ha_ne (Subset.antisymm hsub (by simpa using hu))
+  have hy : ∃ y ∈ a', y ≠ u' := by
+    by_contra hh
+    have hsub : a' ⊆ {u'} := by
+      intro y hy
+      have heq : y = u' := by
+        by_contra hne
+        exact hh ⟨y,hy,hne⟩
+      simp [heq]
+    exact ha'_ne (Subset.antisymm hsub (by simpa using hu'))
+  obtain ⟨x,hxa,hxu⟩ := hx
+  obtain ⟨y,hya,hyu⟩ := hy
+  have hxw : x ≠ w := by
+    intro h
+    subst x
+    exact (disjoint_left.mp hXY) (haX hxa) (hbY' hw)
+  have hyw' : y ≠ w' := by
+    intro h
+    subst y
+    exact (disjoint_left.mp hXY) (haX' hya) (hbY hw')
+  have hxuArc : arc x u := arc_from_closed arc x u hxu (by rw [hIu]; exact mem_union_left b hxa)
+  have hxwArc : arc x w := arc_from_closed arc x w hxw (by rw [hIw]; exact mem_union_left b' hxa)
+  have hyuArc : arc y u' := arc_from_closed arc y u' hyu (by rw [hIu']; exact mem_union_left b' hya)
+  have hywArc : arc y w' := arc_from_closed arc y w' hyw' (by rw [hIw']; exact mem_union_left b hya)
+  obtain ⟨ex,hex,hsubx⟩ := closed_contains_minimal_neighbourhood arc x
+  rw [hmin] at hex
+  have hforcedX := quad_inside_forced a a' b b' (inClosed arc x) u w hu hw
+    (closed_excludes_outgoing arc oriented x u hxu hxuArc)
+    (closed_excludes_outgoing arc oriented x w hxw hxwArc) ⟨ex,hex,hsubx⟩
+  obtain ⟨ey,hey,hsuby⟩ := closed_contains_minimal_neighbourhood arc y
+  rw [hmin, quad_swap_both] at hey
+  have hforcedY := quad_inside_forced a' a b' b (inClosed arc y) u' w' hu' hw'
+    (closed_excludes_outgoing arc oriented y u' hyu hyuArc)
+    (closed_excludes_outgoing arc oriented y w' hyw' hywArc) ⟨ey,hey,hsuby⟩
+  have hxy : x ≠ y := by
+    intro h
+    subst y
+    exact (disjoint_left.mp hAA) hxa hya
+  have hyxArc : arc y x := arc_from_closed arc y x (Ne.symm hxy) (hforcedX.1 hya)
+  have hxyArc : arc x y := arc_from_closed arc x y hxy (hforcedY.1 hxa)
+  exact oriented x y hxyArc hyxArc
+
+omit [Fintype V] in
+theorem quad_swap_columns (a a' b b' : Finset V) : quad a a' b b' = quad a a' b' b := by
+  ext s
+  simp only [quad, mem_insert, mem_singleton]
+  tauto
+
+theorem quad_rows_have_singleton (arc : V → V → Prop)
+    (oriented : ∀ u v, arc u v → ¬ arc v u)
+    (a a' b b' X Y : Finset V)
+    (hXY : Disjoint X Y) (hAA : Disjoint a a') (hBB : Disjoint b b')
+    (haX : a ⊆ X) (haX' : a' ⊆ X) (hbY : b ⊆ Y) (hbY' : b' ⊆ Y)
+    (ha : a.Nonempty) (hb : b.Nonempty)
+    (hmin : minEdges (neighbourhoods arc) = quad a a' b b') :
+    a.card = 1 ∨ a'.card = 1 := by
+  classical
+  have hane : a ≠ a' := by
+    intro heq
+    obtain ⟨x,hx⟩ := ha
+    exact (disjoint_left.mp hAA) hx (heq ▸ hx)
+  have hbne : b ≠ b' := by
+    intro heq
+    obtain ⟨x,hx⟩ := hb
+    exact (disjoint_left.mp hBB) hx (heq ▸ hx)
+  let row : Fin 2 → Finset V := fun i => if i = 0 then a else a'
+  let col : Fin 2 → Finset V := fun i => if i = 0 then b else b'
+  have hr : ∀ i, row i ⊆ X := by
+    intro i
+    fin_cases i <;> simp [row, haX, haX']
+  have hc : ∀ i, col i ⊆ Y := by
+    intro i
+    fin_cases i <;> simp [col, hbY, hbY']
+  have hri : Function.Injective row := by
+    intro i j hij
+    fin_cases i <;> fin_cases j <;> simp_all [row]
+  have hci : Function.Injective col := by
+    intro i j hij
+    fin_cases i <;> fin_cases j <;> simp_all [col]
+  have hasrep : ∀ i j, ∃ v, inClosed arc v = row i ∪ col j := by
+    intro i j
+    have hmem : row i ∪ col j ∈ minEdges (neighbourhoods arc) := by
+      rw [hmin]
+      fin_cases i <;> fin_cases j <;> simp [quad, row, col]
+    have hm := (mem_minEdges (neighbourhoods arc) _).mp hmem
+    obtain ⟨v, _, hv⟩ := mem_image.mp hm.1
+    exact ⟨v,hv⟩
+  let rep : Fin 2 → Fin 2 → V := fun i j => Classical.choose (hasrep i j)
+  have hrep : ∀ i j, inClosed arc (rep i j) = row i ∪ col j := fun i j => Classical.choose_spec (hasrep i j)
+  have hcover : ∀ i j, rep i j ∈ row i ∨ rep i j ∈ col j := by
+    intro i j
+    have hself : rep i j ∈ inClosed arc (rep i j) := by simp [inClosed]
+    rw [hrep] at hself
+    exact mem_union.mp hself
+  have hrow : ∀ i j k, rep i j ∈ row i → rep i k ∈ row i → j = k :=
+    row_representatives_unique arc oriented X Y hXY row col hr hc hci rep hrep
+  have hcol : ∀ j i k, rep i j ∈ col j → rep k j ∈ col j → i = k :=
+    column_representatives_unique arc oriented X Y hXY row col hr hc hri rep hrep
+  have hrow0 : ¬ (rep 0 0 ∈ a ∧ rep 0 1 ∈ a) := by
+    rintro ⟨h1,h2⟩
+    have h := hrow 0 0 1 (by simpa [row] using h1) (by simpa [row] using h2)
+    norm_num at h
+  have hrow1 : ¬ (rep 1 0 ∈ a' ∧ rep 1 1 ∈ a') := by
+    rintro ⟨h1,h2⟩
+    have h := hrow 1 0 1 (by simpa [row] using h1) (by simpa [row] using h2)
+    norm_num at h
+  have hcol0 : ¬ (rep 0 0 ∈ b ∧ rep 1 0 ∈ b) := by
+    rintro ⟨h1,h2⟩
+    have h := hcol 0 0 1 (by simpa [col] using h1) (by simpa [col] using h2)
+    norm_num at h
+  have hcol1 : ¬ (rep 0 1 ∈ b' ∧ rep 1 1 ∈ b') := by
+    rintro ⟨h1,h2⟩
+    have h := hcol 1 0 1 (by simpa [col] using h1) (by simpa [col] using h2)
+    norm_num at h
+  have hc00 : rep 0 0 ∈ a ∨ rep 0 0 ∈ b := by simpa [row,col] using hcover 0 0
+  have hc01 : rep 0 1 ∈ a ∨ rep 0 1 ∈ b' := by simpa [row,col] using hcover 0 1
+  have hc10 : rep 1 0 ∈ a' ∨ rep 1 0 ∈ b := by simpa [row,col] using hcover 1 0
+  have hc11 : rep 1 1 ∈ a' ∨ rep 1 1 ∈ b' := by simpa [row,col] using hcover 1 1
+  have pattern : (rep 0 0 ∈ a ∧ rep 0 1 ∈ b' ∧ rep 1 1 ∈ a' ∧ rep 1 0 ∈ b) ∨
+      (rep 0 1 ∈ a ∧ rep 0 0 ∈ b ∧ rep 1 0 ∈ a' ∧ rep 1 1 ∈ b') := by
+    tauto
+  have hi00 : inClosed arc (rep 0 0) = a ∪ b := by simpa [row,col] using hrep 0 0
+  have hi01 : inClosed arc (rep 0 1) = a ∪ b' := by simpa [row,col] using hrep 0 1
+  have hi10 : inClosed arc (rep 1 0) = a' ∪ b := by simpa [row,col] using hrep 1 0
+  have hi11 : inClosed arc (rep 1 1) = a' ∪ b' := by simpa [row,col] using hrep 1 1
+  rcases pattern with ⟨h00,h01,h11,h10⟩ | ⟨h01,h00,h10,h11⟩
+  · rcases two_stars_row arc oriented a a' b b' X Y (rep 0 0) (rep 0 1) (rep 1 1) (rep 1 0)
+      hXY hAA haX haX' hbY hbY' h00 h01 h11 h10 hi00 hi01 hi11 hi10 hmin with h | h
+    · left; simp [h]
+    · right; simp [h]
+  · have hmin' : minEdges (neighbourhoods arc) = quad a a' b' b := by rw [hmin, quad_swap_columns]
+    rcases two_stars_row arc oriented a a' b' b X Y (rep 0 1) (rep 0 0) (rep 1 0) (rep 1 1)
+      hXY hAA haX haX' hbY' hbY h01 h00 h10 h11 hi01 hi00 hi10 hi11 hmin' with h | h
+    · left; simp [h]
+    · right; simp [h]
+
+theorem oriented_two_star_structure (arc : V → V → Prop)
+    (oriented : ∀ u v, arc u v → ¬ arc v u)
+    (F G : Finset (Finset V)) (X Y : Finset V)
+    (hF : ∀ e ∈ F, e ⊆ X) (hG : ∀ e ∈ G, e ⊆ Y) (hXY : Disjoint X Y)
+    (hFn : F.Nonempty) (hGn : G.Nonempty)
+    (hFne : ∀ e ∈ F, e.Nonempty) (hGne : ∀ e ∈ G, e.Nonempty)
+    (hD : blocker (neighbourhoods arc) = F ∪ G)
+    (hNo : ∀ v : V, ¬ hits (blocker (F ∪ G)) {v}) :
+    ∃ a a' b b' : Finset V, a.Nonempty ∧ a'.Nonempty ∧ b.Nonempty ∧ b'.Nonempty ∧
+      Disjoint a a' ∧ Disjoint b b' ∧ a ⊆ X ∧ a' ⊆ X ∧ b ⊆ Y ∧ b' ⊆ Y ∧
+      (a.card = 1 ∨ a'.card = 1) ∧ (b.card = 1 ∨ b'.card = 1) ∧
+      blocker (neighbourhoods arc) = pairs a a' ∪ pairs b b' := by
+  obtain ⟨a,a',b,b',ha,ha',hb,hb',hAA,hBB,haX,haX',hbY,hbY',hstruct,hmin⟩ :=
+    separated_oriented_bicliques arc oriented F G X Y hF hG hXY hFn hGn hFne hGne hD hNo
+  have hrow := quad_rows_have_singleton arc oriented a a' b b' X Y hXY hAA hBB
+    haX haX' hbY hbY' ha hb hmin
+  have hmin' : minEdges (neighbourhoods arc) = quad b b' a a' := by rw [hmin, quad_swap]
+  have hcol := quad_rows_have_singleton arc oriented b b' a a' Y X hXY.symm hBB hAA
+    hbY hbY' haX haX' hb ha hmin'
+  exact ⟨a,a',b,b',ha,ha',hb,hb',hAA,hBB,haX,haX',hbY,hbY',hrow,hcol,hstruct⟩
+
+theorem oriented_separation_stars (arc : V → V → Prop)
+    (oriented : ∀ u v, arc u v → ¬ arc v u)
+    (X Y : Finset V) (hXY : Disjoint X Y)
+    (hpart : ∀ e ∈ blocker (neighbourhoods arc), e ⊆ X ∨ e ⊆ Y)
+    (hleft : ∃ e ∈ blocker (neighbourhoods arc), e.Nonempty ∧ e ⊆ X)
+    (hright : ∃ e ∈ blocker (neighbourhoods arc), e.Nonempty ∧ e ⊆ Y) :
+    ∃ a a' b b' : Finset V, a.Nonempty ∧ a'.Nonempty ∧ b.Nonempty ∧ b'.Nonempty ∧
+      Disjoint a a' ∧ Disjoint b b' ∧ a ⊆ X ∧ a' ⊆ X ∧ b ⊆ Y ∧ b' ⊆ Y ∧
+      (a.card = 1 ∨ a'.card = 1) ∧ (b.card = 1 ∨ b'.card = 1) ∧
+      blocker (neighbourhoods arc) = pairs a a' ∪ pairs b b' := by
+  classical
+  obtain ⟨eL, heL, heLn, heLX⟩ := hleft
+  obtain ⟨eR, heR, _, heRY⟩ := hright
+  obtain ⟨v0, _⟩ := heLn
+  have hsource : ¬ ∃ v, dominates arc {v} := by
+    rintro ⟨v,hv⟩
+    have hDL : dominates arc eL := ((minimal_domination_blocker arc eL).mp heL).1
+    have hDR : dominates arc eR := ((minimal_domination_blocker arc eR).mp heR).1
+    exact (disjoint_left.mp hXY) (heLX (source_mem_dominating arc oriented v hv eL hDL))
+      (heRY (source_mem_dominating arc oriented v hv eR hDR))
+  let D := blocker (neighbourhoods arc)
+  let F := D.filter (fun e => e ⊆ X)
+  let G := D.filter (fun e => e ⊆ Y)
+  have hD : D = F ∪ G := by
+    ext e
+    simp only [F, G, mem_union, mem_filter]
+    constructor
+    · intro he
+      rcases hpart e he with h | h
+      · exact Or.inl ⟨he,h⟩
+      · exact Or.inr ⟨he,h⟩
+    · rintro (⟨he,_⟩ | ⟨he,_⟩) <;> exact he
+  have hF : ∀ e ∈ F, e ⊆ X := by
+    intro e he
+    exact (mem_filter.mp he).2
+  have hG : ∀ e ∈ G, e ⊆ Y := by
+    intro e he
+    exact (mem_filter.mp he).2
+  have hFn : F.Nonempty := ⟨eL, mem_filter.mpr ⟨heL, heLX⟩⟩
+  have hGn : G.Nonempty := ⟨eR, mem_filter.mpr ⟨heR, heRY⟩⟩
+  have hFne : ∀ e ∈ F, e.Nonempty := by
+    intro e he
+    exact dominating_nonempty arc v0 e ((minimal_domination_blocker arc e).mp (mem_filter.mp he).1).1
+  have hGne : ∀ e ∈ G, e.Nonempty := by
+    intro e he
+    exact dominating_nonempty arc v0 e ((minimal_domination_blocker arc e).mp (mem_filter.mp he).1).1
+  have hNo : ∀ v : V, ¬ hits (blocker (F ∪ G)) {v} := by
+    intro v hh
+    rw [← hD] at hh
+    obtain ⟨e, he, hsub⟩ := (hits_blocker_iff D {v}).mp hh
+    have hehits := ((mem_blocker (neighbourhoods arc) e).mp he).1
+    have hsingleton := hits_mono (neighbourhoods arc) hsub hehits
+    exact hsource ⟨v, (domination_iff_hits arc {v}).mpr hsingleton⟩
+  exact oriented_two_star_structure arc oriented F G X Y hF hG hXY hFn hGn hFne hGne hD hNo
 
 end Sonntag
 end

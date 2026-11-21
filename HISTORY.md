@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Sonntag–Teichert oriented-graph classification in Lean
+
+Proved the forward two-star classification for separated domination hypergraphs of arbitrary finite oriented graphs. The proof checks the blocker product, both bicliques and singleton-part argument. Strict source compilation, all-owned axiom audit and stock-kernel replay passed. The converse realization and combined repository gate remain pending.
+
 ## 2026-11-21 — Brown–Mol's and Kovalev's conjectures
 
 Added two complete proposed analytic disproofs after separate mathematical reviews, root reviews, primary-source comparisons, and retrospective full-content archive audits.
