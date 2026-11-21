@@ -24,9 +24,9 @@ The missing step is to prove that the extra-zero graph is empty. Equal maximal m
 
 ### Wang's sign-matrix problem
 
-P7 asks which orders admit a sign matrix with equal absolute permanent and determinant. The full classification remains open. The [constant-recurrence obstruction](sign-matrices/cfinite_obstruction.md) proves that finitely many all-order families whose permanents and determinants satisfy fixed constant-coefficient recurrences cannot cover every sufficiently large non-Mersenne order. It uses the classical Mersenne-order obstruction and arbitrarily long runs of zeros.
+P7 asks which orders admit a sign matrix with equal absolute permanent and determinant. The full classification remains open. The [polynomial-recurrence obstruction](sign-matrices/p_recursive_obstruction.md) proves that finitely many all-order families whose permanents and determinants are P-recursive cannot cover every sufficiently large non-Mersenne order. It uses the classical Mersenne-order obstruction and arbitrarily long runs of zeros. The same note proves that finitely many families with P-recursive permanent sequences cannot attain Kräuter's proposed minimum in every sufficiently large order; its uniform recurrence is independent of the piecewise exponential scale.
 
-This does not prove that every non-Mersenne order is admissible. A construction depending on binary digits, an unbounded state space, or infinitely many families is not excluded. The existing [construction audit](sign-matrices/sign_lift_audit.md) records other families that cannot supply the missing all-order theorem.
+This does not prove that every non-Mersenne order is admissible. A construction depending on binary digits, an unbounded state space, or infinitely many families is not excluded. Neither Wang's classification nor Kräuter's full attainment conjecture is resolved. The existing [construction audit](sign-matrices/sign_lift_audit.md) records other families that cannot supply the missing all-order theorem.
 
 ### Normalized minimum permanents and integrality
 

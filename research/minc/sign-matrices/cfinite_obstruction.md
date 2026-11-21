@@ -97,7 +97,7 @@ The proposition is conditional only about coverage by a method. It does not assu
 
 The conclusion applies only after the stated C-finite hypotheses have actually been proved for the chosen families. A fixed transfer matrix can provide such a recurrence, but an arbitrary structured matrix family need not do so.
 
-The argument does not exclude a construction indexed by the binary digits of $`n`$, a recurrence whose state dimension grows with $`n`$, infinitely many fixed families, or sequences satisfying recurrences with coefficients depending on $`n`$. It also does not say that any one C-finite family can succeed at only finitely many orders. The obstruction is to finite-family coverage of all sufficiently large non-Mersenne orders.
+The [polynomial-recurrence followup](p_recursive_obstruction.md) strengthens this obstruction to P-recursive permanent and determinant sequences and proves a finite-family obstruction for Kräuter's minimum-attainment problem. Thus polynomial dependence of recurrence coefficients on the order does not bypass the method obstruction. Constructions indexed by binary digits, growing state spaces, infinitely many parameter choices, or sequences with no eventual polynomial-coefficient recurrence are not excluded. It also does not say that any one C-finite family can succeed at only finitely many orders. The obstruction is to finite-family coverage of all sufficiently large non-Mersenne orders.
 
 ## Sources and current status
 

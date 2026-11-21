@@ -181,3 +181,10 @@ Both notes have been checked as partial results. No completed entry is added. A 
 The [Pate indicator-theorem correction](inequalities/pate_packet_correction.md) establishes the Marcus replacement endpoint derivative, every two-part Chollet occupation bound, the standard-representation case of quadratic permanental dominance in every order, and a cofactor-product permanent bound as consequences of the 2008 theorem. [Exact checks](inequalities/pate_packet_certificates.py) verify the subset indexing and polynomial identities. The Gaussian replacement and quadratic-dominance notes, including the review's source-status paragraph, have been corrected: the total standard-block Fischer-deficit compensation is established, rather than an unresolved target.
 
 The result does not extend by subtracting cumulative two-row upper bounds, by applying the PSD theorem to cross-minors, or by silently iterating two-copy mixing. Full quadratic dominance, Chollet and Marcus remain open here. This source correction adds no newly resolved conjecture.
+
+
+## Polynomial-recurrence obstruction
+
+The [uniform-recurrence theorem](sign-matrices/p_recursive_obstruction.md) extends the Wang construction obstruction to P-recursive permanent and determinant sequences. It also proves that finitely many all-order families with P-recursive permanent sequences cannot, between them, attain Kräuter's proposed minimum in every sufficiently large order. The key uniform recurrence is independent of a scalar parameter; long order intervals force too many distinct eventual exponential values for a finite set of families.
+
+This excludes a class of construction methods. It does not disprove attainment in any order, establish the expected Wang classification, or settle either original conjecture. Binary-dependent constructions and genuinely unbounded families remain available. No full resolution is added.
