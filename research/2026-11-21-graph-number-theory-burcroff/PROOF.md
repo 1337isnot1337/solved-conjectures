@@ -1,6 +1,6 @@
 # Burcroff's conjecture
 
-Research date: 2026-11-21. Status: complete proof candidate, under independent review and prior-art audit. This document does not claim that an external referee has accepted the result.
+Research date: 2026-11-21. Status: independent reproof; excluded from new-resolution counting. After this argument was written and passed two internal adversarial reviews, global GitHub code search found a September 2026 proof of the stronger unbalanced Alon–Defant conjecture. See NOVELTY.md. No external human referee has reviewed this manuscript.
 
 ## Statement
 
