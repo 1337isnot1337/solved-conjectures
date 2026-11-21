@@ -1274,7 +1274,7 @@ This formalizes a previously resolved result. A complete ordinary disproof was p
 
 ## Baricz–Pogány coefficient positivity
 
-`BariczPogany.conjecture` proves strict positivity for every degree n≥2 and every real |ν|<1/2, using the source factorial-product coefficients and the uniquely determined formal quotient. `explicit_lower_bound` proves the stronger stated bound; no analytic convergence is assumed. Strict compilation, the isolated kernel replay and endpoint axiom checks passed. The full repository gate is pending.
+`BariczPogany.conjecture` proves strict positivity for every degree n≥2 and every real |ν|<1/2, using the source factorial-product coefficients and the uniquely determined formal quotient. `source_recurrence` derives the source’s coefficient recurrence explicitly. `explicit_lower_bound` proves the stronger stated bound; no analytic convergence is assumed. Strict compilation, the isolated kernel replay and endpoint axiom checks passed. The full repository gate is pending.
 
 ## López Pouso–Segura quadrature counterexample
 

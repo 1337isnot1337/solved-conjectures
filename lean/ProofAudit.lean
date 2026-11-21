@@ -32,6 +32,7 @@ run_cmd do
     `Sonntag.separated_blockers_impossible,
     `Sonntag.tournament_no_separation,
 
+    `BariczPogany.source_recurrence,
     `BariczPogany.conjecture,
     `BariczPogany.explicit_lower_bound,
     `BariczPogany.source_unique,

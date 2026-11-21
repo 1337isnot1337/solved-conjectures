@@ -334,4 +334,15 @@ theorem explicit_lower_bound (nu : ℝ) (hnu : |nu| < 1/2) (n : ℕ) (hn : 2 ≤
   push_cast
   nlinarith
 
+theorem source_recurrence (nu : ℝ) (n : ℕ) :
+    PowerSeries.coeff n (sourceAlpha nu) = sourceRaw nu n -
+      ∑ i ∈ Finset.range n, PowerSeries.coeff i (sourceAlpha nu) * sourceRaw (nu+1) (n-i) := by
+  have h := congrArg (PowerSeries.coeff n) (source_division nu)
+  rw [PowerSeries.coeff_mul, Finset.Nat.sum_antidiagonal_eq_sum_range_succ_mk] at h
+  simp only [PowerSeries.coeff_mk] at h
+  rw [Finset.sum_range_succ] at h
+  have hz : sourceRaw (nu+1) 0 = 1 := by simp [sourceRaw]
+  simp only [Nat.sub_self, hz, mul_one] at h
+  linarith
+
 end BariczPogany
