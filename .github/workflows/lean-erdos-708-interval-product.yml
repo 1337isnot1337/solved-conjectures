@@ -11,12 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Lean 4
+      - name: Install Elan & Setup Lean
         uses: leanprover/lean-action@v1
-        with:
-          lean-version: v4.6.0
-      - name: Verify Erdos 708 Interval Product
+      - name: Build and Verify Erdos 708 Interval Product
         run: |
-          mkdir -p docs/verification/erdos-708/logs
-          echo "replaying Conjectures.Erdos708IntervalProduct" > docs/verification/erdos-708/logs/kernel.log
-          echo "SUCCESS" >> docs/verification/erdos-708/logs/kernel.log
+          lake build
