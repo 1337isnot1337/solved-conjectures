@@ -335,3 +335,11 @@ remains zero.
 ## Star-core structural continuation (20 November 2026)
 
 The [exact star-forest substochastic theorem](inequalities/hwang_star_core_monotonicity.md) proves strict radial growth F_B'(t)>0 for every nonzero B whose bipartite support is a disjoint union of stars, every 0<t<=1, with F_B''(0)=||B||_F^2. Its certificate is tF_B'=e^{t sum B} prod_j(1-tb_j) [||y||_2^2-(x dot y)^2] for x_j=tb_j, y_j=x_j/(1-x_j). Combined with the already reviewed C^2 padding transfer, every fixed such B has genuine doubly stochastic completions whose permanent increases on 0<t<=1/2 for all sufficiently large tail sizes. The coefficient identity has 240 exact rational diagnostics and 30 independent exact component-factorization checks. Coordinatewise monotonicity of F itself is false, even for two-column stars. No independent review or historical novelty audit is claimed, and no new complete numbered entry is counted. **Remaining implication:** overlapping multi-row supports require a positive derivative/curvature certificate; the full P8 boundary classification and C34 finite chord comparison remain open.
+
+**P1 (shifted projections).** The [spectral bound and exact
+maximum](orbit-bounds/shifted_projections.md) treat every two-level
+spectrum whose larger eigenvalue has multiplicity dividing the
+dimension. The [equality proof](orbit-bounds/equality.md) classifies
+the equal-block maximizers up to phases and permutations and identifies
+the strict gap in the same bound for other spectra. Its magnitude and
+the general orbit maximum remain open. This contributes zero full entries.
