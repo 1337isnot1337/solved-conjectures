@@ -2,6 +2,39 @@
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
 
+## Chen–Khare–Sahi stable Hall local verification
+
+The twelve new modules and seven reused semiring modules form an exact
+nineteen-module closure. All nineteen sources passed strict compilation.
+The unchanged modern owned/private audit covers eleven modules; the
+unchanged complete audit covers 1,489 declarations, 1,294 theorem declarations, 950 private declarations and all 42 required endpoints. Only `propext`,
+`Classical.choice` and `Quot.sound` occur. Stock-kernel replay passed for
+this exact frozen nineteen-module closure, including all 41 object parts.
+The combined repository gate and hosted validation remain separate pending
+checks.
+
+The receipt preserves all source commands, raw strict logs and process metrics,
+both current raw audit logs and their revalidated inventories, and the complete
+stock-replay log. The frozen inventory includes nineteen sources, 33 modern
+object parts and eight legacy public objects, the unchanged verification
+helpers, pins, generated audits, gate runner and checker binaries. Legacy
+private/server facets are required to be absent.
+
+The ten earlier modern helper records contain source and all output-object
+hashes plus imported-object hashes. They do not contain historical compiler,
+control or dependency-source hashes; those are not invented. The fresh seven
+legacy records and the two final single-module receipts include their recorded
+pre/post source, dependency and control checks. The full gate independently
+freezes and rechecks the complete current source/object closure.
+
+The earlier sixteen-module compatibility receipt remains a separate
+checkpoint. Its strict sources and owned/private audit passed, but its
+fresh stock replay remains pending. This nineteen-module replay shares
+only seven modules with that closure and does not certify its other nine
+modules.
+
+See the [stable-Hall receipt](verification/lean-cks-hall-20261121/receipt.json).
+
 ## KVZ complete local verification
 
 The full gamma-quotient theorem has an exact 15-module closure. The [receipt](verification/lean-kvz-20261121/receipt.json)

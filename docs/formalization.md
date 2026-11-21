@@ -15,6 +15,44 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Chen–Khare–Sahi fixed-parameter stable Hall checkpoint
+
+Lean now identifies the displayed counterexample at `q=1/10`, `t=9/10`
+with the complete stable Hall-orthogonal family in degree six. All eleven
+partitions occur before specialization. The formalization proves the literal
+power-sum expansion, injectivity of the six-variable polynomial coordinates,
+the diagonal stable Hall pairing, and existence and uniqueness of the monic
+dominance-triangular orthogonal family. Literal specialization to three
+variables gives the `(4,2,0)` and `(4,1,1)` polynomials, with positive
+normalizing values. Their normalized difference lies outside the full real
+Muirhead semiring.
+
+The degree-three source-convention conflict is also formal: at `q=t=1/2`,
+the literal two-variable source formulas have truncated finite Hall pairing
+`-1`, so they are not orthogonal for that form. This fixed-parameter stable
+Hall theorem does not reconcile the manuscript's truncated finite-variable
+Hall definition. The broader rectangular-translate and parameter families
+retain their monic triangular eigenfunction characterizations; their stable
+Hall identification is not established by this checkpoint. The result's
+README badge remains partial.
+
+The twelve new modules and seven reused semiring modules form an exact
+nineteen-module closure. All nineteen sources passed strict compilation.
+The unchanged modern owned/private audit covers eleven modules; the
+unchanged complete audit covers 1,489 declarations, 1,294 theorem declarations, 950 private declarations and all 42 required endpoints. Only `propext`,
+`Classical.choice` and `Quot.sound` occur. Stock-kernel replay passed for
+this exact frozen nineteen-module closure, including all 41 object parts.
+The combined repository gate and hosted validation remain separate pending
+checks.
+
+The earlier sixteen-module compatibility receipt remains a separate
+checkpoint. Its strict sources and owned/private audit passed, but its
+fresh stock replay remains pending. This nineteen-module replay shares
+only seven modules with that closure and does not certify its other nine
+modules.
+
+See the [stable-Hall receipt](verification/lean-cks-hall-20261121/receipt.json).
+
 ## KVZ gamma-quotient theorem, 21 November 2026
 
 Lean proves the literal kernel `Gamma(c+x+y) / Gamma(d+x+y)` for

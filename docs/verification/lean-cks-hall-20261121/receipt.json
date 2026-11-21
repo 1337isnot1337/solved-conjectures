@@ -1,0 +1,2254 @@
+{
+  "status": "fixed-parameter-stable-hall-checkpoint-passed",
+  "completed_utc": "2026-11-21T18:36:52.115198+00:00",
+  "base_commit": "3e07d5e16dd8d4b1059bb1bd8f7796f3dc78afde",
+  "roots": [
+    "Conjectures.ChenKhareSahiOrthogonality"
+  ],
+  "new_authored_modules": [
+    "Conjectures.ChenKhareSahiOrthogonalityData",
+    "Conjectures.ChenKhareSahiOrthogonalityTransition",
+    "Conjectures.ChenKhareSahiOrthogonalityGram",
+    "Conjectures.ChenKhareSahiOrthogonalityDual",
+    "Conjectures.ChenKhareSahiOrthogonalityFamily",
+    "Conjectures.ChenKhareSahiOrthogonalityCore",
+    "Conjectures.ChenKhareSahiOrthogonalityOrbits",
+    "Conjectures.ChenKhareSahiOrthogonalityPower",
+    "Conjectures.ChenKhareSahiOrthogonalityEvaluation",
+    "Conjectures.ChenKhareSahiOrthogonalityPolynomial",
+    "Conjectures.ChenKhareSahiHallConvention",
+    "Conjectures.ChenKhareSahiOrthogonality"
+  ],
+  "reused_dependency_modules": [
+    "Conjectures.ChenKhareSahi",
+    "Conjectures.ChenKhareSahiCovers",
+    "Conjectures.ChenKhareSahiReal",
+    "Conjectures.ChenKhareSahiCone",
+    "Conjectures.ChenKhareSahiProducts",
+    "Conjectures.ChenKhareSahiGraded",
+    "Conjectures.ChenKhareSahiMixed"
+  ],
+  "imported_project_modules": [
+    "Conjectures.ChenKhareSahi",
+    "Conjectures.ChenKhareSahiCone",
+    "Conjectures.ChenKhareSahiCovers",
+    "Conjectures.ChenKhareSahiGraded",
+    "Conjectures.ChenKhareSahiHallConvention",
+    "Conjectures.ChenKhareSahiMixed",
+    "Conjectures.ChenKhareSahiOrthogonality",
+    "Conjectures.ChenKhareSahiOrthogonalityCore",
+    "Conjectures.ChenKhareSahiOrthogonalityData",
+    "Conjectures.ChenKhareSahiOrthogonalityDual",
+    "Conjectures.ChenKhareSahiOrthogonalityEvaluation",
+    "Conjectures.ChenKhareSahiOrthogonalityFamily",
+    "Conjectures.ChenKhareSahiOrthogonalityGram",
+    "Conjectures.ChenKhareSahiOrthogonalityOrbits",
+    "Conjectures.ChenKhareSahiOrthogonalityPolynomial",
+    "Conjectures.ChenKhareSahiOrthogonalityPower",
+    "Conjectures.ChenKhareSahiOrthogonalityTransition",
+    "Conjectures.ChenKhareSahiProducts",
+    "Conjectures.ChenKhareSahiReal"
+  ],
+  "modern_owned_modules": [
+    "Conjectures.ChenKhareSahiOrthogonalityData",
+    "Conjectures.ChenKhareSahiOrthogonalityTransition",
+    "Conjectures.ChenKhareSahiOrthogonalityGram",
+    "Conjectures.ChenKhareSahiOrthogonalityDual",
+    "Conjectures.ChenKhareSahiOrthogonalityFamily",
+    "Conjectures.ChenKhareSahiOrthogonalityCore",
+    "Conjectures.ChenKhareSahiOrthogonalityOrbits",
+    "Conjectures.ChenKhareSahiOrthogonalityPower",
+    "Conjectures.ChenKhareSahiOrthogonalityEvaluation",
+    "Conjectures.ChenKhareSahiOrthogonalityPolynomial",
+    "Conjectures.ChenKhareSahiHallConvention"
+  ],
+  "legacy_modules": [
+    "Conjectures.ChenKhareSahi",
+    "Conjectures.ChenKhareSahiCone",
+    "Conjectures.ChenKhareSahiCovers",
+    "Conjectures.ChenKhareSahiGraded",
+    "Conjectures.ChenKhareSahiMixed",
+    "Conjectures.ChenKhareSahiOrthogonality",
+    "Conjectures.ChenKhareSahiProducts",
+    "Conjectures.ChenKhareSahiReal"
+  ],
+  "required_theorems": [
+    "ChenKhareSahi.Orthogonality.partition_complete",
+    "ChenKhareSahi.Orthogonality.dominates_index",
+    "ChenKhareSahi.Orthogonality.hallWeight_exact",
+    "ChenKhareSahi.Orthogonality.hallWeight_positive",
+    "ChenKhareSahi.Orthogonality.parts_sorted",
+    "ChenKhareSahi.Orthogonality.transition_inverse",
+    "ChenKhareSahi.Orthogonality.evaluation_inverse",
+    "ChenKhareSahi.Orthogonality.gram_from_power",
+    "ChenKhareSahi.Orthogonality.gram_macdonald",
+    "ChenKhareSahi.Orthogonality.dual_upper",
+    "ChenKhareSahi.Orthogonality.dual_diagonal_positive",
+    "ChenKhareSahi.Orthogonality.macdonald_monic",
+    "ChenKhareSahi.Orthogonality.macdonald_triangular",
+    "ChenKhareSahi.Orthogonality.macdonald_dual",
+    "ChenKhareSahi.Orthogonality.real_inverse_transition",
+    "ChenKhareSahi.Orthogonality.gram_factorization",
+    "ChenKhareSahi.Orthogonality.hall_power_coordinates",
+    "ChenKhareSahi.Orthogonality.powerCoordinates_power",
+    "ChenKhareSahi.Orthogonality.hall_power_basis",
+    "ChenKhareSahi.Orthogonality.macdonald_source_family",
+    "ChenKhareSahi.Orthogonality.source_family_unique",
+    "ChenKhareSahi.Orthogonality.source_family_exists_unique",
+    "ChenKhareSahi.Orthogonality.orbitListCertificate_nodup",
+    "ChenKhareSahi.Orthogonality.orbitSix_certificate",
+    "ChenKhareSahi.Orthogonality.monomialSix_eq_list",
+    "ChenKhareSahi.Orthogonality.power_expansion",
+    "ChenKhareSahi.Orthogonality.evaluation_matrix_exact",
+    "ChenKhareSahi.Orthogonality.power_coordinates_polynomial",
+    "ChenKhareSahi.Orthogonality.literal_polynomial_injective",
+    "ChenKhareSahi.Orthogonality.hall_polynomial_well_defined",
+    "ChenKhareSahi.HallConvention.realize_injective",
+    "ChenKhareSahi.HallConvention.sourceOneRow_half_three",
+    "ChenKhareSahi.HallConvention.sourceOneRow_half_two_one",
+    "ChenKhareSahi.HallConvention.finiteHall_source_pairing",
+    "ChenKhareSahi.HallConvention.source_formulas_not_finiteHall_orthogonal",
+    "ChenKhareSahi.Orthogonality.dominates_iff_all_prefixes",
+    "ChenKhareSahi.Orthogonality.monomial_specialize",
+    "ChenKhareSahi.Orthogonality.stable_hall_specialization",
+    "ChenKhareSahi.Orthogonality.stable_hall_normalization_positive",
+    "ChenKhareSahi.Orthogonality.standard_macdonald_counterexample",
+    "ChenKhareSahi.Orthogonality.stable_hall_counterexample_witness",
+    "ChenKhareSahi.FullSemiring.excludes_counterexample"
+  ],
+  "modern_required_by_module": {
+    "Conjectures.ChenKhareSahiOrthogonalityData": [
+      "ChenKhareSahi.Orthogonality.partition_complete",
+      "ChenKhareSahi.Orthogonality.dominates_index",
+      "ChenKhareSahi.Orthogonality.hallWeight_exact",
+      "ChenKhareSahi.Orthogonality.hallWeight_positive",
+      "ChenKhareSahi.Orthogonality.parts_sorted"
+    ],
+    "Conjectures.ChenKhareSahiOrthogonalityTransition": [
+      "ChenKhareSahi.Orthogonality.transition_inverse",
+      "ChenKhareSahi.Orthogonality.evaluation_inverse"
+    ],
+    "Conjectures.ChenKhareSahiOrthogonalityGram": [
+      "ChenKhareSahi.Orthogonality.gram_from_power"
+    ],
+    "Conjectures.ChenKhareSahiOrthogonalityDual": [
+      "ChenKhareSahi.Orthogonality.gram_macdonald",
+      "ChenKhareSahi.Orthogonality.dual_upper",
+      "ChenKhareSahi.Orthogonality.dual_diagonal_positive"
+    ],
+    "Conjectures.ChenKhareSahiOrthogonalityFamily": [
+      "ChenKhareSahi.Orthogonality.macdonald_monic",
+      "ChenKhareSahi.Orthogonality.macdonald_triangular",
+      "ChenKhareSahi.Orthogonality.macdonald_dual"
+    ],
+    "Conjectures.ChenKhareSahiOrthogonalityCore": [
+      "ChenKhareSahi.Orthogonality.real_inverse_transition",
+      "ChenKhareSahi.Orthogonality.gram_factorization",
+      "ChenKhareSahi.Orthogonality.hall_power_coordinates",
+      "ChenKhareSahi.Orthogonality.powerCoordinates_power",
+      "ChenKhareSahi.Orthogonality.hall_power_basis",
+      "ChenKhareSahi.Orthogonality.macdonald_source_family",
+      "ChenKhareSahi.Orthogonality.source_family_unique",
+      "ChenKhareSahi.Orthogonality.source_family_exists_unique"
+    ],
+    "Conjectures.ChenKhareSahiOrthogonalityOrbits": [
+      "ChenKhareSahi.Orthogonality.orbitListCertificate_nodup",
+      "ChenKhareSahi.Orthogonality.orbitSix_certificate",
+      "ChenKhareSahi.Orthogonality.monomialSix_eq_list"
+    ],
+    "Conjectures.ChenKhareSahiOrthogonalityPower": [
+      "ChenKhareSahi.Orthogonality.power_expansion"
+    ],
+    "Conjectures.ChenKhareSahiOrthogonalityEvaluation": [
+      "ChenKhareSahi.Orthogonality.evaluation_matrix_exact"
+    ],
+    "Conjectures.ChenKhareSahiOrthogonalityPolynomial": [
+      "ChenKhareSahi.Orthogonality.power_coordinates_polynomial",
+      "ChenKhareSahi.Orthogonality.literal_polynomial_injective",
+      "ChenKhareSahi.Orthogonality.hall_polynomial_well_defined"
+    ],
+    "Conjectures.ChenKhareSahiHallConvention": [
+      "ChenKhareSahi.HallConvention.realize_injective",
+      "ChenKhareSahi.HallConvention.sourceOneRow_half_three",
+      "ChenKhareSahi.HallConvention.sourceOneRow_half_two_one",
+      "ChenKhareSahi.HallConvention.finiteHall_source_pairing",
+      "ChenKhareSahi.HallConvention.source_formulas_not_finiteHall_orthogonal"
+    ]
+  },
+  "final_required_theorems": [
+    "ChenKhareSahi.Orthogonality.dominates_iff_all_prefixes",
+    "ChenKhareSahi.Orthogonality.monomial_specialize",
+    "ChenKhareSahi.Orthogonality.stable_hall_specialization",
+    "ChenKhareSahi.Orthogonality.stable_hall_normalization_positive",
+    "ChenKhareSahi.Orthogonality.standard_macdonald_counterexample",
+    "ChenKhareSahi.Orthogonality.stable_hall_counterexample_witness"
+  ],
+  "registry_additions": {
+    "new_imports": [
+      "Conjectures.ChenKhareSahiOrthogonalityData",
+      "Conjectures.ChenKhareSahiOrthogonalityTransition",
+      "Conjectures.ChenKhareSahiOrthogonalityGram",
+      "Conjectures.ChenKhareSahiOrthogonalityDual",
+      "Conjectures.ChenKhareSahiOrthogonalityFamily",
+      "Conjectures.ChenKhareSahiOrthogonalityCore",
+      "Conjectures.ChenKhareSahiOrthogonalityOrbits",
+      "Conjectures.ChenKhareSahiOrthogonalityPower",
+      "Conjectures.ChenKhareSahiOrthogonalityEvaluation",
+      "Conjectures.ChenKhareSahiOrthogonalityPolynomial",
+      "Conjectures.ChenKhareSahiHallConvention",
+      "Conjectures.ChenKhareSahiOrthogonality"
+    ],
+    "new_verify_roots": [
+      "Conjectures.ChenKhareSahiOrthogonalityData",
+      "Conjectures.ChenKhareSahiOrthogonalityTransition",
+      "Conjectures.ChenKhareSahiOrthogonalityGram",
+      "Conjectures.ChenKhareSahiOrthogonalityDual",
+      "Conjectures.ChenKhareSahiOrthogonalityFamily",
+      "Conjectures.ChenKhareSahiOrthogonalityCore",
+      "Conjectures.ChenKhareSahiOrthogonalityOrbits",
+      "Conjectures.ChenKhareSahiOrthogonalityPower",
+      "Conjectures.ChenKhareSahiOrthogonalityEvaluation",
+      "Conjectures.ChenKhareSahiOrthogonalityPolynomial",
+      "Conjectures.ChenKhareSahiHallConvention",
+      "Conjectures.ChenKhareSahiOrthogonality"
+    ],
+    "new_required_endpoints": [
+      "ChenKhareSahi.Orthogonality.partition_complete",
+      "ChenKhareSahi.Orthogonality.dominates_index",
+      "ChenKhareSahi.Orthogonality.hallWeight_exact",
+      "ChenKhareSahi.Orthogonality.hallWeight_positive",
+      "ChenKhareSahi.Orthogonality.parts_sorted",
+      "ChenKhareSahi.Orthogonality.transition_inverse",
+      "ChenKhareSahi.Orthogonality.evaluation_inverse",
+      "ChenKhareSahi.Orthogonality.gram_from_power",
+      "ChenKhareSahi.Orthogonality.gram_macdonald",
+      "ChenKhareSahi.Orthogonality.dual_upper",
+      "ChenKhareSahi.Orthogonality.dual_diagonal_positive",
+      "ChenKhareSahi.Orthogonality.macdonald_monic",
+      "ChenKhareSahi.Orthogonality.macdonald_triangular",
+      "ChenKhareSahi.Orthogonality.macdonald_dual",
+      "ChenKhareSahi.Orthogonality.real_inverse_transition",
+      "ChenKhareSahi.Orthogonality.gram_factorization",
+      "ChenKhareSahi.Orthogonality.hall_power_coordinates",
+      "ChenKhareSahi.Orthogonality.powerCoordinates_power",
+      "ChenKhareSahi.Orthogonality.hall_power_basis",
+      "ChenKhareSahi.Orthogonality.macdonald_source_family",
+      "ChenKhareSahi.Orthogonality.source_family_unique",
+      "ChenKhareSahi.Orthogonality.source_family_exists_unique",
+      "ChenKhareSahi.Orthogonality.orbitListCertificate_nodup",
+      "ChenKhareSahi.Orthogonality.orbitSix_certificate",
+      "ChenKhareSahi.Orthogonality.monomialSix_eq_list",
+      "ChenKhareSahi.Orthogonality.power_expansion",
+      "ChenKhareSahi.Orthogonality.evaluation_matrix_exact",
+      "ChenKhareSahi.Orthogonality.power_coordinates_polynomial",
+      "ChenKhareSahi.Orthogonality.literal_polynomial_injective",
+      "ChenKhareSahi.Orthogonality.hall_polynomial_well_defined",
+      "ChenKhareSahi.HallConvention.realize_injective",
+      "ChenKhareSahi.HallConvention.sourceOneRow_half_three",
+      "ChenKhareSahi.HallConvention.sourceOneRow_half_two_one",
+      "ChenKhareSahi.HallConvention.finiteHall_source_pairing",
+      "ChenKhareSahi.HallConvention.source_formulas_not_finiteHall_orthogonal",
+      "ChenKhareSahi.Orthogonality.dominates_iff_all_prefixes",
+      "ChenKhareSahi.Orthogonality.monomial_specialize",
+      "ChenKhareSahi.Orthogonality.stable_hall_specialization",
+      "ChenKhareSahi.Orthogonality.stable_hall_normalization_positive",
+      "ChenKhareSahi.Orthogonality.standard_macdonald_counterexample",
+      "ChenKhareSahi.Orthogonality.stable_hall_counterexample_witness"
+    ]
+  },
+  "source_sha256": {
+    "lean/Conjectures/ChenKhareSahi.lean": "85fa9264a9ae33e20767db3e551acbf404514995cdfecc525a4368734154a5eb",
+    "lean/Conjectures/ChenKhareSahiCone.lean": "833e826f424a25a99cdef510388539cdc6111e1dc53cd3e766759465e73e0aad",
+    "lean/Conjectures/ChenKhareSahiCovers.lean": "0d895ba7f567a06ae2f3d5b482d413a773779c21c52cf3e1d3ef89c84335fb49",
+    "lean/Conjectures/ChenKhareSahiGraded.lean": "ba01b66e5f7c7c4e880b3cc732aa256161e2ecb9290c2dad814bca019ce01827",
+    "lean/Conjectures/ChenKhareSahiHallConvention.lean": "f73a0c0cad8be50ead831a9e2a2d10d673b290e1cbf9a9a848c70f39d85ba855",
+    "lean/Conjectures/ChenKhareSahiMixed.lean": "80c4bda9d8c6bc6a61ce11e1528fd7a855491a398094c5cbeb5da25649205eb1",
+    "lean/Conjectures/ChenKhareSahiOrthogonality.lean": "d1d56d63596857702860676c770e65982dcfe6f640c2817dc168750f8e1f159d",
+    "lean/Conjectures/ChenKhareSahiOrthogonalityCore.lean": "b43103816aefca801eca45b4ea6b75c33af1e0a993011cf69acedc9e8b6ee8d1",
+    "lean/Conjectures/ChenKhareSahiOrthogonalityData.lean": "cabbaa7104dc3f18ae8de5c8fef747c051a95b293bc4b3dbd6228f60c8414fa8",
+    "lean/Conjectures/ChenKhareSahiOrthogonalityDual.lean": "0aa74fcca5cacb5cc5e94e81a0509f4756318d36bc65d34fa5bcd4ffcb8eb9fd",
+    "lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.lean": "a678fba9ba8e65ced63d9fceb40930626ed303cfc0308cc023b3735468c2ed5a",
+    "lean/Conjectures/ChenKhareSahiOrthogonalityFamily.lean": "60f16725bfb8cd30dc41029380cd30f496c64778411b8764fe0ad259a9bdcb1f",
+    "lean/Conjectures/ChenKhareSahiOrthogonalityGram.lean": "d92629cacce83e4b6d89475e18786097faae6c14317847bf81d3382d2497a0c8",
+    "lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.lean": "a9c634500899bdbd7fd11dcfa11267ec5a52ee0c930aa927284880be028be73b",
+    "lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.lean": "372ab9b2fd422fe6dc918653eb7f28f7a5fa1b8c142cf89a6bc9387b419e5f6e",
+    "lean/Conjectures/ChenKhareSahiOrthogonalityPower.lean": "1283f25138c1f625c5000d8d44519faa1bb258727ae98b9ba21b7d8422a0adda",
+    "lean/Conjectures/ChenKhareSahiOrthogonalityTransition.lean": "52ccfc686b08778e808c60ad0b2012bf3f82864a1225288007c61abb367265a5",
+    "lean/Conjectures/ChenKhareSahiProducts.lean": "13ad8a7e8297a425ab144a0e472c07bbc5b2c96566a2188ed9a0de4bf796b475",
+    "lean/Conjectures/ChenKhareSahiReal.lean": "6ad157f0f9b712062eabfb82163a2f6e16eea5128a490cf97434e80c5187f6af"
+  },
+  "artifact_sha256": {
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahi.olean": "b9496892c9f829b9ec4068ece08bcbaeabd00d15b8dc9866623782f337571086",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiCone.olean": "2500a322aaa61b7c2e04a378ae818455bbe26cbd19b521bc547674602910273d",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiCovers.olean": "35cf4efb56c23473e52cd6b56a24002501a562c9d8e7a905b007813532a0d3d7",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiGraded.olean": "9f7d3413a5c063d4d15df8b19f4bb413146996eefa9ee48107231898d3ceaad9",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean": "8edcd45bb5ccc8d75110a072ed7d3351e832796c71c399e490e0ebd8c390d491",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean.private": "e96952ca2ff9aaf997d450736b17d256b054f2571f9bed03841d9e97fb7c8bc5",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean.server": "8652d1b4f1993dfbfff6f0e778239cada23b04f4fbeb8f2597a87e51ea9cdfb4",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiMixed.olean": "3d265b47b3cdd7d24d5987844706aa5cd186c0bc043b3f1da9e11ecb047bf18d",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonality.olean": "1791b5649edbe48d50b47f5e61528d3cafb230474c31106963fc4c1aaa5e7e15",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean": "0fbbd7ec69ebd7a39f6a76ac9e4787a716d0a73e9b6a79ba5abd4d5b5744dfd1",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean.private": "f167718fa57c97cdbedcd4575a30d85786aa6db6db7502fc4167409a1b0377c2",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean.server": "659cf67f5d5cd195cc60e9349710907d00f499744fed3b22b873c0804611ec46",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean": "2301c7d932d95fc0853c871967f445f92582b3075d16a185fda29b7c1b4abcb9",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.private": "bf8a4f7ad3ad311f3064b4e0ca2780c1bf2fa068ee81ec5da099ab0c9119b5c1",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.server": "73b2383abe792b80596eb684b0aacbb870eada54ddb02e628d127fbba36606cf",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityDual.olean": "a49f139e43f084dd9b88401a2d6c749b4ba3eaef159c30ba8c8d4f30f5e1eb79",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityDual.olean.private": "2e2150d3ebf954c5bb007f6c1f219bef8129b4dc415df1a451891db3ded0c77a",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityDual.olean.server": "781d489c5c0486567f4a3473d4e36ff7fbdf9a922d331bba2df94e24dd0629d5",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.olean": "650408e6eb25e7119d76ec9db9ca96e2e0b858dba01dcd973d8f2519285060e5",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.olean.private": "647893ad1e01be587580370352f554f63f2b4dd554bd36bd98311f548d4279ec",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.olean.server": "8734f51e29bc6d166d07684f312c80d83d636676de60df5feec09a95b655149e",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityFamily.olean": "289af9332996161edaa102d3913012950c4bfe47d34586daef8956d9a3d537c1",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityFamily.olean.private": "0a897afbfd85a2cb6812c9424ce460578dca70181480cdba0fc1f334a3c8afb4",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityFamily.olean.server": "929483de1a4151bb3686c9c8f8c905817fda9f650b4d525ed6c9202b6b7d0b1a",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityGram.olean": "2d9fcd5d44eb36081348571e9696ef73a305d2eafb8d0a5be38a39c00a9552fc",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityGram.olean.private": "229aee0ac502a4a86fa4fa76ef19757954ed3dfaad9c28d7cce194342071056c",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityGram.olean.server": "e2749b29694479c093d6a63feb5756864c7ef4938e1fb3859080cf2212e03e5b",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean": "9e692fd7b6871448090f9b9094af8404fd81e06e8d4bce2742480e167d6f6357",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean.private": "b49a65fe10b30b6b5232f1e8702a514c63a43566280866eb5974342a91e824f6",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean.server": "b8df25d0329a8db2e2cb4d838461806f46efceeafb639f98c2f92dc4e1eb17e2",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean": "97535092bafc779e0d26d84ecc2f6ba855f4a4fcfbdf3816ba076f62dcae11ef",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean.private": "d0d1befe2ac569970c50c585af596f90e0c517ca1cf2610f6be0c7a347a4bb8e",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean.server": "9415011e03379351062bee1ae9012683a82318205e1e23c81dcbbd0d9c64b49d",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPower.olean": "44789913b25cc24e52a0f79033e1825ba20aff6392aac7a86a35597a183fc784",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPower.olean.private": "c575d2d47015e75f9e2acc62a5bbcc641e48e09f2b0adb086f53987b408e1cd0",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPower.olean.server": "100f4f0f4bc9fab4d6d072a5dcdb43f5d11f41dffb40df3f2a80f099af2710bd",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityTransition.olean": "4573f9e4f5e9e3def5e5ee3f72f577491b8c8ab5868fc84ba3293ecb671f8bb5",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityTransition.olean.private": "fed83e24a9c413a1a23f9a4a648636be30dd2fa8fb8d7ca400c9ff9de95e290a",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityTransition.olean.server": "e524ccce3c39f0d20f5ebe6c01ba3cd6263b5f074bae592b20561657d9ca9973",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiProducts.olean": "caee03c8f074f4fed345157efe02321be8cad1e09eb7412a18895619fc48c74c",
+    "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiReal.olean": "2870265f093815b06488ff2f0b679b835beb2841a19ab77da9ccd8e23d9f99b5"
+  },
+  "repository_control_sha256": {
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "scripts/audit_lean_owned_extension.py": "6b520a346907fe9e8a7c025daa9a9a831ec8188aab26014443bb760f557f3bca",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/build_lean_parallel.py": "65f2584b2bf16c4323ff03e5a7c85fd3b8bad1cf92e8fae3bcbe93662c66cbcd",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842"
+  },
+  "extra_control_sha256": {
+    "/workspace/scratch/17b12d3ee06e/run_cks_gate.py": "5c485946bbb2052d1407279e4b955905feab0d60629fcb5fd64ec6db2b08ab79",
+    "/workspace/scratch/17b12d3ee06e/CKSModernOwnedAudit.lean": "8b0963ab69e4f5e2aad3854c0ce92fee3f16e95590c7dfbbade8be754c5b5f6e",
+    "/workspace/scratch/17b12d3ee06e/CKSCompleteAllOwnedAudit.lean": "c350155f1664389db38412a96833fb9dd034e0720a1351bf3f9ddab152ac715d",
+    "/workspace/scratch/17b12d3ee06e/cks-complete-obligations.json": "92a19af433676d3a75cb5304306863cf5f42f9bf84098b75cc49e197a1bea1ac",
+    "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/libleanshared.so": "efef27df56f2197139afe12f1a2b63913a05f1aba81ce88824c44100431ed8c4"
+  },
+  "sources_objects_and_controls_unchanged_since_freeze": true,
+  "axiom_audits": {
+    "modern-audit": {
+      "tag": "passed",
+      "imported_modules": 11,
+      "owned_modules": 11,
+      "declarations": 287,
+      "theorems": 245,
+      "private_declarations": 136,
+      "raw_declarations": 287,
+      "required_theorems": 35,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "full-audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1489,
+      "modules": 19,
+      "private_declarations": 950,
+      "raw_declarations": 1489,
+      "required": 42,
+      "tag": "passed",
+      "theorems": 1294
+    }
+  },
+  "all_owned_declarations_audited": true,
+  "exact_raw_private_visibility": true,
+  "exact_imported_project_closure": true,
+  "independent_kernel_replay_passed": true,
+  "combined_repository_gate": false,
+  "hosted_validation_claimed": false,
+  "readme_badge_changed": false,
+  "commands": [
+    {
+      "module": "Conjectures.ChenKhareSahi",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahi.olean",
+        "Conjectures/ChenKhareSahi.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/legacy-seven-manifest.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahi",
+        "source": {
+          "path": "Conjectures/ChenKhareSahi.lean",
+          "bytes": 6216,
+          "sha256": "85fa9264a9ae33e20767db3e551acbf404514995cdfecc525a4368734154a5eb"
+        },
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahi.olean",
+          "Conjectures/ChenKhareSahi.lean"
+        ],
+        "direct_project_dependencies": {},
+        "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahi.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahi.metrics.json",
+        "status": "passed",
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahi.olean",
+            "bytes": 6839976,
+            "sha256": "b9496892c9f829b9ec4068ece08bcbaeabd00d15b8dc9866623782f337571086"
+          }
+        ],
+        "elapsed_seconds": 110.279,
+        "exit_status": 0,
+        "max_rss_kib": 1195260,
+        "user_seconds": 59.721174,
+        "system_seconds": 19.330182,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "diagnostic_bytes": 0
+      },
+      "log": "strict/ChenKhareSahi.log",
+      "metrics_file": "strict/ChenKhareSahi.metrics.json",
+      "provenance": "Fresh sequential strict rebuild with pre/post source, direct dependency source/object and control checks, final source/object/control invariance, and direct-child wait4 process metrics. Every current hash matches the full gate freeze."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiCone",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiCone.olean",
+        "Conjectures/ChenKhareSahiCone.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/legacy-seven-manifest.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiCone",
+        "source": {
+          "path": "Conjectures/ChenKhareSahiCone.lean",
+          "bytes": 5895,
+          "sha256": "833e826f424a25a99cdef510388539cdc6111e1dc53cd3e766759465e73e0aad"
+        },
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiCone.olean",
+          "Conjectures/ChenKhareSahiCone.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiCovers": {
+            "source": {
+              "path": "Conjectures/ChenKhareSahiCovers.lean",
+              "bytes": 5603,
+              "sha256": "0d895ba7f567a06ae2f3d5b482d413a773779c21c52cf3e1d3ef89c84335fb49"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiCovers.olean",
+                "bytes": 1839872,
+                "sha256": "35cf4efb56c23473e52cd6b56a24002501a562c9d8e7a905b007813532a0d3d7"
+              }
+            ]
+          },
+          "Conjectures.ChenKhareSahiReal": {
+            "source": {
+              "path": "Conjectures/ChenKhareSahiReal.lean",
+              "bytes": 7623,
+              "sha256": "6ad157f0f9b712062eabfb82163a2f6e16eea5128a490cf97434e80c5187f6af"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiReal.olean",
+                "bytes": 316272,
+                "sha256": "2870265f093815b06488ff2f0b679b835beb2841a19ab77da9ccd8e23d9f99b5"
+              }
+            ]
+          }
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiCone.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiCone.metrics.json",
+        "status": "passed",
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiCone.olean",
+            "bytes": 2876120,
+            "sha256": "2500a322aaa61b7c2e04a378ae818455bbe26cbd19b521bc547674602910273d"
+          }
+        ],
+        "elapsed_seconds": 87.148,
+        "exit_status": 0,
+        "max_rss_kib": 1195348,
+        "user_seconds": 30.785103,
+        "system_seconds": 21.155492,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "diagnostic_bytes": 0
+      },
+      "log": "strict/ChenKhareSahiCone.log",
+      "metrics_file": "strict/ChenKhareSahiCone.metrics.json",
+      "provenance": "Fresh sequential strict rebuild with pre/post source, direct dependency source/object and control checks, final source/object/control invariance, and direct-child wait4 process metrics. Every current hash matches the full gate freeze."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiCovers",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiCovers.olean",
+        "Conjectures/ChenKhareSahiCovers.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/legacy-seven-manifest.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiCovers",
+        "source": {
+          "path": "Conjectures/ChenKhareSahiCovers.lean",
+          "bytes": 5603,
+          "sha256": "0d895ba7f567a06ae2f3d5b482d413a773779c21c52cf3e1d3ef89c84335fb49"
+        },
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiCovers.olean",
+          "Conjectures/ChenKhareSahiCovers.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahi": {
+            "source": {
+              "path": "Conjectures/ChenKhareSahi.lean",
+              "bytes": 6216,
+              "sha256": "85fa9264a9ae33e20767db3e551acbf404514995cdfecc525a4368734154a5eb"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahi.olean",
+                "bytes": 6839976,
+                "sha256": "b9496892c9f829b9ec4068ece08bcbaeabd00d15b8dc9866623782f337571086"
+              }
+            ]
+          }
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiCovers.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiCovers.metrics.json",
+        "status": "passed",
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiCovers.olean",
+            "bytes": 1839872,
+            "sha256": "35cf4efb56c23473e52cd6b56a24002501a562c9d8e7a905b007813532a0d3d7"
+          }
+        ],
+        "elapsed_seconds": 50.332,
+        "exit_status": 0,
+        "max_rss_kib": 1176296,
+        "user_seconds": 14.332896999999999,
+        "system_seconds": 12.773988,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "diagnostic_bytes": 0
+      },
+      "log": "strict/ChenKhareSahiCovers.log",
+      "metrics_file": "strict/ChenKhareSahiCovers.metrics.json",
+      "provenance": "Fresh sequential strict rebuild with pre/post source, direct dependency source/object and control checks, final source/object/control invariance, and direct-child wait4 process metrics. Every current hash matches the full gate freeze."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiGraded",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiGraded.olean",
+        "Conjectures/ChenKhareSahiGraded.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/legacy-seven-manifest.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiGraded",
+        "source": {
+          "path": "Conjectures/ChenKhareSahiGraded.lean",
+          "bytes": 14215,
+          "sha256": "ba01b66e5f7c7c4e880b3cc732aa256161e2ecb9290c2dad814bca019ce01827"
+        },
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiGraded.olean",
+          "Conjectures/ChenKhareSahiGraded.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiCone": {
+            "source": {
+              "path": "Conjectures/ChenKhareSahiCone.lean",
+              "bytes": 5895,
+              "sha256": "833e826f424a25a99cdef510388539cdc6111e1dc53cd3e766759465e73e0aad"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiCone.olean",
+                "bytes": 2876120,
+                "sha256": "2500a322aaa61b7c2e04a378ae818455bbe26cbd19b521bc547674602910273d"
+              }
+            ]
+          },
+          "Conjectures.ChenKhareSahiProducts": {
+            "source": {
+              "path": "Conjectures/ChenKhareSahiProducts.lean",
+              "bytes": 116818,
+              "sha256": "13ad8a7e8297a425ab144a0e472c07bbc5b2c96566a2188ed9a0de4bf796b475"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiProducts.olean",
+                "bytes": 6292384,
+                "sha256": "caee03c8f074f4fed345157efe02321be8cad1e09eb7412a18895619fc48c74c"
+              }
+            ]
+          }
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiGraded.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiGraded.metrics.json",
+        "status": "passed",
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiGraded.olean",
+            "bytes": 1011816,
+            "sha256": "9f7d3413a5c063d4d15df8b19f4bb413146996eefa9ee48107231898d3ceaad9"
+          }
+        ],
+        "elapsed_seconds": 136.135,
+        "exit_status": 0,
+        "max_rss_kib": 793628,
+        "user_seconds": 15.480814,
+        "system_seconds": 45.298605,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "diagnostic_bytes": 0
+      },
+      "log": "strict/ChenKhareSahiGraded.log",
+      "metrics_file": "strict/ChenKhareSahiGraded.metrics.json",
+      "provenance": "Fresh sequential strict rebuild with pre/post source, direct dependency source/object and control checks, final source/object/control invariance, and direct-child wait4 process metrics. Every current hash matches the full gate freeze."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiHallConvention",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/cks-hall-convention-strict-runs/20261121T182933.101594Z/objects/Conjectures/ChenKhareSahiHallConvention.olean",
+        "Conjectures/ChenKhareSahiHallConvention.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "record": {
+        "status": "passed",
+        "module": "Conjectures.ChenKhareSahiHallConvention",
+        "started_utc": "2026-11-21T18:29:33.101594+00:00",
+        "source": {
+          "path": "lean/Conjectures/ChenKhareSahiHallConvention.lean",
+          "bytes": 4078,
+          "sha256": "f73a0c0cad8be50ead831a9e2a2d10d673b290e1cbf9a9a848c70f39d85ba855"
+        },
+        "direct_project_dependencies": {},
+        "controls_sha256": {
+          "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+          "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+          "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+          "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+          "scripts/audit_lean_owned_extension.py": "6b520a346907fe9e8a7c025daa9a9a831ec8188aab26014443bb760f557f3bca",
+          "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f"
+        },
+        "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+        "builder_sha256": "1c5e75370533e52d18a2ec6f8dbf5bccdcace0f6a3672d695f142fc25d5b427b",
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          "/workspace/scratch/17b12d3ee06e/cks-hall-convention-strict-runs/20261121T182933.101594Z/objects/Conjectures/ChenKhareSahiHallConvention.olean",
+          "Conjectures/ChenKhareSahiHallConvention.lean"
+        ],
+        "log": "/workspace/scratch/17b12d3ee06e/cks-hall-convention-strict-runs/20261121T182933.101594Z/strict.log",
+        "expected_products_sha256": "13ad8a7e8297a425ab144a0e472c07bbc5b2c96566a2188ed9a0de4bf796b475",
+        "exit_status": 0,
+        "elapsed_seconds": 4.988715034000052,
+        "max_rss_kib": 1144588,
+        "user_seconds": 3.690334,
+        "system_seconds": 0.945135,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "controls_unchanged": true,
+        "diagnostic_bytes": 0,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output_objects": [
+          {
+            "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean",
+            "bytes": 32824,
+            "sha256": "8edcd45bb5ccc8d75110a072ed7d3351e832796c71c399e490e0ebd8c390d491"
+          },
+          {
+            "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean.private",
+            "bytes": 376976,
+            "sha256": "e96952ca2ff9aaf997d450736b17d256b054f2571f9bed03841d9e97fb7c8bc5"
+          },
+          {
+            "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean.server",
+            "bytes": 5784,
+            "sha256": "8652d1b4f1993dfbfff6f0e778239cada23b04f4fbeb8f2597a87e51ea9cdfb4"
+          }
+        ]
+      },
+      "receipt": "strict/ChenKhareSahiHallConvention.receipt.json",
+      "log": "strict/ChenKhareSahiHallConvention.log",
+      "builder": "strict/build_cks_hall_convention_strict.py",
+      "provenance": "Fresh staged object build with exact pre/post source, direct dependency source/all object parts, pins and verifier controls. Objects were installed only after a strict unchanged pass. Direct-child wait4 metrics and raw empty diagnostics are preserved."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiMixed",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiMixed.olean",
+        "Conjectures/ChenKhareSahiMixed.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/legacy-seven-manifest.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiMixed",
+        "source": {
+          "path": "Conjectures/ChenKhareSahiMixed.lean",
+          "bytes": 9365,
+          "sha256": "80c4bda9d8c6bc6a61ce11e1528fd7a855491a398094c5cbeb5da25649205eb1"
+        },
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiMixed.olean",
+          "Conjectures/ChenKhareSahiMixed.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiGraded": {
+            "source": {
+              "path": "Conjectures/ChenKhareSahiGraded.lean",
+              "bytes": 14215,
+              "sha256": "ba01b66e5f7c7c4e880b3cc732aa256161e2ecb9290c2dad814bca019ce01827"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiGraded.olean",
+                "bytes": 1011816,
+                "sha256": "9f7d3413a5c063d4d15df8b19f4bb413146996eefa9ee48107231898d3ceaad9"
+              }
+            ]
+          }
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiMixed.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiMixed.metrics.json",
+        "status": "passed",
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiMixed.olean",
+            "bytes": 814320,
+            "sha256": "3d265b47b3cdd7d24d5987844706aa5cd186c0bc043b3f1da9e11ecb047bf18d"
+          }
+        ],
+        "elapsed_seconds": 23.383,
+        "exit_status": 0,
+        "max_rss_kib": 2132444,
+        "user_seconds": 5.81248,
+        "system_seconds": 6.113876,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "diagnostic_bytes": 0
+      },
+      "log": "strict/ChenKhareSahiMixed.log",
+      "metrics_file": "strict/ChenKhareSahiMixed.metrics.json",
+      "provenance": "Fresh sequential strict rebuild with pre/post source, direct dependency source/object and control checks, final source/object/control invariance, and direct-child wait4 process metrics. Every current hash matches the full gate freeze."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiOrthogonality",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/cks-orthogonality-final-strict-runs/20261121T183022.372124Z/objects/Conjectures/ChenKhareSahiOrthogonality.olean",
+        "Conjectures/ChenKhareSahiOrthogonality.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "record": {
+        "status": "passed",
+        "module": "Conjectures.ChenKhareSahiOrthogonality",
+        "started_utc": "2026-11-21T18:30:22.372124+00:00",
+        "source": {
+          "path": "lean/Conjectures/ChenKhareSahiOrthogonality.lean",
+          "bytes": 7004,
+          "sha256": "d1d56d63596857702860676c770e65982dcfe6f640c2817dc168750f8e1f159d"
+        },
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiOrthogonalityCore": {
+            "source": {
+              "path": "lean/Conjectures/ChenKhareSahiOrthogonalityCore.lean",
+              "bytes": 9658,
+              "sha256": "b43103816aefca801eca45b4ea6b75c33af1e0a993011cf69acedc9e8b6ee8d1"
+            },
+            "objects": [
+              {
+                "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean",
+                "bytes": 51880,
+                "sha256": "0fbbd7ec69ebd7a39f6a76ac9e4787a716d0a73e9b6a79ba5abd4d5b5744dfd1"
+              },
+              {
+                "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean.private",
+                "bytes": 227848,
+                "sha256": "f167718fa57c97cdbedcd4575a30d85786aa6db6db7502fc4167409a1b0377c2"
+              },
+              {
+                "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean.server",
+                "bytes": 8800,
+                "sha256": "659cf67f5d5cd195cc60e9349710907d00f499744fed3b22b873c0804611ec46"
+              }
+            ]
+          },
+          "Conjectures.ChenKhareSahiOrthogonalityPolynomial": {
+            "source": {
+              "path": "lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.lean",
+              "bytes": 2770,
+              "sha256": "372ab9b2fd422fe6dc918653eb7f28f7a5fa1b8c142cf89a6bc9387b419e5f6e"
+            },
+            "objects": [
+              {
+                "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean",
+                "bytes": 10232,
+                "sha256": "97535092bafc779e0d26d84ecc2f6ba855f4a4fcfbdf3816ba076f62dcae11ef"
+              },
+              {
+                "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean.private",
+                "bytes": 33160,
+                "sha256": "d0d1befe2ac569970c50c585af596f90e0c517ca1cf2610f6be0c7a347a4bb8e"
+              },
+              {
+                "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean.server",
+                "bytes": 2520,
+                "sha256": "9415011e03379351062bee1ae9012683a82318205e1e23c81dcbbd0d9c64b49d"
+              }
+            ]
+          },
+          "Conjectures.ChenKhareSahiMixed": {
+            "source": {
+              "path": "lean/Conjectures/ChenKhareSahiMixed.lean",
+              "bytes": 9365,
+              "sha256": "80c4bda9d8c6bc6a61ce11e1528fd7a855491a398094c5cbeb5da25649205eb1"
+            },
+            "objects": [
+              {
+                "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiMixed.olean",
+                "bytes": 814320,
+                "sha256": "3d265b47b3cdd7d24d5987844706aa5cd186c0bc043b3f1da9e11ecb047bf18d"
+              }
+            ]
+          },
+          "Conjectures.ChenKhareSahiHallConvention": {
+            "source": {
+              "path": "lean/Conjectures/ChenKhareSahiHallConvention.lean",
+              "bytes": 4078,
+              "sha256": "f73a0c0cad8be50ead831a9e2a2d10d673b290e1cbf9a9a848c70f39d85ba855"
+            },
+            "objects": [
+              {
+                "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean",
+                "bytes": 32824,
+                "sha256": "8edcd45bb5ccc8d75110a072ed7d3351e832796c71c399e490e0ebd8c390d491"
+              },
+              {
+                "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean.private",
+                "bytes": 376976,
+                "sha256": "e96952ca2ff9aaf997d450736b17d256b054f2571f9bed03841d9e97fb7c8bc5"
+              },
+              {
+                "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean.server",
+                "bytes": 5784,
+                "sha256": "8652d1b4f1993dfbfff6f0e778239cada23b04f4fbeb8f2597a87e51ea9cdfb4"
+              }
+            ]
+          }
+        },
+        "controls_sha256": {
+          "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+          "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+          "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+          "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+          "scripts/audit_lean_owned_extension.py": "6b520a346907fe9e8a7c025daa9a9a831ec8188aab26014443bb760f557f3bca",
+          "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f"
+        },
+        "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+        "builder_sha256": "aa1bbb34613f6e9a3c1ae4a5330b35400f99ba3bdb6e69c5564e8a9fca4fcb4d",
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          "/workspace/scratch/17b12d3ee06e/cks-orthogonality-final-strict-runs/20261121T183022.372124Z/objects/Conjectures/ChenKhareSahiOrthogonality.olean",
+          "Conjectures/ChenKhareSahiOrthogonality.lean"
+        ],
+        "log": "/workspace/scratch/17b12d3ee06e/cks-orthogonality-final-strict-runs/20261121T183022.372124Z/strict.log",
+        "expected_products_sha256": "13ad8a7e8297a425ab144a0e472c07bbc5b2c96566a2188ed9a0de4bf796b475",
+        "exit_status": 0,
+        "elapsed_seconds": 47.55562339900098,
+        "max_rss_kib": 2216380,
+        "user_seconds": 42.670952,
+        "system_seconds": 2.488078,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "controls_unchanged": true,
+        "diagnostic_bytes": 0,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output_objects": [
+          {
+            "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonality.olean",
+            "bytes": 6729392,
+            "sha256": "1791b5649edbe48d50b47f5e61528d3cafb230474c31106963fc4c1aaa5e7e15"
+          }
+        ]
+      },
+      "receipt": "strict/ChenKhareSahiOrthogonality.receipt.json",
+      "log": "strict/ChenKhareSahiOrthogonality.log",
+      "builder": "strict/build_cks_orthogonality_final.py",
+      "provenance": "Fresh staged object build with exact pre/post source, direct dependency source/all object parts, pins and verifier controls. Objects were installed only after a strict unchanged pass. Direct-child wait4 metrics and raw empty diagnostics are preserved."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiOrthogonalityCore",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean",
+        "Conjectures/ChenKhareSahiOrthogonalityCore.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/modern-ten-manifest.json",
+      "log": "strict/ChenKhareSahiOrthogonalityCore.log",
+      "metrics_file": "strict/ChenKhareSahiOrthogonalityCore.metrics.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiOrthogonalityCore",
+        "phase": "after defining-equation ownership repair",
+        "source": "Conjectures/ChenKhareSahiOrthogonalityCore.lean",
+        "source_sha256": "b43103816aefca801eca45b4ea6b75c33af1e0a993011cf69acedc9e8b6ee8d1",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean",
+          "Conjectures/ChenKhareSahiOrthogonalityCore.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiOrthogonalityTransition": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityTransition.olean",
+              "bytes": 9416,
+              "sha256": "4573f9e4f5e9e3def5e5ee3f72f577491b8c8ab5868fc84ba3293ecb671f8bb5"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityTransition.olean.private",
+              "bytes": 8817440,
+              "sha256": "fed83e24a9c413a1a23f9a4a648636be30dd2fa8fb8d7ca400c9ff9de95e290a"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityTransition.olean.server",
+              "bytes": 1400,
+              "sha256": "e524ccce3c39f0d20f5ebe6c01ba3cd6263b5f074bae592b20561657d9ca9973"
+            }
+          ],
+          "Conjectures.ChenKhareSahiOrthogonalityGram": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityGram.olean",
+              "bytes": 6360,
+              "sha256": "2d9fcd5d44eb36081348571e9696ef73a305d2eafb8d0a5be38a39c00a9552fc"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityGram.olean.private",
+              "bytes": 5090560,
+              "sha256": "229aee0ac502a4a86fa4fa76ef19757954ed3dfaad9c28d7cce194342071056c"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityGram.olean.server",
+              "bytes": 1160,
+              "sha256": "e2749b29694479c093d6a63feb5756864c7ef4938e1fb3859080cf2212e03e5b"
+            }
+          ],
+          "Conjectures.ChenKhareSahiOrthogonalityDual": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityDual.olean",
+              "bytes": 8640,
+              "sha256": "a49f139e43f084dd9b88401a2d6c749b4ba3eaef159c30ba8c8d4f30f5e1eb79"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityDual.olean.private",
+              "bytes": 7460872,
+              "sha256": "2e2150d3ebf954c5bb007f6c1f219bef8129b4dc415df1a451891db3ded0c77a"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityDual.olean.server",
+              "bytes": 1624,
+              "sha256": "781d489c5c0486567f4a3473d4e36ff7fbdf9a922d331bba2df94e24dd0629d5"
+            }
+          ],
+          "Conjectures.ChenKhareSahiOrthogonalityFamily": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityFamily.olean",
+              "bytes": 7592,
+              "sha256": "289af9332996161edaa102d3913012950c4bfe47d34586daef8956d9a3d537c1"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityFamily.olean.private",
+              "bytes": 5946640,
+              "sha256": "0a897afbfd85a2cb6812c9424ce460578dca70181480cdba0fc1f334a3c8afb4"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityFamily.olean.server",
+              "bytes": 1624,
+              "sha256": "929483de1a4151bb3686c9c8f8c905817fda9f650b4d525ed6c9202b6b7d0b1a"
+            }
+          ]
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Core.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Core.metrics",
+        "subprocess_exit": 0,
+        "elapsed_seconds": 48.6,
+        "max_rss_kib": 611356,
+        "diagnostic_bytes": 0,
+        "source_unchanged": true,
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean",
+            "bytes": 51880,
+            "sha256": "0fbbd7ec69ebd7a39f6a76ac9e4787a716d0a73e9b6a79ba5abd4d5b5744dfd1"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean.private",
+            "bytes": 227848,
+            "sha256": "f167718fa57c97cdbedcd4575a30d85786aa6db6db7502fc4167409a1b0377c2"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean.server",
+            "bytes": 8800,
+            "sha256": "659cf67f5d5cd195cc60e9349710907d00f499744fed3b22b873c0804611ec46"
+          }
+        ]
+      },
+      "process_metrics": {
+        "elapsed_seconds": 48.6,
+        "max_rss_kib": 611356,
+        "user_seconds": 8.103815,
+        "system_seconds": 12.717547,
+        "exit_status": 0
+      },
+      "builder_snapshot": "strict/cks_hall_final_build.py",
+      "provenance": "The historical record contains the source hash and source_unchanged result, all output object hashes, and direct imported object hashes. It does not record pre-build dependency source hashes, compiler/control hashes, or a separate cwd field. The command uses the recorded lean-relative source and output paths; its builder snapshot specifies cwd=lean. The complete gate independently freezes every current source, object, pin, verifier and executable. Missing historical hashes are not inferred."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiOrthogonalityData",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean",
+        "Conjectures/ChenKhareSahiOrthogonalityData.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/modern-ten-manifest.json",
+      "log": "strict/ChenKhareSahiOrthogonalityData.log",
+      "metrics_file": "strict/ChenKhareSahiOrthogonalityData.metrics.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiOrthogonalityData",
+        "phase": "after defining-equation ownership repair",
+        "source": "Conjectures/ChenKhareSahiOrthogonalityData.lean",
+        "source_sha256": "cabbaa7104dc3f18ae8de5c8fef747c051a95b293bc4b3dbd6228f60c8414fa8",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean",
+          "Conjectures/ChenKhareSahiOrthogonalityData.lean"
+        ],
+        "direct_project_dependencies": {},
+        "log": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Data.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Data.metrics",
+        "subprocess_exit": 0,
+        "elapsed_seconds": 255.912,
+        "max_rss_kib": 2244776,
+        "diagnostic_bytes": 0,
+        "source_unchanged": true,
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean",
+            "bytes": 182512,
+            "sha256": "2301c7d932d95fc0853c871967f445f92582b3075d16a185fda29b7c1b4abcb9"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.private",
+            "bytes": 8366432,
+            "sha256": "bf8a4f7ad3ad311f3064b4e0ca2780c1bf2fa068ee81ec5da099ab0c9119b5c1"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.server",
+            "bytes": 7816,
+            "sha256": "73b2383abe792b80596eb684b0aacbb870eada54ddb02e628d127fbba36606cf"
+          }
+        ]
+      },
+      "process_metrics": {
+        "elapsed_seconds": 255.912,
+        "max_rss_kib": 2244776,
+        "user_seconds": 211.26851,
+        "system_seconds": 18.613464,
+        "exit_status": 0
+      },
+      "builder_snapshot": "strict/cks_hall_final_build.py",
+      "provenance": "The historical record contains the source hash and source_unchanged result, all output object hashes, and direct imported object hashes. It does not record pre-build dependency source hashes, compiler/control hashes, or a separate cwd field. The command uses the recorded lean-relative source and output paths; its builder snapshot specifies cwd=lean. The complete gate independently freezes every current source, object, pin, verifier and executable. Missing historical hashes are not inferred."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiOrthogonalityDual",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityDual.olean",
+        "Conjectures/ChenKhareSahiOrthogonalityDual.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/modern-ten-manifest.json",
+      "log": "strict/ChenKhareSahiOrthogonalityDual.log",
+      "metrics_file": "strict/ChenKhareSahiOrthogonalityDual.metrics.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiOrthogonalityDual",
+        "phase": "after defining-equation ownership repair",
+        "source": "Conjectures/ChenKhareSahiOrthogonalityDual.lean",
+        "source_sha256": "0aa74fcca5cacb5cc5e94e81a0509f4756318d36bc65d34fa5bcd4ffcb8eb9fd",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityDual.olean",
+          "Conjectures/ChenKhareSahiOrthogonalityDual.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiOrthogonalityData": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean",
+              "bytes": 182512,
+              "sha256": "2301c7d932d95fc0853c871967f445f92582b3075d16a185fda29b7c1b4abcb9"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.private",
+              "bytes": 8366432,
+              "sha256": "bf8a4f7ad3ad311f3064b4e0ca2780c1bf2fa068ee81ec5da099ab0c9119b5c1"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.server",
+              "bytes": 7816,
+              "sha256": "73b2383abe792b80596eb684b0aacbb870eada54ddb02e628d127fbba36606cf"
+            }
+          ]
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Dual.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Dual.metrics",
+        "subprocess_exit": 0,
+        "elapsed_seconds": 166.09,
+        "max_rss_kib": 906128,
+        "diagnostic_bytes": 0,
+        "source_unchanged": true,
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityDual.olean",
+            "bytes": 8640,
+            "sha256": "a49f139e43f084dd9b88401a2d6c749b4ba3eaef159c30ba8c8d4f30f5e1eb79"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityDual.olean.private",
+            "bytes": 7460872,
+            "sha256": "2e2150d3ebf954c5bb007f6c1f219bef8129b4dc415df1a451891db3ded0c77a"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityDual.olean.server",
+            "bytes": 1624,
+            "sha256": "781d489c5c0486567f4a3473d4e36ff7fbdf9a922d331bba2df94e24dd0629d5"
+          }
+        ]
+      },
+      "process_metrics": {
+        "elapsed_seconds": 166.09,
+        "max_rss_kib": 906128,
+        "user_seconds": 154.63186,
+        "system_seconds": 6.581834,
+        "exit_status": 0
+      },
+      "builder_snapshot": "strict/cks_hall_final_build.py",
+      "provenance": "The historical record contains the source hash and source_unchanged result, all output object hashes, and direct imported object hashes. It does not record pre-build dependency source hashes, compiler/control hashes, or a separate cwd field. The command uses the recorded lean-relative source and output paths; its builder snapshot specifies cwd=lean. The complete gate independently freezes every current source, object, pin, verifier and executable. Missing historical hashes are not inferred."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiOrthogonalityEvaluation",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.olean",
+        "Conjectures/ChenKhareSahiOrthogonalityEvaluation.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/modern-ten-manifest.json",
+      "log": "strict/ChenKhareSahiOrthogonalityEvaluation.log",
+      "metrics_file": "strict/ChenKhareSahiOrthogonalityEvaluation.metrics.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiOrthogonalityEvaluation",
+        "phase": "after defining-equation ownership repair",
+        "source": "Conjectures/ChenKhareSahiOrthogonalityEvaluation.lean",
+        "source_sha256": "a678fba9ba8e65ced63d9fceb40930626ed303cfc0308cc023b3735468c2ed5a",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.olean",
+          "Conjectures/ChenKhareSahiOrthogonalityEvaluation.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiOrthogonalityOrbits": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean",
+              "bytes": 105200,
+              "sha256": "9e692fd7b6871448090f9b9094af8404fd81e06e8d4bce2742480e167d6f6357"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean.private",
+              "bytes": 2246872,
+              "sha256": "b49a65fe10b30b6b5232f1e8702a514c63a43566280866eb5974342a91e824f6"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean.server",
+              "bytes": 4088,
+              "sha256": "b8df25d0329a8db2e2cb4d838461806f46efceeafb639f98c2f92dc4e1eb17e2"
+            }
+          ]
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Evaluation.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Evaluation.metrics",
+        "subprocess_exit": 0,
+        "elapsed_seconds": 453.951,
+        "max_rss_kib": 892592,
+        "diagnostic_bytes": 0,
+        "source_unchanged": true,
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.olean",
+            "bytes": 9096,
+            "sha256": "650408e6eb25e7119d76ec9db9ca96e2e0b858dba01dcd973d8f2519285060e5"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.olean.private",
+            "bytes": 18566320,
+            "sha256": "647893ad1e01be587580370352f554f63f2b4dd554bd36bd98311f548d4279ec"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.olean.server",
+            "bytes": 1832,
+            "sha256": "8734f51e29bc6d166d07684f312c80d83d636676de60df5feec09a95b655149e"
+          }
+        ]
+      },
+      "process_metrics": {
+        "elapsed_seconds": 453.951,
+        "max_rss_kib": 892592,
+        "user_seconds": 420.921122,
+        "system_seconds": 14.145451,
+        "exit_status": 0
+      },
+      "builder_snapshot": "strict/cks_hall_final_build.py",
+      "provenance": "The historical record contains the source hash and source_unchanged result, all output object hashes, and direct imported object hashes. It does not record pre-build dependency source hashes, compiler/control hashes, or a separate cwd field. The command uses the recorded lean-relative source and output paths; its builder snapshot specifies cwd=lean. The complete gate independently freezes every current source, object, pin, verifier and executable. Missing historical hashes are not inferred."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiOrthogonalityFamily",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityFamily.olean",
+        "Conjectures/ChenKhareSahiOrthogonalityFamily.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/modern-ten-manifest.json",
+      "log": "strict/ChenKhareSahiOrthogonalityFamily.log",
+      "metrics_file": "strict/ChenKhareSahiOrthogonalityFamily.metrics.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiOrthogonalityFamily",
+        "phase": "after defining-equation ownership repair",
+        "source": "Conjectures/ChenKhareSahiOrthogonalityFamily.lean",
+        "source_sha256": "60f16725bfb8cd30dc41029380cd30f496c64778411b8764fe0ad259a9bdcb1f",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityFamily.olean",
+          "Conjectures/ChenKhareSahiOrthogonalityFamily.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiOrthogonalityData": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean",
+              "bytes": 182512,
+              "sha256": "2301c7d932d95fc0853c871967f445f92582b3075d16a185fda29b7c1b4abcb9"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.private",
+              "bytes": 8366432,
+              "sha256": "bf8a4f7ad3ad311f3064b4e0ca2780c1bf2fa068ee81ec5da099ab0c9119b5c1"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.server",
+              "bytes": 7816,
+              "sha256": "73b2383abe792b80596eb684b0aacbb870eada54ddb02e628d127fbba36606cf"
+            }
+          ]
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Family.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Family.metrics",
+        "subprocess_exit": 0,
+        "elapsed_seconds": 165.57,
+        "max_rss_kib": 762068,
+        "diagnostic_bytes": 0,
+        "source_unchanged": true,
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityFamily.olean",
+            "bytes": 7592,
+            "sha256": "289af9332996161edaa102d3913012950c4bfe47d34586daef8956d9a3d537c1"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityFamily.olean.private",
+            "bytes": 5946640,
+            "sha256": "0a897afbfd85a2cb6812c9424ce460578dca70181480cdba0fc1f334a3c8afb4"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityFamily.olean.server",
+            "bytes": 1624,
+            "sha256": "929483de1a4151bb3686c9c8f8c905817fda9f650b4d525ed6c9202b6b7d0b1a"
+          }
+        ]
+      },
+      "process_metrics": {
+        "elapsed_seconds": 165.57,
+        "max_rss_kib": 762068,
+        "user_seconds": 134.086143,
+        "system_seconds": 10.35075,
+        "exit_status": 0
+      },
+      "builder_snapshot": "strict/cks_hall_final_build.py",
+      "provenance": "The historical record contains the source hash and source_unchanged result, all output object hashes, and direct imported object hashes. It does not record pre-build dependency source hashes, compiler/control hashes, or a separate cwd field. The command uses the recorded lean-relative source and output paths; its builder snapshot specifies cwd=lean. The complete gate independently freezes every current source, object, pin, verifier and executable. Missing historical hashes are not inferred."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiOrthogonalityGram",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityGram.olean",
+        "Conjectures/ChenKhareSahiOrthogonalityGram.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/modern-ten-manifest.json",
+      "log": "strict/ChenKhareSahiOrthogonalityGram.log",
+      "metrics_file": "strict/ChenKhareSahiOrthogonalityGram.metrics.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiOrthogonalityGram",
+        "phase": "after defining-equation ownership repair",
+        "source": "Conjectures/ChenKhareSahiOrthogonalityGram.lean",
+        "source_sha256": "d92629cacce83e4b6d89475e18786097faae6c14317847bf81d3382d2497a0c8",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityGram.olean",
+          "Conjectures/ChenKhareSahiOrthogonalityGram.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiOrthogonalityData": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean",
+              "bytes": 182512,
+              "sha256": "2301c7d932d95fc0853c871967f445f92582b3075d16a185fda29b7c1b4abcb9"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.private",
+              "bytes": 8366432,
+              "sha256": "bf8a4f7ad3ad311f3064b4e0ca2780c1bf2fa068ee81ec5da099ab0c9119b5c1"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.server",
+              "bytes": 7816,
+              "sha256": "73b2383abe792b80596eb684b0aacbb870eada54ddb02e628d127fbba36606cf"
+            }
+          ]
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Gram.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Gram.metrics",
+        "subprocess_exit": 0,
+        "elapsed_seconds": 121.78,
+        "max_rss_kib": 618792,
+        "diagnostic_bytes": 0,
+        "source_unchanged": true,
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityGram.olean",
+            "bytes": 6360,
+            "sha256": "2d9fcd5d44eb36081348571e9696ef73a305d2eafb8d0a5be38a39c00a9552fc"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityGram.olean.private",
+            "bytes": 5090560,
+            "sha256": "229aee0ac502a4a86fa4fa76ef19757954ed3dfaad9c28d7cce194342071056c"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityGram.olean.server",
+            "bytes": 1160,
+            "sha256": "e2749b29694479c093d6a63feb5756864c7ef4938e1fb3859080cf2212e03e5b"
+          }
+        ]
+      },
+      "process_metrics": {
+        "elapsed_seconds": 121.78,
+        "max_rss_kib": 618792,
+        "user_seconds": 85.926974,
+        "system_seconds": 11.614799,
+        "exit_status": 0
+      },
+      "builder_snapshot": "strict/cks_hall_final_build.py",
+      "provenance": "The historical record contains the source hash and source_unchanged result, all output object hashes, and direct imported object hashes. It does not record pre-build dependency source hashes, compiler/control hashes, or a separate cwd field. The command uses the recorded lean-relative source and output paths; its builder snapshot specifies cwd=lean. The complete gate independently freezes every current source, object, pin, verifier and executable. Missing historical hashes are not inferred."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiOrthogonalityOrbits",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean",
+        "Conjectures/ChenKhareSahiOrthogonalityOrbits.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/modern-ten-manifest.json",
+      "log": "strict/ChenKhareSahiOrthogonalityOrbits.log",
+      "metrics_file": "strict/ChenKhareSahiOrthogonalityOrbits.metrics.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiOrthogonalityOrbits",
+        "phase": "after defining-equation ownership repair",
+        "source": "Conjectures/ChenKhareSahiOrthogonalityOrbits.lean",
+        "source_sha256": "a9c634500899bdbd7fd11dcfa11267ec5a52ee0c930aa927284880be028be73b",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean",
+          "Conjectures/ChenKhareSahiOrthogonalityOrbits.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiOrthogonalityData": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean",
+              "bytes": 182512,
+              "sha256": "2301c7d932d95fc0853c871967f445f92582b3075d16a185fda29b7c1b4abcb9"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.private",
+              "bytes": 8366432,
+              "sha256": "bf8a4f7ad3ad311f3064b4e0ca2780c1bf2fa068ee81ec5da099ab0c9119b5c1"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.server",
+              "bytes": 7816,
+              "sha256": "73b2383abe792b80596eb684b0aacbb870eada54ddb02e628d127fbba36606cf"
+            }
+          ]
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Orbits.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Orbits.metrics",
+        "subprocess_exit": 0,
+        "elapsed_seconds": 106.807,
+        "max_rss_kib": 1200488,
+        "diagnostic_bytes": 0,
+        "source_unchanged": true,
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean",
+            "bytes": 105200,
+            "sha256": "9e692fd7b6871448090f9b9094af8404fd81e06e8d4bce2742480e167d6f6357"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean.private",
+            "bytes": 2246872,
+            "sha256": "b49a65fe10b30b6b5232f1e8702a514c63a43566280866eb5974342a91e824f6"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean.server",
+            "bytes": 4088,
+            "sha256": "b8df25d0329a8db2e2cb4d838461806f46efceeafb639f98c2f92dc4e1eb17e2"
+          }
+        ]
+      },
+      "process_metrics": {
+        "elapsed_seconds": 106.807,
+        "max_rss_kib": 1200488,
+        "user_seconds": 73.300039,
+        "system_seconds": 15.881367000000001,
+        "exit_status": 0
+      },
+      "builder_snapshot": "strict/cks_hall_final_build.py",
+      "provenance": "The historical record contains the source hash and source_unchanged result, all output object hashes, and direct imported object hashes. It does not record pre-build dependency source hashes, compiler/control hashes, or a separate cwd field. The command uses the recorded lean-relative source and output paths; its builder snapshot specifies cwd=lean. The complete gate independently freezes every current source, object, pin, verifier and executable. Missing historical hashes are not inferred."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiOrthogonalityPolynomial",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean",
+        "Conjectures/ChenKhareSahiOrthogonalityPolynomial.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/modern-ten-manifest.json",
+      "log": "strict/ChenKhareSahiOrthogonalityPolynomial.log",
+      "metrics_file": "strict/ChenKhareSahiOrthogonalityPolynomial.metrics.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiOrthogonalityPolynomial",
+        "phase": "after defining-equation ownership repair",
+        "source": "Conjectures/ChenKhareSahiOrthogonalityPolynomial.lean",
+        "source_sha256": "372ab9b2fd422fe6dc918653eb7f28f7a5fa1b8c142cf89a6bc9387b419e5f6e",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean",
+          "Conjectures/ChenKhareSahiOrthogonalityPolynomial.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiOrthogonalityCore": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean",
+              "bytes": 51880,
+              "sha256": "0fbbd7ec69ebd7a39f6a76ac9e4787a716d0a73e9b6a79ba5abd4d5b5744dfd1"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean.private",
+              "bytes": 227848,
+              "sha256": "f167718fa57c97cdbedcd4575a30d85786aa6db6db7502fc4167409a1b0377c2"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean.server",
+              "bytes": 8800,
+              "sha256": "659cf67f5d5cd195cc60e9349710907d00f499744fed3b22b873c0804611ec46"
+            }
+          ],
+          "Conjectures.ChenKhareSahiOrthogonalityPower": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPower.olean",
+              "bytes": 17384,
+              "sha256": "44789913b25cc24e52a0f79033e1825ba20aff6392aac7a86a35597a183fc784"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPower.olean.private",
+              "bytes": 23823392,
+              "sha256": "c575d2d47015e75f9e2acc62a5bbcc641e48e09f2b0adb086f53987b408e1cd0"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPower.olean.server",
+              "bytes": 4128,
+              "sha256": "100f4f0f4bc9fab4d6d072a5dcdb43f5d11f41dffb40df3f2a80f099af2710bd"
+            }
+          ],
+          "Conjectures.ChenKhareSahiOrthogonalityEvaluation": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.olean",
+              "bytes": 9096,
+              "sha256": "650408e6eb25e7119d76ec9db9ca96e2e0b858dba01dcd973d8f2519285060e5"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.olean.private",
+              "bytes": 18566320,
+              "sha256": "647893ad1e01be587580370352f554f63f2b4dd554bd36bd98311f548d4279ec"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityEvaluation.olean.server",
+              "bytes": 1832,
+              "sha256": "8734f51e29bc6d166d07684f312c80d83d636676de60df5feec09a95b655149e"
+            }
+          ]
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Polynomial.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Polynomial.metrics",
+        "subprocess_exit": 0,
+        "elapsed_seconds": 5.187,
+        "max_rss_kib": 1240652,
+        "diagnostic_bytes": 0,
+        "source_unchanged": true,
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean",
+            "bytes": 10232,
+            "sha256": "97535092bafc779e0d26d84ecc2f6ba855f4a4fcfbdf3816ba076f62dcae11ef"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean.private",
+            "bytes": 33160,
+            "sha256": "d0d1befe2ac569970c50c585af596f90e0c517ca1cf2610f6be0c7a347a4bb8e"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean.server",
+            "bytes": 2520,
+            "sha256": "9415011e03379351062bee1ae9012683a82318205e1e23c81dcbbd0d9c64b49d"
+          }
+        ]
+      },
+      "process_metrics": {
+        "elapsed_seconds": 5.187,
+        "max_rss_kib": 1240652,
+        "user_seconds": 1.796975,
+        "system_seconds": 1.443,
+        "exit_status": 0
+      },
+      "builder_snapshot": "strict/cks_hall_final_build.py",
+      "provenance": "The historical record contains the source hash and source_unchanged result, all output object hashes, and direct imported object hashes. It does not record pre-build dependency source hashes, compiler/control hashes, or a separate cwd field. The command uses the recorded lean-relative source and output paths; its builder snapshot specifies cwd=lean. The complete gate independently freezes every current source, object, pin, verifier and executable. Missing historical hashes are not inferred."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiOrthogonalityPower",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPower.olean",
+        "Conjectures/ChenKhareSahiOrthogonalityPower.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/modern-ten-manifest.json",
+      "log": "strict/ChenKhareSahiOrthogonalityPower.log",
+      "metrics_file": "strict/ChenKhareSahiOrthogonalityPower.metrics.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiOrthogonalityPower",
+        "phase": "after defining-equation ownership repair",
+        "source": "Conjectures/ChenKhareSahiOrthogonalityPower.lean",
+        "source_sha256": "1283f25138c1f625c5000d8d44519faa1bb258727ae98b9ba21b7d8422a0adda",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPower.olean",
+          "Conjectures/ChenKhareSahiOrthogonalityPower.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiOrthogonalityOrbits": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean",
+              "bytes": 105200,
+              "sha256": "9e692fd7b6871448090f9b9094af8404fd81e06e8d4bce2742480e167d6f6357"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean.private",
+              "bytes": 2246872,
+              "sha256": "b49a65fe10b30b6b5232f1e8702a514c63a43566280866eb5974342a91e824f6"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityOrbits.olean.server",
+              "bytes": 4088,
+              "sha256": "b8df25d0329a8db2e2cb4d838461806f46efceeafb639f98c2f92dc4e1eb17e2"
+            }
+          ]
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Power.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Power.metrics",
+        "subprocess_exit": 0,
+        "elapsed_seconds": 253.387,
+        "max_rss_kib": 946156,
+        "diagnostic_bytes": 0,
+        "source_unchanged": true,
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPower.olean",
+            "bytes": 17384,
+            "sha256": "44789913b25cc24e52a0f79033e1825ba20aff6392aac7a86a35597a183fc784"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPower.olean.private",
+            "bytes": 23823392,
+            "sha256": "c575d2d47015e75f9e2acc62a5bbcc641e48e09f2b0adb086f53987b408e1cd0"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPower.olean.server",
+            "bytes": 4128,
+            "sha256": "100f4f0f4bc9fab4d6d072a5dcdb43f5d11f41dffb40df3f2a80f099af2710bd"
+          }
+        ]
+      },
+      "process_metrics": {
+        "elapsed_seconds": 253.387,
+        "max_rss_kib": 946156,
+        "user_seconds": 223.989816,
+        "system_seconds": 14.210912,
+        "exit_status": 0
+      },
+      "builder_snapshot": "strict/cks_hall_final_build.py",
+      "provenance": "The historical record contains the source hash and source_unchanged result, all output object hashes, and direct imported object hashes. It does not record pre-build dependency source hashes, compiler/control hashes, or a separate cwd field. The command uses the recorded lean-relative source and output paths; its builder snapshot specifies cwd=lean. The complete gate independently freezes every current source, object, pin, verifier and executable. Missing historical hashes are not inferred."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiOrthogonalityTransition",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityTransition.olean",
+        "Conjectures/ChenKhareSahiOrthogonalityTransition.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/modern-ten-manifest.json",
+      "log": "strict/ChenKhareSahiOrthogonalityTransition.log",
+      "metrics_file": "strict/ChenKhareSahiOrthogonalityTransition.metrics.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiOrthogonalityTransition",
+        "phase": "after defining-equation ownership repair",
+        "source": "Conjectures/ChenKhareSahiOrthogonalityTransition.lean",
+        "source_sha256": "52ccfc686b08778e808c60ad0b2012bf3f82864a1225288007c61abb367265a5",
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityTransition.olean",
+          "Conjectures/ChenKhareSahiOrthogonalityTransition.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiOrthogonalityData": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean",
+              "bytes": 182512,
+              "sha256": "2301c7d932d95fc0853c871967f445f92582b3075d16a185fda29b7c1b4abcb9"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.private",
+              "bytes": 8366432,
+              "sha256": "bf8a4f7ad3ad311f3064b4e0ca2780c1bf2fa068ee81ec5da099ab0c9119b5c1"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityData.olean.server",
+              "bytes": 7816,
+              "sha256": "73b2383abe792b80596eb684b0aacbb870eada54ddb02e628d127fbba36606cf"
+            }
+          ]
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Transition.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-hall-final-logs/Transition.metrics",
+        "subprocess_exit": 0,
+        "elapsed_seconds": 109.31,
+        "max_rss_kib": 959148,
+        "diagnostic_bytes": 0,
+        "source_unchanged": true,
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityTransition.olean",
+            "bytes": 9416,
+            "sha256": "4573f9e4f5e9e3def5e5ee3f72f577491b8c8ab5868fc84ba3293ecb671f8bb5"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityTransition.olean.private",
+            "bytes": 8817440,
+            "sha256": "fed83e24a9c413a1a23f9a4a648636be30dd2fa8fb8d7ca400c9ff9de95e290a"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityTransition.olean.server",
+            "bytes": 1400,
+            "sha256": "e524ccce3c39f0d20f5ebe6c01ba3cd6263b5f074bae592b20561657d9ca9973"
+          }
+        ]
+      },
+      "process_metrics": {
+        "elapsed_seconds": 109.31,
+        "max_rss_kib": 959148,
+        "user_seconds": 98.948899,
+        "system_seconds": 4.607628,
+        "exit_status": 0
+      },
+      "builder_snapshot": "strict/cks_hall_final_build.py",
+      "provenance": "The historical record contains the source hash and source_unchanged result, all output object hashes, and direct imported object hashes. It does not record pre-build dependency source hashes, compiler/control hashes, or a separate cwd field. The command uses the recorded lean-relative source and output paths; its builder snapshot specifies cwd=lean. The complete gate independently freezes every current source, object, pin, verifier and executable. Missing historical hashes are not inferred."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiProducts",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiProducts.olean",
+        "Conjectures/ChenKhareSahiProducts.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/legacy-seven-manifest.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiProducts",
+        "source": {
+          "path": "Conjectures/ChenKhareSahiProducts.lean",
+          "bytes": 116818,
+          "sha256": "13ad8a7e8297a425ab144a0e472c07bbc5b2c96566a2188ed9a0de4bf796b475"
+        },
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiProducts.olean",
+          "Conjectures/ChenKhareSahiProducts.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahiCovers": {
+            "source": {
+              "path": "Conjectures/ChenKhareSahiCovers.lean",
+              "bytes": 5603,
+              "sha256": "0d895ba7f567a06ae2f3d5b482d413a773779c21c52cf3e1d3ef89c84335fb49"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiCovers.olean",
+                "bytes": 1839872,
+                "sha256": "35cf4efb56c23473e52cd6b56a24002501a562c9d8e7a905b007813532a0d3d7"
+              }
+            ]
+          },
+          "Conjectures.ChenKhareSahiReal": {
+            "source": {
+              "path": "Conjectures/ChenKhareSahiReal.lean",
+              "bytes": 7623,
+              "sha256": "6ad157f0f9b712062eabfb82163a2f6e16eea5128a490cf97434e80c5187f6af"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiReal.olean",
+                "bytes": 316272,
+                "sha256": "2870265f093815b06488ff2f0b679b835beb2841a19ab77da9ccd8e23d9f99b5"
+              }
+            ]
+          }
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiProducts.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiProducts.metrics.json",
+        "status": "passed",
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiProducts.olean",
+            "bytes": 6292384,
+            "sha256": "caee03c8f074f4fed345157efe02321be8cad1e09eb7412a18895619fc48c74c"
+          }
+        ],
+        "elapsed_seconds": 208.127,
+        "exit_status": 0,
+        "max_rss_kib": 977796,
+        "user_seconds": 144.309111,
+        "system_seconds": 29.773665,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "diagnostic_bytes": 0
+      },
+      "log": "strict/ChenKhareSahiProducts.log",
+      "metrics_file": "strict/ChenKhareSahiProducts.metrics.json",
+      "provenance": "Fresh sequential strict rebuild with pre/post source, direct dependency source/object and control checks, final source/object/control invariance, and direct-child wait4 process metrics. Every current hash matches the full gate freeze."
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiReal",
+      "label": "strict-source",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiReal.olean",
+        "Conjectures/ChenKhareSahiReal.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "manifest": "strict/legacy-seven-manifest.json",
+      "record": {
+        "module": "Conjectures.ChenKhareSahiReal",
+        "source": {
+          "path": "Conjectures/ChenKhareSahiReal.lean",
+          "bytes": 7623,
+          "sha256": "6ad157f0f9b712062eabfb82163a2f6e16eea5128a490cf97434e80c5187f6af"
+        },
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/ChenKhareSahiReal.olean",
+          "Conjectures/ChenKhareSahiReal.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.ChenKhareSahi": {
+            "source": {
+              "path": "Conjectures/ChenKhareSahi.lean",
+              "bytes": 6216,
+              "sha256": "85fa9264a9ae33e20767db3e551acbf404514995cdfecc525a4368734154a5eb"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahi.olean",
+                "bytes": 6839976,
+                "sha256": "b9496892c9f829b9ec4068ece08bcbaeabd00d15b8dc9866623782f337571086"
+              }
+            ]
+          }
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiReal.log",
+        "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiReal.metrics.json",
+        "status": "passed",
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiReal.olean",
+            "bytes": 316272,
+            "sha256": "2870265f093815b06488ff2f0b679b835beb2841a19ab77da9ccd8e23d9f99b5"
+          }
+        ],
+        "elapsed_seconds": 75.369,
+        "exit_status": 0,
+        "max_rss_kib": 891504,
+        "user_seconds": 8.951645,
+        "system_seconds": 24.12354,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "diagnostic_bytes": 0
+      },
+      "log": "strict/ChenKhareSahiReal.log",
+      "metrics_file": "strict/ChenKhareSahiReal.metrics.json",
+      "provenance": "Fresh sequential strict rebuild with pre/post source, direct dependency source/object and control checks, final source/object/control invariance, and direct-child wait4 process metrics. Every current hash matches the full gate freeze."
+    },
+    {
+      "label": "modern-audit",
+      "working_directory": "lean",
+      "log": "modern-audit.log",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "/workspace/scratch/17b12d3ee06e/CKSModernOwnedAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+      "started_utc": "2026-11-21T18:32:03.465627+00:00",
+      "elapsed_seconds": 5.711378870999397,
+      "returncode": 0,
+      "user_seconds": 4.336374,
+      "system_seconds": 0.9814309999999999,
+      "maxrss_kib": 1314732,
+      "status": "passed",
+      "log_bytes": 126976,
+      "log_sha256": "1fd6f9ebf56935f4282113cdb5afde3b2e98de7274cdacfd82ac8b1745801730"
+    },
+    {
+      "label": "full-audit",
+      "working_directory": "lean",
+      "log": "full-audit.log",
+      "command": [
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "/workspace/scratch/17b12d3ee06e/CKSCompleteAllOwnedAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+      "started_utc": "2026-11-21T18:32:09.183016+00:00",
+      "elapsed_seconds": 8.183329946999947,
+      "returncode": 0,
+      "user_seconds": 6.556001,
+      "system_seconds": 1.152427,
+      "maxrss_kib": 2464612,
+      "status": "passed",
+      "log_bytes": 608910,
+      "log_sha256": "dededd47fe651c8ce08877706a9d76930e89568acb4087c3214cbd92bed079cf"
+    },
+    {
+      "label": "kernel",
+      "working_directory": "lean",
+      "log": "kernel.log",
+      "command": [
+        "python3",
+        "../scripts/replay_lean.py",
+        "--root",
+        "Conjectures.ChenKhareSahiOrthogonality"
+      ],
+      "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+      "started_utc": "2026-11-21T18:33:08.081852+00:00",
+      "elapsed_seconds": 98.60674111899971,
+      "returncode": 0,
+      "user_seconds": 73.864793,
+      "system_seconds": 22.325325,
+      "maxrss_kib": 2286436,
+      "status": "passed",
+      "log_bytes": 1184,
+      "log_sha256": "51f782469164c32ca81b2468501a7442bc093a1ca3c03bfe0356e220aa752cce"
+    }
+  ],
+  "scope": {
+    "proved": [
+      "At q=1/10 and t=9/10, all eleven degree-six partitions, literal monomial and power-sum coordinates, polynomial injectivity, the diagonal stable Hall form, and existence and uniqueness of its monic dominance-triangular orthogonal family.",
+      "Literal three-variable specialization to the (4,2,0) and (4,1,1) polynomials, positive normalization values, and nonmembership of their normalized difference in the full real Muirhead semiring.",
+      "At q=t=1/2 in degree three, the literal two-variable source formulas have truncated finite Hall pairing -1 and therefore are not orthogonal for that form."
+    ],
+    "not_claimed": [
+      "Reconciliation of the manuscript's truncated finite-variable Hall convention.",
+      "Stable Hall identification of every rectangular-translate or continuous parameter family; those existing endpoints remain eigenfunction-characterized.",
+      "Completion of the separate earlier sixteen-module compatibility stock replay.",
+      "A combined repository gate, hosted verification, or full-result README badge."
+    ]
+  },
+  "separate_compatibility_checkpoint": {
+    "receipt": "docs/verification/lean-cks-compatibility-20261121/receipt.json",
+    "modules": 16,
+    "overlap_with_this_closure": [
+      "Conjectures.ChenKhareSahi",
+      "Conjectures.ChenKhareSahiCovers",
+      "Conjectures.ChenKhareSahiReal",
+      "Conjectures.ChenKhareSahiCone",
+      "Conjectures.ChenKhareSahiProducts",
+      "Conjectures.ChenKhareSahiGraded",
+      "Conjectures.ChenKhareSahiMixed"
+    ],
+    "other_modules_not_replayed_here": 9,
+    "independent_kernel_replay_passed": false,
+    "files_preserved_sha256": {
+      "docs/verification/lean-cks-compatibility-20261121/audit-inventory.json": "8f2437d327be26dfbfbfab966d62f6cf1f726b36a247cdbba5fae790369b492b",
+      "docs/verification/lean-cks-compatibility-20261121/audit.lean": "65a872bb03449fbbe473bfdd6adb492617088e1b7d9a970f29a00ed1d8eee469",
+      "docs/verification/lean-cks-compatibility-20261121/audit.log": "26e131ddd4aa648228f1a13016ed39e69582a184a0e0d14f0b7aafbedec5aa02",
+      "docs/verification/lean-cks-compatibility-20261121/receipt.json": "a5abda1dfb8a8af527e6c8e56c44df4b0a2d3da9b281203c4a54fdeb13835954",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahi.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiBoundary.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiCone.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiCovers.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiEigen.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiGraded.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiHall.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiMixed.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiParameter.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiProducts.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiReal.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiSaturation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiShiftUnique.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiTheorem.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiTranslate.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "docs/verification/lean-cks-compatibility-20261121/source-ChenKhareSahiUnique.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "scope_note": "This nineteen-module closure does not replace or complete the earlier sixteen-module compatibility replay. Its receipt and historical pending status are preserved."
+  },
+  "resource_metrics_provenance": "Original direct-child wait4 metrics are preserved without replacing unavailable historical input hashes or relabeling post-build evidence as pre-build evidence.",
+  "evidence_sha256": {
+    "strict/modern-ten-manifest.json": "e54d928c12a18c49641cd9eb58ad6df4947ddce447610ff71d334c1ebd4af536",
+    "strict/cks_hall_final_build.py": "844f7e2a6bded3e0d7bf298b1c133044922a75526240ae4d993ff469685258d5",
+    "strict/ChenKhareSahiOrthogonalityData.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityData.metrics.json": "47b885f797eed81dde97ebca1afb22eeb34d43d966a76f73aa53c5313363fce1",
+    "strict/ChenKhareSahiOrthogonalityTransition.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityTransition.metrics.json": "1f7259da6f8137678fbc4a47eccafe134e3b33864d94fba20bbcdd74d3742703",
+    "strict/ChenKhareSahiOrthogonalityGram.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityGram.metrics.json": "7a8d53ae259487b97ffd8c6d8fe6872641cfff0887b55de8a133845ac0a25e25",
+    "strict/ChenKhareSahiOrthogonalityDual.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityDual.metrics.json": "1ca86c3717492281851f62176cbe65a751e21f983a3b0f0581d2b176f531e7a4",
+    "strict/ChenKhareSahiOrthogonalityFamily.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityFamily.metrics.json": "20e93e7955bfa4c4e056a98833c5b87b72d97471fb37244a87736f86aa1134dd",
+    "strict/ChenKhareSahiOrthogonalityCore.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityCore.metrics.json": "298756e160fe49e1feb14d98269754884f07dbd16db4b96278e0473924c16aff",
+    "strict/ChenKhareSahiOrthogonalityOrbits.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityOrbits.metrics.json": "4a028101a0caf290761103fc8f75e8af0e264209e2f6c9a78384c45d6283f1b1",
+    "strict/ChenKhareSahiOrthogonalityPower.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityPower.metrics.json": "4ca6c41f4e642f80305e24bc21b8836133f0ea9bb3f4baa57f59f422ae96d17b",
+    "strict/ChenKhareSahiOrthogonalityEvaluation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityEvaluation.metrics.json": "4f3e61518f126084f78556d1a1e90bb594162b0d093bd03ff685194a70e6d2ab",
+    "strict/ChenKhareSahiOrthogonalityPolynomial.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityPolynomial.metrics.json": "eb13a28e65c757bd747888a95b880555fc574a32569c764225bc109b606ea9c2",
+    "strict/legacy-seven-manifest.json": "62a2f485ac2159fab6c05e31e4e633919992905191d33789a9bfdcfd5be7a2d1",
+    "strict/cks_legacy_strict_build.py": "7204c69e458c0c7b84a0e0706eec6a57fd3d57f8bcb7a689170f6b18b08b3523",
+    "strict/ChenKhareSahi.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahi.metrics.json": "5eafe3aa6a8f67628099289d64f353a06e8b4720dd7036d2897f8f3fab4c172b",
+    "strict/ChenKhareSahiCovers.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiCovers.metrics.json": "4495c9df7bf558e39150c07889c2de3709bd8dafb4b13d435534bddf3375dc66",
+    "strict/ChenKhareSahiReal.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiReal.metrics.json": "970097283c2293e19c7f4eb7371640d865dc06c0cddd243f494915ccace5497c",
+    "strict/ChenKhareSahiCone.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiCone.metrics.json": "f825b38bf69583b1503bb0cb1146c57e8be981db7dcbc7ae2e08587e8ae2ac6e",
+    "strict/ChenKhareSahiProducts.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiProducts.metrics.json": "5ce29d3a52d9d192c00b548c09ebef06a22f388ed9f51149a8d829d4e73a7b0a",
+    "strict/ChenKhareSahiGraded.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiGraded.metrics.json": "5e055d7467543f59666abfc156adbe91c4d4da403771df0d58f594899a12599b",
+    "strict/ChenKhareSahiMixed.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiMixed.metrics.json": "f90a392c2dd6fa99bf73716eafd77ac1e8d05783bedf13843f046ba38be6474b",
+    "strict/ChenKhareSahiHallConvention.receipt.json": "4baec4c52530108c78ed352fd8cbc89ef0df6347fe37ddc4a9e098bd97f9bdb5",
+    "strict/ChenKhareSahiHallConvention.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/build_cks_hall_convention_strict.py": "1c5e75370533e52d18a2ec6f8dbf5bccdcace0f6a3672d695f142fc25d5b427b",
+    "strict/ChenKhareSahiOrthogonality.receipt.json": "8d4a65c66bc192be1e326bd0046f1b30416816e79ca2489f0e895bfcffafc93d",
+    "strict/ChenKhareSahiOrthogonality.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/build_cks_orthogonality_final.py": "aa1bbb34613f6e9a3c1ae4a5330b35400f99ba3bdb6e69c5564e8a9fca4fcb4d",
+    "modern-audit-metrics.json": "58c331f4582b5c94f19d011035c28adf4974c178d5ec7e679263cbb6ba3f214a",
+    "modern-audit.log": "1fd6f9ebf56935f4282113cdb5afde3b2e98de7274cdacfd82ac8b1745801730",
+    "modern-audit-validated.json": "f78084c342d57bc36f109c5ac8ba7c9b31b8e51fe47c6d7e21fcd13b0c2833d6",
+    "full-audit-metrics.json": "2991cabef5888583dfa094f220b8bc50736eca9c28260fb798864ac6ff0dcf09",
+    "full-audit.log": "dededd47fe651c8ce08877706a9d76930e89568acb4087c3214cbd92bed079cf",
+    "full-audit-validated.json": "f875ea6f6e1bbe772a121a3e3ad8d95811d7ac2c2efc8645a6d30535cc098a23",
+    "kernel-metrics.json": "882d2a3ee4e0f8f3b309ab4f25124adce69063444c7f13c9fefee20d302cc6ee",
+    "kernel.log": "51f782469164c32ca81b2468501a7442bc093a1ca3c03bfe0356e220aa752cce",
+    "frozen-sha256.json": "c87b61ac4e25d64b1da08065e425b135951276cbbc1f96aac125e8fa1d471ced",
+    "control-sha256.json": "58b4074de70524d256fb6e405298567178ab6d394e167d18b1d4ca36aa81bfbf",
+    "obligations.json": "92a19af433676d3a75cb5304306863cf5f42f9bf84098b75cc49e197a1bea1ac",
+    "run_cks_gate.py": "5c485946bbb2052d1407279e4b955905feab0d60629fcb5fd64ec6db2b08ab79",
+    "modern-audit.lean": "8b0963ab69e4f5e2aad3854c0ce92fee3f16e95590c7dfbbade8be754c5b5f6e",
+    "full-audit.lean": "c350155f1664389db38412a96833fb9dd034e0720a1351bf3f9ddab152ac715d"
+  },
+  "log_sha256": {
+    "strict/ChenKhareSahiOrthogonalityData.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityTransition.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityGram.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityDual.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityFamily.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityCore.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityOrbits.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityPower.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityEvaluation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonalityPolynomial.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahi.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiCovers.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiReal.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiCone.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiProducts.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiGraded.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiMixed.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiHallConvention.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/ChenKhareSahiOrthogonality.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "modern-audit.log": "1fd6f9ebf56935f4282113cdb5afde3b2e98de7274cdacfd82ac8b1745801730",
+    "full-audit.log": "dededd47fe651c8ce08877706a9d76930e89568acb4087c3214cbd92bed079cf",
+    "kernel.log": "51f782469164c32ca81b2468501a7442bc093a1ca3c03bfe0356e220aa752cce"
+  },
+  "publication_script_sha256": "d3a1a360a02f413ed931e80b86279ccbb3752a8b9f7b70bf9d291f90adc81f8c"
+}

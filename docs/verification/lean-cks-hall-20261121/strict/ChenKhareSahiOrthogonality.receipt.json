@@ -1,0 +1,137 @@
+{
+  "status": "passed",
+  "module": "Conjectures.ChenKhareSahiOrthogonality",
+  "started_utc": "2026-11-21T18:30:22.372124+00:00",
+  "source": {
+    "path": "lean/Conjectures/ChenKhareSahiOrthogonality.lean",
+    "bytes": 7004,
+    "sha256": "d1d56d63596857702860676c770e65982dcfe6f640c2817dc168750f8e1f159d"
+  },
+  "direct_project_dependencies": {
+    "Conjectures.ChenKhareSahiOrthogonalityCore": {
+      "source": {
+        "path": "lean/Conjectures/ChenKhareSahiOrthogonalityCore.lean",
+        "bytes": 9658,
+        "sha256": "b43103816aefca801eca45b4ea6b75c33af1e0a993011cf69acedc9e8b6ee8d1"
+      },
+      "objects": [
+        {
+          "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean",
+          "bytes": 51880,
+          "sha256": "0fbbd7ec69ebd7a39f6a76ac9e4787a716d0a73e9b6a79ba5abd4d5b5744dfd1"
+        },
+        {
+          "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean.private",
+          "bytes": 227848,
+          "sha256": "f167718fa57c97cdbedcd4575a30d85786aa6db6db7502fc4167409a1b0377c2"
+        },
+        {
+          "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityCore.olean.server",
+          "bytes": 8800,
+          "sha256": "659cf67f5d5cd195cc60e9349710907d00f499744fed3b22b873c0804611ec46"
+        }
+      ]
+    },
+    "Conjectures.ChenKhareSahiOrthogonalityPolynomial": {
+      "source": {
+        "path": "lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.lean",
+        "bytes": 2770,
+        "sha256": "372ab9b2fd422fe6dc918653eb7f28f7a5fa1b8c142cf89a6bc9387b419e5f6e"
+      },
+      "objects": [
+        {
+          "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean",
+          "bytes": 10232,
+          "sha256": "97535092bafc779e0d26d84ecc2f6ba855f4a4fcfbdf3816ba076f62dcae11ef"
+        },
+        {
+          "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean.private",
+          "bytes": 33160,
+          "sha256": "d0d1befe2ac569970c50c585af596f90e0c517ca1cf2610f6be0c7a347a4bb8e"
+        },
+        {
+          "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonalityPolynomial.olean.server",
+          "bytes": 2520,
+          "sha256": "9415011e03379351062bee1ae9012683a82318205e1e23c81dcbbd0d9c64b49d"
+        }
+      ]
+    },
+    "Conjectures.ChenKhareSahiMixed": {
+      "source": {
+        "path": "lean/Conjectures/ChenKhareSahiMixed.lean",
+        "bytes": 9365,
+        "sha256": "80c4bda9d8c6bc6a61ce11e1528fd7a855491a398094c5cbeb5da25649205eb1"
+      },
+      "objects": [
+        {
+          "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiMixed.olean",
+          "bytes": 814320,
+          "sha256": "3d265b47b3cdd7d24d5987844706aa5cd186c0bc043b3f1da9e11ecb047bf18d"
+        }
+      ]
+    },
+    "Conjectures.ChenKhareSahiHallConvention": {
+      "source": {
+        "path": "lean/Conjectures/ChenKhareSahiHallConvention.lean",
+        "bytes": 4078,
+        "sha256": "f73a0c0cad8be50ead831a9e2a2d10d673b290e1cbf9a9a848c70f39d85ba855"
+      },
+      "objects": [
+        {
+          "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean",
+          "bytes": 32824,
+          "sha256": "8edcd45bb5ccc8d75110a072ed7d3351e832796c71c399e490e0ebd8c390d491"
+        },
+        {
+          "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean.private",
+          "bytes": 376976,
+          "sha256": "e96952ca2ff9aaf997d450736b17d256b054f2571f9bed03841d9e97fb7c8bc5"
+        },
+        {
+          "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiHallConvention.olean.server",
+          "bytes": 5784,
+          "sha256": "8652d1b4f1993dfbfff6f0e778239cada23b04f4fbeb8f2597a87e51ea9cdfb4"
+        }
+      ]
+    }
+  },
+  "controls_sha256": {
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/audit_lean_owned_extension.py": "6b520a346907fe9e8a7c025daa9a9a831ec8188aab26014443bb760f557f3bca",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f"
+  },
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "builder_sha256": "aa1bbb34613f6e9a3c1ae4a5330b35400f99ba3bdb6e69c5564e8a9fca4fcb4d",
+  "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+  "command": [
+    "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+    "-j1",
+    "-M2200",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/17b12d3ee06e/cks-orthogonality-final-strict-runs/20261121T183022.372124Z/objects/Conjectures/ChenKhareSahiOrthogonality.olean",
+    "Conjectures/ChenKhareSahiOrthogonality.lean"
+  ],
+  "log": "/workspace/scratch/17b12d3ee06e/cks-orthogonality-final-strict-runs/20261121T183022.372124Z/strict.log",
+  "expected_products_sha256": "13ad8a7e8297a425ab144a0e472c07bbc5b2c96566a2188ed9a0de4bf796b475",
+  "exit_status": 0,
+  "elapsed_seconds": 47.55562339900098,
+  "max_rss_kib": 2216380,
+  "user_seconds": 42.670952,
+  "system_seconds": 2.488078,
+  "source_unchanged": true,
+  "dependencies_unchanged": true,
+  "controls_unchanged": true,
+  "diagnostic_bytes": 0,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "output_objects": [
+    {
+      "path": "lean/.lake/build/lib/lean/Conjectures/ChenKhareSahiOrthogonality.olean",
+      "bytes": 6729392,
+      "sha256": "1791b5649edbe48d50b47f5e61528d3cafb230474c31106963fc4c1aaa5e7e15"
+    }
+  ]
+}

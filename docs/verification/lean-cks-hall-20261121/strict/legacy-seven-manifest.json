@@ -1,0 +1,451 @@
+{
+  "status": "passed",
+  "started_utc": "2026-11-21T18:17:16.530300+00:00",
+  "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+  "lean": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+  "lean_executable_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "lean_path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "builder_sha256": "7204c69e458c0c7b84a0e0706eec6a57fd3d57f8bcb7a689170f6b18b08b3523",
+  "control_sha256": {
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953"
+  },
+  "module_order": [
+    "Conjectures.ChenKhareSahi",
+    "Conjectures.ChenKhareSahiCovers",
+    "Conjectures.ChenKhareSahiReal",
+    "Conjectures.ChenKhareSahiCone",
+    "Conjectures.ChenKhareSahiProducts",
+    "Conjectures.ChenKhareSahiGraded",
+    "Conjectures.ChenKhareSahiMixed"
+  ],
+  "initial_sources": {
+    "Conjectures.ChenKhareSahi": {
+      "path": "Conjectures/ChenKhareSahi.lean",
+      "bytes": 6216,
+      "sha256": "85fa9264a9ae33e20767db3e551acbf404514995cdfecc525a4368734154a5eb"
+    },
+    "Conjectures.ChenKhareSahiCovers": {
+      "path": "Conjectures/ChenKhareSahiCovers.lean",
+      "bytes": 5603,
+      "sha256": "0d895ba7f567a06ae2f3d5b482d413a773779c21c52cf3e1d3ef89c84335fb49"
+    },
+    "Conjectures.ChenKhareSahiReal": {
+      "path": "Conjectures/ChenKhareSahiReal.lean",
+      "bytes": 7623,
+      "sha256": "6ad157f0f9b712062eabfb82163a2f6e16eea5128a490cf97434e80c5187f6af"
+    },
+    "Conjectures.ChenKhareSahiCone": {
+      "path": "Conjectures/ChenKhareSahiCone.lean",
+      "bytes": 5895,
+      "sha256": "833e826f424a25a99cdef510388539cdc6111e1dc53cd3e766759465e73e0aad"
+    },
+    "Conjectures.ChenKhareSahiProducts": {
+      "path": "Conjectures/ChenKhareSahiProducts.lean",
+      "bytes": 116818,
+      "sha256": "13ad8a7e8297a425ab144a0e472c07bbc5b2c96566a2188ed9a0de4bf796b475"
+    },
+    "Conjectures.ChenKhareSahiGraded": {
+      "path": "Conjectures/ChenKhareSahiGraded.lean",
+      "bytes": 14215,
+      "sha256": "ba01b66e5f7c7c4e880b3cc732aa256161e2ecb9290c2dad814bca019ce01827"
+    },
+    "Conjectures.ChenKhareSahiMixed": {
+      "path": "Conjectures/ChenKhareSahiMixed.lean",
+      "bytes": 9365,
+      "sha256": "80c4bda9d8c6bc6a61ce11e1528fd7a855491a398094c5cbeb5da25649205eb1"
+    }
+  },
+  "expected_products_sha256": "13ad8a7e8297a425ab144a0e472c07bbc5b2c96566a2188ed9a0de4bf796b475",
+  "modules": [
+    {
+      "module": "Conjectures.ChenKhareSahi",
+      "source": {
+        "path": "Conjectures/ChenKhareSahi.lean",
+        "bytes": 6216,
+        "sha256": "85fa9264a9ae33e20767db3e551acbf404514995cdfecc525a4368734154a5eb"
+      },
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahi.olean",
+        "Conjectures/ChenKhareSahi.lean"
+      ],
+      "direct_project_dependencies": {},
+      "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahi.log",
+      "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahi.metrics.json",
+      "status": "passed",
+      "output_objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahi.olean",
+          "bytes": 6839976,
+          "sha256": "b9496892c9f829b9ec4068ece08bcbaeabd00d15b8dc9866623782f337571086"
+        }
+      ],
+      "elapsed_seconds": 110.279,
+      "exit_status": 0,
+      "max_rss_kib": 1195260,
+      "user_seconds": 59.721174,
+      "system_seconds": 19.330182,
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "diagnostic_bytes": 0
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiCovers",
+      "source": {
+        "path": "Conjectures/ChenKhareSahiCovers.lean",
+        "bytes": 5603,
+        "sha256": "0d895ba7f567a06ae2f3d5b482d413a773779c21c52cf3e1d3ef89c84335fb49"
+      },
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiCovers.olean",
+        "Conjectures/ChenKhareSahiCovers.lean"
+      ],
+      "direct_project_dependencies": {
+        "Conjectures.ChenKhareSahi": {
+          "source": {
+            "path": "Conjectures/ChenKhareSahi.lean",
+            "bytes": 6216,
+            "sha256": "85fa9264a9ae33e20767db3e551acbf404514995cdfecc525a4368734154a5eb"
+          },
+          "objects": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahi.olean",
+              "bytes": 6839976,
+              "sha256": "b9496892c9f829b9ec4068ece08bcbaeabd00d15b8dc9866623782f337571086"
+            }
+          ]
+        }
+      },
+      "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiCovers.log",
+      "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiCovers.metrics.json",
+      "status": "passed",
+      "output_objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiCovers.olean",
+          "bytes": 1839872,
+          "sha256": "35cf4efb56c23473e52cd6b56a24002501a562c9d8e7a905b007813532a0d3d7"
+        }
+      ],
+      "elapsed_seconds": 50.332,
+      "exit_status": 0,
+      "max_rss_kib": 1176296,
+      "user_seconds": 14.332896999999999,
+      "system_seconds": 12.773988,
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "diagnostic_bytes": 0
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiReal",
+      "source": {
+        "path": "Conjectures/ChenKhareSahiReal.lean",
+        "bytes": 7623,
+        "sha256": "6ad157f0f9b712062eabfb82163a2f6e16eea5128a490cf97434e80c5187f6af"
+      },
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiReal.olean",
+        "Conjectures/ChenKhareSahiReal.lean"
+      ],
+      "direct_project_dependencies": {
+        "Conjectures.ChenKhareSahi": {
+          "source": {
+            "path": "Conjectures/ChenKhareSahi.lean",
+            "bytes": 6216,
+            "sha256": "85fa9264a9ae33e20767db3e551acbf404514995cdfecc525a4368734154a5eb"
+          },
+          "objects": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahi.olean",
+              "bytes": 6839976,
+              "sha256": "b9496892c9f829b9ec4068ece08bcbaeabd00d15b8dc9866623782f337571086"
+            }
+          ]
+        }
+      },
+      "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiReal.log",
+      "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiReal.metrics.json",
+      "status": "passed",
+      "output_objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiReal.olean",
+          "bytes": 316272,
+          "sha256": "2870265f093815b06488ff2f0b679b835beb2841a19ab77da9ccd8e23d9f99b5"
+        }
+      ],
+      "elapsed_seconds": 75.369,
+      "exit_status": 0,
+      "max_rss_kib": 891504,
+      "user_seconds": 8.951645,
+      "system_seconds": 24.12354,
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "diagnostic_bytes": 0
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiCone",
+      "source": {
+        "path": "Conjectures/ChenKhareSahiCone.lean",
+        "bytes": 5895,
+        "sha256": "833e826f424a25a99cdef510388539cdc6111e1dc53cd3e766759465e73e0aad"
+      },
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiCone.olean",
+        "Conjectures/ChenKhareSahiCone.lean"
+      ],
+      "direct_project_dependencies": {
+        "Conjectures.ChenKhareSahiCovers": {
+          "source": {
+            "path": "Conjectures/ChenKhareSahiCovers.lean",
+            "bytes": 5603,
+            "sha256": "0d895ba7f567a06ae2f3d5b482d413a773779c21c52cf3e1d3ef89c84335fb49"
+          },
+          "objects": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiCovers.olean",
+              "bytes": 1839872,
+              "sha256": "35cf4efb56c23473e52cd6b56a24002501a562c9d8e7a905b007813532a0d3d7"
+            }
+          ]
+        },
+        "Conjectures.ChenKhareSahiReal": {
+          "source": {
+            "path": "Conjectures/ChenKhareSahiReal.lean",
+            "bytes": 7623,
+            "sha256": "6ad157f0f9b712062eabfb82163a2f6e16eea5128a490cf97434e80c5187f6af"
+          },
+          "objects": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiReal.olean",
+              "bytes": 316272,
+              "sha256": "2870265f093815b06488ff2f0b679b835beb2841a19ab77da9ccd8e23d9f99b5"
+            }
+          ]
+        }
+      },
+      "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiCone.log",
+      "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiCone.metrics.json",
+      "status": "passed",
+      "output_objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiCone.olean",
+          "bytes": 2876120,
+          "sha256": "2500a322aaa61b7c2e04a378ae818455bbe26cbd19b521bc547674602910273d"
+        }
+      ],
+      "elapsed_seconds": 87.148,
+      "exit_status": 0,
+      "max_rss_kib": 1195348,
+      "user_seconds": 30.785103,
+      "system_seconds": 21.155492,
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "diagnostic_bytes": 0
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiProducts",
+      "source": {
+        "path": "Conjectures/ChenKhareSahiProducts.lean",
+        "bytes": 116818,
+        "sha256": "13ad8a7e8297a425ab144a0e472c07bbc5b2c96566a2188ed9a0de4bf796b475"
+      },
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiProducts.olean",
+        "Conjectures/ChenKhareSahiProducts.lean"
+      ],
+      "direct_project_dependencies": {
+        "Conjectures.ChenKhareSahiCovers": {
+          "source": {
+            "path": "Conjectures/ChenKhareSahiCovers.lean",
+            "bytes": 5603,
+            "sha256": "0d895ba7f567a06ae2f3d5b482d413a773779c21c52cf3e1d3ef89c84335fb49"
+          },
+          "objects": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiCovers.olean",
+              "bytes": 1839872,
+              "sha256": "35cf4efb56c23473e52cd6b56a24002501a562c9d8e7a905b007813532a0d3d7"
+            }
+          ]
+        },
+        "Conjectures.ChenKhareSahiReal": {
+          "source": {
+            "path": "Conjectures/ChenKhareSahiReal.lean",
+            "bytes": 7623,
+            "sha256": "6ad157f0f9b712062eabfb82163a2f6e16eea5128a490cf97434e80c5187f6af"
+          },
+          "objects": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiReal.olean",
+              "bytes": 316272,
+              "sha256": "2870265f093815b06488ff2f0b679b835beb2841a19ab77da9ccd8e23d9f99b5"
+            }
+          ]
+        }
+      },
+      "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiProducts.log",
+      "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiProducts.metrics.json",
+      "status": "passed",
+      "output_objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiProducts.olean",
+          "bytes": 6292384,
+          "sha256": "caee03c8f074f4fed345157efe02321be8cad1e09eb7412a18895619fc48c74c"
+        }
+      ],
+      "elapsed_seconds": 208.127,
+      "exit_status": 0,
+      "max_rss_kib": 977796,
+      "user_seconds": 144.309111,
+      "system_seconds": 29.773665,
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "diagnostic_bytes": 0
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiGraded",
+      "source": {
+        "path": "Conjectures/ChenKhareSahiGraded.lean",
+        "bytes": 14215,
+        "sha256": "ba01b66e5f7c7c4e880b3cc732aa256161e2ecb9290c2dad814bca019ce01827"
+      },
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiGraded.olean",
+        "Conjectures/ChenKhareSahiGraded.lean"
+      ],
+      "direct_project_dependencies": {
+        "Conjectures.ChenKhareSahiCone": {
+          "source": {
+            "path": "Conjectures/ChenKhareSahiCone.lean",
+            "bytes": 5895,
+            "sha256": "833e826f424a25a99cdef510388539cdc6111e1dc53cd3e766759465e73e0aad"
+          },
+          "objects": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiCone.olean",
+              "bytes": 2876120,
+              "sha256": "2500a322aaa61b7c2e04a378ae818455bbe26cbd19b521bc547674602910273d"
+            }
+          ]
+        },
+        "Conjectures.ChenKhareSahiProducts": {
+          "source": {
+            "path": "Conjectures/ChenKhareSahiProducts.lean",
+            "bytes": 116818,
+            "sha256": "13ad8a7e8297a425ab144a0e472c07bbc5b2c96566a2188ed9a0de4bf796b475"
+          },
+          "objects": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiProducts.olean",
+              "bytes": 6292384,
+              "sha256": "caee03c8f074f4fed345157efe02321be8cad1e09eb7412a18895619fc48c74c"
+            }
+          ]
+        }
+      },
+      "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiGraded.log",
+      "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiGraded.metrics.json",
+      "status": "passed",
+      "output_objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiGraded.olean",
+          "bytes": 1011816,
+          "sha256": "9f7d3413a5c063d4d15df8b19f4bb413146996eefa9ee48107231898d3ceaad9"
+        }
+      ],
+      "elapsed_seconds": 136.135,
+      "exit_status": 0,
+      "max_rss_kib": 793628,
+      "user_seconds": 15.480814,
+      "system_seconds": 45.298605,
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "diagnostic_bytes": 0
+    },
+    {
+      "module": "Conjectures.ChenKhareSahiMixed",
+      "source": {
+        "path": "Conjectures/ChenKhareSahiMixed.lean",
+        "bytes": 9365,
+        "sha256": "80c4bda9d8c6bc6a61ce11e1528fd7a855491a398094c5cbeb5da25649205eb1"
+      },
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/ChenKhareSahiMixed.olean",
+        "Conjectures/ChenKhareSahiMixed.lean"
+      ],
+      "direct_project_dependencies": {
+        "Conjectures.ChenKhareSahiGraded": {
+          "source": {
+            "path": "Conjectures/ChenKhareSahiGraded.lean",
+            "bytes": 14215,
+            "sha256": "ba01b66e5f7c7c4e880b3cc732aa256161e2ecb9290c2dad814bca019ce01827"
+          },
+          "objects": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiGraded.olean",
+              "bytes": 1011816,
+              "sha256": "9f7d3413a5c063d4d15df8b19f4bb413146996eefa9ee48107231898d3ceaad9"
+            }
+          ]
+        }
+      },
+      "log": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiMixed.log",
+      "metrics": "/workspace/scratch/17b12d3ee06e/cks-legacy-strict-logs/20261121T181716.530300Z/Conjectures.ChenKhareSahiMixed.metrics.json",
+      "status": "passed",
+      "output_objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/ChenKhareSahiMixed.olean",
+          "bytes": 814320,
+          "sha256": "3d265b47b3cdd7d24d5987844706aa5cd186c0bc043b3f1da9e11ecb047bf18d"
+        }
+      ],
+      "elapsed_seconds": 23.383,
+      "exit_status": 0,
+      "max_rss_kib": 2132444,
+      "user_seconds": 5.81248,
+      "system_seconds": 6.113876,
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "diagnostic_bytes": 0
+    }
+  ],
+  "sources_unchanged": true,
+  "objects_unchanged": true,
+  "controls_unchanged": true,
+  "finished_utc": "2026-11-21T18:28:47.733536+00:00"
+}

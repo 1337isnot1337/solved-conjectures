@@ -27,7 +27,43 @@ pair. The Jack-semiring Conjecture 4 is not resolved by this package.
 
 ## Current formalization scope
 
-The current endpoints use the standard monic triangular Macdonald eigenfunctions. Stable Hall orthogonality followed by specialization is being formalized separately. The manuscript's literal truncated finite-variable Hall pairing conflicts with that convention; the [degree-three diagnostic](https://github.com/1337isnot1337/solved-conjectures/issues/201#issuecomment-7065320695) must be reconciled before claiming a full literal-source formalization.
+Lean now identifies the displayed counterexample at `q=1/10`, `t=9/10`
+with the complete stable Hall-orthogonal family in degree six. All eleven
+partitions occur before specialization. The formalization proves the literal
+power-sum expansion, injectivity of the six-variable polynomial coordinates,
+the diagonal stable Hall pairing, and existence and uniqueness of the monic
+dominance-triangular orthogonal family. Literal specialization to three
+variables gives the `(4,2,0)` and `(4,1,1)` polynomials, with positive
+normalizing values. Their normalized difference lies outside the full real
+Muirhead semiring.
+
+The degree-three source-convention conflict is also formal: at `q=t=1/2`,
+the literal two-variable source formulas have truncated finite Hall pairing
+`-1`, so they are not orthogonal for that form. This fixed-parameter stable
+Hall theorem does not reconcile the manuscript's truncated finite-variable
+Hall definition. The broader rectangular-translate and parameter families
+retain their monic triangular eigenfunction characterizations; their stable
+Hall identification is not established by this checkpoint. The result's
+README badge remains partial.
+
+The twelve new modules and seven reused semiring modules form an exact
+nineteen-module closure. All nineteen sources passed strict compilation.
+The unchanged modern owned/private audit covers eleven modules; the
+unchanged complete audit covers 1,489 declarations, 1,294 theorem declarations, 950 private declarations and all 42 required endpoints. Only `propext`,
+`Classical.choice` and `Quot.sound` occur. Stock-kernel replay passed for
+this exact frozen nineteen-module closure, including all 41 object parts.
+The combined repository gate and hosted validation remain separate pending
+checks.
+
+See the [stable-Hall receipt](../../docs/verification/lean-cks-hall-20261121/receipt.json) and [literal witness](../../lean/Conjectures/ChenKhareSahiOrthogonality.lean).
+
+### Separate compatibility checkpoint
+
+The earlier sixteen-module compatibility receipt remains a separate
+checkpoint. Its strict sources and owned/private audit passed, but its
+fresh stock replay remains pending. This nineteen-module replay shares
+only seven modules with that closure and does not certify its other nine
+modules.
 
 All 16 existing modules passed fresh strict Lean 4.35 compilation with warnings treated as errors. The complete owned/private audit checked 1,454 declarations, including 1,254 theorem declarations, 816 private declarations and all 49 required endpoints. Only `propext`, `Classical.choice` and `Quot.sound` are allowed. Independent stock-kernel replay of the revised closure and the combined repository gate remain pending. The README badge remains partial.
 

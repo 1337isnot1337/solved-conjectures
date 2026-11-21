@@ -1,0 +1,19 @@
+{
+  "command": [
+    "lean",
+    "-j1",
+    "-M2200",
+    "-DwarningAsError=true",
+    "/workspace/scratch/17b12d3ee06e/CKSModernOwnedAudit.lean"
+  ],
+  "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+  "started_utc": "2026-11-21T18:32:03.465627+00:00",
+  "elapsed_seconds": 5.711378870999397,
+  "returncode": 0,
+  "user_seconds": 4.336374,
+  "system_seconds": 0.9814309999999999,
+  "maxrss_kib": 1314732,
+  "status": "passed",
+  "log_bytes": 126976,
+  "log_sha256": "1fd6f9ebf56935f4282113cdb5afde3b2e98de7274cdacfd82ac8b1745801730"
+}

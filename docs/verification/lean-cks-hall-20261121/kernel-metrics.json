@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "../scripts/replay_lean.py",
+    "--root",
+    "Conjectures.ChenKhareSahiOrthogonality"
+  ],
+  "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+  "started_utc": "2026-11-21T18:33:08.081852+00:00",
+  "elapsed_seconds": 98.60674111899971,
+  "returncode": 0,
+  "user_seconds": 73.864793,
+  "system_seconds": 22.325325,
+  "maxrss_kib": 2286436,
+  "status": "passed",
+  "log_bytes": 1184,
+  "log_sha256": "51f782469164c32ca81b2468501a7442bc093a1ca3c03bfe0356e220aa752cce"
+}

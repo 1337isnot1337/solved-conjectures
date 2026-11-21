@@ -1,5 +1,10 @@
 # History
 
+## 2026-11-21 — Chen–Khare–Sahi stable Hall witness checked
+
+Added twelve Lean modules and checked their exact nineteen-module closure. At q=1/10 and t=9/10, the full eleven-partition degree-six family is identified by stable Hall orthogonality, monic dominance triangularity and literal polynomial coordinates. Its three-variable specialization has positive normalization and yields the full Muirhead-semiring counterexample. The degree-three truncated finite-Hall conflict is also proved. Strict sources, both complete owned/private audits and the exact stock replay passed. The README remains partial because the manuscript convention is unresolved and the broader families still have only the eigenfunction identification. The previous sixteen-module compatibility receipt and its pending replay are preserved separately; neither the combined repository gate nor hosted validation is claimed.
+
+
 ## 2026-11-21 — Gamma-quotient theorem verified in Lean
 
 Completed the all-order Karp–Vishnyakova–Zhang gamma-quotient theorem on its
