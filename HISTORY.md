@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Fuss–Catalan Lean checkpoint
+
+Formalized real-root preservation by differentiation and reversal/translation, together with exact coefficients, degree and nonnegative-axis positivity for the binomial factor. The polynomial identification and path enumeration remain; standalone compilation, axiom audit and isolated kernel replay passed.
+
 ## 2026-11-21 — Brown–Mol infinite counterfamily in Lean
 
 Formalized the all-sufficiently-large diameter-four counterfamily, including the analytic root existence argument, the exact tree diameter and the literal subtree generating function. Strict source compilation, all-owned axiom audit and kernel replay passed; the combined repository gate is pending.

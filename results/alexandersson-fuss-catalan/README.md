@@ -2,6 +2,8 @@
 
 **Status: proved as a short deduction from classical results; priority qualified.**
 
+**Lean status: partial.** `Conjectures.FussCatalan` checks the real-root preservation tools and the binomial polynomial’s coefficients, degree and positivity for nonnegative inputs. The identification with the transformed derivative and the path enumeration remain unformalized; the combined repository gate is pending.
+
 For every $m,n\geq1$ and $1\leq k\leq n$, the polynomial counting $m$-Dyck paths with exactly $k$ factors $NE$, by the number of factors $NNE$, is real-rooted. The Fuss parameter changes this polynomial only by a positive scalar.
 
 The exact refinement is classical Kreweras/cycle-lemma enumeration. Its real-rooted binomial factor is already proved in the ordinary-Dyck work of Bóna et al. and Wang–Zhang. This note identifies their uniform scalar reduction for the conjecture still listed by Alexandersson and supplies a self-contained proof. It does not claim a new enumeration or root-preserving method.
