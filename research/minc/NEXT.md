@@ -18,6 +18,10 @@ The [P18 follow-up](../../results/perron-root-permanental-compounds/priority-aud
 
 ## Current full targets and exact gaps
 
+### Maximum permanent on a unitary orbit
+
+The [fourth-order near-scalar note](combinatorial/unitary_orbit_quartic_germ.md) proves an exact all-order local expansion for spectra \(1+\varepsilon x\), \(\sum_i x_i=0\): the second and third coefficients are \(\sum x_i^2/2\) and \(\sum x_i^3/3\), while the fourth coefficient is a maximum over zero-diagonal conjugates \(H\) of \(\sum_{|S|=4}\mathrm{per}H[S,S]+\sum_i((H^2)_{ii}-\sum x_j^2/n)^2\). It proves that every maximizing matrix has diagonal \(1+O(\varepsilon^2)\), even though the global constant-diagonal conjecture is false. The orbit maximum is also logarithmically Schur-convex in the positive spectrum. A complete proof and exact rational coefficient checks are saved; no independent review or novelty certificate exists. **P1 is not resolved.** The exact next step is to evaluate the zero-diagonal quartic functional structurally and extend beyond near-scalar spectra, not to repackage existing Gröbner elimination or the earlier exceptional-spectrum solution.
+
 ### Ryser's design conjecture
 
 The [source audit](combinatorial/ryser_source_audit.md) confirms the existential statement: some symmetric design must minimize the permanent when such a design exists; it does not require every design to minimize. The [codegree and loop note](combinatorial/ryser_cycle_reduction.md) proves the exact four-cycle excess and the compensating six-cycle identity. Generalized loops can have negative weight. No comparison of the full signed expansion is proved, and no switch sweep or added order is being counted.
