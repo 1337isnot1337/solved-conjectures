@@ -2,6 +2,7 @@ import Mathlib.Data.Nat.GCD.Basic
 import Mathlib.Data.Nat.ModEq
 import Mathlib.Data.ZMod.Basic
 import Conjectures.LonelinessRational
+import Mathlib.NumberTheory.DiophantineApproximation.Basic
 
 namespace ZhangDeletion
 
@@ -160,8 +161,8 @@ theorem small_deletion_strict (n r : ℕ) (hn : 4 ≤ n) (hr : 1 ≤ r)
     linarith
   exact hstrict.trans_le (modular_lower n r D hn hr hD hc.symm)
 
-theorem large_deletion_lower (n r : ℕ) (hn : 4 ≤ n) (hr : 1 ≤ r)
-    (hrn : r ≤ n-2) (hlarge : n-1 < 2*r) :
+theorem large_deletion_lower (n r : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
+    (hrn : r ≤ n-1) (hlarge : n-1 < 2*r) :
     (1 : ℝ) / r ≤ Loneliness.value (speeds n r) := by
   have hr2 : 2 ≤ r := by omega
   have hrR : (0 : ℝ) < r := by exact_mod_cast (show 0 < r by omega)
@@ -210,6 +211,31 @@ theorem question84 (n r : ℕ) (hn : 4 ≤ n) (hr : 1 ≤ r)
         have hnat : r+2 ≤ n := by omega
         exact_mod_cast hnat
       linarith
-    exact hlt.trans_le (large_deletion_lower n r hn hr hrn (by omega))
+    exact hlt.trans_le (large_deletion_lower n r (by omega) hr (by omega) (by omega))
+
+theorem large_deletion_upper (n r : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
+    (hrn : r ≤ n-1) (hlarge : n-1 < 2*r) :
+    Loneliness.value (speeds n r) ≤ (1 : ℝ) / r := by
+  have hr2 : 2 ≤ r := by omega
+  apply Loneliness.value_le
+  intro t ht
+  obtain ⟨d, hd, hdn, hdist⟩ := Real.exists_nat_abs_mul_sub_round_le t (show 0 < r-1 by omega)
+  have hmem : d ∈ speeds n r := by
+    simp only [speeds, List.mem_filter, List.mem_range', bne_iff_ne, Nat.one_mul]
+    constructor
+    · exact ⟨d-1, by omega, by omega⟩
+    · omega
+  have hbound := Loneliness.clearance_le_of_mem hmem t
+  have hEq : ((r-1 : ℕ) : ℝ)+1 = r := by
+    have hh : r-1+1 = r := by omega
+    exact_mod_cast hh
+  rw [hEq] at hdist
+  exact hbound.trans hdist
+
+theorem large_deletion_exact (n r : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
+    (hrn : r ≤ n-1) (hlarge : n-1 < 2*r) :
+    Loneliness.value (speeds n r) = (1 : ℝ) / r :=
+  le_antisymm (large_deletion_upper n r hn hr hrn hlarge)
+    (large_deletion_lower n r hn hr hrn hlarge)
 
 end ZhangDeletion

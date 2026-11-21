@@ -1254,4 +1254,4 @@ The complete 20-module hosted gate passed at `a8577e5da31b851ce64333aa921b39c662
 
 ## Zhang deletion values
 
-`ZhangDeletion.question84` proves the strict loneliness inequality for all n≥4, 1≤r≤n−2, using the actual distance and real-time value definitions. The four-module closure and standard axioms passed local kernel replay. The exact deletion-value formula remains unformalized; the full repository gate is pending.
+`ZhangDeletion.question84` proves the strict loneliness inequality for all n≥4, 1≤r≤n−2, using the actual distance and real-time value definitions. The four-module closure and standard axioms passed local kernel replay. `ZhangDeletion.large_deletion_exact` also proves the exact value in the large-deletion range. The small-deletion equality remains unformalized; the full repository gate is pending.
