@@ -247,3 +247,7 @@ The [zero-diagonal radial note](inequalities/c44_radial_asymptotic_gap.md), with
 ## Complement-matching checkpoint
 
 The [C6 complement-average note](combinatorial/c6_complement_average_checkpoint.md) derives a dense-complement matching marginal bound and applies the published Jerrum family to show that the normalized uniform complement average can initially increase. The [independent review](combinatorial/c6_complement_average_review.md) verifies the graph counts and switching factors. This excludes continuous monotonicity for arbitrary starting regular matrices; it does not decide the endpoint comparison or establish any obstruction at a global minimizer. Wanless's older pointwise inclusion counterexample is credited explicitly. C6 remains open, and no resolution is added.
+
+## Unitary-orbit review correction
+
+Two internal reviews now check the [P1 asymptotic theorem](combinatorial/unitary_orbit_quartic_germ.md): [uniform maximization and limits](combinatorial/unitary_orbit_quartic_asymptotic_review.md), and [quartic algebra and equality](combinatorial/unitary_orbit_quartic_review.md). The example coefficient `98/3` is explicitly a path coefficient, not the optimized coefficient for that spectrum; an exact same-spectrum witness gives `128/3`. The general asymptotic theorem survives this scope correction. The checker examples do not optimize the constrained maximum, the full P1 problem remains open, and the result count is unchanged.

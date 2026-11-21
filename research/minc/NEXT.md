@@ -20,15 +20,19 @@ The [P18 follow-up](../../results/perron-root-permanental-compounds/priority-aud
 
 ### Maximum permanent on a unitary orbit
 
-The [fourth-order near-scalar theorem](combinatorial/unitary_orbit_quartic_germ.md) is an exact all-order expansion for spectra \(1+\varepsilon x\), \(\sum x_i=0\):
-\[
+The [fourth-order near-scalar theorem](combinatorial/unitary_orbit_quartic_germ.md) is an exact all-order expansion for spectra $`1+\varepsilon x`$, $`\sum x_i=0`$:
+
+```math
 M_n(1+\varepsilon x)=1+\tfrac12s_2\varepsilon^2+\tfrac13s_3\varepsilon^3+\Gamma_n(x)\varepsilon^4+o(\varepsilon^4).
-\]
+```
+
 The coefficient simplifies to the zero-diagonal Hermitian orbit optimization
-\[
-\Gamma_n(x)=\tfrac14s_4+(\tfrac18-\tfrac1n)s_2^2+\max_{H\sim\mathrm{diag}(x),\,\mathrm{diag}H=0}\sum_{i<j}|h_{ij}|^4.
-\]
-Equivalently, it is \(3s_4/4+(1/8-1/n)s_2^2\) minus a nonnegative deficit consisting of adjacent-edge products and half of the squared off-diagonal entries of \(H^2\). The upper envelope is attained **if and only if** the multiset \(x\) is sign-symmetric; otherwise the deficit is positive. When \(s_2>0\), the gap is at least \(s_3^2/(2s_2)\). Every maximizing matrix has diagonal \(1+O(\varepsilon^2)\); the orbit maximum is also multiplicatively Schur-monotone for strictly positive spectra. Exact coefficient, quartic, deficit, and equality checks pass, but independent review and exhaustive novelty auditing are absent. None of this evaluates the maximum for an arbitrary spectrum; **P1 remains unsolved**. The next mathematical target is the constrained nonnegative deficit minimum or equivalent off-diagonal fourth-power maximum, including the connected-support stationarity condition (21), not more low-order checks or generic elimination.
+
+```math
+\Gamma_n(x)=\tfrac14s_4+(\tfrac18-\tfrac1n)s_2^2+\max_{H\sim\mathrm{diag}(x),\,\mathrm{diag}H=0}\sum_{i\lt j}|h_{ij}|^4.
+```
+
+Equivalently, it is $`3s_4/4+(1/8-1/n)s_2^2`$ minus a nonnegative deficit consisting of adjacent-edge products and half of the squared off-diagonal entries of $`H^2`$. The upper envelope is attained **if and only if** the multiset $`x`$ is sign-symmetric; otherwise the deficit is positive. When $`s_2>0`$, the gap is at least $`s_3^2/(2s_2)`$. Every maximizing matrix has diagonal $`1+O(\varepsilon^2)`$; the orbit maximum is also multiplicatively Schur-monotone for strictly positive spectra. Exact coefficient, quartic, deficit, and equality checks pass. The [asymptotic review](combinatorial/unitary_orbit_quartic_asymptotic_review.md) and [algebra review](combinatorial/unitary_orbit_quartic_review.md) now check the theorem independently. The example value `98/3` has been corrected to a path coefficient; it is not the optimized coefficient for that spectrum, which is at least `128/3`. Priority remains provisional. None of this evaluates the maximum for an arbitrary spectrum; **P1 remains unsolved**. The next mathematical target is the constrained nonnegative deficit minimum or equivalent off-diagonal fourth-power maximum, including the connected-support stationarity condition (21), not more low-order checks or generic elimination.
 
 ### Ryser's design conjecture
 
