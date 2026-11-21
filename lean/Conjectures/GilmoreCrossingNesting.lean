@@ -1,5 +1,6 @@
 import Mathlib.Algebra.BigOperators.Intervals
 import Mathlib.Algebra.BigOperators.Ring.Finset
+import Mathlib.Data.Matrix.Mul
 import Mathlib.Tactic.Ring
 
 namespace GilmoreCrossingNesting
@@ -219,5 +220,95 @@ theorem row_formula_implies_paths (μ y : R) (q : ℕ → R) (M : ℕ → ℕ �
   intro n k hn hk hkn
   rw [hformula n k hn hk (by omega), row_recurrence μ y q (M (n-1)) n k (by omega)]
   rw [hformula n (k+1) hn (by omega) (by omega)]
+
+def bidiagonalInverseEntry (z : R) (q : ℕ → R) (a b : ℕ) : R :=
+  if b ≤ a then z^(a-b) * ∏ v ∈ Finset.Ico (b+1) (a+1), q v else 0
+
+theorem inverseEntry_above (z : R) (q : ℕ → R) (a b : ℕ) (h : a < b) :
+    bidiagonalInverseEntry z q a b = 0 := by
+  simp [bidiagonalInverseEntry, Nat.not_le_of_gt h]
+
+theorem inverseEntry_diagonal (z : R) (q : ℕ → R) (a : ℕ) :
+    bidiagonalInverseEntry z q a a = 1 := by
+  simp [bidiagonalInverseEntry]
+
+theorem inverseEntry_step (z : R) (q : ℕ → R) (a b : ℕ) (h : b < a) :
+    bidiagonalInverseEntry z q a b = z*q (b+1)*bidiagonalInverseEntry z q a (b+1) := by
+  unfold bidiagonalInverseEntry
+  rw [ite_eq_left (by omega : b ≤ a), ite_eq_left (by omega : b+1 ≤ a)]
+  rw [Finset.prod_eq_prod_Ico_succ_bot (by omega : b+1 < a+1)]
+  have he : a-b = (a-(b+1))+1 := by omega
+  rw [he, pow_succ]
+  ring
+
+section Ring
+variable {S : Type*} [CommRing S]
+
+theorem inverseEntry_right_inverse (z : S) (q : ℕ → S) (a b : ℕ) :
+    bidiagonalInverseEntry z q a b -
+      bidiagonalInverseEntry z q a (b+1)*z*q (b+1) = if a = b then 1 else 0 := by
+  by_cases hab : a = b
+  · subst b
+    rw [inverseEntry_diagonal, inverseEntry_above z q a (a+1) (by omega)]
+    simp
+  · by_cases hba : b < a
+    · rw [inverseEntry_step z q a b hba]
+      simp only [ite_eq_right hab]
+      ring
+    · have hlt : a < b := by omega
+      rw [inverseEntry_above z q a b hlt, inverseEntry_above z q a (b+1) (by omega)]
+      simp [hab]
+
+noncomputable def inverseMatrix (N : ℕ) (z : S) (q : ℕ → S) : Matrix (Fin N) (Fin N) S :=
+  fun a b => bidiagonalInverseEntry z q a.val b.val
+
+noncomputable def bidiagonalMatrix (N : ℕ) (z : S) (q : ℕ → S) : Matrix (Fin N) (Fin N) S :=
+  fun a b => (if a = b then 1 else 0) - (if a.val = b.val+1 then z*q a.val else 0)
+
+theorem inverseMatrix_mul_bidiagonal (N : ℕ) (z : S) (q : ℕ → S) :
+    inverseMatrix N z q * bidiagonalMatrix N z q = 1 := by
+  classical
+  ext a b
+  simp only [Matrix.mul_apply, inverseMatrix, bidiagonalMatrix, mul_sub, Finset.sum_sub_distrib]
+  have hdiag : (∑ x : Fin N, bidiagonalInverseEntry z q a.val x.val * (if x = b then 1 else 0)) =
+      bidiagonalInverseEntry z q a.val b.val := by simp
+  rw [hdiag]
+  by_cases hb : b.val+1 < N
+  · let nb : Fin N := ⟨b.val+1, hb⟩
+    have hsum : (∑ x : Fin N, bidiagonalInverseEntry z q a.val x.val *
+        (if x.val = b.val+1 then z*q x.val else 0)) =
+        bidiagonalInverseEntry z q a.val (b.val+1) * z * q (b.val+1) := by
+      calc
+        (∑ x : Fin N, bidiagonalInverseEntry z q a.val x.val *
+          (if x.val = b.val+1 then z*q x.val else 0)) =
+          bidiagonalInverseEntry z q a.val nb.val *
+          (if nb.val = b.val+1 then z*q nb.val else 0) := by
+            apply Finset.sum_eq_single nb
+            · intro x _ hne
+              have hval : x.val ≠ b.val+1 := by
+                intro he
+                apply hne
+                exact Fin.ext he
+              simp [hval]
+            · simp
+        _ = _ := by simp [nb, mul_assoc]
+    rw [hsum, inverseEntry_right_inverse]
+    simp [Matrix.one_apply, Fin.ext_iff]
+  · have hsum : (∑ x : Fin N, bidiagonalInverseEntry z q a.val x.val *
+        (if x.val = b.val+1 then z*q x.val else 0)) = 0 := by
+      apply Finset.sum_eq_zero
+      intro x hx
+      have hval : x.val ≠ b.val+1 := by have := x.isLt; omega
+      simp [hval]
+    rw [hsum, sub_zero]
+    have hnext : bidiagonalInverseEntry z q a.val (b.val+1) = 0 :=
+      inverseEntry_above z q a.val (b.val+1) (by have := a.isLt; omega)
+    have hi := inverseEntry_right_inverse z q a.val b.val
+    rw [hnext] at hi
+    simp only [zero_mul, sub_zero] at hi
+    rw [hi]
+    simp [Matrix.one_apply, Fin.ext_iff]
+
+end Ring
 
 end GilmoreCrossingNesting

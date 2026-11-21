@@ -15,6 +15,7 @@ run_cmd do
     `BrownInteger.derivative_bound,
     `BrownMol.P_degree,
     `BrownMol.finite_root,
+    `GilmoreCrossingNesting.inverseMatrix_mul_bidiagonal,
     `GilmoreCrossingNesting.paths_complete,
     `GilmoreCrossingNesting.row_formula_implies_paths,
     `GilmoreCrossingNesting.row_recurrence,
