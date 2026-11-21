@@ -180,4 +180,85 @@ theorem gaussian_process_strict_from_local_sup {T Ω : Type*} [MeasurableSpace �
   intro n
   exact hlocal (b n) (hb n)
 
+theorem sampleRange_mono {T Ω : Type*} (A B : Set T) (X : T → Ω → ℝ)
+    (hA : A.Nonempty) (hAB : A ⊆ B) (ω : Ω)
+    (hupper : BddAbove ((fun u => X u ω) '' B))
+    (hlower : BddBelow ((fun u => X u ω) '' B)) :
+    sampleRange A X ω ≤ sampleRange B X ω := by
+  have himage : ((fun u => X u ω) '' A) ⊆ ((fun u => X u ω) '' B) := Set.image_mono hAB
+  have hne : (((fun u => X u ω) '' A) : Set ℝ).Nonempty := hA.image _
+  have hs := csSup_le_csSup hupper hne himage
+  have hi := csInf_le_csInf hlower hne himage
+  unfold sampleRange
+  linarith
+
+theorem local_limit_bounded {T Ω : Type*} [MeasurableSpace Ω]
+    (μ : Measure Ω) (K : Set T) (X : T → Ω → ℝ) (A : ℕ → Set T) (b : ℝ)
+    (hne : ∀ n, (A n).Nonempty) (hsub : ∀ n, A n ⊆ K)
+    (hbounded : ∀ᵐ ω ∂μ, BddAbove ((fun u => X u ω) '' K) ∧ BddBelow ((fun u => X u ω) '' K))
+    (hlim : ∀ᵐ ω ∂μ, Tendsto (fun n => sampleRange (A n) X ω) atTop (𝓝 b)) :
+    ∀ᵐ ω ∂μ, b ≤ sampleRange K X ω := by
+  filter_upwards [hbounded, hlim] with ω hw hl
+  apply le_of_tendsto' hl
+  intro n
+  exact sampleRange_mono (A n) K X (hne n) (hsub n) ω hw.1 hw.2
+
+theorem local_oscillation_strict {T Ω : Type*} [PseudoMetricSpace T] [MeasurableSpace Ω]
+    (μ : Measure Ω) [IsProbabilityMeasure μ] (K : Set T) (X : T → Ω → ℝ)
+    (hX : ProbabilityTheory.IsGaussianProcess X μ)
+    (s t : T) (hs : s ∈ K) (ht : t ∈ K) (osc : T → ℝ)
+    (hoscBound : BddAbove (osc '' K))
+    (hvariance : 0 < ProbabilityTheory.variance (fun ω => X s ω - X t ω) μ)
+    (hbounded : ∀ᵐ ω ∂μ, BddAbove ((fun u => X u ω) '' K) ∧ BddBelow ((fun u => X u ω) '' K))
+    (hint : Integrable (sampleRange K X) μ)
+    (hlocal : ∀ u ∈ K, ∀ᵐ ω ∂μ,
+      Tendsto (fun n : ℕ => sampleRange (K ∩ Metric.ball u (1/((n:ℝ)+1))) X ω) atTop (𝓝 (osc u))) :
+    sSup (osc '' K) < ∫ ω, sampleRange K X ω ∂μ := by
+  have hne : K.Nonempty := ⟨s, hs⟩
+  apply gaussian_process_strict_from_local_sup μ K X hX s t hs ht (osc '' K)
+    (hne.image osc) hoscBound hvariance hbounded hint
+  intro b hb
+  obtain ⟨u, hu, rfl⟩ := hb
+  apply local_limit_bounded μ K X (fun n => K ∩ Metric.ball u (1/((n:ℝ)+1))) (osc u)
+  · intro n
+    exact ⟨u, hu, Metric.mem_ball_self (by positivity)⟩
+  · intro n
+    exact Set.inter_subset_left
+  · exact hbounded
+  · exact hlocal u hu
+
+theorem local_oscillation_bounded {T Ω : Type*} [PseudoMetricSpace T] [MeasurableSpace Ω]
+    (μ : Measure Ω) [IsProbabilityMeasure μ] (K : Set T) (X : T → Ω → ℝ)
+    (osc : T → ℝ)
+    (hbounded : ∀ᵐ ω ∂μ, BddAbove ((fun u => X u ω) '' K) ∧ BddBelow ((fun u => X u ω) '' K))
+    (hint : Integrable (sampleRange K X) μ)
+    (hlocal : ∀ u ∈ K, ∀ᵐ ω ∂μ,
+      Tendsto (fun n : ℕ => sampleRange (K ∩ Metric.ball u (1/((n:ℝ)+1))) X ω) atTop (𝓝 (osc u))) :
+    BddAbove (osc '' K) := by
+  refine ⟨∫ ω, sampleRange K X ω ∂μ, ?_⟩
+  rintro y ⟨u, hu, rfl⟩
+  have ha : ∀ᵐ ω ∂μ, osc u ≤ sampleRange K X ω := by
+    apply local_limit_bounded μ K X (fun n => K ∩ Metric.ball u (1/((n:ℝ)+1))) (osc u)
+    · intro n
+      exact ⟨u, hu, Metric.mem_ball_self (by positivity)⟩
+    · intro n
+      exact Set.inter_subset_left
+    · exact hbounded
+    · exact hlocal u hu
+  have h := integral_mono_ae (integrable_const (osc u)) hint ha
+  simpa using h
+
+theorem local_oscillation_strict_unconditional_bound {T Ω : Type*} [PseudoMetricSpace T] [MeasurableSpace Ω]
+    (μ : Measure Ω) [IsProbabilityMeasure μ] (K : Set T) (X : T → Ω → ℝ)
+    (hX : ProbabilityTheory.IsGaussianProcess X μ)
+    (s t : T) (hs : s ∈ K) (ht : t ∈ K) (osc : T → ℝ)
+    (hvariance : 0 < ProbabilityTheory.variance (fun ω => X s ω - X t ω) μ)
+    (hbounded : ∀ᵐ ω ∂μ, BddAbove ((fun u => X u ω) '' K) ∧ BddBelow ((fun u => X u ω) '' K))
+    (hint : Integrable (sampleRange K X) μ)
+    (hlocal : ∀ u ∈ K, ∀ᵐ ω ∂μ,
+      Tendsto (fun n : ℕ => sampleRange (K ∩ Metric.ball u (1/((n:ℝ)+1))) X ω) atTop (𝓝 (osc u))) :
+    sSup (osc '' K) < ∫ ω, sampleRange K X ω ∂μ :=
+  local_oscillation_strict μ K X hX s t hs ht osc
+    (local_oscillation_bounded μ K X osc hbounded hint hlocal) hvariance hbounded hint hlocal
+
 end DospolovaGermanskovZaporozhets

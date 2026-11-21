@@ -1282,4 +1282,4 @@ This formalizes a previously resolved result. A complete ordinary disproof was p
 
 ## Dospolova–Germanskov–Zaporozhets factorial family
 
-`DospolovaGermanskovZaporozhets` checks all factorial-sequence equalities and strict expected range for an actual Gaussian process, with almost-sure boundedness, nondegenerate increment and local-bound assumptions explicit. Intrinsic volumes, local oscillation and Vitale’s limit remain unformalized. Strict source compilation, isolated kernel replay and endpoint axiom checks passed; the full repository gate is pending.
+`DospolovaGermanskovZaporozhets` checks all factorial-sequence equalities and strict expected range for an actual Gaussian process, with almost-sure boundedness, nondegenerate increment and deterministic local-range limits explicit. Intrinsic volumes, existence of those limits, and Vitale’s limit remain unformalized. Strict source compilation, isolated kernel replay and endpoint axiom checks passed; the full repository gate is pending.
