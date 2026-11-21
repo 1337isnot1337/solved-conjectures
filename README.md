@@ -12,6 +12,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Verification |
 | :--- | :---: |
+| [Ferreira–Simon's conjecture](results/ferreira-simon-beta-prime/) | ⬜ |
 | [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |
 | [Sun–Zhao's conjecture](results/sun-zhao-iterated-ratios/) | ⬜ |
 | [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | ⬜ |

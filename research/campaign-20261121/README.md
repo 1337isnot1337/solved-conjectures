@@ -23,10 +23,11 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 This section tracks this subgroup's packages. The [joint eleven-family checkpoint](../2026-11-21-joint-results/) reviews a selected thirteen-package set: seven packages from the current four-worker group and six from this subgroup, including Han–Sabag–Kostina–Hassibi after its additional mathematical, source and priority reviews. It excludes corrected-source Novelli–Thibon from the strict tally and groups the two López Pouso–Segura packages together, giving eleven named families. Other packages in this subgroup's live table remain outside that selected review pending additional cross-review.
 
-Complete proposed resolutions with separate internal review and a documented current status audit: **8** at this checkpoint. All remain unrefereed.
+Complete proposed resolutions with separate internal review and a documented current status audit: **9** at this checkpoint. All remain unrefereed.
 
 | Conjecture | Result | Evidence |
 | --- | --- | --- |
+| Ferreira–Simon's conjecture | Proved the full beta-prime self-convolution identity by analytic Mellin transforms for all parameters in the original statement; one resolution | [Package](../../results/ferreira-simon-beta-prime/) · [Issue 200](https://github.com/1337isnot1337/solved-conjectures/issues/200) |
 | Lyon's conjecture | Proved strict transformed-median monotonicity for every positive real gamma shape, with analytic tails and an essential exact interval certificate covering the whole remaining domain | [Package](../../results/lyon-gamma-median/) · [Issue 196](https://github.com/1337isnot1337/solved-conjectures/issues/196) |
 | Sun–Zhao's conjecture | Disproved the full universal alternating log-behavior assertion for iterated ratios, with an exact retained-block certificate; one resolution | [Package](../../results/sun-zhao-iterated-ratios/) · [Issue 198](https://github.com/1337isnot1337/solved-conjectures/issues/198) |
 | Han–Sabag–Kostina–Hassibi's conjecture | Disproved the full Lyapunov positivity sparse-optimality assertion by an exact strict gap and an open family; separate communication claims are outside scope | [Package](../../results/han-sabag-kostina-hassibi/) · [Issue 197](https://github.com/1337isnot1337/solved-conjectures/issues/197) |

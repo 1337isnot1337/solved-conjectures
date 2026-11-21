@@ -47,6 +47,8 @@ jobs:
           python -m pip install sympy==1.14.0
           python results/gilmore-crossing-nesting/verify.py
           python results/chow-conjecture/verify.py
+      - name: Check Ferreira-Simon beta-prime symbolic identities
+        run: python results/ferreira-simon-beta-prime/verify.py
       - name: Certify Lyon gamma-median monotonicity on all real cells
         run: python results/lyon-gamma-median/verify.py
       - name: Check Sun-Zhao exact iterated-ratio counterexample

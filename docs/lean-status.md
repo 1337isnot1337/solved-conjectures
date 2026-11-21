@@ -34,6 +34,7 @@ proofs are documented separately in the catalogue and result package.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| Ferreira–Simon's conjecture | Not formalized | Complete proposed analytic proof of the beta-prime self-convolution identity for its full real-parameter range. Two independent mathematical reviews and 18 supplementary exact formal-parameter checks passed. No Lean formalization is claimed. |
 | Lyon's conjecture | Not formalized | Complete proposed computer-assisted proof for every positive real shape. Analytic tails and an essential exact integer certificate covering 4256 real intervals establish the derivative sign. Two independent mathematical/code reviews and full certificate replays passed. No Lean theorem or partial Lean credit is claimed. |
 | Sun–Zhao's conjecture | Not formalized | Complete proposed disproof of the full iterated-ratio conjecture at an allowed retained block. Exact integer and rational certificates plus two independent source/mathematical reviews pass. The conjecture's operator, parity and truncation are explicit; neighboring assertions are not claimed. No Lean formalization. |
 | Han–Sabag–Kostina–Hassibi's conjecture | Not formalized | Complete proposed disproof of the full matrix optimization conjecture by a rational feasible point, an exhaustive lower bound for every sparse assignment and an open family of strict gaps. Two independent mathematical/source reviews and 16 exact diagnostics passed. No claim about a separate general communication-code problem or Lean formalization. |

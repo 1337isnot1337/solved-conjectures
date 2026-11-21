@@ -32,6 +32,13 @@ The standard-library verifier independently checks 4258 rational median brackets
 
 ## Computational checks
 
+The [Ferreira–Simon beta-prime proof](../results/ferreira-simon-beta-prime/PROOF.md) is a complete analytic Mellin-transform argument for the full parameter range. Its [two](../results/ferreira-simon-beta-prime/ALGEBRA_REVIEW.md) [independent reviews](../results/ferreira-simon-beta-prime/ROOT_REVIEW.md) check the normalization, domains, positive-series interchanges, and uniqueness step. The standard-library script checks 18 exact identities in formal parameters; these are supplementary algebra checks, not a finite-parameter proof.
+
+```bash
+python3 results/ferreira-simon-beta-prime/verify.py
+```
+
+
 The [Sun–Zhao checker](../results/sun-zhao-iterated-ratios/check.py) uses only exact integers and rational arithmetic. It regenerates the source sequence, checks two binomial representations, compares the two 582535-bit products, certifies a strictly negative fourteenth logarithmic difference with an explicit series remainder, and directly applies twelve ratio iterations. The [proof](../results/sun-zhao-iterated-ratios/PROOF.md) identifies why the violated inequality belongs to the conjectured retained sequence.
 
 ```bash

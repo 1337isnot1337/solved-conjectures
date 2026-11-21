@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Ferreira–Simon's conjecture
+
+Added a complete proposed analytic proof of Conjecture 1 in *Convolution of beta prime distribution*: the independent square-root beta mixture gives the self-convolution for the full original parameter range. The proof rederives the sum's Mellin transform, evaluates the mixing factor with a classical quadratic transformation, and proves equality in law by holomorphic continuation and characteristic-function uniqueness.
+
+Two independent mathematical derivations passed, as did 18 supplementary exact symbolic identities. The [package](results/ferreira-simon-beta-prime/) records the current primary-source and archive search, including the distinction from the November 2026 restricted additive-decomposition result and the paper's separately refuted Conjectures 2 and 3. No earlier settlement of this identity was found within the stated access and indexing limits. This subgroup's reviewed tally is nine. No Lean work was performed.
+
 ## 2026-11-21 — Joint eleven-family checkpoint
 
 Admitted Han–Sabag–Kostina–Hassibi's exact matrix disproof to the [joint ledger](research/2026-11-21-joint-results/) after additional independent mathematical, source, priority and provenance reviews. The selected reviewed set now contains thirteen packages: seven from the current four-worker group and six from the parallel campaign. Removing corrected-source Novelli–Thibon from the strict count and merging the two López Pouso–Segura packages gives eleven named families. Other newer parallel packages remain outside this selected review until separately admitted.
