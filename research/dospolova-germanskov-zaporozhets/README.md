@@ -1,6 +1,6 @@
 # Dospolova–Germanskov–Zaporozhets's conjecture
 
-**Priority hold, 2026-11-21:** this package is not eligible for the new-resolution count until the inequality in Vitale's 2001 Theorem 1 is verified from an actual rendering. The available scan's text extraction gives a strict inequality that would already exclude our family. No reviewer has received usable image bytes. See [SOURCE_GLYPH_GATE.md](SOURCE_GLYPH_GATE.md).
+**Source-glyph check completed, 2026-11-21:** the actual rendered original scan shows that Vitale's 2001 Theorem 1 uses a nonstrict inequality. The text extraction had dropped its lower bar. This specific priority hold is cleared; [SOURCE_GLYPH_GATE.md](SOURCE_GLYPH_GATE.md) preserves the audit and the correction of the earlier image-placeholder mistake. Final repository admission remains the integrator's decision.
 
 This package gives a proposed complete disproof of Conjecture 3.6 in Maria Dospolova, Mikhail Germanskov, and Dmitry Zaporozhets, [*On Steiner entire function*, arXiv:2507.11626v1](https://arxiv.org/html/2507.11626v1#S3.SS4).
 
@@ -23,6 +23,6 @@ The full universal conjecture is refuted by an entire family of positive infinit
 - [ANALYSIS_REVIEW.md](ANALYSIS_REVIEW.md): an independent mathematical and primary-source review.
 - [ALGEBRA_REVIEW.md](ALGEBRA_REVIEW.md): a second independent mathematical and primary-source review.
 
-Both independent mathematical reviews passed. No computation or Lean verification is part of the proof. The priority audit has an unresolved potentially decisive source ambiguity, described above. Final repository integration is on hold.
+Both independent mathematical reviews passed. No computation or Lean verification is part of the proof. The source ambiguity described above has been resolved by actual local image inspection. The bounded novelty audit and the distinction between the new strictness deduction and Long's earlier ingredients remain documented in NOVELTY.md. Final repository integration review is pending.
 
 Coordination: [issue #199](https://github.com/1337isnot1337/solved-conjectures/issues/199).

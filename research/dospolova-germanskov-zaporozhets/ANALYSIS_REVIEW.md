@@ -54,3 +54,15 @@ For the proposed family, direct factorial cancellation proves every source inequ
 This is a full refutation of the conjectured sufficiency direction for all positive scales $`c`$. It is not a numerical obstruction, a finite-dimensional special case, or a claim that an unspecified limiting object has the required compactness. No computational test is needed for the argument.
 
 Two presentation corrections were reported to the author: a missing backslash before `quad` in the first family display and the repository's requested formatting for named mathematical operators. Neither affects the proof.
+
+## Primary-source inequality glyph checked locally
+
+A final priority check concerned Vitale's Theorem 1 on printed page 356. Web extraction rendered its bound with a strict sign, while web screenshot calls returned only text placeholders rather than usable images. Those calls were not visual evidence.
+
+The complete [primary PDF packet](https://case.edu/artsci/math/mwmeckes/perspectivesInHighDimensions/vitale.pdf) was subsequently downloaded successfully with the local runtime, rendered by Poppler, and inspected as an actual PNG with `view_image`. PDF page 34, printed page 356, unambiguously displays the **nonstrict** bound
+
+```math
+V_j(K)\leq \frac{V_1(K)^j}{j!},\qquad j=2,3,\ldots.
+```
+
+The input PDF has SHA-256 `5213006d5754b7c1c4ee71f5de137b97d5316784b215bff9995da1e186f516cc`. The local source and rendered page are `agent-analysis/vitale-priority-source.pdf` and `agent-analysis/vitale-theorem1.png`. The source itself is retained as an inspection input, not claimed as a new deliverable. The printed theorem therefore does not already supply the strict obstruction proved here.
