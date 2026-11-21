@@ -24,6 +24,7 @@ modules=(
   Conjectures.ChenKhareSahiTheorem
   Conjectures.ChenKhareSahiTranslate
   Conjectures.ChenKhareSahiBoundary
+  Conjectures.ChenKhareSahiSaturation
   Conjectures.ChenKhareSahiCovers
   Conjectures.FussCatalan
   Conjectures.BrownMolGeneralRoot
