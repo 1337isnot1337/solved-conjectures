@@ -12,7 +12,7 @@ Only full open entries on [Yair Lavi’s Minc list](https://yair-lavi.com/mincs-
 
 ## Maximum permanent on a unitary orbit: local spectral reduction
 
-The [fourth-order germ](combinatorial/unitary_orbit_quartic_germ.md) proves an all-order near-scalar expansion and an exact fourth-order zero-diagonal orbit optimization, with [rational coefficient checks](combinatorial/verify_unitary_orbit_quartic.py). It also proves multiplicative Schur monotonicity and second-order convergence to constant diagonal for all maximizers. No full P1 maximum formula or novelty priority is claimed, and the earlier Holden algebraic prescription and exceptional-spectrum formula are credited. **P1 remains open as a structural problem** under the live list's criteria.
+The [fourth-order germ](combinatorial/unitary_orbit_quartic_germ.md) proves an all-order near-scalar expansion and an exact fourth-order zero-diagonal orbit optimization with a sharp spectral envelope and sign-symmetric equality classification, with [rational coefficient checks](combinatorial/verify_unitary_orbit_quartic.py). It also proves multiplicative Schur monotonicity and second-order convergence to constant diagonal for all maximizers. No full P1 maximum formula or novelty priority is claimed, and the earlier Holden algebraic prescription and exceptional-spectrum formula are credited. **P1 remains open as a structural problem** under the live list's criteria.
 
 ## Assignments
 

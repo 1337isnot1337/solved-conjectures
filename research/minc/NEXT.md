@@ -20,7 +20,15 @@ The [P18 follow-up](../../results/perron-root-permanental-compounds/priority-aud
 
 ### Maximum permanent on a unitary orbit
 
-The [fourth-order near-scalar note](combinatorial/unitary_orbit_quartic_germ.md) proves an exact all-order local expansion for spectra \(1+\varepsilon x\), \(\sum_i x_i=0\): the second and third coefficients are \(\sum x_i^2/2\) and \(\sum x_i^3/3\), while the fourth coefficient is a maximum over zero-diagonal conjugates \(H\) of \(\sum_{|S|=4}\mathrm{per}H[S,S]+\sum_i((H^2)_{ii}-\sum x_j^2/n)^2\). It proves that every maximizing matrix has diagonal \(1+O(\varepsilon^2)\), even though the global constant-diagonal conjecture is false. The orbit maximum is also logarithmically Schur-convex in the positive spectrum. A complete proof and exact rational coefficient checks are saved; no independent review or novelty certificate exists. **P1 is not resolved.** The exact next step is to evaluate the zero-diagonal quartic functional structurally and extend beyond near-scalar spectra, not to repackage existing Gröbner elimination or the earlier exceptional-spectrum solution.
+The [fourth-order near-scalar theorem](combinatorial/unitary_orbit_quartic_germ.md) is an exact all-order expansion for spectra \(1+\varepsilon x\), \(\sum x_i=0\):
+\[
+M_n(1+\varepsilon x)=1+\tfrac12s_2\varepsilon^2+\tfrac13s_3\varepsilon^3+\Gamma_n(x)\varepsilon^4+o(\varepsilon^4).
+\]
+The coefficient simplifies to the zero-diagonal Hermitian orbit optimization
+\[
+\Gamma_n(x)=\tfrac14s_4+(\tfrac18-\tfrac1n)s_2^2+\max_{H\sim\mathrm{diag}(x),\,\mathrm{diag}H=0}\sum_{i<j}|h_{ij}|^4.
+\]
+Equivalently, it is \(3s_4/4+(1/8-1/n)s_2^2\) minus a nonnegative deficit consisting of adjacent-edge products and half of the squared off-diagonal entries of \(H^2\). The upper envelope is attained **if and only if** the multiset \(x\) is sign-symmetric; otherwise the deficit is positive. When \(s_2>0\), the gap is at least \(s_3^2/(2s_2)\). Every maximizing matrix has diagonal \(1+O(\varepsilon^2)\); the orbit maximum is also multiplicatively Schur-monotone for strictly positive spectra. Exact coefficient, quartic, deficit, and equality checks pass, but independent review and exhaustive novelty auditing are absent. None of this evaluates the maximum for an arbitrary spectrum; **P1 remains unsolved**. The next mathematical target is the constrained nonnegative deficit minimum or equivalent off-diagonal fourth-power maximum, including the connected-support stationarity condition (21), not more low-order checks or generic elimination.
 
 ### Ryser's design conjecture
 
