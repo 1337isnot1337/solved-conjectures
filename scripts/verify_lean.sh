@@ -74,6 +74,7 @@ modules=(
   Conjectures.LopezPousoSeguraFactors
   Conjectures.LopezPousoSeguraLegendre
   Conjectures.LopezPousoSeguraBesselConvex
+  Conjectures.LopezPousoSeguraBesselMidpoint
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany

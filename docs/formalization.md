@@ -1318,4 +1318,4 @@ This formalizes a previously resolved result. A complete ordinary disproof was p
 
 ## López Pouso–Segura Bessel-weight convexity
 
-`Conjectures.LopezPousoSeguraBesselConvex` proves the strict unit trapezoid inequality and positivity and strict increase of the source first sequence under explicit convexity, antiderivative and endpoint hypotheses. The Bessel identification, other sequences and limits remain to be formalized; repository-wide verification is pending.
+`Conjectures.LopezPousoSeguraBesselConvex` and `Conjectures.LopezPousoSeguraBesselMidpoint` prove strict trapezoid and midpoint inequalities and the signs and strict monotonicity of the first two source sequences under explicit convexity, antiderivative and endpoint hypotheses. The Bessel identification, third sequence and limits remain to be formalized; repository-wide verification is pending.

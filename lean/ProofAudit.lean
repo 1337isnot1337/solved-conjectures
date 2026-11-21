@@ -9,6 +9,9 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BesselWeights.midpoint_strict,
+    `BesselWeights.E_source_formula,
+    `BesselWeights.e_decreasing_and_negative,
     `Hornak.graph_connected,
     `Hornak.vertex_card,
     `Hornak.connected_piece_has_arm,
