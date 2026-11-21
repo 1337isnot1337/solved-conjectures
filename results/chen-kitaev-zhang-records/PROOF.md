@@ -204,7 +204,7 @@ G_r(u)=(1+u)^2(T_r+T_{r+1})
 The key coefficient sign law is
 
 ```math
-G_r(R(t))\succeq0\quad\hbox{for every }r\ge0.             \tag{13}
+G_r(R(t))\succeq0\quad\text{for every }r\ge0.             \tag{13}
 ```
 
 ## 4. Exact certificates for the sign law
