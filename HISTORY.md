@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Ekhad–Zeilberger’s most unfair bet conjecture
+
+Proved the extremal asymptotic advantage for every word length from a variance lower bound for overlapping occurrences. The proof also classifies extremizers with and without a full-alphabet requirement. [Proof and checker](results/ekhad-zeilberger-unfair-bet/) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/219)
+
 ## 2026-11-21 — Kauers–Koutschan recurrence conjecture
 
 Added a complete proposed proof of the two published recurrences for A189281. Inclusion–exclusion and a rank-one complex Gaussian matrix give a Schur sum in derangement numbers. Exact polynomial substitution gives zero for every coefficient in both parity classes. [Proof and checker](results/kauers-koutschan-recurrence/) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/218)

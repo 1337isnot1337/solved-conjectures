@@ -2,6 +2,10 @@
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
 
+## Ekhad–Zeilberger’s most unfair bet conjecture
+
+Run `python results/ekhad-zeilberger-unfair-bet/verify.py`. It compares squared asymptotic advantages by integer cross-multiplication for all unordered pairs in the listed alphabet and word-length ranges. The all-length variance bound is in the [proof](../results/ekhad-zeilberger-unfair-bet/PROOF.md).
+
 ## Kauers–Koutschan recurrence conjecture
 
 With SymPy 1.14 installed, run `python results/kauers-koutschan-recurrence/verify.py`. The checker substitutes the exact Schur sum into both published operators over a rational polynomial ring, verifies the initial indices separately, and compares the count with all permutations through length eight. [Proof](../results/kauers-koutschan-recurrence/PROOF.md) · [Checker](../results/kauers-koutschan-recurrence/verify.py)

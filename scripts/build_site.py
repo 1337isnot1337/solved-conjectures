@@ -56,6 +56,7 @@ SOURCE_TITLES = {
 STATUS_LABEL_SLUGS = {
     "Johnson's conjecture": "johnson-pfaffian",
     "Brown–Mol's conjecture": "brown-mol",
+    "Ekhad–Zeilberger’s most unfair bet conjecture": "ekhad-zeilberger-unfair-bet",
     "Kauers–Koutschan recurrence conjecture": "kauers-koutschan-recurrence",
     "Kovalev's conjecture": "kovalev-hardy-duality",
     "Roos–Seiringer's conjecture": "roos-seiringer-kernel",
