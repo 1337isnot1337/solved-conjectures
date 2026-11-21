@@ -33,6 +33,8 @@ run_cmd do
     `BrownMol.P_degree,
     `BrownMol.finite_root,
     `GilmoreCrossingNesting.decodeMatching_injective_up_to_perm,
+    `GilmoreCrossingNesting.decodeMatching_surjective,
+    `GilmoreCrossingNesting.state_surjective,
     `GilmoreCrossingNesting.decode_down_of_reachable,
     `GilmoreCrossingNesting.closing_rank_counts,
     `GilmoreCrossingNesting.closing_rank_order,

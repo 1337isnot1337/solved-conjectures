@@ -795,6 +795,209 @@ theorem decodeMatching_injective_up_to_perm {u : ℕ} (p q : DecoratedPath u u)
 section Ring
 variable {S : Type*} [CommRing S]
 
+
+theorem remove_last_closed (t : ℕ) (opens : List ℕ) (arcs : List (ℕ × ℕ))
+    (hpart : (opens ++ arcEndpoints arcs).Perm (List.range (t+1)))
+    (hord : ∀ e ∈ arcs, e.1 < e.2) (hnot : t ∉ opens) :
+    ∃ (x : ℕ) (rest : List (ℕ × ℕ)),
+      arcs.Perm ((x,t)::rest) ∧ x < t ∧
+      ((x::opens) ++ arcEndpoints rest).Perm (List.range t) := by
+  have ht : t ∈ arcEndpoints arcs := by
+    have hm : t ∈ opens ++ arcEndpoints arcs := hpart.mem_iff.mpr (by simp)
+    exact (List.mem_append.mp hm).resolve_left hnot
+  obtain ⟨e, he, het⟩ := List.mem_flatMap.mp ht
+  have heord := hord e he
+  have hebound : e.2 < t+1 := by
+    have hem : e.2 ∈ opens ++ arcEndpoints arcs := by
+      apply List.mem_append.mpr
+      right
+      apply List.mem_flatMap.mpr
+      exact ⟨e, he, by simp⟩
+    simpa using hpart.mem_iff.mp hem
+  have he2 : e.2 = t := by
+    simp only [List.mem_cons, List.not_mem_nil, or_false] at het
+    rcases het with h | h
+    · omega
+    · exact h.symm
+  have he1 : e.1 < t := by omega
+  refine ⟨e.1, arcs.erase e, ?_, he1, ?_⟩
+  · simpa [← he2, Prod.eta] using List.perm_cons_erase he
+  · have hp := (List.perm_cons_erase he).flatMap (f := fun e : ℕ × ℕ => [e.1,e.2]) (fun _ _ => List.Perm.refl _)
+    change (arcEndpoints arcs).Perm ([e.1,e.2] ++ arcEndpoints (arcs.erase e)) at hp
+    have hfull := (hp.append_left opens).symm.trans hpart
+    rw [List.range_succ] at hfull
+    have hrearr : (e.2 :: ((e.1::opens) ++ arcEndpoints (arcs.erase e))).Perm
+        (opens ++ ([e.1,e.2] ++ arcEndpoints (arcs.erase e))) := by
+      have h₁ : (opens ++ e.1 :: e.2 :: arcEndpoints (arcs.erase e)).Perm
+          (e.1 :: opens ++ e.2 :: arcEndpoints (arcs.erase e)) := List.perm_middle
+      have h₂ : (e.1 :: opens ++ e.2 :: arcEndpoints (arcs.erase e)).Perm
+          (e.1 :: e.2 :: opens ++ arcEndpoints (arcs.erase e)) :=
+        (List.perm_middle (a := e.2)).cons e.1
+      exact (h₁.trans (h₂.trans (List.Perm.swap e.2 e.1 _))).symm
+    have hrange : (List.range t ++ [t]).Perm (e.2 :: List.range t) := by
+      simpa only [he2, List.append_nil] using
+        (List.perm_middle (a := t) (l₁ := List.range t) (l₂ := []))
+    have h := (hrearr.trans (hfull.trans hrange)).cons_inv
+    exact h
+
+
+theorem remove_last_open (t : ℕ) (opens : List ℕ) (arcs : List (ℕ × ℕ))
+    (hpart : (opens ++ arcEndpoints arcs).Perm (List.range (t+1)))
+    (hs : opens.Pairwise (· < ·)) (ht : t ∈ opens) :
+    ∃ rest, opens = rest ++ [t] ∧
+      (rest ++ arcEndpoints arcs).Perm (List.range t) := by
+  obtain ⟨pre, post, heq⟩ := List.append_of_mem ht
+  have hpost : post = [] := by
+    cases post with
+    | nil => rfl
+    | cons y ys =>
+      have hsort : t < y := by
+        have hp : (t :: y :: ys).Pairwise (· < ·) := by
+          rw [heq, List.pairwise_append] at hs
+          exact hs.2.1
+        exact (List.pairwise_cons.mp hp).1 y (by simp)
+      have hy : y ∈ opens ++ arcEndpoints arcs := by
+        apply List.mem_append.mpr
+        left
+        rw [heq]
+        simp
+      have hybound : y < t+1 := by simpa using hpart.mem_iff.mp hy
+      omega
+  refine ⟨pre, ?_, ?_⟩
+  · simpa [hpost] using heq
+  · rw [heq, hpost] at hpart
+    simp only [List.range_succ] at hpart
+    have hleft : (t :: (pre ++ arcEndpoints arcs)).Perm
+        ((pre ++ [t]) ++ arcEndpoints arcs) := by
+      simpa [List.append_assoc] using
+        (List.perm_middle (a := t) (l₁ := pre) (l₂ := arcEndpoints arcs)).symm
+    have hright : (List.range t ++ [t]).Perm (t :: List.range t) := by
+      simpa only [List.append_nil] using
+        (List.perm_middle (a := t) (l₁ := List.range t) (l₂ := []))
+    exact (hleft.trans (hpart.trans hright)).cons_inv
+
+
+theorem sorted_nodup_lt (xs : List ℕ) (hs : xs.Pairwise (· ≤ ·)) (hn : xs.Nodup) :
+    xs.Pairwise (· < ·) := by
+  rw [List.pairwise_iff_getElem] at hs ⊢
+  intro i j hi hj hij
+  have hne : xs[i] ≠ xs[j] := by
+    intro he
+    have := hn.getElem_inj.mp he
+    omega
+  have hle := hs i j hi hj hij
+  omega
+
+theorem state_surjective (u d : ℕ) (opens : List ℕ) (arcs : List (ℕ × ℕ))
+    (hdu : d ≤ u) (hlen : opens.length = u-d) (hal : arcs.length = d)
+    (hs : opens.Pairwise (· < ·))
+    (hpart : (opens ++ arcEndpoints arcs).Perm (List.range (u+d)))
+    (hord : ∀ e ∈ arcs, e.1 < e.2) :
+    ∃ p : Path u d, ∃ l : Labels p,
+      openEndpoints p l = opens ∧ (closedArcs p l).Perm arcs := by
+  have hmain : ∀ n : ℕ, ∀ u d : ℕ, u+d=n → ∀ (opens : List ℕ) (arcs : List (ℕ × ℕ)),
+      d ≤ u → opens.length = u-d → arcs.length = d → opens.Pairwise (· < ·) →
+      (opens ++ arcEndpoints arcs).Perm (List.range (u+d)) →
+      (∀ e ∈ arcs, e.1 < e.2) →
+      ∃ p : Path u d, ∃ l : Labels p, openEndpoints p l = opens ∧ (closedArcs p l).Perm arcs := by
+    intro n
+    induction n using Nat.strong_induction_on with
+    | h n ih =>
+      intro u d hun opens arcs hdu hlen hal hs hpart hord
+      cases n with
+      | zero =>
+        have hu : u = 0 := by omega
+        have hd : d = 0 := by omega
+        have ho : opens = [] := List.eq_nil_of_length_eq_zero (by omega)
+        have ha : arcs = [] := List.eq_nil_of_length_eq_zero (by omega)
+        cases u with
+        | succ u => omega
+        | zero =>
+          cases d with
+          | succ d => omega
+          | zero =>
+            subst opens
+            subst arcs
+            exact ⟨Path.empty, PUnit.unit, rfl, List.Perm.refl _⟩
+      | succ t =>
+        have htime : u+d=t+1 := by omega
+        have hpart' : (opens ++ arcEndpoints arcs).Perm (List.range (t+1)) := by simpa [htime] using hpart
+        by_cases ht : t ∈ opens
+        · obtain ⟨pre, hopen, hprev⟩ := remove_last_open t opens arcs hpart' hs ht
+          cases u with
+          | zero => omega
+          | succ u =>
+            have hdprev : d ≤ u := by rw [hopen] at hlen; simp at hlen; omega
+            have hlenprev : pre.length = u-d := by rw [hopen] at hlen; simp at hlen; omega
+            have hspre : pre.Pairwise (· < ·) := by
+              rw [hopen, List.pairwise_append] at hs
+              exact hs.1
+            have hsum : u+d=t := by omega
+            have hprev' : (pre ++ arcEndpoints arcs).Perm (List.range (u+d)) := by simpa [hsum] using hprev
+            obtain ⟨p, l, hl, ha⟩ := ih t (by omega) u d hsum pre arcs hdprev hlenprev hal hspre hprev' hord
+            refine ⟨Path.up p, l, ?_, ?_⟩
+            · simp only [openEndpoints, hl, hopen, hsum]
+            · simpa [closedArcs] using ha
+        · obtain ⟨x, rest, harcs, hxlt, hprev⟩ := remove_last_closed t opens arcs hpart' hord ht
+          cases d with
+          | zero => have := harcs.length_eq; simp [hal] at this
+          | succ d =>
+            have hduprev : d < u := by omega
+            have hsum : u+d=t := by omega
+            have hnodupall : ((x::opens) ++ arcEndpoints rest).Nodup :=
+              hprev.nodup_iff.mpr List.nodup_range
+            have hncons : (x::opens).Nodup := hnodupall.of_append_left
+            have hxnot : x ∉ opens := (List.nodup_cons.mp hncons).1
+            have hnopen : opens.Nodup := (List.nodup_cons.mp hncons).2
+            have hsle : opens.Pairwise (· ≤ ·) := List.Pairwise.imp (fun h => Nat.le_of_lt h) hs
+            obtain ⟨ys, i, hi, hys, hysp, hyse, hyserase⟩ := predecessor_insert opens x hxnot hsle hnopen
+            have hnys : ys.Nodup := hysp.nodup_iff.mpr hncons
+            have hslt : ys.Pairwise (· < ·) := sorted_nodup_lt ys hys hnys
+            have hlenprev : ys.length = u-d := by
+              have hh := hysp.length_eq
+              simp only [List.length_cons] at hh
+              omega
+            have halprev : rest.length = d := by
+              have hh := harcs.length_eq
+              simp only [List.length_cons] at hh
+              omega
+            have hprev' : (ys ++ arcEndpoints rest).Perm (List.range (u+d)) := by
+              have hp := (hysp.append_right (arcEndpoints rest)).trans hprev
+              simpa [hsum] using hp
+            have hordprev : ∀ e ∈ rest, e.1 < e.2 := by
+              intro e he
+              apply hord e
+              exact harcs.mem_iff.mpr (by simp [he])
+            obtain ⟨p, l, hl, ha⟩ := ih t (by omega) u d hsum ys rest (by omega)
+              hlenprev halprev hslt hprev' hordprev
+            have hp : (openEndpoints p l).Perm (x::opens) := by rw [hl]; exact hysp
+            obtain ⟨labels, hopen, hclosed⟩ := decode_down_of_reachable p l hduprev opens x
+              hxnot hsle hnopen hp
+            refine ⟨Path.down p hduprev, labels, hopen, ?_⟩
+            rw [hclosed]
+            exact (ha.cons (x,u+d)).trans (by simpa [hsum] using harcs.symm)
+  exact hmain (u+d) u d rfl opens arcs hdu hlen hal hs hpart hord
+
+
+theorem arcEndpoints_length (arcs : List (ℕ × ℕ)) :
+    (arcEndpoints arcs).length = 2 * arcs.length := by
+  induction arcs with
+  | nil => rfl
+  | cons e arcs ih => simp [arcEndpoints, List.flatMap_cons] at ih ⊢; omega
+
+theorem decodeMatching_surjective {u : ℕ} (arcs : List (ℕ × ℕ))
+    (hpart : (arcEndpoints arcs).Perm (List.range (2*u)))
+    (hord : ∀ e ∈ arcs, e.1 < e.2) :
+    ∃ p : DecoratedPath u u, (decodeMatching p).Perm arcs := by
+  have hal : arcs.length = u := by
+    have hh := hpart.length_eq
+    rw [arcEndpoints_length, List.length_range] at hh
+    omega
+  have hp : ([] ++ arcEndpoints arcs).Perm (List.range (u+u)) := by simpa [two_mul] using hpart
+  obtain ⟨p, l, ho, ha⟩ := state_surjective u u [] arcs (by omega) (by simp) hal (by simp) hp hord
+  exact ⟨⟨p,l⟩, ha⟩
+
+
 theorem inverseEntry_right_inverse (z : S) (q : ℕ → S) (a b : ℕ) :
     bidiagonalInverseEntry z q a b -
       bidiagonalInverseEntry z q a (b+1)*z*q (b+1) = if a = b then 1 else 0 := by
