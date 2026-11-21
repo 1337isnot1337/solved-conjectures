@@ -901,3 +901,5 @@ import Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.RecordNewtonPositi
 import Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.RecordPeak
 import Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.RecordTransport
 import Conjectures.CKZBridge
+import Conjectures.HornakGraph
+import Conjectures.HornakPacking

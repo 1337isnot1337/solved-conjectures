@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak Lean foundation
+
+Formalized the actual star-like graph, connected partitions, center-free arm localization and fixed-large-pieces capacity criterion. Strict compilation, a 31-theorem axiom audit and isolated kernel replay passed; endpoint arguments, reduction theorems and the full combined gate remain.
+
 ## 2026-11-21 — CKZ record conjectures formalized
 
 Lean proves original Conjectures 1 and 3 for actual separable-permutation classes, all four record statistics, and all stated lengths, including the singleton. It uses the credited, Apache-licensed source-pinned trureturing Conjecture 2 tail and permutation decomposition and direct Pell certificates for the remaining comparisons. Strict compilation, a 1,132-theorem axiom audit and isolated kernel replay passed; the combined repository gate is pending.

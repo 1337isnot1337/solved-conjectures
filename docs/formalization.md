@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak foundation, 21 November 2026
+
+Lean defines the actual star-like graph and connected partitions, proves that center-free connected pieces lie in one arm, and proves the exact allocation criterion for fixed placements of larger pieces. Endpoint cases, the cited AVD reductions and existence constructions remain. Strict compilation, a 31-theorem axiom audit and isolated replay passed; the combined gate is pending.
+
 ## CKZ record conjectures completed, 21 November 2026
 
 The original Conjectures 1 and 3 are proved for actual separable-permutation classes and all four record statistics, including singleton cases. The source-pinned, Apache-licensed trureturing dependency supplies the previously credited Conjecture 2 and permutation decomposition; this repository adds direct Pell certificates and the low-record comparison bridge. Strict compilation, a 1,132-theorem axiom audit and isolated kernel replay passed; the combined repository gate remains pending.

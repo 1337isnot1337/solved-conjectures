@@ -31,7 +31,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ |
 | [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | ✅ |
 | [Sonntag–Teichert conjecture](results/sonntag-teichert/) | ✅ |
-| [Horňák–Woźniak conjecture](results/hornak-wozniak/) | ⬜ |
+| [Horňák–Woźniak conjecture](results/hornak-wozniak/) | 🟡 |
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
 | [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |

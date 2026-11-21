@@ -8,7 +8,7 @@ The proof treats the first and last feasible counts of the larger part in the tw
 
 [Proof](PROOF.md) · [Literature check](NOVELTY.md) · [Research discussion](https://github.com/1337isnot1337/solved-conjectures/issues/67)
 
-**Lean status:** None.
+**Lean status:** partial. [`HornakGraph.lean`](../../lean/Conjectures/HornakGraph.lean) defines the actual star-like graph and connected partitions, proves connectivity and localizes center-free connected pieces to one arm. [`HornakPacking.lean`](../../lean/Conjectures/HornakPacking.lean) proves the exact finite allocation criterion once larger pieces are assigned. The endpoint arguments, cited reductions and existence constructions remain. Strict compilation, a 31-theorem axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
 
 The standard-library check compares the arithmetic tests to direct partition searches on small trees and checks the local transfer by direct bin allocation. It also checks the admissibility of instances from the explicit construction.
 
