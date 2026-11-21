@@ -68,7 +68,11 @@ linearly independent. The theorem is due to Sergeev and Veselov, Theorem 5.6
 of [arXiv:0707.3129v2](https://arxiv.org/pdf/0707.3129), published in
 *Communications in Mathematical Physics* 288 (2009), 653–675. Their second
 parameter is inverted relative to the ordinary Macdonald convention used
-here; rescaling the second finite alphabet gives the displayed substitution.
+here. More explicitly, set their parameters (q,t)=(u,v⁻¹) and their second
+alphabet y=V/v. Their coefficient +(1−u^k)/(1−v^(−k)) times p_k(y) becomes
+−(1−u^k)/(1−v^k) times p_k(V), exactly the displayed substitution. The
+genericity conditions hold over Q(u,v). The empty-alphabet cases a=0 or b=0
+follow from ordinary finite-variable specialization and Macdonald duality.
 For the standard parameter convention, compare Atai–Hallnäs–Langmann,
 [*Super-Macdonald Polynomials: Orthogonality and Hilbert Space Interpretation*](https://research.chalmers.se/publication/525449/file/525449_Fulltext.pdf),
 equations (31)–(38) and the discussion of the parameter convention.
@@ -214,8 +218,9 @@ matches the source's square formula for sizes 1,2,3 and q,t symmetry for
 every inspected partition. An exact screen found no counterexample among
 142 partitions of sizes 10–12 with rank at least 2 and 65 partitions of
 sizes 10–14 with rank at least 3; these sets overlap. These finite passes
-are not a proof of positivity, and the independent mathematical audit of
-the general divisibility argument is still pending.
+are not a proof of positivity. An independent mathematical and primary-source
+audit of the general divisibility argument passed; see AUDIT.md. The audit
+does not prove positivity of the quotient.
 
 Initial priority coverage includes the original full preprint, the published
 FPSAC extended abstract (SLC 93B.80, 2025), both author publication pages,

@@ -45,3 +45,18 @@ The proposed Sturm and Sturm-unimodality assertions are explicitly marked resolv
 ## Kellner's conjectures
 
 Excluded after independent derivation. Conjectures 1.4 and 4.6 of [arXiv:2509.05235v1](https://arxiv.org/html/2509.05235v1) follow from a closed formal generating function obtained by summing the exact defining recurrence. However, the separate reviewer located Yutaro Matsuno, [*A resolution of Kellner's conjectures on Wilson quotients*, arXiv:2607.10106v1](https://arxiv.org/abs/2607.10106), July 2026. Its abstract explicitly reports the generating function and the two resolutions. A calculation note is retained only as an excluded rediscovery. The prior hit came from a global GitHub search by author and conjecture, despite no relevant hit from the original arXiv identifier. This is a concrete reason to search both identifiers and names before publication.
+
+## Petersen–Zhuang's zigzag conjecture
+
+Excluded as a fresh target. Conjecture 6.1(a,b) on real-rootedness and log-concavity is explicitly covered by Ethan Torres, [arXiv:2611.22110v1](https://arxiv.org/html/2611.22110v1), 17 November 2026. The remaining part (c) concerns balanced simplicial complexes realizing the gamma vector, not consecutive interlacing. Wenle Shi and Lijie Wang, [*Balanced Simplicial Complexes for the gamma-Vectors of Zig-Zag Eulerian Polynomials*, arXiv:2611.24720](https://arxiv.org/abs/2611.24720), 18 November 2026, explicitly report a full proof of that part. The [external preregistration 31524](https://github.com/the-omega-institute/trureturing/issues/31524) has the exact original part (c), but its earlier status is not evidence against the later full-source resolution.
+
+## Other prior resolutions located during screening
+
+- Fel's universal numerical-semigroup polynomial conjecture is covered by [arXiv:2602.03716](https://arxiv.org/abs/2602.03716), with an exponential generating function proof. No claim is made here.
+- Golombic–Levine's Fibonacci-degree conjecture has a full public proof on [MathDB 373100](https://mathdb.com/p/373100). The length inequalities force the asserted degree recurrence; the proof's existence takes precedence over a stale open label.
+- Bourn–Erickson's earth-mover polynomial palindromicity and unimodality are already proved in the source [arXiv:2307.02652](https://arxiv.org/abs/2307.02652).
+- Shapiro's terminal stability assertion for quartic square-graph polynomials is refuted in the later version of [arXiv:2605.25743](https://arxiv.org/abs/2605.25743). The older conjecture version is not a fresh target.
+
+## Coulter–Do–Moskovsky's genus-asymptotic root conjecture
+
+Active research, issue 193. This is published Conjecture 3.15 of [arXiv:2308.04015](https://arxiv.org/abs/2308.04015), distinct from the all-genus bt-deformation already explored in issue 88. A general two-pole character expansion gives all predicted root limits and eventual strict monotone convergence for every profile. The note explicitly leaves monotonicity from genus zero unproved and withholds full-resolution classification pending source-scope review. No count has been added.
