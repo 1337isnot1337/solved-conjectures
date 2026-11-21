@@ -264,6 +264,10 @@ Added a complete proposed disproof of the explicit Lyapunov positivity conjectur
 
 Two independent source and mathematical reviews passed, together with 16 exact rational and symbolic checks. The [package](results/han-sabag-kostina-hassibi/) records the original source, related primary papers, public issue/archive searches and access limits. This subgroup's independently reviewed campaign tally is six; the earlier joint checkpoint retains its separate attribution. No Lean work was performed.
 
+## 2026-11-21 — Currie's conjecture on complexity 2n+1 and critical exponent
+
+Proved Conjecture 19 of Currie's *Words with factor complexity 2n+1 and minimal critical exponent* (Electron. J. Combin. 33(3), #P3.31), which is Conjecture 1 of arXiv:2507.09387v3: each of the ten listed morphic images of the fixed point of `[01,2,02]` or of its reversal has factor complexity `2n+1` and critical exponent exactly `2+1/(λ²-1)`, where `λ` is the real root of `x³-2x²+x-1`, and the same holds for the ten arXiv morphisms. The words reduce to three languages; insertion lemmas describe all their bispecial factors, which are ordinary, and the critical-exponent inequality is proved for 72 families by exact arithmetic in `Q(λ)`. The package contains the written proof, a standard-library verifier for the computer-assisted steps with brute-force cross-checks, and the scripts of one independent model referee pass, which found no error. The note is otherwise unrefereed; no Lean verification was performed.
+
 ## 2026-11-21 — Joint ten-family research checkpoint
 
 Recorded an [attributed joint ledger](research/2026-11-21-joint-results/) covering eleven complete proposed result packages, conservatively grouped into ten named conjecture families. Seven packages were developed by the current four-worker group and four by the parallel issue-156 group, with separate cross-reviews before inclusion. The two López Pouso–Segura packages count as one family. Full assertions, source scope, proof mechanisms, review records and priority limits are linked individually.

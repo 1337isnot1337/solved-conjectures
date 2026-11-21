@@ -171,6 +171,12 @@ Both complete arguments passed independent internal mathematical review. They ar
 | [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | For a primitive distance set of size `k` in `{5,6,7,8}`, the chromatic number is `k+1` exactly for `{1,...,k-1,ks}`, `{1,2,3,5,8}`, `{1,4,5,6,7}` and `{1,2,3,4,5,7,12}`. The classification is conditional on the repository's five- to eight-speed spectrum results. **Contributed by [@aadrianvv](https://github.com/aadrianvv).** | Not formalized | [Proof](results/oravcova-sotak/PROOF.md) · [Certificates](results/oravcova-sotak/certificates.json) · [Exact checks](results/oravcova-sotak/verify.py) |
 | [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | Johnson–Kaya–Matzke, arXiv Conjecture 2.1: for all `n>=2` and `1<=k<=n-1`, the chromatic numbers of the `k`-element distance graphs of the path `P_n` are exactly the integers from `ceil(n/(n-k))` to `k+1`. The missing lower bound comes from the bound `n-k` on independent sets. | Not formalized | [Proof](results/babai-spectrum-paths/PROOF.md) · [Brute-force checks](results/babai-spectrum-paths/verify.py) |
 
+## Combinatorics on words
+
+| Result | Finding | Lean | Evidence |
+| :--- | :--- | :---: | :--- |
+| [Currie's conjecture on complexity 2n+1 and critical exponent](results/currie-conjecture-19/) | Currie, Electron. J. Combin. 33(3) #P3.31, Conjecture 19 (arXiv Conjecture 1): each of the ten listed morphic images of the fixed point `G` of `[01,2,02]` or of its reversal has factor complexity `2n+1` and critical exponent exactly `μ = 2+1/(λ²-1)`, where `λ` is the real root of `x³-2x²+x-1`; the supremum is not attained. The proof reduces the words to three languages, describes all their bispecial factors and proves the final inequalities by exact arithmetic in `Q(λ)`. One independent model referee pass. | Not formalized | [Proof](results/currie-conjecture-19/PROOF.md) · [Exact checks](results/currie-conjecture-19/verify.py) |
+
 ## Number theory, packing and partitions
 
 | Result | Finding | Lean | Evidence |
