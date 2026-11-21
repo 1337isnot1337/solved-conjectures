@@ -1002,3 +1002,6 @@ import Conjectures.HornakGrouping
 import Conjectures.HornakGroupGraph
 import Conjectures.HornakPath
 import Conjectures.HornakMerge
+import Conjectures.HornakSmallBalance
+import Conjectures.HornakOneArm
+import Conjectures.HornakTwoArm

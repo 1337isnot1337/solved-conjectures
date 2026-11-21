@@ -39,6 +39,10 @@ The landing page previously described surjectivity and statistic preservation as
 
 Both modules are registered in the shared imports, required endpoints, and kernel list. Their complete result-level verification is distinct from the combined repository gate and hosted CI, which are not claimed by these local receipts.
 
+## Horňák–Woźniak short arms of length at most two, 21 November 2026
+
+Lean proves arbitrary vertex decomposability when the positive short arm has length at most two, assuming source tests 1 and 5. It also proves the unique-largest balancing step for a star with any number of arms. Strict compilation, a 958-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak short-arm subset and merging, 21 November 2026
 
 Lean realizes any positive partition with a sublist summing to the short arm by partitioning the remaining path, and reduces arbitrary partitions to those without a mergeable noncentral pair. These are partial steps toward the all-small branch. Strict compilation, a 945-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.

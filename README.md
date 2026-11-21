@@ -80,6 +80,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 Entries are ranked approximately by relative mathematical significance, weighing generality, connection to established problems, and the scope of the result. This editorial order does not imply independent verification or priority.
 
+Horňák–Woźniak progress: tripods with a positive short arm of length at most two are Lean-verified under source tests 1 and 5; the full result remains partial. See the [checked scope](results/hornak-wozniak/).
+
 Brown–Mol clarification: the listed result concerns **Conjecture 4.2 (the translated annulus)** from Brown and Mol's 2018 paper, not **Conjecture 4.1 (the origin-centered disk)**, proved by Jin, Ma, and Wang in [arXiv:2608.07898](https://arxiv.org/abs/2608.07898) (2026). The [result's source audit](results/brown-mol/SOURCES.md) compares the exact statements. The proposed Conjecture 4.2 disproof remains unrefereed.
 
 **Verification key**

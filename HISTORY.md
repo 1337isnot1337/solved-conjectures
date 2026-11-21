@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak short arms of length at most two
+
+Proved arbitrary vertex decomposability for tripods with positive short arm at most two under source tests 1 and 5, and established the unique-largest balancing step for general star graphs. Strict compilation, a 958-theorem full-chain axiom audit and isolated kernel replay passed. The general all-small case, four-arm reduction, existence constructions and combined gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak short-arm subset and merging
 
 Proved unconditionally that a positive partition with a sublist summing to the shortest arm is realizable, and reduced all other partitions to the case without a mergeable noncentral pair. Strict compilation, a 945-theorem full-chain axiom audit and isolated kernel replay passed. The remaining all-small case, four-arm reduction, existence constructions and combined gate remain.
