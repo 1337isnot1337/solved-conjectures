@@ -157,7 +157,7 @@ Taylor expansion of the logarithm of each centered characteristic function is co
 &\mathbb E\exp\left(
  i\frac{s}{\sqrt n}(T_n-m_n)
  +i\frac{w}{n^{3/2}}(Y_n-\mathbb EY_n)\right)\\
-&\hspace{20mm}\longrightarrow
+&\qquad\longrightarrow
 \exp\left[-\tfrac12(As^2+2Bsw+Dw^2)\right].
 \end{aligned}
 ```

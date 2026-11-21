@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-20 — Sagan–Swanson formula rendering
+
+Replaced an unsupported fixed-width TeX spacing command by standard spacing in the two Sagan–Swanson proof copies. The displayed formula is unchanged. The unsupported command blocked the native MathML site build after catalogue registration was repaired.
+
 ## 2026-11-20 — Repaired an omitted result registration
 
 Registered the existing `baricz-pogany-coefficients` package in the shared catalogue, root index and status map after its orphan landing page blocked the site build. The mathematical files and their stated scope were preserved. This is integration of previously published work from issue #112, not a new result of the Minc campaign.
