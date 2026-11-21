@@ -16,6 +16,13 @@ The partial-result entries contain their replay commands for the [Frankl generat
 
 ## Computational checks
 
+The [Chen–Kitaev–Zhang verifier](../results/chen-kitaev-zhang-records/verify.py) checks exact polynomial identities, regenerates the sixteen certificates in the credited tail argument, and checks the class conventions by enumerating separable permutations through length eight. The new result is the full written all-length proof. The [Zhu verifier](../results/zhu-jacobi-stirling/verify.py) independently constructs sparse integer polynomials from the original recurrence and expands the complete determinant by permutations. It verifies the disproof identity, including its negative coefficient. Both scripts use only the standard library.
+
+```bash
+python3 results/chen-kitaev-zhang-records/verify.py
+python3 results/zhu-jacobi-stirling/verify.py
+```
+
 The [Hoggatt disproof](../results/fang-zhang-zhao/) has a symbolic parameter identity, exact integer witnesses, and independent plane-partition enumeration. The [Hoggatt Sturm verifier](../results/fang-zhang-zhao-sturm/verify.py) checks the Jackson identity and MacMahon transfer and isolates roots exactly in small cases. The [reciprocal q-gamma verifier](../results/kvz-reciprocal-qgamma/verify.py) checks rational coefficient and determinant identities. These computations diagnose transcription and algebra errors; the unrestricted claims are established in the written proofs.
 
 ```bash

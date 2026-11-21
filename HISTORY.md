@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Chen–Kitaev–Zhang and Zhu conjectures
+
+Added complete proposed proofs of Chen–Kitaev–Zhang's original record Conjectures 1 and 3, and a complete disproof of Zhu's unweighted generalized Jacobi–Stirling conjecture. The record proof supplies three all-length coefficient comparisons and credits the previously public Conjecture 2 tail argument. Zhu's disproof is an exact polynomial determinant identity with a negative coefficient and an open real counterexample region.
+
+Both packages include separate internal mathematical audits, source and priority searches with stated limits, and standard-library exact replay scripts. They remain unrefereed. The two record assertions form one named package and are not split by statistic or length. Burcroff's conjecture was excluded after a September manuscript proving the stronger unbalanced-product theorem was found and checked; the independent reproof remains in research notes. No Lean work was performed. The site's non-formalized status registrations also cover the three Hoggatt and reciprocal-q-gamma packages added earlier today.
+
 ## 2026-11-21 — Hoggatt and reciprocal q-gamma conjectures
 
 Added three complete proposed resolutions from the named-conjecture research in [issue 156](https://github.com/1337isnot1337/solved-conjectures/issues/156). Fang–Zhang–Zhao's Sturm conjecture follows from geometric root separation, a Jackson derivative interlacing lemma, and an all-row Hadamard induction; the proof covers every real base greater than one and every integer Hoggatt parameter at least two. Their distinct universal infinite-log-convexity conjecture is false for every parameter at least four, by an exact parameter-polynomial factorization and two explicit integer calculations. Karp–Vishnyakova–Zhang's reciprocal q-gamma kernel is strictly sign regular at every order throughout the source's full base interval, by a q-binomial double series and two finite Cauchy–Binet expansions.
