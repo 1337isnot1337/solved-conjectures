@@ -22,3 +22,5 @@ python3 results/fang-zhang-zhao/independent_symbolic_check.py
 The independent finite check counts plane partitions directly and compares the counts with both product formulas. The symbolic checks verify the whole parameter-polynomial identity over the rationals. The written proof includes the sign argument and explicit integer witnesses. No Lean verification was performed.
 
 Status: complete proposed disproof, independently checked internally; unrefereed. No prior resolution was found in the documented search. Inaccessible later full texts remain explicit limits on the priority audit.
+
+The original universal conjecture is refuted in Lean by the exact m=6 witness: [`Conjectures.FangZhangZhao`](../../lean/Conjectures/FangZhangZhao.lean). The stronger all-m≥4 theorem is not yet formalized. The module and its kernel replay passed locally; the full repository gate remains pending.

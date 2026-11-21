@@ -9,6 +9,8 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FangZhangZhao.counterexample,
+    `FangZhangZhao.conjecture_false,
     `Loneliness.Modular.SupportSearch.Bits.Byte.byteCount_eq,
     `Loneliness.Modular.SupportSearch.Bits.Byte.byteTable_checked,
     `Loneliness.Modular.SupportSearch.Bits.Byte.countWithFuel_eq,

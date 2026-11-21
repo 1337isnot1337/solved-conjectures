@@ -1239,3 +1239,7 @@ This identifies the integer determinant factor in the earlier Gram/covolume comp
 The complete 20-module hosted gate passed at `a8577e5da31b851ce64333aa921b39c6623e0389` ([run and job](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44606981694/job/135853171450)). It checked all fresh strict sources, selected declaration values and types for 446 owned names including 12 private names, all 5 required theorem endpoints, and one exact stock-kernel target per module. The audit includes raw/private-name visibility; it is not a separate audit of every duplicate theorem body occurrence. The permitted axioms were only `propext`, `Classical.choice`, and `Quot.sound`. The unchanged raw receipt has SHA-256 `62b4ab2b3b0dcdaa55b210e5de3e8322e7e6b57201b05e085983d8ff0882afa2`. A merged accepted-package source, audit and kernel pass remains a separate obligation.
 
 [Preserved receipt](verification/rational-lattice-quotient-exact-44606981694/receipt.json).
+
+## Fang–Zhang–Zhao universal conjecture
+
+`Conjectures.FangZhangZhao.conjecture_false` checks the source binomial sum and its iterated log-convexity operator using the exact parameter m=6. The stronger all-m≥4 theorem remains unformalized. The module build, standard axiom check, and isolated kernel replay passed; the full repository gate is pending.

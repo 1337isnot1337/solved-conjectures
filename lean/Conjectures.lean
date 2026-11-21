@@ -1,3 +1,4 @@
+import Conjectures.FangZhangZhao
 import Conjectures.HadamardLegendreQuotientData
 import Conjectures.HadamardLegendreConstruction
 import Conjectures.War
