@@ -363,5 +363,6 @@
     "weighted-reflection-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "weighted-disk-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
-  "audit_source_sha256": "70aace832da2c45a1e99eeb6412b7147e1495145315800c6df37d6dea1405e0c"
+  "audit_source_sha256": "70aace832da2c45a1e99eeb6412b7147e1495145315800c6df37d6dea1405e0c",
+  "resource_metrics_note": "In sequential wrappers, RUSAGE_CHILDREN.ru_maxrss is a cumulative high-water mark. It is an upper bound for an individual invocation, not necessarily that invocation's own peak."
 }
