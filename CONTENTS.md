@@ -22,6 +22,12 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 | --- | --- | --- | --- |
 | [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | Complete proposed proof of the full root-radius conjecture, including all positive weights. Every zero lies in a sharper centered disk; the outer radius is attained. A complex-parameter exclusion and Grace–Walsh–Szegő polarization extend the credited earlier equal-parameter result to arbitrary independent parameters. Two internal mathematical reviews passed. | Not formalized | [Proof](results/vishnyakova-root-radius/PROOF.md) · [Source audit](results/vishnyakova-root-radius/SOURCE_AUDIT.md) · [Root review](results/vishnyakova-root-radius/ROOT_REVIEW.md) · [Analysis review](results/vishnyakova-root-radius/ANALYSIS_REVIEW.md) · [Checks](results/vishnyakova-root-radius/verify.py) · [Issue 182](https://github.com/1337isnot1337/solved-conjectures/issues/182) |
 
+## Gauss–Legendre quadrature
+
+| Result | Finding | Lean | Evidence |
+| :--- | :--- | :---: | :--- |
+| [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | Complete proposed disproof of the exact upper inequalities in published Conjectures 3 and 7. An exact common witness refutes both; a positive fourth-order correction proves failure of Conjecture 3 for every sufficiently large even degree. The leading asymptotic constant and separate Bessel-limit results are unaffected. Independent internal mathematical review passed. | Not formalized | [Proof](results/lopez-pouso-segura-quadrature/PROOF.md) · [Source audit](results/lopez-pouso-segura-quadrature/SOURCES.md) · [Independent review](results/lopez-pouso-segura-quadrature/AUDIT.md) · [Issue 184](https://github.com/1337isnot1337/solved-conjectures/issues/184) |
+
 ## Bessel zeros and weights
 
 | Result | Finding | Lean | Evidence |

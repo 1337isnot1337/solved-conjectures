@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — López Pouso–Segura's node conjecture
+
+Added a complete proposed disproof of the published strict node and partial-moment upper inequalities, Conjectures 3 and 7. The exact two-point Gauss–Legendre rule supplies one common counterexample. A controlled expansion from the Legendre equation proves a positive fourth-order correction at the smallest positive node for every sufficiently large even degree, so an eventual interpretation of the exact node bound also fails.
+
+The two linked assertions count together. Existing general node/weight expansions are credited; the leading asymptotic constant and the separate Bessel-limit package are not contradicted. Independent internal mathematical review and exact symbolic consistency checks passed. The source audit records both search engines, public proof archives, global issue histories and a related inaccessible full text. The work remains unrefereed, and no Lean work was performed.
+
 ## 2026-11-21 — Corrected Fang–Zhang–Zhao Sturm priority
 
 Removed the Sturm package from the result catalogue and active status/verifier registrations after locating the full earlier proof in [TT issue 18758](https://github.com/the-omega-institute/trureturing/issues/18758), posted on 18 October 2026. Its all-real-base, all-Hoggatt-parameter theorem and six-step Jackson/Hadamard proof already settle the exact conjecture. The later incomplete Lean formalization does not affect this ordinary mathematical priority determination.
