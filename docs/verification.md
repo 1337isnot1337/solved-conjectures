@@ -20,6 +20,16 @@ The [Ferreira–Simon stochastic-order proof](../results/ferreira-simon-stochast
 
 The [Simon stable-infimum proof](../results/simon-stable-infimum/PROOF.md) is also analytic. Its [independent audit](../results/simon-stable-infimum/AUDIT.md) verifies the source normalization, prior Mellin transform, Brownian endpoint, positivity and parameter monotonicity of the logarithmic Lévy kernels, exponential integrability and independent mean-one multiplier. Conditional Jensen gives the full convex order. There is no numerical verifier or workflow test for this argument; the [source audit](../results/simon-stable-infimum/SOURCES.md) documents priority separately.
 
+## Computer-assisted proof of Lyon's conjecture
+
+The [Lyon package](../results/lyon-gamma-median/) proves the monotonicity assertion on the entire positive half-line. Its exact certificate is an essential part of the proof. Analytic bounds cover the two tails; the [written interval criterion](../results/lyon-gamma-median/PROOF.md) uses known convexity of the gamma median to extend each certified inequality throughout a real cell.
+
+```bash
+python3 results/lyon-gamma-median/verify.py
+```
+
+The standard-library verifier independently checks 4258 rational median brackets and 4256 cells covering exactly the interval from one tenth to seven. Every sign assertion uses 128-bit-scaled integer intervals with outward rounding, convergent series and explicit signed remainder bounds. The JSON data are proposed brackets, not trusted quantile values. Both independent full replays passed with minimum margin 38316221661991044002598352939471477 divided by 2^128. Typical replay time is one to two minutes. The package has no Lean formalization; the unformalized marker does not erase the essential role of the exact certificate.
+
 ## Computational checks
 
 The [Sun–Zhao checker](../results/sun-zhao-iterated-ratios/check.py) uses only exact integers and rational arithmetic. It regenerates the source sequence, checks two binomial representations, compares the two 582535-bit products, certifies a strictly negative fourteenth logarithmic difference with an explicit series remainder, and directly applies twelve ratio iterations. The [proof](../results/sun-zhao-iterated-ratios/PROOF.md) identifies why the violated inequality belongs to the conjectured retained sequence.

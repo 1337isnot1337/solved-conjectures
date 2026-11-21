@@ -12,6 +12,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Verification |
 | :--- | :---: |
+| [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |
 | [Sun–Zhao's conjecture](results/sun-zhao-iterated-ratios/) | ⬜ |
 | [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | ⬜ |
 | [Gröchenig's problem](results/grochenig-zero-density/) | ⬜ |
@@ -76,7 +77,7 @@ Entries are ranked approximately by relative mathematical significance, weighing
 - ✅ Fully Lean-verified.
 - 🟢 Partially Lean-verified, with a computer-assisted proof.
 - 🟡 Partially Lean-verified.
-- ⬜ No computer-assisted proof or Lean verification yet.
+- ⬜ No Lean verification. Any essential computer-assisted proof is identified in the catalogue and result package.
 - ★ Outside confirmation: an independent external review is documented at the result level. This is separate from Lean verification and is not journal peer review.
 
 For the 🟢 Lonely Runner results, the written proofs reduce the classification to finitely many cases. Exact computations exhaust those cases, with some results drawing on archived searches from cited papers. Completing the Lean proofs requires formalizing the remaining reductions and cited bounds and checking the remaining search certificates in Lean. The [verification guide](docs/verification.md#computational-checks) gives the replay commands, and the [Lean status report](docs/lean-status.md) gives the remaining steps for each result.

@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Lyon's conjecture
+
+Added a complete proposed computer-assisted proof of the strict decrease of the transformed gamma median for every positive real shape. Analytic arguments prove the ranges at most one tenth and at least seven. On the intervening compact interval, exact outward-rounded integer arithmetic certifies 4258 median brackets and 4256 covering cells. A written convexity argument extends each strict bound to every real point in its cell; this is not a sample-based monotonicity inference.
+
+Two independent mathematical/code reviews and complete exact replays passed. The [package](results/lyon-gamma-median/) includes all enclosure formulas, untrusted bracket proposals, the verifier and a current source audit. The target remains explicitly open in the original author's 10 November 2026 manuscript; the search found no prior settlement within its recorded limits. This subgroup's reviewed tally is eight. The verification legend now describes the unformalized marker as no Lean verification, while essential computer-assisted proofs are stated explicitly in the catalogue and packages. No Lean work or partial Lean credit was added.
+
 ## 2026-11-21 — Strict joint ten-family checkpoint
 
 Updated the [joint ledger](research/2026-11-21-joint-results/) after the complete Gröchenig mathematical and priority cross-review. This selected review contains twelve proposed result packages: seven developed by the current four-worker group and five by the parallel issue-156 group. Excluding the corrected-source Novelli–Thibon package leaves eleven direct-source packages; grouping the two López Pouso–Segura packages leaves ten named conjecture/problem families. Novelli–Thibon remains an additional documented result. Later packages in the parallel group's live checkpoint, including Han–Sabag–Kostina–Hassibi, remain outside this selected review.

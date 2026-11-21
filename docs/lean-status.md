@@ -29,11 +29,12 @@ never additional Lean axioms.
 
 The README uses ✅ for complete formalization of the stated result, 🟢 for
 partial formalization with a computer-assisted proof, 🟡 for partial
-formalization, and ⬜ when a result has neither a computer-assisted proof nor
-Lean verification.
+formalization, and ⬜ when a result has no Lean verification. Essential computer-assisted
+proofs are documented separately in the catalogue and result package.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| Lyon's conjecture | Not formalized | Complete proposed computer-assisted proof for every positive real shape. Analytic tails and an essential exact integer certificate covering 4256 real intervals establish the derivative sign. Two independent mathematical/code reviews and full certificate replays passed. No Lean theorem or partial Lean credit is claimed. |
 | Sun–Zhao's conjecture | Not formalized | Complete proposed disproof of the full iterated-ratio conjecture at an allowed retained block. Exact integer and rational certificates plus two independent source/mathematical reviews pass. The conjecture's operator, parity and truncation are explicit; neighboring assertions are not claimed. No Lean formalization. |
 | Han–Sabag–Kostina–Hassibi's conjecture | Not formalized | Complete proposed disproof of the full matrix optimization conjecture by a rational feasible point, an exhaustive lower bound for every sparse assignment and an open family of strict gaps. Two independent mathematical/source reviews and 16 exact diagnostics passed. No claim about a separate general communication-code problem or Lean formalization. |
 | Gröchenig's problem | Not formalized | Complete proposed infinite counterexample to the upper Beurling-density comparison in Problem 4.12, with absolutely summable coefficients. Two internal mathematical reviews and exact block-algebra diagnostics passed. The separate lower-density inequality remains undecided here. No Lean formalization is claimed. |
