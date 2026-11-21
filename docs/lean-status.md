@@ -47,7 +47,7 @@ proofs are documented separately in the catalogue and result package.
 | Han–Sabag–Kostina–Hassibi's conjecture | Complete source formalization; merged-package gate pending | Lean proves the original matrix feasibility, rational witness, exact sparse infimum and all four individual assignment infima, plus the uniform gap throughout the stated open gain interval. Standalone strict source compilation, all-owned axiom audit and stock-kernel replay passed; the merged-package gate is pending. |
 | Gröchenig's problem | Not formalized | Complete proposed infinite counterexample to the upper Beurling-density comparison in Problem 4.12, with absolutely summable coefficients. Two internal mathematical reviews and exact block-algebra diagnostics passed. The separate lower-density inequality remains undecided here. No Lean formalization is claimed. |
 | López Pouso–Segura's node conjecture | Partial | Lean checks the two Legendre roots, standard weight formula, exact cubic quadrature, and the two failed inequalities; the degree-two polynomial and its derivative are connected to mathlib’s shifted Legendre polynomial. Strict source compilation, one-module kernel replay and endpoint axiom checks passed. Lean also verifies the explicit perturbation functions, derivatives, differential equations final coefficient algebra, and the deduction of the scaled limit and eventual violation from three separate factor approximations with vanishing second-order remainders. Controlled ODE and root asymptotics, the gamma-ratio expansion, those factor approximations and the full repository gate remain pending. |
-| Vishnyakova's conjecture | Not formalized | Complete proposed all-degree, all-positive-weight outer-radius proof with a stronger centered-disk theorem for arbitrary independent parameters. Two internal mathematical reviews and exact algebraic diagnostics passed. Earlier equal-parameter work is credited. No Lean formalization is claimed. |
+| Vishnyakova's conjecture | Weighted theorem complete; original sampled class pending | Lean proves the centered disk and exact attained outer radius for the actual weighted transform class, for every positive degree and weight. Seven modules passed strict compilation, the complete axiom audit, and stock-kernel replay. The original sampled-sequence formulation and combined package gate remain outside this checkpoint. |
 | Novelli–Thibon's conjecture | Not formalized | Complete proposed proof of the intended monomial-product Conjecture 5.7 for all partitions and independent parameters, plus the adjacent all-size hook-coefficient formula. Two internal mathematical reviews and exact convention checks passed. The source index correction and priority limits are explicit; Schur positivity and general traces are not claimed. |
 | López Pouso–Segura's conjectures | Partial | Lean proves all three signs, strict monotonicity and exact limits conditionally on the stated finite mixture, phase ODE, endpoint, zero/weight asymptotics and two resolvent expansions. It also proves the reference kernel integral and the dominated-convergence and comparison steps linking those inputs to the limits. The Bessel identification, special-function inputs, reference Euler–Maclaurin remainder and full repository gate remain open. |
 | Simon's stable-infimum conjecture | Not formalized | Complete proposed proof of the full parameterwise convex order, including the Brownian endpoint. The independent review checks the prior Mellin transform, increasing logarithmic Lévy measures, exponential integrability and conditional Jensen argument. No numerical or finite-case inference is used. |
@@ -105,6 +105,28 @@ proofs are documented separately in the catalogue and result package.
 | Seven-speed spectrum | Partial | Realization, the 27 displayed exceptional values, and sharp candidate bounds are checked. The critical-plane classification and large-norm family bridge are registered under explicit `LonelyRunnerBound 5` and primitive tight-six classification hypotheses. Unconditional tuple exhaustiveness remains open. |
 | Eight-speed spectrum | Partial | All three displayed product families are classified and evaluated within those families, including both exceptional `s=1` values. All 17 displayed sporadic values are checked. The norm bound and exhaustive classification outside the families remain open. |
 | Eleven-through-fourteen-runner equality | Partial | The displayed equality directions have their exact global values. Norm cutoffs and prime selection are checked under explicit smaller-dimensional runner bounds. Those bounds, modular exhaustiveness and uniqueness remain open. |
+
+## Complete weighted root-radius theorem
+
+For every positive real weight and positive degree, Lean proves Vishnyakova's
+centered-disk bound and the exact greatest root modulus. The formal definition
+uses the actual normalized falling-factorial transform. The proof verifies
+its basis action, inverse, and preservation of degree.
+
+The seven-module closure proves polarization directly by polar derivatives.
+It also constructs the recurrence vector used in the tridiagonal argument.
+Neither argument remains an assumed published theorem. The extremal polynomial
+belongs to the formal class and attains the bound.
+
+Strict source checks, an audit of all 238 declarations, and stock-kernel replay
+passed. The audit covers 202 theorem declarations, 75 private declarations,
+and 26 required endpoints. Only the three standard Lean axioms occur.
+See the [receipt](verification/lean-vishnyakova-20261121/weighted-receipt.json)
+and [complete inventory](verification/lean-vishnyakova-20261121/weighted-audit-validated.json).
+
+The original totally nonnegative sampled-sequence class is outside this
+checkpoint. Its completed source proof is undergoing a separate full audit
+and replay. The combined repository gate and hosted validation remain pending.
 
 ## Formalizations of previously resolved results
 

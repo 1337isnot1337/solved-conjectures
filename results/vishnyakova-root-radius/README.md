@@ -20,4 +20,25 @@ The proof extends an earlier equal-parameter tridiagonal argument to complex upp
 
 The original source is Anna Vishnyakova, *Polynomials interpolated totally positive sequences*, arXiv:2607.06207v1, Open Problem 6.2. The weighted source is her *Polynomially Deformed Normalized Pochhammer Sequences Having Generating Functions With Only Real Non-positive Zeros*, arXiv:2608.03723v1, Open Problem 7.2. Full source links and exact scope are in the audit.
 
-**Lean status:** none.
+## Lean verification
+
+Lean verifies the complete weighted transform-class theorem for every
+positive weight and positive degree. The formalization uses the actual
+normalized falling-factorial transform, including its inverse and degree
+identity. It proves the centered disk, the exact greatest root modulus,
+and attainment by an extremal polynomial.
+
+The formal proof establishes polarization directly through polar derivatives.
+Its tridiagonal argument constructs a recurrence vector. These arguments
+discharge the mathematical dependencies of the weighted theorem.
+
+The seven modules passed strict source checks, the complete declaration and
+axiom audit, and independent stock-kernel replay. The audit covers 238
+declarations, including 202 theorem declarations and 75 private declarations.
+All 26 required endpoints passed. See the
+[verification receipt](../../docs/verification/lean-vishnyakova-20261121/weighted-receipt.json)
+and [source](../../lean/Conjectures/VishnyakovaTransform.lean).
+
+The original sampled-sequence class is outside this checked checkpoint.
+Its separate formal proof is undergoing final checks. The combined package
+gate and hosted validation also remain pending.

@@ -1,0 +1,367 @@
+{
+  "status": "passed",
+  "base_commit": "2408ae05dc42ccba13d3e2a82dde96c554471673",
+  "completed_utc": "2026-11-21T16:18:49.068353+00:00",
+  "roots": [
+    "Conjectures.VishnyakovaTransform"
+  ],
+  "imported_project_modules": [
+    "Conjectures.VishnyakovaRootRadius",
+    "Conjectures.VishnyakovaPolarization",
+    "Conjectures.VishnyakovaBinomial",
+    "Conjectures.VishnyakovaReflection",
+    "Conjectures.VishnyakovaJacobi",
+    "Conjectures.VishnyakovaDisk",
+    "Conjectures.VishnyakovaTransform"
+  ],
+  "owned_modules": [
+    "Conjectures.VishnyakovaRootRadius",
+    "Conjectures.VishnyakovaPolarization",
+    "Conjectures.VishnyakovaBinomial",
+    "Conjectures.VishnyakovaReflection",
+    "Conjectures.VishnyakovaJacobi",
+    "Conjectures.VishnyakovaDisk",
+    "Conjectures.VishnyakovaTransform"
+  ],
+  "required_theorems": [
+    "VishnyakovaRootRadius.reciprocal_segment",
+    "VishnyakovaRootRadius.reciprocal_segment_sqrt",
+    "VishnyakovaRootRadius.rayleigh_disk_bound",
+    "VishnyakovaRootRadius.ClosedUpperStable.polar_derivative",
+    "VishnyakovaRootRadius.realPolarValue_ne_zero",
+    "VishnyakovaRootRadius.binomial_three_term",
+    "VishnyakovaRootRadius.coefficientPairing_product_ne_zero",
+    "VishnyakovaRootRadius.risingProduct_one",
+    "VishnyakovaRootRadius.sourceCoefficient_step",
+    "VishnyakovaRootRadius.monicDiagonalValue_recurrence",
+    "VishnyakovaRootRadius.source_reflection",
+    "VishnyakovaRootRadius.source_real_root_interval",
+    "VishnyakovaRootRadius.source_extremal_zero",
+    "VishnyakovaRootRadius.jacobi_rayleigh_identity",
+    "VishnyakovaRootRadius.jacobi_disk_bound",
+    "VishnyakovaRootRadius.source_diagonal_root_disk",
+    "VishnyakovaRootRadius.source_root_disk",
+    "VishnyakovaRootRadius.source_root_modulus",
+    "VishnyakovaRootRadius.sourceTransform_normalizedFalling",
+    "VishnyakovaRootRadius.sourceTransform_inverse_eval",
+    "VishnyakovaRootRadius.sourceTransform_natDegree",
+    "VishnyakovaRootRadius.weighted_root_disk",
+    "VishnyakovaRootRadius.weighted_root_modulus",
+    "VishnyakovaRootRadius.weighted_radius_isGreatest",
+    "VishnyakovaRootRadius.weighted_radius_sup",
+    "VishnyakovaRootRadius.unit_weight_radius_sup"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/VishnyakovaRootRadius.lean": "ac02f89e4d744fff06c43aefd82fe797cbb62383ec4a6fa88e97f9e772750726",
+    "lean/Conjectures/VishnyakovaPolarization.lean": "54b36052fe2bcb10e4b2138a6e36cee74f845908716a09ce12505389405cc591",
+    "lean/Conjectures/VishnyakovaBinomial.lean": "82a889b7e8b3406e9af6530a4696989325b6f4fc3b3db54e8e74a9d23559cdd3",
+    "lean/Conjectures/VishnyakovaReflection.lean": "65729373d755cb6d222c5be3d89b965baf3a29d3d563b70bf6f102a52ee343c7",
+    "lean/Conjectures/VishnyakovaJacobi.lean": "bd10f937809a461bb27aedff98e950a1c3891a83694dee2cb222cfb274281ec8",
+    "lean/Conjectures/VishnyakovaDisk.lean": "905e07aacf07795e5342e39ca0296263bfc755d83b711bbf4c69a37ccb857387",
+    "lean/Conjectures/VishnyakovaTransform.lean": "49e5b4c47aece435ce6bb49a5c44d5244eac34ed3b1ddbe920a5952ab145bf31",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "scripts/audit_lean_owned_extension.py": "6b520a346907fe9e8a7c025daa9a9a831ec8188aab26014443bb760f557f3bca",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c"
+  },
+  "artifact_sha256": {
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaRootRadius.olean": "e4669054ea5f3bff4744ac09578f5728af44037d71a0a67cb8d968ef38c9fcda",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaRootRadius.olean.private": "57ccefbe3d7771bba37eec9f0bbfe49d658bc593259023cbf4ef742314d4ca9c",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaRootRadius.olean.server": "de89a3fc67307ae78dbe1e99da830a95a7a82b4400a59e374f24fec8bab0107d",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaPolarization.olean": "5b7eca5a0f32659a2a1ff0b993880d08e63cd86cb0da3dacc21bbb83ee706307",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaPolarization.olean.private": "f4ae33f2bac8b6e62d72826f08b1366a02d829de28bf226e54ebb0fc001203e6",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaPolarization.olean.server": "56eac0c6dbf4b6a2167374487a1759460886f70054359db8c04700a02c89b8a4",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaBinomial.olean": "1250491a39642ee130ec503d24575a5d0b370f13565bb8678097e45267868f25",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaBinomial.olean.private": "ce15844fa240f065dbdffd2e39d12a0e536d277877ced14745e18a62b26f7ba7",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaBinomial.olean.server": "b7b13f0ce027d5fd8c5c621005d75b711408aee64474b026af8e5090f77e6100",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaReflection.olean": "19fdf523999b3758b9865a8cd77864a4cc29493aa1d916d591559b9c343b517f",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaReflection.olean.private": "c13d4ed5b60ba84f6635933d890cd5e8c8450f0f0978e768016b1c519f7cb84c",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaReflection.olean.server": "2fb3e7d8de897581286ca6135eaf35dd51a78a5868e967fc4d0392cd9ad472df",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaJacobi.olean": "b3522eebe79f0e643c3370402ad336be7c27ff61edf6fcec1ae620e8421013c4",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaJacobi.olean.private": "06d92f20e57fb545309f26edbd4cc9f5407f5a95877502b1121979b135170ae7",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaJacobi.olean.server": "d371d6493009fc6a1403bbfe1f2d90155206e0ed43af5b608bc121eded6ba680",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaDisk.olean": "781868921852f75e49c88fe21ca22348d83a8329f87d3ddc001f32eaa91761b2",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaDisk.olean.private": "03bdd40ac8b2c5884e290ebe46621d2576805036e98d1dd3affb7cd7dcc97ea6",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaDisk.olean.server": "47755f7774331d4291466d34a090b423bf4a9d87b1695d2632ce17b580643181",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaTransform.olean": "0866c01d5b3d318473ef7f44f5345fe6fad6d0d3d58fa98319182652ada02a38",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaTransform.olean.private": "0a17a4eca1e6edb2838dd7d13f807935aceec045835b97c24068330051fff2e8",
+    "lean/.lake/build/lib/lean/Conjectures/VishnyakovaTransform.olean.server": "0fd1f07a5b10cd782b818e8adfb0277229356a23040912de222f8f66fe4bb646"
+  },
+  "pinned_executable_sha256": {
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
+  },
+  "sources_and_objects_unchanged_since_frozen_inventory": true,
+  "all_owned_declarations_audited": true,
+  "exact_owned_raw_private_visibility": true,
+  "exact_imported_project_closure": true,
+  "axiom_audit": {
+    "tag": "passed",
+    "imported_modules": 7,
+    "owned_modules": 7,
+    "declarations": 238,
+    "theorems": 202,
+    "private_declarations": 75,
+    "raw_declarations": 238,
+    "required_theorems": 26,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "combined_repository_gate": false,
+  "hosted_validation_claimed": false,
+  "commands": [
+    {
+      "label": "strict-source",
+      "module": "Conjectures.VishnyakovaRootRadius",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "Conjectures/VishnyakovaRootRadius.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "weighted-rootradius-source.log",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M4500",
+          "-DwarningAsError=true",
+          "Conjectures/VishnyakovaRootRadius.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 34.164688916999694,
+        "maxrss_kib": 756492,
+        "user_seconds": 10.02465,
+        "system_seconds": 9.491412
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.VishnyakovaPolarization",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "Conjectures/VishnyakovaPolarization.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "weighted-polarization-source.log",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M4500",
+          "-DwarningAsError=true",
+          "Conjectures/VishnyakovaPolarization.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 54.04103038999983,
+        "maxrss_kib": 1031192,
+        "user_seconds": 8.630507,
+        "system_seconds": 12.182887999999998
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.VishnyakovaBinomial",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "Conjectures/VishnyakovaBinomial.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "weighted-binomial-source.log",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M4500",
+          "-DwarningAsError=true",
+          "Conjectures/VishnyakovaBinomial.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 129.89859608500046,
+        "maxrss_kib": 1243264,
+        "user_seconds": 10.040453999999999,
+        "system_seconds": 36.966326
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.VishnyakovaReflection",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "Conjectures/VishnyakovaReflection.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "weighted-reflection-source.log",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M4500",
+          "-DwarningAsError=true",
+          "Conjectures/VishnyakovaReflection.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 160.98372491199916,
+        "maxrss_kib": 1243264,
+        "user_seconds": 14.268607,
+        "system_seconds": 50.10920999999999
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.VishnyakovaJacobi",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "Conjectures/VishnyakovaJacobi.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "weighted-jacobi-source.log",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M4500",
+          "-DwarningAsError=true",
+          "Conjectures/VishnyakovaJacobi.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 37.48181478100014,
+        "maxrss_kib": 1243264,
+        "user_seconds": 7.699485000000003,
+        "system_seconds": 10.976541000000012
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.VishnyakovaDisk",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "Conjectures/VishnyakovaDisk.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "weighted-disk-source.log",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M4500",
+          "-DwarningAsError=true",
+          "Conjectures/VishnyakovaDisk.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 195.91395268900033,
+        "maxrss_kib": 1243264,
+        "user_seconds": 11.399439999999998,
+        "system_seconds": 61.821729000000005
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.VishnyakovaTransform",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "Conjectures/VishnyakovaTransform.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "weighted-transform-source.log",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M4500",
+          "-DwarningAsError=true",
+          "Conjectures/VishnyakovaTransform.lean"
+        ],
+        "returncode": 0,
+        "wall_seconds": 124.22934894900027,
+        "maxrss_kib": 1243264,
+        "user_seconds": 11.157747999999998,
+        "system_seconds": 36.38196599999998
+      }
+    },
+    {
+      "label": "all-owned-axioms",
+      "working_directory": "lean",
+      "log": "weighted-audit.log",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "/workspace/scratch/17b12d3ee06e/VishnyakovaWeightedOwnedAudit.lean"
+      ],
+      "returncode": 0,
+      "wall_seconds": 12.397247173000324,
+      "user_seconds": 8.804875000000001,
+      "system_seconds": 3.436306,
+      "maxrss_kib": 1604220
+    },
+    {
+      "label": "stock-kernel",
+      "working_directory": "lean",
+      "log": "weighted-kernel.log",
+      "command": [
+        "python3",
+        "../scripts/replay_lean.py",
+        "--root",
+        "Conjectures.VishnyakovaTransform"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1014.3750789130004,
+      "user_seconds": 60.608692000000005,
+      "system_seconds": 416.321649,
+      "maxrss_kib": 2000916
+    }
+  ],
+  "scope": {
+    "proved": "For every positive real beta and positive degree n, the actual normalized falling-factorial transform class has all complex roots in the centered disk of radius n-1+beta/2. Its greatest root modulus is n-1+beta, and that value is attained.",
+    "not_claimed": [
+      "The original sampled totally nonnegative Toeplitz class in this seven-module checkpoint.",
+      "A combined repository gate or hosted validation pass."
+    ]
+  },
+  "strict_source_provenance": "Fresh source-only strict checks preserve the frozen serialized objects. The independent checker replays those unchanged objects.",
+  "log_sha256": {
+    "weighted-audit.log": "07082e70179691eaabb34328218da0a729316d844e51859c55e003b0cbe9155a",
+    "weighted-binomial-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "weighted-jacobi-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "weighted-kernel.log": "dcdc9f51b2fcf2e327b0712eb3c7ea175087cc0ffa4c10fb19fbf8caf68e2881",
+    "weighted-polarization-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "weighted-transform-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "weighted-rootradius-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "weighted-reflection-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "weighted-disk-source.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "audit_source_sha256": "70aace832da2c45a1e99eeb6412b7147e1495145315800c6df37d6dea1405e0c"
+}

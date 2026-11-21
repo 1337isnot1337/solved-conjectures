@@ -1,3 +1,10 @@
+import Conjectures.VishnyakovaRootRadius
+import Conjectures.VishnyakovaPolarization
+import Conjectures.VishnyakovaBinomial
+import Conjectures.VishnyakovaReflection
+import Conjectures.VishnyakovaJacobi
+import Conjectures.VishnyakovaDisk
+import Conjectures.VishnyakovaTransform
 import Conjectures.CircularIndexConnectivity
 import Conjectures.CircularIndexBase
 import Conjectures.CircularIndexAtoms

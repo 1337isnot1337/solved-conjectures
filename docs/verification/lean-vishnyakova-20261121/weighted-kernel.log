@@ -1,0 +1,9 @@
+Replaying all 7 local project modules imported by Conjectures.VishnyakovaTransform, including that root (prefix Conjectures)
+replaying Conjectures.VishnyakovaDisk
+replaying Conjectures.VishnyakovaRootRadius
+replaying Conjectures.VishnyakovaReflection
+replaying Conjectures.VishnyakovaBinomial
+replaying Conjectures.VishnyakovaTransform
+replaying Conjectures.VishnyakovaJacobi
+replaying Conjectures.VishnyakovaPolarization
+PASS: the entire local import closure of Conjectures.VishnyakovaTransform completed the pinned kernel replay

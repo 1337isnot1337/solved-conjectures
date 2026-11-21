@@ -2,6 +2,19 @@
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
 
+## Vishnyakova weighted local verification
+
+The weighted root-radius theorem has a checked seven-module closure.
+The [receipt](verification/lean-vishnyakova-20261121/weighted-receipt.json)
+records source and object hashes, strict source commands, the complete axiom
+audit, and stock-kernel replay. The audit covers all private declarations
+and all 26 required endpoints. Fresh strict source checks leave the frozen
+objects unchanged; the independent checker replays those same objects.
+
+This checkpoint proves the full weighted transform-class theorem. It does
+not certify the original sampled-sequence class, the combined repository
+gate, or hosted validation.
+
 ## Ekhad–Zeilberger’s most unfair bet conjecture
 
 Run `python results/ekhad-zeilberger-unfair-bet/verify.py`. It compares squared asymptotic advantages by integer cross-multiplication for all unordered pairs in the listed alphabet and word-length ranges. The all-length variance bound is in the [proof](../results/ekhad-zeilberger-unfair-bet/PROOF.md).

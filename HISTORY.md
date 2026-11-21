@@ -1,5 +1,16 @@
 # History
 
+## 2026-11-21 — Vishnyakova weighted theorem verified in Lean
+
+Proved the centered-disk bound and exact attained outer radius for every
+positive weight and positive degree in the source transform class.
+The formalization constructs the actual transform and proves the required
+polarization and tridiagonal arguments. Strict source checks, an audit of
+238 owned declarations, and exact stock-kernel replay passed.
+Registered seven modules and 26 required endpoints. The original sampled
+class is undergoing separate checks, so the overall badge remains partial.
+The combined repository gate and hosted validation remain pending.
+
 ## 2026-11-21 — Ekhad–Zeilberger’s most unfair bet conjecture
 
 Proved the extremal asymptotic advantage for every word length from a variance lower bound for overlapping occurrences. The proof also classifies extremizers with and without a full-alphabet requirement. [Proof and checker](results/ekhad-zeilberger-unfair-bet/) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/219)

@@ -15,6 +15,25 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Vishnyakova weighted root-radius theorem, 21 November 2026
+
+The actual source transform sends each normalized falling factorial to its
+corresponding monomial. Lean proves its inverse and preservation of degree.
+For every positive weight and positive degree, the transform root condition
+implies the centered-disk bound. Lean also proves the exact greatest root
+modulus and its attainment.
+
+The seven registered modules contain the polarization and tridiagonal
+arguments. They assume no unformalized stability theorem. All sources passed
+strict compilation. The complete audit checked 238 declarations, including
+202 theorem declarations, 75 private declarations, and 26 required endpoints.
+The unchanged pinned checker replayed the exact seven-module closure.
+See the [receipt](verification/lean-vishnyakova-20261121/weighted-receipt.json).
+
+The result badge remains partial until the original sampled-sequence class
+passes its separate checks. The combined package gate and hosted validation
+are not claimed by this local receipt.
+
 ## Circular-index main theorems and regular examples, 21 November 2026
 
 `CircularIndex.theorem_one` proves the full infinite construction for every `g ≥ 2`: the literal graph on `ZMod (6*g+1)` is `4g`-regular, stays connected after deletion of any fewer than `4g` vertices, and has real circular chromatic index `4g+2/3`. `theorem_two`, `graph31_complete`, and `graph33_complete` prove the full degree/connectivity/index assertions for the three listed finite circulants.
