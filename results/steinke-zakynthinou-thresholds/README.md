@@ -1,0 +1,65 @@
+# Steinke–Zakynthinou's agnostic threshold problem
+
+Complete proposed proof of the separately rewarded proper-threshold
+problem in Section 3 of Steinke and Zakynthinou's COLT 2020 open-problem
+paper. The proof passed two independent internal mathematical reviews;
+the fresh primary-source audit found no earlier exact resolution. It is
+not Lean-verified or externally refereed, and no prize has been submitted,
+accepted, or paid.
+
+## Result
+
+For every positive sample size, the construction gives one measurable,
+distribution-independent randomized learner returning a finite closed
+real threshold. Its original conditional mutual information is less
+than 21 nats for every iid distribution, including arbitrary atoms and
+label noise. On every fixed labeled sample its expected empirical
+excess is at most $`2056/\sqrt n`$. The single constant 4096 safely fits
+both bounds in the exact sponsor statement, including conversion to bits.
+
+The proof combines a randomly shifted tree on a folded rank cycle,
+an adjacent-sample information comparison, private tags with endpoint
+rounding, and an adaptive rank code that converts the result to a proper
+threshold without changing its training predictions.
+
+This is one paid mathematical target. The proper and improper variants
+are not counted separately. The general VC-dimension conjecture remains
+open in this work.
+
+## Evidence
+
+- [Complete proof](PROOF.md).
+- [Exact statement, current offer, and prior-art audit](PRIOR_AUDIT.md).
+- [Independent shifted-tree and atom review](TREE_REVIEW.md).
+- [Independent properization review](PROPERIZATION_REVIEW.md).
+- [Coordinator's separate full-proof review](ROOT_REVIEW.md).
+- [Consolidated proof composition check](COMPOSITION_REVIEW.md).
+- [Exact finite diagnostic](verify.py) and [its recorded result](verification.json).
+- [Original reviewed draft bytes and hashes](reviewed-sources.json).
+- [Research coordination](https://github.com/1337isnot1337/solved-conjectures/issues/223).
+
+## Reproduce the supplementary check
+
+```sh
+python3 results/steinke-zakynthinou-thresholds/verify.py --max-n 6
+```
+
+The standard-library script checks all small replacement pairs and label
+assignments through sample size six, including cycle folds, paired leaf
+costs, and exact inactive-node cancellation. The all-size information
+and accuracy claims use the written proof, not an extrapolation from
+these checks. The repository workflow runs this same diagnostic.
+
+## Prize and verification status
+
+The [primary offer](https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf)
+states US$20 for the proper real-threshold problem and US$15 for an
+improper learner, with optional bonuses. No expiry or withdrawal was
+found in the checked sources. Current sponsor acceptance is not known;
+no bonus, award, or payment is claimed.
+
+The verification badge is unformalized. A future Lean proof would need
+to formalize the actual randomized algorithm, its measurable output,
+the original paired-sample CMI, the uniform information argument, and
+the samplewise accuracy bound. Checking only the finite alignment lemma
+would not formalize this theorem.

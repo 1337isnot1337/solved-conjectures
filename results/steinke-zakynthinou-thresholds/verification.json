@@ -1,0 +1,51 @@
+{
+  "result": "PASS",
+  "max_n": 6,
+  "totals": {
+    "sample_pairs": 4092,
+    "aligned_leaves": 8001024,
+    "inactive_nodes": 677552,
+    "aligned_nodes": 2266688,
+    "maximum_leaf_cost_difference": 3,
+    "maximum_child_gap_difference": 3
+  },
+  "per_n": [
+    {
+      "n": 1,
+      "sample_pairs": 4,
+      "aligned_nodes": 64,
+      "inactive_nodes": 16
+    },
+    {
+      "n": 2,
+      "sample_pairs": 24,
+      "aligned_nodes": 1536,
+      "inactive_nodes": 288
+    },
+    {
+      "n": 3,
+      "sample_pairs": 96,
+      "aligned_nodes": 13824,
+      "inactive_nodes": 3456
+    },
+    {
+      "n": 4,
+      "sample_pairs": 320,
+      "aligned_nodes": 87040,
+      "inactive_nodes": 22272
+    },
+    {
+      "n": 5,
+      "sample_pairs": 960,
+      "aligned_nodes": 422400,
+      "inactive_nodes": 120576
+    },
+    {
+      "n": 6,
+      "sample_pairs": 2688,
+      "aligned_nodes": 1741824,
+      "inactive_nodes": 530944
+    }
+  ],
+  "scope": "Exact finite audit only; the uniform theorem needs its written proof."
+}

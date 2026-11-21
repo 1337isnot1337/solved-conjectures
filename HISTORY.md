@@ -1,5 +1,21 @@
 # History
 
+## 2026-11-21 — Proper agnostic thresholds with constant original CMI
+
+Added a complete proposed proof of the separately rewarded threshold
+case of Steinke–Zakynthinou Conjecture6. A shifted folded-rank tree,
+private-tag rounding, and an adaptive rank-code conversion give a proper
+finite real threshold with constant original information for every iid
+distribution and the required empirical accuracy on every sample.
+The complete argument passed two independent internal reviews and a fresh
+primary-source audit found no exact prior resolution. The finite checker
+audits indexing only; the theorem is not Lean-verified. No sponsor
+acceptance, prize submission, bonus, or payment is claimed. This is one
+target, with the proper and improper offers treated as alternatives.
+[Proof and record](results/steinke-zakynthinou-thresholds/) ·
+[Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/223)
+
+
 ## 2026-11-21 — Gröchenig result withdrawn after checked prior resolution
 
 The upper-density assertion in Gröchenig’s Problem 4.12 was already refuted by Alexanja Senke’s public September 2026 manuscript. The [correction record](research/bounty-continuation-2026-11-21/grochenig-prior-resolution/) contains two independent mathematical reconstructions, root’s check, the exact hypothesis comparison, signed-source chronology, and the separate direct-payment eligibility audit. The earlier proof gives coefficient sign-change densities 1/Q and infinite upper zero density for every positive integer Q; Q=2 strictly covers the repository’s upper-density counterexample. The separate lower-density and central-dominance sections of the prior manuscript were not certified by this review.

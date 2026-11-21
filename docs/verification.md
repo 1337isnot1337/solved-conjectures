@@ -1,5 +1,9 @@
 # Verification
 
+## Steinke–Zakynthinou threshold proof
+
+The [complete written theorem](../results/steinke-zakynthinou-thresholds/PROOF.md) passed independent tree, properization, and coordinator reviews. Run `python3 results/steinke-zakynthinou-thresholds/verify.py --max-n 6` for the supplementary exact folded-indexing and inactive-node checks. These finite checks do not prove the uniform CMI or accuracy theorem. The [receipt](../results/steinke-zakynthinou-thresholds/verification.json) records the locally completed run; hosted workflow validation is separate. No Lean verification is claimed.
+
 Gröchenig’s upper-density result is excluded after a [checked earlier resolution](../research/bounty-continuation-2026-11-21/grochenig-prior-resolution/). Its independent proof and verification receipts remain in [immutable Git history](https://github.com/1337isnot1337/solved-conjectures/blob/628270dc5e07d7924de265d2ac1beee4b5634b80/docs/verification/lean-grochenig-20261121/receipt.json). The reused KVZ results remain active.
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)

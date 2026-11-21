@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Steinke–Zakynthinou threshold theorem: not formalized
+
+The [complete proposed proper-threshold theorem](../results/steinke-zakynthinou-thresholds/) has an internally reviewed written proof and exact finite boundary checks. No Lean module or theorem endpoint has been added. Formalization must retain all distributions, all fixed input samples, the actual randomized learner, original paired-pool CMI, and the finite proper output. The general VC conjecture is not claimed.
+
 Gröchenig’s upper-density result is excluded after a [checked earlier resolution](../research/bounty-continuation-2026-11-21/grochenig-prior-resolution/). Its independent proof and verification receipts remain in [immutable Git history](https://github.com/1337isnot1337/solved-conjectures/blob/628270dc5e07d7924de265d2ac1beee4b5634b80/docs/verification/lean-grochenig-20261121/receipt.json). The reused KVZ results remain active.
 
 The shared package is in [`lean`](../lean/).
