@@ -35,3 +35,5 @@ The latest arXiv statement is the verified target. The associated 2020 journal a
 Research discussion: [issue 198](https://github.com/1337isnot1337/solved-conjectures/issues/198).
 
 21 November 2026.
+
+Lean checks the source recurrence and the exact retained-block ratio counterexample in [`Conjectures.SunZhao`](../../lean/Conjectures/SunZhao.lean). The module and its kernel replay passed locally; the full repository gate remains pending.
