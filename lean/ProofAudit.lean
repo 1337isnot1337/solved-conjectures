@@ -9,6 +9,12 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BrownMol.root_near_of_log_derivative,
+    `BrownInteger.re_bound,
+    `BrownInteger.im_bound,
+    `BrownInteger.derivative_bound,
+    `BrownMol.P_degree,
+    `BrownMol.finite_root,
     `GilmoreCrossingNesting.row_recurrence,
     `Sonntag.build_realizes_two_stars,
     `Sonntag.build_remaining_vertices_isolated,

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Brown–Mol finite polynomial root in Lean
+
+Checked the r=200 polynomial factor has a nonzero root inside the forbidden disk via an exact Gaussian-integer certificate and a general log-derivative bound. Strict standalone source compilation, all-owned axiom audit and stock-kernel replay passed. The tree/subtree-polynomial identification, infinite family and combined gate remain pending.
+
 ## 2026-11-21 — Johnson's conjecture
 
 Added the [complete proposed proof](results/johnson-pfaffian/) of Conjecture 7.1 for all positive nonincreasing log-convex kernels, all finite even ordered real configurations, and all perfect matchings. The argument proves a stronger matrix theorem for products of circular interval factors. Replacing a wrapped interval by its complement changes only positive vertex factors, so Johnson's existing additive-interval endpoint inequality applies after any cyclic cut. Adjacent-pair deletion proves all noncrossing matching bounds, and the credited uncrossing reduction gives all matchings. The source's endpoint theorem, rainbow bound, and earlier nonvanishing resolution are not claimed as new.

@@ -837,3 +837,6 @@ import Conjectures.LonelinessRationalLatticeQuotient
 import Conjectures.ZhuJacobiStirling
 import Conjectures.HanSabagCounterexample
 import Conjectures.SonntagTeichert
+import Conjectures.BrownMolRootBound
+import Conjectures.BrownMolIntegerCert
+import Conjectures.BrownMolFiniteRoot

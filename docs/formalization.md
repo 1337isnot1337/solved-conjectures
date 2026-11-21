@@ -31,6 +31,10 @@ The Karp–Vishnyakova–Zhang Bessel-ratio unimodality entry is no longer an ac
 
 `Conjectures.SonntagTeichert` proves the finite tournament theorem via blocker duality and representative counting. The forward oriented-graph two-star classification and an explicit realization with arbitrary additional isolated vertices are checked. The standalone strict source check, all-owned axiom audit and stock-kernel replay passed; the combined repository gate is pending. See [issue 70](https://github.com/1337isnot1337/solved-conjectures/issues/70).
 
+## Brown–Mol finite-root checkpoint
+
+`Conjectures.BrownMolFiniteRoot` proves the explicit r=200 polynomial factor has a nonzero root inside the forbidden disk using a checked log-derivative bound and exact integer arithmetic. The literal tree/subtree-polynomial identification and infinite family remain. Strict standalone source checks, all-owned axiom audit and stock-kernel replay passed; the combined gate is pending. See [issue 210](https://github.com/1337isnot1337/solved-conjectures/issues/210).
+
 ## Coordination, 18 November 2026
 
 The four active lanes in [issue 1](https://github.com/1337isnot1337/solved-conjectures/issues/1) are:
