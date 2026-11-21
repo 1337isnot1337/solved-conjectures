@@ -385,3 +385,9 @@ The remaining structural gap begins with connected support spanning at
 least three rows and three columns. This proves no complete P8 boundary
 classification, no unrestricted C34 chord inequality and no new full
 numbered-list resolution.
+
+## Complex bipartite supports and graph Laplacians
+
+The [strong bipartite proof](orbit-bounds/bipartite_strong.md) establishes the self-comparison with a diagonal-product factor on every complex PSD bipartite support, including equality. The [occupation proof](orbit-bounds/orthonormal_families.md) also gives an absolute Marcus bound for packets refining two orthonormal families. The [graph Laplacian proof](orbit-bounds/graph_laplacians.md) answers Pant and Singh's separate all-simple-graphs question, including all principal submatrices, by charging cycles to nonbacktracking first returns. Neither result covers arbitrary PSD inputs to Minc C30. [GitHub checkpoint](https://github.com/1337isnot1337/solved-conjectures/issues/139#issuecomment-7058557631)
+
+The [packet degree bound](orbit-bounds/packet_degree.md) includes every path and cycle for C9. The [transitive rank bound](intransitive/transitive_rank.md) and [two-block parity bound](intransitive/two_alternating_blocks.md) apply to P2. The exact replays and source qualifications accompany the proofs. The unrestricted tally remains zero. [GitHub checkpoint](https://github.com/1337isnot1337/solved-conjectures/issues/139#issuecomment-7058311211)
