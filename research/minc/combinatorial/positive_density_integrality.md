@@ -43,3 +43,9 @@ $$P_n(D)=\det(I-D^TD)^{-1/2}+o(1)\ge\exp(\|D\|_F^2/2)+o(1).$$
 In the untouched bottom-right block $W$ of $A$, the mass is at least $n-2s$. Each entry is an integer multiple of $1/k$, so $\sum W_{ij}^2\ge(n-2s)/k$. Subtracting $1/n$ from each entry gives
 $$\|D\|_F^2\ge (n-2s)/k-2+(1-s/n)^2=u_0-o(1).$$
 The actual localized matrix $U=J_n+H$ is doubly stochastic. Uniform stability gives $P_n(H)\ge\exp(\|H\|_F^2/32000000)$. Its limit inferior is at least $\exp(\delta^2/32000000)>1$. Using (1) contradicts the binary competitor $P_n(B)\le e^{u_0/2}+o(1)$. Thus the maximum normalized entry of every minimizing sequence tends to zero. The cap-preserving switch in [the diffuse theorem](diffuse_integrality.md) now removes any repeated entry and proves the assertion.
+
+## An explicit check of the factor
+
+Consider a single exceptional row and column with intersection $a$, all cross entries $c=(1-a)/m$, and outside block $(1-c)T$ of order $m$. Here $T$ is doubly stochastic. The permanent is exactly
+$$a(1-c)^m\operatorname{per}T+c^2(1-c)^{m-1}\sum_{i,j}\operatorname{per}T(i\mid j).$$
+This follows by separating permutations that use the exceptional cell from those crossing both ways. For the baseline $T=J_m$ the ratio to $d_{m+1}$ tends to $e^a(1-a+a^2)$, which remains finite even at the isolated vertex $a=1$. For even $m$, the [exact check](verify_localized_factor.py) uses the two-class matrix $T_{ij}=(1+b h_i h_j)/m$ with equally many $h_i=\pm1$. It checks 48 border formulas directly. For $a=2/3,b=1/2$ the ratio of the actual permanent to the baseline border permanent times $\operatorname{per}(T)/d_m$ is $0.992218847$ at $m=8$ and $0.999623187$ at $m=128$, computed as rational numbers before rounding. This checks the factor normalization on a family with both a localized entry and a diffuse singular value.
