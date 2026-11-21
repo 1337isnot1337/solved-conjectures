@@ -107,3 +107,8 @@ Global GitHub issue searches were performed separately from code search, because
 Global code search is subject to a separate rate limit. Its failed requests are not negative evidence. Several follow-up attempts encountered renewed HTTP 429 responses. No successful global code-search result is claimed. The successful repository-specific searches and global issue searches are recorded separately.
 
 A separate Bessel-specific global issue query returned only the present work and unrelated Karp–Vishnyakova–Zhang and Karp conjectures (TT issues 25199 and 23075). Their Segura references concern modified-Bessel ratios and Ferrers inequalities; the matching passages were read and do not discuss these Gauss–Legendre bounds.
+
+
+## Additional independent corpus audit
+
+A second reviewer recorded [an additional corpus and issue priority audit](../../research/2026-11-21-lopez-pouso-segura-independent-priority/AUDIT.md), including complete available directory inventories, five full nearby Bessel manuscripts, and eight further global issue queries. No earlier exact resolution was found in that scope. The note preserves the unavailable GitHub code search, unexported corpus entries, and inaccessible Morel full text as explicit limits.
