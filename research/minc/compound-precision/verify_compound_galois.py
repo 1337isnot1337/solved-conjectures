@@ -35,19 +35,16 @@ def check_crossings():
     assert simplify(slopes[1] - slopes[0] - 2/low) == 0
 
 
-def main():
-    matrix = Matrix([[23, 2, 3, 5], [2, 7, 0, 0], [3, 0, 11, 0], [5, 0, 0, 17]])
-    polynomials = [Poly(compound(matrix, k).charpoly().as_expr()) for k in (1, 2, 3)]
-    primes = (5, 11, 13, 17, 31, 367, 487, 613)
+def verify_product(matrix, degrees, witnesses):
+    polynomials = [Poly(compound(matrix, k).charpoly().as_expr()) for k in degrees]
+    primes = sorted({p for triple in witnesses for p in triple})
     with catch_warnings():
         simplefilter("ignore", SymPyDeprecationWarning)
         patterns = {
             p: tuple(factor_degrees(f, p) for f in polynomials) for p in primes
         }
 
-    for k, (full, fixing_one, isolated) in enumerate(
-        [(11, 5, 367), (17, 13, 613), (31, 13, 487)]
-    ):
+    for k, (full, fixing_one, isolated) in enumerate(witnesses):
         degree = polynomials[k].degree()
         assert patterns[full][k] == (degree,)
         assert patterns[fixing_one][k] == (1, degree - 1)
@@ -55,10 +52,22 @@ def main():
                        for length in cycles if length % 2 == 0]
         assert even_cycles == [(k, 2)]
 
-    check_crossings()
     for p, cycles in patterns.items():
         print(f"{p:3d}  {cycles}")
+
+
+def main():
+    check_crossings()
+    matrix = Matrix([[23, 2, 3, 5], [2, 7, 0, 0], [3, 0, 11, 0], [5, 0, 0, 17]])
+    verify_product(matrix, (1, 2, 3), [(11, 5, 367), (17, 13, 613), (31, 13, 487)])
     print("Verified S4 x S6 x S4 and the two crossing slopes.")
+
+    prescribed = Matrix([[441, 21, 21, 21], [440, 105, 0, 0],
+                         [729, 0, 252, 0], [1309, 0, 0, 420]])
+    characteristic = Poly(prescribed.charpoly().as_expr())
+    assert all(characteristic.eval(21 * t) == 0 for t in (3, 9, 16, 30))
+    verify_product(prescribed, (2, 3), [(59, 19, 103), (19, 13, 367)])
+    print("Verified the four prescribed integer eigenvalues and S6 x S4.")
 
 
 if __name__ == "__main__":
