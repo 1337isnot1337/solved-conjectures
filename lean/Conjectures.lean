@@ -962,3 +962,6 @@ import Conjectures.HornakRegularSource
 import Conjectures.HornakReductionArithmetic
 import Conjectures.HornakListTiling
 import Conjectures.HornakReductionGraph
+import Conjectures.HornakAssignment
+import Conjectures.HornakSubset
+import Conjectures.HornakCoarsen

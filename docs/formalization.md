@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak tripod subset criterion, 21 November 2026
+
+Lean proves the middle-window subset criterion in both directions when all parts exceed the shortest arm, reserves a largest part in the center at the assignment level, and proves the coarsening step with that central part unchanged. The remaining Barth reductions and existence constructions remain. Strict compilation, a 777-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak arm assignment extraction, 21 November 2026
 
 Lean extracts a capacity-respecting arm assignment for the noncentral classes of any connected star-graph partition. This supports the Barth reduction but does not yet prove it. Strict compilation, a 746-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.

@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Hornak.partition_from_assignment,
+    `Hornak.partition_assigns_with_largest_center,
+    `Hornak.tripod_middle_subset_iff,
+    `Hornak.refine_noncentral_parts,
     `Hornak.partition_hosts,
     `Hornak.hosted_classes_fit,
     `Hornak.partition_induces_arm_packing,
