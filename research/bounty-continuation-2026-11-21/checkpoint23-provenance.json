@@ -1,0 +1,128 @@
+{
+  "checkpoint": 23,
+  "date": "2026-11-21",
+  "base_main": "b41d39de1fe5fcd4b06d5cde4bd422ece7d97592",
+  "new_full_solutions": 0,
+  "campaign_proposed_full_solutions": 1,
+  "accepted_or_paid_awards": 0,
+  "publication_changes": [
+    "Normalize math delimiters, macros, and relative links.",
+    "Replace the modal note introduction with the final prior-coverage and no-award status; mathematical proof unchanged."
+  ],
+  "files": [
+    {
+      "source": "agents/demath_zzz/langford-cross-validation/weighted-unanimity-certificate.md",
+      "source_sha256": "56c16f3c7fe961818a48fc199e42bb099e29934242e23dbcaeafccc4a33b4208",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/weighted-unanimity-certificate.md",
+      "published_sha256": "e0fafbe6ca1eb6aa6cd076361be32f80585dca479357a4b128698807cfa81dc3"
+    },
+    {
+      "source": "agents/demath_zzz/langford-cross-validation/agreement-is-not-a-binomial-test.md",
+      "source_sha256": "4f6a7194c1d435116e9b09ee0dc42cf7657e42fe363b0aff2ababb9fe1f515be",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/agreement-is-not-a-binomial-test.md",
+      "published_sha256": "9441b3eec41a72159ea394b3e835a0203598545c94ac93345ef315e359c66b7b"
+    },
+    {
+      "source": "agents/demath_zzz/langford-cross-validation/zero-error-sharpness.md",
+      "source_sha256": "b0a6920605bead8030a5956caddc9e969ed6b59b3f2ae2e1212bd0c1043f6694",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/zero-error-sharpness.md",
+      "published_sha256": "b0a6920605bead8030a5956caddc9e969ed6b59b3f2ae2e1212bd0c1043f6694"
+    },
+    {
+      "source": "agents/demath_zzz/langford-cross-validation/adaptive-modal-independent-review.md",
+      "source_sha256": "488ed1fe41eab72ad39820ba783493c2cb184949f8f1400c27a3cdb1ebcc274a",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/MODAL_REVIEW.md",
+      "published_sha256": "cf3726fab2e330bf59fc73b56807267cf353236ee0d4cf7ca92c5cbe1215e044"
+    },
+    {
+      "source": "agents/demath_zzz/langford-cross-validation/cohen-cvcrc-scope.md",
+      "source_sha256": "cef9d6c9ca0151aff564147f1ae7153f256cba36b1575aeae2c383d32ea6c44f",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/cohen-cvcrc-scope.md",
+      "published_sha256": "cef9d6c9ca0151aff564147f1ae7153f256cba36b1575aeae2c383d32ea6c44f"
+    },
+    {
+      "source": "agents/demath_zzz/langford-cross-validation/prior-coverage-correction.md",
+      "source_sha256": "16440fa53d04496831c2e3a6cb0480a612a70552e7b87008e383988cf517e5e8",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/prior-coverage-correction.md",
+      "published_sha256": "16440fa53d04496831c2e3a6cb0480a612a70552e7b87008e383988cf517e5e8"
+    },
+    {
+      "source": "agents/demath_zzz/langford-cross-validation/target-and-prior-audit.md",
+      "source_sha256": "bc8c94fd09eb3c9ae886ef140f62ec11525a18311d901afc8dfc908cf7aa6678",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/target-and-prior-audit.md",
+      "published_sha256": "4c0bd538cfe2ab675d77963dbbc4a2d5e57c40efc88644a7c542368825f61d76"
+    },
+    {
+      "source": "agents/conjectures/langford-weighted-unanimity-independent-review.md",
+      "source_sha256": "4396f1b0d39333cf60bd71dee2ccddb1ab211fcb66792c0135692fc598a274ca",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/INDEPENDENT_REVIEW.md",
+      "published_sha256": "a323036cfe57faaf3b78c4c7698882fab08e5ed29b0b1e2bb807a84095dd3d61"
+    },
+    {
+      "source": "agents/root749/langford-weighted-certificate-review.md",
+      "source_sha256": "f384faae76e92072373958fcf2a27b46a65584c1890354baeb2fd842edc4e90f",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/ROOT_REVIEW.md",
+      "published_sha256": "0b9a3ac19836218fa678744af9422982639e0e756686b80d52a3156b7811b08b"
+    },
+    {
+      "source": "agents/root749/langford-adaptive-modal-certificate.md",
+      "source_sha256": "9a7099e6b2469f3e05a8c1885233e8fb51461858996950e9f6e683128ba21e4e",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/adaptive-modal-certificate.md",
+      "published_sha256": "44a8f58df8b4fd8cc32850e2e2729be7d6e40f8fd0a2cb97191898adda9fcca5"
+    },
+    {
+      "source": "agents/root749/langford-conformal-e-prior-review.md",
+      "source_sha256": "aa58f6efce579beb749932a7ec526f33b1adecd421c89d23967863cc6252cbf2",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/conformal-e-prior-review.md",
+      "published_sha256": "aa58f6efce579beb749932a7ec526f33b1adecd421c89d23967863cc6252cbf2"
+    },
+    {
+      "source": "agents/root749/langford-older-modal-prior-review.md",
+      "source_sha256": "ad8a87184ec4e37ecc600e637fc4a4942d06b563756d50005ca2abf5fb7d036b",
+      "published_path": "research/bounty-continuation-2026-11-21/langford-cross-validation/older-modal-prior-review.md",
+      "published_sha256": "ba8bbba4a42359999209c414ba6382c2fb36b5f5e4b765bb96de54df05758526"
+    },
+    {
+      "source": "agents/other_paid/hazan_livni2018/target-and-prior-audit.md",
+      "source_sha256": "db6f18da00b50ce0bc38222fe9e4466ebcab6cc99ffacbc5f4ca905d6e2bdb21",
+      "published_path": "research/bounty-continuation-2026-11-21/hazan-livni2018/target-and-prior-audit.md",
+      "published_sha256": "659eda088c4acb77430fecb2e56d87728594aa625e7848cef197034c1203f7f1"
+    },
+    {
+      "source": "agents/other_paid/hazan_livni2018/weak-center-gain-route.md",
+      "source_sha256": "1e9714baf8218bb8498a4036ca4b29777981bc2277befae12c0dbd594e361b04",
+      "published_path": "research/bounty-continuation-2026-11-21/hazan-livni2018/weak-center-gain-route.md",
+      "published_sha256": "1c3fbd7e4aebbbf111362b0619471e1be0d2a26bb2c629c06256bc62f0a8d181"
+    },
+    {
+      "source": "agents/root749/hazan-livni-gain-independent-review.md",
+      "source_sha256": "0080a4d8411a8855db2bb7b254bd15b3d70b0bd885884d1f5960d31e4816967e",
+      "published_path": "research/bounty-continuation-2026-11-21/hazan-livni2018/INDEPENDENT_REVIEW.md",
+      "published_sha256": "6164e3b5adb8cae716d480a9bd178c2d9cbfe30ba055ba57b6d8b54e4012c778"
+    },
+    {
+      "source": "agents/other_paid/kruskal2014/prior-resolution-audit.md",
+      "source_sha256": "be0a528c02046682ead8671ad8b9e25757eb5a3f01a825830b07e24789ccc35f",
+      "published_path": "research/bounty-continuation-2026-11-21/eligibility/kruskal2014-prior-resolution.md",
+      "published_sha256": "d4baefbe5fda214358d9d19090bf61d22ef84f3605266ea1990a8226350e9aac"
+    },
+    {
+      "source": "agents/other_paid/shamir2012/prior-resolution-audit.md",
+      "source_sha256": "37513e551aa18753c05e09ffe61351ff462a2c115e92ad9823706798dc31f6a2",
+      "published_path": "research/bounty-continuation-2026-11-21/eligibility/shamir2012-prior-resolution.md",
+      "published_sha256": "f17e87656eb5e3793e910cb404395bc0abb2573418c0656ea508b1660fea1d65"
+    },
+    {
+      "source": "agents/demath_zzz/christiano-online-local/target-and-stopping-audit.md",
+      "source_sha256": "aba29d256a621450acddb78a3b1e4e8f7a6ac407feb9acef5437ec875da28e0f",
+      "published_path": "research/bounty-continuation-2026-11-21/christiano2014/target-and-stopping-audit.md",
+      "published_sha256": "25b553161a799cddd4a7dad29f13828a752cf66efbe8215ada032d3b2950d43e"
+    },
+    {
+      "source": "agents/conjectures/agarwal-2017-oracle-small-loss-audit.md",
+      "source_sha256": "9fce4cc162a721f3d43bb4ada34c09da9101581f300e5d419af8205024cca455",
+      "published_path": "research/bounty-continuation-2026-11-21/agarwal2017/oracle-small-loss-audit.md",
+      "published_sha256": "578870c9d4cb11dd4df2099032caf1606e68edc02206ba30926d408641368666"
+    }
+  ]
+}
