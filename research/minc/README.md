@@ -65,6 +65,11 @@ The ten entries already marked resolved by the source are excluded: conjectures 
 
 - [Pula–Song–Wanless conjecture](../../results/pula-song-wanless/proof.md): complete proposed proof of the inclusive threshold `n>=m+sqrt(m)`, with a real-rooted-minor repair of the published equalization argument and an independent van der Waerden uniqueness proof. The known cohesive and non-barycentric directions are independently checked and credited. [Two written reviews](../../results/pula-song-wanless/review-inequalities.md) and [exact identity checks](../../results/pula-song-wanless/verify.py) accompany it. The [source audit](../../results/pula-song-wanless/source-audit.md) found no earlier full threshold proof; its limits are explicit. This is a subsidiary conjecture, not either unrestricted characterization problem.
 
+## Gyires PSD-orbit publication and prior-art corrections
+
+- [Gyires on PSD permutation orbits](gyires_psd_permutation_orbits.md): an all-order proper-class theorem for A=PSQ, where S is symmetric positive-semidefinite doubly stochastic and P,Q are independent permutations. The full Gyires ratio is at least per(A)>=n!/n^n, with equality only at J. The proof uses Loewner monotonicity and permanent tensor Cauchy--Schwarz; the [exact rational checker](verify_gyires_psd_permutation_orbits.py) passes 175 examples. **The unrestricted C20 conjecture remains open.** Prior priority not established.
+- [Lih--Wang PSD-orbit quantitative bound](lihw_psd_orbit_convexity.md): the same class satisfies per(J+t(A-J))<=beta_n+t²(per(A)-beta_n) for the entire segment t in [0,1], with explicit positive second-derivative lower bound; the [exact rational checker](verify_lihw_psd_orbit_convexity.py) passes 60 examples. **Qualitative convexity for this class follows already from Kopotun (1996)**, and the strengthened quantitative estimate's novelty is unverified. **The unrestricted C34 conjecture remains open.**
+
 ## Further checked routes and remaining gaps
 
 - [Integer regular-matrix minima](combinatorial/descent_research.md): a decomposable support cannot minimize for any `k>=2`; longer alternating-cycle changes have exact minor expansions. Their signs do not yield a universal descent theorem. Continuous minimizer cofactor identities cannot be assumed on the integer grid.
