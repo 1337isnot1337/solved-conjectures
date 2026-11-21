@@ -156,6 +156,12 @@ An [exact counterfamily](row-difference-obstruction.md) shows that repeating the
 
 The independent [decision-procedure investigation](decision-approach.md) and [arithmetic literature review](arithmetic-literature.md) give restricted algorithms and an exact two-counter reformulation, but no general decision procedure. No finite search, conditional lemma, restricted algorithm, or obstruction above is counted as a solved bounty.
 
+## Decision algorithms for structured divisors
+
+The [branching-prefix argument](branching-prefix.md) decides witnesses visiting a branching component before the divisor starts for coprime divisors in any base and for all divisors in prime-power bases. The [residue length bound](residue-length.md) shortens arbitrary regular representatives in terms of the multiplicative order. Together with block arithmetic this yields an [effective ultimate-periodicity theorem](cyclotomic-divisors.md) when the divisor is a fixed product of distinct cyclotomic polynomials evaluated at a power of the base. In particular, using divisors of the form $`k^m-1`$ cannot yield an undecidability reduction, even if the two tracks have arbitrary regular correlations.
+
+The [executable check](check_cyclotomic_divisors.py) checked 5,121 modular translations and 2,880 folded divisibility comparisons. It also built a unary automaton for a coupled-length example and followed it until its reachable state set repeated, with preperiod six and period three. These checks cover the construction and one unbounded example. The full arbitrary-divisor question remains open.
+
 ## Source receipt
 
 - Shallit, BCTCS 2014, page 40: original numbered problem and £50 offer.
