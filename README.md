@@ -48,7 +48,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
 | [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |
 | [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ✅ |
-| [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ⬜ |
+| [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ✅ |
 | [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
 | [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |
 | [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |

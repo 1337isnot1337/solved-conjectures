@@ -2,6 +2,25 @@
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
 
+## KVZ complete local verification
+
+The full gamma-quotient theorem has an exact 15-module closure. The [receipt](verification/lean-kvz-20261121/receipt.json)
+records all strict source commands, frozen source and object hashes, the
+complete owned/private audit, and stock-kernel replay. All 62 required
+endpoints passed. The mathematical scope includes arbitrary real translated
+node grids, every determinant order, the positive-integer cutoff, and the
+parameter-dependent signature.
+
+Historical Wronskian strict receipts are accompanied by a separately dated
+post-build frozen inventory; unavailable pre-build hashes are not claimed.
+Other historical records retain their actual source/public-object hash
+coverage. The convolution records identify their source, direct dependencies,
+and every object part. The complete gate freezes and replays all 45 object
+parts. No source-only refresh is relabeled as an object rebuild.
+
+The combined repository gate and hosted verification of this checkpoint
+remain separate pending checks.
+
 ## Chen–Khare–Sahi compatibility checkpoint
 
 All 16 existing modules passed fresh strict Lean 4.35 compilation with warnings treated as errors. The complete owned/private audit checked 1,454 declarations, including 1,254 theorem declarations, 816 private declarations and all 49 required endpoints. Only `propext`, `Classical.choice` and `Quot.sound` are allowed. Independent stock-kernel replay of the revised closure and the combined repository gate remain pending. The README badge remains partial.

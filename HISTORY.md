@@ -1,5 +1,17 @@
 # History
 
+## 2026-11-21 — Gamma-quotient theorem verified in Lean
+
+Completed the all-order Karp–Vishnyakova–Zhang gamma-quotient theorem on its
+full real translated domain. Proved the exact sign, noninteger strictness,
+positive-integer cutoff, and third-order signature correction. The literal
+gamma convolution and all Wronskian and determinant-composition obligations
+are proved internally. All 15 strict sources, the complete owned/private
+audit, and exact stock-kernel replay passed. Registered 62 required endpoints
+and marked the result complete. The combined repository gate and hosted
+validation remain pending.
+
+
 ## 2026-11-21 — Chen–Khare–Sahi strict compatibility repairs
 
 Replaced repeated monomial-product proof search with 115 proved pair identities and an indexed degree-at-most-six dispatch. Repaired strict-linter, arithmetic-normalization and deprecated-lemma failures in Translate, Boundary, Parameter and Unique. The existing public definitions and theorem statements are unchanged.

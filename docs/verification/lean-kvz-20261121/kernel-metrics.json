@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "../scripts/replay_lean.py",
+    "--root",
+    "Conjectures.KVZGamma"
+  ],
+  "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+  "started_utc": "2026-11-21T17:51:16.329827+00:00",
+  "elapsed_seconds": 2259.8743935579987,
+  "returncode": 0,
+  "user_seconds": 139.251384,
+  "system_seconds": 895.21495,
+  "maxrss_kib": 2707152
+}

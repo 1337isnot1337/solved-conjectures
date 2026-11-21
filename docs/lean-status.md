@@ -65,7 +65,7 @@ proofs are documented separately in the catalogue and result package.
 | Oravcová–Soták conjecture for five to eight distances | Partial | The formalization uses the actual distance graph on the integers. Its unconditional results include the greedy upper bound, periodic-word transport, loop concatenation, integer base change, the four unbounded one-parameter coloring families, the full two-parameter family, and the exceptional chromatic numbers. Theorem A, the Oravcová–Soták clique conclusion, and the primitive triangle-free corollary retain the explicitly named propositions `R5`, `R6`, `R7`, and `R8` as hypotheses. Those four real-loneliness classifications are not proved by this closure. All nine new modules passed strict compilation with warnings treated as errors. The exact 28-module project closure passed an all-owned audit of 1239 declarations (1084 theorem declarations and 40 required endpoints) and independent stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. [Receipt](verification/lean-named-20261121/oravcova-receipt.json). Combined package gate remains pending. |
 | Johnson–Kaya–Matzke conjecture on Babai spectra of paths | Complete | Lean proves the exact spectrum interval for every `n ≥ 2` and `1 ≤ k < n`, using the actual `SimpleGraph.chromaticNumber` of the distance graph on `Fin n`. It proves the independence and coloring bounds, greedy coloring, and modular-coloring/clique realization of every allowed value. Strict compilation, an all-owned audit of 43 declarations/39 theorem declarations and all 12 required endpoints, and stock-kernel replay passed. No published input remains a hypothesis. [Local receipt](verification/lean-named-20261121/babai-receipt.json); the combined repository gate and hosted validation remain separate. |
 | Ferreira–Simon's Wright log-concavity conjecture | Complete original-conjecture disproof | The actual infinite Wright series has a continuous beta-zero counterexample family, with admissible alpha approaching one. Strict compilation, the complete 25-declaration owned audit including eight private declarations, and independent stock-kernel replay passed. The positive-beta refinements in the written proof and the combined repository gate remain separate and pending. |
-| Karp–Vishnyakova–Zhang's gamma-quotient conjecture | Not formalized | Written all-order sign-regularity proof with exact signature and integer rank cutoff; finite determinant checks are supplementary. |
+| Karp–Vishnyakova–Zhang's gamma-quotient conjecture | Complete | Lean proves the literal gamma quotient on every strictly ordered real grid with c>d and positive denominator arguments. Noninteger differences are strict at every order; integer m gives nonzero minors through order m+1 and zero larger minors. The exact signature and third-order correction are checked. All 15 modules passed strict sources, the complete owned/private audit, and stock-kernel replay. The combined repository gate remains pending. |
 | Alexandersson's Fuss–Catalan conjecture | Complete | Lean proves the literal Fuss–Dyck enumeration and closed formula, real-rootedness, the exact simple-negative-root count, and scalar reduction to the ordinary case. It proves that any ordinary-case relation between root multisets transfers; the cited ordinary-case interlacing theorems themselves are not re-proved. Strict standalone compilation, all-owned axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending. |
 | Sagan–Swanson conjecture | Not formalized | Written proof of all four stated asymptotic normality assertions using actual means and variances; finite model checks are supplementary. |
 | Bernardi–Morales's delta-process conjecture | Complete | Lean proves published Conjectures 27–28 for all admissible parameters: the literal delta-map tree count for every fixed color map, and the complete marked interval-event count and source probability determinant for every fixed surjection. Full subsets, singleton complements and the singular averaging case are included. The 13-module closure passed strict compilation with warnings treated as errors, an all-owned audit of 269 declarations (205 theorem declarations and 23 required endpoints), and independent replay by the pinned stock kernel. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. [Receipt](verification/lean-named-20261121/bernardi-receipt.json). Combined package gate and hosted validation remain separate. |
@@ -105,6 +105,36 @@ proofs are documented separately in the catalogue and result package.
 | Seven-speed spectrum | Partial | Realization, the 27 displayed exceptional values, and sharp candidate bounds are checked. The critical-plane classification and large-norm family bridge are registered under explicit `LonelyRunnerBound 5` and primitive tight-six classification hypotheses. Unconditional tuple exhaustiveness remains open. |
 | Eight-speed spectrum | Partial | All three displayed product families are classified and evaluated within those families, including both exceptional `s=1` values. All 17 displayed sporadic values are checked. The norm bound and exhaustive classification outside the families remain open. |
 | Eleven-through-fourteen-runner equality | Partial | The displayed equality directions have their exact global values. Norm cutoffs and prime selection are checked under explicit smaller-dimensional runner bounds. Those bounds, modular exhaustiveness and uniqueness remain open. |
+
+## Complete gamma-quotient theorem
+
+Lean proves the literal kernel `Gamma(c+x+y) / Gamma(d+x+y)` for
+arbitrary real `c`, `d`, and strictly increasing real node grids, assuming
+only `c>d` and `d+x_i+y_j>0`. A proved translation to two positive grids
+preserves every matrix entry. The empty determinant is included.
+
+Write `delta=c-d`. For positive noninteger `delta`, every order is strict.
+The determinant sign is the sign of
+`(-1)^(r.choose 2) * product(j=0..r-1, falling(delta,j))`, with the empty
+falling factorial equal to one. For a positive integer `delta=m`, minors
+through order `m+1` are nonzero with sign `(-1)^(r.choose 2)`; every larger
+minor vanishes. The third-order sign is the sign of `delta^2*(1-delta)`.
+It is positive for `0<delta<1`, zero at `delta=1`, and negative for `delta>1`.
+Thus the source's fixed third-order signature is corrected within this theorem.
+
+The proof derives the all-order Wronskian criterion by exact mean-value
+reductions, proves the power and gamma-density determinant signs, and
+establishes the literal double gamma integral with its integrability
+hypotheses. Two determinant composition arguments prove the final signs.
+No unformalized Wronskian or composition theorem is assumed.
+
+All 15 sources passed strict checks. The exact owned/private axiom audit
+covers 195 declarations, 176 theorem declarations, and 54 private declarations, including all 62 required endpoints.
+Only `propext`, `Classical.choice`, and `Quot.sound` occur. The pinned stock
+checker replayed the exact frozen closure. The combined repository gate
+and hosted validation remain separate pending checks.
+
+See the [receipt](verification/lean-kvz-20261121/receipt.json) and [complete inventory](verification/lean-kvz-20261121/audit-validated.json).
 
 ## Complete Chow interlacing theorem
 

@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lean",
+    "-j1",
+    "-M2200",
+    "-DwarningAsError=true",
+    "-o",
+    ".lake/build/lib/lean/Conjectures/KVZGammaCompositionGamma.olean",
+    "Conjectures/KVZGammaCompositionGamma.lean"
+  ],
+  "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+  "started_utc": "2026-11-21T17:49:18.501620+00:00",
+  "elapsed_seconds": 13.097524777000217,
+  "peak_kib": 1459292,
+  "exit_status": 0,
+  "source_sha256": "46994a2591e46ec78f6b9df9174b3e2f5f438eab03ee7befbc44b8f96185845d",
+  "source_unchanged": true,
+  "imported_objects": {
+    "Conjectures.KVZGammaCompositionSign": "f6d0737ce160ae7a12db9c88545ce2279bffacabf83b7d51be6118aace98d3be",
+    "Conjectures.KVZGammaPower": "52ec47c1ed865d62e1daaa7b5f8baffd38e4de3364bad1e9f0469343bd60e04a",
+    "Conjectures.KVZGammaDensity": "ea2cb26e2578acbf61226b2fdd783dab9ccad1818e5298f79578df9c53966f65",
+    "Conjectures.KVZGammaConvolution": "389801a1a3db5593d57d88eb70ec962d49adb1bb716344dc44ea9a4d34206952"
+  },
+  "object_sha256_before": null,
+  "object_sha256_after": "740c419485d7284463392b70a39b7a92bd6a92ddfeb796e31ed1f8099b77e7d5",
+  "log_bytes": 0
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "timeout",
+    "600s",
+    "lean",
+    "-j1",
+    "-M3000",
+    "-DwarningAsError=true",
+    "-o",
+    ".lake/build/lib/lean/Conjectures/KVZGammaWronskian.olean",
+    "Conjectures/KVZGammaWronskian.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 194.541,
+  "maxrss_kib": 613988,
+  "log_bytes": 0
+}

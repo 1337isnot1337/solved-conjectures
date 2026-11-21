@@ -1,0 +1,20 @@
+{
+  "command": [
+    "lean",
+    "-j1",
+    "-M2200",
+    "-DwarningAsError=true",
+    "-o",
+    ".lake/build/lib/lean/Conjectures/KVZGammaPower.olean",
+    "Conjectures/KVZGammaPower.lean"
+  ],
+  "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+  "started_utc": "2026-11-21T17:10:59.718860+00:00",
+  "elapsed_seconds": 85.816,
+  "peak_kib": 723436,
+  "exit_status": 0,
+  "source_sha256": "f362676a43e957def4fff268fe9a0fdce428b82dfc9b3df2ea155ac59cc6e3d4",
+  "object_sha256_before": null,
+  "object_sha256_after": "52ec47c1ed865d62e1daaa7b5f8baffd38e4de3364bad1e9f0469343bd60e04a",
+  "log_bytes": 0
+}

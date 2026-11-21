@@ -1,0 +1,94 @@
+{
+  "module": "Conjectures.KVZGammaConvolutionWeights",
+  "source": {
+    "path": "Conjectures/KVZGammaConvolutionWeights.lean",
+    "bytes": 7553,
+    "sha256": "b84fcd3112135fede05809f92b80d7b03b8195a07fa83732cc637bf79060c679"
+  },
+  "command": [
+    "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+    "-j1",
+    "-M2200",
+    "-DwarningAsError=true",
+    "-o",
+    ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean",
+    "Conjectures/KVZGammaConvolutionWeights.lean"
+  ],
+  "direct_project_dependencies": {
+    "Conjectures.KVZGammaDensityBasic": {
+      "source": {
+        "path": "Conjectures/KVZGammaDensityBasic.lean",
+        "bytes": 1817,
+        "sha256": "b8176f814bd3676d9cc0916794004a75ee39d4bf0e81cc2f57e7d1a1cce38e0c"
+      },
+      "objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean",
+          "bytes": 15376,
+          "sha256": "c9022b105611f512ce8f75ea6dbc647d81d58e91d4ba91624f03bc5c3b9ed2b8"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean.private",
+          "bytes": 56712,
+          "sha256": "2fb47cb9b8441e25b10a7796d98697fb47eb5bb324786a3b616b0a278d4d37fb"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean.server",
+          "bytes": 2896,
+          "sha256": "d3f4d5a269260384adf2bd753ab1148d3c6b8a948a6d8f6d9818e10331f168c5"
+        }
+      ]
+    },
+    "Conjectures.KVZGammaPowerAlgebra": {
+      "source": {
+        "path": "Conjectures/KVZGammaPowerAlgebra.lean",
+        "bytes": 6746,
+        "sha256": "6cfbf16a587692883bf53870c936ba5a0f815cac96ce4079b189b7369fee4d71"
+      },
+      "objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean",
+          "bytes": 39096,
+          "sha256": "c8b0afd7b9baa534b6ec083fe09802dae65e957edfbca16db6c6d2690f97790e"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean.private",
+          "bytes": 214648,
+          "sha256": "c07b6db9c3819a8255565c979aa88fbfe8a78c8432493f45a595e8b363419340"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean.server",
+          "bytes": 7112,
+          "sha256": "67878d276238be16e59654c57b9091f26e29c6fb7737206248f557975b5f5855"
+        }
+      ]
+    }
+  },
+  "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T174516.426787Z/KVZGammaConvolutionWeights.log",
+  "status": "passed",
+  "output_objects": [
+    {
+      "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean",
+      "bytes": 25080,
+      "sha256": "55a7b71c0210ff9fffb6e5391ccb2eab1be5e3bf3ae2e2e2d3d040fd8571b5fc"
+    },
+    {
+      "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean.private",
+      "bytes": 249376,
+      "sha256": "a64b9f037f3b290b585ab7defe62dfde8258dfe143640ef3d56df00d2c76dc2a"
+    },
+    {
+      "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean.server",
+      "bytes": 4696,
+      "sha256": "4f2c2dfd1385e29c6e7e2d583eaaaa6d4b449a5c5aec15d2ede1687d9dcc1382"
+    }
+  ],
+  "elapsed_seconds": 26.221,
+  "exit_status": 0,
+  "max_rss_kib": 1185008,
+  "user_seconds": 5.504784,
+  "system_seconds": 8.816571,
+  "source_unchanged": true,
+  "dependencies_unchanged": true,
+  "diagnostic_bytes": 0
+}

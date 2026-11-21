@@ -1,0 +1,17 @@
+{
+  "module": "KVZGammaWronskianDeterminants",
+  "command": [
+    "timeout",
+    "600s",
+    "lean",
+    "-j1",
+    "-M3000",
+    "-DwarningAsError=true",
+    "-o",
+    ".lake/build/lib/lean/Conjectures/KVZGammaWronskianDeterminants.olean",
+    "Conjectures/KVZGammaWronskianDeterminants.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 264.267,
+  "maxrss_kib": 893612
+}

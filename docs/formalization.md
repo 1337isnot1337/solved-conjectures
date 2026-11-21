@@ -15,6 +15,36 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## KVZ gamma-quotient theorem, 21 November 2026
+
+Lean proves the literal kernel `Gamma(c+x+y) / Gamma(d+x+y)` for
+arbitrary real `c`, `d`, and strictly increasing real node grids, assuming
+only `c>d` and `d+x_i+y_j>0`. A proved translation to two positive grids
+preserves every matrix entry. The empty determinant is included.
+
+Write `delta=c-d`. For positive noninteger `delta`, every order is strict.
+The determinant sign is the sign of
+`(-1)^(r.choose 2) * product(j=0..r-1, falling(delta,j))`, with the empty
+falling factorial equal to one. For a positive integer `delta=m`, minors
+through order `m+1` are nonzero with sign `(-1)^(r.choose 2)`; every larger
+minor vanishes. The third-order sign is the sign of `delta^2*(1-delta)`.
+It is positive for `0<delta<1`, zero at `delta=1`, and negative for `delta>1`.
+Thus the source's fixed third-order signature is corrected within this theorem.
+
+The proof derives the all-order Wronskian criterion by exact mean-value
+reductions, proves the power and gamma-density determinant signs, and
+establishes the literal double gamma integral with its integrability
+hypotheses. Two determinant composition arguments prove the final signs.
+No unformalized Wronskian or composition theorem is assumed.
+
+All 15 sources passed strict checks. The exact owned/private axiom audit
+covers 195 declarations, 176 theorem declarations, and 54 private declarations, including all 62 required endpoints.
+Only `propext`, `Classical.choice`, and `Quot.sound` occur. The pinned stock
+checker replayed the exact frozen closure. The combined repository gate
+and hosted validation remain separate pending checks.
+
+See the [receipt](verification/lean-kvz-20261121/receipt.json).
+
 ## Chen–Khare–Sahi compatibility checkpoint
 
 Replaced repeated monomial-product proof search with 115 proved pair identities and an indexed degree-at-most-six dispatch. Repaired strict-linter, arithmetic-normalization and deprecated-lemma failures in Translate, Boundary, Parameter and Unique. The existing public definitions and theorem statements are unchanged.
