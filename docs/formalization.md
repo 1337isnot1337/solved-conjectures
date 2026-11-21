@@ -19,6 +19,10 @@ accepted scope, including the conditional critical-seven assembly.
 
 `Conjectures.ZhuJacobiStirling` derives the complete coefficientwise counterexample from the recurrence and checks the determinant identity and ordered-field negative region. The standalone strict source check, all-owned axiom audit and stock-kernel replay passed; the merged-package gate is pending. See [issue 163](https://github.com/1337isnot1337/solved-conjectures/issues/163).
 
+## Han–Sabag–Kostina–Hassibi checkpoint
+
+`Conjectures.HanSabagCounterexample` checks the rational matrix witness, a uniform lower bound over all sparse encoders, and a uniform gap over the open channel-gain interval. Exact individual assignment infima still need their matching upper-bound formalization. The module passed standalone strict source compilation, the all-owned axiom audit and stock-kernel replay; the combined gate is pending. See [issue 197](https://github.com/1337isnot1337/solved-conjectures/issues/197).
+
 ## Coordination, 18 November 2026
 
 The four active lanes in [issue 1](https://github.com/1337isnot1337/solved-conjectures/issues/1) are:

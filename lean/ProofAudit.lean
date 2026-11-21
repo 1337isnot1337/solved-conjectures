@@ -9,6 +9,15 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Han.witness_feasible,
+    `Han.noise_inverse_eq,
+    `Han.lyapunov_original,
+    `Han.witness_power,
+    `Han.sparse_feasible_power,
+    `Han.uniform_gap,
+    `Han.sparse_encoders_strictly_worse,
+    `Han.open_family_gap,
+    `Han.concrete_gain_in_interval,
     `ZhangDeletion.small_deletion_lower,
     `ZhangDeletion.leastDenominator_minimal,
     `ZhangDeletion.large_deletion_exact,

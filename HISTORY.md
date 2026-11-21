@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Han–Sabag–Kostina–Hassibi Lean counterexample
+
+Formalized the actual real-matrix witness, the universal sparse-encoder lower bound and a uniform gap across the stated open channel-gain interval. Standalone strict compilation, an all-owned axiom audit and stock-kernel replay passed. The individual exact assignment infima and combined repository gate remain pending.
+
 ## 2026-11-21 — Roos–Seiringer's conjecture
 
 Added a complete proposed proof of the radial Dirichlet kernel nonnegativity assertion in §5 of *BCS Critical Temperature on Half-Spaces*. The proof gives strict positivity for every positive real argument and the continuous zero endpoint. The source scaling then covers every positive chemical potential. This is the whole scalar assertion identified by the authors, not a selected dimension of an arbitrary-dimensional conjecture; the unaveraged kernel is outside the claim.
