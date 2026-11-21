@@ -162,6 +162,8 @@ The [branching-prefix argument](branching-prefix.md) decides witnesses visiting 
 
 The [repeated-factor proof](repeated-factors.md) extends the decision procedure to products with arbitrary fixed multiplicities. In particular it handles squared repunit-type divisors even when the shortest genuine witness has exponentially many digits.
 
+The [multiplicative-order criterion](noncyclotomic-orders.md) characterizes when genuine witnesses can always be shortened to linear length by this route, for monic polynomial divisors with constant term coprime to the base. A noncyclotomic factor forces at least quadratic order, and a repeated cyclotomic factor forces exponential order.
+
 The [executable check](check_cyclotomic_divisors.py) checked 5,121 modular translations and 2,880 folded divisibility comparisons. It also built a unary automaton for a coupled-length example and followed it until its reachable state set repeated, with preperiod six and period three. These checks cover the construction and one unbounded example. The full arbitrary-divisor question remains open.
 
 ## Source receipt
