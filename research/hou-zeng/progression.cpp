@@ -1,14 +1,15 @@
-// Compile with c++ -O3 -std=c++17. Check exact prime witnesses on Chen's two progressions.
+// Compile with c++ -O3 -std=c++17. Check odd-prime witnesses on arithmetic progressions.
 #include <algorithm>
 #include <cmath>
 #include <cstdint>
 #include <iostream>
 #include <numeric>
 #include <stdexcept>
+#include <string>
 #include <vector>
 
 using Int = std::int64_t;
-constexpr Int modulus = 312018;
+constexpr Int chen_modulus = 312018;
 struct SievePrime { Int prime, inverse; };
 
 Int inverse_mod(Int a, Int p) {
@@ -22,7 +23,7 @@ Int inverse_mod(Int a, Int p) {
     return (old_s % p + p) % p;
 }
 
-std::vector<SievePrime> primes_to(Int upper) {
+std::vector<SievePrime> primes_to(Int upper, Int modulus) {
     Int limit = static_cast<Int>(std::sqrt(static_cast<long double>(upper)));
     while ((limit + 1) <= upper / (limit + 1)) ++limit;
     std::vector<bool> composite(limit + 1);
@@ -54,18 +55,19 @@ std::vector<Int> shifts_below(Int lower) {
     return shifts;
 }
 
-void check(Int first, Int count, const std::vector<SievePrime>& primes) {
+void check(Int first, Int count, Int modulus, const std::vector<Int>& shifts,
+           const std::vector<SievePrime>& primes) {
     std::vector<char> has_witness(count), composite(count);
     Int left = count;
     unsigned used = 0;
-    for (Int shift : shifts_below(first)) {
+    for (Int shift : shifts) {
         Int initial = first - shift;
         if (initial < 3 || std::gcd(initial, modulus) != 1) continue;
         std::fill(composite.begin(), composite.end(), false);
         for (auto [p, inverse] : primes) {
             if (p * p > initial + (count - 1) * modulus) break;
             Int index = ((p - initial % p) * inverse) % p;
-            if (initial + index * modulus == p) index += p;
+            if (p >= initial && (p - initial) % modulus == 0 && index == (p - initial) / modulus) index += p;
             for (; index < count; index += p) composite[index] = true;
         }
         ++used;
@@ -75,19 +77,44 @@ void check(Int first, Int count, const std::vector<SievePrime>& primes) {
         if (!left) break;
     }
     std::cout << "first=" << first << " count=" << count << " shifts=" << used
-              << " without a certified representation=" << left << '\n';
+              << " without a certified representation=" << left << std::endl;
     for (Int i = 0; i < count; ++i)
         if (!has_witness[i]) std::cout << "needs full check " << first + i * modulus << '\n';
 }
 
 int main(int argc, char** argv) {
+    if (argc == 2 && std::string(argv[1]) == "--ranked-shifts") {
+        Int low, high, modulus, num_shifts, num_classes;
+        if (!(std::cin >> low >> high >> modulus >> num_shifts >> num_classes)
+            || low < 8 || high < low || high > 1000000000000000LL
+            || modulus < 2 || modulus > high || modulus % 2 || num_shifts < 1 || num_classes < 1)
+            throw std::invalid_argument("invalid ranked-shift header");
+        std::vector<Int> shifts(num_shifts);
+        for (Int& shift : shifts)
+            if (!(std::cin >> shift) || shift < 1 || shift > high - 3)
+                throw std::invalid_argument("invalid shift");
+        auto primes = primes_to(high, modulus);
+        for (Int i = 0; i < num_classes; ++i) {
+            Int residue;
+            if (!(std::cin >> residue) || residue < 0 || residue >= modulus)
+                throw std::invalid_argument("invalid residue");
+            Int first = low + (residue - low % modulus + modulus) % modulus;
+            if (first > high) continue;
+            Int count = (high - first) / modulus + 1;
+            constexpr Int chunk = 5000000;
+            for (Int start = 0; start < count; start += chunk)
+                check(first + start * modulus, std::min(chunk, count - start), modulus, shifts, primes);
+        }
+        return 0;
+    }
     if (argc != 3) return 2;
+    constexpr Int modulus = chen_modulus;
     Int lower = std::stoll(argv[1]), count = std::stoll(argv[2]);
     if (lower < 5 || lower > 1000000000000000LL || count < 1 || count > 10000000)
         throw std::invalid_argument("lower must be in [5,10^15] and count in [1,10^7]");
-    auto primes = primes_to(lower + count * modulus);
+    auto primes = primes_to(lower + count * modulus, modulus);
     for (Int residue : {208641, 218331}) {
         Int first = lower + (residue - lower % modulus + modulus) % modulus;
-        check(first, count, primes);
+        check(first, count, modulus, shifts_below(first), primes);
     }
 }

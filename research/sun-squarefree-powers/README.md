@@ -32,3 +32,5 @@ for i in $(seq 0 29); do
     /tmp/sun-powers "$start" "$((start + 1999999999))" || exit 1
 done
 ```
+
+The [small-prime obstruction and residue-class search](../hou-zeng/finite-modulus-search.md) gives uniform lower bounds on coprime candidate shifts and tests selected progressions beyond the consecutive verification range.
