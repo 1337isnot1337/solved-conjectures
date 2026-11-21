@@ -19,6 +19,8 @@ both bounds in the exact sponsor statement, including conversion to bits.
 
 A [finite-coin version](EFFICIENCY.md) gives a worst-case polynomial-time proper learner with CMI below 23 nats and expected samplewise empirical excess at most $`2057/\sqrt n`$. It uses $`O(n\log(n+1))`$ fair bits and feature comparisons. The [implementation](efficient.py) accepts exact rational inputs. The efficiency provision adds 20% if the sponsors accept it.
 
+A [deterministic polynomial-time learner](DETERMINISTIC.md) achieves the same prize target using the order of the input rows. Its empirical excess is at most $`2048\lceil\sqrt n\rceil/n`$ on every ordered sample, and its original CMI is below 7000 nats. The [priority lemma](PRIORITY.md) bounds the information cost of selecting one row. The [implementation](deterministic.py) computes exact rational weights. The prize terms specify a further 20% for determinism, for a potential US$28 if the authors apply both increases to the base.
+
 The proof combines a randomly shifted tree on a folded rank cycle,
 an adjacent-sample information comparison, private tags with endpoint
 rounding, and an adaptive rank code that converts the result to a proper
@@ -45,6 +47,7 @@ open in this work.
 ```sh
 python3 results/steinke-zakynthinou-thresholds/verify.py --max-n 6
 python3 results/steinke-zakynthinou-thresholds/verify_efficiency.py
+python3 results/steinke-zakynthinou-thresholds/verify_deterministic.py
 ```
 
 The standard-library script checks all small replacement pairs and label
@@ -52,6 +55,8 @@ assignments through sample size six, including cycle folds, paired leaf
 costs, and exact inactive-node cancellation. The all-size information
 and accuracy claims use the written proof, not an extrapolation from
 these checks. The second checker replays 8,190 finite-coin runs against a separate implementation that counts each candidate’s empirical losses directly.
+
+The third checker independently enumerates every shifted-tree leaf on 125 sample multisets, compares the decoder on 1,364 ordered samples, and measures the priority inequalities over every rank permutation for 203 weight vectors.
 
 ## Prize and verification status
 

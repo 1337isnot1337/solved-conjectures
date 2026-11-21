@@ -18,6 +18,8 @@ jobs:
         run: python3 results/steinke-zakynthinou-thresholds/verify.py --max-n 6
       - name: Replay finite-coin threshold learner
         run: python3 results/steinke-zakynthinou-thresholds/verify_efficiency.py
+      - name: Replay deterministic threshold learner and priority estimates
+        run: python3 results/steinke-zakynthinou-thresholds/verify_deterministic.py
       - name: Check Johnson Pfaffian identities and indexing
         run: python results/johnson-pfaffian/verify.py
       - name: Check Brown-Mol analytic counterfamily identities and finite certificate
