@@ -86,3 +86,16 @@ The cited Tubbenhauer partial
 theorem was already recorded in the repository and is not a new
 discovery or an unrestricted resolution. C9 remains open here.
 
+For C36, an [odd-prime obstruction to Hadamard doubling](sign/hadamard_doubling_obstruction.md)
+proves that an untouched simultaneous odd-prime orbit forces divisibility
+of every retaining square minor. Starting from
+$`H_2\otimes(J_n-2I_n)`$, after at most $`s`$ internal entry
+changes and an arbitrary border of width $`d`$, every odd prime
+$`p\le n-2s-2d`$ still divides the permanent. Thus a sublinear
+modification cannot give the required nonzero power of two. The
+published attaining order-five core already prevents a universal
+one-border lift. Exact cycle/path formulas state the remaining
+recursive condition. [Independent review](inequalities/hadamard_doubling_review.md)
+and [integer checks](sign/hadamard_doubling_check.py) accompany the
+proof. No complete C36 or P7 construction is obtained.
+

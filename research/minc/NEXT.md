@@ -313,3 +313,20 @@ the summed quadratic packets need not factor into two linear forms.
 Tubbenhauer's November preprint and its remaining
 small-block gap were already in the earlier source audit, not first
 found at this checkpoint. These deductions do not resolve C9.
+
+The [Hadamard-doubling obstruction](nov20-independent/sign/hadamard_doubling_obstruction.md)
+excludes another universal C36 construction. If a simultaneous
+odd-prime cycle remains untouched in the smaller core, fixed matching
+orbits in the doubled core have a factor $`\operatorname{per}H_2=0`$;
+all other orbits have size $`p`$. For
+$`H_2\otimes(J_n-2I_n)`$, at most $`s`$ entry changes and a
+border of width $`d`$ therefore leave divisibility by every odd prime
+$`p\le n-2s-2d`$. This applies to arbitrary integer borders,
+nonprincipal square surviving minors, and sign gauges. The known
+attainer $`J_5-2I_5`$ has permanent eight, but no one-border lift
+of its doubled core can attain the order-eleven target $`256`$.
+The cycle/path formulas give an exact signed bilinear condition for a
+more restricted recursion; no closed family satisfying that condition
+and no even-output operation is proved. Root and inequalities reviewed
+the full proof and reran the exact checker. The full-resolution count
+remains zero.
