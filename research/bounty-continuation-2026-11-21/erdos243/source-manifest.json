@@ -1,0 +1,38 @@
+[
+  {
+    "file": "koizumi-2026.pdf",
+    "url": "https://math.colgate.edu/~integers/aa28/aa28.pdf",
+    "bytes": 334539,
+    "sha256": "9ad8561399e36bb4f17368064dc4765a90f164d85b65330c466e79fc716624df"
+  },
+  {
+    "file": "cook-2026.tex",
+    "url": "https://wcook04.github.io/practical-formal-verification/papers/source/plectis-erdos/paper/243/erdos-243-reciprocal-tail-rigidity.tex",
+    "bytes": 72229,
+    "sha256": "b393a9190d51137fb1ba6d3ba15bb1915219b468de6fe7279cbfaec46abd9b9c"
+  },
+  {
+    "file": "duverney-2001.pdf",
+    "url": "https://www.ms.u-tokyo.ac.jp/journal/pdf/jms080206.pdf",
+    "bytes": 251001,
+    "sha256": "f8ab2039c94959b21ede4616e399a4159dbc7ca7d2865c7567a2f82a148115f6"
+  },
+  {
+    "file": "erdos-1988.pdf",
+    "url": "https://users.renyi.hu/~p_erdos/1988-22.pdf",
+    "bytes": 553229,
+    "sha256": "b2bfc375d04b65332d6b8817633ff3968283a3f33c1f1ace366b03ac9fab8c88"
+  },
+  {
+    "file": "pinned-243.lean",
+    "url": "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/7d1a8c9912747679d0093f6d1216420c33ee5ffa/FormalConjectures/ErdosProblems/243.lean",
+    "bytes": 1302,
+    "sha256": "c9689f42fe49827990e61113996e89a14ebbca502095b6334cb4be8e9d9f8117"
+  },
+  {
+    "file": "cook-long-2026.tex",
+    "url": "https://wcook04.github.io/practical-formal-verification/papers/source/plectis-erdos/paper/243/erdos243-reciprocal-tail-reasoning-surface.tex",
+    "bytes": 206995,
+    "sha256": "92512a9aa35a79c5e4d2fb5690c56912a7a7dff9a4a244e356b1c2e886b37bac"
+  }
+]

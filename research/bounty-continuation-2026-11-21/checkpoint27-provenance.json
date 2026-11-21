@@ -1,0 +1,167 @@
+{
+  "checkpoint": 27,
+  "date": "2026-11-21",
+  "base_main": "864fc4feaf4f959a223dfaa500591e65c51a1801",
+  "new_full_bounty_solutions": 0,
+  "campaign_proposed_full_bounty_solutions_under_usd100_floor": 0,
+  "proposed_full_paid_target_solutions_including_below_floor": 1,
+  "accepted_or_paid_awards": 0,
+  "concurrent_threshold_formalization": {
+    "commit": "864fc4feaf4f959a223dfaa500591e65c51a1801",
+    "statement_inspected": true,
+    "fresh_lean_ci_at_source_check": "pending",
+    "independent_kernel_replay_in_this_checkpoint": false
+  },
+  "publication_changes": [
+    "Normalize math delimiters, macros, and relative links; preserve mathematical content and explicit limitations.",
+    "Preserve concurrent Nussbaum and full proper-threshold formalization commits.",
+    "Keep the repository USD100-floor tally separate from the chat request allowing any direct monetary solver reward.",
+    "Replace stale partial-formalization wording with the exact scope and observed pending-CI state of the concurrent full theorem."
+  ],
+  "files": [
+    {
+      "source": "agents/demath_zzz/erdos243/target-and-prior-audit.md",
+      "source_sha256": "3ff9bd654123ad66f9b1b5d144aa454f85e7538854b1836d93939cb0a1f963d0",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos243/target-and-prior-audit.md",
+      "published_sha256": "3ff9bd654123ad66f9b1b5d144aa454f85e7538854b1836d93939cb0a1f963d0"
+    },
+    {
+      "source": "agents/demath_zzz/erdos243/source-manifest.json",
+      "source_sha256": "c1431c0f72681badc03b9f91bbe65c9b6304eed404eac9c18da82cc21e0d34a9",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos243/source-manifest.json",
+      "published_sha256": "c1431c0f72681badc03b9f91bbe65c9b6304eed404eac9c18da82cc21e0d34a9"
+    },
+    {
+      "source": "agents/demath_zzz/erdos243/reduced-tail-cancellation-gap.md",
+      "source_sha256": "6e3b245b329fedabc15f06255c6d4a3541caa8632850af988f1ef28e7a31be15",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos243/reduced-tail-cancellation-gap.md",
+      "published_sha256": "796bfa2a6636ad16eee379606d47fad54c12ea47b0b5753f1f0651c4c69bb381"
+    },
+    {
+      "source": "agents/demath_zzz/erdos243/counterexample-route-check.md",
+      "source_sha256": "65741e6e3405ed5a4123bb760de6557a081ce87989ee7ed8d46887b1c5f20ebb",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos243/counterexample-route-check.md",
+      "published_sha256": "d296bdedc47a7dcdbd7e114781a19a9e7043cfdd6f827143d8fc2fa4de5ee153"
+    },
+    {
+      "source": "agents/root749/erdos243-independent-review.md",
+      "source_sha256": "4ba9fec7939ede0707a1392ca9841ee360386bad837ea572d8403bf21c3acc9f",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos243/INDEPENDENT_REVIEW.md",
+      "published_sha256": "ca2f843e70dcec4b317e0089139a240642cd579683324634d423ea42f287c440"
+    },
+    {
+      "source": "agents/demath_zzz/erdos677/target-and-prior-audit.md",
+      "source_sha256": "8ef43dd9510e76e87234a5303c5d7e6c3d6bede6586c481ffdebc6cf555cfdea",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos677/target-and-prior-audit.md",
+      "published_sha256": "f9482df769fec1aaaaeb1668dec961494a72dbc125f500c47aa8ce3e50989854"
+    },
+    {
+      "source": "agents/demath_zzz/erdos677/source-manifest.json",
+      "source_sha256": "48862695d53bf16411b303286e473ebe41d4b2a6ebdda83a69e2c3d30719565d",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos677/source-manifest.json",
+      "published_sha256": "48862695d53bf16411b303286e473ebe41d4b2a6ebdda83a69e2c3d30719565d"
+    },
+    {
+      "source": "agents/demath_zzz/erdos677/local-congruence-and-realization-gap.md",
+      "source_sha256": "874f77d27226f309caedfb363cbdbf9487e25abca9d34fd49d6b9645253164a2",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos677/local-congruence-and-realization-gap.md",
+      "published_sha256": "6af0bf1cb1a87abff8afc0f3de41cb9c7fd8e3186bb1d90d3faefaa06b7966b4"
+    },
+    {
+      "source": "agents/root749/erdos677-independent-review.md",
+      "source_sha256": "20f0accc9ffd3bc10351bcc205a33eaab60d3a59d5f06af94fdec38e3abb40dc",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos677/INDEPENDENT_REVIEW.md",
+      "published_sha256": "329ec784fc8f386723a621028048e1c8156c61375c4aca8276996508a2213e58"
+    },
+    {
+      "source": "agents/other_paid/erdos25/target-and-prior-audit.md",
+      "source_sha256": "eb63bda9786603bf0c9dae43f3d6b1217db828407093408b88ba73ec35dfbf8a",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/target-and-prior-audit.md",
+      "published_sha256": "54e4a1a21dfa99a06a610e0d2b58119bd772b7a7f3a8c6b7de870ebb3dff177b"
+    },
+    {
+      "source": "agents/other_paid/erdos25/sources/manifest.json",
+      "source_sha256": "3eb886b07bbc29cf66101d9eaca45bdcd8a71bae1f086c91282dcbc92962f2dd",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/task-manifest.json",
+      "published_sha256": "3eb886b07bbc29cf66101d9eaca45bdcd8a71bae1f086c91282dcbc92962f2dd"
+    },
+    {
+      "source": "agents/other_paid/erdos25/capacity-and-footprint-obstructions.md",
+      "source_sha256": "f4c28c7c89f4f1117fce4a347b13d00cb9d67e293cbfd4ff366b30c29af5d109",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/capacity-and-footprint-obstructions.md",
+      "published_sha256": "9e64ce3b3dbd79a7b6d2bac31e48acf23698d7f616befd4ab28c56ee7c20692c"
+    },
+    {
+      "source": "agents/conjectures/erdos25/capacity-and-footprint-independent-review.md",
+      "source_sha256": "fd35da2bb6d5bf67702e85dea4709661d9d8c61d0951bd48ac27d23ce13ec769",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/CAPACITY_REVIEW.md",
+      "published_sha256": "b65161c5dbf5a0fc6d49525f77edf20880f15eb41e93d740b3a3f5bb5fe74f8d"
+    },
+    {
+      "source": "agents/conjectures/erdos25/singleton-refinement-barrier.md",
+      "source_sha256": "9039702ef93c9d9079bfd3d48b03c3880c5fe9924d1a764ce336ad9a8b8582ce",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/singleton-refinement-barrier.md",
+      "published_sha256": "3ac9d870ffcd72ad059ce335cc949356b53e2256b0b0f26c0b05f5faa8adce12"
+    },
+    {
+      "source": "agents/other_paid/erdos25/singleton-refinement-independent-review.md",
+      "source_sha256": "82fdcc12ce0fb5d27fd4974d430bde18cac67c025baa777ce130a3c3e46e6cb1",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/REFINEMENT_REVIEW.md",
+      "published_sha256": "56ac1a93545a3f74eab6c45fe4c16f8dd706746f42a5e837ef69e6b4d278fbf5"
+    },
+    {
+      "source": "agents/conjectures/erdos25/activated-count-bound-counterexample.md",
+      "source_sha256": "bc5ef2d479c4734f731827b4451f85e250d1fd979ef378a5396075babe396b02",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/activated-count-bound-counterexample.md",
+      "published_sha256": "25e22399bc946226051562a4511a3505e8dacdb88cbd47c7a6f3ee26001f064f"
+    },
+    {
+      "source": "agents/conjectures/erdos25/check-activated-count-counterexample.py",
+      "source_sha256": "e5d5917d830571fabe3973ec4860f8befdbc4cbd9b11f5b41aeb26df7b98cf77",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/check-activated-count-counterexample.py",
+      "published_sha256": "e5d5917d830571fabe3973ec4860f8befdbc4cbd9b11f5b41aeb26df7b98cf77"
+    },
+    {
+      "source": "agents/conjectures/erdos25/activated-count-counterexample.json",
+      "source_sha256": "3c97dc54359b220376b07632b34c95de61dd3d46ea115b6132d82e4444821ab8",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/activated-count-counterexample.json",
+      "published_sha256": "3c97dc54359b220376b07632b34c95de61dd3d46ea115b6132d82e4444821ab8"
+    },
+    {
+      "source": "agents/root749/erdos25/finite-zeta-route.md",
+      "source_sha256": "656dc9b4cb94ab01f5b293eeebf75cb3f87403503715dc2068983e97bdf298ed",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/finite-zeta-route.md",
+      "published_sha256": "8d5c6636ad8bf4333a61f75dd7a8df22614fad18af92c20f15d1ff1d4573c347"
+    },
+    {
+      "source": "agents/other_paid/erdos25/finite-zeta-independent-review.md",
+      "source_sha256": "161d02f0b02bb7197d5d610e46c0492d8d61e176915e896f88c07d1de345b51b",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/ZETA_REVIEW.md",
+      "published_sha256": "634dd138989827cbe14037d5f3c73ad1dcaac91f4abaaa8036fa446edcdcf47f"
+    },
+    {
+      "source": "agents/other_paid/erdos25/weighted-compression-obstructions.md",
+      "source_sha256": "aad23593012aa8473553b1053d28e8d59e373867ca2c8c139281c6674f47e6cf",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/weighted-compression-obstructions.md",
+      "published_sha256": "aad23593012aa8473553b1053d28e8d59e373867ca2c8c139281c6674f47e6cf"
+    },
+    {
+      "source": "agents/root749/erdos25/count-and-comparison-independent-review.md",
+      "source_sha256": "d802c4126980aeca5a406a4e37d79dc11e1181149648ca733c55ce044d13aee6",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/COUNT_AND_COMPARISON_REVIEW.md",
+      "published_sha256": "a7eab2600db3065385d4b51dbefa8b1e8ea9414e7b9929ddfd27ae1e21b12177"
+    },
+    {
+      "source": "agents/other_paid/erdos25/intersection-loss-allocation.md",
+      "source_sha256": "46b8311ad2439447ac3191ded2ae6499082ca7946ab04e638b466380e87f9484",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/intersection-loss-allocation.md",
+      "published_sha256": "3095fac144435772f924b3e33a40e69c59c440db359eedfd45ac936a6da75199"
+    },
+    {
+      "source": "agents/conjectures/erdos25/intersection-loss-independent-review.md",
+      "source_sha256": "03708977b4a200f1594bf5f4a0e517760636c7d018bb1299460cf4546b7083bf",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/INTERSECTION_REVIEW.md",
+      "published_sha256": "9a76fd2134d7b627169e2c5b98670ebce6021c15ab36188e057c1640c5423836"
+    }
+  ]
+}
