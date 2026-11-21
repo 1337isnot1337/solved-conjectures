@@ -27,6 +27,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/) | ⬜ |
 | [Fang–Zhang–Zhao's infinite-log-convexity conjecture](results/fang-zhang-zhao/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture](results/kvz-bessel-unimodality/) | ⬜ |
+| [Simon's stable-infimum conjecture](results/simon-stable-infimum/) | ⬜ |
 | [Ferreira–Simon's stochastic-order conjecture](results/ferreira-simon-stochastic/) | ⬜ |
 | [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | ⬜ |
 | [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ⬜ |
@@ -135,5 +136,6 @@ See [the scope notes](CONTENTS.md#precise-scope) and each result's proof for hyp
 ## Primary sources
 
 Sources are linked in the [catalogue](CONTENTS.md#primary-sources) and individual proofs.
+
 
 

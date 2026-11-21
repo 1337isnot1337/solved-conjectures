@@ -54,6 +54,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Simon's stable-infimum conjecture": "simon-stable-infimum",
     "López Pouso–Segura's conjectures": "lopez-pouso-segura-bessel",
     "Ferreira–Simon's stochastic-order conjecture": "ferreira-simon-stochastic",
     "Ferreira–Simon's diagonal Mittag–Leffler conjecture": "ferreira-simon-diagonal",
@@ -749,4 +750,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

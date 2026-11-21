@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Simon's stable-infimum conjecture
+
+Added a complete proposed proof of the convex-order conjecture in Remark 6 of Simon's 2014 EJP article, throughout the full parameter interval and including its Brownian endpoint. The established stable-infimum Mellin transform gives two logarithmic Lévy densities that increase with the parameter. Their difference supplies an independent mean-one multiplier, and conditional Jensen gives the claimed order. The factorization and Mellin transform are credited to prior work.
+
+An independent internal mathematical review passed. The package records direct checks of the original and final source statements, earlier Mellin formulas, later related papers, a 2026 survey, more than forty focused searches and five public solution archives. No earlier full resolution was found within that documented search; the priority limits are explicit. The proof uses no numerical or finite-case inference, and no Lean work was performed. The notes remain unrefereed.
+
 ## 2026-11-21 — López Pouso–Segura's conjectures
 
 Added complete proposed proofs of the three Bessel-weight sequence conjectures in the 2025 published article. A positive-measure representation proves strict convexity of the inverse squared-phase derivative; trapezoidal errors give the C and E monotonicity. A Fourier–Bessel resolvent identity fixes both limiting constants, and a weighted-average identity gives the K statement. The three linked assertions count as one named result. The finite-degree Gauss–Legendre conjectures are outside the result.
@@ -823,5 +829,6 @@ Added a [proof of both vertex-decomposability conjectures](results/hornak-woznia
 ## 2026-11-20 — Sonntag–Teichert conjecture
 
 Added a [proof of connectivity for tournament domination hypergraphs](results/sonntag-teichert/) on their nonisolated vertices. The argument uses minimal closed in-neighbourhoods and also characterizes the disconnected cases for oriented graphs.
+
 
 
