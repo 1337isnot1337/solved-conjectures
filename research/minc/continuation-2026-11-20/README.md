@@ -10,8 +10,8 @@ This continuation investigates full unresolved entries on [the live Minc list](h
 | --- | --- | --- |
 | C5, Ryser's design conjecture | Exact multirow redistribution search using certified design thresholds | No counterexample; finite negative search is not a theorem |
 | C9, Marcus's block-permanent inequality | Updated primary literature; two exact padding obstructions | Full inequality unresolved |
-| C24, integrality of the minimum permanent | Checked the new entropy route against the integer-lattice requirement | The needed rounding inequality is unproved |
-| C34, Lih-Wang inequality | Exact coefficient and curvature identities; exploratory searches | Full inequality unresolved |
+| C24, integrality of the minimum permanent | Entropy audit and an infinite-family obstruction to uniform complement averaging | Global-minimizer replacement inequality remains unproved |
+| C34, Lih-Wang inequality | Exact identities; pointwise coefficient proposal rejected using published Jerrum graphs | Aggregate inequality unresolved |
 | C30, Chollet's conjecture | Sphere-tilt proof for rank r and order n at least r squared; exact projection obstruction | Auxiliary theorem reviewed; reduction from arbitrary rank remains unproved |
 | C36 and P7, sign-matrix problems | Classical modular rank obstruction; exact failures of one-row triangular and doubling constructions | Full conjectures unresolved; independently reviewed |
 | P17, permanental-compound characteristic polynomial | Symmetric-power compression and collision-state resolvent route | No uniformly faster algorithm established |
@@ -34,6 +34,14 @@ has a [complete argument and certificate review](reviews/chollet_rank_square_rev
 Its exact rational intervals cover continuous spectral ranges and are extended
 analytically to all larger orders and ranks. The rank restriction remains;
 this is not a full resolution and is not counted toward ten.
+
+The [further review](reviews/continuation_obstructions_review.md) covers the
+[failed Lih--Wang coefficient bound](regular/lihw_coefficient_obstruction.md),
+the [integer complement-average obstruction](regular/integer_complement_average_obstruction.md),
+the [exact failure of geometric descent below the derangement value](sign/brualdi_low_permanent_scaling_obstruction.md),
+and the [Chollet variational identities](inequalities/chollet_laplacian_checkpoint.md).
+Each note states the hypothesis it rejects or the exact unproved condition
+that remains. None is a counterexample to the original named conjecture.
 
 The previous campaign's general P18 approximation theorem, Pula-Song-Wanless threshold, and Malek endpoint theorem retain the different scopes in [the existing continuation record](../NEXT.md). They are not new results of this continuation and are not counted here as three full numbered entries.
 
