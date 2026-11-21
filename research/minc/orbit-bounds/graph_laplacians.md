@@ -65,3 +65,5 @@ Pant and Singh's Theorem 4.3 proves that a one-point sum of hereditarily strong 
 ## Scope and prior work
 
 The published inputs are Lieb's permanent inequality and the hereditary one-point-sum theorem. Pant and Singh's paper proves the strong comparison for graphs assembled from bipartite blocks and cycles, and the ordinary comparison also for complete blocks. It asks the unrestricted simple-graph question explicitly. Searches for the all-graph conclusion, Laplacian Hadamard squares and nonbacktracking bounds found that paper and graph-specific extremal results. Priority remains subject to independent literature review. The present proof uses unit edge weights; arbitrary weighted graphs are a separate question. [Lieb](https://www.jstor.org/stable/24901474), [Pant and Singh, concluding question](https://arxiv.org/html/2604.24192v2#S6)
+
+The [exact replay](verify_laplacians.py) checks the assignment of each simple cycle to its oriented edges using rational first-return probabilities and the rational lower estimate in (4). It also compares the permanents directly for the test graphs and their one-vertex deletions.
