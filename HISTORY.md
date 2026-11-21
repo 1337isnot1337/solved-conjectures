@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak source-level exceptional case
+
+Removed the stronger pairwise restriction from the positive-slack endpoint and proved all exceptional-size graph partitions under the weaker source-derived residue bounds and a fifth-test witness. Strict compilation, a 681-theorem full-chain axiom audit and isolated kernel replay passed. Test 5 translation, general AVD reductions, existence constructions and the combined gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak source-level zero slack
 
 Derived the weaker residue consequence of original tests 1 and 2 and proved all exceptional zero-slack graph partitions under it and a fifth-test witness. Positive slack still assumes stronger pairwise bounds. Strict compilation, a 580-theorem full-chain axiom audit and isolated kernel replay passed; source translation, AVD reductions and combined gate remain.

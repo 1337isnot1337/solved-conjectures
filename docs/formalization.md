@@ -15,13 +15,17 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak source-level exceptional case, 21 November 2026
+
+Lean proves the complete exceptional-size graph construction under the weaker residue bounds derived from tests 1 and 2, with a fifth-test witness, for the tripod and a reserved short arm. The stronger pairwise assumption is no longer required. Translating test 5, general AVD reductions and existence constructions remain. Strict compilation, a 681-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak source-level zero slack, 21 November 2026
 
 Lean derives the weaker residue bound from source tests 1 and 2, and proves every exceptional zero-slack graph partition under that bound and a fifth-test witness. Positive slack still assumes stronger pairwise bounds, and test 5 translation, AVD reductions and existence constructions remain. Strict compilation, a 580-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
 
 ## Horňák–Woźniak exceptional graph partitions, 21 November 2026
 
-**Scope correction:** The exceptional theorem requires every pair of regular-arm residues to satisfy the bound, whereas admissibility only bounds the sum outside a largest residue. The repository checker accepts capacities (4, 7, 11), whose residues modulo 2 are (0, 1, 1), violating the pairwise hypothesis. Thus these theorems do not yet cover every admissible triple.
+**Historical scope correction:** The earlier exceptional theorem required every pair of regular-arm residues to satisfy the bound, whereas admissibility only bounds the sum outside a largest residue. The repository checker accepts capacities (4, 7, 11), whose residues modulo 2 are (0, 1, 1), violating the pairwise hypothesis. Those earlier theorems do not cover every admissible triple; the later source-level exceptional theorem above removes this stronger hypothesis.
 
 Lean proves every exceptional-size graph partition for the tripod and for a reserved short arm under stated residue and fifth-test hypotheses, covering zero and positive slack. Original-test translation, general AVD reductions, and existence constructions remain. Strict compilation, a 541-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
 
