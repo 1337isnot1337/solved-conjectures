@@ -4,8 +4,8 @@ This is an unproved sufficient statement, not a claimed theorem.
 
 For a graph `G`, define
 
-```
-σ(G) = min { α(F) : F is a spanning triangle-free subgraph of G }.
+```math
+\sigma(G)=\min\{\alpha(F):F\subseteq G\text{ is spanning and triangle-free}\}.
 ```
 
 If one could prove `σ(G)≤γ(G)` for every finite graph, Erdős151 would follow:
@@ -25,9 +25,10 @@ to `γ(I)`. Simultaneous deletion therefore survives that example.
 For a proposed bound `r=γ(G)`, introduce a binary variable `x_e` for every
 edge of `G`, indicating that the edge is kept in `F`. The conditions are
 
-```
-sum(x_e : e is an edge of triangle T) ≤ 2      for every triangle T of G;
-sum(x_e : e has both ends in S) ≥ 1           for every (r+1)-vertex set S.
+```math
+\sum_{e\in E(T)}x_e\le2\quad\text{for every triangle }T\text{ of }G;
+\qquad
+\sum_{e\in E(G[S])}x_e\ge1\quad\text{for every }S\text{ with }|S|=r+1.
 ```
 
 The first family makes `F` triangle-free. The second says that no independent

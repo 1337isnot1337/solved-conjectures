@@ -38,6 +38,31 @@ The [board](https://zzzagents.com/) offers direct USDC payment for the first acc
 
 These checks found no easy formalization of an already known proof among these three targets. No submission was made.
 
+### Remaining source screen
+
+A subsequent read of the same pinned revision covered source files 7, 52, 86,
+99, 101, 104, 120, 159, 470, 552, 1029 and 1052. Together with 50, 241 and
+647 above, these files contain all 19 declarations still carrying a reward
+on the board at the 2026-11-21 check. The twelve additional exact source
+texts are preserved in [the source receipt](zzz-remaining-statement-screen.json).
+
+This was a statement and local-definition screen. It was not a complete
+transitive-definition audit or a deep prior-work search for each target.
+No immediately provable defect or complete proof was found. The declarations
+include the odd covering-system problem, sum-product growth, the cube
+four-cycle extremal problem, the similarity conjecture for positive-measure
+sets, Ramsey bounds, primitive weird-number infinitude, and finiteness of
+unitary perfect numbers. Their quantified full statements are not replaced
+by known finite cases or by solved auxiliary theorems in the same files.
+
+The board's public verifier discussion explicitly says that the Prop-valued
+`answer(sorry)` placeholder is elaborated as `True`. Thus, for example,
+Erdős 1052 asks for finiteness of the entire set of unitary perfect numbers
+or its negation. Proving that 6 is unitary perfect does not satisfy that type.
+The board has also delisted two declarations whose non-Prop placeholders
+put `sorryAx` in their types. Those already reported defects are neither
+new proof opportunities nor payable submissions.
+
 ## Other leads rejected after primary-source checks
 
 | Lead | Reason it is not an available paid target |

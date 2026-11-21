@@ -8,8 +8,8 @@ Erdős151.
 Let `I` be the 12-vertex icosahedral graph from
 `edge-deletion-obstruction.json`. The verified values are
 
-```
-γ(I)=6,       γ(I−e)=7 for each edge e of I.
+```math
+\gamma(I)=6,\qquad \gamma(I-e)=7\quad(e\in E(I)).
 ```
 
 Let `C` be a five-cycle on vertices `12,13,14,15,16`, in that cyclic order.
@@ -26,8 +26,8 @@ is independent in `C` and avoids vertex 12. Thus the combined set contains
 neither a cycle edge nor the bridge, and it remains clique-avoiding in `G`.
 It has size eight. Therefore
 
-```
-|V(G)|=17,        γ(G)=8<17/2.
+```math
+|V(G)|=17,\qquad \gamma(G)=8\lt17/2.
 ```
 
 The triangle edges of `G` are exactly the thirty edges of `I`. After deleting
@@ -37,8 +37,8 @@ restriction argument gives `γ(G−e)≤7+2=9`. A seven-vertex witness from the
 certificate for `I−e`, together with `{13,15}`, gives the reverse inequality.
 Hence
 
-```
-γ(G−e)=9>8 for every triangle edge e of G.
+```math
+\gamma(G-e)=9>8\quad\text{for every triangle edge }e\text{ of }G.
 ```
 
 Connectedness and a strict half-order threshold therefore both fail to fix

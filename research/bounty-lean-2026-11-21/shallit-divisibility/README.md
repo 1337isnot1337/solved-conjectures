@@ -95,6 +95,8 @@ To use it for the shift problem, a proposed construction must place the same lar
 
 Uniform digit substitution and fixed padding do not provide the needed relative error, which decreases as $`k^{-n}`$. No finite automaton implementing a sufficient paired guard has been constructed.
 
+Subsequent work gives a stronger obstruction: under the promise that every integer quotient is a base power, integer-quotient existence is decidable for a fixed prime-power base. It is also decidable for any fixed base when all denominators are coprime to that base. The [complete promise-class proof](power-only-promise.md) gives an explicit finite witness bound by pumping the denominator-zero prefix. Thus a reduction that enforces this strong promise cannot establish undecidability in those settings.
+
 ## Why an independent regular code cannot supply the guard
 
 The following elementary lemma rules out a broad simple approach. It is a research obstruction, not a claimed new theorem or bounty solution.
@@ -146,14 +148,13 @@ Thus an infinite regular language of individual numerals cannot be a multiplicat
 
 ## Current proof obligations
 
-The attempted undecidability route needs a regular paired construction that simultaneously:
+The strong base-power isolation plan is excluded in the settings of the promise-class theorem. A weaker reduction could still allow non-power quotients when they also imply valid source computations.
 
-1. permits every genuine rewriting history;
-2. makes an integer quotient force the endpoint shift lengths to agree;
-3. makes the resulting overlap recover a genuine history;
-4. is given by an effective finite automaton, without an unbounded hidden counter.
+A second idea uses a divisor of the form “base to the row width, minus one,” so multiplication by that divisor records differences between shifted rows of a proposed history. The unresolved obligation is carry and borrow soundness: ordinary integer equality permits transfers between digit columns. Sidon codes, one-hot symbols, or zero guard slots do not by themselves show that reconstructed quotient rows remain in the intended simulation alphabet. No valid finite-automaton construction has been obtained.
 
-The second and fourth conditions remain unresolved. A separate agent is considering a decision-theoretic approach. No finite search, conditional lemma, restricted algorithm, or obstruction above is counted as a solved bounty.
+An [exact counterfamily](row-difference-obstruction.md) shows that repeating the same one-hot transition can pass the divisibility test despite failing to be a legal state history; increasing any fixed slot separation does not fix that bare inference. This avenue is stopped pending a new invariant.
+
+The independent [decision-procedure investigation](decision-approach.md) and [arithmetic literature review](arithmetic-literature.md) give restricted algorithms and an exact two-counter reformulation, but no general decision procedure. No finite search, conditional lemma, restricted algorithm, or obstruction above is counted as a solved bounty.
 
 ## Source receipt
 

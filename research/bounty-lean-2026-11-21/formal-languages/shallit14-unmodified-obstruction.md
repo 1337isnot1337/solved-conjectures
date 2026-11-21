@@ -95,9 +95,14 @@ exact division and the two modular identities, and excludes a base power.
 The general family follows from the displayed algebra and congruences;
 the script is not a substitute for that argument.
 
-The unresolved step is a finite-state construction that excludes all
-non-power integer quotients while retaining the undecidable rewriting
-instances. Requiring the two separated blocks to have equal arbitrary
-length would silently add a nonregular constraint. No such construction,
-and no complete decision algorithm for the original problem, has been
-obtained.
+Requiring the two separated blocks to have equal arbitrary length would
+silently add a nonregular constraint. A subsequent
+[promise-class theorem](../shallit-divisibility/power-only-promise.md) shows
+that the stronger plan of excluding every non-power integer quotient cannot
+give an undecidability reduction in prime-power bases, including base 4.
+It gives a decision procedure on precisely that promised class.
+
+A different reduction could still allow incidental non-power integer
+quotients if their existence implies a valid source computation. No such
+construction, and no complete decision algorithm for the unrestricted
+problem, has been obtained.
