@@ -402,3 +402,9 @@ The [packet degree bound](orbit-bounds/packet_degree.md) includes every path and
 
 
 **Finite C34-class corollary (21 November 2026).** The PSD-core theorem's uniform positive curvature transfers to a quantitative **finite** Lih-Wang chord inequality for all sufficiently large substochastic completions \(A_M(B)\) of each fixed nonzero symmetric PSD core: \(p_M(t)\le(1-t)d_N+t\,\operatorname{per}A_M(B)-(d_N/4)\|B\|_F^2t(1-t)\) for all \(0\le t\le1\), where \(N=M+m\). This includes explicitly indefinite boundary matrices. It is a **partial input family**, not full C34.
+
+## Modular characteristic polynomials and sign supports
+
+The [fixed-precision algorithm](compound-precision/fixed_precision.md) computes every characteristic coefficient modulo a prescribed power of two in quasi-linear time in the compound dimension for fixed precision, with polynomial dependence on the input order. The [modulo-four specialization](compound-precision/mod_four.md) has an exact reference implementation. Full integer reconstruction at a uniformly improved cost remains open. [P17 checkpoint](https://github.com/1337isnot1337/solved-conjectures/issues/139#issuecomment-7058871329)
+
+The [Ferrers support exclusion](sign-matrices/ferrers_extremizers.md) rules out Kräuter attainment on every nested negative support from order six onward. Its fixed-divisor estimate also survives arbitrary changes supported on a bounded number of rows and columns. [C36 checkpoint](https://github.com/1337isnot1337/solved-conjectures/issues/139#issuecomment-7058696968)
