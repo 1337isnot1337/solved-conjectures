@@ -1,6 +1,8 @@
 # Integrality of the minimum permanent
 
-Fix $0<\epsilon<1/2$. For $\epsilon n\le k\le(1-\epsilon)n$, take any integer entry cap $1\le K=o(k)$. For all sufficiently large orders, **every minimizer of the permanent over nonnegative integer matrices of margins $k$ and entries at most $K$ is binary**. The cap may grow with $n$. Equivalently, an unrestricted nonbinary minimizer in this density range must have some entry at least $\delta(\epsilon)k$ for all sufficiently large $n$, for some $\delta(\epsilon)>0$. The latter is a consequence of the capped statement. This leaves the [full conjecture](https://yair-lavi.com/mincs-list/conjecture-24/index.html) open. [Wanless](https://users.monash.edu.au/~iwanless/papers/Schrijminper.journalvers.pdf) proved equality of the exponential growth rates at fixed degree.
+Fix $\epsilon>0$. For $\epsilon n\le k\le n$, take any integer entry cap $1\le K=o(k)$. For all sufficiently large orders, **every minimizer of the permanent over nonnegative integer matrices of margins $k$ and entries at most $K$ is binary**. Thus a sequence of unrestricted nonbinary minimizers of positive density must have an entry at least $\delta(\epsilon)k$ for some $\delta(\epsilon)>0$ and all sufficiently large orders.
+
+**There is also an absolute $\eta>0$ such that the unrestricted conjecture holds, with every minimizer binary, for every order and every degree $k\ge(1-\eta)n$.** In particular this includes arbitrary defects on the derangement line $k=n-1$ for all sufficiently large orders. The argument gives no numerical value for $\eta$. The [full conjecture](https://yair-lavi.com/mincs-list/conjecture-24/index.html) includes all smaller degrees. [Wanless](https://users.monash.edu.au/~iwanless/papers/Schrijminper.journalvers.pdf) proved equality of the exponential growth rates at fixed degree.
 
 ## Spectrum
 
@@ -28,15 +30,19 @@ Write $C=\gamma\mathbf1\mathbf1^T+v\mathbf1^T+\mathbf1w^T+E$ with $E=QCQ$ and $v
 
 ## Removing a repeated edge
 
-Suppose $G$ is nonbinary. Choose $i,j$ with $A_{ij}=a\ge2/k$. Each zero set of row $i$ and column $j$ has size at least $n-k\ge\epsilon n$. Their opposite rectangle has positive mass since for any row set $S$ and column set $V$,
-$$\left|A(S,V)-|S|\,|V|/n\right|\le\|B\|_{\rm op}\sqrt{|S|\,|V|}.$$
-Thus some $p,q$ have $A_{iq}=A_{pj}=0$, $A_{pq}=b\ge1/k$. Put $L=E_{ij}+E_{pq}-E_{iq}-E_{pj}$ with $E_{ij}$ the single-cell unit matrix. In the remaining column and row coordinates put $r_s=A_{ps}-A_{is}$, $c_t=A_{tq}-A_{tj}$. Expansion in the two selected rows or columns gives
-$$\partial_L\operatorname{per}A=(a+b)\operatorname{per}M+\sum_{t,s}c_t r_s\,\operatorname{per}M(t\mid s),\qquad
+Suppose $G$ is nonbinary. Choose $i,j$ with $A_{ij}=a\ge2/k$. Its column has an entry $A_{pj}=0$, since the integer column total is at most $n$ and one entry is repeated. The equal sums of rows $p,i$ force a column $q$ with $A_{pq}>A_{iq}$, since the reverse inequality is strict at $j$. Put $b=A_{pq}$ and $e=A_{iq}$, so $b-e\ge1/k$ by integrality. Put $L=E_{ij}+E_{pq}-E_{iq}-E_{pj}$ with $E_{ij}$ the single-cell unit matrix. In the remaining column and row coordinates put $r_s=A_{ps}-A_{is}$, $c_t=A_{tq}-A_{tj}$. Expansion in the two selected rows or columns gives
+$$\partial_L\operatorname{per}A=(a+b-e)\operatorname{per}M+\sum_{t,s}c_t r_s\,\operatorname{per}M(t\mid s),\qquad
 \partial_L^2\operatorname{per}A=4\operatorname{per}M.$$
 For the first identity expand the difference of the $ij,iq$ cofactors in row $p$, and the difference of the $pq,pj$ cofactors in row $i$. Each remaining cofactor difference expands in the unique one of columns $j,q$ still present. The permanent in this direction has degree at most two.
 
 Both $r,c$ have Euclidean norm at most $2\sqrt a$ and coordinate sum of magnitude at most $2a$. The cofactor ratios for $M$ are $D_{tt}F_{ss}C_{ts}$, hence the ratio of the error sum to $\operatorname{per}M$ is $(Dc)^T C(Fr)$. The scaled vectors still have norm $O(\sqrt a)$ and coordinate sums $O(a)$, by Cauchy–Schwarz against the scaling vectors minus one. The constant piece of $C$ contributes $O(a^2)$, the two one-sided pieces contribute $o(a^{3/2})$, and the centered piece contributes $o(a)$. The estimates are uniform along any sequence of these choices.
 
-At step $h_0=1/k$, the matrix $k(A-h_0L)$ is legal and within the same cap. Its normalized-matrix permanent changes by
-$$h_0\operatorname{per}M\,[-a-b+2h_0+o(a)]<0$$
-since $a+b-2h_0\ge a/2$. The scaling to a doubly stochastic matrix ensures $\operatorname{per}M>0$. This contradicts minimality and proves the result. The hypotheses on the degree and the largest multiplicity are used respectively for the zero rectangle and for the diffuse spectral and cofactor estimates.
+At step $h_0=1/k$, the matrix $k(A-h_0L)$ is legal and within the same cap since $e+h_0\le b\le a$. Its normalized-matrix permanent changes by
+$$h_0\operatorname{per}M\,[-a-b+e+2h_0+o(a)]<0$$
+since $a+b-e-2h_0\ge a-h_0\ge a/2$. The scaling to a doubly stochastic matrix ensures $\operatorname{per}M>0$. This contradicts minimality and proves the capped statement.
+
+## Unrestricted minimizers near full density
+
+Suppose instead that $k/n\to1$ and $G$ is an unrestricted minimizer. The binary competitor gives $1\le P(B)\le e^{u_0/2}+o(1)\to1$. Uniform Frobenius stability then implies $\|A-J_n\|_F\to0$, so the largest normalized entry tends to zero. Set the cap equal to the actual maximum integer entry of each minimizer. This is $o(k)$ and the same minimizer also minimizes within that cap. The capped result thus excludes unrestricted nonbinary minimizers along every such sequence with $n\to\infty$.
+
+If there were no absolute band valid in every order, degrees and orders with a nonbinary minimizer could be chosen with $k/n\to1$. At bounded orders a subsequence would have $k=n$, whose unique minimizer is the all-ones matrix by van der Waerden. The alternative of unbounded orders contradicts the preceding argument. This proves the second assertion.
