@@ -51,8 +51,6 @@ jobs:
           python results/fang-zhang-zhao/independent_check.py
           python results/fang-zhang-zhao/independent_symbolic_check.py
           python results/fang-zhang-zhao-sturm/verify.py
-      - name: Check reciprocal q-gamma determinant identities
-        run: python results/kvz-reciprocal-qgamma/verify.py
       - name: Check Franklin profile identities
         run: python results/mccrea-single-crossover/verify.py
       - name: Check Pula–Song–Wanless identities and parameter conventions
@@ -154,5 +152,6 @@ jobs:
         run: |
           curl --fail --silent --show-error --location --retry 3 https://raw.githubusercontent.com/vzsky/13-lonely-runners/29311663c21835d67529b29a4acf6631fcad5c63/result_12 -o "$RUNNER_TEMP/first-lifts.log"
           python3 results/tight-eleven-to-fourteen/verify.py --legacy-log "$RUNNER_TEMP/first-lifts.log"
+
 
 

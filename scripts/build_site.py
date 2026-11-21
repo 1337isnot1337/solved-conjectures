@@ -62,7 +62,6 @@ STATUS_LABEL_SLUGS = {
     "Chen–Kitaev–Zhang's record conjectures": "chen-kitaev-zhang-records",
     "Zhu's generalized Jacobi–Stirling conjecture": "zhu-jacobi-stirling",
     "Fang–Zhang–Zhao's Sturm conjecture": "fang-zhang-zhao-sturm",
-    "Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture": "kvz-reciprocal-qgamma",
     "Fang–Zhang–Zhao's infinite-log-convexity conjecture": "fang-zhang-zhao",
     "Baricz–Pogány's asymptotic-coefficient positivity conjecture": "baricz-pogany-coefficients",
     "Malek's conjecture": "malek-subpermanent",
@@ -749,5 +748,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 

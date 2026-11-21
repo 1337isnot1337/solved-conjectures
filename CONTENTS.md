@@ -38,12 +38,11 @@ Both complete arguments passed independent internal mathematical review. They ar
 | :--- | :--- | :---: | :--- |
 | [McCrea's conjecture](results/mccrea-single-crossover/) | Complete proposed proof of the unique linear-density crossover for the two fixed-perimeter Franklin statistics, for every modulus at least three and every permitted density. Positive power-series factorizations give local coefficient asymptotics including the floor; opposite monotonicity of the two growth exponents gives existence and uniqueness. Independently reviewed internally. | Not formalized | [Proof](results/mccrea-single-crossover/PROOF.md) · [Priority audit](results/mccrea-single-crossover/NOVELTY.md) · [Review](results/mccrea-single-crossover/REVIEW.md) · [Checks](results/mccrea-single-crossover/verify.py) · [Issue 168](https://github.com/1337isnot1337/solved-conjectures/issues/168) |
 
-## Hoggatt polynomials and sign-regular kernels
+## Hoggatt polynomials
 
 | Result | Finding | Lean | Evidence |
 | :--- | :--- | :---: | :--- |
 | [Fang–Zhang–Zhao's Sturm conjecture](results/fang-zhang-zhao-sturm/) | Complete proposed proof of strict consecutive interlacing for every real base greater than one and every integer Hoggatt parameter at least two. Together with the source's base-one theorem, this resolves its full Conjecture 4.1. The Jackson derivative induction uses a change of variable independent of the row index. Two internal reviews found no gap. | Not formalized | [Proof](results/fang-zhang-zhao-sturm/PROOF.md) · [Priority audit](results/fang-zhang-zhao-sturm/NOVELTY.md) · [Checks](results/fang-zhang-zhao-sturm/verify.py) · [Issue 162](https://github.com/1337isnot1337/solved-conjectures/issues/162) |
-| [Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture](results/kvz-reciprocal-qgamma/) | Complete proposed proof of strict sign regularity at every order for every base between zero and one and arbitrary positive real nodes. A positive double-series factorization and finite Cauchy–Binet formulas give the signature and preserve strictness in the limit. Independently reviewed internally. | Not formalized | [Proof](results/kvz-reciprocal-qgamma/PROOF.md) · [Priority audit](results/kvz-reciprocal-qgamma/SOURCES.md) · [Checks](results/kvz-reciprocal-qgamma/verify.py) · [Issue 164](https://github.com/1337isnot1337/solved-conjectures/issues/164) |
 | [Fang–Zhang–Zhao's infinite-log-convexity conjecture](results/fang-zhang-zhao/) | Full universal conjecture disproved. Every integer Hoggatt parameter at least four gives a failure: a polynomial factorization proves a negative third iterate for parameters at least six, and exact fourth iterates cover four and five. Independent plane-partition enumeration and symbolic checks agree. The separate Baxter conjecture is not resolved. | Not formalized | [Disproof](results/fang-zhang-zhao/PROOF.md) · [Priority audit](results/fang-zhang-zhao/NOVELTY.md) · [Review](results/fang-zhang-zhao/REVIEW.md) · [Issue 160](https://github.com/1337isnot1337/solved-conjectures/issues/160) |
 
 These proofs are unrefereed. The audits found no earlier resolution in the inspected material and explicitly record inaccessible full texts. Internal review and exact diagnostics do not establish external peer review or exhaustive priority.
@@ -183,6 +182,7 @@ These are mathematical claims with explicit proofs and computer checks, **not pe
 - Václav Kotesovec’s [conjectured exponential base](https://oeis.org/A401948) for the counting function in [Erdős Problem 607](https://www.erdosproblems.com/607). The verifier accepts the [10,000-term reference table](https://oeis.org/A401948/b401948.txt) with the option `--table b401948.txt`.
 
 For the other entries, primary publications and conjecture identifiers are cited in their linked proof notes.
+
 
 
 

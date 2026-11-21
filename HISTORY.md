@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-21 — Restored prior-resolution exclusions for two KVZ targets
+
+Removed the reintroduced reciprocal q-gamma and Hankel-product packages and their result, status and verifier registrations. Both targets had already been excluded on November 20; today's reintroduction mistakenly reversed that established priority decision. Neither counts as a new resolution. The other Karp–Vishnyakova–Zhang targets are separate and are retained.
+
+The reciprocal assertion was proved in [Knowledge Sense's October 13 manuscript](https://github.com/KnowledgeSense/math/blob/b95a52a54597e8b01c1a28486f2a9b29a3a54c58/preprints/Strict-Sign-Regularity-of-the-Reciprocal-Jackson-q-Gamma-Kernel-October-13-2026/build/source/strict-sign-regularity-of-the-reciprocal-jackson-q-gamma-kernel.tex), preserved at revision `b95a52a54597e8b01c1a28486f2a9b29a3a54c58`. Its full proof covers every base between zero and one, every determinant order and all increasing positive real grids. The Hankel-product negation already follows from Simon's 2012 beta–gamma kernel theorem, [arXiv:1207.6464](https://arxiv.org/pdf/1207.6464), through the logarithmic coordinate change and common translation recorded in the [November 20 correction](https://github.com/1337isnot1337/solved-conjectures/blob/a354c349b80c70bb575ffc0230d17c3ced5ec7f7/research/kvz-hankel-product/PRIOR-SIMON-CORRECTION.md). Both prior implications were reread and checked.
+
+The campaign checkpoint was reduced by two and now links to a [priority correction](research/campaign-20261121/kvz-prior-resolution.md). The withdrawn independent proofs remain available in commit history, including the [pre-cleanup snapshot](https://github.com/1337isnot1337/solved-conjectures/tree/0e4d396261505b89eb5dddbd264be7a212d3e78c/results). Their mathematical validity does not make the targets previously open. The older November 21 addition entries below are historical records superseded by this correction.
+
 ## 2026-11-21 — Corrected Hankel-product prior-art error
 
 Removed the reintroduced Karp–Vishnyakova–Zhang Hankel-product result directory, catalogue entries, site registration, and verifier references. Simon's *Produit Beta-Gamma et régularité du signe*, arXiv:1207.6464 (2012), printed page 4 theorem and page 16 Remark (b), already refutes the full assertion after the logarithmic change of variables. Issue 94 had documented this exclusion on 20 November; the current campaign failed to check that issue before reintroducing the claim. The new elementary examples remain mathematically valid but cannot count as a new resolution. Their previous versions remain in Git history, not in the result catalogue.
@@ -837,6 +845,7 @@ Added a [proof of both vertex-decomposability conjectures](results/hornak-woznia
 ## 2026-11-20 — Sonntag–Teichert conjecture
 
 Added a [proof of connectivity for tournament domination hypergraphs](results/sonntag-teichert/) on their nonisolated vertices. The argument uses minimal closed in-neighbourhoods and also characterizes the disconnected cases for oriented graphs.
+
 
 
 

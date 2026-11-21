@@ -21,21 +21,22 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 ## Resolution count
 
-Complete proposed resolutions with separate internal review and a documented current status audit: **5** at this checkpoint. All remain unrefereed.
+Complete proposed resolutions with separate internal review and a documented current status audit: **4** at this corrected checkpoint. All remain unrefereed.
 
 | Conjecture | Result | Evidence |
 | --- | --- | --- |
 | López Pouso–Segura's conjectures | Proved the complete sign, strict monotonicity and exact limit assertions for the three linked Bessel-weight sequences; one result | [Package](../../results/lopez-pouso-segura-bessel/) · [Issue 177](https://github.com/1337isnot1337/solved-conjectures/issues/177) |
 | Fang–Zhang–Zhao's infinite-log-convexity conjecture | Disproved for every Hoggatt parameter at least four; one resolution of the full universal statement | [Package](../../results/fang-zhang-zhao/) · [Issue 160](https://github.com/1337isnot1337/solved-conjectures/issues/160) |
 | Fang–Zhang–Zhao's Sturm conjecture | Proved throughout the source's full range, with a stronger real-base and all-parameter theorem | [Package](../../results/fang-zhang-zhao-sturm/) · [Issue 162](https://github.com/1337isnot1337/solved-conjectures/issues/162) |
-| Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture | Proved at all determinant orders, arbitrary positive real nodes and every base between zero and one | [Package](../../results/kvz-reciprocal-qgamma/) · [Issue 164](https://github.com/1337isnot1337/solved-conjectures/issues/164) |
 | McCrea's conjecture | Proved unique linear-density crossover for every permitted modulus and density | [Package](../../results/mccrea-single-crossover/) · [Issue 168](https://github.com/1337isnot1337/solved-conjectures/issues/168) |
 
 A previous six-result checkpoint incorrectly included the already-refuted Hankel-product assertion. Simon's 2012 theorem and repository issue 94 settle that exact statement; it has been removed from this tally and the result catalogue. The new examples do not establish novelty.
 
-The original opening count was zero. The separate Baxter-number conjecture is not resolved by the first row. A bounded floating-point screen of its first 400 terms through 120 iterates found no negative value and supplies no proof. The reciprocal discrete-kernel corollary is not an additional resolution.
+The original opening count was zero. The separate Baxter-number conjecture is not resolved by the Hoggatt disproof. A bounded floating-point screen of its first 400 terms through 120 iterates found no negative value and supplies no proof.
 
 ## Exclusions and active work
+
+The reciprocal q-gamma and Hankel-product targets were mistakenly reintroduced after their November 20 priority exclusions. Both have been removed from the result catalogue and this checkpoint's count. The [pinned prior-resolution correction](kvz-prior-resolution.md) identifies Knowledge Sense's full reciprocal-kernel proof and Simon's beta–gamma theorem with the exact Hankel transfer. Their two independent reproofs do not qualify as new resolutions. The intermediate five-result checkpoint after the Hankel withdrawal still included the previously proved reciprocal kernel; the corrected checkpoint is four.
 
 [Segura's conjecture](segura-prior-resolution.md) was excluded after its complete prior resolution by Segura–Suzuki was located. Other screened targets excluded because of earlier resolutions include Chapoton's arbor-root claim, Athanasiadis–Chapoton preorder real-rootedness, the Bourin–Lee three-contraction conjecture and the Johnston–Plosker–Torrance–Varona power inequality. Existing repository results and external contributions remain outside this count.
 
@@ -44,4 +45,5 @@ The Gray–Payne–Swisher–Watson fixed-number Franklin inequality and their m
 Mao–Wang's joint triangle-square conjecture has a reviewed proof of the Delannoy clause, with the Eulerian clause still open; it is not counted. Zeng's endpoint q-Narayana total-nonnegativity conjecture and Alexandersson's balanced-array conjecture have finite diagnostics but no resolution. Research continues. [Parking-polytope research](../parking-magic/) has complete symbolic coefficient checks through dimension six, with no arbitrary-dimension proof. [Further exclusions](exclusions-checkpoint.md) record exact prior resolutions found during the current search.
 
 The requested goal is ten; this file records evidence and does not treat that goal as a reason to lower the proof or novelty requirements.
+
 
