@@ -1,0 +1,15 @@
+{
+  "n": 4,
+  "period": 24,
+  "maximum_rank": 3,
+  "noncontradictory_constraints": false,
+  "time_limit_seconds": 45.0,
+  "wall_seconds": 45.202873171001556,
+  "variables": 4620,
+  "integer_variables": 204,
+  "constraints": 16405,
+  "solver_status": 1,
+  "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+  "candidate": null,
+  "scope": "An unsuccessful bounded search is not a proof of the uniform conjecture."
+}
