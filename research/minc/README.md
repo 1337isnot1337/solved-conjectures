@@ -76,3 +76,9 @@ The ten entries already marked resolved by the source are excluded: conjectures 
 - [Regular orbit images and abelian dominance](sign-matrices/abelian_review.md): a stronger absolute-sum inequality follows from Grone–Pierce and Lieb–Fischer. The proof is checked, but the original Grone–Pierce corollaries remain inaccessible and priority is unverified. The unrestricted dominance conjectures remain open.
 
 All three parallel workers completed their written checkpoints. No extra full conjecture solution was obtained from these routes, and none of these partial results or obstructions increases the full-entry count. The ten-resolution target is unmet.
+
+## Partial diagonal family theorem
+
+The [partial-diagonal proof](combinatorial/partial_diagonal_nonbarycentric.md) shows that for every `n >= 3` and `2 <= k < n`, the barycenter of the doubly stochastic face with zeros in the first `k` diagonal positions is not even stationary. It completes the all-parameter assertion suggested by the earlier partial results on this family. The proof uses the stationary-barycenter matching law and a strict log-convexity determinant for derangement counts. Root and inequalities reviews found no gap; the written argument covers all parameters.
+
+The [source review](combinatorial/partial_diagonal_root_review.md) states the limits: Minc's 1994 full text was not obtained, no separate named conjecture was verified, and priority remains unconfirmed. This is kept as research, not added to the solved-conjecture count. It does not settle the unrestricted Problem 15 or the zero-diagonal Conjecture 44.
