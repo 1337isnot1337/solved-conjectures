@@ -12,8 +12,8 @@ There is no complete bounty solution, unclaimed award-ready formalization, accep
 | --- | --- | --- |
 | `conjectures_bounties` | Erdős 49, exact maximal increasing-totient subsequence equality | [Prime-interval deficit reformulation](erdos49/README.md), independently reviewed; exact diagnostics through two million; full problem unresolved |
 | `demath_zzz_bounties` | Erdős 552(ii), unbounded additive Ramsey deficit | [Countermodel to one proposed inference](erdos552/README.md); this is not a counterexample to the Ramsey conjecture |
-| `other_paid_math` | Unclaimed JSP formalizations and other direct-payment offers; independent proof review | Prior submissions found on the selected shortlist; no award-ready candidate established |
-| Root | [Shallit 14](https://github.com/1337isnot1337/solved-conjectures/issues/229), divisibility in automatic relations | New finite-prime-support promise argument under review; full decision problem unresolved |
+| `other_paid_math` | Unclaimed JSP formalizations and other direct-payment offers; independent proof review | [Selected JSP and RoundSquare exclusions](eligibility/jsp-and-roundsquare.md); independent Shallit proof review; no award-ready candidate established |
+| Root | [Shallit 14](https://github.com/1337isnot1337/solved-conjectures/issues/229), divisibility in automatic relations | [Finite-prime-support promise theorem](shallit/finite-prime-support-promise.md), independently reviewed; [composite-base obstruction](shallit/composite-base-obstruction.md); full decision problem unresolved |
 
 The prior 326-header Conjectures.io screen, JSP screening, and existing Shallit, Sun, Althöfer, Marcus and clique-transversal investigations have been read. They are not new discoveries of this continuation. New targets or extensions are announced in the existing issue threads before publication.
 

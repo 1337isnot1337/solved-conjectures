@@ -67,7 +67,7 @@ For statement 2, put t = floor(sqrt(a)). If F(a) < a+b, then t+1 < b, so t ≤ b
 ```math
 a+b \le t^2+2t+b
       \le (b-2)^2+2(b-2)+b
-      = b^2-b < b^2.
+      = b^2-b \lt  b^2.
 ```
 
 Hence floor(sqrt(a+b)) ≤ b−1, and F(a+b) ≤ a+2b.
@@ -83,7 +83,7 @@ Thus F(m) ≥ m+(t−1)+1 = n.
 For statement 4, set N = F(n)+1 = n+t+2. Then
 
 ```math
-N\le t^2+3t+2 < (t+2)^2,
+N\le t^2+3t+2 \lt  (t+2)^2,
 ```
 
 so floor(sqrt(N)) ≤ t+1. Consequently

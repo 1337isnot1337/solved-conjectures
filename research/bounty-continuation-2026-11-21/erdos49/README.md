@@ -27,15 +27,15 @@ Write `phi` for Euler's totient function and `pi(x)` for the number of primes at
 A **composite chain** is a sequence
 
 ```math
-c_1<c_2<\cdots<c_r,
+c_1\lt c_2\lt \cdots\lt c_r,
 \qquad
-\varphi(c_1)<\varphi(c_2)<\cdots<\varphi(c_r),
+\varphi(c_1)\lt \varphi(c_2)\lt \cdots\lt \varphi(c_r),
 ```
 
 whose entries are composite positive integers. The empty chain is permitted. For a composite integer `c`, define its set of blocking primes by
 
 ```math
-B(c)=\{p:p\text{ is prime and }\varphi(c)<p<c\}.
+B(c)=\{p:p\text{ is prime and }\varphi(c)\lt p\lt c\}.
 ```
 
 For a composite chain `C`, let `B(C)` be the union of `B(c)` over its entries. Put
@@ -65,7 +65,7 @@ Now fix a composite chain `C` with all entries at most `N`. Let `p <= N` be prim
 If `p < c`, the pair is compatible with strict increase exactly when
 
 ```math
-\varphi(p)=p-1<\varphi(c),
+\varphi(p)=p-1\lt \varphi(c),
 ```
 
 or equivalently `p <= phi(c)`. In particular, the endpoint `p = phi(c)+1` is forbidden: it gives equal totients.
@@ -106,7 +106,7 @@ The equivalence of statements 1 and 2 follows from (1).
 For statement 2 implying statement 3, observe that increasing inputs and increasing totients give
 
 ```math
-B(C)\subseteq\{p:p\text{ prime},\ \varphi(c_1)<p<c_r\}.
+B(C)\subseteq\{p:p\text{ prime},\ \varphi(c_1)\lt p\lt c_r\}.
 ```
 
 Since `c_r` is composite, the set on the right has cardinality `pi(c_r)-pi(phi(c_1))`. This proves (2).
@@ -138,8 +138,8 @@ If any counterexample exists, there is a composite chain whose blocking prime in
 This provides a short, exact certificate format for a disproof:
 
 ```math
-c_1<\cdots<c_r,\qquad
-\varphi(c_1)<\cdots<\varphi(c_r),\qquad
+c_1\lt \cdots\lt c_r,\qquad
+\varphi(c_1)\lt \cdots\lt \varphi(c_r),\qquad
 r>\pi(c_r)-\pi(\varphi(c_1)).
 ```
 

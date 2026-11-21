@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "dfa_state_count": 4,
+  "witness": {
+    "base": 6,
+    "A": 362797056,
+    "B": 2048,
+    "quotient": 177147,
+    "bound": 1296,
+    "numerator_digits": "100000000000",
+    "denominator_digits": "000000013252"
+  },
+  "smooth_number_witnesses_checked": 961,
+  "partition_checks": [
+    {
+      "base": 6,
+      "U": 2,
+      "V": 3,
+      "t": 11
+    },
+    {
+      "base": 10,
+      "U": 2,
+      "V": 5,
+      "t": 14
+    },
+    {
+      "base": 12,
+      "U": 4,
+      "V": 3,
+      "t": 10
+    },
+    {
+      "base": 18,
+      "U": 2,
+      "V": 9,
+      "t": 17
+    },
+    {
+      "base": 30,
+      "U": 6,
+      "V": 5,
+      "t": 9
+    },
+    {
+      "base": 72,
+      "U": 8,
+      "V": 9,
+      "t": 9
+    }
+  ],
+  "scope": "counterexample to a universal bound; not a counterexample to existence of some small witness",
+  "full_bounty_solutions": 0
+}

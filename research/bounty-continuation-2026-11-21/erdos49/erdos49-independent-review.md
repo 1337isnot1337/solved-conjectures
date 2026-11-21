@@ -9,7 +9,7 @@ The paid [primes-maximal target](https://conjectures.io/problems/erdos49-erdos-4
 For N ≥ 2, let f(N) be the largest cardinality of a subset of {1,...,N} on which Euler's totient is strictly increasing. A composite chain C is a set of composite numbers in that interval, ordered both by increasing value and by strictly increasing totient. Empty C is allowed. Define
 
 ```math
-B(c)=\{p\text{ prime}:\varphi(c)<p<c\},
+B(c)=\{p\text{ prime}:\varphi(c)\lt p\lt c\},
 \qquad B(C)=\bigcup_{c\in C}B(c).
 ```
 
