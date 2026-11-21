@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-21 — Dospolova–Germanskov–Zaporozhets's conjecture
+
+Added a complete proposed analytic disproof of Conjecture 3.6 in *On Steiner entire function*. For every positive c, the sequence c^k/k! satisfies all the proposed ultra-log-concavity inequalities with equality. A nontrivial Gaussian-bounded compact has expected global Gaussian range strictly larger than twice its maximal deterministic local oscillation. Vitale's published normalized-ratio limit then excludes the entire factorial family.
+
+The [package](results/dospolova-germanskov-zaporozhets/) credits the published Gaussian-process theorems and prominently explains the alternative short deduction from Long's earlier support-function results. The new contribution is the strictness deduction and its application to the later realizability conjecture. No earlier explicit resolution or equivalent strict obstruction was found in the documented searches, subject to the stated access limits.
+
+Three independent mathematical reviews passed. Integration was held when OCR made Vitale's Theorem 1 appear strict; actual local rendering of printed pages 356–357 confirms the non-strict symbol and all normalization constants. The [source-symbol audit](results/dospolova-germanskov-zaporozhets/SOURCE_GLYPH_GATE.md) preserves the correction history. No computation or Lean verification is part of this proof. This subgroup's reviewed proposed-resolution tally is eleven.
+
 ## 2026-11-21 — Chen–Khare–Sahi's conjecture
 
 Added a complete proposed disproof of Conjecture 5's Macdonald Muirhead-semiring implication. The exact rational functional separates the normalized difference for the partitions (4,2,0) and (4,1,1), at q=1/10 and t=9/10, from the entire degree-six semiring cone. A written homogeneity and dominance-cover argument proves that 38 products and seven ordinary monomials exhaust the required generators. This is a full universal-conjecture refutation. The proof also establishes an infinite rectangular-translate family; a separate Hall–Littlewood argument gives a continuous interior parameter family.

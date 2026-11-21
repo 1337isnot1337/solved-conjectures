@@ -54,6 +54,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Dospolova–Germanskov–Zaporozhets's conjecture": "dospolova-germanskov-zaporozhets",
     "Chen–Khare–Sahi's conjecture": "chen-khare-sahi-macdonald",
     "Ferreira–Simon's conjecture": "ferreira-simon-beta-prime",
     "Lyon's conjecture": "lyon-gamma-median",
