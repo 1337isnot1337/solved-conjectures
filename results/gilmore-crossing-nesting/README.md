@@ -49,4 +49,4 @@ The neighboring shifted reverse Bessel Hankel-total-positivity conjecture remain
 - [Published PDF repository record](https://discovery.ucl.ac.uk/id/eprint/10138471/).
 - [arXiv v2](https://arxiv.org/abs/2106.00656v2).
 
-A [partial Lean formalization](../../lean/Conjectures/GilmoreCrossingNesting.lean) proves the actual stabilized block-product entries equal the labelled weighted Dyck-path sums. A decoder produces literal perfect matchings; its bijectivity and preservation of statistics remain open in Lean. Strict compilation and isolated kernel replay passed; the combined gate is pending.
+A [partial Lean formalization](../../lean/Conjectures/GilmoreCrossingNesting.lean) proves the actual stabilized block-product entries equal the labelled weighted Dyck-path sums. A decoder produces literal perfect matchings and is injective up to arc order; surjectivity and preservation of statistics remain open in Lean. Strict compilation and isolated kernel replay passed; the combined gate is pending.

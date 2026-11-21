@@ -471,6 +471,223 @@ theorem closing_rank_order {u d : ℕ} (p : Path u d) (l : Labels p)
   exact (List.pairwise_iff_getElem.mp (openEndpoints_sorted p l)) i.val j.val hi hj hij
 
 
+theorem labels_injective_for_path {u d : ℕ} (p : Path u d) :
+    Function.Injective (fun l : Labels p => (openEndpoints p l, closedArcs p l)) := by
+  induction p with
+  | empty =>
+    intro a b h
+    cases a
+    cases b
+    rfl
+  | @up u d p ih =>
+    intro a b h
+    change Labels p at a b
+    apply ih
+    have h1 := congrArg Prod.fst h
+    have h2 := congrArg Prod.snd h
+    simp only [openEndpoints, closedArcs] at h1 h2
+    have hopen : openEndpoints p a = openEndpoints p b := by simpa using h1
+    exact Prod.ext hopen h2
+  | @down u d p hvalid ih =>
+    intro a b h
+    change Labels p × Fin (u-d) at a b
+    have ho := congrArg Prod.fst h
+    have hc := congrArg Prod.snd h
+    simp only [openEndpoints, closedArcs] at ho hc
+    have hhead := (List.cons.inj hc).1
+    have htail := (List.cons.inj hc).2
+    have hselected := congrArg Prod.fst hhead
+    have ha : a.2.val < (openEndpoints p a.1).length := by rw [openEndpoints_length]; exact a.2.isLt
+    have hb : b.2.val < (openEndpoints p b.1).length := by rw [openEndpoints_length]; exact b.2.isLt
+    have hgeta : (openEndpoints p a.1).getD a.2.val 0 = (openEndpoints p a.1)[a.2.val] := by
+      rw [List.getD_eq_getElem?_getD, List.getElem?_eq_getElem ha]
+      rfl
+    have hgetb : (openEndpoints p b.1).getD b.2.val 0 = (openEndpoints p b.1)[b.2.val] := by
+      rw [List.getD_eq_getElem?_getD, List.getElem?_eq_getElem hb]
+      rfl
+    change (openEndpoints p a.1).getD a.2.val 0 = (openEndpoints p b.1).getD b.2.val 0 at hselected
+    rw [hgeta, hgetb] at hselected
+    have hperm : (openEndpoints p a.1).Perm (openEndpoints p b.1) := by
+      have hpa := List.getElem_cons_eraseIdx_perm ha
+      have hpb := List.getElem_cons_eraseIdx_perm hb
+      apply hpa.symm.trans
+      rw [hselected, ho]
+      exact hpb
+    have hopen : openEndpoints p a.1 = openEndpoints p b.1 := by
+      apply List.Perm.eq_of_pairwise (fun x y _ _ hxy hyx => Nat.le_antisymm hxy hyx)
+        ((openEndpoints_sorted p a.1).imp (fun h => Nat.le_of_lt h))
+        ((openEndpoints_sorted p b.1).imp (fun h => Nat.le_of_lt h)) hperm
+    have hnodup : (openEndpoints p a.1).Nodup :=
+      List.nodup_iff_pairwise_ne.mpr ((openEndpoints_sorted p a.1).imp (fun h => Nat.ne_of_lt h))
+    have hidx : a.2 = b.2 := by
+      apply Fin.ext
+      have hb' : b.2.val < (openEndpoints p a.1).length := by rw [hopen]; exact hb
+      have hsel' : (openEndpoints p a.1)[a.2.val] = (openEndpoints p a.1)[b.2.val] := by
+        simpa only [hopen] using hselected
+      exact (hnodup.getElem_inj (hi := ha) (hj := hb')).mp hsel'
+    have hprev : a.1 = b.1 := ih (Prod.ext hopen htail)
+    exact Prod.ext hprev hidx
+
+
+theorem closedArcs_before {u d : ℕ} (p : Path u d) (l : Labels p) :
+    ∀ e ∈ closedArcs p l, e.2 < u+d := by
+  induction p with
+  | empty => simp [closedArcs]
+  | @up u d p ih =>
+    change Labels p at l
+    intro e he
+    have hh := ih l e he
+    omega
+  | @down u d p h ih =>
+    change Labels p × Fin (u-d) at l
+    intro e he
+    simp only [closedArcs, List.mem_cons] at he
+    rcases he with rfl | he
+    · simp
+    · have hh := ih l.1 e he
+      omega
+
+
+def closingPositions : {u d : ℕ} → Path u d → List ℕ
+  | _, _, .empty => []
+  | _, _, .up p => closingPositions p
+  | _, _, @Path.down u d p _ => (u+d) :: closingPositions p
+
+theorem closingPositions_eq {u d : ℕ} (p : Path u d) (l : Labels p) :
+    (closedArcs p l).map Prod.snd = closingPositions p := by
+  induction p with
+  | empty => rfl
+  | @up u d p ih =>
+    change Labels p at l
+    exact ih l
+  | @down u d p h ih =>
+    change Labels p × Fin (u-d) at l
+    simp only [closedArcs, List.map_cons, closingPositions]
+    rw [ih]
+
+theorem closingPositions_before {u d : ℕ} (p : Path u d) :
+    ∀ t ∈ closingPositions p, t < u+d := by
+  induction p with
+  | empty => simp [closingPositions]
+  | @up u d p ih =>
+    intro t ht
+    have hh := ih t ht
+    omega
+  | @down u d p h ih =>
+    intro t ht
+    simp only [closingPositions, List.mem_cons] at ht
+    rcases ht with rfl | ht
+    · omega
+    · have hh := ih t ht
+      omega
+
+
+theorem closingPositions_injective {u d : ℕ} : Function.Injective (@closingPositions u d) := by
+  intro p
+  induction p with
+  | empty =>
+    intro p' h
+    cases p'
+    rfl
+  | @up u d p ih =>
+    intro p' h
+    cases p' with
+    | up p' =>
+      simp only [closingPositions] at h
+      have hp := ih h
+      subst p'
+      rfl
+    | @down v e p' hd =>
+      simp only [closingPositions] at h
+      have hm : (u+1+e) ∈ closingPositions p := by
+        rw [h]
+        simp
+      have hb := closingPositions_before p (u+1+e) hm
+      omega
+  | @down u d p hv ih =>
+    intro p' h
+    cases p' with
+    | @up v e p' =>
+      simp only [closingPositions] at h
+      have hm : (v+1+d) ∈ closingPositions p' := by
+        rw [← h]
+        simp
+      have hb := closingPositions_before p' (v+1+d) hm
+      omega
+    | down p' hd =>
+      simp only [closingPositions, List.cons.injEq] at h
+      have hp := ih h.2
+      subst p'
+      rfl
+
+
+def DecoratedPath (u d : ℕ) := Σ p : Path u d, Labels p
+
+def decodeState {u d : ℕ} (p : DecoratedPath u d) : List ℕ × List (ℕ × ℕ) :=
+  (openEndpoints p.1 p.2, closedArcs p.1 p.2)
+
+theorem decodeState_injective {u d : ℕ} : Function.Injective (@decodeState u d) := by
+  rintro ⟨p, l⟩ ⟨p', l'⟩ h
+  have hc := congrArg Prod.snd h
+  change closedArcs p l = closedArcs p' l' at hc
+  have hp : p = p' := by
+    apply closingPositions_injective
+    rw [← closingPositions_eq p l, ← closingPositions_eq p' l', hc]
+  subst p'
+  have hl : l = l' := labels_injective_for_path p h
+  subst l'
+  rfl
+
+
+def decodeMatching {u : ℕ} (p : DecoratedPath u u) : List (ℕ × ℕ) := closedArcs p.1 p.2
+
+theorem decodeMatching_injective {u : ℕ} : Function.Injective (@decodeMatching u) := by
+  intro p q h
+  apply decodeState_injective
+  apply Prod.ext
+  · have hp : openEndpoints p.1 p.2 = [] := by
+      apply List.eq_nil_of_length_eq_zero
+      rw [openEndpoints_length]
+      omega
+    have hq : openEndpoints q.1 q.2 = [] := by
+      apply List.eq_nil_of_length_eq_zero
+      rw [openEndpoints_length]
+      omega
+    change openEndpoints p.1 p.2 = openEndpoints q.1 q.2
+    rw [hp, hq]
+  · exact h
+
+
+theorem closedArcs_sorted {u d : ℕ} (p : Path u d) (l : Labels p) :
+    (closedArcs p l).Pairwise (fun a b => b.2 < a.2) := by
+  induction p with
+  | empty => simp [closedArcs]
+  | @up u d p ih =>
+    change Labels p at l
+    exact ih l
+  | @down u d p h ih =>
+    change Labels p × Fin (u-d) at l
+    simp only [closedArcs, List.pairwise_cons]
+    constructor
+    · intro e he
+      exact closedArcs_before p l.1 e he
+    · exact ih l.1
+
+
+theorem decodeMatching_injective_up_to_perm {u : ℕ} (p q : DecoratedPath u u)
+    (h : (decodeMatching p).Perm (decodeMatching q)) : p = q := by
+  apply decodeMatching_injective
+  apply List.Perm.eq_of_pairwise (le := fun a b : ℕ × ℕ => b.2 < a.2 ∨ (a.2 = b.2 ∧ a.1 ≤ b.1))
+    (fun a b _ _ hab hba => by
+      rcases hab with hab | ⟨h2, h1⟩ <;> rcases hba with hba | ⟨h2', h1'⟩
+      · omega
+      · omega
+      · omega
+      · apply Prod.ext <;> omega)
+    ((closedArcs_sorted p.1 p.2).imp (fun h => Or.inl h))
+    ((closedArcs_sorted q.1 q.2).imp (fun h => Or.inl h)) h
+
+
 section Ring
 variable {S : Type*} [CommRing S]
 

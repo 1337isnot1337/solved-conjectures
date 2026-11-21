@@ -26,6 +26,7 @@ run_cmd do
     `BrownInteger.derivative_bound,
     `BrownMol.P_degree,
     `BrownMol.finite_root,
+    `GilmoreCrossingNesting.decodeMatching_injective_up_to_perm,
     `GilmoreCrossingNesting.closing_rank_order,
     `GilmoreCrossingNesting.completePath_matching,
     `GilmoreCrossingNesting.matrixEntry_eq_labelledPathSum,
