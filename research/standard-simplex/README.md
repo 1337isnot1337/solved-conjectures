@@ -144,6 +144,24 @@ The [root](NEGATIVE_ROOT_REVIEW.md), [algebra](NEGATIVE_ASSEMBLY_ALGEBRA_REVIEW.
 
 The [negative-specific source audit](NEGATIVE_PRIOR_AUDIT.md) and [independent archive comparison](NEGATIVE_ARCHIVE_COMPARISON.md) credit the older unrestricted three-cell theorem and the prior balanced first-moment input. The latter comparison rereads 22 archive bodies and four primary texts with exact scopes and hashes. It retains the earlier archive decoding limits. This remains a small-correlation partial theorem and adds no resolved conjecture.
 
+### Quantitative negative noise stability
+
+[NEGATIVE_NOISE_STABILITY.md](NEGATIVE_NOISE_STABILITY.md) strengthens the small-negative theorem after decreasing its threshold. For every fixed $`q`$, constants $`\widehat t_q,\nu_q^->0`$ work in every $`d\ge q-1`$ and for arbitrary cell masses:
+
+```math
+S_{-t}(\mathcal A)-S_{-t}(\mathcal C)
+\ge\frac18\sum_i\left(\gamma_d(A_i)-\frac1q\right)^2
++\nu_q^-t\left[
+\inf_{\mathcal D\in\mathscr S_{q,d}}
+\sum_i\gamma_d(A_i\mathbin{\triangle}D_i)
+\right]^2
+\qquad(0\lt t\le\widehat t_q).
+```
+
+The [weighted-distance lemma](WEIGHTED_DISTANCE.md) converts the exponentially weighted transfer cost into ordinary Gaussian symmetric difference. The quantitative proof then extends localization to a small positive noise deficit, using the same polar-aligned comparison. A separate large-deficit estimate retains the mass penalty. Balanced reflected-strip perturbations show that the squared-distance power and the factor $`t`$ are sharp; the negative higher-Hermite remainder is explicitly controlled because the full negative noise operator is indefinite.
+
+The [root review](NEGATIVE_NOISE_STABILITY_ROOT_REVIEW.md), [combinatorics review](NEGATIVE_NOISE_STABILITY_COMBINATORICS_REVIEW.md), [weighted-distance algebra review](WEIGHTED_DISTANCE_ALGEBRA_REVIEW.md), and [algebra cross-check](NEGATIVE_QUANTITATIVE_ALGEBRA_CROSSCHECK.md) record the checks and their exact scopes. This is the quantitative conclusion of the same partial theorem, with the same credited first-moment dependency and bounded source audit. No full-resolution count is added.
+
 ## Source and archive record
 
 [PRIOR_AUDIT.md](PRIOR_AUDIT.md) records the direct source comparisons, issue search, pinned archive screen, and remaining gaps. [PRIOR_SCAN.json](PRIOR_SCAN.json) records the exact native-text search coverage; [scan_native_prior.py](scan_native_prior.py) performs that screen on separately downloaded public archives.
