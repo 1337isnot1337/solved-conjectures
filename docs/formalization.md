@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## CKZ record conjectures completed, 21 November 2026
+
+The original Conjectures 1 and 3 are proved for actual separable-permutation classes and all four record statistics, including singleton cases. The source-pinned, Apache-licensed trureturing dependency supplies the previously credited Conjecture 2 and permutation decomposition; this repository adds direct Pell certificates and the low-record comparison bridge. Strict compilation, a 1,132-theorem axiom audit and isolated kernel replay passed; the combined repository gate remains pending.
+
 ## CKZ low-record series, 21 November 2026
 
 Three direct Pell certificates prove the required low-record generating-function coefficient inequalities, with the length-one exception explicit. Their identification with actual permutation counts and the arbitrary-index tail remain. Strict compilation, axiom audit and isolated kernel replay passed.

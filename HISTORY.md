@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — CKZ record conjectures formalized
+
+Lean proves original Conjectures 1 and 3 for actual separable-permutation classes, all four record statistics, and all stated lengths, including the singleton. It uses the credited, Apache-licensed source-pinned trureturing Conjecture 2 tail and permutation decomposition and direct Pell certificates for the remaining comparisons. Strict compilation, a 1,132-theorem axiom audit and isolated kernel replay passed; the combined repository gate is pending.
+
 ## 2026-11-21 — CKZ low-record series inequalities
 
 Proved the three low-record generating-function coefficient inequalities with direct Pell certificates, including the exceptional length-one term in the first comparison. Strict compilation, all-owned axiom audit and isolated kernel replay passed. The actual permutation-count bridge and all-index tail remain.

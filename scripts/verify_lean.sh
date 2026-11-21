@@ -4,6 +4,22 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.CKZUpstream.D5.S0.Diagonal.EquivariantEscape
+  Conjectures.CKZUpstream.D5.S0.Diagonal.EscapeCount
+  Conjectures.CKZUpstream.D5.S0.Diagonal.Probability.EquivariantEscape
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.DerangementRatioNonconvergence
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.ActualCardinality
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.CappedExploration
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.CutFactorization
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.EndpointHistoryKernel
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.MinimumCutKernel
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.ProperCut
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.RecordAllIndex
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.RecordFirstDecline
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.RecordNewtonPositivity
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.RecordPeak
+  Conjectures.CKZUpstream.D5.S1.Words.Patterns.Separable.RecordTransport
+  Conjectures.CKZBridge
   Conjectures.CKZLowSeries
   Conjectures.CKZPell
   Conjectures.CKZSoundness

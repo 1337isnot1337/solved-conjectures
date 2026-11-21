@@ -9,6 +9,9 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `CKZBridge.four_records_unimodal,
+    `CKZBridge.four_class_decreasing,
+    `D5.S1.Words.Patterns.Separable.RecordAllIndex.actual_ckz_conjecture_two,
     `LopezPousoSegura.scaled_limit_of_product_approx,
     `LopezPousoSegura.eventual_violation_of_product_approx,
     `LopezPousoSegura.eventual_violation_of_scaled_limit,

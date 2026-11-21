@@ -41,7 +41,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ⬜ |
 | [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ✅ |
-| [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | 🟡 |
+| [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | ✅ |
 | [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
 | [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | ⬜ |
 | [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ⬜ |
