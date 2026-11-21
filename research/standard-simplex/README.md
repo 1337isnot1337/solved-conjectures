@@ -2,7 +2,7 @@
 
 Research checkpoint, 21 November 2026. Coordination: [issue 212](https://github.com/1337isnot1337/solved-conjectures/issues/212).
 
-**Status: unresolved in this work.** The current checkpoint contains a proposed partial theorem: for every fixed number of cells, the regular-simplex partition uniquely maximizes balanced Gaussian noise stability at every sufficiently small positive correlation, with a threshold independent of the ambient dimension. Three mathematical reviews found no gap in the written argument and its explicit first-moment dependency. The completed bounded prior-work audit found no earlier theorem with that exact scope in the inspected primary sources and matched archive bodies; it does not establish worldwide priority or external acceptance. Larger positive correlations and the entire negative-correlation clause remain outside this theorem. No full-resolution count is added.
+**Status: unresolved in this work.** The current checkpoint contains two proposed partial theorems. For every fixed number of cells, the regular-simplex partition uniquely maximizes balanced Gaussian noise stability at every sufficiently small positive correlation, and uniquely minimizes it among arbitrary-mass partitions at every sufficiently small negative correlation. Both thresholds are independent of the ambient dimension. Three mathematical reviews found no gap in each written assembly and its explicit first-moment dependency. Separate bounded positive and negative prior-work audits found no earlier theorem with the respective all-cell scopes in the inspected sources; they do not establish worldwide priority or external acceptance. The remaining correlation ranges are outside these results. No full-resolution count is added.
 
 The directory also contains quantitative first-moment stability with a sharp exponent, the exact tail and noise comparisons used in the partial theorem, and a limit of an auxiliary-coordinate second-variation approach.
 
@@ -127,6 +127,22 @@ S_\rho(\mathcal C)-S_\rho(\mathcal A)
 The proof divides competitors into large and small noise deficits. The small-deficit branch enters the same polar-aligned core neighborhood as the earlier theorem. Its weighted transfer bound then controls the partition distance by a union of Gaussian facet slabs. A balanced exchange of reflected strips shows that the squared-distance power is sharp, with noise deficit of order $`\rho t^2`$ and partition distance of order $`t`$, uniformly over this correlation interval and the ambient dimension.
 
 The [combinatorics review](NOISE_STABILITY_COMBINATORICS_REVIEW.md) and [root review](NOISE_STABILITY_ROOT_REVIEW.md) check the global dichotomy, constants, alignment, and sharpness. This is a corollary within the same partial research program. It does not add a resolved conjecture or extend the proof to all correlations.
+
+### Low negative correlation
+
+[NEGATIVE_CORRELATION.md](NEGATIVE_CORRELATION.md) proves a corresponding proposed partial theorem with the original unrestricted-mass quantifier. For every fixed number of cells there is a positive threshold, independent of ambient dimension, on which the central regular simplex uniquely minimizes negative-correlation noise stability among all measurable partitions, including those with empty cells.
+
+Three new estimates address the negative sign and the unrestricted masses:
+
+- [WEIGHTED_NOISE.md](WEIGHTED_NOISE.md) controls the absolute higher-Hermite remainder by a transfer cost weighted with a Gaussian factor on the score space. It keeps all unused ambient coordinates in the original noise quadratic form.
+- [NEGATIVE_POTENTIAL_TAIL.md](NEGATIVE_POTENTIAL_TAIL.md) gives a matching global winner-probability gap, its sharp first-order compact-core limit, and a weighted tail mass/moment estimate.
+- [NEGATIVE_LOCALIZATION.md](NEGATIVE_LOCALIZATION.md) balances an arbitrary partition fractionally and shows that any competitor no worse than the regular benchmark has mass imbalance of order the correlation magnitude and lies in the same polar-aligned moment neighborhood.
+
+The exact noise identity retains a positive degree-zero mass term. After core coercivity and tail restoration, the comparison bounds the deficit below by half the squared mass imbalance plus strictly positive multiples of the core and weighted tail transfer costs. Vanishing costs recover the regular partition almost everywhere. No optimizer-existence or smooth-boundary hypothesis is used.
+
+The [root](NEGATIVE_ROOT_REVIEW.md), [algebra](NEGATIVE_ASSEMBLY_ALGEBRA_REVIEW.md), and [combinatorics](NEGATIVE_CORRELATION_COMBINATORICS_REVIEW.md) reviews check the complete assembly. The [analysis component review](NEGATIVE_COMPONENTS_ANALYSIS_REVIEW.md), separate [weighted-noise review](WEIGHTED_NOISE_COMBINATORICS_REVIEW.md), and [algebra](NEGATIVE_LOCALIZATION_ALGEBRA_REVIEW.md)/[combinatorics](NEGATIVE_LOCALIZATION_COMBINATORICS_REVIEW.md) localization reviews make the authorship and independent checking boundary explicit.
+
+The [negative-specific source audit](NEGATIVE_PRIOR_AUDIT.md) and [independent archive comparison](NEGATIVE_ARCHIVE_COMPARISON.md) credit the older unrestricted three-cell theorem and the prior balanced first-moment input. The latter comparison rereads 22 archive bodies and four primary texts with exact scopes and hashes. It retains the earlier archive decoding limits. This remains a small-correlation partial theorem and adds no resolved conjecture.
 
 ## Source and archive record
 

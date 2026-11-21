@@ -1,0 +1,1098 @@
+{
+  "date": "2026-11-21",
+  "purpose": "Bounded negative-correlation Standard Simplex scope screen; not an exhaustive issue-comment or worldwide-priority audit",
+  "github_queries": [
+    {
+      "query": "is:issue \"standard simplex\" \"negative\"",
+      "returned": 68,
+      "results": [
+        {
+          "url": "https://github.com/1337isnot1337/solved-conjectures/issues/212",
+          "title": "Standard Simplex conjecture",
+          "body_length": 2975
+        },
+        {
+          "url": "https://github.com/1337isnot1337/solved-conjectures/issues/156",
+          "title": "Named conjecture research",
+          "body_length": 1213
+        },
+        {
+          "url": "https://github.com/morluto/jacobian/issues/1951",
+          "title": "[Finite simplicial sets] Add exact face/degeneracy diagrams, normalized chains, products, nerves, and simplicial-map operations",
+          "body_length": 16584
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/2097",
+          "title": "UVs are shifted by about half a texel",
+          "body_length": 955
+        },
+        {
+          "url": "https://github.com/optimal-uoft/sgtlearn/issues/21",
+          "title": "[Exploration] Test Bregman Clustering for ShapeCART Classifier Leaf to bin assignment",
+          "body_length": 1456
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/588",
+          "title": "z-clipping issue (GLES)",
+          "body_length": 376
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/32465",
+          "title": "Preregistration: round-trip closure 07abdf70 Unit 11 — discrete least action and rational quaternion checks",
+          "body_length": 4979
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/30798",
+          "title": "Open problem (preregistration): prove Anh T. Tran’s §8 APPT/CAS spectral-volume leading asymptotic for every fixed m ≥ 2 (arXiv:2611.01492)",
+          "body_length": 38699
+        },
+        {
+          "url": "https://github.com/iamycy/hrtf-ilp/issues/4",
+          "title": "[Performance & Theory] Replace MIP with continuous LP relaxation & Dual Network Flow formulation (3–4× speedup)",
+          "body_length": 3708
+        },
+        {
+          "url": "https://github.com/deepseek-launch-community/XuanJi-ISA/issues/154",
+          "title": "Cartan A₉ Structure in the Class-Mean Gram Matrix of Trained Neural Network Features",
+          "body_length": 14374
+        },
+        {
+          "url": "https://github.com/Godalin/rocq-cats/issues/29",
+          "title": "Groupoids to ∞-groupoids: simplicial sets, Kan complexes, and path-dependent families",
+          "body_length": 64369
+        },
+        {
+          "url": "https://github.com/deepseek-launch-community/XuanJi-ISA/issues/170",
+          "title": "Cartan A₉ Correlation in Class-Mean Gram Eigenvalues Is an Artifact of Monotone Sequences",
+          "body_length": 14527
+        },
+        {
+          "url": "https://github.com/teorth/optimizationproblems/issues/352",
+          "title": "Replays of three rows added without a pull request: 3a [GGSWT2025] (1.1479, 1.1584) and 59a [BPWW2026] (0.3177)",
+          "body_length": 3447
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25379",
+          "title": "Open problem (preregistration): prove Belabbas's Section 9 first boundary-limit answer (arXiv:2610.01607v1)",
+          "body_length": 46004
+        },
+        {
+          "url": "https://github.com/jgreathouse9/mlsynth/issues/774",
+          "title": "[Feature] MAREX exact backend: a search certificate and diagnostics on the result",
+          "body_length": 8498
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/26872",
+          "title": "Open problem (preregistration): prove Lee–Skipper–Speakman Section 4 Outlook question (arXiv:2605.01493): complete inequalities and volume of C_n^2 for every n ≥ 2",
+          "body_length": 40814
+        },
+        {
+          "url": "https://github.com/LionSR/TNLean/issues/5548",
+          "title": "Perron eigenvector existence for primitive nonnegative real matrices (prerequisite for #5436)",
+          "body_length": 3347
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/28084",
+          "title": "Open problem (preregistration): prove Quang Hung Tran §12 item 4, first clause (arXiv:2610.01216v1): a simplex with regular Morley simplex and trivial full isometry group",
+          "body_length": 29317
+        },
+        {
+          "url": "https://github.com/jwiegley/category-theory/issues/970",
+          "title": "Riehl 4.1: Chains of adjoint functors between the ordinal categories",
+          "body_length": 5864
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/28951",
+          "title": "Open problem (preregistration): refute Zoroa–Lesigne–Fernández-Sáez–Zoroa–Casas strong-dominance conjecture after Definition 8.2 (arXiv:1608.00155v1; published Definition 7.2)",
+          "body_length": 39529
+        },
+        {
+          "url": "https://github.com/jgreathouse9/mlsynth/issues/777",
+          "title": "[Feature] MAREX exact backend: bounds that see the penalties (penalized, unit_penalized)",
+          "body_length": 3976
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/26651",
+          "title": "Open problem (preregistration): prove O’Keeffe’s singleton-survivor formula for every N ≥ 2 and γ ∈ [−1,0] (SM §1, eq:sm:vsing; arXiv:2609.01668v2)",
+          "body_length": 38377
+        },
+        {
+          "url": "https://github.com/AntonTegnelov/wave_forge/issues/5",
+          "title": "Future roadmap",
+          "body_length": 4436
+        },
+        {
+          "url": "https://github.com/thegoodengineers/SANKHYA/issues/67",
+          "title": "Phase 6: Harris two-pass ratio test and bound flipping",
+          "body_length": 2060
+        },
+        {
+          "url": "https://github.com/morluto/jacobian/issues/2277",
+          "title": "feat(optimization): accept rational inequalities, bounds, and free variables in exact LPs",
+          "body_length": 7586
+        },
+        {
+          "url": "https://github.com/SauersML/gam/issues/1561",
+          "title": "Bug: GAM should be but is not significantly better than reference software",
+          "body_length": 14902
+        },
+        {
+          "url": "https://github.com/LionSR/QICLean/issues/19",
+          "title": "Prove positivity of `Matrix.choiTypeMap` for 1 ≤ n ≤ d−2 (Wolf Ch. 3, Ex. 3.1)",
+          "body_length": 6104
+        },
+        {
+          "url": "https://github.com/uda-lab/tda-lib/issues/277",
+          "title": "[Mapper] MultiNerve of an indexed cover, the MultiNerve Mapper and its projection to ordinary Mapper",
+          "body_length": 19908
+        },
+        {
+          "url": "https://github.com/phasetr/lattice-system/issues/405",
+          "title": "Perron-Frobenius theorem for real symmetric non-negative irreducible matrices",
+          "body_length": 1867
+        },
+        {
+          "url": "https://github.com/TauCetiProject/TauCetiReviewSite/issues/1",
+          "title": "Mark many declarations at once",
+          "body_length": 695
+        },
+        {
+          "url": "https://github.com/LionSR/TNLean/issues/8049",
+          "title": "MPO symmetries: a positive common eigenvector of the NIM-rep action gives a symmetric boundary state",
+          "body_length": 1132
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/23274",
+          "title": "Open problem (preregistration): refute Aldous–Cruz–Feng Conjecture 5 (arXiv:2403.18153)",
+          "body_length": 47194
+        },
+        {
+          "url": "https://github.com/desouzagiovana/Operations-Research-Final-Project/issues/3",
+          "title": "Research project mathematical requirements",
+          "body_length": 2835
+        },
+        {
+          "url": "https://github.com/ColossalTuna/egg/issues/31",
+          "title": "A non-converged simplex solve is reported as failure, not optimal",
+          "body_length": 4613
+        },
+        {
+          "url": "https://github.com/leanprover/lp-backend-pure/issues/6",
+          "title": "Accept all row bound shapes (equality, ≥, ranged, lower-only)",
+          "body_length": 2392
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/9471",
+          "title": "research: Fan Conjecture 5.9 — full three-point Riesz capacity maximum",
+          "body_length": 12175
+        },
+        {
+          "url": "https://github.com/akellehe/tessera/issues/412",
+          "title": "Source simplex orientation/sign from the standard formula, not vertex-label sort",
+          "body_length": 16484
+        },
+        {
+          "url": "https://github.com/leanprover/sos/issues/23",
+          "title": "Full Newton polytope (convex-hull membership)",
+          "body_length": 8694
+        },
+        {
+          "url": "https://github.com/NVIDIA-RTX/NRD/issues/100",
+          "title": "NRD in DSLE (Dark Souls 2 & 3 PT)",
+          "body_length": 1346
+        },
+        {
+          "url": "https://github.com/liu-qingyuan/llm-abm-marketing-sim/issues/147",
+          "title": "Spec: 扩展 Concurrent Message Ranking Weight 与 Prompt–Model 稳健性研究",
+          "body_length": 32142
+        },
+        {
+          "url": "https://github.com/datnguyenquy94/news-radar/issues/131",
+          "title": "🦞 OpenClaw Ecosystem Digest 2026-08-09",
+          "body_length": 65536
+        },
+        {
+          "url": "https://github.com/scientificcomputing/scifem/issues/198",
+          "title": "Closest point projection",
+          "body_length": 5874
+        },
+        {
+          "url": "https://github.com/xiehd77-del/agents-radar/issues/216",
+          "title": "🦞 OpenClaw Ecosystem Digest 2026-07-19",
+          "body_length": 65536
+        },
+        {
+          "url": "https://github.com/Chestnuts-Sisyphus/gittok/issues/247",
+          "title": "🦞 OpenClaw Ecosystem Digest 2026-06-30",
+          "body_length": 65536
+        },
+        {
+          "url": "https://github.com/rasheedja/simplex-method/issues/8",
+          "title": "Unexpected results for simple (degenerate) cases",
+          "body_length": 1207
+        },
+        {
+          "url": "https://github.com/h2oai/h2o-3/issues/14826",
+          "title": "GLRM with Simplex Fails with Infinite Objective",
+          "body_length": 464
+        },
+        {
+          "url": "https://github.com/scipy/scipy/issues/9269",
+          "title": "ENH: linprog in SciPy 1.2+ discussion",
+          "body_length": 4298
+        },
+        {
+          "url": "https://github.com/sagemath/sage/issues/20296",
+          "title": "MixedIntegerLinearProgram: New backend using InteractiveLPProblem",
+          "body_length": 1115
+        },
+        {
+          "url": "https://github.com/tensorflow/tensorflow/issues/7956",
+          "title": "Method log_prob_with_logits() for Dirichlet",
+          "body_length": 927
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/2542",
+          "title": "Regression in Zelda MM after #2537",
+          "body_length": 668
+        },
+        {
+          "url": "https://github.com/section-engineering-education/engineering-education/issues/5602",
+          "title": "Getting Started with Simplex Optimization Algorithm in Machine Learning",
+          "body_length": 6513
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/2547",
+          "title": "Goldeneye Fog HLE issues",
+          "body_length": 477
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/2324",
+          "title": "Drawing primitives with screen coordinates",
+          "body_length": 3528
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/1047",
+          "title": "Ogre battle, wrong texrects.",
+          "body_length": 2343
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/2427",
+          "title": "Software clipping and near plane clipping",
+          "body_length": 1120
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/2382",
+          "title": "Zelda OOT issue with fragment based depth",
+          "body_length": 416
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/2155",
+          "title": "Zelda MM Beneath Graveyard Tiling floor textures wrong",
+          "body_length": 1005
+        },
+        {
+          "url": "https://github.com/JuliaManifolds/Manifolds.jl/issues/103",
+          "title": "Add the simplex",
+          "body_length": 78
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/1603",
+          "title": "Non-normalized texture coordinates.",
+          "body_length": 3548
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/190",
+          "title": "Cruis'n World: wrong logo",
+          "body_length": 127
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/2095",
+          "title": "Is the math correct?",
+          "body_length": 3240
+        },
+        {
+          "url": "https://github.com/cogent3/cogent3/issues/37",
+          "title": "maths: implement Aitchison compositional measures",
+          "body_length": 1056
+        },
+        {
+          "url": "https://github.com/gheber/kenzo/issues/133",
+          "title": "'delta-test' failures",
+          "body_length": 1398
+        },
+        {
+          "url": "https://github.com/scipy/scipy/issues/9076",
+          "title": "Bug fixes for #5400, #7237 and #8174 in linprog(method='simplex')",
+          "body_length": 1136
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/661",
+          "title": "Zelda OOT rotating \"N\" is miscolored (HLE)",
+          "body_length": 396
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/1183",
+          "title": "Mischief Makers - Mathfun questions are black and unreadable",
+          "body_length": 490
+        },
+        {
+          "url": "https://github.com/blei-lab/edward/issues/77",
+          "title": "Categorical Variational",
+          "body_length": 226
+        },
+        {
+          "url": "https://github.com/gonetz/GLideN64/issues/158",
+          "title": "Carpet in PD: detail texture in mip-map mode issue",
+          "body_length": 141
+        }
+      ]
+    },
+    {
+      "query": "is:issue \"simplex\" \"small negative\"",
+      "returned": 95,
+      "results": [
+        {
+          "url": "https://github.com/1337isnot1337/solved-conjectures/issues/212",
+          "title": "Standard Simplex conjecture",
+          "body_length": 2975
+        },
+        {
+          "url": "https://github.com/Luminous-Dynamics/symtropy/issues/2863",
+          "title": "PHYS-GJK-ND-001: dimension-generic simplex reduction and N-D conformance",
+          "body_length": 2855
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/28084",
+          "title": "Open problem (preregistration): prove Quang Hung Tran §12 item 4, first clause (arXiv:2610.01216v1): a simplex with regular Morley simplex and trivial full isometry group",
+          "body_length": 29317
+        },
+        {
+          "url": "https://github.com/jgreathouse9/mlsynth/issues/875",
+          "title": "[Bug] RESCM: LASSO returns the SC weights, because its L1 penalty is constant on the simplex",
+          "body_length": 2719
+        },
+        {
+          "url": "https://github.com/1337isnot1337/solved-conjectures/issues/156",
+          "title": "Named conjecture research",
+          "body_length": 1213
+        },
+        {
+          "url": "https://github.com/Svyable/100/issues/291",
+          "title": "[Claim] X-M097-BALANCED-WEIGHTS: unconditional exact SEP and strict 4/3 for weighted subdivisions",
+          "body_length": 1889
+        },
+        {
+          "url": "https://github.com/razrfly/cinegraph/issues/1087",
+          "title": "[Implementation] Binned (one-hot band) features so models learn non-monotonic, per-list signal shapes + regenerate all models",
+          "body_length": 11995
+        },
+        {
+          "url": "https://github.com/chaerinkong/MIPAL-CL/issues/7",
+          "title": "CPR: Classifier Projection Regularization for Continual Learning",
+          "body_length": 1759
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/32465",
+          "title": "Preregistration: round-trip closure 07abdf70 Unit 11 — discrete least action and rational quaternion checks",
+          "body_length": 4979
+        },
+        {
+          "url": "https://github.com/stevendaix/cfdx_dev/issues/423",
+          "title": "General mesh compatibility and polyhedral mesh robustness",
+          "body_length": 8355
+        },
+        {
+          "url": "https://github.com/deepseek-launch-community/XuanJi-ISA/issues/150",
+          "title": "Non-Monotonic Effective Rank in Multi-Class Feature Representations",
+          "body_length": 16420
+        },
+        {
+          "url": "https://github.com/newton-physics/newton/issues/4133",
+          "title": "Unify duplicated numerical helpers and tolerance constants across modules",
+          "body_length": 6715
+        },
+        {
+          "url": "https://github.com/PerAlexandersson/RealRooted/issues/1959",
+          "title": "[formalization] Certify clustered Weyl multiplicities at every rank",
+          "body_length": 12998
+        },
+        {
+          "url": "https://github.com/butahlecoq/controlled-systems-lab/issues/35",
+          "title": "[TEST-05] Run reusable LP adapter contracts on every selected backend",
+          "body_length": 3026
+        },
+        {
+          "url": "https://github.com/thegoodengineers/SANKHYA/issues/23",
+          "title": "Phase 5 follow-up: Gomory MIR and knapsack cover cuts at the root",
+          "body_length": 2266
+        },
+        {
+          "url": "https://github.com/dzackgarza/sage-indefinite-port/issues/69",
+          "title": "Retained functional capabilities beyond the pinned source",
+          "body_length": 131221
+        },
+        {
+          "url": "https://github.com/Luminous-Dynamics/symthaea/issues/9357",
+          "title": "Architecture: proof-carrying risk decisions in symthaea-statistics",
+          "body_length": 6007
+        },
+        {
+          "url": "https://github.com/Hawkar-usls/Janus-Fundamentum/issues/519",
+          "title": "R5 global Tutte-deficit descent: exact all-n polynomial gate beyond local traps",
+          "body_length": 65944
+        },
+        {
+          "url": "https://github.com/Deltares/Ribasim/issues/3134",
+          "title": "An allocation meta-optimization",
+          "body_length": 3353
+        },
+        {
+          "url": "https://github.com/PyAutoLabs/PyAutoArray/issues/530",
+          "title": "feat: JAX Delaunay walk — early-exit while_loop, chunk only the seed argmin",
+          "body_length": 16524
+        },
+        {
+          "url": "https://github.com/AsvM45/jaegers/issues/87",
+          "title": "[HOUSE EDGE][GROK][P1] Controlled model-family, feature-group and mixture-of-experts research campaign",
+          "body_length": 4774
+        },
+        {
+          "url": "https://github.com/artalis-io/otto/issues/86",
+          "title": "ralph: base simplex reports INFEASIBLE for feasible LPs with a nonzero variable lower bound (default path)",
+          "body_length": 3632
+        },
+        {
+          "url": "https://github.com/open-energy-transition/open-tyndp/issues/717",
+          "title": "[SPIKE] Explore CBA results when using different solvers and tolerances",
+          "body_length": 1680
+        },
+        {
+          "url": "https://github.com/SauersML/gam/issues/2822",
+          "title": "gam-sae is broadly red: 69 failures in the lib suite and 89 in the integration binary, reproducing in isolation, invisible to every per-crate gate",
+          "body_length": 41374
+        },
+        {
+          "url": "https://github.com/dvoyni/cog/issues/439",
+          "title": "ecsphysics2d: GJK reports disjoint Shapes as touching when the origin lands on a Minkowski edge's supporting line",
+          "body_length": 7384
+        },
+        {
+          "url": "https://github.com/butahlecoq/controlled-systems-lab/issues/29",
+          "title": "[OPT-04] Implement the archival phase-I feasibility kernel",
+          "body_length": 2328
+        },
+        {
+          "url": "https://github.com/JohnnyZPiggy/TorchOED/issues/1",
+          "title": "[SAE V3.3][M0][Codex Engineer] PyDOE 1.6.0 audit + minimal PyTorch-native TorchOED spine",
+          "body_length": 9954
+        },
+        {
+          "url": "https://github.com/teamleaderleo/fieldwork/issues/211",
+          "title": "[Lane] Scout foundational libraries, databases, and Linux systems",
+          "body_length": 1723
+        },
+        {
+          "url": "https://github.com/gcol33/couplr/issues/13",
+          "title": "C++ solver hardening: unguarded narrowing/overflow and integer-cost assumptions at extreme scale",
+          "body_length": 4504
+        },
+        {
+          "url": "https://github.com/LionSR/TNLean/issues/5548",
+          "title": "Perron eigenvector existence for primitive nonnegative real matrices (prerequisite for #5436)",
+          "body_length": 3347
+        },
+        {
+          "url": "https://github.com/particles420/The-Comprehensive-Angular-Naming-System-CANS-and-the-Geodesic-Query-System-GQS-/issues/1",
+          "title": "The Comprehensive Angular Naming System (CANS) and the Geodesic Query System (GQS)",
+          "body_length": 85211
+        },
+        {
+          "url": "https://github.com/PerAlexandersson/RealRooted/issues/1976",
+          "title": "[formalization] Classify normalized higher companions by a Ferrers cone",
+          "body_length": 11556
+        },
+        {
+          "url": "https://github.com/midodoku/arxiv_daily/issues/300",
+          "title": "Showing new listings for Monday, 29 December 2025",
+          "body_length": 123428
+        },
+        {
+          "url": "https://github.com/stan-dev/docs/issues/19",
+          "title": "manual longer term",
+          "body_length": 200
+        },
+        {
+          "url": "https://github.com/deepseek-launch-community/XuanJi-ISA/issues/122",
+          "title": "Visual-Whole Reasoning Interfaces",
+          "body_length": 10750
+        },
+        {
+          "url": "https://github.com/jacksonpradolima/coleman/issues/379",
+          "title": "[v5:24] Build independent cross-domain benchmarks and no-signal negative controls",
+          "body_length": 53399
+        },
+        {
+          "url": "https://github.com/PerAlexandersson/RealRooted/issues/601",
+          "title": "[research program] Differential BKW theory and Weyl-matrix interlacing dynamics",
+          "body_length": 8726
+        },
+        {
+          "url": "https://github.com/SauersML/gam/issues/2604",
+          "title": "The Poincare atom's hyperbolic metric is frozen at seed coordinates, and it races against nothing",
+          "body_length": 2822
+        },
+        {
+          "url": "https://github.com/StanleyLl0yd/morph-kem/issues/195",
+          "title": "MORPH-R2: quotient-first relation design and pre-source falsification",
+          "body_length": 3415
+        },
+        {
+          "url": "https://github.com/TauCetiProject/TauCetiReviewSite/issues/1",
+          "title": "Mark many declarations at once",
+          "body_length": 695
+        },
+        {
+          "url": "https://github.com/Ankita7033/oss-autocontrib-inbox/issues/30",
+          "title": "OSS auto-contrib: fix drafted + candidates",
+          "body_length": 41840
+        },
+        {
+          "url": "https://github.com/openwrt/openwrt/issues/13613",
+          "title": "[23.05.0-rc4] Ubiquiti EdgeRouter X has increaced cpu load and reduced network speed on eth0 when using it as an all ports Switch compared to 22.03.5 (closed)",
+          "body_length": 2076
+        },
+        {
+          "url": "https://github.com/Dongqiyu829/3d-container-loading-optimization/issues/31",
+          "title": "[Research HUB] CP-SAT symmetry breaking × search bias — coordination & decisions",
+          "body_length": 2877
+        },
+        {
+          "url": "https://github.com/SauersML/gam/issues/2933",
+          "title": "Manifold SAE mathematical audit: 45 findings (F01-F45) in derivatives, MDL, priors, uncertainty and interfaces",
+          "body_length": 9483
+        },
+        {
+          "url": "https://github.com/leo123-rax/lit-radar/issues/4",
+          "title": "Weekly digest 2026-10-26",
+          "body_length": 59957
+        },
+        {
+          "url": "https://github.com/N283T/pxr-iduction-challenge/issues/100",
+          "title": "Research Log",
+          "body_length": 481
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/5416",
+          "title": "Identify an aggregate measure that can be used to optimize for downstream tasks with Calvin's GRP form",
+          "body_length": 8047
+        },
+        {
+          "url": "https://github.com/mickg10/audio-extract/issues/1",
+          "title": "v2 design — Claude ↔ oracle working thread (anchor 2a9a42b)",
+          "body_length": 5858
+        },
+        {
+          "url": "https://github.com/awdawmip/enterprise-math/issues/82",
+          "title": "Research Relay: cross-branch theorem and finding bus",
+          "body_length": 4085
+        },
+        {
+          "url": "https://github.com/morluto/jacobian/issues/1791",
+          "title": "[Convex polytopes] Add exact H/V conversion, affine-image, polar, Minkowski-sum, support, exposed-face, and normal-fan operations",
+          "body_length": 16117
+        },
+        {
+          "url": "https://github.com/iroha1203/AlgebraicArchitectureTheoryV2/issues/3446",
+          "title": "PRD Loop: aat_lean_04_reading_functoriality_prd.md",
+          "body_length": 11921
+        },
+        {
+          "url": "https://github.com/amaybaum/incompleteness/issues/1169",
+          "title": "OI-QM-EXT-1: establish conditional equivalence with explicit added conditions, then minimize and source them",
+          "body_length": 48155
+        },
+        {
+          "url": "https://github.com/theislampill/orthemology/issues/38",
+          "title": "R-0002 — Whole-Repository Corpus Consolidation and Scientific Source-of-Truth Restoration",
+          "body_length": 64345
+        },
+        {
+          "url": "https://github.com/zoq/arxiv-updates/issues/574",
+          "title": "New submissions for Wed,  9 Aug 23",
+          "body_length": 69953
+        },
+        {
+          "url": "https://github.com/equinor/neqsim/issues/4740",
+          "title": "Reservoir MBAL estimation from historical data and independently tuned original PVT",
+          "body_length": 42470
+        },
+        {
+          "url": "https://github.com/GoGoKo699/Quantum-Interface-Cost/issues/2",
+          "title": "Determine the unrestricted collective-encoding trade-off, starting with n=2 and q=1",
+          "body_length": 3477
+        },
+        {
+          "url": "https://github.com/SauersML/gam/issues/2442",
+          "title": "Constrained posterior moments need a route that does not invert an indefinite ambient H: one converged Gaussian location-scale fit no longer assembles (regression from the #2417 cutover)",
+          "body_length": 5135
+        },
+        {
+          "url": "https://github.com/grwtsk/math/issues/100",
+          "title": "[RH-FOUNDATION.01] Specify and accept the spectral-descent replay target",
+          "body_length": 11466
+        },
+        {
+          "url": "https://github.com/Yukeaaa/arxiv-daily/issues/281",
+          "title": "【CS-part2】New submissions for Fri,  9 Jun 23",
+          "body_length": 142814
+        },
+        {
+          "url": "https://github.com/A-suozhang/GetArxivDaily/issues/169",
+          "title": "New submissions for Fri,  6 Oct 23",
+          "body_length": 167595
+        },
+        {
+          "url": "https://github.com/A-suozhang/GetArxivDaily/issues/168",
+          "title": "New submissions for Fri,  6 Oct 23",
+          "body_length": 167595
+        },
+        {
+          "url": "https://github.com/A-suozhang/GetArxivDaily/issues/167",
+          "title": "New submissions for Fri,  6 Oct 23",
+          "body_length": 167595
+        },
+        {
+          "url": "https://github.com/SauersML/gam/issues/979",
+          "title": "marginal-slope (binary + survival) bug: severe slowdown / survival hang in gamfit 0.1.189",
+          "body_length": 14148
+        },
+        {
+          "url": "https://github.com/grwtsk/math/issues/1801",
+          "title": "RP-OC-02: formalize signed Weil witness bounds and source-indexed GRH consumer",
+          "body_length": 2935
+        },
+        {
+          "url": "https://github.com/szl-holdings/szl-org-health/issues/348",
+          "title": "Estate deep audit 2026-11-15 (10-pass GH + 10-pass HF)",
+          "body_length": 2530
+        },
+        {
+          "url": "https://github.com/kakapez/agents-radar/issues/1267",
+          "title": "🦞 OpenClaw Ecosystem Digest 2026-08-17",
+          "body_length": 65536
+        },
+        {
+          "url": "https://github.com/A-suozhang/GetArxivDaily/issues/123",
+          "title": "New submissions for Wed,  9 Aug 23",
+          "body_length": 148268
+        },
+        {
+          "url": "https://github.com/LeeKyungwook/get-arxiv-noti/issues/1497",
+          "title": "Showing new listings for Tuesday, 18 February 2025",
+          "body_length": 166881
+        },
+        {
+          "url": "https://github.com/amanzi/amanzi/issues/8",
+          "title": "Simplex method needs stability analysis",
+          "body_length": 636
+        },
+        {
+          "url": "https://github.com/d6g8k5htny-coder/main/issues/605",
+          "title": "Full cross-family audit of uploaded v20–v24 handoff",
+          "body_length": 6977
+        },
+        {
+          "url": "https://github.com/d6g8k5htny-coder/Math-/issues/193",
+          "title": "D1 external audit response: reconstruct cap-to-global-elder implication and classify remaining gaps",
+          "body_length": 1752
+        },
+        {
+          "url": "https://github.com/sherpa/sherpa/issues/836",
+          "title": "Problem fitting cash/cstat if model goes negative",
+          "body_length": 2474
+        },
+        {
+          "url": "https://github.com/definitely-stable/Mathlab/issues/230",
+          "title": "HYP-105 B3.2-E1-B: all-label six-motif Ω(s^6) obstruction or infinite correlated counterexample",
+          "body_length": 3552
+        },
+        {
+          "url": "https://github.com/jinzhezenggroup/generativeqc/issues/2976",
+          "title": "perf(direct/a100): qualify integrated force queue, then profile and optimize low-order J'/K' bottleneck",
+          "body_length": 5386
+        },
+        {
+          "url": "https://github.com/pashamango/minutta-rp-pr-cycle-lab/issues/78",
+          "title": "PROJECT-MEMORY — Discovery Steward / 24-hour hypothesis journal",
+          "body_length": 1931
+        },
+        {
+          "url": "https://github.com/awdawmip/enterprise-math/issues/240",
+          "title": "[Scheduler] Research Dispatch Board / 研究调度与接力板",
+          "body_length": 254
+        },
+        {
+          "url": "https://github.com/sebichin/plinko-game/issues/8",
+          "title": "Refactoring physics",
+          "body_length": 35776
+        },
+        {
+          "url": "https://github.com/nanoporetech/dorado/issues/1213",
+          "title": "Basecalling/demux+modbases: std::bad_alloc ",
+          "body_length": 2177
+        },
+        {
+          "url": "https://github.com/d6g8k5htny-coder/main/issues/229",
+          "title": "Agent Message Board — bottlenecks, coordination and working guidance",
+          "body_length": 9676
+        },
+        {
+          "url": "https://github.com/Oleksii-debug/Autosport/issues/763",
+          "title": "[CONTROL][WORK PACKET BANK] Unbounded expandable backlog",
+          "body_length": 16361
+        },
+        {
+          "url": "https://github.com/duongchi90/cad-agent/issues/491",
+          "title": "[Product][Drawing Craft] Multi-PDF → native DWG benchmark: engineering fidelity + human drafting quality",
+          "body_length": 10958
+        },
+        {
+          "url": "https://github.com/NASA-Planetary-Science/sbpy/issues/365",
+          "title": "HG12 fitting in photometry module can produce non-physical non-monotonic phase function fits",
+          "body_length": 1121
+        },
+        {
+          "url": "https://github.com/qiaoyuet/arxiv_daily/issues/97",
+          "title": "New submissions for Mon, 29 Apr 24",
+          "body_length": 155755
+        },
+        {
+          "url": "https://github.com/agorahub/_meta/issues/4",
+          "title": "疫情共知貼吧 Covid-19 Fact Check",
+          "body_length": 801
+        },
+        {
+          "url": "https://github.com/sagemath/sage/issues/6102",
+          "title": "cohomology ring of simplicial complexes",
+          "body_length": 659
+        },
+        {
+          "url": "https://github.com/lmas/opensimplex/issues/22",
+          "title": "A small issue regarding noiseXarray",
+          "body_length": 528
+        },
+        {
+          "url": "https://github.com/pytorch/pytorch/issues/18133",
+          "title": "Descriptive error message for distribution constraint violation",
+          "body_length": 1987
+        },
+        {
+          "url": "https://github.com/arviz-devs/arviz/issues/1643",
+          "title": "Unify model comparison api",
+          "body_length": 480
+        },
+        {
+          "url": "https://github.com/scipy/scipy/issues/14115",
+          "title": "scipy.optimize.linprog interior-point method gives incorrect value/solution",
+          "body_length": 1203
+        },
+        {
+          "url": "https://github.com/scipy/scipy/issues/13767",
+          "title": "scipy.optimize.linprog(method=\"highs\"): status=4, message=\"The solver did not provide a solution nor did it report a failure.\"",
+          "body_length": 2165
+        },
+        {
+          "url": "https://github.com/flexible-collision-library/fcl/issues/493",
+          "title": "EPA failure - another example of an EPA exception when computing signed distance",
+          "body_length": 2060
+        },
+        {
+          "url": "https://github.com/LIVIAETS/boundary-loss/issues/6",
+          "title": "Assert error when constructing dist maps of ground truth",
+          "body_length": 1304
+        },
+        {
+          "url": "https://github.com/vectorgraphics/asymptote/issues/72",
+          "title": "Infinite loop while fitting",
+          "body_length": 889
+        },
+        {
+          "url": "https://github.com/networkx/networkx/issues/2846",
+          "title": "AttributeError: module 'networkx' has no attribute 'topological_sort_recursive'",
+          "body_length": 16756
+        },
+        {
+          "url": "https://github.com/quantopian/quantopian-algos/issues/3",
+          "title": "simplex_projection working correctly?",
+          "body_length": 511
+        }
+      ]
+    },
+    {
+      "query": "is:issue \"standard simplex\" \"negative\" in:title,body",
+      "returned": 31,
+      "results": [
+        {
+          "url": "https://github.com/1337isnot1337/solved-conjectures/issues/212",
+          "title": "Standard Simplex conjecture",
+          "body_length": 2975
+        },
+        {
+          "url": "https://github.com/morluto/jacobian/issues/1951",
+          "title": "[Finite simplicial sets] Add exact face/degeneracy diagrams, normalized chains, products, nerves, and simplicial-map operations",
+          "body_length": 16584
+        },
+        {
+          "url": "https://github.com/optimal-uoft/sgtlearn/issues/21",
+          "title": "[Exploration] Test Bregman Clustering for ShapeCART Classifier Leaf to bin assignment",
+          "body_length": 1456
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/30798",
+          "title": "Open problem (preregistration): prove Anh T. Tran’s §8 APPT/CAS spectral-volume leading asymptotic for every fixed m ≥ 2 (arXiv:2611.01492)",
+          "body_length": 38699
+        },
+        {
+          "url": "https://github.com/iamycy/hrtf-ilp/issues/4",
+          "title": "[Performance & Theory] Replace MIP with continuous LP relaxation & Dual Network Flow formulation (3–4× speedup)",
+          "body_length": 3708
+        },
+        {
+          "url": "https://github.com/deepseek-launch-community/XuanJi-ISA/issues/154",
+          "title": "Cartan A₉ Structure in the Class-Mean Gram Matrix of Trained Neural Network Features",
+          "body_length": 14374
+        },
+        {
+          "url": "https://github.com/deepseek-launch-community/XuanJi-ISA/issues/170",
+          "title": "Cartan A₉ Correlation in Class-Mean Gram Eigenvalues Is an Artifact of Monotone Sequences",
+          "body_length": 14527
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/25379",
+          "title": "Open problem (preregistration): prove Belabbas's Section 9 first boundary-limit answer (arXiv:2610.01607v1)",
+          "body_length": 46004
+        },
+        {
+          "url": "https://github.com/Godalin/rocq-cats/issues/29",
+          "title": "Groupoids to ∞-groupoids: simplicial sets, Kan complexes, and path-dependent families",
+          "body_length": 64369
+        },
+        {
+          "url": "https://github.com/jgreathouse9/mlsynth/issues/774",
+          "title": "[Feature] MAREX exact backend: a search certificate and diagnostics on the result",
+          "body_length": 8498
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/26872",
+          "title": "Open problem (preregistration): prove Lee–Skipper–Speakman Section 4 Outlook question (arXiv:2605.01493): complete inequalities and volume of C_n^2 for every n ≥ 2",
+          "body_length": 40814
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/28084",
+          "title": "Open problem (preregistration): prove Quang Hung Tran §12 item 4, first clause (arXiv:2610.01216v1): a simplex with regular Morley simplex and trivial full isometry group",
+          "body_length": 29317
+        },
+        {
+          "url": "https://github.com/jwiegley/category-theory/issues/970",
+          "title": "Riehl 4.1: Chains of adjoint functors between the ordinal categories",
+          "body_length": 5864
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/28951",
+          "title": "Open problem (preregistration): refute Zoroa–Lesigne–Fernández-Sáez–Zoroa–Casas strong-dominance conjecture after Definition 8.2 (arXiv:1608.00155v1; published Definition 7.2)",
+          "body_length": 39529
+        },
+        {
+          "url": "https://github.com/jgreathouse9/mlsynth/issues/777",
+          "title": "[Feature] MAREX exact backend: bounds that see the penalties (penalized, unit_penalized)",
+          "body_length": 3976
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/26651",
+          "title": "Open problem (preregistration): prove O’Keeffe’s singleton-survivor formula for every N ≥ 2 and γ ∈ [−1,0] (SM §1, eq:sm:vsing; arXiv:2609.01668v2)",
+          "body_length": 38377
+        },
+        {
+          "url": "https://github.com/uda-lab/tda-lib/issues/277",
+          "title": "[Mapper] MultiNerve of an indexed cover, the MultiNerve Mapper and its projection to ordinary Mapper",
+          "body_length": 19908
+        },
+        {
+          "url": "https://github.com/phasetr/lattice-system/issues/405",
+          "title": "Perron-Frobenius theorem for real symmetric non-negative irreducible matrices",
+          "body_length": 1867
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/23274",
+          "title": "Open problem (preregistration): refute Aldous–Cruz–Feng Conjecture 5 (arXiv:2403.18153)",
+          "body_length": 47194
+        },
+        {
+          "url": "https://github.com/desouzagiovana/Operations-Research-Final-Project/issues/3",
+          "title": "Research project mathematical requirements",
+          "body_length": 2835
+        },
+        {
+          "url": "https://github.com/ColossalTuna/egg/issues/31",
+          "title": "A non-converged simplex solve is reported as failure, not optimal",
+          "body_length": 4613
+        },
+        {
+          "url": "https://github.com/leanprover/lp-backend-pure/issues/6",
+          "title": "Accept all row bound shapes (equality, ≥, ranged, lower-only)",
+          "body_length": 2392
+        },
+        {
+          "url": "https://github.com/the-omega-institute/trureturing/issues/9471",
+          "title": "research: Fan Conjecture 5.9 — full three-point Riesz capacity maximum",
+          "body_length": 12175
+        },
+        {
+          "url": "https://github.com/akellehe/tessera/issues/412",
+          "title": "Source simplex orientation/sign from the standard formula, not vertex-label sort",
+          "body_length": 16484
+        },
+        {
+          "url": "https://github.com/leanprover/sos/issues/23",
+          "title": "Full Newton polytope (convex-hull membership)",
+          "body_length": 8694
+        },
+        {
+          "url": "https://github.com/liu-qingyuan/llm-abm-marketing-sim/issues/147",
+          "title": "Spec: 扩展 Concurrent Message Ranking Weight 与 Prompt–Model 稳健性研究",
+          "body_length": 32142
+        },
+        {
+          "url": "https://github.com/datnguyenquy94/news-radar/issues/131",
+          "title": "🦞 OpenClaw Ecosystem Digest 2026-08-09",
+          "body_length": 65536
+        },
+        {
+          "url": "https://github.com/xiehd77-del/agents-radar/issues/216",
+          "title": "🦞 OpenClaw Ecosystem Digest 2026-07-19",
+          "body_length": 65536
+        },
+        {
+          "url": "https://github.com/Chestnuts-Sisyphus/gittok/issues/247",
+          "title": "🦞 OpenClaw Ecosystem Digest 2026-06-30",
+          "body_length": 65536
+        },
+        {
+          "url": "https://github.com/h2oai/h2o-3/issues/14826",
+          "title": "GLRM with Simplex Fails with Infinite Objective",
+          "body_length": 464
+        },
+        {
+          "url": "https://github.com/section-engineering-education/engineering-education/issues/5602",
+          "title": "Getting Started with Simplex Optimization Algorithm in Machine Learning",
+          "body_length": 6513
+        }
+      ]
+    },
+    {
+      "query": "is:issue \"0903.3362\" \"negative\" in:title,body",
+      "returned": 0,
+      "results": []
+    },
+    {
+      "query": "is:issue \"simplex\" \"small negative\" \"Gaussian\" in:title,body",
+      "returned": 14,
+      "results": [
+        {
+          "url": "https://github.com/Hawkar-usls/Janus-Fundamentum/issues/519",
+          "title": "R5 global Tutte-deficit descent: exact all-n polynomial gate beyond local traps",
+          "body_length": 65944
+        },
+        {
+          "url": "https://github.com/Ankita7033/oss-autocontrib-inbox/issues/30",
+          "title": "OSS auto-contrib: fix drafted + candidates",
+          "body_length": 41840
+        },
+        {
+          "url": "https://github.com/jacksonpradolima/coleman/issues/379",
+          "title": "[v5:24] Build independent cross-domain benchmarks and no-signal negative controls",
+          "body_length": 53399
+        },
+        {
+          "url": "https://github.com/dzackgarza/sage-indefinite-port/issues/69",
+          "title": "Retained functional capabilities beyond the pinned source",
+          "body_length": 131221
+        },
+        {
+          "url": "https://github.com/midodoku/arxiv_daily/issues/300",
+          "title": "Showing new listings for Monday, 29 December 2025",
+          "body_length": 123428
+        },
+        {
+          "url": "https://github.com/zoq/arxiv-updates/issues/574",
+          "title": "New submissions for Wed,  9 Aug 23",
+          "body_length": 69953
+        },
+        {
+          "url": "https://github.com/LeeKyungwook/get-arxiv-noti/issues/1497",
+          "title": "Showing new listings for Tuesday, 18 February 2025",
+          "body_length": 166881
+        },
+        {
+          "url": "https://github.com/A-suozhang/GetArxivDaily/issues/169",
+          "title": "New submissions for Fri,  6 Oct 23",
+          "body_length": 167595
+        },
+        {
+          "url": "https://github.com/A-suozhang/GetArxivDaily/issues/168",
+          "title": "New submissions for Fri,  6 Oct 23",
+          "body_length": 167595
+        },
+        {
+          "url": "https://github.com/A-suozhang/GetArxivDaily/issues/167",
+          "title": "New submissions for Fri,  6 Oct 23",
+          "body_length": 167595
+        },
+        {
+          "url": "https://github.com/A-suozhang/GetArxivDaily/issues/123",
+          "title": "New submissions for Wed,  9 Aug 23",
+          "body_length": 148268
+        },
+        {
+          "url": "https://github.com/sherpa/sherpa/issues/836",
+          "title": "Problem fitting cash/cstat if model goes negative",
+          "body_length": 2474
+        },
+        {
+          "url": "https://github.com/qiaoyuet/arxiv_daily/issues/97",
+          "title": "New submissions for Mon, 29 Apr 24",
+          "body_length": 155755
+        },
+        {
+          "url": "https://github.com/networkx/networkx/issues/2846",
+          "title": "AttributeError: module 'networkx' has no attribute 'topological_sort_recursive'",
+          "body_length": 16756
+        }
+      ]
+    }
+  ],
+  "web_queries": [
+    {
+      "engine": "system2",
+      "queries": [
+        "\"standard simplex\" \"negative\" \"small\" all partitions",
+        "\"regular simplex\" \"negative correlations\" arbitrary number",
+        "\"Gaussian\" \"small negative\" \"simplex\"",
+        "\"plurality\" \"least stable\" \"small\" correlation",
+        "\"standard simplex\" \"negative\" \"four\" theorem",
+        "\"small negative correlations\" \"Heilman\""
+      ]
+    },
+    {
+      "engine": "system1",
+      "recency_days": 365,
+      "queries": [
+        "\"standard simplex\" \"negative\" \"all\" correlations",
+        "\"simplex\" \"unrestricted\" \"negative correlation\"",
+        "\"Gaussian noise stability\" \"small negative\" \"partitions\""
+      ]
+    }
+  ],
+  "reading_limit": "Titles and potentially relevant returned body passages were screened; not every comment of every unrelated issue was read. Current repository's own issue 212 and campaign 156 are not prior evidence."
+}
