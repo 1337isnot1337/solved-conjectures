@@ -34,3 +34,5 @@ done
 ```
 
 The [small-prime obstruction and residue-class search](../hou-zeng/finite-modulus-search.md) gives uniform lower bounds on coprime candidate shifts and tests selected progressions beyond the consecutive verification range.
+
+A [congruence-cover criterion](periodic-covers.md) links both parities and rules out covers for every common exponent period through 2,520. A separate order argument excludes periodic divisibility certificates for infinitely many other periods.
