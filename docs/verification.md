@@ -22,6 +22,13 @@ The [Simon stable-infimum proof](../results/simon-stable-infimum/PROOF.md) is al
 
 ## Computational checks
 
+The [Han–Sabag–Kostina–Hassibi checker](../results/han-sabag-kostina-hassibi/verify.py) performs 16 exact rational and symbolic checks of the feasible Lyapunov solution, all four sparse power thresholds, the strict objective gap, the determinant factorization and the open family. SymPy supplies only symbolic identity checks. The [written proof](../results/han-sabag-kostina-hassibi/PROOF.md) supplies the exhaustive classification and full disproof.
+
+```bash
+python3 results/han-sabag-kostina-hassibi/verify.py
+```
+
+
 The [Gröchenig checker](../results/grochenig-zero-density/verify.py) runs 784 exact standard-library checks of finite Gaussian-block identities, signs, normalization, geometric error budgets, and interval counts. The [written proof](../results/grochenig-zero-density/PROOF.md) constructs the infinite counterexample and proves convergence and both upper-density bounds. The checks diagnose algebra and transcription errors; no finite screen establishes the infinite assertion.
 
 ```bash

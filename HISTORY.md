@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Han–Sabag–Kostina–Hassibi's conjecture
+
+Added a complete proposed disproof of the explicit Lyapunov positivity conjecture in arXiv:2406.17196v2. A rational two-channel encoder has power 23825/22491, while the infimum over all encoders with one nonzero per column is 481/441. The strict gap is 706/22491. The proof classifies every sparse assignment with arbitrary nonzero coefficients and extends the example to an open interval of channel gains. It does not rely on optimizer nonattainment or claim a separate general communication-code result.
+
+Two independent source and mathematical reviews passed, together with 16 exact rational and symbolic checks. The [package](results/han-sabag-kostina-hassibi/) records the original source, related primary papers, public issue/archive searches and access limits. This subgroup's independently reviewed campaign tally is six; the earlier joint checkpoint retains its separate attribution. No Lean work was performed.
+
 ## 2026-11-21 — Joint ten-family research checkpoint
 
 Recorded an [attributed joint ledger](research/2026-11-21-joint-results/) covering eleven complete proposed result packages, conservatively grouped into ten named conjecture families. Seven packages were developed by the current four-worker group and four by the parallel issue-156 group, with separate cross-reviews before inclusion. The two López Pouso–Segura packages count as one family. Full assertions, source scope, proof mechanisms, review records and priority limits are linked individually.

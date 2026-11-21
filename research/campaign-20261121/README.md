@@ -23,10 +23,11 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 This section tracks this subgroup's packages. The [joint ten-family checkpoint](../2026-11-21-joint-results/) separately attributes the current four-worker group's seven packages and the four packages from this subgroup that completed cross-review at that checkpoint. The later Gröchenig package remains outside that joint checkpoint while its additional review proceeds.
 
-Complete proposed resolutions with separate internal review and a documented current status audit: **5** at this checkpoint. All remain unrefereed.
+Complete proposed resolutions with separate internal review and a documented current status audit: **6** at this checkpoint. All remain unrefereed.
 
 | Conjecture | Result | Evidence |
 | --- | --- | --- |
+| Han–Sabag–Kostina–Hassibi's conjecture | Disproved the full Lyapunov positivity sparse-optimality assertion by an exact strict gap and an open family; separate communication claims are outside scope | [Package](../../results/han-sabag-kostina-hassibi/) · [Issue 197](https://github.com/1337isnot1337/solved-conjectures/issues/197) |
 | Gröchenig's problem | Disproved the full universal upper-density comparison by one infinite Gaussian shift sum; the separate lower comparison is not counted or resolved | [Package](../../results/grochenig-zero-density/) · [Issue 191](https://github.com/1337isnot1337/solved-conjectures/issues/191) |
 | Vishnyakova's conjecture | Proved the full outer-root-radius conjecture for every degree and positive weight, with a stronger disk bound; one result | [Package](../../results/vishnyakova-root-radius/) · [Issue 182](https://github.com/1337isnot1337/solved-conjectures/issues/182) |
 | López Pouso–Segura's conjectures | Proved the complete sign, strict monotonicity and exact limit assertions for the three linked Bessel-weight sequences; one result | [Package](../../results/lopez-pouso-segura-bessel/) · [Issue 177](https://github.com/1337isnot1337/solved-conjectures/issues/177) |
@@ -39,7 +40,7 @@ The original opening count was zero. The separate Baxter-number conjecture is no
 
 ## Exclusions and active work
 
-Fang–Zhang–Zhao's Sturm conjecture was also excluded after the full [18 October proof](https://github.com/the-omega-institute/trureturing/issues/18758) was located. The six-step proof already covers every real base at least one and every integer Hoggatt parameter at least two. Our independent reproof is preserved as [credited research](../fang-zhang-zhao-sturm/); its incomplete formalization in the earlier repository is irrelevant to ordinary-proof priority. This correction reduces the five-result checkpoint above to four. The [scope audit](../2026-11-21-special-functions-fzz-priority/AUDIT.md) records the comparison.
+Fang–Zhang–Zhao's Sturm conjecture was also excluded after the full [18 October proof](https://github.com/the-omega-institute/trureturing/issues/18758) was located. The six-step proof already covers every real base at least one and every integer Hoggatt parameter at least two. Our independent reproof is preserved as [credited research](../fang-zhang-zhao-sturm/); its incomplete formalization in the earlier repository is irrelevant to ordinary-proof priority. At the time of withdrawal this correction reduced the subgroup's tally from five to four; the table above includes subsequent new results. The [scope audit](../2026-11-21-special-functions-fzz-priority/AUDIT.md) records the comparison.
 
 Alexandersson–Saud Maia Leite's peak-nesting conjecture was excluded after the [earlier 3 November full informal disproof](https://github.com/the-omega-institute/trureturing/issues/25927) was found. An independently checked elementary reproof and exact coefficient certificates are preserved as [credited research](../alexandersson-leite-prior-resolution/), not as a new resolution.
 
