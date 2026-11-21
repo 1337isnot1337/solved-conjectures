@@ -56,3 +56,5 @@ The valuation on step $j$ is at least $1+B_j(1+w_L(N_j))$. The bounded martingal
 The accompanying checker compares the stopped excursion formulas with the literal two-sign transition tree in exact rational arithmetic. The arguments above cover unbounded depth. [Checker](verify.py)
 
 An [asynchronous path coupling](dyadic-coupling.md) bounds the difference in escape probabilities at corresponding neighbors of dyadic multiples of $n$ and $3n$. It makes all-start absorption equivalent to a condition on adjacent jumps in those probabilities and gives a quantitative transfer to other offsets.
+
+The [recovery-window theorem](recovery-window.md) proves that the mean log-base-two growth per move converges in probability to $\log_2 3-2$, and the fraction of visits to the extra-halving classes converges to one half, during a growing window after a long phase. The estimate is uniform over its initial odd coefficient and applies to both exit types.
