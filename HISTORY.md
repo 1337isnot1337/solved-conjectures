@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak exceptional graph partitions
+
+Proved all zero-slack exceptional cases, combined them with positive slack, and constructed the exceptional-size partitions for the tripod and for a reserved short arm under explicit residue and fifth-test hypotheses. The full chain passed a 541-theorem axiom audit and isolated kernel replay. Original-test translation, general AVD reductions, existence constructions and the combined gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak zero-budget criterion
 
 Proved the exact zero-budget packing criterion and the exceptional zero-slack branch with two positive quotient gaps. The full HornakZero dependency chain passed a 492-theorem axiom audit and isolated kernel replay. Correction: the earlier 407-theorem audit imported HornakReservedArm rather than HornakLargest; the new audit includes both. Other zero-slack cases, AVD reductions and the combined gate remain.

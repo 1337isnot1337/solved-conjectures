@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak exceptional graph partitions, 21 November 2026
+
+Lean proves every exceptional-size graph partition for the tripod and for a reserved short arm under stated residue and fifth-test hypotheses, covering zero and positive slack. Original-test translation, general AVD reductions, and existence constructions remain. Strict compilation, a 541-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak zero-budget criterion, 21 November 2026
 
 Lean proves the exact zero-budget packing criterion, bounds residue loss, and handles the exceptional zero-slack case with two positive quotient gaps from the pairwise residue test. Other zero-slack cases, full reductions and existence constructions remain. A 492-theorem axiom audit on the full HornakZero dependency chain and isolated kernel replay passed. The prior 407-theorem audit imported HornakReservedArm rather than HornakLargest; the new audit covers both. The combined repository gate is pending.

@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Hornak.exceptional_zero_packing_from_tests,
+    `Hornak.exceptional_packing_from_tests,
+    `Hornak.exceptional_partition_from_tests,
+    `Hornak.exceptional_partition_with_reserved_arm_from_tests,
     `Hornak.zero_budget_packing_iff,
     `Hornak.exceptional_zero_two_positive_from_tests,
     `Hornak.exceptional_zero_of_original_deficit,
