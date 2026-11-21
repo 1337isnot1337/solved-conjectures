@@ -46,7 +46,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | ✅ |
 | [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
 | [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | ⬜ |
-| [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ⬜ |
+| [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ✅ |
 | [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ✅ |
 | [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ |
 | [Six-speed Loneliness Spectrum Conjecture](results/six-speed-spectrum/) | 🟢 |

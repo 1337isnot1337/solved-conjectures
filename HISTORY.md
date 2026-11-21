@@ -11,6 +11,10 @@ Registered seven modules and 26 required endpoints. The original sampled
 class is undergoing separate checks, so the overall badge remains partial.
 The combined repository gate and hosted validation remain pending.
 
+## 2026-11-21 — Bernardi–Morales conjectures formalized
+
+Formalized both published delta-process Conjectures 27–28 for every stated parameter, using literal subset tuples, cyclic interval events and the next-complement delta rule. The tree count allows arbitrary fixed color maps; the event identity and source probability determinant use fixed surjections. The 13-module closure passed strict compilation with warnings treated as errors, an all-owned audit of 269 declarations (205 theorem declarations and 23 required endpoints), and independent replay by the pinned stock kernel. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. Updated the complete result-level badge and all registrations. The shared-package gate remains pending.
+
 ## 2026-11-21 — Ekhad–Zeilberger’s most unfair bet conjecture
 
 Proved the extremal asymptotic advantage for every word length from a variance lower bound for overlapping occurrences. The proof also classifies extremizers with and without a full-alphabet requirement. [Proof and checker](results/ekhad-zeilberger-unfair-bet/) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/219)

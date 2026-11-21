@@ -35,6 +35,29 @@ run_cmd do
     `VishnyakovaRootRadius.weighted_radius_isGreatest,
     `VishnyakovaRootRadius.weighted_radius_sup,
     `VishnyakovaRootRadius.unit_weight_radius_sup,
+    `BernardiMorales.average_diagonalRows_columns,
+    `BernardiMorales.cycleMatrix_det,
+    `BernardiMorales.intervalKernel_entry,
+    `BernardiMorales.intervalKernel_binary,
+    `BernardiMorales.average_replaceRows,
+    `BernardiMorales.weighted_event_identity,
+    `BernardiMorales.event_generating_function,
+    `BernardiMorales.standardCyclicOrder_pred,
+    `BernardiMorales.sourceEventMatrix_eq_eventMatrix,
+    `BernardiMorales.subsetMembership_apply,
+    `BernardiMorales.tupleMembership_apply,
+    `BernardiMorales.isTargetTuple_iff,
+    `BernardiMorales.source_event_membership_count,
+    `BernardiMorales.functionalLaplacian_det,
+    `BernardiMorales.weighted_vacancy_identity,
+    `BernardiMorales.delta_selected,
+    `BernardiMorales.delta_unselected,
+    `BernardiMorales.vacancyMatrix_tree_indicator,
+    `BernardiMorales.delta_tree_membership_count,
+    `BernardiMorales.probabilityDeterminant_eq_average,
+    `BernardiMorales.source_probability_determinant,
+    `BernardiMorales.bernardi_morales_delta,
+    `BernardiMorales.bernardi_morales_event,
     `Hornak.balance_unique_largest,
     `Hornak.singleton_vertices_partition,
     `Hornak.one_edge_tripod_avd_from_tests,
@@ -10222,7 +10245,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex."]
+  let prefixes := #["SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

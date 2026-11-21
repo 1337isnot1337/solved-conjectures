@@ -15,6 +15,10 @@ This checkpoint proves the full weighted transform-class theorem. It does
 not certify the original sampled-sequence class, the combined repository
 gate, or hosted validation.
 
+## Bernardi–Morales local verification checkpoint
+
+The 13-module closure passed strict compilation with warnings treated as errors, an all-owned audit of 269 declarations (205 theorem declarations and 23 required endpoints), and independent replay by the pinned stock kernel. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. The [receipt](verification/lean-named-20261121/bernardi-receipt.json) records exact source/object hashes and toolchain pins; [source records](verification/lean-named-20261121/bernardi-source-evidence.json) preserve all 13 strict successes; the [kernel log](verification/lean-named-20261121/bernardi-kernel.log) covers the exact local module union. The scope is the full fixed-map tree and fixed-surjection event identities, including their source semantics. The combined repository gate is not claimed by this checkpoint.
+
 ## Ekhad–Zeilberger’s most unfair bet conjecture
 
 Run `python results/ekhad-zeilberger-unfair-bet/verify.py`. It compares squared asymptotic advantages by integer cross-multiplication for all unordered pairs in the listed alphabet and word-length ranges. The all-length variance bound is in the [proof](../results/ekhad-zeilberger-unfair-bet/PROOF.md).

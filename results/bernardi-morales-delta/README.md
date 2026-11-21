@@ -52,6 +52,16 @@ The determinant is the indicator that the functional graph reaches the root. Thu
 
 The separate event proof represents interval indicators by the adjugate of a cyclic matrix. Multiplying selected rows by that matrix reduces the determinant to complementary columns. At the full subset, both sides vanish because of the fixed last row of ones. This exact cancellation permits independent Bernoulli averaging even at the singular case. Replacing one color at a time and evaluating the final determinant proves the stronger identity.
 
+## Lean formalization
+
+The complete published Conjectures 27–28 are formalized. The root endpoints are `BernardiMorales.bernardi_morales_delta` and `BernardiMorales.bernardi_morales_event` in [`BernardiMorales.lean`](../../lean/Conjectures/BernardiMorales.lean). The parameters `n` and `r` encode every `k=n+2 ≥ 2` and every positive number `r+1` of subsets. Membership counts range over arbitrary nonnegative integer vectors. The tree identity permits every fixed color map, including nonsurjections; the marked-event identity uses every fixed surjection and every marked set avoiding the root.
+
+The definitions use actual Boolean subset tuples, the source's cyclic intervals with `]i,i]` empty, the full-subset diagonal rule, and the literal next-complement delta map. The delta graph is a rooted tree precisely when all nonroot forward orbits reach the root. Its determinant is proved to be the exact zero-one indicator. `source_probability_determinant` also identifies the source's signed-intersection probability determinant with the normalized target count. The singular full-subset case is proved within the row-replacement argument.
+
+The 13-module closure passed strict compilation with warnings treated as errors, an all-owned audit of 269 declarations (205 theorem declarations and 23 required endpoints), and independent replay by the pinned stock kernel. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. [Receipt](../../docs/verification/lean-named-20261121/bernardi-receipt.json), [complete declaration inventory](../../docs/verification/lean-named-20261121/bernardi-all-owned-inventory.json), and [strict source records](../../docs/verification/lean-named-20261121/bernardi-source-evidence.json).
+
+Run the registered full gate from the repository root with `scripts/verify_lean.sh`. This local result-level checkpoint does not claim that the combined repository gate or hosted validation has passed.
+
 ## Files and verification
 
 - [PROOF.md](PROOF.md): complete argument, including the fixed-map theorem and color-weight identity.
@@ -64,4 +74,4 @@ Run `python verify.py`. The recorded run passed all membership coefficients for 
 
 Run `python verify_events.py`. The recorded run passed 342 pairs of a fixed surjection and a marked set, involving 438,952 signed integer determinants. The implementation uses the source's interval events directly and does not use the adjugate or Bernoulli formulas. Both verifiers use only Python's standard library.
 
-Coordination and audit: [issue #85](https://github.com/1337isnot1337/solved-conjectures/issues/85). No Lean verification was used.
+Coordination and audit: [issue #85](https://github.com/1337isnot1337/solved-conjectures/issues/85). The Python verifiers remain independent finite checks; the Lean theorems cover the unrestricted stated parameters.

@@ -1,0 +1,33 @@
+import took 13s
+.olean serialization took 131ms
+simp took 125ms
+typeclass inference of Nonempty took 130ms
+simp took 111ms
+cumulative profiling times:
+	.olean serialization 131ms
+	attribute application 0.189ms
+	compilation (IR) 1.09ms
+	compilation (LCNF base) 13.3ms
+	compilation (LCNF impure) 3.7ms
+	compilation (LCNF mono) 19.9ms
+	congr simp thm 18.3ms
+	declTypeLinter 104ms
+	elaboration 182ms
+	fix level params 3.28ms
+	import 13s
+	initialization 78.2ms
+	instantiate metavars 5.06ms
+	interpretation 1.42s
+	let-to-have transformation 0.483ms
+	linting 81.5ms
+	module linting 0.453ms
+	norm_num 11.5ms
+	parsing 17.7ms
+	process pre-definitions 23.6ms
+	ring 83.1ms
+	share common exprs 10.5ms
+	simp 625ms
+	tactic execution 619ms
+	tacticAnalysis 19.3ms
+	type checking 108ms
+	typeclass inference 1.08s

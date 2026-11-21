@@ -34,6 +34,14 @@ The result badge remains partial until the original sampled-sequence class
 passes its separate checks. The combined package gate and hosted validation
 are not claimed by this local receipt.
 
+## Bernardi–Morales delta and event identities, 21 November 2026
+
+`BernardiMorales.bernardi_morales_delta` proves the full literal delta-map count for every fixed color map, including nonsurjections. `bernardi_morales_event` proves the stronger source marked-event identity for every fixed surjection and marked set. The source probability determinant is also identified with the exact normalized membership count. The tuple definitions include the source's empty cyclic self-interval, full-subset diagonal event, singleton-complement fixed point and root-reaching tree semantics. No finite cutoff or unproved determinant identity is an input.
+
+The 13-module closure passed strict compilation with warnings treated as errors, an all-owned audit of 269 declarations (205 theorem declarations and 23 required endpoints), and independent replay by the pinned stock kernel. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted. All 13 strict source checks have preserved logs and source/object bindings; the six initial successes were rerun once to supply complete contemporaneous records. [Receipt](verification/lean-named-20261121/bernardi-receipt.json), [source records](verification/lean-named-20261121/bernardi-source-evidence.json), and [all-owned inventory](verification/lean-named-20261121/bernardi-all-owned-inventory.json).
+
+The result is registered in the common imports, required endpoints, legacy-prefix audit and prebuild list. These local checks are separate from the combined accepted-root gate and hosted validation.
+
 ## Circular-index main theorems and regular examples, 21 November 2026
 
 `CircularIndex.theorem_one` proves the full infinite construction for every `g ≥ 2`: the literal graph on `ZMod (6*g+1)` is `4g`-regular, stays connected after deletion of any fewer than `4g` vertices, and has real circular chromatic index `4g+2/3`. `theorem_two`, `graph31_complete`, and `graph33_complete` prove the full degree/connectivity/index assertions for the three listed finite circulants.

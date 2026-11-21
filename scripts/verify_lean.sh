@@ -11,6 +11,19 @@ modules=(
   Conjectures.VishnyakovaJacobi
   Conjectures.VishnyakovaDisk
   Conjectures.VishnyakovaTransform
+  Conjectures.BernardiMoralesFunctionalGraph
+  Conjectures.BernardiMoralesAveraging
+  Conjectures.BernardiMoralesCycle
+  Conjectures.BernardiMoralesRows
+  Conjectures.BernardiMoralesColors
+  Conjectures.BernardiMoralesPolynomial
+  Conjectures.BernardiMoralesVacancy
+  Conjectures.BernardiMoralesEvents
+  Conjectures.BernardiMoralesDelta
+  Conjectures.BernardiMoralesCounting
+  Conjectures.BernardiMoralesProbability
+  Conjectures.BernardiMoralesTree
+  Conjectures.BernardiMorales
   Conjectures.HornakSmallBalance
   Conjectures.HornakOneArm
   Conjectures.HornakTwoArm

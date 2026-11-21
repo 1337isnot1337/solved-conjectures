@@ -1,5 +1,7 @@
 # Bernardi–Morales's delta-process conjecture
 
+Lean status: the complete statement in this note now has strict source, all-owned axiom, and pinned stock-kernel verification. See the [formalization section](README.md#lean-formalization) for the exact definitions, endpoints and receipt. The combined package gate remains separate.
+
 ## The stronger event identity
 
 This note proves Conjecture 28 in Bernardi and Morales, [*Some probabilistic trees with algebraic roots*](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v23i2p36/pdf/), Electronic Journal of Combinatorics 23(2) (2016), P2.36, page 23. It is Conjecture 22 in [arXiv:1501.01135v1](https://arxiv.org/abs/1501.01135v1). The paper shows that this identity implies its delta-process tree-probability conjecture. The companion [PROOF.md](PROOF.md) gives an independent proof of that probability formula.

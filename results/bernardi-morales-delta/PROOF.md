@@ -1,5 +1,7 @@
 # Bernardi–Morales's delta-process conjecture
 
+Lean status: the complete statement in this note now has strict source, all-owned axiom, and pinned stock-kernel verification. See the [formalization section](README.md#lean-formalization) for the exact definitions, endpoints and receipt. The combined package gate remains separate.
+
 ## Statement and source
 
 Bernardi and Morales state the conjecture as Conjecture 27 in *Some probabilistic trees with algebraic roots*, Electronic Journal of Combinatorics 23(2) (2016), P2.36, page 23, DOI [10.37236/4954](https://doi.org/10.37236/4954). It is Conjecture 21 in [arXiv:1501.01135v1](https://arxiv.org/abs/1501.01135v1).

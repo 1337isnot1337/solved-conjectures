@@ -1,0 +1,369 @@
+{
+  "gate": "strict-source-compile",
+  "lock": "release and reacquire once per module",
+  "modules": [
+    {
+      "module": "Conjectures.BernardiMoralesAveraging",
+      "lock_acquired_utc": "2026-11-21T15:54:44.616987+00:00",
+      "source_before_sha256": "c578a8f5edbf98c5a1b300447aa6765eb4b01d2854be62c6ae47d45d15f39b23",
+      "dependencies_before": {
+        "Mathlib.LinearAlgebra.Matrix.Determinant.Basic": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/Matrix/Determinant/Basic.olean",
+          "sha256": "ac0b587d767f6a4d283b504a4426f813dc24a747acd927585ec11b47fc3d071b"
+        },
+        "Mathlib.Algebra.BigOperators.Ring.Finset": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Ring/Finset.olean",
+          "sha256": "cb6bbc7bb64dcfb91cd93bc6d782b492b7500932586d3283d7a880b7f75e47ce"
+        },
+        "Mathlib.Data.Fintype.Pi": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Pi.olean",
+          "sha256": "4aa305e9eaffde816bff8296dc26f96210a69e12ca47eec518626037e2250ada"
+        },
+        "Mathlib.Tactic.Ring": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean",
+          "sha256": "d63e8217a9f5786c3f673020dd6db2ac45b5d72ff1185a899d431b3e80005c7e"
+        },
+        "Mathlib.Tactic.Push": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Push.olean",
+          "sha256": "784b4698c32ea99d6429209f81a6f683949cf64f0418c8a0926ac0abcb9fc4aa"
+        }
+      },
+      "olean_before_sha256": "cd324a99fb53a071e756df21f013047c7acd62f430b274faa9d66b500fda55c8",
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "lean_executable_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+      "lake_manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+      "command": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesAveraging.olean",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/Conjectures/BernardiMoralesAveraging.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 57.541,
+      "peak_rss_kb": 1740244,
+      "source_after_sha256": "c578a8f5edbf98c5a1b300447aa6765eb4b01d2854be62c6ae47d45d15f39b23",
+      "dependencies_after": {
+        "Mathlib.LinearAlgebra.Matrix.Determinant.Basic": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/Matrix/Determinant/Basic.olean",
+          "sha256": "ac0b587d767f6a4d283b504a4426f813dc24a747acd927585ec11b47fc3d071b"
+        },
+        "Mathlib.Algebra.BigOperators.Ring.Finset": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Ring/Finset.olean",
+          "sha256": "cb6bbc7bb64dcfb91cd93bc6d782b492b7500932586d3283d7a880b7f75e47ce"
+        },
+        "Mathlib.Data.Fintype.Pi": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Pi.olean",
+          "sha256": "4aa305e9eaffde816bff8296dc26f96210a69e12ca47eec518626037e2250ada"
+        },
+        "Mathlib.Tactic.Ring": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean",
+          "sha256": "d63e8217a9f5786c3f673020dd6db2ac45b5d72ff1185a899d431b3e80005c7e"
+        },
+        "Mathlib.Tactic.Push": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Push.olean",
+          "sha256": "784b4698c32ea99d6429209f81a6f683949cf64f0418c8a0926ac0abcb9fc4aa"
+        }
+      },
+      "olean_after_sha256": "cd324a99fb53a071e756df21f013047c7acd62f430b274faa9d66b500fda55c8",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-11-21T15:55:42.205213+00:00",
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "passed": true
+    },
+    {
+      "module": "Conjectures.BernardiMoralesCycle",
+      "lock_acquired_utc": "2026-11-21T15:56:55.107720+00:00",
+      "source_before_sha256": "825c774d1ab3883dddc1acfb1a2683022439a8e5f8ef39f48f9fd9f7c96b7677",
+      "dependencies_before": {
+        "Conjectures.BernardiMoralesAveraging": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesAveraging.olean",
+          "sha256": "cd324a99fb53a071e756df21f013047c7acd62f430b274faa9d66b500fda55c8"
+        },
+        "Mathlib.GroupTheory.Perm.Cycle.Basic": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/GroupTheory/Perm/Cycle/Basic.olean",
+          "sha256": "884748026c0ad75ab2ea9c17b34fc8770472830258b277a20187ab739ba59edf"
+        },
+        "Mathlib.GroupTheory.Perm.Fin": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/GroupTheory/Perm/Fin.olean",
+          "sha256": "8f14400d0eaedf91eba524f949f7235aa7f24d28866c0293d5bf4b665fcd33ab"
+        },
+        "Mathlib.Algebra.Ring.GeomSum": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Ring/GeomSum.olean",
+          "sha256": "1846a94ac5edefe3e59075d6fbdd86f76af1a370bbfce2939d798b108fbbe47b"
+        },
+        "Mathlib.Algebra.BigOperators.Fin": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Fin.olean",
+          "sha256": "c981adb10acbd63fa7dd043acfe5a7d97325b1b0e12cfb8b497286020068493a"
+        }
+      },
+      "olean_before_sha256": "291f31ef271ec2f7e8391bff3e7d19de09fb38002c1262f624ec2ef9be823373",
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "lean_executable_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+      "lake_manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+      "command": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesCycle.olean",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/Conjectures/BernardiMoralesCycle.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 11.818,
+      "peak_rss_kb": 2179352,
+      "source_after_sha256": "825c774d1ab3883dddc1acfb1a2683022439a8e5f8ef39f48f9fd9f7c96b7677",
+      "dependencies_after": {
+        "Conjectures.BernardiMoralesAveraging": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesAveraging.olean",
+          "sha256": "cd324a99fb53a071e756df21f013047c7acd62f430b274faa9d66b500fda55c8"
+        },
+        "Mathlib.GroupTheory.Perm.Cycle.Basic": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/GroupTheory/Perm/Cycle/Basic.olean",
+          "sha256": "884748026c0ad75ab2ea9c17b34fc8770472830258b277a20187ab739ba59edf"
+        },
+        "Mathlib.GroupTheory.Perm.Fin": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/GroupTheory/Perm/Fin.olean",
+          "sha256": "8f14400d0eaedf91eba524f949f7235aa7f24d28866c0293d5bf4b665fcd33ab"
+        },
+        "Mathlib.Algebra.Ring.GeomSum": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Ring/GeomSum.olean",
+          "sha256": "1846a94ac5edefe3e59075d6fbdd86f76af1a370bbfce2939d798b108fbbe47b"
+        },
+        "Mathlib.Algebra.BigOperators.Fin": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Fin.olean",
+          "sha256": "c981adb10acbd63fa7dd043acfe5a7d97325b1b0e12cfb8b497286020068493a"
+        }
+      },
+      "olean_after_sha256": "291f31ef271ec2f7e8391bff3e7d19de09fb38002c1262f624ec2ef9be823373",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-11-21T15:57:06.954896+00:00",
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "passed": true
+    },
+    {
+      "module": "Conjectures.BernardiMoralesRows",
+      "lock_acquired_utc": "2026-11-21T15:57:30.078045+00:00",
+      "source_before_sha256": "c4bdcf784fd021d5075f773b6a562477c854d8a03f070eaadd6c68a8cfc36422",
+      "dependencies_before": {
+        "Conjectures.BernardiMoralesCycle": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesCycle.olean",
+          "sha256": "291f31ef271ec2f7e8391bff3e7d19de09fb38002c1262f624ec2ef9be823373"
+        }
+      },
+      "olean_before_sha256": "ee0b9417c33a942d2ebeec5dafafda85588b6f0be5fa85c7c50bf5e1af9d9c53",
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "lean_executable_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+      "lake_manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+      "command": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesRows.olean",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/Conjectures/BernardiMoralesRows.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 48.436,
+      "peak_rss_kb": 1685864,
+      "source_after_sha256": "c4bdcf784fd021d5075f773b6a562477c854d8a03f070eaadd6c68a8cfc36422",
+      "dependencies_after": {
+        "Conjectures.BernardiMoralesCycle": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesCycle.olean",
+          "sha256": "291f31ef271ec2f7e8391bff3e7d19de09fb38002c1262f624ec2ef9be823373"
+        }
+      },
+      "olean_after_sha256": "ee0b9417c33a942d2ebeec5dafafda85588b6f0be5fa85c7c50bf5e1af9d9c53",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-11-21T15:58:18.541330+00:00",
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "passed": true
+    },
+    {
+      "module": "Conjectures.BernardiMoralesColors",
+      "lock_acquired_utc": "2026-11-21T16:01:38.447177+00:00",
+      "source_before_sha256": "16caf36c9d701c7f0463c891d2b103539e5aef235c9adea97db0d870b396fc75",
+      "dependencies_before": {
+        "Conjectures.BernardiMoralesRows": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesRows.olean",
+          "sha256": "ee0b9417c33a942d2ebeec5dafafda85588b6f0be5fa85c7c50bf5e1af9d9c53"
+        },
+        "Mathlib.Algebra.BigOperators.Fin": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Fin.olean",
+          "sha256": "c981adb10acbd63fa7dd043acfe5a7d97325b1b0e12cfb8b497286020068493a"
+        },
+        "Mathlib.Data.Fin.Tuple.Basic": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fin/Tuple/Basic.olean",
+          "sha256": "aca43817142f6191d0dc23e9249de92423d34427df4975619a4e28ffd64f9667"
+        }
+      },
+      "olean_before_sha256": "922316df092a09d21c146d84e986be603befdbee3fc4a559542d8390596b6b82",
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "lean_executable_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+      "lake_manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+      "command": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesColors.olean",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/Conjectures/BernardiMoralesColors.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 9.226,
+      "peak_rss_kb": 2204760,
+      "source_after_sha256": "16caf36c9d701c7f0463c891d2b103539e5aef235c9adea97db0d870b396fc75",
+      "dependencies_after": {
+        "Conjectures.BernardiMoralesRows": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesRows.olean",
+          "sha256": "ee0b9417c33a942d2ebeec5dafafda85588b6f0be5fa85c7c50bf5e1af9d9c53"
+        },
+        "Mathlib.Algebra.BigOperators.Fin": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Fin.olean",
+          "sha256": "c981adb10acbd63fa7dd043acfe5a7d97325b1b0e12cfb8b497286020068493a"
+        },
+        "Mathlib.Data.Fin.Tuple.Basic": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fin/Tuple/Basic.olean",
+          "sha256": "aca43817142f6191d0dc23e9249de92423d34427df4975619a4e28ffd64f9667"
+        }
+      },
+      "olean_after_sha256": "922316df092a09d21c146d84e986be603befdbee3fc4a559542d8390596b6b82",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-11-21T16:01:47.688120+00:00",
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "passed": true
+    },
+    {
+      "module": "Conjectures.BernardiMoralesPolynomial",
+      "lock_acquired_utc": "2026-11-21T16:02:20.771088+00:00",
+      "source_before_sha256": "1b4be6894519287ed4eae4f4cb3cdd4ae6520f04482e7e9081f419be43fffb09",
+      "dependencies_before": {
+        "Conjectures.BernardiMoralesColors": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesColors.olean",
+          "sha256": "922316df092a09d21c146d84e986be603befdbee3fc4a559542d8390596b6b82"
+        },
+        "Mathlib.Algebra.MvPolynomial.CommRing": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/MvPolynomial/CommRing.olean",
+          "sha256": "9955008524c205411daff84013d433e0db5040492a00e81efdcecd43ce345985"
+        },
+        "Mathlib.RingTheory.Localization.FractionRing": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/RingTheory/Localization/FractionRing.olean",
+          "sha256": "b869ce04f17dd1e6b16a2c095a6a297311f7c9b29d99e6cef9c9077deb499358"
+        },
+        "Mathlib.Tactic.FieldSimp": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/FieldSimp.olean",
+          "sha256": "b723e31f1be028b59f70a8085799ed4ba8af06b702a2691a796cc07a67ff73d2"
+        },
+        "Mathlib.Algebra.BigOperators.Field": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Field.olean",
+          "sha256": "6f11b063a146c56500186fac5ee569d4e345657e4318ce44f752db78469d38ef"
+        }
+      },
+      "olean_before_sha256": "248265be76094528ed3a2692a0b193cd2903efb19cfb69e6c0c10b36a98d58a3",
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "lean_executable_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+      "lake_manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+      "command": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesPolynomial.olean",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/Conjectures/BernardiMoralesPolynomial.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 53.484,
+      "peak_rss_kb": 1703228,
+      "source_after_sha256": "1b4be6894519287ed4eae4f4cb3cdd4ae6520f04482e7e9081f419be43fffb09",
+      "dependencies_after": {
+        "Conjectures.BernardiMoralesColors": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesColors.olean",
+          "sha256": "922316df092a09d21c146d84e986be603befdbee3fc4a559542d8390596b6b82"
+        },
+        "Mathlib.Algebra.MvPolynomial.CommRing": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/MvPolynomial/CommRing.olean",
+          "sha256": "9955008524c205411daff84013d433e0db5040492a00e81efdcecd43ce345985"
+        },
+        "Mathlib.RingTheory.Localization.FractionRing": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/RingTheory/Localization/FractionRing.olean",
+          "sha256": "b869ce04f17dd1e6b16a2c095a6a297311f7c9b29d99e6cef9c9077deb499358"
+        },
+        "Mathlib.Tactic.FieldSimp": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/FieldSimp.olean",
+          "sha256": "b723e31f1be028b59f70a8085799ed4ba8af06b702a2691a796cc07a67ff73d2"
+        },
+        "Mathlib.Algebra.BigOperators.Field": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Field.olean",
+          "sha256": "6f11b063a146c56500186fac5ee569d4e345657e4318ce44f752db78469d38ef"
+        }
+      },
+      "olean_after_sha256": "248265be76094528ed3a2692a0b193cd2903efb19cfb69e6c0c10b36a98d58a3",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-11-21T16:03:14.302345+00:00",
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "passed": true
+    },
+    {
+      "module": "Conjectures.BernardiMoralesEvents",
+      "lock_acquired_utc": "2026-11-21T16:15:02.363713+00:00",
+      "source_before_sha256": "d175ac32c649128f59c5338331b3b534316b2d686c0185df152ec400787030c5",
+      "dependencies_before": {
+        "Conjectures.BernardiMoralesColors": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesColors.olean",
+          "sha256": "922316df092a09d21c146d84e986be603befdbee3fc4a559542d8390596b6b82"
+        },
+        "Mathlib.Tactic.LinearCombination": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/LinearCombination.olean",
+          "sha256": "f0cdc23952823e919ae180b3390f92e4f9570728b9467480d57f521eaecba2e6"
+        }
+      },
+      "olean_before_sha256": "2ca6bef83af52a78dc831084521ed84bf9eddb488f54ee11941d47ca01458811",
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "lean_executable_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+      "lake_manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+      "command": [
+        "/home/agent/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+        "-j1",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesEvents.olean",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/Conjectures/BernardiMoralesEvents.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 187.059,
+      "peak_rss_kb": 1530596,
+      "source_after_sha256": "d175ac32c649128f59c5338331b3b534316b2d686c0185df152ec400787030c5",
+      "dependencies_after": {
+        "Conjectures.BernardiMoralesColors": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BernardiMoralesColors.olean",
+          "sha256": "922316df092a09d21c146d84e986be603befdbee3fc4a559542d8390596b6b82"
+        },
+        "Mathlib.Tactic.LinearCombination": {
+          "object": "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/LinearCombination.olean",
+          "sha256": "f0cdc23952823e919ae180b3390f92e4f9570728b9467480d57f521eaecba2e6"
+        }
+      },
+      "olean_after_sha256": "2ca6bef83af52a78dc831084521ed84bf9eddb488f54ee11941d47ca01458811",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completed_utc": "2026-11-21T16:18:09.459113+00:00",
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "passed": true
+    }
+  ],
+  "status": "passed",
+  "started_utc": "2026-11-21T15:53:18.806459+00:00",
+  "completed_utc": "2026-11-21T16:18:09.521487+00:00"
+}
