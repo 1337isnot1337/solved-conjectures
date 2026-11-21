@@ -132,6 +132,10 @@ Separate combinatorics, analysis, and root mathematical reviews passed. The supp
 
 This subgroup's reviewed proposed-resolution tally is now thirteen: seven proofs and six disproofs. The earlier withdrawn families remain excluded. These are unrefereed claims with internal reviews. No Lean work was performed for this result.
 
+## 2026-11-21 — Johnson–Kaya–Matzke path-spectrum conjecture
+
+Proved Conjecture 2.1 of Johnson, Kaya and Matzke: for every `n >= 2` and `1 <= k <= n-1`, the Babai `k`-spectrum of the path `P_n` consists of the integers from `ceil(n/(n-k))` to `k+1`. The authors had proved one inclusion; the other follows from the bound `n-k` on independent sets of the distance graph. The package contains an elementary written proof and a standard-library brute-force check of all 16,369 distance sets with `n <= 14`. The note is unrefereed; no Lean verification was performed.
+
 ## 2026-11-21 — Complete Sonntag–Teichert realization in Lean
 
 Formalized an explicit oriented graph realizing any two disjoint stars and proving all additional vertices are isolated in its domination hypergraph. Together with the tournament theorem and forward classification, this completes the result package in Lean. Strict source compilation, all-owned axiom audit and stock-kernel replay passed; the combined repository gate remains pending.
