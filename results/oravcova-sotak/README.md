@@ -4,6 +4,8 @@
 
 **Status:** Written proof with machine-checkable certificates. The proof is conditional on the four loneliness-spectrum classifications of this repository ([five](../../results/five-speed-spectrum/PROOF.md), [six](../../results/six-speed-spectrum/PROOF.md), [seven](../../results/seven-speed-spectrum/PROOF.md) and [eight](../../results/eight-speed-spectrum/PROOF.md) speeds). Those classifications are themselves computer-assisted and unrefereed. The note is unrefereed.
 
+**Contributor:** [@aadrianvv](https://github.com/aadrianvv). Proof, certificates, verifier, and result package submitted in [PR #144](https://github.com/1337isnot1337/solved-conjectures/pull/144).
+
 **Lean status:** none. No Lean formalization is included.
 
 Primary source: J. Oravcová and R. Soták, *On a problem concerning integer distance graphs*, [arXiv:2401.12347](https://arxiv.org/abs/2401.12347), Conjecture 2.7.
