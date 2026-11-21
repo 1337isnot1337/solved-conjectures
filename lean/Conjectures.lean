@@ -1,3 +1,4 @@
+import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
 import Conjectures.FangZhangZhao

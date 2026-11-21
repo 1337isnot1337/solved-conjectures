@@ -18,6 +18,10 @@ The earlier filename screens missed numeric archive paths. Root and separate rev
 
 The [correction record](research/campaign-20261121/PRIOR_RESOLUTION_CORRECTION.md) gives the exact comparisons and counting changes. This subgroup's committed proposed-resolution tally falls from twelve to ten. The selected joint checkpoint falls from eleven to ten named families because Sun–Zhao was never admitted to that stricter subset. Earlier historical counts are superseded. Retrospective full-content archive audits continue before further promotions.
 
+## 2026-11-21 — Baricz–Pogány coefficient theorem in Lean
+
+Formalized the original factorial-product coefficients, formal quotient uniqueness, strict positivity in every degree, and the explicit lower bound. Strict compilation, isolated stock-kernel replay, and endpoint axiom checks passed; the combined repository gate remains pending.
+
 ## 2026-11-21 — Complete Han sparse-assignment infima in Lean
 
 Formalized the lower bound and matching approaching feasible encoders for each of the four sparse assignments. Together with the earlier matrix witness and open-family gap, this completes the stated disproof package in Lean. Strict source compilation, all-owned axiom audit and stock-kernel replay passed; the combined repository gate remains pending.

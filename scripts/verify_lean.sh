@@ -5,6 +5,8 @@ export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
   Conjectures.SonntagTeichert
+
+  Conjectures.BariczPogany
   Conjectures.HanSabagCounterexample
   Conjectures.ZhangDeletion
   Conjectures.ZhuJacobiStirling

@@ -1271,3 +1271,7 @@ This formalizes a previously resolved result. A complete ordinary disproof was p
 ## Zhang deletion values
 
 `ZhangDeletion.question84` proves the strict loneliness inequality for all n≥4, 1≤r≤n−2, using actual real distances and the real-time value. `large_deletion_exact` and `small_deletion_exact` prove the full deletion-value formula for n≥3 and 1≤r≤n−1. The small-deletion upper bound is discharged internally via the pair-sum maximizer and a signed modular certificate, without assuming Liu’s theorem. The seven-module closure passed local kernel replay and the three endpoints use only the allowed axioms; the full repository gate is pending.
+
+## Baricz–Pogány coefficient positivity
+
+`BariczPogany.conjecture` proves strict positivity for every degree n≥2 and every real |ν|<1/2, using the source factorial-product coefficients and the uniquely determined formal quotient. `explicit_lower_bound` proves the stronger stated bound; no analytic convergence is assumed. Strict compilation, the isolated kernel replay and endpoint axiom checks passed. The full repository gate is pending.

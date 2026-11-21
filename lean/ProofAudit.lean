@@ -15,6 +15,11 @@ run_cmd do
     `Sonntag.representatives_bound,
     `Sonntag.separated_blockers_impossible,
     `Sonntag.tournament_no_separation,
+
+    `BariczPogany.conjecture,
+    `BariczPogany.explicit_lower_bound,
+    `BariczPogany.source_unique,
+    `BariczPogany.source_factorization,
     `Han.assignment_lower_general,
     `Han.assignment_approximation,
     `Han.encoder_patterns,

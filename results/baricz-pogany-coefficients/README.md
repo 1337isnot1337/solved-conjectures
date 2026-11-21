@@ -90,3 +90,5 @@ bounds passed. These finite checks support the written proof; they do
 not establish the universal statement.
 
 No proof assistant is used.
+
+The full coefficient inequality and explicit lower bound are checked in [`Conjectures.BariczPogany`](../../lean/Conjectures/BariczPogany.lean), starting from the source factorial products and formal quotient. Strict compilation and isolated kernel replay passed; the combined repository gate remains pending.
