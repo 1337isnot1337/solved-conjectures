@@ -3,8 +3,10 @@
 Research manuscript, 21 November 2026. Internally audited theorem: all fixed profiles have
 the conjectured root limits and eventually strict monotone convergence from the
 predicted side. Independent mathematical and primary-source review passed.
-Monotonicity from genus zero is not established. No completed-conjecture count
-is assigned to this note while that scope distinction remains unresolved.
+The strengthened claim of monotonicity from genus zero is false; the exact
+initial reversal and its relation to the source wording are documented in
+[SCOPE.md](SCOPE.md). This research package remains outside the strict
+completed-conjecture tally.
 
 ## 1. Source and precise theorem proved here
 
@@ -79,8 +81,8 @@ r_j=−1, the root is exactly −1. The cases d=2 and d=3 have only the fixed
 roots zero, or −1 and zero, respectively.
 
 This is a theorem for every fixed profile and unbounded genus. It is not a
-finite numerical case. Equation (2) by itself does not prove monotonicity
-starting at g=0; the final section retains that limitation.
+finite numerical case. Monotonicity starting at g=0 would be a stronger
+assertion, and the exact example in [SCOPE.md](SCOPE.md) disproves it.
 
 ## 2. The connected generating function
 
@@ -274,21 +276,34 @@ H_g(t)/t with degree d−2. When d is odd, this degree is odd, so −1 is an
 exact root. These facts also settle d=2 and d=3 directly: the nonzero
 polynomials are positive multiples of t and t(1+t), respectively.
 
-## 6. Source scope and remaining work
+## 6. Source scope and the initial reversal
 
 The published Conjecture 3.15 is an assertion as genus tends to infinity, and
 the source illustrates its monotonicity claim with genera 10 through 20.
 The theorem above proves all the specified limits and the asserted direction
 on a sufficiently large tail, uniformly over no finite profile cutoff.
 
-The independent source review checked the published PDF, pages 23–24: its
-monotonicity clause has no eventual qualifier. The finite range in Figure 3
-is evidence, not a restriction of the conjecture's scope. Monotonicity at
-every genus starting with zero is not proved here. The result is therefore
-retained conservatively as a substantive partial theorem, without a
-full-resolution label or completed-conjecture count. The separate
-Conjectures 3.13–3.14, which require all-genus real-rootedness and
-profile-increment interlacing, are not proved by this argument.
+The independent source review checked the published PDF, pages 23–24.
+Conjecture 3.15 begins with a limit as genus tends to infinity. Its following
+monotonicity clause has neither an explicit eventual qualifier nor an
+explicit requirement to start at genus zero. The theorem above proves the
+natural asymptotic reading for every fixed profile. The range in Figure 3
+illustrates this asymptotic behavior; it is not itself a formal scope
+restriction.
+
+The stronger reading that requires monotonicity at every genus is false.
+For the profile (2,2), the smallest root is −2 at genus zero and is
+(−32−sqrt(399))/25 < −2 at genus one. The larger nonzero root also moves
+oppositely to the predicted direction on this first step. Both polynomials
+already appear in the authors' earlier MATRIX note; [SCOPE.md](SCOPE.md)
+gives the attribution, exact derivation, and root comparisons. This
+clarification is not presented as a wording-only disproof of the natural
+asymptotic conjecture, nor as a newly discovered pair of polynomials.
+
+The combined package is retained outside the strict completed-conjecture
+tally. The separate Conjectures 3.13–3.14, which require all-genus
+real-rootedness and profile-increment interlacing, remain unproved by this
+argument.
 
 The source's character formula and its palindromicity theorem are credited
 inputs. Initial prior-art searches inspected the original full published
