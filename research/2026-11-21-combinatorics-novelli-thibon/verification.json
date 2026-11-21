@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "partition_pairs_checked": 209,
+  "sizes": "1 through 6; finite convention checks only",
+  "source_example": "arXiv:2502.09072v2, after Conjecture 5.7",
+  "source_example_exact_polynomial_match": true,
+  "d_321": 8,
+  "d_222": 3,
+  "proof": "Universal word-comparison and Pieri argument in proof.md"
+}
