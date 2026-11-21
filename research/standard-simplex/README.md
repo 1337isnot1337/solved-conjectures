@@ -2,7 +2,9 @@
 
 Research checkpoint, 21 November 2026. Coordination: [issue 212](https://github.com/1337isnot1337/solved-conjectures/issues/212).
 
-**Status: unresolved in this work.** The source screen has not found a full prior resolution. The current checkpoint contains a proposed quantitative first-moment stability deduction, reviewed independently, together with its sharp exponent and a small-correlation localization consequence. It also records a limit of an auxiliary-coordinate second-variation approach. None of these is a resolution of the Standard Simplex conjecture, and no worldwide-priority claim is made for the quantitative deduction.
+**Status: unresolved in this work.** The current checkpoint contains a proposed partial theorem: for every fixed number of cells, the regular-simplex partition uniquely maximizes balanced Gaussian noise stability at every sufficiently small positive correlation, with a threshold independent of the ambient dimension. Three mathematical reviews found no gap in the written argument and its explicit first-moment dependency. The deeper current prior-work audit is still running, so no first-discovery claim is made. Larger positive correlations and the entire negative-correlation clause remain outside this theorem. No full-resolution count is added.
+
+The directory also contains quantitative first-moment stability with a sharp exponent, the exact tail and noise comparisons used in the partial theorem, and a limit of an auxiliary-coordinate second-variation approach.
 
 ## Exact original target
 
@@ -47,7 +49,7 @@ The original paper connects the Gaussian optimization to the Plurality is Stable
 
 The 2026 hardness manuscript was obtained and read directly. Its abstract's resolution of specific hardness conjectures does not mean that the full Standard Simplex conjecture is resolved. We use the explicitly quantified Gaussian theorems and its future-work section.
 
-The public `mxym/math` archive also contains an all-cell equal-mass first-moment theorem, [Equal Gaussian cells: the sharp simplex first-moment theorem](https://github.com/mxym/math/blob/4a51ff772a566451627b9ff41f6248518561d9d4/research/gaussian-balanced-simplex-all-k/paper.md). Its full written proof was read for scope. It combines the Gaussian multi-bubble perimeter theorem with a covariance deformation and a radial differential inequality. It explicitly stops at the first moment and does not claim finite-correlation optimality. This is an unrefereed public research manuscript; it has not been imported as an independently accepted premise here.
+The public `mxym/math` archive also contains an all-cell equal-mass first-moment theorem, [Equal Gaussian cells: the sharp simplex first-moment theorem](https://github.com/mxym/math/blob/4a51ff772a566451627b9ff41f6248518561d9d4/research/gaussian-balanced-simplex-all-k/paper.md). Its full written argument was read and checked. It combines the published Gaussian multi-bubble perimeter theorem with a covariance deformation and a radial differential inequality. It explicitly stops at the first moment and does not claim finite-correlation optimality. This is an unrefereed public research manuscript. Its extremum and covariance identities are explicitly credited inputs to the deductions below; our checks are not a claim of external acceptance or of authorship of those prior results.
 
 ## Attack considered and actual progress
 
@@ -80,9 +82,34 @@ The Hermite expansion then localizes any balanced partition whose positive-corre
 K_q\sqrt{\rho(1-1/q)+\eta/\rho}.
 ```
 
-This does not compare the noise values exactly at a fixed positive correlation. Volume multipliers, the quadratic higher-Hermite term, and the linear noise-potential difference still need control. In particular, the first-moment deficit alone does not justify replacing the full objective by its degree-one part.
+This localization alone does not compare the noise values exactly at a fixed positive correlation. In particular, the first-moment deficit alone does not justify replacing the full objective by its degree-one part. The separate comparison estimates below supply the additional control in a low-correlation interval.
 
 [The root review](ROOT_STABILITY_REVIEW.md), [the combinatorics review](FIRST_MOMENT_COMBINATORICS_REVIEW.md) and [the algebra review](FIRST_MOMENT_ALGEBRA_REVIEW.md) check the complete deduction, the ambient-dimension and singular-covariance cases, localization and sharpness. [STABILITY_PRIOR_AUDIT.md](STABILITY_PRIOR_AUDIT.md) records the bounded quantitative prior comparison and its remaining gaps. This is research progress only; no result-table entry or resolution count is added.
+
+### Low positive correlation
+
+The complete assembly is [SMALL_CORRELATION.md](SMALL_CORRELATION.md). For every fixed $`q\ge3`$, it constructs a positive constant $`\rho_q`$ such that
+
+```math
+S_\rho(\mathcal A)\le S_\rho(\mathcal C)
+\qquad\text{for every }d\ge q-1,
+\quad0<\rho\le\rho_q,
+\quad\gamma_d(A_i)=1/q.
+```
+
+Equality forces a central regular-simplex partition, up to orthogonal transformations, relabeling, and null sets. The proof gives an existence threshold depending only on the number of cells, not a numerical correlation range.
+
+Three ingredients control the terms that the first-moment localization leaves open:
+
+- [NOISE_COMPARISON.md](NOISE_COMPARISON.md) gives a dimension-free weighted bound on all Hermite degrees at least two, a uniform one-sided simplex-potential bound, and the exact noise comparison identity.
+- [TAIL_CONTROL.md](TAIL_CONTROL.md) bounds squared tail mass and moment errors by a small coefficient times truncated transfer cost. Conditioning onto the aligned moment subspace is used only for costs and moments; the higher-Hermite estimate remains in the original ambient space.
+- [CORE_COERCIVITY.md](CORE_COERCIVITY.md) controls a core fractional partition despite its small mass imbalance and rotation error. Those errors enter quadratically and are absorbed by the tail potential.
+
+The constants are chosen in the order: moment coercivity, tail radius, then correlation. The final inequality has strictly negative coefficients on both the core transfer cost and the tail transfer cost. It applies to arbitrary measurable competitors and does not require a pre-existing optimizer or smooth cell boundaries.
+
+[The root review](SMALL_CORRELATION_ROOT_REVIEW.md), [the algebra review](NOISE_CORE_ALGEBRA_REVIEW.md), and [the combinatorics review](SMALL_CORRELATION_COMBINATORICS_REVIEW.md) check the complete proof. A [separate tail review](TAIL_CONTROL_COMBINATORICS_REVIEW.md) checks the cutoff argument in detail. Root authored the core coercivity and part of the potential argument; the algebra and combinatorics reviews independently check those portions.
+
+[LOW_CORRELATION_PRIOR_AUDIT.md](LOW_CORRELATION_PRIOR_AUDIT.md) records the current exact-scope comparison. The expanded six-archive native/PDF/compressed scan is in progress at this checkpoint. Its script is [scan_low_correlation_prior.py](scan_low_correlation_prior.py). The unrefereed partial theorem is published for inspection while that source pass finishes. It remains distinct from a full resolution of Standard Simplex.
 
 ## Source and archive record
 
