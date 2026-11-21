@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak hypothesis scope correction
+
+The exceptional formalization assumes all pairwise residue bounds, stronger than the original admissibility tests. The repository checker accepts capacities (4, 7, 11), with residues (0, 1, 1) modulo 2, which violate the stronger bound. The formal theorem remains conditional on its explicit hypotheses; extending it to all admissible cases remains work.
+
 ## 2026-11-21 — Horňák–Woźniak exceptional graph partitions
 
 Proved all zero-slack exceptional cases, combined them with positive slack, and constructed the exceptional-size partitions for the tripod and for a reserved short arm under explicit residue and fifth-test hypotheses. The full chain passed a 541-theorem axiom audit and isolated kernel replay. Original-test translation, general AVD reductions, existence constructions and the combined gate remain.

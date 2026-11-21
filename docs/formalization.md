@@ -17,6 +17,8 @@ accepted scope, including the conditional critical-seven assembly.
 
 ## Horňák–Woźniak exceptional graph partitions, 21 November 2026
 
+**Scope correction:** The exceptional theorem requires every pair of regular-arm residues to satisfy the bound, whereas admissibility only bounds the sum outside a largest residue. The repository checker accepts capacities (4, 7, 11), whose residues modulo 2 are (0, 1, 1), violating the pairwise hypothesis. Thus these theorems do not yet cover every admissible triple.
+
 Lean proves every exceptional-size graph partition for the tripod and for a reserved short arm under stated residue and fifth-test hypotheses, covering zero and positive slack. Original-test translation, general AVD reductions, and existence constructions remain. Strict compilation, a 541-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
 
 ## Horňák–Woźniak zero-budget criterion, 21 November 2026
