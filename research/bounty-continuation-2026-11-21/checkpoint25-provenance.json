@@ -1,0 +1,92 @@
+{
+  "checkpoint": 25,
+  "date": "2026-11-21",
+  "base_main": "f0faf36497d6c0cf46a9fc8790c045d06815316e",
+  "new_full_bounty_solutions": 0,
+  "campaign_proposed_full_bounty_solutions": 1,
+  "accepted_or_paid_awards": 0,
+  "publication_changes": [
+    "Normalize math delimiters, macros, and relative links; preserve mathematical content and explicit limitations.",
+    "Preserve source-manifest download failures and reviewed source hashes."
+  ],
+  "files": [
+    {
+      "source": "agents/conjectures/erdos104/target-and-prior-audit.md",
+      "source_sha256": "6ada2819e1e46a5944c48db002c2627db470eecd7df47284b8678c0d2a430d01",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos104/target-and-prior-audit.md",
+      "published_sha256": "6ada2819e1e46a5944c48db002c2627db470eecd7df47284b8678c0d2a430d01"
+    },
+    {
+      "source": "agents/conjectures/erdos104/eligibility-snapshot.json",
+      "source_sha256": "e632f32dab53b1c2bca5077d54a4b1ec382a4348e0a127526ecc6241963acefa",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos104/eligibility-snapshot.json",
+      "published_sha256": "e632f32dab53b1c2bca5077d54a4b1ec382a4348e0a127526ecc6241963acefa"
+    },
+    {
+      "source": "agents/conjectures/erdos104/local-removal-and-pasch-gap.md",
+      "source_sha256": "2ef36b9c34d6e7764337f5f0024deccd43c9aa21f6fad2b9deb9288a0ada2a1d",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos104/local-removal-and-pasch-gap.md",
+      "published_sha256": "15d096f8521969bee97b41bf7edc56faab7dc4453578cffdf664db68d0c36777"
+    },
+    {
+      "source": "agents/demath_zzz/erdos104-local-removal-independent-review.md",
+      "source_sha256": "1cbea20b6ffea0b862e6073657b8f6033299a95d6f840f7af3bb7b4184b0b7d9",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos104/LOCAL_REVIEW.md",
+      "published_sha256": "1cbea20b6ffea0b862e6073657b8f6033299a95d6f840f7af3bb7b4184b0b7d9"
+    },
+    {
+      "source": "agents/root749/e104-webs/unit-radius-web-obstruction.md",
+      "source_sha256": "b4818bed8d264e6dba9c23035c38a22acc1f226698495d4425ca6ca1f4d5792e",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos104/unit-radius-web-obstruction.md",
+      "published_sha256": "97bb2513d21b530f4568cdf7809bc38fb31b1caf8198c6c99ccafbade30830f8"
+    },
+    {
+      "source": "agents/conjectures/erdos104/web-obstruction-independent-review.md",
+      "source_sha256": "3c9c6c41024dfce84215e8f90a57d0ff4f951a16fbf5b84e36be0d237eb50972",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos104/WEB_REVIEW.md",
+      "published_sha256": "3c9c6c41024dfce84215e8f90a57d0ff4f951a16fbf5b84e36be0d237eb50972"
+    },
+    {
+      "source": "agents/other_paid/bressan_fire/contact-clock-pruning.md",
+      "source_sha256": "8a0920b63b4254fb032cecbfafef97d3dd52b3fce1d3f19df5c4a1c6df589d86",
+      "published_path": "research/bounty-continuation-2026-11-21/bressan-fire/contact-clock-pruning.md",
+      "published_sha256": "8194488a88c041cb6dfff4de65dd252f1dc55097f851cb8a823896fb3d8c960e"
+    },
+    {
+      "source": "agents/other_paid/bressan_fire/attached-cycle-budget-check.md",
+      "source_sha256": "d33e279430d6da46bce1b2773437fe4d06b0526fe393ee9eaac97736e64585b6",
+      "published_path": "research/bounty-continuation-2026-11-21/bressan-fire/attached-cycle-budget-check.md",
+      "published_sha256": "6b7c66b531b47b315091666bdd63f190c823afd6ab340cae1ce1f3d4648cee79"
+    },
+    {
+      "source": "agents/root749/bressan-pruning-independent-review.md",
+      "source_sha256": "c2ce749d9394b1932af27bbc2ac1027fb0ee79fbf596ca8b998d0748388e627d",
+      "published_path": "research/bounty-continuation-2026-11-21/bressan-fire/PRUNING_REVIEW.md",
+      "published_sha256": "a43f5e77d33c24813e3900614dd7307932e36c0b020852f961fc9c2bebad05be"
+    },
+    {
+      "source": "agents/demath_zzz/erdos470/target-and-prior-audit.md",
+      "source_sha256": "889061414b383f9980daecc6d018875b31c733f1643ad7dcf24d160c84d4b4a4",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos470/target-and-prior-audit.md",
+      "published_sha256": "889061414b383f9980daecc6d018875b31c733f1643ad7dcf24d160c84d4b4a4"
+    },
+    {
+      "source": "agents/demath_zzz/erdos470/prime-selection-gap.md",
+      "source_sha256": "9965afedee0437ac82a3d5baefdbbc785c9fc5faf76af4caf25f600288d21828",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos470/prime-selection-gap.md",
+      "published_sha256": "0b9d11e190880ab75d7e3b8bca9034f8f49f8a9a05f1f6c9f194e5282a00a5de"
+    },
+    {
+      "source": "agents/demath_zzz/erdos470/sources-manifest.json",
+      "source_sha256": "6971c5ddd3eec7696abac87f765837eae11b006fd866259b17cb8ac17550a0f7",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos470/sources-manifest.json",
+      "published_sha256": "6971c5ddd3eec7696abac87f765837eae11b006fd866259b17cb8ac17550a0f7"
+    },
+    {
+      "source": "agents/root749/erdos470-prime-gap-independent-review.md",
+      "source_sha256": "0f9768b1443246b244e814f3365cf2187f68cc8272eb38f857c095ca91428f7a",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos470/INDEPENDENT_REVIEW.md",
+      "published_sha256": "b31005646a91c1efa90a51dce646a5ec2e53dc4bc7ae36410f0de3e2956f6e28"
+    }
+  ]
+}
