@@ -12,7 +12,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Verification |
 | :--- | :---: |
-| [Johnson's conjecture](results/johnson-pfaffian/) | ⬜ |
+| [Johnson's conjecture](results/johnson-pfaffian/) | 🟡 |
 | [Brown–Mol's conjecture](results/brown-mol/) | ✅ |
 | [Kovalev's conjecture](results/kovalev-hardy-duality/) | ⬜ |
 | [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ |

@@ -44,6 +44,8 @@ import Conjectures.LopezPousoSeguraBesselBridge
 import Conjectures.LopezPousoSeguraBesselGrowth
 import Conjectures.LopezPousoSeguraBesselConditional
 import Conjectures.LopezPousoSeguraBesselReference
+import Conjectures.JohnsonPfaffianFour
+import Conjectures.JohnsonPfaffianUncross
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao

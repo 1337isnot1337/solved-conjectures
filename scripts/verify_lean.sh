@@ -107,6 +107,8 @@ modules=(
   Conjectures.LopezPousoSeguraBesselGrowth
   Conjectures.LopezPousoSeguraBesselConditional
   Conjectures.LopezPousoSeguraBesselReference
+  Conjectures.JohnsonPfaffianFour
+  Conjectures.JohnsonPfaffianUncross
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany

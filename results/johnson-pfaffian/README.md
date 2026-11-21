@@ -1,5 +1,7 @@
 # Johnson's conjecture
 
+**Lean status:** partial
+
 Complete proposed proof of Conjecture 7.1 in William Johnson's *Pfaffian Positivity for Convex Kernels and Optimal Matching Bounds*, [arXiv:2610.24371v1](https://arxiv.org/abs/2610.24371v1). Three separate internal mathematical reviews passed. The current-source and seven-archive priority audit found no earlier complete resolution within its documented scope. The result remains unrefereed.
 
 For every positive nonincreasing log-convex function on the positive half-line, every strictly ordered real configuration of positive even size, and every perfect matching, the skew distance-kernel Pfaffian is at least the matching's product of positive entries.
@@ -20,4 +22,4 @@ python3 results/johnson-pfaffian/verify.py
 
 Only Python's standard library is required. The checker tests exact algebraic identities, signs, and indexing conventions. Its finite cases are not premises of the universal proof.
 
-Johnson's endpoint inequality, original kernel uncrossing reduction, rainbow bound, and Albouy–Moeckel nonvanishing result are credited explicitly. This package counts the separately stated all-matching conjecture once. No Lean work is included.
+Johnson's endpoint inequality, original kernel uncrossing reduction, rainbow bound, and Albouy–Moeckel nonvanishing result are credited explicitly. This package counts the separately stated all-matching conjecture once. Lean verifies the convex four-point inequality and the bound for all three matchings on four ordered nodes, using the explicit four-by-four Pfaffian formula. The general even-order endpoint inequality and matching induction remain unformalized; the full repository gate is pending.
