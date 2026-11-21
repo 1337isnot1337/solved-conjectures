@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak regular two-size case
+
+Proved the regular two-consecutive-size connected-partition case for actual star graphs from the residue bounds and fifth-test witness, including extremal-count construction and transfer. Strict compilation, a 226-theorem axiom audit and isolated kernel replay passed; extra-piece cases, full reductions and the full gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak connected partition realization
 
 Proved that every feasible two-size arm allocation realizes an actual connected partition, including exact center and piece counts and arbitrary ordering. Strict compilation, a 205-theorem axiom audit and isolated kernel replay passed; extra-piece cases, endpoint hypotheses, AVD reductions and the full gate remain.

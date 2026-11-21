@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak regular case, 21 November 2026
+
+The regular two-size connected-partition case now follows for actual star graphs from the residue bounds and fifth-test witness, with no separate extremal-count hypothesis. Extra-piece cases, full source-test and AVD reductions, and existence constructions remain. Strict compilation, a 226-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak graph realization, 21 November 2026
 
 Every feasible two-size arm allocation now yields a connected partition of the actual star graph with the requested center and exact piece counts, in arbitrary order. The extra-piece cases, remaining endpoint hypotheses and AVD reductions remain. Strict compilation, a 205-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.

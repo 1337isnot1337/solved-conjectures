@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Hornak.equal_size_counts,
+    `Hornak.transfer_equal_total,
+    `Hornak.endpoint_arithmetic,
+    `Hornak.regular_case_from_tests,
     `Hornak.armSegment_connected,
     `Hornak.armSegment_card,
     `Hornak.centralSet_connected,

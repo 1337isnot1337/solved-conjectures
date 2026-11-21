@@ -918,3 +918,4 @@ import Conjectures.HornakMaximum
 import Conjectures.HornakResidues
 import Conjectures.HornakSegments
 import Conjectures.HornakTiling
+import Conjectures.HornakEndpoint
