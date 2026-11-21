@@ -23,6 +23,16 @@ The [Ferreira–Simon stochastic-order proof](../results/ferreira-simon-stochast
 
 The [Simon stable-infimum proof](../results/simon-stable-infimum/PROOF.md) is also analytic. Its [independent audit](../results/simon-stable-infimum/AUDIT.md) verifies the source normalization, prior Mellin transform, Brownian endpoint, positivity and parameter monotonicity of the logarithmic Lévy kernels, exponential integrability and independent mean-one multiplier. Conditional Jensen gives the full convex order. There is no numerical verifier or workflow test for this argument; the [source audit](../results/simon-stable-infimum/SOURCES.md) documents priority separately.
 
+## Computer-assisted proof of Roos–Seiringer's conjecture
+
+The [Roos–Seiringer package](../results/roos-seiringer-kernel/) proves positivity of the radial Dirichlet kernel on the whole positive real axis, together with its continuous value at zero. Analytic arguments cover arguments at most one and at least forty. On the intervening interval, an analytic derivative bound transfers each exact midpoint enclosure to a whole closed interval.
+
+```bash
+python3 results/roos-seiringer-kernel/verify.py
+```
+
+The standard-library verifier uses only integers and rational numbers. It retains 160 series terms, encloses pi by signed Machin-series remainders, rounds every operation outward at 384 binary fractional bits, and adds the proved full series-tail allowance. The 184 successful closed intervals cover exactly [1,40], including shared endpoints. Independent full replays reproduce 367 evaluations, maximum subdivision depth eleven, the strictly positive margin in the [proof](../results/roos-seiringer-kernel/PROOF.md), and the [recorded output](../results/roos-seiringer-kernel/check-output.json). The computation is essential, not a finite sample of kernel values. Both [mathematical](../results/roos-seiringer-kernel/ALGEBRA_REVIEW.md) and [root](../results/roos-seiringer-kernel/ROOT_REVIEW.md) reviews passed; no Lean verification is claimed.
+
 ## Computer-assisted proof of Lyon's conjecture
 
 The [Lyon package](../results/lyon-gamma-median/) proves the monotonicity assertion on the entire positive half-line. Its exact certificate is an essential part of the proof. Analytic bounds cover the two tails; the [written interval criterion](../results/lyon-gamma-median/PROOF.md) uses known convexity of the gamma median to extend each certified inequality throughout a real cell.

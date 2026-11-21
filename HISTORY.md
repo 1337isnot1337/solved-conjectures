@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-21 — Roos–Seiringer's conjecture
+
+Added a complete proposed proof of the radial Dirichlet kernel nonnegativity assertion in §5 of *BCS Critical Temperature on Half-Spaces*. The proof gives strict positivity for every positive real argument and the continuous zero endpoint. The source scaling then covers every positive chemical potential. This is the whole scalar assertion identified by the authors, not a selected dimension of an arbitrary-dimensional conjecture; the unaveraged kernel is outside the claim.
+
+The [package](results/roos-seiringer-kernel/) derives an exact entire series and proves both unbounded ends analytically. On the remaining interval, outward-rounded integer arithmetic and an analytic derivative bound certify 184 closed intervals covering every point. The computation is an essential part of the proof, with explicit truncation errors and coverage checks.
+
+Two independent mathematical/code reviews and an independent source/priority audit passed. Full replays reproduce 367 evaluations and the recorded exact margin and leaf hash. The source paper, thesis, closest later papers, current author lists and public proof archives were checked; no earlier resolution was found within that documented coverage. The result remains unrefereed. No Lean work was performed. This subgroup's reviewed proposed-resolution tally is twelve.
+
 ## 2026-11-21 — Zhu Jacobi–Stirling Lean proof
 
 Formalized the unweighted Jacobi–Stirling recurrence, the leading Hankel determinant and its coefficient −4, the negation of the full coefficientwise minor assertion, and the stated negative region. The standalone module passed strict source compilation, the all-owned axiom audit and stock-kernel replay. The combined repository gate is pending.

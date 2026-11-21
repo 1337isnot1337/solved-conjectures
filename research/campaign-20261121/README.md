@@ -23,10 +23,11 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 This section tracks this subgroup's packages. The [joint eleven-family checkpoint](../2026-11-21-joint-results/) reviews a selected thirteen-package set: seven packages from the current four-worker group and six from this subgroup, including Han–Sabag–Kostina–Hassibi after its additional mathematical, source and priority reviews. It excludes corrected-source Novelli–Thibon from the strict tally and groups the two López Pouso–Segura packages together, giving eleven named families. Other packages in this subgroup's live table remain outside that selected review pending additional cross-review.
 
-Complete proposed resolutions with separate internal review and a documented current status audit: **11** at this checkpoint. All remain unrefereed.
+Complete proposed resolutions with separate internal review and a documented current status audit: **12** at this checkpoint. All remain unrefereed.
 
 | Conjecture | Result | Evidence |
 | --- | --- | --- |
+| Roos–Seiringer's conjecture | Proved the entire scalar radial-kernel nonnegativity assertion, with strict positivity, analytic tails and an essential exact continuous-interval certificate; one resolution | [Package](../../results/roos-seiringer-kernel/) · [Issue 204](https://github.com/1337isnot1337/solved-conjectures/issues/204) |
 | Dospolova–Germanskov–Zaporozhets's conjecture | Disproved full intrinsic-volume sequence realizability by the entire factorial family and a strict Gaussian-range/oscillation obstruction; earlier Vitale and Long ingredients are credited | [Package](../../results/dospolova-germanskov-zaporozhets/) · [Issue 199](https://github.com/1337isnot1337/solved-conjectures/issues/199) |
 | Chen–Khare–Sahi's conjecture | Disproved the full Macdonald Muirhead-semiring implication with an exhaustive exact separating certificate and infinite counterexample families; the weaker evaluation inequality is separate | [Package](../../results/chen-khare-sahi-macdonald/) · [Issue 201](https://github.com/1337isnot1337/solved-conjectures/issues/201) |
 | Ferreira–Simon's conjecture | Proved the full beta-prime self-convolution identity by analytic Mellin transforms for all parameters in the original statement; one resolution | [Package](../../results/ferreira-simon-beta-prime/) · [Issue 200](https://github.com/1337isnot1337/solved-conjectures/issues/200) |

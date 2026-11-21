@@ -16,6 +16,12 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 - **Erdős–Gyárfás (partial).** Every abelian cover of $K_4$ with one edge subdivided has a cycle of length 4, 8, 16 or 32. A 19-sheeted cyclic example attains the upper bound. The universal voltage-cover theorem, literal 95-vertex sharpness example, and normalization of all seven voltages are Lean-verified. [Lean scope](docs/lean-status.md#complete-sharp-95-vertex-example-and-arbitrary-voltage-normalization). [Proof](results/erdos-gyarfas-abelian-covers/PROOF.md) · [Replay](results/erdos-gyarfas-abelian-covers/)
 - **Hadamard existence conjecture, order 2396 (open).** The signed automorphism group of any candidate matrix has order coprime to 479. The fixed-border common multiplier group is cyclic of order dividing four, with at least 151 sign orbits. Lean verifies these statements, both norm-obstruction proofs, the complete conditional [fixed-border construction](results/hadamard-2396/BORDER.md) from its original four sign rows, all fourteen size-149 baseline patterns, and the length-598 order-eleven obstruction. Lean also constructs the actual Hadamard matrix from any Legendre pair and proves the invariant quotient transport from the original centered rows. The order and orbit theorems for odd automorphism subgroups on groups of order nine are also checked. For length-1197 Legendre pairs, Lean proves that the common-multiplier order divides 27; the stated sharper bound of nine and the exhaustive quotient/no-lift certificates remain pending. No order-2396 matrix existence is claimed. [Checked scope and receipts](docs/lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns) · [Automorphism proof](results/hadamard-2396/AUTOMORPHISMS.md) · [Sequence proof](results/hadamard-2396/PROOF.md) · [Reproduce](results/hadamard-2396/).
 
+## Radial kernels in BCS theory
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | Complete proposed proof that the radial Dirichlet kernel is strictly positive at every positive argument, with the zero endpoint and all positive chemical potentials covered. Analytic tails and an essential exact integer interval certificate prove the full scalar assertion. The unaveraged kernel is separate. | Not formalized. Essential computer-assisted proof. | [Proof](results/roos-seiringer-kernel/PROOF.md) · [Sources](results/roos-seiringer-kernel/SOURCES.md) · [Priority audit](results/roos-seiringer-kernel/PRIOR_AUDIT.md) · [Algebra review](results/roos-seiringer-kernel/ALGEBRA_REVIEW.md) · [Root review](results/roos-seiringer-kernel/ROOT_REVIEW.md) · [Certificate](results/roos-seiringer-kernel/verify.py) · [Issue 204](https://github.com/1337isnot1337/solved-conjectures/issues/204) |
+
 ## Intrinsic-volume sequence realizability
 
 | Problem | Result | Formalization | Evidence |
@@ -210,6 +216,8 @@ The Li example is neither a spider nor a caterpillar and refutes the **non-spide
 These are mathematical claims with explicit proofs and computer checks, **not peer-reviewed publications**. A literature search cannot establish that a counterexample or stronger theorem is the first discovery. Please cite the primary publications when discussing the original conjectures.
 
 ## Primary sources
+
+- Roos–Seiringer: *BCS Critical Temperature on Half-Spaces*, Archive for Rational Mechanics and Analysis 249 (2025), article 20, [DOI 10.1007/s00205-025-02088-x](https://link.springer.com/article/10.1007/s00205-025-02088-x), §5, the unnumbered radial-kernel nonnegativity assertion following Lemma 5.1 and Figures 1–2. The full scalar assertion is distinct from positivity of the unaveraged kernel.
 
 - Karlheinz Gröchenig, *Infinite totally positive matrices: some open problems*, Acta Scientiarum Mathematicarum (2026), [DOI 10.1007/s44146-026-00264-3](https://doi.org/10.1007/s44146-026-00264-3), Problem 4.12. The upper-density assertion is refuted; the separate lower-density assertion is not resolved here.
 
