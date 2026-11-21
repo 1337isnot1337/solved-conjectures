@@ -1,6 +1,6 @@
 # Kovalev's conjecture
 
-Status: unresolved. This note records an exact reduction and excludes one local counterexample route. It does not establish either bound of the conjecture.
+Historical initial checkpoint: unresolved. This note records an exact reduction and excludes one local counterexample route; it did not establish either bound. The subsequent [complete proposed disproof](../../results/kovalev-hardy-duality/) gives a uniform counterfamily to the lower inequality and passed separate mathematical, root, and documented priority reviews. The upper inequality remains outside that disproof.
 
 ## Original statement and source
 

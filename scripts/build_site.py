@@ -54,6 +54,8 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Brown–Mol's conjecture": "brown-mol",
+    "Kovalev's conjecture": "kovalev-hardy-duality",
     "Roos–Seiringer's conjecture": "roos-seiringer-kernel",
     "Dospolova–Germanskov–Zaporozhets's conjecture": "dospolova-germanskov-zaporozhets",
     "Chen–Khare–Sahi's conjecture": "chen-khare-sahi-macdonald",

@@ -23,12 +23,14 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 This section tracks this subgroup's packages. The [joint ten-family checkpoint](../2026-11-21-joint-results/) reviews a selected twelve-package set: seven packages from the other four-worker group and five from this subgroup, including Han–Sabag–Kostina–Hassibi after its additional reviews. Fang–Zhang–Zhao was removed after a confirmed prior resolution. The joint tally also excludes corrected-source Novelli–Thibon and groups the two López Pouso–Segura packages together. Other packages in this subgroup's live table remain outside that selected review unless separately admitted.
 
-Complete proposed resolutions with separate internal review and a documented current status audit: **10** at this checkpoint. All remain unrefereed.
+Complete proposed resolutions with separate internal review and a documented current status audit: **12** at this checkpoint, comprising six proofs and six disproofs. All remain unrefereed.
 
-The [confirmed prior-resolution correction](PRIOR_RESOLUTION_CORRECTION.md) removes Fang–Zhang–Zhao infinite log-convexity and Sun–Zhao iterated ratios. Earlier historical counts are superseded. Kovalev and Brown–Mol are not included at this checkpoint.
+The [confirmed prior-resolution correction](PRIOR_RESOLUTION_CORRECTION.md) removes Fang–Zhang–Zhao infinite log-convexity and Sun–Zhao iterated ratios. Earlier historical counts are superseded. Kovalev and Brown–Mol are now included after separate mathematical and root reviews and the retrospective full-content [Principia](../2026-11-21-principia-fulltext-audit/PRINCIPIA_FULL_TEXT_AUDIT.md), [Trure/mxym/AFTD](TRURE_MXYM_AFTD_AUDIT.md), and [ArtificialZeng](../2026-11-21-artificialzeng-priority/AUDIT.md) audits found no earlier matching full resolution within their documented limits.
 
 | Conjecture | Result | Evidence |
 | --- | --- | --- |
+| Brown–Mol's conjecture | Disproved the full translated-annulus assertion by an infinite diameter-four tree family with roots in the forbidden disk; the outer inequality is separate | [Package](../../results/brown-mol/) · [Issue 210](https://github.com/1337isnot1337/solved-conjectures/issues/210) |
+| Kovalev's conjecture | Disproved the full two-sided Hardy-duality assertion through its lower inequality, with a uniform analytic matrix counterfamily; the upper inequality is separate | [Package](../../results/kovalev-hardy-duality/) · [Issue 209](https://github.com/1337isnot1337/solved-conjectures/issues/209) |
 | Roos–Seiringer's conjecture | Proved the entire scalar radial-kernel nonnegativity assertion, with strict positivity, analytic tails and an essential exact continuous-interval certificate; one resolution | [Package](../../results/roos-seiringer-kernel/) · [Issue 204](https://github.com/1337isnot1337/solved-conjectures/issues/204) |
 | Dospolova–Germanskov–Zaporozhets's conjecture | Disproved full intrinsic-volume sequence realizability by the entire factorial family and a strict Gaussian-range/oscillation obstruction; earlier Vitale and Long ingredients are credited | [Package](../../results/dospolova-germanskov-zaporozhets/) · [Issue 199](https://github.com/1337isnot1337/solved-conjectures/issues/199) |
 | Chen–Khare–Sahi's conjecture | Disproved the full Macdonald Muirhead-semiring implication with an exhaustive exact separating certificate and infinite counterexample families; the weaker evaluation inequality is separate | [Package](../../results/chen-khare-sahi-macdonald/) · [Issue 201](https://github.com/1337isnot1337/solved-conjectures/issues/201) |
@@ -58,6 +60,6 @@ The Gray–Payne–Swisher–Watson fixed-number Franklin inequality and their m
 
 Mao–Wang's joint triangle-square conjecture has a reviewed proof of the Delannoy clause, with the Eulerian clause still open; it is not counted. Zeng's endpoint q-Narayana total-nonnegativity conjecture and Alexandersson's balanced-array conjecture have finite diagnostics but no resolution. Research continues. [Parking-polytope research](../parking-magic/) has complete symbolic coefficient checks through dimension six, with no arbitrary-dimension proof. [Further exclusions](exclusions-checkpoint.md) record exact prior resolutions found during the current search.
 
-The requested goal is ten; this file records evidence and does not treat that goal as a reason to lower the proof or novelty requirements.
+The requested threshold does not lower the proof or novelty requirements. New discovery follows the repository's substantial-target policy. Current work includes [Merino–Welsh](../merino-welsh-joint-constraints/TARGET_SCREEN.md) and [Johnson](https://github.com/1337isnot1337/solved-conjectures/issues/211); diagnostic calculations and proved route obstructions are not counted as resolutions.
 
 

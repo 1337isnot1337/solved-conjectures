@@ -1,5 +1,15 @@
 # History
 
+## 2026-11-21 — Brown–Mol's and Kovalev's conjectures
+
+Added two complete proposed analytic disproofs after separate mathematical reviews, root reviews, primary-source comparisons, and retrospective full-content archive audits.
+
+The [Brown–Mol package](results/brown-mol/) constructs an infinite diameter-four tree family whose subtree roots enter the conjectured forbidden disk. A self-contained local logarithm and Rouché argument proves the whole family; the established Beraha–Kahane–Weiss mechanism is credited. A separate exact certificate verifies a 1001-vertex example. The earlier ArtificialZeng theorem covers diameter at most three and explicitly leaves the general annulus open. The distinct origin-centered disk theorem and the conjecture's outer inequality are not claimed here.
+
+The [Kovalev package](results/kovalev-hardy-duality/) constructs positive diagonal counterexamples to the lower Hardy-duality comparison in every matrix order at least 500001. The normalized supporting functional has dual norm exactly one over the full real matrix space. Conditional Jensen, a chi-square variance bound, classical Bessel integrals, and elementary rational estimates prove a uniform strict separation. No search over dimensions or numerical quadrature is required; the threshold is not optimized. The upper comparison remains unresolved by this argument.
+
+All three supplementary standard-library checkers passed. The full-content Principia, Trure, mxym, AFTD, and ArtificialZeng audits found no earlier matching full resolution within their documented limits. The two earlier Principia collisions remain withdrawn. This subgroup's reviewed proposed-resolution tally rises from ten to twelve: six proofs and six disproofs. These are unrefereed claims with internal reviews, not independently accepted mathematical results. No Lean work was performed. The existing Sonntag–Teichert catalogue label was normalized to the supported partial-status spelling after the site gate rejected its previous wording; its checked tournament scope and pending oriented-graph classification are unchanged. A stale KVZ Bessel catalogue row reintroduced by the concurrent Baricz–Pogány update was removed again, preserving the prior-resolution withdrawal.
+
 ## 2026-11-21 — Prior-resolution correction for KVZ Bessel-ratio unimodality
 
 Withdrew the older Karp–Vishnyakova–Zhang Bessel-ratio unimodality entry after reading [Trure issue 25199](https://github.com/the-omega-institute/trureturing/issues/25199), created and last updated on 1 November 2026. It supplies a complete correct analytic proof for every ordered real order pair above minus one and every ordered positive scale pair, including equal orders, equal scales, and negative orders. The remaining tasks named in that issue are formal translation and repository admission, not missing mathematics.

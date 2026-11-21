@@ -23,6 +23,20 @@ The [Ferreira–Simon stochastic-order proof](../results/ferreira-simon-stochast
 
 The [Simon stable-infimum proof](../results/simon-stable-infimum/PROOF.md) is also analytic. Its [independent audit](../results/simon-stable-infimum/AUDIT.md) verifies the source normalization, prior Mellin transform, Brownian endpoint, positivity and parameter monotonicity of the logarithmic Lévy kernels, exponential integrability and independent mean-one multiplier. Conditional Jensen gives the full convex order. There is no numerical verifier or workflow test for this argument; the [source audit](../results/simon-stable-infimum/SOURCES.md) documents priority separately.
 
+## Analytic disproofs with supplementary exact checks
+
+The [Brown–Mol disproof](../results/brown-mol/PROOF.md) establishes an infinite tree counterfamily by an analytic local zero argument. Its checker verifies exact polynomial identities, independently enumerates the connected vertex sets of three small trees, and proves a separate Rouché certificate for a 1001-vertex example. The finite checks are not the basis for the infinite-family conclusion.
+
+The [Kovalev disproof](../results/kovalev-hardy-duality/PROOF.md) uses a supporting functional and analytic expectation bounds for every matrix order in its counterfamily. Its two independently written checkers verify the fixed rational comparisons in the proof, including the positive gap above the conjectured constant. They do not approximate Gaussian integrals or perform a finite-dimensional matrix search.
+
+```bash
+python3 results/brown-mol/check.py
+python3 results/kovalev-hardy-duality/verify.py
+python3 results/kovalev-hardy-duality/review_constants.py
+```
+
+All three scripts use only the Python standard library and exact integer or rational arithmetic. The packages contain independent mathematical reviews, root reviews, exact source statements, and current prior-resolution audits. No Lean formalization is claimed for either package.
+
 ## Computer-assisted proof of Roos–Seiringer's conjecture
 
 The [Roos–Seiringer package](../results/roos-seiringer-kernel/) proves positivity of the radial Dirichlet kernel on the whole positive real axis, together with its continuous value at zero. Analytic arguments cover arguments at most one and at least forty. On the intervening interval, an analytic derivative bound transfers each exact midpoint enclosure to a whole closed interval.
