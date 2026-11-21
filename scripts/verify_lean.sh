@@ -130,6 +130,7 @@ modules=(
   Conjectures.JohnsonPfaffianRotation
   Conjectures.JohnsonPfaffianSwap
   Conjectures.JohnsonPfaffianParity
+  Conjectures.JohnsonPfaffianResidual
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany
