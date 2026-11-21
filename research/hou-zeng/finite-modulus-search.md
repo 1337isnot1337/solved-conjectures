@@ -22,7 +22,7 @@ For ranking purposes the search includes all shifts up to the **upper** endpoint
 
 | Family | Inclusive interval | Classes checked | Inputs with a certified prime witness |
 | --- | --- | ---: | ---: |
-| Hou–Zeng | 50,000,000,000,001 to 100,000,000,000,000 | First 8 | 41,238,431 |
+| Hou–Zeng | 50,000,000,000,001 to 100,000,000,000,000 | First 128 | 659,814,902 |
 | Sun, even | 80,500,000,001 to 1,000,000,000,000 | First 256 | 24,267,976 |
 | Sun, odd | 80,500,000,001 to 1,000,000,000,000 | First 256 | 24,267,970 |
 
@@ -35,7 +35,15 @@ c++ -O3 -std=c++17 -Wall -Wextra -Werror progression.cpp -o /tmp/crt-sieve
 python3 rank_residues.py hou 50000000000001 100000000000000 128 /tmp/hou.json
 python3 rank_residues.py sun-even 80500000001 1000000000000 256 /tmp/sun-even.json
 python3 rank_residues.py sun-odd 80500000001 1000000000000 256 /tmp/sun-odd.json
-python3 replay_ranking.py /tmp/crt-sieve /tmp/hou.json --stop 8
-python3 replay_ranking.py /tmp/crt-sieve /tmp/sun-even.json
-python3 replay_ranking.py /tmp/crt-sieve /tmp/sun-odd.json
+python3 replay_ranking.py /tmp/crt-sieve /tmp/hou.json > /tmp/hou.log
+python3 replay_ranking.py /tmp/crt-sieve /tmp/sun-even.json > /tmp/sun-even.log
+python3 replay_ranking.py /tmp/crt-sieve /tmp/sun-odd.json > /tmp/sun-odd.log
+```
+
+The 128 Hou–Zeng classes occupy 256 chunks. The two Sun runs occupy 256 chunks each. The SHA-256 digests of the complete replay logs in class order are below.
+
+```text
+b8a426699981e38d64b00ec5ac81b76ab6c2ec88495c7ee74e35160752bb3602  hou.log
+f6399d69d9cc8f5b8a38d1fc6f10c80355aea747ce2b24305b0f78214262f054  sun-even.log
+3c94f9110ab5529f60c081af877aab09940087ac3b2055d6485a46bcf78ab69c  sun-odd.log
 ```
