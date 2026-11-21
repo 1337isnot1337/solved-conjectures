@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-21",
+  "status": "Initial target screen; no resolution or priority claim",
+  "pattern": "0903[.]3362|(?<!\\d)(?:324585|356196)(?!\\d)|standard[\\s_-]+simplex[\\s_-]+(?:conjecture|partition)|plurality[\\s_-]+(?:is[\\s_-]+)?stablest|hyperstabl|gaussian[\\s_-]+noise[\\s_-]+stabil|isaksson",
+  "archives": [
+    {
+      "repository": "the-omega-institute/trureturing",
+      "commit": "de22a48707da1c7a48d032909e821bd481947b45",
+      "native_utf8_files": 75410,
+      "normalization": "Unicode NFKC then casefold",
+      "matching_files": [],
+      "skipped_count": 3,
+      "skipped_reasons": {
+        "not_regular": 3
+      }
+    },
+    {
+      "repository": "PrincipiaMathOrg/math-solutions",
+      "commit": "47371706c400c79d06e3fb62190fcf6f7a725c85",
+      "native_utf8_files": 1453,
+      "normalization": "Unicode NFKC then casefold",
+      "matching_files": [],
+      "skipped_count": 275,
+      "skipped_reasons": {
+        "not_utf8": 275
+      }
+    },
+    {
+      "repository": "MColbrook/AIM",
+      "commit": "b2ec0fac559f532fc0ed04fce81deea0ce07c68b",
+      "native_utf8_files": 4624,
+      "normalization": "Unicode NFKC then casefold",
+      "matching_files": [
+        "problems/294-gaussian-simplex.md",
+        "problems/637-the-standard-simplex-inequality-for-negative-gaussian-correlations.md",
+        "research/catalogue-backfill-2026-10-30/checked_candidates.json",
+        "research/catalogue-backfill-2026-10-30/manifest.json",
+        "research/catalogue-backfill-2026-10-30/online_searches.json",
+        "research/catalogue-backfill-2026-10-30/review_plan.json",
+        "research/expansion-2026-09/batch-01-link-check.json",
+        "research/expansion-2026-09/candidates/gaussian-simplex.json",
+        "research/expansion-2026-09/drafts/gaussian-simplex.md",
+        "research/expansion-2026-09/search-log.json",
+        "research/expansion-2026-09/source-map.md",
+        "research/solution-status-audit-2026-11-03/lane-c/637.json",
+        "research/status-audit-2026-09-23/baseline.json",
+        "research/status-audit-2026-09-23/source-filtered-screen.json"
+      ],
+      "skipped_count": 163,
+      "skipped_reasons": {
+        "not_utf8": 163
+      }
+    },
+    {
+      "repository": "mxym/math",
+      "commit": "4a51ff772a566451627b9ff41f6248518561d9d4",
+      "native_utf8_files": 23631,
+      "normalization": "Unicode NFKC then casefold",
+      "matching_files": [
+        "preprints/gaussian-centroid-mass-envelope-2026-10/paper.md",
+        "research/gaussian-centroid-dimension-rate/LITERATURE.md",
+        "research/gaussian-centroid-dimension-rate/README.md",
+        "research/gaussian-centroid-dimension-rate/paper.md",
+        "research/gaussian-centroid-mass-envelope/LITERATURE.md",
+        "research/gaussian-centroid-mass-envelope/paper.md",
+        "research/gaussian-fixed-mass-propeller-counterexample/PRIOR_WORK.md",
+        "research/gaussian-nonuniform-simplex-obstruction/REVIEW.md",
+        "research/gaussian-propeller-balanced-fans/AUDIT.md",
+        "research/gaussian-propeller-balanced-fans/LITERATURE.md",
+        "research/gaussian-propeller-balanced-fans/README.md",
+        "research/gaussian-propeller-balanced-fans/paper.md",
+        "research/gaussian-propeller-balanced-fans/results/exact-check.txt",
+        "research/gaussian-quadratic-dimension-all-k/LITERATURE.md",
+        "research/novelty-assessment/2026-10-08-complete-conjecture-targets.md"
+      ],
+      "skipped_count": 487,
+      "skipped_reasons": {
+        "not_utf8": 487
+      }
+    },
+    {
+      "repository": "ArtificialZeng/AI-Has-Taste",
+      "commit": "65eb1f5a92a3a8b80c9e92187825ac9231f86fb2",
+      "native_utf8_files": 14105,
+      "normalization": "Unicode NFKC then casefold",
+      "matching_files": [],
+      "skipped_count": 612,
+      "skipped_reasons": {
+        "not_utf8": 612
+      }
+    },
+    {
+      "repository": "openai/math",
+      "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+      "native_utf8_files": 173622,
+      "normalization": "Unicode NFKC then casefold",
+      "matching_files": [
+        "preprints/Constant-factor-hardness-of-Min-UnCut-September-23-2026/build/sections/preliminaries.tex",
+        "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sources/references.tex",
+        "preprints/The-Unique-Games-Theorem-September-23-2026/build/appendices/finite-consequences.tex",
+        "preprints/The-Unique-Games-Theorem-September-23-2026/build/references.bib"
+      ],
+      "skipped_count": 902,
+      "skipped_reasons": {
+        "not_utf8": 902
+      }
+    }
+  ],
+  "limitations": [
+    "Only native UTF-8 archive bodies were freshly scanned for this target. Previously converted PDF collections and compressed embedded bodies have not yet been completely rescanned for Standard Simplex terms.",
+    "No claim that a keyword search rules out every differently formulated equivalent theorem."
+  ]
+}
