@@ -23,6 +23,8 @@ run_cmd do
     `Han.sparse_encoders_strictly_worse,
     `Han.open_family_gap,
     `Han.concrete_gain_in_interval,
+    `ZhangDeletion.small_deletion_exact,
+    `ZhangDeletion.small_deletion_upper,
     `ZhangDeletion.high_residue_certificate,
     `ZhangDeletion.denominator_bound,
     `ZhangDeletion.retained_double_bound,

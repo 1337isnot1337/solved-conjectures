@@ -4,6 +4,10 @@
 
 Formalized the lower bound and matching approaching feasible encoders for each of the four sparse assignments. Together with the earlier matrix witness and open-family gap, this completes the stated disproof package in Lean. Strict source compilation, all-owned axiom audit and stock-kernel replay passed; the combined repository gate remains pending.
 
+## 2026-11-21 — Zhang deletion values in Lean
+
+Formalized @aadrianvv’s strict inequality and the exact deletion values in both ranges, including a self-contained proof of the Liu upper bound. The seven-module closure passed local kernel replay and the endpoint axiom audit; the combined repository gate remains pending.
+
 ## 2026-11-21 — Exact sparse infimum in Lean
 
 Proved the sparse infimum is exactly 481/441 by constructing feasible sparse encoders with power arbitrarily close to the lower bound. Strict source compilation, all-owned axiom audit and stock-kernel replay passed; the combined repository gate remains pending. The separate exact infima for the other assignments remain to be formalized.

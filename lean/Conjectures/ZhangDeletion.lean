@@ -2,6 +2,7 @@ import Mathlib.Data.Nat.GCD.Basic
 import Mathlib.Data.Nat.ModEq
 import Mathlib.Data.ZMod.Basic
 import Conjectures.LonelinessRational
+import Conjectures.LonelinessPairBridge
 import Mathlib.NumberTheory.DiophantineApproximation.Basic
 
 namespace ZhangDeletion
@@ -437,5 +438,150 @@ theorem high_residue_certificate (n r p j q : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
   constructor
   · exact leastDenominator_minimal n r (by omega) hr p hd hcop.symm
   · exact signed_double_bound n r p j q hr hsmall (by omega) hi hretained
+
+theorem mem_speeds {n r v : ℕ} : v ∈ speeds n r ↔ 1 ≤ v ∧ v < n ∧ v ≠ r := by
+  simp only [speeds, List.mem_filter, List.mem_range', bne_iff_ne, Nat.one_mul]
+  constructor
+  · rintro ⟨⟨i, hi, rfl⟩, hne⟩
+    refine ⟨by omega, ?_, hne⟩
+    omega
+  · rintro ⟨hv, hvn, hne⟩
+    exact ⟨⟨v-1, by omega, by omega⟩, hne⟩
+
+theorem speeds_card (n r : ℕ) (hn : 4 ≤ n) (hr : 1 ≤ r) (hsmall : 2*r ≤ n-1) :
+    1 < (speeds n r).toFinset.card := by
+  apply Finset.one_lt_card.mpr
+  by_cases h : r = 1
+  · refine ⟨2, ?_, 3, ?_, by omega⟩ <;> apply List.mem_toFinset.mpr <;>
+      apply mem_speeds.mpr <;> omega
+  · refine ⟨1, ?_, 2*r, ?_, by omega⟩ <;> apply List.mem_toFinset.mpr <;>
+      apply mem_speeds.mpr <;> omega
+
+theorem rational_upper (n r p j : ℕ) (hn : 4 ≤ n) (hr : 1 ≤ r)
+    (hsmall : 2*r ≤ n-1) (hp : 0 < p) (hpmax : p ≤ 2*(n-1))
+    (hj : Nat.Coprime p j)
+    (hpositive : 0 < Loneliness.clearance (speeds n r) ((j : ℝ)/p)) :
+    Loneliness.clearance (speeds n r) ((j : ℝ)/p) ≤
+      (2 : ℝ) / leastDenominator n r (by omega) hr := by
+  classical
+  let ds := speeds n r
+  have hc : 1 < ds.toFinset.card := speeds_card n r hn hr hsmall
+  have hD : ds.toFinset.Nonempty := Finset.card_pos.mp (by omega)
+  let q := ds.toFinset.inf' hD (fun v => Loneliness.PairSum.folded v j p)
+  obtain ⟨v, hv, hvq⟩ := Finset.exists_mem_eq_inf' hD (fun v => Loneliness.PairSum.folded v j p)
+  have hvlist : v ∈ ds := by simpa using hv
+  have hcle : Loneliness.clearance ds ((j : ℝ)/p) ≤ (q : ℝ)/p := by
+    have h := Loneliness.clearance_le_of_mem hvlist ((j : ℝ)/p)
+    rw [← Loneliness.PairSum.distance_eq_distance] at h
+    rw [Loneliness.PairSum.distance_rational] at h
+    simpa [q, hvq] using h
+  have hpr : (0 : ℝ) < p := by exact_mod_cast hp
+  have hqpos : 1 ≤ q := by
+    by_contra h
+    have : q = 0 := by omega
+    rw [this] at hcle
+    simp at hcle
+    linarith
+  have hfold : ∀ v, 1 ≤ v → v < n → v ≠ r →
+      q ≤ (v*j)%p ∧ (v*j)%p + q ≤ p := by
+    intro w hw hwn hwr
+    have hmem : w ∈ ds.toFinset := by
+      apply List.mem_toFinset.mpr
+      exact mem_speeds.mpr ⟨hw, hwn, hwr⟩
+    have hi : q ≤ Loneliness.PairSum.folded w j p := Finset.inf'_le _ hmem
+    simp only [Loneliness.PairSum.folded, le_min_iff] at hi
+    have hm := Nat.mod_lt (w*j) hp
+    omega
+  have hpos : ∀ v, 1 ≤ v → v < n → v ≠ r → 1 ≤ (v*j)%p := by
+    intro w hw hwn hwr
+    have h := hfold w hw hwn hwr
+    omega
+  have hpn := positive_residues_denominator n r p j hr hsmall hp hpos
+  have hDen := Nat.find_spec (coprime_in_window n r (by omega) hr)
+  have hDenUpper : leastDenominator n r (by omega) hr ≤ 2*p := by
+    change Nat.find (coprime_in_window n r (by omega) hr) ≤ 2*p
+    omega
+  have hDenPos : (0 : ℝ) < leastDenominator n r (by omega) hr := by
+    exact_mod_cast (show 0 < leastDenominator n r (by omega) hr from by
+      have h := leastDenominator_spec n r (by omega) hr
+      omega)
+  by_cases hq : q ≤ 1
+  · have hqR : (q : ℝ) ≤ 1 := by exact_mod_cast hq
+    have hdR : (leastDenominator n r (by omega) hr : ℝ) ≤ 2*(p : ℝ) := by exact_mod_cast hDenUpper
+    have hbound : (q : ℝ)/p ≤ 2/leastDenominator n r (by omega) hr := by
+      apply (div_le_div_iff₀ hpr hDenPos).2
+      nlinarith
+    exact hcle.trans hbound
+  · have cert := high_residue_certificate n r p j q (by omega) hr hsmall hp hpmax hj (by omega) hfold
+    have hqR : (q : ℝ) ≤ 2 := by exact_mod_cast cert.2
+    have hdR : (leastDenominator n r (by omega) hr : ℝ) ≤ p := by exact_mod_cast cert.1
+    have hbound : (q : ℝ)/p ≤ 2/leastDenominator n r (by omega) hr := by
+      apply (div_le_div_iff₀ hpr hDenPos).2
+      nlinarith
+    exact hcle.trans hbound
+
+theorem small_deletion_upper (n r : ℕ) (hn : 4 ≤ n) (hr : 1 ≤ r)
+    (hsmall : 2*r ≤ n-1) :
+    Loneliness.value (speeds n r) ≤ (2 : ℝ) / leastDenominator n r (by omega) hr := by
+  have hcard := speeds_card n r hn hr hsmall
+  have hpos : ∀ d ∈ speeds n r, 0 < d := by
+    intro d hd
+    have h := mem_speeds.mp hd
+    omega
+  obtain ⟨a, ha, b, hb, _, k, _, hvalue, _⟩ :=
+    Loneliness.exists_pair_sum_maximum (speeds n r) hcard hpos
+  have hab : 0 < a+b := by have := hpos a ha; omega
+  let g := Nat.gcd k (a+b)
+  let p := (a+b)/g
+  let j := k/g
+  have hg : 0 < g := Nat.gcd_pos_of_pos_right k hab
+  have hp : 0 < p := Nat.div_gcd_pos_of_pos_right k hab
+  have hcop : Nat.Coprime p j := (Nat.coprime_div_gcd_div_gcd hg).symm
+  have hmulj : j*g = k := Nat.div_mul_cancel (Nat.gcd_dvd_left k (a+b))
+  have hmulp : p*g = a+b := Nat.div_mul_cancel (Nat.gcd_dvd_right k (a+b))
+  have hfrac : (j : ℝ)/p = (k : ℝ)/(a+b : ℕ) := by
+    have hgr : (g : ℝ) ≠ 0 := by exact_mod_cast (ne_of_gt hg)
+    have hpR : (p : ℝ) ≠ 0 := by exact_mod_cast (ne_of_gt hp)
+    have h1 : (j : ℝ)*g = k := by exact_mod_cast hmulj
+    have h2 : (p : ℝ)*g = (a+b : ℕ) := by exact_mod_cast hmulp
+    rw [← h1, ← h2]
+    field_simp
+  have haBound := (mem_speeds.mp ha).2.1
+  have hbBound := (mem_speeds.mp hb).2.1
+  have hpmax : p ≤ 2*(n-1) := by
+    have hpg : p ≤ p*g := Nat.le_mul_of_pos_right p hg
+    omega
+  have hvpos : 0 < Loneliness.value (speeds n r) := by
+    have hl := small_deletion_lower n r (by omega) hr
+    have hd : (0 : ℝ) < leastDenominator n r (by omega) hr := by
+      exact_mod_cast (show 0 < leastDenominator n r (by omega) hr from by
+        have h := leastDenominator_spec n r (by omega) hr
+        omega)
+    have : (0 : ℝ) < 2 / leastDenominator n r (by omega) hr := by positivity
+    linarith
+  have htpos : 0 < Loneliness.clearance (speeds n r) ((j : ℝ)/p) := by
+    rw [hfrac, hvalue]
+    exact hvpos
+  have hu := rational_upper n r p j hn hr hsmall hp hpmax hcop htpos
+  rw [hfrac, hvalue] at hu
+  exact hu
+
+theorem small_deletion_exact (n r : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
+    (hsmall : 2*r ≤ n-1) :
+    Loneliness.value (speeds n r) = (2 : ℝ) / leastDenominator n r (by omega) hr := by
+  apply le_antisymm
+  · by_cases hn4 : 4 ≤ n
+    · exact small_deletion_upper n r hn4 hr hsmall
+    · have hn3 : n = 3 := by omega
+      have hr1 : r = 1 := by omega
+      subst n
+      subst r
+      have hlow := leastDenominator_spec 3 1 (by omega) (by omega)
+      have hupp := leastDenominator_minimal 3 1 (by omega) (by omega) 4 (by omega) (by simp)
+      have hd : leastDenominator 3 1 (by omega) (by omega) = 4 := by omega
+      rw [hd]
+      norm_num
+      exact Loneliness.value_le (fun t _ => Loneliness.clearance_le_half _ t)
+  · exact small_deletion_lower n r hn hr
 
 end ZhangDeletion

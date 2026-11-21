@@ -31,4 +31,4 @@ The script checks the closed formula in all 779 cases with `3 <= n <= 40` and `1
 
 The equality statement in the second case uses Liu's theorem as quoted by Zhang; the verifier confirms it for `n <= 40`.
 
-Lean proves the strict inequality in Question 8.4 for every n≥4 in [`Conjectures.ZhangDeletion`](../../lean/Conjectures/ZhangDeletion.lean); the large-deletion exact value is also checked, while the small-deletion equality remains unformalized. The four-module kernel replay passed locally, and the full repository gate is pending.
+Lean proves the strict inequality in Question 8.4 for every n≥4 in [`Conjectures.ZhangDeletion`](../../lean/Conjectures/ZhangDeletion.lean); both cases of the exact-value formula are also checked. The seven-module kernel replay passed locally, and the full repository gate is pending.
