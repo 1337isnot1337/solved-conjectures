@@ -4,7 +4,7 @@
 
 ## Statement
 
-Let B be a nonzero nonnegative m-by-m doubly substochastic matrix supported on a single row, or on a single column. For t in [0,1], put
+Let B be a nonzero nonnegative m-by-m doubly substochastic matrix whose bipartite support graph is a **star forest**: every connected component containing an edge has a single vertex incident to all its edges. Stars may be row-centered or column-centered, and their weights need not be equal. For t in [0,1], put
 
 ~~~math
 F_B(t)=e^{t\sum_{ij}b_{ij}}\sum_{\mathcal M}
@@ -34,11 +34,11 @@ satisfies
 p_M'(t)>0\qquad(0<t\le1/2).                    \tag{2}
 ~~~
 
-When m>=2 and B is supported on one row, the completion has zero entries inside its upper-left block; thus this includes boundary directions not required to be symmetric. The finite statement is only on the half-segment; equation (1) for the limit does not establish monotonicity on the remaining half for finite M.
+When B has at least one zero entry, its completion has a corresponding zero in the upper-left block; thus the theorem includes nonsymmetric boundary directions with several nonzero rows and columns. The finite statement is only on the half-segment; equation (1) for the limit does not establish monotonicity on the remaining half for finite M.
 
 ## Exact positive quadratic certificate
 
-By transposition symmetry it suffices to study a single occupied row with entries b_1,...,b_m>=0 and S=sum_j b_j in (0,1]. For 0<t<1 write
+First treat a single occupied row with entries b_1,...,b_m>=0 and S=sum_j b_j in (0,1]. By transposition the same argument handles a column-centered star. For 0<t<1 write
 
 ~~~math
 x_j=tb_j,\quad y_j=\frac{x_j}{1-x_j},\quad
@@ -81,7 +81,7 @@ since S<=1 and B is nonzero. This proves strict positivity in the open interval.
 F_B(t)=e^t(1-t+t^2),\qquad F_B'(1)=2e>0.
 ~~~
 
-Finally (3) with x_j=tb_j implies F_B'(t)=t sum_j b_j^2+O(t^2), proving the origin assertions in (1). The column-supported case is identical after transpose.
+Finally (3) with x_j=tb_j implies F_B'(t)=t sum_j b_j^2+O(t^2), proving the origin assertions in (1). A nonzero star-forest matrix decomposes into vertex-disjoint components. The weighted matching sum and its exponential prefactor factorize across these components, so F_B(t) is the product of the corresponding star functions. Every component factor is positive on [0,1] and has strictly positive derivative for t>0 by the one-star calculation (row- or column-centered). The product rule gives F_B'(t)>0; its second derivative at zero is the sum of the component values sum b_{ij}^2, since all component first derivatives vanish at zero. Isolated vertices contribute factors one. This proves the full star-forest statement.
 
 ## Transfer to finite doubly stochastic matrices
 
@@ -113,7 +113,7 @@ At (b,c)=(1/10,4/5) the derivative is exactly -21/500. This is consistent with (
 
 ## Verification, sources, and remaining problem
 
-The accompanying [exact checker](verify_hwang_star_core.py) independently expands the star matching polynomial, verifies (3) and the origin second derivative at 240 rational probes in orders 1 through 10, and checks the negative partial derivative exactly. The proof is general and does not rest on those finite probes. No independent adversarial review of this new note has yet occurred.
+The accompanying [exact checker](verify_hwang_star_core.py) independently expands the star matching polynomial, verifies (3) and the origin second derivative at 240 rational probes in orders 1 through 10, checks the negative partial derivative exactly, and independently enumerates 30 disjoint-star factorization instances. The proof is general and does not rest on those finite probes. No independent adversarial review of this new note has yet occurred.
 
 Sources inspected: the [current Problem 8 catalogue statement](https://yair-lavi.com/mincs-list/problem-8/index.html) records its unrestricted classification problem and earlier monotone families; the [current C34 catalogue statement](https://yair-lavi.com/mincs-list/conjecture-34/index.html) asks for the full finite-matrix chord comparison. The new argument uses the repository's already reviewed substochastic C^2 transfer. Hwang's 1989 paper is referenced at [DOI 10.1090/S0002-9939-1989-0960645-2](https://doi.org/10.1090/S0002-9939-1989-0960645-2), but its complete text was not reaudited for this note. No historical priority is asserted.
 

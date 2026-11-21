@@ -87,3 +87,32 @@ def run():
 
 if __name__ == "__main__":
     run()
+
+
+# Cross-check component factorization by direct exact weighted matching enumeration.
+def direct_matching_sum(B, t):
+    m = len(B)
+    rows = [sum(row, Q(0)) for row in B]
+    cols = [sum((B[i][j] for i in range(m)), Q(0)) for j in range(m)]
+    def walk(i, used):
+        if i == m:
+            prod = Q(1)
+            for j in range(m):
+                if not (used >> j) & 1:
+                    prod *= 1 - t * cols[j]
+            return prod
+        answer = (1 - t * rows[i]) * walk(i + 1, used)
+        for j in range(m):
+            if B[i][j] and not ((used >> j) & 1):
+                answer += t * B[i][j] * walk(i + 1, used | (1 << j))
+        return answer
+    return walk(0, 0)
+
+
+for denom in range(5, 35):
+    a, b, c, d = Q(1, denom), Q(2, denom), Q(1, 4), Q(1, 3)
+    B = [[Q(0)] * 4 for _ in range(4)]
+    B[0][0], B[0][1], B[2][2], B[2][3] = a, b, c, d
+    t = Q(2, 3)
+    assert direct_matching_sum(B, t) == evaluate(direct_star_polynomial([a, b]), t) * evaluate(direct_star_polynomial([c, d]), t)
+print("passed 30 exact disjoint-star factorization checks")
