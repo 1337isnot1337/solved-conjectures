@@ -1,4 +1,5 @@
 import Mathlib.Data.Finset.Max
+import Mathlib.Data.Finset.Prod
 import Mathlib.Data.List.Rotate
 import Mathlib.Tactic.NormNum
 
@@ -167,5 +168,77 @@ theorem rotations_injective (xs : List ℤ) (hs : xs.sum = -1) :
       rw [List.rotate_rotate, Nat.sub_add_cancel (le_of_lt hgt)]
       exact hij
     exact False.elim (no_nontrivial_rotation xs hs (i.val-j.val) (by omega) (by omega) hrot)
+
+noncomputable def goodIndex (xs : List ℤ) : ℕ :=
+  if h : xs ≠ [] ∧ xs.sum = -1 then Classical.choose (cycle_lemma xs h.1 h.2) else 0
+
+theorem goodIndex_good (xs : List ℤ) (hne : xs ≠ []) (hs : xs.sum = -1) :
+    GoodRotation xs (goodIndex xs) := by
+  rw [goodIndex, dite_eq_left ⟨hne, hs⟩]
+  exact (Classical.choose_spec (cycle_lemma xs hne hs)).1
+
+theorem goodIndex_unique (xs : List ℤ) (hne : xs ≠ []) (hs : xs.sum = -1)
+    (q : ℕ) (hq : GoodRotation xs q) : goodIndex xs = q := by
+  have hu := (Classical.choose_spec (cycle_lemma xs hne hs)).2
+  rw [goodIndex, dite_eq_left ⟨hne, hs⟩]
+  exact (hu q hq).symm
+
+theorem canonical_good (xs : List ℤ) (hne : xs ≠ []) (hs : xs.sum = -1) :
+    GoodRotation (xs.rotate (goodIndex xs)) 0 := by
+  have hg := goodIndex_good xs hne hs
+  refine ⟨?_, ?_⟩
+  · simpa using (List.length_pos_iff.mpr hne)
+  · simpa using hg.2
+
+noncomputable def goodWords (S : Finset (List ℤ)) : Finset (List ℤ) := by
+  classical
+  exact S.filter fun xs => GoodRotation xs 0
+
+theorem rotation_count (S : Finset (List ℤ)) (L : ℕ) (hL : 0 < L)
+    (hlen : ∀ xs ∈ S, xs.length = L)
+    (hsum : ∀ xs ∈ S, xs.sum = -1)
+    (hclosed : ∀ xs ∈ S, ∀ q, xs.rotate q ∈ S) :
+    S.card = (goodWords S).card * L := by
+  classical
+  let T := goodWords S
+  have hc : S.card = (T ×ˢ Finset.range L).card := by
+    apply Finset.card_bij (fun xs _ => (xs.rotate (goodIndex xs), goodIndex xs))
+    · intro xs hxs
+      have hn : xs ≠ [] := by
+        intro h
+        have hxlen := hlen xs hxs
+        simp [h] at hxlen
+        omega
+      have hg := goodIndex_good xs hn (hsum xs hxs)
+      simp only [Finset.mem_product, Finset.mem_filter, Finset.mem_range, T, goodWords]
+      exact ⟨⟨hclosed xs hxs _, canonical_good xs hn (hsum xs hxs)⟩, by simpa [hlen xs hxs] using hg.1⟩
+    · intro a ha b hb he
+      have hindex : goodIndex a = goodIndex b := congrArg Prod.snd he
+      have hwords : a.rotate (goodIndex a) = b.rotate (goodIndex b) := congrArg Prod.fst he
+      rw [hindex] at hwords
+      exact List.rotate_injective _ hwords
+    · rintro ⟨w,q⟩ hp
+      obtain ⟨hw, hq⟩ := Finset.mem_product.mp hp
+      obtain ⟨hwS, hwgood⟩ := Finset.mem_filter.mp (show w ∈ S.filter (fun xs => GoodRotation xs 0) from hw)
+      have hqL : q < L := Finset.mem_range.mp hq
+      let xs := w.rotate (L-q)
+      have hxsS : xs ∈ S := hclosed w hwS _
+      have hxslen : xs.length = L := hlen xs hxsS
+      have hxssum : xs.sum = -1 := hsum xs hxsS
+      have hxsne : xs ≠ [] := by intro he; simp [he] at hxslen; omega
+      have hrot : xs.rotate q = w := by
+        dsimp [xs]
+        rw [List.rotate_rotate]
+        have heq : L-q+q = w.length := by rw [hlen w hwS]; omega
+        rw [heq, List.rotate_length]
+      have hgood : GoodRotation xs q := by
+        refine ⟨by omega, ?_⟩
+        rw [hrot]
+        intro t ht
+        simpa using hwgood.2 t (by simpa [hxslen, hlen w hwS] using ht)
+      have hidx := goodIndex_unique xs hxsne hxssum q hgood
+      refine ⟨xs, hxsS, ?_⟩
+      simp [hidx, hrot]
+  simpa [T, Finset.card_product] using hc
 
 end FussCycle

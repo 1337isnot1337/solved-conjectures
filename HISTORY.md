@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Fuss–Catalan rotation count in Lean
+
+Proved that in every rotation-invariant finite collection of length-L integer sequences with sum -1, exactly one in L sequences is a good rotation. Instantiation and the path-counting bridge remain. Strict compilation, 137-theorem axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
+
 ## 2026-11-21 — Fuss–Catalan cycle lemma in Lean
 
 Proved unique good rotation and aperiodicity for integer sequences summing to -1 and verified real-rootedness of the complete closed-form polynomial including the constant boundary. The finite counting bridge to the actual path enumerator remains. Strict compilation, 123-theorem axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.

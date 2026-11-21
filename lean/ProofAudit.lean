@@ -9,6 +9,7 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FussCycle.rotation_count,
     `FussCycle.cycle_lemma,
     `FussCycle.rotations_injective,
     `FussCatalan.closedForm_splits,
