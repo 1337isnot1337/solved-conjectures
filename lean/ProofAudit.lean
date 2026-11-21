@@ -54,6 +54,8 @@ run_cmd do
     `ChenKhareSahi.partitions_complete,
     `ChenKhareSahi.covers_exact,
     `ChenKhareSahi.dominance_decomposes,
+    `ChenKhareSahi.FullSemiring.leading_factor,
+    `ChenKhareSahi.FullSemiring.continuous,
     `ChenKhareSahi.realP_translate,
     `ChenKhareSahi.realD_translate,
     `ChenKhareSahi.translate_eigenfunction,

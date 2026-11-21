@@ -23,6 +23,7 @@ modules=(
   Conjectures.ChenKhareSahiMixed
   Conjectures.ChenKhareSahiTheorem
   Conjectures.ChenKhareSahiTranslate
+  Conjectures.ChenKhareSahiBoundary
   Conjectures.ChenKhareSahiCovers
   Conjectures.FussCatalan
   Conjectures.BrownMolGeneralRoot
