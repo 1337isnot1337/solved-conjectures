@@ -354,3 +354,12 @@ and symmetric groups. Imprimitive wreath products remain an obstruction
 to extending either argument. These results and P1 were separately
 reviewed by other workers. To replay the auxiliary identities with SymPy,
 run `python research/minc/orbit-bounds/verify.py`.
+
+**P4/P12.** An [entropy bound for complete components](extremal-graphs/maximum_core.md)
+shows that every maximum-permanent binary matrix of degree $d$ has at
+most $4d^2(d+1)(2d+1)$ rows outside complete components. This gives an
+explicit recurrence beyond that order and excludes all circulant
+maximizers there when $d$ does not divide the order. The extremal value
+on the residual orders is unresolved. The argument was independently
+reviewed. The [checker](extremal-graphs/verify_maximum_core.py) replays
+the matching counts and conditional exposure bounds.
