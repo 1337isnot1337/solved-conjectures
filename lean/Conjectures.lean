@@ -969,3 +969,8 @@ import Conjectures.HornakReductionGraph
 import Conjectures.HornakAssignment
 import Conjectures.HornakSubset
 import Conjectures.HornakCoarsen
+import Conjectures.HornakSubsetList
+import Conjectures.HornakLargeReduction
+import Conjectures.HornakRange
+import Conjectures.HornakLargeSource
+import Conjectures.HornakAdmissibleRange

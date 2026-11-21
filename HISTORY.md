@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak large-part reduction
+
+Proved the complete tripod reduction for partitions whose parts all exceed a positive shortest arm, by graph-level balancing and well-founded induction. Also proved refinement when discarded central pieces fit the otherwise unused shortest arm. Strict compilation, an 878-theorem full-chain axiom audit and isolated kernel replay passed; the small-part and four-arm reductions, existence constructions and combined gate remain.
+
 ## 2026-11-21 — Gilmore full matching identity rechecked
 
 Rechecked the complete Gilmore source with strict compilation, an all-owned declaration/axiom audit and stock-kernel replay. The checks cover 449 declarations and all 20 required endpoints, including the exhaustive matching bijection and preservation of the source statistics. Corrected the stale landing page and synchronized the full result-level verification badge. The combined package gate and hosted validation remain separate.

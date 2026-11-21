@@ -9,6 +9,15 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Hornak.refine_all_parts_with_short_arm,
+    `Hornak.tripod_balance_noncentral,
+    `Hornak.tripod_balance_largest,
+    `Hornak.large_parts_from_consecutive,
+    `Hornak.large_parts_from_bounded_consecutive,
+    `Hornak.regular_source_realizes_list,
+    `Hornak.large_parts_from_regular_source,
+    `Hornak.next_modulus_carry_at_upper,
+    `Hornak.large_parts_from_index_range,
     `BabaiPathSpectrum.independent_card_bound,
     `BabaiPathSpectrum.coloring_card_bound,
     `BabaiPathSpectrum.ordered_coloring_exists,

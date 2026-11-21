@@ -29,6 +29,10 @@ The landing page previously described surjectivity and statistic preservation as
 
 Both modules are registered in the shared imports, required endpoints, and kernel list. Their complete result-level verification is distinct from the combined repository gate and hosted CI, which are not claimed by these local receipts.
 
+## Horňák–Woźniak large-part reduction, 21 November 2026
+
+Lean reduces every tripod partition whose parts exceed a positive shortest arm to consecutive-size partitions within the source index bound and connects those to tests 1 and 5, with the upper-endpoint carry bound proved, using the graph-level balancing steps and a decreasing measure. It also proves the general refinement step when discarded central pieces fit the unused shortest arm. The small-part and four-arm reductions, admissibility ranges and existence constructions remain. Strict compilation, an 878-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak tripod subset criterion, 21 November 2026
 
 Lean proves the middle-window subset criterion in both directions when all parts exceed the shortest arm, reserves a largest part in the center at the assignment level, and proves the coarsening step with that central part unchanged. The remaining Barth reductions and existence constructions remain. Strict compilation, a 777-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
