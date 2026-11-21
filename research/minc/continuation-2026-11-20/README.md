@@ -15,7 +15,7 @@ This continuation investigates full unresolved entries on [the live Minc list](h
 | C30, Chollet's conjecture | Sphere-tilt proof for rank r and order n at least r squared; exact projection obstruction | Auxiliary theorem reviewed; reduction from arbitrary rank remains unproved |
 | C36 and P7, sign-matrix problems | Modular obstruction, block-expansion identities, and a finiteness theorem for fixed-skeleton one-vertex stretching | Full conjectures unresolved; independently reviewed |
 | P17, permanental-compound characteristic polynomial | Symmetric-power compression and collision-state resolvent route | No uniformly faster algorithm established |
-| P2 and C42, permanent dominance | Complex affine-group counterexample diagnostics | No exact counterexample |
+| P2 and C42, permanent dominance | Exact subgroup projections, marker obstruction, and all-vector extension certificates for two known cores | No counterexample to the original conjecture |
 | P14/P15, Brualdi's prescribed-zero family | Strict-majority support at every minimizer; fully indecomposable mutual-positive support | All-order structural deduction reviewed; scaled permanent comparison remains unproved |
 
 The [inequalities note](inequalities/c9_c34_checkpoint.md) and [regular-matrix note](regular/README.md) give exact statements, source links, calculations, and limitations. Their programs are discovery tools. Floating-point searches cannot establish the inequalities, and exact finite searches do not resolve the unrestricted conjectures.
@@ -52,6 +52,17 @@ orders. It has an [independent review](reviews/block_skeleton_review.md).
 The [root review](reviews/transfer_checkpoint_review.md) checks both sets of
 deductions and records successful independent exact evaluations. Neither
 route supplies a full named-conjecture resolution.
+
+The [permanent-dominance transfer note](inequalities/permanental_dominance_transfer_checkpoint.md)
+retains the subgroup dimension factors that prevent a direct use of known
+permanent-on-top counterexamples. Its all-order appended-vector identity
+gives twelve exact positive forms, excluding every vector extension of two
+fixed cores through six exceptional subgroup characters. The
+[independent review](reviews/subgroup_transfer_review.md) uses a different
+group construction and direct polynomial evaluations; the
+[root review](reviews/subgroup_transfer_root_review.md) checks the general
+normalizations and marker argument. New Gram configurations remain to be
+investigated.
 
 The previous campaign's general P18 approximation theorem, Pula-Song-Wanless threshold, and Malek endpoint theorem retain the different scopes in [the existing continuation record](../NEXT.md). They are not new results of this continuation and are not counted here as three full numbered entries.
 
