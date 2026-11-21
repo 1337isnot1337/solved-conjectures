@@ -1,0 +1,13 @@
+{"checked": 250, "unresolved": 0, "max_certification_iterate": 4, "seconds": 0.02}
+{"checked": 500, "unresolved": 0, "max_certification_iterate": 4, "seconds": 0.05}
+{"checked": 750, "unresolved": 0, "max_certification_iterate": 4, "seconds": 0.088}
+{"checked": 1000, "unresolved": 0, "max_certification_iterate": 4, "seconds": 0.133}
+{"checked": 1250, "unresolved": 0, "max_certification_iterate": 4, "seconds": 0.179}
+{"checked": 1500, "unresolved": 0, "max_certification_iterate": 4, "seconds": 0.236}
+{"checked": 1750, "unresolved": 0, "max_certification_iterate": 4, "seconds": 0.335}
+{"checked": 2000, "unresolved": 0, "max_certification_iterate": 4, "seconds": 0.415}
+{"checked": 2250, "unresolved": 0, "max_certification_iterate": 4, "seconds": 0.476}
+{"checked": 2500, "unresolved": 0, "max_certification_iterate": 4, "seconds": 0.555}
+{"checked": 2750, "unresolved": 0, "max_certification_iterate": 4, "seconds": 0.63}
+{"checked": 3000, "unresolved": 0, "max_certification_iterate": 5, "seconds": 0.744}
+{"completed": 3000, "negative": false, "unresolved": 0, "max_certification_iterate": 5, "seconds": 0.744}
