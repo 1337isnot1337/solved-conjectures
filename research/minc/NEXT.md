@@ -34,7 +34,7 @@ C6 and C24 remain open here. The [whole-matching replacement note](combinatorial
 
 ### Marcus's block-permanent inequality
 
-C9 remains open. The [Gaussian route audit](inequalities/marcus_gaussian_routes.md) rules out several stronger proposed comparisons. A negative test for an enlarged operator or arbitrary holomorphic function is not a counterexample unless it has the product structure required by the original conjecture. The complete block inequality is still the target.
+C9 remains open. The [Gaussian route audit](inequalities/marcus_gaussian_routes.md) rules out several stronger proposed comparisons. A negative test for an enlarged operator or arbitrary holomorphic function is not a counterexample unless it has the product structure required by the original conjecture. The [Pate correction](inequalities/pate_packet_correction.md) establishes the Gaussian replacement endpoint derivative, all two-part Chollet occupation bounds, and the standard-representation quadratic-dominance case from the earlier indicator theorem. It does not control the interior replacement derivative or all occupations. The complete block inequality is still the target.
 
 ### Hwang and Lih–Wang
 

@@ -174,3 +174,10 @@ The [Brualdi border and similarity reduction](sign-matrices/brualdi_similarity_r
 The [constant-recurrence obstruction for Wang's problem](sign-matrices/cfinite_obstruction.md) proves that finitely many all-order sign-matrix families with C-finite permanent and determinant sequences cannot cover all sufficiently large non-Mersenne orders. The proof uses the classical Mersenne valuation and a long-zero-run argument. It neither establishes the expected classification nor rules out binary-dependent constructions.
 
 Both notes have been checked as partial results. No completed entry is added. A compact [current research state](NEXT.md) records the exact outstanding proof obligations and the scope of the three complete proposed results.
+
+
+## Pate source correction
+
+The [Pate indicator-theorem correction](inequalities/pate_packet_correction.md) establishes the Marcus replacement endpoint derivative, every two-part Chollet occupation bound, the standard-representation case of quadratic permanental dominance in every order, and a cofactor-product permanent bound as consequences of the 2008 theorem. [Exact checks](inequalities/pate_packet_certificates.py) verify the subset indexing and polynomial identities. The Gaussian replacement and quadratic-dominance notes, including the review's source-status paragraph, have been corrected: the total standard-block Fischer-deficit compensation is established, rather than an unresolved target.
+
+The result does not extend by subtracting cumulative two-row upper bounds, by applying the PSD theorem to cross-minors, or by silently iterating two-copy mixing. Full quadratic dominance, Chollet and Marcus remain open here. This source correction adds no newly resolved conjecture.

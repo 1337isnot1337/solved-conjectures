@@ -2,6 +2,8 @@
 
 Research date: 20 November 2026 (America/Chicago). This is an open-target audit and a record of exact reductions. No proof or counterexample to the full conjecture is claimed.
 
+Correction, 20 November 2026: the standard-representation case and its total Fischer-deficit inequality below follow in every order from Pate's 2008 indicator-vector theorem. Their earlier treatment as unresolved is withdrawn. [The full deduction and source scope](../inequalities/pate_packet_correction.md) also establish the cumulative two-row-module bounds; they do not prove every individual irreducible-block inequality.
+
 ## Exact target and connection to Minc's list
 
 Yair Lavi's paper *A Conjecture on the Permanent of Positive Semidefinite Matrices*, dated 26 September 2026, states **Conjecture 1.1 (quadratic permanental dominance)**:
@@ -42,7 +44,7 @@ Primary sources read:
 6. Drury, [*A counterexample to a question of Bapat & Sunder*](https://files.ele-math.com/articles/mia-21-37.pdf), Mathematical Inequalities & Applications 21 (2018), 517–520, DOI 10.7153/mia-2018-21-37. The full four-page paper gives an order-eight rank-two counterexample to permanent-on-top for the standard representation. An eigenvalue violation alone does not violate the quadratic conjecture.
 7. Wanless, [*Lieb's permanental dominance conjecture*](https://arxiv.org/pdf/2202.01867), 2022. This distinguishes full subgroup dominance, ordinary immanant dominance, permanent-on-top, and Chollet. The distinctions must be retained in any result claim.
 8. Tran, [*A simple counterexample for the permanent-on-top conjecture*](https://files.ele-math.com/articles/mia-25-01.pdf), Mathematical Inequalities & Applications 25 (2022), 1–16, DOI 10.7153/mia-2022-25-01. Its exact order-five seed and block spectra provide the independent check in the rank-two diagnostic below.
-9. Aouichaoui and Zhang, [*A Solution to a Permanent Conjecture of Pate*](https://www.preprints.org/manuscript/202609.2464/v1), posted 29 September 2026, version 1, not peer reviewed. The theorem asserts the four-term inequality $`\Gamma_{ii}-\Gamma_{ij}-\Gamma_{ji}+\Gamma_{jj}\le2\mathop{\mathrm{per}}A`$. It is prior work, not a new target resolved here. Its equal-coefficient bound does not by itself establish the deficit inequality below.
+9. Aouichaoui and Zhang, [*A Solution to a Permanent Conjecture of Pate*](https://www.preprints.org/manuscript/202609.2464/v1), posted 29 September 2026, version 1, not peer reviewed. The theorem asserts the four-term inequality $`\Gamma_{ii}-\Gamma_{ij}-\Gamma_{ji}+\Gamma_{jj}\le2\mathop{\mathrm{per}}A`$. It is prior work, not a new target resolved here. Its two-index bound is separate from Pate's 2008 indicator theorem. The latter, applied to a doubled matrix as explained below, does establish the standard block's total deficit inequality.
 
 Fresh searches used both web engines, including the exact title, exact conjecture name, author with quadratic/permanental/counterexample terms, and current-date filters. The repository issue search for `quadratic permanental` found coordination issue 139, but no separate completed result. The local repository snapshot contains a related Gaussian-replacement research note, not a resolution. The Zenodo paper-record link (23001181) could not be opened through the web tool. No unrestricted proof or counterexample has been found in this bounded audit; this is not a guarantee that none exists.
 
@@ -124,7 +126,7 @@ The inequalities worker independently checked the restriction, norm, and dimensi
 
 In particular, padding known permanent-on-top counterexamples of order at most five by identity blocks, or taking arbitrary direct sums of such matrices, cannot turn them into quadratic-conjecture counterexamples, using the order-five result in the inspected paper. The live page's subsequent order-six announcement gives the same consequence for blocks through order six if that additional result is used. The padding argument that extends permanent-on-top counterexamples to all larger orders does not extend to this weaker quadratic statement.
 
-## Current unresolved mechanisms
+## Established standard case and remaining two-row bounds
 
 Put $`\Gamma_{ij}=a_{ij}\mathop{\mathrm{per}}A(i\mid j)`$. This is the singleton permutation-module Fourier matrix, up to transpose, so $`\Gamma\succeq0`$ and $`\Gamma\mathbf1=p\mathbf1`$. The module is the direct sum of the trivial and standard representations. Hence
 
@@ -138,6 +140,8 @@ The standard-representation case is therefore equivalent to
 \sum_{i,j}|a_{ij}\mathop{\mathrm{per}}A(i\mid j)|^2
 \le n(\mathop{\mathrm{per}}A)^2.
 ```
+
+This standard-representation inequality is established by applying Pate's indicator theorem to `A direct_sum conjugate(A)`, selecting the paired singleton subsets. The proof, valid in every order, is in [the Pate correction](../inequalities/pate_packet_correction.md). It is a consequence of an earlier theorem, not a new resolution counted by this campaign.
 
 The representation on $`j`$-element subsets similarly has matrix entries
 
@@ -153,7 +157,7 @@ up to a harmless transpose convention. For $`0\le j\le n/2`$, it decomposes into
 =\|C_j(A)\|_F^2-\|C_{j-1}(A)\|_F^2.
 ```
 
-This gives an exact minor-based route for structured matrices. No required upper bound or violating family is yet established.
+Pate's theorem also gives `||C_j(A)||_F^2 <= binom(n,j) p^2`. This controls the sum of the two-row block norms. For `j>=2`, subtracting the upper bound for `j-1` is invalid: upper bounds on two quantities do not bound their difference. The separate bound for each remaining irreducible block is still unproved here.
 
 ### Exact standard-block deficit formulation
 
@@ -175,7 +179,7 @@ The permanental Fischer inequality gives $`\delta_i\ge0`$. Also $`L\mathbf1=0`$ 
 \end{aligned}
 ```
 
-Thus a proof must control the off-diagonal cofactors by the total Fischer deficits. A sufficient, stronger row-by-row statement would be
+The total comparison is therefore established by the Pate deduction above. A stronger row-by-row statement would be
 
 ```math
 \sum_{j\ne i}|\Gamma_{ij}|^2\le\delta_i(2p-\delta_i)\quad\text{for every }i,
@@ -191,14 +195,14 @@ H=\frac14J_4+3uu^T.
 
 Then $`H\succeq0`$, $`H\mathbf1=\mathbf1`$, and every diagonal entry is one, but its eigenvalues are $`3,1,0,0`$, so $`\|H\|_F^2=10>4`$. This is a counterexample only to a proposed deduction from those abstract matrix constraints. No PSD matrix $`A`$ realizing $`H`$ as its normalized permanental cofactor matrix has been supplied, and $`H`$ is not a counterexample to the conjecture.
 
-Equivalently, if $`\ell_i`$ are the eigenvalues of $`L`$, the unresolved compensation is
+Equivalently, if $`\ell_i`$ are the eigenvalues of $`L`$, the now-established compensation is
 
 ```math
 \sum_{\ell_i<0}|\ell_i|(2p+|\ell_i|)
 \le\sum_{\ell_i>0}\ell_i(2p-\ell_i).
 ```
 
-The inequalities $`\ell_i\le p`$ and $`\sum_i\ell_i\ge0`$ do not give this weighted comparison. For other irreducible blocks, even this cofactor reduction is unavailable; the full conjecture requires all blocks.
+The inequalities $`\ell_i\le p`$ and $`\sum_i\ell_i\ge0`$ do not by themselves give this weighted comparison; Pate's theorem supplies the additional permanent-specific constraint. The full conjecture still requires the remaining irreducible blocks.
 
 The negative moment-matrix direction in the team's `chollet_gaussian_replacement.md` is an unfactored polynomial test. It is not a counterexample to the Fourier-block inequality. Conversely a proof of the latter would settle Chollet, so it cannot be treated as an already available tool for that conjecture.
 
@@ -260,7 +264,7 @@ For diagonal $`D`$ with positive diagonal entries, every diagonal product of $`D
 
 Consequently, if any counterexample exists, one of minimum order can be chosen singular and with positive diagonal. If its graph of nonzero off-diagonal entries were disconnected, simultaneous permutation would make it a direct sum of smaller PSD blocks. Those blocks satisfy the conjecture by minimality, so direct-sum closure would give a contradiction. Thus it can also be chosen with connected support. This argument gives no rank bound beyond singularity and supplies no proof for singular connected matrices.
 
-The independent review [the independent review](../inequalities/quadratic_dominance_review.md) checks the subset expansion, restriction multiplicities, empty-set convention, diagonal normalization, and connected-support deduction. It also checks the standard and two-row block formulas. No unresolved input has been discharged by numerical evidence.
+The independent review [independent review](../inequalities/quadratic_dominance_review.md) checks the subset expansion, restriction multiplicities, empty-set convention, diagonal normalization, and connected-support deduction. It also checks the standard and two-row block formulas. No unresolved input has been discharged by numerical evidence.
 
 ## Structured diagnostics, without a counterexample
 
@@ -268,7 +272,7 @@ The script `quadratic_rank_two_blocks.py` evaluates the two-row Fourier-block sq
 
 These are discovery checks, not proofs for an unbounded family, and not counted small-order results. Since the examples leave large slack, continuing the same repetition sweep is not a proposed route to a resolution.
 
-The separate `quadratic_circulant_probe.cpp` tests singular PSD circulants with Fourier weights in $`\{0,1,2\}`$, up to affine frequency equivalence, only in the standard block. The matrix is positive semidefinite by its prescribed nonnegative Fourier spectrum. Circulant symmetry makes every row of $`\Gamma`$ have the same squared norm, so one reverse subset-DP computes the needed quantity from the cofactors in row one. At orders seven through eleven, 3,916 classes were checked; no candidate violation occurred. The largest ratios, approximately 0.828 through 0.898, were all supplied by the scaled regular-simplex matrix with one missing Fourier mode. The log is `quadratic_circulant_probe.log`. This bounded floating-point exploration neither proves a circulant-family theorem nor checks other irreducible blocks. No enlargement of that finite search is justified by the present results.
+The following standard-block diagnostics predate the Pate source correction. Their logs are retained as history; they are not evidence needed for the now-established standard case. The separate `quadratic_circulant_probe.cpp` tests singular PSD circulants with Fourier weights in $`\{0,1,2\}`$, up to affine frequency equivalence, only in the standard block. The matrix is positive semidefinite by its prescribed nonnegative Fourier spectrum. Circulant symmetry makes every row of $`\Gamma`$ have the same squared norm, so one reverse subset-DP computes the needed quantity from the cofactors in row one. At orders seven through eleven, 3,916 classes were checked; no candidate violation occurred. The largest ratios, approximately 0.828 through 0.898, were all supplied by the scaled regular-simplex matrix with one missing Fourier mode. The log is `quadratic_circulant_probe.log`. This bounded floating-point exploration neither proves a circulant-family theorem nor checks other irreducible blocks. No enlargement of that finite search is justified by the present results.
 
 ### Reproduction and checkpoint contents
 
@@ -282,4 +286,4 @@ g++ -std=c++17 -O2 quadratic_circulant_probe.cpp -o /tmp/quadratic_circulant_pro
 
 The checked-in logs record the outputs already obtained. Floating-point rounding can change their last digits. The C++ executable is not part of the research checkpoint.
 
-The focused checkpoint consists of this note, the independent [the independent review](../inequalities/quadratic_dominance_review.md), and the two diagnostic source/log pairs named above. It establishes exact reductions and records failed structured counterexample routes. The missing all-order singular connected inequality, already unresolved in the standard block's explicit deficit formulation, remains the next mathematical task. This checkpoint adds no resolved conjecture.
+The focused checkpoint consists of this note, the [independent review](../inequalities/quadratic_dominance_review.md), and the two diagnostic source/log pairs named above. It establishes exact reductions and records failed structured counterexample routes. The missing all-order singular connected inequality remains for the other irreducible blocks. The standard block's total deficit formulation is established by the Pate deduction above. This checkpoint adds no resolved conjecture.

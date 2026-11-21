@@ -2,6 +2,10 @@
 
 Independent algebraic review, 20 November 2026 (America/Chicago), of [the quadratic-dominance note](../combinatorial/quadratic_permanental_dominance.md). The review checks two reductions. It does not prove quadratic permanental dominance or add a resolved conjecture.
 
+## Source-status correction
+
+The algebraic reductions in this review remain correct. A later source check on the same research date found that the standard-block norm inequality and the equivalent total Fischer-deficit comparison follow from Pate's 2008 indicator theorem by using `A direct_sum conjugate(A)`. [The correction](pate_packet_correction.md) records the general proof and the source-access limit. Thus the total standard-block compensation is established. The stronger rowwise inequality and the separate bounds for all other irreducible blocks are not established by this deduction. The earlier review verified the displayed algebra; it did not justify treating the standard case as a new open target.
+
 ## Direct sums
 
 The direct-sum proof is correct. If `A` and `B` have orders `r,s`, every nonzero permutation product of `A direct_sum B` comes from `S_r x S_s`. In an orthogonal irreducible decomposition of the restricted representation, the corresponding Fourier matrix is a direct sum of the matrices `F_mu(A) tensor F_nu(B)`, with the restriction multiplicities.
@@ -79,4 +83,4 @@ Consequently the standard-block inequality is equivalent to each of
 \le\sum_i\delta_i(2p-\delta_i).
 ```
 
-The stated generic obstruction is exact. If `u=(1,1,-1,-1)/2` and `H=J_4/4+3uu^T`, then `H` is PSD, has row sums one and diagonal entries one, and has eigenvalues `3,1,0,0`. Hence `||H||_F^2=10>4`. The example is not asserted to be a permanental `Gamma`; it shows that positivity, row sums, and the diagonal inequalities alone do not imply the required Frobenius bound. A proof must retain additional constraints coming from the permanent cofactors, including the equality cases of Lieb's inequality.
+The stated generic obstruction is exact. If `u=(1,1,-1,-1)/2` and `H=J_4/4+3uu^T`, then `H` is PSD, has row sums one and diagonal entries one, and has eigenvalues `3,1,0,0`. Hence `||H||_F^2=10>4`. The example is not asserted to be a permanental `Gamma`; it shows that positivity, row sums, and the diagonal inequalities alone do not imply the required Frobenius bound. The Pate deduction retains additional structure from the permanent cofactors. The generic example does not contradict that theorem.
