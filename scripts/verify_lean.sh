@@ -93,6 +93,18 @@ modules=(
   Conjectures.LopezPousoSeguraBesselODE
   Conjectures.LopezPousoSeguraBesselEndpoint
   Conjectures.LopezPousoSeguraBesselFinite
+  Conjectures.LopezPousoSeguraBesselTannery
+  Conjectures.LopezPousoSeguraBesselResolve
+  Conjectures.LopezPousoSeguraBesselScaled
+  Conjectures.LopezPousoSeguraBesselSummable
+  Conjectures.LopezPousoSeguraBesselDenominator
+  Conjectures.LopezPousoSeguraBesselMajorant
+  Conjectures.LopezPousoSeguraBesselDecomp
+  Conjectures.LopezPousoSeguraBesselSeries
+  Conjectures.LopezPousoSeguraBesselBridge
+  Conjectures.LopezPousoSeguraBesselGrowth
+  Conjectures.LopezPousoSeguraBesselConditional
+  Conjectures.LopezPousoSeguraBesselReference
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany
