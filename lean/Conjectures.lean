@@ -27,6 +27,7 @@ import Conjectures.LopezPousoSeguraBesselAverage
 import Conjectures.LopezPousoSeguraBesselLimit
 import Conjectures.LopezPousoSeguraBesselGap
 import Conjectures.LopezPousoSeguraBesselConstant
+import Conjectures.LopezPousoSeguraBesselDiverge
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
