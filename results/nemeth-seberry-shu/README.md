@@ -8,7 +8,7 @@ The 1979 conjecture predicted only $O(p)$ distinct permanent values among all bi
 - [Finite sanity-check script](../../docs/nss/sanity_check.py)
 - [Research issue #54](https://github.com/1337isnot1337/solved-conjectures/issues/54)
 
-**Verification:** Written proof with internal checks; no Lean formalization or external peer review. The finite checks are not part of the asymptotic proof.
+**Verification:** Written proof with internal checks; no Lean formalization. **★ Outside confirmation:** [Yair Lavi's Conjecture 27 page](https://yair-lavi.com/mincs-list/conjecture-27/index.html) now lists this conjecture as disproved, credits Cinna Davis and GPT-6.2 Astra, and records an independent audit finding no gap in the disproof and its quadratic lower bound (20 November 2026). This is an external mathematical check, not journal peer review. The finite checks are not part of the asymptotic proof.
 
 Run from the repository root:
 
