@@ -13,8 +13,8 @@ The source problem is expressed using actual real matrices, positive
 semidefinite power, positive definite Lyapunov matrices, and the original
 matrix inverse. The explicit witness and a uniform lower bound for every
 sparse encoder disprove sparse optimality. The same strict separation holds
-on the stated open interval of channel gains. The exact infimum for each
-individual assignment is not proved here.
+on the stated open interval of channel gains. The exact infimum for every individual assignment is proved using
+`assignment_lower_general`, `assignment_approximation` and `encoder_patterns`.
 -/
 
 noncomputable section
@@ -558,6 +558,239 @@ theorem sparse_infimum_exact :
     simp [Matrix.trace, diag2]
     dsimp [t]
     linarith
+
+theorem assignment_lower_bounds (p q : ℝ) (g j : Mat) (hp : 0 ≤ p) (hq : 0 ≤ q)
+    (hj : j.PosDef)
+    (heq : j = B*j*B - g.transpose*(noise p q)*g + B*g.transpose*g*B) :
+    (g 1 0 = 0 → g 1 1 = 0 → (481/441 : ℝ) < p+q) ∧
+    (g 0 0 = 0 → g 0 1 = 0 → (481/144 : ℝ) < p+q) ∧
+    (g 1 0 = 0 → g 0 1 = 0 → (865/441 : ℝ) < p+q) ∧
+    (g 0 0 = 0 → g 1 1 = 0 → (8065/7056 : ℝ) < p+q) := by
+  have h00 := solution_entry00 p q g j heq
+  have h11 := solution_entry11 p q g j heq
+  have h01 := solution_entry01 p q g j heq
+  have h10 := solution_entry10 p q g j heq
+  have hpos00 : 0 < j 0 0 := hj.diag_pos
+  have hpos11 : 0 < j 1 1 := hj.diag_pos
+  have hdet := hj.det_pos
+  rw [Matrix.det_fin_two] at hdet
+  constructor
+  · intro hz0 hz1
+    simp [hz0, hz1] at h00 h11 h01 h10
+    rw [h00, h11, h01, h10] at hdet
+    have hd := same_channel_necessary (1/(1+(49/16)*p))
+      (reciprocal_le_one p (49/16) hp (by norm_num))
+      (factor_nonnegative_cancel (g 0 0) (g 0 1) _ (by simpa [mul_comm] using hdet))
+    have ht := reciprocal_power_bound p (49/16) (144/625) hp (by norm_num) (by norm_num) (by simpa using hd)
+    norm_num at ht
+    linarith
+  constructor
+  · intro hz0 hz1
+    simp [hz0, hz1] at h00 h11 h01 h10
+    rw [h00, h11, h01, h10] at hdet
+    have hd := same_channel_necessary (1/(1+q))
+      (by simpa using reciprocal_le_one q 1 hq (by norm_num))
+      (factor_nonnegative_cancel (g 1 0) (g 1 1) _ (by simpa [mul_comm] using hdet))
+    have ht := reciprocal_power_bound q 1 (144/625) hq (by norm_num) (by norm_num) (by simpa using hd)
+    norm_num at ht
+    linarith
+  constructor
+  · intro hz0 hz1
+    simp [hz0, hz1] at h00 h11
+    rw [h00] at hpos00
+    rw [h11] at hpos11
+    have hd1 := q11_positive_bound _ (factor_positive _ _ hpos00)
+    have hd2 := q22_positive_bound _ (factor_positive _ _ hpos11)
+    have ht1 := reciprocal_power_bound p (49/16) (16/25) hp (by norm_num) (by norm_num) (by simpa using hd1)
+    have ht2 := reciprocal_power_bound q 1 (9/25) hq (by norm_num) (by norm_num) (by simpa using hd2)
+    norm_num at ht1 ht2
+    linarith
+  · intro hz0 hz1
+    simp [hz0, hz1] at h00 h11
+    rw [h00] at hpos00
+    rw [h11] at hpos11
+    have hd1 := q22_positive_bound _ (factor_positive _ _ hpos11)
+    have hd2 := q11_positive_bound _ (factor_positive _ _ hpos00)
+    have ht1 := reciprocal_power_bound p (49/16) (9/25) hp (by norm_num) (by norm_num) (by simpa using hd1)
+    have ht2 := reciprocal_power_bound q 1 (16/25) hq (by norm_num) (by norm_num) (by simpa using hd2)
+    norm_num at ht1 ht2
+    linarith
+
+def encoder11 : Mat := fun i _ => if i = 1 then 1 else 0
+def encoder01 : Mat := fun i k => if i = k then 1 else 0
+def encoder10 : Mat := fun i k => if i = k then 0 else 1
+
+def splitJ01 (p q : ℝ) : Mat := diag2 (q11 (1/(1+(49/16)*p))) (q22 (1/(1+q)))
+def splitJ10 (p q : ℝ) : Mat := diag2 (q11 (1/(1+q))) (q22 (1/(1+(49/16)*p)))
+
+theorem encoder11_solution (p q : ℝ) :
+    channelJ (1/(1+q)) = B * channelJ (1/(1+q)) * B -
+      encoder11.transpose * noise p q * encoder11 + B * encoder11.transpose * encoder11 * B := by
+  ext i k
+  fin_cases i <;> fin_cases k <;>
+    simp [B, noise, channelJ, symmetric2, q11, q12, q22, encoder11,
+      diag2, Matrix.mul_apply, Fin.sum_univ_two, Matrix.diagonal_apply] <;> ring
+
+theorem encoder01_solution (p q : ℝ) :
+    splitJ01 p q = B * splitJ01 p q * B -
+      encoder01.transpose * noise p q * encoder01 + B * encoder01.transpose * encoder01 * B := by
+  ext i k
+  fin_cases i <;> fin_cases k <;>
+    simp [B, noise, splitJ01, q11, q22, encoder01,
+      diag2, Matrix.mul_apply, Matrix.diagonal_apply] <;> ring
+
+theorem encoder10_solution (p q : ℝ) :
+    splitJ10 p q = B * splitJ10 p q * B -
+      encoder10.transpose * noise p q * encoder10 + B * encoder10.transpose * encoder10 * B := by
+  ext i k
+  fin_cases i <;> fin_cases k <;>
+    simp [B, noise, splitJ10, q11, q22, encoder10,
+      diag2, Matrix.mul_apply, Fin.sum_univ_two, Matrix.diagonal_apply] <;> ring
+
+theorem diag2_nonneg (p q : ℝ) (hp : 0 ≤ p) (hq : 0 ≤ q) : (diag2 p q).PosSemidef := by
+  apply Matrix.PosSemidef.diagonal
+  intro i
+  fin_cases i <;> simp [hp, hq]
+
+theorem feasible_of_solution (p q : ℝ) (g j : Mat) (hp : 0 ≤ p) (hq : 0 ≤ q)
+    (hj : j.PosDef)
+    (heq : j = B*j*B - g.transpose*(noise p q)*g + B*g.transpose*g*B) :
+    Feasible (diag2 p q) g j := by
+  refine ⟨diag2_nonneg p q hp hq, ?_, ?_, hj, ?_⟩
+  · norm_num [diag2, Matrix.diagonal_apply]
+  · norm_num [diag2, Matrix.diagonal_apply]
+  · rw [noise_eq_inverse p q hp hq]
+    exact heq
+
+theorem threshold01 (p : ℝ) (hp : (9/49 : ℝ) < p) :
+    0 < q11 (1/(1+(49/16)*p)) := by
+  have hd : 0 < 1+(49/16)*p := by linarith
+  have ht : 1/(1+(49/16)*p) < (16/25 : ℝ) := by
+    apply (div_lt_iff₀ hd).2
+    linarith
+  dsimp [q11]
+  linarith
+
+theorem threshold10 (p : ℝ) (hp : (256/441 : ℝ) < p) :
+    0 < q22 (1/(1+(49/16)*p)) := by
+  have hd : 0 < 1+(49/16)*p := by linarith
+  have ht : 1/(1+(49/16)*p) < (9/25 : ℝ) := by
+    apply (div_lt_iff₀ hd).2
+    linarith
+  dsimp [q22]
+  linarith
+
+theorem threshold11 (q : ℝ) (hq : (16/9 : ℝ) < q) :
+    0 < q22 (1/(1+q)) := by
+  have hd : 0 < 1+q := by linarith
+  have ht : 1/(1+q) < (9/25 : ℝ) := by
+    apply (div_lt_iff₀ hd).2
+    linarith
+  dsimp [q22]
+  linarith
+
+theorem threshold00 (q : ℝ) (hq : (9/16 : ℝ) < q) :
+    0 < q11 (1/(1+q)) := by
+  have hd : 0 < 1+q := by linarith
+  have ht : 1/(1+q) < (16/25 : ℝ) := by
+    apply (div_lt_iff₀ hd).2
+    linarith
+  dsimp [q11]
+  linarith
+
+theorem encoder11_feasible (q : ℝ) (hq : (481/144 : ℝ) < q) :
+    Feasible (diag2 0 q) encoder11 (channelJ (1/(1+q))) := by
+  have hq0 : 0 ≤ q := by linarith
+  have hdpos : 0 < 1/(1+q) := by positivity
+  have hdlt : 1/(1+q) < 144/625 := by
+    apply (div_lt_iff₀ (by linarith)).2
+    linarith
+  exact feasible_of_solution 0 q encoder11 (channelJ (1/(1+q))) (by norm_num) hq0
+    (channelJ_pos _ hdpos hdlt) (encoder11_solution 0 q)
+
+theorem encoder01_feasible (p q : ℝ) (hp : (9/49 : ℝ) < p) (hq : (16/9 : ℝ) < q) :
+    Feasible (diag2 p q) encoder01 (splitJ01 p q) := by
+  have hj : (splitJ01 p q).PosDef := by
+    apply Matrix.PosDef.diagonal
+    intro i
+    fin_cases i
+    · exact threshold01 p hp
+    · exact threshold11 q hq
+  exact feasible_of_solution p q encoder01 (splitJ01 p q) (by linarith) (by linarith)
+    hj (encoder01_solution p q)
+
+theorem encoder10_feasible (p q : ℝ) (hp : (256/441 : ℝ) < p) (hq : (9/16 : ℝ) < q) :
+    Feasible (diag2 p q) encoder10 (splitJ10 p q) := by
+  have hj : (splitJ10 p q).PosDef := by
+    apply Matrix.PosDef.diagonal
+    intro i
+    fin_cases i
+    · exact threshold00 q hq
+    · exact threshold10 p hp
+  exact feasible_of_solution p q encoder10 (splitJ10 p q) (by linarith) (by linarith)
+    hj (encoder10_solution p q)
+
+theorem assignment_lower_general (p g j : Mat) (hf : Feasible p g j) :
+    (g 1 0 = 0 → g 1 1 = 0 → (481/441 : ℝ) < p.trace) ∧
+    (g 0 0 = 0 → g 0 1 = 0 → (481/144 : ℝ) < p.trace) ∧
+    (g 1 0 = 0 → g 0 1 = 0 → (865/441 : ℝ) < p.trace) ∧
+    (g 0 0 = 0 → g 1 1 = 0 → (8065/7056 : ℝ) < p.trace) := by
+  rcases hf with ⟨hp, hp01, hp10, hj, heq⟩
+  have hp0 : 0 ≤ p 0 0 := hp.diag_nonneg
+  have hp1 : 0 ≤ p 1 1 := hp.diag_nonneg
+  have hpdiag : p = diag2 (p 0 0) (p 1 1) := by
+    ext i k
+    fin_cases i <;> fin_cases k <;> simp [diag2, hp01, hp10]
+  have hnoise := noise_eq_inverse (p 0 0) (p 1 1) hp0 hp1
+  rw [← hpdiag] at hnoise
+  rw [hnoise] at heq
+  have hlower := assignment_lower_bounds (p 0 0) (p 1 1) g j hp0 hp1 hj heq
+  simpa [Matrix.trace, Fin.sum_univ_two] using hlower
+
+theorem assignment_approximation (ε : ℝ) (hε : 0 < ε) :
+    (∃ p j, Feasible p sameChannelEncoder j ∧ p.trace < (481/441 : ℝ) + ε) ∧
+    (∃ p j, Feasible p encoder11 j ∧ p.trace < (481/144 : ℝ) + ε) ∧
+    (∃ p j, Feasible p encoder01 j ∧ p.trace < (865/441 : ℝ) + ε) ∧
+    (∃ p j, Feasible p encoder10 j ∧ p.trace < (8065/7056 : ℝ) + ε) := by
+  constructor
+  · let t : ℝ := 481/441 + ε/2
+    have ht : (481/441 : ℝ) < t := by dsimp [t]; linarith
+    refine ⟨diag2 t 0, channelJ (1/(1+(49/16)*t)), (same_channel_feasible t ht).1, ?_⟩
+    simp [Matrix.trace, diag2]
+    dsimp [t]
+    linarith
+  constructor
+  · let t : ℝ := 481/144 + ε/2
+    have ht : (481/144 : ℝ) < t := by dsimp [t]; linarith
+    refine ⟨diag2 0 t, channelJ (1/(1+t)), encoder11_feasible t ht, ?_⟩
+    simp [Matrix.trace, diag2]
+    dsimp [t]
+    linarith
+  constructor
+  · let p : ℝ := 9/49 + ε/4
+    let q : ℝ := 16/9 + ε/4
+    have hp : (9/49 : ℝ) < p := by dsimp [p]; linarith
+    have hq : (16/9 : ℝ) < q := by dsimp [q]; linarith
+    refine ⟨diag2 p q, splitJ01 p q, encoder01_feasible p q hp hq, ?_⟩
+    simp [Matrix.trace, diag2]
+    dsimp [p,q]
+    linarith
+  · let p : ℝ := 256/441 + ε/4
+    let q : ℝ := 9/16 + ε/4
+    have hp : (256/441 : ℝ) < p := by dsimp [p]; linarith
+    have hq : (9/16 : ℝ) < q := by dsimp [q]; linarith
+    refine ⟨diag2 p q, splitJ10 p q, encoder10_feasible p q hp hq, ?_⟩
+    simp [Matrix.trace, diag2]
+    dsimp [p,q]
+    linarith
+
+theorem encoder_patterns :
+    (sameChannelEncoder 1 0 = 0 ∧ sameChannelEncoder 1 1 = 0 ∧
+      sameChannelEncoder 0 0 ≠ 0 ∧ sameChannelEncoder 0 1 ≠ 0) ∧
+    (encoder11 0 0 = 0 ∧ encoder11 0 1 = 0 ∧ encoder11 1 0 ≠ 0 ∧ encoder11 1 1 ≠ 0) ∧
+    (encoder01 1 0 = 0 ∧ encoder01 0 1 = 0 ∧ encoder01 0 0 ≠ 0 ∧ encoder01 1 1 ≠ 0) ∧
+    (encoder10 0 0 = 0 ∧ encoder10 1 1 = 0 ∧ encoder10 1 0 ≠ 0 ∧ encoder10 0 1 ≠ 0) := by
+  norm_num [sameChannelEncoder, encoder11, encoder01, encoder10]
 
 theorem power_gap : (1168/1323 : ℝ) + 3/17 = 23825/22491 ∧
     (23825/22491 : ℝ) < 481/441 := by norm_num

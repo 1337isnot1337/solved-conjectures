@@ -21,7 +21,7 @@ accepted scope, including the conditional critical-seven assembly.
 
 ## Han–Sabag–Kostina–Hassibi checkpoint
 
-`Conjectures.HanSabagCounterexample` checks the rational matrix witness, the exact sparse infimum, a uniform lower bound over all sparse encoders, and a uniform gap over the open channel-gain interval. Exact individual assignment infima still need their matching upper-bound formalization. The module passed standalone strict source compilation, the all-owned axiom audit and stock-kernel replay; the combined gate is pending. See [issue 197](https://github.com/1337isnot1337/solved-conjectures/issues/197).
+`Conjectures.HanSabagCounterexample` checks the rational matrix witness, the exact sparse infimum, a uniform lower bound over all sparse encoders, and a uniform gap over the open channel-gain interval. Matching lower bounds and approaching feasible encoders establish all four individual assignment infima. The module passed standalone strict source compilation, the all-owned axiom audit and stock-kernel replay; the combined gate is pending. See [issue 197](https://github.com/1337isnot1337/solved-conjectures/issues/197).
 
 ## Coordination, 18 November 2026
 

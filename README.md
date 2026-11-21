@@ -18,7 +18,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Ferreira–Simon's conjecture](results/ferreira-simon-beta-prime/) | ⬜ |
 | [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |
 | [Sun–Zhao's conjecture](results/sun-zhao-iterated-ratios/) | 🟡 |
-| [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | 🟡 |
+| [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | ✅ |
 | [Gröchenig's problem](results/grochenig-zero-density/) | ⬜ |
 | [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | ⬜ |
 | [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | ⬜ |
