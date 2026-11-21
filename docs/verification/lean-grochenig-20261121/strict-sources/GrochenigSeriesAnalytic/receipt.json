@@ -1,0 +1,141 @@
+{
+  "status": "failed",
+  "started_utc": "2026-11-21T18:33:53.135336+00:00",
+  "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+  "lean": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+  "lean_executable_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "lean_path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "builder_sha256": "a8b70714cf2c453276f3e4e58ee04edc414d2d358e4966d8ee20d771e7f34966",
+  "builder_snapshot": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183353.135336Z/builder.py",
+  "control_sha256": {
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953"
+  },
+  "modules": [
+    {
+      "module": "Conjectures.GrochenigSeriesAnalytic",
+      "source": {
+        "path": "Conjectures/GrochenigSeriesAnalytic.lean",
+        "bytes": 4509,
+        "sha256": "d33242cc8e4a8b1e1b9b47d84fb2d5e60f78ea32d690a34a4be1f3f12c8ada4f"
+      },
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/GrochenigSeriesAnalytic.olean",
+        "Conjectures/GrochenigSeriesAnalytic.lean"
+      ],
+      "direct_project_dependencies": {
+        "Conjectures.GrochenigGaussianBasic": {
+          "source": {
+            "path": "Conjectures/GrochenigGaussianBasic.lean",
+            "bytes": 3621,
+            "sha256": "999d69f2fde31728667399db24a3fca1a4d9fcac69257d0a4405f604463669ae"
+          },
+          "objects": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean",
+              "bytes": 28808,
+              "sha256": "3e7cd6953376941607bac4983065762056f2d04b35134f2d3982b7c5dec92ad2"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean.private",
+              "bytes": 85040,
+              "sha256": "691b44e2e79b7024efd9fb9623ad5c9a154037233cfd78a9b8df06b0ba043b4b"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean.server",
+              "bytes": 5200,
+              "sha256": "7ef9433b3e2736c074dc8e9c1a900bc18f237b5246c91650c8e97dacd30b0868"
+            }
+          ]
+        }
+      },
+      "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183353.135336Z/GrochenigSeriesAnalytic.log",
+      "status": "passed",
+      "output_objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeriesAnalytic.olean",
+          "bytes": 21456,
+          "sha256": "f8dbf6d76dfc4b3e6ad430961bdac51c97fec34474a631fdb4dabe7344f69974"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeriesAnalytic.olean.private",
+          "bytes": 80800,
+          "sha256": "aa1f06500ef812ffb65bb9a556dd1fb6f88739f382d22340894e31960081bc61"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeriesAnalytic.olean.server",
+          "bytes": 3464,
+          "sha256": "ba5d3bd3f16f9b38c76630a30124140a9493a0aeb17dd15d5c4f0facf19a95f2"
+        }
+      ],
+      "elapsed_seconds": 3.039,
+      "exit_status": 0,
+      "max_rss_kib": 1654588,
+      "user_seconds": 1.763396,
+      "system_seconds": 1.066265,
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "diagnostic_bytes": 0
+    },
+    {
+      "module": "Conjectures.GrochenigSeriesCoefficients",
+      "source": {
+        "path": "Conjectures/GrochenigSeriesCoefficients.lean",
+        "bytes": 5417,
+        "sha256": "8ba62b5c7483f68fd1e9c63e4579f5eee93674300c4223c0d3c254caa5a75013"
+      },
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/GrochenigSeriesCoefficients.olean",
+        "Conjectures/GrochenigSeriesCoefficients.lean"
+      ],
+      "direct_project_dependencies": {
+        "Conjectures.GrochenigBlocks": {
+          "source": {
+            "path": "Conjectures/GrochenigBlocks.lean",
+            "bytes": 10725,
+            "sha256": "0eb4d08a0922b80def3beb488e31e86e9f058ce29c42fd678bec3cccb04c80df"
+          },
+          "objects": [
+            {
+              "path": ".lake/build/lib/lean/Conjectures/GrochenigBlocks.olean",
+              "bytes": 49464,
+              "sha256": "3f116900eecc411c616d619b573066c6bb896a54d8506d20e9c7d999b4f5b185"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/GrochenigBlocks.olean.private",
+              "bytes": 346800,
+              "sha256": "6d8ecb334b6681ed56424a63ac1e28f2fb7144e3f356d1a34cacb541f99b2689"
+            },
+            {
+              "path": ".lake/build/lib/lean/Conjectures/GrochenigBlocks.olean.server",
+              "bytes": 10000,
+              "sha256": "490559d09d3ab3ad49a497669ffa9960ca93ba67dd1ea1eacc729ca1016f2cb6"
+            }
+          ]
+        }
+      },
+      "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183353.135336Z/GrochenigSeriesCoefficients.log",
+      "status": "failed",
+      "output_objects": [],
+      "elapsed_seconds": 2.417,
+      "exit_status": 1,
+      "max_rss_kib": 1644840,
+      "user_seconds": 1.520204,
+      "system_seconds": 0.681717,
+      "source_unchanged": true,
+      "dependencies_unchanged": true,
+      "diagnostic_bytes": 697
+    }
+  ]
+}

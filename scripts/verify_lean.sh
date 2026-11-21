@@ -1738,6 +1738,20 @@ modules=(
   Conjectures.LiCoefficientInterpolation
   Conjectures.LiNegativeCoefficient
   Conjectures.LonelinessRationalLatticeQuotient
+  Conjectures.GrochenigBlocksAlgebra
+  Conjectures.GrochenigGaussianBasic
+  Conjectures.GrochenigBlocks
+  Conjectures.GrochenigSeparation
+  Conjectures.GrochenigSeriesCoefficients
+  Conjectures.GrochenigSeriesAnalytic
+  Conjectures.GrochenigDensityDefinitions
+  Conjectures.GrochenigSeries
+  Conjectures.GrochenigSignPreservation
+  Conjectures.GrochenigDensity
+  Conjectures.GrochenigWitness
+  Conjectures.GrochenigGaussian
+  Conjectures.GrochenigDensityLocalFiniteness
+  Conjectures.Grochenig
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

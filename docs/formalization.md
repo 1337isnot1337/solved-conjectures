@@ -15,6 +15,18 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Gröchenig upper-density counterexample in Lean
+
+Lean constructs one real coefficient sequence in ℓ¹(ℤ), with absolute mass one and support on the even integers. Its actual Gaussian shift sum is nonzero, has an entire extension and locally finite real zeros, and satisfies D⁺(c)=1/2 and D⁺(Z(f))≥1. Coefficient sign changes use the source convention that skips zero coefficients.
+
+The proof constructs the finite Gaussian blocks, their coefficient and test-point signs, and their exact normalization. A recursive choice of even centers controls all earlier and later block contributions. Absolute local uniform convergence gives the entire extension. The retained test signs supply arbitrarily long windows of distinct zeros. Gaussian total positivity is proved from the all-order exponential determinant theorem in the reused KVZ chain.
+
+All 20 modules in the exact closure passed strict source checks, the complete owned-declaration axiom audit, and stock-kernel replay. The closure contains 14 Gröchenig modules and six reused KVZ kernel modules; all 20 were audited as owned modules. The audit covers 351 declarations, 310 theorem declarations, 78 private declarations, and 157 required endpoints.
+
+See the [receipt](verification/lean-grochenig-20261121/receipt.json) and [complete inventory](verification/lean-grochenig-20261121/audit-validated.json).
+
+The separate lower-density inequality remains unresolved here. The combined repository gate and hosted validation remain separate checks.
+
 ## Chen–Khare–Sahi fixed-parameter stable Hall checkpoint
 
 Lean now identifies the displayed counterexample at `q=1/10`, `t=9/10`

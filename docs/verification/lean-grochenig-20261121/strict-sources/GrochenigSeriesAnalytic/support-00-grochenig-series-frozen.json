@@ -1,0 +1,110 @@
+{
+  "status": "strict_passed_frozen_pending_root_audit_and_replay",
+  "owner": "/root/partial_completion",
+  "compiler_running": false,
+  "all_current_source_output_direct_dependency_hashes_matched": true,
+  "modules": [
+    {
+      "module": "Conjectures.GrochenigSeriesAnalytic",
+      "strict_manifest": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183353.135336Z/manifest.json",
+      "source_sha256": "d33242cc8e4a8b1e1b9b47d84fb2d5e60f78ea32d690a34a4be1f3f12c8ada4f",
+      "elapsed_seconds": 3.039,
+      "max_rss_kib": 1654588,
+      "required": [
+        "Grochenig.gaussian_shift_summable",
+        "Grochenig.gaussian_shift_tsum_bound",
+        "Grochenig.gaussian_complex_shift_summable",
+        "Grochenig.differentiable_gaussian_shift_tsum",
+        "Grochenig.gaussian_shift_tsum_ofReal",
+        "Grochenig.continuous_gaussian_shift_tsum"
+      ],
+      "output_objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeriesAnalytic.olean",
+          "bytes": 21456,
+          "sha256": "f8dbf6d76dfc4b3e6ad430961bdac51c97fec34474a631fdb4dabe7344f69974"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeriesAnalytic.olean.private",
+          "bytes": 80800,
+          "sha256": "aa1f06500ef812ffb65bb9a556dd1fb6f88739f382d22340894e31960081bc61"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeriesAnalytic.olean.server",
+          "bytes": 3464,
+          "sha256": "ba5d3bd3f16f9b38c76630a30124140a9493a0aeb17dd15d5c4f0facf19a95f2"
+        }
+      ]
+    },
+    {
+      "module": "Conjectures.GrochenigSeriesCoefficients",
+      "strict_manifest": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/manifest.json",
+      "source_sha256": "61a1d1bda7cb8f9824c5004949c0799f7514f18892ddf4b3d60e07225e0faaec",
+      "elapsed_seconds": 4.155,
+      "max_rss_kib": 1641496,
+      "required": [
+        "Grochenig.coefficient_at_slot",
+        "Grochenig.coefficient_off_range",
+        "Grochenig.coefficient_even_support",
+        "Grochenig.hasSum_abs_coefficient",
+        "Grochenig.sum_abs_coefficient",
+        "Grochenig.coefficient_bounded",
+        "Grochenig.coefficient_summable"
+      ],
+      "output_objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeriesCoefficients.olean",
+          "bytes": 30792,
+          "sha256": "09a74be352e04049d6130552543d4da49f756309ad168e9ba1779c560456731f"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeriesCoefficients.olean.private",
+          "bytes": 77504,
+          "sha256": "3b6b04ab4827ebb8be125caea75c420b6cdda2908eadf48d727a790c48d564f4"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeriesCoefficients.olean.server",
+          "bytes": 5384,
+          "sha256": "89b1790028ccf11c1da6d1e598f33646f558b90a8100f5d74faee15b22b6037b"
+        }
+      ]
+    },
+    {
+      "module": "Conjectures.GrochenigSeries",
+      "strict_manifest": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/manifest.json",
+      "source_sha256": "471d41488ec9dbc5a919af091520443a72bb1f2048c65918edb7a98f41d2010d",
+      "elapsed_seconds": 2.609,
+      "max_rss_kib": 1650228,
+      "required": [
+        "Grochenig.seriesValue_hasSum",
+        "Grochenig.entireValue_hasSum",
+        "Grochenig.grouped_blocks_hasSum",
+        "Grochenig.grouped_blocks_summable",
+        "Grochenig.seriesValue_eq_prefix_add_block_add_tail",
+        "Grochenig.seriesValue_abs_le_one",
+        "Grochenig.continuous_seriesValue",
+        "Grochenig.differentiable_entireValue",
+        "Grochenig.entireValue_ofReal",
+        "Grochenig.isBoundedShiftSum_seriesValue",
+        "Grochenig.inVInfinity_seriesValue"
+      ],
+      "output_objects": [
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeries.olean",
+          "bytes": 32784,
+          "sha256": "c702fcaa56f1678cb5e16fec50680bdef084860abd67221d793c3e16fc5415ad"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeries.olean.private",
+          "bytes": 87232,
+          "sha256": "21274b1dacb37545997469fb0047a651de326c8aa83d098b5e434ae9e4911444"
+        },
+        {
+          "path": ".lake/build/lib/lean/Conjectures/GrochenigSeries.olean.server",
+          "bytes": 5776,
+          "sha256": "acfd0d6a616443359941a4589957be54862dea926a790219da70fb3b00aaa7f2"
+        }
+      ]
+    }
+  ]
+}

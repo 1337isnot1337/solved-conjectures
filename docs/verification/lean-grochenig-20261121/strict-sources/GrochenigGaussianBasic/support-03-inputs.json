@@ -1,0 +1,321 @@
+{
+  "schema": 1,
+  "module": "Conjectures.GrochenigGaussianBasic",
+  "started_utc": "2026-11-21T17:52:36.820975+00:00",
+  "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+  "command": [
+    "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+    "-j1",
+    "-M2200",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175236.544046Z-e2a66beed1f2/01-GrochenigGaussianBasic/objects/Conjectures/GrochenigGaussianBasic.olean",
+    "Conjectures/GrochenigGaussianBasic.lean"
+  ],
+  "inputs": {
+    "module": "Conjectures.GrochenigGaussianBasic",
+    "source": {
+      "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/Conjectures/GrochenigGaussianBasic.lean",
+      "exists": true,
+      "bytes": 3621,
+      "sha256": "999d69f2fde31728667399db24a3fca1a4d9fcac69257d0a4405f604463669ae"
+    },
+    "direct_imports": [
+      {
+        "module": "Init",
+        "implicit": true,
+        "import_all": false,
+        "public": false,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/src/lean/Init.lean",
+          "exists": true,
+          "bytes": 1469,
+          "sha256": "28b57970b6f0adef586f14939a95362959b698a68463d4a803f81464ad8e0675"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/Init.olean",
+            "exists": true,
+            "bytes": 5632,
+            "sha256": "84ffd94782b2f2f65408dee401a4332bfa7c3274abc7b1040cea7d7a307314f5"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/Init.olean.private",
+            "exists": true,
+            "bytes": 96,
+            "sha256": "33a3805a3662eefd43205a39b3c61b17a05854346c227221052c8d6437e7e3a3"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/Init.olean.server",
+            "exists": true,
+            "bytes": 96,
+            "sha256": "1852ae25f4e1aa51900d656bbad6ea2c83b7459b5496f13f73cc1d4f1419a3d1"
+          }
+        ]
+      },
+      {
+        "module": "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Gaussian/GaussianIntegral.lean",
+          "exists": true,
+          "bytes": 17695,
+          "sha256": "4378f161cf5d482be77941cc9aea0195d2e83fe54eeb51b2ab33db1a318ccb9c"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/SpecialFunctions/Gaussian/GaussianIntegral.olean",
+            "exists": true,
+            "bytes": 41920,
+            "sha256": "58ee4d145a8b8dff46335f8bab4ad214bf6d0a39dfcb7737c7a7915194de98bb"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/SpecialFunctions/Gaussian/GaussianIntegral.olean.private",
+            "exists": true,
+            "bytes": 937984,
+            "sha256": "ead9cd637324e2e7946704367851f19eb772bdcdd4c47f604c86f6cf2120c84c"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/SpecialFunctions/Gaussian/GaussianIntegral.olean.server",
+            "exists": true,
+            "bytes": 8304,
+            "sha256": "a849568972f5f72a8f769f991fe8fc582f49241b07149c9dc06a68e3537f8ceb"
+          }
+        ]
+      },
+      {
+        "module": "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/ExpDeriv.lean",
+          "exists": true,
+          "bytes": 14012,
+          "sha256": "318f03e493c1bcd208cb26130c455faf83db927659c0d9d672df56f33a9da351"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/SpecialFunctions/ExpDeriv.olean",
+            "exists": true,
+            "bytes": 154296,
+            "sha256": "cee2853cbd71dfa121b895729353668568c3352d524dd02c779cb7cd7da58808"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/SpecialFunctions/ExpDeriv.olean.private",
+            "exists": true,
+            "bytes": 141872,
+            "sha256": "c80512496cdb3b4f62908070570e5f0b7e10928e179dc0f9f358d3ebad56cc8a"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/SpecialFunctions/ExpDeriv.olean.server",
+            "exists": true,
+            "bytes": 18776,
+            "sha256": "20f00d40a11a1d543be570d088e9a87d5995061a5509c9580c4b632272da6395"
+          }
+        ]
+      },
+      {
+        "module": "Mathlib.Order.Filter.AtTopBot.Field",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/Mathlib/Order/Filter/AtTopBot/Field.lean",
+          "exists": true,
+          "bytes": 16862,
+          "sha256": "b6ce875ac37da2745d10f0b6460f3fee16f326dc2824652e1c537fba95725b33"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Filter/AtTopBot/Field.olean",
+            "exists": true,
+            "bytes": 77080,
+            "sha256": "b20125239fe2ddcd17b90c6891b28d68fc7fd635a33f1b17bb31f76b26ebbde4"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Filter/AtTopBot/Field.olean.private",
+            "exists": true,
+            "bytes": 230496,
+            "sha256": "d34c6ac8b6fc0206d3dc4066c91bce073b8a834e0ad68e77b31f0f556a0b60cd"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Filter/AtTopBot/Field.olean.server",
+            "exists": true,
+            "bytes": 21048,
+            "sha256": "0246ab6dcfd994a5b81bf35edf7e205518cb512020aeb5f6e6a30d7acbd32e23"
+          }
+        ]
+      },
+      {
+        "module": "Mathlib.Order.Filter.AtTopBot.Ring",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/Mathlib/Order/Filter/AtTopBot/Ring.lean",
+          "exists": true,
+          "bytes": 4112,
+          "sha256": "d3d0d188f4d74d971cf9140c2aadf95abadf83013f7d620a730bafd5dde24730"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Filter/AtTopBot/Ring.olean",
+            "exists": true,
+            "bytes": 37296,
+            "sha256": "47eb4c219d105031ffa7890cc5e60aff900101f31125faacfc6ed8c821c3a0a6"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Filter/AtTopBot/Ring.olean.private",
+            "exists": true,
+            "bytes": 101792,
+            "sha256": "1191a20b33adae137c06041d72e872526098bc9fe96da3e3a65d227e2ce0266b"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Filter/AtTopBot/Ring.olean.server",
+            "exists": true,
+            "bytes": 4280,
+            "sha256": "d092106d71289e2384b452a94e3079737b9e398ed15425a636f2469e0fba7de1"
+          }
+        ]
+      },
+      {
+        "module": "Mathlib.Tactic.FunProp",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/Mathlib/Tactic/FunProp.lean",
+          "exists": true,
+          "bytes": 14612,
+          "sha256": "8913738bcf16901e2de78c0e393fcb7dd55089dbde70faf866be4b34d337d30a"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/FunProp.olean",
+            "exists": true,
+            "bytes": 2488,
+            "sha256": "4bf07148044fa92c0e5033f29899e9a697a04b0fb37d5a811df3b52ab84506c5"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/FunProp.olean.private",
+            "exists": true,
+            "bytes": 96,
+            "sha256": "1b69f205e5f58b03e312cae593b68c07837e1e3ca063b9cfb1d6c95b3efb757a"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/FunProp.olean.server",
+            "exists": true,
+            "bytes": 14432,
+            "sha256": "5f1226ebd702825b620e90bfa3bd05a0d421527ac1d6728a5bad0601c39a6ea6"
+          }
+        ]
+      },
+      {
+        "module": "Mathlib.Tactic.Ring",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/Mathlib/Tactic/Ring.lean",
+          "exists": true,
+          "bytes": 166,
+          "sha256": "d3ef5c49ebbd1108ce3f935e5ad95485e143abf02f28c027dba4bb6f3be8196e"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean",
+            "exists": true,
+            "bytes": 1648,
+            "sha256": "d63e8217a9f5786c3f673020dd6db2ac45b5d72ff1185a899d431b3e80005c7e"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean.private",
+            "exists": true,
+            "bytes": 96,
+            "sha256": "dbbb276d7fe776829e6ce7e41554a36ce52bbbb11d48d2c35a167a5d42ff4051"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean.server",
+            "exists": true,
+            "bytes": 96,
+            "sha256": "05df02c5243ff646f2ec87da2117c4f30f9fb9d5fc39007285827214d75b49eb"
+          }
+        ]
+      }
+    ]
+  },
+  "pins": {
+    "lean_toolchain": "leanprover/lean4:v4.35.0",
+    "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "files": [
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/lean-toolchain",
+        "exists": true,
+        "bytes": 25,
+        "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/lakefile.toml",
+        "exists": true,
+        "bytes": 348,
+        "sha256": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/lake-manifest.json",
+        "exists": true,
+        "bytes": 3206,
+        "sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "exists": true,
+        "bytes": 9024,
+        "sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/libleanshared.so",
+        "exists": true,
+        "bytes": 231113560,
+        "sha256": "efef27df56f2197139afe12f1a2b63913a05f1aba81ce88824c44100431ed8c4"
+      }
+    ]
+  },
+  "required_endpoints": [
+    "Grochenig.gaussian_eq",
+    "Grochenig.gaussianComplex_eq",
+    "Grochenig.gaussian_pos",
+    "Grochenig.gaussian_le_one",
+    "Grochenig.gaussian_neg",
+    "Grochenig.abs_gaussian",
+    "Grochenig.gaussian_continuous",
+    "Grochenig.gaussian_tendsto_atTop",
+    "Grochenig.gaussian_tendsto_atBot",
+    "Grochenig.gaussian_integrable",
+    "Grochenig.gaussianComplex_ofReal",
+    "Grochenig.differentiable_gaussianComplex",
+    "Grochenig.norm_gaussianComplex",
+    "Grochenig.norm_gaussianComplex_sub_int_le"
+  ],
+  "installed_objects_before": [
+    {
+      "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean",
+      "exists": false
+    },
+    {
+      "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean.private",
+      "exists": false
+    },
+    {
+      "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean.server",
+      "exists": false
+    }
+  ],
+  "environment": {
+    "LEAN_NUM_THREADS": "1",
+    "LEAN_PATH": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "PATH": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override:/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin:/opt/codex/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/agent/.local/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/fallback"
+  }
+}

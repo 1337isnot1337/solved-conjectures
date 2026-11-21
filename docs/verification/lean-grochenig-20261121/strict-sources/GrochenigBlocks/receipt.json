@@ -1,0 +1,387 @@
+{
+  "schema": 1,
+  "module": "Conjectures.GrochenigBlocks",
+  "finished_utc": "2026-11-21T18:10:47.466075+00:00",
+  "inputs_record": {
+    "path": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/inputs.json",
+    "exists": true,
+    "bytes": 16876,
+    "sha256": "6f33b1ab068d238bdbf6938e36830f72c656877a4038d5472be5b6a6b20f908e"
+  },
+  "command": [
+    "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+    "-j1",
+    "-M2200",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/objects/Conjectures/GrochenigBlocks.olean",
+    "Conjectures/GrochenigBlocks.lean"
+  ],
+  "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+  "child_pid": 9,
+  "raw_wait_status": 0,
+  "exit_status": 0,
+  "interrupted": false,
+  "wait4": {
+    "elapsed_seconds": 53.0403994240005,
+    "user_seconds": 6.606665,
+    "system_seconds": 13.544268,
+    "max_rss_kib": 1014856,
+    "minor_faults": 101696,
+    "major_faults": 68361,
+    "voluntary_context_switches": 81211,
+    "involuntary_context_switches": 6337
+  },
+  "log": {
+    "path": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/strict.log",
+    "exists": true,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "inputs_after": {
+    "module": "Conjectures.GrochenigBlocks",
+    "source": {
+      "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/Conjectures/GrochenigBlocks.lean",
+      "exists": true,
+      "bytes": 10725,
+      "sha256": "0eb4d08a0922b80def3beb488e31e86e9f058ce29c42fd678bec3cccb04c80df"
+    },
+    "direct_imports": [
+      {
+        "module": "Init",
+        "implicit": true,
+        "import_all": false,
+        "public": false,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/src/lean/Init.lean",
+          "exists": true,
+          "bytes": 1469,
+          "sha256": "28b57970b6f0adef586f14939a95362959b698a68463d4a803f81464ad8e0675"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/Init.olean",
+            "exists": true,
+            "bytes": 5632,
+            "sha256": "84ffd94782b2f2f65408dee401a4332bfa7c3274abc7b1040cea7d7a307314f5"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/Init.olean.private",
+            "exists": true,
+            "bytes": 96,
+            "sha256": "33a3805a3662eefd43205a39b3c61b17a05854346c227221052c8d6437e7e3a3"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/Init.olean.server",
+            "exists": true,
+            "bytes": 96,
+            "sha256": "1852ae25f4e1aa51900d656bbad6ea2c83b7459b5496f13f73cc1d4f1419a3d1"
+          }
+        ]
+      },
+      {
+        "module": "Conjectures.GrochenigBlocksAlgebra",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/Conjectures/GrochenigBlocksAlgebra.lean",
+          "exists": true,
+          "bytes": 3390,
+          "sha256": "c98b33bde349acf73dd8a2377a21b58d1aacc93288b32e4110da5136c4e672a0"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigBlocksAlgebra.olean",
+            "exists": true,
+            "bytes": 21928,
+            "sha256": "7e031949bb16bb98811122dd720de4dba9f913187a70218697e9a485e1d37788"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigBlocksAlgebra.olean.private",
+            "exists": true,
+            "bytes": 185952,
+            "sha256": "947514bbfaaf358575a706b432cfb387959e99ff809c51a7cb48c6f867ba21c2"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigBlocksAlgebra.olean.server",
+            "exists": true,
+            "bytes": 1824,
+            "sha256": "7035b30a0a87f50f2aaf38a4d1a8d3e98ea701b98691b32a894d186a745eea8c"
+          }
+        ]
+      },
+      {
+        "module": "Conjectures.GrochenigGaussianBasic",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/Conjectures/GrochenigGaussianBasic.lean",
+          "exists": true,
+          "bytes": 3621,
+          "sha256": "999d69f2fde31728667399db24a3fca1a4d9fcac69257d0a4405f604463669ae"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean",
+            "exists": true,
+            "bytes": 28808,
+            "sha256": "3e7cd6953376941607bac4983065762056f2d04b35134f2d3982b7c5dec92ad2"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean.private",
+            "exists": true,
+            "bytes": 85040,
+            "sha256": "691b44e2e79b7024efd9fb9623ad5c9a154037233cfd78a9b8df06b0ba043b4b"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean.server",
+            "exists": true,
+            "bytes": 5200,
+            "sha256": "7ef9433b3e2736c074dc8e9c1a900bc18f237b5246c91650c8e97dacd30b0868"
+          }
+        ]
+      },
+      {
+        "module": "Mathlib.Algebra.Polynomial.Eval.Degree",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/Mathlib/Algebra/Polynomial/Eval/Degree.lean",
+          "exists": true,
+          "bytes": 8629,
+          "sha256": "542830fa24cc686b9e97a3f603b662b1a89d772fb83b307d516fb0ebe0654f83"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Polynomial/Eval/Degree.olean",
+            "exists": true,
+            "bytes": 100200,
+            "sha256": "92ae6f8a2ef3521c4d0068b763b3f3b27ffa13dfd34c43f9ed7fc277e7a05b64"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Polynomial/Eval/Degree.olean.private",
+            "exists": true,
+            "bytes": 329168,
+            "sha256": "eebe76099ed55b6f28e537f7d4c17193c5d4e83f1f15c7467fcb751bfa09afb2"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Polynomial/Eval/Degree.olean.server",
+            "exists": true,
+            "bytes": 7408,
+            "sha256": "2bb2cfea194af1e4b7b9368f2bd8182005dad422d0c3a62e8e8759842d83bce1"
+          }
+        ]
+      },
+      {
+        "module": "Mathlib.Data.Finset.Lattice.Fold",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/Mathlib/Data/Finset/Lattice/Fold.lean",
+          "exists": true,
+          "bytes": 32716,
+          "sha256": "52a0ba5288cd672a09016061004b397d59fb9185c33f4f833a27082c7f0af863"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Lattice/Fold.olean",
+            "exists": true,
+            "bytes": 456864,
+            "sha256": "62f47169111f25b5eac976e024c4ef90ccc94972ddabc31d9090811d408fbb7f"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Lattice/Fold.olean.private",
+            "exists": true,
+            "bytes": 1150872,
+            "sha256": "6aa6fec0a931dc8278ba3aa8eb3c92c78b1b3435b7a7d4cd416d585e910a91ed"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Lattice/Fold.olean.server",
+            "exists": true,
+            "bytes": 54080,
+            "sha256": "761e68c4a88a88040bc786639b60d7800c745db2c823e33da60396893727f022"
+          }
+        ]
+      },
+      {
+        "module": "Mathlib.Order.Filter.AtTopBot.Group",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/Mathlib/Order/Filter/AtTopBot/Group.lean",
+          "exists": true,
+          "bytes": 5786,
+          "sha256": "8b6c98b4819d756772473cc0671695017565a7197e3785d400a603f89e657561"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Filter/AtTopBot/Group.olean",
+            "exists": true,
+            "bytes": 78000,
+            "sha256": "7ee7eb3815782339de5b77c5425f792f319218b929a603de1efa2fb4dbdfa20c"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Filter/AtTopBot/Group.olean.private",
+            "exists": true,
+            "bytes": 132544,
+            "sha256": "573194ee6a00257f3ee6ed345a89f769d1bbbc645753d168be0d427fdf8cb1f0"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Filter/AtTopBot/Group.olean.server",
+            "exists": true,
+            "bytes": 11336,
+            "sha256": "3df3e3f1c0c60d2ba16f554fc5e2bd201c77496a8c82aa6c48dfd14d4b1f3b16"
+          }
+        ]
+      },
+      {
+        "module": "Mathlib.Tactic.Linarith",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/Mathlib/Tactic/Linarith.lean",
+          "exists": true,
+          "bytes": 391,
+          "sha256": "0581fd9f80f34d728ad628e7c1fb5a93d36cb9cb48d469fbc797869e83ebe0a6"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Linarith.olean",
+            "exists": true,
+            "bytes": 2536,
+            "sha256": "ff06a7dd7e1dad7f0b361e2d9a3ed46d9444c1be90cd656130cc8e41db0fdadb"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Linarith.olean.private",
+            "exists": true,
+            "bytes": 656,
+            "sha256": "56a68d487fbce18c05ab717ff6ae5e7a48a1de040ff56b87af030de973b7bb86"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Linarith.olean.server",
+            "exists": true,
+            "bytes": 760,
+            "sha256": "42d3ee9b5c551c586c25f9f935814a6dddf0877b59606c78da13abf15fcee511"
+          }
+        ]
+      },
+      {
+        "module": "Mathlib.Tactic.Positivity",
+        "implicit": false,
+        "import_all": false,
+        "public": true,
+        "source": {
+          "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/Mathlib/Tactic/Positivity.lean",
+          "exists": true,
+          "bytes": 187,
+          "sha256": "74549078792cb4bef7b904577b94f0e206912935507b6f2f39eb73b7a15927d6"
+        },
+        "objects": [
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Positivity.olean",
+            "exists": true,
+            "bytes": 1832,
+            "sha256": "e91efb43942be630bf72e0a5cb57ecad4f6f34535e17a6670192b2c0c7f042be"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Positivity.olean.private",
+            "exists": true,
+            "bytes": 96,
+            "sha256": "45fc4dcc05fc1b1ecea408c536dc74e3bc2c0240672ba802cfbbfa49aab0e496"
+          },
+          {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Positivity.olean.server",
+            "exists": true,
+            "bytes": 96,
+            "sha256": "3ffa91af5f467dcff24737bde162438dace553a14397b16aea40aeab1651a8b0"
+          }
+        ]
+      }
+    ]
+  },
+  "pins_after": {
+    "lean_toolchain": "leanprover/lean4:v4.35.0",
+    "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "files": [
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/lean-toolchain",
+        "exists": true,
+        "bytes": 25,
+        "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/lakefile.toml",
+        "exists": true,
+        "bytes": 348,
+        "sha256": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/lake-manifest.json",
+        "exists": true,
+        "bytes": 3206,
+        "sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "exists": true,
+        "bytes": 9024,
+        "sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/libleanshared.so",
+        "exists": true,
+        "bytes": 231113560,
+        "sha256": "efef27df56f2197139afe12f1a2b63913a05f1aba81ce88824c44100431ed8c4"
+      }
+    ]
+  },
+  "inputs_unchanged": true,
+  "fresh_output_objects": [
+    {
+      "path": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/objects/Conjectures/GrochenigBlocks.olean",
+      "exists": true,
+      "bytes": 49464,
+      "sha256": "3f116900eecc411c616d619b573066c6bb896a54d8506d20e9c7d999b4f5b185"
+    },
+    {
+      "path": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/objects/Conjectures/GrochenigBlocks.olean.private",
+      "exists": true,
+      "bytes": 346800,
+      "sha256": "6d8ecb334b6681ed56424a63ac1e28f2fb7144e3f356d1a34cacb541f99b2689"
+    },
+    {
+      "path": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/objects/Conjectures/GrochenigBlocks.olean.server",
+      "exists": true,
+      "bytes": 10000,
+      "sha256": "490559d09d3ab3ad49a497669ffa9960ca93ba67dd1ea1eacc729ca1016f2cb6"
+    }
+  ],
+  "installed_output_objects": [
+    {
+      "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigBlocks.olean",
+      "exists": true,
+      "bytes": 49464,
+      "sha256": "3f116900eecc411c616d619b573066c6bb896a54d8506d20e9c7d999b4f5b185"
+    },
+    {
+      "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigBlocks.olean.private",
+      "exists": true,
+      "bytes": 346800,
+      "sha256": "6d8ecb334b6681ed56424a63ac1e28f2fb7144e3f356d1a34cacb541f99b2689"
+    },
+    {
+      "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigBlocks.olean.server",
+      "exists": true,
+      "bytes": 10000,
+      "sha256": "490559d09d3ab3ad49a497669ffa9960ca93ba67dd1ea1eacc729ca1016f2cb6"
+    }
+  ],
+  "post_build_errors": [],
+  "strict_source_pass": true
+}

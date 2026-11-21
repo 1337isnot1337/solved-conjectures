@@ -20,7 +20,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ |
 | [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ |
 | [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | ✅ |
-| [Gröchenig's problem](results/grochenig-zero-density/) | ⬜ |
+| [Gröchenig's problem](results/grochenig-zero-density/) | ✅ |
 | [Kovalev's conjecture](results/kovalev-hardy-duality/) | ⬜ |
 | [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | ✅ |
 | [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ |

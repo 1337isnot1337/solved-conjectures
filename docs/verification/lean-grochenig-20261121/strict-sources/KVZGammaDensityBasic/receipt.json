@@ -1,0 +1,20 @@
+{
+  "command": [
+    "lean",
+    "-j1",
+    "-M2200",
+    "-DwarningAsError=true",
+    "-o",
+    ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean",
+    "Conjectures/KVZGammaDensityBasic.lean"
+  ],
+  "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+  "started_utc": "2026-11-21T16:43:26.850111+00:00",
+  "elapsed_seconds": 104.226,
+  "peak_kib": 862340,
+  "exit_status": 0,
+  "source_sha256": "b8176f814bd3676d9cc0916794004a75ee39d4bf0e81cc2f57e7d1a1cce38e0c",
+  "object_sha256_before": null,
+  "object_sha256_after": "c9022b105611f512ce8f75ea6dbc647d81d58e91d4ba91624f03bc5c3b9ed2b8",
+  "log_bytes": 0
+}

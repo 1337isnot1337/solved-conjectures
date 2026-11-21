@@ -1,0 +1,11 @@
+{
+  "/workspace/scratch/17b12d3ee06e/run_grochenig_gate.py": "64307ae7fa6a717b7e85643b93a7deb8d68d565b60d61d3e85fb08532bde2e28",
+  "/workspace/scratch/17b12d3ee06e/grochenig-complete-obligations.json": "07cf115513419e739ee97fae3e5d4ea22f7d72a28392c57267913d053a367bab",
+  "/workspace/scratch/17b12d3ee06e/grochenig-complete-inventory.json": "bfa2ee6bc2c272618a4e04b66fef8aa43de1cde458dd67b51c27e905e1268a77",
+  "/workspace/scratch/17b12d3ee06e/GrochenigCompleteOwnedAudit.lean": "8870c5c33976fca0fd89c53f2b6e9dc46a7659bbeaff0b9400ff557f442fc076",
+  "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+  "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/libleanshared.so": "efef27df56f2197139afe12f1a2b63913a05f1aba81ce88824c44100431ed8c4",
+  "/workspace/scratch/17b12d3ee06e/grochenig-owned-required-endpoints.json": "abc013482dc4af84c16683cedbffde56f019f10c1566e6d9ec23cd20f96e6179",
+  "/workspace/scratch/17b12d3ee06e/run_kvz_gate.py": "67c9ce757cf17c77a19e380c33b82113ea0fca3ff895724d00c670124a3b5c85"
+}

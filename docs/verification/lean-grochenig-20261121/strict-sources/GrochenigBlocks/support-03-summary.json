@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "finished_utc": "2026-11-21T18:10:47.469526+00:00",
+  "results": [
+    {
+      "module": "Conjectures.GrochenigBlocksAlgebra",
+      "receipt": {
+        "path": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/01-GrochenigBlocksAlgebra/receipt.json",
+        "exists": true,
+        "bytes": 16828,
+        "sha256": "cd648e40d8819918c19ab294c84bb97cfeb4c0883b4b39575a59e9eed26ebad5"
+      },
+      "strict_source_pass": true
+    },
+    {
+      "module": "Conjectures.GrochenigBlocks",
+      "receipt": {
+        "path": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/receipt.json",
+        "exists": true,
+        "bytes": 16695,
+        "sha256": "d9ba8c411be5fd0810aff316d5511bca4119962903e020bef58a2c429bd0ecdc"
+      },
+      "strict_source_pass": true
+    }
+  ],
+  "requested_modules": [
+    "Conjectures.GrochenigBlocksAlgebra",
+    "Conjectures.GrochenigBlocks"
+  ],
+  "error": null,
+  "strict_source_queue_pass": true,
+  "axiom_audit_or_kernel_replay_performed": false
+}

@@ -1,0 +1,1685 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-11-21T18:43:22.378614+00:00",
+  "base_commit": "33aa63f5d812e5cd6572df975d00e33d357e4eb6",
+  "roots": [
+    "Conjectures.Grochenig"
+  ],
+  "imported_project_modules": [
+    "Conjectures.Grochenig",
+    "Conjectures.GrochenigBlocks",
+    "Conjectures.GrochenigBlocksAlgebra",
+    "Conjectures.GrochenigDensity",
+    "Conjectures.GrochenigDensityDefinitions",
+    "Conjectures.GrochenigDensityLocalFiniteness",
+    "Conjectures.GrochenigGaussian",
+    "Conjectures.GrochenigGaussianBasic",
+    "Conjectures.GrochenigSeparation",
+    "Conjectures.GrochenigSeries",
+    "Conjectures.GrochenigSeriesAnalytic",
+    "Conjectures.GrochenigSeriesCoefficients",
+    "Conjectures.GrochenigSignPreservation",
+    "Conjectures.GrochenigWitness",
+    "Conjectures.KVZGammaDensity",
+    "Conjectures.KVZGammaDensityBasic",
+    "Conjectures.KVZGammaPowerAlgebra",
+    "Conjectures.KVZGammaWronskian",
+    "Conjectures.KVZGammaWronskianDeterminants",
+    "Conjectures.KVZGammaWronskianJets"
+  ],
+  "owned_modules": [
+    "Conjectures.Grochenig",
+    "Conjectures.GrochenigBlocks",
+    "Conjectures.GrochenigBlocksAlgebra",
+    "Conjectures.GrochenigDensity",
+    "Conjectures.GrochenigDensityDefinitions",
+    "Conjectures.GrochenigDensityLocalFiniteness",
+    "Conjectures.GrochenigGaussian",
+    "Conjectures.GrochenigGaussianBasic",
+    "Conjectures.GrochenigSeparation",
+    "Conjectures.GrochenigSeries",
+    "Conjectures.GrochenigSeriesAnalytic",
+    "Conjectures.GrochenigSeriesCoefficients",
+    "Conjectures.GrochenigSignPreservation",
+    "Conjectures.GrochenigWitness",
+    "Conjectures.KVZGammaDensity",
+    "Conjectures.KVZGammaDensityBasic",
+    "Conjectures.KVZGammaPowerAlgebra",
+    "Conjectures.KVZGammaWronskian",
+    "Conjectures.KVZGammaWronskianDeterminants",
+    "Conjectures.KVZGammaWronskianJets"
+  ],
+  "new_result_modules": [
+    "Conjectures.Grochenig",
+    "Conjectures.GrochenigBlocks",
+    "Conjectures.GrochenigBlocksAlgebra",
+    "Conjectures.GrochenigDensity",
+    "Conjectures.GrochenigDensityDefinitions",
+    "Conjectures.GrochenigDensityLocalFiniteness",
+    "Conjectures.GrochenigGaussian",
+    "Conjectures.GrochenigGaussianBasic",
+    "Conjectures.GrochenigSeparation",
+    "Conjectures.GrochenigSeries",
+    "Conjectures.GrochenigSeriesAnalytic",
+    "Conjectures.GrochenigSeriesCoefficients",
+    "Conjectures.GrochenigSignPreservation",
+    "Conjectures.GrochenigWitness"
+  ],
+  "reused_dependency_modules": [
+    "Conjectures.KVZGammaDensity",
+    "Conjectures.KVZGammaDensityBasic",
+    "Conjectures.KVZGammaPowerAlgebra",
+    "Conjectures.KVZGammaWronskian",
+    "Conjectures.KVZGammaWronskianDeterminants",
+    "Conjectures.KVZGammaWronskianJets"
+  ],
+  "newly_registered_modules": [
+    "Conjectures.GrochenigBlocksAlgebra",
+    "Conjectures.GrochenigGaussianBasic",
+    "Conjectures.GrochenigBlocks",
+    "Conjectures.GrochenigSeparation",
+    "Conjectures.GrochenigSeriesCoefficients",
+    "Conjectures.GrochenigSeriesAnalytic",
+    "Conjectures.GrochenigDensityDefinitions",
+    "Conjectures.GrochenigSeries",
+    "Conjectures.GrochenigSignPreservation",
+    "Conjectures.GrochenigDensity",
+    "Conjectures.GrochenigWitness",
+    "Conjectures.GrochenigGaussian",
+    "Conjectures.GrochenigDensityLocalFiniteness",
+    "Conjectures.Grochenig"
+  ],
+  "newly_registered_endpoints": [
+    "Grochenig.coeff_prod_X_sub_C_signed_pos",
+    "Grochenig.signed_product_range_pos",
+    "Grochenig.adjacent_mul_neg_of_signed_pos",
+    "Grochenig.gaussian_eq",
+    "Grochenig.gaussianComplex_eq",
+    "Grochenig.gaussian_pos",
+    "Grochenig.gaussian_le_one",
+    "Grochenig.gaussian_neg",
+    "Grochenig.abs_gaussian",
+    "Grochenig.gaussian_continuous",
+    "Grochenig.gaussian_tendsto_atTop",
+    "Grochenig.gaussian_tendsto_atBot",
+    "Grochenig.gaussian_integrable",
+    "Grochenig.gaussianComplex_ofReal",
+    "Grochenig.differentiable_gaussianComplex",
+    "Grochenig.norm_gaussianComplex",
+    "Grochenig.norm_gaussianComplex_sub_int_le",
+    "Grochenig.blockPolynomial_eq",
+    "Grochenig.rawBlockCoeff_eq",
+    "Grochenig.blockMass_eq",
+    "Grochenig.blockCoeff_eq",
+    "Grochenig.block_eq",
+    "Grochenig.testPoint_eq",
+    "Grochenig.blockMargin_eq",
+    "Grochenig.blockPolynomial_natDegree",
+    "Grochenig.blockPolynomial_coeff_signed_pos",
+    "Grochenig.rawBlockCoeff_signed_pos",
+    "Grochenig.blockMass_pos",
+    "Grochenig.blockCoeff_signed_pos",
+    "Grochenig.blockCoeff_ne_zero",
+    "Grochenig.blockCoeff_mul_succ_neg",
+    "Grochenig.blockCoeff_eq_zero_of_lt",
+    "Grochenig.sum_abs_blockCoeff",
+    "Grochenig.weighted_gaussian_translate",
+    "Grochenig.block_factorization",
+    "Grochenig.blockPolynomial_test_signed_pos",
+    "Grochenig.block_test_signed_pos",
+    "Grochenig.block_test_ne_zero",
+    "Grochenig.block_test_mul_succ_neg",
+    "Grochenig.blockMargin_pos",
+    "Grochenig.blockMargin_le_test",
+    "Grochenig.block_bound",
+    "Grochenig.block_continuous",
+    "Grochenig.block_tendsto_atTop",
+    "Grochenig.block_tendsto_atBot",
+    "Grochenig.center_zero",
+    "Grochenig.center_even",
+    "Grochenig.center_separated",
+    "Grochenig.earlier_blocks_small",
+    "Grochenig.later_block_small",
+    "Grochenig.slotPosition_injective",
+    "Grochenig.slotPosition_eq",
+    "Grochenig.coefficient_eq",
+    "Grochenig.coefficient_at_slot",
+    "Grochenig.coefficient_off_range",
+    "Grochenig.coefficient_even_support",
+    "Grochenig.geometric_block_mass_hasSum",
+    "Grochenig.sigma_block_abs_hasSum",
+    "Grochenig.hasSum_abs_coefficient",
+    "Grochenig.coefficient_abs_summable",
+    "Grochenig.sum_abs_coefficient",
+    "Grochenig.coefficient_summable",
+    "Grochenig.abs_coefficient_le_one",
+    "Grochenig.coefficient_bounded",
+    "Grochenig.gaussian_shift_summable",
+    "Grochenig.gaussian_shift_tsum_bound",
+    "Grochenig.gaussian_complex_shift_summable",
+    "Grochenig.differentiable_gaussian_shift_tsum",
+    "Grochenig.gaussian_shift_tsum_ofReal",
+    "Grochenig.continuous_gaussian_shift_tsum",
+    "Grochenig.mem_coefficientSignChanges",
+    "Grochenig.intervalCount_eq",
+    "Grochenig.intIntervalCount_eq",
+    "Grochenig.upperBeurlingDensity_eq",
+    "Grochenig.upperIntegerDensity_eq",
+    "Grochenig.upperCoefficientDensity_eq",
+    "Grochenig.mem_zeroSet",
+    "Grochenig.locallyFiniteSet_iff",
+    "Grochenig.isBoundedShiftSum_iff",
+    "Grochenig.inVInfinity_iff",
+    "Grochenig.seriesValue_eq",
+    "Grochenig.entireValue_eq",
+    "Grochenig.seriesValue_hasSum",
+    "Grochenig.entireValue_hasSum",
+    "Grochenig.block_eq_slot_sum",
+    "Grochenig.grouped_blocks_hasSum",
+    "Grochenig.grouped_blocks_summable",
+    "Grochenig.seriesValue_eq_grouped_blocks",
+    "Grochenig.seriesValue_eq_prefix_add_block_add_tail",
+    "Grochenig.seriesValue_abs_le_one",
+    "Grochenig.continuous_seriesValue",
+    "Grochenig.differentiable_entireValue",
+    "Grochenig.entireValue_ofReal",
+    "Grochenig.isBoundedShiftSum_seriesValue",
+    "Grochenig.inVInfinity_seriesValue",
+    "Grochenig.later_series_bound",
+    "Grochenig.series_error_lt",
+    "Grochenig.mul_pos_of_abs_sub_lt",
+    "Grochenig.exists_zero_between",
+    "Grochenig.ordered_zero_witnesses",
+    "Grochenig.coefficientSignChanges_nonzero",
+    "Grochenig.mem_coefficientSignChanges_of_step_two",
+    "Grochenig.card_le_intervalCount",
+    "Grochenig.card_le_intIntervalCount",
+    "Grochenig.intIntervalCount_le_of_even",
+    "Grochenig.upperIntegerDensity_le_half_of_even",
+    "Grochenig.upperCoefficientDensity_le_half",
+    "Grochenig.half_le_upperCoefficientDensity",
+    "Grochenig.one_le_upperBeurlingDensity_of_windows",
+    "Grochenig.constructed_slot_injective",
+    "Grochenig.constructed_test_error",
+    "Grochenig.constructed_test_same_sign",
+    "Grochenig.constructed_test_adjacent_neg",
+    "Grochenig.constructed_nonzero",
+    "Grochenig.constructed_zero_window",
+    "Grochenig.constructed_zero_density",
+    "Grochenig.coefficient_center_slot",
+    "Grochenig.coefficient_center_odd_zero",
+    "Grochenig.coefficient_slot_sign_change",
+    "Grochenig.constructed_coefficient_density",
+    "Grochenig.isPolyaFrequency_iff",
+    "Grochenig.gaussian_difference_factorization",
+    "Grochenig.gaussian_det_factorization",
+    "Grochenig.gaussian_det_pos",
+    "Grochenig.gaussian_isPolyaFrequency",
+    "Grochenig.zeroSet_locallyFinite_of_entire",
+    "Grochenig.constructed_zeros_locallyFinite",
+    "Grochenig.constructed_density_violation",
+    "Grochenig.upper_density_counterexample",
+    "Grochenig.source_upper_density_disproof"
+  ],
+  "required_theorems": [
+    "Grochenig.constructed_zeros_locallyFinite",
+    "Grochenig.constructed_density_violation",
+    "Grochenig.upper_density_counterexample",
+    "Grochenig.source_upper_density_disproof",
+    "Grochenig.blockPolynomial_eq",
+    "Grochenig.rawBlockCoeff_eq",
+    "Grochenig.blockMass_eq",
+    "Grochenig.blockCoeff_eq",
+    "Grochenig.block_eq",
+    "Grochenig.testPoint_eq",
+    "Grochenig.blockMargin_eq",
+    "Grochenig.blockPolynomial_natDegree",
+    "Grochenig.blockPolynomial_coeff_signed_pos",
+    "Grochenig.rawBlockCoeff_signed_pos",
+    "Grochenig.blockMass_pos",
+    "Grochenig.blockCoeff_signed_pos",
+    "Grochenig.blockCoeff_ne_zero",
+    "Grochenig.blockCoeff_mul_succ_neg",
+    "Grochenig.blockCoeff_eq_zero_of_lt",
+    "Grochenig.sum_abs_blockCoeff",
+    "Grochenig.weighted_gaussian_translate",
+    "Grochenig.block_factorization",
+    "Grochenig.blockPolynomial_test_signed_pos",
+    "Grochenig.block_test_signed_pos",
+    "Grochenig.block_test_ne_zero",
+    "Grochenig.block_test_mul_succ_neg",
+    "Grochenig.blockMargin_pos",
+    "Grochenig.blockMargin_le_test",
+    "Grochenig.block_bound",
+    "Grochenig.block_continuous",
+    "Grochenig.block_tendsto_atTop",
+    "Grochenig.block_tendsto_atBot",
+    "Grochenig.coeff_prod_X_sub_C_signed_pos",
+    "Grochenig.signed_product_range_pos",
+    "Grochenig.adjacent_mul_neg_of_signed_pos",
+    "Grochenig.coefficientSignChanges_nonzero",
+    "Grochenig.mem_coefficientSignChanges_of_step_two",
+    "Grochenig.card_le_intervalCount",
+    "Grochenig.card_le_intIntervalCount",
+    "Grochenig.intIntervalCount_le_of_even",
+    "Grochenig.upperIntegerDensity_le_half_of_even",
+    "Grochenig.upperCoefficientDensity_le_half",
+    "Grochenig.half_le_upperCoefficientDensity",
+    "Grochenig.one_le_upperBeurlingDensity_of_windows",
+    "Grochenig.mem_coefficientSignChanges",
+    "Grochenig.intervalCount_eq",
+    "Grochenig.intIntervalCount_eq",
+    "Grochenig.upperBeurlingDensity_eq",
+    "Grochenig.upperIntegerDensity_eq",
+    "Grochenig.upperCoefficientDensity_eq",
+    "Grochenig.mem_zeroSet",
+    "Grochenig.locallyFiniteSet_iff",
+    "Grochenig.isBoundedShiftSum_iff",
+    "Grochenig.inVInfinity_iff",
+    "Grochenig.zeroSet_locallyFinite_of_entire",
+    "Grochenig.isPolyaFrequency_iff",
+    "Grochenig.gaussian_difference_factorization",
+    "Grochenig.gaussian_det_factorization",
+    "Grochenig.gaussian_det_pos",
+    "Grochenig.gaussian_isPolyaFrequency",
+    "Grochenig.gaussian_eq",
+    "Grochenig.gaussianComplex_eq",
+    "Grochenig.gaussian_pos",
+    "Grochenig.gaussian_le_one",
+    "Grochenig.gaussian_neg",
+    "Grochenig.abs_gaussian",
+    "Grochenig.gaussian_continuous",
+    "Grochenig.gaussian_tendsto_atTop",
+    "Grochenig.gaussian_tendsto_atBot",
+    "Grochenig.gaussian_integrable",
+    "Grochenig.gaussianComplex_ofReal",
+    "Grochenig.differentiable_gaussianComplex",
+    "Grochenig.norm_gaussianComplex",
+    "Grochenig.norm_gaussianComplex_sub_int_le",
+    "Grochenig.center_zero",
+    "Grochenig.center_even",
+    "Grochenig.center_separated",
+    "Grochenig.earlier_blocks_small",
+    "Grochenig.later_block_small",
+    "Grochenig.slotPosition_injective",
+    "Grochenig.seriesValue_eq",
+    "Grochenig.entireValue_eq",
+    "Grochenig.seriesValue_hasSum",
+    "Grochenig.entireValue_hasSum",
+    "Grochenig.block_eq_slot_sum",
+    "Grochenig.grouped_blocks_hasSum",
+    "Grochenig.grouped_blocks_summable",
+    "Grochenig.seriesValue_eq_grouped_blocks",
+    "Grochenig.seriesValue_eq_prefix_add_block_add_tail",
+    "Grochenig.seriesValue_abs_le_one",
+    "Grochenig.continuous_seriesValue",
+    "Grochenig.differentiable_entireValue",
+    "Grochenig.entireValue_ofReal",
+    "Grochenig.isBoundedShiftSum_seriesValue",
+    "Grochenig.inVInfinity_seriesValue",
+    "Grochenig.gaussian_shift_summable",
+    "Grochenig.gaussian_shift_tsum_bound",
+    "Grochenig.gaussian_complex_shift_summable",
+    "Grochenig.differentiable_gaussian_shift_tsum",
+    "Grochenig.gaussian_shift_tsum_ofReal",
+    "Grochenig.continuous_gaussian_shift_tsum",
+    "Grochenig.slotPosition_eq",
+    "Grochenig.coefficient_eq",
+    "Grochenig.coefficient_at_slot",
+    "Grochenig.coefficient_off_range",
+    "Grochenig.coefficient_even_support",
+    "Grochenig.geometric_block_mass_hasSum",
+    "Grochenig.sigma_block_abs_hasSum",
+    "Grochenig.hasSum_abs_coefficient",
+    "Grochenig.coefficient_abs_summable",
+    "Grochenig.sum_abs_coefficient",
+    "Grochenig.coefficient_summable",
+    "Grochenig.abs_coefficient_le_one",
+    "Grochenig.coefficient_bounded",
+    "Grochenig.later_series_bound",
+    "Grochenig.series_error_lt",
+    "Grochenig.mul_pos_of_abs_sub_lt",
+    "Grochenig.exists_zero_between",
+    "Grochenig.ordered_zero_witnesses",
+    "Grochenig.constructed_slot_injective",
+    "Grochenig.constructed_test_error",
+    "Grochenig.constructed_test_same_sign",
+    "Grochenig.constructed_test_adjacent_neg",
+    "Grochenig.constructed_nonzero",
+    "Grochenig.constructed_zero_window",
+    "Grochenig.constructed_zero_density",
+    "Grochenig.coefficient_center_slot",
+    "Grochenig.coefficient_center_odd_zero",
+    "Grochenig.coefficient_slot_sign_change",
+    "Grochenig.constructed_coefficient_density",
+    "KVZGamma.exponential_wronskian_eq",
+    "KVZGamma.exponential_det_pos",
+    "KVZGamma.gammaDensity_det_factorization",
+    "KVZGamma.gammaDensity_det_pos",
+    "KVZGamma.gammaDensity_transpose_det_pos",
+    "KVZGamma.gammaDensity_pos",
+    "KVZGamma.gammaDensity_continuousOn",
+    "KVZGamma.gammaDensity_eq_exp",
+    "KVZGamma.powerSignature_eq",
+    "KVZGamma.powerKernel_eq",
+    "KVZGamma.falling_eq_prod",
+    "KVZGamma.falling_nat_pos",
+    "KVZGamma.falling_ne_zero",
+    "KVZGamma.powerSignature_nat_mul_sign_pos",
+    "KVZGamma.powerSignature_nat_eq_zero",
+    "KVZGamma.powerSignature_three",
+    "KVZGamma.power_nat_matrix_factorization",
+    "KVZGamma.powerKernel_nat_det_eq_zero",
+    "KVZGamma.evaluationDet_mul_wronskian_pos",
+    "KVZGamma.evaluationDet_ne_zero",
+    "KVZGamma.evaluationDet_sign_eq",
+    "KVZGamma.det_interval_differences_mvt",
+    "KVZGamma.det_of_first_column_one",
+    "KVZGamma.evaluationDet_normalize",
+    "KVZGamma.jetMatrix_mul",
+    "KVZGamma.wronskian_mul",
+    "KVZGamma.wronskian_normalizedDerivatives"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/Grochenig.lean": "b8ee726fa10104c780ab9944fd56908dc40bebca7fe4d5893fff04459f5950b3",
+    "lean/Conjectures/GrochenigBlocks.lean": "0eb4d08a0922b80def3beb488e31e86e9f058ce29c42fd678bec3cccb04c80df",
+    "lean/Conjectures/GrochenigBlocksAlgebra.lean": "c98b33bde349acf73dd8a2377a21b58d1aacc93288b32e4110da5136c4e672a0",
+    "lean/Conjectures/GrochenigDensity.lean": "00a4af4b0a1360738fe6d9ba8e62b4d6ae005e5925aef42c00e460048748650f",
+    "lean/Conjectures/GrochenigDensityDefinitions.lean": "98bea627b013fae7f5fe91f1a50d21819c984425b91db791d1a600adf5e8e04c",
+    "lean/Conjectures/GrochenigDensityLocalFiniteness.lean": "ce36bcdece805759be169abd581b28bb4d1084f13233dd76dcf0ad8caa542909",
+    "lean/Conjectures/GrochenigGaussian.lean": "cf1ff33b5641577832c27cf3c5613c18c338bac492df84383ccaaf7bbe9e3289",
+    "lean/Conjectures/GrochenigGaussianBasic.lean": "999d69f2fde31728667399db24a3fca1a4d9fcac69257d0a4405f604463669ae",
+    "lean/Conjectures/GrochenigSeparation.lean": "66bffdcb09f68da1de53494413717e2d2a15d075b09814b66db4518b588fe8fc",
+    "lean/Conjectures/GrochenigSeries.lean": "471d41488ec9dbc5a919af091520443a72bb1f2048c65918edb7a98f41d2010d",
+    "lean/Conjectures/GrochenigSeriesAnalytic.lean": "d33242cc8e4a8b1e1b9b47d84fb2d5e60f78ea32d690a34a4be1f3f12c8ada4f",
+    "lean/Conjectures/GrochenigSeriesCoefficients.lean": "61a1d1bda7cb8f9824c5004949c0799f7514f18892ddf4b3d60e07225e0faaec",
+    "lean/Conjectures/GrochenigSignPreservation.lean": "44114add68dcb2149e033e8928fc254ddc9f6550dd5c4021c7a42572ad750500",
+    "lean/Conjectures/GrochenigWitness.lean": "4929a20e7f23cc725da2b15643087077234ee28990f3eba10626ecdc1b9119e0",
+    "lean/Conjectures/KVZGammaDensity.lean": "a0a003fbb70eabbdf9065c3597e0ac85ec2ef662f1b26a6d691671f782c7e25b",
+    "lean/Conjectures/KVZGammaDensityBasic.lean": "b8176f814bd3676d9cc0916794004a75ee39d4bf0e81cc2f57e7d1a1cce38e0c",
+    "lean/Conjectures/KVZGammaPowerAlgebra.lean": "6cfbf16a587692883bf53870c936ba5a0f815cac96ce4079b189b7369fee4d71",
+    "lean/Conjectures/KVZGammaWronskian.lean": "b652f8821c59d106d10cf93e74d5f21f5b9b5bd466055fdedccc14bbf5127fa1",
+    "lean/Conjectures/KVZGammaWronskianDeterminants.lean": "30e5a47d7a37abb93bc198c121905e0b919074438e980ce7711ce38621ae4b86",
+    "lean/Conjectures/KVZGammaWronskianJets.lean": "2c9200e33a25df6b36e7c1187fe6cf5ba1b85d5ea20befb8925c1f4af7298016"
+  },
+  "artifact_sha256": {
+    "lean/.lake/build/lib/lean/Conjectures/Grochenig.olean": "8f6efbd362dc520519cddf92b74e00819c595ca354e01be573045483dface9b4",
+    "lean/.lake/build/lib/lean/Conjectures/Grochenig.olean.private": "dc59057b7bd0de0dc49c0759300b567a281084dcdae36784cef928980c4651b9",
+    "lean/.lake/build/lib/lean/Conjectures/Grochenig.olean.server": "f271a5f07d389fbe7467c450702976accabd4e90d1cf12341e6dacafb5c749f0",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigBlocks.olean": "3f116900eecc411c616d619b573066c6bb896a54d8506d20e9c7d999b4f5b185",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigBlocks.olean.private": "6d8ecb334b6681ed56424a63ac1e28f2fb7144e3f356d1a34cacb541f99b2689",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigBlocks.olean.server": "490559d09d3ab3ad49a497669ffa9960ca93ba67dd1ea1eacc729ca1016f2cb6",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigBlocksAlgebra.olean": "7e031949bb16bb98811122dd720de4dba9f913187a70218697e9a485e1d37788",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigBlocksAlgebra.olean.private": "947514bbfaaf358575a706b432cfb387959e99ff809c51a7cb48c6f867ba21c2",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigBlocksAlgebra.olean.server": "7035b30a0a87f50f2aaf38a4d1a8d3e98ea701b98691b32a894d186a745eea8c",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigDensity.olean": "c41be1900de809e747fd0a6cc72d1327737f8a90f15a2c4d73c7e6ba4c6297e6",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigDensity.olean.private": "e9d1f25b51e274198193a8a9f4bdd627f877ad7cabb2839554fdff168afd88e6",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigDensity.olean.server": "e77b513ed546fad459e87c1560ad5375d70d4e97c8d3488e86d48701df84e155",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigDensityDefinitions.olean": "ff36adbb081fd2c748108d46673ab891a37796d5ee65cb8bff9e0fe1c8e98c76",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigDensityDefinitions.olean.private": "9e8f00204c78ad0cba7fbbe07eb1815f8c0206fb573862684fccbadcfaac087f",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigDensityDefinitions.olean.server": "78984426818578b65691e3b53516c473f7340fafbc3e44daf5ba9ac9421351ae",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigDensityLocalFiniteness.olean": "db6670ec108d747e84a8ecd67a2a2313d49d4b9c68748cbf65e8cd97a4698919",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigDensityLocalFiniteness.olean.private": "9c29cdd7e8919d7d60e5732d7272d8d168cc02aac8c1ea15920df0a495e101a0",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigDensityLocalFiniteness.olean.server": "1183d03b6e310bc43c80b10beb487c3ce17aa83ae9545d33be945ff038178f3f",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigGaussian.olean": "5bb37683649473a6994298753c1b1c5584c9b221ef14e46567490b2d46a8f07a",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigGaussian.olean.private": "f67892cbb2db4fcee2c9c2d4a13e28dcdc1a0700dd0362525af9d418044bc524",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigGaussian.olean.server": "9e717de40e3a62b1a1f7257c925d5ef04a9f5c1379adec5a064fe917716241b1",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean": "3e7cd6953376941607bac4983065762056f2d04b35134f2d3982b7c5dec92ad2",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean.private": "691b44e2e79b7024efd9fb9623ad5c9a154037233cfd78a9b8df06b0ba043b4b",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean.server": "7ef9433b3e2736c074dc8e9c1a900bc18f237b5246c91650c8e97dacd30b0868",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeparation.olean": "6738514375cc48ad345e15360fcef19d48ed372a1303bae00b8b8e3c55e79dac",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeparation.olean.private": "c9e2f5374fef3c4ca5714d85ca238036acb8d8d7167b35330a12c3f3028dc1fe",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeparation.olean.server": "7968a692e9fd95afd3ae1ff53b479100be600e0ac0f2e8742bfbe27038dc9639",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeries.olean": "c702fcaa56f1678cb5e16fec50680bdef084860abd67221d793c3e16fc5415ad",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeries.olean.private": "21274b1dacb37545997469fb0047a651de326c8aa83d098b5e434ae9e4911444",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeries.olean.server": "acfd0d6a616443359941a4589957be54862dea926a790219da70fb3b00aaa7f2",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeriesAnalytic.olean": "f8dbf6d76dfc4b3e6ad430961bdac51c97fec34474a631fdb4dabe7344f69974",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeriesAnalytic.olean.private": "aa1f06500ef812ffb65bb9a556dd1fb6f88739f382d22340894e31960081bc61",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeriesAnalytic.olean.server": "ba5d3bd3f16f9b38c76630a30124140a9493a0aeb17dd15d5c4f0facf19a95f2",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeriesCoefficients.olean": "09a74be352e04049d6130552543d4da49f756309ad168e9ba1779c560456731f",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeriesCoefficients.olean.private": "3b6b04ab4827ebb8be125caea75c420b6cdda2908eadf48d727a790c48d564f4",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSeriesCoefficients.olean.server": "89b1790028ccf11c1da6d1e598f33646f558b90a8100f5d74faee15b22b6037b",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSignPreservation.olean": "6e392fd3d51b8446486a2083e503351814b6fcaf8f2e507dc69360deee24659a",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSignPreservation.olean.private": "7236faeb7e75df69f9a1a350e4c3f95968449bc796dc28403121c56119ee870f",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigSignPreservation.olean.server": "8fde972e97b819bea305dfce6c9169e58bf86a95b2855468b27b114a6a2d70f5",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigWitness.olean": "4497257f4b63a00235f700f8ee21172306b64705d64a97d0ac024eb5f86a10ca",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigWitness.olean.private": "faf4fa919b05be1dba9b1bfccf14d3592e84db4784c20d1d458a54f04833245d",
+    "lean/.lake/build/lib/lean/Conjectures/GrochenigWitness.olean.server": "756639ff6a8ff1e7f68bb43b23df714aacc1464838dd2c4f60bea5228cb858cd",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensity.olean": "ea2cb26e2578acbf61226b2fdd783dab9ccad1818e5298f79578df9c53966f65",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensity.olean.private": "ef5e97d57b18b64d032aa4129453fc4bc96a74d3153cd1a93aee29bd60215a65",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensity.olean.server": "6dfaa8d5fbe77a2d0edcca2bb594b2b8368b6cbae079b32b42680e745cd1a952",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean": "c9022b105611f512ce8f75ea6dbc647d81d58e91d4ba91624f03bc5c3b9ed2b8",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean.private": "2fb47cb9b8441e25b10a7796d98697fb47eb5bb324786a3b616b0a278d4d37fb",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean.server": "d3f4d5a269260384adf2bd753ab1148d3c6b8a948a6d8f6d9818e10331f168c5",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean": "c8b0afd7b9baa534b6ec083fe09802dae65e957edfbca16db6c6d2690f97790e",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean.private": "c07b6db9c3819a8255565c979aa88fbfe8a78c8432493f45a595e8b363419340",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean.server": "67878d276238be16e59654c57b9091f26e29c6fb7737206248f557975b5f5855",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskian.olean": "4888f5e82ff956450b1481a960c79ed80763013d60646da359bcd2bec1c60e7c",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskian.olean.private": "0c46ddcc548ea7a500377e17f612e21ed088d0f3782e4470867a59983c940ada",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskian.olean.server": "242e02118188a6fa85a67f346468f449dd2b70383999c0df35e4a66102b3b299",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianDeterminants.olean": "e4407e0a2429086f949b119fa0ccac7df6535acdd65d2125c4e1501e23aed897",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianDeterminants.olean.private": "fd77d4330d0c87a1f3b33be0bf57592efd3c16d8a1cfef05b91b306cd281cd8e",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianDeterminants.olean.server": "349c9aa517e355e90124dc8c9ef676d5ee6379be2b2877d64255192becdc7e5a",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianJets.olean": "683e3e927059d59ef8e16f8f25fece72c6b7eea8e721a2e3d3120b3006c892c1",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianJets.olean.private": "617a090aec559d48aa40b0592a0c38c7037c522c73f2c2eeb67a26e672fd48dc",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianJets.olean.server": "d9d0630ffc24e7ac83fc3c8d7729d01c994c41bbf0457ca4aefbeae7cace4a0d"
+  },
+  "repository_control_sha256": {
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "scripts/audit_lean_owned_extension.py": "6b520a346907fe9e8a7c025daa9a9a831ec8188aab26014443bb760f557f3bca",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/plan_accepted_lean.py": "608243da7a46971a3b00c6f04854fc9a7ce3cb1534309bd8221c4a53f5f10842"
+  },
+  "additional_control_sha256": {
+    "/workspace/scratch/17b12d3ee06e/run_grochenig_gate.py": "64307ae7fa6a717b7e85643b93a7deb8d68d565b60d61d3e85fb08532bde2e28",
+    "/workspace/scratch/17b12d3ee06e/grochenig-complete-obligations.json": "07cf115513419e739ee97fae3e5d4ea22f7d72a28392c57267913d053a367bab",
+    "/workspace/scratch/17b12d3ee06e/grochenig-complete-inventory.json": "bfa2ee6bc2c272618a4e04b66fef8aa43de1cde458dd67b51c27e905e1268a77",
+    "/workspace/scratch/17b12d3ee06e/GrochenigCompleteOwnedAudit.lean": "8870c5c33976fca0fd89c53f2b6e9dc46a7659bbeaff0b9400ff557f442fc076",
+    "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/libleanshared.so": "efef27df56f2197139afe12f1a2b63913a05f1aba81ce88824c44100431ed8c4",
+    "/workspace/scratch/17b12d3ee06e/grochenig-owned-required-endpoints.json": "abc013482dc4af84c16683cedbffde56f019f10c1566e6d9ec23cd20f96e6179",
+    "/workspace/scratch/17b12d3ee06e/run_kvz_gate.py": "67c9ce757cf17c77a19e380c33b82113ea0fca3ff895724d00c670124a3b5c85"
+  },
+  "sources_and_objects_unchanged_since_frozen_inventory": true,
+  "all_owned_declarations_audited": true,
+  "exact_owned_raw_private_visibility": true,
+  "exact_imported_project_closure": true,
+  "current_raw_audit_log_revalidated": true,
+  "strict_source_module_count": 20,
+  "axiom_audit": {
+    "tag": "passed",
+    "imported_modules": 20,
+    "owned_modules": 20,
+    "declarations": 351,
+    "theorems": 310,
+    "private_declarations": 78,
+    "raw_declarations": 351,
+    "required_theorems": 157,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "combined_repository_gate": false,
+  "hosted_validation_claimed": false,
+  "commands": [
+    {
+      "label": "strict-source",
+      "module": "Conjectures.Grochenig",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/objects/Conjectures/Grochenig.olean",
+        "Conjectures/Grochenig.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "b8ee726fa10104c780ab9944fd56908dc40bebca7fe4d5893fff04459f5950b3",
+      "bound_object_parts": {
+        ".olean": "8f6efbd362dc520519cddf92b74e00819c595ca354e01be573045483dface9b4",
+        ".olean.private": "dc59057b7bd0de0dc49c0759300b567a281084dcdae36784cef928980c4651b9",
+        ".olean.server": "f271a5f07d389fbe7467c450702976accabd4e90d1cf12341e6dacafb5c749f0"
+      },
+      "log": "strict-sources/Grochenig/strict.log",
+      "raw_receipt": "strict-sources/Grochenig/receipt.json",
+      "raw_receipt_sha256": "3d5b2b5802e41a5c5b983579a2c82f6d2584a0f17bb95b0b52cef93b559e16f4",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.Grochenig",
+        "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/manifest.json",
+        "log": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/Final.log",
+        "result_pointer": "/modules/2",
+        "fields": {
+          "command": "/modules/2/command",
+          "cwd": "/cwd",
+          "exit_code": "/modules/2/exit_status",
+          "source_sha256": "/modules/2/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/modules/2/output_objects/0/sha256",
+          ".olean.private": "/modules/2/output_objects/1/sha256",
+          ".olean.server": "/modules/2/output_objects/2/sha256"
+        },
+        "assertions": {
+          "/status": "passed",
+          "/modules/2/status": "passed",
+          "/modules/2/source_unchanged": true,
+          "/modules/2/dependencies_unchanged": true,
+          "/modules/2/controls_unchanged": true,
+          "/builder_sha256": "e330d59a5c3c49ad28bbec8221616a4cd9b9081eb47762fca76189881722ccbe"
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/build_root_grochenig.py"
+        ],
+        "provenance": "Original fresh staged strict build with recorded source/dependency/control invariance and all three installed object hashes."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigBlocks",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/objects/Conjectures/GrochenigBlocks.olean",
+        "Conjectures/GrochenigBlocks.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "0eb4d08a0922b80def3beb488e31e86e9f058ce29c42fd678bec3cccb04c80df",
+      "bound_object_parts": {
+        ".olean": "3f116900eecc411c616d619b573066c6bb896a54d8506d20e9c7d999b4f5b185",
+        ".olean.private": "6d8ecb334b6681ed56424a63ac1e28f2fb7144e3f356d1a34cacb541f99b2689",
+        ".olean.server": "490559d09d3ab3ad49a497669ffa9960ca93ba67dd1ea1eacc729ca1016f2cb6"
+      },
+      "log": "strict-sources/GrochenigBlocks/strict.log",
+      "raw_receipt": "strict-sources/GrochenigBlocks/receipt.json",
+      "raw_receipt_sha256": "d9ba8c411be5fd0810aff316d5511bca4119962903e020bef58a2c429bd0ecdc",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigBlocks",
+        "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/receipt.json",
+        "log": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/strict.log",
+        "result_pointer": "",
+        "fields": {
+          "command": "/command",
+          "cwd": "/cwd",
+          "exit_code": "/exit_status",
+          "source_sha256": "/inputs_after/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/installed_output_objects/0/sha256",
+          ".olean.private": "/installed_output_objects/1/sha256",
+          ".olean.server": "/installed_output_objects/2/sha256"
+        },
+        "assertions": {
+          "/strict_source_pass": true,
+          "/inputs_unchanged": true,
+          "/interrupted": false,
+          "/post_build_errors": []
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/plan.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/runner.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/required-endpoints.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/summary.json"
+        ]
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigBlocksAlgebra",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/01-GrochenigBlocksAlgebra/objects/Conjectures/GrochenigBlocksAlgebra.olean",
+        "Conjectures/GrochenigBlocksAlgebra.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "c98b33bde349acf73dd8a2377a21b58d1aacc93288b32e4110da5136c4e672a0",
+      "bound_object_parts": {
+        ".olean": "7e031949bb16bb98811122dd720de4dba9f913187a70218697e9a485e1d37788",
+        ".olean.private": "947514bbfaaf358575a706b432cfb387959e99ff809c51a7cb48c6f867ba21c2",
+        ".olean.server": "7035b30a0a87f50f2aaf38a4d1a8d3e98ea701b98691b32a894d186a745eea8c"
+      },
+      "log": "strict-sources/GrochenigBlocksAlgebra/strict.log",
+      "raw_receipt": "strict-sources/GrochenigBlocksAlgebra/receipt.json",
+      "raw_receipt_sha256": "cd648e40d8819918c19ab294c84bb97cfeb4c0883b4b39575a59e9eed26ebad5",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigBlocksAlgebra",
+        "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/01-GrochenigBlocksAlgebra/receipt.json",
+        "log": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/01-GrochenigBlocksAlgebra/strict.log",
+        "result_pointer": "",
+        "fields": {
+          "command": "/command",
+          "cwd": "/cwd",
+          "exit_code": "/exit_status",
+          "source_sha256": "/inputs_after/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/installed_output_objects/0/sha256",
+          ".olean.private": "/installed_output_objects/1/sha256",
+          ".olean.server": "/installed_output_objects/2/sha256"
+        },
+        "assertions": {
+          "/strict_source_pass": true,
+          "/inputs_unchanged": true,
+          "/interrupted": false,
+          "/post_build_errors": []
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/plan.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/runner.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/required-endpoints.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/summary.json"
+        ]
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigDensity",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180223.659278Z-20754bdc33f4/01-GrochenigDensity/objects/Conjectures/GrochenigDensity.olean",
+        "Conjectures/GrochenigDensity.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "00a4af4b0a1360738fe6d9ba8e62b4d6ae005e5925aef42c00e460048748650f",
+      "bound_object_parts": {
+        ".olean": "c41be1900de809e747fd0a6cc72d1327737f8a90f15a2c4d73c7e6ba4c6297e6",
+        ".olean.private": "e9d1f25b51e274198193a8a9f4bdd627f877ad7cabb2839554fdff168afd88e6",
+        ".olean.server": "e77b513ed546fad459e87c1560ad5375d70d4e97c8d3488e86d48701df84e155"
+      },
+      "log": "strict-sources/GrochenigDensity/strict.log",
+      "raw_receipt": "strict-sources/GrochenigDensity/receipt.json",
+      "raw_receipt_sha256": "0a296c6a76be5431ee92d5c175e911c7b36efe71e8e03168a2436d5467287994",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigDensity",
+        "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180223.659278Z-20754bdc33f4/01-GrochenigDensity/receipt.json",
+        "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180223.659278Z-20754bdc33f4/01-GrochenigDensity/strict.log",
+        "result_pointer": "",
+        "fields": {
+          "command": "/command",
+          "cwd": "/cwd",
+          "exit_code": "/exit_status",
+          "source_sha256": "/inputs_after/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/installed_output_objects/0/sha256",
+          ".olean.private": "/installed_output_objects/1/sha256",
+          ".olean.server": "/installed_output_objects/2/sha256"
+        },
+        "assertions": {
+          "/strict_source_pass": true,
+          "/inputs_unchanged": true,
+          "/interrupted": false,
+          "/post_build_errors": []
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180223.659278Z-20754bdc33f4/plan.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180223.659278Z-20754bdc33f4/runner.json"
+        ],
+        "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigDensityDefinitions",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/01-GrochenigDensityDefinitions/objects/Conjectures/GrochenigDensityDefinitions.olean",
+        "Conjectures/GrochenigDensityDefinitions.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "98bea627b013fae7f5fe91f1a50d21819c984425b91db791d1a600adf5e8e04c",
+      "bound_object_parts": {
+        ".olean": "ff36adbb081fd2c748108d46673ab891a37796d5ee65cb8bff9e0fe1c8e98c76",
+        ".olean.private": "9e8f00204c78ad0cba7fbbe07eb1815f8c0206fb573862684fccbadcfaac087f",
+        ".olean.server": "78984426818578b65691e3b53516c473f7340fafbc3e44daf5ba9ac9421351ae"
+      },
+      "log": "strict-sources/GrochenigDensityDefinitions/strict.log",
+      "raw_receipt": "strict-sources/GrochenigDensityDefinitions/receipt.json",
+      "raw_receipt_sha256": "ff4302078c98b75a1451ee9aa74a8c598042bd6be9a6f93204078438576b8027",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigDensityDefinitions",
+        "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/01-GrochenigDensityDefinitions/receipt.json",
+        "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/01-GrochenigDensityDefinitions/strict.log",
+        "result_pointer": "",
+        "fields": {
+          "command": "/command",
+          "cwd": "/cwd",
+          "exit_code": "/exit_status",
+          "source_sha256": "/inputs_after/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/installed_output_objects/0/sha256",
+          ".olean.private": "/installed_output_objects/1/sha256",
+          ".olean.server": "/installed_output_objects/2/sha256"
+        },
+        "assertions": {
+          "/strict_source_pass": true,
+          "/inputs_unchanged": true,
+          "/interrupted": false,
+          "/post_build_errors": []
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/plan.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/runner.json"
+        ],
+        "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigDensityLocalFiniteness",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/02-GrochenigDensityLocalFiniteness/objects/Conjectures/GrochenigDensityLocalFiniteness.olean",
+        "Conjectures/GrochenigDensityLocalFiniteness.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "ce36bcdece805759be169abd581b28bb4d1084f13233dd76dcf0ad8caa542909",
+      "bound_object_parts": {
+        ".olean": "db6670ec108d747e84a8ecd67a2a2313d49d4b9c68748cbf65e8cd97a4698919",
+        ".olean.private": "9c29cdd7e8919d7d60e5732d7272d8d168cc02aac8c1ea15920df0a495e101a0",
+        ".olean.server": "1183d03b6e310bc43c80b10beb487c3ce17aa83ae9545d33be945ff038178f3f"
+      },
+      "log": "strict-sources/GrochenigDensityLocalFiniteness/strict.log",
+      "raw_receipt": "strict-sources/GrochenigDensityLocalFiniteness/receipt.json",
+      "raw_receipt_sha256": "b6a195ed9004361c1883cb3dd734bd9428e3b0e0a732041ec53bcbbf125e1be8",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigDensityLocalFiniteness",
+        "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/02-GrochenigDensityLocalFiniteness/receipt.json",
+        "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/02-GrochenigDensityLocalFiniteness/strict.log",
+        "result_pointer": "",
+        "fields": {
+          "command": "/command",
+          "cwd": "/cwd",
+          "exit_code": "/exit_status",
+          "source_sha256": "/inputs_after/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/installed_output_objects/0/sha256",
+          ".olean.private": "/installed_output_objects/1/sha256",
+          ".olean.server": "/installed_output_objects/2/sha256"
+        },
+        "assertions": {
+          "/strict_source_pass": true,
+          "/inputs_unchanged": true,
+          "/interrupted": false,
+          "/post_build_errors": []
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/plan.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/runner.json"
+        ],
+        "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigGaussian",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180412.260177Z-f3bfd955be29/01-GrochenigGaussian/objects/Conjectures/GrochenigGaussian.olean",
+        "Conjectures/GrochenigGaussian.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "cf1ff33b5641577832c27cf3c5613c18c338bac492df84383ccaaf7bbe9e3289",
+      "bound_object_parts": {
+        ".olean": "5bb37683649473a6994298753c1b1c5584c9b221ef14e46567490b2d46a8f07a",
+        ".olean.private": "f67892cbb2db4fcee2c9c2d4a13e28dcdc1a0700dd0362525af9d418044bc524",
+        ".olean.server": "9e717de40e3a62b1a1f7257c925d5ef04a9f5c1379adec5a064fe917716241b1"
+      },
+      "log": "strict-sources/GrochenigGaussian/strict.log",
+      "raw_receipt": "strict-sources/GrochenigGaussian/receipt.json",
+      "raw_receipt_sha256": "2489eb4b044db064a558153799d441010694d039ab430b3cc2f73fe8c58789e1",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigGaussian",
+        "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180412.260177Z-f3bfd955be29/01-GrochenigGaussian/receipt.json",
+        "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180412.260177Z-f3bfd955be29/01-GrochenigGaussian/strict.log",
+        "result_pointer": "",
+        "fields": {
+          "command": "/command",
+          "cwd": "/cwd",
+          "exit_code": "/exit_status",
+          "source_sha256": "/inputs_after/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/installed_output_objects/0/sha256",
+          ".olean.private": "/installed_output_objects/1/sha256",
+          ".olean.server": "/installed_output_objects/2/sha256"
+        },
+        "assertions": {
+          "/strict_source_pass": true,
+          "/inputs_unchanged": true,
+          "/interrupted": false,
+          "/post_build_errors": []
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180412.260177Z-f3bfd955be29/plan.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180412.260177Z-f3bfd955be29/runner.json"
+        ],
+        "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigGaussianBasic",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175236.544046Z-e2a66beed1f2/01-GrochenigGaussianBasic/objects/Conjectures/GrochenigGaussianBasic.olean",
+        "Conjectures/GrochenigGaussianBasic.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "999d69f2fde31728667399db24a3fca1a4d9fcac69257d0a4405f604463669ae",
+      "bound_object_parts": {
+        ".olean": "3e7cd6953376941607bac4983065762056f2d04b35134f2d3982b7c5dec92ad2",
+        ".olean.private": "691b44e2e79b7024efd9fb9623ad5c9a154037233cfd78a9b8df06b0ba043b4b",
+        ".olean.server": "7ef9433b3e2736c074dc8e9c1a900bc18f237b5246c91650c8e97dacd30b0868"
+      },
+      "log": "strict-sources/GrochenigGaussianBasic/strict.log",
+      "raw_receipt": "strict-sources/GrochenigGaussianBasic/receipt.json",
+      "raw_receipt_sha256": "3f57cb2229c943882089753266c94f786988ac065cfecf871a0d310b49a8531a",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigGaussianBasic",
+        "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175236.544046Z-e2a66beed1f2/01-GrochenigGaussianBasic/receipt.json",
+        "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175236.544046Z-e2a66beed1f2/01-GrochenigGaussianBasic/strict.log",
+        "result_pointer": "",
+        "fields": {
+          "command": "/command",
+          "cwd": "/cwd",
+          "exit_code": "/exit_status",
+          "source_sha256": "/inputs_after/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/installed_output_objects/0/sha256",
+          ".olean.private": "/installed_output_objects/1/sha256",
+          ".olean.server": "/installed_output_objects/2/sha256"
+        },
+        "assertions": {
+          "/strict_source_pass": true,
+          "/inputs_unchanged": true,
+          "/interrupted": false,
+          "/post_build_errors": []
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175236.544046Z-e2a66beed1f2/plan.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175236.544046Z-e2a66beed1f2/runner.json"
+        ],
+        "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigSeparation",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T181457.931642Z-e45f6428e084/01-GrochenigSeparation/objects/Conjectures/GrochenigSeparation.olean",
+        "Conjectures/GrochenigSeparation.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "66bffdcb09f68da1de53494413717e2d2a15d075b09814b66db4518b588fe8fc",
+      "bound_object_parts": {
+        ".olean": "6738514375cc48ad345e15360fcef19d48ed372a1303bae00b8b8e3c55e79dac",
+        ".olean.private": "c9e2f5374fef3c4ca5714d85ca238036acb8d8d7167b35330a12c3f3028dc1fe",
+        ".olean.server": "7968a692e9fd95afd3ae1ff53b479100be600e0ac0f2e8742bfbe27038dc9639"
+      },
+      "log": "strict-sources/GrochenigSeparation/strict.log",
+      "raw_receipt": "strict-sources/GrochenigSeparation/receipt.json",
+      "raw_receipt_sha256": "d0850de61f80d6f9d7ebe9c1b264978f9afdfc8b581c5433f1252172b678ca10",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigSeparation",
+        "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T181457.931642Z-e45f6428e084/01-GrochenigSeparation/receipt.json",
+        "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T181457.931642Z-e45f6428e084/01-GrochenigSeparation/strict.log",
+        "result_pointer": "",
+        "fields": {
+          "command": "/command",
+          "cwd": "/cwd",
+          "exit_code": "/exit_status",
+          "source_sha256": "/inputs_after/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/installed_output_objects/0/sha256",
+          ".olean.private": "/installed_output_objects/1/sha256",
+          ".olean.server": "/installed_output_objects/2/sha256"
+        },
+        "assertions": {
+          "/strict_source_pass": true,
+          "/inputs_unchanged": true,
+          "/interrupted": false,
+          "/post_build_errors": []
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T181457.931642Z-e45f6428e084/plan.json",
+          "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T181457.931642Z-e45f6428e084/runner.json"
+        ],
+        "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigSeries",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/GrochenigSeries.olean",
+        "Conjectures/GrochenigSeries.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "471d41488ec9dbc5a919af091520443a72bb1f2048c65918edb7a98f41d2010d",
+      "bound_object_parts": {
+        ".olean": "c702fcaa56f1678cb5e16fec50680bdef084860abd67221d793c3e16fc5415ad",
+        ".olean.private": "21274b1dacb37545997469fb0047a651de326c8aa83d098b5e434ae9e4911444",
+        ".olean.server": "acfd0d6a616443359941a4589957be54862dea926a790219da70fb3b00aaa7f2"
+      },
+      "log": "strict-sources/GrochenigSeries/strict.log",
+      "raw_receipt": "strict-sources/GrochenigSeries/receipt.json",
+      "raw_receipt_sha256": "bd13c998f6c8916de7e4f8b03932637d64495a84a0b4867e83ffa60a3b3bce85",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigSeries",
+        "receipt": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/manifest.json",
+        "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/GrochenigSeries.log",
+        "result_pointer": "/modules/1",
+        "fields": {
+          "command": "/modules/1/command",
+          "cwd": "/cwd",
+          "exit_code": "/modules/1/exit_status",
+          "source_sha256": "/modules/1/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/modules/1/output_objects/0/sha256",
+          ".olean.private": "/modules/1/output_objects/1/sha256",
+          ".olean.server": "/modules/1/output_objects/2/sha256"
+        },
+        "assertions": {
+          "/status": "passed",
+          "/controls_unchanged": true,
+          "/sources_unchanged": true,
+          "/outputs_unchanged": true,
+          "/modules/1/status": "passed",
+          "/modules/1/source_unchanged": true,
+          "/modules/1/dependencies_unchanged": true,
+          "/builder_sha256": "a8b70714cf2c453276f3e4e58ee04edc414d2d358e4966d8ee20d771e7f34966"
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/grochenig-series-frozen.json",
+          "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/builder.py"
+        ],
+        "provenance": "Original sequential strict manifest, unchanged source/dependency checks and all three output hashes; direct-child wait4 metrics."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigSeriesAnalytic",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/GrochenigSeriesAnalytic.olean",
+        "Conjectures/GrochenigSeriesAnalytic.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "d33242cc8e4a8b1e1b9b47d84fb2d5e60f78ea32d690a34a4be1f3f12c8ada4f",
+      "bound_object_parts": {
+        ".olean": "f8dbf6d76dfc4b3e6ad430961bdac51c97fec34474a631fdb4dabe7344f69974",
+        ".olean.private": "aa1f06500ef812ffb65bb9a556dd1fb6f88739f382d22340894e31960081bc61",
+        ".olean.server": "ba5d3bd3f16f9b38c76630a30124140a9493a0aeb17dd15d5c4f0facf19a95f2"
+      },
+      "log": "strict-sources/GrochenigSeriesAnalytic/strict.log",
+      "raw_receipt": "strict-sources/GrochenigSeriesAnalytic/receipt.json",
+      "raw_receipt_sha256": "70276101128fa96bc722114f6446c9656ee6fc56bf109f591c9b13db9aff2271",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigSeriesAnalytic",
+        "receipt": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183353.135336Z/manifest.json",
+        "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183353.135336Z/GrochenigSeriesAnalytic.log",
+        "result_pointer": "/modules/0",
+        "fields": {
+          "command": "/modules/0/command",
+          "cwd": "/cwd",
+          "exit_code": "/modules/0/exit_status",
+          "source_sha256": "/modules/0/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/modules/0/output_objects/0/sha256",
+          ".olean.private": "/modules/0/output_objects/1/sha256",
+          ".olean.server": "/modules/0/output_objects/2/sha256"
+        },
+        "assertions": {
+          "/status": "failed",
+          "/modules/0/status": "passed",
+          "/modules/0/source_unchanged": true,
+          "/modules/0/dependencies_unchanged": true,
+          "/builder_sha256": "a8b70714cf2c453276f3e4e58ee04edc414d2d358e4966d8ee20d771e7f34966",
+          "/control_sha256/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+          "/control_sha256/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+          "/control_sha256/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+          "/modules/0/diagnostic_bytes": 0
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/grochenig-series-frozen.json",
+          "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183353.135336Z/builder.py"
+        ],
+        "provenance": "Individually passed SeriesAnalytic record in a sequential queue that failed later on SeriesCoefficients. Only this passed module is selected. Its recorded source and dependency invariance, empty log, all three output hashes and wait4 metrics are retained. The failed queue has no final all-modules invariance fields; none are claimed. Recorded package-control hashes match the current complete gate freeze."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigSeriesCoefficients",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/GrochenigSeriesCoefficients.olean",
+        "Conjectures/GrochenigSeriesCoefficients.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "61a1d1bda7cb8f9824c5004949c0799f7514f18892ddf4b3d60e07225e0faaec",
+      "bound_object_parts": {
+        ".olean": "09a74be352e04049d6130552543d4da49f756309ad168e9ba1779c560456731f",
+        ".olean.private": "3b6b04ab4827ebb8be125caea75c420b6cdda2908eadf48d727a790c48d564f4",
+        ".olean.server": "89b1790028ccf11c1da6d1e598f33646f558b90a8100f5d74faee15b22b6037b"
+      },
+      "log": "strict-sources/GrochenigSeriesCoefficients/strict.log",
+      "raw_receipt": "strict-sources/GrochenigSeriesCoefficients/receipt.json",
+      "raw_receipt_sha256": "bd13c998f6c8916de7e4f8b03932637d64495a84a0b4867e83ffa60a3b3bce85",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigSeriesCoefficients",
+        "receipt": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/manifest.json",
+        "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/GrochenigSeriesCoefficients.log",
+        "result_pointer": "/modules/0",
+        "fields": {
+          "command": "/modules/0/command",
+          "cwd": "/cwd",
+          "exit_code": "/modules/0/exit_status",
+          "source_sha256": "/modules/0/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/modules/0/output_objects/0/sha256",
+          ".olean.private": "/modules/0/output_objects/1/sha256",
+          ".olean.server": "/modules/0/output_objects/2/sha256"
+        },
+        "assertions": {
+          "/status": "passed",
+          "/controls_unchanged": true,
+          "/sources_unchanged": true,
+          "/outputs_unchanged": true,
+          "/modules/0/status": "passed",
+          "/modules/0/source_unchanged": true,
+          "/modules/0/dependencies_unchanged": true,
+          "/builder_sha256": "a8b70714cf2c453276f3e4e58ee04edc414d2d358e4966d8ee20d771e7f34966"
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/grochenig-series-frozen.json",
+          "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/builder.py"
+        ],
+        "provenance": "Original sequential strict manifest, unchanged source/dependency checks and all three output hashes; direct-child wait4 metrics."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigSignPreservation",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/objects/Conjectures/GrochenigSignPreservation.olean",
+        "Conjectures/GrochenigSignPreservation.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "44114add68dcb2149e033e8928fc254ddc9f6550dd5c4021c7a42572ad750500",
+      "bound_object_parts": {
+        ".olean": "6e392fd3d51b8446486a2083e503351814b6fcaf8f2e507dc69360deee24659a",
+        ".olean.private": "7236faeb7e75df69f9a1a350e4c3f95968449bc796dc28403121c56119ee870f",
+        ".olean.server": "8fde972e97b819bea305dfce6c9169e58bf86a95b2855468b27b114a6a2d70f5"
+      },
+      "log": "strict-sources/GrochenigSignPreservation/strict.log",
+      "raw_receipt": "strict-sources/GrochenigSignPreservation/receipt.json",
+      "raw_receipt_sha256": "3d5b2b5802e41a5c5b983579a2c82f6d2584a0f17bb95b0b52cef93b559e16f4",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigSignPreservation",
+        "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/manifest.json",
+        "log": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/SignPreservation.log",
+        "result_pointer": "/modules/0",
+        "fields": {
+          "command": "/modules/0/command",
+          "cwd": "/cwd",
+          "exit_code": "/modules/0/exit_status",
+          "source_sha256": "/modules/0/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/modules/0/output_objects/0/sha256",
+          ".olean.private": "/modules/0/output_objects/1/sha256",
+          ".olean.server": "/modules/0/output_objects/2/sha256"
+        },
+        "assertions": {
+          "/status": "passed",
+          "/modules/0/status": "passed",
+          "/modules/0/source_unchanged": true,
+          "/modules/0/dependencies_unchanged": true,
+          "/modules/0/controls_unchanged": true,
+          "/builder_sha256": "e330d59a5c3c49ad28bbec8221616a4cd9b9081eb47762fca76189881722ccbe"
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/build_root_grochenig.py"
+        ],
+        "provenance": "Original fresh staged strict build with recorded source/dependency/control invariance and all three installed object hashes."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.GrochenigWitness",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/objects/Conjectures/GrochenigWitness.olean",
+        "Conjectures/GrochenigWitness.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "4929a20e7f23cc725da2b15643087077234ee28990f3eba10626ecdc1b9119e0",
+      "bound_object_parts": {
+        ".olean": "4497257f4b63a00235f700f8ee21172306b64705d64a97d0ac024eb5f86a10ca",
+        ".olean.private": "faf4fa919b05be1dba9b1bfccf14d3592e84db4784c20d1d458a54f04833245d",
+        ".olean.server": "756639ff6a8ff1e7f68bb43b23df714aacc1464838dd2c4f60bea5228cb858cd"
+      },
+      "log": "strict-sources/GrochenigWitness/strict.log",
+      "raw_receipt": "strict-sources/GrochenigWitness/receipt.json",
+      "raw_receipt_sha256": "3d5b2b5802e41a5c5b983579a2c82f6d2584a0f17bb95b0b52cef93b559e16f4",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.GrochenigWitness",
+        "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/manifest.json",
+        "log": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/Witness.log",
+        "result_pointer": "/modules/1",
+        "fields": {
+          "command": "/modules/1/command",
+          "cwd": "/cwd",
+          "exit_code": "/modules/1/exit_status",
+          "source_sha256": "/modules/1/source/sha256"
+        },
+        "object_parts": {
+          ".olean": "/modules/1/output_objects/0/sha256",
+          ".olean.private": "/modules/1/output_objects/1/sha256",
+          ".olean.server": "/modules/1/output_objects/2/sha256"
+        },
+        "assertions": {
+          "/status": "passed",
+          "/modules/1/status": "passed",
+          "/modules/1/source_unchanged": true,
+          "/modules/1/dependencies_unchanged": true,
+          "/modules/1/controls_unchanged": true,
+          "/builder_sha256": "e330d59a5c3c49ad28bbec8221616a4cd9b9081eb47762fca76189881722ccbe"
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/build_root_grochenig.py"
+        ],
+        "provenance": "Original fresh staged strict build with recorded source/dependency/control invariance and all three installed object hashes."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaDensity",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaDensity.olean",
+        "Conjectures/KVZGammaDensity.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "a0a003fbb70eabbdf9065c3597e0ac85ec2ef662f1b26a6d691671f782c7e25b",
+      "bound_object_parts": {
+        ".olean": "ea2cb26e2578acbf61226b2fdd783dab9ccad1818e5298f79578df9c53966f65"
+      },
+      "log": "strict-sources/KVZGammaDensity/strict.log",
+      "raw_receipt": "strict-sources/KVZGammaDensity/receipt.json",
+      "raw_receipt_sha256": "72559c2a65ce08f8840f2b7fdb61c316daa3997ffc83c549352e83ef503d8c32",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.KVZGammaDensity",
+        "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaDensity.metrics.json",
+        "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaDensity.log",
+        "result_pointer": "",
+        "fields": {
+          "command": "/command",
+          "cwd": "/cwd",
+          "exit_code": "/exit_status",
+          "source_sha256": "/source_sha256"
+        },
+        "object_parts": {
+          ".olean": "/object_sha256_after"
+        },
+        "assertions": {
+          "/exit_status": 0,
+          "/log_bytes": 0
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+        ],
+        "provenance": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+        "source_hash_timing": "Recorded after compilation; this historical record does not contain a pre-build source hash.",
+        "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaDensityBasic",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean",
+        "Conjectures/KVZGammaDensityBasic.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "b8176f814bd3676d9cc0916794004a75ee39d4bf0e81cc2f57e7d1a1cce38e0c",
+      "bound_object_parts": {
+        ".olean": "c9022b105611f512ce8f75ea6dbc647d81d58e91d4ba91624f03bc5c3b9ed2b8"
+      },
+      "log": "strict-sources/KVZGammaDensityBasic/strict.log",
+      "raw_receipt": "strict-sources/KVZGammaDensityBasic/receipt.json",
+      "raw_receipt_sha256": "8441a691b75b955444c75feb0b8296d0c5bb9104ecb73119d063c1e64b60eac9",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.KVZGammaDensityBasic",
+        "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaDensityBasic.metrics.json",
+        "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaDensityBasic.log",
+        "result_pointer": "",
+        "fields": {
+          "command": "/command",
+          "cwd": "/cwd",
+          "exit_code": "/exit_status",
+          "source_sha256": "/source_sha256"
+        },
+        "object_parts": {
+          ".olean": "/object_sha256_after"
+        },
+        "assertions": {
+          "/exit_status": 0,
+          "/log_bytes": 0
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+        ],
+        "provenance": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+        "source_hash_timing": "Recorded after compilation; this historical record does not contain a pre-build source hash.",
+        "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaPowerAlgebra",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean",
+        "Conjectures/KVZGammaPowerAlgebra.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "6cfbf16a587692883bf53870c936ba5a0f815cac96ce4079b189b7369fee4d71",
+      "bound_object_parts": {
+        ".olean": "c8b0afd7b9baa534b6ec083fe09802dae65e957edfbca16db6c6d2690f97790e"
+      },
+      "log": "strict-sources/KVZGammaPowerAlgebra/strict.log",
+      "raw_receipt": "strict-sources/KVZGammaPowerAlgebra/receipt.json",
+      "raw_receipt_sha256": "2dae3c60eabed3e82b08dd1959ec00edb2bfdbb8305a06e78c4f1b6fb28c475d",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.KVZGammaPowerAlgebra",
+        "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaPowerAlgebra.metrics.json",
+        "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaPowerAlgebra.log",
+        "result_pointer": "",
+        "fields": {
+          "command": "/command",
+          "cwd": "/cwd",
+          "exit_code": "/exit_status",
+          "source_sha256": "/source_sha256"
+        },
+        "object_parts": {
+          ".olean": "/object_sha256_after"
+        },
+        "assertions": {
+          "/exit_status": 0,
+          "/log_bytes": 0
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+        ],
+        "provenance": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+        "source_hash_timing": "Recorded after compilation; this historical record does not contain a pre-build source hash.",
+        "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaWronskian",
+      "command": [
+        "timeout",
+        "600s",
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaWronskian.olean",
+        "Conjectures/KVZGammaWronskian.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "b652f8821c59d106d10cf93e74d5f21f5b9b5bd466055fdedccc14bbf5127fa1",
+      "bound_object_parts": {
+        ".olean": "4888f5e82ff956450b1481a960c79ed80763013d60646da359bcd2bec1c60e7c",
+        ".olean.private": "0c46ddcc548ea7a500377e17f612e21ed088d0f3782e4470867a59983c940ada",
+        ".olean.server": "242e02118188a6fa85a67f346468f449dd2b70383999c0df35e4a66102b3b299"
+      },
+      "log": "strict-sources/KVZGammaWronskian/strict.log",
+      "raw_receipt": "strict-sources/KVZGammaWronskian/receipt.json",
+      "raw_receipt_sha256": "48b153c21c0ad4921882f7d94d388183b2479b3ee3dfd3b93977a7fdf4ed6c21",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.KVZGammaWronskian",
+        "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+        "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskian.log",
+        "result_pointer": "/commands/2",
+        "fields": {
+          "command": "/commands/2/command",
+          "cwd": "/commands/2/working_directory",
+          "exit_code": "/commands/2/exit_code",
+          "source_sha256": "/source_sha256/lean~1Conjectures~1KVZGammaWronskian.lean"
+        },
+        "object_parts": {
+          ".olean": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskian.olean",
+          ".olean.private": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskian.olean.private",
+          ".olean.server": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskian.olean.server"
+        },
+        "assertions": {
+          "/status": "passed",
+          "/sources_and_objects_unchanged_since_frozen_inventory": true,
+          "/commands/2/pre_build_hashes_claimed": false,
+          "/commands/2/exit_code": 0
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskian.metrics.json",
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/wronskian-post-build-frozen.json",
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+        ],
+        "cwd_interpretation": "The published receipt records working_directory=lean relative to the repository root; run the preparer from that root.",
+        "provenance": "Original successful strict command, empty log and process metrics; the owning agent reported no later source edit. The separately dated post-build inventory matches the full gate freeze. Its hashes are current post-build measurements, not retrospective pre-build evidence.",
+        "resource_metrics_provenance": "Historical getrusage(RUSAGE_CHILDREN) high-water values are retained as upper bounds, not relabeled as direct-child wait4 measurements.",
+        "source_hash_timing": "The source and all three object bindings come from the published, separately dated post-build frozen inventory. No historical pre-build hash is claimed."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaWronskianDeterminants",
+      "command": [
+        "timeout",
+        "600s",
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaWronskianDeterminants.olean",
+        "Conjectures/KVZGammaWronskianDeterminants.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "30e5a47d7a37abb93bc198c121905e0b919074438e980ce7711ce38621ae4b86",
+      "bound_object_parts": {
+        ".olean": "e4407e0a2429086f949b119fa0ccac7df6535acdd65d2125c4e1501e23aed897",
+        ".olean.private": "fd77d4330d0c87a1f3b33be0bf57592efd3c16d8a1cfef05b91b306cd281cd8e",
+        ".olean.server": "349c9aa517e355e90124dc8c9ef676d5ee6379be2b2877d64255192becdc7e5a"
+      },
+      "log": "strict-sources/KVZGammaWronskianDeterminants/strict.log",
+      "raw_receipt": "strict-sources/KVZGammaWronskianDeterminants/receipt.json",
+      "raw_receipt_sha256": "48b153c21c0ad4921882f7d94d388183b2479b3ee3dfd3b93977a7fdf4ed6c21",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.KVZGammaWronskianDeterminants",
+        "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+        "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskianDeterminants.log",
+        "result_pointer": "/commands/0",
+        "fields": {
+          "command": "/commands/0/command",
+          "cwd": "/commands/0/working_directory",
+          "exit_code": "/commands/0/exit_code",
+          "source_sha256": "/source_sha256/lean~1Conjectures~1KVZGammaWronskianDeterminants.lean"
+        },
+        "object_parts": {
+          ".olean": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianDeterminants.olean",
+          ".olean.private": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianDeterminants.olean.private",
+          ".olean.server": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianDeterminants.olean.server"
+        },
+        "assertions": {
+          "/status": "passed",
+          "/sources_and_objects_unchanged_since_frozen_inventory": true,
+          "/commands/0/pre_build_hashes_claimed": false,
+          "/commands/0/exit_code": 0
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskianDeterminants.metrics.json",
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/wronskian-post-build-frozen.json",
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+        ],
+        "cwd_interpretation": "The published receipt records working_directory=lean relative to the repository root; run the preparer from that root.",
+        "provenance": "Original successful strict command, empty log and process metrics; the owning agent reported no later source edit. The separately dated post-build inventory matches the full gate freeze. Its hashes are current post-build measurements, not retrospective pre-build evidence.",
+        "resource_metrics_provenance": "Historical getrusage(RUSAGE_CHILDREN) high-water values are retained as upper bounds, not relabeled as direct-child wait4 measurements.",
+        "source_hash_timing": "The source and all three object bindings come from the published, separately dated post-build frozen inventory. No historical pre-build hash is claimed."
+      }
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaWronskianJets",
+      "command": [
+        "timeout",
+        "600s",
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaWronskianJets.olean",
+        "Conjectures/KVZGammaWronskianJets.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "source_sha256": "2c9200e33a25df6b36e7c1187fe6cf5ba1b85d5ea20befb8925c1f4af7298016",
+      "bound_object_parts": {
+        ".olean": "683e3e927059d59ef8e16f8f25fece72c6b7eea8e721a2e3d3120b3006c892c1",
+        ".olean.private": "617a090aec559d48aa40b0592a0c38c7037c522c73f2c2eeb67a26e672fd48dc",
+        ".olean.server": "d9d0630ffc24e7ac83fc3c8d7729d01c994c41bbf0457ca4aefbeae7cace4a0d"
+      },
+      "log": "strict-sources/KVZGammaWronskianJets/strict.log",
+      "raw_receipt": "strict-sources/KVZGammaWronskianJets/receipt.json",
+      "raw_receipt_sha256": "48b153c21c0ad4921882f7d94d388183b2479b3ee3dfd3b93977a7fdf4ed6c21",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_mapping": {
+        "module": "Conjectures.KVZGammaWronskianJets",
+        "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+        "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskianJets.log",
+        "result_pointer": "/commands/1",
+        "fields": {
+          "command": "/commands/1/command",
+          "cwd": "/commands/1/working_directory",
+          "exit_code": "/commands/1/exit_code",
+          "source_sha256": "/source_sha256/lean~1Conjectures~1KVZGammaWronskianJets.lean"
+        },
+        "object_parts": {
+          ".olean": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianJets.olean",
+          ".olean.private": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianJets.olean.private",
+          ".olean.server": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianJets.olean.server"
+        },
+        "assertions": {
+          "/status": "passed",
+          "/sources_and_objects_unchanged_since_frozen_inventory": true,
+          "/commands/1/pre_build_hashes_claimed": false,
+          "/commands/1/exit_code": 0
+        },
+        "supporting_files": [
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskianJets.metrics.json",
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/wronskian-post-build-frozen.json",
+          "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+        ],
+        "cwd_interpretation": "The published receipt records working_directory=lean relative to the repository root; run the preparer from that root.",
+        "provenance": "Original successful strict command, empty log and process metrics; the owning agent reported no later source edit. The separately dated post-build inventory matches the full gate freeze. Its hashes are current post-build measurements, not retrospective pre-build evidence.",
+        "resource_metrics_provenance": "Historical getrusage(RUSAGE_CHILDREN) high-water values are retained as upper bounds, not relabeled as direct-child wait4 measurements.",
+        "source_hash_timing": "The source and all three object bindings come from the published, separately dated post-build frozen inventory. No historical pre-build hash is claimed."
+      }
+    },
+    {
+      "label": "all-owned-axioms",
+      "working_directory": "lean",
+      "log": "audit.log",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "/workspace/scratch/17b12d3ee06e/GrochenigCompleteOwnedAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+      "started_utc": "2026-11-21T18:36:20.844379+00:00",
+      "elapsed_seconds": 7.551313484000275,
+      "returncode": 0,
+      "user_seconds": 6.629741,
+      "system_seconds": 0.8845839999999999,
+      "maxrss_kib": 1690088,
+      "log_bytes": 137733,
+      "status": "passed",
+      "log_sha256": "ce28d31c3ac5731798d390e229d70fd21853c11c01fc1b712574b0f089d8f033"
+    },
+    {
+      "label": "stock-kernel",
+      "working_directory": "lean",
+      "log": "kernel.log",
+      "command": [
+        "python3",
+        "../scripts/replay_lean.py",
+        "--root",
+        "Conjectures.Grochenig"
+      ],
+      "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+      "started_utc": "2026-11-21T18:36:48.872359+00:00",
+      "elapsed_seconds": 53.910792920998574,
+      "returncode": 0,
+      "user_seconds": 21.592872,
+      "system_seconds": 25.615069,
+      "maxrss_kib": 2704804,
+      "log_bytes": 1079,
+      "status": "passed",
+      "log_sha256": "7ebcf41e70b5e2ec0b402ef494917f72aab9824623d3a8c9835d81d48d3a9bdd"
+    }
+  ],
+  "scope": {
+    "proved": [
+      "One real coefficient sequence c on the integers is absolutely summable, has sum of absolute values 1, and has support on the even integers.",
+      "Its literal Gaussian shift sum f has the actual bounded-coefficient HasSum representation and belongs to the source V-infinity class.",
+      "The same f is nonzero and extends to an entire complex function; its real zero set is locally finite.",
+      "Using the literal source skipped-zero sign-change definition, D-plus(c)=1/2 while D-plus(Z(f)) is at least 1.",
+      "The source universal upper-density inequality is false; the Gaussian Polya-frequency property is proved inside the same exact closure."
+    ],
+    "not_claimed": [
+      "The separate lower-density inequality.",
+      "A combined repository gate or hosted validation of this checkpoint."
+    ]
+  },
+  "source_bridge": "Exact finite Gaussian blocks, recursive even centers, one integer coefficient sequence, absolute convergence and block regrouping, an entire extension, preserved test-point signs, distinct interval zeros, and the two literal source densities are all proved in Lean. Gaussian total positivity reuses the proved exponential determinant theorem and its full Wronskian dependency chain.",
+  "ownership_scope_note": "All twenty project modules are audited as owned, including their serialized private declarations. Fourteen are the new Grochenig result modules; six are reused KVZ dependencies. Registration adds only currently absent items.",
+  "strict_source_provenance": "Every command, exit code, source hash and object binding comes from the explicitly supplied raw receipt manifest. No missing command or path is inferred.",
+  "log_sha256": {
+    "strict-sources/Grochenig/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigBlocks/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigBlocksAlgebra/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigDensity/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigDensityDefinitions/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigDensityLocalFiniteness/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigGaussian/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigGaussianBasic/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigSeparation/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigSeries/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigSeriesAnalytic/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigSeriesCoefficients/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigSignPreservation/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/GrochenigWitness/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/KVZGammaDensity/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/KVZGammaDensityBasic/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/KVZGammaPowerAlgebra/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/KVZGammaWronskian/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/KVZGammaWronskianDeterminants/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict-sources/KVZGammaWronskianJets/strict.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit.log": "ce28d31c3ac5731798d390e229d70fd21853c11c01fc1b712574b0f089d8f033",
+    "kernel.log": "7ebcf41e70b5e2ec0b402ef494917f72aab9824623d3a8c9835d81d48d3a9bdd"
+  },
+  "audit_source_sha256": "8870c5c33976fca0fd89c53f2b6e9dc46a7659bbeaff0b9400ff557f442fc076"
+}

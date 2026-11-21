@@ -1,0 +1,603 @@
+{
+  "schema": 1,
+  "assembled_utc": "2026-11-21T18:41:49.920300+00:00",
+  "instructions": [
+    "Explicit mappings only; run prepare_grochenig_checkpoint.py from the repository root.",
+    "Fourteen new modules have original strict records binding all three object parts.",
+    "Three reused Wronskian records retain their published historical-command plus separately dated post-build inventory provenance.",
+    "Three other reused KVZ records bind the source and public object as originally recorded after compilation; the full gate independently freezes all sixty current object parts.",
+    "No unavailable historical pre-build hash or direct-child metric is invented."
+  ],
+  "sources": [
+    {
+      "module": "Conjectures.Grochenig",
+      "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/manifest.json",
+      "log": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/Final.log",
+      "result_pointer": "/modules/2",
+      "fields": {
+        "command": "/modules/2/command",
+        "cwd": "/cwd",
+        "exit_code": "/modules/2/exit_status",
+        "source_sha256": "/modules/2/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/modules/2/output_objects/0/sha256",
+        ".olean.private": "/modules/2/output_objects/1/sha256",
+        ".olean.server": "/modules/2/output_objects/2/sha256"
+      },
+      "assertions": {
+        "/status": "passed",
+        "/modules/2/status": "passed",
+        "/modules/2/source_unchanged": true,
+        "/modules/2/dependencies_unchanged": true,
+        "/modules/2/controls_unchanged": true,
+        "/builder_sha256": "e330d59a5c3c49ad28bbec8221616a4cd9b9081eb47762fca76189881722ccbe"
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/build_root_grochenig.py"
+      ],
+      "provenance": "Original fresh staged strict build with recorded source/dependency/control invariance and all three installed object hashes."
+    },
+    {
+      "module": "Conjectures.GrochenigBlocks",
+      "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/receipt.json",
+      "log": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/02-GrochenigBlocks/strict.log",
+      "result_pointer": "",
+      "fields": {
+        "command": "/command",
+        "cwd": "/cwd",
+        "exit_code": "/exit_status",
+        "source_sha256": "/inputs_after/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/installed_output_objects/0/sha256",
+        ".olean.private": "/installed_output_objects/1/sha256",
+        ".olean.server": "/installed_output_objects/2/sha256"
+      },
+      "assertions": {
+        "/strict_source_pass": true,
+        "/inputs_unchanged": true,
+        "/interrupted": false,
+        "/post_build_errors": []
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/plan.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/runner.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/required-endpoints.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/summary.json"
+      ]
+    },
+    {
+      "module": "Conjectures.GrochenigBlocksAlgebra",
+      "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/01-GrochenigBlocksAlgebra/receipt.json",
+      "log": "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/01-GrochenigBlocksAlgebra/strict.log",
+      "result_pointer": "",
+      "fields": {
+        "command": "/command",
+        "cwd": "/cwd",
+        "exit_code": "/exit_status",
+        "source_sha256": "/inputs_after/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/installed_output_objects/0/sha256",
+        ".olean.private": "/installed_output_objects/1/sha256",
+        ".olean.server": "/installed_output_objects/2/sha256"
+      },
+      "assertions": {
+        "/strict_source_pass": true,
+        "/inputs_unchanged": true,
+        "/interrupted": false,
+        "/post_build_errors": []
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/plan.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/runner.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/required-endpoints.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-blocks-strict-runs/20261121T180915.504155Z-887ced1f4482/summary.json"
+      ]
+    },
+    {
+      "module": "Conjectures.GrochenigDensity",
+      "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180223.659278Z-20754bdc33f4/01-GrochenigDensity/receipt.json",
+      "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180223.659278Z-20754bdc33f4/01-GrochenigDensity/strict.log",
+      "result_pointer": "",
+      "fields": {
+        "command": "/command",
+        "cwd": "/cwd",
+        "exit_code": "/exit_status",
+        "source_sha256": "/inputs_after/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/installed_output_objects/0/sha256",
+        ".olean.private": "/installed_output_objects/1/sha256",
+        ".olean.server": "/installed_output_objects/2/sha256"
+      },
+      "assertions": {
+        "/strict_source_pass": true,
+        "/inputs_unchanged": true,
+        "/interrupted": false,
+        "/post_build_errors": []
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180223.659278Z-20754bdc33f4/plan.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180223.659278Z-20754bdc33f4/runner.json"
+      ],
+      "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+    },
+    {
+      "module": "Conjectures.GrochenigDensityDefinitions",
+      "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/01-GrochenigDensityDefinitions/receipt.json",
+      "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/01-GrochenigDensityDefinitions/strict.log",
+      "result_pointer": "",
+      "fields": {
+        "command": "/command",
+        "cwd": "/cwd",
+        "exit_code": "/exit_status",
+        "source_sha256": "/inputs_after/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/installed_output_objects/0/sha256",
+        ".olean.private": "/installed_output_objects/1/sha256",
+        ".olean.server": "/installed_output_objects/2/sha256"
+      },
+      "assertions": {
+        "/strict_source_pass": true,
+        "/inputs_unchanged": true,
+        "/interrupted": false,
+        "/post_build_errors": []
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/plan.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/runner.json"
+      ],
+      "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+    },
+    {
+      "module": "Conjectures.GrochenigDensityLocalFiniteness",
+      "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/02-GrochenigDensityLocalFiniteness/receipt.json",
+      "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/02-GrochenigDensityLocalFiniteness/strict.log",
+      "result_pointer": "",
+      "fields": {
+        "command": "/command",
+        "cwd": "/cwd",
+        "exit_code": "/exit_status",
+        "source_sha256": "/inputs_after/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/installed_output_objects/0/sha256",
+        ".olean.private": "/installed_output_objects/1/sha256",
+        ".olean.server": "/installed_output_objects/2/sha256"
+      },
+      "assertions": {
+        "/strict_source_pass": true,
+        "/inputs_unchanged": true,
+        "/interrupted": false,
+        "/post_build_errors": []
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/plan.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175551.759472Z-871887d61c35/runner.json"
+      ],
+      "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+    },
+    {
+      "module": "Conjectures.GrochenigGaussian",
+      "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180412.260177Z-f3bfd955be29/01-GrochenigGaussian/receipt.json",
+      "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180412.260177Z-f3bfd955be29/01-GrochenigGaussian/strict.log",
+      "result_pointer": "",
+      "fields": {
+        "command": "/command",
+        "cwd": "/cwd",
+        "exit_code": "/exit_status",
+        "source_sha256": "/inputs_after/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/installed_output_objects/0/sha256",
+        ".olean.private": "/installed_output_objects/1/sha256",
+        ".olean.server": "/installed_output_objects/2/sha256"
+      },
+      "assertions": {
+        "/strict_source_pass": true,
+        "/inputs_unchanged": true,
+        "/interrupted": false,
+        "/post_build_errors": []
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180412.260177Z-f3bfd955be29/plan.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T180412.260177Z-f3bfd955be29/runner.json"
+      ],
+      "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+    },
+    {
+      "module": "Conjectures.GrochenigGaussianBasic",
+      "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175236.544046Z-e2a66beed1f2/01-GrochenigGaussianBasic/receipt.json",
+      "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175236.544046Z-e2a66beed1f2/01-GrochenigGaussianBasic/strict.log",
+      "result_pointer": "",
+      "fields": {
+        "command": "/command",
+        "cwd": "/cwd",
+        "exit_code": "/exit_status",
+        "source_sha256": "/inputs_after/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/installed_output_objects/0/sha256",
+        ".olean.private": "/installed_output_objects/1/sha256",
+        ".olean.server": "/installed_output_objects/2/sha256"
+      },
+      "assertions": {
+        "/strict_source_pass": true,
+        "/inputs_unchanged": true,
+        "/interrupted": false,
+        "/post_build_errors": []
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175236.544046Z-e2a66beed1f2/plan.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T175236.544046Z-e2a66beed1f2/runner.json"
+      ],
+      "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+    },
+    {
+      "module": "Conjectures.GrochenigSeparation",
+      "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T181457.931642Z-e45f6428e084/01-GrochenigSeparation/receipt.json",
+      "log": "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T181457.931642Z-e45f6428e084/01-GrochenigSeparation/strict.log",
+      "result_pointer": "",
+      "fields": {
+        "command": "/command",
+        "cwd": "/cwd",
+        "exit_code": "/exit_status",
+        "source_sha256": "/inputs_after/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/installed_output_objects/0/sha256",
+        ".olean.private": "/installed_output_objects/1/sha256",
+        ".olean.server": "/installed_output_objects/2/sha256"
+      },
+      "assertions": {
+        "/strict_source_pass": true,
+        "/inputs_unchanged": true,
+        "/interrupted": false,
+        "/post_build_errors": []
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-six-frozen-20261121T181646.029207Z.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T181457.931642Z-e45f6428e084/plan.json",
+        "/workspace/scratch/17b12d3ee06e/grochenig-owned-strict-runs/20261121T181457.931642Z-e45f6428e084/runner.json"
+      ],
+      "provenance": "Original immutable strict receipt; pre/post source, direct-import and pin records are preserved."
+    },
+    {
+      "module": "Conjectures.GrochenigSeries",
+      "receipt": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/manifest.json",
+      "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/GrochenigSeries.log",
+      "result_pointer": "/modules/1",
+      "fields": {
+        "command": "/modules/1/command",
+        "cwd": "/cwd",
+        "exit_code": "/modules/1/exit_status",
+        "source_sha256": "/modules/1/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/modules/1/output_objects/0/sha256",
+        ".olean.private": "/modules/1/output_objects/1/sha256",
+        ".olean.server": "/modules/1/output_objects/2/sha256"
+      },
+      "assertions": {
+        "/status": "passed",
+        "/controls_unchanged": true,
+        "/sources_unchanged": true,
+        "/outputs_unchanged": true,
+        "/modules/1/status": "passed",
+        "/modules/1/source_unchanged": true,
+        "/modules/1/dependencies_unchanged": true,
+        "/builder_sha256": "a8b70714cf2c453276f3e4e58ee04edc414d2d358e4966d8ee20d771e7f34966"
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/grochenig-series-frozen.json",
+        "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/builder.py"
+      ],
+      "provenance": "Original sequential strict manifest, unchanged source/dependency checks and all three output hashes; direct-child wait4 metrics."
+    },
+    {
+      "module": "Conjectures.GrochenigSeriesAnalytic",
+      "receipt": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183353.135336Z/manifest.json",
+      "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183353.135336Z/GrochenigSeriesAnalytic.log",
+      "result_pointer": "/modules/0",
+      "fields": {
+        "command": "/modules/0/command",
+        "cwd": "/cwd",
+        "exit_code": "/modules/0/exit_status",
+        "source_sha256": "/modules/0/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/modules/0/output_objects/0/sha256",
+        ".olean.private": "/modules/0/output_objects/1/sha256",
+        ".olean.server": "/modules/0/output_objects/2/sha256"
+      },
+      "assertions": {
+        "/status": "failed",
+        "/modules/0/status": "passed",
+        "/modules/0/source_unchanged": true,
+        "/modules/0/dependencies_unchanged": true,
+        "/builder_sha256": "a8b70714cf2c453276f3e4e58ee04edc414d2d358e4966d8ee20d771e7f34966",
+        "/control_sha256/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+        "/control_sha256/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+        "/control_sha256/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+        "/modules/0/diagnostic_bytes": 0
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/grochenig-series-frozen.json",
+        "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183353.135336Z/builder.py"
+      ],
+      "provenance": "Individually passed SeriesAnalytic record in a sequential queue that failed later on SeriesCoefficients. Only this passed module is selected. Its recorded source and dependency invariance, empty log, all three output hashes and wait4 metrics are retained. The failed queue has no final all-modules invariance fields; none are claimed. Recorded package-control hashes match the current complete gate freeze."
+    },
+    {
+      "module": "Conjectures.GrochenigSeriesCoefficients",
+      "receipt": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/manifest.json",
+      "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/GrochenigSeriesCoefficients.log",
+      "result_pointer": "/modules/0",
+      "fields": {
+        "command": "/modules/0/command",
+        "cwd": "/cwd",
+        "exit_code": "/modules/0/exit_status",
+        "source_sha256": "/modules/0/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/modules/0/output_objects/0/sha256",
+        ".olean.private": "/modules/0/output_objects/1/sha256",
+        ".olean.server": "/modules/0/output_objects/2/sha256"
+      },
+      "assertions": {
+        "/status": "passed",
+        "/controls_unchanged": true,
+        "/sources_unchanged": true,
+        "/outputs_unchanged": true,
+        "/modules/0/status": "passed",
+        "/modules/0/source_unchanged": true,
+        "/modules/0/dependencies_unchanged": true,
+        "/builder_sha256": "a8b70714cf2c453276f3e4e58ee04edc414d2d358e4966d8ee20d771e7f34966"
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/grochenig-series-frozen.json",
+        "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T183444.221243Z/builder.py"
+      ],
+      "provenance": "Original sequential strict manifest, unchanged source/dependency checks and all three output hashes; direct-child wait4 metrics."
+    },
+    {
+      "module": "Conjectures.GrochenigSignPreservation",
+      "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/manifest.json",
+      "log": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/SignPreservation.log",
+      "result_pointer": "/modules/0",
+      "fields": {
+        "command": "/modules/0/command",
+        "cwd": "/cwd",
+        "exit_code": "/modules/0/exit_status",
+        "source_sha256": "/modules/0/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/modules/0/output_objects/0/sha256",
+        ".olean.private": "/modules/0/output_objects/1/sha256",
+        ".olean.server": "/modules/0/output_objects/2/sha256"
+      },
+      "assertions": {
+        "/status": "passed",
+        "/modules/0/status": "passed",
+        "/modules/0/source_unchanged": true,
+        "/modules/0/dependencies_unchanged": true,
+        "/modules/0/controls_unchanged": true,
+        "/builder_sha256": "e330d59a5c3c49ad28bbec8221616a4cd9b9081eb47762fca76189881722ccbe"
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/build_root_grochenig.py"
+      ],
+      "provenance": "Original fresh staged strict build with recorded source/dependency/control invariance and all three installed object hashes."
+    },
+    {
+      "module": "Conjectures.GrochenigWitness",
+      "receipt": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/manifest.json",
+      "log": "/workspace/scratch/17b12d3ee06e/grochenig-root-strict-logs/20261121T183534.079631Z/Witness.log",
+      "result_pointer": "/modules/1",
+      "fields": {
+        "command": "/modules/1/command",
+        "cwd": "/cwd",
+        "exit_code": "/modules/1/exit_status",
+        "source_sha256": "/modules/1/source/sha256"
+      },
+      "object_parts": {
+        ".olean": "/modules/1/output_objects/0/sha256",
+        ".olean.private": "/modules/1/output_objects/1/sha256",
+        ".olean.server": "/modules/1/output_objects/2/sha256"
+      },
+      "assertions": {
+        "/status": "passed",
+        "/modules/1/status": "passed",
+        "/modules/1/source_unchanged": true,
+        "/modules/1/dependencies_unchanged": true,
+        "/modules/1/controls_unchanged": true,
+        "/builder_sha256": "e330d59a5c3c49ad28bbec8221616a4cd9b9081eb47762fca76189881722ccbe"
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/build_root_grochenig.py"
+      ],
+      "provenance": "Original fresh staged strict build with recorded source/dependency/control invariance and all three installed object hashes."
+    },
+    {
+      "module": "Conjectures.KVZGammaDensity",
+      "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaDensity.metrics.json",
+      "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaDensity.log",
+      "result_pointer": "",
+      "fields": {
+        "command": "/command",
+        "cwd": "/cwd",
+        "exit_code": "/exit_status",
+        "source_sha256": "/source_sha256"
+      },
+      "object_parts": {
+        ".olean": "/object_sha256_after"
+      },
+      "assertions": {
+        "/exit_status": 0,
+        "/log_bytes": 0
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+      ],
+      "provenance": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Recorded after compilation; this historical record does not contain a pre-build source hash.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "module": "Conjectures.KVZGammaDensityBasic",
+      "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaDensityBasic.metrics.json",
+      "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaDensityBasic.log",
+      "result_pointer": "",
+      "fields": {
+        "command": "/command",
+        "cwd": "/cwd",
+        "exit_code": "/exit_status",
+        "source_sha256": "/source_sha256"
+      },
+      "object_parts": {
+        ".olean": "/object_sha256_after"
+      },
+      "assertions": {
+        "/exit_status": 0,
+        "/log_bytes": 0
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+      ],
+      "provenance": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Recorded after compilation; this historical record does not contain a pre-build source hash.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "module": "Conjectures.KVZGammaPowerAlgebra",
+      "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaPowerAlgebra.metrics.json",
+      "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaPowerAlgebra.log",
+      "result_pointer": "",
+      "fields": {
+        "command": "/command",
+        "cwd": "/cwd",
+        "exit_code": "/exit_status",
+        "source_sha256": "/source_sha256"
+      },
+      "object_parts": {
+        ".olean": "/object_sha256_after"
+      },
+      "assertions": {
+        "/exit_status": 0,
+        "/log_bytes": 0
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+      ],
+      "provenance": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Recorded after compilation; this historical record does not contain a pre-build source hash.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "module": "Conjectures.KVZGammaWronskian",
+      "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+      "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskian.log",
+      "result_pointer": "/commands/2",
+      "fields": {
+        "command": "/commands/2/command",
+        "cwd": "/commands/2/working_directory",
+        "exit_code": "/commands/2/exit_code",
+        "source_sha256": "/source_sha256/lean~1Conjectures~1KVZGammaWronskian.lean"
+      },
+      "object_parts": {
+        ".olean": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskian.olean",
+        ".olean.private": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskian.olean.private",
+        ".olean.server": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskian.olean.server"
+      },
+      "assertions": {
+        "/status": "passed",
+        "/sources_and_objects_unchanged_since_frozen_inventory": true,
+        "/commands/2/pre_build_hashes_claimed": false,
+        "/commands/2/exit_code": 0
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskian.metrics.json",
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/wronskian-post-build-frozen.json",
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+      ],
+      "cwd_interpretation": "The published receipt records working_directory=lean relative to the repository root; run the preparer from that root.",
+      "provenance": "Original successful strict command, empty log and process metrics; the owning agent reported no later source edit. The separately dated post-build inventory matches the full gate freeze. Its hashes are current post-build measurements, not retrospective pre-build evidence.",
+      "resource_metrics_provenance": "Historical getrusage(RUSAGE_CHILDREN) high-water values are retained as upper bounds, not relabeled as direct-child wait4 measurements.",
+      "source_hash_timing": "The source and all three object bindings come from the published, separately dated post-build frozen inventory. No historical pre-build hash is claimed."
+    },
+    {
+      "module": "Conjectures.KVZGammaWronskianDeterminants",
+      "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+      "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskianDeterminants.log",
+      "result_pointer": "/commands/0",
+      "fields": {
+        "command": "/commands/0/command",
+        "cwd": "/commands/0/working_directory",
+        "exit_code": "/commands/0/exit_code",
+        "source_sha256": "/source_sha256/lean~1Conjectures~1KVZGammaWronskianDeterminants.lean"
+      },
+      "object_parts": {
+        ".olean": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianDeterminants.olean",
+        ".olean.private": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianDeterminants.olean.private",
+        ".olean.server": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianDeterminants.olean.server"
+      },
+      "assertions": {
+        "/status": "passed",
+        "/sources_and_objects_unchanged_since_frozen_inventory": true,
+        "/commands/0/pre_build_hashes_claimed": false,
+        "/commands/0/exit_code": 0
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskianDeterminants.metrics.json",
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/wronskian-post-build-frozen.json",
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+      ],
+      "cwd_interpretation": "The published receipt records working_directory=lean relative to the repository root; run the preparer from that root.",
+      "provenance": "Original successful strict command, empty log and process metrics; the owning agent reported no later source edit. The separately dated post-build inventory matches the full gate freeze. Its hashes are current post-build measurements, not retrospective pre-build evidence.",
+      "resource_metrics_provenance": "Historical getrusage(RUSAGE_CHILDREN) high-water values are retained as upper bounds, not relabeled as direct-child wait4 measurements.",
+      "source_hash_timing": "The source and all three object bindings come from the published, separately dated post-build frozen inventory. No historical pre-build hash is claimed."
+    },
+    {
+      "module": "Conjectures.KVZGammaWronskianJets",
+      "receipt": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/receipt.json",
+      "log": "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskianJets.log",
+      "result_pointer": "/commands/1",
+      "fields": {
+        "command": "/commands/1/command",
+        "cwd": "/commands/1/working_directory",
+        "exit_code": "/commands/1/exit_code",
+        "source_sha256": "/source_sha256/lean~1Conjectures~1KVZGammaWronskianJets.lean"
+      },
+      "object_parts": {
+        ".olean": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianJets.olean",
+        ".olean.private": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianJets.olean.private",
+        ".olean.server": "/artifact_sha256/lean~1.lake~1build~1lib~1lean~1Conjectures~1KVZGammaWronskianJets.olean.server"
+      },
+      "assertions": {
+        "/status": "passed",
+        "/sources_and_objects_unchanged_since_frozen_inventory": true,
+        "/commands/1/pre_build_hashes_claimed": false,
+        "/commands/1/exit_code": 0
+      },
+      "supporting_files": [
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/strict/KVZGammaWronskianJets.metrics.json",
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/wronskian-post-build-frozen.json",
+        "/workspace/scratch/17b12d3ee06e/solved-conjectures/docs/verification/lean-kvz-20261121/frozen-sha256.json"
+      ],
+      "cwd_interpretation": "The published receipt records working_directory=lean relative to the repository root; run the preparer from that root.",
+      "provenance": "Original successful strict command, empty log and process metrics; the owning agent reported no later source edit. The separately dated post-build inventory matches the full gate freeze. Its hashes are current post-build measurements, not retrospective pre-build evidence.",
+      "resource_metrics_provenance": "Historical getrusage(RUSAGE_CHILDREN) high-water values are retained as upper bounds, not relabeled as direct-child wait4 measurements.",
+      "source_hash_timing": "The source and all three object bindings come from the published, separately dated post-build frozen inventory. No historical pre-build hash is claimed."
+    }
+  ]
+}

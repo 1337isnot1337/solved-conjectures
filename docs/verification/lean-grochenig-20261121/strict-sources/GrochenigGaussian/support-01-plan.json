@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "mode": "strict-source-build-plan",
+  "lean_launched": false,
+  "ordered_modules": [
+    "Conjectures.GrochenigGaussian"
+  ],
+  "separation_prerequisite": "Conjectures.GrochenigBlocks",
+  "strict_flags": [
+    "-j1",
+    "-M2200",
+    "-DwarningAsError=true"
+  ],
+  "required_endpoints_inventory": {
+    "path": "/workspace/scratch/17b12d3ee06e/grochenig-owned-required-endpoints.json",
+    "exists": true,
+    "bytes": 2076,
+    "sha256": "abc013482dc4af84c16683cedbffde56f019f10c1566e6d9ec23cd20f96e6179"
+  },
+  "owned_endpoint_count": 45,
+  "pins": {
+    "lean_toolchain": "leanprover/lean4:v4.35.0",
+    "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "files": [
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/lean-toolchain",
+        "exists": true,
+        "bytes": 25,
+        "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/lakefile.toml",
+        "exists": true,
+        "bytes": 348,
+        "sha256": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/lake-manifest.json",
+        "exists": true,
+        "bytes": 3206,
+        "sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "exists": true,
+        "bytes": 9024,
+        "sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+      },
+      {
+        "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/libleanshared.so",
+        "exists": true,
+        "bytes": 231113560,
+        "sha256": "efef27df56f2197139afe12f1a2b63913a05f1aba81ce88824c44100431ed8c4"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "module": "Conjectures.GrochenigGaussian",
+      "source": {
+        "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/Conjectures/GrochenigGaussian.lean",
+        "exists": true,
+        "bytes": 3285,
+        "sha256": "cf1ff33b5641577832c27cf3c5613c18c338bac492df84383ccaaf7bbe9e3289"
+      },
+      "direct_imports": [
+        {
+          "module": "Init",
+          "implicit": true,
+          "import_all": false,
+          "public": false,
+          "source": {
+            "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/src/lean/Init.lean",
+            "exists": true,
+            "bytes": 1469,
+            "sha256": "28b57970b6f0adef586f14939a95362959b698a68463d4a803f81464ad8e0675"
+          },
+          "objects": [
+            {
+              "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/Init.olean",
+              "exists": true,
+              "bytes": 5632,
+              "sha256": "84ffd94782b2f2f65408dee401a4332bfa7c3274abc7b1040cea7d7a307314f5"
+            },
+            {
+              "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/Init.olean.private",
+              "exists": true,
+              "bytes": 96,
+              "sha256": "33a3805a3662eefd43205a39b3c61b17a05854346c227221052c8d6437e7e3a3"
+            },
+            {
+              "path": "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/lib/lean/Init.olean.server",
+              "exists": true,
+              "bytes": 96,
+              "sha256": "1852ae25f4e1aa51900d656bbad6ea2c83b7459b5496f13f73cc1d4f1419a3d1"
+            }
+          ]
+        },
+        {
+          "module": "Conjectures.GrochenigGaussianBasic",
+          "implicit": false,
+          "import_all": false,
+          "public": true,
+          "source": {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/Conjectures/GrochenigGaussianBasic.lean",
+            "exists": true,
+            "bytes": 3621,
+            "sha256": "999d69f2fde31728667399db24a3fca1a4d9fcac69257d0a4405f604463669ae"
+          },
+          "objects": [
+            {
+              "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean",
+              "exists": true,
+              "bytes": 28808,
+              "sha256": "3e7cd6953376941607bac4983065762056f2d04b35134f2d3982b7c5dec92ad2"
+            },
+            {
+              "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean.private",
+              "exists": true,
+              "bytes": 85040,
+              "sha256": "691b44e2e79b7024efd9fb9623ad5c9a154037233cfd78a9b8df06b0ba043b4b"
+            },
+            {
+              "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/GrochenigGaussianBasic.olean.server",
+              "exists": true,
+              "bytes": 5200,
+              "sha256": "7ef9433b3e2736c074dc8e9c1a900bc18f237b5246c91650c8e97dacd30b0868"
+            }
+          ]
+        },
+        {
+          "module": "Conjectures.KVZGammaDensity",
+          "implicit": false,
+          "import_all": false,
+          "public": true,
+          "source": {
+            "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/Conjectures/KVZGammaDensity.lean",
+            "exists": true,
+            "bytes": 4689,
+            "sha256": "a0a003fbb70eabbdf9065c3597e0ac85ec2ef662f1b26a6d691671f782c7e25b"
+          },
+          "objects": [
+            {
+              "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/KVZGammaDensity.olean",
+              "exists": true,
+              "bytes": 23352,
+              "sha256": "ea2cb26e2578acbf61226b2fdd783dab9ccad1818e5298f79578df9c53966f65"
+            },
+            {
+              "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/KVZGammaDensity.olean.private",
+              "exists": true,
+              "bytes": 91648,
+              "sha256": "ef5e97d57b18b64d032aa4129453fc4bc96a74d3153cd1a93aee29bd60215a65"
+            },
+            {
+              "path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/KVZGammaDensity.olean.server",
+              "exists": true,
+              "bytes": 3152,
+              "sha256": "6dfaa8d5fbe77a2d0edcca2bb594b2b8368b6cbae079b32b42680e745cd1a952"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

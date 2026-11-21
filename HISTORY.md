@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-21 — Gröchenig upper-density disproof verified in Lean
+
+Lean constructs one real coefficient sequence in ℓ¹(ℤ), with absolute mass one and support on the even integers. Its actual Gaussian shift sum is nonzero, has an entire extension and locally finite real zeros, and satisfies D⁺(c)=1/2 and D⁺(Z(f))≥1. Coefficient sign changes use the source convention that skips zero coefficients.
+
+All 20 modules in the exact closure passed strict source checks, the complete owned-declaration axiom audit, and stock-kernel replay. The closure contains 14 Gröchenig modules and six reused KVZ kernel modules; all 20 were audited as owned modules. The audit covers 351 declarations, 310 theorem declarations, 78 private declarations, and 157 required endpoints. The [receipt](docs/verification/lean-grochenig-20261121/receipt.json) retains the exact gate evidence.
+
+The separate lower-density inequality remains unresolved here. The combined repository gate and hosted validation remain separate checks.
+
 ## 2026-11-21 — Chen–Khare–Sahi stable Hall witness checked
 
 Added twelve Lean modules and checked their exact nineteen-module closure. At q=1/10 and t=9/10, the full eleven-partition degree-six family is identified by stable Hall orthogonality, monic dominance triangularity and literal polynomial coordinates. Its three-variable specialization has positive normalization and yields the full Muirhead-semiring counterexample. The degree-three truncated finite-Hall conflict is also proved. Strict sources, both complete owned/private audits and the exact stock replay passed. The README remains partial because the manuscript convention is unresolved and the broader families still have only the eigenfunction identification. The previous sixteen-module compatibility receipt and its pending replay are preserved separately; neither the combined repository gate nor hosted validation is claimed.

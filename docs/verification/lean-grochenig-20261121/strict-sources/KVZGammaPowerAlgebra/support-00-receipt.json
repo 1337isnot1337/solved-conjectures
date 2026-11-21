@@ -1,0 +1,1149 @@
+{
+  "status": "passed",
+  "base_commit": "28b00f24ac8eabfd6fd8ac5fb7fad81d4aac66d3",
+  "completed_utc": "2026-11-21T18:29:59.031644+00:00",
+  "roots": [
+    "Conjectures.KVZGamma"
+  ],
+  "registered_roots": [
+    "Conjectures.KVZGammaWronskianDeterminants",
+    "Conjectures.KVZGammaWronskianJets",
+    "Conjectures.KVZGammaWronskian",
+    "Conjectures.KVZGammaPowerAlgebra",
+    "Conjectures.KVZGammaPowerDerivatives",
+    "Conjectures.KVZGammaPower",
+    "Conjectures.KVZGammaDensityBasic",
+    "Conjectures.KVZGammaDensity",
+    "Conjectures.KVZGammaConvolutionWeights",
+    "Conjectures.KVZGammaConvolutionBeta",
+    "Conjectures.KVZGammaConvolution",
+    "Conjectures.KVZGammaCompositionIntegral",
+    "Conjectures.KVZGammaCompositionSign",
+    "Conjectures.KVZGammaCompositionGamma",
+    "Conjectures.KVZGamma"
+  ],
+  "imported_project_modules": [
+    "Conjectures.KVZGammaWronskianDeterminants",
+    "Conjectures.KVZGammaWronskianJets",
+    "Conjectures.KVZGammaWronskian",
+    "Conjectures.KVZGammaPowerAlgebra",
+    "Conjectures.KVZGammaPowerDerivatives",
+    "Conjectures.KVZGammaPower",
+    "Conjectures.KVZGammaDensityBasic",
+    "Conjectures.KVZGammaDensity",
+    "Conjectures.KVZGammaConvolutionWeights",
+    "Conjectures.KVZGammaConvolutionBeta",
+    "Conjectures.KVZGammaConvolution",
+    "Conjectures.KVZGammaCompositionIntegral",
+    "Conjectures.KVZGammaCompositionSign",
+    "Conjectures.KVZGammaCompositionGamma",
+    "Conjectures.KVZGamma"
+  ],
+  "owned_modules": [
+    "Conjectures.KVZGammaWronskianDeterminants",
+    "Conjectures.KVZGammaWronskianJets",
+    "Conjectures.KVZGammaWronskian",
+    "Conjectures.KVZGammaPowerAlgebra",
+    "Conjectures.KVZGammaPowerDerivatives",
+    "Conjectures.KVZGammaPower",
+    "Conjectures.KVZGammaDensityBasic",
+    "Conjectures.KVZGammaDensity",
+    "Conjectures.KVZGammaConvolutionWeights",
+    "Conjectures.KVZGammaConvolutionBeta",
+    "Conjectures.KVZGammaConvolution",
+    "Conjectures.KVZGammaCompositionIntegral",
+    "Conjectures.KVZGammaCompositionSign",
+    "Conjectures.KVZGammaCompositionGamma",
+    "Conjectures.KVZGamma"
+  ],
+  "required_theorems": [
+    "KVZGamma.det_interval_differences_mvt",
+    "KVZGamma.det_of_first_column_one",
+    "KVZGamma.evaluationDet_normalize",
+    "KVZGamma.jetMatrix_mul",
+    "KVZGamma.wronskian_mul",
+    "KVZGamma.wronskian_normalizedDerivatives",
+    "KVZGamma.evaluationDet_mul_wronskian_pos",
+    "KVZGamma.evaluationDet_ne_zero",
+    "KVZGamma.evaluationDet_sign_eq",
+    "KVZGamma.powerSignature_eq",
+    "KVZGamma.powerKernel_eq",
+    "KVZGamma.falling_eq_prod",
+    "KVZGamma.falling_nat_pos",
+    "KVZGamma.falling_ne_zero",
+    "KVZGamma.powerSignature_nat_mul_sign_pos",
+    "KVZGamma.powerSignature_nat_eq_zero",
+    "KVZGamma.powerSignature_three",
+    "KVZGamma.power_nat_matrix_factorization",
+    "KVZGamma.powerKernel_nat_det_eq_zero",
+    "KVZGamma.iteratedDeriv_rpow_of_pos",
+    "KVZGamma.iteratedDeriv_powerKernel",
+    "KVZGamma.powerKernel_contDiffOn",
+    "KVZGamma.power_wronskian_eq",
+    "KVZGamma.power_wronskian_mul_signature_pos",
+    "KVZGamma.power_initialWronskiansNonzero",
+    "KVZGamma.powerKernel_det_mul_signature_pos",
+    "KVZGamma.powerKernel_det_mul_signature_pos_of_not_nat",
+    "KVZGamma.powerKernel_det_ne_zero_of_not_nat",
+    "KVZGamma.powerKernel_nat_det_mul_sign_pos",
+    "KVZGamma.gammaDensity_pos",
+    "KVZGamma.gammaDensity_continuousOn",
+    "KVZGamma.gammaDensity_eq_exp",
+    "KVZGamma.exponential_wronskian_eq",
+    "KVZGamma.exponential_det_pos",
+    "KVZGamma.gammaDensity_det_factorization",
+    "KVZGamma.gammaDensity_det_pos",
+    "KVZGamma.gammaDensity_transpose_det_pos",
+    "KVZGamma.gamma_moment_integrable",
+    "KVZGamma.gamma_moment_integral",
+    "KVZGamma.gamma_product_integrable",
+    "KVZGamma.gamma_power_integrable",
+    "KVZGamma.gamma_half_integrable",
+    "KVZGamma.scaled_beta_integral",
+    "KVZGamma.gamma_density_convolution",
+    "KVZGamma.gamma_double_integral",
+    "KVZGamma.integral_prod_functionDet",
+    "KVZGamma.integrable_functionDet_mul",
+    "KVZGamma.integral_functionDet_mul",
+    "KVZGamma.signed_det_product_nonneg",
+    "KVZGamma.integral_composition_strict_sign",
+    "KVZGamma.integral_composition_det_eq_zero",
+    "KVZGamma.halfKernel_det_mul_signature_pos",
+    "KVZGamma.gammaQuotient_det_mul_signature_pos",
+    "KVZGamma.halfKernel_nat_det_eq_zero",
+    "KVZGamma.gammaQuotient_nat_det_eq_zero",
+    "KVZGamma.positive_translation",
+    "KVZGamma.source_noninteger_all_orders",
+    "KVZGamma.source_integer_strict",
+    "KVZGamma.source_integer_rank_cutoff",
+    "KVZGamma.source_sign_regularity",
+    "KVZGamma.source_exact_signature",
+    "KVZGamma.source_third_order_signature"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/KVZGammaWronskianDeterminants.lean": "30e5a47d7a37abb93bc198c121905e0b919074438e980ce7711ce38621ae4b86",
+    "lean/Conjectures/KVZGammaWronskianJets.lean": "2c9200e33a25df6b36e7c1187fe6cf5ba1b85d5ea20befb8925c1f4af7298016",
+    "lean/Conjectures/KVZGammaWronskian.lean": "b652f8821c59d106d10cf93e74d5f21f5b9b5bd466055fdedccc14bbf5127fa1",
+    "lean/Conjectures/KVZGammaPowerAlgebra.lean": "6cfbf16a587692883bf53870c936ba5a0f815cac96ce4079b189b7369fee4d71",
+    "lean/Conjectures/KVZGammaPowerDerivatives.lean": "b46aa7633ecf4b2f3da8cd642f1e9953f728e6432ca5b21d304af0199eb3a9f8",
+    "lean/Conjectures/KVZGammaPower.lean": "f362676a43e957def4fff268fe9a0fdce428b82dfc9b3df2ea155ac59cc6e3d4",
+    "lean/Conjectures/KVZGammaDensityBasic.lean": "b8176f814bd3676d9cc0916794004a75ee39d4bf0e81cc2f57e7d1a1cce38e0c",
+    "lean/Conjectures/KVZGammaDensity.lean": "a0a003fbb70eabbdf9065c3597e0ac85ec2ef662f1b26a6d691671f782c7e25b",
+    "lean/Conjectures/KVZGammaConvolutionWeights.lean": "b84fcd3112135fede05809f92b80d7b03b8195a07fa83732cc637bf79060c679",
+    "lean/Conjectures/KVZGammaConvolutionBeta.lean": "d44b5709cebe77141d3882c2214f3d52cacbe295cab36d28d5af81d7a0e06577",
+    "lean/Conjectures/KVZGammaConvolution.lean": "54ed47ce13c798b1278ca68654ccd407d7e6a46244093878ac6df9c66ef3d0ae",
+    "lean/Conjectures/KVZGammaCompositionIntegral.lean": "954663f1777ab26ac7c6e694955e1ba00c1e0b6961f3bda6497fff7d1963a1be",
+    "lean/Conjectures/KVZGammaCompositionSign.lean": "9cfa4799ed57800c064d67266b90725e8d734427b78a52ecd44479b6f083e2fa",
+    "lean/Conjectures/KVZGammaCompositionGamma.lean": "46994a2591e46ec78f6b9df9174b3e2f5f438eab03ee7befbc44b8f96185845d",
+    "lean/Conjectures/KVZGamma.lean": "467fb95c9a800ff0e9be2bc139c106423d658124672e80b9e65d9e9b98bffc93",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "scripts/audit_lean_owned_extension.py": "6b520a346907fe9e8a7c025daa9a9a831ec8188aab26014443bb760f557f3bca",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c"
+  },
+  "artifact_sha256": {
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianDeterminants.olean": "e4407e0a2429086f949b119fa0ccac7df6535acdd65d2125c4e1501e23aed897",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianDeterminants.olean.private": "fd77d4330d0c87a1f3b33be0bf57592efd3c16d8a1cfef05b91b306cd281cd8e",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianDeterminants.olean.server": "349c9aa517e355e90124dc8c9ef676d5ee6379be2b2877d64255192becdc7e5a",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianJets.olean": "683e3e927059d59ef8e16f8f25fece72c6b7eea8e721a2e3d3120b3006c892c1",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianJets.olean.private": "617a090aec559d48aa40b0592a0c38c7037c522c73f2c2eeb67a26e672fd48dc",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskianJets.olean.server": "d9d0630ffc24e7ac83fc3c8d7729d01c994c41bbf0457ca4aefbeae7cace4a0d",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskian.olean": "4888f5e82ff956450b1481a960c79ed80763013d60646da359bcd2bec1c60e7c",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskian.olean.private": "0c46ddcc548ea7a500377e17f612e21ed088d0f3782e4470867a59983c940ada",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaWronskian.olean.server": "242e02118188a6fa85a67f346468f449dd2b70383999c0df35e4a66102b3b299",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean": "c8b0afd7b9baa534b6ec083fe09802dae65e957edfbca16db6c6d2690f97790e",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean.private": "c07b6db9c3819a8255565c979aa88fbfe8a78c8432493f45a595e8b363419340",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean.server": "67878d276238be16e59654c57b9091f26e29c6fb7737206248f557975b5f5855",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPowerDerivatives.olean": "be042ef3a9c57b45e3314d9676203f38ea5702d7c579dafd0fe0f1491337672b",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPowerDerivatives.olean.private": "82d527cc5c9e39a5033cda673000a3863d2ca8a25f5da3da90776e71b66e824f",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPowerDerivatives.olean.server": "d23ea371242c8b0eeec30e975ff4599d12bbc5c40d752d59aa0f30e22d8ab89b",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPower.olean": "52ec47c1ed865d62e1daaa7b5f8baffd38e4de3364bad1e9f0469343bd60e04a",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPower.olean.private": "f40309ce0f9f4349fbcc9c37dd6ff47f191e76d6570fd43caa480dbb97e9ecb4",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaPower.olean.server": "cb1644001919791813d4dc4a0bd21de3ae1b3c7517c0d28ff1437703b66ffa1d",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean": "c9022b105611f512ce8f75ea6dbc647d81d58e91d4ba91624f03bc5c3b9ed2b8",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean.private": "2fb47cb9b8441e25b10a7796d98697fb47eb5bb324786a3b616b0a278d4d37fb",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean.server": "d3f4d5a269260384adf2bd753ab1148d3c6b8a948a6d8f6d9818e10331f168c5",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensity.olean": "ea2cb26e2578acbf61226b2fdd783dab9ccad1818e5298f79578df9c53966f65",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensity.olean.private": "ef5e97d57b18b64d032aa4129453fc4bc96a74d3153cd1a93aee29bd60215a65",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaDensity.olean.server": "6dfaa8d5fbe77a2d0edcca2bb594b2b8368b6cbae079b32b42680e745cd1a952",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean": "55a7b71c0210ff9fffb6e5391ccb2eab1be5e3bf3ae2e2e2d3d040fd8571b5fc",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean.private": "a64b9f037f3b290b585ab7defe62dfde8258dfe143640ef3d56df00d2c76dc2a",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean.server": "4f2c2dfd1385e29c6e7e2d583eaaaa6d4b449a5c5aec15d2ede1687d9dcc1382",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaConvolutionBeta.olean": "715da0e8041d6d05759c9e1329434b15315c83602469c97a501e64943fa00be1",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaConvolutionBeta.olean.private": "4bbe63b7296056a99ecd4f5523267e67a3c51a729492951833209d5a18f710b9",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaConvolutionBeta.olean.server": "1324b53974c9264e284c3b7157688c26ab5a92c34ded873881c2a7e6b9270a57",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaConvolution.olean": "389801a1a3db5593d57d88eb70ec962d49adb1bb716344dc44ea9a4d34206952",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaConvolution.olean.private": "ca5a7285d8506abb2e3e95b56713fc9d26d604b6055cf4cf065ac028d11e6355",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaConvolution.olean.server": "0f843339d7ce03f24e3f73a7414334276eae3520c1fedf92972ff13ae31ce03c",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaCompositionIntegral.olean": "f32a382df91a8276ab14f7b12ce2c466ffe7b63e7b9143ffa85b76dd8cfba5d1",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaCompositionIntegral.olean.private": "28cfac92e146f82aae97a9c7eecdb576a5c4e451b8c45854a9b34d7ca0929c78",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaCompositionIntegral.olean.server": "ec460977ba43c040074555ae4cc1c1ea7334b550db9f55882ca13846d36cfa09",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaCompositionSign.olean": "f6d0737ce160ae7a12db9c88545ce2279bffacabf83b7d51be6118aace98d3be",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaCompositionSign.olean.private": "2ba8b7b68b334104f46269d8b06e296b3e42978c378b7e3fdc016cbbad581541",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaCompositionSign.olean.server": "725c5514447f66f55e7de0a3f7d5dff1e4e464180e6fd78f4af531c9182a15a1",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaCompositionGamma.olean": "740c419485d7284463392b70a39b7a92bd6a92ddfeb796e31ed1f8099b77e7d5",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaCompositionGamma.olean.private": "cf67c73c6c4fc8f8b8f85eaf56d2351b9791870ac1792dace036b6f91e51db84",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGammaCompositionGamma.olean.server": "754ec9bc9b6bf91ea22e66290a6c9a0ff801b6a12ea69ed585f456b7ef87d7a1",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGamma.olean": "0b77f7a53802555b11a774759a3d62d7c7b7f926bc4b90ea981ccc4eaf148f93",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGamma.olean.private": "31ac891df499d01bdb42a6b9d0b8dc89bae3915968dcf93237a341575831e2e3",
+    "lean/.lake/build/lib/lean/Conjectures/KVZGamma.olean.server": "e70cbaa39b5803b9819dc6f30cd751c0532ae91d7f4d42aa4581ae209f98a777"
+  },
+  "pinned_executable_sha256": {
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
+  },
+  "executable_hash_measurement": "Measured at publication; not relabeled as historical pre-build hashes.",
+  "sources_and_objects_unchanged_since_frozen_inventory": true,
+  "all_owned_declarations_audited": true,
+  "exact_owned_raw_private_visibility": true,
+  "exact_imported_project_closure": true,
+  "axiom_audit": {
+    "tag": "passed",
+    "imported_modules": 15,
+    "owned_modules": 15,
+    "declarations": 195,
+    "theorems": 176,
+    "private_declarations": 54,
+    "raw_declarations": 195,
+    "required_theorems": 62,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "combined_repository_gate": false,
+  "hosted_validation_claimed": false,
+  "commands": [
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaWronskianDeterminants",
+      "command": [
+        "timeout",
+        "600s",
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaWronskianDeterminants.olean",
+        "Conjectures/KVZGammaWronskianDeterminants.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGammaWronskianDeterminants.log",
+      "metrics_file": "strict/KVZGammaWronskianDeterminants.metrics.json",
+      "metrics": {
+        "module": "KVZGammaWronskianDeterminants",
+        "command": [
+          "timeout",
+          "600s",
+          "lean",
+          "-j1",
+          "-M3000",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaWronskianDeterminants.olean",
+          "Conjectures/KVZGammaWronskianDeterminants.lean"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 264.267,
+        "maxrss_kib": 893612
+      },
+      "post_build_frozen_inventory": "wronskian-post-build-frozen.json",
+      "pre_build_hashes_claimed": false,
+      "provenance": "Original successful strict command, empty log and process metrics; the owning agent reported no later source edit. The separately dated post-build inventory matches the full gate freeze. Its hashes are current post-build measurements, not retrospective pre-build evidence.",
+      "resource_metrics_provenance": "Historical getrusage(RUSAGE_CHILDREN) high-water values are retained as upper bounds, not relabeled as direct-child wait4 measurements."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaWronskianJets",
+      "command": [
+        "timeout",
+        "600s",
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaWronskianJets.olean",
+        "Conjectures/KVZGammaWronskianJets.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGammaWronskianJets.log",
+      "metrics_file": "strict/KVZGammaWronskianJets.metrics.json",
+      "metrics": {
+        "module": "KVZGammaWronskianJets",
+        "command": [
+          "timeout",
+          "600s",
+          "lean",
+          "-j1",
+          "-M3000",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaWronskianJets.olean",
+          "Conjectures/KVZGammaWronskianJets.lean"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 49.994,
+        "maxrss_kib": 939004
+      },
+      "post_build_frozen_inventory": "wronskian-post-build-frozen.json",
+      "pre_build_hashes_claimed": false,
+      "provenance": "Original successful strict command, empty log and process metrics; the owning agent reported no later source edit. The separately dated post-build inventory matches the full gate freeze. Its hashes are current post-build measurements, not retrospective pre-build evidence.",
+      "resource_metrics_provenance": "Historical getrusage(RUSAGE_CHILDREN) high-water values are retained as upper bounds, not relabeled as direct-child wait4 measurements."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaWronskian",
+      "command": [
+        "timeout",
+        "600s",
+        "lean",
+        "-j1",
+        "-M3000",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaWronskian.olean",
+        "Conjectures/KVZGammaWronskian.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGammaWronskian.log",
+      "metrics_file": "strict/KVZGammaWronskian.metrics.json",
+      "metrics": {
+        "command": [
+          "timeout",
+          "600s",
+          "lean",
+          "-j1",
+          "-M3000",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaWronskian.olean",
+          "Conjectures/KVZGammaWronskian.lean"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 194.541,
+        "maxrss_kib": 613988,
+        "log_bytes": 0
+      },
+      "post_build_frozen_inventory": "wronskian-post-build-frozen.json",
+      "pre_build_hashes_claimed": false,
+      "provenance": "Original successful strict command, empty log and process metrics; the owning agent reported no later source edit. The separately dated post-build inventory matches the full gate freeze. Its hashes are current post-build measurements, not retrospective pre-build evidence.",
+      "resource_metrics_provenance": "Historical getrusage(RUSAGE_CHILDREN) high-water values are retained as upper bounds, not relabeled as direct-child wait4 measurements."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaPowerAlgebra",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean",
+        "Conjectures/KVZGammaPowerAlgebra.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGammaPowerAlgebra.log",
+      "metrics_file": "strict/KVZGammaPowerAlgebra.metrics.json",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean",
+          "Conjectures/KVZGammaPowerAlgebra.lean"
+        ],
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "started_utc": "2026-11-21T17:03:49.419252+00:00",
+        "elapsed_seconds": 54.272,
+        "peak_kib": 813580,
+        "exit_status": 0,
+        "source_sha256": "6cfbf16a587692883bf53870c936ba5a0f815cac96ce4079b189b7369fee4d71",
+        "object_sha256_before": "12feef0114410a5f437ca9ef4dfd3f18d9f289b60aa48f0da79a38ab179b4d5c",
+        "object_sha256_after": "c8b0afd7b9baa534b6ec083fe09802dae65e957edfbca16db6c6d2690f97790e",
+        "log_bytes": 0
+      },
+      "strict_hash_coverage": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Recorded after compilation; this historical record does not contain a pre-build source hash.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaPowerDerivatives",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaPowerDerivatives.olean",
+        "Conjectures/KVZGammaPowerDerivatives.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGammaPowerDerivatives.log",
+      "metrics_file": "strict/KVZGammaPowerDerivatives.metrics.json",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaPowerDerivatives.olean",
+          "Conjectures/KVZGammaPowerDerivatives.lean"
+        ],
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "started_utc": "2026-11-21T17:08:48.703667+00:00",
+        "elapsed_seconds": 131.002,
+        "peak_kib": 670008,
+        "exit_status": 0,
+        "source_sha256": "b46aa7633ecf4b2f3da8cd642f1e9953f728e6432ca5b21d304af0199eb3a9f8",
+        "object_sha256_before": null,
+        "object_sha256_after": "be042ef3a9c57b45e3314d9676203f38ea5702d7c579dafd0fe0f1491337672b",
+        "log_bytes": 0
+      },
+      "strict_hash_coverage": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Recorded after compilation; this historical record does not contain a pre-build source hash.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaPower",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaPower.olean",
+        "Conjectures/KVZGammaPower.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGammaPower.log",
+      "metrics_file": "strict/KVZGammaPower.metrics.json",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaPower.olean",
+          "Conjectures/KVZGammaPower.lean"
+        ],
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "started_utc": "2026-11-21T17:10:59.718860+00:00",
+        "elapsed_seconds": 85.816,
+        "peak_kib": 723436,
+        "exit_status": 0,
+        "source_sha256": "f362676a43e957def4fff268fe9a0fdce428b82dfc9b3df2ea155ac59cc6e3d4",
+        "object_sha256_before": null,
+        "object_sha256_after": "52ec47c1ed865d62e1daaa7b5f8baffd38e4de3364bad1e9f0469343bd60e04a",
+        "log_bytes": 0
+      },
+      "strict_hash_coverage": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Recorded after compilation; this historical record does not contain a pre-build source hash.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaDensityBasic",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean",
+        "Conjectures/KVZGammaDensityBasic.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGammaDensityBasic.log",
+      "metrics_file": "strict/KVZGammaDensityBasic.metrics.json",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean",
+          "Conjectures/KVZGammaDensityBasic.lean"
+        ],
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "started_utc": "2026-11-21T16:43:26.850111+00:00",
+        "elapsed_seconds": 104.226,
+        "peak_kib": 862340,
+        "exit_status": 0,
+        "source_sha256": "b8176f814bd3676d9cc0916794004a75ee39d4bf0e81cc2f57e7d1a1cce38e0c",
+        "object_sha256_before": null,
+        "object_sha256_after": "c9022b105611f512ce8f75ea6dbc647d81d58e91d4ba91624f03bc5c3b9ed2b8",
+        "log_bytes": 0
+      },
+      "strict_hash_coverage": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Recorded after compilation; this historical record does not contain a pre-build source hash.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaDensity",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaDensity.olean",
+        "Conjectures/KVZGammaDensity.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGammaDensity.log",
+      "metrics_file": "strict/KVZGammaDensity.metrics.json",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaDensity.olean",
+          "Conjectures/KVZGammaDensity.lean"
+        ],
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "started_utc": "2026-11-21T17:12:25.548472+00:00",
+        "elapsed_seconds": 37.164,
+        "peak_kib": 1110648,
+        "exit_status": 0,
+        "source_sha256": "a0a003fbb70eabbdf9065c3597e0ac85ec2ef662f1b26a6d691671f782c7e25b",
+        "object_sha256_before": null,
+        "object_sha256_after": "ea2cb26e2578acbf61226b2fdd783dab9ccad1818e5298f79578df9c53966f65",
+        "log_bytes": 0
+      },
+      "strict_hash_coverage": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Recorded after compilation; this historical record does not contain a pre-build source hash.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaConvolutionWeights",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean",
+        "Conjectures/KVZGammaConvolutionWeights.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/partial/20261121T174516.426787Z/KVZGammaConvolutionWeights.log",
+      "metrics_file": "strict/partial/20261121T174516.426787Z/KVZGammaConvolutionWeights.metrics.json",
+      "run_manifest": "strict/partial/20261121T174516.426787Z/manifest.json",
+      "metrics": {
+        "module": "Conjectures.KVZGammaConvolutionWeights",
+        "source": {
+          "path": "Conjectures/KVZGammaConvolutionWeights.lean",
+          "bytes": 7553,
+          "sha256": "b84fcd3112135fede05809f92b80d7b03b8195a07fa83732cc637bf79060c679"
+        },
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean",
+          "Conjectures/KVZGammaConvolutionWeights.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.KVZGammaDensityBasic": {
+            "source": {
+              "path": "Conjectures/KVZGammaDensityBasic.lean",
+              "bytes": 1817,
+              "sha256": "b8176f814bd3676d9cc0916794004a75ee39d4bf0e81cc2f57e7d1a1cce38e0c"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean",
+                "bytes": 15376,
+                "sha256": "c9022b105611f512ce8f75ea6dbc647d81d58e91d4ba91624f03bc5c3b9ed2b8"
+              },
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean.private",
+                "bytes": 56712,
+                "sha256": "2fb47cb9b8441e25b10a7796d98697fb47eb5bb324786a3b616b0a278d4d37fb"
+              },
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean.server",
+                "bytes": 2896,
+                "sha256": "d3f4d5a269260384adf2bd753ab1148d3c6b8a948a6d8f6d9818e10331f168c5"
+              }
+            ]
+          },
+          "Conjectures.KVZGammaPowerAlgebra": {
+            "source": {
+              "path": "Conjectures/KVZGammaPowerAlgebra.lean",
+              "bytes": 6746,
+              "sha256": "6cfbf16a587692883bf53870c936ba5a0f815cac96ce4079b189b7369fee4d71"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean",
+                "bytes": 39096,
+                "sha256": "c8b0afd7b9baa534b6ec083fe09802dae65e957edfbca16db6c6d2690f97790e"
+              },
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean.private",
+                "bytes": 214648,
+                "sha256": "c07b6db9c3819a8255565c979aa88fbfe8a78c8432493f45a595e8b363419340"
+              },
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaPowerAlgebra.olean.server",
+                "bytes": 7112,
+                "sha256": "67878d276238be16e59654c57b9091f26e29c6fb7737206248f557975b5f5855"
+              }
+            ]
+          }
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T174516.426787Z/KVZGammaConvolutionWeights.log",
+        "status": "passed",
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean",
+            "bytes": 25080,
+            "sha256": "55a7b71c0210ff9fffb6e5391ccb2eab1be5e3bf3ae2e2e2d3d040fd8571b5fc"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean.private",
+            "bytes": 249376,
+            "sha256": "a64b9f037f3b290b585ab7defe62dfde8258dfe143640ef3d56df00d2c76dc2a"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean.server",
+            "bytes": 4696,
+            "sha256": "4f2c2dfd1385e29c6e7e2d583eaaaa6d4b449a5c5aec15d2ede1687d9dcc1382"
+          }
+        ],
+        "elapsed_seconds": 26.221,
+        "exit_status": 0,
+        "max_rss_kib": 1185008,
+        "user_seconds": 5.504784,
+        "system_seconds": 8.816571,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "diagnostic_bytes": 0
+      },
+      "provenance": "A completed successful per-module record selected by exact current source, direct-project-dependency, and complete object-family hashes. A later module failure in the same finished run does not invalidate this matched record.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaConvolutionBeta",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionBeta.olean",
+        "Conjectures/KVZGammaConvolutionBeta.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/partial/20261121T174644.776113Z/KVZGammaConvolutionBeta.log",
+      "metrics_file": "strict/partial/20261121T174644.776113Z/KVZGammaConvolutionBeta.metrics.json",
+      "run_manifest": "strict/partial/20261121T174644.776113Z/manifest.json",
+      "metrics": {
+        "module": "Conjectures.KVZGammaConvolutionBeta",
+        "source": {
+          "path": "Conjectures/KVZGammaConvolutionBeta.lean",
+          "bytes": 3431,
+          "sha256": "d44b5709cebe77141d3882c2214f3d52cacbe295cab36d28d5af81d7a0e06577"
+        },
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionBeta.olean",
+          "Conjectures/KVZGammaConvolutionBeta.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.KVZGammaDensityBasic": {
+            "source": {
+              "path": "Conjectures/KVZGammaDensityBasic.lean",
+              "bytes": 1817,
+              "sha256": "b8176f814bd3676d9cc0916794004a75ee39d4bf0e81cc2f57e7d1a1cce38e0c"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean",
+                "bytes": 15376,
+                "sha256": "c9022b105611f512ce8f75ea6dbc647d81d58e91d4ba91624f03bc5c3b9ed2b8"
+              },
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean.private",
+                "bytes": 56712,
+                "sha256": "2fb47cb9b8441e25b10a7796d98697fb47eb5bb324786a3b616b0a278d4d37fb"
+              },
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaDensityBasic.olean.server",
+                "bytes": 2896,
+                "sha256": "d3f4d5a269260384adf2bd753ab1148d3c6b8a948a6d8f6d9818e10331f168c5"
+              }
+            ]
+          }
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T174644.776113Z/KVZGammaConvolutionBeta.log",
+        "status": "passed",
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionBeta.olean",
+            "bytes": 13408,
+            "sha256": "715da0e8041d6d05759c9e1329434b15315c83602469c97a501e64943fa00be1"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionBeta.olean.private",
+            "bytes": 146400,
+            "sha256": "4bbe63b7296056a99ecd4f5523267e67a3c51a729492951833209d5a18f710b9"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionBeta.olean.server",
+            "bytes": 1912,
+            "sha256": "1324b53974c9264e284c3b7157688c26ab5a92c34ded873881c2a7e6b9270a57"
+          }
+        ],
+        "elapsed_seconds": 14.52,
+        "exit_status": 0,
+        "max_rss_kib": 1478008,
+        "user_seconds": 4.415823,
+        "system_seconds": 3.574093,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "diagnostic_bytes": 0
+      },
+      "provenance": "A completed successful per-module record selected by exact current source, direct-project-dependency, and complete object-family hashes. A later module failure in the same finished run does not invalidate this matched record.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaConvolution",
+      "command": [
+        "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaConvolution.olean",
+        "Conjectures/KVZGammaConvolution.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/partial/20261121T174812.693776Z/KVZGammaConvolution.log",
+      "metrics_file": "strict/partial/20261121T174812.693776Z/KVZGammaConvolution.metrics.json",
+      "run_manifest": "strict/partial/20261121T174812.693776Z/manifest.json",
+      "metrics": {
+        "module": "Conjectures.KVZGammaConvolution",
+        "source": {
+          "path": "Conjectures/KVZGammaConvolution.lean",
+          "bytes": 5302,
+          "sha256": "54ed47ce13c798b1278ca68654ccd407d7e6a46244093878ac6df9c66ef3d0ae"
+        },
+        "command": [
+          "/workspace/scratch/17b12d3ee06e/toolchains/lean-4.35.0-linux/bin/lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaConvolution.olean",
+          "Conjectures/KVZGammaConvolution.lean"
+        ],
+        "direct_project_dependencies": {
+          "Conjectures.KVZGammaConvolutionWeights": {
+            "source": {
+              "path": "Conjectures/KVZGammaConvolutionWeights.lean",
+              "bytes": 7553,
+              "sha256": "b84fcd3112135fede05809f92b80d7b03b8195a07fa83732cc637bf79060c679"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean",
+                "bytes": 25080,
+                "sha256": "55a7b71c0210ff9fffb6e5391ccb2eab1be5e3bf3ae2e2e2d3d040fd8571b5fc"
+              },
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean.private",
+                "bytes": 249376,
+                "sha256": "a64b9f037f3b290b585ab7defe62dfde8258dfe143640ef3d56df00d2c76dc2a"
+              },
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionWeights.olean.server",
+                "bytes": 4696,
+                "sha256": "4f2c2dfd1385e29c6e7e2d583eaaaa6d4b449a5c5aec15d2ede1687d9dcc1382"
+              }
+            ]
+          },
+          "Conjectures.KVZGammaConvolutionBeta": {
+            "source": {
+              "path": "Conjectures/KVZGammaConvolutionBeta.lean",
+              "bytes": 3431,
+              "sha256": "d44b5709cebe77141d3882c2214f3d52cacbe295cab36d28d5af81d7a0e06577"
+            },
+            "objects": [
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionBeta.olean",
+                "bytes": 13408,
+                "sha256": "715da0e8041d6d05759c9e1329434b15315c83602469c97a501e64943fa00be1"
+              },
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionBeta.olean.private",
+                "bytes": 146400,
+                "sha256": "4bbe63b7296056a99ecd4f5523267e67a3c51a729492951833209d5a18f710b9"
+              },
+              {
+                "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolutionBeta.olean.server",
+                "bytes": 1912,
+                "sha256": "1324b53974c9264e284c3b7157688c26ab5a92c34ded873881c2a7e6b9270a57"
+              }
+            ]
+          }
+        },
+        "log": "/workspace/scratch/17b12d3ee06e/partial-strict-logs/20261121T174812.693776Z/KVZGammaConvolution.log",
+        "status": "passed",
+        "output_objects": [
+          {
+            "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolution.olean",
+            "bytes": 11480,
+            "sha256": "389801a1a3db5593d57d88eb70ec962d49adb1bb716344dc44ea9a4d34206952"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolution.olean.private",
+            "bytes": 153320,
+            "sha256": "ca5a7285d8506abb2e3e95b56713fc9d26d604b6055cf4cf065ac028d11e6355"
+          },
+          {
+            "path": ".lake/build/lib/lean/Conjectures/KVZGammaConvolution.olean.server",
+            "bytes": 3232,
+            "sha256": "0f843339d7ce03f24e3f73a7414334276eae3520c1fedf92972ff13ae31ce03c"
+          }
+        ],
+        "elapsed_seconds": 7.892,
+        "exit_status": 0,
+        "max_rss_kib": 1322080,
+        "user_seconds": 3.087451,
+        "system_seconds": 2.966742,
+        "source_unchanged": true,
+        "dependencies_unchanged": true,
+        "diagnostic_bytes": 0
+      },
+      "provenance": "A completed successful per-module record selected by exact current source, direct-project-dependency, and complete object-family hashes. A later module failure in the same finished run does not invalidate this matched record.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaCompositionIntegral",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaCompositionIntegral.olean",
+        "Conjectures/KVZGammaCompositionIntegral.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGammaCompositionIntegral.log",
+      "metrics_file": "strict/KVZGammaCompositionIntegral.metrics.json",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaCompositionIntegral.olean",
+          "Conjectures/KVZGammaCompositionIntegral.lean"
+        ],
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "started_utc": "2026-11-21T16:57:13.684847+00:00",
+        "elapsed_seconds": 187.30463545400016,
+        "peak_kib": 903264,
+        "exit_status": 0,
+        "source_sha256": "954663f1777ab26ac7c6e694955e1ba00c1e0b6961f3bda6497fff7d1963a1be",
+        "source_unchanged": true,
+        "imported_objects": {},
+        "object_sha256_before": null,
+        "object_sha256_after": "f32a382df91a8276ab14f7b12ce2c466ffe7b63e7b9143ffa85b76dd8cfba5d1",
+        "log_bytes": 0
+      },
+      "strict_hash_coverage": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Before and after compilation, with source_unchanged recorded.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaCompositionSign",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaCompositionSign.olean",
+        "Conjectures/KVZGammaCompositionSign.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGammaCompositionSign.log",
+      "metrics_file": "strict/KVZGammaCompositionSign.metrics.json",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaCompositionSign.olean",
+          "Conjectures/KVZGammaCompositionSign.lean"
+        ],
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "started_utc": "2026-11-21T17:02:45.225170+00:00",
+        "elapsed_seconds": 33.974746763999065,
+        "peak_kib": 1180164,
+        "exit_status": 0,
+        "source_sha256": "9cfa4799ed57800c064d67266b90725e8d734427b78a52ecd44479b6f083e2fa",
+        "source_unchanged": true,
+        "imported_objects": {
+          "Conjectures.KVZGammaCompositionIntegral": "f32a382df91a8276ab14f7b12ce2c466ffe7b63e7b9143ffa85b76dd8cfba5d1"
+        },
+        "object_sha256_before": null,
+        "object_sha256_after": "f6d0737ce160ae7a12db9c88545ce2279bffacabf83b7d51be6118aace98d3be",
+        "log_bytes": 0
+      },
+      "strict_hash_coverage": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Before and after compilation, with source_unchanged recorded.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGammaCompositionGamma",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGammaCompositionGamma.olean",
+        "Conjectures/KVZGammaCompositionGamma.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGammaCompositionGamma.log",
+      "metrics_file": "strict/KVZGammaCompositionGamma.metrics.json",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGammaCompositionGamma.olean",
+          "Conjectures/KVZGammaCompositionGamma.lean"
+        ],
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "started_utc": "2026-11-21T17:49:18.501620+00:00",
+        "elapsed_seconds": 13.097524777000217,
+        "peak_kib": 1459292,
+        "exit_status": 0,
+        "source_sha256": "46994a2591e46ec78f6b9df9174b3e2f5f438eab03ee7befbc44b8f96185845d",
+        "source_unchanged": true,
+        "imported_objects": {
+          "Conjectures.KVZGammaCompositionSign": "f6d0737ce160ae7a12db9c88545ce2279bffacabf83b7d51be6118aace98d3be",
+          "Conjectures.KVZGammaPower": "52ec47c1ed865d62e1daaa7b5f8baffd38e4de3364bad1e9f0469343bd60e04a",
+          "Conjectures.KVZGammaDensity": "ea2cb26e2578acbf61226b2fdd783dab9ccad1818e5298f79578df9c53966f65",
+          "Conjectures.KVZGammaConvolution": "389801a1a3db5593d57d88eb70ec962d49adb1bb716344dc44ea9a4d34206952"
+        },
+        "object_sha256_before": null,
+        "object_sha256_after": "740c419485d7284463392b70a39b7a92bd6a92ddfeb796e31ed1f8099b77e7d5",
+        "log_bytes": 0
+      },
+      "strict_hash_coverage": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Before and after compilation, with source_unchanged recorded.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "strict-source",
+      "module": "Conjectures.KVZGamma",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/KVZGamma.olean",
+        "Conjectures/KVZGamma.lean"
+      ],
+      "working_directory": "lean",
+      "exit_code": 0,
+      "log": "strict/KVZGamma.log",
+      "metrics_file": "strict/KVZGamma.metrics.json",
+      "metrics": {
+        "command": [
+          "lean",
+          "-j1",
+          "-M2200",
+          "-DwarningAsError=true",
+          "-o",
+          ".lake/build/lib/lean/Conjectures/KVZGamma.olean",
+          "Conjectures/KVZGamma.lean"
+        ],
+        "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+        "started_utc": "2026-11-21T17:50:19.154593+00:00",
+        "elapsed_seconds": 16.90585499899862,
+        "peak_kib": 1418128,
+        "exit_status": 0,
+        "source_sha256": "467fb95c9a800ff0e9be2bc139c106423d658124672e80b9e65d9e9b98bffc93",
+        "source_unchanged": true,
+        "imported_objects": {
+          "Conjectures.KVZGammaCompositionGamma": "740c419485d7284463392b70a39b7a92bd6a92ddfeb796e31ed1f8099b77e7d5"
+        },
+        "object_sha256_before": null,
+        "object_sha256_after": "0b77f7a53802555b11a774759a3d62d7c7b7f926bc4b90ea981ccc4eaf148f93",
+        "log_bytes": 0
+      },
+      "strict_hash_coverage": "Recorded source and public .olean hashes match the full frozen inventory. All three current object parts are covered by the full gate freeze.",
+      "source_hash_timing": "Before and after compilation, with source_unchanged recorded.",
+      "resource_metrics_provenance": "Direct-child os.wait4 metrics, preserved as recorded."
+    },
+    {
+      "label": "all-owned-axioms",
+      "working_directory": "lean",
+      "log": "audit.log",
+      "command": [
+        "lean",
+        "-j1",
+        "-M2200",
+        "-DwarningAsError=true",
+        "/workspace/scratch/17b12d3ee06e/KVZCompleteOwnedAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+      "started_utc": "2026-11-21T17:50:56.311678+00:00",
+      "elapsed_seconds": 15.433440959999643,
+      "returncode": 0,
+      "user_seconds": 8.8976,
+      "system_seconds": 2.909915,
+      "maxrss_kib": 1474916
+    },
+    {
+      "label": "stock-kernel",
+      "working_directory": "lean",
+      "log": "kernel.log",
+      "command": [
+        "python3",
+        "../scripts/replay_lean.py",
+        "--root",
+        "Conjectures.KVZGamma"
+      ],
+      "cwd": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean",
+      "started_utc": "2026-11-21T17:51:16.329827+00:00",
+      "elapsed_seconds": 2259.8743935579987,
+      "returncode": 0,
+      "user_seconds": 139.251384,
+      "system_seconds": 895.21495,
+      "maxrss_kib": 2707152
+    }
+  ],
+  "scope": {
+    "proved": [
+      "For arbitrary real c>d, every natural order r, and strictly increasing real grids x,y satisfying d+x_i+y_j>0, the sign of det[Gamma(c+x_i+y_j)/Gamma(d+x_i+y_j)] is sign((-1)^(r choose 2) * product_{j=0}^{r-1} falling(c-d,j)). The empty order is included.",
+      "Every order is strict for a positive noninteger difference. For positive integer difference m, all minors through order m+1 are nonzero with sign (-1)^(r choose 2), and all larger minors vanish.",
+      "The third-order sign is sign((c-d)^2*(1-(c-d))): positive below one, zero at one, negative above one. This corrects the fixed source signature within the same theorem."
+    ],
+    "not_claimed": [
+      "A combined repository gate or hosted validation of this checkpoint."
+    ]
+  },
+  "strict_source_provenance": "All fifteen entries are successful object-build commands. Historical Wronskian records are coupled to a separately dated post-build frozen inventory without inventing pre-build hashes. Historical finite/root hash coverage is retained exactly. Completed convolution records match sources, direct project dependencies, and every object part. The independent gate replays the full frozen closure.",
+  "resource_metrics_note": "Original metrics are preserved. Wronskian getrusage child high-water values are upper bounds; finite, root and convolution wait4 measurements are direct-child records.",
+  "evidence_sha256": {
+    "audit.log": "e0bce255887b5f9055e56455349422ff6cb984325b57f03c3abe43d1c9adea90",
+    "audit-metrics.json": "a1abb4a21106583ae0b008c2489de6004b2a512e921e3b0af27ced0c3870124b",
+    "audit-validated.json": "7aa63f5c2874d0eda1698c5123d711b092a08e05b05320be0218515c6abd5467",
+    "kernel.log": "381a58b6bc4be92af85821c67b82af991ca340304dfc417584aac7ba17eee9a8",
+    "kernel-metrics.json": "830dd8d77b2a8df27800e8fa641356d29244005d6afaeddc1e844fe2dd774936",
+    "obligations.json": "ef3fa7a5d60d8ed9739162f8fa49bb4979203e754449003dfbef137c436d7d1c",
+    "frozen-sha256.json": "5668c48138e4e91a1d85a031a3da0ba2ac13f03a23bfedea3dad656f417f52c9",
+    "audit.lean": "6388e2f67ce37bceed445be81d35bb5271bbe9081d67e5292d50e0bfd9b10dfa",
+    "wronskian-post-build-frozen.json": "2ef558c8b7960c7e09ac4609e8120c7c3298c14156b6998585dd2f1f6970d598",
+    "strict/KVZGammaWronskianDeterminants.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaWronskianDeterminants.metrics.json": "a57686e83e269d9e3a4309f58efab1b35f18ba448ac14004a558a750b25b3ae7",
+    "strict/KVZGammaWronskianJets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaWronskianJets.metrics.json": "ee317708fa72eaf09eb9515062353dc22f01d1857a95748017cddf75db03a257",
+    "strict/KVZGammaWronskian.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaWronskian.metrics.json": "8c4ffce6d742be6320e7e537cd88036c38fcaddb44075df20da767b975b15c0f",
+    "strict/KVZGammaDensityBasic.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaDensityBasic.metrics.json": "8441a691b75b955444c75feb0b8296d0c5bb9104ecb73119d063c1e64b60eac9",
+    "strict/KVZGammaPowerAlgebra.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaPowerAlgebra.metrics.json": "2dae3c60eabed3e82b08dd1959ec00edb2bfdbb8305a06e78c4f1b6fb28c475d",
+    "strict/KVZGammaPowerDerivatives.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaPowerDerivatives.metrics.json": "ef246eedff3660db568e86e3a0e9f29f884958c2f202990b1c813d9debeeb656",
+    "strict/KVZGammaPower.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaPower.metrics.json": "a36681fd06beea7c9bf5e3ba88428a791f5b73ecf41f624b6cfed35c397b8edd",
+    "strict/KVZGammaDensity.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaDensity.metrics.json": "72559c2a65ce08f8840f2b7fdb61c316daa3997ffc83c549352e83ef503d8c32",
+    "strict/KVZGammaCompositionIntegral.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaCompositionIntegral.metrics.json": "d74ffcf6a63bd6768877e4d1bf6c0c61c2417129d24ec35251852c78f8feea53",
+    "strict/KVZGammaCompositionSign.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaCompositionSign.metrics.json": "daef1e9cf5756e35144201c0f537258a23e1b06a22a8d52c5137977d62376d8e",
+    "strict/KVZGammaCompositionGamma.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaCompositionGamma.metrics.json": "55850b56d8dbdf05f4b318555d6ef3e315ce298c125f58187ec5d7f850167788",
+    "strict/KVZGamma.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGamma.metrics.json": "07c5183ec9d0375c2c2bd99ecfde6bd4ac7daa151f63ce59a5da75c08da4c1f0",
+    "strict/partial/20261121T174516.426787Z/KVZGammaConvolutionWeights.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/partial/20261121T174516.426787Z/KVZGammaConvolutionWeights.metrics.json": "9933e96585efbea7bb44f5fb32d26537c7349a70ef25652eea04a92f1c854f38",
+    "strict/partial/20261121T174516.426787Z/manifest.json": "6246f334e87a661015b7dc967579a40140ae66173718686d6801c1482903c264",
+    "strict/partial/20261121T174644.776113Z/KVZGammaConvolutionBeta.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/partial/20261121T174644.776113Z/KVZGammaConvolutionBeta.metrics.json": "5211f02a160471105e21fe2b94984b122cd603257caf91c2d86e01a22fa95936",
+    "strict/partial/20261121T174644.776113Z/manifest.json": "4a3a9609c20a08a5ef6ddaa4f2baa575733a05a53779951d53fece05617debfb",
+    "strict/partial/20261121T174812.693776Z/KVZGammaConvolution.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/partial/20261121T174812.693776Z/KVZGammaConvolution.metrics.json": "51d94d9c7ff7e2750f5b21d0e892b2404d1dcebd80540322e09ce76102777dfd",
+    "strict/partial/20261121T174812.693776Z/manifest.json": "c3ee66904861353b98a373585b985a03de460a159a543e4c4cf912475f76ff77"
+  },
+  "log_sha256": {
+    "audit.log": "e0bce255887b5f9055e56455349422ff6cb984325b57f03c3abe43d1c9adea90",
+    "kernel.log": "381a58b6bc4be92af85821c67b82af991ca340304dfc417584aac7ba17eee9a8",
+    "strict/KVZGammaWronskianDeterminants.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaWronskianJets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaWronskian.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaDensityBasic.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaPowerAlgebra.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaPowerDerivatives.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaPower.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaDensity.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaCompositionIntegral.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaCompositionSign.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGammaCompositionGamma.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/KVZGamma.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/partial/20261121T174516.426787Z/KVZGammaConvolutionWeights.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/partial/20261121T174644.776113Z/KVZGammaConvolutionBeta.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strict/partial/20261121T174812.693776Z/KVZGammaConvolution.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "audit_source_sha256": "6388e2f67ce37bceed445be81d35bb5271bbe9081d67e5292d50e0bfd9b10dfa",
+  "publication_script_sha256": "5fc82143699f3fbc619aa022a8ff61846aa445ea7875a0e29d02adfb33f9e53a"
+}
