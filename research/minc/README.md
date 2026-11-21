@@ -6,7 +6,7 @@ Research started 20 November 2026. Coordination: [issue #139](https://github.com
 
 Only full open entries on [Yair Lavi’s Minc list](https://yair-lavi.com/mincs-list/) are eligible. The source marks 24 entries open at the start of this investigation. A finite-order extension, a conditional implication, a bound, an algorithm that merely enumerates the definition, or a renamed subproblem is not a completed entry. No Lean verification is in scope.
 
-**Completed unqualified entries: 0.** One complete candidate theorem now gives a general FPRAS for the approximation formulation of Problem 18. Its exact scope, proof and priority audit are recorded below. No exact polynomial-time Perron computation is claimed.
+**Completed unqualified entries: 0.** One complete candidate theorem now gives a general FPRAS for the approximation formulation of Problem 18. Its exact scope, proof and priority audit are recorded below. A separate complete proposed proof now resolves the named Pula–Song–Wanless subsidiary conjecture, with a repaired reduction and independent uniqueness proof; it does not count as a full solution of Problems 14 or 15. No exact polynomial-time Perron computation is claimed.
 
 ## Assignments
 
@@ -62,3 +62,5 @@ The ten entries already marked resolved by the source are excluded: conjectures 
 
 - [Permanent dominance for degree-one characters](abelian-dominance.md): proves the semiregular-action case for every character and the abelian-subgroup case in every order as consequences of Grone–Pierce and Lieb–Fischer. This is a structural subcase, not a full solution of Problem 2 or Conjecture 42; priority is unasserted.
 
+
+- [Pula–Song–Wanless conjecture](pula-song-wanless/proof.md): complete proposed proof of the inclusive threshold `n>=m+sqrt(m)`, with a real-rooted-minor repair of the published equalization argument and an independent van der Waerden uniqueness proof. The known cohesive and non-barycentric directions are independently checked and credited. [Two written reviews](pula-song-wanless/review-inequalities.md) and [exact identity checks](pula-song-wanless/verify.py) accompany it. Prior-art audit is being completed. This is a subsidiary conjecture, not either unrestricted characterization problem.
