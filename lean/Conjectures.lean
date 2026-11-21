@@ -976,3 +976,5 @@ import Conjectures.HornakRange
 import Conjectures.HornakLargeSource
 import Conjectures.HornakAdmissibleRange
 import Conjectures.FerreiraSimonWright
+import Conjectures.HornakGrouping
+import Conjectures.HornakGroupGraph

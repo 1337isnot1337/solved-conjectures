@@ -9,6 +9,9 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Hornak.greedy_groups,
+    `Hornak.refine_grouped_tripod,
+    `Hornak.tripod_with_large_part_from_source,
     `FerreiraSimonWright.scaled_wright_limit,
     `FerreiraSimonWright.boundary_counterexamples,
     `FerreiraSimonWright.exists_boundary_counterexample,

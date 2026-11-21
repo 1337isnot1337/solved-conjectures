@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak partitions containing a large part
+
+Proved that source tests 1 and 5 realize every positive tripod partition containing a part larger than the positive shortest arm, using greedy grouping and graph refinement. Strict compilation, a 910-theorem full-chain axiom audit and isolated kernel replay passed. All-small partitions, the four-arm reduction, existence constructions and combined gate remain.
+
 ## 2026-11-21 — Wright log-concavity conjecture disproved in Lean
 
 Formalized the actual infinite Wright series and a continuous counterexample
