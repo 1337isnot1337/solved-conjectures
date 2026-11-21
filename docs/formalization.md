@@ -1315,3 +1315,7 @@ This formalizes a previously resolved result. A complete ordinary disproof was p
 ## López Pouso–Segura central-node perturbation
 
 `perturb1_hasDeriv`, `perturb2_hasDeriv`, their second-derivative companions and `perturb2_ode` verify the explicit perturbation functions and ODE coefficients. `asymptotic_product_algebra` and `asymptotic_normalized_coefficients` verify the final fourth-order coefficient. `eventual_violation_of_three_approximations` derives eventual failure from the three displayed factor approximations with vanishing second-order remainders, including the intermediate amplitude-product reduction. Controlled parameter-dependent ODE and root expansions, the gamma-ratio expansion and those factor approximations remain unformalized.
+
+## López Pouso–Segura Bessel-weight convexity
+
+`Conjectures.LopezPousoSeguraBesselConvex` proves the strict unit trapezoid inequality and positivity and strict increase of the source first sequence under explicit convexity, antiderivative and endpoint hypotheses. The Bessel identification, other sequences and limits remain to be formalized; repository-wide verification is pending.

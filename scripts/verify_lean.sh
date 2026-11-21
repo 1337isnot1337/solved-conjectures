@@ -73,6 +73,7 @@ modules=(
   Conjectures.LopezPousoSeguraAsymptoticBridge
   Conjectures.LopezPousoSeguraFactors
   Conjectures.LopezPousoSeguraLegendre
+  Conjectures.LopezPousoSeguraBesselConvex
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany
