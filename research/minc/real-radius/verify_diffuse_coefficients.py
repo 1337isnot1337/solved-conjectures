@@ -25,7 +25,8 @@ def check(n, r, permuted, singular):
     indices = list(range(n))
     sigma = [(i+1) % n for i in indices] if permuted else indices
     hadamard = [[(-1)**((i & j).bit_count()) for j in range(1,r+1)] for i in indices]
-    right = [hadamard[i] for i in sigma]
+    right = [[-value if permuted and j == r-1 else value
+              for j, value in enumerate(hadamard[i])] for i in sigma]
     entries = [[sum(x*s*y for x,s,y in zip(row,singular,col))/n
                 for col in right] for row in hadamard]
     lhs = coefficients(hadamard, r)
