@@ -4,6 +4,7 @@
   "utf8_files": 14105,
   "skipped_nonutf8": 612,
   "pdf_text_files": 472,
-  "pattern": "(?i)pfaff|2610\\.24371|wlpjohnson|kalmanson",
+  "pattern": "pfaff|2610[.]24371|wlpjohnson|kalmanson",
+  "normalization": "Unicode NFKC then casefold",
   "hits": []
 }

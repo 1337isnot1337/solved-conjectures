@@ -30,7 +30,7 @@ Direct Schur-complement closure fails. On six vertices, let only the factor for 
 
 The pinned ArtificialZeng/AI-Has-Taste snapshot is `65eb1f5a92a3a8b80c9e92187825ac9231f86fb2`, with the full coverage and binary limits documented in [the retrospective audit](../2026-11-21-artificialzeng-priority/AUDIT.md).
 
-For this new target, the additional expression `pfaff|2610\.24371|wlpjohnson|kalmanson`, searched without case sensitivity, produced zero hits across all 14,105 regular UTF-8 file bodies and all 472 converted PDF texts. The compact report is `artificial-prior/matches.json`. This is a full-body search of those text sources, not a filename-only search. The two textless knight-tour figures, capped numeric gzip bodies, and other binary exclusions remain explicit in the referenced retrospective audit.
+For this new target, the additional expression `pfaff|2610[.]24371|wlpjohnson|kalmanson`, applied after Unicode NFKC normalization and case folding, produced zero hits across all 14,105 regular UTF-8 file bodies and all 472 converted PDF texts. The normalization includes typographic ligatures in PDF extraction, so spellings such as Pfaﬀian are searched as pfaffian. The saved report was regenerated after this correction. The compact report is `artificial-prior/matches.json`. This is a full-body search of those text sources, not a filename-only search. The two textless knight-tour figures, capped numeric gzip bodies, and other binary exclusions remain explicit in the referenced retrospective audit.
 
 To repeat the target-specific pass after running the retrospective archive and PDF scanners:
 

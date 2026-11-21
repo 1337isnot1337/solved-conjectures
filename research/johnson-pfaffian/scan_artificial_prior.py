@@ -8,8 +8,13 @@ import argparse
 import json
 import re
 import tarfile
+import unicodedata
 
-PATTERN = re.compile(r'(?i)pfaff|2610\.24371|wlpjohnson|kalmanson')
+PATTERN = re.compile(r'pfaff|2610[.]24371|wlpjohnson|kalmanson')
+
+
+def normalized(text):
+    return unicodedata.normalize('NFKC',text).casefold()
 
 
 def main():
@@ -28,24 +33,26 @@ def main():
             try: text=arc.extractfile(member).read().decode('utf8')
             except UnicodeDecodeError: skipped+=1; continue
             utf8+=1
-            matches=list(PATTERN.finditer(text))
+            searchable=normalized(text)
+            matches=list(PATTERN.finditer(searchable))
             if matches:
                 dest=out/'utf8'/path;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(text)
                 hits.append({'path':path,'kind':'utf8','count':len(matches),
-                             'contexts':[text[max(0,m.start()-180):m.end()+300] for m in matches[:12]]})
+                             'contexts':[searchable[max(0,m.start()-180):m.end()+300] for m in matches[:12]]})
     report=json.loads((args.pdf_directory/'report.json').read_text())
     for record in report['records']:
         if record['kind']!='pdf-text': continue
         pdf_count+=1; path=record['path'];text=(args.pdf_directory/(path+'.txt')).read_text()
-        matches=list(PATTERN.finditer(text))
+        searchable=normalized(text)
+        matches=list(PATTERN.finditer(searchable))
         if matches:
             dest=out/'pdf-text'/(path+'.txt');dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(text)
             hits.append({'path':path,'kind':'pdf-text','count':len(matches),
-                         'contexts':[text[max(0,m.start()-180):m.end()+300] for m in matches[:12]]})
+                         'contexts':[searchable[max(0,m.start()-180):m.end()+300] for m in matches[:12]]})
     result={'repository':'ArtificialZeng/AI-Has-Taste',
             'commit':'65eb1f5a92a3a8b80c9e92187825ac9231f86fb2',
             'utf8_files':utf8,'skipped_nonutf8':skipped,'pdf_text_files':pdf_count,
-            'pattern':PATTERN.pattern,'hits':hits}
+            'pattern':PATTERN.pattern,'normalization':'Unicode NFKC then casefold','hits':hits}
     (out/'matches.json').write_text(json.dumps(result,indent=2,ensure_ascii=False))
     print(json.dumps({k:v for k,v in result.items() if k!='hits'},indent=2))
     print(json.dumps([{'path':x['path'],'kind':x['kind'],'count':x['count']} for x in hits],indent=2))
