@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-20 — Independent outside confirmation of Németh–Seberry–Shu
+
+[Yair Lavi's Minc Conjecture 27 record](https://yair-lavi.com/mincs-list/conjecture-27/index.html) now identifies the conjecture as disproved by Cinna Davis and GPT-6.2 Astra, including the quadratic lower bound, and reports an independent audit that found no gap. The main index marks this outside confirmation with ★, separate from Lean status. This is not journal peer review.
+
 ## 2026-11-20 — Sagan–Swanson formula rendering
 
 Replaced an unsupported fixed-width TeX spacing command by standard spacing in the two Sagan–Swanson proof copies. The displayed formula is unchanged. The unsupported command blocked the native MathML site build after catalogue registration was repaired.
