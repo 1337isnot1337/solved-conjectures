@@ -54,6 +54,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Chen–Khare–Sahi's conjecture": "chen-khare-sahi-macdonald",
     "Ferreira–Simon's conjecture": "ferreira-simon-beta-prime",
     "Lyon's conjecture": "lyon-gamma-median",
     "Sun–Zhao's conjecture": "sun-zhao-iterated-ratios",

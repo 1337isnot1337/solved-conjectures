@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Chen–Khare–Sahi's conjecture
+
+Added a complete proposed disproof of Conjecture 5's Macdonald Muirhead-semiring implication. The exact rational functional separates the normalized difference for the partitions (4,2,0) and (4,1,1), at q=1/10 and t=9/10, from the entire degree-six semiring cone. A written homogeneity and dominance-cover argument proves that 38 products and seven ordinary monomials exhaust the required generators. This is a full universal-conjecture refutation. The proof also establishes an infinite rectangular-translate family; a separate Hall–Littlewood argument gives a continuous interior parameter family.
+
+Two independent mathematical reviews passed. Three standard-library exact checkers verify the full cone table, both Macdonald eigenidentities, a separate Hall-inner-product construction, and the negative rational functional value. The [source audit](results/chen-khare-sahi-macdonald/SOURCE_AUDIT.md) distinguishes Sra's existing evaluation-positivity theorem for the very same pair from the stronger semiring assertion, and records current literature and archive searches with their limits. No prior settlement of this semiring claim was found. The subgroup's reviewed proposed-resolution tally is ten; all remain unrefereed and no Lean work was performed.
+
 ## 2026-11-21 — Ferreira–Simon's conjecture
 
 Added a complete proposed analytic proof of Conjecture 1 in *Convolution of beta prime distribution*: the independent square-root beta mixture gives the self-convolution for the full original parameter range. The proof rederives the sum's Mellin transform, evaluates the mixing factor with a classical quadratic transformation, and proves equality in law by holomorphic continuation and characteristic-function uniqueness.

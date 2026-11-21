@@ -32,6 +32,17 @@ The standard-library verifier independently checks 4258 rational median brackets
 
 ## Computational checks
 
+The [Chen–Khare–Sahi proof](../results/chen-khare-sahi-macdonald/PROOF.md) reduces every degree-six Muirhead-semiring representation to 38 displayed products and seven pure monomials. An exact rational functional is nonnegative on all of them and negative on the specified normalized Macdonald difference. This exhaustive reduction proves nonmembership in the full semiring. The [independent reviews](../results/chen-khare-sahi-macdonald/ROOT_REVIEW.md) also verify the rectangular-translate and continuous-parameter families.
+
+```bash
+python3 results/chen-khare-sahi-macdonald/verify.py
+python3 results/chen-khare-sahi-macdonald/independent_cone_check.py
+python3 results/chen-khare-sahi-macdonald/independent_orthogonality_check.py
+```
+
+All three scripts use only exact integers and fractions from the Python standard library. The main verifier checks the full cone, cleared-denominator Macdonald difference equations, and exact normalized separator value. The other scripts independently regenerate the cone values and derive both polynomials from the Hall inner product on all eleven partitions of six before specialization to three variables. Numerical linear programming was used only during discovery and is not a proof premise.
+
+
 The [Ferreira–Simon beta-prime proof](../results/ferreira-simon-beta-prime/PROOF.md) is a complete analytic Mellin-transform argument for the full parameter range. Its [two](../results/ferreira-simon-beta-prime/ALGEBRA_REVIEW.md) [independent reviews](../results/ferreira-simon-beta-prime/ROOT_REVIEW.md) check the normalization, domains, positive-series interchanges, and uniqueness step. The standard-library script checks 18 exact identities in formal parameters; these are supplementary algebra checks, not a finite-parameter proof.
 
 ```bash
