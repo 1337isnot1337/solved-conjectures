@@ -107,3 +107,49 @@ Integer signed multiplicities cause no problem in this formal Laurent monomial i
 ## 6. Audit limits
 
 This review establishes the internal mathematics and the precise connection to the intended source statement. It does not assert that the result is new; that question requires the separate prior-resolution search. No finite experiment is used as evidence for the unbounded theorem, and no Lean work was performed.
+
+
+## 7. Supplement: all hook Schur coefficients
+
+The later hook-coefficient supplement was checked independently against the source's Theorem 3.2, equation (20), as well as Definition 5.3. It also passes.
+
+To avoid a collision between the graph parameter and the plethystic variable, write the latter as $z$. Theorem 3.2 and Carlsson–Mellit give, for a Dyck graph $H$ with incoming degrees $a_v(H)$,
+
+```math
+\operatorname{LLT}_H[z-1;q^{-1}]
+=\prod_v(z-q^{-a_v(H)}).
+```
+
+The incoming convention is explicit in Theorem 3.2: $a_j$ counts edges $i<j$. Since $\sum_v a_v(H)=|E(H)|$, multiplying by the defining factor $q^{|E(H)|}$ and applying $\omega F[1-z]=(-1)^nF[z-1]$ yields
+
+```math
+\omega\widetilde{\operatorname{LLT}}_H[1-z]
+=\prod_v(1-zq^{a_v(H)}).
+```
+
+Every optional vertical edge enters a different lower cell, so the subset sum in Definition 5.3 factors cell by cell. For one such lower cell with base incoming degree $d$, upper arm $a$, and upper leg parameter $t$, the local sum divided by $q-1$ is
+
+```math
+\begin{aligned}
+&\frac{(t-q^a)(1-zq^{d+1})+(-t+q^{a+1})(1-zq^d)}{q-1}\\
+&\hspace{2cm}=q^a(1-zq^{d-a}t).
+\end{aligned}
+```
+
+If the lower cell is in column $c$ and has a cell above it in a row of length $L$, then $d=(c-1)+(L-c)=L-1$ while $a=L-c$. Thus $d-a=c-1$. Without an upper cell its degree is already $c-1$.
+
+After cancellation of the global $q^{-A}$, a column of height $h$ contributes its $t$ labels in the order $h-r$, where $r$ is the row counted from below. Reversing their order within this column preserves the product and the common $q^{c-1}$ factor. Consequently,
+
+```math
+\widetilde H_\mu[1-z;q,\mathbf t]
+=\prod_{(c,r)\in\mu}
+(1-zq^{c-1}t_{r-1}).
+```
+
+For degree $n>0$, the only Schur functions surviving at $1-z$ are hooks, and
+
+```math
+s_{(n-k,1^k)}[1-z]=(1-z)(-z)^k.
+```
+
+The cell $(1,1)$ supplies a factor $1-z$ on the product side. Dividing it out and comparing powers of $-z$ gives the complete hook formula: the coefficient of $s_{(n-k,1^k)}$ equals the $k$-th elementary symmetric function in the remaining cell monomials. The proof is uniform in the size and shape, and uses the modified convention throughout. It is a supplement to the same conjecture package, not an additional named-resolution count.
