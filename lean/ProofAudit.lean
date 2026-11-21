@@ -9,6 +9,18 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BabaiPathSpectrum.independent_card_bound,
+    `BabaiPathSpectrum.coloring_card_bound,
+    `BabaiPathSpectrum.ordered_coloring_exists,
+    `BabaiPathSpectrum.colorable_card_add_one,
+    `BabaiPathSpectrum.nonmultiples_card_lower,
+    `BabaiPathSpectrum.initial_distances_subset,
+    `BabaiPathSpectrum.realizing_distances,
+    `BabaiPathSpectrum.modular_colorable,
+    `BabaiPathSpectrum.clique_lower,
+    `BabaiPathSpectrum.realize_chromatic_number,
+    `BabaiPathSpectrum.mem_spectrum_iff,
+    `BabaiPathSpectrum.spectrum_eq_interval,
     `Hornak.partition_from_assignment,
     `Hornak.partition_assigns_with_largest_center,
     `Hornak.tripod_middle_subset_iff,
@@ -374,6 +386,8 @@ run_cmd do
     `Sonntag.separated_blockers_impossible,
     `Sonntag.tournament_no_separation,
 
+    `BariczPogany.source_recurrence_unique,
+    `BariczPogany.source_recurrence_conjecture,
     `BariczPogany.source_recurrence,
     `BariczPogany.conjecture,
     `BariczPogany.explicit_lower_bound,

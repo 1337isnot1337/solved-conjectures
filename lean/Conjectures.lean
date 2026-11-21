@@ -1,3 +1,4 @@
+import Conjectures.BabaiPathSpectrum
 import Conjectures.ChenKhareSahi
 import Conjectures.ChenKhareSahiReal
 import Conjectures.ChenKhareSahiCone

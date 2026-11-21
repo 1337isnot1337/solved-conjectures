@@ -53,7 +53,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Random lonely runners on a fixed hyperplane](results/loneliness-on-a-hyperplane/) | ✅ |
 | [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
 | [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | ⬜ |
-| [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ⬜ |
+| [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |
 | [Chow's conjecture](results/chow-conjecture/) | ⬜ |
 | [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
 | [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | ⬜ |
@@ -72,7 +72,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
 | [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
 | [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
-| [Baricz–Pogány's asymptotic-coefficient positivity conjecture](results/baricz-pogany-coefficients/) | 🟡 |
+| [Baricz–Pogány's asymptotic-coefficient positivity conjecture](results/baricz-pogany-coefficients/) | ✅ |
 | [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ |
 | [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ |
 | [Currie's conjecture on complexity 2n+1 and critical exponent](results/currie-conjecture-19/) | ⬜ |

@@ -249,7 +249,7 @@ Run `python3 results/zhang-deletion-values/verify.py` with assertions enabled. T
 
 ## Baricz–Pogány coefficient positivity
 
-The existing result package's standard-library diagnostic is `python3 results/baricz-pogany-coefficients/verify.py`. It checks the formal-series identities and finite source fixtures described in its [landing page](../results/baricz-pogany-coefficients/). The general statement rests on the written proof; no formal verification is claimed.
+The existing result package's standard-library diagnostic is `python3 results/baricz-pogany-coefficients/verify.py`. It checks the formal-series identities and finite source fixtures described in its [landing page](../results/baricz-pogany-coefficients/). The full coefficient theorem and source-recurrence endpoint are Lean-verified; the [local receipt](verification/lean-named-20261121/baricz-receipt.json) records strict source compilation, the all-owned axiom audit, and stock-kernel replay.
 
 ## Oravcová–Soták distance-graph classification
 
@@ -257,7 +257,7 @@ Run `python3 results/oravcova-sotak/verify.py` with assertions enabled. The stan
 
 ## Johnson–Kaya–Matzke path spectra
 
-Run `python3 results/babai-spectrum-paths/verify.py` with assertions enabled. The standard-library script computes the chromatic number of every distance graph of `P_n` with `2 <= n <= 14`, 16,369 distance sets in all, and checks that each `Spec(P_n,k)` is the interval from `ceil(n/(n-k))` to `k+1`. It also checks the independence bound by exhaustive search for `n <= 10` and the integer `m` of Johnson–Kaya–Matzke's Theorem 2.3. The [written proof](../results/babai-spectrum-paths/PROOF.md) covers every `n`; the finite check confirms it in the stated range. No Lean verification is included.
+Run `python3 results/babai-spectrum-paths/verify.py` with assertions enabled. The standard-library script computes the chromatic number of every distance graph of `P_n` with `2 <= n <= 14`, 16,369 distance sets in all, and checks that each `Spec(P_n,k)` is the interval from `ceil(n/(n-k))` to `k+1`. It also checks the independence bound by exhaustive search for `n <= 10` and the integer `m` of Johnson–Kaya–Matzke's Theorem 2.3. The [Lean formalization](../lean/Conjectures/BabaiPathSpectrum.lean) proves both bounds and every realization for all admissible `n,k`; [local validation](verification/lean-named-20261121/babai-receipt.json) passed strict sources, all-owned axioms, and stock-kernel replay. The finite Python check is supplementary.
 
 ## Lean proofs
 

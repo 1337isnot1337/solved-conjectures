@@ -4,7 +4,7 @@
 
 **Status:** Elementary written proof, checked by brute force for $`n\le 14`$. It settles Conjecture 2.1 of Johnson, Kaya and Matzke for every $`n`$. The note is unrefereed.
 
-**Lean status:** none. No Lean formalization is included.
+**Lean status:** complete for every `n ≥ 2` and `1 ≤ k < n`. [`BabaiPathSpectrum.spectrum_eq_interval`](../../lean/Conjectures/BabaiPathSpectrum.lean) proves both inclusions using the actual finite graph chromatic number. The construction of every allowed value is formalized without assuming the published realization theorem. Strict source compilation, an all-owned declaration/axiom audit, and independent stock-kernel replay passed. [Local validation receipt](../../docs/verification/lean-named-20261121/babai-receipt.json). The combined repository gate and hosted validation are separate checks.
 
 Primary source: P. Johnson, C. Kaya and R. W. Matzke, *Babai numbers and Babai spectra of paths and cycles*, [arXiv:2409.04869](https://arxiv.org/abs/2409.04869), Conjecture 2.1.
 
@@ -32,9 +32,11 @@ python3 results/babai-spectrum-paths/verify.py
 
 The script computes $`\chi(P_n,D)`$ for every distance set with $`2\le n\le 14`$, 16,369 sets in all. It checks that the values for each $`(n,k)`$ form the interval of the theorem. It also checks the independence bound by exhaustive search for $`n\le 10`$, and the integer $`m`$ of Johnson–Kaya–Matzke's Theorem 2.3 against the closed form. It takes a few seconds and prints one line per $`n`$. An optional argument raises the bound on $`n`$.
 
-The theorem for general $`n`$ rests on the written proof; the script confirms it in the stated range.
+The theorem for general $`n`$ is proved in Lean. The Python script supplies an independent check in the stated finite range.
 
 ## Files
 
 - [`PROOF.md`](PROOF.md): statement, lemmas, proof and sources.
+- [`BabaiPathSpectrum.lean`](../../lean/Conjectures/BabaiPathSpectrum.lean): the complete formalization.
+- [Validation receipt](../../docs/verification/lean-named-20261121/babai-receipt.json): exact checked source/object hashes, commands, and local scope.
 - [`verify.py`](verify.py): standard-library brute-force check.

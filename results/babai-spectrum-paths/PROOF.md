@@ -1,6 +1,6 @@
 # The Babai k-spectrum of a path (Johnson–Kaya–Matzke, Conjecture 2.1)
 
-**Status:** text proof, checked by brute force for $`n\le 14`$. Not formalised.
+**Status:** complete written proof and [Lean formalization](../../lean/Conjectures/BabaiPathSpectrum.lean) for every admissible `n,k`. Strict compilation, an all-owned declaration/axiom audit, and stock-kernel replay passed; [local receipt](../../docs/verification/lean-named-20261121/babai-receipt.json). The additional brute-force check covers $`n\le 14`$.
 
 ## Statement
 

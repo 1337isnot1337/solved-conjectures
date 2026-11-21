@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Babai spectra fully formalized; Baricz–Pogány source recurrence verified
+
+Added the complete Babai path-spectrum formalization, including both bounds and constructive realization for every allowed value, with credit to aadrianvv for the written proof. Added source-recurrence uniqueness and a direct source-recurrence inequality endpoint to Baricz–Pogány. Both passed strict source checks, all-owned axiom audits, and stock-kernel replay. Registered the Babai module and all new endpoints, corrected the stale Baricz–Pogány landing-page claims, and synchronized the full result-level badges and status pages. The combined repository gate and hosted validation remain separate.
+
 ## 2026-11-21 — Horňák–Woźniak tripod subset criterion
 
 Proved both directions of the middle-window subset criterion when all parts exceed the shortest arm, the largest-center assignment exchange, and the coarsening step with the central part kept largest. Strict compilation, a 777-theorem full-chain axiom audit and isolated kernel replay passed. The remaining Barth reductions, existence constructions and combined gate remain.

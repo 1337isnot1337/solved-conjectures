@@ -15,6 +15,14 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Babai path spectra and Baricz–Pogány source recurrence, 21 November 2026
+
+`BabaiPathSpectrum.spectrum_eq_interval` proves the full path-spectrum theorem for every `n ≥ 2`, `1 ≤ k < n`. It uses the actual finite distance graph and proves both inclusions, including the greedy upper bound and every modular-coloring/clique realization. Strict source compilation, the all-owned audit of 43 declarations and 12 required endpoints, and stock-kernel replay passed. [Receipt](verification/lean-named-20261121/babai-receipt.json).
+
+`BariczPogany.source_recurrence_unique` and `source_recurrence_conjecture` make the source recurrence and its all-degree inequality explicit. The complete module passed strict sources, an all-owned audit of 65 declarations and seven required endpoints, and stock-kernel replay. [Receipt](verification/lean-named-20261121/baricz-receipt.json). The prior 2.5 GB strict attempt exhausted its memory cap; the unchanged source passed at the package's existing 4.5 GB cap.
+
+Both modules are registered in the shared imports, required endpoints, and kernel list. Their complete result-level verification is distinct from the combined repository gate and hosted CI, which are not claimed by these local receipts.
+
 ## Horňák–Woźniak tripod subset criterion, 21 November 2026
 
 Lean proves the middle-window subset criterion in both directions when all parts exceed the shortest arm, reserves a largest part in the center at the assignment level, and proves the coarsening step with that central part unchanged. The remaining Barth reductions and existence constructions remain. Strict compilation, a 777-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.

@@ -345,4 +345,27 @@ theorem source_recurrence (nu : ℝ) (n : ℕ) :
   simp only [Nat.sub_self, hz, mul_one] at h
   linarith
 
+/-- The coefficient recurrence in the source determines every coefficient. -/
+theorem source_recurrence_unique (nu : ℝ) (a : ℕ → ℝ)
+    (ha : ∀ n, a n = sourceRaw nu n -
+      ∑ i ∈ Finset.range n, a i * sourceRaw (nu+1) (n-i)) :
+    ∀ n, a n = PowerSeries.coeff n (sourceAlpha nu) := by
+  intro n
+  induction n using Nat.strong_induction_on with
+  | h n ih =>
+    rw [ha n, source_recurrence nu n]
+    congr 1
+    apply Finset.sum_congr rfl
+    intro i hi
+    rw [ih i (Finset.mem_range.mp hi)]
+
+/-- The conjectured inequality for any sequence defined by the source recurrence. -/
+theorem source_recurrence_conjecture (nu : ℝ) (hnu : |nu| < 1/2)
+    (a : ℕ → ℝ)
+    (ha : ∀ n, a n = sourceRaw nu n -
+      ∑ i ∈ Finset.range n, a i * sourceRaw (nu+1) (n-i))
+    (n : ℕ) (hn : 2 ≤ n) : (nu+1/2)^n < a n := by
+  rw [source_recurrence_unique nu a ha n]
+  exact conjecture nu hnu n hn
+
 end BariczPogany

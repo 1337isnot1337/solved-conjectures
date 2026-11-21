@@ -13,7 +13,7 @@ contains an unlinked submitted follow-up on the four-parameter
 Kaiser–Bessel distribution; its contents were not available for review.
 The proof is complete, but exclusive priority is not guaranteed.
 
-**Lean status:** none. No Lean formalization is included.
+**Lean status:** complete. [`Conjectures.BariczPogany`](../../lean/Conjectures/BariczPogany.lean) proves the full coefficient inequality, explicit lower bound, and uniqueness and positivity of the sequence defined by the source recurrence. Strict compilation, an all-owned audit of 65 declarations and seven required theorem endpoints, and independent stock-kernel replay passed. [Local validation receipt](../../docs/verification/lean-named-20261121/baricz-receipt.json). The combined repository gate remains pending.
 
 ## The statement
 
@@ -89,6 +89,5 @@ It reports 455 exact identities, 49 source fixtures, and 105 strict
 bounds passed. These finite checks support the written proof; they do
 not establish the universal statement.
 
-No proof assistant is used.
 
-The full coefficient inequality and explicit lower bound are checked in [`Conjectures.BariczPogany`](../../lean/Conjectures/BariczPogany.lean), starting from the source factorial products and formal quotient. Strict compilation and isolated kernel replay passed; the combined repository gate remains pending.
+The formal proof starts from the source factorial products and formal quotient. `source_recurrence_unique` identifies any sequence satisfying the source recurrence, and `source_recurrence_conjecture` proves the desired inequality directly for that sequence. No convergence claim about the asymptotic expansion is needed.

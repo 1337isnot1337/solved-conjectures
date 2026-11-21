@@ -1,0 +1,101 @@
+{
+  "all_owned_declarations_audited": true,
+  "artifact_sha256": {
+    ".lake/build/lib/lean/Conjectures/BariczPogany.olean": "1a3faa8f19af6f6c64a07ad6d1a391e11da768f6bf449f7413c926335fa6da51"
+  },
+  "audit_source_sha256": "69dab8ca217765a2c75a0719dffcc1ba5c3fa3e355ada242d88a2ef207b0cfdc",
+  "axiom_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 65,
+    "modules": 1,
+    "private_declarations": 0,
+    "raw_declarations": 65,
+    "required": 7,
+    "tag": "passed",
+    "theorems": 55
+  },
+  "base_commit": "fd69043566c4149bf7a89d6bd0470c9ffa0304c3",
+  "combined_repository_gate": false,
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "Conjectures/BariczPogany.lean",
+        "-o",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/build/lib/lean/Conjectures/BariczPogany.olean"
+      ],
+      "exit_code": 0,
+      "label": "source-Conjectures.BariczPogany",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "/workspace/scratch/259689a4e588/solved-conjectures/lean/.lake/NamedResultAudit-baricz-strict.lean"
+      ],
+      "exit_code": 0,
+      "label": "all-owned-axioms",
+      "log_sha256": "ef58a6967eab936a58e13e016ba40d9d4a608d0b4966db47a61bbfe4a9b8f29d"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "../scripts/replay_lean.py",
+        "--root",
+        "Conjectures.BariczPogany"
+      ],
+      "exit_code": 0,
+      "label": "kernel-Conjectures.BariczPogany",
+      "log_sha256": "c9ab924953e0ae4b75af84487f53da98c06000e8e6941f22c01fefd96c4baea8"
+    }
+  ],
+  "completed_utc": "2026-11-21T14:49:33.061635+00:00",
+  "evidence_directory": "docs/verification/lean-named-20261121",
+  "exact_raw_private_visibility": true,
+  "modules": [
+    "Conjectures.BariczPogany"
+  ],
+  "pinned_executable_sha256": {
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6"
+  },
+  "required_theorems": [
+    "BariczPogany.source_recurrence_unique",
+    "BariczPogany.source_recurrence_conjecture",
+    "BariczPogany.source_recurrence",
+    "BariczPogany.conjecture",
+    "BariczPogany.explicit_lower_bound",
+    "BariczPogany.source_unique",
+    "BariczPogany.source_factorization"
+  ],
+  "roots": [
+    "Conjectures.BariczPogany"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/BariczPogany.lean": "addd6f78e1d8beb8387aabda2c27ebda7aa94a6a82d32574d07ed4621e610ebf",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c"
+  },
+  "sources_unchanged": true,
+  "started_utc": "2026-11-21T14:48:10.544610+00:00",
+  "status": "passed"
+}
