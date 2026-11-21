@@ -111,7 +111,7 @@ The `construction` and `quotient-data` Legendre tasks are accepted components af
 ### Zhang deletion-value arithmetic candidate
 
 `Conjectures.ZhangDeletion` proves the coprime-denominator window, its strict
-bound for the small-deletion case, and the three modular residue exclusions.
+bound for the small-deletion case, the modular inverse, and the combined modular witness for every retained speed.
 Its module build and isolated kernel replay passed locally. These lemmas do not
 establish the actual distance witness or the deletion-value theorem; the module
 is not yet registered in the full gate. Work is reserved on issue #130.

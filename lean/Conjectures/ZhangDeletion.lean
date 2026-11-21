@@ -1,5 +1,6 @@
 import Mathlib.Data.Nat.GCD.Basic
 import Mathlib.Data.Nat.ModEq
+import Mathlib.Data.ZMod.Basic
 
 namespace ZhangDeletion
 
@@ -62,6 +63,36 @@ theorem residue_ne_last (D j r v : ℕ) (hj : Nat.Coprime D j)
   have hcancel := Nat.ModEq.cancel_right_of_coprime hj heq
   change (v+r) % D = 0 % D at hcancel
   simp only [Nat.mod_eq_of_lt hvrD, Nat.zero_mod] at hcancel
+  omega
+
+theorem inverse_witness (D r : ℕ) (hD : 1 < D) (hr : Nat.Coprime r D) :
+    ∃ j, j < D ∧ Nat.Coprime D j ∧ (r*j) % D = 1 := by
+  letI : NeZero D := ⟨by omega⟩
+  let j := ((r : ZMod D)⁻¹).val
+  refine ⟨j, ZMod.val_lt _, ?_, ?_⟩
+  · have he := ZMod.mul_val_inv hr
+    have hu : IsUnit ((r : ZMod D) * (j : ZMod D)) := by
+      rw [show (r : ZMod D) * (j : ZMod D) = 1 from he]
+      exact isUnit_one
+    exact ((ZMod.isUnit_iff_coprime j D).1 (isUnit_of_mul_isUnit_right hu)).symm
+  · have he := ZMod.mul_val_inv hr
+    have he' : ((r*j : ℕ) : ZMod D) = ((1 : ℕ) : ZMod D) := by
+      simpa only [Nat.cast_mul, Nat.cast_one] using he
+    have hm := (ZMod.natCast_eq_natCast_iff' (r*j) 1 D).1 he'
+    simpa [Nat.mod_eq_of_lt hD] using hm
+
+theorem modular_witness (n r D : ℕ) (hn : 1 ≤ n) (hr : 1 ≤ r)
+    (hD : n+r ≤ D) (hc : Nat.Coprime r D) :
+    ∃ j, j < D ∧ ∀ v, 1 ≤ v → v < n → v ≠ r →
+      2 ≤ (v*j) % D ∧ (v*j) % D ≤ D-2 := by
+  have hD1 : 1 < D := by omega
+  obtain ⟨j, hjD, hj, hjr⟩ := inverse_witness D r hD1 hc
+  refine ⟨j, hjD, ?_⟩
+  intro v hv hvn hvr
+  have h0 := residue_ne_zero D j v hj (by omega) (by omega)
+  have h1 := residue_ne_one D j r v hj (by omega) (by omega) hvr hjr
+  have hl := residue_ne_last D j r v hj hD1 (by omega) (by omega) hjr
+  have hm := Nat.mod_lt (v*j) (by omega : 0 < D)
   omega
 
 end ZhangDeletion
