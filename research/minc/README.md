@@ -237,3 +237,9 @@ The [independent priority addendum](../../results/malek-subpermanent/priority-au
 ## P18 and PSW priority follow-up
 
 The [P18 addendum](../../results/perron-root-permanental-compounds/priority-audit-addendum.md) credits existing semigroup spectral-concavity arguments and distinguishes restricted Hamiltonian trace algorithms from the proposed arbitrary-input FPRAS. Primary retrieval records identify the inspected sections and remaining access limits. The [PSW addendum](../../results/pula-song-wanless/priority-audit-addendum.md) checks alternate boundary-face notation, later citations, and a citation-index metadata collision. Neither pass located an earlier theorem with the full respective candidate scope; neither certifies historical priority. No new mathematical result is added to the count.
+
+## Poisson composition and radial asymptotics
+
+The [Poisson Gram equivalence](inequalities/gyires_poisson_gram_equivalence.md), with [independent review](inequalities/gyires_poisson_review.md), identifies the product of two substochastic cores with an exact inner product of output densities. The all-core product inequality is equivalent to the all-core Gram inequality. The necessary density–norm bound is still unproved, and the limiting constant remains weaker than the finite-order Gyires constant.
+
+The [zero-diagonal radial note](inequalities/c44_radial_asymptotic_gap.md), with [independent review](inequalities/c44_radial_gap_review.md), proves a uniform quadratic margin for the determinant approximation at the proposed minimizer. Two exact families show that Frobenius confinement alone does not imply the assumptions of the available permanent asymptotic theorems. A uniform quadratic remainder-difference bound is still missing. Neither note resolves a conjecture or adds a finite-order extension.
