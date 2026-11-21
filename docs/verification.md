@@ -22,6 +22,12 @@ The [Simon stable-infimum proof](../results/simon-stable-infimum/PROOF.md) is al
 
 ## Computational checks
 
+The [Vishnyakova checker](../results/vishnyakova-root-radius/verify.py) uses SymPy for 73 exact algebraic checks of the generating recurrence, reflection, finite Vandermonde identity, tridiagonal characteristic polynomials, matrix quadratic estimate, reciprocal-segment crossing, and sharpness witness. The [written proof](../results/vishnyakova-root-radius/PROOF.md) covers every degree, every positive weight, and arbitrary independent parameters. The finite checks diagnose algebra and transcription errors; they are not the unrestricted proof.
+
+```sh
+python3 results/vishnyakova-root-radius/verify.py
+```
+
 The [Novelli–Thibon checker](../results/novelli-thibon/verify.py) independently converts permutation fundamental expansions to Schur coefficients using Kostka numbers. It checks all first-moment identities for 209 partition pairs and all 135 hook coefficients through size six, and exactly matches the source's printed polynomial. These finite checks verify conventions; the [written proof](../results/novelli-thibon/PROOF.md) establishes both identities for every size. The script uses only the Python standard library.
 
 ```bash

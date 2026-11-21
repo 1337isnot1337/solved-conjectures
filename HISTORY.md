@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Vishnyakova's conjecture
+
+Added a complete proposed proof of the outer-root-radius conjecture for every polynomial degree and every positive real weight. The proof gives the stronger disk centered at minus half the weight, and the all-one parameter vector attains the claimed outer radius. A complex-parameter tridiagonal argument and reciprocal-segment lemma establish half-plane zero exclusion; Grace–Walsh–Szegő and Hurwitz extend it to arbitrary independent real parameters. The equal-parameter recurrence and disk theorem from the earlier October report are credited explicitly. The original and weighted conjectures count as one family.
+
+Two independent internal mathematical reviews and 73 exact algebraic checks passed. The source audit distinguishes prior low-degree and equal-parameter results, the neighboring already-disproved root-gap question, and later multiplication-closure theorems. No earlier full root-radius resolution was found within that documented audit; access limits and lack of external review remain explicit. The issue-156 campaign tally is five after its two priority corrections. No Lean work was performed. The Alexandersson–Leite peak-nesting conjecture was separately excluded after an earlier full informal disproof was located; its independently checked reproof is retained only as credited research.
+
 ## 2026-11-21 — Novelli–Thibon's conjecture
 
 Added a complete proposed proof of the intended monomial-product Conjecture 5.7 for all partitions and independent parameters. A universal word-comparison identity determines every first derivative at the unit parameter point, and the Pieri rule extracts the tableau exponent. The source's printed exponent index is corrected using its own example. A separate product evaluation, derived from the credited Carlsson–Mellit theorem, also proves the adjacent hook-coefficient formula; it is part of the same named package.

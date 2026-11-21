@@ -47,6 +47,8 @@ jobs:
           python -m pip install sympy==1.14.0
           python results/gilmore-crossing-nesting/verify.py
           python results/chow-conjecture/verify.py
+      - name: Check Vishnyakova polynomial-transform identities
+        run: python results/vishnyakova-root-radius/verify.py
       - name: Check Hoggatt identities and independent counterexamples
         run: |
           python results/fang-zhang-zhao/verify.py

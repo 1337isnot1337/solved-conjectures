@@ -54,6 +54,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Vishnyakova's conjecture": "vishnyakova-root-radius",
     "Novelli–Thibon's conjecture": "novelli-thibon",
     "Simon's stable-infimum conjecture": "simon-stable-infimum",
     "López Pouso–Segura's conjectures": "lopez-pouso-segura-bessel",

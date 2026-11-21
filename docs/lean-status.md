@@ -34,6 +34,7 @@ Lean verification.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| Vishnyakova's conjecture | Not formalized | Complete proposed all-degree, all-positive-weight outer-radius proof with a stronger centered-disk theorem for arbitrary independent parameters. Two internal mathematical reviews and exact algebraic diagnostics passed. Earlier equal-parameter work is credited. No Lean formalization is claimed. |
 | Novelli–Thibon's conjecture | Not formalized | Complete proposed proof of the intended monomial-product Conjecture 5.7 for all partitions and independent parameters, plus the adjacent all-size hook-coefficient formula. Two internal mathematical reviews and exact convention checks passed. The source index correction and priority limits are explicit; Schur positivity and general traces are not claimed. |
 | López Pouso–Segura's conjectures | Not formalized | Complete proposed proofs of the three published Bessel-weight sequence conjectures, counted together. Signs, strict monotonicity, and exact limits hold at every index. Two independent internal reviews and exact algebraic checks passed. No finite-degree Gauss–Legendre or Lean claim is included. |
 | Simon's stable-infimum conjecture | Not formalized | Complete proposed proof of the full parameterwise convex order, including the Brownian endpoint. The independent review checks the prior Mellin transform, increasing logarithmic Lévy measures, exponential integrability and conditional Jensen argument. No numerical or finite-case inference is used. |
