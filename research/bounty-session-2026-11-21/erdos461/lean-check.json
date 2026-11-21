@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "toolchain": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "scope": "auxiliary prime-power profile/gcd equivalence, admissible factorial modulus and profile periodicity; not the bounty target",
+  "source_sha256": "8534c25c9b1df1437ec2fc17bc61d892038a8c916ca05b69d9a9b28a91706264",
+  "sorry_ax_present": false,
+  "command": [
+    "/home/agent/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "/workspace/scratch/e391f709341f/research/bounty-session-2026-11-21/erdos461/ResidueReduction.lean"
+  ],
+  "lean_path": "/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/Cli/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/17b12d3ee06e/solved-conjectures/lean/.lake/packages/proofwidgets/.lake/build/lib/lean"
+}

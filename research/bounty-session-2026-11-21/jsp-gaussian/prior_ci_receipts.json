@@ -1,0 +1,180 @@
+[
+  {
+    "read_date": "2026-11-21",
+    "pr_url": "https://github.com/TheJustinSunPrize/awards/pull/1466",
+    "pr_state": "open",
+    "merged": false,
+    "pr_head": "39cd3d7bf4ae29fcc372abb40648691aea32be8e",
+    "workflow": {
+      "jobs": [
+        {
+          "id": 105709074105,
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 35378577767,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run leanprover/lean-action@v1",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Print axioms of the main theorems",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            }
+          ]
+        }
+      ]
+    },
+    "selected_log_lines": [
+      "2026-09-18T18:10:09.4344750Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +131cefff65ca0e0627a1fde75ff62e4f2758b6a9:refs/remotes/origin/main",
+      "2026-09-18T18:10:09.7396675Z  * [new ref]         131cefff65ca0e0627a1fde75ff62e4f2758b6a9 -> origin/main",
+      "2026-09-18T18:10:09.7491882Z ##[group]Checking out the ref",
+      "2026-09-18T18:10:09.7734322Z [command]/usr/bin/git log -1 --format=%H",
+      "2026-09-18T18:10:09.7761986Z 131cefff65ca0e0627a1fde75ff62e4f2758b6a9",
+      "2026-09-18T18:10:20.8557147Z   key: lake-Linux-X64-e20ed64a20de27acb4238a4cdeb8a391151cfcc73275f80db7bc01a55f097d45-22d755d48dad61318115e7f667feac475eeb4a20358dddaabc03cfb32a98f127-131cefff65ca0e0627a1fde75ff62e4f2758b6a9",
+      "2026-09-18T18:13:17.4602547Z Build completed successfully (9116 jobs).",
+      "2026-09-18T18:13:17.7261335Z   key: lake-Linux-X64-e20ed64a20de27acb4238a4cdeb8a391151cfcc73275f80db7bc01a55f097d45-22d755d48dad61318115e7f667feac475eeb4a20358dddaabc03cfb32a98f127-131cefff65ca0e0627a1fde75ff62e4f2758b6a9",
+      "2026-09-18T18:13:45.4367815Z Cache saved with key: lake-Linux-X64-e20ed64a20de27acb4238a4cdeb8a391151cfcc73275f80db7bc01a55f097d45-22d755d48dad61318115e7f667feac475eeb4a20358dddaabc03cfb32a98f127-131cefff65ca0e0627a1fde75ff62e4f2758b6a9",
+      "2026-09-18T18:13:49.9042312Z 'Erdos996.erdos_996' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9042957Z 'Erdos1199.erdos_1199' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9043559Z 'Erdos1199.erdos_1199_pos' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9044138Z 'Erdos1199.erdos_1199_fc' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9044694Z 'Erdos612.erdos_612' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9048035Z 'Erdos612.erdos_612_false' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9048876Z 'Erdos514.erdos_514' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9049666Z 'Erdos956.erdos956' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9050461Z 'Erdos956.erdos956_main' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9051340Z 'Erdos956.erdos956_lowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9052200Z 'Erdos265.erdos_265' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9052980Z 'Erdos995.erdos_995' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9053761Z 'Erdos790.erdos_790' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9054636Z 'DuffinSchaeffer.duffin_schaeffer' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9055786Z 'DuffinSchaeffer.erdos_999' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9056612Z 'Erdos494.erdos_494' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-18T18:13:49.9057461Z 'Erdos494.gordon_fraenkel_straus' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ],
+    "interpretation": "Observed existing contributor-controlled CI and source claims, not a fresh local build, organizer acceptance or payment."
+  },
+  {
+    "read_date": "2026-11-21",
+    "pr_url": "https://github.com/TheJustinSunPrize/awards/pull/681",
+    "pr_state": "open",
+    "merged": false,
+    "pr_head": "c5667d5ee7a9203525abed40fb065e8fc88fcf93",
+    "workflow": {
+      "jobs": [
+        {
+          "id": 105228084769,
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 35229071831,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Check out the exact submitted commit",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Install elan and the pinned Lean toolchain",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Restore and checksum-check the pinned proof dependency",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Build using the committed dependency lockfile",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Print theorem statements and audit their axioms",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Record the verified revision",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Post Check out the exact submitted commit",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 14
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 15
+            }
+          ]
+        }
+      ]
+    },
+    "selected_log_lines": [
+      "2026-09-17T13:45:15.9143387Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0efb66fcc18ce26d38496e971a5d2b59d3dfa9b4:refs/remotes/origin/complete-original-problem",
+      "2026-09-17T13:45:16.3447387Z  * [new ref]         0efb66fcc18ce26d38496e971a5d2b59d3dfa9b4 -> origin/complete-original-problem",
+      "2026-09-17T13:45:16.3552771Z ##[group]Checking out the ref",
+      "2026-09-17T13:45:16.3717476Z [command]/usr/bin/git log -1 --format=%H",
+      "2026-09-17T13:45:16.3744507Z 0efb66fcc18ce26d38496e971a5d2b59d3dfa9b4",
+      "2026-09-17T13:47:22.9097106Z info: Erdos339/UpperDensity.lean:152:0: 'Erdos339.erdos_339_upperDensity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-17T13:47:25.4188380Z Build completed successfully (1572 jobs).",
+      "2026-09-17T13:47:25.4575316Z reports = re.findall(r\"'([^']+)' depends on axioms: \\[([^\\]]*)\\]\", text)",
+      "2026-09-17T13:47:27.3575230Z Erdos339.erdos_339_complete :",
+      "2026-09-17T13:47:27.3577028Z 'Erdos339.erdos_339' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-17T13:47:27.3577623Z 'Erdos339.erdos_339_upperDensity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-17T13:47:27.3578296Z 'Erdos339.upperDensity_nsmul_le_restrictedSums' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-17T13:47:27.3578948Z 'Erdos339.erdos_339_complete' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-09-17T13:47:27.4898652Z Verified Git commit: 0efb66fcc18ce26d38496e971a5d2b59d3dfa9b4"
+    ],
+    "interpretation": "Observed existing contributor-controlled CI and source claims, not a fresh local build, organizer acceptance or payment."
+  }
+]

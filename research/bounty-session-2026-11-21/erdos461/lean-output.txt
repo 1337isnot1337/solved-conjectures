@@ -1,0 +1,6 @@
+'Erdos461ResidueReduction.factorialModulus_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos461ResidueReduction.explicit_small_prime_profile_period' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos461ResidueReduction.same_small_prime_powers_iff_gcd_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos461ResidueReduction.same_small_prime_powers_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
