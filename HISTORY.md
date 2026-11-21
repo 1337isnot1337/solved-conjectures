@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Circular chromatic index of complete graphs minus a few edges
+
+Gave a second, shorter proof of Conjecture 2 of Mazák and Zrubák, *Circular chromatic index of small graphs* (arXiv:2603.08822): `χ'_c(K_n-e) = n` for every odd `n >= 7`. A smaller value would give a cyclic order of the edges in which every `m = (n-1)/2` consecutive edges are disjoint, and the residue classes of such an order force an edge to occur twice. Determined `χ'_c` for `K_n` minus two or three edges for small `n`, among them `χ'_c(K_11-2K_2) = 32/3`, which refutes the note's own earlier Conjecture H; the corrected Conjecture H′, `χ'_c(K_n-F) = n - 1/⌈m/t⌉` for `2 <= t <= m-1`, is stated without proof. Explicit colourings below `n` for `K_n-tK_2` at `n = 15, 19, 23, 27, 47` give graphs with `χ'_c` in `(Δ+1/2, Δ+1)` for `Δ = 14, 18, 22, 26, 46`. The package contains the written proof, the 32 colourings with a standard-library checker, a standard-library exhaustive search for perfect sequencings, optional SAT exclusions with a DRUP certificate generator, and the reports and scripts of two independent model referee passes. The colourings for `n = 19, 23, 27, 47` and the symmetry and structure lemmas added after the second pass are unrefereed; no Lean verification was performed.
+
 ## 2026-11-21 — Steinke–Zakynthinou’s agnostic VC learning conjecture
 
 Added the [proposed proof of Conjecture 6](results/steinke-zakynthinou-agnostic-vc/PROOF.md) to the results catalogue. Its multiscale entropy learner returns a member of the original hypothesis class. Full Lean verification and independent review are pending.

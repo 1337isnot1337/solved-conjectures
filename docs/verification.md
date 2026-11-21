@@ -328,6 +328,8 @@ python3 results/currie-conjecture-19/verify.py
 python3 results/tight-nine-speeds/verify.py
 python3 results/zhang-deletion-values/verify.py
 python3 results/circular-index-complete-minus-edge/verify.py
+python3 results/circular-index-complete-minus-edges/verify.py
+python3 results/circular-index-complete-minus-edges/verify_seq.py
 ```
 
 The latest workflow is the executable reference when new checks are added.
@@ -355,6 +357,10 @@ Run `python3 results/pula-song-wanless/verify.py` with assertions enabled and Sy
 ## Mazák–Zrubák complete graphs minus an edge
 
 Run `python3 results/circular-index-complete-minus-edge/verify.py` with assertions enabled. The standard-library script enumerates the 2160 proper 5-edge-colourings of `K_5-e`, checks Lemmas 2, 3, 4 and 5(1) on the 180 with acyclic digraph, and shows that no edge ordering with the properties of Lemma 3 exists for `d=6`. The optional `verify_sat.py` and `review/sat_levels.py` check `d=6` directly from the definition, need `python-sat`, and are not run by CI; the other `review/` scripts are the referee pass's independent checks. The [written proof](../results/circular-index-complete-minus-edge/PROOF.md) covers every even `d >= 6`; no script completed `d=8`. No Lean verification is included.
+
+## Circular chromatic index of complete graphs minus a few edges
+
+Run `python3 results/circular-index-complete-minus-edges/verify.py` and `python3 results/circular-index-complete-minus-edges/verify_seq.py` with assertions enabled. The first standard-library script checks the 32 explicit `(p,q)`-edge-colourings of `K_n-F` in `colourings.json` from the definition and prints the matching lower bound `N/m`. The second searches exhaustively for perfect sequencings of `K_5-e`, `K_7-e`, `K_9-e`, `K_7-P_3` and `K_7-2K_2` and checks Lemmas A2 to A4 and the class counts of A5 on those of `K_5-e`; it takes about 25 seconds. The optional `verify_sat.py` and `drat/mkproof.py` need `python-sat` and are not run by CI, nor are the referee scripts in `review/`. The [written proof](../results/circular-index-complete-minus-edges/PROOF.md) of Theorem A covers every odd `n >= 7`; the exact values for small `n` also rest on exhaustive searches and SAT runs. No Lean verification is included.
 
 ## Zhang's Question 8.4
 
