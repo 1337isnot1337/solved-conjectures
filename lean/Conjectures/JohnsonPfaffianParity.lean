@@ -200,10 +200,10 @@ theorem swap_matching_crossing_parity (u i : ℕ) (hi : i+1<2*u)
     (swapMatching_spec u i hi M).trans (hp.map _)
   rw [← crossingCount_perm hperms] at hpar
   exact hpar
-theorem swap_matching_sign (u i : ℕ) (hi : i+1<2*u)
+theorem swap_matching_sign {R : Type*} [CommRing R] (u i : ℕ) (hi : i+1<2*u)
     (M : {M // M ∈ matchingFinset u}) (hpair : (i,i+1) ∉ M.val) :
-    (-1:ℝ)^(pairCount crossContribution (swapMatching u i hi M).val) =
-      -((-1:ℝ)^(pairCount crossContribution M.val)) := by
+    (-1:R)^(pairCount crossContribution (swapMatching u i hi M).val) =
+      -((-1:R)^(pairCount crossContribution M.val)) := by
   have hpar := swap_matching_crossing_parity u i hi M hpair
   have ⟨_,horig,hsorig⟩ := (mem_matchingFinset (u := u) (arcs := M.val)).mp M.property
   have ⟨_,hnew,hsnew⟩ := (mem_matchingFinset (u := u) (arcs := (swapMatching u i hi M).val)).mp (swapMatching u i hi M).property
@@ -221,7 +221,7 @@ theorem swap_matching_sign (u i : ℕ) (hi : i+1<2*u)
       have := Nat.mod_lt (crossingCount (swapMatching u i hi M).val) (by decide : 0<2)
       omega
     rw [hneweven.neg_one_pow, holdodd.neg_one_pow]; norm_num
-theorem swapMatching_edgeProduct (u i : ℕ) (hi : i+1<2*u) (w : ℕ → ℕ → ℝ)
+theorem swapMatching_edgeProduct {R : Type*} [CommRing R] (u i : ℕ) (hi : i+1<2*u) (w : ℕ → ℕ → R)
     (hw : ∀ e : ℕ × ℕ, e.1<e.2 → w (swapEdge i e).1 (swapEdge i e).2 = w e.1 e.2)
     (M : {M // M ∈ matchingFinset u}) :
     edgeProduct w (swapMatching u i hi M).val = edgeProduct w M.val := by
@@ -244,15 +244,15 @@ theorem swapMatching_avoids_pair (u i : ℕ) (hi : i+1<2*u)
   have heq' := congrArg (swapEdge i) heq
   rw [swapEdge_involutive i e ho, hs] at heq'
   exact hpair (heq' ▸ he)
-theorem adjacent_swap_matching_cancellation (u i : ℕ) (hi : i+1<2*u) (w : ℕ → ℕ → ℝ)
+theorem adjacent_swap_matching_cancellation {R : Type*} [CommRing R] (u i : ℕ) (hi : i+1<2*u) (w : ℕ → ℕ → R)
     (hw : ∀ e : ℕ × ℕ, e.1<e.2 → w (swapEdge i e).1 (swapEdge i e).2 = w e.1 e.2) :
     ∑ M ∈ (matchingFinset u).filter (fun M => (i,i+1) ∉ M),
-      (-1:ℝ)^(pairCount crossContribution M) * edgeProduct w M = 0 := by
+      (-1:R)^(pairCount crossContribution M) * edgeProduct w M = 0 := by
   classical
   apply Finset.sum_involution (fun M hM => (swapMatching u i hi ⟨M,(Finset.mem_filter.mp hM).1⟩).val)
   · intro M hM
     have hp := (Finset.mem_filter.mp hM).2
-    have hs := swap_matching_sign u i hi ⟨M,(Finset.mem_filter.mp hM).1⟩ hp
+    have hs := swap_matching_sign (R := R) u i hi ⟨M,(Finset.mem_filter.mp hM).1⟩ hp
     have hw' := swapMatching_edgeProduct u i hi w hw ⟨M,(Finset.mem_filter.mp hM).1⟩
     simp only at hs hw'
     rw [hs,hw']
@@ -267,7 +267,7 @@ theorem adjacent_swap_matching_cancellation (u i : ℕ) (hi : i+1<2*u) (w : ℕ 
     apply Finset.mem_filter.mpr
     exact ⟨(swapMatching u i hi ⟨M,(Finset.mem_filter.mp hM).1⟩).property,
       swapMatching_avoids_pair u i hi ⟨M,(Finset.mem_filter.mp hM).1⟩ (Finset.mem_filter.mp hM).2⟩
-theorem twin_rows_swap_weight (i : ℕ) (w : ℕ → ℕ → ℝ)
+theorem twin_rows_swap_weight {R : Type*} [CommRing R] (i : ℕ) (w : ℕ → ℕ → R)
     (htwin : ∀ k, k≠i → k≠i+1 →
       w (min i k) (max i k) = w (min (i+1) k) (max (i+1) k)) :
     ∀ e : ℕ × ℕ, e.1<e.2 → w (swapEdge i e).1 (swapEdge i e).2 = w e.1 e.2 := by
@@ -309,10 +309,103 @@ theorem twin_rows_swap_weight (i : ℕ) (w : ℕ → ℕ → ℝ)
             min_eq_right (by omega : a ≤ i+1),max_eq_left (by omega : a ≤ i+1)] using htwin a ha ha1
         · rw [swapEdge_untouched i (a,b) he ha ha1 hb hb1]
 
-theorem twin_rows_matching_cancellation (u i : ℕ) (hi : i+1<2*u) (w : ℕ → ℕ → ℝ)
+theorem twin_rows_matching_cancellation {R : Type*} [CommRing R] (u i : ℕ) (hi : i+1<2*u) (w : ℕ → ℕ → R)
     (htwin : ∀ k, k≠i → k≠i+1 →
       w (min i k) (max i k) = w (min (i+1) k) (max (i+1) k)) :
     ∑ M ∈ (matchingFinset u).filter (fun M => (i,i+1) ∉ M),
-      (-1:ℝ)^(pairCount crossContribution M) * edgeProduct w M = 0 :=
+      (-1:R)^(pairCount crossContribution M) * edgeProduct w M = 0 :=
   adjacent_swap_matching_cancellation u i hi w (twin_rows_swap_weight i w htwin)
+theorem twin_rows_zero_pivot (u i : ℕ) (hi : i+1<2*u) {R : Type*} [CommRing R]
+    (w : ℕ → ℕ → R) (hw0 : w i (i+1) = 0)
+    (htwin : ∀ k, k≠i → k≠i+1 →
+      w (min i k) (max i k) = w (min (i+1) k) (max (i+1) k)) :
+    ∑ M ∈ matchingFinset u, (-1:R)^(pairCount crossContribution M) * edgeProduct w M = 0 := by
+  classical
+  have hzero : ∑ M ∈ (matchingFinset u).filter (fun M => (i,i+1) ∈ M),
+      (-1:R)^(pairCount crossContribution M) * edgeProduct w M = 0 := by
+    apply Finset.sum_eq_zero
+    intro M hM
+    have hpair := (Finset.mem_filter.mp hM).2
+    have hp : edgeProduct w M = 0 := by
+      unfold edgeProduct
+      apply List.prod_eq_zero
+      apply List.mem_map.mpr
+      exact ⟨(i,i+1),hpair,hw0⟩
+    simp [hp]
+  have hcancel := twin_rows_matching_cancellation u i hi w htwin
+  have hsplit := Finset.sum_filter_add_sum_filter_not (matchingFinset u)
+      (fun M => (i,i+1) ∈ M) (fun M => (-1:R)^(pairCount crossContribution M) * edgeProduct w M)
+  rw [hzero,hcancel] at hsplit
+  simpa using hsplit.symm
+theorem adjacent_edge_crosses_none (i : ℕ) (f : ℕ × ℕ) : edgeCross (i,i+1) f = 0 := by
+  unfold edgeCross crosses
+  split_ifs <;> omega
+
+theorem adjacent_edge_crossingCount_erase (i : ℕ) (M : List (ℕ × ℕ))
+    (hpair : (i,i+1) ∈ M) : crossingCount M = crossingCount (M.erase (i,i+1)) := by
+  rw [crossingCount_perm (List.perm_cons_erase hpair)]
+  simp only [crossingCount]
+  have hz : ((M.erase (i,i+1)).map (edgeCross (i,i+1))).sum = 0 := by
+    apply List.sum_eq_zero
+    intro x hx
+    obtain ⟨f,_,rfl⟩ := List.mem_map.mp hx
+    exact adjacent_edge_crosses_none i f
+  rw [hz, Nat.zero_add]
+
+theorem adjacent_edge_product_erase {R : Type*} [CommRing R] (i : ℕ)
+    (w : ℕ → ℕ → R) (M : List (ℕ × ℕ)) (hpair : (i,i+1) ∈ M) :
+    edgeProduct w M = w i (i+1) * edgeProduct w (M.erase (i,i+1)) := by
+  unfold edgeProduct
+  rw [((List.perm_cons_erase hpair).map (fun e => w e.1 e.2)).prod_eq]
+  simp
+
+theorem twin_rows_delete_sum (u i : ℕ) (hi : i+1<2*u) {R : Type*} [CommRing R]
+    (w : ℕ → ℕ → R)
+    (htwin : ∀ k, k≠i → k≠i+1 →
+      w (min i k) (max i k) = w (min (i+1) k) (max (i+1) k)) :
+    (∑ M ∈ matchingFinset u, (-1:R)^(pairCount crossContribution M) * edgeProduct w M) =
+      w i (i+1) * ∑ M ∈ (matchingFinset u).filter (fun M => (i,i+1) ∈ M),
+        (-1:R)^(crossingCount (M.erase (i,i+1))) * edgeProduct w (M.erase (i,i+1)) := by
+  classical
+  have hcancel := twin_rows_matching_cancellation u i hi w htwin
+  have hsplit := Finset.sum_filter_add_sum_filter_not (matchingFinset u)
+      (fun M => (i,i+1) ∈ M) (fun M => (-1:R)^(pairCount crossContribution M) * edgeProduct w M)
+  rw [hcancel, add_zero] at hsplit
+  rw [← hsplit, Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro M hM
+  obtain ⟨hM,hpair⟩ := Finset.mem_filter.mp hM
+  obtain ⟨_,hord,hsort⟩ := (mem_matchingFinset (u := u) (arcs := M)).mp hM
+  rw [← crossingCount_eq_pairCount M hord hsort, adjacent_edge_crossingCount_erase i M hpair,
+    adjacent_edge_product_erase i w M hpair]
+  ring
+noncomputable def residualMatchingFinset (u i : ℕ) : Finset (List (ℕ × ℕ)) :=
+  ((matchingFinset u).filter (fun M => (i,i+1) ∈ M)).image (fun M => M.erase (i,i+1))
+
+theorem erase_adjacent_injective (u i : ℕ) :
+    Set.InjOn (fun M : List (ℕ × ℕ) => M.erase (i,i+1))
+      ((matchingFinset u).filter (fun M => (i,i+1) ∈ M)) := by
+  intro M hM N hN h
+  obtain ⟨hM,hMpair⟩ := Finset.mem_filter.mp hM
+  obtain ⟨hN,hNpair⟩ := Finset.mem_filter.mp hN
+  change M.erase (i,i+1) = N.erase (i,i+1) at h
+  have hp : M.Perm N := (List.perm_cons_erase hMpair).trans
+    ((by rw [h]; exact (List.perm_cons_erase hNpair).symm))
+  have hsM := ((mem_matchingFinset (u := u) (arcs := M)).mp hM).2.2
+  have hsN := ((mem_matchingFinset (u := u) (arcs := N)).mp hN).2.2
+  apply List.Perm.eq_of_pairwise (le := fun a b : ℕ × ℕ => b.2 < a.2) ?_ hsM hsN hp
+  intro a b ha hb hab hba
+  omega
+
+theorem twin_rows_delete_residual (u i : ℕ) (hi : i+1<2*u) {R : Type*} [CommRing R]
+    (w : ℕ → ℕ → R)
+    (htwin : ∀ k, k≠i → k≠i+1 →
+      w (min i k) (max i k) = w (min (i+1) k) (max (i+1) k)) :
+    (∑ M ∈ matchingFinset u, (-1:R)^(pairCount crossContribution M) * edgeProduct w M) =
+      w i (i+1) * ∑ M ∈ residualMatchingFinset u i,
+        (-1:R)^(crossingCount M) * edgeProduct w M := by
+  rw [twin_rows_delete_sum u i hi w htwin]
+  congr 1
+  unfold residualMatchingFinset
+  exact (Finset.sum_image (f := fun M => (-1:R)^(crossingCount M) * edgeProduct w M) (erase_adjacent_injective u i)).symm
 end JohnsonPfaffian
