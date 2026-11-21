@@ -2,7 +2,7 @@
 
 Sun offers $1,000 for a complete solution to the question whether every positive integer is the sum of a Fibonacci number and a positive odd squarefree number. The Fibonacci sequence starts at $F_0=0$, $F_1=1$. [Sponsor’s statement](https://oeis.org/A304522) · [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/230)
 
-**Partial result.** The natural density of exceptions exists and is at most $1/(9\cdot10^{14})$. If it is positive, an entire arithmetic progression consists of exceptions and there exists a Wall–Sun–Sun prime. More precisely, every finite prime-square obstruction must involve a Wall–Sun–Sun prime. The numerical density bound uses the published search of Dorais and Klyve. Our argument gives no bound on the first exception and permits an infinite exceptional set of density zero. [Dorais and Klyve, §4](https://cs.uwaterloo.ca/journals/JIS/VOL14/Klyve/klyve3.pdf)
+**Partial result.** The natural density of exceptions exists and is less than $3.71\cdot10^{-30}$. Positive density would force an entire arithmetic progression of exceptions. Every finite prime-square obstruction must involve at least two distinct Wall–Sun–Sun primes. The first two sections establish a preliminary bound and the last section proves the stronger estimate. The numerical density bound uses the published search of Dorais and Klyve. Our argument gives no bound on the first exception and permits an infinite exceptional set of density zero. [Dorais and Klyve, §4](https://cs.uwaterloo.ca/journals/JIS/VOL14/Klyve/klyve3.pdf)
 
 ## Avoidance of all ordinary prime squares in a finite set
 
@@ -40,4 +40,38 @@ In each unblocked residue choose one index $i_r$ avoiding those squares. This re
 b_y\le\underline d(E)\le\overline d(E)\le b_y+\sum_{q>y}q^{-2}.
 ```
 
-Taking $y\to\infty$ proves $d(E)=\lim_y b_y$. Positive density therefore implies some blocked residue. The finite avoidance theorem rules this out whenever every prime involved is ordinary. Taking $y=9\cdot10^{14}$, the published Fibonacci–Wieferich search covers all primes through $y$, so $b_y=0$. Bounding the remaining prime sum by $\sum_{m>y}m^{-2}<1/y$ gives the stated numerical result. The quoted computational bound is external. The verifier here constructs indices for 350 test targets against every odd prime square through $97^2$.
+Taking $y\to\infty$ proves $d(E)=\lim_y b_y$. Positive density therefore implies some blocked residue. The finite avoidance theorem rules this out whenever every prime involved is ordinary. Taking $y=9\cdot10^{14}$, the published Fibonacci–Wieferich search covers all primes through $y$, so $b_y=0$. Bounding the remaining prime sum by $\sum_{m>y}m^{-2}<1/y$ gives the preliminary bound. The quoted computational bound is external. The verifier here constructs indices for 350 test targets against every odd prime square through $97^2$.
+
+## A stronger bound from the distribution of admissible indices
+
+In fact a blocked class requires **at least two distinct Wall–Sun–Sun primes**, and the density of exceptions is at most
+
+```math
+3\left(\sum_{q\ {\rm Wall\text{–}Sun\text{–}Sun}}q^{-2}\right)^2
+<\frac{3}{(9\cdot10^{14})^2}<3.71\cdot10^{-30}.
+```
+
+Fix $y$ and condition on the target residue at 2 and at every ordinary prime square through $y$, including the separate conditions at 3 and 5. Write $W$ for the finite set of Wall–Sun–Sun primes through $y$. Enlarge the modulus $H$ for the index construction by all $D_q$ for $q\in W$. We will choose a random unit $u\bmod H$ using only the conditioned target residues. This makes the law of $u$ independent of the target coordinates modulo $q^2$ for $q\in W$.
+
+Use the preceding choices modulo 8 and 3, fixing one allowed choice in each case. At each prime $\ell\ge5$ occurring in $H$ choose uniformly from the allowed nonzero first digits, of which there are at least $\ell-2$. This includes auxiliary primes without an avoidance condition, where every unit is allowed. In every prime power component choose all higher digits uniformly after assigning the required initial digits. The choices at successive primes may depend on the previously chosen components.
+
+For $t\mid H$, each residue modulo $t$ receives probability at most $1/B(t)$, where $B$ is multiplicative on coprime factors and
+
+```math
+B(2^v)=2^{\max(v-3,0)},\qquad B(3^v)=3^{\max(v-1,0)},\qquad
+B(\ell^v)=(\ell-2)\ell^{v-1}\quad(\ell\ge5,\ v\ge1).
+```
+
+For each component these are bounds conditional on *all* preceding choices. Multiplying them successively bounds the probability of any prescribed projection. Unspecified digits in earlier components can be averaged out.
+
+For $q\in W$, choose a root $\alpha$ of the Fibonacci characteristic polynomial in $\mathbb F_{q^2}$, and put $t_q=\operatorname{ord}(\alpha^h)$. It divides $D_q$. For odd $hu$ the other root satisfies $\beta^{hu}=-\alpha^{-hu}$. Thus fixing $F_{hu}\bmod q$ imposes a quadratic equation on $z=\alpha^{hu}$, namely $z+z^{-1}=(\alpha-\beta)F_{hu}$. At most two residues for $u\bmod t_q$ can satisfy it. In particular the probability mass of any one Fibonacci residue modulo $q^2$ is at most $2/B(t_q)$.
+
+If $B(t_q)<3$, the explicit factors imply $t_q\mid48$. This gives $\alpha^{48h}=\beta^{48h}=1$, hence $A^{144}=I\pmod q$ because $48h\mid144$. Consequently $q$ divides $\gcd(F_{144},F_{145}-1)=498454011879264<9\cdot10^{14}$. Such a prime cannot be in $W$ by the published search. Thus every one of the probabilities just bounded is at most $2/3$.
+
+For a fixed target coordinate $r_q\bmod q^2$ write $z_q=\Pr_u(F_{hu}\equiv r_q\pmod{q^2})$. Ordinary prime squares have already been avoided. If the full target residue is blocked, the events for $q\in W$ cover the support of $u$, so $s=\sum_q z_q\ge1$. A single prime cannot do this. Moreover
+
+```math
+\sum_{q\ne p} z_q z_p=s^2-\sum_q z_q^2\ \ge\ s^2-\tfrac23s\ \ge\tfrac13,
+```
+
+where the sum uses ordered pairs. Under a uniform choice of the remaining **target** coordinates the $z_q$ are independent, because each is a function of just $r_q$ and the already fixed law of $u$. Their means are $q^{-2}$. Taking expectations bounds the proportion of blocked completions by $3\sum_{q\ne p}q^{-2}p^{-2}$, uniformly in the conditioned residues. Averaging them and letting $y\to\infty$ proves the stated bound by the density identity above. This argument also gives the necessary condition $\sum_{q\in W}2/B(t_q)\ge1$ for a blocked residue of the given parity.

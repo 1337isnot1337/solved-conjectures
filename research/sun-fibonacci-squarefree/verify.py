@@ -12,6 +12,31 @@ def fibonacci_pair(n, modulus):
     return a, b
 
 
+def fibonacci_pair_exact(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a, b
+
+
+def check_two_residue_bound():
+    f, g = fibonacci_pair_exact(144)
+    assert gcd(f, g-1) == 498454011879264 < 9 * 10**14
+    # Withhold small split primes from the lift to test the general collision
+    # estimate. These primes are ordinary. They exercise the same quadratic map.
+    for q in (11, 19, 29, 31, 41, 61, 71):
+        root = next(a for a in range(q) if (a*a - a - 1) % q == 0)
+        for h in (1, 3):
+            t = next(i for i in range(1, q) if pow(root, h*i, q) == 1)
+            counts = {}
+            for u in range(lcm(2, t)):
+                if u % 2 == 0:
+                    continue
+                f, _ = fibonacci_pair(h*u, q)
+                counts.setdefault(f, set()).add(u % t)
+            assert max(map(len, counts.values())) <= 2
+
+
 def crt(current, modulus, value, factor):
     step = (value - current) * pow(modulus, -1, factor) % factor
     return current + modulus * step
@@ -62,6 +87,7 @@ def index_for(n, factors):
 
 
 if __name__ == '__main__':
+    check_two_residue_bound()
     factors = prime_powers(97)
     rng = Random(304522)
     samples = [*range(1, 251), *(rng.getrandbits(250) for _ in range(100))]
