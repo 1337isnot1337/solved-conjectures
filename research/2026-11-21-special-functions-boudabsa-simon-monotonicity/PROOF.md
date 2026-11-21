@@ -1,5 +1,7 @@
 # Boudabsa–Simon’s parameter-monotonicity question
 
+**Excluded from new-resolution claims.** A September 17, 2026 manuscript, archived publicly on October 27, already proves the full interior exponential-functional representation used below. Fixing its first parameter and rescaling its subordinator gives the requested monotonicity immediately; the remaining boundary case is already Proposition 1 of the original paper. This valid proof is retained as a documented consequence of prior work, not a new solution. See `LITERATURE.md` for the pinned source and exact transfer.
+
 ## Statement and source
 
 Fix $`0<\alpha\leq1`$ and $`l\leq1/\alpha`$. The question in Remark 3 of Boudabsa and Simon, *Some Properties of the Kilbas–Saigo Function*, Mathematics **9** (2021), 217, asks whether
@@ -214,5 +216,6 @@ Since $`\zeta>0`$, integration gives $`I_{m_1}>I_{m_2}`$ almost surely. For $`x>
 1. L. Boudabsa and T. Simon, *Some Properties of the Kilbas–Saigo Function*, Mathematics **9** (2021), 217. [Primary journal article](https://www.mdpi.com/2227-7390/9/3/217), Proposition 1 and Remark 3. [arXiv:2012.05666](https://arxiv.org/abs/2012.05666).
 2. L. Boudabsa, T. Simon and P. Vallois, *Fractional extreme distributions*, [arXiv:1908.00584v1](https://arxiv.org/pdf/1908.00584), Remark 4.10, printed page 30. This earlier preprint states the same question. Its subsequent journal version has different length and organization.
 3. J. Bertoin and M. Yor, *Exponential functionals of Lévy processes*, Probability Surveys **2** (2005), 191–212, [DOI:10.1214/154957805100000122](https://doi.org/10.1214/154957805100000122). Standard background for the exponential functional and the subordinator moment formula. Formula (4) is derived here rather than claimed as a new general identity.
+4. Principia Math In Progress, *The two hyperbolic bounds for the Kilbas–Saigo function*, September 17, 2026, [full source pinned at archive commit 34b8b155d7db464ad7306f70b16d3af9cee34501](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-348998/mathdb-348998-solution.tex). The gamma-ratio exponent, Lévy kernel, exponential-functional representation for all interior parameters, moment calculation, entire moment-generating identity and simultaneous positivity argument are all already present in that manuscript. Its representation makes the present target an immediate prior consequence.
 
 The separate literature file records the searches and inspected later papers. The result above concerns the parameter-monotonicity question only. It does not claim novelty for complete monotonicity of the Kilbas–Saigo function, its special-case stable-subordinator representations, or its hyperbolic bounds.
