@@ -10,6 +10,7 @@ modules=(
   Conjectures.ChenKhareSahi
   Conjectures.ChenKhareSahiReal
   Conjectures.ChenKhareSahiCone
+  Conjectures.ChenKhareSahiProducts
   Conjectures.ChenKhareSahiCovers
   Conjectures.FussCatalan
   Conjectures.BrownMolGeneralRoot

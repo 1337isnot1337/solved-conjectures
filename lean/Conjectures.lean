@@ -1,6 +1,7 @@
 import Conjectures.ChenKhareSahi
 import Conjectures.ChenKhareSahiReal
 import Conjectures.ChenKhareSahiCone
+import Conjectures.ChenKhareSahiProducts
 import Conjectures.ChenKhareSahiCovers
 import Conjectures.GilmoreCrossingNesting
 import Conjectures.DospolovaGermanskovZaporozhets
