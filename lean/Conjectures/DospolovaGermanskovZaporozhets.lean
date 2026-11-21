@@ -261,4 +261,47 @@ theorem local_oscillation_strict_unconditional_bound {T Ω : Type*} [PseudoMetri
   local_oscillation_strict μ K X hX s t hs ht osc
     (local_oscillation_bounded μ K X osc hbounded hint hlocal) hvariance hbounded hint hlocal
 
+theorem sampleRange_nonnegative {T Ω : Type*} (K : Set T) (X : T → Ω → ℝ)
+    (hK : K.Nonempty) (ω : Ω)
+    (hupper : BddAbove ((fun u => X u ω) '' K))
+    (hlower : BddBelow ((fun u => X u ω) '' K)) : 0 ≤ sampleRange K X ω := by
+  obtain ⟨t, ht⟩ := hK
+  unfold sampleRange
+  have h1 := le_csSup hupper (show X t ω ∈ (fun u => X u ω) '' K from ⟨t, ht, rfl⟩)
+  have h2 := csInf_le hlower (show X t ω ∈ (fun u => X u ω) '' K from ⟨t, ht, rfl⟩)
+  linarith
+
+noncomputable def localRange {T Ω : Type*} [PseudoMetricSpace T]
+    (K : Set T) (X : T → Ω → ℝ) (t : T) (ω : Ω) (n : ℕ) : ℝ :=
+  sampleRange (K ∩ Metric.ball t (1/((n:ℝ)+1))) X ω
+
+theorem localRange_tendsto {T Ω : Type*} [PseudoMetricSpace T] (K : Set T)
+    (X : T → Ω → ℝ) (t : T) (ht : t ∈ K) (ω : Ω)
+    (hupper : BddAbove ((fun u => X u ω) '' K))
+    (hlower : BddBelow ((fun u => X u ω) '' K)) :
+    Tendsto (localRange K X t ω) atTop (𝓝 (⨅ n, localRange K X t ω n)) := by
+  have hsub : ∀ n : ℕ, K ∩ Metric.ball t (1/((n:ℝ)+1)) ⊆ K := fun _ => Set.inter_subset_left
+  have hne : ∀ n : ℕ, (K ∩ Metric.ball t (1/((n:ℝ)+1))).Nonempty := by
+    intro n
+    exact ⟨t, ht, Metric.mem_ball_self (by positivity)⟩
+  have hanti : Antitone (localRange K X t ω) := by
+    intro n m hnm
+    unfold localRange
+    have hr : (1 : ℝ)/((m:ℝ)+1) ≤ 1/((n:ℝ)+1) := by
+      apply one_div_le_one_div_of_le (by positivity)
+      exact_mod_cast Nat.add_le_add_right hnm 1
+    have hsubset : K ∩ Metric.ball t (1/((m:ℝ)+1)) ⊆
+        K ∩ Metric.ball t (1/((n:ℝ)+1)) :=
+      Set.inter_subset_inter_right K (Metric.ball_subset_ball hr)
+    apply sampleRange_mono _ _ X (hne m) hsubset ω
+    · exact (BddAbove.mono (Set.image_mono (hsub n))) hupper
+    · exact (BddBelow.mono (Set.image_mono (hsub n))) hlower
+  have hbelow : BddBelow (Set.range (localRange K X t ω)) := by
+    refine ⟨0, ?_⟩
+    rintro y ⟨n, rfl⟩
+    apply sampleRange_nonnegative _ X (hne n) ω
+    · exact (BddAbove.mono (Set.image_mono (hsub n))) hupper
+    · exact (BddBelow.mono (Set.image_mono (hsub n))) hlower
+  exact tendsto_atTop_ciInf hanti hbelow
+
 end DospolovaGermanskovZaporozhets

@@ -27,4 +27,4 @@ Three independent mathematical reviews passed. No computation or Lean verificati
 
 Coordination: [issue #199](https://github.com/1337isnot1337/solved-conjectures/issues/199).
 
-A [partial Lean formalization](../../lean/Conjectures/DospolovaGermanskovZaporozhets.lean) checks the factorial equalities and the strict expected-range inequality against deterministic local-range limits for Gaussian processes under explicit assumptions. Intrinsic volumes, existence of local limits, and Vitale’s limit remain open in Lean. Strict compilation and isolated kernel replay passed; the full repository gate is pending.
+A [partial Lean formalization](../../lean/Conjectures/DospolovaGermanskovZaporozhets.lean) checks the factorial equalities and the strict expected-range inequality against deterministic local-range limits for Gaussian processes under explicit assumptions. Intrinsic volumes, determinism of local limits, and Vitale’s limit remain open in Lean. Strict compilation and isolated kernel replay passed; the full repository gate is pending.

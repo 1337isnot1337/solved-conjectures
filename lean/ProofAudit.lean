@@ -12,6 +12,7 @@ run_cmd do
     `Sonntag.build_realizes_two_stars,
     `Sonntag.build_remaining_vertices_isolated,
     `Sonntag.build_irreflexive,
+    `DospolovaGermanskovZaporozhets.localRange_tendsto,
     `DospolovaGermanskovZaporozhets.local_oscillation_strict_unconditional_bound,
     `DospolovaGermanskovZaporozhets.gaussian_process_strict_from_local_sup,
     `DospolovaGermanskovZaporozhets.ultra_log_concavity_eq,
