@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Fuss–Catalan simple roots in Lean
+
+Verified the exact simple-negative-root count and proved that arbitrary ordinary-case root relations transfer to the Fuss case via equality of root multisets. The cited ordinary-case interlacing results themselves are not re-proved. Strict compilation, 448-theorem all-owned axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
+
 ## 2026-11-21 — Fuss–Catalan conjecture in Lean
 
 Proved the closed enumeration and real-rootedness for the literal Fuss–Dyck path sum for all stated parameters, including the slot/block bijection, cycle count, boundary and scalar reduction. The auxiliary simple-root count and cited interlacing transfers remain unformalized. Strict source compilation, 409-theorem all-owned axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.

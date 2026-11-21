@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FussRoots.actual_roots_simple_and_count,
+    `FussRoots.actual_roots_independent_of_fuss,
+    `FussRoots.transfer_root_relation,
+    `FussRoots.binomial_real_root_simple,
     `FussFinal.fussCatalan_conjecture,
     `FussFinal.actualEnumerator_eq_closedForm,
     `FussFinal.actualEnumerator_scalar_reduction,

@@ -120,5 +120,5 @@ The proof above includes the elementary Rolle argument only to make the real-zer
 - M. Bóna, S. Dimitrov, G. Labelle, Y. Li, J. Pappe, A. R. Vindas-Meléndez and Y. Zhuang, *A Combinatorial Proof of a Symmetry for a Refinement of the Narayana Numbers*, Electron. J. Combin. 32(2) (2025), P2.46, DOI https://doi.org/10.37236/12681 . The ordinary-Dyck enumeration is Theorem 2; its real-rootedness is Theorem 27.
 - B. Wang and C. X. T. Zhang, *Interlacing Property of a Family of Generating Polynomials over Dyck Paths*, Electron. J. Combin. 31(1) (2024), P1.63, DOI https://doi.org/10.37236/12375 . Theorem 2 recalls ordinary-Dyck real-rootedness, and Theorems 8 and 11 prove the interlacing statements.
 
-No numerical root check is used in the proof. No Lean work was performed.
+No numerical root check is used in the proof. The literal path enumerator, formula, root simplicity and conditional transfer of ordinary-case root relations are Lean-verified; see the [Lean status](README.md).
 

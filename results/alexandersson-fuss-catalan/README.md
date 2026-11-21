@@ -2,7 +2,7 @@
 
 **Status: proved as a short deduction from classical results; priority qualified.**
 
-**Lean status: the named conjecture and closed enumeration are verified.** `Conjectures.FussFinal` proves that the literal sum over all Fuss–Dyck words with fixed NE count is real-rooted for every stated parameter, proves the closed formula and its scalar reduction to the ordinary case, and includes the boundary. The auxiliary exact count of simple negative zeros and the cited interlacing transfers remain unformalized. Strict standalone compilation, axiom audit and isolated kernel replay passed; the combined repository gate is pending.
+**Lean status: verified.** `Conjectures.FussFinal` proves real-rootedness of the literal sum over Fuss–Dyck words, its closed formula and scalar reduction, including the boundary. `Conjectures.FussRoots` proves the stated simple-negative-root count and proves that any ordinary-case root relation transfers to the Fuss case. The cited ordinary-case interlacing theorems are inputs to that transfer and are not re-proved in Lean. Strict standalone compilation, axiom audit and isolated kernel replay passed; the combined repository gate is pending.
 
 For every $m,n\geq1$ and $1\leq k\leq n$, the polynomial counting $m$-Dyck paths with exactly $k$ factors $NE$, by the number of factors $NNE$, is real-rooted. The Fuss parameter changes this polynomial only by a positive scalar.
 
