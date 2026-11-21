@@ -93,6 +93,7 @@ This section is ordered by the significance of the partial contributions, not th
 GitHub's **Cite this repository** control reads [`CITATION.cff`](CITATION.cff).
 The repository-level authors are Cinna Davis and GPT-6.2 Astra (an AI model), in that order.
 Credit the [Graffiti.pc 318 result](results/graffiti-pc-318/) and its proof to [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334), who contributed them.
+Credit the [Zhang deletion-values result](results/zhang-deletion-values/) and the [Oravcová–Soták five-to-eight-distance result](results/oravcova-sotak/) to [@aadrianvv](https://github.com/aadrianvv), who contributed their proofs and verification packages in [PR #143](https://github.com/1337isnot1337/solved-conjectures/pull/143) and [PR #144](https://github.com/1337isnot1337/solved-conjectures/pull/144). The latter result is conditional on the repository's spectrum classifications and does not settle the unrestricted conjecture.
 
 Suggested BibTeX for the repository:
 
