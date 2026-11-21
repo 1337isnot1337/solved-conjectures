@@ -1,0 +1,104 @@
+{
+  "checkpoint": 24,
+  "date": "2026-11-21",
+  "base_main": "4c6f1d4e0754d3a2105f09f842788dcf92a55e41",
+  "new_full_bounty_solutions": 0,
+  "campaign_proposed_full_bounty_solutions": 1,
+  "accepted_or_paid_awards": 0,
+  "unfunded_mathematical_result": "Fixed-step Oja oblivious linear-regret conjecture: complete proposed written proof, two independent reviews, no separate verified direct-pay offer.",
+  "publication_changes": [
+    "Normalize math delimiters, macros, and relative links; preserve mathematical content and scope."
+  ],
+  "files": [
+    {
+      "source": "agents/other_paid/bressan_fire/target-and-prior-audit.md",
+      "source_sha256": "937a4b28a977fd75991d90a5d2d6dce4a386098e0f7343ee5fef37053d1ac207",
+      "published_path": "research/bounty-continuation-2026-11-21/bressan-fire/target-and-prior-audit.md",
+      "published_sha256": "662a13b7a2f3d0d7fabd340c7413f90c131bcc7d45f4ce130bb3165d356527c4"
+    },
+    {
+      "source": "agents/other_paid/bressan_fire/delaying-wall-accounting.md",
+      "source_sha256": "65a3ebdccf3b0a9d4faccf5e6c455a9923bfc14b5d6f15959d41aeb1004a2369",
+      "published_path": "research/bounty-continuation-2026-11-21/bressan-fire/delaying-wall-accounting.md",
+      "published_sha256": "60a31a53e0fd12452b69391c8731496d8b7514585e29effdbefecb8469e16d35"
+    },
+    {
+      "source": "agents/root749/bressan-wall-independent-review.md",
+      "source_sha256": "0f4df475ecc3119c246e13734bf75b1d8f177403bdf78fa8727e17eca073102d",
+      "published_path": "research/bounty-continuation-2026-11-21/bressan-fire/INDEPENDENT_REVIEW.md",
+      "published_sha256": "f646461ba47a25f7bd0739c9213d363c308c4dc4b4fcfe7419e2b64e24ad810f"
+    },
+    {
+      "source": "agents/other_paid/bressan_fire/exterior-hull-evolution.md",
+      "source_sha256": "5252a4050f66118058fc4d4fb83f6f5fe71ef1a95a83b1dfc81a3f353de3edea",
+      "published_path": "research/bounty-continuation-2026-11-21/bressan-fire/exterior-hull-evolution.md",
+      "published_sha256": "e7af11725de906bc555bbbe17b30a82e3699e8802ba646f8275d867c69f42eba"
+    },
+    {
+      "source": "agents/root749/bressan-hull-independent-review.md",
+      "source_sha256": "ca966f3869a24d3c1546c85fe5973cfb7d3ffa35569a91e8d4570d1634e53891",
+      "published_path": "research/bounty-continuation-2026-11-21/bressan-fire/HULL_REVIEW.md",
+      "published_sha256": "c678058798d4112c81ce30424655a6974a859d273e2133a6434e410efd49ea6c"
+    },
+    {
+      "source": "agents/conjectures/agarwal-2017-iid-oracle-lower-gap.md",
+      "source_sha256": "68af52d9cfe9d52402c451c1862afb0b3281f2e15b84b7771b4fe13f9e1c904a",
+      "published_path": "research/bounty-continuation-2026-11-21/agarwal2017/iid-oracle-lower-gap.md",
+      "published_sha256": "206989bed4d25539b1047ebb2a1939269b180b0d205285c3f4a050d645450ab8"
+    },
+    {
+      "source": "agents/root749/agarwal-iid-lower-gap-review.md",
+      "source_sha256": "98dd64ca53520f23cdaae88e1b5b551ce2afcc00341bfde22cafa69949cc70dd",
+      "published_path": "research/bounty-continuation-2026-11-21/agarwal2017/LOWER_GAP_REVIEW.md",
+      "published_sha256": "82bb199ea14754c659545eaa676c7f31426069a78485821d8be85922850346f4"
+    },
+    {
+      "source": "agents/demath_zzz/pre2011-colt/blum-balcan-paid-menu-audit.md",
+      "source_sha256": "7297818c977a0bea9790ffe3678a5e5d13d2a1d3fdeea215cd78d3606bc8dd63",
+      "published_path": "research/bounty-continuation-2026-11-21/eligibility/blum-balcan2007-paid-menu.md",
+      "published_sha256": "7297818c977a0bea9790ffe3678a5e5d13d2a1d3fdeea215cd78d3606bc8dd63"
+    },
+    {
+      "source": "agents/demath_zzz/pre2011-colt/variance-target-and-prior-audit.md",
+      "source_sha256": "e5b16d5f8f817240aaf842d190ff60b5f782755e37814496a9f68b98af7b69f1",
+      "published_path": "research/bounty-continuation-2026-11-21/variance2010/target-and-prior-audit.md",
+      "published_sha256": "be21ed42e4bf8679465f01e120fdc211ee002f66bb69a2d5edc60ddda46da090"
+    },
+    {
+      "source": "agents/demath_zzz/pre2011-colt/variance-small-loss-corollary.md",
+      "source_sha256": "7046f0a29282ac2a0d8fc93c82c30e06d6a9406a7fcf3c756b36f6df747de326",
+      "published_path": "research/bounty-continuation-2026-11-21/variance2010/small-loss-corollary.md",
+      "published_sha256": "7046f0a29282ac2a0d8fc93c82c30e06d6a9406a7fcf3c756b36f6df747de326"
+    },
+    {
+      "source": "agents/demath_zzz/pre2011-colt/oja-oblivious-block-obstruction.md",
+      "source_sha256": "6d22c386c64564183c84491d2d0247684aa9727462a6a028f256a9d39c6e31b4",
+      "published_path": "research/bounty-continuation-2026-11-21/variance2010/oja-oblivious-block-obstruction.md",
+      "published_sha256": "27a058e3743c01534756f44c1f0e0a953c47e3a5abdc4a15fe3dfea7943b06e2"
+    },
+    {
+      "source": "agents/root749/variance-oja-independent-review.md",
+      "source_sha256": "483d0cdc1532030d7d4e368ee9f34ce01db0f0c05fad35120bbb20199eb39a57",
+      "published_path": "research/bounty-continuation-2026-11-21/variance2010/ROOT_REVIEW.md",
+      "published_sha256": "d4aa76c0fccede14d743d47be997d7dacafbc94558c34420cbf89e61fee027fe"
+    },
+    {
+      "source": "agents/conjectures/oja-oblivious-block-independent-review.md",
+      "source_sha256": "1ff1fff2249908986b3a4c5029b6895a5d269c589a227cd0e36b26af2ee6e313",
+      "published_path": "research/bounty-continuation-2026-11-21/variance2010/OJA_REVIEW.md",
+      "published_sha256": "0f7bb2c8908a07e261f8208cddddf976c48705df3e1ae2f422adc18139abc4e5"
+    },
+    {
+      "source": "agents/demath_zzz/pre2011-colt/oja-prior-and-payment-recheck.md",
+      "source_sha256": "99093e9b39b972e44149aa38989a78f65624d7cf5919d98f2ccd00c4f6598ca2",
+      "published_path": "research/bounty-continuation-2026-11-21/variance2010/oja-prior-and-payment-recheck.md",
+      "published_sha256": "99093e9b39b972e44149aa38989a78f65624d7cf5919d98f2ccd00c4f6598ca2"
+    },
+    {
+      "source": "agents/root749/distinct-powers/butler-prior-claim-audit.md",
+      "source_sha256": "e42a13adaecb95d0435de2b0eb130f075c8c3234a644c323360458d61326b1e9",
+      "published_path": "research/bounty-continuation-2026-11-21/eligibility/butler-distinct-powers-prior-claim.md",
+      "published_sha256": "e42a13adaecb95d0435de2b0eb130f075c8c3234a644c323360458d61326b1e9"
+    }
+  ]
+}
