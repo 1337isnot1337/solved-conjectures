@@ -15,6 +15,16 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Circular-index main theorems and regular examples, 21 November 2026
+
+`CircularIndex.theorem_one` proves the full infinite construction for every `g ≥ 2`: the literal graph on `ZMod (6*g+1)` is `4g`-regular, stays connected after deletion of any fewer than `4g` vertices, and has real circular chromatic index `4g+2/3`. `theorem_two`, `graph31_complete`, and `graph33_complete` prove the full degree/connectivity/index assertions for the three listed finite circulants.
+
+The lower bound concerns arbitrary real circular edge-colourings, through a proved rounding argument and an Archimedean limit. The connectivity proof establishes atom intersection, subgroup reduction, and the link to actual induced-graph connectedness. No published connectivity theorem is left as an assumption. The existing written construction and contributor attribution are preserved.
+
+All 19 sources passed strict compilation. A fresh all-owned audit covered 601 declarations, including 500 theorem declarations and all 171 required endpoints; every transitive axiom was one of `propext`, `Classical.choice`, and `Quot.sound`. The unchanged pinned checker replayed the exact union of the three local root closures. [Receipt](verification/lean-named-20261121/circular-receipt.json) and [complete declaration inventory](verification/lean-named-20261121/circular-all-owned-inventory.json).
+
+The row remains partial because the nonregular positive examples and the other Section 7 claims are outside this checkpoint. These local checks do not claim the combined package gate or hosted validation.
+
 ## Gilmore full matching identity rechecked, 21 November 2026
 
 The complete `Conjectures.GilmoreCrossingNesting` source passed a fresh strict check, an all-owned audit of 449 declarations (346 theorem declarations, including 25 private declarations in the complete inventory) and all 20 required endpoints, and exact-closure stock-kernel replay. The audit includes the literal perfect-matching characterization, decoder surjectivity, statistic-preservation bridge, stabilized matrix product, and both final identities. [Receipt](verification/lean-named-20261121/gilmore-receipt.json).

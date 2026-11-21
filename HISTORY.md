@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Circular-index main theorems and regular examples formalized
+
+Added the complete all-parameter circulant construction, the 25-vertex theorem, and both 31/33-vertex regular examples, with actual real circular chromatic indices, regular degrees, and vertex-deletion connectivity. The atom and subgroup proofs are internal to the formalization. The 19-module closure passed strict sources, an all-owned audit of 601 declarations/500 theorem declarations and 171 required endpoints, and exact pinned stock-kernel replay. Registered the checked closure and synchronized the partial overall badge; the nonregular examples, remaining Section 7 claims, combined package gate, and hosted validation remain separate.
+
 ## 2026-11-21 — Horňák–Woźniak partitions containing a large part
 
 Proved that source tests 1 and 5 realize every positive tripod partition containing a part larger than the positive shortest arm, using greedy grouping and graph refinement. Strict compilation, a 910-theorem full-chain axiom audit and isolated kernel replay passed. All-small partitions, the four-arm reduction, existence constructions and combined gate remain.

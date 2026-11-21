@@ -4,7 +4,9 @@
 
 **Status:** Written proof of Theorems 1 and 2. It has been through one independent referee pass by a second model instance, which found no mathematical error; the gaps it listed are fixed in the note. The note is otherwise unrefereed. The further examples of Section 7 are computer-certified instances, not a general theorem.
 
-**Lean status:** none. No Lean formalization is included.
+**Lean status:** Theorems 1 and 2 are fully formalized, as are the regular C31 and C33 examples of Section 7.2. The statements use the literal finite graphs, regular degree, connectedness after every deletion of fewer than the stated number of vertices, and the infimum over actual real circular edge-colourings. The 19-module closure passed strict source compilation, an all-owned audit of 601 declarations (500 theorem declarations and 171 required endpoints), and the unchanged pinned stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` occur. [Local receipt](../../docs/verification/lean-named-20261121/circular-receipt.json).
+
+The result-level badge remains partial because the nonregular positive examples, the additional structural/insertion lemmas, and the SAT exclusion claims of Section 7 are not covered by this checkpoint. The combined repository gate and hosted validation remain separate.
 
 Primary source: J. Mazák and F. Zrubák, *Circular chromatic index of small graphs*, [arXiv:2603.08822](https://arxiv.org/abs/2603.08822), Section 8 (Problems 6 and 7 and the remark before them).
 
@@ -54,7 +56,9 @@ python3 results/circular-index-upper-half-circulants/verify_part2.py
 
 `verify.py` checks Theorem 1 for $`g=2,\dots,30`$: the circulant is simple and $`4g`$-regular, the $`2n`$ classes partition the edge set, every class is a matching, the colouring is a $`(2n,3)`$-colouring (checked per vertex and per window), $`\alpha'=(n-1)/2`$ and $`|E|/\alpha'=2n/3`$. Its own max-flow routine computes $`\kappa(G_g)=4g`$ for $`g=2,3,4`$ over all non-adjacent pairs and for $`g=5,\dots,8`$ over the pairs $`(0,t)`$, which suffices by vertex-transitivity. It makes the same checks for Theorem 2. `verify_part2.py` reads [`data/part2_certificates.json`](data/part2_certificates.json) and, for every certificate of Section 7, rebuilds the colour sequence, checks that it is a perfect $`(p,q)`$-edge-colouring of a simple graph, computes $`\Delta`$ and $`|E|/\alpha'=p/q`$, and computes the vertex connectivity of the regular circulants. The scripts end with `ALL CHECKS PASSED` and `ALL PART 2 CHECKS PASSED` and take a few seconds.
 
-The scripts check finitely many cases. Theorems 1 and 2 rest on the written proof; the examples of Section 7 rest on the certificates.
+The scripts check finitely many cases. The Lean proof of Theorem 1 covers every `g ≥ 2`; it does not infer the universal result from those checks. `CircularIndex.theorem_one` and `theorem_two` combine the exact real index, degree, and connectivity assertions. `graph31_complete` and `graph33_complete` prove the corresponding three assertions for the two regular supplemental examples. The real lower bound is proved by rounding arbitrary real circular colourings and taking the resulting bounds to their limit. The atom intersection and subgroup arguments used for connectivity are proved internally.
+
+The entry modules are [`CircularIndexTheorems.lean`](../../lean/Conjectures/CircularIndexTheorems.lean), [`CircularIndexFurtherConnected.lean`](../../lean/Conjectures/CircularIndexFurtherConnected.lean), and [`CircularIndexFurther.lean`](../../lean/Conjectures/CircularIndexFurther.lean). Run the registered full gate from the repository root with `scripts/verify_lean.sh`.
 
 Optional checks, not run by CI:
 

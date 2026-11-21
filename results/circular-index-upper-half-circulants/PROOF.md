@@ -1,6 +1,6 @@
 # Highly connected regular graphs with circular chromatic index $`\Delta + 2/3`$ for every $`\Delta \equiv 0 \pmod 4`$, $`\Delta \ge 8`$
 
-Status: text proof, one independent model referee pass, not formalised (written 2026-11-21). Machine check: `verify.py` (in this folder; Python standard library only). Section 7 records computer-certified further examples (`verify_part2.py`). Referee report and scripts: `review/`.
+Status: written proof with one independent model referee pass (written 2026-11-21). Theorems 1 and 2 and the regular C31/C33 examples of Section 7.2 now have complete Lean proofs, including degree, vertex connectivity, and the real circular chromatic index. Their 19-module closure passed strict source checks, an all-owned axiom audit, and stock-kernel replay; see the [landing page](README.md) and [receipt](../../docs/verification/lean-named-20261121/circular-receipt.json). The nonregular examples, additional structural/insertion lemmas, and SAT exclusions remain outside that formalized scope. The Python checks remain `verify.py` and `verify_part2.py`; referee report and scripts are in `review/`.
 
 ## 0. Context
 

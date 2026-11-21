@@ -2,6 +2,10 @@
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
 
+## Circular-index local verification checkpoint
+
+The main circulant theorems and C31/C33 regular examples have a checked 19-module closure. The [receipt](verification/lean-named-20261121/circular-receipt.json), [all-owned inventory](verification/lean-named-20261121/circular-all-owned-inventory.json), and [raw kernel log](verification/lean-named-20261121/circular-kernel.log) record the exact source/object hashes, compiler/checker pins, 171 required theorem endpoints, and replay of only that closure. The receipt distinguishes the individual strict source checks from the subsequent combined audit and replay. It does not attest to the complete shared-package gate or to the nonregular Section 7 certificates.
+
 ## Requirements
 
 - Python 3.12, matching CI. The Hadamard audit uses NumPy. The Frankl window enumeration uses NumPy and SciPy. The Chow checks use SymPy 1.14.0.
