@@ -114,6 +114,12 @@ def broad_formulas(states):
                 for i, bit in enumerate(x):
                     clause.extend([(i, 0), (i, 1)] if bit == -1 else [(i, bit)])
                 clauses.append(clause)
+        if not clauses:
+            # On a cycle, an all-zero output coordinate is also an all-zero
+            # input coordinate. Its own positive literal avoids assuming an
+            # empty disjunction is allowed by the sponsor's formula syntax.
+            assert all(x[j] == 0 for x in states)
+            clauses = [[(j, 1)]]
         maps.append(clauses)
     return maps
 
@@ -137,6 +143,9 @@ def narrow_formulas(states):
                 missing.append({"state": t, "coordinate": j})
             else:
                 clauses.append(list(enumerate(b)))
+        if not clauses and not missing:
+            assert all(x[j] == 0 for x in states)
+            clauses = [[(j, 1)]]
         maps.append(clauses)
     return (maps if not missing else None), missing
 

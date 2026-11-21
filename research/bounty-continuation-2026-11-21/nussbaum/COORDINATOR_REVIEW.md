@@ -23,3 +23,13 @@ I also independently checked the [one-star proof](one-star-and-mixed-face-gap.md
 On each connected component the stabilizing powers form an abelian edge-transitive action. If it is vertex transitive, faithfulness makes the vertex action regular and bounds the edge count by the vertex count. If it has two vertex orbits, equal stabilizers on either orbit make any two vertices sharing a neighbor have identical neighborhoods. Connectedness then forces a complete bipartite graph. The cube's common-neighbor bound makes such a component a star or a four-cycle, again with no more edges than vertices. Summing components gives the stated bound uniformly in dimension.
 
 This argument needs exactly one star per state. It does not justify reconstructing Boolean incidences from an intersection graph of higher-dimensional faces. The full paid target remains unresolved.
+
+## Stronger local grid and one-star-orbit theorem
+
+The [new uniform proof](local-grid-and-one-star-orbit.md) and its [independent review](GRID_REVIEW.md) pass coordinator audit. The classical Lovasz form of Kruskal-Katona was checked directly in Keevash's author-hosted 2008 paper, pages1686-1687; the inspected 2010 addendum does not alter the input used here.
+
+The truncated-downclosure replacement preserves the antichain and its size while decreasing total set size. The final shadow sum is bounded at its largest real-binomial parameter; the endpoint inequality is valid from level3 onward. Row-center Hamming balls are disjoint, and every counted point is in an actual row face, which supplies the needed local union bound. The exceptional six-column case is repaired using its six common column vertices: there are at most two deficient centers in the same four-cube, and those six vertices lie outside all radius-one row balls. The small side cases were checked separately.
+
+The compatibility graph's cyclic action carries the neighborhood property of one one-star state to every vertex. Its line-graph reconstruction is simple and triangle-free. A faithful abelian edge-transitive component action gives either a cycle or a complete bipartite graph, with isolated-edge and clique cases covered. The local grid bound and the disjoint Boolean unions of different components permit addition. Thus one one-star state anywhere in the orbit suffices for the stated period bound.
+
+This closes the earlier additive counting gap. It does not cover an orbit whose every state has at least two unknown coordinates. No full-target or novelty claim follows. The exact formula checker was rerun after the constructor's constant-coordinate syntax fix; all recorded method obstructions remained unchanged.

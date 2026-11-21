@@ -53,3 +53,11 @@ Third, the displayed finite mutual-information sum is exactly the information of
 ## Outcome
 
 The auxiliary information bounds, the exact accuracy counterfamily, the canonical-threshold equality, the noisy-label accuracy estimate, and the fixed-tree conditional estimate pass this review. The constant-information accurate learner is still missing. No full proof, disproof, Lean verification, prize submission, or qualifying bounty completion follows.
+
+## Subsequent review: noisy-label ERM and the random cutoff
+
+The [noisy-label ERM lower bound](noisy-threshold-erm-information-obstruction.md) and its [independent review](NOISY_ERM_REVIEW.md) pass a second coordinator audit. For every fixed flip probability strictly between zero and one half, the earliest-minimum learner has original CMI growing at least logarithmically in the sample size under one fixed distribution: independent uniform real features and fair labels. The proof uses an exact selector-reference relative entropy identity, a weighted membership score, the earliest-minimum random-walk meander law, beta spacings, and disjoint geometric blocks. The quadratic penalty and denominator576 were recomputed. This rejects the candidate, not the bounty's existence statement.
+
+The [cutoff and atom-weight reductions](threshold-band-cutoff-reduction.md) also pass coordinator review in addition to the [separate review](BAND_REVIEW.md). The minimum empirical loss has selector-cube variance at most n/4; adding the independent uniform cutoff raises this to at most n/3. The entropy calculation gives the stated information bound below one nat. After disclosing the cutoff, selector bits are no longer independent fair bits, and the posterior support restriction must be retained. The boundary weights sum to n, and the first-exit argument supplies the claimed mass in every loss band even with arbitrary feature multiplicities. None of these calculations proves the remaining conditional information bound.
+
+These are updates to the earlier checkpoint above. A separate shifted-tree proof is under review and is not certified by this document. No full-target completion or Lean verification is asserted here.

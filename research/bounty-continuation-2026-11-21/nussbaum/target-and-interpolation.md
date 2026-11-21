@@ -61,10 +61,12 @@ Sources inspected:
 3. [Lemmens, Scheutzow and Sparrow, 2007](https://doi.org/10.1016/j.ejc.2006.02.003),
    *Transitive actions of finite abelian groups of sup-norm isometries*,
    has an additional hypothesis excluding anticlockwise additive chains.
-   The initial screen checked its abstract. The subsequent [full-source
-   comparison](one-star-and-mixed-face-gap.md) inspects the theorem and
-   its eight-point obstruction, which also has a narrower-class DNF
-   realization. The extra hypothesis is not automatic here.
+   The initial screen checked its abstract; the later
+   [full primary manuscript](https://www.kent.ac.uk/smsas/personal/bl81/ejclemmens2.pdf)
+   check found an explicit ternary eight-cycle violating that hypothesis.
+   The [follow-up note](one-star-and-mixed-face-gap.md) verifies
+   that this example also has a noncontradictory-DNF realization, so the
+   hypothesis cannot be assumed for the sponsor's class.
 4. [Lins, arXiv:2407.16671v2](https://arxiv.org/html/2407.16671v2),
    *Real analytic nonexpansive maps on polyhedral normed spaces*, proves the
    conjectured bound for real analytic maps. General minimum/maximum formula
@@ -200,6 +202,14 @@ compatibility preservation. The uncovered-completion condition is an
 additional constraint. A cyclic isometry of faces cannot simply be assumed
 to have a noncontradictory-DNF extension.
 
+For a nontrivial cyclic orbit, no empty-clause convention is needed. An
+all-zero output coordinate is also all-zero on the input orbit and can be
+realized by its own positive input literal; an all-one coordinate has the
+same identity-literal realization. Every state has a definite coordinate
+unless the orbit is the singleton all-star state. Thus the construction
+for a counterexample cycle can be written using nonempty literal clauses
+and a nonempty disjunction in every coordinate.
+
 ## 5. Scope of the first computational attempt
 
 The intended finite search seeks a counterexample to the whole uniform
@@ -213,4 +223,4 @@ search result will be counted as a resolution. The general upper bound,
 the information-order antichain observation, and elementary representation
 facts are not claimed as new mathematical discoveries.
 
-The interpolation criterion and the subsequent uniform one-star bound passed the [coordinator review](COORDINATOR_REVIEW.md). Neither resolves the mixed-face problem.
+The subsequent [local grid theorem](local-grid-and-one-star-orbit.md) proves the period bound whenever an orbit contains at least one one-star state, including mixed-face orbits. It passed [independent review](GRID_REVIEW.md) and [coordinator review](COORDINATOR_REVIEW.md). This is a uniform partial theorem, not a solution of the full sponsor statement.

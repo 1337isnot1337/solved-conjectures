@@ -114,7 +114,7 @@ Consequently, on **every** input dataset,
 
 For example, $`p=1/4`$ yields $`4\sqrt3/\sqrt n`$. This is a uniform proof, with no asymptotic distribution approximation and no realizability assumption. Sorting and a prefix-minimum scan give a finite algorithm.
 
-The unresolved step is its original-CMI bound, equivalently its evaluated-CMI bound by Section 3. The argument above says nothing about that information. In particular, randomizing labels does not by itself hide the selected feature values. Neither a constant bound nor an unbounded-information counterexample for this learner has been proved here.
+The accuracy argument above says nothing about the information in the output. A subsequent [independently reviewed lower bound](noisy-threshold-erm-information-obstruction.md) shows that the **earliest-minimum** tie rule has original CMI of order at least $`\log n`$ on the single fixed distribution with independent uniform features and fair labels. Thus that tie rule fails the information requirement for every fixed $`0<p<1/2`$. The lower bound does not cover every tie rule or every perturbation scheme, and does not refute the existence of another learner.
 
 ## 5. A precise information inequality for a possible tree construction
 
@@ -182,6 +182,6 @@ Neither hypothesis has been established for an implementable distribution-indepe
 
 ## 6. Current scope
 
-The independently checked facts are the canonical-output information equality, the samplewise noisy-ERM error bound, and the fixed-tree sufficient information inequality. They provide no uniform constant-information learner yet. The separately rewarded threshold target and the full VC conjecture both remain unresolved in this investigation.
+The independently checked facts are the canonical-output information equality, the samplewise noisy-ERM error bound, the logarithmic information obstruction for its earliest-minimum tie rule, and the fixed-tree sufficient information inequality. They provide no uniform constant-information learner yet. The [private near-minimum sampler](threshold-near-minimum-information-gap.md) remains under investigation. The separately rewarded threshold target and the full VC conjecture both remain unresolved here.
 
-The subsequent [randomized-band note](threshold-near-minimum-information-gap.md) gives an accurate candidate learner, a candidate-support bound, and an exact finite-word information reduction. The remaining constant-information inequality is unproved. The displayed auxiliary results passed the [coordinator review](COORDINATOR_REVIEW.md).
+The earlier [band-sampler note](threshold-near-minimum-information-gap.md) retains its explicit unproved information term. The [cutoff reduction](threshold-band-cutoff-reduction.md) bounds the information of the disclosed random cutoff but not that remaining term. The noisy-label exact-ERM route is now excluded by the [proved logarithmic lower bound](noisy-threshold-erm-information-obstruction.md), with [independent review](NOISY_ERM_REVIEW.md). A different shifted-tree construction is under separate full-proof and prior-art review; this historical route note makes no completion claim.

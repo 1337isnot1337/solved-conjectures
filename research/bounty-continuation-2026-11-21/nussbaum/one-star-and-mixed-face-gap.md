@@ -189,3 +189,7 @@ while sending every Boolean input to the all-one vector.
 
 No general bound or counterexample has been obtained at this checkpoint.
 No sponsor submission, email, fee, or payout request has been made.
+
+## Stronger subsequent theorem
+
+The [local grid-union argument](local-grid-and-one-star-orbit.md), with [independent review](GRID_REVIEW.md), strengthens the one-star result to any orbit containing at least one one-star state. It counts Boolean vertices in each compatibility component itself, so disconnected components can be added. The full all-states-at-least-two-stars case remains open in this work.
