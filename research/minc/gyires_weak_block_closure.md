@@ -94,6 +94,41 @@ There is a uniform absolute algebraic slack: combining (2), (3) gives
 
 For two order-five blocks the last lower bound is precisely `W(A⊕B)/16`.
 
+## Hybrid closure: one strong block, one weak block
+
+The previous theorem uses only the original Gyires conjecture for *both* blocks. There is also a complementary **unconditional size-free hybrid** result, which needs stronger estimates for just *one* block. This improves the assumptions of the earlier [strong-Gram block closure](gyires_block_closure.md), where *both* components had to satisfy the stronger estimates.
+
+**Hybrid theorem.** Suppose the original Gyires inequality holds for `B∈Ω_s`. Suppose `A∈Ω_r` satisfies the two separate Gram estimates
+
+```math
+\beta_r X(A)\le W(A),\qquad \beta_r Y(A)\le W(A).
+\tag{8}
+```
+
+Then Gyires holds **strictly** for `A⊕B` for *every* `r,s>=1`, without (1). This is useful when `A` lies in a known Gram-verified family, while `B` is verified only by a proof of Gyires's original four-term inequality.
+
+**Proof.** Permanent Cauchy--Binet, applied to `A` and `A^T`, gives `2Z(A)<=X(A)+Y(A)`; see Lemma 2 of [the previous block note](gyires_block_closure.md). Thus (8) implies
+
+```math
+\max\{X(A),Y(A),Z(A)\}\le W(A)/\beta_r.
+\tag{9}
+```
+
+As every term `X(B),Y(B),Z(B)` is positive, termwise factorization gives
+
+```math
+T(A\oplus B)
+\le\frac{W(A)}{\beta_r}T(B)
+\le\frac{4W(A)W(B)}{\beta_r\beta_s}.
+\tag{10}
+```
+
+The strict inequality `\beta_{r+s}<\beta_r\beta_s` for positive `r,s` follows from the binomial probability (4). Multiplication by `\beta_{r+s}` gives the strict original Gyires inequality on the direct sum. This proves the hybrid theorem.
+
+**Consequences.** Every block of order `1`, `2` or `4` is a valid stronger block by the known results, and the spectral-neighborhood theorem in the repo provides more stronger blocks in unbounded orders. Any one of these blocks can be adjoined to a matrix `B` already known to satisfy the *original* Gyires inequality, irrespective of its order. Repeated adjoining remains valid only if each new step has one certified stronger component, or if the pair of accumulated weak components satisfies threshold (1).
+
+As before this is strictly a result for decomposable matrices; **no new unrestricted C20 solution** follows.
+
 ## Essential permutation caveat
 
 The theorem applies to actual block direct sums and **simultaneous permutation conjugates** `P(A⊕B)P^T`. It cannot automatically be extended to matrices obtained using **independent** row and column permutations. The reason is that `per(A^2)` is not invariant under independent permutations, even though `per(A)`, `per(AA^T)` and `per(A^TA)` are.
