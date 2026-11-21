@@ -5,9 +5,11 @@ Date: 20 November 2026 (America/Chicago).
 Status: a proved consequence of the accompanying
 [centered coefficient theorem](../sign/centered_permanental_coefficients.md),
 independently [reviewed](../compound/uniform_radial_review.md). This does not resolve Minc Conjecture 44
-or Problem 13. Combining the result with the catalogue's reported
-confinement would exclude strict counterexamples in all sufficiently large
-orders. The catalogue does not supply the confinement proof or constants.
+or Problem 13. The subsequent
+[explicit global comparison](explicit_eventual_zero_diagonal.md) combines
+this result with published capacity inequalities to prove Conjecture 44,
+including uniqueness, in every order at least $`20\,000\,000\,000\,000`$.
+The remaining smaller orders are unresolved in this work.
 
 ## 1. Statements
 
@@ -374,7 +376,7 @@ P_n(B_0+D)-P_n(B_0)
 This proves (4). It compares the permanent directly and does not subtract
 unrelated determinant-approximation error bounds.
 
-## 6. Reported confinement and the remaining gap
+## 6. Global comparison and the remaining gap
 
 The [live Conjecture 44 page](https://yair-lavi.com/mincs-list/conjecture-44/index.html),
 accessed 20 November 2026 (America/Chicago), reports that any counterexample satisfies
@@ -383,29 +385,26 @@ accessed 20 November 2026 (America/Chicago), reports that any counterexample sat
 \|A-U_n\|_F^2\le\sqrt{2/n}+O(1/n).                            \tag{20}
 ~~~
 
-If (20) holds uniformly for strict counterexamples, there are none for all
-sufficiently large n: the right side of (20) and the extra 1/(n-1) in (3)
-both tend to zero, so every alleged counterexample eventually satisfies
-(3), contradicting (4).
-
-If the reported confinement also covers every nonuniform A with
-per A<=per U_n, then (4) gives both the minimum and uniqueness assertions
-for all sufficiently large n. The catalogue sentence does not spell out
-this equality quantifier. We do not infer it merely from the word
-"counterexample."
-
 The page supplies neither the proof of (20) nor its complete constants.
-No explicit threshold for the global comparison is claimed. For example,
-if an independently verified version is s^2<=sqrt(2/n)+K/n for n>=N_0,
-then the comparison is certified for all such n satisfying
+The subsequent [explicit global proof](explicit_eventual_zero_diagonal.md)
+therefore reconstructs a multicolumn capacity estimate directly from
+Lelarge's maximum-matching coefficient inequality and Gurvits's theorem.
+It proves, for every doubly stochastic $`A`$ and $`1\le k<n`$,
 
 ~~~math
-\frac1{n-1}+\sqrt{2/n}+\frac K n\le10^{-6}.
+\log\frac{\operatorname{per}A}{d_n}
+\ge\frac{k\|A-J_n\|_F^2}{2n}
+-\frac{k(k-1)}{4(n-k)(n-k+1)}.
 ~~~
 
-The remaining finite orders are not solved by this argument. Numerical
-tests cannot fill this gap. Completed full Minc entries from this note:
-zero.
+With the upper Hessian bound from Section 4, this excludes every
+zero-diagonal matrix outside the ball in Theorem 1 when
+$`n\ge20\,000\,000\,000\,000`$. Theorem 2 handles the interior and proves
+uniqueness. This argument supplies an explicit threshold and covers
+equality candidates without relying on the unexpanded term in (20).
+
+The remaining finite orders are not solved. Numerical tests cannot fill
+this gap. Completed full Minc entries from these notes: zero.
 
 ## 7. Priority and verification record
 

@@ -17,6 +17,13 @@ proved result. Neither C44 nor P13 is fully resolved by these notes.
 The rational diagnostic script was rerun and passed. Its coarse Hessian
 lower bound is 33/500, which is strictly larger than 1/16.
 
+The initial conditional global discussion has since been superseded by
+an explicit capacity argument. Its separate
+[review](eventual_zero_diagonal_review.md) verifies minimum and uniqueness
+for every order at least 20,000,000,000,000. The local review below retains
+the original source boundary; the new global proof does not rely on the
+catalogue's unprovided confinement estimate.
+
 ## Partition normalization and contraction
 
 For fixed unordered row and column sets, summing over both ordered tuples
