@@ -4,6 +4,9 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.CKZPell
+  Conjectures.CKZSoundness
+  Conjectures.CKZComposition
   Conjectures.CKZLow
   Conjectures.CKZCertificates
   Conjectures.CKZPolynomial

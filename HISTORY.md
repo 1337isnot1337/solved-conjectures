@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — CKZ certificate soundness
+
+Proved the finite certificates imply nonnegative infinite Pell series and, after Schröder substitution, nonnegative coefficients for twelve tail-polynomial cases and four recurrence seeds. Strict compilation, a 213-theorem axiom audit and isolated stock-kernel replay passed; arbitrary-index propagation, actual permutation-class connections and the combined repository gate remain.
+
 ## 2026-11-21 — CKZ Lean checkpoint
 
 Checked the Schröder series and three low-record reductions, uniform numerator inequalities and all 16 finite integer-list certificates, together with the interpretation of list operations as the stated polynomials. The all-index coefficient argument and permutation-class bridge remain. Strict compilation, 123-theorem all-owned axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.

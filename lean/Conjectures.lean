@@ -875,3 +875,6 @@ import Conjectures.FussRoots
 import Conjectures.CKZLow
 import Conjectures.CKZCertificates
 import Conjectures.CKZPolynomial
+import Conjectures.CKZPell
+import Conjectures.CKZSoundness
+import Conjectures.CKZComposition

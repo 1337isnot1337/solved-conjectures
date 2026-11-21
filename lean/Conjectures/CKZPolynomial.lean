@@ -113,4 +113,84 @@ theorem toPolynomial_numerator (f : List ℤ) :
     toPolynomial (numerator f) = (1+X)^2*(toPolynomial f).derivative := by
   simp [numerator, toPolynomial_mul, toPolynomial_power, toPolynomial_derivative, toPolynomial]
 
+theorem toPolynomial_trim (xs : List ℤ) : toPolynomial (trim xs) = toPolynomial xs := by
+  induction xs with
+  | nil => rfl
+  | cons x xs ih =>
+    simp only [trim]
+    split
+    · rename_i h
+      obtain ⟨rfl, hxs⟩ := h
+      rw [hxs] at ih
+      simpa [toPolynomial] using ih.symm
+    · simp only [toPolynomial, ih]
+
+theorem toPolynomial_shift (n : ℕ) (xs : List ℤ) :
+    toPolynomial (List.replicate n 0 ++ xs) = X^n * toPolynomial xs := by
+  induction n with
+  | zero => simp
+  | succ n ih => simp only [List.replicate_succ, List.cons_append, toPolynomial, map_zero,
+      zero_add, ih, pow_succ']; ring
+
+theorem certificateIdentity_sound (f : List ℤ) (h : certificateIdentity f = true) :
+    let N := numerator f
+    let state := N.foldl (fun st p => let v := p+2*st.1+st.2.1; (v,st.1,v::st.2.2)) (0,0,[])
+    let V := toPolynomial state.2.2.reverse
+    (1-2*X-X^2)*V + X^N.length*(C (2*state.1+state.2.1) + X*C state.1) =
+      (1+X)^2*(toPolynomial f).derivative := by
+  dsimp only
+  have heq := of_decide_eq_true h
+  have hp := congrArg toPolynomial heq
+  simp only [toPolynomial_trim, toPolynomial_add, toPolynomial_mul, toPolynomial_shift,
+    toPolynomial_numerator] at hp
+  convert hp using 1; simp [toPolynomial]; ring_nf; simp
+
+def StateInv (st : ℤ × ℤ × List ℤ) : Prop :=
+  (st.1 = 0 ∨ st.1 ∈ st.2.2) ∧ (st.2.1 = 0 ∨ st.2.1 ∈ st.2.2)
+
+theorem fold_state_inv (xs : List ℤ) (st : ℤ × ℤ × List ℤ) (h : StateInv st) :
+    StateInv (xs.foldl (fun st p => let v := p+2*st.1+st.2.1; (v,st.1,v::st.2.2)) st) := by
+  induction xs generalizing st with
+  | nil => exact h
+  | cons p xs ih =>
+    apply ih
+    constructor
+    · right; simp
+    · rcases h.1 with hzero | hmem
+      · left; exact hzero
+      · right; simp [hmem]
+
+theorem cert_state_nonneg (f : List ℤ) (h : certOK f = true) :
+    let st := (numerator f).foldl (fun st p => let v := p+2*st.1+st.2.1; (v,st.1,v::st.2.2)) (0,0,[])
+    0 ≤ st.1 ∧ 0 ≤ st.2.1 ∧ ∀ v ∈ st.2.2.reverse, 0 ≤ v := by
+  have hall : ∀ v ∈ certPrefix (numerator f), 0 ≤ v := by
+    have hb := (Bool.and_eq_true_iff.mp h).2
+    exact fun v hv => of_decide_eq_true ((List.all_eq_true.mp hb) v hv)
+  have hinv := fold_state_inv (numerator f) (0,0,[]) (by simp [StateInv])
+  dsimp only [StateInv] at hinv
+  dsimp only
+  constructor
+  · rcases hinv.1 with hz | hm
+    · rw [hz]
+    · exact hall _ hm
+  constructor
+  · rcases hinv.2 with hz | hm
+    · rw [hz]
+    · exact hall _ hm
+  · intro v hv
+    exact hall v (List.mem_reverse.mp hv)
+
+theorem nonneg_coeff_of_list (xs : List ℤ) (h : ∀ v ∈ xs, 0 ≤ v) (j : ℕ) :
+    0 ≤ (toPolynomial xs).coeff j := by
+  rw [coeff_toPolynomial]
+  induction xs generalizing j with
+  | nil => simp
+  | cons x xs ih =>
+    cases j with
+    | zero => exact h x (by simp)
+    | succ j =>
+      apply ih
+      intro v hv
+      exact h v (by simp [hv])
+
 end CKZCertificates

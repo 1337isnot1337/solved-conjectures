@@ -67,4 +67,33 @@ theorem cert_E1T2 : certOK (mul E1 (T 2)) = true := by decide +kernel
 theorem cert_E2T13 : certOK (mul E2 (T 13)) = true := by decide +kernel
 theorem cert_E2T14 : certOK (mul E2 (T 14)) = true := by decide +kernel
 
+def trim : List ℤ → List ℤ
+  | [] => []
+  | x::xs => let ys := trim xs; if x = 0 ∧ ys = [] then [] else x::ys
+
+def certificateIdentity (f : List ℤ) : Bool :=
+  let N := numerator f
+  let state := N.foldl (fun st p => let v := p+2*st.1+st.2.1; (v,st.1,v::st.2.2)) (0,0,[])
+  let v := state.2.2.reverse
+  let tail := List.replicate N.length 0 ++ [2*state.1+state.2.1,state.1]
+  decide (trim (add (mul [1,-2,-1] v) tail) = trim N)
+
+theorem identity_G0 : certificateIdentity (G 0) = true := by decide +kernel
+
+theorem identity_G1 : certificateIdentity (G 1) = true := by decide +kernel
+theorem identity_G2 : certificateIdentity (G 2) = true := by decide +kernel
+theorem identity_G3 : certificateIdentity (G 3) = true := by decide +kernel
+theorem identity_G4 : certificateIdentity (G 4) = true := by decide +kernel
+theorem identity_G5 : certificateIdentity (G 5) = true := by decide +kernel
+theorem identity_G6 : certificateIdentity (G 6) = true := by decide +kernel
+theorem identity_G7 : certificateIdentity (G 7) = true := by decide +kernel
+theorem identity_G8 : certificateIdentity (G 8) = true := by decide +kernel
+theorem identity_G9 : certificateIdentity (G 9) = true := by decide +kernel
+theorem identity_G10 : certificateIdentity (G 10) = true := by decide +kernel
+theorem identity_G11 : certificateIdentity (G 11) = true := by decide +kernel
+theorem identity_E1T1 : certificateIdentity (mul E1 (T 1)) = true := by decide +kernel
+theorem identity_E1T2 : certificateIdentity (mul E1 (T 2)) = true := by decide +kernel
+theorem identity_E2T13 : certificateIdentity (mul E2 (T 13)) = true := by decide +kernel
+theorem identity_E2T14 : certificateIdentity (mul E2 (T 14)) = true := by decide +kernel
+
 end CKZCertificates
