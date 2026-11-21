@@ -16,6 +16,8 @@ jobs:
           python-version: '3.12'
       - name: Check threshold folded-tree alignment boundaries
         run: python3 results/steinke-zakynthinou-thresholds/verify.py --max-n 6
+      - name: Replay finite-coin threshold learner
+        run: python3 results/steinke-zakynthinou-thresholds/verify_efficiency.py
       - name: Check Johnson Pfaffian identities and indexing
         run: python results/johnson-pfaffian/verify.py
       - name: Check Brown-Mol analytic counterfamily identities and finite certificate

@@ -17,6 +17,8 @@ label noise. On every fixed labeled sample its expected empirical
 excess is at most $`2056/\sqrt n`$. The single constant 4096 safely fits
 both bounds in the exact sponsor statement, including conversion to bits.
 
+A [finite-coin version](EFFICIENCY.md) gives a worst-case polynomial-time proper learner with CMI below 23 nats and expected samplewise empirical excess at most $`2057/\sqrt n`$. It uses $`O(n\log(n+1))`$ fair bits and feature comparisons. The [implementation](efficient.py) accepts exact rational inputs. The efficiency provision adds 20% if the sponsors accept it.
+
 The proof combines a randomly shifted tree on a folded rank cycle,
 an adjacent-sample information comparison, private tags with endpoint
 rounding, and an adaptive rank code that converts the result to a proper
@@ -42,13 +44,14 @@ open in this work.
 
 ```sh
 python3 results/steinke-zakynthinou-thresholds/verify.py --max-n 6
+python3 results/steinke-zakynthinou-thresholds/verify_efficiency.py
 ```
 
 The standard-library script checks all small replacement pairs and label
 assignments through sample size six, including cycle folds, paired leaf
 costs, and exact inactive-node cancellation. The all-size information
 and accuracy claims use the written proof, not an extrapolation from
-these checks. The repository workflow runs this same diagnostic.
+these checks. The second checker replays 8,190 finite-coin runs against a separate implementation that counts each candidate’s empirical losses directly.
 
 ## Prize and verification status
 
