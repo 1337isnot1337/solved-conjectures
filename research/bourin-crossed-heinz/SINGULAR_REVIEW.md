@@ -5,10 +5,10 @@ Reviewer: algebra research lane, 21 November 2026. The argument in `SINGULAR_END
 After the common kernel is removed, the sum is positive definite. With the support projections and the notation of the draft,
 
 ```math
-L=JS,qquad I-J^2=(P_A-P_B)^2geq0.
+L=JS,\qquad I-J^2=(P_A-P_B)^2\geq0.
 ```
 
-Thus $`|L|leq S`$. If a Ky Fan sum has equality, every maximizing projection for $`|L|`$ also maximizes for $`S`$, and the positive difference $`S-|L|`$ annihilates its range. Commutation with both positive matrices then gives $`(I-J^2)P=0`$. The kernel of $`P_A-P_B`$ is the direct sum of the common range and common kernel of the two support projections. The common kernel is zero here. This independently confirms $`P_AP=P_BP=P`$, including arbitrary choices inside a repeated cutoff eigenspace.
+Thus $`|L|\leq S`$. If a Ky Fan sum has equality, every maximizing projection for $`|L|`$ also maximizes for $`S`$, and the positive difference $`S-|L|`$ annihilates its range. Commutation with both positive matrices then gives $`(I-J^2)P=0`$. The kernel of $`P_A-P_B`$ is the direct sum of the common range and common kernel of the two support projections. The common kernel is zero here. This independently confirms $`P_AP=P_BP=P`$, including arbitrary choices inside a repeated cutoff eigenspace.
 
 The selected singular values are positive, even if lower singular values vanish. Moreover $`LP=L^*P=SP`$, so the polar factor of $`L`$ is the identity on every selected subspace. The usual first-order singular-value formula therefore reduces to the real trace against the derivative written in the draft. It does not require differentiability of the square root at a zero eigenvalue below the selected levels. Compactness of the full maximizing family, rather than one chosen projection, gives a strict negative derivative when no such projection is annihilated by $`D`$.
 

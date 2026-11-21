@@ -5,7 +5,7 @@ Status: research only. These calculations distinguish sufficient conditions from
 Write
 
 ```math
-S=A+B,qquad C_t=A^tB^{1-t}+B^tA^{1-t}.
+S=A+B,\qquad C_t=A^tB^{1-t}+B^tA^{1-t}.
 ```
 
 ## The symmetric sandwich need not be a contraction
@@ -85,7 +85,7 @@ This excludes only the displayed multiplier. It does not prove that every linear
 For $`0<t\leq1/2`$, set
 
 ```math
-P=A^t,quad Q=B^t,quad U=A^{1-2t},\quad V=B^{1-2t},
+P=A^t,\quad Q=B^t,\quad U=A^{1-2t},\quad V=B^{1-2t},
 \qquad
 R_t=B^tA^{1-2t}B^t+A^tB^{1-2t}A^t.
 ```
@@ -110,7 +110,7 @@ Thus $`R_t\prec_w S`$ would suffice for the full target. It is a stronger suffic
 This sandwiched expression is already the functional studied by Mostafa Hayajneh, Saja Hayajneh, and Fuad Kittaneh, *A Unitarily Invariant Norm Inequality for Positive Semidefinite Matrices and a Question of Bourin*, Results in Mathematics 78:158 (2023), [DOI10.1007/s00025-023-01929-z](https://doi.org/10.1007/s00025-023-01929-z). Their notation uses the complementary parameter. The publisher abstract and its first-page preview give exactly
 
 ```math
-\|R_t\|_u\leq 2^{1-4t}\|S\|_u,qquad 0\leq t\leq1/4.
+\|R_t\|_u\leq 2^{1-4t}\|S\|_u,\qquad 0\leq t\leq1/4.
 ```
 
 The same preview explicitly connects the constant-one endpoint to Bourin's inequality at $`t=1/4`$. Only the publisher abstract and first page of this nine-page paper were available in this check, so this note makes no assertion about its other intermediate statements. It records the prior route to prevent mistaking the block reduction or the sandwiched functional for a new conjecture resolution.
