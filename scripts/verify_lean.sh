@@ -9,6 +9,7 @@ modules=(
   Conjectures.FussCycle
   Conjectures.ChenKhareSahi
   Conjectures.ChenKhareSahiReal
+  Conjectures.ChenKhareSahiCone
   Conjectures.ChenKhareSahiCovers
   Conjectures.FussCatalan
   Conjectures.BrownMolGeneralRoot
