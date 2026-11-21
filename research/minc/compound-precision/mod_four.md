@@ -48,3 +48,5 @@ With the exact prefix of $H$, this follows because $H/h=1+O(z^m)$, whose logarit
 
 This computes the low binary digits of the entire characteristic polynomial simultaneously. The characteristic-two identity with the exterior compound, algorithms for a single permanent modulo powers of two, and fast recovery from Newton sums are prior ingredients. The crossing-pair trace in (3) supplies the correction in the input dimension. The calculation does not recover arbitrary integer coefficients from two bits. The unrestricted characteristic-polynomial question remains open here. [Minc Problem 17](https://yair-lavi.com/mincs-list/problem-17/index.html), [Björklund, Husfeldt and Lyckberg](https://www.sciencedirect.com/science/article/abs/pii/S0020019017300741)
 
+
+The [reference implementation and replay](verify_mod_four.py) compares 180 full modular coefficient vectors with direct integer characteristic polynomials, including signed inputs, singular matrices and every degree through order five. It uses schoolbook series operations to make the arithmetic easy to inspect.
