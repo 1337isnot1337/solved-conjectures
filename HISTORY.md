@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak packing criterion
+
+Proved the exact per-arm ceiling-cost formula, the finite maximum for larger-piece allocations, the full two-size arm-packing criterion and the budget-transfer bound. Strict compilation, an 82-theorem axiom audit and isolated kernel replay passed; graph realization, endpoints, AVD reductions and the full gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak Lean foundation
 
 Formalized the actual star-like graph, connected partitions, center-free arm localization and fixed-large-pieces capacity criterion. Strict compilation, a 31-theorem axiom audit and isolated kernel replay passed; endpoint arguments, reduction theorems and the full combined gate remain.

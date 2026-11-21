@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak packing criterion, 21 November 2026
+
+Lean now proves the exact ceiling-cost formula, the finite maximum and its one-step bound, the two-size arm-packing criterion and transfer to fewer larger pieces. Actual graph realization, endpoints and the AVD reductions remain. Strict compilation, an 82-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak foundation, 21 November 2026
 
 Lean defines the actual star-like graph and connected partitions, proves that center-free connected pieces lie in one arm, and proves the exact allocation criterion for fixed placements of larger pieces. Endpoint cases, the cited AVD reductions and existence constructions remain. Strict compilation, a 31-theorem axiom audit and isolated replay passed; the combined gate is pending.
