@@ -13,11 +13,17 @@ This continuation investigates full unresolved entries on [the live Minc list](h
 | C24, integrality of the minimum permanent | Checked the new entropy route against the integer-lattice requirement | The needed rounding inequality is unproved |
 | C34, Lih-Wang inequality | Exact coefficient and curvature identities; exploratory searches | Full inequality unresolved |
 | C30, Chollet's conjecture | New structural investigation | In progress |
-| C36 and P7, sign-matrix problems | Binary constructions and prior-art checks | In progress |
+| C36 and P7, sign-matrix problems | Classical modular rank obstruction; exact failures of one-row triangular and doubling constructions | Full conjectures unresolved; independently reviewed |
 | P17, permanental-compound characteristic polynomial | Symmetric-power compression and collision-state resolvent route | No uniformly faster algorithm established |
 | P2 and C42, permanent dominance | Complex affine-group counterexample diagnostics | No exact counterexample |
 
 The [inequalities note](inequalities/c9_c34_checkpoint.md) and [regular-matrix note](regular/README.md) give exact statements, source links, calculations, and limitations. Their programs are discovery tools. Floating-point searches cannot establish the inequalities, and exact finite searches do not resolve the unrestricted conjectures.
+
+The [sign-matrix checkpoint](sign/continuation_checkpoint.md) has an
+[independent review](reviews/sign_checkpoint_review.md) and exact arithmetic
+checks. The [permanental-compound review](reviews/permanental_compound_jacobi_review.md)
+proves the complementary-minor identity for all spectra and explains why its
+generic implementation does not meet the requested uniform speed improvement.
 
 The previous campaign's general P18 approximation theorem, Pula-Song-Wanless threshold, and Malek endpoint theorem retain the different scopes in [the existing continuation record](../NEXT.md). They are not new results of this continuation and are not counted here as three full numbered entries.
 
