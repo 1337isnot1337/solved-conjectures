@@ -4,7 +4,11 @@ Started 21 November 2026. This continues [campaign 223](https://github.com/1337i
 
 ## Completion status
 
-This continuation has one complete proposed solution of a separately paid mathematical target: [the proper agnostic real-threshold problem](../../results/steinke-zakynthinou-thresholds/). The written proof passed two independent internal mathematical reviews, and a fresh source audit found no matching prior resolution. It remains externally unrefereed. The repository now records [partial Lean verification](https://github.com/1337isnot1337/solved-conjectures/commit/ed9dcfa040e12f7c699cd5d53454859a7933ea77) of the learner, measurability, and all-sample empirical accuracy; the uniform original-CMI bound remains to be formalized. There is no submitted or accepted award and no payment. The target of ten completed problems has not been reached. Proper and improper versions count as one problem; restricted lemmas, failed routes, and finite checks do not add completions.
+**Current count under the US$100 minimum: 0 of 10.** The owner requires an advertised award of at least US$100, or its equivalent, payable directly to the solver. The campaign has recorded no sponsor acceptance or payment. [Recorded eligibility rule](https://github.com/1337isnot1337/solved-conjectures/issues/223#issuecomment-7069849082)
+
+The earlier [proper agnostic real-threshold result](../../results/steinke-zakynthinou-thresholds/) has a complete proposed proof. Its base reward is US$20 and remains below the floor even with both published bonuses. References to one proposed solution in the historical checkpoints below include that smaller prize. Two independent internal reviews checked the written proof, which remains externally unrefereed. [Partial Lean verification](https://github.com/1337isnot1337/solved-conjectures/commit/ed9dcfa040e12f7c699cd5d53454859a7933ea77) covers the learner, measurability and all-sample empirical accuracy. The uniform original conditional mutual information bound still relies on the written argument. [Sponsor's terms, §3](https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf)
+
+For Shallit's £200 question on primitive binary words, a [proof about parse ambiguity](shallit7/finite-ambiguity.md) rules out every grammar with a fixed finite bound on parses per word. A separate [modular counting proof](shallit7/modular-counts.md) rules out representing membership by parse counts modulo a prime. The existence of an unrestricted context-free grammar remains open.
 
 ## Work and ownership
 
