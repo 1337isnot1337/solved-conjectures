@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Fuss–Catalan slot count in Lean
+
+Verified the exact binomial count for choosing occupied and excess-bearing slots and distributing positive excess by stars and bars. The bijections to block sequences and actual paths remain. Strict compilation, 151-theorem axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
+
 ## 2026-11-21 — Fuss–Catalan rotation count in Lean
 
 Proved that in every rotation-invariant finite collection of length-L integer sequences with sum -1, exactly one in L sequences is a good rotation. Instantiation and the path-counting bridge remain. Strict compilation, 137-theorem axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
