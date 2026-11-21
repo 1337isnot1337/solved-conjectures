@@ -1,5 +1,7 @@
 # Weighted rectangular grids of completion faces
 
+The [unrestricted weighted-grid theorem](all-weighted-grids.md) now covers every side length and cell multiplicity. The argument below supplies its entropy estimates and balanced-side local bound.
+
 **Theorem.** Suppose an $`n`$-dimensional Boolean cube has $`m`$ distinct incomparable faces in each cell of an $`a`$-by-$`b`$ array, with $`2\le a\le b`$. Two distinct faces intersect exactly when their cells share a row or a column, including when their cells coincide. If $`a\ge128`$, then $`abm\le 2^n`$. The same bound holds, for arbitrary $`a`$, if $`a\ge2\log_2(ab)`$ or $`a\binom n{\lfloor n/2\rfloor}\le2^n`$.
 
 The balanced-side criterion $`a\ge2\log_2(ab)`$ also gives at least one vertex per face inside the union itself. In particular any counterexample with this graph would have $`a\le127`$ and $`n<2\cdot127^2`$, regardless of the number of faces in each cell. The [unweighted local theorem](local-grid-and-one-star-orbit.md) already covers $`m=1`$. The [sponsor's US$100 conjecture](https://sites.math.rutgers.edu/~zeilberg/math640_10.html) also permits other graphs.

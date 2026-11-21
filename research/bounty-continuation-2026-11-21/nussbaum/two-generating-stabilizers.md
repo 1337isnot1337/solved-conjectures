@@ -1,5 +1,7 @@
 # Two generating clique stabilizers in Nussbaum’s problem
 
+The [unrestricted weighted-grid theorem](all-weighted-grids.md) completes the ambient period bound in every case of this classification.
+
 **Theorem.** Label a ternary orbit of length $`p`$ by the cyclic group $`G`$. Suppose the setwise stabilizers of maximal compatibility cliques have exactly two inclusion-minimal members $`K,L`$, and $`K+L=G`$. Two distinct orbit faces then meet if and only if their labels differ by an element of $`K`$ or of $`L`$. In particular the compatibility graph is a rectangular grid with $`m=|K\cap L|`$ faces per cell. Its side lengths are $`[G:K]`$ and $`[G:L]`$. There is no primality assumption on either index or on $`m`$.
 
 Consequently the orbit has $`p\le 2^n`$ whenever the [weighted-grid theorem](weighted-grid-entropy.md) applies. If $`K\cap L`$ is trivial, the [local unweighted bound](local-grid-and-one-star-orbit.md) gives at least $`p`$ Boolean vertices in the union in every dimension.
