@@ -2,18 +2,18 @@
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
 
-## Vishnyakova weighted local verification
+## Vishnyakova complete local verification
 
-The weighted root-radius theorem has a checked seven-module closure.
-The [receipt](verification/lean-vishnyakova-20261121/weighted-receipt.json)
+The original sampled-sequence and weighted root-radius theorems have a
+checked 17-module closure. The
+[receipt](verification/lean-vishnyakova-20261121/complete-receipt.json)
 records source and object hashes, strict source commands, the complete axiom
-audit, and stock-kernel replay. The audit covers all private declarations
-and all 26 required endpoints. Fresh strict source checks leave the frozen
-objects unchanged; the independent checker replays those same objects.
+audit, and stock-kernel replay. The audit covers all 439 declarations,
+including 172 private declarations and all 66 required endpoints.
+The independent checker replayed the frozen objects without changes.
 
-This checkpoint proves the full weighted transform-class theorem. It does
-not certify the original sampled-sequence class, the combined repository
-gate, or hosted validation.
+This checkpoint proves the complete result-level assertions. The combined
+repository gate and hosted verification of this checkpoint remain separate.
 
 ## Bernardi–Morales local verification checkpoint
 

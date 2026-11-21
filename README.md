@@ -25,7 +25,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | ✅ |
 | [Gröchenig's problem](results/grochenig-zero-density/) | ⬜ |
 | [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
-| [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | 🟡 |
+| [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | ✅ |
 | [Novelli–Thibon's conjecture](results/novelli-thibon/) | ⬜ |
 | [López Pouso–Segura's conjectures](results/lopez-pouso-segura-bessel/) | 🟡 |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ |

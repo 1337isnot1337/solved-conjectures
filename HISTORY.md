@@ -1,5 +1,16 @@
 # History
 
+## 2026-11-21 — Original Vishnyakova theorem verified in Lean
+
+Completed the sampled-sequence theorem using all ordered finite Toeplitz
+minors of the actual polynomial samples. Proved the centered disk and
+attainment of the exact radius within that class, including initial zero
+samples in the necessity argument. The full 17-module closure also contains
+the weighted theorem. Strict sources, the 439-declaration audit, and stock
+kernel replay passed. Registered 40 additional endpoints, bringing the
+required total to 66. Updated the result badge to complete.
+The combined repository gate remains pending.
+
 ## 2026-11-21 — Vishnyakova weighted theorem verified in Lean
 
 Proved the centered-disk bound and exact attained outer radius for every

@@ -15,24 +15,26 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
-## Vishnyakova weighted root-radius theorem, 21 November 2026
+## Vishnyakova root-radius theorems, 21 November 2026
 
-The actual source transform sends each normalized falling factorial to its
-corresponding monomial. Lean proves its inverse and preservation of degree.
-For every positive weight and positive degree, the transform root condition
-implies the centered-disk bound. Lean also proves the exact greatest root
-modulus and its attainment.
+Lean proves the original sampled-sequence theorem and the weighted theorem.
+Both statements cover every positive degree; the weighted statement covers
+every positive real weight. The original class uses all ordered finite
+Toeplitz minors of the actual samples. Its transform condition is derived
+within Lean, including initial zero samples.
 
-The seven registered modules contain the polarization and tridiagonal
-arguments. They assume no unformalized stability theorem. All sources passed
-strict compilation. The complete audit checked 238 declarations, including
-202 theorem declarations, 75 private declarations, and 26 required endpoints.
-The unchanged pinned checker replayed the exact seven-module closure.
-See the [receipt](verification/lean-vishnyakova-20261121/weighted-receipt.json).
+The proof verifies the centered disks, exact greatest root moduli, and
+attainment within each class. It constructs the source transform and proves
+its inverse and degree identity. Polarization, the tridiagonal argument,
+and total nonnegativity of the binomial extremizer are also formalized.
 
-The result badge remains partial until the original sampled-sequence class
-passes its separate checks. The combined package gate and hosted validation
-are not claimed by this local receipt.
+All 17 sources passed strict checks. The complete audit checked 439
+declarations, including 387 theorem declarations, 172 private declarations,
+and all 66 required endpoints. The unchanged pinned checker replayed the
+exact closure. See the
+[receipt](verification/lean-vishnyakova-20261121/complete-receipt.json).
+The result is fully verified at this scope. The combined repository gate
+remains a separate pending check.
 
 ## Bernardi–Morales delta and event identities, 21 November 2026
 

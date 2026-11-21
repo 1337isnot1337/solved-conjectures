@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "../scripts/replay_lean.py",
+    "--root",
+    "Conjectures.VishnyakovaOriginal"
+  ],
+  "returncode": 0,
+  "wall_seconds": 5121.695878144001,
+  "user_seconds": 170.934107,
+  "system_seconds": 2066.392262,
+  "maxrss_kib": 2003544
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "lean",
+    "-j1",
+    "-M4500",
+    "-DwarningAsError=true",
+    "/workspace/scratch/17b12d3ee06e/VishnyakovaCompleteOwnedAudit.lean"
+  ],
+  "returncode": 0,
+  "wall_seconds": 32.5019299580008,
+  "user_seconds": 12.781872,
+  "system_seconds": 9.369314,
+  "maxrss_kib": 1389012
+}

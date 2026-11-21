@@ -11,6 +11,16 @@ modules=(
   Conjectures.VishnyakovaJacobi
   Conjectures.VishnyakovaDisk
   Conjectures.VishnyakovaTransform
+  Conjectures.VishnyakovaExtremal
+  Conjectures.VishnyakovaTotalPositivityExtremal
+  Conjectures.VishnyakovaTotalPositivityRatios
+  Conjectures.VishnyakovaTotalPositivityMinors
+  Conjectures.VishnyakovaTotalPositivityRational
+  Conjectures.VishnyakovaTotalPositivityToeplitz
+  Conjectures.VishnyakovaTotalPositivityReciprocal
+  Conjectures.VishnyakovaTotalPositivityTransform
+  Conjectures.VishnyakovaTotalPositivity
+  Conjectures.VishnyakovaOriginal
   Conjectures.BernardiMoralesFunctionalGraph
   Conjectures.BernardiMoralesAveraging
   Conjectures.BernardiMoralesCycle

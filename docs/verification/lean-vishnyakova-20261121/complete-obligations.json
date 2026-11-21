@@ -1,0 +1,102 @@
+{
+  "Conjectures.VishnyakovaRootRadius": [
+    "VishnyakovaRootRadius.reciprocal_segment",
+    "VishnyakovaRootRadius.reciprocal_segment_sqrt",
+    "VishnyakovaRootRadius.rayleigh_disk_bound"
+  ],
+  "Conjectures.VishnyakovaPolarization": [
+    "VishnyakovaRootRadius.ClosedUpperStable.polar_derivative",
+    "VishnyakovaRootRadius.realPolarValue_ne_zero"
+  ],
+  "Conjectures.VishnyakovaBinomial": [
+    "VishnyakovaRootRadius.binomial_three_term",
+    "VishnyakovaRootRadius.coefficientPairing_product_ne_zero",
+    "VishnyakovaRootRadius.risingProduct_one",
+    "VishnyakovaRootRadius.sourceCoefficient_step",
+    "VishnyakovaRootRadius.monicDiagonalValue_recurrence"
+  ],
+  "Conjectures.VishnyakovaReflection": [
+    "VishnyakovaRootRadius.source_reflection",
+    "VishnyakovaRootRadius.source_real_root_interval",
+    "VishnyakovaRootRadius.source_extremal_zero"
+  ],
+  "Conjectures.VishnyakovaJacobi": [
+    "VishnyakovaRootRadius.jacobi_rayleigh_identity",
+    "VishnyakovaRootRadius.jacobi_disk_bound"
+  ],
+  "Conjectures.VishnyakovaDisk": [
+    "VishnyakovaRootRadius.source_diagonal_root_disk",
+    "VishnyakovaRootRadius.source_root_disk",
+    "VishnyakovaRootRadius.source_root_modulus"
+  ],
+  "Conjectures.VishnyakovaTransform": [
+    "VishnyakovaRootRadius.sourceTransform_normalizedFalling",
+    "VishnyakovaRootRadius.sourceTransform_inverse_eval",
+    "VishnyakovaRootRadius.sourceTransform_natDegree",
+    "VishnyakovaRootRadius.weighted_root_disk",
+    "VishnyakovaRootRadius.weighted_root_modulus",
+    "VishnyakovaRootRadius.weighted_radius_isGreatest",
+    "VishnyakovaRootRadius.weighted_radius_sup",
+    "VishnyakovaRootRadius.unit_weight_radius_sup"
+  ],
+  "Conjectures.VishnyakovaExtremal": [
+    "VishnyakovaRootRadius.weightedExtremal_complex_eval",
+    "VishnyakovaRootRadius.unitExtremal_natDegree",
+    "VishnyakovaRootRadius.unitExtremal_eval_nat",
+    "VishnyakovaRootRadius.unitExtremal_root_neg"
+  ],
+  "Conjectures.VishnyakovaTotalPositivityExtremal": [
+    "VishnyakovaTotalPositivity.cumulativeColumns_totallyNonneg",
+    "VishnyakovaTotalPositivity.binomialToeplitz_totallyNonneg",
+    "VishnyakovaTotalPositivity.unitExtremal_sampled_totallyNonneg"
+  ],
+  "Conjectures.VishnyakovaTotalPositivityRatios": [
+    "VishnyakovaTotalPositivity.ratio_antitone",
+    "VishnyakovaTotalPositivity.shifted_ratio_limit",
+    "VishnyakovaTotalPositivity.positive_ratio_limit_of_recurrence"
+  ],
+  "Conjectures.VishnyakovaTotalPositivityMinors": [
+    "VishnyakovaTotalPositivity.ConsecutiveColumnMinorsNonneg.logConcave",
+    "VishnyakovaTotalPositivity.ConsecutiveColumnMinorsNonneg.positive_or_finite_support",
+    "VishnyakovaTotalPositivity.totallyNonneg_shift_of_initial_zeros",
+    "VishnyakovaTotalPositivity.geometric_border_det",
+    "VishnyakovaTotalPositivity.ConsecutiveColumnMinorsNonneg.removePole"
+  ],
+  "Conjectures.VishnyakovaTotalPositivityRational": [
+    "VishnyakovaTotalPositivity.rational_forward_recurrence",
+    "VishnyakovaTotalPositivity.denominator_root_of_characteristic",
+    "VishnyakovaTotalPositivity.rational_positive_poles"
+  ],
+  "Conjectures.VishnyakovaTotalPositivityToeplitz": [
+    "VishnyakovaTotalPositivity.finiteToeplitz_totallyNonneg",
+    "VishnyakovaTotalPositivity.finiteToeplitz_mul",
+    "VishnyakovaTotalPositivity.finiteToeplitz_one",
+    "VishnyakovaTotalPositivity.finiteToeplitz_det",
+    "VishnyakovaTotalPositivity.finiteToeplitz_checkerboard"
+  ],
+  "Conjectures.VishnyakovaTotalPositivityReciprocal": [
+    "VishnyakovaTotalPositivity.signedUnitExtension_det_nonneg",
+    "VishnyakovaTotalPositivity.signed_inverse_suffix_minor_nonneg",
+    "VishnyakovaTotalPositivity.signed_reciprocal_inverse",
+    "VishnyakovaTotalPositivity.signed_reciprocal_constant_pos",
+    "VishnyakovaTotalPositivity.signed_reciprocal_consecutiveMinors"
+  ],
+  "Conjectures.VishnyakovaTotalPositivityTransform": [
+    "VishnyakovaTotalPositivity.source_numerator_series",
+    "VishnyakovaTotalPositivity.sourceNumerator_eval_one",
+    "VishnyakovaTotalPositivity.sourceNumerator_eval_mobius",
+    "VishnyakovaTotalPositivity.rootsInUnitInterval_of_numerator"
+  ],
+  "Conjectures.VishnyakovaTotalPositivity": [
+    "VishnyakovaTotalPositivity.polynomial_numerator_roots_nonpositive",
+    "VishnyakovaTotalPositivity.sampled_totallyNonneg_rootsInUnitInterval"
+  ],
+  "Conjectures.VishnyakovaOriginal": [
+    "VishnyakovaRootRadius.SampledClass.weighted",
+    "VishnyakovaRootRadius.original_root_disk",
+    "VishnyakovaRootRadius.original_root_modulus",
+    "VishnyakovaRootRadius.original_extremal_polynomial",
+    "VishnyakovaRootRadius.original_radius_isGreatest",
+    "VishnyakovaRootRadius.original_radius_sup"
+  ]
+}

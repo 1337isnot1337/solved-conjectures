@@ -22,23 +22,26 @@ The original source is Anna Vishnyakova, *Polynomials interpolated totally posit
 
 ## Lean verification
 
-Lean verifies the complete weighted transform-class theorem for every
-positive weight and positive degree. The formalization uses the actual
-normalized falling-factorial transform, including its inverse and degree
-identity. It proves the centered disk, the exact greatest root modulus,
-and attainment by an extremal polynomial.
+Lean verifies both the original sampled-sequence theorem and the weighted
+transform-class theorem for every positive degree and positive weight.
+The original class uses every finite ordered minor of the infinite Toeplitz
+matrix of the actual polynomial samples. Lean derives the transform condition
+from these minors, including initial zero samples.
 
-The formal proof establishes polarization directly through polar derivatives.
-Its tridiagonal argument constructs a recurrence vector. These arguments
-discharge the mathematical dependencies of the weighted theorem.
+The proof establishes the centered disks and the exact greatest root moduli.
+For the original class, the disk has center `-1/2` and radius `n-1/2`.
+The radius `n` is attained by a polynomial with samples `choose(k+n,n)`.
+Every finite ordered Toeplitz minor of this extremizer is proved nonnegative.
 
-The seven modules passed strict source checks, the complete declaration and
-axiom audit, and independent stock-kernel replay. The audit covers 238
-declarations, including 202 theorem declarations and 75 private declarations.
-All 26 required endpoints passed. See the
-[verification receipt](../../docs/verification/lean-vishnyakova-20261121/weighted-receipt.json)
-and [source](../../lean/Conjectures/VishnyakovaTransform.lean).
+The formal proof constructs the actual normalized falling-factorial transform.
+It proves its inverse and degree identity, polarization through polar
+derivatives, and the recurrence vector for the tridiagonal argument.
 
-The original sampled-sequence class is outside this checked checkpoint.
-Its separate formal proof is undergoing final checks. The combined package
-gate and hosted validation also remain pending.
+All 17 modules passed strict source checks, the complete declaration and axiom
+audit, and independent stock-kernel replay. The audit covers 439 declarations,
+including 387 theorem declarations and 172 private declarations.
+All 66 required endpoints passed. See the
+[verification receipt](../../docs/verification/lean-vishnyakova-20261121/complete-receipt.json),
+[original theorem](../../lean/Conjectures/VishnyakovaOriginal.lean), and
+[weighted theorem](../../lean/Conjectures/VishnyakovaTransform.lean).
+The combined repository gate remains a separate pending check.
