@@ -309,6 +309,110 @@ theorem inverseMatrix_mul_bidiagonal (N : ℕ) (z : S) (q : ℕ → S) :
     rw [hi]
     simp [Matrix.one_apply, Fin.ext_iff]
 
+noncomputable def shiftedBlock (N i : ℕ) (μ y : S) (q : ℕ → S) : Matrix (Fin N) (Fin N) S :=
+  fun a b => if a.val ≤ i then (if a = b then 1 else 0)
+    else if b.val ≤ i then 0
+    else bidiagonalInverseEntry (μ^i*y) q (a.val-(i+1)) (b.val-(i+1))
+
+theorem shiftedBlock_row_fixed (N i : ℕ) (μ y : S) (q : ℕ → S)
+    (a b : Fin N) (h : a.val ≤ i) :
+    shiftedBlock N i μ y q a b = if a = b then 1 else 0 := by
+  simp [shiftedBlock, h]
+
+theorem shiftedBlock_above (N i : ℕ) (μ y : S) (q : ℕ → S)
+    (a b : Fin N) (h : a.val < b.val) : shiftedBlock N i μ y q a b = 0 := by
+  have hne : a ≠ b := by intro he; have := congrArg Fin.val he; omega
+  by_cases ha : a.val ≤ i
+  · simp [shiftedBlock, ha, hne]
+  · have hb : ¬ b.val ≤ i := by omega
+    have ht : a.val-(i+1) < b.val-(i+1) := by omega
+    simp [shiftedBlock, ha, hb, inverseEntry_above (μ^i*y) q _ _ ht]
+
+theorem shiftedBlock_diagonal (N i : ℕ) (μ y : S) (q : ℕ → S) (a : Fin N) :
+    shiftedBlock N i μ y q a a = 1 := by
+  by_cases ha : a.val ≤ i
+  · simp [shiftedBlock, ha]
+  · simp [shiftedBlock, ha, inverseEntry_diagonal]
+
+noncomputable def blockProduct (N : ℕ) (μ y : S) (q : ℕ → S) : ℕ → Matrix (Fin N) (Fin N) S
+  | 0 => 1
+  | i+1 => shiftedBlock N i μ y q * blockProduct N μ y q i
+
+theorem blockProduct_row_step_fixed (N i : ℕ) (μ y : S) (q : ℕ → S)
+    (a b : Fin N) (h : a.val ≤ i) :
+    blockProduct N μ y q (i+1) a b = blockProduct N μ y q i a b := by
+  rw [blockProduct]
+  simp [Matrix.mul_apply, shiftedBlock, h]
+
+theorem blockProduct_row_stable (N i : ℕ) (μ y : S) (q : ℕ → S)
+    (a b : Fin N) (h : a.val ≤ i) :
+    blockProduct N μ y q (i+1) a b = blockProduct N μ y q (a.val+1) a b := by
+  induction i with
+  | zero =>
+    have ha : a.val = 0 := by omega
+    simp [ha]
+  | succ i ih =>
+    by_cases hi : a.val ≤ i
+    · rw [blockProduct_row_step_fixed N (i+1) μ y q a b (by omega), ih hi]
+    · have he : a.val = i+1 := by omega
+      simp [he]
+
+theorem blockProduct_above (N i : ℕ) (μ y : S) (q : ℕ → S)
+    (a b : Fin N) (h : a.val < b.val) : blockProduct N μ y q i a b = 0 := by
+  induction i generalizing a b with
+  | zero =>
+    have hne : a ≠ b := by intro he; have := congrArg Fin.val he; omega
+    simp [blockProduct, hne]
+  | succ i ih =>
+    rw [blockProduct, Matrix.mul_apply]
+    apply Finset.sum_eq_zero
+    intro x hx
+    by_cases hax : a.val < x.val
+    · rw [shiftedBlock_above N i μ y q a x hax, zero_mul]
+    · have hxb : x.val < b.val := by omega
+      rw [ih x b hxb, mul_zero]
+
+theorem blockProduct_diagonal (N i : ℕ) (μ y : S) (q : ℕ → S) (a : Fin N) :
+    blockProduct N μ y q i a a = 1 := by
+  induction i with
+  | zero => simp [blockProduct]
+  | succ i ih =>
+    rw [blockProduct, Matrix.mul_apply]
+    calc
+      (∑ x : Fin N, shiftedBlock N i μ y q a x * blockProduct N μ y q i x a) =
+          shiftedBlock N i μ y q a a * blockProduct N μ y q i a a := by
+        apply Finset.sum_eq_single a
+        · intro x hx hne
+          have hval : x.val ≠ a.val := by intro he; apply hne; exact Fin.ext he
+          by_cases hax : a.val < x.val
+          · rw [shiftedBlock_above N i μ y q a x hax, zero_mul]
+          · have hxa : x.val < a.val := by omega
+            rw [blockProduct_above N i μ y q x a hxa, mul_zero]
+        · simp
+      _ = 1 := by rw [shiftedBlock_diagonal, ih]; simp
+
+theorem blockProduct_stable_step (N i : ℕ) (μ y : S) (q : ℕ → S) (h : N ≤ i) :
+    blockProduct N μ y q (i+1) = blockProduct N μ y q i := by
+  ext a b
+  exact blockProduct_row_step_fixed N i μ y q a b (by have := a.isLt; omega)
+
+theorem blockProduct_stable (N i : ℕ) (μ y : S) (q : ℕ → S) :
+    blockProduct N μ y q (N+i) = blockProduct N μ y q N := by
+  induction i with
+  | zero => simp
+  | succ i ih =>
+    rw [show N+(i+1) = (N+i)+1 by omega,
+      blockProduct_stable_step N (N+i) μ y q (by omega), ih]
+
+theorem shiftedBlock_shift (N i : ℕ) (μ y : S) (q : ℕ → S) (a b : Fin N) :
+    shiftedBlock (N+1) (i+1) μ y q a.succ b.succ = shiftedBlock N i μ (μ*y) q a b := by
+  have hpow : μ^(i+1)*y = μ^i*(μ*y) := by rw [pow_succ]; ring
+  have ha : (a.succ : Fin (N+1)).val ≤ i+1 ↔ a.val ≤ i := by simp
+  have hb : (b.succ : Fin (N+1)).val ≤ i+1 ↔ b.val ≤ i := by simp
+  have hsuba : (a.succ : Fin (N+1)).val - (i+1+1) = a.val-(i+1) := by simp
+  have hsubb : (b.succ : Fin (N+1)).val - (i+1+1) = b.val-(i+1) := by simp
+  simp only [shiftedBlock, ha, hb, Fin.succ_inj, hsuba, hsubb, hpow]
+
 end Ring
 
 end GilmoreCrossingNesting
