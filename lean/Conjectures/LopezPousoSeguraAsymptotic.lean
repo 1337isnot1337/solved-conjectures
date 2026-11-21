@@ -71,4 +71,22 @@ theorem asymptotic_normalized_coefficients (ε : ℝ) :
   field_simp
   ring
 
+
+open Filter
+open scoped Topology
+
+theorem eventual_violation_of_scaled_limit (κ ratio : ℕ → ℝ)
+    (hκ : ∀ᶠ n in atTop, κ n ≠ 0)
+    (hlim : Tendsto (fun n => (κ n)^4 * (ratio n - 1 - Real.pi^2/(12*(κ n)^2)))
+      atTop (𝓝 (Real.pi^4/120))) :
+    ∀ᶠ n in atTop, Real.pi^2/(12*(κ n)^2) < ratio n - 1 := by
+  have hp : 0 < Real.pi^4/120 := by positivity
+  have he := hlim.eventually (eventually_gt_nhds hp)
+  filter_upwards [hκ, he] with n hn he
+  have hk : 0 < (κ n)^4 := (by decide : Even (4:ℕ)).pow_pos hn
+  have hv : 0 < ratio n - 1 - Real.pi^2/(12*(κ n)^2) := by
+    exact pos_of_mul_pos_right he (le_of_lt hk)
+  linarith
+
+
 end LopezPousoSegura

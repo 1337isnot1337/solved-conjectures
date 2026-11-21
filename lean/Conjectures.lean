@@ -18,6 +18,7 @@ import Conjectures.GilmoreCrossingNesting
 import Conjectures.DospolovaGermanskovZaporozhets
 import Conjectures.LopezPousoSegura
 import Conjectures.LopezPousoSeguraAsymptotic
+import Conjectures.LopezPousoSeguraAsymptoticBridge
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao

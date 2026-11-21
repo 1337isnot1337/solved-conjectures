@@ -1306,4 +1306,4 @@ This formalizes a previously resolved result. A complete ordinary disproof was p
 
 ## López Pouso–Segura central-node perturbation
 
-`perturb1_hasDeriv`, `perturb2_hasDeriv`, their second-derivative companions and `perturb2_ode` verify the explicit perturbation functions and ODE coefficients. `asymptotic_product_algebra` and `asymptotic_normalized_coefficients` verify the final fourth-order coefficient. Controlled parameter-dependent ODE and root expansions, the gamma-ratio expansion and the eventual failure remain unformalized.
+`perturb1_hasDeriv`, `perturb2_hasDeriv`, their second-derivative companions and `perturb2_ode` verify the explicit perturbation functions and ODE coefficients. `asymptotic_product_algebra` and `asymptotic_normalized_coefficients` verify the final fourth-order coefficient. `eventual_violation_of_product_approx` derives the positive scaled limit and eventual failure from the displayed product approximation with a vanishing second-order remainder. Controlled parameter-dependent ODE and root expansions, the gamma-ratio expansion and that product approximation remain unformalized.

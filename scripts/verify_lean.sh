@@ -52,6 +52,7 @@ modules=(
   Conjectures.DospolovaGermanskovZaporozhets
   Conjectures.LopezPousoSegura
   Conjectures.LopezPousoSeguraAsymptotic
+  Conjectures.LopezPousoSeguraAsymptoticBridge
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany
