@@ -9,6 +9,13 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Zhu.entry_eq_zero_of_lt,
+    `Zhu.matrix_det,
+    `Zhu.determinant_identity,
+    `Zhu.negative_region,
+    `Zhu.exact_coefficient,
+    `Zhu.eval_determinant,
+    `Zhu.zhu_conjecture_false,
     `SunZhao.counterexample,
     `SunZhao.conjecture_false,
     `FangZhangZhao.counterexample,

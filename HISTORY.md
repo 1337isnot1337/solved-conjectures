@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Zhu Jacobi–Stirling Lean proof
+
+Formalized the unweighted Jacobi–Stirling recurrence, the leading Hankel determinant and its coefficient −4, the negation of the full coefficientwise minor assertion, and the stated negative region. The standalone module passed strict source compilation, the all-owned axiom audit and stock-kernel replay. The combined repository gate is pending.
+
 ## 2026-11-21 — Dospolova–Germanskov–Zaporozhets's conjecture
 
 Added a complete proposed analytic disproof of Conjecture 3.6 in *On Steiner entire function*. For every positive c, the sequence c^k/k! satisfies all the proposed ultra-log-concavity inequalities with equality. A nontrivial Gaussian-bounded compact has expected global Gaussian range strictly larger than twice its maximal deterministic local oscillation. Vitale's published normalized-ratio limit then excludes the entire factorial family.

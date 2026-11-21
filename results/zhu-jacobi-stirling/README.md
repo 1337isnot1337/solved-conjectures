@@ -26,7 +26,7 @@ The conjecture is the unweighted assertion in §5.2 of Zhu's paper, immediately 
 
 A separate internal audit checked the source normalization, derived the polynomial identity independently, and verified the strict interior counterexample. The [source audit](SOURCES.md) records primary and adjacent papers, both search engines, and public solution archives. No earlier disproof was located within the stated search scope. The notes remain unrefereed, with the source-access and indexing limits recorded explicitly.
 
-**Lean status:** none.
+**Lean status:** The [Lean proof](../../lean/Conjectures/ZhuJacobiStirling.lean) formalizes the recurrence, the actual matrix determinant and polynomial identity, the coefficient −4, the full quantified conjecture and its negation, and the stated negative region over linearly ordered fields. Its standalone strict source check, all-owned axiom audit and stock-kernel replay passed. The combined repository gate for this registration is pending.
 
 ## Reproduce
 
