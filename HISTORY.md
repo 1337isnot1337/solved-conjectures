@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak connected partition realization
+
+Proved that every feasible two-size arm allocation realizes an actual connected partition, including exact center and piece counts and arbitrary ordering. Strict compilation, a 205-theorem axiom audit and isolated kernel replay passed; extra-piece cases, endpoint hypotheses, AVD reductions and the full gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak endpoint packing
 
 Proved the complementary quotient and carry formulas, regular endpoint packing under its explicit carry witness, and transfer across arbitrarily many budget steps. Strict compilation, a 120-theorem axiom audit and isolated kernel replay passed; graph realization, remaining endpoint conditions, AVD reductions and the full gate remain.

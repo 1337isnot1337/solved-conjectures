@@ -9,6 +9,16 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Hornak.armSegment_connected,
+    `Hornak.armSegment_card,
+    `Hornak.centralSet_connected,
+    `Hornak.centralSet_card,
+    `Hornak.partition_of_interval_tiling,
+    `Hornak.partitionable_reorder,
+    `Hornak.realize_allocations,
+    `Hornak.small_piece_count,
+    `Hornak.large_piece_count,
+    `Hornak.partition_from_packing,
     `BesselWeights.kernel_integrable_finite,
     `BesselWeights.finite_mixture_inverse_phase,
     `BesselWeights.signs_from_finite_mixture,

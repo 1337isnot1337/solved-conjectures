@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak graph realization, 21 November 2026
+
+Every feasible two-size arm allocation now yields a connected partition of the actual star graph with the requested center and exact piece counts, in arbitrary order. The extra-piece cases, remaining endpoint hypotheses and AVD reductions remain. Strict compilation, a 205-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak endpoint packing, 21 November 2026
 
 Lean proves the complementary quotient/carry formulas, the regular endpoint packing with its explicit carry witness and transfer across any number of steps. Graph realization, remaining endpoint conditions, extra-piece cases and the AVD reductions remain. Strict compilation, a 120-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.

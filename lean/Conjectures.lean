@@ -916,3 +916,5 @@ import Conjectures.HornakGraph
 import Conjectures.HornakPacking
 import Conjectures.HornakMaximum
 import Conjectures.HornakResidues
+import Conjectures.HornakSegments
+import Conjectures.HornakTiling
