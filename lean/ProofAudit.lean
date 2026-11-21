@@ -40,6 +40,7 @@ run_cmd do
     `Hornak.exceptional_packing_weak,
     `Hornak.exceptional_partition_weak,
     `Hornak.exceptional_partition_with_reserved_arm_weak,
+    `JohnsonPfaffian.intervalPfaffian_nonnegative,
     `JohnsonPfaffian.intervalPfaffian_coefficients_nonnegative,
     `JohnsonPfaffian.intervalPfaffian_homogeneous,
     `JohnsonPfaffian.sparse_interval_inductive_step,
