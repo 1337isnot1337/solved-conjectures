@@ -33,6 +33,13 @@ instance pathFintype : (t : Tree) → Fintype t.Path
     letI := pathFintype r
     inferInstanceAs (Fintype (Sum l.Path r.Path))
 
+instance pathDecidableEq : (t : Tree) → DecidableEq t.Path
+  | .leaf _ => inferInstanceAs (DecidableEq Unit)
+  | .fork l r =>
+    letI := pathDecidableEq l
+    letI := pathDecidableEq r
+    inferInstanceAs (DecidableEq (Sum l.Path r.Path))
+
 def position : (t : Tree) → t.Path → ℕ
   | .leaf i, _ => i
   | .fork l _, .inl p => l.position p

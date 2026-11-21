@@ -1,8 +1,8 @@
 # Proper agnostic threshold learning with constant conditional mutual information
 
 21 November 2026. Complete proposed proof, independently checked within
-this research effort. This is not a Lean formalization or an externally
-accepted prize result. The [source audit](PRIOR_AUDIT.md) found no earlier
+this research effort. The [companion Lean theorem](../../lean/Conjectures/SteinkeZakynthinou.lean)
+proves the proper threshold prize statement with its own constants. The [source audit](PRIOR_AUDIT.md) found no earlier
 resolution of the exact separately rewarded threshold problem.
 
 ## Theorem
@@ -565,5 +565,5 @@ it does not replace a hypothesis or omit an unresolved mathematical step.
 The [finite checker](verify.py) and its [receipt](verification.json)
 independently audit folded indexing and inactive-node cancellation. They
 are supplementary checks, not an inference from small sample sizes to
-the theorem. No Lean, external referee, sponsor acceptance, or payment
-claim is made by this record.
+the theorem. The [result page](README.md) gives the checked Lean bounds and
+replay commands.

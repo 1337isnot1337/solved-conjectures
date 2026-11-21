@@ -1082,4 +1082,4 @@ import Conjectures.HornakMerge
 import Conjectures.HornakSmallBalance
 import Conjectures.HornakOneArm
 import Conjectures.HornakTwoArm
-import Conjectures.SteinkeZakynthinou.Learner
+import Conjectures.SteinkeZakynthinou

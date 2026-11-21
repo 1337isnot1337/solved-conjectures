@@ -258,13 +258,34 @@ modules=(
   Conjectures.HanSabagCounterexample
   Conjectures.ZhangDeletion
   Conjectures.ZhuJacobiStirling
-  Conjectures.SteinkeZakynthinou.Statement
-  Conjectures.SteinkeZakynthinou.Branch
-  Conjectures.SteinkeZakynthinou.Tree
+  Conjectures.SteinkeZakynthinou.Adjacency
+  Conjectures.SteinkeZakynthinou.AdjacentInformation
+  Conjectures.SteinkeZakynthinou.Alignment
+  Conjectures.SteinkeZakynthinou.Auxiliary
+  Conjectures.SteinkeZakynthinou.Averaging
   Conjectures.SteinkeZakynthinou.Balanced
-  Conjectures.SteinkeZakynthinou.Rounding
-  Conjectures.SteinkeZakynthinou.Rank
+  Conjectures.SteinkeZakynthinou.Branch
+  Conjectures.SteinkeZakynthinou.Channel
+  Conjectures.SteinkeZakynthinou.Charges
+  Conjectures.SteinkeZakynthinou.DecodedChannel
+  Conjectures.SteinkeZakynthinou.Fold
+  Conjectures.SteinkeZakynthinou.Geometric
+  Conjectures.SteinkeZakynthinou.Inclusion
+  Conjectures.SteinkeZakynthinou.Information
   Conjectures.SteinkeZakynthinou.Learner
+  Conjectures.SteinkeZakynthinou.Locality
+  Conjectures.SteinkeZakynthinou.Pool
+  Conjectures.SteinkeZakynthinou.Properization
+  Conjectures.SteinkeZakynthinou.Rank
+  Conjectures.SteinkeZakynthinou.RankCode
+  Conjectures.SteinkeZakynthinou.RankLoss
+  Conjectures.SteinkeZakynthinou.Rounding
+  Conjectures.SteinkeZakynthinou.SelectorAvoid
+  Conjectures.SteinkeZakynthinou.Statement
+  Conjectures.SteinkeZakynthinou.Tensor
+  Conjectures.SteinkeZakynthinou.Tree
+  Conjectures.SteinkeZakynthinou.TreeStability
+  Conjectures.SteinkeZakynthinou
   Conjectures.SunZhao
   Conjectures.FangZhangZhao
   Solitaire.Counterexample

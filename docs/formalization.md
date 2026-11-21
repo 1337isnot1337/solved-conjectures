@@ -2,7 +2,7 @@
 
 ## Steinke–Zakynthinou threshold formalization scope
 
-Lean checks the [target statement](../lean/Conjectures/SteinkeZakynthinou/Statement.lean) and the [learner and accuracy theorem](../lean/Conjectures/SteinkeZakynthinou/Learner.lean). The proof uses a rational child rule, geometric noise scales with ratio $3/4$, and label-first rounding to finite closed thresholds. The remaining steps are the all-size replacement comparison, averaging its charges over iid paired pools, and bounding the information cost of the selected successor or maximum.
+[The full proper threshold theorem](../lean/Conjectures/SteinkeZakynthinou.lean) is checked. The finite learner uses the rational shifted-tree rule, noise scales with ratio $3/4$, and label-first rounding. In the CMI proof, giving the two pool slots in a row consecutive tags keeps the learner's order on selected samples. Summing row charges under the common iid selected-sample law bounds the information on the augmented output. A finite rank code then decodes the successor or maximum into the learner's actual threshold.
 
 Gröchenig’s upper-density result is excluded after a [checked earlier resolution](../research/bounty-continuation-2026-11-21/grochenig-prior-resolution/). Its independent proof and verification receipts remain in [immutable Git history](https://github.com/1337isnot1337/solved-conjectures/blob/628270dc5e07d7924de265d2ac1beee4b5634b80/docs/verification/lean-grochenig-20261121/receipt.json). The reused KVZ results remain active.
 

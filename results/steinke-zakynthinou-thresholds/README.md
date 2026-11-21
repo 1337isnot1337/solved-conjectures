@@ -4,8 +4,8 @@ Complete proposed proof of the separately rewarded proper-threshold
 problem in Section 3 of Steinke and Zakynthinou's COLT 2020 open-problem
 paper. The proof passed two independent internal mathematical reviews;
 the fresh primary-source audit found no earlier exact resolution. It is
-externally unrefereed. Lean verification currently covers the learner
-and its empirical accuracy. No prize has been submitted, accepted, or paid.
+externally unrefereed. Lean proves the full proper threshold prize statement.
+No prize has been submitted, accepted, or paid.
 
 ## Result
 
@@ -66,10 +66,10 @@ improper learner, with optional bonuses. No expiry or withdrawal was
 found in the checked sources. Current sponsor acceptance is not known;
 no bonus, award, or payment is claimed.
 
-Lean constructs a [measurable randomized proper learner](../../lean/Conjectures/SteinkeZakynthinou/Learner.lean) and proves its expected empirical excess is at most $`512/\sqrt n`$ on every labeled sample. The uniform CMI bound remains to be formalized. The local proof closure can be replayed with the repository’s pinned toolchain.
+[The Lean theorem](../../lean/Conjectures/SteinkeZakynthinou.lean) proves the source statement for the actual measurable proper learner, with original CMI at most 300 nats or 600 bits and expected empirical excess at most $`512/\sqrt n`$ on every labeled sample. One constant, 1024, satisfies both source inequalities. The Lean learner uses the rational child rule and label-first rounding. The stronger information constant and the efficiency and determinism extensions have their own written proofs.
 
 ```sh
 cd lean
-lake build Conjectures.SteinkeZakynthinou.Learner
-lake env python3 ../scripts/replay_lean.py --root Conjectures.SteinkeZakynthinou.Learner
+lake build Conjectures.SteinkeZakynthinou
+lake env python3 ../scripts/replay_lean.py --root Conjectures.SteinkeZakynthinou
 ```

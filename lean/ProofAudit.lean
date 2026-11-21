@@ -9,7 +9,11 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
-    `SteinkeZakynthinou.shiftedTreeLearner_expectedLoss_le,
+    `SteinkeZakynthinou.properThresholdTheorem,
+    `SteinkeZakynthinou.properThresholdTheorem_bits,
+    `SteinkeZakynthinou.shiftedTreeLearner_expectedLoss_le_inf,
+    `SteinkeZakynthinou.shiftedTreeLearner_cmi_le,
+    `SteinkeZakynthinou.shiftedTreeLearner_cmi_bits_le,
     `ChenKhareSahi.Orthogonality.partition_complete,
     `ChenKhareSahi.Orthogonality.dominates_index,
     `ChenKhareSahi.Orthogonality.hallWeight_exact,
