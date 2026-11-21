@@ -957,3 +957,5 @@ import Conjectures.HornakOne
 import Conjectures.HornakWeak
 import Conjectures.HornakWeakEndpoint
 import Conjectures.HornakRegularSource
+import Conjectures.HornakReductionArithmetic
+import Conjectures.HornakListTiling

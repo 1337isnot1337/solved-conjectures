@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak reduction foundations, 21 November 2026
+
+Lean constructs connected graph partitions from arbitrary positive lists fitting the arms, and proves two subset-sum balancing steps with a termination measure. The full Barth AVD reduction remains to be proved. Strict compilation, a 741-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak source test 5, 21 November 2026
 
 Lean formalizes the count-based existence trigger of source test 5 and uses it with tests 1 and 2 for the regular and exceptional graph partition cases, including a reserved short arm. Admissibility index ranges and reorderings, AVD reductions and existence constructions remain. Strict compilation, a 709-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak reduction foundations
+
+Proved graph tiling for arbitrary positive lists of pieces and two subset-sum balancing steps with a termination measure. These are supporting lemmas, not the full Barth AVD reduction. Strict compilation, a 741-theorem full-chain axiom audit and isolated kernel replay passed; the remaining reduction and combined gate are pending.
+
 ## 2026-11-21 — Horňák–Woźniak source test 5
 
 Formalized the count-based existence trigger for source test 5 and used it with tests 1 and 2 in the regular and exceptional graph partition cases. Strict compilation, a 709-theorem full-chain axiom audit and isolated kernel replay passed. Admissibility index ranges, AVD reductions, existence constructions and the combined gate remain.
