@@ -21,7 +21,7 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 ## Resolution count
 
-This section tracks this subgroup's packages. The [joint ten-family checkpoint](../2026-11-21-joint-results/) separately attributes the current four-worker group's seven packages and the four packages from this subgroup that completed cross-review at that checkpoint. The later Gröchenig package remains outside that joint checkpoint while its additional review proceeds.
+This section tracks this subgroup's packages. The [joint ten-family checkpoint](../2026-11-21-joint-results/) reviews a selected twelve-package set: seven packages from the current four-worker group and five from this subgroup, including Gröchenig after its additional mathematical and priority reviews. It excludes the corrected-source Novelli–Thibon package from the strict tally and groups the two López Pouso–Segura packages together, giving ten named families. Later packages in this subgroup's live table remain outside that selected joint review pending additional cross-review.
 
 Complete proposed resolutions with separate internal review and a documented current status audit: **7** at this checkpoint. All remain unrefereed.
 

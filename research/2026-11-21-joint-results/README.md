@@ -4,11 +4,13 @@ Research checkpoint: 21 November 2026. Coordination: [issue 156](https://github.
 
 ## Count and attribution
 
-This ledger includes eleven complete proposed result packages from the two concurrent research groups, grouped conservatively into **ten named conjecture families** below. The positive Bessel results and the negative quadrature results of López Pouso and Segura count together. Closely linked assertions, parameter ranges, endpoint consequences, auxiliary formulas and individual counterexamples do not add counts.
+This reviewed joint checkpoint includes twelve complete proposed result packages from two concurrent groups. Eleven packages resolve the printed source assertions directly; grouping the two López Pouso–Segura packages gives **ten named conjecture/problem families** in the strict tally below.
 
-Seven packages were developed by the current four-worker group: Chen–Kitaev–Zhang, Zhu, the two Ferreira–Simon problems, Simon, Novelli–Thibon, and the López Pouso–Segura quadrature disproof. Four packages were developed by the parallel group recorded in [its checkpoint](../campaign-20261121/): Fang–Zhang–Zhao's infinite-log-convexity disproof, McCrea, the López Pouso–Segura Bessel proofs, and Vishnyakova. The current group independently reviewed those four packages before including them here. This is an attributable joint tally.
+The remaining package proves Novelli–Thibon's intended monomial-product conjecture with a source-supported correction of its printed exponent index. It is documented as an additional result and is not needed to reach the strict ten-family tally.
 
-Every entry has a complete written proof or exact refutation of the original full assertion, a separate internal mathematical review, and a documented search for earlier resolutions. All remain unrefereed. The searches found no earlier full resolution within their stated scope; inaccessible sources and indexing limits are recorded. A search cannot establish worldwide absence of prior work.
+Seven packages were developed by the current four-worker group: Chen–Kitaev–Zhang, Zhu, the two Ferreira–Simon problems, Simon, Novelli–Thibon, and the López Pouso–Segura quadrature disproof. Five packages were developed by the parallel group recorded in [its checkpoint](../campaign-20261121/): Fang–Zhang–Zhao's infinite-log-convexity disproof, McCrea, the López Pouso–Segura Bessel proofs, Vishnyakova, and Gröchenig. The current group independently reviewed those five packages before including them here. The [independent attribution audit](ATTRIBUTION.md) checks the baseline, exact publication histories and counting arithmetic. This is an attributable joint tally. Later packages in the parallel group's live checkpoint, including Han–Sabag–Kostina–Hassibi, are outside this twelve-package review.
+
+Each package has a complete written proof or exact refutation with its precise source scope stated, a separate internal mathematical review, and a documented search for earlier resolutions. All remain unrefereed. The searches found no earlier full resolution within their stated scope; inaccessible sources and indexing limits are recorded. A search cannot establish worldwide absence of prior work.
 
 No Lean work was performed. Exact algebraic computations check identities and source conventions. Positive finite tests are not used as proofs of universal statements.
 
@@ -21,11 +23,16 @@ No Lean work was performed. Exact algebraic computations check identities and so
 | 3 | [Ferreira–Simon's stochastic-order conjecture](../../results/ferreira-simon-stochastic/) | The normalized Mittag–Leffler family decreases in stochastic order throughout the full parameter interval, with a strict common coupling. | Current group; [170](https://github.com/1337isnot1337/solved-conjectures/issues/170) |
 | 4 | [Ferreira–Simon's diagonal Mittag–Leffler conjecture](../../results/ferreira-simon-diagonal/) | The function $`\alpha\mapsto E_{\alpha,\alpha}(-1)`$ is strictly increasing for $`0<\alpha<1`$. | Current group; [171](https://github.com/1337isnot1337/solved-conjectures/issues/171) |
 | 5 | [Simon's stable-infimum conjecture](../../results/simon-stable-infimum/) | The normalized spectrally negative stable infimum has the conjectured convex order for every $`1/2\le\beta<\alpha<1`$, including the Brownian endpoint. | Current group; [175](https://github.com/1337isnot1337/solved-conjectures/issues/175) |
-| 6 | [Novelli–Thibon's monomial-product conjecture](../../results/novelli-thibon/) | The intended Conjecture 5.7 holds for all partition pairs and independent parameters. The source's exponent-index misprint is identified using its own example. The hook formula is an auxiliary consequence in the same package. | Current group; [180](https://github.com/1337isnot1337/solved-conjectures/issues/180) |
-| 7 | López Pouso–Segura's conjectures: [Bessel sequences](../../results/lopez-pouso-segura-bessel/) and [quadrature upper bounds](../../results/lopez-pouso-segura-quadrature/) | Published Conjectures 2, 5 and 8 hold in full. The strict upper inequalities in Conjectures 3 and 7 are false. Two packages count as one family. | Parallel group: Bessel; current group: quadrature. [177](https://github.com/1337isnot1337/solved-conjectures/issues/177), [184](https://github.com/1337isnot1337/solved-conjectures/issues/184) |
-| 8 | [Fang–Zhang–Zhao's infinite-log-convexity conjecture](../../results/fang-zhang-zhao/) | Original Conjecture 4.3 is false for every integer Hoggatt parameter $`m\ge4`$. The distinct Baxter-number conjecture is outside this result. | Parallel group; [160](https://github.com/1337isnot1337/solved-conjectures/issues/160) |
-| 9 | [McCrea's conjecture](../../results/mccrea-single-crossover/) | Original Conjecture 9.2 holds: a unique crossover density exists for every permitted modulus, with the eventual strict comparisons at every fixed density on either side. | Parallel group; [168](https://github.com/1337isnot1337/solved-conjectures/issues/168) |
-| 10 | [Vishnyakova's root-radius conjecture](../../results/vishnyakova-root-radius/) | The full outer-root-radius bound holds for every degree, every positive weight, and arbitrary independent parameters. A stronger disk bound is proved and the extremizer is identified. Original and weighted formulations count together. | Parallel group; [182](https://github.com/1337isnot1337/solved-conjectures/issues/182) |
+| 6 | López Pouso–Segura's conjectures: [Bessel sequences](../../results/lopez-pouso-segura-bessel/) and [quadrature upper bounds](../../results/lopez-pouso-segura-quadrature/) | Published Conjectures 2, 5 and 8 hold in full. The strict upper inequalities in Conjectures 3 and 7 are false. Two packages count as one family. | Parallel group: Bessel; current group: quadrature. [177](https://github.com/1337isnot1337/solved-conjectures/issues/177), [184](https://github.com/1337isnot1337/solved-conjectures/issues/184) |
+| 7 | [Fang–Zhang–Zhao's infinite-log-convexity conjecture](../../results/fang-zhang-zhao/) | Original Conjecture 4.3 is false for every integer Hoggatt parameter $`m\ge4`$. The distinct Baxter-number conjecture is outside this result. | Parallel group; [160](https://github.com/1337isnot1337/solved-conjectures/issues/160) |
+| 8 | [McCrea's conjecture](../../results/mccrea-single-crossover/) | Original Conjecture 9.2 holds: a unique crossover density exists for every permitted modulus, with the eventual strict comparisons for every fixed density in the source interval on either side of the crossing. | Parallel group; [168](https://github.com/1337isnot1337/solved-conjectures/issues/168) |
+| 9 | [Vishnyakova's root-radius conjecture](../../results/vishnyakova-root-radius/) | The full outer-root-radius bound holds for every positive degree, every positive weight, and arbitrary independent parameters. A stronger disk bound is proved and the extremizer is identified. Original and weighted formulations count together. | Parallel group; [182](https://github.com/1337isnot1337/solved-conjectures/issues/182) |
+| 10 | [Gröchenig's problem](../../results/grochenig-zero-density/) | The upper Beurling-density comparison in Problem 4.12 is false, by one infinite Gaussian shift sum with absolutely summable coefficients. The separate lower-density inequality remains open. | Parallel group; [191](https://github.com/1337isnot1337/solved-conjectures/issues/191) |
+
+
+## Additional corrected-source result
+
+[Novelli–Thibon's monomial-product conjecture](../../results/novelli-thibon/) is proved for all partition pairs and independent parameters, using the exponent index required by the source's own worked example. The correction and the exact intended statement are explicit. This additional result, including its hook-formula consequence, contributes zero to the strict ten-family count. Discussion: [issue 180](https://github.com/1337isnot1337/solved-conjectures/issues/180).
 
 ## Mathematical content
 
@@ -60,7 +67,7 @@ Let $`T_n`$ be the arrival times of one unit-rate Poisson process. For $`0<\alph
 X_\alpha=\left(\sum_{n\ge1}T_n^{-1/\alpha}\right)^{-\alpha}
 =\frac1{\|(T_n^{-1})_{n\ge1}\|_{1/\alpha}}
 ```
-has the required normalized Mittag–Leffler law. Strict monotonicity of sequence norms gives $`X_\alpha>X_\beta`$ almost surely whenever $`\alpha<\beta`$. The series is finite in the required power range. Classical Poisson/stable representations are credited; the 2014 and 2025 formulations are one target.
+has law $`M_\alpha/\Gamma(1-\alpha)`$, where $`M_\alpha`$ is the source's standard Mittag–Leffler random variable. Strict monotonicity of sequence norms gives $`X_\alpha>X_\beta`$ almost surely whenever $`\alpha<\beta`$. The series is finite in the required power range. Classical Poisson/stable representations are credited; the 2014 and 2025 formulations are one target.
 
 [Proof](../../results/ferreira-simon-stochastic/PROOF.md), [review](../../results/ferreira-simon-stochastic/AUDIT.md), [sources](../../results/ferreira-simon-stochastic/SOURCES.md).
 
@@ -87,7 +94,7 @@ The established Mellin transform yields two explicit Lévy densities for $`\log 
 
 [Proof](../../results/simon-stable-infimum/PROOF.md), [review](../../results/simon-stable-infimum/AUDIT.md), [sources](../../results/simon-stable-infimum/SOURCES.md).
 
-### Novelli–Thibon
+### Novelli–Thibon: additional corrected-source result
 
 The multivariate filling formula gives the first derivatives of every Schur coefficient at the unit parameter point. A universal comparison identity reduces them to the Schur coefficients of $`e_2p_1^{n-2}`$. The Pieri rule gives the required tableau exponent, proving the monomial-product identity in arbitrary degree.
 
@@ -103,7 +110,7 @@ The quadrature package refutes the two separate strict upper inequalities. At $`
 ```math
 \frac2{\sqrt3}-1>\frac17>\frac{\pi^2}{75}.
 ```
-For the smallest positive node at every sufficiently large even degree, with $`\kappa=n+1/2`$,
+For the smallest positive node at every sufficiently large even degree $`n=2m`$, with $`\kappa=n+1/2`$,
 ```math
 \frac{x_{m+1}}{z_{m+1}}
 =1+\frac{\pi^2}{12\kappa^2}
@@ -127,7 +134,7 @@ For every integer $`k\ge3`$, there is a unique
 ```math
 c_k\in(2^{-k-1},1/(4k))
 ```
-with the conjectured eventual strict comparison at every fixed density on either side. The threshold in perimeter may depend on $`k`$ and the chosen density.
+with the conjectured eventual strict comparison for every fixed $`x\in(2^{-k-1},1/(4k))\setminus\{c_k\}`$. The threshold in perimeter may depend on $`k`$ and the chosen density.
 
 Positive generating functions yield local coefficient asymptotics at the fixed saddle, including the floor in the marked count. The two growth exponents have the same maximum at different means. Between those means they move in opposite directions, so their difference has exactly one zero. Its sign determines the eventual comparison. No uniform threshold or assertion at the crossing itself is added.
 
@@ -135,7 +142,7 @@ Positive generating functions yield local coefficient asymptotics at the fixed s
 
 ### Vishnyakova
 
-For every positive $`\beta`$, if a real degree-$`n`$ polynomial $`P`$ has all roots of its transformed polynomial $`L_\beta(P)`$ in $`[-1,0]`$, then
+For every $`n\ge1`$ and positive $`\beta`$, if a real degree-$`n`$ polynomial $`P`$ has all roots of its transformed polynomial $`L_\beta(P)`$ in $`[-1,0]`$, then
 ```math
 \left|z+\frac\beta2\right|
 \le n-1+\frac\beta2
@@ -145,6 +152,20 @@ for every root $`z`$ of $`P`$. Consequently the maximum possible root modulus is
 A complex-parameter tridiagonal argument and reciprocal-segment lemma give half-plane zero exclusion. Grace–Walsh–Szegő polarization and Hurwitz's theorem extend the conclusion to arbitrary independent parameters. The equal-parameter and bounded-degree prior results are credited and excluded as separate resolutions.
 
 [Proof](../../results/vishnyakova-root-radius/PROOF.md), [independent review](../2026-11-21-vishnyakova-independent-review/AUDIT.md), [source audit](../../results/vishnyakova-root-radius/SOURCE_AUDIT.md).
+
+### Gröchenig
+
+One nonzero entire Gaussian shift sum with an absolutely summable real coefficient sequence satisfies
+```math
+D^+(c)=\frac12,
+\qquad
+D^+(Z(f))\ge1.
+```
+This refutes the source's universal upper-density comparison. Finite blocks place $`N`$ simple zeros in an interval of length $`N`$, while their alternating coefficients occupy even integer positions over length $`2N`$. Recursive separation makes interference smaller than the nonzero test values in each block. A summable coefficient-mass budget gives an entire infinite sum, and every block retains its sign changes.
+
+The coefficient sign-change set is contained in the even integers and contains arbitrarily long alternating blocks, so its upper density is exactly one half. Arbitrarily long zero-rich intervals give upper zero density at least one. The construction uses one fixed infinite sequence, not a finite numerical instance. The separate lower-density assertion remains open.
+
+[Proof](../../results/grochenig-zero-density/PROOF.md), [additional independent mathematical review](../2026-11-21-grochenig-independent-review/AUDIT.md), [additional independent priority audit](../2026-11-21-grochenig-independent-review/PRIORITY.md).
 
 The [final global issue-history refresh](PRIORITY_REFRESH.md) supplements the individual source audits and records the decisive prior-proof exclusions.
 
@@ -163,14 +184,18 @@ The following mathematically valid reproofs do not contribute to the ten-family 
 
 The broader exclusion ledgers record other screened targets. Reproving an earlier theorem does not satisfy the requested novelty condition.
 
-## Partial work
+## Uncounted research
 
-The parallel group's later Gröchenig upper-density package is undergoing an additional independent review and is outside this ten-family checkpoint.
+Cavey–Lee's staircase factorization has a [reviewed divisibility argument](../2026-11-21-combinatorics-cavey-lee/DIVISIBILITY.md), while quotient positivity remains unresolved. Simon's informal Asian-subroof question has a complete theorem for a specified relaxed curve interpretation, but the original geometric scope and a relevant unread thesis remain unresolved. Neither contributes to the tally.
 
-Cavey–Lee's staircase factorization has a documented divisibility argument, while quotient positivity remains unresolved. Simon's informal Asian-subroof question has a complete theorem for a specified relaxed curve interpretation, but the original geometric scope and a relevant unread thesis remain unresolved. Neither contributes to the tally.
+Coulter–Do–Moskovsky's full-profile limiting roots and eventual monotone tails are proved in [the reviewed asymptotic note](../2026-11-21-combinatorics-coulter-moskovsky/ASYMPTOTIC.md). The stronger all-genus monotonicity statement has an exact initial reversal already implicit in the authors' 2022 polynomial table. The [scope note](../2026-11-21-combinatorics-coulter-moskovsky/SCOPE.md) and [independent priority audit](../2026-11-21-combinatorics-coulter-moskovsky/PRIORITY.md) distinguish this prior data from the general theorem. The package proves the natural asymptotic reading and remains outside the strict tally.
+
+The [Rivero scope note](../2026-11-21-special-functions-rivero/SCOPE.md) documents an arithmetic obstruction to the literal real-threshold tail equivalence. The intended nonarithmetic scope and related prior full text remain unsettled, so this is also uncounted.
 
 ## Delivery and review
 
 All packages are on main and linked from the repository catalogue. The quadrature publication at [a0dad99](https://github.com/1337isnot1337/solved-conjectures/commit/a0dad99107f4ae66a6b1a525bd632464386c68e6) passed the exact README gate for 53 entries and strict MathML rendering of all nine affected Markdown pages, comprising 233 expressions. A subsequent site failure exposed doubled TeX escapes in the independently published Vishnyakova package; those escapes, an unsupported text command and its missing explicit status marker were corrected. Its landing page and proof then rendered 138 expressions successfully.
+
+The complete research-site build and its content, link, mathematics and metadata checks passed at commit 444696374a21085f0c8193db5facab49ede6e616, [run 44879720088](https://github.com/1337isnot1337/solved-conjectures/actions/runs/44879720088). This check includes the Gröchenig publication and the Vishnyakova rendering repairs.
 
 The written proofs and source audits are the mathematical evidence. Automated algebra and rendering checks establish their stated technical properties, not external acceptance or global priority.

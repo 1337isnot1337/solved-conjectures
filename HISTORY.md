@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-21 — Strict joint ten-family checkpoint
+
+Updated the [joint ledger](research/2026-11-21-joint-results/) after the complete Gröchenig mathematical and priority cross-review. This selected review contains twelve proposed result packages: seven developed by the current four-worker group and five by the parallel issue-156 group. Excluding the corrected-source Novelli–Thibon package leaves eleven direct-source packages; grouping the two López Pouso–Segura packages leaves ten named conjecture/problem families. Novelli–Thibon remains an additional documented result. Later packages in the parallel group's live checkpoint, including Han–Sabag–Kostina–Hassibi, remain outside this selected review.
+
+The ledger now states McCrea's exact density interval, the positive-degree range of Vishnyakova's theorem, and the unresolved lower-density clause of Gröchenig's problem. It distinguishes the completed all-profile Coulter–Do–Moskovsky asymptotic theorem from the initial reversal already implicit in the authors' 2022 data; that qualified research remains uncounted. Rivero, Cavey–Lee and Simon subroof work also remain uncounted. Prior-resolution withdrawals and access limits are retained. All packages remain unrefereed; no Lean work was performed.
+
+The full research-site build and content, link, mathematics and metadata checks passed at commit 444696374a21085f0c8193db5facab49ede6e616, run 44879720088. Earlier checkpoint entries below preserve the historical counts and are superseded by this stricter accounting.
+
 ## 2026-11-21 — Sun–Zhao's conjecture
 
 Added a complete proposed disproof of Conjecture 5.2 in arXiv:1602.04359v4. The twelfth iterated ratio sequence fails its required log-convexity at center thirteen, using only entries retained after the specified truncation. An exact binomial-product comparison and a rational logarithm certificate give the same strict sign. The root reviewer independently regenerated the recurrence, used a different logarithm truncation and remainder, and directly iterated the ratios.

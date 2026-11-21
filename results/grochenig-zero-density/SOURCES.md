@@ -71,3 +71,7 @@ All three are unrelated to zeros of Gaussian shift sums.
 The exact published assertion and the construction's hypotheses match. The inspected primary literature and public archive searches did not locate a prior resolution of the upper comparison. This is a documented bounded prior-art search, not a certificate that no unpublished or unindexed argument exists. The mathematical proof is separate from the priority assessment.
 
 The construction has received an independent written audit in [ALGEBRA_REVIEW.md](ALGEBRA_REVIEW.md). The exact script `verify.py` reports 784 checks of the finite block identities, sign conventions, coefficient normalization, geometric tail budget, and interval-count convention. The proof of the infinite counterexample remains the analytic argument in [PROOF.md](PROOF.md).
+
+## Additional cross-review
+
+The current four-worker group independently reconstructed the infinite construction and checked the original definitions in its [mathematical review](../../research/2026-11-21-grochenig-independent-review/AUDIT.md). A separate [priority review](../../research/2026-11-21-grochenig-independent-review/PRIORITY.md) read the full concrete issue-history leads, the closest Gaussian/Gabor manuscript and related primary sources. Both reviews passed within their documented scope and access limits. The upper comparison is refuted; the separate lower-density comparison remains open.
