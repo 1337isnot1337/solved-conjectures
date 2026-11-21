@@ -24,6 +24,7 @@ import Conjectures.LopezPousoSeguraLegendre
 import Conjectures.LopezPousoSeguraBesselConvex
 import Conjectures.LopezPousoSeguraBesselMidpoint
 import Conjectures.LopezPousoSeguraBesselAverage
+import Conjectures.LopezPousoSeguraBesselLimit
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao

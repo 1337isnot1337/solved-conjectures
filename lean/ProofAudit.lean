@@ -9,6 +9,8 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `BesselWeights.weightedMean_tendsto,
+    `BesselWeights.sourceK_tendsto_of_C,
     `Hornak.remaining_capacity_with_cost,
     `Hornak.fixed_large_budget_iff,
     `Hornak.large_packing_iff,
