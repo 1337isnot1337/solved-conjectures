@@ -1,0 +1,45 @@
+{
+  "checked_date": "2026-11-21",
+  "target": "Boyer main enigma 2: 5x5 bimagic square of distinct positive integers, or impossibility proof",
+  "printed_solver_reward_eur": 1000,
+  "current_honoring_of_old_offer_confirmed": false,
+  "new_solution": false,
+  "award_accepted": false,
+  "payment_received": false,
+  "primary_sources": [
+    {
+      "url": "https://plus.maths.org/comment/8496",
+      "date": "2010-05-04",
+      "title": "Win money with magic squares",
+      "evidence": "Main enigma 2 exact mathematical target and first-solver EUR1000 cash offer."
+    },
+    {
+      "url": "https://arxiv.org/html/2610.00915v1",
+      "date": "2026-10-01",
+      "author": "Ajai Choudhry",
+      "title": "Construction of parametrized families of general pseudo-bimagic and bimagic squares",
+      "evidence": "General order-five bimagic existence remains open in the introduction and concluding remarks."
+    },
+    {
+      "url": "https://www.multimagie.com/English/Enigmas.htm",
+      "retrieval": "Timed out; HTTP, HTTPS, and non-www alternatives did not retrieve the page."
+    }
+  ],
+  "excluded_routes": [
+    {
+      "target": "Kimberling rewards",
+      "source": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+      "reason": "Post-2025 awards are OEIS donations in the solver's name, not payment to the solver."
+    },
+    {
+      "target": "Nanongkai EUR5 description-size question",
+      "source": "https://sites.google.com/site/dannanongkai/open",
+      "reason": "Sponsor's live page explicitly labels EUR5 questions discontinued."
+    },
+    {
+      "target": "Nanongkai cut-query reachability",
+      "source": "https://sites.google.com/site/dannanongkai/open",
+      "reason": "Sponsor's live page labels the challenge solved."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-21",
+  "target": "Boyer main enigma 2: general order-five bimagic square",
+  "new_bounty_solutions": 0,
+  "accepted_awards": 0,
+  "received_payments": 0,
+  "published_cash_offer_eur": 1000,
+  "current_honoring_of_old_offer_confirmed": false,
+  "research_status": "completed restricted obstruction; full target unresolved",
+  "completed_results": [
+    "Rational determinant-positive orthogonal trace branch is symmetric and cannot have distinct entries",
+    "All four components and projective boundary charts in the selected rational centralizer orbit are classified",
+    "All permutation-seed centralizer orbits are excluded by exact enumeration, transposition and reversal symmetry"
+  ],
+  "centralizer_parameter_points": 16,
+  "unique_surviving_matrices": 8,
+  "surviving_matrices_are_permutations": true,
+  "centered_integer_values": [
+    -1,
+    4
+  ],
+  "qualifying_bimagic_squares": 0,
+  "permutations_checked": 120,
+  "eligible_permutation_seeds": 18,
+  "seed_orbit_sizes": [
+    8,
+    8,
+    2
+  ],
+  "independent_review": "independent-review.md",
+  "lean_verified": false,
+  "all_computations_completed": true,
+  "files": {
+    "README.md": "8295ba3e184b931ab1aafedc32ba956e18f0a1d0a1f65c71a7e2d2c5c342bc54",
+    "centralizer-b0-minus-progress.jsonl": "af4ee4de46883cfd267bb1d720916277734f47f6236c8c55642d7ad1c6584b62",
+    "centralizer-b0-minus.json": "50e4cbcaebd575aa8e6506f62135042d786a098cb0de45cb98c4af92ecf592d3",
+    "centralizer-b0-plus-minus-progress.jsonl": "101ba9b3c3a181e0e129711e2248230c6af684c281348b2b6aaa6582a487c393",
+    "centralizer-b0-plus-minus.json": "254d41055a98373b2591bc888ac802c31786b035663c7609766bbd2ac1faef6b",
+    "centralizer-b0-plus-progress.jsonl": "101ba9b3c3a181e0e129711e2248230c6af684c281348b2b6aaa6582a487c393",
+    "centralizer-b0-plus.json": "2df0ee654044c13018c74d12711a7224a31dea30a1581096a6c26216502a4743",
+    "centralizer-b0-progress.jsonl": "af4ee4de46883cfd267bb1d720916277734f47f6236c8c55642d7ad1c6584b62",
+    "centralizer-b0.json": "feda32ececb8ec64685411c46a20791423e5e8ed6a74c320ee9d81d3901a7e63",
+    "centralizer-b2-progress.jsonl": "a6b9b02d383559910a34638d228e436b7707d6d844a93037509578c600657d68",
+    "centralizer-b2.json": "1b76d8df66045b80e3d28b91a0112a1439ac131abc4a265ed073d93d886cfe7e",
+    "centralizer-exclusion.md": "a279bfc543a5be7f72f0e9d02a3c28ac8b515eef0443be2b10888b14266861be",
+    "centralizer-point-verification.json": "30abf8d8d5b3b485eec8d5e18107743d271573386800ab615a09c57550b11d23",
+    "centralizer_elimination.py": "66174bd4589517e5b594519501537f7a4d78fbcf42f5dd6cc9784beb8eb6d88a",
+    "independent-review.md": "11fe3f762452433580e9f06196208f4e3ec02fbf19e1093621420263da04885a",
+    "orthogonal-reduction.md": "cfe0878111da82dfe76ae928ae927cf746f856d3065df16ed5f492b06d7549e7",
+    "permutation_seed_orbits.json": "7837db22060c0a970fbea1fa011a84c938711ff49f68bcf2a1dd0d50e68a0495",
+    "permutation_seed_orbits.py": "a993b73cc0a5dd16413b750ed7d0a1f975e448f91aa7f4db22b0df6992607b6f",
+    "sources.json": "4d7abb9268418347ec418d0298b10509aec0cc90b478823c0b872d485eb3a7fb",
+    "verify_centralizer_points.py": "2d09a039b9b7ddc7bae5ad54e357a6181201652063d6ccfadac89d5face53bdb"
+  }
+}

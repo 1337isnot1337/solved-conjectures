@@ -1,0 +1,312 @@
+{
+  "candidate_parameter_points": 16,
+  "unique_matrices": 8,
+  "qualifying_bimagic_squares": 0,
+  "verification_arithmetic": "Python fractions.Fraction",
+  "records": [
+    {
+      "reflect_plus": false,
+      "reflect_minus": false,
+      "u": "0",
+      "v": "0",
+      "permutation_rows": [
+        0,
+        2,
+        4,
+        1,
+        3
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": false,
+      "reflect_minus": false,
+      "u": "0",
+      "v": "infinity",
+      "permutation_rows": [
+        1,
+        3,
+        0,
+        2,
+        4
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": false,
+      "reflect_minus": false,
+      "u": "infinity",
+      "v": "0",
+      "permutation_rows": [
+        1,
+        3,
+        0,
+        2,
+        4
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": false,
+      "reflect_minus": false,
+      "u": "infinity",
+      "v": "infinity",
+      "permutation_rows": [
+        0,
+        2,
+        4,
+        1,
+        3
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": false,
+      "reflect_minus": true,
+      "u": "0",
+      "v": "0",
+      "permutation_rows": [
+        3,
+        2,
+        0,
+        1,
+        4
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": false,
+      "reflect_minus": true,
+      "u": "0",
+      "v": "infinity",
+      "permutation_rows": [
+        0,
+        3,
+        4,
+        2,
+        1
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": false,
+      "reflect_minus": true,
+      "u": "infinity",
+      "v": "0",
+      "permutation_rows": [
+        0,
+        3,
+        4,
+        2,
+        1
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": false,
+      "reflect_minus": true,
+      "u": "infinity",
+      "v": "infinity",
+      "permutation_rows": [
+        3,
+        2,
+        0,
+        1,
+        4
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": true,
+      "reflect_minus": false,
+      "u": "0",
+      "v": "-1",
+      "permutation_rows": [
+        2,
+        4,
+        1,
+        3,
+        0
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": true,
+      "reflect_minus": false,
+      "u": "0",
+      "v": "1",
+      "permutation_rows": [
+        4,
+        1,
+        3,
+        0,
+        2
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": true,
+      "reflect_minus": false,
+      "u": "infinity",
+      "v": "-1",
+      "permutation_rows": [
+        4,
+        1,
+        3,
+        0,
+        2
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": true,
+      "reflect_minus": false,
+      "u": "infinity",
+      "v": "1",
+      "permutation_rows": [
+        2,
+        4,
+        1,
+        3,
+        0
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": true,
+      "reflect_minus": true,
+      "u": "0",
+      "v": "-1",
+      "permutation_rows": [
+        2,
+        1,
+        3,
+        4,
+        0
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": true,
+      "reflect_minus": true,
+      "u": "0",
+      "v": "1",
+      "permutation_rows": [
+        4,
+        0,
+        1,
+        3,
+        2
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": true,
+      "reflect_minus": true,
+      "u": "infinity",
+      "v": "-1",
+      "permutation_rows": [
+        4,
+        0,
+        1,
+        3,
+        2
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    },
+    {
+      "reflect_plus": true,
+      "reflect_minus": true,
+      "u": "infinity",
+      "v": "1",
+      "permutation_rows": [
+        2,
+        1,
+        3,
+        4,
+        0
+      ],
+      "centered_integer_values": [
+        -1,
+        4
+      ],
+      "distinct_entry_count": 2,
+      "qualifies": false
+    }
+  ]
+}
