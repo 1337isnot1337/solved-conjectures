@@ -15,9 +15,13 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak zero-budget criterion, 21 November 2026
+
+Lean proves the exact zero-budget packing criterion, bounds residue loss, and handles the exceptional zero-slack case with two positive quotient gaps from the pairwise residue test. Other zero-slack cases, full reductions and existence constructions remain. A 492-theorem axiom audit on the full HornakZero dependency chain and isolated kernel replay passed. The prior 407-theorem audit imported HornakReservedArm rather than HornakLargest; the new audit covers both. The combined repository gate is pending.
+
 ## Horňák–Woźniak positive-slack exceptional case, 21 November 2026
 
-Lean derives the largest-count endpoint and all smaller counts with positive quotient slack under stated residue and fifth-test hypotheses, and handles a fourth arm reserved in the center. Zero slack, full source-test and AVD reductions, and existence constructions remain. Strict compilation, a 407-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.
+Lean derives the largest-count endpoint and all smaller counts with positive quotient slack under stated residue and fifth-test hypotheses, and handles a fourth arm reserved in the center. Zero slack, full source-test and AVD reductions, and existence constructions remain. Strict compilation, a 407-theorem axiom audit of the reserved-arm dependency and isolated kernel replay passed; the combined gate is pending.
 
 ## Horňák–Woźniak rho-two endpoint, 21 November 2026
 

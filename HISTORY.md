@@ -1,8 +1,12 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak zero-budget criterion
+
+Proved the exact zero-budget packing criterion and the exceptional zero-slack branch with two positive quotient gaps. The full HornakZero dependency chain passed a 492-theorem axiom audit and isolated kernel replay. Correction: the earlier 407-theorem audit imported HornakReservedArm rather than HornakLargest; the new audit includes both. Other zero-slack cases, AVD reductions and the combined gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak positive-slack exceptional case
 
-Derived the largest-count endpoint and all smaller counts with positive quotient slack under the stated residue and fifth-test hypotheses, and handled a fourth arm reserved in the center. Strict compilation, a 407-theorem axiom audit and isolated kernel replay passed; zero slack, full reductions and the combined gate remain.
+Derived the largest-count endpoint and all smaller counts with positive quotient slack under the stated residue and fifth-test hypotheses, and handled a fourth arm reserved in the center. Strict compilation, a 407-theorem axiom audit of the reserved-arm dependency and isolated kernel replay passed; zero slack, full reductions and the combined gate remain.
 
 ## 2026-11-21 — Horňák–Woźniak rho-two endpoint
 
