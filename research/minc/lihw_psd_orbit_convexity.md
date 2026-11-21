@@ -1,6 +1,6 @@
 # Lih--Wang's convexity inequality on PSD permutation orbits
 
-**Status:** Complete all-order theorem for a proper subclass of Minc Conjecture 34; **not** an unrestricted resolution. This adds **zero** completed MINC entries. No Lean. Independent priority review remains necessary.
+**Status:** All-order quantitative strengthening on a proper subclass of Minc Conjecture 34; **not** an unrestricted resolution. The *qualitative chord inequality on symmetric PSD matrices* was already a consequence of Kopotun (1996), as explained below; the permutation-orbit extension of that qualitative result is immediate. The strengthened quadratic envelope and curvature bound are verified here but external priority for these quantitative estimates is unknown. **Zero** completed MINC entries. No Lean.
 
 ## Original named conjecture
 
@@ -98,7 +98,7 @@ Also ||A-J_n||_F=||S-J_n||_F. Therefore all bounds extend to arbitrary P and Q, 
 
 **This is not a proof of Lih--Wang for arbitrary doubly stochastic matrices.** The positivity of all centered subpermanent sums is guaranteed here only by the PSD hypothesis (or other separate assumptions). It proves a proper all-order class and **cannot count as one of ten full resolved entries**.
 
-The [specialist problem page](https://yair-lavi.com/mincs-list/conjecture-34/index.html), [Udayan--Somasundaram 2024](https://doi.org/10.1515/spma-2024-0006), and the repository's existing [Lih--Wang audit](sign-matrices/lihw_source_audit.md) do not explicitly state this subclass theorem. This bounded source check does **not** prove novelty: positive tensor-power arguments are classical. Independent priority review is required. Existing work on [centered subpermanent sums](inequalities/research.md) is credited.
+**Prior-art correction:** [Kopotun (1996)](https://doi.org/10.1016/0024-3795(94)00228-2) proved the full-interval Lih--Wang chord inequality when a normal doubly stochastic matrix has its spectrum in the sector |arg z|<=pi/(2n), as explicitly reported on the [current MINC Conjecture 34 page](https://yair-lavi.com/mincs-list/conjecture-34/index.html). Every symmetric PSD doubly stochastic S meets this hypothesis. Since J_n and the permanent are invariant under independent row/column permutations, the qualitative chord statement for A=PSQ follows immediately from Kopotun. Accordingly **the qualitative all-order class is prior art and is not claimed as new**. [Hwang (1989)](https://doi.org/10.1090/S0002-9939-1989-0960645-2) also established monotonicity toward the boundary for symmetric PSD stochastic directions, recorded on [MINC Problem 8](https://yair-lavi.com/mincs-list/problem-8/index.html). The **stronger quadratic upper envelope and uniform curvature constant** are elementary consequences of the PSD tensor coefficient expansion here; whether they have appeared elsewhere has not been established. See [Udayan--Somasundaram 2024](https://doi.org/10.1515/spma-2024-0006), the repository [Lih--Wang audit](sign-matrices/lihw_source_audit.md), and work on [centered subpermanent sums](inequalities/research.md).
 
 The same two-sided orbit is covered by the separate [Gyires partial-class theorem](gyires_psd_permutation_orbits.md), but these are **two proper-class results**, not two completed full MINC problems.
 
