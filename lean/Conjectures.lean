@@ -860,3 +860,6 @@ import Conjectures.FussCatalan
 import Conjectures.FussCycle
 import Conjectures.FussCounting
 import Conjectures.FussWords
+import Conjectures.FussBlocks
+import Conjectures.FussSlot
+import Conjectures.FussFinal

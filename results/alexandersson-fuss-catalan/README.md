@@ -2,7 +2,7 @@
 
 **Status: proved as a short deduction from classical results; priority qualified.**
 
-**Lean status: partial.** `Conjectures.FussCatalan` proves the closed-form polynomial is real-rooted, including the constant boundary case. `Conjectures.FussCycle` proves the cycle lemma, aperiodicity and the exact one-in-L count for rotation-invariant finite collections of integer sequences summing to −1. `Conjectures.FussCounting` verifies the exact binomial count of abstract slot selections and positive allocations. `Conjectures.FussWords` gives an equivalence between good block sequences and literal Fuss–Dyck words, preserving the NE and NNE statistics. The bijection between abstract slot data and all block sequences remains; the combined repository gate is pending.
+**Lean status: the named conjecture and closed enumeration are verified.** `Conjectures.FussFinal` proves that the literal sum over all Fuss–Dyck words with fixed NE count is real-rooted for every stated parameter, proves the closed formula and its scalar reduction to the ordinary case, and includes the boundary. The auxiliary exact count of simple negative zeros and the cited interlacing transfers remain unformalized. Strict standalone compilation, axiom audit and isolated kernel replay passed; the combined repository gate is pending.
 
 For every $m,n\geq1$ and $1\leq k\leq n$, the polynomial counting $m$-Dyck paths with exactly $k$ factors $NE$, by the number of factors $NNE$, is real-rooted. The Fuss parameter changes this polynomial only by a positive scalar.
 

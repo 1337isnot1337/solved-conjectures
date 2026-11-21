@@ -389,4 +389,37 @@ noncomputable def goodBlocksEquivPaths (m n k i : ℕ) (hm : 0 < m) (hn : 0 < n)
     apply List.append_cancel_right (bs := [false])
     rw [← blocksToWord_encode, wordToBlocks_encode]
 
+theorem countNE_le_north (w : List Bool) : countNE w ≤ w.count true := by
+  induction w with
+  | nil => simp [countNE]
+  | cons x xs ih =>
+    cases x <;> simp [countNE] <;> (try split_ifs) <;> omega
+
+theorem countNNE_le_north (w : List Bool) : countNNE w ≤ w.count true := by
+  induction w with
+  | nil => simp [countNNE]
+  | cons x xs ih =>
+    cases x <;> simp [countNNE] <;> (try split_ifs) <;> omega
+
+def PathsByNE (m n k : ℕ) :=
+  {w : List Bool // w.count true = n ∧ w.count false = m*n ∧ safeWord m 0 w ∧
+    endHeight m 0 w = 0 ∧ countNE w = k}
+
+def pathsByCountEquiv (m n k : ℕ) :
+    PathsByNE m n k ≃ Σ i : Fin (n+1), DyckPaths m n k i.val where
+  toFun w := ⟨⟨countNNE w.val, by have h := countNNE_le_north w.val; rw [w.property.1] at h; omega⟩,
+    ⟨w.val, w.property.1, w.property.2.1, w.property.2.2.1, w.property.2.2.2.1,
+      w.property.2.2.2.2, rfl⟩⟩
+  invFun p := ⟨p.2.val, p.2.property.1, p.2.property.2.1, p.2.property.2.2.1,
+    p.2.property.2.2.2.1, p.2.property.2.2.2.2.1⟩
+  left_inv _ := rfl
+  right_inv p := by
+    rcases p with ⟨⟨i,hi⟩,w⟩
+    have he : countNNE w.val = i := w.property.2.2.2.2.2
+    cases w with
+    | mk w hw =>
+      dsimp only at he
+      cases he
+      rfl
+
 end FussWords

@@ -9,6 +9,13 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FussFinal.fussCatalan_conjecture,
+    `FussFinal.actualEnumerator_eq_closedForm,
+    `FussFinal.actualEnumerator_scalar_reduction,
+    `FussSlot.slotDataEquivRaw,
+    `FussSlot.rawBlocks_card,
+    `FussBlocks.raw_path_rotation_count,
+    `FussWords.pathsByCountEquiv,
     `FussWords.goodBlocksEquivPaths,
     `FussWords.countNE_encode,
     `FussWords.countNNE_encode,
