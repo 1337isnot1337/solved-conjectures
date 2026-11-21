@@ -21,7 +21,7 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 ## Resolution count
 
-Complete proposed resolutions with separate internal review and a documented current status audit: **4** at this corrected checkpoint. All remain unrefereed.
+Complete proposed resolutions with separate internal review and a documented current status audit: **5** at this checkpoint. All remain unrefereed.
 
 | Conjecture | Result | Evidence |
 | --- | --- | --- |
