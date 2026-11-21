@@ -39,3 +39,12 @@ The ordinary class `1^r+2^3=3^2` is also old. Allowing a unit raised to a larger
 ## Why these checks do not establish a completion
 
 A stale prize listing does not establish current payment eligibility. An already published identity cannot be relabelled as a new result. A missing diagram prevents an exact mathematical formulation of the tiling instance. None of these checks is entered in the solved-results table.
+
+## Logistic-map offer: prior analytic formulas and unclear novelty target
+
+The [sponsor's prize page](https://mathpuzzle.com/prizes.html) still prints a $50 offer for an exact formula for the nth iterate of `x -> 3*x*(1-x)`, and also asks for related existing literature. The intended class of admissible formulas is not defined there.
+
+The primary 1995 paper by Rabinovich, Berkolaiko, Buldyrev, Shehter and Havlin, ["Logistic map": an analytical solution](https://people.tamu.edu/~gberkolaiko/papers/pdf/paRBBSH95.pdf), gives a transfer-matrix representation for general parameters. The [publisher's abstract](https://doi.org/10.1016/0378-4371(95)00163-2) confirms that scope. Maritz's 2020 paper, [A note on exact solutions of the logistic map](https://doi.org/10.1063/1.5125097), describes solutions using a special function outside the familiar elementary formulas; its [indexed author abstract](https://pubmed.ncbi.nlm.nih.gov/32237776/) was retrieved, while the publisher full text was inaccessible.
+
+These sources block a claim that a generic transfer-matrix or newly named special-function expression is a new resolution. They do not prove that the sponsor's intended elementary-form question has been resolved or that a reward was paid. No new formula or impossibility theorem was established in this pass, and no claim or email was sent.
+

@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "base_bound": 8,
+    "seed_bound": 100,
+    "max_seeds": 12,
+    "multiple": 8,
+    "triple_bound": 2,
+    "max_k": 20,
+    "output": "research/bounty-session-2026-11-21/gaussian-mordell/triples"
+  },
+  "curves": 687,
+  "integral_seeds": 1209,
+  "seeds_used": 1209,
+  "group_combinations": 237385,
+  "raw_unique_hits": 48
+}
