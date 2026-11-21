@@ -1,6 +1,8 @@
 import Mathlib.Algebra.BigOperators.Intervals
 import Mathlib.Algebra.BigOperators.Ring.Finset
 import Mathlib.Data.Matrix.Mul
+import Mathlib.Data.Fintype.Prod
+import Mathlib.Algebra.BigOperators.Fin
 import Mathlib.Tactic.Ring
 
 namespace GilmoreCrossingNesting
@@ -241,6 +243,57 @@ theorem inverseEntry_step (z : R) (q : ℕ → R) (a b : ℕ) (h : b < a) :
   rw [he, pow_succ]
   ring
 
+def Labels : {u d : ℕ} → Path u d → Type
+  | _, _, .empty => PUnit
+  | _, _, .up p => Labels p
+  | _, _, @Path.down u d p _ => Labels p × Fin (u-d)
+
+@[instance_reducible] noncomputable def labelsFintype : {u d : ℕ} → (p : Path u d) → Fintype (Labels p)
+  | _, _, .empty => by dsimp [Labels]; exact inferInstance
+  | _, _, .up p => labelsFintype p
+  | _, _, @Path.down u d p _ => by
+      letI := labelsFintype p
+      dsimp [Labels]
+      exact inferInstance
+
+noncomputable def labelsWeight (r s μ y : R) : {u d : ℕ} → (p : Path u d) → Labels p → R
+  | _, _, .empty, _ => 1
+  | _, _, @Path.up u d p, l => labelsWeight r s μ y p l * μ^d
+  | _, _, @Path.down u d p _, l =>
+      labelsWeight r s μ y p l.1 * y * r^(u-d-1-l.2.val) * s^l.2.val
+
+
+theorem labels_sum (r s μ y : R) {u d : ℕ} (p : Path u d) :
+    letI := labelsFintype p
+    ∑ l : Labels p, labelsWeight r s μ y p l = p.weight μ y (quantum r s) := by
+  induction p with
+  | empty => simp [Labels, labelsWeight, Path.weight]
+  | @up u d p ih =>
+    simp [Labels, labelsWeight, Path.weight, ← Finset.sum_mul, ih]
+  | @down u d p h ih =>
+    simp only [Labels, labelsWeight, Path.weight]
+    let : Fintype (Labels p) := labelsFintype p
+    rw [Fintype.sum_prod_type]
+    simp_rw [mul_assoc, ← Finset.mul_sum]
+    rw [← Finset.sum_mul, ih]
+    congr 1
+    unfold quantum
+    congr 1
+    exact Fin.sum_univ_eq_sum_range (fun j => r^(u-d-1-j) * s^j) (u-d)
+
+
+
+noncomputable def labelledPathSum (r s μ y : R) (u d : ℕ) : R :=
+  ∑ p ∈ paths u d, letI := labelsFintype p; ∑ l : Labels p, labelsWeight r s μ y p l
+
+theorem labelledPathSum_eq_pathSum (r s μ y : R) (u d : ℕ) :
+    labelledPathSum r s μ y u d = pathSum μ y (quantum r s) u d := by
+  unfold labelledPathSum pathSum
+  apply Finset.sum_congr rfl
+  intro p hp
+  exact labels_sum r s μ y p
+
+
 section Ring
 variable {S : Type*} [CommRing S]
 
@@ -412,6 +465,223 @@ theorem shiftedBlock_shift (N i : ℕ) (μ y : S) (q : ℕ → S) (a b : Fin N) 
   have hsuba : (a.succ : Fin (N+1)).val - (i+1+1) = a.val-(i+1) := by simp
   have hsubb : (b.succ : Fin (N+1)).val - (i+1+1) = b.val-(i+1) := by simp
   simp only [shiftedBlock, ha, hb, Fin.succ_inj, hsuba, hsubb, hpow]
+
+noncomputable def tailProduct (N : ℕ) (μ y : S) (q : ℕ → S) : ℕ → Matrix (Fin (N+1)) (Fin (N+1)) S
+  | 0 => 1
+  | i+1 => shiftedBlock (N+1) (i+1) μ y q * tailProduct N μ y q i
+
+theorem shiftedBlock_succ_zero (N i : ℕ) (μ y : S) (q : ℕ → S) (a : Fin N) :
+    shiftedBlock (N+1) (i+1) μ y q a.succ 0 = 0 := by
+  simp [shiftedBlock, Fin.succ_ne_zero]
+
+theorem tailProduct_shift (N i : ℕ) (μ y : S) (q : ℕ → S) (a b : Fin N) :
+    tailProduct N μ y q i a.succ b.succ = blockProduct N μ (μ*y) q i a b := by
+  induction i generalizing a b with
+  | zero => simp [tailProduct, blockProduct, Matrix.one_apply, Fin.succ_inj]
+  | succ i ih =>
+    rw [tailProduct, blockProduct, Matrix.mul_apply, Matrix.mul_apply, Fin.sum_univ_succ]
+    simp only [shiftedBlock_succ_zero, zero_mul, zero_add]
+    apply Finset.sum_congr rfl
+    intro x hx
+    rw [shiftedBlock_shift, ih x b]
+
+theorem blockProduct_split_head (N i : ℕ) (μ y : S) (q : ℕ → S) :
+    blockProduct (N+1) μ y q (i+1) =
+      tailProduct N μ y q i * shiftedBlock (N+1) 0 μ y q := by
+  induction i with
+  | zero => simp [blockProduct, tailProduct]
+  | succ i ih =>
+    rw [blockProduct, tailProduct, ih, Matrix.mul_assoc]
+
+theorem shiftedBlock_zero_succ (N : ℕ) (μ y : S) (q : ℕ → S) (b : Fin N) :
+    shiftedBlock (N+1) 0 μ y q 0 b.succ = 0 := by
+  simp [shiftedBlock, Ne.symm (Fin.succ_ne_zero b)]
+
+theorem shiftedBlock_zero_tail (N : ℕ) (μ y : S) (q : ℕ → S) (a b : Fin N) :
+    shiftedBlock (N+1) 0 μ y q a.succ b.succ = bidiagonalInverseEntry y q a.val b.val := by
+  simp [shiftedBlock]
+
+theorem blockProduct_row_formula_scaled (N i : ℕ) (μ y : S) (q : ℕ → S) (a b : Fin N) :
+    blockProduct (N+1) μ y q (i+1) a.succ b.succ =
+      ∑ j : Fin N, blockProduct N μ (μ*y) q i a j * bidiagonalInverseEntry y q j.val b.val := by
+  rw [blockProduct_split_head, Matrix.mul_apply, Fin.sum_univ_succ]
+  simp only [shiftedBlock_zero_succ, mul_zero, zero_add]
+  apply Finset.sum_congr rfl
+  intro j hj
+  rw [tailProduct_shift, shiftedBlock_zero_tail]
+
+theorem inverseEntry_scale (z t : S) (q : ℕ → S) (a b : ℕ) :
+    bidiagonalInverseEntry (t*z) q a b = t^(a-b) * bidiagonalInverseEntry z q a b := by
+  unfold bidiagonalInverseEntry
+  by_cases h : b ≤ a
+  · simp only [h, ite_true, mul_pow]
+    ring
+  · simp [h]
+
+theorem shiftedBlock_scale (N i : ℕ) (μ y t : S) (q : ℕ → S) (a b : Fin N) :
+    shiftedBlock N i μ (t*y) q a b = t^(a.val-b.val) * shiftedBlock N i μ y q a b := by
+  by_cases hab : a.val < b.val
+  · rw [shiftedBlock_above _ _ _ _ _ _ _ hab, shiftedBlock_above _ _ _ _ _ _ _ hab, mul_zero]
+  · by_cases ha : a.val ≤ i
+    · rw [shiftedBlock_row_fixed N i μ (t*y) q a b ha, shiftedBlock_row_fixed N i μ y q a b ha]
+      by_cases he : a = b
+      · subst b; simp
+      · simp [he]
+    · by_cases hb : b.val ≤ i
+      · simp [shiftedBlock, ha, hb]
+      · have hsub : (a.val-(i+1))-(b.val-(i+1)) = a.val-b.val := by omega
+        have hmul : μ^i*(t*y) = t*(μ^i*y) := by ring
+        simp only [shiftedBlock, ha, hb, ite_false, hmul, inverseEntry_scale, hsub]
+
+theorem blockProduct_scale (N i : ℕ) (μ y t : S) (q : ℕ → S) (a b : Fin N) :
+    blockProduct N μ (t*y) q i a b = t^(a.val-b.val) * blockProduct N μ y q i a b := by
+  induction i generalizing a b with
+  | zero =>
+    by_cases h : a = b
+    · subst b; simp [blockProduct]
+    · simp [blockProduct, h]
+  | succ i ih =>
+    rw [blockProduct, blockProduct, Matrix.mul_apply, Matrix.mul_apply, Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro x hx
+    rw [shiftedBlock_scale, ih]
+    by_cases hax : a.val < x.val
+    · rw [shiftedBlock_above N i μ y q a x hax]
+      simp
+    · by_cases hxb : x.val < b.val
+      · rw [blockProduct_above N i μ y q x b hxb]
+        simp
+      · have hexp : (a.val-x.val) + (x.val-b.val) = a.val-b.val := by omega
+        have hpow : t^(a.val-x.val)*t^(x.val-b.val) = t^(a.val-b.val) := by
+          rw [← pow_add, hexp]
+        calc
+          t^(a.val-x.val) * shiftedBlock N i μ y q a x *
+              (t^(x.val-b.val) * blockProduct N μ y q i x b) =
+            (t^(a.val-x.val)*t^(x.val-b.val)) *
+              (shiftedBlock N i μ y q a x * blockProduct N μ y q i x b) := by ring
+          _ = _ := by rw [hpow]
+
+noncomputable def matrixEntry (μ y : S) (q : ℕ → S) (n k : ℕ) : S :=
+  if h : k ≤ n then blockProduct (n+1) μ y q (n+1) ⟨n, by omega⟩ ⟨k, by omega⟩ else 0
+
+theorem matrixEntry_diagonal (μ y : S) (q : ℕ → S) (n : ℕ) : matrixEntry μ y q n n = 1 := by
+  simp [matrixEntry, blockProduct_diagonal]
+
+theorem shiftedBlock_column_zero (N i : ℕ) (μ y : S) (q : ℕ → S) (a : Fin N)
+    (ha : a.val ≠ 0) : shiftedBlock N i μ y q a ⟨0, by have := a.isLt; omega⟩ = 0 := by
+  by_cases h : a.val ≤ i
+  · have hne : a ≠ (⟨0, by have := a.isLt; omega⟩ : Fin N) := by
+      intro he
+      have hv := congrArg Fin.val he
+      simp only at hv
+      exact ha hv
+    simp [shiftedBlock, h, hne]
+  · simp [shiftedBlock, h]
+
+theorem blockProduct_column_zero (N i : ℕ) (μ y : S) (q : ℕ → S) (a : Fin N)
+    (ha : a.val ≠ 0) : blockProduct N μ y q i a ⟨0, by have := a.isLt; omega⟩ = 0 := by
+  induction i generalizing a with
+  | zero =>
+    have hne : a ≠ (⟨0, by have := a.isLt; omega⟩ : Fin N) := by
+      intro he
+      have hv := congrArg Fin.val he
+      exact ha hv
+    simp [blockProduct, hne]
+  | succ i ih =>
+    rw [blockProduct, Matrix.mul_apply]
+    apply Finset.sum_eq_zero
+    intro j hj
+    by_cases hj0 : j.val = 0
+    · have he : j = (⟨0, by have := a.isLt; omega⟩ : Fin N) := Fin.ext hj0
+      rw [he, shiftedBlock_column_zero N i μ y q a ha, zero_mul]
+    · rw [ih j hj0, mul_zero]
+
+theorem matrixEntry_zero (μ y : S) (q : ℕ → S) (n : ℕ) (hn : 1 ≤ n) :
+    matrixEntry μ y q n 0 = 0 := by
+  simp only [matrixEntry, Nat.zero_le, dite_eq_left]
+  exact blockProduct_column_zero (n+1) (n+1) μ y q ⟨n, by omega⟩ (by simp; omega)
+
+theorem matrixEntry_row_fin (μ y : S) (q : ℕ → S) (n k : ℕ)
+    (hn : 1 ≤ n) (hk : 1 ≤ k) (hkn : k ≤ n) :
+    matrixEntry μ y q n k =
+      ∑ j : Fin n, μ^((n-1)-j.val) * matrixEntry μ y q (n-1) j.val *
+        bidiagonalInverseEntry y q j.val (k-1) := by
+  let a : Fin n := ⟨n-1, by omega⟩
+  let b : Fin n := ⟨k-1, by omega⟩
+  have ha : a.succ = (⟨n, by omega⟩ : Fin (n+1)) := by apply Fin.ext; simp [a]; omega
+  have hb : b.succ = (⟨k, by omega⟩ : Fin (n+1)) := by apply Fin.ext; simp [b]; omega
+  unfold matrixEntry
+  rw [dite_eq_left hkn, ← ha, ← hb, blockProduct_row_formula_scaled]
+  apply Finset.sum_congr rfl
+  intro j hj
+  have hjle : j.val ≤ n-1 := by have := j.isLt; omega
+  rw [dite_eq_left hjle, blockProduct_scale]
+  cases n with
+  | zero => omega
+  | succ n => simp [a, b]
+
+theorem matrixEntry_row_formula (μ y : S) (q : ℕ → S) (n k : ℕ)
+    (hn : 2 ≤ n) (hk : 1 ≤ k) (hkn : k ≤ n) :
+    matrixEntry μ y q n k = rowSum μ y q (matrixEntry μ y q (n-1)) n k := by
+  rw [matrixEntry_row_fin μ y q n k (by omega) hk hkn]
+  let f : ℕ → S := fun j => μ^((n-1)-j) * matrixEntry μ y q (n-1) j *
+    bidiagonalInverseEntry y q j (k-1)
+  change (∑ j : Fin n, f j.val) = rowSum μ y q (matrixEntry μ y q (n-1)) n k
+  rw [Fin.sum_univ_eq_sum_range]
+  have hsub : Finset.Icc (k-1) (n-1) ⊆ Finset.range n := by
+    intro j hj
+    have h := Finset.mem_Icc.mp hj
+    simp only [Finset.mem_range]
+    omega
+  have hrestrict : (∑ j ∈ Finset.Icc (k-1) (n-1), f j) = ∑ j ∈ Finset.range n, f j := by
+    apply Finset.sum_subset hsub
+    intro j hj hjnot
+    have hjn := Finset.mem_range.mp hj
+    have hjk : j < k-1 := by
+      simp only [Finset.mem_Icc, not_and_or] at hjnot
+      omega
+    simp [f, inverseEntry_above y q j (k-1) hjk]
+  rw [← hrestrict]
+  unfold rowSum
+  apply Finset.sum_bij (fun j _ => j+1)
+  · intro j hj
+    simp only [Finset.mem_Icc] at hj ⊢
+    omega
+  · intro a ha b hb h
+    omega
+  · intro j hj
+    have hj' := Finset.mem_Icc.mp hj
+    refine ⟨j-1, ?_, by omega⟩
+    simp only [Finset.mem_Icc]
+    omega
+  · intro j hj
+    have hj' := Finset.mem_Icc.mp hj
+    have hjk : k-1 ≤ j := hj'.1
+    have he1 : n-(j+1) = n-1-j := by omega
+    have he2 : j+1-k = j-(k-1) := by omega
+    have he3 : k-1+1 = k := by omega
+    have he4 : (j+1)-1 = j := by omega
+    simp only [f, rowTerm, bidiagonalInverseEntry, hjk, ite_true, he1, he2, he3, he4]
+    ring
+
+theorem matrixEntry_eq_pathEntry (μ y : S) (q : ℕ → S) (n k : ℕ)
+    (hn : 1 ≤ n) (hk : 1 ≤ k) (hkn : k ≤ n) :
+    matrixEntry μ y q n k = pathEntry μ y q n k := by
+  apply row_formula_implies_paths μ y q (matrixEntry μ y q)
+  · intro n hn
+    exact matrixEntry_diagonal μ y q n
+  · exact matrixEntry_zero μ y q
+  · exact matrixEntry_row_formula μ y q
+  · exact hn
+  · exact hk
+  · exact hkn
+
+theorem matrixEntry_eq_labelledPathSum (r s μ y : S) (n k : ℕ)
+    (hn : 1 ≤ n) (hk : 1 ≤ k) (hkn : k ≤ n) :
+    matrixEntry μ y (quantum r s) n k = labelledPathSum r s μ y (n-1) (n-k) := by
+  rw [matrixEntry_eq_pathEntry μ y (quantum r s) n k hn hk hkn,
+    labelledPathSum_eq_pathSum]
+  rfl
 
 end Ring
 
