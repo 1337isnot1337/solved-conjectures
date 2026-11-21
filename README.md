@@ -2,8 +2,6 @@
 
 Mathematical proofs, counterexamples, and partial results in combinatorics, number theory, graph theory, and discrete geometry. Includes Lean 4 formalizations and reproducible verification code.
 
-These notes are unrefereed. Computational checks and Lean verification are distinct from peer review and priority claims.
-
 Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. External contributions have separate result-level credit.
 
 [Search the collection](https://1337isnot1337.github.io/solved-conjectures/) · [Full catalogue](CONTENTS.md) · [Verification](docs/verification.md) · [Lean status](docs/lean-status.md) · [History](HISTORY.md)
@@ -80,14 +78,6 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Currie's conjecture on complexity 2n+1 and critical exponent](results/currie-conjecture-19/) | ⬜ |
 | [Malek's conjecture](results/malek-subpermanent/) | ⬜ |
 
-Entries are ranked approximately by relative mathematical significance, weighing generality, connection to established problems, and the scope of the result. This editorial order does not imply independent verification or priority.
-
-Horňák–Woźniak progress: tripods with a positive short arm of length at most two are Lean-verified under source tests 1 and 5; the full result remains partial. See the [checked scope](results/hornak-wozniak/).
-
-Brown–Mol clarification: the listed result concerns **Conjecture 4.2 (the translated annulus)** from Brown and Mol's 2018 paper, not **Conjecture 4.1 (the origin-centered disk)**, proved by Jin, Ma, and Wang in [arXiv:2608.07898](https://arxiv.org/abs/2608.07898) (2026). The [result's source audit](results/brown-mol/SOURCES.md) compares the exact statements. The proposed Conjecture 4.2 disproof remains unrefereed.
-
-**Verification key**
-
 - ✅ Fully Lean-verified.
 - 🟢 Partially Lean-verified, with a computer-assisted proof.
 - 🟡 Partially Lean-verified.
@@ -98,7 +88,7 @@ For the 🟢 Lonely Runner results, the written proofs reduce the classification
 
 ## Partial results on open problems
 
-This section is ordered by the significance of the partial contributions, not the prominence of the unsolved parent conjectures.
+This section is ordered by the significance of the partial contributions.
 
 - [Frankl’s union-closed sets conjecture](results/frankl-generator-families/). A four-position generator theorem and a frequency bound for regular, high-girth incidence graphs. Both all-point frequency bounds are fully Lean-verified, including the high-girth theorem for every uniform generator size at least three. The cyclic span-four formalization remains incomplete. [Checked scope](docs/lean-status.md#complete-frankl-high-girth-frequency-theorem).
 - [Lonely Runner Conjecture](results/lonely-runner-two-insertions/). Two arbitrary speeds can be adjoined to every Goddyn–Wong simultaneous acceleration. The full prescribed-interval theorem, acceleration bridge, unbounded and finite cases, common-dilation value bound, and three-insertion obstruction are Lean-verified. [Checked scope](docs/lean-status.md#complete-unrestricted-two-speed-insertion-theorem).
@@ -142,8 +132,6 @@ Cite the original conjecture's publication separately (see [the catalogue](CONTE
 These notes have no DOI or peer-reviewed publication.
 
 ## Verification
-
-The badges show the current workflow status on `main`. The Lean workflow checks the registered package, transitive axioms, and kernel replay. The computational workflow runs the result verifiers.
 
 The [verification guide](docs/verification.md) gives commands, compiler requirements, and the scope of each check.
 
