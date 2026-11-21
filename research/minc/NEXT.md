@@ -14,6 +14,8 @@ The requested ten new full named resolutions have not been obtained. The campaig
 
 Each result directory contains its source audit, reviews and reproducible checks. The [Malek follow-up](../../results/malek-subpermanent/priority-audit-addendum.md) now includes the full 1996 Kopotun paper and two citation-index checks; it finds no prior full negative endpoint but does not remove the inaccessible 1989 original-source qualification. Any newly found prior resolution or proof gap must be recorded before treating the proposed result as established.
 
+The [P18 follow-up](../../results/perron-root-permanental-compounds/priority-audit-addendum.md) credits earlier semigroup spectral-concavity methods and records the restricted scope of quantum trace algorithms. The [PSW follow-up](../../results/pula-song-wanless/priority-audit-addendum.md) checks alternate boundary-face notation and later citations. Neither changes the qualified count or removes the stated access limits.
+
 ## Current full targets and exact gaps
 
 ### Ryser's design conjecture

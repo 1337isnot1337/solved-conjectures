@@ -6,7 +6,7 @@ Audit date: 20 November 2026. This file concerns Minc Problem 18, not the charac
 
 I found no existing algorithm with the candidate theorem's full scope: a fully polynomial randomized approximation scheme for `rho(P_k(A))`, uniformly in `k`, for every nonnegative rational square matrix `A`, including nonsymmetric matrices with zero diagonal and arbitrary reducibility or periodicity.
 
-The current problem page explicitly marks the problem open and records schemes only for positive-diagonal matrices and symmetric or diagonally symmetrizable matrices. The strongest additional overlap found is an older trace formula for zeon powers. That formula must be credited. It does not supply a uniform comparison between the sum of traces of powered compounds and their largest Perron root.
+The current problem page explicitly marks the problem open and records schemes only for positive-diagonal matrices and symmetric or diagonally symmetrizable matrices. Additional overlap includes an older trace formula for zeon powers and recent continuous-semigroup spectral-concavity arguments. These ingredients must be credited. The inspected sources do not supply a uniform comparison between the sum of traces of powered compounds and their largest Perron root.
 
 This supports treating the full-domain theorem as a candidate new approximation result, subject to checking its proof. It does not certify priority, peer review, or an exact polynomial-time solution of the unqualified historical question.
 
@@ -78,3 +78,7 @@ The current [MColbrook/AIM catalog](https://github.com/MColbrook/AIM/blob/main/C
 ## Supplemental public-repository searches
 
 An additional [repository source audit](../../research/minc/repository_prior_art_audit.md) records exact-author and DOI searches, narrower searches in five public proof archives, and the closest mathematical bodies inspected. No earlier matching full theorem was identified in those results. Capped searches and incomplete indexing prevent an exhaustive-priority conclusion. The existing access limits and provisional novelty assessment remain in force.
+
+## Semigroup and quantum-algorithm follow-up
+
+The [priority addendum](priority-audit-addendum.md) records six further primary sources and their exact scope. Wei's 2026 semigroup theorem already uses Newton inequalities and long-time spectral growth across homogeneous sectors. Jiang's token-graph theorem uses a related limit. Their inspected algorithms and the Bravyi–Gosset and Rayudu–Takahashi algorithms have restricted generator or Hermitian Hamiltonian hypotheses; none of the inspected statements covers arbitrary discrete nonnegative permanental compounds. The overlap is credited at the ingredient level. No additional resolution or exhaustive priority certificate is claimed. The companion [retrieval records](priority-source-records.json) preserve the inspected sections and access limits.

@@ -229,3 +229,7 @@ The [C24 audit](combinatorial/minc_integrality_audit.md) checks the integer doma
 ## Malek priority follow-up
 
 The [independent priority addendum](../../results/malek-subpermanent/priority-audit-addendum.md) obtains the full 1996 Kopotun paper and verifies directly that its all-degree transform conjecture has the positive sign. Two citation indexes return the same four later works, recorded in the companion JSON; neither supplies an earlier full negative-endpoint theorem. The original Malek 1989 full text remains inaccessible. The proposed result retains its historical-subsidiary scope and its original-source qualification. No additional result is counted.
+
+## P18 and PSW priority follow-up
+
+The [P18 addendum](../../results/perron-root-permanental-compounds/priority-audit-addendum.md) credits existing semigroup spectral-concavity arguments and distinguishes restricted Hamiltonian trace algorithms from the proposed arbitrary-input FPRAS. Primary retrieval records identify the inspected sections and remaining access limits. The [PSW addendum](../../results/pula-song-wanless/priority-audit-addendum.md) checks alternate boundary-face notation, later citations, and a citation-index metadata collision. Neither pass located an earlier theorem with the full respective candidate scope; neither certifies historical priority. No new mathematical result is added to the count.

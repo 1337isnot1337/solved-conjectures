@@ -109,3 +109,7 @@ The Song–Beasley article remains checked through its primary abstract plus a c
 ## Supplemental public-repository searches
 
 An additional [repository source audit](../../research/minc/repository_prior_art_audit.md) records exact-author and DOI searches, narrower searches in five public proof archives, and the closest mathematical bodies inspected. No earlier matching full theorem was identified in those results. Capped searches and incomplete indexing prevent an exhaustive-priority conclusion. The existing access limits and provisional novelty assessment remain in force.
+
+## Alternate-notation and forward-citation follow-up
+
+The [priority addendum](priority-audit-addendum.md) checks the Hwang–Lee notation for the zero-block boundary face, two later citation leads, and a conflated citation-index record. The inspected statements do not supply the full PSW threshold or uniqueness on the full face. The older boundary results, fixed complementary-block cases, and inaccessible full texts remain separately identified. This audit changes neither the candidate theorem nor its subsidiary scope.
