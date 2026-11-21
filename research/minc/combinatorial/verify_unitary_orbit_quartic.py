@@ -127,3 +127,34 @@ if __name__ == "__main__":
                      + sum(h[i][j] ** 4 for i in range(n) for j in range(i)))
             assert left == right
     print("quartic spectral-offdiagonal reduction: 40 exact cases")
+    for n in (3, 4, 5, 6):
+        for seed in range(10):
+            h = [[Q(0) for _ in range(n)] for _ in range(n)]
+            for i in range(n):
+                for j in range(i):
+                    h[i][j] = h[j][i] = Q((7 * i + 3 * j + seed) % 13 - 6, 3)
+            h2 = mm(h, h)
+            s2 = trace(h2)
+            s3 = trace(mm(h2, h))
+            s4 = trace(mm(h2, h2))
+            w4 = sum(h[i][j] ** 4 for i in range(n) for j in range(i))
+            adjacent = sum(
+                h[i][j] ** 2 * h[i][k] ** 2
+                for i in range(n) for j in range(n)
+                for k in range(j + 1, n)
+                if j != i and k != i)
+            off2 = sum(
+                h2[i][j] ** 2
+                for i in range(n) for j in range(n) if i != j)
+            assert s4 / 2 - w4 == adjacent + off2 / 2
+            assert s3 ** 2 <= s2 * off2
+    print("fourth-power deficit and cubic spectral bound: 40 exact cases")
+    h = [[Q(0), Q(2), Q(0), Q(0)],
+         [Q(2), Q(0), Q(0), Q(0)],
+         [Q(0), Q(0), Q(0), Q(1)],
+         [Q(0), Q(0), Q(1), Q(0)]]
+    h2 = mm(h, h)
+    s4 = trace(mm(h2, h2))
+    assert s4 / 2 == sum(
+        h[i][j] ** 4 for i in range(4) for j in range(i))
+    print("sign-symmetric matching equality: exact")

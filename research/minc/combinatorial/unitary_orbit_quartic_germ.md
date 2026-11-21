@@ -279,6 +279,129 @@ essential for the cancellation: omitting it would give the
 wrong coefficient, already for the order-three example where
 \(q_4=0\) but the true coefficient is \(98/3\).
 
+## A sharp fourth-order envelope and its equality cases
+
+There is also an exact nonnegative deficit identity. For
+zero-diagonal \(H\), with \(w_{ij}=|h_{ij}|^2\), put
+
+$
+\begin{aligned}
+\mathcal D(H)={}&
+\sum_i\sum_{\substack{j<k\\j,k\ne i}}w_{ij}w_{ik}
++\frac12\sum_{i\ne j}|(H^2)_{ij}|^2.
+\end{aligned}
+\tag{17}
+$
+
+Because \((H^2)_{ii}=r_i\), the two elementary identities
+
+$
+\operatorname{tr}H^4
+=\sum_i r_i^2+\sum_{i\ne j}|(H^2)_{ij}|^2,
+\qquad
+\sum_i r_i^2=2\sum_{i<j}w_{ij}^2+
+2\sum_i\sum_{\substack{j<k\\j,k\ne i}}w_{ij}w_{ik}
+$
+
+give, without any inequality,
+
+$
+\frac{s_4}{2}-\sum_{i<j}|h_{ij}|^4
+=\mathcal D(H)\ge0.
+\tag{18}
+$
+
+Combining (16) and (18),
+
+$
+\boxed{\quad
+\Gamma_n(x)=
+\frac{3s_4}{4}+
+\left(\frac18-\frac1n\right)s_2^2
+-\min_{H\in\mathcal Z_x}\mathcal D(H).
+\quad}
+\tag{19}
+$
+
+In particular, the expression without the minimum is a sharp
+spectral upper bound for the fourth-order coefficient. **Equality
+holds if and only if the multiset of eigenvalues \(x\) is symmetric
+under sign**, with arbitrary multiplicity at zero. For the forward
+direction, equality in (18) forces the first nonnegative sum in (17)
+to vanish. Thus at most one off-diagonal entry per row is nonzero,
+and \(H\) is permutation-similar to a direct sum of blocks
+
+$
+\begin{pmatrix}0&z\\\overline z&0\end{pmatrix}
+$
+
+and isolated zeros. The eigenvalues of such a matrix occur in
+opposite pairs. Conversely, every sign-symmetric spectrum has
+exactly such a zero-diagonal block realization, making
+\(\mathcal D=0\).
+
+If \(s_2>0\), Cauchy--Schwarz applied to
+\(s_3=\operatorname{tr}(H^3)
+=\sum_{i\ne j}h_{ij}(H^2)_{ji}\) gives
+
+$
+s_3^2\le s_2\sum_{i\ne j}|(H^2)_{ij}|^2,
+\qquad
+\mathcal D(H)\ge\frac{s_3^2}{2s_2}.
+$
+
+Hence the explicit strict improvement
+
+$
+\Gamma_n(x)\le
+\frac{3s_4}{4}
++\left(\frac18-\frac1n\right)s_2^2
+-\frac{s_3^2}{2s_2}.
+\tag{20}
+$
+
+When \(s_3=0\) but the spectrum is not sign-symmetric, the
+inequality in (19) is still strict by compactness and the equality
+classification, though (20) need not detect this.
+
+For example, every spectrum
+\((a_1,-a_1,\ldots,a_k,-a_k,0,\ldots,0)\)
+has the explicit complete fourth-order coefficient
+
+$
+\Gamma_n(x)=
+\frac{3s_4}{4}+
+\left(\frac18-\frac1n\right)s_2^2.
+$
+
+This is a result about the **local expansion** for an all-order
+spectral family, not the full unitary-orbit maximum at arbitrary
+spectra. For \(n=4\), \(x=(2,-2,1,-1)\) yields
+\(s_2=10,s_4=34,\Gamma_4=13\). The fixed two-block
+zero-diagonal matrix has \(q_4=4\); its other nine units of
+fourth-order gain arise from allowing a spectral-orbit drift of
+the diagonal. The connected-support approximation in the proof
+of (2) is needed at such disconnected limiting matrices.
+
+At a constrained critical point \(H\in\mathcal Z_x\) with connected
+off-diagonal support, the map (10) has full trace-zero rank. Thus
+the Lagrange multiplier condition for the remaining maximum in
+(16) is
+
+$
+[H,\,2(H\circ|H|^2)+\operatorname{diag}(\eta)]=0
+\quad\text{for some real vector }\eta.
+\tag{21}
+$
+
+Here \(\circ\) means entrywise multiplication and
+\(|H|^2\) is entrywise absolute-square. This follows because
+the gradient of \(\sum_{i<j}|h_{ij}|^4\) on the Hermitian space
+is \(2(H\circ|H|^2)\). The commutator equation is necessary,
+not sufficient, and the disconnected matching extremizers
+require separate treatment. Solving (21) with the prescribed
+spectrum is an explicit remaining implication.
+
 ## A separate spectral monotonicity
 
 There is an independent all-order consequence of the nonnegative
@@ -322,7 +445,7 @@ connected zero-diagonal cores. The coefficients are
 - Order three: \(1,0,14,12,98/3\), with \(q_4=0\) and drift gain \(98/3\).
 - Order four: \(1,0,20,34,131\), with \(q_4=49\) and drift gain \(82\).
 
-An additional 40 exact rational zero-diagonal matrices of orders three through six verify the cancellation (15). These are checks of the exact coefficient algebra, not order-specific
+An additional 40 exact rational zero-diagonal matrices of orders three through six verify the cancellation (15), the nonnegative deficit identity (18), and the cubic spectral bound (20). A matching-supported rational block verifies equality in (18). These are checks of the exact coefficient algebra, not order-specific
 resolutions of Problem 1.
 
 ## Source status and remaining gap
@@ -343,7 +466,7 @@ Exact phrases were also searched in current public sources.
 That is not an exhaustive novelty certificate, and the present
 theorem has no external mathematical review.
 
-The missing implication is an explicit evaluation of the entrywise fourth-power maximum in (16) for
+The missing implication is an explicit evaluation of the nonnegative deficit minimum in (19), equivalently the entrywise fourth-power maximum in (16), for
 general spectra, followed by control away from the scalar
 regime. The quartic functional still requires optimization over
 an entire zero-diagonal unitary orbit. Replacing that optimization
