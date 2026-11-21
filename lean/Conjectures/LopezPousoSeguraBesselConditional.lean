@@ -9,7 +9,7 @@ theorem conditional_bessel_weight_conjectures (H lam : ℝ → ℝ) (c : ℝ) (�
     (hrep : ∀ y > 0, H y^2 = ∫ q, kernel q y ∂μ)
     (hlpos : ∀ t > 0, 0 < lam t) (hHpos : ∀ y > 0, 0 < H y)
     (hH : ∀ y > 0, DifferentiableAt ℝ H y)
-    (hd : ∀ t, HasDerivAt lam (c*H (lam t)) t)
+    (hld : ContinuousOn lam (Set.Ici 0)) (hd : ∀ t > 0, HasDerivAt lam (c*H (lam t)) t)
     (hend : ContinuousOn (fun t => c*H (lam t)) (Set.Ici 0))
     (hg0 : c*H (lam 0)=0) (hl0 : lam 0=0)
     (hB : 0 ≤ B) (hδ0 : Tendsto δ atTop (𝓝 0)) (he0 : Tendsto err atTop (𝓝 0))
@@ -30,7 +30,7 @@ theorem conditional_bessel_weight_conjectures (H lam : ℝ → ℝ) (c : ℝ) (�
     Tendsto (E (fun t => c*H (lam t)) lam) atTop (𝓝 (-(Real.pi^2)/6)) ∧
     Tendsto (sourceK (fun t => c*H (lam t)) lam) atTop (𝓝 (Real.pi^2/12)) := by
   let g : ℝ → ℝ := fun t => c*H (lam t)
-  have hsign := signs_from_finite_mixture H lam c μ hc hμ hpos hrep hlpos hHpos hH hd hend hg0 hl0
+  have hsign := signs_from_finite_mixture H lam c μ hc hμ hpos hrep hlpos hHpos hH hld hd hend hg0 hl0
   have hgp : ∀ n : ℕ, 0 < g (n+1) := by
     intro n
     exact mul_pos hc (hHpos _ (hlpos _ (by positivity)))

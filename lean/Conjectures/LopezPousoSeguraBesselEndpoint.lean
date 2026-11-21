@@ -32,7 +32,7 @@ theorem signs_from_mixture (H lam : ℝ → ℝ) (c : ℝ) (μ : Measure ℝ)
     (hrep : ∀ y > 0, H y^2 = ∫ q, kernel q y ∂μ)
     (hlpos : ∀ t > 0, 0 < lam t) (hHpos : ∀ y > 0, 0 < H y)
     (hH : ∀ y > 0, DifferentiableAt ℝ H y)
-    (hd : ∀ t, HasDerivAt lam (c*H (lam t)) t)
+    (hld : ContinuousOn lam (Set.Ici 0)) (hd : ∀ t > 0, HasDerivAt lam (c*H (lam t)) t)
     (hend : ContinuousOn (fun t => c*H (lam t)) (Ici 0))
     (hg0 : c*H (lam 0)=0) (hl0 : lam 0=0) :
     (∀ n, 0 < C (fun t => c*H (lam t)) lam n) ∧
@@ -42,7 +42,7 @@ theorem signs_from_mixture (H lam : ℝ → ℝ) (c : ℝ) (μ : Measure ℝ)
     (∀ n, 0 < sourceK (fun t => c*H (lam t)) lam n) ∧
     StrictMono (sourceK (fun t => c*H (lam t)) lam) := by
   let g : ℝ → ℝ := fun t => c*H (lam t)
-  have hs := mixture_inverse_phase H lam c μ hc hμ hpos hI hrep hlpos hHpos hH (fun t ht => hd t) hend
+  have hs := mixture_inverse_phase H lam c μ hc hμ hpos hI hrep hlpos hHpos hH hd hend
   have hsub (a b : ℝ) (ha : 0 ≤ a) (hab : a ≤ b) : Icc a b ⊆ Ici 0 := by
     intro x hx
     exact le_trans ha hx.1
@@ -61,8 +61,8 @@ theorem signs_from_mixture (H lam : ℝ → ℝ) (c : ℝ) (μ : Measure ℝ)
   have hgp : ∀ n : ℕ, 0 < g (n+1) := by
     intro n
     exact mul_pos hc (hHpos _ (hlpos _ (by positivity)))
-  have hC := c_increasing_and_positive g lam hg0 hl0 hc1 hs1 hd
-  have hE := e_decreasing_and_negative g lam hl0 (hlpos 1 (by norm_num)) hc2 hs2 hd
-  have hK := sourceK_positive_strictMono g lam hg0 hl0 hgp hc1 hs1 hd
+  have hC := c_increasing_and_positive g lam hg0 hl0 hc1 hs1 hld hd
+  have hE := e_decreasing_and_negative g lam hl0 (hlpos 1 (by norm_num)) hc2 hs2 hld hd
+  have hK := sourceK_positive_strictMono g lam hg0 hl0 hgp hc1 hs1 hld hd
   exact ⟨hC.1, hC.2, hE.1, hE.2, hK.1, hK.2⟩
 end BesselWeights

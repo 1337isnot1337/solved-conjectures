@@ -35,7 +35,7 @@ theorem signs_from_finite_mixture (H lam : ℝ → ℝ) (c : ℝ) (μ : Measure 
     (hrep : ∀ y > 0, H y^2 = ∫ q, kernel q y ∂μ)
     (hlpos : ∀ t > 0, 0 < lam t) (hHpos : ∀ y > 0, 0 < H y)
     (hH : ∀ y > 0, DifferentiableAt ℝ H y)
-    (hd : ∀ t, HasDerivAt lam (c*H (lam t)) t)
+    (hld : ContinuousOn lam (Set.Ici 0)) (hd : ∀ t > 0, HasDerivAt lam (c*H (lam t)) t)
     (hend : ContinuousOn (fun t => c*H (lam t)) (Set.Ici 0))
     (hg0 : c*H (lam 0)=0) (hl0 : lam 0=0) :
     (∀ n, 0 < C (fun t => c*H (lam t)) lam n) ∧
@@ -44,7 +44,7 @@ theorem signs_from_finite_mixture (H lam : ℝ → ℝ) (c : ℝ) (μ : Measure 
     StrictAnti (E (fun t => c*H (lam t)) lam) ∧
     (∀ n, 0 < sourceK (fun t => c*H (lam t)) lam n) ∧
     StrictMono (sourceK (fun t => c*H (lam t)) lam) := by
-  apply signs_from_mixture H lam c μ hc hμ hpos _ hrep hlpos hHpos hH hd hend hg0 hl0
+  apply signs_from_mixture H lam c μ hc hμ hpos _ hrep hlpos hHpos hH hld hd hend hg0 hl0
   intro y hy
   exact kernel_integrable_finite μ hpos y hy
 end BesselWeights

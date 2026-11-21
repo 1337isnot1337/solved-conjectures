@@ -94,12 +94,12 @@ theorem sourceK_positive_strictMono (g lam : ℝ → ℝ)
     (hgp : ∀ n : ℕ, 0 < g (n+1))
     (hc : ∀ a : ℝ, 0 ≤ a → ContinuousOn g (Set.Icc a (a+1)))
     (hs : ∀ a : ℝ, 0 ≤ a → StrictConvexOn ℝ (Set.Icc a (a+1)) g)
-    (hd : ∀ x : ℝ, HasDerivAt lam (g x) x) :
+    (hld : ContinuousOn lam (Set.Ici 0)) (hd : ∀ x > 0, HasDerivAt lam (g x) x) :
     (∀ n, 0 < sourceK g lam n) ∧ StrictMono (sourceK g lam) := by
   have hw : ∀ k, 0 < sourceWeight g k := by
     intro k
     exact div_pos (hgp k) (by norm_num)
-  have hC := c_increasing_and_positive g lam hg0 hl0 hc hs hd
+  have hC := c_increasing_and_positive g lam hg0 hl0 hc hs hld hd
   have hCpos : ∀ k, 0 < sourceC g lam k := hC.1
   have hCmono : StrictMono (sourceC g lam) := hC.2
   have hform : ∀ k, sourceC g lam k = 2*weightSum (sourceWeight g) k + sourceWeight g k - sourceLambda lam k/2 := by

@@ -63,13 +63,14 @@ theorem e_decreasing_and_negative (g lam : ℝ → ℝ)
     (hl0 : lam 0 = 0) (hl1 : 0 < lam 1)
     (hc : ∀ a : ℝ, 0 ≤ a → ContinuousOn g (Icc a (a+2)))
     (hs : ∀ a : ℝ, 0 ≤ a → StrictConvexOn ℝ (Icc a (a+2)) g)
-    (hd : ∀ x : ℝ, HasDerivAt lam (g x) x) :
+    (hld : ContinuousOn lam (Ici 0)) (hd : ∀ x > 0, HasDerivAt lam (g x) x) :
     (∀ n, E g lam n < 0) ∧ StrictAnti (E g lam) := by
   have hstep (n : ℕ) : E g lam (n+1) < E g lam n := by
     have ht := midpoint_strict g n (hc n (by positivity)) (hs n (by positivity))
     have hi : IntervalIntegrable g MeasureTheory.volume n ((n:ℝ)+2) :=
       (hc n (by positivity)).intervalIntegrable_of_Icc (by linarith)
-    rw [integral_eq_sub_of_hasDerivAt (fun x _ => hd x) hi] at ht
+    have hlc : ContinuousOn lam (Icc (n:ℝ) ((n:ℝ)+2)) := hld.mono (fun _ hx => le_trans (Nat.cast_nonneg n) hx.1)
+    rw [integral_eq_sub_of_hasDerivAt_of_le (by linarith) hlc (fun x hx => hd x (by linarith [hx.1, show (0:ℝ) ≤ (n:ℝ) from Nat.cast_nonneg n])) hi] at ht
     unfold E
     rw [Finset.sum_range_succ]
     push_cast at *

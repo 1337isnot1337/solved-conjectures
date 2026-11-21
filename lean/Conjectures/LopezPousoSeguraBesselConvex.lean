@@ -65,12 +65,13 @@ theorem c_increasing_and_positive (g lam : ℝ → ℝ)
     (hg0 : g 0 = 0) (hl0 : lam 0 = 0)
     (hc : ∀ a : ℝ, 0 ≤ a → ContinuousOn g (Icc a (a+1)))
     (hs : ∀ a : ℝ, 0 ≤ a → StrictConvexOn ℝ (Icc a (a+1)) g)
-    (hd : ∀ x : ℝ, HasDerivAt lam (g x) x) :
+    (hld : ContinuousOn lam (Ici 0)) (hd : ∀ x > 0, HasDerivAt lam (g x) x) :
     (∀ n, 0 < C g lam n) ∧ StrictMono (C g lam) := by
   have interval (a : ℝ) (ha : 0 ≤ a) : lam (a+1) - lam a < (g a+g (a+1))/2 := by
     have ht := unit_trapezoid_strict g a (hc a ha) (hs a ha)
     have hi : IntervalIntegrable g MeasureTheory.volume a (a+1) := (hc a ha).intervalIntegrable_of_Icc (by linarith)
-    rw [integral_eq_sub_of_hasDerivAt (fun x _ => hd x) hi] at ht
+    have hlc : ContinuousOn lam (Icc a (a+1)) := hld.mono (fun _ hx => le_trans ha hx.1)
+    rw [integral_eq_sub_of_hasDerivAt_of_le (by linarith) hlc (fun x hx => hd x (by linarith [hx.1])) hi] at ht
     exact ht
   have hstep (n : ℕ) : C g lam n < C g lam (n+1) := by
     have hi := interval (n+1) (by positivity)
