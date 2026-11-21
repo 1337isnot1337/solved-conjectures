@@ -55,6 +55,7 @@ import Conjectures.JohnsonPfaffianScaling
 import Conjectures.JohnsonPfaffianMatching
 import Conjectures.JohnsonPfaffianSmall
 import Conjectures.JohnsonPfaffianRotation
+import Conjectures.JohnsonPfaffianSwap
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
