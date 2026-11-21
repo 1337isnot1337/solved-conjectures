@@ -2,6 +2,7 @@ import Mathlib.Algebra.BigOperators.Intervals
 import Mathlib.Algebra.BigOperators.Ring.Finset
 import Mathlib.Data.Matrix.Mul
 import Mathlib.Data.Fintype.Prod
+import Mathlib.Data.List.Perm.Basic
 import Mathlib.Algebra.BigOperators.Fin
 import Mathlib.Tactic.Ring
 
@@ -292,6 +293,153 @@ theorem labelledPathSum_eq_pathSum (r s μ y : R) (u d : ℕ) :
   apply Finset.sum_congr rfl
   intro p hp
   exact labels_sum r s μ y p
+
+
+def openEndpoints : {u d : ℕ} → (p : Path u d) → Labels p → List ℕ
+  | _, _, .empty, _ => []
+  | _, _, @Path.up u d p, l => openEndpoints p l ++ [u+d]
+  | _, _, @Path.down u d p _, l => (openEndpoints p l.1).eraseIdx l.2.val
+
+theorem openEndpoints_length {u d : ℕ} (p : Path u d) (l : Labels p) :
+    (openEndpoints p l).length = u-d := by
+  induction p with
+  | empty => simp [openEndpoints]
+  | @up u d p ih =>
+    change Labels p at l
+    have hp := p.valid
+    simp only [openEndpoints, List.length_append, List.length_singleton]
+    rw [ih]
+    omega
+  | @down u d p h ih =>
+    change Labels p × Fin (u-d) at l
+    simp only [openEndpoints]
+    have hl : l.2.val < (openEndpoints p l.1).length := by rw [ih]; exact l.2.isLt
+    rw [List.length_eraseIdx_of_lt hl, ih]
+    omega
+
+
+def closedArcs : {u d : ℕ} → (p : Path u d) → Labels p → List (ℕ × ℕ)
+  | _, _, .empty, _ => []
+  | _, _, .up p, l => closedArcs p l
+  | _, _, @Path.down u d p _, l =>
+      ((openEndpoints p l.1).getD l.2.val 0, u+d) :: closedArcs p l.1
+
+theorem closedArcs_length {u d : ℕ} (p : Path u d) (l : Labels p) :
+    (closedArcs p l).length = d := by
+  induction p with
+  | empty => simp [closedArcs]
+  | @up u d p ih =>
+    change Labels p at l
+    simp only [closedArcs]
+    exact ih l
+  | @down u d p h ih =>
+    change Labels p × Fin (u-d) at l
+    simp only [closedArcs, List.length_cons, ih]
+
+
+def arcEndpoints (arcs : List (ℕ × ℕ)) : List ℕ := arcs.flatMap (fun e => [e.1, e.2])
+
+theorem endpoints_partition {u d : ℕ} (p : Path u d) (l : Labels p) :
+    ((openEndpoints p l) ++ arcEndpoints (closedArcs p l)).Perm (List.range (u+d)) := by
+  induction p with
+  | empty => simp [openEndpoints, closedArcs, arcEndpoints]
+  | @up u d p ih =>
+    change Labels p at l
+    have hi := ih l
+    simp only [openEndpoints, closedArcs]
+    rw [show u+1+d = (u+d)+1 by omega, List.range_succ]
+    have hp : ((openEndpoints p l ++ [u+d]) ++ arcEndpoints (closedArcs p l)).Perm
+        ((openEndpoints p l ++ arcEndpoints (closedArcs p l)) ++ [u+d]) := by
+      simp only [List.append_assoc]
+      apply List.Perm.append_left
+      exact List.perm_append_comm
+    exact hp.trans (List.Perm.append_right _ hi)
+  | @down u d p h ih =>
+    change Labels p × Fin (u-d) at l
+    have hi := ih l.1
+    have hl : l.2.val < (openEndpoints p l.1).length := by
+      rw [openEndpoints_length]
+      exact l.2.isLt
+    have he : (openEndpoints p l.1).getD l.2.val 0 = (openEndpoints p l.1)[l.2.val] := by
+      rw [List.getD_eq_getElem?_getD, List.getElem?_eq_getElem hl]
+      rfl
+    simp only [openEndpoints, closedArcs, arcEndpoints, List.flatMap_cons]
+    rw [show u+(d+1) = (u+d)+1 by omega, List.range_succ, he]
+    let L := (openEndpoints p l.1).eraseIdx l.2.val
+    let x := (openEndpoints p l.1)[l.2.val]
+    let A := (closedArcs p l.1).flatMap (fun e => [e.1, e.2])
+    let t := u+d
+    change (L ++ ([x,t] ++ A)).Perm (List.range (u+d) ++ [t])
+    have h1 : (L ++ ([x,t] ++ A)).Perm (x :: (L ++ (t :: A))) := by
+      simp
+    have h2 : (L ++ (t :: A)).Perm ((L ++ A) ++ [t]) := by
+      simpa only [List.append_assoc, List.singleton_append] using
+        (List.Perm.append_left L (List.perm_append_comm (l₁ := [t]) (l₂ := A)))
+    have h3 : (x :: (L ++ A)).Perm (openEndpoints p l.1 ++ A) := by
+      have hp := List.getElem_cons_eraseIdx_perm hl
+      exact List.Perm.append_right A hp
+    have h4 : ((openEndpoints p l.1 ++ A) ++ [t]).Perm (List.range (u+d) ++ [t]) := by
+      exact List.Perm.append_right [t] hi
+    exact h1.trans ((h2.cons x).trans ((List.Perm.append_right [t] h3).trans h4))
+
+
+theorem openEndpoints_before {u d : ℕ} (p : Path u d) (l : Labels p) :
+    ∀ x ∈ openEndpoints p l, x < u+d := by
+  induction p with
+  | empty => simp [openEndpoints]
+  | @up u d p ih =>
+    change Labels p at l
+    intro x hx
+    simp only [openEndpoints, List.mem_append, List.mem_singleton] at hx
+    rcases hx with hx | rfl
+    · have hh := ih l x hx
+      omega
+    · omega
+  | @down u d p h ih =>
+    change Labels p × Fin (u-d) at l
+    intro x hx
+    simp only [openEndpoints] at hx
+    have hh := ih l.1 x (List.mem_of_mem_eraseIdx hx)
+    omega
+
+theorem closedArcs_ordered {u d : ℕ} (p : Path u d) (l : Labels p) :
+    ∀ e ∈ closedArcs p l, e.1 < e.2 := by
+  induction p with
+  | empty => simp [closedArcs]
+  | @up u d p ih =>
+    change Labels p at l
+    exact ih l
+  | @down u d p h ih =>
+    change Labels p × Fin (u-d) at l
+    intro e he
+    simp only [closedArcs, List.mem_cons] at he
+    rcases he with he | he
+    · subst e
+      have hl : l.2.val < (openEndpoints p l.1).length := by
+        rw [openEndpoints_length]
+        exact l.2.isLt
+      have hm : (openEndpoints p l.1).getD l.2.val 0 ∈ openEndpoints p l.1 := by
+        rw [List.getD_eq_getElem?_getD, List.getElem?_eq_getElem hl]
+        exact List.getElem_mem hl
+      exact openEndpoints_before p l.1 _ hm
+    · exact ih l.1 e he
+
+theorem completePath_matching {u : ℕ} (p : Path u u) (l : Labels p) :
+    (closedArcs p l).length = u ∧
+      (arcEndpoints (closedArcs p l)).Perm (List.range (2*u)) ∧
+      ∀ e ∈ closedArcs p l, e.1 < e.2 := by
+  have hlen := openEndpoints_length p l
+  have hempty : openEndpoints p l = [] := by
+    apply List.eq_nil_of_length_eq_zero
+    omega
+  have hperm := endpoints_partition p l
+  rw [hempty] at hperm
+  simp only [List.nil_append] at hperm
+  constructor
+  · exact closedArcs_length p l
+  · constructor
+    · simpa [two_mul] using hperm
+    · exact closedArcs_ordered p l
 
 
 section Ring
