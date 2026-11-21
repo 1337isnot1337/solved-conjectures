@@ -77,6 +77,9 @@ The ten entries already marked resolved by the source are excluded: conjectures 
 
 All three parallel workers completed their written checkpoints. No extra full conjecture solution was obtained from these routes, and none of these partial results or obstructions increases the full-entry count. The ten-resolution target is unmet.
 
+- [Zero-diagonal Hessian](zero_diagonal_second_variation.md): exact all-order tangent-space second variation at `U_n=(J-I)/(n-1)` with explicit symmetric and skew curvature eigenvalues. [Exact checker](verify_zero_diagonal_second_variation.py). Burghduff's local-minimum theorem is prior art; the global C44 conjecture remains open.
+- [Weak Gyires block closure](gyires_weak_block_closure.md): the original four-term inequality propagates strictly to `A⊕B` under a binomial ratio threshold (automatically for block orders `r,s>=5`), without stronger Gram hypotheses on either input. A complementary size-free hybrid theorem needs stronger Gram estimates for only one block; [exact checks](verify_gyires_weak_block_closure.py). This is decomposable-class progress, not full C20.
+
 ## Partial diagonal family theorem
 
 The [partial-diagonal proof](combinatorial/partial_diagonal_nonbarycentric.md) shows that for every `n >= 3` and `2 <= k < n`, the barycenter of the doubly stochastic face with zeros in the first `k` diagonal positions is not even stationary. It completes the all-parameter assertion suggested by the earlier partial results on this family. The proof uses the stationary-barycenter matching law and a strict log-convexity determinant for derangement counts. Root and inequalities reviews found no gap; the written argument covers all parameters.
