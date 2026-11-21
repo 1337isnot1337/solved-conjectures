@@ -35,10 +35,14 @@ Command:
 python quantum_pascal_screen.py --max-n 40 --max-step 5 --max-gap 3
 ```
 
-This checked 40,204 admissible differences and found no negative character coefficient. The known row and column directions were skipped. This is bounded exploratory evidence and does not establish any new general case. A second bounded screen with larger row index is in progress as of this checkpoint.
+This checked 40,204 admissible differences and found no negative character coefficient. The known row and column directions were skipped. This is bounded exploratory evidence and does not establish any new general case. The second bounded screen is recorded below.
 
 ## Priority audit so far
 
 The author's [current publication list](https://www.mat.univie.ac.at/~kratt/papers.html) still lists the original 14-page preprint. Searches for the arXiv identifier, title, both authors, and phrases `quantum Pascal triangle conjecture proof`, `strong Schur log-concavity diagonals`, and `quantum Pascal counterexample` found no full resolution. Searches of the working repository found no older issue on this exact statement. The discovery record is [MathDB 370593](https://mathdb.com/p/370593/strong-schur-log-concavity-conjecture-for-diagonals-of-the-q); its open label is not treated as decisive evidence.
 
 The current full PrincipiaMathOrg/math-solutions path inventory has no `370593` directory or matching title/author path. The current trureturing Problems and relevant Blueprint path inventories likewise have no matching title or author. These were path inspections, not a complete content search of those repositories. GitHub's broader public code search is temporarily rate-limited, so the archive audit remains incomplete. Any later proof attempt must finish this check before a novelty claim is made.
+
+## Second diagnostic completed
+
+The subsequent exact run completed 64,409 admissible comparisons with n at most 70, step parameters at most 3, and strong gaps at most 2 in about 246 seconds. No negative irreducible-character coefficient appeared. This is recorded only as a finite diagnostic. No further numerical range extension is being pursued without a structural reason.
