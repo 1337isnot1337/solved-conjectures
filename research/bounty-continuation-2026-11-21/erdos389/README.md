@@ -228,6 +228,8 @@ holds because `L` is squarefree and each complex factor `3-zeta` has absolute va
 
 A valid construction still has to produce the carries in (9). No such construction was obtained. The independent review and its checks are recorded separately in [independent-review.md](independent-review.md).
 
+The later [finite-congruence obstruction](finite-congruence-obstruction.md) treats every nontrivial starting value. Every arithmetic progression contains a fixed-prime family with arbitrarily negative valuation of Q_s(t). These failures can simultaneously retain every prescribed finite-prime cleanup condition. The proof specializes the exact carry identity and is related to Ulas's earlier prime-power counterfamily; priority is not claimed. It rules out a sufficient condition based only on finitely many congruences, while leaving thin nonperiodic constructions possible.
+
 ## Computational check of the reductions
 
 `check_erdos389.py` independently compares direct finite products with factorial valuations on a bounded grid. It then checks (5), (6), and (7) on every integral quotient in that grid. It also checks the smoothness counterfamily above. The grid is a check on the lemmas' implementation and boundary cases; it is not an attempt to settle more values of `n`, compute new minima, or claim a solution of (1).

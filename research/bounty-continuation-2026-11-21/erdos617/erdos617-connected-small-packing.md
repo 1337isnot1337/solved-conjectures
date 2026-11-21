@@ -155,6 +155,21 @@ E(r-1)-B
 
 If `r<=q(q-1)`, (5) is strictly positive, contradicting `e(H)<=B`. This proves (1).
 
+The same decreasing function gives a lower bound on the minimum degree. At d=r−q=s,
+
+```math
+E(r-q)-B
+=\frac{q^2\bigl((q-1)r-q^2+3\bigr)}{2(r-q-1)}>0.
+```
+
+The denominator is positive because s≥2. The expression in parentheses is at least q+1 when r≥q+2. Therefore d cannot be at most r−q, and
+
+```math
+r-q+1\le\delta(H)\le r-1.
+```
+
+The conjectures agent checked this strengthening, and the coordinator independently verified the exact rational identity symbolically. It is subject to the same connectedness hypothesis.
+
 ## Remaining gap
 
 The connected branch now has all full cliques pairwise disjoint and
@@ -163,7 +178,7 @@ The connected branch now has all full cliques pairwise disjoint and
 3\le q,\qquad q(q-1)<r.
 ```
 
-It also has a minimum-degree vertex in `Z`, with no neighbors in the full-clique union. The proof does not exclude this configuration. It does not handle the disconnected branch, where full cliques are components and the residue has independence number `s`.
+It also has a minimum-degree vertex in `Z`, with no neighbors in the full-clique union, and minimum degree between r−q+1 and r−1. The proof does not exclude this configuration. It does not handle the disconnected branch, where full cliques are components and the residue has independence number `s`.
 
 These are reductions for the general problem. They are not a claimed solution of Erdős 617.
 

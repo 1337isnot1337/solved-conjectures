@@ -33,6 +33,9 @@ The [October 2026 Xia–Szeider paper](https://arxiv.org/abs/2610.24484) proves 
 | [All full cliques are disjoint](erdos617-disjoint-full-cliques.md) | An intersecting pair would force both a small residue independence number and too many edges. | Global disjointness applies to H; the original color may have additional full cliques destroyed by deletion. |
 | [Residue attachments](critical-clique-attachments.md) | Residue vertices have exactly one neighbor in every full clique or none in their union. | Does not eliminate the latter vertices. |
 | [Connected small-packing bound](erdos617-connected-small-packing.md) | A minimum-degree vertex has no full-clique neighbor, and q(q−1)<r. | Connected H only; the disconnected branch remains unresolved. |
+| [Near-clique blocks](erdos617-near-clique-obstructions.md) | Maximal cliques of order r−1 intersect in 0, 1, or r−2 vertices; merging the last kind gives blocks meeting in at most one vertex. The total overlap has an explicit bound. | Cross edges and the uncovered residue still prevent an independent-transversal conclusion. |
+| [Independent residue coverage check](near-clique-blocks.md) | Independently verifies the block structure and forces substantial coverage after minimum-degree deletion. | Coverage is not a clique factor or a solution. |
+| [Weighted independence bound](weighted-two-level-akp.md) | Gives an exact optimized attachment bound, in particular fewer than r√(2r+1) attached residue vertices. | A uniform surviving parameter region is proved; this calculation does not close the case. |
 | [Cross-color restrictions](erdos617-cross-color-rook-reduction.md) | In the full-matching branch, the other colors form column partitions on the clique union, with constrained residue attachments. | Exceptional residue vertices survive; full matching is not proved in general. |
 | [Minimal independence-ratio cores](erdos617-critical-cores.md) | A minimal deficient induced core has order `ar+1`, minimum degree at least `r`, and the stated density restrictions. The cases `a <= 3` and `a=r` are excluded in the recorded range. | The middle range survives; a ratio-minimal graph cannot be assumed chromatic-critical. |
 | [One-color obstruction](erdos617-one-color-review.md) | An infinite family satisfies the weak local edge cap and sparse budget, but violates the stronger hereditary palette condition. | It refutes an auxiliary implication, not the conjecture. |
@@ -40,6 +43,21 @@ The [October 2026 Xia–Szeider paper](https://arxiv.org/abs/2610.24484) proves 
 The independence and packing deductions use the localized independence inequality in Abiad, Kumar, and Pragada, *Localization of the Caro–Wei bound and its applications to bipartiteness*, arXiv:2609.00210v1, Theorems 2.2–3.1 ([primary PDF](https://borowiecki.dev/pdf/2609.00210)). The coordinator and reviewers inspected the theorem and its proof. The current proof chain received independent step-by-step checks by the three other research agents. It has not been formalized in Lean.
 
 The [direct six-pattern exclusion](erdos617-forced-three-cliques.md) and the earlier two-clique and at-most-five arguments are retained as intermediate proof steps. Their older stopping points are superseded by general disjointness. The [degree-averaging obstruction](degree-averaging-obstruction.md) gives an exact counterexample to a proposed auxiliary bound, not to the coloring conjecture.
+
+## A separate extremal normalization
+
+The [disconnected-branch analysis](erdos617-disconnected-residue.md) first identified the exact component-deficit and local-clique-deficit inequality left by the sparse budget. A subsequent [extremal normalization](erdos617-extremal-core-normalization.md) changes the optimization family: minimize edges over all graphs satisfying the necessary independence and hereditary palette bounds, whether or not they are realizable in a simultaneous coloring.
+
+In that family, closed-neighborhood and clique-replacement arguments prove that an edge-minimum graph consists of q isolated full cliques and exactly one connected residual core R. With s=r−q, the same core satisfies
+
+```math
+|R|=rs+1,\quad\alpha(R)=s,\quad\omega(R)\le r-1,
+\quad\delta(R)\ge r,\quad q\ge3,\quad s\ge4.
+```
+
+It is independence-critical and ratio-minimal: every proper induced subgraph W has |W|≤rα(W). All reviewers checked the replacement proofs, including preservation of every palette cap. The same proof gives |N[S]|≥r|S|+1 for each nonempty independent set S in R.
+
+The core still satisfies a nonempty permitted edge interval. The connected-case bound q(q−1)<r and the cross-color arguments concern a different graph and cannot be transferred to this normalization. The normalization is a reduction, not an exclusion of the core or a coloring construction.
 
 ## Prior-work correction
 
