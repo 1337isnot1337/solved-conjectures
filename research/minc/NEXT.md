@@ -147,3 +147,22 @@ Proofs, primary-source links, independent reviews, and exact checkers are
 linked from the continuation index. Issue 139 records assignments and
 commit checkpoints. The separate C6, C20, C44, and P1 workers' files were
 preserved.
+
+## 20 November 2026: subgroup and triangular checkpoint
+
+The continuation's [reviewed subgroup/triangular bundle](continuation-2026-11-20/reviews/subgroup_triangular_root_review.md)
+is complete. It proves a Segre-coordinate and moment bound excluding the
+exceptional-subgroup sign route for order-six rank-two matrices. A classical
+Gaussian content-product identity lifts the single-block comparison to all
+ranks, but not the comparison with the permanent. A separate positive-definite
+function argument excludes counterexample creation by POT-valid orthogonal
+ancillary blocks. These are auxiliary statements, not full C42/P2 resolutions.
+
+The triangular P7 recurrence now has an exact unextendable order-nine seed
+at the admissible transition to order ten, a general two-step formula, and
+the complete replacement hierarchy for a restricted two-step reset. The
+required preserved class of coefficient polynomials is still absent. All
+recorded symbolic and independent exact checks passed. The explicit scope
+exclusions and the Chollet priority correction remain in force. The
+continuation has zero completed eligible conjectures; the requested ten
+have not been obtained.

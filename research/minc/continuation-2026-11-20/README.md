@@ -70,6 +70,33 @@ group construction and direct polynomial evaluations; the
 normalizations and marker argument. New Gram configurations remain to be
 investigated.
 
+The [Segre alignment note](inequalities/segre_alignment_checkpoint.md) proves
+an exact trace bound for order-six matrices of rank at most two and excludes
+all six exceptional-subgroup sign projections in that class. Its
+[two](reviews/segre_bound_review.md)
+[independent reviews](reviews/segre_cubic_global_review.md) reconstruct the
+coordinates and moment inequalities separately. This rank/order restriction
+is explicitly not a counted solution. The
+[Gaussian rank-lifting lemma](inequalities/isotypic_rank_lifting.md) extends
+the alignment comparison within one Fourier block to every rank, but does
+not extend its mixed comparison with the permanent. The
+[POT-valid ancillary-block lemma](inequalities/pot_valid_ancilla_obstruction.md)
+proves an all-order obstruction to orthogonal padding under its stated
+hypothesis. Neither lemma closes permanent dominance.
+
+The [positive-border construction](sign/bordered_partition_lifts.md) derives
+the complete triangular replacement-column recurrence. The
+[induction-gap addendum](sign/triangular_recurrence_invariant_gap.md) gives
+an exact unextendable seed at an admissible transition, together with the
+general two-step formula. Its [independent review](reviews/triangular_recurrence_review.md)
+also records the full two-step replacement hierarchy. An invariant forcing
+future sign choices remains missing. The
+[target audit](sign/remaining_target_audit.md) checks the remaining scopes of
+Problems 8, 11, 12 and 13. The
+[root review](reviews/subgroup_triangular_root_review.md) records the exact
+checks, primary sources, and limits of this checkpoint. Full resolutions
+from this continuation remain zero.
+
 The previous campaign's general P18 approximation theorem, Pula-Song-Wanless threshold, and Malek endpoint theorem retain the different scopes in [the existing continuation record](../NEXT.md). They are not new results of this continuation and are not counted here as three full numbered entries.
 
 ## Coordination boundaries

@@ -1,0 +1,41 @@
+{
+  "status": "auxiliary rank-two order-six inequality, not a full MINC resolution",
+  "algebra_checks": "all symbolic identities passed",
+  "Bernstein_data": {
+    "one_zero_eigenvalue": {
+      "polynomial": "-3*L**3/80 + 3*L**2*x/20 + 4*L**2/5 - 3*L*x**2/20 - 13*L*x/5 + 102*L/5 + 2*x**2 - 12*x + 48",
+      "Bernstein_coefficients": [
+        "2*(x - 3)**2 + 30",
+        "x**2/5 - 216*x/5 + 1464/5",
+        "-8*x**2/5 - 48*x/5 + 4416/5",
+        "-17*x**2/5 + 444*x/5 + 348/5"
+      ]
+    },
+    "two_equal_eigenvalues": {
+      "polynomial": "-3*L**3/80 + 3*L**2*x/20 + 4*L**2/5 + 3*L*x**2/80 - 97*L*x/20 + 543*L/20 - 3*x**3/8 + 6*x**2 - 39*x/2 + 30",
+      "Bernstein_coefficients": [
+        "(9/2 - 3*x/8)*(x - 2)**2 + 12",
+        "-3*x**3/8 + 129*x**2/20 - 777*x/10 + 1779/5",
+        "-3*x**3/8 + 69*x**2/10 - 711*x/10 + 5136/5",
+        "-3*x**3/8 + 147*x**2/20 + 3*x/10 + 1473/5"
+      ]
+    }
+  },
+  "exact_cross_checks": {
+    "octahedral": {
+      "permanent_over_h": "15",
+      "trace_33_over_h": "21",
+      "refined_gap": "0"
+    },
+    "collinear": {
+      "permanent_over_h": "48",
+      "trace_33_over_h": "0",
+      "refined_gap": "87"
+    },
+    "generic": {
+      "permanent_over_h": "32615782/560625",
+      "trace_33_over_h": "83778/7475",
+      "refined_gap": "4146353/43125"
+    }
+  }
+}
