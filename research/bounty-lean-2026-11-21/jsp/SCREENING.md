@@ -18,6 +18,15 @@ priority even while the catalog still says that no Lean proof is recorded.
 
 ## Saturated formalization candidates
 
+This was a convenience shortlist, not an exhaustive screen. A fresh parse of the
+catalog index at `problems/README.md`, blob
+`d807901a74d1b273f583e56cbb673fc9819a58d7`, found 292 records with
+`Current status = Solved` and `Lean proof = No` among 1,072 records. The twelve
+candidates below do not establish that those 292 opportunities are exhausted.
+The `Eligible to claim` flag is `No` for all 292 because a complete Lean proof
+has not been recorded; it must not be used to exclude potential new
+formalizations before the mathematical scope and award terms are checked.
+
 The following identifiers were searched across the prize repository's public
 pull requests. Each had earlier formalization submissions. They were therefore
 not selected for a duplicate proof campaign. This table is not a verification

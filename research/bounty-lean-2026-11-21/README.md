@@ -37,4 +37,16 @@ No complete new mathematical solution, unclaimed award-ready formalization, acce
 - [Justin Sun Prize and deMath](jsp/SCREENING.md): earlier submissions and problem-number mismatches prevent treating catalogue gaps as unclaimed awards.
 - [Other providers](other/README.md): the apparently open Swarm Lean tasks are closed or claimed in the live public API; donation-only, testnet, discontinued and already solved prizes are excluded.
 - [Althöfer game](althofer-game/ray-analysis.md): increasing-ray decomposition, finite-strategy certificate completeness and explicit obstacles to two naive induction arguments. No all-starts termination proof.
-- [Sun target reservation](https://github.com/1337isnot1337/solved-conjectures/issues/226): investigate the exact coefficient-two Pell representation. Counterexamples to other coefficients and Bloom's already proved shifted-prime-fraction theorem do not qualify.
+- [Sun prime–Pell investigation](pell-cover/README.md): four independently checked integer certificates rule out every congruence cover whose prime Pell periods divide 120. Larger-period searches are inconclusive. This is a limitation of the counterexample method, not a resolution of the conjecture.
+- [Krenn–Gu status audit](krenn-gu/README.md): a September 2026 full Lean proof is recorded in the proposer's November paper. The old prize listing is not a new opportunity.
+- [Additional status checks](other/extra-status-checks.md): Rump's two matrix prizes have been solved and paid; the Chebyshev primality offer pays for a published proof, not an arbitrary counterexample.
+
+## Continuing formalization screen
+
+The first Justin Sun Prize screen covered a convenience shortlist of twelve
+catalogue entries, not all missing formalizations. The current index has 292
+entries marked `Solved` with no Lean proof recorded. This count is a screening
+input, not a count of available prizes: prior pull requests and external proofs
+must be checked against each full statement. The expanded review is divided
+across three researchers. No unclaimed complete formalization has yet been
+identified.

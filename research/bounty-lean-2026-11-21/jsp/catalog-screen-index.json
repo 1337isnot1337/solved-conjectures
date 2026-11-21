@@ -1,0 +1,2052 @@
+{
+  "checked": "2026-11-21",
+  "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/README.md",
+  "scope": "Catalogue screen only; not proof of availability or eligibility",
+  "count": 292,
+  "rows": [
+    {
+      "id": "JSP-000018",
+      "title": "Moving sofa problem (maximum area)",
+      "path": "problems/catalog-0001-0100.md#JSP-000018",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000027",
+      "title": "Artin primitive root conjecture",
+      "path": "problems/catalog-0001-0100.md#JSP-000027",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000035",
+      "title": "Catalan conjecture",
+      "path": "problems/catalog-0001-0100.md#JSP-000035",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000036",
+      "title": "Modularity theorem for rational elliptic curves (Taniyama–Shimura–Weil conjecture)",
+      "path": "problems/catalog-0001-0100.md#JSP-000036",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000045",
+      "title": "How large can gaps between consecutive primes be? Are infinitely many gaps larger than the proposed lower bound?",
+      "path": "problems/catalog-0001-0100.md#JSP-000045",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000060",
+      "title": "Can congruence classes cover almost all integers when their moduli are restricted to a prescribed range?",
+      "path": "problems/catalog-0001-0100.md#JSP-000060",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000076",
+      "title": "How sparse can a set be if every two-coloring represents every sufficiently large integer as a sum of distinct same-colored elements? Improve the growth bounds.",
+      "path": "problems/catalog-0001-0100.md#JSP-000076",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000077",
+      "title": "How fast must a set grow if every coloring with more than two colors represents all sufficiently large integers as sums of distinct same-colored elements?",
+      "path": "problems/catalog-0001-0100.md#JSP-000077",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000078",
+      "title": "How does the number of distinct odd cycle lengths constrain a graph's chromatic number?",
+      "path": "problems/catalog-0001-0100.md#JSP-000078",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000085",
+      "title": "Unbounded discrepancy on homogeneous arithmetic progressions",
+      "path": "problems/catalog-0001-0100.md#JSP-000085",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000087",
+      "title": "Is the specified generating series involving the number of distinct prime factors of an integer irrational?",
+      "path": "problems/catalog-0001-0100.md#JSP-000087",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000089",
+      "title": "Is there a density-zero set of positive integers such that every sufficiently dense graph has a cycle with length in that set?",
+      "path": "problems/catalog-0001-0100.md#JSP-000089",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000090",
+      "title": "If local subgraphs have large independent sets, must the whole graph be close to bipartite after few modifications?",
+      "path": "problems/catalog-0001-0100.md#JSP-000090",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000093",
+      "title": "How many edge-disjoint monochromatic triangles are guaranteed in a two-coloring of the edges of a complete graph?",
+      "path": "problems/catalog-0001-0100.md#JSP-000093",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000096",
+      "title": "Which minimal graphs prevent Ramsey numbers from growing linearly with the number of edges? Characterize these obstructions.",
+      "path": "problems/catalog-0001-0100.md#JSP-000096",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000104",
+      "title": "If a graph has neither a large clique nor a large independent set, how many distinct edge counts do its induced subgraphs attain?",
+      "path": "problems/catalog-0101-0200.md#JSP-000104",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000108",
+      "title": "If every point has many neighbors at one common distance from it, how large a count can be guaranteed at every point? Is it smaller than every fixed positive power of the number of points?",
+      "path": "problems/catalog-0101-0200.md#JSP-000108",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000121",
+      "title": "How many vertices are needed to find a finite subgraph of a prescribed chromatic number in a graph of uncountable chromatic number?",
+      "path": "problems/catalog-0101-0200.md#JSP-000121",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000126",
+      "title": "If every two-coloring of an infinite graph's edges gives a monochromatic triangle, does the analogous property hold for every finite clique?",
+      "path": "problems/catalog-0101-0200.md#JSP-000126",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000139",
+      "title": "How large must the maximum degree of a triangle-free graph of diameter at most two be?",
+      "path": "problems/catalog-0101-0200.md#JSP-000139",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000140",
+      "title": "How many edge colors are necessary if every four-vertex clique must contain at least five colors?",
+      "path": "problems/catalog-0101-0200.md#JSP-000140",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000155",
+      "title": "Is there an infinite Sidon set whose three-term sums represent every sufficiently large integer?",
+      "path": "problems/catalog-0101-0200.md#JSP-000155",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000161",
+      "title": "Linear Ramsey bounds for graphs of bounded degeneracy",
+      "path": "problems/catalog-0101-0200.md#JSP-000161",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000163",
+      "title": "How many vertices can a two-colored complete graph have while avoiding a four-vertex clique in one color and a prescribed large clique in the other?",
+      "path": "problems/catalog-0101-0200.md#JSP-000163",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000168",
+      "title": "Does every finite coloring of the positive integers contain a large set whose specified sums and products all have the same color?",
+      "path": "problems/catalog-0101-0200.md#JSP-000168",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000173",
+      "title": "How many short arithmetic progressions in an integer set force a longer arithmetic progression?",
+      "path": "problems/catalog-0101-0200.md#JSP-000173",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000175",
+      "title": "Is the Ramsey number of a high-dimensional hypercube bounded by a constant times its number of vertices?",
+      "path": "problems/catalog-0101-0200.md#JSP-000175",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000176",
+      "title": "How many edges can a graph have if it contains no regular subgraph of a prescribed degree?",
+      "path": "problems/catalog-0101-0200.md#JSP-000176",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000179",
+      "title": "How large can a subset of an integer interval be if no element is the average of some other elements?",
+      "path": "problems/catalog-0101-0200.md#JSP-000179",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000182",
+      "title": "How long must an integer interval be to force either a monochromatic or a rainbow arithmetic progression under every coloring?",
+      "path": "problems/catalog-0101-0200.md#JSP-000182",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000183",
+      "title": "Must an infinite walk in three-dimensional space using a finite set of step vectors visit three collinear points?",
+      "path": "problems/catalog-0101-0200.md#JSP-000183",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000192",
+      "title": "Are there Steiner triple systems avoiding all short cyclic configurations specified in the problem, with arbitrarily large girth of this kind?",
+      "path": "problems/catalog-0101-0200.md#JSP-000192",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000194",
+      "title": "How many ordinary lines, each containing exactly two of the points, must a finite noncollinear planar point set determine?",
+      "path": "problems/catalog-0101-0200.md#JSP-000194",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000195",
+      "title": "If the number of points on any one line is bounded, how many distinct lines must a planar point set determine?",
+      "path": "problems/catalog-0101-0200.md#JSP-000195",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000198",
+      "title": "How many points in general position force an empty convex polygon of a prescribed size?",
+      "path": "problems/catalog-0101-0200.md#JSP-000198",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000202",
+      "title": "For a finite point set of fixed diameter in higher-dimensional space, how many pairs can attain that diameter?",
+      "path": "problems/catalog-0201-0300.md#JSP-000202",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000203",
+      "title": "How large can the specified integral of a trigonometric polynomial be under the problem's real-zero conditions?",
+      "path": "problems/catalog-0201-0300.md#JSP-000203",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000204",
+      "title": "For a transcendental entire function, determine the limiting ratio between its largest power-series term and its maximum modulus on a circle.",
+      "path": "problems/catalog-0201-0300.md#JSP-000204",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000205",
+      "title": "What is the maximum density of a measurable planar set containing no pair at distance one?",
+      "path": "problems/catalog-0201-0300.md#JSP-000205",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000208",
+      "title": "Determine the gap distribution among consecutive integers coprime to a product of the first several primes.",
+      "path": "problems/catalog-0201-0300.md#JSP-000208",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000211",
+      "title": "For integers generated by an arbitrary infinite set of primes, can the gaps between consecutive terms tend to infinity?",
+      "path": "problems/catalog-0201-0300.md#JSP-000211",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000216",
+      "title": "How much larger than a zero-density integer set can its sumset with itself be?",
+      "path": "problems/catalog-0201-0300.md#JSP-000216",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000242",
+      "title": "In a representation of one as a prescribed number of positive unit fractions, how large can the smallest denominator be?",
+      "path": "problems/catalog-0201-0300.md#JSP-000242",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000243",
+      "title": "What is the shortest integer interval containing distinct denominators whose reciprocals sum to one?",
+      "path": "problems/catalog-0201-0300.md#JSP-000243",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000248",
+      "title": "Which positive integers can be the largest denominator in a representation of one by distinct unit fractions?",
+      "path": "problems/catalog-0201-0300.md#JSP-000248",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000250",
+      "title": "Within the prescribed finite denominator range, which initial denominators cannot occur in a representation of one, and where is the smallest exception?",
+      "path": "problems/catalog-0201-0300.md#JSP-000250",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000252",
+      "title": "How many subsets of a finite integer range have reciprocal sum exactly one?",
+      "path": "problems/catalog-0201-0300.md#JSP-000252",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000256",
+      "title": "How small can the largest denominator be in a representation of a given positive rational number by distinct unit fractions?",
+      "path": "problems/catalog-0201-0300.md#JSP-000256",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000259",
+      "title": "Which integers can be represented by sums of distinct unit fractions with denominators in a finite range?",
+      "path": "problems/catalog-0201-0300.md#JSP-000259",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000264",
+      "title": "Does every assignment of signs to the specified reciprocal set admit a nonempty zero-sum subset?",
+      "path": "problems/catalog-0201-0300.md#JSP-000264",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000266",
+      "title": "How many distinct subset sums do the reciprocals of the first several positive integers have?",
+      "path": "problems/catalog-0201-0300.md#JSP-000266",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000267",
+      "title": "How many integers can be selected from a finite range so that all subset sums of their reciprocals are distinct?",
+      "path": "problems/catalog-0201-0300.md#JSP-000267",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000281",
+      "title": "Must the set of sums of distinct elements of an additive basis have positive lower density?",
+      "path": "problems/catalog-0201-0300.md#JSP-000281",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000285",
+      "title": "Must the finite subset sums of a positive-density integer multiset contain an infinite arithmetic progression?",
+      "path": "problems/catalog-0201-0300.md#JSP-000285",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000286",
+      "title": "If an integer set has at least square-root-scale size in large intervals, must its finite subset sums contain an infinite arithmetic progression?",
+      "path": "problems/catalog-0201-0300.md#JSP-000286",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000288",
+      "title": "Must ratios of consecutive terms in the specified minimal stably complete sequences converge to the golden ratio?",
+      "path": "problems/catalog-0201-0300.md#JSP-000288",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000298",
+      "title": "How many colors are needed to color the positive integers so that a prescribed integer is not a monochromatic subset sum?",
+      "path": "problems/catalog-0201-0300.md#JSP-000298",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000301",
+      "title": "If two consecutive positive integers are powerful, must at least one be a perfect square?",
+      "path": "problems/catalog-0301-0400.md#JSP-000301",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000307",
+      "title": "Are there infinitely many triples of consecutive integers with strictly decreasing largest prime factors?",
+      "path": "problems/catalog-0301-0400.md#JSP-000307",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000313",
+      "title": "What is the density of rows of Pascal's triangle containing exactly a prescribed number of squarefree entries?",
+      "path": "problems/catalog-0301-0400.md#JSP-000313",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000314",
+      "title": "How many starting points make the largest prime factor repeat in a product of consecutive integers, and what is their density?",
+      "path": "problems/catalog-0301-0400.md#JSP-000314",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000315",
+      "title": "Determine the growth of the counting function of highly composite numbers, whose divisor counts exceed those of all smaller positive integers.",
+      "path": "problems/catalog-0301-0400.md#JSP-000315",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000320",
+      "title": "Must a binomial coefficient have a divisor close in size to its upper parameter?",
+      "path": "problems/catalog-0301-0400.md#JSP-000320",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000331",
+      "title": "Must every sufficiently large finite integer set contain two elements with relatively small greatest common divisor?",
+      "path": "problems/catalog-0301-0400.md#JSP-000331",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000334",
+      "title": "How many representations can an integer have as a sum of powers of two, powers of three, and their products?",
+      "path": "problems/catalog-0301-0400.md#JSP-000334",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000346",
+      "title": "Is there an increasing integer sequence of density one whose products over distinct consecutive blocks are always different?",
+      "path": "problems/catalog-0301-0400.md#JSP-000346",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000356",
+      "title": "How many initial products of an increasing integer sequence can be squares?",
+      "path": "problems/catalog-0301-0400.md#JSP-000356",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000357",
+      "title": "How large can a subset of an integer interval be if no two elements sum to a square?",
+      "path": "problems/catalog-0301-0400.md#JSP-000357",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000358",
+      "title": "Must every finite coloring of the positive integers contain two same-colored integers whose sum is a perfect power?",
+      "path": "problems/catalog-0301-0400.md#JSP-000358",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000359",
+      "title": "How often can consecutive terms of the specified integer sequence have a small least common multiple?",
+      "path": "problems/catalog-0301-0400.md#JSP-000359",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000360",
+      "title": "How large can an integer set be if every pairwise least common multiple is bounded by a prescribed value?",
+      "path": "problems/catalog-0301-0400.md#JSP-000360",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000361",
+      "title": "For a fixed infinite integer set, how many divisors of a single integer can belong to that set?",
+      "path": "problems/catalog-0301-0400.md#JSP-000361",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000363",
+      "title": "What proportion of integers have a divisor in the specified interval with endpoint ratio two?",
+      "path": "problems/catalog-0301-0400.md#JSP-000363",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000364",
+      "title": "What proportion of an integer's divisors can be paired with divisors of comparable size?",
+      "path": "problems/catalog-0301-0400.md#JSP-000364",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000377",
+      "title": "Can the size of a planar point set whose distances all stay away from integers be bounded in terms of the specified parameters?",
+      "path": "problems/catalog-0301-0400.md#JSP-000377",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000378",
+      "title": "Can arbitrarily large planar point sets have all pairwise distances uniformly bounded away from the nearest integer?",
+      "path": "problems/catalog-0301-0400.md#JSP-000378",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000383",
+      "title": "Starting from a set of primes, can repeatedly adjoining prime sums of three distinct existing primes generate infinitely many primes?",
+      "path": "problems/catalog-0301-0400.md#JSP-000383",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000385",
+      "title": "Can all natural numbers be permuted so that every adjacent pair has prime sum?",
+      "path": "problems/catalog-0301-0400.md#JSP-000385",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000388",
+      "title": "Can the integer value set of a polynomial have an additive complement giving each integer exactly one representation?",
+      "path": "problems/catalog-0301-0400.md#JSP-000388",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000391",
+      "title": "Can the specified floor recurrence generate the digits of an algebraic number in a prescribed base?",
+      "path": "problems/catalog-0301-0400.md#JSP-000391",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000393",
+      "title": "What bounds relate the number of nonzero terms of a polynomial to that of its square?",
+      "path": "problems/catalog-0301-0400.md#JSP-000393",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000397",
+      "title": "If an additive arithmetic function has uniformly bounded differences at consecutive integers, must it be close to a logarithmic function?",
+      "path": "problems/catalog-0301-0400.md#JSP-000397",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000398",
+      "title": "If consecutive ratios of an increasing integer sequence tend to one, are the relative positions of scaled integers within its gaps uniformly distributed for almost every real scale factor?",
+      "path": "problems/catalog-0301-0400.md#JSP-000398",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000399",
+      "title": "Can a finite set be uniquely recovered from the multiset of all sums of a prescribed number of distinct elements?",
+      "path": "problems/catalog-0301-0400.md#JSP-000399",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000400",
+      "title": "Can a sum of two integer squares approximate an irrational multiple of an integer square sufficiently closely?",
+      "path": "problems/catalog-0301-0400.md#JSP-000400",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000402",
+      "title": "Under the specified measure restrictions on a set mapping, must there be a sufficiently large set whose elements avoid one another's images?",
+      "path": "problems/catalog-0401-0500.md#JSP-000402",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000404",
+      "title": "Blumenthal's problem",
+      "path": "problems/catalog-0401-0500.md#JSP-000404",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000410",
+      "title": "How many components of the region where a polynomial has modulus at most one can exceed a prescribed diameter?",
+      "path": "problems/catalog-0401-0500.md#JSP-000410",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000413",
+      "title": "Does a transcendental entire function have a path to infinity on which a specified negative power of its modulus is integrable?",
+      "path": "problems/catalog-0401-0500.md#JSP-000413",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000415",
+      "title": "Can every edge-colored complete graph have its vertices covered by few paths whose edges all share one color?",
+      "path": "problems/catalog-0401-0500.md#JSP-000415",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000419",
+      "title": "What is the typical maximum modulus on the unit circle of a polynomial with random sign coefficients?",
+      "path": "problems/catalog-0401-0500.md#JSP-000419",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000421",
+      "title": "How small is the typical minimum modulus on the unit circle of a polynomial with random sign coefficients?",
+      "path": "problems/catalog-0401-0500.md#JSP-000421",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000422",
+      "title": "What conditions on arc lengths make randomly placed arcs cover the entire circle almost surely?",
+      "path": "problems/catalog-0401-0500.md#JSP-000422",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000423",
+      "title": "Does a power series with randomly signed coefficients converge at some point of the unit circle?",
+      "path": "problems/catalog-0401-0500.md#JSP-000423",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000428",
+      "title": "How large can a pairwise noncoprime subset of an integer interval containing a specified integer be?",
+      "path": "problems/catalog-0401-0500.md#JSP-000428",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000433",
+      "title": "How large can the reciprocal sum of integers in an interval be if every pairwise least common multiple exceeds the interval's upper endpoint?",
+      "path": "problems/catalog-0401-0500.md#JSP-000433",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000434",
+      "title": "How many random elements of a finite abelian group make their subset sums cover the group with probability at least one half? Does the binary logarithm of the group order plus a small correction suffice?",
+      "path": "problems/catalog-0401-0500.md#JSP-000434",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000437",
+      "title": "Can every graph's Ramsey number be bounded exponentially in the square root of its edge count?",
+      "path": "problems/catalog-0401-0500.md#JSP-000437",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000440",
+      "title": "What is the two-color Ramsey number of a tree whose bipartition sizes have ratio one to two?",
+      "path": "problems/catalog-0401-0500.md#JSP-000440",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000444",
+      "title": "How fast does the three-color Ramsey number grow for a triangle in either of the first two colors versus a large clique in the third?",
+      "path": "problems/catalog-0401-0500.md#JSP-000444",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000450",
+      "title": "Do graphs of bounded maximum degree have two-color size Ramsey numbers linear in their order?",
+      "path": "problems/catalog-0401-0500.md#JSP-000450",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000455",
+      "title": "Is the two-color induced Ramsey number at most exponential in the order of the target graph?",
+      "path": "problems/catalog-0401-0500.md#JSP-000455",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000460",
+      "title": "Is the Ramsey number of the prescribed cycle against any graph at most twice the latter's edge count plus the allowed correction?",
+      "path": "problems/catalog-0401-0500.md#JSP-000460",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000464",
+      "title": "How many edges can a graph have while excluding an odd cycle and an even cycle of adjacent lengths?",
+      "path": "problems/catalog-0401-0500.md#JSP-000464",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000465",
+      "title": "For a forbidden family containing a bipartite graph, can the asymptotic extremal problem be reduced to forbidding a single graph?",
+      "path": "problems/catalog-0401-0500.md#JSP-000465",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000467",
+      "title": "What minimum degree forces a spanning collection of vertex-disjoint four-cycles?",
+      "path": "problems/catalog-0401-0500.md#JSP-000467",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000468",
+      "title": "Under suitable parameters, does a random graph contain a spanning hypercube with probability tending to one?",
+      "path": "problems/catalog-0401-0500.md#JSP-000468",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000471",
+      "title": "How many edges can always be retained in a bipartite subgraph of a triangle-free graph?",
+      "path": "problems/catalog-0401-0500.md#JSP-000471",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000475",
+      "title": "Can finitely many residue classes cover all integers with no modulus dividing another?",
+      "path": "problems/catalog-0401-0500.md#JSP-000475",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000476",
+      "title": "How large can a subset of an integer interval be if none of its nonempty subset sums is a square?",
+      "path": "problems/catalog-0401-0500.md#JSP-000476",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000479",
+      "title": "Does every red-blue coloring of pairs from the prescribed countable ordinal contain a red clique of the same order type or a blue triangle?",
+      "path": "problems/catalog-0401-0500.md#JSP-000479",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000486",
+      "title": "Disjoint paths and separating sets in infinite graphs",
+      "path": "problems/catalog-0401-0500.md#JSP-000486",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000490",
+      "title": "How many colors suffice to avoid monochromatic members of a family of countably infinite sets whose pairwise intersections never have size two?",
+      "path": "problems/catalog-0401-0500.md#JSP-000490",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000492",
+      "title": "Can the number of pairs at one distance in a finite spherical point set grow superlinearly?",
+      "path": "problems/catalog-0401-0500.md#JSP-000492",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000493",
+      "title": "Which total numbers of determined lines are possible for a planar set of a prescribed number of points?",
+      "path": "problems/catalog-0401-0500.md#JSP-000493",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000494",
+      "title": "How many different sets of line multiplicities can planar point configurations determine?",
+      "path": "problems/catalog-0401-0500.md#JSP-000494",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000503",
+      "title": "How many vertex subsets of a high-degree regular graph are exactly the vertex sets of cycles?",
+      "path": "problems/catalog-0501-0600.md#JSP-000503",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000506",
+      "title": "In a random graph, how much smaller than the chromatic number is the minimum number of parts in a partition into cliques and independent sets?",
+      "path": "problems/catalog-0501-0600.md#JSP-000506",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000511",
+      "title": "Is every planar bipartite graph colorable from arbitrary lists of three colors per vertex?",
+      "path": "problems/catalog-0501-0600.md#JSP-000511",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000512",
+      "title": "What list size guarantees proper list coloring of every planar graph?",
+      "path": "problems/catalog-0501-0600.md#JSP-000512",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000513",
+      "title": "Does list multicolorability persist when both the available-list size and the required number of colors per vertex are doubled?",
+      "path": "problems/catalog-0501-0600.md#JSP-000513",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000514",
+      "title": "Which triangles can be dissected into congruent triangles only when their number is a square?",
+      "path": "problems/catalog-0501-0600.md#JSP-000514",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000517",
+      "title": "If a graph has no clique or independent set larger than logarithmic size, must it have many induced subgraphs with distinct pairs of vertex and edge counts?",
+      "path": "problems/catalog-0501-0600.md#JSP-000517",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000518",
+      "title": "If a graph has neither large cliques nor large independent sets, must a large induced subgraph have many distinct vertex degrees?",
+      "path": "problems/catalog-0501-0600.md#JSP-000518",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000521",
+      "title": "Does sufficiently high chromatic number force several edge-disjoint cycles on the same vertex set?",
+      "path": "problems/catalog-0501-0600.md#JSP-000521",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000527",
+      "title": "In higher-dimensional general position, is the number of points forcing a convex subset exponential in the target size?",
+      "path": "problems/catalog-0501-0600.md#JSP-000527",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000528",
+      "title": "How many points of a planar set can each determine only a small number of distances to the other points?",
+      "path": "problems/catalog-0501-0600.md#JSP-000528",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000532",
+      "title": "Must every positive-density integer set contain a translate of all pairwise sums from some infinite set?",
+      "path": "problems/catalog-0501-0600.md#JSP-000532",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000539",
+      "title": "Does a large set family with small pairwise intersections admit a transversal meeting each member in a uniformly bounded number of elements?",
+      "path": "problems/catalog-0501-0600.md#JSP-000539",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000547",
+      "title": "What is the typical growth of the sum of ratios of consecutive ordered divisors of an integer?",
+      "path": "problems/catalog-0501-0600.md#JSP-000547",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000554",
+      "title": "Between consecutive primes, is there an integer whose least prime factor is at least their gap?",
+      "path": "problems/catalog-0501-0600.md#JSP-000554",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000562",
+      "title": "Is the density distribution of the prime factor at a prescribed position among ordered distinct prime factors unimodal?",
+      "path": "problems/catalog-0501-0600.md#JSP-000562",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000568",
+      "title": "Does the density of integers having a divisor in a prescribed residue class exhibit a phase transition as parameters vary?",
+      "path": "problems/catalog-0501-0600.md#JSP-000568",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000572",
+      "title": "Must every sufficiently large uniform set family contain two members intersecting in exactly one element?",
+      "path": "problems/catalog-0501-0600.md#JSP-000572",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000573",
+      "title": "How large can a set family be if a prescribed pairwise intersection size is forbidden?",
+      "path": "problems/catalog-0501-0600.md#JSP-000573",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000575",
+      "title": "Is every planar unit-distance graph of sufficiently large girth three-colorable?",
+      "path": "problems/catalog-0501-0600.md#JSP-000575",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000584",
+      "title": "Must every regular graph of the specified degree contain a three-regular subgraph?",
+      "path": "problems/catalog-0501-0600.md#JSP-000584",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000585",
+      "title": "How does a graph's chromatic number relate to the order of its largest complete-graph subdivision?",
+      "path": "problems/catalog-0501-0600.md#JSP-000585",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000586",
+      "title": "What average degree forces a subdivision of a complete graph of prescribed order?",
+      "path": "problems/catalog-0501-0600.md#JSP-000586",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000588",
+      "title": "How fast do the two-color size Ramsey numbers of prescribed paths and cycles grow?",
+      "path": "problems/catalog-0501-0600.md#JSP-000588",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000589",
+      "title": "How long an interval forces a three-term arithmetic progression in one color or a prescribed longer progression in the other?",
+      "path": "problems/catalog-0501-0600.md#JSP-000589",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000590",
+      "title": "For sufficiently large order satisfying the necessary divisibility conditions, do designs exist in which each prescribed-size point subset lies in exactly one fixed-size block?",
+      "path": "problems/catalog-0501-0600.md#JSP-000590",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000598",
+      "title": "Can two distinct central binomial coefficients have exactly the same prime divisors?",
+      "path": "problems/catalog-0501-0600.md#JSP-000598",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000600",
+      "title": "Which prescribed block-size sequences admit a pairwise balanced design in which every pair occurs exactly once?",
+      "path": "problems/catalog-0501-0600.md#JSP-000600",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000601",
+      "title": "How many distinct line-multiplicity counting sequences can planar point sets determine?",
+      "path": "problems/catalog-0601-0700.md#JSP-000601",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000603",
+      "title": "When can a planar point set receive positive weights so that every line containing at least two points has the same total weight?",
+      "path": "problems/catalog-0601-0700.md#JSP-000603",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000605",
+      "title": "Must every graph of uncountable chromatic number have an edge lying on cycles of every sufficiently large length?",
+      "path": "problems/catalog-0601-0700.md#JSP-000605",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000612",
+      "title": "How many edges must be deleted from a chromatic-critical graph to make it bipartite?",
+      "path": "problems/catalog-0601-0700.md#JSP-000612",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000613",
+      "title": "How large is the second-largest component of a random graph in the critical transition window?",
+      "path": "problems/catalog-0601-0700.md#JSP-000613",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000614",
+      "title": "What is the edge threshold for Hamilton cycles in a random graph?",
+      "path": "problems/catalog-0601-0700.md#JSP-000614",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000615",
+      "title": "What is the density threshold for a perfect matching in a random three-uniform hypergraph?",
+      "path": "problems/catalog-0601-0700.md#JSP-000615",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000616",
+      "title": "Counting sum-free subsets of integer intervals",
+      "path": "problems/catalog-0601-0700.md#JSP-000616",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000619",
+      "title": "How many distinct cycle lengths are forced by large minimum degree and large girth?",
+      "path": "problems/catalog-0601-0700.md#JSP-000619",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000620",
+      "title": "In a finite four-dimensional point set, how many other points can be at the same distance from one point?",
+      "path": "problems/catalog-0601-0700.md#JSP-000620",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000622",
+      "title": "For a prescribed small graph order, what is the worst-case minimum number of clique or independent-set parts in a vertex partition?",
+      "path": "problems/catalog-0601-0700.md#JSP-000622",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000623",
+      "title": "How does the minimum number of clique or independent-set parts for graphs on a surface grow with the surface's complexity?",
+      "path": "problems/catalog-0601-0700.md#JSP-000623",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000625",
+      "title": "Can cumulative two-term additive representation counts grow linearly with bounded error?",
+      "path": "problems/catalog-0601-0700.md#JSP-000625",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000626",
+      "title": "Can cumulative three-term additive representation counts grow linearly with bounded error?",
+      "path": "problems/catalog-0601-0700.md#JSP-000626",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000628",
+      "title": "How many edges can a graph have if no vertex of a cycle is incident to several specified chords?",
+      "path": "problems/catalog-0601-0700.md#JSP-000628",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000632",
+      "title": "How large a subset of an arbitrary finite integer set can have every subset sum avoid a prescribed target?",
+      "path": "problems/catalog-0601-0700.md#JSP-000632",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000633",
+      "title": "If two-term representation counts are bounded, how large a Sidon subset is guaranteed?",
+      "path": "problems/catalog-0601-0700.md#JSP-000633",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000637",
+      "title": "How many edges can the containment graph of a set family have?",
+      "path": "problems/catalog-0601-0700.md#JSP-000637",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000640",
+      "title": "What size of a multicolored uniform hypergraph forces a prescribed number of disjoint edges of one color?",
+      "path": "problems/catalog-0601-0700.md#JSP-000640",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000641",
+      "title": "How long an interval forces a prescribed-length monochromatic increasing sequence with nonincreasing gaps under every two-coloring? Is the predicted exact quadratic threshold correct?",
+      "path": "problems/catalog-0601-0700.md#JSP-000641",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000643",
+      "title": "Among pairwise coprime integer sets with bounded reciprocal sum, which have multiples covering the largest proportion of integers?",
+      "path": "problems/catalog-0601-0700.md#JSP-000643",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000644",
+      "title": "If an integer set's reciprocal sum is bounded, what proportion of integers must avoid divisibility by every set element?",
+      "path": "problems/catalog-0601-0700.md#JSP-000644",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000653",
+      "title": "How large can a subset of an integer interval be if all subset products are distinct?",
+      "path": "problems/catalog-0601-0700.md#JSP-000653",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000655",
+      "title": "How many colors are needed for an acyclic coloring of a bounded-maximum-degree graph, with every two color classes inducing a forest?",
+      "path": "problems/catalog-0601-0700.md#JSP-000655",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000656",
+      "title": "Is the list chromatic number of a random graph sublinear in its number of vertices?",
+      "path": "problems/catalog-0601-0700.md#JSP-000656",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000657",
+      "title": "If all high-degree vertices are pairwise nonadjacent, is the graph's Ramsey number linear in its size?",
+      "path": "problems/catalog-0601-0700.md#JSP-000657",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000658",
+      "title": "Does a graph with small independence number contain a small but dense subgraph?",
+      "path": "problems/catalog-0601-0700.md#JSP-000658",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000660",
+      "title": "Does every dense graph contain a sufficiently dense subgraph whose vertex degrees are comparable?",
+      "path": "problems/catalog-0601-0700.md#JSP-000660",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000661",
+      "title": "If every local part has a large independent set, how large an independent set must the whole graph have?",
+      "path": "problems/catalog-0601-0700.md#JSP-000661",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000663",
+      "title": "Can an integer set of square-root-scale size be covered by the two-term sumset of a smaller set?",
+      "path": "problems/catalog-0601-0700.md#JSP-000663",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000664",
+      "title": "How many complete bipartite graphs are typically needed to partition a random graph's edges?",
+      "path": "problems/catalog-0601-0700.md#JSP-000664",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000665",
+      "title": "When sums and products are taken only along edges of a dense graph on integers, how large must one of the resulting value sets be?",
+      "path": "problems/catalog-0601-0700.md#JSP-000665",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000671",
+      "title": "Does slightly exceeding the specified edge threshold force a small subgraph of high minimum degree?",
+      "path": "problems/catalog-0601-0700.md#JSP-000671",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000672",
+      "title": "Do sufficiently large critical graphs satisfying the specified local minimum-degree restrictions contain every fixed cycle length?",
+      "path": "problems/catalog-0601-0700.md#JSP-000672",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000673",
+      "title": "Must a dense graph of odd order have two equal-degree vertices joined by a three-edge path?",
+      "path": "problems/catalog-0601-0700.md#JSP-000673",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000678",
+      "title": "Does the set of values of an integer plus its totient have positive density?",
+      "path": "problems/catalog-0601-0700.md#JSP-000678",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000679",
+      "title": "Which positive real numbers can be approximated arbitrarily closely by ratios of integers having equal divisor sums?",
+      "path": "problems/catalog-0601-0700.md#JSP-000679",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000688",
+      "title": "How many edges are needed for a uniform hypergraph to attain a prescribed chromatic number?",
+      "path": "problems/catalog-0601-0700.md#JSP-000688",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000689",
+      "title": "Must a uniform hypergraph requiring three colors have maximum degree exponential in its edge size?",
+      "path": "problems/catalog-0601-0700.md#JSP-000689",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000690",
+      "title": "Is there a three-uniform, three-chromatic-critical hypergraph with minimum degree at least seven?",
+      "path": "problems/catalog-0601-0700.md#JSP-000690",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000698",
+      "title": "Is every graph formed by vertex-disjoint triangles and a spanning Hamilton cycle three-colorable?",
+      "path": "problems/catalog-0601-0700.md#JSP-000698",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000699",
+      "title": "Under every two-coloring of the squares, is every sufficiently large integer a sum of distinct squares of one color?",
+      "path": "problems/catalog-0601-0700.md#JSP-000699",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000704",
+      "title": "Can a density-one set of integers be represented as a power of two plus a number with few prime factors?",
+      "path": "problems/catalog-0701-0800.md#JSP-000704",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000711",
+      "title": "How large can an integer set's reciprocal sum be when the specified pairs linked by large prime factors and divisibility are forbidden?",
+      "path": "problems/catalog-0701-0800.md#JSP-000711",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000714",
+      "title": "How many Sidon subsets do the first several positive integers have?",
+      "path": "problems/catalog-0701-0800.md#JSP-000714",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000715",
+      "title": "How do extremal sizes compare between integer sets with bounded sum multiplicities and those with bounded difference multiplicities?",
+      "path": "problems/catalog-0701-0800.md#JSP-000715",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000720",
+      "title": "Does the union of two disjoint order-two additive bases contain a minimal order-two basis?",
+      "path": "problems/catalog-0701-0800.md#JSP-000720",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000725",
+      "title": "How large can an integer-interval subset be if subset sums using different numbers of terms are never equal?",
+      "path": "problems/catalog-0701-0800.md#JSP-000725",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000728",
+      "title": "How many inclusion-maximal sum-free subsets does a finite integer interval have?",
+      "path": "problems/catalog-0701-0800.md#JSP-000728",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000731",
+      "title": "Must the distinct-element sumset of an additive basis have bounded gaps?",
+      "path": "problems/catalog-0701-0800.md#JSP-000731",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000733",
+      "title": "How large can an integer-interval subset be if its distinct subset sums never divide one another?",
+      "path": "problems/catalog-0701-0800.md#JSP-000733",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000745",
+      "title": "Can the integers be finitely colored so that no same-colored pair has difference in a prescribed sparse set?",
+      "path": "problems/catalog-0701-0800.md#JSP-000745",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000746",
+      "title": "Must every triangle-free graph on the integers have three independent vertices, one equal to the sum of the other two?",
+      "path": "problems/catalog-0701-0800.md#JSP-000746",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000747",
+      "title": "Under the stated restrictions, how many uniquely represented products can two integer sets have?",
+      "path": "problems/catalog-0701-0800.md#JSP-000747",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000748",
+      "title": "Just above the giant-component threshold, how long a path proportional to the vertex count does a random graph contain?",
+      "path": "problems/catalog-0701-0800.md#JSP-000748",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000751",
+      "title": "Are there gaps in the possible block counts of pairwise balanced designs with parameters close to those of finite projective planes?",
+      "path": "problems/catalog-0701-0800.md#JSP-000751",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000753",
+      "title": "If every translation difference of a function is measurable, does the function decompose into parts with the specified regularity?",
+      "path": "problems/catalog-0701-0800.md#JSP-000753",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000754",
+      "title": "Can a space and its Cartesian square have the same nontrivial finite dimension?",
+      "path": "problems/catalog-0701-0800.md#JSP-000754",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000755",
+      "title": "Must a connected Euclidean set contain connected subsets of several distinct homeomorphism types?",
+      "path": "problems/catalog-0701-0800.md#JSP-000755",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000759",
+      "title": "What edge count forces many internally disjoint paths between two vertices?",
+      "path": "problems/catalog-0701-0800.md#JSP-000759",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000760",
+      "title": "Can a linear edge bound force a cycle and an external vertex adjacent to three of its vertices?",
+      "path": "problems/catalog-0701-0800.md#JSP-000760",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000764",
+      "title": "What is the largest chromatic number at a prescribed order when a fixed clique is forbidden?",
+      "path": "problems/catalog-0701-0800.md#JSP-000764",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000765",
+      "title": "What is the largest odd girth of a graph with prescribed order and chromatic number?",
+      "path": "problems/catalog-0701-0800.md#JSP-000765",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000766",
+      "title": "If every finite local subgraph has an independent set of nearly half its vertices, is the whole graph's chromatic number bounded?",
+      "path": "problems/catalog-0701-0800.md#JSP-000766",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000767",
+      "title": "Can a graph exclude a larger clique while forcing a smaller monochromatic clique under every prescribed multicolor edge coloring?",
+      "path": "problems/catalog-0701-0800.md#JSP-000767",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000768",
+      "title": "If a graph admits an edge coloring with no monochromatic triangle, must it have a sufficiently large independent set?",
+      "path": "problems/catalog-0701-0800.md#JSP-000768",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000769",
+      "title": "How many edges can a graph have while excluding the specified complete-graph subdivision with a common center?",
+      "path": "problems/catalog-0701-0800.md#JSP-000769",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000782",
+      "title": "Is every sufficiently large integer a sum of three powerful numbers, each divisible by the square of every prime dividing it?",
+      "path": "problems/catalog-0701-0800.md#JSP-000782",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000787",
+      "title": "Are there infinitely many consecutive positive integers with equal divisor counts?",
+      "path": "problems/catalog-0701-0800.md#JSP-000787",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000788",
+      "title": "Under a finite coloring of the positive integers, can the specified sparse sequence be found whose subset sums omit at least one color?",
+      "path": "problems/catalog-0701-0800.md#JSP-000788",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000797",
+      "title": "What uniform upper bound holds for the product of the multiplicities of the shortest and longest distances in a finite point set?",
+      "path": "problems/catalog-0701-0800.md#JSP-000797",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000799",
+      "title": "If a point set determines many ordinary lines, must it have a large subset whose every joining line is ordinary in the original set?",
+      "path": "problems/catalog-0701-0800.md#JSP-000799",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000810",
+      "title": "Does the ratio of the largest prime factor of a power of two minus one to its exponent grow as predicted?",
+      "path": "problems/catalog-0801-0900.md#JSP-000810",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000813",
+      "title": "What is the average least prescribed power nonresidue over prime moduli?",
+      "path": "problems/catalog-0801-0900.md#JSP-000813",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000814",
+      "title": "For quadratic-character partial sums, what is the average initial range needed to reach the specified relative balance, over primes?",
+      "path": "problems/catalog-0801-0900.md#JSP-000814",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000817",
+      "title": "Can integers be two-colored so that every monochromatic arithmetic progression has length bounded by a very slowly growing function of its starting point?",
+      "path": "problems/catalog-0801-0900.md#JSP-000817",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000819",
+      "title": "What lower bounds hold for off-diagonal clique Ramsey numbers with one target fixed and the other growing?",
+      "path": "problems/catalog-0801-0900.md#JSP-000819",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000821",
+      "title": "As the number of spherical points grows, must discrepancies between cap counts and area predictions be unbounded?",
+      "path": "problems/catalog-0801-0900.md#JSP-000821",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000822",
+      "title": "Can an infinite discrete planar set have uniformly bounded differences between disk point counts and disk areas? What is the minimum discrepancy scale?",
+      "path": "problems/catalog-0801-0900.md#JSP-000822",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000824",
+      "title": "Do spherical configurations maximizing the product of pairwise distances become uniformly distributed as their size grows?",
+      "path": "problems/catalog-0801-0900.md#JSP-000824",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000825",
+      "title": "For typical irrational scale factors, what is the discrepancy of fractional parts of a scaled integer sequence?",
+      "path": "problems/catalog-0801-0900.md#JSP-000825",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000827",
+      "title": "Under repeated irrational rotation of a circle, does the visiting frequency of a measurable set equal its measure?",
+      "path": "problems/catalog-0801-0900.md#JSP-000827",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000831",
+      "title": "What necessary and sufficient conditions on interval endpoints give bounded counting discrepancy for an irrational rotation?",
+      "path": "problems/catalog-0801-0900.md#JSP-000831",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000832",
+      "title": "Duffin-Schaeffer conjecture",
+      "path": "problems/catalog-0801-0900.md#JSP-000832",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000833",
+      "title": "What limiting measure is covered by approximation intervals using rational numbers with denominators in the specified range?",
+      "path": "problems/catalog-0801-0900.md#JSP-000833",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000837",
+      "title": "How far can local Farey-sequence segments extend when numerators and denominators vary in the same direction?",
+      "path": "problems/catalog-0801-0900.md#JSP-000837",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000838",
+      "title": "Can every graph without triangles or four-cycles be acyclically oriented so that reversing any single edge still leaves it acyclic?",
+      "path": "problems/catalog-0801-0900.md#JSP-000838",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000839",
+      "title": "Just above the maximum bipartite edge count, how many edge-disjoint triangles are guaranteed?",
+      "path": "problems/catalog-0801-0900.md#JSP-000839",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000840",
+      "title": "How many triangles must a graph have once its edge count exceeds the maximum bipartite edge count?",
+      "path": "problems/catalog-0801-0900.md#JSP-000840",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000842",
+      "title": "What graph density forces a cycle containing nearly all vertices?",
+      "path": "problems/catalog-0801-0900.md#JSP-000842",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000845",
+      "title": "How few vertices need remain uncovered by disjoint monochromatic cliques in an edge-colored complete graph?",
+      "path": "problems/catalog-0801-0900.md#JSP-000845",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000848",
+      "title": "Does superlinear edge count force a nonplanar subgraph of uniformly bounded order?",
+      "path": "problems/catalog-0801-0900.md#JSP-000848",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000849",
+      "title": "Must every dense graph contain a nontrivial maximal planar subgraph?",
+      "path": "problems/catalog-0801-0900.md#JSP-000849",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000851",
+      "title": "How many edges can a graph have while excluding a complete graph with every edge subdivided once?",
+      "path": "problems/catalog-0801-0900.md#JSP-000851",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000852",
+      "title": "How large an independent set is guaranteed in a three-uniform hypergraph whose edges intersect pairwise in at most one vertex?",
+      "path": "problems/catalog-0801-0900.md#JSP-000852",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000853",
+      "title": "How large a free set is guaranteed for the specified mapping from element pairs to sets?",
+      "path": "problems/catalog-0801-0900.md#JSP-000853",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000854",
+      "title": "How many vertex subsets meet every hyperedge while containing none of them in full?",
+      "path": "problems/catalog-0801-0900.md#JSP-000854",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000857",
+      "title": "Must a graph with neither large cliques nor large independent sets contain a nontrivial regular induced subgraph?",
+      "path": "problems/catalog-0801-0900.md#JSP-000857",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000865",
+      "title": "How does the transfinite diameter of the zero set bound the number of components of a polynomial sublevel set?",
+      "path": "problems/catalog-0801-0900.md#JSP-000865",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000868",
+      "title": "If a polynomial's unit-modulus sublevel set is connected, must it lie in a disk of radius two?",
+      "path": "problems/catalog-0801-0900.md#JSP-000868",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000870",
+      "title": "Is the series of reciprocals of powers of two minus three irrational?",
+      "path": "problems/catalog-0801-0900.md#JSP-000870",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000878",
+      "title": "Are there only finitely many factorials plus one supported on the specified next two primes?",
+      "path": "problems/catalog-0801-0900.md#JSP-000878",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000884",
+      "title": "How does an integer's totient compare with the totient of the integer minus its totient?",
+      "path": "problems/catalog-0801-0900.md#JSP-000884",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000888",
+      "title": "How many lines can contain at least a prescribed number of points of a finite planar set?",
+      "path": "problems/catalog-0801-0900.md#JSP-000888",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000895",
+      "title": "How many edges can a three-uniform hypergraph have while excluding configurations with a prescribed vertex count and two fewer edges?",
+      "path": "problems/catalog-0801-0900.md#JSP-000895",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000896",
+      "title": "What minimum degree forces a transversal clique in a balanced multipartite graph?",
+      "path": "problems/catalog-0801-0900.md#JSP-000896",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000897",
+      "title": "At the corresponding Turán edge threshold, must some vertex neighborhood contain sufficiently many edges?",
+      "path": "problems/catalog-0801-0900.md#JSP-000897",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000898",
+      "title": "What is the precise asymptotic count of integers representable as sums of two powerful numbers?",
+      "path": "problems/catalog-0801-0900.md#JSP-000898",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000900",
+      "title": "What is the minimum distinct-distance count for a prescribed number of points in fixed higher dimension?",
+      "path": "problems/catalog-0801-0900.md#JSP-000900",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000906",
+      "title": "In fixed dimension, how many points force a prescribed number of distinct distances?",
+      "path": "problems/catalog-0901-1000.md#JSP-000906",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000907",
+      "title": "Must every four-chromatic graph contain an odd cycle with the prescribed number of chords?",
+      "path": "problems/catalog-0901-1000.md#JSP-000907",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000912",
+      "title": "What bounds hold for the sum of prescribed powers of consecutive divisor ratios minus one?",
+      "path": "problems/catalog-0901-1000.md#JSP-000912",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000916",
+      "title": "How many edge colors can be used while avoiding the specified rainbow cycle or path?",
+      "path": "problems/catalog-0901-1000.md#JSP-000916",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000925",
+      "title": "For a real-rooted polynomial with equally spaced zeros, do gaps between consecutive derivative zeros satisfy the specified monotonicity?",
+      "path": "problems/catalog-0901-1000.md#JSP-000925",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000926",
+      "title": "How short can a path to infinity be along which a given entire function tends to infinity?",
+      "path": "problems/catalog-0901-1000.md#JSP-000926",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000927",
+      "title": "Under the stated conditions, can a meromorphic function's counts of taking two distinct values have arbitrarily extreme ratios?",
+      "path": "problems/catalog-0901-1000.md#JSP-000927",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000929",
+      "title": "How fast must an entire function grow if the region above a prescribed modulus threshold has finite area?",
+      "path": "problems/catalog-0901-1000.md#JSP-000929",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000930",
+      "title": "How large can a family of entire functions be if the number of possible values at each point is restricted?",
+      "path": "problems/catalog-0901-1000.md#JSP-000930",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000933",
+      "title": "Are the Boolean algebras of integer sets modulo zero natural density and modulo zero logarithmic density isomorphic?",
+      "path": "problems/catalog-0901-1000.md#JSP-000933",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000934",
+      "title": "Can a square and a disk of equal area be partitioned into finitely many pieces and reassembled into each other using the prescribed rigid motions?",
+      "path": "problems/catalog-0901-1000.md#JSP-000934",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000935",
+      "title": "Can Euclidean space be partitioned into countably many sets each having all pairwise distances distinct?",
+      "path": "problems/catalog-0901-1000.md#JSP-000935",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000936",
+      "title": "Which Lagrange interpolation nodes minimize the maximum amplification of input errors?",
+      "path": "problems/catalog-0901-1000.md#JSP-000936",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000937",
+      "title": "Which interpolation nodes maximize the smallest peak error-amplification factor among intervals between consecutive nodes?",
+      "path": "problems/catalog-0901-1000.md#JSP-000937",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000945",
+      "title": "Is there an integer whose differences from twice every permitted smaller square are all prime?",
+      "path": "problems/catalog-0901-1000.md#JSP-000945",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000952",
+      "title": "For a fixed irrational number, do integers whose squared multiples of it lie close to integers form an asymptotic basis of order two?",
+      "path": "problems/catalog-0901-1000.md#JSP-000952",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000954",
+      "title": "What is the density of integers coprime to the floor of a fixed nonintegral power of themselves?",
+      "path": "problems/catalog-0901-1000.md#JSP-000954",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000958",
+      "title": "For every choice of interpolation nodes, must error amplification on each fixed subinterval grow at least logarithmically?",
+      "path": "problems/catalog-0901-1000.md#JSP-000958",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000966",
+      "title": "Which element order is shared by the most permutations in a symmetric group?",
+      "path": "problems/catalog-0901-1000.md#JSP-000966",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000969",
+      "title": "How fast does the radius of a disk whose lattice points have all been visited by a planar random walk grow with the number of steps?",
+      "path": "problems/catalog-0901-1000.md#JSP-000969",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000970",
+      "title": "What is the probability that multiple sites tie for most visited in a planar random walk?",
+      "path": "problems/catalog-0901-1000.md#JSP-000970",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000971",
+      "title": "How many distinct sites have ever been most visited during a planar random walk?",
+      "path": "problems/catalog-0901-1000.md#JSP-000971",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000984",
+      "title": "How many random elements of a finite abelian group make subset-sum representation counts approximately uniform?",
+      "path": "problems/catalog-0901-1000.md#JSP-000984",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000985",
+      "title": "Do boundedly many sums of modular inverses of a short initial integer interval cover all residues modulo a prime?",
+      "path": "problems/catalog-0901-1000.md#JSP-000985",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000990",
+      "title": "Can long arithmetic progressions in dense integer sets be required to have common difference in another specified set's difference set?",
+      "path": "problems/catalog-0901-1000.md#JSP-000990",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-000992",
+      "title": "Does every finite coloring of the positive integers contain the specified monochromatic progression of primes or a monochromatic progression with prime common difference?",
+      "path": "problems/catalog-0901-1000.md#JSP-000992",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001000",
+      "title": "How fast can the measure of a real set grow if no ratio of distinct elements is an integer?",
+      "path": "problems/catalog-0901-1000.md#JSP-001000",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001003",
+      "title": "Does every two-coloring of the positive integers contain an infinite set with all the specified mixed sum-product structures monochromatic?",
+      "path": "problems/catalog-1001-1022.md#JSP-001003",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001007",
+      "title": "How many integers can simultaneously avoid about half the residue classes modulo each of several primes?",
+      "path": "problems/catalog-1001-1022.md#JSP-001007",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001010",
+      "title": "Choosing one residue class for each permitted modulus, what minimum coverage multiplicity can be achieved throughout the specified integer interval?",
+      "path": "problems/catalog-1001-1022.md#JSP-001010",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001016",
+      "title": "In every partition of the natural numbers into two parts, must one part's finite subset sums have a uniform positive lower logarithmic density?",
+      "path": "problems/catalog-1001-1022.md#JSP-001016",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001018",
+      "title": "Must every sufficiently long integer sequence with bounded gaps have two distinct consecutive blocks with equal sums?",
+      "path": "problems/catalog-1001-1022.md#JSP-001018",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001019",
+      "title": "If corresponding powers of two bases minus one always have identical prime-factor sets, must the bases be equal?",
+      "path": "problems/catalog-1001-1022.md#JSP-001019",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001020",
+      "title": "For a polynomial whose zeros all lie on the unit circle, is there a uniformly bounded-length path in the specified modulus region?",
+      "path": "problems/catalog-1001-1022.md#JSP-001020",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001021",
+      "title": "How large a transitive subtournament must every tournament of prescribed order contain?",
+      "path": "problems/catalog-1001-1022.md#JSP-001021",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001022",
+      "title": "Must every integer set of positive lower logarithmic density contain an infinite divisibility chain, with controlled growth?",
+      "path": "problems/catalog-1001-1022.md#JSP-001022",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001058",
+      "title": "Hilbert's sixteenth problem: uniform bounds for planar limit cycles",
+      "path": "problems/catalog-1001-1022.md#JSP-001058",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001067",
+      "title": "Ionization and generalized ionization conjectures for Coulomb atoms",
+      "path": "problems/catalog-1001-1022.md#JSP-001067",
+      "status": "Solved",
+      "lean": "No"
+    },
+    {
+      "id": "JSP-001070",
+      "title": "Grothendieck homotopy hypothesis",
+      "path": "problems/catalog-1001-1022.md#JSP-001070",
+      "status": "Solved",
+      "lean": "No"
+    }
+  ]
+}

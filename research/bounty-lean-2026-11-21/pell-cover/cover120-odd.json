@@ -1,0 +1,90 @@
+{
+  "status": "LP relaxation reported infeasible; no exact dual certificate reconstructed",
+  "period": 120,
+  "n_parity": 1,
+  "period_prime_gcd": "65467555105469489418600",
+  "factorization": {
+    "2": 3,
+    "3": 2,
+    "5": 2,
+    "7": 1,
+    "11": 1,
+    "19": 1,
+    "29": 1,
+    "31": 2,
+    "41": 1,
+    "59": 1,
+    "269": 1,
+    "601": 1,
+    "2281": 1
+  },
+  "cells": 7200,
+  "variables": 2083,
+  "prime_classes": [
+    {
+      "prime": 3,
+      "residue_classes": 3,
+      "largest_class": 2475
+    },
+    {
+      "prime": 5,
+      "residue_classes": 5,
+      "largest_class": 1600
+    },
+    {
+      "prime": 7,
+      "residue_classes": 7,
+      "largest_class": 1600
+    },
+    {
+      "prime": 11,
+      "residue_classes": 11,
+      "largest_class": 800
+    },
+    {
+      "prime": 19,
+      "residue_classes": 19,
+      "largest_class": 432
+    },
+    {
+      "prime": 29,
+      "residue_classes": 23,
+      "largest_class": 720
+    },
+    {
+      "prime": 31,
+      "residue_classes": 31,
+      "largest_class": 320
+    },
+    {
+      "prime": 41,
+      "residue_classes": 24,
+      "largest_class": 576
+    },
+    {
+      "prime": 59,
+      "residue_classes": 59,
+      "largest_class": 234
+    },
+    {
+      "prime": 269,
+      "residue_classes": 209,
+      "largest_class": 128
+    },
+    {
+      "prime": 601,
+      "residue_classes": 567,
+      "largest_class": 38
+    },
+    {
+      "prime": 2281,
+      "residue_classes": 1125,
+      "largest_class": 26
+    }
+  ],
+  "lp": {
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  },
+  "elapsed_seconds": 2.8786934460003977
+}
