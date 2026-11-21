@@ -1,0 +1,93 @@
+{
+  "status": "bounded exact diagnostic only; auxiliary statement unproved",
+  "input_sha256": "1a08fdb45e0bc27436935ee17423f5f5db4f834a65bb4773e19987c691d3b868",
+  "input_url": "https://raw.githubusercontent.com/networkx/networkx/main/networkx/generators/atlas.dat.gz",
+  "range": "Atlas connected graphs n<=7, simple-core edges<=12; each edge multiplicity1 or uniformly2; all nonadjacent terminal pairs",
+  "counts": {
+    "base_graphs": 748,
+    "bridgeless_graphs_q2": 748,
+    "terminal_pairs_q2": 7564,
+    "bridgeless_graphs_q1": 352,
+    "terminal_pairs_q1": 3234
+  },
+  "failures": [],
+  "equality_count": 250,
+  "equality_example": [
+    {
+      "atlas_index": 6,
+      "n": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "multiplicity": 2,
+      "terminals": [
+        1,
+        2
+      ],
+      "A": 4,
+      "A_minus_Aquot": 2,
+      "C": 4,
+      "t": 4,
+      "R": "1",
+      "lhs": "1/2",
+      "exponent": "-1"
+    }
+  ],
+  "least_strict_log2_gap": [
+    0.4755295625672029,
+    {
+      "atlas_index": 348,
+      "n": 7,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "multiplicity": 2,
+      "terminals": [
+        0,
+        1
+      ],
+      "A": 124,
+      "A_minus_Aquot": 26,
+      "C": 2788,
+      "t": 384,
+      "R": "5/4",
+      "lhs": "9061/18432",
+      "exponent": "-3/2"
+    }
+  ],
+  "compressed_source_sha256": "73fc416df0164923607751cb759f4ae81deb5f6550bf25be59c86de3b747e41d"
+}
