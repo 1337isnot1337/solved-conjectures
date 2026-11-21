@@ -1,5 +1,17 @@
 # History
 
+## 2026-11-21 — Wright log-concavity conjecture disproved in Lean
+
+Formalized the actual infinite Wright series and a continuous counterexample
+family with beta zero and alpha tending to one from below. Gamma reflection,
+a uniform summable coefficient bound, and dominated convergence give a strict
+three-point midpoint violation. This refutes the original universal conjecture;
+the written positive-beta refinements remain unformalized. Strict source
+compilation, an audit of all 25 owned declarations including eight private
+declarations, and independent pinned-kernel replay passed. Registered the module
+and four required theorem endpoints. The combined repository gate remains
+separate and pending.
+
 ## 2026-11-21 — Horňák–Woźniak large-part reduction
 
 Proved the complete tripod reduction for partitions whose parts all exceed a positive shortest arm, by graph-level balancing and well-founded induction. Also proved refinement when discarded central pieces fit the otherwise unused shortest arm. Strict compilation, an 878-theorem full-chain axiom audit and isolated kernel replay passed; the small-part and four-arm reductions, existence constructions and combined gate remain.

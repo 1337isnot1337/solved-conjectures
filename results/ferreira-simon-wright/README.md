@@ -4,6 +4,35 @@
 
 Source: R. A. C. Ferreira and T. Simon, *On the log-concavity of the Wright function*, Constructive Approximation **60** (2024), 309–338; [DOI](https://doi.org/10.1007/s00365-023-09666-w), [primary author preprint](https://arxiv.org/pdf/2212.07974). Tracking and review: [issue 100](https://github.com/1337isnot1337/solved-conjectures/issues/100).
 
+## Lean verification
+
+[`Conjectures.FerreiraSimonWright`](../../lean/Conjectures/FerreiraSimonWright.lean)
+proves the original conjecture false. It defines the Wright function by the
+source's infinite reciprocal-Gamma series and uses the source normalization
+for the density. For every sufficiently small positive `t`, the actual density
+with `alpha = 1 - t` and `beta = 0` violates log concavity at the three points
+`1/4`, `1/2`, and `3/4`. The source sets `alpha_star(0) = 1`, so these parameters
+satisfy the conjectured threshold.
+
+The proof establishes the infinite-series limit
+`wright (-(1-t)) 0 (-x) / t → x/(1-x)^2` for every `0 ≤ x < 1`.
+Its values at the three selected points are `4/9`, `2`, and `12`; hence the
+square of the middle value is strictly smaller than the product of the
+endpoint values. Gamma reflection and a uniform coefficient bound justify
+the limit by dominated convergence. No series truncation or numerical
+counterexample is a premise.
+
+Strict compilation with warnings treated as errors, the complete owned-module
+axiom audit, and independent replay with the pinned stock Lean kernel passed.
+The audit includes all 25 declarations, eight of them private, and permits
+only `propext`, `Classical.choice`, and `Quot.sound`.
+[Validation receipt](../../docs/verification/lean-wright-20261121/wright-receipt.json).
+The combined repository gate remains pending.
+
+The Lean result is a complete disproof of the universal source conjecture.
+The additional positive-beta families, general slope formulas, and derivative
+limits in the written proof below are not claimed to be formalized.
+
 ## Counterexample intervals
 
 For every sufficiently small $t>0$, each of the following parameter choices satisfies $\alpha\lt \alpha_*(\beta)$, while its normalized density is not log concave:

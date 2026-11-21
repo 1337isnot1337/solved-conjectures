@@ -975,3 +975,4 @@ import Conjectures.HornakLargeReduction
 import Conjectures.HornakRange
 import Conjectures.HornakLargeSource
 import Conjectures.HornakAdmissibleRange
+import Conjectures.FerreiraSimonWright

@@ -147,6 +147,14 @@ its two parameter-polynomial specializations, and the displayed derivative
 values. The [analytic proof](../results/ferreira-simon-wright/PROOF.md) supplies
 the uniform convergence and whole intervals of counterexamples.
 
+The [Wright Lean module](../lean/Conjectures/FerreiraSimonWright.lean) now proves
+the original universal conjecture false through its continuous beta-zero
+family, directly from the infinite series. Strict compilation, the full
+owned-declaration axiom audit, and stock-kernel replay passed; the
+[receipt](verification/lean-wright-20261121/wright-receipt.json) records the
+exact source, objects, compiler, audit, and replay. The written positive-beta
+refinements are not formalized, and the combined repository gate is pending.
+
 The [gamma-quotient verifier](../results/kvz-gamma-quotient/verify.py)
 uses exact rational arithmetic for 115 checks of half-integer determinant
 signs, integer rank cutoffs, and gamma-moment normalization. The complete

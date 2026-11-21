@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FerreiraSimonWright.scaled_wright_limit,
+    `FerreiraSimonWright.boundary_counterexamples,
+    `FerreiraSimonWright.exists_boundary_counterexample,
+    `FerreiraSimonWright.boundary_conjecture_false,
     `Hornak.refine_all_parts_with_short_arm,
     `Hornak.tripod_balance_noncentral,
     `Hornak.tripod_balance_largest,

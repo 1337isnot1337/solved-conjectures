@@ -62,7 +62,7 @@ proofs are documented separately in the catalogue and result package.
 | Perron root of permanental compounds | Not formalized | Written FPRAS proof for every nonnegative rational matrix and every compound degree, with deterministic zero detection. Exact finite checks supplement the argument. This is the randomized approximation formulation of Minc Problem 18; exact polynomial-time eigenvalue computation and the characteristic-polynomial problem are outside its scope. |
 | Oravcová–Soták conjecture for five to eight distances | Not formalized | Written proof with machine-checkable certificates, conditional on the repository's five- to eight-speed spectrum classifications. The verifier checks the 65 table sets, 62 periodic colourings, three exceptional sets, 37 loops across four one-parameter families, and the two-parameter family; a separate SAT scan checks bounded ranges without those classifications. No proof-assistant formalization is claimed. |
 | Johnson–Kaya–Matzke conjecture on Babai spectra of paths | Complete | Lean proves the exact spectrum interval for every `n ≥ 2` and `1 ≤ k < n`, using the actual `SimpleGraph.chromaticNumber` of the distance graph on `Fin n`. It proves the independence and coloring bounds, greedy coloring, and modular-coloring/clique realization of every allowed value. Strict compilation, an all-owned audit of 43 declarations/39 theorem declarations and all 12 required endpoints, and stock-kernel replay passed. No published input remains a hypothesis. [Local receipt](verification/lean-named-20261121/babai-receipt.json); the combined repository gate and hosted validation remain separate. |
-| Ferreira–Simon's Wright log-concavity conjecture | Not formalized | Written analytic disproof on continuous boundary and interior parameter families; exact curvature checks are supplementary. |
+| Ferreira–Simon's Wright log-concavity conjecture | Full original-conjecture disproof | The actual infinite Wright series has a continuous beta-zero counterexample family, with admissible alpha approaching one. Strict compilation, the complete 25-declaration owned audit including eight private declarations, and independent stock-kernel replay passed. The positive-beta refinements in the written proof and the combined repository gate remain separate and pending. |
 | Karp–Vishnyakova–Zhang's gamma-quotient conjecture | Not formalized | Written all-order sign-regularity proof with exact signature and integer rank cutoff; finite determinant checks are supplementary. |
 | Alexandersson's Fuss–Catalan conjecture | Complete | Lean proves the literal Fuss–Dyck enumeration and closed formula, real-rootedness, the exact simple-negative-root count, and scalar reduction to the ordinary case. It proves that any ordinary-case relation between root multisets transfers; the cited ordinary-case interlacing theorems themselves are not re-proved. Strict standalone compilation, all-owned axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending. |
 | Sagan–Swanson conjecture | Not formalized | Written proof of all four stated asymptotic normality assertions using actual means and variances; finite model checks are supplementary. |
@@ -3074,5 +3074,28 @@ The complete 20-module hosted gate passed at `a8577e5da31b851ce64333aa921b39c662
 
 [Preserved receipt](verification/rational-lattice-quotient-exact-44606981694/receipt.json).
 
+## Complete Wright log-concavity disproof
 
+`FerreiraSimonWright.wright` is the literal infinite reciprocal-Gamma series,
+and `density` uses the source factor `Gamma(alpha + beta)`.
+`scaled_wright_limit` proves the limit `x/(1-x)^2` for every `0 ≤ x < 1` as
+`alpha = 1-t` tends to one from below with `beta = 0`. Gamma reflection and
+convexity bound the absolute value of the nth scaled coefficient by n;
+Tannery's dominated-convergence theorem handles the entire series.
 
+`boundary_counterexamples` gives a strict midpoint violation for every
+sufficiently small positive t, and `boundary_conjecture_false` refutes the
+universal beta-zero clause. The paper sets `alpha_star(0)=1`, so these are
+admissible counterexamples to its original conjecture. The three positive
+sample values used in the limiting inequality are `4/9`, `2`, and `12`.
+The proof checks their eventual positivity and transfers the strict
+inequality through the positive density-normalization factor.
+
+Strict source compilation, an audit of all 25 declarations (22 theorems,
+eight private declarations), and the unchanged pinned stock-kernel replay
+of the exact one-module project closure passed. The audit admits only
+`propext`, `Classical.choice`, and `Quot.sound`. The
+[receipt](verification/lean-wright-20261121/wright-receipt.json) records the
+exact source and object hashes, audit source and records, and replay log.
+The additional positive-beta families and derivative refinements in the
+written proof are not formalized. The combined repository gate is pending.
