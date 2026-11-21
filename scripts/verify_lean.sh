@@ -126,6 +126,7 @@ modules=(
   Conjectures.JohnsonPfaffianSmall
   Conjectures.JohnsonPfaffianRotation
   Conjectures.JohnsonPfaffianSwap
+  Conjectures.JohnsonPfaffianParity
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany

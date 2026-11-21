@@ -17,6 +17,8 @@ run_cmd do
     `Hornak.exceptional_packing_weak,
     `Hornak.exceptional_partition_weak,
     `Hornak.exceptional_partition_with_reserved_arm_weak,
+    `JohnsonPfaffian.swap_matching_crossing_parity,
+    `JohnsonPfaffian.twin_rows_matching_cancellation,
     `JohnsonPfaffian.swapMatching_involutive,
     `JohnsonPfaffian.matching_edges_disjoint,
     `JohnsonPfaffian.swapMatching_no_fixed,
