@@ -363,3 +363,25 @@ maximizers there when $d$ does not divide the order. The extremal value
 on the residual orders is unresolved. The argument was independently
 reviewed. The [checker](extremal-graphs/verify_maximum_core.py) replays
 the matching counts and conditional exposure bounds.
+
+
+## Two-by-two core structural continuation (20 November 2026)
+
+The [exact two-by-two Hwang-core theorem](inequalities/hwang_two_by_two_core.md)
+treats every nonzero doubly substochastic core whose bipartite support
+components use at most two rows and two columns, including fully occupied
+weighted four-cycles, not only the earlier star components. Each
+two-by-two core satisfies F_B'(t) >= t e^(t sum B)||B||_F^2/8
+for 0<t<=1, and F_B''(t) >= e^(t sum B)||B||_F^2/4
+for 0<=t<=1/2. Products retain strict radial growth and half-segment
+curvature, and the existing C^2 transfer proves that each fixed core has
+genuine doubly stochastic completions with strictly convex and
+strictly increasing finite permanent paths on the first half for all
+sufficiently large tail sizes. The [exact Bernstein certificate](inequalities/verify_hwang_two_by_two_core.py)
+checks 1,440 and 1,575 integer coefficient inequalities and 80
+independent rational matching and derivative identities. Source priority
+is bounded; independent adversarial review is requested in [issue 153](https://github.com/1337isnot1337/solved-conjectures/issues/153).
+The remaining structural gap begins with connected support spanning at
+least three rows and three columns. This proves no complete P8 boundary
+classification, no unrestricted C34 chord inequality and no new full
+numbered-list resolution.
