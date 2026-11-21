@@ -18,3 +18,7 @@ python /path/to/counterexample.py 7 48-*.dat 72-*.dat
 The initial sweep found no counterexample in all 38 nonnilpotent group types of order 48 or all 40 of order 72. These groups had 38 and 190 admissible group-and-signature pairs respectively. The SAT solver's negative verdicts were not independently proof-logged. As a positive control, the same encoding recovered Menon's $(6,6,6,10,15)$ packing in $A_5$, and it rejected the seven-coset extension $(6,6,6,6,6,10,15)$. Independent enumeration by combinations with replacement agreed on all candidate signatures from divisors of orders 48, 72, 96, 108, 120 and 144.
 
 [GAP exporter](counterexample.g) · [SAT search and witness checker](counterexample.py)
+
+The sweep also finished all 180 nonnilpotent group types of order 96 and all 35 of order 108, with 360 and 105 group-and-signature pairs, respectively. Neither search found a counterexample.
+
+[Independent group-arithmetic replay](replay.g) reconstructs a subgroup from each proposed right coset, verifies equality and index, then inverts each coset and recomputes all intersections and gcds. Run `ReplayPacking(order, id, entries)` in GAP, where each entry is a two-element list from the Python checker's `right_cosets` field. The positive control returned five disjoint cosets and maximum gcd six. Changing one recorded index from six to seven caused replay to reject the certificate.
