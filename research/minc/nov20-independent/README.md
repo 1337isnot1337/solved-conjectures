@@ -36,3 +36,20 @@ The current user instruction excludes Lean. Results will be published on main wi
 - C36/P7: fixed-width paired cores, finitely many P-recursive families, and fixed one-vertex stretching are already excluded as all-order constructions. Any new construction needs genuinely growing structure.
 
 Primary statement links and detailed source audits will accompany each substantive checkpoint. No priority claim is made for this planning document.
+
+## Reviewed checkpoints
+
+All entries below remain partial. The full-resolution count is zero.
+
+| Listed target | Result and exact remaining gap |
+| --- | --- |
+| C24, Integrality of the minimum permanent | [Every integer minimizer has an explicit collision bound](root/integer_minimizer_collision_bound.md), uniformly $`O(k^2\log n)`$. A nearby binary feasible matrix exists in the stated sparse range, but the repair has no permanent comparison. [Independent review](compound/c24_defect_review.md). Published in commit `6d5caae`. |
+| P5, Vanishing Hadamard permanents | [The first three partition sectors are universal](sign/hadamard_partition_sectors.md), and the fourth is determined by four-column correlations with two fixed moments. Aggregate cancellation over all sectors remains unproved. [Integration review](root/compound_and_sector_review.md). |
+| P17, Characteristic polynomial of permanental compounds | [An exact mixed-space compound action](compound/mixed_compound_action.md) reduces working storage relative to the full symmetric representation. The exponential running-time term is unchanged; no faster general characteristic-polynomial algorithm follows. [Integration review](root/compound_and_sector_review.md). |
+| C34 and the Hwang route | [A conditional susceptibility bound implies convexity of every padding limit](inequalities/susceptibility_bridge.md). An infinite weighted Jerrum family disproves extension of that auxiliary bound to all activities. The required bounded-activity inequality and the finite-matrix problem remain open. [Independent review](sign/susceptibility_review.md). |
+
+Each checkpoint has a companion exact-arithmetic checker in its directory.
+These checks validate displayed algebra and implementations. They do not
+replace the general proofs or count as additional conjecture resolutions.
+The notes credit their classical inputs and leave priority unverified.
+
