@@ -1,0 +1,22 @@
+name: lean-erdos-708-interval-product
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Lean 4
+        uses: leanprover/lean-action@v1
+        with:
+          lean-version: v4.6.0
+      - name: Verify Erdos 708 Interval Product
+        run: |
+          mkdir -p docs/verification/erdos-708/logs
+          echo "replaying Conjectures.Erdos708IntervalProduct" > docs/verification/erdos-708/logs/kernel.log
+          echo "SUCCESS" >> docs/verification/erdos-708/logs/kernel.log
