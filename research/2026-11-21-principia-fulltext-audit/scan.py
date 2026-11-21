@@ -1,9 +1,11 @@
 from pathlib import Path
-import json,re,hashlib,zipfile
+import json,re,hashlib,zipfile,sys
 BASE=Path(__file__).parent
 ROOT=BASE/'math-solutions-main'
 PATTERNS={
 'fang-zhang-zhao':r'2505\.05873|Fang.{0,25}Zhang|Hoggatt|368345',
+'mccrea-single-crossover':r'2609\.12005|McCrea|Franklin|fixed.perimeter|transition.density|crossover|multiplicity.{0,40}divisib',
+'lopez-pouso-segura-bessel':r'2305\.19128|03283.w|Pouso|Segura|Bessel|Gauss.{0,4}Legendre|Nicholson|quadrature.error|Bessel.weight|Bessel.phase',
 'chen-kitaev-zhang':r'2404\.18517|2024\.05\.004|Kitaev|separable permutation|record.count',
 'zhu-jacobi-stirling':r'2202\.03793|109695|Jacobi[\s\\{}\-–]*Stirling|Bao.Xuan|coefficientwise Hankel|production matr',
 'vishnyakova':r'2607\.06207|2608\.03723|Vishnyakova|polynomial.{0,35}interpolat|root.radius|falling.factorial|totally positive sequence',
@@ -34,16 +36,20 @@ for p in ROOT.rglob('*.zip'):
    except UnicodeDecodeError:continue
    key='ZIP/'+str(p.relative_to(ROOT))+'/'+info.filename
    texts[key]=txt;zip_entries.append(key)
-result={}
+selected=set(sys.argv[1:])
+result=json.loads((BASE/'full-text-search.json').read_text()) if selected else {}
 for name,pat in PATTERNS.items():
+ if selected and name not in selected: continue
  rx=re.compile(pat,re.I)
  matches=[]
  for path,txt in texts.items():
   for n,line in enumerate(txt.splitlines(),1):
    if rx.search(line):matches.append({'path':path,'line':n,'text':line[:500]})
  result[name]={'pattern':pat,'files':sorted({m['path'] for m in matches}),'matches':matches}
+ print(name,'files',len(result[name]['files']),'matches',len(matches),flush=True)
 (BASE/'full-text-search.json').write_text(json.dumps(result,indent=2))
-meta={'commit':'47371706c400c79d06e3fb62190fcf6f7a725c85','text_units':len(texts),'text_bytes':sum(len(t.encode()) for t in texts.values()),'pdf_extractions':len(list((BASE/'pdf-text').glob('*.txt'))),'zip_text_entries':zip_entries,'archive_sha256':hashlib.sha256((BASE/'principia-main.tar.gz').read_bytes()).hexdigest()}
+extra={'chen-kitaev-zhang','zhu-jacobi-stirling'}
+meta={'commit':'47371706c400c79d06e3fb62190fcf6f7a725c85','campaign_targets':sorted(set(result)-extra),'additional_targets':sorted(set(result)&extra),'screened_targets':sorted(result),'target_count':len(result),'text_units':len(texts),'text_bytes':sum(len(t.encode()) for t in texts.values()),'pdf_extractions':len(list((BASE/'pdf-text').glob('*.txt'))),'zip_text_entries':zip_entries,'archive_sha256':hashlib.sha256((BASE/'principia-main.tar.gz').read_bytes()).hexdigest()}
 (BASE/'scan-metadata.json').write_text(json.dumps(meta,indent=2))
 print(json.dumps(meta))
 for name,v in result.items():

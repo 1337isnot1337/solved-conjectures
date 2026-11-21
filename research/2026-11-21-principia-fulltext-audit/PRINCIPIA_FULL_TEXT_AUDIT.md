@@ -1,6 +1,8 @@
 # Principia full-text retrospective priority audit
 
-Date: 21 November 2026. Reviewer: campaign combinatorics lane. Scope: the twelve previously admitted campaign targets, plus the pending Kovalev and Brown–Mol packages. This report supersedes earlier path-only checks of this archive for these targets.
+Date: 21 November 2026. Reviewer: campaign combinatorics lane. Corrected scope: the twelve previously admitted campaign targets, plus the pending Kovalev and Brown–Mol packages, and two additional targets from another group. This report supersedes earlier path-only checks of this archive for these sixteen targets.
+
+**Scope correction.** The initial audit commit `e9fe0801549bcc8013df506c1b35646ef5717ca1` mistakenly substituted Chen–Kitaev–Zhang and Zhu for the campaign's McCrea and López Pouso–Segura entries. Its claim to cover the exact campaign fourteen was therefore premature. The parent review identified the mismatch. Both omitted targets have now been screened against the same complete archive, and plausible matches were read. The two unrelated-group targets remain as additional checks; `scan-metadata.json` now lists the fourteen campaign targets and two extras separately. The archive contents, hash verification, text-unit count, and two confirmed prior-resolution collisions are unchanged.
 
 ## Corrections required
 
@@ -11,7 +13,7 @@ Two exact prior resolutions are present in the public archive:
 
 The earlier campaign reports that found no collision in Principia were incomplete. Searching author names in archive paths missed numeric MathDB directories. The fact that those reports disclosed a path screen does not make the resulting novelty admission correct. Both claims must be excluded from the new-result count; the independent rediscoveries may remain as credited research notes.
 
-No additional matching resolution was found for the other twelve targets in the complete content search described below. This is a bounded result about this pinned archive, not a universal assertion that no prior proof exists anywhere.
+No additional matching resolution was found for the other twelve campaign targets or for the two extra targets in the complete content search described below. This is a bounded result about this pinned archive, not a universal assertion that no prior proof exists anywhere.
 
 ## Snapshot and completeness checks
 
@@ -71,13 +73,13 @@ dated **26 October 2026, 14:00:38 UTC**. The commit message records import from 
 
 The title, abstract, theorem scope, exact parameter polynomial, and two remaining parameter checks match the entire Conjecture 4.3 disproof. It is not merely a bounded numerical screen. The root and algebra lanes' separate reports carry the mathematical comparison; this content audit independently finds the exact source and full-scope claim.
 
-## Classification of all fourteen targets
+## Classification of all sixteen targets
 
 | Campaign target | Full-text archive finding | Disposition for this archive gate |
 |---|---|---|
 | Fang–Zhang–Zhao, Conjecture 4.3 | Exact full disproof, MathDB 368345 | Prior-resolved; exclude |
-| Chen–Kitaev–Zhang, record Conjectures 1 and 3 | Hits concern Cheon–Jung–Kitaev–Mojallal Riordan-graph nullity and Gil–Lopez–Weiner 1324-avoidance expansion; neither contains the separable-record assertion | No matching resolution found |
-| Zhu, unweighted Jacobi–Stirling Hankel positivity | Production-matrix hit is Barry's almost-Riordan row-sum formula, MathDB 351775; numeric DOI fragment also occurs in an unrelated integer table | No matching resolution found |
+| McCrea, single-crossover Conjecture 9.2 | No author, source identifier, fixed-perimeter, or Franklin-statistic match. Two incidental crossover hits concern a discrete maximal-function comparison and a Goldbach bound | No matching resolution found |
+| López Pouso–Segura, Bessel-weight Conjectures 2, 5, and 8 | No exact source, Pouso, Nicholson, or inverse-phase match. The Segura result concerns parabolic-cylinder ratios; Bessel hits concern distinct kernels, integrals, zero gaps, Turán minima, and medians. Gauss–Legendre occurs only in an unrelated numerical-quadrature check | No matching resolution found |
 | Vishnyakova, root-radius conjecture | Broad interpolation/falling-factorial hits concern unrelated derivative-root means, interpolation problems, lattice partitions, and a row-sum formula; no source identifier, author, or matching disk theorem | No matching resolution found |
 | Gröchenig, upper zero-density comparison | Zero-density hit concerns frequency symmetries of continued fractions, MathDB 371294; Beurling hit is a reference in an unrelated weighted Hardy-space audit | No matching resolution found |
 | Han–Sabag–Kostina–Hassibi, matrix conjecture | Lyapunov hits concern exponents of a different discrete dynamical system, MathDB 331783; no encoder, Kalman, author, or source-identifier match | No matching resolution found |
@@ -89,11 +91,21 @@ The title, abstract, theorem scope, exact parameter polynomial, and two remainin
 | Roos–Seiringer, radial Dirichlet kernel | Dirichlet-kernel hits are Fourier kernels in Goldbach estimates; no BCS, author, or exact-source match | No matching resolution found |
 | Kovalev, Hardy-norm Conjecture 6.1 | MathDB 369171 and 369172 prove the different bounded-power-series/cosine-sum Conjectures 1.2 and 1.3 from arXiv:2507.04544; no Hardy-norm comparison | No matching resolution found |
 | Brown–Mol, translated annulus | The only subtree-root phrase describes descendant blocks in an arbor polytope, MathDB 373577; no subtree polynomial, source identifier, or annulus claim | No matching resolution found |
+| Chen–Kitaev–Zhang, record Conjectures 1 and 3 (additional scope) | Hits concern Cheon–Jung–Kitaev–Mojallal Riordan-graph nullity and Gil–Lopez–Weiner 1324-avoidance expansion; neither contains the separable-record assertion | No matching resolution found |
+| Zhu, unweighted Jacobi–Stirling Hankel positivity (additional scope) | Production-matrix hit is Barry's almost-Riordan row-sum formula, MathDB 351775; numeric DOI fragment also occurs in an unrelated integer table | No matching resolution found |
 
 Candidate ordinary manuscripts were opened at their statement and relevant surrounding argument. Broad incidental text matches in unrelated Goldbach files and arithmetic tables were not treated as substantive mathematical leads.
 
+## Added McCrea and López Pouso–Segura checks
+
+The exact McCrea target is Conjecture 9.2 in [arXiv:2609.12005v2](https://arxiv.org/abs/2609.12005v2): the unique density crossover between the two fixed-perimeter Franklin partition statistics, for every modulus at least three. It is not the earlier fixed-marked-count inequality. Added searches included the arXiv identifier, author, Franklin, fixed perimeter, crossover, transition density, and multiplicity/divisibility language. Only the word crossover matched: MathDB 348574 concerns the discrete maximal-variation conjecture, and the other occurrence is in Goldbach analytic estimates. The relevant source header of 348574 was read; it has no partition-count assertion.
+
+The exact López Pouso–Segura target is the joint Bessel-weight package in [DOI 10.1186/s13660-025-03283-w](https://doi.org/10.1186/s13660-025-03283-w), [arXiv:2305.19128](https://arxiv.org/abs/2305.19128). For squared order-zero Bessel zeros and reciprocal squared derivative weights, the three statements give the signs, strict monotonicity, and exact limits of the source's sequences `C_i`, `E_i`, and `K_i`. They do not assert the separate finite-degree uniform Gauss–Legendre circle conjecture. The full campaign statement and its source audit were read before comparison.
+
+The broad Bessel and Segura search produced 470 matching lines across 62 text units, including duplicate PDF/source representations. The distinct ordinary manuscripts' titles and displayed target theorems were examined. MathDB 364320 proves a Segura parabolic-cylinder ratio statement; 326635 proves log-concavity of gaps between squared zeros of `J_1`; 321003 concerns minima of a normalized Bessel Turánian; 339406 bounds an integral of a modified Bessel function; 365454 refutes a truncated Bessel-kernel inequality; and 365832 gives a high-dimensional Bessel-integral asymptotic. The remaining hits concern variance-gamma/McKay medians (345410/345411), hypergeometric denominator formulas (346880/350746), a generalized Eulerian identity (355408), Gabor-system norms (375037), and a normalized-Bessel ratio bound (335189). None states the reciprocal-derivative-weight sums or their monotonicity and exact limits. Source identifiers, Pouso, Nicholson, and Bessel-phase terms did not match anywhere in the complete searched text collection. The lone Gauss–Legendre occurrence records a numerical quadrature cross-check in a Goldbach source comment; it does not state a theorem on nodes or weights.
+
 ## Coverage limits
 
-This audit covers the complete GitHub snapshot at the pinned commit, not every object ever served by the Principia website. Its `site-backup/README.md` expressly says that three named-author projects were omitted from that backup: MathDB 328424, 369283, and 380445. The first two are identified by the repository's own source headers as Goldberg's graph-energy conjecture and Johnston–Plosker–Torrance–Varona's generalized Cauchy–Schwarz inequality. The third is identified by the author's public [Polyhex-Hull repository](https://github.com/pragyaangaur/Polyhex-Hull) as Kurz's polyhex convex-hull problem. None is one of the fourteen audited targets; their omitted full ordinary papers were not treated as searched.
+This audit covers the complete GitHub snapshot at the pinned commit, not every object ever served by the Principia website. Its `site-backup/README.md` expressly says that three named-author projects were omitted from that backup: MathDB 328424, 369283, and 380445. The first two are identified by the repository's own source headers as Goldberg's graph-energy conjecture and Johnston–Plosker–Torrance–Varona's generalized Cauchy–Schwarz inequality. The third is identified by the author's public [Polyhex-Hull repository](https://github.com/pragyaangaur/Polyhex-Hull) as Kurz's polyhex convex-hull problem. None is one of the sixteen audited targets; their omitted full ordinary papers were not treated as searched.
 
 Keyword search can miss an equivalent theorem expressed without recognizable terminology. That limitation remains, even with complete file acquisition. The present audit materially corrects the earlier path-only process by examining every archived text and every PDF extraction and then reading plausible matching claims. The two exact prior-resolution corrections are decisive and do not depend on this residual limitation.
