@@ -75,7 +75,7 @@ H_2:\quad y^2=x^6-3x^4-45x^2+63.
 
 Here the leading coefficient in $t$ vanishes only at $x=\pm1$, where the linear coefficient is 16. Each $x$ again supplies at most two parameters.
 
-The sextics have discriminants $-2^{22}3^{10}7^2\cdot31$ and $-2^{22}3^{12}7^3$. Each smooth projective model has genus two, so Faltings's theorem gives finitely many rational points. Taking the resulting values of $-s^2$ and $4-t^2$, together with the two exceptional parameter values, proves finiteness. A complete list of rational points on these models would make this restriction explicit. [Faltings, 1983](https://geodesic.mathdoc.fr/item/IM_1983__73_143051/) · [Symbolic verification](check_quadratic_shapes.py)
+The sextics have discriminants $-2^{22}3^{10}7^2\cdot31$ and $-2^{22}3^{12}7^3$. Each smooth projective model has genus two, so Faltings's theorem gives finitely many rational points. Taking the resulting values of $-s^2$ and $4-t^2$, together with the two exceptional parameter values, proves finiteness. The complete rational-point calculation subsequently excluded every shape. [Point lists and sieve](rational-points.md) [Faltings, 1983](https://geodesic.mathdoc.fr/item/IM_1983__73_143051/) · [Symbolic verification](check_quadratic_shapes.py)
 
 ## Recovering the growth coefficients
 
@@ -116,4 +116,4 @@ The following ratios pass the initial elliptic-curve reductions or occur as exce
 | $63/16$ | 11 | 4 | 1, 2, 4, 5, 2, 0 |
 | $-36225/256$ | 19 | 16 | 1, 2, 2, 2, 2, 0 |
 
-For $H_1$, the points with $x=\pm1$ give the parameter $s=4$. The separate exceptional parameter is $s=-8$. For $H_2$, the points with $x=\pm1,\pm3,\pm3/5$ give $t=16$, $-2,1/4$, and $193/16,52$ respectively. The value $t=-2$ gives a zero leading coefficient. All the other resulting shapes, as well as the exceptional $t=16$, appear in the table. This leaves the rational points with other first coordinates to classify. [Reproducible modular checks](shape_obstructions.py)
+For $H_1$, the points with $x=\pm1$ give the parameter $s=4$. The separate exceptional parameter is $s=-8$. For $H_2$, the points with $x=\pm1,\pm3,\pm3/5$ give $t=16$, $-2,1/4$, and $193/16,52$ respectively. The value $t=-2$ gives a zero leading coefficient. All the other resulting shapes, as well as the exceptional $t=16$, appear in the table. The rational-point sieve excludes every other affine first coordinate. [Complete calculation](rational-points.md) [Reproducible modular checks](shape_obstructions.py)

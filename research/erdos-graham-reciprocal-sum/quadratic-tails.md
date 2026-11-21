@@ -104,6 +104,6 @@ Under the theorem's growth hypothesis $a_n$ grows at least geometrically, and th
 
 Set $F_n=n(n+1)$, whose successive ratio is exactly $1+2/n$. The logarithmic increments of $C_n/F_n$ are $o(n^{-2})$. Summing the tail shows $C_n/F_n=A+o(1/n)$ for some $A>0$. Hence $e_n=C_n-AF_n=o(n)$ and the ratio formula gives $e_{n+1}-e_n=(2/n)e_n+C_n o(n^{-2})=o(1)$. Taking two further differences shows $\Delta^3 C_n\to0$. These are integers, so $C_n$ is eventually a rational quadratic polynomial. Its difference from $AF_n$ is $o(n)$, forcing equality of the quadratic and linear coefficients. Thus $C_n=A n(n+1)+B$ eventually, contradicting the theorem on agreement intervals.
 
-For arbitrary rational translations, retaining the trace as well as the norm gives a uniform finite set of possible quadratic shapes. [Reduction to two genus-two curves](quadratic-shapes.md)
+For arbitrary rational translations, taking both trace and norm reduces the proof to two curves. Their complete rational-point lists now exclude every quadratic tail profile. [All quadratic profiles](rational-points.md) [Reduction to two genus-two curves](quadratic-shapes.md)
 
 The first-order condition $a_{n+1}/a_n^2\to1$ alone supplies no such quadratic model. That is the remaining gap to the bounty.
