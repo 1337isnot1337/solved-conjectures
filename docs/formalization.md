@@ -1290,4 +1290,8 @@ This formalizes a previously resolved result. A complete ordinary disproof was p
 
 ## Gilmore crossing–nesting matrix and paths
 
-`GilmoreCrossingNesting.matrixEntry_eq_labelledPathSum` proves the actual stabilized finite block-product entry equals the labelled Dyck-path sum with all four parameters, over any commutative ring. The finite bidiagonal inverse, block stabilisation, scaling, row formula, path enumeration and label-weight sums are checked. Completed labelled paths are decoded to literal ordered arcs, with every vertex used exactly once; open endpoints are sorted and labels preserve their order. The decoder is injective even up to permutation of arcs. Surjectivity and the crossing, nesting and alignment statistics remain unformalized. Strict compilation, isolated stock-kernel replay and endpoint axiom checks passed; the combined gate is pending.
+`GilmoreCrossingNesting.original_conjecture` proves the original crossing–nesting identity, and `gilmore_conjecture` includes alignment and size parameters, over any commutative ring. The finite block product is identified with paths, which are in bijection with literal perfect matchings; the crossing, nesting and alignment inequalities are checked and the weighted sum is transferred across the bijection. Strict compilation, isolated stock-kernel replay and endpoint axiom checks passed; the combined gate is pending.
+
+## Chen–Khare–Sahi semiring separator
+
+`ChenKhareSahi.generatorValues_exact` checks all 38 listed rational separator values and `separation_negative` checks the negative value at the displayed normalized polynomials. `P420_eigen` and `P411_eigen` check their cleared rational eigenoperator identities. Exhaustiveness of the semiring reduction and identification with the source Macdonald polynomials remain unformalized. The isolated replay passed; the combined gate is pending.
