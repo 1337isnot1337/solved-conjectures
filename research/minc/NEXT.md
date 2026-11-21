@@ -208,3 +208,71 @@ records a prior rank-four claim whose continuation was checked but whose
 singular-five certificate remains uninspected. No novelty or full-conjecture
 credit is assigned to that claim. Full eligible resolutions from this
 continuation remain zero; the requested ten are not achieved.
+
+
+## Uniform bounds and current cofactor gap, 20 November 2026
+
+The [independent-session index](nov20-independent/README.md) records the
+next reviewed checkpoints. They add **zero complete numbered-list
+resolutions**. The count above is unchanged. The following updates
+supersede the earlier missing-lemma descriptions where indicated.
+
+- **C44 and P13:** the [uniform local Hessian theorem](nov20-independent/inequalities/uniform_radial_permanent.md)
+  is now proved, using an [all-degree centered coefficient bound](nov20-independent/sign/centered_permanental_coefficients.md).
+  It gives a real van der Waerden radius at least 1/1000 uniformly in
+  order. A maximum-matching capacity bound then proves the zero-diagonal
+  minimum and uniqueness for every n at least 20,000,000,000,000;
+  [full eventual proof](nov20-independent/inequalities/explicit_eventual_zero_diagonal.md).
+  No unpublished confinement estimate is assumed. The smaller orders
+  remain unresolved, and the largest real radius is not determined.
+- **Uniform stability:** for every doubly stochastic A, with d_n=n!/n^n,
+  [the proved bound](nov20-independent/inequalities/uniform_frobenius_stability.md)
+  is log(per A/d_n) at least ||A-J_n||_F squared divided by 32,000,000.
+  For possible zero-diagonal minimizers it gives an explicit squared
+  distance bound of order 1/n. The missing uniform local estimate in the
+  earlier C44 paragraph is therefore supplied for this restricted ball;
+  no all-order zero-diagonal theorem is claimed.
+- **C24 and C6:** [integer minimizers have a collision bound](nov20-independent/root/integer_minimizer_collision_bound.md)
+  of order k squared log n. The [dense-line proof](nov20-independent/root/dense_integer_minimum.md)
+  proves that exactly binary matrices minimize on k=n-1 for every n at
+  least 500,000,000,000,000, allowing defects that grow with n. Separately,
+  [normalized complement averaging decreases strictly](nov20-independent/sign/c6_dense_barycentric_comparison.md)
+  when (n-k)/k is at most 1/4,000,000. Neither statement covers the
+  remaining degrees and orders, so neither counts as a full entry.
+- **P17 and P18:** the [collision-Krylov algorithm](nov20-independent/root/collision_krylov_charpoly.md)
+  is deterministic, handles singular matrices and repeated eigenvalues,
+  and costs soft-O(n^((k-1)omega+2)) for every fixed k at least two.
+  [Mixed actions and a black-box corollary](nov20-independent/compound/blackbox_compound_bound.md)
+  treat wider ranges but leave the central growing-degree time gap.
+  [Generic irreducibility and explicit Perron degree](nov20-independent/compound/perron_algebraic_degree.md)
+  exclude polynomial-time expanded minimal-polynomial output on one
+  all-order companion family. They exclude neither compact exact output
+  nor approximation and resolve neither list entry.
+- **C34/Hwang:** the [susceptibility bridge](nov20-independent/inequalities/susceptibility_bridge.md)
+  retains the bounded-activity obligation. Its unrestricted-activity
+  extension is false. The [alternating-path note](nov20-independent/inequalities/matching_path_susceptibility.md)
+  gives V at least mu squared divided by zm and identifies the remaining
+  occupancy interval t(z)<q<q_*(z). A rational abstract root law satisfies
+  the recorded scalar constraints but violates the proposed variance
+  inequality. It is not a matching-root realization or a conjecture
+  counterexample. A full proof still needs more matching structure.
+- **C30:** the [averaged cofactor lower bound](nov20-independent/sign/chollet_cofactor_bridge.md)
+  ||Gamma(A)||_F squared at least n per(|A| squared) remains unproved.
+  Pate's published theorem gives the required upper bound n(per A) squared.
+  The [Fischer Gram-order argument](nov20-independent/inequalities/chollet_gram_order.md)
+  proves conditional diagonal monotonicity and reduces a least-order
+  counterexample to singular correlation matrices; it does not bound
+  their rank. The [two cofactor Gram matrices have the same kernel](nov20-independent/compound/cofactor_scope_and_kernel.md),
+  but the linear map between their omitted-product spans is not known
+  to be a contraction. The analogous arbitrary-compound inequality is
+  false by an exact four-vector Gram example. Do not generalize from it
+  to the cofactor case, or treat the singular reduction as an induction
+  base. The recent Schubr cofactor paper expressly leaves the cofactor
+  matrix comparison undecided.
+
+The index links the independent reviews, exact diagnostics, and bounded
+source audits. Classical input theorems are credited. No claim of
+historical priority, external peer review, or ten completed results is
+made. The hourly Minc research task is already enabled; future workers
+should fetch current main and the latest issue comments before assigning
+files or continuing one of these gaps.
