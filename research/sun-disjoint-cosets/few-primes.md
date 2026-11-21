@@ -56,3 +56,10 @@ Indeed, fixing the $T$ coordinates, each surviving box outside $J$ occupies an i
 For example, consider two index-9 cosets, eight index-12 cosets and one each of indices 24, 27 and 36. This numerical pattern would refute Sun's conjecture if realizable. Take $S=\{3\}$ and $B=3$. The index-27 box projects onto the entire complementary factor. The index-12 and index-24 boxes alone require $3(8/12+1/24)=17/8$ units on average, exceeding the two available. This excludes the pattern in every finite nilpotent group without a search over subgroups.
 
 [Lean verification of the projection count and rectangular equality case](RectangularComplement.lean) handles arbitrary finite sets of points in two coordinates. The two results compile with the repository's Lean 4.35.0 toolchain and use only `propext`, `Classical.choice` and `Quot.sound`. The group-to-fiber reduction is the written argument above.
+
+The fiber estimate also has a version for **arbitrary finite groups and arbitrary subgroups**. Fix $K\le G$. For $C_i=g_iH_i$ put $b_i=[K:K\cap H_i]$ and let $U_i$ be the set of left $K$-cosets meeting $C_i$. With uniform measure on $G/K$ and $J=\{i:b_i\nmid B\}$, one has
+$$
+ B\sum_{i\notin J}\frac1{n_i}+\mu\!\left(\bigcup_{i\in J}U_i\right)\le B,
+ \qquad \mu(U_i)=\frac{b_i}{n_i}.
+$$
+If a fiber meets $C_i$ at $y$, its intersection with $C_i$ is $y(K\cap H_i)$, of relative size $1/b_i$. Counting over fibers gives the formula for $\mu(U_i)$, and the same integer rounding as above proves the inequality. When $K$ is a normal Hall subgroup on a set of primes $S$, its intersection with each $H_i$ is the Hall $S$-subgroup of $H_i$. Thus $b_i=(n_i)_S$, so the preceding numerical exclusion also applies whenever a Sylow 3-subgroup of $G$ is normal.
