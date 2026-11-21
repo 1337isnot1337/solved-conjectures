@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Joint ten-family research checkpoint
+
+Recorded an [attributed joint ledger](research/2026-11-21-joint-results/) covering eleven complete proposed result packages, conservatively grouped into ten named conjecture families. Seven packages were developed by the current four-worker group and four by the parallel issue-156 group, with separate cross-reviews before inclusion. The two López Pouso–Segura packages count as one family. Full assertions, source scope, proof mechanisms, review records and priority limits are linked individually.
+
+The [final global issue-history audit](research/2026-11-21-joint-results/PRIORITY_REFRESH.md) records the earlier Sturm proof that required withdrawal, the confirmed CKZ preregistration without a proof, and the retained targets' bounded search results. Previously resolved KVZ targets, the Boudabsa–Simon and Heim–Neuhauser reproofs, and partial or interpretation-dependent work contribute zero. All retained notes remain unrefereed. The later Gröchenig package is outside this checkpoint pending an additional cross-review. No Lean work was performed.
+
 ## 2026-11-21 — Gröchenig's problem
 
 Added a complete proposed counterexample to the upper Beurling-density comparison in Problem 4.12. Finite Gaussian blocks with alternating coefficient signs place zeros twice as densely as their coefficient support; recursive separation and a summable tail budget combine them into one nonzero entire function with absolutely summable coefficients. The coefficient sign-change upper density is exactly one half, while the real-zero upper density is at least one. The separate lower-density assertion remains undecided here.
