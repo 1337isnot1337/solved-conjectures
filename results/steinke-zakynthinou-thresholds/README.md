@@ -4,8 +4,8 @@ Complete proposed proof of the separately rewarded proper-threshold
 problem in Section 3 of Steinke and Zakynthinou's COLT 2020 open-problem
 paper. The proof passed two independent internal mathematical reviews;
 the fresh primary-source audit found no earlier exact resolution. It is
-not Lean-verified or externally refereed, and no prize has been submitted,
-accepted, or paid.
+externally unrefereed. Lean verification currently covers the learner
+and its empirical accuracy. No prize has been submitted, accepted, or paid.
 
 ## Result
 
@@ -66,8 +66,10 @@ improper learner, with optional bonuses. No expiry or withdrawal was
 found in the checked sources. Current sponsor acceptance is not known;
 no bonus, award, or payment is claimed.
 
-The verification badge is unformalized. A future Lean proof would need
-to formalize the actual randomized algorithm, its measurable output,
-the original paired-sample CMI, the uniform information argument, and
-the samplewise accuracy bound. Checking only the finite alignment lemma
-would not formalize this theorem.
+Lean constructs a [measurable randomized proper learner](../../lean/Conjectures/SteinkeZakynthinou/Learner.lean) and proves its expected empirical excess is at most $`512/\sqrt n`$ on every labeled sample. The uniform CMI bound remains to be formalized. The local proof closure can be replayed with the repository’s pinned toolchain.
+
+```sh
+cd lean
+lake build Conjectures.SteinkeZakynthinou.Learner
+lake env python3 ../scripts/replay_lean.py --root Conjectures.SteinkeZakynthinou.Learner
+```

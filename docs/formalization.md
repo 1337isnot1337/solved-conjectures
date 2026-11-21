@@ -2,7 +2,7 @@
 
 ## Steinke–Zakynthinou threshold formalization scope
 
-The new [proper-threshold proof](../results/steinke-zakynthinou-thresholds/PROOF.md) is currently unformalized. A complete formalization must implement the tagged shifted-tree learner and properization; prove measurability and the samplewise empirical bound; and prove the original iid-pool CMI bound, including missing support, likelihood-ratio transport, tensorization, and arbitrary atoms. The finite Python alignment audit is supplementary and must not be substituted for these uniform statements.
+Lean checks the [target statement](../lean/Conjectures/SteinkeZakynthinou/Statement.lean) and the [learner and accuracy theorem](../lean/Conjectures/SteinkeZakynthinou/Learner.lean). The proof uses a rational child rule, geometric noise scales with ratio $3/4$, and label-first rounding to finite closed thresholds. The remaining steps are the all-size replacement comparison, averaging its charges over iid paired pools, and bounding the information cost of the selected successor or maximum.
 
 Gröchenig’s upper-density result is excluded after a [checked earlier resolution](../research/bounty-continuation-2026-11-21/grochenig-prior-resolution/). Its independent proof and verification receipts remain in [immutable Git history](https://github.com/1337isnot1337/solved-conjectures/blob/628270dc5e07d7924de265d2ac1beee4b5634b80/docs/verification/lean-grochenig-20261121/receipt.json). The reused KVZ results remain active.
 

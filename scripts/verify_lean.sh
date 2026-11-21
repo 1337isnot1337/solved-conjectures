@@ -258,6 +258,13 @@ modules=(
   Conjectures.HanSabagCounterexample
   Conjectures.ZhangDeletion
   Conjectures.ZhuJacobiStirling
+  Conjectures.SteinkeZakynthinou.Statement
+  Conjectures.SteinkeZakynthinou.Branch
+  Conjectures.SteinkeZakynthinou.Tree
+  Conjectures.SteinkeZakynthinou.Balanced
+  Conjectures.SteinkeZakynthinou.Rounding
+  Conjectures.SteinkeZakynthinou.Rank
+  Conjectures.SteinkeZakynthinou.Learner
   Conjectures.SunZhao
   Conjectures.FangZhangZhao
   Solitaire.Counterexample
