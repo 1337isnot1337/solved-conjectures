@@ -1,6 +1,8 @@
 # Heim–Neuhauser's l-ary partition conjecture
 
-Research date: 21 November 2026. Coordination: [issue 178](https://github.com/1337isnot1337/solved-conjectures/issues/178). Status: complete proposed proof submitted for independent mathematical and prior-resolution review. The source audit is separate; this note does not certify exclusive priority.
+**EXCLUDED: already resolved by prior work. No new-resolution credit.**
+
+Research date: 21 November 2026. Coordination: [issue 178](https://github.com/1337isnot1337/solved-conjectures/issues/178), closed as excluded. This independent proof passes mathematical review, but Gajdzica's January 2024 Theorem 4.4 already implies the entire result. See [PRIOR-RESOLUTION.md](PRIOR-RESOLUTION.md) for the exact earlier theorem and complete transfer to the corrected classification. The derivation below is retained only as research history.
 
 ## 1. The complete source statement
 
