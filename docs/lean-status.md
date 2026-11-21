@@ -34,6 +34,7 @@ Lean verification.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| Malek's conjecture | Not formalized | Complete written all-degree negative-transform proof with all equality cases, two independent internal reviews and exact scalar identity checks. The permanent endpoint is prior work; the named subsidiary is documented in the Minc site's linked survey. No proof-assistant work is claimed. |
 | Baricz–Pogány's asymptotic-coefficient positivity conjecture | Not formalized | Existing complete written formal-series proof, with exact rational identity checks and two internal reviews. No proof-assistant formalization is claimed. The result's novelty audit retains its source-access limit. |
 | Pula–Song–Wanless conjecture | Not formalized | Complete written proof of the all-parameter threshold, including its equality case and unique boundary minimizer. Real-rooted minor equalization and van der Waerden completion replace disputed dependencies. Exact identity checks supplement the proof. The full Minc Problems 14 and 15 remain outside its scope. |
 | Perron root of permanental compounds | Not formalized | Written FPRAS proof for every nonnegative rational matrix and every compound degree, with deterministic zero detection. Exact finite checks supplement the argument. This is the randomized approximation formulation of Minc Problem 18; exact polynomial-time eigenvalue computation and the characteristic-polynomial problem are outside its scope. |

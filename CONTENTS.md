@@ -22,6 +22,12 @@ Each entry links to the mathematical argument and its accompanying checks. The c
 | :--- | :--- | :---: | :--- |
 | [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | Complete proposed proof of the cohesive/noncohesive threshold for every block size, including equality, with a unique boundary minimizer at and above the threshold. The new threshold proof repairs the old equalization argument; previously known directions are credited. This is a named subsidiary conjecture, not the full characterization requested by Minc Problems 14 or 15. | Not formalized | [Proof](results/pula-song-wanless/proof.md) · [Source audit](results/pula-song-wanless/source-audit.md) · [Exact checks](results/pula-song-wanless/verify.py) · [Review](https://github.com/1337isnot1337/solved-conjectures/issues/142) |
 
+## Subpermanent transform inequalities
+
+| Result | Finding | Lean | Evidence |
+| :--- | :--- | :---: | :--- |
+| [Malek's conjecture](results/malek-subpermanent/) | Complete proposed proof of the negative-transform comparison for every order and every subpermanent degree, with all equality cases. A stronger reciprocal-mean capacity estimate closes every proper degree; the full-permanent endpoint is prior work. This is a named subsidiary in the Minc site's linked survey, not a new numbered Conjecture 3 resolution. Two internal reviews found no gap; priority remains provisional. | Not formalized | [Proof](results/malek-subpermanent/proof.md) · [Source audit](results/malek-subpermanent/source-audit.md) · [Exact checks](results/malek-subpermanent/verify.py) · [Review](https://github.com/1337isnot1337/solved-conjectures/issues/145) |
+
 ## Permanental compounds
 
 | Result | Finding | Lean | Evidence |

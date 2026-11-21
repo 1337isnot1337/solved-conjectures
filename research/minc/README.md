@@ -6,7 +6,7 @@ Research started 20 November 2026. Coordination: [issue #139](https://github.com
 
 Only full open entries on [Yair Lavi’s Minc list](https://yair-lavi.com/mincs-list/) are eligible. The source marks 24 entries open at the start of this investigation. A finite-order extension, a conditional implication, a bound, an algorithm that merely enumerates the definition, or a renamed subproblem is not a completed entry. No Lean verification is in scope.
 
-**Completed unqualified entries: 0.** One complete candidate theorem now gives a general FPRAS for the approximation formulation of Problem 18. Its exact scope, proof and priority audit are recorded below. A separate complete proposed proof now resolves the named Pula–Song–Wanless subsidiary conjecture, with a repaired reduction and independent uniqueness proof; it does not count as a full solution of Problems 14 or 15. No exact polynomial-time Perron computation is claimed.
+**Completed unqualified entries: 0.** One complete candidate theorem now gives a general FPRAS for the approximation formulation of Problem 18. Its exact scope, proof and priority audit are recorded below. A separate complete proposed proof now resolves the named Pula–Song–Wanless subsidiary conjecture, with a repaired reduction and independent uniqueness proof; it does not count as a full solution of Problems 14 or 15. A further complete proposed proof now resolves Malek's named subpermanent endpoint conjecture in the site's linked survey; its stricter source-chain eligibility limit is stated below. No exact polynomial-time Perron computation is claimed.
 
 ## Assignments
 
@@ -117,3 +117,11 @@ The [Chollet border-operator note](sign-matrices/chollet_border_operator.md), wi
 The [updated Lih–Wang source audit](sign-matrices/lihw_source_audit.md) gives the exact binomial-average formulation. A proposed coefficientwise shortcut is withdrawn because its next-to-top case is the false Holens inequality. Wanless's superpolynomial near-perfect/perfect matching ratio obstruction rules out polynomially weakened versions too. The currently published Kopotun estimates do not reach the required half-segment. The complete C34 inequality remains open here.
 
 No item in this checkpoint increases the full-resolution count.
+
+## Malek's conjecture
+
+The [complete proposed proof](../../results/malek-subpermanent/proof.md) covers every order and every subpermanent degree in Malek's negative-transform comparison. Its new capacity estimate controls optimized slices by the product of the arithmetic mean of the variables and that of their reciprocals. The resulting lower coefficient exceeds the centered upper coefficient in all proper degrees; exact initial constants and a uniform polynomial comparison cover all orders. All equality cases are stated, with the full-permanent case credited to prior work.
+
+The [source audit](../../results/malek-subpermanent/source-audit.md) found no earlier complete endpoint proof in the inspected primary texts, recent followups and public repositories. It records the source-access limit and a stricter eligibility limit: the current C3 page cites Malek, but the all-degree conjecture is explicitly stated in the Minc index's linked 2005 survey, not on that live page. Thus this is a named subsidiary through the source chain, not a new numbered C3 resolution. [Two internal reviews](../../results/malek-subpermanent/review-inequalities.md) and the [exact scalar checker](../../results/malek-subpermanent/verify.py) accompany it. [Issue #145](https://github.com/1337isnot1337/solved-conjectures/issues/145) tracks the result.
+
+The unqualified numbered-entry count remains zero. The ten-resolution target remains unmet.

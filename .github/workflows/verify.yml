@@ -16,6 +16,8 @@ jobs:
           python-version: '3.12'
       - name: Check existing Baricz–Pogány formal-series identities
         run: python results/baricz-pogany-coefficients/verify.py
+      - name: Check Malek transform scalar identities
+        run: python results/malek-subpermanent/verify.py
       - name: Check permanental-compound trace and support identities
         run: python results/perron-root-permanental-compounds/verify.py
       - name: Check Bessel-ratio Wronskian identities and endpoint terms

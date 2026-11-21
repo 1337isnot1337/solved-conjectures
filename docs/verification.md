@@ -101,6 +101,10 @@ The latest workflow is the executable reference when new checks are added.
 
 Run `python3 results/perron-root-permanental-compounds/verify.py` with assertions enabled. It uses only the Python standard library and checks 126 exact cyclic-permanent identities, 81 Newton inequalities and 2,048 support/zero-root comparisons. These finite checks validate the reduction formulas. They do not implement the permanent approximation sampler or prove the FPRAS's unbounded scope; those claims depend on the [written proof](../results/perron-root-permanental-compounds/proof.md), Gurvits's theorem and the Jerrum–Sinclair–Vigoda theorem. The result has no Lean verification or computer-assisted proof badge.
 
+## Malek's conjecture
+
+Run `python3 results/malek-subpermanent/verify.py` with assertions enabled. The standard-library checker verifies the exact scalar upper constants, the two expansions used to compute them, the positive cubic certificate, the all-order shifted polynomial, and the remaining small-degree coefficient. These are algebraic checks of the [written proof](../results/malek-subpermanent/proof.md), not a finite matrix search. The unbounded statement rests on the analytic argument and its cited inputs. Two internal review receipts and a bounded source audit accompany it. No Lean verification is included.
+
 ## Pula–Song–Wanless conjecture
 
 Run `python3 results/pula-song-wanless/verify.py` with assertions enabled and SymPy 1.14.0 installed. The script audits generic derivative/crossing identities, 72 coefficient ODE/variance cases, 48 direct permanent counts and 42 exact barycenter inequalities. The full proof, including the real-rooted-minor reduction repair and independent uniqueness argument, is [written separately](../results/pula-song-wanless/proof.md). These finite checks do not establish the unbounded statement on their own. No Lean verification is included.
