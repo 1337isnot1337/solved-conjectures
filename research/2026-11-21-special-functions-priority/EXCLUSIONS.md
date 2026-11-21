@@ -37,4 +37,12 @@ The two-sided hyperbolic bounds in Conjecture4 of the 2021 Kilbas–Saigo paper 
 
 The same Principia manuscript's full interior exponential-functional representation makes the monotonicity in Remark3 an immediate rescaling consequence. The boundary was already in original Proposition1. Our independently developed proof is valid, but the target was excluded and issue186 closed. The [dedicated literature audit](../2026-11-21-special-functions-boudabsa-simon-monotonicity/LITERATURE.md) gives the exact parameter transfer and complete source comparison.
 
+## Bertoin–Yor’s moment-determinacy conjecture
+
+Martin Minchev's *On a moment determinacy conjecture of Bertoin and Yor*, [arXiv:2607.00132](https://arxiv.org/abs/2607.00132), was submitted June 30, 2026. The author-posted [complete manuscript](https://www.researchgate.net/publication/408304304_On_a_moment_determinacy_conjecture_of_Bertoin_and_Yor) was read, including Theorem 1.1 and its full proof.
+
+For an unkilled Lévy process drifting to positive infinity and admitting all positive exponential moments, it proves that the reciprocal of its exponential functional is moment determinate exactly when the process has no positive jumps. This is the full Bertoin–Yor conjecture, although the May 2026 Minchev–Savov survey still lists it as open.
+
+The new direction in that earlier proof uses a controlled early cluster of positive jumps. Varying one jump time gives a lognormal-type lower bound for an absolutely continuous submeasure near zero. Inversion and a submeasure version of Krein's criterion establish moment indeterminacy. The converse is credited to Bertoin–Yor. This target was excluded before opening a solution issue.
+
 These exclusions concern the stated targets only. They do not claim that all other questions in the cited papers are resolved.
