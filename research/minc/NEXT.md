@@ -12,7 +12,7 @@ The requested ten new full named resolutions have not been obtained. The campaig
 | Pula–Song–Wanless conjecture | Full named subsidiary threshold; not the unrestricted P14/P15 characterizations | [Proof](../../results/pula-song-wanless/proof.md) |
 | Malek's conjecture | Full all-degree negative-transform comparison, stated in the site's linked survey; the live C3 entry is already resolved and does not itself state the full all-degree target | [Proof](../../results/malek-subpermanent/proof.md) |
 
-Each result directory contains its source audit, reviews and reproducible checks. Any newly found prior resolution or proof gap must be recorded before treating the proposed result as established.
+Each result directory contains its source audit, reviews and reproducible checks. The [Malek follow-up](../../results/malek-subpermanent/priority-audit-addendum.md) now includes the full 1996 Kopotun paper and two citation-index checks; it finds no prior full negative endpoint but does not remove the inaccessible 1989 original-source qualification. Any newly found prior resolution or proof gap must be recorded before treating the proposed result as established.
 
 ## Current full targets and exact gaps
 

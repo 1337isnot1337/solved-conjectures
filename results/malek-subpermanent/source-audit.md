@@ -54,7 +54,7 @@ The 1990 paper is *On the convex combinations of matrices and the sum of subperm
 
 [Kopotun 1994](https://www.tandfonline.com/doi/abs/10.1080/03081089408818290), *On some permanental conjectures*, Linear and Multilinear Algebra **36**, 205–216, explicitly proves Holens–Đoković at degree $`k=4`$ for every $`n\geq5`$. The publisher abstract also records related low-degree zero-diagonal minimization results. The degree-three Holens–Đoković result is due to Đoković; it is documented in Section 3.4 of [Troanca's 2008 thesis](https://mspace.lib.umanitoba.ca/server/api/core/bitstreams/5f1b99a6-487f-4308-91e8-0ff0c3b4e7b1/content).
 
-[Kopotun 1996](https://www.sciencedirect.com/science/article/pii/0024379594002282), *A note on the convexity of the sum of subpermanents*, Linear Algebra and its Applications **245**, 157–169, [DOI 10.1016/0024-3795(94)00228-2](https://doi.org/10.1016/0024-3795(94)00228-2), studies global and radial convexity. Its abstract gives $`\sigma_2`$ convexity for $`n\geq2`$, $`\sigma_3`$ convexity for $`n\geq4`$, and the radial convexity threshold $`n_4=6`$. Lavi's 2026 paper identifies its Conjecture 2 and Remark 1 as concerning the **positive** transform. These facts cannot be silently reclassified as direct proofs of the negative endpoint.
+[Kopotun 1996](https://www.sciencedirect.com/science/article/pii/0024379594002282), *A note on the convexity of the sum of subpermanents*, Linear Algebra and its Applications **245**, 157–169, [DOI 10.1016/0024-3795(94)00228-2](https://doi.org/10.1016/0024-3795(94)00228-2), studies global and radial convexity. The complete [author-hosted paper](http://home.cc.umanitoba.ca/~kopotunk/Publications/k-laa.pdf) was subsequently obtained and read in the [independent audit addendum](priority-audit-addendum.md). Theorems 1–3 cover degree-two and degree-three convexity, degree-four radial estimates, and normal spectral-sector matrices. Section 4, Remark 1, printed page 167, explicitly poses the **positive** transform conjecture. The body does not state a full negative-endpoint theorem. The distinction is now confirmed from the primary text.
 
 No explicit primary all-order negative-transform theorem for $`k=4`$ was located. A degreewise use of the 1990 equivalence was therefore not assumed. The separate elementary proof below covers all degrees needed in orders at most four, once the known permanent endpoint is supplied.
 
@@ -102,7 +102,7 @@ The centered expansion gives
 \end{aligned}
 ```
 
-For $`n\geq4`$, the first term in brackets increases with $`n`$ and the subtracted term decreases. Its value at $`n=4`$ is $`44/81>0`$. Therefore the degree-three comparison is strict away from $`J_n`$ in every order $`n\geq4`$. In order three the degree-three statement is exactly Wang's known permanent case. Degree two is strict away from $`J_n`$ when $`n\geq3`$ and is an identity when $`n=2`$.
+For $`n\geq4`$, the first term in brackets increases with $`n`$ and the subtracted term decreases. Its value at $`n=4`$ is $`44/81>0`$. Therefore the degree-three comparison is strict away from $`J_n`$ in every order $`n\geq4`$. In order three the degree-three statement is the known Marcus–Minc permanent case. Degree two is strict away from $`J_n`$ when $`n\geq3`$ and is an identity when $`n=2`$.
 
 ## Search record and limits
 
@@ -119,3 +119,7 @@ The only mathematical global search hit for the exact Malek phrase was a [TeX mi
 A separate public [sub-Dittert research project](https://github.com/pedromnasc/dittert-conjecture-proof/tree/main/subdittert) appeared under transform searches. Its README and source notes were inspected, including the explicit limits of its claims. It concerns the Cheon–Hwang row/column-sum functional and partial one-zero-face bounds; it does not claim the Malek endpoint. The README explicitly leaves the intermediate general sub-Dittert cases unresolved. Its transform helper names do not constitute an unindexed proof of the present target. The inspected README and source-notes blob hashes were respectively `3a07a9b57c31339c5c147e75e67e8f397597e52d` and `34f7e6e32d0d97b78eb4debe840c6252b5e4f1ff`.
 
 The audit supports working on the exact all-degree endpoint as an apparently unresolved named historical conjecture. It does not support labelling it a newly solved numbered Minc entry, or claiming an exhaustive proof of priority.
+
+### Independent citation and full-text follow-up
+
+The [priority-audit addendum](priority-audit-addendum.md) records a renewed search for Malek's original paper, matching four-work citation lists from two independent indexes, full access to Kopotun's 1996 paper, and inspection of Lavi's newer stable-polynomial Dittert application. The [normalized citation responses](priority-citation-records.json) make the returned coverage inspectable. No earlier full negative-endpoint theorem was found in these sources. The complete 1989 Malek paper and the 1994 Kopotun scan remain unread in this follow-up, so those access limits are retained. This strengthens the bounded audit without changing the subsidiary scope or the resolved-entry count.

@@ -225,3 +225,7 @@ The [substochastic-core transfer](inequalities/gyires_substochastic_transfer.md)
 ## Integrality checkpoint
 
 The [C24 audit](combinatorial/minc_integrality_audit.md) checks the integer domain, distinguishes asymptotic matching bounds from exact finite-order integrality, and derives connectedness of every minimizer for line sum at least two. Its weighted switch identity gives necessary cofactor inequalities, checked independently in [the review](combinatorial/minc_integrality_review.md) and by 375 exact identity evaluations. Those inequalities do not exclude repeated entries. The dense counterexample route still needs a growing defect; no such family has been found. This checkpoint adds no full conjecture resolution.
+
+## Malek priority follow-up
+
+The [independent priority addendum](../../results/malek-subpermanent/priority-audit-addendum.md) obtains the full 1996 Kopotun paper and verifies directly that its all-degree transform conjecture has the positive sign. Two citation indexes return the same four later works, recorded in the companion JSON; neither supplies an earlier full negative-endpoint theorem. The original Malek 1989 full text remains inaccessible. The proposed result retains its historical-subsidiary scope and its original-source qualification. No additional result is counted.
