@@ -6,6 +6,7 @@ import Conjectures.ChenKhareSahiGraded
 import Conjectures.ChenKhareSahiEigen
 import Conjectures.ChenKhareSahiMixed
 import Conjectures.ChenKhareSahiTheorem
+import Conjectures.ChenKhareSahiTranslate
 import Conjectures.ChenKhareSahiCovers
 import Conjectures.GilmoreCrossingNesting
 import Conjectures.DospolovaGermanskovZaporozhets
