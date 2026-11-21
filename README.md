@@ -26,6 +26,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/) | ⬜ |
 | [Fang–Zhang–Zhao's infinite-log-convexity conjecture](results/fang-zhang-zhao/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture](results/kvz-bessel-unimodality/) | ⬜ |
+| [Ferreira–Simon's stochastic-order conjecture](results/ferreira-simon-stochastic/) | ⬜ |
+| [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | ⬜ |
 | [Ferreira–Simon's Wright log-concavity conjecture](results/ferreira-simon-wright/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's gamma-quotient conjecture](results/kvz-gamma-quotient/) | ⬜ |
 | [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ⬜ |

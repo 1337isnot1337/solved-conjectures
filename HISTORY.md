@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Ferreira–Simon stochastic and diagonal conjectures
+
+Added complete proposed proofs of the two distinct full-parameter conjectures in Remarks 7(b) and 5(b) of Ferreira and Simon's *Mittag-Leffler functions and convex ordering*. The first uses a common Poisson arrival series and strict sequence-norm monotonicity to establish stochastic order. The second uses the classical Lamperti sine quantile, logarithmic contraction and reciprocal pairing to establish diagonal Mittag–Leffler monotonicity.
+
+Both arguments passed separate internal mathematical reviews. The packages contain source and prior-resolution audits covering the original statements, earlier formulations, neighboring theorems, current follow-ups and public solution archives, with access limits stated explicitly. Classical representations are credited. The stochastic assertion's 2014 and 2025 formulations count as one target; endpoint bounds and crossing-point corollaries are not additional conjectures. These are written analytic proofs and require no numerical verifier. The notes remain unrefereed. No Lean work was performed.
+
 ## 2026-11-21 — Hankel products and McCrea's conjecture
 
 Added a complete proposed disproof of Karp–Vishnyakova–Zhang's general sign-regular Hankel-product conjecture. An elementary family has exact rational order-two minors of opposite signs; a second family has strictly sign-regular factors of every order and the same failure. Both families resolve one conjecture, with the original unrestricted-signature hypothesis checked directly. Root and combinatorics reviews passed. The published final-page access limit is recorded alongside the verified arXiv versions.

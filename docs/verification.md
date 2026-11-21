@@ -14,6 +14,10 @@ The [Hadamard order-2396 replay](../results/hadamard-2396/) compares the C++ out
 
 The partial-result entries contain their replay commands for the [Frankl generator theorems](../results/frankl-generator-families/), [two-speed insertion](../results/lonely-runner-two-insertions/) and [abelian cover certificate and sharpness example](../results/erdos-gyarfas-abelian-covers/). Their current formalized scope and remaining dependencies are recorded in the [Lean status](lean-status.md).
 
+## Analytic proofs without computation
+
+The [Ferreira–Simon stochastic-order proof](../results/ferreira-simon-stochastic/PROOF.md) and [diagonal Mittag–Leffler proof](../results/ferreira-simon-diagonal/PROOF.md) establish their full real-parameter statements by integral identities and pointwise comparisons. Neither depends on numerical tests, finite enumeration or computer algebra. Their separate [stochastic audit](../results/ferreira-simon-stochastic/AUDIT.md) and [diagonal audit](../results/ferreira-simon-diagonal/AUDIT.md) reconstruct the argument and check normalization, domains, strictness and convergence. No new executable verifier or workflow test is assigned to these analytic proofs. Source and priority review are documented separately in each package.
+
 ## Computational checks
 
 The [Hankel-product checker](../results/kvz-hankel-product/verify.py) checks the exact polynomial identity and both rational and radical minor witnesses. The [McCrea checker](../results/mccrea-single-crossover/verify.py) independently enumerates profile words and checks both generating-function rewrites and mean values. Both use only the Python standard library; their full parameter claims are proved in the accompanying notes.

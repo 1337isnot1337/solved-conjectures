@@ -54,6 +54,8 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Ferreira–Simon's stochastic-order conjecture": "ferreira-simon-stochastic",
+    "Ferreira–Simon's diagonal Mittag–Leffler conjecture": "ferreira-simon-diagonal",
     "Karp–Vishnyakova–Zhang's Hankel-product conjecture": "kvz-hankel-product",
     "McCrea's conjecture": "mccrea-single-crossover",
     "Chen–Kitaev–Zhang's record conjectures": "chen-kitaev-zhang-records",
