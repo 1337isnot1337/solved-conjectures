@@ -13,7 +13,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | Problem | Verification |
 | :--- | :---: |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ |
-| [Németh–Seberry–Shu conjecture](results/nemeth-seberry-shu/) | ⬜ |
+| [Németh–Seberry–Shu conjecture](results/nemeth-seberry-shu/) | ⬜ ★ |
 | [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ |
 | [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | ✅ |
 | [Sonntag–Teichert conjecture](results/sonntag-teichert/) | ⬜ |
@@ -60,6 +60,7 @@ Entries are ranked approximately by relative mathematical significance, weighing
 - 🟢 Partially Lean-verified, with a computer-assisted proof.
 - 🟡 Partially Lean-verified.
 - ⬜ No computer-assisted proof or Lean verification yet.
+- ★ Outside confirmation: an independent external review is documented at the result level. This is separate from Lean verification and is not journal peer review.
 
 For the 🟢 Lonely Runner results, the written proofs reduce the classification to finitely many cases. Exact computations exhaust those cases, with some results drawing on archived searches from cited papers. Completing the Lean proofs requires formalizing the remaining reductions and cited bounds and checking the remaining search certificates in Lean. The [verification guide](docs/verification.md#computational-checks) gives the replay commands, and the [Lean status report](docs/lean-status.md) gives the remaining steps for each result.
 
