@@ -204,6 +204,10 @@ Two independent mathematical/code reviews and an independent source/priority aud
 
 Formalized the unweighted Jacobi–Stirling recurrence, the leading Hankel determinant and its coefficient −4, the negation of the full coefficientwise minor assertion, and the stated negative region. The standalone module passed strict source compilation, the all-owned axiom audit and stock-kernel replay. The combined repository gate is pending.
 
+## 2026-11-21 — Mazák–Zrubák conjecture on complete graphs minus an edge
+
+Proved Conjecture 2 of Mazák and Zrubák: for every even `d >= 6`, the circular chromatic index of `K_{d+1}` minus an edge is `d+1`. By Guichard's theorem a smaller value would give a proper `(d+1)`-edge-colouring whose digraph of consecutive colours is acyclic; the proof derives a contradiction from the longest-path levels of such a colouring. The package contains the written proof, a standard-library check of the lemmas for `d=4` and of the ordering obstruction for `d=6`, an optional SAT check from the definition, and the scripts of one independent model referee pass, which found no mathematical error. The scripts did not complete `d=8`. The note is otherwise unrefereed; no Lean verification was performed.
+
 ## 2026-11-21 — Dospolova–Germanskov–Zaporozhets's conjecture
 
 Added a complete proposed analytic disproof of Conjecture 3.6 in *On Steiner entire function*. For every positive c, the sequence c^k/k! satisfies all the proposed ultra-log-concavity inequalities with equality. A nontrivial Gaussian-bounded compact has expected global Gaussian range strictly larger than twice its maximal deterministic local oscillation. Vitale's published normalized-ratio limit then excludes the entire factorial family.
