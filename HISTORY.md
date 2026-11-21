@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-21 — Prior-resolution correction for Fang–Zhang–Zhao and Sun–Zhao
+
+Withdrew two previously counted packages after a complete-text archive audit found earlier full disproofs. Principia's [26 October commit](https://github.com/PrincipiaMathOrg/math-solutions/blob/c18609e47b635722206b9a2e9dcd402d0edcfb0a/mathdb/368345/solution.tex) proves the same complete Fang–Zhang–Zhao Hoggatt failure family. Its [27 October commit](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-332483/mathdb-332483-solution.tex) contains the same exact Sun–Zhao ratio counterexample. Both public dates precede this campaign; internal manuscript dates are unnecessary to establish that fact.
+
+The earlier filename screens missed numeric archive paths. Root and separate reviewers read the actual proofs, checked the statement conventions and authenticated the public commit histories. The result directories, catalogue entries, duplicate computational checks and workflow references are removed. Existing unique formalizations by the separate team are preserved and explicitly attributed to previously resolved results. No Lean source or proof execution is part of this correction. The Han and Zhang catalogue statuses also regain canonical `Complete` labels so the existing site validator can read the already-recorded scopes; their pending combined gates are retained.
+
+The [correction record](research/campaign-20261121/PRIOR_RESOLUTION_CORRECTION.md) gives the exact comparisons and counting changes. This subgroup's committed proposed-resolution tally falls from twelve to ten. The selected joint checkpoint falls from eleven to ten named families because Sun–Zhao was never admitted to that stricter subset. Earlier historical counts are superseded. Retrospective full-content archive audits continue before further promotions.
+
 ## 2026-11-21 — Complete Han sparse-assignment infima in Lean
 
 Formalized the lower bound and matching approaching feasible encoders for each of the four sparse assignments. Together with the earlier matrix witness and open-family gap, this completes the stated disproof package in Lean. Strict source compilation, all-owned axiom audit and stock-kernel replay passed; the combined repository gate remains pending.
@@ -72,7 +80,7 @@ The full research-site build and content, link, mathematics and metadata checks 
 
 Added a complete proposed disproof of Conjecture 5.2 in arXiv:1602.04359v4. The twelfth iterated ratio sequence fails its required log-convexity at center thirteen, using only entries retained after the specified truncation. An exact binomial-product comparison and a rational logarithm certificate give the same strict sign. The root reviewer independently regenerated the recurrence, used a different logarithm truncation and remainder, and directly iterated the ratios.
 
-The [package](results/sun-zhao-iterated-ratios/) includes both reviews and a multi-source prior-resolution audit. The full journal version and author's Maple archive were inaccessible; the resolved statement is the fully inspected latest arXiv conjecture. Neither the first-ratio theorem nor the different quadratic log-convexity transform is misidentified as the target. This subgroup's reviewed tally is seven; no Lean work was performed.
+The [historical package](https://github.com/1337isnot1337/solved-conjectures/tree/fa34b035f4853c8e790bd520171739ee17923a56/results/sun-zhao-iterated-ratios/) includes both reviews and a multi-source prior-resolution audit. The full journal version and author's Maple archive were inaccessible; the resolved statement is the fully inspected latest arXiv conjecture. Neither the first-ratio theorem nor the different quadratic log-convexity transform is misidentified as the target. This subgroup's reviewed tally is seven; no Lean work was performed.
 
 ## 2026-11-21 — Han–Sabag–Kostina–Hassibi's conjecture
 

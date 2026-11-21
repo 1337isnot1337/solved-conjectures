@@ -17,7 +17,6 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Chen–Khare–Sahi's conjecture](results/chen-khare-sahi-macdonald/) | ⬜ |
 | [Ferreira–Simon's conjecture](results/ferreira-simon-beta-prime/) | ⬜ |
 | [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |
-| [Sun–Zhao's conjecture](results/sun-zhao-iterated-ratios/) | 🟡 |
 | [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | ✅ |
 | [Gröchenig's problem](results/grochenig-zero-density/) | ⬜ |
 | [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | ⬜ |
@@ -33,7 +32,6 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 |
 | [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 |
 | [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
-| [Fang–Zhang–Zhao's infinite-log-convexity conjecture](results/fang-zhang-zhao/) | 🟡 |
 | [Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture](results/kvz-bessel-unimodality/) | ⬜ |
 | [Simon's stable-infimum conjecture](results/simon-stable-infimum/) | ⬜ |
 | [Ferreira–Simon's stochastic-order conjecture](results/ferreira-simon-stochastic/) | ⬜ |
@@ -60,7 +58,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
 | [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
 | [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟢 |
-| [Zhang's Question 8.4: deletion values of the lonely runner](results/zhang-deletion-values/) | 🟡 |
+| [Zhang's Question 8.4: deletion values of the lonely runner](results/zhang-deletion-values/) | ✅ |
 | [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |
 | [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟢 |
 | [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟢 |

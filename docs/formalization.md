@@ -1250,11 +1250,15 @@ The complete 20-module hosted gate passed at `a8577e5da31b851ce64333aa921b39c662
 
 ## Fang–Zhang–Zhao universal conjecture
 
+This formalizes a previously resolved result. A complete ordinary disproof was public by 26 October 2026; it is excluded from new-resolution credit. See the [priority correction](../research/campaign-20261121/PRIOR_RESOLUTION_CORRECTION.md).
+
 `Conjectures.FangZhangZhao.conjecture_false` checks the source binomial sum and its iterated log-convexity operator using the exact parameter m=6. The stronger all-m≥4 theorem remains unformalized. The module build, standard axiom check, and isolated kernel replay passed; the full repository gate is pending.
 
 ## Sun–Zhao iterated ratios
 
-`Conjectures.SunZhao.conjecture_false` directly computes the source recurrence over the rationals and refutes its even-order clause at k=12, n=12. The module build, standard axiom check, and isolated kernel replay passed; the full repository gate is pending. Source-version and priority limits remain documented in the result package.
+This formalizes a previously resolved result. A complete ordinary disproof was public by 27 October 2026; it is excluded from new-resolution credit. See the [priority correction](../research/campaign-20261121/PRIOR_RESOLUTION_CORRECTION.md).
+
+`Conjectures.SunZhao.conjecture_false` directly computes the source recurrence over the rationals and refutes its even-order clause at k=12, n=12. The module build, standard axiom check, and isolated kernel replay passed; the full repository gate is pending. The prior ordinary proof and the source match are documented in the correction record.
 
 ## Zhang deletion values
 

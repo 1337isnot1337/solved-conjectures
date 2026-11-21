@@ -63,13 +63,6 @@ python3 results/ferreira-simon-beta-prime/verify.py
 ```
 
 
-The [Sun–Zhao checker](../results/sun-zhao-iterated-ratios/check.py) uses only exact integers and rational arithmetic. It regenerates the source sequence, checks two binomial representations, compares the two 582535-bit products, certifies a strictly negative fourteenth logarithmic difference with an explicit series remainder, and directly applies twelve ratio iterations. The [proof](../results/sun-zhao-iterated-ratios/PROOF.md) identifies why the violated inequality belongs to the conjectured retained sequence.
-
-```bash
-python3 results/sun-zhao-iterated-ratios/check.py
-```
-
-
 The [Han–Sabag–Kostina–Hassibi checker](../results/han-sabag-kostina-hassibi/verify.py) performs 16 exact rational and symbolic checks of the feasible Lyapunov solution, all four sparse power thresholds, the strict objective gap, the determinant factorization and the open family. SymPy supplies only symbolic identity checks. The [written proof](../results/han-sabag-kostina-hassibi/PROOF.md) supplies the exhaustive classification and full disproof.
 
 ```bash
@@ -118,13 +111,7 @@ python3 results/chen-kitaev-zhang-records/verify.py
 python3 results/zhu-jacobi-stirling/verify.py
 ```
 
-The [Hoggatt disproof](../results/fang-zhang-zhao/) has a symbolic parameter identity, exact integer witnesses, and independent plane-partition enumeration. These computations check the algebra behind the unrestricted written disproof. The separate Sturm conjecture was already proved in October 2026; its independent reproof and diagnostics are retained only as [credited research](../research/fang-zhang-zhao-sturm/).
-
-```bash
-python3 results/fang-zhang-zhao/verify.py
-python3 results/fang-zhang-zhao/independent_check.py
-python3 results/fang-zhang-zhao/independent_symbolic_check.py
-```
+The Fang–Zhang–Zhao infinite-log-convexity and Sun–Zhao iterated-ratio disproofs were already public before this campaign. Their duplicate result packages and computational workflow entries have been removed. The [priority correction](../research/campaign-20261121/PRIOR_RESOLUTION_CORRECTION.md) links the immutable prior proofs. Existing unique Lean modules are preserved, with their exact previously checked scope in [Lean status](lean-status.md#formalizations-of-previously-resolved-results). The separate prior Sturm reproof remains only as [credited research](../research/fang-zhang-zhao-sturm/).
 
 These are the commands in [the verification workflow](../.github/workflows/verify.yml). They include finite tests, exact certificates, and exhaustive searches; their mathematical roles are explained in the corresponding proof notes. A passing computation is not a claim that a full theorem has been formalized.
 

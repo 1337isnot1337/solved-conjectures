@@ -21,9 +21,11 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 ## Resolution count
 
-This section tracks this subgroup's packages. The [joint eleven-family checkpoint](../2026-11-21-joint-results/) reviews a selected thirteen-package set: seven packages from the current four-worker group and six from this subgroup, including Han–Sabag–Kostina–Hassibi after its additional mathematical, source and priority reviews. It excludes corrected-source Novelli–Thibon from the strict tally and groups the two López Pouso–Segura packages together, giving eleven named families. Other packages in this subgroup's live table remain outside that selected review pending additional cross-review.
+This section tracks this subgroup's packages. The [joint ten-family checkpoint](../2026-11-21-joint-results/) reviews a selected twelve-package set: seven packages from the other four-worker group and five from this subgroup, including Han–Sabag–Kostina–Hassibi after its additional reviews. Fang–Zhang–Zhao was removed after a confirmed prior resolution. The joint tally also excludes corrected-source Novelli–Thibon and groups the two López Pouso–Segura packages together. Other packages in this subgroup's live table remain outside that selected review unless separately admitted.
 
-Complete proposed resolutions with separate internal review and a documented current status audit: **12** at this checkpoint. All remain unrefereed.
+Complete proposed resolutions with separate internal review and a documented current status audit: **10** at this checkpoint. All remain unrefereed.
+
+The [confirmed prior-resolution correction](PRIOR_RESOLUTION_CORRECTION.md) removes Fang–Zhang–Zhao infinite log-convexity and Sun–Zhao iterated ratios. Earlier historical counts are superseded. Kovalev and Brown–Mol are not included at this checkpoint.
 
 | Conjecture | Result | Evidence |
 | --- | --- | --- |
@@ -32,12 +34,10 @@ Complete proposed resolutions with separate internal review and a documented cur
 | Chen–Khare–Sahi's conjecture | Disproved the full Macdonald Muirhead-semiring implication with an exhaustive exact separating certificate and infinite counterexample families; the weaker evaluation inequality is separate | [Package](../../results/chen-khare-sahi-macdonald/) · [Issue 201](https://github.com/1337isnot1337/solved-conjectures/issues/201) |
 | Ferreira–Simon's conjecture | Proved the full beta-prime self-convolution identity by analytic Mellin transforms for all parameters in the original statement; one resolution | [Package](../../results/ferreira-simon-beta-prime/) · [Issue 200](https://github.com/1337isnot1337/solved-conjectures/issues/200) |
 | Lyon's conjecture | Proved strict transformed-median monotonicity for every positive real gamma shape, with analytic tails and an essential exact interval certificate covering the whole remaining domain | [Package](../../results/lyon-gamma-median/) · [Issue 196](https://github.com/1337isnot1337/solved-conjectures/issues/196) |
-| Sun–Zhao's conjecture | Disproved the full universal alternating log-behavior assertion for iterated ratios, with an exact retained-block certificate; one resolution | [Package](../../results/sun-zhao-iterated-ratios/) · [Issue 198](https://github.com/1337isnot1337/solved-conjectures/issues/198) |
 | Han–Sabag–Kostina–Hassibi's conjecture | Disproved the full Lyapunov positivity sparse-optimality assertion by an exact strict gap and an open family; separate communication claims are outside scope | [Package](../../results/han-sabag-kostina-hassibi/) · [Issue 197](https://github.com/1337isnot1337/solved-conjectures/issues/197) |
 | Gröchenig's problem | Disproved the full universal upper-density comparison by one infinite Gaussian shift sum; the separate lower comparison is not counted or resolved | [Package](../../results/grochenig-zero-density/) · [Issue 191](https://github.com/1337isnot1337/solved-conjectures/issues/191) |
 | Vishnyakova's conjecture | Proved the full outer-root-radius conjecture for every degree and positive weight, with a stronger disk bound; one result | [Package](../../results/vishnyakova-root-radius/) · [Issue 182](https://github.com/1337isnot1337/solved-conjectures/issues/182) |
 | López Pouso–Segura's conjectures | Proved the complete sign, strict monotonicity and exact limit assertions for the three linked Bessel-weight sequences; one result | [Package](../../results/lopez-pouso-segura-bessel/) · [Issue 177](https://github.com/1337isnot1337/solved-conjectures/issues/177) |
-| Fang–Zhang–Zhao's infinite-log-convexity conjecture | Disproved for every Hoggatt parameter at least four; one resolution of the full universal statement | [Package](../../results/fang-zhang-zhao/) · [Issue 160](https://github.com/1337isnot1337/solved-conjectures/issues/160) |
 | McCrea's conjecture | Proved unique linear-density crossover for every permitted modulus and density | [Package](../../results/mccrea-single-crossover/) · [Issue 168](https://github.com/1337isnot1337/solved-conjectures/issues/168) |
 
 A previous six-result checkpoint incorrectly included the already-refuted Hankel-product assertion. Simon's 2012 theorem and repository issue 94 settle that exact statement; it has been removed from this tally and the result catalogue. The new examples do not establish novelty.

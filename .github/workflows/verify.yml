@@ -58,19 +58,12 @@ jobs:
         run: python results/ferreira-simon-beta-prime/verify.py
       - name: Certify Lyon gamma-median monotonicity on all real cells
         run: python results/lyon-gamma-median/verify.py
-      - name: Check Sun-Zhao exact iterated-ratio counterexample
-        run: python results/sun-zhao-iterated-ratios/check.py
       - name: Check Han-Sabag-Kostina-Hassibi exact Lyapunov counterexample
         run: python results/han-sabag-kostina-hassibi/verify.py
       - name: Check Grochenig Gaussian-block identities and error budgets
         run: python results/grochenig-zero-density/verify.py
       - name: Check Vishnyakova polynomial-transform identities
         run: python results/vishnyakova-root-radius/verify.py
-      - name: Check Hoggatt identities and independent counterexamples
-        run: |
-          python results/fang-zhang-zhao/verify.py
-          python results/fang-zhang-zhao/independent_check.py
-          python results/fang-zhang-zhao/independent_symbolic_check.py
       - name: Check Franklin profile identities
         run: python results/mccrea-single-crossover/verify.py
       - name: Check Pula–Song–Wanless identities and parameter conventions
