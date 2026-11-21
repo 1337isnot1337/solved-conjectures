@@ -59,3 +59,5 @@ For the reverse bound, begin with a minimizer $G'$ at degree $k+1$ and write $B'
 $$\mathbb E P(B'+D')=P(B')+\tfrac12v(e^{(u-v)/2}+o(1)).$$
 
 The minimum at degree $k$ is no greater than this expectation times $d_n$. Since $v=o(1)$ and $u$ is bounded, this is the upper bound in (1). All error claims hold along arbitrary sequences in the stated range. No numerical order threshold or conclusion for every sublinear degree follows.
+
+The [exact arithmetic check](verify_positive_density.py) tests the fixed-table permutation count, the forward and reverse matching increments, and the normalized coefficient estimate used in the analytic input. It exercises 48 tables, 375 matching steps and 9,717 coefficient comparisons.
