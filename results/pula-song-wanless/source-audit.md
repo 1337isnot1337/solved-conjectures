@@ -105,3 +105,7 @@ The audit used both available web indexes and direct primary pages. Representati
 The user repository was compared before work and at the parent's integration checkpoints; no existing PSW threshold solution was identified there. A separate 2026 Dittert repository's source notes mention the older PSW reduction and its parameter assumptions, but contain dimension-specific Dittert work, not a general PSW threshold proof. That repository was treated as a pointer, not as authority for the mathematics.
 
 The Song–Beasley article remains checked through its primary abstract plus a complete professional review, rather than its inaccessible full text. Publicly unindexed or unpublished work cannot be excluded. No author was contacted, and no email was sent. These are the remaining coverage limits, not mathematical dependencies of the candidate proof.
+
+## Supplemental public-repository searches
+
+An additional [repository source audit](../../research/minc/repository_prior_art_audit.md) records exact-author and DOI searches, narrower searches in five public proof archives, and the closest mathematical bodies inspected. No earlier matching full theorem was identified in those results. Capped searches and incomplete indexing prevent an exhaustive-priority conclusion. The existing access limits and provisional novelty assessment remain in force.
