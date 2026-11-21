@@ -105,3 +105,15 @@ The [Chollet Gaussian replacement audit](sign-matrices/chollet_gaussian_replacem
 
 The [supplemental public-repository source audit](repository_prior_art_audit.md) records additional searches for earlier PSW threshold proofs and general compound Perron approximation results. It describes the bodies actually inspected and the limits of capped and incomplete search indexes. It does not turn internal review into external confirmation.
 
+
+## Quadratic dominance, boundary minima, and source exclusions
+
+The [quadratic permanental-dominance checkpoint](combinatorial/quadratic_permanental_dominance.md) records the named subsidiary conjecture linked from C30 and C42. It proves direct-sum closure and shows that a first counterexample, if one exists, can be chosen singular with positive diagonal and connected support. It also gives exact subset-module and standard-block deficit formulas. The [independent review](inequalities/quadratic_dominance_review.md) checks the reductions. The final all-order bound remains unproved; generic positivity, row sums and diagonal bounds do not imply it. Reproducible finite diagnostics are retained as diagnostics only.
+
+The [Gyires boundary-minimum theorem](inequalities/gyires_boundary_minimum.md) proves that the order-three zero-diagonal uniform matrix is a strict local minimum of the stronger Gram ratio on the full doubly stochastic polytope. Its ratio is above the conjectured lower bound. Thus a full proof must control boundary minimum values, rather than exclude boundary minima. An [exact certificate](inequalities/gyires_boundary_certificates.py) checks the identities. The [polarization note](inequalities/gyires_polarization.md) isolates a sufficient balanced stable-polynomial norm inequality and explains why negative association and the capacity theorem do not supply it.
+
+The [Chollet border-operator note](sign-matrices/chollet_border_operator.md), with [exact complex checks](sign-matrices/chollet_border_operator.py), identifies the required product-vector positivity and disproves a uniform positive-averaging extension of the existing scalar induction. It does not prove full operator positivity or Chollet's conjecture.
+
+The [updated Lih–Wang source audit](sign-matrices/lihw_source_audit.md) gives the exact binomial-average formulation. A proposed coefficientwise shortcut is withdrawn because its next-to-top case is the false Holens inequality. Wanless's superpolynomial near-perfect/perfect matching ratio obstruction rules out polynomially weakened versions too. The currently published Kopotun estimates do not reach the required half-segment. The complete C34 inequality remains open here.
+
+No item in this checkpoint increases the full-resolution count.
