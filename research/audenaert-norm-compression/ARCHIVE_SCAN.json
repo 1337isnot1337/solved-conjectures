@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-21",
+  "max_entry_bytes": 20000000,
+  "normalization": "Unicode NFKC then casefold",
+  "pattern": "audenaert|norm[\\s-]{0,3}compression|0702186|414283",
+  "scope": "native UTF-8 bodies only; binary, embedded compressed and larger bodies not searched by this pass",
+  "archives": [
+    {
+      "archive": "trure.tar.gz",
+      "text_files": 75410,
+      "hits": 103,
+      "pin": "de22a48707da1c7a48d032909e821bd481947b45"
+    },
+    {
+      "archive": "artificialzeng.tar.gz",
+      "text_files": 14099,
+      "hits": 5,
+      "pin": "65eb1f5a92a3a8b80c9e92187825ac9231f86fb2"
+    },
+    {
+      "archive": "mxym.tar.gz",
+      "text_files": 23630,
+      "hits": 26,
+      "pin": "4a51ff772a566451627b9ff41f6248518561d9d4"
+    },
+    {
+      "archive": "aim.tar.gz",
+      "text_files": 4624,
+      "hits": 23,
+      "pin": "b2ec0fac559f532fc0ed04fce81deea0ce07c68b"
+    },
+    {
+      "archive": "openai.tar.gz",
+      "text_files": 173542,
+      "hits": 89,
+      "pin": "4eaee87548250b2682affda7d05d947c05554bae"
+    },
+    {
+      "archive": "principia-main.tar.gz",
+      "text_files": 1453,
+      "hits": 0,
+      "skipped": {
+        "large": 0,
+        "nul_prefix": 273,
+        "not_utf8": 2
+      },
+      "pin": "47371706c400c79d06e3fb62190fcf6f7a725c85"
+    }
+  ]
+}
