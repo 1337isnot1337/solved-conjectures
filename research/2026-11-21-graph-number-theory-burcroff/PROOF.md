@@ -8,26 +8,30 @@ Write $K[u,t]$ for the complete multipartite graph with $t$ parts, each of size 
 
 **Burcroff's conjecture.** For every direct product
 
-$$G=\prod_{i=1}^d K[u_i,t_i],$$
+```math
+G=\prod_{i=1}^d K[u_i,t_i],
+```
 
 one has $\operatorname{IR}(G)=\alpha(G)$.
 
 The direct product has coordinatewise vertex set, with two vertices adjacent precisely when their entries belong to different parts in every coordinate.
 
-The statement appears as Conjecture 1.1 in Alon and Defant [AD]. Their Theorem 1.2 leaves 37 possible exceptions. The argument below applies uniformly in the previously relevant range $d\ge4$ and $\min_i t_i\ge3$, so it requires no enumeration of those graphs.
+The statement is Conjecture 6.1 in the 2018 preprint [B], and Conjecture 1.1 in Alon and Defant [AD]. Their Theorem 1.2 leaves 37 possible exceptions. The argument below applies uniformly in the previously relevant range $d\ge4$ and $\min_i t_i\ge3$, so it requires no enumeration of those graphs.
 
 ## Published inputs
 
-Relabel coordinates so $t_1\ge\cdots\ge t_d=t$, and set $N=|V(G)|$. We use these results from [AD]:
+Relabel coordinates so $t_1\ge\cdots\ge t_d=t$, and set $N=|V(G)|$. We use the following published results:
 
-1. $\alpha(G)=N/t$ (page 2).
-2. If $S$ is irredundant and $Q$ consists of its vertices that have a neighbor in $S$, then $|Q|\le2^d$ (Theorem 1.3).
+1. $\alpha(G)=N/t$ ([AD], page 2).
+2. If $S$ is irredundant and $Q$ consists of its vertices that have a neighbor in $S$, then $|Q|\le2^d$ ([AD], Theorem 1.3).
 3. For any $A\subseteq V(G)$, its **open** neighborhood satisfies
 
-   $$\frac{|\partial A|}{N}\ge\left(\frac{|A|}{N}\right)^{p_t},\qquad p_t=\frac{\log(t/(t-1))}{\log t}.$$
+   ```math
+\frac{|\partial A|}{N}\ge\left(\frac{|A|}{N}\right)^{p_t},\qquad p_t=\frac{\log(t/(t-1))}{\log t}.
+```
 
-   This is Corollary 1.1, using the definition of $\partial A$ on page 3.
-4. The conjecture is already proved when $d\le3$ or $t\le2$ (page 2 and the beginning of the proof of Theorem 1.2).
+   This is [AD], Corollary 1.1, using the definition of $\partial A$ on page 3.
+4. The conjecture is already proved when $d\le3$ or $t\le2$ ([B], Theorem 5.1; also [AD], page 2 and the beginning of the proof of Theorem 1.2).
 
 The remaining proof is elementary. In particular, the independent-set stability theorem and the exceptional-graph reduction in [AD] are not inputs.
 
@@ -35,7 +39,9 @@ The remaining proof is elementary. In particular, the independent-set stability 
 
 **Lemma 1.** Let $S$ be an irredundant set in any finite simple graph on $N$ vertices. Let $L$ be the vertices isolated in the induced graph $G[S]$, and put $Q=S\setminus L$. Then
 
-$$|L|+2|Q|+|\partial L|\le N. \tag{1}$$
+```math
+|L|+2|Q|+|\partial L|\le N. \tag{1}
+```
 
 **Proof.** For each $q\in Q$, irredundance supplies a vertex $p_q$ outside $S$ adjacent to $q$ and to no other member of $S$. To see this directly, select a vertex in $N[S]\setminus N[S\setminus\{q\}]$. It cannot be a member of $S\setminus\{q\}$, because each such vertex lies in its own closed neighborhood. It cannot be $q$, because $q$ has a neighbor in $S\setminus\{q\}$. Thus it is outside $S$ and has the required adjacency.
 
@@ -49,61 +55,85 @@ The distinction between the open neighborhood $\partial L$ and the closed neighb
 
 **Lemma 2.** Let $t\ge3$ be an integer and put
 
-$$p=p_t=\frac{\log(t/(t-1))}{\log t},\qquad
-a=\frac1t-\frac{16}{t^4},\qquad b=\frac1t.$$
+```math
+p=p_t=\frac{\log(t/(t-1))}{\log t},\qquad
+a=\frac1t-\frac{16}{t^4},\qquad b=\frac1t.
+```
 
 For every $x\in[a,b]$,
 
-$$x^p\ge1-\frac2t+x. \tag{2}$$
+```math
+x^p\ge1-\frac2t+x. \tag{2}
+```
 
 The inequality is strict for $a\le x<b$.
 
 **Proof.** We have $0<a<b<1$ and $0<p<1$. Consequently
 
-$$h(x)=x^p-x-\left(1-\frac2t\right)$$
+```math
+h(x)=x^p-x-\left(1-\frac2t\right)
+```
 
 is concave. Since $b^p=(t-1)/t$, we have $h(b)=0$. It remains to prove $h(a)>0$.
 
 Put $\delta=16/t^3$ and $q=1-\delta$, so $a=q/t$. The assertion $h(a)>0$ is equivalent to
 
-$$q^p>1-\frac{\delta}{t-1}. \tag{3}$$
+```math
+q^p>1-\frac{\delta}{t-1}. \tag{3}
+```
 
 First suppose $t\ge4$. Then $0<\delta\le1/4$ and
 
-$$-\log q=\int_0^\delta\frac{du}{1-u}
-\le\frac{\delta}{1-\delta}\le\frac43\delta.$$
+```math
+-\log q=\int_0^\delta\frac{du}{1-u}
+\le\frac{\delta}{1-\delta}\le\frac43\delta.
+```
 
 Moreover,
 
-$$p=\frac{\log(1+1/(t-1))}{\log t}
-<\frac1{(t-1)\log t}.$$
+```math
+p=\frac{\log(1+1/(t-1))}{\log t}
+<\frac1{(t-1)\log t}.
+```
 
 The elementary integral estimate
 
-$$\log2=\int_1^2\frac{du}{u}>\frac23$$
+```math
+\log2=\int_1^2\frac{du}{u}>\frac23
+```
 
 follows, for example, by integrating the tangent-line lower bound for the strictly convex function $1/u$ at $u=3/2$. Therefore $\log t\ge\log4>4/3$. Combining these bounds gives
 
-$$-p\log q<\frac{\delta}{t-1}.$$
+```math
+-p\log q<\frac{\delta}{t-1}.
+```
 
 Using $e^y\ge1+y$ now proves
 
-$$q^p=e^{p\log q}\ge1+p\log q>1-\frac{\delta}{t-1},$$
+```math
+q^p=e^{p\log q}\ge1+p\log q>1-\frac{\delta}{t-1},
+```
 
 as required.
 
 When $t=3$, we have $q=11/27$. The integer inequality $3^5=243<256=2^8$ implies
 
-$$p=\frac{\log(3/2)}{\log3}<\frac38.$$
+```math
+p=\frac{\log(3/2)}{\log3}<\frac38.
+```
 
 Since $0<q<1$,
 
-$$q^p>q^{3/8}>\frac{19}{27}=1-\frac{(16/27)}2.$$
+```math
+q^p>q^{3/8}>\frac{19}{27}=1-\frac{(16/27)}2.
+```
 
 The second strict inequality has the exact integer certificate
 
-$$11^3 27^5=19\,098\,395\,217
->16\,983\,563\,041=19^8.$$
+```math
+11^3 27^5=19\,098\,395\,217
+>16\,983\,563\,041=19^8.
+```
 
 This proves (3) in the remaining case.
 
@@ -115,29 +145,41 @@ If some $t_i=1$, then $G$ has no edges and the conclusion is immediate. The publ
 
 Let $S$ be a maximum irredundant set, and use the partition $S=L\sqcup Q$ from Lemma 1. Every independent set is irredundant, so
 
-$$|S|\ge\alpha(G)=N/t.$$
+```math
+|S|\ge\alpha(G)=N/t.
+```
 
 Because $L$ is independent, $|L|\le N/t$. On the other hand, the published bound $|Q|\le2^d$ gives
 
-$$\frac{|L|}{N}=\frac{|S|-|Q|}{N}\ge\frac1t-\frac{2^d}{N}.$$
+```math
+\frac{|L|}{N}=\frac{|S|-|Q|}{N}\ge\frac1t-\frac{2^d}{N}.
+```
 
 Each factor has at least $t$ vertices, and thus $N\ge t^d$. Since $d\ge4$ and $2/t<1$,
 
-$$\frac{2^d}{N}\le\left(\frac2t\right)^d\le\frac{16}{t^4}.$$
+```math
+\frac{2^d}{N}\le\left(\frac2t\right)^d\le\frac{16}{t^4}.
+```
 
 Consequently, with $x=|L|/N$,
 
-$$\frac1t-\frac{16}{t^4}\le x\le\frac1t. \tag{4}$$
+```math
+\frac1t-\frac{16}{t^4}\le x\le\frac1t. \tag{4}
+```
 
 Apply the published isoperimetric inequality to $L$, and use Lemma 1:
 
-$$x+2\frac{|Q|}{N}+x^{p_t}\le1.$$
+```math
+x+2\frac{|Q|}{N}+x^{p_t}\le1.
+```
 
 It follows that
 
-$$\frac{|S|}{N}=x+\frac{|Q|}{N}
+```math
+\frac{|S|}{N}=x+\frac{|Q|}{N}
 \le\frac{1+x-x^{p_t}}2
-\le\frac1t,$$
+\le\frac1t,
+```
 
 where the last step is Lemma 2 and (4). Hence $\operatorname{IR}(G)\le N/t=\alpha(G)$. The opposite inequality always holds, completing the proof. $\square$
 
@@ -161,4 +203,4 @@ The use of three existing mathematical facts does not make this an independent r
 
 [AD] Noga Alon and Colin Defant, *Isoperimetry, stability, and irredundance in direct products*, Discrete Mathematics **343** (7), 111902 (2020). DOI: [10.1016/j.disc.2020.111902](https://doi.org/10.1016/j.disc.2020.111902). [arXiv:1904.02595](https://arxiv.org/abs/1904.02595). [Author-hosted full text](https://web.math.princeton.edu/~nalon/PDFS/isostab.pdf).
 
-[B] Amanda Burcroff, *Domination parameters of the unitary Cayley graph of $\mathbb Z/n\mathbb Z$*, Discussiones Mathematicae Graph Theory **43** (1), 95–114 (2023), first circulated in 2018. [arXiv:1809.04769](https://arxiv.org/abs/1809.04769).
+[B] Amanda Burcroff, *Domination parameters of the unitary Cayley graph of $\mathbb Z/n\mathbb Z$*, Discussiones Mathematicae Graph Theory **43** (1), 95–114 (2023), first circulated in 2018. DOI: [10.7151/dmgt.2352](https://doi.org/10.7151/dmgt.2352). [arXiv:1809.04769v2](https://arxiv.org/pdf/1809.04769), where the numbering of Theorem 5.1 and Conjecture 6.1 used above is verified.
