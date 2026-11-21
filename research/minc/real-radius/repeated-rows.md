@@ -54,3 +54,10 @@ The [sharp general radius](https://yair-lavi.com/mincs-list/problem-13/index.htm
 allows arbitrary real line-sum-one matrices. The argument does not
 determine it or the sharp radius of the repeated-row family.
 The formula is elementary and carries no historical priority claim.
+
+Hwang already proved monotonicity for the nonnegative doubly stochastic
+subclass with all but one row identical. The publisher's abstract states
+that result explicitly. The signed unit-ball proof above also applies
+after an exceptional entry becomes negative. We did not inspect the full
+1986 proof and do not establish priority for this extension.
+[Hwang (1986)](https://doi.org/10.1016/0024-3795(86)90296-X)
