@@ -81,7 +81,7 @@ def occupation_check(basis, a, b):
     assert actual.y == 0 and actual.x >= lower
     assert actual.x == sum(prod(1+v for v in alpha[:a])*p for alpha,p in weights.items())
     sq = [[QQ_I.convert(norm(z)) for z in row] for row in cross]
-    assert permanent(gram_cross(sq)).x <= actual.x**2
+    assert permanent(gram_cross(sq)).x < actual.x
     for k in range(2, min(a,b)+1):
         if a%k or b%k:
             continue
@@ -99,6 +99,13 @@ def occupation_check(basis, a, b):
 
 
 if __name__ == '__main__':
+    e_lower = QQ(271,100)
+    log2_lower = 2 * (QQ(1,3) + QQ(1,81) + QQ(1,1215))
+    assert QQ(1,2) + 1/(3*e_lower) + 1/(6*e_lower**2) < QQ(647,1000)
+    assert e_lower * log2_lower**2/2 > QQ(650,1000)
+    diagonal = [[one,zero,zero], [zero,zero,zero], [zero,QQ_I.dtype(0,1),zero]]
+    squares = [[QQ_I.convert(norm(z)) for z in row] for row in diagonal]
+    assert permanent(gram_cross(diagonal)) == permanent(gram_cross(squares)) == QQ_I.convert(4)
     count = 0
     for size in (3, 4, 5):
         basis = rotation_basis(size)
