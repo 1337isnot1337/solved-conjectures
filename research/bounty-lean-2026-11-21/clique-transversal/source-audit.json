@@ -1,0 +1,130 @@
+{
+  "checked_at": "2026-11-21",
+  "problem_url": "https://conjectures.io/problems/erdos151-erdos-151",
+  "issue_url": "https://github.com/1337isnot1337/solved-conjectures/issues/228",
+  "displayed_bounty_usd_approx": 1676,
+  "attempts": 0,
+  "task_id": "fc-v2-erdos151-erdos-151-aad50b2e6a53cb3e2576ef21-formalized",
+  "task_commitment": "sha256:9e985da085dbfa70ff9a7fdd411ee284eb535ba17e669f0edbba49758d68bb4f",
+  "source_metadata": {
+    "adapter_version": 2,
+    "ams_subjects": [
+      5
+    ],
+    "answer_occurrences": [],
+    "category": "research open",
+    "classification": "DIRECT_PROP",
+    "contains_answer_annotation": false,
+    "contains_sorry_in_type": false,
+    "contains_sorry_in_value": false,
+    "declaration_kind": "theorem",
+    "depends_on_sorry": true,
+    "docstring": "For a graph $G$, let $\\tau(G)$ denote the minimal number of vertices that include at least one\nfrom each maximal clique of $G$ on at least two vertices. Let $H(n)$ be maximal such that every\ntriangle-free graph on $n$ vertices contains an independent set on $H(n)$ vertices.\n\nIf $G$ is a graph on $n$ vertices, is $\\tau(G)\\leq n-H(n)$?\n\nErdős remarked that this is perhaps completely wrongheaded [Er88].\n",
+    "finite_constructors": [],
+    "formal_proof_kind": null,
+    "formal_proof_link": null,
+    "has_parameters": true,
+    "is_prop": true,
+    "module": "FormalConjectures.ErdosProblems.«151»",
+    "pointer_target": null,
+    "references": [
+      "[erdosproblems.com/151](https://www.erdosproblems.com/151)",
+      "[Er88] Erdős, P., *Problems and results in combinatorial analysis and graph theory*. Discrete Math. (1988), 81-92.",
+      "[EGT92] Erdős, P. and Gallai, T. and Tuza, Zs., *Covering the cliques of a graph with vertices*. Discrete Math. (1992), 279-289."
+    ],
+    "source_path": "FormalConjectures/ErdosProblems/151.lean",
+    "supported_modes": [
+      "formalized",
+      "counterexample"
+    ],
+    "theorem": "Erdos151.erdos_151",
+    "transitive_axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "type_hash": "sha256:8fe6fe1f34c475941fec16b696012279f56c5dbff94a1c1349a21048a017e61a",
+    "type_pretty": "∀ (n : ℕ) (G : SimpleGraph (Fin n)), Erdos151.cliqueTransversalNumber G ≤ n - Erdos151.H n"
+  },
+  "definition_hashes": [
+    {
+      "kind": "definition",
+      "module": [
+        "FormalConjectures",
+        "ErdosProblems",
+        "151"
+      ],
+      "name": [
+        "Erdos151",
+        "H"
+      ],
+      "sha256": "sha256:eb6a491636db405a1b7302377cc59a93de96240f2bc05b3b319f42e24d56f597"
+    },
+    {
+      "kind": "definition",
+      "module": [
+        "FormalConjectures",
+        "ErdosProblems",
+        "151"
+      ],
+      "name": [
+        "Erdos151",
+        "IsBigMaximalClique"
+      ],
+      "sha256": "sha256:501fc2447e92a5eb78ea822f3fc463677aff09802638b54e021522093f6f4a75"
+    },
+    {
+      "kind": "definition",
+      "module": [
+        "FormalConjectures",
+        "ErdosProblems",
+        "151"
+      ],
+      "name": [
+        "Erdos151",
+        "IsCliqueTransversal"
+      ],
+      "sha256": "sha256:e77f1d0af3afe1f9a6a73a228d81ff68c7f84705a5d9b4b03cb86eda455cce47"
+    },
+    {
+      "kind": "definition",
+      "module": [
+        "FormalConjectures",
+        "ErdosProblems",
+        "151"
+      ],
+      "name": [
+        "Erdos151",
+        "cliqueTransversalNumber"
+      ],
+      "sha256": "sha256:2f354857b40c30aac7834c8d66acd06779667646bf3e72838d46f511f9723b0d"
+    },
+    {
+      "kind": "theorem",
+      "module": [
+        "FormalConjectures",
+        "ErdosProblems",
+        "151"
+      ],
+      "name": [
+        "Erdos151",
+        "erdos_151"
+      ],
+      "sha256": "sha256:70559809428d1f213ba5b962718f4083921d7ca549924abebeec469f8eb9b1cd"
+    }
+  ],
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "verification_policy": {
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "static_policy_sha256": "sha256:881edec4c5d015eba055312e94554c8e6db2c5f23336374f483f6500d6e8be13",
+    "version": "fc-verification-policy-v1"
+  },
+  "status": "Full target still open in checked sources. No solution, counterexample, or submission.",
+  "source_limitation": "Pinned source definitions are audit-patched and not yet reconstructed here; upstream main is not identical."
+}

@@ -1,0 +1,4845 @@
+{
+  "checked": "2026-11-21",
+  "catalog_blob": "d807901a74d1b273f583e56cbb673fc9819a58d7",
+  "range": [
+    351,
+    650
+  ],
+  "filter": {
+    "current_status": "Solved",
+    "lean_proof_prefix": "No"
+  },
+  "limits": "Searches locate prior claims, not verified proofs; top20 results per query. All100 queries eventually returned;21 were deferred after an initial rate-limit response. No body/contact fields retained.",
+  "entries": [
+    {
+      "id": "JSP-000356",
+      "title": "[How many initial products of an increasing integer sequence can be squares?](catalog-0301-0400.md#JSP-000356)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5442,
+          "title": "JSP-000356: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5442"
+        },
+        {
+          "number": 1427,
+          "title": "JSP-000356: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1427"
+        },
+        {
+          "number": 4575,
+          "title": "JSP-000356: Lean formalization — (4,16,256): first 3 initial products all squares",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4575"
+        },
+        {
+          "number": 3957,
+          "title": "JSP-000356: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3957"
+        },
+        {
+          "number": 2733,
+          "title": "JSP-000356: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2733"
+        },
+        {
+          "number": 2613,
+          "title": "JSP-000356: Lean formalization — initial products as squares",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2613"
+        },
+        {
+          "number": 1763,
+          "title": "catalog: record Lean formalization for JSP-000356",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1763"
+        },
+        {
+          "number": 1086,
+          "title": "JSP-000356: Initial products as squares — verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1086"
+        },
+        {
+          "number": 174,
+          "title": "Formalize JSP-000356 / Erdős 437: full square-prefix answer",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/174"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000357",
+      "title": "[How large can a subset of an integer interval be if no two elements sum to a square?](catalog-0301-0400.md#JSP-000357)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5440,
+          "title": "JSP-000357: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5440"
+        },
+        {
+          "number": 1428,
+          "title": "JSP-000357: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1428"
+        },
+        {
+          "number": 4581,
+          "title": "JSP-000357: corrected Lean formalization — 13 elements in [1,30], all 169 ordered pairs (incl. a+a) avoid squares",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4581"
+        },
+        {
+          "number": 4975,
+          "title": "Formalize JSP-000357 (Erdős Problem #438 / Erdős–Sárközy · Square-Sum-Free Sequences)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4975"
+        },
+        {
+          "number": 3959,
+          "title": "JSP-000357: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3959"
+        },
+        {
+          "number": 4727,
+          "title": "JSP-000357: Lean formalization (sum-square-free subset)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4727"
+        },
+        {
+          "number": 2734,
+          "title": "JSP-000357: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2734"
+        },
+        {
+          "number": 2553,
+          "title": "JSP-000357: Lean formalization — square-sum-free subsets",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2553"
+        },
+        {
+          "number": 821,
+          "title": "Record formal Lean proof for JSP-000357 (Square-sum-free sequences)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/821"
+        },
+        {
+          "number": 1764,
+          "title": "catalog: record Lean formalization for JSP-000357",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1764"
+        },
+        {
+          "number": 321,
+          "title": "JSP-000357: Lean formalization of Massias's 11/32 square-sum-free construction (Erdős 438)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/321"
+        },
+        {
+          "number": 4567,
+          "title": "JSP-000357: Lean formalization — 10 elements in [1,20], no two sum to a square",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4567"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000358",
+      "title": "[Must every finite coloring of the positive integers contain two same-colored integers whose sum is a perfect power?](catalog-0301-0400.md#JSP-000358)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5438,
+          "title": "JSP-000358: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5438"
+        },
+        {
+          "number": 3961,
+          "title": "JSP-000358: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3961"
+        },
+        {
+          "number": 2735,
+          "title": "JSP-000358: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2735"
+        },
+        {
+          "number": 1268,
+          "title": "JSP-000358: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1268"
+        },
+        {
+          "number": 1765,
+          "title": "catalog: record Lean formalization for JSP-000358",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1765"
+        },
+        {
+          "number": 923,
+          "title": "Record formal Lean proof for JSP-000358 (Khalfalah-Szemerédi monochromatic square sums)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/923"
+        },
+        {
+          "number": 285,
+          "title": "JSP-000358: Lean formalization of monochromatic k-th power sums (Erdős #439, Khalfalah–Szemerédi)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/285"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000359",
+      "title": "[How often can consecutive terms of the specified integer sequence have a small least common multiple?](catalog-0301-0400.md#JSP-000359)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 1658,
+          "title": "feat(catalog): record Lean formalization for JSP-000359 (Erdos #440)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1658"
+        },
+        {
+          "number": 1087,
+          "title": "Register an additional Lean 4 proof for JSP-000359",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1087"
+        },
+        {
+          "number": 2208,
+          "title": "JSP-000359: real-threshold sharp limits and strict finite-cutoff Lean proof",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2208"
+        },
+        {
+          "number": 4399,
+          "title": "JSP-000359: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4399"
+        },
+        {
+          "number": 4452,
+          "title": "JSP-000359: Lean proof — sequences with bounded LCM (k ≤ 4√n + 4)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4452"
+        },
+        {
+          "number": 2736,
+          "title": "JSP-000359: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2736"
+        },
+        {
+          "number": 1088,
+          "title": "JSP-000359: Small LCM of consecutive terms — verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1088"
+        },
+        {
+          "number": 34,
+          "title": "JSP-000359: independent Lean proof with real thresholds and sharp liminf",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/34"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000360",
+      "title": "[How large can an integer set be if every pairwise least common multiple is bounded by a prescribed value?](catalog-0301-0400.md#JSP-000360)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5435,
+          "title": "JSP-000360: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5435"
+        },
+        {
+          "number": 1643,
+          "title": "feat(catalog): record Lean formalization for JSP-000360 (Erdos #441)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1643"
+        },
+        {
+          "number": 3964,
+          "title": "JSP-000360: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3964"
+        },
+        {
+          "number": 2737,
+          "title": "JSP-000360: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2737"
+        },
+        {
+          "number": 2554,
+          "title": "JSP-000360: Lean formalization — LCM-bounded integer sets",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2554"
+        },
+        {
+          "number": 2001,
+          "title": "catalog: record Lean formalization for JSP-000360",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2001"
+        },
+        {
+          "number": 833,
+          "title": "Record formal Lean proof for JSP-000360 (Pairwise LCM bounded subsets)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/833"
+        },
+        {
+          "number": 4449,
+          "title": "JSP-000360: Lean formalization — independent divisor-set of 24, 28 pairwise lcm ≤ 24",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4449"
+        },
+        {
+          "number": 329,
+          "title": "Submission route and eligibility confirmation – jsp 000360 / erdős #441",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/329"
+        },
+        {
+          "number": 188,
+          "title": "Formalize JSP-000360: sharp bounded-lcm asymptotic and nonoptimal construction",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/188"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000361",
+      "title": "[For a fixed infinite integer set, how many divisors of a single integer can belong to that set?](catalog-0301-0400.md#JSP-000361)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 3839,
+          "title": "JSP-000361: record Lean formalization (Yi-111-a)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3839"
+        },
+        {
+          "number": 1684,
+          "title": "feat(catalog): record Lean formalizations for JSP-000307, JSP-000361, JSP-000385, JSP-000400 (plby)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1684"
+        },
+        {
+          "number": 3021,
+          "title": "JSP-000361: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3021"
+        },
+        {
+          "number": 1009,
+          "title": "JSP-000361: add verified Lean proof reference",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1009"
+        },
+        {
+          "number": 2002,
+          "title": "catalog: record Lean formalization for JSP-000361",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2002"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000363",
+      "title": "[What proportion of integers have a divisor in the specified interval with endpoint ratio two?](catalog-0301-0400.md#JSP-000363)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5432,
+          "title": "JSP-000363: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5432"
+        },
+        {
+          "number": 1659,
+          "title": "feat(catalog): record Lean formalization for JSP-000363 (Erdos #446)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1659"
+        },
+        {
+          "number": 4832,
+          "title": "JSP-000363: Divisors in interval (y, 2y]",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4832"
+        },
+        {
+          "number": 3966,
+          "title": "JSP-000363: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3966"
+        },
+        {
+          "number": 2738,
+          "title": "JSP-000363: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2738"
+        },
+        {
+          "number": 2619,
+          "title": "JSP-000363: Lean formalization — divisor in interval",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2619"
+        },
+        {
+          "number": 1126,
+          "title": "JSP-000363: Divisor in ratio-2 interval — verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1126"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000364",
+      "title": "[What proportion of an integer's divisors can be paired with divisors of comparable size?](catalog-0301-0400.md#JSP-000364)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5431,
+          "title": "JSP-000364: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5431"
+        },
+        {
+          "number": 1660,
+          "title": "feat(catalog): record Lean formalization for JSP-000364 (Erdos #449)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1660"
+        },
+        {
+          "number": 3968,
+          "title": "JSP-000364: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3968"
+        },
+        {
+          "number": 2739,
+          "title": "JSP-000364: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2739"
+        },
+        {
+          "number": 1122,
+          "title": "JSP-000364: Divisor pairing with comparable sizes — verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1122"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000377",
+      "title": "[Can the size of a planar point set whose distances all stay away from integers be bounded in terms of the specified parameters?](catalog-0301-0400.md#JSP-000377)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5427,
+          "title": "JSP-000377: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5427"
+        },
+        {
+          "number": 1367,
+          "title": "JSP-000377: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1367"
+        },
+        {
+          "number": 5612,
+          "title": "JSP-000377: Lean formalization of Konyagin’s planar square-root bound",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5612"
+        },
+        {
+          "number": 4935,
+          "title": "Formalize JSP-000377 (Erdős Problem #466)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4935"
+        },
+        {
+          "number": 1180,
+          "title": "docs: record Lean formalization for JSP-000377",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1180"
+        },
+        {
+          "number": 3973,
+          "title": "JSP-000377: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3973"
+        },
+        {
+          "number": 2740,
+          "title": "JSP-000377: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2740"
+        },
+        {
+          "number": 1766,
+          "title": "catalog: record Lean formalization for JSP-000377",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1766"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000378",
+      "title": "[Can arbitrarily large planar point sets have all pairwise distances uniformly bounded away from the nearest integer?](catalog-0301-0400.md#JSP-000378)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5424,
+          "title": "JSP-000378: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5424"
+        },
+        {
+          "number": 1368,
+          "title": "JSP-000378: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1368"
+        },
+        {
+          "number": 3976,
+          "title": "JSP-000378: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3976"
+        },
+        {
+          "number": 2741,
+          "title": "JSP-000378: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2741"
+        },
+        {
+          "number": 1767,
+          "title": "catalog: record Lean formalization for JSP-000378",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1767"
+        },
+        {
+          "number": 796,
+          "title": "JSP-000378: complete Lean proof with exact geometric-parabola gaps",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/796"
+        },
+        {
+          "number": 143,
+          "title": "formalization: JSP-000378 all-parameter classification for Erdos 466",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/143"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000383",
+      "title": "[Starting from a set of primes, can repeatedly adjoining prime sums of three distinct existing primes generate infinitely many primes?](catalog-0301-0400.md#JSP-000383)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5419,
+          "title": "JSP-000383: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5419"
+        },
+        {
+          "number": 1202,
+          "title": "JSP-000383: Lean proof reference",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1202"
+        },
+        {
+          "number": 1297,
+          "title": "JSP-000383: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1297"
+        },
+        {
+          "number": 3982,
+          "title": "JSP-000383: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3982"
+        },
+        {
+          "number": 2742,
+          "title": "JSP-000383: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2742"
+        },
+        {
+          "number": 1768,
+          "title": "catalog: record Lean formalization for JSP-000383",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1768"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000385",
+      "title": "[Can all natural numbers be permuted so that every adjacent pair has prime sum?](catalog-0301-0400.md#JSP-000385)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 1684,
+          "title": "feat(catalog): record Lean formalizations for JSP-000307, JSP-000361, JSP-000385, JSP-000400 (plby)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1684"
+        },
+        {
+          "number": 5011,
+          "title": "JSP-000385: Lean formalization — permutation 1,2,3,4 has prime adjacent sums 3,5,7",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5011"
+        },
+        {
+          "number": 4739,
+          "title": "JSP-000385: Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4739"
+        },
+        {
+          "number": 3838,
+          "title": "JSP-000385: record Lean formalization (Yi-111-a)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3838"
+        },
+        {
+          "number": 2552,
+          "title": "JSP-000385: Lean formalization — prime sum permutation",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2552"
+        },
+        {
+          "number": 1691,
+          "title": "catalog: record Lean formalization for JSP-000385",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1691"
+        },
+        {
+          "number": 858,
+          "title": "JSP-000385: Lean formalization of finite prime-sum permutations for 2<=n<=10 (Erdős 473)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/858"
+        },
+        {
+          "number": 2581,
+          "title": "JSP-000385: register Lean formalization (Natural numbers permuted so adjacent sums are prim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2581"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000388",
+      "title": "[Can the integer value set of a polynomial have an additive complement giving each integer exactly one representation?](catalog-0301-0400.md#JSP-000388)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5416,
+          "title": "JSP-000388: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5416"
+        },
+        {
+          "number": 1429,
+          "title": "JSP-000388: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1429"
+        },
+        {
+          "number": 3985,
+          "title": "JSP-000388: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3985"
+        },
+        {
+          "number": 2743,
+          "title": "JSP-000388: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2743"
+        },
+        {
+          "number": 1769,
+          "title": "catalog: record Lean formalization for JSP-000388",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1769"
+        },
+        {
+          "number": 343,
+          "title": "JSP-000388: complete polynomial tiling with disclosed obstruction and translation contributions",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/343"
+        },
+        {
+          "number": 1129,
+          "title": "JSP-000388: Polynomial value set with additive complement — verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1129"
+        },
+        {
+          "number": 61,
+          "title": "JSP-000388: submit Lean proof of the complete quadratic case",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/61"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000391",
+      "title": "[Can the specified floor recurrence generate the digits of an algebraic number in a prescribed base?](catalog-0301-0400.md#JSP-000391)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 1520,
+          "title": "JSP-000391: record existing Lean formalization (PengSafari/jsp-000391-lean)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1520"
+        },
+        {
+          "number": 1163,
+          "title": "JSP-000391: record complete Stoll digit recurrence formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1163"
+        },
+        {
+          "number": 5447,
+          "title": "JSP-000391: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5447"
+        },
+        {
+          "number": 4971,
+          "title": "Formalize JSP-000391 (Erdős Problem #482 · Graham–Pollak Floor Recurrence)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4971"
+        },
+        {
+          "number": 3952,
+          "title": "JSP-000391: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3952"
+        },
+        {
+          "number": 2744,
+          "title": "JSP-000391: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2744"
+        },
+        {
+          "number": 1637,
+          "title": "catalog: record Lean formalization for JSP-000391",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1637"
+        },
+        {
+          "number": 1134,
+          "title": "JSP-000391: Floor recurrence generating algebraic number digits — verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1134"
+        },
+        {
+          "number": 293,
+          "title": "JSP-000391: independent complete Lean formalization of Stoll's construction for every base g >= 2",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/293"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000393",
+      "title": "[What bounds relate the number of nonzero terms of a polynomial to that of its square?](catalog-0301-0400.md#JSP-000393)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5445,
+          "title": "JSP-000393: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5445"
+        },
+        {
+          "number": 1298,
+          "title": "JSP-000393: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1298"
+        },
+        {
+          "number": 3954,
+          "title": "JSP-000393: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3954"
+        },
+        {
+          "number": 2745,
+          "title": "JSP-000393: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2745"
+        },
+        {
+          "number": 921,
+          "title": "Record formal Lean proof for JSP-000393 (Rényi-Erdős polynomial sparse squares)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/921"
+        },
+        {
+          "number": 1770,
+          "title": "catalog: record Lean formalization for JSP-000393",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1770"
+        },
+        {
+          "number": 368,
+          "title": "JSP-000393: complete complex-coefficient minimum-support proof and sparse-square construction",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/368"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000397",
+      "title": "[If an additive arithmetic function has uniformly bounded differences at consecutive integers, must it be close to a logarithmic function?](catalog-0301-0400.md#JSP-000397)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5443,
+          "title": "JSP-000397: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5443"
+        },
+        {
+          "number": 1661,
+          "title": "feat(catalog): record Lean formalization for JSP-000397 (Erdos #491)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1661"
+        },
+        {
+          "number": 3956,
+          "title": "JSP-000397: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3956"
+        },
+        {
+          "number": 2746,
+          "title": "JSP-000397: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2746"
+        },
+        {
+          "number": 1118,
+          "title": "JSP-000397: Bounded differences of additive functions — verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1118"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000398",
+      "title": "[If consecutive ratios of an increasing integer sequence tend to one, are the relative positions of scaled integers within its gaps uniformly distributed for almost every real scale factor?](catalog-0301-0400.md#JSP-000398)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5441,
+          "title": "JSP-000398: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5441"
+        },
+        {
+          "number": 1430,
+          "title": "JSP-000398: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1430"
+        },
+        {
+          "number": 3958,
+          "title": "JSP-000398: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3958"
+        },
+        {
+          "number": 2747,
+          "title": "JSP-000398: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2747"
+        },
+        {
+          "number": 1771,
+          "title": "catalog: record Lean formalization for JSP-000398",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1771"
+        },
+        {
+          "number": 1127,
+          "title": "JSP-000398: Consecutive ratios tending to one — verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1127"
+        },
+        {
+          "number": 151,
+          "title": "Formalize the original real-subdivision counterexample and correct JSP-000398 scope",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/151"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000399",
+      "title": "[Can a finite set be uniquely recovered from the multiset of all sums of a prescribed number of distinct elements?](catalog-0301-0400.md#JSP-000399)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 4592,
+          "title": "JSP-000399: complete Lean formalization — finite set not uniquely recoverable from 2-element sum multiset (TanHao)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4592"
+        },
+        {
+          "number": 5439,
+          "title": "JSP-000399: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5439"
+        },
+        {
+          "number": 4579,
+          "title": "JSP-000301 & JSP-000307: Lean formalizations (Golomb 1970; Erdos-Pomerance 1978)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4579"
+        },
+        {
+          "number": 1431,
+          "title": "JSP-000399: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1431"
+        },
+        {
+          "number": 1466,
+          "title": "JSP-000399: Lean proof of the Gordon–Fraenkel–Straus theorem (Erdős #494)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1466"
+        },
+        {
+          "number": 4738,
+          "title": "JSP-000399: Lean formalization (subset sum multisets)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4738"
+        },
+        {
+          "number": 3960,
+          "title": "JSP-000399: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3960"
+        },
+        {
+          "number": 2748,
+          "title": "JSP-000399: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2748"
+        },
+        {
+          "number": 357,
+          "title": "JSP-000399: formalize the 27-element triple-sum counterexample",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/357"
+        },
+        {
+          "number": 4651,
+          "title": "Register Lean proof for JSP-000399: set reconstruction counterexample",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4651"
+        },
+        {
+          "number": 1772,
+          "title": "catalog: record Lean formalization for JSP-000399",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1772"
+        },
+        {
+          "number": 345,
+          "title": "JSP-000399: Lean certificate for the 27-element triple-sum exception",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/345"
+        },
+        {
+          "number": 1945,
+          "title": "Submit Lean 4 formalizations for 109 JSP problems (TanHao)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1945"
+        },
+        {
+          "number": 127,
+          "title": "JSP-000399: submit Lean formalization of the Selfridge–Straus uniqueness criteria (Erdős #494)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/127"
+        },
+        {
+          "number": 2196,
+          "title": "JSP-000399: Lean formalization — counterexample to set recovery from pairwise sums",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2196"
+        },
+        {
+          "number": 695,
+          "title": "docs(problems): add Lean 4 formalization for JSP-000399",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/695"
+        },
+        {
+          "number": 630,
+          "title": "Add a five-parameter triple-sum certificate for JSP-000399",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/630"
+        },
+        {
+          "number": 23,
+          "title": "JSP-000399: formalize selected known set-recovery results in Lean",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/23"
+        },
+        {
+          "number": 629,
+          "title": "Gott-L: nine Lean formalization contributions — review and recognition request",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/629"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000400",
+      "title": "[Can a sum of two integer squares approximate an irrational multiple of an integer square sufficiently closely?](catalog-0301-0400.md#JSP-000400)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 1684,
+          "title": "feat(catalog): record Lean formalizations for JSP-000307, JSP-000361, JSP-000385, JSP-000400 (plby)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1684"
+        },
+        {
+          "number": 538,
+          "title": "JSP-000400: Lean formalization of the sum-of-two-squares approximation theorem",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/538"
+        },
+        {
+          "number": 2749,
+          "title": "JSP-000400: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2749"
+        },
+        {
+          "number": 2003,
+          "title": "catalog: record Lean formalization for JSP-000400",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2003"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000402",
+      "title": "[Under the specified measure restrictions on a set mapping, must there be a sufficiently large set whose elements avoid one another's images?](catalog-0401-0500.md#JSP-000402)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5437,
+          "title": "JSP-000402: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5437"
+        },
+        {
+          "number": 1252,
+          "title": "JSP-000402: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1252"
+        },
+        {
+          "number": 3962,
+          "title": "JSP-000402: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3962"
+        },
+        {
+          "number": 2750,
+          "title": "JSP-000402: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2750"
+        },
+        {
+          "number": 1773,
+          "title": "catalog: record Lean formalization for JSP-000402",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1773"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000404",
+      "title": "[Blumenthal's problem](catalog-0401-0500.md#JSP-000404)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5592,
+          "title": "JSP-000404 / Erdős 504: Lean formalization of the minimax angle (Blumenthal's problem)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5592"
+        },
+        {
+          "number": 5131,
+          "title": "JSP-000404: sorry-free partial Lean formalization (exact alpha(N) for N<=8, sharpness for all N, full classification modulo one stated hypothesis)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5131"
+        },
+        {
+          "number": 2751,
+          "title": "JSP-000404: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2751"
+        },
+        {
+          "number": 2804,
+          "title": "JSP-000404: record Lean formalization (Yi-111-a)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2804"
+        },
+        {
+          "number": 2785,
+          "title": "JSP-000404: Lean formalization — Blumenthal's problem",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2785"
+        },
+        {
+          "number": 4684,
+          "title": "CLOSED - repo creation rate limited, will resubmit later",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4684"
+        },
+        {
+          "number": 1774,
+          "title": "catalog: record Lean formalization for JSP-000404",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1774"
+        },
+        {
+          "number": 300,
+          "title": "JSP-000404: the unconditionally proved part of Erdős 504 (Sendov minimax angle) — scoped component",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/300"
+        },
+        {
+          "number": 42,
+          "title": "JSP-000404: document formula discrepancy and add partial Lean proofs",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/42"
+        },
+        {
+          "number": 100,
+          "title": "JSP-000404: exact N=5–10 and all dyadic thresholds (partial scope)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/100"
+        },
+        {
+          "number": 647,
+          "title": "JSP-000404: eleven-point lower bound and exact N=11–15 formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/647"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000410",
+      "title": "[How many components of the region where a polynomial has modulus at most one can exceed a prescribed diameter?](catalog-0401-0500.md#JSP-000410)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5436,
+          "title": "JSP-000410: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5436"
+        },
+        {
+          "number": 1369,
+          "title": "JSP-000410: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1369"
+        },
+        {
+          "number": 3963,
+          "title": "JSP-000410: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3963"
+        },
+        {
+          "number": 2752,
+          "title": "JSP-000410: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2752"
+        },
+        {
+          "number": 1775,
+          "title": "catalog: record Lean formalization for JSP-000410",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1775"
+        },
+        {
+          "number": 32,
+          "title": "JSP-000410: reference independent complete closed-lemniscate Lean proof",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/32"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000413",
+      "title": "[Does a transcendental entire function have a path to infinity on which a specified negative power of its modulus is integrable?](catalog-0401-0500.md#JSP-000413)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5434,
+          "title": "JSP-000413: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5434"
+        },
+        {
+          "number": 1253,
+          "title": "JSP-000413: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1253"
+        },
+        {
+          "number": 3965,
+          "title": "JSP-000413: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3965"
+        },
+        {
+          "number": 2753,
+          "title": "JSP-000413: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2753"
+        },
+        {
+          "number": 1776,
+          "title": "catalog: record Lean formalization for JSP-000413",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1776"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000415",
+      "title": "[Can every edge-colored complete graph have its vertices covered by few paths whose edges all share one color?](catalog-0401-0500.md#JSP-000415)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5433,
+          "title": "JSP-000415: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5433"
+        },
+        {
+          "number": 2800,
+          "title": "JSP-000415: record Lean formalization (Yi-111-a)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2800"
+        },
+        {
+          "number": 1244,
+          "title": "JSP-000415: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1244"
+        },
+        {
+          "number": 3967,
+          "title": "JSP-000415: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3967"
+        },
+        {
+          "number": 2754,
+          "title": "JSP-000415: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2754"
+        },
+        {
+          "number": 1777,
+          "title": "catalog: record Lean formalization for JSP-000415",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1777"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000419",
+      "title": "[What is the typical maximum modulus on the unit circle of a polynomial with random sign coefficients?](catalog-0401-0500.md#JSP-000419)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5430,
+          "title": "JSP-000419: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5430"
+        },
+        {
+          "number": 1254,
+          "title": "JSP-000419: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1254"
+        },
+        {
+          "number": 4980,
+          "title": "Formalize JSP-000419 (Erdős Problem #523 · Salem–Zygmund / Halász Random Polynomial Modulus)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4980"
+        },
+        {
+          "number": 3969,
+          "title": "JSP-000419: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3969"
+        },
+        {
+          "number": 2755,
+          "title": "JSP-000419: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2755"
+        },
+        {
+          "number": 1213,
+          "title": "docs: record Lean formalization for JSP-000419",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1213"
+        },
+        {
+          "number": 1778,
+          "title": "catalog: record Lean formalization for JSP-000419",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1778"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000421",
+      "title": "[How small is the typical minimum modulus on the unit circle of a polynomial with random sign coefficients?](catalog-0401-0500.md#JSP-000421)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5429,
+          "title": "JSP-000421: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5429"
+        },
+        {
+          "number": 1255,
+          "title": "JSP-000421: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1255"
+        },
+        {
+          "number": 4836,
+          "title": "JSP-000421: Random +-1 polynomial minimum modulus",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4836"
+        },
+        {
+          "number": 3971,
+          "title": "JSP-000421: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3971"
+        },
+        {
+          "number": 2756,
+          "title": "JSP-000421: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2756"
+        },
+        {
+          "number": 1779,
+          "title": "catalog: record Lean formalization for JSP-000421",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1779"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000422",
+      "title": "[What conditions on arc lengths make randomly placed arcs cover the entire circle almost surely?](catalog-0401-0500.md#JSP-000422)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5428,
+          "title": "JSP-000422: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5428"
+        },
+        {
+          "number": 1299,
+          "title": "JSP-000422: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1299"
+        },
+        {
+          "number": 3972,
+          "title": "JSP-000422: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3972"
+        },
+        {
+          "number": 2757,
+          "title": "JSP-000422: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2757"
+        },
+        {
+          "number": 1780,
+          "title": "catalog: record Lean formalization for JSP-000422",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1780"
+        },
+        {
+          "number": 81,
+          "title": "JSP-000422: reference complete original-domain Lean proof and attribution",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/81"
+        },
+        {
+          "number": 4658,
+          "title": "JSP-000584: record the solver attribution and the Lean formalization source (resubmission of #88)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4658"
+        },
+        {
+          "number": 88,
+          "title": "JSP-000584: record the solver attribution and register an external Lean formalization source",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/88"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000423",
+      "title": "[Does a power series with randomly signed coefficients converge at some point of the unit circle?](catalog-0401-0500.md#JSP-000423)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5519,
+          "title": "JSP-000423: add supplemental reproducibility and attribution evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5519"
+        },
+        {
+          "number": 5425,
+          "title": "JSP-000423: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5425"
+        },
+        {
+          "number": 1256,
+          "title": "JSP-000423: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1256"
+        },
+        {
+          "number": 3975,
+          "title": "JSP-000423: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3975"
+        },
+        {
+          "number": 2759,
+          "title": "JSP-000423: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2759"
+        },
+        {
+          "number": 1790,
+          "title": "catalog: record Lean formalization for JSP-000423",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1790"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000428",
+      "title": "[How large can a pairwise noncoprime subset of an integer interval containing a specified integer be?](catalog-0401-0500.md#JSP-000428)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5422,
+          "title": "JSP-000428: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5422"
+        },
+        {
+          "number": 1685,
+          "title": "feat(catalog): record Lean formalizations for JSP-000428 (plby)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1685"
+        },
+        {
+          "number": 4566,
+          "title": "JSP-000428: Lean formalization — 15 evens in [1,30], pairwise noncoprime",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4566"
+        },
+        {
+          "number": 3978,
+          "title": "JSP-000428: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3978"
+        },
+        {
+          "number": 2760,
+          "title": "JSP-000428: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2760"
+        },
+        {
+          "number": 2559,
+          "title": "JSP-000428: Lean formalization — pairwise noncoprime subsets",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2559"
+        },
+        {
+          "number": 1692,
+          "title": "catalog: record Lean formalization for JSP-000428",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1692"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000433",
+      "title": "[How large can the reciprocal sum of integers in an interval be if every pairwise least common multiple exceeds the interval's upper endpoint?](catalog-0401-0500.md#JSP-000433)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5420,
+          "title": "JSP-000433: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5420"
+        },
+        {
+          "number": 780,
+          "title": "JSP-000433: complete sharp reciprocal-sum Lean proof evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/780"
+        },
+        {
+          "number": 1432,
+          "title": "JSP-000433: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1432"
+        },
+        {
+          "number": 4576,
+          "title": "JSP-000433: Lean formalization — {3,4,5,7} in [1,8]: lcm>8, reciprocal sum 389/420",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4576"
+        },
+        {
+          "number": 3981,
+          "title": "JSP-000433: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3981"
+        },
+        {
+          "number": 2762,
+          "title": "JSP-000433: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2762"
+        },
+        {
+          "number": 1791,
+          "title": "catalog: record Lean formalization for JSP-000433",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1791"
+        },
+        {
+          "number": 2560,
+          "title": "JSP-000433: Lean formalization — LCM-constrained reciprocal sum",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2560"
+        },
+        {
+          "number": 705,
+          "title": "JSP-000433: Erdős #542 — the sharpness example {2,3,5} (scoped component)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/705"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000434",
+      "title": "[How many random elements of a finite abelian group make their subset sums cover the group with probability at least one half? Does the binary logarithm of the group order plus a small correction suffice?](catalog-0401-0500.md#JSP-000434)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5417,
+          "title": "JSP-000434: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5417"
+        },
+        {
+          "number": 1433,
+          "title": "JSP-000434: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1433"
+        },
+        {
+          "number": 1015,
+          "title": "JSP-000434: complete quantitative subset-sum proof and attribution",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1015"
+        },
+        {
+          "number": 3984,
+          "title": "JSP-000434: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3984"
+        },
+        {
+          "number": 2763,
+          "title": "JSP-000434: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2763"
+        },
+        {
+          "number": 1792,
+          "title": "catalog: record Lean formalization for JSP-000434",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1792"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000437",
+      "title": "[Can every graph's Ramsey number be bounded exponentially in the square root of its edge count?](catalog-0401-0500.md#JSP-000437)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5414,
+          "title": "JSP-000437: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5414"
+        },
+        {
+          "number": 1662,
+          "title": "feat(catalog): record Lean formalization for JSP-000437 (Erdos #546)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1662"
+        },
+        {
+          "number": 2805,
+          "title": "JSP-000437: record Lean formalization (Yi-111-a)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2805"
+        },
+        {
+          "number": 3987,
+          "title": "JSP-000437: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3987"
+        },
+        {
+          "number": 3022,
+          "title": "JSP-000437: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3022"
+        },
+        {
+          "number": 1793,
+          "title": "catalog: record Lean formalization for JSP-000437",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1793"
+        },
+        {
+          "number": 1141,
+          "title": "JSP-000437: Ramsey number exponential bound in sqrt(edge count) — verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1141"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000440",
+      "title": "[What is the two-color Ramsey number of a tree whose bipartition sizes have ratio one to two?](catalog-0401-0500.md#JSP-000440)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5412,
+          "title": "JSP-000440: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5412"
+        },
+        {
+          "number": 1370,
+          "title": "JSP-000440: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1370"
+        },
+        {
+          "number": 839,
+          "title": "JSP-000440: pinned Lean proof intake for the double-star Ramsey counterexample",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/839"
+        },
+        {
+          "number": 867,
+          "title": "JSP-000440 / Erdos 549: complete Lean disproof via an independent 35-vertex counterexample",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/867"
+        },
+        {
+          "number": 3988,
+          "title": "JSP-000440: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3988"
+        },
+        {
+          "number": 2764,
+          "title": "JSP-000440: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2764"
+        },
+        {
+          "number": 1794,
+          "title": "catalog: record Lean formalization for JSP-000440",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1794"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000444",
+      "title": "[How fast does the three-color Ramsey number grow for a triangle in either of the first two colors versus a large clique in the third?](catalog-0401-0500.md#JSP-000444)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5411,
+          "title": "JSP-000444: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5411"
+        },
+        {
+          "number": 5065,
+          "title": "JSP-000444: Lean formalization of R(3,3,m) = m^3 (log m)^O(1) (Alon–Rödl)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5065"
+        },
+        {
+          "number": 1434,
+          "title": "JSP-000444: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1434"
+        },
+        {
+          "number": 3990,
+          "title": "JSP-000444: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3990"
+        },
+        {
+          "number": 2765,
+          "title": "JSP-000444: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2765"
+        },
+        {
+          "number": 1795,
+          "title": "catalog: record Lean formalization for JSP-000444",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1795"
+        },
+        {
+          "number": 1135,
+          "title": "JSP-000444: Three-color Ramsey number growth — verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1135"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000450",
+      "title": "[Do graphs of bounded maximum degree have two-color size Ramsey numbers linear in their order?](catalog-0401-0500.md#JSP-000450)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5410,
+          "title": "JSP-000450: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5410"
+        },
+        {
+          "number": 1602,
+          "title": "docs: record Lean formalization for JSP-000450 (Erdős #559)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1602"
+        },
+        {
+          "number": 1233,
+          "title": "JSP-000450: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1233"
+        },
+        {
+          "number": 4896,
+          "title": "Formalize JSP-000450 (Erdős Problem #559) in Lean 4",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4896"
+        },
+        {
+          "number": 3992,
+          "title": "JSP-000450: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3992"
+        },
+        {
+          "number": 2766,
+          "title": "JSP-000450: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2766"
+        },
+        {
+          "number": 1796,
+          "title": "catalog: record Lean formalization for JSP-000450",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1796"
+        },
+        {
+          "number": 4,
+          "title": "docs: update problem status and claim eligibility flags",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000455",
+      "title": "[Is the two-color induced Ramsey number at most exponential in the order of the target graph?](catalog-0401-0500.md#JSP-000455)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5408,
+          "title": "JSP-000455: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5408"
+        },
+        {
+          "number": 1288,
+          "title": "JSP-000455: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1288"
+        },
+        {
+          "number": 3994,
+          "title": "JSP-000455: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3994"
+        },
+        {
+          "number": 2767,
+          "title": "JSP-000455: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2767"
+        },
+        {
+          "number": 1797,
+          "title": "catalog: record Lean formalization for JSP-000455",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1797"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000460",
+      "title": "[Is the Ramsey number of the prescribed cycle against any graph at most twice the latter's edge count plus the allowed correction?](catalog-0401-0500.md#JSP-000460)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5406,
+          "title": "JSP-000460: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5406"
+        },
+        {
+          "number": 1289,
+          "title": "JSP-000460: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1289"
+        },
+        {
+          "number": 3996,
+          "title": "JSP-000460: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3996"
+        },
+        {
+          "number": 2768,
+          "title": "JSP-000460: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2768"
+        },
+        {
+          "number": 1798,
+          "title": "catalog: record Lean formalization for JSP-000460",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1798"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000464",
+      "title": "[How many edges can a graph have while excluding an odd cycle and an even cycle of adjacent lengths?](catalog-0401-0500.md#JSP-000464)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5404,
+          "title": "JSP-000464: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5404"
+        },
+        {
+          "number": 746,
+          "title": "JSP-000464: complete attributed Lean proof and verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/746"
+        },
+        {
+          "number": 1300,
+          "title": "JSP-000464: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1300"
+        },
+        {
+          "number": 3998,
+          "title": "JSP-000464: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3998"
+        },
+        {
+          "number": 2769,
+          "title": "JSP-000464: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2769"
+        },
+        {
+          "number": 1799,
+          "title": "catalog: record Lean formalization for JSP-000464",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1799"
+        },
+        {
+          "number": 504,
+          "title": "Submit Lean formalization of JSP-000464 (Erdős #574): the Erdős–Simonovits asymptotic for ex(n;{C_{2k−1},C_{2k}}) fails for k = 3",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/504"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000465",
+      "title": "[For a forbidden family containing a bipartite graph, can the asymptotic extremal problem be reduced to forbidding a single graph?](catalog-0401-0500.md#JSP-000465)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 1528,
+          "title": "JSP-000465: record existing Lean formalization (xneolxnoel/jsp-000465-lean)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1528"
+        },
+        {
+          "number": 2120,
+          "title": "JSP-000465: clarify compactness result and primary publication sources",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2120"
+        },
+        {
+          "number": 5401,
+          "title": "JSP-000465: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5401"
+        },
+        {
+          "number": 4001,
+          "title": "JSP-000465: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4001"
+        },
+        {
+          "number": 2770,
+          "title": "JSP-000465: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2770"
+        },
+        {
+          "number": 4537,
+          "title": "JSP-000465: Lean 4 formalization of Erdos-Simonovits compactness refutation (Erdos Problem #180)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4537"
+        },
+        {
+          "number": 1800,
+          "title": "catalog: record Lean formalization for JSP-000465",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1800"
+        },
+        {
+          "number": 442,
+          "title": "JSP-000465: complete compactness counterexample with uniform ratios, adaptive selectors and exact-version self-checks",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/442"
+        },
+        {
+          "number": 401,
+          "title": "JSP-000465: Lean proof of the unrestricted compactness counterexample (scoped)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/401"
+        },
+        {
+          "number": 40,
+          "title": "docs: register existing Lean evidence for 78 catalog records",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/40"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000467",
+      "title": "[What minimum degree forces a spanning collection of vertex-disjoint four-cycles?](catalog-0401-0500.md#JSP-000467)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5398,
+          "title": "JSP-000467: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5398"
+        },
+        {
+          "number": 2184,
+          "title": "JSP-000467: record external Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2184"
+        },
+        {
+          "number": 1301,
+          "title": "JSP-000467: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1301"
+        },
+        {
+          "number": 4004,
+          "title": "JSP-000467: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4004"
+        },
+        {
+          "number": 2771,
+          "title": "JSP-000467: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2771"
+        },
+        {
+          "number": 3884,
+          "title": "JSP-000467: Lean formalization — spanning 4-cycles",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3884"
+        },
+        {
+          "number": 1801,
+          "title": "catalog: record Lean formalization for JSP-000467",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1801"
+        },
+        {
+          "number": 1195,
+          "title": "JSP-000467: full-proof verification bridge and prior-art correction",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1195"
+        },
+        {
+          "number": 595,
+          "title": "JSP-000467: full-proof verification bridge and prior-art correction",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/595"
+        },
+        {
+          "number": 616,
+          "title": "JSP-000467: exact bipartite C4 packing capacity and degree sharpness in Lean",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/616"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000468",
+      "title": "[Under suitable parameters, does a random graph contain a spanning hypercube with probability tending to one?](catalog-0401-0500.md#JSP-000468)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5395,
+          "title": "JSP-000468: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5395"
+        },
+        {
+          "number": 1257,
+          "title": "JSP-000468: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1257"
+        },
+        {
+          "number": 4977,
+          "title": "Formalize JSP-000468 (Erdős Problem #578 · Spanning Hypercube in Random Graphs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4977"
+        },
+        {
+          "number": 4007,
+          "title": "JSP-000468: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4007"
+        },
+        {
+          "number": 2772,
+          "title": "JSP-000468: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2772"
+        },
+        {
+          "number": 1216,
+          "title": "docs: record Lean formalization for JSP-000468",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1216"
+        },
+        {
+          "number": 1802,
+          "title": "catalog: record Lean formalization for JSP-000468",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1802"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000471",
+      "title": "[How many edges can always be retained in a bipartite subgraph of a triangle-free graph?](catalog-0401-0500.md#JSP-000471)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5392,
+          "title": "JSP-000471: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5392"
+        },
+        {
+          "number": 1048,
+          "title": "docs: record Lean proof for JSP-000471",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1048"
+        },
+        {
+          "number": 1302,
+          "title": "JSP-000471: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1302"
+        },
+        {
+          "number": 4010,
+          "title": "JSP-000471: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4010"
+        },
+        {
+          "number": 2773,
+          "title": "JSP-000471: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2773"
+        },
+        {
+          "number": 1803,
+          "title": "catalog: record Lean formalization for JSP-000471",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1803"
+        },
+        {
+          "number": 1146,
+          "title": "Add verified Lean proof references for JSP-000471, 503, 632",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1146"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000475",
+      "title": "[Can finitely many residue classes cover all integers with no modulus dividing another?](catalog-0401-0500.md#JSP-000475)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5390,
+          "title": "JSP-000475: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5390"
+        },
+        {
+          "number": 1269,
+          "title": "JSP-000475: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1269"
+        },
+        {
+          "number": 4013,
+          "title": "JSP-000475: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4013"
+        },
+        {
+          "number": 2774,
+          "title": "JSP-000475: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2774"
+        },
+        {
+          "number": 1804,
+          "title": "catalog: record Lean formalization for JSP-000475",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1804"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000476",
+      "title": "[How large can a subset of an integer interval be if none of its nonempty subset sums is a square?](catalog-0401-0500.md#JSP-000476)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5388,
+          "title": "JSP-000476: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5388"
+        },
+        {
+          "number": 1471,
+          "title": "JSP-000476: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1471"
+        },
+        {
+          "number": 4569,
+          "title": "JSP-000476: Lean formalization — {3,7,8,11,12}: no subset sum is a square",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4569"
+        },
+        {
+          "number": 4015,
+          "title": "JSP-000476: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4015"
+        },
+        {
+          "number": 4734,
+          "title": "JSP-000476: Lean formalization (no-square subset sum)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4734"
+        },
+        {
+          "number": 2775,
+          "title": "JSP-000476: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2775"
+        },
+        {
+          "number": 2558,
+          "title": "JSP-000476: Lean formalization — no square subset sums",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2558"
+        },
+        {
+          "number": 1805,
+          "title": "catalog: record Lean formalization for JSP-000476",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1805"
+        },
+        {
+          "number": 1072,
+          "title": "JSP-000476: Subset sums avoiding squares — verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1072"
+        },
+        {
+          "number": 372,
+          "title": "JSP-000476: Lean classification for every positive step (scoped construction)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/372"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000479",
+      "title": "[Does every red-blue coloring of pairs from the prescribed countable ordinal contain a red clique of the same order type or a blue triangle?](catalog-0401-0500.md#JSP-000479)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5386,
+          "title": "JSP-000479: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5386"
+        },
+        {
+          "number": 4827,
+          "title": "docs(catalog): Reference Lean 4.20.0 scaffold repositories for 17 JSP entries",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4827"
+        },
+        {
+          "number": 1258,
+          "title": "JSP-000479: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1258"
+        },
+        {
+          "number": 4018,
+          "title": "JSP-000479: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4018"
+        },
+        {
+          "number": 2776,
+          "title": "JSP-000479: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2776"
+        },
+        {
+          "number": 4819,
+          "title": "[Lean formalization] JSP-000479 (catalog: Lean proof=Yes, Eligible=Yes)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4819"
+        },
+        {
+          "number": 1806,
+          "title": "catalog: record Lean formalization for JSP-000479",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1806"
+        },
+        {
+          "number": 965,
+          "title": "feat: record formal Lean 4 verification for JSP-000479",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/965"
+        },
+        {
+          "number": 4826,
+          "title": "Mark 17 JSP problems Lean proof=Yes + Eligible=Yes (skj-pixel Lean 4.20 scaffolds)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4826"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000486",
+      "title": "[Disjoint paths and separating sets in infinite graphs](catalog-0401-0500.md#JSP-000486)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5426,
+          "title": "JSP-000486: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5426"
+        },
+        {
+          "number": 1259,
+          "title": "JSP-000486: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1259"
+        },
+        {
+          "number": 3974,
+          "title": "JSP-000486: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3974"
+        },
+        {
+          "number": 2777,
+          "title": "JSP-000486: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2777"
+        },
+        {
+          "number": 1807,
+          "title": "catalog: record Lean formalization for JSP-000486",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1807"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000490",
+      "title": "[How many colors suffice to avoid monochromatic members of a family of countably infinite sets whose pairwise intersections never have size two?](catalog-0401-0500.md#JSP-000490)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5599,
+          "title": "JSP-000490: record independent Lean 4 formalization and formal paper (@CreizyLabs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5599"
+        },
+        {
+          "number": 5423,
+          "title": "JSP-000490: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5423"
+        },
+        {
+          "number": 1303,
+          "title": "JSP-000490: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1303"
+        },
+        {
+          "number": 4839,
+          "title": "JSP-000490: No uniform color bound for set families",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4839"
+        },
+        {
+          "number": 3977,
+          "title": "JSP-000490: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3977"
+        },
+        {
+          "number": 2778,
+          "title": "JSP-000490: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2778"
+        },
+        {
+          "number": 1808,
+          "title": "catalog: record Lean formalization for JSP-000490",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1808"
+        },
+        {
+          "number": 917,
+          "title": "Submit Lean formalization for JSP-000490 (Erdős #603, Komjáth's colouring question: no cardinal suffices)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/917"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000492",
+      "title": "[Can the number of pairs at one distance in a finite spherical point set grow superlinearly?](catalog-0401-0500.md#JSP-000492)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5418,
+          "title": "JSP-000492: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5418"
+        },
+        {
+          "number": 1304,
+          "title": "JSP-000492: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1304"
+        },
+        {
+          "number": 5610,
+          "title": "JSP-000492: Lean formalization of superlinear repeated distances on a sphere",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5610"
+        },
+        {
+          "number": 4990,
+          "title": "Formalize JSP-000492 (Erdős Problem #605 · Pairs at One Distance on Spheres)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4990"
+        },
+        {
+          "number": 3983,
+          "title": "JSP-000492: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3983"
+        },
+        {
+          "number": 2779,
+          "title": "JSP-000492: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2779"
+        },
+        {
+          "number": 1632,
+          "title": "catalog: record Lean formalization for JSP-000492",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1632"
+        },
+        {
+          "number": 1809,
+          "title": "catalog: record Lean formalization for JSP-000492",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1809"
+        },
+        {
+          "number": 162,
+          "title": "JSP-000492: additional Lean proof of superlinear equal-distance pairs on the sphere",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/162"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000493",
+      "title": "[Which total numbers of determined lines are possible for a planar set of a prescribed number of points?](catalog-0401-0500.md#JSP-000493)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5415,
+          "title": "JSP-000493: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5415"
+        },
+        {
+          "number": 1260,
+          "title": "JSP-000493: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1260"
+        },
+        {
+          "number": 4740,
+          "title": "JSP-000493: Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4740"
+        },
+        {
+          "number": 3986,
+          "title": "JSP-000493: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3986"
+        },
+        {
+          "number": 2780,
+          "title": "JSP-000493: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2780"
+        },
+        {
+          "number": 1810,
+          "title": "catalog: record Lean formalization for JSP-000493",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1810"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000494",
+      "title": "[How many different sets of line multiplicities can planar point configurations determine?](catalog-0401-0500.md#JSP-000494)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5413,
+          "title": "JSP-000494: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5413"
+        },
+        {
+          "number": 870,
+          "title": "JSP-000494: pinned Lean proof intake for planar-point multiplicity spectra",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/870"
+        },
+        {
+          "number": 1663,
+          "title": "feat(catalog): record Lean formalization for JSP-000494 (Erdos #607)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1663"
+        },
+        {
+          "number": 4827,
+          "title": "docs(catalog): Reference Lean 4.20.0 scaffold repositories for 17 JSP entries",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4827"
+        },
+        {
+          "number": 1591,
+          "title": "JSP-000494 (Erdős #607): record the complete Lean formalization and the Szemerédi–Trotter solution",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1591"
+        },
+        {
+          "number": 3989,
+          "title": "JSP-000494: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3989"
+        },
+        {
+          "number": 5066,
+          "title": "catalog: record Lean formalization for JSP-000494 (line-multiplicity sets of planar point configurations)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5066"
+        },
+        {
+          "number": 2781,
+          "title": "JSP-000494: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2781"
+        },
+        {
+          "number": 4820,
+          "title": "[Lean formalization] JSP-000494 (catalog: Lean proof=Yes, Eligible=Yes)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4820"
+        },
+        {
+          "number": 1811,
+          "title": "catalog: record Lean formalization for JSP-000494",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1811"
+        },
+        {
+          "number": 962,
+          "title": "feat: record formal Lean 4 verification for JSP-000494",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/962"
+        },
+        {
+          "number": 4826,
+          "title": "Mark 17 JSP problems Lean proof=Yes + Eligible=Yes (skj-pixel Lean 4.20 scaffolds)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4826"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000503",
+      "title": "[How many vertex subsets of a high-degree regular graph are exactly the vertex sets of cycles?](catalog-0501-0600.md#JSP-000503)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5409,
+          "title": "JSP-000503: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5409"
+        },
+        {
+          "number": 1049,
+          "title": "docs: record Lean proof for JSP-000503",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1049"
+        },
+        {
+          "number": 1405,
+          "title": "JSP-000503: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1405"
+        },
+        {
+          "number": 3993,
+          "title": "JSP-000503: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3993"
+        },
+        {
+          "number": 2783,
+          "title": "JSP-000503: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2783"
+        },
+        {
+          "number": 1812,
+          "title": "catalog: record Lean formalization for JSP-000503",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1812"
+        },
+        {
+          "number": 1146,
+          "title": "Add verified Lean proof references for JSP-000471, 503, 632",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1146"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000506",
+      "title": "[In a random graph, how much smaller than the chromatic number is the minimum number of parts in a partition into cliques and independent sets?](catalog-0501-0600.md#JSP-000506)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5596,
+          "title": "JSP-000506: submit unconditional Lean 4.34.1 formalization (samuelburbulla/jsp-000506-lean)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5596"
+        },
+        {
+          "number": 4827,
+          "title": "docs(catalog): Reference Lean 4.20.0 scaffold repositories for 17 JSP entries",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4827"
+        },
+        {
+          "number": 5407,
+          "title": "JSP-000506: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5407"
+        },
+        {
+          "number": 3995,
+          "title": "JSP-000506: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3995"
+        },
+        {
+          "number": 2784,
+          "title": "JSP-000506: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2784"
+        },
+        {
+          "number": 1599,
+          "title": "Add verified Lean proof reference for JSP-000506 (random graph coloring)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1599"
+        },
+        {
+          "number": 4821,
+          "title": "[Lean formalization] JSP-000506 (catalog: Lean proof=Yes, Eligible=Yes)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4821"
+        },
+        {
+          "number": 1813,
+          "title": "catalog: record Lean formalization for JSP-000506",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1813"
+        },
+        {
+          "number": 1073,
+          "title": "docs: record Lean formalization for JSP-000506 (Erdős #762)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1073"
+        },
+        {
+          "number": 363,
+          "title": "JSP-000506: complete random-graph gap formalization with exact probability, threshold and selection bridges",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/363"
+        },
+        {
+          "number": 4552,
+          "title": "JSP-000506: Complete Paper and Kernel-Verified Lean 4 Formalization of Erdős-Gimbel Cochromatic Number Gap Theorem",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4552"
+        },
+        {
+          "number": 40,
+          "title": "docs: register existing Lean evidence for 78 catalog records",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/40"
+        },
+        {
+          "number": 4826,
+          "title": "Mark 17 JSP problems Lean proof=Yes + Eligible=Yes (skj-pixel Lean 4.20 scaffolds)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4826"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000511",
+      "title": "[Is every planar bipartite graph colorable from arbitrary lists of three colors per vertex?](catalog-0501-0600.md#JSP-000511)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5405,
+          "title": "JSP-000511: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5405"
+        },
+        {
+          "number": 1435,
+          "title": "JSP-000511: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1435"
+        },
+        {
+          "number": 4712,
+          "title": "JSP-000511: complete Lean formalization (planar bipartite graphs are 3-choosable, incl. infinite graphs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4712"
+        },
+        {
+          "number": 3997,
+          "title": "JSP-000511: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3997"
+        },
+        {
+          "number": 2786,
+          "title": "JSP-000511: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2786"
+        },
+        {
+          "number": 830,
+          "title": "Record formal Lean proof for JSP-000511 (List coloring of planar bipartite graphs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/830"
+        },
+        {
+          "number": 1814,
+          "title": "catalog: record Lean formalization for JSP-000511",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1814"
+        },
+        {
+          "number": 98,
+          "title": "Formalize JSP-000511: planar bipartite list coloring from ordinary drawings",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/98"
+        },
+        {
+          "number": 120,
+          "title": "Formalize JSP-000848: bounded subgraphs with ordinary topological nonplanarity",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/120"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000512",
+      "title": "[What list size guarantees proper list coloring of every planar graph?](catalog-0501-0600.md#JSP-000512)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 1530,
+          "title": "JSP-000512: record existing Lean formalization (devin-lai/jsp-000512-lean)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1530"
+        },
+        {
+          "number": 922,
+          "title": "JSP-000512: complete Lean formalization of Erdős 631",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/922"
+        },
+        {
+          "number": 5402,
+          "title": "JSP-000512: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5402"
+        },
+        {
+          "number": 4000,
+          "title": "JSP-000512: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4000"
+        },
+        {
+          "number": 2787,
+          "title": "JSP-000512: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2787"
+        },
+        {
+          "number": 3818,
+          "title": "JSP-000512: Lean formalization — planar 5-choosable",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3818"
+        },
+        {
+          "number": 1815,
+          "title": "catalog: record Lean formalization for JSP-000512",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1815"
+        },
+        {
+          "number": 410,
+          "title": "Partial formalization for JSP-000512: upper bound and geometric sharpness",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/410"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000513",
+      "title": "[Does list multicolorability persist when both the available-list size and the required number of colors per vertex are doubled?](catalog-0501-0600.md#JSP-000513)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5399,
+          "title": "JSP-000513: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5399"
+        },
+        {
+          "number": 1038,
+          "title": "Add Lean formalization for JSP-000513",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1038"
+        },
+        {
+          "number": 1686,
+          "title": "feat(catalog): record Lean formalizations for JSP-000513, JSP-000585 (plby)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1686"
+        },
+        {
+          "number": 4003,
+          "title": "JSP-000513: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4003"
+        },
+        {
+          "number": 2788,
+          "title": "JSP-000513: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2788"
+        },
+        {
+          "number": 1693,
+          "title": "catalog: record Lean formalization for JSP-000513",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1693"
+        },
+        {
+          "number": 1816,
+          "title": "catalog: record Lean formalization for JSP-000513",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1816"
+        },
+        {
+          "number": 99,
+          "title": "JSP-000513: submit additional complete Lean formalization for review",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/99"
+        },
+        {
+          "number": 97,
+          "title": "JSP-000513: Lean formalization of a 4-choosable graph that is not (8:2)-choosable",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/97"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000514",
+      "title": "[Which triangles can be dissected into congruent triangles only when their number is a square?](catalog-0501-0600.md#JSP-000514)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5396,
+          "title": "JSP-000514: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5396"
+        },
+        {
+          "number": 1261,
+          "title": "JSP-000514: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1261"
+        },
+        {
+          "number": 4827,
+          "title": "docs(catalog): Reference Lean 4.20.0 scaffold repositories for 17 JSP entries",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4827"
+        },
+        {
+          "number": 4006,
+          "title": "JSP-000514: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4006"
+        },
+        {
+          "number": 2789,
+          "title": "JSP-000514: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2789"
+        },
+        {
+          "number": 4822,
+          "title": "[Lean formalization] JSP-000514 (catalog: Lean proof=Yes, Eligible=Yes)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4822"
+        },
+        {
+          "number": 1817,
+          "title": "catalog: record Lean formalization for JSP-000514",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1817"
+        },
+        {
+          "number": 973,
+          "title": "feat: formalize JSP-000514 (Erdős Problem 633)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/973"
+        },
+        {
+          "number": 4826,
+          "title": "Mark 17 JSP problems Lean proof=Yes + Eligible=Yes (skj-pixel Lean 4.20 scaffolds)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4826"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000517",
+      "title": "[If a graph has no clique or independent set larger than logarithmic size, must it have many induced subgraphs with distinct pairs of vertex and edge counts?](catalog-0501-0600.md#JSP-000517)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5393,
+          "title": "JSP-000517: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5393"
+        },
+        {
+          "number": 1095,
+          "title": "JSP-000517: register existing Lean proof evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1095"
+        },
+        {
+          "number": 1372,
+          "title": "JSP-000517: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1372"
+        },
+        {
+          "number": 4009,
+          "title": "JSP-000517: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4009"
+        },
+        {
+          "number": 3023,
+          "title": "JSP-000517: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3023"
+        },
+        {
+          "number": 1818,
+          "title": "catalog: record Lean formalization for JSP-000517",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1818"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000518",
+      "title": "[If a graph has neither large cliques nor large independent sets, must a large induced subgraph have many distinct vertex degrees?](catalog-0501-0600.md#JSP-000518)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5391,
+          "title": "JSP-000518: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5391"
+        },
+        {
+          "number": 778,
+          "title": "JSP-000518: complete attributed Lean proof and verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/778"
+        },
+        {
+          "number": 1373,
+          "title": "JSP-000518: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1373"
+        },
+        {
+          "number": 4012,
+          "title": "JSP-000518: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4012"
+        },
+        {
+          "number": 2818,
+          "title": "JSP-000518: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2818"
+        },
+        {
+          "number": 1819,
+          "title": "catalog: record Lean formalization for JSP-000518",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1819"
+        },
+        {
+          "number": 287,
+          "title": "Submit Lean formalization for JSP-000518 (Erdős #637, JKLY distinct-degrees theorem)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/287"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000521",
+      "title": "[Does sufficiently high chromatic number force several edge-disjoint cycles on the same vertex set?](catalog-0501-0600.md#JSP-000521)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5389,
+          "title": "JSP-000521: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5389"
+        },
+        {
+          "number": 1242,
+          "title": "JSP-000521: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1242"
+        },
+        {
+          "number": 1290,
+          "title": "JSP-000521 (Erdős #641): record the complete Lean formalization and the Janzer–Steiner–Sudakov solution",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1290"
+        },
+        {
+          "number": 4837,
+          "title": "JSP-000521: High chromatic number edge-disjoint cycles",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4837"
+        },
+        {
+          "number": 4014,
+          "title": "JSP-000521: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4014"
+        },
+        {
+          "number": 2819,
+          "title": "JSP-000521: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2819"
+        },
+        {
+          "number": 1820,
+          "title": "catalog: record Lean formalization for JSP-000521",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1820"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000527",
+      "title": "[In higher-dimensional general position, is the number of points forcing a convex subset exponential in the target size?](catalog-0501-0600.md#JSP-000527)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5385,
+          "title": "JSP-000527: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5385"
+        },
+        {
+          "number": 3936,
+          "title": "JSP-000527: record Lean formalization (Yi-111-a)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3936"
+        },
+        {
+          "number": 1305,
+          "title": "JSP-000527: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1305"
+        },
+        {
+          "number": 4019,
+          "title": "JSP-000527: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4019"
+        },
+        {
+          "number": 2820,
+          "title": "JSP-000527: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2820"
+        },
+        {
+          "number": 1821,
+          "title": "catalog: record Lean formalization for JSP-000527",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1821"
+        },
+        {
+          "number": 172,
+          "title": "Submit Lean formalization for JSP-000527 (Erdős #651, Pohoata–Zakharov subexponential bound)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/172"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000528",
+      "title": "[How many points of a planar set can each determine only a small number of distances to the other points?](catalog-0501-0600.md#JSP-000528)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5383,
+          "title": "JSP-000528: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5383"
+        },
+        {
+          "number": 1037,
+          "title": "docs: record Lean proof for JSP-000528",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1037"
+        },
+        {
+          "number": 1374,
+          "title": "JSP-000528: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1374"
+        },
+        {
+          "number": 4021,
+          "title": "JSP-000528: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4021"
+        },
+        {
+          "number": 2821,
+          "title": "JSP-000528: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2821"
+        },
+        {
+          "number": 1822,
+          "title": "catalog: record Lean formalization for JSP-000528",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1822"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000532",
+      "title": "[Must every positive-density integer set contain a translate of all pairwise sums from some infinite set?](catalog-0501-0600.md#JSP-000532)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5381,
+          "title": "JSP-000532: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5381"
+        },
+        {
+          "number": 1262,
+          "title": "JSP-000532: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1262"
+        },
+        {
+          "number": 4023,
+          "title": "JSP-000532: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4023"
+        },
+        {
+          "number": 2822,
+          "title": "JSP-000532: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2822"
+        },
+        {
+          "number": 1823,
+          "title": "catalog: record Lean formalization for JSP-000532",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1823"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000539",
+      "title": "[Does a large set family with small pairwise intersections admit a transversal meeting each member in a uniformly bounded number of elements?](catalog-0501-0600.md#JSP-000539)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5378,
+          "title": "JSP-000539: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5378"
+        },
+        {
+          "number": 1644,
+          "title": "feat(catalog): record Lean formalization for JSP-000539 (Erdos #664)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1644"
+        },
+        {
+          "number": 4664,
+          "title": "JSP-000539: complete exact-pair design Lean proof and verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4664"
+        },
+        {
+          "number": 4027,
+          "title": "JSP-000539: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4027"
+        },
+        {
+          "number": 2823,
+          "title": "JSP-000539: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2823"
+        },
+        {
+          "number": 1824,
+          "title": "catalog: record Lean formalization for JSP-000539",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1824"
+        },
+        {
+          "number": 1021,
+          "title": "Submit Lean formalization for JSP-000539 (Erdős #664, Alon's negative answer for every c < 1)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1021"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000547",
+      "title": "[What is the typical growth of the sum of ratios of consecutive ordered divisors of an integer?](catalog-0501-0600.md#JSP-000547)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5377,
+          "title": "JSP-000547: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5377"
+        },
+        {
+          "number": 1645,
+          "title": "feat(catalog): record Lean formalization for JSP-000547 (Erdos #673)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1645"
+        },
+        {
+          "number": 4833,
+          "title": "JSP-000547: Sum of consecutive divisor ratios",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4833"
+        },
+        {
+          "number": 4029,
+          "title": "JSP-000547: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4029"
+        },
+        {
+          "number": 2824,
+          "title": "JSP-000547: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2824"
+        },
+        {
+          "number": 1825,
+          "title": "catalog: record Lean formalization for JSP-000547",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1825"
+        },
+        {
+          "number": 956,
+          "title": "JSP-000547: Lean formalization of Erd\\u0151s #673 (G(n) \\u2192 \\u221e for almost all n, and on average)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/956"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000554",
+      "title": "[Between consecutive primes, is there an integer whose least prime factor is at least their gap?](catalog-0501-0600.md#JSP-000554)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 2114,
+          "title": "JSP-000554: register pinned Lean proof (replaces embedded-source submission)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2114"
+        },
+        {
+          "number": 5375,
+          "title": "JSP-000554: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5375"
+        },
+        {
+          "number": 1130,
+          "title": "JSP-000554: record independent pinned Lean evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1130"
+        },
+        {
+          "number": 1306,
+          "title": "JSP-000554: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1306"
+        },
+        {
+          "number": 1116,
+          "title": "JSP-000554: add Lean formalization (prime-gap counterexample 89, 97)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1116"
+        },
+        {
+          "number": 1960,
+          "title": "JSP-000301: record complete Lean formalization (pokrc/jsp_claim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1960"
+        },
+        {
+          "number": 5045,
+          "title": "Record Lean formalization for JSP-000554",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5045"
+        },
+        {
+          "number": 4726,
+          "title": "JSP-000554: Lean formalization (lpf vs gap)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4726"
+        },
+        {
+          "number": 4031,
+          "title": "JSP-000554: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4031"
+        },
+        {
+          "number": 4862,
+          "title": "Lean formalizations for JSP-000122, JSP-000301, JSP-000307, JSP-000554, JSP-000598, JSP-000945, JSP-001010",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4862"
+        },
+        {
+          "number": 2825,
+          "title": "JSP-000554: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2825"
+        },
+        {
+          "number": 829,
+          "title": "JSP-000554: Lean formalization — rough numbers between consecutive primes",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/829"
+        },
+        {
+          "number": 1826,
+          "title": "catalog: record Lean formalization for JSP-000554",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1826"
+        },
+        {
+          "number": 2183,
+          "title": "JSP-000554: record complete Lean formalization (pokrc/jsp_claim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2183"
+        },
+        {
+          "number": 2594,
+          "title": "JSP-000554: Lean formalization — least prime factor between primes",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2594"
+        },
+        {
+          "number": 3458,
+          "title": "JSP-000554: record complete Lean formalization (pokrc/jsp_claim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3458"
+        },
+        {
+          "number": 369,
+          "title": "JSP-000554: complete prime-gap density, residue classification and exact-commit self-check",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/369"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000562",
+      "title": "[Is the density distribution of the prime factor at a prescribed position among ordered distinct prime factors unimodal?](catalog-0501-0600.md#JSP-000562)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5373,
+          "title": "JSP-000562: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5373"
+        },
+        {
+          "number": 4526,
+          "title": "JSP-000562: submit unconditional all-k Lean formalization of Erdős 690",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4526"
+        },
+        {
+          "number": 1307,
+          "title": "JSP-000562: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1307"
+        },
+        {
+          "number": 745,
+          "title": "JSP-000562: inclusion-exclusion Lean proof of non-unimodal prime-factor density",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/745"
+        },
+        {
+          "number": 4033,
+          "title": "JSP-000562: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4033"
+        },
+        {
+          "number": 2826,
+          "title": "JSP-000562: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2826"
+        },
+        {
+          "number": 1827,
+          "title": "catalog: record Lean formalization for JSP-000562",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1827"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000568",
+      "title": "[Does the density of integers having a divisor in a prescribed residue class exhibit a phase transition as parameters vary?](catalog-0501-0600.md#JSP-000568)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5371,
+          "title": "JSP-000568: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5371"
+        },
+        {
+          "number": 1124,
+          "title": "JSP-000568: register complete existing Lean proof evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1124"
+        },
+        {
+          "number": 1646,
+          "title": "feat(catalog): record Lean formalization for JSP-000568 (Erdos #697)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1646"
+        },
+        {
+          "number": 4035,
+          "title": "JSP-000568: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4035"
+        },
+        {
+          "number": 2827,
+          "title": "JSP-000568: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2827"
+        },
+        {
+          "number": 1828,
+          "title": "catalog: record Lean formalization for JSP-000568",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1828"
+        },
+        {
+          "number": 506,
+          "title": "JSP-000568: Lean proof of the density δ(m, α) and the trivial bound δ(m, α) < (m^α + 1)/m (Erdős #697)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/506"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000572",
+      "title": "[Must every sufficiently large uniform set family contain two members intersecting in exactly one element?](catalog-0501-0600.md#JSP-000572)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5369,
+          "title": "JSP-000572: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5369"
+        },
+        {
+          "number": 1375,
+          "title": "JSP-000572: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1375"
+        },
+        {
+          "number": 4745,
+          "title": "Add Lean 4.20.0 proof for JSP-000572 (uniform set family intersection)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4745"
+        },
+        {
+          "number": 4037,
+          "title": "JSP-000572: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4037"
+        },
+        {
+          "number": 2828,
+          "title": "JSP-000572: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2828"
+        },
+        {
+          "number": 831,
+          "title": "Record formal Lean proof for JSP-000572 (Forbidden singleton intersections)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/831"
+        },
+        {
+          "number": 1829,
+          "title": "catalog: record Lean formalization for JSP-000572",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1829"
+        },
+        {
+          "number": 79,
+          "title": "JSP-000572: link independent general-k Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/79"
+        },
+        {
+          "number": 754,
+          "title": "JSP-000572: prize application for exact four-uniform Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/754"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000573",
+      "title": "[How large can a set family be if a prescribed pairwise intersection size is forbidden?](catalog-0501-0600.md#JSP-000573)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5366,
+          "title": "JSP-000573: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5366"
+        },
+        {
+          "number": 4562,
+          "title": "JSP-000573: record complete Lean formalization (Frankl-Wilson forbidden-intersection theorem)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4562"
+        },
+        {
+          "number": 1376,
+          "title": "JSP-000573: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1376"
+        },
+        {
+          "number": 4827,
+          "title": "docs(catalog): Reference Lean 4.20.0 scaffold repositories for 17 JSP entries",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4827"
+        },
+        {
+          "number": 4744,
+          "title": "Add Lean 4.20.0 proof for JSP-000573 (forbidden pairwise intersection size)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4744"
+        },
+        {
+          "number": 4040,
+          "title": "JSP-000573: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4040"
+        },
+        {
+          "number": 2829,
+          "title": "JSP-000573: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2829"
+        },
+        {
+          "number": 4823,
+          "title": "[Lean formalization] JSP-000573 (catalog: Lean proof=Yes, Eligible=Yes)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4823"
+        },
+        {
+          "number": 1830,
+          "title": "catalog: record Lean formalization for JSP-000573",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1830"
+        },
+        {
+          "number": 964,
+          "title": "feat: record formal Lean 4 verification for JSP-000573",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/964"
+        },
+        {
+          "number": 131,
+          "title": "Submit Lean formalization for JSP-000573 (Erdős #703, Frankl–Füredi exact value)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/131"
+        },
+        {
+          "number": 4826,
+          "title": "Mark 17 JSP problems Lean proof=Yes + Eligible=Yes (skj-pixel Lean 4.20 scaffolds)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4826"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000575",
+      "title": "[Is every planar unit-distance graph of sufficiently large girth three-colorable?](catalog-0501-0600.md#JSP-000575)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5364,
+          "title": "JSP-000575: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5364"
+        },
+        {
+          "number": 1238,
+          "title": "JSP-000575: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1238"
+        },
+        {
+          "number": 4042,
+          "title": "JSP-000575: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4042"
+        },
+        {
+          "number": 2830,
+          "title": "JSP-000575: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2830"
+        },
+        {
+          "number": 3888,
+          "title": "JSP-000575: Lean formalization — unit-distance 3-colorable",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3888"
+        },
+        {
+          "number": 1831,
+          "title": "catalog: record Lean formalization for JSP-000575",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1831"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000584",
+      "title": "[Must every regular graph of the specified degree contain a three-regular subgraph?](catalog-0501-0600.md#JSP-000584)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5362,
+          "title": "JSP-000584: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5362"
+        },
+        {
+          "number": 4658,
+          "title": "JSP-000584: record the solver attribution and the Lean formalization source (resubmission of #88)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4658"
+        },
+        {
+          "number": 771,
+          "title": "JSP-000584: complete attributed Lean proof and verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/771"
+        },
+        {
+          "number": 1436,
+          "title": "JSP-000584: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1436"
+        },
+        {
+          "number": 4044,
+          "title": "JSP-000584: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4044"
+        },
+        {
+          "number": 2831,
+          "title": "JSP-000584: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2831"
+        },
+        {
+          "number": 3819,
+          "title": "JSP-000584: Lean formalization — 3-regular subgraph",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3819"
+        },
+        {
+          "number": 915,
+          "title": "Record formal Lean proof for JSP-000584 (3-regular subgraphs of 4-regular graphs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/915"
+        },
+        {
+          "number": 1832,
+          "title": "catalog: record Lean formalization for JSP-000584",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1832"
+        },
+        {
+          "number": 88,
+          "title": "JSP-000584: record the solver attribution and register an external Lean formalization source",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/88"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000585",
+      "title": "[How does a graph's chromatic number relate to the order of its largest complete-graph subdivision?](catalog-0501-0600.md#JSP-000585)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 1686,
+          "title": "feat(catalog): record Lean formalizations for JSP-000513, JSP-000585 (plby)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1686"
+        },
+        {
+          "number": 2832,
+          "title": "JSP-000585: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2832"
+        },
+        {
+          "number": 1833,
+          "title": "catalog: record Lean formalization for JSP-000585",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1833"
+        },
+        {
+          "number": 432,
+          "title": "JSP-000585: complete uniform upper bound with our Catlin witness and subdivision-model bridge",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/432"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000586",
+      "title": "[What average degree forces a subdivision of a complete graph of prescribed order?](catalog-0501-0600.md#JSP-000586)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5403,
+          "title": "JSP-000586: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5403"
+        },
+        {
+          "number": 1128,
+          "title": "JSP-000586: register existing Lean proof evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1128"
+        },
+        {
+          "number": 1437,
+          "title": "JSP-000586: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1437"
+        },
+        {
+          "number": 3999,
+          "title": "JSP-000586: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3999"
+        },
+        {
+          "number": 2833,
+          "title": "JSP-000586: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2833"
+        },
+        {
+          "number": 1834,
+          "title": "catalog: record Lean formalization for JSP-000586",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1834"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000588",
+      "title": "[How fast do the two-color size Ramsey numbers of prescribed paths and cycles grow?](catalog-0501-0600.md#JSP-000588)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5400,
+          "title": "JSP-000588: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5400"
+        },
+        {
+          "number": 1236,
+          "title": "JSP-000588: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1236"
+        },
+        {
+          "number": 4827,
+          "title": "docs(catalog): Reference Lean 4.20.0 scaffold repositories for 17 JSP entries",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4827"
+        },
+        {
+          "number": 4590,
+          "title": "JSP-000588: submit independently formalized path and cycle size-Ramsey proof",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4590"
+        },
+        {
+          "number": 4002,
+          "title": "JSP-000588: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4002"
+        },
+        {
+          "number": 2834,
+          "title": "JSP-000588: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2834"
+        },
+        {
+          "number": 4824,
+          "title": "[Lean formalization] JSP-000588 (catalog: Lean proof=Yes, Eligible=Yes)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4824"
+        },
+        {
+          "number": 1835,
+          "title": "catalog: record Lean formalization for JSP-000588",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1835"
+        },
+        {
+          "number": 963,
+          "title": "feat: record formal Lean 4 verification for JSP-000588",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/963"
+        },
+        {
+          "number": 4826,
+          "title": "Mark 17 JSP problems Lean proof=Yes + Eligible=Yes (skj-pixel Lean 4.20 scaffolds)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4826"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000589",
+      "title": "[How long an interval forces a three-term arithmetic progression in one color or a prescribed longer progression in the other?](catalog-0501-0600.md#JSP-000589)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5397,
+          "title": "JSP-000589: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5397"
+        },
+        {
+          "number": 1308,
+          "title": "JSP-000589: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1308"
+        },
+        {
+          "number": 4005,
+          "title": "JSP-000589: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4005"
+        },
+        {
+          "number": 2835,
+          "title": "JSP-000589: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2835"
+        },
+        {
+          "number": 1836,
+          "title": "catalog: record Lean formalization for JSP-000589",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1836"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000590",
+      "title": "[For sufficiently large order satisfying the necessary divisibility conditions, do designs exist in which each prescribed-size point subset lies in exactly one fixed-size block?](catalog-0501-0600.md#JSP-000590)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5394,
+          "title": "JSP-000590: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5394"
+        },
+        {
+          "number": 1144,
+          "title": "JSP-000590: register existing Lean proof evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1144"
+        },
+        {
+          "number": 1309,
+          "title": "JSP-000590: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1309"
+        },
+        {
+          "number": 4741,
+          "title": "JSP-000590: Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4741"
+        },
+        {
+          "number": 4008,
+          "title": "JSP-000590: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4008"
+        },
+        {
+          "number": 2836,
+          "title": "JSP-000590: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2836"
+        },
+        {
+          "number": 1837,
+          "title": "catalog: record Lean formalization for JSP-000590",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1837"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000598",
+      "title": "[Can two distinct central binomial coefficients have exactly the same prime divisors?](catalog-0501-0600.md#JSP-000598)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5046,
+          "title": "Record Lean formalization for JSP-000598",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5046"
+        },
+        {
+          "number": 5387,
+          "title": "JSP-000598: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5387"
+        },
+        {
+          "number": 4595,
+          "title": "JSP-000598: complete Lean formalization — two central binomial coefficients with identical prime divisors (TanHao)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4595"
+        },
+        {
+          "number": 990,
+          "title": "JSP-000598: record complete Lean formalization (Lean proof information)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/990"
+        },
+        {
+          "number": 1310,
+          "title": "JSP-000598: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1310"
+        },
+        {
+          "number": 1107,
+          "title": "JSP-000598: add Lean formalization (central binomial coefficients prime divisors)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1107"
+        },
+        {
+          "number": 625,
+          "title": "docs: restore infinitude quantifiers for eight catalogued Erdős problems",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/625"
+        },
+        {
+          "number": 791,
+          "title": "JSP-000301: record complete Lean formalization (Lean proof information)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/791"
+        },
+        {
+          "number": 1960,
+          "title": "JSP-000301: record complete Lean formalization (pokrc/jsp_claim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1960"
+        },
+        {
+          "number": 2054,
+          "title": "JSP-000689: record complete Lean formalization (pokrc/jsp_claim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2054"
+        },
+        {
+          "number": 4717,
+          "title": "JSP-000598: Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4717"
+        },
+        {
+          "number": 4017,
+          "title": "JSP-000598: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4017"
+        },
+        {
+          "number": 2837,
+          "title": "JSP-000598: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2837"
+        },
+        {
+          "number": 4862,
+          "title": "Lean formalizations for JSP-000122, JSP-000301, JSP-000307, JSP-000554, JSP-000598, JSP-000945, JSP-001010",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4862"
+        },
+        {
+          "number": 116,
+          "title": "JSP-000598: Lean formalization observation",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/116"
+        },
+        {
+          "number": 1838,
+          "title": "catalog: record Lean formalization for JSP-000598",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1838"
+        },
+        {
+          "number": 3420,
+          "title": "JSP-000598: record complete Lean formalization (pokrc/jsp_claim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3420"
+        },
+        {
+          "number": 1953,
+          "title": "JSP-000598: record complete Lean formalization (pokrc/jsp_claim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1953"
+        },
+        {
+          "number": 770,
+          "title": "docs(problems): add Lean proof attribution for JSP-000598",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/770"
+        },
+        {
+          "number": 1760,
+          "title": "Add Lean proof for JSP-000598: Central binomial coefficients with same prime divisors",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1760"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000600",
+      "title": "[Which prescribed block-size sequences admit a pairwise balanced design in which every pair occurs exactly once?](catalog-0501-0600.md#JSP-000600)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5384,
+          "title": "JSP-000600: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5384"
+        },
+        {
+          "number": 1312,
+          "title": "JSP-000600: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1312"
+        },
+        {
+          "number": 4897,
+          "title": "Formalize JSP-000600 (Erdős Problem #732) in Lean 4",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4897"
+        },
+        {
+          "number": 4020,
+          "title": "JSP-000600: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4020"
+        },
+        {
+          "number": 2838,
+          "title": "JSP-000600: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2838"
+        },
+        {
+          "number": 1839,
+          "title": "catalog: record Lean formalization for JSP-000600",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1839"
+        },
+        {
+          "number": 307,
+          "title": "JSP-000600: formalize full finite-field profile construction (Partial Progress)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/307"
+        },
+        {
+          "number": 78,
+          "title": "JSP-000600: Lean formalization of both bounds of Erdős #732 (block-compatible sequences)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/78"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000601",
+      "title": "[How many distinct line-multiplicity counting sequences can planar point sets determine?](catalog-0601-0700.md#JSP-000601)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5382,
+          "title": "JSP-000601: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5382"
+        },
+        {
+          "number": 871,
+          "title": "JSP-000601: pinned Lean proof intake for line-multiplicity counting sequences",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/871"
+        },
+        {
+          "number": 1314,
+          "title": "JSP-000601: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1314"
+        },
+        {
+          "number": 1591,
+          "title": "JSP-000494 (Erdős #607): record the complete Lean formalization and the Szemerédi–Trotter solution",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1591"
+        },
+        {
+          "number": 4022,
+          "title": "JSP-000601: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4022"
+        },
+        {
+          "number": 2839,
+          "title": "JSP-000601: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2839"
+        },
+        {
+          "number": 2004,
+          "title": "catalog: record Lean formalization for JSP-000601",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2004"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000603",
+      "title": "[When can a planar point set receive positive weights so that every line containing at least two points has the same total weight?](catalog-0601-0700.md#JSP-000603)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5380,
+          "title": "JSP-000603: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5380"
+        },
+        {
+          "number": 2193,
+          "title": "fix: correct journal DOI targets for JSP-000139 and JSP-000603",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2193"
+        },
+        {
+          "number": 1315,
+          "title": "JSP-000603: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1315"
+        },
+        {
+          "number": 4024,
+          "title": "JSP-000603: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4024"
+        },
+        {
+          "number": 2840,
+          "title": "JSP-000603: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2840"
+        },
+        {
+          "number": 1840,
+          "title": "catalog: record Lean formalization for JSP-000603",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1840"
+        },
+        {
+          "number": 664,
+          "title": "JSP-000603: formalize exact degree certificates for magic configurations",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/664"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000605",
+      "title": "[Must every graph of uncountable chromatic number have an edge lying on cycles of every sufficiently large length?](catalog-0601-0700.md#JSP-000605)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5379,
+          "title": "JSP-000605: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5379"
+        },
+        {
+          "number": 1317,
+          "title": "JSP-000605: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1317"
+        },
+        {
+          "number": 1615,
+          "title": "JSP-000605 (Erdős #737): record the complete Lean formalization and Thomassen's solution",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1615"
+        },
+        {
+          "number": 4026,
+          "title": "JSP-000605: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4026"
+        },
+        {
+          "number": 2841,
+          "title": "JSP-000605: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2841"
+        },
+        {
+          "number": 1841,
+          "title": "catalog: record Lean formalization for JSP-000605",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1841"
+        },
+        {
+          "number": 1109,
+          "title": "Add verified Lean proof references for JSP-000605, 620, 626, 641, 644, 657",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1109"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000612",
+      "title": "[How many edges must be deleted from a chromatic-critical graph to make it bipartite?](catalog-0601-0700.md#JSP-000612)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5376,
+          "title": "JSP-000612: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5376"
+        },
+        {
+          "number": 708,
+          "title": "JSP-000612: attributed complete Lean proof and reproducible verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/708"
+        },
+        {
+          "number": 1318,
+          "title": "JSP-000612: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1318"
+        },
+        {
+          "number": 825,
+          "title": "JSP-000612: Lean formalization submission and prize consideration request",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/825"
+        },
+        {
+          "number": 4030,
+          "title": "JSP-000612: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4030"
+        },
+        {
+          "number": 3823,
+          "title": "JSP-000612: Lean formalization — critical bipartite",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3823"
+        },
+        {
+          "number": 2842,
+          "title": "JSP-000612: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2842"
+        },
+        {
+          "number": 1842,
+          "title": "catalog: record Lean formalization for JSP-000612",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1842"
+        },
+        {
+          "number": 703,
+          "title": "JSP-000612: Erdős #744 — odd cycles show f_3(n) = 1 (scoped component)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/703"
+        },
+        {
+          "number": 4,
+          "title": "docs: update problem status and claim eligibility flags",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000613",
+      "title": "[How large is the second-largest component of a random graph in the critical transition window?](catalog-0601-0700.md#JSP-000613)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5374,
+          "title": "JSP-000613: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5374"
+        },
+        {
+          "number": 1153,
+          "title": "JSP-000613: register existing Lean proof evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1153"
+        },
+        {
+          "number": 1319,
+          "title": "JSP-000613: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1319"
+        },
+        {
+          "number": 4032,
+          "title": "JSP-000613: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4032"
+        },
+        {
+          "number": 2843,
+          "title": "JSP-000613: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2843"
+        },
+        {
+          "number": 1843,
+          "title": "catalog: record Lean formalization for JSP-000613",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1843"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000614",
+      "title": "[What is the edge threshold for Hamilton cycles in a random graph?](catalog-0601-0700.md#JSP-000614)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5372,
+          "title": "JSP-000614: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5372"
+        },
+        {
+          "number": 1239,
+          "title": "JSP-000614: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1239"
+        },
+        {
+          "number": 4034,
+          "title": "JSP-000614: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4034"
+        },
+        {
+          "number": 2844,
+          "title": "JSP-000614: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2844"
+        },
+        {
+          "number": 3821,
+          "title": "JSP-000614: Lean formalization — Hamilton cycle threshold",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3821"
+        },
+        {
+          "number": 1844,
+          "title": "catalog: record Lean formalization for JSP-000614",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1844"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000615",
+      "title": "[What is the density threshold for a perfect matching in a random three-uniform hypergraph?](catalog-0601-0700.md#JSP-000615)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5370,
+          "title": "JSP-000615: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5370"
+        },
+        {
+          "number": 1148,
+          "title": "JSP-000615: register existing Lean proof evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1148"
+        },
+        {
+          "number": 1438,
+          "title": "JSP-000615: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1438"
+        },
+        {
+          "number": 4036,
+          "title": "JSP-000615: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4036"
+        },
+        {
+          "number": 2845,
+          "title": "JSP-000615: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2845"
+        },
+        {
+          "number": 1845,
+          "title": "catalog: record Lean formalization for JSP-000615",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1845"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000616",
+      "title": "[Counting sum-free subsets of integer intervals](catalog-0601-0700.md#JSP-000616)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5368,
+          "title": "JSP-000616: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5368"
+        },
+        {
+          "number": 1664,
+          "title": "feat(catalog): record Lean formalization for JSP-000616 (Erdos #748)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1664"
+        },
+        {
+          "number": 4743,
+          "title": "Add Lean 4.20.0 proof for JSP-000616 (sum-free subsets count)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4743"
+        },
+        {
+          "number": 4038,
+          "title": "JSP-000616: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4038"
+        },
+        {
+          "number": 4678,
+          "title": "CLOSED - Lean proof does not match original problem statement, will resubmit properly",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4678"
+        },
+        {
+          "number": 2846,
+          "title": "JSP-000616: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2846"
+        },
+        {
+          "number": 2562,
+          "title": "JSP-000616: Lean formalization — counting sum-free subsets",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2562"
+        },
+        {
+          "number": 838,
+          "title": "Record formal Lean proof for JSP-000616 (Cameron-Erdős sum-free subsets)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/838"
+        },
+        {
+          "number": 1846,
+          "title": "catalog: record Lean formalization for JSP-000616",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1846"
+        },
+        {
+          "number": 4453,
+          "title": "JSP-000616: Lean formalization — 8 odd-only sum-free subsets of [1,5]",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4453"
+        },
+        {
+          "number": 331,
+          "title": "Submit Lean formalization for JSP-000616 (Erdős #748, the Cameron–Erdős conjecture f(n) ≪ 2^{n/2})",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/331"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000619",
+      "title": "[How many distinct cycle lengths are forced by large minimum degree and large girth?](catalog-0601-0700.md#JSP-000619)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5367,
+          "title": "JSP-000619: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5367"
+        },
+        {
+          "number": 1320,
+          "title": "JSP-000619: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1320"
+        },
+        {
+          "number": 4039,
+          "title": "JSP-000619: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4039"
+        },
+        {
+          "number": 2847,
+          "title": "JSP-000619: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2847"
+        },
+        {
+          "number": 3822,
+          "title": "JSP-000619: Lean formalization — distinct cycle lengths",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/3822"
+        },
+        {
+          "number": 555,
+          "title": "[Formalization] JSP-000619 / Erdos 752: complete distinct cycle-length bound",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/555"
+        },
+        {
+          "number": 1847,
+          "title": "catalog: record Lean formalization for JSP-000619",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1847"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000620",
+      "title": "[In a finite four-dimensional point set, how many other points can be at the same distance from one point?](catalog-0601-0700.md#JSP-000620)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5365,
+          "title": "JSP-000620: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5365"
+        },
+        {
+          "number": 1647,
+          "title": "feat(catalog): record Lean formalization for JSP-000620 (Erdos #754)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1647"
+        },
+        {
+          "number": 4041,
+          "title": "JSP-000620: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4041"
+        },
+        {
+          "number": 2848,
+          "title": "JSP-000620: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2848"
+        },
+        {
+          "number": 1848,
+          "title": "catalog: record Lean formalization for JSP-000620",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1848"
+        },
+        {
+          "number": 75,
+          "title": "JSP-000620: Lean formalization of the lower bound and two-sided answer (Erdős #754)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/75"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000622",
+      "title": "[For a prescribed small graph order, what is the worst-case minimum number of clique or independent-set parts in a vertex partition?](catalog-0601-0700.md#JSP-000622)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5363,
+          "title": "JSP-000622: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5363"
+        },
+        {
+          "number": 1270,
+          "title": "JSP-000622: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1270"
+        },
+        {
+          "number": 4043,
+          "title": "JSP-000622: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4043"
+        },
+        {
+          "number": 2849,
+          "title": "JSP-000622: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2849"
+        },
+        {
+          "number": 1849,
+          "title": "catalog: record Lean formalization for JSP-000622",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1849"
+        },
+        {
+          "number": 41,
+          "title": "JSP-000622: catalog Lean evidence and formalization attribution",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/41"
+        },
+        {
+          "number": 332,
+          "title": "Submit Lean formalization for JSP-000622 (Erdős #758: z(12) = 4, the table z(1..19), and z(20) = 6)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/332"
+        },
+        {
+          "number": 144,
+          "title": "JSP-000936, JSP-000937, JSP-000958: migrate existing submission to catalog-only Lean references",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/144"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000623",
+      "title": "[How does the minimum number of clique or independent-set parts for graphs on a surface grow with the surface's complexity?](catalog-0601-0700.md#JSP-000623)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5361,
+          "title": "JSP-000623: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5361"
+        },
+        {
+          "number": 1321,
+          "title": "JSP-000623: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1321"
+        },
+        {
+          "number": 642,
+          "title": "JSP-000623: Lean formalization of cochromatic numbers on orientable surfaces",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/642"
+        },
+        {
+          "number": 4045,
+          "title": "JSP-000623: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4045"
+        },
+        {
+          "number": 2850,
+          "title": "JSP-000623: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2850"
+        },
+        {
+          "number": 1850,
+          "title": "catalog: record Lean formalization for JSP-000623",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1850"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000625",
+      "title": "[Can cumulative two-term additive representation counts grow linearly with bounded error?](catalog-0601-0700.md#JSP-000625)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5360,
+          "title": "JSP-000625: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5360"
+        },
+        {
+          "number": 757,
+          "title": "JSP-000625: add independent complete Lean formalization evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/757"
+        },
+        {
+          "number": 1687,
+          "title": "feat(catalog): record Lean formalizations for JSP-000625, JSP-000641, JSP-000643, JSP-000663, JSP-000665 (plby)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1687"
+        },
+        {
+          "number": 1960,
+          "title": "JSP-000301: record complete Lean formalization (pokrc/jsp_claim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1960"
+        },
+        {
+          "number": 2054,
+          "title": "JSP-000689: record complete Lean formalization (pokrc/jsp_claim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2054"
+        },
+        {
+          "number": 4046,
+          "title": "JSP-000625: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4046"
+        },
+        {
+          "number": 2851,
+          "title": "JSP-000625: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2851"
+        },
+        {
+          "number": 1628,
+          "title": "docs: record verified Lean proof for JSP-000625 (Erdős #763)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1628"
+        },
+        {
+          "number": 1851,
+          "title": "catalog: record Lean formalization for JSP-000625",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1851"
+        },
+        {
+          "number": 1949,
+          "title": "JSP-000625: record complete Lean formalization (pokrc/jsp_claim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1949"
+        },
+        {
+          "number": 753,
+          "title": "Add complete Lean proof records for JSP-000759, 000906, and 000625",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/753"
+        },
+        {
+          "number": 2200,
+          "title": "JSP-000183: record complete Lean formalization (pokrc/jsp_claim)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2200"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000626",
+      "title": "[Can cumulative three-term additive representation counts grow linearly with bounded error?](catalog-0601-0700.md#JSP-000626)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5359,
+          "title": "JSP-000626: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5359"
+        },
+        {
+          "number": 1648,
+          "title": "feat(catalog): record Lean formalization for JSP-000626 (Erdos #764)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1648"
+        },
+        {
+          "number": 4973,
+          "title": "Formalize JSP-000626 (Erdős Problem #764 · Vaughan Cumulative 3-Term Representation Theorem)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4973"
+        },
+        {
+          "number": 4047,
+          "title": "JSP-000626: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4047"
+        },
+        {
+          "number": 1177,
+          "title": "docs: record Lean formalization for JSP-000626",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1177"
+        },
+        {
+          "number": 2852,
+          "title": "JSP-000626: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2852"
+        },
+        {
+          "number": 1852,
+          "title": "catalog: record Lean formalization for JSP-000626",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1852"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000628",
+      "title": "[How many edges can a graph have if no vertex of a cycle is incident to several specified chords?](catalog-0601-0700.md#JSP-000628)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5358,
+          "title": "JSP-000628: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5358"
+        },
+        {
+          "number": 4435,
+          "title": "docs: record JSP-000628 formal Lean proof with solver attribution",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4435"
+        },
+        {
+          "number": 1322,
+          "title": "JSP-000628: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1322"
+        },
+        {
+          "number": 783,
+          "title": "JSP-000628: complete attributed Lean proof and verification evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/783"
+        },
+        {
+          "number": 573,
+          "title": "JSP-000628: complete original proof with new stabilization-threshold bounds",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/573"
+        },
+        {
+          "number": 4048,
+          "title": "JSP-000628: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4048"
+        },
+        {
+          "number": 2853,
+          "title": "JSP-000628: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2853"
+        },
+        {
+          "number": 1853,
+          "title": "catalog: record Lean formalization for JSP-000628",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1853"
+        },
+        {
+          "number": 742,
+          "title": "JSP-000628: add complete Jiang theorem Lean evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/742"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000632",
+      "title": "[How large a subset of an arbitrary finite integer set can have every subset sum avoid a prescribed target?](catalog-0601-0700.md#JSP-000632)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5357,
+          "title": "JSP-000632: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5357"
+        },
+        {
+          "number": 5508,
+          "title": "JSP-000632: submit LCM-cutoff proof, derivation and verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5508"
+        },
+        {
+          "number": 1050,
+          "title": "docs: record Lean proof for JSP-000632",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1050"
+        },
+        {
+          "number": 1669,
+          "title": "feat(catalog): record Lean formalization for JSP-000632 (Erdos #771)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1669"
+        },
+        {
+          "number": 4573,
+          "title": "JSP-000632: Lean formalization — {1,3,4,7} in [1,8]: all subset sums avoid 9",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4573"
+        },
+        {
+          "number": 4049,
+          "title": "JSP-000632: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4049"
+        },
+        {
+          "number": 2854,
+          "title": "JSP-000632: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2854"
+        },
+        {
+          "number": 1854,
+          "title": "catalog: record Lean formalization for JSP-000632",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1854"
+        },
+        {
+          "number": 1146,
+          "title": "Add verified Lean proof references for JSP-000471, 503, 632",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1146"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000633",
+      "title": "[If two-term representation counts are bounded, how large a Sidon subset is guaranteed?](catalog-0601-0700.md#JSP-000633)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5356,
+          "title": "JSP-000633: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5356"
+        },
+        {
+          "number": 1377,
+          "title": "JSP-000633: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1377"
+        },
+        {
+          "number": 744,
+          "title": "JSP-000633: stronger explicit Sidon bound and complete Lean proof",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/744"
+        },
+        {
+          "number": 4572,
+          "title": "JSP-000633: Lean formalization — {1,2,4,8,16,32}: Sidon, 15 pairwise sums distinct",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4572"
+        },
+        {
+          "number": 4050,
+          "title": "JSP-000633: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4050"
+        },
+        {
+          "number": 2855,
+          "title": "JSP-000633: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2855"
+        },
+        {
+          "number": 1855,
+          "title": "catalog: record Lean formalization for JSP-000633",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1855"
+        },
+        {
+          "number": 454,
+          "title": "Submit Lean formalization of JSP-000633 (Erdős #772): H_k(n) ≫ n^{2/3}, so H_k(n)/√n → ∞ and H_k(n) > n^{1/2+c}",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/454"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000637",
+      "title": "[How many edges can the containment graph of a set family have?](catalog-0601-0700.md#JSP-000637)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5543,
+          "title": "problems: record complete Lean formalization for JSP-000637",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5543"
+        },
+        {
+          "number": 5355,
+          "title": "JSP-000637: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5355"
+        },
+        {
+          "number": 712,
+          "title": "JSP-000637: register attributed complete Lean proof and reproduction",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/712"
+        },
+        {
+          "number": 1439,
+          "title": "JSP-000637: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1439"
+        },
+        {
+          "number": 772,
+          "title": "JSP-000870: complete attributed Lean proof and verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/772"
+        },
+        {
+          "number": 746,
+          "title": "JSP-000464: complete attributed Lean proof and verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/746"
+        },
+        {
+          "number": 743,
+          "title": "JSP-000182: complete attributed Lean proof and verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/743"
+        },
+        {
+          "number": 771,
+          "title": "JSP-000584: complete attributed Lean proof and verification",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/771"
+        },
+        {
+          "number": 781,
+          "title": "JSP-000248: complete Lean proof evidence and attribution",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/781"
+        },
+        {
+          "number": 782,
+          "title": "JSP-000331: complete Lean proof evidence and attribution",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/782"
+        },
+        {
+          "number": 787,
+          "title": "JSP-000665: complete attributed Lean proof and verification evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/787"
+        },
+        {
+          "number": 734,
+          "title": "JSP-000842: complete Lean proof (attributed verification)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/734"
+        },
+        {
+          "number": 732,
+          "title": "JSP-000653: complete Lean proof (attributed verification)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/732"
+        },
+        {
+          "number": 730,
+          "title": "JSP-000725: complete Lean proof (attributed verification)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/730"
+        },
+        {
+          "number": 725,
+          "title": "JSP-000640: complete attributed Lean proof and verification evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/725"
+        },
+        {
+          "number": 731,
+          "title": "JSP-000733: complete leading-asymptotic implementation with prior-work attribution",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/731"
+        },
+        {
+          "number": 736,
+          "title": "JSP-000897: complete Lean proof (attributed verification)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/736"
+        },
+        {
+          "number": 735,
+          "title": "JSP-000896: complete Lean proof (attributed verification)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/735"
+        },
+        {
+          "number": 723,
+          "title": "JSP-001018: complete Lean proof with explicit integer interface",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/723"
+        },
+        {
+          "number": 733,
+          "title": "JSP-001021: complete Lean proof (attributed verification)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/733"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000640",
+      "title": "[What size of a multicolored uniform hypergraph forces a prescribed number of disjoint edges of one color?](catalog-0601-0700.md#JSP-000640)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5354,
+          "title": "JSP-000640: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5354"
+        },
+        {
+          "number": 725,
+          "title": "JSP-000640: complete attributed Lean proof and verification evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/725"
+        },
+        {
+          "number": 1378,
+          "title": "JSP-000640: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1378"
+        },
+        {
+          "number": 4052,
+          "title": "JSP-000640: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4052"
+        },
+        {
+          "number": 2857,
+          "title": "JSP-000640: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2857"
+        },
+        {
+          "number": 1857,
+          "title": "catalog: record Lean formalization for JSP-000640",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1857"
+        },
+        {
+          "number": 700,
+          "title": "JSP-000640: Erdős #780 — sharpness of the Alon–Frankl–Lovász bound (scoped component)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/700"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000641",
+      "title": "[How long an interval forces a prescribed-length monochromatic increasing sequence with nonincreasing gaps under every two-coloring? Is the predicted exact quadratic threshold correct?](catalog-0601-0700.md#JSP-000641)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 1687,
+          "title": "feat(catalog): record Lean formalizations for JSP-000625, JSP-000641, JSP-000643, JSP-000663, JSP-000665 (plby)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1687"
+        },
+        {
+          "number": 1193,
+          "title": "JSP-000641: complete cubic proof with explicit all-color wave bounds",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1193"
+        },
+        {
+          "number": 5353,
+          "title": "JSP-000641: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5353"
+        },
+        {
+          "number": 4053,
+          "title": "JSP-000641: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4053"
+        },
+        {
+          "number": 2858,
+          "title": "JSP-000641: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2858"
+        },
+        {
+          "number": 1858,
+          "title": "catalog: record Lean formalization for JSP-000641",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1858"
+        },
+        {
+          "number": 54,
+          "title": "Add JSP-000641 finite descending-wave certificate",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/54"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000643",
+      "title": "[Among pairwise coprime integer sets with bounded reciprocal sum, which have multiples covering the largest proportion of integers?](catalog-0601-0700.md#JSP-000643)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 1687,
+          "title": "feat(catalog): record Lean formalizations for JSP-000625, JSP-000641, JSP-000643, JSP-000663, JSP-000665 (plby)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1687"
+        },
+        {
+          "number": 2859,
+          "title": "JSP-000643: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2859"
+        },
+        {
+          "number": 1859,
+          "title": "catalog: record Lean formalization for JSP-000643",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1859"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000644",
+      "title": "[If an integer set's reciprocal sum is bounded, what proportion of integers must avoid divisibility by every set element?](catalog-0601-0700.md#JSP-000644)",
+      "status": "Solved",
+      "lean": "No",
+      "search": "returned",
+      "prior_prs": [
+        {
+          "number": 5352,
+          "title": "JSP-000644: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/5352"
+        },
+        {
+          "number": 1277,
+          "title": "JSP-000644: record existing Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1277"
+        },
+        {
+          "number": 4054,
+          "title": "JSP-000644: register Lean formalization (plby/lean-proofs)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4054"
+        },
+        {
+          "number": 2860,
+          "title": "JSP-000644: register Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/2860"
+        },
+        {
+          "number": 1860,
+          "title": "catalog: record Lean formalization for JSP-000644",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/1860"
+        }
+      ]
+    }
+  ]
+}

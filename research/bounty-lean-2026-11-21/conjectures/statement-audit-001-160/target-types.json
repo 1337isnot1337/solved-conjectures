@@ -1,0 +1,1289 @@
+{
+  "date": "2026-11-21",
+  "scope": "Registry entries 1–160, statement headers only; not 160 completed definition, novelty, or eligibility audits.",
+  "source_base_commit": "7d1a8c9912747679d0093f6d1216420c33ee5ffa",
+  "source_patched_commit": "6adcbe13652f4e7c69ad02a783465ae2a99d5cb3",
+  "patch_sha256": "352280407fbbe83e636aa07a5c090aab15c6353c7cd77c0491284cd40df51275",
+  "records": [
+    {
+      "task_id": "fc-v2-parts-i-4747654486a672d04029106d-formalized",
+      "reward_target_id": "fc-target:ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.i",
+      "source_path": "FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean",
+      "theorem": "ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.i",
+      "type_hash": "sha256:4132f953e67a7f0de1ba99a104fece5768ddbba1b27cbb37024a6817dfae8d6a",
+      "type_pretty": "∀ (a : ℤ), ¬IsSquare a → a ≠ -1 → ∃ x > 0, (ArtinPrimitiveRootsConjecture.S a).HasDensity x {p | Nat.Prime p}"
+    },
+    {
+      "task_id": "fc-v2-borsuk-conjecture-four-c5ec39a2e30c2f7226decfbb-formalized",
+      "reward_target_id": "fc-target:Borsuk.borsuk_conjecture.four",
+      "source_path": "FormalConjectures/Wikipedia/BorsukConjecture.lean",
+      "theorem": "Borsuk.borsuk_conjecture.four",
+      "type_hash": "sha256:3558aafae07a382562db9bac4925f374da941567000294ce420fe959e009b993",
+      "type_pretty": "Borsuk.BorsukConjecture 4"
+    },
+    {
+      "task_id": "fc-v2-brocard-brocard-conjecture-bad8d38c7152fb324800c317-formalized",
+      "reward_target_id": "fc-target:Brocard.brocard_conjecture",
+      "source_path": "FormalConjectures/Wikipedia/BrocardConjecture.lean",
+      "theorem": "Brocard.brocard_conjecture",
+      "type_hash": "sha256:d1c9d709307e646e32a3a7dfb2cca841320b4fde6f2ddbf7fa4254523de4716c",
+      "type_pretty": "∀ (n : ℕ),\n  1 ≤ n → 4 ≤ (Finset.filter Nat.Prime (Finset.Ioo (Nat.nth Nat.Prime n ^ 2) (Nat.nth Nat.Prime (n + 1) ^ 2))).card"
+    },
+    {
+      "task_id": "fc-v2-bunyakovsky-bunyakovsky-conjecture-495d8670e29bf5ff57f0d793-formalized",
+      "reward_target_id": "fc-target:Bunyakovsky.bunyakovsky_conjecture",
+      "source_path": "FormalConjectures/Wikipedia/Bunyakovsky.lean",
+      "theorem": "Bunyakovsky.bunyakovsky_conjecture",
+      "type_hash": "sha256:332800985438044d5c3eb15cc6253397de11282d21b2b0e14467f78280de13b5",
+      "type_pretty": "∀ (f : Polynomial ℤ),\n  BunyakovskyCondition f ∧ SchinzelCondition {f} → Infinite ↑{n | Nat.Prime (Polynomial.eval (↑n) f).natAbs}"
+    },
+    {
+      "task_id": "fc-v2-carmichaeltotient-charmichaeltotient-cae8e89f6c888ed860b526e4-formalized",
+      "reward_target_id": "fc-target:CarmichaelTotient.charmichaelTotient",
+      "source_path": "FormalConjectures/Wikipedia/CarmichaelTotient.lean",
+      "theorem": "CarmichaelTotient.charmichaelTotient",
+      "type_hash": "sha256:ea2e8a7448a07ca86b340af8c6e786afbf5ee1413004b9e1c7106104c461c49e",
+      "type_pretty": "∀ ⦃n : ℕ⦄, 0 < n → CarmichaelTotient.CarmichaelTotientFor n"
+    },
+    {
+      "task_id": "fc-v2-classnumberproblem-class-number-problem-8829b1f898f6541d3a2b7305-formalized",
+      "reward_target_id": "fc-target:ClassNumberProblem.class_number_problem",
+      "source_path": "FormalConjectures/Wikipedia/ClassNumberProblem.lean",
+      "theorem": "ClassNumberProblem.class_number_problem",
+      "type_hash": "sha256:1cd3261a0ec78dc855cc6a6d7c0038e345aea6641f871ff3edb1ea2f1767794a",
+      "type_pretty": "{d | Squarefree d ∧ d > 1 ∧ ClassNumberProblem.IsClassNumberOne d}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-dickson-dickson-conjecture-8d0fad8afc24b80bb153877f-formalized",
+      "reward_target_id": "fc-target:Dickson.dickson_conjecture",
+      "source_path": "FormalConjectures/Wikipedia/Dickson.lean",
+      "theorem": "Dickson.dickson_conjecture",
+      "type_hash": "sha256:1ebd92800eb4ec222607e75a5faffe877b94086637852630bf25b120af28eeff",
+      "type_pretty": "∀ (fs : Finset (Polynomial ℤ)),\n  (∀ f ∈ fs, f.degree = 1 ∧ BunyakovskyCondition f) →\n    SchinzelCondition fs → Infinite ↑{n | ∀ f ∈ fs, Nat.Prime (Polynomial.eval (↑n) f).natAbs}"
+    },
+    {
+      "task_id": "fc-v2-erdos10-erdos-10-093efee199e3118d7c812e2a-formalized",
+      "reward_target_id": "fc-target:Erdos10.erdos_10",
+      "source_path": "FormalConjectures/ErdosProblems/10.lean",
+      "theorem": "Erdos10.erdos_10",
+      "type_hash": "sha256:fad033e8100f8378cc36ab4c4599f1b6fb30fc44a752fb0613230db4a59343ff",
+      "type_pretty": "True ↔ ∃ k, Erdos10.sumPrimeAndTwoPows k = Set.univ \\ {0, 1}"
+    },
+    {
+      "task_id": "fc-v2-erdos100-erdos-100-095be19d890f587b8a3648c8-formalized",
+      "reward_target_id": "fc-target:Erdos100.erdos_100",
+      "source_path": "FormalConjectures/ErdosProblems/100.lean",
+      "theorem": "Erdos100.erdos_100",
+      "type_hash": "sha256:a196de07a38d09443ce43fc97fda0921de3ed70450cc51809f69c9673454d3ae",
+      "type_pretty": "True ↔\n  ∃ C > 0,\n    ∀ᶠ (n : ℕ) in Filter.atTop,\n      ∀ (A : Finset (EuclideanSpace ℝ (Fin 2))), A.card = n → Erdos100.DistancesSeparated A → Metric.diam ↑A > C * ↑n"
+    },
+    {
+      "task_id": "fc-v2-erdos1003-erdos-1003-ca6862d8b79e6409eaa9d6ed-formalized",
+      "reward_target_id": "fc-target:Erdos1003.erdos_1003",
+      "source_path": "FormalConjectures/ErdosProblems/1003.lean",
+      "theorem": "Erdos1003.erdos_1003",
+      "type_hash": "sha256:58949236044a32db43dae94ff8db01ef6660e2c74e2dad8f708f96b31cd6fa70",
+      "type_pretty": "True ↔ {n | n.totient = (n + 1).totient}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-erdos102-erdos-102-b12433b49d2d2a7aeed8f85f-formalized",
+      "reward_target_id": "fc-target:Erdos102.erdos_102",
+      "source_path": "FormalConjectures/ErdosProblems/102.lean",
+      "theorem": "Erdos102.erdos_102",
+      "type_hash": "sha256:b2a5e49ffbd9ca22ad101b8d27a9c237cbc46cffedc1cbed66e2de954a4a1308",
+      "type_pretty": "∀ c > 0, ∀ (M : ℕ), ∀ᶠ (n : ℕ) in Filter.atTop, ↑M ≤ Erdos102.h c n"
+    },
+    {
+      "task_id": "fc-v2-erdos103-erdos-103-ee78d2696e0e757f165095a6-formalized",
+      "reward_target_id": "fc-target:Erdos103.erdos_103",
+      "source_path": "FormalConjectures/ErdosProblems/103.lean",
+      "theorem": "Erdos103.erdos_103",
+      "type_hash": "sha256:ff5080c6fe2b22abfd7d25719ee3e18128780fdb0e55b2dc54e8d0607ff964b4",
+      "type_pretty": "Filter.Tendsto Erdos103.h Filter.atTop (nhds ⊤)"
+    },
+    {
+      "task_id": "fc-v2-erdos104-erdos-104-7e06efdabca5b60fd20d9369-formalized",
+      "reward_target_id": "fc-target:Erdos104.erdos_104",
+      "source_path": "FormalConjectures/ErdosProblems/104.lean",
+      "theorem": "Erdos104.erdos_104",
+      "type_hash": "sha256:f23f20b65d71f9dd275956d4de7224b81ba83913eac95981d827c12cfb86601b",
+      "type_pretty": "(fun n => ↑(Erdos104.maxUnitCircleCount n)) =o[Filter.atTop] fun n => ↑n ^ 2"
+    },
+    {
+      "task_id": "fc-v2-erdos1049-erdos-1049-113d6d510a3b1cca19a554dc-formalized",
+      "reward_target_id": "fc-target:Erdos1049.erdos_1049",
+      "source_path": "FormalConjectures/ErdosProblems/1049.lean",
+      "theorem": "Erdos1049.erdos_1049",
+      "type_hash": "sha256:8a4ce72ea0a41aceb11ac705364b6d90e856eb71ce4970ee48ce81a5b5cbe195",
+      "type_pretty": "True ↔ ∀ t > 1, Irrational (∑' (n : ℕ+), 1 / (↑t ^ ↑n - 1))"
+    },
+    {
+      "task_id": "fc-v2-erdos1056-erdos-1056-4743f1ccd9bd4738e94491af-formalized",
+      "reward_target_id": "fc-target:Erdos1056.erdos_1056",
+      "source_path": "FormalConjectures/ErdosProblems/1056.lean",
+      "theorem": "Erdos1056.erdos_1056",
+      "type_hash": "sha256:fda08b8781283f3deccd1cf466d486319555c16f17421fd07953a1013eb8a943",
+      "type_pretty": "True ↔\n  ∀ k ≥ 2,\n    ∃ p, ∃ (_ : Nat.Prime p), ∃ boundaries, ∃ (_ : StrictMono boundaries), Erdos1056.AllModProdEqualsOne p boundaries"
+    },
+    {
+      "task_id": "fc-v2-erdos1057-erdos-1057-d6b741cdf13f9b7c3980899b-formalized",
+      "reward_target_id": "fc-target:Erdos1057.erdos_1057",
+      "source_path": "FormalConjectures/ErdosProblems/1057.lean",
+      "theorem": "Erdos1057.erdos_1057",
+      "type_hash": "sha256:d9d4e2c4c121fc065a35e95ed514ddd67f7ce3df8821ac1e9b832792b75983bf",
+      "type_pretty": "True ↔ Filter.Tendsto (fun x => Real.log (Erdos1057.carmichaelCounting x) / Real.log x) Filter.atTop (nhds 1)"
+    },
+    {
+      "task_id": "fc-v2-parts-ii-74f0ee48481a220c9ce887f3-formalized",
+      "reward_target_id": "fc-target:Erdos1060.erdos_1060.parts.ii",
+      "source_path": "FormalConjectures/ErdosProblems/1060.lean",
+      "theorem": "Erdos1060.erdos_1060.parts.ii",
+      "type_hash": "sha256:7ff417c0c5796d1d731ccfd2ac2ba6582670e385b8d06766ea300a27ba543f60",
+      "type_pretty": "∃ C,\n  (fun n => ↑{k ∈ Finset.Iic n | k * (ArithmeticFunction.sigma 1) k = n}.card) =O[Filter.atTop] fun n => Real.log ↑n ^ C"
+    },
+    {
+      "task_id": "fc-v2-parts-ii-ca03ba84817dff1342d8cb9e-formalized",
+      "reward_target_id": "fc-target:Erdos1062.erdos_1062.parts.ii",
+      "source_path": "FormalConjectures/ErdosProblems/1062.lean",
+      "theorem": "Erdos1062.erdos_1062.parts.ii",
+      "type_hash": "sha256:8594d6cf09d2f4108163c3c4cc2ce01f55d3fa19c8d8e05eb8cc86c188d944e7",
+      "type_pretty": "(∃ l, Filter.Tendsto (fun n => ↑(Erdos1062.f n) / ↑n) Filter.atTop (nhds l) ∧ Irrational l) ↔ True"
+    },
+    {
+      "task_id": "fc-v2-erdos1068-erdos-1068-61390c258ade846781ec3a2a-formalized",
+      "reward_target_id": "fc-target:Erdos1068.erdos_1068",
+      "source_path": "FormalConjectures/ErdosProblems/1068.lean",
+      "theorem": "Erdos1068.erdos_1068",
+      "type_hash": "sha256:18aadc80443418fe2cdc6e8658361f772dfac497a2279d7ec9048f0a57804b76",
+      "type_pretty": "True ↔\n  ∀ (V : Type) (G : SimpleGraph V),\n    G.chromaticCardinal = Cardinal.aleph 1 → ∃ s, s.Countable ∧ (SimpleGraph.induce s G).InfinitelyConnected"
+    },
+    {
+      "task_id": "fc-v2-erdos107-erdos-107-5e8746ecd04f4a99466608a8-formalized",
+      "reward_target_id": "fc-target:Erdos107.erdos_107",
+      "source_path": "FormalConjectures/ErdosProblems/107.lean",
+      "theorem": "Erdos107.erdos_107",
+      "type_hash": "sha256:ba8757d5f6040523637ef00a6f7f106d17fa3b92059619951bf69d51b6bef883",
+      "type_pretty": "True ↔ ∀ n ≥ 3, Erdos107.f n = 2 ^ (n - 2) + 1"
+    },
+    {
+      "task_id": "fc-v2-parts-i-5b086664dcebd268a95494f4-formalized",
+      "reward_target_id": "fc-target:Erdos1072.erdos_1072.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/1072.lean",
+      "theorem": "Erdos1072.erdos_1072.parts.i",
+      "type_hash": "sha256:5d55a338668375e93fbf0ad985db12019fcde7d09295ae644bedc2b23c1b6880",
+      "type_pretty": "True ↔ {p | Nat.Prime p ∧ Erdos1072.f p = p - 1}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-parts-ii-f763b86dbdaf5a4cf8c164f3-formalized",
+      "reward_target_id": "fc-target:Erdos1072.erdos_1072.parts.ii",
+      "source_path": "FormalConjectures/ErdosProblems/1072.lean",
+      "theorem": "Erdos1072.erdos_1072.parts.ii",
+      "type_hash": "sha256:face433702cb92461a257a2be4165cb1ec8401d61973ebe72b7337cec6972eb0",
+      "type_pretty": "True ↔\n  ∃ P ⊆ {p | Nat.Prime p},\n    P.HasDensity 1 {p | Nat.Prime p} ∧\n      Filter.Tendsto (fun p => ↑(Erdos1072.f p) / ↑p) (Filter.atTop ⊓ Filter.principal P) (nhds 0)"
+    },
+    {
+      "task_id": "fc-v2-erdos1073-erdos-1073-3300f6de17be0ccd288598dc-formalized",
+      "reward_target_id": "fc-target:Erdos1073.erdos_1073",
+      "source_path": "FormalConjectures/ErdosProblems/1073.lean",
+      "theorem": "Erdos1073.erdos_1073",
+      "type_hash": "sha256:ce379578bcf74e9c9f0f26f3097db5efb58de820117e694203a10aba079b3ce4",
+      "type_pretty": "True ↔ ∃ o, o =o[Filter.atTop] 1 ∧ ∀ (x : ℕ), Erdos1073.A x ≤ ↑x ^ o x"
+    },
+    {
+      "task_id": "fc-v2-erdos108-erdos-108-bdcb9352936e167f3ba5e8d1-formalized",
+      "reward_target_id": "fc-target:Erdos108.erdos_108",
+      "source_path": "FormalConjectures/ErdosProblems/108.lean",
+      "theorem": "Erdos108.erdos_108",
+      "type_hash": "sha256:8be2c005c0290f01e2370d1ab68e8a1901ef0b52836b2685bb0fe2075b318142",
+      "type_pretty": "True ↔\n  ∀ r ≥ 4,\n    ∀ k ≥ 2,\n      ∃ f,\n        ∀ (V : Type u) (G : SimpleGraph V),\n          Nonempty V → ↑f ≤ G.chromaticNumber → ∃ H, H.coe.girth ≥ r ∧ H.coe.chromaticNumber ≥ ↑k"
+    },
+    {
+      "task_id": "fc-v2-parts-i-ed1e02071af3890e7b023b1e-formalized",
+      "reward_target_id": "fc-target:Erdos1082.erdos_1082.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/1082.lean",
+      "theorem": "Erdos1082.erdos_1082.parts.i",
+      "type_hash": "sha256:eab265b64d65590feb4bb653711180451596e1701b795b2a15b8775e8ef3c529",
+      "type_pretty": "True ↔ ∀ (A : Finset (EuclideanSpace ℝ (Fin 2))), EuclideanGeometry.NonTrilinear ↑A → A.card / 2 ≤ distinctDistances A"
+    },
+    {
+      "task_id": "fc-v2-variants-upper-d3-7761a23d749d1982250838fb-formalized",
+      "reward_target_id": "fc-target:Erdos1085.erdos_1085.variants.upper_d3",
+      "source_path": "FormalConjectures/ErdosProblems/1085.lean",
+      "theorem": "Erdos1085.erdos_1085.variants.upper_d3",
+      "type_hash": "sha256:572861df5ecc3996e045308319c5cc289f7ec47f97227c17e29d6eda14608822",
+      "type_pretty": "True ↔ (fun n => ↑(Erdos1085.f 3 n)) =O[Filter.atTop] fun n => ↑n ^ (4 / 3) * Real.log (Real.log ↑n)"
+    },
+    {
+      "task_id": "fc-v2-erdos1094-erdos-1094-420fd8d47e57c956b5c82971-formalized",
+      "reward_target_id": "fc-target:Erdos1094.erdos_1094",
+      "source_path": "FormalConjectures/ErdosProblems/1094.lean",
+      "theorem": "Erdos1094.erdos_1094",
+      "type_hash": "sha256:537939d5fd9382e79289b75944590dff6ba8cc186e3adfe787e98cb0917ef70c",
+      "type_pretty": "{(n, k) | 0 < k ∧ 2 * k ≤ n ∧ (n.choose k).minFac > max (n / k) k}.Finite"
+    },
+    {
+      "task_id": "fc-v2-variants-log-istheta-0dad586f1aeb94c07d8293f5-formalized",
+      "reward_target_id": "fc-target:Erdos1095.erdos_1095.variants.log_isTheta",
+      "source_path": "FormalConjectures/ErdosProblems/1095.lean",
+      "theorem": "Erdos1095.erdos_1095.variants.log_isTheta",
+      "type_hash": "sha256:8c6b1dff26369eee096133e410b35d7a3fcf94d748f974cf22d47f61eb69f601",
+      "type_pretty": "(fun k => Real.log ↑(Erdos1095.g k)) =Θ[Filter.atTop] fun k => ↑k / Real.log ↑k"
+    },
+    {
+      "task_id": "fc-v2-variants-lower-conjecture-6917d0ec5e7690d593fff1ee-formalized",
+      "reward_target_id": "fc-target:Erdos1095.erdos_1095.variants.lower_conjecture",
+      "source_path": "FormalConjectures/ErdosProblems/1095.lean",
+      "theorem": "Erdos1095.erdos_1095.variants.lower_conjecture",
+      "type_hash": "sha256:37d44d6c19d5ade926d4526f136139d92c93efb06d460b3208f456fd7e04f3f1",
+      "type_pretty": "∃ c > 0, ∀ᶠ (k : ℕ) in Filter.atTop, ↑(Erdos1095.g k) ≥ Real.exp (c * ↑k / Real.log ↑k)"
+    },
+    {
+      "task_id": "fc-v2-erdos11-erdos-11-fb60446b83e84905d7e721c9-formalized",
+      "reward_target_id": "fc-target:Erdos11.erdos_11",
+      "source_path": "FormalConjectures/ErdosProblems/11.lean",
+      "theorem": "Erdos11.erdos_11",
+      "type_hash": "sha256:4a1a64ebc8e1aeffa65059bcab7647589d4e9508acb4d8e9436db1de2899f281",
+      "type_pretty": "∀ (n : ℕ), Odd n → 1 < n → ∃ k l, Squarefree k ∧ n = k + 2 ^ l"
+    },
+    {
+      "task_id": "fc-v2-parts-i-ff5b7f534e8ac8051fbf7ce7-formalized",
+      "reward_target_id": "fc-target:Erdos1101.erdos_1101.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/1101.lean",
+      "theorem": "Erdos1101.erdos_1101.parts.i",
+      "type_hash": "sha256:f816ffef9be6dfaa1c668918835747bedd9eea6b45094e05652467b21ba0d463",
+      "type_pretty": "True ↔ ∃ u, Erdos1101.IsGood u ∧ ∃ k, (fun n => ↑(u n)) =O[Filter.atTop] fun n => ↑n ^ k"
+    },
+    {
+      "task_id": "fc-v2-parts-ii-fcab919e8c86e6eb7fd56e3f-formalized",
+      "reward_target_id": "fc-target:Erdos1106.erdos_1106.parts.ii",
+      "source_path": "FormalConjectures/ErdosProblems/1106.lean",
+      "theorem": "Erdos1106.erdos_1106.parts.ii",
+      "type_hash": "sha256:3a79424001452961961cc10b1ab7e9653b853758d2edcf306248b0b9a775c8f8",
+      "type_pretty": "True ↔ ∀ᶠ (n : ℕ) in Filter.atTop, (∏ i ∈ Finset.Icc 1 n, Erdos1106.p i).primeFactors.card > n"
+    },
+    {
+      "task_id": "fc-v2-erdos1107-erdos-1107-1803d36752387d9232a29d63-formalized",
+      "reward_target_id": "fc-target:Erdos1107.erdos_1107",
+      "source_path": "FormalConjectures/ErdosProblems/1107.lean",
+      "theorem": "Erdos1107.erdos_1107",
+      "type_hash": "sha256:7d3f25595511760c3b8766591417c5ee5db47667b52adbf48af1d8e4aad5d229",
+      "type_pretty": "∀ r ≥ 2, ∀ᶠ (n : ℕ) in Filter.atTop, Erdos1107.SumOfRPowerful r n"
+    },
+    {
+      "task_id": "fc-v2-parts-i-379662530425fd76cd410003-formalized",
+      "reward_target_id": "fc-target:Erdos1108.erdos_1108.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/1108.lean",
+      "theorem": "Erdos1108.erdos_1108.parts.i",
+      "type_hash": "sha256:d35a609a887a939546950a716f0546e9718c957ff2c490984ab4982972dc9f16",
+      "type_pretty": "True ↔ ∀ k ≥ 2, {a | a ∈ Erdos1108.FactorialSums ∧ ∃ m, m ^ k = a}.Finite"
+    },
+    {
+      "task_id": "fc-v2-variants-filaseta-finch-kozek-d56d32b4a5b7a8d10b22e0b1-formalized",
+      "reward_target_id": "fc-target:Erdos1113.erdos_1113.variants.filaseta_finch_kozek",
+      "source_path": "FormalConjectures/ErdosProblems/1113.lean",
+      "theorem": "Erdos1113.erdos_1113.variants.filaseta_finch_kozek",
+      "type_hash": "sha256:be47c529de84a4d1a48c3834d4522a99e658a19e737f1f79b0f1e66bcff35bea",
+      "type_pretty": "∀ (k : ℕ), k.IsSierpinskiNumber → k.IsPerfectPower ∨ Erdos1113.HasFinitePrimeCoveringSet k"
+    },
+    {
+      "task_id": "fc-v2-erdos1135-erdos-1135-7c4800a2a99908ec17071945-formalized",
+      "reward_target_id": "fc-target:Erdos1135.erdos_1135",
+      "source_path": "FormalConjectures/ErdosProblems/1135.lean",
+      "theorem": "Erdos1135.erdos_1135",
+      "type_hash": "sha256:9ffc8897c27defc5d7172af89e2ab650c7e4404ff0e126a051d0dda128bd112d",
+      "type_pretty": "∀ n > 0, ∃ m, CollatzConjecture.collatzStep^[m] n = 1"
+    },
+    {
+      "task_id": "fc-v2-erdos1137-erdos-1137-5cefcedfd600b85daff169b1-formalized",
+      "reward_target_id": "fc-target:Erdos1137.erdos_1137",
+      "source_path": "FormalConjectures/ErdosProblems/1137.lean",
+      "theorem": "Erdos1137.erdos_1137",
+      "type_hash": "sha256:a62d844e5fab8e4377daba553a74aa8ae79e3a98cbf6f1b7c3031dbc18f6895d",
+      "type_pretty": "True ↔\n  Filter.Tendsto\n    (fun x => ↑((Finset.range x).sup fun n => primeGap n * primeGap (n - 1)) / ↑((Finset.range x).sup primeGap) ^ 2)\n    Filter.atTop (nhds 0)"
+    },
+    {
+      "task_id": "fc-v2-erdos1142-erdos-1142-368e3357ba63a487b8e83272-formalized",
+      "reward_target_id": "fc-target:Erdos1142.erdos_1142",
+      "source_path": "FormalConjectures/ErdosProblems/1142.lean",
+      "theorem": "Erdos1142.erdos_1142",
+      "type_hash": "sha256:140c4194bf440ed9095b2b1a1f8cb6b534b1f4738ee1c9d78a89ec890ed38632",
+      "type_pretty": "True ↔ Infinite ↑{n | Erdos1142.Erdos1142Prop n}"
+    },
+    {
+      "task_id": "fc-v2-erdos1175-erdos-1175-54fe8672ceb7402d74457817-formalized",
+      "reward_target_id": "fc-target:Erdos1175.erdos_1175",
+      "source_path": "FormalConjectures/ErdosProblems/1175.lean",
+      "theorem": "Erdos1175.erdos_1175",
+      "type_hash": "sha256:94a0b96c19d37462875b6eb2bee2c8814c7b660b5b2f9173b6a473bb6d45be0f",
+      "type_pretty": "True ↔\n  ∀ (κ : Cardinal.{u_1}),\n    Cardinal.aleph0 < κ →\n      ∃ μ,\n        ∀ (V : Type u_1) (G : SimpleGraph V),\n          G.chromaticCardinal = μ → ∃ H, H.coe.CliqueFree 3 ∧ H.coe.chromaticCardinal = κ"
+    },
+    {
+      "task_id": "fc-v2-erdos1192-erdos-1192-c0a8dde7c3ca011f7d3ff277-formalized",
+      "reward_target_id": "fc-target:Erdos1192.erdos_1192",
+      "source_path": "FormalConjectures/ErdosProblems/1192.lean",
+      "theorem": "Erdos1192.erdos_1192",
+      "type_hash": "sha256:deb84e4a73cad6e9d9b6f934a99d436ba2a0ba545694e0d16cca0f266636f5a8",
+      "type_pretty": "True ↔\n  ∀ r ≥ 2,\n    ∃ A,\n      (∀ᶠ (n : ℕ) in Filter.atTop, Erdos1192.f_r A r n > 0) ∧\n        (fun x => ∑ n ∈ Finset.range (x + 1), ↑(Erdos1192.f_r A r n) ^ 2) =O[Filter.atTop] fun x => ↑x"
+    },
+    {
+      "task_id": "fc-v2-parts-iii-49f22ba83b357fef758bdcbd-formalized",
+      "reward_target_id": "fc-target:Erdos12.erdos_12.parts.iii",
+      "source_path": "FormalConjectures/ErdosProblems/12.lean",
+      "theorem": "Erdos12.erdos_12.parts.iii",
+      "type_hash": "sha256:3c64fab1d296e8c392f1e93db13792f6d4e776f4f89ae12df66c137a6eb4f839",
+      "type_pretty": "∀ (A : Set ℕ), Erdos12.IsGood A → Summable fun n => 1 / ↑↑n"
+    },
+    {
+      "task_id": "fc-v2-erdos120-erdos-120-6567b23bd1bb0596e766b466-formalized",
+      "reward_target_id": "fc-target:Erdos120.erdos_120",
+      "source_path": "FormalConjectures/ErdosProblems/120.lean",
+      "theorem": "Erdos120.erdos_120",
+      "type_hash": "sha256:0f79ced60a2e616896659f25e6fc019585f8273880dfc18867972dee5510a24b",
+      "type_pretty": "True ↔ ∀ (A : Set ℝ), A.Infinite → Erdos120.Erdos120For A"
+    },
+    {
+      "task_id": "fc-v2-erdos1203-erdos-1203-a6bad1cf733b7b25a6c7e9e1-formalized",
+      "reward_target_id": "fc-target:Erdos1203.erdos_1203",
+      "source_path": "FormalConjectures/ErdosProblems/1203.lean",
+      "theorem": "Erdos1203.erdos_1203",
+      "type_hash": "sha256:45fa62117f124f409a76e766632db59989b0fa75a7e0c329d86c5db39ae72e72",
+      "type_pretty": "True ↔ Filter.Tendsto Erdos1203.F Filter.atTop Filter.atTop"
+    },
+    {
+      "task_id": "fc-v2-iii-d-fb4a709e2ef1d5aec8785c8b-formalized",
+      "reward_target_id": "fc-target:Erdos1209.erdos_1209.parts.iii.d",
+      "source_path": "FormalConjectures/ErdosProblems/1209.lean",
+      "theorem": "Erdos1209.erdos_1209.parts.iii.d",
+      "type_hash": "sha256:6db5cbd06ad34a65b310aefcac8e77e4f87d550c9250244841ff2b08cbd1a630",
+      "type_pretty": "True ↔ ∃ n, {k | Squarefree (n + 2 ^ 2 ^ k)}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-erdos124-ne-zero-28ad288dd41bd728c44f296f-formalized",
+      "reward_target_id": "fc-target:Erdos124.erdos124.ne_zero",
+      "source_path": "FormalConjectures/ErdosProblems/124.lean",
+      "theorem": "Erdos124.erdos124.ne_zero",
+      "type_hash": "sha256:1423a393df40cb7f5f4543388eb5a5532c0236f65fee237917b0888180f041b1",
+      "type_pretty": "True ↔\n  ∀ (k : ℕ),\n    k ≠ 0 →\n      ∀ (D : Finset ℕ),\n        (∀ d ∈ D, 3 ≤ d) →\n          1 ≤ ∑ d ∈ D, (↑d - 1)⁻¹ →\n            D.gcd id = 1 → ∀ᶠ (n : ℕ) in Filter.atTop, n ∈ ∑ d ∈ D, Erdos124.sumsOfDistinctPowers d k"
+    },
+    {
+      "task_id": "fc-v2-variants-islittleo-9a0a2f9ea6c394e30d83dca5-formalized",
+      "reward_target_id": "fc-target:Erdos126.erdos_126.variants.isLittleO",
+      "source_path": "FormalConjectures/ErdosProblems/126.lean",
+      "theorem": "Erdos126.erdos_126.variants.isLittleO",
+      "type_hash": "sha256:e51da61bab02dff3343888e4508dfbd1cb0dcede06e43085d132d5f8a50b05e1",
+      "type_pretty": "∀ (f : ℕ → ℕ), Erdos126.IsMaximalAddFactorsCard f → (fun n => ↑(f n)) =o[Filter.atTop] fun n => ↑n / Real.log ↑n"
+    },
+    {
+      "task_id": "fc-v2-erdos128-erdos-128-d33014decee992ae7dd8266f-formalized",
+      "reward_target_id": "fc-target:Erdos128.erdos_128",
+      "source_path": "FormalConjectures/ErdosProblems/128.lean",
+      "theorem": "Erdos128.erdos_128",
+      "type_hash": "sha256:518df97285e368db18acc8ca5d7543fc963a45d1f8337310a350c045df8e6a46",
+      "type_pretty": "True ↔\n  ∀ (V : Type) [inst : Fintype V] (G : SimpleGraph V),\n    (∀ (V' : Set V),\n        2 * V'.ncard + 1 ≥ Fintype.card V → 50 * (SimpleGraph.induce V' G).edgeSet.ncard > Fintype.card V ^ 2) →\n      ¬G.CliqueFree 3"
+    },
+    {
+      "task_id": "fc-v2-variants-general-d96118aff1591ef8b6f38435-formalized",
+      "reward_target_id": "fc-target:Erdos13.erdos_13.variants.general",
+      "source_path": "FormalConjectures/ErdosProblems/13.lean",
+      "theorem": "Erdos13.erdos_13.variants.general",
+      "type_hash": "sha256:19fef883ead0ea7706b9c91b24373b3c84e6a2919042e2631dfe6c4d9b51b620",
+      "type_pretty": "∀ (r : ℕ),\n  ∃ C,\n    ∀ (N : ℕ),\n      ∀ A ⊆ Finset.Icc 1 N,\n        (∀ a ∈ A, ∀ (b : Fin r → ℕ), (∀ (i : Fin r), b i ∈ A) → (∀ (i : Fin r), a < b i) → ¬a ∣ ∑ i, b i) →\n          ↑A.card ≤ ↑N / (↑r + 1) + C"
+    },
+    {
+      "task_id": "fc-v2-variants-multiple-powerful-factors-da0569dc87ca10dd0841f7b0-formalized",
+      "reward_target_id": "fc-target:Erdos137.erdos_137.variants.multiple_powerful_factors",
+      "source_path": "FormalConjectures/ErdosProblems/137.lean",
+      "theorem": "Erdos137.erdos_137.variants.multiple_powerful_factors",
+      "type_hash": "sha256:5719716b719a2e2b8a4d34bc622abf2383f67b0c6f5a8e4fb02acc0104af9791",
+      "type_pretty": "∀ (k : ℕ),\n  ∀ᶠ (n : ℕ) in Filter.atTop,\n    ∀ (m : ℕ),\n      0 < m →\n        ∃ P,\n          P.card = k ∧ ∀ p ∈ P, Nat.Prime p ∧ p ∣ ∏ x ∈ Finset.Icc m (m + n), x ∧ ¬p ^ 2 ∣ ∏ x ∈ Finset.Icc m (m + n), x"
+    },
+    {
+      "task_id": "fc-v2-parts-i-c19750602c599a816013f0c3-formalized",
+      "reward_target_id": "fc-target:Erdos14.erdos_14.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/14.lean",
+      "theorem": "Erdos14.erdos_14.parts.i",
+      "type_hash": "sha256:01f4b21faa141073550ace4791e41bb283bad80fb700e8965387588dc9238029",
+      "type_pretty": "True ↔ ∀ (A : Set ℕ), ∀ ε > 0, Erdos14.almostSquareRoot ε =O[Filter.atTop] Erdos14.nonUniqueSumCount A"
+    },
+    {
+      "task_id": "fc-v2-parts-ii-297ff3246154294d22c7e321-formalized",
+      "reward_target_id": "fc-target:Erdos14.erdos_14.parts.ii",
+      "source_path": "FormalConjectures/ErdosProblems/14.lean",
+      "theorem": "Erdos14.erdos_14.parts.ii",
+      "type_hash": "sha256:92676249a3598e8a654641b6d8078ed91bb3b00db116143e5a586cd63e1e6b20",
+      "type_pretty": "True ↔ ∃ A, Erdos14.nonUniqueSumCount A =o[Filter.atTop] Erdos14.squareRoot"
+    },
+    {
+      "task_id": "fc-v2-variants-eleven-01ebdb9ae545973b4a5fd64c-formalized",
+      "reward_target_id": "fc-target:Erdos141.erdos_141.variants.eleven",
+      "source_path": "FormalConjectures/ErdosProblems/141.lean",
+      "theorem": "Erdos141.erdos_141.variants.eleven",
+      "type_hash": "sha256:b10dd0ad30bf63d1a026393ffb397b5829c954f5752cf7e7f40bc089e2db4c5e",
+      "type_pretty": "True ↔ ∃ s, Erdos141.Set.IsAPAndPrimeProgressionOfLength s 11"
+    },
+    {
+      "task_id": "fc-v2-parts-ii-d3badd6ab63cd25eec477446-formalized",
+      "reward_target_id": "fc-target:Erdos143.erdos_143.parts.ii",
+      "source_path": "FormalConjectures/ErdosProblems/143.lean",
+      "theorem": "Erdos143.erdos_143.parts.ii",
+      "type_hash": "sha256:d67e6578eee8f3a70ba0d0b5c0035e56073ee6d2505bee0c99f768e41e21e73d",
+      "type_pretty": "∀ (A : Set ℝ), Erdos143.WellSeparatedSet A → Summable fun x => 1 / (↑x * Real.log ↑x)"
+    },
+    {
+      "task_id": "fc-v2-erdos145-erdos-145-54b9062ee2969d1f61c89207-formalized",
+      "reward_target_id": "fc-target:Erdos145.erdos_145",
+      "source_path": "FormalConjectures/ErdosProblems/145.lean",
+      "theorem": "Erdos145.erdos_145",
+      "type_hash": "sha256:f176a0bfb88442d3e2af7d9fd0574cf9f3c2a8fbf2509c1c12c8e4aa57fd694f",
+      "type_pretty": "True ↔\n  ∀ α ≥ 0,\n    ∃ β,\n      Filter.Tendsto (fun x => 1 / x * ∑ n ∈ Erdos145.A x, (↑(Erdos145.s (n + 1)) - ↑(Erdos145.s n)) ^ α) Filter.atTop\n        (nhds β)"
+    },
+    {
+      "task_id": "fc-v2-erdos151-erdos-151-aad50b2e6a53cb3e2576ef21-formalized",
+      "reward_target_id": "fc-target:Erdos151.erdos_151",
+      "source_path": "FormalConjectures/ErdosProblems/151.lean",
+      "theorem": "Erdos151.erdos_151",
+      "type_hash": "sha256:8fe6fe1f34c475941fec16b696012279f56c5dbff94a1c1349a21048a017e61a",
+      "type_pretty": "∀ (n : ℕ) (G : SimpleGraph (Fin n)), Erdos151.cliqueTransversalNumber G ≤ n - Erdos151.H n"
+    },
+    {
+      "task_id": "fc-v2-erdos153-erdos-153-f8dec5adace3a009aa2dc5d1-formalized",
+      "reward_target_id": "fc-target:Erdos153.erdos_153",
+      "source_path": "FormalConjectures/ErdosProblems/153.lean",
+      "theorem": "Erdos153.erdos_153",
+      "type_hash": "sha256:b35a9b51e1956e50dac187c15f5e0fd861c1ae3dcaaceb7941a1ce9bfd770316",
+      "type_pretty": "True ↔ Filter.Tendsto Erdos153.f Filter.atTop Filter.atTop"
+    },
+    {
+      "task_id": "fc-v2-erdos155-erdos-155-acfd98281267ed7a3d1f47f6-formalized",
+      "reward_target_id": "fc-target:Erdos155.erdos_155",
+      "source_path": "FormalConjectures/ErdosProblems/155.lean",
+      "theorem": "Erdos155.erdos_155",
+      "type_hash": "sha256:e200e0171f6b5e78d0cc6b256d346b3e6b66f39f97ab4ab49de7bd5b80badb55",
+      "type_pretty": "True ↔ ∀ k ≥ 1, ∀ᶠ (N : ℕ) in Filter.atTop, Erdos155.F (N + k) ≤ Erdos155.F N + 1"
+    },
+    {
+      "task_id": "fc-v2-erdos156-erdos-156-240aea83e7b3d10190d36ff9-formalized",
+      "reward_target_id": "fc-target:Erdos156.erdos_156",
+      "source_path": "FormalConjectures/ErdosProblems/156.lean",
+      "theorem": "Erdos156.erdos_156",
+      "type_hash": "sha256:69fff1f4ac55d0ed271ae93c03d155a308965a4a265c87207817f12eecb3687a",
+      "type_pretty": "True ↔ (fun N => ↑(Erdos156.minMaximalSidonSet N)) =O[Filter.atTop] fun N => ↑N ^ (1 / 3)"
+    },
+    {
+      "task_id": "fc-v2-erdos158-erdos-158-b8f584239afc1f29c100c5fb-formalized",
+      "reward_target_id": "fc-target:Erdos158.erdos_158",
+      "source_path": "FormalConjectures/ErdosProblems/158.lean",
+      "theorem": "Erdos158.erdos_158",
+      "type_hash": "sha256:ce20c7c5e098f8dbfbbed5edca164bbe6ca8e4960acc251a36a623720815afc5",
+      "type_pretty": "True ↔\n  ∀ (A : Set ℕ),\n    A.Infinite → Erdos158.B2 2 A → Filter.liminf (fun N => ↑(A ∩ Set.Iio N).ncard * ↑N ^ (-1 / 2)) Filter.atTop = 0"
+    },
+    {
+      "task_id": "fc-v2-erdos159-erdos-159-eadc2c5d25f321968b98eb43-formalized",
+      "reward_target_id": "fc-target:Erdos159.erdos_159",
+      "source_path": "FormalConjectures/ErdosProblems/159.lean",
+      "theorem": "Erdos159.erdos_159",
+      "type_hash": "sha256:60360e852c591068857b32f45153f70b35b17971268b92cc2b0bed5fbda12ac1",
+      "type_pretty": "∃ c,\n  ∃ (_ : 0 < c),\n    ∃ C,\n      ∀ (n : ℕ),\n        1 ≤ n → ↑((SimpleGraph.cycleGraph 4).graphRamsey (SimpleGraph.completeGraph (Fin n))) ≤ C * ↑n ^ (2 - c)"
+    },
+    {
+      "task_id": "fc-v2-parts-ii-c48b1c407e38de0926a83cd6-formalized",
+      "reward_target_id": "fc-target:Erdos168.erdos_168.parts.ii",
+      "source_path": "FormalConjectures/ErdosProblems/168.lean",
+      "theorem": "Erdos168.erdos_168.parts.ii",
+      "type_hash": "sha256:b3331014a8e34f5d185f22f5868980c1d1765d23af7697d707d1e4fa1dab89e8",
+      "type_pretty": "True ↔ Irrational (Filter.limsup (fun N => ↑(Erdos168.F N) / ↑N) Filter.atTop)"
+    },
+    {
+      "task_id": "fc-v2-erdos17-erdos-17-836d5b16299efa97e384750b-formalized",
+      "reward_target_id": "fc-target:Erdos17.erdos_17",
+      "source_path": "FormalConjectures/ErdosProblems/17.lean",
+      "theorem": "Erdos17.erdos_17",
+      "type_hash": "sha256:08ca374d900f4d7372fa34c4eb24c106689679d4957f3feb99e2333d0cc6847e",
+      "type_pretty": "True ↔ {p | Erdos17.IsClusterPrime p}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-erdos18-erdos-18b-3ab9aba79337b977c927e943-formalized",
+      "reward_target_id": "fc-target:Erdos18.erdos_18b",
+      "source_path": "FormalConjectures/ErdosProblems/18.lean",
+      "theorem": "Erdos18.erdos_18b",
+      "type_hash": "sha256:c63e63a41873096c12158e84246df5e8d0aa4dd441d5c9d85ada9f038c54c425",
+      "type_pretty": "True ↔ ∀ (ε : ℝ), 0 < ε → ∀ᶠ (n : ℕ) in Filter.atTop, ↑(Erdos18.practicalH n.factorial) < ↑n ^ ε"
+    },
+    {
+      "task_id": "fc-v2-erdos19-erdos-19-f60a2df3f33a72302b701b22-formalized",
+      "reward_target_id": "fc-target:Erdos19.erdos_19",
+      "source_path": "FormalConjectures/ErdosProblems/19.lean",
+      "theorem": "Erdos19.erdos_19",
+      "type_hash": "sha256:4a449a6315ce1e5d6d611dbeab77103d73cfdf32486221e1062a9a396e81be78",
+      "type_pretty": "∀ (V : Type) (n : ℕ) (C : Erdos19.EFLConfig V n), C.graph.chromaticNumber = ↑n"
+    },
+    {
+      "task_id": "fc-v2-erdos196-erdos-196-f117494d0e444a266a6078d8-formalized",
+      "reward_target_id": "fc-target:Erdos196.erdos_196",
+      "source_path": "FormalConjectures/ErdosProblems/196.lean",
+      "theorem": "Erdos196.erdos_196",
+      "type_hash": "sha256:1969cd67b2bc2d369d8a90a88c2aec507b2944165032da740c678331c519e620",
+      "type_pretty": "True ↔ ∀ (f : ℕ ≃ ℕ), HasMonotoneAP (⇑f) 4"
+    },
+    {
+      "task_id": "fc-v2-erdos200-erdos-200-14b2aa4b9b77f6300d58c52f-formalized",
+      "reward_target_id": "fc-target:Erdos200.erdos_200",
+      "source_path": "FormalConjectures/ErdosProblems/200.lean",
+      "theorem": "Erdos200.erdos_200",
+      "type_hash": "sha256:d43fa2325088a551f87016acbf0fea01b86760180eef57029b6670de0c56bea0",
+      "type_pretty": "True ↔ (fun n => ↑(Erdos200.longestPrimeArithmeticProgressions n)) =o[Filter.atTop] fun n => Real.log ↑n"
+    },
+    {
+      "task_id": "fc-v2-variants-log-bound-7433b2aca6d6dda6b9cef003-formalized",
+      "reward_target_id": "fc-target:Erdos208.erdos_208.variants.log_bound",
+      "source_path": "FormalConjectures/ErdosProblems/208.lean",
+      "theorem": "Erdos208.erdos_208.variants.log_bound",
+      "type_hash": "sha256:f934595c12d4ec6e259b6f51b8f416436bdd092e9e2ce1d85daaa0c54f295023",
+      "type_pretty": "(fun n => ↑(Erdos208.erdos208.s (n + 1)) - ↑(Erdos208.erdos208.s n)) =O[Filter.atTop] fun n =>\n  Real.log ↑(Erdos208.erdos208.s n)"
+    },
+    {
+      "task_id": "fc-v2-erdos212-erdos-212-1230a6218cc08cefb45d207d-formalized",
+      "reward_target_id": "fc-target:Erdos212.erdos_212",
+      "source_path": "FormalConjectures/ErdosProblems/212.lean",
+      "theorem": "Erdos212.erdos_212",
+      "type_hash": "sha256:a946ed3b4bc15a6ec18803c08ebd1d8f4a9362eaa079a85bccc95526ce01fc22",
+      "type_pretty": "True ↔ ∃ u, Dense u ∧ u.Pairwise fun c₁ c₂ => dist c₁ c₂ ∈ Set.range Rat.cast"
+    },
+    {
+      "task_id": "fc-v2-erdos213-erdos-213-68f10cc099341d6d06a4a6cf-formalized",
+      "reward_target_id": "fc-target:Erdos213.erdos_213",
+      "source_path": "FormalConjectures/ErdosProblems/213.lean",
+      "theorem": "Erdos213.erdos_213",
+      "type_hash": "sha256:c9cf524700e14d4dd7b374b0448dd2ab0eeefde35c4567aba82d9151e52ea302",
+      "type_pretty": "True ↔ ∀ n ≥ 4, Erdos213.Erdos213For n"
+    },
+    {
+      "task_id": "fc-v2-variants-ge-3c3330619ad2d80390294c0c-formalized",
+      "reward_target_id": "fc-target:Erdos218.erdos_218.variants.ge",
+      "source_path": "FormalConjectures/ErdosProblems/218.lean",
+      "theorem": "Erdos218.erdos_218.variants.ge",
+      "type_hash": "sha256:cc3420fa42b06801da415e0603d803b673859f2163bddd44b6c8a1dd52ace84d",
+      "type_pretty": "{n | primeGap (n + 1) ≤ primeGap n}.HasDensity (1 / 2)"
+    },
+    {
+      "task_id": "fc-v2-variants-infinite-equal-prime-gap-769c7f6c211bb4dc1257658e-formalized",
+      "reward_target_id": "fc-target:Erdos218.erdos_218.variants.infinite_equal_prime_gap",
+      "source_path": "FormalConjectures/ErdosProblems/218.lean",
+      "theorem": "Erdos218.erdos_218.variants.infinite_equal_prime_gap",
+      "type_hash": "sha256:86b3a12099b2647d0a8380bd5311fa79ad04e3444fac67fa572e5867f5ff9b3e",
+      "type_pretty": "{n | primeGap n = primeGap (n + 1)}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-variants-le-e86c5cd9b4933f9e4d05f059-formalized",
+      "reward_target_id": "fc-target:Erdos218.erdos_218.variants.le",
+      "source_path": "FormalConjectures/ErdosProblems/218.lean",
+      "theorem": "Erdos218.erdos_218.variants.le",
+      "type_hash": "sha256:ed787e1d1abeb8888b6b34a1bcb9c5210f050a29d25e1f1fe4dde6d1847a47ec",
+      "type_pretty": "{n | primeGap n ≤ primeGap (n + 1)}.HasDensity (1 / 2)"
+    },
+    {
+      "task_id": "fc-v2-erdos23-erdos-23-e7662006cdd2dd22bb31d496-formalized",
+      "reward_target_id": "fc-target:Erdos23.erdos_23",
+      "source_path": "FormalConjectures/ErdosProblems/23.lean",
+      "theorem": "Erdos23.erdos_23",
+      "type_hash": "sha256:b3d2e205c8b7c42d036d291e8a578b4eb0f4fa690708adbe221925626af13948",
+      "type_pretty": "True ↔\n  ∀ (n : ℕ) (V : Type) [inst : Fintype V],\n    Fintype.card V = 5 * n →\n      ∀ (G : SimpleGraph V), G.CliqueFree 3 → ∃ H ≤ G, H.IsBipartite ∧ (G.edgeFinset \\ H.edgeFinset).card ≤ n ^ 2"
+    },
+    {
+      "task_id": "fc-v2-erdos233-erdos-233-5d71e204a204ba5b374a2d9d-formalized",
+      "reward_target_id": "fc-target:Erdos233.erdos_233",
+      "source_path": "FormalConjectures/ErdosProblems/233.lean",
+      "theorem": "Erdos233.erdos_233",
+      "type_hash": "sha256:ece6ebb4b51264e6088d1acae85dabff6313bd2b5767c635d7d592dfafbea249",
+      "type_pretty": "(fun N => ∑ n ∈ Finset.range N, ↑(primeGap n) ^ 2) =O[Filter.atTop] fun N => ↑N * Real.log ↑N ^ 2"
+    },
+    {
+      "task_id": "fc-v2-erdos234-erdos-234-59350b10551f7ca0febbe477-formalized",
+      "reward_target_id": "fc-target:Erdos234.erdos_234",
+      "source_path": "FormalConjectures/ErdosProblems/234.lean",
+      "theorem": "Erdos234.erdos_234",
+      "type_hash": "sha256:2e32ff378ce617e5e882d93d03320020c6ed690bd0374a3a91f6406ac55a3b7e",
+      "type_pretty": "True ↔ ∃ f, Continuous f ∧ ∀ (c : NNReal), {n | ↑(primeGap n) / Real.log ↑n < ↑c}.HasDensity (f c)"
+    },
+    {
+      "task_id": "fc-v2-erdos236-erdos-236-30845795bdde0b2f8dc390c6-formalized",
+      "reward_target_id": "fc-target:Erdos236.erdos_236",
+      "source_path": "FormalConjectures/ErdosProblems/236.lean",
+      "theorem": "Erdos236.erdos_236",
+      "type_hash": "sha256:b364b1aa2fb7181e7c8139c6133d3eb644e83ab723524c0f8dbe8d5de7fd430a",
+      "type_pretty": "(fun n => ↑(Erdos236.f n)) =o[Filter.atTop] fun n => Real.log ↑n"
+    },
+    {
+      "task_id": "fc-v2-erdos238-erdos-238-f0860d8a97ff600b53c987a4-formalized",
+      "reward_target_id": "fc-target:Erdos238.erdos_238",
+      "source_path": "FormalConjectures/ErdosProblems/238.lean",
+      "theorem": "Erdos238.erdos_238",
+      "type_hash": "sha256:e3595f23152f6cea6ea27f63a0feaa9799a83ec2aefef70e144dd3158b26d2fa",
+      "type_pretty": "True ↔\n  ∀ c₁ > 0,\n    ∀ c₂ > 0,\n      ∀ᶠ (x : ℝ) in Filter.atTop,\n        ∃ k,\n          c₁ * Real.log x < ↑k ∧\n            ∃ f m,\n              (∀ (i : Fin k), ↑(f i) ≤ x ∧ f i = Nat.nth Nat.Prime (m + ↑i)) ∧\n                ∀ (i : Fin (k - 1)), c₂ < primeGap (m + ↑i)"
+    },
+    {
+      "task_id": "fc-v2-variants-generalization-1454160ca1c72c065f68eb0b-formalized",
+      "reward_target_id": "fc-target:Erdos241.erdos_241.variants.generalization",
+      "source_path": "FormalConjectures/ErdosProblems/241.lean",
+      "theorem": "Erdos241.erdos_241.variants.generalization",
+      "type_hash": "sha256:1361871c955c79452f93d0ec881d9afe2a33ef785e25423354c6289bd6c3fda3",
+      "type_pretty": "∀ r ≥ 2, Erdos241.BoseChowlaConjecture r"
+    },
+    {
+      "task_id": "fc-v2-variants-schinzel-generalization-78dc18b801406c1198a4712a-formalized",
+      "reward_target_id": "fc-target:Erdos242.erdos_242.variants.schinzel_generalization",
+      "source_path": "FormalConjectures/ErdosProblems/242.lean",
+      "theorem": "Erdos242.erdos_242.variants.schinzel_generalization",
+      "type_hash": "sha256:b141d6fbf1dbb8c97357e6826fd853a1f6d34d12832fa021225f8b1a4afcb6b5",
+      "type_pretty": "∀ (a : ℕ), 0 < a → ∀ᶠ (n : ℕ) in Filter.atTop, ∃ x y z, 1 ≤ x ∧ x < y ∧ y < z ∧ ↑a / ↑n = 1 / ↑x + 1 / ↑y + 1 / ↑z"
+    },
+    {
+      "task_id": "fc-v2-erdos243-erdos-243-3657ce0af32ce771d311f409-formalized",
+      "reward_target_id": "fc-target:Erdos243.erdos_243",
+      "source_path": "FormalConjectures/ErdosProblems/243.lean",
+      "theorem": "Erdos243.erdos_243",
+      "type_hash": "sha256:c02a0aba123879a2d3528458728b4b61afc85f63bc046b43fd0a71a4c419a6e1",
+      "type_pretty": "∀ (a : ℕ → ℕ),\n  StrictMono a →\n    Filter.Tendsto (fun n => ↑(a n) / ↑(a (n - 1)) ^ 2) Filter.atTop (nhds 1) →\n      (Summable fun x => 1 / ↑(a x)) → ∀ᶠ (n : ℕ) in Filter.atTop, a n = a (n - 1) ^ 2 - a (n - 1) + 1"
+    },
+    {
+      "task_id": "fc-v2-erdos244-erdos-244-63eee51a5397c18599ce259a-formalized",
+      "reward_target_id": "fc-target:Erdos244.erdos_244",
+      "source_path": "FormalConjectures/ErdosProblems/244.lean",
+      "theorem": "Erdos244.erdos_244",
+      "type_hash": "sha256:be71220d898ba55e56d412aa1e3b4436767010db89b0a92f44ca455ac9fff577",
+      "type_pretty": "True ↔ ∀ C > 1, 0 < {x | ∃ p k, ∃ (_ : Nat.Prime p), p + ⌊C ^ k⌋₊ = x}.lowerDensity"
+    },
+    {
+      "task_id": "fc-v2-erdos247-erdos-247-b746aa226e6936d8c1abab2a-formalized",
+      "reward_target_id": "fc-target:Erdos247.erdos_247",
+      "source_path": "FormalConjectures/ErdosProblems/247.lean",
+      "theorem": "Erdos247.erdos_247",
+      "type_hash": "sha256:ce0836dc5f58e6f27951338ad3b6fba46e4507500a218bf3ff77317bd07b4cb4",
+      "type_pretty": "True ↔\n  ∀ (n : ℕ → ℕ),\n    StrictMono n →\n      Filter.limsup (fun k => ↑(n k) / ↑k.succ) Filter.atTop = ⊤ → Transcendental ℚ (∑' (k : ℕ), 1 / 2 ^ n k)"
+    },
+    {
+      "task_id": "fc-v2-erdos249-erdos-249-49ac63be087ec4aeae4627cc-formalized",
+      "reward_target_id": "fc-target:Erdos249.erdos_249",
+      "source_path": "FormalConjectures/ErdosProblems/249.lean",
+      "theorem": "Erdos249.erdos_249",
+      "type_hash": "sha256:aa65acfc70e27f2eed2ea6a5b1700165d6ecdcea833d3364b4faec5dc830aedb",
+      "type_pretty": "True ↔ Irrational (∑' (n : ℕ), ↑n.totient / 2 ^ n)"
+    },
+    {
+      "task_id": "fc-v2-erdos25-erdos-25-aecd890e5f5dfd0355831208-formalized",
+      "reward_target_id": "fc-target:Erdos25.erdos_25",
+      "source_path": "FormalConjectures/ErdosProblems/25.lean",
+      "theorem": "Erdos25.erdos_25",
+      "type_hash": "sha256:0296f636686c1a8f82bdf2d005e25e6259d09e61f6181662bdea0e64f94d3e24",
+      "type_pretty": "True ↔\n  ∀ (seq_n : ℕ → ℕ) (seq_a : ℕ → ℤ),\n    (∀ (i : ℕ), 0 < seq_n i) →\n      StrictMono seq_n → ∃ d, {x | ∀ (i : ℕ), ↑x < ↑(seq_n i) ∨ ¬↑x ≡ seq_a i [ZMOD ↑(seq_n i)]}.HasLogDensity d"
+    },
+    {
+      "task_id": "fc-v2-erdos251-erdos-251-ca17b13235f88729a4f6261d-formalized",
+      "reward_target_id": "fc-target:Erdos251.erdos_251",
+      "source_path": "FormalConjectures/ErdosProblems/251.lean",
+      "theorem": "Erdos251.erdos_251",
+      "type_hash": "sha256:a9da1561b5ba0a92686cc7eb6a1d7b06c66906dc4b7584bb1793a3f9010aa844",
+      "type_pretty": "True ↔ Irrational (∑' (n : ℕ), ↑(Nat.nth Nat.Prime n) / 2 ^ n)"
+    },
+    {
+      "task_id": "fc-v2-erdos257-erdos-257-2a138614c8fb18df685be942-formalized",
+      "reward_target_id": "fc-target:Erdos257.erdos_257",
+      "source_path": "FormalConjectures/ErdosProblems/257.lean",
+      "theorem": "Erdos257.erdos_257",
+      "type_hash": "sha256:ea2cb191d3c90c243e3dc61ea1fd34cc9d2ba1d315deb67a1984d363c3834fda",
+      "type_pretty": "True ↔ ∀ (A : Set ℕ), A.Infinite → Irrational (∑' (n : ↑A), 1 / (2 ^ ↑n - 1))"
+    },
+    {
+      "task_id": "fc-v2-parts-i-1d0918fe6cdeaf2c46dae633-formalized",
+      "reward_target_id": "fc-target:Erdos263.erdos_263.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/263.lean",
+      "theorem": "Erdos263.erdos_263.parts.i",
+      "type_hash": "sha256:36cfb0b4d89794c6cfba19ac565c49ac99377f2b829e3f8319a1a6556b4dacc1",
+      "type_pretty": "True ↔ Erdos263.IsIrrationalitySequence fun n => 2 ^ 2 ^ n"
+    },
+    {
+      "task_id": "fc-v2-parts-ii-9fb94ac46876ec36b1438a64-formalized",
+      "reward_target_id": "fc-target:Erdos264.erdos_264.parts.ii",
+      "source_path": "FormalConjectures/ErdosProblems/264.lean",
+      "theorem": "Erdos264.erdos_264.parts.ii",
+      "type_hash": "sha256:e3245f5c060277331adfc08419f7560fb06b58348c819bd35997cf57b756b43f",
+      "type_pretty": "True ↔ Erdos264.IsIrrationalitySequence Nat.factorial"
+    },
+    {
+      "task_id": "fc-v2-variants-irrational-2bb04c939e825dc3541453ef-formalized",
+      "reward_target_id": "fc-target:Erdos269.erdos_269.variants.irrational",
+      "source_path": "FormalConjectures/ErdosProblems/269.lean",
+      "theorem": "Erdos269.erdos_269.variants.irrational",
+      "type_hash": "sha256:2a63529741eab05474bb3f1f4ee24cb6baee35189869a74d1b7a0b616410a9c9",
+      "type_pretty": "True ↔ ∀ (P : Finset ℕ), (∀ p ∈ P, Nat.Prime p) → P.card ≥ 2 → Irrational (Erdos269.series ↑P)"
+    },
+    {
+      "task_id": "fc-v2-variants-szabo-strong-7f7db6a53a710bea029b8628-formalized",
+      "reward_target_id": "fc-target:Erdos272.erdos_272.variants.szabo_strong",
+      "source_path": "FormalConjectures/ErdosProblems/272.lean",
+      "theorem": "Erdos272.erdos_272.variants.szabo_strong",
+      "type_hash": "sha256:372a052300899d71f5b27d23e5505351f9a1400793e425b51628356a0739daf6",
+      "type_pretty": "(fun N => ↑(Erdos272.maxArithInterCard N) - ↑N ^ 2 / 2) =O[Filter.atTop] fun N => ↑N"
+    },
+    {
+      "task_id": "fc-v2-erdos274-herzog-schonheim-b1e163a2777c778f8de43219-formalized",
+      "reward_target_id": "fc-target:Erdos274.herzog_schonheim",
+      "source_path": "FormalConjectures/ErdosProblems/274.lean",
+      "theorem": "Erdos274.herzog_schonheim",
+      "type_hash": "sha256:6e97913f0a452b5b51b26e192ba3709526e1bf4aa88cca5bf0d69d34d62cd8ca",
+      "type_pretty": "∀ {G : Type u_1} [inst : Group G],\n  1 < ENat.card G →\n    ∀ {ι : Type u_2} [inst_1 : Fintype ι],\n      1 < Fintype.card ι →\n        ∀ (P : Erdos274.Group.ExactCovering G ι), ∃ i j, i ≠ j ∧ (P.parts i).index = (P.parts j).index"
+    },
+    {
+      "task_id": "fc-v2-erdos28-erdos-28-77d6a177da6c21411e098021-formalized",
+      "reward_target_id": "fc-target:Erdos28.erdos_28",
+      "source_path": "FormalConjectures/ErdosProblems/28.lean",
+      "theorem": "Erdos28.erdos_28",
+      "type_hash": "sha256:a28f567d8f0f1da4236a0de6e96e62d7d1654c78f23f83a429661f3e5234db98",
+      "type_pretty": "∀ (A : Set ℕ), (A + A)ᶜ.Finite → Filter.limsup (fun n => ↑(AdditiveCombinatorics.sumRep A n)) Filter.atTop = ⊤"
+    },
+    {
+      "task_id": "fc-v2-erdos287-erdos-287-e5486a125ac614ab9496fe14-formalized",
+      "reward_target_id": "fc-target:Erdos287.erdos_287",
+      "source_path": "FormalConjectures/ErdosProblems/287.lean",
+      "theorem": "Erdos287.erdos_287",
+      "type_hash": "sha256:78bddbd3ad109356f4d52213a5dd3168c1116b6eff4527128f9b38495d89833f",
+      "type_pretty": "True ↔\n  ∀ (k : ℕ) (hk : 2 ≤ k) (s : Fin k → ℕ), StrictMono s → 1 < s ⟨0, ⋯⟩ → ∑ i, 1 / ↑(s i) = 1 → 3 ≤ Erdos287.max_gap k s"
+    },
+    {
+      "task_id": "fc-v2-parts-i-1293067ccdd226780a495ddb-formalized",
+      "reward_target_id": "fc-target:Erdos291.erdos_291.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/291.lean",
+      "theorem": "Erdos291.erdos_291.parts.i",
+      "type_hash": "sha256:03a93b18e4006002588bf9dc58264328a2a202ac494b5dcd84c8356f558dfd3a",
+      "type_pretty": "True ↔ {n | (Erdos291.a n).gcd (Erdos291.L n) = 1}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-variants-shiu-heuristic-density-zero-f7d1bd24e763684b42644840-formalized",
+      "reward_target_id": "fc-target:Erdos291.erdos_291.variants.shiu_heuristic_density_zero",
+      "source_path": "FormalConjectures/ErdosProblems/291.lean",
+      "theorem": "Erdos291.erdos_291.variants.shiu_heuristic_density_zero",
+      "type_hash": "sha256:e2829c437fcad6fe1da19ab961ad301299f96cf725e6af3bfd671ecaeefcdf20",
+      "type_pretty": "Filter.Tendsto (fun N => ↑{n ∈ Finset.Icc 1 N | (Erdos291.a n).gcd (Erdos291.L n) = 1}.card / ↑N) Filter.atTop (nhds 0)"
+    },
+    {
+      "task_id": "fc-v2-erdos295-erdos-295-2ae4184bd2da5dba864412b6-formalized",
+      "reward_target_id": "fc-target:Erdos295.erdos_295",
+      "source_path": "FormalConjectures/ErdosProblems/295.lean",
+      "theorem": "Erdos295.erdos_295",
+      "type_hash": "sha256:d8d4e129cb6cece2173d61a65add51de71fa0fc8eacde24a65303bbc565d4dc1",
+      "type_pretty": "Filter.Tendsto (fun N => ↑(Erdos295.k N) - (Real.exp 1 - 1) * ↑N) Filter.atTop Filter.atTop"
+    },
+    {
+      "task_id": "fc-v2-erdos30-erdos-30-ad05a594986782628bccc580-formalized",
+      "reward_target_id": "fc-target:Erdos30.erdos_30",
+      "source_path": "FormalConjectures/ErdosProblems/30.lean",
+      "theorem": "Erdos30.erdos_30",
+      "type_hash": "sha256:296196e2e226ef75ea234e8066899427db918cce9f7631e4fdafc58fcce2684f",
+      "type_pretty": "True ↔ ∀ ε > 0, (fun N => ↑(Erdos30.h N) - √↑N) =O[Filter.atTop] fun N => ↑N ^ ε"
+    },
+    {
+      "task_id": "fc-v2-erdos307-erdos-307-71e083521a7d8d9aaaf10a87-formalized",
+      "reward_target_id": "fc-target:Erdos307.erdos_307",
+      "source_path": "FormalConjectures/ErdosProblems/307.lean",
+      "theorem": "Erdos307.erdos_307",
+      "type_hash": "sha256:f31cff45e12b913249f45eb58350f4c17d99fa39f37193a1c5263496bb5279bd",
+      "type_pretty": "True ↔ ∃ P Q, (∀ p ∈ P, Nat.Prime p) ∧ (∀ q ∈ Q, Nat.Prime q) ∧ 1 = (∑ p ∈ P, (↑p)⁻¹) * ∑ q ∈ Q, (↑q)⁻¹"
+    },
+    {
+      "task_id": "fc-v2-erdos311-erdos-311-7b8bee0fe27d6270d8275884-formalized",
+      "reward_target_id": "fc-target:Erdos311.erdos_311",
+      "source_path": "FormalConjectures/ErdosProblems/311.lean",
+      "theorem": "Erdos311.erdos_311",
+      "type_hash": "sha256:abe6fdd0e3a7c30017ef0d318fa03fc47d6292023b2f55706483812dd7555e81",
+      "type_pretty": "∃ c ∈ Set.Ioo 0 1, Filter.Tendsto (fun N => -Real.log (Erdos311.delta N) / ↑N) Filter.atTop (nhds c)"
+    },
+    {
+      "task_id": "fc-v2-variants-primary-pseudoperfect-are-infinite-4ce1b5e7eba74c296ed0f85b-formalized",
+      "reward_target_id": "fc-target:Erdos313.erdos_313.variants.primary_pseudoperfect_are_infinite",
+      "source_path": "FormalConjectures/ErdosProblems/313.lean",
+      "theorem": "Erdos313.erdos_313.variants.primary_pseudoperfect_are_infinite",
+      "type_hash": "sha256:a835383c19e713416735605fbae85bd1d73bad5b08a991491b2f2f2117e8d8a4",
+      "type_pretty": "{n | Erdos313.IsPrimaryPseudoperfect n}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-variants-claim2-f822a0783e84a5948b0993ed-formalized",
+      "reward_target_id": "fc-target:Erdos317.erdos_317.variants.claim2",
+      "source_path": "FormalConjectures/ErdosProblems/317.lean",
+      "theorem": "Erdos317.erdos_317.variants.claim2",
+      "type_hash": "sha256:63e6a8eb86ef9f7e24f6ca82d49befe2da0fb47d0ef92902d9d1a9e12117ddb0",
+      "type_pretty": "True ↔\n  ∀ᶠ (n : ℕ) in Filter.atTop,\n    ∀ (δ : Fin n → ℚ),\n      δ '' Set.univ ⊆ {-1, 0, 1} → |∑ k, δ k / (↑↑k + 1)| ≠ 0 → |∑ k, δ k / (↑↑k + 1)| > 1 / ↑((Finset.Icc 1 n).lcm id)"
+    },
+    {
+      "task_id": "fc-v2-erdos32-erdos-32-ed007b5f297516ed05a8bb29-formalized",
+      "reward_target_id": "fc-target:Erdos32.erdos_32",
+      "source_path": "FormalConjectures/ErdosProblems/32.lean",
+      "theorem": "Erdos32.erdos_32",
+      "type_hash": "sha256:4103eceb66462a5a4e78e45ab3320a5297ef1e9e17933fcc232abe73badd2998",
+      "type_pretty": "True ↔\n  ∃ A,\n    Erdos32.IsAdditiveComplementToPrimes A ∧\n      (fun N => ↑{x ∈ Finset.Icc 1 N | x ∈ A}.card) =o[Filter.atTop] fun N => Real.log ↑N ^ 2"
+    },
+    {
+      "task_id": "fc-v2-erdos322-erdos-322-03271ef9f31362e9303a3d79-formalized",
+      "reward_target_id": "fc-target:Erdos322.erdos_322",
+      "source_path": "FormalConjectures/ErdosProblems/322.lean",
+      "theorem": "Erdos322.erdos_322",
+      "type_hash": "sha256:56cc42f7c8336a2c7026adc3213cbe5ae061869c2e96473e799cb9270e990fef",
+      "type_pretty": "∀ (k : ℕ), 3 ≤ k → ∃ c > 0, {n | ↑n ^ c < ↑(Erdos322.representationCount k n)}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-parts-i-22f22fef543b66703430b661-formalized",
+      "reward_target_id": "fc-target:Erdos323.erdos_323.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/323.lean",
+      "theorem": "Erdos323.erdos_323.parts.i",
+      "type_hash": "sha256:f8b79f6c8ad7430946ad09d176bdde1eb1b07a46b2459eca80c2377467e2139a",
+      "type_pretty": "True ↔ ∀ k ≥ 1, ∀ ε > 0, (fun x => ↑x ^ (1 - ε)) =O[Filter.atTop] fun x => ↑(Erdos323.f k k x)"
+    },
+    {
+      "task_id": "fc-v2-parts-ii-82da5565091059d0fd5c9007-formalized",
+      "reward_target_id": "fc-target:Erdos323.erdos_323.parts.ii",
+      "source_path": "FormalConjectures/ErdosProblems/323.lean",
+      "theorem": "Erdos323.erdos_323.parts.ii",
+      "type_hash": "sha256:9f5249f1964808fe99db494f7e52b5f75e17c1d386af7989fae27eaf5c32024f",
+      "type_pretty": "True ↔ ∀ (k m : ℕ), 1 ≤ m → m < k → (fun x => ↑x ^ (↑m / ↑k)) =O[Filter.atTop] fun x => ↑(Erdos323.f k m x)"
+    },
+    {
+      "task_id": "fc-v2-variants-k-gt-2-a61f9e61f78f230c17cb8412-formalized",
+      "reward_target_id": "fc-target:Erdos323.erdos_323.variants.k_gt_2",
+      "source_path": "FormalConjectures/ErdosProblems/323.lean",
+      "theorem": "Erdos323.erdos_323.variants.k_gt_2",
+      "type_hash": "sha256:6999fdcf13250f347167761e85107cc258e7b4dd6475cfce32b2ca8fed30726e",
+      "type_pretty": "True ↔ ∀ k > 2, (fun x => ↑(Erdos323.f k k x)) =o[Filter.atTop] fun x => ↑x"
+    },
+    {
+      "task_id": "fc-v2-variants-quintic-b3e125488a292fe27012e1be-formalized",
+      "reward_target_id": "fc-target:Erdos324.erdos_324.variants.quintic",
+      "source_path": "FormalConjectures/ErdosProblems/324.lean",
+      "theorem": "Erdos324.erdos_324.variants.quintic",
+      "type_hash": "sha256:c1e9a0de1689c4c2d12bec0132b08f9ff32eadee40ac771ab26038c13f9e888c",
+      "type_pretty": "Set.InjOn\n  (fun x =>\n    match x with\n    | (a, b) => a ^ 5 + b ^ 5)\n  {(a, b) | a < b}"
+    },
+    {
+      "task_id": "fc-v2-erdos325-erdos-325-1132fc6c8731a69009fc914d-formalized",
+      "reward_target_id": "fc-target:Erdos325.erdos_325",
+      "source_path": "FormalConjectures/ErdosProblems/325.lean",
+      "theorem": "Erdos325.erdos_325",
+      "type_hash": "sha256:6660e5e755950ba32c311c9c29a62d54f296c950fd3cc640d58b5733adb9586a",
+      "type_pretty": "True ↔ ∀ (k : ℕ), 3 ≤ k → (fun x => ↑x ^ (3 / ↑k)) =O[Filter.atTop] fun x => ↑(Erdos325.cardIsSumThreePowerBelow k x)"
+    },
+    {
+      "task_id": "fc-v2-erdos340-erdos-340-503e259d78f7b079183d2333-formalized",
+      "reward_target_id": "fc-target:Erdos340.erdos_340",
+      "source_path": "FormalConjectures/ErdosProblems/340.lean",
+      "theorem": "Erdos340.erdos_340",
+      "type_hash": "sha256:d0bd6bbca81683d2f19d089c381cf1f17435eaeb8abaa9b27356681c76c08090",
+      "type_pretty": "∀ ε > 0, (fun n => √↑n / ↑n ^ ε) =O[Filter.atTop] fun n => ↑(Set.range Finset.greedySidon ∩ Set.Icc 1 n).ncard"
+    },
+    {
+      "task_id": "fc-v2-variants-sub-hasposdensity-3b24415295d4becdc12325fe-formalized",
+      "reward_target_id": "fc-target:Erdos340.erdos_340.variants.sub_hasPosDensity",
+      "source_path": "FormalConjectures/ErdosProblems/340.lean",
+      "theorem": "Erdos340.erdos_340.variants.sub_hasPosDensity",
+      "type_hash": "sha256:4b7136a5f14bf1fc1bb8609b078c12b5972a1a413574705aab984ed18cecad87",
+      "type_pretty": "(Set.range Finset.greedySidon - Set.range Finset.greedySidon).HasPosDensity"
+    },
+    {
+      "task_id": "fc-v2-parts-i-9b31ec071ca1806a3d06a404-formalized",
+      "reward_target_id": "fc-target:Erdos354.erdos_354.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/354.lean",
+      "theorem": "Erdos354.erdos_354.parts.i",
+      "type_hash": "sha256:de4262d428cc1a0deb7df106c6951e4db5d808b9a6d6a4e21c29f05775c50488",
+      "type_pretty": "True ↔ ∀ α > 0, ∀ β > 0, Irrational (α / β) → IsAddCompleteNatSeq' (Erdos354.FloorMultiples.interleave α β 2)"
+    },
+    {
+      "task_id": "fc-v2-parts-i-db69292aaa02b379f31eddce-formalized",
+      "reward_target_id": "fc-target:Erdos357.erdos_357.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/357.lean",
+      "theorem": "Erdos357.erdos_357.parts.i",
+      "type_hash": "sha256:dfca10c65aedf442068a049d51581b0b7cb23c213aad3c2142bf1d0192826ca0",
+      "type_pretty": "(fun n => ↑(Erdos357.f n)) =o[Filter.atTop] fun n => ↑n"
+    },
+    {
+      "task_id": "fc-v2-variants-infinite-set-density-d729fd7155f80974c03a3eaa-formalized",
+      "reward_target_id": "fc-target:Erdos357.erdos_357.variants.infinite_set_density",
+      "source_path": "FormalConjectures/ErdosProblems/357.lean",
+      "theorem": "Erdos357.erdos_357.variants.infinite_set_density",
+      "type_hash": "sha256:9cbe3bb7aa7c651cac5193f6abaaefda7d00775d64bc4d0c7598f4758072be1f",
+      "type_pretty": "∀ (A : ℕ → ℕ), StrictMono A → Erdos357.HasDistinctSums A → (Set.range A).HasDensity 0"
+    },
+    {
+      "task_id": "fc-v2-variants-infinite-set-sum-d84599b2cf5c71780a2110f9-formalized",
+      "reward_target_id": "fc-target:Erdos357.erdos_357.variants.infinite_set_sum",
+      "source_path": "FormalConjectures/ErdosProblems/357.lean",
+      "theorem": "Erdos357.erdos_357.variants.infinite_set_sum",
+      "type_hash": "sha256:873d61e456eb854ca539c5c628143c137e5fca4a744f800836ee63bdd7f3d19d",
+      "type_pretty": "∀ (A : ℕ → ℕ), StrictMono A → Erdos357.HasDistinctSums A → Summable fun i => 1 / ↑(A i)"
+    },
+    {
+      "task_id": "fc-v2-parts-i-26db2025464b80f884e0a670-formalized",
+      "reward_target_id": "fc-target:Erdos357.erdos_357.variants.monotone.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/357.lean",
+      "theorem": "Erdos357.erdos_357.variants.monotone.parts.i",
+      "type_hash": "sha256:512842f4dbee15ee80295d6e99985faef1dfb124f513c32389803c5d5a54a66a",
+      "type_pretty": "(fun n => ↑(Erdos357.h n)) =o[Filter.atTop] fun n => ↑n"
+    },
+    {
+      "task_id": "fc-v2-parts-i-7b490bb1429cdc561d187d21-formalized",
+      "reward_target_id": "fc-target:Erdos359.erdos_359.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/359.lean",
+      "theorem": "Erdos359.erdos_359.parts.i",
+      "type_hash": "sha256:635c639b1c592f92081bdce30eeb599c00f3d01032e21c9b242675b2be654e7a",
+      "type_pretty": "∀ (A : ℕ → ℕ), Erdos359.IsGoodFor A 1 → Filter.Tendsto (fun k => ↑(A k) / ↑k) Filter.atTop Filter.atTop"
+    },
+    {
+      "task_id": "fc-v2-parts-ii-dbce897730d6d2218ca8cdf6-formalized",
+      "reward_target_id": "fc-target:Erdos359.erdos_359.parts.ii",
+      "source_path": "FormalConjectures/ErdosProblems/359.lean",
+      "theorem": "Erdos359.erdos_359.parts.ii",
+      "type_hash": "sha256:3b9ae2f344dc05104dafce9f974cd9e104efe01249cf250a137aaa58f541062f",
+      "type_pretty": "∀ (A : ℕ → ℕ),\n  Erdos359.IsGoodFor A 1 → ∀ (c : ℝ), 0 < c → Filter.Tendsto (fun k => ↑(A k) / ↑k ^ (1 + c)) Filter.atTop (nhds 0)"
+    },
+    {
+      "task_id": "fc-v2-variants-isgoodfor-1-asymptotic-8fda202fd46135314e5036b0-formalized",
+      "reward_target_id": "fc-target:Erdos359.erdos_359.variants.isGoodFor_1_asymptotic",
+      "source_path": "FormalConjectures/ErdosProblems/359.lean",
+      "theorem": "Erdos359.erdos_359.variants.isGoodFor_1_asymptotic",
+      "type_hash": "sha256:e8d3274560c69189522bcba232b7c4eed67b4ba51c1bfeb8843d7ee8293f764f",
+      "type_pretty": "∀ (A : ℕ → ℕ),\n  Erdos359.IsGoodFor A 1 →\n    Asymptotics.IsEquivalent Filter.atTop (fun k => ↑(A k)) fun k => ↑k * Real.log ↑k / Real.log (Real.log ↑k)"
+    },
+    {
+      "task_id": "fc-v2-erdos364-erdos-364-269ecd3c105fc915051f491a-formalized",
+      "reward_target_id": "fc-target:Erdos364.erdos_364",
+      "source_path": "FormalConjectures/ErdosProblems/364.lean",
+      "theorem": "Erdos364.erdos_364",
+      "type_hash": "sha256:51e0ea343d44a30c7155c0e6c37e1622325acb513949e3b88ea4bc5183337ff3",
+      "type_pretty": "¬∃ n, n.Powerful ∧ (n + 1).Powerful ∧ (n + 2).Powerful"
+    },
+    {
+      "task_id": "fc-v2-variants-strong-42b8e2b2c50640c069f61af7-formalized",
+      "reward_target_id": "fc-target:Erdos364.erdos_364.variants.strong",
+      "source_path": "FormalConjectures/ErdosProblems/364.lean",
+      "theorem": "Erdos364.erdos_364.variants.strong",
+      "type_hash": "sha256:75d67372a1eaebb2b5514dc15a2b850d0e5b32a9ee11d982594225c63d31838c",
+      "type_pretty": "∃ c,\n  ∃ (_ : c > 0), ∀ (k : ℕ), ↑(Nat.nth Nat.Powerful (k + 2)) - ↑(Nat.nth Nat.Powerful k) > ↑(Nat.nth Nat.Powerful k) ^ c"
+    },
+    {
+      "task_id": "fc-v2-erdos366-erdos-366-d0f03abf2067a02de9e6ce2f-formalized",
+      "reward_target_id": "fc-target:Erdos366.erdos_366",
+      "source_path": "FormalConjectures/ErdosProblems/366.lean",
+      "theorem": "Erdos366.erdos_366",
+      "type_hash": "sha256:6756a198d091e0d0a2c6913ee1de0c5eaf403a0f98873b7645b3c4337e162a99",
+      "type_pretty": "True ↔ ∃ n > 0, Nat.Full 2 n ∧ Nat.Full 3 (n + 1)"
+    },
+    {
+      "task_id": "fc-v2-erdos373-erdos-373-7083f61e64f5ba1cb1f54db7-formalized",
+      "reward_target_id": "fc-target:Erdos373.erdos_373",
+      "source_path": "FormalConjectures/ErdosProblems/373.lean",
+      "theorem": "Erdos373.erdos_373",
+      "type_hash": "sha256:62fced4a3e14f77cbd9003cf8673a3aebc0fd436361417c06b9ed720bef0d830",
+      "type_pretty": "Erdos373.S.Finite"
+    },
+    {
+      "task_id": "fc-v2-variants-maximal-solution-61c57f79796df5d73f691367-formalized",
+      "reward_target_id": "fc-target:Erdos373.erdos_373.variants.maximal_solution",
+      "source_path": "FormalConjectures/ErdosProblems/373.lean",
+      "theorem": "Erdos373.erdos_373.variants.maximal_solution",
+      "type_hash": "sha256:24d8815c2d3cdfaca28adabc9026afd5908201fdfe41c6ca3c51e408b42cde9f",
+      "type_pretty": "(16, [14, 5, 2]) ∈ Erdos373.S ∧ ∀ s ∈ Erdos373.S, s.1 ≤ 16"
+    },
+    {
+      "task_id": "fc-v2-variants-suranyi-597fc3df19874faae352f812-formalized",
+      "reward_target_id": "fc-target:Erdos373.erdos_373.variants.suranyi",
+      "source_path": "FormalConjectures/ErdosProblems/373.lean",
+      "theorem": "Erdos373.erdos_373.variants.suranyi",
+      "type_hash": "sha256:31fba37157604a1d8487f10d10fe3e245653c73bf851f47dc2beffde91804a6e",
+      "type_pretty": "{(n, a, b) | n.factorial = a.factorial * b.factorial ∧ 1 < n ∧ 1 < a ∧ 1 < b ∧ b ≤ a ∧ a + 1 ≠ n} = {(10, 7, 6)}"
+    },
+    {
+      "task_id": "fc-v2-erdos375-erdos-375-d54482c6627263e3c4a7d539-formalized",
+      "reward_target_id": "fc-target:Erdos375.erdos_375",
+      "source_path": "FormalConjectures/ErdosProblems/375.lean",
+      "theorem": "Erdos375.erdos_375",
+      "type_hash": "sha256:c68070ef89ab41b0cf1db676d028ce79f2e37a1a7caeaa31ee75d2908a161610",
+      "type_pretty": "True ↔ Erdos375.Erdos375Prop"
+    },
+    {
+      "task_id": "fc-v2-erdos376-erdos-376-46fa0215ff8eb15beb2e5655-formalized",
+      "reward_target_id": "fc-target:Erdos376.erdos_376",
+      "source_path": "FormalConjectures/ErdosProblems/376.lean",
+      "theorem": "Erdos376.erdos_376",
+      "type_hash": "sha256:83aa384e77fe25f943ed3670056017df36b3d4ba6760b2beb7b855321c36d887",
+      "type_pretty": "True ↔ {n | n.centralBinom.Coprime 105}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-erdos383-erdos-383-bed50317dbc916977aa69786-formalized",
+      "reward_target_id": "fc-target:Erdos383.erdos_383",
+      "source_path": "FormalConjectures/ErdosProblems/383.lean",
+      "theorem": "Erdos383.erdos_383",
+      "type_hash": "sha256:d98d376b9bc60d164f1e7a42d863872572bfca544463fa37a4135da4f4457246",
+      "type_pretty": "True ↔ ∀ (k : ℕ), {p | Nat.Prime p ∧ (∏ i ∈ Finset.Icc 0 k, (p ^ 2 + i)).maxPrimeFac = p}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-parts-i-c6c3ffe79807a766d3c1519c-formalized",
+      "reward_target_id": "fc-target:Erdos385.erdos_385.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/385.lean",
+      "theorem": "Erdos385.erdos_385.parts.i",
+      "type_hash": "sha256:e0a15490e63d4ef5f148aac31e5734af8e484c8c66e63270c3eeb400885c8839",
+      "type_pretty": "True ↔ ∀ᶠ (n : ℕ) in Filter.atTop, n < Erdos385.F n"
+    },
+    {
+      "task_id": "fc-v2-variants-two-4741e3a35f64ac12b3037ed4-formalized",
+      "reward_target_id": "fc-target:Erdos386.erdos_386.variants.two",
+      "source_path": "FormalConjectures/ErdosProblems/386.lean",
+      "theorem": "Erdos386.erdos_386.variants.two",
+      "type_hash": "sha256:e798685f86d1ee595697b30d12fa4a266334b871063b7e668ae245e875601b0e",
+      "type_pretty": "True ↔ ∃ᶠ (n : ℕ) in Filter.atTop, 2 ≤ n - 2 ∧ ∃ p q, n.choose 2 = ∏ i ∈ Finset.Ico p q, Nat.nth Nat.Prime i"
+    },
+    {
+      "task_id": "fc-v2-erdos388-erdos-388-73b3df60b0bb8d6f87fc4d31-formalized",
+      "reward_target_id": "fc-target:Erdos388.erdos_388",
+      "source_path": "FormalConjectures/ErdosProblems/388.lean",
+      "theorem": "Erdos388.erdos_388",
+      "type_hash": "sha256:05bbb36e72b535fdf8bd5220b1c06b3b7edcb2823d5e61fdbdf0025ff6b3b39a",
+      "type_pretty": "{(m₁, k₁, m₂, k₂) |\n    3 < k₁ ∧ 3 < k₂ ∧ m₁ + k₁ ≤ m₂ ∧ ∏ i ∈ Finset.Icc 1 k₁, (m₁ + i) = ∏ j ∈ Finset.Icc 1 k₂, (m₂ + j)}.Finite"
+    },
+    {
+      "task_id": "fc-v2-erdos389-erdos-389-842151f82cf67b7061d4a96c-formalized",
+      "reward_target_id": "fc-target:Erdos389.erdos_389",
+      "source_path": "FormalConjectures/ErdosProblems/389.lean",
+      "theorem": "Erdos389.erdos_389",
+      "type_hash": "sha256:78b18b4d5320ca25a82c1c986a77eea8ef5236d3a7dd8c87781767d8d86548ad",
+      "type_pretty": "∀ n ≥ 1, ∃ k ≥ 1, ∏ i ∈ Finset.range k, (n + i) ∣ ∏ i ∈ Finset.range k, (n + k + i)"
+    },
+    {
+      "task_id": "fc-v2-erdos39-erdos-39-18cb503ed4304b0507c81f7e-formalized",
+      "reward_target_id": "fc-target:Erdos39.erdos_39",
+      "source_path": "FormalConjectures/ErdosProblems/39.lean",
+      "theorem": "Erdos39.erdos_39",
+      "type_hash": "sha256:bb90f01e35f92bfcc27650354ed3693f9200d09b63afc50136f8782d7ba2b8a8",
+      "type_pretty": "True ↔\n  ∃ A, A.Infinite ∧ IsSidon A ∧ ∀ ε > 0, (fun x => ↑x ^ (1 / 2 - ε)) =O[Filter.atTop] fun N => ↑(Set.Icc 1 N ∩ A).ncard"
+    },
+    {
+      "task_id": "fc-v2-erdos393-erdos-393-e48570164356c9e48d57dbbb-formalized",
+      "reward_target_id": "fc-target:Erdos393.erdos_393",
+      "source_path": "FormalConjectures/ErdosProblems/393.lean",
+      "theorem": "Erdos393.erdos_393",
+      "type_hash": "sha256:3d9205a8df3dd343b5022ee9201b88577e9d5df7d970aa9ac4ce73f6c41a925b",
+      "type_pretty": "Filter.Tendsto Erdos393.f Filter.atTop Filter.atTop"
+    },
+    {
+      "task_id": "fc-v2-erdos396-erdos-396-759414d1f75c3beb32fdffb7-formalized",
+      "reward_target_id": "fc-target:Erdos396.erdos_396",
+      "source_path": "FormalConjectures/ErdosProblems/396.lean",
+      "theorem": "Erdos396.erdos_396",
+      "type_hash": "sha256:ca1aa2d9d9356095ec473de369398e4ea0eecba8e73b9d5dc1ff2d6964629b01",
+      "type_pretty": "True ↔ ∀ (k : ℕ), ∃ n, n.descFactorial (k + 1) ∣ n.centralBinom"
+    },
+    {
+      "task_id": "fc-v2-erdos398-erdos-398-ae982b21b0fc9e58693d1299-formalized",
+      "reward_target_id": "fc-target:Erdos398.erdos_398",
+      "source_path": "FormalConjectures/ErdosProblems/398.lean",
+      "theorem": "Erdos398.erdos_398",
+      "type_hash": "sha256:b3820f17127e75aa44208433926aeaaca6601491620e00bc1aaa6f494b5dbd3d",
+      "type_pretty": "True ↔ {n | ∃ m, n.factorial + 1 = m ^ 2} = {4, 5, 7}"
+    },
+    {
+      "task_id": "fc-v2-parts-i-eb4f93d56832338c3e1ca47a-formalized",
+      "reward_target_id": "fc-target:Erdos400.erdos_400.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/400.lean",
+      "theorem": "Erdos400.erdos_400.parts.i",
+      "type_hash": "sha256:e4c6fb6ca753582f8289577becdfe30e226cc045915ef98ef84699ae28471d9c",
+      "type_pretty": "True ↔\n  ∀ k ≥ 2,\n    ∃ c,\n      Asymptotics.IsEquivalent Filter.atTop (fun x => ∑ n ∈ Finset.Icc 1 x, ↑(Erdos400.g k n)) fun x =>\n        c * ↑x * Real.log ↑x"
+    },
+    {
+      "task_id": "fc-v2-variants-one-two-644ddc72787cb70d2478b8ca-formalized",
+      "reward_target_id": "fc-target:Erdos406.erdos_406.variants.one_two",
+      "source_path": "FormalConjectures/ErdosProblems/406.lean",
+      "theorem": "Erdos406.erdos_406.variants.one_two",
+      "type_hash": "sha256:450efb0b9baef627a7cec4dab22d8ed38fa7131f0216ef80f28f46f867522371",
+      "type_pretty": "IsGreatest {n | n.isPowerOfTwo ∧ Nat.digits 3 n ⊆ [1, 2]} (2 ^ 15)"
+    },
+    {
+      "task_id": "fc-v2-variants-sigma-termination-ddbe59927d75a8071de13f77-formalized",
+      "reward_target_id": "fc-target:Erdos409.erdos_409.variants.sigma_termination",
+      "source_path": "FormalConjectures/ErdosProblems/409.lean",
+      "theorem": "Erdos409.erdos_409.variants.sigma_termination",
+      "type_hash": "sha256:0da24d0288f63e0441d5ba4817f97745a5905d3ac84e18f32cfcb62b3abf9686",
+      "type_pretty": "∀ n > 1, ∃ i, Nat.Prime ((fun x => (ArithmeticFunction.sigma 1) x - 1)^[i] n)"
+    },
+    {
+      "task_id": "fc-v2-erdos41-erdos-41-070828a016709a3840bee483-formalized",
+      "reward_target_id": "fc-target:Erdos41.erdos_41",
+      "source_path": "FormalConjectures/ErdosProblems/41.lean",
+      "theorem": "Erdos41.erdos_41",
+      "type_hash": "sha256:d254b0ecdd34012c0f1b4044e03eb4cff0fda16778d2cd2a1f1d7b047e0cf084",
+      "type_pretty": "∀ (A : Set ℕ),\n  Erdos41.NtupleCondition A 3 →\n    A.Infinite → Filter.liminf (fun N => ↑(A ∩ Set.Icc 1 N).ncard / ↑N ^ (1 / 3)) Filter.atTop = 0"
+    },
+    {
+      "task_id": "fc-v2-erdos410-erdos-410-9700f2c139ed3a16287ca303-formalized",
+      "reward_target_id": "fc-target:Erdos410.erdos_410",
+      "source_path": "FormalConjectures/ErdosProblems/410.lean",
+      "theorem": "Erdos410.erdos_410",
+      "type_hash": "sha256:15764dee6245ed76e160ef373046385a3130329165e526a2584b0adbb9b130ca",
+      "type_pretty": "True ↔ ∀ n > 1, Filter.Tendsto (fun k => ↑((⇑(ArithmeticFunction.sigma 1))^[k] n) ^ (1 / ↑k)) Filter.atTop Filter.atTop"
+    },
+    {
+      "task_id": "fc-v2-erdos412-erdos-412-3aa3dfcae0ce2a8855b524d8-formalized",
+      "reward_target_id": "fc-target:Erdos412.erdos_412",
+      "source_path": "FormalConjectures/ErdosProblems/412.lean",
+      "theorem": "Erdos412.erdos_412",
+      "type_hash": "sha256:76232ceb7eac301b3c9a58bdf2e5f7fe16e3d9a81a9f299b0f56f2c493266557",
+      "type_pretty": "True ↔ ∀ m ≥ 2, ∀ n ≥ 2, ∃ i j, (⇑(ArithmeticFunction.sigma 1))^[i] m = (⇑(ArithmeticFunction.sigma 1))^[j] n"
+    },
+    {
+      "task_id": "fc-v2-parts-i-f09f51a86dfc5721973097f9-formalized",
+      "reward_target_id": "fc-target:Erdos413.erdos_413.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/413.lean",
+      "theorem": "Erdos413.erdos_413.parts.i",
+      "type_hash": "sha256:b90678e454c2696bc81a1d3eba48754eee89d16b5af685e73d755bf6dca50dbc",
+      "type_pretty": "True ↔ {n | Erdos413.IsBarrier (fun m => ↑(ArithmeticFunction.cardDistinctFactors m)) n}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-erdos414-erdos-414-ed1d83cfd0732e03ca03d3c6-formalized",
+      "reward_target_id": "fc-target:Erdos414.erdos_414",
+      "source_path": "FormalConjectures/ErdosProblems/414.lean",
+      "theorem": "Erdos414.erdos_414",
+      "type_hash": "sha256:f34e7a73bb00d956355b3dfaf8a9d2844d28196332c64b9aefc01342c404bd75",
+      "type_pretty": "True ↔ ∀ m > 0, ∀ n > 0, ∃ i j, Erdos414.h^[i] m = Erdos414.h^[j] n"
+    },
+    {
+      "task_id": "fc-v2-parts-i-6d932c8b9e84da4a5a2440e2-formalized",
+      "reward_target_id": "fc-target:Erdos416.erdos_416.parts.i",
+      "source_path": "FormalConjectures/ErdosProblems/416.lean",
+      "theorem": "Erdos416.erdos_416.parts.i",
+      "type_hash": "sha256:e59204a269577064de274740a6a877339d25875f3f26f185d95133e79bbc2f70",
+      "type_pretty": "Filter.Tendsto (fun x => Erdos416.V (2 * x) / Erdos416.V x) Filter.atTop (nhds 2)"
+    },
+    {
+      "task_id": "fc-v2-erdos422-erdos-422-0f7ddca1eb4bdbf0251c278a-formalized",
+      "reward_target_id": "fc-target:Erdos422.erdos_422",
+      "source_path": "FormalConjectures/ErdosProblems/422.lean",
+      "theorem": "Erdos422.erdos_422",
+      "type_hash": "sha256:b9a8f308580e89d8fe02ffb3cc3ed52487d46cd258b95fd3b43588489913c2bf",
+      "type_pretty": "∀ (f : ℕ+ → ℕ+), Erdos422.IsHofstadterQ f → {n | ∀ (x : ℕ+), f x ≠ n}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-erdos423-erdos-423-3f44d0660ef97d7e97503bee-formalized",
+      "reward_target_id": "fc-target:Erdos423.erdos_423",
+      "source_path": "FormalConjectures/ErdosProblems/423.lean",
+      "theorem": "Erdos423.erdos_423",
+      "type_hash": "sha256:e99ba372a74d97fd65d3302b3cbe3ff679b643749adb0a3b51bf533db63f7323",
+      "type_pretty": "∀ (a : ℕ → ℕ), Erdos423.IsHofstadterSeq a → (fun n => ↑(a n) - ↑n) =o[Filter.atTop] fun n => ↑n"
+    },
+    {
+      "task_id": "fc-v2-erdos428-erdos-428-84e1bd278ee6f15994bdeeec-formalized",
+      "reward_target_id": "fc-target:Erdos428.erdos_428",
+      "source_path": "FormalConjectures/ErdosProblems/428.lean",
+      "theorem": "Erdos428.erdos_428",
+      "type_hash": "sha256:2b3c9b455f9a0af251361349f272481934f62a120bd713409e7d90e0cfb5f626",
+      "type_pretty": "True ↔\n  ∃ A,\n    (∃ᶠ (n : ℕ) in Filter.atTop, ∀ a ∈ A, 0 < a → a < n → Nat.Prime (n - a)) ∧\n      Filter.liminf (fun n => Erdos428.primeDensityRatio A n) Filter.atTop > 0"
+    },
+    {
+      "task_id": "fc-v2-erdos430-erdos-430-35cf6edd3d56c9b6283f4a07-formalized",
+      "reward_target_id": "fc-target:Erdos430.erdos_430",
+      "source_path": "FormalConjectures/ErdosProblems/430.lean",
+      "theorem": "Erdos430.erdos_430",
+      "type_hash": "sha256:aa47510c3b5f15838d5f75e24e85bcb268e6374fc2f2bde1c546ad2ad5e4f799",
+      "type_pretty": "∀ᶠ (n : ℕ) in Filter.atTop, ¬∀ m ∈ Erdos430.terms n, Nat.Prime m"
+    },
+    {
+      "task_id": "fc-v2-erdos44-erdos-44-74045ecbc24b36adeaf4858f-formalized",
+      "reward_target_id": "fc-target:Erdos44.erdos_44",
+      "source_path": "FormalConjectures/ErdosProblems/44.lean",
+      "theorem": "Erdos44.erdos_44",
+      "type_hash": "sha256:e885ea00dc26001060d18272ca708ffbe9aebbd00b2e456a1afbd88e9e0b1985",
+      "type_pretty": "True ↔\n  ∀ N ≥ 1,\n    ∀ A ⊆ Finset.Icc 1 N,\n      IsSidon ↑A → ∀ ε > 0, ∃ M > N, ∃ B ⊆ Finset.Icc (N + 1) M, IsSidon (↑A ∪ ↑B) ∧ (1 - ε) * √↑M ≤ ↑(A ∪ B).card"
+    },
+    {
+      "task_id": "fc-v2-erdos445-erdos-445-5e32b4f2052ba992655ffe34-formalized",
+      "reward_target_id": "fc-target:Erdos445.erdos_445",
+      "source_path": "FormalConjectures/ErdosProblems/445.lean",
+      "theorem": "Erdos445.erdos_445",
+      "type_hash": "sha256:22e625cb1fa870660bd53ea979e4aa9393b30b01b05831ab8681a269a8753dbb",
+      "type_pretty": "True ↔ ∀ c > 1 / 2, ∀ᶠ (p : ℕ) in Filter.atTop, Nat.Prime p → ∀ (n : ℕ), Erdos445.Erdos445Prop c p n"
+    },
+    {
+      "task_id": "fc-v2-erdos454-erdos-454-ca766f257c3f49d829adecf4-formalized",
+      "reward_target_id": "fc-target:Erdos454.erdos_454",
+      "source_path": "FormalConjectures/ErdosProblems/454.lean",
+      "theorem": "Erdos454.erdos_454",
+      "type_hash": "sha256:aa9920bd6a32e52d40b0671df792cc03b6866b66d1fca2ed8029a1124628f2b3",
+      "type_pretty": "True ↔ Filter.limsup (fun n => ↑(Erdos454.f n) - 2 * ↑(Nat.nth Prime n)) Filter.atTop = ⊤"
+    },
+    {
+      "task_id": "fc-v2-erdos455-erdos-455-137baa6eca454bb1a6c959b7-formalized",
+      "reward_target_id": "fc-target:Erdos455.erdos_455",
+      "source_path": "FormalConjectures/ErdosProblems/455.lean",
+      "theorem": "Erdos455.erdos_455",
+      "type_hash": "sha256:a07ec2deb4e3ccf81a055e2cea8b3e2cbf67bb97e062b2e47e4c052fa21cdd32",
+      "type_pretty": "True ↔\n  ∀ (q : ℕ → ℕ),\n    StrictMono q →\n      (∀ (n : ℕ), Nat.Prime (q n) ∧ q (n + 2) - q (n + 1) ≥ q (n + 1) - q n) →\n        Filter.Tendsto (fun n => ↑(q n) / ↑n ^ 2) Filter.atTop Filter.atTop"
+    },
+    {
+      "task_id": "fc-v2-erdos458-erdos-458-2f12f6df8485f7f556e79be2-formalized",
+      "reward_target_id": "fc-target:Erdos458.erdos_458",
+      "source_path": "FormalConjectures/ErdosProblems/458.lean",
+      "theorem": "Erdos458.erdos_458",
+      "type_hash": "sha256:909d60f631d5bf196c4bbe998c7ccc755c1f67be8a90e99926311a249344db99",
+      "type_pretty": "True ↔ ∀ (k : ℕ), Erdos458.lcm_upto (Nat.nth Prime (k + 1) - 1) < Nat.nth Prime k * Erdos458.lcm_upto (Nat.nth Prime k)"
+    },
+    {
+      "task_id": "fc-v2-erdos461-erdos-461-bbf8e199ec904c8f66c60d9f-formalized",
+      "reward_target_id": "fc-target:Erdos461.erdos_461",
+      "source_path": "FormalConjectures/ErdosProblems/461.lean",
+      "theorem": "Erdos461.erdos_461",
+      "type_hash": "sha256:0b960bbb0b57641a804c11e503a46d3c84e2e270f56b55c155db1ddc0c3415ba",
+      "type_pretty": "∃ c, 0 < c ∧ ∀ (n t : ℕ), c * ↑t ≤ ↑(Erdos461.f n t)"
+    },
+    {
+      "task_id": "fc-v2-erdos463-erdos-463-c9835af5b70b9a68f5c05abf-formalized",
+      "reward_target_id": "fc-target:Erdos463.erdos_463",
+      "source_path": "FormalConjectures/ErdosProblems/463.lean",
+      "theorem": "Erdos463.erdos_463",
+      "type_hash": "sha256:20c3316fde211c926c0f24a4be33346603ee27b460f46825d43f1552d0d26465",
+      "type_pretty": "True ↔\n  ∃ f,\n    ∃ (_ : Filter.Tendsto f Filter.atTop Filter.atTop),\n      ∀ᶠ (n : ℕ) in Filter.atTop, ∃ m, m.Composite ∧ n + f n < m ∧ m < n + m.minFac"
+    },
+    {
+      "task_id": "fc-v2-erdos467-erdos-467-2be4e4d9c73093a7926f6e79-formalized",
+      "reward_target_id": "fc-target:Erdos467.erdos_467",
+      "source_path": "FormalConjectures/ErdosProblems/467.lean",
+      "theorem": "Erdos467.erdos_467",
+      "type_hash": "sha256:9a5afb980d7966d9f601f59490df31bb4cc72ab09df07889e575011016cfe1c4",
+      "type_pretty": "∀ᶠ (x : ℕ) in Filter.atTop, ∃ residue A B, Erdos467.PrimePartitionUpTo x A B ∧ Erdos467.CongruenceCover x residue A B"
+    },
+    {
+      "task_id": "fc-v2-erdos472-erdos-472-ff10864bffdbb40af7463535-formalized",
+      "reward_target_id": "fc-target:Erdos472.erdos_472",
+      "source_path": "FormalConjectures/ErdosProblems/472.lean",
+      "theorem": "Erdos472.erdos_472",
+      "type_hash": "sha256:017e7aec7d11484ca73173cea388b2dbb2f8604642b29c14d940fa7bc8bee896",
+      "type_pretty": "∃ m q, Erdos472.UlamPrimeExtension m q"
+    },
+    {
+      "task_id": "fc-v2-erdos478-erdos-478-a47dd626877b01a28203140b-formalized",
+      "reward_target_id": "fc-target:Erdos478.erdos_478",
+      "source_path": "FormalConjectures/ErdosProblems/478.lean",
+      "theorem": "Erdos478.erdos_478",
+      "type_hash": "sha256:33f7d8edb009f6455adccc836caf71c98814c5f34b9fb1fb6353e82cffb2dfd2",
+      "type_pretty": "Filter.Tendsto (fun p => ↑(Finset.image (fun k => k.factorial % p) (Finset.Ico 1 p)).card / ↑p)\n  (Filter.atTop ⊓ Filter.principal {p | Nat.Prime p}) (nhds (1 - 1 / Real.exp 1))"
+    },
+    {
+      "task_id": "fc-v2-erdos479-erdos-479-35b57876e1840d282c93526a-formalized",
+      "reward_target_id": "fc-target:Erdos479.erdos_479",
+      "source_path": "FormalConjectures/ErdosProblems/479.lean",
+      "theorem": "Erdos479.erdos_479",
+      "type_hash": "sha256:42b69be220a84dd48e29df5445b5c6f6bf8263ed4371a22066b5df6be6202c39",
+      "type_pretty": "True ↔ ∀ (k k : ℤ), k ≠ 1 → {n | 2 ^ n ≡ k [ZMOD ↑n]}.Infinite"
+    },
+    {
+      "task_id": "fc-v2-erdos483-erdos-483-9e06a33e28c6efb00d84b4de-formalized",
+      "reward_target_id": "fc-target:Erdos483.erdos_483",
+      "source_path": "FormalConjectures/ErdosProblems/483.lean",
+      "theorem": "Erdos483.erdos_483",
+      "type_hash": "sha256:eaadb479fa1d84f73f93699c85e8b4353a0fddb0d8dfa9a33d358215e2a79912",
+      "type_pretty": "∃ C, 0 < C ∧ ∀ (k : ℕ), 0 < k → ∃ N, ↑N < C ^ k ∧ Erdos483.Forces k N"
+    }
+  ]
+}

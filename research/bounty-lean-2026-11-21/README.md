@@ -13,6 +13,8 @@ The owner's latest instruction permits any mathematical problem whose solution p
 | Other prizes | ZZZAgentBoard declarations and direct cash sponsor offers | `other/` |
 | Althöfer game | Optimal-play 3n±1 game, distinct from the stochastic chain | `althofer-game/` |
 | Sun prime–Pell representation | Full counterexample via a congruence covering, with small-prime exceptions checked | `pell-cover/` |
+| Erdős 151 | Full clique-transversal bound; explicit obstructions to proposed reductions | `clique-transversal/` |
+| Formal languages | Direct sponsor prizes; complete decision or undecidability results | `formal-languages/` |
 
 The separate campaign [#222](https://github.com/1337isnot1337/solved-conjectures/issues/222) has been notified. Existing reservations #216, #220 and #221 are preserved. This directory does not change the root results count.
 
@@ -40,6 +42,9 @@ No complete new mathematical solution, unclaimed award-ready formalization, acce
 - [Sun prime–Pell investigation](pell-cover/README.md): four independently checked integer certificates rule out every congruence cover whose prime Pell periods divide 120. Larger-period searches are inconclusive. This is a limitation of the counterexample method, not a resolution of the conjecture.
 - [Krenn–Gu status audit](krenn-gu/README.md): a September 2026 full Lean proof is recorded in the proposer's November paper. The old prize listing is not a new opportunity.
 - [Additional status checks](other/extra-status-checks.md): Rump's two matrix prizes have been solved and paid; the Chebyshev primality offer pays for a published proof, not an arbitrary counterexample.
+- [Clique-transversal reductions](clique-transversal/reductions.md): elementary restrictions on a possible counterexample, plus an independently replayed icosahedral counterexample to a proposed single-edge deletion lemma. The full Erdős 151 conjecture remains open here.
+- [Formal-language status checks](formal-languages/SCREENING.md): exact sponsor offers and the distinction between resolved, still listed, and unconfirmed targets.
+- [Frozen Lean statement checks](conjectures/statement-audit-001-160/README.md): 160 task headers retrieved and several apparent formulation errors ruled out by their actual definitions. No award-producing defect found.
 
 ## Continuing formalization screen
 
@@ -47,6 +52,17 @@ The first Justin Sun Prize screen covered a convenience shortlist of twelve
 catalogue entries, not all missing formalizations. The current index has 292
 entries marked `Solved` with no Lean proof recorded. This count is a screening
 input, not a count of available prizes: prior pull requests and external proofs
-must be checked against each full statement. The expanded review is divided
-across three researchers. No unclaimed complete formalization has yet been
-identified.
+must be checked against each full statement. The expanded review included
+all 100 such entries in identifiers 351–650 and a candidate screen of the
+126 entries in identifiers 651–1072. Search records distinguish successful
+queries from rate-limit errors. A prior PR is not itself evidence of a
+complete proof; selected promising candidates were checked against their
+actual theorem endpoints and source files. See [the midrange search
+record](jsp/midrange-screen/catalog-and-pr-screen.json) and [the broader
+source review](jsp/broader-screen/README.md).
+
+No clearly unclaimed, complete formalization suitable for an immediate
+award submission was identified. The remaining exact gap found in the
+screen is recorded as a research lead, not as a completed formalization.
+Researchers rotated back to mathematical attacks and frozen-statement
+checks rather than treating catalogue labels as available prizes.
