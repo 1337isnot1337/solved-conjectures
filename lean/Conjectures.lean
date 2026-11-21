@@ -1,3 +1,4 @@
+import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
 import Conjectures.FangZhangZhao
 import Conjectures.HadamardLegendreQuotientData

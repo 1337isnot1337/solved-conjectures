@@ -30,3 +30,5 @@ python3 results/zhang-deletion-values/verify.py
 The script checks the closed formula in all 779 cases with `3 <= n <= 40` and `1 <= r <= n-1`, checks the strict inequality in all 740 cases with `n >= 4` and `r <= n-2`, and checks the witness time used in the second case. It takes about 15 seconds.
 
 The equality statement in the second case uses Liu's theorem as quoted by Zhang; the verifier confirms it for `n <= 40`.
+
+Lean proves the strict inequality in Question 8.4 for every n≥4 in [`Conjectures.ZhangDeletion`](../../lean/Conjectures/ZhangDeletion.lean); the stronger exact-value formula remains unformalized. The four-module kernel replay passed locally, and the full repository gate is pending.

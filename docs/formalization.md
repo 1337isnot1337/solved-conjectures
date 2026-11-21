@@ -1251,3 +1251,7 @@ The complete 20-module hosted gate passed at `a8577e5da31b851ce64333aa921b39c662
 ## Sun–Zhao iterated ratios
 
 `Conjectures.SunZhao.conjecture_false` directly computes the source recurrence over the rationals and refutes its even-order clause at k=12, n=12. The module build, standard axiom check, and isolated kernel replay passed; the full repository gate is pending. Source-version and priority limits remain documented in the result package.
+
+## Zhang deletion values
+
+`ZhangDeletion.question84` proves the strict loneliness inequality for all n≥4, 1≤r≤n−2, using the actual distance and real-time value definitions. The four-module closure and standard axioms passed local kernel replay. The exact deletion-value formula remains unformalized; the full repository gate is pending.

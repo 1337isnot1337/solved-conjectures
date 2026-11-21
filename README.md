@@ -60,7 +60,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
 | [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
 | [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟢 |
-| [Zhang's Question 8.4: deletion values of the lonely runner](results/zhang-deletion-values/) | ⬜ |
+| [Zhang's Question 8.4: deletion values of the lonely runner](results/zhang-deletion-values/) | 🟡 |
 | [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |
 | [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟢 |
 | [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟢 |

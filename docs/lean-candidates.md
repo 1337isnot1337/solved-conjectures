@@ -107,11 +107,3 @@ finite quotient/no-lift packet, and two-row construction remain candidates.
 
 The `construction` and `quotient-data` Legendre tasks are accepted components after their exact strict-source, axiom-audit, and independent-kernel receipts passed. Their scopes are the actual two-row Hadamard matrix and transport from centered order-27-invariant rows to the actual finite quotient data. The full quotient enumeration/no-lift packet and the final multiplier bound of nine remain candidates.
 [Verification record](lean-status.md#actual-legendre-pair-matrix-and-quotient-transport).
-
-### Zhang deletion-value arithmetic candidate
-
-`Conjectures.ZhangDeletion` proves the coprime-denominator window, its strict
-bound for the small-deletion case, the modular inverse, and the combined modular witness for every retained speed.
-Its module build and isolated kernel replay passed locally. These lemmas do not
-establish the actual distance witness or the deletion-value theorem; the module
-is not yet registered in the full gate. Work is reserved on issue #130.
