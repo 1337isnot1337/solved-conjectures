@@ -9,6 +9,9 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `LopezPousoSegura.P2_eq_shifted,
+    `LopezPousoSegura.actual_legendre_roots,
+    `LopezPousoSegura.actual_legendre_derivative,
     `CKZBridge.four_records_unimodal,
     `CKZBridge.four_class_decreasing,
     `D5.S1.Words.Patterns.Separable.RecordAllIndex.actual_ckz_conjecture_two,
