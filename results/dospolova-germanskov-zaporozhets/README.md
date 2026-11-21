@@ -26,3 +26,5 @@ The full universal conjecture is refuted by an entire family of positive infinit
 Three independent mathematical reviews passed. No computation or Lean verification is part of the proof. Actual source-image inspection confirms that Vitale's Theorem 1 states a nonstrict inequality; its lower bar was lost in OCR. The bounded novelty audit and the distinction between the new strictness deduction and Long's earlier ingredients are documented in NOVELTY.md. No earlier explicit resolution or equivalent strict obstruction was found within the recorded search limits. The result remains unrefereed.
 
 Coordination: [issue #199](https://github.com/1337isnot1337/solved-conjectures/issues/199).
+
+A [partial Lean formalization](../../lean/Conjectures/DospolovaGermanskovZaporozhets.lean) checks the factorial equalities and abstract strict Gaussian-tail step. The intrinsic-volume and Gaussian-process bridge remains open in Lean. Strict compilation and isolated kernel replay passed; the full repository gate is pending.

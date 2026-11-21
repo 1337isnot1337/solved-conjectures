@@ -1279,3 +1279,7 @@ This formalizes a previously resolved result. A complete ordinary disproof was p
 ## López Pouso–Segura quadrature counterexample
 
 `LopezPousoSegura.both_upper_bounds_fail` checks the exact n=2 counterexample, including the Legendre roots, standard weights, cubic integral exactness, and the pi/square-root comparison. The eventual-even-degree strengthening remains unformalized. Strict compilation, isolated kernel replay, and endpoint axiom checks passed; the full repository gate is pending.
+
+## Dospolova–Germanskov–Zaporozhets factorial family
+
+`DospolovaGermanskovZaporozhets` checks all factorial-sequence equalities and the measure-theoretic strict Gaussian-tail step, with the range and Gaussian-law assumptions explicit. The actual Gaussian process, intrinsic volumes and Vitale limit remain unformalized. Strict source compilation, isolated kernel replay and endpoint axiom checks passed; the full repository gate is pending.
