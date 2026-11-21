@@ -8,6 +8,7 @@ modules=(
   Conjectures.FussCounting
   Conjectures.FussCycle
   Conjectures.ChenKhareSahi
+  Conjectures.ChenKhareSahiReal
   Conjectures.ChenKhareSahiCovers
   Conjectures.FussCatalan
   Conjectures.BrownMolGeneralRoot
