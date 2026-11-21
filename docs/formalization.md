@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak source test 5, 21 November 2026
+
+Lean formalizes the count-based existence trigger of source test 5 and uses it with tests 1 and 2 for the regular and exceptional graph partition cases, including a reserved short arm. Admissibility index ranges and reorderings, AVD reductions and existence constructions remain. Strict compilation, a 709-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak source-level exceptional case, 21 November 2026
 
 Lean proves the complete exceptional-size graph construction under the weaker residue bounds derived from tests 1 and 2, with a fifth-test witness, for the tripod and a reserved short arm. The stronger pairwise assumption is no longer required. Translating test 5, general AVD reductions and existence constructions remain. Strict compilation, a 681-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.

@@ -955,3 +955,4 @@ import Conjectures.HornakZero
 import Conjectures.HornakOne
 import Conjectures.HornakWeak
 import Conjectures.HornakWeakEndpoint
+import Conjectures.HornakRegularSource

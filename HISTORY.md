@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak source test 5
+
+Formalized the count-based existence trigger for source test 5 and used it with tests 1 and 2 in the regular and exceptional graph partition cases. Strict compilation, a 709-theorem full-chain axiom audit and isolated kernel replay passed. Admissibility index ranges, AVD reductions, existence constructions and the combined gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak source-level exceptional case
 
 Removed the stronger pairwise restriction from the positive-slack endpoint and proved all exceptional-size graph partitions under the weaker source-derived residue bounds and a fifth-test witness. Strict compilation, a 681-theorem full-chain axiom audit and isolated kernel replay passed. Test 5 translation, general AVD reductions, existence constructions and the combined gate remain.
