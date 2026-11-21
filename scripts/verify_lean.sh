@@ -51,6 +51,7 @@ modules=(
   Conjectures.GilmoreCrossingNesting
   Conjectures.DospolovaGermanskovZaporozhets
   Conjectures.LopezPousoSegura
+  Conjectures.LopezPousoSeguraAsymptotic
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany

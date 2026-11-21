@@ -9,6 +9,12 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `LopezPousoSegura.perturb1_hasDeriv,
+    `LopezPousoSegura.perturb2_hasDeriv,
+    `LopezPousoSegura.perturb2_ode,
+    `LopezPousoSegura.perturb_values,
+    `LopezPousoSegura.asymptotic_product_algebra,
+    `LopezPousoSegura.asymptotic_normalized_coefficients,
     `CKZLowSeries.low1_coeff,
     `CKZLowSeries.low2_coeff,
     `CKZLowSeries.low3_coeff,
