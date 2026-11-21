@@ -37,3 +37,5 @@ There is an exact bound in the squarefree transfer when each index uses at most 
 The search for a nonnilpotent counterexample includes a replayable GAP export, a SAT checker, and a positive control using Menon's construction. [Method and completed searches](small-groups.md)
 
 For integer residue classes, the full question restricted to any fixed finite prime set has an effective finite decision procedure. [Proof using smooth-number spacing](fixed-prime-reduction.md)
+
+The ranks of coset-intersection matrices give a reciprocal inequality for arbitrary groups. For integer residue classes it strengthens the classical common-modulus test and excludes some families that pass the classical test on every subfamily. [Proof and exact examples](incidence-rank.md)
