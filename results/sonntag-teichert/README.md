@@ -7,4 +7,4 @@ Every tournament's hypergraph of inclusion-minimal dominating sets has at most o
 - [Reproducible checks](verify.py)
 - [Research issue](https://github.com/1337isnot1337/solved-conjectures/issues/70)
 
-**Lean status:** none
+**Lean status:** The [Lean proof](../../lean/Conjectures/SonntagTeichert.lean) establishes the tournament theorem in the equivalent no-separation formulation. The classification and realization for oriented graphs with missing arcs remain unformalized. The standalone strict source check, all-owned axiom audit and stock-kernel replay passed; the combined repository gate is pending.

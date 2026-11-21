@@ -23,6 +23,10 @@ accepted scope, including the conditional critical-seven assembly.
 
 `Conjectures.HanSabagCounterexample` checks the rational matrix witness, the exact sparse infimum, a uniform lower bound over all sparse encoders, and a uniform gap over the open channel-gain interval. Matching lower bounds and approaching feasible encoders establish all four individual assignment infima. The module passed standalone strict source compilation, the all-owned axiom audit and stock-kernel replay; the combined gate is pending. See [issue 197](https://github.com/1337isnot1337/solved-conjectures/issues/197).
 
+## Sonntag–Teichert checkpoint
+
+`Conjectures.SonntagTeichert` proves the finite tournament theorem via blocker duality and representative counting. The stronger oriented-graph classification and converse construction remain to be formalized. The standalone strict source check, all-owned axiom audit and stock-kernel replay passed; the combined repository gate is pending. See [issue 70](https://github.com/1337isnot1337/solved-conjectures/issues/70).
+
 ## Coordination, 18 November 2026
 
 The four active lanes in [issue 1](https://github.com/1337isnot1337/solved-conjectures/issues/1) are:

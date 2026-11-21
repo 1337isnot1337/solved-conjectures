@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Sonntag–Teichert tournament theorem in Lean
+
+Formalized the tournament domination-hypergraph theorem from finite arc and domination definitions. Strict standalone compilation, an all-owned axiom audit and stock-kernel replay passed. The additional classification and realization of oriented graphs with missing arcs, and the combined repository gate, remain pending.
+
 ## 2026-11-21 — Prior-resolution correction for Fang–Zhang–Zhao and Sun–Zhao
 
 Withdrew two previously counted packages after a complete-text archive audit found earlier full disproofs. Principia's [26 October commit](https://github.com/PrincipiaMathOrg/math-solutions/blob/c18609e47b635722206b9a2e9dcd402d0edcfb0a/mathdb/368345/solution.tex) proves the same complete Fang–Zhang–Zhao Hoggatt failure family. Its [27 October commit](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-332483/mathdb-332483-solution.tex) contains the same exact Sun–Zhao ratio counterexample. Both public dates precede this campaign; internal manuscript dates are unnecessary to establish that fact.

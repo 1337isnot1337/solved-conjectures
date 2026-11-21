@@ -832,3 +832,4 @@ import Conjectures.LiNegativeCoefficient
 import Conjectures.LonelinessRationalLatticeQuotient
 import Conjectures.ZhuJacobiStirling
 import Conjectures.HanSabagCounterexample
+import Conjectures.SonntagTeichert

@@ -9,6 +9,12 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Sonntag.blocker_involution,
+    `Sonntag.minimal_domination_blocker,
+    `Sonntag.blocker_split,
+    `Sonntag.representatives_bound,
+    `Sonntag.separated_blockers_impossible,
+    `Sonntag.tournament_no_separation,
     `Han.assignment_lower_general,
     `Han.assignment_approximation,
     `Han.encoder_patterns,
