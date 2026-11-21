@@ -1,0 +1,22 @@
+{
+  "commit": "47371706c400c79d06e3fb62190fcf6f7a725c85",
+  "text_units": 1740,
+  "text_bytes": 35207370,
+  "pdf_extractions": 274,
+  "zip_text_entries": [
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/AUDIT.md",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/EP1054.bib",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/EP1054.tex",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/fraiture-distribution-addendum.tex",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/fraiture.tex",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/kovac.tex",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/old_main.tex",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/preamble.tex",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/principia-math-older.tex",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/principia-math.tex",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/README.md",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/references.tex",
+    "ZIP/erdos1054/ep1054/paper/revisions/2026-10-15/received/source.zip/source/tao.tex"
+  ],
+  "archive_sha256": "45f5605f49c9d99227901594a31cccc6d18d5096fd2d628ffbe2bba6c86e4600"
+}

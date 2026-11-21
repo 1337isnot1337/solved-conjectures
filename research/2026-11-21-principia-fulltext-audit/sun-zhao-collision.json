@@ -1,0 +1,9 @@
+{
+  "prior_certificate_replayed": true,
+  "A_bits": 582535,
+  "B_bits": 582535,
+  "prior_tex_sha256": "dc66805dd04003866eb1650f90a194cd4e9a7b873fe653d1e7dfa53ed1f2f505",
+  "archived_date": "2026-09-11",
+  "first_verified_github_commit": "34b8b155d7db464ad7306f70b16d3af9cee34501",
+  "first_verified_github_date": "2026-10-27T02:59:18Z"
+}
