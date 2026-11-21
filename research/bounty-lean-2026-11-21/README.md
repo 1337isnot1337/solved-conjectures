@@ -15,6 +15,7 @@ The owner's latest instruction permits any mathematical problem whose solution p
 | Sun prime–Pell representation | Full counterexample via a congruence covering, with small-prime exceptions checked | `pell-cover/` |
 | Erdős 151 | Full clique-transversal bound; explicit obstructions to proposed reductions | `clique-transversal/` |
 | Formal languages | Direct sponsor prizes; complete decision or undecidability results | `formal-languages/` |
+| Shallit divisibility | Full decision problem for divisibility in an automatic relation | `shallit-divisibility/` |
 
 The separate campaign [#222](https://github.com/1337isnot1337/solved-conjectures/issues/222) has been notified. Existing reservations #216, #220 and #221 are preserved. This directory does not change the root results count.
 
@@ -44,7 +45,9 @@ No complete new mathematical solution, unclaimed award-ready formalization, acce
 - [Additional status checks](other/extra-status-checks.md): Rump's two matrix prizes have been solved and paid; the Chebyshev primality offer pays for a published proof, not an arbitrary counterexample.
 - [Clique-transversal reductions](clique-transversal/reductions.md): elementary restrictions on a possible counterexample, plus an independently replayed icosahedral counterexample to a proposed single-edge deletion lemma. The full Erdős 151 conjecture remains open here.
 - [Formal-language status checks](formal-languages/SCREENING.md): exact sponsor offers and the distinction between resolved, still listed, and unconfirmed targets.
-- [Frozen Lean statement checks](conjectures/statement-audit-001-160/README.md): 160 task headers retrieved and several apparent formulation errors ruled out by their actual definitions. No award-producing defect found.
+- [Frozen Lean statement checks, positions 1–160](conjectures/statement-audit-001-160/README.md), and [positions 161–326](conjectures/statement-audit-161-326/README.md): all 326 task headers retrieved, with selected underlying definitions checked against the exact base revision and audit patch. Apparent formulation errors were ruled out by their actual definitions. No award-producing defect found.
+- [Shallit's divisibility question](shallit-divisibility/README.md): the published £50 question remains unresolved here. An exact infinite family of false positives prevents reusing the known power-quotient undecidability construction unchanged. A separate [decision-procedure investigation](shallit-divisibility/decision-approach.md) proves a restricted one-loop algorithm and exhibits a regular negative instance that defeats bounded-quotient plus fixed-modulus certificates. Neither direction settles the general problem.
+- [Fresh cash-offer checks](fresh-cash-offers/README.md): the Proximity Prize is a current discretionary research-award program. Its full Reed–Solomon challenges were not solved. Several smaller offers were excluded after checking their sponsors' current pages.
 
 ## Continuing formalization screen
 
@@ -58,7 +61,8 @@ all 100 such entries in identifiers 351–650 and a candidate screen of the
 queries from rate-limit errors. A prior PR is not itself evidence of a
 complete proof; selected promising candidates were checked against their
 actual theorem endpoints and source files. See [the midrange search
-record](jsp/midrange-screen/catalog-and-pr-screen.json) and [the broader
+record](jsp/midrange-screen/catalog-and-pr-screen.json), [the exact remaining
+scope gap](jsp/midrange-screen/README.md), and [the broader
 source review](jsp/broader-screen/README.md).
 
 No clearly unclaimed, complete formalization suitable for an immediate
