@@ -131,6 +131,7 @@ modules=(
   Conjectures.JohnsonPfaffianSwap
   Conjectures.JohnsonPfaffianParity
   Conjectures.JohnsonPfaffianResidual
+  Conjectures.JohnsonPfaffianSparse
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany
