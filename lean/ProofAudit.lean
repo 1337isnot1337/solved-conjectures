@@ -9,6 +9,12 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `FussCatalan.binomialPolynomial_splits,
+    `FussCatalan.binomialPolynomial_real_root_negative,
+    `FussCatalan.enumeratorFactor_identity,
+    `FussCatalan.enumeratorFactor_splits,
+    `FussCatalan.base_derivative_factorization,
+    `FussCatalan.core_eval_substitution,
     `FussCatalan.splits_derivative,
     `FussCatalan.splits_reverse,
     `FussCatalan.transformed_base_splits,

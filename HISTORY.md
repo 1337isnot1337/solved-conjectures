@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Fuss–Catalan real-rooted binomial sum in Lean
+
+Proved the real-rootedness of the exact indexed binomial sum in the written coefficient formula for all parameters, including its derivative factorization and fractional-linear substitution. The path enumeration remains. Strict compilation, all-owned axiom audit and isolated stock-kernel replay passed; the combined repository gate is pending.
+
 ## 2026-11-21 — Fuss–Catalan Lean checkpoint
 
 Formalized real-root preservation by differentiation and reversal/translation, together with exact coefficients, degree and nonnegative-axis positivity for the binomial factor. The polynomial identification and path enumeration remain; standalone compilation, axiom audit and isolated kernel replay passed.
