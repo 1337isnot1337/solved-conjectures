@@ -1386,4 +1386,288 @@ theorem matrixEntry_eq_labelledPathSum (r s μ y : S) (n k : ℕ)
 
 end Ring
 
+
+-- Pair counts are computed with arcs in decreasing order of their right endpoint.
+-- Pending counts track interactions with still-open arcs during the decoding.
+def pointArcCount (F : ℕ → (ℕ × ℕ) → ℕ) (x : ℕ) (arcs : List (ℕ × ℕ)) : ℕ :=
+  (arcs.map (F x)).sum
+
+def pendingCount (F : ℕ → (ℕ × ℕ) → ℕ) (opens : List ℕ) (arcs : List (ℕ × ℕ)) : ℕ :=
+  (opens.map (fun x => pointArcCount F x arcs)).sum
+
+def pairCount (F : ℕ → (ℕ × ℕ) → ℕ) : List (ℕ × ℕ) → ℕ
+  | [] => 0
+  | e::es => pointArcCount F e.1 es + pairCount F es
+
+def stateCount (F : ℕ → (ℕ × ℕ) → ℕ) (opens : List ℕ) (arcs : List (ℕ × ℕ)) : ℕ :=
+  pairCount F arcs + pendingCount F opens arcs
+
+theorem pending_add_arc (F : ℕ → (ℕ × ℕ) → ℕ) (opens : List ℕ)
+    (e : ℕ × ℕ) (arcs : List (ℕ × ℕ)) :
+    pendingCount F opens (e::arcs) = (opens.map (fun x => F x e)).sum + pendingCount F opens arcs := by
+  induction opens with
+  | nil => simp [pendingCount]
+  | cons x xs ih =>
+    simp only [pendingCount, List.map_cons, List.sum_cons, pointArcCount] at *
+    omega
+
+theorem state_close (F : ℕ → (ℕ × ℕ) → ℕ) (opens : List ℕ)
+    (arcs : List (ℕ × ℕ)) (i t : ℕ) (hi : i < opens.length) :
+    let x := opens[i]
+    stateCount F (opens.eraseIdx i) ((x,t)::arcs) =
+      stateCount F opens arcs + ((opens.eraseIdx i).map (fun z => F z (x,t))).sum := by
+  have hp := (List.getElem_cons_eraseIdx_perm hi).map (fun x => pointArcCount F x arcs)
+  have heq := hp.sum_eq
+  simp only [List.map_cons, List.sum_cons] at heq
+  simp only [stateCount, pairCount, pending_add_arc]
+  unfold pendingCount at *
+  omega
+
+
+def crossContribution (z : ℕ) (e : ℕ × ℕ) : ℕ := if e.1 < z ∧ z < e.2 then 1 else 0
+
+def nestContribution (z : ℕ) (e : ℕ × ℕ) : ℕ := if z < e.1 then 1 else 0
+
+def alignContribution (z : ℕ) (e : ℕ × ℕ) : ℕ := if e.2 < z then 1 else 0
+
+theorem indicator_sum (xs : List ℕ) (P : ℕ → Prop) [DecidablePred P] :
+    (xs.map (fun x => if P x then 1 else 0)).sum = (xs.filter P).length := by
+  induction xs with
+  | nil => simp
+  | cons x xs ih => by_cases hx : P x <;> simp [hx, ih, Nat.add_comm]
+
+theorem sum_erase_of_zero (xs : List ℕ) (i : ℕ) (hi : i < xs.length)
+    (f : ℕ → ℕ) (hz : f xs[i] = 0) :
+    ((xs.eraseIdx i).map f).sum = (xs.map f).sum := by
+  have he := ((List.getElem_cons_eraseIdx_perm hi).map f).sum_eq
+  simp only [List.map_cons, List.sum_cons, hz, zero_add] at he
+  exact he
+
+theorem cross_open_sum (xs : List ℕ) (x t : ℕ) (hxs : ∀ z ∈ xs, z < t) :
+    (xs.map (fun z => crossContribution z (x,t))).sum = (xs.filter (x < ·)).length := by
+  have hmap : xs.map (fun z => crossContribution z (x,t)) =
+      xs.map (fun z => if x < z then 1 else 0) := by
+    apply List.map_congr_left
+    intro z hz
+    simp [crossContribution, hxs z hz]
+  rw [hmap, indicator_sum]
+
+theorem nest_open_sum (xs : List ℕ) (x t : ℕ) :
+    (xs.map (fun z => nestContribution z (x,t))).sum = (xs.filter (· < x)).length := by
+  simpa [nestContribution] using indicator_sum xs (fun z => z < x)
+
+theorem align_open_sum (xs : List ℕ) (x t : ℕ) (hxs : ∀ z ∈ xs, z < t) :
+    (xs.map (fun z => alignContribution z (x,t))).sum = 0 := by
+  induction xs with
+  | nil => simp
+  | cons z zs ih =>
+    have hz := hxs z (by simp)
+    have hz' : ∀ v ∈ zs, v < t := fun v hv => hxs v (by simp [hv])
+    have htail := ih hz'
+    simp [alignContribution] at htail
+    simp [alignContribution, Nat.not_lt_of_ge (Nat.le_of_lt hz), htail]
+
+
+theorem state_down_counts {u d : ℕ} (p : Path u d) (l : Labels p) (h : d < u)
+    (i : Fin (u-d)) :
+    let p' := Path.down p h
+    let l' : Labels p' := (l,i)
+    stateCount crossContribution (openEndpoints p' l') (closedArcs p' l') =
+      stateCount crossContribution (openEndpoints p l) (closedArcs p l) + (u-d-1-i.val) ∧
+    stateCount nestContribution (openEndpoints p' l') (closedArcs p' l') =
+      stateCount nestContribution (openEndpoints p l) (closedArcs p l) + i.val ∧
+    stateCount alignContribution (openEndpoints p' l') (closedArcs p' l') =
+      stateCount alignContribution (openEndpoints p l) (closedArcs p l) := by
+  let xs := openEndpoints p l
+  have hi : i.val < xs.length := by dsimp [xs]; rw [openEndpoints_length]; exact i.isLt
+  have hi0 : i.val < (openEndpoints p l).length := hi
+  have hget : xs.getD i.val 0 = xs[i.val] := by
+    rw [List.getD_eq_getElem?_getD, List.getElem?_eq_getElem hi]
+    rfl
+  have hxs : ∀ z ∈ xs, z < u+d := openEndpoints_before p l
+  have hx : xs[i.val] < u+d := hxs _ (List.getElem_mem hi)
+  have hc : ((xs.eraseIdx i.val).map (fun z => crossContribution z (xs[i.val],u+d))).sum = u-d-1-i.val := by
+    rw [sum_erase_of_zero xs i.val hi _ (by simp [crossContribution]), cross_open_sum xs _ _ hxs]
+    simpa [List.getD_eq_getElem?_getD, List.getElem?_eq_getElem hi0] using (closing_rank_counts p l i).2
+  have hn : ((xs.eraseIdx i.val).map (fun z => nestContribution z (xs[i.val],u+d))).sum = i.val := by
+    rw [sum_erase_of_zero xs i.val hi _ (by simp [nestContribution]), nest_open_sum]
+    simpa [List.getD_eq_getElem?_getD, List.getElem?_eq_getElem hi0] using (closing_rank_counts p l i).1
+  have ha : ((xs.eraseIdx i.val).map (fun z => alignContribution z (xs[i.val],u+d))).sum = 0 := by
+    apply align_open_sum
+    intro z hz
+    exact hxs z (List.mem_of_mem_eraseIdx hz)
+  have hc' := state_close crossContribution xs (closedArcs p l) i.val (u+d) hi
+  have hn' := state_close nestContribution xs (closedArcs p l) i.val (u+d) hi
+  have ha' := state_close alignContribution xs (closedArcs p l) i.val (u+d) hi
+  simp only [hc] at hc'
+  simp only [hn] at hn'
+  simp only [ha, Nat.add_zero] at ha'
+  simpa [openEndpoints, closedArcs, xs, List.getD_eq_getElem?_getD, List.getElem?_eq_getElem hi0] using And.intro hc' (And.intro hn' ha')
+
+
+theorem state_open (F : ℕ → (ℕ × ℕ) → ℕ) (opens : List ℕ)
+    (arcs : List (ℕ × ℕ)) (t : ℕ) :
+    stateCount F (opens ++ [t]) arcs = stateCount F opens arcs + pointArcCount F t arcs := by
+  simp [stateCount, pendingCount, Nat.add_assoc]
+
+theorem pointArcCount_of_all (F : ℕ → (ℕ × ℕ) → ℕ) (arcs : List (ℕ × ℕ))
+    (x c : ℕ) (h : ∀ e ∈ arcs, F x e = c) : pointArcCount F x arcs = arcs.length * c := by
+  induction arcs with
+  | nil => simp [pointArcCount]
+  | cons e es ih =>
+    have he := h e (by simp)
+    have hes : ∀ e ∈ es, F x e = c := fun e he => h e (by simp [he])
+    simp only [pointArcCount, List.map_cons, List.sum_cons] at *
+    simp [he, ih hes, Nat.succ_mul, Nat.add_comm]
+
+theorem state_up_counts {u d : ℕ} (p : Path u d) (l : Labels p) :
+    let p' := Path.up p
+    stateCount crossContribution (openEndpoints p' l) (closedArcs p' l) =
+      stateCount crossContribution (openEndpoints p l) (closedArcs p l) ∧
+    stateCount nestContribution (openEndpoints p' l) (closedArcs p' l) =
+      stateCount nestContribution (openEndpoints p l) (closedArcs p l) ∧
+    stateCount alignContribution (openEndpoints p' l) (closedArcs p' l) =
+      stateCount alignContribution (openEndpoints p l) (closedArcs p l) + d := by
+  have hb := closedArcs_before p l
+  have ho := closedArcs_ordered p l
+  have hc : pointArcCount crossContribution (u+d) (closedArcs p l) = 0 := by
+    apply (pointArcCount_of_all _ _ _ 0 ?_).trans (by simp)
+    intro e he
+    have he' := hb e he
+    simp [crossContribution, Nat.not_lt_of_ge (Nat.le_of_lt he')]
+  have hn : pointArcCount nestContribution (u+d) (closedArcs p l) = 0 := by
+    apply (pointArcCount_of_all _ _ _ 0 ?_).trans (by simp)
+    intro e he
+    have he' := hb e he
+    have he'' := ho e he
+    simp [nestContribution, show ¬ u+d < e.1 by omega]
+  have ha : pointArcCount alignContribution (u+d) (closedArcs p l) = d := by
+    rw [pointArcCount_of_all _ _ _ 1 (by
+      intro e he
+      simp [alignContribution, hb e he]), closedArcs_length]
+    simp
+  have hc' := state_open crossContribution (openEndpoints p l) (closedArcs p l) (u+d)
+  have hn' := state_open nestContribution (openEndpoints p l) (closedArcs p l) (u+d)
+  have ha' := state_open alignContribution (openEndpoints p l) (closedArcs p l) (u+d)
+  simp only [hc, Nat.add_zero] at hc'
+  simp only [hn, Nat.add_zero] at hn'
+  rw [ha] at ha'
+  simpa [openEndpoints, closedArcs] using And.intro hc' (And.intro hn' ha')
+
+
+theorem labelsWeight_statistics {R : Type*} [CommSemiring R] (r s μ y : R)
+    {u d : ℕ} (p : Path u d) (l : Labels p) :
+    labelsWeight r s μ y p l =
+      r^(stateCount crossContribution (openEndpoints p l) (closedArcs p l)) *
+      s^(stateCount nestContribution (openEndpoints p l) (closedArcs p l)) *
+      μ^(stateCount alignContribution (openEndpoints p l) (closedArcs p l)) * y^d := by
+  induction p with
+  | empty => simp [labelsWeight, openEndpoints, closedArcs, stateCount, pairCount, pendingCount]
+  | @up u d p ih =>
+    change Labels p at l
+    have hs := state_up_counts p l
+    simp only [labelsWeight, ih l, hs.1, hs.2.1, hs.2.2, pow_add]
+    ring
+  | @down u d p h ih =>
+    change Labels p × Fin (u-d) at l
+    have hs := state_down_counts p l.1 h l.2
+    simp only [labelsWeight, ih l.1, hs.1, hs.2.1, hs.2.2, pow_add, pow_succ]
+    ring
+
+
+theorem complete_weight_statistics {R : Type*} [CommSemiring R] (r s μ y : R)
+    {u : ℕ} (p : Path u u) (l : Labels p) :
+    labelsWeight r s μ y p l =
+      r^(pairCount crossContribution (closedArcs p l)) *
+      s^(pairCount nestContribution (closedArcs p l)) *
+      μ^(pairCount alignContribution (closedArcs p l)) * y^u := by
+  have he : openEndpoints p l = [] := List.eq_nil_of_length_eq_zero (by
+    rw [openEndpoints_length]; omega)
+  simpa [he, stateCount, pendingCount] using labelsWeight_statistics r s μ y p l
+
+
+@[instance_reducible] noncomputable def pathFintype (u d : ℕ) : Fintype (Path u d) :=
+  Fintype.ofList (paths u d).toList (by intro p; simpa using paths_complete u d p)
+
+@[instance_reducible] noncomputable def decoratedFintype (u d : ℕ) : Fintype (DecoratedPath u d) := by
+  letI := pathFintype u d
+  letI : (p : Path u d) → Fintype (Labels p) := labelsFintype
+  change Fintype (Σ p : Path u d, Labels p)
+  exact inferInstance
+
+-- Canonical representatives list each matching by decreasing right endpoint.
+noncomputable def matchingFinset (u : ℕ) : Finset (List (ℕ × ℕ)) := by
+  classical
+  letI := decoratedFintype u u
+  exact (Finset.univ : Finset (DecoratedPath u u)).image decodeMatching
+
+theorem mem_matchingFinset {u : ℕ} (arcs : List (ℕ × ℕ)) :
+    arcs ∈ matchingFinset u ↔
+      (arcEndpoints arcs).Perm (List.range (2*u)) ∧
+      (∀ e ∈ arcs, e.1 < e.2) ∧
+      arcs.Pairwise (fun a b => b.2 < a.2) := by
+  classical
+  constructor
+  · intro h
+    simp only [matchingFinset, Finset.mem_image, Finset.mem_univ, true_and] at h
+    obtain ⟨⟨p,l⟩, rfl⟩ := h
+    exact ⟨(completePath_matching p l).2.1, (completePath_matching p l).2.2, closedArcs_sorted p l⟩
+  · rintro ⟨hpart, hord, hs⟩
+    obtain ⟨⟨p,l⟩, hp⟩ := decodeMatching_surjective arcs hpart hord
+    have heq : decodeMatching ⟨p,l⟩ = arcs := by
+      apply List.Perm.eq_of_pairwise (le := fun a b => b.2 < a.2) ?_ (closedArcs_sorted p l) hs hp
+      intro a b ha hb hab hba
+      omega
+    simp only [matchingFinset, Finset.mem_image, Finset.mem_univ, true_and]
+    exact ⟨⟨p,l⟩, heq⟩
+
+
+noncomputable def matchingWeight {R : Type*} [CommSemiring R]
+    (r s μ y : R) (u : ℕ) (arcs : List (ℕ × ℕ)) : R :=
+  r^(pairCount crossContribution arcs) * s^(pairCount nestContribution arcs) *
+    μ^(pairCount alignContribution arcs) * y^u
+
+theorem matching_sum_eq_labelled {R : Type*} [CommSemiring R] (r s μ y : R) (u : ℕ) :
+    ∑ arcs ∈ matchingFinset u, matchingWeight r s μ y u arcs = labelledPathSum r s μ y u u := by
+  classical
+  let : Fintype (Path u u) := pathFintype u u
+  let : (p : Path u u) → Fintype (Labels p) := labelsFintype
+  let : Fintype (DecoratedPath u u) := decoratedFintype u u
+  unfold matchingFinset
+  rw [Finset.sum_image (fun a _ b _ h => decodeMatching_injective h)]
+  have hweight : ∀ p : DecoratedPath u u,
+      matchingWeight r s μ y u (decodeMatching p) = labelsWeight r s μ y p.1 p.2 := by
+    intro ⟨p,l⟩
+    exact (complete_weight_statistics r s μ y p l).symm
+  simp_rw [hweight]
+  change (∑ x : Σ p : Path u u, Labels p, labelsWeight r s μ y x.1 x.2) = _
+  rw [Fintype.sum_sigma']
+  unfold labelledPathSum
+  have huniv : (Finset.univ : Finset (Path u u)) = paths u u := by
+    ext p
+    simp [paths_complete]
+  rw [huniv]
+
+
+theorem gilmore_conjecture {R : Type*} [CommRing R] (r s μ y : R) (n : ℕ) (hn : 1 ≤ n) :
+    matrixEntry μ y (quantum r s) n 1 =
+      ∑ arcs ∈ matchingFinset (n-1), matchingWeight r s μ y (n-1) arcs := by
+  rw [matrixEntry_eq_labelledPathSum r s μ y n 1 hn (by omega) (by omega)]
+  exact (matching_sum_eq_labelled r s μ y (n-1)).symm
+
+
+theorem contribution_semantics (e f : ℕ × ℕ)
+    (he : e.1 < e.2) (hf : f.1 < f.2) (hclose : f.2 < e.2) :
+    (crossContribution e.1 f = 1 ↔ f.1 < e.1 ∧ e.1 < f.2 ∧ f.2 < e.2) ∧
+    (nestContribution e.1 f = 1 ↔ e.1 < f.1 ∧ f.1 < f.2 ∧ f.2 < e.2) ∧
+    (alignContribution e.1 f = 1 ↔ f.1 < f.2 ∧ f.2 < e.1 ∧ e.1 < e.2) := by
+  simp [crossContribution, nestContribution, alignContribution, he, hf, hclose]
+
+theorem original_conjecture {R : Type*} [CommRing R] (r s : R) (n : ℕ) (hn : 1 ≤ n) :
+    matrixEntry 1 1 (quantum r s) n 1 =
+      ∑ arcs ∈ matchingFinset (n-1),
+        r^(pairCount crossContribution arcs) * s^(pairCount nestContribution arcs) := by
+  simpa [matchingWeight] using gilmore_conjecture r s (1 : R) 1 n hn
+
+
 end GilmoreCrossingNesting
