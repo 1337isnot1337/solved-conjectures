@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak rho-two endpoint, 21 November 2026
+
+Lean proves the rho-two exceptional endpoint construction for actual connected partitions under explicit endpoint equations, residue conditions and fifth-test input. Deriving those hypotheses, the smallest-count endpoint, full source-test and AVD reductions, and existence constructions remain. Strict compilation, a 396-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak rho-one endpoint, 21 November 2026
 
 Lean proves the rho-one exceptional endpoint, including selection of the wrapped arm from the stated three-arm residue conditions and fifth-test input. Rho-two, the smallest-count endpoint, full source-test and AVD reductions, and existence constructions remain. Strict compilation, a 333-theorem axiom audit and isolated kernel replay passed; the combined gate is pending.

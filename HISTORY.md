@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak rho-two endpoint
+
+Proved the three-arm rho-two endpoint construction through actual connected partitions under its explicit endpoint equations, residue conditions and fifth-test input. Strict compilation, a 396-theorem axiom audit and isolated kernel replay passed; the smallest-count endpoint, derivation of hypotheses, full AVD reductions and combined gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak rho-one endpoint
 
 Proved the three-arm choice and connected-partition endpoint for the exceptional-piece rho-one case from the stated residue conditions and fifth-test input. Strict compilation, a 333-theorem axiom audit and isolated kernel replay passed; rho-two, the smallest-count endpoint, full AVD reductions and the full gate remain.
