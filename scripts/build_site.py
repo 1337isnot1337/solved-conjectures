@@ -54,6 +54,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Steinke–Zakynthinou agnostic threshold problem": "steinke-zakynthinou-thresholds",
     "Johnson's conjecture": "johnson-pfaffian",
     "Brown–Mol's conjecture": "brown-mol",
     "Ekhad–Zeilberger’s most unfair bet conjecture": "ekhad-zeilberger-unfair-bet",
