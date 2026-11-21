@@ -10,9 +10,9 @@ This continuation has one complete proposed solution of a separately paid mathem
 
 | Worker | Exact scope | Current output |
 | --- | --- | --- |
-| `conjectures_bounties` | Shallit 9 full morphic Hankel problem; Nussbaum proof review | [Exact dyadic kernel and determinant gap](shallit9/dyadic-structure.md); reviewed [two-anchor](nussbaum/two-anchor-and-clique-stabilizers.md) and [recurrent-completion](nussbaum/recurrent-completions-and-higher-face-gap.md) partial results |
-| `demath_zzz_bounties` | Erdős 600 full gap limit; general VC information prize | [Cloning and subsequence gap theorem](erdos600/target-and-augmentation.md), with the lower-limit gap explicit; [general VC continuation obligations](learning-information/full-vc-continuation-obligations.md) |
-| `other_paid_math` | Shallit 2 grammar-production separation bounds; screened direct-pay targets | Fresh exact-source audit and research on Shallit 2; [Shallit 7 affine obstruction](shallit7/affine-certificate-obstruction.md) and [cone reduction](shallit7/stratified-cone-test.md) remain partial |
+| `conjectures_bounties` | Fresh direct-pay full-target screening and independent review | [Shallit 9 symbolic stopping point](shallit9/symbolic-closure-gap.md); [Shallit 2 independent review](shallit2/INDEPENDENT_REVIEW.md); no new full target from the subsequent sponsor screen |
+| `demath_zzz_bounties` | Erdős 517 full Fejér–Pólya target; earlier Erdős 600 review | [E600 sparse insertion and necessary extremizer restrictions](erdos600/sparse-insertion-gap.md); E517 source audit and research reserved in [issue 223](https://github.com/1337isnot1337/solved-conjectures/issues/223#issuecomment-7069494775) |
+| `other_paid_math` | Fresh direct-pay screening after the Shallit 2 attempt | [Uniform separator-route obstruction](shallit2/short-factor-parity-route.md); [Gaussian first-cycle prior-resolution exclusion](eligibility/gaussian-aliquot-excluded.md) |
 | Root | Independent mathematics, source review, and repository coordination | Reviewed the full threshold proof and new partial results; guarded publication preserving concurrent work |
 
 Earlier work includes the [Erdős 49 prime-interval deficit reformulation](erdos49/README.md), the [Erdős 552 countermodel to one inference](erdos552/README.md), and the [Shallit 14 finite-prime-support promise theorem](shallit/finite-prime-support-promise.md) with its [composite-base obstruction](shallit/composite-base-obstruction.md). The JSP and RoundSquare [candidate exclusions](eligibility/jsp-and-roundsquare.md) are also preserved. None resolves its unrestricted paid target.
@@ -31,9 +31,17 @@ Earlier work includes the [Erdős 49 prime-interval deficit reformulation](erdos
 
 [Shallit 9](shallit9/dyadic-structure.md), continuing [issue #216](https://github.com/1337isnot1337/solved-conjectures/issues/216), offers £50 for the complete all-order, all-shift Hankel question for the specified four-letter morphism. Its exact 79-state dyadic kernel is certified by a closure computation. Constant subsequences show why asserting nonsingularity for every auxiliary kernel sequence cannot support an induction. The symbolic determinant closure is still missing. No existing finite range was extended.
 
+[Shallit 2](shallit2/target-and-prior-audit.md) offers £10 for matching the asymptotic production bounds for CNF grammars separating arbitrary equal-length binary words. The [uniform short-factor and residue-parity obstruction](shallit2/short-factor-parity-route.md) passes [independent](shallit2/INDEPENDENT_REVIEW.md) and [coordinator](shallit2/COORDINATOR_REVIEW.md) review. Its counterfamily defeats that proposed dichotomy, yet admits much smaller separators based on its leading runs. It proves no stronger general lower bound and does not settle the target.
+
 These are source-stated direct-pay offers; no fresh sponsor promise, award decision, or payment is claimed. The threshold theorem is a complete proposed resolution; the other targets in this section remain unresolved here. The existing repository work and its earlier mathematical gaps remain preserved below.
 
 ## Subsequent mathematical attempts
+
+The [Erdős 600 sparse-insertion follow-up](erdos600/sparse-insertion-gap.md), with [independent review](erdos600/SPARSE_REVIEW.md), gives a compatible insertion family with a denominator proportional to maximum degree. A bounded-gap sequence of extremizers would eventually be connected, have maximum degree sublinear in the order, and have only sublinearly many useful nonedges. Kneser examples exclude a proposed three-halves density shortcut. The near-quadratic extremal-density step remains unproved.
+
+The [Shallit 9 symbolic checkpoint](shallit9/symbolic-closure-gap.md), with [independent review](shallit9/SYMBOLIC_REVIEW.md), derives exact all-index Mahler identities. A unimodular basis calculation shows that the constant-free transition algebra is the full three-by-three matrix algebra. An explicit parity Schur complement is not Hankel, and two exact witnesses refute proposed affine sign conditions. The reproduced verifier checks these specified identities only. No all-order determinant closure or original target counterexample was found; this route has stopped.
+
+The [Shallit 7 density audit](shallit7/density-route-audit.md), with [independent review](shallit7/DENSITY_REVIEW.md), proves counting density of order at most the reciprocal square root of length for permutation-invariant primitive context-free languages. The permutation hypothesis is essential to the proof. Primary sources refute the proposed regular-under-approximation shortcut, but do not supply the missing general density-and-order theorem.
 
 [Erdős 949](erdos949/target-and-prior-audit.md) remains unresolved for arbitrary sum-free subsets of the reals. The [reflection and dilation analysis](erdos949/reflection-and-dilation-obstruction.md), with [independent review](erdos949/INDEPENDENT_REVIEW.md), proves two sufficient large-fiber criteria. A construction from the Galvin–Shelah coloring theorem defeats every rational dilation of a prescribed continuum-sized basis, while an explicit translated basis solves that constructed instance. It is a method obstruction, not a counterexample to the paid target.
 
@@ -85,6 +93,10 @@ The [current Conjectures.io terms](https://conjectures.io/submission-terms) excl
 The [fresh sponsor and status audit](eligibility/fresh-target-status-audit.md) records the closed Scott prizes, the earlier full-target claim for the additive-square/Lipschitz-graph problem, and five already accepted platform targets. Published claims and platform decisions are reported with their verification limits; none is counted as a new solution here.
 
 The [checkpoint 19 provenance record](checkpoint19-provenance.json) maps the reviewed source hashes to the published copies. Changes are Markdown math/link normalization, explicit prose spacing, the historical completion-count correction, and the kernel script's output filename. This checkpoint adds no full-target completion.
+
+The [Gaussian aliquot-cycle audit](eligibility/gaussian-aliquot-excluded.md) found the prior exact period-one example already recorded in campaign 223, under the sponsor's actual divisor convention. The older public $50 offer therefore does not supply a new first-cycle target. The separate Spira divisor sum and a newly invented period-at-least-two variant are not substituted for the sponsor statement.
+
+The [checkpoint 20 provenance record](checkpoint20-provenance.json) pins the reviewed sources and normalized published copies. The completion count remains one proposed threshold solution. The added symbolic, graph, density and separator results are partial deductions and method obstructions.
 
 ## Verification scope
 
