@@ -221,3 +221,7 @@ The [paired-core obstruction](sign-matrices/c36_paired_row_divisibility.md) prov
 ## Gyires completion checkpoint
 
 The [substochastic-core transfer](inequalities/gyires_substochastic_transfer.md) proves that the doubly stochastic completions are exactly closed under multiplication, with an explicit rank-one correction in the core. The normalized permanent limit is uniform even at saturated margins. It gives the full four-term counterexample criterion for Gyires and a symmetric product criterion; no violating core has been obtained. The [independent review](inequalities/gyires_transfer_review.md) checks both the endpoint limit and the distinction from the stronger Gram inequality. Exact composition, permanent-counting, and symmetry checks pass. An additive shortcut is false for an explicit cycle family, which already satisfies Gyires by prior work. No full resolution is claimed.
+
+## Integrality checkpoint
+
+The [C24 audit](combinatorial/minc_integrality_audit.md) checks the integer domain, distinguishes asymptotic matching bounds from exact finite-order integrality, and derives connectedness of every minimizer for line sum at least two. Its weighted switch identity gives necessary cofactor inequalities, checked independently in [the review](combinatorial/minc_integrality_review.md) and by 375 exact identity evaluations. Those inequalities do not exclude repeated entries. The dense counterexample route still needs a growing defect; no such family has been found. This checkpoint adds no full conjecture resolution.
