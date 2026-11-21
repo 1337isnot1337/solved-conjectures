@@ -8,6 +8,8 @@ Only full open entries on [Yair Lavi’s Minc list](https://yair-lavi.com/mincs-
 
 **Completed unqualified entries: 0.** One complete candidate theorem now gives a general FPRAS for the approximation formulation of Problem 18. Its exact scope, proof and priority audit are recorded below. A separate complete proposed proof now resolves the named Pula–Song–Wanless subsidiary conjecture, with a repaired reduction and independent uniqueness proof; it does not count as a full solution of Problems 14 or 15. A further complete proposed proof now resolves Malek's named subpermanent endpoint conjecture in the site's linked survey; its stricter source-chain eligibility limit is stated below. No exact polynomial-time Perron computation is claimed.
 
+[Current proof gaps and continuation state](NEXT.md) give a compact reading order for the latest work.
+
 ## Assignments
 
 | Entry | Name | Worker |
@@ -163,3 +165,12 @@ The [multinomial reformulation](sign-matrices/gyires_multinomial_reduction.md) i
 For the original weak Gyires inequality, the [symmetrized-row-polynomial note](inequalities/gyires_symmetrized_polynomial.md) gives an exact central-coefficient/Fischer-norm equivalence. It then supplies an explicit doubly stochastic witness showing that the row polynomial plus the column polynomial is neither stable nor Lorentzian; the obstruction persists under a sufficiently small positive uniform perturbation. The witness satisfies Gyires strictly. The [exact checker](inequalities/gyires_symmetrized_polynomial.py) passed, and the inequalities worker independently checked the obstruction.
 
 These files preserve the remaining proof obligations and excluded methods. They add no full conjecture resolution.
+
+
+## Border similarity and recurrence obstruction
+
+The [Brualdi border and similarity reduction](sign-matrices/brualdi_similarity_reduction.md) retains the full free-row and free-column stationarity equations. It derives a necessary positive semidefinite matrix inequality from feasible diagonal similarity and proves `0<a_nn<1/2` at every global minimizer. The extra-zero DAG has not been eliminated; this is not a cohesiveness proof.
+
+The [constant-recurrence obstruction for Wang's problem](sign-matrices/cfinite_obstruction.md) proves that finitely many all-order sign-matrix families with C-finite permanent and determinant sequences cannot cover all sufficiently large non-Mersenne orders. The proof uses the classical Mersenne valuation and a long-zero-run argument. It neither establishes the expected classification nor rules out binary-dependent constructions.
+
+Both notes have been checked as partial results. No completed entry is added. A compact [current research state](NEXT.md) records the exact outstanding proof obligations and the scope of the three complete proposed results.
