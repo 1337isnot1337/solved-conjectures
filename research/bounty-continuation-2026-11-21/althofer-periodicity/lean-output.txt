@@ -1,0 +1,2 @@
+'AlthoeferPeriodicObstruction.minusOne_family_rule' depends on axioms: [propext, Quot.sound]
+'AlthoeferPeriodicObstruction.no_eventually_constant_minusOne_class' depends on axioms: [propext, Quot.sound]

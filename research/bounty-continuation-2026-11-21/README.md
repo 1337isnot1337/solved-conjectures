@@ -19,12 +19,14 @@ There is no complete bounty solution, unclaimed award-ready formalization, accep
 
 - [Erdős 389](erdos389/README.md), coordinated in [issue #232](https://github.com/1337isnot1337/solved-conjectures/issues/232): two independent derivations reduce the remaining prime obstructions to exact cofactor carry inequalities. A congruence handles all small primes. An explicit family shows that subpolynomial smoothness and that congruence still do not imply the required carries. Both diagnostic scripts were replayed by the coordinator. The required all-starts existence construction remains missing.
 - [Sun's disjoint cosets](sun-cosets/README.md), coordinated with the pre-existing [issue #231](https://github.com/1337isnot1337/solved-conjectures/issues/231): exact subgroup and coset generation for `A5` and `A6` supported a counterexample search. No counterexample was found. Solver optimality or infeasibility reports are recorded as search evidence, not independent mathematical certificates. The finite search has stopped at its documented construction.
-- Erdős 617 continues in the existing [issue #45](https://github.com/1337isnot1337/solved-conjectures/issues/45), after reading the earlier affine-plane and clique-packing work. A proposed uniform one-colour extremal shortcut has a counterfamily; stronger constraints involving the other colours are under investigation.
-- The Althöfer game continues in [issue #224](https://github.com/1337isnot1337/solved-conjectures/issues/224), with symbolic strategy analysis beyond the earlier ray decomposition. A finite numerical window is not being substituted for the all-starts prize theorem.
+- [Erdős 617](erdos617/README.md) continues in the existing [issue #45](https://github.com/1337isnot1337/solved-conjectures/issues/45). The reviewed localized independence bound forces two disjoint full cliques in a sparse color. If the maximum packing has size two, there are at most five full cliques in total. This does not exclude all configurations. A source audit identified the independence-number-three argument and pentagon obstruction as prior work; those are recorded as reconstructions, not new results.
+- [The Althöfer game obstruction](althofer-periodicity/README.md), coordinated in [issue #224](https://github.com/1337isnot1337/solved-conjectures/issues/224), proves that a complete winning/losing classification cannot eventually depend only on a residue class modulo any fixed positive integer. The standalone Lean proof was compiled and its axiom list checked, then replayed by the coordinator. It assumes a valid total outcome function and does not establish that the actual game is determined. The all-starts prize remains open.
 
 The [six additional JSP source reviews](eligibility/jsp-six-candidate-review.md) identify earlier full-target endpoints, including corrections to misleading filenames and weaker finite claims. The complete imported proofs were not rebuilt. [Ten further records](eligibility/jsp-ten-follow-up.md) also have prior submissions; four matching source endpoints were inspected directly. No new award-ready formalization was obtained.
 
 The prior 326-header Conjectures.io screen, JSP screening, and existing Shallit, Sun, Althöfer, Marcus and clique-transversal investigations have been read. They are not new discoveries of this continuation. New targets or extensions are announced in the existing issue threads before publication.
+
+A [selected prize-ledger recheck](eligibility/ledger-recheck.md) excluded already resolved Shallit complexity questions and Kimberling offers that now pay by donation. The public index is not sufficient evidence of a live direct-pay opportunity.
 
 ## Eligibility correction
 
@@ -34,6 +36,6 @@ The [current Conjectures.io terms](https://conjectures.io/submission-terms) excl
 
 ## Verification scope
 
-Each mathematical note states its hypotheses and remaining gap. The integer scripts are diagnostics and independently check small instances of the formulas; they do not establish the unresolved infinite assertions. No Lean proof is claimed for these notes. Repository result counts and verification badges are unchanged.
+Each mathematical note states its hypotheses and remaining gap. The integer scripts are diagnostics and independently check small instances of the formulas; they do not establish the unresolved infinite assertions. The sole standalone Lean artifact here proves the restricted Althöfer classification obstruction, with only `propext` and `Quot.sound` in both theorem dependency lists. No complete bounty target is Lean-verified by this continuation. Repository result counts, shared-project verification status, and badges are unchanged.
 
 All new published files in this continuation are under this directory. Main updates use the current remote head and a matching-head guard so concurrent work is preserved.
