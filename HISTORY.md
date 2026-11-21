@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak rho-one endpoint
+
+Proved the three-arm choice and connected-partition endpoint for the exceptional-piece rho-one case from the stated residue conditions and fifth-test input. Strict compilation, a 333-theorem axiom audit and isolated kernel replay passed; rho-two, the smallest-count endpoint, full AVD reductions and the full gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak wrapped endpoint
 
 Proved the wrapped-residue exceptional-piece endpoint through an actual connected partition under the required chosen-arm bounds. Strict compilation, a 289-theorem axiom audit and isolated kernel replay passed; chosen-arm existence in the remaining cases, full AVD reductions and the full gate remain.

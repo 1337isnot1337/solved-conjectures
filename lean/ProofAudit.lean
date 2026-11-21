@@ -9,6 +9,9 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Hornak.choose_wrapped_arm,
+    `Hornak.prior_carry_from_test5,
+    `Hornak.extra_rho_one_from_test5,
     `Hornak.wrapped_sum_relations,
     `Hornak.extra_wrapped_packing,
     `Hornak.extra_wrapped_partition,
