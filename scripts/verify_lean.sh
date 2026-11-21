@@ -148,6 +148,9 @@ modules=(
   Conjectures.JohnsonPfaffianCoefficients
   Conjectures.JohnsonPfaffianPositive
   Conjectures.JohnsonPfaffianPrefix
+  Conjectures.JohnsonPfaffianExpansion
+  Conjectures.JohnsonPfaffianEndpoint
+  Conjectures.JohnsonPfaffianOuter
   Conjectures.SonntagTeichert
 
   Conjectures.BariczPogany

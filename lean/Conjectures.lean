@@ -64,6 +64,9 @@ import Conjectures.JohnsonPfaffianRestriction
 import Conjectures.JohnsonPfaffianCoefficients
 import Conjectures.JohnsonPfaffianPositive
 import Conjectures.JohnsonPfaffianPrefix
+import Conjectures.JohnsonPfaffianExpansion
+import Conjectures.JohnsonPfaffianEndpoint
+import Conjectures.JohnsonPfaffianOuter
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
