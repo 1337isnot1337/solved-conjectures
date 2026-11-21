@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-21 — Horňák–Woźniak arm assignment extraction
+
+Proved that every connected star-graph partition assigns its noncentral classes to arms with total size at most each arm capacity. Strict compilation, a 746-theorem full-chain axiom audit and isolated kernel replay passed. The remaining Barth reduction, existence constructions and combined gate remain.
+
 ## 2026-11-21 — Horňák–Woźniak reduction foundations
 
 Proved graph tiling for arbitrary positive lists of pieces and two subset-sum balancing steps with a termination measure. These are supporting lemmas, not the full Barth AVD reduction. Strict compilation, a 741-theorem full-chain axiom audit and isolated kernel replay passed; the remaining reduction and combined gate are pending.

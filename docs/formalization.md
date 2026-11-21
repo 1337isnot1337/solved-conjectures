@@ -15,6 +15,10 @@ Those receipts did not by themselves discharge the geometric assembly or the
 lower-speed classification inputs. The later checkpoints below record the
 accepted scope, including the conditional critical-seven assembly.
 
+## Horňák–Woźniak arm assignment extraction, 21 November 2026
+
+Lean extracts a capacity-respecting arm assignment for the noncentral classes of any connected star-graph partition. This supports the Barth reduction but does not yet prove it. Strict compilation, a 746-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.
+
 ## Horňák–Woźniak reduction foundations, 21 November 2026
 
 Lean constructs connected graph partitions from arbitrary positive lists fitting the arms, and proves two subset-sum balancing steps with a termination measure. The full Barth AVD reduction remains to be proved. Strict compilation, a 741-theorem full-chain axiom audit and isolated kernel replay passed; the combined gate is pending.

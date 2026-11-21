@@ -9,6 +9,9 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Hornak.partition_hosts,
+    `Hornak.hosted_classes_fit,
+    `Hornak.partition_induces_arm_packing,
     `Hornak.middle_window_balance_transfer,
     `Hornak.middle_window_largest_transfer,
     `Hornak.balance_parts_measure,
