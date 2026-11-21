@@ -41,3 +41,5 @@ If $S\ne X_*$, the limiting objective has a nonzero feasible first derivative at
 Prior work gives the averaging principle, stationary-barycenter test, and asymptotic permanent formula. Our searches covered clone and Kronecker faces, minimum permanents on cyclic block faces, spanning-tree maximization, and perfect matching scaling. Historical priority for the all-base uniqueness and classification implications has not been independently established. Individual small clone factors and unrestricted supports in the two catalogue problems remain open.
 
 The [rational checks](verify_cloned_faces.py) enumerate weighted spanning trees, compare the flow-table formula with direct clone permanents and minors, and compare localized Hessians with their determinant limit.
+
+For the Pula–Song–Wanless family the [explicit clone classification](../pula-song-wanless/cloned_faces.md) settles every fixed pair, including when the first-order tree test vanishes at a boundary.
