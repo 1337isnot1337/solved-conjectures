@@ -1,5 +1,7 @@
 # Chollet’s conjecture for graph Laplacians
 
+Yongxian Zhang proved this result, including every principal submatrix, on 8 October 2026. The argument below gives an independent proof using a nonbacktracking walk. This entry is excluded from new results. [Zhang’s dated proof](https://github.com/mxym/math/blob/1336b63d5c6ffc49794c547bb8b3f4b7fa189139/notes/laplacian-chollet-general/source/proof.txt)
+
 For the ordinary Laplacian $L$ of every finite undirected simple graph and every principal submatrix $B=L[S,S]$,
 $$
  \operatorname{per}(B\circ B)\le\operatorname{per}B\prod_{i\in S}B_{ii}.               \tag{1}
@@ -64,6 +66,8 @@ Pant and Singh's Theorem 4.3 proves that a one-point sum of hereditarily strong 
 
 ## Scope and prior work
 
-The published inputs are Lieb's permanent inequality and the hereditary one-point-sum theorem. Pant and Singh's paper proves the strong comparison for graphs assembled from bipartite blocks and cycles, and the ordinary comparison also for complete blocks. It asks the unrestricted simple-graph question explicitly. Searches for the all-graph conclusion, Laplacian Hadamard squares and nonbacktracking bounds found that paper and graph-specific extremal results. Priority remains subject to independent literature review. The present proof uses unit edge weights; arbitrary weighted graphs are a separate question. [Lieb](https://www.jstor.org/stable/24901474), [Pant and Singh, concluding question](https://arxiv.org/html/2604.24192v2#S6)
+The published inputs are Lieb's permanent inequality and the hereditary one-point-sum theorem. Pant and Singh's paper proves the strong comparison for graphs assembled from bipartite blocks and cycles, and the ordinary comparison also for complete blocks. It asks the unrestricted simple-graph question explicitly. Zhang subsequently answered both questions and proved the principal-submatrix form in (1). His proof uses Edmonds’ matching-polytope theorem. The catalogue records his preprint under Conjecture 30. [Zhang’s archive](https://doi.org/10.5281/zenodo.23248359), [Minc catalogue](https://yair-lavi.com/mincs-list/conjecture-30/index.html)
+
+The present proof uses unit edge weights; arbitrary weighted graphs are a separate question. [Lieb](https://www.jstor.org/stable/24901474), [Pant and Singh, concluding question](https://arxiv.org/html/2604.24192v2#S6)
 
 The [exact replay](verify_laplacians.py) checks the assignment of each simple cycle to its oriented edges using rational first-return probabilities and the rational lower estimate in (4). It also compares the permanents directly for the test graphs and their one-vertex deletions.
