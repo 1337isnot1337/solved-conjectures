@@ -1,0 +1,11 @@
+a=100 tested=316480 hits=0
+a=200 tested=1400480 hits=0
+a=300 tested=3341600 hits=2
+a=400 tested=6172224 hits=2
+a=500 tested=9939808 hits=2
+a=600 tested=14670016 hits=2
+a=700 tested=20362688 hits=2
+a=800 tested=27054752 hits=2
+a=900 tested=34762528 hits=2
+a=1000 tested=43468096 hits=2
+completed bound=1000 kmax=15 tested=43468096 hits=2

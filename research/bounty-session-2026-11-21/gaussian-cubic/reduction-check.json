@@ -1,0 +1,53 @@
+{
+  "symbolic_family_identities": true,
+  "elliptic_map_identity": true,
+  "genus3_quotient_identities": true,
+  "small_overlap_s_bound": 100,
+  "small_overlap_hits": [
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "full_search_candidates": [
+    {
+      "s": 1,
+      "t": "1",
+      "known": "Helenius-Beal",
+      "identity": true,
+      "reciprocal_sum": "11/12",
+      "hyperbolic": true,
+      "nonunit": true,
+      "pairwise_gcd_norms": [
+        1,
+        1,
+        1
+      ],
+      "norms": [
+        5,
+        5,
+        2
+      ]
+    },
+    {
+      "s": 1,
+      "t": "1",
+      "known": "Helenius-Beal",
+      "identity": true,
+      "reciprocal_sum": "11/12",
+      "hyperbolic": true,
+      "nonunit": true,
+      "pairwise_gcd_norms": [
+        1,
+        1,
+        1
+      ],
+      "norms": [
+        5,
+        5,
+        2
+      ]
+    }
+  ]
+}

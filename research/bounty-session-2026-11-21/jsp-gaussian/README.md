@@ -4,6 +4,8 @@
 
 No new solution, accepted award, or received payment is established by this work. All Gaussian identities found so far match earlier examples. Finite search bounds are recorded as research provenance; they do not settle a general conjecture and are not counted as completed bounties.
 
+Final checkpoint: every process in this directory has completed. `final_verification.jsonl` independently checks all 31 emitted rows from the nine searches; they reduce to 12 previously known power triples. `final_checkpoint.json` records the exact counts and hashes. There are **zero new solutions, zero accepted awards, and zero received payments**.
+
 ## Sponsor and scope
 
 [Ed Pegg Jr.'s original reward page](https://mathpuzzle.com/Gaussians.html), inspected on 2026-11-21, still publicly offers $10 for each new example or new class of Gaussian Fermat–Catalan numbers. The bases must be pairwise relatively prime. We use the standard condition
@@ -86,6 +88,13 @@ python3 verify_candidates.py gaussian_candidates.jsonl gaussian_r7_extended.json
 ```
 
 The root agent owns the disjoint `(2,4,r)` search and its structural factor-allocation extension; see the separate session files.
+
+Two later structural searches also completed:
+
+- [Fixed-y factor reduction](even-right-factor-reduction.md): for `x²+y³=z^(2k)`, Gaussian y coordinate bound 1,500 and `4<=k<=15`, enumerate all admissible factor pairs of `y³` without x or z bounds. The exact kth-root implementation processed 102,802,368 factor pairs and produced two sign variants of the known Oleg567 identity. The ramified-prime argument, root enumeration and finite-range scope are documented separately.
+- [Normalized Mordell curves](normalized-mordell-search.md): search the rational group law on 1,494 curves `Y²=X³±8b^t`, for odd `b<=499` and `t=1,3,5`. Up to eight bounded integral seeds per curve and coefficients up to 20 gave 672,647 inspected combinations. Three previous identities were recovered. There is no claim that the seeds form full Mordell–Weil bases or that the rational-point search is complete.
+
+The main checkpoint was communicated in [issue 223](https://github.com/1337isnot1337/solved-conjectures/issues/223#issuecomment-7068239869), followed by the [structural-search update](https://github.com/1337isnot1337/solved-conjectures/issues/223#issuecomment-7068351507). A [coordination inquiry](https://github.com/1337isnot1337/solved-conjectures/issues/234#issuecomment-7068271199) asks the reciprocal-sum team for its existing SageMath invocation; this directory's completed calculations do not depend on that reply.
 
 ## Justin Sun Prize screening receipts
 

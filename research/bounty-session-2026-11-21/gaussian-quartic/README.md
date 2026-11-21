@@ -45,6 +45,41 @@ The three distinct old identities, after units and rearrangement, are
 
 The sponsor page prints the second identity with `11^3`; exact arithmetic confirms that exponent is a typographical error. Correcting it is not a new example.
 
+## Even powers and unit right-hand sides
+
+`factor_even_search.cpp` extends the same allocation method to both signs in
+
+```math
+x^2\mathbin{\pm}y^{2k}=z^r,\qquad 2\le k\le7,
+\qquad \frac12+\frac1{2k}+\frac1r<1.
+```
+
+The completed 31 runs inspected 88,013,856 factor assignments and emitted 48 raw rows. All 48 reduce to the same three published power triples listed above. [The run summary](even-run-summary.json) records every exponent, coordinate bound, assignment count, and raw-hit count. The largest searches were `r=5` with right-hand coordinate bound 1000 and `r=4` with bound 500. The small-base searches extend through `r=113`; this is a finite witness search, not a theorem about arbitrary exponents.
+
+For `k=2`, the root test uses the exact Gaussian-square formulas. For higher `k`, it uses exact congruence and norm filters, followed by floating-point angular proposals in a small coordinate neighbourhood and exact multiplication before accepting a root. Every positive candidate is independently verified, but no formal coverage certificate is supplied for that angular proposal step. The absence of an emitted candidate must not be treated as certified nonexistence throughout those boxes.
+
+`unit_search.cpp` also checks `x^2+y^q=epsilon`, where `epsilon` is a Gaussian unit, the canonical coordinates of `y` are at most 5000, and
+
+```text
+q = 3,4,5,7,9,11,13,17,19,23,29,31,37,41,43,47,53,59.
+```
+
+It includes all unit associates and imposes the exact bound `Norm(y)^q <= 10^36` to keep arithmetic within its declared range. It inspected 500,837,168 right-hand-side candidates and emitted ten rows. These consist of the ordinary integer identity and the three Gaussian Catalan examples already printed on the sponsor's page:
+
+```math
+(78+78i)^2+(23i)^3=i,
+```
+
+```math
+1+(1-i)^5=(1+2i)^2,
+```
+
+```math
+i+(11+11i)^2=(3i)^5.
+```
+
+The output represents a unit as its 101st power, since `101` is one modulo four. Changing that exponent does not create a new power triple or a new paid example. The verifier's explicit `--allow-unit` mode permits exactly two nonunit bases and still checks the identity, strict reciprocal inequality, and all gcds. All ten rows are classified as prior examples in [unit-verification.jsonl](unit-verification.jsonl).
+
 ## Verification and limits
 
 All emitted candidates were rechecked with Python arbitrary-precision arithmetic in `verify.py`. It checks the full complex identity, the strict reciprocal-exponent inequality, nonunit bases, and Gaussian gcds. It canonicalizes the three signed power values under a common unit, conjugation, and permutation using the source-backed exclusion table in `../jsp-gaussian/verify_candidates.py`. Every candidate matched a prior power triple.
@@ -62,4 +97,10 @@ g++ -O3 -std=c++17 factor_search.cpp -o /tmp/bounty-gaussian-factor
 /tmp/bounty-gaussian-factor 200 7
 /tmp/bounty-gaussian-factor 60 9
 python3 verify.py candidates.jsonl factor-r5.jsonl factor-r5-2000.jsonl factor-r7.jsonl factor-r9.jsonl
+g++ -O3 -std=c++17 factor_even_search.cpp -o /tmp/bounty-gaussian-even
+/tmp/bounty-gaussian-even 1000 5
+g++ -O3 -std=c++17 unit_search.cpp -o /tmp/bounty-gaussian-units
+/tmp/bounty-gaussian-units 5000
+python3 verify.py even-r5-300.jsonl even-r5-1000.jsonl even-r4-500.jsonl even-r7-200.jsonl even-r9-60.jsonl even-r11-20.jsonl
+python3 verify.py --allow-unit unit-candidates.jsonl
 ```

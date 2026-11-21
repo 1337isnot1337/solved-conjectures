@@ -1,0 +1,222 @@
+{
+  "scope": "Both signs in x^2 \u00b1 y^(2k)=z^r; 2<=k<=7 with strict reciprocal exponent inequality; verified positive candidates only, no formal certificate of negative coverage for the angular kth-root step",
+  "runs": [
+    {
+      "r": 101,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 103,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 107,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 109,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 11,
+      "right_hand_coordinate_bound": 20,
+      "factor_assignments": 15072,
+      "raw_hits": 0,
+      "data_file": "even-r11-20.jsonl"
+    },
+    {
+      "r": 113,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 13,
+      "right_hand_coordinate_bound": 17,
+      "factor_assignments": 10784,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 17,
+      "right_hand_coordinate_bound": 8,
+      "factor_assignments": 2144,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 19,
+      "right_hand_coordinate_bound": 6,
+      "factor_assignments": 1280,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 23,
+      "right_hand_coordinate_bound": 4,
+      "factor_assignments": 512,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 29,
+      "right_hand_coordinate_bound": 2,
+      "factor_assignments": 128,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 31,
+      "right_hand_coordinate_bound": 2,
+      "factor_assignments": 128,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 37,
+      "right_hand_coordinate_bound": 2,
+      "factor_assignments": 128,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 4,
+      "right_hand_coordinate_bound": 500,
+      "factor_assignments": 15013184,
+      "raw_hits": 0,
+      "data_file": "even-r4-500.jsonl"
+    },
+    {
+      "r": 41,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 43,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 47,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 5,
+      "right_hand_coordinate_bound": 1000,
+      "factor_assignments": 65651232,
+      "raw_hits": 16,
+      "data_file": "even-r5-1000.jsonl"
+    },
+    {
+      "r": 5,
+      "right_hand_coordinate_bound": 300,
+      "factor_assignments": 5045056,
+      "raw_hits": 16,
+      "data_file": "even-r5-300.jsonl"
+    },
+    {
+      "r": 53,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 59,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 61,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 67,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 7,
+      "right_hand_coordinate_bound": 200,
+      "factor_assignments": 2113984,
+      "raw_hits": 0,
+      "data_file": "even-r7-200.jsonl"
+    },
+    {
+      "r": 71,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 73,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 79,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 83,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 89,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    },
+    {
+      "r": 9,
+      "right_hand_coordinate_bound": 60,
+      "factor_assignments": 159648,
+      "raw_hits": 16,
+      "data_file": "even-r9-60.jsonl"
+    },
+    {
+      "r": 97,
+      "right_hand_coordinate_bound": 1,
+      "factor_assignments": 32,
+      "raw_hits": 0,
+      "raw_candidate_output": "empty; count and parameters retained here"
+    }
+  ]
+}

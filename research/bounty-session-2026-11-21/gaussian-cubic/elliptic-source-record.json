@@ -1,0 +1,18 @@
+{
+  "checked_date": "2026-11-21",
+  "source_url": "https://github.com/JohnCremona/ecdata/blob/master/allcurves/allcurves.00000-09999",
+  "blob_url": "https://api.github.com/repos/JohnCremona/ecdata/git/blobs/baab5801d7f81e1d5c44f5eb5acf4f1e100bc90b",
+  "git_blob_sha": "baab5801d7f81e1d5c44f5eb5acf4f1e100bc90b",
+  "source_bytes": 2146401,
+  "columns": "conductor class number a-invariants rank torsion_order",
+  "selected_rows": [
+    "576 f 1 [0,0,0,-3,0] 0 2",
+    "576 f 2 [0,0,0,12,0] 0 2",
+    "576 h 2 [0,0,0,-36,0] 1 4",
+    "576 h 4 [0,0,0,-396,3024] 1 2",
+    "2304 k 1 [0,0,0,-30,56] 1 2"
+  ],
+  "lmfdb_rank_zero_url": "https://www.lmfdb.org/EllipticCurve/Q/576.i1/",
+  "scope": "Existing primary data used to exclude two conjugate-search families and reject rank-zero shortcuts for the remaining family. No new rank computation or formal verification of the database classification was done."
+}
+

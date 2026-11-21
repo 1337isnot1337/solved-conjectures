@@ -45,4 +45,5 @@ int main(int argc,char**argv){
   }
   std::cerr<<"done r="<<r<<"\n";
  }
+ return 0;
 }

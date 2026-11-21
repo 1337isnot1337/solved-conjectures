@@ -1,0 +1,47 @@
+{
+  "checked_date": "2026-11-21",
+  "status": "excluded_previously_satisfied_construction_target",
+  "new_solutions": 0,
+  "accepted_awards": 0,
+  "received_payments": 0,
+  "scope": {
+    "region": "square",
+    "tiles": "similar triangles with angles 45, 60, 75 degrees; differing sizes permitted",
+    "archived_offer_usd": "100 - N",
+    "later_sponsor_offer_usd": "200 - N",
+    "new_construction_search_started": false,
+    "minimum_proved_here": false,
+    "current_reward_for_minimality_proof_verified": false
+  },
+  "sources": [
+    {
+      "url": "https://mathpuzzle.com/27Nov2011.html",
+      "author": "Ed Pegg",
+      "section_date": "2011-04-20",
+      "evidence": "Printed 100-N dollar offer for a proper new square tiling by the specified triangles; archive filename is later than the item section."
+    },
+    {
+      "url": "https://blog.wolfram.com/2013/03/28/from-close-to-perfect-a-triangle-problem/",
+      "author": "Ed Pegg",
+      "date": "2013-03-28",
+      "evidence": "Sponsor gives exact algebraic verification of Baxter's 50-triangle solution, recalls the 200-N offer and acknowledges owing $150.",
+      "payment_disbursement_verified": false
+    },
+    {
+      "url": "https://math.stackexchange.com/questions/44684/what-is-the-smallest-number-of-45-circ-60-circ-75-circ-triangles-that-a-squ",
+      "evidence": "Primary constructor answers: Baxter50, Pichler46, Sirgedas32; exact coordinates provided for later constructions.",
+      "baxter_answer_date": "2013-01-07",
+      "baxter_answer_edited_date": "2013-02-16",
+      "pichler_answer_date": "2014-07-09",
+      "sirgedas_original_answer_date": "2021-11-17",
+      "sirgedas_current_answer_edited_date": "2025-03-05"
+    },
+    {
+      "url": "https://community.wolfram.com/t/the-tom-sirgedas-45-60-75-square-dissection/25207",
+      "original_url": "https://community.wolfram.com/groups/-/m/t/3408096",
+      "author": "Ed Pegg",
+      "date": "2025-03-04",
+      "evidence": "Sponsor's published rendering and downloadable notebook for Sirgedas's dissection."
+    }
+  ]
+}

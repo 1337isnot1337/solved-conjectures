@@ -63,4 +63,5 @@ int main(int argc,char**argv){
   }
  }
  std::cerr<<"tested="<<tested<<" raw_hits="<<found<<" ymax="<<ymax<<" zmax="<<zmax<<"\n";
+ return 0;
 }

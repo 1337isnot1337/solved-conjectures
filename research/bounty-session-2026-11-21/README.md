@@ -4,13 +4,15 @@ Coordination: [campaign issue 223](https://github.com/1337isnot1337/solved-conje
 
 This continuation is restricted to offers that pay the solver. Lean verification is permitted. Complete mathematical solutions, completed formalizations, submissions, accepted awards, and payments are separate statuses. At this checkpoint all five counts are zero. A partial lemma, a finite positive screen, an old public proof, or a donation in the solver's name is not a completed paid problem.
 
-## Active work
+## Research checkpoints
 
 | Lane | Exact target or task | Status |
 | --- | --- | --- |
 | Erdős 295 | The minimum number of distinct denominators at least N representing 1 has excess over (e−1)N tending to infinity. | [Source audit and failed-route analysis](erdos295/README.md); exponential-tail argument already appears in September prior work. Pointwise lower bound missing. |
 | Erdős 461 | A uniform positive linear lower bound for the number of distinct t-smooth parts in an interval of length t. | [Auxiliary residue reduction](erdos461/README.md) and prime-power profile periodicity checked in Lean; full linear bound missing. |
-| Gaussian-integer offers | Find genuinely new primitive Fermat–Catalan examples satisfying the posted reward conditions. | [Source and candidate audit](jsp-gaussian/README.md), [quartic factor-allocation search](gaussian-quartic/README.md); every emitted identity matches prior examples. |
+| Erdős 686, ratio 25 | Two disjoint intervals of the same length whose products have ratio 25. | [Exact continued-fraction search](erdos686/README.md) covers all admissible scalings for the tested reduced fractions at 57 lengths, with no witness. Length three was already excluded in March; the all-length problem remains open. |
+| Erdős 677 | Two disjoint intervals of the same length with equal least common multiples. | [Structural feasibility assessment](erdos677/README.md) shows why the proposed divisor-run search would mostly duplicate existing coverage or require impractical enumeration. No new exhaustive scan or solution. |
+| Gaussian-integer offers | Find genuinely new primitive Fermat–Catalan examples satisfying the posted reward conditions. | [Source and candidate audit](jsp-gaussian/README.md), [quartic and even-power searches](gaussian-quartic/README.md), and [cubic reductions](gaussian-cubic/README.md); every emitted identity matches prior examples. |
 
 Existing reservations in the repository are preserved. Earlier broad Conjectures.io, JSP, and ZZZAgentBoard scans are reused rather than counted again. The main mathematical questions remain unresolved.
 
@@ -21,6 +23,11 @@ Existing reservations in the repository are preserved. Earlier broad Conjectures
 - [Erdős 295](erdos295/README.md). Records the September prior manuscript, its exact source blob, the arithmetic obstruction for one or two tail denominators, and the attributed `O(log N)` upper-bound consequence of the recent short Egyptian-fraction theorem. No claimed new theorem.
 - [Erdős 461 entropy obstruction](erdos461/entropy-obstruction.md). Gives an exact finite averaging inequality showing that a proposed uniform `log(t)-O(1)` Shannon-entropy bound is false. This diagnostic is not the conjecture's required range-size bound.
 - [Erdős 461 Lean checkpoint](erdos461/lean-check.json). The coordinator independently reran compilation. All four printed theorem axiom closures contain only `propext`, `Classical.choice`, and `Quot.sound`. The proof covers prime-power profiles, an admissible factorial modulus, and periodicity. It does not formalize the platform's full smooth-component target or prove the uniform lower bound. The shared full-project verification workflow was not run for this isolated research module.
+- [Erdős 686 independent review](erdos686/review.md). Reviews the exact continued-fraction coverage, common-factor search, parity constraints, and known-witness controls. The 57 tested lengths include the previously excluded case `k=3`; none of the finite negative searches is an all-length proof.
+- [Gaussian normalized Mordell-curve search](jsp-gaussian/normalized-mordell-search.md). Searches rational group combinations on 1,494 curves and recovers three known identities. The bounded seeds are not asserted to generate the full Mordell–Weil groups.
+- [Gaussian conjugate-cubic analysis](gaussian-cubic/README.md). Two structural branches reduce to a known rank-zero elliptic curve. The remaining branch has rank-one quotients, and its finite Eisenstein-integer search recovers only the known example. Neither a new example nor a full classification was obtained.
+- [Triangle-tiling bounty exclusion](tiling-456075/README.md). The sponsor recognized an exact 50-triangle solution in 2013; a later 32-triangle construction is public. The old construction offer is not an unresolved target.
+- [Additional source checks](additional-source-checks.md). Records the unresolved diagram-access limit for Big Pizza, published Gaussian Catalan identities, and relevant prior nonexistence results. No unavailable diagram was reconstructed from guesses.
 
 The ZZZ board pays per problem number, not per Lean declaration. Lemma Park points have no cash value. DeMath's reward amount requires a separate award decision. See the linked notes for primary sources and the limits of these findings.
 

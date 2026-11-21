@@ -1,0 +1,121 @@
+[
+  {
+    "ratio": 9,
+    "length": 3,
+    "expected_m": 25,
+    "expected_n": 11,
+    "recovered": true,
+    "all_hits": [
+      {
+        "N": 9,
+        "k": 3,
+        "m": "25",
+        "n": "11",
+        "g": "1"
+      }
+    ],
+    "coverage_bound_passes": true
+  },
+  {
+    "ratio": 16,
+    "length": 3,
+    "expected_m": 13,
+    "expected_n": 4,
+    "recovered": true,
+    "all_hits": [
+      {
+        "N": 16,
+        "k": 3,
+        "m": "13",
+        "n": "4",
+        "g": "3"
+      }
+    ],
+    "coverage_bound_passes": true
+  },
+  {
+    "ratio": 70,
+    "length": 4,
+    "expected_m": 4,
+    "expected_n": 0,
+    "recovered": true,
+    "all_hits": [
+      {
+        "N": 70,
+        "k": 4,
+        "m": "4",
+        "n": "0",
+        "g": "1"
+      }
+    ],
+    "coverage_bound_passes": true
+  },
+  {
+    "ratio": 252,
+    "length": 5,
+    "expected_m": 5,
+    "expected_n": 0,
+    "recovered": true,
+    "all_hits": [
+      {
+        "N": 252,
+        "k": 5,
+        "m": "5",
+        "n": "0",
+        "g": "1"
+      }
+    ],
+    "coverage_bound_passes": true
+  },
+  {
+    "ratio": 924,
+    "length": 6,
+    "expected_m": 6,
+    "expected_n": 0,
+    "recovered": true,
+    "all_hits": [
+      {
+        "N": 924,
+        "k": 6,
+        "m": "6",
+        "n": "0",
+        "g": "1"
+      }
+    ],
+    "coverage_bound_passes": true
+  },
+  {
+    "ratio": 3432,
+    "length": 7,
+    "expected_m": 7,
+    "expected_n": 0,
+    "recovered": true,
+    "all_hits": [
+      {
+        "N": 3432,
+        "k": 7,
+        "m": "7",
+        "n": "0",
+        "g": "1"
+      }
+    ],
+    "coverage_bound_passes": true
+  },
+  {
+    "ratio": 12870,
+    "length": 8,
+    "expected_m": 8,
+    "expected_n": 0,
+    "recovered": true,
+    "all_hits": [
+      {
+        "N": 12870,
+        "k": 8,
+        "m": "8",
+        "n": "0",
+        "g": "1"
+      }
+    ],
+    "coverage_bound_passes": true
+  }
+]
