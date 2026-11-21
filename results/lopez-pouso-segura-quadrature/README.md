@@ -26,3 +26,5 @@ The Legendre equation, weight formula, gamma-ratio asymptotics and prior general
 Status: complete proposed disproof, independently reviewed internally; unrefereed. No earlier explicit refutation was found in the documented search. A related inaccessible full text remains an explicit priority-audit limit.
 
 **Lean status:** none.
+
+The exact two-node disproof is checked in [`Conjectures.LopezPousoSegura`](../../lean/Conjectures/LopezPousoSegura.lean), including the roots, weights, cubic quadrature and both inequalities. Strict compilation and isolated kernel replay passed; the eventual-even-degree strengthening and combined repository gate remain pending.

@@ -1,3 +1,4 @@
+import Conjectures.LopezPousoSegura
 import Conjectures.BariczPogany
 import Conjectures.ZhangDeletion
 import Conjectures.SunZhao
