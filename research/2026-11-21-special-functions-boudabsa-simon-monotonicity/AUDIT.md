@@ -4,7 +4,7 @@ Date: 2026-11-21. Reviewer: graph/number-theory worker, independently of the pro
 
 **Mathematical verdict: pass.** The argument proves the entire stated range and strengthens the requested monotonicities to strict monotonicities away from zero. This audit does not certify historical priority; that is recorded separately by the proof author.
 
-**Material priority overlap found during this audit:** an earlier Principia manuscript gives the same full interior exponential-functional representation. The target comparison is an immediate coupling consequence of that representation. This audit must not be read as recommending promotion or a new-result count; see the final section.
+**EXCLUDED from the new-result count:** an earlier Principia manuscript gives the same full interior exponential-functional representation. The target comparison is an immediate coupling consequence of that representation. The coordinating priority decision is exclusion; the mathematically valid audit is retained as a research record.
 
 ## Exact statement and conventions
 
@@ -98,7 +98,7 @@ This is a proof for all $0<\alpha\le1$, all fixed $l\le1/\alpha$, and all $m>0$,
 
 ## Earlier full representation
 
-After completing the independent mathematical check, the proof author found the [Principia manuscript for MathDB 348998](https://github.com/PrincipiaMathOrg/math-solutions/blob/main/site-backup/mathdb-348998/mathdb-348998-solution.tex), dated 17 September 2026. The reviewer then fetched and read the complete manuscript independently; the inspected content blob is `e758dfe0dd9eff2adce5240336f9f85ee8da747f`.
+After completing the independent mathematical check, the proof author found the [Principia manuscript for MathDB 348998](https://github.com/PrincipiaMathOrg/math-solutions/blob/34b8b155d7db464ad7306f70b16d3af9cee34501/site-backup/mathdb-348998/mathdb-348998-solution.tex), dated 17 September 2026 and archived in commit `34b8b155d7db464ad7306f70b16d3af9cee34501` on 27 October 2026. The reviewer then fetched and read the complete manuscript independently; the inspected content blob is `e758dfe0dd9eff2adce5240336f9f85ee8da747f`.
 
 That manuscript concerns hyperbolic bounds, but its representation is not restricted to those bounds. It proves the entire moment-generating identity for all $b>0,d>0$ with exponent
 
@@ -110,4 +110,4 @@ using precisely the positive gamma-ratio kernel, independent killing at rate $\p
 
 Setting $r=m-l$ makes $b=1-\alpha l=c$ fixed as $m$ varies. The earlier process with scale $d$ has the law of $dS_t$ for one unscaled process whose Lévy measure depends only on $b,\alpha$. Thus its already proved representation directly gives the common coupling used here whenever $c>0$. The missing endpoint $c=0$ is already Proposition 1 of the primary paper. Its strict-positivity argument for all times is also the same as the one used above.
 
-The Principia manuscript does not separately state the unnormalized Remark 3 comparison. Its proposed Task 3 concerns normalized convex orders, which are a different question. Nevertheless, the exact representation overlap is sufficient to make a new-resolution claim unsafe under this project's strict priority requirement. This mathematical audit therefore remains valid, while the result should be treated conservatively as a consequence of earlier work unless the coordinating priority audit establishes a materially different basis.
+The Principia manuscript does not separately state the unnormalized Remark 3 comparison. Its proposed Task 3 concerns normalized convex orders, which are a different question. Nevertheless, the exact representation overlap is sufficient to exclude a new-resolution claim under this project's strict priority requirement. This mathematical audit remains valid; the result is recorded as a consequence of earlier work and contributes zero to the campaign count.
