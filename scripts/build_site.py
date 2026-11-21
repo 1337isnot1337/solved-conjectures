@@ -87,6 +87,7 @@ STATUS_LABEL_SLUGS = {
     "Erdős 607 line sizes": "erdos-607-line-sizes",
     "Growing rectangles": "rectangle-partition-asymptotics",
     "Distance graphs with three missing differences": "distance-graph-densities",
+    "Oravcová–Soták conjecture for five to eight distances": "oravcova-sotak",
     "Two-difference Motzkin theorem": "two-difference-motzkin",
     "Tight six speeds and critical planes": "tight-six-speeds",
     "Six-speed spectrum": "six-speed-spectrum",

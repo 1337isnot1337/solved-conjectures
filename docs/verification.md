@@ -80,6 +80,7 @@ python3 results/cut-arithmetic-periodicity/verify.py
 c++ -std=c++20 -O3 results/distance-graph-densities/verify.cpp -o /tmp/verify-distance-graphs
 /tmp/verify-distance-graphs
 python3 results/distance-graph-densities/counterexample.py
+python3 results/oravcova-sotak/verify.py
 python3 results/two-difference-motzkin/verify.py
 python3 results/symmetric-four-point-density/verify.py
 python3 results/nonmixed-gap-packing/verify.py
@@ -117,6 +118,10 @@ Run `python3 results/zhang-deletion-values/verify.py` with assertions enabled. T
 ## Baricz–Pogány coefficient positivity
 
 The existing result package's standard-library diagnostic is `python3 results/baricz-pogany-coefficients/verify.py`. It checks the formal-series identities and finite source fixtures described in its [landing page](../results/baricz-pogany-coefficients/). The general statement rests on the written proof; no formal verification is claimed.
+
+## Oravcová–Soták distance-graph classification
+
+Run `python3 results/oravcova-sotak/verify.py` with assertions enabled. The standard-library script checks the 65 spectrum-table sets and their exact `L(D)`, the 62 periodic colourings, the three exceptional sets, the 37 loop certificates for the four one-parameter families, the two-parameter family, and the small cases of the clique lemma. The classification is [proved relative to](../results/oravcova-sotak/PROOF.md) the repository's five- to eight-speed spectrum classifications. The optional SAT scan in `search/` is independent of those classifications and is not run by CI. No Lean verification is included.
 
 ## Lean proofs
 

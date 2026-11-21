@@ -12,6 +12,10 @@ Added a complete proposed proof of Malek's all-degree negative-transform subperm
 
 Replaced an unsupported fixed-width TeX spacing command by standard spacing in the two Sagan–Swanson proof copies. The displayed formula is unchanged. The unsupported command blocked the native MathML site build after catalogue registration was repaired.
 
+## 2026-11-20 — Oravcová–Soták distance-graph conjecture
+
+Added the classification of primitive distance sets of size five through eight with maximum chromatic number, relative to the repository's five-, six-, seven- and eight-speed spectrum classifications. The package contains a written proof, 62 periodic colourings, loop certificates for four one-parameter families, base loops for the two-parameter six-distance family, an independent standard-library verifier, and a separate SAT scan. The note is unrefereed and conditional on the spectrum classifications; no Lean verification was performed.
+
 ## 2026-11-20 — Repaired an omitted result registration
 
 Registered the existing `baricz-pogany-coefficients` package in the shared catalogue, root index and status map after its orphan landing page blocked the site build. The mathematical files and their stated scope were preserved. This is integration of previously published work from issue #112, not a new result of the Minc campaign.
