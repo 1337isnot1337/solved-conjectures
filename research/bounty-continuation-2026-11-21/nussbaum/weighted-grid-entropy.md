@@ -2,7 +2,7 @@
 
 **Theorem.** Suppose an $`n`$-dimensional Boolean cube has $`m`$ distinct incomparable faces in each cell of an $`a`$-by-$`b`$ array, with $`2\le a\le b`$. Two distinct faces intersect exactly when their cells share a row or a column, including when their cells coincide. If $`a\ge128`$, then $`abm\le 2^n`$. The same bound holds, for arbitrary $`a`$, if $`a\ge2\log_2(ab)`$ or $`a\binom n{\lfloor n/2\rfloor}\le2^n`$.
 
-These are ambient bounds. In particular any counterexample with this graph would have $`a\le127`$ and $`n<2\cdot127^2`$, regardless of the number of faces in each cell. The [unweighted local theorem](local-grid-and-one-star-orbit.md) already covers $`m=1`$. The [sponsor's US$100 conjecture](https://sites.math.rutgers.edu/~zeilberg/math640_10.html) also permits other graphs.
+The balanced-side criterion $`a\ge2\log_2(ab)`$ also gives at least one vertex per face inside the union itself. In particular any counterexample with this graph would have $`a\le127`$ and $`n<2\cdot127^2`$, regardless of the number of faces in each cell. The [unweighted local theorem](local-grid-and-one-star-orbit.md) already covers $`m=1`$. The [sponsor's US$100 conjecture](https://sites.math.rutgers.edu/~zeilberg/math640_10.html) also permits other graphs.
 
 ## Packing along a matching
 
@@ -35,6 +35,8 @@ Let $`D_{\max}`$ be the maximum distance of a pair of row anchors. Choose a coor
 ```
 
 If $`D_{\max}\le a`$, then $`d\ge L`$ and the packing bound finishes. In a counterexample the triangle inequality through any one column and the single-cell bound give $`D_{\max}<2\log_2(ab)`$. This proves the second stated criterion.
+
+The balanced-side argument is local. Write $`U`$ for the union of all the faces. The matching and single-cell bounds hold with $`|U|`$ as their left side. If $`|U|<abm`$, they give $`d<L`$ and $`d_{ij}<\log_2(ab)`$ for every cell. The same puncturing and triangle inequalities contradict these two conditions whenever $`a\ge2\log_2(ab)`$. This allows that criterion to be used separately on components with disjoint Boolean unions.
 
 ## Using the choices within each cell
 
@@ -83,3 +85,7 @@ For $`a\ge128`$ the last coefficient exceeds $`5/4`$. If $`L\ge4l`$, this contra
 ## The size of the remaining range
 
 The $`bm`$ faces containing any fixed row anchor have distinct free-coordinate sets forming an antichain. Sperner's theorem gives $`bm\le\binom n{\lfloor n/2\rfloor}`$, proving the third criterion. For $`n=2k`$, $`\binom{2k}{k}/4^k=\prod_{i=1}^k(1-1/(2i))\le1/\sqrt{k+1}`$ by the logarithm bound and the harmonic sum. The central probability for $`2k+1`$ is no larger. Thus $`n\ge2a^2`$ also suffices. Combined with the large-side theorem, any remaining grid counterexample would require $`n<32258`$. This finite reduction supplies no exhaustion of that range and imposes no grid structure on a general orbit.
+
+## Finite checks
+
+The [grid checker](check_weighted_grid.py) constructs explicit cube faces with multiple variants in every cell. Optional coordinates occur at both zero and one agreements between a row and a column. On four grids it checks every pair of faces, computes the projected product masses with rational arithmetic, and separately sums the coordinate entropy formula. The two cost calculations agree to numerical precision. These examples check the encoding and its multiplicity factors; the inequalities for arbitrary parameters follow from the proof above.
