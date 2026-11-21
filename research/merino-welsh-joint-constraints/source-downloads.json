@@ -1,0 +1,38 @@
+[
+  {
+    "name": "conde-merino2009",
+    "url": "https://fs.unm.edu/IJMC/ComparingTheNumberOfAcyclicAndTotallyCyclicOrientations.pdf",
+    "error": "HTTP Error 412: Precondition Failed"
+  },
+  {
+    "name": "vali2611",
+    "url": "https://arxiv.org/pdf/2611.15008",
+    "bytes": 276841,
+    "sha256": "303a5277b8eed399f35764b5b83dacb4b6dd91b0b361666d4c33b09b188485a3",
+    "text_exit": 0
+  },
+  {
+    "name": "chen-jin-ma2610",
+    "url": "https://arxiv.org/pdf/2610.27706",
+    "bytes": 511007,
+    "sha256": "3bafa90f723c2a2a4b53cfd25cae28ba1bd44a611c3d14698592c30a32aa6569",
+    "text_exit": 0
+  },
+  {
+    "name": "noble-royle",
+    "url": "https://bura.brunel.ac.uk/bitstream/2438/9384/1/Fulltext.pdf",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "name": "noble-royle",
+    "url": "https://arxiv.org/pdf/1303.6416",
+    "bytes": 160638,
+    "sha256": "2dfaff6cef5cc8256743531cd05682c95d27198e836050994d0f34583340203e"
+  },
+  {
+    "name": "conde-merino2009",
+    "url": "https://www.matem.unam.mx/~merino/online_papers/conjecture_5.pdf",
+    "bytes": 193498,
+    "sha256": "b129179a9a5d24c7a6e8df5f4ca13c94692f68f1960dd8de7c96e39361906ca9"
+  }
+]
