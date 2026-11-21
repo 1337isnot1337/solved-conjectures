@@ -1,0 +1,159 @@
+{
+  "checkpoint": 28,
+  "date": "2026-11-21",
+  "base_main": "655b1fc11f96cf86b6a2c84dfd62a433eea7197d",
+  "new_full_bounty_solutions": 0,
+  "campaign_proposed_full_bounty_solutions_under_usd100_floor": 0,
+  "proposed_full_paid_target_solutions_including_below_floor": 1,
+  "accepted_or_paid_awards": 0,
+  "publication_changes": [
+    "Normalize math delimiters, macros, and relative links; preserve mathematical claims and their explicit limitations.",
+    "Add prominent subsequent-status notices to the earlier finite-zeta route notes and to the geometric-weight diagnostic.",
+    "Preserve all original mathematical arguments in previously published notes; the universal finite hypothesis is now refuted.",
+    "Preserve the concurrent weighted-grid entropy commit and the separate any-payment and USD100-floor counts."
+  ],
+  "files": [
+    {
+      "source": "agents/conjectures/erdos51/target-and-prior-audit.md",
+      "source_sha256": "3badb93ab57234d688ba184e2e20ae0d2b1043ce711e9677d02be312a0b20101",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos51/target-and-prior-audit.md",
+      "published_sha256": "a8ab45b91abae00456f13ff00d014b79c7687cb397735bab787250acd71fab0a"
+    },
+    {
+      "source": "agents/conjectures/erdos51/eligibility-snapshot.json",
+      "source_sha256": "4260e16ee2071254ea053275f4ff9136f95d489c7e4eef493278e07811eba725",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos51/eligibility-snapshot.json",
+      "published_sha256": "4260e16ee2071254ea053275f4ff9136f95d489c7e4eef493278e07811eba725"
+    },
+    {
+      "source": "agents/conjectures/erdos51/private-prime-marker-obstruction.md",
+      "source_sha256": "683e79613b11ff0e623232f6f8146a9c827e150c4c044407788e043ccfddb94e",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos51/private-prime-marker-obstruction.md",
+      "published_sha256": "683e79613b11ff0e623232f6f8146a9c827e150c4c044407788e043ccfddb94e"
+    },
+    {
+      "source": "agents/root749/erdos51-independent-review.md",
+      "source_sha256": "aa317805836e91e12639e9aa2f97ac66cb38fdf4c0f14150f882f8dac50e1735",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos51/INDEPENDENT_REVIEW.md",
+      "published_sha256": "4965ce5008d7535a8d017694dc2086f62c1cd61bbe1635e83329b36e8df8bddd"
+    },
+    {
+      "source": "agents/demath_zzz/erdos873/target-and-prior-audit.md",
+      "source_sha256": "745913d620b0e20f8dff0f4cd9e7aa7e9f3fe03f1ebbbaa963caa3091bc49b1b",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos873/target-and-prior-audit.md",
+      "published_sha256": "c20321febdbcdda229dc33cdf405b0e361ad9df75ca47b6e3685b588e4583887"
+    },
+    {
+      "source": "agents/demath_zzz/erdos873/source-manifest.json",
+      "source_sha256": "47b65b9057809f8c980f00b6d35591ee8f0b144f7ba9ce299d9ebbc2cd4bea3e",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos873/source-manifest.json",
+      "published_sha256": "47b65b9057809f8c980f00b6d35591ee8f0b144f7ba9ce299d9ebbc2cd4bea3e"
+    },
+    {
+      "source": "agents/demath_zzz/erdos873/window-divisor-equivalence.md",
+      "source_sha256": "0526c8777bba59eea13b28a96de6a60ec8d7e4e137911b8d9595fe15e09536c2",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos873/window-divisor-equivalence.md",
+      "published_sha256": "fe6c89219f7c3a4342a8dd13ebd9643abce13c23ce5abec8eb5a0d51abba9470"
+    },
+    {
+      "source": "agents/conjectures/erdos873-window-equivalence-independent-review.md",
+      "source_sha256": "1e965c18bb33151c85262984ae2eb95500a981a9e715d438b9a9f4d749b5d4a2",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos873/INDEPENDENT_REVIEW.md",
+      "published_sha256": "deea620c42c4445597529123037563fffb4366b6a4d0c4f513b7d0bcdb869f6a"
+    },
+    {
+      "source": "agents/root749/erdos873-independent-review.md",
+      "source_sha256": "0a89132938013bc306fba4a3f98a980e619d360fd0def559448facf65184d06e",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos873/COORDINATOR_REVIEW.md",
+      "published_sha256": "7177b293060d703de26d3181520bebfeb33f29c59ab8e19910477c598b66d4ab"
+    },
+    {
+      "source": "agents/other_paid/erdos25/geometric-weight-obstruction.md",
+      "source_sha256": "5d5e05e7c1baba02451eaff4fc6943501d310e4814c07f276057172133121085",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/geometric-weight-obstruction.md",
+      "published_sha256": "a995eab395248057eb07ccdf89bb2df661232e917b59b8d1750e31e4aded2499"
+    },
+    {
+      "source": "agents/conjectures/erdos25/geometric-weight-independent-review.md",
+      "source_sha256": "89b24cdf04ddf34bba00e0f9b5a44ebb8c4c5af8e8d6f5412e2a406651889ea5",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/GEOMETRIC_REVIEW.md",
+      "published_sha256": "fe161fd86d8ef8277551783dbf3680dcda65ed18031709f73962b29f6908cdcc"
+    },
+    {
+      "source": "agents/other_paid/erdos25/finite-zeta-counterexample.md",
+      "source_sha256": "328bf04b0bdf579aab3c0f079e9728b393330c10b5e09168d8319946ddcd2595",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/finite-zeta-counterexample.md",
+      "published_sha256": "286920ea30620357f4a89eecd84c28551100b8bb80f3c1ecae72b477c3f11350"
+    },
+    {
+      "source": "agents/conjectures/erdos25/finite-zeta-counterexample-independent-review.md",
+      "source_sha256": "e397d3641fa54620a38a56bfc206af01911d0b9642558d559e502a24b82c8bb7",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/COUNTEREXAMPLE_REVIEW.md",
+      "published_sha256": "087616d10d301a4d847fc7a7fc2ed735548ae9abc407ddccd984df62a586dc59"
+    },
+    {
+      "source": "agents/root749/erdos25/finite-zeta-counterexample-coordinator-review.md",
+      "source_sha256": "43876ca2601e3a0a3cddd21a1bf93630d2ae7386e32e89551d8d80ce21c0da9a",
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/COUNTEREXAMPLE_COORDINATOR_REVIEW.md",
+      "published_sha256": "2035c52e93d15a500d77f406f252284fe3602f71659fbf86489d13ec93a86389"
+    }
+  ],
+  "status_notices": [
+    {
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/finite-zeta-route.md",
+      "prior_commit": "9d8cf7d9cefcf4dcb5853983c17140bf9e5538c9",
+      "prior_published_sha256": "8d5c6636ad8bf4333a61f75dd7a8df22614fad18af92c20f15d1ff1d4573c347",
+      "published_sha256": "2cb4a61225f2b5932490b211621faaa98d8da0b51eb8ca517410d648a8a55f78",
+      "change": "Add a subsequent-status notice; preserve the original argument verbatim."
+    },
+    {
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/intersection-loss-allocation.md",
+      "prior_commit": "9d8cf7d9cefcf4dcb5853983c17140bf9e5538c9",
+      "prior_published_sha256": "3095fac144435772f924b3e33a40e69c59c440db359eedfd45ac936a6da75199",
+      "published_sha256": "92a1f805d5aca801b265afe05799a91f5683e1d2920bde95498e75b3375da102",
+      "change": "Add a subsequent-status notice; preserve the original argument verbatim."
+    },
+    {
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/capacity-and-footprint-obstructions.md",
+      "prior_commit": "9d8cf7d9cefcf4dcb5853983c17140bf9e5538c9",
+      "prior_published_sha256": "9e64ce3b3dbd79a7b6d2bac31e48acf23698d7f616befd4ab28c56ee7c20692c",
+      "published_sha256": "bb8ca56d091e2201fdd0862b604e7af5accbc1be024f141d08793eca9cd22260",
+      "change": "Add a subsequent-status notice; preserve the original argument verbatim."
+    },
+    {
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/weighted-compression-obstructions.md",
+      "prior_commit": "9d8cf7d9cefcf4dcb5853983c17140bf9e5538c9",
+      "prior_published_sha256": "aad23593012aa8473553b1053d28e8d59e373867ca2c8c139281c6674f47e6cf",
+      "published_sha256": "279ae8459e3ce95e71c67d78d7585451ac8b5758a5aad5cd6a1d27e11722f539",
+      "change": "Add a subsequent-status notice; preserve the original argument verbatim."
+    },
+    {
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/activated-count-bound-counterexample.md",
+      "prior_commit": "9d8cf7d9cefcf4dcb5853983c17140bf9e5538c9",
+      "prior_published_sha256": "25e22399bc946226051562a4511a3505e8dacdb88cbd47c7a6f3ee26001f064f",
+      "published_sha256": "050e5829185648a74fcac6ea765e3c888b855b1aaaa1228fac674f54c19a865e",
+      "change": "Add a subsequent-status notice; preserve the original argument verbatim."
+    },
+    {
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/ZETA_REVIEW.md",
+      "prior_commit": "9d8cf7d9cefcf4dcb5853983c17140bf9e5538c9",
+      "prior_published_sha256": "634dd138989827cbe14037d5f3c73ad1dcaac91f4abaaa8036fa446edcdcf47f",
+      "published_sha256": "2a1e200ece66bbdb698794690e7e874141ac568fca5a52ef6aae72b488cae8ab",
+      "change": "Add a subsequent-status notice; preserve the original argument verbatim."
+    },
+    {
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/COUNT_AND_COMPARISON_REVIEW.md",
+      "prior_commit": "9d8cf7d9cefcf4dcb5853983c17140bf9e5538c9",
+      "prior_published_sha256": "a7eab2600db3065385d4b51dbefa8b1e8ea9414e7b9929ddfd27ae1e21b12177",
+      "published_sha256": "a2d66fb6c72aea60d66e16bfd820f586863a424714522cee6d88938a7bb3300b",
+      "change": "Add a subsequent-status notice; preserve the original argument verbatim."
+    },
+    {
+      "published_path": "research/bounty-continuation-2026-11-21/erdos25/INTERSECTION_REVIEW.md",
+      "prior_commit": "9d8cf7d9cefcf4dcb5853983c17140bf9e5538c9",
+      "prior_published_sha256": "9a76fd2134d7b627169e2c5b98670ebce6021c15ab36188e057c1640c5423836",
+      "published_sha256": "8d783e053ff8b61c944f4ee667d9a57359c15f3b05d61ce9006ba3c45a6b8cc4",
+      "change": "Add a subsequent-status notice; preserve the original argument verbatim."
+    }
+  ]
+}

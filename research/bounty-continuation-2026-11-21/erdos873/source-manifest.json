@@ -1,0 +1,26 @@
+[
+  {
+    "file": "erdos-1992.pdf",
+    "url": "https://hrj.episciences.org/125/pdf",
+    "bytes": 4630109,
+    "sha256": "51faf4558eacab8e188efbcb028937f75dcb10d37865ab71ef1522df33361c72"
+  },
+  {
+    "file": "letendre-2025.html",
+    "url": "https://arxiv.org/html/2503.12146v1",
+    "bytes": 345222,
+    "sha256": "c9d0ec488d425cd4f1bd9031d4283c1f28af629a10dcd066875e647bcf1c0133"
+  },
+  {
+    "file": "pinned-873.lean",
+    "url": "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/7d1a8c9912747679d0093f6d1216420c33ee5ffa/FormalConjectures/ErdosProblems/873.lean",
+    "bytes": 1613,
+    "sha256": "67b0ace4ed365702a47ab50c55341105630e7ae9f57d0b7f419dcc8c5061c7aa"
+  },
+  {
+    "file": "althofer-2026.pdf",
+    "url": "https://althofer.de/on-erdos_873-based-on-letendre.pdf",
+    "bytes": 290412,
+    "sha256": "00976e0d544578853c1e72f90a56d74323e8d6d08e1d3e586c1583acd42323d5"
+  }
+]

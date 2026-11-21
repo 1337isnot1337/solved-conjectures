@@ -1,5 +1,7 @@
 # Independent review of two Erdős 25 method obstructions
 
+> Subsequent status: the general finite Haar-zeta comparison and its stronger LCM-capacity version are now [disproved](finite-zeta-counterexample.md), with [independent](COUNTEREXAMPLE_REVIEW.md) and [coordinator](COUNTEREXAMPLE_COORDINATOR_REVIEW.md) reviews. The earlier conditional implication and restricted theorems remain valid. Erdős 25 itself remains unresolved. The original argument below is preserved.
+
 21 November 2026. Reviewed sources:
 
 - [Activated-count counterexample](activated-count-bound-counterexample.md), SHA-256 `bc5ef2d479c4734f731827b4451f85e250d1fd979ef378a5396075babe396b02`.

@@ -1,5 +1,7 @@
 # Erdős 25: capacity and footprint barriers to a direct block conversion
 
+> Subsequent status: the general finite Haar-zeta comparison and its stronger LCM-capacity version are now [disproved](finite-zeta-counterexample.md), with [independent](COUNTEREXAMPLE_REVIEW.md) and [coordinator](COUNTEREXAMPLE_COORDINATOR_REVIEW.md) reviews. The earlier conditional implication and restricted theorems remain valid. Erdős 25 itself remains unresolved. The original argument below is preserved.
+
 21 November 2026. The [target audit](target-and-prior-audit.md) records the full paid question and prior work. This note proves restrictions on converting Wang's multiple-residue construction into a singleton system. None settles Erdős 25. No novelty is claimed for the elementary counting inequalities or for the cited classical theorems.
 
 Wang's [primary construction, Section 3](https://github.com/ShouqiaoW/erdos/blob/main/486/paper.tex) has, at scale $`Q_j=2^j`$,

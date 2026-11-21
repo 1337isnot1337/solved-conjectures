@@ -1,5 +1,7 @@
 # Independent review of the finite zeta route
 
+> Subsequent status: the general finite Haar-zeta comparison and its stronger LCM-capacity version are now [disproved](finite-zeta-counterexample.md), with [independent](COUNTEREXAMPLE_REVIEW.md) and [coordinator](COUNTEREXAMPLE_COORDINATOR_REVIEW.md) reviews. The earlier conditional implication and restricted theorems remain valid. Erdős 25 itself remains unresolved. The original argument below is preserved.
+
 21 November 2026. Reviewed source: [finite-zeta-route.md](finite-zeta-route.md), SHA256 `656dc9b4cb94ab01f5b293eeebf75cb3f87403503715dc2068983e97bdf298ed`.
 
 ## Verdict

@@ -1,5 +1,7 @@
 # Erdős 25: the proposed activated-count bound is false
 
+> Subsequent status: the general finite Haar-zeta comparison and its stronger LCM-capacity version are now [disproved](finite-zeta-counterexample.md), with [independent](COUNTEREXAMPLE_REVIEW.md) and [coordinator](COUNTEREXAMPLE_COORDINATOR_REVIEW.md) reviews. The earlier conditional implication and restricted theorems remain valid. Erdős 25 itself remains unresolved. The original argument below is preserved.
+
 21 November 2026. This note rejects an auxiliary estimate proposed during the Erdős 25 work. It does not refute Erdős 25, establish a new bounty result, or claim novelty for the classical sieve example. The [target audit](target-and-prior-audit.md) records the actual problem.
 
 ## 1. The estimate being tested

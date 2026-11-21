@@ -1,5 +1,7 @@
 # Erdős 25: a finite zeta comparison and its unresolved extension
 
+> Subsequent status: the general finite Haar-zeta comparison and its stronger LCM-capacity version are now [disproved](finite-zeta-counterexample.md), with [independent](COUNTEREXAMPLE_REVIEW.md) and [coordinator](COUNTEREXAMPLE_COORDINATOR_REVIEW.md) reviews. The earlier conditional implication and restricted theorems remain valid. Erdős 25 itself remains unresolved. The original argument below is preserved.
+
 21 November 2026. This note concerns the [full paid singleton-residue target](target-and-prior-audit.md). It proves a conditional passage to that target and checks the proposed finite inequality for at most two residue classes. The general finite inequality remains unproved. These statements do not add a completed bounty problem.
 
 ## 1. The proposed finite comparison

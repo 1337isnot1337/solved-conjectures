@@ -1,5 +1,7 @@
 # Erdős 25: intersection losses and a three-class allocation obstruction
 
+> Subsequent status: the general finite Haar-zeta comparison and its stronger LCM-capacity version are now [disproved](finite-zeta-counterexample.md), with [independent](COUNTEREXAMPLE_REVIEW.md) and [coordinator](COUNTEREXAMPLE_COORDINATOR_REVIEW.md) reviews. The earlier conditional implication and restricted theorems remain valid. Erdős 25 itself remains unresolved. The original argument below is preserved.
+
 21 November 2026. This note concerns the [full singleton-residue logarithmic-density target](target-and-prior-audit.md). It proves the proposed finite zeta comparison for every family whose congruence compatibility graph is triangle-free. It also gives an exact three-class obstruction to two proposed extensions of that proof. The general finite comparison and the full paid problem remain unresolved. No priority claim is made for the restricted theorem.
 
 The [conditional passage from a general finite comparison to Erdős 25](finite-zeta-route.md) is separate. A counterexample to a proposed allocation rule is not a counterexample to the finite comparison or to Erdős 25.

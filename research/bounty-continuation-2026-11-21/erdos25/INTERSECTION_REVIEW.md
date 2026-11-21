@@ -1,5 +1,7 @@
 # Independent review: Erdős 25 intersection losses
 
+> Subsequent status: the general finite Haar-zeta comparison and its stronger LCM-capacity version are now [disproved](finite-zeta-counterexample.md), with [independent](COUNTEREXAMPLE_REVIEW.md) and [coordinator](COUNTEREXAMPLE_COORDINATOR_REVIEW.md) reviews. The earlier conditional implication and restricted theorems remain valid. Erdős 25 itself remains unresolved. The original argument below is preserved.
+
 21 November 2026. Reviewed source: [intersection-loss-allocation.md](intersection-loss-allocation.md), SHA256 `46b8311ad2439447ac3191ded2ae6499082ca7946ab04e638b466380e87f9484`.
 
 The stated restricted theorem and counterexamples pass this independent review. No change is requested. This review does not establish the proposed comparison for arbitrary finite families or resolve Erdős 25.
