@@ -4,7 +4,7 @@ Sun offers $1,000 for a complete solution to the question whether every positive
 
 **Partial result.** The natural density of exceptions exists and is less than $3.71\cdot10^{-30}$. Positive density would force an entire arithmetic progression of exceptions. Every finite prime-square obstruction must involve at least two distinct Wall–Sun–Sun primes. The first two sections establish a preliminary bound and the last section proves the stronger estimate. The numerical density bound uses the published search of Dorais and Klyve. Our argument gives no bound on the first exception and permits an infinite exceptional set of density zero. [Dorais and Klyve, §4](https://cs.uwaterloo.ca/journals/JIS/VOL14/Klyve/klyve3.pdf)
 
-A complementary construction gives $X^{1-o(1)}$ integers per dyadic interval with at most $O(\log X/\log\log X)$ potential Fibonacci shifts, even though the mean representation count has order $\log X$. Its central Lucas-square congruence is verified in Lean. [Sparse progressions](sparse-progressions.md)
+A complementary construction gives $X^{1-o(1)}$ integers per dyadic interval with at most $O(\log X/\log\log X)$ potential Fibonacci shifts, even though the mean representation count has order $\log X$. Its central Lucas-square congruence is verified in Lean. [Sparse progressions](sparse-progressions.md) A refinement shows that more than $\sqrt X$ integers in every sufficiently large interval $(X,2X]$ admit no representation with $F_i\le n^{3/4}$. [Bound on the first shift](large-first-shift.md)
 
 ## Avoidance of all ordinary prime squares in a finite set
 
