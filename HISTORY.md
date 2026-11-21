@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — López Pouso–Segura's conjectures
+
+Added complete proposed proofs of the three Bessel-weight sequence conjectures in the 2025 published article. A positive-measure representation proves strict convexity of the inverse squared-phase derivative; trapezoidal errors give the C and E monotonicity. A Fourier–Bessel resolvent identity fixes both limiting constants, and a weighted-average identity gives the K statement. The three linked assertions count as one named result. The finite-degree Gauss–Legendre conjectures are outside the result.
+
+Two independent internal mathematical reviews passed. The package includes a source and prior-resolution audit with access limits, and a standard-library exact checker for the algebraic identities. It remains unrefereed; no Lean work was performed. The same checkpoint preserves unresolved symbolic parking-polytope research through dimension six and records prior resolutions that were excluded from the campaign tally.
+
 ## 2026-11-21 — Ferreira–Simon stochastic and diagonal conjectures
 
 Added complete proposed proofs of the two distinct full-parameter conjectures in Remarks 7(b) and 5(b) of Ferreira and Simon's *Mittag-Leffler functions and convex ordering*. The first uses a common Poisson arrival series and strict sequence-norm monotonicity to establish stochastic order. The second uses the classical Lamperti sine quantile, logarithmic contraction and reciprocal pairing to establish diagonal Mittag–Leffler monotonicity.

@@ -34,6 +34,7 @@ Lean verification.
 
 | Note | Status | Checked scope and remaining gap |
 | --- | --- | --- |
+| López Pouso–Segura's conjectures | Not formalized | Complete proposed proofs of the three published Bessel-weight sequence conjectures, counted together. Signs, strict monotonicity, and exact limits hold at every index. Two independent internal reviews and exact algebraic checks passed. No finite-degree Gauss–Legendre or Lean claim is included. |
 | Ferreira–Simon's stochastic-order conjecture | Not formalized | Complete proposed proof for every pair of real parameters in the source interval. The Poisson-series scale and strict sequence-norm comparison give a simultaneous coupling, both endpoint limits and the associated Mittag–Leffler inequalities. Independent internal review passed. |
 | Ferreira–Simon's diagonal Mittag–Leffler conjecture | Not formalized | Complete proposed proof of strict increase throughout the full unit parameter interval. The independent audit checks the Pollard integral, classical sine quantile, derivative signs, reciprocal pairing and strictness. No numerical or finite-case argument is used. |
 | Karp–Vishnyakova–Zhang's Hankel-product conjecture | Not formalized | Complete disproof by elementary rank-two factors, with exact minors of opposite signs. A second family has strict sign regularity at every order in both factors. Both families address the same full conjecture; independent internal review passed. |

@@ -20,6 +20,12 @@ The [Ferreira–Simon stochastic-order proof](../results/ferreira-simon-stochast
 
 ## Computational checks
 
+The [López Pouso–Segura checker](../results/lopez-pouso-segura-bessel/verify.py) checks exact polynomial and rational identities used by the analytic proof, with the square of pi treated as a formal variable. The full all-index signs, strict monotonicity, and limits follow from the [written argument](../results/lopez-pouso-segura-bessel/PROOF.md), which has two independent internal reviews. The checker uses only the Python standard library and performs no floating-point root screen.
+
+```bash
+python3 results/lopez-pouso-segura-bessel/verify.py
+```
+
 The [Hankel-product checker](../results/kvz-hankel-product/verify.py) checks the exact polynomial identity and both rational and radical minor witnesses. The [McCrea checker](../results/mccrea-single-crossover/verify.py) independently enumerates profile words and checks both generating-function rewrites and mean values. Both use only the Python standard library; their full parameter claims are proved in the accompanying notes.
 
 ```bash
