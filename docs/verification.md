@@ -28,10 +28,9 @@ The [López Pouso–Segura checker](../results/lopez-pouso-segura-bessel/verify.
 python3 results/lopez-pouso-segura-bessel/verify.py
 ```
 
-The [Hankel-product checker](../results/kvz-hankel-product/verify.py) checks the exact polynomial identity and both rational and radical minor witnesses. The [McCrea checker](../results/mccrea-single-crossover/verify.py) independently enumerates profile words and checks both generating-function rewrites and mean values. Both use only the Python standard library; their full parameter claims are proved in the accompanying notes.
+The [McCrea checker](../results/mccrea-single-crossover/verify.py) independently enumerates profile words and checks both generating-function rewrites and mean values. It uses only the Python standard library; the full parameter claim is proved in the accompanying note.
 
 ```bash
-python3 results/kvz-hankel-product/verify.py
 python3 results/mccrea-single-crossover/verify.py
 ```
 

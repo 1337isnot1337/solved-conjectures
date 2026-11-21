@@ -24,7 +24,6 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Fang–Zhang–Zhao's Sturm conjecture](results/fang-zhang-zhao-sturm/) | ⬜ |
 | [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture](results/kvz-reciprocal-qgamma/) | ⬜ |
-| [Karp–Vishnyakova–Zhang's Hankel-product conjecture](results/kvz-hankel-product/) | ⬜ |
 | [Fang–Zhang–Zhao's infinite-log-convexity conjecture](results/fang-zhang-zhao/) | ⬜ |
 | [Karp–Vishnyakova–Zhang's Bessel-ratio unimodality conjecture](results/kvz-bessel-unimodality/) | ⬜ |
 | [Simon's stable-infimum conjecture](results/simon-stable-infimum/) | ⬜ |

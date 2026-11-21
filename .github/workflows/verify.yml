@@ -53,10 +53,8 @@ jobs:
           python results/fang-zhang-zhao-sturm/verify.py
       - name: Check reciprocal q-gamma determinant identities
         run: python results/kvz-reciprocal-qgamma/verify.py
-      - name: Check Hankel-product counterexamples and Franklin profile identities
-        run: |
-          python results/kvz-hankel-product/verify.py
-          python results/mccrea-single-crossover/verify.py
+      - name: Check Franklin profile identities
+        run: python results/mccrea-single-crossover/verify.py
       - name: Check Pula–Song–Wanless identities and parameter conventions
         run: python results/pula-song-wanless/verify.py
       - name: Verify partial results at Hadamard order 2396

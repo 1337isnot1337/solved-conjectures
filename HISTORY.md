@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-21 — Corrected Hankel-product prior-art error
+
+Removed the reintroduced Karp–Vishnyakova–Zhang Hankel-product result directory, catalogue entries, site registration, and verifier references. Simon's *Produit Beta-Gamma et régularité du signe*, arXiv:1207.6464 (2012), printed page 4 theorem and page 16 Remark (b), already refutes the full assertion after the logarithmic change of variables. Issue 94 had documented this exclusion on 20 November; the current campaign failed to check that issue before reintroducing the claim. The new elementary examples remain mathematically valid but cannot count as a new resolution. Their previous versions remain in Git history, not in the result catalogue.
+
+The issue-156 campaign tally is corrected from six to five. The original-source theorem and its coordinate change were reread independently. The separate reciprocal q-gamma, Hoggatt, McCrea, and Bessel-weight results are unaffected. Zhao's Motzkin-root conjecture was also excluded after a prior Chinese-language complete proof was located in xzwwwwww/math. Future candidate screening must search the repository's issue history as well as current files and external literature.
+
 ## 2026-11-21 — Simon's stable-infimum conjecture
 
 Added a complete proposed proof of the convex-order conjecture in Remark 6 of Simon's 2014 EJP article, throughout the full parameter interval and including its Brownian endpoint. The established stable-infimum Mellin transform gives two logarithmic Lévy densities that increase with the parameter. Their difference supplies an independent mean-one multiplier, and conditional Jensen gives the claimed order. The factorization and Mellin transform are credited to prior work.
@@ -19,6 +25,8 @@ Added complete proposed proofs of the two distinct full-parameter conjectures in
 Both arguments passed separate internal mathematical reviews. The packages contain source and prior-resolution audits covering the original statements, earlier formulations, neighboring theorems, current follow-ups and public solution archives, with access limits stated explicitly. Classical representations are credited. The stochastic assertion's 2014 and 2025 formulations count as one target; endpoint bounds and crossing-point corollaries are not additional conjectures. These are written analytic proofs and require no numerical verifier. The notes remain unrefereed. No Lean work was performed.
 
 ## 2026-11-21 — Hankel products and McCrea's conjecture
+
+The Hankel-product novelty claim in this entry was withdrawn later on 21 November; see the correction above. McCrea's result is unchanged.
 
 Added a complete proposed disproof of Karp–Vishnyakova–Zhang's general sign-regular Hankel-product conjecture. An elementary family has exact rational order-two minors of opposite signs; a second family has strictly sign-regular factors of every order and the same failure. Both families resolve one conjecture, with the original unrestricted-signature hypothesis checked directly. Root and combinatorics reviews passed. The published final-page access limit is recorded alongside the verified arXiv versions.
 

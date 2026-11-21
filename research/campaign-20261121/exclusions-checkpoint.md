@@ -21,3 +21,11 @@ Philip B. Zhang's Conjecture 3.2 in [arXiv:1408.4235](https://arxiv.org/abs/1408
 ## Related unresolved work
 
 Mao–Wang's joint triangle-square conjecture remains uncounted because only the Delannoy clause has been proved here. The symbolic parking-polytope checks remain [unresolved research](../parking-magic/). The Bessel-weight package counts three linked assertions once. These scope decisions preserve the distinction between a complete new resolution, a partial theorem, and a prior result.
+
+## Karp–Vishnyakova–Zhang's Hankel-product conjecture
+
+This assertion was mistakenly reintroduced as new during the present campaign. [Repository issue94](https://github.com/1337isnot1337/solved-conjectures/issues/94) already documented the prior implication from Thomas Simon, [arXiv:1207.6464](https://arxiv.org/pdf/1207.6464), printed page4 main theorem and page16 Remark(b). With parameters b=d=1/2, the product of two multiplicative totally positive kernels is not sign regular of order three. Logarithmic coordinates and a common shift of finite witnessing grids yield the exact positive-quadrant Hankel counterexample required by KVZ. The main definition has the negative exponential; the remark has a missing-minus typo. Root and analysis independently checked the theorem and substitution. The result package was removed and the campaign tally reduced from six to five.
+
+## Zhao's Motzkin-root conjecture
+
+A deeper search located a prior complete strict-log-concavity proof of the exact INTEGERS26A55 Conjecture1 in [xzwwwwww/math](https://github.com/xzwwwwww/math), under the Motzkin conjecture directory. The current run stopped this target immediately. [Issue179](https://github.com/1337isnot1337/solved-conjectures/issues/179) records the exclusion. The initial English-language title searches did not reveal the Chinese-language package.

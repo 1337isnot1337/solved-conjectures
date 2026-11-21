@@ -21,7 +21,7 @@ The main README at initial inspection was blob `afa18f0a812f85446bc3836ecfe7b828
 
 ## Resolution count
 
-Complete proposed resolutions with separate internal review and a documented current status audit: **6** at this checkpoint. All remain unrefereed.
+Complete proposed resolutions with separate internal review and a documented current status audit: **5** at this checkpoint. All remain unrefereed.
 
 | Conjecture | Result | Evidence |
 | --- | --- | --- |
@@ -29,8 +29,9 @@ Complete proposed resolutions with separate internal review and a documented cur
 | Fang–Zhang–Zhao's infinite-log-convexity conjecture | Disproved for every Hoggatt parameter at least four; one resolution of the full universal statement | [Package](../../results/fang-zhang-zhao/) · [Issue 160](https://github.com/1337isnot1337/solved-conjectures/issues/160) |
 | Fang–Zhang–Zhao's Sturm conjecture | Proved throughout the source's full range, with a stronger real-base and all-parameter theorem | [Package](../../results/fang-zhang-zhao-sturm/) · [Issue 162](https://github.com/1337isnot1337/solved-conjectures/issues/162) |
 | Karp–Vishnyakova–Zhang's reciprocal q-gamma conjecture | Proved at all determinant orders, arbitrary positive real nodes and every base between zero and one | [Package](../../results/kvz-reciprocal-qgamma/) · [Issue 164](https://github.com/1337isnot1337/solved-conjectures/issues/164) |
-| Karp–Vishnyakova–Zhang's Hankel-product conjecture | Disproved by full families, including strictly sign-regular factors | [Package](../../results/kvz-hankel-product/) · [Issue 169](https://github.com/1337isnot1337/solved-conjectures/issues/169) |
 | McCrea's conjecture | Proved unique linear-density crossover for every permitted modulus and density | [Package](../../results/mccrea-single-crossover/) · [Issue 168](https://github.com/1337isnot1337/solved-conjectures/issues/168) |
+
+A previous six-result checkpoint incorrectly included the already-refuted Hankel-product assertion. Simon's 2012 theorem and repository issue 94 settle that exact statement; it has been removed from this tally and the result catalogue. The new examples do not establish novelty.
 
 The original opening count was zero. The separate Baxter-number conjecture is not resolved by the first row. A bounded floating-point screen of its first 400 terms through 120 iterates found no negative value and supplies no proof. The reciprocal discrete-kernel corollary is not an additional resolution.
 

@@ -58,7 +58,6 @@ STATUS_LABEL_SLUGS = {
     "López Pouso–Segura's conjectures": "lopez-pouso-segura-bessel",
     "Ferreira–Simon's stochastic-order conjecture": "ferreira-simon-stochastic",
     "Ferreira–Simon's diagonal Mittag–Leffler conjecture": "ferreira-simon-diagonal",
-    "Karp–Vishnyakova–Zhang's Hankel-product conjecture": "kvz-hankel-product",
     "McCrea's conjecture": "mccrea-single-crossover",
     "Chen–Kitaev–Zhang's record conjectures": "chen-kitaev-zhang-records",
     "Zhu's generalized Jacobi–Stirling conjecture": "zhu-jacobi-stirling",
