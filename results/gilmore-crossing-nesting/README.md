@@ -48,3 +48,5 @@ The neighboring shifted reverse Bessel Hankel-total-positivity conjecture remain
 - [Published article, DOI 10.37236/10465](https://doi.org/10.37236/10465).
 - [Published PDF repository record](https://discovery.ucl.ac.uk/id/eprint/10138471/).
 - [arXiv v2](https://arxiv.org/abs/2106.00656v2).
+
+A [partial Lean formalization](../../lean/Conjectures/GilmoreCrossingNesting.lean) checks the generic row-sum recurrence. The matrix product, path enumeration and matching correspondence remain open in Lean. Strict compilation and isolated replay passed; the combined gate is pending.

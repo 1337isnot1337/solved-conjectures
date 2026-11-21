@@ -1283,3 +1283,7 @@ This formalizes a previously resolved result. A complete ordinary disproof was p
 ## Dospolova–Germanskov–Zaporozhets factorial family
 
 `DospolovaGermanskovZaporozhets` checks all factorial-sequence equalities and strict expected range for an actual Gaussian process, with almost-sure boundedness, nondegenerate increment and deterministic local-range limits explicit. Intrinsic volumes, determinism of those limits, and Vitale’s limit remain unformalized. Strict source compilation, isolated kernel replay and endpoint axiom checks passed; the full repository gate is pending.
+
+## Gilmore crossing–nesting recurrence
+
+`GilmoreCrossingNesting.row_recurrence` proves the generic finite row-sum recurrence over any commutative semiring. The matrix-product identification and actual path/matching bijection remain unformalized. Strict compilation, isolated kernel replay and axiom check passed; the combined gate is pending.

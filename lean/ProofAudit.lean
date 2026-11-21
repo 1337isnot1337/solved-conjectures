@@ -9,6 +9,7 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `GilmoreCrossingNesting.row_recurrence,
     `Sonntag.build_realizes_two_stars,
     `Sonntag.build_remaining_vertices_isolated,
     `Sonntag.build_irreflexive,
