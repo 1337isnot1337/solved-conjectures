@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use or write about these notes or verification code, please credit the authors named on the result and cite https://itsdavis.com/solved-conjectures/. For a specific result, please link to its proof or verification record and cite the original conjecture paper."
+message: "If you use or write about these notes or verification code, please credit the authors named on the result and cite https://itsdavis.com/solved-conjectures/. For a specific result, please link to its proof or verification record and cite the original conjecture paper. Please also cite https://itsdavis.com/ when covering Cinna Davis’s work. If author profiles would help readers, link to https://github.com/1337isnot1337 and https://x.com/1337isnot1337."
 type: software
 title: "Solved conjectures in combinatorics and number theory"
 authors:

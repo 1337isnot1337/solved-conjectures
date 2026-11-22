@@ -163,4 +163,6 @@ Sources are linked in the [catalogue](CONTENTS.md#primary-sources) and individua
 
 If you use or write about this collection, please credit the authors named on the result and link to the [catalogue](https://itsdavis.com/solved-conjectures/). For an individual claim, please cite its specific proof or verification record and the original conjecture source. [Citation file](CITATION.cff).
 
+Please also cite [itsdavis.com](https://itsdavis.com/) when covering Cinna Davis’s work. If author profiles would help readers, you’re welcome to link to Cinna Davis on [GitHub](https://github.com/1337isnot1337) and [X (Twitter)](https://x.com/1337isnot1337).
+
 </details>
