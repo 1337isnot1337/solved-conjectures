@@ -344,6 +344,9 @@ modules=(
   Conjectures.AgnosticVC.FixedPairing
   Conjectures.AgnosticVC.BorelCodes
   Conjectures.AgnosticVC.BorelChoiceObstruction
+  Conjectures.AgnosticVC.FullOuterMatching
+  Conjectures.AgnosticVC.CompletedDisjointSupports
+  Conjectures.AgnosticVC.CompletedFiniteGroups
   Conjectures.AgnosticVC.IidNullChainExample
   Conjectures.AgnosticVC.LabeledNullChain
   Conjectures.AgnosticVC

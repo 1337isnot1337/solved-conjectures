@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Finite-support counterexamples for completed-iid proper learners
+
+Lean verifies the [failure of the Conjecture 6 empirical rate](lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) for every proposed constant on a VC-one class with finite disjoint supports. The [written proof](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md) gives distribution-uniform convergence in outer probability and quantifies why it lacks the absolute VC-one bound at the counterexample sample size. A [separate Lean counterexample](lean/Conjectures/AgnosticVC/BorelChoiceObstruction.lean) covers globally Borel kernels on standard Borel spaces with Borel trace feasibility. The scope of the original bounty awaits clarification.
+
 ## 2026-11-22 — Information bound for every fixed pairing in agnostic VC learning
 
 The [fixed-pairing theorem](lean/Conjectures/AgnosticVC/FixedPairing.lean) bounds whole-output selector information by $`19{,}712d`$ nats on every paired pool, using the same proper learner and samplewise empirical bound. Comparing the two choices in a row to the common deleted sample removes the permutation average. The population theorem still requires the stated measurability convention. Added written scope results for [Borel trace feasibility](research/steinke-zakynthinou-agnostic-vc/borel-traces-and-randomized-selection.md) and [dominated marginals](research/steinke-zakynthinou-agnostic-vc/dominated-marginals.md).
