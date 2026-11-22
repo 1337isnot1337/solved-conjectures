@@ -230,5 +230,27 @@
       "AgnosticVC.nullChain_exists_probability_full_outer_samples",
       "AgnosticVC.exists_unitInterval_nullGdelta_chain_full_outer_samples"
     ]
+  },
+  "fixed_pairing_extension": {
+    "theorems": [
+      "AgnosticVC.steinkeZakynthinou_fixedPairing",
+      "AgnosticVC.properLearner_fixedPairing_KL_le"
+    ],
+    "scope": "Every deterministic paired pool. The measurable iid conclusions retain their hypotheses.",
+    "local_command": "python3 scripts/verify_agnostic_vc.py",
+    "local_strict_elaboration": "passed",
+    "local_kernel_replayed_modules": 91,
+    "local_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1406,
+      "modules": 91,
+      "required": 93,
+      "theorems": 1134,
+      "tag": "passed"
+    }
   }
 }

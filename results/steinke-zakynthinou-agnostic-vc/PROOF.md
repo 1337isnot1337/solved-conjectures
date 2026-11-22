@@ -14,7 +14,7 @@ Let $`\mathcal H\subseteq\{0,1\}^{\mathcal X}`$ have finite VC dimension $`d\ge1
 
 Here the $`2n`$ entries of the paired array $`\widetilde Z`$ are independent draws from any one distribution, and the $`n`$ independent fair bits $`S`$ choose one entry per row. The information is about the entire returned hypothesis. All logarithms are natural.
 
-We use a single well-order of the hypothesis class for all sample sizes, as in the authors’ globally consistent learner. On any fixed pool the construction is finite, even for an arbitrary class. We prove the information inequality averaged over uniform permutations of **each fixed pool**. The population conclusion follows by exchangeability wherever the learner and information in the original problem are measurable. In particular it holds for every countable class of measurable classifiers with an enumeration, and for classes admitting measurable coherent trace representatives and measurable evaluation. Existence of a measurable selection from an arbitrary externally prescribed measurable space does not follow from well-ordering alone. The [Lean statement](../../lean/Conjectures/AgnosticVC/Theorem.lean) makes the condition on the chosen representatives explicit. It also derives the iid bound directly whenever the exact information statistic is almost everywhere measurable. [Conjecture 6](https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf) · [Authors’ representative convention, Lemmas 4.15 and 4.17](https://arxiv.org/pdf/2001.09122)
+We use a single well-order of the hypothesis class for all sample sizes, as in the authors’ globally consistent learner. On any fixed pool the construction is finite, even for an arbitrary class. The information inequality holds on **each fixed paired pool**. The population conclusion follows by integrating the pointwise bound wherever the learner and information in the original problem are measurable. In particular it holds for every countable class of measurable classifiers with an enumeration, and for classes admitting measurable coherent trace representatives and measurable evaluation. The [Lean population statement](../../lean/Conjectures/AgnosticVC/Theorem.lean) makes the condition on the chosen representatives explicit. The separate [fixed-pairing theorem](../../lean/Conjectures/AgnosticVC/FixedPairing.lean) applies to arbitrary underlying sets. [Conjecture 6](https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf) · [Authors’ representative convention, Lemmas 4.15 and 4.17](https://arxiv.org/pdf/2001.09122)
 
 ## 1. The learner and its empirical error
 
@@ -48,7 +48,7 @@ Here are details for the random term. Loss vectors have the same pairwise Hammin
 
 ## 2. Averaged prediction projections
 
-Fix a block $`T`$ of $`N=n+1`$ examples and a positive law $`q`$ on its canonical hypotheses. Work on the finite-dimensional space of mean-zero real functions in $`L^2(q)`$. Let $`P_M`$ be orthogonal projection by conditional expectation on the predictions on $`M`$. Put $`K_m=\mathbb E_{|M|=m}P_M`$. Coupling nested uniform subsets gives $`0\le K_m\le K_{m'}\le I`$ for $`m\le m'`$. Write $`f_i(h)=h(x_i)-\mathbb E_q h(x_i)`$.
+Fix a block $`T`$ of $`N=n`$ examples with $`d\lt n`$, and a positive law $`q`$ on its canonical hypotheses. The same estimates apply to $`N=n+1`$. In both cases $`m_J\lt N`$ since $`m_J^2\le nd`$. Work on the finite-dimensional space of mean-zero real functions in $`L^2(q)`$. Let $`P_M`$ be orthogonal projection by conditional expectation on the predictions on $`M`$. Put $`K_m=\mathbb E_{|M|=m}P_M`$. Coupling nested uniform subsets gives $`0\le K_m\le K_{m'}\le I`$ for $`m\le m'`$. Write $`f_i(h)=h(x_i)-\mathbb E_q h(x_i)`$.
 
 **Overlap inequality.** If $`km\le M\le N`$ for a positive integer $`k`$, then
 
@@ -156,7 +156,7 @@ Fix a supersample and write $`Y=A(\widetilde Z_S)`$. Since its fair selector bit
  \le\sum_{i=1}^n I(Y;S_i\mid\widetilde Z,S_{-i}).
 ```
 
-For fixed values of the pool and the other bits, a summand is the Jensen–Shannon divergence of the two possible output laws. The two training sets are deletions of two marked entries from the same $`N`$-block, consisting of the other selected examples and both examples in row $`i`$. Give the block one common independent weight vector. Joint convexity of the divergence (from the log-sum inequality) bounds the summand by the mean conditional divergence with those weights fixed. For laws $`p,r`$, writing $`v=(p+r)/2`$ and using $`\log x\le x-1`$ gives
+For fixed values of the pool and the other bits, a summand is the Jensen–Shannon divergence of the two possible output laws. Both samples give **the same** ordered sample after deleting position $`i`$. Use the output law on this common sample with the schedule for $`n`$. For laws $`p,r`$, writing $`v=(p+r)/2`$ and using $`\log x\le x-1`$ gives
 
 ```math
  \mathrm{JS}(p,r)\le\frac12\sum_{h:p_h+r_h>0}
@@ -164,6 +164,11 @@ For fixed values of the pool and the other bits, a summand is the Jensen–Shann
  \le H_2^2(p,r).
 ```
 
-Thus this information is bounded by twice the sum of the two squared distances from the deletion optimizers to the full optimizer.
+Write $`c_i(T)`$ for the squared Hellinger distance between the learner on $`T`$ and the learner on $`T_{-i}`$ using this common schedule, with both laws already averaged over the weights. Convexity of squared Hellinger distance bounds $`c_i(T)`$ by the expected distance in §3 under the shared weight coupling. In the common finite alphabet of actual named hypotheses, the square-root triangle inequality bounds the row's Jensen–Shannon divergence by $`2(c_i(T_0)+c_i(T_1))`$. Conditional on the other bits, the fair bit selects $`T_0`$ or $`T_1`$ equally, so this is $`4\mathbb E[c_i(\widetilde z_S)\mid S_{-i}]`$. Summing and then applying §3 on each **selected** sample gives
 
-To see exactly where exchangeability enters, begin with **any deterministic pool of $`2n`$ labeled positions**. Permute it uniformly before assigning the pairs and average the preceding inequality over the permutation, with the order known when computing selector information. Given the other selector bits and the unordered set of $`N`$ pool positions in the union, the two marked positions are uniformly drawn distinct members. The construction and the joint weight law are invariant under permutations of the block. Averaging the last bound therefore costs at most $`4/N`$ times the expected sum of all deletion distances squared on that block, at most $`4Cd/N`$ by §3. There are $`n`$ summands. This proves the permutation-averaged information bound $`O(d)`$ on every fixed pool. An iid pool has the same distribution after an independent uniform permutation, yielding the claimed original conditional mutual information. The empirical and information inequalities use the same proper learner and a common absolute constant obtained by taking the larger of their constants.
+```math
+ I(A(\widetilde z_S);S)\le 4\mathbb E_S\sum_i c_i(\widetilde z_S)
+ \le 4 \cdot 4928d.
+```
+
+For $`n=d`$ the selector entropy is at most $`n\log 2`$. The estimate holds for every deterministic pairing. Integrating the measurable pool statistic gives the original iid CMI bound. The empirical and information inequalities use the same proper learner and a common absolute constant of $`19{,}712`$. [Lean proof of this transfer](../../lean/Conjectures/AgnosticVC/FixedPairing.lean)

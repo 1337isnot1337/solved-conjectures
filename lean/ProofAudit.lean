@@ -34,6 +34,8 @@ run_cmd do
     `AgnosticVC.steinkeZakynthinou_conjecture6,
     `AgnosticVC.steinkeZakynthinou_countable_domain,
     `AgnosticVC.steinkeZakynthinou_fixedPool,
+    `AgnosticVC.steinkeZakynthinou_fixedPairing,
+    `AgnosticVC.properLearner_fixedPairing_KL_le,
     `AgnosticVC.steinkeZakynthinou_measurableInformation,
     `AgnosticVC.steinkeZakynthinou_kl_rates,
     `AgnosticVC.steinkeZakynthinou_kl_rates_countable,

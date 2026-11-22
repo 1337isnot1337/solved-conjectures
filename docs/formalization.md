@@ -2,7 +2,7 @@
 
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
-The [combined theorem](../lean/Conjectures/AgnosticVC/Theorem.lean) proves the two bounds for the same proper learner. Lean checks the unconditional shuffled-pool result, the iid information bound whenever its integrand is almost everywhere measurable, and a measurable Markov learner under the stated representative convention. The [Mathlib KL formulation](../lean/Conjectures/AgnosticVC/KLRates.lean) identifies the joint distribution and both marginals on the full output hypotheses. [Verification guide](verification.md#steinkezakynthinous-agnostic-vc-learning-conjecture)
+The [combined theorem](../lean/Conjectures/AgnosticVC/Theorem.lean) proves the two bounds for the same proper learner. Lean checks the [bound for every fixed pairing](../lean/Conjectures/AgnosticVC/FixedPairing.lean), the iid information bound whenever its integrand is almost everywhere measurable, and a measurable Markov learner under the stated representative convention. The [Mathlib KL formulation](../lean/Conjectures/AgnosticVC/KLRates.lean) identifies the joint distribution and both marginals on the full output hypotheses. [Verification guide](verification.md#steinkezakynthinous-agnostic-vc-learning-conjecture)
 
 ## Steinke–Zakynthinou threshold formalization scope
 

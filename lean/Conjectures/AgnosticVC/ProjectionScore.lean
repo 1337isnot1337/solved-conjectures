@@ -183,7 +183,7 @@ private theorem mistakeIndicator_true {I : Type*} [DecidableEq I] (y : I → Boo
 theorem traceProjection_scoreEnergy_sum (predict : H → X → Bool) (x : I → X) (y : I → Bool)
     {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
     (hdim : (sampleFamily predict x).vcDim ≤ d)
-    (hN : n < Fintype.card I) (hNn : Fintype.card I ≤ 2 * n)
+    (hlast : d * 4 ^ depth n d < Fintype.card I) (hNn : Fintype.card I ≤ 2 * n)
     (p : TraceSpace predict x → ℝ) (hp : ∀ a, 0 < p a) (hp1 : ∑ a, p a = 1)
     (v : I → TraceSpace predict x → ℝ) (hv : ∀ i, ∑ a, v i a = 0)
     (he : ∀ i, ∃ c, ∀ a, entropyHessian (schedule n d).temperature (restrictionCoeff (schedule n d))
@@ -199,8 +199,6 @@ theorem traceProjection_scoreEnergy_sum (predict : H → X → Bool) (x : I → 
     have hdr : 0 < (d : ℝ) := by exact_mod_cast hd
     dsimp [base]
     positivity
-  have hlast : d * 4 ^ J < Fintype.card I :=
-    (schedule_size_le hd hn (Fin.last (depth n d))).trans_lt hN
   have hbound (i : I) : scoreEnergy p (v i) ≤
       4 * ∑ j : Fin (J + 2), (projectionScaleWeight base j)⁻¹ ^ 2 *
         ⟪projectionScaleBand S d J j (traceProjectionCentered F p i),

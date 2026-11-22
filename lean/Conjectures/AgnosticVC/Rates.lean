@@ -22,8 +22,11 @@ variable {n d : ℕ} {X H : Type*} [Nonempty H] [TraceOrder H]
 theorem blockDeletion_sum_le (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
     (hvc : HasVCDimensionAtMost predict d) (T : Fin (n+1) → X × Bool) :
     ∑ i, blockDeletionCharge (schedule n d) predict T i ≤ 4928 * d :=
-  deletion_sum_le_of_loss_integral hd hn predict hvc T
-    (traceLaw_remove_loss_integral_le hd hn predict (fun i => (T i).1) (fun i => (T i).2)
+  deletion_sum_le_of_loss_integral hd hn (Nat.le_succ n)
+    (fun j => (schedule_size_le hd hn j).trans_lt (Nat.lt_succ_self _)) predict hvc T
+    (traceLaw_remove_loss_integral_le hd hn
+      ((schedule_size_le hd hn (Fin.last (depth n d))).trans_lt (Nat.lt_succ_self _))
+      (by have := hd.trans_le hn; omega) predict (fun i => (T i).1) (fun i => (T i).2)
       (sampleFamily_vcDim_le hvc _))
 
 /-- For any fixed labeled pool, condition on its order when measuring information

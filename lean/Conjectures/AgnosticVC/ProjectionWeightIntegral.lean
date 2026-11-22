@@ -68,14 +68,15 @@ private theorem measurable_scoreEnergy_path {A W : Type*} [Fintype A] [Topologic
 
 /-- Removing each loss while keeping the full restriction system costs at most `64*d` on
 average over the independent weights. -/
-theorem traceLaw_remove_loss_integral_le {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
-    (predict : H → X → Bool) (x : Fin (n + 1) → X) (y : Fin (n + 1) → Bool)
+theorem traceLaw_remove_loss_integral_le {n d m : ℕ} (hd : 0 < d) (hn : d ≤ n)
+    (hlast : d * 4 ^ depth n d < m + 1) (hm : m + 1 ≤ 2 * n)
+    (predict : H → X → Bool) (x : Fin (m + 1) → X) (y : Fin (m + 1) → Bool)
     (hdim : (sampleFamily predict x).vcDim ≤ d) :
-    (∫ u, ∑ i : Fin (n + 1),
+    (∫ u, ∑ i : Fin (m + 1),
       hellingerSq (traceLaw (schedule n d) predict x y (weightDraw u))
         (traceLaw (schedule n d) predict x y (Function.update (weightDraw u) i 0))
-      ∂weightMeasure (Fin (n + 1))) ≤ 64 * d := by
-  let I := Fin (n + 1)
+      ∂weightMeasure (Fin (m + 1))) ≤ 64 * d := by
+  let I := Fin (m + 1)
   let σ := schedule n d
   let F := sampleFamily predict x
   let W := I → unitInterval
@@ -114,7 +115,7 @@ theorem traceLaw_remove_loss_integral_le {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
         show lossOnlyPath F σ y (weightDraw u) i (weightDraw u i) = p (weightDraw u) from hr0 _ _] at hh
       exact hh
     exact traceProjection_scoreEnergy_sum predict x y hd hn hdim
-      (by simp) (by simp; omega) (p (weightDraw u)) (hp _) (hp1 _)
+      (by simpa [I] using hlast) (by simpa [I] using hm) (p (weightDraw u)) (hp _) (hp1 _)
       (v (weightDraw u)) (fun i => (hs i).1) (fun i => (hs i).2)
   have cw : Continuous (weightDraw (I := I)) := by unfold weightDraw; fun_prop
   have cp : Continuous p := continuous_traceLaw hτ hc predict x y

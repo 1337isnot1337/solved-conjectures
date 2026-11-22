@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Information bound for every fixed pairing in agnostic VC learning
+
+The [fixed-pairing theorem](lean/Conjectures/AgnosticVC/FixedPairing.lean) bounds whole-output selector information by $`19{,}712d`$ nats on every paired pool, using the same proper learner and samplewise empirical bound. Comparing the two choices in a row to the common deleted sample removes the permutation average. The population theorem still requires the stated measurability convention. Added written scope results for [Borel trace feasibility](research/steinke-zakynthinou-agnostic-vc/borel-traces-and-randomized-selection.md) and [dominated marginals](research/steinke-zakynthinou-agnostic-vc/dominated-marginals.md).
+
 ## 2026-11-22 — Shifted lonely runner counterexamples for 18 ≤ n ≤ 54
 
 Added [exact counterexample certificates](results/shifted-lonely-runner-counterexamples/) to the shifted Lonely Runner Conjecture for every `n` with `18 <= n <= 54`, a partial answer to Zhang's Question 8.5 (arXiv:2608.13599v3), which was open for `18 <= n <= 94` after Blanco–Criado–Santos (`5 <= n <= 17`) and Poliakova (`n >= 95`). Each certificate is checked exactly by a standard-library verifier with two independent methods. The range `55 <= n <= 94` remains open and nothing is claimed there; the heuristic searches stopped at `n = 55`, which is not evidence for the conjecture. For `41 <= n <= 54` the speeds are not `1..n`, as the conjecture allows. Not formalized. Contributed by [@aadrianvv](https://github.com/aadrianvv). [Issue #110](https://github.com/1337isnot1337/solved-conjectures/issues/110)

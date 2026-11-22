@@ -15,6 +15,7 @@ public import Conjectures.AgnosticVC.ProjectionInverse
 public import Conjectures.AgnosticVC.ProjectionOverlap
 public import Conjectures.AgnosticVC.DeletionSum
 public import Conjectures.AgnosticVC.FixedPool
+public import Conjectures.AgnosticVC.FixedPairing
 public import Conjectures.AgnosticVC.VCMeasurability
 public import Conjectures.AgnosticVC.ProjectionScore
 public import Conjectures.AgnosticVC.ProjectionWeightFubini

@@ -1,5 +1,6 @@
 module
 
+public import Conjectures.AgnosticVC.FixedPairing
 public import Conjectures.AgnosticVC.KLRates
 public import Mathlib.InformationTheory.KullbackLeibler.DataProcessing
 
@@ -58,6 +59,16 @@ theorem properLearner_coarseKL_le {H X : Type*} [MeasurableSpace H] [Nonempty H]
   refine (Set.finite_range em).subset fun sh hsh => ?_
   obtain ⟨v, hv⟩ := originalPoolJoint_supported hd hn predict z hsh
   exact ⟨(sh.1,v), Prod.ext rfl hv⟩
+
+/-- The Mathlib KL divergence on each deterministic paired pool is bounded even
+with arbitrary measurable output spaces. The bound gives a constant measurable
+majorant for the pool statistic. -/
+theorem properLearner_fixedPairing_KL_le {H X : Type*} [MeasurableSpace H]
+    [Nonempty H] [TraceOrder H] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
+    (hvc : HasVCDimensionAtMost predict d) (z : Pool n X) :
+    originalPoolKL (properLearner hd hn predict) z ≤ ENNReal.ofReal (19712 * d) :=
+  (properLearner_coarseKL_le hd hn predict z).trans
+    (ENNReal.ofReal_le_ofReal (properLearner_fixedPairing_information_le hd hn predict hvc z))
 
 /-- The iid KL bound for arbitrary prescribed output measurable structures, by domination
 by the measurable complete-name information statistic. -/
