@@ -1,0 +1,85 @@
+name: Lean Steinke–Zakynthinou thresholds
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-steinke-zakynthinou.yml'
+      - 'lean/Conjectures/SteinkeZakynthinou.lean'
+      - 'lean/Conjectures/SteinkeZakynthinou/**'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/audit_lean_all_owned.py'
+      - 'scripts/replay_lean.py'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: false
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Build the threshold proof with the pinned toolchain
+        working-directory: lean
+        run: |
+          imports=$(awk '$1 == "public" && $2 == "import" && $3 ~ /^Mathlib[.]/ { print $3 }' \
+            Conjectures/SteinkeZakynthinou.lean Conjectures/SteinkeZakynthinou/*.lean | sort -u)
+          mapfile -t modules <<< "$imports"
+          lake exe cache get "${modules[@]}"
+          lake build Conjectures.SteinkeZakynthinou
+      - name: Check strict sources and audit all declarations
+        env:
+          PYTHONPATH: scripts
+        run: |
+          python3 - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+          from tempfile import TemporaryDirectory
+
+          from audit_lean_all_owned import audit_source, validate_log
+          from replay_lean import local_closure
+
+          lean = Path("lean").resolve()
+          modules = sorted(local_closure(lean, {"Conjectures.SteinkeZakynthinou"}))
+          required = [
+              "SteinkeZakynthinou.properThresholdTheorem",
+              "SteinkeZakynthinou.properThresholdTheorem_bits",
+          ]
+          command = ["lake", "env", "lean", "-j1", "-DwarningAsError=true"]
+          for module in modules:
+              subprocess.run([*command, module.replace(".", "/") + ".lean"], cwd=lean, check=True)
+
+          with TemporaryDirectory() as tmp:
+              path = Path(tmp) / "ThresholdAudit.lean"
+              path.write_text(audit_source(modules, required, []), encoding="utf-8")
+              result = subprocess.run([*command, str(path)], cwd=lean, stdout=subprocess.PIPE, text=True)
+              if result.returncode:
+                  print(result.stdout)
+                  raise SystemExit(result.returncode)
+              audit = validate_log(result.stdout, {"modules": modules, "required": required,
+                                                  "legacy_prefixes": []}, dict.fromkeys(modules, True))
+              if any(audit["declarations"][name]["kind"] != "theorem" for name in required):
+                  raise SystemExit("A required threshold endpoint is not a theorem")
+              print(json.dumps(audit["summary"], indent=2))
+          PY
+      - name: Replay the threshold proof in the pinned kernel
+        working-directory: lean
+        run: lake env python3 ../scripts/replay_lean.py --root Conjectures.SteinkeZakynthinou
