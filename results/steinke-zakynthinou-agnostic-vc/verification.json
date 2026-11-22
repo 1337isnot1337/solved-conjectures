@@ -119,5 +119,59 @@
       "AgnosticVC.steinkeZakynthinou_of_measurable_orderedERM"
     ],
     "manuscript": "paper.pdf, Proposition 6.2"
+  },
+  "completed_iid_obstruction": {
+    "github_actions": {
+      "conclusion": "success",
+      "headSha": "e24cae081c0788dce49553cbb5439c49144ebd8c",
+      "status": "completed",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44988842278"
+    },
+    "all_owned_declaration_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1242,
+      "modules": 75,
+      "private_declarations": 489,
+      "raw_declarations": 1242,
+      "required": 76,
+      "tag": "passed",
+      "theorems": 1004
+    },
+    "kernel_replayed_modules": 75,
+    "theorems": [
+      "AgnosticVC.exists_unitInterval_vcOne_labeled_completed_kernel_full_excess",
+      "AgnosticVC.exists_unitInterval_vcOne_labeled_completed_kernel_no_rate"
+    ]
+  },
+  "completed_iid_ordered_erm": {
+    "github_actions": {
+      "conclusion": "success",
+      "headSha": "3d5e7c960f9eb0775ff61c60c7b5a350d8f65ad4",
+      "status": "completed",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44989198250"
+    },
+    "all_owned_declaration_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1285,
+      "modules": 77,
+      "private_declarations": 502,
+      "raw_declarations": 1285,
+      "required": 78,
+      "tag": "passed",
+      "theorems": 1030
+    },
+    "kernel_replayed_modules": 77,
+    "theorems": [
+      "AgnosticVC.iid_fixedLabel_readout_measurable",
+      "AgnosticVC.steinkeZakynthinou_of_iid_orderedERM"
+    ]
   }
 }
