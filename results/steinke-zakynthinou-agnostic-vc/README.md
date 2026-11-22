@@ -11,6 +11,8 @@
 
 The first estimate compares with the infimum of ordinary zero–one losses. The second uses the joint distribution of the selector and the named hypothesis. Lean identifies its discrete information formula with Mathlib’s KL divergence from the product of their marginals when output singletons are measurable. For any other prescribed output measurable space, Lean proves that its KL is bounded above by the same complete-name information. [Arbitrary output measurable spaces](../../lean/Conjectures/AgnosticVC/CoarseKL.lean) · [Empirical loss and infimum](../../lean/Conjectures/AgnosticVC/EmpiricalInfimum.lean) · [Joint and marginal laws](../../lean/Conjectures/AgnosticVC/OriginalInformation.lean) · [KL theorem](../../lean/Conjectures/AgnosticVC/KLRates.lean)
 
+**Lean status:** Partial. The verified rates retain the stated measurability hypotheses.
+
 ## Scope
 
 The [scope audit](SCOPE.md) compares the original definitions with the formal hypotheses and gives a VC-one obstruction to unrestricted Borel selection.

@@ -41,6 +41,7 @@ EXTERNAL_CREDIT = {
     ),
 }
 PARTIAL_CATEGORIES = {
+    "steinke-zakynthinou-agnostic-vc": "Information complexity of learning",
     "frankl-generator-families": "Combinatorics",
     "lonely-runner-two-insertions": "Lonely runners",
     "erdos-gyarfas-abelian-covers": "Graph theory and discrete geometry",
@@ -54,6 +55,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Steinke–Zakynthinou’s agnostic VC learning conjecture": "steinke-zakynthinou-agnostic-vc",
     "Steinke–Zakynthinou agnostic threshold problem": "steinke-zakynthinou-thresholds",
     "Johnson's conjecture": "johnson-pfaffian",
     "Brown–Mol's conjecture": "brown-mol",

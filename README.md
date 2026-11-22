@@ -10,7 +10,6 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Verification |
 | :--- | :---: |
-| [Steinke–Zakynthinou’s agnostic VC learning conjecture](results/steinke-zakynthinou-agnostic-vc/) | 🟡 |
 | [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ |
 | [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | ⬜ |
 | [Brown–Mol's conjecture](results/brown-mol/) | ✅ |
@@ -95,6 +94,7 @@ For the 🟢 Lonely Runner results, the written proofs reduce the classification
 
 This section is ordered by the significance of the partial contributions.
 
+- [Steinke–Zakynthinou’s agnostic VC learning conjecture](results/steinke-zakynthinou-agnostic-vc/). Lean verifies the rates under the stated measurable-selection hypothesis.
 - [Frankl’s union-closed sets conjecture](results/frankl-generator-families/). A four-position generator theorem and a frequency bound for regular, high-girth incidence graphs. Both all-point frequency bounds are fully Lean-verified, including the high-girth theorem for every uniform generator size at least three. The cyclic span-four formalization remains incomplete. [Checked scope](docs/lean-status.md#complete-frankl-high-girth-frequency-theorem).
 - [Lonely Runner Conjecture](results/lonely-runner-two-insertions/). Two arbitrary speeds can be adjoined to every Goddyn–Wong simultaneous acceleration. The full prescribed-interval theorem, acceleration bridge, unbounded and finite cases, common-dilation value bound, and three-insertion obstruction are Lean-verified. [Checked scope](docs/lean-status.md#complete-unrestricted-two-speed-insertion-theorem).
 - [Erdős–Sauer conjecture](docs/erdos-sauer-research.md). The hypergraph decomposition bound holds asymptotically for each fixed uniformity.
