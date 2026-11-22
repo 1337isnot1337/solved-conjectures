@@ -39,6 +39,8 @@ At the counterexample sample size $`n=m`$, the dependence on $`m`$ in the unifor
 
 This obstruction applies to the empirical requirement under the literal all-class statement with completed-iid learners. It persists if the class is required to have distribution-uniform asymptotic convergence in outer probability. Standard Borel parametrization, analyticity of the finite-trace feasibility relation, and measurability of all uniform-deviation events are stronger regularity requirements. The written counterexample here does not impose them. Under those requirements the general completed-iid question remains open in this repository. The sponsors can clarify which regularity convention governs their bounty.
 
+In fact the finite-support class admits no jointly Borel parametrization by a standard Borel space, even allowing repeated names. On the ordered sector pattern, the existence of one hypothesis predicting every row positive would be the analytic projection of a Borel relation. That projection is exactly the matching $`G`$. For $`m\ge2`$ its countable sections force every measurable subset to have product measure zero, and its full outer measure makes it nonmeasurable in the completion. Analytic sets are measurable in every such completion.
+
 ## Universal measurability on the sample space
 
 If a learner's scalar expected loss is required to be measurable under the completion of **every** sample-space probability law, one class with support size two suffices for every candidate constant. It has expected outer uniform deviation at most $`7/(2\sqrt n)`$ for all iid laws and sample sizes, by the estimate above with $`m=2`$.
