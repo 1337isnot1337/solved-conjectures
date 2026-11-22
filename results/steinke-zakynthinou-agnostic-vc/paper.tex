@@ -27,21 +27,24 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-For a nonempty binary hypothesis class of VC dimension at most $d$ and
-$n\ge d\ge1$, we construct a proper randomized learner whose expected empirical error on every sample is within
-$583\sqrt{d/n}$ of the class optimum. On every fixed pool of $2n$ labeled
-observations, its selector information, averaged over uniform orderings of the
-pool, is at most $19{,}712d$ nats. This bound concerns the identity of the
-returned classifier. Exchangeability gives the iid bound whenever the
-pool statistic is almost everywhere measurable. Measurability of trace realizability, representative extensions and output
-events gives a single Markov learner for every iid law.
-This includes arbitrary classes on countable discrete domains and classes
-with a countable measurable subclass realizing all their finite traces. For a given feature law it also suffices that the globally tie-broken
-empirical minimizer is measurable for iid features with independent fair
-labels after completion. We give a VC-one class on the unit interval for
-which every proper learner on one completed iid law has empirical excess
-one on some sample. A separate standard Borel example shows that the
-constructed learner can fail to be measurable for every global tie-breaking order.
+Let $\HH$ be a nonempty binary class of VC dimension at most $d$, with $n\ge d\ge1$.
+We construct a proper randomized learner whose expected empirical error is
+within $583\sqrt{d/n}$ of the class optimum on every labeled sample. On every
+fixed pool of $2n$ observations, the selector information of the returned
+classifier, averaged over uniform orderings of the pool, is at most
+$19{,}712d$ nats. Exchangeability gives the iid bound whenever the pool
+statistic is almost everywhere measurable.
+
+For the original conditional mutual information, a sufficient condition is
+that the empirical minimizer chosen by a fixed global order be measurable
+under iid features with independent fair labels, after completion. This criterion assumes
+jointly measurable evaluation and measurable output singletons. The rates also hold for arbitrary classes on countable discrete
+domains. Two VC-one examples delineate the scope of the result. On the unit
+interval, every proper learner measurable for one completed iid law has
+empirical excess one on some sample at every positive size. On a separate
+standard Borel class, an ordinary Borel empirical minimizer exists, yet
+every global tie-breaking order makes our randomized learner nonmeasurable
+under one fixed iid law at every size $n\ge2$.
 \end{abstract}
 
 \section{Introduction}\label{sec:statement}
@@ -610,11 +613,17 @@ Fernandes and Rodrigues constructed an interval example in ZFC and exhibited
 a proper consistent learner that fails PAC learning \cite{campos}. Here the
 class contains only null sets, the labels are always positive, and the
 conclusion concerns every proper randomized learner on the completed law.
-The same example prevents a uniform-convergence interpretation of the
-usual VC theorem for all such classes. Every hypothesis has population loss
-one, yet on $U^n$ some hypothesis has empirical loss zero. This distinction
-matters when comparing the example with the assumptions implicit in the
-published problem.
+To check the uniform-convergence baseline, normalize Lebesgue measure on
+a measurable hull $V$ of $U$ and call the resulting probability $Q$.
+Because $U\subseteq V$ and $P(V)=P^*(U)>0$, the set $U$ has outer
+$Q$-measure one. Every member of the chain remains null. The product
+$U^n$ has outer $Q^n$-measure one: a measurable set of positive product
+measure meets $U^n$, by iteratively choosing a coordinate in $U$ whose
+section still has positive measure. On $U^n$ some member fits all positive
+labels and has population loss one. Thus the supremum of the empirical
+deviations is one on a set of outer probability one at every size.
+A convention ensuring the usual VC uniform-convergence theorem can
+exclude this class.
 
 \subsection{A standard Borel class without a measurable ordered minimizer}
 
@@ -684,6 +693,31 @@ a different well-order. The argument applies even when $n$ makes the empirical a
 smaller than one. Whether a different learner satisfies Conjecture~6 for
 every standard Borel VC class is a separate existence question.
 
+\begin{proposition}\label{prop:circle-ordinary}
+The circle class in Proposition~\ref{prop:circle} admits a Borel proper
+empirical risk minimizer at every sample size.
+\end{proposition}
+\begin{proof}
+Fix a sequence $b_1,b_2,\ldots$ in pairwise different cosets of $G$.
+It exists because each coset is countable and $T$ is uncountable.
+For a sample of size $n$ with circle coordinates $x_1,\ldots,x_n$, enumerate
+as candidates all the $b_j$ and all the $x_i+g$ for $1\le i\le n$, $g\in G$.
+This is a countable list of Borel functions of the sample, with a fixed
+enumeration for each $n$.
+
+Every realized trace occurs in the list. If a parameter predicts one
+somewhere, it belongs to the coset of that row's circle coordinate in
+the first copy, or equals the coordinate in the second copy. In either
+case it is a candidate. For the all-zero trace choose a $b_j$ outside the
+finitely many cosets $x_i+G$. That parameter predicts zero at every row.
+Each candidate's mistake count is measurable. Choose the first index
+attaining the minimum of these counts. The event that index $j$ is selected
+requires its count to be strictly smaller than the earlier counts and no
+larger than any later count. This is a countable intersection of Borel
+events. Returning its candidate is therefore Borel, and its empirical
+loss is the class minimum.
+\end{proof}
+
 \paragraph{Relation to Conjecture 6.}
 The authors define population CMI using random variables
 \cite[Definition~3]{problem}. In the companion paper, the worst-case CMI
@@ -701,7 +735,9 @@ iid laws. If the intended class is restricted by the measurability
 conventions of VC learning, that example can be excluded. Proposition~\ref{prop:circle} shows that the
 ordered construction itself can fail on standard Borel spaces. Proving
 \eqref{eq:conj} for all such classes under iid completion would require
-a different choice of learner on at least some of them.
+a different choice of learner on at least some of them. Proposition~\ref{prop:circle-ordinary}
+shows that ordinary Borel empirical minimization on the circle class is
+possible. Its information cost is a further question.
 
 \appendix
 \section{The empirical-process estimate with constants}\label{app:emp}
@@ -1423,8 +1459,8 @@ common-block deletion sum in the information argument.
 The Lean kernel checks the formal propositions under their stated hypotheses. The table
 below gives the correspondence needed to review their interpretation as a
 learning experiment. Section~\ref{sec:scope} compares the resulting theorem
-with the original conjecture. Both Borel obstructions in that section are
-formalized, including the existence of a continuous map with non-Borel range.
+with the original conjecture. The formalization of the Borel obstructions
+includes the existence of a continuous map with non-Borel range.
 
 The declarations below belong to the namespace \texttt{AgnosticVC}.
 The \href{https://github.com/1337isnot1337/solved-conjectures/tree/fc810afee89754366e8e13c8bb8a847c624c3a8c/lean/Conjectures/AgnosticVC}{pinned source of the rate proof}
@@ -1440,9 +1476,9 @@ with a \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/44
 The completed-law rate and counterexample are in the
 \href{https://github.com/1337isnot1337/solved-conjectures/tree/3d5e7c960f9eb0775ff61c60c7b5a350d8f65ad4/lean/Conjectures/AgnosticVC}{completed-law development}, with a
 \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/44989198250}{77-module kernel replay}.
-The \href{https://github.com/1337isnot1337/solved-conjectures/tree/d5621cb4d901409547f7aa279c317c862fab2a4b/lean/Conjectures/AgnosticVC}{circle construction and conditional kernels} are covered by the same verification workflow.
-The obstruction applies to arbitrary proper Markov kernels, including kernels
-whose output laws have infinite support.
+The \href{https://github.com/1337isnot1337/solved-conjectures/tree/4aca5e474562883d5d002eae08c242249237e9e6/lean/Conjectures/AgnosticVC}{source for the full manuscript}
+and its \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/44991137113}{verification run} also include the circle examples, the
+conditional kernel for a completed iid law, and the uniform-deviation theorem for the null chain.
 
 {\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.13}
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{.36\linewidth}>{\raggedright\arraybackslash}p{.60\linewidth}@{}}
@@ -1468,6 +1504,8 @@ Conditional law on the completed pool & \decl{exists_completed_iid_joint_kernel}
 Orbit representatives on the circle & \decl{no_measurable_circleOrbitTransversal}, \decl{circleOrbit_orderedERM_counterexample} \\
 Recovery from the output law & \decl{properLearner_traceEvent_pos_iff}, \decl{measurable_canonicalRep_of_output} \\
 Failure for every size $n\ge2$ & \decl{circleOrbit_output_not_measurable_all_large} \\
+Uniform deviations under a normalized law & \decl{exists_unitInterval_nullGdelta_chain_full_outer_samples} \\
+Ordinary Borel empirical minimization & \decl{exists_measurable_erm_of_countable_candidates}, \decl{circleOrbit_exists_measurableERM} \\
 Choice of a suitable well-order & \decl{exists_order_of_countable_trace_core} \\
 Pointwise limits and continuous parameters & \decl{finite_trace_core_of_pointwise_limits}, \decl{exists_order_of_separable_continuous_predict} \\
 Rational cuts for real thresholds & \decl{rational_threshold_realizes_finite_trace} \\

@@ -25,7 +25,7 @@ A further sufficient condition uses the empirical risk minimizer constructed by 
 
 For a fixed labeled law, it suffices to test the ordered minimizer on iid features with independent fair labels, after completing that one experiment at each sample size. The learner and its constants are independent of the law. In the opposite direction, one VC-one class on the unit interval prevents every proper randomized learner on a completed iid law from attaining empirical excess below one on every sample. That class also violates VC uniform convergence. These results leave the prize interpretation open. [Positive theorem](../../lean/Conjectures/AgnosticVC/IidOrderedRates.lean) · [Counterexample](../../lean/Conjectures/AgnosticVC/LabeledNullChain.lean)
 
-A separate example on standard Borel spaces proves that the actual randomized learner can fail completed-iid measurability for every choice of tie-breaking order, for arbitrarily large samples. The scope issue therefore affects the construction itself. A different learner on those classes remains possible. [Circle example](../../lean/Conjectures/AgnosticVC/OrbitOutputAllSizes.lean)
+A separate example on standard Borel spaces proves that the actual randomized learner can fail completed-iid measurability for every choice of tie-breaking order, at every sample size of at least two. This class admits a Borel learner that exactly minimizes empirical errors at every size. Its existence alone gives no information bound. [Circle example](../../lean/Conjectures/AgnosticVC/OrbitOutputAllSizes.lean) · [Borel empirical minimizer](../../lean/Conjectures/AgnosticVC/OrbitMeasurableERM.lean)
 
 ## Proof and verification
 

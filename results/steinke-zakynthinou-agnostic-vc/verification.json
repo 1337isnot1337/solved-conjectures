@@ -173,5 +173,33 @@
       "AgnosticVC.iid_fixedLabel_readout_measurable",
       "AgnosticVC.steinkeZakynthinou_of_iid_orderedERM"
     ]
+  },
+  "circle_ordered_output": {
+    "github_actions": {
+      "conclusion": "success",
+      "headSha": "d5621cb4d901409547f7aa279c317c862fab2a4b",
+      "status": "completed",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44990427792"
+    },
+    "all_owned_declaration_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1382,
+      "modules": 86,
+      "private_declarations": 518,
+      "raw_declarations": 1382,
+      "required": 87,
+      "tag": "passed",
+      "theorems": 1111
+    },
+    "kernel_replayed_modules": 86,
+    "theorems": [
+      "AgnosticVC.circleOrbit_orderedERM_counterexample",
+      "AgnosticVC.circleOrbit_output_not_measurable_all_large",
+      "AgnosticVC.exists_completed_iid_joint_kernel"
+    ]
   }
 }
