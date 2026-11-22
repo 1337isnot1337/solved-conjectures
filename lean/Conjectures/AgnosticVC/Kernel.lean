@@ -143,27 +143,31 @@ private noncomputable def traceEventMass {n d : ℕ} (predict : H → X → Bool
   exact if ∃ hv : v ∈ sampleFamily predict x, canonicalRep predict x ⟨v, hv⟩ ∈ B
     then ENNReal.ofReal (familyMass (schedule n d) (sampleFamily predict x) y v) else 0
 
-private lemma measurable_traceEventMass {n d : ℕ} (predict : H → X → Bool)
-    (hsel : HasMeasurableCanonicalRepresentatives predict) (B : Set H) (hB : MeasurableSet B)
-    (v : Finset (Fin n)) : Measurable (traceEventMass (d := d) predict B v) := by
+omit [MeasurableSpace H] in
+private lemma measurable_traceEventMass_on {Ω : Type*} [MeasurableSpace Ω] {n d : ℕ}
+    (predict : H → X → Bool) (z : Ω → Fin n → X × Bool) (hz : Measurable z)
+    (hreal : ∀ v : Finset (Fin n), MeasurableSet {w : Ω |
+      v ∈ sampleFamily predict (fun i => (z w i).1)})
+    (B : Set H) (v : Finset (Fin n))
+    (hrep : MeasurableSet {w : Ω | ∃ hv : v ∈ sampleFamily predict (fun i => (z w i).1),
+      canonicalRep predict (fun i => (z w i).1) ⟨v, hv⟩ ∈ B}) :
+    Measurable (fun w : Ω => traceEventMass (d := d) predict B v (z w)) := by
   classical
-  let x (z : Fin n → X × Bool) := fun i => (z i).1
-  let y (z : Fin n → X × Bool) := fun i => (z i).2
-  let c (z : Fin n → X × Bool) := (sampleFamily predict (x z), y z)
-  have mx : Measurable x := Measurable.of_eval fun i => measurable_fst.comp (measurable_pi_apply i)
-  have my : Measurable y := Measurable.of_eval fun i => measurable_snd.comp (measurable_pi_apply i)
+  let x (w : Ω) := fun i => (z w i).1
+  let y (w : Ω) := fun i => (z w i).2
+  let c (w : Ω) := (sampleFamily predict (x w), y w)
+  have my : Measurable y := Measurable.of_eval fun i =>
+    measurable_snd.comp ((measurable_pi_apply i).comp hz)
   have hcode (a : Finset (Finset (Fin n)) × (Fin n → Bool)) :
-      MeasurableSet {z : Fin n → X × Bool | c z = a} := by
+      MeasurableSet {w : Ω | c w = a} := by
     rcases a with ⟨F,l⟩
-    exact measurableSet_fiber_prod
-      (mx (measurableSet_sampleFamily_eq hsel.toHasMeasurableTraceSelection F))
+    exact measurableSet_fiber_prod (measurableSet_sampleFamily_eq_on x hreal F)
       (my (measurableSet_singleton l))
-  have hmass : Measurable (fun z : Fin n → X × Bool => familyMass (schedule n d) (c z).1 (c z).2 v) :=
+  have hmass : Measurable (fun w : Ω => familyMass (schedule n d) (c w).1 (c w).2 v) :=
     measurable_of_finite_code c hcode _ (fun h =>
       congrArg (fun a => familyMass (schedule n d) a.1 a.2 v) h)
-  have hre := mx (hsel.representative_event (Fin n) v B hB)
   unfold traceEventMass
-  exact Measurable.ite hre (ENNReal.measurable_ofReal.comp hmass) measurable_const
+  exact Measurable.ite hrep (ENNReal.measurable_ofReal.comp hmass) measurable_const
 
 omit [MeasurableSpace X] in
 private lemma properLearner_toMeasure_eq_traceEventMass [Nonempty H] {n d : ℕ}
@@ -195,15 +199,33 @@ private lemma properLearner_toMeasure_eq_traceEventMass [Nonempty H] {n d : ℕ}
     _ = ∑ v ∈ F, f v := Finset.sum_coe_sort F f
     _ = _ := Finset.sum_subset (Finset.subset_univ F) fun v _ hv => hZ v hv
 
-/-- The probability law on actual returned hypotheses is a measurable measure-valued map. -/
-theorem measurable_properLearner_toMeasure [Nonempty H] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
-    (predict : H → X → Bool) (hsel : HasMeasurableCanonicalRepresentatives predict) :
-    Measurable (fun z : Fin n → X × Bool => (properLearner hd hn predict z).toMeasure) := by
+/-- The output law is measurable on any labeled-row space on which trace realizability
+and representative membership events are measurable. -/
+theorem measurable_properLearner_toMeasure_on [Nonempty H] {Ω : Type*} [MeasurableSpace Ω]
+    {n d : ℕ} (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
+    (z : Ω → Fin n → X × Bool) (hz : Measurable z)
+    (hreal : ∀ v : Finset (Fin n), MeasurableSet {w : Ω |
+      v ∈ sampleFamily predict (fun i => (z w i).1)})
+    (hrep : ∀ (v : Finset (Fin n)) (B : Set H), MeasurableSet B →
+      MeasurableSet {w : Ω | ∃ hv : v ∈ sampleFamily predict (fun i => (z w i).1),
+        canonicalRep predict (fun i => (z w i).1) ⟨v, hv⟩ ∈ B}) :
+    Measurable (fun w : Ω => (properLearner hd hn predict (z w)).toMeasure) := by
   classical
   apply Measure.measurable_of_measurable_coe
   intro B hB
   simp_rw [properLearner_toMeasure_eq_traceEventMass hd hn predict B hB]
-  exact Finset.measurable_sum _ fun v _ => measurable_traceEventMass predict hsel B hB v
+  exact Finset.measurable_sum _ fun v _ => measurable_traceEventMass_on predict z hz hreal B v
+    (hrep v B hB)
+
+/-- The probability law on actual returned hypotheses is a measurable measure-valued map. -/
+theorem measurable_properLearner_toMeasure [Nonempty H] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
+    (predict : H → X → Bool) (hsel : HasMeasurableCanonicalRepresentatives predict) :
+    Measurable (fun z : Fin n → X × Bool => (properLearner hd hn predict z).toMeasure) := by
+  have hx : Measurable (fun z : Fin n → X × Bool => fun i => (z i).1) :=
+    Measurable.of_eval fun i => measurable_fst.comp (measurable_pi_apply i)
+  exact measurable_properLearner_toMeasure_on hd hn predict id measurable_id
+    (fun v => hx (hsel.realizes (Fin n) v))
+    (fun v B hB => hx (hsel.representative_event (Fin n) v B hB))
 
 /-- The learner viewed as a Markov kernel with actual hypotheses as its output space. -/
 noncomputable def properLearnerKernel [Nonempty H] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)

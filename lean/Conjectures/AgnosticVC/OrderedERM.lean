@@ -54,6 +54,27 @@ private theorem ermMistakes_eq_zero_iff {I : Type} [Fintype I] [DecidableEq I]
     have hj : predict h (x j) = true ↔ j ∈ v := by rw [← mem_sampleTrace, hfit]
     cases hp : predict h (x j) <;> simpa [hp] using hj
 
+/-- On a realizable labeled sample, the globally first empirical minimizer is the
+canonical representative of its trace. This statement needs no measurability. -/
+theorem canonicalRep_eq_orderedERM_of_fit {I : Type} [Fintype I] [DecidableEq I] [TraceOrder H]
+    (e : Fin (Fintype.card I) ≃ I) (predict : H → X → Bool)
+    (x : I → X) (v : Finset I) (hv : v ∈ sampleFamily predict x) (g : H)
+    (hmin : ∀ h, ermMistakes predict (fun i => (x (e i), decide (e i ∈ v))) g ≤
+      ermMistakes predict (fun i => (x (e i), decide (e i ∈ v))) h)
+    (htie : ∀ h, TraceOrder.rel h g →
+      ermMistakes predict (fun i => (x (e i), decide (e i ∈ v))) g <
+      ermMistakes predict (fun i => (x (e i), decide (e i ∈ v))) h) :
+    canonicalRep predict x ⟨v,hv⟩ = g := by
+  obtain ⟨h, hh⟩ := mem_sampleFamily.mp hv
+  have hz := Nat.eq_zero_of_le_zero ((hmin h).trans_eq
+    ((ermMistakes_eq_zero_iff e predict x v h).mpr hh))
+  apply (canonicalRep_eq_iff predict x ⟨v,hv⟩ _).mpr
+  refine ⟨(ermMistakes_eq_zero_iff e predict x v _).mp hz, ?_⟩
+  intro a hlt ha
+  have hpos := htie a hlt
+  rw [hz, (ermMistakes_eq_zero_iff e predict x v a).mpr ha] at hpos
+  exact lt_irrefl _ hpos
+
 /-- A measurable ERM that chooses the first minimizer in the same global
 well-order at every size supplies all three selection events. Jointly measurable
 evaluation is used to test the output's predictions on other observations. -/
@@ -72,15 +93,8 @@ theorem hasMeasurableCanonicalRepresentatives_of_orderedERM
       canonicalRep predict x ⟨v,hv⟩ = readout I v x := by
     let e := (Fintype.equivFin I).symm
     let z := fun i => (x (e i), decide (e i ∈ v))
-    obtain ⟨h, hh⟩ := mem_sampleFamily.mp hv
-    have hz : ermMistakes predict z (erm.learn _ z) = 0 :=
-      Nat.eq_zero_of_le_zero ((erm.minimizes _ z h).trans_eq ((ermMistakes_eq_zero_iff e predict x v h).mpr hh))
-    apply (canonicalRep_eq_iff predict x ⟨v,hv⟩ _).mpr
-    refine ⟨(ermMistakes_eq_zero_iff e predict x v _).mp hz, ?_⟩
-    intro g hlt hg
-    have hpos := erm.breaks_ties _ z g hlt
-    rw [hz, (ermMistakes_eq_zero_iff e predict x v g).mpr hg] at hpos
-    exact (lt_irrefl _ hpos)
+    exact canonicalRep_eq_orderedERM_of_fit e predict x v hv (erm.learn _ z)
+      (erm.minimizes _ z) (erm.breaks_ties _ z)
   have trace_event {I : Type} [Fintype I] (h : (I → X) → H) (mh : Measurable h) (v : Finset I) :
       MeasurableSet {w | sampleTrace predict w (h w) = v} := by
     have he {w : I → X} : sampleTrace predict w (h w) = v ↔

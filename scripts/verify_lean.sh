@@ -326,6 +326,8 @@ modules=(
   Conjectures.AgnosticVC.NullChainDimension
   Conjectures.AgnosticVC.NullChainObstruction
   Conjectures.AgnosticVC.CompletedKernel
+  Conjectures.AgnosticVC.IidOrderedERM
+  Conjectures.AgnosticVC.IidOrderedRates
   Conjectures.AgnosticVC.IidNullChainExample
   Conjectures.AgnosticVC.LabeledNullChain
   Conjectures.AgnosticVC

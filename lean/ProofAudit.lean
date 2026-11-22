@@ -52,6 +52,8 @@ run_cmd do
     `AgnosticVC.exists_order_of_countable_trace_core,
     `AgnosticVC.hasMeasurableCanonicalRepresentatives_of_orderedERM,
     `AgnosticVC.steinkeZakynthinou_of_measurable_orderedERM,
+    `AgnosticVC.iid_fixedLabel_readout_measurable,
+    `AgnosticVC.steinkeZakynthinou_of_iid_orderedERM,
     `AgnosticVC.exists_nullGdelta_chain,
     `AgnosticVC.measure_selfHit_eq_zero_of_null_chain,
     `AgnosticVC.exists_full_excess_completed_kernel,

@@ -105,20 +105,27 @@ theorem hasMeasurableTraceSelection_of_countable [Countable H] (predict : H → 
       exact (hsmall g).compl
     · simp [hgt]
 
-lemma measurableSet_sampleFamily_eq {I : Type} [Fintype I]
-    {predict : H → X → Bool} (hsel : HasMeasurableTraceSelection predict) (F : Finset (Finset I)) :
-    MeasurableSet {x : I → X | sampleFamily predict x = F} := by
+omit [MeasurableSpace X] [TraceOrder H] in
+lemma measurableSet_sampleFamily_eq_on {Ω I : Type*} [MeasurableSpace Ω] [Fintype I]
+    {predict : H → X → Bool} (x : Ω → I → X)
+    (hr : ∀ v, MeasurableSet {w | v ∈ sampleFamily predict (x w)})
+    (F : Finset (Finset I)) : MeasurableSet {w | sampleFamily predict (x w) = F} := by
   classical
-  rw [show {x : I → X | sampleFamily predict x = F} =
-    ⋂ v : Finset I, {x : I → X | v ∈ sampleFamily predict x ↔ v ∈ F} by
-      ext x; simp only [Set.mem_ofPred_eq, Set.mem_iInter, Finset.ext_iff]]
+  rw [show {w | sampleFamily predict (x w) = F} =
+      ⋂ v : Finset I, {w | v ∈ sampleFamily predict (x w) ↔ v ∈ F} by
+      ext w; simp only [Set.mem_ofPred_eq, Set.mem_iInter, Finset.ext_iff]]
   apply MeasurableSet.iInter
   intro v
   by_cases hv : v ∈ F
-  · simpa only [hv, iff_true] using hsel.realizes I v
-  · rw [show {x : I → X | v ∈ sampleFamily predict x ↔ v ∈ F} =
-      ({x : I → X | v ∈ sampleFamily predict x})ᶜ by ext x; simp [hv]]
-    exact (hsel.realizes I v).compl
+  · simpa only [hv, iff_true] using hr v
+  · rw [show {w | v ∈ sampleFamily predict (x w) ↔ v ∈ F} =
+        ({w | v ∈ sampleFamily predict (x w)})ᶜ by ext w; simp [hv]]
+    exact (hr v).compl
+
+lemma measurableSet_sampleFamily_eq {I : Type} [Fintype I]
+    {predict : H → X → Bool} (hsel : HasMeasurableTraceSelection predict) (F : Finset (Finset I)) :
+    MeasurableSet {x : I → X | sampleFamily predict x = F} :=
+  measurableSet_sampleFamily_eq_on id (hsel.realizes I) F
 
 lemma measurable_of_finite_code {Ω C : Type*} [MeasurableSpace Ω] [Finite C]
     (c : Ω → C) (hm : ∀ a : C, MeasurableSet {x : Ω | c x = a})
@@ -183,34 +190,44 @@ private noncomputable def subsampleCode {I K : Type} [Fintype I] [Fintype K]
     fun v t => decide (∃ hv : v ∈ sampleFamily predict (x ∘ e),
       (extendTrace predict x e ⟨v, hv⟩).val = t), fun j => (z j).2)
 
+private lemma measurableSet_subsampleCode_on {Ω : Type*} [MeasurableSpace Ω]
+    {I K : Type} [Fintype I] [Fintype K]
+    {predict : H → X → Bool} (z : Ω → I → X × Bool) (mz : Measurable z) (e : K → I)
+    (hfull : ∀ v, MeasurableSet {w | v ∈ sampleFamily predict (fun j => (z w j).1)})
+    (hpart : ∀ v, MeasurableSet {w | v ∈ sampleFamily predict (fun j => (z w (e j)).1)})
+    (hext : ∀ v t, MeasurableSet {w | ∃ hv : v ∈ sampleFamily predict (fun j => (z w (e j)).1),
+      (extendTrace predict (fun j => (z w j).1) e ⟨v,hv⟩).val = t})
+    (c : SubsampleCode I K) : MeasurableSet {w | subsampleCode predict e (z w) = c} := by
+  classical
+  rcases c with ⟨F,G,R,y⟩
+  have hR (v : Finset K) (t : Finset I) :
+      MeasurableSet {w | (subsampleCode predict e (z w)).2.2.1 v t = R v t} := by
+    let P (w : Ω) := ∃ hv : v ∈ sampleFamily predict (fun j => (z w (e j)).1),
+      (extendTrace predict (fun j => (z w j).1) e ⟨v,hv⟩).val = t
+    have hp : MeasurableSet {w | P w} := hext v t
+    change MeasurableSet {w | decide (P w) = R v t}
+    cases hr : R v t with
+    | false =>
+      rw [show {w | decide (P w) = false} = ({w | P w})ᶜ by ext w; simp]
+      exact hp.compl
+    | true => simpa using hp
+  have hy (i : I) : MeasurableSet {w | (z w i).2 = y i} :=
+    (measurable_snd.comp ((measurable_pi_apply i).comp mz)) (measurableSet_singleton _)
+  exact measurableSet_fiber_prod (measurableSet_sampleFamily_eq_on _ hfull F)
+    (measurableSet_fiber_prod (measurableSet_sampleFamily_eq_on _ hpart G)
+    (measurableSet_fiber_prod (measurableSet_fiber_pi fun v => measurableSet_fiber_pi (hR v))
+      (measurableSet_fiber_pi hy)))
+
 private lemma measurableSet_subsampleCode {I K : Type} [Fintype I] [Fintype K]
     {predict : H → X → Bool} (hsel : HasMeasurableTraceSelection predict) (e : K → I)
     (c : SubsampleCode I K) : MeasurableSet {z : I → X × Bool | subsampleCode predict e z = c} := by
-  classical
-  rcases c with ⟨F, G, R, y⟩
   have hx : Measurable (fun z : I → X × Bool => fun j => (z j).1) :=
     Measurable.of_eval fun i => measurable_fst.comp (measurable_pi_apply i)
-  have hxe : Measurable (fun z : I → X × Bool => (fun j => (z j).1) ∘ e) :=
+  have he : Measurable (fun z : I → X × Bool => fun j => (z (e j)).1) :=
     Measurable.of_eval fun j => measurable_fst.comp (measurable_pi_apply (e j))
-  have hF := hx (measurableSet_sampleFamily_eq hsel F)
-  have hG := hxe (measurableSet_sampleFamily_eq hsel G)
-  have hR (v : Finset K) (t : Finset I) :
-      MeasurableSet {z : I → X × Bool | (subsampleCode predict e z).2.2.1 v t = R v t} := by
-    let P (z : I → X × Bool) := ∃ hv : v ∈ sampleFamily predict ((fun j => (z j).1) ∘ e),
-      (extendTrace predict (fun j => (z j).1) e ⟨v, hv⟩).val = t
-    have h : MeasurableSet {z | P z} := hx (hsel.extension I K e v t)
-    change MeasurableSet {z | decide (P z) = R v t}
-    cases hr : R v t with
-    | false =>
-      rw [show {z | decide (P z) = false} = ({z | P z})ᶜ by ext z; simp]
-      exact h.compl
-    | true =>
-      simpa using h
-  have hy (i : I) : MeasurableSet {z : I → X × Bool | (z i).2 = y i} :=
-    (measurable_snd.comp (measurable_pi_apply i)) (measurableSet_singleton _)
-  exact measurableSet_fiber_prod hF (measurableSet_fiber_prod hG
-    (measurableSet_fiber_prod (measurableSet_fiber_pi fun v => measurableSet_fiber_pi (hR v))
-      (measurableSet_fiber_pi hy)))
+  exact measurableSet_subsampleCode_on id measurable_id e
+    (fun v => hx (hsel.realizes I v)) (fun v => he (hsel.realizes K v))
+    (fun v t => hx (hsel.extension I K e v t)) c
 
 noncomputable def familyMass {I : Type} [Fintype I] [DecidableEq I]
     (σ : Schedule) (F : Finset (Finset I)) (y : I → Bool) (v : Finset I) : ℝ :=
@@ -300,6 +317,25 @@ theorem poolInformation_finite_range [Nonempty H] {n d : ℕ} (hd : 0 < d) (hn :
   rintro a ⟨z, rfl⟩
   exact ⟨fun s => subsampleCode predict (fun i => (i, s i)) z,
     informationFromCode_eq hd hn predict z⟩
+
+/-- The pool statistic can be tested on any measurable supersample experiment. Only
+the actual selector embeddings and the traces they produce need measurable events. -/
+theorem measurable_poolInformation_on [Nonempty H] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
+    {Ω : Type*} [MeasurableSpace Ω] (predict : H → X → Bool) (z : Ω → Pool n X) (mz : Measurable z)
+    (hfull : ∀ v, MeasurableSet {w | v ∈ sampleFamily predict (fun j => (z w j).1)})
+    (hpart : ∀ (s : Fin n → Bool) v, MeasurableSet {w |
+      v ∈ sampleFamily predict (fun j => (z w (j,s j)).1)})
+    (hext : ∀ (s : Fin n → Bool) v t, MeasurableSet {w | ∃ hv :
+      v ∈ sampleFamily predict (fun j => (z w (j,s j)).1),
+      (extendTrace predict (fun j => (z w j).1) (fun i => (i,s i)) ⟨v,hv⟩).val = t}) :
+    Measurable (fun w => poolInformation hd hn predict (z w)) := by
+  classical
+  let c (w : Ω) (s : Fin n → Bool) := subsampleCode predict (fun i => (i,s i)) (z w)
+  refine measurable_of_finite_code c (fun a => measurableSet_fiber_pi fun s =>
+    measurableSet_subsampleCode_on z mz _ hfull (hpart s) (hext s) (a s)) _ ?_
+  intro u v h
+  rw [← informationFromCode_eq hd hn predict (z u), ← informationFromCode_eq hd hn predict (z v)]
+  exact congrArg (informationFromCode (schedule n d)) h
 
 /-- The finite conditional mutual information is measurable under the trace selection convention. -/
 theorem measurable_poolInformation [Nonempty H] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
