@@ -9,13 +9,9 @@ No prize has been submitted, accepted, or paid.
 
 ## Result
 
-For every positive sample size, the construction gives one measurable,
-distribution-independent randomized learner returning a finite closed
-real threshold. Its original conditional mutual information is less
-than 21 nats for every iid distribution, including arbitrary atoms and
-label noise. On every fixed labeled sample its expected empirical
-excess is at most $`2056/\sqrt n`$. The single constant 4096 safely fits
-both bounds in the exact sponsor statement, including conversion to bits.
+The Lean theorem gives one proper randomized learner for each positive sample size. Its original CMI is at most **300 nats** for every iid labeled distribution. On every sample its expected empirical excess is at most $`512/\sqrt n`$. The source comparator class includes the always-zero threshold at infinity. The returned finite real threshold has a Borel Markov law. [Lean scope review](LEAN_REVIEW.md) · [Source theorem](../../lean/Conjectures/SteinkeZakynthinou.lean)
+
+The [private-tag proof](PROOF.md) analyzes a different construction. It obtains less than 21 nats and empirical excess at most $`2056/\sqrt n`$.
 
 A [finite-coin version](EFFICIENCY.md) gives a worst-case polynomial-time proper learner with CMI below 23 nats and expected samplewise empirical excess at most $`2057/\sqrt n`$. It uses $`O(n\log(n+1))`$ fair bits and feature comparisons. The [implementation](efficient.py) accepts exact rational inputs. The efficiency provision adds 20% if the sponsors accept it.
 

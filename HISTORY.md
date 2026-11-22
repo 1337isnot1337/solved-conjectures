@@ -4,6 +4,10 @@
 
 The [manuscript](results/steinke-zakynthinou-agnostic-vc/paper.pdf) and [combined Lean theorem](lean/Conjectures/AgnosticVC/Theorem.lean) establish a partial result on the unrestricted Conjecture 6. The multiscale entropy learner returns a member of the original hypothesis class. Its original selector-information and all-sample empirical bounds are verified under the [documented measurability conventions](results/steinke-zakynthinou-agnostic-vc/). Independent review is pending.
 
+## 2026-11-21 — Measurable scope and source-class review
+
+The [general VC manuscript](results/steinke-zakynthinou-agnostic-vc/paper.pdf) now includes a formal correspondence for both VC-one obstructions to Borel learning. The positive result covers countable domains and classes with a countable measurable subclass that realizes every finite trace. The [threshold review](results/steinke-zakynthinou-thresholds/LEAN_REVIEW.md) verifies the returned cutoff as a Borel Markov kernel, the source comparator at infinity, and the integrated KL relative to the actual conditional marginals. The [combined threshold theorem](lean/Conjectures/SteinkeZakynthinou.lean) uses the same learner for all iid labeled distributions and all fixed samples.
+
 ## 2026-11-21 — Proper agnostic thresholds with constant original CMI
 
 Added a complete proposed proof of the separately rewarded threshold

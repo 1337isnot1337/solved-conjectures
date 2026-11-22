@@ -37,7 +37,7 @@ Section 3 expressly offers **US$20 for thresholds or US$15 for an improper learn
 
 ### Threshold endpoints
 
-The companion [full framework manuscript, arXiv:2001.09122v4](https://arxiv.org/pdf/2001.09122), Section 4.4, printed p. 25, defines
+The companion [full framework manuscript, arXiv:2001.09122v3](https://arxiv.org/pdf/2001.09122v3), Section 4.4, printed p. 25, defines
 
 
 ```math

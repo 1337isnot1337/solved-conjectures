@@ -1214,8 +1214,8 @@ common-block deletion sum in the information argument.
 The Lean kernel checks the formal propositions under their stated hypotheses. The table
 below gives the correspondence needed to review their interpretation as a
 learning experiment. Section~\ref{sec:scope} compares the resulting theorem
-with the original conjecture. The Borel obstructions there are proved
-directly in this paper and have not been formalized in Lean.
+with the original conjecture. Both Borel obstructions in that section are
+formalized, including the existence of a continuous map with non-Borel range.
 
 The declarations below belong to the namespace \texttt{AgnosticVC}.
 The \href{https://github.com/1337isnot1337/solved-conjectures/tree/fc810afee89754366e8e13c8bb8a847c624c3a8c/lean/Conjectures/AgnosticVC}{pinned source of the rate proof}
@@ -1225,10 +1225,11 @@ also verifies the linked proof commit. The run elaborated the sources
 with warnings treated as errors, audited 1,106 declarations, and replayed
 the compiled proofs. The only transitive axioms in that audit were
 \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
-The last two rows are subsequent scope results; their
-\href{https://github.com/1337isnot1337/solved-conjectures/tree/414756a65526512e6620f14d62b8bcd8ae200788/lean/Conjectures/AgnosticVC}{pinned source}
-and \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/44983740717}{separate verification run}
-are available alongside the original proof.
+The subsequent results on measurable selection and its obstructions are in the
+\href{https://github.com/1337isnot1337/solved-conjectures/tree/5bc0d6a223adfea55b073bfea735d9aadfe479b6/lean/Conjectures/AgnosticVC}{extended development},
+with a \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/44985489887}{separate verification run}.
+The obstruction applies to arbitrary proper Markov kernels, including kernels
+whose output laws have infinite support.
 
 {\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.13}
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{.36\linewidth}>{\raggedright\arraybackslash}p{.60\linewidth}@{}}
@@ -1247,6 +1248,13 @@ Fixed-pool and iid exchangeability & \decl{steinkeZakynthinou_fixedPool}, \decl{
 Measurable Markov learner & \decl{measurable_properLearner_toMeasure}, \decl{steinkeZakynthinou_conjecture6} \\
 Countable instance domain & \decl{steinkeZakynthinou_countable_domain} \\
 Countable initial segment realizing all traces & \decl{hasMeasurableCanonicalRepresentatives_of_countable_trace_core} \\
+Choice of a suitable well-order & \decl{exists_order_of_countable_trace_core} \\
+Pointwise limits and continuous parameters & \decl{finite_trace_core_of_pointwise_limits}, \decl{exists_order_of_separable_continuous_predict} \\
+Rational cuts for real thresholds & \decl{rational_threshold_realizes_finite_trace} \\
+Repeated positive observations & \decl{measurableSet_exists_predict_true_of_kernel_rate} \\
+Singleton classifiers on the unit interval & \decl{exists_unitInterval_singleton_obstruction} \\
+Continuous map with non-Borel range & \decl{exists_continuous_nat_nat_nonmeasurable_range} \\
+Standard Borel counterexample & \decl{exists_standardBorel_vcOne_no_accurateKernel}, \decl{borelPair_no_accurateKernel_rate} \\
 \bottomrule
 \end{longtable}}
 

@@ -20,7 +20,7 @@ def threshold_distribution(sample):
     n = len(ordered)
     costs = [sum(y == 0 for _, y in ordered)]
     for _, y in ordered:
-        costs.append(costs[-1] + 2 * y - 1)
+        costs.append(costs[-1] + 2 * int(y) - 1)
 
     sentinel = ordered[-1][0] + 1
     output = []

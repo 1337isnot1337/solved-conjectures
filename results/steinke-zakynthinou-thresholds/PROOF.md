@@ -59,8 +59,8 @@ distribution, so it changes none of the stated expectations or information
 quantities and makes the procedure everywhere defined.
 
 Part I proves constant original information and the required empirical
-accuracy through step 4. Part II proves that step 5 costs only a constant
-factor in information and preserves empirical loss. The final constant
+accuracy through step 4. Part II proves that step 5 preserves empirical loss and bounds the final
+information by twice the preceding information plus a universal additive constant. The final constant
 calculation appears after Part II. The proof never gives the learner a
 ghost sample or the underlying distribution.
 
