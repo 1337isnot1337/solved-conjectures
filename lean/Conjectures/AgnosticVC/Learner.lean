@@ -135,11 +135,10 @@ theorem learnedTraceMass_isLaw {σ : Schedule} (hτ : 0 < σ.temperature) (ha : 
   simp only [(traceLaw_isLaw σ predict x y _).2]
   simp
 
-variable [TraceOrder H]
-
-/-- The distribution on actual hypotheses. Sample-dependent trace indices stay internal. -/
-noncomputable def properLearner {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
-    (predict : H → X → Bool) (z : Fin n → X × Bool) : PMF H := by
+/-- Push the trace optimizer through a choice of named output for each trace. -/
+noncomputable def traceReadoutLearner {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
+    (predict : H → X → Bool) (z : Fin n → X × Bool)
+    (represent : TraceSpace predict (fun i => (z i).1) → H) : PMF H := by
   classical
   let x := fun i => (z i).1
   let y := fun i => (z i).2
@@ -148,6 +147,11 @@ noncomputable def properLearner {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
     (schedule_temperature_pos hd (hd.trans_le hn)) (schedule_coeff_nonneg n d) predict x y
   have hnorm : ∑ v, ENNReal.ofReal (w v) = 1 := by
     rw [← ENNReal.ofReal_sum_of_nonneg (fun v _ => hw.1 v), hw.2, ENNReal.ofReal_one]
-  exact (PMF.ofFintype (fun v => ENNReal.ofReal (w v)) hnorm).map (canonicalRep predict x)
+  exact (PMF.ofFintype (fun v => ENNReal.ofReal (w v)) hnorm).map represent
+
+/-- The distribution on actual hypotheses, using the globally ordered representatives. -/
+noncomputable def properLearner [TraceOrder H] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
+    (predict : H → X → Bool) (z : Fin n → X × Bool) : PMF H :=
+  traceReadoutLearner hd hn predict z (canonicalRep predict (fun i => (z i).1))
 
 end AgnosticVC

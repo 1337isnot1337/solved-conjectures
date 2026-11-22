@@ -161,17 +161,20 @@ noncomputable def empiricalError {H X : Type*} {n : ℕ} (predict : H → X → 
 /-- On every fixed sample, the actual proper learner's expected empirical error is within
 `583 * √(d / n)` of every comparator in the class. The expectation is over its finite
 support of actual hypothesis names. -/
-theorem properLearner_empirical_le {H X : Type*} [Nonempty H] [TraceOrder H] {n d : ℕ}
+theorem traceReadoutLearner_empirical_le {H X : Type*} [Nonempty H] {n d : ℕ}
     (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool) (hvc : HasVCDimensionAtMost predict d)
-    (z : Fin n → X × Bool) (h : H) :
-    (∑' t : H, (properLearner hd hn predict z t).toReal * empiricalError predict z t) ≤
+    (z : Fin n → X × Bool)
+    (represent : TraceSpace predict (fun i => (z i).1) → H)
+    (hrep : ∀ v, sampleTrace predict (fun i => (z i).1) (represent v) = v.val) (h : H) :
+    (∑' t : H, (traceReadoutLearner hd hn predict z represent t).toReal * empiricalError predict z t) ≤
       empiricalError predict z h + 583 * Real.sqrt ((d : ℝ) / n) := by
   classical
   let x := fun i => (z i).1
   let y := fun i => (z i).2
-  let q := properLearner hd hn predict z
+  let q := traceReadoutLearner hd hn predict z represent
   let law := learnedTraceMass (schedule n d) predict x y
-  let e : TraceSpace predict x ↪ H := ⟨canonicalRep predict x, canonicalRep_injective predict x⟩
+  let e : TraceSpace predict x ↪ H := ⟨represent, fun a b hab => Subtype.ext
+    ((hrep a).symm.trans ((congrArg (sampleTrace predict x) hab).trans (hrep b)))⟩
   let emp (u : TraceSpace predict x) := mistakeCount y (fun _ => 1) u.val
   have hp : IsLaw law := learnedTraceMass_isLaw (schedule_temperature_pos hd (hd.trans_le hn))
     (schedule_coeff_nonneg n d) predict x y
@@ -195,7 +198,7 @@ theorem properLearner_empirical_le {H X : Type*} [Nonempty H] [TraceOrder H] {n 
     · simp
   have hval (u : TraceSpace predict x) : empiricalError predict z (e u) = emp u / n := by
     unfold empiricalError
-    rw [show sampleTrace predict x (e u) = u.val from canonicalRep_trace predict x u]
+    rw [show sampleTrace predict x (e u) = u.val from hrep u]
   have he : (∑' t : H, (q t).toReal * empiricalError predict z t) = expected law emp / n := by
     rw [tsum_eq_sum (s := Finset.univ.map e) (fun t ht => by simp [hzero t ht]), Finset.sum_map]
     simp_rw [hmass, hval, ← mul_div_assoc, div_eq_mul_inv, ← Finset.sum_mul]
@@ -212,5 +215,14 @@ theorem properLearner_empirical_le {H X : Type*} [Nonempty H] [TraceOrder H] {n 
   change (∑' t : H, (q t).toReal * empiricalError predict z t) ≤ _
   rw [he]
   exact hb
+
+/-- The same empirical bound for globally ordered representatives. -/
+theorem properLearner_empirical_le {H X : Type*} [Nonempty H] [TraceOrder H] {n d : ℕ}
+    (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool) (hvc : HasVCDimensionAtMost predict d)
+    (z : Fin n → X × Bool) (h : H) :
+    (∑' t : H, (properLearner hd hn predict z t).toReal * empiricalError predict z t) ≤
+      empiricalError predict z h + 583 * Real.sqrt ((d : ℝ) / n) :=
+  traceReadoutLearner_empirical_le hd hn predict hvc z
+    (canonicalRep predict (fun i => (z i).1)) (canonicalRep_trace predict _) h
 
 end AgnosticVC

@@ -107,7 +107,7 @@ private theorem not_countable_unitAddCircle : ¬ Countable UnitAddCircle := by
   let _ : Countable ℝ := countable_of_countable_orbitQuotient Γ
   exact Cardinal.not_countable_real Set.countable_univ
 
-private theorem circle_exists_distinctCosets :
+theorem circle_exists_distinctCosets :
     ∃ b : ℕ → UnitAddCircle,
       ∀ {i j : ℕ}, b i - b j ∈ irrationalCircleSubgroup → i = j := by
   let Γ := irrationalCircleSubgroup

@@ -247,19 +247,29 @@ theorem traceLaw_deleted_eq [Nonempty H] (predict : H → X → Bool) (x : Fin (
   rw [hobj p, ← hbe, hobj b]
   exact optimizer_min L σ.temperature c s b (law_renumber e.symm hq)
 
-/-- The actual full-alphabet law of the learner trained with one observation removed. -/
-theorem marginal_deletedTraceSection_optimizer_eq [Nonempty H] [TraceOrder H] (predict : H → X → Bool)
+/-- Renumber the short-sample trace law before pushing it through any lift. -/
+theorem marginal_deletedTraceOptimizer_renumber [Nonempty H] (predict : H → X → Bool)
     (x : Fin (n + 1) → X) (i : Fin (n + 1)) (σ : Schedule) (y : Fin (n + 1) → Bool)
-    (w : Fin (n + 1) → ℝ) (hτ : 0 < σ.temperature) (hc : ∀ j, 0 ≤ σ.coeff j) :
-    marginal (deletedTraceSection predict x i) (deletedTraceOptimizer (sampleFamily predict x) i σ y w) =
-      marginal (extendTrace predict x i.succAbove)
-        (traceLaw σ predict (x ∘ i.succAbove) (y ∘ i.succAbove) (w ∘ i.succAbove)) := by
+    (w : Fin (n + 1) → ℝ) (hτ : 0 < σ.temperature) (hc : ∀ j, 0 ≤ σ.coeff j)
+    {B : Type*} (lift : TraceSpace predict (x ∘ i.succAbove) → B) :
+    marginal (lift ∘ (deletedTraceEquiv predict x i).symm)
+        (deletedTraceOptimizer (sampleFamily predict x) i σ y w) =
+      marginal lift (traceLaw σ predict (x ∘ i.succAbove) (y ∘ i.succAbove) (w ∘ i.succAbove)) := by
   classical
   rw [traceLaw_deleted_eq predict x i σ y w hτ hc]
   funext v
   simp only [marginal, Finset.sum_filter]
   symm
   refine Fintype.sum_equiv (deletedTraceEquiv predict x i) _ _ (fun u => ?_)
-  simp only [deletedTraceSection, Function.comp_apply, Equiv.symm_apply_apply]
+  simp only [Function.comp_apply, Equiv.symm_apply_apply]
+
+/-- The actual full-alphabet law of the learner trained with one observation removed. -/
+theorem marginal_deletedTraceSection_optimizer_eq [Nonempty H] [TraceOrder H] (predict : H → X → Bool)
+    (x : Fin (n + 1) → X) (i : Fin (n + 1)) (σ : Schedule) (y : Fin (n + 1) → Bool)
+    (w : Fin (n + 1) → ℝ) (hτ : 0 < σ.temperature) (hc : ∀ j, 0 ≤ σ.coeff j) :
+    marginal (deletedTraceSection predict x i) (deletedTraceOptimizer (sampleFamily predict x) i σ y w) =
+      marginal (extendTrace predict x i.succAbove)
+        (traceLaw σ predict (x ∘ i.succAbove) (y ∘ i.succAbove) (w ∘ i.succAbove)) :=
+  marginal_deletedTraceOptimizer_renumber predict x i σ y w hτ hc (extendTrace predict x i.succAbove)
 
 end AgnosticVC

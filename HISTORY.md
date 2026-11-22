@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Measurable reconstruction for the agnostic VC learner
+
+Lean proves both agnostic rates for classes whose finite traces can be realized by countably many measurable proper reconstructions using at most $`k`$ input rows. The same learner has expected empirical excess at most $`583\sqrt{d/n}`$ on every sample and actual iid CMI at most $`197{,}120d+32k`$ nats. The [circle-orbit class](lean/Conjectures/AgnosticVC/OrbitIidRates.lean) admits one-row reconstruction and attains both rates with a Borel learner, even though the globally ordered representative rule fails there. [General Lean theorem](lean/Conjectures/AgnosticVC/LocalReconstructionMeasurable.lean) · [Argument and scope](research/steinke-zakynthinou-agnostic-vc/measurable-local-reconstruction.md)
+
 ## 2026-11-22 — Scalar expected-loss obstruction for agnostic VC learning
 
 The [Lean disproof](lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) for completed iid laws now needs only measurability of the real-valued expected empirical loss. For any proposed universal constant the exhibited VC-one class forces this quantity to be nonmeasurable if the empirical excess bound holds on every sample. The scalar obstruction is independent of the output sigma-algebra. [Proof and scope](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md)

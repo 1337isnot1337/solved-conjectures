@@ -79,7 +79,7 @@ theorem properLearner_realizedTrace_pos {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
   have hv := learnedTraceMass_pos (schedule n d) (schedule_temperature_pos hd (hd.trans_le hn))
     (schedule_coeff_nonneg n d) predict (fun i => (z i).1) (fun i => (z i).2) v
   rw [PMF.apply_pos_iff]
-  unfold properLearner
+  unfold properLearner traceReadoutLearner
   apply (PMF.mem_support_map_iff _ _ _).mpr
   refine ⟨v, ?_, rfl⟩
   change ENNReal.ofReal (learnedTraceMass (schedule n d) predict _ _ v) ≠ 0
@@ -93,7 +93,7 @@ theorem properLearner_realizedTrace_unique {n d : ℕ} (hd : 0 < d) (hn : d ≤ 
     (ht : sampleTrace predict (fun i => (z i).1) h = v.val) :
     h = canonicalRep predict _ v := by
   classical
-  unfold properLearner at hs
+  unfold properLearner traceReadoutLearner at hs
   obtain ⟨w, _, hw⟩ := (PMF.mem_support_map_iff _ _ _).mp hs
   have hwv : w = v := Subtype.ext ((canonicalRep_trace predict _ w).symm.trans (hw ▸ ht))
   simpa only [hwv] using hw.symm

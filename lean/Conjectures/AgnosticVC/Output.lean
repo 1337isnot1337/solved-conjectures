@@ -43,7 +43,7 @@ theorem properLearner_mass [Nonempty H] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
   have he (w : TraceSpace predict (x ∘ e)) :
       canonicalRep predict x v = canonicalRep predict (x ∘ e) w ↔ extendTrace predict x e w = v := by
     rw [← canonicalRep_extendTrace predict x e w, (canonicalRep_injective predict x).eq_iff, eq_comm]
-  unfold properLearner
+  unfold properLearner traceReadoutLearner
   rw [PMF.map_apply, tsum_fintype]
   change (∑ w, if canonicalRep predict x v = canonicalRep predict (x ∘ e) w
     then ENNReal.ofReal (p w) else 0).toReal = marginal _ p v
@@ -61,7 +61,7 @@ theorem properLearner_supported [Nonempty H] {n d : ℕ} (hd : 0 < d) (hn : d �
     (hh : h ∈ (properLearner hd hn predict (fun i => (x (e i), y i))).support) :
     ∃ v : TraceSpace predict x, canonicalRep predict x v = h := by
   classical
-  unfold properLearner at hh
+  unfold properLearner traceReadoutLearner at hh
   obtain ⟨v, _, hv⟩ := (PMF.mem_support_map_iff _ _ _).mp hh
   exact ⟨extendTrace predict x e v, (canonicalRep_extendTrace predict x e v).trans hv⟩
 

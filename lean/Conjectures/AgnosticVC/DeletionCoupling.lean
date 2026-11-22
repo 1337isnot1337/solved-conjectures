@@ -23,19 +23,19 @@ private theorem trace_cont {I : Type*} [Fintype I] [DecidableEq I] {σ : Schedul
   unfold weightDraw
   fun_prop
 
-variable [TraceOrder H]
-
-theorem blockDeletionCharge_le_shared {σ : Schedule} (hτ : 0 < σ.temperature)
+theorem liftedDeletionCharge_le_shared {σ : Schedule} (hτ : 0 < σ.temperature)
     (ha : ∀ j, 0 ≤ σ.coeff j) (predict : H → X → Bool) (T : Fin (n+1) → X × Bool)
-    (i : Fin (n+1)) : blockDeletionCharge σ predict T i ≤
-      ∫ u, rawBlockDeletionCharge σ predict T i (weightDraw u) ∂weightMeasure (Fin (n+1)) := by
+    (i : Fin (n+1))
+    (lift : TraceSpace predict (Prod.fst ∘ T ∘ i.succAbove) → TraceSpace predict (Prod.fst ∘ T)) :
+    liftedDeletionCharge σ predict T i lift ≤
+      ∫ u, rawLiftedDeletionCharge σ predict T i lift (weightDraw u) ∂weightMeasure (Fin (n+1)) := by
   classical
   let x := fun j => (T j).1
   let y := fun j => (T j).2
   let e := i.succAbove
+  let ext : TraceSpace predict (x ∘ e) → TraceSpace predict x := lift
   let ν := weightMeasure (Fin (n+1))
   let μ := weightMeasure (Fin n)
-  let ext := extendTrace predict x e
   let small := fun u : Fin n → unitInterval => traceLaw σ predict (x ∘ e) (y ∘ e) (weightDraw u)
   let p := fun u : Fin (n+1) → unitInterval => marginal ext (small (u ∘ e))
   let q := fun u : Fin (n+1) → unitInterval => traceLaw σ predict x y (weightDraw u)
@@ -62,5 +62,11 @@ theorem blockDeletionCharge_le_shared {σ : Schedule} (hτ : 0 < σ.temperature)
     (fun a => (cp a).measurable) (fun a => ((continuous_apply a).comp cq).measurable)
   simp_rw [massP] at H
   exact H
+
+theorem blockDeletionCharge_le_shared [TraceOrder H] {σ : Schedule} (hτ : 0 < σ.temperature)
+    (ha : ∀ j, 0 ≤ σ.coeff j) (predict : H → X → Bool) (T : Fin (n+1) → X × Bool)
+    (i : Fin (n+1)) : blockDeletionCharge σ predict T i ≤
+      ∫ u, rawBlockDeletionCharge σ predict T i (weightDraw u) ∂weightMeasure (Fin (n+1)) :=
+  liftedDeletionCharge_le_shared hτ ha predict T i (extendTrace predict (Prod.fst ∘ T) i.succAbove)
 
 end AgnosticVC

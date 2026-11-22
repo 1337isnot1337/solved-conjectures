@@ -125,42 +125,44 @@ private theorem channelInfo_eq_log_ratio {A : Type*} [Fintype A] (p : Selector n
   change entropyGap (fun s => p s a) = selectorMean (fun s => p s a * Real.log (p s a / q))
   simp only [he, selectorMean_sub, selectorMean_mul_const, entropyGap, entropyTerm, q]
 
-/-- The finite channel calculation is the discrete KL divergence of the actual hypothesis
-and fair selector from the product of their actual marginal laws. -/
-theorem originalPoolInformation_eq_poolInformation [Nonempty H] [TraceOrder H] (hd : 0 < d) (hn : d ≤ n)
-    (predict : H → X → Bool) (z : Pool n X) :
-    originalPoolInformation (properLearner hd hn predict) z = poolInformation hd hn predict z := by
+/-- Any common finite alphabet containing the names returned on a fixed pool
+computes the exact mutual information of the whole output. -/
+theorem originalPoolInformation_eq_channelInfo_of_embedding
+    {V : Type*} [Fintype V] (A : (Fin n → X × Bool) → PMF H) (z : Pool n X) (rep : V ↪ H)
+    (p : Selector n → V → ℝ) (hp : ∀ s v, 0 ≤ p s v)
+    (hmass : ∀ (s : Selector n) v, (A (fun i => z (i,s i)) (rep v)).toReal = p s v)
+    (hsupport : ∀ (s : Selector n) h, A (fun i => z (i,s i)) h ≠ 0 → ∃ v, rep v = h) :
+    originalPoolInformation A z = channelInfo p := by
   symm
   classical
-  let V := TraceSpace predict (fun i => (z i).1)
-  let rep : V → H := canonicalRep predict (fun i => (z i).1)
   let em : Selector n × V → Selector n × H := fun x => (x.1, rep x.2)
-  let J := originalPoolJoint (properLearner hd hn predict) z
-  let Q := originalPoolMarginalProduct (properLearner hd hn predict) z
-  let p := outputChannel hd hn predict z
+  let J := originalPoolJoint (A) z
+  let Q := originalPoolMarginalProduct (A) z
   let f := fun sh : Selector n × H => (J sh).toReal * Real.log ((J sh).toReal / (Q sh).toReal)
   have he : Function.Injective em := by
     intro v w h
     have h₁ := congrArg (fun a : Selector n × H => a.1) h
     have h₂ := congrArg (fun a : Selector n × H => a.2) h
-    exact Prod.ext h₁ (canonicalRep_injective _ _ h₂)
+    exact Prod.ext h₁ (rep.injective h₂)
   have hf (sh : Selector n × H) (h : sh ∉ Finset.univ.image em) : f sh = 0 := by
     have hzero : J sh = 0 := by
       by_contra hnz
-      obtain ⟨v, hv⟩ := originalPoolJoint_supported hd hn predict z ((PMF.mem_support_iff _ _).mpr hnz)
+      have hs : A (fun i => z (i,sh.1 i)) sh.2 ≠ 0 := by
+        rcases sh with ⟨s,g⟩
+        change originalPoolJoint A z (s,g) ≠ 0 at hnz
+        rw [originalPoolJoint_apply, mul_ne_zero_iff] at hnz
+        exact hnz.2
+      obtain ⟨v, hv⟩ := hsupport sh.1 sh.2 hs
       exact h (Finset.mem_image.mpr ⟨(sh.1,v), Finset.mem_univ _, Prod.ext rfl hv⟩)
     simp [f, hzero]
-  have hmass (s : Selector n) (v : V) :
-      (properLearner hd hn predict (fun i => z (i,s i)) (rep v)).toReal = p s v :=
-    properLearner_mass hd hn predict (fun i => (z i).1) (fun i => (i,s i)) (fun i => (z (i,s i)).2) v
   let w : ℝ := (Fintype.card (Selector n) : ℝ)⁻¹
   have hw : w ≠ 0 := by unfold w; positivity
   have hR (s : Selector n) (v : V) : (J (em (s,v))).toReal = w * p s v := by
-    change (originalPoolJoint (properLearner hd hn predict) z (s,rep v)).toReal = _
+    change (originalPoolJoint (A) z (s,rep v)).toReal = _
     rw [originalPoolJoint_apply, ENNReal.toReal_mul, fairSelectorLaw_apply, ENNReal.toReal_inv,
       ENNReal.toReal_natCast, hmass]
   have hQ (s : Selector n) (v : V) : (Q (em (s,v))).toReal = w * selectorMean (fun t => p t v) := by
-    change (originalPoolMarginalProduct (properLearner hd hn predict) z (s,rep v)).toReal = _
+    change (originalPoolMarginalProduct (A) z (s,rep v)).toReal = _
     simp only [originalPoolMarginalProduct_apply, ENNReal.toReal_mul, fairSelectorLaw_apply, ENNReal.toReal_inv,
       ENNReal.toReal_natCast, originalPoolOutput_apply_real, hmass, w]
   have hlog (s : Selector n) (v : V) : f (em (s,v)) = w * (p s v * Real.log (p s v / selectorMean fun t => p t v)) := by
@@ -168,8 +170,22 @@ theorem originalPoolInformation_eq_poolInformation [Nonempty H] [TraceOrder H] (
     rw [hR, hQ, mul_div_mul_left _ _ hw, mul_assoc]
   change channelInfo p = ∑' sh, f sh
   rw [tsum_eq_sum (s := Finset.univ.image em) hf, Finset.sum_image (fun _ _ _ _ h => he h),
-    Fintype.sum_prod_type, channelInfo_eq_log_ratio p (fun s v => (outputChannel_isLaw hd hn predict z s).1 v)]
+    Fintype.sum_prod_type, channelInfo_eq_log_ratio p hp]
   simp only [hlog, ← Finset.mul_sum, selectorMean, div_eq_inv_mul, w]
-  rfl
+
+/-- The finite channel calculation is the discrete KL divergence of the actual hypothesis
+and fair selector from the product of their actual marginal laws. -/
+theorem originalPoolInformation_eq_poolInformation [Nonempty H] [TraceOrder H] (hd : 0 < d) (hn : d ≤ n)
+    (predict : H → X → Bool) (z : Pool n X) :
+    originalPoolInformation (properLearner hd hn predict) z = poolInformation hd hn predict z := by
+  let x : Fin n × Bool → X := fun i => (z i).1
+  let rep : TraceSpace predict x ↪ H := ⟨canonicalRep predict x, canonicalRep_injective predict x⟩
+  apply originalPoolInformation_eq_channelInfo_of_embedding (properLearner hd hn predict) z rep
+    (outputChannel hd hn predict z) (fun s v => (outputChannel_isLaw hd hn predict z s).1 v)
+  · intro s v
+    exact properLearner_mass hd hn predict x (fun i => (i,s i)) (fun i => (z (i,s i)).2) v
+  · intro s h hs
+    exact properLearner_supported hd hn predict x (fun i => (i,s i)) (fun i => (z (i,s i)).2)
+      ((PMF.mem_support_iff _ _).mpr hs)
 
 end AgnosticVC

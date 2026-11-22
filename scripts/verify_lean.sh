@@ -342,6 +342,13 @@ modules=(
   Conjectures.AgnosticVC.OrbitMeasurableERM
   Conjectures.AgnosticVC.NullChainUniform
   Conjectures.AgnosticVC.FixedPairing
+  Conjectures.AgnosticVC.RepresentativeTransfer
+  Conjectures.AgnosticVC.BoundedReadout
+  Conjectures.AgnosticVC.BoundedReadoutRates
+  Conjectures.AgnosticVC.LocalReconstruction
+  Conjectures.AgnosticVC.ReadoutIid
+  Conjectures.AgnosticVC.LocalReconstructionMeasurable
+  Conjectures.AgnosticVC.OrbitIidRates
   Conjectures.AgnosticVC.BorelCodes
   Conjectures.AgnosticVC.BorelChoiceObstruction
   Conjectures.AgnosticVC.FullOuterMatching

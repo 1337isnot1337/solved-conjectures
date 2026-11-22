@@ -2,6 +2,8 @@
 
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
+The same workflow checks the [measurable local reconstruction theorem](../lean/Conjectures/AgnosticVC/LocalReconstructionMeasurable.lean), including the [iid rates for the circle-orbit class](../lean/Conjectures/AgnosticVC/OrbitIidRates.lean).
+
 The [dedicated GitHub Actions workflow](https://github.com/1337isnot1337/solved-conjectures/actions/workflows/lean-agnostic-vc.yml) runs on proof and verifier changes pushed to or proposed against `main`. To reproduce it locally, run `python3 scripts/verify_agnostic_vc.py --fetch-cache` from the repository root with the pinned toolchain on PATH. The command builds the [combined theorem](../lean/Conjectures/AgnosticVC/Theorem.lean) and the [fixed-pairing theorem](../lean/Conjectures/AgnosticVC/FixedPairing.lean), elaborates the full project import closure with warnings as errors, checks the transitive axioms of its declarations and replays the compiled objects with the pinned Lean checker. The [receipt](../results/steinke-zakynthinou-agnostic-vc/verification.json) records the checks. The [proof supplement](../results/steinke-zakynthinou-agnostic-vc/PROOF.md#4-information-in-the-returned-hypothesis) gives the fixed-pairing argument. The [manuscript](../results/steinke-zakynthinou-agnostic-vc/paper.pdf) gives the original proof and its Lean correspondence. Section 6 proves two obstructions to Borel measurability. Their Lean counterparts are included in the same verification workflow.
 
 ## Steinke–Zakynthinou threshold proof

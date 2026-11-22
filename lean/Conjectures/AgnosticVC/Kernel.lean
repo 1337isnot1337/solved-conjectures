@@ -136,22 +136,24 @@ theorem hasMeasurableCanonicalRepresentatives_of_countable_domain
     exact (Set.to_countable _).measurableSet
 
 private noncomputable def traceEventMass {n d : ℕ} (predict : H → X → Bool)
+    (represent : ∀ x : Fin n → X, TraceSpace predict x → H)
     (B : Set H) (v : Finset (Fin n)) (z : Fin n → X × Bool) : ENNReal := by
   classical
   let x := fun i => (z i).1
   let y := fun i => (z i).2
-  exact if ∃ hv : v ∈ sampleFamily predict x, canonicalRep predict x ⟨v, hv⟩ ∈ B
+  exact if ∃ hv : v ∈ sampleFamily predict x, represent x ⟨v, hv⟩ ∈ B
     then ENNReal.ofReal (familyMass (schedule n d) (sampleFamily predict x) y v) else 0
 
-omit [MeasurableSpace H] in
+omit [MeasurableSpace H] [TraceOrder H] in
 private lemma measurable_traceEventMass_on {Ω : Type*} [MeasurableSpace Ω] {n d : ℕ}
-    (predict : H → X → Bool) (z : Ω → Fin n → X × Bool) (hz : Measurable z)
+    (predict : H → X → Bool) (represent : ∀ x : Fin n → X, TraceSpace predict x → H)
+    (z : Ω → Fin n → X × Bool) (hz : Measurable z)
     (hreal : ∀ v : Finset (Fin n), MeasurableSet {w : Ω |
       v ∈ sampleFamily predict (fun i => (z w i).1)})
     (B : Set H) (v : Finset (Fin n))
     (hrep : MeasurableSet {w : Ω | ∃ hv : v ∈ sampleFamily predict (fun i => (z w i).1),
-      canonicalRep predict (fun i => (z w i).1) ⟨v, hv⟩ ∈ B}) :
-    Measurable (fun w : Ω => traceEventMass (d := d) predict B v (z w)) := by
+      represent (fun i => (z w i).1) ⟨v, hv⟩ ∈ B}) :
+    Measurable (fun w : Ω => traceEventMass (d := d) predict represent B v (z w)) := by
   classical
   let x (w : Ω) := fun i => (z w i).1
   let y (w : Ω) := fun i => (z w i).2
@@ -169,38 +171,58 @@ private lemma measurable_traceEventMass_on {Ω : Type*} [MeasurableSpace Ω] {n 
   unfold traceEventMass
   exact Measurable.ite hrep (ENNReal.measurable_ofReal.comp hmass) measurable_const
 
-omit [MeasurableSpace X] in
-private lemma properLearner_toMeasure_eq_traceEventMass [Nonempty H] {n d : ℕ}
-    (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool) (B : Set H) (hB : MeasurableSet B)
+omit [MeasurableSpace X] [TraceOrder H] in
+private lemma traceReadoutLearner_toMeasure_eq_traceEventMass [Nonempty H] {n d : ℕ}
+    (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
+    (represent : ∀ x : Fin n → X, TraceSpace predict x → H) (B : Set H) (hB : MeasurableSet B)
     (z : Fin n → X × Bool) :
-    (properLearner hd hn predict z).toMeasure B = ∑ v, traceEventMass (d := d) predict B v z := by
+    (traceReadoutLearner hd hn predict z (represent (fun i => (z i).1))).toMeasure B = ∑ v, traceEventMass (d := d) predict represent B v z := by
   classical
   let x := fun i => (z i).1
   let y := fun i => (z i).2
   let F := sampleFamily predict x
-  let f := fun v : Finset (Fin n) => traceEventMass (d := d) predict B v z
+  let f := fun v : Finset (Fin n) => traceEventMass (d := d) predict represent B v z
   have hZ (v : Finset (Fin n)) (hv : v ∉ F) : f v = 0 := by
     change v ∉ sampleFamily predict x at hv
     simp [f, traceEventMass, x, hv]
-  have hm (u : ↥F) : f u.val = if canonicalRep predict x u ∈ B then
+  have hm (u : ↥F) : f u.val = if represent x u ∈ B then
       ENNReal.ofReal (learnedTraceMass (schedule n d) predict x y u) else 0 := by
-    change (if ∃ hv : u.val ∈ sampleFamily predict x, canonicalRep predict x ⟨u.val, hv⟩ ∈ B
+    change (if ∃ hv : u.val ∈ sampleFamily predict x, represent x ⟨u.val, hv⟩ ∈ B
       then ENNReal.ofReal (familyMass (schedule n d) (sampleFamily predict x) y u.val) else 0) = _
     have hmass := familyMass_eq (schedule n d) predict x y (show TraceSpace predict x from u)
     simp [hmass]
-  unfold properLearner
+  unfold traceReadoutLearner
   rw [PMF.toMeasure_apply_eq_toOuterMeasure_apply _ hB, PMF.toOuterMeasure_map_apply,
     PMF.toOuterMeasure_apply, tsum_fintype]
   simp only [Set.indicator_apply, Set.mem_preimage, PMF.ofFintype_apply]
-  change (∑ u : ↥F, if canonicalRep predict x u ∈ B then
+  change (∑ u : ↥F, if represent x u ∈ B then
       ENNReal.ofReal (learnedTraceMass (schedule n d) predict x y u) else 0) = ∑ v, f v
   calc
     _ = ∑ u : ↥F, f u.val := Finset.sum_congr rfl fun u _ => (hm u).symm
     _ = ∑ v ∈ F, f v := Finset.sum_coe_sort F f
     _ = _ := Finset.sum_subset (Finset.subset_univ F) fun v _ hv => hZ v hv
 
+omit [TraceOrder H] in
 /-- The output law is measurable on any labeled-row space on which trace realizability
 and representative membership events are measurable. -/
+theorem measurable_traceReadoutLearner_toMeasure_on [Nonempty H] {Ω : Type*} [MeasurableSpace Ω]
+    {n d : ℕ} (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
+    (represent : ∀ x : Fin n → X, TraceSpace predict x → H)
+    (z : Ω → Fin n → X × Bool) (hz : Measurable z)
+    (hreal : ∀ v : Finset (Fin n), MeasurableSet {w : Ω |
+      v ∈ sampleFamily predict (fun i => (z w i).1)})
+    (hrep : ∀ (v : Finset (Fin n)) (B : Set H), MeasurableSet B →
+      MeasurableSet {w : Ω | ∃ hv : v ∈ sampleFamily predict (fun i => (z w i).1),
+        represent (fun i => (z w i).1) ⟨v, hv⟩ ∈ B}) :
+    Measurable (fun w : Ω => (traceReadoutLearner hd hn predict (z w) (represent (fun i => (z w i).1))).toMeasure) := by
+  classical
+  apply Measure.measurable_of_measurable_coe
+  intro B hB
+  simp_rw [traceReadoutLearner_toMeasure_eq_traceEventMass hd hn predict represent B hB]
+  exact Finset.measurable_sum _ fun v _ => measurable_traceEventMass_on predict represent z hz hreal B v
+    (hrep v B hB)
+
+/-- Measurability for the original globally ordered readout. -/
 theorem measurable_properLearner_toMeasure_on [Nonempty H] {Ω : Type*} [MeasurableSpace Ω]
     {n d : ℕ} (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
     (z : Ω → Fin n → X × Bool) (hz : Measurable z)
@@ -209,13 +231,8 @@ theorem measurable_properLearner_toMeasure_on [Nonempty H] {Ω : Type*} [Measura
     (hrep : ∀ (v : Finset (Fin n)) (B : Set H), MeasurableSet B →
       MeasurableSet {w : Ω | ∃ hv : v ∈ sampleFamily predict (fun i => (z w i).1),
         canonicalRep predict (fun i => (z w i).1) ⟨v, hv⟩ ∈ B}) :
-    Measurable (fun w : Ω => (properLearner hd hn predict (z w)).toMeasure) := by
-  classical
-  apply Measure.measurable_of_measurable_coe
-  intro B hB
-  simp_rw [properLearner_toMeasure_eq_traceEventMass hd hn predict B hB]
-  exact Finset.measurable_sum _ fun v _ => measurable_traceEventMass_on predict z hz hreal B v
-    (hrep v B hB)
+    Measurable (fun w : Ω => (properLearner hd hn predict (z w)).toMeasure) :=
+  measurable_traceReadoutLearner_toMeasure_on hd hn predict (canonicalRep predict) z hz hreal hrep
 
 /-- The probability law on actual returned hypotheses is a measurable measure-valued map. -/
 theorem measurable_properLearner_toMeasure [Nonempty H] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)

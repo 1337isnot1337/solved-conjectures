@@ -6,6 +6,8 @@ The [framework paper's Conjecture 4.18](https://arxiv.org/pdf/2001.09122v3) is f
 
 The [combined theorem](../lean/Conjectures/AgnosticVC/Theorem.lean) proves the two bounds for the same proper learner. Lean checks the [bound for every fixed pairing](../lean/Conjectures/AgnosticVC/FixedPairing.lean), the iid information bound whenever its integrand is almost everywhere measurable, and a measurable Markov learner under the stated representative convention. The [Mathlib KL formulation](../lean/Conjectures/AgnosticVC/KLRates.lean) identifies the joint distribution and both marginals on the full output hypotheses. [Verification guide](verification.md#steinkezakynthinous-agnostic-vc-learning-conjecture)
 
+The [local reconstruction theorem](../lean/Conjectures/AgnosticVC/LocalReconstructionMeasurable.lean) verifies both rates when countably many proper maps from at most $`k`$ observed features cover every finite trace. The [circle application](../lean/Conjectures/AgnosticVC/OrbitIidRates.lean) verifies a Borel learner on the same class for which globally ordered representatives fail completed measurability.
+
 ## Steinke–Zakynthinou threshold formalization scope
 
 [The full proper threshold theorem](../lean/Conjectures/SteinkeZakynthinou.lean) is checked. The finite learner uses the rational shifted-tree rule, noise scales with ratio $3/4$, and label-first rounding. In the CMI proof, giving the two pool slots in a row consecutive tags keeps the learner's order on selected samples. Summing row charges under the common iid selected-sample law bounds the information on the augmented output. A finite rank code then decodes the successor or maximum into the learner's actual threshold.

@@ -9,28 +9,41 @@ public import Conjectures.AgnosticVC.PairedDeletion
 
 namespace AgnosticVC
 
-variable {n : ℕ} {X H : Type*} [Nonempty H] [TraceOrder H]
+variable {n : ℕ} {X H : Type*} [Nonempty H]
+
+noncomputable def liftedDeletionCharge (σ : Schedule) (predict : H → X → Bool)
+    (T : Fin (n+1) → X × Bool) (i : Fin (n+1))
+    (lift : TraceSpace predict (Prod.fst ∘ T ∘ i.succAbove) → TraceSpace predict (Prod.fst ∘ T)) : ℝ :=
+  let x := Prod.fst ∘ T
+  let y := Prod.snd ∘ T
+  let e := i.succAbove
+  hellingerSq (marginal lift (learnedTraceMass σ predict (x ∘ e) (y ∘ e)))
+    (learnedTraceMass σ predict x y)
+
+noncomputable def rawLiftedDeletionCharge (σ : Schedule) (predict : H → X → Bool)
+    (T : Fin (n+1) → X × Bool) (i : Fin (n+1))
+    (lift : TraceSpace predict (Prod.fst ∘ T ∘ i.succAbove) → TraceSpace predict (Prod.fst ∘ T))
+    (w : Fin (n+1) → ℝ) : ℝ :=
+  let x := Prod.fst ∘ T
+  let y := Prod.snd ∘ T
+  let e := i.succAbove
+  hellingerSq (marginal lift (traceLaw σ predict (x ∘ e) (y ∘ e) (w ∘ e)))
+    (traceLaw σ predict x y w)
+
+variable [TraceOrder H]
 
 noncomputable def blockDeletionCharge (σ : Schedule) (predict : H → X → Bool)
     (T : Fin (n+1) → X × Bool) (i : Fin (n+1)) : ℝ :=
-  let x := fun j => (T j).1
-  let y := fun j => (T j).2
-  let e := i.succAbove
-  hellingerSq
-    (marginal (extendTrace predict x e) (learnedTraceMass σ predict (x ∘ e) (y ∘ e)))
-    (learnedTraceMass σ predict x y)
+  liftedDeletionCharge σ predict T i (extendTrace predict (Prod.fst ∘ T) i.succAbove)
 
 noncomputable def rawBlockDeletionCharge (σ : Schedule) (predict : H → X → Bool)
     (T : Fin (n+1) → X × Bool) (i : Fin (n+1)) (w : Fin (n+1) → ℝ) : ℝ :=
-  let x := fun j => (T j).1
-  let y := fun j => (T j).2
-  let e := i.succAbove
-  hellingerSq
-    (marginal (extendTrace predict x e) (traceLaw σ predict (x ∘ e) (y ∘ e) (w ∘ e)))
-    (traceLaw σ predict x y w)
+  rawLiftedDeletionCharge σ predict T i (extendTrace predict (Prod.fst ∘ T) i.succAbove) w
 
 theorem blockDeletionCharge_nonneg (σ : Schedule) (predict : H → X → Bool)
     (T : Fin (n+1) → X × Bool) (i : Fin (n+1)) :
-    0 ≤ blockDeletionCharge σ predict T i := hellingerSq_nonneg _ _
+    0 ≤ blockDeletionCharge σ predict T i := by
+  unfold blockDeletionCharge liftedDeletionCharge
+  exact hellingerSq_nonneg _ _
 
 end AgnosticVC
