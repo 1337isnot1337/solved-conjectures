@@ -52,7 +52,7 @@ private theorem iid_trace_readout {I J : Type} [Fintype I] [Fintype J] [Decidabl
     (erm.minimizes _ _) (erm.breaks_ties _ _)
 
 omit [TraceOrder H] in
-private theorem measurable_readout_trace {Ω : Type*} [MeasurableSpace Ω] {I : Type}
+theorem measurableSet_sampleTrace_eq_readout {Ω : Type*} [MeasurableSpace Ω] {I : Type}
     [Fintype I] (predict : H → X → Bool)
     (hm : Measurable (fun p : H × X => predict p.1 p.2)) (x : Ω → I → X)
     (mx : Measurable x) (r : Ω → H) (mr : Measurable r) (v : Finset I) :
@@ -84,7 +84,7 @@ private theorem iid_trace_events {I J : Type} [Fintype I] [Fintype J] [Decidable
   have msub : Measurable (fun w => x w ∘ e) := Measurable.of_eval fun i =>
     (measurable_pi_apply (e i)).comp mx
   have realises : MeasurableSet {w | v ∈ sampleFamily predict (x w ∘ e)} := by
-    convert measurable_readout_trace predict hm _ msub r mr v using 1
+    convert measurableSet_sampleTrace_eq_readout predict hm _ msub r mr v using 1
     ext w
     constructor
     · intro hv
@@ -107,7 +107,7 @@ private theorem iid_trace_events {I J : Type} [Fintype I] [Fintype J] [Decidable
       exact (congrArg (P w) (hfirst w hv)).mpr he
   exact ⟨realises, fun B hB => event (fun _ h => h ∈ B) (mr hB),
     fun t => event (fun w h => sampleTrace predict (x w) h = t)
-      (measurable_readout_trace predict hm _ mx r mr t)⟩
+      (measurableSet_sampleTrace_eq_readout predict hm _ mx r mr t)⟩
 
 /-- For a fixed iid law, the ordered ERM need only be measurable after completion for
 the feature marginal with independent fair labels. The randomized learner is the same

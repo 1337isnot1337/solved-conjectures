@@ -28,5 +28,8 @@ public import Conjectures.AgnosticVC.TraceCoreExamples
 public import Conjectures.AgnosticVC.OrderedERM
 public import Conjectures.AgnosticVC.LabeledNullChain
 public import Conjectures.AgnosticVC.IidOrderedRates
+public import Conjectures.AgnosticVC.IidConditionalKernel
+public import Conjectures.AgnosticVC.OrbitOutputExample
+public import Conjectures.AgnosticVC.OrbitOutputAllSizes
 
 /-! Steinke–Zakynthinou's agnostic VC learning theorem and its operator estimates. -/

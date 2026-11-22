@@ -328,6 +328,15 @@ modules=(
   Conjectures.AgnosticVC.CompletedKernel
   Conjectures.AgnosticVC.IidOrderedERM
   Conjectures.AgnosticVC.IidOrderedRates
+  Conjectures.AgnosticVC.IidConditionalKernel
+  Conjectures.AgnosticVC.OrbitTransversal
+  Conjectures.AgnosticVC.OrbitClass
+  Conjectures.AgnosticVC.OrbitOrderedExample
+  Conjectures.AgnosticVC.PositiveTraceReadout
+  Conjectures.AgnosticVC.OrbitOutputExample
+  Conjectures.AgnosticVC.OrbitPaddedTrace
+  Conjectures.AgnosticVC.OrbitMixture
+  Conjectures.AgnosticVC.OrbitOutputAllSizes
   Conjectures.AgnosticVC.IidNullChainExample
   Conjectures.AgnosticVC.LabeledNullChain
   Conjectures.AgnosticVC
