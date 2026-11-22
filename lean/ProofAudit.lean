@@ -36,6 +36,7 @@ run_cmd do
     `AgnosticVC.steinkeZakynthinou_fixedPool,
     `AgnosticVC.steinkeZakynthinou_fixedPairing,
     `AgnosticVC.properLearner_fixedPairing_KL_le,
+    `AgnosticVC.BorelCode.standardBorel_trace_obstruction,
     `AgnosticVC.steinkeZakynthinou_measurableInformation,
     `AgnosticVC.steinkeZakynthinou_kl_rates,
     `AgnosticVC.steinkeZakynthinou_kl_rates_countable,

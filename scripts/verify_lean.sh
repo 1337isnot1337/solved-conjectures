@@ -342,6 +342,8 @@ modules=(
   Conjectures.AgnosticVC.OrbitMeasurableERM
   Conjectures.AgnosticVC.NullChainUniform
   Conjectures.AgnosticVC.FixedPairing
+  Conjectures.AgnosticVC.BorelCodes
+  Conjectures.AgnosticVC.BorelChoiceObstruction
   Conjectures.AgnosticVC.IidNullChainExample
   Conjectures.AgnosticVC.LabeledNullChain
   Conjectures.AgnosticVC

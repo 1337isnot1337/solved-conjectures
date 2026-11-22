@@ -232,6 +232,12 @@
     ]
   },
   "fixed_pairing_extension": {
+    "github_actions": {
+      "headSha": "a0df17bfff5b87c9de4148c9627333b04e90d348",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/45004523687"
+    },
     "theorems": [
       "AgnosticVC.steinkeZakynthinou_fixedPairing",
       "AgnosticVC.properLearner_fixedPairing_KL_le"
@@ -250,6 +256,24 @@
       "modules": 91,
       "required": 93,
       "theorems": 1134,
+      "tag": "passed"
+    }
+  },
+  "borel_trace_obstruction": {
+    "theorem": "AgnosticVC.BorelCode.standardBorel_trace_obstruction",
+    "scope": "Global Borel Markov learners, standard Borel spaces, Borel finite-trace feasibility.",
+    "local_command": "python3 scripts/verify_agnostic_vc.py",
+    "local_strict_elaboration": "passed",
+    "local_kernel_replayed_modules": 93,
+    "local_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1491,
+      "required": 94,
+      "theorems": 1190,
       "tag": "passed"
     }
   }

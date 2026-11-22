@@ -24,6 +24,7 @@ public import Conjectures.AgnosticVC.KLRates
 public import Conjectures.AgnosticVC.ProjectionSquareRoot
 public import Conjectures.AgnosticVC.CoarseKL
 public import Conjectures.AgnosticVC.BorelExample
+public import Conjectures.AgnosticVC.BorelChoiceObstruction
 public import Conjectures.AgnosticVC.IntervalExample
 public import Conjectures.AgnosticVC.TraceCoreExamples
 public import Conjectures.AgnosticVC.OrderedERM
