@@ -337,6 +337,10 @@ modules=(
   Conjectures.AgnosticVC.OrbitPaddedTrace
   Conjectures.AgnosticVC.OrbitMixture
   Conjectures.AgnosticVC.OrbitOutputAllSizes
+  Conjectures.AgnosticVC.CountableCandidateERM
+  Conjectures.AgnosticVC.OrbitWitnesses
+  Conjectures.AgnosticVC.OrbitMeasurableERM
+  Conjectures.AgnosticVC.NullChainUniform
   Conjectures.AgnosticVC.IidNullChainExample
   Conjectures.AgnosticVC.LabeledNullChain
   Conjectures.AgnosticVC

@@ -31,5 +31,7 @@ public import Conjectures.AgnosticVC.IidOrderedRates
 public import Conjectures.AgnosticVC.IidConditionalKernel
 public import Conjectures.AgnosticVC.OrbitOutputExample
 public import Conjectures.AgnosticVC.OrbitOutputAllSizes
+public import Conjectures.AgnosticVC.OrbitMeasurableERM
+public import Conjectures.AgnosticVC.NullChainUniform
 
 /-! Steinke–Zakynthinou's agnostic VC learning theorem and its operator estimates. -/
