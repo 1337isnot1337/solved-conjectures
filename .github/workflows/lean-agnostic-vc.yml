@@ -10,6 +10,8 @@ on:
       - 'lean/Conjectures/AgnosticVC/**'
       - 'lean/Conjectures/SteinkeZakynthinou/**'
       - 'lean/lean-toolchain'
+      - 'lean/ProofAudit.lean'
+      - 'scripts/verify_lean.sh'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
       - 'scripts/verify_agnostic_vc.py'

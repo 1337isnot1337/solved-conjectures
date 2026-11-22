@@ -18,5 +18,8 @@ public import Conjectures.AgnosticVC.FixedPool
 public import Conjectures.AgnosticVC.VCMeasurability
 public import Conjectures.AgnosticVC.ProjectionScore
 public import Conjectures.AgnosticVC.ProjectionWeightFubini
+public import Conjectures.AgnosticVC.Theorem
+public import Conjectures.AgnosticVC.KLRates
+public import Conjectures.AgnosticVC.ProjectionSquareRoot
 
-/-! Verified components of Steinke–Zakynthinou's agnostic VC conjecture. -/
+/-! Steinke–Zakynthinou's agnostic VC learning theorem and its operator estimates. -/

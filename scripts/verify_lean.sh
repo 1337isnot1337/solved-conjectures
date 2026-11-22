@@ -302,6 +302,17 @@ modules=(
   Conjectures.AgnosticVC.SelectorBound
   Conjectures.AgnosticVC.VCMeasurability
   Conjectures.AgnosticVC.VCRenumber
+  Conjectures.AgnosticVC.EmpiricalInfimum
+  Conjectures.AgnosticVC.KLRates
+  Conjectures.AgnosticVC.Kernel
+  Conjectures.AgnosticVC.MeasurableInformation
+  Conjectures.AgnosticVC.OriginalInformation
+  Conjectures.AgnosticVC.OriginalKL
+  Conjectures.AgnosticVC.ProjectionSquareRoot
+  Conjectures.AgnosticVC.ProjectionWeightIntegral
+  Conjectures.AgnosticVC.Rates
+  Conjectures.AgnosticVC.ShuffleIntegral
+  Conjectures.AgnosticVC.Theorem
   Conjectures.AgnosticVC
   Conjectures.SteinkeZakynthinou.Adjacency
   Conjectures.SteinkeZakynthinou.AdjacentInformation
