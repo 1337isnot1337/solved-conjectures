@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths:
+    paths: &proof_paths
       - '.github/workflows/lean-agnostic-vc.yml'
+      - 'lean/Conjectures.lean'
       - 'lean/Conjectures/AgnosticVC.lean'
       - 'lean/Conjectures/AgnosticVC/**'
       - 'lean/Conjectures/SteinkeZakynthinou/**'
@@ -16,7 +17,12 @@ on:
       - 'lean/lake-manifest.json'
       - 'scripts/verify_agnostic_vc.py'
       - 'scripts/audit_lean_all_owned.py'
+      - 'scripts/build_lean_parallel.py'
+      - 'scripts/plan_accepted_lean.py'
       - 'scripts/replay_lean.py'
+  pull_request:
+    branches: [main]
+    paths: *proof_paths
 
 permissions:
   contents: read

@@ -17,6 +17,8 @@ The first estimate compares with the infimum of ordinary zero–one losses. The 
 
 ## Proof and verification
 
+[![Lean build, axiom audit and kernel replay](https://github.com/1337isnot1337/solved-conjectures/actions/workflows/lean-agnostic-vc.yml/badge.svg?branch=main)](https://github.com/1337isnot1337/solved-conjectures/actions/workflows/lean-agnostic-vc.yml)
+
 The learner gives each training mistake a random weight and regularizes the entropy of predictions on subsets of several sizes. Controlling the change in its output law when one example is removed bounds the information revealed by the selector. [Weighted loss estimate](../../lean/Conjectures/AgnosticVC/ProjectionWeightIntegral.lean) · [Deletion bound and rates](../../lean/Conjectures/AgnosticVC/Rates.lean)
 
 From the repository root, run `python3 scripts/verify_agnostic_vc.py --fetch-cache` with the pinned Lean toolchain available. It builds the theorem, elaborates all local proof files with warnings as errors, audits their declarations and replays their compiled proofs with the pinned kernel checker. The `verify.py` diagnostic separately checks selected finite-dimensional estimates. [Verification receipt](verification.json) · [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/240)
