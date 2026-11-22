@@ -9,6 +9,14 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `AgnosticVC.canonicalRep_refinement,
+    `AgnosticVC.sampleFamily_vcDim_le,
+    `AgnosticVC.continuous_optimizer,
+    `AgnosticVC.learnedTraceMass_isLaw,
+    `AgnosticVC.average_conditionalPredictionVariance_le,
+    `AgnosticVC.log_card_le_of_hamming_separated,
+    `AgnosticVC.minimizer_relativeEntropy_le_gap,
+    `AgnosticVC.optimizer_hasDerivWithinAt,
     `AgnosticVC.channelInfo_le_deletionCharges,
     `AgnosticVC.integral_le_of_permMean_le,
     `AgnosticVC.empirical_le_comparator,

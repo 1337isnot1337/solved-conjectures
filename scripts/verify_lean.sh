@@ -263,6 +263,13 @@ modules=(
   Conjectures.AgnosticVC.Optimizer
   Conjectures.AgnosticVC.OptimizerInterior
   Conjectures.AgnosticVC.VC
+  Conjectures.AgnosticVC.Traces
+  Conjectures.AgnosticVC.LearnerContinuity
+  Conjectures.AgnosticVC.Learner
+  Conjectures.AgnosticVC.OptimizerGradient
+  Conjectures.AgnosticVC.OptimizerSensitivity
+  Conjectures.AgnosticVC.VCVariance
+  Conjectures.AgnosticVC.VCEmpirical
   Conjectures.AgnosticVC
   Conjectures.SteinkeZakynthinou.Adjacency
   Conjectures.SteinkeZakynthinou.AdjacentInformation
