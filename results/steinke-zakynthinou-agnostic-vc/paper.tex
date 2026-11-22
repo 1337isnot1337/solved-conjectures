@@ -400,6 +400,35 @@ measure relative to the product of its marginals. Coarsening the output
 sigma-algebra decreases KL by data processing. These facts prove
 Theorem~\ref{thm:iid}.
 
+\subsection{A sufficient condition from ordered empirical risk minimization}
+
+\begin{proposition}\label{prop:ordered-erm}
+Suppose evaluation $(h,x)\mapsto h(x)$ is jointly measurable. Fix a well-order
+of $\HH$. If the first empirical risk minimizer in this order is a measurable
+$\HH$-valued function of the labeled sample at every size, then
+Definition~\ref{def:selection} holds for that order.
+\end{proposition}
+\begin{proof}
+Given a tuple $x$ and a prescribed binary vector $v$, run the minimizer on the
+sample obtained by labeling $x$ with $v$. Denote its output by $a_v(x)$.
+This is a measurable function of $x$, since the labels are fixed.
+The vector $v$ is realizable precisely when $a_v(x)$ fits all these labels:
+if any classifier has zero mistakes, every minimizer has zero mistakes.
+Joint evaluation makes this finite test measurable. On its success event the
+tie-breaking rule gives $a_v(x)=g_x(v)$, since the hypotheses of zero loss
+are exactly the ones realizing $v$.
+
+For a subtuple, run the same procedure there and evaluate its output on all
+positions of the larger tuple. Requiring the subtuple test to succeed and
+these further predictions to equal a given vector gives the second event
+in Definition~\ref{def:selection}. Requiring the full-tuple test to succeed
+and $a_v(x)$ to lie in a prescribed measurable output set gives the third.
+\end{proof}
+
+The minimizer in this proposition is the one constructed in the proof of
+Lemma~4.15 of \cite{framework}. Its role here is to supply representatives.
+The two rates concern the randomized learner of Section~\ref{sec:learner}.
+
 \subsection{Countable domains and countable trace cores}
 If $\HH$ is countable and each predictor is measurable, the event that
 a particular $h$ is selected is the intersection of its trace event with
@@ -485,14 +514,15 @@ so this example does not give the same obstruction for universally measurable ke
 The problem paper uses random variables in Definition~3. Its companion
 paper defines CMI as the expectation of conditional mutual informations and
 uses a well-order for global tie-breaking \cite[Defs.~2.6, 2.8 and
-Lemmas~4.15, 4.17]{framework}. The well-order supplies consistent names;
-neither cited lemma proves that their selection events are measurable.
-The wording of Conjecture~6 leaves the measurable-space convention for
-arbitrary classes unspecified. Our unconditional shuffled-pool theorem,
-the iid transfer, and the measurable learner theorem give three precise
-claims. Whether the first two suffice for the authors' intended unrestricted
-interpretation remains a question for the authors. We therefore present the population theorem as a partial result on the
-unrestricted conjecture.
+Lemmas~4.15, 4.17]{framework}. Proposition~\ref{prop:ordered-erm} shows that, under joint
+measurability of evaluation, measurability of this particular minimizer
+suffices for both rates. The well-order construction proves consistency of
+its choices but gives no measurability assertion. Indeed, the preceding
+VC-one example also rules out an everywhere Borel exact minimizer: such a
+minimizer would satisfy the empirical inequality with zero excess.
+Conjecture~6 leaves the measurable-space convention for arbitrary classes
+unspecified. The population theorem therefore remains conditional in that
+generality.
 
 \appendix
 \section{The empirical-process estimate with constants}\label{app:emp}
@@ -1226,8 +1256,8 @@ with warnings treated as errors, audited 1,106 declarations, and replayed
 the compiled proofs. The only transitive axioms in that audit were
 \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
 The subsequent results on measurable selection and its obstructions are in the
-\href{https://github.com/1337isnot1337/solved-conjectures/tree/5bc0d6a223adfea55b073bfea735d9aadfe479b6/lean/Conjectures/AgnosticVC}{extended development},
-with a \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/44985489887}{separate verification run}.
+\href{https://github.com/1337isnot1337/solved-conjectures/tree/35970639ec69a753950f4ed663f9a8c704f4fca4/lean/Conjectures/AgnosticVC}{extended development},
+with a \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/44986814421}{separate verification run}.
 The obstruction applies to arbitrary proper Markov kernels, including kernels
 whose output laws have infinite support.
 
@@ -1248,6 +1278,7 @@ Fixed-pool and iid exchangeability & \decl{steinkeZakynthinou_fixedPool}, \decl{
 Measurable Markov learner & \decl{measurable_properLearner_toMeasure}, \decl{steinkeZakynthinou_conjecture6} \\
 Countable instance domain & \decl{steinkeZakynthinou_countable_domain} \\
 Countable initial segment realizing all traces & \decl{hasMeasurableCanonicalRepresentatives_of_countable_trace_core} \\
+Ordered empirical risk minimization & \decl{hasMeasurableCanonicalRepresentatives_of_orderedERM}, \decl{steinkeZakynthinou_of_measurable_orderedERM} \\
 Choice of a suitable well-order & \decl{exists_order_of_countable_trace_core} \\
 Pointwise limits and continuous parameters & \decl{finite_trace_core_of_pointwise_limits}, \decl{exists_order_of_separable_continuous_predict} \\
 Rational cuts for real thresholds & \decl{rational_threshold_realizes_finite_trace} \\
@@ -1261,7 +1292,9 @@ Standard Borel counterexample & \decl{exists_standardBorel_vcOne_no_accurateKern
 \section*{Acknowledgments}
 The project used AI assistance in preparing the manuscript and Lean development.
 
+{\small
 \begin{thebibliography}{9}
+\setlength{\itemsep}{1pt}
 \bibitem{sauer} N. Sauer.
 \href{https://doi.org/10.1016/0097-3165(72)90019-2}{On the density of families of sets}.
 \emph{Journal of Combinatorial Theory, Series A} 13 (1972), 145--147.
@@ -1282,5 +1315,5 @@ Conference on Learning Theory, 2020. Definition and lemma numbers refer to the
 \bibitem{kechris} A. S. Kechris.
 \href{https://doi.org/10.1007/978-1-4612-4190-4}{Classical Descriptive Set Theory}.
 Graduate Texts in Mathematics 156, Springer, 1995.
-\end{thebibliography}
+\end{thebibliography}}
 \end{document}

@@ -18,6 +18,12 @@ For every finite tuple of features the required events are (i) a prescribed trac
 
 Lean also constructs a suitable global order when some countable subclass of measurable predictors realizes every finite trace. The subclass can come from pointwise sequential approximation or from continuity of binary evaluation in a separable parameter space. For real thresholds on the real line, rational cut points realize every finite trace. [Order construction](../../lean/Conjectures/AgnosticVC/TraceCoreOrder.lean) · [Examples](../../lean/Conjectures/AgnosticVC/TraceCoreExamples.lean)
 
+## Relation to the authors’ empirical risk minimizer
+
+With jointly measurable evaluation, measurability of the particular deterministic minimizer in the framework paper’s Lemma 4.15 suffices. Give a finite tuple the prescribed labels and run that minimizer. The labels are realizable exactly when its returned classifier makes zero mistakes. On that event it is the first realizing hypothesis in the fixed well-order. Evaluating it on a larger tuple or testing membership in a measurable output set gives the other two required events. Lean derives both quantitative estimates from these hypotheses. The minimizer used for selection and the randomized learner satisfying the rates are two different algorithms. [Formal reduction and rate theorem](../../lean/Conjectures/AgnosticVC/OrderedERM.lean) · [Framework paper, Lemma 4.15](https://arxiv.org/pdf/2001.09122v3)
+
+The source proves existence of this ordered minimizer as a set function. It does not prove that the function is Borel measurable for arbitrary classes. The standard Borel example below even precludes an everywhere Borel exact minimizer, which would have zero empirical excess.
+
 ## Why the distinction matters
 
 Take a non-Borel subset $B$ of the Borel interval. Let the class consist of the zero function and the indicators of the singletons in $B$. This is a VC-one class of Borel classifiers. Already on a one-point input the event that trace 1 is realizable is $B$. No ordering of the hypotheses can make that event Borel.
