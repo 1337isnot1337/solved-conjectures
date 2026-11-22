@@ -47,6 +47,7 @@ run_cmd do
     `AgnosticVC.exists_atMostOneHit_completed_kernel,
     `AgnosticVC.exists_completed_finiteGroups_no_rate,
     `AgnosticVC.exists_finiteGroups_no_measurable_loss_rate,
+    `AgnosticVC.exists_finiteGroups_no_jointly_measurable_loss_learner,
     `AgnosticVC.steinkeZakynthinou_measurableInformation,
     `AgnosticVC.steinkeZakynthinou_kl_rates,
     `AgnosticVC.steinkeZakynthinou_kl_rates_countable,

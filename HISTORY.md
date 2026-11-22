@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Randomized-learner formulation of the completed-iid obstruction
+
+The [finite-support disproof](lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) now directly quantifies over a learner with an arbitrary independent random seed. Measurability of its realized loss under the completed product experiment gives the scalar measurability used in the obstruction. All proper hypotheses have population loss one under the test law. [Proof and source scope](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md)
+
 ## 2026-11-22 — Measurable reconstruction for the agnostic VC learner
 
 Lean proves both agnostic rates for classes whose finite traces can be realized by countably many measurable proper reconstructions using at most $`k`$ input rows. The same learner has expected empirical excess at most $`583\sqrt{d/n}`$ on every sample and actual iid CMI at most $`197{,}120d+32k`$ nats. The [circle-orbit class](lean/Conjectures/AgnosticVC/OrbitIidRates.lean) admits one-row reconstruction and attains both rates with a Borel learner, even though the globally ordered representative rule fails there. [General Lean theorem](lean/Conjectures/AgnosticVC/LocalReconstructionMeasurable.lean) · [Argument and scope](research/steinke-zakynthinou-agnostic-vc/measurable-local-reconstruction.md)

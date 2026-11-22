@@ -366,4 +366,51 @@ theorem exists_finiteGroups_no_measurable_loss_rate (c : ℝ) :
   push_cast at hrate hacc
   linarith only [hs,hrate,hacc,hmin]
 
+universe u
+
+/-- Under the ordinary iid experiment with independent private randomness,
+measurable realized empirical loss already rules out the all-sample rate. No
+measurability condition is imposed on the learner's hypothesis-valued map. -/
+theorem exists_finiteGroups_no_jointly_measurable_loss_learner (c : ℝ) :
+    ∃ n : ℕ, let X := Fin (n + 1) × unitInterval
+      let D := sectorLaw (n + 1) (volume : Measure unitInterval)
+      let labeled := D.map (fun x => (x,true))
+      ∃ G : Set (Fin (n + 1) → unitInterval),
+        let predict := groupPredict G
+        let μ := Measure.pi fun _ : Fin (n + 1) => labeled
+        IsProbabilityMeasure labeled ∧ Function.Injective predict ∧
+        Measurable (fun p : X × (Unit ⊕ G) => predict p.2 p.1) ∧
+        HasVCDimensionAtMost predict 1 ∧ ¬ HasVCDimensionAtMost predict 0 ∧
+        (∀ h, {x : X | predict h x = true}.Finite) ∧
+        ∀ (Ω : Type u) [MeasurableSpace Ω] (ν : Measure Ω) [IsProbabilityMeasure ν]
+          (A : (Fin (n + 1) → X × Bool) → Ω → Unit ⊕ G),
+          AEMeasurable (fun p : (Fin (n + 1) → X × Bool) × Ω =>
+            empiricalError predict p.1 (A p.1 p.2)) (μ.prod ν) →
+          (∀ z, AEMeasurable (fun ω => empiricalError predict z (A z ω)) ν) →
+          ¬ ∀ z, (∫ ω, empiricalError predict z (A z ω) ∂ν) ≤
+            (⨅ h, empiricalError predict z h) + c * Real.sqrt (1 / ((n + 1 : ℕ) : ℝ)) := by
+  obtain ⟨n,G,hD,hinj,hmeas,hvc,hvc0,hfinite,hfail⟩ := exists_finiteGroups_no_measurable_loss_rate c
+  refine ⟨n,G,hD,hinj,hmeas,hvc,hvc0,hfinite,?_⟩
+  intro Ω _ ν _ A hJoint hSections hacc
+  let X := Fin (n + 1) × unitInterval
+  let predict := groupPredict G
+  let r (z : Fin (n + 1) → X × Bool) := ∫ ω, empiricalError predict z (A z ω) ∂ν
+  refine hfail ⟨r, hJoint.aestronglyMeasurable.integral_prod_right'.aemeasurable, ?_⟩
+  intro z
+  refine ⟨?_,hacc z⟩
+  have hnon (h : Unit ⊕ G) : 0 ≤ empiricalError predict z h := by
+    rw [empiricalError_eq_zeroOne]
+    positivity
+  have hbounded (h : Unit ⊕ G) : empiricalError predict z h ≤ 1 := by
+    rw [empiricalError_eq_zeroOne, div_le_iff₀ (Nat.cast_pos.mpr (Nat.succ_pos n)), one_mul]
+    calc
+      _ ≤ ∑ _ : Fin (n + 1), (1 : ℝ) := Finset.sum_le_sum fun i _ => by split <;> norm_num
+      _ = _ := by simp
+  have hBelow : BddBelow (range (empiricalError predict z)) := ⟨0,fun _ ⟨h,hh⟩ => hh ▸ hnon h⟩
+  have hi : Integrable (fun ω => empiricalError predict z (A z ω)) ν :=
+    Integrable.of_bound (hSections z).aestronglyMeasurable 1 (Filter.Eventually.of_forall fun ω =>
+      (Real.norm_of_nonneg (hnon (A z ω))).trans_le (hbounded (A z ω)))
+  simpa [r] using integral_mono (integrable_const (μ := ν) (⨅ h, empiricalError predict z h)) hi
+    (fun ω => ciInf_le hBelow (A z ω))
+
 end AgnosticVC
