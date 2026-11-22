@@ -41,6 +41,8 @@ EXTERNAL_CREDIT = {
     ),
 }
 PARTIAL_CATEGORIES = {
+    "circular-index-upper-half-delta-2-mod-4": "Graphs and networks",
+    "circular-index-upper-half-delta-3-mod-4": "Graphs and networks",
     "shifted-lonely-runner-counterexamples": "Lonely runners",
     "steinke-zakynthinou-agnostic-vc": "Information complexity of learning",
     "frankl-generator-families": "Combinatorics",
@@ -95,6 +97,8 @@ STATUS_LABEL_SLUGS = {
     "Sonntag–Teichert conjecture": "sonntag-teichert",
     "Horňák–Woźniak conjecture": "hornak-wozniak",
     "Circulants with circular chromatic index in the upper half": "circular-index-upper-half-circulants",
+    "Graphs with circular chromatic index in the upper half for Δ ≡ 2 mod 4": "circular-index-upper-half-delta-2-mod-4",
+    "Graphs with circular chromatic index in the upper half for Δ ≡ 3 mod 4": "circular-index-upper-half-delta-3-mod-4",
     "L-solitaire": "l-solitaire-limit-shapes",
     "Three-player War": "spivey-multiplayer-war",
     "Pham denominator degree": "pham-denominator-degree",
@@ -130,6 +134,7 @@ STATUS_LABEL_SLUGS = {
     "Eight-speed spectrum": "eight-speed-spectrum",
     "Eleven-through-fourteen-runner equality": "tight-eleven-to-fourteen",
     "Mazák–Zrubák conjecture on complete graphs minus an edge": "circular-index-complete-minus-edge",
+    "Circular chromatic index of complete graphs minus a few edges": "circular-index-complete-minus-edges",
 }
 
 

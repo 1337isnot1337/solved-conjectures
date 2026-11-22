@@ -1,0 +1,7 @@
+K_5 - e: 4 perfect sequencings starting with the first edge
+  Lemmas A2-A5 hold on all of them (one ordinary class each)
+K_7 - e: 0 perfect sequencings (exhaustive, 0.1s)
+K_9 - e: 0 perfect sequencings (exhaustive, 26.0s)
+K_7 - P_3: 0 perfect sequencings (exhaustive, 0.0s)
+K_7 - 2K_2: 0 perfect sequencings (exhaustive, 0.0s)
+total 26.1s

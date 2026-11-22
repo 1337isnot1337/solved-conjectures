@@ -165,6 +165,10 @@ jobs:
         run: |
           python3 results/circular-index-upper-half-circulants/verify.py
           python3 results/circular-index-upper-half-circulants/verify_part2.py
+      - name: Check the upper-half graphs for maximum degree 2 mod 4
+        run: python3 results/circular-index-upper-half-delta-2-mod-4/verify.py
+      - name: Check the upper-half graphs for maximum degree 3 mod 4
+        run: python3 results/circular-index-upper-half-delta-3-mod-4/verify.py
       - name: Verify the five-speed loneliness spectrum
         run: python3 results/five-speed-spectrum/verify.py
       - name: Verify tight six-speed sets and seven-coordinate critical planes
@@ -193,3 +197,7 @@ jobs:
           python3 results/tight-eleven-to-fourteen/verify.py --legacy-log "$RUNNER_TEMP/first-lifts.log"
       - name: Check the Mazák–Zrubák lemmas for complete graphs minus an edge
         run: python3 results/circular-index-complete-minus-edge/verify.py
+      - name: Check the colourings and perfect-sequencing searches for complete graphs minus a few edges
+        run: |
+          python3 results/circular-index-complete-minus-edges/verify.py
+          python3 results/circular-index-complete-minus-edges/verify_seq.py

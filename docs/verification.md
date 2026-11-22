@@ -316,6 +316,8 @@ python3 results/nonmixed-gap-packing/verify.py
 python3 results/haralambis-three-differences/verify.py
 python3 results/circular-index-upper-half-circulants/verify.py
 python3 results/circular-index-upper-half-circulants/verify_part2.py
+python3 results/circular-index-upper-half-delta-2-mod-4/verify.py
+python3 results/circular-index-upper-half-delta-3-mod-4/verify.py
 python3 results/five-speed-spectrum/verify.py
 python3 results/tight-six-speeds/verify.py
 python3 results/six-speed-spectrum/verify.py
@@ -329,6 +331,8 @@ python3 results/tight-nine-speeds/verify.py
 python3 results/zhang-deletion-values/verify.py
 python3 results/shifted-lonely-runner-counterexamples/verify.py --quick
 python3 results/circular-index-complete-minus-edge/verify.py
+python3 results/circular-index-complete-minus-edges/verify.py
+python3 results/circular-index-complete-minus-edges/verify_seq.py
 ```
 
 The latest workflow is the executable reference when new checks are added.
@@ -336,6 +340,14 @@ The latest workflow is the executable reference when new checks are added.
 ## Circulants in the upper half of the circular chromatic index
 
 Run `python3 results/circular-index-upper-half-circulants/verify.py` and `python3 results/circular-index-upper-half-circulants/verify_part2.py` with assertions enabled. The first standard-library script checks the `(2n,3)`-edge-colourings of Theorem 1 for `g = 2..30` (partition into classes, matchings, the window condition per vertex and per window, `α' = (n-1)/2` and `|E|/α' = 2n/3`), the vertex connectivity `4g` for `g <= 8` with its own max-flow routine, and the `(75,4)`-edge-colouring and connectivity of Theorem 2. The second rebuilds every certificate of Section 7 from `data/part2_certificates.json` and checks that it is a perfect colouring of a simple graph with the stated `Δ` and `χ'_c`, and the connectivity of the regular circulants. The scripts in `review/` (which need `networkx`) and in `search/` (most need `python-sat`) are not run by CI. The [written proof](../results/circular-index-upper-half-circulants/PROOF.md) covers every `g >= 2`; no Lean verification is included.
+
+## Graphs with circular chromatic index in the upper half for Δ ≡ 2 mod 4
+
+Run `python3 results/circular-index-upper-half-delta-2-mod-4/verify.py` with assertions enabled. The standard-library script builds the base matchings of Section 3 for `6 <= g <= 60` (the `g = 6` base from `certificates.json`), checks their lengths, the partition of the circulant into `2n` classes, the windows of the base colouring and the two insertion blocks, and then checks for both final graphs simplicity, `Δ`, the `(p,3)`-colouring per vertex from the definition and `|E|/((n-1)/2) = p/3 = Δ+2/3`. Part 2 rechecks the `(3n-1,3)`-colourings of `K_n-tK_2` for `n = 11, 15, 19, 23, 27`, and five negative controls must be rejected. The referee scripts in `review/` are not run by CI; `indep_check.py` and `mut_test.py` need `numpy` and `networkx`. The [written proof](../results/circular-index-upper-half-delta-2-mod-4/PROOF.md) covers every `g >= 6`; no Lean verification is included.
+
+## Graphs with circular chromatic index in the upper half for Δ ≡ 3 mod 4
+
+Run `python3 results/circular-index-upper-half-delta-3-mod-4/verify.py` with assertions enabled. The standard-library script builds the base matchings and the three insertion blocks of Sections 4 and 5 for `15 <= g <= 60` and checks the claimed lengths. For each graph it checks that the base matchings are perfect on `W_0`, `W_1` with `2g` distinct lengths, that every block class is a matching on the vertex set it copies, simplicity, that the graph contains `C_n(S)`, `Δ = 4g+3`, `|E| = 2gn+9g`, the `(2n+9,3)`-colouring per vertex from the definition and `|E|/((n-1)/2) = p/3 = Δ+2/3`. It runs the same checks on the nine certificates of Proposition B (`6 <= g <= 14`) from `certificates.json`, and six negative controls must be rejected. The independent re-check `indep_check.py` and the referee scripts in `review/` use only the standard library but are not run by CI. The [written proof](../results/circular-index-upper-half-delta-3-mod-4/PROOF.md) covers every `g >= 15`; no Lean verification is included.
 
 ## Perron root of permanental compounds
 
@@ -356,6 +368,10 @@ Run `python3 results/pula-song-wanless/verify.py` with assertions enabled and Sy
 ## Mazák–Zrubák complete graphs minus an edge
 
 Run `python3 results/circular-index-complete-minus-edge/verify.py` with assertions enabled. The standard-library script enumerates the 2160 proper 5-edge-colourings of `K_5-e`, checks Lemmas 2, 3, 4 and 5(1) on the 180 with acyclic digraph, and shows that no edge ordering with the properties of Lemma 3 exists for `d=6`. The optional `verify_sat.py` and `review/sat_levels.py` check `d=6` directly from the definition, need `python-sat`, and are not run by CI; the other `review/` scripts are the referee pass's independent checks. The [written proof](../results/circular-index-complete-minus-edge/PROOF.md) covers every even `d >= 6`; no script completed `d=8`. No Lean verification is included.
+
+## Circular chromatic index of complete graphs minus a few edges
+
+Run `python3 results/circular-index-complete-minus-edges/verify.py` and `python3 results/circular-index-complete-minus-edges/verify_seq.py` with assertions enabled. The first standard-library script checks the 32 explicit `(p,q)`-edge-colourings of `K_n-F` in `colourings.json` from the definition and prints the matching lower bound `N/m`. The second searches exhaustively for perfect sequencings of `K_5-e`, `K_7-e`, `K_9-e`, `K_7-P_3` and `K_7-2K_2` and checks Lemmas A2 to A4 and the class counts of A5 on those of `K_5-e`; it takes about 25 seconds. The optional `verify_sat.py` and `drat/mkproof.py` need `python-sat` and are not run by CI, nor are the referee scripts in `review/`. The [written proof](../results/circular-index-complete-minus-edges/PROOF.md) of Theorem A covers every odd `n >= 7`; the exact values for small `n` also rest on exhaustive searches and SAT runs. No Lean verification is included.
 
 ## Zhang's Question 8.4
 

@@ -1,0 +1,60 @@
+base formulas OK for 7..200 (lengths = [2,2g-3] u {3g-2,3g-1,3g, 2g+3|2g+4})
+formula at g=5: ['lengths not distinct', '+-residues not 4g distinct']
+formula at g=6: ['lengths not distinct', '+-residues not 4g distinct']
+g=6 certificate base OK
+g=6: n=37, both graphs OK (Delta=25,26; chi'=77/3,80/3)  alpha'=18 by blossom
+g=7: n=43, both graphs OK (Delta=29,30; chi'=89/3,92/3)  alpha'=21 by blossom
+g=8: n=49, both graphs OK (Delta=33,34; chi'=101/3,104/3)  alpha'=24 by blossom
+g=9: n=55, both graphs OK (Delta=37,38; chi'=113/3,116/3)  alpha'=27 by blossom
+g=10: n=61, both graphs OK (Delta=41,42; chi'=125/3,128/3)  alpha'=30 by blossom
+g=11: n=67, both graphs OK (Delta=45,46; chi'=137/3,140/3)  alpha'=33 by blossom
+g=12: n=73, both graphs OK (Delta=49,50; chi'=149/3,152/3)  alpha'=36 by blossom
+g=13: n=79, both graphs OK (Delta=53,54; chi'=161/3,164/3)
+g=14: n=85, both graphs OK (Delta=57,58; chi'=173/3,176/3)
+g=15: n=91, both graphs OK (Delta=61,62; chi'=185/3,188/3)
+g=16: n=97, both graphs OK (Delta=65,66; chi'=197/3,200/3)
+g=17: n=103, both graphs OK (Delta=69,70; chi'=209/3,212/3)
+g=18: n=109, both graphs OK (Delta=73,74; chi'=221/3,224/3)
+g=19: n=115, both graphs OK (Delta=77,78; chi'=233/3,236/3)
+g=20: n=121, both graphs OK (Delta=81,82; chi'=245/3,248/3)
+g=21: n=127, both graphs OK (Delta=85,86; chi'=257/3,260/3)
+g=22: n=133, both graphs OK (Delta=89,90; chi'=269/3,272/3)
+g=23: n=139, both graphs OK (Delta=93,94; chi'=281/3,284/3)
+g=24: n=145, both graphs OK (Delta=97,98; chi'=293/3,296/3)
+g=25: n=151, both graphs OK (Delta=101,102; chi'=305/3,308/3)
+g=26: n=157, both graphs OK (Delta=105,106; chi'=317/3,320/3)
+g=27: n=163, both graphs OK (Delta=109,110; chi'=329/3,332/3)
+g=28: n=169, both graphs OK (Delta=113,114; chi'=341/3,344/3)
+g=29: n=175, both graphs OK (Delta=117,118; chi'=353/3,356/3)
+g=30: n=181, both graphs OK (Delta=121,122; chi'=365/3,368/3)
+g=31: n=187, both graphs OK (Delta=125,126; chi'=377/3,380/3)
+g=32: n=193, both graphs OK (Delta=129,130; chi'=389/3,392/3)
+g=33: n=199, both graphs OK (Delta=133,134; chi'=401/3,404/3)
+g=34: n=205, both graphs OK (Delta=137,138; chi'=413/3,416/3)
+g=35: n=211, both graphs OK (Delta=141,142; chi'=425/3,428/3)
+g=36: n=217, both graphs OK (Delta=145,146; chi'=437/3,440/3)
+g=37: n=223, both graphs OK (Delta=149,150; chi'=449/3,452/3)
+g=38: n=229, both graphs OK (Delta=153,154; chi'=461/3,464/3)
+g=39: n=235, both graphs OK (Delta=157,158; chi'=473/3,476/3)
+g=40: n=241, both graphs OK (Delta=161,162; chi'=485/3,488/3)
+g=41: n=247, both graphs OK (Delta=165,166; chi'=497/3,500/3)
+g=42: n=253, both graphs OK (Delta=169,170; chi'=509/3,512/3)
+g=43: n=259, both graphs OK (Delta=173,174; chi'=521/3,524/3)
+g=44: n=265, both graphs OK (Delta=177,178; chi'=533/3,536/3)
+g=45: n=271, both graphs OK (Delta=181,182; chi'=545/3,548/3)
+g=46: n=277, both graphs OK (Delta=185,186; chi'=557/3,560/3)
+g=47: n=283, both graphs OK (Delta=189,190; chi'=569/3,572/3)
+g=48: n=289, both graphs OK (Delta=193,194; chi'=581/3,584/3)
+g=49: n=295, both graphs OK (Delta=197,198; chi'=593/3,596/3)
+g=50: n=301, both graphs OK (Delta=201,202; chi'=605/3,608/3)
+g=51: n=307, both graphs OK (Delta=205,206; chi'=617/3,620/3)
+g=52: n=313, both graphs OK (Delta=209,210; chi'=629/3,632/3)
+g=53: n=319, both graphs OK (Delta=213,214; chi'=641/3,644/3)
+g=54: n=325, both graphs OK (Delta=217,218; chi'=653/3,656/3)
+g=55: n=331, both graphs OK (Delta=221,222; chi'=665/3,668/3)
+g=56: n=337, both graphs OK (Delta=225,226; chi'=677/3,680/3)
+g=57: n=343, both graphs OK (Delta=229,230; chi'=689/3,692/3)
+g=58: n=349, both graphs OK (Delta=233,234; chi'=701/3,704/3)
+g=59: n=355, both graphs OK (Delta=237,238; chi'=713/3,716/3)
+g=60: n=361, both graphs OK (Delta=241,242; chi'=725/3,728/3)
+INDEPENDENT CHECK PASSED
