@@ -50,6 +50,8 @@ run_cmd do
     `AgnosticVC.hasMeasurableCanonicalRepresentatives_of_countable_domain,
     `AgnosticVC.hasMeasurableCanonicalRepresentatives_of_countable_trace_core,
     `AgnosticVC.exists_order_of_countable_trace_core,
+    `AgnosticVC.hasMeasurableCanonicalRepresentatives_of_orderedERM,
+    `AgnosticVC.steinkeZakynthinou_of_measurable_orderedERM,
     `AgnosticVC.finite_trace_core_of_pointwise_limits,
     `AgnosticVC.exists_order_of_separable_continuous_predict,
     `AgnosticVC.rational_threshold_realizes_finite_trace,

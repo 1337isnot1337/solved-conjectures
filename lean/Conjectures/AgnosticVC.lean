@@ -25,5 +25,6 @@ public import Conjectures.AgnosticVC.CoarseKL
 public import Conjectures.AgnosticVC.BorelExample
 public import Conjectures.AgnosticVC.IntervalExample
 public import Conjectures.AgnosticVC.TraceCoreExamples
+public import Conjectures.AgnosticVC.OrderedERM
 
 /-! Steinke–Zakynthinou's agnostic VC learning theorem and its operator estimates. -/

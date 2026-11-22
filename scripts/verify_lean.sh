@@ -321,6 +321,7 @@ modules=(
   Conjectures.AgnosticVC.SingletonExample
   Conjectures.AgnosticVC.TraceCoreOrder
   Conjectures.AgnosticVC.TraceCoreExamples
+  Conjectures.AgnosticVC.OrderedERM
   Conjectures.AgnosticVC
   Conjectures.SteinkeZakynthinou.Adjacency
   Conjectures.SteinkeZakynthinou.AdjacentInformation
