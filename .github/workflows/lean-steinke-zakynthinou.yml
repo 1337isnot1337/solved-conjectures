@@ -4,15 +4,22 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths:
+    paths: &proof_paths
       - '.github/workflows/lean-steinke-zakynthinou.yml'
       - 'lean/Conjectures/SteinkeZakynthinou.lean'
       - 'lean/Conjectures/SteinkeZakynthinou/**'
+      - 'lean/Conjectures/AgnosticVC/**'
+      - 'lean/ProofAudit.lean'
+      - 'scripts/verify_lean.sh'
       - 'lean/lean-toolchain'
       - 'lean/lakefile.toml'
       - 'lean/lake-manifest.json'
       - 'scripts/audit_lean_all_owned.py'
       - 'scripts/replay_lean.py'
+
+  pull_request:
+    branches: [main]
+    paths: *proof_paths
 
 permissions:
   contents: read
@@ -39,10 +46,18 @@ jobs:
       - name: Build the threshold proof with the pinned toolchain
         working-directory: lean
         run: |
-          imports=$(awk '$1 == "public" && $2 == "import" && $3 ~ /^Mathlib[.]/ { print $3 }' \
-            Conjectures/SteinkeZakynthinou.lean Conjectures/SteinkeZakynthinou/*.lean | sort -u)
-          mapfile -t modules <<< "$imports"
-          lake exe cache get "${modules[@]}"
+          PYTHONPATH=../scripts python3 - <<'PYTHON'
+          from pathlib import Path
+          import subprocess
+          from replay_lean import imports_of, local_closure
+
+          lean = Path.cwd()
+          closure = local_closure(lean, {"Conjectures.SteinkeZakynthinou"})
+          sources = [lean / (name.replace(".", "/") + ".lean") for name in closure]
+          imports = {name for source in sources for name in imports_of(source)
+                     if name.startswith("Mathlib.")}
+          subprocess.run(["lake", "exe", "cache", "get", *sorted(imports)], check=True)
+          PYTHON
           lake build Conjectures.SteinkeZakynthinou
       - name: Check strict sources and audit all declarations
         env:
@@ -54,15 +69,15 @@ jobs:
           from pathlib import Path
           from tempfile import TemporaryDirectory
 
-          from audit_lean_all_owned import audit_source, validate_log
+          from audit_lean_all_owned import accepted_spec, audit_source, validate_log
           from replay_lean import local_closure
 
           lean = Path("lean").resolve()
           modules = sorted(local_closure(lean, {"Conjectures.SteinkeZakynthinou"}))
-          required = [
-              "SteinkeZakynthinou.properThresholdTheorem",
-              "SteinkeZakynthinou.properThresholdTheorem_bits",
-          ]
+          required = [name for name in accepted_spec(lean.parent)["required"]
+                      if name.startswith("SteinkeZakynthinou.")]
+          if not required:
+              raise ValueError("No threshold endpoints registered in ProofAudit")
           command = ["lake", "env", "lean", "-j1", "-DwarningAsError=true"]
           for module in modules:
               subprocess.run([*command, module.replace(".", "/") + ".lean"], cwd=lean, check=True)

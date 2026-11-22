@@ -314,6 +314,13 @@ modules=(
   Conjectures.AgnosticVC.ShuffleIntegral
   Conjectures.AgnosticVC.Theorem
   Conjectures.AgnosticVC.CoarseKL
+  Conjectures.AgnosticVC.NonBorelRange
+  Conjectures.AgnosticVC.Obstruction
+  Conjectures.AgnosticVC.BorelExample
+  Conjectures.AgnosticVC.IntervalExample
+  Conjectures.AgnosticVC.SingletonExample
+  Conjectures.AgnosticVC.TraceCoreOrder
+  Conjectures.AgnosticVC.TraceCoreExamples
   Conjectures.AgnosticVC
   Conjectures.SteinkeZakynthinou.Adjacency
   Conjectures.SteinkeZakynthinou.AdjacentInformation
@@ -342,6 +349,10 @@ modules=(
   Conjectures.SteinkeZakynthinou.Tensor
   Conjectures.SteinkeZakynthinou.Tree
   Conjectures.SteinkeZakynthinou.TreeStability
+  Conjectures.SteinkeZakynthinou.ConditionalKernel
+  Conjectures.SteinkeZakynthinou.OutputKernel
+  Conjectures.SteinkeZakynthinou.JointKL
+  Conjectures.SteinkeZakynthinou.SourceClass
   Conjectures.SteinkeZakynthinou
   Conjectures.SunZhao
   Conjectures.FangZhangZhao

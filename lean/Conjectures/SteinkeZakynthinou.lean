@@ -2,6 +2,8 @@ module
 
 public import Conjectures.SteinkeZakynthinou.Averaging
 public import Conjectures.SteinkeZakynthinou.DecodedChannel
+public import Conjectures.SteinkeZakynthinou.ConditionalKernel
+public import Conjectures.SteinkeZakynthinou.SourceClass
 
 /-!
 The proper agnostic real-threshold case of Steinke and Zakynthinou,
@@ -135,5 +137,22 @@ theorem properThresholdTheorem_bits :
   · intro z
     apply (shiftedTreeLearner_expectedLoss_le_inf hn z).trans
     exact add_le_add_right (div_le_div_of_nonneg_right (by norm_num) (Real.sqrt_nonneg _)) _
+
+/-- The original agnostic threshold bounds, with Mathlib KL of the selector and the
+returned real cutoff, and with the constant-zero threshold in the comparator class. -/
+theorem properThresholdTheorem_source {n : ℕ} (hn : 0 < n) :
+    let a := shiftedTreeLearner hn
+    (∀ (D : Measure Observation) [IsProbabilityMeasure D],
+      (∫⁻ T, a.poolKL T ∂poolMeasure n D) ≤ 300) ∧
+    ∀ z : Sample n, (∫ t, empiricalLoss z t ∂a.outputKernel z) ≤
+      (⨅ t : Option ℝ, sourceEmpiricalLoss z t) + 512 / Real.sqrt n := by
+  intro a
+  constructor
+  · intro D _
+    rw [a.lintegral_poolKL_eq_cmi]
+    exact (ENNReal.ofReal_le_ofReal (shiftedTreeLearner_cmi_le hn D)).trans_eq (by norm_num)
+  · intro z
+    rw [a.integral_empiricalLoss_outputKernel]
+    exact a.expectedLoss_le_sourceInfimum z _ (shiftedTreeLearner_expectedLoss_le hn z)
 
 end SteinkeZakynthinou
