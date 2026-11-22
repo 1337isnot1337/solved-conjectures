@@ -11,7 +11,7 @@ open scoped BigOperators
 
 namespace AgnosticVC
 
-variable {I K H X : Type*} [Fintype I] [Fintype K]
+variable {I K H X : Type*} [Fintype I] [Fintype K] [TraceOrder H]
 
 /-- Embed a realized sub-block trace into the full block by the predictions of
 its canonical representative on *all* positions. -/

@@ -9,7 +9,7 @@ public import Conjectures.AgnosticVC.PairedDeletion
 
 namespace AgnosticVC
 
-variable {n : ℕ} {X H : Type*} [Nonempty H]
+variable {n : ℕ} {X H : Type*} [Nonempty H] [TraceOrder H]
 
 noncomputable def blockDeletionCharge (σ : Schedule) (predict : H → X → Bool)
     (T : Fin (n+1) → X × Bool) (i : Fin (n+1)) : ℝ :=

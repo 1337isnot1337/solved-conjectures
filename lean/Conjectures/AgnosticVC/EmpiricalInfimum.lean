@@ -23,7 +23,7 @@ theorem empiricalError_eq_zeroOne {H X : Type*} {n : ℕ} (predict : H → X →
 
 /-- The expected empirical error of the actual proper learner, compared with the infimum
 of empirical errors in the hypothesis class. -/
-theorem properLearner_empirical_le_iInf {H X : Type*} [Nonempty H] {n d : ℕ}
+theorem properLearner_empirical_le_iInf {H X : Type*} [Nonempty H] [TraceOrder H] {n d : ℕ}
     (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool) (hvc : HasVCDimensionAtMost predict d)
     (z : Fin n → X × Bool) :
     (∑' t : H, (properLearner hd hn predict z t).toReal * empiricalError predict z t) ≤

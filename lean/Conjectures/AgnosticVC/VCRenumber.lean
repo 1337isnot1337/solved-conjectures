@@ -96,7 +96,7 @@ noncomputable def deletedTraceEquiv (predict : H → X → Bool) (x : Fin (n + 1
     (i : Fin (n + 1)) (v : TraceSpace predict (x ∘ i.succAbove)) :
     (deletedTraceEquiv predict x i v).val = v.val.map i.succAboveEmb := rfl
 
-private lemma forgetTrace_extendTrace_succAbove (predict : H → X → Bool) (x : Fin (n + 1) → X)
+private lemma forgetTrace_extendTrace_succAbove [TraceOrder H] (predict : H → X → Bool) (x : Fin (n + 1) → X)
     (i : Fin (n + 1)) (v : TraceSpace predict (x ∘ i.succAbove)) :
     forgetTrace (sampleFamily predict x) i (extendTrace predict x i.succAbove v) =
       deletedTraceEquiv predict x i v := by
@@ -106,11 +106,11 @@ private lemma forgetTrace_extendTrace_succAbove (predict : H → X → Bool) (x 
   rw [← sampleTrace_map_succAbove, canonicalRep_trace]
 
 /-- The global canonical representative specifies the section of the deleted trace map. -/
-noncomputable def deletedTraceSection (predict : H → X → Bool) (x : Fin (n + 1) → X)
+noncomputable def deletedTraceSection [TraceOrder H] (predict : H → X → Bool) (x : Fin (n + 1) → X)
     (i : Fin (n + 1)) : ↥(DeletedFamily (sampleFamily predict x) i) → TraceSpace predict x :=
   extendTrace predict x i.succAbove ∘ (deletedTraceEquiv predict x i).symm
 
-theorem deletedTraceSection_leftInverse (predict : H → X → Bool) (x : Fin (n + 1) → X)
+theorem deletedTraceSection_leftInverse [TraceOrder H] (predict : H → X → Bool) (x : Fin (n + 1) → X)
     (i : Fin (n + 1)) : Function.LeftInverse (forgetTrace (sampleFamily predict x) i)
       (deletedTraceSection predict x i) := by
   intro b
@@ -248,7 +248,7 @@ theorem traceLaw_deleted_eq [Nonempty H] (predict : H → X → Bool) (x : Fin (
   exact optimizer_min L σ.temperature c s b (law_renumber e.symm hq)
 
 /-- The actual full-alphabet law of the learner trained with one observation removed. -/
-theorem marginal_deletedTraceSection_optimizer_eq [Nonempty H] (predict : H → X → Bool)
+theorem marginal_deletedTraceSection_optimizer_eq [Nonempty H] [TraceOrder H] (predict : H → X → Bool)
     (x : Fin (n + 1) → X) (i : Fin (n + 1)) (σ : Schedule) (y : Fin (n + 1) → Bool)
     (w : Fin (n + 1) → ℝ) (hτ : 0 < σ.temperature) (hc : ∀ j, 0 ≤ σ.coeff j) :
     marginal (deletedTraceSection predict x i) (deletedTraceOptimizer (sampleFamily predict x) i σ y w) =

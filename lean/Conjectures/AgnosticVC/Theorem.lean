@@ -19,7 +19,7 @@ namespace AgnosticVC
 universe u v
 
 /-- The two rates on arbitrary sets, averaging over bijections of a fixed pool of labeled positions. -/
-theorem steinkeZakynthinou_fixedPool {X : Type u} {H : Type v} [Nonempty H]
+theorem steinkeZakynthinou_fixedPool {X : Type u} {H : Type v} [Nonempty H] [TraceOrder H]
     {n d : ℕ} (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
     (hvc : HasVCDimensionAtMost predict d) :
     ∃ A : (Fin n → X × Bool) → PMF H,
@@ -35,7 +35,7 @@ theorem steinkeZakynthinou_fixedPool {X : Type u} {H : Type v} [Nonempty H]
 /-- Across arbitrary hypothesis sets, both guarantees hold for every iid law under which
 the actual whole-output information statistic is almost everywhere measurable. Its
 integrability follows in the proof. No measurable representative selection is assumed. -/
-theorem steinkeZakynthinou_measurableInformation {X : Type u} {H : Type v} [Nonempty H]
+theorem steinkeZakynthinou_measurableInformation {X : Type u} {H : Type v} [Nonempty H] [TraceOrder H]
     [MeasurableSpace X] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
     (hvc : HasVCDimensionAtMost predict d) :
     ∃ A : (Fin n → X × Bool) → PMF H,
@@ -56,7 +56,9 @@ the measurable-selection convention. The learner is chosen before the iid popula
 The information uses the complete returned hypothesis and a fair selector, in nats. -/
 def AgnosticVCProblem : Prop :=
   ∃ C : ℝ, 0 ≤ C ∧ ∀ (X : Type u) (H : Type v) [MeasurableSpace X] [MeasurableSpace H]
-    [Nonempty H] (predict : H → X → Bool) (d n : ℕ), 0 < d → d ≤ n →
+    [Nonempty H] (order : TraceOrder H) (predict : H → X → Bool) (d n : ℕ),
+    letI := order
+    0 < d → d ≤ n →
     HasVCDimensionAtMost predict d → HasMeasurableCanonicalRepresentatives predict →
     ∃ A : (Fin n → X × Bool) → PMF H,
       Measurable (fun z => (A z).toMeasure) ∧
@@ -70,7 +72,9 @@ def AgnosticVCProblem : Prop :=
 classes this hypothesis is supplied by `hasMeasurableCanonicalRepresentatives_of_countable`. -/
 theorem steinkeZakynthinou_conjecture6 : AgnosticVCProblem.{u,v} := by
   refine ⟨19712, by norm_num, ?_⟩
-  intro X H _ _ _ predict d n hd hn hvc hsel
+  intro X H _ _ _ order predict d n
+  let : TraceOrder H := order
+  intro hd hn hvc hsel
   refine ⟨properLearner hd hn predict, measurable_properLearner_toMeasure hd hn predict hsel, ?_, ?_⟩
   · intro D _
     rw [show originalPoolInformation (properLearner hd hn predict) = poolInformation hd hn predict

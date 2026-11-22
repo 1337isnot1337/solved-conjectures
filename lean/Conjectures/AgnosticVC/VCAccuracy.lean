@@ -161,7 +161,7 @@ noncomputable def empiricalError {H X : Type*} {n : ℕ} (predict : H → X → 
 /-- On every fixed sample, the actual proper learner's expected empirical error is within
 `583 * √(d / n)` of every comparator in the class. The expectation is over its finite
 support of actual hypothesis names. -/
-theorem properLearner_empirical_le {H X : Type*} [Nonempty H] {n d : ℕ}
+theorem properLearner_empirical_le {H X : Type*} [Nonempty H] [TraceOrder H] {n d : ℕ}
     (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool) (hvc : HasVCDimensionAtMost predict d)
     (z : Fin n → X × Bool) (h : H) :
     (∑' t : H, (properLearner hd hn predict z t).toReal * empiricalError predict z t) ≤

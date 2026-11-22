@@ -61,7 +61,7 @@ theorem originalPoolInformation_eq_klDiv_of_finite_support
 
 /-- At a fixed pool the actual joint law has finite Mathlib KL divergence from the genuine
 marginal product, and its real value is the finite channel information. -/
-theorem poolInformation_eq_klDiv [Nonempty H] (hd : 0 < d) (hn : d ≤ n)
+theorem poolInformation_eq_klDiv [Nonempty H] [TraceOrder H] (hd : 0 < d) (hn : d ≤ n)
     (predict : H → X → Bool) (z : Pool n X) :
     let J := originalPoolJoint (properLearner hd hn predict) z
     let Q := originalPoolMarginalProduct (properLearner hd hn predict) z

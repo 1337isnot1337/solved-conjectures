@@ -10,7 +10,7 @@ open MeasureTheory
 open scoped BigOperators
 
 /-- The information of the full named output has finite range on the deterministic pools. -/
-theorem originalPoolInformation_finite_range {H X : Type*} [Nonempty H] {n d : ℕ}
+theorem originalPoolInformation_finite_range {H X : Type*} [Nonempty H] [TraceOrder H] {n d : ℕ}
     (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool) :
     (Set.range (originalPoolInformation (properLearner hd hn predict))).Finite := by
   rw [show originalPoolInformation (properLearner hd hn predict) = poolInformation hd hn predict
@@ -19,7 +19,7 @@ theorem originalPoolInformation_finite_range {H X : Type*} [Nonempty H] {n d : �
 
 /-- For a finite measure on the pools, almost-everywhere measurability of the exact
 information statistic suffices for integrability. -/
-theorem integrable_originalPoolInformation_of_aemeasurable {H X : Type*} [Nonempty H]
+theorem integrable_originalPoolInformation_of_aemeasurable {H X : Type*} [Nonempty H] [TraceOrder H]
     [MeasurableSpace X] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
     (μ : Measure (Pool n X)) [IsFiniteMeasure μ]
     (hm : AEMeasurable (originalPoolInformation (properLearner hd hn predict)) μ) :
@@ -35,7 +35,7 @@ theorem integrable_originalPoolInformation_of_aemeasurable {H X : Type*} [Nonemp
 
 /-- The iid information bound uses only almost-everywhere measurability of the exact
 information statistic. It follows from the permutation-averaged fixed-pool bound. -/
-theorem properLearner_original_cmi_le_of_aemeasurable {H X : Type*} [Nonempty H]
+theorem properLearner_original_cmi_le_of_aemeasurable {H X : Type*} [Nonempty H] [TraceOrder H]
     [MeasurableSpace X] {n d : ℕ} (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
     (hvc : HasVCDimensionAtMost predict d) (D : Measure (X × Bool)) [IsProbabilityMeasure D]
     (hm : AEMeasurable (originalPoolInformation (properLearner hd hn predict))
@@ -73,7 +73,7 @@ theorem aemeasurable_pool_of_countably_supported {X : Type*} [MeasurableSpace X]
 
 /-- The iid information inequality for countably supported labeled source laws,
 with arbitrary hypothesis classes. -/
-theorem properLearner_original_cmi_le_of_countably_supported {H X : Type*} [Nonempty H]
+theorem properLearner_original_cmi_le_of_countably_supported {H X : Type*} [Nonempty H] [TraceOrder H]
     [MeasurableSpace X] [MeasurableSingletonClass X] {n d : ℕ}
     (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool) (hvc : HasVCDimensionAtMost predict d)
     (D : Measure (X × Bool)) [IsProbabilityMeasure D] {S : Set (X × Bool)}

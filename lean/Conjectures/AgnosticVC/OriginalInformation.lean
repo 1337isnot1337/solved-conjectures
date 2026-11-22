@@ -94,7 +94,7 @@ theorem originalPoolJoint_support_subset (A : (Fin n → X × Bool) → PMF H) (
   exact (PMF.mem_support_iff _ _).mp hm
 
 /-- Every atom of the actual joint PMF uses the name of a full-pool representative. -/
-theorem originalPoolJoint_supported [Nonempty H] (hd : 0 < d) (hn : d ≤ n)
+theorem originalPoolJoint_supported [Nonempty H] [TraceOrder H] (hd : 0 < d) (hn : d ≤ n)
     (predict : H → X → Bool) (z : Pool n X) {sh : Selector n × H}
     (hs : sh ∈ (originalPoolJoint (properLearner hd hn predict) z).support) :
     ∃ v : TraceSpace predict (fun i => (z i).1), canonicalRep predict (fun i => (z i).1) v = sh.2 := by
@@ -127,7 +127,7 @@ private theorem channelInfo_eq_log_ratio {A : Type*} [Fintype A] (p : Selector n
 
 /-- The finite channel calculation is the discrete KL divergence of the actual hypothesis
 and fair selector from the product of their actual marginal laws. -/
-theorem originalPoolInformation_eq_poolInformation [Nonempty H] (hd : 0 < d) (hn : d ≤ n)
+theorem originalPoolInformation_eq_poolInformation [Nonempty H] [TraceOrder H] (hd : 0 < d) (hn : d ≤ n)
     (predict : H → X → Bool) (z : Pool n X) :
     originalPoolInformation (properLearner hd hn predict) z = poolInformation hd hn predict z := by
   symm

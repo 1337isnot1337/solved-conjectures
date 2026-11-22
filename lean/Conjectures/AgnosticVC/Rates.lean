@@ -17,7 +17,7 @@ open MeasureTheory
 
 namespace AgnosticVC
 
-variable {n d : ℕ} {X H : Type*} [Nonempty H]
+variable {n d : ℕ} {X H : Type*} [Nonempty H] [TraceOrder H]
 
 theorem blockDeletion_sum_le (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
     (hvc : HasVCDimensionAtMost predict d) (T : Fin (n+1) → X × Bool) :

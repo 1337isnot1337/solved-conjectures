@@ -10,6 +10,17 @@ The positions may repeat the same feature. All representatives use one well-orde
 
 namespace AgnosticVC
 
+/-- The global order used to choose every trace representative for a hypothesis class. -/
+class TraceOrder (H : Type*) where
+  rel : H → H → Prop
+  isWellOrder : IsWellOrder H rel
+
+attribute [instance] TraceOrder.isWellOrder
+
+/-- The default order, used when a caller supplies no chosen order. -/
+noncomputable instance (priority := low) TraceOrder.standard (H : Type*) : TraceOrder H :=
+  ⟨WellOrderingRel, WellOrderingRel.isWellOrder⟩
+
 variable {H X I K : Type*} [Fintype I]
 
 /-- The one-positions of a prediction trace. -/
@@ -72,16 +83,18 @@ theorem sampleFamily_vcDim_le [DecidableEq I] {predict : H → X → Bool}
   obtain ⟨i, hi, rfl⟩ := Finset.mem_image.mp hy
   simpa [u, hi] using hh i hi
 
+variable [TraceOrder H]
+
 /-- First actual hypothesis (in the fixed global well-order) realizing a trace. -/
 noncomputable def canonicalRep (predict : H → X → Bool) (x : I → X)
     (v : {v // v ∈ sampleFamily predict x}) : H :=
-  (WellOrderingRel.isWellOrder (α := H)).wf.min
+  (TraceOrder.isWellOrder (H := H)).wf.min
     {h | sampleTrace predict x h = v.val} (mem_sampleFamily.mp v.property)
 
 theorem canonicalRep_trace (predict : H → X → Bool) (x : I → X)
     (v : {v // v ∈ sampleFamily predict x}) :
     sampleTrace predict x (canonicalRep predict x v) = v.val :=
-  (WellOrderingRel.isWellOrder (α := H)).wf.min_mem
+  (TraceOrder.isWellOrder (H := H)).wf.min_mem
     {h | sampleTrace predict x h = v.val} (mem_sampleFamily.mp v.property)
 
 theorem canonicalRep_injective (predict : H → X → Bool) (x : I → X) :
@@ -90,6 +103,7 @@ theorem canonicalRep_injective (predict : H → X → Bool) (x : I → X) :
   apply Subtype.ext
   rw [← canonicalRep_trace predict x v, ← canonicalRep_trace predict x w, hvw]
 
+omit [TraceOrder H] in
 private theorem restrict_trace_eq [Fintype K] {predict : H → X → Bool} {x : I → X}
     {a b : H} (hab : sampleTrace predict x a = sampleTrace predict x b) (e : K → I) :
     sampleTrace predict (x ∘ e) a = sampleTrace predict (x ∘ e) b := by
@@ -105,10 +119,10 @@ theorem canonicalRep_refinement [Fintype K] (predict : H → X → Bool) (x : I 
     canonicalRep predict x ⟨sampleTrace predict x h, sampleTrace_mem predict x h⟩ = h := by
   let h := canonicalRep predict (x ∘ e) v
   change canonicalRep predict x ⟨sampleTrace predict x h, _⟩ = h
-  apply (WellOrderingRel.isWellOrder (α := H)).wf.min_eq_of_forall_not_lt
+  apply (TraceOrder.isWellOrder (H := H)).wf.min_eq_of_forall_not_lt
     (s := {a | sampleTrace predict x a = sampleTrace predict x h}) (m := h) rfl
   intro a ha
-  apply (WellOrderingRel.isWellOrder (α := H)).wf.not_lt_min
+  apply (TraceOrder.isWellOrder (H := H)).wf.not_lt_min
     {a | sampleTrace predict (x ∘ e) a = v.val}
   exact (restrict_trace_eq ha e).trans (canonicalRep_trace predict (x ∘ e) v)
 

@@ -9,7 +9,7 @@ namespace AgnosticVC
 open Finset MeasureTheory
 open scoped BigOperators
 
-variable {H X : Type*} [MeasurableSpace X]
+variable {H X : Type*} [MeasurableSpace X] [TraceOrder H]
 
 /-- The events that determine the finite coding of a learner whose representatives come
 from a global well-order. The second field measures the predictions of the chosen
@@ -21,6 +21,7 @@ structure HasMeasurableTraceSelection (predict : H → X → Bool) : Prop where
     MeasurableSet {x : I → X | ∃ hv : v ∈ sampleFamily predict (x ∘ e),
       (extendTrace predict x e ⟨v, hv⟩).val = t}
 
+omit [TraceOrder H] in
 lemma measurableSet_sampleTrace_eq {I : Type} [Fintype I] (predict : H → X → Bool)
     (h : H) (hm : Measurable (predict h)) (v : Finset I) :
     MeasurableSet {x : I → X | sampleTrace predict x h = v} := by
@@ -47,14 +48,14 @@ omit [MeasurableSpace X] in
 lemma canonicalRep_eq_iff {I : Type} [Fintype I] (predict : H → X → Bool) (x : I → X)
     (v : TraceSpace predict x) (g : H) :
     canonicalRep predict x v = g ↔ sampleTrace predict x g = v.val ∧
-      ∀ h, WellOrderingRel h g → sampleTrace predict x h ≠ v.val := by
+      ∀ h, TraceOrder.rel h g → sampleTrace predict x h ≠ v.val := by
   constructor
   · rintro rfl
     refine ⟨canonicalRep_trace predict x v, fun h hlt htrace => ?_⟩
-    exact (WellOrderingRel.isWellOrder (α := H)).wf.not_lt_min
+    exact (TraceOrder.isWellOrder (H := H)).wf.not_lt_min
       {t | sampleTrace predict x t = v.val} htrace hlt
   · rintro ⟨htrace, hmin⟩
-    exact (WellOrderingRel.isWellOrder (α := H)).wf.min_eq_of_forall_not_lt
+    exact (TraceOrder.isWellOrder (H := H)).wf.min_eq_of_forall_not_lt
       (s := {t | sampleTrace predict x t = v.val}) htrace (fun t ht hlt => hmin t hlt ht)
 
 /-- For a countable class, the fixed well-order gives measurable finite trace coding as
@@ -76,7 +77,7 @@ theorem hasMeasurableTraceSelection_of_countable [Countable H] (predict : H → 
     have he : {x : I → X | ∃ hv : v ∈ sampleFamily predict (x ∘ e),
         (extendTrace predict x e ⟨v, hv⟩).val = t} =
       ⋃ h : H, ({x : I → X | sampleTrace predict (x ∘ e) h = v} ∩
-        (⋂ g : H, {x : I → X | WellOrderingRel g h → sampleTrace predict (x ∘ e) g ≠ v}) ∩
+        (⋂ g : H, {x : I → X | TraceOrder.rel g h → sampleTrace predict (x ∘ e) g ≠ v}) ∩
         {x : I → X | sampleTrace predict x h = t}) := by
       ext x
       simp only [Set.mem_ofPred_eq, Set.mem_iUnion, Set.mem_iInter, Set.mem_inter_iff]
@@ -98,8 +99,8 @@ theorem hasMeasurableTraceSelection_of_countable [Countable H] (predict : H → 
     apply MeasurableSet.inter (hsmall h)
     apply MeasurableSet.iInter
     intro g
-    by_cases hgt : WellOrderingRel g h
-    · rw [show {x : I → X | WellOrderingRel g h → sampleTrace predict (x ∘ e) g ≠ v} =
+    by_cases hgt : TraceOrder.rel g h
+    · rw [show {x : I → X | TraceOrder.rel g h → sampleTrace predict (x ∘ e) g ≠ v} =
         ({x : I → X | sampleTrace predict (x ∘ e) g = v})ᶜ by ext x; simp [hgt]]
       exact (hsmall g).compl
     · simp [hgt]
@@ -221,7 +222,7 @@ noncomputable def familyMass {I : Type} [Fintype I] [DecidableEq I]
           ↥(traceRestriction F k.2.val))) ⟨v, hv⟩ ∂weightMeasure I
   else 0
 
-omit [MeasurableSpace X] in
+omit [MeasurableSpace X] [TraceOrder H] in
 lemma familyMass_eq {I : Type} [Fintype I] [DecidableEq I] [Nonempty H]
     (σ : Schedule) (predict : H → X → Bool) (x : I → X) (y : I → Bool) (v : TraceSpace predict x) :
     familyMass σ (sampleFamily predict x) y v.val = learnedTraceMass σ predict x y v := by

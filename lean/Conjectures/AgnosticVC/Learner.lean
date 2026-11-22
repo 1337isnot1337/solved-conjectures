@@ -135,6 +135,8 @@ theorem learnedTraceMass_isLaw {σ : Schedule} (hτ : 0 < σ.temperature) (ha : 
   simp only [(traceLaw_isLaw σ predict x y _).2]
   simp
 
+variable [TraceOrder H]
+
 /-- The distribution on actual hypotheses. Sample-dependent trace indices stay internal. -/
 noncomputable def properLearner {n d : ℕ} (hd : 0 < d) (hn : d ≤ n)
     (predict : H → X → Bool) (z : Fin n → X × Bool) : PMF H := by

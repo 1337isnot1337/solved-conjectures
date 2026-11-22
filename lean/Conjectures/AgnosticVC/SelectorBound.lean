@@ -13,7 +13,7 @@ open scoped BigOperators
 
 namespace AgnosticVC
 
-variable {I K J X H : Type*} [Fintype I] [Fintype K] [Fintype J] [Nonempty H]
+variable {I K J X H : Type*} [Fintype I] [Fintype K] [Fintype J] [Nonempty H] [TraceOrder H]
 
 /-- Law on full-block trace representatives after training on the specified subtuple. -/
 noncomputable def selectedLaw [DecidableEq K] (σ : Schedule) (predict : H → X → Bool)

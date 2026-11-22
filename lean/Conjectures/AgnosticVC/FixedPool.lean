@@ -71,7 +71,7 @@ theorem shuffle_subtuple_independent {I K Z : Type*} [Fintype I] [DecidableEq I]
       change z (π (σ (e j))) = z (π (e' j))
       rw [hσ]
 
-theorem shuffleMean_le_of_blockCharges {n d : ℕ} {X H : Type*} [Nonempty H]
+theorem shuffleMean_le_of_blockCharges {n d : ℕ} {X H : Type*} [Nonempty H] [TraceOrder H]
     (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool) {B : ℝ}
     (hcost : ∀ T : Fin (n+1) → X × Bool, ∑ i, blockDeletionCharge (schedule n d) predict T i ≤ B)
     (z : Pool n X) : shuffleMean (poolInformation hd hn predict) z ≤ 4 * B := by

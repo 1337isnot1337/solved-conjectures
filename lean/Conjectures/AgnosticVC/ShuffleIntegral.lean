@@ -30,7 +30,7 @@ private theorem permMean_eq_shuffleMean {I Z : Type*} [Fintype I] [DecidableEq I
 
 /-- The iid information bound for the actual returned hypothesis, assuming its scalar
 pool-information statistic is integrable. -/
-theorem properLearner_cmi_of_integrable {n d : ℕ} {X H : Type*} [Nonempty H]
+theorem properLearner_cmi_of_integrable {n d : ℕ} {X H : Type*} [Nonempty H] [TraceOrder H]
     [MeasurableSpace X] (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
     (hvc : HasVCDimensionAtMost predict d) (D : Measure (X × Bool)) [IsProbabilityMeasure D]
     (hI : Integrable (originalPoolInformation (properLearner hd hn predict))

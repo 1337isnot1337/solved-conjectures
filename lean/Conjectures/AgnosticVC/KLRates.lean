@@ -21,7 +21,7 @@ noncomputable def originalPoolKL (A : (Fin n → X × Bool) → PMF H) (z : Pool
 
 /-- The proper learner simultaneously attains the empirical infimum rate and the iid Mathlib
 KL rate. The output law is fixed before the population law, and its poolwise KL is finite. -/
-theorem steinkeZakynthinou_kl_rates [Nonempty H] [MeasurableSpace X]
+theorem steinkeZakynthinou_kl_rates [Nonempty H] [TraceOrder H] [MeasurableSpace X]
     (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
     (hvc : HasVCDimensionAtMost predict d) (hsel : HasMeasurableTraceSelection predict) :
     let A := properLearner hd hn predict
@@ -56,7 +56,7 @@ theorem steinkeZakynthinou_kl_rates [Nonempty H] [MeasurableSpace X]
     _ ≤ _ := ENNReal.ofReal_le_ofReal hb
 
 /-- Countable classes of measurable predictors satisfy the measurable selection hypothesis. -/
-theorem steinkeZakynthinou_kl_rates_countable [Nonempty H] [Countable H] [MeasurableSpace X]
+theorem steinkeZakynthinou_kl_rates_countable [Nonempty H] [TraceOrder H] [Countable H] [MeasurableSpace X]
     (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
     (hvc : HasVCDimensionAtMost predict d) (hmeas : ∀ h, Measurable (predict h)) :
     let A := properLearner hd hn predict

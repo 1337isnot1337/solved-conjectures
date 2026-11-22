@@ -23,6 +23,8 @@ private theorem trace_cont {I : Type*} [Fintype I] [DecidableEq I] {σ : Schedul
   unfold weightDraw
   fun_prop
 
+variable [TraceOrder H]
+
 theorem blockDeletionCharge_le_shared {σ : Schedule} (hτ : 0 < σ.temperature)
     (ha : ∀ j, 0 ≤ σ.coeff j) (predict : H → X → Bool) (T : Fin (n+1) → X × Bool)
     (i : Fin (n+1)) : blockDeletionCharge σ predict T i ≤

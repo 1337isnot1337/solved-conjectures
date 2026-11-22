@@ -10,7 +10,7 @@ namespace AgnosticVC
 open MeasureTheory ProbabilityTheory
 open scoped BigOperators
 
-variable {H X : Type*} [MeasurableSpace H] [MeasurableSpace X]
+variable {H X : Type*} [MeasurableSpace H] [MeasurableSpace X] [TraceOrder H]
 
 /-- Measurability of the coherent trace coding and of the chosen actual hypothesis in
 every measurable output event on each realized trace. -/
@@ -30,7 +30,7 @@ theorem hasMeasurableCanonicalRepresentatives_of_countable [Countable H]
   intro I _ v B hB
   have he : {x : I → X | ∃ hv : v ∈ sampleFamily predict x, canonicalRep predict x ⟨v, hv⟩ ∈ B} =
       ⋃ h : H, ({x : I → X | sampleTrace predict x h = v} ∩
-        (⋂ g : H, {x : I → X | WellOrderingRel g h → sampleTrace predict x g ≠ v}) ∩
+        (⋂ g : H, {x : I → X | TraceOrder.rel g h → sampleTrace predict x g ≠ v}) ∩
         {_x : I → X | h ∈ B}) := by
     ext x
     simp only [Set.mem_ofPred_eq, Set.mem_iUnion, Set.mem_iInter, Set.mem_inter_iff]
@@ -50,8 +50,8 @@ theorem hasMeasurableCanonicalRepresentatives_of_countable [Countable H]
   apply MeasurableSet.inter (measurableSet_sampleTrace_eq predict h (hmeas h) v)
   apply MeasurableSet.iInter
   intro g
-  by_cases hgt : WellOrderingRel g h
-  · rw [show {x : I → X | WellOrderingRel g h → sampleTrace predict x g ≠ v} =
+  by_cases hgt : TraceOrder.rel g h
+  · rw [show {x : I → X | TraceOrder.rel g h → sampleTrace predict x g ≠ v} =
       ({x : I → X | sampleTrace predict x g = v})ᶜ by ext x; simp [hgt]]
     exact (measurableSet_sampleTrace_eq predict g (hmeas g) v).compl
   · simp [hgt]
