@@ -1,0 +1,19 @@
+# LOG (wild2: lowering threshold 189)
+- [est. 23:32, WRONG] start. Read REPORT.md, REVIEW.md, lll_indep.py. Breakdown at n=189, mu=1.1: j=1 term 0.021, j=2 0.048, j>=3 0.012; j=2 (closed pairs of triples) dominates.
+- Derived self-contained lopsided "vertex-clique cluster" lemma: if W(a)=sum_{F∋z} p_F a^{|V(F)|} <= a-1 for all z then P(no event)>0 (proof by induction on Z_S, using only P(F | AND of non-neighbour complements) <= p_F).
+- [est. 23:50, WRONG] Cluster condition W(a)<=a-1 with old counts: n=3 mod 6 OK from 159; F-cases (n=1,5 mod 6) only from 185.
+- [est. 00:05, WRONG] Refined counts (cl2.py): connected splits only (conn(m,d)), free-edge counts hf=h-3 (f=4), h-4 (f=5) for E1, per-vertex E2 counts (z forced / z=u / z in free edge). Float: all odd n>=159 pass; 153,155,157 fail by 0.0016-0.0031.
+- [est. 00:10, WRONG] Breakdown at n=153, a=1.1225: j=1 0.028, j=2 0.067, j>=3 0.029 vs a-1=0.1225. j<=2 dominate; LLL/cluster on uniform triple partitions plateaus near 155.
+- [est. 00:25, WRONG] bf.py (brute force, distinct events through z vs formula; decomposition test): n=13,15,19,21 cyc+2 Kempe: all OK, decomposition 0 misses.
+- [est. 00:35, WRONG] counts.py: per-class E1 counts (colours split by number of free edges; minus f colours whose z-partner lies in F). Exact check ver.py: odd 155..191 all OK (155: a=567/500 slack 0.0063; 157: a=1131/1000 slack 0.0039); 149 (-0.0015), 151 (-0.0039), 153 (-0.0016) FAIL.
+- [est. 00:45, WRONG] Tried fixed valid triple F for n=0 mod 3 (f=3): much worse (-0.044 at 153) because forced vertices of F carry ~3h E2 events at j=1. Ideal removal of the forced term ("noforced", NOT a proof) would give 149,151 slack +0.0002/+0.0005, 153 -0.0002: vertex-dependent costs could perhaps gain 149/151; not pursued. Reverted to f=0.
+- [est. 00:47, WRONG] bf.py rerun with counts.py (seed 7) -> bf2.out
+- [est. 01:00, WRONG] bf.py with final counts.py (seed 7): 43 checks OK, 0 violations, decomposition 0 misses (n=13..25, cyclic + 2 Kempe each). Copied to outputs/improvement/bf.out.
+- [est. 01:03, WRONG] ver.py 145 189 (exact Fractions): OK for every odd n in [155,189]; FAIL 145-153. Saved improvement/ver.out.
+- [est. 01:05, WRONG] Source check: Harvey-Vondrak arXiv:1711.06797 Lemma 5 (lopsided cluster expansion, via WebFetch summary only) implies our Lemma C; our proof is self-contained.
+- [est. 01:25, WRONG] Wrote outputs/IMPROVEMENT.md (Theorem B: n>=155) and improvement/{counts.py,ver.py,bf.py,factor.py,ver.out,bf.out}. REPORT.md untouched.
+- 00:10 (real clock, `date`) CORRECTION: the times above marked 'est.' were guessed and are wrong; the real clock shows all of the above happened between 23:32 and 00:10. Order of entries is correct. From here on times come from `date`.
+- 00:17 bf_big.py (j<=2 count check, n=31,37,41,43,47,53, cyclic + Kempe): all OK; f=5 j=2 ratio exact/formula up to 0.9865 (n=53) - bound nearly tight, as expected (E1 part is the exact worst case).
+- 00:17 ver_indep.py: conn via EGF (log A0, A1/A0) equals recursion for m<=12; E1/E2 by explicit maximisation over class sizes and exclusions; q_j by product. counts.coef >= indep coefficients for every j, n in [155,189]; condition OK at same a. ALL OK.
+- 00:17 Considered vertex-dependent costs for 149/151: estimated net gain ~0.002 at most after special-vertex inflation (|Sp| up to 30 (f=4) / 60 (f=5)); 151 and 153 would still fail, so the threshold would not move. Not pursued.
+- 00:19 Final edits to IMPROVEMENT.md (math delimiters, \lt/\gt, Step 1 wording, clarified that the idealised 153 figure is for the f=3 variant). Outputs: IMPROVEMENT.md + improvement/{counts.py,ver.py,ver.out,ver_indep.py,ver_indep.out,bf.py,bf.out,bf_big.py,bf_big.out,factor.py,LOG.md}. REPORT.md unchanged (md5 1ae1121b...).

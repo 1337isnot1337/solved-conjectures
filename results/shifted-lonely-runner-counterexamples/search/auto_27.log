@@ -1,0 +1,13 @@
+n=27 seed=0 margin=0.60 uncovered=16  E after SLP=-1.5600  [30s]
+n=27 seed=0 margin=0.25 uncovered=14  E after SLP=-2.0000  [59s]
+n=27 seed=1 margin=0.60 uncovered=36  E after SLP=-4.0000  [89s]
+n=27 seed=1 margin=0.25 uncovered=10  E after SLP=-0.6000  [118s]
+n=27 seed=2 margin=0.60 uncovered=22  E after SLP=-1.2808  [147s]
+n=27 seed=2 margin=0.25 uncovered=26  E after SLP=-2.3137  [177s]
+n=27 seed=3 margin=0.60 uncovered=30  E after SLP=-1.9755  [207s]
+n=27 seed=3 margin=0.25 uncovered=33  E after SLP=-1.6957  [237s]
+n=27 seed=4 margin=0.60 uncovered=20  E after SLP=-0.7143  [267s]
+n=27 seed=4 margin=0.25 uncovered=26  E after SLP=-3.3333  [296s]
+n=27 seed=5 margin=0.60 uncovered=40  E after SLP=-2.0000  [326s]
+n=27 seed=5 margin=0.25 uncovered=0  E after SLP=0.2769  [342s]
+n=27 CERT ok=True exact gamma=1626779/46000000 (=0.03536476) < 1/28 (=0.03571429)  E=0.2767

@@ -1,0 +1,12 @@
+13 rand 0.160 cyc 0.137 sts 0.327
+15 rand 0.087 cyc 0.073 sts 0.213 aff 0.150
+17 rand 0.187 cyc 0.173
+19 rand 0.107 cyc 0.103 sts 0.260
+21 rand 0.023 cyc 0.060 sts 0.123
+25 rand 0.103 cyc 0.083 sts 0.187
+27 rand 0.073 cyc 0.047 sts 0.147
+33 rand 0.073 cyc 0.063 sts 0.143
+39 rand 0.080 cyc 0.073 sts 0.180
+45 rand 0.077 cyc 0.097 sts 0.173
+51 rand 0.093 cyc 0.073 sts 0.210
+63 rand 0.090 cyc 0.133 sts 0.253 aff 0.177

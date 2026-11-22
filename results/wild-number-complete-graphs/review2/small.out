@@ -1,0 +1,42 @@
+n=13 cyc1 F=[3, 7, 8, 10] j=1 events=34 max_z=13 bound=16 ratio=0.8125 OK
+n=13 kem2 F=[0, 1, 5, 11] j=1 events=34 max_z=13 bound=16 ratio=0.8125 OK
+n=13 kem3 F=[5, 7, 10, 11] j=1 events=34 max_z=13 bound=16 ratio=0.8125 OK
+n=15 cyc1 F=[] j=1 events=95 max_z=19 bound=21 ratio=0.9048 OK
+n=15 cyc1 F=[] j=2 events=5050 max_z=2020 bound=2100 ratio=0.9619 OK
+n=15 kem2 F=[] j=1 events=97 max_z=21 bound=21 ratio=1.0000 OK
+n=15 kem2 F=[] j=2 events=5090 max_z=2070 bound=2100 ratio=0.9857 OK
+n=15 kem3 F=[] j=1 events=97 max_z=21 bound=21 ratio=1.0000 OK
+n=15 kem3 F=[] j=2 events=5100 max_z=2070 bound=2100 ratio=0.9857 OK
+n=19 cyc1 F=[3, 7, 8, 10] j=1 events=90 max_z=20 bound=25 ratio=0.8000 OK
+n=19 cyc1 F=[3, 7, 8, 10] j=2 events=4180 max_z=1770 bound=2380 ratio=0.7437 OK
+n=19 kem2 F=[0, 1, 11, 14] j=1 events=91 max_z=21 bound=25 ratio=0.8400 OK
+n=19 kem2 F=[0, 1, 11, 14] j=2 events=4200 max_z=1800 bound=2380 ratio=0.7563 OK
+n=19 kem3 F=[0, 8, 9, 15] j=1 events=91 max_z=20 bound=25 ratio=0.8000 OK
+n=19 kem3 F=[0, 8, 9, 15] j=2 events=4160 max_z=1750 bound=2380 ratio=0.7353 OK
+n=21 cyc1 F=[] j=1 events=196 max_z=28 bound=30 ratio=0.9333 OK
+n=21 cyc1 F=[] j=2 events=24780 max_z=7080 bound=7200 ratio=0.9833 OK
+n=21 cyc1 F=[] j=3 events=1048887 max_z=449523 bound=453600 ratio=0.9910 OK
+n=21 kem2 F=[] j=1 events=197 max_z=30 bound=30 ratio=1.0000 OK
+n=21 kem2 F=[] j=2 events=24920 max_z=7160 bound=7200 ratio=0.9944 OK
+n=21 kem2 F=[] j=3 events=1054515 max_z=452580 bound=453600 ratio=0.9978 OK
+n=21 kem3 F=[] j=1 events=200 max_z=30 bound=30 ratio=1.0000 OK
+n=21 kem3 F=[] j=2 events=24840 max_z=7160 bound=7200 ratio=0.9944 OK
+n=21 kem3 F=[] j=3 events=1054293 max_z=452571 bound=453600 ratio=0.9977 OK
+n=23 cyc1 F=[2, 5, 6, 18, 20] j=1 events=128 max_z=23 bound=30 ratio=0.7667 OK
+n=23 cyc1 F=[2, 5, 6, 18, 20] j=2 events=7892 max_z=2644 bound=3020 ratio=0.8755 OK
+n=23 cyc1 F=[2, 5, 6, 18, 20] j=3 events=112800 max_z=63600 bound=73200 ratio=0.8689 OK
+n=23 kem2 F=[3, 4, 14, 18, 21] j=1 events=128 max_z=23 bound=30 ratio=0.7667 OK
+n=23 kem2 F=[3, 4, 14, 18, 21] j=2 events=7892 max_z=2644 bound=3020 ratio=0.8755 OK
+n=23 kem2 F=[3, 4, 14, 18, 21] j=3 events=112800 max_z=63600 bound=73200 ratio=0.8689 OK
+n=23 kem3 F=[0, 1, 4, 6, 13] j=1 events=128 max_z=23 bound=30 ratio=0.7667 OK
+n=23 kem3 F=[0, 1, 4, 6, 13] j=2 events=7892 max_z=2644 bound=3020 ratio=0.8755 OK
+n=23 kem3 F=[0, 1, 4, 6, 13] j=3 events=112800 max_z=63600 bound=73200 ratio=0.8689 OK
+n=25 cyc1 F=[2, 4, 18, 24] j=1 events=184 max_z=29 bound=34 ratio=0.8529 OK
+n=25 cyc1 F=[2, 4, 18, 24] j=2 events=20100 max_z=5930 bound=7330 ratio=0.8090 OK
+n=25 cyc1 F=[2, 4, 18, 24] j=3 events=753656 max_z=343750 bound=453880 ratio=0.7574 OK
+n=25 kem2 F=[1, 2, 5, 11] j=1 events=180 max_z=30 bound=34 ratio=0.8824 OK
+n=25 kem2 F=[1, 2, 5, 11] j=2 events=20000 max_z=6030 bound=7330 ratio=0.8226 OK
+n=25 kem2 F=[1, 2, 5, 11] j=3 events=752384 max_z=360753 bound=453880 ratio=0.7948 OK
+n=25 kem3 F=[4, 7, 17, 18] j=1 events=178 max_z=28 bound=34 ratio=0.8235 OK
+n=25 kem3 F=[4, 7, 17, 18] j=2 events=19940 max_z=6010 bound=7330 ratio=0.8199 OK
+n=25 kem3 F=[4, 7, 17, 18] j=3 events=751310 max_z=341175 bound=453880 ratio=0.7517 OK

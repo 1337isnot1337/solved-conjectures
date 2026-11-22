@@ -41,6 +41,11 @@ EXTERNAL_CREDIT = {
     ),
 }
 PARTIAL_CATEGORIES = {
+    "wild-number-complete-graphs": "Graph theory and discrete geometry",
+    "circular-index-upper-half-delta-2-mod-4": "Graph theory and discrete geometry",
+    "circular-index-upper-half-delta-3-mod-4": "Graph theory and discrete geometry",
+    "shifted-lonely-runner-counterexamples": "Lonely runners",
+    "steinke-zakynthinou-agnostic-vc": "Information complexity of learning",
     "frankl-generator-families": "Combinatorics",
     "lonely-runner-two-insertions": "Lonely runners",
     "erdos-gyarfas-abelian-covers": "Graph theory and discrete geometry",
@@ -54,6 +59,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Steinke–Zakynthinou’s agnostic VC learning conjecture": "steinke-zakynthinou-agnostic-vc",
     "Steinke–Zakynthinou agnostic threshold problem": "steinke-zakynthinou-thresholds",
     "Johnson's conjecture": "johnson-pfaffian",
     "Brown–Mol's conjecture": "brown-mol",
@@ -92,6 +98,8 @@ STATUS_LABEL_SLUGS = {
     "Sonntag–Teichert conjecture": "sonntag-teichert",
     "Horňák–Woźniak conjecture": "hornak-wozniak",
     "Circulants with circular chromatic index in the upper half": "circular-index-upper-half-circulants",
+    "Graphs with circular chromatic index in the upper half for Δ ≡ 2 mod 4": "circular-index-upper-half-delta-2-mod-4",
+    "Graphs with circular chromatic index in the upper half for Δ ≡ 3 mod 4": "circular-index-upper-half-delta-3-mod-4",
     "L-solitaire": "l-solitaire-limit-shapes",
     "Three-player War": "spivey-multiplayer-war",
     "Pham denominator degree": "pham-denominator-degree",
@@ -106,6 +114,7 @@ STATUS_LABEL_SLUGS = {
     "Hadamard order-2396 partial results": "hadamard-2396",
     "Lonely-runner two insertions": "lonely-runner-two-insertions",
     "Zhang's Question 8.4: deletion values of the lonely runner": "zhang-deletion-values",
+    "Zhang's Question 8.5 for 18 ≤ n ≤ 54: shifted lonely runner counterexamples": "shifted-lonely-runner-counterexamples",
     "Erdős–Gyárfás abelian covers": "erdos-gyarfas-abelian-covers",
     "Erdős 607 line sizes": "erdos-607-line-sizes",
     "Growing rectangles": "rectangle-partition-asymptotics",
@@ -126,6 +135,8 @@ STATUS_LABEL_SLUGS = {
     "Eight-speed spectrum": "eight-speed-spectrum",
     "Eleven-through-fourteen-runner equality": "tight-eleven-to-fourteen",
     "Mazák–Zrubák conjecture on complete graphs minus an edge": "circular-index-complete-minus-edge",
+    "Circular chromatic index of complete graphs minus a few edges": "circular-index-complete-minus-edges",
+    "Dawkins–Nappo–Tong–Zimbizi wild-number conjecture for n ≥ 155": "wild-number-complete-graphs",
 }
 
 
@@ -648,10 +659,16 @@ class Builder:
         parts = PurePosixPath(document.source).parts
         result = self.result_map.get(parts[1]) if parts[0] == "results" and len(parts) > 1 else None
         body, toc = self.render_blocks(document.ast["blocks"], document.source, strip_title=True)
-        display_title = result.title if result and parts[-1] == "README.md" else document.title
+        result_landing = result is not None and parts[2:] == ("README.md",)
+        display_title = result.title if result_landing else document.title
         role = ""
-        if result and parts[-1] != "README.md":
-            role = "Proof" if parts[-1] == "PROOF.md" else "Lean details" if parts[-1] == "LEAN.md" else PurePosixPath(document.source).stem.replace("-", " ").capitalize()
+        if result and not result_landing:
+            folders = parts[2:-1]
+            stem = PurePosixPath(parts[-1]).stem
+            path_labels = folders if parts[-1] == "README.md" else (*folders, stem)
+            role = " / ".join(label.replace("-", " ").capitalize() for label in path_labels)
+            if not folders and parts[-1] == "LEAN.md":
+                role = "Lean details"
         title = (f"{result.title}: {role}" if result and role else display_title) + f" | {SITE_NAME}"
         if result:
             credit_prefix = f"Proof credited to {EXTERNAL_CREDIT[result.slug][0]}. " if result.slug in EXTERNAL_CREDIT else ""

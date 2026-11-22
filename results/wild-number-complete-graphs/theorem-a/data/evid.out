@@ -1,0 +1,79 @@
+13 cyc:6 sts:3 kempe0:10 kempe1:7 kempe2:13 kempe3:15
+15 cyc:7 sts:2 aff:6 kempe0:20 kempe1:27 kempe2:4 kempe3:7
+17 cyc:3 kempe0:1 kempe1:17 kempe2:20 kempe3:4
+19 cyc:9 sts:3 kempe0:5 kempe1:10 kempe2:3 kempe3:12
+21 cyc:14 sts:12 kempe0:12 kempe1:3 kempe2:10 kempe3:28
+23 cyc:15 kempe0:3 kempe1:13 kempe2:13 kempe3:8
+25 cyc:3 sts:11 kempe0:21 kempe1:26 kempe2:3 kempe3:18
+27 cyc:55 sts:1 kempe0:50 kempe1:27 kempe2:21 kempe3:24
+29 cyc:1 kempe0:4 kempe1:36 kempe2:3 kempe3:4
+31 cyc:11 sts:3 aff:1 kempe0:1 kempe1:4 kempe2:6 kempe3:29
+33 cyc:17 sts:10 kempe0:19 kempe1:1 kempe2:11 kempe3:20
+35 cyc:8 kempe0:5 kempe1:3 kempe2:10 kempe3:3
+37 cyc:4 sts:2 kempe0:10 kempe1:1 kempe2:4 kempe3:33
+39 cyc:10 sts:1 kempe0:6 kempe1:5 kempe2:1 kempe3:38
+41 cyc:12 kempe0:3 kempe1:3 kempe2:1 kempe3:8
+43 cyc:3 sts:3 kempe0:2 kempe1:8 kempe2:5 kempe3:3
+45 cyc:27 sts:6 kempe0:7 kempe1:7 kempe2:7 kempe3:5
+47 cyc:2 kempe0:2 kempe1:16 kempe2:4 kempe3:1
+49 cyc:19 sts:2 kempe0:1 kempe1:2 kempe2:5 kempe3:8
+51 cyc:10 sts:14 kempe0:7 kempe1:6 kempe2:7 kempe3:1
+53 cyc:2 kempe0:7 kempe1:17 kempe2:5 kempe3:1
+55 cyc:2 sts:6 kempe0:4 kempe1:3 kempe2:1 kempe3:14
+57 cyc:3 sts:2 kempe0:2 kempe1:1 kempe2:9 kempe3:3
+59 cyc:3 kempe0:11 kempe1:2 kempe2:15 kempe3:6
+61 cyc:1 sts:4 kempe0:2 kempe1:1 kempe2:28 kempe3:8
+63 cyc:15 sts:21 aff:17 kempe0:6 kempe1:6 kempe2:10 kempe3:4
+65 cyc:4 kempe0:7 kempe1:8 kempe2:5 kempe3:8
+67 cyc:2 sts:2 kempe0:4 kempe1:2 kempe2:3 kempe3:4
+69 cyc:2 sts:1 kempe0:28 kempe1:2 kempe2:8 kempe3:1
+71 cyc:21 kempe0:8 kempe1:9 kempe2:1 kempe3:4
+73 cyc:7 sts:6 kempe0:1 kempe1:14 kempe2:1 kempe3:1
+75 cyc:3 sts:1 kempe0:5 kempe1:18 kempe2:5 kempe3:15
+77 cyc:3 kempe0:1 kempe1:38 kempe2:4 kempe3:1
+79 cyc:7 sts:1 kempe0:10 kempe1:1 kempe2:7 kempe3:15
+81 cyc:7 sts:5 kempe0:37 kempe1:1 kempe2:3 kempe3:7
+83 cyc:6 kempe0:3 kempe1:22 kempe2:19 kempe3:7
+85 cyc:2 sts:2 kempe0:1 kempe1:11 kempe2:11 kempe3:1
+87 cyc:1 sts:1 kempe0:1 kempe1:16 kempe2:1 kempe3:1
+89 cyc:5 kempe0:6 kempe1:9 kempe2:9 kempe3:4
+91 cyc:3 sts:6 kempe0:13 kempe1:3 kempe2:5 kempe3:8
+93 cyc:1 sts:5 kempe0:1 kempe1:1 kempe2:9 kempe3:2
+95 cyc:1 kempe0:3 kempe1:1 kempe2:17 kempe3:1
+97 cyc:2 sts:2 kempe0:13 kempe1:1 kempe2:17 kempe3:12
+99 cyc:7 sts:1 kempe0:13 kempe1:2 kempe2:1 kempe3:3
+101 cyc:16 kempe0:10 kempe1:5 kempe2:4 kempe3:1
+103 cyc:8 sts:2 kempe0:4 kempe1:4 kempe2:1 kempe3:6
+105 cyc:9 sts:1 kempe0:15 kempe1:13 kempe2:6 kempe3:2
+107 cyc:6 kempe0:2 kempe1:12 kempe2:2 kempe3:4
+109 cyc:2 sts:2 kempe0:1 kempe1:11 kempe2:10 kempe3:25
+111 cyc:33 sts:2 kempe0:2 kempe1:7 kempe2:5 kempe3:5
+113 cyc:1 kempe0:2 kempe1:2 kempe2:2 kempe3:3
+115 cyc:3 sts:6 kempe0:6 kempe1:1 kempe2:2 kempe3:4
+117 cyc:10 sts:4 kempe0:3 kempe1:7 kempe2:13 kempe3:2
+119 cyc:3 kempe0:1 kempe1:15 kempe2:2 kempe3:2
+121 cyc:2 sts:1 kempe0:12 kempe1:12 kempe2:11 kempe3:3
+123 cyc:2 sts:5 kempe0:1 kempe1:4 kempe2:23 kempe3:1
+125 cyc:9 kempe0:2 kempe1:3 kempe2:3 kempe3:2
+127 cyc:14 sts:2 aff:4 kempe0:3 kempe1:1 kempe2:6 kempe3:4
+129 cyc:6 sts:3 kempe0:5 kempe1:5 kempe2:2 kempe3:1
+131 cyc:2 kempe0:8 kempe1:3 kempe2:8 kempe3:2
+133 cyc:8 sts:8 kempe0:7 kempe1:13 kempe2:11 kempe3:5
+135 cyc:7 sts:1 kempe0:14 kempe1:31 kempe2:16 kempe3:12
+137 cyc:2 kempe0:4 kempe1:12 kempe2:2 kempe3:1
+139 cyc:13 sts:3 kempe0:10 kempe1:5 kempe2:4 kempe3:1
+141 cyc:13 sts:3 kempe0:11 kempe1:3 kempe2:1 kempe3:5
+143 cyc:5 kempe0:1 kempe1:13 kempe2:2 kempe3:4
+145 cyc:1 sts:5 kempe0:2 kempe1:5 kempe2:3 kempe3:4
+147 cyc:40 sts:1 kempe0:11 kempe1:6 kempe2:3 kempe3:18
+149 cyc:13 kempe0:1 kempe1:32 kempe2:28 kempe3:1
+151 cyc:7 sts:1 kempe0:9 kempe1:1 kempe2:8 kempe3:1
+153 cyc:6 sts:2 kempe0:1 kempe1:3 kempe2:3 kempe3:4
+155 cyc:8 kempe0:6 kempe1:3 kempe2:3 kempe3:1
+157 cyc:4 sts:1 kempe0:4 kempe1:4 kempe2:8 kempe3:1
+159 cyc:6 sts:1 kempe0:2 kempe1:5 kempe2:13 kempe3:15
+161 cyc:15 kempe0:5 kempe1:4 kempe2:3 kempe3:1
+163 cyc:5 sts:2 kempe0:3 kempe1:5 kempe2:9 kempe3:5
+165 cyc:1 sts:4 kempe0:7 kempe1:4 kempe2:2 kempe3:7
+167 cyc:13 kempe0:1 kempe1:9 kempe2:2 kempe3:1
+169 cyc:5 sts:2 kempe0:3 kempe1:4 kempe2:1 kempe3:9

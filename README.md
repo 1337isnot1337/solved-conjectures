@@ -10,7 +10,6 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Verification |
 | :--- | :---: |
-| [Steinke–Zakynthinou’s agnostic VC learning conjecture](results/steinke-zakynthinou-agnostic-vc/) | 🟡 |
 | [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ |
 | [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | ⬜ |
 | [Brown–Mol's conjecture](results/brown-mol/) | ✅ |
@@ -42,6 +41,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ✅ |
 | [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ✅ |
 | [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | ⬜ |
+| [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | ⬜ |
 | [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
 | [Kauers–Koutschan recurrence conjecture](results/kauers-koutschan-recurrence/) | ⬜ |
 | [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | ⬜ |
@@ -95,6 +95,11 @@ For the 🟢 Lonely Runner results, the written proofs reduce the classification
 
 This section is ordered by the significance of the partial contributions.
 
+- [Wild number of complete graphs](results/wild-number-complete-graphs/). The conjectured value holds for all $n\ge155$. The range $13\le n\le154$ remains open.
+- [Upper-half circular chromatic index for degrees congruent to 1 or 2 modulo 4](results/circular-index-upper-half-delta-2-mod-4/). Constructions for degrees $\Delta=4g+1$ and $4g+2$ with $g\ge6$, plus finite certificates for degrees $10,14,18,22$.
+- [Upper-half circular chromatic index for degrees congruent to 3 modulo 4](results/circular-index-upper-half-delta-3-mod-4/). Examples for every $\Delta\equiv3\pmod4$ with $\Delta\ge27$. The all-degree question remains open at degrees $9,11,13,15,17,19,23$.
+- [Shifted Lonely Runner](results/shifted-lonely-runner-counterexamples/). Exact counterexamples for every $18\le n\le54$. The remaining range is $55\le n\le94$.
+- [Steinke–Zakynthinou’s agnostic VC learning conjecture](results/steinke-zakynthinou-agnostic-vc/). Lean verifies the rates under the stated measurable-selection hypothesis.
 - [Frankl’s union-closed sets conjecture](results/frankl-generator-families/). A four-position generator theorem and a frequency bound for regular, high-girth incidence graphs. Both all-point frequency bounds are fully Lean-verified, including the high-girth theorem for every uniform generator size at least three. The cyclic span-four formalization remains incomplete. [Checked scope](docs/lean-status.md#complete-frankl-high-girth-frequency-theorem).
 - [Lonely Runner Conjecture](results/lonely-runner-two-insertions/). Two arbitrary speeds can be adjoined to every Goddyn–Wong simultaneous acceleration. The full prescribed-interval theorem, acceleration bridge, unbounded and finite cases, common-dilation value bound, and three-insertion obstruction are Lean-verified. [Checked scope](docs/lean-status.md#complete-unrestricted-two-speed-insertion-theorem).
 - [Erdős–Sauer conjecture](docs/erdos-sauer-research.md). The hypergraph decomposition bound holds asymptotically for each fixed uniformity.
@@ -117,7 +122,7 @@ This section is ordered by the significance of the partial contributions.
 GitHub's **Cite this repository** control reads [`CITATION.cff`](CITATION.cff).
 The repository-level authors are Cinna Davis and GPT-6.2 Astra (an AI model), in that order.
 Credit the [Graffiti.pc 318 result](results/graffiti-pc-318/) and its proof to [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334), who contributed them.
-Credit the [Zhang deletion-values result](results/zhang-deletion-values/) and the [Oravcová–Soták five-to-eight-distance result](results/oravcova-sotak/) to [@aadrianvv](https://github.com/aadrianvv), who contributed their proofs and verification packages in [PR #143](https://github.com/1337isnot1337/solved-conjectures/pull/143) and [PR #144](https://github.com/1337isnot1337/solved-conjectures/pull/144). The latter result is conditional on the repository's spectrum classifications and does not settle the unrestricted conjecture.
+Credit the [Zhang deletion-values result](results/zhang-deletion-values/) and the [Oravcová–Soták five-to-eight-distance result](results/oravcova-sotak/) to [@aadrianvv](https://github.com/aadrianvv), who contributed their proofs and verification packages in [PR #143](https://github.com/1337isnot1337/solved-conjectures/pull/143) and [PR #144](https://github.com/1337isnot1337/solved-conjectures/pull/144). The latter result is conditional on the repository's spectrum classifications and does not settle the unrestricted conjecture. Credit the [wild-number result for n ≥ 155](results/wild-number-complete-graphs/) to [@aadrianvv](https://github.com/aadrianvv), who contributed its proofs, verifier, referee passes and continuation material; the conjecture remains open for 13 ≤ n ≤ 154.
 
 Suggested BibTeX for the repository:
 

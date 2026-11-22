@@ -1,0 +1,6 @@
+# Referee log (d3mod4), times CET
+- 03:31 start. Read PROOF.md, LOG.md (author), delta-2-mod-4/PROOF.md, circulant-upper-half §1,§2.3,§7.
+- 03:35 hand check of §3-§6 done (no errors). ref_verify.py: g=15..80 pass (all-pairs g<=50, all 213 (alpha,beta) choices), 9 certificates pass (all pairs), general-k remark g<=20 ok. mut_test.py: 22 mutations, all rejected. Formulas rejected for g=8..14 as expected.
+- 03:37 oneblock_brute.py (exhaustive, no SAT): one block impossible g=2,3,4 (all k), g=5 feasible only k in {2,8} (all 6 residues) -- matches §8. threeblock_g5.py (exhaustive backtracking): g=5, k in {2,8}, all 9358 triples/k with min colour in 0..5: no solution. Positive control g=6 k=2 (0,18,36): finds a solution; (0,6,12): none. Note: author's instance count in §8 (16 530) disagrees with scan logs (5 c1-runs x 3306 + c1=0 run 3306 = 19 836).
+- 03:42 arXiv HTML 2603.08822 §8 re-read: quote verbatim correct (after Problem 7). Author verify_new.py 60 + indep_check.py 40 pass (5 s, reference only). wenum_check.py g=2,3,4: all window-valid <=2-interval pairs are k-family (1<=k<=2g) or reflections; k=2g missing from Remark's range (harmless: no base for k=2g). Writing REVIEW.md.
+- 03:44 REVIEW.md written. Verdict: correct with minor fixes (m1-m9, no mathematical errors).

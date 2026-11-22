@@ -1,0 +1,65 @@
+Part 1: Family B with explicit base matchings
+  g= 6 n= 37  one block: Delta= 25 chi'_c=77/3   two blocks: Delta= 26 chi'_c=80/3
+  g= 7 n= 43  one block: Delta= 29 chi'_c=89/3   two blocks: Delta= 30 chi'_c=92/3
+  g= 8 n= 49  one block: Delta= 33 chi'_c=101/3   two blocks: Delta= 34 chi'_c=104/3
+  g= 9 n= 55  one block: Delta= 37 chi'_c=113/3   two blocks: Delta= 38 chi'_c=116/3
+  g=10 n= 61  one block: Delta= 41 chi'_c=125/3   two blocks: Delta= 42 chi'_c=128/3
+  g=11 n= 67  one block: Delta= 45 chi'_c=137/3   two blocks: Delta= 46 chi'_c=140/3
+  g=12 n= 73  one block: Delta= 49 chi'_c=149/3   two blocks: Delta= 50 chi'_c=152/3
+  g=13 n= 79  one block: Delta= 53 chi'_c=161/3   two blocks: Delta= 54 chi'_c=164/3
+  g=14 n= 85  one block: Delta= 57 chi'_c=173/3   two blocks: Delta= 58 chi'_c=176/3
+  g=15 n= 91  one block: Delta= 61 chi'_c=185/3   two blocks: Delta= 62 chi'_c=188/3
+  g=16 n= 97  one block: Delta= 65 chi'_c=197/3   two blocks: Delta= 66 chi'_c=200/3
+  g=17 n=103  one block: Delta= 69 chi'_c=209/3   two blocks: Delta= 70 chi'_c=212/3
+  g=18 n=109  one block: Delta= 73 chi'_c=221/3   two blocks: Delta= 74 chi'_c=224/3
+  g=19 n=115  one block: Delta= 77 chi'_c=233/3   two blocks: Delta= 78 chi'_c=236/3
+  g=20 n=121  one block: Delta= 81 chi'_c=245/3   two blocks: Delta= 82 chi'_c=248/3
+  g=21 n=127  one block: Delta= 85 chi'_c=257/3   two blocks: Delta= 86 chi'_c=260/3
+  g=22 n=133  one block: Delta= 89 chi'_c=269/3   two blocks: Delta= 90 chi'_c=272/3
+  g=23 n=139  one block: Delta= 93 chi'_c=281/3   two blocks: Delta= 94 chi'_c=284/3
+  g=24 n=145  one block: Delta= 97 chi'_c=293/3   two blocks: Delta= 98 chi'_c=296/3
+  g=25 n=151  one block: Delta=101 chi'_c=305/3   two blocks: Delta=102 chi'_c=308/3
+  g=26 n=157  one block: Delta=105 chi'_c=317/3   two blocks: Delta=106 chi'_c=320/3
+  g=27 n=163  one block: Delta=109 chi'_c=329/3   two blocks: Delta=110 chi'_c=332/3
+  g=28 n=169  one block: Delta=113 chi'_c=341/3   two blocks: Delta=114 chi'_c=344/3
+  g=29 n=175  one block: Delta=117 chi'_c=353/3   two blocks: Delta=118 chi'_c=356/3
+  g=30 n=181  one block: Delta=121 chi'_c=365/3   two blocks: Delta=122 chi'_c=368/3
+  g=31 n=187  one block: Delta=125 chi'_c=377/3   two blocks: Delta=126 chi'_c=380/3
+  g=32 n=193  one block: Delta=129 chi'_c=389/3   two blocks: Delta=130 chi'_c=392/3
+  g=33 n=199  one block: Delta=133 chi'_c=401/3   two blocks: Delta=134 chi'_c=404/3
+  g=34 n=205  one block: Delta=137 chi'_c=413/3   two blocks: Delta=138 chi'_c=416/3
+  g=35 n=211  one block: Delta=141 chi'_c=425/3   two blocks: Delta=142 chi'_c=428/3
+  g=36 n=217  one block: Delta=145 chi'_c=437/3   two blocks: Delta=146 chi'_c=440/3
+  g=37 n=223  one block: Delta=149 chi'_c=449/3   two blocks: Delta=150 chi'_c=452/3
+  g=38 n=229  one block: Delta=153 chi'_c=461/3   two blocks: Delta=154 chi'_c=464/3
+  g=39 n=235  one block: Delta=157 chi'_c=473/3   two blocks: Delta=158 chi'_c=476/3
+  g=40 n=241  one block: Delta=161 chi'_c=485/3   two blocks: Delta=162 chi'_c=488/3
+  g=41 n=247  one block: Delta=165 chi'_c=497/3   two blocks: Delta=166 chi'_c=500/3
+  g=42 n=253  one block: Delta=169 chi'_c=509/3   two blocks: Delta=170 chi'_c=512/3
+  g=43 n=259  one block: Delta=173 chi'_c=521/3   two blocks: Delta=174 chi'_c=524/3
+  g=44 n=265  one block: Delta=177 chi'_c=533/3   two blocks: Delta=178 chi'_c=536/3
+  g=45 n=271  one block: Delta=181 chi'_c=545/3   two blocks: Delta=182 chi'_c=548/3
+  g=46 n=277  one block: Delta=185 chi'_c=557/3   two blocks: Delta=186 chi'_c=560/3
+  g=47 n=283  one block: Delta=189 chi'_c=569/3   two blocks: Delta=190 chi'_c=572/3
+  g=48 n=289  one block: Delta=193 chi'_c=581/3   two blocks: Delta=194 chi'_c=584/3
+  g=49 n=295  one block: Delta=197 chi'_c=593/3   two blocks: Delta=198 chi'_c=596/3
+  g=50 n=301  one block: Delta=201 chi'_c=605/3   two blocks: Delta=202 chi'_c=608/3
+  g=51 n=307  one block: Delta=205 chi'_c=617/3   two blocks: Delta=206 chi'_c=620/3
+  g=52 n=313  one block: Delta=209 chi'_c=629/3   two blocks: Delta=210 chi'_c=632/3
+  g=53 n=319  one block: Delta=213 chi'_c=641/3   two blocks: Delta=214 chi'_c=644/3
+  g=54 n=325  one block: Delta=217 chi'_c=653/3   two blocks: Delta=218 chi'_c=656/3
+  g=55 n=331  one block: Delta=221 chi'_c=665/3   two blocks: Delta=222 chi'_c=668/3
+  g=56 n=337  one block: Delta=225 chi'_c=677/3   two blocks: Delta=226 chi'_c=680/3
+  g=57 n=343  one block: Delta=229 chi'_c=689/3   two blocks: Delta=230 chi'_c=692/3
+  g=58 n=349  one block: Delta=233 chi'_c=701/3   two blocks: Delta=234 chi'_c=704/3
+  g=59 n=355  one block: Delta=237 chi'_c=713/3   two blocks: Delta=238 chi'_c=716/3
+  g=60 n=361  one block: Delta=241 chi'_c=725/3   two blocks: Delta=242 chi'_c=728/3
+Part 2: K_n - tK_2 certificates
+  K_11 - 2K_2: Delta=10, 53/5 <= chi'_c <= 32/3, inside (Delta+1/2, Delta+1)
+  K_15 - 3K_2: Delta=14, 102/7 <= chi'_c <= 44/3, inside (Delta+1/2, Delta+1)
+  K_19 - 4K_2: Delta=18, 167/9 <= chi'_c <= 56/3, inside (Delta+1/2, Delta+1)
+  K_23 - 5K_2: Delta=22, 248/11 <= chi'_c <= 68/3, inside (Delta+1/2, Delta+1)
+  K_27 - 6K_2: Delta=26, 345/13 <= chi'_c <= 80/3, inside (Delta+1/2, Delta+1)
+Negative controls (each must be rejected)
+  4 controls rejected as expected
+ALL CHECKS PASSED
