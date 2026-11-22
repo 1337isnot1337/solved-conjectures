@@ -64,6 +64,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
 | [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | 🟢 |
 | [Zhang's Question 8.4: deletion values of the lonely runner](results/zhang-deletion-values/) | ✅ |
+| [Zhang's Question 8.5 for 18 ≤ n ≤ 54: shifted lonely runner counterexamples](results/shifted-lonely-runner-counterexamples/) | ⬜ |
 | [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
 | [CUT arithmetic periodicity with a preperiod](results/cut-arithmetic-periodicity/) | ✅ |
 | [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟢 |

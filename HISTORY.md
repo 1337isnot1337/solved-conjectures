@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Shifted lonely runner counterexamples for 18 ≤ n ≤ 54
+
+Added [exact counterexample certificates](results/shifted-lonely-runner-counterexamples/) to the shifted Lonely Runner Conjecture for every `n` with `18 <= n <= 54`, a partial answer to Zhang's Question 8.5 (arXiv:2608.13599v3), which was open for `18 <= n <= 94` after Blanco–Criado–Santos (`5 <= n <= 17`) and Poliakova (`n >= 95`). Each certificate is checked exactly by a standard-library verifier with two independent methods. The range `55 <= n <= 94` remains open and nothing is claimed there; the heuristic searches stopped at `n = 55`, which is not evidence for the conjecture. For `41 <= n <= 54` the speeds are not `1..n`, as the conjecture allows. Not formalized. Contributed by [@aadrianvv](https://github.com/aadrianvv). [Issue #110](https://github.com/1337isnot1337/solved-conjectures/issues/110)
+
 ## 2026-11-21 — Steinke–Zakynthinou’s agnostic VC learning conjecture
 
 Added the [proposed proof of Conjecture 6](results/steinke-zakynthinou-agnostic-vc/PROOF.md) to the results catalogue. Its multiscale entropy learner returns a member of the original hypothesis class. Full Lean verification and independent review are pending.

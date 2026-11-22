@@ -1,0 +1,5 @@
+n=26 seed=0 margin=0.60 uncovered=71  E after SLP=-2.9859  [30s]
+n=26 seed=0 margin=0.25 uncovered=33  E after SLP=-2.0000  [58s]
+n=26 seed=1 margin=0.60 uncovered=79  E after SLP=-4.0000  [86s]
+n=26 seed=1 margin=0.25 uncovered=0  E after SLP=0.3450  [102s]
+n=26 CERT ok=True exact gamma=3657/100000 (=0.03657000) < 1/27 (=0.03703704)  E=0.3448
