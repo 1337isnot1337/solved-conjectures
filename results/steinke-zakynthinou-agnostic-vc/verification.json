@@ -38,5 +38,28 @@
     "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44979669007"
   },
   "finite_diagnostic": "python3 results/steinke-zakynthinou-agnostic-vc/verify.py",
-  "finite_diagnostic_result": "passed"
+  "finite_diagnostic_result": "passed",
+  "scope_extensions": {
+    "commit": "414756a65526512e6620f14d62b8bcd8ae200788",
+    "conclusion": "success",
+    "github_actions": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44983740717",
+    "theorems": [
+      "AgnosticVC.steinkeZakynthinou_countable_domain",
+      "AgnosticVC.hasMeasurableCanonicalRepresentatives_of_countable_trace_core"
+    ],
+    "audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1111,
+      "modules": 61,
+      "private_declarations": 456,
+      "raw_declarations": 1111,
+      "required": 56,
+      "tag": "passed",
+      "theorems": 902
+    }
+  }
 }

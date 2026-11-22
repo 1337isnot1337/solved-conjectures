@@ -1,8 +1,10 @@
 # Steinke–Zakynthinou’s agnostic VC learning conjecture
 
+The [manuscript](paper.pdf) gives the full argument, including the projection and deletion estimates. The [scope audit](SCOPE.md) specifies the additional hypothesis for the population theorem.
+
 ## Statement and conventions
 
-Let $`\mathcal H\subseteq\{0,1\}^{\mathcal X}`$ have finite VC dimension $`d\ge1`$. Fix an integer $`n\ge d`$. For a labeled sample $`z`$ let $`\widehat L_z(h)`$ be its fraction of classification mistakes. The proposed learner $`A`$ returns an element of $`\mathcal H`$. We claim one universal $`C`$ satisfies
+Let $`\mathcal H\subseteq\{0,1\}^{\mathcal X}`$ have finite VC dimension $`d\ge1`$. Fix an integer $`n\ge d`$. For a labeled sample $`z`$ let $`\widehat L_z(h)`$ be its fraction of classification mistakes. The proposed learner $`A`$ returns an element of $`\mathcal H`$. Under the population measurability convention described below, one universal $`C`$ satisfies
 
 ```math
  \forall z,\quad \mathbb E_A\widehat L_z(A(z))\le
