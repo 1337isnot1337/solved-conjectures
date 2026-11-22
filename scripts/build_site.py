@@ -126,6 +126,7 @@ STATUS_LABEL_SLUGS = {
     "Eight-speed spectrum": "eight-speed-spectrum",
     "Eleven-through-fourteen-runner equality": "tight-eleven-to-fourteen",
     "Mazák–Zrubák conjecture on complete graphs minus an edge": "circular-index-complete-minus-edge",
+    "Dawkins–Nappo–Tong–Zimbizi wild-number conjecture for n ≥ 155": "wild-number-complete-graphs",
 }
 
 

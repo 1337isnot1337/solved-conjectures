@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Wild number of complete graphs for n ≥ 155
+
+Added a [partial result](results/wild-number-complete-graphs/) on Conjecture 6.1 of Dawkins, Nappo, Tong and Zimbizi (arXiv:2610.22142): for every `n >= 155` and every minimum proper edge colouring of `K_n`, the wild number equals the source's lower bound. Odd `n >= 189` uses the lopsided local lemma (Theorem A), odd `155 <= n <= 187` a self-contained cluster-expansion lemma with sharper counts (Theorem B), and even `n` follows from `n-1`. Each theorem passed one independent model referee pass; the standard-library verifier rechecks every numerical condition in exact rationals. The conjecture stays open for `13 <= n <= 154`, the limit of this counting method; partial material for continuing, including a reduction of `n = 13, 14` to a finite statement and an unfinished cube-and-conquer run, is kept in the result's `continuation/` folder. Contributed by [@aadrianvv](https://github.com/aadrianvv). No Lean formalization. [Issue #155](https://github.com/1337isnot1337/solved-conjectures/issues/155)
+
 ## 2026-11-21 — Steinke–Zakynthinou’s agnostic VC learning conjecture
 
 Added the [proposed proof of Conjecture 6](results/steinke-zakynthinou-agnostic-vc/PROOF.md) to the results catalogue. Its multiscale entropy learner returns a member of the original hypothesis class. Full Lean verification and independent review are pending.

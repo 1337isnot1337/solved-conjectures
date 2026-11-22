@@ -191,3 +191,5 @@ jobs:
           python3 results/tight-eleven-to-fourteen/verify.py --legacy-log "$RUNNER_TEMP/first-lifts.log"
       - name: Check the Mazák–Zrubák lemmas for complete graphs minus an edge
         run: python3 results/circular-index-complete-minus-edge/verify.py
+      - name: Check the wild-number conditions for complete graphs with n at least 155
+        run: python3 results/wild-number-complete-graphs/verify.py

@@ -328,6 +328,7 @@ python3 results/currie-conjecture-19/verify.py
 python3 results/tight-nine-speeds/verify.py
 python3 results/zhang-deletion-values/verify.py
 python3 results/circular-index-complete-minus-edge/verify.py
+python3 results/wild-number-complete-graphs/verify.py
 ```
 
 The latest workflow is the executable reference when new checks are added.
@@ -355,6 +356,10 @@ Run `python3 results/pula-song-wanless/verify.py` with assertions enabled and Sy
 ## Mazák–Zrubák complete graphs minus an edge
 
 Run `python3 results/circular-index-complete-minus-edge/verify.py` with assertions enabled. The standard-library script enumerates the 2160 proper 5-edge-colourings of `K_5-e`, checks Lemmas 2, 3, 4 and 5(1) on the 180 with acyclic digraph, and shows that no edge ordering with the properties of Lemma 3 exists for `d=6`. The optional `verify_sat.py` and `review/sat_levels.py` check `d=6` directly from the definition, need `python-sat`, and are not run by CI; the other `review/` scripts are the referee pass's independent checks. The [written proof](../results/circular-index-complete-minus-edge/PROOF.md) covers every even `d >= 6`; no script completed `d=8`. No Lean verification is included.
+
+## Wild number of complete graphs for n ≥ 155
+
+Run `python3 results/wild-number-complete-graphs/verify.py` with assertions enabled. The standard-library script checks in exact rationals the counting inequality for the fixed block, condition (*) of Theorem B for every odd `n` from 155 to 189 with the author's coefficients and with the second referee's independent coefficients, the lopsided local-lemma condition of Theorem A for every odd `n` from 189 to 1201, and the first referee's monotone tail bound at `n = 1201`. It takes a few seconds. The counts themselves are proved in the [written notes](../results/wild-number-complete-graphs/); the scripts in `improvement/`, `review/` and `review2/` are optional cross-checks, and `theorem-a/verify.py` needs NumPy and SciPy. None of these checks decides any `n` in the open range `13 <= n <= 154`. No Lean verification is included.
 
 ## Zhang's Question 8.4
 
