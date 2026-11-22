@@ -10,7 +10,7 @@ The [local reconstruction theorem](../lean/Conjectures/AgnosticVC/LocalReconstru
 
 The [fixed-class disproof](../lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) uses a VC-one class with two-point supports and requires universal measurability of the scalar expected empirical loss. Lean verifies a [measurable deviation envelope](../lean/Conjectures/AgnosticVC/FiniteSupportUniform.lean) with expectation at most $`2/\sqrt n+2/n`$ for the same class at every iid law and positive sample size.
 
-The [discrete-noise module](../lean/Conjectures/AgnosticVC/CompactScoreNoise.lean) verifies the finite fixed-pool information and argmax regret estimates used by the [bounded-overlap learner](../research/steinke-zakynthinou-agnostic-vc/completed-disjoint-support-learner.md#bounded-overlap-with-the-sharp-uniform-convergence-premise). The extension to completed iid laws for arbitrary bounded-overlap classes is written.
+The [discrete-noise learner](../lean/Conjectures/AgnosticVC/NoisySupportLearner.lean) verifies information for the actual named output and empirical excess on each sample. The [completed-iid theorem](../lean/Conjectures/AgnosticVC/NoisySupportIid.lean) verifies both rates for bounded-size supports with bounded pointwise overlap. Its countable list of eligible names is constructed separately for each iid law to verify measurability of the same learner.
 
 The [conditional joint-law reduction](../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) recovers a completed-measurable training kernel from the actual selector/output law on the completed iid pool, with almost-everywhere agreement. It applies to arbitrary pointwise probability measures and gives the same finite-support counterexample to the empirical rate.
 

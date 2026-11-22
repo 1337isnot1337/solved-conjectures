@@ -39,6 +39,8 @@ Lean also derives the same disproof from the existence of the actual conditional
 
 A fixed VC-one class of two-point supports suffices when the scalar expected loss must be universally measurable on the sample space. The same class has a Lean-verified measurable envelope for uniform iid deviation with expectation at most $`2/\sqrt n+2/n`$ for every labeled law and positive sample size. [Fixed-class disproof](../../lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) · [Uniform-deviation bound](../../lean/Conjectures/AgnosticVC/FiniteSupportUniform.lean)
 
+With measurability under each completed iid law, Lean proves both rates for bounded-size, bounded-overlap supports. The same proper learner gives iid CMI at most $`20s`$ nats and expected empirical excess at most $`m/n+8/\sqrt n`$, where $`m`$ bounds support size and $`s`$ bounds pointwise overlap. [Lean theorem](../../lean/Conjectures/AgnosticVC/NoisySupportIid.lean)
+
 For jointly Borel evaluation on standard Borel spaces, a written proof obtains both rates for every marginal dominated by a single reference law chosen in advance. The learner uses a countable subclass that misses at most $`2d`$ sample positions almost surely under that law, with a proper empirical minimizer on the exceptional inputs. [Dominated-marginal theorem](../../research/steinke-zakynthinou-agnostic-vc/dominated-marginals.md)
 
 ## Proof and verification

@@ -450,6 +450,12 @@
     }
   },
   "discrete_bounded_overlap_score_channel": {
+    "github_actions": {
+      "headSha": "1808d27ca71099f121e0775ede7c2f85844c6edc",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/45080657477"
+    },
     "theorems": [
       "AgnosticVC.scoreNoise_boundedOverlap_channelInfo_le",
       "AgnosticVC.scoreNoise_argmax_bounds"
@@ -472,6 +478,12 @@
     }
   },
   "completed_iid_conditional_joint_obstruction": {
+    "github_actions": {
+      "headSha": "dcd59206b495555f5af80455e332592d23e6f5d3",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/45081854915"
+    },
     "theorems": [
       "AgnosticVC.exists_finiteGroups_no_measurable_selector_joint_rate",
       "AgnosticVC.aemeasurable_repeatedFeature_readout",
@@ -491,6 +503,29 @@
       "modules": 107,
       "required": 112,
       "theorems": 1410,
+      "tag": "passed"
+    }
+  },
+  "proper_noisy_finite_support_iid_rates": {
+    "theorems": [
+      "AgnosticVC.noisySupportLearner_fixedPairing",
+      "AgnosticVC.noisySupportLearner_iid_information_le",
+      "AgnosticVC.finiteSupport_noisy_iid_rates"
+    ],
+    "scope": "One proper learner for finite supports of size at most m and overlap at most s. Actual iid CMI is at most 20s nats for every labeled law and every positive size, with all-sample expected empirical excess at most m/n + 8/sqrt(n).",
+    "local_command": "python3 scripts/verify_agnostic_vc.py",
+    "local_strict_elaboration": "passed",
+    "local_kernel_replayed_modules": 109,
+    "local_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1826,
+      "modules": 109,
+      "required": 115,
+      "theorems": 1460,
       "tag": "passed"
     }
   }

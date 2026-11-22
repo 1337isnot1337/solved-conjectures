@@ -81,6 +81,43 @@ theorem BoundedTraceReadout.learn_support_finite {n d k : ℕ} [Nonempty H]
   exact ⟨a,ha⟩
 
 omit [MeasurableSpace Ω] in
+/-- Any finite-support learner measurable on the completed training law
+can integrate its fixed-pool bound as ordinary iid conditional information. -/
+theorem finiteSupport_iid_information_le [MeasurableSpace X] {n : ℕ}
+    (D : Measure (X × Bool)) [IsProbabilityMeasure D]
+    (A : (Fin n → X × Bool) → PMF H) (hfin : ∀ z, (A z).support.Finite)
+    (hr : Measurable (fun z : NullMeasurableSpace (Fin n → X × Bool)
+      (Measure.pi fun _ : Fin n => D) => (A z).toMeasure))
+    (C : ℝ) (hfixed : ∀ z, originalPoolInformation A z ≤ C) :
+    let μ := Measure.pi fun _ : Fin n × Bool => D
+    let info z := (InformationTheory.klDiv (originalPoolJoint A z).toMeasure
+      (originalPoolMarginalProduct A z).toMeasure).toReal
+    Integrable info μ ∧ (∫ z, info z ∂μ) ≤ C := by
+  intro μ info
+  have hf (z : Pool n X) : (originalPoolJoint A z).support.Finite := by
+    apply (finite_iUnion (fun s : SteinkeZakynthinou.Selector n =>
+      (hfin (fun i => z (i,s i))).image (Prod.mk s))).subset
+    rintro ⟨s,h⟩ hh
+    rw [PMF.mem_support_iff, originalPoolJoint_apply, mul_ne_zero_iff] at hh
+    exact mem_iUnion.mpr ⟨s,h,(PMF.mem_support_iff _ _).mpr hh.2,rfl⟩
+  obtain ⟨K,J,_,_,_,hJ,_⟩ := exists_completed_iid_joint_kernel D A hr
+  have hm : Measurable (fun z : IidCompletedPool n D => originalPoolInformation A z) :=
+    measurable_originalPoolInformation_of_joint_kernel A (fun z : IidCompletedPool n D => z) J hJ hf
+  have he (z : Pool n X) : info z = originalPoolInformation A z :=
+    (originalPoolInformation_eq_klDiv_of_finite_support A z (hf z)).2
+  have hm' : AEMeasurable info μ := by
+    have hc : Measurable (fun z : IidCompletedPool n D => info z) := by
+      convert hm using 1
+      exact funext (fun z : IidCompletedPool n D => he z)
+    exact (show NullMeasurable info μ from fun _ hs => hc hs).aemeasurable
+  have hbound (z : Pool n X) : info z ≤ C := (he z).trans_le (hfixed z)
+  have hi : Integrable info μ := Integrable.of_bound hm'.aestronglyMeasurable C
+    (Filter.Eventually.of_forall (fun z => (Real.norm_of_nonneg ENNReal.toReal_nonneg).trans_le (hbound z)))
+  refine ⟨hi,?_⟩
+  have h := integral_mono hi (integrable_const (μ := μ) C) hbound
+  simpa [μ] using h
+
+omit [MeasurableSpace Ω] in
 /-- Information bound for the proper learner on an iid completed law. Its
 information is the integral of the literal KL of the actual joint and product
 of marginals. The kernel assumption is on this same learner. -/
@@ -94,32 +131,8 @@ theorem BoundedTraceReadout.learn_iid_le [MeasurableSpace X] [Nonempty H]
     let A := r.learn hd hn
     let info z := (InformationTheory.klDiv (originalPoolJoint A z).toMeasure
       (originalPoolMarginalProduct A z).toMeasure).toReal
-    Integrable info μ ∧ (∫ z, info z ∂μ) ≤ 197120 * (d : ℝ) + 32 * (k : ℝ) := by
-  intro μ A info
-  have hf (z : Pool (m+1) X) : (originalPoolJoint A z).support.Finite := by
-    apply (finite_iUnion (fun s : SteinkeZakynthinou.Selector (m+1) =>
-      (r.learn_support_finite hd hn (fun i => z (i,s i))).image (Prod.mk s))).subset
-    rintro ⟨s,h⟩ hh
-    rw [PMF.mem_support_iff, originalPoolJoint_apply, mul_ne_zero_iff] at hh
-    exact mem_iUnion.mpr ⟨s,h,(PMF.mem_support_iff _ _).mpr hh.2,rfl⟩
-  obtain ⟨K,J,_,_,_,hJ,_⟩ := exists_completed_iid_joint_kernel D A hr
-  have hm : Measurable (fun z : IidCompletedPool (m+1) D => originalPoolInformation A z) :=
-    measurable_originalPoolInformation_of_joint_kernel A (fun z : IidCompletedPool (m+1) D => z) J hJ hf
-  have he (z : Pool (m+1) X) : info z = originalPoolInformation A z :=
-    (originalPoolInformation_eq_klDiv_of_finite_support A z (hf z)).2
-  have hm' : AEMeasurable info μ := by
-    have hc : Measurable (fun z : IidCompletedPool (m+1) D => info z) := by
-      convert hm using 1
-      exact funext (fun z : IidCompletedPool (m+1) D => he z)
-    exact (show NullMeasurable info μ from fun _ hs => hc hs).aemeasurable
-  let C : ℝ := 197120 * (d : ℝ) + 32 * (k : ℝ)
-  have hbound (z : Pool (m+1) X) : info z ≤ C := by
-    rw [he]
-    exact r.learn_fixedPairing_le hd hn hvc z
-  have hi : Integrable info μ := Integrable.of_bound hm'.aestronglyMeasurable C
-    (Filter.Eventually.of_forall (fun z => (Real.norm_of_nonneg ENNReal.toReal_nonneg).trans_le (hbound z)))
-  refine ⟨hi,?_⟩
-  have h := integral_mono hi (integrable_const (μ := μ) C) hbound
-  simpa [μ] using h
+    Integrable info μ ∧ (∫ z, info z ∂μ) ≤ 197120 * (d : ℝ) + 32 * (k : ℝ) :=
+  finiteSupport_iid_information_le D (r.learn hd hn) (r.learn_support_finite hd hn) hr _
+    (r.learn_fixedPairing_le hd hn hvc)
 
 end AgnosticVC

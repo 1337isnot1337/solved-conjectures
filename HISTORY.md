@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Completed-iid rates for bounded-size supports
+
+Lean verifies a proper integer-noise learner with actual iid CMI at most $`20s`$ nats and expected empirical excess at most $`m/n+8/\sqrt n`$ for support size $`m`$ and pointwise overlap $`s`$. Almost surely the eligible names have positive marginal support mass, so they belong to a countable family for each iid law. [Combined Lean theorem](lean/Conjectures/AgnosticVC/NoisySupportIid.lean) · [Proof and scope](research/steinke-zakynthinou-agnostic-vc/completed-disjoint-support-learner.md)
+
 ## 2026-11-22 — Disproof from the actual iid selector/output law
 
 Lean verifies the empirical-rate obstruction assuming the actual conditional selector/output law in iid CMI has a measurable version on the completed pool. The proof permits arbitrary pointwise output measures and almost-everywhere agreement. The all-zero selector gives the learner's kernel after dropping the independent ghost column. [Lean disproof](lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) · [Proof and scope](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md)
