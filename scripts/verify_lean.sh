@@ -322,6 +322,12 @@ modules=(
   Conjectures.AgnosticVC.TraceCoreOrder
   Conjectures.AgnosticVC.TraceCoreExamples
   Conjectures.AgnosticVC.OrderedERM
+  Conjectures.AgnosticVC.NullChain
+  Conjectures.AgnosticVC.NullChainDimension
+  Conjectures.AgnosticVC.NullChainObstruction
+  Conjectures.AgnosticVC.CompletedKernel
+  Conjectures.AgnosticVC.IidNullChainExample
+  Conjectures.AgnosticVC.LabeledNullChain
   Conjectures.AgnosticVC
   Conjectures.SteinkeZakynthinou.Adjacency
   Conjectures.SteinkeZakynthinou.AdjacentInformation
