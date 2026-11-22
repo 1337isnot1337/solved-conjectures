@@ -95,3 +95,9 @@ python verify_lean.py \
 ```
 
 The script constructs `LEAN_PATH` from the dependency build directories, runs the displayed compiler, records the full command and environment paths, hashes the source, and saves the output and exit code in `lean-output.txt` and `lean-check.json`. A different machine can supply its own already-built Lean project and compiler at the two arguments. This auxiliary check is not a check against Conjectures.io's pinned Lean 4.35.0-rc2 submission environment.
+
+## Range estimates across starting residues
+
+The [conditional concentration theorem](conditional-concentration.md) proves convergence of the range divided by the interval length to $1-e^{-\gamma}$ in probability and in mean over the exact finite period. For each fixed tolerance the exceptional probability is exponentially small in a positive power of the length, uniformly after all small-prime residues are prescribed.
+
+The [one-center bound](aligned-large-primes.md) and [two-center reflection bound](two-center-reflection.md) give deterministic linear lower bounds when the large-prime residues align with the indicated positions. An exceptional offset lacking such a center or reflected pair remains possible. The [funded platform target](https://conjectures.io/problems/erdos461-erdos-461) requires a proof or refutation for **all** offsets.
