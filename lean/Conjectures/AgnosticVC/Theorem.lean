@@ -85,4 +85,30 @@ theorem steinkeZakynthinou_conjecture6 : AgnosticVCProblem.{u,v} := by
     apply (properLearner_empirical_le_iInf hd hn predict hvc z).trans
     linarith [Real.sqrt_nonneg ((d : ℝ) / n)]
 
+/-- Both rates for arbitrary hypothesis classes on a countable instance domain with
+measurable singletons. The same proper learner works for every iid labeled distribution. -/
+theorem steinkeZakynthinou_countable_domain {X : Type u} {H : Type v}
+    [MeasurableSpace X] [Countable X] [MeasurableSingletonClass X]
+    [MeasurableSpace H] [Nonempty H] [TraceOrder H]
+    {n d : ℕ} (hd : 0 < d) (hn : d ≤ n) (predict : H → X → Bool)
+    (hvc : HasVCDimensionAtMost predict d) :
+    let A := properLearner hd hn predict
+    Measurable (fun z => (A z).toMeasure) ∧
+    (∀ (D : Measure (X × Bool)) [IsProbabilityMeasure D],
+      let μ := Measure.pi (fun _ : Fin n × Bool => D)
+      Integrable (originalPoolInformation A) μ ∧
+      (∫ z, originalPoolInformation A z ∂μ) ≤ 19712 * d) ∧
+    ∀ z, (∑' h : H, (A z h).toReal * empiricalError predict z h) ≤
+      (⨅ h : H, empiricalError predict z h) + 583 * Real.sqrt ((d : ℝ) / n) := by
+  intro A
+  have hsel := hasMeasurableCanonicalRepresentatives_of_countable_domain predict
+  refine ⟨measurable_properLearner_toMeasure hd hn predict hsel, ?_,
+    properLearner_empirical_le_iInf hd hn predict hvc⟩
+  intro D _ μ
+  change Integrable (originalPoolInformation (properLearner hd hn predict)) μ ∧
+    (∫ z, originalPoolInformation (properLearner hd hn predict) z ∂μ) ≤ _
+  rw [funext (originalPoolInformation_eq_poolInformation hd hn predict)]
+  exact ⟨integrable_poolInformation hd hn predict hsel.toHasMeasurableTraceSelection μ,
+    properLearner_cmi_le hd hn predict hvc hsel.toHasMeasurableTraceSelection D⟩
+
 end AgnosticVC

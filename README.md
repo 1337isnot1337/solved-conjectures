@@ -10,7 +10,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Verification |
 | :--- | :---: |
-| [Steinke–Zakynthinou’s agnostic VC learning conjecture](results/steinke-zakynthinou-agnostic-vc/) | ✅ |
+| [Steinke–Zakynthinou’s agnostic VC learning conjecture](results/steinke-zakynthinou-agnostic-vc/) | 🟡 |
 | [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ |
 | [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | ⬜ |
 | [Brown–Mol's conjecture](results/brown-mol/) | ✅ |
@@ -85,7 +85,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 - ⬜ No Lean verification. Any essential computer-assisted proof is identified in the catalogue and result package.
 - ★ Outside confirmation: an independent external review is documented at the result level. This is separate from Lean verification and is not journal peer review.
 
-For Steinke–Zakynthinou’s agnostic VC conjecture, Lean verifies empirical accuracy on every sample and the information bound averaged over permutations of every fixed pool. The population theorem and its measurability conditions are stated on the [result page](results/steinke-zakynthinou-agnostic-vc/#scope).
+For Steinke–Zakynthinou’s agnostic VC conjecture, Lean verifies empirical accuracy on every sample and the information bound averaged over permutations of every fixed pool. The measurable population theorem adds a selection hypothesis. The unrestricted conjecture remains open in this collection. [Scope audit](results/steinke-zakynthinou-agnostic-vc/SCOPE.md)
 
 Results are ordered approximately by the significance and breadth of the mathematical contribution, not by recency or verification status.
 

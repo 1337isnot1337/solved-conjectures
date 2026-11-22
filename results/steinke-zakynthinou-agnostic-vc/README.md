@@ -1,6 +1,6 @@
 # Steinke–Zakynthinou’s agnostic VC learning conjecture
 
-Lean verifies the proposed proof of Conjecture 6 under the measurable-selection convention below. For a binary hypothesis class of VC dimension at most $`d`$, with $`1\le d\le n`$, one randomized learner returns a member of the class. The choice of learner is independent of the data distribution. [Lean theorem](../../lean/Conjectures/AgnosticVC/Theorem.lean) · [Written proof](PROOF.md)
+**Partial result on the unrestricted conjecture.** Lean verifies both rates under the measurable-selection convention below. For a binary hypothesis class of VC dimension at most $`d`$, with $`1\le d\le n`$, one randomized learner returns a member of the class. The choice of learner is independent of the data distribution. [Lean theorem](../../lean/Conjectures/AgnosticVC/Theorem.lean) · [Written proof](PROOF.md)
 
 | Guarantee for the same learner | Verified bound |
 | --- | --- |
@@ -10,6 +10,8 @@ Lean verifies the proposed proof of Conjecture 6 under the measurable-selection 
 The first estimate compares with the infimum of ordinary zero–one losses. The second uses the joint distribution of the selector and the named hypothesis. Lean identifies its discrete information formula with Mathlib’s KL divergence from the product of their marginals when output singletons are measurable. For any other prescribed output measurable space, Lean proves that its KL is bounded above by the same complete-name information. [Arbitrary output measurable spaces](../../lean/Conjectures/AgnosticVC/CoarseKL.lean) · [Empirical loss and infimum](../../lean/Conjectures/AgnosticVC/EmpiricalInfimum.lean) · [Joint and marginal laws](../../lean/Conjectures/AgnosticVC/OriginalInformation.lean) · [KL theorem](../../lean/Conjectures/AgnosticVC/KLRates.lean)
 
 ## Scope
+
+The [scope audit](SCOPE.md) compares the original definitions with the formal hypotheses and gives a VC-one obstruction to unrestricted Borel selection.
 
 - **Every hypothesis set and every fixed pool.** Arbitrary cardinalities, repeated features and label noise are allowed. Fix all $`2n`$ labeled positions, permute them uniformly, compute the selector information with the order known, then average over orders. The same information bound holds for each such pool. [Fixed-pool theorem](../../lean/Conjectures/AgnosticVC/Theorem.lean)
 - **Every iid law for which the information is defined.** Almost-everywhere measurability of the exact pool statistic suffices. Lean proves that the statistic has finite range and hence is integrable. This covers every countably supported data law on a feature space with measurable singletons, even for uncountable hypothesis classes. [Population theorem](../../lean/Conjectures/AgnosticVC/MeasurableInformation.lean)

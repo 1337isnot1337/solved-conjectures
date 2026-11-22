@@ -56,6 +56,20 @@ theorem hasMeasurableCanonicalRepresentatives_of_countable [Countable H]
     exact (measurableSet_sampleTrace_eq predict g (hmeas g) v).compl
   · simp [hgt]
 
+/-- On a countable instance domain with measurable singletons, the space of feature tuples
+of each finite length is countable and has measurable singletons. Thus any chosen trace order
+supplies measurable canonical representatives for any hypothesis class. -/
+theorem hasMeasurableCanonicalRepresentatives_of_countable_domain
+    [Countable X] [MeasurableSingletonClass X] (predict : H → X → Bool) :
+    HasMeasurableCanonicalRepresentatives predict := by
+  refine ⟨⟨?_, ?_⟩, ?_⟩
+  · intro I _ v
+    exact (Set.to_countable _).measurableSet
+  · intro I K _ _ e v t
+    exact (Set.to_countable _).measurableSet
+  · intro I _ v B hB
+    exact (Set.to_countable _).measurableSet
+
 private noncomputable def traceEventMass {n d : ℕ} (predict : H → X → Bool)
     (B : Set H) (v : Finset (Fin n)) (z : Fin n → X × Bool) : ENNReal := by
   classical
