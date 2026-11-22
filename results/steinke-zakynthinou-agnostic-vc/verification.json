@@ -1,0 +1,41 @@
+{
+  "proof_commit": "6c5b9f85533fd10ae093c3abeedc48d09d029a16",
+  "source_statement": "https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf",
+  "formal_statement": "lean/Conjectures/AgnosticVC/Theorem.lean",
+  "main_theorem": "AgnosticVC.steinkeZakynthinou_conjecture6",
+  "fixed_pool_theorem": "AgnosticVC.steinkeZakynthinou_fixedPool",
+  "measurable_information_theorem": "AgnosticVC.steinkeZakynthinou_measurableInformation",
+  "mathlib_kl_theorem": "AgnosticVC.steinkeZakynthinou_kl_rates",
+  "bounds": {
+    "iid_whole_hypothesis_information_nats": "19712 * d",
+    "empirical_excess_on_every_labeled_sample": "583 * sqrt(d / n)"
+  },
+  "scope": "1 <= d <= n. The permutation average is bounded on every fixed labeled pool. The iid bound holds under almost-everywhere measurability of the scalar original-information statistic. The measurable Markov learner theorem assumes measurable coherent representatives for the fixed global well-order at this commit. Every countable class of measurable predictors satisfies this assumption.",
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "command": "python3 scripts/verify_agnostic_vc.py --fetch-cache",
+  "local_strict_elaboration": "passed",
+  "all_owned_declaration_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 1087,
+    "modules": 60,
+    "private_declarations": 452,
+    "raw_declarations": 1087,
+    "required": 49,
+    "tag": "passed",
+    "theorems": 890
+  },
+  "stock_kernel_replay": "passed for all modules in the theorem package import closure",
+  "github_actions": {
+    "conclusion": "success",
+    "headSha": "6c5b9f85533fd10ae093c3abeedc48d09d029a16",
+    "status": "completed",
+    "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44978814901"
+  },
+  "finite_diagnostic": "python3 results/steinke-zakynthinou-agnostic-vc/verify.py",
+  "finite_diagnostic_result": "passed"
+}

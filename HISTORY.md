@@ -2,7 +2,7 @@
 
 ## 2026-11-21 — Steinke–Zakynthinou’s agnostic VC learning conjecture
 
-Added the [proposed proof of Conjecture 6](results/steinke-zakynthinou-agnostic-vc/PROOF.md) to the results catalogue. Its multiscale entropy learner returns a member of the original hypothesis class. Full Lean verification and independent review are pending.
+Added the [proposed proof of Conjecture 6](results/steinke-zakynthinou-agnostic-vc/PROOF.md) and its [combined Lean theorem](lean/Conjectures/AgnosticVC/Theorem.lean). The multiscale entropy learner returns a member of the original hypothesis class. Its original selector-information and all-sample empirical bounds are verified under the [documented measurability conventions](results/steinke-zakynthinou-agnostic-vc/). Independent review is pending.
 
 ## 2026-11-21 — Proper agnostic thresholds with constant original CMI
 

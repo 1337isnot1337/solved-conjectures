@@ -2,7 +2,7 @@
 
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
-[Partial Lean formalization](../lean/Conjectures/AgnosticVC.lean) includes the weighted VC one-inclusion inequality, the positive unique finite entropy optimizer, its comparator bound, and information and exchangeability lemmas. The [empirical guarantee](../lean/Conjectures/AgnosticVC/VCAccuracy.lean) now holds for the actual proper learner with constant 583 on every sample. The matching original-CMI theorem is in progress. [Written proof](../results/steinke-zakynthinou-agnostic-vc/PROOF.md)
+Lean proves the two guarantees for a single proper learner. The original CMI is at most $`19{,}712d`$ nats, and the expected empirical excess on every sample is at most $`583\sqrt{d/n}`$. The shuffled-pool theorem holds for arbitrary hypothesis sets. The population theorem specifies measurability of its chosen representatives and discharges this assumption for countable measurable classes. A separate theorem requires only almost-everywhere measurability of the pool information to obtain the iid bound. [Theorem](../lean/Conjectures/AgnosticVC/Theorem.lean) · [Verification receipt](../results/steinke-zakynthinou-agnostic-vc/verification.json)
 
 ## Steinke–Zakynthinou threshold theorem
 
