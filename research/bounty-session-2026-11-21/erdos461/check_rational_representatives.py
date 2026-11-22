@@ -93,6 +93,26 @@ def transfer_checks():
     return sites
 
 
+def large_prime_checks():
+    cases = 0
+    for t in (11, 17, 29):
+        primes = primes_below(t)
+        for a, b in ((1, 1), (1, 4), (25, 6), (t**3 + 1, 1)):
+            for y in (3, 5):
+                small = [p for p in primes if p <= y and b % p]
+                large = [p for p in primes if p > y and b % p]
+                modulus = prod(cap_power(p, a+b*t+1) for p in small)
+                v = a * pow(b, -1, modulus) % modulus
+                for n in (0, 3, a*pow(b, -1, prod(large)) % prod(large)):
+                    for i in range(1, t+1):
+                        m = a + b*i
+                        assert component(v+i, small) == component(m, small)
+                        if all(m % (p*p) and (m % p or (b*n-a) % p == 0) for p in large):
+                            assert component(n+i, large) % component(m, large) == 0
+                        cases += 1
+    return cases
+
+
 if __name__ == "__main__":
     print(f"{floor_checks()} progression counts, {quadratic_checks()} sieve forms, "
-          f"and {transfer_checks()} transfer sites passed.")
+          f"{transfer_checks()} transfer sites, and {large_prime_checks()} large-prime cases passed.")

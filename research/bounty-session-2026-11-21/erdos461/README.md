@@ -105,3 +105,5 @@ The [one-center bound](aligned-large-primes.md) and [two-center reflection bound
 The [polynomial-height theorem](polynomial-height.md) proves the linear bound for every starting point up to any fixed power of the interval length, without alignment assumptions. Its constant depends on that power. A counterexample sequence to the full statement would therefore require starting points exceeding every fixed power.
 
 The [rational representative theorem](rational-representatives.md) transfers a uniform arithmetic-progression estimate to starting residues with small weighted prime-power disagreement. The least representative can already be exponential in the interval length.
+
+The [large-prime agreement theorem](large-prime-rational-agreement.md) removes all restrictions at the smaller primes and needs only congruence modulo the larger primes themselves. Its final estimate shows that a uniform starting residue admits any such rational approximation with exponentially small probability.
