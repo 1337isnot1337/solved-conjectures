@@ -41,8 +41,9 @@ EXTERNAL_CREDIT = {
     ),
 }
 PARTIAL_CATEGORIES = {
-    "circular-index-upper-half-delta-2-mod-4": "Graphs and networks",
-    "circular-index-upper-half-delta-3-mod-4": "Graphs and networks",
+    "wild-number-complete-graphs": "Graph theory and discrete geometry",
+    "circular-index-upper-half-delta-2-mod-4": "Graph theory and discrete geometry",
+    "circular-index-upper-half-delta-3-mod-4": "Graph theory and discrete geometry",
     "shifted-lonely-runner-counterexamples": "Lonely runners",
     "steinke-zakynthinou-agnostic-vc": "Information complexity of learning",
     "frankl-generator-families": "Combinatorics",
@@ -135,6 +136,7 @@ STATUS_LABEL_SLUGS = {
     "Eleven-through-fourteen-runner equality": "tight-eleven-to-fourteen",
     "Mazák–Zrubák conjecture on complete graphs minus an edge": "circular-index-complete-minus-edge",
     "Circular chromatic index of complete graphs minus a few edges": "circular-index-complete-minus-edges",
+    "Dawkins–Nappo–Tong–Zimbizi wild-number conjecture for n ≥ 155": "wild-number-complete-graphs",
 }
 
 

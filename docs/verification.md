@@ -333,6 +333,7 @@ python3 results/shifted-lonely-runner-counterexamples/verify.py --quick
 python3 results/circular-index-complete-minus-edge/verify.py
 python3 results/circular-index-complete-minus-edges/verify.py
 python3 results/circular-index-complete-minus-edges/verify_seq.py
+python3 results/wild-number-complete-graphs/verify.py
 ```
 
 The latest workflow is the executable reference when new checks are added.
@@ -372,6 +373,10 @@ Run `python3 results/circular-index-complete-minus-edge/verify.py` with assertio
 ## Circular chromatic index of complete graphs minus a few edges
 
 Run `python3 results/circular-index-complete-minus-edges/verify.py` and `python3 results/circular-index-complete-minus-edges/verify_seq.py` with assertions enabled. The first standard-library script checks the 32 explicit `(p,q)`-edge-colourings of `K_n-F` in `colourings.json` from the definition and prints the matching lower bound `N/m`. The second searches exhaustively for perfect sequencings of `K_5-e`, `K_7-e`, `K_9-e`, `K_7-P_3` and `K_7-2K_2` and checks Lemmas A2 to A4 and the class counts of A5 on those of `K_5-e`; it takes about 25 seconds. The optional `verify_sat.py` and `drat/mkproof.py` need `python-sat` and are not run by CI, nor are the referee scripts in `review/`. The [written proof](../results/circular-index-complete-minus-edges/PROOF.md) of Theorem A covers every odd `n >= 7`; the exact values for small `n` also rest on exhaustive searches and SAT runs. No Lean verification is included.
+
+## Wild number of complete graphs for n ≥ 155
+
+Run `python3 results/wild-number-complete-graphs/verify.py` with assertions enabled. The standard-library script checks in exact rationals the counting inequality for the fixed block, condition (*) of Theorem B for every odd `n` from 155 to 189 with the author's coefficients and with the second referee's independent coefficients, the lopsided local-lemma condition of Theorem A for every odd `n` from 189 to 1201, and the first referee's monotone tail bound at `n = 1201`. It takes a few seconds. The counts themselves are proved in the [written notes](../results/wild-number-complete-graphs/); the scripts in `improvement/`, `review/` and `review2/` are optional cross-checks, and `theorem-a/verify.py` needs NumPy and SciPy. None of these checks decides any `n` in the open range `13 <= n <= 154`. No Lean verification is included.
 
 ## Zhang's Question 8.4
 

@@ -1,0 +1,12 @@
+  it 1 family 5 time 0.0
+  it 2 family 10 time 0.0
+  it 3 family 15 time 0.0
+  it 4 family 20 time 0.0
+  it 5 family 25 time 0.0
+  it 6 family 30 time 0.0
+  it 7 family 35 time 0.1
+  it 8 family 40 time 0.2
+  it 9 family 45 time 1.7
+  it 10 family 50 time 8.9
+11 [10] UNSAT iters 12 family 55 time 73.4
+11 [8, 2] UNSAT iters 1 family 55 time 94.6

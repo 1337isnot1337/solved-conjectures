@@ -95,6 +95,7 @@ For the 🟢 Lonely Runner results, the written proofs reduce the classification
 
 This section is ordered by the significance of the partial contributions.
 
+- [Wild number of complete graphs](results/wild-number-complete-graphs/). The conjectured value holds for all $n\ge155$. The range $13\le n\le154$ remains open.
 - [Upper-half circular chromatic index for degrees congruent to 1 or 2 modulo 4](results/circular-index-upper-half-delta-2-mod-4/). Constructions for degrees $\Delta=4g+1$ and $4g+2$ with $g\ge6$, plus finite certificates for degrees $10,14,18,22$.
 - [Upper-half circular chromatic index for degrees congruent to 3 modulo 4](results/circular-index-upper-half-delta-3-mod-4/). Examples for every $\Delta\equiv3\pmod4$ with $\Delta\ge27$. The all-degree question remains open at degrees $9,11,13,15,17,19,23$.
 - [Shifted Lonely Runner](results/shifted-lonely-runner-counterexamples/). Exact counterexamples for every $18\le n\le54$. The remaining range is $55\le n\le94$.
@@ -121,7 +122,7 @@ This section is ordered by the significance of the partial contributions.
 GitHub's **Cite this repository** control reads [`CITATION.cff`](CITATION.cff).
 The repository-level authors are Cinna Davis and GPT-6.2 Astra (an AI model), in that order.
 Credit the [Graffiti.pc 318 result](results/graffiti-pc-318/) and its proof to [@JesterInABarrel](https://x.com/JesterInABarrel/status/2123233964827812334), who contributed them.
-Credit the [Zhang deletion-values result](results/zhang-deletion-values/) and the [Oravcová–Soták five-to-eight-distance result](results/oravcova-sotak/) to [@aadrianvv](https://github.com/aadrianvv), who contributed their proofs and verification packages in [PR #143](https://github.com/1337isnot1337/solved-conjectures/pull/143) and [PR #144](https://github.com/1337isnot1337/solved-conjectures/pull/144). The latter result is conditional on the repository's spectrum classifications and does not settle the unrestricted conjecture.
+Credit the [Zhang deletion-values result](results/zhang-deletion-values/) and the [Oravcová–Soták five-to-eight-distance result](results/oravcova-sotak/) to [@aadrianvv](https://github.com/aadrianvv), who contributed their proofs and verification packages in [PR #143](https://github.com/1337isnot1337/solved-conjectures/pull/143) and [PR #144](https://github.com/1337isnot1337/solved-conjectures/pull/144). The latter result is conditional on the repository's spectrum classifications and does not settle the unrestricted conjecture. Credit the [wild-number result for n ≥ 155](results/wild-number-complete-graphs/) to [@aadrianvv](https://github.com/aadrianvv), who contributed its proofs, verifier, referee passes and continuation material; the conjecture remains open for 13 ≤ n ≤ 154.
 
 Suggested BibTeX for the repository:
 

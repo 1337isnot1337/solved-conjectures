@@ -1,0 +1,13 @@
+n=13 cyc1 F=[3, 5, 8, 9] partitions=1500 bad=1211 caught_only_by_E2=246 misses=0
+n=15 kem2 F=[] partitions=1500 bad=1367 caught_only_by_E2=0 misses=0
+n=19 dbl2 F=[1, 9, 12, 13] partitions=1500 bad=1259 caught_only_by_E2=79 misses=0
+n=19 dbl3 F=[6, 15, 16, 18] partitions=1500 bad=1286 caught_only_by_E2=113 misses=0
+n=21 kem2 F=[] partitions=1500 bad=1407 caught_only_by_E2=0 misses=0
+n=23 dbl2 F=[5, 17, 19, 21, 22] partitions=1500 bad=1250 caught_only_by_E2=39 misses=0
+n=23 dbl3 F=[8, 10, 13, 16, 17] partitions=1500 bad=1300 caught_only_by_E2=50 misses=0
+n=25 kem2 F=[1, 13, 18, 19] partitions=1500 bad=1313 caught_only_by_E2=67 misses=0
+n=25 cyc1 F=[6, 11, 17, 18] partitions=1500 bad=1354 caught_only_by_E2=77 misses=0
+n=27 kem2 F=[] partitions=800 bad=745 caught_only_by_E2=0 misses=0
+n=29 dbl2 F=[6, 13, 16, 22, 23] partitions=800 bad=690 caught_only_by_E2=12 misses=0
+n=31 dbl2 F=[5, 17, 21, 22] partitions=800 bad=723 caught_only_by_E2=18 misses=0
+TOTAL MISSES 0
