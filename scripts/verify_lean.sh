@@ -279,6 +279,29 @@ modules=(
   Conjectures.AgnosticVC.PairedDeletion
   Conjectures.AgnosticVC.ProjectionInverse
   Conjectures.AgnosticVC.ProjectionOverlap
+  Conjectures.AgnosticVC.DeletionChannel
+  Conjectures.AgnosticVC.DeletionCoupling
+  Conjectures.AgnosticVC.DeletionSum
+  Conjectures.AgnosticVC.FixedPool
+  Conjectures.AgnosticVC.Mixtures
+  Conjectures.AgnosticVC.OptimizerCollapse
+  Conjectures.AgnosticVC.OptimizerDeletion
+  Conjectures.AgnosticVC.OptimizerDeletionBudget
+  Conjectures.AgnosticVC.OptimizerDeletionFibers
+  Conjectures.AgnosticVC.OptimizerEnergy
+  Conjectures.AgnosticVC.OptimizerLossDeletion
+  Conjectures.AgnosticVC.OptimizerRestriction
+  Conjectures.AgnosticVC.OptimizerRestrictionDeletion
+  Conjectures.AgnosticVC.OptimizerSubsetSwap
+  Conjectures.AgnosticVC.PairedIntegral
+  Conjectures.AgnosticVC.ProjectionBudget
+  Conjectures.AgnosticVC.ProjectionConditional
+  Conjectures.AgnosticVC.ProjectionMultiscale
+  Conjectures.AgnosticVC.ProjectionScore
+  Conjectures.AgnosticVC.ProjectionWeightFubini
+  Conjectures.AgnosticVC.SelectorBound
+  Conjectures.AgnosticVC.VCMeasurability
+  Conjectures.AgnosticVC.VCRenumber
   Conjectures.AgnosticVC
   Conjectures.SteinkeZakynthinou.Adjacency
   Conjectures.SteinkeZakynthinou.AdjacentInformation

@@ -13,5 +13,10 @@ public import Conjectures.AgnosticVC.Output
 public import Conjectures.AgnosticVC.PairedDeletion
 public import Conjectures.AgnosticVC.ProjectionInverse
 public import Conjectures.AgnosticVC.ProjectionOverlap
+public import Conjectures.AgnosticVC.DeletionSum
+public import Conjectures.AgnosticVC.FixedPool
+public import Conjectures.AgnosticVC.VCMeasurability
+public import Conjectures.AgnosticVC.ProjectionScore
+public import Conjectures.AgnosticVC.ProjectionWeightFubini
 
 /-! Verified components of Steinke–Zakynthinou's agnostic VC conjecture. -/
