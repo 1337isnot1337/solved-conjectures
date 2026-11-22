@@ -659,10 +659,16 @@ class Builder:
         parts = PurePosixPath(document.source).parts
         result = self.result_map.get(parts[1]) if parts[0] == "results" and len(parts) > 1 else None
         body, toc = self.render_blocks(document.ast["blocks"], document.source, strip_title=True)
-        display_title = result.title if result and parts[-1] == "README.md" else document.title
+        result_landing = result is not None and parts[2:] == ("README.md",)
+        display_title = result.title if result_landing else document.title
         role = ""
-        if result and parts[-1] != "README.md":
-            role = "Proof" if parts[-1] == "PROOF.md" else "Lean details" if parts[-1] == "LEAN.md" else PurePosixPath(document.source).stem.replace("-", " ").capitalize()
+        if result and not result_landing:
+            folders = parts[2:-1]
+            stem = PurePosixPath(parts[-1]).stem
+            path_labels = folders if parts[-1] == "README.md" else (*folders, stem)
+            role = " / ".join(label.replace("-", " ").capitalize() for label in path_labels)
+            if not folders and parts[-1] == "LEAN.md":
+                role = "Lean details"
         title = (f"{result.title}: {role}" if result and role else display_title) + f" | {SITE_NAME}"
         if result:
             credit_prefix = f"Proof credited to {EXTERNAL_CREDIT[result.slug][0]}. " if result.slug in EXTERNAL_CREDIT else ""
