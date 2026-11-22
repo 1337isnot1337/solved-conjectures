@@ -103,3 +103,5 @@ The [conditional concentration theorem](conditional-concentration.md) proves con
 The [one-center bound](aligned-large-primes.md) and [two-center reflection bound](two-center-reflection.md) give deterministic linear lower bounds when the large-prime residues align with the indicated positions. An exceptional offset lacking such a center or reflected pair remains possible. The [funded platform target](https://conjectures.io/problems/erdos461-erdos-461) requires a proof or refutation for **all** offsets.
 
 The [polynomial-height theorem](polynomial-height.md) proves the linear bound for every starting point up to any fixed power of the interval length, without alignment assumptions. Its constant depends on that power. A counterexample sequence to the full statement would therefore require starting points exceeding every fixed power.
+
+The [rational representative theorem](rational-representatives.md) transfers a uniform arithmetic-progression estimate to starting residues with small weighted prime-power disagreement. The least representative can already be exponential in the interval length.
