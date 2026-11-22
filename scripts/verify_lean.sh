@@ -313,6 +313,7 @@ modules=(
   Conjectures.AgnosticVC.Rates
   Conjectures.AgnosticVC.ShuffleIntegral
   Conjectures.AgnosticVC.Theorem
+  Conjectures.AgnosticVC.CoarseKL
   Conjectures.AgnosticVC
   Conjectures.SteinkeZakynthinou.Adjacency
   Conjectures.SteinkeZakynthinou.AdjacentInformation

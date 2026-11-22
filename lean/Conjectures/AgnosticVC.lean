@@ -21,5 +21,6 @@ public import Conjectures.AgnosticVC.ProjectionWeightFubini
 public import Conjectures.AgnosticVC.Theorem
 public import Conjectures.AgnosticVC.KLRates
 public import Conjectures.AgnosticVC.ProjectionSquareRoot
+public import Conjectures.AgnosticVC.CoarseKL
 
 /-! Steinke–Zakynthinou's agnostic VC learning theorem and its operator estimates. -/
