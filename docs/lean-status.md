@@ -2,7 +2,7 @@
 
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
-[Partial Lean formalization](../lean/Conjectures/AgnosticVC.lean) includes the weighted VC one-inclusion inequality, the positive unique finite entropy optimizer, its comparator bound, and information and exchangeability lemmas. Both rate guarantees must still be proved for one proper learner. [Written proof](../results/steinke-zakynthinou-agnostic-vc/PROOF.md)
+[Partial Lean formalization](../lean/Conjectures/AgnosticVC.lean) includes the weighted VC one-inclusion inequality, the positive unique finite entropy optimizer, its comparator bound, and information and exchangeability lemmas. The [empirical guarantee](../lean/Conjectures/AgnosticVC/VCAccuracy.lean) now holds for the actual proper learner with constant 583 on every sample. The matching original-CMI theorem is in progress. [Written proof](../results/steinke-zakynthinou-agnostic-vc/PROOF.md)
 
 ## Steinke–Zakynthinou threshold theorem
 

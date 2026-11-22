@@ -270,6 +270,15 @@ modules=(
   Conjectures.AgnosticVC.OptimizerSensitivity
   Conjectures.AgnosticVC.VCVariance
   Conjectures.AgnosticVC.VCEmpirical
+  Conjectures.AgnosticVC.Parameters
+  Conjectures.AgnosticVC.VCRademacher
+  Conjectures.AgnosticVC.VCChaining
+  Conjectures.AgnosticVC.VCWeights
+  Conjectures.AgnosticVC.VCAccuracy
+  Conjectures.AgnosticVC.Output
+  Conjectures.AgnosticVC.PairedDeletion
+  Conjectures.AgnosticVC.ProjectionInverse
+  Conjectures.AgnosticVC.ProjectionOverlap
   Conjectures.AgnosticVC
   Conjectures.SteinkeZakynthinou.Adjacency
   Conjectures.SteinkeZakynthinou.AdjacentInformation
