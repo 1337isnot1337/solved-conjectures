@@ -201,5 +201,34 @@
       "AgnosticVC.circleOrbit_output_not_measurable_all_large",
       "AgnosticVC.exists_completed_iid_joint_kernel"
     ]
+  },
+  "circle_measurable_erm_and_uniform_deviation": {
+    "github_actions": {
+      "conclusion": "success",
+      "headSha": "4aca5e474562883d5d002eae08c242249237e9e6",
+      "status": "completed",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44991137113"
+    },
+    "all_owned_declaration_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1397,
+      "modules": 90,
+      "private_declarations": 527,
+      "raw_declarations": 1397,
+      "required": 91,
+      "tag": "passed",
+      "theorems": 1125
+    },
+    "kernel_replayed_modules": 90,
+    "theorems": [
+      "AgnosticVC.circleOrbit_exists_measurableERM",
+      "AgnosticVC.exists_measurable_erm_of_countable_candidates",
+      "AgnosticVC.nullChain_exists_probability_full_outer_samples",
+      "AgnosticVC.exists_unitInterval_nullGdelta_chain_full_outer_samples"
+    ]
   }
 }
