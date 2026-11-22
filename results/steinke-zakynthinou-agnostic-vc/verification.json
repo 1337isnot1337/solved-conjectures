@@ -91,5 +91,33 @@
       "AgnosticVC.borelPair_no_accurateKernel_rate"
     ],
     "manuscript": "paper.pdf"
+  },
+  "ordered_erm": {
+    "github_actions": {
+      "conclusion": "success",
+      "headSha": "35970639ec69a753950f4ed663f9a8c704f4fca4",
+      "status": "completed",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44986814421"
+    },
+    "all_owned_declaration_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1202,
+      "modules": 69,
+      "private_declarations": 480,
+      "raw_declarations": 1202,
+      "required": 71,
+      "tag": "passed",
+      "theorems": 970
+    },
+    "kernel_replayed_modules": 69,
+    "theorems": [
+      "AgnosticVC.hasMeasurableCanonicalRepresentatives_of_orderedERM",
+      "AgnosticVC.steinkeZakynthinou_of_measurable_orderedERM"
+    ],
+    "manuscript": "paper.pdf, Proposition 6.2"
   }
 }
