@@ -35,6 +35,7 @@ run_cmd do
     `AgnosticVC.steinkeZakynthinou_countable_domain,
     `AgnosticVC.steinkeZakynthinou_fixedPool,
     `AgnosticVC.steinkeZakynthinou_fixedPairing,
+    `AgnosticVC.steinkeZakynthinou_framework_conjecture418,
     `AgnosticVC.properLearner_fixedPairing_KL_le,
     `AgnosticVC.BorelCode.standardBorel_trace_obstruction,
     `AgnosticVC.exists_fullOuter_coordinateMatching,

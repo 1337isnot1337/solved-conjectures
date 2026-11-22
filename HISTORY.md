@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Distribution-free agnostic VC conjecture in the framework paper
+
+Lean verifies [Conjecture 4.18](https://arxiv.org/pdf/2001.09122v3) with common constant $`19{,}712`$ for every positive sample size and arbitrary hypothesis classes of finite positive VC dimension. The [theorem](lean/Conjectures/AgnosticVC/FixedPairing.lean) gives both the bound on whole-output selector information for every fixed paired pool and the samplewise empirical rate. It includes $`n<d`$ by using a constant proper learner. The COLT formulation uses the iid CMI and its [measurability scope](results/steinke-zakynthinou-agnostic-vc/SCOPE.md) is recorded separately.
+
 ## 2026-11-22 — Finite-support counterexamples for completed-iid proper learners
 
 Lean verifies the [failure of the Conjecture 6 empirical rate](lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) for every proposed constant on a VC-one class with finite disjoint supports. The [written proof](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md) gives distribution-uniform convergence in outer probability and quantifies why it lacks the absolute VC-one bound at the counterexample sample size. A [separate Lean counterexample](lean/Conjectures/AgnosticVC/BorelChoiceObstruction.lean) covers globally Borel kernels on standard Borel spaces with Borel trace feasibility. The scope of the original bounty awaits clarification.

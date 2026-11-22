@@ -100,4 +100,63 @@ theorem steinkeZakynthinou_fixedPairing {X H : Type*} [Nonempty H] [TraceOrder H
   rw [originalPoolInformation_eq_poolInformation]
   exact properLearner_fixedPairing_information_le hd hn predict hvc z
 
+private theorem originalPoolInformation_constant {X H : Type*} {n : ℕ}
+    (p : PMF H) (z : Pool n X) : originalPoolInformation (fun _ => p) z = 0 := by
+  have hout : originalPoolOutput (fun _ => p) z = p := by
+    rw [originalPoolOutput_eq_bind, PMF.bind_const]
+  unfold originalPoolInformation
+  calc
+    _ = ∑' _ : SteinkeZakynthinou.Selector n × H, (0 : ℝ) := by
+      apply tsum_congr
+      rintro ⟨s,h⟩
+      rw [originalPoolJoint_apply, originalPoolMarginalProduct_apply, hout]
+      simp
+    _ = 0 := tsum_zero
+
+/-- Conjecture 4.18 of Steinke and Zakynthinou's framework paper. The information
+bound is the distribution-free CMI of Definition 1.1, namely the bound on the
+whole named output at every fixed paired supersample. The source allows all
+positive sample sizes. When `n < d`, a constant proper output suffices. -/
+theorem steinkeZakynthinou_framework_conjecture418 {X H : Type*} [Nonempty H]
+    {n d : ℕ} (hd : 0 < d) (hn : 0 < n) (predict : H → X → Bool)
+    (hvc : HasVCDimensionAtMost predict d) :
+    ∃ A : (Fin n → X × Bool) → PMF H,
+      (∀ z : Pool n X, originalPoolInformation A z ≤ 19712 * d) ∧
+      ∀ z, (∑' h : H, (A z h).toReal * empiricalError predict z h) ≤
+        (⨅ h : H, empiricalError predict z h) + 19712 * Real.sqrt ((d : ℝ) / n) := by
+  by_cases hdn : d ≤ n
+  · obtain ⟨A,hi,ha⟩ := steinkeZakynthinou_fixedPairing hd hdn predict hvc
+    refine ⟨A,hi,fun z => (ha z).trans ?_⟩
+    linarith only [Real.sqrt_nonneg ((d : ℝ) / n)]
+  classical
+  let h₀ : H := Classical.ofNonempty
+  refine ⟨fun _ => PMF.pure h₀, ?_, ?_⟩
+  · intro z
+    rw [originalPoolInformation_constant]
+    positivity
+  · intro z
+    have ho : (∑' h : H, ((PMF.pure h₀) h).toReal * empiricalError predict z h) =
+        empiricalError predict z h₀ := by
+      rw [tsum_eq_single h₀]
+      · simp
+      · intro h hh
+        simp [PMF.pure_apply, hh]
+    have hmin : 0 ≤ (⨅ h : H, empiricalError predict z h) := by
+      apply le_ciInf
+      intro h
+      rw [empiricalError_eq_zeroOne]
+      exact div_nonneg (Finset.sum_nonneg fun i _ => by split <;> norm_num) (Nat.cast_nonneg n)
+    have hmax : empiricalError predict z h₀ ≤ 1 := by
+      rw [empiricalError_eq_zeroOne, div_le_iff₀ (Nat.cast_pos.mpr hn), one_mul]
+      calc
+        _ ≤ ∑ _ : Fin n, (1 : ℝ) := Finset.sum_le_sum fun i _ => by split <;> norm_num
+        _ = n := by simp
+    have hratio : (1 : ℝ) ≤ (d : ℝ) / n := (le_div_iff₀ (Nat.cast_pos.mpr hn)).mpr (by
+      rw [one_mul]
+      exact_mod_cast (Nat.le_of_lt (Nat.lt_of_not_ge hdn)))
+    have hsqrt : 1 ≤ Real.sqrt ((d : ℝ) / n) := by
+      simpa only [Real.sqrt_one] using Real.sqrt_le_sqrt hratio
+    rw [ho]
+    linarith only [hmin,hmax,hsqrt]
+
 end AgnosticVC
