@@ -36,9 +36,11 @@ returned classifier. Exchangeability gives the iid bound whenever the
 pool statistic is almost everywhere measurable. Measurability of trace realizability, representative extensions and output
 events gives a single Markov learner for every iid law.
 This includes arbitrary classes on countable discrete domains and classes
-with a countable measurable subclass realizing all their finite traces. We identify the extra hypothesis
-relative to Steinke and Zakynthinou's Conjecture~6 and exhibit a VC-one
-obstruction to an unrestricted Borel-kernel interpretation.
+with a countable measurable subclass realizing all their finite traces. For a given feature law it also suffices that the globally tie-broken
+empirical minimizer is measurable for iid features with independent fair
+labels after completion. We give a VC-one class on the unit interval for
+which every proper learner on one completed iid law has empirical excess
+one on some sample.
 \end{abstract}
 
 \section{Introduction}\label{sec:statement}
@@ -429,6 +431,44 @@ The minimizer in this proposition is the one constructed in the proof of
 Lemma~4.15 of \cite{framework}. Its role here is to supply representatives.
 The two rates concern the randomized learner of Section~\ref{sec:learner}.
 
+\begin{theorem}[Measurability under one iid law]\label{thm:iid-erm}
+Assume that evaluation is jointly measurable and that output singletons are
+measurable. Fix a labeled law $D$ with feature marginal $P$ and keep the
+same order on $\HH$. Suppose that for each sample size the first empirical
+minimizer is measurable on the completion of the iid law with features
+drawn from $P$ and independent fair labels. Then the law of $A$ is
+measurable on the completion of $D^n$. The information inequality in
+\eqref{eq:conj} holds for $D$, with constant $19{,}712$. The learner $A$
+and its samplewise bound \eqref{eq:accuracy} are independent of $D$.
+\end{theorem}
+\begin{proof}
+Choose distinct positions $j_1,\ldots,j_m$ from the labeled iid pool and
+prescribe a label vector $v$. The features at these positions have law
+$P^m$. The law of these features paired with $v$ is absolutely continuous
+with respect to the artificially labeled iid law: it is precisely that
+law conditioned on the event that its labels equal $v$, of probability
+$2^{-m}$. Thus a null set in the artificial experiment pulls back to a null
+set in the pool. A set measurable in its completion differs from a measurable
+set by a subset of such a null set. This proves that running the ordered
+minimizer on the selected features with labels $v$ gives a measurable
+hypothesis-valued function on the completed pool.
+
+Apply the finite tests in the proof of Proposition~\ref{prop:ordered-erm}
+to these functions. On the training sample they make the realized trace
+family measurable. The probability of a measurable output event $B$ is
+a finite sum, over realized vectors $v$, of the trace weight times the
+indicator that the selected representative belongs to $B$. This gives the
+first assertion. On the supersample we also test the predictions of each
+representative on all $2n$ features. These tests give the finite code for
+$F_A$ used in the proof of Theorem~\ref{thm:iid}. Consequently $F_A$ is
+measurable on the completed pool and the exchangeability bound applies.
+For a fixed selector, its selected rows again have law $D^n$, so its output
+law pulls back to a kernel on the completed pool. Mixing these kernels
+with the selector probabilities $2^{-n}$ gives the conditional joint law
+of the selector and the actual output. Its KL from the product of its
+marginals is \eqref{eq:fixed}.
+\end{proof}
+
 \subsection{Countable domains and countable trace cores}
 If $\HH$ is countable and each predictor is measurable, the event that
 a particular $h$ is selected is the intersection of its trace event with
@@ -510,19 +550,88 @@ This proposition concerns Borel measurability;
 analytic sets are universally measurable \cite[Thm.~21.10]{kechris},
 so this example does not give the same obstruction for universally measurable kernels.
 
+\subsection{A counterexample for a completed iid law}
+
+Completion allows a learner to use arbitrary subsets of sets of probability
+zero. The next example concerns one fixed distribution, so this additional
+freedom is available throughout.
+
+\begin{theorem}\label{thm:null-chain}
+There is a VC-one class of distinct Borel classifiers on $[0,1]$ with
+measurable output singletons and jointly measurable evaluation for which the
+following holds. Let $D$ give a uniform feature the label $1$. For every
+$n\ge1$ and every proper Markov learner on the completion of $D^n$, some
+labeled sample has expected empirical error one and admits a classifier of
+empirical error zero.
+\end{theorem}
+
+\begin{proof}
+Let $P$ be uniform measure on $[0,1]$. By the maximal chain principle,
+choose a maximal family $\mathcal C$ of null $G_\delta$ sets totally
+ordered by inclusion. It contains the empty set. Its union $U$ has positive
+outer measure: otherwise $U$ lies in a null $G_\delta$ set $G$. Choose
+$x\notin G$ and enclose $G\cup\{x\}$ in a null $G_\delta$ set. This new set strictly contains every
+member of the chain, contradicting maximality.
+
+Take the indicators of the sets in $\mathcal C$ as hypotheses. A point of
+$U$ is shattered using the empty set and a set containing the point.
+Two shattered points would require incomparable sets realizing the two
+opposite singleton patterns. Thus the dimension is exactly one. To specify
+the output space, code each member as a countable intersection of open sets,
+coding each open set by a union of basic intervals from a fixed countable
+basis. Choose one code per member and use the trace of the Borel
+sigma-algebra of the code space. Membership of $x$ is a countable
+intersection of countable unions of measurable tests on the code and $x$.
+This gives joint evaluation and measurable singletons.
+
+Draw a training sample and a returned set $C$, and independently draw a
+second sample and returned set $C'$. Fix a coordinate $i$, with training
+features $X_i,X'_i$ in the two draws. Independence and nullity give
+$\Prob(X_i\in C')=\Prob(X'_i\in C)=0$ by Fubini. If $X_i\in C$ and
+$X'_i\in C'$, nesting forces at least one of these two cross memberships.
+Hence $\Prob(X_i\in C)^2=0$. This holds at each of the finitely many
+coordinates. Conditioning on the training sample now shows that, outside
+one $D^n$-null set, the learner almost surely misses every training point.
+This argument uses only the completed sample kernel and joint evaluation.
+
+Finally $U^n$ has positive outer measure under $P^n$. Indeed, if a measurable
+null set contained $U^n$, almost all its first-coordinate sections would be
+null. Since $U$ has positive outer measure, we could choose a point of $U$
+with a null section containing $U^{n-1}$, and iterate to a contradiction.
+Choose a tuple in $U^n$ outside the exceptional null set from the preceding
+paragraph. Each coordinate lies in a member of the chain. The largest of
+these finitely many members contains the whole tuple. Its empirical error
+is zero, whereas the learner's expected error is one.
+\end{proof}
+
+Nested null classes were used by Durst and Dudley \cite{durst}. Campos,
+Fernandes and Rodrigues constructed an interval example in ZFC and exhibited
+a proper consistent learner that fails PAC learning \cite{campos}. Here the
+class contains only null sets, the labels are always positive, and the
+conclusion concerns every proper randomized learner on the completed law.
+The same example prevents a uniform-convergence interpretation of the
+usual VC theorem for all such classes. Every hypothesis has population loss
+one, yet on $U^n$ some hypothesis has empirical loss zero. This distinction
+matters when comparing the example with the assumptions implicit in the
+published problem.
+
 \paragraph{Relation to Conjecture 6.}
-The problem paper uses random variables in Definition~3. Its companion
-paper defines CMI as the expectation of conditional mutual informations and
-uses a well-order for global tie-breaking \cite[Defs.~2.6, 2.8 and
-Lemmas~4.15, 4.17]{framework}. Proposition~\ref{prop:ordered-erm} shows that, under joint
-measurability of evaluation, measurability of this particular minimizer
-suffices for both rates. The well-order construction proves consistency of
-its choices but gives no measurability assertion. Indeed, the preceding
-VC-one example also rules out an everywhere Borel exact minimizer: such a
-minimizer would satisfy the empirical inequality with zero excess.
-Conjecture~6 leaves the measurable-space convention for arbitrary classes
-unspecified. The population theorem therefore remains conditional in that
-generality.
+The authors define population CMI using random variables
+\cite[Definition~3]{problem}. In the companion paper, the worst-case CMI
+bound for the ordered minimizer is proved on fixed supersamples
+\cite[Theorem~4.12 and Lemmas~4.14--4.15]{framework}. That argument establishes
+coherent tie-breaking. It does not give the iid measurability premise of
+Theorem~\ref{thm:iid-erm}. The companion generalization theorem does
+explicitly assume a measurable loss \cite[Theorem~5.1]{framework}.
+For a related CMI bound, Haghifam et al. explicitly assume the measurability
+of their least consistent hypothesis and give countability of the domain as
+one sufficient condition \cite[Appendix~F, footnote~6]{haghifamfull}.
+If classes such as the one in Theorem~\ref{thm:null-chain} are admitted,
+the empirical inequality already fails for proper learners on completed
+iid laws. If the intended class is restricted by the measurability
+conventions of VC learning, that example can be excluded. These two
+statements leave open whether every class intended by Conjecture~6 has
+a learner satisfying \eqref{eq:conj}.
 
 \appendix
 \section{The empirical-process estimate with constants}\label{app:emp}
@@ -1258,6 +1367,8 @@ the compiled proofs. The only transitive axioms in that audit were
 The subsequent results on measurable selection and its obstructions are in the
 \href{https://github.com/1337isnot1337/solved-conjectures/tree/35970639ec69a753950f4ed663f9a8c704f4fca4/lean/Conjectures/AgnosticVC}{extended development},
 with a \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/44986814421}{separate verification run}.
+The completed-law rate and counterexample are in the
+\href{https://github.com/1337isnot1337/solved-conjectures/tree/3d5e7c960f9eb0775ff61c60c7b5a350d8f65ad4/lean/Conjectures/AgnosticVC}{completed-law development}.
 The obstruction applies to arbitrary proper Markov kernels, including kernels
 whose output laws have infinite support.
 
@@ -1279,6 +1390,8 @@ Measurable Markov learner & \decl{measurable_properLearner_toMeasure}, \decl{ste
 Countable instance domain & \decl{steinkeZakynthinou_countable_domain} \\
 Countable initial segment realizing all traces & \decl{hasMeasurableCanonicalRepresentatives_of_countable_trace_core} \\
 Ordered empirical risk minimization & \decl{hasMeasurableCanonicalRepresentatives_of_orderedERM}, \decl{steinkeZakynthinou_of_measurable_orderedERM} \\
+Completed iid ordered minimizer & \decl{iid_fixedLabel_readout_measurable}, \decl{steinkeZakynthinou_of_iid_orderedERM} \\
+Completed iid counterexample & \decl{measure_selfHit_eq_zero_of_null_chain}, \decl{exists_unitInterval_vcOne_labeled_completed_kernel_no_rate} \\
 Choice of a suitable well-order & \decl{exists_order_of_countable_trace_core} \\
 Pointwise limits and continuous parameters & \decl{finite_trace_core_of_pointwise_limits}, \decl{exists_order_of_separable_continuous_predict} \\
 Rational cuts for real thresholds & \decl{rational_threshold_realizes_finite_trace} \\
@@ -1312,6 +1425,14 @@ Conference on Learning Theory, 2020. Definition and lemma numbers refer to the
 \href{https://arxiv.org/abs/2011.02970}{On the Information Complexity of Proper Learners for VC Classes in the Realizable Case}, 2020.
 \bibitem{hanneke} Steve Hanneke and Juexiao Wang.
 \href{https://arxiv.org/abs/2610.10600}{The Optimal Information Complexity of VC Learning}, 2026.
+\bibitem{haghifamfull} M. Haghifam, G. K. Dziugaite, S. Moran and D. M. Roy.
+\href{https://arxiv.org/abs/2111.05275}{Towards a Unified Information-Theoretic Framework for Generalization}.
+Advances in Neural Information Processing Systems, 2021.
+\bibitem{durst} M. Durst and R. M. Dudley.
+\href{https://www.math.uni.wroc.pl/~pms/files/1.2/Article/1.2.2.pdf}{Empirical processes, Vapnik--Chervonenkis classes and Poisson processes}.
+\emph{Probability and Mathematical Statistics} 1 (1980), 109--115.
+\bibitem{campos} M. J. de Arruda Campos, G. Fernandes and V. de Oliveira Rodrigues.
+\href{https://arxiv.org/abs/2608.30246}{A Borel Concept Class of VC Dimension One with a Non-PAC Consistent Learner in ZFC}, 2026.
 \bibitem{kechris} A. S. Kechris.
 \href{https://doi.org/10.1007/978-1-4612-4190-4}{Classical Descriptive Set Theory}.
 Graduate Texts in Mathematics 156, Springer, 1995.
