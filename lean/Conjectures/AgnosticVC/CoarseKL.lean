@@ -21,37 +21,6 @@ private theorem pmf_toMeasure_trim {B : Type*} {m M : MeasurableSpace B}
     _ = p.toOuterMeasure s := @PMF.toMeasure_apply_eq_toOuterMeasure_apply B M p s (h s hs)
     _ = _ := (@PMF.toMeasure_apply_eq_toOuterMeasure_apply B m p s hs).symm
 
-private theorem pmf_bind_prod_toMeasure {A B : Type*} [MeasurableSpace A] [MeasurableSpace B]
-    (p : PMF A) (q : PMF B) :
-    (p.bind fun a => q.map (Prod.mk a)).toMeasure = p.toMeasure.prod q.toMeasure := by
-  classical
-  symm
-  apply Measure.prod_eq
-  intro S T hS hT
-  rw [PMF.toMeasure_bind_apply _ _ _ (hS.prod hT)]
-  have hmap (a : A) : (q.map (Prod.mk a)).toMeasure (S ×ˢ T) =
-      if a ∈ S then q.toMeasure T else 0 := by
-    rw [PMF.toMeasure_map_apply _ _ _ measurable_prodMk_left (hS.prod hT)]
-    by_cases ha : a ∈ S
-    · have he : Prod.mk a ⁻¹' (S ×ˢ T) = T := by ext b; simp [ha]
-      simp [ha, he]
-    · have he : Prod.mk a ⁻¹' (S ×ˢ T) = ∅ := by ext b; simp [ha]
-      simp [ha, he]
-  simp_rw [hmap]
-  rw [PMF.toMeasure_apply p hS, ← ENNReal.tsum_mul_right]
-  apply tsum_congr
-  intro a
-  by_cases ha : a ∈ S <;> simp [ha]
-
-/-- The PMF construction of the marginal product gives the product of the actual
-measure marginals on the prescribed measurable output space. -/
-theorem originalPoolMarginalProduct_toMeasure_eq_prod {H X : Type*} [MeasurableSpace H]
-    {n : ℕ} (A : (Fin n → X × Bool) → PMF H) (z : Pool n X) :
-    (originalPoolMarginalProduct A z).toMeasure =
-      ((originalPoolJoint A z).toMeasure.map Prod.fst).prod ((originalPoolJoint A z).toMeasure.map Prod.snd) := by
-  rw [PMF.toMeasure_map Prod.fst _ measurable_fst, PMF.toMeasure_map Prod.snd _ measurable_snd]
-  exact pmf_bind_prod_toMeasure _ _
-
 /-- Forgetting measurable output events can only decrease the fixed-pool KL divergence.
 In the discrete output space, the finite-support formula computes its exact value. -/
 theorem originalPoolKL_le_information_of_finite_support {H X : Type*} [mH : MeasurableSpace H]
