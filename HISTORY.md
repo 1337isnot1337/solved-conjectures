@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Finite score channels for agnostic VC learning
+
+Lean verifies the fixed-pool information bound of $`20s`$ nats for integer-noise signed support counts with overlap $`s`$, together with the argmax regret and eligibility bounds. A written completed-iid learner gives 12 nats and $`2/\sqrt n+2/n`$ empirical excess for disjoint two-point supports. [Finite Lean channel](lean/Conjectures/AgnosticVC/CompactScoreNoise.lean) · [Completed-iid proof](research/steinke-zakynthinou-agnostic-vc/completed-disjoint-support-learner.md)
+
 ## 2026-11-22 — Sharp uniform convergence for the universal-measurability counterexample
 
 Lean verifies that one VC-one class with disjoint two-point supports defeats every candidate empirical-rate constant when the scalar expected loss must be universally measurable on the sample space. The [same class has a measurable uniform-deviation envelope](lean/Conjectures/AgnosticVC/FiniteSupportUniform.lean) of expected value at most $`2/\sqrt n+2/n`$ for every iid law and sample size. The disproof uses a dependent pushforward to test universal measurability and all-sample accuracy at the resulting size. [Lean disproof](lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) · [Proof and scope](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md#universal-measurability-on-the-sample-space)

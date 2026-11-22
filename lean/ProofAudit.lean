@@ -50,6 +50,8 @@ run_cmd do
     `AgnosticVC.exists_finiteGroups_no_jointly_measurable_loss_learner,
     `AgnosticVC.exists_finitePairs_no_universally_measurable_loss_rate,
     `AgnosticVC.groupPredict_uniform_deviation_envelope,
+    `AgnosticVC.scoreNoise_boundedOverlap_channelInfo_le,
+    `AgnosticVC.scoreNoise_argmax_bounds,
     `AgnosticVC.steinkeZakynthinou_measurableInformation,
     `AgnosticVC.steinkeZakynthinou_kl_rates,
     `AgnosticVC.steinkeZakynthinou_kl_rates_countable,
