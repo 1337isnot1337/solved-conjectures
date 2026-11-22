@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Sharp uniform convergence for the universal-measurability counterexample
+
+Lean verifies that one VC-one class with disjoint two-point supports defeats every candidate empirical-rate constant when the scalar expected loss must be universally measurable on the sample space. The [same class has a measurable uniform-deviation envelope](lean/Conjectures/AgnosticVC/FiniteSupportUniform.lean) of expected value at most $`2/\sqrt n+2/n`$ for every iid law and sample size. The disproof uses a dependent pushforward to test universal measurability and all-sample accuracy at the resulting size. [Lean disproof](lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) · [Proof and scope](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md#universal-measurability-on-the-sample-space)
+
 ## 2026-11-22 — Randomized-learner formulation of the completed-iid obstruction
 
 The [finite-support disproof](lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) now directly quantifies over a learner with an arbitrary independent random seed. Measurability of its realized loss under the completed product experiment gives the scalar measurability used in the obstruction. All proper hypotheses have population loss one under the test law. [Proof and source scope](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md)

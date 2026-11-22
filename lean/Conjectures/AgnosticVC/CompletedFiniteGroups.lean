@@ -413,4 +413,102 @@ theorem exists_finiteGroups_no_jointly_measurable_loss_learner (c : ℝ) :
   simpa [r] using integral_mono (integrable_const (μ := ν) (⨅ h, empiricalError predict z h)) hi
     (fun ω => ciInf_le hBelow (A z ω))
 
+/-- Exactly half the training rows are copies of each of the two features. -/
+private def repeatPositivePair {Y : Type*} (k : ℕ) (s : Fin 2 → Y) :
+    Fin (2 * (k + 1)) → Y × Bool :=
+  fun i => (s (finProdFinEquiv.symm i).1, true)
+
+private theorem empiricalError_repeatPositivePair {Y J : Type*} (predict : J → Y → Bool)
+    (k : ℕ) (s : Fin 2 → Y) (h : J) :
+    empiricalError predict (repeatPositivePair k s) h = empiricalError predict (positiveLabels s) h := by
+  let e : Fin 2 × Fin (k + 1) ≃ Fin (2 * (k + 1)) := finProdFinEquiv
+  let f (i : Fin 2) : ℝ := if predict h (s i) = true then 0 else 1
+  have he : (∑ i : Fin (2 * (k + 1)), f (e.symm i).1) = (k + 1 : ℝ) * ∑ i, f i := by
+    rw [← Fintype.sum_equiv e (fun a => f a.1) (fun i => f (e.symm i).1)
+      (fun a => by simp), Fintype.sum_prod_type]
+    simp [mul_add]
+  simp only [empiricalError_eq_zeroOne, repeatPositivePair, positiveLabels]
+  change (∑ i : Fin (2 * (k + 1)), f (e.symm i).1) / ((2 * (k + 1) : ℕ) : ℝ) =
+    (∑ i, f i) / (2 : ℝ)
+  rw [he]
+  push_cast
+  field_simp
+
+/-- One VC-one class with supports of size at most two defeats every candidate
+absolute constant if the scalar expected loss is universally measurable on
+the sample space. The dependent probability law is used only to test
+measurability. The accuracy requirement is still pointwise on all samples. -/
+theorem exists_finitePairs_no_universally_measurable_loss_rate :
+    let X := Fin 2 × unitInterval
+    ∃ G : Set (Fin 2 → unitInterval),
+      let predict := groupPredict G
+      (∀ i, Set.InjOn (Function.eval i) G) ∧
+      Function.Injective predict ∧ Measurable (fun p : X × (Unit ⊕ G) => predict p.2 p.1) ∧
+      HasVCDimensionAtMost predict 1 ∧ ¬ HasVCDimensionAtMost predict 0 ∧
+      (∀ h, {x : X | predict h x = true}.Finite) ∧
+      ∀ c : ℝ, ∃ k : ℕ,
+        let m := 2 * (k + 1)
+        ¬ ∃ r : (Fin m → X × Bool) → ℝ,
+          (∀ ν : Measure (Fin m → X × Bool), [IsProbabilityMeasure ν] → AEMeasurable r ν) ∧
+          ∀ z, let opt := ⨅ h, empiricalError predict z h
+            opt ≤ r z ∧ r z ≤ opt + c * Real.sqrt (1 / (m : ℝ)) := by
+  intro X
+  classical
+  let D := sectorLaw 2 (volume : Measure unitInterval)
+  let : IsProbabilityMeasure D := sectorLaw_probability (by decide)
+  let : NullSingletonClass D := sectorLaw_nullSingleton
+  obtain ⟨G,hG,hi⟩ := exists_fullOuter_coordinateMatching (volume : Measure unitInterval) 2
+  have hne : G.Nonempty := nonempty_iff_ne_empty.mpr (by
+    intro h
+    rw [h, measure_empty] at hG
+    exact zero_ne_one hG)
+  refine ⟨G, hi, injective_groupPredict (by decide) hi, measurable_groupPredict G,
+    vcDimAtMostOne_groupPredict hi, vcDimNotAtMostZero_groupPredict (by decide) hne,
+    groupPredict_finite_support G, ?_⟩
+  intro c
+  obtain ⟨k,hk⟩ := exists_nat_gt (4 * c^2 + 2)
+  refine ⟨k,?_⟩
+  intro m
+  have hlarge : 4*c^2 < (m : ℝ) := by dsimp [m]; push_cast; linarith [sq_nonneg c]
+  have hm : 0 < (m : ℝ) := by dsimp [m]; positivity
+  have hsqrt : 2*c < Real.sqrt (m : ℝ) := by
+    by_contra! h
+    have hs := pow_le_pow_left₀ (Real.sqrt_nonneg (m : ℝ)) h 2
+    rw [Real.sq_sqrt hm.le] at hs
+    linarith only [hs,hlarge, show (2*c)^2 = 4*c^2 by ring]
+  have hrate : c * Real.sqrt (1 / (m : ℝ)) < 1/2 := by
+    rw [Real.sqrt_div (by norm_num), Real.sqrt_one, mul_one_div]
+    exact (div_lt_iff₀ (Real.sqrt_pos.mpr hm)).mpr (by linarith only [hsqrt])
+  rintro ⟨r,hr,hbound⟩
+  let μ := Measure.pi fun _ : Fin 2 => D
+  let rep : (Fin 2 → X) → Fin m → X × Bool := repeatPositivePair k
+  have hrep : Measurable rep := Measurable.of_eval fun i =>
+    (measurable_pi_apply ((finProdFinEquiv.symm i).1 : Fin 2)).prodMk measurable_const
+  let : IsProbabilityMeasure (μ.map rep) := (Measure.isProbabilityMeasure_map_iff hrep.aemeasurable).mpr
+    inferInstance
+  have hr' : AEMeasurable (fun s => r (rep s)) μ := (hr (μ.map rep)).comp_measurable hrep
+  let attach (x : Fin 2 → unitInterval) (i : Fin 2) : X := (i, x i)
+  have hfit : ∀ s ∈ attach '' G, ∃ h : Unit ⊕ G, ∀ i, groupPredict G h (s i) = true := by
+    rintro _ ⟨x,hx,rfl⟩
+    exact ⟨.inr ⟨x,hx⟩, fun i => (groupPredict_inr_true _ _ _).mpr rfl⟩
+  have hrel (s : Fin 2 → X) (h : Unit ⊕ G) :
+      empiricalError (groupPredict G) (rep s) h = empiricalError (groupPredict G) (positiveLabels s) h :=
+    empiricalError_repeatPositivePair (groupPredict G) k s h
+  obtain ⟨s,hs,w,hw⟩ := exists_bad_sample_of_aemeasurable_empirical_loss D (groupPredict G)
+    (groupPredict_countable_sections hi) (attach '' G) (positive_tagged_matching (by decide) G hG)
+    hfit _ hr' (fun s a ha => (le_ciInf (fun h => (ha h).trans_eq (hrel s h).symm)).trans (hbound (rep s)).1)
+  have hbelow : BddBelow (range (empiricalError (groupPredict G) (rep s))) := by
+    refine ⟨0,?_⟩
+    rintro _ ⟨h,rfl⟩
+    rw [empiricalError_eq_zeroOne]
+    positivity
+  have hmin := ciInf_le hbelow w
+  rw [hrel s w, hw] at hmin
+  have hacc := (hbound (rep s)).2
+  have hs' : (1 : ℝ) / 2 ≤ r (rep s) := by simpa only [Nat.cast_one] using (by
+    convert hs using 1
+    norm_num)
+  change r (rep s) ≤ (⨅ h, empiricalError (groupPredict G) (rep s) h) + c * Real.sqrt (1 / (m : ℝ)) at hacc
+  linarith only [hs',hmin,hacc,hrate]
+
 end AgnosticVC

@@ -31,6 +31,7 @@ public import Conjectures.AgnosticVC.TraceCoreExamples
 public import Conjectures.AgnosticVC.OrderedERM
 public import Conjectures.AgnosticVC.LabeledNullChain
 public import Conjectures.AgnosticVC.CompletedFiniteGroups
+public import Conjectures.AgnosticVC.FiniteSupportUniform
 public import Conjectures.AgnosticVC.IidOrderedRates
 public import Conjectures.AgnosticVC.IidConditionalKernel
 public import Conjectures.AgnosticVC.OrbitOutputExample

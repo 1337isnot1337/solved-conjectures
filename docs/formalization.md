@@ -8,6 +8,8 @@ The [combined theorem](../lean/Conjectures/AgnosticVC/Theorem.lean) proves the t
 
 The [local reconstruction theorem](../lean/Conjectures/AgnosticVC/LocalReconstructionMeasurable.lean) verifies both rates when countably many proper maps from at most $`k`$ observed features cover every finite trace. The [circle application](../lean/Conjectures/AgnosticVC/OrbitIidRates.lean) verifies a Borel learner on the same class for which globally ordered representatives fail completed measurability.
 
+The [fixed-class disproof](../lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) uses a VC-one class with two-point supports and requires universal measurability of the scalar expected empirical loss. Lean verifies a [measurable deviation envelope](../lean/Conjectures/AgnosticVC/FiniteSupportUniform.lean) with expectation at most $`2/\sqrt n+2/n`$ for the same class at every iid law and positive sample size.
+
 ## Steinke–Zakynthinou threshold formalization scope
 
 [The full proper threshold theorem](../lean/Conjectures/SteinkeZakynthinou.lean) is checked. The finite learner uses the rational shifted-tree rule, noise scales with ratio $3/4$, and label-first rounding. In the CMI proof, giving the two pool slots in a row consecutive tags keeps the learner's order on selected samples. Summing row charges under the common iid selected-sample law bounds the information on the augmented output. A finite rank code then decodes the successor or maximum into the learner's actual threshold.

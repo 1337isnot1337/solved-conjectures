@@ -35,6 +35,8 @@ Lean rules out globally Borel proper kernels even for a VC-one class on standard
 
 Lean verifies a counterexample to the empirical requirement for completed-iid learners on VC-one classes with finite positive supports. The stronger statement only requires measurability of the real-valued expected empirical loss on one completed iid law. The classes have distribution-uniform convergence in outer probability by the written proof. Their hypothesis parameter spaces carry the trace Borel sigma-algebra. [Finite-support counterexample](../../research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md) · [Lean disproof](../../lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean)
 
+A fixed VC-one class of two-point supports suffices when the scalar expected loss must be universally measurable on the sample space. The same class has a Lean-verified measurable envelope for uniform iid deviation with expectation at most $`2/\sqrt n+2/n`$ for every labeled law and positive sample size. [Fixed-class disproof](../../lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) · [Uniform-deviation bound](../../lean/Conjectures/AgnosticVC/FiniteSupportUniform.lean)
+
 For jointly Borel evaluation on standard Borel spaces, a written proof obtains both rates for every marginal dominated by a single reference law chosen in advance. The learner uses a countable subclass that misses at most $`2d`$ sample positions almost surely under that law, with a proper empirical minimizer on the exceptional inputs. [Dominated-marginal theorem](../../research/steinke-zakynthinou-agnostic-vc/dominated-marginals.md)
 
 ## Proof and verification

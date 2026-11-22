@@ -397,6 +397,12 @@
     }
   },
   "jointly_measurable_loss_learner": {
+    "github_actions": {
+      "headSha": "39eed01605ef31fcd27e611d6614340143ff5b02",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/45076930094"
+    },
     "theorem": "AgnosticVC.exists_finiteGroups_no_jointly_measurable_loss_learner",
     "scope": "Failure of the empirical rate for a proper learner with an arbitrary independent seed, measurable realized loss on the completed product experiment, and ordinary seed-wise expectations on every fixed sample.",
     "local_command": "python3 scripts/verify_agnostic_vc.py",
@@ -412,6 +418,28 @@
       "modules": 103,
       "required": 105,
       "theorems": 1300,
+      "tag": "passed"
+    }
+  },
+  "universal_measurability_with_sharp_uniform_convergence": {
+    "theorems": [
+      "AgnosticVC.exists_finitePairs_no_universally_measurable_loss_rate",
+      "AgnosticVC.groupPredict_uniform_deviation_envelope"
+    ],
+    "scope": "One VC-one class with two-point supports defeats all candidate constants under universal measurability of scalar expected loss. The same class has a measurable deviation envelope of expected value at most 2/sqrt(n) + 2/n on every iid law.",
+    "local_command": "python3 scripts/verify_agnostic_vc.py",
+    "local_strict_elaboration": "passed",
+    "local_kernel_replayed_modules": 104,
+    "local_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1678,
+      "modules": 104,
+      "required": 107,
+      "theorems": 1329,
       "tag": "passed"
     }
   }
