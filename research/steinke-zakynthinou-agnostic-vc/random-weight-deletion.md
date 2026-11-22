@@ -11,6 +11,8 @@ Work in the sufficiently large universal range of $`t`$ where $`m_j\le n`$. A fi
 
 For any fixed sample the expected unweighted excess mistake count is $`O(\sqrt{nd})`$. Indeed, the entropy allowances sum to $`O(\sqrt{nd})`$ as in the earlier proof. The extra cost of the random weights is at most twice $`\mathbb E\sup_h|\sum_i(U_i-1)\ell_i(h)|=O(\sqrt{nd})`$. To see the latter, write the centered weights as independent random signs times independent amplitudes at most one. Conditional on the amplitudes the loss vectors have empirical normalized $`L^2`$ covering log cardinality $`O(d\log(C/r))`$ at radius $`r`$, by the [VC packing argument](known-feature-marginal.md#a-fixed-tree-of-classifiers); multiplying coordinates by bounded amplitudes only decreases distances. Chaining successive $`2^{-j}`$ nets of loss vectors, the sign expectation of the maximum absolute increment at level $`j`$ is $`O(\sqrt n\,2^{-j}\sqrt{d(j+1)})`$ by the sign MGF and a union bound. Add the $`O(\sqrt n)`$ contribution of one starting vector and sum the convergent series. This is a pointwise empirical guarantee.
 
+The [subsequent proposed proof](../../results/steinke-zakynthinou-agnostic-vc/PROOF.md) supplies the matrix estimate with a revised parameter schedule and proves the deletion bound for that schedule. The following sections record the earlier reduction.
+
 ## The deterministic quantity
 
 Write $`N=n+1`$ and fix any block $`T`$ of $`N`$ observations. On its finite canonical support take an interior probability law $`q`$. Work on mean-zero $`L^2(q)`$, with $`f_i=h(x_i)-\mathbb E_q h(x_i)`$ and $`P_J`$ conditional expectation onto the joint predictions on $`J`$. Set

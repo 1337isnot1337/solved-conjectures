@@ -92,6 +92,8 @@ jobs:
           python audit.py
           python border.py
           python automorphisms.py
+      - name: Check the agnostic VC projection estimates
+        run: python results/steinke-zakynthinou-agnostic-vc/verify.py
       - name: Verify partial results for Frankl, Lonely Runner and Erdős–Gyárfás
         run: |
           python -m pip install scipy==1.15.3

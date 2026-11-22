@@ -1,5 +1,9 @@
 # Verification
 
+## Steinke–Zakynthinou’s agnostic VC learning conjecture
+
+The [written proof](../results/steinke-zakynthinou-agnostic-vc/PROOF.md) states both guarantees and the measurable-selection convention. Run `python3 results/steinke-zakynthinou-agnostic-vc/verify.py` with NumPy for a finite check of the operator estimates. Full Lean verification is pending.
+
 ## Steinke–Zakynthinou threshold proof
 
 The [complete written theorem](../results/steinke-zakynthinou-thresholds/PROOF.md) passed independent tree, properization, and coordinator reviews. Run `python3 results/steinke-zakynthinou-thresholds/verify.py --max-n 6` for the supplementary exact folded-indexing and inactive-node checks. These finite checks do not prove the uniform CMI or accuracy theorem. The [receipt](../results/steinke-zakynthinou-thresholds/verification.json) records the locally completed run; hosted workflow validation is separate. No Lean verification is claimed.
