@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Steinke–Zakynthinou’s agnostic VC learning conjecture
+
+[Partial Lean formalization](../lean/Conjectures/AgnosticVC.lean) includes the weighted VC one-inclusion inequality, the positive unique finite entropy optimizer, its comparator bound, and information and exchangeability lemmas. Both rate guarantees must still be proved for one proper learner. [Written proof](../results/steinke-zakynthinou-agnostic-vc/PROOF.md)
+
 ## Steinke–Zakynthinou threshold theorem
 
 [Lean proves the proper real-threshold case of Conjecture 6](../lean/Conjectures/SteinkeZakynthinou.lean). For every positive sample size the same measurable learner works for every iid labeled distribution and every fixed sample. Its outputs are finite closed thresholds. Lean bounds original paired-pool CMI by 300 nats or 600 bits and expected empirical excess by $`512/\sqrt n`$, including arbitrary ties and label noise. The source statement in bits with the infimum over all thresholds is `SteinkeZakynthinou.properThresholdTheorem_bits`. The written proof supplies sharper information constants and separate efficiency and determinism extensions. All 28 modules in the Lean theorem’s project import closure passed the pinned kernel replay. The standalone audit checked 806 declarations against the standard axiom whitelist.

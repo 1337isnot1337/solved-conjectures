@@ -1,0 +1,42 @@
+name: Lean agnostic VC learning
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lean-agnostic-vc.yml'
+      - 'lean/Conjectures/AgnosticVC.lean'
+      - 'lean/Conjectures/AgnosticVC/**'
+      - 'lean/Conjectures/SteinkeZakynthinou/**'
+      - 'lean/lean-toolchain'
+      - 'lean/lakefile.toml'
+      - 'lean/lake-manifest.json'
+      - 'scripts/verify_agnostic_vc.py'
+      - 'scripts/audit_lean_all_owned.py'
+      - 'scripts/replay_lean.py'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: false
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Build, audit, and replay the agnostic VC formalization
+        run: python3 scripts/verify_agnostic_vc.py --fetch-cache

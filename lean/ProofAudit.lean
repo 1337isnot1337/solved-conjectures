@@ -9,6 +9,12 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `AgnosticVC.channelInfo_le_deletionCharges,
+    `AgnosticVC.integral_le_of_permMean_le,
+    `AgnosticVC.empirical_le_comparator,
+    `AgnosticVC.minimizer_pos,
+    `AgnosticVC.minimizer_unique,
+    `AgnosticVC.weighted_oneInclusionEdges_le,
     `SteinkeZakynthinou.properThresholdTheorem,
     `SteinkeZakynthinou.properThresholdTheorem_bits,
     `SteinkeZakynthinou.shiftedTreeLearner_expectedLoss_le_inf,

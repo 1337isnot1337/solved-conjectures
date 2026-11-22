@@ -1,6 +1,6 @@
 # Steinke–Zakynthinou’s agnostic VC learning conjecture
 
-**Proposed written proof. Full Lean verification is pending.** Thomas Steinke and Lydia Zakynthinou asked whether, for every binary class of VC dimension $`d\ge1`$ and sample size $`n\ge d`$, a learner can choose a classifier from the given class while meeting both of the following guarantees.
+**Proposed written proof with partial Lean verification.** Thomas Steinke and Lydia Zakynthinou asked whether, for every binary class of VC dimension $`d\ge1`$ and sample size $`n\ge d`$, a learner can choose a classifier from the given class while meeting both of the following guarantees.
 
 - On every labeled sample, its expected fraction of mistakes is within $`O(\sqrt{d/n})`$ of the best classifier in the class.
 - For every iid data distribution, the information its entire output reveals about which examples from a paired supersample were chosen is $`O(d)`$.
@@ -11,4 +11,4 @@ The authors’ published offer is **US$500** for a proof of Conjecture 6. The re
 
 ## Verification
 
-The [finite diagnostic](verify.py) checks the overlap, inverse and residual-variance bounds on a weighted, noncommuting example and checks the geometric-series constant exactly. The all-class argument is in the written proof. Full Lean verification of the stated learner, both guarantees and the population interpretation is the next goal. [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/240)
+The [finite diagnostic](verify.py) checks the overlap, inverse and residual-variance bounds on a weighted, noncommuting example and checks the geometric-series constant exactly. The all-class argument is in the written proof. Lean verifies existence, uniqueness and strict positivity of the finite optimizer, its empirical comparison, the weighted one-inclusion edge inequality, the selector-information bound from deletion distances, and the transfer of a permutation-averaged bound to iid sampling. The full learner theorem remains in progress. [Lean modules](../../lean/Conjectures/AgnosticVC/) · [Verification guide](../../docs/verification.md#steinkezakynthinous-agnostic-vc-learning-conjecture) [Tracking issue](https://github.com/1337isnot1337/solved-conjectures/issues/240)

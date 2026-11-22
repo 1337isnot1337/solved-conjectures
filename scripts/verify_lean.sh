@@ -258,6 +258,12 @@ modules=(
   Conjectures.HanSabagCounterexample
   Conjectures.ZhangDeletion
   Conjectures.ZhuJacobiStirling
+  Conjectures.AgnosticVC.Exchangeability
+  Conjectures.AgnosticVC.Information
+  Conjectures.AgnosticVC.Optimizer
+  Conjectures.AgnosticVC.OptimizerInterior
+  Conjectures.AgnosticVC.VC
+  Conjectures.AgnosticVC
   Conjectures.SteinkeZakynthinou.Adjacency
   Conjectures.SteinkeZakynthinou.AdjacentInformation
   Conjectures.SteinkeZakynthinou.Alignment

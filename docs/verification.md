@@ -2,7 +2,7 @@
 
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
-The [written proof](../results/steinke-zakynthinou-agnostic-vc/PROOF.md) states both guarantees and the measurable-selection convention. Run `python3 results/steinke-zakynthinou-agnostic-vc/verify.py` with NumPy for a finite check of the operator estimates. Full Lean verification is pending.
+The [written proof](../results/steinke-zakynthinou-agnostic-vc/PROOF.md) states both guarantees and the measurable-selection convention. Run `python3 results/steinke-zakynthinou-agnostic-vc/verify.py` with NumPy for a finite check of the operator estimates. The [Lean proof modules](../lean/Conjectures/AgnosticVC/) cover finite optimization, the VC edge bound and information inequalities. With the pinned toolchain on PATH, run `python3 scripts/verify_agnostic_vc.py --fetch-cache` from the repository root to build, strictly elaborate, audit all declarations in the import closure, and replay the kernel. The complete learner theorem remains open in Lean.
 
 ## Steinke–Zakynthinou threshold proof
 

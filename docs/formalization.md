@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Steinke–Zakynthinou’s agnostic VC learning conjecture
+
+The [general VC proof](../results/steinke-zakynthinou-agnostic-vc/PROOF.md) is being formalized in [AgnosticVC](../lean/Conjectures/AgnosticVC/). The target quantifies over all allowed classes, every labeled sample and every iid distribution. It uses the complete output hypothesis in the selector-information bound. The [verification guide](verification.md#steinkezakynthinous-agnostic-vc-learning-conjecture) records the checked scope.
+
 ## Steinke–Zakynthinou threshold formalization scope
 
 [The full proper threshold theorem](../lean/Conjectures/SteinkeZakynthinou.lean) is checked. The finite learner uses the rational shifted-tree rule, noise scales with ratio $3/4$, and label-first rounding. In the CMI proof, giving the two pool slots in a row consecutive tags keeps the learner's order on selected samples. Summing row charges under the common iid selected-sample law bounds the information on the augmented output. A finite rank code then decodes the successor or maximum into the learner's actual threshold.
