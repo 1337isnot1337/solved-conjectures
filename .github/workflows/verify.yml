@@ -167,6 +167,8 @@ jobs:
           python3 results/circular-index-upper-half-circulants/verify_part2.py
       - name: Check the upper-half graphs for maximum degree 2 mod 4
         run: python3 results/circular-index-upper-half-delta-2-mod-4/verify.py
+      - name: Check the upper-half graphs for maximum degree 3 mod 4
+        run: python3 results/circular-index-upper-half-delta-3-mod-4/verify.py
       - name: Verify the five-speed loneliness spectrum
         run: python3 results/five-speed-spectrum/verify.py
       - name: Verify tight six-speed sets and seven-coordinate critical planes

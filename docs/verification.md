@@ -317,6 +317,7 @@ python3 results/haralambis-three-differences/verify.py
 python3 results/circular-index-upper-half-circulants/verify.py
 python3 results/circular-index-upper-half-circulants/verify_part2.py
 python3 results/circular-index-upper-half-delta-2-mod-4/verify.py
+python3 results/circular-index-upper-half-delta-3-mod-4/verify.py
 python3 results/five-speed-spectrum/verify.py
 python3 results/tight-six-speeds/verify.py
 python3 results/six-speed-spectrum/verify.py
@@ -342,6 +343,10 @@ Run `python3 results/circular-index-upper-half-circulants/verify.py` and `python
 ## Graphs with circular chromatic index in the upper half for Δ ≡ 2 mod 4
 
 Run `python3 results/circular-index-upper-half-delta-2-mod-4/verify.py` with assertions enabled. The standard-library script builds the base matchings of Section 3 for `6 <= g <= 60` (the `g = 6` base from `certificates.json`), checks their lengths, the partition of the circulant into `2n` classes, the windows of the base colouring and the two insertion blocks, and then checks for both final graphs simplicity, `Δ`, the `(p,3)`-colouring per vertex from the definition and `|E|/((n-1)/2) = p/3 = Δ+2/3`. Part 2 rechecks the `(3n-1,3)`-colourings of `K_n-tK_2` for `n = 11, 15, 19, 23, 27`, and five negative controls must be rejected. The referee scripts in `review/` are not run by CI; `indep_check.py` and `mut_test.py` need `numpy` and `networkx`. The [written proof](../results/circular-index-upper-half-delta-2-mod-4/PROOF.md) covers every `g >= 6`; no Lean verification is included.
+
+## Graphs with circular chromatic index in the upper half for Δ ≡ 3 mod 4
+
+Run `python3 results/circular-index-upper-half-delta-3-mod-4/verify.py` with assertions enabled. The standard-library script builds the base matchings and the three insertion blocks of Sections 4 and 5 for `15 <= g <= 60` and checks the claimed lengths. For each graph it checks that the base matchings are perfect on `W_0`, `W_1` with `2g` distinct lengths, that every block class is a matching on the vertex set it copies, simplicity, that the graph contains `C_n(S)`, `Δ = 4g+3`, `|E| = 2gn+9g`, the `(2n+9,3)`-colouring per vertex from the definition and `|E|/((n-1)/2) = p/3 = Δ+2/3`. It runs the same checks on the nine certificates of Proposition B (`6 <= g <= 14`) from `certificates.json`, and six negative controls must be rejected. The independent re-check `indep_check.py` and the referee scripts in `review/` use only the standard library but are not run by CI. The [written proof](../results/circular-index-upper-half-delta-3-mod-4/PROOF.md) covers every `g >= 15`; no Lean verification is included.
 
 ## Perron root of permanental compounds
 
