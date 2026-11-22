@@ -48,6 +48,7 @@ run_cmd do
     `AgnosticVC.averagedProjection_has_sqrt_overlap,
     `AgnosticVC.hasMeasurableCanonicalRepresentatives_of_countable,
     `AgnosticVC.hasMeasurableCanonicalRepresentatives_of_countable_domain,
+    `AgnosticVC.hasMeasurableCanonicalRepresentatives_of_countable_trace_core,
     `AgnosticVC.measurable_properLearner_toMeasure,
     `AgnosticVC.properLearner_cmi_of_integrable,
     `AgnosticVC.properLearner_original_cmi_le_of_aemeasurable,
