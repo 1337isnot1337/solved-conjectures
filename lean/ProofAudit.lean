@@ -41,6 +41,7 @@ run_cmd do
     `AgnosticVC.exists_fullOuter_coordinateMatching,
     `AgnosticVC.exists_atMostOneHit_completed_kernel,
     `AgnosticVC.exists_completed_finiteGroups_no_rate,
+    `AgnosticVC.exists_finiteGroups_no_measurable_loss_rate,
     `AgnosticVC.steinkeZakynthinou_measurableInformation,
     `AgnosticVC.steinkeZakynthinou_kl_rates,
     `AgnosticVC.steinkeZakynthinou_kl_rates_countable,

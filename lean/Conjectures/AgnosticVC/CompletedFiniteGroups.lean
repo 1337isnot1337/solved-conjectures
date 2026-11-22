@@ -225,18 +225,40 @@ theorem exists_completed_finiteGroup_example (n : ℕ) :
   rintro _ ⟨x,hx,rfl⟩
   exact ⟨.inr ⟨x,hx⟩, fun i => (groupPredict_inr_true _ _ _).mpr rfl⟩
 
+private theorem positiveLabels_measurePreserving {Y : Type*} [MeasurableSpace Y]
+    (D : Measure Y) [IsProbabilityMeasure D] (m : ℕ) :
+    MeasurePreserving (positiveLabels (n := m))
+      (Measure.pi fun _ : Fin m => D) (Measure.pi fun _ : Fin m => D.map (fun y => (y,true))) := by
+  have hlabel : MeasurePreserving (fun y : Y => (y,true)) D (D.map (fun y => (y,true))) :=
+    ⟨measurable_id.prodMk measurable_const,rfl⟩
+  exact measurePreserving_pi _ _ (fun _ => hlabel)
+
 private theorem measurable_positiveLabels_completed {Y : Type*} [MeasurableSpace Y]
     (D : Measure Y) [IsProbabilityMeasure D] (m : ℕ) :
     Measurable (α := NullMeasurableSpace (Fin m → Y) (Measure.pi fun _ : Fin m => D))
       (β := NullMeasurableSpace (Fin m → Y × Bool)
         (Measure.pi fun _ : Fin m => D.map (fun y => (y,true)))) positiveLabels := by
-  have hlabel : MeasurePreserving (fun y : Y => (y,true)) D (D.map (fun y => (y,true))) :=
-    ⟨measurable_id.prodMk measurable_const,rfl⟩
-  have hpi : MeasurePreserving (positiveLabels (n := m))
-      (Measure.pi fun _ : Fin m => D) (Measure.pi fun _ : Fin m => D.map (fun y => (y,true))) :=
-    measurePreserving_pi _ _ (fun _ => hlabel)
   intro _ hs
-  exact NullMeasurableSet.preimage hs hpi.quasiMeasurePreserving
+  exact NullMeasurableSet.preimage hs (positiveLabels_measurePreserving D m).quasiMeasurePreserving
+
+private theorem exists_finiteGroups_rate_failure (c : ℝ) :
+    ∃ n : ℕ, c * Real.sqrt (1 / ((n + 1 : ℕ) : ℝ)) < 1 - 1 / ((n + 1 : ℕ) : ℝ) := by
+  obtain ⟨n,hn⟩ := exists_nat_gt (4*c^2 + 2)
+  let m : ℝ := ((n + 1 : ℕ) : ℝ)
+  have hm : 2 < m := by dsimp [m]; push_cast; nlinarith [sq_nonneg c]
+  have hc : 4*c^2 < m := by dsimp [m]; push_cast; linarith
+  have hmr : 0 < m := by linarith
+  have hsqrt : 2*c < Real.sqrt m := by
+    by_contra! h
+    have hs := pow_le_pow_left₀ (Real.sqrt_nonneg m) h 2
+    rw [Real.sq_sqrt hmr.le] at hs
+    nlinarith
+  refine ⟨n, ?_⟩
+  change c * Real.sqrt (1 / m) < 1 - 1 / m
+  rw [Real.sqrt_div (by norm_num), Real.sqrt_one, mul_one_div]
+  have hleft : c / Real.sqrt m < 1/2 := (div_lt_iff₀ (Real.sqrt_pos.mpr hmr)).mpr (by linarith)
+  have hright : 1 / m < 1/2 := (div_lt_iff₀ hmr).mpr (by linarith)
+  linarith
 
 /-- For every candidate universal constant, one jointly measurable VC-one
 class of disjoint finite supports defeats the empirical accuracy requirement
@@ -255,21 +277,7 @@ theorem exists_completed_finiteGroups_no_rate (c : ℝ) :
             (Measure.pi fun _ : Fin (n + 1) => labeled)) (Unit ⊕ G)) [IsMarkovKernel K],
           ¬ ∀ z, (∫ h, empiricalError predict z h ∂K z) ≤
             (⨅ h, empiricalError predict z h) + c * Real.sqrt (1 / ((n + 1 : ℕ) : ℝ))) := by
-  obtain ⟨n,hn⟩ := exists_nat_gt (4*c^2 + 2)
-  let m : ℝ := ((n + 1 : ℕ) : ℝ)
-  have hm : 2 < m := by dsimp [m]; push_cast; nlinarith [sq_nonneg c]
-  have hc : 4*c^2 < m := by dsimp [m]; push_cast; linarith
-  have hmr : 0 < m := by linarith
-  have hsqrt : 2*c < Real.sqrt m := by
-    by_contra! h
-    have hs := pow_le_pow_left₀ (Real.sqrt_nonneg m) h 2
-    rw [Real.sq_sqrt hmr.le] at hs
-    nlinarith
-  have hrate : c * Real.sqrt (1 / m) < 1 - 1 / m := by
-    rw [Real.sqrt_div (by norm_num), Real.sqrt_one, mul_one_div]
-    have hleft : c / Real.sqrt m < 1/2 := (div_lt_iff₀ (Real.sqrt_pos.mpr hmr)).mpr (by linarith)
-    have hright : 1 / m < 1/2 := (div_lt_iff₀ hmr).mpr (by linarith)
-    linarith
+  obtain ⟨n,hrate⟩ := exists_finiteGroups_rate_failure c
   refine ⟨n, ?_⟩
   let X := Fin (n + 1) × unitInterval
   let D := sectorLaw (n + 1) (volume : Measure unitInterval)
@@ -293,8 +301,69 @@ theorem exists_completed_finiteGroups_no_rate (c : ℝ) :
   rw [hfit] at hmin
   have hbound := hacc z
   change 1 - 1 / (n + 1 : ℝ) ≤ (∫ h, empiricalError (groupPredict G) z h ∂K z) at hs
-  dsimp [m] at hrate
   push_cast at hrate hbound
   linarith only [hs,hrate,hbound,hmin]
+
+/-- For every candidate constant, the empirical excess rate is impossible for
+an almost-everywhere measurable real-valued expected loss. The lower inequality
+is automatic for any random proper output. The statement puts no measurability
+condition on the output map or on the choice of hypothesis sigma-algebra. -/
+theorem exists_finiteGroups_no_measurable_loss_rate (c : ℝ) :
+    ∃ n : ℕ, let X := Fin (n + 1) × unitInterval
+      let D := sectorLaw (n + 1) (volume : Measure unitInterval)
+      let labeled := D.map (fun x => (x,true))
+      ∃ G : Set (Fin (n + 1) → unitInterval),
+        let predict := groupPredict G
+        IsProbabilityMeasure labeled ∧ Function.Injective predict ∧
+        Measurable (fun p : X × (Unit ⊕ G) => predict p.2 p.1) ∧
+        HasVCDimensionAtMost predict 1 ∧ ¬ HasVCDimensionAtMost predict 0 ∧
+        (∀ h, {x : X | predict h x = true}.Finite) ∧
+        ¬ ∃ r : (Fin (n + 1) → X × Bool) → ℝ,
+          AEMeasurable r (Measure.pi fun _ : Fin (n + 1) => labeled) ∧
+          ∀ z, let opt := ⨅ h, empiricalError predict z h
+            opt ≤ r z ∧ r z ≤ opt + c * Real.sqrt (1 / ((n + 1 : ℕ) : ℝ)) := by
+  obtain ⟨n,hrate⟩ := exists_finiteGroups_rate_failure c
+  refine ⟨n, ?_⟩
+  let X := Fin (n + 1) × unitInterval
+  let D := sectorLaw (n + 1) (volume : Measure unitInterval)
+  let : IsProbabilityMeasure D := sectorLaw_probability (Nat.succ_pos n)
+  let : NullSingletonClass D := sectorLaw_nullSingleton
+  have hlabeled : IsProbabilityMeasure (D.map (fun x : X => (x,true))) :=
+    (Measure.isProbabilityMeasure_map_iff (measurable_id.prodMk measurable_const).aemeasurable).2
+      inferInstance
+  obtain ⟨G,hG,hi⟩ := exists_fullOuter_coordinateMatching (volume : Measure unitInterval) (n + 1)
+  have hne : G.Nonempty := nonempty_iff_ne_empty.mpr (by
+    intro h
+    rw [h, measure_empty] at hG
+    exact zero_ne_one hG)
+  refine ⟨G, hlabeled, injective_groupPredict (Nat.succ_pos n) hi, measurable_groupPredict G,
+    vcDimAtMostOne_groupPredict hi, vcDimNotAtMostZero_groupPredict (Nat.succ_pos n) hne,
+    groupPredict_finite_support G, ?_⟩
+  rintro ⟨r,hr,hbound⟩
+  let attach (x : Fin (n + 1) → unitInterval) (i : Fin (n + 1)) : X := (i, x i)
+  have hfit : ∀ s ∈ attach '' G, ∃ h : Unit ⊕ G, ∀ i, groupPredict G h (s i) = true := by
+    rintro _ ⟨x,hx,rfl⟩
+    exact ⟨.inr ⟨x,hx⟩, fun i => (groupPredict_inr_true _ _ _).mpr rfl⟩
+  have hlabel := positiveLabels_measurePreserving D (n + 1)
+  have hr' : AEMeasurable (fun s => r (positiveLabels s)) (Measure.pi fun _ : Fin (n + 1) => D) := by
+    rw [← hlabel.map_eq] at hr
+    exact hr.comp_measurable hlabel.measurable
+  obtain ⟨s,hs,h,hh⟩ := exists_bad_sample_of_aemeasurable_empirical_loss D (groupPredict G)
+    (groupPredict_countable_sections hi) (attach '' G)
+    (positive_tagged_matching (Nat.succ_pos n) G hG) hfit _ hr'
+    (fun s a ha => (le_ciInf ha).trans (hbound (positiveLabels s)).1)
+  let z := positiveLabels s
+  have hbelow : BddBelow (range (empiricalError (groupPredict G) z)) := by
+    refine ⟨0,?_⟩
+    rintro _ ⟨k,rfl⟩
+    rw [empiricalError_eq_zeroOne]
+    positivity
+  have hmin := ciInf_le hbelow h
+  change empiricalError (groupPredict G) z h = 0 at hh
+  rw [hh] at hmin
+  have hacc := (hbound z).2
+  change 1 - 1 / (n + 1 : ℝ) ≤ r z at hs
+  push_cast at hrate hacc
+  linarith only [hs,hrate,hacc,hmin]
 
 end AgnosticVC

@@ -260,6 +260,12 @@
     }
   },
   "framework_conjecture_4_18": {
+    "github_actions": {
+      "headSha": "460d7d7ee512722a4f0c3dc5a08c8f26c1a3cbdb",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/45046086129"
+    },
     "theorem": "AgnosticVC.steinkeZakynthinou_framework_conjecture418",
     "scope": "Both guarantees of Conjecture 4.18 in arXiv:2001.09122v3 for every positive sample size, with a common constant of 19712 in nats.",
     "local_command": "python3 scripts/verify_agnostic_vc.py",
@@ -327,6 +333,29 @@
       "declarations": 1521,
       "required": 97,
       "theorems": 1217,
+      "tag": "passed"
+    }
+  },
+  "completed_scalar_loss": {
+    "theorems": [
+      "AgnosticVC.exists_iid_sample_avoiding_countable_sections",
+      "AgnosticVC.exists_bad_sample_of_aemeasurable_empirical_loss",
+      "AgnosticVC.exists_finiteGroups_no_measurable_loss_rate"
+    ],
+    "scope": "For every candidate constant, the empirical requirement fails when only the scalar expected empirical loss is measurable under the exhibited completed iid law.",
+    "local_command": "python3 scripts/verify_agnostic_vc.py",
+    "local_strict_elaboration": "passed",
+    "local_kernel_replayed_modules": 96,
+    "local_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1527,
+      "modules": 96,
+      "required": 99,
+      "theorems": 1223,
       "tag": "passed"
     }
   }

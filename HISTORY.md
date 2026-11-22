@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Scalar expected-loss obstruction for agnostic VC learning
+
+The [Lean disproof](lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) for completed iid laws now needs only measurability of the real-valued expected empirical loss. For any proposed universal constant the exhibited VC-one class forces this quantity to be nonmeasurable if the empirical excess bound holds on every sample. The scalar obstruction is independent of the output sigma-algebra. [Proof and scope](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md)
+
 ## 2026-11-22 — Distribution-free agnostic VC conjecture in the framework paper
 
 Lean verifies [Conjecture 4.18](https://arxiv.org/pdf/2001.09122v3) with common constant $`19{,}712`$ for every positive sample size and arbitrary hypothesis classes of finite positive VC dimension. The [theorem](lean/Conjectures/AgnosticVC/FixedPairing.lean) gives both the bound on whole-output selector information for every fixed paired pool and the samplewise empirical rate. It includes $`n<d`$ by using a constant proper learner. The COLT formulation uses the iid CMI and its [measurability scope](results/steinke-zakynthinou-agnostic-vc/SCOPE.md) is recorded separately.
