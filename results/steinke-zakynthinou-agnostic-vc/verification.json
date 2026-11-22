@@ -61,5 +61,35 @@
       "tag": "passed",
       "theorems": 902
     }
+  },
+  "scope_obstructions": {
+    "github_actions": {
+      "conclusion": "success",
+      "headSha": "5bc0d6a223adfea55b073bfea735d9aadfe479b6",
+      "status": "completed",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/44985489887"
+    },
+    "all_owned_declaration_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1172,
+      "modules": 68,
+      "private_declarations": 473,
+      "raw_declarations": 1172,
+      "required": 69,
+      "tag": "passed",
+      "theorems": 954
+    },
+    "kernel_replayed_modules": 68,
+    "theorems": [
+      "AgnosticVC.exists_order_of_countable_trace_core",
+      "AgnosticVC.exists_unitInterval_singleton_obstruction",
+      "AgnosticVC.exists_standardBorel_vcOne_no_accurateKernel",
+      "AgnosticVC.borelPair_no_accurateKernel_rate"
+    ],
+    "manuscript": "paper.pdf"
   }
 }
