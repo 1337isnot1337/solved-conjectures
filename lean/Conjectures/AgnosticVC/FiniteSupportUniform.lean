@@ -86,7 +86,8 @@ private theorem iidDeviation_sub (D : Measure Z) {n : ℕ} {f g : Z → ℝ}
   simp only [iidDeviation, integral_sub hf hg, Finset.sum_sub_distrib, sub_div]
   ring
 
-private theorem iid_no_repeat_at_null_singletons {X : Type*} [MeasurableSpace X] [MeasurableEq X]
+/-- Two distinct iid rows cannot share a feature with zero marginal mass. -/
+theorem iid_no_repeat_at_null_singletons {X : Type*} [MeasurableSpace X] [MeasurableEq X]
     (D : Measure (X × Bool)) [IsProbabilityMeasure D] (n : ℕ) :
     ∀ᵐ s ∂(Measure.pi fun _ : Fin n => D), ∀ i j : Fin n, i ≠ j →
       (D.map Prod.fst) {(s i).1} = 0 → (s i).1 ≠ (s j).1 := by

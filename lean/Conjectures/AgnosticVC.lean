@@ -33,6 +33,8 @@ public import Conjectures.AgnosticVC.LabeledNullChain
 public import Conjectures.AgnosticVC.CompletedFiniteGroups
 public import Conjectures.AgnosticVC.FiniteSupportUniform
 public import Conjectures.AgnosticVC.CompactScoreNoise
+public import Conjectures.AgnosticVC.RepeatedFeatureReadout
+public import Conjectures.AgnosticVC.ConditionalJointObstruction
 public import Conjectures.AgnosticVC.IidOrderedRates
 public import Conjectures.AgnosticVC.IidConditionalKernel
 public import Conjectures.AgnosticVC.OrbitOutputExample

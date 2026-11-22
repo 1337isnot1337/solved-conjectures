@@ -356,6 +356,8 @@ modules=(
   Conjectures.AgnosticVC.CompletedFiniteGroups
   Conjectures.AgnosticVC.FiniteSupportUniform
   Conjectures.AgnosticVC.CompactScoreNoise
+  Conjectures.AgnosticVC.RepeatedFeatureReadout
+  Conjectures.AgnosticVC.ConditionalJointObstruction
   Conjectures.AgnosticVC.IidNullChainExample
   Conjectures.AgnosticVC.LabeledNullChain
   Conjectures.AgnosticVC

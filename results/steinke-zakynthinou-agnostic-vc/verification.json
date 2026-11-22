@@ -470,5 +470,28 @@
       "theorems": 1396,
       "tag": "passed"
     }
+  },
+  "completed_iid_conditional_joint_obstruction": {
+    "theorems": [
+      "AgnosticVC.exists_finiteGroups_no_measurable_selector_joint_rate",
+      "AgnosticVC.aemeasurable_repeatedFeature_readout",
+      "AgnosticVC.iid_null_finiteSupport_hits_le"
+    ],
+    "scope": "The literal iid finite-support disproof assumes only that the actual conditional selector/output law has a kernel on the completed iid pool, with almost-everywhere agreement. It allows arbitrary pointwise output measures. Separate repeated-feature tools give measurable readouts and bounds on hits on null finite supports.",
+    "local_command": "python3 scripts/verify_agnostic_vc.py",
+    "local_strict_elaboration": "passed",
+    "local_kernel_replayed_modules": 107,
+    "local_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1768,
+      "modules": 107,
+      "required": 112,
+      "theorems": 1410,
+      "tag": "passed"
+    }
   }
 }

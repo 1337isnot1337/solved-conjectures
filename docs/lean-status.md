@@ -14,6 +14,8 @@ For a single VC-one class of disjoint two-point supports, Lean verifies that the
 
 The [finite score-channel proof](../lean/Conjectures/AgnosticVC/CompactScoreNoise.lean) checks the integer-noise Hellinger estimate, the argmax regret, and a fixed-pool bound of $`20s`$ nats for finite support lists of pointwise overlap $`s`$. The completed-iid measurability argument for arbitrary bounded-overlap classes remains a written proof.
 
+The [conditional joint-law disproof](../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) derives the literal finite-support obstruction from measurability of the actual conditional selector/output kernel used for iid CMI. The [repeated-feature lemmas](../lean/Conjectures/AgnosticVC/RepeatedFeatureReadout.lean) verify a measurable version for any repeated-feature readout and an almost-sure hit bound for every null finite support.
+
 ## Steinke–Zakynthinou threshold theorem
 
 [Lean proves the proper real-threshold case of Conjecture 6](../lean/Conjectures/SteinkeZakynthinou.lean). For every positive sample size the same measurable learner works for every iid labeled distribution and every fixed sample. Its outputs are finite closed thresholds. Lean bounds original paired-pool CMI by 300 nats or 600 bits and expected empirical excess by $`512/\sqrt n`$, including arbitrary ties and label noise. The source statement in bits with the infimum over all thresholds is `SteinkeZakynthinou.properThresholdTheorem_bits`. The written proof supplies sharper information constants and separate efficiency and determinism extensions. All 28 modules in the Lean theorem’s project import closure passed the pinned kernel replay. The standalone audit checked 806 declarations against the standard axiom whitelist.

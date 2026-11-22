@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Disproof from the actual iid selector/output law
+
+Lean verifies the empirical-rate obstruction assuming the actual conditional selector/output law in iid CMI has a measurable version on the completed pool. The proof permits arbitrary pointwise output measures and almost-everywhere agreement. The all-zero selector gives the learner's kernel after dropping the independent ghost column. [Lean disproof](lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) · [Proof and scope](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md)
+
 ## 2026-11-22 — Finite score channels for agnostic VC learning
 
 Lean verifies the fixed-pool information bound of $`20s`$ nats for integer-noise signed support counts with overlap $`s`$, together with the argmax regret and eligibility bounds. A written completed-iid learner gives 12 nats and $`2/\sqrt n+2/n`$ empirical excess for disjoint two-point supports. [Finite Lean channel](lean/Conjectures/AgnosticVC/CompactScoreNoise.lean) · [Completed-iid proof](research/steinke-zakynthinou-agnostic-vc/completed-disjoint-support-learner.md)
