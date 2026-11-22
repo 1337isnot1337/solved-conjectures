@@ -327,6 +327,7 @@ python3 results/tight-eleven-to-fourteen/verify.py
 python3 results/currie-conjecture-19/verify.py
 python3 results/tight-nine-speeds/verify.py
 python3 results/zhang-deletion-values/verify.py
+python3 results/shifted-lonely-runner-counterexamples/verify.py --quick
 python3 results/circular-index-complete-minus-edge/verify.py
 ```
 
@@ -359,6 +360,10 @@ Run `python3 results/circular-index-complete-minus-edge/verify.py` with assertio
 ## Zhang's Question 8.4
 
 Run `python3 results/zhang-deletion-values/verify.py` with assertions enabled. The standard-library script checks the closed deletion-value formula in all 779 cases with `3 <= n <= 40`, the strict inequality in all 740 cases with `n >= 4` and `r <= n-2`, and the witness time used in the second case. The [elementary proof](../results/zhang-deletion-values/PROOF.md) is unconditional; the finite check confirms the formula in the stated range. No Lean verification is included.
+
+## Zhang's Question 8.5: shifted lonely runner counterexamples
+
+Run `python3 results/shifted-lonely-runner-counterexamples/verify.py` for the full check (about 4 minutes) or add `--quick` (about 10 seconds; this is the mode the workflow runs). The standard-library script reads the 37 certificates in `certificates.json`, one for each `18 <= n <= 54`, and uses only integer and `Fraction` arithmetic. For each certificate it checks that the speeds are `n` distinct positive integers, computes `gamma` exactly from the finitely many candidate maximum times `(v_i+v_j)t+s_i+s_j` in the integers and compares it with the recorded value and with `1/(n+1)`, and independently checks that the closed arcs on which some runner is within `delta = (gamma+1/(n+1))/2` of an integer cover the circle. The arc cover alone proves `gamma < 1/(n+1)`. `--quick` runs the arc cover for every certificate, using the recorded `gamma` after checking that it is below `1/(n+1)`, and the exact recomputation of `gamma` only for `n <= 24` and `n = 41`. Both modes exit non-zero if a check fails or if the certified `n` are not exactly `18..54`. The heuristic search tools in `search/` are not part of the check. The certificates settle `18 <= n <= 54` only; `55 <= n <= 94` remains open. No Lean formalization.
 
 ## Baricz–Pogány coefficient positivity
 
