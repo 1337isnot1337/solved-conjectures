@@ -1,5 +1,7 @@
 # A necessary cone test for the bounded primitive-word route
 
+**Subsequent correction.** The [exact mixed-difference analysis](exact-mixed-difference-classes.md) disproves the 2010 conjecture about the individual lower classes as printed and identifies a conflict with the lower-class assertion of Theorem 6. The question for their union remains open.
+
 Research note, 21 November 2026. This develops a valid consequence of stratified semilinearity after the affine-width bridge in [the companion note](affine-certificate-obstruction.md) failed. **No violation of the test is proved for the primitive-word language.** The sponsor target remains unresolved.
 
 ## 1. Why this criterion applies

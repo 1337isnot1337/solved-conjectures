@@ -1,5 +1,7 @@
 # Shallit problem 7: primitive binary words
 
+**Subsequent correction.** The [exact mixed-difference analysis](exact-mixed-difference-classes.md) disproves the 2010 conjecture about the individual lower classes as printed and identifies a conflict with the lower-class assertion of Theorem 6. The question for their union remains open.
+
 Research checkpoint, 21 November 2026. **The full problem is unresolved in this work.** No prize application, sponsor contact, or payment claim has been made.
 
 ## Exact target and public offer
