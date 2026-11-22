@@ -45,6 +45,5 @@ jobs:
           build: false
           test: false
           lint: false
-          check-lean-environment: false
       - name: Build, audit, and replay the agnostic VC formalization
         run: python3 scripts/verify_agnostic_vc.py --fetch-cache
