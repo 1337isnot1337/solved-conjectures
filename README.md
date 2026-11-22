@@ -157,3 +157,10 @@ Sources are linked in the [catalogue](CONTENTS.md#primary-sources) and individua
 
 
 
+
+<details>
+<summary>Citation and sources</summary>
+
+If you use or write about this collection, please credit the authors named on the result and link to the [catalogue](https://itsdavis.com/solved-conjectures/). For an individual claim, please cite its specific proof or verification record and the original conjecture source. [Citation file](CITATION.cff).
+
+</details>

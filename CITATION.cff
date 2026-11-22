@@ -1,16 +1,14 @@
 cff-version: 1.2.0
-message: >-
-  Please cite this repository if you use its mathematical notes or
-  verification code, and cite the original conjecture papers separately.
+message: "If you use or write about these notes or verification code, please credit the authors named on the result and cite https://itsdavis.com/solved-conjectures/. For a specific result, please link to its proof or verification record and cite the original conjecture paper."
 type: software
 title: "Solved conjectures in combinatorics and number theory"
 authors:
   - family-names: Davis
     given-names: Cinna
-    website: "https://1337isnot1337.github.io/"
+    website: "https://itsdavis.com/"
   - name: "GPT-6.2 Astra"
 repository-code: "https://github.com/1337isnot1337/solved-conjectures"
-url: "https://1337isnot1337.github.io/solved-conjectures/"
+url: "https://itsdavis.com/solved-conjectures/"
 keywords:
   - mathematical conjectures
   - combinatorics
