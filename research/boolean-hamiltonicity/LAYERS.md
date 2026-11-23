@@ -150,7 +150,7 @@ this reduction followed by selection of the multilinear representative.
 **Proposition 3.2.** The containment extension is
 
 ```math
-C_m^*(x)=\operatorname{ML}\left(
+C_m^*(x)=\mathop{\mathrm{ML}}\left(
  1-\prod_{H\in\mathcal H_m}(1-x^H)\right)
 =\sum_{\varnothing\ne\mathcal F\subseteq\mathcal H_m}
  (-1)^{|\mathcal F|+1}x^{\bigcup_{H\in\mathcal F}H}.
@@ -330,11 +330,11 @@ gives the following identities:
 ```math
 M(\neg f)=1-M(f),
 \qquad
-M(f\land g)=\operatorname{ML}(M(f)M(g)),
+M(f\land g)=\mathop{\mathrm{ML}}(M(f)M(g)),
 ```
 
 ```math
-M(f\lor g)=M(f)+M(g)-\operatorname{ML}(M(f)M(g)).
+M(f\lor g)=M(f)+M(g)-\mathop{\mathrm{ML}}(M(f)M(g)).
 ```
 
 Each identity follows by evaluating on the Boolean cube and checking the
@@ -357,29 +357,33 @@ An argument that postpones Boolean reductions must prove a bound that
 accounts for this degree collapse and for repeated edges in the union
 formula. None of the identities above proves such a bound.
 
-## 7. A polynomial-time predicate with the same logarithmic band of layers
+## 7. A monotone polynomial-time predicate with the same logarithmic band
 
 The shared-layer obstruction extends beyond the minimal homogeneous
 component. A logarithmic number of additional layers still does not
-distinguish containment from every polynomial-time predicate.
+distinguish containment from every monotone polynomial-time predicate.
 
 **Theorem 7.1.** Fix a nonnegative integer c. Put
 
 ```math
 k_c(m)=\left\lfloor\log_2(m^c)\right\rfloor,
 \qquad
-D_{m,c}(G)=C_m(G)\land[|E(G)|\le m+k_c(m)].
+J_{m,c}(G)=C_m(G)\lor[|E(G)|>m+k_c(m)].
 ```
 
-The family D_{m,c} is in deterministic polynomial time, and hence has
-polynomial-time uniform Boolean circuits of polynomial size. Over every
-field its unique multilinear extension agrees with C_m^* in every
-homogeneous degree at most m+k_c(m).
+The family J_{m,c} is monotone and is in deterministic polynomial time,
+and hence has polynomial-time uniform Boolean circuits of polynomial
+size. Over every field its unique multilinear extension agrees with
+C_m^* in every homogeneous degree at most m+k_c(m).
 
-**Proof.** First count the input arcs, writing M for their number. Reject
-if M > m+k_c(m). Reject also if any vertex has outdegree zero. In the
-remaining case write d_v >= 1 for each outdegree. Enumerate all choices
-of one outgoing arc at every vertex. The number of choices is
+**Proof.** Both C_m and the condition |E(G)| > m+k_c(m) are monotone under
+addition of arcs. Their disjunction J_{m,c} is therefore monotone.
+
+First count the input arcs, writing M for their number. Accept immediately
+if M > m+k_c(m). Otherwise the required answer is exactly C_m(G). In this
+remaining case, reject if any vertex has outdegree zero. If all outdegrees
+d_v are at least 1, enumerate all choices of one outgoing arc at every
+vertex. The number of choices is
 
 ```math
 \prod_v d_v
@@ -401,18 +405,89 @@ is computable exactly: k_c(m) is one less than the binary length of the
 positive integer m^c. The fixed integer c is part of the description of
 the algorithm, so this is one uniform polynomial-time family.
 
-By definition D_{m,c} and C_m agree on every graph with at most m+k_c(m)
+By definition J_{m,c} and C_m agree on every graph with at most m+k_c(m)
 arcs. The final assertion follows from the coefficient formula in
 Section 1, or from its general agreement consequence in Section 2. ∎
+
+The nonmonotone sparse cutoff variant
+
+```math
+D_{m,c}(G)=C_m(G)\land[|E(G)|\le m+k_c(m)]
+```
+
+has the same polynomial-time bound and the same prefix agreement. Its
+algorithm rejects above the cutoff and uses the same successor enumeration
+at or below it. The monotone variant J_{m,c} gives the stronger obstruction.
 
 This is an elementary sparse-input parameter bound, not a new general
 Hamiltonicity algorithm or a claim of priority. It gives a precise
 limitation on the proposed transfer: for every fixed logarithmic band of
-degrees above m, a polynomial-time predicate has exactly the same band
-of multilinear components as the containment predicate. A circuit-hardness
-criterion for arbitrary Boolean predicates that sees only this prefix
-cannot distinguish the two families. The theorem makes no statement about
-invariants using the whole truth table or a larger collection of layers.
+degrees above m, a monotone polynomial-time predicate has exactly the same
+band of multilinear components as the containment predicate. A circuit
+hardness criterion that sees only this prefix cannot distinguish the two
+families, even when it also assumes that the output function is monotone.
+The theorem does not assert a polynomial-size monotone circuit for J_{m,c}.
+It makes no statement about invariants using the whole truth table or a
+larger collection of layers.
+
+**Corollary 7.2.** For each fixed nonnegative integer c, the families
+J_{m,c} and D_{m,c} are decidable in deterministic logarithmic space on
+a read-only adjacency-matrix input. The space bound is O(log m), or
+equivalently O(log N) for N = m(m-1) input bits.
+
+**Proof.** The threshold test uses a counter for M and a register for m^c.
+Both have O(log m) bits because c is fixed. Scanning the input determines
+every outdegree d_v using the same space. Above the threshold return the
+appropriate immediate answer, and at or below the threshold reject if
+any outdegree is zero.
+
+In the remaining case the integer
+
+```math
+P=\prod_{v=1}^m d_v\le m^c
+```
+
+fits in O(log m) bits. Compute it by scanning rows successively and
+multiplying the current product by each row's degree. Enumerate integers
+t = 0,...,P-1. Use t as the index of a successor choice in mixed radix
+with radices d_1,...,d_m, the first vertex being the least significant
+digit. To find the chosen successor of a particular vertex v, set q=t.
+For u=1,...,v-1, rescan row u to compute d_u and replace q by
+floor(q/d_u). Set r=q mod d_v. Rescan row v and select its r-th outgoing
+neighbour, counting from zero in the fixed input order. This computes
+the successor without storing the complete selection. Repeated division
+gives a bijection between the integers t in this range and all successor
+choices.
+
+For each t, store only the current vertex and a step counter. Start at
+vertex 1, repeatedly compute the selected successor on demand, and accept
+this choice precisely if its first return to vertex 1 occurs at step m.
+If the first return is earlier, or there is no return in m steps, reject
+this choice. To justify the test, suppose v_0=1,...,v_m=1 and no earlier
+positive-index vertex is 1. If v_i=v_j for 0<i<j<m, applying the same
+successor function another m-j times would give
+
+```math
+v_{m-(j-i)}=v_m=1,
+\qquad 1\le m-(j-i)<m,
+```
+
+contradicting the first-return condition. Hence v_0,...,v_{m-1} are all
+distinct, so they are exactly the m graph vertices and form a Hamiltonian
+cycle. The converse is immediate. No visited-vertex array is needed.
+
+There are only constantly many working registers: t, P, the current
+vertex, the step and input-position counters, q, the current degree, and
+the neighbour counter. Every register has O(log m) bits. Addition,
+multiplication, quotient, and remainder on these bounded integers can
+be implemented with O(log m) work bits and polynomial time. Every input
+row access can be performed by rescanning the read-only input with an
+O(log N)-bit position counter; random access is not assumed. The outer
+enumeration has at most m^c iterations, so the running time remains
+polynomial. If the encoding supplies only its length N, recover m by
+counting N and trying integers until m(m-1) >= N; reject if equality
+fails, and handle the finitely many smaller lengths separately. This also
+uses O(log N) bits. ∎
 
 ## 8. Independent finite checks
 
@@ -424,9 +499,15 @@ the three-tail pair count through 6 vertices and exhausts the original
 inputs on 2, 3, and 4 vertices for the restriction of Theorem 5.1.
 It enumerates only the restricted images on 4, 5, and 6 vertices; it does
 not enumerate all 2^30 directed graphs on 6 vertices. An independent
-outgoing-choice enumerator also checks the sparse-input algorithm and
-its coefficient agreement for all graphs on 2, 3, and 4 vertices, with
-fixed c in {0,1,2}.
+outgoing-choice enumerator also checks both cutoff algorithms and their
+coefficient agreement for all graphs on 2, 3, and 4 vertices, with fixed
+c in {0,1,2}. For each of these instances the verifier checks monotonicity
+of J_{m,c} on every pair of inputs related by adding a single arc. It also
+checks the mixed-radix successor decoder against the ordinary Cartesian
+product of neighbour lists on each sparse input with no zero outdegree,
+and compares the first-return algorithm with independent cycle enumeration.
+These checks validate the finite algorithmic identities; the written
+register accounting establishes the asymptotic space claim.
 
 Run it with:
 

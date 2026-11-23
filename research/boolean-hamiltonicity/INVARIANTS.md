@@ -36,8 +36,8 @@ to
 
 ```math
 \begin{aligned}
-f\land g&=\operatorname{ML}(fg),\\
-f\lor g&=f+g-\operatorname{ML}(fg),\\
+f\land g&=\mathop{\mathrm{ML}}(fg),\\
+f\lor g&=f+g-\mathop{\mathrm{ML}}(fg),\\
 \neg f&=1-f.
 \end{aligned}
 ```
@@ -83,7 +83,7 @@ With subsets ordered by cardinality, each Z is triangular with diagonal 1.
 Consequently
 
 ```math
-\operatorname{rank}_K M_A(f)=\operatorname{rank}_K C_A(F)
+\mathop{\mathrm{rank}}_K M_A(f)=\mathop{\mathrm{rank}}_K C_A(F)
 ```
 
 over every field. The statement is about the *whole* multilinear extension.
@@ -157,6 +157,25 @@ in the unfolded formula, which may be exponentially larger than the DAG.
 It does not count each shared gate only once. No rule in Proposition 3.2
 licenses such an amortization.
 
+There is nevertheless a direct elementary rank bound for arbitrary circuits.
+Let s_2 be the number of binary gates in the part of the circuit reaching
+the output, and s_1 its number of unary gates. Let t be the number of input
+nodes in that part, counting constants as inputs. The underlying multigraph
+is connected, has t+s_1+s_2 vertices and s_1+2s_2 edges, so t <= s_2+1.
+If t_A and t_B of those inputs are distinct variables from the two sides
+of a cut, the truth matrix has at most 2^(t_A) distinct rows and 2^(t_B)
+distinct columns. Therefore
+
+```math
+r_A(f)\le2^{\min(t_A,t_B)}\le2^{(s_2+1)/2}.
+```
+
+For positive rank this gives s_2 >= 2 log_2 r_A(f)-1, even with arbitrary
+fan-out and negations. Since a cut matrix has rank at most 2^(N/2), this
+particular bound can never exceed N-1. The family below attains equality:
+its exponential rank certifies exactly the cost of combining all its input
+variables, not a superpolynomial computation cost.
+
 Even in formulas, these inequalities give a logarithmic-rank lower bound.
 Since log_2 sigma <= |B|, this direct use of the inequalities cannot yield a
 superpolynomial lower bound in N. For a probability distribution w on cuts,
@@ -195,6 +214,22 @@ It has 3^k nonzero monomials over every field, integer coefficient absolute
 sum 3^k, and 2^k minimal satisfying assignments. All these quantities can
 therefore grow exponentially in the size of a small formula. None admits
 a universal polynomial upper bound in arbitrary Boolean formula size.
+
+The same example also obstructs two common real Fourier measures. Put
+z_i=1-2x_i and w_i=1-2y_i. Then
+
+```math
+x_i\lor y_i=\frac{3-z_i-w_i-z_iw_i}{4},
+\qquad
+h_k=\prod_{i=1}^k\frac{3-z_i-w_i-z_iw_i}{4}.
+```
+
+All 4^k Fourier coefficients are nonzero, and their absolute sum is
+(3/2)^k. The factors use disjoint variable pairs, so their supports and
+absolute sums multiply exactly. Fourier support size and Fourier absolute
+coefficient sum therefore also lack a universal polynomial upper bound
+in Boolean formula size. This supplementary observation was supplied by
+the parallel review of the layer lemmas.
 
 ## 4. An explicit Hamiltonicity restriction with zero exact-cycle predicate
 
@@ -287,7 +322,7 @@ between A and B, with binary rank r. Over a field K of characteristic other
 than two, the sign truth matrix of (-1)^q_H has rank 2^r, and hence
 
 ```math
-\operatorname{rank}_K M_A(q_H)\ge2^r-1.
+\mathop{\mathrm{rank}}_K M_A(q_H)\ge2^r-1.
 ```
 
 Proof. Terms internal to A and B only multiply rows and columns of the
@@ -307,7 +342,7 @@ matrices of rank at most t is at most 2^(t(a+b)), because every one has
 a factorization into an a by t and a t by b matrix. Therefore
 
 ```math
-\Pr[\operatorname{rank}_{\mathbb F_2}(R)\le\lfloor N/8\rfloor]
+\Pr[\mathop{\mathrm{rank}}_{\mathbb F_2}(R)\le\lfloor N/8\rfloor]
 \le2^{\lfloor N/8\rfloor N-ab}
 \le2^{-7N^2/72}.
 ```

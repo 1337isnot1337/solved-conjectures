@@ -2,6 +2,8 @@
 
 Checked on 2026-11-23. This is a bounded source and scope check for the research target in [issue #251](https://github.com/1337isnot1337/solved-conjectures/issues/251), not a claim to have resolved Boolean P versus NP or established novelty for the auxiliary lemmas.
 
+Under the repository's [standing assumption](../../AGENTS.md), the pinned Anthropic theorem, proof and lemmas are accepted as available results. This document records their exact versions and scopes; it does not reopen their truth as a research obligation. Statements below that combine these results with new elementary arguments are consequences of the imported theorem under that standing assumption.
+
 ## 1. Pinned arithmetic lower bound
 
 Claude (Anthropic), *VP ≠ VNP over every field*, repository version
@@ -74,7 +76,7 @@ The relevant numbered statements are:
 - **Proposition 3, pages 3–4:** a family of Boolean functions in P/poly has its multilinear extensions in VNP. This is not a VP membership statement.
 - **Lemma 4, page 4:** the homogeneous components through degree `k` of a polynomial with arithmetic circuit complexity `s` can be computed simultaneously with `O(sk²)` arithmetic gates.
 
-Theorem 1 already rules out a universal polynomial-cost passage from small Boolean circuits to arithmetic circuits for their canonical multilinear extensions, conditional on the arithmetic separation. This is prior work, not an advance of this research note. The IS-Hamiltonian-cycle example is a direct illustration of the same obstruction.
+Theorem 1, combined with the arithmetic separation accepted under the repository's standing assumption, rules out a universal polynomial-cost passage from small Boolean circuits to arithmetic circuits for their canonical multilinear extensions. This is a consequence of imported results, not an advance of this research note. The IS-Hamiltonian-cycle example is a direct illustration of the same obstruction.
 
 ## 3. Directed Hamiltonicity and the uniformity conclusion
 

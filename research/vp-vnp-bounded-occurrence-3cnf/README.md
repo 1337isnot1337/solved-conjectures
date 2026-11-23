@@ -1,6 +1,6 @@
 # Bounded-occurrence 3-CNF weighted counting and VP versus VNP
 
-**Classification:** Conditional consequence of an external, unreviewed proof claim. This is a reduction to a VNP-complete polynomial family, not a newly solved conjecture. It is intentionally excluded from the root Results table and solved-result totals.
+**Classification:** Explicit reduction and consequence of the imported Anthropic VP ≠ VNP theorem, which this repository takes as true and fully accurate under its [standing research assumption](../../AGENTS.md#standing-research-assumption-anthropics-vp-versus-vnp-proof). This is not an independent proof of the source theorem or a newly solved named conjecture. It remains excluded from the root Results table and solved-result totals.
 
 ## Statement
 
@@ -22,7 +22,7 @@ W_{\Phi_n}(\pi_n(X))
 
 The identity and construction are unconditional and valid in **every characteristic**, including characteristic 2. By Valiant's known all-field VNP-completeness theorem for HC_n, the particular family W_{Phi_n} is VNP-complete under p-projections over every field.
 
-**Conditional consequence.** If the lower bound asserted in Anthropic's November 23, 2026 preprint is correct, then for some field-dependent c_K > 0 and sufficiently large n,
+**Border-complexity consequence of the imported theorem.** Using Anthropic's November 23, 2026 lower bound as a valid theorem under the repository's standing research assumption, for some field-dependent c_K > 0 and sufficiently large n,
 
 ```math
 \underline{\mathrm{size}}_K(W_{\Phi_n})
@@ -91,7 +91,7 @@ so the family belongs to VNP. All-field hardness follows from the HC_n p-project
 
 ### Border-complexity transfer
 
-Substituting variables by 1 or by other variables into a circuit does not increase its size asymptotically. The same substitution into a Laurent-series degeneration preserves the constant-term polynomial. Hence the projection preserves both ordinary and border lower bounds. The claimed source theorem gives the quantitative HC_n lower bound; **we do not independently prove that theorem here**.
+Substituting variables by 1 or by other variables into a circuit does not increase its size asymptotically. The same substitution into a Laurent-series degeneration preserves the constant-term polynomial. Hence the projection preserves both ordinary and border lower bounds. The imported source theorem gives the quantitative HC_n lower bound; **we do not independently prove that theorem here**.
 
 ## Reproduction and checked scope
 
@@ -108,10 +108,10 @@ The standard-library verifier constructs T_n and Phi_n and tests every assignmen
 | 3 | 16 | 38 | 78 | 116 | 3 | 2 |
 | 4 | 51 | 138 | 300 | 438 | 3 | 6 |
 
-Structural checks without full assignment enumeration also passed for n=5,6,7,8. None of these finite checks proves the general circuit bound; the general reduction is the written construction above. **No Lean formalization, third-party review, or novelty/priority claim is made.** Bounded-occurrence reductions and VNP-completeness are established techniques; the contribution of this note is an explicit checked encoding plus the conditional quantitative consequence.
+Structural checks without full assignment enumeration also passed for n=5,6,7,8. None of these finite checks proves the general circuit bound; the general reduction is the written construction above. **No Lean formalization, third-party review, or novelty/priority claim is made.** Bounded-occurrence reductions and VNP-completeness are established techniques; the contribution of this note is an explicit checked encoding plus a quantitative lower-bound transfer from the imported theorem.
 
 ## Sources
 
-- Anthropic (Claude), [VP != VNP over every field](https://hexagonmath.org/2611.00954v1), November 23, 2026, especially the all-characteristic Hamiltonian-cycle and border-complexity statements. Newly released, not independently checked by human mathematicians when this note was written.
+- Anthropic (Claude), [VP != VNP over every field](https://hexagonmath.org/2611.00954v1), November 23, 2026, especially the all-characteristic Hamiltonian-cycle and border-complexity statements. Newly released and not independently checked by human mathematicians when this note was written. The repository's standing research assumption concerns how the result is used here; it is not a claim of independent external validation.
 - L. G. Valiant, [Completeness Classes in Algebra](https://doi.org/10.1145/800135.804419), STOC 1979, for the Hamiltonian-cycle polynomial's VNP-completeness.
 - H. Fournier et al., [VNP and coefficient counting](https://webusers.imj-prg.fr/~herve.fournier/publications/vnp.pdf), for an accessible summary of the all-field Hamiltonian-cycle completeness theorem.

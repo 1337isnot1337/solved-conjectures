@@ -7,6 +7,11 @@ restrictions, and obstructions to several proposed transfers from arithmetic
 to Boolean circuit lower bounds. It does not prove P != NP, a superpolynomial
 unrestricted Boolean circuit lower bound, or a uniform time lower bound.
 
+The repository's [standing assumption](../../AGENTS.md) accepts the pinned
+Anthropic arithmetic theorem, its proof and its lemmas as available results.
+Consequences below use that assumption; the open target is their transfer
+to unrestricted Boolean computation.
+
 Tracking: [issue #251](https://github.com/1337isnot1337/solved-conjectures/issues/251).
 Related campaigns are [#247](https://github.com/1337isnot1337/solved-conjectures/issues/247)
 on the permanent graph in the complex BSS model and
@@ -78,15 +83,22 @@ The source and encoding details are in [SOURCES.md](SOURCES.md).
 | $`I_m`$ has polynomial-time uniform circuits of size $`O(m^3)`$ | [LAYERS.md, Proposition 2.2](LAYERS.md#2-the-shared-minimal-layer) |
 | Every higher coefficient of $`C_m`$ is an alternating sum over families of cycles with a prescribed union | [LAYERS.md, Proposition 3.2](LAYERS.md#3-all-higher-coefficients) |
 | The next two homogeneous components vanish; the degree-$`m+3`$ terms are exactly pair-overlap unions, each with coefficient $`-1`$ | [LAYERS.md, Theorem 4.2](LAYERS.md#4-the-first-overlap-layer) |
+| For every fixed $`c`$, a monotone predicate in P agrees with containment in every multilinear degree through $`m+\lfloor c\log_2m\rfloor`$ | [LAYERS.md, Theorem 7.1](LAYERS.md#7-a-monotone-polynomial-time-predicate-with-the-same-logarithmic-band) |
+| The preceding monotone predicate is in deterministic logarithmic space for each fixed $`c`$ | [LAYERS.md, Corollary 7.2](LAYERS.md#7-a-monotone-polynomial-time-predicate-with-the-same-logarithmic-band) |
 | A restriction adding two vertices makes $`I_{m+2}`$ identically zero while preserving $`C_m`$ and the ordinary polynomial $`HC_m`$ | [LAYERS.md, Theorem 5.1](LAYERS.md#5-a-restriction-that-kills-the-exact-predicate-and-preserves-containment) |
 | Rank has multiplicative AND bounds and complement-stable variants, but the resulting bounds do not prove the target | [INVARIANTS.md](INVARIANTS.md) |
 | Even with the exact-cycle predicate identically zero, a Hamiltonicity restriction can have exponential cut rank and a linear-size monotone formula | [INVARIANTS.md, Proposition 4.1](INVARIANTS.md#4-an-explicit-hamiltonicity-restriction-with-zero-exact-cycle-predicate) |
 | Linear-size monotone formulas can have exponential truth-table and coefficient rank at every balanced variable cut, over every field | [ALL_CUTS.md](ALL_CUTS.md) |
+| Squarefree-support truncation is a correct Hamming-ball quotient, but a general polynomial-cost ordinary arithmetic lift contradicts the imported HC theorem | [SUPPORT_QUOTIENT.md](SUPPORT_QUOTIENT.md) |
 
 These statements are elementary deductions or applications of established
 methods. They are not presented as newly resolved conjectures. The
 restriction that preserves containment supplies the requested reduction
 checkpoint; it supplies no unproved hardness conclusion about that family.
+
+[ATTACKS.md](ATTACKS.md) records the attempted transfers, the exact false
+inequalities, and the unresolved step. [REVIEW.md](REVIEW.md) records
+internal adversarial review and the limits of the verification.
 
 ## The unresolved implication
 
@@ -107,7 +119,7 @@ circuit DAG is not such a bound.
 No invariant satisfying those requirements is proved here. The polynomial
 extension of a Boolean predicate can be arithmetically hard even when
 the predicate is easy; Hrubeš's Theorem 1 establishes this for monotone
-2-CNFs under the arithmetic separation. The pinned Anthropic source itself
+2-CNFs using the imported arithmetic separation. The pinned Anthropic source itself
 identifies the Boolean-ideal obstruction in Section 2.5. Counting cycles
 modulo two does not remove the gap: the complete directed graph on three
 vertices has two Hamiltonian cycles, so parity is zero and containment is one.
