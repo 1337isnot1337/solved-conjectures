@@ -1,5 +1,7 @@
 # Agnostic VC learning with a known feature marginal
 
+For an estimated marginal, [pilot reference-law obstructions](pilot-reference-law-obstructions.md) show that exact domination cannot work uniformly over atomless laws and that releasing raw pilot atoms can cost unbounded CMI even at dimension one.
+
 Let $`H`$ be any finite or countable enumerated class of measurable binary classifiers of VC dimension $`d\ge1`$, and $`n\ge d`$. For every feature distribution $`\nu`$ there is a single proper randomized learner $`A_\nu`$ satisfying
 ```math
  I(A_\nu(\widetilde Z_S);S\mid\widetilde Z)\le C d
