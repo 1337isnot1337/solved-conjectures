@@ -37,7 +37,7 @@ The projected law on short traces before lifting is still the optimizer for the 
 
 This applies with $`k=1`$ to the standard Borel irrational circle-orbit class where every globally ordered representative rule fails completed measurability. For each observed feature with circle coordinate $`x`$, include every candidate $`x+\gamma`$ for $`\gamma`$ in the countable subgroup. A trace with any positive row is realized by a member of one such list. Include fixed candidates from countably many distinct cosets to realize the all-zero trace by avoiding the finitely many observed cosets. These are Borel maps, and the underlying trace-covering construction is already verified in Lean. The deletion extension above proves both rates for that class in writing. [Trace-covering construction](../../lean/Conjectures/AgnosticVC/OrbitWitnesses.lean) · [Obstruction for ordered representatives](../../lean/Conjectures/AgnosticVC/OrbitOutputAllSizes.lean)
 
-The general standard Borel case would follow from an $`O(d)`$-row family of universally measurable proper reconstructions as above. The argument requires the trace-covering property for every finite sample and does not establish it for arbitrary classes.
+The general standard Borel case would follow from an $`O(d)`$-row family of universally measurable proper reconstructions as above. For VC dimension one, the jointly Borel hypothesis alone suffices to construct measurable one-feature lists. The proof uses laminar disagreement sections and Borel linearization to choose the lists. [Written VC-one proof](vc-one-trace-reconstruction.md)
 
 ## Lean verification and constants
 
