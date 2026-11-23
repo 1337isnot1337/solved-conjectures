@@ -2,7 +2,9 @@
 
 [Manuscript (PDF)](paper.pdf) · [LaTeX source](paper.tex) · [Scope audit](SCOPE.md)
 
-**Literal iid statement.** Lean proves that VC-one classes of disjoint finite supports defeat every proposed constant if the actual independently seeded output in Definition 3 is a measurable random variable, even after completing the iid experiment. The examples have trace Borel hypothesis spaces and distribution-uniform convergence in outer probability. The statement for standard Borel hypothesis spaces with completed iid laws remains open here. [Disproof and scope](SCOPE.md#completion-of-an-iid-law) · [Lean theorem](../../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean)
+**Literal iid statement.** Lean proves that VC-one classes of disjoint finite supports defeat every proposed constant if the actual independently seeded output in Definition 3 is a measurable random variable, even after completing the iid experiment. The examples have trace Borel hypothesis spaces and distribution-uniform convergence in outer probability. [Disproof and scope](SCOPE.md#completion-of-an-iid-law) · [Lean theorem](../../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean)
+
+A written construction with standard Borel hypothesis names and separately Borel evaluation forces actual iid CMI linear in sample size at counterexample sizes if the learner meets the claimed accuracy. Pointwise predictions generate the output sigma-algebra. The jointly Borel case with completed iid laws remains open here. [Standard Borel name obstruction](../../research/steinke-zakynthinou-agnostic-vc/standard-borel-output-obstruction.md)
 
 With independent fair labels, the benchmark also forces iid CMI at least $`n/32`$ at empirical tolerance $`1/8`$, allowing improper outputs. The written proof derives the information inequality directly from the iid experiment. The existing Lean proof takes the generalization inequality as an explicit premise. [Fair-label proof](../../research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md#fair-labels-and-improper-learners) · [Lean theorem](../../lean/Conjectures/AgnosticVC/FairLabelObstruction.lean)
 
