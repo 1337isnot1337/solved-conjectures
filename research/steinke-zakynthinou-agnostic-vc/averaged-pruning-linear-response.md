@@ -1,6 +1,6 @@
-# First-order pruning bound for averaged projection entropies
+# Pruning bounds for averaged projection entropies
 
-The averaged projection objective has a uniform first-order bound under support pruning. If the full optimizer assigns mass $`e\le1/2`$ to the deleted traces, then at its conditional law on the survivors the inverse Hessian applied to the remaining gradient has norm $`O(\sqrt e)`$ in the Fisher metric. The estimate applies to arbitrary linear costs. It bounds the initial speed of a cost interpolation to the restricted optimizer. A bound on the entire interpolation would be needed to replace the [nested schedule's information bound](approximate-catalogues.md).
+If the full optimizer of the averaged projection objective assigns mass $`e\le1/2`$ to the deleted traces, the inverse Hessian applied to the gradient at the conditional survivor law has Fisher norm $`O(\sqrt e)`$. For a finite deletion, the squared Hellinger distance between the two optimizers is $`O(e)`$ when the restricted optimizer and the conditional survivor law have uniformly close likelihood ratios. Both estimates apply to arbitrary linear costs. Removing the likelihood-ratio hypothesis could improve the [information bound for approximate catalogues](approximate-catalogues.md).
 
 ## The inverse along random restriction chains
 
@@ -106,3 +106,63 @@ where the projected functions are evaluated at the survivor's restriction. Equat
 ```
 
 For the speed interpretation, put $`h=\nabla^\circ F_{\rm surv}(r)`$ and minimize $`F_{\rm surv}(p)-(1-t)\mathbb E_p h`$. At $`t=0`$ the optimizer is $`r`$ by stationarity and strict convexity. Invertibility of $`A`$ gives its derivative $`-r A^{-1}h`$ there, by differentiating stationarity. Its Fisher norm is the bounded quantity above. Finite pruning would require control up to $`t=1`$, where the Hessian is evaluated at the new optimizer and the conditional-law supermartingale used in the proof need not be available along the path.
+
+## Finite pruning under a likelihood-ratio bound
+
+Let $`p`$ be the restricted optimizer, $`r=q(\cdot\mid E^c)`$ as above, and assume
+
+```math
+\max_{v\in E^c}\left|\frac{p(v)-r(v)}{p(v)+r(v)}\right|\le\frac1{100}.
+```
+
+Then $`H_2^2(p,q)\le C e`$ with a universal constant. The reference law for this proof is the midpoint $`\mu=(p+r)/2`$ on the survivors. Define $`h=(p-r)/(p+r)`$ and $`c=\|h\|_\infty`$. Use $`\mu`$ in all conditional expectation operators and centerings below.
+
+Apply the estimate (2) also with the terminal stage $`J+1`$ included at weight $`\tau`$. In its proof the martingale pairing then uses $`T_\pi`$, and the drift weights are $`b_\ell`$. The same estimates give the same constant $`32`$. Write $`w_j=a_j`$ for $`j\le J`$ and $`w_{J+1}=\tau`$. For each chain put $`h_j=P_j^\pi h`$ and
+
+```math
+Y_j=\frac{(q|_E)_j}{(1-e)\mu_j}.
+```
+
+Here the numerator is the projection of the unnormalized removed mass, and $`Y_{J+1}=0`$ since the terminal projection identifies the full trace. By the same positive-child calculation as before, $`Y_j`$ is a nonnegative $`\mu`$-supermartingale starting from $`e/(1-e)`$ at the trivial stage. The densities of $`p_j`$ and $`q_j`$ with respect to $`\mu_j`$, evaluated in survivor cells, are $`1+h_j`$ and $`(1-e)(1-h_j+Y_j)`$.
+
+For $`|x|\le c`$ let $`g_\pm(x)=\pm x-\log(1\pm x)`$. Both functions are nonnegative and convex. For each chain set $`K^\pm_j=\mathbb E_\mu[g_\pm(h)\mid\mathcal F_j]`$ and
+
+```math
+U^+_j=\log(1+h_j)-h_j+K^+_j,\qquad
+U^-_j=\log(1-h_j+Y_j)+h_j+K^-_j .
+```
+
+The $`U^\pm`$ are supermartingales by conditional Jensen for the logarithm and the supermartingale property of its positive arguments. They are nonnegative because $`K^\pm_j\ge g_\pm(h_j)`$. In the minus case use also $`Y_j\ge0`$. Pointwise,
+
+```math
+U^+_j\le K^+_j,\qquad
+U^-_j\le K^-_j+\log(1+Y_j/(1-c)).
+```
+
+Under $`\mu`$, Doob's $`L^2`$ inequality bounds each $`\max_j K^\pm_j`$ by $`2\|g_\pm(h)\|_\mu`$ in $`L^2`$. The maximal inequality for $`Y`$ and the same tail integral used above give $`\|\max_j\log(1+Y_j/(1-c))\|_\mu\le C_1\sqrt e`$, since $`1-c\ge1/2`$. These bounds hold for every chain.
+
+Subtract the stationarity equation of $`q`$ from that of $`p`$ on survivors and center under $`\mu`$. The constants $`\log(1-e)`$ disappear. By the two definitions of $`U_j^\pm`$, the remaining weighted log ratio yields
+
+```math
+0
+=2Ah
+\mathbb E_\pi\sum_{j=0}^{J+1} w_j
+  (U_j^+-U_j^- -K_j^+ + K_j^-)^\circ.
+```
+
+For a martingale $`K_j^\pm`$, its weighted centered sum, averaged over chains, is $`A(g_\pm(h))^\circ`$. Apply $`A^{-1}`$ and the terminal-stage form of (2). This gives
+
+```math
+2\|h\|_\mu
+\le 65\bigl(\|g_+(h)\|_\mu+\|g_-(h)\|_\mu\bigr)
+    +32C_1\sqrt e.
+```
+
+Integrating the derivatives of $`g_\pm`$ gives $`g_\pm(x)\le x^2/(2(1-c))`$. Thus the first term on the right is at most $`65c\|h\|_\mu/(1-c)\le\|h\|_\mu`$. It follows that $`\|h\|_\mu\le32C_1\sqrt e`$. Finally,
+
+```math
+H_2^2(p,r)=\mathbb E_\mu[2-2\sqrt{1-h^2}]\le2\|h\|_\mu^2,\qquad
+H_2^2(r,q)=2-2\sqrt{1-e}\le2e.
+```
+
+The Hellinger triangle inequality proves the stated bound. For general support pruning the deleted mass does not directly give the required uniform bound on $`|h|`$. The computation isolates where large ratios would need additional control, through the terminal logarithmic remainders $`g_\pm(h)`$.
