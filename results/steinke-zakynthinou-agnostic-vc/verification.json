@@ -620,6 +620,12 @@
     }
   },
   "fair_labels_improper_iid_information_lower_bound": {
+    "github_actions": {
+      "headSha": "17a1352e2516782f41636785becb0f9038fc8455",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/45110922974"
+    },
     "theorems": [
       "AgnosticVC.exists_groupPredict_fit_in_positive_set",
       "AgnosticVC.measure_collision_fairSectorLabel",

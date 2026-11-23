@@ -30,12 +30,11 @@
 Let $\HH$ be a nonempty binary class of VC dimension at most $d$, with $n\ge d\ge1$.
 We construct a proper randomized learner whose expected empirical error is
 within $583\sqrt{d/n}$ of the class optimum on every labeled sample. On every
-fixed pool of $2n$ observations, the selector information of the returned
-classifier, averaged over uniform orderings of the pool, is at most
-$19{,}712d$ nats. Lean also verifies this bound for every fixed pairing
-without averaging, which proves the distribution-free Conjecture~4.18
-in the authors' companion paper. Exchangeability gives the iid bound
-whenever the pool statistic is almost everywhere measurable.
+fixed paired pool of $2n$ observations, the selector information of the
+returned classifier is at most $19{,}712d$ nats. This proves the
+distribution-free Conjecture~4.18 in the authors' companion paper.
+Integrating gives the iid bound whenever the pool statistic is almost
+everywhere measurable.
 
 For the original conditional mutual information, a sufficient condition is
 that the empirical minimizer chosen by a fixed global order be measurable
@@ -102,13 +101,17 @@ There is a proper randomized learner $A$ such that
 \begin{align}
  \E_A\err_z(A(z))&\le\inf_{h\in\HH}\err_z(h)+583\sqrt{d/n}
                       &&\text{for every labeled sample }z, \label{eq:accuracy}\\
- \E_{\pi}\,F_A(t\circ\pi)&\le19{,}712d
-                      &&\text{for every labeled pool }t. \label{eq:pool}
+ F_A(t)&\le19{,}712d
+                      &&\text{for every fixed paired pool }t. \label{eq:pool}
 \end{align}
-Here $\pi$ uniformly permutes the $2n$ positions. The order is fixed when
-computing $F_A$ and averaged afterwards. Repeated instances and conflicting
-labels are allowed.
+Repeated instances and conflicting labels are allowed.
 \end{theorem}
+
+For $1\le n<d$, return a fixed member of the class. Its excess is at
+most one, which is bounded by $\sqrt{d/n}$, and its selector information
+is zero. Using the common constant $19{,}712$ therefore gives every sample
+size in Conjecture~4.18 with the fixed-pairing CMI of Definition~1.1 in
+the companion paper \cite{framework}.
 
 \begin{theorem}[Population form]\label{thm:iid}
 For the same $A$, under every iid law for which $F_A$ is almost everywhere
@@ -175,8 +178,8 @@ Set
  \rho=21/20,\qquad m_j=d4^j,\qquad b_j=\sqrt{t}\,\rho^{-j},\qquad
  a_j=b_j-b_{j+1}\ (0\le j\le J),\qquad \tau=b_{J+1}.
 \]
-In particular $m_J^2\le nd$ and $m_J\le n$. The following definition also
-applies to a working block of $n+1$ labeled examples, always using these
+In particular $m_J^2\le nd$ and $m_J\le n$. If $d<n$, then $m_J<n$ and the
+following definition applies after deleting a row as well, using the
 parameters for the original $n$.
 
 \begin{enumerate}
@@ -256,7 +259,7 @@ empirical error. This proves \eqref{eq:accuracy}.
 For laws on a finite common alphabet use
 $H^2(p,r)=\sum_h(\sqrt{p_h}-\sqrt{r_h})^2$.
 Thus $H$ is an ordinary Euclidean distance between square-root vectors.
-For a labeled block $T$ of size $N=n+1$, let $q(U)$ be its optimizing
+For $d<n$ and a labeled block $T$ of size $N=n$, let $q(U)$ be its optimizing
 law on the canonical names. Let $q_{-i}(U_{-i})$ be the optimizing law on
 deleting position $i$, also expressed on the full names. The learner
 averages over the weights; these conditional laws allow us to couple the
@@ -336,30 +339,22 @@ $(\sqrt p+\sqrt r)^2\le2(p+r)$ coordinatewise,
  \JS(p,r)\le\tfrac12\sum_{h:p_h+r_h>0}\frac{(p_h-r_h)^2}{p_h+r_h}
              \le H^2(p,r).
 \]
-Form an ordered block $T$ by listing the chosen observation in each other
-row and listing \emph{both} observations in row $i$, consecutively in
-positions $i,i+1$. Removing either of these two positions gives one of
-the training samples, in its original row order. Let $Q$ be the full-block
-learner law computed with the schedule for $n$, and let $c_j(T)=H^2(Q,Q_{-j})$, using weight-averaged laws.
-The triangle inequality for square-root vectors gives
-$H^2(p,r)\le2(c_i(T)+c_{i+1}(T))$.
-
-Now hold the $2n$ observations fixed and shuffle their \emph{positions}.
-For any prescribed row and values of the other bits, the ordered $N$-block
-just constructed has the same law as the first $N$ positions of a uniform
-permutation. Indeed every ordered injection of $N$ positions has exactly
-$(2n-N)!$ extensions to a permutation. This remains true when observation
-values coincide. Write $u_j=\E_T c_j(T)$ for that common block law.
-Summing \eqref{eq:tensor} after the shuffle gives
+For $n=d$, selector entropy gives $F_A(t)\le n\log2$. For $n>d$, let
+$T_0,T_1$ be the two possible ordered training samples at the fixed other
+bits. Both give exactly the same ordered sample after deleting row $i$.
+Use the law on this shorter sample with the schedule for $n$ as the
+common reference. Write $c_i(T)$ for the squared Hellinger distance
+between the output law on $T$ and that on its deletion, after averaging
+over the weights. The triangle inequality for square-root vectors gives
+$\JS(p,r)\le2(c_i(T_0)+c_i(T_1))$. Because the remaining bit is fair,
+this is $4\E[c_i(t_S)\mid S_{-i}]$. Summing \eqref{eq:tensor} over rows
+and applying Proposition~\ref{prop:deletion} to each selected block gives
 \[
- \E_\pi F_A(t\circ\pi)\le 2\sum_{i=1}^n(u_i+u_{i+1})
-           \le 4\sum_{j=1}^{n+1} u_j
-           \le4\cdot4928d=19{,}712d.
+ F_A(t)\le4\E_S\sum_{i=1}^n c_i(t_S)\le4\cdot4928d=19{,}712d.
 \]
-The middle inequality counts how often one block position occurs in adjacent
-pairs. Coherence embeds both deletion alphabets into the full-block alphabet
-of named hypotheses without identifying distinct names. This proves
-Theorem~\ref{thm:pool}.
+All comparisons use the actual names in the union of the two finite
+output alphabets and that of the common reference. This proves
+Theorem~\ref{thm:pool} for each deterministic pairing.
 
 \section{Measurability}\label{sec:scope}
 We first establish integrability of the scalar statistic under a given law.
@@ -378,9 +373,8 @@ different selections are the same: each of them is the canonical name of
 its recorded full-pool trace. Consequently the record determines every
 summand of \eqref{eq:fixed}.
 If $F_A$ is almost everywhere measurable under the iid product law, its
-finite range gives integrability. For each position permutation $\pi$,
-$Z\circ\pi$ has the law of $Z$. Integrating \eqref{eq:pool} and interchanging
-a finite average and the integral gives $\E_Z F_A(Z)\le19{,}712d$.
+finite range gives integrability. Integrating \eqref{eq:pool} gives
+$\E_Z F_A(Z)\le19{,}712d$.
 
 \begin{definition}[Measurable canonical representatives]\label{def:selection}
 Give $\XX$ and $\HH$ measurable structures, and fix the order used by $g$.
@@ -778,12 +772,56 @@ such pattern. The union bound over ordered pairs gives collision
 probability at most $n^2/m\le1/8$. Hence $\E r\le\epsilon+1/8$.
 Population loss is $1/2$ for every measurable output since the fresh
 label is fair and independent. If $\epsilon\le1/8$, the expected
-generalization gap is at least $1/4$. The original CMI generalization
-inequality \cite[Theorem~4]{problem} then yields $I\ge n/32$. Taking
+generalization gap is at least $1/4$. The calculation below gives
+$I\ge n/32$ for the actual iid CMI. Taking
 $n>64c^2+32c$ and $m=8n^2$ contradicts \eqref{eq:conj} even for improper
-outputs. Lean verifies these steps with the published generalization
-inequality as an explicit premise. The benchmark class retains the
+outputs. The benchmark class retains the
 trace Borel and uniform-convergence scope of the finite-support example.
+
+\paragraph{The CMI bound from the iid experiment.}
+Let $W$ be the iid paired pool, $S$ its independent fair selector, and
+$Y=A(W_S)$ the actual classifier, with ordinary measurable loss. Write
+$P$ for the law of $(W,Y,S)$ and $Q$ for the law of $(W,Y)$ times the
+uniform law of $S$. Since $S$ is finite and independent of $W$,
+\[
+ \KL(P\|Q)=\log(2^n)-H(S\mid W,Y)=I(Y;S\mid W).
+\]
+Indeed, on slice $S=s$ the density of $P$ relative to $Q$ is $2^n p_s$,
+where $p_s$ is the Radon--Nikodym derivative of
+$P((W,Y)\in\cdot,S=s)$ with respect to the law of $(W,Y)$. The derivatives
+are the conditional selector probabilities and sum to one almost surely.
+
+Let $g(w,y,s)=\err_{w_{\bar s}}(y)-\err_{w_s}(y)$. Under $Q$, conditional
+on $(w,y)$, $g$ is a sum of independent fair signs times coefficients each
+of absolute value at most $1/n$. The inequality $\cosh u\le e^{u^2/2}$
+follows by comparing the series using $(2j)!\ge 2^j j!$. It gives
+$\E_Q e^{tg}\le e^{t^2/(2n)}$ for all real $t$. Let $Q_t$ have density
+$e^{tg}/\E_Q e^{tg}$ relative to $Q$. Nonnegativity of $\KL(P\|Q_t)$
+follows by integration of $v\log v\ge v-1$. Expanding its density then
+gives
+\[
+ I(Y;S\mid W)\ge t\E_P g-\log\E_Q e^{tg}
+ \ge t\E_P g-\frac{t^2}{2n}.
+\]
+When CMI is expressed as an expected conditional KL, apply the same
+calculation conditional on each pool. The selector marginal is still
+uniform almost surely and the moment bound is uniform in the pool.
+Averaging gives the same inequality.
+
+For every fixed selector, the selected and complementary columns are
+independent iid samples. The learner uses the selected column and its
+independent seed, so the complementary column has expected loss equal to
+the learner's population loss by Fubini. The training loss is the expected
+loss under $D^n$. In the completed seeded experiment, fixing a selector
+preserves completed measurability because its probability is positive.
+Measurability of each output event descends to the training column and
+seed through the independent unused column. Applying Fubini to the
+jointly measurable loss gives the same ordinary expected losses under
+completion. Hence $\E_P g$ is the expected generalization gap. Choosing
+$t=n\E_P g$ gives $I(Y;S\mid W)\ge n(\E_P g)^2/2$.
+This supplies the generalization step in the written proof. In the
+existing Lean development, the fair-label result uses the corresponding
+generalization inequality as an explicit premise.
 
 \subsection{A standard Borel class without a measurable ordered minimizer}
 
@@ -1021,14 +1059,14 @@ $\langle K_my,y\rangle=\|w\|^2\leq\|v\|^2$. Applying
 \eqref{eq:projection-overlap-form} to $y$ proves the operator-norm assertion.
 \end{proof}
 
-For the rest of the appendix, take $1\leq d\leq n$, $N=n+1$,
+For the rest of the appendix, take $1\leq d<n$, $N=n$,
 $t=n/d$, and $\rho=21/20$. Let $J$ be the largest nonnegative integer with
 $d16^J\leq n$. Set
 \[
   m_j=d4^j,\qquad b_j=\sqrt t\,\rho^{-j},\qquad
   a_j=b_j-b_{j+1},\qquad \tau=b_{J+1}.
 \]
-In particular, $m_J\leq n<N$. Define the positive operators
+In particular, $m_J^2\le nd<n^2$, so $m_J<N$. Define the positive operators
 \[
   B_0=K_{m_0},\qquad B_j=K_{m_j}-K_{m_{j-1}}\ (1\leq j\leq J),
   \qquad B_{J+1}=I-K_{m_J}.
@@ -1232,8 +1270,8 @@ Appendix~\ref{app:deletion}.
 \section{Optimizer regularity and deletion estimates}
 \label{app:deletion}
 
-Fix integers $1\le d\le n$ and a labeled block
-$T=((x_i,y_i))_{i\in I}$ with $|I|=N=n+1$. Let $G$ contain the least
+Fix integers $1\le d<n$ and a labeled block
+$T=((x_i,y_i))_{i\in I}$ with $|I|=N=n$. Let $G$ contain the least
 hypothesis for each distinct binary prediction vector on the block, using the
 same well-order as the learner. All laws compared below live on $G$, with zeros
 where necessary. Write $R_M$ for the projection of a trace onto the positions
@@ -1613,8 +1651,8 @@ $\mathbb E_U\sqrt{p_U(h)r_U(h)}\le\sqrt{\mathbb E_U p_U(h)\,\mathbb E_U r_U(h)}$
 for each $h$. Expanding the squared Hellinger distance and summing over $h$
 yields
 $H^2(\mathbb E_U p_U,\mathbb E_U r_U)\le\mathbb E_U H^2(p_U,r_U)$.
-This proves the last claim. The bound $4928d$ can now be used for the
-common-block deletion sum in the information argument.
+This proves the last claim. The bound $4928d$ controls the deletion sum
+on each selected block in the information argument.
 \end{proof}
 
 

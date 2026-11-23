@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Written proofs for the iid bounty scope
+
+The fair-label disproof now includes a direct proof of the information inequality on the actual iid experiment. A separate written theorem obtains the positive rates whenever a measurable ERM has the companion paper's global consistency property. The circle-orbit example rules out that premise even when an ordinary Borel ERM exists. [Disproof and information calculation](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md#fair-labels-and-improper-learners) · [Positive theorem](results/steinke-zakynthinou-agnostic-vc/PROOF.md#a-measurable-globally-consistent-erm-suffices)
+
 ## 2026-11-22 — Fair-label information lower bound for the literal iid conjecture
 
 For each positive sample size $`n`$, a VC-one benchmark with $`8n^2`$ sectors forces CMI at least $`n/32`$ for empirical tolerance at most $`1/8`$, even with improper outputs. Lean verifies the outer-measure realization of every label pattern on distinct sectors, the collision bound, the population loss, and the conclusion from the COLT paper's generalization inequality. [Lean theorem](lean/Conjectures/AgnosticVC/FairLabelObstruction.lean) · [Written proof](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md#fair-labels-and-improper-learners)

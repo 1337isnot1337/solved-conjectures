@@ -51,7 +51,38 @@ Fix any distinct sector pattern and any label vector. The subset of value tuples
 
 Let $`r(z)`$ be an arbitrary learner's expected empirical loss on a fixed sample, allowing it to return any binary classifier. If $`r`$ is completed-measurable and the samplewise empirical excess is at most $`\epsilon`$, then $`r\le\epsilon`$ almost surely under every distinct sector pattern and label vector. A positive-measure Borel subset of the opposite event would contain a perfectly fitted tuple. The union bound over ordered row pairs gives sector collision probability at most $`n^2/m\le1/8`$. Since the empirical loss is bounded by one, its expectation on the iid experiment is at most $`\epsilon+1/8`$.
 
-Every measurable binary output has population error exactly $`1/2`$, because the fresh label is fair and independent of its feature and the learner. If $`\epsilon\le1/8`$, the expected generalization gap is at least $`1/4`$. The generalization inequality of Theorem 4 bounds the gap by $`\sqrt{2I/n}`$ for iid CMI $`I`$, so $`I\ge n/32`$. Given $`c\ge0`$, choose $`n>64c^2+32c`$ and $`m=8n^2`$. Then the allowed excess $`c/\sqrt n`$ is at most $`1/8`$ and $`I>c`$. This argument uses the same trace Borel class and the same limitation on a common sharp upper bound for uniform deviation. Lean verifies the full-outer-measure fits, the iid collision estimate, the population loss and the lower bound, using the published generalization inequality as an explicit premise. [Lean theorem](../../lean/Conjectures/AgnosticVC/FairLabelObstruction.lean) · [COLT paper, Definition 3, Theorem 4 and Conjecture 6](https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf)
+Every measurable binary output has population error exactly $`1/2`$, because the fresh label is fair and independent of its feature and the learner. If $`\epsilon\le1/8`$, the expected generalization gap is at least $`1/4`$. The calculation below gives $`I\ge n/32`$ for the actual iid CMI $`I`$. Given $`c\ge0`$, choose $`n>64c^2+32c`$ and $`m=8n^2`$. Then the allowed excess $`c/\sqrt n`$ is at most $`1/8`$ and $`I>c`$. This argument uses the same trace Borel benchmark and the same limitation on a common sharp upper bound for uniform deviation. The existing Lean proof takes the published generalization inequality as an explicit premise. The following written proof supplies the inequality directly. [Lean theorem](../../lean/Conjectures/AgnosticVC/FairLabelObstruction.lean) · [COLT paper, Definition 3, Theorem 4 and Conjecture 6](https://proceedings.mlr.press/v125/steinke20b/steinke20b.pdf)
+
+### The information inequality for the actual iid experiment
+
+Write $`W=((Z_{i,0},Z_{i,1}))_{i=1}^n`$ for the iid pool, $`S`$ for the independent fair selector, and $`Y=A(W_S)`$ for the actual returned classifier. A private seed, when used, is independent of $`W,S`$. Take the output space with its measurable structure and assume joint measurability of the zero–one loss $`\ell(Y,z)`$. Work with ordinary expectations, allowing completion of the experiment. Write $`P`$ for the law of $`(W,Y,S)`$ and $`Q=\mathcal L(W,Y)\otimes U`$, where $`U`$ is the uniform law on selectors. The finite selector gives
+
+```math
+ D_{\rm KL}(P\|Q)= H(S\mid W)-H(S\mid W,Y)=I(Y;S\mid W).
+```
+
+For a direct justification, set $`\eta=\mathcal L(W,Y)`$. The measure $`\eta_s(B)=P\{(W,Y)\in B, S=s\}`$ is dominated by $`\eta`$. Its Radon–Nikodym derivative $`p_s`$ is the conditional probability of $`S=s`$ given $`(W,Y)`$. The derivatives sum to one $`\eta`$-almost everywhere. On selector slice $`s`$, $`P`$ has density $`p_s/U(s)`$ with respect to $`Q`$. Integrating the logarithm of that density gives $`\log(2^n)-\mathbb E_\eta[-\sum_s p_s\log p_s]`$. Independence of $`W`$ and $`S`$ gives $`H(S\mid W)=\log(2^n)`$. This gives the finite-selector conditional information directly. The conditional-kernel formulation also yields the bound by the pointwise argument below.
+
+For a fixed pool, output and selector define the complementary-minus-selected loss gap
+
+```math
+ g(w,y,s)=\frac1n\sum_{i=1}^n
+ \bigl(\ell(y,z_{i,1-s_i})-\ell(y,z_{i,s_i})\bigr).
+```
+
+Conditional on $`(w,y)`$ under $`Q`$, the summands divided by $`n`$ are independent signed real numbers of absolute value at most $`1/n`$. For every real $`t`$ their exponential moment is at most $`\exp(t^2/(2n))`$. Indeed, for coefficient $`a`$ the moment is $`\cosh(ta)\le\exp(t^2a^2/2)`$, by comparing series using $`(2k)!\ge2^k k!`$. Multiplying and then integrating over $`(W,Y)`$ proves the bound under $`Q`$.
+
+Tilt $`Q`$ by density $`e^{tg}/\mathbb E_Q e^{tg}`$ and call the resulting probability $`Q_t`$. It is equivalent to $`Q`$ because $`g`$ is bounded. Nonnegativity of KL follows by integrating $`x\log x\ge x-1`$. Applying it to $`P,Q_t`$ gives
+
+```math
+ D_{\rm KL}(P\|Q)
+   \ge t\,\mathbb E_P g - \log \mathbb E_Q e^{tg}
+   \ge t\,\mathbb E_P g-\frac{t^2}{2n}.
+```
+
+If CMI is given as the expected conditional KL, apply the same tilt for each fixed $`w`$ to the conditional joint law and the product of its marginals. The selector marginal remains $`U`$ almost surely. The moment bound holds for every fixed $`w,y`$, so averaging the resulting bound in $`w`$ gives the same inequality with that expected conditional KL on the left. Kernel integration for the bounded jointly measurable test $`g`$ gives $`\mathbb E_P g`$ on the right.
+
+For each fixed selector the selected and complementary columns are independent iid samples. The learner uses only the selected column and private randomness. Fubini therefore identifies $`\mathbb E_P g`$ with expected population loss minus expected training loss. The selected experiment has the ordinary training law $`D^n`$. For a Markov learner the expectation over outputs is kernel integration. In the seeded version with measurability on the completed full experiment, restriction to the fixed selector preserves completed measurability because every selector has positive probability. Each output event then depends only on the training and seed coordinates. Its completed measurability descends through the independent unused column by Fubini on a Borel or product-measurable version of its indicator. Thus the output is measurable on the completed training and seed experiment and is independent of the unused column. Joint measurability of the loss then makes the expected training loss completed-measurable by Fubini whenever seed expectations are defined on each fixed sample. Choosing $`t=n\mathbb E_P g`$ gives $`I\ge n(\mathbb E_P g)^2/2`$. Taking $`\mathbb E_P g\ge1/4`$ for the fair-label experiment gives the claimed $`n/32`$ lower bound.
 
 This obstruction applies to the empirical requirement under the literal all-class statement with completed-iid learners. It persists if the class is required to have distribution-uniform asymptotic convergence in outer probability. Standard Borel parametrization, analyticity of the finite-trace feasibility relation, and measurability of all uniform-deviation events are stronger regularity requirements. The written counterexample here does not impose them. Under those requirements the general completed-iid question remains open in this repository. The sponsors can clarify which regularity convention governs their bounty.
 
