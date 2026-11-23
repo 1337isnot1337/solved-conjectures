@@ -1,5 +1,7 @@
 # Linear information for approximate local hypothesis catalogues
 
+[Deterministic score deletion and accuracy calibration](calibrated-catalogue-votes.md) allow a different dimension in the catalogue and in the empirical error target. They also give a measurable voting learner with sample-size-independent whole-output CMI.
+
 Let $`H`$ be a binary class of VC dimension $`d\ge1`$, on standard Borel instance and hypothesis spaces with jointly Borel evaluation. Let $`G(T)`$ be a catalogue obtained by applying countably many universally measurable proper reconstruction maps to the feature subtuples of $`T`$ of length at most $`k`$. Include one fixed candidate. For every $`n\ge d`$, there is a universally measurable proper learner supported on $`G(T)`$ with
 
 ```math
