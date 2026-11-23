@@ -584,5 +584,27 @@
       "theorems": 1504,
       "tag": "passed"
     }
+  },
+  "actual_seeded_iid_output_obstruction": {
+    "theorems": [
+      "AgnosticVC.nullMeasurable_seed_rule_of_iid_pool",
+      "AgnosticVC.exists_finiteGroups_no_measurable_seeded_pool_output_rate"
+    ],
+    "scope": "Ordinary seed-wise loss expectations and completed measurability of the actual ambient output on the independent iid pool, fair selector and private seed suffice for the finite-support disproof. No separate conditional kernel is assumed.",
+    "local_command": "python3 scripts/verify_agnostic_vc.py",
+    "local_strict_elaboration": "passed",
+    "local_kernel_replayed_modules": 111,
+    "local_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1883,
+      "modules": 111,
+      "required": 120,
+      "theorems": 1510,
+      "tag": "passed"
+    }
   }
 }

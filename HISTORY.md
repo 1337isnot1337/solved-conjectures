@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — The actual seeded CMI experiment
+
+Lean verifies that a proper learner meeting the empirical rate cannot yield a measurable ambient output random variable in the original independent pool, selector and seed experiment. Restricting to the all-zero selector transfers completed measurability to the first column and seed. The proof uses ordinary seed expectations on each sample. [Lean theorem](lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) · [Written proof](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md)
+
 ## 2026-11-22 — Ambient standard Borel output and the agnostic VC disproof
 
 Lean verifies the finite-support disproof when conditional information is computed on the ambient standard Borel space of classifier codes. Properness still restricts the output to the trace Borel subclass. The manuscript now contains the finite-support construction, the conditional-law reduction, and the class-by-class uniform-convergence proof. [Lean theorem](lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) · [Manuscript](results/steinke-zakynthinou-agnostic-vc/paper.pdf)

@@ -2,7 +2,7 @@
 
 [Manuscript (PDF)](paper.pdf) · [LaTeX source](paper.tex) · [Scope audit](SCOPE.md)
 
-**Literal iid statement.** Lean proves that VC-one classes of disjoint finite supports defeat every proposed constant if the actual conditional selector/output law is a kernel on the completed iid pool. The examples have trace Borel hypothesis spaces and distribution-uniform convergence in outer probability. The statement for standard Borel hypothesis spaces with completed iid laws remains open here. [Disproof and scope](SCOPE.md#completion-of-an-iid-law) · [Lean theorem](../../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) · [Hosted replay](https://github.com/1337isnot1337/solved-conjectures/actions/runs/45081854915)
+**Literal iid statement.** Lean proves that VC-one classes of disjoint finite supports defeat every proposed constant if the actual independently seeded output in Definition 3 is a measurable random variable, even after completing the iid experiment. The examples have trace Borel hypothesis spaces and distribution-uniform convergence in outer probability. The statement for standard Borel hypothesis spaces with completed iid laws remains open here. [Disproof and scope](SCOPE.md#completion-of-an-iid-law) · [Lean theorem](../../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean)
 
 **Positive result under measurable selection.** For a binary hypothesis class of VC dimension at most $`d`$, with $`1\le d\le n`$, one randomized proper learner achieves both rates under the measurable-selection condition below. Its choice is independent of the data distribution. [Lean theorem](../../lean/Conjectures/AgnosticVC/Theorem.lean) · [Proof](PROOF.md)
 

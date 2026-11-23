@@ -16,6 +16,8 @@ The [rectangle density argument](../lean/Conjectures/AgnosticVC/IidRectangleDens
 
 The [ambient standard Borel version of the disproof](../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) pushes every proper output law into a standard Borel space of all tuple codes. The conditional joint kernel recovers the probabilities of ambient Borel events. Restricting those events to the proper subclass gives its completed training kernel.
 
+The independently seeded version in the same module rearranges the original iid pool, selector and seed by a measure-preserving map. For each ambient output event, intersecting with the all-zero selector produces a product event with an independent factor of positive measure. This recovers completed measurability of the training-and-seed rule and then of its empirical loss.
+
 The [conditional joint-law reduction](../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) recovers a completed-measurable training kernel from the actual selector/output law on the completed iid pool, with almost-everywhere agreement. It applies to arbitrary pointwise probability measures and gives the same finite-support counterexample to the empirical rate.
 
 ## Steinke–Zakynthinou threshold formalization scope

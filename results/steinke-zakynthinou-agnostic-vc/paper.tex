@@ -42,8 +42,9 @@ that the empirical minimizer chosen by a fixed global order be measurable
 under iid features with independent fair labels, after completion. This criterion assumes
 jointly measurable evaluation and measurable output singletons. The rates also hold for arbitrary classes on countable discrete
 domains. For the literal all-class iid statement, VC-one classes of disjoint
-finite supports rule out every proposed constant whenever the actual
-conditional selector/output distribution is a kernel on the completed pool.
+finite supports rule out every proposed constant whenever the actual output
+of the seeded iid experiment is measurable after completion. The same
+conclusion follows from a conditional kernel on the completed pool.
 These classes have distribution-uniform convergence in outer probability
 and use hypothesis spaces with the trace Borel sigma-algebra. The result
 leaves open the formulation for all standard Borel classes and completed iid
@@ -709,6 +710,20 @@ that the learner's pointwise laws are laws on $\{0\}\sqcup G$. Apply the
 all-zero selector argument to their pushforwards into the ambient space.
 Every measurable event of the proper class is the restriction of an
 ambient Borel event, so the proper output laws form a completed kernel.
+
+There is a version directly about the output random variable in
+Definition~3. An independently seeded learner whose ambient output is
+measurable on the completion of the full pool, selector and seed
+experiment cannot meet the stated empirical rate. Intersect each output
+event with the all-zero selector event. The intersection now depends on
+the first column and seed, together with a selector event of probability
+$2^{-m}$. Fubini descends the completed measurability to that first column
+and seed. Restricting ambient events to the trace Borel class gives joint
+measurability of the empirical loss there. A second Fubini argument makes
+its seed expectation measurable on the completed training law. It then
+obeys the same contradiction. This version uses ordinary seed expectations
+on every sample and does not require a separate conditional-kernel
+assumption. Both Fubini reductions are verified in Lean.
 
 Each of these classes is distribution-uniform Glivenko--Cantelli in
 outer probability. For any labeled law, split the feature marginal into
@@ -1623,6 +1638,7 @@ Completed iid ordered minimizer & \decl{iid_fixedLabel_readout_measurable}, \dec
 Completed iid counterexample & \decl{measure_selfHit_eq_zero_of_null_chain}, \decl{exists_unitInterval_vcOne_labeled_completed_kernel_no_rate} \\
 Finite supports and the conditional-law obstruction & \decl{exists_finiteGroups_no_measurable_selector_joint_rate} \\
 Standard Borel ambient output codes & \decl{exists_finiteGroups_no_measurable_ambient_joint_rate} \\
+Actual seeded output of the iid experiment & \decl{exists_finiteGroups_no_measurable_seeded_pool_output_rate} \\
 Conditional law on the completed pool & \decl{exists_completed_iid_joint_kernel} \\
 Orbit representatives on the circle & \decl{no_measurable_circleOrbitTransversal}, \decl{circleOrbit_orderedERM_counterexample} \\
 Recovery from the output law & \decl{properLearner_traceEvent_pos_iff}, \decl{measurable_canonicalRep_of_output} \\

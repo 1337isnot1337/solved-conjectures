@@ -56,6 +56,7 @@ run_cmd do
     `AgnosticVC.iid_null_finiteSupport_hits_le,
     `AgnosticVC.exists_finiteGroups_no_measurable_selector_joint_rate,
     `AgnosticVC.exists_finiteGroups_no_measurable_ambient_joint_rate,
+    `AgnosticVC.exists_finiteGroups_no_measurable_seeded_pool_output_rate,
     `AgnosticVC.noisySupportLearner_fixedPairing,
     `AgnosticVC.noisySupportLearner_iid_information_le,
     `AgnosticVC.finiteSupport_noisy_iid_rates,
