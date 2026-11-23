@@ -536,6 +536,12 @@
     }
   },
   "sharp_outer_deviation_bounded_overlap": {
+    "github_actions": {
+      "headSha": "0a641e9f9aa78f8f88842fe0e08c8a24247af52f",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/45106362410"
+    },
     "theorems": [
       "AgnosticVC.exists_piRectangle_outer_density",
       "AgnosticVC.null_support_hit_event_null",
@@ -555,6 +561,27 @@
       "modules": 111,
       "required": 118,
       "theorems": 1500,
+      "tag": "passed"
+    }
+  },
+  "ambient_standard_borel_conditional_joint_obstruction": {
+    "theorems": [
+      "AgnosticVC.exists_finiteGroups_no_measurable_ambient_joint_rate"
+    ],
+    "scope": "The finite-support obstruction still applies to ordinary conditional laws on an ambient standard Borel space of output codes. Pointwise proper output laws live on the trace Borel subclass, and each event in that subclass is the preimage of an ambient Borel event.",
+    "local_command": "python3 scripts/verify_agnostic_vc.py",
+    "local_strict_elaboration": "passed",
+    "local_kernel_replayed_modules": 111,
+    "local_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1875,
+      "modules": 111,
+      "required": 119,
+      "theorems": 1504,
       "tag": "passed"
     }
   }

@@ -14,7 +14,7 @@ For a single VC-one class of disjoint two-point supports, Lean verifies that the
 
 The [integer-noise learner](../lean/Conjectures/AgnosticVC/NoisySupportIid.lean) gives actual iid CMI at most $`20s`$ nats and all-sample expected empirical excess at most $`m/n+8/\sqrt n`$ for bounded support size $`m`$ and overlap $`s`$. The [sharp-deviation extension](../lean/Conjectures/AgnosticVC/NoisySupportSharpIid.lean) removes the support-size restriction given a sharp outer uniform-convergence bound. A positive-outer-mass event of too many hits on a null support would violate that bound under a reweighted iid law.
 
-The [conditional joint-law disproof](../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) derives the literal finite-support obstruction from measurability of the actual conditional selector/output kernel used for iid CMI. The [repeated-feature lemmas](../lean/Conjectures/AgnosticVC/RepeatedFeatureReadout.lean) verify a measurable version for any repeated-feature readout and an almost-sure hit bound for every null finite support.
+The [conditional joint-law disproof](../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) derives the literal finite-support obstruction from measurability of the actual conditional selector/output kernel used for iid CMI. Lean also verifies the version with conditional laws on an ambient standard Borel code space, where the proper subclass has the trace Borel sigma-algebra. The [repeated-feature lemmas](../lean/Conjectures/AgnosticVC/RepeatedFeatureReadout.lean) verify a measurable version for any repeated-feature readout and an almost-sure hit bound for every null finite support.
 
 ## Steinke–Zakynthinou threshold theorem
 

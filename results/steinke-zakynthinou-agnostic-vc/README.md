@@ -2,7 +2,9 @@
 
 [Manuscript (PDF)](paper.pdf) · [LaTeX source](paper.tex) · [Scope audit](SCOPE.md)
 
-**Partial result on the unrestricted conjecture.** Lean verifies both rates under the measurable-selection convention below. For a binary hypothesis class of VC dimension at most $`d`$, with $`1\le d\le n`$, one randomized learner returns a member of the class. The choice of learner is independent of the data distribution. [Lean theorem](../../lean/Conjectures/AgnosticVC/Theorem.lean) · [Earlier proof outline](PROOF.md)
+**Literal iid statement.** Lean proves that VC-one classes of disjoint finite supports defeat every proposed constant if the actual conditional selector/output law is a kernel on the completed iid pool. The examples have trace Borel hypothesis spaces and distribution-uniform convergence in outer probability. The statement for standard Borel hypothesis spaces with completed iid laws remains open here. [Disproof and scope](SCOPE.md#completion-of-an-iid-law) · [Lean theorem](../../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) · [Hosted replay](https://github.com/1337isnot1337/solved-conjectures/actions/runs/45081854915)
+
+**Positive result under measurable selection.** For a binary hypothesis class of VC dimension at most $`d`$, with $`1\le d\le n`$, one randomized proper learner achieves both rates under the measurable-selection condition below. Its choice is independent of the data distribution. [Lean theorem](../../lean/Conjectures/AgnosticVC/Theorem.lean) · [Proof](PROOF.md)
 
 | Guarantee for the same learner | Verified bound |
 | --- | --- |
@@ -35,11 +37,13 @@ Lean rules out globally Borel proper kernels even for a VC-one class on standard
 
 Lean verifies a counterexample to the empirical requirement for completed-iid learners on VC-one classes with finite positive supports. The stronger statement only requires measurability of the real-valued expected empirical loss on one completed iid law. The classes have distribution-uniform convergence in outer probability by the written proof. Their hypothesis parameter spaces carry the trace Borel sigma-algebra. [Finite-support counterexample](../../research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md) · [Lean disproof](../../lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean)
 
-Lean also derives the same disproof from the existence of the actual conditional joint kernel of the selector and output used to compute iid CMI. The theorem permits arbitrary pointwise probability laws on the hypothesis space and almost-everywhere agreement of the conditional kernel. [Lean joint-law disproof](../../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean)
+The conditional joint-law theorem permits arbitrary pointwise probability laws on the hypothesis space and almost-everywhere agreement of the conditional kernel. The result still holds when the conditional law uses the ambient standard Borel space of all output codes. The proper subclass carries the trace Borel sigma-algebra. [Lean joint-law disproof](../../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean)
 
 A fixed VC-one class of two-point supports suffices when the scalar expected loss must be universally measurable on the sample space. The same class has a Lean-verified measurable envelope for uniform iid deviation with expectation at most $`2/\sqrt n+2/n`$ for every labeled law and positive sample size. [Fixed-class disproof](../../lean/Conjectures/AgnosticVC/CompletedFiniteGroups.lean) · [Uniform-deviation bound](../../lean/Conjectures/AgnosticVC/FiniteSupportUniform.lean)
 
 With measurability under each completed iid law, Lean proves both rates for bounded-size, bounded-overlap supports. The same proper learner gives iid CMI at most $`20s`$ nats and expected empirical excess at most $`m/n+8/\sqrt n`$, where $`m`$ bounds support size and $`s`$ bounds pointwise overlap. [Lean theorem](../../lean/Conjectures/AgnosticVC/NoisySupportIid.lean)
+
+For supports of unrestricted size, the same information bound holds with empirical excess at most $`(16B^2+9)\sqrt{d/n}`$ if the sharp outer uniform-convergence premise holds with constant $`B`$. Bounded overlap $`s=O(d)`$ then yields both conjectured rates. [Lean theorem](../../lean/Conjectures/AgnosticVC/NoisySupportSharpIid.lean)
 
 For jointly Borel evaluation on standard Borel spaces, a written proof obtains both rates for every marginal dominated by a single reference law chosen in advance. The learner uses a countable subclass that misses at most $`2d`$ sample positions almost surely under that law, with a proper empirical minimizer on the exceptional inputs. [Dominated-marginal theorem](../../research/steinke-zakynthinou-agnostic-vc/dominated-marginals.md)
 

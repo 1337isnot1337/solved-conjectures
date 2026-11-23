@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Ambient standard Borel output and the agnostic VC disproof
+
+Lean verifies the finite-support disproof when conditional information is computed on the ambient standard Borel space of classifier codes. Properness still restricts the output to the trace Borel subclass. The manuscript now contains the finite-support construction, the conditional-law reduction, and the class-by-class uniform-convergence proof. [Lean theorem](lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) · [Manuscript](results/steinke-zakynthinou-agnostic-vc/paper.pdf)
+
 ## 2026-11-22 — Completed-iid rates for unbounded supports with bounded overlap
 
 Lean verifies the reweighted iid experiment and its occupancy bound. Under a sharp expected outer uniform-deviation bound $`B\sqrt{d/n}`$, the integer-noise learner attains actual iid CMI at most $`20s`$ nats and expected empirical excess at most $`(16B^2+9)\sqrt{d/n}`$ for overlap $`s`$, allowing infinite supports. [Lean learner theorem](lean/Conjectures/AgnosticVC/NoisySupportSharpIid.lean) · [Lean null-support argument](lean/Conjectures/AgnosticVC/IidRectangleDensity.lean)

@@ -32,19 +32,24 @@ We construct a proper randomized learner whose expected empirical error is
 within $583\sqrt{d/n}$ of the class optimum on every labeled sample. On every
 fixed pool of $2n$ observations, the selector information of the returned
 classifier, averaged over uniform orderings of the pool, is at most
-$19{,}712d$ nats. Exchangeability gives the iid bound whenever the pool
-statistic is almost everywhere measurable.
+$19{,}712d$ nats. Lean also verifies this bound for every fixed pairing
+without averaging, which proves the distribution-free Conjecture~4.18
+in the authors' companion paper. Exchangeability gives the iid bound
+whenever the pool statistic is almost everywhere measurable.
 
 For the original conditional mutual information, a sufficient condition is
 that the empirical minimizer chosen by a fixed global order be measurable
 under iid features with independent fair labels, after completion. This criterion assumes
 jointly measurable evaluation and measurable output singletons. The rates also hold for arbitrary classes on countable discrete
-domains. Two VC-one examples delineate the scope of the result. On the unit
-interval, every proper learner measurable for one completed iid law has
-empirical excess one on some sample at every positive size. On a separate
-standard Borel class, an ordinary Borel empirical minimizer exists, yet
-every global tie-breaking order makes our randomized learner nonmeasurable
-under one fixed iid law at every size $n\ge2$.
+domains. For the literal all-class iid statement, VC-one classes of disjoint
+finite supports rule out every proposed constant whenever the actual
+conditional selector/output distribution is a kernel on the completed pool.
+These classes have distribution-uniform convergence in outer probability
+and use hypothesis spaces with the trace Borel sigma-algebra. The result
+leaves open the formulation for all standard Borel classes and completed iid
+laws. On one such class, every global tie-breaking order makes our randomized
+learner nonmeasurable under a fixed iid law, although that class has a Borel
+empirical minimizer.
 \end{abstract}
 
 \section{Introduction}\label{sec:statement}
@@ -120,7 +125,9 @@ $\HH$, with the probability of each measurable output event a measurable
 function of the sample. The finite-pool statement uses no measurable-space
 structure. Conjecture~6 does not specify structures on all possible classes.
 Theorem~\ref{thm:iid} proves \eqref{eq:conj} under an explicit selection
-hypothesis. Section~\ref{sec:scope} explains why that qualification matters.
+hypothesis. Theorem~\ref{thm:finite-cmi-obstruction} rules out the literal
+all-class iid statement with a measurable conditional joint kernel.
+Section~\ref{sec:scope} gives the scope of both conclusions.
 
 \paragraph{Related work.}
 Steinke and Zakynthinou also ask realizable versions with sharper empirical
@@ -625,6 +632,113 @@ deviations is one on a set of outer probability one at every size.
 A convention ensuring the usual VC uniform-convergence theorem can
 exclude this class.
 
+\subsection{An obstruction from the actual conditional selector/output law}
+
+\begin{theorem}\label{thm:finite-cmi-obstruction}
+For every $m\ge2$, there is a VC-one class of distinct Borel classifiers
+with disjoint finite positive supports on $\{1,\ldots,m\}\times[0,1]$ and
+jointly measurable evaluation. Let $D$ choose a uniform sector, an independent
+uniform value, and label $1$. A proper learner assigns a probability measure
+$A(z)$ on the hypothesis space to each size-$m$ training sample. Suppose the
+prescribed conditional law of the selector and returned hypothesis has a
+kernel on the completed iid pool that agrees with this law almost everywhere.
+Then some sample has empirical optimum zero and expected empirical loss at
+least $1-1/m$.
+\end{theorem}
+
+\begin{proof}
+Let $G\subseteq[0,1]^m$ be a set of full Lebesgue outer measure such that
+each coordinate projection is injective on $G$. To construct $G$, enumerate
+the positive-measure Borel sets in $[0,1]^m$ using at most continuum many
+stages. At each stage choose a tuple in the listed set using fresh values
+in every coordinate. Fubini gives a positive-measure set of possible first
+coordinates with positive-measure sections. Such a set has cardinality
+continuum, so fewer than continuum many previous choices cannot exhaust it.
+Repeat this argument within the section one coordinate at a time. The
+resulting set meets every positive-measure Borel set, giving full outer
+measure.
+
+For each $g\in G$, include the indicator of $\{(i,g_i):1\le i\le m\}$,
+and include the zero classifier. Give $G$ the trace Borel sigma-algebra
+and adjoin an isolated parameter for zero. Evaluation uses coordinate
+equalities, so it is jointly measurable. Each nonempty support is disjoint
+from all the others. A point in a support is shattered. Two points in a
+common support cannot be separated, and no hypothesis contains two points
+from different supports. Thus the class has VC dimension one.
+
+Write the pool as two independent training-size columns $(z,z')$, each
+with law $D^m$. For every measurable output event $B$, the mass of
+$\{0^m\}\times B$ under the prescribed conditional joint law is exactly
+$2^{-m}A(z)(B)$. By the kernel assumption this scalar function of
+$(z,z')$ is measurable in the completion of $D^m\otimes D^m$. For every
+rational level, its strict superlevel set has the form $E\times\mathcal Z^m$,
+where $\mathcal Z$ is the labeled observation space. There is a Borel version
+of this set up to a subset of a Borel null set. Fubini gives a section in
+the second column where the symmetric difference with $E$ is contained in
+a $D^m$-null Borel set. Therefore $A(z)(B)$ is completed-measurable as a
+function of $z$. This holds for every $B$, so $A$ itself is a kernel on the
+completed training law. Joint evaluation and kernel integration now make
+$r(z)=\int\err_z(h)\,dA(z)(h)$ completed-measurable.
+
+Call a tuple separated if no two rows lie in one support. Every
+positive-measure Borel set of size-$m$ samples contains a separated tuple.
+Indeed, the set of prefixes whose last-coordinate sections have positive
+measure is itself Borel and of positive measure. By induction it contains
+a separated prefix. Any feature of that prefix excludes at most $m$ points
+from the final section, which has a nonatomic measure. The induction
+starts with a single row. On a separated tuple every proper hypothesis
+hits at most one row, so $r(z)\ge1-1/m$. Consequently the
+completed-measurable event $\{z:r(z)<1-1/m\}$ has measure zero, since a
+positive-measure completed event contains a positive-measure Borel subset.
+
+The event where row $i$ comes from sector $i$ has probability $m^{-m}$.
+The value tuple then has the Lebesgue product law. The value tuples in
+$G$ have full outer measure in this event, so some such sample lies
+outside the null event for $r$. On this sample its matching classifier
+fits every row, proving the result.
+\end{proof}
+
+Choose $m$ so that $c/\sqrt m<1-1/m$ to violate \eqref{eq:conj} for a
+proposed constant $c$. The contradiction uses the existence of the
+conditional law required for ordinary iid CMI, regardless of its
+information value. Lean verifies the reduction for arbitrary pointwise
+output measures and a kernel that need only agree almost everywhere.
+It also verifies the version where the conditional law uses the ambient
+standard Borel output space $\{0\}\sqcup[0,1]^m$. Properness still means
+that the learner's pointwise laws are laws on $\{0\}\sqcup G$. Apply the
+all-zero selector argument to their pushforwards into the ambient space.
+Every measurable event of the proper class is the restriction of an
+ambient Borel event, so the proper output laws form a completed kernel.
+
+Each of these classes is distribution-uniform Glivenko--Cantelli in
+outer probability. For any labeled law, split the feature marginal into
+its countable set of atoms and its nonatomic part. Almost surely all
+sampled features in the nonatomic part are distinct, so that part adds
+at most $m/n$ to the absolute empirical deviation of any support's
+signed mass. On the atoms, the sum of variances of the empirical signed
+masses of the disjoint supports is at most $1/n$. The expected maximum
+absolute deviation of these masses is bounded by the expected square
+root of their sum of squares, at most $1/\sqrt n$. Adding the deviation
+of the zero classifier, at most $1/(2\sqrt n)$ in expectation, gives
+$3/(2\sqrt n)+m/n$ in outer expectation. At $n=m$ under the displayed
+law the expected outer deviation is at least $1-1/e$. To see this,
+take the first row in each occupied sector and project $G$ onto those
+sectors. The projection has full outer measure, as does its inverse
+image under the sampled rows by Fubini. Some support thus contains one
+row from each occupied sector on a set of full outer measure conditional
+on the sector pattern. Each support has population mass zero. The
+expected fraction of occupied sectors is $1-(1-1/m)^m\ge1-1/e$.
+The examples therefore offer class-by-class uniform convergence. A
+single absolute sharp VC uniform-convergence bound can exclude this family.
+
+The trace parameter space is outside the standard Borel formulation.
+If it admitted a standard Borel parametrization with jointly Borel
+evaluation, the event that a fixed-sector value tuple is covered by a
+single classifier would be analytic and thus Lebesgue measurable. That
+event is $G$. It has inner measure zero by Fubini because its sections
+over the first coordinate have at most one element, while its outer
+measure is one.
+
 \subsection{A standard Borel class without a measurable ordered minimizer}
 
 The null-chain theorem imposes a limitation on every proper learner for its
@@ -729,15 +843,18 @@ explicitly assume a measurable loss \cite[Theorem~5.1]{framework}.
 For a related CMI bound, Haghifam et al. explicitly assume the measurability
 of their least consistent hypothesis and give countability of the domain as
 one sufficient condition \cite[Appendix~F, footnote~6]{haghifamfull}.
-If classes such as the one in Theorem~\ref{thm:null-chain} are admitted,
-the empirical inequality already fails for proper learners on completed
-iid laws. If the intended class is restricted by the measurability
-conventions of VC learning, that example can be excluded. Proposition~\ref{prop:circle} shows that the
+For the printed all-class quantifier, Theorem~\ref{thm:finite-cmi-obstruction}
+gives a counterexample under the conditional-kernel reading of
+Definition~3. A convention requiring standard Borel hypothesis parameters
+or the sharp uniform-convergence bound can exclude the counterexample.
+Proposition~\ref{prop:circle} shows that the
 ordered construction itself can fail on standard Borel spaces. Proving
 \eqref{eq:conj} for all such classes under iid completion would require
 a different choice of learner on at least some of them. Proposition~\ref{prop:circle-ordinary}
 shows that ordinary Borel empirical minimization on the circle class is
-possible. Its information cost is a further question.
+possible. A subsequent learner using local reconstructions attains both
+rates on that class, as verified in
+\href{https://github.com/1337isnot1337/solved-conjectures/blob/414c3aeef6c520cb12487180e9d20606660a8165/lean/Conjectures/AgnosticVC/OrbitIidRates.lean}{Lean}.
 
 \appendix
 \section{The empirical-process estimate with constants}\label{app:emp}
@@ -1476,9 +1593,13 @@ with a \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/44
 The completed-law rate and counterexample are in the
 \href{https://github.com/1337isnot1337/solved-conjectures/tree/3d5e7c960f9eb0775ff61c60c7b5a350d8f65ad4/lean/Conjectures/AgnosticVC}{completed-law development}, with a
 \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/44989198250}{77-module kernel replay}.
-The \href{https://github.com/1337isnot1337/solved-conjectures/tree/4aca5e474562883d5d002eae08c242249237e9e6/lean/Conjectures/AgnosticVC}{source for the full manuscript}
+The \href{https://github.com/1337isnot1337/solved-conjectures/tree/4aca5e474562883d5d002eae08c242249237e9e6/lean/Conjectures/AgnosticVC}{extended source}
 and its \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/44991137113}{verification run} also include the circle examples, the
 conditional kernel for a completed iid law, and the uniform-deviation theorem for the null chain.
+The \href{https://github.com/1337isnot1337/solved-conjectures/blob/dcd59206b495555f5af80455e332592d23e6f5d3/lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean}{finite-support conditional-law counterexample}
+passed a \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/45081854915}{107-module public kernel replay}.
+The \href{https://github.com/1337isnot1337/solved-conjectures/blob/460d7d7ee512722a4f0c3dc5a08c8f26c1a3cbdb/lean/Conjectures/AgnosticVC/FixedPairing.lean}{fixed-pairing proof of Conjecture~4.18}
+passed a \href{https://github.com/1337isnot1337/solved-conjectures/actions/runs/45046086129}{separate public kernel replay}.
 
 {\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.13}
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{.36\linewidth}>{\raggedright\arraybackslash}p{.60\linewidth}@{}}
@@ -1500,6 +1621,8 @@ Countable initial segment realizing all traces & \decl{hasMeasurableCanonicalRep
 Ordered empirical risk minimization & \decl{hasMeasurableCanonicalRepresentatives_of_orderedERM}, \decl{steinkeZakynthinou_of_measurable_orderedERM} \\
 Completed iid ordered minimizer & \decl{iid_fixedLabel_readout_measurable}, \decl{steinkeZakynthinou_of_iid_orderedERM} \\
 Completed iid counterexample & \decl{measure_selfHit_eq_zero_of_null_chain}, \decl{exists_unitInterval_vcOne_labeled_completed_kernel_no_rate} \\
+Finite supports and the conditional-law obstruction & \decl{exists_finiteGroups_no_measurable_selector_joint_rate} \\
+Standard Borel ambient output codes & \decl{exists_finiteGroups_no_measurable_ambient_joint_rate} \\
 Conditional law on the completed pool & \decl{exists_completed_iid_joint_kernel} \\
 Orbit representatives on the circle & \decl{no_measurable_circleOrbitTransversal}, \decl{circleOrbit_orderedERM_counterexample} \\
 Recovery from the output law & \decl{properLearner_traceEvent_pos_iff}, \decl{measurable_canonicalRep_of_output} \\

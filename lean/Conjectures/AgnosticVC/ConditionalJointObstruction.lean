@@ -1,5 +1,6 @@
 module
 
+public import Conjectures.AgnosticVC.BorelExample
 public import Conjectures.AgnosticVC.CompletedFiniteGroups
 public import Conjectures.AgnosticVC.IidConditionalKernel
 
@@ -147,6 +148,78 @@ theorem exists_finiteGroups_no_measurable_selector_joint_rate (c : ℝ) :
   let L : Kernel (NullMeasurableSpace (Fin (n + 1) → (Fin (n + 1) × unitInterval) × Bool)
       (Measure.pi fun _ : Fin (n + 1) => D)) (Unit ⊕ G) :=
     ⟨A, measurable_learner_of_iid_selector_joint D A J hJ⟩
+  let : IsMarkovKernel L := ⟨hA⟩
+  exact hfail L
+
+/-- The canonical inclusion of proper outputs in the full space of tuple codes. -/
+def groupOutputCode {m : ℕ} (G : Set (Fin m → unitInterval)) :
+    Unit ⊕ G → Unit ⊕ (Fin m → unitInterval) :=
+  Sum.map id Subtype.val
+
+theorem measurable_groupOutputCode {m : ℕ} (G : Set (Fin m → unitInterval)) :
+    Measurable (groupOutputCode G) :=
+  measurable_id.sumMap measurable_subtype_coe
+
+private theorem measurableSet_groupOutputCode_preimage {m : ℕ}
+    {G : Set (Fin m → unitInterval)} {B : Set (Unit ⊕ G)} (hB : MeasurableSet B) :
+    ∃ C : Set (Unit ⊕ (Fin m → unitInterval)), MeasurableSet C ∧ groupOutputCode G ⁻¹' C = B := by
+  obtain ⟨hleft, hright⟩ := measurableSet_sum_iff.mp hB
+  obtain ⟨C, hC, he⟩ : ∃ C : Set (Fin m → unitInterval), MeasurableSet C ∧
+      Subtype.val ⁻¹' C = Sum.inr ⁻¹' B := hright
+  let U : Set (Unit ⊕ (Fin m → unitInterval)) := Sum.inl '' (Sum.inl ⁻¹' B) ∪ Sum.inr '' C
+  refine ⟨U, hleft.inl_image.union hC.inr_image, ?_⟩
+  ext a
+  cases a with
+  | inl a =>
+    change Sum.inl a ∈ U ↔ Sum.inl a ∈ B
+    constructor
+    · rintro (⟨b,hb,hba⟩ | ⟨b,_,hba⟩)
+      · change Sum.inl b ∈ B at hb
+        exact Sum.inl_injective hba ▸ hb
+      · cases hba
+    · intro ha
+      exact Or.inl ⟨a,ha,rfl⟩
+  | inr a =>
+    have ha : (a : Fin m → unitInterval) ∈ C ↔ Sum.inr a ∈ B := by
+      change a ∈ Subtype.val ⁻¹' C ↔ a ∈ Sum.inr ⁻¹' B
+      rw [he]
+    simpa [U, groupOutputCode] using ha
+
+/-- The same disproof when the conditional law is taken on the ambient
+standard Borel space of codes, and properness still restricts each output to
+the prescribed subclass. The subclass itself has the trace sigma-algebra. -/
+theorem exists_finiteGroups_no_measurable_ambient_joint_rate (c : ℝ) :
+    ∃ n : ℕ, let X := Fin (n + 1) × unitInterval
+      let D := (sectorLaw (n + 1) (volume : Measure unitInterval)).map (fun x => (x,true))
+      let Z := Fin (n + 1) → X × Bool
+      let K := Unit ⊕ (Fin (n + 1) → unitInterval)
+      ∃ G : Set (Fin (n + 1) → unitInterval),
+        let predict := groupPredict G
+        StandardBorelSpace K ∧ IsProbabilityMeasure D ∧ Function.Injective predict ∧
+        Measurable (fun p : X × (Unit ⊕ G) => predict p.2 p.1) ∧
+        HasVCDimensionAtMost predict 1 ∧ ¬ HasVCDimensionAtMost predict 0 ∧
+        (∀ h, {x : X | predict h x = true}.Finite) ∧
+        ∀ (A : Z → Measure (Unit ⊕ G)), (∀ z, IsProbabilityMeasure (A z)) →
+          ∀ (J : Kernel (IidCompletedPool (n + 1) D) (Selector (n + 1) × K)),
+          (∀ᵐ p ∂(Measure.pi fun _ : Fin (n + 1) × Bool => D),
+            J p = conditionalSelectorOutput (fun z => (A z).map (groupOutputCode G)) p) →
+          ¬ ∀ z, (∫ h, empiricalError predict z h ∂A z) ≤
+            (⨅ h, empiricalError predict z h) + c * Real.sqrt (1 / ((n + 1 : ℕ) : ℝ)) := by
+  obtain ⟨n,G,hD,hinj,hmeas,hvc,hvc0,hfinite,hfail⟩ := exists_completed_finiteGroups_no_rate c
+  refine ⟨n,G,standardBorelSpace_sum,hD,hinj,hmeas,hvc,hvc0,hfinite,?_⟩
+  intro A hA J hJ
+  let D := (sectorLaw (n + 1) (volume : Measure unitInterval)).map (fun x => (x,true))
+  have hcode := measurable_learner_of_iid_selector_joint D
+    (fun z => (A z).map (groupOutputCode G)) J hJ
+  let Train := NullMeasurableSpace (Fin (n + 1) → (Fin (n + 1) × unitInterval) × Bool)
+      (Measure.pi fun _ : Fin (n + 1) => D)
+  let L : Kernel Train (Unit ⊕ G) := ⟨A, by
+    apply Measure.measurable_of_measurable_coe
+    intro B hB
+    obtain ⟨C, hC, rfl⟩ := measurableSet_groupOutputCode_preimage hB
+    have h := (Measure.measurable_coe hC).comp hcode
+    change Measurable (fun z : Train => ((A z).map (groupOutputCode G)) C) at h
+    simpa only [Measure.map_apply (measurable_groupOutputCode G) hC] using h⟩
   let : IsMarkovKernel L := ⟨hA⟩
   exact hfail L
 

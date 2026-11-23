@@ -14,6 +14,8 @@ The [discrete-noise learner](../lean/Conjectures/AgnosticVC/NoisySupportLearner.
 
 The [rectangle density argument](../lean/Conjectures/AgnosticVC/IidRectangleDensity.lean) changes the sampling law to amplify positive outer mass of null-support hits. It gives the [completed-iid extension to unbounded-size supports](../lean/Conjectures/AgnosticVC/NoisySupportSharpIid.lean) under bounded overlap and sharp one-sided outer uniform convergence.
 
+The [ambient standard Borel version of the disproof](../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) pushes every proper output law into a standard Borel space of all tuple codes. The conditional joint kernel recovers the probabilities of ambient Borel events. Restricting those events to the proper subclass gives its completed training kernel.
+
 The [conditional joint-law reduction](../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) recovers a completed-measurable training kernel from the actual selector/output law on the completed iid pool, with almost-everywhere agreement. It applies to arbitrary pointwise probability measures and gives the same finite-support counterexample to the empirical rate.
 
 ## Steinke–Zakynthinou threshold formalization scope
