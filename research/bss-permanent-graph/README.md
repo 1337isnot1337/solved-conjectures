@@ -1,6 +1,6 @@
 # Quantitative decision lower bound for the permanent graph
 
-Status: complete written derivation from two imported results; adversarial review in progress. This is a consequence of existing theorems, not a newly solved named conjecture. No Lean formalization of this deduction is claimed.
+Status: complete written derivation from two imported results, with three completed internal adversarial reviews. This is a consequence of existing theorems, not a newly solved named conjecture. No Lean formalization of this deduction is claimed.
 
 There are constants $`b>0`$ and $`m_1`$ such that, for every $`m\ge m_1`$, any deterministic complex algebraic computation tree deciding
 
@@ -23,6 +23,7 @@ The same obstruction applies to a uniform BSS machine with any fixed finite list
 
 - [Full proof and model definitions](PROOF.md).
 - [Sources, exact versions, and scope of the audit](SOURCES.md).
+- [Adversarial review and validation record](REVIEW.md).
 - [Tracking issue #247](https://github.com/1337isnot1337/solved-conjectures/issues/247).
 - [Separate P_C versus NP_C campaign, issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248).
 

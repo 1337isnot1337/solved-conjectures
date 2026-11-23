@@ -1,5 +1,13 @@
 # History
 
+## 2026-11-23 — Quantitative permanent-graph decision consequence
+
+Added a complete written deduction of the $`2^{\Omega((\log m)^{4/3})}`$ deterministic complex computation-tree lower bound for deciding the permanent graph. The proof combines the pinned Anthropic border lower bound with Bürgisser's corrected factor theorem, handles defined divisions through a single path numerator, and records an explicit $`m^2\log m`$ loss, an elementary $`m^{10}`$ alternative, arbitrary constants, and the uniform BSS simulation. Three internal adversarial reviews found no remaining gap after model clarifications. This is recorded as a consequence of imported theorems, with no additional solved-conjecture count, no new Lean-verification claim, and no $`\mathsf P_{\mathbb C}\ne\mathsf{NP}_{\mathbb C}`$ claim. [Proof and audits](research/bss-permanent-graph/) · [Issue #247](https://github.com/1337isnot1337/solved-conjectures/issues/247) · [PR #249](https://github.com/1337isnot1337/solved-conjectures/pull/249) · [Separate BSS campaign #248](https://github.com/1337isnot1337/solved-conjectures/issues/248)
+
+## 2026-11-23 — Conditional VP versus VNP application to sparse 3-CNF
+
+Added an explicit 3-occurrence 3-CNF encoding whose weighted satisfying-assignment polynomial projects to the Hamiltonian-cycle polynomial in every characteristic. Finite checks cover n=3,4 and structural checks n=5..8. The suggested border-circuit lower bound uses an external, presently unreviewed Anthropic proof claim; this is not counted as a solved conjecture. [Construction and checks](research/vp-vnp-bounded-occurrence-3cnf/README.md).
+
 ## 2026-11-22 — Written proofs for the iid bounty scope
 
 The fair-label disproof now includes a direct proof of the information inequality on the actual iid experiment. A separate written theorem obtains the positive rates whenever a measurable ERM has the companion paper's global consistency property. The circle-orbit example rules out that premise even when an ordinary Borel ERM exists. [Disproof and information calculation](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md#fair-labels-and-improper-learners) · [Positive theorem](results/steinke-zakynthinou-agnostic-vc/PROOF.md#a-measurable-globally-consistent-erm-suffices)
