@@ -1,6 +1,6 @@
 # Quantitative decision lower bound for the permanent graph
 
-Status: complete written derivation from two imported results, with three completed internal adversarial reviews. This is a consequence of existing theorems, not a newly solved named conjecture. No Lean formalization of this deduction is claimed.
+Status: complete written derivation from two imported results, with three completed internal adversarial reviews. Anthropic's VP ≠ VNP theorem and its pinned border lower bound are treated as valid under the repository's [standing research assumption](../../AGENTS.md#standing-research-assumption-anthropics-vp-versus-vnp-proof); Bürgisser's factor theorem is the other imported input. This is a consequence of the imported theorems, not a newly solved named conjecture. No Lean formalization of this deduction or independent formal verification of the imported theorem is claimed.
 
 There are constants $`b>0`$ and $`m_1`$ such that, for every $`m\ge m_1`$, any deterministic complex algebraic computation tree deciding
 

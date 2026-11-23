@@ -1,12 +1,16 @@
 # History
 
+## 2026-11-23 — Adoption of the Anthropic VP ≠ VNP standing assumption
+
+The [agent policy](AGENTS.md#standing-research-assumption-anthropics-vp-versus-vnp-proof) now directs repository work to take Anthropic's VP ≠ VNP theorem, proof, and stated scope as true and accurate. The root index, catalogue, and weighted 3-CNF note now describe the border lower bound as a consequence of this imported theorem rather than as a speculative if-then claim. This research premise is not a statement of independent external review or a new Lean formalization; new reductions and implications still require proofs.
+
 ## 2026-11-23 — Quantitative permanent-graph decision consequence
 
 Added a complete written deduction of the $`2^{\Omega((\log m)^{4/3})}`$ deterministic complex computation-tree lower bound for deciding the permanent graph. The proof combines the pinned Anthropic border lower bound with Bürgisser's corrected factor theorem, handles defined divisions through a single path numerator, and records an explicit $`m^2\log m`$ loss, an elementary $`m^{10}`$ alternative, arbitrary constants, and the uniform BSS simulation. Three internal adversarial reviews found no remaining gap after model clarifications. This is recorded as a consequence of imported theorems, with no additional solved-conjecture count, no new Lean-verification claim, and no $`\mathsf P_{\mathbb C}\ne\mathsf{NP}_{\mathbb C}`$ claim. [Proof and audits](research/bss-permanent-graph/) · [Issue #247](https://github.com/1337isnot1337/solved-conjectures/issues/247) · [PR #249](https://github.com/1337isnot1337/solved-conjectures/pull/249) · [Separate BSS campaign #248](https://github.com/1337isnot1337/solved-conjectures/issues/248)
 
-## 2026-11-23 — Conditional VP versus VNP application to sparse 3-CNF
+## 2026-11-23 — VP versus VNP application to sparse 3-CNF
 
-Added an explicit 3-occurrence 3-CNF encoding whose weighted satisfying-assignment polynomial projects to the Hamiltonian-cycle polynomial in every characteristic. Finite checks cover n=3,4 and structural checks n=5..8. The suggested border-circuit lower bound uses an external, presently unreviewed Anthropic proof claim; this is not counted as a solved conjecture. [Construction and checks](research/vp-vnp-bounded-occurrence-3cnf/README.md).
+Added an explicit 3-occurrence 3-CNF encoding whose weighted satisfying-assignment polynomial projects to the Hamiltonian-cycle polynomial in every characteristic. Finite checks cover n=3,4 and structural checks n=5..8. The border-circuit lower bound is obtained from the Anthropic VP ≠ VNP theorem, now adopted as valid for repository research under `AGENTS.md`. The original source had not received independent human review when this note was first written. This is not counted as an additional solved conjecture. [Construction and checks](research/vp-vnp-bounded-occurrence-3cnf/README.md).
 
 ## 2026-11-22 — Written proofs for the iid bounty scope
 
