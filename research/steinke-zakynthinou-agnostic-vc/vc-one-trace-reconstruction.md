@@ -2,7 +2,7 @@
 
 Let $`X`$ and $`H`$ be standard Borel spaces and let evaluation $`H\times X\to\{0,1\}`$ be Borel. Assume the class has VC dimension one. There is a countable family of universally measurable proper reconstruction maps using one observed feature, together with a fixed hypothesis, that realize every feasible trace on every finite sample.
 
-Consequently, the [local reconstruction theorem](measurable-local-reconstruction.md) gives one proper learner with empirical excess at most $`583/\sqrt n`$ on every sample and whole-output iid CMI at most $`197{,}152`$ nats for every iid law, using completed measurability. These conclusions hold in ZFC.
+Consequently, the [local reconstruction theorem](measurable-local-reconstruction.md) gives one proper learner with expected empirical excess at most $`583/\sqrt n`$ on every sample and whole-output iid CMI at most $`197{,}152`$ nats for every iid law, using completed measurability. These conclusions hold in ZFC.
 
 ## Ordering the sections containing an anchor
 
