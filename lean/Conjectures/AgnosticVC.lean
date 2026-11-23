@@ -37,6 +37,8 @@ public import Conjectures.AgnosticVC.RepeatedFeatureReadout
 public import Conjectures.AgnosticVC.ConditionalJointObstruction
 public import Conjectures.AgnosticVC.NoisySupportLearner
 public import Conjectures.AgnosticVC.NoisySupportIid
+public import Conjectures.AgnosticVC.IidRectangleDensity
+public import Conjectures.AgnosticVC.NoisySupportSharpIid
 public import Conjectures.AgnosticVC.IidOrderedRates
 public import Conjectures.AgnosticVC.IidConditionalKernel
 public import Conjectures.AgnosticVC.OrbitOutputExample

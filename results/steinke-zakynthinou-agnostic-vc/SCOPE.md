@@ -67,6 +67,8 @@ On the same two-point class, a proper learner that uses completed iid measurabil
 
 Lean verifies the full discrete-noise construction for supports of size at most $`m`$ and pointwise overlap at most $`s`$. One learner satisfies $`20s`$ nats of actual CMI under every completed iid law and all-sample expected empirical excess at most $`m/n+8/\sqrt n`$. This includes disjoint two-point supports with $`m=2`$ and $`s=1`$. [Lean expected loss and iid information theorem](../../lean/Conjectures/AgnosticVC/NoisySupportIid.lean)
 
+For supports of unrestricted size and pointwise overlap at most $`s`$, a sharp outer uniform-convergence bound with constant $`B`$ gives the same $`20s`$ iid information bound and empirical excess $`(16B^2+9)\sqrt{d/n}`$. Lean verifies the reweighting argument that rules out too many iid hits on a null support. If $`s=O(d)`$, the theorem gives both conjectured rates on this class. [Lean sharp-deviation theorem](../../lean/Conjectures/AgnosticVC/NoisySupportSharpIid.lean)
+
 If a sharp outer expected uniform-convergence bound holds with one numerical constant for every iid distribution and every sample size, a countable subclass suffices for all feature laws dominated by one reference. This conclusion even allows nonmeasurable finite-trace feasibility. The proof uses a product cell of high outer density to turn any positive-outer-probability trace-approximation failure into a violation of the sharp convergence bound under a reweighted iid law. [Written dominated-marginal extension](../../research/steinke-zakynthinou-agnostic-vc/dominated-marginals.md#extension-from-the-sharp-outer-uniform-convergence-rate)
 
 ## A standard Borel class where the constructed learner fails

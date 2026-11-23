@@ -360,6 +360,8 @@ modules=(
   Conjectures.AgnosticVC.ConditionalJointObstruction
   Conjectures.AgnosticVC.NoisySupportLearner
   Conjectures.AgnosticVC.NoisySupportIid
+  Conjectures.AgnosticVC.IidRectangleDensity
+  Conjectures.AgnosticVC.NoisySupportSharpIid
   Conjectures.AgnosticVC.IidNullChainExample
   Conjectures.AgnosticVC.LabeledNullChain
   Conjectures.AgnosticVC

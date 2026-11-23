@@ -214,6 +214,42 @@ theorem noisyFiniteSupport_iid_information_le [MeasurableSpace X] [MeasurableEq 
   exact noisySupportLearner_iid_information_le hk hnk (Int.natCast_nonneg m) predict hfin hinc D hC
     (fun h _ => hp h) hcount
 
+/-- The square-root choice of the noise scale gives the stated empirical rate
+for any nonnegative integer offset. -/
+theorem noisySupportLearner_empirical_le_natSqrt (hn : 0 < n) (m : ℕ)
+    (predict : H → X → Bool) (hfin : ∀ x, {h | predict h x = true}.Finite) (z : Fin n → X × Bool) :
+    let A := noisySupportLearner (Nat.succ_pos n.sqrt) (m : ℤ) predict hfin (n := n)
+    let err := empiricalError (supportPredict predict) z
+    (∑' h, (A z h).toReal * err h) ≤ (⨅ h, err h) + ((m : ℝ) / n + 8 / Real.sqrt n) := by
+  intro A err
+  let k := n.sqrt + 1
+  have hk : 0 < k := Nat.succ_pos _
+  have hnR : 0 < (n : ℝ) := Nat.cast_pos.mpr hn
+  have hroot : 1 ≤ Real.sqrt (n : ℝ) := by
+    simpa only [Real.sqrt_one] using (Real.sqrt_le_sqrt (by exact_mod_cast hn : (1 : ℝ) ≤ n))
+  have hs : (n.sqrt : ℝ) ≤ Real.sqrt (n : ℝ) := by
+    apply Real.le_sqrt_of_sq_le
+    exact_mod_cast Nat.sqrt_le' n
+  have hk' : (k : ℝ) ≤ 2 * Real.sqrt (n : ℝ) := by
+    change ((n.sqrt + 1 : ℕ) : ℝ) ≤ _
+    push_cast
+    linarith only [hs,hroot]
+  have hsq := Real.sq_sqrt hnR.le
+  have hnoise : 4*(k : ℝ) / n ≤ 8 / Real.sqrt n := by
+    calc
+      _ = (4*(k : ℝ) / Real.sqrt n) / Real.sqrt n := by
+        rw [← div_mul_eq_div_div, ← sq, hsq]
+      _ ≤ _ := by
+        apply (div_le_div_iff_of_pos_right (Real.sqrt_pos.mpr hnR)).mpr
+        apply (div_le_iff₀ (Real.sqrt_pos.mpr hnR)).mpr
+        linarith only [hk']
+  have hrate : ((m : ℝ) + 4*(k : ℝ)) / n ≤ (m : ℝ) / n + 8 / Real.sqrt n := by
+    rw [add_div]
+    exact add_le_add le_rfl hnoise
+  have hbound := noisySupportLearner_empirical_le hn hk (Int.natCast_nonneg m) predict hfin z
+  push_cast at hbound
+  exact hbound.trans (add_le_add le_rfl hrate)
+
 /-- One proper learner has both bounds for a bounded-overlap family of finite
 supports. Its reference is the zero predictor. Its randomness and offset do
 not depend on the iid law. -/
@@ -237,31 +273,6 @@ theorem finiteSupport_noisy_iid_rates [MeasurableSpace X] [MeasurableEq X] [Deci
   refine ⟨noisySupportLearner hk (m : ℤ) predict hfin, ?_, ?_⟩
   · intro D _
     exact noisyFiniteSupport_iid_information_le S hsize hk hnk hfin hinc D
-  · intro z
-    have hnR : 0 < (n : ℝ) := Nat.cast_pos.mpr hn
-    have hroot : 1 ≤ Real.sqrt (n : ℝ) := by
-      simpa only [Real.sqrt_one] using (Real.sqrt_le_sqrt (by exact_mod_cast hn : (1 : ℝ) ≤ n))
-    have hs : (n.sqrt : ℝ) ≤ Real.sqrt (n : ℝ) := by
-      apply Real.le_sqrt_of_sq_le
-      exact_mod_cast Nat.sqrt_le' n
-    have hk' : (k : ℝ) ≤ 2 * Real.sqrt (n : ℝ) := by
-      change ((n.sqrt + 1 : ℕ) : ℝ) ≤ _
-      push_cast
-      linarith only [hs,hroot]
-    have hsq := Real.sq_sqrt hnR.le
-    have hnoise : 4*(k : ℝ) / n ≤ 8 / Real.sqrt n := by
-      calc
-        _ = (4*(k : ℝ) / Real.sqrt n) / Real.sqrt n := by
-          rw [← div_mul_eq_div_div, ← sq, hsq]
-        _ ≤ _ := by
-          apply (div_le_div_iff_of_pos_right (Real.sqrt_pos.mpr hnR)).mpr
-          apply (div_le_iff₀ (Real.sqrt_pos.mpr hnR)).mpr
-          linarith only [hk']
-    have hrate : ((m : ℝ) + 4*(k : ℝ)) / n ≤ (m : ℝ) / n + 8 / Real.sqrt n := by
-      rw [add_div]
-      exact add_le_add le_rfl hnoise
-    have hbound := noisySupportLearner_empirical_le hn hk (Int.natCast_nonneg m) predict hfin z
-    push_cast at hbound
-    exact hbound.trans (add_le_add le_rfl hrate)
+  · exact noisySupportLearner_empirical_le_natSqrt hn m predict hfin
 
 end AgnosticVC

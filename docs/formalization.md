@@ -12,6 +12,8 @@ The [fixed-class disproof](../lean/Conjectures/AgnosticVC/CompletedFiniteGroups.
 
 The [discrete-noise learner](../lean/Conjectures/AgnosticVC/NoisySupportLearner.lean) verifies information for the actual named output and empirical excess on each sample. The [completed-iid theorem](../lean/Conjectures/AgnosticVC/NoisySupportIid.lean) verifies both rates for bounded-size supports with bounded pointwise overlap. Its countable list of eligible names is constructed separately for each iid law to verify measurability of the same learner.
 
+The [rectangle density argument](../lean/Conjectures/AgnosticVC/IidRectangleDensity.lean) changes the sampling law to amplify positive outer mass of null-support hits. It gives the [completed-iid extension to unbounded-size supports](../lean/Conjectures/AgnosticVC/NoisySupportSharpIid.lean) under bounded overlap and sharp one-sided outer uniform convergence.
+
 The [conditional joint-law reduction](../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) recovers a completed-measurable training kernel from the actual selector/output law on the completed iid pool, with almost-everywhere agreement. It applies to arbitrary pointwise probability measures and gives the same finite-support counterexample to the empirical rate.
 
 ## Steinke–Zakynthinou threshold formalization scope

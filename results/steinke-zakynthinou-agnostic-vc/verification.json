@@ -507,6 +507,12 @@
     }
   },
   "proper_noisy_finite_support_iid_rates": {
+    "github_actions": {
+      "headSha": "26842b42735e78847fe4efcfd43bfd1b884685be",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/1337isnot1337/solved-conjectures/actions/runs/45084522683"
+    },
     "theorems": [
       "AgnosticVC.noisySupportLearner_fixedPairing",
       "AgnosticVC.noisySupportLearner_iid_information_le",
@@ -526,6 +532,29 @@
       "modules": 109,
       "required": 115,
       "theorems": 1460,
+      "tag": "passed"
+    }
+  },
+  "sharp_outer_deviation_bounded_overlap": {
+    "theorems": [
+      "AgnosticVC.exists_piRectangle_outer_density",
+      "AgnosticVC.null_support_hit_event_null",
+      "AgnosticVC.noisySupport_iid_rates_of_sharpDeviation"
+    ],
+    "scope": "One proper learner for Borel supports of unrestricted size on countably generated features, with finite pointwise overlap at most s. A sharp one-sided outer uniform-convergence envelope with constant B gives actual iid CMI at most 20s nats and all-sample expected empirical excess at most (16 B^2 + 9) sqrt(d/n), when n is at least d.",
+    "local_command": "python3 scripts/verify_agnostic_vc.py",
+    "local_strict_elaboration": "passed",
+    "local_kernel_replayed_modules": 111,
+    "local_audit": {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 1870,
+      "modules": 111,
+      "required": 118,
+      "theorems": 1500,
       "tag": "passed"
     }
   }

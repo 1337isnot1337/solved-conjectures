@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Completed-iid rates for unbounded supports with bounded overlap
+
+Lean verifies the reweighted iid experiment and its occupancy bound. Under a sharp expected outer uniform-deviation bound $`B\sqrt{d/n}`$, the integer-noise learner attains actual iid CMI at most $`20s`$ nats and expected empirical excess at most $`(16B^2+9)\sqrt{d/n}`$ for overlap $`s`$, allowing infinite supports. [Lean learner theorem](lean/Conjectures/AgnosticVC/NoisySupportSharpIid.lean) · [Lean null-support argument](lean/Conjectures/AgnosticVC/IidRectangleDensity.lean)
+
 ## 2026-11-22 — Completed-iid rates for bounded-size supports
 
 Lean verifies a proper integer-noise learner with actual iid CMI at most $`20s`$ nats and expected empirical excess at most $`m/n+8/\sqrt n`$ for support size $`m`$ and pointwise overlap $`s`$. Almost surely the eligible names have positive marginal support mass, so they belong to a countable family for each iid law. [Combined Lean theorem](lean/Conjectures/AgnosticVC/NoisySupportIid.lean) · [Proof and scope](research/steinke-zakynthinou-agnostic-vc/completed-disjoint-support-learner.md)
