@@ -2,6 +2,8 @@
 
 An [o-minimal parameter presentation](ominimal-reconstruction.md) gives an exact catalogue reading at most the ambient parameter dimension, including for arbitrary Borel restrictions on the proper names.
 
+For analytic score families with arbitrary threshold queries and a dense parameter image, VC dimension bounds the number of observed features needed, independently of the ambient parameter dimension. [Analytic score reconstruction](analytic-score-reconstruction.md)
+
 Let $`X`$ and $`H`$ be standard Borel and let evaluation $`H\times X\to\{0,1\}`$ be Borel. Suppose the class has VC dimension $`d\ge1`$. For a nonnegative integer $`k`$, suppose there are countably many universally measurable proper reconstruction maps from at most $`k`$ features. Require that **every realized trace** on every finite feature sample is realized by a hypothesis reconstructed from some subtuple of at most $`k`$ of its features. Maps with no features are fixed candidates. A reconstruction map's index can include the proposed labels on its subtuple and any countable side information. No compressed representation needs to be chosen in advance.
 
 Then one distribution-independent proper learner has expected empirical excess $`O(\sqrt{d/n})`$ on every labeled sample, and whole-output selector information $`O(d+k)`$ on every deterministic paired supersample. It also has ordinary iid CMI $`O(d+k)`$ for every iid law, using completed measurability. If the reconstruction maps are Borel, the learner is a Borel Markov kernel. In particular this yields both conjectured rates for classes with such reconstructions using $`k=O(d)`$. This is a written extension of the deletion proof.
