@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-23 — Conditional VP versus VNP application to sparse 3-CNF
+
+Added an explicit 3-occurrence 3-CNF encoding whose weighted satisfying-assignment polynomial projects to the Hamiltonian-cycle polynomial in every characteristic. Finite checks cover n=3,4 and structural checks n=5..8. The suggested border-circuit lower bound uses an external, presently unreviewed Anthropic proof claim; this is not counted as a solved conjecture. [Construction and checks](research/vp-vnp-bounded-occurrence-3cnf/README.md).
+
+# History
+
 ## 2026-11-22 — Written proofs for the iid bounty scope
 
 The fair-label disproof now includes a direct proof of the information inequality on the actual iid experiment. A separate written theorem obtains the positive rates whenever a measurable ERM has the companion paper's global consistency property. The circle-orbit example rules out that premise even when an ordinary Borel ERM exists. [Disproof and information calculation](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md#fair-labels-and-improper-learners) · [Positive theorem](results/steinke-zakynthinou-agnostic-vc/PROOF.md#a-measurable-globally-consistent-erm-suffices)

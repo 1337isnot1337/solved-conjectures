@@ -4,6 +4,10 @@
 
 Each entry links to the mathematical argument and its accompanying checks. The claims below retain the scope stated in the notes; formalization status is tracked separately.
 
+## Conditional applications of external results (not solved conjectures)
+
+- **Weighted counting for bounded-occurrence 3-CNF.** Explicit polynomial-time construction with O(n^3) variables and clauses, width at most three, and at most three literal occurrences of each variable. The weighted satisfying-assignment polynomial projects to the directed Hamiltonian-cycle polynomial over every field. VNP-completeness follows unconditionally from Valiant's theorem; the proposed superpolynomial border-circuit lower bound is conditional on Anthropic's November 23, 2026 VP != VNP preprint. This does not resolve an additional named conjecture. [Proof and scope](research/vp-vnp-bounded-occurrence-3cnf/README.md) · [Verifier](research/vp-vnp-bounded-occurrence-3cnf/verify_reduction.py).
+
 ## Partial results on open problems
 
 - **Wild-number conjecture for complete graphs.** For every $n\ge155$ and every minimum proper edge colouring of $K_n$, the wild number equals $\lfloor4\lceil n/2\rceil/3\rfloor$. The range $13\le n\le154$ remains open. [Proofs and exact checks](results/wild-number-complete-graphs/).

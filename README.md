@@ -110,6 +110,10 @@ This section is ordered by the significance of the partial contributions.
 - [Erdős–Oler conjecture](docs/erdos-oler-research.md). The conjectured lower bound holds for packings on any unit-separated lattice, and triangular lattice packings with one site removed are locally rigid.
 - [Hadamard existence, order 2396](results/hadamard-2396/). The automorphism obstruction, fixed-border symmetry bounds, complete conditional fixed-border construction with all fourteen patterns, and length-598 order-eleven obstruction are Lean-verified. The actual two-row Hadamard construction from a Legendre pair and its invariant quotient transport are also checked. The order-nine subgroup and orbit statements are also checked. The length-1197 multiplier order is proved to divide 27; the sharper bound of nine and finite quotient/no-lift certificates remain pending. Existence stays open. [Checked scope](docs/lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns).
 
+## Conditional consequences of external results
+
+- [Bounded-occurrence 3-CNF weighted counting](research/vp-vnp-bounded-occurrence-3cnf/README.md). Explicit all-characteristic Hamiltonian-cycle projection to a weighted 3-CNF polynomial with at most three occurrences per variable. An all-field border-circuit lower bound follows **only if** Anthropic's November 23, 2026 VP != VNP claim is correct. This is a standard VNP-completeness transfer, not a newly solved conjecture; excluded from result totals. [Finite verifier](research/vp-vnp-bounded-occurrence-3cnf/verify_reduction.py).
+
 ## Layout
 
 - `results/`: individual results, proofs, and computational checks.

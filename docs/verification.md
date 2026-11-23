@@ -1,5 +1,11 @@
 # Verification
 
+## Weighted counting for bounded-occurrence 3-CNF (conditional research note)
+
+Run `python3 research/vp-vnp-bounded-occurrence-3cnf/verify_reduction.py` from the repository root. The verifier checks all primary assignments for n=3,4, plus clause width and maximum-three-occurrence properties through n=8. The proof of the projection is in [the note](../research/vp-vnp-bounded-occurrence-3cnf/README.md). The circuit lower bound is conditional on Anthropic's November 23, 2026 preprint and is **not** proved by the script or Lean. This note is not part of the solved-conjecture count.
+
+# Verification
+
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
 The same workflow checks the [measurable local reconstruction theorem](../lean/Conjectures/AgnosticVC/LocalReconstructionMeasurable.lean), including the [iid rates for the circle-orbit class](../lean/Conjectures/AgnosticVC/OrbitIidRates.lean).
