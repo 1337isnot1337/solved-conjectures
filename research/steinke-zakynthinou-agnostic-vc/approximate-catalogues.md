@@ -32,6 +32,8 @@ p(z)\ \ge\ \frac{q(z)}{r_{\rm root}}\ \ge\ q(z)
 
 In particular $`r_{\rm root}\ge q(\text{surviving leaves})`$. Equivalently the total variation distance between the two laws equals the original mass of the deleted leaves. The squared Hellinger distance $`H_2^2`$, with convention $`\sum_z(\sqrt{p(z)}-\sqrt{q(z)})^2`$, is at most twice that mass.
 
+For the averaged schedule, a [first-order pruning bound](averaged-pruning-linear-response.md) controls the inverse-Hessian gradient at the conditional law on survivors. Controlling the distance to the restricted optimizer remains open.
+
 ## Removing a bit from the restrictions
 
 At each stage the partitions come from successively revealed coordinates. Keep the leaf set and all costs fixed. Compare the original optimizer $`q`$ to $`p`$, which omits coordinate $`i`$ from all the nonterminal restrictions. If $`i`$ first appears at level $`\ell`$, refine the description of the split at that level by first revealing all its other tests, then revealing $`i`$, both at the original temperature $`\beta_\ell`$. This leaves the objective unchanged by the entropy chain rule. Write $`C`$ for a prefix cell immediately before revealing $`i`$, given by the other tests through level $`\ell`$.
