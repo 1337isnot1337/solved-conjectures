@@ -1,6 +1,6 @@
 # The two agnostic CMI rates imply sharp outer uniform convergence
 
-Let $`H`$ be a nonempty class of measurable binary predictors. Fix a sample size $`n`$ and a feature marginal $`\mu`$. Give labels independent fair bits, writing $`D_0=\mu\otimes\mathrm{Bernoulli}(1/2)`$. Suppose a learner has expected empirical excess at most $`\epsilon`$ on every sample and actual iid CMI at most $`b`$ under $`D_0`$. Assume the output loss is jointly measurable and the actual iid pool, learner and loss experiment is defined, allowing completed measurability. The learner may be improper and is compared to $`H`$.
+Let $`H`$ be a nonempty class of measurable binary predictors. Fix a sample size $`n`$ and a feature marginal $`\mu`$. Give labels independent fair bits, writing $`D_0=\mu\otimes\mathrm{Bernoulli}(1/2)`$. Suppose a learner has expected empirical excess at most $`\epsilon`$ on every sample and actual iid CMI at most $`b`$ under $`D_0`$. Assume the output loss is jointly measurable and the actual iid pool, learner and loss experiment is defined, allowing completed measurability. Joint universal measurability of the output loss on standard Borel spaces also suffices, using the completed laws. The learner may be improper and is compared to $`H`$.
 
 For every labeled law $`P`$ with feature marginal $`\mu`$, writing $`P_n`$ for the empirical measure of $`n`$ iid draws and $`\ell_h`$ for zero-one loss, one then has
 
@@ -35,6 +35,8 @@ The right side is completed-measurable. For a seeded learner, restriction to a f
 ```
 
 where $`U`$ is uniform on the sign vectors. Since the process contains the zero vector, the supremum of the absolute signed sum is at most $`R^+(x,s)+R^+(x,-s)`$. Sign symmetry and subadditivity of outer expectation therefore bound that absolute supremum in outer expectation by $`2\epsilon+2\sqrt{2b/n}`$.
+
+For jointly universally measurable loss, the test used in the information inequality has a measurable version under the law of the pool and output times an independent fair selector. The actual law is absolutely continuous with respect to that product law because the selector has finite support and all its probabilities are positive. The same version therefore works under both laws in the KL comparison. The sign moment bound is unchanged, and Fubini with the independent unused coordinates still identifies expected population loss.
 
 ## Symmetrize the centered loss class
 
