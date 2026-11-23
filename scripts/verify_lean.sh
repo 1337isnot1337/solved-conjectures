@@ -358,6 +358,7 @@ modules=(
   Conjectures.AgnosticVC.CompactScoreNoise
   Conjectures.AgnosticVC.RepeatedFeatureReadout
   Conjectures.AgnosticVC.ConditionalJointObstruction
+  Conjectures.AgnosticVC.FairLabelObstruction
   Conjectures.AgnosticVC.NoisySupportLearner
   Conjectures.AgnosticVC.NoisySupportIid
   Conjectures.AgnosticVC.IidRectangleDensity

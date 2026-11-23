@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-22 — Fair-label information lower bound for the literal iid conjecture
+
+For each positive sample size $`n`$, a VC-one benchmark with $`8n^2`$ sectors forces CMI at least $`n/32`$ for empirical tolerance at most $`1/8`$, even with improper outputs. Lean verifies the outer-measure realization of every label pattern on distinct sectors, the collision bound, the population loss, and the conclusion from the COLT paper's generalization inequality. [Lean theorem](lean/Conjectures/AgnosticVC/FairLabelObstruction.lean) · [Written proof](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md#fair-labels-and-improper-learners)
+
 ## 2026-11-22 — The actual seeded CMI experiment
 
 Lean verifies that a proper learner meeting the empirical rate cannot yield a measurable ambient output random variable in the original independent pool, selector and seed experiment. Restricting to the all-zero selector transfers completed measurability to the first column and seed. The proof uses ordinary seed expectations on each sample. [Lean theorem](lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) · [Written proof](research/steinke-zakynthinou-agnostic-vc/completed-finite-groups.md)

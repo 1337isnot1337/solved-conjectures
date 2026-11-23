@@ -18,6 +18,8 @@ The [ambient standard Borel version of the disproof](../lean/Conjectures/Agnosti
 
 The independently seeded version in the same module rearranges the original iid pool, selector and seed by a measure-preserving map. For each ambient output event, intersecting with the all-zero selector produces a product event with an independent factor of positive measure. This recovers completed measurability of the training-and-seed rule and then of its empirical loss.
 
+The [fair-label lower bound](../lean/Conjectures/AgnosticVC/FairLabelObstruction.lean) projects onto positive sectors and applies Fubini to exclude finitely many coordinate hyperplanes on negative sectors. The probability of a repeated sector is at most $`n^2/m`$. An arbitrary completed-measurable expected empirical loss within tolerance $`\epsilon`$ therefore has expectation at most $`\epsilon+n^2/m`$. Every measurable classifier has population loss $`1/2`$ under the independent fair labels. The final CMI conclusion takes the authors' published generalization inequality as an explicit hypothesis.
+
 The [conditional joint-law reduction](../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) recovers a completed-measurable training kernel from the actual selector/output law on the completed iid pool, with almost-everywhere agreement. It applies to arbitrary pointwise probability measures and gives the same finite-support counterexample to the empirical rate.
 
 ## Steinke–Zakynthinou threshold formalization scope

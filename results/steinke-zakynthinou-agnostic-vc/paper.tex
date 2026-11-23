@@ -754,6 +754,37 @@ event is $G$. It has inner measure zero by Fubini because its sections
 over the first coordinate have at most one element, while its outer
 measure is one.
 
+\subsubsection{Fair labels and improper outputs}
+
+Keep the same class and take $m\ge8n^2$ sectors, where $n$ is the sample
+size. Give each observation an independent fair label. Fix any sector
+pattern with distinct sectors and fix any label vector. The values for
+the positive rows can be chosen from the corresponding projection of $G$,
+which has full outer measure. For every positive-measure Borel set of
+all values, Fubini gives a positive-measure set of positive-row values
+with positive-measure sections in the negative rows. Choose those
+positive-row values in the projection of $G$ and use a matching tuple
+$g\in G$. Within the section, the single prohibited value in each
+negative sector excludes a null set. The resulting labeled sample is
+fitted by $h_g$. The all-negative pattern is fitted by zero. Thus the
+empirical optimum is zero on a set of full outer measure for each
+distinct sector pattern and label vector.
+
+Let $r(z)$ be the expected empirical loss of any learner, including
+one that can return classifiers outside the benchmark class. If $r$
+is completed-measurable and satisfies the all-sample empirical guarantee
+with tolerance $\epsilon$, then $r\le\epsilon$ almost everywhere on each
+such pattern. The union bound over ordered pairs gives collision
+probability at most $n^2/m\le1/8$. Hence $\E r\le\epsilon+1/8$.
+Population loss is $1/2$ for every measurable output since the fresh
+label is fair and independent. If $\epsilon\le1/8$, the expected
+generalization gap is at least $1/4$. The original CMI generalization
+inequality \cite[Theorem~4]{problem} then yields $I\ge n/32$. Taking
+$n>64c^2+32c$ and $m=8n^2$ contradicts \eqref{eq:conj} even for improper
+outputs. Lean verifies these steps with the published generalization
+inequality as an explicit premise. The benchmark class retains the
+trace Borel and uniform-convergence scope of the finite-support example.
+
 \subsection{A standard Borel class without a measurable ordered minimizer}
 
 The null-chain theorem imposes a limitation on every proper learner for its
@@ -1639,6 +1670,7 @@ Completed iid counterexample & \decl{measure_selfHit_eq_zero_of_null_chain}, \de
 Finite supports and the conditional-law obstruction & \decl{exists_finiteGroups_no_measurable_selector_joint_rate} \\
 Standard Borel ambient output codes & \decl{exists_finiteGroups_no_measurable_ambient_joint_rate} \\
 Actual seeded output of the iid experiment & \decl{exists_finiteGroups_no_measurable_seeded_pool_output_rate} \\
+Fair-label lower bound, using the published generalization inequality & \decl{exists_fair_sector_vcOne_no_improper_rate_of_generalization} \\
 Conditional law on the completed pool & \decl{exists_completed_iid_joint_kernel} \\
 Orbit representatives on the circle & \decl{no_measurable_circleOrbitTransversal}, \decl{circleOrbit_orderedERM_counterexample} \\
 Recovery from the output law & \decl{properLearner_traceEvent_pos_iff}, \decl{measurable_canonicalRep_of_output} \\

@@ -18,6 +18,8 @@ The [conditional joint-law disproof](../lean/Conjectures/AgnosticVC/ConditionalJ
 
 The [seeded-pool disproof](../lean/Conjectures/AgnosticVC/ConditionalJointObstruction.lean) assumes completed measurability only of the actual ambient output on the iid pool, fair selector and independent seed, along with ordinary seed expectations on every fixed sample. It derives the empirical-loss contradiction directly from those random variables.
 
+The [fair-label disproof](../lean/Conjectures/AgnosticVC/FairLabelObstruction.lean) forces iid CMI at least $`n/32`$ for tolerance at most $`1/8`$, allowing improper outputs. Lean verifies the benchmark, population and empirical loss estimates, and the contradiction for every candidate constant, with the published generalization inequality as an explicit premise.
+
 ## Steinke–Zakynthinou threshold theorem
 
 [Lean proves the proper real-threshold case of Conjecture 6](../lean/Conjectures/SteinkeZakynthinou.lean). For every positive sample size the same measurable learner works for every iid labeled distribution and every fixed sample. Its outputs are finite closed thresholds. Lean bounds original paired-pool CMI by 300 nats or 600 bits and expected empirical excess by $`512/\sqrt n`$, including arbitrary ties and label noise. The source statement in bits with the infimum over all thresholds is `SteinkeZakynthinou.properThresholdTheorem_bits`. The written proof supplies sharper information constants and separate efficiency and determinism extensions. All 28 modules in the Lean theorem’s project import closure passed the pinned kernel replay. The standalone audit checked 806 declarations against the standard axiom whitelist.

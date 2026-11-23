@@ -35,6 +35,7 @@ public import Conjectures.AgnosticVC.FiniteSupportUniform
 public import Conjectures.AgnosticVC.CompactScoreNoise
 public import Conjectures.AgnosticVC.RepeatedFeatureReadout
 public import Conjectures.AgnosticVC.ConditionalJointObstruction
+public import Conjectures.AgnosticVC.FairLabelObstruction
 public import Conjectures.AgnosticVC.NoisySupportLearner
 public import Conjectures.AgnosticVC.NoisySupportIid
 public import Conjectures.AgnosticVC.IidRectangleDensity
