@@ -1,5 +1,7 @@
 # Stability for approximate local hypothesis catalogues
 
+The [hidden-mark comparison](hidden-restriction-marks.md) improves the information rate below to $`O(d+k)`$ with the same catalogue accuracy guarantee.
+
 Let $`H`$ be a class of VC dimension $`d\ge1`$ on standard Borel spaces, with jointly Borel evaluation. Fix countably many universally measurable maps producing proper hypotheses from at most $`k`$ observed features. The catalogue $`G(T)`$ on a sample $`T`$ consists of all their outputs on eligible subtuples. Include one fixed proper candidate so that the catalogue is always nonempty. There is a learner with whole-output selector information
 
 ```math
@@ -54,7 +56,7 @@ The omission here affects only nonterminal restrictions. In particular the termi
 
 ## Schedule and empirical error
 
-Fix the learner size $`n`$ and write $`t=n/d`$ and $`N=n+1`$. Analyze it by deleting one row of an auxiliary $`N`$-row block, with the same schedule at both sizes. Independently on each row draw a mark uniform on $`[0,1]`$ and a loss weight uniform on $`[0,2]`$. Set $`u_0=1`$, $`u_1=2^{128}`$ and $`u_{j+1}=\exp(u_j^{1/8})`$ for $`j\ge1`$. Let $`J`$ be the largest $`j`$ with $`u_j\le t`$. Use nested restrictions $`M_j`$ containing all rows whose marks are at most $`d u_j/N`$, for $`0\le j\le J`$. Deleting a row intersects each restriction with the surviving positions. The split temperatures are
+Fix the learner size $`n`$ and write $`t=n/d`$ and $`N=n`$. Analyze the $`N`$-row training block by deleting one row, with the same schedule at sizes $`N`$ and $`N-1`$. Independently on each row draw a mark uniform on $`[0,1]`$ and a loss weight uniform on $`[0,2]`$. Set $`u_0=1`$, $`u_1=2^{128}`$ and $`u_{j+1}=\exp(u_j^{1/8})`$ for $`j\ge1`$. Let $`J`$ be the largest $`j`$ with $`u_j\le t`$. Use nested restrictions $`M_j`$ containing all rows whose marks are at most $`d u_j/N`$, for $`0\le j\le J`$. Deleting a row intersects each restriction with the surviving positions. The split temperatures are
 
 ```math
 b_0=\sqrt t,\qquad b_j=\sqrt t\,u_{j-1}^{-1/4}\quad(1\le j\le J+1).

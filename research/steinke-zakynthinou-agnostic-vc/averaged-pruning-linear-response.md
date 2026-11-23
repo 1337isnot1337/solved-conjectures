@@ -1,6 +1,6 @@
 # Pruning bounds for averaged projection entropies
 
-If the full optimizer of the averaged projection objective assigns mass $`e\le1/2`$ to the deleted traces, the inverse Hessian applied to the gradient at the conditional survivor law has Fisher norm $`O(\sqrt e)`$. For a finite deletion, the squared Hellinger distance between the two optimizers is $`O(e)`$ when the restricted optimizer and the conditional survivor law have uniformly close likelihood ratios. Both estimates apply to arbitrary linear costs. Removing the likelihood-ratio hypothesis could improve the [information bound for approximate catalogues](approximate-catalogues.md).
+If the full optimizer of the averaged projection objective assigns mass $`e\le1/2`$ to the deleted traces, the inverse Hessian applied to the gradient at the conditional survivor law has Fisher norm $`O(\sqrt e)`$. For a finite deletion, the squared Hellinger distance between the two optimizers is $`O(e)`$ when the restricted optimizer and the conditional survivor law have uniformly close likelihood ratios. Both estimates apply to arbitrary linear costs. For approximate catalogues, a [nested learner with hidden restriction marks](hidden-restriction-marks.md) now gives a linear information bound. The general finite pruning question for the averaged objective remains open.
 
 ## The inverse along random restriction chains
 
