@@ -114,6 +114,8 @@ This section is ordered by the significance of the partial contributions.
 
 - [Bounded-occurrence 3-CNF weighted counting](research/vp-vnp-bounded-occurrence-3cnf/README.md). Explicit all-characteristic Hamiltonian-cycle projection to a weighted 3-CNF polynomial with at most three occurrences per variable. An all-field border-circuit lower bound follows **only if** Anthropic's November 23, 2026 VP != VNP claim is correct. This is a standard VNP-completeness transfer, not a newly solved conjecture; excluded from result totals. [Finite verifier](research/vp-vnp-bounded-occurrence-3cnf/verify_reduction.py).
 
+- [Quantitative decision lower bound for the permanent graph](research/bss-permanent-graph/). Deciding $`y=\mathop{\mathrm{per}}_m(X)`$ over $`\mathbb C`$ requires $`2^{\Omega((\log m)^{4/3})}`$ operations in the stated algebraic computation-tree model, with defined division and arbitrary constants. The written deduction combines the pinned Anthropic border lower bound with Bürgisser's corrected factor theorem and gives the uniform BSS simulation. It is not a new named-conjecture resolution or a proof of $`\mathsf P_{\mathbb C}\ne\mathsf{NP}_{\mathbb C}`$. No Lean formalization of this deduction is claimed. [Proof](research/bss-permanent-graph/PROOF.md) · [Review](research/bss-permanent-graph/REVIEW.md) · [Issue #247](https://github.com/1337isnot1337/solved-conjectures/issues/247)
+
 ## Layout
 
 - `results/`: individual results, proofs, and computational checks.
