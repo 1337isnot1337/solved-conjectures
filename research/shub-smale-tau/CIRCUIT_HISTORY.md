@@ -108,7 +108,7 @@ multiplication history. A bound based only on the count of visible
 dependencies is false: those dependencies can be dense after very
 few multiplication gates. The next section records the exact example.
 
-Primary source: \lt https://arxiv.org/html/math/0201154v2>, Arithmetic
+Primary source: <https://arxiv.org/html/math/0201154v2>, Arithmetic
 Multivariate Descartes' Rule in Section 2 and proof of Theorem 3 in
 Section 3. The 2002 final numerical inequality is not disproved here. Its
 unrestricted proof dependency is unresolved, as detailed in Section 6
@@ -177,7 +177,7 @@ The original reference is Rojas, *Arithmetic Multivariate Descartes'
 Rule*, arXiv:math/0110327v3, 15 November 2001, Corollary 1 of
 Section 2 together with the refined bound near `(1,...,1)`; the
 later published version is American Journal of Mathematics 126 (2004),
-1--30, DOI \lt https://doi.org/10.1353/ajm.2004.0005>.
+1--30, DOI <https://doi.org/10.1353/ajm.2004.0005>.
 
 Formula (5.1) is needed for all the systems below, including those
 whose tropical hypersurfaces have nontransverse intersections. A
@@ -432,7 +432,7 @@ Koiran--Portier--Rojas, arXiv:1309.0486v1, Definition 1.9 and the
 paragraph following it, explicitly distinguish tropically generic
 valuation counts from general ones, stating that Smirnov's theorem
 gives the former. The 2026 paper *New Explicit Root Counts for
-p-adic Circuit Systems*, DOI \lt https://doi.org/10.1145/3832046.3832061>,
+p-adic Circuit Systems*, DOI <https://doi.org/10.1145/3832046.3832061>,
 also describes previous explicit multivariate bounds as requiring
 tropical genericity. The exact scope of a repaired published
 version and any independent proof of the 2002 additive-complexity
@@ -709,7 +709,7 @@ Chebotarev's density theorem realizes every conjugacy class in
 `G` as the Frobenius class at infinitely many unramified rational
 primes. A precise source is J. S. Milne, *Algebraic Number Theory*,
 version 3.08, 19 July 2020, Theorem 8.31:
-\lt https://jmilne.org/math/CourseNotes/ANT.pdf>.
+<https://jmilne.org/math/CourseNotes/ANT.pdf>.
 
 For each selected `g_j`, choose a distinct unramified prime with
 its conjugacy class. Choosing a prime ideal of the splitting

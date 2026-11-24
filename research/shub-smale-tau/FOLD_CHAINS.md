@@ -170,7 +170,7 @@ Bézout's theorem, or equivalently the contrapositive of Corollary 3 in William
 Fulton, *Algebraic Curves*, electronic edition dated January 28, 2008,
 Section 5.3, printed pages 57–58. The full primary text was checked at:
 
-\lt https://users.math.msu.edu/users/magyarp/Math419H/Fulton-Alg-Curves.pdf>
+<https://users.math.msu.edu/users/magyarp/Math419H/Fulton-Alg-Curves.pdf>
 
 The convex-arc lattice estimate needed below is proved here.
 
@@ -429,7 +429,7 @@ Propositions 2.3 and 3.2 give divisibility and size restrictions on its
 constants. Those hypotheses do not hold for (2.1), which has noninteger
 complex roots. The paper was checked in its primary arXiv PDF:
 
-\lt https://arxiv.org/pdf/1902.11164v1>
+<https://arxiv.org/pdf/1902.11164v1>
 
 The primary author abstract of Borchert, McKenzie and Reinhardt, *Few Product
 Gates but Many Zeroes* (2013), explicitly allows arbitrary integer constants
@@ -437,7 +437,7 @@ in its gem model. Its finite gem constructions therefore require a separate
 constant-construction analysis before being used in the constant-free tau
 model. The checked abstract is:
 
-\lt https://users.informatik.uni-halle.de/~ahyjb/abstracts.html>
+<https://users.informatik.uni-halle.de/~ahyjb/abstracts.html>
 
 The unresolved constructive question in the present notes is precise:
 do there exist successful pair-centred fold sequences on `I_{2^n}` with

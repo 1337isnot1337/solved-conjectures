@@ -1,5 +1,31 @@
 # History
 
+## 2026-11-23 — Integer gate budgets and adaptive prime-support obstruction
+
+The [Shub–Smale τ research](research/shub-smale-tau/INTEGER_GATE_BUDGETS.md) records exact integer gate inequalities: a coprime addition has a product-of-parent-values resultant budget, units on at least five integer evaluation points have one sign, and nonzero integer multiplication gives a bounded-cancellation escape estimate. None has been amortized over arbitrary circuit histories. The constant-parent and shared-factor cases remain explicit.
+
+A valid two-anchor S-unit bound is paired with a counterexample to its proposed prime-support estimate. The monic primitive squarefree polynomial x^(n+1)−x has exact fixed divisor equal to the product of primes p with p−1 dividing n. The unconditional Fan–Pollack theorem makes this support superpolynomial in circuit length along an infinite sequence, simultaneously at every nonzero integer evaluation, despite at most three integer roots. This does not refute τ or the separate harmonic Galois statistic. Primary theorem versions, finite checks and internal review are recorded in [issue #260](https://github.com/1337isnot1337/solved-conjectures/issues/260).
+
+## 2026-11-23 — Recovering an unknown cofactor of small radical degree
+
+The [Shub–Smale τ research](research/shub-smale-tau/COFACTOR_RECOVERY.md) removes the supplied-factorization hypothesis from the powered-cofactor reduction. A length-s program for H=F_N Q yields a nonzero integer scalar multiple of F_N with O((s+1)(d+1)^14) gates, where d is the number of distinct complex roots of Q. Shifted logarithmic derivatives, a charged finite jet, exact Padé reconstruction and low-degree gcds recover bases grouped by their multiplicities. No program for Q is given, and arbitrary multiplicities and overlap with the prescribed roots are allowed.
+
+All three workers and root reviewed the proof, including nonuniform scalar choices and shared denominator clearing. Five exact recovery cases pass, with deliberately nonintegral residual scalars. This is a restricted circuit-existence theorem: d is not bounded by a polynomial in s, and no unrestricted τ bound or BSS separation is obtained. Research remains tracked in [issue #260](https://github.com/1337isnot1337/solved-conjectures/issues/260).
+
+## 2026-11-23 — Removing arbitrary powers of a small cofactor support
+
+The [Shub–Smale τ research](research/shub-smale-tau/README.md) now proves a charged extraction from F_N times supplied powers whose bases have small total degree. A short geometric-sum identity lifts an integer Bezout certificate to arbitrary powers with logarithmic dependence on their exponents. Endpoint transport removes the cofactor without expanding its powers and permits roots shared with the required interval. All scalar construction and exact quotient costs are included.
+
+The proof was independently reviewed, and exact checks cover the scaled Sylvester certificate, repeated and overlapping bases, and the rational-scalar amendment. The separate symbolic anchored-jet obstruction uses the pinned border theorem and retains its stronger compiler quantifiers. No unrestricted extraction, integer-root bound, or BSS separation is claimed; see [issue #260](https://github.com/1337isnot1337/solved-conjectures/issues/260).
+
+## 2026-11-23 — Anchored cofactor extraction and arithmetic selection
+
+The [Shub–Smale τ research](research/shub-smale-tau/README.md), tracked in [issue #260](https://github.com/1337isnot1337/solved-conjectures/issues/260), gives an endpoint-anchored extraction from a consecutive-root multiple with cost polynomial in the unknown cofactor's degree. A division-free quotient matrix makes the output-degree independence explicit. The degree of an unrestricted cofactor may still be exponential in circuit length.
+
+The checkpoint also proves an integer recurrence for finite jets of a coalescing Boolean inverse, identifies the global coefficient field of a selected Frobenius action, preserves an explicit Newton lift that never becomes exact at finite precision, and extends square-chain prime divisibility to dense integer root sets with an unknown cofactor. The elliptic specialization bound is labeled as a consequence of Mazur's theorem and standard division-polynomial identities. Imported theorem versions, internal reviews and exact finite checks are recorded separately. Citation autolinks damaged by an earlier math-format conversion are repaired.
+
+No full τ bound, counterexample, unrestricted all-multiples lower bound or BSS separation is claimed. The work remains in research, with no Results-table or Lean-status promotion.
+
 ## 2026-11-23 — Saturated BSS paths and radical-jet extraction criterion
 
 The [complex BSS campaign](research/complex-bss-p-vs-np/README.md) now retains the full generic accepting path: its equality ideal, saturated by all nonzero branch conditions, has radical equal to the resultant ideal. An explicit four-radical identity makes a degree-independent low-jet radical bound sufficient for the target separation; that bound remains unproved and is kept distinct from the cited Radical Conjecture. Exact examples defeat bounded-input-jet reconstruction, polynomial multiplicity-class counts, and reading regular values from unsaturated rational graph equations. A separate rational identity excludes the proposed orbit-product compression. Monic auxiliary finite fibers give a sound three-block verifier, while bounded-depth root enumeration and Kummer towers reduce to the already excluded finite-prefix format. The actual witness dependencies and costs, internal adversarial reviews, and source distinctions are recorded. The HN separation remains unresolved in [issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248); no solved-result or Lean-status claim is added.

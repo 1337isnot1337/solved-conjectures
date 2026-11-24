@@ -33,6 +33,15 @@ Roots are distinct, with no multiplicity count. Arbitrary free integer constants
 | A coefficient-sensitive larger-sieve inequality | A precise reciprocal modular-root average would suffice for arbitrary roots; its circuit bound through addition remains unresolved. |
 | Every finite prescribed set of prime-adic cut-minor valuations can be imitated | A short approximate inverse with at most three integer denominator roots matches all these valuations. Exact inversion and adaptive prime selection remain different requirements. |
 | Matrix-power and quadratic-chain restrictions | Integer evaluation bounds the relevant cyclotomic degrees; lattice collisions give d ≥ (7/6)log₂N−6 for a quadratic composition constant on N consecutive integers. Neither covers general SLPs. |
+| Endpoint-anchored extraction with a cofactor-degree parameter | A size-s program for F_N Q yields a nonzero scalar multiple of F_N in O((s+1)(q+1)^4+log(N+1)) gates, where q=deg Q. The construction does not need a program for Q; q may still be exponential in s. |
+| Powered cofactors with supplied bases of small total degree | A shifted Bezout identity removes arbitrary powers with only logarithmic dependence on the exponents. The construction returns a nonzero integer scalar multiple of F_N and permits overlap with the prescribed roots. |
+| Unknown cofactors with few distinct complex roots | A length-s program for F_N Q gives a nonzero integer scalar multiple of F_N in O((s+1)(d+1)^14) gates, where d=deg rad(Q). No cofactor circuit or factorization is supplied. The choices are nonuniform, and d may be exponential. |
+| Integer gate budgets | A coprime addition has a product-of-parent-values resultant budget; units on five integer evaluation points have one sign; bounded smaller-summand values give an integer escape bound. Arbitrary addition cancellation remains unbounded. |
+| Adaptive evaluation-prime support | The monic primitive squarefree family x^(n+1)−x has at most three integer roots, while every nonzero integer evaluation can have superpolynomial prime support relative to its circuit length. Adaptive anchor selection cannot fix that proposed bound. |
+| Polynomial-order jets of the coalescing Boolean inverse | An explicit integer recurrence computes every jet through order R in polynomially many gates in n,R. The degeneration merges the separated integer poles. |
+| Exact Frobenius selection and finite precision | A selected permutation has a rational polynomial representative exactly when it is central in the Galois group; an explicit quadratic Newton lift never equals its limit at a finite stage. |
+| Dense integer roots in variable square chains | More than half the degree forces prime divisibility and even valuations; more than three quarters forces valuation doubling. A six-root degree-eight example makes the latter threshold strict. |
+| Rational torsion in a polynomial elliptic family | Mazur's theorem gives at most 262δ rational roots of a nonzero specialized division polynomial, independent of its index, and a fixed-cost bounded-index root cover. This is a consequence of existing theorems. |
 
 The general quantitative bounds recorded here are consequences of existing theorems and algorithms:
 
@@ -52,6 +61,15 @@ The consecutive-root minimum is also equivalent up to linear circuit overhead to
 
 ## Proofs and source scope
 
+- [ANCHORED_DIFFERENCES.md](ANCHORED_DIFFERENCES.md): exact endpoint-sensitive cofactor reduction, a division-free quotient matrix, and the precise scope of universal shift and probe obstructions.
+- [POWERED_COFACTORS.md](POWERED_COFACTORS.md): charged Bezout construction, logarithmic power lifting, and extraction for cofactors of small total base degree.
+- [COFACTOR_RECOVERY.md](COFACTOR_RECOVERY.md): recovery of an unknown small radical support from a shifted logarithmic derivative, with charged Padé reconstruction and multiplicity selection.
+- [INTEGER_GATE_BUDGETS.md](INTEGER_GATE_BUDGETS.md): unit rigidity, resultant divisibility, an integer escape invariant, a valid two-anchor S-unit reduction and its adaptive-support obstruction.
+- [INVERSE_DEFORMATIONS.md](INVERSE_DEFORMATIONS.md): the integer recurrence for all finite coalescing jets, spacing-preserving Newton lifts, and endpoint indicators.
+- [FROBENIUS_SELECTION.md](FROBENIUS_SELECTION.md): coefficient fields of selected Galois permutations, exact Newton cost and precision, and a never-exact quadratic example.
+- [HARMONIC_FAMILIES.md](HARMONIC_FAMILIES.md): reciprocal fixed-point averages for binomial products and integer quadratic iterates, an intersective-iteration failure, and a classical Schur test of addition rules.
+- [DENSE_SQUARE_CHAINS.md](DENSE_SQUARE_CHAINS.md): prime divisibility with an unknown cofactor, precise root-density thresholds, and the distinction between coefficient bit length and circuit length.
+- [ELLIPTIC_SPECIALIZATIONS.md](ELLIPTIC_SPECIALIZATIONS.md): the rational-torsion root bound and a root cover whose additional circuit cost is independent of the multiplication index.
 - [NORMALIZATION.md](NORMALIZATION.md): fully charged rational-to-integer and monic transformations, with arbitrary intermediate cancellation.
 - [PRIME_AVERAGES.md](PRIME_AVERAGES.md): exact integer and projective-rational sieve inequalities, harmonic averages and a multiquadratic local-cover test.
 - [CIRCUIT_HISTORY.md](CIRCUIT_HISTORY.md): complete-history obstructions, explicitly conditional square compression, real power comparisons and simultaneous Galois selection.
