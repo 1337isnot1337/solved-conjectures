@@ -4,6 +4,24 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.JuhnkeAlternating
+  Conjectures.JuhnkeCompositions
+  Conjectures.JuhnkeConjecture
+  Conjectures.JuhnkeLogConcavity
+  Conjectures.JuhnkePathsBasic
+  Conjectures.JuhnkePathsBoundary
+  Conjectures.JuhnkePathsBoundaryConcavity
+  Conjectures.JuhnkePathsCuts
+  Conjectures.JuhnkePathsOriginal
+  Conjectures.JuhnkePathsPolynomial
+  Conjectures.JuhnkePathsRuns
+  Conjectures.JuhnkePathsSteps
+  Conjectures.JuhnkePathsTheorem
+  Conjectures.JuhnkePolynomial
+  Conjectures.JuhnkeRunLengths
+  Conjectures.JuhnkeRuns
+  Conjectures.JuhnkeUnimodality
+  Conjectures.JuhnkeUnitRuns
   Conjectures.SteinerbergerFeldheimBasic
   Conjectures.SteinerbergerFeldheimBounds
   Conjectures.SteinerbergerFeldheimQuantities

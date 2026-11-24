@@ -1,5 +1,11 @@
 # Full formalization campaign
 
+## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
+
+`Juhnke.juhnke_conjecture` proves both original conclusions for the actual path counts in every dimension `d ≥ 2`. The representation is explicitly equivalent to ordered lists of positive east/north steps, with original start `(2,1)` and both original endpoints. The run decomposition, exact positive-composition counts, optional-cut polynomial, coefficient inequalities, translation, and unimodality are all proved. The 18-module closure contains no assumed enumeration or analytic theorem.
+
+The [entry audit](../results/juhnke-lattice-paths/LEAN-AUDIT.md) records the precise source, original proposer Martina Juhnke, proof credit to Cinna Davis and GPT-6.2 Astra, the Brenti translation criterion, and unchanged priority uncertainty. This is Conjecture 6; the separate coherent-path Conjecture 5 is not asserted. The complete [verification receipt](verification/juhnke-20261124/receipt.json) records 577 owned declarations, 502 theorems, 11 required endpoints, and stock-kernel replay.
+
 ## Steinerberger’s quantitative Feldheim-tail conjecture
 
 The [complete Lean disproof](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md)

@@ -9,6 +9,17 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Juhnke.juhnke_conjecture,
+    `Juhnke.originalPathCount_logConcave,
+    `Juhnke.originalPathCount_unimodal,
+    `Juhnke.literalPathStepsEquiv,
+    `Juhnke.literalPathCutsEquiv,
+    `Juhnke.unitWordMaximalEquiv,
+    `Juhnke.unitWordAlternatingLengthsEquiv,
+    `Juhnke.pathPolynomial_sum_runCounts,
+    `Juhnke.originalPathPolynomial_translated,
+    `Juhnke.originalEndpoint_total,
+    `Juhnke.combined_pathPolynomial,
     `SteinerbergerFeldheim.counterexample,
     `SteinerbergerFeldheim.strict_counterbounds,
     `SteinerbergerFeldheim.median_unique,
