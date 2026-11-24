@@ -15,6 +15,8 @@ The [written proof](results/pantone-bona-third-largest-terminal/) resolves Conje
 - [Waring-gap symmetry](results/benfield-lippard-waring-gap-symmetry/) fails at two power-of-two exponents, and [Waring-gap parity](results/benfield-lippard-waring-gap-parity/) holds at every exponent.
 - [The Feldheim–Feldheim weighted tail conjecture](results/feldheim-weighted-tail/) holds for arbitrary independent laws, even with atoms.
 - [Burstein’s refined shape-Wilf equivalence](results/burstein-descent-top-shape-wilf/) fails uniformly over all suffix permutations.
+- [Rossi’s permutohedron characteristic roots](results/rossi-permutohedron-roots/) satisfy all three intervals of Conjecture 6.16 at every index.
+- The [Feldheim finite-threshold supplements](results/feldheim-weighted-tail/FINITE-THRESHOLD.md) now cover distinct nonatomic laws and [sharpen the i.i.d. constants](results/steinerberger-feldheim-tail/LINEAR-EXISTENCE.md).
 - The [exact differential equation](results/pantone-bona-asymptotic/ode-proof.md) previously guessed for the terminal-largest pattern class is now proved separately from the asymptotic.
 
 The two plane-partition proofs use exact rational and integer certificates, not sampled real parameters. No Lean, external review, or exclusive priority claims are made.

@@ -18,6 +18,8 @@ jobs:
         run: python3 results/benfield-lippard-waring-gap-symmetry/check.py
       - name: Check Burstein’s Ferrers-board mismatch on short suffixes
         run: python3 results/burstein-descent-top-shape-wilf/check.py
+      - name: Certify the finite Rossi permutohedron sign grids
+        run: python3 results/rossi-permutohedron-roots/check.py
       - name: Check matching excess via literal graph witnesses
         run: python3 results/hartke-stolee-west-yancey-matching-excess/verify.py
       - name: Certify the plane-partition Fourier sign over exact rational boxes
