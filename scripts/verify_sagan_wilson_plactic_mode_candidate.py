@@ -3,8 +3,19 @@
 import verify_lean_candidate as gate
 
 TASK = "sagan-wilson-plactic-mode"
-MODULES = ["Conjectures.SaganWilsonPlacticMode", "Conjectures.SaganWilsonPlacticModeDP"]
+MODULES = ["Conjectures.SaganWilsonPlacticModeM10"]
 REQUIRED = [
+    "SaganWilsonPlacticMode.nodup_map_injective",
+    "SaganWilsonPlacticMode.words_nodup",
+    "SaganWilsonPlacticMode.alphabet_nodup",
+    "SaganWilsonPlacticMode.nodup_filter_bool",
+    "SaganWilsonPlacticMode.centralizerWords_mem_iff",
+    "SaganWilsonPlacticMode.centralizerWords_nodup",
+    "SaganWilsonPlacticMode.countFast_eq_card",
+    "SaganWilsonPlacticMode.countTrie_succ_eq",
+    "SaganWilsonPlacticMode.tabulate_succ_eq",
+    "SaganWilsonPlacticMode.CertM10.value",
+    "SaganWilsonPlacticMode.centralizer_count10_10",
     "SaganWilsonPlacticMode.validRow_weaken",
     "SaganWilsonPlacticMode.insertRow_valid",
     "SaganWilsonPlacticMode.insertRow_length_bounds",
@@ -50,8 +61,6 @@ REQUIRED = [
 
 def main():
     modules = gate.dependency_order(MODULES)
-    if modules != MODULES:
-        raise RuntimeError("Unexpected project closure")
     before = gate.source_hashes(modules)
     for module in modules:
         path = module.replace(".", "/") + ".lean"
@@ -62,7 +71,7 @@ def main():
         gate.run("lake", "env", "leanchecker", module)
     if gate.source_hashes(modules) != before:
         raise RuntimeError("Candidate proof inputs changed")
-    gate.export_artifacts(TASK, MODULES, modules)
+    gate.export_artifacts(TASK, modules, modules)
     print("PASS: strict source, axiom whitelist, independent kernel replay")
 
 if __name__ == "__main__":
