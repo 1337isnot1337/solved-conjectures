@@ -417,6 +417,83 @@ def test_divided_difference_with_cofactors():
                 assert d == peval(derivative(h), y)
     print('divided differences with repeated prescribed roots and cofactor examples: passed')
 
+
+def test_normalization_and_fold_identities():
+    root_sets = [[], [Fraction(0)], [Fraction(1, 2)],
+                 [Fraction(-2, 3), Fraction(1, 2), Fraction(1, 2)],
+                 [Fraction(-3), Fraction(0), Fraction(2, 5), Fraction(7, 3)]]
+    for roots in root_sets:
+        f = [1]
+        for r in roots:
+            f = mul(f, [-r.numerator, r.denominator])
+        for sign in (1, -1):
+            h = scale(mul(f, [1, 0, 1]), sign)
+            t = sum(abs(a) for a in h)
+            c = peval(h, t)
+            assert c != 0
+            shifted = translate(h, t)
+            affine = [a * c**i for i, a in enumerate(shifted)]
+            assert all(a % c == 0 for a in affine)
+            k = [a // c for a in affine]
+            assert k[0] == 1
+            # Padding models nonminimal denominator exponents in gate clearing.
+            p = [0, 0] + list(reversed(k))
+            assert p[-1] == 1
+            for r in set(roots):
+                z = Fraction(c, 1) / (r-t)
+                assert z.denominator == 1 and z != 0
+                assert peval(p, z) == 0
+    u = scale(mul([-4, 1], [-5, 1]), Fraction(1, 2))
+    v = scale(mul(add(u, [-3]), add(u, [-6])), Fraction(1, 2))
+    w = scale(mul(add(v, [-5]), add(v, [-9])), Fraction(1, 45))
+    lhs = scale(mul(w, add(w, [-1])), 8294400)
+    rhs = root_product(range(10))
+    for c in (2, 4, 22):
+        rhs = mul(rhs, [c, -9, 1])
+    assert lhs == rhs
+    from fold_witnesses import check_all
+    summaries = check_all()
+    assert [(r['N'], r['gates']) for r in summaries] == [(8, 54), (16, 101), (32, 304)]
+    print('rational/monic identities, ten-root fold identity and three charged fold certificates: passed')
+
+
+def test_finite_prime_inverse_minors():
+    checked = 0
+    for n in (2, 3):
+        N = 2**n
+        k = N*n+1
+        h = [1]
+        for _ in range(k):
+            h = mul(h, [0, -1, 0, 1])  # ((y^3-y)^k); primes 2 and 3.
+        numerators = {}
+        for j in range(1, N+1):
+            assert all(peval(h, j) == 0 or valuation(peval(h, j), p) >= k
+                       for p in (2, 3))
+            carry = h[-1]
+            q = [0]*(len(h)-1)
+            q[-1] = carry
+            for i in range(len(h)-2, 0, -1):
+                carry = h[i]+j*carry
+                q[i-1] = carry
+            assert add(mul([-j, 1], q), [peval(h, j)]) == h
+            numerators[j] = q
+        for mask in range(1, 2**n-1):
+            if not mask & 1:
+                continue
+            left = sums_for([i for i in range(n) if mask >> i & 1])
+            right = sums_for([i for i in range(n) if not mask >> i & 1])
+            for a0, a1 in combinations(left, 2):
+                for b0, b1 in combinations(right, 2):
+                    det = add(mul(numerators[1+a0+b0], numerators[1+a1+b1]),
+                              scale(mul(numerators[1+a0+b1], numerators[1+a1+b0]), -1))
+                    for p in (2, 3):
+                        gauss = min(valuation(c, p) for c in det if c)
+                        expected = valuation((a1-a0)*(b1-b0), p)
+                        assert gauss == expected < k
+                    checked += 1
+    print(f'finite-prime inverse imitation, all two-by-two cut minors at n=2,3: {checked} passed')
+
+
 def main():
     test_carries_and_products()
     test_all_cuts()
@@ -429,6 +506,8 @@ def main():
     test_continued_counterexamples()
     test_strict_cut_positivity()
     test_divided_difference_with_cofactors()
+    test_normalization_and_fold_identities()
+    test_finite_prime_inverse_minors()
     print('All finite exact checks passed. No tau bound or BSS separation was verified.')
 
 
