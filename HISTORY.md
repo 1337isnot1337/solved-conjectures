@@ -1,5 +1,9 @@
 # History
 
+## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
+
+On 24 November 2026 the [complete original Conjecture 5.8 disproof](results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md) established both finite-prefix counterexamples using the actual infinite-product coefficients. All three modules strictly compiled, the all-owned audit passed (250 declarations, 212 theorems), and independent replay passed. The separate stronger exact-density theorem remains outside this Lean scope. Discovery attribution and the bounded priority caveat remain unchanged. [PR #565](https://github.com/1337isnot1337/solved-conjectures/pull/565).
+
 ## Kovalev’s square-root Taylor-section zero-free conjecture
 
 On 24 November 2026 the [complete Lean formalization](results/kovalev-zero-free/FORMALIZATION.md) proved the original square-root conjecture for every section degree and every point of the closed unit disk, with the stronger theorem for every positive geometric-polynomial length. The coefficients are identified with the actual iterated derivatives. Twenty-one strict source builds, the all-owned/private axiom audit and exact stock-kernel replay passed and received independent evidence and statement reviews. Leonid V. Kovalev is the original proposer; the recorded proof credit to Cinna Davis and the bounded priority qualification are preserved. Fractional-exponent, arbitrary-segment and adjacent trigonometric supplements remain unformalized. This updates one existing entry; aggregate verification and public deployment remain separate obligations in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).

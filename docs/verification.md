@@ -1,5 +1,9 @@
 # Verification
 
+## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
+
+The three-module source closure of `Conjectures.ThueMorseSignDensity` passed strict compilation, all-owned axiom audit (250 declarations, 212 theorems, 119 private declarations, 27 required endpoints), and independent stock-kernel replay at `471a5984bb7bd0936cf1b78bc1827ca1d8ff68e2`. The [result-level receipt](../results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md) records exact hashes and the original conjecture scope. Reproduce using `python3 scripts/verify_lean_target.py --root Conjectures.ThueMorseSignDensity --require ThueMorseSignDensity.conjecture_false --require ThueMorseSignDensity.both_counterexamples --out .candidate-artifacts/thue-morse-sign-density`. Package-wide verification is separate.
+
 ## Ferroni–Higashitani’s first-three interior Ehrhart question
 
 The [scoped receipt](verification/lean-ferroni-higashitani-complete-20261124/receipt.json) covers the full `Conjectures.FerroniHigashitaniEhrhart` closure, including the closed and interior counts, the polynomial reflection identity, and the original inequality. Run `python3 scripts/verify_lean_target.py --root Conjectures.FerroniHigashitaniEhrhart --require FerroniHigashitani.question_5_12a --out /tmp/ferroni-lean` from the repository root with pinned Lean and Mathlib installed. The [aggregate workflow](../.github/workflows/lean.yml) uses the updated imports, audit endpoints, and replay registry. The exact Python checker remains a supplementary independent computation.

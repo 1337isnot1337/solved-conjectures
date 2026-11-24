@@ -1,0 +1,5 @@
+Replaying all 3 local project modules imported by Conjectures.ThueMorseSignDensity, including that root (prefix Conjectures)
+replaying Conjectures.ThueMorseSignDensity
+replaying Conjectures.ThueMorseSignDensityCore
+replaying Conjectures.ThueMorseSignDensityProduct
+PASS: the entire local import closure of Conjectures.ThueMorseSignDensity completed the pinned kernel replay

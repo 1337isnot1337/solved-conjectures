@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
+
+[Complete source-matched formalization](../results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md) of the original Conjecture 5.8. The three `Conjectures.ThueMorseSignDensity*` modules derive the recurrence from the actual stabilized integer coefficients of the infinite product and prove both finite-prefix count bounds and negations of density zero for `m=2`. The stronger exact-density theorem is not included. Scoped strict compilation, all-owned axiom audit and stock-kernel replay passed; package-wide validation is separate.
+
 ## Kovalev’s square-root Taylor-section zero-free conjecture
 
 The [complete proof](../results/kovalev-zero-free/FORMALIZATION.md) establishes zero-freeness of every actual Taylor section of the principal analytic square root of the geometric polynomial on the closed unit disk, for every positive length. Its coefficient/iterated-derivative bridge, beta-law transport, finite-section integral identity, and boundary arguments discharge the analytic inputs. The original Conjecture 1.2 is a named endpoint; the broader fractional-exponent and segment supplements and trigonometric Conjecture 1.3 remain unformalized.
