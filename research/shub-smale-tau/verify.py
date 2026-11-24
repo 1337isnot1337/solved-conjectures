@@ -754,6 +754,11 @@ def test_powered_cofactor_extraction():
     print(f'powered Bezout lifting: {lifted} cases; full powered-cofactor extraction: {len(cases)} cases passed')
 
 
+def test_unknown_cofactor_recovery():
+    from cofactor_recovery_checks import run_checks
+    run_checks()
+
+
 def main():
     test_carries_and_products()
     test_all_cuts()
@@ -773,6 +778,7 @@ def main():
     test_frobenius_and_harmonic_examples()
     test_dense_square_chain_threshold()
     test_powered_cofactor_extraction()
+    test_unknown_cofactor_recovery()
     print('All finite exact checks passed. No tau bound or BSS separation was verified.')
 
 

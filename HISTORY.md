@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-23 — Recovering an unknown cofactor of small radical degree
+
+The [Shub–Smale τ research](research/shub-smale-tau/COFACTOR_RECOVERY.md) removes the supplied-factorization hypothesis from the powered-cofactor reduction. A length-s program for H=F_N Q yields a nonzero integer scalar multiple of F_N with O((s+1)(d+1)^14) gates, where d is the number of distinct complex roots of Q. Shifted logarithmic derivatives, a charged finite jet, exact Padé reconstruction and low-degree gcds recover bases grouped by their multiplicities. No program for Q is given, and arbitrary multiplicities and overlap with the prescribed roots are allowed.
+
+All three workers and root reviewed the proof, including nonuniform scalar choices and shared denominator clearing. Five exact recovery cases pass, with deliberately nonintegral residual scalars. This is a restricted circuit-existence theorem: d is not bounded by a polynomial in s, and no unrestricted τ bound or BSS separation is obtained. Research remains tracked in [issue #260](https://github.com/1337isnot1337/solved-conjectures/issues/260).
+
 ## 2026-11-23 — Removing arbitrary powers of a small cofactor support
 
 The [Shub–Smale τ research](research/shub-smale-tau/README.md) now proves a charged extraction from F_N times supplied powers whose bases have small total degree. A short geometric-sum identity lifts an integer Bezout certificate to arbitrary powers with logarithmic dependence on their exponents. Endpoint transport removes the cofactor without expanding its powers and permits roots shared with the required interval. All scalar construction and exact quotient costs are included.

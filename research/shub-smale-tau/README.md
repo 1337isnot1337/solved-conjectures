@@ -35,6 +35,7 @@ Roots are distinct, with no multiplicity count. Arbitrary free integer constants
 | Matrix-power and quadratic-chain restrictions | Integer evaluation bounds the relevant cyclotomic degrees; lattice collisions give d ≥ (7/6)log₂N−6 for a quadratic composition constant on N consecutive integers. Neither covers general SLPs. |
 | Endpoint-anchored extraction with a cofactor-degree parameter | A size-s program for F_N Q yields a nonzero scalar multiple of F_N in O((s+1)(q+1)^4+log(N+1)) gates, where q=deg Q. The construction does not need a program for Q; q may still be exponential in s. |
 | Powered cofactors with supplied bases of small total degree | A shifted Bezout identity removes arbitrary powers with only logarithmic dependence on the exponents. The construction returns a nonzero integer scalar multiple of F_N and permits overlap with the prescribed roots. |
+| Unknown cofactors with few distinct complex roots | A length-s program for F_N Q gives a nonzero integer scalar multiple of F_N in O((s+1)(d+1)^14) gates, where d=deg rad(Q). No cofactor circuit or factorization is supplied. The choices are nonuniform, and d may be exponential. |
 | Polynomial-order jets of the coalescing Boolean inverse | An explicit integer recurrence computes every jet through order R in polynomially many gates in n,R. The degeneration merges the separated integer poles. |
 | Exact Frobenius selection and finite precision | A selected permutation has a rational polynomial representative exactly when it is central in the Galois group; an explicit quadratic Newton lift never equals its limit at a finite stage. |
 | Dense integer roots in variable square chains | More than half the degree forces prime divisibility and even valuations; more than three quarters forces valuation doubling. A six-root degree-eight example makes the latter threshold strict. |
@@ -60,6 +61,7 @@ The consecutive-root minimum is also equivalent up to linear circuit overhead to
 
 - [ANCHORED_DIFFERENCES.md](ANCHORED_DIFFERENCES.md): exact endpoint-sensitive cofactor reduction, a division-free quotient matrix, and the precise scope of universal shift and probe obstructions.
 - [POWERED_COFACTORS.md](POWERED_COFACTORS.md): charged Bezout construction, logarithmic power lifting, and extraction for cofactors of small total base degree.
+- [COFACTOR_RECOVERY.md](COFACTOR_RECOVERY.md): recovery of an unknown small radical support from a shifted logarithmic derivative, with charged Padé reconstruction and multiplicity selection.
 - [INVERSE_DEFORMATIONS.md](INVERSE_DEFORMATIONS.md): the integer recurrence for all finite coalescing jets, spacing-preserving Newton lifts, and endpoint indicators.
 - [FROBENIUS_SELECTION.md](FROBENIUS_SELECTION.md): coefficient fields of selected Galois permutations, exact Newton cost and precision, and a never-exact quadratic example.
 - [HARMONIC_FAMILIES.md](HARMONIC_FAMILIES.md): reciprocal fixed-point averages for binomial products and integer quadratic iterates, an intersective-iteration failure, and a classical Schur test of addition rules.
