@@ -1,19 +1,70 @@
 # Full formalization campaign
 
-## Gawron–Miska–Ulas’s Thue–Morse valuation conjecture
+## Coulangeon–Lazzarini’s two-shell conjecture
 
-The [Lean proof](../lean/Conjectures/ThueMorseValuation.lean) formalizes the
-disproof of the general clause of Conjecture 5.2. It verifies the exponent-17
-counterexample and both valuations in the uniform family for every k ≥ 11,
-with the indices in the same aligned block. The coefficient model is the
-stabilized finite product. The exact modular certificates use carry-free
-integer packing and ordinary kernel reduction.
+[Lean refutes Conjecture 21 in dimension ten](../lean/Conjectures/CoulangeonLazzariniRealLattice.lean).
+It verifies the full-rank discrete lattice in real space, identifies its first two
+positive squared norms as 4 and 8, and checks the two spherical moment
+identities and the failure at squared norm 9. The [integer-coordinate proof](../lean/Conjectures/CoulangeonLazzariniShells.lean)
+also verifies the arbitrary-delay parity-lattice family.
+The orthogonally indecomposable family and height results remain open in Lean.
 
-All three modules passed strict source compilation and pinned stock-kernel
-replay. The all-owned audit checked 123 declarations, including 96 private
-declarations, and eight required endpoints. See the
-[local receipt](verification/lean-thue-morse-valuation-20261124/receipt.json).
+## Gravgaard–Lee’s mixed Lüroth sumset
 
+[Lean proves Conjecture 2.2 and the interval from the written proof](../lean/Conjectures/GravgaardLeeMixedLuroth.lean).
+The sum of the digit sets bounded above by three and four contains $[2879/3520,2]$
+and represents every real residue modulo one. The proof checks the fifteen
+branch containments and the geometric approximation argument for the closed
+sumsets of infinite Lüroth expansions. The two-module local import closure
+passed the pinned kernel replay.
+
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+[Lean proves Conjecture 2.12 and the stronger interval in the written proof](../lean/Conjectures/GravgaardLeeLargeLuroth.lean).
+For every integer $k\ge2$, the sum of the large-digit Lüroth set with itself contains
+$(0,1/(k-1)]$. The witnesses have strictly increasing interleaved digits.
+The development verifies both the convergence of the source's series and the half-open
+digit intervals. See `conjecture_2_12`, `interval_subset_sum` and `interleaved_decomposition`.
+
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+`GesselZhuang.conjecture_7_3` and `GesselZhuang.conjecture_7_2` prove the complete existing result for the actual finite permutation sums, with exponent inverse descents plus one and gamma center `(N+1)/2`. `pinnacle_gamma_expansion` exposes the coefficients directly. The [source audit](../results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md) checks all labels, statistics, quantifiers, and boundary conventions against the primary article. The history equivalence and polynomial enumeration are proved, as are every root and gamma-factorization input. The separate inverse-peak Conjecture 7.1 is not asserted.
+
+## Rowland–Sistos Barrón conjecture
+
+`RowlandSistosBarron.rowland_sistos_barron_counterexample` proves the full recorded counterexample using the literal integer sequence and its minimum tail-recurrence ranks. The exponential-polynomial independence and minimal annihilator, all coefficient cancellations and their exact counts, and the unbounded square obstruction are proved. The [statement audit](../results/rowland-sistos-barron/LEAN_STATUS.md) maps each mathematical object to Lean and retains the source terminology qualification. All 17 project modules passed the three target verification gates; earlier partial records do not enlarge this scope.
+
+## Johnson's conjecture
+
+`JohnsonPfaffian.johnson_conjecture_fin` proves the full Conjecture 7.1 for an arbitrary ordered `Fin (2*u)` tuple and every literal perfect matching. The new circular-factor normalization, adjacent-edge induction, terminating uncrossing and exact distance-kernel bridge discharge the former general-order gap. `CircularData.matching_bound` also proves the stronger circular interval-product theorem without an uncrossing assumption. The [entry audit](../results/johnson-pfaffian/LEAN-AUDIT.md) maps the proof to the recorded argument and preserves all original attribution and priority limits.
+
+The complete thirty-module closure passed strict compilation, all-owned transitive axiom audit and stock-kernel replay. See the [source-hashed receipt](verification/johnson-20261124/receipt.json). Earlier partial checkpoints below remain historical records.
+
+## Caiolo–Ferroni–Hoster conjecture
+
+`CaioloFerroniHoster.counterexample_family` checks the complete rank-five
+construction for every prime power q ≥ 17. It proves the quartic dual Chow
+polynomial is positive on the reals and the quintic dual right augmented
+polynomial has one simple real root, −1. Both fail to split over the reals.
+[Lean theorem](../lean/Conjectures/CaioloFerroniHoster.lean) · [Review and replay](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
+## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
+
+`Juhnke.juhnke_conjecture` proves both original conclusions for the actual path counts in every dimension `d ≥ 2`. The representation is explicitly equivalent to ordered lists of positive east/north steps, with original start `(2,1)` and both original endpoints. The run decomposition, exact positive-composition counts, optional-cut polynomial, coefficient inequalities, translation, and unimodality are all proved. The 18-module closure contains no assumed enumeration or analytic theorem.
+
+The [entry audit](../results/juhnke-lattice-paths/LEAN-AUDIT.md) records the precise source, original proposer Martina Juhnke, proof credit to Cinna Davis and GPT-6.2 Astra, the Brenti translation criterion, and unchanged priority uncertainty. This is Conjecture 6; the separate coherent-path Conjecture 5 is not asserted. The complete [verification receipt](verification/juhnke-20261124/receipt.json) records 577 owned declarations, 502 theorems, 11 required endpoints, and stock-kernel replay.
+
+## Steinerberger’s quantitative Feldheim-tail conjecture
+
+The [complete Lean disproof](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md)
+constructs the probability law with survival function exp(−x−x²/200), identifies
+its actual mean and median, and bounds the ratio of the original product-space
+events for every positive threshold. Both original existence claims fail.
+The four-module closure passed strict compilation, the audit of all 103 owned
+declarations (92 theorems and six required endpoints), and stock-kernel replay.
+The integrator checked the statement against both original primary sources.
+The smoothing, all-epsilon family, strict log-concavity, and rate supplements
+remain unformalized. This is one completed existing conjecture entry.
 
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
@@ -1624,3 +1675,7 @@ records 25 declarations, 22 theorems, eight private declarations, and the
 standard three-axiom whitelist. The root result is a full disproof of the
 universal source conjecture; the additional positive-beta and all-slope
 families remain unformalized. The combined repository gate remains pending.
+
+## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
+
+[Complete source-matched formalization](../results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md) of the original Conjecture 5.8. The three `Conjectures.ThueMorseSignDensity*` modules derive the recurrence from the actual stabilized integer coefficients of the infinite product and prove both finite-prefix count bounds and negations of density zero for `m=2`. The stronger exact-density theorem is not included. Scoped strict compilation, all-owned axiom audit and stock-kernel replay passed; package-wide validation is separate.

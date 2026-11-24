@@ -1,6 +1,6 @@
 # Counterexample to the Caiolo–Ferroni–Hoster conjecture
 
-**Status (2026-11-23):** complete written disproof of Conjecture 7.3 and of the accompanying dual right augmented real-rootedness conjecture; exact independent calculations agree. External review and Lean verification pending. This is one named-conjecture resolution, not two entries. Priority is not asserted.
+**Status (2026-11-23):** complete written disproof of Conjecture 7.3 and of the accompanying dual right augmented real-rootedness conjecture; exact independent calculations agree. The full family is [verified in Lean](LEAN_REVIEW.md). External review is pending. This is one named-conjecture resolution, not two entries. Priority is not asserted.
 
 ## Theorem
 

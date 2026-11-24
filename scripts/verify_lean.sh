@@ -4,9 +4,89 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
-  Conjectures.ThueMorseValuationBasic
-  Conjectures.ThueMorseValuationCertificate
-  Conjectures.ThueMorseValuation
+  Conjectures.CoulangeonLazzariniShells
+  Conjectures.CoulangeonLazzariniRealLattice
+  Conjectures.GravgaardLeeMixedLuroth
+  Conjectures.GravgaardLeeLargeLuroth
+  Conjectures.GesselZhuangBlockOperations
+  Conjectures.GesselZhuangBlocks
+  Conjectures.GesselZhuangChoices
+  Conjectures.GesselZhuangCone
+  Conjectures.GesselZhuangGamma
+  Conjectures.GesselZhuangGammaBasic
+  Conjectures.GesselZhuangGammaRoots
+  Conjectures.GesselZhuangHistories
+  Conjectures.GesselZhuangHistoryBlocks
+  Conjectures.GesselZhuangHistoryGamma
+  Conjectures.GesselZhuangHistoryInjective
+  Conjectures.GesselZhuangHistoryPolynomial
+  Conjectures.GesselZhuangHistorySurjective
+  Conjectures.GesselZhuangPathGamma
+  Conjectures.GesselZhuangPathPolynomial
+  Conjectures.GesselZhuangPaths
+  Conjectures.GesselZhuangPermutations
+  Conjectures.GesselZhuangPolynomial
+  Conjectures.GesselZhuangRoots
+  Conjectures.GesselZhuangStatistics
+  Conjectures.GesselZhuangStatisticsHistory
+  Conjectures.GesselZhuangStatisticsInverse
+  Conjectures.GesselZhuangSymmetry
+  Conjectures.GesselZhuangTheorem
+  Conjectures.RowlandSistosBarronAnnihilator
+  Conjectures.RowlandSistosBarronCancellationCounts
+  Conjectures.RowlandSistosBarronCharacteristic
+  Conjectures.RowlandSistosBarronCoefficients
+  Conjectures.RowlandSistosBarronCoefficientsBasic
+  Conjectures.RowlandSistosBarronCoefficientsBounds
+  Conjectures.RowlandSistosBarronCoefficientsDegrees
+  Conjectures.RowlandSistosBarronCoefficientsDuality
+  Conjectures.RowlandSistosBarronCoefficientsExpansion
+  Conjectures.RowlandSistosBarronDifference
+  Conjectures.RowlandSistosBarronExponential
+  Conjectures.RowlandSistosBarronKrawtchouk
+  Conjectures.RowlandSistosBarronQuasipolynomial
+  Conjectures.RowlandSistosBarronRecurrence
+  Conjectures.RowlandSistosBarronSequence
+  Conjectures.RowlandSistosBarronSums
+  Conjectures.RowlandSistosBarronTheorem
+  Conjectures.JohnsonPfaffian
+  Conjectures.JohnsonPfaffianAllMatching
+  Conjectures.JohnsonPfaffianCircular
+  Conjectures.JohnsonPfaffianCircularAdditive
+  Conjectures.JohnsonPfaffianCircularUncrossing
+  Conjectures.JohnsonPfaffianKernel
+  Conjectures.JohnsonPfaffianNoncrossing
+  Conjectures.CaioloFerroniHosterArithmetic
+  Conjectures.CaioloFerroniHosterGraphs
+  Conjectures.CaioloFerroniHosterMatroid
+  Conjectures.CaioloFerroniHosterSubspaces
+  Conjectures.CaioloFerroniHosterFlags
+  Conjectures.CaioloFerroniHosterFlagPolynomialsBasic
+  Conjectures.CaioloFerroniHosterFlagPolynomials
+  Conjectures.CaioloFerroniHosterCertificate
+  Conjectures.CaioloFerroniHoster
+  Conjectures.JuhnkeAlternating
+  Conjectures.JuhnkeCompositions
+  Conjectures.JuhnkeConjecture
+  Conjectures.JuhnkeLogConcavity
+  Conjectures.JuhnkePathsBasic
+  Conjectures.JuhnkePathsBoundary
+  Conjectures.JuhnkePathsBoundaryConcavity
+  Conjectures.JuhnkePathsCuts
+  Conjectures.JuhnkePathsOriginal
+  Conjectures.JuhnkePathsPolynomial
+  Conjectures.JuhnkePathsRuns
+  Conjectures.JuhnkePathsSteps
+  Conjectures.JuhnkePathsTheorem
+  Conjectures.JuhnkePolynomial
+  Conjectures.JuhnkeRunLengths
+  Conjectures.JuhnkeRuns
+  Conjectures.JuhnkeUnimodality
+  Conjectures.JuhnkeUnitRuns
+  Conjectures.SteinerbergerFeldheimBasic
+  Conjectures.SteinerbergerFeldheimBounds
+  Conjectures.SteinerbergerFeldheimQuantities
+  Conjectures.SteinerbergerFeldheimProbability
   Conjectures.ChenKhareSahiOrthogonalityData
   Conjectures.ChenKhareSahiOrthogonalityTransition
   Conjectures.ChenKhareSahiOrthogonalityGram
@@ -1881,6 +1961,9 @@ modules=(
   Conjectures.LiCoefficientInterpolation
   Conjectures.LiNegativeCoefficient
   Conjectures.LonelinessRationalLatticeQuotient
+  Conjectures.ThueMorseSignDensityProduct
+  Conjectures.ThueMorseSignDensityCore
+  Conjectures.ThueMorseSignDensity
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

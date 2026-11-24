@@ -1,0 +1,56 @@
+name: Steinerberger’s quantitative Feldheim-tail conjecture
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'lean/Conjectures/SteinerbergerFeldheim*.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-steinerberger-feldheim.yml'
+  push:
+    branches: [research, main]
+    paths:
+      - 'lean/Conjectures/SteinerbergerFeldheim*.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-steinerberger-feldheim.yml'
+      - 'lean/lean-toolchain'
+      - 'lean/lake-manifest.json'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Strict source, all-owned audit, and stock-kernel replay
+        run: >-
+          python3 scripts/verify_lean_target.py
+          --root Conjectures.SteinerbergerFeldheimProbability
+          --require SteinerbergerFeldheim.counterexample
+          --require SteinerbergerFeldheim.strict_counterbounds
+          --require SteinerbergerFeldheim.median_unique
+          --require SteinerbergerFeldheim.independent_coordinates
+          --require SteinerbergerFeldheim.first_coordinate_law
+          --require SteinerbergerFeldheim.second_coordinate_law
+          --out .candidate-artifacts/steinerberger-feldheim
+      - uses: actions/upload-artifact@v4
+        with:
+          name: steinerberger-feldheim
+          path: .candidate-artifacts/steinerberger-feldheim/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

@@ -1,8 +1,51 @@
 # History
 
-## 2026-11-24: Formalize the Thue–Morse valuation disproof
+## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
 
-The [Lean proof](lean/Conjectures/ThueMorseValuation.lean) verifies the exponent-17 witness and the full uniform counterexample family for every k ≥ 11. See the [local build, axiom audit and kernel replay receipt](docs/verification/lean-thue-morse-valuation-20261124/receipt.json).
+On 24 November 2026 the [complete original Conjecture 5.8 disproof](results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md) established both finite-prefix counterexamples using the actual infinite-product coefficients. All three modules strictly compiled, the all-owned audit passed (250 declarations, 212 theorems), and independent replay passed. The separate stronger exact-density theorem remains outside this Lean scope. Discovery attribution and the bounded priority caveat remain unchanged. [PR #565](https://github.com/1337isnot1337/solved-conjectures/pull/565).
+
+## 2026-11-24 — Verify Coulangeon–Lazzarini’s two-shell counterexample in Lean
+
+The [Lean proof](lean/Conjectures/CoulangeonLazzariniRealLattice.lean) constructs the full-rank discrete lattice in dimension ten, verifies the spherical second moments for squared norms 4 and 8, and proves failure at squared norm 9. The [integer-coordinate module](lean/Conjectures/CoulangeonLazzariniShells.lean) verifies the elementary arbitrary-delay family.
+
+## 2026-11-24 — Verify Gravgaard–Lee’s mixed Lüroth theorem in Lean
+
+The [Lean proof](lean/Conjectures/GravgaardLeeMixedLuroth.lean) checks the source digit sets, all fifteen interval containments and the passage to the infinite expansions. It proves the stronger ordinary interval and Conjecture 2.2 on all real residues.
+
+## 2026-11-24 — Verify Gravgaard–Lee’s large-digit Lüroth theorem in Lean
+
+The [Lean proof](lean/Conjectures/GravgaardLeeLargeLuroth.lean) verifies Conjecture 2.12 for every digit bound and the stronger interval with strictly increasing interleaved digits from the [written result](results/gravgaard-lee-large-luroth/). It checks the convergent source series and the half-open digit intervals.
+
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+On 24 November 2026 the [complete Lean formalization](results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md) proved the literal pinnacle-set and peak-count inverse-descent polynomials gamma-positive for every positive size, with the original weight and center. Both source conjectures belong to one existing entry. The actual permutation/history bijection and statistic bridges, fixed-path real splitting and symmetry, and full gamma expansion are proved. All 25 project modules passed strict compilation, the all-owned axiom audit, and stock-kernel replay. Ira M. Gessel and Yan Zhuang are the original proposers; the existing proof credit to Cinna Davis and GPT-6.2 Astra and the prior-art and priority qualifications are preserved.
+
+## Rowland–Sistos Barrón conjecture
+
+On 24 November 2026 the [complete Lean formalization](results/rowland-sistos-barron/LEAN_STATUS.md) proved the actual minimum recurrence rank of every power of the recorded integer sequence, the exact formula for every exponent at least 49, and failure of eventual quasipolynomiality over every characteristic-zero field. Strict compilation, every-owned-declaration axiom audit, and stock-kernel replay passed for all 17 modules. The proof follows the existing argument credited to Cinna Davis and GPT-6.2 Astra; Eric Rowland and Jesús Sistos Barrón are the original proposers. The source’s undefined term pseudo-polynomial, the separate general-rank clause, and the priority qualifications remain explicit.
+
+## Johnson's conjecture
+
+On 24 November 2026 the [complete Lean proof](results/johnson-pfaffian/LEAN-AUDIT.md) closed the general even-order, every-matching gap. It formalizes the recorded circular interval-product argument, including the stronger unconditional matrix-class theorem and the exact source-kernel bridge. All thirty project modules passed strict compilation, the audit of every owned declaration, and stock-kernel replay. William Johnson's conjecture, endpoint inequality and uncrossing reduction are credited; the repository proof credit and bounded priority assessment are preserved.
+
+## 2026-11-24: Verify the Caiolo–Ferroni–Hoster family in Lean
+
+The [formal proof](lean/Conjectures/CaioloFerroniHoster.lean) verifies the full
+simple rank-five family for all prime powers q ≥ 17. Both dual polynomials
+fail to split over the reals, and the augmented quintic has a single simple
+real root. [Verification issue #560](https://github.com/1337isnot1337/solved-conjectures/issues/560)
+
+## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
+
+On 24 November 2026 the [complete Lean proof](results/juhnke-lattice-paths/LEAN-AUDIT.md) established log-concavity and unimodality for every dimension and step count in the original unrestricted path convention. All 18 modules passed strict compilation, the audit of every owned declaration, and stock-kernel replay. The proof follows the recorded argument of Cinna Davis and GPT-6.2 Astra, credits Martina Juhnke and the classical Brenti translation criterion, and preserves the existing priority qualification. Both boundary dimensions are included in this one result.
+
+## 2026-11-24 — Steinerberger’s quantitative Feldheim-tail conjecture
+
+The [complete Lean disproof](results/steinerberger-feldheim-tail/LEAN-AUDIT.md) refutes both original existential inequalities with the actual probability law, expectation, median, independent coordinates, and product-event probabilities. The inequalities fail for every positive threshold. All four modules passed strict source compilation, an audit of every owned declaration, and stock-kernel replay; the integrator independently checked the original statements. The additional smoothing and asymptotic supplements remain outside the verified scope. This formalizes the recorded argument of Cinna Davis and GPT-6.2 Astra and retains the existing priority qualifications.
+
+## 2026-11-24: Compact ranked results index
+
+The README lists two side-by-side problem/status pairs, with approximate competition ranks and ties. The established significance order, result links, attribution markers, and Lean statuses are preserved. The site builder reads the index down the left half and then the right half; the README checker and regression tests enforce the same layout and rank order.
 
 ## 2026-11-24: Prove Pantone–Bóna’s third-largest-terminal asymptotic
 

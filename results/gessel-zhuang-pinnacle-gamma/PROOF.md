@@ -1,5 +1,7 @@
 # Gessel–Zhuang's pinnacle-set gamma-positivity conjecture
 
+[Complete Lean formalization and source-statement audit](LEAN-AUDIT.md). The formalization covers every positive permutation size and every pinnacle set, including the consequence for every peak count.
+
 **Result.** [Gessel and Zhuang, *Two-sided permutation statistics via symmetric functions*, Conjecture 7.3](https://arxiv.org/html/2306.15785v3#S7.SS2) holds for every $n$ and every pinnacle set $S$. In fact the inverse-descent polynomial for a fixed pinnacle set decomposes into symmetric, real-rooted polynomials with the same symmetry center. This also proves their Conjecture 7.2 on fixed peak count. The separate inverse-peak real-rootedness Conjecture 7.1 is not claimed.
 
 For a permutation $\pi$, a *pinnacle* is a value at an interior peak, and $\operatorname{ides}(\pi)=\#\{i\in[n-1]:\pi^{-1}(i)>\pi^{-1}(i+1)\}$. Write

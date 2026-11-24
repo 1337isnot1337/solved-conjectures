@@ -1,4 +1,5 @@
 import Conjectures.JohnsonPfaffianSource
+import Mathlib.Analysis.SpecialFunctions.Sqrt
 namespace JohnsonPfaffian
 
 noncomputable def pairIndicator {α : Type*} [DecidableEq α] (S : Finset α) (x y : α) : ℝ :=
@@ -23,7 +24,7 @@ theorem product_intersection_expansion {ι α : Type*} [DecidableEq ι] [Decidab
       apply Finset.sum_congr rfl
       intro K hK
       by_cases h : ∀ q ∈ K, x ∈ S q ∧ y ∈ S q
-      · rw [if_pos h, mul_one]
+      · rw [ite_eq_left h, mul_one]
         apply Finset.prod_congr rfl
         intro q hq
         simp [pairIndicator, h q hq]
