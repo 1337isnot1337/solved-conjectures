@@ -200,6 +200,10 @@ python3 results/lyon-gamma-median/verify.py
 
 The standard-library verifier independently checks 4258 rational median brackets and 4256 cells covering exactly the interval from one tenth to seven. Every sign assertion uses 128-bit-scaled integer intervals with outward rounding, convergent series and explicit signed remainder bounds. The JSON data are proposed brackets, not trusted quantile values. Both independent full replays passed with minimum margin 38316221661991044002598352939471477 divided by 2^128. Typical replay time is one to two minutes. The package has no Lean formalization; the unformalized marker does not erase the essential role of the exact certificate.
 
+## Exact parking-function excedance counterexample
+
+Run `python3 results/alexandersson-parking-excedance/verify.py`. The script checks two exact enumerations through length 17, direct word enumeration through length 6, and the negative Laguerre expression at −1/5. The [proof](../results/alexandersson-parking-excedance/PROOF.md) explains why this refutes the named conjecture. No numerical root approximation or Lean theorem is used.
+
 ## Computational checks
 
 [Chaudhary–Khmiri–Mazhouda counterexample](../results/chaudhary-khmiri-mazhouda/PROOF.md): the exact interval certificate uses only Python's standard library. Run:

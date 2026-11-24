@@ -51,6 +51,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ⬜ |
 | [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ⬜ |
 | [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ✅ |
+| [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | ⬜ |
 | [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ✅ |
 | [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | ⬜ |
 | [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | ⬜ |

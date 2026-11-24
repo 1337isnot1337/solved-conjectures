@@ -51,6 +51,12 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 | --- | --- | --- | --- |
 | [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | Determines the pair of words maximizing the leading difference of win probabilities in Litt’s game for every word length and alphabet size. Includes the sponsor’s full-alphabet convention. | Not formalized | [Proof](results/ekhad-zeilberger-unfair-bet/PROOF.md) · [Exact checks](results/ekhad-zeilberger-unfair-bet/verify.py) · [Issue 219](https://github.com/1337isnot1337/solved-conjectures/issues/219) |
 
+## Parking-function statistics
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Alexandersson’s parking-function excedance conjecture](results/alexandersson-parking-excedance/) | Complete computer-assisted disproof of the original universal conjecture. At length 17, the strict excedance enumerator violates the Laguerre inequality at −1/5. Two exact counting recurrences agree on all coefficients. Ordinary descents and other parking statistics are separate. | Not formalized | [Proof](results/alexandersson-parking-excedance/PROOF.md) · [Independent audit](results/alexandersson-parking-excedance/AUDIT.md) · [Exact replay](results/alexandersson-parking-excedance/verify.py) · [Issue #106](https://github.com/1337isnot1337/solved-conjectures/issues/106) |
+
 ## Restricted permutations
 
 | Problem | Result | Formalization | Evidence |

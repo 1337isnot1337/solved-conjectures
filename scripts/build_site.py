@@ -59,6 +59,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Alexandersson’s parking-function excedance conjecture": "alexandersson-parking-excedance",
     "Nuttall's conjecture": "nuttall-cumulants",
     "Coffey–Smith conjecture": "coffey-smith",
     "Chaudhary–Khmiri–Mazhouda conjecture": "chaudhary-khmiri-mazhouda",

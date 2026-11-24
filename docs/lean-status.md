@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Parking-function excedance certificate
+
+[Alexandersson’s parking-function excedance conjecture](../results/alexandersson-parking-excedance/) is refuted by a rational witness certified with exact integer and fraction arithmetic. No Lean formalization is claimed.
+
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
 The companion paper's Conjecture 4.18 uses distribution-free information on fixed paired supersamples. Its two guarantees hold for every positive sample size by [the Lean theorem](../lean/Conjectures/AgnosticVC/FixedPairing.lean). The COLT bounty version uses conditional mutual information for iid data. [Companion paper, Definition 1.1 and Conjecture 4.18](https://arxiv.org/pdf/2001.09122v3)
@@ -65,6 +69,7 @@ proofs are documented separately in the catalogue and result package.
 | Chaudhary–Khmiri–Mazhouda conjecture | Not formalized | Complete proposed computer-assisted disproof of the universal automorphic Li-coefficient monotonicity claim. The admissible GL1 imaginary norm twist L(s+8i,χ₋₃) has Re(λ(2)−λ(1))<−3/2, certified by rational interval bounds. No GRH assumption. Internally reviewed; no Lean verification. |
 | Merlini–Sala–Sala conjecture | Not formalized | Complete proposed unconditional refutation of the logarithmic and all-ε subpower growth conjecture for the tiny Li term: limsup $`\lvert\lambda_{\mathrm{tiny}}(n)\rvert/n^{1/4}=\infty`$. The authors’ weaker linear stability conjecture is not resolved. Internally reviewed; no Lean verification. |
 | Wang–Yang's conjecture | Not formalized | Complete proposed disproof of the author-manuscript Conjecture 1.10: for every fixed coefficient index, the signed forward differences of the Xi coefficients have infinitely many values of each strict sign. Final journal wording has not been checked; the adjacent logarithmic conjecture is separate. Internally reviewed; no Lean verification. |
+| Alexandersson’s parking-function excedance conjecture | Not formalized | Exact integer and rational counterexample at length 17; two independent counting recurrences. |
 | Tom–Vailaya’s weighted trace conjecture | Not formalized | Complete proposed written proof of journal Conjecture 74 for all natural unit interval graphs on at least two vertices. Internal mathematical review and 585 independent exact small-case checks; no Lean verification or external refereeing. |
 | Csordas–Vishnyakova conjecture | Not formalized | Complete proposed disproof of Conjecture 3.6: the quartic polynomial p(z)=z⁴+z²+1 and entire function exp(−z⁴) satisfy every required generalized coefficient inequality, yet the function is not Laguerre–Pólya. The earlier genus-restricted theorem is unaffected. Internally reviewed written argument; no Lean verification. |
 | Cardon–Forgács–Piotrowski–Sorensen–White conjecture | Not formalized | Complete proposed negative answer to Question 6.1. For every real p>2 there are positive α arbitrarily close to zero for which the proposed diagonal operator fails even to preserve real-rootedness. An exact cubic certificate refutes the universally quantified sufficiency; the remaining parameter classification is separate. Internally reviewed written argument; no Lean verification. |

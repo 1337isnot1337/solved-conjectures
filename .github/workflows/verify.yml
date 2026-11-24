@@ -14,6 +14,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Replay the exact parking-function excedance counterexample
+        run: python3 results/alexandersson-parking-excedance/verify.py
       - name: Check Tom–Vailaya weighted trace on small graphs
         run: python3 results/tom-vailaya-weighted-trace/verify.py
       - name: Check threshold folded-tree alignment boundaries
