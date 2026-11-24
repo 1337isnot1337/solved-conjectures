@@ -1,243 +1,236 @@
 module
 
-public import Mathlib.Data.Real.Basic
-public import Conjectures.ThueMorseValuationBasic
+public import Conjectures.ThueMorseSignDensityProduct
 public import Conjectures.ThueMorseSignDensityCore
 
 @[expose] public section
 
-noncomputable section
-
-namespace ThueMorseSignDensity
-
-open ThueMorseValuation Polynomial Finset
-
 /-!
 # Gawron–Miska–Ulas's Thue–Morse sign-density conjecture
 
-Candidate formalization of the disproof of Conjecture 5.8 of
-Gawron, Miska and Ulas, arXiv:1703.01955, using the documented argument in
-results/gawron-miska-ulas-thue-morse-sign-density/PROOF.md.
-The coefficient model is the stabilized product from ThueMorseValuationBasic.
-The source's exception-index variable, not the coefficient index, is counted.
-This file is a candidate until its exact build, audit and replay pass.
+Source: arXiv:1703.01955, Conjecture 5.8. The finite product is constructed
+by its exact integer polynomial coefficient operations, and the recurrence
+hypotheses are proved for its stable coefficients. The sign-exception
+count uses the source's input variable n, not the coefficient index 3*n+j.
+The density-zero predicate uses positive rational epsilons, expressed by
+integer cross multiplication, rather than assuming a real limit exists.
 -/
 
-def prev (n : ℕ) : ℤ := if n = 0 then 0 else t 2 (n - 1)
+namespace ThueMorseSignDensity
 
-theorem t_zero : t 2 0 = 1 := by
-  simp [t, truncProduct]
+open ThueMorseSignDensityProduct
+open ThueMorseSignDensityCore
 
-theorem pow_bound (n : ℕ) : 2 * n + 1 < 2 ^ (n + 2) := by
-  have h : n < 2 ^ n := Nat.lt_two_pow_self
-  rw [pow_succ, pow_succ]
-  omega
+theorem recurrence : Recurrence (t 2) prev :=
+  ⟨t_zero 2, rfl, t_even, t_odd, prev_even, prev_odd⟩
 
-theorem prefix_bound (n : ℕ) : n < 2 ^ (n + 1) := by
-  have h : n < 2 ^ n := Nat.lt_two_pow_self
-  rw [pow_succ]
-  omega
+theorem t_nonzero (n : Nat) : t 2 n ≠ 0 :=
+  nonzero recurrence n
 
-def stepTerm (d N i : ℕ) : ℤ :=
-  if 2 ∣ (N - i) then
-    ((-1) ^ i * (Nat.choose 2 i : ℤ)) *
-      ((truncProduct ℤ d) ^ 2).coeff ((N - i) / 2)
-  else 0
+theorem signed_identity0 (n : Nat) :
+    t 2 (512*n) + 13*t 2 (512*n+30) + 48*t 2 (512*n+324) = 0 := by
+  simpa using identity0 recurrence n
 
-theorem t_even (n : ℕ) : t 2 (2 * n) = t 2 n + prev n := by
-  by_cases hn : n = 0
-  · subst n
-    simp [prev, t_zero]
-  have hp : n < 2 ^ (n + 1) := prefix_bound n
-  have hq : n - 1 < 2 ^ (n + 1) := by omega
-  have hr : 2 * n < 2 ^ (n + 2) := by
-    have := pow_bound n
-    omega
-  rw [t_eq_coeff 2 (2*n) (n+2) hr, coeff_prefix_pow_step]
-  change (∑ i ∈ range (2*n+1), stepTerm (n+1) (2*n) i) =
-    t 2 n + prev n
-  have hsub : ({0, 2} : Finset ℕ) ⊆ range (2*n+1) := by
-    intro i hi
-    simp at hi
-    rcases hi with rfl | rfl <;> simp <;> omega
-  have hsum : (∑ i ∈ ({0,2} : Finset ℕ), stepTerm (n+1) (2*n) i) =
-      ∑ i ∈ range (2*n+1), stepTerm (n+1) (2*n) i := by
-    apply Finset.sum_subset hsub
-    intro i hi hout
-    have hn02 : i ≠ 0 ∧ i ≠ 2 := by simpa using hout
-    by_cases hle : i ≤ 2
-    · have hi1 : i = 1 := by omega
-      subst i
-      have hodd : ¬ 2 ∣ 2*n-1 := by omega
-      simp [stepTerm, hodd]
-    · have hgt : 2 < i := by omega
-      simp [stepTerm, Nat.choose_eq_zero_of_lt hgt]
-  rw [← hsum]
-  have h0 : stepTerm (n+1) (2*n) 0 = t 2 n := by
-    have hd : 2 ∣ 2*n-0 := by omega
-    have he : (2*n-0)/2 = n := by omega
-    simp [stepTerm, hd, he, t_eq_coeff 2 n (n+1) hp]
-  have h2 : stepTerm (n+1) (2*n) 2 = t 2 (n-1) := by
-    have hd : 2 ∣ 2*n-2 := by omega
-    have he : (2*n-2)/2 = n-1 := by omega
-    norm_num [stepTerm, hd, he, t_eq_coeff 2 (n-1) (n+1) hq]
-  simp [h0, h2, prev, hn]
-
-theorem t_odd (n : ℕ) : t 2 (2*n+1) = -2 * t 2 n := by
-  rw [t_eq_coeff 2 (2*n+1) (n+2) (pow_bound n), coeff_prefix_pow_step]
-  change (∑ i ∈ range (2*n+1+1), stepTerm (n+1) (2*n+1) i) = _
-  have hm : 1 ∈ range (2*n+1+1) := by simp <;> omega
-  rw [Finset.sum_eq_single_of_mem 1 hm]
-  · have hd : 2 ∣ 2*n+1-1 := by omega
-    have he : (2*n+1-1)/2 = n := by omega
-    norm_num [stepTerm, hd, he, t_eq_coeff 2 n (n+1) (prefix_bound n)]
-  · intro i hi hne
-    have hi' : i < 2*n+1+1 := mem_range.mp hi
-    by_cases hle : i ≤ 2
-    · have hodd : ¬ 2 ∣ 2*n+1-i := by omega
-      simp [stepTerm, hodd]
-    · have hgt : 2 < i := by omega
-      simp [stepTerm, Nat.choose_eq_zero_of_lt hgt]
-
-theorem prev_even (n : ℕ) : prev (2*n) = -2 * prev n := by
-  by_cases hn : n = 0
-  · simp [hn, prev]
-  · have h2n : 2*n ≠ 0 := by omega
-    have he : 2*n-1 = 2*(n-1)+1 := by omega
-    simp only [prev, if_neg hn, if_neg h2n, he, t_odd]
-
-theorem prev_odd (n : ℕ) : prev (2*n+1) = t 2 n + prev n := by
-  have hne : 2*n+1 ≠ 0 := by omega
-  have he : 2*n+1-1 = 2*n := by omega
-  rw [prev, if_neg hne, he, t_even]
-
-/-- Connect the exact stabilized polynomial coefficients to the independently
-compiled core arithmetic reduction. -/
-theorem recurrence : ThueMorseSignDensityCore.Recurrence (t 2) prev :=
-  ⟨t_zero, by simp [prev], t_even, t_odd, prev_even, prev_odd⟩
-
-theorem t_nonzero (n : ℕ) : t 2 n ≠ 0 :=
-  ThueMorseSignDensityCore.nonzero recurrence n
-
-theorem identity0 (n : ℕ) :
-    t 2 (512*n+0) + 13*t 2 (512*n+30) + 48*t 2 (512*n+324) = 0 :=
-  ThueMorseSignDensityCore.identity0 recurrence n
-
-theorem identity1 (n : ℕ) :
+theorem signed_identity1 (n : Nat) :
     t 2 (256*n+1) + 34*t 2 (256*n+16) + 80*t 2 (256*n+166) = 0 :=
-  ThueMorseSignDensityCore.identity1 recurrence n
+  identity1 recurrence n
 
-theorem block0 (h : ℕ) :
-    ∃ s < 512, t 2 (3*(512*h+s)) < 0 :=
-  ThueMorseSignDensityCore.block0 recurrence h
+def sign (z : Int) : Int := if z<0 then -1 else if z=0 then 0 else 1
 
-theorem block1 (h : ℕ) :
-    ∃ s < 256, 0 < t 2 (3*(256*h+s)+1) :=
-  ThueMorseSignDensityCore.block1 recurrence h
+abbrev exception (m j n : Nat) : Prop := sign (t m (3*n+j)) ≠ (-1 : Int)^j
 
-def sign (a : ℤ) : ℤ := if a < 0 then -1 else if a = 0 then 0 else 1
+def exceptionBit (m j n : Nat) : Bool := decide (exception m j n)
 
-def exception (m j n : ℕ) : Prop := sign (t m (3*n+j)) ≠ (-1 : ℤ)^j
+def exceptions (m j X : Nat) : List Nat :=
+  (List.range X).filter (exceptionBit m j)
 
-def exceptions (m j X : ℕ) : Finset ℕ :=
-  (range X).filter (fun n => sign (t m (3*n+j)) ≠ (-1 : ℤ)^j)
+theorem exceptions_nodup (m j X : Nat) : (exceptions m j X).Nodup := by
+  exact List.Nodup.sublist List.filter_sublist List.nodup_range
 
-theorem exception_block0 (h : ℕ) : ∃ s < 512, exception 2 0 (512*h+s) := by
-  obtain ⟨s, hs, ht⟩ := block0 h
-  exact ⟨s, hs, by simp [exception, sign, ht]⟩
+theorem exceptions_mem (m j X n : Nat) :
+    n ∈ exceptions m j X ↔ n<X ∧ exception m j n := by
+  simp [exceptions, List.mem_filter, List.mem_range, exceptionBit]
 
-theorem exception_block1 (h : ℕ) : ∃ s < 256, exception 2 1 (256*h+s) := by
-  obtain ⟨s, hs, ht⟩ := block1 h
-  exact ⟨s, hs, by simp [exception, sign, not_lt.mpr (le_of_lt ht), ne_of_gt ht]⟩
-
-theorem exception0_iff (n : ℕ) :
-    exception 2 0 n ↔ t 2 (3*n) < 0 := by
-  by_cases hn : t 2 (3*n) < 0
-  · simp [exception, sign, hn]
-  · have hne := t_nonzero (3*n)
-    simp [exception, sign, hn, hne]
-
-theorem exception1_iff (n : ℕ) :
-    exception 2 1 n ↔ 0 < t 2 (3*n+1) := by
-  have hne := t_nonzero (3*n+1)
-  by_cases hn : t 2 (3*n+1) < 0
-  · simp [exception, sign, hn, not_lt.mpr (le_of_lt hn)]
-  · have hp : 0 < t 2 (3*n+1) := by omega
-    simp [exception, sign, hn, hne, hp]
-
-theorem card_eq_countPrefix (m j X : ℕ) :
-    (exceptions m j X).card =
-      ThueMorseSignDensityCore.countPrefix (fun n => decide (exception m j n)) X := by
+theorem count_filter_range (b : Nat → Bool) (X : Nat) :
+    ((List.range X).filter b).length = countPrefix b X := by
   induction X with
-  | zero => simp [exceptions, ThueMorseSignDensityCore.countPrefix]
+  | zero => rfl
   | succ X ih =>
-    rw [ThueMorseSignDensityCore.countPrefix, ← ih]
-    by_cases h : sign (t m (3*X+j)) ≠ (-1 : ℤ)^j
-    · have hn : X ∉ (range X).filter
-          (fun n => sign (t m (3*n+j)) ≠ (-1 : ℤ)^j) := by simp
-      simp [exceptions, range_succ, filter_insert, h, exception, hn]
-    · simp [exceptions, range_succ, filter_insert, h, exception]
+    rw [List.range_succ,List.filter_append,List.length_append,ih]
+    cases h : b X <;> simp [countPrefix,h]
 
-theorem lower_bound0 (X : ℕ) : X/512 ≤ (exceptions 2 0 X).card := by
-  rw [card_eq_countPrefix]
-  have h : (fun n => decide (exception 2 0 n)) =
-      (fun n => decide (t 2 (3*n) < 0)) := by
-    funext n
-    simp [exception0_iff]
-  rw [h]
+theorem count_eq (m j X : Nat) :
+    (exceptions m j X).length = countPrefix (exceptionBit m j) X :=
+  count_filter_range _ X
+
+theorem exception0_iff (n : Nat) : exception 2 0 n ↔ t 2 (3*n) < 0 := by
+  have hne := t_nonzero (3*n)
+  change (sign (t 2 (3*n)) ≠ 1) ↔ t 2 (3*n)<0
+  by_cases hn : t 2 (3*n)<0 <;> simp [sign,hn,hne]
+
+theorem exception1_iff (n : Nat) : exception 2 1 n ↔ 0 < t 2 (3*n+1) := by
+  have hne := t_nonzero (3*n+1)
+  change (sign (t 2 (3*n+1)) ≠ -1) ↔ 0<t 2 (3*n+1)
+  by_cases hn : t 2 (3*n+1)<0
+  · have hp : ¬ 0<t 2 (3*n+1) := by omega
+    simp [sign,hn,hp]
+  · have hp : 0<t 2 (3*n+1) := by omega
+    simp [sign,hn,hne,hp]
+
+theorem bit0 : exceptionBit 2 0 = (fun n => decide (t 2 (3*n)<0)) := by
+  funext n
+  simp [exceptionBit,exception0_iff]
+
+theorem bit1 : exceptionBit 2 1 = (fun n => decide (0<t 2 (3*n+1))) := by
+  funext n
+  simp [exceptionBit,exception1_iff]
+
+theorem exception_block0 (h : Nat) : ∃ s : Nat, s<512 ∧ exception 2 0 (512*h+s) := by
+  obtain ⟨s,hs,ht⟩ := block0 recurrence h
+  exact ⟨s,hs,(exception0_iff _).mpr ht⟩
+
+theorem exception_block1 (h : Nat) : ∃ s : Nat, s<256 ∧ exception 2 1 (256*h+s) := by
+  obtain ⟨s,hs,ht⟩ := block1 recurrence h
+  exact ⟨s,hs,(exception1_iff _).mpr ht⟩
+
+/-- Each block also has a coefficient of the proposed usual sign. -/
+theorem usual_block0 (h : Nat) : ∃ s : Nat, s<512 ∧ ¬ exception 2 0 (512*h+s) := by
+  by_cases hex : ∃ s : Nat, s<512 ∧ ¬ exception 2 0 (512*h+s)
+  · exact hex
+  · have hn (s : Nat) (hs : s<512) : t 2 (3*(512*h+s))<0 := by
+      by_cases h : exception 2 0 (512*h+s)
+      · exact (exception0_iff _).mp h
+      · exact False.elim (hex ⟨s,hs,h⟩)
+    have h0 := hn 0 (by decide)
+    have h1 := hn 10 (by decide)
+    have h2 := hn 108 (by decide)
+    rw [show 3*(512*h+0)=512*(3*h) by omega] at h0
+    rw [show 3*(512*h+10)=512*(3*h)+30 by omega] at h1
+    rw [show 3*(512*h+108)=512*(3*h)+324 by omega] at h2
+    have hid := signed_identity0 (3*h)
+    omega
+
+theorem usual_block1 (h : Nat) : ∃ s : Nat, s<256 ∧ ¬ exception 2 1 (256*h+s) := by
+  by_cases hex : ∃ s : Nat, s<256 ∧ ¬ exception 2 1 (256*h+s)
+  · exact hex
+  · have hn (s : Nat) (hs : s<256) : 0<t 2 (3*(256*h+s)+1) := by
+      by_cases h : exception 2 1 (256*h+s)
+      · exact (exception1_iff _).mp h
+      · exact False.elim (hex ⟨s,hs,h⟩)
+    have h0 := hn 0 (by decide)
+    have h1 := hn 5 (by decide)
+    have h2 := hn 55 (by decide)
+    rw [show 3*(256*h+0)+1=256*(3*h)+1 by omega] at h0
+    rw [show 3*(256*h+5)+1=256*(3*h)+16 by omega] at h1
+    rw [show 3*(256*h+55)+1=256*(3*h)+166 by omega] at h2
+    have hid := signed_identity1 (3*h)
+    omega
+
+theorem lower_bound0 (X : Nat) : X/512 ≤ (exceptions 2 0 X).length := by
+  rw [count_eq,bit0]
   exact ThueMorseSignDensityCore.lower_bound0 recurrence X
 
-theorem lower_bound1 (X : ℕ) : X/256 ≤ (exceptions 2 1 X).card := by
-  rw [card_eq_countPrefix]
-  have h : (fun n => decide (exception 2 1 n)) =
-      (fun n => decide (0 < t 2 (3*n+1))) := by
-    funext n
-    simp [exception1_iff]
-  rw [h]
+theorem lower_bound1 (X : Nat) : X/256 ≤ (exceptions 2 1 X).length := by
+  rw [count_eq,bit1]
   exact ThueMorseSignDensityCore.lower_bound1 recurrence X
 
-/-- The epsilon-N definition of natural density zero, for nonnegative ratios. -/
-def ZeroDensity (m j : ℕ) : Prop :=
-  ∀ ε : ℝ, 0 < ε → ∃ N : ℕ, ∀ X : ℕ, N ≤ X →
-    ((exceptions m j X).card : ℝ) / (X : ℝ) < ε
+theorem complement_count (b : Nat → Bool) (X : Nat) :
+    countPrefix b X + countPrefix (fun n => !(b n)) X = X := by
+  induction X with
+  | zero => rfl
+  | succ X ih =>
+    rw [countPrefix,countPrefix]
+    cases h : b X <;> simp [h] <;> omega
 
-theorem not_zero_density_of_bound (m j L : ℕ) (hL : 0 < L)
-    (h : ∀ X : ℕ, X/L ≤ (exceptions m j X).card) : ¬ ZeroDensity m j := by
-  intro hd
-  have hLr : (0 : ℝ) < L := by exact_mod_cast hL
-  obtain ⟨N, hN⟩ := hd (1/(2*(L : ℝ))) (by positivity)
-  let X := L*(N+1)
-  have hX : N ≤ X := by
-    have hm := Nat.mul_le_mul_right (N+1) (show 1 ≤ L by omega)
-    dsimp [X]
+theorem upper_bound0 (X : Nat) : (exceptions 2 0 X).length + X/512 ≤ X := by
+  have h := count_from_blocks (fun n => !(exceptionBit 2 0 n)) 512 X (by
+    intro k
+    obtain ⟨s,hs,hnot⟩ := usual_block0 k
+    exact ⟨s,hs,by simp [exceptionBit,hnot]⟩)
+  rw [count_eq]
+  have hc := complement_count (exceptionBit 2 0) X
+  omega
+
+theorem upper_bound1 (X : Nat) : (exceptions 2 1 X).length + X/256 ≤ X := by
+  have h := count_from_blocks (fun n => !(exceptionBit 2 1 n)) 256 X (by
+    intro k
+    obtain ⟨s,hs,hnot⟩ := usual_block1 k
+    exact ⟨s,hs,by simp [exceptionBit,hnot]⟩)
+  rw [count_eq]
+  have hc := complement_count (exceptionBit 2 1) X
+  omega
+
+/-- Infinite subsets of the naturals are precisely the unbounded ones. -/
+def InfinitelyMany (m j : Nat) : Prop :=
+  ∀ N : Nat, ∃ n : Nat, N≤n ∧ exception m j n
+
+theorem infinitely_many0 : InfinitelyMany 2 0 := by
+  intro N
+  obtain ⟨s,hs,h⟩ := exception_block0 N
+  exact ⟨512*N+s,by omega,h⟩
+
+theorem infinitely_many1 : InfinitelyMany 2 1 := by
+  intro N
+  obtain ⟨s,hs,h⟩ := exception_block1 N
+  exact ⟨256*N+s,by omega,h⟩
+
+/-- Natural density zero, with the positive rational epsilon a/b:
+for sufficiently large positive X, count/X < a/b.
+Integer cross multiplication expresses the exact rational comparison. -/
+def DensityZero (m j : Nat) : Prop :=
+  ∀ a b : Nat, 0<a → 0<b → ∃ N : Nat, ∀ X : Nat, N≤X → 0<X →
+    b*(exceptions m j X).length < a*X
+
+theorem densityZero_reciprocal (m j : Nat) :
+    DensityZero m j ↔ ThueMorseSignDensityCore.ZeroDensity (exceptionBit m j) := by
+  constructor
+  · intro hd k hk
+    obtain ⟨N,hN⟩ := hd 1 k (by decide) hk
+    refine ⟨N+1,?_⟩
+    intro X hX
+    have h := hN X (by omega) (by omega)
+    rw [count_eq] at h
+    simpa using h
+  · intro hd a b ha hb
+    obtain ⟨N,hN⟩ := hd b hb
+    refine ⟨N,?_⟩
+    intro X hX _
+    rw [count_eq]
+    have h := hN X hX
+    have hmul := Nat.mul_le_mul_right X (show 1≤a by omega)
+    rw [Nat.one_mul] at hmul
     omega
-  have hXpos : (0 : ℝ) < X := by dsimp [X]; positivity
-  have hdiv : X/L = N+1 := by
-    dsimp [X]
-    exact Nat.mul_div_cancel_left (N+1) hL
-  have hc := h X
-  rw [hdiv] at hc
-  have hcr : ((N+1 : ℕ) : ℝ) ≤ ((exceptions m j X).card : ℝ) := by exact_mod_cast hc
-  have hs := (div_lt_iff₀ hXpos).mp (hN X hX)
-  have he : 1/(2*(L : ℝ)) * (X : ℝ) = ((N : ℝ)+1)/2 := by
-    simp only [X, Nat.cast_mul, Nat.cast_add, Nat.cast_one]
-    field_simp
-    <;> ring
-  rw [he] at hs
-  push_cast at hcr
-  linarith
 
-theorem not_zero_density0 : ¬ ZeroDensity 2 0 :=
-  not_zero_density_of_bound 2 0 512 (by decide) lower_bound0
+theorem not_zero_density0 : ¬ DensityZero 2 0 := by
+  intro h
+  have h' := (densityZero_reciprocal 2 0).mp h
+  rw [bit0] at h'
+  exact ThueMorseSignDensityCore.not_zero_density0 recurrence h'
 
-theorem not_zero_density1 : ¬ ZeroDensity 2 1 :=
-  not_zero_density_of_bound 2 1 256 (by decide) lower_bound1
+theorem not_zero_density1 : ¬ DensityZero 2 1 := by
+  intro h
+  have h' := (densityZero_reciprocal 2 1).mp h
+  rw [bit1] at h'
+  exact ThueMorseSignDensityCore.not_zero_density1 recurrence h'
 
-/-- Conjecture 5.8 is false, with its original quantification over m and j. -/
-theorem conjecture_false :
-    ¬ (∀ m : ℕ, 2 ≤ m → ∀ j : ℕ, j < 2 →
-      Set.Infinite {n | exception m j n} ∧ ZeroDensity m j) := by
+def Conjecture5_8 : Prop :=
+  ∀ m : Nat, 2≤m → ∀ j : Nat, j<2 → InfinitelyMany m j ∧ DensityZero m j
+
+/-- Exact disproof of the universally quantified original conjecture. -/
+theorem conjecture_false : ¬ Conjecture5_8 := by
   intro h
   exact not_zero_density0 (h 2 (by decide) 0 (by decide)).2
+
+/-- Both of the source's exception sets for m=2 are infinite and fail
+density zero. The finite-prefix estimates give the positive lower-density
+and complementary upper-density bounds of the written proof. -/
+theorem both_counterexamples :
+    InfinitelyMany 2 0 ∧ InfinitelyMany 2 1 ∧
+    ¬ DensityZero 2 0 ∧ ¬ DensityZero 2 1 ∧
+    (∀ X, X/512 ≤ (exceptions 2 0 X).length ∧ (exceptions 2 0 X).length+X/512≤X) ∧
+    (∀ X, X/256 ≤ (exceptions 2 1 X).length ∧ (exceptions 2 1 X).length+X/256≤X) :=
+  ⟨infinitely_many0,infinitely_many1,not_zero_density0,not_zero_density1,
+    fun X => ⟨lower_bound0 X,upper_bound0 X⟩,
+    fun X => ⟨lower_bound1 X,upper_bound1 X⟩⟩
 
 end ThueMorseSignDensity
