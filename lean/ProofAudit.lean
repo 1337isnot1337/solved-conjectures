@@ -9,6 +9,23 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `GesselZhuang.conjecture_7_3,
+    `GesselZhuang.conjecture_7_2,
+    `GesselZhuang.pinnacle_gamma_expansion,
+    `GesselZhuang.pinnaclePolynomial_succ_eq_history_sum,
+    `GesselZhuang.peakPolynomial_succ_eq_history_sum,
+    `GesselZhuang.closedHistoryPermutationEquiv,
+    `GesselZhuang.TotalHistory.blocks_injective,
+    `GesselZhuang.blocks_surjective,
+    `GesselZhuang.History.word_pinnacles,
+    `GesselZhuang.History.word_peakCount,
+    `GesselZhuang.History.word_inverseDescents,
+    `GesselZhuang.pathPolynomial_eq_historyPolynomial,
+    `GesselZhuang.gammaPositive_of_splits,
+    `GesselZhuang.pathPolynomial_splits,
+    `GesselZhuang.pathPolynomial_symmetric,
+    `GesselZhuang.mem_wordPinnacles_iff,
+    `GesselZhuang.wordPeakCount_eq_card_wordPinnacles,
     `RowlandSistosBarron.isTailRecurrence_iff,
     `RowlandSistosBarron.exponentialPolynomial_tailRecurrenceRank,
     `RowlandSistosBarron.poweredSequence_eq_exponential_sum,
