@@ -2,7 +2,7 @@
 
 Write $D_2(G)$ for the fewest edge deletions needed to make $G$ bipartite. [Erdős's conjecture (Problem 23)](https://mathweb.ucsd.edu/~erdosproblems/erdos/newproblems/K3FreeToBipartite.html), stated in [Erdős–Faudree–Pach–Spencer (1988)](https://combinatorica.hu/~p_erdos/1988-12.pdf), asks whether $D_2(G)\le |V(G)|^2/25$ for all triangle-free graphs. We prove this bound for every graph with circular chromatic number strictly less than $3$, in particular for every graph homomorphic to an Andrásfai graph. The proof covers an additional, countable-order-free structural class described by a six-part partition. This is not a full solution of Problem 23. The bound is sharp within this class, by balanced blow-ups of the pentagon.
 
-Related prior work: [Bedenknecht–Mota–Reiher–Schacht](https://www.math.uni-hamburg.de/home/schacht/2019/Andrasfai.pdf) proved the **sparse-half conjecture** for graphs homomorphic to Andrásfai graphs. That selects one half with few edges; the bipartization problem concerns the sum of the edge counts in both parts of a single cut, without a half-size requirement. We use the established high-density tail of [Balogh–Clemen–Lidický, Theorem 2(b)](https://arxiv.org/pdf/2103.14179#page=2). [Ferudun's 2026 preprint](https://arxiv.org/abs/2606.28041) studies in-band finite orders and does not establish the unrestricted assertion. The [October 2026 research summary](https://erdosproblems.ai/wiki/research/triangle_free_bipartization/proof_sketch) records the separate Clebsch-homomorphism result and keeps the middle band open. Searches using the exact circular and Andrásfai class terminology did not identify a previous bipartization proof for the class considered here.
+Related prior work: [Bedenknecht–Mota–Reiher–Schacht](https://www.math.uni-hamburg.de/home/schacht/2019/Andrasfai.pdf) proved the **sparse-half conjecture** for graphs homomorphic to Andrásfai graphs. That selects one half with few edges; the bipartization problem concerns the sum of the edge counts in both parts of a single cut, without a half-size requirement. We use the established high-density tail of [Balogh–Clemen–Lidický, Theorem 2(b)](https://arxiv.org/pdf/2103.14179#page=2). [Ferudun's 2026 preprint](https://arxiv.org/abs/2606.28041) studies in-band finite orders and does not establish the unrestricted assertion. The [October 2026 research summary](https://erdosproblems.ai/wiki/research/triangle_free_bipartization/proof_sketch) records the separate Clebsch-homomorphism result and keeps the middle band open. [Bispo–Mendonça–Mota–Parente, LAWCG 2024, p.42](https://www.lawcg.mat.br/lawcg24/LAWCG2024-annals.pdf) concern sparse halves of vertex-deleted Vega blow-ups, not the sum of both sides of a cut. Searches using the exact circular and Andrásfai class terminology did not identify a previous bipartization proof for the class considered here.
 
 ## A six-part cut lemma
 
@@ -50,3 +50,34 @@ If at most $(603/200000)|V(G)|^2$ edges of a triangle-free graph $G$ can be dele
 \]
 
 The structural theorem for maximal triangle-free graphs of minimum degree $>n/3$ (Andrásfai or Vega blow-ups) does not by itself improve the scope here: minimum degree $>n/3$ already implies the Balogh–Clemen–Lidický density threshold. The more general question of arbitrary weighted Vega blow-ups at lower density is not addressed by the proof, since the six-part template is 3-colorable.
+
+## A further class: Vega graphs without their two axis vertices
+
+The previous structural exclusion of general Vega graphs does not preclude some sharp extensions. Let $J_d$ be the induced subgraph of the standard Vega graph obtained by deleting its two axis vertices $x,y$, for $d\ge2$. In the notation of [Łuczak–Polcyn–Reiher, §4.1](https://onlinelibrary.wiley.com/doi/full/10.1002/jgt.22682), this consists of the Andrásfai core $\Gamma_d$, partitioned into its three consecutive classes $C_0,C_1,C_2$ of sizes $d,d,d-1$, and an outer 6-cycle. Write its outer vertices $a_i,u_i$ for $i\in\{0,1,2\}$, with all edges $a_i u_j$ for $i\ne j$, and with both $a_i$ and $u_i$ adjacent to all of $C_i$ and no other core vertices. **Every graph homomorphic to $J_d$ satisfies $D_2(G)\le |V(G)|^2/25$.** It suffices to check all weighted versions of $J_d$: a homomorphic image pulled back with class weights can only add edges, and a good cut of the weighted target gives a cut of the original graph.
+
+First, deleting any single edge of the outer 6-cycle leaves a graph with circular chromatic number below 3. Put $N=3d-1$, $\delta=1/(3N)$ and place the core vertex $v$ at $v/N$. Set $L=(d-1)/N+1/3$. For label $i$ write an outer position as $i/3+\lambda$. The open ranges of $\lambda$ guaranteeing distance strictly greater than $1/3$ to every vertex in $C_i$ are
+\[
+ (L,L+2\delta),\quad
+ (L+\delta,L+3\delta),\quad
+ (L-\delta,L+4\delta)
+\]
+for the three labels respectively, by considering the first and last core point in each consecutive class. Their common intersection has length $\delta$. Put all six $\lambda$ values in that intersection. For two successive labels mod 3 the corresponding outer edge is allowed precisely when the later label's $\lambda$ is larger. For the ring the resulting ordering constraints form the directed cycle
+\[
+ a_0\longrightarrow u_1\longrightarrow a_2\longrightarrow
+ u_0\longrightarrow a_1\longrightarrow u_2\longrightarrow a_0.
+\]
+Deleting any edge breaks this cycle, and increasing values in a topological order meet every remaining constraint.
+
+Now let $J_d$ be weighted with total mass 1 and edge weight $m$. High density $m>0.16$ is already settled by Balogh–Clemen–Lidický. Assume $m\le0.16$, and write $a_i,u_i$ also for their respective weights. Let $\eta=\min_{i\ne j} a_i u_j$. If $\eta\le0.003$, delete that edge and apply the robustness consequence to the circular remainder; this proves the conjectured bound.
+
+Otherwise all six ring edge weights exceed $0.003$. Let $t$ denote the core mass and $c$ the total weight of attachments between the core and the ring. A family of three cuts singles out one core class against the other two, putting each outer pair on the opposite side from its attached class. It cuts every attachment and leaves one third of the remaining weight on average. Thus we are done if $c\ge m-0.12$; assume $c<m-0.12\le0.04$.
+
+If $t\le0.66$, color the core by (2), rescaled to its own weight, and color the ring bipartitely. With an appropriate relative flip, the attachments leave at most $c/2$ uncut. Since the core is triangle-free and has edge weight at most $t^2/4$, its use of (2) costs at most $t^2/22$. The total is therefore less than $0.66^2/22+0.04/2=0.0398<1/25$.
+
+If $t>0.66$, write $w=1-t<0.34$ and $s_i=a_i+u_i$. All six ring edge weights are at least $\eta$, so
+\[
+ w-s_i=\sum_{j\ne i}(a_j+u_j)\ge
+ 2\eta(1/a_i+1/u_i)\ge8\eta/s_i.
+\]
+Consequently $s_i\ge8\eta/w>0.024/0.34$ for every $i$, giving
+$c\ge t\min_i s_i>0.66(0.024/0.34)>0.04$, a contradiction. This proves the claim for the full family $J_d$, but does not include Vega graphs with either axis vertex retained.
