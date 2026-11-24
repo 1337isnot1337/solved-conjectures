@@ -234,7 +234,7 @@ theorem stableList_length (e F : Nat) :
   count_filter_range (memberBit e) (F+1)
 
 theorem stableList_nodup (e F : Nat) : (stableList e F).Nodup := by
-  exact List.Nodup.filter _ List.nodup_range
+  exact List.Nodup.sublist List.filter_sublist List.nodup_range
 
 theorem stableList_mem (e F n : Nat) (hF : IsLargestStableException e F) :
     n∈stableList e F ↔ StableException e n := by
@@ -243,10 +243,10 @@ theorem stableList_mem (e F n : Nat) (hF : IsLargestStableException e F) :
   cases h : memberBit e n
   · have hs := (stable_iff e n).mpr ((memberBit_false e n).mp h)
     have hn := hF.2 n hs
-    simp [h,hs,show n<F+1 by omega]
+    simp [hs,show n<F+1 by omega]
   · have hs : ¬ StableException e n :=
       fun hs => (stable_iff e n).mp hs ((memberBit_true e n).mp h)
-    simp [h,hs]
+    simp [hs]
 
 /-- Strict inequality for the actual cardinality of the paper's B-set,
 given as a duplicate-free list with precisely its members. -/
