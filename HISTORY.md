@@ -1,5 +1,9 @@
 # History
 
+## Kovalev’s square-root Taylor-section zero-free conjecture
+
+On 24 November 2026 the [complete Lean formalization](results/kovalev-zero-free/FORMALIZATION.md) proved the original square-root conjecture for every section degree and every point of the closed unit disk, with the stronger theorem for every positive geometric-polynomial length. The coefficients are identified with the actual iterated derivatives. Twenty-one strict source builds, the all-owned/private axiom audit and exact stock-kernel replay passed and received independent evidence and statement reviews. Leonid V. Kovalev is the original proposer; the recorded proof credit to Cinna Davis and the bounded priority qualification are preserved. Fractional-exponent, arbitrary-segment and adjacent trigonometric supplements remain unformalized. This updates one existing entry; aggregate verification and public deployment remain separate obligations in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+
 ## 2026-11-24: Formalize the Thue–Morse valuation disproof
 
 The [Lean proof](lean/Conjectures/ThueMorseValuation.lean) verifies the exponent-17 witness and the full uniform counterexample family for every k ≥ 11. See the [local build, axiom audit and kernel replay receipt](docs/verification/lean-thue-morse-valuation-publication-20261124/receipt.json).

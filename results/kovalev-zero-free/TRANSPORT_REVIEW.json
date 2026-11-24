@@ -1,0 +1,24 @@
+{
+  "reviewed_at": "2026-11-24T18:02:37.933612+00:00",
+  "review_type": "independent mathematical and statement audit; no source changes or repeated Lean runs",
+  "reviewer_lane": "claim_audit",
+  "modules": {
+    "Conjectures/KovalevZeroFreeMobius.lean": "2ba1bf0d1718abbd1eb71bd2fa0a58bdc8f58a7a74c1396e361198e0f0d6c9aa",
+    "Conjectures/KovalevZeroFreeEuler.lean": "2d48e70a93aa55f14bb34eccf8bebc840fd69ee0e16b0154458e87e80d0278f6",
+    "Conjectures/KovalevZeroFreeCoupling.lean": "46349d9e8e053870f44f924ccbdf811c506885a6f03b2114f5921f64a3676089",
+    "Conjectures/KovalevZeroFreeTransport.lean": "3710fe1c66572dfa3e2386231b86e53ea98ae0df07e013fc7c4652329a98b5cd",
+    "Conjectures/KovalevZeroFreeComparison.lean": "f8fbbf5c074016d20e2e2a2340e4843cbcb9db5bfa0cd02333f9b8939e94886d"
+  },
+  "source_proof_commit": "6432592c03b24aed190ed7b3204ed942a40a8da4",
+  "source_proof_sha256": "3deeb1ba260ce9ce18d482f8d6911a2b4beabdfc1db0b8659a9bffd4d3901924",
+  "primary_source": "https://arxiv.org/html/2507.04544v1",
+  "primary_statement": "Conjecture 1.2",
+  "endpoints": [
+    "Conjectures.KovalevZeroFree.map_oddsScale_beta",
+    "Conjectures.KovalevZeroFree.integral_oddsScale_beta",
+    "Conjectures.KovalevZeroFree.beta_resolvent_comparison",
+    "Conjectures.KovalevZeroFree.remainder_comparison"
+  ],
+  "verdict": "passed for the reviewed transport/comparison chain; complete Taylor-section theorem and final closure verification outside this receipt",
+  "adaptation": "Uses the proved pointwise coefficient 2-v, whose expectation is exactly 1+b/(a+b), in place of the source sharp coefficient 2/(1+sqrt(v)); the coefficient enlargement is itself proved in Kernel."
+}
