@@ -33,7 +33,7 @@ The written approximate-computation result is Theorem N.5, extending Theorem M.3
 For the permanent over C the bound has the form
 
 ```math
-\operatorname{size}(C_m)\gt m^{c(\log_2m)^{1/3}}
+\mathop{\mathrm{size}}(C_m)\gt m^{c(\log_2m)^{1/3}}
 ```
 
 for some c positive and all sufficiently large m. The approximation definition permits arbitrary Laurent-series constants. Intermediate poles are allowed, but the output has no negative-power coefficients and has the desired constant coefficient. This is sufficient for the graph argument; an exact-circuit lower bound alone would not suffice for that use of approximate factoring.
@@ -148,3 +148,13 @@ REAL_KKT_RADICAL_EXTENSION.md supplies its own proofs of the needed finite activ
 The two restricted-cofactor notes use local analytic inversion and finitely many Taylor coefficients as permitted nonuniform constants. Their coefficientwise limits use Bürgisser 1812.06828v1, Theorem 2.4. The BCJS dimension relation was checked directly in Lemma 3.3 and Appendix A.1: an allowed grid side m represents a permanent of size m-1 by identity padding. The nonzero coefficient factor kappa can be divided out as a scalar arithmetic operation. BCJS Theorem 3.2 instead absorbs that scalar in one extra diagonal entry for a pure projection. No theorem about arbitrary nonzero resultant multiples is imported from either paper.
 
 TAGGED_TRACE_OBSTRUCTION.md proves its digit-polynomial recurrence and free-algebra trace specialization directly. The resultant degree and individual-root incidence are the previously cited standard resultant facts; no general efficient trace theorem is imported. The note explicitly distinguishes arbitrary observables from the reciprocal powers in the unresolved resultant-specific extraction.
+
+## Regular values, derivative orders, and closure complexity
+
+Pascal Koiran, *The Complexity of Local Dimensions for Constructible Sets*, Journal of Complexity 16 (2000), 311–323, DOI [10.1006/jcom.1999.0536](https://doi.org/10.1006/jcom.1999.0536), was checked in the [author-paper copy](https://janos.cs.technion.ac.il/COURSES/238900-13/Papers-2/Koiran-JC-2000.pdf). Proposition 1 records generic-randomness elimination and explains the bounded-alternation scope of the stronger cited elimination result. Theorem 1 computes closure in fixed ambient dimension under the explicitly dense representation in Section 3. Its proof uses coefficient linear algebra with degree bound D^n(D^n+2D+1). It therefore supplies no bound polynomial in a short circuit's logarithmic degree.
+
+The [Dutta–Saxena–Sinhababu author-hosted 2022 manuscript](https://www.cse.iitk.ac.in/users/nitin/papers/factor-closure-jacm.pdf), Lemma 7 and its following remark on printed page 12, distinguish the known O(k^2 s) circuit bound for the k-th derivative from a hypothetical bound polynomial in s and log k. The latter would give polynomial-size permanent circuits. Binary notation for an exponential derivative order is consequently not a charged derivative algorithm. This is separate from that manuscript's Theorem 1 and Radical Conjecture, already audited above.
+
+The new regular-value, projective-sampling, multiplicity-marker and residue formulas are proved in this campaign's notes and depend on the specified earlier geometric lemmas. They are not attributed to either source as imported results. Approximate image membership is kept distinct from exact HN feasibility. Recent discrete counting-hierarchy bounds for APS, audited above, are not substituted for fixed-level arbitrary-complex-coefficient BSS formulas.
+
+The original [LIP98-15 report](https://perso.ens-lyon.fr/pascal.koiran/Publis/lip.98-15.ps), published as Koiran, *Elimination of parameters in the polynomial hierarchy*, Theoretical Computer Science 215 (1999), 289–304, DOI [10.1016/S0304-3975(98)00261-8](https://doi.org/10.1016/S0304-3975(98)00261-8), was downloaded and converted locally for direct inspection; the original digest is in SOURCES.json. Theorem 4.5 uses 2s+1 common generic sample points for s free parameters. Theorem 4.11 gives construction cost O(log L)+(m log sigma)^{O(k)}, with k quantifier blocks and the other quantities as defined there. Theorem 5.5 proves MA_K=AM_K=NP_K in characteristic zero, and the following paragraph states the constant-round extension. These statements do not identify a growing-round sum-check with a constant-round protocol.
