@@ -105,6 +105,7 @@ jobs:
         run: |
           python -m pip install sympy==1.14.0
           python3 results/pantone-bona-asymptotic/certify_ode.py
+          python3 results/chern-fu-lin-joint-eulerian/joint-certificate.py
           python results/gilmore-crossing-nesting/verify.py
           python results/chow-conjecture/verify.py
       - name: Replay dual Chow and symmetric edge polytope counterexamples
