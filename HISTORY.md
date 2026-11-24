@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Prove Pantone–Bóna’s second-largest-terminal asymptotic
+
+The [written proof](results/pantone-bona-second-largest-terminal/) resolves the distinct Conjecture 6.3, with exact leading constant $27\sqrt3/(32\pi)$ for the $A_{5,4}$ class and a general second-largest-terminal result. See [issue #380](https://github.com/1337isnot1337/solved-conjectures/issues/380) for exact supplementary checks and scope. The guessed differential equation is not claimed.
+
 ## 2026-11-24: Prove Pantone–Bóna’s asymptotic conjecture
 
 The [written proof](results/pantone-bona-asymptotic/) resolves Conjecture 6.4 with leading constant $625\sqrt3/(192\pi)$ and extends the asymptotic to the equal-index pattern family. See [issue #377](https://github.com/1337isnot1337/solved-conjectures/issues/377) for scope and exact supplementary checks. No D-finiteness, Lean, external referee review, or priority claim is made.

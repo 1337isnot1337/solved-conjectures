@@ -59,6 +59,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Pantone–Bóna’s second-largest-terminal asymptotic conjecture": "pantone-bona-second-largest-terminal",
     "Pantone–Bóna’s asymptotic conjecture": "pantone-bona-asymptotic",
     "Bétermin’s FCC/BCC cold-spot conjecture": "betermin-fcc-bcc-cold-spots",
     "Coulangeon–Lazzarini’s two-shell conjecture": "coulangeon-lazzarini-two-shells",

@@ -33,6 +33,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/) | ⬜ |
 | [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ |
 | [Pantone–Bóna’s asymptotic conjecture](results/pantone-bona-asymptotic/) | ⬜ |
+| [Pantone–Bóna’s second-largest-terminal asymptotic conjecture](results/pantone-bona-second-largest-terminal/) | ⬜ |
 | [Tom–Vailaya’s weighted trace conjecture](results/tom-vailaya-weighted-trace/) | ⬜ |
 | [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | ⬜ |
 | [Rowland–Sistos Barrón conjecture](results/rowland-sistos-barron/) | ⬜ |
