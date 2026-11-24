@@ -90,7 +90,7 @@ theorem singleton_union_card_le {α β : Type*} [Fintype α] [Fintype β]
     _ = Fintype.card β * k * p * q ^ (k - 1) := by
       simp only [F, Fintype.card_sigma, hcard, Finset.sum_const,
         Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
-      ring
+      <;> ring
 
 /-- In the independent-column model the alphabet contains 3·2^r letters.
 A type is occupied if its ternary coefficient is nonzero. -/
@@ -116,8 +116,7 @@ theorem occupied_letter_card (r : ℕ) (b : Fin r → ZMod 2) :
   classical
   rw [Nat.card_eq_fintype_card, Fintype.card_congr (occupiedLetterEquiv r b),
     Fintype.card_subtype_compl (fun c : ZMod 3 => c = 0),
-    Fintype.card_subtype_eq, ZMod.card]
-  decide
+    Fintype.card_subtype_eq, ZMod.card] <;> decide
 
 /-- The number of independent-column samples containing a singleton
 occupied nonzero type is bounded by
