@@ -13,6 +13,8 @@ The [written proof](results/pantone-bona-third-largest-terminal/) resolves Conje
 - [Both quantitative Feldheim-tail bounds](results/steinerberger-feldheim-tail/) fail for the same smooth strictly log-concave distribution; the original qualitative theorem remains intact.
 - A separate [two-quantile-spacing argument](results/steinerberger-feldheim-tail/LINEAR-EXISTENCE.md) proves a smaller universal existential linear coefficient.
 - [Waring-gap symmetry](results/benfield-lippard-waring-gap-symmetry/) fails at two power-of-two exponents, and [Waring-gap parity](results/benfield-lippard-waring-gap-parity/) holds at every exponent.
+- [The Feldheim–Feldheim weighted tail conjecture](results/feldheim-weighted-tail/) holds for arbitrary independent laws, even with atoms.
+- [Burstein’s refined shape-Wilf equivalence](results/burstein-descent-top-shape-wilf/) fails uniformly over all suffix permutations.
 - The [exact differential equation](results/pantone-bona-asymptotic/ode-proof.md) previously guessed for the terminal-largest pattern class is now proved separately from the asymptotic.
 
 The two plane-partition proofs use exact rational and integer certificates, not sampled real parameters. No Lean, external review, or exclusive priority claims are made.

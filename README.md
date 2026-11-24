@@ -21,6 +21,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Higashitani–Kummer–Michałek conjecture](results/hkm-ehrhart/) | ⬜ |
 | [Dospolova–Germanskov–Zaporozhets's conjecture](results/dospolova-germanskov-zaporozhets/) | 🟡 |
 | [Hartke–Stolee–West–Yancey matching-excess conjecture](results/hartke-stolee-west-yancey-matching-excess/) | ⬜ |
+| [Feldheim–Feldheim’s weighted tail conjecture](results/feldheim-weighted-tail/) | ⬜ |
+| [Burstein’s descent-top shape-Wilf conjecture](results/burstein-descent-top-shape-wilf/) | ⬜ |
 | [Steinerberger’s quantitative Feldheim-tail conjecture](results/steinerberger-feldheim-tail/) | ⬜ |
 | [Benfield–Lippard’s stable Waring-gap symmetry conjecture](results/benfield-lippard-waring-gap-symmetry/) | ⬜ |
 | [Benfield–Lippard’s stable Waring-gap parity conjecture](results/benfield-lippard-waring-gap-parity/) | ⬜ |
