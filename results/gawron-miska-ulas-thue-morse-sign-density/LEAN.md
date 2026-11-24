@@ -62,3 +62,5 @@ Required endpoints:
 - `ThueMorseSignDensity.both_counterexamples`
 
 This is the exact **scoped** proof verification. Package-wide and hosted integration gates are separate.
+
+The [fresh publication receipt](../../docs/verification/lean-thue-morse-sign-density-publication-20261124/receipt.json) records the same complete closure on the current publication candidate.

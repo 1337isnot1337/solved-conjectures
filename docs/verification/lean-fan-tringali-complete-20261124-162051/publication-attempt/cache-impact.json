@@ -1,0 +1,2335 @@
+{
+  "checked_at": "2026-11-24T17:25:56.490257+00:00",
+  "broken_overlay_references": [
+    {
+      "overlay": "/tmp/cinna-lean-162051/dependency-overlay/Mathlib/Algebra/Group/Hom/Defs.ir.sig",
+      "target": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Hom/Defs.ir.sig"
+    },
+    {
+      "overlay": "/tmp/cinna-lean-162051/dependency-overlay/Mathlib/Algebra/Group/Hom/Defs.olean.private",
+      "target": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Hom/Defs.olean.private"
+    },
+    {
+      "overlay": "/tmp/cinna-lean-162051/dependency-overlay/Mathlib/Algebra/Group/Hom/Defs.olean",
+      "target": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Hom/Defs.olean"
+    },
+    {
+      "overlay": "/tmp/cinna-lean-162051/dependency-overlay/Mathlib/Algebra/Group/Hom/Defs.ir",
+      "target": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Hom/Defs.ir"
+    },
+    {
+      "overlay": "/tmp/cinna-lean-162051/dependency-overlay/Mathlib/Algebra/Group/Hom/Defs.olean.server",
+      "target": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Hom/Defs.olean.server"
+    }
+  ],
+  "recent_dependency_outputs": [
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Subtype.olean",
+      "modified": "2026-11-24T17:24:39.510778+00:00",
+      "bytes": 95224
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Quot.olean.server.hash",
+      "modified": "2026-11-24T17:24:48.086078+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Quot.olean.hash",
+      "modified": "2026-11-24T17:24:48.085997+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Quot.olean.private.hash",
+      "modified": "2026-11-24T17:24:48.086354+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Subtype.olean.server",
+      "modified": "2026-11-24T17:24:39.513415+00:00",
+      "bytes": 13600
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Subtype.olean.hash",
+      "modified": "2026-11-24T17:24:39.558304+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Subtype.olean.server.hash",
+      "modified": "2026-11-24T17:24:39.558378+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Subtype.olean.private.hash",
+      "modified": "2026-11-24T17:24:39.558649+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Quot.olean.server",
+      "modified": "2026-11-24T17:24:47.990301+00:00",
+      "bytes": 42648
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Subtype.olean.private",
+      "modified": "2026-11-24T17:24:39.515000+00:00",
+      "bytes": 137312
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Quot.olean",
+      "modified": "2026-11-24T17:24:47.986631+00:00",
+      "bytes": 406368
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Quot.olean.private",
+      "modified": "2026-11-24T17:24:47.990631+00:00",
+      "bytes": 300664
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relation.olean",
+      "modified": "2026-11-24T17:24:37.410815+00:00",
+      "bytes": 317480
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relation.olean.hash",
+      "modified": "2026-11-24T17:24:37.549607+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relator.olean",
+      "modified": "2026-11-24T17:24:32.935935+00:00",
+      "bytes": 62552
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relation.olean.private",
+      "modified": "2026-11-24T17:24:37.434815+00:00",
+      "bytes": 1224184
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relator.olean.server",
+      "modified": "2026-11-24T17:24:32.936107+00:00",
+      "bytes": 9304
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relator.olean.hash",
+      "modified": "2026-11-24T17:24:32.974415+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relation.olean.server.hash",
+      "modified": "2026-11-24T17:24:37.549814+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relation.olean.server",
+      "modified": "2026-11-24T17:24:37.413681+00:00",
+      "bytes": 55576
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relator.olean.private.hash",
+      "modified": "2026-11-24T17:24:32.974715+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relator.olean.private",
+      "modified": "2026-11-24T17:24:32.937318+00:00",
+      "bytes": 100424
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relator.olean.server.hash",
+      "modified": "2026-11-24T17:24:32.974486+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Relation.olean.private.hash",
+      "modified": "2026-11-24T17:24:37.550542+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/ExistsUnique.olean.hash",
+      "modified": "2026-11-24T17:24:01.150338+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Unique.olean.private",
+      "modified": "2026-11-24T17:24:31.614916+00:00",
+      "bytes": 113056
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nonempty.olean.server.hash",
+      "modified": "2026-11-24T17:24:04.772851+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/ExistsUnique.olean.server",
+      "modified": "2026-11-24T17:24:01.089216+00:00",
+      "bytes": 8432
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Unique.olean.hash",
+      "modified": "2026-11-24T17:24:31.691201+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Unique.olean",
+      "modified": "2026-11-24T17:24:31.610916+00:00",
+      "bytes": 123544
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Unique.olean.server.hash",
+      "modified": "2026-11-24T17:24:31.691423+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nonempty.olean",
+      "modified": "2026-11-24T17:24:04.725353+00:00",
+      "bytes": 33712
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/ExistsUnique.olean.private",
+      "modified": "2026-11-24T17:24:01.091448+00:00",
+      "bytes": 285168
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nonempty.olean.private.hash",
+      "modified": "2026-11-24T17:24:04.772947+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nonempty.olean.private",
+      "modified": "2026-11-24T17:24:04.728218+00:00",
+      "bytes": 113000
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Unique.olean.server",
+      "modified": "2026-11-24T17:24:31.614075+00:00",
+      "bytes": 14448
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nonempty.olean.server",
+      "modified": "2026-11-24T17:24:04.726469+00:00",
+      "bytes": 7912
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/ExistsUnique.olean",
+      "modified": "2026-11-24T17:24:01.087448+00:00",
+      "bytes": 156504
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Unique.olean.private.hash",
+      "modified": "2026-11-24T17:24:31.691633+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/ExistsUnique.olean.server.hash",
+      "modified": "2026-11-24T17:24:01.150392+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/ExistsUnique.olean.private.hash",
+      "modified": "2026-11-24T17:24:01.150554+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nonempty.olean.hash",
+      "modified": "2026-11-24T17:24:04.772721+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps.olean.private",
+      "modified": "2026-11-24T17:23:45.131094+00:00",
+      "bytes": 816
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/OfNat.olean.private.hash",
+      "modified": "2026-11-24T17:23:48.407188+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToDual.olean.private.hash",
+      "modified": "2026-11-24T17:23:58.033696+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/DepRewrite.olean.private.hash",
+      "modified": "2026-11-24T17:24:16.883676+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/MkIffOfInductiveProp.olean.hash",
+      "modified": "2026-11-24T17:23:35.056094+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToDual.olean.server",
+      "modified": "2026-11-24T17:23:57.995529+00:00",
+      "bytes": 1760
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToDual.olean.server.hash",
+      "modified": "2026-11-24T17:23:58.033576+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Conv.olean",
+      "modified": "2026-11-24T17:24:42.150733+00:00",
+      "bytes": 251464
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps.olean.server",
+      "modified": "2026-11-24T17:23:45.131046+00:00",
+      "bytes": 928
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ScopedNS.olean.server.hash",
+      "modified": "2026-11-24T17:24:40.802068+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ScopedNS.olean.hash",
+      "modified": "2026-11-24T17:24:40.801986+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SimpRw.olean",
+      "modified": "2026-11-24T17:24:19.707124+00:00",
+      "bytes": 115984
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps.olean",
+      "modified": "2026-11-24T17:23:45.130947+00:00",
+      "bytes": 76736
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Inhabit.olean.hash",
+      "modified": "2026-11-24T17:24:31.029992+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToAdditive.olean.private.hash",
+      "modified": "2026-11-24T17:23:37.376287+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SplitIfs.olean.hash",
+      "modified": "2026-11-24T17:24:22.295439+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToDual.olean.hash",
+      "modified": "2026-11-24T17:23:58.033514+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Inhabit.olean.server.hash",
+      "modified": "2026-11-24T17:24:31.030046+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Spread.olean.private",
+      "modified": "2026-11-24T17:24:08.675316+00:00",
+      "bytes": 451512
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Use.olean.private.hash",
+      "modified": "2026-11-24T17:24:35.742274+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Use.olean.server",
+      "modified": "2026-11-24T17:24:35.670086+00:00",
+      "bytes": 11056
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SplitIfs.olean.server.hash",
+      "modified": "2026-11-24T17:24:22.295499+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ExtendDoc.olean.private.hash",
+      "modified": "2026-11-24T17:23:55.802292+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SimpRw.olean.server.hash",
+      "modified": "2026-11-24T17:24:19.761724+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ExtendDoc.olean.hash",
+      "modified": "2026-11-24T17:23:55.802123+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Inhabit.olean.server",
+      "modified": "2026-11-24T17:24:30.996297+00:00",
+      "bytes": 3040
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Conv.olean.private",
+      "modified": "2026-11-24T17:24:42.162732+00:00",
+      "bytes": 645448
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/CrossRefAttribute.olean.private",
+      "modified": "2026-11-24T17:23:46.787697+00:00",
+      "bytes": 998304
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/CrossRefAttribute.olean.hash",
+      "modified": "2026-11-24T17:23:46.870104+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/DepRewrite.olean.private",
+      "modified": "2026-11-24T17:24:16.727176+00:00",
+      "bytes": 2208272
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ScopedNS.olean.server",
+      "modified": "2026-11-24T17:24:40.711682+00:00",
+      "bytes": 2240
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Conv.olean.server",
+      "modified": "2026-11-24T17:24:42.154094+00:00",
+      "bytes": 8752
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps.olean.private.hash",
+      "modified": "2026-11-24T17:23:45.161615+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Spread.olean.hash",
+      "modified": "2026-11-24T17:24:08.726335+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToAdditive.olean.server.hash",
+      "modified": "2026-11-24T17:23:37.376236+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/CrossRefAttribute.olean.private.hash",
+      "modified": "2026-11-24T17:23:46.870812+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/OfNat.olean.private",
+      "modified": "2026-11-24T17:23:48.378008+00:00",
+      "bytes": 59208
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SimpRw.olean.server",
+      "modified": "2026-11-24T17:24:19.708948+00:00",
+      "bytes": 3152
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/DepRewrite.olean.server",
+      "modified": "2026-11-24T17:24:16.574405+00:00",
+      "bytes": 27552
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/OfNat.olean.server",
+      "modified": "2026-11-24T17:23:48.377031+00:00",
+      "bytes": 1728
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Inhabit.olean.private.hash",
+      "modified": "2026-11-24T17:24:31.030141+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Spread.olean",
+      "modified": "2026-11-24T17:24:08.670460+00:00",
+      "bytes": 175816
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SetNotationForOrder.olean.server.hash",
+      "modified": "2026-11-24T17:23:54.227969+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps.olean.hash",
+      "modified": "2026-11-24T17:23:45.161539+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SplitIfs.olean.server",
+      "modified": "2026-11-24T17:24:22.222074+00:00",
+      "bytes": 8168
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/MkIffOfInductiveProp.olean.server",
+      "modified": "2026-11-24T17:23:34.957281+00:00",
+      "bytes": 16168
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SetNotationForOrder.olean",
+      "modified": "2026-11-24T17:23:54.123569+00:00",
+      "bytes": 392400
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToDual.olean.private",
+      "modified": "2026-11-24T17:23:57.995689+00:00",
+      "bytes": 6632
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SplitIfs.olean.private",
+      "modified": "2026-11-24T17:24:22.231080+00:00",
+      "bytes": 571248
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToAdditive.olean.private",
+      "modified": "2026-11-24T17:23:37.350340+00:00",
+      "bytes": 1152
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToAdditive.olean",
+      "modified": "2026-11-24T17:23:37.347861+00:00",
+      "bytes": 9760
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SimpRw.olean.hash",
+      "modified": "2026-11-24T17:24:19.761664+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/OfNat.olean.hash",
+      "modified": "2026-11-24T17:23:48.407068+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SetNotationForOrder.olean.hash",
+      "modified": "2026-11-24T17:23:54.227820+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Conv.olean.server.hash",
+      "modified": "2026-11-24T17:24:42.233955+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/DepRewrite.olean.hash",
+      "modified": "2026-11-24T17:24:16.882078+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ExtendDoc.olean.server.hash",
+      "modified": "2026-11-24T17:23:55.802176+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SplitIfs.olean.private.hash",
+      "modified": "2026-11-24T17:24:22.295858+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ScopedNS.olean.private",
+      "modified": "2026-11-24T17:24:40.718757+00:00",
+      "bytes": 858464
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SimpRw.olean.private.hash",
+      "modified": "2026-11-24T17:24:19.762022+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Use.olean.private",
+      "modified": "2026-11-24T17:24:35.682845+00:00",
+      "bytes": 849560
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/CrossRefAttribute.olean",
+      "modified": "2026-11-24T17:23:46.755697+00:00",
+      "bytes": 485992
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Core.olean.server.hash",
+      "modified": "2026-11-24T17:24:21.442229+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SetNotationForOrder.olean.server",
+      "modified": "2026-11-24T17:23:54.125240+00:00",
+      "bytes": 18184
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Spread.olean.server",
+      "modified": "2026-11-24T17:24:08.671255+00:00",
+      "bytes": 2320
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SplitIfs.olean",
+      "modified": "2026-11-24T17:24:22.219080+00:00",
+      "bytes": 212472
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/MkIffOfInductiveProp.olean",
+      "modified": "2026-11-24T17:23:34.955903+00:00",
+      "bytes": 536936
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/OfNat.olean.server.hash",
+      "modified": "2026-11-24T17:23:48.407118+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ScopedNS.olean.private.hash",
+      "modified": "2026-11-24T17:24:40.802666+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Core.olean.private",
+      "modified": "2026-11-24T17:24:21.383095+00:00",
+      "bytes": 727656
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SetNotationForOrder.olean.private.hash",
+      "modified": "2026-11-24T17:23:54.228786+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Core.olean.private.hash",
+      "modified": "2026-11-24T17:24:21.442700+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ExtendDoc.olean.server",
+      "modified": "2026-11-24T17:23:55.760776+00:00",
+      "bytes": 2008
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Spread.olean.server.hash",
+      "modified": "2026-11-24T17:24:08.726429+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Spread.olean.private.hash",
+      "modified": "2026-11-24T17:24:08.726776+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ExtendDoc.olean.private",
+      "modified": "2026-11-24T17:23:55.763438+00:00",
+      "bytes": 206128
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps.olean.server.hash",
+      "modified": "2026-11-24T17:23:45.161584+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Conv.olean.private.hash",
+      "modified": "2026-11-24T17:24:42.234392+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToAdditive.olean.hash",
+      "modified": "2026-11-24T17:23:37.376175+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/DepRewrite.olean",
+      "modified": "2026-11-24T17:24:16.571179+00:00",
+      "bytes": 1097376
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/CrossRefAttribute.olean.server",
+      "modified": "2026-11-24T17:23:46.759951+00:00",
+      "bytes": 40576
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/MkIffOfInductiveProp.olean.private.hash",
+      "modified": "2026-11-24T17:23:35.056956+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ScopedNS.olean",
+      "modified": "2026-11-24T17:24:40.711371+00:00",
+      "bytes": 272136
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Core.olean",
+      "modified": "2026-11-24T17:24:21.367095+00:00",
+      "bytes": 338520
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/CrossRefAttribute.olean.server.hash",
+      "modified": "2026-11-24T17:23:46.870185+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Inhabit.olean.private",
+      "modified": "2026-11-24T17:24:30.997923+00:00",
+      "bytes": 133304
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Core.olean.hash",
+      "modified": "2026-11-24T17:24:21.442123+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToAdditive.olean.server",
+      "modified": "2026-11-24T17:23:37.350284+00:00",
+      "bytes": 768
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SimpRw.olean.private",
+      "modified": "2026-11-24T17:24:19.711124+00:00",
+      "bytes": 276240
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/MkIffOfInductiveProp.olean.server.hash",
+      "modified": "2026-11-24T17:23:35.056173+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Use.olean.server.hash",
+      "modified": "2026-11-24T17:24:35.741740+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Core.olean.server",
+      "modified": "2026-11-24T17:24:21.370170+00:00",
+      "bytes": 11208
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/MkIffOfInductiveProp.olean.private",
+      "modified": "2026-11-24T17:23:34.983902+00:00",
+      "bytes": 1313552
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ExtendDoc.olean",
+      "modified": "2026-11-24T17:23:55.760378+00:00",
+      "bytes": 80088
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Use.olean",
+      "modified": "2026-11-24T17:24:35.666846+00:00",
+      "bytes": 375976
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/ToDual.olean",
+      "modified": "2026-11-24T17:23:57.995268+00:00",
+      "bytes": 30888
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Use.olean.hash",
+      "modified": "2026-11-24T17:24:35.741684+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/DepRewrite.olean.server.hash",
+      "modified": "2026-11-24T17:24:16.882195+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/SetNotationForOrder.olean.private",
+      "modified": "2026-11-24T17:23:54.151569+00:00",
+      "bytes": 1035296
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/OfNat.olean",
+      "modified": "2026-11-24T17:23:48.376941+00:00",
+      "bytes": 27808
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Conv.olean.hash",
+      "modified": "2026-11-24T17:24:42.233895+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Inhabit.olean",
+      "modified": "2026-11-24T17:24:30.996125+00:00",
+      "bytes": 69528
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/AddRelatedDecl.olean.private",
+      "modified": "2026-11-24T17:23:38.587840+00:00",
+      "bytes": 1222648
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/WithWeakNamespace.olean.private.hash",
+      "modified": "2026-11-24T17:24:38.465509+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/AddRelatedDecl.olean.private.hash",
+      "modified": "2026-11-24T17:23:38.673354+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/AddRelatedDecl.olean.server",
+      "modified": "2026-11-24T17:23:38.533108+00:00",
+      "bytes": 8640
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/Notation3.olean.server",
+      "modified": "2026-11-24T17:24:46.203382+00:00",
+      "bytes": 32248
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/WithWeakNamespace.olean.server",
+      "modified": "2026-11-24T17:24:38.423631+00:00",
+      "bytes": 2368
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/Notation3.olean.server.hash",
+      "modified": "2026-11-24T17:24:46.811375+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/WithWeakNamespace.olean.hash",
+      "modified": "2026-11-24T17:24:38.465390+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/Notation3.olean.hash",
+      "modified": "2026-11-24T17:24:46.811109+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/AddRelatedDecl.olean",
+      "modified": "2026-11-24T17:23:38.531841+00:00",
+      "bytes": 492544
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/AddRelatedDecl.olean.hash",
+      "modified": "2026-11-24T17:23:38.671838+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/Notation3.olean",
+      "modified": "2026-11-24T17:24:46.198662+00:00",
+      "bytes": 1426616
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/Notation3.olean.private",
+      "modified": "2026-11-24T17:24:46.342659+00:00",
+      "bytes": 3724688
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/AddRelatedDecl.olean.server.hash",
+      "modified": "2026-11-24T17:23:38.672539+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/WithWeakNamespace.olean",
+      "modified": "2026-11-24T17:24:38.423490+00:00",
+      "bytes": 50640
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/Notation3.olean.private.hash",
+      "modified": "2026-11-24T17:24:46.814628+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/WithWeakNamespace.olean.private",
+      "modified": "2026-11-24T17:24:38.424803+00:00",
+      "bytes": 93560
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Util/WithWeakNamespace.olean.server.hash",
+      "modified": "2026-11-24T17:24:38.465450+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Opposites.olean",
+      "modified": "2026-11-24T17:24:51.514570+00:00",
+      "bytes": 247296
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Opposites.olean.server",
+      "modified": "2026-11-24T17:24:51.517087+00:00",
+      "bytes": 31640
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Opposites.olean.hash",
+      "modified": "2026-11-24T17:24:51.570780+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Opposites.olean.server.hash",
+      "modified": "2026-11-24T17:24:51.570873+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Opposites.olean.private",
+      "modified": "2026-11-24T17:24:51.519456+00:00",
+      "bytes": 135288
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Opposites.olean.private.hash",
+      "modified": "2026-11-24T17:24:51.570944+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/BinaryRec.olean.server.hash",
+      "modified": "2026-11-24T17:23:40.030105+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/BinaryRec.olean",
+      "modified": "2026-11-24T17:23:39.966719+00:00",
+      "bytes": 89656
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/Notation.olean.server.hash",
+      "modified": "2026-11-24T17:23:43.645888+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/BinaryRec.olean.hash",
+      "modified": "2026-11-24T17:23:40.030046+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/Notation.olean.server",
+      "modified": "2026-11-24T17:23:43.642393+00:00",
+      "bytes": 1352
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/BinaryRec.olean.private.hash",
+      "modified": "2026-11-24T17:23:40.030380+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/Notation.olean.private",
+      "modified": "2026-11-24T17:23:43.642747+00:00",
+      "bytes": 37272
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/BinaryRec.olean.private",
+      "modified": "2026-11-24T17:23:39.967815+00:00",
+      "bytes": 248808
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/Notation.olean.hash",
+      "modified": "2026-11-24T17:23:43.645838+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/Notation.olean",
+      "modified": "2026-11-24T17:23:43.642304+00:00",
+      "bytes": 20624
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/Notation.olean.private.hash",
+      "modified": "2026-11-24T17:23:43.646028+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/BinaryRec.olean.server",
+      "modified": "2026-11-24T17:23:39.966993+00:00",
+      "bytes": 9744
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Set/Defs.olean.server",
+      "modified": "2026-11-24T17:23:59.448162+00:00",
+      "bytes": 17136
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Set/Defs.olean",
+      "modified": "2026-11-24T17:23:59.447431+00:00",
+      "bytes": 169288
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Set/Defs.olean.hash",
+      "modified": "2026-11-24T17:23:59.529665+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Set/Defs.olean.private.hash",
+      "modified": "2026-11-24T17:23:59.529993+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Set/Defs.olean.private",
+      "modified": "2026-11-24T17:23:59.455477+00:00",
+      "bytes": 404976
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Set/Defs.olean.server.hash",
+      "modified": "2026-11-24T17:23:59.529805+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Init.olean.private",
+      "modified": "2026-11-24T17:24:18.135027+00:00",
+      "bytes": 627056
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Notation.olean.server.hash",
+      "modified": "2026-11-24T17:23:45.635346+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Notation.olean.server",
+      "modified": "2026-11-24T17:23:45.601556+00:00",
+      "bytes": 1344
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Init.olean.hash",
+      "modified": "2026-11-24T17:24:18.301226+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Init.olean.server",
+      "modified": "2026-11-24T17:24:18.119974+00:00",
+      "bytes": 22064
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Init.olean.server.hash",
+      "modified": "2026-11-24T17:24:18.301347+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Notation.olean.private",
+      "modified": "2026-11-24T17:23:45.603435+00:00",
+      "bytes": 37480
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Init.olean.private.hash",
+      "modified": "2026-11-24T17:24:18.301924+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Notation.olean.hash",
+      "modified": "2026-11-24T17:23:45.635283+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Notation.olean",
+      "modified": "2026-11-24T17:23:45.601470+00:00",
+      "bytes": 20624
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Init.olean",
+      "modified": "2026-11-24T17:24:18.115152+00:00",
+      "bytes": 197480
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Int/Notation.olean.private.hash",
+      "modified": "2026-11-24T17:23:45.635428+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Equiv/Defs.olean.server",
+      "modified": "2026-11-24T17:24:50.243388+00:00",
+      "bytes": 72024
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Equiv/Defs.olean",
+      "modified": "2026-11-24T17:24:50.238592+00:00",
+      "bytes": 774992
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Equiv/Defs.olean.hash",
+      "modified": "2026-11-24T17:24:50.378337+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Equiv/Defs.olean.private.hash",
+      "modified": "2026-11-24T17:24:50.379246+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Equiv/Defs.olean.private",
+      "modified": "2026-11-24T17:24:50.258591+00:00",
+      "bytes": 922520
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Equiv/Defs.olean.server.hash",
+      "modified": "2026-11-24T17:24:50.378636+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Conjugate.olean",
+      "modified": "2026-11-24T17:24:18.952993+00:00",
+      "bytes": 37672
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Conjugate.olean.server",
+      "modified": "2026-11-24T17:24:18.953240+00:00",
+      "bytes": 12864
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Conjugate.olean.hash",
+      "modified": "2026-11-24T17:24:19.002914+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Basic.olean.server.hash",
+      "modified": "2026-11-24T17:24:10.749274+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Conjugate.olean.private",
+      "modified": "2026-11-24T17:24:18.953716+00:00",
+      "bytes": 52592
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Defs.olean.server",
+      "modified": "2026-11-24T17:24:07.606672+00:00",
+      "bytes": 17168
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Basic.olean",
+      "modified": "2026-11-24T17:24:10.567283+00:00",
+      "bytes": 448208
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Iterate.olean.private",
+      "modified": "2026-11-24T17:24:20.451619+00:00",
+      "bytes": 165024
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Defs.olean",
+      "modified": "2026-11-24T17:24:07.603335+00:00",
+      "bytes": 151544
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Defs.olean.hash",
+      "modified": "2026-11-24T17:24:07.667707+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Conjugate.olean.server.hash",
+      "modified": "2026-11-24T17:24:19.002999+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Defs.olean.private.hash",
+      "modified": "2026-11-24T17:24:07.668033+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Defs.olean.private",
+      "modified": "2026-11-24T17:24:07.607335+00:00",
+      "bytes": 167384
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Iterate.olean.server",
+      "modified": "2026-11-24T17:24:20.449630+00:00",
+      "bytes": 12848
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Defs.olean.server.hash",
+      "modified": "2026-11-24T17:24:07.667792+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Basic.olean.hash",
+      "modified": "2026-11-24T17:24:10.749133+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Basic.olean.private",
+      "modified": "2026-11-24T17:24:10.595283+00:00",
+      "bytes": 1031992
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Iterate.olean.private.hash",
+      "modified": "2026-11-24T17:24:20.499045+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Iterate.olean",
+      "modified": "2026-11-24T17:24:20.447111+00:00",
+      "bytes": 104256
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Iterate.olean.server.hash",
+      "modified": "2026-11-24T17:24:20.498955+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Basic.olean.private.hash",
+      "modified": "2026-11-24T17:24:10.750177+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Conjugate.olean.private.hash",
+      "modified": "2026-11-24T17:24:19.003074+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Iterate.olean.hash",
+      "modified": "2026-11-24T17:24:20.498880+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Function/Basic.olean.server",
+      "modified": "2026-11-24T17:24:10.571211+00:00",
+      "bytes": 71248
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nontrivial/Defs.olean.server",
+      "modified": "2026-11-24T17:24:06.847082+00:00",
+      "bytes": 8016
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nontrivial/Defs.olean",
+      "modified": "2026-11-24T17:24:06.846916+00:00",
+      "bytes": 29456
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nontrivial/Defs.olean.hash",
+      "modified": "2026-11-24T17:24:06.880801+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nontrivial/Defs.olean.private.hash",
+      "modified": "2026-11-24T17:24:06.880953+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nontrivial/Defs.olean.private",
+      "modified": "2026-11-24T17:24:06.847690+00:00",
+      "bytes": 61392
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Nontrivial/Defs.olean.server.hash",
+      "modified": "2026-11-24T17:24:06.880862+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Equiv.olean.private.hash",
+      "modified": "2026-11-24T17:24:34.852576+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Embedding.olean.server",
+      "modified": "2026-11-24T17:24:33.461788+00:00",
+      "bytes": 6800
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Basic.olean.server.hash",
+      "modified": "2026-11-24T17:24:32.455603+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Basic.olean",
+      "modified": "2026-11-24T17:24:32.418902+00:00",
+      "bytes": 64664
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Embedding.olean",
+      "modified": "2026-11-24T17:24:33.461646+00:00",
+      "bytes": 24416
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Equiv.olean.server",
+      "modified": "2026-11-24T17:24:34.819264+00:00",
+      "bytes": 12120
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Equiv.olean.private",
+      "modified": "2026-11-24T17:24:34.819702+00:00",
+      "bytes": 33168
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Embedding.olean.server.hash",
+      "modified": "2026-11-24T17:24:33.491733+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Basic.olean.hash",
+      "modified": "2026-11-24T17:24:32.455552+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Basic.olean.private",
+      "modified": "2026-11-24T17:24:32.421072+00:00",
+      "bytes": 25384
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Equiv.olean.hash",
+      "modified": "2026-11-24T17:24:34.852455+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Equiv.olean.server.hash",
+      "modified": "2026-11-24T17:24:34.852513+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Equiv.olean",
+      "modified": "2026-11-24T17:24:34.818707+00:00",
+      "bytes": 82112
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Embedding.olean.private.hash",
+      "modified": "2026-11-24T17:24:33.491801+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Basic.olean.private.hash",
+      "modified": "2026-11-24T17:24:32.455677+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Embedding.olean.private",
+      "modified": "2026-11-24T17:24:33.461869+00:00",
+      "bytes": 4400
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Embedding.olean.hash",
+      "modified": "2026-11-24T17:24:33.491677+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/FunLike/Basic.olean.server",
+      "modified": "2026-11-24T17:24:32.420716+00:00",
+      "bytes": 12360
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Logic/Basic.olean.server.hash",
+      "modified": "2026-11-24T17:24:06.289855+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Logic/Basic.olean",
+      "modified": "2026-11-24T17:24:06.127862+00:00",
+      "bytes": 426632
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Logic/Basic.olean.hash",
+      "modified": "2026-11-24T17:24:06.289659+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Logic/Basic.olean.private",
+      "modified": "2026-11-24T17:24:06.147360+00:00",
+      "bytes": 1010832
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Logic/Basic.olean.private.hash",
+      "modified": "2026-11-24T17:24:06.290732+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/Logic/Basic.olean.server",
+      "modified": "2026-11-24T17:24:06.129960+00:00",
+      "bytes": 74376
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/IsEmpty/Defs.olean.server",
+      "modified": "2026-11-24T17:24:30.499702+00:00",
+      "bytes": 9880
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/IsEmpty/Defs.olean",
+      "modified": "2026-11-24T17:24:30.499437+00:00",
+      "bytes": 47112
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/IsEmpty/Defs.olean.hash",
+      "modified": "2026-11-24T17:24:30.533952+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/IsEmpty/Defs.olean.private.hash",
+      "modified": "2026-11-24T17:24:30.534065+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/IsEmpty/Defs.olean.private",
+      "modified": "2026-11-24T17:24:30.500336+00:00",
+      "bytes": 34192
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Basic/IsEmpty/Defs.olean.server.hash",
+      "modified": "2026-11-24T17:24:30.534013+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Attr/Register.olean.hash",
+      "modified": "2026-11-24T17:24:04.183962+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Attr/Register.olean.server",
+      "modified": "2026-11-24T17:24:04.095521+00:00",
+      "bytes": 14896
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Attr/Register.olean",
+      "modified": "2026-11-24T17:24:04.091396+00:00",
+      "bytes": 219360
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Attr/Register.olean.private.hash",
+      "modified": "2026-11-24T17:24:04.184466+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Attr/Register.olean.private",
+      "modified": "2026-11-24T17:24:04.107396+00:00",
+      "bytes": 428008
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Attr/Register.olean.server.hash",
+      "modified": "2026-11-24T17:24:04.184238+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/NotationClass.olean.private",
+      "modified": "2026-11-24T17:23:36.711872+00:00",
+      "bytes": 420600
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/Basic.olean.server.hash",
+      "modified": "2026-11-24T17:23:43.215556+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/Basic.olean",
+      "modified": "2026-11-24T17:23:42.875765+00:00",
+      "bytes": 1865416
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/NotationClass.olean.hash",
+      "modified": "2026-11-24T17:23:36.761886+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/NotationClass.olean.server",
+      "modified": "2026-11-24T17:23:36.703532+00:00",
+      "bytes": 9488
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/Basic.olean.hash",
+      "modified": "2026-11-24T17:23:43.215464+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/Basic.olean.private",
+      "modified": "2026-11-24T17:23:42.999763+00:00",
+      "bytes": 4012688
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/Basic.olean.private.hash",
+      "modified": "2026-11-24T17:23:43.217028+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/NotationClass.olean.private.hash",
+      "modified": "2026-11-24T17:23:36.762276+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/NotationClass.olean.server.hash",
+      "modified": "2026-11-24T17:23:36.761974+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/Basic.olean.server",
+      "modified": "2026-11-24T17:23:42.879853+00:00",
+      "bytes": 61592
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Simps/NotationClass.olean",
+      "modified": "2026-11-24T17:23:36.703372+00:00",
+      "bytes": 190232
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Push/Attr.olean",
+      "modified": "2026-11-24T17:23:44.479737+00:00",
+      "bytes": 316408
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Push/Attr.olean.private",
+      "modified": "2026-11-24T17:23:44.503737+00:00",
+      "bytes": 690592
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Push/Attr.olean.server.hash",
+      "modified": "2026-11-24T17:23:44.566282+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Push/Attr.olean.hash",
+      "modified": "2026-11-24T17:23:44.566207+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Push/Attr.olean.server",
+      "modified": "2026-11-24T17:23:44.483090+00:00",
+      "bytes": 9216
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Push/Attr.olean.private.hash",
+      "modified": "2026-11-24T17:23:44.566859+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToDual.olean.private.hash",
+      "modified": "2026-11-24T17:23:57.362629+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToDual.olean.server",
+      "modified": "2026-11-24T17:23:57.251506+00:00",
+      "bytes": 20592
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToDual.olean.server.hash",
+      "modified": "2026-11-24T17:23:57.361937+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToAdditive.olean.private.hash",
+      "modified": "2026-11-24T17:23:36.055342+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToDual.olean.hash",
+      "modified": "2026-11-24T17:23:57.361859+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToAdditive.olean.server.hash",
+      "modified": "2026-11-24T17:23:36.054874+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToDual.olean.private",
+      "modified": "2026-11-24T17:23:57.267514+00:00",
+      "bytes": 1113096
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToAdditive.olean.private",
+      "modified": "2026-11-24T17:23:35.999885+00:00",
+      "bytes": 810064
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToAdditive.olean",
+      "modified": "2026-11-24T17:23:35.979885+00:00",
+      "bytes": 285920
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/Core.olean.server.hash",
+      "modified": "2026-11-24T17:23:32.837884+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/Core.olean.private",
+      "modified": "2026-11-24T17:23:32.303949+00:00",
+      "bytes": 4529056
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/Core.olean.private.hash",
+      "modified": "2026-11-24T17:23:32.839663+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/TagUnfoldBoundary.olean",
+      "modified": "2026-11-24T17:23:55.104161+00:00",
+      "bytes": 213736
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/TagUnfoldBoundary.olean.server",
+      "modified": "2026-11-24T17:23:55.104416+00:00",
+      "bytes": 7224
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/TagUnfoldBoundary.olean.hash",
+      "modified": "2026-11-24T17:23:55.190011+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToAdditive.olean.hash",
+      "modified": "2026-11-24T17:23:36.054788+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/Core.olean",
+      "modified": "2026-11-24T17:23:32.023953+00:00",
+      "bytes": 1895704
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/Core.olean.hash",
+      "modified": "2026-11-24T17:23:32.837686+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToAdditive.olean.server",
+      "modified": "2026-11-24T17:23:35.982705+00:00",
+      "bytes": 22776
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/TagUnfoldBoundary.olean.private.hash",
+      "modified": "2026-11-24T17:23:55.190475+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/Core.olean.server",
+      "modified": "2026-11-24T17:23:32.025480+00:00",
+      "bytes": 39888
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/ToDual.olean",
+      "modified": "2026-11-24T17:23:57.247515+00:00",
+      "bytes": 380192
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/TagUnfoldBoundary.olean.server.hash",
+      "modified": "2026-11-24T17:23:55.190104+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Translate/TagUnfoldBoundary.olean.private",
+      "modified": "2026-11-24T17:23:55.111552+00:00",
+      "bytes": 529184
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Prop.olean.private.hash",
+      "modified": "2026-11-24T17:24:34.177114+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Unbundled.olean.server.hash",
+      "modified": "2026-11-24T17:24:00.413054+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Prop.olean.hash",
+      "modified": "2026-11-24T17:24:34.176940+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Prop.olean.server",
+      "modified": "2026-11-24T17:24:34.132241+00:00",
+      "bytes": 2272
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Unbundled.olean.private",
+      "modified": "2026-11-24T17:24:00.359206+00:00",
+      "bytes": 198104
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Prop.olean.private",
+      "modified": "2026-11-24T17:24:34.132451+00:00",
+      "bytes": 3616
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Prop.olean",
+      "modified": "2026-11-24T17:24:34.131959+00:00",
+      "bytes": 16400
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Unbundled.olean.private.hash",
+      "modified": "2026-11-24T17:24:00.413133+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Unbundled.olean.server",
+      "modified": "2026-11-24T17:24:00.355970+00:00",
+      "bytes": 36912
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Unbundled.olean.hash",
+      "modified": "2026-11-24T17:24:00.412990+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Unbundled.olean",
+      "modified": "2026-11-24T17:24:00.351461+00:00",
+      "bytes": 279248
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Defs/Prop.olean.server.hash",
+      "modified": "2026-11-24T17:24:34.177058+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Defs.olean.server",
+      "modified": "2026-11-24T17:24:14.170366+00:00",
+      "bytes": 12864
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Defs.olean",
+      "modified": "2026-11-24T17:24:14.167221+00:00",
+      "bytes": 188984
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Defs.olean.hash",
+      "modified": "2026-11-24T17:24:14.224559+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Defs.olean.private.hash",
+      "modified": "2026-11-24T17:24:14.225042+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Defs.olean.private",
+      "modified": "2026-11-24T17:24:14.171221+00:00",
+      "bytes": 201056
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Defs.olean.server.hash",
+      "modified": "2026-11-24T17:24:14.224740+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/InjSurj.olean.private.hash",
+      "modified": "2026-11-24T17:24:12.908940+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semigroup.olean.hash",
+      "modified": "2026-11-24T17:23:47.929383+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Opposite.olean.private.hash",
+      "modified": "2026-11-24T17:24:53.786405+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Basic.olean.server.hash",
+      "modified": "2026-11-24T17:24:26.713090+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Monoid.olean.private.hash",
+      "modified": "2026-11-24T17:23:50.153535+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/SelfInv.olean.hash",
+      "modified": "2026-11-24T17:24:27.711360+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Defs.olean.server",
+      "modified": "2026-11-24T17:23:51.947458+00:00",
+      "bytes": 13896
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Basic.olean",
+      "modified": "2026-11-24T17:24:26.531005+00:00",
+      "bytes": 560624
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/InjSurj.olean.private",
+      "modified": "2026-11-24T17:24:12.843244+00:00",
+      "bytes": 399800
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semigroup.olean.private.hash",
+      "modified": "2026-11-24T17:23:47.929564+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Monoid.olean",
+      "modified": "2026-11-24T17:23:50.067640+00:00",
+      "bytes": 757096
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/DivInvMonoid.olean",
+      "modified": "2026-11-24T17:23:51.207620+00:00",
+      "bytes": 560808
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/DivInvMonoid.olean.server",
+      "modified": "2026-11-24T17:23:51.211620+00:00",
+      "bytes": 34616
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/SelfInv.olean",
+      "modified": "2026-11-24T17:24:27.662985+00:00",
+      "bytes": 64936
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Torsion.olean.server.hash",
+      "modified": "2026-11-24T17:24:30.011079+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Defs.olean",
+      "modified": "2026-11-24T17:23:51.943607+00:00",
+      "bytes": 233296
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Defs.olean.hash",
+      "modified": "2026-11-24T17:23:51.981556+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Torsion.olean.private",
+      "modified": "2026-11-24T17:24:29.971926+00:00",
+      "bytes": 130368
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Defs.olean.private.hash",
+      "modified": "2026-11-24T17:23:51.981687+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/DivInvMonoid.olean.private",
+      "modified": "2026-11-24T17:23:51.215311+00:00",
+      "bytes": 125440
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/InjSurj.olean",
+      "modified": "2026-11-24T17:24:12.823244+00:00",
+      "bytes": 780072
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Defs.olean.private",
+      "modified": "2026-11-24T17:23:51.947607+00:00",
+      "bytes": 81440
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/SelfInv.olean.private.hash",
+      "modified": "2026-11-24T17:24:27.711515+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Defs.olean.server.hash",
+      "modified": "2026-11-24T17:23:51.981614+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Opposite.olean",
+      "modified": "2026-11-24T17:24:53.658533+00:00",
+      "bytes": 409376
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Torsion.olean",
+      "modified": "2026-11-24T17:24:29.969804+00:00",
+      "bytes": 71656
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Torsion.olean.server",
+      "modified": "2026-11-24T17:24:29.970074+00:00",
+      "bytes": 10520
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/SelfInv.olean.private",
+      "modified": "2026-11-24T17:24:27.666985+00:00",
+      "bytes": 76336
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Basic.olean.hash",
+      "modified": "2026-11-24T17:24:26.712989+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Opposite.olean.hash",
+      "modified": "2026-11-24T17:24:53.786094+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/SelfInv.olean.server",
+      "modified": "2026-11-24T17:24:27.666966+00:00",
+      "bytes": 8432
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Basic.olean.private",
+      "modified": "2026-11-24T17:24:26.575004+00:00",
+      "bytes": 1237480
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Monoid.olean.hash",
+      "modified": "2026-11-24T17:23:50.153223+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Monoid.olean.server",
+      "modified": "2026-11-24T17:23:50.069938+00:00",
+      "bytes": 62352
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/InjSurj.olean.server",
+      "modified": "2026-11-24T17:24:12.826385+00:00",
+      "bytes": 33048
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Opposite.olean.private",
+      "modified": "2026-11-24T17:24:53.666533+00:00",
+      "bytes": 217808
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semigroup.olean.private",
+      "modified": "2026-11-24T17:23:47.887678+00:00",
+      "bytes": 318424
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semigroup.olean.server",
+      "modified": "2026-11-24T17:23:47.883185+00:00",
+      "bytes": 36400
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Basic.olean.private.hash",
+      "modified": "2026-11-24T17:24:26.717489+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semigroup.olean.server.hash",
+      "modified": "2026-11-24T17:23:47.929452+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Monoid.olean.private",
+      "modified": "2026-11-24T17:23:50.083640+00:00",
+      "bytes": 663240
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/SelfInv.olean.server.hash",
+      "modified": "2026-11-24T17:24:27.711427+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/InjSurj.olean.server.hash",
+      "modified": "2026-11-24T17:24:12.908726+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/InjSurj.olean.hash",
+      "modified": "2026-11-24T17:24:12.908598+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/DivInvMonoid.olean.server.hash",
+      "modified": "2026-11-24T17:23:51.259293+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semigroup.olean",
+      "modified": "2026-11-24T17:23:47.879678+00:00",
+      "bytes": 307992
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Monoid.olean.server.hash",
+      "modified": "2026-11-24T17:23:50.153323+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Torsion.olean.hash",
+      "modified": "2026-11-24T17:24:30.010996+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Torsion.olean.private.hash",
+      "modified": "2026-11-24T17:24:30.011166+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Opposite.olean.server",
+      "modified": "2026-11-24T17:24:53.663360+00:00",
+      "bytes": 24024
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/DivInvMonoid.olean.private.hash",
+      "modified": "2026-11-24T17:23:51.259363+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Basic.olean.server",
+      "modified": "2026-11-24T17:24:26.535092+00:00",
+      "bytes": 96696
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Opposite.olean.server.hash",
+      "modified": "2026-11-24T17:24:53.786195+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/DivInvMonoid.olean.hash",
+      "modified": "2026-11-24T17:23:51.259228+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Regular/Defs.olean.server",
+      "modified": "2026-11-24T17:23:39.155692+00:00",
+      "bytes": 5328
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Regular/Defs.olean",
+      "modified": "2026-11-24T17:23:39.155597+00:00",
+      "bytes": 33128
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Regular/Defs.olean.hash",
+      "modified": "2026-11-24T17:23:39.181992+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Regular/Defs.olean.private.hash",
+      "modified": "2026-11-24T17:23:39.182083+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Regular/Defs.olean.private",
+      "modified": "2026-11-24T17:23:39.155988+00:00",
+      "bytes": 16904
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Regular/Defs.olean.server.hash",
+      "modified": "2026-11-24T17:23:39.182041+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Pi/Defs.olean.server",
+      "modified": "2026-11-24T17:24:52.246374+00:00",
+      "bytes": 15024
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Pi/Defs.olean",
+      "modified": "2026-11-24T17:24:52.242557+00:00",
+      "bytes": 163408
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Pi/Defs.olean.hash",
+      "modified": "2026-11-24T17:24:52.283979+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Pi/Defs.olean.private.hash",
+      "modified": "2026-11-24T17:24:52.284106+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Pi/Defs.olean.private",
+      "modified": "2026-11-24T17:24:52.246920+00:00",
+      "bytes": 32240
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Notation/Pi/Defs.olean.server.hash",
+      "modified": "2026-11-24T17:24:52.284039+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Basic.olean.server.hash",
+      "modified": "2026-11-24T17:24:28.345664+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Defs.olean.server",
+      "modified": "2026-11-24T17:24:02.042999+00:00",
+      "bytes": 8472
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Basic.olean",
+      "modified": "2026-11-24T17:24:28.306974+00:00",
+      "bytes": 43336
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Defs.olean",
+      "modified": "2026-11-24T17:24:02.042860+00:00",
+      "bytes": 57128
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Defs.olean.hash",
+      "modified": "2026-11-24T17:24:02.083320+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Defs.olean.private.hash",
+      "modified": "2026-11-24T17:24:02.083476+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Defs.olean.private",
+      "modified": "2026-11-24T17:24:02.044044+00:00",
+      "bytes": 115992
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Defs.olean.server.hash",
+      "modified": "2026-11-24T17:24:02.083396+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Basic.olean.hash",
+      "modified": "2026-11-24T17:24:28.345611+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Basic.olean.private",
+      "modified": "2026-11-24T17:24:28.311384+00:00",
+      "bytes": 68496
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Basic.olean.private.hash",
+      "modified": "2026-11-24T17:24:28.345752+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Semiconj/Basic.olean.server",
+      "modified": "2026-11-24T17:24:28.309906+00:00",
+      "bytes": 5208
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Basic.olean.server.hash",
+      "modified": "2026-11-24T17:24:29.093644+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Defs.olean.server",
+      "modified": "2026-11-24T17:24:03.050684+00:00",
+      "bytes": 15280
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Basic.olean",
+      "modified": "2026-11-24T17:24:29.051349+00:00",
+      "bytes": 90840
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Defs.olean",
+      "modified": "2026-11-24T17:24:03.047414+00:00",
+      "bytes": 108528
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Defs.olean.hash",
+      "modified": "2026-11-24T17:24:03.101527+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Defs.olean.private.hash",
+      "modified": "2026-11-24T17:24:03.101722+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Defs.olean.private",
+      "modified": "2026-11-24T17:24:03.054732+00:00",
+      "bytes": 200760
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Defs.olean.server.hash",
+      "modified": "2026-11-24T17:24:03.101609+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Basic.olean.hash",
+      "modified": "2026-11-24T17:24:29.093578+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Basic.olean.private",
+      "modified": "2026-11-24T17:24:29.052867+00:00",
+      "bytes": 84432
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Basic.olean.private.hash",
+      "modified": "2026-11-24T17:24:29.093740+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Group/Commute/Basic.olean.server",
+      "modified": "2026-11-24T17:24:29.051607+00:00",
+      "bytes": 11504
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/PrettyPrinter/Delaborator.olean",
+      "modified": "2026-11-24T17:23:52.763355+00:00",
+      "bytes": 24600
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/PrettyPrinter/Delaborator.olean.private.hash",
+      "modified": "2026-11-24T17:23:52.804791+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/PrettyPrinter/Delaborator.olean.hash",
+      "modified": "2026-11-24T17:23:52.804290+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/PrettyPrinter/Delaborator.olean.server.hash",
+      "modified": "2026-11-24T17:23:52.804368+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/PrettyPrinter/Delaborator.olean.private",
+      "modified": "2026-11-24T17:23:52.767593+00:00",
+      "bytes": 363160
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/PrettyPrinter/Delaborator.olean.server",
+      "modified": "2026-11-24T17:23:52.763603+00:00",
+      "bytes": 2832
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/Elab/Term.olean.hash",
+      "modified": "2026-11-24T17:24:37.981143+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/Elab/Term.olean",
+      "modified": "2026-11-24T17:24:37.949165+00:00",
+      "bytes": 23872
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/Elab/Term.olean.private.hash",
+      "modified": "2026-11-24T17:24:37.981264+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/Elab/Term.olean.server.hash",
+      "modified": "2026-11-24T17:24:37.981205+00:00",
+      "bytes": 16
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/Elab/Term.olean.server",
+      "modified": "2026-11-24T17:24:37.950100+00:00",
+      "bytes": 1576
+    },
+    {
+      "path": "/workspace/scratch/e963d2f60a75/repo/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Lean/Elab/Term.olean.private",
+      "modified": "2026-11-24T17:24:37.950633+00:00",
+      "bytes": 43192
+    }
+  ],
+  "recent_main_olean_modules": [
+    "Mathlib.Algebra.Group.Basic",
+    "Mathlib.Algebra.Group.Commute.Basic",
+    "Mathlib.Algebra.Group.Commute.Defs",
+    "Mathlib.Algebra.Group.Defs",
+    "Mathlib.Algebra.Group.DivInvMonoid",
+    "Mathlib.Algebra.Group.InjSurj",
+    "Mathlib.Algebra.Group.Monoid",
+    "Mathlib.Algebra.Group.Opposite",
+    "Mathlib.Algebra.Group.SelfInv",
+    "Mathlib.Algebra.Group.Semiconj.Basic",
+    "Mathlib.Algebra.Group.Semiconj.Defs",
+    "Mathlib.Algebra.Group.Semigroup",
+    "Mathlib.Algebra.Group.Torsion",
+    "Mathlib.Algebra.Notation.Defs",
+    "Mathlib.Algebra.Notation.Pi.Defs",
+    "Mathlib.Algebra.Opposites",
+    "Mathlib.Algebra.Regular.Defs",
+    "Mathlib.Basic.ExistsUnique",
+    "Mathlib.Basic.FunLike.Basic",
+    "Mathlib.Basic.FunLike.Embedding",
+    "Mathlib.Basic.FunLike.Equiv",
+    "Mathlib.Basic.IsEmpty.Defs",
+    "Mathlib.Basic.Logic.Basic",
+    "Mathlib.Basic.Nonempty",
+    "Mathlib.Basic.Nontrivial.Defs",
+    "Mathlib.Basic.Unique",
+    "Mathlib.Data.Int.Init",
+    "Mathlib.Data.Int.Notation",
+    "Mathlib.Data.Nat.BinaryRec",
+    "Mathlib.Data.Nat.Notation",
+    "Mathlib.Data.Quot",
+    "Mathlib.Data.Set.Defs",
+    "Mathlib.Data.Subtype",
+    "Mathlib.Lean.Elab.Term",
+    "Mathlib.Lean.PrettyPrinter.Delaborator",
+    "Mathlib.Logic.Equiv.Defs",
+    "Mathlib.Logic.Function.Basic",
+    "Mathlib.Logic.Function.Conjugate",
+    "Mathlib.Logic.Function.Defs",
+    "Mathlib.Logic.Function.Iterate",
+    "Mathlib.Logic.Relation",
+    "Mathlib.Logic.Relator",
+    "Mathlib.Order.Defs.Prop",
+    "Mathlib.Order.Defs.Unbundled",
+    "Mathlib.Tactic.Attr.Register",
+    "Mathlib.Tactic.Conv",
+    "Mathlib.Tactic.Core",
+    "Mathlib.Tactic.CrossRefAttribute",
+    "Mathlib.Tactic.DepRewrite",
+    "Mathlib.Tactic.ExtendDoc",
+    "Mathlib.Tactic.Inhabit",
+    "Mathlib.Tactic.MkIffOfInductiveProp",
+    "Mathlib.Tactic.OfNat",
+    "Mathlib.Tactic.Push.Attr",
+    "Mathlib.Tactic.ScopedNS",
+    "Mathlib.Tactic.SetNotationForOrder",
+    "Mathlib.Tactic.SimpRw",
+    "Mathlib.Tactic.Simps",
+    "Mathlib.Tactic.Simps.Basic",
+    "Mathlib.Tactic.Simps.NotationClass",
+    "Mathlib.Tactic.SplitIfs",
+    "Mathlib.Tactic.Spread",
+    "Mathlib.Tactic.ToAdditive",
+    "Mathlib.Tactic.ToDual",
+    "Mathlib.Tactic.Translate.Core",
+    "Mathlib.Tactic.Translate.TagUnfoldBoundary",
+    "Mathlib.Tactic.Translate.ToAdditive",
+    "Mathlib.Tactic.Translate.ToDual",
+    "Mathlib.Tactic.Use",
+    "Mathlib.Util.AddRelatedDecl",
+    "Mathlib.Util.Notation3",
+    "Mathlib.Util.WithWeakNamespace"
+  ],
+  "reported_built_modules": [
+    "Mathlib.Tactic.Translate.Core",
+    "Mathlib.Tactic.MkIffOfInductiveProp",
+    "Mathlib.Tactic.Translate.ToAdditive",
+    "Mathlib.Tactic.Simps.NotationClass",
+    "Mathlib.Tactic.ToAdditive",
+    "Mathlib.Util.AddRelatedDecl",
+    "Mathlib.Algebra.Regular.Defs",
+    "Mathlib.Data.Nat.BinaryRec",
+    "Mathlib.Tactic.Simps.Basic",
+    "Mathlib.Data.Nat.Notation",
+    "Mathlib.Tactic.Push.Attr",
+    "Mathlib.Tactic.Simps",
+    "Mathlib.Data.Int.Notation",
+    "Mathlib.Tactic.CrossRefAttribute",
+    "Mathlib.Algebra.Group.Semigroup",
+    "Mathlib.Tactic.OfNat",
+    "Mathlib.Algebra.Group.Monoid",
+    "Mathlib.Algebra.Group.DivInvMonoid",
+    "Mathlib.Algebra.Group.Defs",
+    "Mathlib.Lean.PrettyPrinter.Delaborator",
+    "Mathlib.Tactic.SetNotationForOrder",
+    "Mathlib.Tactic.Translate.TagUnfoldBoundary",
+    "Mathlib.Tactic.ExtendDoc",
+    "Mathlib.Tactic.Translate.ToDual",
+    "Mathlib.Tactic.ToDual",
+    "Mathlib.Data.Set.Defs",
+    "Mathlib.Order.Defs.Unbundled",
+    "Mathlib.Basic.ExistsUnique",
+    "Mathlib.Algebra.Group.Semiconj.Defs",
+    "Mathlib.Algebra.Group.Commute.Defs",
+    "Mathlib.Tactic.Attr.Register",
+    "Mathlib.Basic.Nonempty",
+    "Mathlib.Basic.Logic.Basic",
+    "Mathlib.Basic.Nontrivial.Defs",
+    "Mathlib.Logic.Function.Defs",
+    "Mathlib.Tactic.Spread",
+    "Mathlib.Logic.Function.Basic",
+    "Mathlib.Algebra.Group.InjSurj",
+    "Mathlib.Algebra.Notation.Defs",
+    "Mathlib.Tactic.DepRewrite",
+    "Mathlib.Data.Int.Init",
+    "Mathlib.Logic.Function.Conjugate",
+    "Mathlib.Tactic.SimpRw",
+    "Mathlib.Logic.Function.Iterate",
+    "Mathlib.Tactic.Core",
+    "Mathlib.Tactic.SplitIfs",
+    "Mathlib.Algebra.Group.Basic",
+    "Mathlib.Algebra.Group.SelfInv",
+    "Mathlib.Algebra.Group.Semiconj.Basic",
+    "Mathlib.Algebra.Group.Commute.Basic",
+    "Mathlib.Algebra.Group.Torsion",
+    "Mathlib.Basic.IsEmpty.Defs",
+    "Mathlib.Tactic.Inhabit",
+    "Mathlib.Basic.Unique",
+    "Mathlib.Basic.FunLike.Basic",
+    "Mathlib.Logic.Relator",
+    "Mathlib.Basic.FunLike.Embedding",
+    "Mathlib.Order.Defs.Prop",
+    "Mathlib.Basic.FunLike.Equiv",
+    "Mathlib.Tactic.Use",
+    "Mathlib.Logic.Relation",
+    "Mathlib.Lean.Elab.Term",
+    "Mathlib.Util.WithWeakNamespace",
+    "Mathlib.Data.Subtype",
+    "Mathlib.Tactic.ScopedNS",
+    "Mathlib.Tactic.Conv",
+    "Mathlib.Util.Notation3",
+    "Mathlib.Data.Quot",
+    "Mathlib.Logic.Equiv.Defs",
+    "Mathlib.Algebra.Opposites",
+    "Mathlib.Algebra.Notation.Pi.Defs",
+    "Mathlib.Algebra.Group.Opposite"
+  ]
+}

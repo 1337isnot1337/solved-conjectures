@@ -1,0 +1,318 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-24T18:24:35.524283+00:00",
+  "finished_at": "2026-11-24T18:25:54.390168+00:00",
+  "root": "Conjectures.FerroniHigashitaniEhrhart",
+  "project_modules": [
+    "Conjectures.FerroniHigashitani",
+    "Conjectures.FerroniHigashitaniBasis",
+    "Conjectures.FerroniHigashitaniBinomial",
+    "Conjectures.FerroniHigashitaniBox",
+    "Conjectures.FerroniHigashitaniClosedCount",
+    "Conjectures.FerroniHigashitaniCount",
+    "Conjectures.FerroniHigashitaniEhrhart",
+    "Conjectures.FerroniHigashitaniGeometry",
+    "Conjectures.FerroniHigashitaniIDP",
+    "Conjectures.FerroniHigashitaniInterior",
+    "Conjectures.FerroniHigashitaniLattice",
+    "Conjectures.FerroniHigashitaniPolytope",
+    "Conjectures.FerroniHigashitaniPrefixPolynomial",
+    "Conjectures.FerroniHigashitaniRefined"
+  ],
+  "required_endpoints": [
+    "FerroniHigashitani.oldPoint_idp",
+    "FerroniHigashitani.refined_closed_translate",
+    "FerroniHigashitani.refined_strict_translate",
+    "FerroniHigashitani.interior_closedSlice",
+    "FerroniHigashitani.closedSlice_one_eq_hull",
+    "FerroniHigashitani.mem_standardLattice_toBasis_iff",
+    "FerroniHigashitani.witness_latticePolytope",
+    "FerroniHigashitani.witness_idp",
+    "FerroniHigashitani.card_witnessInterior",
+    "FerroniHigashitani.first_three_interior_ehrhart_counterexample",
+    "FerroniHigashitani.card_witnessClosed_small",
+    "FerroniHigashitani.card_witnessClosed_large",
+    "FerroniHigashitani.weightedPrefixPolynomial",
+    "FerroniHigashitani.ehrhartPolynomial_unique",
+    "FerroniHigashitani.witness_ehrhartPolynomial",
+    "FerroniHigashitani.question_5_12a"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/FerroniHigashitani.lean": "bccb98008cac46a760db73da09bcf380cd780c9d1918ad1c1371aeb9d29308cf",
+    "lean/Conjectures/FerroniHigashitaniBasis.lean": "538a50969a659634474c3be9a22455465cabbaf20d42fbaf3de2b604fa9f531b",
+    "lean/Conjectures/FerroniHigashitaniBinomial.lean": "fd471c1b789e45c496a81e5e4d67adfac822ed8c18a004538ebb31057f245b75",
+    "lean/Conjectures/FerroniHigashitaniBox.lean": "8c81eb8908cd0f18275fde6c869bf2e0fa64d8be9121b73a78fa0f9523d0cb14",
+    "lean/Conjectures/FerroniHigashitaniClosedCount.lean": "89bea801eca6a210be1f860ebe398bceaab22eafaf65d7730e8a608f41fbd5ad",
+    "lean/Conjectures/FerroniHigashitaniCount.lean": "96010885b4d81b7ac4e8686ff6155a3efd46a6031329d4c765ad415a757f7085",
+    "lean/Conjectures/FerroniHigashitaniEhrhart.lean": "17141acfa0e2d5caf07a6390e0474044f807ed51fb020d36a9a5b03cae743d08",
+    "lean/Conjectures/FerroniHigashitaniGeometry.lean": "1b047e6bda9b39ed0e7228965df0626ecb0ccfbf39ae051dc5cca9d0d262aa4f",
+    "lean/Conjectures/FerroniHigashitaniIDP.lean": "1e51820991e5bdc6df4814a86dd273bb6f31560876fcb69f36843aad149c758f",
+    "lean/Conjectures/FerroniHigashitaniInterior.lean": "816416a6983fdede0b738450c26d83ee58fef334fd10c04445fa1474ee2700a8",
+    "lean/Conjectures/FerroniHigashitaniLattice.lean": "a3bd2dd1fb62f04b75a04f15294b34a237985563fdf703354876d0f8bb0d8a4d",
+    "lean/Conjectures/FerroniHigashitaniPolytope.lean": "424ede1f1c4416e427969691cbe5a9969d144175ed0400bc933dac9d1cef0e73",
+    "lean/Conjectures/FerroniHigashitaniPrefixPolynomial.lean": "604565f8df1fc22ee112ac4b0872f8f00eb12a97de0821ff5ef358480a66ecd4",
+    "lean/Conjectures/FerroniHigashitaniRefined.lean": "aaf38ab4b2face66874f84a76c108f0092a40902668c78a89db4416d5a0a5835"
+  },
+  "input_sha256": {
+    "lean/Conjectures/FerroniHigashitani.lean": "bccb98008cac46a760db73da09bcf380cd780c9d1918ad1c1371aeb9d29308cf",
+    "lean/Conjectures/FerroniHigashitaniBasis.lean": "538a50969a659634474c3be9a22455465cabbaf20d42fbaf3de2b604fa9f531b",
+    "lean/Conjectures/FerroniHigashitaniBinomial.lean": "fd471c1b789e45c496a81e5e4d67adfac822ed8c18a004538ebb31057f245b75",
+    "lean/Conjectures/FerroniHigashitaniBox.lean": "8c81eb8908cd0f18275fde6c869bf2e0fa64d8be9121b73a78fa0f9523d0cb14",
+    "lean/Conjectures/FerroniHigashitaniClosedCount.lean": "89bea801eca6a210be1f860ebe398bceaab22eafaf65d7730e8a608f41fbd5ad",
+    "lean/Conjectures/FerroniHigashitaniCount.lean": "96010885b4d81b7ac4e8686ff6155a3efd46a6031329d4c765ad415a757f7085",
+    "lean/Conjectures/FerroniHigashitaniEhrhart.lean": "17141acfa0e2d5caf07a6390e0474044f807ed51fb020d36a9a5b03cae743d08",
+    "lean/Conjectures/FerroniHigashitaniGeometry.lean": "1b047e6bda9b39ed0e7228965df0626ecb0ccfbf39ae051dc5cca9d0d262aa4f",
+    "lean/Conjectures/FerroniHigashitaniIDP.lean": "1e51820991e5bdc6df4814a86dd273bb6f31560876fcb69f36843aad149c758f",
+    "lean/Conjectures/FerroniHigashitaniInterior.lean": "816416a6983fdede0b738450c26d83ee58fef334fd10c04445fa1474ee2700a8",
+    "lean/Conjectures/FerroniHigashitaniLattice.lean": "a3bd2dd1fb62f04b75a04f15294b34a237985563fdf703354876d0f8bb0d8a4d",
+    "lean/Conjectures/FerroniHigashitaniPolytope.lean": "424ede1f1c4416e427969691cbe5a9969d144175ed0400bc933dac9d1cef0e73",
+    "lean/Conjectures/FerroniHigashitaniPrefixPolynomial.lean": "604565f8df1fc22ee112ac4b0872f8f00eb12a97de0821ff5ef358480a66ecd4",
+    "lean/Conjectures/FerroniHigashitaniRefined.lean": "aaf38ab4b2face66874f84a76c108f0092a40902668c78a89db4416d5a0a5835",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniBox.olean",
+        "Conjectures/FerroniHigashitaniBox.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniBox.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniRefined.olean",
+        "Conjectures/FerroniHigashitaniRefined.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniRefined.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniGeometry.olean",
+        "Conjectures/FerroniHigashitaniGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniGeometry.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniLattice.olean",
+        "Conjectures/FerroniHigashitaniLattice.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniLattice.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniBasis.olean",
+        "Conjectures/FerroniHigashitaniBasis.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniBasis.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniCount.olean",
+        "Conjectures/FerroniHigashitaniCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniInterior.olean",
+        "Conjectures/FerroniHigashitaniInterior.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniInterior.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniIDP.olean",
+        "Conjectures/FerroniHigashitaniIDP.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniIDP.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniPolytope.olean",
+        "Conjectures/FerroniHigashitaniPolytope.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniPolytope.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitani.olean",
+        "Conjectures/FerroniHigashitani.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitani.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniClosedCount.olean",
+        "Conjectures/FerroniHigashitaniClosedCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniClosedCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniBinomial.olean",
+        "Conjectures/FerroniHigashitaniBinomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniBinomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniPrefixPolynomial.olean",
+        "Conjectures/FerroniHigashitaniPrefixPolynomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniPrefixPolynomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-conjectures-lean-20261124/lean/.lake/build/lib/lean/Conjectures/FerroniHigashitaniEhrhart.olean",
+        "Conjectures/FerroniHigashitaniEhrhart.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FerroniHigashitaniEhrhart.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/tmp/solved-ferroni-higashitani-complete-receipt/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-conjectures-lean-20261124/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.FerroniHigashitaniEhrhart"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 409,
+    "modules": 14,
+    "private_declarations": 124,
+    "raw_declarations": 409,
+    "required": 16,
+    "tag": "passed",
+    "theorems": 320
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

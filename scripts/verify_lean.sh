@@ -4,10 +4,62 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.ThueMorseSignDensityProduct
+  Conjectures.ThueMorseSignDensityCore
+  Conjectures.ThueMorseSignDensity
+  Conjectures.ThueMorseValuationBasic
+  Conjectures.ThueMorseValuationCertificate
+  Conjectures.ThueMorseValuation
+  Conjectures.FerroniHigashitaniBox
+  Conjectures.FerroniHigashitaniRefined
+  Conjectures.FerroniHigashitaniGeometry
+  Conjectures.FerroniHigashitaniLattice
+  Conjectures.FerroniHigashitaniCount
+  Conjectures.FerroniHigashitaniInterior
+  Conjectures.FerroniHigashitaniIDP
+  Conjectures.FerroniHigashitaniPolytope
+  Conjectures.FerroniHigashitaniBasis
+  Conjectures.FerroniHigashitani
+  Conjectures.FerroniHigashitaniClosedCount
+  Conjectures.FerroniHigashitaniBinomial
+  Conjectures.FerroniHigashitaniPrefixPolynomial
+  Conjectures.FerroniHigashitaniEhrhart
+  Conjectures.FanTringaliBasic
+  Conjectures.FanTringaliGadget
+  Conjectures.FanTringaliSlices
+  Conjectures.FanTringaliProducts
+  Conjectures.FanTringaliCoordinates
+  Conjectures.FanTringaliStack
+  Conjectures.FanTringaliGraph
+  Conjectures.FanTringaliFactorizations
+  Conjectures.FanTringaliGraphLengths
+  Conjectures.FanTringaliBlocks
+  Conjectures.FanTringaliRadix
+  Conjectures.FanTringaliRadixTransfer
+  Conjectures.FanTringaliNatural
+  Conjectures.FanTringaliNaturalSystem
+  Conjectures.FanTringaliMonoidBasic
+  Conjectures.FanTringaliMonoidNormalization
+  Conjectures.FanTringaliMonoidTransfer
+  Conjectures.FanTringaliMonoid
+  Conjectures.SteinerbergerGreedySequence
+  Conjectures.SteinerbergerGreedyFourier
+  Conjectures.SteinerbergerGreedyGrowth
+  Conjectures.SteinerbergerGreedy
   Conjectures.CoulangeonLazzariniShells
   Conjectures.CoulangeonLazzariniRealLattice
   Conjectures.GravgaardLeeMixedLuroth
   Conjectures.GravgaardLeeLargeLuroth
+  Conjectures.GravgaardLeeUpperLowerBasic
+  Conjectures.GravgaardLeeUpperLowerLinked
+  Conjectures.GravgaardLeeUpperLowerCylinders
+  Conjectures.GravgaardLeeUpperLowerMoves
+  Conjectures.GravgaardLeeUpperLowerOrbit
+  Conjectures.GravgaardLeeUpperLowerRepair
+  Conjectures.GravgaardLeeUpperLowerForcing
+  Conjectures.GravgaardLeeUpperLowerConvergence
+  Conjectures.GravgaardLeeUpperLowerTwo
+  Conjectures.GravgaardLeeUpperLower
   Conjectures.GesselZhuangBlockOperations
   Conjectures.GesselZhuangBlocks
   Conjectures.GesselZhuangChoices
@@ -32,6 +84,17 @@ modules=(
   Conjectures.GesselZhuangStatisticsInverse
   Conjectures.GesselZhuangSymmetry
   Conjectures.GesselZhuangTheorem
+  Conjectures.HajduSarkozyArithmetic
+  Conjectures.HajduSarkozyIncidence
+  Conjectures.HajduSarkozyAsymptotics
+  Conjectures.HajduSarkozyCounts
+  Conjectures.HajduSarkozyBins
+  Conjectures.HajduSarkozyMatrix
+  Conjectures.HajduSarkozyProduct
+  Conjectures.HajduSarkozyCommon
+  Conjectures.HajduSarkozyDensity
+  Conjectures.HajduSarkozyFactors
+  Conjectures.HajduSarkozy
   Conjectures.RowlandSistosBarronAnnihilator
   Conjectures.RowlandSistosBarronCancellationCounts
   Conjectures.RowlandSistosBarronCharacteristic
@@ -1961,9 +2024,6 @@ modules=(
   Conjectures.LiCoefficientInterpolation
   Conjectures.LiNegativeCoefficient
   Conjectures.LonelinessRationalLatticeQuotient
-  Conjectures.ThueMorseSignDensityProduct
-  Conjectures.ThueMorseSignDensityCore
-  Conjectures.ThueMorseSignDensity
 )
 # Build proof modules one at a time so independent certificate reductions do
 # not compete for memory. The final package build checks root imports too.

@@ -1,0 +1,5 @@
+Replaying all 3 local project modules imported by Conjectures.ThueMorseValuation, including that root (prefix Conjectures)
+replaying Conjectures.ThueMorseValuationCertificate
+replaying Conjectures.ThueMorseValuation
+replaying Conjectures.ThueMorseValuationBasic
+PASS: the entire local import closure of Conjectures.ThueMorseValuation completed the pinned kernel replay
