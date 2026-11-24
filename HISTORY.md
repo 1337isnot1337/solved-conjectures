@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-23 — Newton-polytope obstruction for BCJS tensor-resultant coefficients
+
+Proved that, after at most one extra padding coordinate, grid-assignment monomials in the BCJS tensor determinant are midpoints of supported monomial exponents 0 and 2v. This rules out isolating the hard degree-s grid coefficient by diagonal monomial rescaling at that padding dimension. [Proof](research/complex-bss-p-vs-np/GRID_NEWTON_BARRIER.md) · [Checks](research/complex-bss-p-vs-np/verify_grid_newton.py). The BSS separation remains open.
+
 ## 2026-11-23 — Put major theorem consequences immediately after solved results
 
 Moved the imported-theorem consequences directly below the root Results section and listed the quantitative BSS permanent-graph lower bound first. The catalogue now uses the same category and order. This increases visibility while keeping these consequences separate from the solved-conjecture count and preserving the distinction between the permanent-graph obstruction and the open $`\mathsf P_{\mathbb C}`$ versus $`\mathsf{NP}_{\mathbb C}`$ separation.
