@@ -116,6 +116,7 @@ STATUS_LABEL_SLUGS = {
     "Rossi’s permutohedron characteristic-polynomial conjecture": "rossi-permutohedron-roots",
     "Ferroni–Higashitani’s first-three interior Ehrhart question": "ferroni-higashitani-early-interior-ehrhart",
     "Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture": "fmp-cylindric",
+    "Higashitani–Kummer–Michałek’s canonical-line conjecture": "hkm-canonical-line",
     "Cyrusian–Kaplan’s ordinarization quasipolynomial question": "cyrusian-kaplan-ordinarization",
     "Coulangeon–Lazzarini’s two-shell conjecture": "coulangeon-lazzarini-two-shells",
     "Alexandersson’s parking-function excedance conjecture": "alexandersson-parking-excedance",

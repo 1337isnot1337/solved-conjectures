@@ -45,6 +45,7 @@
   "fan-tringali-power-monoid-lengths": ["Fan Tringali", "arithmetic of power monoids", "factorization lengths", "maximal cliques", "sumsets"],
   "ferroni-higashitani-early-interior-ehrhart": ["Ferroni Higashitani", "Ehrhart log concavity", "interior lattice points", "IDP", "very ample", "Question 5.12(a)"],
   "fmp-cylindric": ["Ferroni Morales Panova", "cylindric skew shapes", "Ehrhart positivity", "Gessel Krattenthaler", "Oberwolfach", "seam constraints"],
+  "hkm-canonical-line": ["Higashitani Kummer Michalek", "Michałek", "canonical line conjecture", "Ehrhart polynomial", "symmetric edge polytope", "complete multipartite graphs", "Sturm sequence"],
   "cyrusian-kaplan-ordinarization": ["Cyrusian Kaplan", "numerical semigroups", "ordinarization", "quasipolynomial", "Ehrhart", "genus"],
   "chappelon-ramirez-stamate-leaf-type": ["Jonathan Chappelon", "Ramirez Alfonsin Stamate", "numerical semigroup tree", "pseudo-Frobenius leaves", "maximum type"],
   "gessel-zhuang-pinnacle-gamma": ["Ira Gessel", "Yan Zhuang", "pinnacle sets", "inverse descents", "two-sided permutation statistics", "gamma positivity"],

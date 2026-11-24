@@ -73,6 +73,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Rossi’s permutohedron characteristic-polynomial conjecture](results/rossi-permutohedron-roots/) | ⬜ |
 | [Ferroni–Higashitani’s first-three interior Ehrhart question](results/ferroni-higashitani-early-interior-ehrhart/) | ⬜ |
 | [Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture](results/fmp-cylindric/) | ⬜ |
+| [Higashitani–Kummer–Michałek’s canonical-line conjecture](results/hkm-canonical-line/) | ⬜ |
 | [Cyrusian–Kaplan’s ordinarization quasipolynomial question](results/cyrusian-kaplan-ordinarization/) | ⬜ |
 | [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ |
 | [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ |
