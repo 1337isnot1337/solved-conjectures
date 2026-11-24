@@ -1696,3 +1696,8 @@ families remain unformalized. The combined repository gate remains pending.
 ## Fan–Tringali’s power-monoid length-set conjecture
 
 Partial Lean verification: the arbitrary-coordinate Boolean-box divisor/atom/factorization classification and the universally quantified local domino gadget are checked. The [entry’s scope note](../results/fan-tringali-power-monoid-lengths/LEAN.md) lists the missing graph, radix, realization and monoid-transfer arguments. [Receipt](verification/lean-fan-tringali-20261124-162051/receipt.json): strict source builds, all-owned transitive axiom audit and stock-kernel replay passed for the two-module checkpoint. The full conjecture is not counted as formalized.
+
+
+## Ulas’s disjoint-block square-product conjecture
+
+Partial Lean verification: for every positive block length, a positive repeatable count exists and every positive multiple of it has infinitely many disjoint square-product collections. The [source-matched finite-collection development](../lean/Conjectures/UlasDisjointSquareBlocks.lean) also reduces eventual infinitude at every sufficiently large count to prime-avoiding tail collections. The analytic/probabilistic parity input and odd-prime binary-code argument remain explicit obligations, as recorded in the [scope report](../results/ulas-disjoint-square-blocks/FORMALIZATION.md). All six modules passed fresh strict builds, the all-owned axiom audit and exact stock-kernel replay; see the [receipt](verification/lean-ulas-20261124-162051/verification.json). This entry is not counted as completely formalized.
