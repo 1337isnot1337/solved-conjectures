@@ -2,6 +2,21 @@
 
 Research remains open. No full τ bound, BSS separation or Lean formalization is claimed.
 
+## Continued root-selection review
+
+ROOT_SELECTION.md was reviewed independently by the consecutive-root and
+arbitrary-root workers and by the integrator after the source-transfer
+worker wrote it. The review checked the exact monic shifted-gcd formulas,
+the charging of binary exponent schedules, all positive multiplicity
+classes, and the reduction modulo 2 proving disjoint translated supports.
+Bertrand's theorem is used only at integers at least two. The primary
+Erdős text, Section 5, was checked by the integrator.
+
+The verifier adds 24 exact shifted-gcd checks and 14 independently
+computed dense cyclotomic multiplicities. These verify finite instances,
+not the full tau bound or the existence of efficient radical extraction.
+All new scope restrictions remain in the research notes.
+
 ## Mathematical review
 
 Four parallel workers covered consecutive roots, arithmetic and prime selection, source/BSS transfer, and integration with alternative attacks. Each substantive argument was read by a worker other than its author. This is internal adversarial review, not external peer review.

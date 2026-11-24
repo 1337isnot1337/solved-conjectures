@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24 — τ root selection and multiplicity obstruction
+
+The open τ campaign (#260) now proves that neighboring shifted gcds do not select the integer parity classes even for the exact consecutive-root polynomial. A charged O(k^3)-gate integer polynomial realizes all 2^k−1 positive multiplicity classes while having at most two integer roots, so a polynomial multiplicity-class count cannot remove the cofactor-support restriction. The translation-boundary test is also preserved. Independent worker reviews and 24 exact gcd checks plus 14 dense cyclotomic multiplicity checks passed. This does not prove τ, radical hardness or a BSS separation. See `research/shub-smale-tau/ROOT_SELECTION.md`.
+
 ## 2026-11-23 — Integer gate budgets and adaptive prime-support obstruction
 
 The [Shub–Smale τ research](research/shub-smale-tau/INTEGER_GATE_BUDGETS.md) records exact integer gate inequalities: a coprime addition has a product-of-parent-values resultant budget, units on at least five integer evaluation points have one sign, and nonzero integer multiplication gives a bounded-cancellation escape estimate. None has been amortized over arbitrary circuit histories. The constant-parent and shared-factor cases remain explicit.

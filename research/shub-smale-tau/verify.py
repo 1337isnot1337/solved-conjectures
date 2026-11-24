@@ -803,6 +803,65 @@ def test_integral_gate_budgets():
     print('integer unit threshold, resultant degree correction, and fixed-divisor examples: passed')
 
 
+def test_root_selection_obstructions():
+    shifted = 0
+    for N in range(1, 13):
+        FN = root_product(range(1, N+1))
+        scaled = [a * 2**i for i, a in enumerate(FN)]
+        for sign in (1, -1):
+            other = [a * 2**i for i, a in enumerate(translate(FN, sign))]
+            expected_roots = (range(1, N) if sign == 1 else range(2, N+1))
+            expected = root_product(Fraction(j, 2) for j in expected_roots)
+            assert polynomial_gcd(scaled, other) == expected
+            shifted += 1
+
+    def divide(a, b):
+        remainder = list(map(Fraction, a))
+        quotient = [Fraction(0)] * max(1, len(a)-len(b)+1)
+        while remainder != [0] and len(remainder) >= len(b):
+            shift = len(remainder)-len(b)
+            coefficient = remainder[-1]/b[-1]
+            quotient[shift] += coefficient
+            remainder = add(remainder, [0]*shift+scale(b, -coefficient))
+        return trim(quotient), remainder
+
+    # Independent dense factors, obtained by exact polynomial division.
+    cyclotomic = {}
+    for d in range(1, 31):
+        candidate = [-1]+[0]*(d-1)+[1]
+        for e in range(1, d):
+            if d % e == 0:
+                candidate, remainder = divide(candidate, cyclotomic[e])
+                assert remainder == [0]
+        cyclotomic[d] = candidate
+    multiplicities = 0
+    for primes in ((2,), (2, 3), (2, 3, 5)):
+        M = prod(primes)
+        polynomial = [1]
+        for i, p in enumerate(primes):
+            factor = [-1]+[0]*(M//p-1)+[1]
+            polynomial = mul(polynomial, polynomial_power(factor, 2**i))
+        realized = set()
+        for d in range(1, M+1):
+            if M % d:
+                continue
+            count, remainder = 0, polynomial
+            while True:
+                quotient, rem = divide(remainder, cyclotomic[d])
+                if rem != [0]:
+                    break
+                count += 1
+                remainder = quotient
+            expected = sum(2**i for i, p in enumerate(primes) if (M//p) % d == 0)
+            assert count == expected
+            if count:
+                realized.add(count)
+            multiplicities += 1
+        assert realized == set(range(1, 2**len(primes)))
+        assert all(peval(polynomial, r) != 0 for r in (-3, -2, 0, 2, 3))
+    print(f'root selection: {shifted} shifted gcds and {multiplicities} dense cyclotomic multiplicities passed')
+
+
 def main():
     test_carries_and_products()
     test_all_cuts()
@@ -824,6 +883,7 @@ def main():
     test_powered_cofactor_extraction()
     test_unknown_cofactor_recovery()
     test_integral_gate_budgets()
+    test_root_selection_obstructions()
     print('All finite exact checks passed. No tau bound or BSS separation was verified.')
 
 
