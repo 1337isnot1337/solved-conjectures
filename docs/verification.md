@@ -184,6 +184,8 @@ Run `python3 results/rossi-permutohedron-roots/check.py` for the 8,000 exact fin
 
 Run the exact checkers listed in the [leaf-type](../results/chappelon-ramirez-stamate-leaf-type/), [Ehrhart](../results/ferroni-higashitani-early-interior-ehrhart/) and [pinnacle](../results/gessel-zhuang-pinnacle-gamma/) result packages. Their proofs, and the convex-log-tail rate test, are analytic.
 
+Run `python3 results/fan-tringali-power-monoid-lengths/check.py` and `python3 results/burstein-a218225-enumeration/check.py` for the graph-gadget and generating-tree replays. The [Apéry moment threshold](../results/sokal-apery-moment-threshold/) is proved analytically.
+
 ## Pantone–Bóna asymptotic equivalence
 
 Run `python3 results/pantone-bona-asymptotic/verify.py` for literal small permutation counts and exact tableau branching comparisons. The [proof](../results/pantone-bona-asymptotic/PROOF.md) derives the leading constant analytically; finite enumeration is not part of its argument.
