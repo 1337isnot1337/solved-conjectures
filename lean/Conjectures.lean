@@ -1,3 +1,5 @@
+import Conjectures.ThueMorseValuationBasic
+import Conjectures.ThueMorseSignDensity
 import Conjectures.GravgaardLeeLargeLuroth
 import Conjectures.GravgaardLeeMixedLuroth
 import Conjectures.ChenKhareSahiOrthogonalityData

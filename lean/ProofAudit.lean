@@ -9,6 +9,11 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `ThueMorseSignDensity.not_conjecture_5_8,
+    `ThueMorseSignDensity.exception_lower_density_zero,
+    `ThueMorseSignDensity.exception_lower_density_one,
+    `ThueMorseSignDensity.exception_count_bounds_zero,
+    `ThueMorseSignDensity.exception_count_bounds_one,
     `GravgaardLeeMixedLuroth.conjecture_2_2,
     `GravgaardLeeMixedLuroth.interval_subset_sum,
     `GravgaardLeeMixedLuroth.smallDigitSet_compact,

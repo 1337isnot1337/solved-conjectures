@@ -1,6 +1,17 @@
 # Full formalization campaign
 
 
+
+## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
+
+[Lean refutes Conjecture 5.8](../lean/Conjectures/ThueMorseSignDensity.lean) for
+both original residues at exponent two. It derives the two coefficient
+recurrences from the source product, checks all six binary suffix rows and
+proves the two all-index identities. In the conjecture's input index, it proves
+lower densities at least $1/512$ and $1/256$ and finite two-sided count bounds.
+The separate exact density theorem for every arithmetic progression remains
+open in Lean.
+
 ## Gravgaard–Lee’s mixed Lüroth sumset
 
 [Lean proves Conjecture 2.2 and the interval from the written proof](../lean/Conjectures/GravgaardLeeMixedLuroth.lean).
