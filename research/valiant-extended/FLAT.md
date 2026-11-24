@@ -75,3 +75,20 @@ For the nested chain one can exhibit a weak flag for **any** end placement. Choo
 \mathbb E\|Z_i\|^2=\frac{s_i(n-s_i)}{n(n-1)}\sum_a\|b_a\|^2 .
 ```
 Indeed a point occurs with probability $s_i/n$ and a distinct ordered pair with probability $s_i(s_i-1)/(n(n-1))$. Since $s_i\le n/2^i$ and $s_i\ge1$, summing over $i\ge1$ gives at most $\sum_a\|b_a\|^2$. Some flag therefore satisfies $\max_i\|Z_i\|\le(\sum_a d_a^2)^{1/2}$. Even with the cut name free, the uniform gain over **every** such flag divided by total hub length is at most this quantity; if all hub lengths vanish (3) gives no positive gain. This is a limit on a worst-flag Euclidean certificate. A proof exploiting which flags a particular circuit actually uses could avoid it.
+
+## Choosing the geometry after seeing the cut list
+
+There is a stronger conclusion when the decomposition actually uses few distinct cuts. For the bounded-degree graph above, take $\ell=1$. If a circuit for $F$ admits an E.4 decomposition with at most $L$ products per cut and at most $J\le\sqrt n$ nonzero cuts, then, in the flat case and for large $n$,
+```math
+\log L=\Omega(n/\sqrt J).
+```
+The constants are absolute. In particular a quasipolynomial circuit for this family, measured in the clause reduction dimension $M=\Theta(n)$, would have to use more than $\sqrt n$ cuts in **every** such decomposition with quasipolynomial rank per cut. This condition is on decompositions of the projected network circuit. E.4 by itself allows exponentially many.
+
+**Proof.** Round $J$ upwards to a power of two $p\lt 2J$ (use $p=1$ for $J=1$; in all cases $p\le2J$). Enumerate the used cuts $S_j$. Give each edge a fixed orientation and an independent sign **in each of the $p$ coordinates**. In coordinate $j$, whenever the edge crosses $S_j$, give the end inside $S_j$ the positive sign; give the other end the opposite sign. On noncrossing edges and padded coordinates choose any opposite signs. Place the two ends at the resulting antipodes $\pm u/2$, where every coordinate of $u$ has absolute value $1/\sqrt p$. The original wire length is one. For cut $S_j$ the $j$th coordinate of $b_{S_j}$ is exactly $|\partial S_j|/\sqrt p$; the other coordinates need no sign control. Put $b_*=n/(128\sqrt p)$ and use the same hubs as before. The length saving is at least $b_*^2/(2N)$ and their separation is $b_*/N$.
+
+Here the ends are cube **vertices**, so the facet-centre statement E.9 cannot simply be invoked. For each end position $x$, express it as the mean of the $p$ points $p x_i e_i$, $1\le i\le p$. For a fixed $i$ this map of all ends takes only two antipodal values, separated by $\sqrt p$. Form the finite point set consisting of the end and hub positions, these images, and their successive dyadic averages coordinate by coordinate in a balanced averaging tree. In the flat case choose the common spectral point with sufficiently small distance error on this finite set. By A.2 each two-point image has scaled exponent at most $\sqrt p+\varepsilon$. By E.8 the scaled exponent at each parent is at most the average at its children plus $\varepsilon$. The depth is $\log p$; hence $U\le\sqrt p+(1+\log p)\varepsilon$. For $p=1$ only the two-point bound is needed. Pull back repeated positions as in E.10 and let the error tend to zero. Equation (1) yields
+```math
+\log L\ge b_*/2-(N/b_*)\sqrt p\log J
+       \ge c_1 n/\sqrt p-c_2 p\log J .
+```
+For $J\le\sqrt n$ the second term is $o(n/\sqrt p)$ uniformly. This proves the claim. Cut count can also be traded continuously in the displayed estimate. A circuit-dependent argument would need to force a short or geometrically correlated cut list, or handle the residual cuts by another invariant. The sampling bound (3) was for end positions fixed before testing all flags and does not preclude this construction.
