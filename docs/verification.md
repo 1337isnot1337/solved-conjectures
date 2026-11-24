@@ -1,5 +1,12 @@
 # Verification
 
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+The [scoped receipt](verification/lean-gravgaard-lee-large-luroth-20261124/receipt.json)
+records strict compilation, the all-owned axiom audit and stock-kernel replay
+for `Conjectures.GravgaardLeeLargeLuroth`. The registered endpoints cover the
+source series, the witness expansions and Conjecture 2.12.
+
 ## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
 
 The [complete closure receipt](verification/gessel-zhuang-20261124/receipt.json), finished 24 November 2026 at 17:30:16 UTC, records fresh strict compilation of 25 project modules, the unchanged audit of 641 declarations (479 theorems and 185 private declarations), all 17 required endpoints, and full stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` occur transitively. The dedicated workflow repeats the target gate. The exact finite path checker passed through size nine and is supplementary. The repository-wide gate remains separately blocked by the documented dependency-cache problem; neither hosted success nor deployment is inferred from this target receipt.

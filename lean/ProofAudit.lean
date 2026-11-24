@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `GravgaardLeeLargeLuroth.conjecture_2_12,
+    `GravgaardLeeLargeLuroth.interval_subset_sum,
+    `GravgaardLeeLargeLuroth.interleaved_decomposition,
+    `GravgaardLeeLargeLuroth.value_hasSum,
     `GesselZhuang.conjecture_7_3,
     `GesselZhuang.conjecture_7_2,
     `GesselZhuang.pinnacle_gamma_expansion,

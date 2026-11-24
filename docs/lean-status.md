@@ -1,5 +1,13 @@
 # Lean verification status
 
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+[Lean proves Conjecture 2.12 and the stronger interval in the written proof](../lean/Conjectures/GravgaardLeeLargeLuroth.lean).
+For every integer $k\ge2$, the sum of the large-digit Lüroth set with itself contains
+$(0,1/(k-1)]$. The witnesses have strictly increasing interleaved digits.
+The development verifies both the convergence of the source's series and the half-open
+digit intervals. See `conjecture_2_12`, `interval_subset_sum` and `interleaved_decomposition`.
+
 ## Parking-function excedance certificate
 
 [Alexandersson’s parking-function excedance conjecture](../results/alexandersson-parking-excedance/) is refuted by a rational witness certified with exact integer and fraction arithmetic. No Lean formalization is claimed.
@@ -90,7 +98,7 @@ proofs are documented separately in the catalogue and result package.
 | Revised Tan–Zhou conjecture | Not formalized | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. |
 | Simmons–Weiss’s Hausdorff-measure question | Not formalized | Proves natural-Hausdorff-almost-sure non-bad approximation after every irrational translate of a bounded continued-fraction Cantor set. |
 | Gravgaard–Lee’s mixed Lüroth sumset conjecture | Not formalized | Proves that the mixed bounded-digit Lüroth sum represents every residue modulo one, with an explicit ordinary interval in the sum. |
-| Gravgaard–Lee’s large-digit Lüroth sumset conjecture | Not formalized | Gives a positive-length ordinary sum interval for every lower digit threshold, using two expansions whose combined digits strictly increase. |
+| Gravgaard–Lee’s large-digit Lüroth sumset conjecture | Complete | Gives a positive-length ordinary sum interval for every lower digit threshold, using two expansions whose combined digits strictly increase. |
 | Gravgaard–Lee’s Lüroth diameter question | Not formalized | Removes the digit-bound separation condition when total diameter is at least one and determines the exact positive sum hull. |
 | Gravgaard–Lee’s mixed upper/lower Lüroth conjecture | Not formalized | Determines the exact sum interval for all matching upper and lower Lüroth digit thresholds, including genuine expansions at the required endpoints. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture | Not formalized | Proves the derangement proportion tends to zero, with every fixed diagonal count diverging in probability. |
