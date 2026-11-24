@@ -111,6 +111,7 @@ jobs:
       - name: Replay dual Chow and symmetric edge polytope counterexamples
         run: |
           python3 results/caiolo-ferroni-hoster/verify_counterexample.py
+          python3 results/caiolo-ferroni-hoster/verify_ranks.py
           python3 results/hkm-ehrhart/verify.py
       - name: Replay automorphic Li-coefficient interval certificate
         run: python3 results/chaudhary-khmiri-mazhouda/verify.py

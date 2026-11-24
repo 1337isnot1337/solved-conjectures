@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Exact rank threshold for the Caiolo–Ferroni–Hoster conjecture
+
+A [supplement](results/caiolo-ferroni-hoster/RANKS.md) to the existing entry proves that dual Chow real-rootedness holds for all matroids of rank r exactly when r ≤ 4, and that both dual polynomials fail in every rank at least five. The same construction is used with the rank as a parameter. [Lean theorem](lean/Conjectures/CaioloFerroniHosterRanks.lean). Rank four remains undecided for the augmented and interlacing assertions. The rank-five attribution is unchanged and no new conjecture is counted.
+
 ## 2026-11-24 — Hartke–Stolee–West–Yancey matching-excess conjecture
 
 Completed the full Lean formalization of the existing entry, including actual graph witnesses for every input, the universal edge bound, attained all-order extremal constants, Hetyei extension and eventual stabilization, and the tail-minimum divergence with the recorded quantitative bound. The 22-module frozen closure passed strict sources, the complete owned/private audit and exact stock replay; independent mathematical and primary-statement reviews passed. The original proof, proposer and proof-author credits, priority qualifications, ranked position and unrelated catalogue rows are preserved. This is one complete existing result, not separate counts for constructions or bounds. The [scope](results/hartke-stolee-west-yancey-matching-excess/FORMALIZATION.md), [review](results/hartke-stolee-west-yancey-matching-excess/LEAN_REVIEW.md) and [receipt](docs/verification/lean-hartke-matching-excess-complete-20261124-162051/receipt.json) keep proof verification separate from aggregate/hosted/deployment obligations.

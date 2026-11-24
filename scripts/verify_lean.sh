@@ -204,6 +204,16 @@ modules=(
   Conjectures.CaioloFerroniHosterFlagPolynomials
   Conjectures.CaioloFerroniHosterCertificate
   Conjectures.CaioloFerroniHoster
+  Conjectures.CaioloFerroniHosterRankGamma
+  Conjectures.CaioloFerroniHosterRankPositivity
+  Conjectures.CaioloFerroniHosterRankFlats
+  Conjectures.CaioloFerroniHosterRankRoots
+  Conjectures.CaioloFerroniHosterRankGraphs
+  Conjectures.CaioloFerroniHosterRankCoalesce
+  Conjectures.CaioloFerroniHosterRankFlags
+  Conjectures.CaioloFerroniHosterRankBounds
+  Conjectures.CaioloFerroniHosterRankWitness
+  Conjectures.CaioloFerroniHosterRanks
   Conjectures.JuhnkeAlternating
   Conjectures.JuhnkeCompositions
   Conjectures.JuhnkeConjecture
