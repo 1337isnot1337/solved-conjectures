@@ -1712,3 +1712,8 @@ Partial Lean verification: the arbitrary-coordinate Boolean-box divisor/atom/fac
 ## Ulas’s disjoint-block square-product conjecture
 
 Partial Lean verification: for every positive block length, a positive repeatable count exists and every positive multiple of it has infinitely many disjoint square-product collections. The [source-matched finite-collection development](../lean/Conjectures/UlasDisjointSquareBlocks.lean) also reduces eventual infinitude at every sufficiently large count to prime-avoiding tail collections. The analytic/probabilistic parity input and odd-prime binary-code argument remain explicit obligations, as recorded in the [scope report](../results/ulas-disjoint-square-blocks/FORMALIZATION.md). All six modules passed fresh strict builds, the all-owned axiom audit and exact stock-kernel replay; see the [receipt](verification/lean-ulas-20261124-162051/verification.json). This entry is not counted as completely formalized.
+
+
+### Fan–Tringali graph realization checkpoint
+
+The [nine-module development](../lean/Conjectures/FanTringaliGraphLengths.lean) now proves the exact atomic length set of every graph construction, in both directions, from its maximal cliques. Slab quotient uniqueness, graph divisibility, and all atomic factorization classification are checked. The [receipt](verification/lean-fan-tringali-graph-20261124-162051/receipt.json) records 290 audited declarations, fresh strict builds and stock replay. Prescribed spectra, radix encoding and the original general-monoid transfers are still outside this frozen checkpoint; full-result count remains zero for this entry.

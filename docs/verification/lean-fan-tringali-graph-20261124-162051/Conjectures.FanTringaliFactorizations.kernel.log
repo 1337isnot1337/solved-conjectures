@@ -1,0 +1,3 @@
+command=["/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/leanchecker", "Conjectures.FanTringaliFactorizations"]
+
+exit=0

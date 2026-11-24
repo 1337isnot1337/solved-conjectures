@@ -2,6 +2,10 @@
 
 ## 2026-11-24 — Németh–Seberry–Shu conjecture
 
+Reconciled the partial formalization with the current ranked index. Preserved concurrent research changes and restored missing catalogue/status-summary rows for the already published Fan–Tringali and Ulas disjoint-block entries, both explicitly partial in Lean. Their proofs and verification claims are unchanged, and neither is counted as a new completed formalization in this campaign.
+
+## 2026-11-24 — Németh–Seberry–Shu conjecture
+
 The [partial Lean formalization](results/nemeth-seberry-shu/LEAN_STATUS.md) verifies the permanent congruence for every prime-order binary circulant, separation across dense row sums, and the exact reduction from uniformly available finite families to superlinear growth. Both modules passed strict source compilation, the all-owned axiom audit, and stock-kernel replay. An independent review checked the actual permanent convention and the uniform quantifiers. The Fourier/asymptotic construction and quadratic refinement remain unformalized. No complete formalization is counted.
 
 ## 2026-11-23 — Full-decider rational simulation and a denominator criterion

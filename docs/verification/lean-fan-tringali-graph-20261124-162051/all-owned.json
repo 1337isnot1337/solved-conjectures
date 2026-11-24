@@ -1,0 +1,4548 @@
+{
+  "summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 290,
+    "modules": 9,
+    "private_declarations": 0,
+    "raw_declarations": 290,
+    "required": 11,
+    "tag": "passed",
+    "theorems": 232
+  },
+  "modules": {
+    "Conjectures.FanTringaliBasic": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.FanTringaliBasic",
+      "names": [
+        "FanTringali.atom_box_iff_singleton",
+        "FanTringali.box",
+        "FanTringali.box_singleton._proof_1_1",
+        "FanTringali.axis.congr_simp",
+        "FanTringali.factors_of_box._simp_1_1",
+        "FanTringali.mem_box",
+        "FanTringali.box_add",
+        "FanTringali.box_singleton._simp_1_3",
+        "FanTringali.factors_of_box",
+        "FanTringali.atomic_factorization_box_length",
+        "FanTringali.axis_mem_box._proof_1_2",
+        "FanTringali.axis_mem_box._proof_1_3",
+        "FanTringali.factors_of_box._simp_1_8",
+        "FanTringali.mem_box._simp_1_3",
+        "FanTringali.factors_of_box._proof_1_9",
+        "FanTringali.axis_mem_box",
+        "FanTringali.box_eq_zero._simp_1",
+        "FanTringali.box_empty",
+        "FanTringali.box_injective",
+        "FanTringali.factors_of_box._proof_1_5",
+        "FanTringali.box.eq_1",
+        "FanTringali.mem_box._proof_1_7",
+        "FanTringali.factors_of_box._simp_1_2",
+        "FanTringali.axis.eq_1",
+        "FanTringali.axis_self",
+        "FanTringali.factors_of_box._proof_1_6",
+        "FanTringali.Lengths",
+        "FanTringali.factors_of_box._proof_1_3",
+        "FanTringali.box_singleton._simp_1_2",
+        "FanTringali.factors_of_box._proof_1_10",
+        "FanTringali.box_singleton",
+        "FanTringali.mem_box._proof_1_5",
+        "FanTringali.zero_mem_box",
+        "FanTringali.box_eq_zero",
+        "FanTringali.zero_mem_list_sum",
+        "FanTringali.factors_of_box._proof_1_7",
+        "FanTringali.mem_box._simp_1_2",
+        "FanTringali.mem_box._simp_1_4",
+        "FanTringali.mem_box._proof_1_6",
+        "FanTringali.atom_box_singleton",
+        "FanTringali.factors_of_box._proof_1_4",
+        "FanTringali.Atom",
+        "FanTringali.axis",
+        "FanTringali.box_mono",
+        "FanTringali.zero_mem_sum",
+        "FanTringali.axis_other",
+        "FanTringali.box_add._proof_1_1",
+        "FanTringali.left_subset_sum",
+        "FanTringali.box_add._proof_1_2",
+        "FanTringali.box_add._proof_1_3",
+        "FanTringali.right_subset_sum"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.FanTringaliGadget": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.FanTringaliGadget",
+      "names": [
+        "FanTringali.Gadget.vertical_unique",
+        "FanTringali.Gadget.square_impossible",
+        "FanTringali.quotients",
+        "FanTringali.Gadget.square_quotients",
+        "FanTringali.quotient_impossible",
+        "FanTringali.Gadget.horizontal",
+        "FanTringali.Gadget.horizontalQuotient",
+        "FanTringali.Gadget.horizontal_quotients",
+        "FanTringali.mem_quotients",
+        "FanTringali.mem_quotients._simp_1_2",
+        "FanTringali.Gadget.vertical_quotients",
+        "FanTringali.quotient_impossible._simp_1_1",
+        "FanTringali.quotients.eq_1",
+        "FanTringali.Gadget.vertical_eq",
+        "FanTringali.Gadget.verticalQuotient",
+        "FanTringali.Gadget.square",
+        "FanTringali.quotient_unique._simp_1_1",
+        "FanTringali.Gadget.horizontal_unique",
+        "FanTringali.Gadget.horizontal_eq",
+        "FanTringali.quotient_unique",
+        "FanTringali.mem_quotients._simp_1_3",
+        "FanTringali.Gadget.points",
+        "FanTringali.Gadget.vertical"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.FanTringaliProducts": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.FanTringaliProducts",
+      "names": [
+        "FanTringali.uniqueQuotient_zero",
+        "FanTringali.fiber_product",
+        "FanTringali.uniqueQuotient_box",
+        "FanTringali.zero_mem_of_zero_mem_add._proof_1_1",
+        "FanTringali.UniqueQuotient.mk._flat_ctor",
+        "FanTringali.UniqueQuotient.map",
+        "FanTringali.uniqueQuotient_horizontal",
+        "FanTringali.UniqueQuotient.product",
+        "FanTringali.Gadget.horizontal_uniqueQuotient",
+        "FanTringali.UniqueQuotient.casesOn",
+        "FanTringali.UniqueQuotient.mk",
+        "FanTringali.fiber.congr_simp",
+        "FanTringali.UniqueQuotient.rec",
+        "FanTringali.fiber_add_horizontal",
+        "FanTringali.fiber.eq_1",
+        "FanTringali.fiber",
+        "FanTringali.mem_fiber._simp_1_3",
+        "FanTringali.UniqueQuotient.sum_eq",
+        "FanTringali.UniqueQuotient.unique",
+        "FanTringali.UniqueQuotient",
+        "FanTringali.mem_fiber",
+        "FanTringali.zero_mem_of_zero_mem_add._proof_1_2",
+        "FanTringali.Gadget.vertical_uniqueQuotient",
+        "FanTringali.mem_fiber._simp_1",
+        "FanTringali.UniqueQuotient.recOn",
+        "FanTringali.zero_mem_of_zero_mem_add",
+        "FanTringali.mem_fiber._simp_1_2"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.FanTringaliCoordinates": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.FanTringaliCoordinates",
+      "names": [
+        "FanTringali.twoBox_neither",
+        "FanTringali.twoBox_left._simp_1_3",
+        "FanTringali.image_slab_twoSplit",
+        "FanTringali.remainingAxes",
+        "FanTringali.mem_remainingAxes._simp_1",
+        "FanTringali.slab_no_quotient_both",
+        "FanTringali.twoBox.eq_1",
+        "FanTringali.Gadget.horizontal.eq_1",
+        "FanTringali.mem_twoBox._proof_1_5",
+        "FanTringali.twoSplit.congr_simp",
+        "FanTringali.image_box_twoSplit",
+        "FanTringali.twoSplit._proof_5",
+        "FanTringali.twoBox",
+        "FanTringali.slab_nonempty",
+        "FanTringali.twoBox_left",
+        "FanTringali.twoSplit.eq_1",
+        "FanTringali.twoSplit_symm_other",
+        "FanTringali.slab_uniqueQuotient",
+        "FanTringali.mem_twoBox._proof_1_6",
+        "FanTringali.twoSplit._proof_7",
+        "FanTringali.twoBox_both",
+        "FanTringali.remainingAxes.eq_1",
+        "FanTringali.mem_twoBox",
+        "FanTringali.Remaining",
+        "FanTringali.twoSplit._proof_2",
+        "FanTringali.twoSplit_symm_a",
+        "FanTringali.twoSplit._proof_3",
+        "FanTringali.twoSplit._proof_1",
+        "FanTringali.twoSplit._proof_4",
+        "FanTringali.Gadget.vertical.eq_1",
+        "FanTringali.mem_twoBox._proof_1_4",
+        "FanTringali.twoSplit._proof_6",
+        "FanTringali.twoSplit_symm_b",
+        "FanTringali.twoBox_right._simp_1_3",
+        "FanTringali.twoSplit_apply",
+        "FanTringali.mem_twoBox._simp_1_2",
+        "FanTringali.slab",
+        "FanTringali.zero_mem_twoBox",
+        "FanTringali.twoSplit",
+        "FanTringali.mem_remainingAxes",
+        "FanTringali.mem_twoBox._proof_1_3",
+        "FanTringali.slab.eq_1",
+        "AddEquiv.mk.congr_simp",
+        "FanTringali.twoBox_right"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.FanTringaliSlices": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.FanTringaliSlices",
+      "names": [
+        "FanTringali.slice_add_low",
+        "FanTringali.Layered.zero_mem",
+        "FanTringali.layered_factor._proof_1_2",
+        "FanTringali.Layered.nonzero._simp_1_1",
+        "FanTringali.slice",
+        "FanTringali.slice_zero_add",
+        "FanTringali.layered_factor",
+        "FanTringali.slice_zero_add._proof_1_1",
+        "FanTringali.Layered.rec",
+        "FanTringali.Layered.recOn",
+        "FanTringali.Layered.height_notMem",
+        "FanTringali.mem_slice",
+        "FanTringali.slice_of_all",
+        "FanTringali.Layered.height_le",
+        "FanTringali.Layered.nonzero",
+        "FanTringali.layered_factor._simp_1_1",
+        "FanTringali.mem_slice._simp_1",
+        "FanTringali.Layered.bottom",
+        "FanTringali.Layered.nonzero._proof_1_2",
+        "FanTringali.layered_factor_low",
+        "FanTringali.zero_mem_slice",
+        "FanTringali.Layered.casesOn",
+        "FanTringali.slice_zero_add._proof_1_2",
+        "FanTringali.slice_zero_add._proof_1_3",
+        "FanTringali.Layered.mk",
+        "FanTringali.layered_factor_low._proof_1_1",
+        "FanTringali.Layered",
+        "FanTringali.slice_add_low._proof_1_1",
+        "FanTringali.Layered.high",
+        "FanTringali.Layered.mk._flat_ctor"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.FanTringaliFactorizations": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.FanTringaliFactorizations",
+      "names": [
+        "FanTringali.Atom.congr_simp",
+        "FanTringali.Layered.congr_simp",
+        "FanTringali.layered_lengths",
+        "FanTringali.atomic_quotient_maximal",
+        "FanTringali.maximal_quotient_atomic",
+        "FanTringali.layered_box_quotient",
+        "FanTringali.box_has_factorization",
+        "FanTringali.layered_atomic_factorization",
+        "FanTringali.MaximalBoxDivisor"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.FanTringaliStack": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.FanTringaliStack",
+      "names": [
+        "FanTringali.lift_marker",
+        "FanTringali.read_lift",
+        "FanTringali.row_stack_upper",
+        "FanTringali.mem_stack._simp_1_2",
+        "FanTringali.marker_not_mem_markedAxes",
+        "FanTringali.mem_stack._simp_1_4",
+        "FanTringali.height_not_mem_markedAxes._simp_1",
+        "FanTringali.lift_zero",
+        "FanTringali.ext_rows",
+        "FanTringali.layered_stack._proof_1_1",
+        "FanTringali.mem_row",
+        "FanTringali.row_stack_bottom",
+        "FanTringali.lift.match_1",
+        "FanTringali.row",
+        "FanTringali.stack.eq_1",
+        "FanTringali.uniqueQuotient_stack",
+        "FanTringali.mem_row._simp_1",
+        "FanTringali.mem_stack",
+        "FanTringali.lift_height",
+        "FanTringali.readOrdinary",
+        "FanTringali.layered_stack._simp_1_3",
+        "FanTringali.row.eq_1",
+        "AddMonoidHom.mk.congr_simp",
+        "FanTringali.mem_row._simp_1_2",
+        "FanTringali.Marked",
+        "FanTringali.mem_markedAxes",
+        "FanTringali.lift_ordinary",
+        "FanTringali.layered_stack._proof_1_4",
+        "FanTringali.lift_read",
+        "ZeroHom.mk.congr_simp",
+        "FanTringali.mem_stack._simp_1_3",
+        "FanTringali.row_stack_other._simp_1_1",
+        "FanTringali.marker_not_mem_markedAxes._simp_1",
+        "FanTringali.image_box_low",
+        "FanTringali.low.eq_1",
+        "FanTringali.stack",
+        "FanTringali.markedAxes.eq_1",
+        "FanTringali.lift_injective",
+        "FanTringali.lift_add",
+        "FanTringali.low._proof_1",
+        "FanTringali.markedAxes",
+        "FanTringali.low",
+        "FanTringali.lift",
+        "FanTringali.layered_stack._proof_1_2",
+        "FanTringali.row_stack_other",
+        "FanTringali.height_not_mem_markedAxes",
+        "FanTringali.layered_stack",
+        "FanTringali.row_add_low",
+        "FanTringali.mem_stack._simp_1",
+        "FanTringali.mem_markedAxes._simp_1",
+        "FanTringali.mem_row._simp_1_3"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.FanTringaliGraph": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.FanTringaliGraph",
+      "names": [
+        "FanTringali.graph_uniqueQuotient",
+        "FanTringali.graphSet_layered",
+        "FanTringali.Constraints.distinct",
+        "FanTringali.graphSet",
+        "FanTringali.markedAxes_card",
+        "FanTringali.constraintRows_succ._proof_1_2",
+        "FanTringali.constraintRows_succ._proof_1_3",
+        "FanTringali.Constraints.recOn",
+        "FanTringali.Constraints.mk.injEq",
+        "FanTringali.graphSet_row",
+        "FanTringali.markedAxes_subset_iff",
+        "FanTringali.Constraints",
+        "FanTringali.constraintRows.eq_1",
+        "FanTringali.subset_markedAxes",
+        "FanTringali.Constraints.mk.inj",
+        "FanTringali.Constraints.size",
+        "FanTringali.graph_box_divisor_iff",
+        "FanTringali.Constraints.left",
+        "FanTringali.compatible_mono",
+        "FanTringali.subset_markedAxes._simp_1_2",
+        "FanTringali.Constraints.rec",
+        "FanTringali.Constraints.mk.sizeOf_spec",
+        "FanTringali.compatible_empty",
+        "FanTringali.Constraints.right",
+        "FanTringali.graphSet.eq_1",
+        "FanTringali.graphSet_row._simp_1_2",
+        "FanTringali.constraintRows._proof_3",
+        "FanTringali.slab.congr_simp",
+        "FanTringali.constraintRows._proof_2",
+        "FanTringali.Constraints.mk",
+        "FanTringali.constraintRows._proof_1",
+        "FanTringali.Constraints.mk.noConfusion",
+        "FanTringali.Compatible",
+        "FanTringali.graphSet_row._proof_1_3",
+        "FanTringali.Constraints.noConfusionType",
+        "FanTringali.constraintRows_succ",
+        "FanTringali.Constraints.ctorIdx",
+        "FanTringali.Constraints._sizeOf_inst",
+        "FanTringali.graph_compatible_of_quotient",
+        "FanTringali.UniqueQuotient.congr_simp",
+        "FanTringali.subset_markedAxes._simp_1_1",
+        "FanTringali.Constraints.casesOn",
+        "FanTringali.constraintRows",
+        "FanTringali.Constraints.noConfusion",
+        "FanTringali.markedAxes_injective",
+        "FanTringali.compatible_singleton",
+        "FanTringali.graph_uniqueQuotient._proof_1_1",
+        "FanTringali.markedAxes_injective._simp_1_1",
+        "FanTringali.Constraints._sizeOf_1",
+        "FanTringali.constraintRows_zero",
+        "FanTringali.Constraints.mk._flat_ctor",
+        "FanTringali.graph_uniqueQuotient._proof_1_2"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    },
+    "Conjectures.FanTringaliGraphLengths": {
+      "has_data": true,
+      "import_all": true,
+      "modern": false,
+      "module": "Conjectures.FanTringaliGraphLengths",
+      "names": [
+        "FanTringali.graph_maximal_iff",
+        "FanTringali.MaximalCompatible",
+        "FanTringali.graph_lengths"
+      ],
+      "private_count": 0,
+      "tag": "module"
+    }
+  },
+  "declarations": {
+    "FanTringali.UniqueQuotient.mk._flat_ctor": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.UniqueQuotient.mk._flat_ctor",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slab": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.slab",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.noConfusionType": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints.noConfusionType",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.twoSplit",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.row_stack_other._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.row_stack_other._simp_1_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graph_uniqueQuotient._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graph_uniqueQuotient._proof_1_1",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_box._simp_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_box._simp_1_3",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slice_zero_add": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slice_zero_add",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.MaximalCompatible": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.MaximalCompatible",
+      "owner": "Conjectures.FanTringaliGraphLengths",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.remainingAxes": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.remainingAxes",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.mk.inj": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Constraints.mk.inj",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_twoBox._proof_1_6": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_twoBox._proof_1_6",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.row": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.row",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.constraintRows._proof_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.constraintRows._proof_2",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.lift_zero": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.lift_zero",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.atom_box_iff_singleton": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.atom_box_iff_singleton",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Remaining": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Remaining",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.nonzero._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Layered.nonzero._proof_1_2",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.size": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints.size",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.UniqueQuotient.mk": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "constructor",
+      "name": "FanTringali.UniqueQuotient.mk",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_box._proof_1_7": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_box._proof_1_7",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.axis_other": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.axis_other",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.congr_simp": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Layered.congr_simp",
+      "owner": "Conjectures.FanTringaliFactorizations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_box._proof_1_6": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_box._proof_1_6",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_add._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_add._proof_1_3",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_box_quotient": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_box_quotient",
+      "owner": "Conjectures.FanTringaliFactorizations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_singleton._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_singleton._simp_1_2",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.zero_mem_sum": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.zero_mem_sum",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.UniqueQuotient": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "inductive",
+      "name": "FanTringali.UniqueQuotient",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graph_lengths": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graph_lengths",
+      "owner": "Conjectures.FanTringaliGraphLengths",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.recOn": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints.recOn",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.constraintRows_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.constraintRows_zero",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slice_zero_add._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slice_zero_add._proof_1_2",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.compatible_empty": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.compatible_empty",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.horizontal_eq": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.horizontal_eq",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.markedAxes_injective": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.markedAxes_injective",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.distinct": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Constraints.distinct",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_add._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_add._proof_1_2",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.factors_of_box": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.factors_of_box",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.lift_injective": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.lift_injective",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.square_quotients": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.square_quotients",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints._sizeOf_inst": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints._sizeOf_inst",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit._proof_7": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit._proof_7",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.square": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Gadget.square",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.remainingAxes.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.remainingAxes.eq_1",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.markedAxes_subset_iff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.markedAxes_subset_iff",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_factor_low": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_factor_low",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graphSet_layered": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graphSet_layered",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.constraintRows_succ": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.constraintRows_succ",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.factors_of_box._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.factors_of_box._simp_1_1",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_factor._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_factor._proof_1_2",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.stack.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.stack.eq_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.ctorIdx": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints.ctorIdx",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "AddMonoidHom.mk.congr_simp": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "AddMonoidHom.mk.congr_simp",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_stack._simp_1_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_stack._simp_1_4",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slice_zero_add._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slice_zero_add._proof_1_1",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit._proof_6": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit._proof_6",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_fiber._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_fiber._simp_1_2",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graph_uniqueQuotient": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graph_uniqueQuotient",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit._proof_5": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit._proof_5",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints._sizeOf_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints._sizeOf_1",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.fiber_product": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.fiber_product",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.compatible_mono": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.compatible_mono",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graph_compatible_of_quotient": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graph_compatible_of_quotient",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.mk.sizeOf_spec": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Constraints.mk.sizeOf_spec",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.points": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Gadget.points",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.UniqueQuotient.sum_eq": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.UniqueQuotient.sum_eq",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.vertical_quotients": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.vertical_quotients",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.zero_mem_of_zero_mem_add": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.zero_mem_of_zero_mem_add",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_fiber._simp_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_fiber._simp_1",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_remainingAxes._simp_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_remainingAxes._simp_1",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit_symm_other": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit_symm_other",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_row._simp_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_row._simp_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_singleton": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_singleton",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.factors_of_box._proof_1_10": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.factors_of_box._proof_1_10",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.stack": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.stack",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.left": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints.left",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.square_impossible": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.square_impossible",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_box._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_box._simp_1_2",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.axis_mem_box._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.axis_mem_box._proof_1_2",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slice_zero_add._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slice_zero_add._proof_1_3",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.row_stack_other": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.row_stack_other",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.recOn": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Layered.recOn",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.factors_of_box._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.factors_of_box._simp_1_2",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.axis_mem_box._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.axis_mem_box._proof_1_3",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_stack._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_stack._proof_1_4",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_empty": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_empty",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.zero_mem_slice": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.zero_mem_slice",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.lift_marker": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.lift_marker",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_twoBox._proof_1_5": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_twoBox._proof_1_5",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.low._proof_1": {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.low._proof_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.uniqueQuotient_horizontal": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.uniqueQuotient_horizontal",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoBox.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoBox.eq_1",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.low.eq_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.low.eq_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.atomic_factorization_box_length": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.atomic_factorization_box_length",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.constraintRows_succ._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.constraintRows_succ._proof_1_3",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit._proof_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit._proof_2",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.factors_of_box._proof_1_5": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.factors_of_box._proof_1_5",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.factors_of_box._proof_1_9": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.factors_of_box._proof_1_9",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.constraintRows._proof_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.constraintRows._proof_1",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.read_lift": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.read_lift",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_factor._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_factor._simp_1_1",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_row._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_row._simp_1_2",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box.eq_1",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_stack._simp_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_stack._simp_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_stack": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_stack",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_mono": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_mono",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_quotients._simp_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_quotients._simp_1_3",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit._proof_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit._proof_1",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_factor_low._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_factor_low._proof_1_1",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.UniqueQuotient.congr_simp": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.UniqueQuotient.congr_simp",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_remainingAxes": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_remainingAxes",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.quotients.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.quotients.eq_1",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.MaximalBoxDivisor": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.MaximalBoxDivisor",
+      "owner": "Conjectures.FanTringaliFactorizations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.mk.injEq": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Constraints.mk.injEq",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slab_no_quotient_both": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slab_no_quotient_both",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slice_add_low": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slice_add_low",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.casesOn": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints.casesOn",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.factors_of_box._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.factors_of_box._proof_1_3",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graphSet_row._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graphSet_row._proof_1_3",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.right": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints.right",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.row.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.row.eq_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_twoBox": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_twoBox",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.image_box_low": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.image_box_low",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "inductive",
+      "name": "FanTringali.Layered",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.factors_of_box._proof_1_6": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.factors_of_box._proof_1_6",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.horizontal_uniqueQuotient": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.horizontal_uniqueQuotient",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.height_notMem": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Layered.height_notMem",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slab.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slab.eq_1",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.lift_add": {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.lift_add",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_atomic_factorization": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_atomic_factorization",
+      "owner": "Conjectures.FanTringaliFactorizations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.maximal_quotient_atomic": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.maximal_quotient_atomic",
+      "owner": "Conjectures.FanTringaliFactorizations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_add._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_add._proof_1_1",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slice_add_low._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slice_add_low._proof_1_1",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_factor": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_factor",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_slice._simp_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_slice._simp_1",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.lift": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.lift",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.zero_mem_of_zero_mem_add._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.zero_mem_of_zero_mem_add._proof_1_2",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.lift_height": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.lift_height",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.mk._flat_ctor": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints.mk._flat_ctor",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.right_subset_sum": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.right_subset_sum",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.fiber.congr_simp": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.fiber.congr_simp",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoBox_left._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoBox_left._simp_1_3",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.height_not_mem_markedAxes._simp_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.height_not_mem_markedAxes._simp_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.quotient_impossible._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.quotient_impossible._simp_1_1",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.casesOn": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Layered.casesOn",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.lift_read": {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.lift_read",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.mk.noConfusion": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints.mk.noConfusion",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit_apply": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit_apply",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.axis_mem_box": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.axis_mem_box",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.marker_not_mem_markedAxes": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.marker_not_mem_markedAxes",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slab.congr_simp": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slab.congr_simp",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.UniqueQuotient.product": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.UniqueQuotient.product",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.fiber": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.fiber",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.subset_markedAxes._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.subset_markedAxes._simp_1_2",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.lift_ordinary": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.lift_ordinary",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_row": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_row",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_twoBox._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_twoBox._simp_1_2",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_row._simp_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_row._simp_1_3",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.nonzero._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Layered.nonzero._simp_1_1",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_stack._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_stack._proof_1_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.image_slab_twoSplit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.image_slab_twoSplit",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "AddEquiv.mk.congr_simp": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "AddEquiv.mk.congr_simp",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.UniqueQuotient.rec": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "recursor",
+      "name": "FanTringali.UniqueQuotient.rec",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit._proof_4": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit._proof_4",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_add": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_add",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoBox_neither": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoBox_neither",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Lengths": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Lengths",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_stack": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_stack",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Compatible": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Compatible",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_eq_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_eq_zero",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.marker_not_mem_markedAxes._simp_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.marker_not_mem_markedAxes._simp_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.quotient_impossible": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.quotient_impossible",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.fiber.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.fiber.eq_1",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit_symm_a": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit_symm_a",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.horizontal_unique": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.horizontal_unique",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.markedAxes": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.markedAxes",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_slice": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_slice",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.zero_mem_twoBox": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.zero_mem_twoBox",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.constraintRows.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.constraintRows.eq_1",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_stack._simp_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_stack._simp_1_3",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.zero_mem": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Layered.zero_mem",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.vertical_uniqueQuotient": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.vertical_uniqueQuotient",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.row_stack_bottom": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.row_stack_bottom",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.atom_box_singleton": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.atom_box_singleton",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.rec": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "recursor",
+      "name": "FanTringali.Constraints.rec",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.height_not_mem_markedAxes": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.height_not_mem_markedAxes",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.constraintRows_succ._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.constraintRows_succ._proof_1_2",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoBox_both": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoBox_both",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.factors_of_box._proof_1_7": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.factors_of_box._proof_1_7",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_eq_zero._simp_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_eq_zero._simp_1",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_fiber._simp_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_fiber._simp_1_3",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.nonzero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Layered.nonzero",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit._proof_3": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit._proof_3",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Atom": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Atom",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.axis.eq_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.axis.eq_1",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.mk": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "constructor",
+      "name": "FanTringali.Constraints.mk",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.vertical_eq": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.vertical_eq",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_twoBox._proof_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_twoBox._proof_1_3",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.uniqueQuotient_zero": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.uniqueQuotient_zero",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.readOrdinary": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.readOrdinary",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.horizontal_quotients": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.horizontal_quotients",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.vertical.eq_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.vertical.eq_1",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.factors_of_box._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.factors_of_box._proof_1_4",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slice_of_all": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slice_of_all",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_stack._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_stack._proof_1_2",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_stack._simp_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_stack._simp_1_3",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.axis": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.axis",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.quotients": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.quotients",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.markedAxes_injective._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.markedAxes_injective._simp_1_1",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_fiber": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_fiber",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_singleton._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_singleton._proof_1_1",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.bottom": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Layered.bottom",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.constraintRows._proof_3": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.constraintRows._proof_3",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit_symm_b": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit_symm_b",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit.congr_simp": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit.congr_simp",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Marked": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Marked",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.UniqueQuotient.unique": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.UniqueQuotient.unique",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_markedAxes": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_markedAxes",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "ZeroHom.mk.congr_simp": {
+      "axioms": [],
+      "by_legacy_prefix": false,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "ZeroHom.mk.congr_simp",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slice": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.slice",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.uniqueQuotient_box": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.uniqueQuotient_box",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.verticalQuotient": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Gadget.verticalQuotient",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slab_nonempty": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slab_nonempty",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.layered_lengths": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.layered_lengths",
+      "owner": "Conjectures.FanTringaliFactorizations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graphSet": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.graphSet",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graph_box_divisor_iff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graph_box_divisor_iff",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graph_uniqueQuotient._proof_1_2": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graph_uniqueQuotient._proof_1_2",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoBox_right": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoBox_right",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_stack._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_stack._simp_1_2",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.horizontal": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Gadget.horizontal",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.markedAxes.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.markedAxes.eq_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_quotients": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_quotients",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints.noConfusion": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Constraints.noConfusion",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.row_stack_upper": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.row_stack_upper",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.ext_rows": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.ext_rows",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_singleton._simp_1_3": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_singleton._simp_1_3",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoSplit.eq_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoSplit.eq_1",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.low": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.low",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.UniqueQuotient.map": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.UniqueQuotient.map",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_box._proof_1_5": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_box._proof_1_5",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.axis.congr_simp": {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.axis.congr_simp",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.markedAxes_card": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.markedAxes_card",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.fiber_add_horizontal": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.fiber_add_horizontal",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.zero_mem_of_zero_mem_add._proof_1_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.zero_mem_of_zero_mem_add._proof_1_1",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graphSet.eq_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graphSet.eq_1",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Constraints": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "inductive",
+      "name": "FanTringali.Constraints",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.factors_of_box._simp_1_8": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.factors_of_box._simp_1_8",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.height_le": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Layered.height_le",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.rec": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "recursor",
+      "name": "FanTringali.Layered.rec",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.constraintRows": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.constraintRows",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.image_box_twoSplit": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.image_box_twoSplit",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.left_subset_sum": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.left_subset_sum",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.subset_markedAxes._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.subset_markedAxes._simp_1_1",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.box",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.slab_uniqueQuotient": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.slab_uniqueQuotient",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoBox_right._simp_1_3": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoBox_right._simp_1_3",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.uniqueQuotient_stack": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.uniqueQuotient_stack",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.vertical_unique": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.vertical_unique",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.horizontal.eq_1": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Gadget.horizontal.eq_1",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoBox": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.twoBox",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_has_factorization": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_has_factorization",
+      "owner": "Conjectures.FanTringaliFactorizations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.box_injective": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.box_injective",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_twoBox._proof_1_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_twoBox._proof_1_4",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.UniqueQuotient.casesOn": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.UniqueQuotient.casesOn",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_box": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_box",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.lift.match_1": {
+      "axioms": [],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.lift.match_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.atomic_quotient_maximal": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.atomic_quotient_maximal",
+      "owner": "Conjectures.FanTringaliFactorizations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.zero_mem_list_sum": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.zero_mem_list_sum",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.horizontalQuotient": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Gadget.horizontalQuotient",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_quotients._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_quotients._simp_1_2",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.axis_self": {
+      "axioms": [
+        "propext"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.axis_self",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.subset_markedAxes": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.subset_markedAxes",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.UniqueQuotient.recOn": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.UniqueQuotient.recOn",
+      "owner": "Conjectures.FanTringaliProducts",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.quotient_unique._simp_1_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.quotient_unique._simp_1_1",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Gadget.vertical": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Gadget.vertical",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.zero_mem_box": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.zero_mem_box",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.compatible_singleton": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.compatible_singleton",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Atom.congr_simp": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Atom.congr_simp",
+      "owner": "Conjectures.FanTringaliFactorizations",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.twoBox_left": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.twoBox_left",
+      "owner": "Conjectures.FanTringaliCoordinates",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_markedAxes._simp_1": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_markedAxes._simp_1",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graphSet_row": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graphSet_row",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graphSet_row._simp_1_2": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graphSet_row._simp_1_2",
+      "owner": "Conjectures.FanTringaliGraph",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.quotient_unique": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.quotient_unique",
+      "owner": "Conjectures.FanTringaliGadget",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.mk._flat_ctor": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "definition",
+      "name": "FanTringali.Layered.mk._flat_ctor",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.high": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.Layered.high",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.graph_maximal_iff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.graph_maximal_iff",
+      "owner": "Conjectures.FanTringaliGraphLengths",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.row_add_low": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.row_add_low",
+      "owner": "Conjectures.FanTringaliStack",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.Layered.mk": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "constructor",
+      "name": "FanTringali.Layered.mk",
+      "owner": "Conjectures.FanTringaliSlices",
+      "private_user_name": null,
+      "tag": "declaration"
+    },
+    "FanTringali.mem_box._simp_1_4": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "by_legacy_prefix": true,
+      "by_module": true,
+      "by_serialized": true,
+      "kind": "theorem",
+      "name": "FanTringali.mem_box._simp_1_4",
+      "owner": "Conjectures.FanTringaliBasic",
+      "private_user_name": null,
+      "tag": "declaration"
+    }
+  },
+  "private_declarations": {},
+  "required": [
+    "FanTringali.factors_of_box",
+    "FanTringali.atomic_factorization_box_length",
+    "FanTringali.Gadget.square_impossible",
+    "FanTringali.slab_uniqueQuotient",
+    "FanTringali.slab_no_quotient_both",
+    "FanTringali.uniqueQuotient_stack",
+    "FanTringali.graph_box_divisor_iff",
+    "FanTringali.graph_uniqueQuotient",
+    "FanTringali.layered_atomic_factorization",
+    "FanTringali.layered_lengths",
+    "FanTringali.graph_lengths"
+  ],
+  "kind_counts": {
+    "definition": 49,
+    "theorem": 232,
+    "constructor": 3,
+    "inductive": 3,
+    "recursor": 3
+  },
+  "all_owned_declarations_audited": true,
+  "exact_raw_private_visibility": true
+}

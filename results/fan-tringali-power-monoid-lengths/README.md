@@ -1,6 +1,6 @@
 # Fan–Tringali’s power-monoid length-set conjecture
 
-Lean formalization is **incomplete**. The checked [Boolean-box classification](../../lean/Conjectures/FanTringaliBasic.lean) is uniform in the finite coordinate set and includes atom and factorization-length classification. The checked [local gadget](../../lean/Conjectures/FanTringaliGadget.lean) proves unique horizontal and vertical quotients and excludes every square quotient. See [scope and remaining work](LEAN.md) and the [verification receipt](../../docs/verification/lean-fan-tringali-20261124-162051/receipt.json).
+Lean formalization is **incomplete**. The checked [graph realization theorem](../../lean/Conjectures/FanTringaliGraphLengths.lean) identifies every atomic factorization length of the arbitrary finite-graph construction with one plus a maximal-clique size. It includes the [Boolean-box classification](../../lean/Conjectures/FanTringaliBasic.lean) and [local gadget](../../lean/Conjectures/FanTringaliGadget.lean). See [scope and remaining work](LEAN.md) and the [verification receipt](../../docs/verification/lean-fan-tringali-graph-20261124-162051/receipt.json).
 
 **Proved.** Every nonempty finite subset of the integers at least two is a length set in the power monoids in the original conjecture. In the reduced setting, the same construction prescribes the multiplicity of each length.
 
