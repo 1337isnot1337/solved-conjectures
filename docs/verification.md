@@ -803,3 +803,11 @@ The [mixed-group threshold proof](../results/ma-tang-random-subset-sums/PROOF.md
 ## Permutation word mixing and small eigenfunction norms
 
 [Féray’s word-measure proof](../results/feray-conjugate-power-word/PROOF.md) and its [sharp-rate supplement](../results/feray-conjugate-power-word/SHARP-RATE.md), as well as the [spherical basis construction](../results/steinerberger-small-average-eigenfunction-norms/PROOF.md) and its [per-mode extension](../results/steinerberger-small-average-eigenfunction-norms/POINTWISE.md), are analytic arguments with independent source and proof audits.
+
+## First short-proof Lean batch
+
+- [Wilf-module questions](../results/almiron-moyano-wilf-module-questions/LEAN.md): Question 4.8 and parts (1), (2), and (6) of Question 4.13. Partial coverage of the collection entry.
+- [Cardon et al.](../results/cardon-zero-sector/LEAN.md): exact negative answer to Question 6.1.
+- [Chappelon–Ramírez Alfonsín–Stamate](../results/chappelon-ramirez-stamate-leaf-type/LEAN.md): exact disproof of Conjecture 4.4.
+
+The [scoped verification receipt](verification/first-short-proof-lean-batch.md) records the pinned compiler, all-owned axiom audit, and stock kernel replay. The original conjecture disproofs do not certify the stronger written supplements.

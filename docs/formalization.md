@@ -1,5 +1,13 @@
 # Full formalization campaign
 
+## First short-proof Lean batch
+
+- [Wilf-module questions](../results/almiron-moyano-wilf-module-questions/LEAN.md): Question 4.8 and parts (1), (2), and (6) of Question 4.13. Partial coverage of the collection entry.
+- [Cardon et al.](../results/cardon-zero-sector/LEAN.md): exact negative answer to Question 6.1.
+- [Chappelon–Ramírez Alfonsín–Stamate](../results/chappelon-ramirez-stamate-leaf-type/LEAN.md): exact disproof of Conjecture 4.4.
+
+The [scoped verification receipt](verification/first-short-proof-lean-batch.md) records the pinned compiler, all-owned axiom audit, and stock kernel replay. The original conjecture disproofs do not certify the stronger written supplements.
+
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
 The [framework paper's Conjecture 4.18](https://arxiv.org/pdf/2001.09122v3) is fully checked by `AgnosticVC.steinkeZakynthinou_framework_conjecture418`. Its distribution-free CMI takes the supremum over fixed paired pools, and both guarantees hold with common constant $`19{,}712`$ for every positive sample size. [Lean source](../lean/Conjectures/AgnosticVC/FixedPairing.lean)

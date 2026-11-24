@@ -9,6 +9,11 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `AlmironMoyanoWilf.question_4_8_false,
+    `AlmironMoyanoWilf.question_4_13_uniform_threshold,
+    `AlmironMoyanoWilf.question_4_13_at_generator_count,
+    `CardonZeroSector.cardon_question_6_1_false,
+    `ChappelonRamirezStamate.chappelon_ramirez_stamate_conjecture_4_4_false,
     `AgnosticVC.canonicalRep_refinement,
     `AgnosticVC.sampleFamily_vcDim_le,
     `AgnosticVC.continuous_optimizer,

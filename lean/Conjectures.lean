@@ -1,3 +1,6 @@
+import Conjectures.AlmironMoyanoWilf
+import Conjectures.CardonZeroSector
+import Conjectures.ChappelonRamirezStamateLeafType
 import Conjectures.ChenKhareSahiOrthogonalityData
 import Conjectures.ChenKhareSahiOrthogonalityTransition
 import Conjectures.ChenKhareSahiOrthogonalityGram
