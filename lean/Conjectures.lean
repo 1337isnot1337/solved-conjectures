@@ -1,3 +1,5 @@
+import Conjectures.CoulangeonLazzariniShells
+import Conjectures.CoulangeonLazzariniRealLattice
 import Conjectures.GravgaardLeeMixedLuroth
 import Conjectures.GravgaardLeeLargeLuroth
 import Conjectures.GesselZhuangBlockOperations

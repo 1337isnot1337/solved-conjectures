@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24 — Verify Coulangeon–Lazzarini’s two-shell counterexample in Lean
+
+The [Lean proof](lean/Conjectures/CoulangeonLazzariniRealLattice.lean) constructs the full-rank discrete lattice in dimension ten, verifies the spherical second moments for squared norms 4 and 8, and proves failure at squared norm 9. The [integer-coordinate module](lean/Conjectures/CoulangeonLazzariniShells.lean) verifies the elementary arbitrary-delay family.
+
 ## 2026-11-24 — Verify Gravgaard–Lee’s mixed Lüroth theorem in Lean
 
 The [Lean proof](lean/Conjectures/GravgaardLeeMixedLuroth.lean) checks the source digit sets, all fifteen interval containments and the passage to the infinite expansions. It proves the stronger ordinary interval and Conjecture 2.2 on all real residues.
