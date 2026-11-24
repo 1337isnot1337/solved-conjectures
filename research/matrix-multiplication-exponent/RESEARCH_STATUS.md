@@ -282,6 +282,45 @@ also lose a factor whose logarithm is $`o(\log q)`$, as proved there.
 Forward intersecting uncrossing alone does not give the required reverse
 inequality.
 
+## Mixed valuations and the next flag-exchange constructions
+
+[ADJACENT_MODULE_DEFORMATIONS.md](ADJACENT_MODULE_DEFORMATIONS.md)
+records necessary conditions beyond the excluded multiplicity range.
+For $`n\ge3,m=n+1`$, a nontrivial first diagonal term has the form
+$`\Phi_X=\chi(X)I+\ell(X)H`$ with $`H^2=0`$. Exact commuting
+completions with upper block $`X\otimes I_m`$ are excluded at every
+multiplicity. A hyperplane cocycle lemma specifies the next necessary
+condition on a perturbed upper block. It does not exclude all
+deformations at $`m=n+1`$.
+
+[MIXED_VALUATION_PADDING.md](MIXED_VALUATION_PADDING.md) gives an
+exact diagonal smoothing of $`N_{2,2}\oplus0_3`$ in dimension eleven.
+It uses the seven-product Strassen identity and therefore gives no new
+rank bound. It explicitly exhibits the alternating product through
+added trivial directions which is absent from the unpadded equations.
+The remaining target is a family of quadratic total dimension whose
+construction does not already assume a quadratic multiplication rank.
+
+The geodesic construction audit now preserves three distinct failures.
+[FLAG_EXCHANGE_OBSTRUCTIONS.md](FLAG_EXCHANGE_OBSTRUCTIONS.md)
+proves exact flattening bounds with changed spectator catalysts and,
+for a common invertible $`C`$ map across $`r`$ source summands,
+the bound $`rN/N'\ge\sqrt q`$.
+[FOURIER_TRADE_OBSTRUCTIONS.md](FOURIER_TRADE_OBSTRUCTIONS.md)
+computes the full off-diagonal output of a Fourier attempt and the
+rank of its proposed coefficient repair.
+[OPERATOR_TRADE_OBSTRUCTIONS.md](OPERATOR_TRADE_OBSTRUCTIONS.md)
+proves the row/column-support bound $`qN'\le rN`$, allowing
+arbitrary mixing at $`A,B`$, and records an
+invertible off-support coefficient in the two-family Weyl attempt.
+The latter formula cancels only after imposing an index relation that
+the local maps do not enforce.
+
+These results exclude the stated map classes. Arbitrary mixed maps
+and degenerations remain outside their scope. The general criterion
+allows a constant flag loss, such as $`N'=N/2`$, as $`q\to\infty`$;
+an obstruction to near-full retention alone would not rule it out.
+
 ## Remaining mathematical obligation
 
 To prove the target by this route, establish a full-tensor inequality on one compatible normalized extension that forces
@@ -316,8 +355,10 @@ python3 check_general_free_separator.py
 python3 check_uncrossing_separator.py
 python3 check_convolution_block_trade.py
 python3 check_trace_cubic_nonsmoothable.py
+python3 check_hyperplane_cocycle.py
+python3 check_mixed_valuation_padding.py
 ```
 
-The propagation-local, ordinary-partial-block, and general-free-separator scripts use SymPy. The trace-cubic certificate uses NumPy integer arrays with explicit overflow bounds. The other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
+The propagation-local, ordinary-partial-block, general-free-separator, and mixed-padding scripts use SymPy. The trace-cubic and hyperplane-cocycle checks use NumPy integer arrays with explicit overflow bounds. The other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
 
 The review scope and reproducible check inventory are recorded in [REVIEW_AND_VERIFICATION.md](REVIEW_AND_VERIFICATION.md).

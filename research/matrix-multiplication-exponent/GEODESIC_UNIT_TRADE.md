@@ -317,5 +317,17 @@ u_{ACD}+u_{BCD}
 Since $`0\le d_{AB}\le1`$, both error terms tend to zero.
 Thus this relaxed construction also proves (1). In particular, a
 bounded source-only unit and a flag loss with $`M(q)/N(q)\to1`$
-would suffice. This is an implication for a family of valid local
+would suffice. More generally, a fixed ratio such as
+$`N(q)/M(q)=2`$ is allowed, since
+$`\log 2/\log q\to0`$. Near-full retention is not required.
+This is an implication for a family of valid local
 maps; no such family is supplied here.
+
+The exact-map obstructions in
+[FLAG_EXCHANGE_OBSTRUCTIONS.md](FLAG_EXCHANGE_OBSTRUCTIONS.md),
+the failed Fourier repair in
+[FOURIER_TRADE_OBSTRUCTIONS.md](FOURIER_TRADE_OBSTRUCTIONS.md),
+and the full off-support Weyl residual in
+[OPERATOR_TRADE_OBSTRUCTIONS.md](OPERATOR_TRADE_OBSTRUCTIONS.md)
+exclude specified construction classes. None excludes this general
+finite-family criterion.
