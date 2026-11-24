@@ -154,12 +154,18 @@ invertible slice.
 
 A simultaneous degeneration of this tuple from diagonal tuples on
 $`M`$ would provide a rank-$`2n^2`$ border decomposition, and would
-therefore suffice for $`\omega_{\mathbb C}=2`$. Commutativity alone
-does not imply such a degeneration. No such deformation has been
-constructed. The point of this reformulation is that it removes the
-unnecessary requirement that the source vector space itself carry a
-commutative algebra multiplication; the required module smoothing
-is still a substantive missing statement.
+therefore suffice for $`\omega_{\mathbb C}=2`$. This particular
+source has now been excluded: [SQUARE_ZERO_MODULE_OBSTRUCTION.md](SQUARE_ZERO_MODULE_OBSTRUCTION.md),
+Theorem 7, proves that it admits no formal simultaneous diagonal
+smoothing, and Section 8 gives the corresponding Laurent-border-rank
+lower bound $`2n^2+1`$ for its identity-completed action tensor.
+The proof classifies the leading deformation, applies an algebra
+dimension obstruction to its multiplicity part, and iterates by
+convergent formal shears. It retains every higher-order upper-right
+coefficient. This does not give the same lower bound for $`M_n`$
+itself. A subsequent module construction must change the source,
+for example by adding trivial directions instead of merely repeating
+the same module at multiplicity at most $`n`$.
 
 ## 4. Source checks and a circular shortcut to avoid
 
