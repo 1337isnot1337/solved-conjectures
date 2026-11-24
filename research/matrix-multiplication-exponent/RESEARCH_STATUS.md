@@ -610,6 +610,81 @@ projections at A, B and C, allowing any D map. The Pauli transfer count
 does not apply to arbitrary complex filters or sums of independently
 controlled Clifford branches.
 
+## Fixed central source, relative gauges and complete operator tests
+
+[CENTRAL_QUANTUM_SOURCE.md](CENTRAL_QUANTUM_SOURCE.md) gives a fixed
+four-party tensor on a central Schur slice. For even k, its local
+dimension t is within a polynomial factor of p=binom(2k,k), its ordinary
+rank is at most p, and a fixed two-leg contraction is a signed
+permutation matrix. The leading quantum coefficient is independent of
+all characteristic-polynomial parameters. Cyclic root-subset orbits
+give a smaller exact rank budget. The first nontrivial case has local
+dimension eight and both ordinary and border rank ten, certified by
+a flattening minor of determinant one. The proof uses a finite
+root-subset sum and formal coefficient extraction; it does not assume
+an operator identity or move a parameter-dependent basis into the C
+party. This supplies a source at the required asymptotic scale.
+
+[RELATIVE_OUTPUT_GAUGE.md](RELATIVE_OUTPUT_GAUGE.md) proves that the
+output ratio g(v,q)g(u,q)^{-1} is a fixed Pascal matrix plus a rank-one
+term with fixed image. Its kth exterior power lies in an (s+1)-dimensional
+fixed matrix span, and each column lies in a fixed span of at most k+1
+vectors. Bounded products admit a controlled family expansion. The
+scalar coefficients can be absorbed into the outside A map without
+changing operator order; h-dependent fibers are allowed, while an
+uncontrolled c-dependent flag shift is not. The opposite gauge ratio
+does not satisfy the asserted fixed-image statement.
+
+[FINITE_PROPAGATION_KERNEL_TRANSFER.md](FINITE_PROPAGATION_KERNEL_TRANSFER.md)
+realizes a complete entrywise identity with finite-propagation outside
+maps and arbitrary middle kernels on finite flags with N/M tending to
+one. It also states the exact finite-consistency criterion. This does
+not construct the missing kernel. For one specified two-family
+difference-Lax candidate,
+[DIFFERENCE_KERNEL_CERTIFICATES.md](DIFFERENCE_KERNEL_CERTIFICATES.md)
+proves that every target C column vanishes on the stated finite window,
+both for the original and the explicitly rotated second family. The
+unrotated rational source rank is 320 and each target-column augmentation
+has rank at least 324; the rotated ranks are 328 and at least 332.
+
+[DIFFERENCE_RTT_AND_FUSION.md](DIFFERENCE_RTT_AND_FUSION.md) proves the
+full-shift RTT identity with parameter minus eta and the complete
+arithmetic exterior fusion. The latter equals the ordinary exterior
+Lax operator, including its scalar factor. The
+[Cartan defect](SEMIDYNAMICAL_CARTAN_DEFECT.md) and
+[height commutator](DIFFERENCE_HEIGHT_COMMUTATOR.md) retain their exact
+operator order and common source index. None supplies the two independent
+copied output labels required by the tensor trade.
+
+[CONTROLLED_STABILIZER_SPAN.md](CONTROLLED_STABILIZER_SPAN.md) proves a
+span bound using the stabilizer projector gap. Its growing-prime result
+does not imply a power lower bound for arbitrary qubit systems.
+[CLIFFORD_BRANCH_OVERLAP.md](CLIFFORD_BRANCH_OVERLAP.md) gives the sharp
+full-rank branch overlaps. In particular, the tagged overlap can be
+q^{-1/2}, correcting a proposed q^{-1} bound. The
+[legal first-zero maps](FIRST_ZERO_TAGGED_MAP.md) have a quantified flag
+loss, and the [parity-core calculation](FIRST_ZERO_PARITY_CORE.md) shows
+that a simple interference residual is a local copy of the target.
+
+[EQUAL_FLAGS_SINGULAR_C.md](EQUAL_FLAGS_SINGULAR_C.md) bounds the retained
+C rank by q^{3/2} for one exact equal-flags branch with arbitrary singular
+C map and a concise A/B target; an explicit construction is sharp.
+[ROW_COLUMN_C_COMPRESSION_CAPACITY.md](ROW_COLUMN_C_COMPRESSION_CAPACITY.md)
+extends a separate row/column-support obstruction to arbitrary C
+compression and proves its stated Laurent extension. These bounds retain
+their map-class hypotheses; they are not lower bounds on omega.
+
+[MULTI_SHEAR_RIGIDITY_FAILURE.md](MULTI_SHEAR_RIGIDITY_FAILURE.md)
+prints a complete square-zero differential-shear source equation,
+including the off-target residual and an elementary finite-flag
+realization with N/M tending to one. Its dense C planes are unrestricted.
+The [subspace sampling theorem](MOTION_SUBSPACE_SAMPLING_CAPACITY.md)
+nevertheless bounds the retained C rank by r q^{3/2}, even when each
+target column chooses its own motion. The proof samples endpoint spaces
+and uses a finite-vector rank argument; it does not count distinct
+intersection lines. Ordered products with surviving nonlinear terms
+remain outside this particular obstruction.
+
 ## Remaining mathematical obligation
 
 To prove the target by this route, establish a full-tensor inequality on one compatible normalized extension that forces
@@ -654,6 +729,13 @@ python3 irf_vertex_exact_candidate.py
 python3 check_irf_shared_inverse.py
 python3 check_difference_projector_and_collision.py
 python3 check_shifted_path_residue.py
+python3 check_difference_kernel_system.py --certify
+python3 check_difference_kernel_system.py --rotate-family --certify
+python3 check_difference_rtt_fusion.py
+python3 check_clifford_branch_overlaps.py
+python3 check_relative_output_gauge.py
+python3 check_central_quantum_source.py
+python3 check_central_quantum_orbits.py
 ```
 
 The propagation-local, ordinary-partial-block, general-free-separator, mixed-padding, and Grassmannian Frobenius scripts use SymPy. The trace-cubic and hyperplane-cocycle checks use NumPy integer arrays with explicit overflow bounds. The exterior-incidence checker uses both NumPy integer arrays and exact SymPy rational ranks, with an explicit arithmetic bound. The Weyl transfer replay and the other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
@@ -665,3 +747,9 @@ library. The difference-projector, collision, shared-inverse residual
 and conditional-height path checks use exact SymPy arithmetic. These
 checks concern the printed finite identities and counterexamples; they
 do not verify the missing source-to-target equation.
+
+The finite kernel certificates use exact rational coefficients, modular
+elimination with explicit int64 bounds, and a proved characteristic-zero
+rank upper bound. The rotated variant also uses SymPy. The RTT, relative
+gauge and central quantum checks use exact SymPy arithmetic. The Pauli
+overlap replay uses binary integer arithmetic from the standard library.
