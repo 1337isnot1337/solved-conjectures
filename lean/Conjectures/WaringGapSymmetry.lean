@@ -200,4 +200,74 @@ theorem not_reflection_conjecture : ¬ ReflectionConjecture := by
   obtain ⟨F,t,hF,ht,h1,h2,_⟩ := benfield_lippard_64
   exact (h 6 F t (by decide) hF (Nat.le_of_lt ht)).mp h1 h2
 
+
+/-- The paper's uniform set-stabilization convention. Its stabilized set,
+if given as a predicate, agrees with the pointwise eventual definition. -/
+def Stabilizes (e : Nat) (B : Nat → Prop) : Prop :=
+  ∃ J, ∀ j, J≤j → ∀ n, B n ↔ (0<n ∧ ¬ Represents e j n)
+
+theorem stabilized_matches (e : Nat) (B : Nat → Prop)
+    (h : Stabilizes e B) (n : Nat) : B n ↔ StableException e n := by
+  obtain ⟨J,hJ⟩ := h
+  constructor
+  · intro hn
+    exact ⟨((hJ J (Nat.le_refl J) n).mp hn).1,J,
+      fun j hj => ((hJ j hj n).mp hn).2⟩
+  · intro hn
+    obtain ⟨hn,K,hK⟩ := hn
+    exact (hJ (J+K) (by omega) n).mpr ⟨hn,hK (J+K) (by omega)⟩
+
+theorem count_filter_range (s : Nat → Bool) (N : Nat) :
+    ((List.range N).filter (fun n => !(s n))).length=prefixSum (gapBit s) N := by
+  induction N with
+  | zero => rfl
+  | succ N ih =>
+    rw [List.range_succ,List.filter_append,List.length_append,ih,prefixSum_succ]
+    cases h : s N <;> simp [h,gapBit]
+
+/-- A duplicate-free enumeration of all stable exceptions below or at F. -/
+noncomputable def stableList (e F : Nat) : List Nat :=
+  (List.range (F+1)).filter (fun n => !(memberBit e n))
+
+theorem stableList_length (e F : Nat) :
+    (stableList e F).length=stableCount e F :=
+  count_filter_range (memberBit e) (F+1)
+
+theorem stableList_nodup (e F : Nat) : (stableList e F).Nodup := by
+  exact List.Nodup.filter _ List.nodup_range
+
+theorem stableList_mem (e F n : Nat) (hF : IsLargestStableException e F) :
+    n∈stableList e F ↔ StableException e n := by
+  unfold stableList
+  rw [List.mem_filter,List.mem_range]
+  cases h : memberBit e n
+  · have hs := (stable_iff e n).mpr ((memberBit_false e n).mp h)
+    have hn := hF.2 n hs
+    simp [h,hs,show n<F+1 by omega]
+  · have hs : ¬ StableException e n :=
+      fun hs => (stable_iff e n).mp hs ((memberBit_true e n).mp h)
+    simp [h,hs]
+
+/-- Strict inequality for the actual cardinality of the paper's B-set,
+given as a duplicate-free list with precisely its members. -/
+theorem stable_list_counterexample64 :
+    ∃ F : Nat, ∃ B : List Nat, IsLargestStableException 64 F ∧
+      B.Nodup ∧ (∀ n, n∈B ↔ StableException 64 n) ∧
+      F+1<2*B.length := by
+  obtain ⟨F,t,hF,ht,h1,h2,hdef⟩ := benfield_lippard_64
+  refine ⟨F,stableList 64 F,hF,stableList_nodup 64 F,
+    fun n => stableList_mem 64 F n hF,?_⟩
+  rw [stableList_length]
+  exact hdef
+
+theorem stable_list_counterexample128 :
+    ∃ F : Nat, ∃ B : List Nat, IsLargestStableException 128 F ∧
+      B.Nodup ∧ (∀ n, n∈B ↔ StableException 128 n) ∧
+      F+1<2*B.length := by
+  obtain ⟨F,t,hF,ht,h1,h2,hdef⟩ := benfield_lippard_128
+  refine ⟨F,stableList 128 F,hF,stableList_nodup 128 F,
+    fun n => stableList_mem 128 F n hF,?_⟩
+  rw [stableList_length]
+  exact hdef
+
 end WaringGapSymmetryCore
