@@ -779,3 +779,7 @@ Run `python3 results/defant-engen-miller-lassalle/interval_check.py` to verify t
 ## Higashitani–Kummer–Michałek exact witnesses
 
 Run `python3 results/hkm-canonical-line/check.py` and `python3 results/hkm-canonical-line/check_interlace.py` to reproduce the two exact complete-multipartite counterexamples. The [proof](../results/hkm-canonical-line/PROOF.md) and [interlacing supplement](../results/hkm-canonical-line/INTERLACING.md) give the mathematical derivation.
+
+## Sagan–Wilson coefficient mode certificate
+
+Run `python3 results/sagan-wilson-plactic-mode/check.py` to verify the exact length-ten witness. The [proof](../results/sagan-wilson-plactic-mode/PROOF.md) also gives the general asymptotic position independently of the finite check.

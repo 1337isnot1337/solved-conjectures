@@ -16,6 +16,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Brown–Mol's conjecture](results/brown-mol/) | ✅ |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ |
 | [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | ⬜ |
+| [Pomerance–Sárközy’s fluctuation conjecture](results/pomerance-sarkozy-fluctuations/) | ⬜ |
 | [Ulas’s disjoint-block square-product conjecture](results/ulas-disjoint-square-blocks/) | ⬜ |
 | [Kovalev’s linear Lipschitz clustering questions](results/kovalev-lipschitz-clustering/) | ⬜ |
 | [Revised Tan–Zhou conjecture](results/revised-tan-zhou-luroth/) | ⬜ |
@@ -44,12 +45,12 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Sagan–Swanson’s q-Stirling normality conjecture](results/sagan-swanson-q-stirling-normality/) | ⬜ |
 | [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | ⬜ |
 | [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ |
+| [Sagan–Wilson’s plactic coefficient-mode conjecture](results/sagan-wilson-plactic-mode/) | ⬜ |
 | [Juhnke’s arbitrary-step lattice-path log-concavity conjecture](results/juhnke-lattice-paths/) | ⬜ |
 | [Chow’s type-D Eulerian interlacing conjecture](results/chow-type-d/) | ⬜ |
 | [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ⬜ |
 | [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/) | ⬜ |
 | [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results/athanasiadis-chapoton-transmuted-m/) | ⬜ |
-| [Roy’s square-partition multiplicative inequality conjecture](results/roy-square-partitions/) | ⬜ |
 | [Gawron–Miska–Ulas’s Thue–Morse valuation conjecture](results/gawron-miska-ulas-thue-morse-valuation/) | ⬜ |
 | [Zhu’s generalized Jacobi–Stirling Hankel positivity conjecture](results/zhu-jacobi-stirling-hankel/) | ⬜ |
 | [Sobolewski–Ulas’s binary-partition exception regularity conjecture](results/sobolewski-ulas-exception-regularity/) | ⬜ |
