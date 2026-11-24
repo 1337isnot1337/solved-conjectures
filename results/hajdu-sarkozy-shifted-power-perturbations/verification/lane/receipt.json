@@ -1,0 +1,366 @@
+{
+  "scope": "Every exponent k\u22652, every nonzero integral shift, every o(X^(1/k)) symmetric-difference perturbation, and every finite modification; original root-zero convention included",
+  "status": "passed",
+  "entry": "results/hajdu-sarkozy-shifted-power-perturbations/",
+  "documented_proof_commit": "83c325ae559864ec0b5e916d90a342b50a81de7f",
+  "source_sha256": {
+    "Conjectures/HajduSarkozyArithmetic.lean": "cc26a9d846722e79ac39cfc33ed5e66e4edf69d53edea6a11129e57161a6ec10",
+    "Conjectures/HajduSarkozyIncidence.lean": "f5929babe3eaed9883e58cb3f535efa07e1d6400a0193f38f83b832409099a63",
+    "Conjectures/HajduSarkozyAsymptotics.lean": "7e1e3b34d9ba52c3ca0244f66b197fbd432fdc146a9f8868b8b511718004b96d",
+    "Conjectures/HajduSarkozyCounts.lean": "4e5b6012683d90b49924cc4a34ebf984d8b29ab519ef68b152de87da6880f3fa",
+    "Conjectures/HajduSarkozyBins.lean": "d101311407bce05878d7330705bf4e47a69910a17abfbb571a33d13d9a2b5dfc",
+    "Conjectures/HajduSarkozyMatrix.lean": "65c65fef22c45db2e7ed33309f900561e94a680e74121aa8c0b34e33895477a5",
+    "Conjectures/HajduSarkozyProduct.lean": "a78f0c7f8394bb1df48ddc4ca1fb6c9a58d860d3ff57bfd1f7317f33110be27e",
+    "Conjectures/HajduSarkozyCommon.lean": "7eeca6b0eec2b54000a886f75304d48801c5a3dc18704c9a1b0f267484f0122f",
+    "Conjectures/HajduSarkozyDensity.lean": "71de2d8d1441dbb6040c951d33cb304fb6a58a42cf35b073b926544f5f300fd6",
+    "Conjectures/HajduSarkozyFactors.lean": "7e59906ce3657af165f536068a9082ed96d4e30a4637e26ac95fbbd78c66bbf8",
+    "Conjectures/HajduSarkozy.lean": "4fa40196f38191939159904231c99bbba097c175f002a25318202a40368d4c17"
+  },
+  "project_modules": [
+    "Conjectures.HajduSarkozyArithmetic",
+    "Conjectures.HajduSarkozyIncidence",
+    "Conjectures.HajduSarkozyAsymptotics",
+    "Conjectures.HajduSarkozyCounts",
+    "Conjectures.HajduSarkozyBins",
+    "Conjectures.HajduSarkozyMatrix",
+    "Conjectures.HajduSarkozyProduct",
+    "Conjectures.HajduSarkozyCommon",
+    "Conjectures.HajduSarkozyDensity",
+    "Conjectures.HajduSarkozyFactors",
+    "Conjectures.HajduSarkozy"
+  ],
+  "required_theorems": [
+    "Conjectures.HajduSarkozy.no_thin_four_cycle",
+    "Conjectures.HajduSarkozy.edge_card_le",
+    "Conjectures.HajduSarkozy.filter_product_card_le",
+    "Conjectures.HajduSarkozy.doublePrefix_isLittleO",
+    "Conjectures.HajduSarkozy.half_square_isLittleO",
+    "Conjectures.HajduSarkozy.mem_realPrefix",
+    "Conjectures.HajduSarkozy.sparse_finite",
+    "Conjectures.HajduSarkozy.product_bin_indices",
+    "Conjectures.HajduSarkozy.thin_bin_edge_card_le",
+    "Conjectures.HajduSarkozy.triangleSum_isLittleO",
+    "Conjectures.HajduSarkozy.large_product_count_le_triangle",
+    "Conjectures.HajduSarkozy.product_grid_isLittleO",
+    "Conjectures.HajduSarkozy.commonPowers_grid_bound",
+    "Conjectures.HajduSarkozy.factor_count_bound",
+    "Conjectures.HajduSarkozy.factor_binMass_isLittleO",
+    "Conjectures.HajduSarkozy.shiftedPowers_not_grid_isLittleO",
+    "Conjectures.HajduSarkozy.no_product_of_sparse_error",
+    "Conjectures.HajduSarkozy.shiftedPowerPerturbations",
+    "Conjectures.HajduSarkozy.original_shifted_finite_difference",
+    "Conjectures.HajduSarkozy.hajdu_sarkozy_conjecture"
+  ],
+  "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "leanchecker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+  "verification_script_sha256": "5bf1fcd653879894303f7bb470d2b9998033be0ff36331e07f7c0e67b4e5524e",
+  "steps": [
+    {
+      "label": "version",
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.068,
+      "started_utc": "2026-11-24T17:29:01.301934+00:00",
+      "finished_utc": "2026-11-24T17:29:01.370306+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    },
+    {
+      "label": "Conjectures.HajduSarkozyArithmetic.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hajdu/verification/lib/lean/Conjectures/HajduSarkozyArithmetic.olean",
+        "Conjectures/HajduSarkozyArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 20.491,
+      "started_utc": "2026-11-24T17:29:01.371474+00:00",
+      "finished_utc": "2026-11-24T17:29:21.862883+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.HajduSarkozyIncidence.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hajdu/verification/lib/lean/Conjectures/HajduSarkozyIncidence.olean",
+        "Conjectures/HajduSarkozyIncidence.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.725,
+      "started_utc": "2026-11-24T17:29:21.865736+00:00",
+      "finished_utc": "2026-11-24T17:29:28.591129+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.HajduSarkozyAsymptotics.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hajdu/verification/lib/lean/Conjectures/HajduSarkozyAsymptotics.olean",
+        "Conjectures/HajduSarkozyAsymptotics.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.153,
+      "started_utc": "2026-11-24T17:29:28.595558+00:00",
+      "finished_utc": "2026-11-24T17:29:33.748847+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.HajduSarkozyCounts.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hajdu/verification/lib/lean/Conjectures/HajduSarkozyCounts.olean",
+        "Conjectures/HajduSarkozyCounts.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.582,
+      "started_utc": "2026-11-24T17:29:33.750393+00:00",
+      "finished_utc": "2026-11-24T17:29:40.332071+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.HajduSarkozyBins.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hajdu/verification/lib/lean/Conjectures/HajduSarkozyBins.olean",
+        "Conjectures/HajduSarkozyBins.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.839,
+      "started_utc": "2026-11-24T17:29:40.339570+00:00",
+      "finished_utc": "2026-11-24T17:29:46.178849+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.HajduSarkozyMatrix.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hajdu/verification/lib/lean/Conjectures/HajduSarkozyMatrix.olean",
+        "Conjectures/HajduSarkozyMatrix.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.93,
+      "started_utc": "2026-11-24T17:29:46.180526+00:00",
+      "finished_utc": "2026-11-24T17:29:49.110193+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.HajduSarkozyProduct.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hajdu/verification/lib/lean/Conjectures/HajduSarkozyProduct.olean",
+        "Conjectures/HajduSarkozyProduct.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.576,
+      "started_utc": "2026-11-24T17:29:49.110737+00:00",
+      "finished_utc": "2026-11-24T17:29:51.686552+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.HajduSarkozyCommon.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hajdu/verification/lib/lean/Conjectures/HajduSarkozyCommon.olean",
+        "Conjectures/HajduSarkozyCommon.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.424,
+      "started_utc": "2026-11-24T17:29:51.687287+00:00",
+      "finished_utc": "2026-11-24T17:29:54.111379+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.HajduSarkozyDensity.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hajdu/verification/lib/lean/Conjectures/HajduSarkozyDensity.olean",
+        "Conjectures/HajduSarkozyDensity.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.681,
+      "started_utc": "2026-11-24T17:29:54.111957+00:00",
+      "finished_utc": "2026-11-24T17:29:56.793570+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.HajduSarkozyFactors.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hajdu/verification/lib/lean/Conjectures/HajduSarkozyFactors.olean",
+        "Conjectures/HajduSarkozyFactors.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.402,
+      "started_utc": "2026-11-24T17:29:56.811345+00:00",
+      "finished_utc": "2026-11-24T17:30:00.213189+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.HajduSarkozy.source",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/hajdu/verification/lib/lean/Conjectures/HajduSarkozy.olean",
+        "Conjectures/HajduSarkozy.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.25,
+      "started_utc": "2026-11-24T17:30:00.215117+00:00",
+      "finished_utc": "2026-11-24T17:30:04.465556+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "all-owned-audit",
+      "command": [
+        "lean",
+        "-j2",
+        "-M4500",
+        "-DwarningAsError=true",
+        "/tmp/cinna-lean-162051/hajdu/verification/AllOwnedAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.281,
+      "started_utc": "2026-11-24T17:30:04.468295+00:00",
+      "finished_utc": "2026-11-24T17:30:11.749455+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "407c1678bad5a12219006228bc567b6aa4aaa9c94325a7964e9390d585c33df4"
+    },
+    {
+      "label": "kernel",
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "leanchecker",
+        "-v",
+        "Conjectures"
+      ],
+      "exit_code": 0,
+      "seconds": 21.28,
+      "started_utc": "2026-11-24T17:30:11.778652+00:00",
+      "finished_utc": "2026-11-24T17:30:33.058182+00:00",
+      "timed_out": false,
+      "interrupted": false,
+      "log_sha256": "736835d3d4d2111e51621ab640a6b40fea8ea3a2a997bf25c2e3baf0e5de8151"
+    }
+  ],
+  "repository_wide_gate_claimed": false,
+  "lock_acquired_utc": "2026-11-24T17:29:01.298077+00:00",
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "kernel_environment": {
+    "LEAN_NUM_THREADS": "1",
+    "UV_USE_IO_URING": "0"
+  },
+  "exact_kernel_replay_set": [
+    "Conjectures.HajduSarkozyArithmetic",
+    "Conjectures.HajduSarkozyIncidence",
+    "Conjectures.HajduSarkozyAsymptotics",
+    "Conjectures.HajduSarkozyCounts",
+    "Conjectures.HajduSarkozyBins",
+    "Conjectures.HajduSarkozyMatrix",
+    "Conjectures.HajduSarkozyProduct",
+    "Conjectures.HajduSarkozyCommon",
+    "Conjectures.HajduSarkozyDensity",
+    "Conjectures.HajduSarkozyFactors",
+    "Conjectures.HajduSarkozy"
+  ],
+  "object_sha256": {
+    "Conjectures/HajduSarkozy.olean": "66607c0f827c7664f8b5d0afa04a17e42613671906d61ddb392548884d1eaaea",
+    "Conjectures/HajduSarkozyArithmetic.olean": "9e496ac48fcf913407fb4c229368d8fe4ee6983b36d802ace772e82e31d672f4",
+    "Conjectures/HajduSarkozyAsymptotics.olean": "bfb309f22015dd77c6d5a176100449f8a19d9cb9fde7c75913c00efe060c3fa5",
+    "Conjectures/HajduSarkozyBins.olean": "2aa0816711e811983f9c7581e80c5d72d78b9a0d3ba715243eca6602de4af01a",
+    "Conjectures/HajduSarkozyCommon.olean": "cd001a0a73d7df38486a582a2b38a9824d1c1f557ae0a90813ee42a50036528a",
+    "Conjectures/HajduSarkozyCounts.olean": "4d478f31875acb553422d5af54252999fb1b3bd4afadbf0217010a299c77689b",
+    "Conjectures/HajduSarkozyDensity.olean": "15518d7cce25c3612decfdae7a6d234bcae1f6b5384cf90a1b05d77fa0106495",
+    "Conjectures/HajduSarkozyFactors.olean": "8a91a27dd39d8762952305370cec58c70b5146020b2d9892cb0c3b430f7b9962",
+    "Conjectures/HajduSarkozyIncidence.olean": "11abc11a5183f9e7e37f21040abdf993981b4ce395621fb7aa5c89ebe17810c8",
+    "Conjectures/HajduSarkozyMatrix.olean": "8bb72f0e3d86654be8a5a36aa36706ff1f6385636dc948e7cc1c6019d139d3f4",
+    "Conjectures/HajduSarkozyProduct.olean": "3460c3071c09d1778edfe4154dfee3c792b3733669f6ca7b0f6d69e696aebafb"
+  },
+  "audit_source_sha256": "deb30721c783b4457aaa2c9a3908e02c6984431c1e4ba0f1f8700b35fd276f37",
+  "declaration_inventory_sha256": "b381c65dd2e5038f9112387f5e9ac2a96225ee5ca4c705792b718675d9091188",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 185,
+    "modules": 11,
+    "private_declarations": 0,
+    "raw_declarations": 185,
+    "required": 20,
+    "tag": "passed",
+    "theorems": 157
+  }
+}
