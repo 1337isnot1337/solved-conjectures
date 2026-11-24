@@ -72,6 +72,11 @@ import Conjectures.GravgaardLeeUpperLowerForcing
 import Conjectures.GravgaardLeeUpperLowerConvergence
 import Conjectures.GravgaardLeeUpperLowerTwo
 import Conjectures.GravgaardLeeUpperLower
+import Conjectures.GravgaardLeeDiameterDigits
+import Conjectures.GravgaardLeeDiameterCover
+import Conjectures.GravgaardLeeDiameterGreedy
+import Conjectures.GravgaardLeeDiameterTails
+import Conjectures.GravgaardLeeDiameter
 import Conjectures.GesselZhuangBlockOperations
 import Conjectures.GesselZhuangBlocks
 import Conjectures.GesselZhuangChoices

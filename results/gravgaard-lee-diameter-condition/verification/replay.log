@@ -1,0 +1,10 @@
+Replaying all 8 local project modules imported by Conjectures.GravgaardLeeDiameter, including that root (prefix Conjectures)
+replaying Conjectures.GravgaardLeeUpperLowerBasic
+replaying Conjectures.GravgaardLeeDiameterDigits
+replaying Conjectures.GravgaardLeeDiameterTails
+replaying Conjectures.GravgaardLeeLargeLuroth
+replaying Conjectures.GravgaardLeeDiameter
+replaying Conjectures.GravgaardLeeDiameterGreedy
+replaying Conjectures.GravgaardLeeMixedLuroth
+replaying Conjectures.GravgaardLeeDiameterCover
+PASS: the entire local import closure of Conjectures.GravgaardLeeDiameter completed the pinned kernel replay

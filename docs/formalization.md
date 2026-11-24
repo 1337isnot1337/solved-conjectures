@@ -1,5 +1,10 @@
 # Full formalization campaign
 
+## Gravgaard–Lee’s Lüroth diameter question
+
+The [Lean formalization](../results/gravgaard-lee-diameter-condition/FORMALIZATION.md) proves compact interval coverage by simultaneous affine cylinder refinement and removes the finite endpoints by a two-scale alternating digit construction. The final witnesses are genuine infinite expansions. It also proves the exact modulo-one threshold and checks the equality example. See the [local receipt](../results/gravgaard-lee-diameter-condition/verification/receipt.json).
+
+
 ## Feldheim–Feldheim’s weighted tail conjecture
 
 The [complete Lean proof](../results/feldheim-weighted-tail/FORMALIZATION.md) establishes original Conjecture 1 for every positive weight below one and arbitrary independent nonnegative laws without compact support, including atoms and singular laws. Actual moving averages supply the continuity bridge, an actual affine-minorant supremum supplies the convex approximation, and inverse levels supply the common near-affine windows. Product-measure conditioning and an atom-safe Stieltjes inequality close the literal infinite-limsup statement.

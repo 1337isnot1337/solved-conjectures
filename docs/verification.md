@@ -1,5 +1,10 @@
 # Verification
 
+## Gravgaard–Lee’s Lüroth diameter question
+
+The [local receipt](../results/gravgaard-lee-diameter-condition/verification/receipt.json) covers strict compilation, all-owned transitive axiom audit, and pinned stock-kernel replay for the closure of `Conjectures.GravgaardLeeDiameter`. See the [Lean formalization](../results/gravgaard-lee-diameter-condition/FORMALIZATION.md) for the scoped command. The imports and required endpoints are registered in the [aggregate workflow](../.github/workflows/lean.yml).
+
+
 ## Feldheim–Feldheim’s weighted tail conjecture
 
 From `lean/`, run `lake env python3 ../scripts/verify_feldheim_weighted_tail.py`. The [dedicated workflow](../.github/workflows/lean-feldheim-weighted-tail.yml) runs the same fresh strict source builds, complete all-owned/private transitive axiom audit and exact stock-kernel replay for the registered twenty-module closure. The [proof-lane receipt](../results/feldheim-weighted-tail/verification/lane/receipt.json) and [independent final validation](../results/feldheim-weighted-tail/verification/FINAL_INDEPENDENT_VALIDATION.json) cover 179 declarations, 161 theorems and all thirty required endpoints. The [publication receipt](../results/feldheim-weighted-tail/verification/receipt.json) checks the portable runner and current registrations separately. [Scope and reviews](../results/feldheim-weighted-tail/LEAN_REVIEW.md) retain all laws and all positive weights; higher-dimensional norm and finite-threshold supplements are unformalized. Aggregate verification and current-mode public deployment remain separate obligations in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).

@@ -1,5 +1,10 @@
 # Lean verification status
 
+## Gravgaard–Lee’s Lüroth diameter question
+
+The [Lean formalization](../results/gravgaard-lee-diameter-condition/FORMALIZATION.md) proves the exact positive sum hull for arbitrary finite lower digit bounds of total diameter at least one, including equality. It also proves necessity of this threshold for modulo-one coverage. The eight-module closure passed strict compilation, the complete owned-declaration axiom audit, and stock-kernel replay. See the [local receipt](../results/gravgaard-lee-diameter-condition/verification/receipt.json).
+
+
 ## Feldheim–Feldheim’s weighted tail conjecture
 
 Complete for original Conjecture 1, with every positive weight below one, arbitrary distinct laws and atoms. The terminal theorem uses literal noncompact almost-sure support and an actual infinite limsup. Twenty fresh strict modules, the complete audit of 179 declarations and all thirty required endpoints, and exact stock-kernel replay passed. The higher-dimensional norm and finite-threshold supplements remain unformalized. [Scope](../results/feldheim-weighted-tail/FORMALIZATION.md) · [Independent review](../results/feldheim-weighted-tail/LEAN_REVIEW.md) · [Receipt](../results/feldheim-weighted-tail/verification/receipt.json).
@@ -143,7 +148,7 @@ proofs are documented separately in the catalogue and result package.
 | Simmons–Weiss’s Hausdorff-measure question | Not formalized | Proves natural-Hausdorff-almost-sure non-bad approximation after every irrational translate of a bounded continued-fraction Cantor set. |
 | Gravgaard–Lee’s mixed Lüroth sumset conjecture | Complete | Proves that the mixed bounded-digit Lüroth sum represents every residue modulo one, with an explicit ordinary interval in the sum. |
 | Gravgaard–Lee’s large-digit Lüroth sumset conjecture | Complete | Gives a positive-length ordinary sum interval for every lower digit threshold, using two expansions whose combined digits strictly increase. |
-| Gravgaard–Lee’s Lüroth diameter question | Not formalized | Removes the digit-bound separation condition when total diameter is at least one and determines the exact positive sum hull. |
+| Gravgaard–Lee’s Lüroth diameter question | Complete | Exact positive sum hull for actual infinite expansions and the exact threshold for coverage modulo one. The strict build, owned-declaration axiom audit, and stock-kernel replay passed. [Lean formalization](../results/gravgaard-lee-diameter-condition/FORMALIZATION.md) · [local receipt](../results/gravgaard-lee-diameter-condition/verification/receipt.json). |
 | Gravgaard–Lee’s mixed upper/lower Lüroth conjecture | Complete | Exact interval equality and original modulo-one conclusion for every k≥2, with actual infinite upper/lower expansions. All 12 strict sources, the complete axiom audit and exact stock replay passed. [Scope](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) · [Receipt](verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json). |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture | Not formalized | Proves the derangement proportion tends to zero, with every fixed diagonal count diverging in probability. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture | Not formalized | Refutes every proposed fixed power exponent by exact finite two-branch counting and saturation of the occupation loss. |

@@ -1,5 +1,10 @@
 # History
 
+## 2026-11-24 — Gravgaard–Lee’s Lüroth diameter question
+
+Completed Lean verification of the exact positive sum hull, including equality of the total diameter, and the exact threshold for coverage modulo one. Direct cylinder refinement replaces the use of the general thickness theorem. See the [formalization](results/gravgaard-lee-diameter-condition/FORMALIZATION.md) and [local receipt](results/gravgaard-lee-diameter-condition/verification/receipt.json).
+
+
 ## 2026-11-24 — Hartke–Stolee–West–Yancey matching-excess conjecture
 
 Completed the full Lean formalization of the existing entry, including actual graph witnesses for every input, the universal edge bound, attained all-order extremal constants, Hetyei extension and eventual stabilization, and the tail-minimum divergence with the recorded quantitative bound. The 22-module frozen closure passed strict sources, the complete owned/private audit and exact stock replay; independent mathematical and primary-statement reviews passed. The original proof, proposer and proof-author credits, priority qualifications, ranked position and unrelated catalogue rows are preserved. This is one complete existing result, not separate counts for constructions or bounds. The [scope](results/hartke-stolee-west-yancey-matching-excess/FORMALIZATION.md), [review](results/hartke-stolee-west-yancey-matching-excess/LEAN_REVIEW.md) and [receipt](docs/verification/lean-hartke-matching-excess-complete-20261124-162051/receipt.json) keep proof verification separate from aggregate/hosted/deployment obligations.
