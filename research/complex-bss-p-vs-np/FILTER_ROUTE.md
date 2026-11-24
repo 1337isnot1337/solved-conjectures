@@ -1,5 +1,7 @@
 # Roots-of-unity filters and explicit block incidences
 
+Update: the conditional incidence in Section 6 is now excluded, subject to the imported permanent border lower bound, by [SINGULAR_WITNESS.md](SINGULAR_WITNESS.md), Section 6. [HYPERSURFACE_DEGENERATION.md](HYPERSURFACE_DEGENERATION.md) proves the more general obstruction. The conditional implication below remains correct, but its proposed existential hypothesis is not an unresolved viable construction.
+
 Status: research audit. The constructions below prove that the immediate block-product and zero-pattern routes do not represent the filtered resultant. They do not exclude an incidence with additional cross-block coupling.
 
 ## 1. The filtered polynomial
@@ -192,4 +194,4 @@ a nonzero polynomial divisible by per_n(X)-y. This works even if Q vanishes iden
 
 An even more general sufficient assumption is uniform NP_C membership for the zero set of a six-term weighted sum of N-variable quadratic resultants, with the six coefficients and systems supplied as inputs. The tensor specialization above is then a uniform polynomial reduction.
 
-No incidence for V(F_n), and no six-term additive resultant-value verifier, has been constructed here. Separate block incidences from Section 2 do not meet the assumption. The proposition identifies a concrete missing construction; it does not assert closure of resultant values under addition in NP_C.
+No incidence for V(F_n), and no six-term additive resultant-value verifier, has been constructed here. Separate block incidences from Section 2 do not meet the assumption. The proposition records the original sufficient hypothesis. The reviewed singular-witness argument now rules out that hypothesis under the imported lower bound; see the update at the start of this note.

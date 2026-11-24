@@ -1,6 +1,6 @@
 # A limitation of regular implicit witness systems
 
-Status: proved restricted observation; the singular extension at the end is unresolved. This is an implicit-function argument, not a proof of `P_C != NP_C`.
+Status: proved restricted observation. The formerly unresolved singular extension is now proved in [SINGULAR_WITNESS.md](SINGULAR_WITNESS.md). This is an implicit-function argument, not a proof of `P_C != NP_C`.
 
 ## 1. Exact hypothesis
 
@@ -84,10 +84,10 @@ If the first coordinate of `Z_epsilon` converges uniformly on compact subsets of
 
 The fixed polydisc and locally uniform convergence are substantive hypotheses. Convergence of root values separately at each parameter point is not enough.
 
-## 5. Unresolved singular extension
+## 5. The singular extension is now proved
 
-A possible stronger statement would replace the invertible-Jacobian assumption by the existence of a generically finite incidence component projecting to the polynomial graph, and conclude a polynomial **border** circuit. One might try to cut positive-dimensional witness fibers, perturb a square system to have simple roots, use arbitrary Laurent-series root constants at a generic parameter point, and then run the truncated Newton construction.
+The original checkpoint left a specific gap: a singular witness system needed a perturbation on one fixed input polydisc whose bounded Taylor coefficients converge to the intended graph. Pointwise convergence of root values was insufficient.
 
-The missing proof is not the Newton computation over a Laurent-series field. It is the existence of a perturbation branch whose Taylor coefficients in the input parameters specialize coefficientwise to the desired polynomial graph, with the needed component retained and without a hidden complexity dependence on its multiplicity or elimination degree. Proposition 2 gives an analytic sufficient condition, but proving that condition from an arbitrary existential presentation requires further work. Pointwise convergence of values alone does not establish it.
+[SINGULAR_WITNESS.md](SINGULAR_WITNESS.md) now supplies that argument. Generic witness slices and square linear combinations isolate a local graph component. A finite proper holomorphic map provides a fixed neighborhood; a generic scalar perturbation avoids its discriminant. Properness gives locally uniform convergence, and truncated Newton iteration gives polynomial-size circuits for every fixed Taylor order. The coefficientwise limit has polynomial border complexity, independently of multiplicity and elimination degree.
 
-No general singular-extension theorem is used in the research package. No claim is made here that all low-degree NP_C-definable graphs or all low-degree projected incidence components are border-easy.
+The stronger statement needs border complexity, whereas Proposition 1 gives an exact circuit in the regular case. Its application excludes polynomial-size existential presentations of the permanent graph under the imported border lower bound. It does not separate P_C from NP_C.

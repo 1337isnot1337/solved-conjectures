@@ -28,5 +28,11 @@
     "url": "https://bhargavcs.github.io/files/resultants-and-etr.pdf",
     "bytes": 1143731,
     "sha256": "8827709bc587c83f36a4ee5b958a624e5fcec3d03403ad846f24cb02037f8271"
+  },
+  {
+    "name": "riemenschneider-ch06.pdf",
+    "url": "https://www.math.uni-hamburg.de/home/riemenschneider/bookchap06.pdf",
+    "bytes": 1785073,
+    "sha256": "f7016ed0fb321313a6b300b122dd60806e3ac820d0afd3f226cdc3c61c5cd154"
   }
 ]
