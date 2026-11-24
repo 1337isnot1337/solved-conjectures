@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24 — Hartke–Stolee–West–Yancey matching-excess conjecture
+
+Saved the first checked Lean checkpoint for the existing entry: eight general modules covering binary arithmetic and actual graph-count foundations. Fresh strict builds, the complete owned/private axiom audit and exact stock replay passed. The extremal-constant and tail-minimum conclusions remain unformalized, so the completion count stays zero. The source argument and original authors are preserved. The existing main entry is mirrored into research between Malek and Fan–Tringali, following their established relative order on main; all unaffected research rows, statuses and relative positions are preserved, and the ranked four-column table is rebalanced. The [scope](results/hartke-stolee-west-yancey-matching-excess/FORMALIZATION.md) and [receipt](docs/verification/lean-hartke-matching-excess-partial-20261124-162051/receipt.json) record the exact remaining obligations and separate the scoped proof pass from aggregate dependency, hosted and deployment status.
+
 ## 2026-11-24 — Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
 
 Repaired the research catalogue references for the existing mixed upper/lower Lüroth entry: added its missing CONTENTS and status-summary rows, status alias, and ranked README link. The verified endpoint/gap, linked-refinement and compact-upper-cylinder scope remains partial; zero-tail repair and lower inclusion are still open. No proof source or completion claim changed. Its research position is between Ulas and Natalchenko–Sagdeev, following the corresponding main ordering among these existing entries; the four-column halves were rebalanced and every unaffected relative order and status retained. This repairs the exact research site build’s missing-entry failure after the Fan–Tringali integration.

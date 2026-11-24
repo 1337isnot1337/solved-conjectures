@@ -1,3 +1,11 @@
+import Conjectures.HartkeMatchingExcessDigits
+import Conjectures.HartkeMatchingExcessDivision
+import Conjectures.HartkeMatchingExcessSplit
+import Conjectures.HartkeMatchingExcessPaths
+import Conjectures.HartkeMatchingExcessCounts
+import Conjectures.HartkeMatchingExcessEdges
+import Conjectures.HartkeMatchingExcessBits
+import Conjectures.HartkeMatchingExcess
 import Conjectures.FerroniHigashitaniBox
 import Conjectures.FerroniHigashitaniRefined
 import Conjectures.FerroniHigashitaniGeometry

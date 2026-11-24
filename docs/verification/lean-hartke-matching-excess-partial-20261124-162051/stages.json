@@ -1,0 +1,159 @@
+[
+  {
+    "name": "Conjectures.HartkeMatchingExcessDigits",
+    "command": [
+      "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+      "-j1",
+      "-M4000",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessDigits.olean",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/Conjectures/HartkeMatchingExcessDigits.lean"
+    ],
+    "started_utc": "2026-11-24T18:28:48.516979+00:00",
+    "elapsed_seconds": 2.995,
+    "exit_code": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "Conjectures.HartkeMatchingExcessDivision",
+    "command": [
+      "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+      "-j1",
+      "-M4000",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessDivision.olean",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/Conjectures/HartkeMatchingExcessDivision.lean"
+    ],
+    "started_utc": "2026-11-24T18:28:51.511981+00:00",
+    "elapsed_seconds": 9.973,
+    "exit_code": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "Conjectures.HartkeMatchingExcessSplit",
+    "command": [
+      "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+      "-j1",
+      "-M4000",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessSplit.olean",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/Conjectures/HartkeMatchingExcessSplit.lean"
+    ],
+    "started_utc": "2026-11-24T18:29:01.486721+00:00",
+    "elapsed_seconds": 3.577,
+    "exit_code": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "Conjectures.HartkeMatchingExcessPaths",
+    "command": [
+      "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+      "-j1",
+      "-M4000",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessPaths.olean",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/Conjectures/HartkeMatchingExcessPaths.lean"
+    ],
+    "started_utc": "2026-11-24T18:29:05.064559+00:00",
+    "elapsed_seconds": 3.158,
+    "exit_code": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "Conjectures.HartkeMatchingExcessCounts",
+    "command": [
+      "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+      "-j1",
+      "-M4000",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessCounts.olean",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/Conjectures/HartkeMatchingExcessCounts.lean"
+    ],
+    "started_utc": "2026-11-24T18:29:08.223844+00:00",
+    "elapsed_seconds": 2.891,
+    "exit_code": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "Conjectures.HartkeMatchingExcessEdges",
+    "command": [
+      "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+      "-j1",
+      "-M4000",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessEdges.olean",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/Conjectures/HartkeMatchingExcessEdges.lean"
+    ],
+    "started_utc": "2026-11-24T18:29:11.115322+00:00",
+    "elapsed_seconds": 1.624,
+    "exit_code": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "Conjectures.HartkeMatchingExcessBits",
+    "command": [
+      "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+      "-j1",
+      "-M4000",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcessBits.olean",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/Conjectures/HartkeMatchingExcessBits.lean"
+    ],
+    "started_utc": "2026-11-24T18:29:12.740000+00:00",
+    "elapsed_seconds": 1.334,
+    "exit_code": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "Conjectures.HartkeMatchingExcess",
+    "command": [
+      "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+      "-j1",
+      "-M4000",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/.lake/build/lib/lean/Conjectures/HartkeMatchingExcess.olean",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean/Conjectures/HartkeMatchingExcess.lean"
+    ],
+    "started_utc": "2026-11-24T18:29:14.073842+00:00",
+    "elapsed_seconds": 1.575,
+    "exit_code": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "all-owned-audit",
+    "command": [
+      "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+      "-j1",
+      "-M4000",
+      "-DwarningAsError=true",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/Audit.lean"
+    ],
+    "started_utc": "2026-11-24T18:29:15.723961+00:00",
+    "elapsed_seconds": 4.42,
+    "exit_code": 0,
+    "log_sha256": "d739b7e0e16407bbb288b23415feeb9b8489d29913fb82a1521e3aa822c672b3"
+  },
+  {
+    "name": "stock-kernel-replay",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/tmp/cinna-lean-162051/repo/scripts/replay_lean.py",
+      "--lean-dir",
+      "/tmp/cinna-lean-162051/hartke/checkpoint-001/lean",
+      "--root",
+      "Conjectures.HartkeMatchingExcess"
+    ],
+    "started_utc": "2026-11-24T18:29:20.146431+00:00",
+    "elapsed_seconds": 17.52,
+    "exit_code": 0,
+    "log_sha256": "aa0540882bcaf7354c372895765b1ebb76afaa1032bc49aeb6d0744e918f3da3"
+  }
+]

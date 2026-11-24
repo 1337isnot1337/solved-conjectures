@@ -1,5 +1,9 @@
 # Verification
 
+## Hartke–Stolee–West–Yancey matching-excess conjecture
+
+The [eight-module checkpoint](../results/hartke-stolee-west-yancey-matching-excess/FORMALIZATION.md) proves binary-weight subadditivity, the sparse Mersenne-division bound, actual split-graph matching and path-permutation bijections, the return-path counting formula, and the base-edge cardinality. All eight strict builds, the all-owned audit of 179 declarations (152 theorems, 19 private declarations and ten required endpoints), and exact stock-kernel replay passed. [Receipt](verification/lean-hartke-matching-excess-partial-20261124-162051/receipt.json). The graph witnesses, extremal constants and tail-minimum divergence remain unformalized. This is incomplete and contributes zero complete results.
+
 ## Németh–Seberry–Shu conjecture
 
 The [target receipt](verification/lean-nemeth-seberry-shu-20261124/receipt.json)

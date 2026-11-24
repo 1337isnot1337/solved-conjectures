@@ -9,6 +9,16 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `HartkeMatchingExcess.binaryWeight_add_le,
+    `HartkeMatchingExcess.mersenne_dvd_binaryWeight_le,
+    `HartkeMatchingExcess.mersenne_division_weight_bound,
+    `HartkeMatchingExcess.input_lt_of_excess_bounds,
+    `HartkeMatchingExcess.perfectMatchingCount_splitGraph,
+    `HartkeMatchingExcess.returnFiberEquiv,
+    `HartkeMatchingExcess.pathCount_rec,
+    `HartkeMatchingExcess.perfectMatchingCount_returnGraph,
+    `HartkeMatchingExcess.baseGraph_edge_card,
+    `HartkeMatchingExcess.binaryPositions_sum,
     `FerroniHigashitani.oldPoint_idp,
     `FerroniHigashitani.refined_closed_translate,
     `FerroniHigashitani.refined_strict_translate,
@@ -10736,7 +10746,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["GravgaardLeeUpperLower.", "UlasDisjointSquareBlocks.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "UlasDisjointSquareBlocks.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do
