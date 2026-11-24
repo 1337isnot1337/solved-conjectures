@@ -1,0 +1,81 @@
+name: Wagner's conjecture
+on:
+  pull_request:
+    paths:
+      - 'lean/Conjectures/WagnerLaguerreOperator.lean'
+      - '.github/workflows/lean-wagner.yml'
+      - 'lean/lean-toolchain'
+      - 'lean/lake-manifest.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Strict source compilation
+        working-directory: lean
+        run: |
+          mkdir -p .lake/build/lib/lean/Conjectures
+          lake env lean -j1 -DwarningAsError=true -o .lake/build/lib/lean/Conjectures/WagnerLaguerreOperator.olean Conjectures/WagnerLaguerreOperator.lean
+      - name: Generate all-owned axiom audit
+        run: |
+          python3 - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, 'scripts')
+          import audit_lean_all_owned as audit
+          module = 'Conjectures.WagnerLaguerreOperator'
+          required = ['WagnerLaguerre.' + n for n in [
+              'approximants_localUniform', 'approximants_shiftedRoots',
+              'witness_shiftedPositive', 'firstLaguerre_not_positive',
+              'wagner_conjecture_false']]
+          Path('lean/WagnerTargetAudit.lean').write_text(
+              audit.audit_source([module], required, ['WagnerLaguerre.']))
+          PY
+      - name: All-owned axiom audit
+        working-directory: lean
+        run: |
+          set -o pipefail
+          lake env lean -j1 -DwarningAsError=true WagnerTargetAudit.lean | tee ../wagner-audit.log
+      - name: Validate audit inventory
+        run: |
+          python3 - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, 'scripts')
+          import audit_lean_all_owned as audit
+          module = 'Conjectures.WagnerLaguerreOperator'
+          required = ['WagnerLaguerre.' + n for n in [
+              'approximants_localUniform', 'approximants_shiftedRoots',
+              'witness_shiftedPositive', 'firstLaguerre_not_positive',
+              'wagner_conjecture_false']]
+          result = audit.validate_log(
+              Path('wagner-audit.log').read_text(),
+              {'modules': [module], 'required': required, 'legacy_prefixes': ['WagnerLaguerre.']},
+              {module: False})
+          print(result['summary'])
+          PY
+      - name: Replay exact local import closure using stock kernel
+        working-directory: lean
+        run: lake env python3 ../scripts/replay_lean.py --root Conjectures.WagnerLaguerreOperator
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: wagner-axiom-audit
+          path: wagner-audit.log
