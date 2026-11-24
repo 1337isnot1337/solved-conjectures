@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Rowland–Sistos Barrón conjecture
+
+`RowlandSistosBarron.rowland_sistos_barron_counterexample` proves the full recorded counterexample using the literal integer sequence and its minimum tail-recurrence ranks. The exponential-polynomial independence and minimal annihilator, all coefficient cancellations and their exact counts, and the unbounded square obstruction are proved. The [statement audit](../results/rowland-sistos-barron/LEAN_STATUS.md) maps each mathematical object to Lean and retains the source terminology qualification. All 17 project modules passed the three target verification gates; earlier partial records do not enlarge this scope.
+
 ## Johnson's conjecture
 
 `JohnsonPfaffian.johnson_conjecture_fin` proves the full Conjecture 7.1 for an arbitrary ordered `Fin (2*u)` tuple and every literal perfect matching. The new circular-factor normalization, adjacent-edge induction, terminating uncrossing and exact distance-kernel bridge discharge the former general-order gap. `CircularData.matching_bound` also proves the stronger circular interval-product theorem without an uncrossing assumption. The [entry audit](../results/johnson-pfaffian/LEAN-AUDIT.md) maps the proof to the recorded argument and preserves all original attribution and priority limits.

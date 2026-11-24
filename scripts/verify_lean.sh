@@ -4,6 +4,23 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.RowlandSistosBarronAnnihilator
+  Conjectures.RowlandSistosBarronCancellationCounts
+  Conjectures.RowlandSistosBarronCharacteristic
+  Conjectures.RowlandSistosBarronCoefficients
+  Conjectures.RowlandSistosBarronCoefficientsBasic
+  Conjectures.RowlandSistosBarronCoefficientsBounds
+  Conjectures.RowlandSistosBarronCoefficientsDegrees
+  Conjectures.RowlandSistosBarronCoefficientsDuality
+  Conjectures.RowlandSistosBarronCoefficientsExpansion
+  Conjectures.RowlandSistosBarronDifference
+  Conjectures.RowlandSistosBarronExponential
+  Conjectures.RowlandSistosBarronKrawtchouk
+  Conjectures.RowlandSistosBarronQuasipolynomial
+  Conjectures.RowlandSistosBarronRecurrence
+  Conjectures.RowlandSistosBarronSequence
+  Conjectures.RowlandSistosBarronSums
+  Conjectures.RowlandSistosBarronTheorem
   Conjectures.JohnsonPfaffian
   Conjectures.JohnsonPfaffianAllMatching
   Conjectures.JohnsonPfaffianCircular

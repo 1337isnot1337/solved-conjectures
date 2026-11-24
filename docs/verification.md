@@ -1,5 +1,9 @@
 # Verification
 
+## Rowland–Sistos Barrón conjecture
+
+The [complete closure receipt](verification/rowland-20261124/receipt.json), finished 24 November 2026 at 17:09:57 UTC, records 17 fresh strict module builds, the unchanged audit of 286 owned declarations (261 theorems and five private declarations), 11 required endpoints, and complete stock-kernel replay. The only transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The `lean-rowland-sistos-barron.yml` workflow reproduces the target gate. The whole-repository gate and hosted deployment remain separate. The [exact supplemental checker](verification/rowland-20261124/supplementary-check.json) was rerun through exponent 180 and supplies no assumption to the unbounded proof.
+
 ## Johnson's conjecture
 
 The [complete closure receipt](verification/johnson-20261124/receipt.json), finished 24 November 2026 at 17:06:28 UTC, records thirty fresh strict module compilations, the unchanged audit of all 1,195 owned declarations (1,006 theorems and 28 private declarations), eight required endpoints, and unchanged stock-kernel replay. It checks the full finite-tuple source statement and the general circular-product theorem. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted.
