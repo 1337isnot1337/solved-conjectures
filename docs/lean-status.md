@@ -126,6 +126,7 @@ proofs are documented separately in the catalogue and result package.
 | Rossi’s permutohedron characteristic-polynomial conjecture | Not formalized | Proof of the exact all-n root intervals in Conjecture 6.16, by a uniform alternating sign grid with an exact finite initial bridge. No q-deformation claim. |
 | Ferroni–Higashitani’s first-three interior Ehrhart question | Not formalized | A very ample, IDP counterfamily fails at the first three interior counts, answering Question 5.12(a). The already resolved part (b) is distinct. |
 | Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture | Not formalized | Refutes the exact relaxed-seam unpinned conjecture and proves positivity for standard periodic partition boundaries. |
+| Higashitani–Kummer–Michałek’s canonical-line conjecture | Not formalized | Refutes both the canonical-line and interlacing assertions with exact complete-multipartite graph witnesses. |
 | Cyrusian–Kaplan’s ordinarization quasipolynomial question | Not formalized | Proves a genus quasipolynomial for every fixed ordinarization number, valid at every positive genus, and eventual strict monotonicity. |
 | Coulangeon–Lazzarini’s two-shell conjecture | Not formalized | Analytic counterexample and arbitrary-delay families, with independent exact enumeration of the dimension-ten witness. |
 | Alexandersson’s parking-function excedance conjecture | Not formalized | Exact integer and rational counterexample at length 17; two independent counting recurrences. |
