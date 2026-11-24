@@ -32,6 +32,10 @@ What remains to be proved is at least one of the following, with polynomial size
 
 Choosing a matching verifies one term of a permanent. It does not verify their sum. A coefficient of a resultant is not automatically a boundary component. A projection of an algebraic set does not come with a small circuit for its elimination polynomial.
 
+## Exclusion-complexity reduction and zero-testing
+
+The [resultant exclusion-complexity note](RESULTANT_EXCLUSION.md) gives a sufficient all-multiple lower-bound target for the nonuniform complex BSS separation, explains the exponential-degree obstacle in the known factor theorem, and proves an elementary irreducibility lemma leading to a conditional superpolynomial bound for deciding whether the permanent equals zero. These deductions are *not* a proof of the BSS separation.
+
 ## Source and verification scope
 
 The [source audit](SOURCE_AUDIT.md) records theorem numbers, version changes, the uniform/nonuniform distinction, and the direction of Bürgisser's Theorem 1.1 versus Conjecture 1.1. The [source manifest](SOURCES.json) records the inspected PDF hashes.

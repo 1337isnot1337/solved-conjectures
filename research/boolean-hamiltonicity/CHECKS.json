@@ -45,5 +45,6 @@
   },
   "readme_sha256": "cc236b5c425780d1fb88ad50afee69c2ad9319c0f46e2534cd6c5a70c9f2c8f6",
   "verification_scope": "Exact finite regression checks and internal written review only. No Lean build and no verification of P != NP.",
-  "metadata_note": "After the finite checks, SOURCES.md was clarified to identify Hrubes\u2019s paper-specific size-hardness definition; no proof or verifier changed in that clarification."
+  "metadata_note": "After the finite checks, SOURCES.md was clarified to identify Hrubes\u2019s paper-specific size-hardness definition; no proof or verifier changed in that clarification.",
+  "readme_rechecked_after_main_integration_at_utc": "2026-11-24T00:01:50.284989+00:00"
 }
