@@ -1,0 +1,22 @@
+name: Export public proof sources for local verification
+on:
+  push:
+    branches: [lean-source-export-20261123]
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Create a source-only archive
+        run: git archive --format=tar.gz -o lean-project-public-source.tar.gz HEAD lean results scripts docs/lean-status.md README.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lean-project-public-source
+          path: lean-project-public-source.tar.gz
+          compression-level: 0
+          retention-days: 1
