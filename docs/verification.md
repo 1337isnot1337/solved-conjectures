@@ -799,3 +799,7 @@ Run `python3 results/xu-zhou-laplacian-diameter/check.py` for exact rational ine
 ## Random subset sums and simultaneous spherical harmonics
 
 The [mixed-group threshold proof](../results/ma-tang-random-subset-sums/PROOF.md), its [remainder supplement](../results/ma-tang-random-subset-sums/BOUNDED-REMAINDER.md) and [Han’s simultaneous saturation proof](../results/han-spherical-harmonic-saturation/PROOF.md) are analytic arguments independently checked against their primary sources. No finite-range search or Lean proof is used.
+
+## Permutation word mixing and small eigenfunction norms
+
+[Féray’s word-measure proof](../results/feray-conjugate-power-word/PROOF.md) and its [sharp-rate supplement](../results/feray-conjugate-power-word/SHARP-RATE.md), as well as the [spherical basis construction](../results/steinerberger-small-average-eigenfunction-norms/PROOF.md) and its [per-mode extension](../results/steinerberger-small-average-eigenfunction-norms/POINTWISE.md), are analytic arguments with independent source and proof audits.

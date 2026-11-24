@@ -80,8 +80,10 @@ proofs are documented separately in the catalogue and result package.
 | Hajdu–Sárközy’s shifted-product total primitivity conjecture | Not formalized | Proves the original bivariate claim for the remaining coprime exponents using a summable union of scaled power sets; non-coprime exponents were known. |
 | Hegyvári’s conjecture | Not formalized | Proves strong completeness of the two-ray set across the remaining rational ratios that are not powers of two, with exact strong-completeness obstructions. |
 | Ma–Tang’s random subset-sum threshold conjecture | Not formalized | Proves the sharp universal second-order coefficient, with an independently audited bounded-remainder match along orders three times a power of two. |
+| Féray’s conjugate-power word-measure conjectures | Not formalized | Proves both cycle limits and total-variation mixing for the stated permutation word, with sharp distance asymptotic e⁻¹/(n−1). |
 | Xu–Zhou’s diameter–Laplacian conjecture | Not formalized | Proves the complete parameterized bound for the high Laplacian spectrum of a graph of given diameter, including the closed endpoint. |
 | Han’s simultaneous spherical-harmonic saturation question | Not formalized | Constructs one real orthonormal basis per degree attaining both sharp Lᵖ growth regimes for every basis vector simultaneously. |
+| Steinerberger’s small-average eigenfunction norm question | Not formalized | Refutes the proposed near-linear lower bound and constructs real spherical bases with optimal aggregate and per-mode L¹ sizes. |
 | Pomerance–Sárközy’s fluctuation conjecture | Not formalized | Proves the density-one refinement and the quarter-power Gaussian law for the count associated with n plus its distinct prime factors. |
 | Ulas’s disjoint-block square-product conjecture | Not formalized | For every fixed common block length, proves infinitely many disjoint square-product collections at every sufficiently large fixed number of blocks. |
 | Kovalev’s linear Lipschitz clustering questions | Not formalized | Constructs convex-hull-preserving finite-subset retractions with a dimension-free linear Lipschitz bound, uniformly for every target size. |
