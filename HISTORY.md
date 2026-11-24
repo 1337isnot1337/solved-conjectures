@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Publish four previously reviewed research results
+
+Promoted [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/), [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/), [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/), [Rowland–Sistos Barrón conjecture](results/rowland-sistos-barron/). The written arguments and prior independent reviews were checked against the original statements. The Cardon rational discriminant and Rowland exact replay through M=100 passed. The Wagner statement is pinned to the author preprint; the Rowland interpretation of pseudo-polynomial is disclosed. No Lean verification or exclusive priority is claimed. Original research records are preserved.
+
 ## 2026-11-24: Publish two independently reviewed counterexample packages
 
 The [Caiolo–Ferroni–Hoster](results/caiolo-ferroni-hoster/) and [Higashitani–Kummer–Michałek](results/hkm-ehrhart/) research candidates pass an internal mathematical audit against their original statements and exact-arithmetic replays. Each refutes the whole stated universal conjecture (including its accompanying extension or second clause); each is counted once. The source proofs and verifier blobs are preserved, with review and provenance recorded separately. No Lean verification, external referee approval, or exclusive priority is claimed. Issues [#111](https://github.com/1337isnot1337/solved-conjectures/issues/111) and [#316](https://github.com/1337isnot1337/solved-conjectures/issues/316) track discovery and publication.

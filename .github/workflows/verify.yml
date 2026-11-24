@@ -207,3 +207,7 @@ jobs:
           python3 results/circular-index-complete-minus-edges/verify_seq.py
       - name: Check the wild-number conditions for complete graphs with n at least 155
         run: python3 results/wild-number-complete-graphs/verify.py
+      - name: Check Cardon cubic and Rowland rank-sequence certificates
+        run: |
+          python3 results/cardon-zero-sector/verify.py
+          python3 results/rowland-sistos-barron/verify.py --max-exponent 100
