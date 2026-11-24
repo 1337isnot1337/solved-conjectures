@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Mazák–Zrubák conjecture on complete graphs minus an edge
+
+The actual real circular coloring reduction and Hall construction of a spanning order of every actual edge are checked in sixteen modules (ten new, six reused). Strict builds, the complete audit of 526 declarations (417 theorems, zero private declarations, twelve required endpoints), and exact stock-kernel replay passed. Only `propext`, `Classical.choice`, and `Quot.sound` occur. Steps 4–8 and the final index equality remain outside this checkpoint; the result is incomplete and its complete-result count is zero. [Scope](../results/circular-index-complete-minus-edge/FORMALIZATION.md), [independent review](../results/circular-index-complete-minus-edge/LEAN_REVIEW.md), and [receipt](verification/lean-circular-complete-minus-edge-partial-20261124-162051/receipt.json).
+
 ## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
 
 The [four-module partial](../results/stern-half-plane/FORMALIZATION.md) verifies the actual Stern recurrence and polynomial evaluation, the Schinzel identity, all-odd-index run coverage, and nonvanishing for every positive index under an explicit common-parabola hypothesis. All strict source builds, the owned/private audit of 134 declarations (105 theorems, 14 private declarations and eight required endpoints), and exact stock replay passed. The [independent review](../results/stern-half-plane/LEAN_REVIEW.md) and [receipt](verification/lean-stern-half-plane-partial-20261124-162051/receipt.json) preserve the exact scope. The near-one estimates, compact certificate and separate exterior proof remain unformalized; count zero.

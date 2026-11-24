@@ -1,0 +1,63 @@
+{
+  "status": "preflight passed; no Lean build, audit, or kernel replay run",
+  "source_sha256": {
+    "Conjectures/CircularIndexBase.lean": "6fec8a6725b419ca5e30102d565481899564ff9d9e719d1e4cf77827a8df01dd",
+    "Conjectures/CircularIndexCirculant.lean": "e6758bb9c9a34541d2e1b30446b64853a585aab57d0b5a2062a7a538e5bee368",
+    "Conjectures/CircularIndexClassArithmetic.lean": "df444c47e78789603da8dcbbcab02485a7c13a53216a7b861e3a3c9daa6b7d75",
+    "Conjectures/CircularIndexColoring.lean": "d925a1341f425da59e7b6916e36f581c4ef05daa353294dc68f6736da1685be7",
+    "Conjectures/CircularIndexCounting.lean": "5354b07c1a05d6de1405fb6f868b118430af667914b6260d758c335d1d541b6e",
+    "Conjectures/CircularIndexReal.lean": "b98526201e298e4f15a6db6c820d9bf04a9431b0ecb17c8c6e499b519bad1bcf",
+    "Conjectures/CircularCompleteMinusEdgeAcyclic.lean": "508f52b0a04d7bb50c4ce5b62f664cc3cd5fd0cbceef7b2673b28a3609d69e6e",
+    "Conjectures/CircularCompleteMinusEdgeMatchings.lean": "60268e5f979f7674fbacbc5fd187598626d42367fb73ad17c7fa57fcaeb621a7",
+    "Conjectures/CircularCompleteMinusEdgeClasses.lean": "a6a03b659caed16852e6b6c519df7a6a8bbc87a5975921b47df63517cacc4a0d",
+    "Conjectures/CircularCompleteMinusEdgeRotation.lean": "bb7fda7ac52d81651b93e8f3680ae164287f0c0295d58b69cb153b3c673bd723",
+    "Conjectures/CircularCompleteMinusEdgeLevels.lean": "d8a2481236709424640d5b884612ec109c0766b8dd9c2020a2ae7bc6b0162855",
+    "Conjectures/CircularCompleteMinusEdgeSources.lean": "948911898400d32f0850bc0a063918b0e9f7f055c12b83375b2f9b2a2f8c8477",
+    "Conjectures/CircularCompleteMinusEdgePath.lean": "d1a181404d749e05cdba1e33118542e618d1346f8c0206fbd1657686968f0717",
+    "Conjectures/CircularCompleteMinusEdgeTransversals.lean": "ea3d14464057b3fb5a4a901020fafa356f1c9c92205b52cbbb761d493463dbe1",
+    "Conjectures/CircularCompleteMinusEdgeGraph.lean": "97be622c2fd1e6fea4b4cfdbbfeda102a2146180acff63ffbe7167c832f87714",
+    "Conjectures/CircularCompleteMinusEdgeOrder.lean": "e8cd25b6f8b71a004f591ec8bebcc717e8d3e24dd59494e69c2fc4a36d03d7b5"
+  },
+  "control_sha256": {
+    "scripts/verify_circular_complete_minus_edge.py": "c4a7b0acb9c661c54490caaaf855b4cca880dcfc729072f84ac85755bf0af64a",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/replay_lean_parallel.py": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089"
+  },
+  "project_modules": [
+    "Conjectures.CircularIndexBase",
+    "Conjectures.CircularIndexCirculant",
+    "Conjectures.CircularIndexClassArithmetic",
+    "Conjectures.CircularIndexColoring",
+    "Conjectures.CircularIndexCounting",
+    "Conjectures.CircularIndexReal",
+    "Conjectures.CircularCompleteMinusEdgeAcyclic",
+    "Conjectures.CircularCompleteMinusEdgeMatchings",
+    "Conjectures.CircularCompleteMinusEdgeClasses",
+    "Conjectures.CircularCompleteMinusEdgeRotation",
+    "Conjectures.CircularCompleteMinusEdgeLevels",
+    "Conjectures.CircularCompleteMinusEdgeSources",
+    "Conjectures.CircularCompleteMinusEdgePath",
+    "Conjectures.CircularCompleteMinusEdgeTransversals",
+    "Conjectures.CircularCompleteMinusEdgeGraph",
+    "Conjectures.CircularCompleteMinusEdgeOrder"
+  ],
+  "required_theorems": [
+    "CircularCompleteMinusEdge.floorColoring_wellFounded",
+    "CircularCompleteMinusEdge.graph_edge_card_parameter",
+    "CircularCompleteMinusEdge.circularChromaticIndex_le_card",
+    "CircularCompleteMinusEdge.matching_transversal",
+    "CircularCompleteMinusEdge.ProperColoring.exists_deficient_class",
+    "CircularCompleteMinusEdge.exists_normalized_coloring",
+    "CircularCompleteMinusEdge.ProperColoring.source_unique",
+    "CircularCompleteMinusEdge.ProperColoring.sink_unique",
+    "CircularCompleteMinusEdge.PathMatching.level_lt_of_relation",
+    "CircularCompleteMinusEdge.exists_pathMatching",
+    "CircularCompleteMinusEdge.exists_linearEdgeOrder",
+    "CircularCompleteMinusEdge.real_coloring_gives_linear_order"
+  ],
+  "fresh_proof_verification_claimed": false
+}

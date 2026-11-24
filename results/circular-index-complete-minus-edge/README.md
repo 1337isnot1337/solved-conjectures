@@ -4,7 +4,7 @@
 
 **Status:** Written proof for every even $`d\ge 6`$. It has been through one independent referee pass by a second model instance, which found no mathematical error; the justifications it asked for are included. The note is otherwise unrefereed. The finite checks cover $`d=4`$ and $`d=6`$ only.
 
-**Lean status:** none. No Lean formalization is included.
+**Lean status:** partial. The actual real-coloring reduction and the Hall construction of a spanning edge order (Steps 1–3) have passed strict Lean builds, the complete declaration audit, and exact stock-kernel replay. The actual run/table construction, Steps 4–8, and the final circular-index equality remain outside this checkpoint. [Formalization scope](FORMALIZATION.md) · [Independent Lean review](LEAN_REVIEW.md). No complete formalization is counted.
 
 Primary source: J. Mazák and F. Zrubák, *Circular chromatic index of small graphs*, [arXiv:2603.08822](https://arxiv.org/abs/2603.08822), Conjecture 2.
 
@@ -38,6 +38,9 @@ Optional checks, not run by CI:
 - [`review/`](review) contains the scripts of the referee pass, which share no code with the two above. [`d4_check.py`](review/d4_check.py) checks every statement from Lemma 2 to Lemma 7 on all 180 acyclic colourings of $`K_5-e`$. [`sat_levels.py`](review/sat_levels.py), run as `python3 results/circular-index-complete-minus-edge/review/sat_levels.py 4 6`, is a second SAT check from the definition with a different encoding and needs `python-sat`. [`relaxed.py`](review/relaxed.py), run as `python3 results/circular-index-complete-minus-edge/review/relaxed.py 3 4 5`, tests the implications of Lemmas 6 and 7 on relaxed configurations. [`arith.py`](review/arith.py) checks the arithmetic identities for $`3\le h\le 20`$.
 
 ## Files
+
+- [`FORMALIZATION.md`](FORMALIZATION.md): exact partial Lean scope, source correspondence, verification, and remaining obligations.
+- [`LEAN_REVIEW.md`](LEAN_REVIEW.md): independent review of the frozen Steps 1–3 checkpoint.
 
 - [`PROOF.md`](PROOF.md): statement, proof, the remark on $`d=4`$, the verification summary and sources.
 - [`verify.py`](verify.py): standard-library check of the lemmas for $`d=4`$ and of the ordering obstruction for $`d=6`$.

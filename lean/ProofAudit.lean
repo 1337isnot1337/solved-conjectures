@@ -9,6 +9,18 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `CircularCompleteMinusEdge.floorColoring_wellFounded,
+    `CircularCompleteMinusEdge.graph_edge_card_parameter,
+    `CircularCompleteMinusEdge.circularChromaticIndex_le_card,
+    `CircularCompleteMinusEdge.matching_transversal,
+    `CircularCompleteMinusEdge.ProperColoring.exists_deficient_class,
+    `CircularCompleteMinusEdge.exists_normalized_coloring,
+    `CircularCompleteMinusEdge.ProperColoring.source_unique,
+    `CircularCompleteMinusEdge.ProperColoring.sink_unique,
+    `CircularCompleteMinusEdge.PathMatching.level_lt_of_relation,
+    `CircularCompleteMinusEdge.exists_pathMatching,
+    `CircularCompleteMinusEdge.exists_linearEdgeOrder,
+    `CircularCompleteMinusEdge.real_coloring_gives_linear_order,
     `Conjectures.SternHalfPlane.stern_shift,
     `Conjectures.SternHalfPlane.stern_runIndex,
     `Conjectures.SternHalfPlane.exists_runIndex,
@@ -10786,7 +10798,7 @@ run_cmd do
   for name in required do
     let _ ← getConstInfo name
   let allowed : Array Name := #[`propext, `Classical.choice, `Quot.sound]
-  let prefixes := #["Conjectures.SternHalfPlane.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "UlasDisjointSquareBlocks.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
+  let prefixes := #["CircularCompleteMinusEdge.", "Conjectures.SternHalfPlane.", "HartkeMatchingExcess.", "GravgaardLeeUpperLower.", "UlasDisjointSquareBlocks.", "FanTringali.", "ChenKhareSahi.", "SolitaireCounterexample.", "SolitaireGeneral.", "War.", "Denominator.", "DenominatorDynamics.", "Egyptian.", "CutFamily.", "BinaryAutomata.", "CutPeriod.", "FiniteCertificate.", "PackingFourPoint.", "CutGeneral.", "Loneliness.", "NonmixedGap.", "SymmetricFourPoint.", "Haralambis.", "ThreeDistanceGraph.", "RectangleFinite.", "RectanglePartitions.", "RectangleEuler.", "LineSize.", "BabaiPathSpectrum.", "CircularIndex.", "BernardiMorales.", "OravcovaSotak."]
   let env ← getEnv
   let mut count : Nat := 0
   for (name, info) in env.constants.toList do

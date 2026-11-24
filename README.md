@@ -45,7 +45,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **33.** [Novelli–Thibon's conjecture](results/novelli-thibon/) | ⬜ | **67.** [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |
 | **34.** [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ✅ | **67.** [Baricz–Pogány's asymptotic-coefficient positivity conjecture](results/baricz-pogany-coefficients/) | ✅ |
 | **34.** [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ✅ | **72.** [Chow's conjecture](results/chow-conjecture/) | ✅ |
-| **36.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | ⬜ | **73.** [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ✅ |
+| **36.** [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | 🟡 | **73.** [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ✅ |
 | **36.** [Circular chromatic index of complete graphs minus a few edges](results/circular-index-complete-minus-edges/) | ⬜ |  |  |
 
 Read down the left pair of columns, then down the right pair. Numbers are approximate editorial importance ranks based on mathematical significance, breadth, and consequences, not recency or Lean status. Equal numbers indicate no clear distinction in importance; tied ranks use competition ranking (1, 2, 2, 4).
