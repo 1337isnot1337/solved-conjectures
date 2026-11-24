@@ -4,13 +4,13 @@
 
 Each entry links to the mathematical argument and its accompanying checks. The claims below retain the scope stated in the notes; formalization status is tracked separately.
 
-## Applications of imported complexity theorems (not solved conjectures)
-
-- **Weighted counting for bounded-occurrence 3-CNF.** Explicit polynomial-time construction with O(n^3) variables and clauses, width at most three, and at most three literal occurrences of each variable. The weighted satisfying-assignment polynomial projects to the directed Hamiltonian-cycle polynomial over every field. VNP-completeness follows from Valiant's theorem. Adopting Anthropic's November 23, 2026 VP ≠ VNP result as valid under the repository's [standing research assumption](AGENTS.md#standing-research-assumption-anthropics-vp-versus-vnp-proof), its superpolynomial border-circuit lower bound transfers to the weighted 3-CNF family. This does not resolve an additional named conjecture. [Proof and scope](research/vp-vnp-bounded-occurrence-3cnf/README.md) · [Verifier](research/vp-vnp-bounded-occurrence-3cnf/verify_reduction.py).
+## Major theorem consequences (not separately solved conjectures)
 
 | Consequence | Exact scope | Verification and sources |
 | --- | --- | --- |
 | [Quantitative permanent-graph decision lower bound](research/bss-permanent-graph/) | Every sufficiently large $`m`$ requires $`2^{\Omega((\log m)^{4/3})}`$ worst-case operations for exact complex $`+,-,\times,\div`$ equality computation trees deciding $`y=\mathop{\mathrm{per}}_m(X)`$, with arbitrary constants. The explicit border-circuit loss is $`K m^2\log(m+1)(T+1)`$; a specified nonscalar convention and uniform BSS simulation are also proved. | Written corollary of the pinned Anthropic Theorem 1.4 and corrected Bürgisser Remark 1.4(1), with three internal adversarial reviews. No Lean formalization of this deduction or $`\mathsf{NP}_{\mathbb C}`$ membership claim. [Proof](research/bss-permanent-graph/PROOF.md) · [Source audit](research/bss-permanent-graph/SOURCES.md) · [Review](research/bss-permanent-graph/REVIEW.md) · [Issue #247](https://github.com/1337isnot1337/solved-conjectures/issues/247) · [BSS campaign #248](https://github.com/1337isnot1337/solved-conjectures/issues/248) |
+
+- **Weighted counting for bounded-occurrence 3-CNF.** Explicit polynomial-time construction with O(n^3) variables and clauses, width at most three, and at most three literal occurrences of each variable. The weighted satisfying-assignment polynomial projects to the directed Hamiltonian-cycle polynomial over every field. VNP-completeness follows from Valiant's theorem. Adopting Anthropic's November 23, 2026 VP ≠ VNP result as valid under the repository's [standing research assumption](AGENTS.md#standing-research-assumption-anthropics-vp-versus-vnp-proof), its superpolynomial border-circuit lower bound transfers to the weighted 3-CNF family. This does not resolve an additional named conjecture. [Proof and scope](research/vp-vnp-bounded-occurrence-3cnf/README.md) · [Verifier](research/vp-vnp-bounded-occurrence-3cnf/verify_reduction.py).
 
 ## Open complexity research
 

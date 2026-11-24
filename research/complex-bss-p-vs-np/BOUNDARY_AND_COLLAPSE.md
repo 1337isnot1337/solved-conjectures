@@ -172,4 +172,3 @@ The review checked the following assertions in [PROTOCOL.md](PROTOCOL.md):
 - At `m=2`, `X=I_2`, moving all messages before challenges rejects the correct value `1`, because the terminal polynomial would need to depend on the first challenge without permission to do so.
 
 These checks establish the exact failures of two proposed quantifier reorderings. They do not preclude a different compressed protocol.
-

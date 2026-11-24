@@ -91,4 +91,3 @@ A possible stronger statement would replace the invertible-Jacobian assumption b
 The missing proof is not the Newton computation over a Laurent-series field. It is the existence of a perturbation branch whose Taylor coefficients in the input parameters specialize coefficientwise to the desired polynomial graph, with the needed component retained and without a hidden complexity dependence on its multiplicity or elimination degree. Proposition 2 gives an analytic sufficient condition, but proving that condition from an arbitrary existential presentation requires further work. Pointwise convergence of values alone does not establish it.
 
 No general singular-extension theorem is used in the research package. No claim is made here that all low-degree NP_C-definable graphs or all low-degree projected incidence components are border-easy.
-

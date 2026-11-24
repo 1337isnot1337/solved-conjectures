@@ -4,6 +4,10 @@
 
 Added [research notes](research/complex-bss-p-vs-np/README.md) for the full uniform complex BSS separation with arbitrary machine constants. The exact model/source audit was merged through [PR #252](https://github.com/1337isnot1337/solved-conjectures/pull/252). This checkpoint adds the sound growing-alternation weighted protocol, counterexamples to its immediate compressions, a boundary extraction lemma, the sub-log-log alternation threshold, explicit resultant and matching incidences, and multiplier/coordinate-weight obstructions. Exact symbolic checks validate the listed identities. The incidence and fixed-level hierarchy bridges remain unresolved; no separation, new solved-conjecture count, or Lean verification is claimed. The canonical graph lower bound is credited to [PR #249](https://github.com/1337isnot1337/solved-conjectures/pull/249), the Anthropic lower bound, and Bürgisser's factor transfer. [Tracking issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248).
 
+## 2026-11-23 — Put major theorem consequences immediately after solved results
+
+Moved the imported-theorem consequences directly below the root Results section and listed the quantitative BSS permanent-graph lower bound first. The catalogue now uses the same category and order. This increases visibility while keeping these consequences separate from the solved-conjecture count and preserving the distinction between the permanent-graph obstruction and the open $`\mathsf P_{\mathbb C}`$ versus $`\mathsf{NP}_{\mathbb C}`$ separation.
+
 ## 2026-11-23 — Dimension obstruction for cofactor-robust resultant jets
 
 Proved an orbit-dimension/vanishing-ideal lemma for the quadratic resultant: a special family of dimension $d$ and the natural two GL(n+1) symmetries cannot fill the resultant hypersurface when $d+2(n+1)^2<N_n-1$. An arbitrary nonzero cofactor can then mask all bounded-order jets on that orbit. [Research note](research/complex-bss-p-vs-np/SYMMETRY_JET_BARRIER.md). The result neither bounds the cofactor's circuit complexity nor separates complex P from NP.
