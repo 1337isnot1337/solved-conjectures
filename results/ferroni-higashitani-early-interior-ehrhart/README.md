@@ -5,6 +5,7 @@
 The construction refines a lattice in six cosets, preserving integer decomposition and moving the relevant interior counts to explicit box sums. It yields a 170-dimensional witness and arbitrarily large failure ratios.
 
 - [Complete proof](PROOF.md)
+- [Lean formalization](FORMALIZATION.md)
 - [Independent audit](AUDIT.md)
 - [Exact count checker](verify.py)
 - [Discovery issue #409](https://github.com/1337isnot1337/solved-conjectures/issues/409)

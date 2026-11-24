@@ -1,5 +1,9 @@
 # Verification
 
+## Ferroni–Higashitani’s first-three interior Ehrhart question
+
+The [scoped receipt](verification/lean-ferroni-higashitani-complete-20261124/receipt.json) covers the full `Conjectures.FerroniHigashitaniEhrhart` closure, including the closed and interior counts, the polynomial reflection identity, and the original inequality. Run `python3 scripts/verify_lean_target.py --root Conjectures.FerroniHigashitaniEhrhart --require FerroniHigashitani.question_5_12a --out /tmp/ferroni-lean` from the repository root with pinned Lean and Mathlib installed. The [aggregate workflow](../.github/workflows/lean.yml) uses the updated imports, audit endpoints, and replay registry. The exact Python checker remains a supplementary independent computation.
+
 ## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
 
 Complete for original Conjecture 2.6 and the stronger exact interval equality, for every k≥2. Lean constructs actual infinite expansions, proves the finite zero-tail repair, and includes the threshold-two boundary. The [scope report](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) and [independent review](../results/gravgaard-lee-upper-lower-luroth/LEAN_REVIEW.md) record the correspondence. The [complete receipt](verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json) covers 12 strict source builds, 664 declarations, 475 theorems, 173 private declarations, 29 required endpoints, and exact stock replay. Only the three allowed standard axioms occur. Aggregate verification and public deployment remain separate in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). The two reused previously completed Lüroth modules are not recounted. The mixed bounded-digit dependency retains its original proof already published through [PR #547](https://github.com/1337isnot1337/solved-conjectures/pull/547).

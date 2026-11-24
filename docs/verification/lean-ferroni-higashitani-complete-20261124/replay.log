@@ -1,0 +1,16 @@
+Replaying all 14 local project modules imported by Conjectures.FerroniHigashitaniEhrhart, including that root (prefix Conjectures)
+replaying Conjectures.FerroniHigashitani
+replaying Conjectures.FerroniHigashitaniLattice
+replaying Conjectures.FerroniHigashitaniBox
+replaying Conjectures.FerroniHigashitaniCount
+replaying Conjectures.FerroniHigashitaniEhrhart
+replaying Conjectures.FerroniHigashitaniInterior
+replaying Conjectures.FerroniHigashitaniIDP
+replaying Conjectures.FerroniHigashitaniPolytope
+replaying Conjectures.FerroniHigashitaniGeometry
+replaying Conjectures.FerroniHigashitaniRefined
+replaying Conjectures.FerroniHigashitaniClosedCount
+replaying Conjectures.FerroniHigashitaniBinomial
+replaying Conjectures.FerroniHigashitaniPrefixPolynomial
+replaying Conjectures.FerroniHigashitaniBasis
+PASS: the entire local import closure of Conjectures.FerroniHigashitaniEhrhart completed the pinned kernel replay

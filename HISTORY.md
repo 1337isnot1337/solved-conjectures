@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24 — Verify Ferroni–Higashitani Question 5.12(a) in Lean
+
+The [Lean proof](results/ferroni-higashitani-early-interior-ehrhart/FORMALIZATION.md) constructs the dimension-170 lattice polytope, proves integer decomposition at every positive dilation, characterizes its Ehrhart polynomial by the closed lattice-point counts, and proves the strict inequality at the first three negative evaluations.
+
 ## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
 
 On 24 November 2026 the [complete Lean proof](results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) established the exact sum interval and original Conjecture 2.6 for every matching digit threshold k≥2. The proof formalizes the existing direct refinement argument, including the finite zero-tail repair and actual infinite expansions. All 12 sources passed strict compilation, the all-owned/private axiom audit and exact stock replay; the source statement and full receipt were independently reviewed. Maiken Gravgaard and Ying Wai Lee are the original proposers; the recorded proof by Cinna Davis and its priority qualifications are preserved. The two reused Lüroth modules and threshold-two boundary are not counted as new results. Aggregate and deployment checks remain separate.
