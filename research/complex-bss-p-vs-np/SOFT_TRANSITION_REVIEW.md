@@ -34,3 +34,7 @@ The logarithmic divisor orders are $`-2`$ on $`x=0`$ and $`-1`$ on each false co
 With scales $`\epsilon^a,\epsilon^b`$, $`a,b>0`$, the three orders become $`a+b,b,a`$. They cannot be a common value. Exponentially separated positive scales make no difference to this conclusion.
 
 Finally, the pointwise limit is a discontinuous indicator. It is not a coefficientwise polynomial limit computing that indicator. The draft correctly keeps this fact separate from the border-circuit arguments for the permanent. The identity $`x=zF_1+F_2`$ also shows that this small example has an easy alternative normalization; the example asserts no hardness of finding it here.
+
+## Full-program continuation
+
+The appended Sections 4--6 were independently checked by the discrete-remainder and PH-bridge workers and read in full by the root agent. The [full written review](FULL_DECIDER_SOFT_COMPILER_REVIEW.md) checks the uniform false-order example, the Boolean-preserving common-scale construction with an exponential common generic prefix, and the actual poles approaching a false input. The positive [all-input compiler](FULL_DECIDER_SOFT_COMPILER.md) is proved separately. These additions rule out the specified normalization rules; they do not rule out using the complete circuit. No formal verification or external refereeing is claimed.
