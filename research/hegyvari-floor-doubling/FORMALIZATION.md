@@ -1,14 +1,16 @@
 # Hegyvári’s conjecture
 
-**Incomplete formalization: verified transport and integer carry reductions only.**
+**Incomplete formalization: verified transport, integer carry, and indexed-to-distinct reductions.**
 
-Existing result: [published proof, §§2–3](https://github.com/1337isnot1337/solved-conjectures/blob/d7a796c0d20e30d3fd743318ac688dee51496212/results/hegyvari-floor-doubling/PROOF.md), [result entry](https://github.com/1337isnot1337/solved-conjectures/tree/main/results/hegyvari-floor-doubling), discovery #446, formalization #581. The current session started 2026-11-24 18:59 UTC.
+Existing result: [published proof, §§2–3](https://github.com/1337isnot1337/solved-conjectures/blob/d7a796c0d20e30d3fd743318ac688dee51496212/results/hegyvari-floor-doubling/PROOF.md), [result entry](https://github.com/1337isnot1337/solved-conjectures/tree/main/results/hegyvari-floor-doubling), discovery #446, formalization #581. The original session started 2026-11-24 18:59 UTC; the distinct-value retry started 2026-11-24 22:04:35 UTC.
 
 The exact original result is the strong completeness of the positive distinct union of the two real floor-doubling rays after deleting any finite subset, for positive parameters whose ratio is not a power of two and at least one of which is not dyadic. Hegyvári’s stronger conjecture is recorded in [Steve Fan, arXiv:2607.14071v6, §1 and Remark 4.2](https://arxiv.org/html/2607.14071v6). The [Kohlmeyer–Kruer paper](https://hexagonmath.org/2611.00768v1) supplies the irrational-ratio result and tower arguments; the repository proof supplies the rational-ratio extensions. Preserve the proof authorship and credit in the original entry and audit; no new discovery or absolute priority is asserted.
 
 [Lean source](../../lean/Conjectures/HegyvariFloorDoublingTransport.lean) proves eight universally quantified lemmas in core Lean. Forward transport is an eventual positive bounded return between binary-mark sequences; composition and self-transport give bounded gaps. An abstract binary recurrence and exact integer carry bounds prove that, for an odd integer multiplier, a sufficiently long zero run following a mark forces a simultaneous mark in the multiplied ray. Combining this with the reverse transport gives bounded gaps in the first ray. These match the combinatorial portions of §3, without taking the tower conclusions as axioms.
 
-Still required: construct the real floor-doubling rays and show their binary-step recurrence and carry bounds; relate non-dyadic parameters to unbounded marks; formalize or import and audit the exact tower criteria, derive both transport directions in Case I and the integer-part common-mark criterion for Case II; show the second ray has bounded zero gaps where required; establish the indexed-to-distinct sumset and finite-deletion bridge, and prove the complete quantified conjecture. The two cases and the converse are not formally settled by this file.
+The [distinct-value module](../../lean/Conjectures/HegyvariFloorDoublingDistinct.lean) also checks the five endpoints for the abstract indexed-to-distinct/finite-deletion bridge of §4, positive binary-step growth and tail injectivity. See [scope](DISTINCT_CANDIDATE.md) and [verification](DISTINCT_VERIFICATION.txt). It assumes indexed completeness on every common tail and eventual cross-ray separation.
+
+Still required: construct the real floor-doubling rays and show their binary-step recurrence and carry bounds; relate non-dyadic parameters to unbounded marks; formalize or import and audit the exact tower criteria, derive both transport directions in Case I and the integer-part common-mark criterion for Case II; show the second ray has bounded zero gaps where required; establish eventual cross-ray separation, identify the verified abstract bridge with the actual floor rays, and prove the complete quantified conjecture. The two cases and the converse are not formally settled by this file.
 
 ## Verification
 

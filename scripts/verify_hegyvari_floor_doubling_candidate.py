@@ -2,8 +2,11 @@
 """Candidate-only verification; does not register the conjecture as complete."""
 import verify_lean_candidate as gate
 
-TASK = "hegyvari-floor-doubling-transport"
-MODULES = ["Conjectures.HegyvariFloorDoublingTransport"]
+TASK = "hegyvari-floor-doubling-partial"
+MODULES = [
+    "Conjectures.HegyvariFloorDoublingTransport",
+    "Conjectures.HegyvariFloorDoublingDistinct",
+]
 REQUIRED = [
     "HegyvariFloorDoubling.transport_comp",
     "HegyvariFloorDoubling.boundedGaps_of_selfTransport",
@@ -13,6 +16,11 @@ REQUIRED = [
     "HegyvariFloorDoubling.zeroRun_expansion",
     "HegyvariFloorDoubling.oddMultiplier_response",
     "HegyvariFloorDoubling.boundedGaps_of_oddMultiplier",
+    "HegyvariFloorDoubling.indexedTailComplete_to_distinctStrongComplete",
+    "HegyvariFloorDoubling.binaryStep_eventuallyAbove",
+    "HegyvariFloorDoubling.binaryStep_strictOnTail",
+    "HegyvariFloorDoubling.binaryStep_injectiveOnTail",
+    "HegyvariFloorDoubling.distinctStrongComplete_of_binarySteps",
 ]
 
 def main():
