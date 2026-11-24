@@ -8,7 +8,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 ## Results
 
-| Problem | Verification |
+| Problem | Lean Verification Status |
 | :--- | :---: |
 | [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ |
 | [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | ⬜ |
