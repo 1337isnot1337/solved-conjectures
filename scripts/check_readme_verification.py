@@ -5,7 +5,7 @@ import re
 import sys
 
 
-HEADER = re.compile(r"\|\s*Problem\s*\|\s*Verification\s*\|")
+HEADER = re.compile(r"\|\s*Problem\s*\|\s*Lean verification status\s*\|")
 DIVIDER = re.compile(r"\|\s*:?-+:?\s*\|\s*:?-+:?\s*\|")
 RESULT = re.compile(r"\|\s*\[(?:\\\||[^|])+\]\(results/[^/|\s]+/\)\s*\|\s*[✅🟢🟡⬜]\s*\|")
 
@@ -20,7 +20,7 @@ def main() -> int:
         or not HEADER.fullmatch(table[0].strip())
         or not DIVIDER.fullmatch(table[1].strip())
     ):
-        print("README.md needs a nonempty Problem | Verification table under ## Results.", file=sys.stderr)
+        print("README.md needs a nonempty Problem | Lean verification status table under ## Results.", file=sys.stderr)
         return 1
 
     invalid_rows = [row for row in table[2:] if not RESULT.fullmatch(row.strip())]
