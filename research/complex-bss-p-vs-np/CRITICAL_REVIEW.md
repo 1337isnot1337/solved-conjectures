@@ -4,6 +4,8 @@ These are independent internal model reviews of written mathematics, not human r
 
 The integrator and weighted-protocol reviewer also checked the generic-matrix consequence added to Section 7. The bounded-size feasible set is constructible; if it were dense, the same component-selection proof would apply. Below the resulting lower-bound threshold, its Zariski closure is proper, so every matrix in a nonempty open complement needs larger certificates. No explicit hard matrix or defining equation for that open set is claimed.
 
+A later integration audit clarified the exact-budget constructibility step. The universal arithmetic template can represent circuits larger than the original budget, so its image need not equal the set A_s for that exact budget. The revised proof uses the finite union of actual budget-bounded circuit topologies to prove constructibility, and the larger template only as a superset when deriving the density contradiction. The weighted-protocol reviewer independently confirmed this repair. The quantitative bound and generic-hardness conclusion are unchanged.
+
 
 ## Incidence-route review
 

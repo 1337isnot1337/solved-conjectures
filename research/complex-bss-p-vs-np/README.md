@@ -60,6 +60,18 @@ The [symmetry-orbit jet barrier](SYMMETRY_JET_BARRIER.md) proves that a low-dime
 
 The [grid Newton-polytope barrier](GRID_NEWTON_BARRIER.md) shows that, after at most one extra padding coordinate, no pure diagonal monomial weighting can isolate the BCJS hard interior coefficient as the full initial coefficient. It uses BCJS's grid congruence and resultant padding identities and includes [finite checks](verify_grid_newton.py). This is not a circuit lower bound.
 
+## Finite Boolean verification and restricted resultant multiples
+
+[REAL_KKT_RADICAL_EXTENSION.md](REAL_KKT_RADICAL_EXTENSION.md) proves a stronger obstruction for real-coefficient target polynomials. A finite family of individually small polynomial equations, with polynomially many existential parameters and an actual component projecting to a low-degree graph, gives polynomial border complexity. The number of equations is not charged to this bound. The proof uses real compact optimization only to select a small complex critical incidence; it does not add real comparisons to a BSS verifier.
+
+Consequently the permanent graph has no polynomial-size presentation consisting of complex existential witnesses, a finite Boolean universal block, and a deterministic polynomial-time complex BSS predicate, even with branching and defined division. The proof includes radical-only equations and inequations on accepting paths. The [block critical-point extension](BLOCK_KKT_FINITE_EXISTENTIAL_EXTENSION.md) also excludes a local complex existential block after each Boolean challenge. Separate compact balls and selection of whole multiplier blocks keep the final witness dimension polynomial. Arbitrary complex universal blocks remain outside both proofs. [Detailed internal review](REAL_KKT_REVIEW.md) · [Second independent review](REAL_KKT_INDEPENDENT_REVIEW.md) · [Block review](BLOCK_KKT_REVIEW.md). The [cutoff counterexample](CONTINUOUS_QUANTIFIER_CUTOFF_FAILURE.md) records an exact failure of a proposed continuous-quantifier shortcut.
+
+[COMPOSITION_MULTIPLES.md](COMPOSITION_MULTIPLES.md) proves that every nonconstant univariate composition of the quadratic resultant, including all its nonzero powers and all multiples R q(R), has the imported superpolynomial circuit lower bound. Neither the degree nor the circuit complexity of q is bounded. Nearby regular-center inverse Taylor series recover bounded jets of R from a small circuit for the composition.
+
+[FEW_PARAMETER_COFACTORS.md](FEW_PARAMETER_COFACTORS.md) extends this to nonzero multiples R q(R,h_1,...,h_k), where k is fixed and the h_i have small shared circuits. The explicit bound also rules out polynomial total circuit size when k=o((log N)^(1/3)). Jets are extracted in the full coefficient space before the BCJS specialization: specializing a nonzero multiple first could make it zero. The required representation of a general branch cofactor by few easy polynomial parameters remains unproved. [Review and repaired specialization](RESTRICTED_COFACTOR_REVIEW.md).
+
+[TAGGED_TRACE_OBSTRUCTION.md](TAGGED_TRACE_OBSTRUCTION.md) identifies the remaining conjugate-sum operation in a direct incidence-tagged extraction. It gives a small irreducible annihilator and small observable whose trace specializes to the permanent. This rules out a generic degree-independent trace bound under the imported lower bound, while leaving a resultant-specific reciprocal-trace argument unresolved. [Independent review](TAGGED_TRACE_REVIEW.md).
+
 ## Research notes
 
 - [PROTOCOL.md](PROTOCOL.md) gives a sound uniform sum-check formula on all complex matrices, with `2m` alternating blocks, and exact counterexamples to moving all messages or all challenges together. It also proves an obstruction to generic small arithmetic-circuit commitments for adaptive messages and a sound batching lemma with its actual coefficient-volume cost.
@@ -83,4 +95,4 @@ No target separation has been formalized in Lean. The exact checks in [verify_ob
 
 ## Coordination
 
-The current research uses four workers: root for model/source audit and integration, a graph-hardness/review worker, a weighted-protocol worker, and an incidence/resultant worker. Reusable statements and failed implications are recorded in the issue and committed at mathematical milestones. Review branches are temporary and target `main`, following the owner's explicit instruction for this task. Durable research stays on `main`; the solved-results table is unchanged.
+The campaign uses root and three concurrent workers. Assignments rotate among model and source audit, graph hardness, weighted protocols, incidence geometry, cofactor extraction, and adversarial review. Reusable statements and failed implications are recorded in the issue and committed at mathematical milestones. Review branches are temporary and target `main`, following the owner's explicit instruction for this task. Durable research stays on `main`; the solved-results table is unchanged.

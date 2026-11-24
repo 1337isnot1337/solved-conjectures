@@ -16,6 +16,8 @@ The first uses SymPy to check bounded-rank potentials, full flip averages, Boole
 
 The [critical-incidence argument](../research/complex-bss-p-vs-np/CRITICAL_INCIDENCE_BARRIER.md) has [two independent internal written reviews](../research/complex-bss-p-vs-np/CRITICAL_REVIEW.md) and an integrator review. Its component and differential argument, generic-matrix consequence, singular-witness dependency, and imported permanent lower bound are written mathematics. No Lean or external refereeing is claimed. The target separation remains unresolved.
 
+The subsequent [finite-residual critical-point proof](../research/complex-bss-p-vs-np/REAL_KKT_RADICAL_EXTENSION.md) and [block extension](../research/complex-bss-p-vs-np/BLOCK_KKT_FINITE_EXISTENTIAL_EXTENSION.md) have explicit equations and witness/gate counts, with separate internal written reviews. They allow finite Boolean challenges and local complex existential witnesses; they do not cover arbitrary complex universal challenges. The [restricted-cofactor review](../research/complex-bss-p-vs-np/RESTRICTED_COFACTOR_REVIEW.md) records the reviewed jet arguments and the repaired specialization error. The bounded-counterexample cutoff has a complete two-case verification in its note. The tagged-trace construction has a complete digit-recurrence induction and free-basis specialization proof, independently reviewed in its own note. No numerical checks or Lean build are presented as verification of these new analytic arguments.
+
 ## Boolean Hamiltonicity research lemmas
 
 Run these standard-library checks from the repository root:

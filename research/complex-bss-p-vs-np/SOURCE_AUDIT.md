@@ -98,7 +98,7 @@ Theorem 1.4 concerns polynomial-size circuits for quadratic resultants. Theorems
 
 using m=3^r+1 in the grid extraction. The constant coefficient is 1. Thus the permanent is recovered from an interior coefficient, rather than directly from a zero-set component or an initial term. The arithmetic-circuit result does not, without a separate argument, apply to an arbitrary nonzero polynomial multiple exposed by a membership decider.
 
-The incidence worker is auditing the exact reduction and constructions. Its conclusions will be recorded with explicit equations rather than treating the abstract alone as sufficient.
+The exact reduction and constructions are recorded in INCIDENCE.md, FOURIER_RESULTANT_FILTER.md, and the restricted-cofactor notes. The latter also check the input-to-grid dimension relation directly in BCJS Lemma 3.3 and Appendix A.1.
 
 ## 5. Openness and repository check
 
@@ -123,3 +123,12 @@ Forbes, Shpilka, Tzameret, and Wigderson, *Proof Complexity Lower Bounds from Al
 The elementary complex hitting-set lemma is proved in IDENTITY_CERTIFICATE_BARRIER.md. Its historical comparison is Heintz–Schnorr Theorem 4.4 as restated in Chatterjee, Kumar, Ramya, Saptharishi, and Tengse, ECCC Report 2020/063, revision 2, Theorem 3.3. No effective finite-grid bound from that paper is needed for the argument here. The primary source records and the fully supplied dimension proof make that distinction explicit. Theorem 3.3 was also checked in the [author-hosted full manuscript](https://www.niser.ac.in/~anamay/assets/docs/papers/AlgNatProofs_full.pdf), printed page 25; the ECCC revision reference is retained separately.
 
 For the generic-matrix consequence of the critical-incidence argument, Chevalley's constructibility theorem is [Stacks tag 054K](https://stacks.math.columbia.edu/tag/054K), Theorem 29.23.3 as consulted on 23 November 2026. Only constructibility of the image of a finite-type complex algebraic variety is used.
+
+
+## Later finite-residual and restricted-cofactor deductions
+
+REAL_KKT_RADICAL_EXTENSION.md supplies its own proofs of the needed finite active-set regular-value statement, compactness argument, and actual-component specialization. Its short nested-ball argument proves the particular Baire step used. The remaining analytic inputs are the ordinary local implicit/submersion theorem and the previously cited finite-germ and root-cluster transfer. Its use of real optimization is an existence proof for a small complex incidence, with a real-coefficient target polynomial. It is not a theorem asserting that arbitrary complex quantifiers can be made Boolean.
+
+The two restricted-cofactor notes use local analytic inversion and finitely many Taylor coefficients as permitted nonuniform constants. Their coefficientwise limits use Bürgisser 1812.06828v1, Theorem 2.4. The BCJS dimension relation was checked directly in Lemma 3.3 and Appendix A.1: an allowed grid side m represents a permanent of size m-1 by identity padding. The nonzero coefficient factor kappa can be divided out as a scalar arithmetic operation. BCJS Theorem 3.2 instead absorbs that scalar in one extra diagonal entry for a pure projection. No theorem about arbitrary nonzero resultant multiples is imported from either paper.
+
+TAGGED_TRACE_OBSTRUCTION.md proves its digit-polynomial recurrence and free-algebra trace specialization directly. The resultant degree and individual-root incidence are the previously cited standard resultant facts; no general efficient trace theorem is imported. The note explicitly distinguishes arbitrary observables from the reciprocal powers in the unresolved resultant-specific extraction.
