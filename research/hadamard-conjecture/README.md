@@ -5,7 +5,8 @@ checkpoint proves an obstruction to composing odd-size quaternionic
 Hadamard arrays by an entrywise quaternion product and arbitrary orthogonal
 changes of basis on its real four-dimensional block rows and columns.
 It also identifies the unique residue rule for a different, position-dependent group-developed
-composition. It establishes no new Hadamard order. There is no
+composition. A second obstruction rules out every fixed entrywise block rule.
+It establishes no new Hadamard order. There is no
 independent review, Lean verification, or priority claim.
 [Tracking issue #340](https://github.com/1337isnot1337/solved-conjectures/issues/340).
 
@@ -314,6 +315,64 @@ autocorrelation. The obstruction covers all orthogonal changes of basis on the
 individual four-dimensional block rows and columns of the specified
 product. General Hadamard constructions remain open.
 
+
+## Obstruction to a fixed entrywise block rule
+
+Even a rule that changes the array outside the block changes of
+basis in the theorem cannot work universally if it assigns each
+output block using only the two corresponding input blocks.
+The rule may be an arbitrary function of two real $4$ by $4$
+input blocks. Its output may be any $4$ by $4$ matrix with
+entries $\pm1/2$.
+
+For an exact pair of inputs, let
+$a=(1+i+j+k)/2$ and $b=(1-i-j-k)/2$. Let $K=J_3-I_3$.
+The quaternion array $aI_3+bK$ has entries in $P$ and is
+orthogonal with squared row norm three. Indeed, $I_3$ and
+$K$ have a common real orthonormal eigenbasis with $K$-eigenvalues
+$2,-1,-1$. The corresponding quaternion eigenvalues are
+$a+2b$ and $a-b$, each of squared norm three since
+$\mathop{\mathrm{Re}}(a\bar b)=-1/2$. Its real left multiplication
+blocks give the two possible input values $L(a)$ and $L(b)$.
+
+Feed this array and an identical copy into the putative fixed
+rule. Denote its four block outputs by $A,B,C,D$ in the order
+$(L(a),L(a)),(L(a),L(b)),(L(b),L(a)),(L(b),L(b))$.
+The real output is
+
+```math
+I_3\otimes I_3\otimes A+I_3\otimes K\otimes B
++K\otimes I_3\otimes C+K\otimes K\otimes D.
+```
+
+For it to give a Hadamard matrix after rescaling by two, it
+must have row Gram matrix $9I_{36}$. Conjugating by the tensor
+of the two real eigenbases for $K$ and the four-dimensional
+identity is orthogonal. It gives a block-diagonal matrix containing
+both $W=A-B-C+D$ and $W+3(B-D)=A+2B-C-2D$. Both would need
+row Gram matrix $9I_4$.
+
+Take any row $w$ of $W$ and the corresponding row $p$ of $B-D$.
+The entries of $w$ are integers of absolute value at most two,
+and the entries of $p$ belong to $\{-1,0,1\}$. The only way for
+four such squares of entries of $w$ to sum to nine is
+$4+4+1+0$. For each of the two positions with $|w_j|=2$, the
+four half signs in $A-B-C+D$ agree after the indicated signs.
+Consequently $p_j=-\mathop{\mathrm{sign}}(w_j)$ in both positions.
+
+Now $\lVert w+3p\rVert^2=\lVert w\rVert^2$ requires
+$2w\cdot p=-3\lVert p\rVert^2$. The number of nonzero
+entries of $p$ is even and at least two. If it is two, then
+$w\cdot p=-4$ from the two forced positions, whereas the equation
+requires $-3$. If it is four, then $|w\cdot p|\le\sum_j|w_j|=5$,
+whereas the equation requires $-6$. Both cases are impossible.
+
+The argument excludes every fixed rule of this form, including
+ones that do not produce quaternion multiplication blocks.
+Its finite pair of inputs is a witness against the universal
+construction rule. The unrestricted Hadamard conjecture and
+composition methods that can vary the output at equal pairs of
+input blocks remain open.
 
 ## Exact diagnostic
 
