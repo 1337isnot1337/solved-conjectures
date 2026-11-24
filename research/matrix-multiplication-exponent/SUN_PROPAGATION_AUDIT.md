@@ -1,6 +1,6 @@
 # Sun v1: audit of the two-step propagation
 
-Research audit, 23 November 2026 (America/Chicago). This note does not verify or refute the exponent-two theorem. It isolates the precise dependency that must be supplied before that theorem can be imported.
+Research audit, 23 November 2026 (America/Chicago). This note does not verify or refute the exponent-two theorem. It isolates the residual dependency and valid local identities. The subsequent [active-cell audit](SUN_ACTIVE_CELL_OBSTRUCTION.md) proves an additional obstruction: treating the printed correction cells as complete source images would give a rank-saving contradiction at the first propagation sizes. A different construction with extra components is not covered by that complete-image premise.
 
 ## Source and claimed implication
 

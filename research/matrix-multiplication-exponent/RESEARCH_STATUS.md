@@ -15,7 +15,7 @@ Let $L(n)$ be the minimum number of scalar arithmetic operations in a division-f
 
 The target is $\omega_{\mathbb C}=2$, equivalently: for every $\varepsilon>0$, there is an algorithm family with cost $O_\varepsilon(n^{2+\varepsilon})$. This does not assert a quadratic-time algorithm with a fixed constant. It is the full matrix multiplication exponent problem, rather than a bounded-size rank calculation or a result about one family of spectral points. Its resolution would determine the asymptotic arithmetic complexity of dense matrix multiplication in this model.
 
-The audited prior-result question is not settled by the title of an announcement. Sun's fixed-version paper claims the full result; the audit below finds failures in two printed local identities, supplies local corrections, and leaves its global construction and repeated propagation unverified. The final limiting implication in that paper is valid if its uniform border-rank construction is established. The imported AVZ theorem supplies the rigorous bound used in the present research framework,
+The audited prior-result question is not settled by the title of an announcement. Sun's fixed-version paper claims the full result. The audit finds failures in two printed local identities and supplies local corrections. A subsequent source-level audit proves that the specific one-bit quotient construction for $M_{64}$ is inconsistent with a known border-rank lower bound. The other global constructions and repeated propagation remain unverified. The final limiting implication in that paper is valid if its uniform border-rank construction is established. The imported AVZ theorem supplies the rigorous bound used in the present research framework,
 
 ```math
 2\le\omega_{\mathbb C}\le\frac94.
@@ -56,6 +56,8 @@ M_q\cong W_{AB}(q)\otimes W_{BC}(q)\otimes W_{CA}(q),
 | Every terminal metric that embeds in a finite tree satisfies the same hypergraph minimum-cut inequality, even with arbitrary metric auxiliaries. | [Tree-terminal proof](TREE_TERMINAL_MINCUT.md), nonexpansive extension, a weighted tree-cut measure, and endpoint randomization. | This includes every terminal triple and every equilateral terminal set. A separate cap certificate also covers square terminals; its failure for thin rectangles is proved. The arbitrary Euclidean terminal case remains unresolved here. |
 | The overlapping-unit uncrossing conversion fails for every $q\ge2$ and every common full-unit catalyst. | [Overlapping units](OVERLAPPING_UNITS.md), a determinant-grid valuation argument, with independent binary polynomial certificates. | Source-only overhead is different. A rank-$\sqrt q$ unit suffices when $q$ is a square and is necessary if only the two outer maps are monomial; unrestricted subexponential overhead remains unresolved. |
 | A required Weyl phase cannot be inserted freely into a collapsed group tensor. | [Sun phase audit](SUN_PHASE_AUDIT.md), a one-bit obstruction and the minimal-border-rank slice commutativity condition. | It does not exclude a construction from a richer source tensor. |
+| The entire printed active correction cell has rank at most five over the Laurent-function field, and at most four for the stated diagonal operator. | [Active-cell obstruction](SUN_ACTIVE_CELL_OBSTRUCTION.md), exact product identities. | If the five named source pairs have exactly these complete images, their compression contradicts known lower bounds at $M_{128}$ and $M_{4096}$. Hidden additional output components would require a different, explicit certificate. |
+| Sun v1's literal one-bit quotient construction cannot produce $M_{64}$. | [Source-certificate audit](SUN_SOURCE_CERTIFICATE_AUDIT.md), deletion of 64 explicitly zero source directions and Landsberg--Michałek Theorem 1.1. | The resulting upper bound $8128$ contradicts the proved lower bound $8185$. This refutes the stated construction, not the proposed $8192$ bound or $\omega=2$ itself. |
 | Two printed local maps in Sun v1 fail exact substitution, and specific local corrections repair those local identities. | [Crossed-map audit](SUN_CROSSED_MAP_AUDIT.md) and exact scripts. | Neither the full claimed theorem nor its negation follows from the local checks. |
 
 No novelty claim is made for elementary deductions or independently reconstructed published results. The named imported theorems remain dependencies. The repository's standing acceptance of Anthropic's result is followed; its circuit lower-bound proof was not re-audited.
@@ -71,6 +73,10 @@ The equilateral Euclidean triangle of side $3/4$ has scalar unit charge one and 
 Ordinary Euclidean realizability has no normalization content. Every nonzero metric triangle is a positive multiple of a singleton quantum wire triple. Multiplying its distances also multiplies its logarithmic full-unit charge. For example, the equilateral $3/4$ triple is $9/8$ times the uniform quantum $2/3$ triple; this rescaling alone does not retain unit charge one.
 
 ## Sun audit: exact unresolved step
+
+The [source-certificate audit](SUN_SOURCE_CERTIFICATE_AUDIT.md) now proves an actual contradiction in the printed $M_{64}$ quotient. Appendix A.6's eighth diagonal direction is the completion-only feature-zero graft. Equations (9.18)--(9.19) kill it for every new absolute character permitted by Section 3.2, so all 64 outer copies can be deleted. The reduced source has border rank at most $64\cdot127=8128$, while Landsberg--Michałek Theorem 1.1 gives $8185$. This conclusion survives the two earlier local repairs. It does not settle the independent $M_{32}$/$M_{1024}$ constructions or the unbounded propagation claim.
+
+The [active-cell audit](SUN_ACTIVE_CELL_OBSTRUCTION.md) also proves that equation (10.4)'s entire Laurent family uses at most five products. If the five designated source pairs have those complete images, replacing their eight-direction realizations saves fifteen source directions and contradicts the Landsberg--Michałek lower bound at both first propagation sizes. This addresses the literal full-cell specification without assuming that the spare blocks are unused. If equation (10.4) describes only a projection, the additional components and their global use remain to be supplied.
 
 [SUN_PROPAGATION_AUDIT.md](SUN_PROPAGATION_AUDIT.md) separates valid local calculations from the missing implication. The Walsh minors, first-difference identity, combinatorial lift counts, exact ordinary-to-active leakage operator, and a fixed source-side implementation of the face action check. Definition 10.1(iii) also requires the fresh-coordinate residual to lie in a specified five-dimensional subspace after ordinary rows are eliminated. The checked first-jet identity does not establish that residual condition for the bases or prove that it persists after another propagation step.
 
@@ -119,6 +125,9 @@ python3 check_sun_crossed_map.py
 python3 check_sun_propagation_local.py
 python3 check_unit_uncrossing.py
 python3 check_tripod_countermodel.py
+python3 check_sun_quotient_budget.py
+python3 check_sun_dense_table.py
+python3 check_sun_active_cell_compression.py
 ```
 
 All scripts except the propagation-local script use Python's standard library; that script also uses SymPy. They check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
