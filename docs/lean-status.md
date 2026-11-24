@@ -79,6 +79,7 @@ proofs are documented separately in the catalogue and result package.
 | Hajdu–Sárközy’s shifted-power perturbation conjecture | Not formalized | Proof of the remaining square case under the full little-o perturbation condition, including finite modifications. Prior higher powers are credited. |
 | Hajdu–Sárközy’s shifted-product total primitivity conjecture | Not formalized | Proves the original bivariate claim for the remaining coprime exponents using a summable union of scaled power sets; non-coprime exponents were known. |
 | Hegyvári’s conjecture | Not formalized | Proves strong completeness of the two-ray set across the remaining rational ratios that are not powers of two, with exact strong-completeness obstructions. |
+| Revised Tan–Zhou conjecture | Not formalized | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture | Not formalized | Proves the derangement proportion tends to zero, with every fixed diagonal count diverging in probability. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture | Not formalized | Refutes every proposed fixed power exponent by exact finite two-branch counting and saturation of the occupation loss. |
 | Fan’s interval Riesz capacity-ratio conjecture | Not formalized | Proves the full negative-exponent conjecture and the nontrivial one-dimensional Clark–Laugesen range, with equality conditions. |
