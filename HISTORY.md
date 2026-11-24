@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-23 — Boolean Hamiltonicity transfer research
+
+Recorded a self-contained investigation of the proposed arithmetic-to-Boolean P-versus-NP transfer. Proved the shared minimal component, all cycle-union coefficients, the first overlap layer, and a restriction preserving Hamiltonicity while killing the exact-cycle predicate. A stronger obstruction gives monotone logarithmic-space predicates with the same logarithmic band of higher components. Small monotone formulas refute the tested all-cut-rank bounds; the support-quotient analysis identifies the remaining efficiency gap. Internal cross-review and exact finite checks passed. No unrestricted circuit lower bound or P != NP proof is claimed, and the work remains outside the solved-results table. [Notes and checks](research/boolean-hamiltonicity/) · [Issue #251](https://github.com/1337isnot1337/solved-conjectures/issues/251) · [PR #253](https://github.com/1337isnot1337/solved-conjectures/pull/253).
+
 ## 2026-11-23 — Quadratic resultant exclusion barrier and permanent zero-testing
 
 Added a [research note](research/complex-bss-p-vs-np/RESULTANT_EXCLUSION.md) under the open complex BSS campaign #248. It proves a precise sufficient exclusion-complexity criterion for separating nonuniform P_C from NP_C, records why the exponential degree of quadratic resultants prevents the known border-factor theorem from closing that criterion, and derives a quantitative lower bound for testing whether the permanent is zero. The complex BSS separation remains open; the decision lower bound is a deduction from imported factoring theory and the repository's standing VP != VNP assumption. No new solved-conjecture row was added.
