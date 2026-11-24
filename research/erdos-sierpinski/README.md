@@ -69,6 +69,14 @@ n ≤ (2C)^(2^(K+r−1)),
 
 as claimed. Taking two logarithms gives `log₂(log n)≤K+r+O(1+log K)`. To write the error in terms of `n`, either `K≥log₂(log n)` already, or `log K=O(1+log log log n)`.
 
+## A nonsquarefree odd-side extension
+
+The same argument applies when the odd member is **cubefree** and every prime divisor of either member is either 3 or congruent to 2 modulo 3. Replace the displayed upper bound for n by `(2(K+1)2^K)^(3^(K+r−1))`. The restriction is on the prime supports, not a bound on the exponents on the even side.
+
+Indeed, for a prime Q≡2 mod 3, no integer x makes Q divide x²+x+1: if x=1 mod Q then Q would divide 3; otherwise x would have multiplicative order 3 modulo Q. For the largest odd-support prime P, this excludes any numerator from the lower odd-side squared primes when P>3, and if P=3 there is no lower odd prime. First-power numerators from lower odd primes are less than P, and the factor at P contributes strictly negative valuation. Thus equality still forces a saturated even-support prime Q>P. The largest such Q is congruent to 2 modulo 3 (it exceeds 3), so it divides no odd-side squared-prime numerator either, while all odd-side first-power numerators are smaller than Q. The valuation contradiction follows as before.
+
+In the effective approximation keep every odd-side exponent exact when bringing in that prime; never saturate it. The omitted-factor and even saturation errors are unchanged. Including an odd prime now costs a factor at most p²≤(CD)² in the denominator. Thus F=CD evolves by at most F↦F³ (all other transitions still obey F↦F²), with the same transition count. This gives the claimed bound and a corresponding logarithmic lower bound on the combined number of factors. No claim is made for cubefree odd members with unrestricted prime support.
+
 ## Scope and a barrier to fixed-core prime templates
 
 Suppose a hypothetical infinite family can be written `e=AX, o=BY` for *fixed* positive coprime cores `A,B`, with each factorization coprime and with `I(X),I(Y)→1`. This includes the usual identities with a fixed finite product of moving primes or prime powers multiplying each fixed core. The equality of sums and the consecutive shift give `I(A)=I(B)` on taking limits. If `A` is even and `B` odd, the shared reduced denominator divides both cores and is therefore 1. Neither core can have index 1, so this family requires coprime even and odd multiperfect numbers of the same order. In the usual moving-prime application `A` is necessarily even, since all sufficiently large moving primes are odd. If `B` is squarefree, this pair is impossible by the largest-prime obstruction.
