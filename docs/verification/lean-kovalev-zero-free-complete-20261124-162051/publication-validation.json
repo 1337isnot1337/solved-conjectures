@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-24T18:24:58.005637+00:00",
+  "receipt_sha256": "bf58423ff44177ce8ae39b8e2c5db30d8b5d7832dff355f1360897a10a9e48fd",
+  "lane_receipt_sha256": "f9ab69c0e6c65125eaf9b23b89b6cc7202c203fc939f9723564d2b749eaeb1a0",
+  "source_matches_frozen_lane": true,
+  "project_modules": 21,
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 291,
+    "modules": 21,
+    "private_declarations": 6,
+    "raw_declarations": 291,
+    "required": 31,
+    "tag": "passed",
+    "theorems": 265
+  },
+  "exact_replay_set": [
+    "Conjectures.KovalevZeroFreeCoefficients",
+    "Conjectures.KovalevZeroFreeBeta",
+    "Conjectures.KovalevZeroFreeMobius",
+    "Conjectures.KovalevZeroFreeEuler",
+    "Conjectures.KovalevZeroFreeCoupling",
+    "Conjectures.KovalevZeroFreeTransport",
+    "Conjectures.KovalevZeroFreeGeometry",
+    "Conjectures.KovalevZeroFreeKernel",
+    "Conjectures.KovalevZeroFreeRemainder",
+    "Conjectures.KovalevZeroFreeComparison",
+    "Conjectures.KovalevZeroFreeFiniteAlgebra",
+    "Conjectures.KovalevZeroFreeCorrection",
+    "Conjectures.KovalevZeroFreeAssembly",
+    "Conjectures.KovalevZeroFreeNormalization",
+    "Conjectures.KovalevZeroFreeDerivative",
+    "Conjectures.KovalevZeroFreeSectionIntegral",
+    "Conjectures.KovalevZeroFreeTaylorSeries",
+    "Conjectures.KovalevZeroFreeTaylorAnalytic",
+    "Conjectures.KovalevZeroFreeTaylorFinite",
+    "Conjectures.KovalevZeroFreeTaylor",
+    "Conjectures.KovalevZeroFree"
+  ],
+  "checks": [
+    "all source/control/object/log hashes",
+    "regenerated all-owned audit and declaration inventory",
+    "exact project import closure",
+    "exact stock-kernel replay set",
+    "pinned compiler and stock-checker hashes",
+    "accepted module and endpoint registration"
+  ]
+}

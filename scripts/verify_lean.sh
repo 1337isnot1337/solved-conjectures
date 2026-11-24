@@ -7,6 +7,27 @@ modules=(
   Conjectures.ThueMorseSignDensityProduct
   Conjectures.ThueMorseSignDensityCore
   Conjectures.ThueMorseSignDensity
+  Conjectures.KovalevZeroFreeCoefficients
+  Conjectures.KovalevZeroFreeBeta
+  Conjectures.KovalevZeroFreeMobius
+  Conjectures.KovalevZeroFreeEuler
+  Conjectures.KovalevZeroFreeCoupling
+  Conjectures.KovalevZeroFreeTransport
+  Conjectures.KovalevZeroFreeGeometry
+  Conjectures.KovalevZeroFreeKernel
+  Conjectures.KovalevZeroFreeRemainder
+  Conjectures.KovalevZeroFreeComparison
+  Conjectures.KovalevZeroFreeFiniteAlgebra
+  Conjectures.KovalevZeroFreeCorrection
+  Conjectures.KovalevZeroFreeAssembly
+  Conjectures.KovalevZeroFreeNormalization
+  Conjectures.KovalevZeroFreeDerivative
+  Conjectures.KovalevZeroFreeSectionIntegral
+  Conjectures.KovalevZeroFreeTaylorSeries
+  Conjectures.KovalevZeroFreeTaylorAnalytic
+  Conjectures.KovalevZeroFreeTaylorFinite
+  Conjectures.KovalevZeroFreeTaylor
+  Conjectures.KovalevZeroFree
   Conjectures.ThueMorseValuationBasic
   Conjectures.ThueMorseValuationCertificate
   Conjectures.ThueMorseValuation

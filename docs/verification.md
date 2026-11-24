@@ -903,6 +903,9 @@ The [mixed-group threshold proof](../results/ma-tang-random-subset-sums/PROOF.md
 
 [Féray’s word-measure proof](../results/feray-conjugate-power-word/PROOF.md) and its [sharp-rate supplement](../results/feray-conjugate-power-word/SHARP-RATE.md), as well as the [spherical basis construction](../results/steinerberger-small-average-eigenfunction-norms/PROOF.md) and its [per-mode extension](../results/steinerberger-small-average-eigenfunction-norms/POINTWISE.md), are analytic arguments with independent source and proof audits.
 
+## Kovalev’s square-root Taylor-section zero-free conjecture
+
+Run `cd lean && lake env python3 ../scripts/verify_kovalev_zero_free.py` for the full registered 21-module closure. It freshly builds the sources with warnings as errors, audits all owned declarations including private ones, and replays the exact project closure with the pinned stock kernel. The [receipt](verification/lean-kovalev-zero-free-complete-20261124-162051/receipt.json) and [scope review](../results/kovalev-zero-free/LEAN_REVIEW.md) cover the full original square-root conjecture. The general-exponent and segment supplements are not claimed. The scoped gate does not replace the aggregate repository command or certify public deployment.
 ## Thue–Morse valuation conjecture
 
 The [Lean proof](../lean/Conjectures/ThueMorseValuation.lean) checks the original general clause’s disproof, the exponent-17 witness and the uniform family for k ≥ 11. The integer packing certificate is checked by ordinary kernel reduction. The [local receipt](../docs/verification/lean-thue-morse-valuation-publication-20261124/receipt.json) records source hashes, the complete owned/private axiom audit and stock-kernel replay.
