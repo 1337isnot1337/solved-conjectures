@@ -8,6 +8,9 @@ weights at internal core vertices and some repeated edge types. It has no
 independent review or Lean verification. No priority claim is made.
 [Tracking issue #315](https://github.com/1337isnot1337/solved-conjectures/issues/315).
 
+A separate follow-up gives a reconstruction criterion based on the
+centroid branches. [Centroid proof](CENTROID.md).
+
 ## The target and the source check
 
 For finite trees $T$ and $T'$, the target is that $X_T=X_{T'}$ implies
