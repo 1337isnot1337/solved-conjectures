@@ -2,7 +2,7 @@
 
 Research status, 23 November 2026 (America/Chicago): **unresolved in this project**. No proof of $\omega_{\mathbb C}=2$ and no legitimate spectral point with perimeter greater than two has been obtained. The notes below contain proved reductions, independently checked obstructions, and an audit of a public exponent-two claim. They do not turn the conjecture into a solved result.
 
-Coordination uses [issue #250](https://github.com/1337isnot1337/solved-conjectures/issues/250). The first reviewed checkpoint is [PR #258](https://github.com/1337isnot1337/solved-conjectures/pull/258), merged into `main`. The source audit and further tensor obstructions are tracked in [PR #262](https://github.com/1337isnot1337/solved-conjectures/pull/262). The earlier scalar-model construction is credited to the concurrent work in [PR #254](https://github.com/1337isnot1337/solved-conjectures/pull/254); this work does not replace that PR's README or branch.
+Coordination uses [issue #250](https://github.com/1337isnot1337/solved-conjectures/issues/250). The reviewed checkpoints [PR #258](https://github.com/1337isnot1337/solved-conjectures/pull/258), [PR #262](https://github.com/1337isnot1337/solved-conjectures/pull/262), and [PR #269](https://github.com/1337isnot1337/solved-conjectures/pull/269) are merged into `main`. The further full-tensor results are tracked in [PR #271](https://github.com/1337isnot1337/solved-conjectures/pull/271). The earlier scalar-model construction is credited to the concurrent work in [PR #254](https://github.com/1337isnot1337/solved-conjectures/pull/254); this work does not replace that PR's README or branch.
 
 ## Exact target and significance
 
@@ -48,6 +48,10 @@ M_q\cong W_{AB}(q)\otimes W_{BC}(q)\otimes W_{CA}(q),
 | --- | --- | --- |
 | Every multiplicative cover functional is either the indicator of nonzero tensors or $F^h$, with $F$ normalized and $0\lt h\le1$. | [Normalized extension](NORMALIZED_EXTENSION.md), tensor-power type argument. | A classification by normalization exponent, not a classification of all normalized points. |
 | Any one fixed finite law on retractions admits a normalized extension preserving every old tensor value. | Same file, derived from pinned Anthropic Proposition A.7, a finite-product argument, and compactness. | The law is fixed before the extension is chosen. Different laws cannot be imposed on one extension without a compatibility proof. |
+| A geodesic triple determines the entire spectral functional on that triple, and zero-distance parties can be merged without changing any tensor value. | [Full-tensor constraints](FULL_TENSOR_CONSTRAINTS.md), explicit teleportation restrictions, normalization, and Alman--Li--Pratt v2 Corollary 8.10. | Three overlapping rigid restrictions have not been proved to determine the full unit. A genuine normalized quantum point already gives a non-Hilbert tripod. |
+| Tetrahedral face units asymptotically produce the six edge wires if and only if the matrix multiplication exponent is two. | [Tetrahedral overhead](TETRAHEDRAL_OVERHEAD.md), exact operational spectral duality, with the finite determinant obstruction in [full-tensor constraints](FULL_TENSOR_CONSTRAINTS.md). | The required overhead exponent satisfies $`\omega-2\le\gamma\le4-8/\omega\le4/9`$. Finite and common-unit impossibility do not imply positive asymptotic overhead. |
+| Unrestricted overlapping-unit uncrossing has overhead exponent at most $`(\omega-2)/(\omega-1)\le1/5`$. | [Uncrossing construction](UNCROSSING_OVERHEAD.md), face matrix multiplication followed by four-cycle distillation, with an independent spectral proof. | A positive lower bound for this unrestricted overhead would already prove $`\omega>2`$. The upper bound does not establish zero overhead. |
+| The unit-star source produces matrix multiplication with overhead exponent at most $`(\omega-2)/2\le1/8`$. | [Full-tensor constraints](FULL_TENSOR_CONSTRAINTS.md), an explicit block construction from a smaller matrix product. | Finite/common-unit degeneration is excluded by the tensor centroid; monomial outer maps require exponent $`1/2`$. Arbitrary linear mixing permits the smaller upper bound. |
 | A normalized tripod scalar model retains perimeter $9/4$ even after intersecting submodularity, coherent retraction extension, full crossing, curvature, and all hypergraph terminal-mincut inequalities are imposed. | [Tripod countermodel](TRIPOD_COUNTERMODEL.md), explicit charge formula, mixed-derivative proof, and barycenter calculation. | This disproves sufficiency of the listed scalar requirements, including the proposed uncrossing axiom. It is not a tensor spectral point. |
 | Copying a tensor's input index to another party has exact rank equal to the sum of its matrix-slice ranks. | [Copied-input obstruction](COPIED_INPUT_OBSTRUCTION.md), matching flattening and decomposition. | Polynomial multiplication costs $ab$ after copying; matrix multiplication costs at least $n^3$ in every input basis. This is about the changed tensor. |
 | Simultaneous separation works for any fixed number of shared parties. | [Multiple-party separator](MULTIPLE_PARTY_SEPARATOR.md), an explicit sum-of-squares degeneration and type argument. | Independently reconstructed prior work of Zhou, not an original escape from Zhou's higher-order barrier. |
@@ -99,7 +103,22 @@ Y_q=U_{ABCD}(q)\otimes U_{AB}(q),
 
 the determinant-pencil theorem in [OVERLAPPING_UNITS.md](OVERLAPPING_UNITS.md) proves that $Y_q$ is not a degeneration of $X_q$ for any $q\ge2$, even with any common full-unit catalyst. It therefore excludes every equal-power version as well. A separate degree-four covariant proof and an exact degree-eight invariant check confirm the binary case.
 
-The argument does not exclude source-only unit overhead. A sharp calculation in the restricted class with monomial maps on the two outer parties requires overhead at least $\sqrt q$, and an explicit restriction attains it for square $q$. Every three-party regrouping admits the desired conversion. Thus any unrestricted asymptotic obstruction must use four-party information and survive arbitrary mixing on those outer parties. The full spectral inequality remains unresolved; the tripod countermodel shows that it would not alone supply the missing perimeter bound from the listed scalar constraints.
+The argument does not exclude source-only unit overhead. A sharp calculation in the restricted class with monomial maps on the two outer parties requires overhead at least $\sqrt q$, and an explicit restriction attains it for square $q$. The [unrestricted construction](UNCROSSING_OVERHEAD.md) improves the overhead exponent to at most $`1/5`$ by composing face matrix multiplication and four-cycle distillation. It necessarily leaves that monomial class. Every three-party regrouping admits the desired conversion. Thus any unrestricted asymptotic obstruction must use four-party information and survive arbitrary mixing on those outer parties. The full zero-overhead spectral inequality remains unresolved; the tripod countermodel shows that it would not alone supply the missing perimeter bound from the listed scalar constraints.
+
+[UNCROSSING_RANK_TESTS.md](UNCROSSING_RANK_TESTS.md) proves that retained-pair multilinear commutative rank cannot separate the desired uncrossing direction even after arbitrary tensor multipliers. An all-degree exterior covariant supplies finite obstructions, but the entire family stops obstructing after a source unit of size two. These are limitations of the stated tests, not pointwise inequalities for every spectral point.
+
+## Full-tensor constraints and the new remaining conversion
+
+The [geodesic rigidity theorem](FULL_TENSOR_CONSTRAINTS.md) fixes every tensor value on each three-party geodesic restriction. Pairwise losslessness of a projection that identifies two central indices does not prove losslessness of the next projection: the tempting proof treats a duplicated label on two parties as one joint party and then uses maps that are not local. The stronger, explicitly stated target retains all three matrix multiplication edge labels at a fourth party; its exact restriction problem is equivalent to covering the whole matrix multiplication support subspace by a sum of small product subspaces. Counting coordinate supports does not control arbitrary linear cancellation.
+
+The [tetrahedral formulation](TETRAHEDRAL_OVERHEAD.md) gives a second exact target. If $`H_q`$ is the product of four three-party face units and $`K_q`$ is the product of the six tetrahedral wires, then the least extra full-unit exponent is
+
+```math
+\gamma=\max_{F\in\Delta_4}\log_q\frac{F(K_q)}{F(H_q)},
+\qquad \omega_{\mathbb C}-2\le\gamma\le4-\frac8{\omega_{\mathbb C}}.
+```
+
+Thus $`\gamma=0`$ is equivalent to the original objective. The written proof includes the conversion between extra source powers and source-only full-unit overhead. A finite determinant obstruction excludes $`H_q\unrhd K_q`$, even with common full-unit catalysts, while all ordinary cut flattenings agree. That finite obstruction is compatible with vanishing overhead exponent.
 
 ## Remaining mathematical obligation
 
@@ -128,6 +147,7 @@ python3 check_tripod_countermodel.py
 python3 check_sun_quotient_budget.py
 python3 check_sun_dense_table.py
 python3 check_sun_active_cell_compression.py
+python3 check_four_party_constraints.py
 ```
 
 All scripts except the propagation-local script use Python's standard library; that script also uses SymPy. They check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
