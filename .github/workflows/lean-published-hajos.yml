@@ -1,0 +1,43 @@
+name: Published Hajos conjecture
+on:
+  pull_request:
+    paths:
+      - 'lean/Conjectures/PublishedHajos.lean'
+      - 'scripts/verify_published_hajos.py'
+      - '.github/workflows/lean-published-hajos.yml'
+  push:
+    branches: [research, review/published-hajos]
+    paths:
+      - 'lean/Conjectures/PublishedHajos.lean'
+      - 'scripts/verify_published_hajos.py'
+      - '.github/workflows/lean-published-hajos.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+      - name: Strict source, axiom audit and kernel replay
+        run: python3 scripts/verify_published_hajos.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: checked-published-hajos
+          path: .candidate-artifacts/published-hajos/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
