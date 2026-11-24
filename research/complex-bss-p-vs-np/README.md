@@ -96,6 +96,21 @@ Two exact counterexamples constrain the cofactor route. [RELATIVE_INVARIANT_CANC
 
 The full HN separation, polynomial-size completeness of the continuous certificate, and unrestricted resultant extraction remain research questions in this campaign.
 
+## Full branch saturation and algebraic-fiber continuation
+
+[SATURATED_PATH_RADICAL_JETS.md](SATURATED_PATH_RADICAL_JETS.md) uses every equality and nonzero condition on a generic accepting branch. If its zero-test numerators are `F_i` and its nonzero conditions have product `G`, then the radical of the saturated ideal is exactly the irreducible resultant ideal. Two independent generic linear combinations `U,V` give the exact identity
+
+```math
+\frac{\mathop{\mathrm{rad}}(GU)\mathop{\mathrm{rad}}(GV)}
+{\mathop{\mathrm{rad}}(GUV)\mathop{\mathrm{rad}}(G)}=cR.
+```
+
+Polynomial border bounds for normalized low-order jets of these radicals would finish the separation. That degree-independent radical-jet bound is unproved. The note distinguishes it from the proved factor theorem and Dutta--Saxena--Sinhababu's Radical Conjecture. It also gives exact failures of recovering radical jets from bounded input jets and of assuming polynomially many multiplicity classes. [Branch review](SATURATED_PATH_AND_MULTIPLICITY_REVIEW.md) and [stress-test review](RADICAL_JET_TESTS_REVIEW.md). The separate [signed-multiplicity map](SIGNED_MULTIPLICITY_RATIONAL_MAP.md) uses only two derivatives, but its cleared graph has an exponentially thick spurious vertical component; no short regular-value certificate is supplied.
+
+[ORBIT_PRODUCT_COMPRESSION_ATTEMPT.md](ORBIT_PRODUCT_COMPRESSION_ATTEMPT.md) constructs finite fibers with exponential generic support and changing multiplicities, then proves that their rational invariance identity rules out polynomial-size completeness. The obstruction also covers any complete short nonconstant rational-invariant family. It preserves the actual cost of substituted circuit copies and the failure of separately quantified local orbit values. [Review](ORBIT_PRODUCT_REVIEW.md).
+
+[AUXILIARY_FINITE_FIBER_ATTEMPT.md](AUXILIARY_FINITE_FIBER_ATTEMPT.md) supplies an alternative three-block verifier using monic triangular incidence systems. Their fibers remain finite and nonempty at every parameter, including collisions. Bounded-depth, bounded-degree systems and bounded-depth Kummer towers reduce to the excluded finite-choice prefixes; the root lists precede their universal labels, and all coordinates and operations are counted. Polynomial-size completeness for deeper or coupled finite systems remains unproved. [Review](AUXILIARY_FINITE_FIBER_REVIEW.md).
+
 ## Earlier research notes
 
 - [PROTOCOL.md](PROTOCOL.md) gives a sound uniform sum-check formula on all complex matrices, with `2m` alternating blocks, and exact counterexamples to moving all messages or all challenges together. It also proves an obstruction to generic small arithmetic-circuit commitments for adaptive messages and a sound batching lemma with its actual coefficient-volume cost.

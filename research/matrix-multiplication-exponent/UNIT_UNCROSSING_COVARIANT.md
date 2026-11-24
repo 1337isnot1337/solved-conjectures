@@ -143,4 +143,4 @@ It vanishes throughout the local-map orbit closure of $S$, while its value at $T
 
 ## Scope
 
-The proposition excludes this specific binary one-step degeneration. It does not exclude tensor-power conversions with subexponential loss. It therefore does not settle the spectral numerical inequality that motivated the attempted uncrossing, and it gives no lower bound above two for matrix multiplication. Any asymptotic use still requires its own proof.
+The proposition excludes this specific binary one-step degeneration. It does not exclude tensor-power conversions with subexponential loss. It therefore does not settle the spectral numerical inequality that motivated the attempted uncrossing, and it gives no lower bound above two for matrix multiplication. The required separate asymptotic proof is now supplied in [UNCROSSING_ASYMPTOTIC.md](UNCROSSING_ASYMPTOTIC.md), using subexponential source-only overhead.

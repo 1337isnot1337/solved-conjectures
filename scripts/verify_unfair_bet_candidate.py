@@ -3,7 +3,10 @@
 import verify_lean_candidate as gate
 
 TASK = "unfair-bet-overlap"
-MODULE = "Conjectures.EkhadZeilbergerOverlap"
+MODULES = [
+    "Conjectures.EkhadZeilbergerOverlap",
+    "Conjectures.EkhadZeilbergerWords",
+]
 REQUIRED = [
     "EkhadZeilberger.overlapMass_step",
     "EkhadZeilberger.overlapMass_bound",
@@ -11,21 +14,30 @@ REQUIRED = [
     "EkhadZeilberger.nonconstant_advantage_lt",
     "EkhadZeilberger.constant_loser_advantage",
     "EkhadZeilberger.full_alphabet_constant_beats_nonconstant",
+    "EkhadZeilberger.constant_of_overlap_one",
+    "EkhadZeilberger.overlapWeight_le_shifted_mass",
+    "EkhadZeilberger.constant_cross_weight_le",
+    "EkhadZeilberger.nonconstant_word_advantage_lt",
+    "EkhadZeilberger.constant_word_advantage_le",
+    "EkhadZeilberger.lastException_attains",
 ]
 
 def main():
-    modules = gate.dependency_order([MODULE])
-    if modules != [MODULE]:
+    modules = gate.dependency_order(MODULES)
+    if modules != MODULES:
         raise RuntimeError("Unexpected project closure")
     before = gate.source_hashes(modules)
-    gate.run("lake", "env", "lean", "-j1", "-M4500",
-             "-DwarningAsError=true", "Conjectures/EkhadZeilbergerOverlap.lean")
-    gate.run("lake", "build", MODULE)
-    gate.audit([MODULE], REQUIRED, modules, TASK)
-    gate.run("lake", "env", "leanchecker", MODULE)
+    for module in modules:
+        path = module.replace(".", "/") + ".lean"
+        gate.run("lake", "env", "lean", "-j1", "-M4500",
+                 "-DwarningAsError=true", path)
+        gate.run("lake", "build", module)
+    gate.audit(MODULES, REQUIRED, modules, TASK)
+    for module in modules:
+        gate.run("lake", "env", "leanchecker", module)
     if gate.source_hashes(modules) != before:
         raise RuntimeError("Candidate proof inputs changed")
-    gate.export_artifacts(TASK, [MODULE], modules)
+    gate.export_artifacts(TASK, MODULES, modules)
     print("PASS: strict source, axiom whitelist, independent kernel replay")
 
 if __name__ == "__main__":

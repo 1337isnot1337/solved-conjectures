@@ -22,6 +22,8 @@ The continued [directional cofactor extraction](../research/complex-bss-p-vs-np/
 
 The [continuous finite-fiber attempt](../research/complex-bss-p-vs-np/SKEW_PRODUCT_MOVING_FIBER_ATTEMPT.md), [polynomial-support exclusion](../research/complex-bss-p-vs-np/SKEW_POLYNOMIAL_SUPPORT_EXCLUSION.md), [moving algebraic challenge lemma](../research/complex-bss-p-vs-np/MOVING_ALGEBRAIC_CHALLENGES.md), and [pole-cluster counterexample](../research/complex-bss-p-vs-np/RECIPROCAL_POLE_CLUSTER_OBSTRUCTION.md) have written proofs and internal reviews recorded in the campaign. The three-block verifier has only exponential-size completeness; the required polynomial bound remains open. An independent exact symbolic computation checks the finite relative-invariant cancellation example, not a growing-resultant lower bound. No Lean change or formal verification of these new arguments is claimed.
 
+The [saturated-path and radical-jet note](../research/complex-bss-p-vs-np/SATURATED_PATH_RADICAL_JETS.md), [signed-multiplicity map](../research/complex-bss-p-vs-np/SIGNED_MULTIPLICITY_RATIONAL_MAP.md), [orbit-product obstruction](../research/complex-bss-p-vs-np/ORBIT_PRODUCT_COMPRESSION_ATTEMPT.md), and [auxiliary finite-fiber verifier](../research/complex-bss-p-vs-np/AUXILIARY_FINITE_FIBER_ATTEMPT.md) have complete written reductions and separate internal reviews linked from the campaign record. The radical-jet bound and polynomial completeness are explicitly unproved. Exact local counterexamples delimit the failed steps; they are not a computation of permanent complexity or a verification of the target separation. No Lean files changed in this checkpoint.
+
 ## Boolean Hamiltonicity research lemmas
 
 Run these standard-library checks from the repository root:

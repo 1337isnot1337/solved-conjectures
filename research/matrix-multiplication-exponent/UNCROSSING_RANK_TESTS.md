@@ -1,6 +1,6 @@
 # Unrestricted uncrossing: a second pass
 
-Status: research. No lower bound growing with $`q`$ has been proved for arbitrary outer-party maps, and no subpolynomial-overhead conversion has been constructed. The results below identify two exact limitations of possible approaches on the full tensor semiring; they do not merely test a scalar countermodel.
+Status: proved limitations of the stated tests. The later [explicit separator conversion](UNCROSSING_ASYMPTOTIC.md) resolves the source-only question affirmatively with subpolynomial overhead. The results below remain valid and explain why these rank tests did not supply an asymptotic obstruction; they do not merely test a scalar countermodel.
 
 Throughout the field is $`\mathbb C`$. All tensor products are regrouped by the named four parties. Write
 
@@ -180,7 +180,7 @@ The companion `check_four_party_constraints.py` independently constructs the fou
 
 ## 4. What this pass has and has not changed
 
-The arbitrary-multiplier theorem rules out an unrestricted class of commutative-rank tests for proving a positive uncrossing overhead exponent. The exterior-covariant calculation proves finite obstructions but also proves that this whole covariant family stops obstructing after a constant source overhead. Neither result settles the source-only conversion with arbitrary mixing at $`C,D`$.
+The arbitrary-multiplier theorem rules out an unrestricted class of commutative-rank tests for proving a positive uncrossing overhead exponent. The exterior-covariant calculation proves finite obstructions but also proves that this whole covariant family stops obstructing after a constant source overhead. Neither rank-test result alone settles the source-only conversion with arbitrary mixing at $`C,D`$. The separate [separator proof](UNCROSSING_ASYMPTOTIC.md) now supplies that conversion.
 
 The other concrete four-party target is the tetrahedral conversion
 

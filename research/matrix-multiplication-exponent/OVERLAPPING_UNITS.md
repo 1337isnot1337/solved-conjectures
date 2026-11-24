@@ -1,4 +1,4 @@
-# Overlapping unit tensors: a failed uncrossing degeneration
+# Overlapping unit tensors: obstruction to finite uncrossing
 
 Status: a proved family of finite conversion obstructions and a sharp restricted overhead bound. The
 corresponding universal asymptotic inequality is not established or
@@ -547,8 +547,11 @@ conversions of tensor powers with subexponential unit overhead, whose
 source and target local spaces have different dimensions. In
 particular, a unit attached only to the source is not a common
 catalyst, and the square determinant transformation used above no
-longer applies to the first two local maps. No such asymptotic conversion
-or asymptotic obstruction is proved here.
+longer applies to the first two local maps. The later
+[explicit separator proof](UNCROSSING_ASYMPTOTIC.md) establishes this
+asymptotic conversion with source overhead $`q^{O_q(N^{2/3})}`$ for
+$`N`$ copies. The determinant obstruction proved here remains a finite
+and common-catalyst result.
 
 Moreover, the normalized extension theorem provides one extension
 for each fixed coherent law on retractions. It does not permit

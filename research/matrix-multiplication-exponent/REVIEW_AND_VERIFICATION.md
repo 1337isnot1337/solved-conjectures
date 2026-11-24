@@ -28,9 +28,12 @@ The concurrent scalar construction in [PR #254](https://github.com/1337isnot1337
 | Overlapping units | Determinant-grid factorization, valuation limits, catalyst multiplicities, independent binary polynomial certificates, the sharp restricted source-overhead bound, and all three-party regroupings. | Finite and common-catalyst obstructions do not exclude unrestricted source-only subexponential overhead. |
 | Full-tensor rigidity | Zero-distance teleportation, normalized quotient additivity, geodesic face normalization, edge uniqueness, and the genuine non-Hilbert quantum example. | The overlap of three rigid restrictions has not been proved to fix the full-unit charge. |
 | Tetrahedral overhead | Exact overhead duality, submultiplicative limit, replacement of extra source powers by units, both bounds in terms of omega, and the finite determinant factorization. | Vanishing overhead remains exactly equivalent to the target; no conversion attaining zero is supplied. |
-| Uncrossing overhead | Four-cycle all-terminal subrank, the two face inequalities, one-variable optimization, and the explicit composition of matrix multiplication and distillation maps. | The exponent at most one fifth is an upper bound, not a proof that any positive overhead is necessary. |
+| Asymptotic uncrossing | The Latin block partition, all finite polynomial-map coefficients, degree bound, exact interpolation, catalyst reuse, and overhead estimate for every tensor power. | The source-only exponent is zero; the earlier one-fifth upper bound remains valid but nonsharp. Finite/common-unit impossibility is compatible with this result. |
+| General free-set separation | Independent catalyst indices, the Fourier rank bound, both local sums of squares, the explicit priority constant, type superadditivity, intersecting-unit uncrossing, and full hypergraph untwisting. | All three workers and root reviewed the proof. No finite zero-overhead map, reverse weighted comparison, or exponent-two conclusion is asserted. |
 | Unrestricted rank tests | All six retained-pair cases with arbitrary tensor multipliers, the Fourier specialization, exterior matching ranks, and the constant-overhead limitation. | Neither a family of rank tests nor an inequality between spectral minima classifies every spectral point. |
 | Unit-star conversion | Centroid semicontinuity, the trace-form calculation for matrix multiplication, common-unit multiplicities, monomial box count, and the smaller-product block construction. | The unrestricted upper exponent one eighth does not remove the required error term from the signed inequality. |
+
+This checkpoint additionally reviews the weighted-support relaxation, the coefficient-independent Koszul pivot proof, the ordinary-block commutator, the weighted tetrahedral determinant, and the four-label resource certificate. The root reviewer checked the precise Landsberg--Michałek and Li statements in their primary sources. The weighted lower-bound proof was separately challenged by both other research workers. These reviews establish the stated finite obstructions and conditional criteria, not the exponent-two conclusion.
 
 ## Reproducible exact checks
 
@@ -47,9 +50,13 @@ python3 check_sun_quotient_budget.py
 python3 check_sun_dense_table.py
 python3 check_sun_active_cell_compression.py
 python3 check_four_party_constraints.py
+python3 check_weighted_mm_koszul_pivots.py
+python3 check_sun_ordinary_partial_block.py
+python3 check_general_free_separator.py
+python3 check_uncrossing_separator.py
 ```
 
-The first six commands passed on the earlier assembled checkpoint. The next three passed on the source-certificate checkpoints. The four-party checker passed on the assembled full-tensor checkpoint; the earlier scripts were unchanged. The propagation-local script uses SymPy. The other scripts use Python's standard library. The computations use exact integers, rational arithmetic, and symbolic polynomials; they require no network access.
+The first six commands passed on the earlier assembled checkpoint. The next three passed on the source-certificate checkpoints. The four-party checker passed on the assembled full-tensor checkpoint; the earlier scripts were unchanged. The weighted-pivot and ordinary-partial-block checkers passed on the assembled files. The general-free and explicit-uncrossing checkers passed on the assembled files. The propagation-local, ordinary-partial-block, and general-free scripts use SymPy. The other scripts use Python's standard library. The computations use exact integers, rational arithmetic, and symbolic polynomials; they require no network access.
 
 | Script | Checked content |
 | --- | --- |
@@ -62,6 +69,10 @@ The first six commands passed on the earlier assembled checkpoint. The next thre
 | `check_sun_quotient_budget.py` | Zero feature transport in all 64 outer copies and all eight allowed character triples; the exact reduced budget 8128; the detailed imported lower-bound substitution giving 8185. |
 | `check_sun_active_cell_compression.py` | Exact five-product and diagonal four-product identities, both low-level source-budget comparisons, and all 216 binary two-by-two row-map triples. |
 | `check_sun_dense_table.py` | All 4096 integer module/chart table entries and all 1024 normalized Walsh coefficients, reconstructed from the printed packet ledger. |
+| `check_weighted_mm_koszul_pivots.py` | The bijective pivots, triangular support order, and exactly one lost pivot per block for sizes two through seven; the exact weighted lower bound 8129 at size64. No random-weight sampling is used. |
+| `check_sun_ordinary_partial_block.py` | Symbolic inverses and the four nonzero commutator entries for all nonzero coefficients on the explicit 44-cycle diagnostic support. |
+| `check_general_free_separator.py` | All local weight sums and surviving labels in 144 configurations with 175,974 support entries; exact Fourier identities in cyclotomic quotients for 19 moduli up to 22. |
+| `check_uncrossing_separator.py` | Every coefficient of the finite polynomial map for sizes two through eight, plus exact seven-point interpolation at size two. |
 | `check_four_party_constraints.py` | Seventeen exterior covariant ranks obtained by independent alternating projections and exact rational elimination, plus 56 ordinary cut ranks for uncrossing and tetrahedral tensors. |
 
 These checks corroborate finite statements in the written proofs. They do not execute a complete matrix multiplication algorithm, verify an unbounded induction, construct a normalized spectral point above perimeter two, or prove the desired universal perimeter upper bound.
@@ -73,6 +84,8 @@ Coordination and the adversarial-review request are in [issue #250](https://gith
 - [PR #258](https://github.com/1337isnot1337/solved-conjectures/pull/258) contains the normalized extension, spectral model, copied-input obstruction, separator, and initial scalar compatibility proofs. Its merge commit is `323c9598df45dfff1f6aa0e20f6be405bef543bf`.
 - [PR #262](https://github.com/1337isnot1337/solved-conjectures/pull/262) contains the source audit, Sun checks, tree/cap results, overlapping-unit obstruction, and research-status record.
 - [PR #269](https://github.com/1337isnot1337/solved-conjectures/pull/269) contains the literal quotient contradiction, exact active-cell compression, and dense scalar-table reconstruction. Its merge commit is `98cc1d899ca7cc27b3a6d6718eeffa2ba6257b56`; all nine changed files were compared with the merged Git blob hashes and match.
-- [PR #271](https://github.com/1337isnot1337/solved-conjectures/pull/271) contains the full-tensor rigidity results, exact tetrahedral reformulation, constructive overhead upper bounds, and limitations of unrestricted rank tests.
+- [PR #271](https://github.com/1337isnot1337/solved-conjectures/pull/271) contains the full-tensor rigidity results, exact tetrahedral reformulation, constructive overhead upper bounds, and limitations of unrestricted rank tests. Its merge commit is `eb1a93cc686e855c5742dfbfa9639c5d9ec276b5`; all seven changed files match their reviewed local Git blob hashes.
+
+- [PR #274](https://github.com/1337isnot1337/solved-conjectures/pull/274) contains the arbitrary-weight border obstruction, dense partial-support criterion, and four-party resource limitation. Its merge commit is `31aec761d16ebc0526e24bfd27431ae1c625fa68`; all eight changed files match the reviewed local Git blob hashes.
 
 All files remain under `research/`. No root Results-table row, solved-conjecture directory, Lean theorem, or claimed kernel-verification status was added for this target. Repository-wide hosted checks are reported separately in the PR conversation; a successful existing Lean workflow does not formalize these new Markdown proofs.

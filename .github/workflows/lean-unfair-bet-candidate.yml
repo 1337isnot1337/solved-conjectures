@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'lean/Conjectures/EkhadZeilbergerOverlap.lean'
+      - 'lean/Conjectures/EkhadZeilbergerWords.lean'
       - 'scripts/verify_unfair_bet_candidate.py'
       - '.github/workflows/lean-unfair-bet-candidate.yml'
       - 'scripts/verify_lean_candidate.py'
