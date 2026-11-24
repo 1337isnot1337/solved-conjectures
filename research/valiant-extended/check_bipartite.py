@@ -75,6 +75,34 @@ def check_pair_count():
         assert r*2*expansion <= (r-1)*total**2
 
 
+def balanced_colorings(size):
+    return [bits for bits in product((0, 1), repeat=size)
+            if abs(2*sum(bits) - size) <= 1]
+
+
+def check_unit_costs():
+    checked = 0
+    for size_a, size_b in product(range(5), repeat=2):
+        total = size_a + size_b
+        maximum = max(size_a, size_b)
+        if total < 2:
+            continue
+        if maximum == 1:
+            cuts = [(0, 1), (1, 0)]
+        else:
+            cuts = [a + b for a in balanced_colorings(size_a)
+                    for b in balanced_colorings(size_b)]
+        for subset_size in range(2, total+1):
+            for subset in combinations(range(total), subset_size):
+                first = sum(i < size_a for i in subset)
+                cost = max(first, subset_size-first)
+                crosses = sum(any(bits[i] != bits[subset[0]] for i in subset)
+                              for bits in cuts)
+                assert crosses*maximum >= cost*len(cuts)
+                checked += 1
+    return checked
+
+
 if __name__ == "__main__":
     for t, modulus in [(2, 0b10011), (3, 0b1000011)]:
         count = check_matrices(t, modulus)
@@ -84,3 +112,4 @@ if __name__ == "__main__":
         print(f"r={r}: {2**(2*r)} cuts, routing {routing}, tensor rate >= {guaranteed}")
     check_pair_count()
     print("Ptolemy product count checked on all 512 binary 3 by 3 arrays")
+    print(f"Balanced-cut domination checked on {check_unit_costs()} hyperedges")

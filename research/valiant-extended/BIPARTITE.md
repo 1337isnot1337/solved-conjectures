@@ -67,3 +67,24 @@ On the feasible subspace $`W=U_A\cap U_B`$, the joint output image is exactly th
 Independence of the two clique label spaces implies $`f_A(W\cap\ker f_B)`$ surjects onto a space of dimension $`d/2`$. Since $`\dim\ker(f_B|_{U_B})=\dim U_B-d`$, this gives $`\dim U_B-d\ge d/2`$. Adding yields $`e\ge2d`$, or $`b/a\le r/(2(r-1))`$. The routing construction uses linear relations and meets the bound. The argument also holds for affine relations by translating an accepted configuration. Local complex maps with signed coefficients or nonlinear support can evade steps in this proof.
 
 The strict threshold (1) is exactly $`\sqrt2`$ times routing. None of flattening dominance, the midpoint structure, or the linear-relation construction yields a conversion over that threshold. [Finite field and cut checks](check_bipartite.py)
+
+## Even optimal conversions through a single multipartite unit stop at routing
+
+Consider networks of unit tensors on subsets of the $`2r`$ parties. A step may replace any product of these units by one unit, or one unit by any product, whenever the corresponding restriction actually exists, including at an asymptotic rate. Unused factors can pass through each step. Thus the allowed steps include arbitrary distillation of a single multipartite unit, synthesis of an arbitrary unit network from one unit, and separate processing of disjoint resources. We prove a bound for this entire collection of steps without making any assumption on the unknown tensor ranks in the synthesis steps.
+
+For a set $`H`$ of at least two parties define $`c(H)=\max(|H\cap A|,|H\cap B|)`$, and put $`c(H)=0`$ otherwise. Assign a dimension-$`q`$ unit on $`H`$ the cost $`c(H)\log_2 q`$, extended by addition across factors. For a product of units with log dimensions $`w_H`$, its log flattening rank across a cut is $`\sum_{H\text{ crosses}}w_H`$. All the following inequalities pass to asymptotic rates. A subexponential full unit costs $`o(N)`$ on the fixed party set for block length $`N`$.
+
+For a many-to-one step producing a unit of log dimension $`s`$ on $`P`$, choose a part $`D\in\{A,B\}`$ attaining $`c(P)`$. Assume $`|P|\ge2`$. Each singleton flattening at a vertex $`v\in P\cap D`$ forces the total input weight of nonsingleton hyperedges containing $`v`$ to be at least $`s`$. Summing over these vertices gives $`s c(P)\le\sum_H w_H c(H)`$, including when auxiliary parties are used.
+
+For a one-to-many step, the input unit has support $`P`$, cost $`sc(P)`$. Every positive-weight output unit on at least two parties is supported in $`P`$, by singleton flattenings outside $`P`$. We construct a random cut on $`P`$ such that for every nonsingleton $`H\subseteq P`$,
+```math
+                \Pr(H\text{ crosses})\ge c(H)/c(P).                     \tag{3}
+```
+Write $`M=c(P)`$. When $`M=1`$ the only nonsingleton $`P`$ has one point of each part; separate the two. For $`M\ge2`$, independently in each part of $`P`$ choose a uniform balanced two-coloring, with a fair global color flip for that part. If $`c(H)=1`$, $`H`$ has one point of each part, so its crossing probability is $`1/2\ge1/M`$. If $`k=c(H)\ge2`$, select a part containing $`k`$ points of $`H`$ and write $`m`$ for its size in $`P`$. When $`k>\lceil m/2\rceil`$, every balanced coloring splits these points. Otherwise any fixed two of them have separation probability
+```math
+  \frac{2\lfloor m/2\rfloor\lceil m/2\rceil}{m(m-1)}
+       \ge \frac{\lceil m/2\rceil}{m}\ge\frac{k}{M}.
+```
+This proves (3). Across each cut, the sum of crossing output weights is at most $`s`$, by flattening the input. Taking expectations gives $`\sum_H w_H c(H)\le s c(P)`$.
+
+The cost is therefore nonincreasing under every allowed step. Addition also permits cancellation of any common catalyst made of these units. A cross wire costs one per bit and a within wire costs two. On $`X_r\to Y_r`$ the consequent rate bound is exactly $`r/(2(r-1))`$, attained by routing. This bound holds even if the individual single-unit steps are implemented by unrestricted complex local maps. For example, the exact single-unit distillation theorem of Vrana and Christandl is covered. The conversion (2) for $`r\ge3`$ thus needs a step with multiple consumed factors and multiple produced factors, or some resource outside this calculus. The cost is an invariant of this collection of steps only. [Vrana and Christandl, arXiv:1603.03964v2, Theorem 1](https://arxiv.org/pdf/1603.03964v2)
