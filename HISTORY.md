@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-23 — Integer gate budgets and adaptive prime-support obstruction
+
+The [Shub–Smale τ research](research/shub-smale-tau/INTEGER_GATE_BUDGETS.md) records exact integer gate inequalities: a coprime addition has a product-of-parent-values resultant budget, units on at least five integer evaluation points have one sign, and nonzero integer multiplication gives a bounded-cancellation escape estimate. None has been amortized over arbitrary circuit histories. The constant-parent and shared-factor cases remain explicit.
+
+A valid two-anchor S-unit bound is paired with a counterexample to its proposed prime-support estimate. The monic primitive squarefree polynomial x^(n+1)−x has exact fixed divisor equal to the product of primes p with p−1 dividing n. The unconditional Fan–Pollack theorem makes this support superpolynomial in circuit length along an infinite sequence, simultaneously at every nonzero integer evaluation, despite at most three integer roots. This does not refute τ or the separate harmonic Galois statistic. Primary theorem versions, finite checks and internal review are recorded in [issue #260](https://github.com/1337isnot1337/solved-conjectures/issues/260).
+
 ## 2026-11-23 — Recovering an unknown cofactor of small radical degree
 
 The [Shub–Smale τ research](research/shub-smale-tau/COFACTOR_RECOVERY.md) removes the supplied-factorization hypothesis from the powered-cofactor reduction. A length-s program for H=F_N Q yields a nonzero integer scalar multiple of F_N with O((s+1)(d+1)^14) gates, where d is the number of distinct complex roots of Q. Shifted logarithmic derivatives, a charged finite jet, exact Padé reconstruction and low-degree gcds recover bases grouped by their multiplicities. No program for Q is given, and arbitrary multiplicities and overlap with the prescribed roots are allowed.

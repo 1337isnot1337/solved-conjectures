@@ -503,7 +503,12 @@ the symbolic coefficient inputs. All coefficients and operations in
 the input and output are charged. This compiler cannot exist under
 the repository's standing pinned Anthropic theorem.
 
-Here is a direct reduction using its explicit permanent statement.
+Here is a direct reduction using its explicit permanent statement. The
+Kronecker coefficient encoding is the classical argument in Kaltofen,
+*Single-Factor Hensel Lifting and its Application to the Straight-Line
+Complexity of Certain Polynomials* (STOC 1987), Section 2; see
+[SOURCES.md](SOURCES.md). The adaptation below uses finite differences
+and the pinned border theorem.
 For an `n`-square matrix of indeterminates `a_ij`, put
 
 

@@ -759,6 +759,50 @@ def test_unknown_cofactor_recovery():
     run_checks()
 
 
+
+def test_integral_gate_budgets():
+    unit = [1, -3, 1]
+    assert add(mul(unit, unit), [-1]) == root_product(range(4))
+    assert [peval(unit, r) for r in range(4)] == [1, -1, -1, 1]
+
+    def resultant(a, b):
+        m, n = len(a)-1, len(b)-1
+        size = m+n
+        matrix = [[0] * size for _ in range(size)]
+        for j in range(n):
+            for i, coefficient in enumerate(a):
+                matrix[i+j][j] = coefficient
+        for j in range(m):
+            for i, coefficient in enumerate(b):
+                matrix[i+j][j+n] = coefficient
+        return determinant(matrix)
+
+    roots = [-3, 0, 2]
+    for cofactor in ([1], [1, 0, 1]):
+        P = mul(root_product(roots), cofactor)
+        U = [3] + [0] * (len(P)-1) + [2]
+        V = add(U, scale(P, -1))
+        assert len(V) == len(U) > len(P)
+        B = abs(resultant(U, V))
+        values = prod(abs(peval(U, r)) for r in roots)
+        assert B != 0 and B % values == 0
+        assert B == 2 * abs(resultant(U, P))
+        W = [3]
+        assert abs(resultant(W, add(W, scale(P, -1)))) == 3**(len(P)-1)
+
+    for n in (1, 2, 4, 6, 12, 30):
+        primes = [p for p in range(2, n+2) if len(factor_integer(p)) == 1
+                  and factor_integer(p).get(p) == 1 and n % (p-1) == 0]
+        fixed = prod(primes)
+        sample_gcd = 0
+        for a in range(n+3):
+            sample_gcd = gcd(sample_gcd, abs(a**(n+1)-a))
+        assert sample_gcd == fixed
+        for p in primes:
+            assert valuation(p**(n+1)-p, p) == 1
+    print('integer unit threshold, resultant degree correction, and fixed-divisor examples: passed')
+
+
 def main():
     test_carries_and_products()
     test_all_cuts()
@@ -779,6 +823,7 @@ def main():
     test_dense_square_chain_threshold()
     test_powered_cofactor_extraction()
     test_unknown_cofactor_recovery()
+    test_integral_gate_budgets()
     print('All finite exact checks passed. No tau bound or BSS separation was verified.')
 
 
