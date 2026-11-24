@@ -2,6 +2,7 @@ import Conjectures.NemethSeberryShuConcentration
 import Conjectures.NemethSeberryShuFourierRepair
 import Conjectures.NemethSeberryShuFourierTarget
 import Conjectures.NemethSeberryShuFourierSampling
+import Conjectures.NemethSeberryShuFourierSpectral
 import Conjectures.AlmironMoyanoWilf
 import Conjectures.AlmironMoyanoWilfAntichains
 import Conjectures.AlmironMoyanoWilfGeneratorCount

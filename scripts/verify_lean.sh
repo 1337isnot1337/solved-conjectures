@@ -8,6 +8,7 @@ modules=(
   Conjectures.NemethSeberryShuFourierRepair
   Conjectures.NemethSeberryShuFourierTarget
   Conjectures.NemethSeberryShuFourierSampling
+  Conjectures.NemethSeberryShuFourierSpectral
   Conjectures.AlmironMoyanoWilf
   Conjectures.AlmironMoyanoWilfAntichains
   Conjectures.AlmironMoyanoWilfGeneratorCount

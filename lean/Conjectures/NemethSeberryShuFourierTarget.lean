@@ -32,12 +32,12 @@ theorem inclusionProbability_bounds {ρ a : ℝ} (hρ₀ : 1 / 3 ≤ ρ) (hρ₁
   unfold inclusionProbability
   exact ⟨by linarith, by linarith⟩
 
-private theorem char_neg (i : ZMod p) :
+theorem standardCharacter_neg (i : ZMod p) :
     ZMod.stdAddChar (-i) = conj (ZMod.stdAddChar i) := by
   simp only [ZMod.stdAddChar_apply, AddChar.map_neg_eq_inv]
   exact Circle.coe_inv_eq_conj _
 
-private theorem char_sum (t : ZMod p) :
+theorem standardCharacter_sum (t : ZMod p) :
     ∑ i : ZMod p, ZMod.stdAddChar (t * i) = if t = 0 then (p : ℂ) else 0 := by
   split_ifs with h
   · simp only [h, zero_mul, AddChar.map_zero_eq_one, sum_const, card_univ, ZMod.card,
@@ -51,7 +51,7 @@ private theorem character_expand (ρ a : ℝ) (i l : ZMod p) :
       (a : ℂ) * ZMod.stdAddChar ((l - 1) * i) := by
   have hc : ZMod.stdAddChar i + ZMod.stdAddChar (-i) =
       (2 : ℂ) * (ZMod.stdAddChar i).re := by
-    rw [char_neg]
+    rw [standardCharacter_neg]
     exact RCLike.add_conj _
   have hprob : (inclusionProbability ρ a i : ℂ) =
       (ρ : ℂ) + (a : ℂ) * (ZMod.stdAddChar i + ZMod.stdAddChar (-i)) := by
@@ -72,7 +72,7 @@ theorem inclusionProbability_fourier (ρ a : ℝ) (l : ZMod p) :
       (ρ : ℂ) * (if l = 0 then (p : ℂ) else 0) +
       (a : ℂ) * (if l + 1 = 0 then (p : ℂ) else 0) +
       (a : ℂ) * (if l - 1 = 0 then (p : ℂ) else 0) := by
-  simp only [character_expand, sum_add_distrib, ← mul_sum, char_sum]
+  simp only [character_expand, sum_add_distrib, ← mul_sum, standardCharacter_sum]
 
 end
 

@@ -1,6 +1,6 @@
 # Németh–Seberry–Shu conjecture
 
-**Status: incomplete formalization.** Lean verifies the biased Fourier support construction, the congruence, and the final counting reduction. The permanent asymptotic and within-row separation remain open in Lean. This entry therefore contributes **zero completed results** to the current formalization campaign.
+**Status: incomplete formalization.** Lean verifies the biased Fourier support construction, the Fourier eigenvectors and Parseval identity, the congruence, and the final counting reduction. The permanent asymptotic and within-row separation remain open in Lean. This entry therefore contributes **zero completed results** to the current formalization campaign.
 
 ## Checked statements
 
@@ -19,8 +19,14 @@ For each allowed prime, row sum and amplitude, the same support has the prescrib
 cardinality and simultaneous unnormalized Fourier error at most
 $4\sqrt{p\log p}$. The three prescribed means are computed in
 [`inclusionProbability_fourier`](../../lean/Conjectures/NemethSeberryShuFourierTarget.lean).
-The [scoped receipt](../../docs/verification/lean-nss-fourier-sampling-20261124/receipt.json)
+The [scoped receipt](../../docs/verification/lean-nss-fourier-spectral-20261124/receipt.json)
 records the strict source check, full declaration audit and stock kernel replay.
+
+The [spectral module](../../lean/Conjectures/NemethSeberryShuFourierSpectral.lean)
+checks the orthogonality of the Fourier characters and proves that the sum
+of squared unnormalized Fourier magnitudes is exactly $p\,|S|$.
+It identifies the Fourier vectors as eigenvectors of the complexification
+of `binaryCirculant S` with the support Fourier coefficients as eigenvalues.
 
 ## Remaining obligation
 
@@ -33,7 +39,7 @@ The missing theorem is the following statement, already named by the checked int
 
 Here `HasDensePermanentFamilies q M` means that for **every** integer row sum `k` in `[ceil(q/3), floor(2q/3)]`, there are `M` binary supports of cardinality exactly `k` with pairwise distinct permanents. The threshold must be uniform over all these row sums.
 
-The remaining proof in §2 uses Fourier diagonalization and Parseval, the uniform permanent asymptotic of McCullagh in the form stated by Divoux–Wang, Proposition 3.1 and Remark 2.1, and a compactness argument giving a uniform positive separation between the selected amplitudes. The stronger quadratic refinement remains open in Lean.
+The remaining proof in §2 uses the uniform permanent asymptotic of McCullagh in the form stated by Divoux–Wang, Proposition 3.1 and Remark 2.1, and a compactness argument giving a uniform positive separation between the selected amplitudes. The stronger quadratic refinement remains open in Lean.
 
 ## Source and credit
 
