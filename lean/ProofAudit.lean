@@ -9,6 +9,13 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `AlmironMoyanoWilf.question_4_8_false,
+    `AlmironMoyanoWilf.question_4_13_uniform_threshold,
+    `AlmironMoyanoWilf.question_4_13_at_generator_count,
+    `AlmironMoyanoWilf.generated_minimal,
+    `AlmironMoyanoWilf.gap_threshold,
+    `AlmironMoyanoWilf.generator_refined_uniform_threshold,
+    `AlmironMoyanoWilf.fixedThreshold_isLeast,
     `GravgaardLeeUpperLower.sum_subset_target,
     `GravgaardLeeUpperLower.upper_gap_le_two_left,
     `GravgaardLeeUpperLower.Frame.exists_linked_left_cutoff,

@@ -1,5 +1,18 @@
 # Full formalization campaign
 
+
+## Almirón–Moyano-Fernández’s normalized Wilf modules
+
+[Lean proves the gap-antichain characterization and the exact fixed-semigroup
+threshold](../lean/Conjectures/AlmironMoyanoWilfFixedThreshold.lean). For every
+positive generator count, the threshold is the maximum of the individual
+ceiling formulas over the actual admissible antichains, with one for an empty
+class. The [sharp uniform construction](../lean/Conjectures/AlmironMoyanoWilfGeneratorCount.lean)
+shows that across all semigroups of multiplicity $m$, the threshold is $m$
+for each prescribed generator count from one to $m$. The development reuses
+the existing proof of Question 4.8 and the normalized multiplicity bound.
+The separate exact comparison for two-generated semigroups remains open in Lean.
+
 ## Németh–Seberry–Shu conjecture
 
 The [two-module formalization](../results/nemeth-seberry-shu/LEAN_STATUS.md)
