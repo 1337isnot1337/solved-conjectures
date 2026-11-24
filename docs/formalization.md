@@ -1,5 +1,12 @@
 # Full formalization campaign
 
+## Hajdu–Sárközy’s shifted-product total primitivity conjecture
+
+The [complete Lean formalization](../results/hajdu-sarkozy-shifted-products/FORMALIZATION.md) proves the original conjecture for every exponent pair at least two and every finite modification. It also proves every nonzero-shift two-variable symmetric-difference perturbation at the inverse minimum-exponent scale, and the full summable-family theorem with actual real-threshold counts and a positive retained-count limsup. Coefficient representations may overlap, and the candidate factor sets may be infinite.
+
+The twenty-four-module closure, comprising thirteen new modules and eleven unchanged dependencies, passed strict builds, the complete all-owned/private axiom audit, and exact stock-kernel replay. All fifty-three required endpoints are checked, and only the three standard axioms occur. The [independent review](../results/hajdu-sarkozy-shifted-products/LEAN_REVIEW.md), [proof receipt](../results/hajdu-sarkozy-shifted-products/verification/receipt.json), and [publication binding](../results/hajdu-sarkozy-shifted-products/verification/publication-binding.json) distinguish the proof gate from metadata-only registration checks. The optional extension to more than two variables is not separately formalized. Existing credits, priority uncertainty, and catalogue rank are retained; reused dependencies and corollaries are not additional results.
+
+
 ## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
 
 [Complete source-matched formalization](../results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md) of the original Conjecture 5.8. The three `Conjectures.ThueMorseSignDensity*` modules derive the recurrence from the actual stabilized integer coefficients of the infinite product and prove both finite-prefix count bounds and negations of density zero for `m=2`. The stronger exact-density theorem is not included. Scoped strict compilation, all-owned axiom audit and stock-kernel replay passed; package-wide validation is separate.

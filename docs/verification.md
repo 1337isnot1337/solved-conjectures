@@ -1,5 +1,9 @@
 # Verification
 
+## Hajdu–Sárközy’s shifted-product total primitivity conjecture
+
+From `lean/`, run `lake env python3 ../scripts/verify_hajdu_sarkozy_products.py`. The [dedicated workflow](../.github/workflows/lean-hajdu-sarkozy-shifted-products.yml) runs the same full strict source builds, all-owned/private transitive axiom audit, and exact stock-kernel replay. The [frozen proof receipt](../results/hajdu-sarkozy-shifted-products/verification/receipt.json) covers all twenty-four modules and fifty-three required endpoints. The [publication binding](../results/hajdu-sarkozy-shifted-products/verification/publication-binding.json) separately validates unchanged proof sources, the exact local closure, registrations, and the pinned checker; it does not claim an additional rebuild. [Scope and independent review](../results/hajdu-sarkozy-shifted-products/FORMALIZATION.md) distinguish the complete original/summable-family/two-variable results from the optional more-than-two-variable supplement. Aggregate verification and current-mode public deployment are separate obligations in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+
 ## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
 
 The three-module source closure of `Conjectures.ThueMorseSignDensity` passed strict compilation, all-owned axiom audit (250 declarations, 212 theorems, 119 private declarations, 27 required endpoints), and independent stock-kernel replay at `471a5984bb7bd0936cf1b78bc1827ca1d8ff68e2`. The [result-level receipt](../results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md) records exact hashes and the original conjecture scope. Reproduce using `python3 scripts/verify_lean_target.py --root Conjectures.ThueMorseSignDensity --require ThueMorseSignDensity.conjecture_false --require ThueMorseSignDensity.both_counterexamples --out .candidate-artifacts/thue-morse-sign-density`. Package-wide verification is separate.

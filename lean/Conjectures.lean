@@ -1230,3 +1230,16 @@ import Conjectures.HajduSarkozyCommon
 import Conjectures.HajduSarkozyDensity
 import Conjectures.HajduSarkozyFactors
 import Conjectures.HajduSarkozy
+import Conjectures.HajduSarkozyProductsArithmetic
+import Conjectures.HajduSarkozyProductsCounts
+import Conjectures.HajduSarkozyProductsSeries
+import Conjectures.HajduSarkozyProductsTails
+import Conjectures.HajduSarkozyProductsLimits
+import Conjectures.HajduSarkozyProductsCommon
+import Conjectures.HajduSarkozyProductsGrowth
+import Conjectures.HajduSarkozyProductsFactors
+import Conjectures.HajduSarkozyProductsBins
+import Conjectures.HajduSarkozyProductsProduct
+import Conjectures.HajduSarkozyProductsFamily
+import Conjectures.HajduSarkozyProductsPowers
+import Conjectures.HajduSarkozyProducts
