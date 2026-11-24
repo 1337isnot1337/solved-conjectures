@@ -287,12 +287,101 @@ def check_uniform_cyclic_trace():
         equal(trace, z*per, f"uniform cyclic trace m={m}")
 
 
+def check_soft_totalization():
+    eps, a, r, x = sp.symbols("eps a r x")
+    delta = lambda z: eps/(z*z+eps)
+    inverse = lambda z: z**3/(z**4+eps)
+    # A perturbed zero remains a defined germ at both replacement gates.
+    z = eps*r
+    equal(sp.limit(delta(z), eps, 0), 1, "soft zero-test at zero")
+    equal(sp.limit((delta(z)-1)/eps, eps, 0), -r*r,
+          "soft zero-test first error")
+    equal(sp.limit(inverse(z)/eps**2, eps, 0), r**3,
+          "soft totalized inverse at zero")
+    z = a+eps*r
+    equal(sp.limit(delta(z), eps, 0), 0, "soft zero-test off zero")
+    equal(sp.limit(inverse(z), eps, 0), 1/a,
+          "soft inverse off zero")
+    # Exact program: reject x=0; otherwise form x*(1/x) and accept.
+    # The candidate reciprocal is inactive at zero and must still be defined.
+    output = x*(1-delta(x))*inverse(x)
+    equal(output.subs(x, 0), 0, "inactive inverse at a zero input")
+    equal(sp.limit(output, eps, 0), 1, "active inverse off zero")
+
+
+def check_soft_support_hiding():
+    eps, x, y, b, r = sp.symbols("eps x y b r")
+    for first_scale, last_scale in ((1, 1), (2, 1), (8, 1)):
+        den = x*(y*y+eps**first_scale)+eps**last_scale*(y+eps**first_scale)
+        f = eps**last_scale*(y+eps**first_scale)/den
+        u = eps**last_scale/(x*y+eps**last_scale)
+        difference = eps**(first_scale+last_scale)*x*(y-1)/((x*y+eps**last_scale)*den)
+        equal(f-u, difference, "equal-order prefix subtraction")
+        equal(sp.cancel(f.subs(y, 0)), eps**last_scale/(x+eps**last_scale),
+              "equal-order exceptional false divisor")
+        equal(sp.limit(f/eps**last_scale, eps, 0), 1/(x*y),
+              "equal signed generic poles")
+    for dimension in (2, 4, 8):
+        h = eps/((1-b**dimension)**2+eps)
+        difference = eps*(2*b**dimension-b**(2*dimension))/((1+eps)*((1-b**dimension)**2+eps))
+        equal(h-eps/(1+eps), difference, "common-scale support hiding")
+        false_difference = sp.cancel(difference.subs(b, eps*r))
+        equal(sp.limit(false_difference/eps**(dimension+1), eps, 0),
+              2*r**dimension, "first possible hidden-support coefficient")
+        equal(sp.limit(h.subs(b, 1+eps*r), eps, 0), 1,
+              "support hiding preserves true inputs")
+    numerator = eps*(y*y+eps)**2
+    denominator = (y**3+eps)**2+eps*(y*y+eps)**2
+    equal(sp.cancel((numerator/denominator).subs(y, 0)), eps/(1+eps),
+          "pointwise false center")
+    assert sp.Poly(denominator, y).degree() == 6
+    equal(denominator.subs(eps, 0), y**6, "six poles approach false center")
+    equal(sp.gcd(sp.Poly(numerator, y, domain=sp.QQ.frac_field(eps)),
+                 sp.Poly(denominator, y, domain=sp.QQ.frac_field(eps))).as_expr(),
+          1, "no generic moving-pole cancellation")
+
+
+def check_flat_coefficient_tensors():
+    x, y, x0, x1, y0, y1, t = sp.symbols("x y x0 x1 y0 y1 t")
+    for s in (2, 3, 4):
+        dimension = 2**s
+        d = dimension-1
+        geometric = sum(x**(d-i)*y**i for i in range(d+1))
+        equal(geometric, sp.prod(x**(2**j)+y**(2**j) for j in range(s)),
+              "short geometric-sum circuit")
+        f = 1+geometric
+        product = x**dimension-y**dimension+x-y
+        equal(f*(x-y), product, "flat affine product")
+        def coefficient_matrix(poly, degree):
+            p = sp.Poly(poly, x, y)
+            return sp.Matrix(degree+1, degree+1,
+                             lambda i, j: p.coeff_monomial(x**i*y**j))
+        assert coefficient_matrix(f, d).rank() == dimension
+        assert coefficient_matrix(product, dimension).rank() == 2
+        homogeneous = (x0*y0)**d+sum(x1**(d-i)*x0**i*y1**i*y0**(d-i)
+                                    for i in range(d+1))
+        homogeneous_product = ((x1**dimension+x1*x0**d)*y0**dimension
+                               -x0**dimension*(y1**dimension+y1*y0**d))
+        equal(homogeneous*(x1*y0-x0*y1), homogeneous_product,
+              "flat bihomogeneous product")
+        def homogeneous_matrix(poly, degree):
+            p = sp.Poly(poly, x0, x1, y0, y1)
+            return sp.Matrix(degree+1, degree+1,
+                             lambda i, j: p.coeff_monomial(
+                                 x0**i*x1**(degree-i)*y0**(degree-j)*y1**j))
+        assert homogeneous_matrix(homogeneous, d).rank() == dimension
+        assert homogeneous_matrix(homogeneous_product, dimension).rank() == 2
+        q = sum(t**i for i in range(d+1))
+        equal(sp.gcd(q, sp.diff(q, t)), 1, "simple cyclotomic-sum roots")
+
+
 def main():
     checks = (check_branch_gluing, check_stable_matrix, check_transcript_escape,
               check_reentry, check_marked_gcd_and_nullvector,
               check_compressed_operator_and_inverse_jet,
               check_cutting_local_identities, check_supplied_exclusion,
-              check_uniform_cyclic_trace)
+              check_uniform_cyclic_trace, check_soft_totalization,
+              check_soft_support_hiding, check_flat_coefficient_tensors)
     for check in checks:
         check()
         print(f"PASS {check.__name__}")

@@ -7,8 +7,8 @@ Status: research reductions. The statements below isolate sufficient conditions 
 For a constructible subset `S` of `A^N(C)`, define its algebraic boundary by
 
 ```math
-\partial_{\rm alg}S=\overline S^{\rm Zar}\cap
-\overline{\mathbb A^N(\mathbb C)\setminus S}^{\rm Zar}.
+\partial_{\mathrm{alg}}S=\overline{S}^{\mathrm{Zar}}\cap
+\overline{\mathbb A^N(\mathbb C)\setminus S}^{\mathrm{Zar}}.
 ```
 
 This definition is specified because other conventions for an algebraic boundary occur in the literature.
@@ -172,3 +172,90 @@ The review checked the following assertions in [PROTOCOL.md](PROTOCOL.md):
 - At `m=2`, `X=I_2`, moving all messages before challenges rejects the correct value `1`, because the terminal polynomial would need to depend on the first challenge without permission to do so.
 
 These checks establish the exact failures of two proposed quantifier reorderings. They do not preclude a different compressed protocol.
+
+## 6. Testing a direct flat-case transfer
+
+Research calculation, 23 November 2026 (America/Chicago). The tensor product in Definition A.1 of the [pinned Anthropic paper](https://github.com/anthropics/formal-math/tree/11b6c7e3c927df2658f513b6b68ea7f8929c62c5/vp-vnp) is not multiplication of polynomials in the same variable blocks. The following exact example rules out replacing that distinction by a divisibility-monotonicity assertion for ordinary coefficient tensors. It does not contradict Appendix E or establish anything about nonzero multiples of the universal resultant.
+
+Put `D=2^s>=4` and `d=D-1`, and define
+
+```math
+f_D(x,y)=1+\sum_{i=0}^{d}x^{d-i}y^i,
+\qquad Q=x-y.
+```
+
+Then
+
+```math
+f_DQ=x^D-y^D+x-y.                                 \tag{1}
+```
+
+The factor `f_D` is irreducible over `C`. In the localization where `x!=0`, use `w=1/x,t=y/x`. Up to the unit `w^(-d)`, the polynomial becomes
+
+```math
+w^d+q(t),\qquad q(t)=1+t+\cdots+t^d.
+```
+
+For any nontrivial `D`-th root of unity `zeta`, the polynomial `q` has a simple root at `zeta`. Eisenstein's criterion at the prime `t-zeta` of `C[t]` proves irreducibility in `C[t,w]`, and hence after localizing `w`. A factor of `f_D` that becomes a unit under the corresponding localization of `C[x,y]` would be a scalar times a power of `x`. Its constant term one excludes such a nonconstant factor. This proves the claim in `C[x,y]`.
+
+Let `T(f)` be the coefficient tensor with the powers of `x` as one index and the powers of `y` as the other. In the bases `1,x,...,x^d` and `1,y,...,y^d`, the matrix of `T(f_D)` is the invertible anti-diagonal matrix `J` plus `E_(0,0)`. Its determinant equals `det J`, since `(J^(-1))_(0,0)=0`. Thus
+
+```math
+\mathop{\mathrm{rank}}T(f_D)=D,
+\qquad
+\mathop{\mathrm{rank}}T(f_DQ)=2.                  \tag{2}
+```
+
+The second equality follows from (1): its two independent separated terms are `a(x)*1` and `-1*a(y)`, where `a(z)=z^D+z`. Both circuits have size `O(s)`. For the first, use
+
+```math
+\sum_{i=0}^{D-1}x^{D-1-i}y^i
+ =\prod_{j=0}^{s-1}(x^{2^j}+y^{2^j}),
+```
+
+with shared successive squarings. The product in (1) has an equally short repeated-squaring circuit. The cofactor itself is linear and has constant circuit size.
+
+### Separate homogeneity does not restore the inequality
+
+For blocks `X=(x_0,x_1)` and `Y=(y_0,y_1)`, separately homogenize:
+
+```math
+F_D(X,Y)=x_0^d y_0^d+
+ \sum_{i=0}^{d}x_1^{d-i}x_0^i y_1^i y_0^{d-i}.
+```
+
+This polynomial is bihomogeneous of degree `(d,d)` and irreducible. Indeed, it dehomogenizes to `f_D`, and neither `x_0` nor `y_0` divides it; localization at `x_0y_0` gives the claim. Its coefficient matrix in the degree-`d` monomial bases is an identity matrix plus one off-diagonal elementary matrix, so has rank `D`.
+
+The cofactor `Q_h=x_1y_0-x_0y_1` has bidegree `(1,1)`, and direct multiplication gives
+
+```math
+F_DQ_h
+ =(x_1^D+x_1x_0^d)y_0^D
+   -x_0^D(y_1^D+y_1y_0^d).                        \tag{3}
+```
+
+Its coefficient matrix has rank exactly two. All circuits still have size `O(s)`: substitute `a=x_1y_0,b=x_0y_1` in the product formula above and add `(x_0y_0)^d`.
+
+### Exact consequence for the proposed price transfer
+
+Matrix rank is a spectral point in the pinned paper's Definition A.1. More generally, on two parties every nonzero tensor of rank `r` is equivalent under mutual restrictions to the wire of dimension `r`. Lemma A.2 therefore makes the values in (2) equal to `D^gamma` and `2^gamma` for any spectral point having positive wire exponent `gamma`. Hence an inequality
+
+```math
+\varphi(T(FQ))\ge\varphi(T(F))
+```
+
+is false even for an irreducible bihomogeneous `F` and a cofactor of constant degree and circuit size.
+
+The correct operation is local convolution. If `mu_X,mu_Y` multiply monomials within each variable block, then
+
+```math
+T(FQ)=(\mu_X\otimes\mu_Y)(T(F)\otimes T(Q)).
+```
+
+This gives a restriction of the tensor product, hence an upper bound by `varphi(T(F))varphi(T(Q))`. It does not give a restriction in the reverse direction; the ranks in (2) prohibit one.
+
+The distinction also appears on a whole graph. Put an independent copy of `F_D` on every edge, with separate two-variable blocks at its two ends, and multiply these edge polynomials. On the half-edge coefficient indices, the resulting tensor is equivalent to a product of dimension-`D` wires. Its polynomial circuit nevertheless has size `O(|E|s)`. Multiplication by the product of the corresponding `Q_h` changes these to dimension-two wires with another `O(|E|)` gates. This does not instantiate the hard network polynomial of Appendix E: the node coordinates here are high-degree monomials in the actual input variables. They are not independent variables indexed by all incident edge strings. In particular, this high-degree coefficient tensor is not the tensor of the part linear in each original node block. Lemma E.4 applies to arbitrary circuits but bounds that linear-in-each-block part; it does not bound the high-degree tensor used here.
+
+A direct resultant argument using prices must prove a different invariant or a tensor construction for which the needed circuit decomposition and cofactor inequality both hold. This example excludes the ordinary coefficient-tensor shortcut only. Its irreducible factor is not the resultant, and its cheap circuits make no arithmetic-circuit lower-bound claim.
+
+Independent check: `ph_bridge_fresh` verified irreducibility, both rank calculations, the homogenized product identity, and the circuit costs. This is a separate model-worker review, not human refereeing or formal verification.
