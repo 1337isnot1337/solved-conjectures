@@ -2,7 +2,9 @@
 
 Status: research. The lemmas below are proved deductions and exact finite
 obstructions. The gluing implication identified at the end remains
-unproved. No conclusion that the complex matrix multiplication exponent
+unproved. The companion [tripod extension criterion](TRIPOD_EXTENSION_CRITERION.md)
+states exactly when a normalized geodesic center can be added; existence
+of such a center is not assumed here. No conclusion that the complex matrix multiplication exponent
 equals two is asserted.
 
 All tensor products are regrouped by their named parties. A normalized
@@ -401,6 +403,15 @@ energy tripod with arms $`3/8`$, its left side minus
 $`1+d_{AD}+d_{BD}+d_{CD}`$ equals $`1/8`$, so (12) with the
 $`9/4`$ bound still admits that scalar model.
 
+The numerical inequality (12) also follows directly from already known
+scalar constraints: the three triangle inequalities give
+$`d_{AD}+d_{BD}+d_{CD}\ge L/2`$, where
+$`L=d_{AB}+d_{BC}+d_{CA}`$, and the normalized three-party restriction
+gives $`L\le\omega_{\mathbb C}`$. Thus
+$`L-(d_{AD}+d_{BD}+d_{CD})\le\omega_{\mathbb C}/2`$, which is (12).
+The contribution of (11) is its explicit unrestricted tensor
+construction, not an additional scalar constraint.
+
 ### 4.4. A stronger lift retaining the three edge labels
 
 Define
@@ -449,6 +460,59 @@ $`L_q`$ does not prove a lower bound for (14). The construction in
 Section 4.3 only produces the single sum of all basis vectors of
 $`L_q`$; it does not provide all of $`L_q`$ and therefore does not
 prove this stronger lift.
+
+There is, however, a different construction giving the stronger lift
+with the same upper bound on the overhead exponent:
+
+```math
+U_{ABCD}\!\left(q^{((\omega_{\mathbb C}-2)/2+o(1))n}\right)
+ S_q^{\otimes n}\ge Z_q^{\otimes n}.                       \tag{15}
+```
+
+For even $`n`$, the definition of the exponent gives
+$`R(M_{q^{n/2}})=q^{\omega_{\mathbb C}n/2+o(n)}`$. The full-unit
+factor originally in $`S_q^{\otimes n}`$, together with the displayed
+overhead, has that size. Contract its $`D`$ factor and apply such a
+matrix multiplication rank decomposition to obtain the outer $`ABC`$
+triangle with all three edge sizes $`q^{n/2}`$. Integer dimensions are
+rounded upward; these factors are absorbed in the $`o(n)`$ term.
+
+Split each of the three original spokes, of size $`q^n`$, into two
+independent wires of size $`q^{n/2}`$. Assign the two pieces to the
+two incident faces among $`ABD,ACD,BCD`$. Each of those faces now
+contains a complete triangle with edge size $`q^{n/2}`$. The
+three-party tight-subrank theorem distills from it a face unit of size
+$`q^{n-o(n)}`$. Apply the three distillations independently on the
+separate local factors. An additional full unit of subexponential size
+supplies the three missing face-unit factors, by contracting its unused
+party for each factor. This produces all three face units of size
+$`q^n`$, hence $`Z_q^{\otimes n}`$.
+
+All matrix multiplication and distillation losses are included in the
+$`o(n)`$ overhead. For odd $`n`$, use the even construction on
+$`n-1`$ powers and any fixed finite-rank conversion on the remaining
+power. Its constant overhead is again absorbed in $`o(n)`$. This proves
+(15). The construction uses the imported matrix multiplication and
+triangle-distillation families; it does not assert a new coefficient
+formula for either.
+
+Its numerical inequality also follows from existing scalar bounds.
+Write $`z=u(ABD)+u(ACD)+u(BCD)`$ and
+$`s=d_{AD}+d_{BD}+d_{CD}`$. On each face the tight-subrank theorem
+gives twice its unit charge at most its perimeter. Summing gives
+$`z\le s+L/2`$, where $`L`$ is the outer triangle perimeter.
+Therefore
+
+```math
+z-1-s\le\frac{L-2}{2}
+\le\frac{\omega_{\mathbb C}-2}{2}.
+```
+
+In particular (15) has overhead exponent at most $`1/8`$ under the
+$`9/4`$ bound. Whether this stronger lift admits subexponential
+overhead remains unresolved here. The derivation of (15) is not the
+invalid step of copying the rank-one coefficients in Section 4.3 to
+the retained $`D`$ label.
 
 ## 5. The tetrahedral comparison and its finite obstruction
 
@@ -570,3 +634,18 @@ differently optimized extension laws cannot be combined as if they
 produced the same point.
 
 The matrix multiplication conclusion remains unproved in this note.
+
+## 7. Related exact limitations
+
+[COPIED_FACTOR_COUNTEREXAMPLE.md](COPIED_FACTOR_COUNTEREXAMPLE.md)
+gives a genuine normalized quantum point for which copying a local
+input factor fails restriction monotonicity, even under an invertible
+change of basis. It rules out repairing a joint-party map merely by
+copying its input label.
+
+[TRIANGLE_SUBSPACE_FRAME.md](TRIANGLE_SUBSPACE_FRAME.md) proves
+$`r\ge c\sqrt q`$ for the product-subspace cover in (14), where
+$`c`$ is the least positive eigenvalue of the sum of its orthogonal
+product-space projectors. Commuting projectors give $`c\ge1`$.
+There is no uniform lower bound on $`c`$ for arbitrary maps; near
+linear dependence and Laurent cancellation remain unexcluded.
