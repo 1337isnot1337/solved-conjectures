@@ -58,7 +58,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **45.** [Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture](results/chappelon-ramirez-stamate-leaf-type/) | ⬜ | **120.** [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
 | **45.** [Hartke–Stolee–West–Yancey matching-excess conjecture](results/hartke-stolee-west-yancey-matching-excess/) | ⬜ | **120.** [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
 | **45.** [Fan’s interval Riesz capacity-ratio conjecture](results/fan-interval-riesz-capacity/) | ⬜ | **120.** [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
-| **45.** [Steinerberger’s greedy-energy Fourier conjecture](results/steinerberger-greedy-fourier/) | ⬜ | **124.** [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
+| **45.** [Steinerberger’s greedy-energy Fourier conjecture](results/steinerberger-greedy-fourier/) | ✅ | **124.** [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 | **45.** [Steinerberger’s quantitative Feldheim-tail conjecture](results/steinerberger-feldheim-tail/) | ✅ | **124.** [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
 | **51.** [Simon's stable-infimum conjecture](results/simon-stable-infimum/) | ⬜ | **124.** [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
 | **51.** [Ferreira–Simon's stochastic-order conjecture](results/ferreira-simon-stochastic/) | ⬜ | **124.** [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |

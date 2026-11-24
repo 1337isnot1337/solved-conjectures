@@ -9,6 +9,21 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `Conjectures.SteinerbergerGreedy.kernel_pair,
+    `Conjectures.SteinerbergerGreedy.vdc_mem,
+    `Conjectures.SteinerbergerGreedy.vdc_minimizes,
+    `Conjectures.SteinerbergerGreedy.vdc_isGreedy,
+    `Conjectures.SteinerbergerGreedy.rotatedSum_norm,
+    `Conjectures.SteinerbergerGreedy.rotatedSum_alternating,
+    `Conjectures.SteinerbergerGreedy.fourierSum_alternating_norm,
+    `Conjectures.SteinerbergerGreedy.oddHarmonic_lower,
+    `Conjectures.SteinerbergerGreedy.frequency_injective,
+    `Conjectures.SteinerbergerGreedy.frequency_mem,
+    `Conjectures.SteinerbergerGreedy.weightedSum_quadratic_lower,
+    `Conjectures.SteinerbergerGreedy.weightedSum_violates,
+    `Conjectures.SteinerbergerGreedy.vdc_not_isBigO,
+    `Conjectures.SteinerbergerGreedy.conjecture_false,
+    `Conjectures.SteinerbergerGreedy.counterexample,
     `JohnsonPfaffian.johnson_conjecture,
     `JohnsonPfaffian.johnson_conjecture_arbitrary_matching,
     `JohnsonPfaffian.johnson_conjecture_fin,

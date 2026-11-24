@@ -1,5 +1,9 @@
 # History
 
+## Steinerberger’s greedy-energy Fourier conjecture
+
+On 24 November 2026 the [complete Lean disproof](results/steinerberger-greedy-fourier/FORMALIZATION.md) verified an actual infinite greedy sequence whose stated weighted absolute Fourier sum is not O(log n). The four modules include direct greedy admissibility, exact Fourier recurrences, a quadratic lower bound along an unbounded family of prefixes, and the asymptotic negation. The independent source review corrected the Kritzinger citation to arXiv:2109.06298v4, Theorem 4 and Algorithm 3, page 15. The existing entry, its rank and its priority qualification are retained. The sharp limsup constant and the stronger all-initialization and all-tie-breaking assertions remain written supplements.
+
 ## Johnson's conjecture
 
 On 24 November 2026 the [complete Lean proof](results/johnson-pfaffian/LEAN-AUDIT.md) closed the general even-order, every-matching gap. It formalizes the recorded circular interval-product argument, including the stronger unconditional matrix-class theorem and the exact source-kernel bridge. All thirty project modules passed strict compilation, the audit of every owned declaration, and stock-kernel replay. William Johnson's conjecture, endpoint inequality and uncrossing reduction are credited; the repository proof credit and bounded priority assessment are preserved.
