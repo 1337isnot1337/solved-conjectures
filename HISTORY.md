@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24 — Verify Gravgaard–Lee’s large-digit Lüroth theorem in Lean
+
+The [Lean proof](lean/Conjectures/GravgaardLeeLargeLuroth.lean) verifies Conjecture 2.12 for every digit bound and the stronger interval with strictly increasing interleaved digits from the [written result](results/gravgaard-lee-large-luroth/). It checks the convergent source series and the half-open digit intervals.
+
 ## 2026-11-24: Prove Pantone–Bóna’s third-largest-terminal asymptotic
 
 The [written proof](results/pantone-bona-third-largest-terminal/) resolves Conjecture 6.2 for $A_{5,3}$ with exact leading constant $9\sqrt3/(16\pi)$. See [issue #382](https://github.com/1337isnot1337/solved-conjectures/issues/382) for source audit and scope. This is distinct from the other asymptotic conjectures in the same paper.

@@ -27,7 +27,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Revised Tan–Zhou conjecture](results/revised-tan-zhou-luroth/) | ⬜ |
 | [Simmons–Weiss’s Hausdorff-measure question](results/simmons-weiss-hausdorff/) | ⬜ |
 | [Gravgaard–Lee’s mixed Lüroth sumset conjecture](results/gravgaard-lee-mixed-luroth/) | ⬜ |
-| [Gravgaard–Lee’s large-digit Lüroth sumset conjecture](results/gravgaard-lee-large-luroth/) | ⬜ |
+| [Gravgaard–Lee’s large-digit Lüroth sumset conjecture](results/gravgaard-lee-large-luroth/) | ✅ |
 | [Gravgaard–Lee’s Lüroth diameter question](results/gravgaard-lee-diameter-condition/) | ⬜ |
 | [Gravgaard–Lee’s mixed upper/lower Lüroth conjecture](results/gravgaard-lee-upper-lower-luroth/) | ⬜ |
 | [Johnson's conjecture](results/johnson-pfaffian/) | 🟡 |
