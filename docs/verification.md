@@ -747,3 +747,7 @@ python3 results/chern-fu-lin-joint-eulerian/joint-certificate.py
 ```
 
 The two polynomial pseudo-remainders must both report exact zero. The program bounds the degrees and coefficient sizes before encoding, so neither a sampled variable substitution nor a finite series truncation is used. This is an exact algebraic certificate, not a Lean proof.
+
+## Dukes revstack interlacing exact bridge
+
+Run `python3 results/dukes-revstack/check.py` from the repository root. Exact rational sign isolation establishes all transitions 3→4 through 127→128. The [analytic proof](../results/dukes-revstack/PROOF.md) proves all later transitions.

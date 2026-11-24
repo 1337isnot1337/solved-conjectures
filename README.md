@@ -15,6 +15,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Nuttall's conjecture](results/nuttall-cumulants/) | ⬜ |
 | [Brown–Mol's conjecture](results/brown-mol/) | ✅ |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ |
+| [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | ⬜ |
 | [Johnson's conjecture](results/johnson-pfaffian/) | 🟡 |
 | [Chen–Khare–Sahi's conjecture](results/chen-khare-sahi-macdonald/) | 🟡 |
 | [Caiolo–Ferroni–Hoster conjecture](results/caiolo-ferroni-hoster/) | ⬜ |
@@ -28,7 +29,9 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture](results/separable-derangements-limit/) | ⬜ |
 | [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture](results/separable-derangements-asymptotic/) | ⬜ |
 | [Fan’s interval Riesz capacity-ratio conjecture](results/fan-interval-riesz-capacity/) | ⬜ |
+| [Kovalev’s square-root Taylor-section zero-free conjecture](results/kovalev-zero-free/) | ⬜ |
 | [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/) | ⬜ |
+| [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | ⬜ |
 | [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ⬜ |
 | [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/) | ⬜ |
 | [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results/athanasiadis-chapoton-transmuted-m/) | ⬜ |

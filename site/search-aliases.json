@@ -19,7 +19,9 @@
   "separable-derangements-limit": ["separable permutations", "separable derangements", "Dougherty Bliss Galvan Polley Shuster", "Vincent Vatter", "Schroeder spine", "Boltzmann occupation"],
   "separable-derangements-asymptotic": ["separable derangement exponent", "Schroeder tree", "Dougherty Bliss Galvan Polley Shuster", "two macro branchings", "subpolynomial"],
   "fan-interval-riesz-capacity": ["Riesz capacity", "Yingxin Fan", "Clark Laugesen", "Blackwell comparison", "interval equilibrium"],
+  "kovalev-zero-free": ["Leonid Kovalev", "Taylor sections", "zero-free", "closed unit disk", "beta gamma", "fractional exponent"],
   "chern-fu-lin-joint-eulerian": ["Chern Fu Lin", "Burstein", "Eulerian equidistribution", "inverse descents", "pattern avoiding permutations"],
+  "dukes-revstack": ["Mark Dukes", "revstack", "Eulerian polynomials", "interlacing", "revstack sort", "descent polynomials"],
   "athanasiadis-chapoton-polar-duality": ["Athanasiadis Chapoton", "Luo polar preorder", "preorder polytopes", "Ehrhart duality", "Stanley transfer"],
   "athanasiadis-chapoton-q-zeta": ["Athanasiadis Chapoton", "q zeta", "Ehrhart reciprocity", "Postnikov", "preorder"],
   "athanasiadis-chapoton-transmuted-m": ["Athanasiadis Chapoton", "transmuted M triangle", "preorder duality", "Mobius", "reciprocity"],
@@ -107,6 +109,7 @@
     "Legendre pairs",
     "automorphism obstruction"
   ],
+  "hegyvari-floor-doubling": ["Norbert Hegyvari", "Erdos 354", "floor doubling", "strong completeness", "rational ratios", "Kohlmeyer Kruer"],
   "haralambis-three-differences": [
     "Haralambis conjecture",
     "three forbidden differences",
