@@ -1,5 +1,11 @@
 # History
 
+## 2026-11-23 — Removing arbitrary powers of a small cofactor support
+
+The [Shub–Smale τ research](research/shub-smale-tau/README.md) now proves a charged extraction from F_N times supplied powers whose bases have small total degree. A short geometric-sum identity lifts an integer Bezout certificate to arbitrary powers with logarithmic dependence on their exponents. Endpoint transport removes the cofactor without expanding its powers and permits roots shared with the required interval. All scalar construction and exact quotient costs are included.
+
+The proof was independently reviewed, and exact checks cover the scaled Sylvester certificate, repeated and overlapping bases, and the rational-scalar amendment. The separate symbolic anchored-jet obstruction uses the pinned border theorem and retains its stronger compiler quantifiers. No unrestricted extraction, integer-root bound, or BSS separation is claimed; see [issue #260](https://github.com/1337isnot1337/solved-conjectures/issues/260).
+
 ## 2026-11-23 — Anchored cofactor extraction and arithmetic selection
 
 The [Shub–Smale τ research](research/shub-smale-tau/README.md), tracked in [issue #260](https://github.com/1337isnot1337/solved-conjectures/issues/260), gives an endpoint-anchored extraction from a consecutive-root multiple with cost polynomial in the unknown cofactor's degree. A division-free quotient matrix makes the output-degree independence explicit. The degree of an unrestricted cofactor may still be exponential in circuit length.

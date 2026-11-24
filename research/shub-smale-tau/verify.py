@@ -647,6 +647,113 @@ def test_dense_square_chain_threshold():
     print('six-root square-chain identity and strict three-quarters threshold: passed')
 
 
+def polynomial_power(a, n):
+    out = [1]
+    while n:
+        if n & 1:
+            out = mul(out, a)
+        a = mul(a, a)
+        n //= 2
+    return out
+
+
+def geometric_sum(a, b, n):
+    if n == 1:
+        return [1]
+    r = n // 2
+    even = mul(add(polynomial_power(a, r), polynomial_power(b, r)),
+               geometric_sum(a, b, r))
+    return add(mul(a, even), polynomial_power(b, 2*r)) if n & 1 else even
+
+
+def lift_power_bezout(u, v, c, m):
+    L = 1 << (m - 1).bit_length()
+    g = geometric_sum([c], v, m)
+    C = [c**m]
+    E = add(C, scale(polynomial_power(v, m), -1))
+    U = mul(polynomial_power(u, L-m), polynomial_power(g, L))
+    V = geometric_sum(C, E, L)
+    assert add(mul(polynomial_power(u, m), U),
+               mul(polynomial_power(v, m), V)) == [c**(m*L)]
+    return U, V, m*L
+
+
+def charged_bezout_certificate(R, S):
+    d = len(R) - 1
+    assert d == len(S) - 1 and d >= 1
+    ell = 2*d
+    matrix = [[0] * ell for _ in range(ell)]
+    for j in range(d):
+        for i, value in enumerate(R):
+            matrix[i+j][j] = value
+        for i, value in enumerate(S):
+            matrix[i+j][j+d] = value
+
+    def matrix_product(a, b):
+        return [[sum(a[i][k] * b[k][j] for k in range(ell))
+                 for j in range(ell)] for i in range(ell)]
+
+    powers = [[[int(i == j) for j in range(ell)] for i in range(ell)]]
+    for _ in range(ell):
+        powers.append(matrix_product(powers[-1], matrix))
+    traces = [sum(power[i][i] for i in range(ell)) for power in powers]
+    b = [1]
+    for k in range(1, ell+1):
+        b.append(-sum(prod(range(k-i+1, k)) * b[k-i] * traces[i]
+                      for i in range(1, k+1)))
+    C = [prod(range(j+1, ell+1)) * b[j] for j in range(ell+1)]
+    w = [-sum(C[j] * powers[ell-1-j][i][0] for j in range(ell))
+         for i in range(ell)]
+    assert [sum(matrix[i][j] * w[j] for j in range(ell))
+            for i in range(ell)] == [C[-1]] + [0] * (ell-1)
+    assert C[-1] == factorial(ell) * determinant(matrix) != 0
+    A, B = trim(w[:d]), trim(w[d:])
+    assert add(mul(A, R), mul(B, S)) == [C[-1]]
+    return A, B, C[-1]
+
+
+def test_powered_cofactor_extraction():
+    lifted = 0
+    for c in (-3, 1, 5):
+        for m in (1, 2, 3, 4, 5, 7):
+            lift_power_bezout([0, 1], [c, -1], c, m)
+            lifted += 1
+    cases = [
+        (3, [([-2, 1], 3)], Fraction(1)),
+        (3, [([0, -1, 1], 2)], Fraction(1)),
+        (4, [([-1, 1], 2), ([-2, 1], 3)], Fraction(1)),
+        (3, [([1, -2, 1], 2), ([-1, 1], 1)], Fraction(1)),
+        (2, [([1, 0, 1], 2)], Fraction(1)),
+        (3, [([-2, 2], 3)], Fraction(1, 8)),
+    ]
+    for N, bases, scalar in cases:
+        R, Q, supplement = [1], [1], [1]
+        m = max(exponent for _, exponent in bases)
+        for base, exponent in bases:
+            R = mul(R, base)
+            Q = mul(Q, polynomial_power(base, exponent))
+            supplement = mul(supplement, polynomial_power(base, m-exponent))
+        h = next(h for h in range(1, (len(R)-1)**2 + 2)
+                 if polynomial_gcd(R, translate(R, h)) == [1])
+        shifted = translate(R, h)
+        A, B, c = charged_bezout_certificate(R, shifted)
+        U0, V0, exponent = lift_power_bezout(mul(A, R), mul(B, shifted), c, m)
+        U = mul(polynomial_power(A, m), U0)
+        V = mul(polynomial_power(B, m), V0)
+        FN = root_product(range(1, N+1))
+        H = scale(mul(FN, Q), scalar)
+        assert all(Fraction(a).denominator == 1 for a in H)
+        transported = scale(mul(FN, translate(Q, h)), scalar)
+        D = root_product(-i for i in range(h))
+        E = root_product(N-i for i in range(h))
+        assert mul(D, transported) == mul(E, translate(H, h))
+        extracted = add(mul(mul(U, supplement), H),
+                        mul(mul(V, translate(supplement, h)), transported))
+        assert extracted == scale(FN, scalar * c**exponent)
+        assert all(Fraction(a).denominator == 1 for a in extracted)
+    print(f'powered Bezout lifting: {lifted} cases; full powered-cofactor extraction: {len(cases)} cases passed')
+
+
 def main():
     test_carries_and_products()
     test_all_cuts()
@@ -665,6 +772,7 @@ def main():
     test_deformed_boolean_inverse()
     test_frobenius_and_harmonic_examples()
     test_dense_square_chain_threshold()
+    test_powered_cofactor_extraction()
     print('All finite exact checks passed. No tau bound or BSS separation was verified.')
 
 
