@@ -4,6 +4,7 @@
   "pantone-bona-second-largest-terminal": ["Bóna–Pantone", "A5,4", "12345 12453 13452 23451", "decreasing tail", "tableau walks"],
   "pantone-bona-asymptotic": ["Bóna–Pantone", "Bona Pantone", "A5,5", "12354", "long monotone subsequences", "pattern avoidance asymptotics"],
   "hartke-stolee-west-yancey-matching-excess": [ "matching excess", "perfect matchings", "Mersenne division" ],
+  "steinerberger-feldheim-tail": ["Feldheim–Feldheim", "Feldheim Feldheim", "mean minimum of independent random variables", "median normalized tail", "log-concavity"],
   "heim-neuhauser-troeger-plane-partition-turan": [ "HNT conjecture", "plane partitions", "log concavity", "Turan" ],
   "heim-neuhauser-plane-partition-polynomization": [ "Sun polynomization", "plane partitions", "nth root monotonicity" ],
   "heim-neuhauser-ordinary-darcais-root": ["ordinary D’Arcais", "Darcais polynomials", "fractional Chern–Fu–Tang", "nth root monotonicity", "sigma one"],

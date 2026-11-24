@@ -10,6 +10,7 @@ The [written proof](results/pantone-bona-third-largest-terminal/) resolves Conje
 - [Plane-partition polynomial Turán inequalities](results/heim-neuhauser-troeger-plane-partition-turan/) hold on the full real parameter range of Conjecture 2.
 - [Plane-partition nth-root polynomization](results/heim-neuhauser-plane-partition-polynomization/) holds on both real parameter ranges of Conjecture 1.
 - [Ordinary D’Arcais nth-root conjecture](results/heim-neuhauser-ordinary-darcais-root/) holds for all real parameters at least 1, using a uniform Fourier sign and exact finite bridge.
+- [Both quantitative Feldheim-tail bounds](results/steinerberger-feldheim-tail/) fail for the same smooth strictly log-concave distribution; the original qualitative theorem remains intact.
 - The [exact differential equation](results/pantone-bona-asymptotic/ode-proof.md) previously guessed for the terminal-largest pattern class is now proved separately from the asymptotic.
 
 The two plane-partition proofs use exact rational and integer certificates, not sampled real parameters. No Lean, external review, or exclusive priority claims are made.
