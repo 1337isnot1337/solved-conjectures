@@ -1,0 +1,37 @@
+name: Retire merged publication reviews 360 and 369
+on:
+  push:
+    branches: [research]
+    paths: [.github/workflows/retire-merged-research-reviews-360-369.yml]
+permissions:
+  contents: write
+jobs:
+  retire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Delete only the verified temporary heads
+        shell: bash
+        run: |
+          set -euo pipefail
+          a=refs/heads/review/alexandersson-parking-excedance
+          b=refs/heads/review/coulangeon-lazzarini-two-shells
+          al=3fa623b0cd66d18a7bf81aaf5f85ff975dab232b
+          bl=55fa61bd7bc3914d906bdddb19415e10e19bc947
+          leases=()
+          specs=()
+          for pair in "$a=$al" "$b=$bl"; do
+            ref=${pair%%=*}
+            expected=${pair#*=}
+            observed=$(git ls-remote origin "$ref" | cut -f1)
+            if [[ -z "$observed" ]]; then
+              continue
+            fi
+            [[ "$observed" == "$expected" ]] || { echo "Branch changed, refusing to delete $ref"; exit 1; }
+            leases+=("--force-with-lease=$ref:$expected")
+            specs+=(":$ref")
+          done
+          if (( ${#specs[@]} != 0 )); then
+            git push --atomic "${leases[@]}" origin "${specs[@]}"
+          fi
+          [[ -z "$(git ls-remote origin "$a" "$b")" ]]
