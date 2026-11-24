@@ -1,5 +1,33 @@
 # Verification
 
+
+
+## Coulangeon–Lazzarini’s two-shell counterexample
+
+The [scoped receipt](verification/lean-coulangeon-lazzarini-20261124/receipt.json)
+records strict compilation, the all-owned axiom audit and pinned replay
+for the integer shell theorem and its full-rank real lattice realization.
+The registered endpoints include first-shell order, moment equivalence and
+the dimension-ten refutation.
+
+## Gravgaard–Lee’s mixed Lüroth sumset
+
+The [scoped receipt](verification/lean-gravgaard-lee-mixed-luroth-20261124/receipt.json)
+records strict compilation, an all-owned axiom audit and pinned kernel replay
+for both modules in the local closure. The source intervals and every real
+residue are covered by the registered endpoints.
+
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+The [scoped receipt](verification/lean-gravgaard-lee-large-luroth-20261124/receipt.json)
+records strict compilation, the all-owned axiom audit and stock-kernel replay
+for `Conjectures.GravgaardLeeLargeLuroth`. The registered endpoints cover the
+source series, the witness expansions and Conjecture 2.12.
+
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+The [complete closure receipt](verification/gessel-zhuang-20261124/receipt.json), finished 24 November 2026 at 17:30:16 UTC, records fresh strict compilation of 25 project modules, the unchanged audit of 641 declarations (479 theorems and 185 private declarations), all 17 required endpoints, and full stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` occur transitively. The dedicated workflow repeats the target gate. The exact finite path checker passed through size nine and is supplementary. The repository-wide gate remains separately blocked by the documented dependency-cache problem; neither hosted success nor deployment is inferred from this target receipt.
+
 ## Rowland–Sistos Barrón conjecture
 
 The [complete closure receipt](verification/rowland-20261124/receipt.json), finished 24 November 2026 at 17:09:57 UTC, records 17 fresh strict module builds, the unchanged audit of 286 owned declarations (261 theorems and five private declarations), 11 required endpoints, and complete stock-kernel replay. The only transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The `lean-rowland-sistos-barron.yml` workflow reproduces the target gate. The whole-repository gate and hosted deployment remain separate. The [exact supplemental checker](verification/rowland-20261124/supplementary-check.json) was rerun through exponent 180 and supplies no assumption to the unbounded proof.

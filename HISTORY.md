@@ -3,6 +3,21 @@
 ## 2026-11-24 — Fan–Tringali’s power-monoid length-set conjecture
 
 Completed the Lean proof of the original 2018 conjecture for ordinary and restricted finitary power monoids of arbitrary Dedekind-finite non-torsion monoids, together with the exact reduced-natural-number length system. The 18-module closure includes the graph construction, all no-carry divisor and factorization lifts, and a fully proved noncommutative unit normalization and monoid transfer. Strict source builds, the complete all-owned/private axiom audit and stock kernel replay passed. The existing result row and mathematical attribution are retained; this is one existing result. Survey irreducibles, multiplicities and relative cancellativity remain unformalized supplements. The dedicated verifier/workflow and exact receipts keep the scoped proof pass separate from aggregate dependency-cache and hosted deployment obligations.
+## 2026-11-24 — Verify Coulangeon–Lazzarini’s two-shell counterexample in Lean
+
+The [Lean proof](lean/Conjectures/CoulangeonLazzariniRealLattice.lean) constructs the full-rank discrete lattice in dimension ten, verifies the spherical second moments for squared norms 4 and 8, and proves failure at squared norm 9. The [integer-coordinate module](lean/Conjectures/CoulangeonLazzariniShells.lean) verifies the elementary arbitrary-delay family.
+
+## 2026-11-24 — Verify Gravgaard–Lee’s mixed Lüroth theorem in Lean
+
+The [Lean proof](lean/Conjectures/GravgaardLeeMixedLuroth.lean) checks the source digit sets, all fifteen interval containments and the passage to the infinite expansions. It proves the stronger ordinary interval and Conjecture 2.2 on all real residues.
+
+## 2026-11-24 — Verify Gravgaard–Lee’s large-digit Lüroth theorem in Lean
+
+The [Lean proof](lean/Conjectures/GravgaardLeeLargeLuroth.lean) verifies Conjecture 2.12 for every digit bound and the stronger interval with strictly increasing interleaved digits from the [written result](results/gravgaard-lee-large-luroth/). It checks the convergent source series and the half-open digit intervals.
+
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+On 24 November 2026 the [complete Lean formalization](results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md) proved the literal pinnacle-set and peak-count inverse-descent polynomials gamma-positive for every positive size, with the original weight and center. Both source conjectures belong to one existing entry. The actual permutation/history bijection and statistic bridges, fixed-path real splitting and symmetry, and full gamma expansion are proved. All 25 project modules passed strict compilation, the all-owned axiom audit, and stock-kernel replay. Ira M. Gessel and Yan Zhuang are the original proposers; the existing proof credit to Cinna Davis and GPT-6.2 Astra and the prior-art and priority qualifications are preserved.
 
 ## Rowland–Sistos Barrón conjecture
 

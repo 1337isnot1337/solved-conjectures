@@ -1,5 +1,35 @@
 # Full formalization campaign
 
+## Coulangeon–Lazzarini’s two-shell conjecture
+
+[Lean refutes Conjecture 21 in dimension ten](../lean/Conjectures/CoulangeonLazzariniRealLattice.lean).
+It verifies the full-rank discrete lattice in real space, identifies its first two
+positive squared norms as 4 and 8, and checks the two spherical moment
+identities and the failure at squared norm 9. The [integer-coordinate proof](../lean/Conjectures/CoulangeonLazzariniShells.lean)
+also verifies the arbitrary-delay parity-lattice family.
+The orthogonally indecomposable family and height results remain open in Lean.
+
+## Gravgaard–Lee’s mixed Lüroth sumset
+
+[Lean proves Conjecture 2.2 and the interval from the written proof](../lean/Conjectures/GravgaardLeeMixedLuroth.lean).
+The sum of the digit sets bounded above by three and four contains $[2879/3520,2]$
+and represents every real residue modulo one. The proof checks the fifteen
+branch containments and the geometric approximation argument for the closed
+sumsets of infinite Lüroth expansions. The two-module local import closure
+passed the pinned kernel replay.
+
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+[Lean proves Conjecture 2.12 and the stronger interval in the written proof](../lean/Conjectures/GravgaardLeeLargeLuroth.lean).
+For every integer $k\ge2$, the sum of the large-digit Lüroth set with itself contains
+$(0,1/(k-1)]$. The witnesses have strictly increasing interleaved digits.
+The development verifies both the convergence of the source's series and the half-open
+digit intervals. See `conjecture_2_12`, `interval_subset_sum` and `interleaved_decomposition`.
+
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+`GesselZhuang.conjecture_7_3` and `GesselZhuang.conjecture_7_2` prove the complete existing result for the actual finite permutation sums, with exponent inverse descents plus one and gamma center `(N+1)/2`. `pinnacle_gamma_expansion` exposes the coefficients directly. The [source audit](../results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md) checks all labels, statistics, quantifiers, and boundary conventions against the primary article. The history equivalence and polynomial enumeration are proved, as are every root and gamma-factorization input. The separate inverse-peak Conjecture 7.1 is not asserted.
+
 ## Rowland–Sistos Barrón conjecture
 
 `RowlandSistosBarron.rowland_sistos_barron_counterexample` proves the full recorded counterexample using the literal integer sequence and its minimum tail-recurrence ranks. The exponential-polynomial independence and minimal annihilator, all coefficient cancellations and their exact counts, and the unbounded square obstruction are proved. The [statement audit](../results/rowland-sistos-barron/LEAN_STATUS.md) maps each mathematical object to Lean and retains the source terminology qualification. All 17 project modules passed the three target verification gates; earlier partial records do not enlarge this scope.

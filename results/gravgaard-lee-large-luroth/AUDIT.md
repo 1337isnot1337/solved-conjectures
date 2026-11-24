@@ -4,4 +4,4 @@ The exact target is [Gravgaard–Lee, arXiv:2506.12513v2, Conjecture 2.12](https
 
 Independent audit checked the strict positive remainder, the scale inequalities, the digit increase after every alternating step, and validity under the source's infinite half-open digit convention. A bounded current primary-source and follow-up search did not locate an earlier exact resolution.
 
-No Lean verification, external review or absolute priority claim is made.
+The [Lean proof](../../lean/Conjectures/GravgaardLeeLargeLuroth.lean) verifies the full interval and the strictly increasing interleaved digits. No external review or absolute priority claim is made.

@@ -1,5 +1,31 @@
 # Lean verification status
 
+## Coulangeon–Lazzarini’s two-shell conjecture
+
+[Lean refutes Conjecture 21 in dimension ten](../lean/Conjectures/CoulangeonLazzariniRealLattice.lean).
+It verifies the full-rank discrete lattice in real space, identifies its first two
+positive squared norms as 4 and 8, and checks the two spherical moment
+identities and the failure at squared norm 9. The [integer-coordinate proof](../lean/Conjectures/CoulangeonLazzariniShells.lean)
+also verifies the arbitrary-delay parity-lattice family.
+The orthogonally indecomposable family and height results remain open in Lean.
+
+## Gravgaard–Lee’s mixed Lüroth sumset
+
+[Lean proves Conjecture 2.2 and the interval from the written proof](../lean/Conjectures/GravgaardLeeMixedLuroth.lean).
+The sum of the digit sets bounded above by three and four contains $[2879/3520,2]$
+and represents every real residue modulo one. The proof checks the fifteen
+branch containments and the geometric approximation argument for the closed
+sumsets of infinite Lüroth expansions. The two-module local import closure
+passed the pinned kernel replay.
+
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+[Lean proves Conjecture 2.12 and the stronger interval in the written proof](../lean/Conjectures/GravgaardLeeLargeLuroth.lean).
+For every integer $k\ge2$, the sum of the large-digit Lüroth set with itself contains
+$(0,1/(k-1)]$. The witnesses have strictly increasing interleaved digits.
+The development verifies both the convergence of the source's series and the half-open
+digit intervals. See `conjecture_2_12`, `interval_subset_sum` and `interleaved_decomposition`.
+
 ## Parking-function excedance certificate
 
 [Alexandersson’s parking-function excedance conjecture](../results/alexandersson-parking-excedance/) is refuted by a rational witness certified with exact integer and fraction arithmetic. No Lean formalization is claimed.
@@ -89,8 +115,8 @@ proofs are documented separately in the catalogue and result package.
 | Kovalev’s linear Lipschitz clustering questions | Not formalized | Constructs convex-hull-preserving finite-subset retractions with a dimension-free linear Lipschitz bound, uniformly for every target size. |
 | Revised Tan–Zhou conjecture | Not formalized | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. |
 | Simmons–Weiss’s Hausdorff-measure question | Not formalized | Proves natural-Hausdorff-almost-sure non-bad approximation after every irrational translate of a bounded continued-fraction Cantor set. |
-| Gravgaard–Lee’s mixed Lüroth sumset conjecture | Not formalized | Proves that the mixed bounded-digit Lüroth sum represents every residue modulo one, with an explicit ordinary interval in the sum. |
-| Gravgaard–Lee’s large-digit Lüroth sumset conjecture | Not formalized | Gives a positive-length ordinary sum interval for every lower digit threshold, using two expansions whose combined digits strictly increase. |
+| Gravgaard–Lee’s mixed Lüroth sumset conjecture | Complete | Proves that the mixed bounded-digit Lüroth sum represents every residue modulo one, with an explicit ordinary interval in the sum. |
+| Gravgaard–Lee’s large-digit Lüroth sumset conjecture | Complete | Gives a positive-length ordinary sum interval for every lower digit threshold, using two expansions whose combined digits strictly increase. |
 | Gravgaard–Lee’s Lüroth diameter question | Not formalized | Removes the digit-bound separation condition when total diameter is at least one and determines the exact positive sum hull. |
 | Gravgaard–Lee’s mixed upper/lower Lüroth conjecture | Not formalized | Determines the exact sum interval for all matching upper and lower Lüroth digit thresholds, including genuine expansions at the required endpoints. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture | Not formalized | Proves the derangement proportion tends to zero, with every fixed diagonal count diverging in probability. |
@@ -118,7 +144,7 @@ proofs are documented separately in the catalogue and result package.
 | Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture | Not formalized | Exact signed block identities show both alleged zero-density exceptions instead have strictly positive lower densities. |
 | Fan–Tringali’s power-monoid length-set conjecture | Complete original 2018 conjecture | Both power monoids of every Dedekind-finite monoid with infinitely many distinct positive powers, and the exact reduced natural-number system. All 18 modules passed strict source builds, the complete declaration/axiom audit and stock kernel replay. Survey irreducibles, multiplicities and relative cancellativity remain unformalized. [Scope](../results/fan-tringali-power-monoid-lengths/LEAN.md). |
 | Sokal’s Apéry moment threshold | Not formalized | Proof of the previously unresolved excluded interval, completing the classical threshold with the earlier positive result. The Hamburger exception at one quarter and a positive alternative proof are included. |
-| Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture | Not formalized | Proof for every fixed pinnacle set by real-rooted height-path refinements. Gives Conjecture 7.2 by summation; Conjecture 7.1 is separate. |
+| Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture | Complete | Conjectures 7.3 and 7.2 for all positive sizes, pinnacle sets, and peak counts, using literal permutations and inverse descents. The full history bijection, root preservation, symmetry, and nonnegative gamma expansion are proved. The 25-module closure passed strict compilation, the all-owned audit (641 declarations, 479 theorems), and stock-kernel replay. Conjecture 7.1 remains separate. [Statement audit and receipt](../results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md). |
 | Burstein’s descent-top shape-Wilf conjecture | Not formalized | Uniform disproof of the Ferrers-board refinement, for every suffix; the ascent-bottom version is equivalent. Does not address ordinary square-board classes. |
 | Burstein’s A218225 enumeration conjecture | Not formalized | Both previously unresolved avoidance classes have the same maximum-insertion tree and the recorded algebraic generating function. The earlier first class is credited. |
 | Steinerberger’s quantitative Feldheim-tail conjecture | Complete for both original conjectures | The actual absolutely continuous unbounded nonnegative law violates both proposed ratio bounds for every positive threshold, with its actual expectation and median. All four modules passed strict compilation, the audit of 103 owned declarations (92 theorems), and stock-kernel replay. The smoothing, all-parameter, strict log-concavity, and rate supplements remain unformalized. [Scope and receipt](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md). |
@@ -136,7 +162,7 @@ proofs are documented separately in the catalogue and result package.
 | Braun–Bruegge’s bicyclic facet conjectures | Not formalized | Proves the sharp global bicyclic facet maximum and the exact theta-graph optimizers, including the previously open mixed-parity cases. |
 | Braun–Bruegge’s minimum facet conjecture | Not formalized | Proves both global minimum clauses and a stronger sharp bound at fixed maximum matching size, with unique complete-bipartite minimizers. |
 | Cyrusian–Kaplan’s ordinarization quasipolynomial question | Not formalized | Proves a genus quasipolynomial for every fixed ordinarization number, valid at every positive genus, and eventual strict monotonicity. |
-| Coulangeon–Lazzarini’s two-shell conjecture | Not formalized | Analytic counterexample and arbitrary-delay families, with independent exact enumeration of the dimension-ten witness. |
+| Coulangeon–Lazzarini’s two-shell conjecture | Complete | The real dimension-ten counterexample and the elementary arbitrary-delay family. Orthogonal indecomposability and height extensions remain open in Lean. |
 | Alexandersson’s parking-function excedance conjecture | Not formalized | Exact integer and rational counterexample at length 17; two independent counting recurrences. |
 | Tom–Vailaya’s weighted trace conjecture | Not formalized | Complete proposed written proof of journal Conjecture 74 for all natural unit interval graphs on at least two vertices. Internal mathematical review and 585 independent exact small-case checks; no Lean verification or external refereeing. |
 | Csordas–Vishnyakova conjecture | Not formalized | Complete proposed disproof of Conjecture 3.6: the quartic polynomial p(z)=z⁴+z²+1 and entire function exp(−z⁴) satisfy every required generalized coefficient inequality, yet the function is not Laguerre–Pólya. The earlier genus-restricted theorem is unaffected. Internally reviewed written argument; no Lean verification. |

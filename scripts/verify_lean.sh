@@ -22,6 +22,34 @@ modules=(
   Conjectures.FanTringaliMonoidNormalization
   Conjectures.FanTringaliMonoidTransfer
   Conjectures.FanTringaliMonoid
+  Conjectures.CoulangeonLazzariniShells
+  Conjectures.CoulangeonLazzariniRealLattice
+  Conjectures.GravgaardLeeMixedLuroth
+  Conjectures.GravgaardLeeLargeLuroth
+  Conjectures.GesselZhuangBlockOperations
+  Conjectures.GesselZhuangBlocks
+  Conjectures.GesselZhuangChoices
+  Conjectures.GesselZhuangCone
+  Conjectures.GesselZhuangGamma
+  Conjectures.GesselZhuangGammaBasic
+  Conjectures.GesselZhuangGammaRoots
+  Conjectures.GesselZhuangHistories
+  Conjectures.GesselZhuangHistoryBlocks
+  Conjectures.GesselZhuangHistoryGamma
+  Conjectures.GesselZhuangHistoryInjective
+  Conjectures.GesselZhuangHistoryPolynomial
+  Conjectures.GesselZhuangHistorySurjective
+  Conjectures.GesselZhuangPathGamma
+  Conjectures.GesselZhuangPathPolynomial
+  Conjectures.GesselZhuangPaths
+  Conjectures.GesselZhuangPermutations
+  Conjectures.GesselZhuangPolynomial
+  Conjectures.GesselZhuangRoots
+  Conjectures.GesselZhuangStatistics
+  Conjectures.GesselZhuangStatisticsHistory
+  Conjectures.GesselZhuangStatisticsInverse
+  Conjectures.GesselZhuangSymmetry
+  Conjectures.GesselZhuangTheorem
   Conjectures.RowlandSistosBarronAnnihilator
   Conjectures.RowlandSistosBarronCancellationCounts
   Conjectures.RowlandSistosBarronCharacteristic

@@ -38,8 +38,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **23.** [Ulas’s disjoint-block square-product conjecture](results/ulas-disjoint-square-blocks/) | ⬜ | **99.** [Ferroni–Higashitani’s first-three interior Ehrhart question](results/ferroni-higashitani-early-interior-ehrhart/) | ⬜ |
 | **23.** [Simmons–Weiss’s Hausdorff-measure question](results/simmons-weiss-hausdorff/) | ⬜ | **99.** [Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture](results/fmp-cylindric/) | ⬜ |
 | **28.** [Revised Tan–Zhou conjecture](results/revised-tan-zhou-luroth/) | ⬜ | **103.** [Braun–Bruegge’s bicyclic facet conjectures](results/braun-bruegge-bicyclic-facets/) | ⬜ |
-| **28.** [Gravgaard–Lee’s mixed Lüroth sumset conjecture](results/gravgaard-lee-mixed-luroth/) | ⬜ | **103.** [Braun–Bruegge’s minimum facet conjecture](results/braun-bruegge-minimum-facets/) | ⬜ |
-| **28.** [Gravgaard–Lee’s large-digit Lüroth sumset conjecture](results/gravgaard-lee-large-luroth/) | ⬜ | **103.** [Cyrusian–Kaplan’s ordinarization quasipolynomial question](results/cyrusian-kaplan-ordinarization/) | ⬜ |
+| **28.** [Gravgaard–Lee’s mixed Lüroth sumset conjecture](results/gravgaard-lee-mixed-luroth/) | ✅ | **103.** [Braun–Bruegge’s minimum facet conjecture](results/braun-bruegge-minimum-facets/) | ⬜ |
+| **28.** [Gravgaard–Lee’s large-digit Lüroth sumset conjecture](results/gravgaard-lee-large-luroth/) | ✅ | **103.** [Cyrusian–Kaplan’s ordinarization quasipolynomial question](results/cyrusian-kaplan-ordinarization/) | ⬜ |
 | **28.** [Gravgaard–Lee’s Lüroth diameter question](results/gravgaard-lee-diameter-condition/) | ⬜ | **106.** [Tom–Vailaya’s weighted trace conjecture](results/tom-vailaya-weighted-trace/) | ⬜ |
 | **28.** [Gravgaard–Lee’s mixed upper/lower Lüroth conjecture](results/gravgaard-lee-upper-lower-luroth/) | ⬜ | **106.** [Pantone–Bóna’s asymptotic conjecture](results/pantone-bona-asymptotic/) | ⬜ |
 | **33.** [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ | **106.** [Pantone–Bóna’s second-largest-terminal asymptotic conjecture](results/pantone-bona-second-largest-terminal/) | ⬜ |
@@ -49,7 +49,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **33.** [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ | **111.** [Horňák–Woźniak conjecture](results/hornak-wozniak/) | 🟡 |
 | **38.** [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ | **111.** [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
 | **38.** [Malek's conjecture](results/malek-subpermanent/) | ⬜ | **111.** [Kauers–Koutschan recurrence conjecture](results/kauers-koutschan-recurrence/) | ⬜ |
-| **38.** [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ⬜ | **111.** [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | ⬜ |
+| **38.** [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ✅ | **111.** [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | ⬜ |
 | **38.** [Kovalev's conjecture](results/kovalev-hardy-duality/) | ⬜ | **116.** [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
 | **38.** [Coffey–Smith conjecture](results/coffey-smith/) | ⬜ | **116.** [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |
 | **38.** [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ | **116.** [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | ✅ |
@@ -83,7 +83,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **71.** [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ⬜ | **145.** [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |
 | **71.** [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/) | ⬜ | **145.** [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟢 |
 | **71.** [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results/athanasiadis-chapoton-transmuted-m/) | ⬜ | **145.** [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟢 |
-| **71.** [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ⬜ | **145.** [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
+| **71.** [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ✅ | **145.** [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
 | **75.** [Sokal’s Apéry moment threshold](results/sokal-apery-moment-threshold/) | ⬜ |  |  |
 
 Read down the left pair of columns, then down the right pair. Numbers are approximate editorial importance ranks based on mathematical significance, breadth, and consequences, not recency or Lean status. Equal numbers indicate no clear distinction in importance; tied ranks use competition ranking (1, 2, 2, 4).
