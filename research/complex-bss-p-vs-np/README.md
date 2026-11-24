@@ -174,6 +174,12 @@ The [independent review](CUTTING_COMPILER_REVIEW.md) found an omitted finite-slo
 
 The [finite exact checker](verify_branch_and_operator_identities.py) checks the stated branch-gluing, stable-matrix, escaping-tableau, small digit, double-pole gcd, compressed-operator, inverse-jet and local cutting identities. It does not verify the general lower bounds or supply the missing compiler.
 
+## Supplied exclusions and counting oracles
+
+[SUPPLIED_EXCLUSION_SIMPLE_POLES.md](SUPPLIED_EXCLUSION_SIMPLE_POLES.md) uses the actual exclusion polynomial G in a one-equality saturated path: G times the logarithmic derivative of P removes every extraneous pole. The remaining term is a polynomial remainder whose values at squarefree exclusion roots are integer multiplicities times G prime. A supplied small complete factor list of G gives a full normalized-jet extraction, with cost polynomial in its charged size and the requested jet order; irreducible G is a complete special case. The general factor list and special integer-valued remainder remain unproved operations. [Independent review](SUPPLIED_EXCLUSION_REVIEW.md).
+
+[COUNTING_ORACLES_AND_CYCLIC_TRACE.md](COUNTING_ORACLES_AND_CYCLIC_TRACE.md) proves that a T-step complex BSS machine with arbitrary countable-range oracles, outputting a degree-d polynomial on an open set, gives an ordinary nonuniform arithmetic circuit of size O((T+n+1)(d+1)^2). A uniform cyclic fiber with a short observable has weighted trace z times the permanent, although its unweighted count and topological invariants are independent of the matrix. Even free integer-valued counting oracles therefore do not supply that weighted value. This is a value-output statement, not a graph-decision lower bound for oracle machines. The source audit keeps the dimension, counting and compact Toda implications in their proved directions. [Independent review](COUNTING_ORACLES_REVIEW.md).
+
 ## Coordination
 
 The campaign uses root and three concurrent workers. Assignments rotate among model and source audit, graph hardness, weighted protocols, incidence geometry, cofactor extraction, and adversarial review. Reusable statements and failed implications are recorded in the issue and committed at mathematical milestones. Review branches are temporary and target `main`, following the owner's explicit instruction for this task. Durable research stays on `main`; the solved-results table is unchanged.

@@ -38,6 +38,8 @@ python3 research/complex-bss-p-vs-np/verify_branch_and_operator_identities.py
 
 Its seven check groups cover the specified gluing, involution, transcript, small digit, double-pole gcd, compressed-matrix and modular-inverse-jet examples, plus local cutting identities with cancellation. They are finite symbolic checks, distinct from the written all-size and analytic arguments. No Lean build or verification of the target separation is claimed.
 
+The [supplied-exclusion](../research/complex-bss-p-vs-np/SUPPLIED_EXCLUSION_SIMPLE_POLES.md) and [countable-range oracle](../research/complex-bss-p-vs-np/COUNTING_ORACLES_AND_CYCLIC_TRACE.md) notes have separate full internal reviews. The integrator read both proofs and rechecked the primary theorem directions. The same exact checker now has nine groups: its additions check a localized multiplicity remainder, finite log/exp normalized jets, and the uniform cyclic weighted trace for symbolic matrices through size three. Those computations do not prove the general oracle or jet bounds, and neither note establishes the missing HN reduction. No Lean source changed.
+
 ## Boolean Hamiltonicity research lemmas
 
 Run these standard-library checks from the repository root:

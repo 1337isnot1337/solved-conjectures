@@ -1,0 +1,210 @@
+# Counting oracles do not supply weighted polynomial values
+
+Research note, 23 November 2026 (America/Chicago). The root agent has checked the full
+argument; the weighted-protocol reviewer has checked the mathematics
+and primary-source directions in a
+[written review](COUNTING_ORACLES_REVIEW.md). No
+novelty or formal-verification claim is made.
+
+The statement concerns **outputting a polynomial value** on an open set.
+It does not concern deciding that polynomial's graph. In particular it
+does not prove a separation between complex BSS decision classes.
+
+## 1. The directions in the primary counting results
+
+The following are the precise versions checked for this investigation.
+
+| Source | Statement used |
+| --- | --- |
+| Bürgisser and Cucker, [arXiv:cs/0312007v1](https://arxiv.org/pdf/cs/0312007v1), 2 December 2003 | Theorem 2.6(i), credited there to Koiran, states that algebraic dimension threshold is `NP_C`-complete. Theorem 3.4(i) makes complex point counting `#HN_C` complete for `#P_C` under parsimonious reductions. Theorem 5.2 makes geometric degree complete for `FP_C^{#P_C}` under Turing reductions. |
+| Bürgisser, Cucker, and Lotz, [C. R. Acad. Sci. Paris 339 (2004), 371–376](https://www.numdam.org/item/10.1016/j.crma.2004.06.008.pdf) | Theorem 1.1 makes the Euler characteristic of affine or projective complex varieties complete for `FP_C^{#P_C}` under Turing reductions. |
+| Basu, [arXiv:0912.2652v7](https://arxiv.org/pdf/0912.2652v7), version identifier dated 14 October 2011 | Definition 1.22 defines `#P_C^dagger` using fiber Poincaré polynomials. Theorem 2.1 gives `PH_C^c ⊂ P_C^{#P_C^dagger}` for the compact projective hierarchy. Theorem 2.6 reduces its fixed-alternation sentence problem to Poincaré-polynomial computation. Remark 1.25 and Section 5(C) explicitly distinguish the full Poincaré polynomial from Euler characteristic. |
+
+These are reductions of decision or geometric computation **to counting
+or topological oracles**. None is a reduction of counting to the complex
+polynomial hierarchy. The last source's oracle is not simply `#HN_C` or
+Euler characteristic. Its compactness qualification is part of the cited
+theorem; no later strengthening is assumed here.
+
+Under `HN_C in P_C`, the dimension theorem does give a polynomial-time
+algorithm for dimension: test thresholds in the bounded range from the
+empty set through the ambient dimension. It therefore also decides
+whether an algebraic fiber is empty, finite, or positive dimensional.
+This does not compute the size of a finite fiber. The proof of the degree
+theorem makes the distinction explicit: after computing dimension and
+generic slices, it calls `#HN_C` to count the slice points.
+
+There is a limited counting consequence. For a supplied polynomial bound
+`b` on the desired count, the predicate that a fiber contains at least
+`k<=b+1` points has an existential certificate consisting of `k` distinct
+points. Under `HN_C in P_C`, these thresholds compute the count truncated
+at `b+1` in polynomial time. Encoding an exponentially large `k` in
+binary does not shorten that displayed witness list to `O(log k)`.
+
+## 2. A countable-range oracle lemma
+
+Fix a finite number of oracle functions. Each oracle may be arbitrary,
+with no definability or computability hypothesis, but the union of all
+complex coordinates appearing in all its possible outputs is countable.
+An exceptional output such as infinity may be represented by a fixed
+sentinel. Integer counts, integer Euler characteristics, and finite
+vectors of integer Betti numbers satisfy this condition.
+
+Let `M` be a complex BSS machine with a finite fixed list of complex
+constants. Its ordinary charged operations are arithmetic, division
+where defined, and equality branches. Oracle query formation, the
+coordinates read from oracle outputs, and subsequent arithmetic are
+charged in the usual time bound. In particular, an integer oracle answer
+does not create a unit-cost operation raising a variable to that integer
+power.
+
+**Lemma.** Suppose that, for inputs in `C^n`, the machine runs in at most
+`T` steps and outputs a polynomial `f in C[x_1,...,x_n]` of degree at most
+`d` on a nonempty Zariski-open subset. Then `f` has a nonuniform
+division-free arithmetic circuit with arbitrary complex constants of size
+
+```math
+L(f)\le C(T+n+1)(d+1)^2                         \tag{1}
+```
+
+for an absolute constant `C`. In particular the same bound holds for
+border complexity.
+
+**Proof.** Choose a nonzero polynomial `a` whose principal open set
+`D(a)` is contained in the domain of correctness. Let `K` be the field
+generated over `Q` by:
+
+- the finitely many machine constants;
+- every possible complex coordinate returned by the oracles;
+- the coefficients of `f` and `a`.
+
+The field `K` is countable. Choose
+`xi=(xi_1,...,xi_n)` algebraically independent over `K`. Such a tuple
+exists in `C`, since an algebraic extension of a field generated by
+countably many elements over `Q` is countable. Algebraic independence
+also implies `a(xi)!=0`.
+
+Run `M` on `xi`. Freeze its realized control history and replace every
+oracle coordinate it actually reads by that coordinate as an allowed
+constant. All these constants belong to `K`. The at-most-`T` arithmetic
+steps form a rational circuit `R(x)` over `K`. Adaptive query lengths,
+oracle-dependent branches, and discrete memory control are fixed by this
+realized history; no search for the history is asserted.
+
+Every divisor used on this execution is nonzero at `xi`, hence is a
+nonzero rational function. The final equality
+
+```math
+R(\xi)=f(\xi)
+```
+
+forces `R=f` as rational functions. Otherwise a nonzero polynomial over
+`K`, obtained from the numerator of `R-f`, would vanish at the
+algebraically independent tuple `xi`.
+
+Choose a point `c in C^n` where all intermediate divisors of this fixed
+rational circuit are defined and nonzero. Replace its input by
+
+```math
+c+s(x-c)
+```
+
+and carry out every gate in the truncated ring `C[x][s]/(s^{d+1})`.
+The constant term of each divisor is a nonzero scalar. Addition,
+convolution multiplication, and inversion of a series with nonzero
+constant term use `O((d+1)^2)` arithmetic gates per original gate.
+Input construction costs `O(n)`. The result is the exact truncated
+expansion of `f(c+s(x-c))`. That polynomial has degree at most `d` in
+`s`; thus no output term was discarded. Set `s=1` to obtain `f(x)`.
+This proves (1). No effective construction of `c`, `xi`, or the frozen
+oracle answers is needed for this nonuniform conclusion. □
+
+The open-domain condition matters for countable ranges. Correctness only
+on an arbitrary Zariski-dense subset would be insufficient: integer
+inputs form such a subset, and an oracle with integer outputs could
+simply return an integer-valued target on those inputs. If the oracle
+ranges are finite at each relevant query size, a separate finite-history
+argument does work on an arbitrary Zariski-dense correctness set.
+
+## 3. A uniform cyclic fiber whose weighted trace is the permanent
+
+This example uses no size-dependent root-of-unity constants. Put
+
+```math
+B=m+1,\qquad b_j=B^{j-1},\qquad
+\kappa=\sum_{j=1}^m b_j,
+\qquad
+K_m(X,t)=\prod_{i=1}^m\left(\sum_{j=1}^m X_{ij}t^{b_j}\right).
+                                                               \tag{2}
+```
+
+A monomial in this product has exponent `sum_j c_j b_j`, where
+`0<=c_j<=m<B` records how many rows chose column `j`. Uniqueness of
+base-`B` digits proves
+
+```math
+[t^\kappa]K_m(X,t)=\mathop{\mathrm{per}}_m(X).    \tag{3}
+```
+
+Choose `D=2^ell` with
+`ell=m ceil(log_2(m+1))+1`. Then
+`D>deg_t K_m` and `D>kappa`. Define
+
+```math
+h_m(X,t)=\frac1D t^{D-\kappa}K_m(X,t),
+\qquad T_z=\{t\in\mathbb C:t^D=z\}.             \tag{4}
+```
+
+The powers in (2) share repeated-squaring computations, and `D-kappa`
+has `O(m log(m+1))` binary digits. Thus (4) has a uniform arithmetic
+circuit of size `O(m^2+m log(m+1))`. The integer exponent bookkeeping is
+polynomial, and the scalar `D` is obtained by `ell` doublings. Replacing
+each circuit gate by an evaluation variable gives a polynomial-size
+quadratic incidence with unique auxiliary values; the succinct
+description is not being treated as a dense coefficient list.
+
+For `z!=0`, `T_z` consists of `D` distinct points. Its dimension is zero,
+its cardinality, geometric degree, and Euler characteristic are all `D`,
+and its Poincaré polynomial is the constant `D`. These values do not
+depend on `X`.
+
+All exponents occurring in `t^{D-kappa}K_m` lie strictly between zero
+and `2D`. The only one divisible by `D` is `D`, with coefficient the
+permanent. The elementary root-of-unity sum therefore gives, for every
+complex matrix `X` and every `z!=0`,
+
+```math
+\sum_{t\in T_z}h_m(X,t)
+=z\,\mathop{\mathrm{per}}_m(X).                 \tag{5}
+```
+
+Equivalently this is the trace of multiplication by `h_m` in the finite
+free algebra `C[X,z,t]/(t^D-z)`. Formula (5) follows by specializing to
+the reduced fibers, or directly from the power basis. It is a weighted
+field-valued sum, not the cardinality of the fiber or of the graph
+`{(t,h_m(X,t)):t in T_z}`; that graph still has exactly `D` points.
+
+If polynomial-time BSS arithmetic, even augmented by arbitrary
+countable-range oracles, could output this weighted trace from its
+succinct presentation, set `z=1` and apply the lemma with `d=m`.
+This would give polynomial-size circuits for the permanent, contradicting
+the standing [pinned permanent border lower bound](https://github.com/anthropics/formal-math/tree/11b6c7e3c927df2658f513b6b68ea7f8929c62c5/vp-vnp).
+The distinction remains even if point counting, Euler characteristic,
+and Poincaré-polynomial computation are supplied as free oracle answers.
+
+## 4. What remains for the HN separation
+
+The cited results do not establish
+`HN_C in P_C => #HN_C in FP_C`. Even such an additional counting
+collapse would not turn the weighted-value procedure in (5) into a
+permitted shortcut: it is already excluded when the countable-range
+oracles are available for free.
+
+There is no contradiction with a hypothetical decision procedure for
+the equality `y=per_m(X)`. Its output is Boolean. The lemma would only
+replace one execution by a circuit for that Boolean output, not recover
+the unknown coordinate `y`. A remaining graph-based route must give an
+actual bounded-resource reduction of **trace equality** to HN or to a
+fixed complex quantifier prefix. Neither the counting/Toda directions
+above nor mere knowledge that the cyclic fiber has `D` points supplies
+such a reduction.

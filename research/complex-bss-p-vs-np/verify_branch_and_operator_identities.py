@@ -7,7 +7,7 @@ the conditional cutting compiler, or P_C versus NP_C.
 """
 
 from collections import Counter, defaultdict
-from itertools import product
+from itertools import permutations, product
 
 import sympy as sp
 
@@ -222,15 +222,81 @@ def check_cutting_local_identities():
     equal(postponed, 2*lam*lam+3, "postponed aggregate")
 
 
+def check_supplied_exclusion():
+    t, x, epsilon, u, v = sp.symbols("t x epsilon u v")
+    r = t*t-x
+    g = (t-2)*(t+3)
+    q = (t-2)**2*(t+3)**5
+    p = r**3*q
+    b = sp.cancel(g*sp.diff(p, t)/p)
+    remainder = 2*(t+3)+5*(t-2)
+    equal(b-remainder, 3*g*sp.diff(r, t)/r, "supplied-exclusion cancellation")
+    numerator, denominator = sp.fraction(b)
+    equal(sp.rem(numerator-remainder*denominator, g, t), 0,
+          "localized polynomial remainder")
+    for beta, multiplicity in ((2, 2), (-3, 5)):
+        equal(remainder.subs(t, beta), multiplicity*sp.diff(g, t).subs(t, beta),
+              "integer multiplicity profile")
+
+    r = t**3+x+1
+    g = t*t+x*t+1
+    p = r*r*g**4
+    substitution = {x: epsilon*u, t: epsilon*v}
+    for degree in (3, 5):
+        def truncate(expression):
+            polynomial = sp.Poly(sp.expand(expression), epsilon)
+            return sp.Add(*(coefficient*epsilon**k
+                            for (k,), coefficient in polynomial.terms() if k <= degree))
+
+        def finite_log(unit):
+            increment = truncate(unit-1)
+            power, result = sp.Integer(1), sp.Integer(0)
+            for j in range(1, degree+1):
+                power = truncate(power*increment)
+                result += sp.Rational((-1)**(j+1), j)*power
+            return truncate(result)
+
+        logarithm = truncate((finite_log(p.subs(substitution))
+                              - 4*finite_log(g.subs(substitution)))/2)
+        power, exponential = sp.Integer(1), sp.Integer(1)
+        for j in range(1, degree+1):
+            power = truncate(power*logarithm)
+            exponential += power/sp.factorial(j)
+        equal(truncate(exponential), truncate(r.subs(substitution)),
+              f"supplied-factor normalized full jet D={degree}")
+
+
+def check_uniform_cyclic_trace():
+    t, z = sp.symbols("t z")
+    for m in (1, 2, 3):
+        base = m+1
+        exponents = [base**j for j in range(m)]
+        kappa = sum(exponents)
+        dimension = 2**(m*(base-1).bit_length()+1)
+        entries = sp.symbols(f"c0:{m*m}")
+        matrix = [entries[m*i:m*(i+1)] for i in range(m)]
+        k = sp.prod(sum(matrix[i][j]*t**exponents[j] for j in range(m))
+                    for i in range(m))
+        h = sp.expand(t**(dimension-kappa)*k/dimension)
+        remainder = sp.rem(h, t**dimension-z, t)
+        # In the power basis of C(z)[t]/(t^D-z), only its constant
+        # coefficient contributes to the multiplication trace.
+        trace = dimension*sp.Poly(remainder, t).coeff_monomial(1)
+        per = sum(sp.prod(matrix[i][p[i]] for i in range(m))
+                  for p in permutations(range(m)))
+        equal(trace, z*per, f"uniform cyclic trace m={m}")
+
+
 def main():
     checks = (check_branch_gluing, check_stable_matrix, check_transcript_escape,
               check_reentry, check_marked_gcd_and_nullvector,
               check_compressed_operator_and_inverse_jet,
-              check_cutting_local_identities)
+              check_cutting_local_identities, check_supplied_exclusion,
+              check_uniform_cyclic_trace)
     for check in checks:
         check()
         print(f"PASS {check.__name__}")
-    print("Seven finite exact check groups passed; no general separation is verified.")
+    print(f"{len(checks)} finite exact check groups passed; no general separation is verified.")
 
 
 if __name__ == "__main__":
