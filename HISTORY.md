@@ -4,6 +4,14 @@
 
 The [written proof](results/pantone-bona-third-largest-terminal/) resolves Conjecture 6.2 for $A_{5,3}$ with exact leading constant $9\sqrt3/(16\pi)$. See [issue #382](https://github.com/1337isnot1337/solved-conjectures/issues/382) for source audit and scope. This is distinct from the other asymptotic conjectures in the same paper.
 
+## 2026-11-24: Resolve matching-excess divergence and two plane-partition conjectures
+
+- [Matching-excess divergence](results/hartke-stolee-west-yancey-matching-excess/) follows from an explicit graph construction and binary long division. The stronger rate question is separate.
+- [Plane-partition polynomial Turán inequalities](results/heim-neuhauser-troeger-plane-partition-turan/) hold on the full real parameter range of Conjecture 2.
+- [Plane-partition nth-root polynomization](results/heim-neuhauser-plane-partition-polynomization/) holds on both real parameter ranges of Conjecture 1.
+
+The two plane-partition proofs use exact rational and integer certificates, not sampled real parameters. No Lean, external review, or exclusive priority claims are made.
+
 ## 2026-11-24: Prove Pantone–Bóna’s second-smallest-terminal asymptotic
 
 The [written proof](results/pantone-bona-second-smallest-terminal/) resolves Conjecture 6.1 for $A_{5,2}$ with exact leading constant $9\sqrt3/(16\pi)$. See [issue #383](https://github.com/1337isnot1337/solved-conjectures/issues/383) for source audit and scope. This is distinct from the other asymptotic conjectures in the same paper.

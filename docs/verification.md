@@ -166,6 +166,12 @@ python3 results/johnson-pfaffian/verify.py
 
 The standard-library checker uses exact rational arithmetic for supplementary identity and indexing checks. It explicitly records that finite checks do not prove the universal assertion. No Lean formalization is claimed.
 
+## Matching excess and plane-partition inequalities
+
+Run `python3 results/hartke-stolee-west-yancey-matching-excess/verify.py` for an independent exact finite replay of the graph and digit calculations; the proof does not use that replay.
+
+The [plane-partition polynomial Turán proof](../results/heim-neuhauser-troeger-plane-partition-turan/PROOF.md) and [polynomization proof](../results/heim-neuhauser-plane-partition-polynomization/PROOF.md) do use exact arithmetic certificates. Run the `heim-neuhauser-fourier-certificate.py` and `heim-neuhauser-plane-partition-check.py` programs in the Turán result directory without Python optimization. Their assertions certify the rational parameter boxes and the remaining polynomial coefficient signs, respectively.
+
 ## Pantone–Bóna asymptotic equivalence
 
 Run `python3 results/pantone-bona-asymptotic/verify.py` for literal small permutation counts and exact tableau branching comparisons. The [proof](../results/pantone-bona-asymptotic/PROOF.md) derives the leading constant analytically; finite enumeration is not part of its argument.
