@@ -1,0 +1,42 @@
+{
+  "source_statement": "https://arxiv.org/pdf/1802.02641#page=10",
+  "research_base_counterexample": "b8c289cd7f4d769f6394a16d8fb4eefbc75be27d",
+  "lean": "leanprover/lean4:v4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "sources": {
+    "lean/Conjectures/CardonZeroSector.lean": "685f121dcfc28823d08a28ea5cecd4c39ffd3316e44fd670b1b45e20f40febf2",
+    "lean/Conjectures/CardonZeroSectorAnalysis.lean": "15fd857efdb61fd2b908e0360697dc09085ca97397d193cd047ddf4da4d0510a",
+    "lean/Conjectures/CardonZeroSectorSmallDamping.lean": "a321127dcdae971060ecb42fb4e3e80c1c6f24d541ce35fa50de1bbf7addef0a"
+  },
+  "strict_source_compilation": {
+    "warnings_are_errors": true,
+    "modules_passed": [
+      "Conjectures.CardonZeroSector",
+      "Conjectures.CardonZeroSectorAnalysis",
+      "Conjectures.CardonZeroSectorSmallDamping"
+    ]
+  },
+  "all_owned_axiom_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 68,
+    "modules": 3,
+    "private_declarations": 35,
+    "raw_declarations": 68,
+    "required": 9,
+    "tag": "passed",
+    "theorems": 54
+  },
+  "stock_kernel_replay": {
+    "modules_passed": [
+      "Conjectures.CardonZeroSector",
+      "Conjectures.CardonZeroSectorAnalysis",
+      "Conjectures.CardonZeroSectorSmallDamping"
+    ],
+    "command": "lake env python3 ../scripts/replay_lean.py --root Conjectures.CardonZeroSectorSmallDamping"
+  },
+  "aggregate_and_hosted_checks": "separate from this local receipt"
+}

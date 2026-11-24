@@ -1,15 +1,19 @@
-import Mathlib.Algebra.CubicDiscriminant
-import Mathlib.Analysis.Complex.Polynomial.Basic
-import Mathlib.Analysis.SpecialFunctions.Complex.Arg
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Tactic.ByContra
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Ring
+module
+
+public import Mathlib.Algebra.CubicDiscriminant
+public import Mathlib.Analysis.Complex.Polynomial.Basic
+public import Mathlib.Analysis.SpecialFunctions.Complex.Arg
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Tactic.ByContra
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
 
 /-! The explicit counterexample to Cardon–Forgács–Piotrowski–Sorensen–White
 Question 6.1: the cubic input has all its zeros at 1, but its image has
 a nonreal zero at a positive-width sector obstruction. -/
+
+@[expose] public section
 
 namespace CardonZeroSector
 
