@@ -1,0 +1,63 @@
+Lean version: Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+MaTangCoreBalance SHA256: ddb959fd9a40f664dead70a468aee434a492ec14375941ea567885f3d42a3b80
+MaTangCoreIndexed SHA256: 983c021c9e0bb930d34571517065c28c1ba923e400f91fc75e253d5b28e88388
+PASS: strict source compilation
+'MaTangCoreBalance.signed' does not depend on any axioms
+'MaTangCoreBalance.chooseSign' does not depend on any axioms
+'MaTangCoreBalance.chooseSign_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.assign' does not depend on any axioms
+'MaTangCoreBalance.signedSum' does not depend on any axioms
+'MaTangCoreBalance.bitSum' does not depend on any axioms
+'MaTangCoreBalance.flip' does not depend on any axioms
+'MaTangCoreBalance.assign_projection' depends on axioms: [propext]
+'MaTangCoreBalance.assign_sum_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.exists_balanced' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.flip_sub' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.flip_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.groupedSum' does not depend on any axioms
+'MaTangCoreBalance.grouped_mod_invariant' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.occupiedCount' does not depend on any axioms
+'MaTangCoreBalance.assignOccupied' does not depend on any axioms
+'MaTangCoreBalance.assignOccupied_projection' depends on axioms: [propext]
+'MaTangCoreBalance.assignOccupied_sum_mod' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.decorate' does not depend on any axioms
+'MaTangCoreBalance.decorate_projection' depends on axioms: [propext]
+'MaTangCoreBalance.decorate_balanced' depends on axioms: [propext, Quot.sound]
+'MaTangCoreBalance.decorateGroups' does not depend on any axioms
+'MaTangCoreBalance.groupProjection' does not depend on any axioms
+'MaTangCoreBalance.decorateGroups_projection' depends on axioms: [propext]
+'MaTangCoreBalance.exists_grouped_constant_fiber' depends on axioms: [propext, Quot.sound]
+'MaTangCoreIndexed.Raw' does not depend on any axioms
+'MaTangCoreIndexed.Annot' does not depend on any axioms
+'MaTangCoreIndexed.project' does not depend on any axioms
+'MaTangCoreIndexed.countType' does not depend on any axioms
+'MaTangCoreIndexed.nextBudget' does not depend on any axioms
+'MaTangCoreIndexed.annotate' does not depend on any axioms
+'MaTangCoreIndexed.typeSignedSum' does not depend on any axioms
+'MaTangCoreIndexed.annotate_projection' depends on axioms: [propext]
+'MaTangCoreIndexed.annotate_type_sum' depends on axioms: [propext, Quot.sound]
+'MaTangCoreIndexed.initialBudget' does not depend on any axioms
+'MaTangCoreIndexed.chosen' does not depend on any axioms
+'MaTangCoreIndexed.chosen_projection' depends on axioms: [propext]
+'MaTangCoreIndexed.chosen_type_balanced' depends on axioms: [propext, Quot.sound]
+'MaTangCoreIndexed.delta' does not depend on any axioms
+'MaTangCoreIndexed.before' does not depend on any axioms
+'MaTangCoreIndexed.after' does not depend on any axioms
+'MaTangCoreIndexed.after_eq' depends on axioms: [propext, Quot.sound]
+'MaTangCoreIndexed.belowMask' does not depend on any axioms
+'MaTangCoreIndexed.delta_below_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreIndexed.delta_below_zero' depends on axioms: [propext]
+'MaTangCoreIndexed.delta_below_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreIndexed.labelBound' does not depend on any axioms
+'MaTangCoreIndexed.label_lt_bound' depends on axioms: [propext, Quot.sound]
+'MaTangCoreIndexed.delta_below_eq' depends on axioms: [propext]
+'MaTangCoreIndexed.delta_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreIndexed.chosen_mod_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreIndexed.sumBits' depends on axioms: [propext]
+'MaTangCoreIndexed.flipBits' depends on axioms: [propext]
+'MaTangCoreIndexed.sumBits_before' depends on axioms: [propext]
+'MaTangCoreIndexed.sumBits_after' depends on axioms: [propext]
+'MaTangCoreIndexed.exists_ordered_constant_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaTangCoreIndexed.not_covers_of_type_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS: transitive axiom check of all 57 source-named declarations
+PASS: stock kernel replay of both scoped modules
