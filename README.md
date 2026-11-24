@@ -43,6 +43,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | ⬜ |
 | [Sagan–Swanson’s q-Stirling normality conjecture](results/sagan-swanson-q-stirling-normality/) | ⬜ |
 | [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | ⬜ |
+| [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ |
 | [Juhnke’s arbitrary-step lattice-path log-concavity conjecture](results/juhnke-lattice-paths/) | ⬜ |
 | [Chow’s type-D Eulerian interlacing conjecture](results/chow-type-d/) | ⬜ |
 | [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ⬜ |

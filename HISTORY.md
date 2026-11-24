@@ -36,6 +36,7 @@ The [written proof](results/pantone-bona-third-largest-terminal/) resolves Conje
 - [Dukes’s revstack interlacing conjecture](results/dukes-revstack/): Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement.
 - [Sagan–Swanson’s q-Stirling normality conjecture](results/sagan-swanson-q-stirling-normality/): Proves a Gaussian limit with true standardized moments for all four interior-proportion q-Stirling families and a uniform lattice local profile.
 - [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/): Proves strict log-concavity in every nontrivial row of the first-value refinement of the Lassalle sequence.
+- [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/): Proves eventual stability of all plactic centralizers of powers, with an alphabet-only cutoff independent of word length.
 - [Juhnke’s arbitrary-step lattice-path log-concavity conjecture](results/juhnke-lattice-paths/): Proves all-dimensional log-concavity for the unrestricted east/north arbitrary-step path counts.
 - [Chow’s type-D Eulerian interlacing conjecture](results/chow-type-d/): Proves consecutive type-D Eulerian interlacing, strict in every transition from degree three onward.
 - [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/): A lattice-preserving transfer gives the same Ehrhart series for opposite polar preorder polytopes, with convex mutations and a finite numerator model.

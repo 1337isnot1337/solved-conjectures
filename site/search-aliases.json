@@ -25,6 +25,7 @@
   "dukes-revstack": ["Mark Dukes", "revstack", "Eulerian polynomials", "interlacing", "revstack sort", "descent polynomials"],
   "sagan-swanson-q-stirling-normality": ["Bruce Sagan", "Joshua Swanson", "q-Stirling numbers", "normality", "Type A", "Type B", "central limit theorem", "local central limit theorem", "geometric occupancies"],
   "defant-engen-miller-lassalle": ["Defant Engen Miller", "Lassalle numbers", "uniquely sorted permutations", "West stack-sort", "Bessel function", "log-concavity", "Bernstein coefficients"],
+  "sagan-wilson-plactic": ["Bruce Sagan", "Wilson", "plactic monoid", "centralizers", "Johnson Kambites", "tropical representation", "meet join", "Knuth equivalence"],
   "juhnke-lattice-paths": ["Martina Juhnke", "lattice paths", "log-concavity", "arbitrary-length steps", "Oberwolfach", "binomial transform"],
   "chow-type-d": ["Chak-On Chow", "type D Eulerian polynomials", "consecutive interlacing", "Coxeter group", "logistic derivatives"],
   "athanasiadis-chapoton-polar-duality": ["Athanasiadis Chapoton", "Luo polar preorder", "preorder polytopes", "Ehrhart duality", "Stanley transfer"],
