@@ -1,0 +1,228 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-24T22:10:59.811174+00:00",
+  "finished_at": "2026-11-24T22:12:02.160611+00:00",
+  "root": "Conjectures.UlasDisjointSquareBlocks",
+  "project_modules": [
+    "Conjectures.UlasDisjointSquareBlocks",
+    "Conjectures.UlasDisjointSquareBlocksAffine",
+    "Conjectures.UlasDisjointSquareBlocksBasic",
+    "Conjectures.UlasDisjointSquareBlocksConstruction",
+    "Conjectures.UlasDisjointSquareBlocksOddCount",
+    "Conjectures.UlasDisjointSquareBlocksOddPrime",
+    "Conjectures.UlasDisjointSquareBlocksParity",
+    "Conjectures.UlasDisjointSquareBlocksReduction",
+    "Conjectures.UlasDisjointSquareBlocksSquareclass"
+  ],
+  "required_endpoints": [
+    "UlasDisjointSquareBlocks.ulasConjecture",
+    "UlasDisjointSquareBlocks.eventual_infinite",
+    "UlasDisjointSquareBlocks.exists_odd_count_above",
+    "UlasDisjointSquareBlocks.exists_odd_prime_avoiding_count_above",
+    "UlasDisjointSquareBlocks.infinite_solutions_at_all_positive_multiples",
+    "UlasDisjointSquareBlocks.eventual_infinite_of_prime_avoiding_tails",
+    "UlasDisjointSquareBlocks.exists_positive_repeatable_count",
+    "UlasDisjointSquareBlocks.Repeatable.infinite",
+    "UlasDisjointSquareBlocks.eventual_infinite_of_repeatable_and_prime_avoidance",
+    "UlasDisjointSquareBlocks.ulasConjecture_of_inputs"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/UlasDisjointSquareBlocks.lean": "de7a7f933b1fbd6f86cab3e07d7da094802728d66c7df90229bb343fbb0ebd22",
+    "lean/Conjectures/UlasDisjointSquareBlocksAffine.lean": "2e795d24ad72f492a0f296e18abf50097c901da90571764d4299f84d72562a42",
+    "lean/Conjectures/UlasDisjointSquareBlocksBasic.lean": "dcce728ba7db0a8c42940edd62e7242181c86520c7667bd0a03947958de7bc1e",
+    "lean/Conjectures/UlasDisjointSquareBlocksConstruction.lean": "e61e73f1a56a1aee7fb71a4ad0ab8d7924e8d78679b9cdde09b2ddafe6434322",
+    "lean/Conjectures/UlasDisjointSquareBlocksOddCount.lean": "555380a5503808db6c42fae9d0979a318d2cdbc6da142b124bace0be31892ed5",
+    "lean/Conjectures/UlasDisjointSquareBlocksOddPrime.lean": "f77968270acc522449d7c2308c4ce94cee78697674c2e534c13b7ae3e2af2ceb",
+    "lean/Conjectures/UlasDisjointSquareBlocksParity.lean": "e6bc212a2fc253b1f55f6679393a1de9832663cefb9cb7426cbf92281575aacb",
+    "lean/Conjectures/UlasDisjointSquareBlocksReduction.lean": "a5e29f699cfa60b7c90e831ec7cb8ce2cf903db5465e08620aeb9a8bc09e1f96",
+    "lean/Conjectures/UlasDisjointSquareBlocksSquareclass.lean": "f3a7832537dd9b4b4697040a79ba09efe2e814b062ef5c024a6400afeeb989fa"
+  },
+  "input_sha256": {
+    "lean/Conjectures/UlasDisjointSquareBlocks.lean": "de7a7f933b1fbd6f86cab3e07d7da094802728d66c7df90229bb343fbb0ebd22",
+    "lean/Conjectures/UlasDisjointSquareBlocksAffine.lean": "2e795d24ad72f492a0f296e18abf50097c901da90571764d4299f84d72562a42",
+    "lean/Conjectures/UlasDisjointSquareBlocksBasic.lean": "dcce728ba7db0a8c42940edd62e7242181c86520c7667bd0a03947958de7bc1e",
+    "lean/Conjectures/UlasDisjointSquareBlocksConstruction.lean": "e61e73f1a56a1aee7fb71a4ad0ab8d7924e8d78679b9cdde09b2ddafe6434322",
+    "lean/Conjectures/UlasDisjointSquareBlocksOddCount.lean": "555380a5503808db6c42fae9d0979a318d2cdbc6da142b124bace0be31892ed5",
+    "lean/Conjectures/UlasDisjointSquareBlocksOddPrime.lean": "f77968270acc522449d7c2308c4ce94cee78697674c2e534c13b7ae3e2af2ceb",
+    "lean/Conjectures/UlasDisjointSquareBlocksParity.lean": "e6bc212a2fc253b1f55f6679393a1de9832663cefb9cb7426cbf92281575aacb",
+    "lean/Conjectures/UlasDisjointSquareBlocksReduction.lean": "a5e29f699cfa60b7c90e831ec7cb8ce2cf903db5465e08620aeb9a8bc09e1f96",
+    "lean/Conjectures/UlasDisjointSquareBlocksSquareclass.lean": "f3a7832537dd9b4b4697040a79ba09efe2e814b062ef5c024a6400afeeb989fa",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/UlasDisjointSquareBlocksBasic.olean",
+        "Conjectures/UlasDisjointSquareBlocksBasic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.UlasDisjointSquareBlocksBasic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/UlasDisjointSquareBlocksParity.olean",
+        "Conjectures/UlasDisjointSquareBlocksParity.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.UlasDisjointSquareBlocksParity.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/UlasDisjointSquareBlocksAffine.olean",
+        "Conjectures/UlasDisjointSquareBlocksAffine.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.UlasDisjointSquareBlocksAffine.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/UlasDisjointSquareBlocksConstruction.olean",
+        "Conjectures/UlasDisjointSquareBlocksConstruction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.UlasDisjointSquareBlocksConstruction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/UlasDisjointSquareBlocksReduction.olean",
+        "Conjectures/UlasDisjointSquareBlocksReduction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.UlasDisjointSquareBlocksReduction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/UlasDisjointSquareBlocksSquareclass.olean",
+        "Conjectures/UlasDisjointSquareBlocksSquareclass.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.UlasDisjointSquareBlocksSquareclass.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/UlasDisjointSquareBlocksOddCount.olean",
+        "Conjectures/UlasDisjointSquareBlocksOddCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.UlasDisjointSquareBlocksOddCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/UlasDisjointSquareBlocksOddPrime.olean",
+        "Conjectures/UlasDisjointSquareBlocksOddPrime.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.UlasDisjointSquareBlocksOddPrime.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Conjectures/UlasDisjointSquareBlocks.olean",
+        "Conjectures/UlasDisjointSquareBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.UlasDisjointSquareBlocks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "../results/ulas-disjoint-square-blocks/verification/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "../scripts/replay_lean.py",
+        "--root",
+        "Conjectures.UlasDisjointSquareBlocks"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 220,
+    "modules": 9,
+    "private_declarations": 72,
+    "raw_declarations": 220,
+    "required": 10,
+    "tag": "passed",
+    "theorems": 184
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS",
+  "command_cwd": "lean"
+}

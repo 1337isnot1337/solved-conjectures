@@ -1,5 +1,10 @@
 # Verification
 
+## Ulas’s disjoint-block square-product conjecture
+
+The [local receipt](../results/ulas-disjoint-square-blocks/verification/receipt.json) records the strict Lean build, transitive axiom audit, and stock-kernel replay for the nine-module closure of `Conjectures.UlasDisjointSquareBlocks`. The [Lean formalization](../results/ulas-disjoint-square-blocks/FORMALIZATION.md) gives the scoped command. The [aggregate workflow](../.github/workflows/lean.yml) uses the registered imports, audit endpoints, and replay list.
+
+
 ## Feldheim–Feldheim’s weighted tail conjecture
 
 From `lean/`, run `lake env python3 ../scripts/verify_feldheim_weighted_tail.py`. The [dedicated workflow](../.github/workflows/lean-feldheim-weighted-tail.yml) runs the same fresh strict source builds, complete all-owned/private transitive axiom audit and exact stock-kernel replay for the registered twenty-module closure. The [proof-lane receipt](../results/feldheim-weighted-tail/verification/lane/receipt.json) and [independent final validation](../results/feldheim-weighted-tail/verification/FINAL_INDEPENDENT_VALIDATION.json) cover 179 declarations, 161 theorems and all thirty required endpoints. The [publication receipt](../results/feldheim-weighted-tail/verification/receipt.json) checks the portable runner and current registrations separately. [Scope and reviews](../results/feldheim-weighted-tail/LEAN_REVIEW.md) retain all laws and all positive weights; higher-dimensional norm and finite-threshold supplements are unformalized. Aggregate verification and current-mode public deployment remain separate obligations in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).

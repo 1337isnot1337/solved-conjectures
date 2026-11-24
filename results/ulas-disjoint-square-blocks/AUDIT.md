@@ -6,4 +6,4 @@ Earlier variable-cardinality results and the specific-length work of Ulas, Bauer
 
 Independent review checked the affine-root and leading-coefficient parity, the uniform [Granville–Soundararajan mean estimate](https://annals.math.princeton.edu/2001/153-2/p04) and disjoint random sampling, odd-prime Walsh inversion, and residue stabilization above arbitrary endpoints. It also verified the exact printed quantifiers and found no earlier general all-count proof. The mixed-length audit checked the independent uniform short-interval estimate, disjoint squareclass realization, and the finite dominant-length case split.
 
-No Lean verification, external review or absolute priority claim is made.
+The common-length theorem has a [Lean formalization](FORMALIZATION.md). The review and priority search described here are internal and bounded.
