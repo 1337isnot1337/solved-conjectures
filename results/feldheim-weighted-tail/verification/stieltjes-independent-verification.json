@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-11-24T19:05:19.389004+00:00",
+  "review_type": "independent mathematical scope and available-artifact validation; no Lean process run",
+  "source_argument": "results/feldheim-weighted-tail/PROOF.md \u00a74 equation (9), commit 2f800fa5191a1d747f126fa20f7e9c2b3730b085",
+  "source_argument_sha256": "f597851e42f4df26b5706dd9969d889ee6dc7ebbb5bb4cf028074ce027278fa3",
+  "source_sha256": {
+    "Conjectures.FeldheimWeightedTailStieltjes": "d6e46e15e4ccfd1c7d8189594d1bf0f15071878687a557b7671aea1fee372c7b",
+    "Conjectures.FeldheimWeightedTailStieltjesGrid": "7b527870c305271d19cd5d169a23eafd611df2b465397b09422c2831ee5f7304",
+    "Conjectures.FeldheimWeightedTailStieltjesLimit": "520e3f5d137517e990cc5fd6f15ac286b9596b915e0dda9bb29ee0ddbfe7eddc"
+  },
+  "component_receipt_sha256": "3acdd92a5715417a9b79b3ab97cb9edbff7c801bf1cba9146561742e95a39edc",
+  "artifact_sha256": {
+    "receipt.json": "3acdd92a5715417a9b79b3ab97cb9edbff7c801bf1cba9146561742e95a39edc",
+    "kernel.log": "d714a6d42261e34ee17739c88c84279c8faf9aa5b881356462f6b7405eaad4c5",
+    "all-owned.log": "6f23dfabf62165dbb0843efce70e8582f1e9215bd491bfbcc7a2a70d211c2a1c",
+    "strict-source-receipts.json": "9f13b54f4b0f9fb448e831c291fb4bf463a45aac09fc83bb4f11ae2749f7093b",
+    "Audit.lean": "adeb9192ed5b60285f760a24b0628616a6f5d2f390c01641f409db64f1a83b9f"
+  },
+  "strict_logs_sha256": {
+    "Conjectures.FeldheimWeightedTailStieltjes": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Conjectures.FeldheimWeightedTailStieltjesGrid": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Conjectures.FeldheimWeightedTailStieltjesLimit": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 26,
+    "modules": 3,
+    "private_declarations": 0,
+    "raw_declarations": 26,
+    "required": 4,
+    "tag": "passed",
+    "theorems": 24
+  },
+  "exact_replay_set": [
+    "Conjectures.FeldheimWeightedTailStieltjes",
+    "Conjectures.FeldheimWeightedTailStieltjesGrid",
+    "Conjectures.FeldheimWeightedTailStieltjesLimit"
+  ],
+  "pinned_checker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+  "observed_current_object_sha256": {
+    "/tmp/cinna-lean-162051/repo/lean/.lake/build/lib/lean/Conjectures/FeldheimWeightedTailStieltjes.olean": "672279ca22509f49be22964f1a11e21f5cb403313e8f140a99d8bc97913ad42d",
+    "/tmp/cinna-lean-162051/repo/lean/.lake/build/lib/lean/Conjectures/FeldheimWeightedTailStieltjesGrid.olean": "7240e1b6ef9435e4202178d12cb3416a9b8ac28732e53d7bacd31b2c1f00a1ff",
+    "/tmp/cinna-lean-162051/repo/lean/.lake/build/lib/lean/Conjectures/FeldheimWeightedTailStieltjesLimit.olean": "a8a2e01b627a000f6b584cb50b7bcc05ef2a2fc7baca0fdafa10216da956c4cc"
+  },
+  "historical_object_hashes_bound_by_original_receipt": false,
+  "limitation": "The small component receipt does not record historical object hashes or compiler/checker hashes. This review checks its three strict-build records, unchanged source hashes, raw logs, regenerated audit source and parsed inventory, exact replay list and the currently pinned checker. Current object hashes are observations only; the integrated full weighted-tail gate must provide its own source/object/control binding.",
+  "fresh_source_build_claimed": false,
+  "fresh_axiom_audit_claimed": false,
+  "fresh_kernel_replay_claimed": false,
+  "complete_results_counted": 0
+}

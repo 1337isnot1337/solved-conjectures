@@ -1,5 +1,11 @@
 # Full formalization campaign
 
+## Feldheim–Feldheim’s weighted tail conjecture
+
+The [complete Lean proof](../results/feldheim-weighted-tail/FORMALIZATION.md) establishes original Conjecture 1 for every positive weight below one and arbitrary independent nonnegative laws without compact support, including atoms and singular laws. Actual moving averages supply the continuity bridge, an actual affine-minorant supremum supplies the convex approximation, and inverse levels supply the common near-affine windows. Product-measure conditioning and an atom-safe Stieltjes inequality close the literal infinite-limsup statement.
+
+The twenty-module closure passed fresh strict builds, an all-owned/private audit of 179 declarations and 161 theorems, all thirty required endpoints, and exact stock-kernel replay. The [independent source/evidence reviews](../results/feldheim-weighted-tail/LEAN_REVIEW.md) bind the original statement and proof to the frozen source hashes. Only the three standard axioms occur. The norm and finite-threshold supplements remain unformalized, and wrappers or proof components are not additional results. Source authors, priority uncertainty and catalogue rank are preserved.
+
 ## Hajdu–Sárközy’s shifted-product total primitivity conjecture
 
 The [complete Lean formalization](../results/hajdu-sarkozy-shifted-products/FORMALIZATION.md) proves the original conjecture for every exponent pair at least two and every finite modification. It also proves every nonzero-shift two-variable symmetric-difference perturbation at the inverse minimum-exponent scale, and the full summable-family theorem with actual real-threshold counts and a positive retained-count limsup. Coefficient representations may overlap, and the candidate factor sets may be infinite.

@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "validated_at_utc": "2026-11-24T19:13:05.521880+00:00",
+  "receipt_sha256": "301a9aaa21e9a0693c806d1ffc06157e2d1dd651a99ba43f53cf4fe98c96bf78",
+  "source_count": 20,
+  "object_count": 20,
+  "scope_review_sha256": "9da2cbf12056cf9e28ca17d723fdd150c0c9f2e150d5ad2d737d2e2b6462abc8",
+  "scope_review_markdown_sha256": "8a5fcf81a45acf252b1c8447e26da922cea4bcdfae843452d822cbed1eee0514",
+  "source_review_frozen_manifest_sha256": "07258375ae3b0e413feaf57554b6f0bafe156f7ae5b805366f1d17b1381958d7",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 179,
+    "modules": 20,
+    "private_declarations": 0,
+    "raw_declarations": 179,
+    "required": 30,
+    "tag": "passed",
+    "theorems": 161
+  },
+  "kernel_replay_modules": [
+    "Conjectures.FeldheimWeightedTailBasic",
+    "Conjectures.FeldheimWeightedTailWrightIntegral",
+    "Conjectures.FeldheimWeightedTailWrightUnit",
+    "Conjectures.FeldheimWeightedTailWrightChord",
+    "Conjectures.FeldheimWeightedTailConvex",
+    "Conjectures.FeldheimWeightedTailAverage",
+    "Conjectures.FeldheimWeightedTailWindowsSequence",
+    "Conjectures.FeldheimWeightedTailWindowsConvex",
+    "Conjectures.FeldheimWeightedTailWindowsInverse",
+    "Conjectures.FeldheimWeightedTailWindows",
+    "Conjectures.FeldheimWeightedTailOscillation",
+    "Conjectures.FeldheimWeightedTailAnalysis",
+    "Conjectures.FeldheimWeightedTailLaw",
+    "Conjectures.FeldheimWeightedTailProbability",
+    "Conjectures.FeldheimWeightedTailReduction",
+    "Conjectures.FeldheimWeightedTailLimits",
+    "Conjectures.FeldheimWeightedTailStieltjesGrid",
+    "Conjectures.FeldheimWeightedTailStieltjesLimit",
+    "Conjectures.FeldheimWeightedTailStieltjes",
+    "Conjectures.FeldheimWeightedTail"
+  ],
+  "validation": "Rehashed frozen and working sources, objects, verification controls, compiler and stock checker; rehashed every successful strict source/audit/kernel log; regenerated identical audit source; reparsed full declaration inventory; checked exact project closure and exact replay set. No new Lean run is claimed.",
+  "completed_entries_contributed": 1,
+  "publication_pending": true
+}

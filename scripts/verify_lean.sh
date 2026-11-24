@@ -4,6 +4,26 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.FeldheimWeightedTailBasic
+  Conjectures.FeldheimWeightedTailWrightIntegral
+  Conjectures.FeldheimWeightedTailWrightUnit
+  Conjectures.FeldheimWeightedTailWrightChord
+  Conjectures.FeldheimWeightedTailConvex
+  Conjectures.FeldheimWeightedTailAverage
+  Conjectures.FeldheimWeightedTailWindowsSequence
+  Conjectures.FeldheimWeightedTailWindowsConvex
+  Conjectures.FeldheimWeightedTailWindowsInverse
+  Conjectures.FeldheimWeightedTailWindows
+  Conjectures.FeldheimWeightedTailOscillation
+  Conjectures.FeldheimWeightedTailAnalysis
+  Conjectures.FeldheimWeightedTailLaw
+  Conjectures.FeldheimWeightedTailProbability
+  Conjectures.FeldheimWeightedTailReduction
+  Conjectures.FeldheimWeightedTailLimits
+  Conjectures.FeldheimWeightedTailStieltjesGrid
+  Conjectures.FeldheimWeightedTailStieltjesLimit
+  Conjectures.FeldheimWeightedTailStieltjes
+  Conjectures.FeldheimWeightedTail
   Conjectures.HajduSarkozyProductsArithmetic
   Conjectures.HajduSarkozyProductsCounts
   Conjectures.HajduSarkozyProductsSeries

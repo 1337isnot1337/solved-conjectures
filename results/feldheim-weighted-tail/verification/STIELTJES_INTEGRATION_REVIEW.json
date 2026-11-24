@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-11-24T19:03:05.165222+00:00",
+  "source_sha256": {
+    "Conjectures.FeldheimWeightedTailStieltjes": "d6e46e15e4ccfd1c7d8189594d1bf0f15071878687a557b7671aea1fee372c7b",
+    "Conjectures.FeldheimWeightedTailStieltjesGrid": "7b527870c305271d19cd5d169a23eafd611df2b465397b09422c2831ee5f7304",
+    "Conjectures.FeldheimWeightedTailStieltjesLimit": "520e3f5d137517e990cc5fd6f15ac286b9596b915e0dda9bb29ee0ddbfe7eddc"
+  },
+  "receipt_sha256": "3acdd92a5715417a9b79b3ab97cb9edbff7c801bf1cba9146561742e95a39edc",
+  "review_scope": "Integration source review and strict source/receipt binding; no additional Lean run",
+  "findings": [
+    "The actual cells are Ioc, retaining every right endpoint and assigning each point in Ioc a b to exactly one cell.",
+    "The right endpoints converge from above, so the actual inverse survival function converges by right continuity even at atoms.",
+    "All step functions are bounded by the finite inverse tail at b, and dominated convergence uses the same probability measure.",
+    "Finite cell masses are actual tail differences; log u-log v <= (u-v)/v telescopes to the exact required increment bound.",
+    "The final theorem has only probability, positive actual upper tails, and a<b as hypotheses; no atom-free or assumed integral premise remains."
+  ],
+  "whole_candidate_gate_still_required": true
+}

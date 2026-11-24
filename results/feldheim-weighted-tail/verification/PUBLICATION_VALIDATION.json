@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "kind": "publication receipt validation; no additional Lean run",
+  "receipt_sha256": "742f1f0538f9b1939b496b29ee2670f24e1eddc7136752f3ba46704b506ab432",
+  "source_count": 20,
+  "object_count": 20,
+  "control_count": 10,
+  "step_count": 23,
+  "summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 179,
+    "modules": 20,
+    "private_declarations": 0,
+    "raw_declarations": 179,
+    "required": 30,
+    "tag": "passed",
+    "theorems": 161
+  },
+  "all_recorded_hashes_match": true,
+  "audit_regenerated_identically": true,
+  "inventory_reparsed_identically": true,
+  "exact_closure_and_replay_set_match": true
+}
