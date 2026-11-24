@@ -112,7 +112,7 @@ substituting \(\log H=c\,\epsilon^{-1/\delta}L_\epsilon^{-3/(2\delta)}\) gives \
 
 ## 5. Attribution and exact scope
 
-- [Erdős #450](https://www.erdosproblems.com/450) originates in Erdős–Graham (1980), p. 89. The original wording does not settle the quantifier on \(x\); this note addresses the uniform-in-\(x\) interpretation, with all lengths from the threshold onward.
+- [Erdős #450](https://www.erdosproblems.com/450) originates in [Erdős–Graham (1980), printed p. 89](https://mathweb.ucsd.edu/~ronspubs/80_11_number_theory.pdf). The wording does not settle the quantifier on \(x\), while [Erdős's 1982 companion, printed pp. 70–71](https://old.renyi.hu/~p_erdos/1982-32.pdf) retains an arbitrary translate. This note addresses the uniform-in-\(x\) interpretation, with all lengths from the threshold onward.
 - [Snyder's July 2026 result](https://erdosproblems.ai/wiki/problems/divisors/E0450/claims/2026_07_15_snyder) establishes the fixed-\(\epsilon\) order \(\Theta_\epsilon(n)\), by a different period argument. Its bounds did not locate the dependence in (2).
 - Ford supplies the entire origin-window lower bound, the uniform rough-number lemma, and the divisor-log sum. Ford's Theorem 2 concerns windows of length at least a polylogarithmic fraction of their endpoint. It does not give the upper half of (1) for translates far beyond \(y\) in this statement. The new step is making Ford's divisor-log analysis local in the quotient window via the adaptive cutoff in §3. Exact-priority searches for the unrestricted uniform density result found no earlier matching statement; this search is not exhaustive.
 - Supersedes the weaker bound in the companion factorial-moment note. No Lean verification and no exact constant or critical-transition claim.
