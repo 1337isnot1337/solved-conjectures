@@ -1,5 +1,20 @@
 # Full formalization campaign
 
+## Cardon–Forgács–Piotrowski–Sorensen–White zero-sector reduction
+
+The [exact counterexample](../lean/Conjectures/CardonZeroSector.lean) at
+exponent three and damping log(16/15)/6 refutes Question 6.1. The
+[uniform proof](../lean/Conjectures/CardonZeroSectorSmallDamping.lean)
+shows that for each real exponent p > 2, all sufficiently small positive
+damping parameters fail to preserve some strictly positive sector. Lean
+checks the actual polynomial multiplier, complex root, and positive
+sector angle.
+
+All three modules passed strict compilation and pinned stock-kernel replay.
+The [local audit receipt](verification/lean-cardon-zero-sector-20261124/receipt.json)
+covers 68 declarations, including 35 private declarations and nine required
+endpoints.
+
 
 
 ## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
