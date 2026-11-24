@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Small exact check of the deterministic obstruction; not a Lean proof."""
+"""Small exact checks of the obstruction and occupancy bound; not Lean proofs."""
 from itertools import product
 
 def main():
@@ -28,7 +28,26 @@ def main():
                     checked += 1
     assert checked == 6361
     print(f"PASS: {checked} admissible cases, k <= 4, r <= 2; all type flips")
-    print("Finite cross-check only; not Lean verification.")
+    cases = 0
+    for r in range(3):
+        m = 2 ** r
+        alphabet = list(product(range(m), range(3)))
+        for k in range(5):
+            counts = [0] * m
+            bad = 0
+            for word in product(alphabet, repeat=k):
+                singleton = False
+                for b in range(1, m):
+                    if sum(bb == b and c != 0 for bb, c in word) == 1:
+                        counts[b] += 1
+                        singleton = True
+                bad += singleton
+            expected = 0 if k == 0 else 2 * k * (3 * m - 2) ** (k - 1)
+            assert all(v == expected for v in counts[1:])
+            assert bad <= (m - 1) * expected
+            cases += 1
+    print(f"PASS: exact per-type singleton count and union bound, {cases} (r,k) pairs")
+    print("Finite cross-checks only; not Lean verification.")
 
 if __name__ == "__main__":
     main()
