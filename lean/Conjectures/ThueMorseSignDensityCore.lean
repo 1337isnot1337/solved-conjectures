@@ -33,6 +33,7 @@ theorem parity_pair (r : Recurrence a p) (n : Nat) :
     by_cases hz : n = 0
     · subst n
       rw [r.zero, r.prev_zero]
+      decide
     · let k := n / 2
       have hk : k < n := by dsimp [k]; omega
       have h := ih k hk
@@ -64,7 +65,7 @@ theorem row_512_0 (r : Recurrence a p) (n : Nat) :
     a (512*n+0) = 1*a n + 171*p n := by
   have hn : 512*n+0 = (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * n))))))))) := by omega
   rw [hn]
-  simp only [r.even, r.odd, r.prev_even, r.prev_odd]
+  simp only [r.even, r.prev_even]
   omega
 
 theorem row_512_30 (r : Recurrence a p) (n : Nat) :
@@ -85,7 +86,7 @@ theorem row_256_1 (r : Recurrence a p) (n : Nat) :
     a (256*n+1) = -2*a n - 86*p n := by
   have hn : 256*n+1 = (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * n))))))) + 1) := by omega
   rw [hn]
-  simp only [r.even, r.odd, r.prev_even, r.prev_odd]
+  simp only [r.even, r.odd, r.prev_even]
   omega
 
 theorem row_256_16 (r : Recurrence a p) (n : Nat) :
@@ -178,6 +179,7 @@ theorem count_increase (b : Nat → Bool) (x y i : Nat)
   have h1 := count_mono b x i hx
   have h2 := count_mono b (i+1) y (by omega)
   rw [countPrefix, hb] at h2
+  simp at h2
   omega
 
 theorem count_at_multiples (b : Nat → Bool) (L : Nat)
@@ -231,7 +233,7 @@ theorem not_zero_density0 (r : Recurrence a p) :
   have hd : X/512 = N+1 := by dsimp [X]; omega
   rw [hd] at hc
   have hbad := hN X hX
-  dsimp [X] at hbad
+  dsimp [X] at hc hbad
   omega
 
 theorem not_zero_density1 (r : Recurrence a p) :
@@ -244,7 +246,7 @@ theorem not_zero_density1 (r : Recurrence a p) :
   have hd : X/256 = N+1 := by dsimp [X]; omega
   rw [hd] at hc
   have hbad := hN X hX
-  dsimp [X] at hbad
+  dsimp [X] at hc hbad
   omega
 
 end ThueMorseSignDensityCore
