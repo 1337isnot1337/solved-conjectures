@@ -1,3 +1,5 @@
+import Conjectures.CoulangeonLazzariniShells
+import Conjectures.CoulangeonLazzariniRealLattice
 import Conjectures.ChenKhareSahiOrthogonalityData
 import Conjectures.ChenKhareSahiOrthogonalityTransition
 import Conjectures.ChenKhareSahiOrthogonalityGram

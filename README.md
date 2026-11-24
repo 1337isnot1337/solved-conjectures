@@ -49,7 +49,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ |
 | [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ |
 | [Malek's conjecture](results/malek-subpermanent/) | ⬜ |
-| [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ⬜ |
+| [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ✅ |
 | [Kovalev's conjecture](results/kovalev-hardy-duality/) | ⬜ |
 | [Coffey–Smith conjecture](results/coffey-smith/) | ⬜ |
 | [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ |

@@ -1,5 +1,14 @@
 # Lean verification status
 
+## Coulangeon–Lazzarini’s two-shell conjecture
+
+[Lean refutes Conjecture 21 in dimension ten](../lean/Conjectures/CoulangeonLazzariniRealLattice.lean).
+It verifies the full-rank discrete lattice in real space, identifies its first two
+positive squared norms as 4 and 8, and checks the two spherical moment
+identities and the failure at squared norm 9. The [integer-coordinate proof](../lean/Conjectures/CoulangeonLazzariniShells.lean)
+also verifies the arbitrary-delay parity-lattice family.
+The orthogonally indecomposable family and height results remain open in Lean.
+
 ## Parking-function excedance certificate
 
 [Alexandersson’s parking-function excedance conjecture](../results/alexandersson-parking-excedance/) is refuted by a rational witness certified with exact integer and fraction arithmetic. No Lean formalization is claimed.
@@ -136,7 +145,7 @@ proofs are documented separately in the catalogue and result package.
 | Braun–Bruegge’s bicyclic facet conjectures | Not formalized | Proves the sharp global bicyclic facet maximum and the exact theta-graph optimizers, including the previously open mixed-parity cases. |
 | Braun–Bruegge’s minimum facet conjecture | Not formalized | Proves both global minimum clauses and a stronger sharp bound at fixed maximum matching size, with unique complete-bipartite minimizers. |
 | Cyrusian–Kaplan’s ordinarization quasipolynomial question | Not formalized | Proves a genus quasipolynomial for every fixed ordinarization number, valid at every positive genus, and eventual strict monotonicity. |
-| Coulangeon–Lazzarini’s two-shell conjecture | Not formalized | Analytic counterexample and arbitrary-delay families, with independent exact enumeration of the dimension-ten witness. |
+| Coulangeon–Lazzarini’s two-shell conjecture | Complete | The real dimension-ten counterexample and the elementary arbitrary-delay family. Orthogonal indecomposability and height extensions remain open in Lean. |
 | Alexandersson’s parking-function excedance conjecture | Not formalized | Exact integer and rational counterexample at length 17; two independent counting recurrences. |
 | Tom–Vailaya’s weighted trace conjecture | Not formalized | Complete proposed written proof of journal Conjecture 74 for all natural unit interval graphs on at least two vertices. Internal mathematical review and 585 independent exact small-case checks; no Lean verification or external refereeing. |
 | Csordas–Vishnyakova conjecture | Not formalized | Complete proposed disproof of Conjecture 3.6: the quartic polynomial p(z)=z⁴+z²+1 and entire function exp(−z⁴) satisfy every required generalized coefficient inequality, yet the function is not Laguerre–Pólya. The earlier genus-restricted theorem is unaffected. Internally reviewed written argument; no Lean verification. |

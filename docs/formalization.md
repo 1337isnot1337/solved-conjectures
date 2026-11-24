@@ -1,5 +1,14 @@
 # Full formalization campaign
 
+## Coulangeon–Lazzarini’s two-shell conjecture
+
+[Lean refutes Conjecture 21 in dimension ten](../lean/Conjectures/CoulangeonLazzariniRealLattice.lean).
+It verifies the full-rank discrete lattice in real space, identifies its first two
+positive squared norms as 4 and 8, and checks the two spherical moment
+identities and the failure at squared norm 9. The [integer-coordinate proof](../lean/Conjectures/CoulangeonLazzariniShells.lean)
+also verifies the arbitrary-delay parity-lattice family.
+The orthogonally indecomposable family and height results remain open in Lean.
+
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
 The [framework paper's Conjecture 4.18](https://arxiv.org/pdf/2001.09122v3) is fully checked by `AgnosticVC.steinkeZakynthinou_framework_conjecture418`. Its distribution-free CMI takes the supremum over fixed paired pools, and both guarantees hold with common constant $`19{,}712`$ for every positive sample size. [Lean source](../lean/Conjectures/AgnosticVC/FixedPairing.lean)
