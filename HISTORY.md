@@ -1,5 +1,9 @@
 # History
 
+## Rowland–Sistos Barrón conjecture
+
+On 24 November 2026 the [complete Lean formalization](results/rowland-sistos-barron/LEAN_STATUS.md) proved the actual minimum recurrence rank of every power of the recorded integer sequence, the exact formula for every exponent at least 49, and failure of eventual quasipolynomiality over every characteristic-zero field. Strict compilation, every-owned-declaration axiom audit, and stock-kernel replay passed for all 17 modules. The proof follows the existing argument credited to Cinna Davis and GPT-6.2 Astra; Eric Rowland and Jesús Sistos Barrón are the original proposers. The source’s undefined term pseudo-polynomial, the separate general-rank clause, and the priority qualifications remain explicit.
+
 ## Johnson's conjecture
 
 On 24 November 2026 the [complete Lean proof](results/johnson-pfaffian/LEAN-AUDIT.md) closed the general even-order, every-matching gap. It formalizes the recorded circular interval-product argument, including the stronger unconditional matrix-class theorem and the exact source-kernel bridge. All thirty project modules passed strict compilation, the audit of every owned declaration, and stock-kernel replay. William Johnson's conjecture, endpoint inequality and uncrossing reduction are credited; the repository proof credit and bounded priority assessment are preserved.

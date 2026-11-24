@@ -9,6 +9,17 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `RowlandSistosBarron.isTailRecurrence_iff,
+    `RowlandSistosBarron.exponentialPolynomial_tailRecurrenceRank,
+    `RowlandSistosBarron.poweredSequence_eq_exponential_sum,
+    `RowlandSistosBarron.poweredSequence_tailRecurrenceRank,
+    `RowlandSistosBarron.integerSequence_rank_six,
+    `RowlandSistosBarron.coefficientRank_formula,
+    `RowlandSistosBarron.square_cancellation_count,
+    `RowlandSistosBarron.rankSequence_formula_div,
+    `RowlandSistosBarron.rankSequence_not_eventuallyQuasipolynomial,
+    `RowlandSistosBarron.particularRankConjecture_false,
+    `RowlandSistosBarron.rowland_sistos_barron_counterexample,
     `JohnsonPfaffian.johnson_conjecture,
     `JohnsonPfaffian.johnson_conjecture_arbitrary_matching,
     `JohnsonPfaffian.johnson_conjecture_fin,
