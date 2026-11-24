@@ -69,6 +69,7 @@ STATUS_LABEL_SLUGS = {
     "Hajdu–Sárközy’s shifted-power perturbation conjecture": "hajdu-sarkozy-shifted-power-perturbations",
     "Hajdu–Sárközy’s shifted-product total primitivity conjecture": "hajdu-sarkozy-shifted-products",
     "Hegyvári’s conjecture": "hegyvari-floor-doubling",
+    "Xu–Zhou’s diameter–Laplacian conjecture": "xu-zhou-laplacian-diameter",
     "Pomerance–Sárközy’s fluctuation conjecture": "pomerance-sarkozy-fluctuations",
     "Ulas’s disjoint-block square-product conjecture": "ulas-disjoint-square-blocks",
     "Kovalev’s linear Lipschitz clustering questions": "kovalev-lipschitz-clustering",

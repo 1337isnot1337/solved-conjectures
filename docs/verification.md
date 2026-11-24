@@ -791,3 +791,7 @@ Run `python3 results/braun-bruegge-bicyclic-facets/check.py` and `python3 result
 ## Sharp matching-number facet bound
 
 Run `python3 results/braun-bruegge-minimum-facets/check.py` for exact independent polar-vertex and maximum-matching counts on small graphs. Compile and run the optional exhaustive C++ checker for all graphs through order six. The two written proofs give the general results without enumeration.
+
+## Xu–Zhou diameter–Laplacian conjecture
+
+Run `python3 results/xu-zhou-laplacian-diameter/check.py` for exact rational inertia through all small ordered layer compositions and the sharp example family. The [analytic proof](../results/xu-zhou-laplacian-diameter/PROOF.md) establishes all parameters.
