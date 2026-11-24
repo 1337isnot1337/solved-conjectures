@@ -59,3 +59,15 @@ The state reached is exactly the backward terminal state: the only elements whos
 - Bérczi, Mátravölgyi and Schwarcz, [Reconfiguration of Basis Pairs in Regular Matroids](https://arxiv.org/abs/2311.07130), Conjecture 2, give the exact Gabow statement and prove the regular case. Akrami, Liu, Raj and Végh, [Matroids are Equitable](https://doi.org/10.1007/s00493-026-00217-y), Combinatorica (2026), state the general conjecture as open.
 - Bérczi, Mátravölgyi and Schwarcz, [Weighted exchange distance of basis pairs](https://arxiv.org/abs/2211.12750), already treat ordinary spikes (our $k=1$). No novelty is claimed for that case. Searches for “Gabow”, “serial/sequential symmetric exchange”, and “generalized spikes”, as well as the papers above and [Generalized spikes with circuits and cocircuits of different cardinalities](https://arxiv.org/abs/2209.14524), did not reveal the general resolution or this exact large-order partial result. Priority remains unverified.
 
+## Not a consequence of the split-matroid case
+
+For $n>2k+2$, the $(k+1)$-spikes here are connected and nonsplit. They are connected because any two elements belong to a circuit that is a union of $k+1$ arms. In a connected split matroid, the elementary-split hypergraph characterization from Section 2 of [Weighted exchange distance of basis pairs](https://arxiv.org/abs/2211.12750) gives rank bounds $r_H$ on intersections with distinguished subsets $H$, and any two distinct such subsets satisfy $|H\cap H'|\le r_H+r_{H'}-n$.
+
+Let $F,G$ be two arm-union circuits sharing $k$ whole arms. Since $|F|=2k+2<n$, the independent-set description of an elementary split matroid requires some $H_F$ whose bound $F$ violates. As every proper subset of $F$ is independent, $F\subseteq H_F$ and $r_{H_F}=2k+1$. Similarly $G\subseteq H_G$ and $r_{H_G}=2k+1$. These subsets cannot be equal. Indeed $F\cup G$ contains an independent $(2k+2)$-set obtained by taking the common $k$ arms and one element of each of the two remaining arms. The set misses at least $k$ arms, so any circuit in it would have to be contained in its $k$ doubled arms by Section 1, a contradiction. Thus the two bounds are distinct, and
+$$
+ 2k=|F\cap G|\le |H_F\cap H_G|\le 4k+2-n<2k,
+$$
+impossible. This shows that the new class is not contained in the previously treated split class.
+
+As a corollary, Brettell et al.’s Theorem 1.1 implies Gabow’s assertion for every sufficiently large matroid with their $(t,2t)$-property, for each fixed $t\ge2$. The $(t,2t)$-property means that every $t$-element subset is contained in a $2t$-element circuit and in a $2t$-element cocircuit. Their theorem supplies a $t$-spike partition and, once the ground set is large enough, its order is at least $3(t-1)$.
+
