@@ -1,5 +1,9 @@
 # History
 
+## Hajdu–Sárközy’s shifted-product total primitivity conjecture
+
+On 24 November 2026 the existing entry received a complete Lean proof of the original conjecture for all exponent pairs and every finite modification, the full summable-family theorem, and all nonzero-shift two-variable little-o perturbations. Thirteen new modules reuse the eleven unchanged perturbation modules. The mixed-coefficient determinant, actual coefficient-tail count, ordered limit, sparse-factor incidence sum, real-threshold bridge, and p-series specialization are proved. The full twenty-four-module closure passed strict source builds, complete transitive axiom audit and exact stock-kernel replay, followed by independent review. Publication metadata checks bind the unchanged sources to that proof evidence without calling a preflight a new rebuild. The optional extension to more than two variables is not separately formalized. The existing rank, proposer/proof attribution and priority qualification are retained; no new entry or extra corollary count is added.
+
 ## Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture
 
 On 24 November 2026 the [complete original Conjecture 5.8 disproof](results/gawron-miska-ulas-thue-morse-sign-density/LEAN.md) established both finite-prefix counterexamples using the actual infinite-product coefficients. All three modules strictly compiled, the all-owned audit passed (250 declarations, 212 theorems), and independent replay passed. The separate stronger exact-density theorem remains outside this Lean scope. Discovery attribution and the bounded priority caveat remain unchanged. [PR #565](https://github.com/1337isnot1337/solved-conjectures/pull/565).
