@@ -474,8 +474,10 @@
     "Kohlmeyer Kruer"
   ],
   "ma-tang-random-subset-sums": ["Jie Ma", "Quanyu Tang", "Erdős 543", "Erdős 274", "random subset sums", "Erdős–Rényi threshold", "finite abelian groups", "Walsh spectrum", "loglog threshold", "2602.05768"],
+  "feray-conjugate-power-word": ["Valentin Féray", "word measures", "symmetric groups", "Poisson–Dirichlet", "total variation", "Teyssier Thévenin", "random permutations", "conjugacy class products"],
   "xu-zhou-laplacian-diameter": ["Leyou Xu", "Bo Zhou", "Laplacian eigenvalues", "graph diameter", "clique chains", "tridiagonal inertia", "MathDB 361424", "2401.03777"],
   "han-spherical-harmonic-saturation": ["Xiaolong Han", "spherical harmonics", "Gaussian beams", "zonal kernels", "Sogge norms", "joint saturation", "real orthonormal basis", "isotropic witnesses", "2609.14023"],
+  "steinerberger-small-average-eigenfunction-norms": ["Stefan Steinerberger", "Some Open Problems section 43", "eigenfunction L1 norms", "S3", "S2", "lapped cosine transform", "Wigner matrix coefficients", "Hopf map", "Sogge"],
   "pomerance-sarkozy-fluctuations": [
     "Carl Pomerance",
     "András Sárközy",

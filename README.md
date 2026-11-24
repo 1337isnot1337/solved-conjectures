@@ -17,8 +17,10 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ |
 | [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | ⬜ |
 | [Ma–Tang’s random subset-sum threshold conjecture](results/ma-tang-random-subset-sums/) | ⬜ |
+| [Féray’s conjugate-power word-measure conjectures](results/feray-conjugate-power-word/) | ⬜ |
 | [Xu–Zhou’s diameter–Laplacian conjecture](results/xu-zhou-laplacian-diameter/) | ⬜ |
 | [Han’s simultaneous spherical-harmonic saturation question](results/han-spherical-harmonic-saturation/) | ⬜ |
+| [Steinerberger’s small-average eigenfunction norm question](results/steinerberger-small-average-eigenfunction-norms/) | ⬜ |
 | [Pomerance–Sárközy’s fluctuation conjecture](results/pomerance-sarkozy-fluctuations/) | ⬜ |
 | [Ulas’s disjoint-block square-product conjecture](results/ulas-disjoint-square-blocks/) | ⬜ |
 | [Kovalev’s linear Lipschitz clustering questions](results/kovalev-lipschitz-clustering/) | ⬜ |
