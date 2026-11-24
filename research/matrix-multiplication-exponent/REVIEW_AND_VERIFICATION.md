@@ -82,6 +82,35 @@ inequality or an exponent-two tensor algorithm.
 
 This checkpoint additionally reviews the weighted-support relaxation, the coefficient-independent Koszul pivot proof, the ordinary-block commutator, the weighted tetrahedral determinant, and the four-label resource certificate. The root reviewer checked the precise Landsberg--Michałek and Li statements in their primary sources. The weighted lower-bound proof was separately challenged by both other research workers. These reviews establish the stated finite obstructions and conditional criteria, not the exponent-two conclusion.
 
+The adjacent-multiplicity note received internal review of the lifted
+character decomposition, filtered algebra dimension bound, exact lower
+shear calculation, and hyperplane cocycle proof. The finite cocycle
+checker corroborates the entrywise proof for sizes three and four and
+every rank of the defining hyperplane functional. Its modular rank
+lower bounds are matched by exact rational kernel vectors; the script
+states integer overflow bounds. These finite cases do not replace the
+symbolic proof.
+
+The mixed-padding note provides explicit polynomial matrices and a
+common Laurent diagonalization. Its checker verifies the four
+matrix-unit identities, integrality, special fibre, six commutators,
+and the common diagonalization exactly. The imported completion
+mechanism was checked against Flavi--Jelisiejew--Michałek,
+arXiv:2408.02754v2, Proposition 5.14. The construction takes the known
+seven-product factorization as input and is not a new exponent bound.
+
+The flag-exchange and operator-map notes were checked coefficientwise
+by the root and mathematical workers. The common-map projector bound
+and the row/column-support bound concern exact restrictions in the
+displayed classes. The latter proof allows arbitrary mixing at the
+other parties and uses quotient maps to isolate its rank obstruction. The Weyl candidate fails on an explicit off-support block
+which is invertible before immediate degree projection and has rank
+at least $`N-b`$ afterward. This rules out a near-full flag repair
+of that formula, while the general target permits constant flag loss.
+The Fourier note fixes its character convention and computes every
+resolvent eigenvalue symbolically. No border obstruction for
+arbitrary mixed maps is inferred from these restricted proofs.
+
 ## Reproducible exact checks
 
 Run from this directory:
@@ -103,9 +132,11 @@ python3 check_general_free_separator.py
 python3 check_uncrossing_separator.py
 python3 check_convolution_block_trade.py
 python3 check_trace_cubic_nonsmoothable.py
+python3 check_hyperplane_cocycle.py
+python3 check_mixed_valuation_padding.py
 ```
 
-The first six commands passed on the earlier assembled checkpoint. The next three passed on the source-certificate checkpoints. The four-party checker passed on the assembled full-tensor checkpoint; the earlier scripts were unchanged. The weighted-pivot and ordinary-partial-block checkers passed on the assembled files. The general-free and explicit-uncrossing checkers passed on the assembled files. The propagation-local, ordinary-partial-block, and general-free scripts use SymPy. The trace-cubic script uses NumPy integer arrays with explicit arithmetic bounds; the other scripts use Python's standard library. The computations use exact integers, rational arithmetic, and symbolic polynomials; they require no network access.
+The first six commands passed on the earlier assembled checkpoint. The next three passed on the source-certificate checkpoints. The four-party checker passed on the assembled full-tensor checkpoint; the earlier scripts were unchanged. The weighted-pivot and ordinary-partial-block checkers passed on the assembled files. The general-free and explicit-uncrossing checkers passed on the assembled files. The propagation-local, ordinary-partial-block, general-free, and mixed-padding scripts use SymPy. The trace-cubic and hyperplane-cocycle scripts use NumPy integer arrays with explicit arithmetic bounds; the other scripts use Python's standard library. The computations use exact integers, rational arithmetic, and symbolic polynomials; they require no network access.
 
 | Script | Checked content |
 | --- | --- |
@@ -125,6 +156,8 @@ The first six commands passed on the earlier assembled checkpoint. The next thre
 | `check_convolution_block_trade.py` | All six source terms, the three target block labels, and equality of the local coordinate multisets in the balanced-trade obstruction. |
 | `check_trace_cubic_nonsmoothable.py` | The rational quadratic apolar basis, all 666 pair products, rank486 modulo1009, the nine exact integral annihilators, and their independence. This is an essential computer-assisted proof certificate, not only a cross-check. |
 | `check_four_party_constraints.py` | Seventeen exterior covariant ranks obtained by independent alternating projections and exact rational elimination, plus 56 ordinary cut ranks for uncrossing and tetrahedral tensors. |
+| `check_hyperplane_cocycle.py` | All seven cases with sizes three and four and every possible functional rank; exact candidate kernels and matching modular equation ranks, with documented integer bounds. |
+| `check_mixed_valuation_padding.py` | The seven-product identity on all four matrix units, an integral completion with determinant minus one, polynomial entries and special fibre of all four eleven-dimensional matrices, all six commutators, and one common Laurent diagonalization. |
 
 The trace-cubic check supplies the finite rank certificate required by its computer-assisted nonsmoothability proof. The other checks corroborate finite statements in the written proofs. They do not execute a complete matrix multiplication algorithm, verify an unbounded induction, construct a normalized spectral point above perimeter two, or prove the desired universal perimeter upper bound.
 
@@ -146,5 +179,7 @@ Coordination and the adversarial-review request are in [issue #250](https://gith
 - [PR #286](https://github.com/1337isnot1337/solved-conjectures/pull/286) contains the polynomial and convolution source obstructions, trace-cubic certificate, smoothable enlargement, Heisenberg target, and Sun base-map audit. Its merge commit is `ea3d0a535ebc4111f9a872284314a96eb9164281`; all ten changed files match the reviewed artifacts.
 
 - [PR #289](https://github.com/1337isnot1337/solved-conjectures/pull/289) contains the all-order module obstruction, flattening-tangent reduction, and finite geodesic-trade obstruction. Its merge commit is `68d942d21d921227647ddf0ff925fdfc93b81f15`; all six changed files match the reviewed artifacts.
+
+- [PR #291](https://github.com/1337isnot1337/solved-conjectures/pull/291) contains the geodesic-uncrossing equivalence, full tensor midpoint convexity, and the exact operational converse. Its merge commit is `f9e16d31de54367a45e78f42532e2e2b3d5ba4d9`; all five changed files match the reviewed artifacts.
 
 All files remain under `research/`. No root Results-table row, solved-conjecture directory, Lean theorem, or claimed kernel-verification status was added for this target. Repository-wide hosted checks are reported separately in the PR conversation; a successful existing Lean workflow does not formalize these new Markdown proofs.
