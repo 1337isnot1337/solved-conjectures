@@ -1106,3 +1106,10 @@ import Conjectures.HornakOneArm
 import Conjectures.HornakTwoArm
 import Conjectures.AgnosticVC
 import Conjectures.SteinkeZakynthinou
+import Conjectures.WaringGapSymmetryCore
+import Conjectures.WaringGapSymmetryBridge
+import Conjectures.WaringGapSymmetryInjective
+import Conjectures.WaringGapSymmetryResidues
+import Conjectures.WaringGapSymmetryLift
+import Conjectures.WaringGapSymmetryMonoid
+import Conjectures.WaringGapSymmetry
