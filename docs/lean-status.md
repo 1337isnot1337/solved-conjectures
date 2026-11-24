@@ -96,6 +96,7 @@ proofs are documented separately in the catalogue and result package.
 | Dukes’s revstack interlacing conjecture | Not formalized | Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement. |
 | Sagan–Swanson’s q-Stirling normality conjecture | Not formalized | Proves a Gaussian limit with true standardized moments for all four interior-proportion q-Stirling families and a uniform lattice local profile. |
 | Defant–Engen–Miller’s Lassalle refinement conjecture | Not formalized | Proves strict log-concavity in every nontrivial row of the first-value refinement of the Lassalle sequence. |
+| Sagan–Wilson’s plactic centralizer conjecture | Not formalized | Proves eventual stability of all plactic centralizers of powers, with an alphabet-only cutoff independent of word length. |
 | Juhnke’s arbitrary-step lattice-path log-concavity conjecture | Not formalized | Proves all-dimensional log-concavity for the unrestricted east/north arbitrary-step path counts. |
 | Chow’s type-D Eulerian interlacing conjecture | Not formalized | Proves consecutive type-D Eulerian interlacing, strict in every transition from degree three onward. |
 | Athanasiadis–Chapoton’s polar preorder duality conjecture | Not formalized | A lattice-preserving transfer gives the same Ehrhart series for opposite polar preorder polytopes, with convex mutations and a finite numerator model. |

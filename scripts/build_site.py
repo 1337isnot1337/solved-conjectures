@@ -86,6 +86,7 @@ STATUS_LABEL_SLUGS = {
     "Dukes’s revstack interlacing conjecture": "dukes-revstack",
     "Sagan–Swanson’s q-Stirling normality conjecture": "sagan-swanson-q-stirling-normality",
     "Defant–Engen–Miller’s Lassalle refinement conjecture": "defant-engen-miller-lassalle",
+    "Sagan–Wilson’s plactic centralizer conjecture": "sagan-wilson-plactic",
     "Juhnke’s arbitrary-step lattice-path log-concavity conjecture": "juhnke-lattice-paths",
     "Chow’s type-D Eulerian interlacing conjecture": "chow-type-d",
     "Athanasiadis–Chapoton’s polar preorder duality conjecture": "athanasiadis-chapoton-polar-duality",
