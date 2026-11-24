@@ -73,6 +73,7 @@ STATUS_LABEL_SLUGS = {
     "Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture": "separable-derangements-asymptotic",
     "Fan’s interval Riesz capacity-ratio conjecture": "fan-interval-riesz-capacity",
     "Kovalev’s square-root Taylor-section zero-free conjecture": "kovalev-zero-free",
+    "Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture": "stern-half-plane",
     "Chern–Fu–Lin’s joint Eulerian equidistribution conjecture": "chern-fu-lin-joint-eulerian",
     "Dukes’s revstack interlacing conjecture": "dukes-revstack",
     "Athanasiadis–Chapoton’s polar preorder duality conjecture": "athanasiadis-chapoton-polar-duality",

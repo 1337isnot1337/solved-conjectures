@@ -751,3 +751,7 @@ The two polynomial pseudo-remainders must both report exact zero. The program bo
 ## Dukes revstack interlacing exact bridge
 
 Run `python3 results/dukes-revstack/check.py` from the repository root. Exact rational sign isolation establishes all transitions 3→4 through 127→128. The [analytic proof](../results/dukes-revstack/PROOF.md) proves all later transitions.
+
+## Stern-polynomial half-plane certificate
+
+From the repository root, run `c++ -std=c++17 -O2 results/stern-half-plane/check.cpp -o /tmp/stern-half-plane-check && /tmp/stern-half-plane-check`. The exact checker verifies the compact region in the [proof](../results/stern-half-plane/PROOF.md). The proof separately handles the exterior, a neighborhood of one, and unbounded run lengths.
