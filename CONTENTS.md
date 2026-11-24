@@ -51,6 +51,12 @@ See the [working catalogue on `research`](https://github.com/1337isnot1337/solve
 | --- | --- | --- | --- |
 | [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | Determines the pair of words maximizing the leading difference of win probabilities in Litt’s game for every word length and alphabet size. Includes the sponsor’s full-alphabet convention. | Not formalized | [Proof](results/ekhad-zeilberger-unfair-bet/PROOF.md) · [Exact checks](results/ekhad-zeilberger-unfair-bet/verify.py) · [Issue 219](https://github.com/1337isnot1337/solved-conjectures/issues/219) |
 
+## Lattice designs
+
+| Problem | Result | Formalization | Evidence |
+| --- | --- | --- | --- |
+| [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | Complete refutation of Conjecture 21 in the author preprint. An integral dimension-ten lattice has 2-designs on its first two nonempty shells but not its third. Even orthogonally indecomposable lattices can exhibit arbitrarily long initial runs of 2-design shells before a failure. | Not formalized | [Proof](results/coulangeon-lazzarini-two-shells/PROOF.md) · [Independent audit](results/coulangeon-lazzarini-two-shells/AUDIT.md) · [Exact enumeration](results/coulangeon-lazzarini-two-shells/verify.py) · [Issue #365](https://github.com/1337isnot1337/solved-conjectures/issues/365) |
+
 ## Parking-function statistics
 
 | Problem | Result | Formalization | Evidence |

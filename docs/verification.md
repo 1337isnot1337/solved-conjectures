@@ -166,6 +166,10 @@ python3 results/johnson-pfaffian/verify.py
 
 The standard-library checker uses exact rational arithmetic for supplementary identity and indexing checks. It explicitly records that finite checks do not prove the universal assertion. No Lean formalization is claimed.
 
+## Coulangeon–Lazzarini two-shell refutation
+
+The [analytic proof](../results/coulangeon-lazzarini-two-shells/PROOF.md) uses parity cosets and does not rely on computation. Run `python3 results/coulangeon-lazzarini-two-shells/verify.py` to enumerate all three shells of the dimension-ten witness and check their second moments.
+
 ## Analytic disproofs with supplementary exact checks
 
 The [Brown–Mol disproof](../results/brown-mol/PROOF.md) establishes an infinite tree counterfamily by an analytic local zero argument. Its checker verifies exact polynomial identities, independently enumerates the connected vertex sets of three small trees, and proves a separate Rouché certificate for a 1001-vertex example. The finite checks are not the basis for the infinite-family conclusion.

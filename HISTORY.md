@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Refute the Coulangeon–Lazzarini two-shell conjecture
+
+The [written disproof](results/coulangeon-lazzarini-two-shells/) gives a dimension-ten lattice with two initial spherical 2-design shells and a third anisotropic shell, and constructs indecomposable lattices delaying the first failure arbitrarily long. [Issue #365](https://github.com/1337isnot1337/solved-conjectures/issues/365) records scope and review. Exact shell enumeration is supplementary; there is no Lean or external referee review.
+
 ## 2026-11-24: Refute Alexandersson’s parking-function excedance conjecture
 
 The [exact counterexample](results/alexandersson-parking-excedance/) violates the Laguerre inequality at length 17. Two independent recurrences agree on the coefficient vector. [Issue #106](https://github.com/1337isnot1337/solved-conjectures/issues/106) records scope and previous work. No priority, Lean verification, or external referee review is claimed.
