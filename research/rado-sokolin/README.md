@@ -1,4 +1,4 @@
-# Radó–Sokolin covering conjecture for cubes
+# Radó’s covering problem for cubes
 
 Tracking issue: [#341](https://github.com/1337isnot1337/solved-conjectures/issues/341).
 
@@ -14,6 +14,20 @@ We use the following **planar almost-counterexample of Ajtai**, as reproduced an
 - Every disjoint subfamily of A avoiding A₀ has area at most U/4−δ.
 
 The second assertion is the survey’s strict inequality (2), with a positive gap since A is finite. Its proof partitions the union into 19 fictitious squares of side 2, bounds the permitted coverage of each by one unit of area, and shows that without bottom squares one of the 19 is uncovered. The two-size hypothesis concerns the almost-counterexample itself, not the finished planar counterexample. In particular the large squares in the Bereg–Dumitrescu–Jiang refinement are of side 10, not size 1 or 2; its large squares are not used as input here.
+
+For a check independent of the diagram argument, the lower-left corners and side lengths of the 52 squares in Figure 5 are specified by the following table (all coordinates integral):
+
+| Side | Bottom y | Left x |
+| --- | --- | --- |
+| 1 | 0 | 0 through 13 |
+| 1 | 1 and 2 | 0, 3, 4, 9, 10, 13 |
+| 1 | 3 | 0, 1, 2, 11, 12, 13 |
+| 1 | 4 | 2, 11 |
+| 1 | 5 | 2 through 11 |
+| 2 | 1 | 1, 5, 7, 11 |
+| 2 | 3 | 3, 5, 7, 9 |
+
+Their interiors tile 76 unit cells, bounding rectangle 14×6. The [standard-library verification script](verify-planar-gadget.py) computes the exact maximum areas of 19 and 18, with and without the bottom squares, by the elementary independent-set recursion on integral rectangles. The script is an optional check of the published planar input, not a computational assumption in the higher-dimensional argument. One can take W=14, h=6, U=76 and δ=1.
 
 ## 1. Set up the lifted cube family
 
@@ -74,6 +88,12 @@ The subtracted term is positive for every d≥3. Moreover a finite witness is ob
     U[(1+2/H)^k−1] < δ 2^(−k)(1+2/L)^k.
 
 For example, take H a multiple of 2L satisfying H≥2k and H>4k U 2^k/[δ(1+2/L)^k]; the elementary inequalities (1+2/H)^k≤exp(2k/H) and exp(x)−1≤2x for x∈[0,1] give the required strict inequality. All families in the argument are finite at each H.
+
+In particular take L=14. The explicit bound becomes
+
+    F(Q^d) ≤ 2^(−d) − (1/1088)(2/7)^(d−2).
+
+For an all-d receipt using integers only, set k=d−2 and H=28·ceil((304k(7/4)^k + 1)/28); the above sufficient conditions hold. In the first unresolved dimension d=3, the exact inequality already holds with H=280, giving a family with independent-volume ratio at most 1/8−1/76160.
 
 ## 5. Boundary conventions
 
