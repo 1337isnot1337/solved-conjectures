@@ -12,7 +12,7 @@ The [model and encoding](MODEL.md) fix the quantifiers and explain the equivalen
 
 ## Established implication and missing bridge
 
-The [graph-hardness proof](GRAPH_HARDNESS.md) reconstructs a consequence of Bürgisser's 2004 paper, in its corrected 2018 version, and the imported Anthropic border lower bound pinned below. It includes division handling, arbitrary complex constants, and compatibility of the two approximation conventions:
+The [graph-hardness audit](GRAPH_HARDNESS.md) checks the [canonical proof](../bss-permanent-graph/PROOF.md), which reconstructs a consequence of Bürgisser's 2004 paper, in its corrected 2018 version, and the imported Anthropic border lower bound pinned below. It includes division handling, arbitrary complex constants, and compatibility of the two approximation conventions:
 
 ```math
 \text{polynomial-time membership in }G_m
@@ -38,13 +38,26 @@ The [resultant exclusion-complexity note](RESULTANT_EXCLUSION.md) gives a suffic
 
 The [symmetry-orbit jet barrier](SYMMETRY_JET_BARRIER.md) proves that a low-dimensional family of resultant-zero inputs cannot become Zariski dense merely by applying changes of projective coordinates and invertible mixing of equations. Any bounded-order jet method confined to that orbit can be masked by a nonzero cofactor. This is a structural obstruction, not a complexity lower bound.
 
+The [grid Newton-polytope barrier](GRID_NEWTON_BARRIER.md) shows that, after at most one extra padding coordinate, no pure diagonal monomial weighting can isolate the BCJS hard interior coefficient as the full initial coefficient. It uses BCJS's grid congruence and resultant padding identities and includes [finite checks](verify_grid_newton.py). This is not a circuit lower bound.
+
+## Research notes
+
+- [PROTOCOL.md](PROTOCOL.md) gives a sound uniform sum-check formula on all complex matrices, with `2m` alternating blocks, and exact counterexamples to moving all messages or all challenges together. It also proves an obstruction to generic small arithmetic-circuit commitments for adaptive messages.
+- [BOUNDARY_AND_COLLAPSE.md](BOUNDARY_AND_COLLAPSE.md) proves a generic boundary extraction lemma and the sufficient `o(log log m)` alternation criterion. Neither construction needed to apply them has been obtained.
+- [INCIDENCE.md](INCIDENCE.md) supplies the quadratic-resultant witness equations, proves a degeneration criterion that survives arbitrary multipliers, and records the jet-masking, matching-norm, and Newton-face obstructions.
+- [FILTER_ROUTE.md](FILTER_ROUTE.md) proves that separate resultant root blocks encode products or intersections. It isolates a six-resultant additive incidence whose existence would suffice, without claiming such an incidence.
+- [REGULAR_WITNESS_BARRIER.md](REGULAR_WITNESS_BARRIER.md) proves that a regular implicit witness system for a low-degree polynomial already gives a small arithmetic circuit. Its singular extension is not used in this checkpoint.
+- [REVIEW.md](REVIEW.md) separates written proofs, independent internal reviews, exact symbolic checks, and unresolved implications.
+
+The [smooth-certificate barrier](SMOOTH_CERTIFICATE_BARRIER.md) proves that a polynomial graph with a regular, locally determined polynomial-size existential algebraic witness has a polynomial-size arithmetic circuit, by truncated Newton--Hensel lifting. Under the imported permanent hardness, no such certificate can represent the permanent graph. It does not rule out arbitrary singular NP_C witnesses. [Finite check](verify_smooth_implicit.py).
+
 ## Source and verification scope
 
 The [source audit](SOURCE_AUDIT.md) records theorem numbers, version changes, the uniform/nonuniform distinction, and the direction of Bürgisser's Theorem 1.1 versus Conjecture 1.1. The [source manifest](SOURCES.json) records the inspected PDF hashes.
 
 The imported border result is Anthropic / Claude, *VP ≠ VNP over every field*, commit `11b6c7e3c927df2658f513b6b68ea7f8929c62c5`, written Theorem N.5 and Lean `Statement.MainTheoremApprox`. This project has inspected the statement and its proof linkage. It has not rebuilt or independently replayed the upstream Lean development.
 
-No target separation has been formalized in Lean. Exact symbolic checks of failed protocols, when added, will verify only their stated identities and counterexamples. They will not be evidence that the target problem is solved.
+No target separation has been formalized in Lean. The exact symbolic checks in [verify_obstructions.py](verify_obstructions.py) verify only the identities and counterexamples listed in [REVIEW.md](REVIEW.md). They do not verify the target separation.
 
 ## Coordination
 
