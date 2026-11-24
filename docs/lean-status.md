@@ -79,6 +79,7 @@ proofs are documented separately in the catalogue and result package.
 | Hajdu–Sárközy’s shifted-power perturbation conjecture | Not formalized | Proof of the remaining square case under the full little-o perturbation condition, including finite modifications. Prior higher powers are credited. |
 | Hajdu–Sárközy’s shifted-product total primitivity conjecture | Not formalized | Proves the original bivariate claim for the remaining coprime exponents using a summable union of scaled power sets; non-coprime exponents were known. |
 | Hegyvári’s conjecture | Not formalized | Proves strong completeness of the two-ray set across the remaining rational ratios that are not powers of two, with exact strong-completeness obstructions. |
+| Kovalev’s linear Lipschitz clustering questions | Not formalized | Constructs convex-hull-preserving finite-subset retractions with a dimension-free linear Lipschitz bound, uniformly for every target size. |
 | Revised Tan–Zhou conjecture | Not formalized | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture | Not formalized | Proves the derangement proportion tends to zero, with every fixed diagonal count diverging in probability. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture | Not formalized | Refutes every proposed fixed power exponent by exact finite two-branch counting and saturation of the occupation loss. |
@@ -87,6 +88,7 @@ proofs are documented separately in the catalogue and result package.
 | Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture | Not formalized | Proves that all zeros of all Stern polynomials lie strictly to the left of Re z = 1. Analytic estimates and an exact compact-region certificate cover all binary run lengths. |
 | Chern–Fu–Lin’s joint Eulerian equidistribution conjecture | Not formalized | Proves the joint descent and inverse-descent equidistribution of Conjecture 6.2 at every length by exact formal generating functions. |
 | Dukes’s revstack interlacing conjecture | Not formalized | Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement. |
+| Chow’s type-D Eulerian interlacing conjecture | Not formalized | Proves consecutive type-D Eulerian interlacing, strict in every transition from degree three onward. |
 | Athanasiadis–Chapoton’s polar preorder duality conjecture | Not formalized | A lattice-preserving transfer gives the same Ehrhart series for opposite polar preorder polytopes, with convex mutations and a finite numerator model. |
 | Athanasiadis–Chapoton’s q-zeta reciprocity conjecture | Not formalized | Proves the remaining full q-form of Conjecture 4.9 by coordinate-weighted reciprocity and Boolean interpolation. |
 | Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture | Not formalized | Proves the original reciprocal identity in every preorder by specializing weighted reciprocity, independent of lattice realization. |

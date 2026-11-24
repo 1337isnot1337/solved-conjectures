@@ -23,6 +23,7 @@
   "stern-half-plane": ["Stern polynomials", "Stern diatomic sequence", "Dilcher Kidwai Tomkins", "Altizio", "zero free half-plane", "continuant"],
   "chern-fu-lin-joint-eulerian": ["Chern Fu Lin", "Burstein", "Eulerian equidistribution", "inverse descents", "pattern avoiding permutations"],
   "dukes-revstack": ["Mark Dukes", "revstack", "Eulerian polynomials", "interlacing", "revstack sort", "descent polynomials"],
+  "chow-type-d": ["Chak-On Chow", "type D Eulerian polynomials", "consecutive interlacing", "Coxeter group", "logistic derivatives"],
   "athanasiadis-chapoton-polar-duality": ["Athanasiadis Chapoton", "Luo polar preorder", "preorder polytopes", "Ehrhart duality", "Stanley transfer"],
   "athanasiadis-chapoton-q-zeta": ["Athanasiadis Chapoton", "q zeta", "Ehrhart reciprocity", "Postnikov", "preorder"],
   "athanasiadis-chapoton-transmuted-m": ["Athanasiadis Chapoton", "transmuted M triangle", "preorder duality", "Mobius", "reciprocity"],
@@ -111,6 +112,7 @@
     "automorphism obstruction"
   ],
   "hegyvari-floor-doubling": ["Norbert Hegyvari", "Erdos 354", "floor doubling", "strong completeness", "rational ratios", "Kohlmeyer Kruer"],
+  "kovalev-lipschitz-clustering": ["Leonid Kovalev", "Lipschitz clustering", "finite subset spaces", "Hausdorff distance", "single linkage", "Lipschitz retraction", "Wasserstein barycenter"],
   "revised-tan-zhou-luroth": ["Tan Zhou conjecture", "Lee", "Luroth expansions", "Lüroth convergents", "Hausdorff dimension", "lower order", "Mass Transference Principle"],
   "haralambis-three-differences": [
     "Haralambis conjecture",
