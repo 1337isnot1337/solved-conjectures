@@ -20,9 +20,12 @@ Roots are distinct, with no multiplicity count. Arbitrary free integer constants
 | Statement proved or reconstructed | What it establishes |
 | --- | --- |
 | Exact input-block, translation, carry and product recursions | The identities needed to formulate the proposed invariant; floor and residue operations are not treated as free SLP gates. |
-| Every digit-cut evaluation matrix of $x^{2^n}$ has maximal rank | Ordinary all-cuts evaluation rank, or its multilinear coefficient version, is already exponentially large for an $n$-gate program. |
-| Integer multiples can have constant off-root evaluations and constant first nonzero jets | Divisibility by the prescribed-root polynomial cannot force high rank in these finite tables. |
+| The primitive squarefree polynomial $(1+x)^{2^n-1}-1$ has maximal evaluation and binary coefficient rank at every cut | Both rank tables are exponentially large for a program of at most $2n$ gates with only one integer root. |
+| A primitive squarefree integer multiple can have exactly the prescribed integer roots and constant first nonzero jets | Divisibility, multiplicity removal and coefficient-content removal cannot force high first-jet rank. |
 | The product of distinct nonzero integer roots divides the first nonzero coefficient | A cofactor-robust lower bound for consecutive roots, and a weak improvement over the degree bound for arbitrary integer roots. |
+| Short constants can have superpolynomially many distinct prime divisors | Counting prime support does not provide a polynomial gate budget either; the cyclotomic argument is elementary. |
+| A unit-resultant addition restriction is equivalent to τ | Even two real-root-free coprime inputs with resultant of absolute value one retain the full root-count question. |
+| Rank after selecting the positive integer roots is equivalent to τ | A weighted determinant proof gives the desired lower bound for every root configuration, but the polynomial circuit upper bound is unresolved. |
 | Exact weighted collision and cancellation identities | A valid prime-averaging calculation with its height dependence; no polynomial circuit bound for its cancellation term. |
 | Squarefree-exponent modular root average | A short circuit can have a superpolynomial uniform-residue average of modular root counts despite having only two integer roots. |
 | Classical Shub–Smale BSS transfer, including machine constants | Superpolynomial complexity for every nonzero multiple of the consecutive-root polynomial would suffice for the uniform complex BSS separation. |
@@ -50,11 +53,13 @@ for a nonzero length-$s$ output as $s$ grows. These estimates remain far below t
 - [CONSECUTIVE.md](CONSECUTIVE.md): digit recursions, uniform all-cuts rank proof and finite-sampling obstructions.
 - [JETS.md](JETS.md): normalized Taylor coefficients, cancellation depth and an explicit multiplier with identical positive derivatives at every prescribed root.
 - [ARITHMETIC.md](ARITHMETIC.md): coefficient divisibility, arbitrary root sets, all-prime collision identity, cancellation and the known fixed-p-adic counterexample with its proof.
+- [BEZOUT_BARRIER.md](BEZOUT_BARRIER.md): an exact reduction showing that the restricted cancellation problem is equivalent to τ.
+- [ROOT_SELECTED_RANK.md](ROOT_SELECTED_RANK.md): an invariant that sees arbitrary integer roots, its exact rank and the equivalent missing circuit bound.
 - [MODULAR_AVERAGE.md](MODULAR_AVERAGE.md): an exact CRT average and its circuit cost.
 - [SOURCES.md](SOURCES.md): pinned imported theorem interfaces, implications in the supplied sources, recent prior-result checks and the finite-completion obstruction.
 - [REVIEW.md](REVIEW.md): mathematical review and the scope of exact checks.
 
-The Anthropic result at commit `11b6c7e3c927df2658f513b6b68ea7f8929c62c5` is accepted as the standing repository premise. The inspected statements give permanent/HC circuit and border lower bounds. A reduction from a short polynomial with many integer roots to a small permanent circuit has not been obtained. An implication from τ to permanent hardness cannot be reversed.
+The Anthropic result at commit `11b6c7e3c927df2658f513b6b68ea7f8929c62c5` is accepted as the standing repository premise. The inspected statements give permanent/HC circuit and border lower bounds. A reduction from a short polynomial with many integer roots to a small permanent circuit has not been obtained. The forward implication alone does not establish its converse.
 
 ## Reproduction
 

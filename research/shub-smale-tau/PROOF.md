@@ -6,12 +6,15 @@ Research notes, 23 November 2026. This file does not prove or disprove the tau c
 
 Let tau(f) be the minimum number of arithmetic gates in a division-free straight-line program starting with 1 and x and using addition, subtraction and multiplication. Only nonzero f in Z[x] are considered. The target is
 
-    exists C > 0, for every nonzero f in Z[x],
-    #{a in Z : f(a)=0} <= (1+tau(f))^C.
+```math
+\exists C>0\ \forall f\in\mathbb Z[x]\setminus\{0\},\qquad \#\{a\in\mathbb Z:f(a)=0\}\le(1+\tau(f))^C.
+```
 
 Put F_N(x)=product_{j=1}^N (x-j) and
 
-    mu(n)=min {tau(F_{2^n} h) : 0 != h in Z[x]}.
+```math
+\mu(n)=\min\{\tau(F_{2^n}h):0\ne h\in\mathbb Z[x]\}.
+```
 
 The full conjecture implies mu(n) >= 2^(n/C)-1. A much weaker assertion already suffices for the BSS consequence: mu is not bounded by any polynomial in n. The lower bound must cover all nonzero multiples, not only F_{2^n} itself.
 
@@ -23,7 +26,9 @@ If mu(n) is not polynomially bounded, then P_C != NP_C in the uniform BSS model 
 
 Proof. For each n, encode a complex number z together with n padding coordinates equal to 1. Accept exactly when z belongs to {1,...,2^n}; reject malformed padding. A witness consists of b_0,...,b_{n-1} with b_i(b_i-1)=0 and
 
-    z=1+sum_{i=0}^{n-1} 2^i b_i.
+```math
+z=1+\sum_{i=0}^{n-1}2^i b_i.
+```
 
 The verifier uses O(n) BSS operations and n witness coordinates. This language is in NP_C. Suppose P_C=NP_C. A single deterministic BSS machine M then decides it in time T(n)=n^{O(1)}.
 

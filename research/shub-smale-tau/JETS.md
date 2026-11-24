@@ -111,6 +111,12 @@ H(x)=(x-1)(x-2)(x-3)(x-4)(2x-5)(5x^2-25x+21)
 
 has `H'(1)=H'(2)=H'(3)=H'(4)=18`.
 
+**Corollary 3.2.** The explicit `H_N` has exactly `2N-1` distinct real roots, all simple. Its integer roots are exactly `1,...,N`. After division by its coefficient content, it is a primitive squarefree integer polynomial with exactly the prescribed integer roots and the same constant, nonzero first-jet pattern.
+
+**Proof.** Its degree is exactly `2N-1`. The `N` prescribed roots are simple because their derivatives are positive. The sign argument above gives at least one additional root strictly inside each interval `(j,j+1)`, for `j=1,...,N-1`. These are `2N-1` distinct real roots in total, exhausting the degree. Hence there is exactly one root in each such open interval, there are no other roots, and every root has multiplicity one. The additional roots cannot be integers. Dividing by a nonzero constant preserves the root set and multiplicities. The next paragraph verifies that division by content preserves integrality and the common positive integer derivative.
+
+The polynomial `H` can also be made primitive: let `g` be the positive gcd of its integer coefficients. Then every derivative value is divisible by `g`, so `g` divides `D`. Replacing `H` by `H/g` preserves all prescribed simple roots, has common positive derivative `D/g`, and gives coefficient gcd one. Since it is an integer polynomial vanishing on `R`, it is still divisible by the monic polynomial `F_R` in `Z[x]`. Thus normalizing away a global content factor does not remove the obstruction.
+
 If `R={1,...,2^n}`, indexing the first nonzero jets by binary digits of the root therefore gives a constant tensor with rank one at every cut. This survives normalization by any common nonzero scalar. It invalidates the proposed root-divisibility-to-large-normalized-jet-rank step even after multiplicity has been removed.
 
 More generally, Hermite interpolation over `Q` can prescribe arbitrary positive multiplicities `m_a` and arbitrary nonzero rational leading jets `lambda_a`, up to one common positive integer multiplier. Explicitly, solve the pairwise coprime congruences

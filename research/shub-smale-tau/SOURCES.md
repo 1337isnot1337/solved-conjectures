@@ -21,8 +21,9 @@ VP and its closure explicitly impose a polynomial bound on total degree. F_{2^n}
 
 Koiran–Portier–Rojas, arXiv:1309.0486v1, Example 1.16 gives, for any fixed prime p,
 
-    h_{p,1}(x)=x(1-x),
-    h_{p,n+1}(x)=(p^(3^(n-1))-h_{p,n}(x)) h_{p,n}(x).
+```math
+h_{p,1}(x)=x(1-x),\qquad h_{p,n+1}(x)=\bigl(p^{3^{n-1}}-h_{p,n}(x)\bigr)h_{p,n}(x).
+```
 
 It has degree 2^n, exactly 2^n distinct roots in Z_p, and tau(h_{p,n})=O_p(n). Its integer roots are exactly 0 and 1. The last statement is elementary: at every other integer x the initial value is negative, and a negative value stays negative under u -> (positive-u)u. The power p^(3^(n-1)) is updated by cubing, so each stage uses four arithmetic gates apart from a fixed initialization.
 
@@ -32,17 +33,23 @@ For every fixed finite set S of primes there are nonzero g_n in Z[x] with tau(g_
 
 Proof. Put C_0=x and C_{n+1}=C_n^2-2. For n>=1,
 
-    C_n(2 cos(theta))=2 cos(2^n theta).
+```math
+C_n(2\cos\theta)=2\cos(2^n\theta).
+```
 
 Thus C_n has exactly 2^n distinct real roots and tau(C_n)<=2n+1. It has no integer roots: an odd input gives an odd value throughout, and an even input gives C_n(x)=2 modulo 4 for every n>=1. Define
 
-    g_n=C_n product_{p in S} h_{p,n}.
+```math
+g_n=C_n\prod_{p\in S}h_{p,n}.
+```
 
 The product is nonzero. The circuit has O_S(n) gates. Its roots include the 2^n real roots of C_n and, in Q_p, the 2^n roots of h_{p,n}. Its only possible integer roots are 0 and 1. If S is nonempty both occur. QED.
 
 Consequently no fixed finite choice of real and p-adic completions can support a bound of the form
 
-    min_{L in {R} union {Q_p:p in S}} #Z_L(f) <= (1+tau(f))^C
+```math
+\min_{L\in\{\mathbb R\}\cup\{\mathbb Q_p:p\in S\}}\#Z_L(f)\le(1+\tau(f))^C.
+```
 
 for all nonzero f, regardless of C. This does not rule out an adaptive choice among unboundedly many primes, and does not disprove the integer-root conjecture.
 
@@ -72,3 +79,5 @@ No checked source supplies the missing arbitrary-integer-root bound or the weake
 - [Santibañez-Leal finite census, Zenodo 23980033](https://zenodo.org/records/23980033), version 0.06, 5 November 2026. Its computation was not rerun.
 - [Edou Nze's source repository](https://github.com/flouzzy/smale-problems) and [the inspected elementary Lean file](https://github.com/flouzzy/smale-problems/blob/main/test_lean/Smale04IntegerRoots.lean).
 - [Erdős, Beweis eines Satzes von Tschebyschef, 1932](https://users.renyi.hu/~p_erdos/1932-01.pdf), the unnumbered theorem proving Bertrand's postulate.
+
+- [Walker, Coefficient growth in square chains, arXiv:1902.11164v1](https://arxiv.org/pdf/1902.11164), Proposition 1.1, Corollary 2.1 and Proposition 2.3. This restricted-model result is discussed in ARITHMETIC.md; coefficient bitlength is not constant-free straight-line complexity.

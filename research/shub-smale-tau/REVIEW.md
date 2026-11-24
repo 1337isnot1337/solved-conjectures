@@ -19,18 +19,24 @@ The first-jet construction was separately reviewed: multiplying by an inverse of
 The local command `python3 research/shub-smale-tau/verify.py` passed with:
 
 - 11,553 carry, signed digit-gate and consecutive-product checks;
-- all 120 unordered nontrivial digit cuts for n = 2 through 7, plus all small minors in the stated sign check;
+- all 120 unordered nontrivial digit cuts for n = 2 through 7, checking the original power evaluations, binomial coefficient ranks, and both squarefree rank tables, plus the small-minor sign check;
 - off-root interpolation, common first jets and bounded-jet erasure on four distinct root sets;
+- the explicit equal-jet polynomial through N = 8, including its exact derivative values, coefficient content and squarefreeness by polynomial gcd;
 - first-coefficient divisibility and prime-power collision identities on the specified empty, singleton and nontrivial root sets;
 - the squarefree modular-average identity for the first one through five primes, with finite-field root counts checked independently;
+- certified factorizations and cyclotomic incidences for M = 2, 6, 30 and 210, checking every supplied prime by trial division and every product exactly; the prime counts are 1, 2, 6 and 20;
 - finite Hensel-lift counts and derivative valuations for the Koiran–Portier–Rojas family through n = 3 at p = 2, 3 and 5.
 
 The unchanged root README also passed `python3 scripts/check_readme_verification.py` on the fetched snapshot: 68 result rows. No results-table entry was added. The unrelated full collection computations and Lean build were not rerun for these research notes.
 
-The path-filtered `shub-smale-tau.yml` workflow runs the same finite verifier. Hosted status must be checked separately; a local pass is not reported as a hosted pass.
+The path-filtered `shub-smale-tau.yml` workflow runs the same finite verifier. For [PR #263](https://github.com/1337isnot1337/solved-conjectures/pull/263), both dedicated checks passed on head `4da59858901462066618478db5a764ba31dba4f7` before merge. Later-checkpoint hosted status is recorded in its PR; a local pass is not reported as a hosted pass.
 
 ## Provenance
 
 The BSS reduction is a reconstruction of Shub–Smale's supplied manuscript, not an original separation. The p-adic family is Example 1.16 of Koiran–Portier–Rojas, arXiv:1309.0486v1. The finite-palette combination uses that example and the elementary Chebyshev recurrence. The remaining algebraic obstructions and arithmetic estimates are presented as proved research lemmas without a novelty claim.
 
 The pinned Anthropic statement and proof linkage were inspected. Its validity is the repository's standing premise; its Lean build was not replayed here. No missing implication has been replaced with an axiom or a computational screen.
+
+## Second mathematical checkpoint
+
+The squarefree rank strengthening was independently derived and reviewed by three workers. The cyclotomic support proof was separately checked without importing a primitive-divisor theorem. The unit-resultant equivalence and the weighted root-selected-rank equivalence were reviewed with their zero-gate and empty-root edge cases. These equivalences expose unresolved statements; neither is presented as a new bound. The explicit jet multiplier has degree 2N−1, all roots simple and real, and exactly the prescribed N integer roots. Dividing its content preserves the masking.
