@@ -96,6 +96,7 @@ proofs are documented separately in the catalogue and result package.
 | Chern–Fu–Lin’s joint Eulerian equidistribution conjecture | Not formalized | Proves the joint descent and inverse-descent equidistribution of Conjecture 6.2 at every length by exact formal generating functions. |
 | Dukes’s revstack interlacing conjecture | Not formalized | Proves the strict interlacing throughout the full nondegenerate range n≥3 and records the small-n defect in the printed statement. |
 | Sagan–Swanson’s q-Stirling normality conjecture | Not formalized | Proves a Gaussian limit with true standardized moments for all four interior-proportion q-Stirling families and a uniform lattice local profile. |
+| González D’León–Wachs’s complete-graph specialization question | Not formalized | Gives an exact Laguerre product and Gamma-moment formula, strict ordinary coefficient log-concavity, and the real-zero count for equal variables. |
 | Defant–Engen–Miller’s Lassalle refinement conjecture | Not formalized | Proves strict log-concavity in every nontrivial row of the first-value refinement of the Lassalle sequence. |
 | Sagan–Wilson’s plactic centralizer conjecture | Not formalized | Proves eventual stability of all plactic centralizers of powers, with an alphabet-only cutoff independent of word length. |
 | Sagan–Wilson’s plactic coefficient-mode conjecture | Not formalized | Disproves the proposed middle mode and determines the asymptotic position of every mode in both natural coefficient rows. |
@@ -130,6 +131,7 @@ proofs are documented separately in the catalogue and result package.
 | Ferroni–Higashitani’s first-three interior Ehrhart question | Not formalized | A very ample, IDP counterfamily fails at the first three interior counts, answering Question 5.12(a). The already resolved part (b) is distinct. |
 | Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture | Not formalized | Refutes the exact relaxed-seam unpinned conjecture and proves positivity for standard periodic partition boundaries. |
 | Higashitani–Kummer–Michałek’s canonical-line conjecture | Not formalized | Refutes both the canonical-line and interlacing assertions with exact complete-multipartite graph witnesses. |
+| Braun–Bruegge’s bicyclic facet conjectures | Not formalized | Proves the sharp global bicyclic facet maximum and the exact theta-graph optimizers, including the previously open mixed-parity cases. |
 | Cyrusian–Kaplan’s ordinarization quasipolynomial question | Not formalized | Proves a genus quasipolynomial for every fixed ordinarization number, valid at every positive genus, and eventual strict monotonicity. |
 | Coulangeon–Lazzarini’s two-shell conjecture | Not formalized | Analytic counterexample and arbitrary-delay families, with independent exact enumeration of the dimension-ten witness. |
 | Alexandersson’s parking-function excedance conjecture | Not formalized | Exact integer and rational counterexample at length 17; two independent counting recurrences. |
