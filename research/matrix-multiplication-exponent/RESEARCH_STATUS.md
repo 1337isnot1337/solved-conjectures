@@ -49,6 +49,8 @@ M_q\cong W_{AB}(q)\otimes W_{BC}(q)\otimes W_{CA}(q),
 | Every multiplicative cover functional is either the indicator of nonzero tensors or $F^h$, with $F$ normalized and $0\lt h\le1$. | [Normalized extension](NORMALIZED_EXTENSION.md), tensor-power type argument. | A classification by normalization exponent, not a classification of all normalized points. |
 | Any one fixed finite law on retractions admits a normalized extension preserving every old tensor value. | Same file, derived from pinned Anthropic Proposition A.7, a finite-product argument, and compactness. | The law is fixed before the extension is chosen. Different laws cannot be imposed on one extension without a compatibility proof. |
 | A geodesic triple determines the entire spectral functional on that triple, and zero-distance parties can be merged without changing any tensor value. | [Full-tensor constraints](FULL_TENSOR_CONSTRAINTS.md), explicit teleportation restrictions, normalization, and Alman--Li--Pratt v2 Corollary 8.10. | Three overlapping rigid restrictions have not been proved to determine the full unit. A genuine normalized quantum point already gives a non-Hilbert tripod. |
+| Every normalized spectral point with a wire of exponent one has an interval metric on all its parties. | [Edge metric rigidity](EDGE_METRIC_RIGIDITY.md), three-party edge classification and pinned price curvature; every finite interval metric is realized by one threshold-retraction law. | All subset-unit charges equal interval diameters. This is a boundary theorem, not an interior perimeter bound. |
+| A specified normalized point has an all-values-preserving geodesic tripod extension if and only if it satisfies the arm-weighted dimension bound on every old tensor. | [Tripod extension criterion](TRIPOD_EXTENSION_CRITERION.md), star routing, a cover gauge, saturation, and pinned Proposition A.5. | The weaker wire-only problem has a separate finite-cover criterion. Neither existence condition is proved universally. |
 | Tetrahedral face units asymptotically produce the six edge wires if and only if the matrix multiplication exponent is two. | [Tetrahedral overhead](TETRAHEDRAL_OVERHEAD.md), exact operational spectral duality, with the finite determinant obstruction in [full-tensor constraints](FULL_TENSOR_CONSTRAINTS.md). | The required overhead exponent satisfies $`\omega-2\le\gamma\le4-8/\omega\le4/9`$. Finite and common-unit impossibility do not imply positive asymptotic overhead. |
 | Every intersecting subset-unit uncrossing holds asymptotically; the four-party source-only overhead exponent is zero. | [General free-set separator](GENERAL_FREE_SET_SEPARATOR.md) and [explicit uncrossing](UNCROSSING_ASYMPTOTIC.md), a Latin partition, polynomial separation, interpolation, and exact catalyst recycling. | The four-party maps use a source unit of size $`q^{O_q(N^{2/3})}`$ for $`N`$ copies. The finite/common-unit obstruction remains valid. This does not force the perimeter bound. |
 | The unit-star source produces matrix multiplication with overhead exponent at most $`(\omega-2)/2\le1/8`$. | [Full-tensor constraints](FULL_TENSOR_CONSTRAINTS.md), an explicit block construction from a smaller matrix product. | Finite/common-unit degeneration is excluded by the tensor centroid; monomial outer maps require exponent $`1/2`$. Arbitrary linear mixing permits the smaller upper bound. |
@@ -110,6 +112,29 @@ Source-only unit overhead has a different outcome. The [explicit separator const
 ## Full-tensor constraints and the new remaining conversion
 
 The [geodesic rigidity theorem](FULL_TENSOR_CONSTRAINTS.md) fixes every tensor value on each three-party geodesic restriction. Pairwise losslessness of a projection that identifies two central indices does not prove losslessness of the next projection: the tempting proof treats a duplicated label on two parties as one joint party and then uses maps that are not local. The stronger, explicitly stated target retains all three matrix multiplication edge labels at a fourth party; its exact restriction problem is equivalent to covering the whole matrix multiplication support subspace by a sum of small product subspaces. Counting coordinate supports does not control arbitrary linear cancellation.
+
+
+The [tripod extension criterion](TRIPOD_EXTENSION_CRITERION.md) separates
+what must be proved before using a geodesic auxiliary center. Preserving
+a specified old point on every tensor is equivalent to an all-tensor
+dimension bound with exponents equal to the three arm lengths. The
+perimeter argument needs only some representative with the same old
+wire values. That weaker existence condition is equivalent to the absence
+of a strict finite-cover saving on every power of
+$`U_{ABC}(2)M_2`$ in the explicit resource gauge. The old unit is priced
+exactly at its rank in both formulations. A fixed random-retraction law
+does not establish either condition automatically.
+
+[COPIED_FACTOR_COUNTEREXAMPLE.md](COPIED_FACTOR_COUNTEREXAMPLE.md) gives
+a normalized quantum point where copying a local factor fails monotonicity
+under an invertible shear. [TRIANGLE_SUBSPACE_FRAME.md](TRIANGLE_SUBSPACE_FRAME.md)
+gives a lower bound for the stronger retained-label lift under a uniform
+frame bound, including commuting product-space projectors. The unrestricted
+case permits the frame bound to approach zero. The stronger lift does have
+an explicit overhead exponent at most $`(\omega_{\mathbb C}-2)/2`$,
+by an outer triangle algorithm followed by three independent face-unit
+distillations; this upper bound is proved in
+[FULL_TENSOR_CONSTRAINTS.md](FULL_TENSOR_CONSTRAINTS.md), Section 4.4.
 
 The [tetrahedral formulation](TETRAHEDRAL_OVERHEAD.md) gives a second exact target. If $`H_q`$ is the product of four three-party face units and $`K_q`$ is the product of the six tetrahedral wires, then the least extra full-unit exponent is
 
