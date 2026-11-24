@@ -53,7 +53,7 @@ theorem coordinate_mod (x y z P Q h : Nat)
     calc
       (h*(a*y+b*z))%x = ((h*y)*a+(h*z)*b)%x := by
         rw [Nat.mul_add]
-        simp only [Nat.mul_assoc,Nat.mul_left_comm,Nat.mul_comm]
+        simp only [Nat.mul_left_comm,Nat.mul_comm]
       _ = (((h*y)*a)%x+((h*z)*b)%x)%x := Nat.add_mod _ _ _
       _ = ((P*a)%x+(Q*b)%x)%x := by
         rw [mod_scale x (h*y) P a hy, mod_scale x (h*z) Q b hz]
@@ -100,10 +100,10 @@ theorem cover_of_certificate (d : ReductionData) (a b k : Nat)
       _ = n*(1+d.x*k) := by rw [he]
       _ = n+d.x*(n*k) := by
         rw [Nat.mul_add, Nat.mul_one]
-        simp only [Nat.mul_assoc,Nat.mul_comm,Nat.mul_left_comm]
+        simp only [Nat.mul_comm,Nat.mul_left_comm]
   rw [h,mod_add_multiple]
 
-theorem same_mod_ge_multiple (a b x : Nat) (hx : 0<x)
+theorem same_mod_ge_multiple (a b x : Nat) (_hx : 0<x)
     (he : a%x=b%x) (hab : a≤b) : ∃ k, b=a+x*k := by
   have h1 := Nat.mod_add_div a x
   have h2 := Nat.mod_add_div b x
