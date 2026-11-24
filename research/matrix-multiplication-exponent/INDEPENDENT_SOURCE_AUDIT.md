@@ -1,6 +1,6 @@
 # Source audit for the complex matrix multiplication exponent
 
-Research notes, checked through 23 November 2026 (America/Chicago). This file records accessed statements and the limits of the audit. It does not claim a resolution of omega = 2.
+Research notes, checked through 24 November 2026 (UTC). This file records accessed statements and the limits of the audit. It does not claim a resolution of omega = 2.
 
 ## Pinned Anthropic input
 
@@ -61,7 +61,9 @@ A further audit establishes a source-level contradiction in the specific one-bit
 
 A separate exact identity compresses the full correction family in equation (10.4) to five products for any X-side operator, or four for the stated diagonal operator. If these are the complete images of the five designated source pairs, Lemmas 10.3--10.4 would imply border-rank budgets below Landsberg--Michałek's lower bound at sizes 128 and 4096. The [active-cell note](SUN_ACTIVE_CELL_OBSTRUCTION.md) states this complete-image premise explicitly; the words about not reusing a source occurrence alone do not exclude additional output components.
 
-The same audit independently reconstructs all 4096 entries of Lemma 9.2's integer table and all 1024 normalized Walsh coefficients after the local common-scale repair. Those scalar identities check, separately from the source-map contradiction.
+The [tangent-globalization audit](SUN_TANGENT_GLOBALIZATION_OBSTRUCTION.md) proves a separate incompatibility at M32. The complete tangent pair stated in Section 6.2 and the one-leg raw record groups in Appendix A.5 have an explicit six-product degeneration, retaining all eight dense records and all three endpoints. The charged source cost is seven. Replacing just one pair per outer row in (7.5)/(8.1) gives the upper bound 2032, below Landsberg--Michałek Theorem 1.1's lower bound 2042. The implication uses Section 8's fixed degree-zero side-local postcomposition and the asserted completeness of the leading ledger. Its source estimates for C2, C3, W and D4 are independently certified. Additional leading records or later Laurent poles are outside this tested conjunction and require different maps. Thus the printed M32 bridge cannot be completed while retaining those premises; the abstract 2048 bound is not refuted.
+
+The earlier table audit independently reconstructs all 4096 entries of Lemma 9.2's integer table and all 1024 normalized Walsh coefficients after the local common-scale repair. Those scalar identities check, separately from the source-map contradictions.
 
 Independently checked implication: if that border-rank estimate holds for an unbounded sequence of n, the standard border-rank-to-exponent theorem gives omega_C <= log_(2^n)(2^(2n+1)) = 2+1/n. Passing to the unbounded sequence and using omega_C >= 2 gives equality. A bound at one fixed n is insufficient.
 

@@ -1,11 +1,21 @@
-# The M32 base map: exact reconstruction boundary
+# The M32 base map: reconstruction boundary and tangent obstruction
 
 Research audit, 23 November 2026 (America/Chicago). Source: Zhi-Wei Sun,
 *Tensor Degenerations for Matrix Multiplication*,
 [arXiv:2610.13971v1](https://arxiv.org/pdf/2610.13971v1), Sections 4–8
-and Appendix A. This note does not infer that the abstract M32 border-rank
-claim is false. It records the data still required to execute its claimed
-source-to-target map.
+and Appendix A. Updated 24 November 2026 UTC. This note does not infer
+that the abstract M32 border-rank claim is false. It records the missing
+map data and the stronger incompatibility now proved for the printed
+complete local ledger.
+
+The [tangent-globalization audit](SUN_TANGENT_GLOBALIZATION_OBSTRUCTION.md)
+shows that no fixed degree-zero side-local maps can globalize that
+complete ledger to M32. Its six-product replacement retains every raw
+dense record and all three endpoints. Using one replacement in each
+outer row would give border rank at most 2032, contradicting the known
+lower bound 2042. The source-budget estimates are independently
+certified. A repair must change a tested premise, such as the complete
+leading record set or the absence of later Laurent poles.
 
 ## The base is logically independent of the failed quotient
 
@@ -105,8 +115,10 @@ the source-resolved phase implementation is mathematically necessary.
 Sun explicitly says not to pass through that collapsed tensor. The bound
 therefore does not refute a richer raw-record construction.
 
-The current status of the M32 base is **unverified**. The obstacle is an
-unspecified source-local composition, not the size of an otherwise fully
-specified expansion. No partial weighted family can be extracted from
-the claimed cycle ledger alone, because that would assume the same absent
+The printed complete tangent ledger and its fixed degree-zero M32
+globalization are now proved incompatible. The missing maps cannot be
+supplied while keeping both premises. An alternative richer source map
+remains unverified; the abstract border-rank-2048 claim is not refuted by
+this argument. No partial weighted family can be extracted from the
+claimed cycle ledger alone, because that would assume the same absent
 composition and its absence of off-cycle terms.
