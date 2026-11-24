@@ -66,3 +66,22 @@ In one round the new code contains one old program, one cutter, two copies at mo
 Fix $`b`$. Suppose a circuit at some large $`m`$ has size $`S\le 2^{(\log m)^b}`$. Take $`v=\lfloor m^{1/B_0}\rfloor`$, for the reduction constant of K.3, and $`a=\max(1,\lceil\log_v S\rceil)`$. Thus $`a+1`$ is bounded by a fixed power of $`\lg v`$. The **statement** of K.3 includes a stronger smallness condition. To use its construction in this range, apply its clause-sum construction and E.2 at $`m\ge v^{B_0}`$, then K.2 with degree and word-length bound $`v^{H-32}+1`$. The polynomial circuit for that clause sum has $`O(v^a)`$ gates by affine substitution. K.2 needs at most $`v^{O(a+1)}`$ constants; its accepting time is $`O(v^{H-32})((a+1)\lg v)^{O(1)}\le v^{H-16}`$. Its accepting names have length $`O((a+1)\lg v)`$, all powers have $`B=1`$, and its program size is $`O((a+1)\lg v+v^{H-32})`$. As in K.3 the indicator assignments evaluate the sum on every short plain instance, and the program halts on all short instances. These are all the properties used above.
 
 Choose an integer $`\alpha\ge32`$ of order $`O_H(a+1)`$ sufficiently large to cover the trie and code by $`v^{h\alpha}`$. This choice is at most $`(\lg v)^d`$ for a suitable fixed $`d`$ and large $`v`$. Apply the first lift. At $`v'=v^\alpha`$ the program size and trie fit $`(v')^{4h}`$, the height is $`O(\lg v')`$ and the new $`B`$ is $`O_H((\lg v')^2)`$ because the old $`B`$ was one. Thus the lifted device satisfies **all** size conditions in K.1 with size $`(v')^{4h}`$, including the square and cube logarithmic bounds. Theorem K.6 now applies directly at $`v'`$ with the **fixed** exponent $`4h`$: its condition $`(\lg v')^{C4h}\le v'`$ holds. The complex field is a nonzero $`A`$-algebra in this branch. This contradiction proves the research theorem. We only changed the first lift; the finite-field and diagonal argument is imported intact through K.6.
+
+## 4. An explicit rate in the contracting case
+
+The same argument gives constants $`c>0`$ and $`m_0`$ such that for all $`m\ge m_0`$ in this branch,
+```math
+\log_2 S(m)> 2^{c\sqrt{\log_2 m}} .
+```
+Here the constants may depend on the contracting laws. We give the uniform estimates since substituting a growing $`b`$ into Section 3 would be invalid.
+
+Set $`x=\log_2 v`$ and $`y=\log_2(2+\alpha)`$. The schedule proof gives $`r\le C_1(1+y)`$ with a constant independent of $`\alpha`$: the shrinkage of $`\log t`$ uses $`D`$ alone, and the base-$`v`$ tail has bounded length. Since $`\log T\le2H\alpha x`$, $`\log(1000L^3)\le C_2(1+\log x+y)`$. The resource estimates in Section 1 use only the following consequences:
+```math
+4^r\le v,\quad(2L^2)^r\le v,\quad
+2rL(8L^2)^r\le v,\quad 300r\le v .
+```
+Indeed the length ratio at the leaves is then at most $`v^{-47}`$. The piece count is at most $`Tv^{1-H}`$, the single-cut time sum at most $`Tv^{-47}`$, and the extra list processing at most $`Tv^{2-H}`$. These imply the required J.1 bounds for large $`v`$. The code bound remains $`v^{h\alpha}`$ for $`\alpha\ge32`$ since $`4^r\le v`$ and the largest single-cut program has size at most $`v^{h\alpha/2}`$. All logarithms of the four left sides are at most $`C_3(1+y)(1+\log x+y)`$ for a fixed $`C_3`$. Choose $`\delta>0`$ with $`4C_3\delta^2<1`$. For large $`x`$ and $`y\le\delta\sqrt x`$, the product bound is below $`x`$. Thus this cut lemma holds uniformly across the stated range, with no assumption that $`\alpha`$ is polylogarithmic.
+
+The remaining first-lift estimates in Sections 2–3 involve fixed powers of $`\alpha\lg v`$, of $`X`$, and a factor at most $`3\alpha`$ for the number of rounds. In the range $`y\le\delta\sqrt x`$ every such fixed power is $`2^{O(\sqrt x+\log x)}=v^{o(1)}`$. In particular $`1000X^3\le v`$, the interpreter-time and code-growth inequalities still hold, and K.2's evaluation-time multiplier is smaller than $`v^{16}/O(1)`$. At the new scale $`\alpha^2\lg v\le O((\lg v')^2)`$ exactly as before. Hence K.6 still applies with fixed size exponent $`4h`$.
+
+Finally put $`z=\log_2 m`$, so $`x=z/B_0+o(1)`$ for the same choice of $`v`$. If $`\log_2 S(m)\le2^{c\sqrt z}`$ then $`a\le1+2^{c\sqrt z}/x`$. We can choose the integer $`\alpha`$ from Section 3 between 32 and $`C_4(a+1)`$ for a fixed $`C_4`$. Consequently $`y\le c\sqrt z+O(1)\le\delta\sqrt x`$ for all sufficiently large $`m`$ if $`0<c<\delta/(2\sqrt{B_0})`$. This is the excluded range and proves the explicit bound.
