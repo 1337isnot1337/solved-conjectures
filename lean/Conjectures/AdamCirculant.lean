@@ -1,4 +1,4 @@
-import Mathlib
+import Mathlib.Data.Fintype.Basic
 
 /-!
 # Ádám's conjecture
@@ -16,11 +16,11 @@ set_option maxRecDepth 10000
 
 /-- The cyclic difference y - x, represented in {0,...,n-1}. -/
 def diff {n : ℕ} (x y : Fin n) : Fin n :=
-  ⟨(y.val + n - x.val) % n, Nat.mod_lt _ (by have h := x.isLt; omega)⟩
+  ⟨(y.val + n - x.val) % n, Nat.mod_lt _ (Nat.zero_lt_of_lt x.isLt)⟩
 
 /-- Multiplication of residues. -/
 def mul {n : ℕ} (k x : Fin n) : Fin n :=
-  ⟨(k.val * x.val) % n, Nat.mod_lt _ (by have h := x.isLt; omega)⟩
+  ⟨(k.val * x.val) % n, Nat.mod_lt _ (Nat.zero_lt_of_lt x.isLt)⟩
 
 /-- A connection set for a simple undirected circulant:
 zero is absent and membership is invariant under negation. -/
