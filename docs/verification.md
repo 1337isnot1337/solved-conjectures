@@ -1,5 +1,17 @@
 # Verification
 
+## Steinerberger’s greedy-energy Fourier conjecture
+
+The [publication receipt](../results/steinerberger-greedy-fourier/verification/receipt.json) records the exact four-module closure: fresh strict source builds, the all-owned/private audit of 113 declarations and all 15 required endpoints, and unchanged stock-kernel replay. The only allowed transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The [independent review](../results/steinerberger-greedy-fourier/LEAN_REVIEW.md) separately audits the original conjecture and full counterexample.
+
+With the pinned Lean and Mathlib dependencies installed, reproduce the scoped check from `lean/`:
+
+```sh
+lake env python3 ../scripts/verify_steinerberger_greedy.py
+```
+
+The [dedicated workflow](../.github/workflows/lean-steinerberger-greedy.yml) uses that same runner on proof, registration, toolchain and verifier changes. The [original lane receipt](../results/steinerberger-greedy-fourier/verification/lane/receipt.json) preserves its three unsuccessful replay attempts and the subsequent passing single-thread replay. The publication receipt is a fresh check of the registered candidate. It does not claim the aggregate repository gate or a public-site deployment has passed; those obligations are tracked in [issue #563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+
 
 
 ## Coulangeon–Lazzarini’s two-shell counterexample

@@ -1,5 +1,9 @@
 # History
 
+## Steinerberger’s greedy-energy Fourier conjecture
+
+On 24 November 2026 the [complete Lean disproof](results/steinerberger-greedy-fourier/FORMALIZATION.md) verified an actual infinite greedy sequence whose stated weighted absolute Fourier sum is not O(log n). The four modules include direct greedy admissibility, exact Fourier recurrences, a quadratic lower bound along an unbounded family of prefixes, and the asymptotic negation. The independent source review corrected the Kritzinger citation to arXiv:2109.06298v4, Theorem 4 and Algorithm 3, page 15. The existing entry, its rank and its priority qualification are retained. The sharp limsup constant and the stronger all-initialization and all-tie-breaking assertions remain written supplements.
+
 ## 2026-11-24 — Verify Coulangeon–Lazzarini’s two-shell counterexample in Lean
 
 The [Lean proof](lean/Conjectures/CoulangeonLazzariniRealLattice.lean) constructs the full-rank discrete lattice in dimension ten, verifies the spherical second moments for squared norms 4 and 8, and proves failure at squared norm 9. The [integer-coordinate module](lean/Conjectures/CoulangeonLazzariniShells.lean) verifies the elementary arbitrary-delay family.

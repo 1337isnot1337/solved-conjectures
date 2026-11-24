@@ -1167,3 +1167,8 @@ import Conjectures.HornakOneArm
 import Conjectures.HornakTwoArm
 import Conjectures.AgnosticVC
 import Conjectures.SteinkeZakynthinou
+
+import Conjectures.SteinerbergerGreedySequence
+import Conjectures.SteinerbergerGreedyFourier
+import Conjectures.SteinerbergerGreedyGrowth
+import Conjectures.SteinerbergerGreedy
