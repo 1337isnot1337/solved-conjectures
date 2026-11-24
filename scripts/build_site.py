@@ -68,6 +68,8 @@ STATUS_LABEL_SLUGS = {
     "Feldheim–Feldheim’s weighted tail conjecture": "feldheim-weighted-tail",
     "Hajdu–Sárközy’s shifted-power perturbation conjecture": "hajdu-sarkozy-shifted-power-perturbations",
     "Hajdu–Sárközy’s shifted-product total primitivity conjecture": "hajdu-sarkozy-shifted-products",
+    "Fan’s interval Riesz capacity-ratio conjecture": "fan-interval-riesz-capacity",
+    "Chern–Fu–Lin’s joint Eulerian equidistribution conjecture": "chern-fu-lin-joint-eulerian",
     "Fan–Tringali’s power-monoid length-set conjecture": "fan-tringali-power-monoid-lengths",
     "Sokal’s Apéry moment threshold": "sokal-apery-moment-threshold",
     "Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture": "gessel-zhuang-pinnacle-gamma",
