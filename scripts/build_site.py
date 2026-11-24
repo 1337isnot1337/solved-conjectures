@@ -59,6 +59,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Gravgaard–Lee’s mixed upper/lower Lüroth conjecture": "gravgaard-lee-upper-lower-luroth",
     "Fan–Tringali’s power-monoid length-set conjecture": "fan-tringali-power-monoid-lengths",
     "Ulas’s disjoint-block square-product conjecture": "ulas-disjoint-square-blocks",
     "Steinke–Zakynthinou’s agnostic VC learning conjecture": "steinke-zakynthinou-agnostic-vc",
