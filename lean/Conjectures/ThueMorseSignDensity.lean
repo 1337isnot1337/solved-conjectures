@@ -85,7 +85,7 @@ theorem t_even (n : ℕ) : t 2 (2 * n) = t 2 n + prev n := by
 theorem t_odd (n : ℕ) : t 2 (2*n+1) = -2 * t 2 n := by
   rw [t_eq_coeff 2 (2*n+1) (n+2) (pow_bound n), coeff_prefix_pow_step]
   change (∑ i ∈ range (2*n+1+1), stepTerm (n+1) (2*n+1) i) = _
-  have hm : 1 ∈ range (2*n+1+1) := by simp; omega
+  have hm : 1 ∈ range (2*n+1+1) := by simp <;> omega
   rw [Finset.sum_eq_single_of_mem 1 hm]
   · have hd : 2 ∣ 2*n+1-1 := by omega
     have he : (2*n+1-1)/2 = n := by omega
@@ -108,9 +108,7 @@ theorem prev_even (n : ℕ) : prev (2*n) = -2 * prev n := by
 theorem prev_odd (n : ℕ) : prev (2*n+1) = t 2 n + prev n := by
   have hne : 2*n+1 ≠ 0 := by omega
   have he : 2*n+1-1 = 2*n := by omega
-  simp only [prev, if_neg hne, he]
-  rw [t_even]
-  rfl
+  rw [prev, if_neg hne, he, t_even]
 
 theorem parity (n : ℕ) : t 2 n % 2 = if n % 2 = 0 then 1 else 0 := by
   induction n using Nat.strong_induction_on with
@@ -240,7 +238,7 @@ theorem exception_block1 (h : ℕ) : ∃ s < 256, exception 2 1 (256*h+s) := by
   exact ⟨s, hs, by simp [exception, sign, not_lt.mpr (le_of_lt ht), ne_of_gt ht]⟩
 
 theorem count_from_blocks (p : ℕ → Prop) [DecidablePred p] (L X : ℕ)
-    (hL : 0 < L) (h : ∀ h : ℕ, ∃ s < L, p (L*h+s)) :
+    (_hL : 0 < L) (h : ∀ h : ℕ, ∃ s < L, p (L*h+s)) :
     X/L ≤ ((range X).filter p).card := by
   classical
   choose s hs hp using h
