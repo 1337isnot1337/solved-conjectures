@@ -145,7 +145,7 @@ These are algebraic identities, not permutations of logical quantifiers. Existen
 Theorem J.4 uses parameters satisfying
 
 ```math
-(\log v)^{C_{\rm cut}\alpha}\le v,
+(\log v)^{C_{\mathrm{cut}}\alpha}\le v,
 \qquad
 v^H\le\tau\le v^{H\alpha},
 \qquad
@@ -224,3 +224,33 @@ Consequently the permanent has an arithmetic circuit of size S(n)+O(n). The same
 Under the imported superpolynomial permanent lower bound, S(n) cannot be polynomially bounded. In particular, it is false that every true Boolean-sum instance with a polynomial-size kernel has a winning sum-check strategy whose messages can all be committed by polynomial-size arithmetic circuits.
 
 This is a limitation of the proposed representation of adaptive strategies. The language consisting of these particular zero-sum instances is itself trivial to decide; the proposition makes no decision lower-bound claim for that language. Nor does it rule out short commitments for a specially selected different verifier for the permanent graph.
+
+## 8. Sound batching and its actual size cost
+
+There is one valid quantifier compression for the ordinary sum-check formula. It does not reach a fixed level for the permanent kernel.
+
+Partition the m Boolean variables into h consecutive blocks B_1,...,B_h, each of size at most k. Instead of committing one univariate polynomial per coordinate, commit one polynomial Q_j in the variables of block B_j, with individual degree at most D=m+1. Write its complete coefficient vector, of length at most (D+1)^k, in the existential block. The quantified formula is
+
+```math
+\exists Q_1\ \forall r_{B_1}\ \cdots\ \exists Q_h\ \forall r_{B_h}.
+```
+
+The initial check is that the Boolean sum of Q_1 equals y. Each intermediate check is
+
+```math
+\sum_{b\in\{0,1\}^{B_{j+1}}}Q_{j+1}(b)=Q_j(r_{B_j}),
+```
+
+and the final check is Q_h(r_(B_h))=F_X(r), where F_X is the Ryser kernel from Proposition 1. Previously chosen universal challenges are parameters of the later existential messages, just as in the sequential protocol.
+
+Completeness uses the truthful residual polynomial obtained by summing the kernel over all later Boolean blocks. It has the stated individual degree. For soundness, a wrong current claim makes the committed block polynomial differ from the truthful residual. A nonzero polynomial over the infinite field C is nonzero at some complex challenge tuple, which supplies a false next residual claim. Induction ends at the direct kernel check. Thus the block formula is equivalent to the permanent graph for arbitrary complex matrices.
+
+For a coefficient monomial with exponent tuple alpha, its Boolean sum is 2 to the number of zero entries of alpha. Therefore each Boolean block sum can be checked directly from the coefficients, without enumerating its Boolean points. The total witness length and predicate circuit size are bounded by
+
+```math
+O\bigl(hk(D+1)^k+m^2\bigr).
+```
+
+For every fixed k this is polynomial, but h is still the ceiling of m/k. Taking k of order m/log(log m) would make h of order log(log m), while the coefficient count grows at least as (m+2) to a constant multiple of m/log(log m). That is superpolynomial. The block construction therefore does not yield the required short-alternation formula.
+
+A future protocol with O(log(log m)) rounds could benefit from constant-factor batching only if it has an independently proved batching property of this kind. Arbitrary alternating formulas cannot be batched by committing small coefficient vectors: the required Skolem functions need not be polynomials of the asserted degree or small coefficient volume. If such a protocol admits grouping every fixed k consecutive rounds at polynomial total cost, the coefficient of its log(log m) round bound becomes tunable. That would address the hypothetical decider-exponent issue in the quantitative collapse calculation, but the O(log(log m)) starting protocol and the required batching property are both unproved here.

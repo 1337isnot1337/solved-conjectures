@@ -37,6 +37,21 @@ The following written implications have passed independent internal mathematical
 
 Consequently the imported lower bound and these reviewed implications put the permanent graph outside both nonuniform NP_C and nonuniform coNP_C. This does not separate P_C from NP_C: it gives no language in NP_C outside P_C. The fixed-level hierarchy route must use a higher level, and the high-degree resultant route needs a different extraction from arbitrary multiples. The six-resultant existential incidence and the stated initial-factor degeneration are now excluded hypotheses, rather than constructions awaiting witness equations.
 
+## Boolean-sum certificate obstruction
+
+[BOOLEAN_POTENTIALS.md](BOOLEAN_POTENTIALS.md) gives a sound and unrestrictedly complete divergence certificate on the Boolean cube. It would yield a uniform second-level hierarchy formula if every true numerical permanent instance had polynomial-size potential circuits. [CRITICAL_INCIDENCE_BARRIER.md](CRITICAL_INCIDENCE_BARRIER.md) now excludes that size hypothesis under the imported border lower bound, even with arbitrary instance-dependent complex constants and unrestricted nonlinear circuit parameters.
+
+The proof uses the identity that the sum of the verification residuals is per(X)-y. A polynomial number of their gradients span the normalized output covector. Selected residual and derivative equations define a small critical incidence; on every component its projected differential rank is at most the input dimension. One component projects densely to the permanent graph, so the singular-witness theorem applies. The worst-case potential-circuit size is at least exp(Omega((log m)^(4/3))). For every smaller asymptotic budget allowed by the proof, a nonempty Zariski-open set of matrices requires larger certificates. The [independent internal reviews](CRITICAL_REVIEW.md) check this component argument and the distinction between ideal membership and radical membership.
+
+This is a lower bound for the specified certificate scheme, not HN_C hardness. An arbitrary higher-level formula need not have the conservation identity used in this proof. No replacement fixed-level formula or all-multiple resultant extraction has been established.
+
+Restricted constructions and failed attacks are retained with their exact scope:
+
+- [BOOLEAN_POTENTIAL_RESULTS.md](BOOLEAN_POTENTIAL_RESULTS.md) constructs small certificates for fixed-rank matrices, proves the one-variable Boolean quotient recurrence, and gives actual false residuals missed by every fixed proper subset of cube tests.
+- [GRADIENT_FLOW_ATTEMPT.md](GRADIENT_FLOW_ATTEMPT.md) gives an explicit invertible seven-by-seven counterexample to the complete first-derivative/adjugate ansatz, certified by a nonzero modular augmented minor.
+- [CANONICAL_POTENTIAL_OBSTRUCTIONS.md](CANONICAL_POTENTIAL_OBSTRUCTIONS.md), [POTENTIAL_CONSTRUCTOR_BARRIER.md](POTENTIAL_CONSTRUCTOR_BARRIER.md), [LINEAR_POTENTIAL_TEMPLATE_BARRIER.md](LINEAR_POTENTIAL_TEMPLATE_BARRIER.md), and [BOUNDED_PARAMETER_TEMPLATE_BARRIER.md](BOUNDED_PARAMETER_TEMPLATE_BARRIER.md) preserve the earlier narrower reductions. They are not needed for the full critical-incidence obstruction.
+- [IDENTITY_CERTIFICATE_BARRIER.md](IDENTITY_CERTIFICATE_BARRIER.md), [NONLINEAR_BOOLEAN_COMPONENT.md](NONLINEAR_BOOLEAN_COMPONENT.md), and [TRACE_REPRESENTATION_BARRIERS.md](TRACE_REPRESENTATION_BARRIERS.md) separate full complex identities, Boolean testing, equation-subset compression, and matrix-algebra encodings.
+
 ## Exclusion-complexity reduction and zero-testing
 
 The [resultant exclusion-complexity note](RESULTANT_EXCLUSION.md) gives a sufficient all-multiple lower-bound target for the nonuniform complex BSS separation, explains the exponential-degree obstacle in the known factor theorem, and proves an elementary irreducibility lemma leading to a conditional superpolynomial bound for deciding whether the permanent equals zero. These deductions are *not* a proof of the BSS separation.
@@ -47,7 +62,7 @@ The [grid Newton-polytope barrier](GRID_NEWTON_BARRIER.md) shows that, after at 
 
 ## Research notes
 
-- [PROTOCOL.md](PROTOCOL.md) gives a sound uniform sum-check formula on all complex matrices, with `2m` alternating blocks, and exact counterexamples to moving all messages or all challenges together. It also proves an obstruction to generic small arithmetic-circuit commitments for adaptive messages.
+- [PROTOCOL.md](PROTOCOL.md) gives a sound uniform sum-check formula on all complex matrices, with `2m` alternating blocks, and exact counterexamples to moving all messages or all challenges together. It also proves an obstruction to generic small arithmetic-circuit commitments for adaptive messages and a sound batching lemma with its actual coefficient-volume cost.
 - [BOUNDARY_AND_COLLAPSE.md](BOUNDARY_AND_COLLAPSE.md) proves a generic boundary extraction lemma and the sufficient `o(log log m)` alternation criterion. Neither construction needed to apply them has been obtained.
 - [INCIDENCE.md](INCIDENCE.md) supplies the quadratic-resultant witness equations, proves a degeneration criterion that survives arbitrary multipliers, and records the jet-masking, matching-norm, and Newton-face obstructions.
 - [FILTER_ROUTE.md](FILTER_ROUTE.md) proves that separate resultant root blocks encode products or intersections. It records a six-resultant additive-incidence criterion; the later singular-witness theorem excludes its existential hypothesis under the imported lower bound.
@@ -64,7 +79,7 @@ The [source audit](SOURCE_AUDIT.md) records theorem numbers, version changes, th
 
 The imported border result is Anthropic / Claude, *VP ≠ VNP over every field*, commit `11b6c7e3c927df2658f513b6b68ea7f8929c62c5`, written Theorem N.5 and Lean `Statement.MainTheoremApprox`. This project has inspected the statement and its proof linkage. It has not rebuilt or independently replayed the upstream Lean development.
 
-No target separation has been formalized in Lean. The exact symbolic checks in [verify_obstructions.py](verify_obstructions.py) verify only the identities and counterexamples listed in [REVIEW.md](REVIEW.md). They do not verify the target separation.
+No target separation has been formalized in Lean. The exact checks in [verify_obstructions.py](verify_obstructions.py), [verify_boolean_potentials.py](verify_boolean_potentials.py), [verify_canonical_potentials.py](verify_canonical_potentials.py), and [verify_gradient_flow.py](verify_gradient_flow.py) verify only the identities and counterexamples listed in [REVIEW.md](REVIEW.md). They do not verify the target separation.
 
 ## Coordination
 
