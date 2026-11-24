@@ -1,10 +1,12 @@
 # Ma–Tang’s random subset-sum threshold conjecture
 
-**Incomplete formalization.** Checked deterministic components only. This is a work-in-progress checkpoint on research; no full result is registered or counted.
+**Incomplete formalization.** Checked deterministic and finite counting components only. This is a work-in-progress checkpoint on research; no full result is registered or counted.
 
 The existing [main result](https://github.com/1337isnot1337/solved-conjectures/tree/main/results/ma-tang-random-subset-sums), [recorded proof](https://github.com/1337isnot1337/solved-conjectures/blob/main/results/ma-tang-random-subset-sums/PROOF.md), and [discovery issue #490](https://github.com/1337isnot1337/solved-conjectures/issues/490) resolve Ma and Tang's Problem 4.1 of [arXiv:2602.05768v2](https://arxiv.org/html/2602.05768v2#S4). This formalization follows equations (4)–(5) of that proof, credits Jie Ma and Quanyu Tang as proposers and the written proof's existing authors, and claims no new conjecture resolution or exclusive priority.
 
 ## Verified scope
+
+- [MaTangCoreOccupancy](../../lean/Conjectures/MaTangCoreOccupancy.lean): enumerates all length-k words over m labels and three ternary representatives without duplicates; proves total count `(3*m)^k`, the exact singleton count `k*2*(3*m-2)^(k-1)` and union bound `(m-1)*k*2*(3*m-2)^(k-1)`. The endpoint `successful_word_count_le` bounds the number of successful words under the explicit per-word matrix kernel-spanning hypothesis. It proves a finite independent-column-model counting result, not the distribution of the actual random kernel or the limiting conjecture.
 
 - [MaTangCoreBalance](../../lean/Conjectures/MaTangCoreBalance.lean): ternary sign balancing for arbitrary grouped integer coefficients, including zeros.
 - [MaTangCoreIndexed](../../lean/Conjectures/MaTangCoreIndexed.lean): ordered labeled coefficient positions, exact projection to the original list, and a binary selection with constant residue under every type-dependent flip fixing type zero. Conditional deterministic noncoverage.
@@ -14,6 +16,6 @@ The existing [main result](https://github.com/1337isnot1337/solved-conjectures/t
 
 ## Remaining obligations
 
-The kernel spanning hypothesis must be connected to a basis of the specified dimension, and the law of the sampled kernel must be proved. The exact singleton occupancy count and its normalization, probability bounds, conditioning on distinct samples, asymptotic estimates, monotonicity and the universal upper bound all remain outside this checked scope. Uncompiled Mathlib alternatives are kept in [draft PR #583](https://github.com/1337isnot1337/solved-conjectures/pull/583); they are not incorporated into this checkpoint.
+The kernel spanning hypothesis must be connected to a basis of the specified dimension, and the law of the sampled kernel must be proved. The finite occupancy count is now checked; its probability normalization, conditioning on distinct samples, asymptotic estimates, monotonicity and the universal upper bound remain outside this checked scope. The [four-module reproduction script](verify_occupancy.py) and [log](verification/occupancy-reproduction.log) record strict builds, transitive axiom checks of all 119 source-named declarations, and stock kernel replay. Uncompiled Mathlib alternatives are kept in [draft PR #583](https://github.com/1337isnot1337/solved-conjectures/pull/583); they are not incorporated into this checkpoint.
 
 Original campaign start: 2026-11-24 18:59 UTC. Pyroam recovered and the scoped proofs passed on 24 November. Broad compiler imports and the Lake dependency setup encountered process termination under the constrained execution environment. Full verified result count for this entry: zero.
