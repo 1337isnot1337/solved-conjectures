@@ -1,0 +1,5 @@
+# Scope and independent audit
+
+The exact proposed logarithmic estimate appears in [Steinerberger, *Some Open Problems*, §20, p. 22](https://faculty.washington.edu/steinerb/openproblems.pdf#page=22). The result treats every singleton start and every tie-break, not arbitrary initial multipoint seeds. The squared Fourier energy and uniform potential claims are distinct and are not refuted.
+
+Independent review verified the dyadic carry, all phases and the sharp upper bound and alternating-binary lower bound. It also verified 12,960 Fourier magnitudes from exact rational minimization in five runs without the block characterization. That characterization was already given by [Pausinger](https://doi.org/10.1007/s10231-020-00990-7). The same number occurs in [an earlier discrepancy theorem](https://doi.org/10.1007/s00013-021-01688-9), and [classical star discrepancy](https://doi.org/10.1007/s00013-024-02087-6) also uses a related digit statistic, but neither is the truncated harmonic-weighted sum of absolute Fourier magnitudes. Searches did not find an earlier treatment of this exact conjecture. No external review, Lean verification or priority guarantee is claimed.

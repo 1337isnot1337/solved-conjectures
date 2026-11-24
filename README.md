@@ -35,6 +35,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Zhu’s generalized Jacobi–Stirling Hankel positivity conjecture](results/zhu-jacobi-stirling-hankel/) | ⬜ |
 | [Sobolewski–Ulas’s binary-partition exception regularity conjecture](results/sobolewski-ulas-exception-regularity/) | ⬜ |
 | [Gawron–Ulas’s partition-sign nonperiodicity conjecture](results/gawron-ulas-partition-signs/) | ⬜ |
+| [Steinerberger’s greedy-energy Fourier conjecture](results/steinerberger-greedy-fourier/) | ⬜ |
 | [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/) | ⬜ |
 | [Sokal’s Apéry moment threshold](results/sokal-apery-moment-threshold/) | ⬜ |
 | [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ⬜ |
