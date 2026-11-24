@@ -345,6 +345,8 @@ class Builder:
                         slug = self.result_slug(cells[0][-1])
                         if not slug:
                             continue
+                        if slug in found:
+                            raise ValueError(f"Duplicate catalogue entry for {slug}")
                         status_text = plain(cells[2][-1])
                         if "◐" in status_text or "🟡" in status_text or "Partial" in status_text:
                             status = "partial"
@@ -379,6 +381,8 @@ class Builder:
                             node.update({"t": "Str", "c": ""})
                     summary = clean_text(plain(summary_item))
                     summary = re.sub(r"(?:\s*·\s*)+$", "", summary)
+                    if slug in found:
+                        raise ValueError(f"Duplicate catalogue entry for {slug}")
                     found[slug] = Result(
                         slug, landing.title, PARTIAL_CATEGORIES.get(slug, category), status,
                         summary, scope="partial",
@@ -461,6 +465,8 @@ class Builder:
                     status = {"✅": "full", "🟢": "partial", "🟡": "partial", "⬜": "none"}.get(text)
                     if status != results[slug].status:
                         raise ValueError(f"Stale README Lean status for {slug}: {text!r}; expected {results[slug].status}")
+                    if slug in readme_checked:
+                        raise ValueError(f"Duplicate README result row: {slug}")
                     readme_checked.add(slug)
         if readme_checked != required:
             raise ValueError(f"README result table does not match current catalogue: {sorted(readme_checked ^ required)}")

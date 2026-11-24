@@ -1,6 +1,6 @@
 # Research site
 
-The public reading site is [1337isnot1337.github.io/solved-conjectures](https://1337isnot1337.github.io/solved-conjectures/).
+The public reading site is [1337isnot1337.github.io/solved-conjectures](https://itsdavis.com/solved-conjectures/).
 
 The generator reads the repository's current Markdown. It publishes a complete HTML catalogue, individual result pages, proofs, supporting notes, verification guidance, and history. Search works in the browser. Every result and proof remains readable without JavaScript.
 
@@ -9,7 +9,9 @@ The generator reads the repository's current Markdown. It publishes a complete H
 Use Python 3.12 or later and Pandoc 3.x. No Python packages or network requests are needed during the build.
 
 ```sh
-python3 scripts/build_site.py
+python3 scripts/check_readme_verification.py
+python3 scripts/test_build_site.py
+python3 scripts/build_site.py --base-url https://itsdavis.com/solved-conjectures/
 python3 scripts/check_site.py _site
 ```
 
@@ -55,6 +57,10 @@ The checker validates generated result coverage, source statuses, external credi
 ## Publication
 
 The `Research site` workflow builds and checks source changes and uploads the static output. Publication uses the existing Pages workflow in `1337isnot1337/1337isnot1337.github.io`, which builds this public repository into `site/solved-conjectures/` before deploying the personal site.
+
+The root README Results table is ranked by mathematical significance and supplies the default catalogue order. The checker requires identical manifest, homepage and search result ordering and coverage. Follow `AGENTS.md` before every publication.
+
+Check the [live catalogue provenance](https://itsdavis.com/solved-conjectures/catalogue-provenance.json) and [live build manifest](https://itsdavis.com/solved-conjectures/build-manifest.json) after publication. A current-mode deployment must contain the published commit or a newer commit that includes it. A dated fallback is not a current release. Record and resolve pending or failed deployments instead of declaring synchronization.
 
 The generated `sitemap.xml` belongs to the project path. The host's root sitemap must reference it. Crawler policy belongs in `https://1337isnot1337.github.io/robots.txt`; a project-level `robots.txt` would not control crawling.
 

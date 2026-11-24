@@ -28,6 +28,7 @@ class Page(HTMLParser):
         self.math_count = 0
         self.json_ld = []
         self.rows = {}
+        self.result_order = []
         self._title = False
         self._json_ld = False
         self._json_buffer = []
@@ -57,6 +58,7 @@ class Page(HTMLParser):
             self._json_ld = True
             self._json_buffer = []
         if attrs.get("data-result"):
+            self.result_order.append(attrs["data-result"])
             self.rows[attrs["data-result"]] = attrs
 
     def handle_endtag(self, tag):
@@ -142,8 +144,11 @@ def validate(root: Path) -> list[str]:
                 errors.append(f"{css.relative_to(root)}: missing CSS asset {url}")
     homepage = pages["index.html"]
     expected_results = {result["slug"]: result for result in manifest["results"]}
-    if set(homepage.rows) != set(expected_results):
-        errors.append("Homepage does not contain exactly the manifest's result entries")
+    expected_order = [result["slug"] for result in manifest["results"]]
+    if len(expected_results) != len(expected_order):
+        errors.append("Manifest contains duplicate result slugs")
+    if homepage.result_order != expected_order:
+        errors.append("Homepage result order or coverage differs from the source manifest")
     for slug, result in expected_results.items():
         row = homepage.rows.get(slug, {})
         if row.get("data-status") != result["status"] or row.get("data-scope") != result["scope"]:
@@ -156,10 +161,12 @@ def validate(root: Path) -> list[str]:
         elif result["status"] not in {"full", "partial", "none"}:
             errors.append(f"{slug}: invalid formalization status")
     search = json.loads((root / "search.json").read_text())
-    if {entry["slug"] for entry in search} != set(expected_results):
-        errors.append("Search data does not contain exactly the current results")
+    if [entry["slug"] for entry in search] != expected_order:
+        errors.append("Search result order or coverage differs from the source manifest")
     for entry in search:
-        expected = expected_results[entry["slug"]]
+        expected = expected_results.get(entry["slug"])
+        if expected is None:
+            continue
         if entry["status"] != expected["status"] or entry["scope"] != expected["scope"]:
             errors.append(f"{entry['slug']}: search status/scope differs from source manifest")
     namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Reconcile publication, issue closure and site validation
+
+Required research-to-main publication and discovery issue closure after review. Preserved the established mathematical-significance ordering while placing the newly published results at their relative ranks. Repaired the malformed Merlini–Sala–Sala summary cells; strengthened website duplicate-entry and ordering checks. The mathematical statements and verification markers are unchanged. The README column now explicitly says Lean verification status.
+
 ## 2026-11-24: Publish the reviewed weighted trace identity
 
 The [Tom–Vailaya weighted trace conjecture](results/tom-vailaya-weighted-trace/) is proved for its full stated domain (journal Conjecture 74, arXiv Conjecture 5.16). The proof identifies finite color transfers with the published forest-triple matrices under endpoint reflection. Independent direct forest and proper-color enumerations agree at 585 exact specializations. The separate Ellzey positivity and unimodality conjecture is not claimed. [Issue #338](https://github.com/1337isnot1337/solved-conjectures/issues/338) records scope and review; no Lean or external referee verification is claimed.
