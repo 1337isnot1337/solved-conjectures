@@ -68,6 +68,8 @@ STATUS_LABEL_SLUGS = {
     "Feldheim–Feldheim’s weighted tail conjecture": "feldheim-weighted-tail",
     "Hajdu–Sárközy’s shifted-power perturbation conjecture": "hajdu-sarkozy-shifted-power-perturbations",
     "Hajdu–Sárközy’s shifted-product total primitivity conjecture": "hajdu-sarkozy-shifted-products",
+    "Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture": "separable-derangements-limit",
+    "Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture": "separable-derangements-asymptotic",
     "Fan’s interval Riesz capacity-ratio conjecture": "fan-interval-riesz-capacity",
     "Chern–Fu–Lin’s joint Eulerian equidistribution conjecture": "chern-fu-lin-joint-eulerian",
     "Athanasiadis–Chapoton’s polar preorder duality conjecture": "athanasiadis-chapoton-polar-duality",

@@ -16,6 +16,8 @@
   "rossi-permutohedron-roots": ["Giovanni Rossi", "permutohedron face lattice", "Eulerian root level one", "real characteristic roots", "Conjecture 6.16"],
   "darcais-distinct-right-half-plane-zeros": ["Darcais", "right half-plane zeros", "Hurwitz minor", "distinct roots", "scaled entire limit"],
   "hajdu-sarkozy-shifted-products": ["Lajos Hajdu", "Andras Sarkozy", "shifted products", "coprime exponents", "total primitivity"],
+  "separable-derangements-limit": ["separable permutations", "separable derangements", "Dougherty Bliss Galvan Polley Shuster", "Vincent Vatter", "Schroeder spine", "Boltzmann occupation"],
+  "separable-derangements-asymptotic": ["separable derangement exponent", "Schroeder tree", "Dougherty Bliss Galvan Polley Shuster", "two macro branchings", "subpolynomial"],
   "fan-interval-riesz-capacity": ["Riesz capacity", "Yingxin Fan", "Clark Laugesen", "Blackwell comparison", "interval equilibrium"],
   "chern-fu-lin-joint-eulerian": ["Chern Fu Lin", "Burstein", "Eulerian equidistribution", "inverse descents", "pattern avoiding permutations"],
   "athanasiadis-chapoton-polar-duality": ["Athanasiadis Chapoton", "Luo polar preorder", "preorder polytopes", "Ehrhart duality", "Stanley transfer"],
