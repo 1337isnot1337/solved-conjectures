@@ -473,7 +473,9 @@
     "rational ratios",
     "Kohlmeyer Kruer"
   ],
+  "ma-tang-random-subset-sums": ["Jie Ma", "Quanyu Tang", "Erdős 543", "Erdős 274", "random subset sums", "Erdős–Rényi threshold", "finite abelian groups", "Walsh spectrum", "loglog threshold", "2602.05768"],
   "xu-zhou-laplacian-diameter": ["Leyou Xu", "Bo Zhou", "Laplacian eigenvalues", "graph diameter", "clique chains", "tridiagonal inertia", "MathDB 361424", "2401.03777"],
+  "han-spherical-harmonic-saturation": ["Xiaolong Han", "spherical harmonics", "Gaussian beams", "zonal kernels", "Sogge norms", "joint saturation", "real orthonormal basis", "isotropic witnesses", "2609.14023"],
   "pomerance-sarkozy-fluctuations": [
     "Carl Pomerance",
     "András Sárközy",

@@ -16,7 +16,9 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Brown–Mol's conjecture](results/brown-mol/) | ✅ |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ |
 | [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | ⬜ |
+| [Ma–Tang’s random subset-sum threshold conjecture](results/ma-tang-random-subset-sums/) | ⬜ |
 | [Xu–Zhou’s diameter–Laplacian conjecture](results/xu-zhou-laplacian-diameter/) | ⬜ |
+| [Han’s simultaneous spherical-harmonic saturation question](results/han-spherical-harmonic-saturation/) | ⬜ |
 | [Pomerance–Sárközy’s fluctuation conjecture](results/pomerance-sarkozy-fluctuations/) | ⬜ |
 | [Ulas’s disjoint-block square-product conjecture](results/ulas-disjoint-square-blocks/) | ⬜ |
 | [Kovalev’s linear Lipschitz clustering questions](results/kovalev-lipschitz-clustering/) | ⬜ |

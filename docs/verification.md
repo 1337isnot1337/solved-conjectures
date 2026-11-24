@@ -795,3 +795,7 @@ Run `python3 results/braun-bruegge-minimum-facets/check.py` for exact independen
 ## Xu–Zhou diameter–Laplacian conjecture
 
 Run `python3 results/xu-zhou-laplacian-diameter/check.py` for exact rational inertia through all small ordered layer compositions and the sharp example family. The [analytic proof](../results/xu-zhou-laplacian-diameter/PROOF.md) establishes all parameters.
+
+## Random subset sums and simultaneous spherical harmonics
+
+The [mixed-group threshold proof](../results/ma-tang-random-subset-sums/PROOF.md), its [remainder supplement](../results/ma-tang-random-subset-sums/BOUNDED-REMAINDER.md) and [Han’s simultaneous saturation proof](../results/han-spherical-harmonic-saturation/PROOF.md) are analytic arguments independently checked against their primary sources. No finite-range search or Lean proof is used.
