@@ -31,3 +31,18 @@ This remains true for complex-valued \(F\) by the integral formula for divided d
 Now \(v\ge\pi\) by the unit disk, \(N=O(k^2)\), and \(m=O(k^3)\). This proves the proposition.
 
 The strictness argument and its lineage should be distinguished from the original conjecture. Beck's obstruction to bounded Steinhaus sets likewise forces Fourier zeros at all radii of a dual lattice and uses the restricted growth of an entire function; see [Kolountzakis's survey](https://www.esi.ac.at/preprints/esi1300.pdf). The calculation above uses the \(L^1\) deficit of periodization to quantify small values rather than requiring exact zeros.
+
+## Stronger estimate using split primes
+
+Using the prime number theorem in the progression \(1\bmod3\) gives the stronger gap
+\[
+\eta\ge\exp\bigl(-C' k^2\log(2k)\log\log(3k)\bigr)
+\]
+with an absolute \(C'\). Indeed, every prime \(p\equiv1\pmod3\) is a norm \(a^2-ab+b^2\) of an Eisenstein integer. To recall the elementary reason, a nontrivial cube root of unity exists modulo \(p\), so \(\mathbb Z[\omega]/(p)\) is not an integral domain. The Eisenstein integers are Euclidean for the norm and hence a UFD; a nontrivial factor of \(p\) must have norm \(p\), because its norm and the complementary nonunit norm multiply to \(p^2\). Therefore the nodes \(\sqrt{p/3}\) for \(p\le N^2\), \(p\equiv1\bmod3\), are distinct dual lengths in \((0,N]\) with spacing at least \(1/(6N)\). Their number \(m\) is bounded above and below by fixed positive multiples of \(N^2/\log N\) for sufficiently large \(N\).
+
+Take \(N=\lceil C_0 R\log(2R)\rceil\) with \(C_0\) a sufficiently large absolute constant. Then \(m\ge4e\pi RN\), so the same interpolation remainder is at most \(v/2\). In their increasing order the separation also gives
+\[
+\sum_i |L_i(0)|\le (6N^2)^{m-1}\sum_i\frac1{(i-1)!(m-i)!}
+=\frac{(12N^2)^{m-1}}{(m-1)!}.
+\]
+Here the denominator for node \(i\) uses the distance lower bound \(|t_i-t_j|\ge|i-j|/(6N)\). Factorial growth and \(m\gg N^2/\log N\) bound the last expression by \((C_1\log N)^m\). The earlier small-value comparison gives \(\eta\ge v/(2(C_1\log N)^m)\). Finally \(N=O(k\log(2k))\) and \(m=O(k^2\log(2k))\), as claimed. Any finitely many small \(k\) can be absorbed by increasing \(C'\) using the unconditional gap already proved above.
