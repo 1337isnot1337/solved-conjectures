@@ -1,0 +1,44 @@
+name: Published Latin-square formalization
+on:
+  pull_request:
+    paths:
+      - 'lean/Conjectures/PublishedLatinSquares.lean'
+      - 'scripts/verify_published_latin_squares.py'
+      - '.github/workflows/lean-published-latin-squares.yml'
+  push:
+    branches: [research, review/published-latin-squares]
+    paths:
+      - 'lean/Conjectures/PublishedLatinSquares.lean'
+      - 'scripts/verify_published_latin_squares.py'
+      - '.github/workflows/lean-published-latin-squares.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Strict source, axiom audit and kernel replay
+        run: python3 scripts/verify_published_latin_squares.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: checked-published-latin-squares
+          path: .candidate-artifacts/published-latin-squares/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
