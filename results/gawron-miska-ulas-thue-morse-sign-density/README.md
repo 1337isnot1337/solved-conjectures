@@ -8,4 +8,4 @@
 
 **Stronger theorem:** [The signs have exact relative density 1/2 on every arithmetic progression](EXACT_DENSITY.md).
 
-**Lean candidate (not yet verified):** [ThueMorseSignDensity.lean](../../lean/Conjectures/ThueMorseSignDensity.lean), covering Conjecture 5.8 through the exact finite-prefix lower bounds for both exceptions. The stronger exact-density theorem is not formalized here. The coefficient model is shared with the separate valuation formalization in PR #526.
+**Lean status: incomplete.** [Core reduction](../../lean/Conjectures/ThueMorseSignDensityCore.lean) compiled on Lean 4.35.0 with ten clean endpoint axiom checks; [verification receipt and remaining obligations](LEAN.md). The [coefficient bridge and final conjecture endpoint](../../lean/Conjectures/ThueMorseSignDensity.lean) remain unverified. The stronger exact-density theorem is not formalized here. The coefficient model is shared with the separate valuation formalization in PR #526.
