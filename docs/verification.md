@@ -174,6 +174,8 @@ The [plane-partition polynomial Turán proof](../results/heim-neuhauser-troeger-
 
 The [ordinary D’Arcais root proof](../results/heim-neuhauser-ordinary-darcais-root/PROOF.md) uses its own rational Fourier certificate, small-index integer polynomial check, and C++ GMP check. Run all three commands in the proof, with Python assertions enabled.
 
+The [quantitative Feldheim-tail counterexample](../results/steinerberger-feldheim-tail/PROOF.md) is analytic. It uses two elementary integral bounds and no executable certificate.
+
 ## Pantone–Bóna asymptotic equivalence
 
 Run `python3 results/pantone-bona-asymptotic/verify.py` for literal small permutation counts and exact tableau branching comparisons. The [proof](../results/pantone-bona-asymptotic/PROOF.md) derives the leading constant analytically; finite enumeration is not part of its argument.

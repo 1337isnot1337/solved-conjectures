@@ -64,6 +64,7 @@ STATUS_LABEL_SLUGS = {
     "Pantone–Bóna’s second-largest-terminal asymptotic conjecture": "pantone-bona-second-largest-terminal",
     "Pantone–Bóna’s asymptotic conjecture": "pantone-bona-asymptotic",
     "Hartke–Stolee–West–Yancey matching-excess conjecture": "hartke-stolee-west-yancey-matching-excess",
+    "Steinerberger’s quantitative Feldheim-tail conjecture": "steinerberger-feldheim-tail",
     "Heim–Neuhauser–Tröger’s plane-partition polynomial Turán conjecture": "heim-neuhauser-troeger-plane-partition-turan",
     "Heim–Neuhauser’s plane-partition polynomization conjecture": "heim-neuhauser-plane-partition-polynomization",
     "Heim–Neuhauser’s ordinary D’Arcais root conjecture": "heim-neuhauser-ordinary-darcais-root",
