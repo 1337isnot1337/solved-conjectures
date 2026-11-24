@@ -186,6 +186,8 @@ Run the exact checkers listed in the [leaf-type](../results/chappelon-ramirez-st
 
 Run `python3 results/fan-tringali-power-monoid-lengths/check.py` and `python3 results/burstein-a218225-enumeration/check.py` for the graph-gadget and generating-tree replays. The [Apéry moment threshold](../results/sokal-apery-moment-threshold/) is proved analytically.
 
+The two [shifted-power perturbation](../results/hajdu-sarkozy-shifted-power-perturbations/) and [shifted-product](../results/hajdu-sarkozy-shifted-products/) proofs, and the [distinct D’Arcais-zero theorem](../results/darcais-distinct-right-half-plane-zeros/), are analytic and have no executable dependency.
+
 ## Pantone–Bóna asymptotic equivalence
 
 Run `python3 results/pantone-bona-asymptotic/verify.py` for literal small permutation counts and exact tableau branching comparisons. The [proof](../results/pantone-bona-asymptotic/PROOF.md) derives the leading constant analytically; finite enumeration is not part of its argument.
