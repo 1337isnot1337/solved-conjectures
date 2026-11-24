@@ -1,0 +1,45 @@
+name: Published-resolution Lean candidate (Hajos)
+on:
+  push:
+    paths:
+      - 'lean/Conjectures/HajosColoring.lean'
+      - '.github/workflows/published-hajos-candidate.yml'
+  pull_request:
+    paths:
+      - 'lean/Conjectures/HajosColoring.lean'
+      - '.github/workflows/published-hajos-candidate.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+      - name: Build, audit and independently replay using repository candidate helpers
+        run: |
+          python3 - <<'PY'
+          import sys
+          sys.path.insert(0, "scripts")
+          from verify_lean_candidate import dependency_order, run, audit
+          targets = ["Conjectures.HajosColoring"]
+          required = ["PublishedHajos.walk_cross", "PublishedHajos.separator_lower_bound",
+                      "PublishedHajos.no_seven_coloring", "PublishedHajos.chromatic_eq",
+                      "PublishedHajos.no_subdivision", "PublishedHajos.conjecture_false"]
+          modules = dependency_order(targets)
+          for module in modules:
+              run("lake", "build", module)
+          audit(targets, required, modules, "published-hajos")
+          for module in modules:
+              run("lake", "env", "leanchecker", module)
+          print("PASS: candidate source, axiom audit and kernel replay")
+          PY
