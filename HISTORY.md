@@ -4,6 +4,10 @@
 
 The [Lean proof](lean/Conjectures/GravgaardLeeLargeLuroth.lean) verifies Conjecture 2.12 for every digit bound and the stronger interval with strictly increasing interleaved digits from the [written result](results/gravgaard-lee-large-luroth/). It checks the convergent source series and the half-open digit intervals.
 
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+On 24 November 2026 the [complete Lean formalization](results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md) proved the literal pinnacle-set and peak-count inverse-descent polynomials gamma-positive for every positive size, with the original weight and center. Both source conjectures belong to one existing entry. The actual permutation/history bijection and statistic bridges, fixed-path real splitting and symmetry, and full gamma expansion are proved. All 25 project modules passed strict compilation, the all-owned axiom audit, and stock-kernel replay. Ira M. Gessel and Yan Zhuang are the original proposers; the existing proof credit to Cinna Davis and GPT-6.2 Astra and the prior-art and priority qualifications are preserved.
+
 ## Rowland–Sistos Barrón conjecture
 
 On 24 November 2026 the [complete Lean formalization](results/rowland-sistos-barron/LEAN_STATUS.md) proved the actual minimum recurrence rank of every power of the recorded integer sequence, the exact formula for every exponent at least 49, and failure of eventual quasipolynomiality over every characteristic-zero field. Strict compilation, every-owned-declaration axiom audit, and stock-kernel replay passed for all 17 modules. The proof follows the existing argument credited to Cinna Davis and GPT-6.2 Astra; Eric Rowland and Jesús Sistos Barrón are the original proposers. The source’s undefined term pseudo-polynomial, the separate general-rank clause, and the priority qualifications remain explicit.
