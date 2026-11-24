@@ -4,6 +4,63 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.GesselZhuangBlockOperations
+  Conjectures.GesselZhuangBlocks
+  Conjectures.GesselZhuangChoices
+  Conjectures.GesselZhuangCone
+  Conjectures.GesselZhuangGamma
+  Conjectures.GesselZhuangGammaBasic
+  Conjectures.GesselZhuangGammaRoots
+  Conjectures.GesselZhuangHistories
+  Conjectures.GesselZhuangHistoryBlocks
+  Conjectures.GesselZhuangHistoryGamma
+  Conjectures.GesselZhuangHistoryInjective
+  Conjectures.GesselZhuangHistoryPolynomial
+  Conjectures.GesselZhuangHistorySurjective
+  Conjectures.GesselZhuangPathGamma
+  Conjectures.GesselZhuangPathPolynomial
+  Conjectures.GesselZhuangPaths
+  Conjectures.GesselZhuangPermutations
+  Conjectures.GesselZhuangPolynomial
+  Conjectures.GesselZhuangRoots
+  Conjectures.GesselZhuangStatistics
+  Conjectures.GesselZhuangStatisticsHistory
+  Conjectures.GesselZhuangStatisticsInverse
+  Conjectures.GesselZhuangSymmetry
+  Conjectures.GesselZhuangTheorem
+  Conjectures.RowlandSistosBarronAnnihilator
+  Conjectures.RowlandSistosBarronCancellationCounts
+  Conjectures.RowlandSistosBarronCharacteristic
+  Conjectures.RowlandSistosBarronCoefficients
+  Conjectures.RowlandSistosBarronCoefficientsBasic
+  Conjectures.RowlandSistosBarronCoefficientsBounds
+  Conjectures.RowlandSistosBarronCoefficientsDegrees
+  Conjectures.RowlandSistosBarronCoefficientsDuality
+  Conjectures.RowlandSistosBarronCoefficientsExpansion
+  Conjectures.RowlandSistosBarronDifference
+  Conjectures.RowlandSistosBarronExponential
+  Conjectures.RowlandSistosBarronKrawtchouk
+  Conjectures.RowlandSistosBarronQuasipolynomial
+  Conjectures.RowlandSistosBarronRecurrence
+  Conjectures.RowlandSistosBarronSequence
+  Conjectures.RowlandSistosBarronSums
+  Conjectures.RowlandSistosBarronTheorem
+  Conjectures.JohnsonPfaffian
+  Conjectures.JohnsonPfaffianAllMatching
+  Conjectures.JohnsonPfaffianCircular
+  Conjectures.JohnsonPfaffianCircularAdditive
+  Conjectures.JohnsonPfaffianCircularUncrossing
+  Conjectures.JohnsonPfaffianKernel
+  Conjectures.JohnsonPfaffianNoncrossing
+  Conjectures.CaioloFerroniHosterArithmetic
+  Conjectures.CaioloFerroniHosterGraphs
+  Conjectures.CaioloFerroniHosterMatroid
+  Conjectures.CaioloFerroniHosterSubspaces
+  Conjectures.CaioloFerroniHosterFlags
+  Conjectures.CaioloFerroniHosterFlagPolynomialsBasic
+  Conjectures.CaioloFerroniHosterFlagPolynomials
+  Conjectures.CaioloFerroniHosterCertificate
+  Conjectures.CaioloFerroniHoster
   Conjectures.JuhnkeAlternating
   Conjectures.JuhnkeCompositions
   Conjectures.JuhnkeConjecture

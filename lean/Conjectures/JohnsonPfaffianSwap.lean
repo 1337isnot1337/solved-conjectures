@@ -34,7 +34,7 @@ theorem swapEdge_ordered (i : ℕ) (e : ℕ × ℕ) (he : e.1<e.2) :
     have heq := swapVertex_injective i hh
     omega
   unfold swapEdge
-  simp only [Prod.fst,Prod.snd]
+  dsimp only
   by_cases h : swapVertex i e.1 ≤ swapVertex i e.2
   · rw [min_eq_left h,max_eq_right h]; omega
   · have hh : swapVertex i e.2 ≤ swapVertex i e.1 := le_of_not_ge h
@@ -70,7 +70,7 @@ theorem swapped_matching_exists (u i : ℕ) (hi : i+1<2*u) (M : List (ℕ × ℕ
 
 theorem swapEdge_involutive (i : ℕ) (e : ℕ × ℕ) (he : e.1<e.2) : swapEdge i (swapEdge i e) = e := by
   unfold swapEdge
-  simp only [Prod.fst,Prod.snd]
+  dsimp only
   by_cases h : swapVertex i e.1 ≤ swapVertex i e.2
   · rw [min_eq_left h,max_eq_right h,swapVertex_involutive,swapVertex_involutive]
     simp [min_eq_left he.le,max_eq_right he.le]
@@ -146,7 +146,7 @@ theorem swapEdge_shared_other (i : ℕ) (e : ℕ × ℕ) (he : e.1<e.2)
     (hi : e.1=i ∨ e.2=i) (hn : e ≠ (i,i+1)) :
     swapEdge i e ≠ e ∧ ∃ v, v ∈ ([e.1,e.2] : List ℕ) ∧ v ∈ [(swapEdge i e).1,(swapEdge i e).2] := by
   rcases e with ⟨a,b⟩
-  simp only [Prod.fst,Prod.snd] at he hi hn
+  dsimp only at he hi hn
   rcases hi with h | h
   · subst a
     have hb : i+1<b := by

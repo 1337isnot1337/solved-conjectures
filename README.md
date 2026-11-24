@@ -11,7 +11,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | Problem | Lean verification status | Problem | Lean verification status |
 | :--- | :---: | :--- | :---: |
 | **1.** [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ | **75.** [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/) | ⬜ |
-| **2.** [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | ⬜ | **75.** [Rowland–Sistos Barrón conjecture](results/rowland-sistos-barron/) | ⬜ |
+| **2.** [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | ⬜ | **75.** [Rowland–Sistos Barrón conjecture](results/rowland-sistos-barron/) | ✅ |
 | **2.** [Nuttall's conjecture](results/nuttall-cumulants/) | ⬜ | **75.** [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](results/stern-half-plane/) | ⬜ |
 | **4.** [Brown–Mol's conjecture](results/brown-mol/) | ✅ | **79.** [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | ⬜ |
 | **4.** [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ | **79.** [González D’León–Wachs’s complete-graph specialization question](results/gonzalez-dleon-wachs-complete-graphs/) | ⬜ |
@@ -21,8 +21,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **8.** [Pomerance–Sárközy’s fluctuation conjecture](results/pomerance-sarkozy-fluctuations/) | ⬜ | **83.** [Sobolewski–Ulas’s binary-partition exception regularity conjecture](results/sobolewski-ulas-exception-regularity/) | ⬜ |
 | **8.** [Ma–Tang’s random subset-sum threshold conjecture](results/ma-tang-random-subset-sums/) | ⬜ | **83.** [Gawron–Ulas’s partition-sign nonperiodicity conjecture](results/gawron-ulas-partition-signs/) | ⬜ |
 | **8.** [Féray’s conjugate-power word-measure conjectures](results/feray-conjugate-power-word/) | ⬜ | **83.** [Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture](results/gawron-miska-ulas-thue-morse-sign-density/) | ⬜ |
-| **12.** [Caiolo–Ferroni–Hoster conjecture](results/caiolo-ferroni-hoster/) | ⬜ | **87.** [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture](results/separable-derangements-limit/) | ⬜ |
-| **12.** [Johnson's conjecture](results/johnson-pfaffian/) | 🟡 | **87.** [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture](results/separable-derangements-asymptotic/) | ⬜ |
+| **12.** [Caiolo–Ferroni–Hoster conjecture](results/caiolo-ferroni-hoster/) | ✅ | **87.** [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture](results/separable-derangements-limit/) | ⬜ |
+| **12.** [Johnson's conjecture](results/johnson-pfaffian/) | ✅ | **87.** [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture](results/separable-derangements-asymptotic/) | ⬜ |
 | **12.** [Chen–Khare–Sahi's conjecture](results/chen-khare-sahi-macdonald/) | 🟡 | **87.** [Kovalev’s square-root Taylor-section zero-free conjecture](results/kovalev-zero-free/) | ⬜ |
 | **12.** [Dospolova–Germanskov–Zaporozhets's conjecture](results/dospolova-germanskov-zaporozhets/) | 🟡 | **87.** [Ćurgus–Mascioni’s Fréchet root-matching extremizer question](results/curgus-mascioni-frechet/) | ⬜ |
 | **12.** [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ | **91.** [Burstein’s A218225 enumeration conjecture](results/burstein-a218225-enumeration/) | ⬜ |
@@ -83,7 +83,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **71.** [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ⬜ | **145.** [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |
 | **71.** [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/) | ⬜ | **145.** [Nine lonely runners, unique equality case](results/tight-eight-speeds/) | 🟢 |
 | **71.** [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results/athanasiadis-chapoton-transmuted-m/) | ⬜ | **145.** [Eight lonely runners, all equality cases](results/tight-seven-speeds/) | 🟢 |
-| **71.** [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ⬜ | **145.** [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
+| **71.** [Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture](results/gessel-zhuang-pinnacle-gamma/) | ✅ | **145.** [Tight six-speed sets and seven-coordinate critical subtori](results/tight-six-speeds/) | 🟢 |
 | **75.** [Sokal’s Apéry moment threshold](results/sokal-apery-moment-threshold/) | ⬜ |  |  |
 
 Read down the left pair of columns, then down the right pair. Numbers are approximate editorial importance ranks based on mathematical significance, breadth, and consequences, not recency or Lean status. Equal numbers indicate no clear distinction in importance; tied ranks use competition ranking (1, 2, 2, 4).

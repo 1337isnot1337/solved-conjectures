@@ -1,5 +1,27 @@
 # Full formalization campaign
 
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+`GesselZhuang.conjecture_7_3` and `GesselZhuang.conjecture_7_2` prove the complete existing result for the actual finite permutation sums, with exponent inverse descents plus one and gamma center `(N+1)/2`. `pinnacle_gamma_expansion` exposes the coefficients directly. The [source audit](../results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md) checks all labels, statistics, quantifiers, and boundary conventions against the primary article. The history equivalence and polynomial enumeration are proved, as are every root and gamma-factorization input. The separate inverse-peak Conjecture 7.1 is not asserted.
+
+## Rowland–Sistos Barrón conjecture
+
+`RowlandSistosBarron.rowland_sistos_barron_counterexample` proves the full recorded counterexample using the literal integer sequence and its minimum tail-recurrence ranks. The exponential-polynomial independence and minimal annihilator, all coefficient cancellations and their exact counts, and the unbounded square obstruction are proved. The [statement audit](../results/rowland-sistos-barron/LEAN_STATUS.md) maps each mathematical object to Lean and retains the source terminology qualification. All 17 project modules passed the three target verification gates; earlier partial records do not enlarge this scope.
+
+## Johnson's conjecture
+
+`JohnsonPfaffian.johnson_conjecture_fin` proves the full Conjecture 7.1 for an arbitrary ordered `Fin (2*u)` tuple and every literal perfect matching. The new circular-factor normalization, adjacent-edge induction, terminating uncrossing and exact distance-kernel bridge discharge the former general-order gap. `CircularData.matching_bound` also proves the stronger circular interval-product theorem without an uncrossing assumption. The [entry audit](../results/johnson-pfaffian/LEAN-AUDIT.md) maps the proof to the recorded argument and preserves all original attribution and priority limits.
+
+The complete thirty-module closure passed strict compilation, all-owned transitive axiom audit and stock-kernel replay. See the [source-hashed receipt](verification/johnson-20261124/receipt.json). Earlier partial checkpoints below remain historical records.
+
+## Caiolo–Ferroni–Hoster conjecture
+
+`CaioloFerroniHoster.counterexample_family` checks the complete rank-five
+construction for every prime power q ≥ 17. It proves the quartic dual Chow
+polynomial is positive on the reals and the quintic dual right augmented
+polynomial has one simple real root, −1. Both fail to split over the reals.
+[Lean theorem](../lean/Conjectures/CaioloFerroniHoster.lean) · [Review and replay](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 
 `Juhnke.juhnke_conjecture` proves both original conclusions for the actual path counts in every dimension `d ≥ 2`. The representation is explicitly equivalent to ordered lists of positive east/north steps, with original start `(2,1)` and both original endpoints. The run decomposition, exact positive-composition counts, optional-cut polynomial, coefficient inequalities, translation, and unimodality are all proved. The 18-module closure contains no assumed enumeration or analytic theorem.

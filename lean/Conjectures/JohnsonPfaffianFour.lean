@@ -1,6 +1,14 @@
 import Mathlib.Analysis.Convex.Function
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Tactic
+import Mathlib.Tactic.Convert
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.IntervalCases
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.SplitIfs
+import Mathlib.Tactic.Tauto
 open Set
 namespace JohnsonPfaffian
 

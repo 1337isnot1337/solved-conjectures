@@ -1,6 +1,6 @@
 # Johnson's conjecture
 
-**Lean status:** partial
+**Lean status:** complete for the full conjecture and the circular interval-product theorem
 
 Complete proposed proof of Conjecture 7.1 in William Johnson's *Pfaffian Positivity for Convex Kernels and Optimal Matching Bounds*, [arXiv:2610.24371v1](https://arxiv.org/abs/2610.24371v1). Three separate internal mathematical reviews passed. The current-source and seven-archive priority audit found no earlier complete resolution within its documented scope. The result remains unrefereed.
 
@@ -22,4 +22,4 @@ python3 results/johnson-pfaffian/verify.py
 
 Only Python's standard library is required. The checker tests exact algebraic identities, signs, and indexing conventions. Its finite cases are not premises of the universal proof.
 
-Johnson's endpoint inequality, original kernel uncrossing reduction, rainbow bound, and Albouy–Moeckel nonvanishing result are credited explicitly. This package counts the separately stated all-matching conjecture once. Lean verifies the actual signed matching-sum Pfaffian and its four-node bound, the all-order source kernel interval decomposition, complement and diagonal scaling, cyclic Pfaffian invariance, the interval pigeonhole lemma, the local uncrossing step, and the commutative-ring twin-row Pfaffian deletion identity, and coefficientwise nonnegativity of the interval Pfaffian polynomial in every even order. The source endpoint inequality is formalized for every positive even order; the general matching induction remains unformalized, and the full repository gate is pending.
+Johnson's endpoint inequality, original kernel uncrossing reduction, rainbow bound, and Albouy–Moeckel nonvanishing result are credited explicitly. This package counts the separately stated all-matching conjecture once. The [complete Lean proof](../../lean/Conjectures/JohnsonPfaffian.lean) covers every even order, every source kernel, and every perfect matching, including the general circular interval-product class. The full thirty-module closure passed strict source compilation, the audit of every owned declaration, and stock-kernel replay. See the [statement and proof audit](LEAN-AUDIT.md) and [exact verification receipt](../../docs/verification/johnson-20261124/receipt.json). Repository-wide and hosted gates remain separately tracked.

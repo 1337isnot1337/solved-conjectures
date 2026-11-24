@@ -1,0 +1,69 @@
+name: Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'lean/Conjectures/GesselZhuang*.lean'
+      - 'lean/Conjectures/ChowCone.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-gessel-zhuang.yml'
+  push:
+    branches: [research, main]
+    paths:
+      - 'lean/Conjectures/GesselZhuang*.lean'
+      - 'lean/Conjectures/ChowCone.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-gessel-zhuang.yml'
+      - 'lean/lean-toolchain'
+      - 'lean/lake-manifest.json'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Strict source, all-owned audit, and stock-kernel replay
+        run: >-
+          python3 scripts/verify_lean_target.py
+          --root Conjectures.GesselZhuangTheorem
+          --require GesselZhuang.conjecture_7_3
+          --require GesselZhuang.conjecture_7_2
+          --require GesselZhuang.pinnacle_gamma_expansion
+          --require GesselZhuang.pinnaclePolynomial_succ_eq_history_sum
+          --require GesselZhuang.peakPolynomial_succ_eq_history_sum
+          --require GesselZhuang.closedHistoryPermutationEquiv
+          --require GesselZhuang.TotalHistory.blocks_injective
+          --require GesselZhuang.blocks_surjective
+          --require GesselZhuang.History.word_pinnacles
+          --require GesselZhuang.History.word_peakCount
+          --require GesselZhuang.History.word_inverseDescents
+          --require GesselZhuang.pathPolynomial_eq_historyPolynomial
+          --require GesselZhuang.gammaPositive_of_splits
+          --require GesselZhuang.pathPolynomial_splits
+          --require GesselZhuang.pathPolynomial_symmetric
+          --require GesselZhuang.mem_wordPinnacles_iff
+          --require GesselZhuang.wordPeakCount_eq_card_wordPinnacles
+          --out .candidate-artifacts/gessel-zhuang
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gessel-zhuang
+          path: .candidate-artifacts/gessel-zhuang/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
