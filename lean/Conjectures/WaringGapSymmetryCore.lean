@@ -98,7 +98,7 @@ theorem strict_defect_of_double_gap (s : Nat → Bool) (F t : Nat)
     F (F+1) (by omega) hh
   rw [prefixSum_one_extra] at h
   have ht' : t<F+1 := by omega
-  simp only [ht', if_true, Nat.sub_self] at h
+  simp only [ht', ite_true, Nat.sub_self] at h
   change (F+1+1)+0 ≤ prefixSum (gapBit s) (F+1) + prefixSum (gapBit s) (F+1) at h
   omega
 
