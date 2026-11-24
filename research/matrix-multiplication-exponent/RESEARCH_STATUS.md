@@ -66,7 +66,7 @@ AVZ Definition 5.3 and Theorem 5.4 concern a specified formal system of degenera
 
 Adding parties while preserving full normalization is a valid deduction outside that fixed three-party formal language. The normalization proof here makes that step concrete. Applying multi-party polynomial recurrences alone still falls under Zhou's higher-order analysis. The proposed elimination of the auxiliary parties has not produced a new universal perimeter inequality.
 
-The equilateral Euclidean triangle of side $3/4$ has scalar unit charge one and perimeter $9/4$. Placing auxiliaries in its convex hull preserves the full scalar unit charge. The construction passes the midpoint, joint-retraction, crossing, copositivity, and minimum-cut constraints recorded in these notes. This proves insufficiency of those tested constraints. It does not prove that this scalar model extends to a genuine spectral point.
+The equilateral Euclidean triangle of side $3/4$ has scalar unit charge one and perimeter $9/4$. Placing auxiliaries in its convex hull preserves the full scalar unit charge. The construction passes midpoint, joint-retraction, crossing, and copositivity constraints, all graph minimum-cut tests, and the special hypergraph terminal tests proved for it. This proves insufficiency of those tested constraints. It does not prove that this scalar model extends to a genuine spectral point.
 
 Ordinary Euclidean realizability has no normalization content. Every nonzero metric triangle is a positive multiple of a singleton quantum wire triple. Multiplying its distances also multiplies its logarithmic full-unit charge. For example, the equilateral $3/4$ triple is $9/8$ times the uniform quantum $2/3$ triple; this rescaling alone does not retain unit charge one.
 
