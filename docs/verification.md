@@ -4,6 +4,19 @@
 
 Run `python3 research/complex-bss-p-vs-np/verify_obstructions.py` from the repository root with SymPy installed. The checker validates symbolic Ryser identities for sizes 1–3, interpolation counterexamples, the single-triangle quotient norm, selected jet-masking identities, and two-by-two matching/strategy examples. Its [review record](../research/complex-bss-p-vs-np/REVIEW.md) separates these finite algebraic checks from the arbitrary-size written arguments and the imported circuit lower bound. It does not prove `P_C != NP_C`. No Lean source changed and no local Lean verification of these deductions is claimed.
 
+## Boolean Hamiltonicity research lemmas
+
+Run these standard-library checks from the repository root:
+
+```bash
+python3 research/boolean-hamiltonicity/verify_layers.py
+python3 research/boolean-hamiltonicity/verify_invariants.py
+```
+
+The first compares truth-table Möbius coefficients with cycle-family inclusion-exclusion, checks the two-extra-vertex restriction, and checks the sparse and monotone cutoff predicates and mixed-radix logspace algorithm on all graphs through four vertices. First-overlap counts are checked through six vertices. The second checks exact rational and finite-field ranks, gate bounds and every assignment of the Hamiltonicity module gadget through four modules. [Scope and review](../research/boolean-hamiltonicity/REVIEW.md) · [Local receipt](../research/boolean-hamiltonicity/CHECKS.json) · [Dedicated workflow](../.github/workflows/boolean-hamiltonicity.yml).
+
+The general auxiliary lemmas have written proofs. The research target, an unrestricted superpolynomial Boolean circuit lower bound or uniform time lower bound, remains unproved. These scripts do not verify P != NP, and no Lean verification is claimed.
+
 ## Weighted counting for bounded-occurrence 3-CNF (conditional research note)
 
 Run `python3 research/vp-vnp-bounded-occurrence-3cnf/verify_reduction.py` from the repository root. The verifier checks all primary assignments for n=3,4, plus clause width and maximum-three-occurrence properties through n=8. The proof of the projection is in [the note](../research/vp-vnp-bounded-occurrence-3cnf/README.md). The circuit lower bound is conditional on Anthropic's November 23, 2026 preprint and is **not** proved by the script or Lean. This note is not part of the solved-conjecture count.

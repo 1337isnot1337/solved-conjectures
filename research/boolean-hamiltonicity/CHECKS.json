@@ -1,0 +1,50 @@
+{
+  "status": "all local finite checks passed; target lower bound unproved",
+  "checked_at_utc": "2026-11-23T23:59:18.679514+00:00",
+  "python_version": "3.12.14",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "research/boolean-hamiltonicity/verify_layers.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"layers\": [\n    {\n      \"vertices\": 2,\n      \"graphs\": 4,\n      \"nonzero_contains_coefficients_by_degree\": {\n        \"2\": 1\n      }\n    },\n    {\n      \"vertices\": 3,\n      \"graphs\": 64,\n      \"nonzero_contains_coefficients_by_degree\": {\n        \"3\": 2,\n        \"6\": 1\n      }\n    },\n    {\n      \"vertices\": 4,\n      \"graphs\": 4096,\n      \"nonzero_contains_coefficients_by_degree\": {\n        \"4\": 6,\n        \"7\": 12,\n        \"8\": 3,\n        \"9\": 8,\n        \"10\": 12,\n        \"11\": 12,\n        \"12\": 1\n      }\n    }\n  ],\n  \"first_overlap\": [\n    {\n      \"vertices\": 3,\n      \"first_overlap_monomials\": 1\n    },\n    {\n      \"vertices\": 4,\n      \"first_overlap_monomials\": 12\n    },\n    {\n      \"vertices\": 5,\n      \"first_overlap_monomials\": 120\n    },\n    {\n      \"vertices\": 6,\n      \"first_overlap_monomials\": 1200\n    }\n  ],\n  \"restriction\": [\n    {\n      \"vertices\": 2,\n      \"image_vertices\": 4,\n      \"restrictions_checked\": 4\n    },\n    {\n      \"vertices\": 3,\n      \"image_vertices\": 5,\n      \"restrictions_checked\": 64\n    },\n    {\n      \"vertices\": 4,\n      \"image_vertices\": 6,\n      \"restrictions_checked\": 4096\n    }\n  ],\n  \"sparse_prefix\": [\n    {\n      \"vertices\": 2,\n      \"c\": 0,\n      \"cutoff_excess\": 0,\n      \"graphs\": 4,\n      \"monotone_cutoff_cover_pairs\": 4\n    },\n    {\n      \"vertices\": 2,\n      \"c\": 1,\n      \"cutoff_excess\": 1,\n      \"graphs\": 4,\n      \"monotone_cutoff_cover_pairs\": 4\n    },\n    {\n      \"vertices\": 2,\n      \"c\": 2,\n      \"cutoff_excess\": 2,\n      \"graphs\": 4,\n      \"monotone_cutoff_cover_pairs\": 4\n    },\n    {\n      \"vertices\": 3,\n      \"c\": 0,\n      \"cutoff_excess\": 0,\n      \"graphs\": 64,\n      \"monotone_cutoff_cover_pairs\": 192\n    },\n    {\n      \"vertices\": 3,\n      \"c\": 1,\n      \"cutoff_excess\": 1,\n      \"graphs\": 64,\n      \"monotone_cutoff_cover_pairs\": 192\n    },\n    {\n      \"vertices\": 3,\n      \"c\": 2,\n      \"cutoff_excess\": 3,\n      \"graphs\": 64,\n      \"monotone_cutoff_cover_pairs\": 192\n    },\n    {\n      \"vertices\": 4,\n      \"c\": 0,\n      \"cutoff_excess\": 0,\n      \"graphs\": 4096,\n      \"monotone_cutoff_cover_pairs\": 24576\n    },\n    {\n      \"vertices\": 4,\n      \"c\": 1,\n      \"cutoff_excess\": 2,\n      \"graphs\": 4096,\n      \"monotone_cutoff_cover_pairs\": 24576\n    },\n    {\n      \"vertices\": 4,\n      \"c\": 2,\n      \"cutoff_excess\": 4,\n      \"graphs\": 4096,\n      \"monotone_cutoff_cover_pairs\": 24576\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/boolean-hamiltonicity/verify_invariants.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: tensor rank, coefficient rank, and coefficient counts for k=1..4\nPASS: additive rank counterexample has ranks 4, 4, 16\nPASS: gate inequalities on all two-variable pairs and 64 four-variable pairs\nPASS: Hamiltonicity gadget, all 340 assignments for k=1..4\nAll finite invariant checks passed. No P versus NP claim is verified.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_readme_verification.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Checked 68 README verification emojis.\n",
+      "stderr": ""
+    }
+  ],
+  "sha256": {
+    "research/boolean-hamiltonicity/ALL_CUTS.md": "1de8c423c52cda5a17035948b444957b94b6cb299a611ea1b3ad53775ba080d6",
+    "research/boolean-hamiltonicity/ATTACKS.md": "88a5950436d77d595eb592a318b689ce4a6dcc54dbcfe34fb3be6e7a08cb9b84",
+    "research/boolean-hamiltonicity/INVARIANTS.md": "c155d80096e77c39ce43a3ca9b61b107b9ecef715a07b834061b4da3a0b6d094",
+    "research/boolean-hamiltonicity/LAYERS.md": "a563c81a3339b25b357df38891068e02de354c47fcd3892b7f6c7d5a8605020e",
+    "research/boolean-hamiltonicity/README.md": "a0bf5e830c1929151061c05e74c6ea56d5b4fa94574e617a67b6f99aae985fcc",
+    "research/boolean-hamiltonicity/REVIEW.md": "79962fe0120a6eaa653be0bdc8abdc0bd2a6d223c2bbf09c75ed9c96b541dc8a",
+    "research/boolean-hamiltonicity/SOURCES.md": "493310dad3603e49b61f86ae04b93eb1ea517098345b6ce5445fae6572b22dab",
+    "research/boolean-hamiltonicity/SUPPORT_QUOTIENT.md": "7bbed3baf4f3625af9226b2d6bbde69b1855ee1e6297d20a358337aeef04773a",
+    "research/boolean-hamiltonicity/verify_invariants.py": "822dda647ea1b6ec8eebc11e4458dd10c73ef054fd46f37d37adf7aaf4d27c4f",
+    "research/boolean-hamiltonicity/verify_layers.py": "3088023f1d923d5a7ed090079ea66b21228f7c0e78ed8e11395a57a0366062e1"
+  },
+  "readme_sha256": "cc236b5c425780d1fb88ad50afee69c2ad9319c0f46e2534cd6c5a70c9f2c8f6",
+  "verification_scope": "Exact finite regression checks and internal written review only. No Lean build and no verification of P != NP.",
+  "metadata_note": "After the finite checks, SOURCES.md was clarified to identify Hrubes\u2019s paper-specific size-hardness definition; no proof or verifier changed in that clarification.",
+  "readme_rechecked_after_main_integration_at_utc": "2026-11-24T00:01:50.284989+00:00"
+}
