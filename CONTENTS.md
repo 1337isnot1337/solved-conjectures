@@ -314,6 +314,7 @@ Both complete arguments passed independent internal mathematical review. They ar
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/PROOF.md) | For every triple of positive integer differences, the extremal density equals the circle rotation bound. One pair sum is a period of an optimal set. | ☑ | [Proof](results/haralambis-three-differences/PROOF.md) and [certificate checks](results/haralambis-three-differences/verify.py) |
 | [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | Proves strong completeness of the two-ray set across the remaining rational ratios that are not powers of two, with exact strong-completeness obstructions. | Not formalized | [Proof](results/hegyvari-floor-doubling/PROOF.md) · [Audit](results/hegyvari-floor-doubling/AUDIT.md) |
 | [Revised Tan–Zhou conjecture](results/revised-tan-zhou-luroth/) | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. | Not formalized | [Proof](results/revised-tan-zhou-luroth/PROOF.md) · [Audit](results/revised-tan-zhou-luroth/AUDIT.md) |
+| [Gravgaard–Lee’s mixed Lüroth sumset conjecture](results/gravgaard-lee-mixed-luroth/) | Proves that the mixed bounded-digit Lüroth sum represents every residue modulo one, with an explicit ordinary interval in the sum. | Not formalized | [Proof](results/gravgaard-lee-mixed-luroth/PROOF.md) · [Audit](results/gravgaard-lee-mixed-luroth/AUDIT.md) |
 
 ## Lonely runners
 

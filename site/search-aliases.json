@@ -114,6 +114,7 @@
   "hegyvari-floor-doubling": ["Norbert Hegyvari", "Erdos 354", "floor doubling", "strong completeness", "rational ratios", "Kohlmeyer Kruer"],
   "kovalev-lipschitz-clustering": ["Leonid Kovalev", "Lipschitz clustering", "finite subset spaces", "Hausdorff distance", "single linkage", "Lipschitz retraction", "Wasserstein barycenter"],
   "revised-tan-zhou-luroth": ["Tan Zhou conjecture", "Lee", "Luroth expansions", "Lüroth convergents", "Hausdorff dimension", "lower order", "Mass Transference Principle"],
+  "gravgaard-lee-mixed-luroth": ["Gravgaard Lee conjecture", "Luroth expansions", "Lüroth digits", "modulo one", "Cantor set sum", "graph-directed interval certificate"],
   "haralambis-three-differences": [
     "Haralambis conjecture",
     "three forbidden differences",

@@ -81,6 +81,7 @@ proofs are documented separately in the catalogue and result package.
 | Hegyvári’s conjecture | Not formalized | Proves strong completeness of the two-ray set across the remaining rational ratios that are not powers of two, with exact strong-completeness obstructions. |
 | Kovalev’s linear Lipschitz clustering questions | Not formalized | Constructs convex-hull-preserving finite-subset retractions with a dimension-free linear Lipschitz bound, uniformly for every target size. |
 | Revised Tan–Zhou conjecture | Not formalized | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. |
+| Gravgaard–Lee’s mixed Lüroth sumset conjecture | Not formalized | Proves that the mixed bounded-digit Lüroth sum represents every residue modulo one, with an explicit ordinary interval in the sum. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture | Not formalized | Proves the derangement proportion tends to zero, with every fixed diagonal count diverging in probability. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture | Not formalized | Refutes every proposed fixed power exponent by exact finite two-branch counting and saturation of the occupation loss. |
 | Fan’s interval Riesz capacity-ratio conjecture | Not formalized | Proves the full negative-exponent conjecture and the nontrivial one-dimensional Clark–Laugesen range, with equality conditions. |

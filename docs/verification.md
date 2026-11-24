@@ -759,3 +759,7 @@ From the repository root, run `c++ -std=c++17 -O2 results/stern-half-plane/check
 ## Chow type-D Eulerian exact bridge
 
 Run `python3 results/chow-type-d/check.py` from the repository root. It certifies every strict transition into degree 128 using exact dyadic signs. The [analytic proof](../results/chow-type-d/PROOF.md) handles all subsequent transitions.
+
+## Gravgaard–Lee mixed Lüroth interval certificate
+
+Run `python3 results/gravgaard-lee-mixed-luroth/check.py` from the repository root. The checker verifies the fifteen containments with exact rational arithmetic. The [proof](../results/gravgaard-lee-mixed-luroth/PROOF.md) establishes the graph-directed infinite expansions.

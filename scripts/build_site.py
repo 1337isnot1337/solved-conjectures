@@ -71,6 +71,7 @@ STATUS_LABEL_SLUGS = {
     "Hegyvári’s conjecture": "hegyvari-floor-doubling",
     "Kovalev’s linear Lipschitz clustering questions": "kovalev-lipschitz-clustering",
     "Revised Tan–Zhou conjecture": "revised-tan-zhou-luroth",
+    "Gravgaard–Lee’s mixed Lüroth sumset conjecture": "gravgaard-lee-mixed-luroth",
     "Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture": "separable-derangements-limit",
     "Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture": "separable-derangements-asymptotic",
     "Fan’s interval Riesz capacity-ratio conjecture": "fan-interval-riesz-capacity",
