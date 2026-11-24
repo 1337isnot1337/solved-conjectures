@@ -209,4 +209,4 @@ In the Euclidean convex-hull countermodel, every terminal superset `P` containin
 \qquad(\{A,B,C\}\subseteq P\subseteq V).
 ```
 
-In particular, all-party hypergraph min-cut lower bounds also leave the normalized triangle witness feasible. The cap proof does not settle terminal sets omitting at least one of the original vertices. It also does not supply values on arbitrary tensors or establish compatibility with arbitrary tensor covers.
+In particular, all-party hypergraph min-cut lower bounds also leave the normalized triangle witness feasible. The cap proof alone does not settle terminal sets omitting at least one of the original vertices. A separate [tree-terminal theorem](TREE_TERMINAL_MINCUT.md) proves the inequality for every terminal triple, and more generally for any terminal metric that embeds isometrically in a finite tree, with arbitrary ambient metric auxiliaries. Neither proof supplies values on arbitrary tensors or establishes compatibility with arbitrary tensor covers.
