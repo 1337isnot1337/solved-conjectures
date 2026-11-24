@@ -3,8 +3,18 @@
 import verify_lean_candidate as gate
 
 TASK = "sagan-wilson-plactic-mode"
-MODULES = ["Conjectures.SaganWilsonPlacticMode"]
+MODULES = ["Conjectures.SaganWilsonPlacticMode", "Conjectures.SaganWilsonPlacticModeDP"]
 REQUIRED = [
+    "SaganWilsonPlacticMode.validRow_weaken",
+    "SaganWilsonPlacticMode.insertRow_valid",
+    "SaganWilsonPlacticMode.insertRow_length_bounds",
+    "SaganWilsonPlacticMode.next_length_bounds",
+    "SaganWilsonPlacticMode.count_zero_of_length",
+    "SaganWilsonPlacticMode.mem_alphabet",
+    "SaganWilsonPlacticMode.next_valid",
+    "SaganWilsonPlacticMode.lookup_tabulate",
+    "SaganWilsonPlacticMode.countTrie_correct",
+    "SaganWilsonPlacticMode.countFast_correct",
     "SaganWilsonPlacticMode.insert_prependOne",
     "SaganWilsonPlacticMode.process_prependOne",
     "SaganWilsonPlacticMode.process_append",

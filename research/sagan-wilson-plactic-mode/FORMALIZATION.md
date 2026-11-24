@@ -51,3 +51,26 @@ KERNEL REPLAY PASSED
 ```
 
 No completion count or status promotion.
+
+## Verified dynamic-program extension
+
+A second module, [SaganWilsonPlacticModeDP.lean](../../lean/Conjectures/SaganWilsonPlacticModeDP.lean), proves that a finite trie of bounded weakly increasing row states computes the same count as the already verified centralizer recurrence for every alphabet size and word length. Length pruning is justified by the fact that one transition removes at most one state entry. This avoids any assumption about hook formulas; the exact large-alphabet evaluations and scalar-domain bridge still require checked certificates. Native diagnostic evaluations are not counted as proofs.
+
+Pinned core strict compile, endpoint axiom audit and stock kernel replay passed:
+
+```text
+VERIFY DP MODULE
+DP KERNEL REPLAY PASSED
+'SaganWilsonPlacticMode.validRow_weaken' does not depend on any axioms
+'SaganWilsonPlacticMode.insertRow_valid' does not depend on any axioms
+'SaganWilsonPlacticMode.insertRow_length_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SaganWilsonPlacticMode.next_length_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SaganWilsonPlacticMode.count_zero_of_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SaganWilsonPlacticMode.mem_alphabet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SaganWilsonPlacticMode.next_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SaganWilsonPlacticMode.lookup_tabulate' depends on axioms: [propext, Quot.sound]
+'SaganWilsonPlacticMode.countTrie_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SaganWilsonPlacticMode.countFast_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+dd756a15c02376d0fadeea5b72ccd153b17177dfc34072562a31d97d10da30c3  Conjectures/SaganWilsonPlacticModeDP.lean
+2026-11-24T19:25:54Z
+```
