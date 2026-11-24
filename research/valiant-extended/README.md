@@ -31,4 +31,5 @@ In the sparse construction $`m`$ can be taken to be the dimension $`M`$ of the c
 - [Variable-scale cut, first lift and application of K.6](CONTRACTION.md)
 - [Diagonal restriction in either branch for cut lists sharing vertex classes](DIAGONAL.md)
 - [An exact rank-price obstruction to the local cutting law outside contraction](LOCAL_LAW.md)
+- [A graph-tensor conversion above ordinary routing capacity and the remaining finite threshold](BIPARTITE.md)
 - [Exact finite checks](verify.py), run with `python3 research/valiant-extended/verify.py`. They test the graph and circuit identities and the cut budgets. The asymptotic implications use the written proofs.
