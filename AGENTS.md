@@ -1,3 +1,10 @@
+# Branches: research and publication
+
+- `main` is the publication branch. Put only final, reviewed material there: state the exact theorem and scope, provide its proof and applicable checks, and label its verification honestly. A final written proof need not be fully Lean verified; an unchecked draft is not final.
+- `research` is the working branch for open campaigns, candidates, draft proofs, intermediate formalizations, audits, experiments, and counterexamples that do not resolve the stated target. Fetch the latest `research` before starting and coordinate there.
+- The only permanent branches are `main` and `research`. Use a short-lived `review/<topic>` branch only when a PR is needed, usually targeting `research`; preserve unique work and keep the PR record before removing its branch. Never blanket-merge `research` into `main`. Publish a narrowly scoped, reviewed package with its landing page, index and relevant checks.
+- Migration in progress: if the flat `research` ref is not yet available, keep new work local or on an existing active review branch. Do not add research to `main` or create more branches during the cutover.
+
 # Research target selection: prioritize substantial conjectures
 
 - **Raise the bar for all new work.** The current collection has put too much effort into relatively narrow or obscure targets. Prioritize conjectures whose resolution would be recognized as a meaningful mathematical advance. Optimize for significance and breakthrough potential, **not** the number of results, ease of proof, or speed of adding README entries. A conjecture being named is necessary for the named-conjecture program but is not evidence of significance.
@@ -23,13 +30,13 @@
 
 # Formalization campaign
 
-- Work on `main`. The owner explicitly requested that all work be on `main` and other branches be removed. Preserve unique work before deleting any branch; do not create persistent side branches.
+- Develop and verify on `research`; follow the branch policy above before publishing a final proof or reviewed verification milestone to `main`.
 - The active objective is to formalize every result in the repository, including the separate corrected solitaire theorem. Keep working beyond intermediate checkpoints.
 - Preserve the mathematical statements and their quantifiers. Finite screens, conditional theorems, and executable models are useful components, but do not count them as complete formalizations of stronger claims.
 - No `sorry`, custom axioms, or native-computation axioms in accepted proofs. The only allowed transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`.
 - Unformalized published mathematical results remain explicit hypotheses of intermediate lemmas. A complete result must discharge those hypotheses.
 - Shared Lean package: `lean`; pinned toolchain and Mathlib manifest are authoritative. Run `scripts/verify_lean.sh` to rebuild, audit project axioms, and replay the kernel. Add new proof modules to the root import, audit requirements, and kernel-recheck script.
-- Update `docs/lean-status.md` and `docs/formalization.md` at meaningful checked milestones. Push coherent verified checkpoints to `main`; report local and hosted validation separately.
+- Update `docs/lean-status.md` and `docs/formalization.md` at meaningful checked milestones. Push work-in-progress checkpoints to `research`; publish reviewed final milestones to `main`. Report local and hosted validation separately.
 
 ## Collection layout
 
