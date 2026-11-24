@@ -1,3 +1,23 @@
+import Conjectures.FanTringaliBasic
+import Conjectures.FanTringaliGadget
+import Conjectures.FanTringaliSlices
+import Conjectures.FanTringaliProducts
+import Conjectures.FanTringaliCoordinates
+import Conjectures.FanTringaliStack
+import Conjectures.FanTringaliGraph
+import Conjectures.FanTringaliFactorizations
+import Conjectures.FanTringaliGraphLengths
+import Conjectures.FanTringaliBlocks
+import Conjectures.FanTringaliRadix
+import Conjectures.FanTringaliRadixTransfer
+import Conjectures.FanTringaliNatural
+import Conjectures.FanTringaliNaturalSystem
+import Conjectures.FanTringaliMonoidBasic
+import Conjectures.FanTringaliMonoidNormalization
+import Conjectures.FanTringaliMonoidTransfer
+import Conjectures.FanTringaliMonoid
+import Conjectures.CoulangeonLazzariniShells
+import Conjectures.CoulangeonLazzariniRealLattice
 import Conjectures.GravgaardLeeMixedLuroth
 import Conjectures.GravgaardLeeLargeLuroth
 import Conjectures.GravgaardLeeUpperLowerBasic
@@ -1175,3 +1195,8 @@ import Conjectures.HornakOneArm
 import Conjectures.HornakTwoArm
 import Conjectures.AgnosticVC
 import Conjectures.SteinkeZakynthinou
+
+import Conjectures.SteinerbergerGreedySequence
+import Conjectures.SteinerbergerGreedyFourier
+import Conjectures.SteinerbergerGreedyGrowth
+import Conjectures.SteinerbergerGreedy

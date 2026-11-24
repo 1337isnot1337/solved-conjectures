@@ -4,6 +4,30 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.FanTringaliBasic
+  Conjectures.FanTringaliGadget
+  Conjectures.FanTringaliSlices
+  Conjectures.FanTringaliProducts
+  Conjectures.FanTringaliCoordinates
+  Conjectures.FanTringaliStack
+  Conjectures.FanTringaliGraph
+  Conjectures.FanTringaliFactorizations
+  Conjectures.FanTringaliGraphLengths
+  Conjectures.FanTringaliBlocks
+  Conjectures.FanTringaliRadix
+  Conjectures.FanTringaliRadixTransfer
+  Conjectures.FanTringaliNatural
+  Conjectures.FanTringaliNaturalSystem
+  Conjectures.FanTringaliMonoidBasic
+  Conjectures.FanTringaliMonoidNormalization
+  Conjectures.FanTringaliMonoidTransfer
+  Conjectures.FanTringaliMonoid
+  Conjectures.SteinerbergerGreedySequence
+  Conjectures.SteinerbergerGreedyFourier
+  Conjectures.SteinerbergerGreedyGrowth
+  Conjectures.SteinerbergerGreedy
+  Conjectures.CoulangeonLazzariniShells
+  Conjectures.CoulangeonLazzariniRealLattice
   Conjectures.GravgaardLeeMixedLuroth
   Conjectures.GravgaardLeeLargeLuroth
   Conjectures.GravgaardLeeUpperLowerBasic

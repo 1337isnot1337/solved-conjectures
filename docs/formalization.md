@@ -4,6 +4,21 @@
 
 Complete for original Conjecture 2.6 and the stronger exact interval equality, for every k≥2. Lean constructs actual infinite expansions, proves the finite zero-tail repair, and includes the threshold-two boundary. The [scope report](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) and [independent review](../results/gravgaard-lee-upper-lower-luroth/LEAN_REVIEW.md) record the correspondence. The [complete receipt](verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json) covers 12 strict source builds, 664 declarations, 475 theorems, 173 private declarations, 29 required endpoints, and exact stock replay. Only the three allowed standard axioms occur. Aggregate verification and public deployment remain separate in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). The two reused previously completed Lüroth modules are not recounted. The mixed bounded-digit dependency retains its original proof already published through [PR #547](https://github.com/1337isnot1337/solved-conjectures/pull/547).
 
+## Steinerberger’s greedy-energy Fourier conjecture
+
+The [complete Lean disproof](../results/steinerberger-greedy-fourier/FORMALIZATION.md) constructs one actual infinite sequence satisfying the exact Bernoulli-kernel minimization rule. Its actual truncated harmonic-weighted sum of absolute Fourier magnitudes violates every eventual logarithmic bound. The proof establishes greedy admissibility directly and does not assume a characterization of minimizers.
+
+The [independent review](../results/steinerberger-greedy-fourier/LEAN_REVIEW.md) checks the original source, all sequence and Fourier definitions, the truncation and injectivity of the selected frequencies, and the final asymptotic negation. The four-module closure has 113 owned declarations, including 96 theorems and three private declarations, and 15 required endpoints. The [verification receipt](../results/steinerberger-greedy-fourier/verification/receipt.json) records fresh strict builds, the complete axiom audit and stock-kernel replay. Only the original conjecture is marked complete; the written sharp-constant and all-tie-breaking supplements remain unformalized. The recorded argument and prior dyadic results retain their attribution and priority qualification.
+
+## Coulangeon–Lazzarini’s two-shell conjecture
+
+[Lean refutes Conjecture 21 in dimension ten](../lean/Conjectures/CoulangeonLazzariniRealLattice.lean).
+It verifies the full-rank discrete lattice in real space, identifies its first two
+positive squared norms as 4 and 8, and checks the two spherical moment
+identities and the failure at squared norm 9. The [integer-coordinate proof](../lean/Conjectures/CoulangeonLazzariniShells.lean)
+also verifies the arbitrary-delay parity-lattice family.
+The orthogonally indecomposable family and height results remain open in Lean.
+
 ## Gravgaard–Lee’s mixed Lüroth sumset
 
 [Lean proves Conjecture 2.2 and the interval from the written proof](../lean/Conjectures/GravgaardLeeMixedLuroth.lean).
@@ -1670,3 +1685,9 @@ records 25 declarations, 22 theorems, eight private declarations, and the
 standard three-axiom whitelist. The root result is a full disproof of the
 universal source conjecture; the additional positive-beta and all-slope
 families remain unformalized. The combined repository gate remains pending.
+
+## Fan–Tringali’s power-monoid length-set conjecture
+
+Complete Lean verification of the original 2018 conjecture: every finite nonempty set of integers at least two is realized as the entire atom-length set in both the ordinary and restricted finitary power monoids of every Dedekind-finite monoid with infinitely many distinct positive powers. No ambient commutativity or cancellation is assumed. [`finite_spectrum_power_monoids`](../lean/Conjectures/FanTringaliMonoid.lean) proves the full transfer, and [`natural_length_system`](../lean/Conjectures/FanTringaliNaturalSystem.lean) proves the exact reduced-natural-number system.
+
+All 18 frozen modules passed strict source builds, the all-owned/private axiom audit (432 declarations, 350 theorems, three private declarations, 28 required endpoints), and stock kernel replay. [Scope and reproduction](../results/fan-tringali-power-monoid-lengths/LEAN.md), [statement review](../results/fan-tringali-power-monoid-lengths/LEAN_REVIEW.md), and [complete receipt](verification/lean-fan-tringali-complete-20261124-162051/receipt.json). The separate survey irreducible formulation, prescribed multiplicities and relative cancellativity remain unformalized. The scoped pass does not claim an aggregate repository pass or a current public deployment; those gates are reported separately, including the dependency-cache blocker in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). This is one completed existing entry.

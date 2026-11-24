@@ -10,7 +10,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 | Problem | Lean verification status | Problem | Lean verification status |
 | :--- | :---: | :--- | :---: |
-| **1.** [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ | **75.** [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/) | ⬜ |
+| **1.** [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ | **75.** [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/) | ✅ |
 | **2.** [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | ⬜ | **75.** [Rowland–Sistos Barrón conjecture](results/rowland-sistos-barron/) | ✅ |
 | **2.** [Nuttall's conjecture](results/nuttall-cumulants/) | ⬜ | **75.** [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](results/stern-half-plane/) | ⬜ |
 | **4.** [Brown–Mol's conjecture](results/brown-mol/) | ✅ | **79.** [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | ⬜ |
@@ -49,7 +49,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **33.** [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ | **111.** [Horňák–Woźniak conjecture](results/hornak-wozniak/) | 🟡 |
 | **38.** [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ | **111.** [López Pouso–Segura's node conjecture](results/lopez-pouso-segura-quadrature/) | 🟡 |
 | **38.** [Malek's conjecture](results/malek-subpermanent/) | ⬜ | **111.** [Kauers–Koutschan recurrence conjecture](results/kauers-koutschan-recurrence/) | ⬜ |
-| **38.** [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ⬜ | **111.** [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | ⬜ |
+| **38.** [Coulangeon–Lazzarini’s two-shell conjecture](results/coulangeon-lazzarini-two-shells/) | ✅ | **111.** [Ekhad–Zeilberger’s most unfair bet conjecture](results/ekhad-zeilberger-unfair-bet/) | ⬜ |
 | **38.** [Kovalev's conjecture](results/kovalev-hardy-duality/) | ⬜ | **116.** [McCrea's conjecture](results/mccrea-single-crossover/) | ⬜ |
 | **38.** [Coffey–Smith conjecture](results/coffey-smith/) | ⬜ | **116.** [Lyon's conjecture](results/lyon-gamma-median/) | ⬜ |
 | **38.** [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ | **116.** [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | ✅ |
@@ -58,7 +58,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **45.** [Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture](results/chappelon-ramirez-stamate-leaf-type/) | ⬜ | **120.** [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
 | **45.** [Hartke–Stolee–West–Yancey matching-excess conjecture](results/hartke-stolee-west-yancey-matching-excess/) | ⬜ | **120.** [Li's chromatic symmetric function signs](results/li-coefficient-sign/) | ✅ |
 | **45.** [Fan’s interval Riesz capacity-ratio conjecture](results/fan-interval-riesz-capacity/) | ⬜ | **120.** [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
-| **45.** [Steinerberger’s greedy-energy Fourier conjecture](results/steinerberger-greedy-fourier/) | ⬜ | **124.** [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
+| **45.** [Steinerberger’s greedy-energy Fourier conjecture](results/steinerberger-greedy-fourier/) | ✅ | **124.** [Spivey's three-player War](results/spivey-multiplayer-war/) | ✅ |
 | **45.** [Steinerberger’s quantitative Feldheim-tail conjecture](results/steinerberger-feldheim-tail/) | ✅ | **124.** [Batista's Egyptian fractions](results/batista-egyptian-fractions/) | ✅ |
 | **51.** [Simon's stable-infimum conjecture](results/simon-stable-infimum/) | ⬜ | **124.** [Pham's Bulgarian solitaire denominator degree](results/pham-denominator-degree/) | ✅ |
 | **51.** [Ferreira–Simon's stochastic-order conjecture](results/ferreira-simon-stochastic/) | ⬜ | **124.** [Graffiti.pc Conjecture 318](results/graffiti-pc-318/) | ✅ |

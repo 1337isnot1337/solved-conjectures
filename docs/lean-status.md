@@ -4,6 +4,15 @@
 
 Complete for original Conjecture 2.6 and the stronger exact interval equality, for every k≥2. Lean constructs actual infinite expansions, proves the finite zero-tail repair, and includes the threshold-two boundary. The [scope report](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) and [independent review](../results/gravgaard-lee-upper-lower-luroth/LEAN_REVIEW.md) record the correspondence. The [complete receipt](verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json) covers 12 strict source builds, 664 declarations, 475 theorems, 173 private declarations, 29 required endpoints, and exact stock replay. Only the three allowed standard axioms occur. Aggregate verification and public deployment remain separate in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). The two reused previously completed Lüroth modules are not recounted. The mixed bounded-digit dependency retains its original proof already published through [PR #547](https://github.com/1337isnot1337/solved-conjectures/pull/547).
 
+## Coulangeon–Lazzarini’s two-shell conjecture
+
+[Lean refutes Conjecture 21 in dimension ten](../lean/Conjectures/CoulangeonLazzariniRealLattice.lean).
+It verifies the full-rank discrete lattice in real space, identifies its first two
+positive squared norms as 4 and 8, and checks the two spherical moment
+identities and the failure at squared norm 9. The [integer-coordinate proof](../lean/Conjectures/CoulangeonLazzariniShells.lean)
+also verifies the arbitrary-delay parity-lattice family.
+The orthogonally indecomposable family and height results remain open in Lean.
+
 ## Gravgaard–Lee’s mixed Lüroth sumset
 
 [Lean proves Conjecture 2.2 and the interval from the written proof](../lean/Conjectures/GravgaardLeeMixedLuroth.lean).
@@ -133,11 +142,11 @@ proofs are documented separately in the catalogue and result package.
 | Gawron–Miska–Ulas’s Thue–Morse valuation conjecture | Not formalized | Refutes general 2-adic block constancy at exponent 17 and gives counterexamples for every k≥11. |
 | Sobolewski–Ulas’s binary-partition exception regularity conjecture | Not formalized | Uses a repeated-digit counting remainder and Cobham’s theorem for substitutions to exclude regularity in every integer base. |
 | Gawron–Ulas’s partition-sign nonperiodicity conjecture | Not formalized | Oblique root-of-unity growth proves each sign occurs infinitely often on every index progression, for all coprime odd permitted-part steps at least three. |
-| Steinerberger’s greedy-energy Fourier conjecture | Not formalized | Exact dyadic Fourier magnitudes refute the logarithmic bound for every singleton start and give the sharp logarithm-squared constant. |
+| Steinerberger’s greedy-energy Fourier conjecture | Complete | An actual infinite van der Corput sequence satisfies the greedy rule and violates every eventual logarithmic bound for the stated weighted absolute Fourier sum. Four modules, complete owned/private axiom audit and stock-kernel replay; sharp-constant and all-tie-breaking supplements remain unformalized. |
 | Ćurgus–Mascioni’s Fréchet root-matching extremizer question | Not formalized | Proves general attainment and the exact lower-degree loss at infinity, refutes general uniqueness, and determines the source cubic value and unique extremizer. |
 | Chern–Fu–Lin’s three-statistic equidistribution conjecture | Not formalized | A minimum decomposition and an exact marked generating-function kernel prove equality in every length for the full three-statistic distribution. |
 | Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture | Not formalized | Exact signed block identities show both alleged zero-density exceptions instead have strictly positive lower densities. |
-| Fan–Tringali’s power-monoid length-set conjecture | Not formalized | Proof in the full original monoid scope. In the reduced setting, graph maximal cliques also permit arbitrary multiplicities of prescribed lengths. |
+| Fan–Tringali’s power-monoid length-set conjecture | Complete original 2018 conjecture | Both power monoids of every Dedekind-finite monoid with infinitely many distinct positive powers, and the exact reduced natural-number system. All 18 modules passed strict source builds, the complete declaration/axiom audit and stock kernel replay. Survey irreducibles, multiplicities and relative cancellativity remain unformalized. [Scope](../results/fan-tringali-power-monoid-lengths/LEAN.md). |
 | Sokal’s Apéry moment threshold | Not formalized | Proof of the previously unresolved excluded interval, completing the classical threshold with the earlier positive result. The Hamburger exception at one quarter and a positive alternative proof are included. |
 | Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture | Complete | Conjectures 7.3 and 7.2 for all positive sizes, pinnacle sets, and peak counts, using literal permutations and inverse descents. The full history bijection, root preservation, symmetry, and nonnegative gamma expansion are proved. The 25-module closure passed strict compilation, the all-owned audit (641 declarations, 479 theorems), and stock-kernel replay. Conjecture 7.1 remains separate. [Statement audit and receipt](../results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md). |
 | Burstein’s descent-top shape-Wilf conjecture | Not formalized | Uniform disproof of the Ferrers-board refinement, for every suffix; the ascent-bottom version is equivalent. Does not address ordinary square-board classes. |
@@ -157,7 +166,7 @@ proofs are documented separately in the catalogue and result package.
 | Braun–Bruegge’s bicyclic facet conjectures | Not formalized | Proves the sharp global bicyclic facet maximum and the exact theta-graph optimizers, including the previously open mixed-parity cases. |
 | Braun–Bruegge’s minimum facet conjecture | Not formalized | Proves both global minimum clauses and a stronger sharp bound at fixed maximum matching size, with unique complete-bipartite minimizers. |
 | Cyrusian–Kaplan’s ordinarization quasipolynomial question | Not formalized | Proves a genus quasipolynomial for every fixed ordinarization number, valid at every positive genus, and eventual strict monotonicity. |
-| Coulangeon–Lazzarini’s two-shell conjecture | Not formalized | Analytic counterexample and arbitrary-delay families, with independent exact enumeration of the dimension-ten witness. |
+| Coulangeon–Lazzarini’s two-shell conjecture | Complete | The real dimension-ten counterexample and the elementary arbitrary-delay family. Orthogonal indecomposability and height extensions remain open in Lean. |
 | Alexandersson’s parking-function excedance conjecture | Not formalized | Exact integer and rational counterexample at length 17; two independent counting recurrences. |
 | Tom–Vailaya’s weighted trace conjecture | Not formalized | Complete proposed written proof of journal Conjecture 74 for all natural unit interval graphs on at least two vertices. Internal mathematical review and 585 independent exact small-case checks; no Lean verification or external refereeing. |
 | Csordas–Vishnyakova conjecture | Not formalized | Complete proposed disproof of Conjecture 3.6: the quartic polynomial p(z)=z⁴+z²+1 and entire function exp(−z⁴) satisfy every required generalized coefficient inequality, yet the function is not Laguerre–Pólya. The earlier genus-restricted theorem is unaffected. Internally reviewed written argument; no Lean verification. |
@@ -3310,3 +3319,9 @@ of the exact one-module project closure passed. The audit admits only
 exact source and object hashes, audit source and records, and replay log.
 The additional positive-beta families and derivative refinements in the
 written proof are not formalized. The combined repository gate is pending.
+
+## Fan–Tringali’s power-monoid length-set conjecture
+
+Complete Lean verification of the original 2018 conjecture: every finite nonempty set of integers at least two is realized as the entire atom-length set in both the ordinary and restricted finitary power monoids of every Dedekind-finite monoid with infinitely many distinct positive powers. No ambient commutativity or cancellation is assumed. [`finite_spectrum_power_monoids`](../lean/Conjectures/FanTringaliMonoid.lean) proves the full transfer, and [`natural_length_system`](../lean/Conjectures/FanTringaliNaturalSystem.lean) proves the exact reduced-natural-number system.
+
+All 18 frozen modules passed strict source builds, the all-owned/private axiom audit (432 declarations, 350 theorems, three private declarations, 28 required endpoints), and stock kernel replay. [Scope and reproduction](../results/fan-tringali-power-monoid-lengths/LEAN.md), [statement review](../results/fan-tringali-power-monoid-lengths/LEAN_REVIEW.md), and [complete receipt](verification/lean-fan-tringali-complete-20261124-162051/receipt.json). The separate survey irreducible formulation, prescribed multiplicities and relative cancellativity remain unformalized. The scoped pass does not claim an aggregate repository pass or a current public deployment; those gates are reported separately, including the dependency-cache blocker in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). This is one completed existing entry.
