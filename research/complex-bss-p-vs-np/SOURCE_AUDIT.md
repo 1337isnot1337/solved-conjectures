@@ -2,6 +2,8 @@
 
 Audit date: 23 November 2026. Research remains open. This records inspected source statements, not an independent verification of the entire imported developments.
 
+The continuation additionally checked Dutta, Saxena and Sinhababu, *Discovering the roots: Uniform closure results for algebraic classes under factoring*, [author-hosted 2022 manuscript](https://www.cse.iitk.ac.in/users/nitin/papers/factor-closure-jacm.pdf), Theorem 1. Its bound uses the squarefree degree of the remaining factor after an already small supplied factor is removed. Applied directly to a resultant multiple without such a removal, that radical already contains the exponentially high-degree resultant. [RADICAL_COFACTOR_JETS.md](RADICAL_COFACTOR_JETS.md) instead applies the previously cited approximate-factor theorem only to low-degree extraneous factors and recovers bounded target jets by finite logarithms. The new proof does not cite the related theorem as an unrestricted resultant-multiple bound. The inspected source has a 2022 manuscript header and placeholder journal metadata; the note identifies that manuscript rather than inventing a final publication locator.
+
 ## 1. Anthropic border lower bound
 
 Source: Anthropic / Claude, *VP ≠ VNP over every field*, pinned repository commit

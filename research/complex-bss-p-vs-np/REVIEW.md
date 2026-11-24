@@ -2,6 +2,18 @@
 
 Status: research. The full statement `P_C != NP_C` has not been proved here.
 
+## Continued research checkpoint
+
+The following additions have complete written arguments, independent worker reviews, and integrator review. The reviews are internal mathematical reviews, not formal verification, human refereeing, or novelty assessments.
+
+- [Directional cofactor roots](DIRECTIONAL_COFACTOR_LOG_JETS.md): the finite-branch jet dependency, logarithmic derivative identity, moving-center border limit, and tagged-triangle logarithm filter were checked. The full coefficient-space jet is taken before the grid specialization. The explicit short cofactor with many directional roots limits the conclusion. [Review](DIRECTIONAL_COFACTOR_REVIEW.md).
+- [Squarefree extraneous cofactors](RADICAL_COFACTOR_JETS.md): approximate factor bounds apply only to the extraneous factors, finite logarithms remove their unrestricted multiplicities, and coefficientwise closure handles both limits. The cited Dutta--Saxena--Sinhababu Theorem 1 was checked against the author-hosted 2022 manuscript; its whole-radical bound does not solve the resultant case. [Review](RADICAL_COFACTOR_REVIEW.md).
+- [Universal certificates](UNIVERSAL_CERTIFICATES.md): shared divided differences, exact gate counts, parameter-only denominator clearing, and projective-chart density were checked. Review prompted explicit division-free notation and the qualification that a generic certificate need not remain defined on a proposed specialization. The finite-part obstruction uses a short exact syzygy and the recorded base-expansion permanent coefficient. [Review](UNIVERSAL_CERTIFICATES_REVIEW.md).
+- [Recursive finite prefixes](TREE_KKT_FINITE_PREFIX_EXTENSION.md): the tree induction preserves full ancestral covectors, not just the current node's coordinates. Explicit pruning gives the extra count R<=KA needed for the sparse derivative bound. [Review](RECURSIVE_AND_SAMPLING_REVIEW.md).
+- [Restricted continuous sampling](CONTINUOUS_NONDENSE_FIBER_SAMPLING.md): all preceding parameters are included in the bad-sample dimension count; the projective encoding and fixed-depth scope were checked. The dense moving-hole graph and homogenization counterexample were checked exactly in the proof. [Review](RECURSIVE_AND_SAMPLING_REVIEW.md).
+
+No numerical test or Lean build is offered as proof of these general statements. Documentation rendering, links, fences, whitespace, and site checks are recorded at publication. Arbitrary resultant cofactors and unrestricted continuous universal quantifiers remain unresolved.
+
 ## Written statements checked
 
 The graph decision lower bound is the existing-theorem consequence coordinated in [issue #247](https://github.com/1337isnot1337/solved-conjectures/issues/247) and merged through [PR #249](https://github.com/1337isnot1337/solved-conjectures/pull/249). Its [canonical review](../bss-permanent-graph/REVIEW.md) records three internal adversarial reviews. This campaign gives a separate audit and uses that deduction, with credit to the imported Anthropic lower bound and Bürgisser's graph/factor transfer.
