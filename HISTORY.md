@@ -1693,7 +1693,6 @@ Added a [proof of both vertex-decomposability conjectures](results/hornak-woznia
 
 Added a [proof of connectivity for tournament domination hypergraphs](results/sonntag-teichert/) on their nonisolated vertices. The argument uses minimal closed in-neighbourhoods and also characterizes the disconnected cases for oriented graphs.
 
+### 2026-11-24 — Waring-gap symmetry Lean formalization
 
-
-
-
+- [Complete original conjecture disproof](results/benfield-lippard-waring-gap-symmetry/LEAN.md) at exponents 64 and 128; both strict defect and reflected-gap witnesses proved. The seven-module scoped audit and independent replay passed (335 declarations, 248 theorems); no change to discovery attribution or priority caveat. [PR #570](https://github.com/1337isnot1337/solved-conjectures/pull/570).
