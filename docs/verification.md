@@ -1,5 +1,18 @@
 # Verification
 
+## Caiolo–Ferroni–Hoster counterexample family
+
+Run the following from `lean/` with its pinned toolchain. The replay checks the
+complete local import closure for the all-prime-powers theorem. The standard
+`scripts/verify_lean.sh` package gate also includes these modules.
+
+```sh
+lake build Conjectures.CaioloFerroniHoster
+lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoster
+```
+
+[Source correspondence and axiom audit](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 
 The [complete target receipt](verification/juhnke-20261124/receipt.json) records fresh strict compilation of all 18 project modules, the unchanged audit of all 577 owned declarations (502 theorems and 11 required endpoints), and unchanged stock-kernel replay. The pinned Lean version is 4.35.0; the only allowed transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The complete source statement and literal-path bridge were independently reviewed against the original report.

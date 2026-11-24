@@ -1,5 +1,12 @@
 # History
 
+## 2026-11-24: Verify the Caiolo–Ferroni–Hoster family in Lean
+
+The [formal proof](lean/Conjectures/CaioloFerroniHoster.lean) verifies the full
+simple rank-five family for all prime powers q ≥ 17. Both dual polynomials
+fail to split over the reals, and the augmented quintic has a single simple
+real root. [Verification issue #560](https://github.com/1337isnot1337/solved-conjectures/issues/560)
+
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 
 On 24 November 2026 the [complete Lean proof](results/juhnke-lattice-paths/LEAN-AUDIT.md) established log-concavity and unimodality for every dimension and step count in the original unrestricted path convention. All 18 modules passed strict compilation, the audit of every owned declaration, and stock-kernel replay. The proof follows the recorded argument of Cinna Davis and GPT-6.2 Astra, credits Martina Juhnke and the classical Brenti translation criterion, and preserves the existing priority qualification. Both boundary dimensions are included in this one result.
