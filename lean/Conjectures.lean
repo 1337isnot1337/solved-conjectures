@@ -1,3 +1,10 @@
+import Conjectures.JohnsonPfaffian
+import Conjectures.JohnsonPfaffianAllMatching
+import Conjectures.JohnsonPfaffianCircular
+import Conjectures.JohnsonPfaffianCircularAdditive
+import Conjectures.JohnsonPfaffianCircularUncrossing
+import Conjectures.JohnsonPfaffianKernel
+import Conjectures.JohnsonPfaffianNoncrossing
 import Conjectures.CaioloFerroniHosterArithmetic
 import Conjectures.CaioloFerroniHosterGraphs
 import Conjectures.CaioloFerroniHosterMatroid

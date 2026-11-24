@@ -1,5 +1,9 @@
 # History
 
+## Johnson's conjecture
+
+On 24 November 2026 the [complete Lean proof](results/johnson-pfaffian/LEAN-AUDIT.md) closed the general even-order, every-matching gap. It formalizes the recorded circular interval-product argument, including the stronger unconditional matrix-class theorem and the exact source-kernel bridge. All thirty project modules passed strict compilation, the audit of every owned declaration, and stock-kernel replay. William Johnson's conjecture, endpoint inequality and uncrossing reduction are credited; the repository proof credit and bounded priority assessment are preserved.
+
 ## 2026-11-24: Verify the Caiolo–Ferroni–Hoster family in Lean
 
 The [formal proof](lean/Conjectures/CaioloFerroniHoster.lean) verifies the full

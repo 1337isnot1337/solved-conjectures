@@ -1,5 +1,11 @@
 # Full formalization campaign
 
+## Johnson's conjecture
+
+`JohnsonPfaffian.johnson_conjecture_fin` proves the full Conjecture 7.1 for an arbitrary ordered `Fin (2*u)` tuple and every literal perfect matching. The new circular-factor normalization, adjacent-edge induction, terminating uncrossing and exact distance-kernel bridge discharge the former general-order gap. `CircularData.matching_bound` also proves the stronger circular interval-product theorem without an uncrossing assumption. The [entry audit](../results/johnson-pfaffian/LEAN-AUDIT.md) maps the proof to the recorded argument and preserves all original attribution and priority limits.
+
+The complete thirty-module closure passed strict compilation, all-owned transitive axiom audit and stock-kernel replay. See the [source-hashed receipt](verification/johnson-20261124/receipt.json). Earlier partial checkpoints below remain historical records.
+
 ## Caiolo–Ferroni–Hoster conjecture
 
 `CaioloFerroniHoster.counterexample_family` checks the complete rank-five

@@ -17,11 +17,10 @@ theorem source_interior_coefficient_nonnegative (f : ℝ → ℝ) (nodes : ℕ �
     (nodes a-nodes (a-1)) (nodes b-nodes a) (nodes (b+1)-nodes b) hA hB hC
   have h1 : (nodes b-nodes a)+(nodes a-nodes (a-1))=nodes b-nodes (a-1) := by ring
   have h2 : (nodes b-nodes a)+(nodes (b+1)-nodes b)=nodes (b+1)-nodes a := by ring
-  have h3 : (nodes b-nodes a)+(nodes a-nodes (a-1))+(nodes (b+1)-nodes b)=nodes (b+1)-nodes (a-1) := by ring
-  simp only [h1,h2,h3] at hh
+  simp only [h1,h2] at hh
   unfold intervalCoefficient sourceLogMatrix
   simp only [show a+1 ≠ 0 by omega, show a ≠ 0 by omega, show b ≠ n by omega,
-    show b+1 ≠ n by omega, false_or, if_false, Nat.add_sub_cancel]
+    show b+1 ≠ n by omega, false_or, ite_false, Nat.add_sub_cancel]
   have h4 : nodes b-nodes (a-1)+(nodes (b+1)-nodes b)=nodes (b+1)-nodes (a-1) := by ring
   rw [h4] at hh
   linarith
@@ -36,7 +35,7 @@ theorem source_left_coefficient_nonnegative (f : ℝ → ℝ) (nodes : ℕ → �
   have hh := log_boundary_coefficient_nonnegative f hf hanti (nodes b-nodes 0) (nodes (b+1)-nodes 0) hd hD hle
   unfold intervalCoefficient sourceLogMatrix
   simp only [show (0:ℕ)+1 ≠ 0 by omega, show b ≠ n by omega, show b+1 ≠ n by omega,
-    false_or, true_or, if_false, if_true, Nat.add_sub_cancel]
+    false_or, true_or, ite_false, ite_true, Nat.add_sub_cancel]
   linarith
 
 theorem source_right_coefficient_nonnegative (f : ℝ → ℝ) (nodes : ℕ → ℝ) (n a b : ℕ)
@@ -49,7 +48,7 @@ theorem source_right_coefficient_nonnegative (f : ℝ → ℝ) (nodes : ℕ → 
   have hh := log_boundary_coefficient_nonnegative f hf hanti (nodes b-nodes a) (nodes b-nodes (a-1)) hd hD hle
   unfold intervalCoefficient sourceLogMatrix
   simp only [show a+1 ≠ 0 by omega, show a ≠ 0 by omega, show b ≠ n by omega,
-    hb, false_or, or_true, if_false, if_true, Nat.add_sub_cancel]
+    hb, false_or, or_true, ite_false, ite_true, Nat.add_sub_cancel]
   linarith
 
 theorem source_corner_coefficient_zero (f : ℝ → ℝ) (nodes : ℕ → ℝ) (n b : ℕ)

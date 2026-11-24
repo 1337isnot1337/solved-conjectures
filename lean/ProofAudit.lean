@@ -9,6 +9,14 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `JohnsonPfaffian.johnson_conjecture,
+    `JohnsonPfaffian.johnson_conjecture_arbitrary_matching,
+    `JohnsonPfaffian.johnson_conjecture_fin,
+    `JohnsonPfaffian.CircularData.matching_bound,
+    `JohnsonPfaffian.CircularData.endpoint_bound,
+    `JohnsonPfaffian.CircularData.noncrossing_bound,
+    `JohnsonPfaffian.exists_noncrossing_dominating,
+    `JohnsonPfaffian.sourceKernelData_weight,
     `CaioloFerroniHoster.counterexample_family,
     `CaioloFerroniHoster.witness_root_properties,
     `CaioloFerroniHoster.graphSpace_inf_same_label,
