@@ -43,3 +43,9 @@ The standard-library script constructs sparse integer polynomials directly from 
 Bao-Xuan Zhu, *Coefficientwise Hankel-total positivity of the row-generating polynomials for the output matrices of certain production matrices*, Advances in Mathematics 444 (2024), 109695, [doi:10.1016/j.aim.2024.109695](https://doi.org/10.1016/j.aim.2024.109695), [author manuscript](https://arxiv.org/pdf/2202.03793), §5.2, printed page 24.
 
 Research and review: [issue 163](https://github.com/1337isnot1337/solved-conjectures/issues/163).
+
+## Further results, not separate conjecture resolutions
+
+Issue #163 already published the identical symbolic negative minor. The newer Bessel-zero characterization of numerical Hamburger and Stieltjes moment parameters is retained without changing the Lean coverage of the earlier disproof.
+
+[Numerical moment classification](NUMERICAL-MOMENTS.md) · [Supplement audit](MOMENT-AUDIT.md)

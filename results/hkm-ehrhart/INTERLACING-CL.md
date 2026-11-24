@@ -4,7 +4,7 @@
 \[
 G=K_{2,3,3,3,3},\qquad G'=K_{2,2,3,3,3}.
 \]
-This is a separate witness to the second clause of the same named conjecture, not an additional conjecture. The first clause has the [cocktail-party graph counterexample](PROOF.md).
+This is a separate witness to the second clause of the same named conjecture, not an additional conjecture. The first clause has the [cocktail-party graph counterexample](STURM-CERTIFICATE.md).
 
 ## Exact counting
 

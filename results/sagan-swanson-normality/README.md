@@ -34,3 +34,9 @@ The target is the full proportional regime for all four families. The separate c
 - [DOI](https://doi.org/10.1016/j.ejc.2023.103899)
 - [arXiv:2205.14078](https://arxiv.org/abs/2205.14078)
 - [Research and review issue 92](https://github.com/1337isnot1337/solved-conjectures/issues/92)
+
+## Further results, not separate conjecture resolutions
+
+The interior-proportion central limit theorem was already proved in issue #92. The stronger uniform lattice local limit, proved in Section 5, is retained here.
+
+[Uniform lattice local limit](LOCAL-LIMIT.md) · [Supplement audit](LOCAL-LIMIT-AUDIT.md)

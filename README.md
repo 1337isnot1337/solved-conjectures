@@ -42,18 +42,16 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](results/stern-half-plane/) | ⬜ |
 | [Chern–Fu–Lin’s joint Eulerian equidistribution conjecture](results/chern-fu-lin-joint-eulerian/) | ⬜ |
 | [Dukes’s revstack interlacing conjecture](results/dukes-revstack/) | ⬜ |
-| [Sagan–Swanson’s q-Stirling normality conjecture](results/sagan-swanson-q-stirling-normality/) | ⬜ |
 | [González D’León–Wachs’s complete-graph specialization question](results/gonzalez-dleon-wachs-complete-graphs/) | ⬜ |
+| [Almirón–Moyano-Fernández’s Wilf-module questions](results/almiron-moyano-wilf-module-questions/) | ⬜ |
 | [Defant–Engen–Miller’s Lassalle refinement conjecture](results/defant-engen-miller-lassalle/) | ⬜ |
 | [Sagan–Wilson’s plactic centralizer conjecture](results/sagan-wilson-plactic/) | ⬜ |
 | [Sagan–Wilson’s plactic coefficient-mode conjecture](results/sagan-wilson-plactic-mode/) | ⬜ |
 | [Juhnke’s arbitrary-step lattice-path log-concavity conjecture](results/juhnke-lattice-paths/) | ⬜ |
-| [Chow’s type-D Eulerian interlacing conjecture](results/chow-type-d/) | ⬜ |
 | [Athanasiadis–Chapoton’s polar preorder duality conjecture](results/athanasiadis-chapoton-polar-duality/) | ⬜ |
 | [Athanasiadis–Chapoton’s q-zeta reciprocity conjecture](results/athanasiadis-chapoton-q-zeta/) | ⬜ |
 | [Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture](results/athanasiadis-chapoton-transmuted-m/) | ⬜ |
 | [Gawron–Miska–Ulas’s Thue–Morse valuation conjecture](results/gawron-miska-ulas-thue-morse-valuation/) | ⬜ |
-| [Zhu’s generalized Jacobi–Stirling Hankel positivity conjecture](results/zhu-jacobi-stirling-hankel/) | ⬜ |
 | [Sobolewski–Ulas’s binary-partition exception regularity conjecture](results/sobolewski-ulas-exception-regularity/) | ⬜ |
 | [Gawron–Ulas’s partition-sign nonperiodicity conjecture](results/gawron-ulas-partition-signs/) | ⬜ |
 | [Steinerberger’s greedy-energy Fourier conjecture](results/steinerberger-greedy-fourier/) | ⬜ |
@@ -77,8 +75,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Rossi’s permutohedron characteristic-polynomial conjecture](results/rossi-permutohedron-roots/) | ⬜ |
 | [Ferroni–Higashitani’s first-three interior Ehrhart question](results/ferroni-higashitani-early-interior-ehrhart/) | ⬜ |
 | [Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture](results/fmp-cylindric/) | ⬜ |
-| [Higashitani–Kummer–Michałek’s canonical-line conjecture](results/hkm-canonical-line/) | ⬜ |
 | [Braun–Bruegge’s bicyclic facet conjectures](results/braun-bruegge-bicyclic-facets/) | ⬜ |
+| [Braun–Bruegge’s minimum facet conjecture](results/braun-bruegge-minimum-facets/) | ⬜ |
 | [Cyrusian–Kaplan’s ordinarization quasipolynomial question](results/cyrusian-kaplan-ordinarization/) | ⬜ |
 | [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ |
 | [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ |

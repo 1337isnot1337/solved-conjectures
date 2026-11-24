@@ -49,3 +49,9 @@ Proof note: Cinna Davis and GPT-6.2 Astra. The central published input is due to
 - [Chow (2022)](https://doi.org/10.1016/j.jmaa.2022.126019), Section 5.
 - [Savage–Visontai (2015)](https://arxiv.org/abs/1208.3831v3), Lemmas 2.5, 3.9 and 3.14, Corollary 2.6, and the proof of Theorem 3.15.
 - [Yang–Zhang (2021/2022)](https://doi.org/10.1007/s10801-021-01101-2), Theorem 2.5 and equation (11).
+
+## Further results, not separate conjecture resolutions
+
+Issue #77 already covers the complete consecutive type-D interlacing statement. The independent analytic tail argument and dyadic finite checker are retained without changing the Lean coverage of the original theorem.
+
+[Alternative proof](ALTERNATIVE-PROOF.md) · [Exact checker](check_dyadic.py) · [Supplement audit](ALTERNATIVE-AUDIT.md)

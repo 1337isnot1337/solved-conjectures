@@ -1,0 +1,7 @@
+# Scope and independent audit
+
+The [published Conjecture 2(3)–(4)](https://cs.uwaterloo.ca/journals/JIS/VOL26/Braun/braun6.pdf) asks for the global minimum and its unique minimizer on connected graphs of order at least three. Equivalently these are Problem 2(3)–(4) in the authors’ [Oberwolfach report](https://publications.mfo.de/bitstream/handle/mfo/4147/OWR_2023_58.pdf?isAllowed=y&sequence=6). The two maximum clauses are not claimed. [Mori–Mori–Ohsugi](https://arxiv.org/html/2312.11287v3) prove the corresponding results for join graphs and the lower bound and uniqueness for bipartite graphs (Proposition 2.8). Searches for the exact general minimum and the stronger fixed matching-number theorem did not locate an earlier proof.
+
+The main argument was independently checked through the simultaneous disjoint-face construction, augmenting paths, strong-orientation recovery, multiplicity-two count and strict equality. A separate review checked the common-fiber strengthening and König completion characterization for fixed matching size. The checker enumerates every connected labeled graph of orders 2 to 5 and seeded graphs of orders 6 to 8: 1,814 exact facet counts and maximum matchings. A second implementation exhausts all 27,475 connected labeled graphs of orders 2 to 6. The checkers test the stronger theorem and are not used as a substitute for either analytic proof.
+
+No Lean verification, external review or absolute priority claim is made.

@@ -1,59 +1,404 @@
 {
-  "pantone-bona-third-largest-terminal": ["Bóna–Pantone", "A5,3", "third-largest-terminal", "canonical tail", "RSK"],
-  "pantone-bona-second-smallest-terminal": ["Bóna–Pantone", "A5,2", "second-smallest-terminal", "canonical tail", "RSK"],
-  "pantone-bona-second-largest-terminal": ["Bóna–Pantone", "A5,4", "12345 12453 13452 23451", "decreasing tail", "tableau walks"],
-  "pantone-bona-asymptotic": ["Bóna–Pantone", "Bona Pantone", "A5,5", "12354", "long monotone subsequences", "pattern avoidance asymptotics"],
-  "hartke-stolee-west-yancey-matching-excess": [ "matching excess", "perfect matchings", "Mersenne division" ],
-  "feldheim-weighted-tail": ["mean and minimum of independent random variables", "Feldheim Feldheim", "weighted average tails", "Wright convexity"],
-  "burstein-descent-top-shape-wilf": ["Alexander Burstein", "Destop", "Ascbot", "Ferrers board", "231 and 312", "shape-Wilf equivalence"],
-  "steinerberger-feldheim-tail": ["Feldheim–Feldheim", "Feldheim Feldheim", "mean minimum of independent random variables", "median normalized tail", "log-concavity"],
-  "benfield-lippard-waring-gap-symmetry": ["Benfield Lippard", "generalized Waring problem", "stable exception sets", "Apéry sets", "398"],
-  "benfield-lippard-waring-gap-parity": ["Benfield Lippard", "generalized Waring problem", "stable exception sets", "Apéry sets", "399"],
-  "heim-neuhauser-troeger-plane-partition-turan": [ "HNT conjecture", "plane partitions", "log concavity", "Turan" ],
-  "heim-neuhauser-plane-partition-polynomization": [ "Sun polynomization", "plane partitions", "nth root monotonicity" ],
-  "heim-neuhauser-ordinary-darcais-root": ["ordinary D’Arcais", "Darcais polynomials", "fractional Chern–Fu–Tang", "nth root monotonicity", "sigma one"],
-  "betermin-fcc-bcc-cold-spots": ["Bétermin", "Betermin", "Gaussian polarization", "checkerboard lattice", "cold spots", "deep holes"],
-  "rossi-permutohedron-roots": ["Giovanni Rossi", "permutohedron face lattice", "Eulerian root level one", "real characteristic roots", "Conjecture 6.16"],
-  "darcais-distinct-right-half-plane-zeros": ["Darcais", "right half-plane zeros", "Hurwitz minor", "distinct roots", "scaled entire limit"],
-  "hajdu-sarkozy-shifted-products": ["Lajos Hajdu", "Andras Sarkozy", "shifted products", "coprime exponents", "total primitivity"],
-  "separable-derangements-limit": ["separable permutations", "separable derangements", "Dougherty Bliss Galvan Polley Shuster", "Vincent Vatter", "Schroeder spine", "Boltzmann occupation"],
-  "separable-derangements-asymptotic": ["separable derangement exponent", "Schroeder tree", "Dougherty Bliss Galvan Polley Shuster", "two macro branchings", "subpolynomial"],
-  "fan-interval-riesz-capacity": ["Riesz capacity", "Yingxin Fan", "Clark Laugesen", "Blackwell comparison", "interval equilibrium"],
-  "kovalev-zero-free": ["Leonid Kovalev", "Taylor sections", "zero-free", "closed unit disk", "beta gamma", "fractional exponent"],
-  "stern-half-plane": ["Stern polynomials", "Stern diatomic sequence", "Dilcher Kidwai Tomkins", "Altizio", "zero free half-plane", "continuant"],
-  "chern-fu-lin-joint-eulerian": ["Chern Fu Lin", "Burstein", "Eulerian equidistribution", "inverse descents", "pattern avoiding permutations"],
-  "dukes-revstack": ["Mark Dukes", "revstack", "Eulerian polynomials", "interlacing", "revstack sort", "descent polynomials"],
-  "sagan-swanson-q-stirling-normality": ["Bruce Sagan", "Joshua Swanson", "q-Stirling numbers", "normality", "Type A", "Type B", "central limit theorem", "local central limit theorem", "geometric occupancies"],
-  "gonzalez-dleon-wachs-complete-graphs": ["Gonzalez DLeon Wachs", "weighted bond poset", "complete graphs", "Laguerre roots", "Gamma moments", "characteristic polynomial", "equal-variable specialization"],
-  "defant-engen-miller-lassalle": ["Defant Engen Miller", "Lassalle numbers", "uniquely sorted permutations", "West stack-sort", "Bessel function", "log-concavity", "Bernstein coefficients"],
-  "sagan-wilson-plactic": ["Bruce Sagan", "Wilson", "plactic monoid", "centralizers", "Johnson Kambites", "tropical representation", "meet join", "Knuth equivalence"],
-  "sagan-wilson-plactic-mode": ["Bruce Sagan", "Wilson", "plactic binomial coefficients", "centralizer mode", "packed words", "longest increasing subsequence", "1/(2 log 2)"],
-  "juhnke-lattice-paths": ["Martina Juhnke", "lattice paths", "log-concavity", "arbitrary-length steps", "Oberwolfach", "binomial transform"],
-  "chow-type-d": ["Chak-On Chow", "type D Eulerian polynomials", "consecutive interlacing", "Coxeter group", "logistic derivatives"],
-  "athanasiadis-chapoton-polar-duality": ["Athanasiadis Chapoton", "Luo polar preorder", "preorder polytopes", "Ehrhart duality", "Stanley transfer"],
-  "athanasiadis-chapoton-q-zeta": ["Athanasiadis Chapoton", "q zeta", "Ehrhart reciprocity", "Postnikov", "preorder"],
-  "athanasiadis-chapoton-transmuted-m": ["Athanasiadis Chapoton", "transmuted M triangle", "preorder duality", "Mobius", "reciprocity"],
-  "gawron-miska-ulas-thue-morse-valuation": ["Prouhet Thue Morse", "Gawron Miska Ulas", "2-adic valuation", "binary products", "t17"],
-  "zhu-jacobi-stirling-hankel": ["Bao-Xuan Zhu", "Jacobi Stirling", "Hankel total positivity", "Bishal Deb P1.9", "Bessel zeros"],
-  "sobolewski-ulas-exception-regularity": ["Bartosz Sobolewski", "Maciej Ulas", "binary partitions", "three squares", "Durand", "automatic sequences"],
-  "gawron-ulas-partition-signs": ["Filip Gawron", "Maciej Ulas", "partition sign", "Ramanujan Journal", "root of unity", "dilogarithm"],
-  "steinerberger-greedy-fourier": ["Stefan Steinerberger", "greedy Fourier", "van der Corput", "dyadic", "Bernoulli kernel", "greedy energy"],
-  "curgus-mascioni-frechet": ["Branko Curgus", "Vania Mascioni", "Frechet root matching", "Hall theorem", "polynomial differential operators"],
-  "chern-fu-lin-three-statistic": ["Chern Fu Lin", "left to right minima", "right to left maxima", "inverse descents", "3124", "2134"],
-  "gawron-miska-ulas-thue-morse-sign-density": ["Gawron Miska Ulas", "Thue Morse square", "5.8", "positive lower density", "binary matrix recurrences"],
-  "hajdu-sarkozy-shifted-power-perturbations": ["Lajos Hajdu", "Andras Sarkozy", "shifted squares", "multiplicative irreducibility", "Zarankiewicz"],
-  "sokal-apery-moment-threshold": ["Alan Sokal", "Apéry polynomials", "Apery moment sequence", "Stieltjes", "Hamburger", "elliptic integrals", "Legendre Poisson"],
-  "burstein-a218225-enumeration": ["Burstein", "OEIS A218225", "Chern Fu Lin", "maximum insertion", "2134 42153 24153", "2143 42135 24135"],
-  "fan-tringali-power-monoid-lengths": ["Fan Tringali", "arithmetic of power monoids", "factorization lengths", "maximal cliques", "sumsets"],
-  "ferroni-higashitani-early-interior-ehrhart": ["Ferroni Higashitani", "Ehrhart log concavity", "interior lattice points", "IDP", "very ample", "Question 5.12(a)"],
-  "fmp-cylindric": ["Ferroni Morales Panova", "cylindric skew shapes", "Ehrhart positivity", "Gessel Krattenthaler", "Oberwolfach", "seam constraints"],
-  "hkm-canonical-line": ["Higashitani Kummer Michalek", "Michałek", "canonical line conjecture", "Ehrhart polynomial", "symmetric edge polytope", "complete multipartite graphs", "Sturm sequence"],
-  "braun-bruegge-bicyclic-facets": ["Benjamin Braun", "Kaitlin Bruegge", "bicyclic graph", "theta graph", "mixed parity", "symmetric edge polytope", "facet maximum", "Wallis"],
-  "cyrusian-kaplan-ordinarization": ["Cyrusian Kaplan", "numerical semigroups", "ordinarization", "quasipolynomial", "Ehrhart", "genus"],
-  "chappelon-ramirez-stamate-leaf-type": ["Jonathan Chappelon", "Ramirez Alfonsin Stamate", "numerical semigroup tree", "pseudo-Frobenius leaves", "maximum type"],
-  "gessel-zhuang-pinnacle-gamma": ["Ira Gessel", "Yan Zhuang", "pinnacle sets", "inverse descents", "two-sided permutation statistics", "gamma positivity"],
-  "coulangeon-lazzarini-two-shells": ["lattice shells", "spherical 2-designs", "strong eutaxy", "Construction A"],
-  "alexandersson-parking-excedance": ["parking functions", "strict excedances", "real-rootedness", "Laguerre inequality"],
+  "pantone-bona-third-largest-terminal": [
+    "Bóna–Pantone",
+    "A5,3",
+    "third-largest-terminal",
+    "canonical tail",
+    "RSK"
+  ],
+  "pantone-bona-second-smallest-terminal": [
+    "Bóna–Pantone",
+    "A5,2",
+    "second-smallest-terminal",
+    "canonical tail",
+    "RSK"
+  ],
+  "pantone-bona-second-largest-terminal": [
+    "Bóna–Pantone",
+    "A5,4",
+    "12345 12453 13452 23451",
+    "decreasing tail",
+    "tableau walks"
+  ],
+  "pantone-bona-asymptotic": [
+    "Bóna–Pantone",
+    "Bona Pantone",
+    "A5,5",
+    "12354",
+    "long monotone subsequences",
+    "pattern avoidance asymptotics"
+  ],
+  "hartke-stolee-west-yancey-matching-excess": [
+    "matching excess",
+    "perfect matchings",
+    "Mersenne division"
+  ],
+  "feldheim-weighted-tail": [
+    "mean and minimum of independent random variables",
+    "Feldheim Feldheim",
+    "weighted average tails",
+    "Wright convexity"
+  ],
+  "burstein-descent-top-shape-wilf": [
+    "Alexander Burstein",
+    "Destop",
+    "Ascbot",
+    "Ferrers board",
+    "231 and 312",
+    "shape-Wilf equivalence"
+  ],
+  "steinerberger-feldheim-tail": [
+    "Feldheim–Feldheim",
+    "Feldheim Feldheim",
+    "mean minimum of independent random variables",
+    "median normalized tail",
+    "log-concavity"
+  ],
+  "benfield-lippard-waring-gap-symmetry": [
+    "Benfield Lippard",
+    "generalized Waring problem",
+    "stable exception sets",
+    "Apéry sets",
+    "398"
+  ],
+  "benfield-lippard-waring-gap-parity": [
+    "Benfield Lippard",
+    "generalized Waring problem",
+    "stable exception sets",
+    "Apéry sets",
+    "399"
+  ],
+  "heim-neuhauser-troeger-plane-partition-turan": [
+    "HNT conjecture",
+    "plane partitions",
+    "log concavity",
+    "Turan"
+  ],
+  "heim-neuhauser-plane-partition-polynomization": [
+    "Sun polynomization",
+    "plane partitions",
+    "nth root monotonicity"
+  ],
+  "heim-neuhauser-ordinary-darcais-root": [
+    "ordinary D’Arcais",
+    "Darcais polynomials",
+    "fractional Chern–Fu–Tang",
+    "nth root monotonicity",
+    "sigma one"
+  ],
+  "betermin-fcc-bcc-cold-spots": [
+    "Bétermin",
+    "Betermin",
+    "Gaussian polarization",
+    "checkerboard lattice",
+    "cold spots",
+    "deep holes"
+  ],
+  "rossi-permutohedron-roots": [
+    "Giovanni Rossi",
+    "permutohedron face lattice",
+    "Eulerian root level one",
+    "real characteristic roots",
+    "Conjecture 6.16"
+  ],
+  "darcais-distinct-right-half-plane-zeros": [
+    "Darcais",
+    "right half-plane zeros",
+    "Hurwitz minor",
+    "distinct roots",
+    "scaled entire limit"
+  ],
+  "hajdu-sarkozy-shifted-products": [
+    "Lajos Hajdu",
+    "Andras Sarkozy",
+    "shifted products",
+    "coprime exponents",
+    "total primitivity"
+  ],
+  "separable-derangements-limit": [
+    "separable permutations",
+    "separable derangements",
+    "Dougherty Bliss Galvan Polley Shuster",
+    "Vincent Vatter",
+    "Schroeder spine",
+    "Boltzmann occupation"
+  ],
+  "separable-derangements-asymptotic": [
+    "separable derangement exponent",
+    "Schroeder tree",
+    "Dougherty Bliss Galvan Polley Shuster",
+    "two macro branchings",
+    "subpolynomial"
+  ],
+  "fan-interval-riesz-capacity": [
+    "Riesz capacity",
+    "Yingxin Fan",
+    "Clark Laugesen",
+    "Blackwell comparison",
+    "interval equilibrium"
+  ],
+  "kovalev-zero-free": [
+    "Leonid Kovalev",
+    "Taylor sections",
+    "zero-free",
+    "closed unit disk",
+    "beta gamma",
+    "fractional exponent"
+  ],
+  "stern-half-plane": [
+    "Stern polynomials",
+    "Stern diatomic sequence",
+    "Dilcher Kidwai Tomkins",
+    "Altizio",
+    "zero free half-plane",
+    "continuant"
+  ],
+  "chern-fu-lin-joint-eulerian": [
+    "Chern Fu Lin",
+    "Burstein",
+    "Eulerian equidistribution",
+    "inverse descents",
+    "pattern avoiding permutations"
+  ],
+  "dukes-revstack": [
+    "Mark Dukes",
+    "revstack",
+    "Eulerian polynomials",
+    "interlacing",
+    "revstack sort",
+    "descent polynomials"
+  ],
+  "gonzalez-dleon-wachs-complete-graphs": [
+    "Gonzalez DLeon Wachs",
+    "weighted bond poset",
+    "complete graphs",
+    "Laguerre roots",
+    "Gamma moments",
+    "characteristic polynomial",
+    "equal-variable specialization"
+  ],
+  "almiron-moyano-wilf-module-questions": [
+    "Pedro Almiron",
+    "Julio Jose Moyano-Fernandez",
+    "Wilf semimodule",
+    "gap Wilf number",
+    "numerical semigroup",
+    "semimodule threshold",
+    "gap antichains",
+    "multiplicity"
+  ],
+  "defant-engen-miller-lassalle": [
+    "Defant Engen Miller",
+    "Lassalle numbers",
+    "uniquely sorted permutations",
+    "West stack-sort",
+    "Bessel function",
+    "log-concavity",
+    "Bernstein coefficients"
+  ],
+  "sagan-wilson-plactic": [
+    "Bruce Sagan",
+    "Wilson",
+    "plactic monoid",
+    "centralizers",
+    "Johnson Kambites",
+    "tropical representation",
+    "meet join",
+    "Knuth equivalence"
+  ],
+  "sagan-wilson-plactic-mode": [
+    "Bruce Sagan",
+    "Wilson",
+    "plactic binomial coefficients",
+    "centralizer mode",
+    "packed words",
+    "longest increasing subsequence",
+    "1/(2 log 2)"
+  ],
+  "juhnke-lattice-paths": [
+    "Martina Juhnke",
+    "lattice paths",
+    "log-concavity",
+    "arbitrary-length steps",
+    "Oberwolfach",
+    "binomial transform"
+  ],
+  "athanasiadis-chapoton-polar-duality": [
+    "Athanasiadis Chapoton",
+    "Luo polar preorder",
+    "preorder polytopes",
+    "Ehrhart duality",
+    "Stanley transfer"
+  ],
+  "athanasiadis-chapoton-q-zeta": [
+    "Athanasiadis Chapoton",
+    "q zeta",
+    "Ehrhart reciprocity",
+    "Postnikov",
+    "preorder"
+  ],
+  "athanasiadis-chapoton-transmuted-m": [
+    "Athanasiadis Chapoton",
+    "transmuted M triangle",
+    "preorder duality",
+    "Mobius",
+    "reciprocity"
+  ],
+  "gawron-miska-ulas-thue-morse-valuation": [
+    "Prouhet Thue Morse",
+    "Gawron Miska Ulas",
+    "2-adic valuation",
+    "binary products",
+    "t17"
+  ],
+  "sobolewski-ulas-exception-regularity": [
+    "Bartosz Sobolewski",
+    "Maciej Ulas",
+    "binary partitions",
+    "three squares",
+    "Durand",
+    "automatic sequences"
+  ],
+  "gawron-ulas-partition-signs": [
+    "Filip Gawron",
+    "Maciej Ulas",
+    "partition sign",
+    "Ramanujan Journal",
+    "root of unity",
+    "dilogarithm"
+  ],
+  "steinerberger-greedy-fourier": [
+    "Stefan Steinerberger",
+    "greedy Fourier",
+    "van der Corput",
+    "dyadic",
+    "Bernoulli kernel",
+    "greedy energy"
+  ],
+  "curgus-mascioni-frechet": [
+    "Branko Curgus",
+    "Vania Mascioni",
+    "Frechet root matching",
+    "Hall theorem",
+    "polynomial differential operators"
+  ],
+  "chern-fu-lin-three-statistic": [
+    "Chern Fu Lin",
+    "left to right minima",
+    "right to left maxima",
+    "inverse descents",
+    "3124",
+    "2134"
+  ],
+  "gawron-miska-ulas-thue-morse-sign-density": [
+    "Gawron Miska Ulas",
+    "Thue Morse square",
+    "5.8",
+    "positive lower density",
+    "binary matrix recurrences"
+  ],
+  "hajdu-sarkozy-shifted-power-perturbations": [
+    "Lajos Hajdu",
+    "Andras Sarkozy",
+    "shifted squares",
+    "multiplicative irreducibility",
+    "Zarankiewicz"
+  ],
+  "sokal-apery-moment-threshold": [
+    "Alan Sokal",
+    "Apéry polynomials",
+    "Apery moment sequence",
+    "Stieltjes",
+    "Hamburger",
+    "elliptic integrals",
+    "Legendre Poisson"
+  ],
+  "burstein-a218225-enumeration": [
+    "Burstein",
+    "OEIS A218225",
+    "Chern Fu Lin",
+    "maximum insertion",
+    "2134 42153 24153",
+    "2143 42135 24135"
+  ],
+  "fan-tringali-power-monoid-lengths": [
+    "Fan Tringali",
+    "arithmetic of power monoids",
+    "factorization lengths",
+    "maximal cliques",
+    "sumsets"
+  ],
+  "ferroni-higashitani-early-interior-ehrhart": [
+    "Ferroni Higashitani",
+    "Ehrhart log concavity",
+    "interior lattice points",
+    "IDP",
+    "very ample",
+    "Question 5.12(a)"
+  ],
+  "fmp-cylindric": [
+    "Ferroni Morales Panova",
+    "cylindric skew shapes",
+    "Ehrhart positivity",
+    "Gessel Krattenthaler",
+    "Oberwolfach",
+    "seam constraints"
+  ],
+  "braun-bruegge-bicyclic-facets": [
+    "Benjamin Braun",
+    "Kaitlin Bruegge",
+    "bicyclic graph",
+    "theta graph",
+    "mixed parity",
+    "symmetric edge polytope",
+    "facet maximum",
+    "Wallis"
+  ],
+  "braun-bruegge-minimum-facets": [
+    "Benjamin Braun",
+    "Kaitlin Bruegge",
+    "facets",
+    "symmetric edge polytope",
+    "maximum matching",
+    "balanced complete bipartite",
+    "König theorem",
+    "matching deficiency"
+  ],
+  "cyrusian-kaplan-ordinarization": [
+    "Cyrusian Kaplan",
+    "numerical semigroups",
+    "ordinarization",
+    "quasipolynomial",
+    "Ehrhart",
+    "genus"
+  ],
+  "chappelon-ramirez-stamate-leaf-type": [
+    "Jonathan Chappelon",
+    "Ramirez Alfonsin Stamate",
+    "numerical semigroup tree",
+    "pseudo-Frobenius leaves",
+    "maximum type"
+  ],
+  "gessel-zhuang-pinnacle-gamma": [
+    "Ira Gessel",
+    "Yan Zhuang",
+    "pinnacle sets",
+    "inverse descents",
+    "two-sided permutation statistics",
+    "gamma positivity"
+  ],
+  "coulangeon-lazzarini-two-shells": [
+    "lattice shells",
+    "spherical 2-designs",
+    "strong eutaxy",
+    "Construction A"
+  ],
+  "alexandersson-parking-excedance": [
+    "parking functions",
+    "strict excedances",
+    "real-rootedness",
+    "Laguerre inequality"
+  ],
   "batista-egyptian-fractions": [
     "OEIS A398581",
     "Batista congruence conjecture",
@@ -120,17 +465,100 @@
     "Legendre pairs",
     "automorphism obstruction"
   ],
-  "hegyvari-floor-doubling": ["Norbert Hegyvari", "Erdos 354", "floor doubling", "strong completeness", "rational ratios", "Kohlmeyer Kruer"],
-  "pomerance-sarkozy-fluctuations": ["Carl Pomerance", "András Sárközy", "Erdos Pomerance Sarkozy", "n plus omega", "prime factors", "quarter power fluctuations", "Kubilius", "Poisson approximation", "Erdos Kac"],
-  "ulas-disjoint-square-blocks": ["Maciej Ulas", "disjoint blocks", "square products", "consecutive integers", "Erdos Graham", "binary codes", "multiplicative signs"],
-  "kovalev-lipschitz-clustering": ["Leonid Kovalev", "Lipschitz clustering", "finite subset spaces", "Hausdorff distance", "single linkage", "Lipschitz retraction", "Wasserstein barycenter"],
-  "revised-tan-zhou-luroth": ["Tan Zhou conjecture", "Lee", "Luroth expansions", "Lüroth convergents", "Hausdorff dimension", "lower order", "Mass Transference Principle"],
-  "simmons-weiss-hausdorff": ["David Simmons", "Barak Weiss", "natural Hausdorff measure", "badly approximable", "Benoist Quint", "continued fractions", "arithmetic lattice"],
-  "meylender-thalmaier-truncated-square": ["Meylender Thalmaier", "Viterbo inequality", "triangle covers", "truncated square", "symplectic capacity", "optimal trapezoid"],
-  "gravgaard-lee-mixed-luroth": ["Gravgaard Lee conjecture", "Luroth expansions", "Lüroth digits", "modulo one", "Cantor set sum", "graph-directed interval certificate"],
-  "gravgaard-lee-large-luroth": ["Gravgaard Lee", "large Lüroth digits", "strictly increasing digits", "Cantor sumset interior", "alternating greedy"],
-  "gravgaard-lee-diameter-condition": ["Gravgaard Lee", "Lüroth diameter", "Astels", "Cantor set sums", "thickness", "finite tails"],
-  "gravgaard-lee-upper-lower-luroth": ["Gravgaard Lee", "Luroth sets", "Lüroth digits", "same upper and lower bounds", "Cantor gap", "modulo one"],
+  "hegyvari-floor-doubling": [
+    "Norbert Hegyvari",
+    "Erdos 354",
+    "floor doubling",
+    "strong completeness",
+    "rational ratios",
+    "Kohlmeyer Kruer"
+  ],
+  "pomerance-sarkozy-fluctuations": [
+    "Carl Pomerance",
+    "András Sárközy",
+    "Erdos Pomerance Sarkozy",
+    "n plus omega",
+    "prime factors",
+    "quarter power fluctuations",
+    "Kubilius",
+    "Poisson approximation",
+    "Erdos Kac"
+  ],
+  "ulas-disjoint-square-blocks": [
+    "Maciej Ulas",
+    "disjoint blocks",
+    "square products",
+    "consecutive integers",
+    "Erdos Graham",
+    "binary codes",
+    "multiplicative signs"
+  ],
+  "kovalev-lipschitz-clustering": [
+    "Leonid Kovalev",
+    "Lipschitz clustering",
+    "finite subset spaces",
+    "Hausdorff distance",
+    "single linkage",
+    "Lipschitz retraction",
+    "Wasserstein barycenter"
+  ],
+  "revised-tan-zhou-luroth": [
+    "Tan Zhou conjecture",
+    "Lee",
+    "Luroth expansions",
+    "Lüroth convergents",
+    "Hausdorff dimension",
+    "lower order",
+    "Mass Transference Principle"
+  ],
+  "simmons-weiss-hausdorff": [
+    "David Simmons",
+    "Barak Weiss",
+    "natural Hausdorff measure",
+    "badly approximable",
+    "Benoist Quint",
+    "continued fractions",
+    "arithmetic lattice"
+  ],
+  "meylender-thalmaier-truncated-square": [
+    "Meylender Thalmaier",
+    "Viterbo inequality",
+    "triangle covers",
+    "truncated square",
+    "symplectic capacity",
+    "optimal trapezoid"
+  ],
+  "gravgaard-lee-mixed-luroth": [
+    "Gravgaard Lee conjecture",
+    "Luroth expansions",
+    "Lüroth digits",
+    "modulo one",
+    "Cantor set sum",
+    "graph-directed interval certificate"
+  ],
+  "gravgaard-lee-large-luroth": [
+    "Gravgaard Lee",
+    "large Lüroth digits",
+    "strictly increasing digits",
+    "Cantor sumset interior",
+    "alternating greedy"
+  ],
+  "gravgaard-lee-diameter-condition": [
+    "Gravgaard Lee",
+    "Lüroth diameter",
+    "Astels",
+    "Cantor set sums",
+    "thickness",
+    "finite tails"
+  ],
+  "gravgaard-lee-upper-lower-luroth": [
+    "Gravgaard Lee",
+    "Luroth sets",
+    "Lüroth digits",
+    "same upper and lower bounds",
+    "Cantor gap",
+    "modulo one"
+  ],
   "haralambis-three-differences": [
     "Haralambis conjecture",
     "three forbidden differences",
@@ -245,5 +673,39 @@
     "two forbidden differences",
     "compact abelian groups",
     "circle character bound"
+  ],
+  "hkm-ehrhart": [
+    "Higashitani Kummer Michalek",
+    "Michałek",
+    "canonical line conjecture",
+    "Ehrhart polynomial",
+    "symmetric edge polytope",
+    "complete multipartite graphs",
+    "Sturm sequence"
+  ],
+  "sagan-swanson-normality": [
+    "Bruce Sagan",
+    "Joshua Swanson",
+    "q-Stirling numbers",
+    "normality",
+    "Type A",
+    "Type B",
+    "central limit theorem",
+    "local central limit theorem",
+    "geometric occupancies"
+  ],
+  "zhu-jacobi-stirling": [
+    "Bao-Xuan Zhu",
+    "Jacobi Stirling",
+    "Hankel total positivity",
+    "Bishal Deb P1.9",
+    "Bessel zeros"
+  ],
+  "chow-conjecture": [
+    "Chak-On Chow",
+    "type D Eulerian polynomials",
+    "consecutive interlacing",
+    "Coxeter group",
+    "logistic derivatives"
   ]
 }
