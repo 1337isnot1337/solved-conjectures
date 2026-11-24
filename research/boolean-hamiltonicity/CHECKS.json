@@ -38,11 +38,12 @@
     "research/boolean-hamiltonicity/LAYERS.md": "a563c81a3339b25b357df38891068e02de354c47fcd3892b7f6c7d5a8605020e",
     "research/boolean-hamiltonicity/README.md": "a0bf5e830c1929151061c05e74c6ea56d5b4fa94574e617a67b6f99aae985fcc",
     "research/boolean-hamiltonicity/REVIEW.md": "79962fe0120a6eaa653be0bdc8abdc0bd2a6d223c2bbf09c75ed9c96b541dc8a",
-    "research/boolean-hamiltonicity/SOURCES.md": "e90cd76d783454e5e5a7295234678893e98778cb9ba6f09b24d386e9e9485e85",
+    "research/boolean-hamiltonicity/SOURCES.md": "493310dad3603e49b61f86ae04b93eb1ea517098345b6ce5445fae6572b22dab",
     "research/boolean-hamiltonicity/SUPPORT_QUOTIENT.md": "7bbed3baf4f3625af9226b2d6bbde69b1855ee1e6297d20a358337aeef04773a",
     "research/boolean-hamiltonicity/verify_invariants.py": "822dda647ea1b6ec8eebc11e4458dd10c73ef054fd46f37d37adf7aaf4d27c4f",
     "research/boolean-hamiltonicity/verify_layers.py": "3088023f1d923d5a7ed090079ea66b21228f7c0e78ed8e11395a57a0366062e1"
   },
   "readme_sha256": "cc236b5c425780d1fb88ad50afee69c2ad9319c0f46e2534cd6c5a70c9f2c8f6",
-  "verification_scope": "Exact finite regression checks and internal written review only. No Lean build and no verification of P != NP."
+  "verification_scope": "Exact finite regression checks and internal written review only. No Lean build and no verification of P != NP.",
+  "metadata_note": "After the finite checks, SOURCES.md was clarified to identify Hrubes\u2019s paper-specific size-hardness definition; no proof or verifier changed in that clarification."
 }

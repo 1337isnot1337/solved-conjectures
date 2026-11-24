@@ -76,6 +76,12 @@ The relevant numbered statements are:
 - **Proposition 3, pages 3–4:** a family of Boolean functions in P/poly has its multilinear extensions in VNP. This is not a VP membership statement.
 - **Lemma 4, page 4:** the homogeneous components through degree `k` of a polynomial with arithmetic circuit complexity `s` can be computed simultaneously with `O(sk²)` arithmetic gates.
 
+The paper defines "hard for VNP" in its preliminaries, page 3, by a
+polynomial comparison of arithmetic circuit sizes after polynomial
+reindexing. This suffices for the size obstruction used here. In
+characteristic two, Theorem 1 is not being cited as a completeness
+statement under p-projections; Section 3.1 explains that distinction.
+
 Theorem 1, combined with the arithmetic separation accepted under the repository's standing assumption, rules out a universal polynomial-cost passage from small Boolean circuits to arithmetic circuits for their canonical multilinear extensions. This is a consequence of imported results, not an advance of this research note. The IS-Hamiltonian-cycle example is a direct illustration of the same obstruction.
 
 ## 3. Directed Hamiltonicity and the uniformity conclusion
