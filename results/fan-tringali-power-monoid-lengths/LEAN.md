@@ -1,23 +1,74 @@
 # Fan–Tringali’s power-monoid length-set conjecture
 
-## Checked scope
+## Complete formalized statement
 
-This is an incomplete formalization of the existing [proof](PROOF.md), sections 1–2, now including the complete graph construction and its factorization classification. The written construction was committed by Cinna Davis in `0d5b985640ecc020f8b99b6e3b1ebc2d8a7fbbe4`; its recorded priority uncertainty is preserved. The original conjecture is due to Y. Fan and S. Tringali, *Power monoids: A bridge between factorization theory and arithmetic combinatorics*, J. Algebra 512 (2018), section 5. The source and priority record in [PROOF.md](PROOF.md) remains authoritative; this checkpoint makes no new discovery or priority claim.
+The original conjecture in Section 5 of Yushuang Fan and Salvatore Tringali, *Power monoids: A bridge between factorization theory and arithmetic combinatorics*, Journal of Algebra 512 (2018), 252–294, is completely formalized. For every Dedekind-finite monoid containing an element with infinitely many distinct positive powers, and every finite nonempty set of integers at least two, one actual finite subset realizes exactly that set of atomic factorization lengths in both the ordinary and restricted finitary power monoids.
 
-`Conjectures.FanTringaliBasic` defines reduced finite-set atoms, unordered factorization data, and literal sumsets. For every finite coordinate set it classifies all factors of a Boolean box, identifies precisely the one-axis atoms, and proves every atomic factorization of the box has length equal to its number of axes.
+The endpoint is [`FanTringali.finite_spectrum_power_monoids`](../../lean/Conjectures/FanTringaliMonoid.lean):
 
-`Conjectures.FanTringaliGadget` proves the nine-point gadget has exactly one horizontal quotient, exactly one vertical quotient, and no square quotient. The quantifier ranges over every finite set in the nonnegative integer plane; a proved subset reduction justifies the finite `decide` calculation. This gadget is a component of the arbitrary-dimensional graph proof, not a separate counted result.
+```lean
+variable {H : Type*} [Monoid H] [DecidableEq H]
+  [IsDedekindFiniteMonoid H]
 
-## Verification
+theorem finite_spectrum_power_monoids
+    (hH : ∃ u : H, HasInfinitePowers u)
+    (S : Finset ℕ) (hS : S.Nonempty) (hmin : ∀ n ∈ S, 2 ≤ n) :
+    ∃ X : Finset H, X.Nonempty ∧ MeetsUnits X ∧
+      PowerLengths X = (S : Set ℕ) ∧
+      RestrictedLengths X = (S : Set ℕ)
+```
 
-Fresh strict compilation used Lean 4.35.0 and the repository's pinned Mathlib revision. The repository all-owned audit generator and validator checked all 74 owned declarations, including private declarations if present, and all six named endpoints. Stock `leanchecker` replay passed for both modules. Only `propext`, `Classical.choice`, and `Quot.sound` are allowed. The [receipt](../../docs/verification/lean-fan-tringali-20261124-162051/receipt.json) contains exact source hashes. This is scoped verification; it does not assert that the complete repository build has passed.
+`H` need not be commutative, cancellative, finite, or a group. Decidable equality is a classical representation of finite subsets, not an extra mathematical restriction. Dedekind-finiteness has its source meaning: a product equal to the identity in one order is also the identity in the reverse order.
 
-## Graph realization checkpoint
+[`HasInfinitePowers`](../../lean/Conjectures/FanTringaliMonoidBasic.lean) means that the range of `n ↦ u^(n+1)` is infinite. This matches the authors’ definition of non-torsion on printed page 4. A group-style condition that no positive power equals the identity would not suffice in a general monoid; no such substitution is made. Injectivity of the full natural-number power map is proved from the source hypothesis.
 
-`FanTringali.graph_lengths` proves the exact identity for every finite graph construction: the complete atomic length set consists precisely of one plus the cardinalities of its maximal cliques. Both directions are checked, including the exclusion of every other atomic factorization. The intermediate modules classify every slab quotient, assemble the independently marked slices, prove uniqueness of every graph quotient, and identify the atomic high factors with maximal cliques. A full Boolean upper slice is included at marker zero in every case; its quotient theorem proves that this padding adds no divisor restrictions.
+`PowerAtom`, `RestrictedAtom`, `PowerLengths`, and `RestrictedLengths` use the actual pointwise product of finite subsets and finite lists of atoms. The restricted monoid consists of the finite subsets meeting the unit group. The ordinary atom definition is proved equivalent to the nonempty finite-subset definition, and restricted/full atom and length equivalence is proved using Dedekind-finite divisor closure. Section 2.1.1 and Remark 2.3 of the primary source assign length zero only to the identity; other units have empty length sets. The literal finite-list convention matches this source convention.
 
-The [second receipt](../../docs/verification/lean-fan-tringali-graph-20261124-162051/receipt.json) covers all nine modules, 290 owned declarations and eleven named endpoints. Fresh strict builds and stock kernel replay passed, and the all-owned/private audit permits only the three standard axioms. Active builds used two Lean workers after one-worker imports stalled; this changes scheduling, not the proof or kernel trust model. The original two-module receipt remains an earlier verified checkpoint.
+## Exact reduced natural-number system
 
-## Remaining work
+[`FanTringali.natural_length_system`](../../lean/Conjectures/FanTringaliNaturalSystem.lean) proves the complete system of atomic length sets of finite subsets of the nonnegative integers containing zero:
 
-The disjoint-clique realization of every prescribed finite nonempty spectrum, the no-carry radix transfer to the nonnegative integers, and the transfers to arbitrary Dedekind-finite non-torsion monoids are outside this frozen checkpoint. The optional multiplicity and relative-cancellativity conclusions are not claimed by its endpoint. The full original conjecture remains incomplete and contributes zero completed results to the campaign started 2026-11-24 16:20:51 UTC.
+```math
+\mathscr L(\mathcal P_{\mathrm{fin},0}(\mathbb N_0))
+=\{\{0\},\{1\}\}\;\cup\;\mathcal P_{\mathrm{fin}}(\mathbb N_{\ge2}).
+```
+
+Here the last term consists of finite nonempty subsets. The proof includes the converse: every nonidentity set has an atomic factorization by induction on its maximum, and every atomic factorization length is bounded by that maximum. The identity and atom cases give exactly the two exceptional singleton length sets.
+
+## Argument and source mapping
+
+The construction is the existing repository [proof](PROOF.md), originally committed by Cinna Davis in [`0d5b985640ecc020f8b99b6e3b1ebc2d8a7fbbe4`](https://github.com/1337isnot1337/solved-conjectures/commit/0d5b985640ecc020f8b99b6e3b1ebc2d8a7fbbe4). The original proposers and the transfer arguments are Fan and Tringali; see their [authors’ PDF](https://imsc.uni-graz.at/tringali/docs/Fan%26Tringali_-_PMs.pdf), Proposition 3.2(iii), Theorem 3.8, Theorem 4.11(i), and Section 5. These transfers are proved in Lean; none is an unformalized hypothesis.
+
+| Part | Modules and checked content |
+| :--- | :--- |
+| Reduced finite-set foundations | `FanTringaliBasic`: literal atoms/lengths and all Boolean-box divisors and factorizations. |
+| Arbitrary finite graph construction | `FanTringaliGadget`, `Slices`, `Products`, `Coordinates`, `Stack`, `Graph`, `Factorizations`, `GraphLengths`: every graph quotient, uniqueness, all atom factorizations, and the exact maximal-clique length set. |
+| Prescribed spectra | `FanTringaliBlocks`: disjoint cliques of arbitrary positive sizes, realizing every requested finite nonempty spectrum. |
+| One-coordinate transfer | `FanTringaliRadix`, `RadixTransfer`, `Natural`: every binary divisor and every atomic factorization lifts through the no-carry encoding, in both directions. |
+| Complete reduced system | `FanTringaliNaturalSystem`: atomicity, finiteness, and the converse classification. |
+| Original general monoids | `FanTringaliMonoidBasic`, `MonoidNormalization`, `MonoidTransfer`, `Monoid`: noncommutative unit normalization, atom reflection/preservation, complete length-set equality, and both source power monoids. |
+
+The finite nine-point gadget uses ordinary kernel-checked `decide`, with a proved reduction covering every possible finite quotient. It is a component of the general theorem. The graph construction always includes one full Boolean upper slice at marker zero; its proved quotient theorem shows this harmless padding adds no restriction, including when nonedges are present. The radix argument controls every possible divisor, not merely the displayed factorizations. The monoid normalization preserves the ordered product and length without assuming ambient commutativity.
+
+## Verification and reproduction
+
+All 18 frozen modules passed fresh Lean 4.35.0 compilation with warnings as errors, the repository all-owned/private transitive axiom audit, and stock `leanchecker` replay. The combined source checkpoint audited 432 declarations, including 350 theorems and three private declarations, and required 28 named endpoints. Only `propext`, `Classical.choice`, and `Quot.sound` are allowed. No `sorry`, `admit`, project-specific axiom, or native-computation axiom is accepted.
+
+The [complete receipt](../../docs/verification/lean-fan-tringali-complete-20261124-162051/receipt.json) records exact source and control hashes, compiler/checker hashes, logs, declaration inventory, and the exact replayed module set. The [original combined checkpoint](../../docs/verification/lean-fan-tringali-complete-20261124-162051/checkpoint-004/receipt.json) is retained. The [statement and argument review](LEAN_REVIEW.md) separates author audits from the independent review of the monoid transfer.
+
+From a complete pinned dependency installation, run:
+
+```sh
+cd lean
+lake env python3 ../scripts/verify_fan_tringali.py
+```
+
+The [dedicated workflow](../../.github/workflows/lean-fan-tringali.yml) performs this same scoped gate. The modules and endpoints are also registered in the aggregate `scripts/verify_lean.sh` gate. Scoped success does not assert an aggregate repository pass: the local full-script attempt encounters missing dependency archive artifacts in the read-only shared Mathlib cache, tracked in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). Hosted verification and live deployment are reported separately in [#414](https://github.com/1337isnot1337/solved-conjectures/issues/414) and the publication PR.
+
+## Scope limits and attribution
+
+The original 2018 conjecture and the exact reduced natural-number system are complete. The separate 2026 survey formulation using irreducibles without Dedekind-finiteness, prescribed unordered factorization multiplicities, and relative cancellativity remain unformalized supplements to the written proof. Their absence does not weaken the original quantified endpoint, and they are not counted as additional results.
+
+The existing [source and priority record](PROOF.md#sources-and-priority) and [written-proof audit](AUDIT.md) remain in force. They credit earlier partial results and state the limits of the bounded prior-resolution search. This formalization does not establish mathematical priority or external refereeing. The campaign counts this existing entry once; the 18 supporting modules, both power monoids, and the reduced-system identity are not separate conjectures.
+
+The earlier [two-module](https://github.com/1337isnot1337/solved-conjectures/blob/028c169ae5692b6703a23ae7f72ba9d8a92e45df/docs/verification/lean-fan-tringali-20261124-162051/receipt.json) and [nine-module](https://github.com/1337isnot1337/solved-conjectures/blob/ef2b97121a841042caf0747de3104e32465de38b/docs/verification/lean-fan-tringali-graph-20261124-162051/receipt.json) receipts remain historical partial checkpoints on the research branch. The complete receipt supersedes their scope limitations.

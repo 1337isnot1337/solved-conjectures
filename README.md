@@ -31,7 +31,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **17.** [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ | **53.** [Zhu's generalized Jacobi–Stirling conjecture](results/zhu-jacobi-stirling/) | ✅ |
 | **20.** [Pula–Song–Wanless conjecture](results/pula-song-wanless/) | ⬜ | **55.** [Oravcová–Soták conjecture for five to eight distances](results/oravcova-sotak/) | 🟢 |
 | **20.** [Malek's conjecture](results/malek-subpermanent/) | ⬜ | **55.** [Zhang's Question 8.4: deletion values of the lonely runner](results/zhang-deletion-values/) | ✅ |
-| **22.** [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/) | 🟡 | **57.** [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
+| **22.** [Fan–Tringali’s power-monoid length-set conjecture](results/fan-tringali-power-monoid-lengths/) | ✅ | **57.** [CUT Family B: nim-sequence threshold](results/cut-family-b/) | ✅ |
 | **23.** [Eight-speed Loneliness Spectrum Conjecture](results/eight-speed-spectrum/) | 🟢 | **57.** [CUT arithmetic periodicity with a preperiod](results/cut-arithmetic-periodicity/) | ✅ |
 | **23.** [Seven-speed Amended Loneliness Spectrum Conjecture](results/seven-speed-spectrum/) | 🟢 | **59.** [Eleven through fourteen lonely runners, all equality cases](results/tight-eleven-to-fourteen/) | 🟢 |
 | **25.** [Currie's conjecture on complexity 2n+1 and critical exponent](results/currie-conjecture-19/) | ⬜ | **59.** [Ten lonely runners, unique equality case](results/tight-nine-speeds/) | 🟢 |

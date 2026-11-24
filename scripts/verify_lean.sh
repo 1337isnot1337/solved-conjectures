@@ -16,6 +16,15 @@ modules=(
   Conjectures.FanTringaliGraph
   Conjectures.FanTringaliFactorizations
   Conjectures.FanTringaliGraphLengths
+  Conjectures.FanTringaliBlocks
+  Conjectures.FanTringaliRadix
+  Conjectures.FanTringaliRadixTransfer
+  Conjectures.FanTringaliNatural
+  Conjectures.FanTringaliNaturalSystem
+  Conjectures.FanTringaliMonoidBasic
+  Conjectures.FanTringaliMonoidNormalization
+  Conjectures.FanTringaliMonoidTransfer
+  Conjectures.FanTringaliMonoid
   Conjectures.UlasDisjointSquareBlocksBasic
   Conjectures.UlasDisjointSquareBlocksParity
   Conjectures.UlasDisjointSquareBlocksAffine

@@ -1,0 +1,462 @@
+{
+  "scope": "Original 2018 ordinary and restricted power-monoid conjecture; exact reduced natural-number length system",
+  "status": "passed",
+  "started_at": "2026-11-24T17:13:48.284737+00:00",
+  "unformalized_supplements": [
+    "Survey 2026 irreducibles without Dedekind-finiteness",
+    "Prescribed unordered factorization multiplicities",
+    "Relative cancellativity"
+  ],
+  "entry": "results/fan-tringali-power-monoid-lengths/",
+  "documented_proof_commit": "0d5b985640ecc020f8b99b6e3b1ebc2d8a7fbbe4",
+  "source_sha256": {
+    "Conjectures/FanTringaliBasic.lean": "d5f065335955eda0eafb0ca052cd6bf211021671d26dfde5a86c1a18d4340e0e",
+    "Conjectures/FanTringaliGadget.lean": "9a73eeb2cf27bb48e7c79f20331b1c3b8957a3bd3313c41bb146cb116da64528",
+    "Conjectures/FanTringaliSlices.lean": "7cdf1ca42164e9873b6223c19651778c70a1c18e356ae90ed81b07abb7f09dc4",
+    "Conjectures/FanTringaliProducts.lean": "ba07d8d7fc65670d399cefab22974c71d6d3640a119efb9bc9ae466f7b1c626f",
+    "Conjectures/FanTringaliCoordinates.lean": "03236e8ed14b2e04b7dd0fd5331526452a0ce56bc376974c4779e02c2eac1d17",
+    "Conjectures/FanTringaliStack.lean": "fac3a57d09c1cd63236572df7b70837f79fac92942a3dad2ab14e7bc2ec46939",
+    "Conjectures/FanTringaliGraph.lean": "dc4d06b543088488aa7a36db29bd1b8baf204744e1dd3f850b2a269173adbd24",
+    "Conjectures/FanTringaliFactorizations.lean": "86a0d82a6a596d6cad158c8f529dac6dbc2f0f7f04b78e992019051192ffe7ba",
+    "Conjectures/FanTringaliGraphLengths.lean": "b21b9dfb1c27f2ebc8dcefc722c863fa7a1546788af4c26edbbcb6aa119d8e3c",
+    "Conjectures/FanTringaliBlocks.lean": "6793fae92403c638a9611ac4e454812e2b3218575f7586704c70173174addbed",
+    "Conjectures/FanTringaliRadix.lean": "f8486400854980d5cf97a6be9a21a265d964d8d4a338c938990bf993737133b6",
+    "Conjectures/FanTringaliRadixTransfer.lean": "aa68b77572fcb1345c8d1e0e75a85499f8ef13a91792ab5356161642c71400dc",
+    "Conjectures/FanTringaliNatural.lean": "c3ff9262ccc8490ba6bb2a79f9bb09a5772e589412b7eca99e3840d18a46adef",
+    "Conjectures/FanTringaliNaturalSystem.lean": "826bd8eb8cf5b345053f53f6d99fdd4313291af2deb6310edbb6c09ef1e21719",
+    "Conjectures/FanTringaliMonoidBasic.lean": "7fc94be5dfbc3cf501f5ca9ca9245e14a80d30460548afe8cd000a0f44cce33a",
+    "Conjectures/FanTringaliMonoidNormalization.lean": "16048d750d88edef8d1b05b23d266e0ea0deb92cde809c73020badd16035a91f",
+    "Conjectures/FanTringaliMonoidTransfer.lean": "4640dd1f32efa835676b0c4c77c28a3cafa6051d6432d8f8d3a7c4d7d58092bd",
+    "Conjectures/FanTringaliMonoid.lean": "4e80bcbf695e2f64fd7f40a074b384366b8040b0066fbc04cfdb58b4915ef1ef"
+  },
+  "project_modules": [
+    "Conjectures.FanTringaliBasic",
+    "Conjectures.FanTringaliGadget",
+    "Conjectures.FanTringaliSlices",
+    "Conjectures.FanTringaliProducts",
+    "Conjectures.FanTringaliCoordinates",
+    "Conjectures.FanTringaliStack",
+    "Conjectures.FanTringaliGraph",
+    "Conjectures.FanTringaliFactorizations",
+    "Conjectures.FanTringaliGraphLengths",
+    "Conjectures.FanTringaliBlocks",
+    "Conjectures.FanTringaliRadix",
+    "Conjectures.FanTringaliRadixTransfer",
+    "Conjectures.FanTringaliNatural",
+    "Conjectures.FanTringaliNaturalSystem",
+    "Conjectures.FanTringaliMonoidBasic",
+    "Conjectures.FanTringaliMonoidNormalization",
+    "Conjectures.FanTringaliMonoidTransfer",
+    "Conjectures.FanTringaliMonoid"
+  ],
+  "required_theorems": [
+    "FanTringali.factors_of_box",
+    "FanTringali.atomic_factorization_box_length",
+    "FanTringali.Gadget.square_impossible",
+    "FanTringali.slab_uniqueQuotient",
+    "FanTringali.slab_no_quotient_both",
+    "FanTringali.uniqueQuotient_stack",
+    "FanTringali.graph_box_divisor_iff",
+    "FanTringali.graph_uniqueQuotient",
+    "FanTringali.layered_atomic_factorization",
+    "FanTringali.layered_lengths",
+    "FanTringali.graph_lengths",
+    "FanTringali.finite_spectrum_lattice",
+    "FanTringali.radix_divisors_lift",
+    "FanTringali.radix_atom_iff",
+    "FanTringali.radix_lengths",
+    "FanTringali.finite_spectrum_nat",
+    "FanTringali.natural_length_system",
+    "FanTringali.pow_injective_of_infinitePowers",
+    "FanTringali.finset_isUnit_iff",
+    "FanTringali.restrictedAtom_iff",
+    "FanTringali.restrictedLengths_eq_powerLengths",
+    "FanTringali.normalize_two",
+    "FanTringali.normalize_atom_list",
+    "FanTringali.normalize_factorization",
+    "FanTringali.powerAtom_powerImage_iff",
+    "FanTringali.powerLengths_powerImage",
+    "FanTringali.restrictedLengths_powerImage",
+    "FanTringali.finite_spectrum_power_monoids"
+  ],
+  "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "leanchecker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+  "verification_script_sha256": "dc86e02d74c2cb1d3fd47ce8139332dd40d683b8237e1bb7da990bcaf0040c49",
+  "control_sha256": {
+    "scripts/verify_fan_tringali.py": "dc86e02d74c2cb1d3fd47ce8139332dd40d683b8237e1bb7da990bcaf0040c49",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/replay_lean_parallel.py": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089"
+  },
+  "steps": [
+    {
+      "label": "version",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.065,
+      "log_sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    },
+    {
+      "label": "Conjectures.FanTringaliBasic.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliBasic.olean",
+        "Conjectures/FanTringaliBasic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.831,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliGadget.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliGadget.olean",
+        "Conjectures/FanTringaliGadget.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.844,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliSlices.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliSlices.olean",
+        "Conjectures/FanTringaliSlices.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.474,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliProducts.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliProducts.olean",
+        "Conjectures/FanTringaliProducts.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.733,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliCoordinates.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliCoordinates.olean",
+        "Conjectures/FanTringaliCoordinates.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.574,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliStack.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliStack.olean",
+        "Conjectures/FanTringaliStack.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.83,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliGraph.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliGraph.olean",
+        "Conjectures/FanTringaliGraph.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.673,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliFactorizations.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliFactorizations.olean",
+        "Conjectures/FanTringaliFactorizations.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.525,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliGraphLengths.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliGraphLengths.olean",
+        "Conjectures/FanTringaliGraphLengths.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.883,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliBlocks.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliBlocks.olean",
+        "Conjectures/FanTringaliBlocks.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.977,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliRadix.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliRadix.olean",
+        "Conjectures/FanTringaliRadix.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.884,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliRadixTransfer.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliRadixTransfer.olean",
+        "Conjectures/FanTringaliRadixTransfer.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.519,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliNatural.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliNatural.olean",
+        "Conjectures/FanTringaliNatural.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.632,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliNaturalSystem.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliNaturalSystem.olean",
+        "Conjectures/FanTringaliNaturalSystem.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.926,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliMonoidBasic.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliMonoidBasic.olean",
+        "Conjectures/FanTringaliMonoidBasic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.579,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliMonoidNormalization.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliMonoidNormalization.olean",
+        "Conjectures/FanTringaliMonoidNormalization.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.269,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliMonoidTransfer.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliMonoidTransfer.olean",
+        "Conjectures/FanTringaliMonoidTransfer.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.319,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.FanTringaliMonoid.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/lib/lean/Conjectures/FanTringaliMonoid.olean",
+        "Conjectures/FanTringaliMonoid.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.017,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "all-owned-audit",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j2",
+        "-M3500",
+        "-DwarningAsError=true",
+        "/tmp/cinna-lean-162051/repo/.candidate-artifacts/fan-tringali/AllOwnedAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.631,
+      "log_sha256": "4a57e0152cda0fdeda7c9d512d8bc5b20f52fe118f08566662a3e29d35d9b2b0"
+    },
+    {
+      "label": "kernel",
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "leanchecker",
+        "-v",
+        "Conjectures"
+      ],
+      "exit_code": 0,
+      "seconds": 24.534,
+      "log_sha256": "beade470e8349413d6a0b912c0e8d2679f8592c8dc7735c32bc9865eb6961477"
+    }
+  ],
+  "repository_wide_gate_claimed": false,
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "exact_kernel_replay_set": [
+    "Conjectures.FanTringaliBasic",
+    "Conjectures.FanTringaliGadget",
+    "Conjectures.FanTringaliSlices",
+    "Conjectures.FanTringaliProducts",
+    "Conjectures.FanTringaliCoordinates",
+    "Conjectures.FanTringaliStack",
+    "Conjectures.FanTringaliGraph",
+    "Conjectures.FanTringaliFactorizations",
+    "Conjectures.FanTringaliGraphLengths",
+    "Conjectures.FanTringaliBlocks",
+    "Conjectures.FanTringaliRadix",
+    "Conjectures.FanTringaliRadixTransfer",
+    "Conjectures.FanTringaliNatural",
+    "Conjectures.FanTringaliNaturalSystem",
+    "Conjectures.FanTringaliMonoidBasic",
+    "Conjectures.FanTringaliMonoidNormalization",
+    "Conjectures.FanTringaliMonoidTransfer",
+    "Conjectures.FanTringaliMonoid"
+  ],
+  "object_sha256": {
+    "Conjectures/FanTringaliBasic.olean": "af8bd3a1bd8fd4e2beb3b32e43331bad76f659913f1ba142e6a93d3538bddb2f",
+    "Conjectures/FanTringaliBlocks.olean": "be495d5cd3830214c264b5db8792abb85ecbc78f2bc9d210e455c6fda8ddc738",
+    "Conjectures/FanTringaliCoordinates.olean": "5895ad134a863db9130bff4f84015b9c8bbca3906f96e5f20a4115f0901cbb33",
+    "Conjectures/FanTringaliFactorizations.olean": "5f7d7cf2bd139d19898d47be4e2a5f0e479493bee8597c49374fec443c0a2a39",
+    "Conjectures/FanTringaliGadget.olean": "d5591247ebaa87ffc0f3a17608d6978400b434af66ab6af8b221c42a8fbeb809",
+    "Conjectures/FanTringaliGraph.olean": "7c2c10fdc49abad9cd6d3a2019904adc3b4dd6757678b71738d235fdca290993",
+    "Conjectures/FanTringaliGraphLengths.olean": "9f3efa872ae9df9896686471de28cf08fdd17ead15d553bde7c936ef98756c0e",
+    "Conjectures/FanTringaliMonoid.olean": "9ed047f28ef845d3d06aba22718ad5a58cdade28429e0bab8514aa6bdedb0bb3",
+    "Conjectures/FanTringaliMonoidBasic.olean": "9c4fe5b7cc4af8091e106dc921fd4d222aef9d4f4b184d9c73c73a67ed4ae761",
+    "Conjectures/FanTringaliMonoidNormalization.olean": "f017537febb2056c6291bca7c1cdbef4f499828197ac656e01cc3665a14dde75",
+    "Conjectures/FanTringaliMonoidTransfer.olean": "74a86f419dbe4fa3a8f59322f53377437e96656bec1b25c3fab179bcf59fe72d",
+    "Conjectures/FanTringaliNatural.olean": "6ca7df1addc1de7451b9e4e50420b8226b2aeb700471ffdb97f0c2da3e370925",
+    "Conjectures/FanTringaliNaturalSystem.olean": "6703aaed8bdb0ecfe9aa4e7288b04aeab0f022b928802a8488f8ca014cfa76d8",
+    "Conjectures/FanTringaliProducts.olean": "3392b8d9fcb7e041dc4e145babeb0b56eb60cd75edf97ccd7146a57767e44469",
+    "Conjectures/FanTringaliRadix.olean": "ad89d299bc6860e94ba7978ed19d420466d5c7110b7add70d7ca71e0fbb41c82",
+    "Conjectures/FanTringaliRadixTransfer.olean": "46f4302ada03c9f57a332ec0eb841765ea15f390735768b1f813a248a4c3d1e8",
+    "Conjectures/FanTringaliSlices.olean": "a557f4afbc214c10a0e15de60633ee545efdc39df325e4cf939fad1890df6b1f",
+    "Conjectures/FanTringaliStack.olean": "bfd0a09038682510e66fa6ff5da42bd66847d9634d90f6c228af9ff664d2d4a3"
+  },
+  "audit_source_sha256": "f06ab4ee6b10f0d42a6e8cde57d3cf8183a3d463b236ea1f243f30b8fabe4665",
+  "declaration_inventory_sha256": "003792cf20c1eb929b8de69875f42e6e6dbb7bc46b0d571a4ed46a72f4065481",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 432,
+    "modules": 18,
+    "private_declarations": 3,
+    "raw_declarations": 432,
+    "required": 28,
+    "tag": "passed",
+    "theorems": 350
+  },
+  "finished_at": "2026-11-24T17:14:50.115032+00:00"
+}

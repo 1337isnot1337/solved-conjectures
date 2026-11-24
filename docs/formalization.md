@@ -1706,17 +1706,15 @@ families remain unformalized. The combined repository gate remains pending.
 
 ## Fan–Tringali’s power-monoid length-set conjecture
 
-Partial Lean verification: the arbitrary-coordinate Boolean-box divisor/atom/factorization classification and the universally quantified local domino gadget are checked. The [entry’s scope note](../results/fan-tringali-power-monoid-lengths/LEAN.md) lists the missing graph, radix, realization and monoid-transfer arguments. [Receipt](verification/lean-fan-tringali-20261124-162051/receipt.json): strict source builds, all-owned transitive axiom audit and stock-kernel replay passed for the two-module checkpoint. The full conjecture is not counted as formalized.
+Complete Lean verification of the original 2018 conjecture: every finite nonempty set of integers at least two is realized as the entire atom-length set in both the ordinary and restricted finitary power monoids of every Dedekind-finite monoid with infinitely many distinct positive powers. No ambient commutativity or cancellation is assumed. [`finite_spectrum_power_monoids`](../lean/Conjectures/FanTringaliMonoid.lean) proves the full transfer, and [`natural_length_system`](../lean/Conjectures/FanTringaliNaturalSystem.lean) proves the exact reduced-natural-number system.
+
+All 18 frozen modules passed strict source builds, the all-owned/private axiom audit (432 declarations, 350 theorems, three private declarations, 28 required endpoints), and stock kernel replay. [Scope and reproduction](../results/fan-tringali-power-monoid-lengths/LEAN.md), [statement review](../results/fan-tringali-power-monoid-lengths/LEAN_REVIEW.md), and [complete receipt](verification/lean-fan-tringali-complete-20261124-162051/receipt.json). The separate survey irreducible formulation, prescribed multiplicities and relative cancellativity remain unformalized. The scoped pass does not claim an aggregate repository pass or a current public deployment; those gates are reported separately, including the dependency-cache blocker in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). This is one completed existing entry.
 
 
 ## Ulas’s disjoint-block square-product conjecture
 
 Partial Lean verification: for every positive block length, a positive repeatable count exists and every positive multiple of it has infinitely many disjoint square-product collections. The [source-matched finite-collection development](../lean/Conjectures/UlasDisjointSquareBlocks.lean) also reduces eventual infinitude at every sufficiently large count to prime-avoiding tail collections. The analytic/probabilistic parity input and odd-prime binary-code argument remain explicit obligations, as recorded in the [scope report](../results/ulas-disjoint-square-blocks/FORMALIZATION.md). All six modules passed fresh strict builds, the all-owned axiom audit and exact stock-kernel replay; see the [receipt](verification/lean-ulas-20261124-162051/verification.json). This entry is not counted as completely formalized.
 
-
-### Fan–Tringali graph realization checkpoint
-
-The [nine-module development](../lean/Conjectures/FanTringaliGraphLengths.lean) now proves the exact atomic length set of every graph construction, in both directions, from its maximal cliques. Slab quotient uniqueness, graph divisibility, and all atomic factorization classification are checked. The [receipt](verification/lean-fan-tringali-graph-20261124-162051/receipt.json) records 290 audited declarations, fresh strict builds and stock replay. Prescribed spectra, radix encoding and the original general-monoid transfers are still outside this frozen checkpoint; full-result count remains zero for this entry.
 
 
 ## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture

@@ -10,6 +10,15 @@ import Conjectures.FanTringaliStack
 import Conjectures.FanTringaliGraph
 import Conjectures.FanTringaliFactorizations
 import Conjectures.FanTringaliGraphLengths
+import Conjectures.FanTringaliBlocks
+import Conjectures.FanTringaliRadix
+import Conjectures.FanTringaliRadixTransfer
+import Conjectures.FanTringaliNatural
+import Conjectures.FanTringaliNaturalSystem
+import Conjectures.FanTringaliMonoidBasic
+import Conjectures.FanTringaliMonoidNormalization
+import Conjectures.FanTringaliMonoidTransfer
+import Conjectures.FanTringaliMonoid
 import Conjectures.UlasDisjointSquareBlocksBasic
 import Conjectures.UlasDisjointSquareBlocksParity
 import Conjectures.UlasDisjointSquareBlocksAffine

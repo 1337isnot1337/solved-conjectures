@@ -1,6 +1,6 @@
 # Fan–Tringali’s power-monoid length-set conjecture
 
-Lean formalization is **incomplete**. The checked [graph realization theorem](../../lean/Conjectures/FanTringaliGraphLengths.lean) identifies every atomic factorization length of the arbitrary finite-graph construction with one plus a maximal-clique size. It includes the [Boolean-box classification](../../lean/Conjectures/FanTringaliBasic.lean) and [local gadget](../../lean/Conjectures/FanTringaliGadget.lean). See [scope and remaining work](LEAN.md) and the [verification receipt](../../docs/verification/lean-fan-tringali-graph-20261124-162051/receipt.json).
+Lean verification is complete for the full original 2018 conjecture in both ordinary and restricted finitary power monoids of every Dedekind-finite monoid with infinitely many distinct positive powers. Lean also proves the exact reduced natural-number length system. The 18-module proof passed strict source builds, the complete declaration/axiom audit, and stock kernel replay. See the [full theorem and scope](LEAN.md), [statement review](LEAN_REVIEW.md), and [verification receipt](../../docs/verification/lean-fan-tringali-complete-20261124-162051/receipt.json). The written proof’s separate survey, multiplicity, and relative-cancellativity supplements remain unformalized.
 
 **Proved.** Every nonempty finite subset of the integers at least two is a length set in the power monoids in the original conjecture. In the reduced setting, the same construction prescribes the multiplicity of each length.
 
