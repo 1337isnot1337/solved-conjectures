@@ -389,6 +389,30 @@ and degenerations remain outside their scope. The general criterion
 allows a constant flag loss, such as $`N'=N/2`$, as $`q\to\infty`$;
 an obstruction to near-full retention alone would not rule it out.
 
+## Operator identities as finite tensor maps
+
+[WEYL_DIVISION_TRADE_TRANSFER.md](WEYL_DIVISION_TRADE_TRANSFER.md)
+proves an exact conversion from a legal joint coefficient identity
+over a filtered Ore division algebra to finite four-party tensor
+maps with neutral-flag ratio tending to one. For Weyl algebras, PBW
+dimension growth supplies the finite spaces. A common right
+denominator protects every multiplication prefix; the construction
+never inverts a truncated operator. A central-parameter version
+also handles rational families and honest Laurent series with finite
+pole order. The regular retraction and finite-jet bound are proved.
+
+The missing input is a joint identity with subpolynomial family count.
+[JOINT_FOURIER_CCR_RESIDUAL.md](JOINT_FOURIER_CCR_RESIDUAL.md)
+gives a Fourier and commutator candidate whose scalar contraction
+has exactly the required four label comparisons. Its complete
+coefficient contains a nonzero normally ordered monomial, so it is
+not a valid trade. The note preserves that residual explicitly.
+
+The 784-column exact replay checks a separate rational Weyl identity
+on the finite retained spaces. It checks the denominator/projection
+mechanism, not the unresolved geodesic trade. No matrix multiplication
+bound or new Lean verification follows from this checkpoint.
+
 ## Remaining mathematical obligation
 
 To prove the target by this route, establish a full-tensor inequality on one compatible normalized extension that forces
@@ -426,8 +450,9 @@ python3 check_trace_cubic_nonsmoothable.py
 python3 check_hyperplane_cocycle.py
 python3 check_mixed_valuation_padding.py
 python3 check_exterior_incidence_source.py
+python3 check_weyl_transfer_example.py
 ```
 
-The propagation-local, ordinary-partial-block, general-free-separator, and mixed-padding scripts use SymPy. The trace-cubic and hyperplane-cocycle checks use NumPy integer arrays with explicit overflow bounds. The exterior-incidence checker uses both NumPy integer arrays and exact SymPy rational ranks, with an explicit arithmetic bound. The other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
+The propagation-local, ordinary-partial-block, general-free-separator, and mixed-padding scripts use SymPy. The trace-cubic and hyperplane-cocycle checks use NumPy integer arrays with explicit overflow bounds. The exterior-incidence checker uses both NumPy integer arrays and exact SymPy rational ranks, with an explicit arithmetic bound. The Weyl transfer replay and the other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
 
 The review scope and reproducible check inventory are recorded in [REVIEW_AND_VERIFICATION.md](REVIEW_AND_VERIFICATION.md).

@@ -215,3 +215,39 @@ Coordination and the adversarial-review request are in [issue #250](https://gith
 The branch policy changed at `192e2fd6cee8a1a3c05ee1d901c5e003725a3821`. The current open campaign belongs on `research`. This checkpoint was kept local while that flat ref was unavailable. The exact head of the old PR #254 was independently verified as an ancestor of staging before its branch was retired; its review record remains closed and preserved. The flat `research` ref was then created at `a8c0f9305faa1be9fc2e90d6bd4259e0da92e80a` and its exact tree verified. [Issue #295](https://github.com/1337isnot1337/solved-conjectures/issues/295) records the cutover and the decision to keep the next checkpoint on the existing working branch while avoiding additional topic refs during the remaining cleanup. Earlier merges are historical records and do not change the target's unresolved status.
 
 All files remain under `research/`. No root Results-table row, solved-conjecture directory, Lean theorem, or claimed kernel-verification status was added for this target. Repository-wide hosted checks are reported separately in the PR conversation; a successful existing Lean workflow does not formalize these new Markdown proofs.
+
+
+## Filtered-operator transfer checkpoint
+
+The new [transfer proof](WEYL_DIVISION_TRADE_TRANSFER.md) establishes
+only a conditional construction method. The operator-comparison
+worker, constructive worker, and root checked the complete coefficient
+equation, all right-to-left multiplication prefixes, the common right
+denominator, and the shared ambient flag. In the central-parameter
+case the retained leading basis is independent; a coordinate minor
+therefore gives a retraction regular at zero. This is why the total
+operator error remains of positive order after finite realization.
+The finite-jet proof explicitly counts all four factors, including
+the central C coefficient.
+
+PBW independence, the domain property, the filtration dimension, and
+the Ore intersection condition are proved in the note. Existence of
+the classical division algebra is imported from the final published
+version of Teichner, *Flatness and the Ore condition for rings*,
+Proc. AMS 131 (2003), Section 2, the unnumbered Theorem (Ore),
+printed page 1979. Root opened the primary author PDF and checked
+that statement independently.
+
+The [exact replay](check_weyl_transfer_example.py) passed every column
+at filtration degrees 0, 1, 2, 4, 8, 16, and 32, totaling 784 columns.
+It uses exact integer PBW coefficients and has no additional package
+dependency. Its identity is a test of rational-operator realization,
+not an instance of the desired joint tensor identity.
+
+The [joint Fourier candidate](JOINT_FOURIER_CCR_RESIDUAL.md) was
+checked by its author and root. The scalar term is correct; a specified
+degree-four monomial has coefficient 1/q in a required zero output.
+That coefficient is a genuine bulk residual. No constant-term
+projection, matrix inverse on a truncated flag, or numerical fit is
+being asserted to complete the construction. The target remains in
+research status, with no new Lean proof and no solved-results entry.
