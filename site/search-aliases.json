@@ -473,6 +473,7 @@
     "rational ratios",
     "Kohlmeyer Kruer"
   ],
+  "xu-zhou-laplacian-diameter": ["Leyou Xu", "Bo Zhou", "Laplacian eigenvalues", "graph diameter", "clique chains", "tridiagonal inertia", "MathDB 361424", "2401.03777"],
   "pomerance-sarkozy-fluctuations": [
     "Carl Pomerance",
     "András Sárközy",
