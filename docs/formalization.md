@@ -1,5 +1,11 @@
 # Full formalization campaign
 
+## Steinerberger’s greedy-energy Fourier conjecture
+
+The [complete Lean disproof](../results/steinerberger-greedy-fourier/FORMALIZATION.md) constructs one actual infinite sequence satisfying the exact Bernoulli-kernel minimization rule. Its actual truncated harmonic-weighted sum of absolute Fourier magnitudes violates every eventual logarithmic bound. The proof establishes greedy admissibility directly and does not assume a characterization of minimizers.
+
+The [independent review](../results/steinerberger-greedy-fourier/LEAN_REVIEW.md) checks the original source, all sequence and Fourier definitions, the truncation and injectivity of the selected frequencies, and the final asymptotic negation. The four-module closure has 113 owned declarations, including 96 theorems and three private declarations, and 15 required endpoints. The [verification receipt](../results/steinerberger-greedy-fourier/verification/receipt.json) records fresh strict builds, the complete axiom audit and stock-kernel replay. Only the original conjecture is marked complete; the written sharp-constant and all-tie-breaking supplements remain unformalized. The recorded argument and prior dyadic results retain their attribution and priority qualification.
+
 ## Coulangeon–Lazzarini’s two-shell conjecture
 
 [Lean refutes Conjecture 21 in dimension ten](../lean/Conjectures/CoulangeonLazzariniRealLattice.lean).

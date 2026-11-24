@@ -22,6 +22,10 @@ modules=(
   Conjectures.FanTringaliMonoidNormalization
   Conjectures.FanTringaliMonoidTransfer
   Conjectures.FanTringaliMonoid
+  Conjectures.SteinerbergerGreedySequence
+  Conjectures.SteinerbergerGreedyFourier
+  Conjectures.SteinerbergerGreedyGrowth
+  Conjectures.SteinerbergerGreedy
   Conjectures.CoulangeonLazzariniShells
   Conjectures.CoulangeonLazzariniRealLattice
   Conjectures.GravgaardLeeMixedLuroth
