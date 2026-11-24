@@ -7,9 +7,9 @@ refuted here. No matrix multiplication exponent conclusion follows.
 ## The proposed additional inequality
 
 Fix a finite party set `I`. For `H` a subset of `I`, let `U_H(q)` be the
-rank-`q` unit tensor on the parties in `H`, padded by a fixed nonzero
-vector at every other party. If `|H|` is at most one, this tensor is
-equivalent to a nonzero simple tensor. For a normalized spectral point
+rank-`q` unit tensor on the parties in `H` when `|H|>=2`, padded by a fixed nonzero
+vector at every other party. For `|H|<=1`, define `U_H(q)` to be a
+nonzero simple tensor. For a normalized spectral point
 `F` on the `I`-party tensor semiring, write
 
 ```math
@@ -57,7 +57,12 @@ Y_q=U_{ABCD}(q)\otimes U_{AB}(q).
 ```
 
 For every integer `q` at least two, `Y_q` is not a restriction or a
-degeneration of `X_q` as a four-party tensor. In particular, no positive
+Laurent-series degeneration of `X_q` as a four-party tensor. A
+Laurent-series degeneration consists of four separate linear maps
+over `K((t))` whose tensor image, after removing one common power
+of `t`, has leading coefficient `Y_q`. The same proof works after
+any field extension. Over the complex numbers this also excludes
+the usual orbit-closure degeneration. In particular, no positive
 equal tensor powers of `X_2` and `Y_2` admit that degeneration.
 
 ### Determinant pencils
@@ -512,7 +517,11 @@ An arbitrarily small translated square fits inside the equilateral
 triangle used by the normalized `3/4` scalar countermodel. All charges
 scale linearly, so the strict failure persists on that auxiliary
 subset. Thus (U) would impose a constraint absent from that scalar
-model. This observation does not prove (U).
+model. This observation does not prove (U). It also does not make (U) a
+decisive scalar condition: [TRIPOD_COUNTERMODEL.md](TRIPOD_COUNTERMODEL.md)
+constructs a different normalized perimeter-`9/4` model satisfying
+(U), full crossing, coherent retraction extensions, and all the stated
+hypergraph mincut tests.
 
 ## The unresolved asymptotic implication
 

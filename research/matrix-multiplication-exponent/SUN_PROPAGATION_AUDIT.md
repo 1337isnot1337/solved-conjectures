@@ -82,4 +82,226 @@ has flattening ranks $(4,4,4)$, whereas $\mathcal A_{\rm can}$ has ranks $(4,4,3
 
 For each base, give the three Laurent maps on the original source basis, including each independent row, module, channel, absolute-character, and fresh-coordinate index. Write the ordinary-row solve as actual local maps; expand the resulting active coefficients; verify their membership in $V_{\rm act}$ by exact identities. Then give the corresponding formulas for the next state's residual calculation, preserving the old-cycle projection and avoiding duplicate use of a source summand. Checking those formulas would settle this dependency. Counts and invertible minors alone do not.
 
-The Appendix A.4 normalization discrepancy is being audited separately. Even a repair of that discrepancy would leave the propagation dependency described here to verify.
+The Appendix A.4 normalization discrepancy and its local correction are recorded in [SUN_CROSSED_MAP_AUDIT.md](SUN_CROSSED_MAP_AUDIT.md). That local correction leaves the propagation dependency described here to verify.
+
+## Reconstruction of the first fresh address solve
+
+The scalar address calculation in Lemma 10.4 can be reconstructed
+completely. This determines an operator on specified right-hand sides;
+it does not determine those tensor-valued right-hand sides.
+
+Use the ordered sets
+
+```math
+A=(0,3,4,9,12),\qquad
+N=(1,2,5,6,7,8,10,11,13,14,15),
+```
+
+and write $W=W_{16}$. Solving the ordinary system with active source
+coefficients set to zero gives the ordinary-to-active leakage matrix
+
+```math
+K=W[A,N]W[N,N]^{-1}
+=\begin{pmatrix}
+0&-1&1&0&1&1&1&0&-1&0&-1\\
+0&1&0&1&-1&-2&-1&-1&2&1&1\\
+1&1&0&0&-1&-1&0&-1&1&1&0\\
+-1&-1&-1&-1&0&0&-1&0&-1&-1&0\\
+-1&-1&-1&-1&0&1&0&1&-2&-2&-1
+\end{pmatrix}.
+```
+
+It has rank five. The Schur complement is also explicit:
+
+```math
+S=W[A,A]-KW[N,A]
+=\begin{pmatrix}
+0&0&0&8&8\\
+0&8&8&-8&-8\\
+0&8&0&0&-8\\
+8&-8&0&0&0\\
+8&-8&-8&0&8
+\end{pmatrix}
+=16W[A,A]^{-1}.
+```
+
+Now adjoin the fresh two-bit Walsh factor. Since $W_4^{-1}=W_4/4$,
+
+```math
+\begin{aligned}
+&(W[A,N]\otimes W_4)
+ (W[N,N]^{-1}\otimes W_4^{-1})\\
+&\hspace{4em}=K\otimes I_4.
+\end{aligned}
+```
+
+Consequently, for any specified tensor-valued right-hand sides
+$T_{\lambda,g}$ in a common coefficient space, the componentwise
+ordinary solve leaves residual
+
+```math
+R_{a,g}=T_{a,g}-\sum_{n\in N}K_{a,n}T_{n,g}
+\qquad(a\in A,\ g\in\mathbb F_2^2).
+```
+
+The fresh Walsh factor cancels from this leakage operator. Membership
+of the result in $V_{\rm act}$ is therefore a property of the actual
+$T_{\lambda,g}$ and the maps identifying their record spaces with the
+canonical active tensor. The minors alone do not provide that
+identification. The active Schur operator is $S\otimes W_4$, which is
+invertible, rather than a projection onto a smaller tensor subspace.
+
+### A failed direct physical-cycle reconstruction
+
+For a concrete diagnostic, make the additional choice
+$\theta(\lambda)=(Q_\lambda,R_\lambda)$ where $Q_\lambda$ is the low
+two bits of $\lambda$ and $R_\lambda$ is the high two bits. Take
+
+```math
+T_{\lambda,g}
+=x_{g,g+Q_\lambda}
+ y_{g+Q_\lambda,g+Q_\lambda+R_\lambda}
+ z_{g+Q_\lambda+R_\lambda,g}.
+```
+
+These are the 64 fresh matrix-unit cycles. Their indexing follows
+equation (10.13), which is printed in the *characteristic-two*
+construction. Odd-characteristic Lemma 10.4 does **not** prescribe
+these tensors as its ordinary-row right-hand sides. Their use here
+is an explicitly additional interpretation, tested rather than
+assumed to be the intended construction.
+
+Substitute this choice into the computed residual. The exact
+flattening ranks are as follows; the individual ranks are the same
+for each of the four values of $g$.
+
+| Active address $a$ | Individual $R_{a,g}$: X, Y, Z | Sum over $g$: X, Y, Z |
+| --- | --- | --- |
+| 0 | (4, 8, 2) | (16, 16, 8) |
+| 3 | (4, 10, 4) | (16, 16, 16) |
+| 4 | (4, 8, 2) | (16, 16, 8) |
+| 9 | (2, 8, 4) | (8, 16, 16) |
+| 12 | (4, 10, 4) | (16, 16, 16) |
+
+There is a direct combinatorial rank proof. Write
+$R_a=\sum_{Q,R,g}h_a(Q,R)T_{Q,R,g}$. Distinct X-flattening rows
+have disjoint supports on the other two factors, since a pair of
+Y- and Z-edges determines both $g$ and $Q$. Thus their rank is four
+times the number of distinct $Q$ values in the support of $h_a$.
+The other summed ranks are four times the corresponding numbers of
+$R$ and $Q+R$ values. For a fixed $g$, the X and Z ranks are the
+numbers of $Q$ and $Q+R$ values; the Y rank is the number of
+nonzero pairs $(Q,R)$, since these Y rows have distinct singleton
+supports on the XZ factors. Substitution of the displayed matrix
+$K$ gives the table. The checker also constructs the flattening
+matrices for each individual $g$ and for their sum, and computes
+their ranks independently.
+
+Every tensor in the stated canonical $V_{\rm act}$ has ambient
+factor dimensions $(4,4,3)$ and therefore has flattening ranks at
+most $(4,4,3)$. Every individual diagnostic $R_{a,g}$ already has Y-flattening
+rank at least eight, so it cannot lie in a copy of the specified
+canonical active space. This comparison does not assume that the
+four fresh $g$ records must share a single canonical block. The
+summed-rank column is supplementary and is not used to impose
+such a grouping. At addresses 3 and 12, even an individual
+$g$ residual has border rank at least ten. This rules out the
+particular componentwise physical-cycle reconstruction above; it
+does not refute an alternative unprinted selector or the full
+propagation theorem.
+
+## Exact implementation of the fresh face action
+
+The four diagonal face operators can be pulled back to the literal
+rank-four source family without increasing the source size. This is
+a positive check; an initially tempting source-sign interpretation
+must be corrected.
+
+Let $r_1(t),\ldots,r_4(t)$ be the four rank-one summands of (7.3),
+in their printed order, and let $L=\mathop{\mathrm{diag}}(s_1,s_2,s_3,s_4)$.
+Multiplying the summands by the four signs is not the same as
+applying $L$ to the canonical X factor. Direct expansion gives
+
+```math
+\sum_{i=1}^4s_i r_i(t)
+=t^{-1}(s_2-s_1)x_2y_1z_0
+ +L_X\mathcal A_{\rm can}+t s_2J.
+```
+
+For the four printed face operators, the pole coefficients are
+respectively $0,-2,-2,0$. Thus uncorrected Walsh signs on the four
+rank-one summands would destroy two of the pole cancellations.
+
+However, the literal source-to-target map on the X factor is
+
+```math
+A_X(t)=\begin{pmatrix}
+-t&0&0&0\\
+1&1&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix}.
+```
+
+Define the fixed, degree-zero source-side matrix
+
+```math
+S_L=L+(s_2-s_1)E_{21}.
+```
+
+Direct multiplication proves
+
+```math
+A_X(t)S_L=L A_X(t).
+```
+
+Therefore applying $S_L$ on the source X factor implements exactly
+$L_XR_t$, with no pole and no extra rank-one directions. For the
+four faces these source matrices satisfy
+$S_{L_\rho}S_{L_\sigma}=S_{L_{\rho+\sigma}}$, either by direct
+multiplication or by conjugating the target group law through
+$A_X(t)$. The formula extends linearly to every diagonal $U$.
+
+The canonical active space is also invariant under these target
+actions: for diagonal $L,U$,
+
+```math
+L_X(U_X\mathcal A_{\rm can}+bJ)
+=(LU)_X\mathcal A_{\rm can}+b s_2J\in V_{\rm act}.
+```
+
+Thus a valid record embedding and residual calculation using only
+these internal actions would have a useful closure property.
+This calculation does not prove that the actual ordinary selector
+uses that embedding, or that $S_L$ commutes with the unspecified
+old-cycle projection. Those are distinct requirements.
+
+## Data still needed after this reconstruction
+
+The first fresh step requires more than the address matrix, which
+is now completely known. The remaining objects are:
+
+- The images of the three source basis vectors for each ordinary
+  carrier direction $(\lambda,g)$, retaining the old row, character,
+  channel, and support records. These determine the actual
+  tensor-valued right-hand sides $T_{\lambda,g}$.
+- The maps placing the resulting active residuals in the same
+  canonical factor spaces as $\mathcal A_{\rm can}$, together with
+  their coefficients $U$ and $b$.
+- The old-cycle projection on those record spaces, and exact
+  commutation identities for the ordinary selector and the source
+  face actions. The existence of a fixed source-side implementation
+  of a face action does not establish this commutation.
+- The induced versions of those three objects for the next state,
+  rather than only the identities and inventory of its retained
+  marked $D_4$ blocks.
+
+Appendix A.11 gives the order of assembly of the fixed 1024
+construction, but it does not specify a fresh $G$ ordinary-selector
+right-hand side for Lemma 10.4. Appendix A.13 lists fixed-base
+checks. Appendix B.3 gives the characteristic-two terminal address
+bijection and inventory. None of these displayed data supplies the
+missing odd-characteristic coefficient tensors in the calculation
+above. Consequently this reconstruction reaches an explicit
+operator and a precise missing input, rather than a verified
+propagation certificate.

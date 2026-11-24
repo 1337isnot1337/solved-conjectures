@@ -48,12 +48,13 @@ M_q\cong W_{AB}(q)\otimes W_{BC}(q)\otimes W_{CA}(q),
 | --- | --- | --- |
 | Every multiplicative cover functional is either the indicator of nonzero tensors or $F^h$, with $F$ normalized and $0\lt h\le1$. | [Normalized extension](NORMALIZED_EXTENSION.md), tensor-power type argument. | A classification by normalization exponent, not a classification of all normalized points. |
 | Any one fixed finite law on retractions admits a normalized extension preserving every old tensor value. | Same file, derived from pinned Anthropic Proposition A.7, a finite-product argument, and compactness. | The law is fixed before the extension is chosen. Different laws cannot be imposed on one extension without a compatibility proof. |
+| A normalized tripod scalar model retains perimeter $9/4$ even after intersecting submodularity, coherent retraction extension, full crossing, curvature, and all hypergraph terminal-mincut inequalities are imposed. | [Tripod countermodel](TRIPOD_COUNTERMODEL.md), explicit charge formula, mixed-derivative proof, and barycenter calculation. | This disproves sufficiency of the listed scalar requirements, including the proposed uncrossing axiom. It is not a tensor spectral point. |
 | Copying a tensor's input index to another party has exact rank equal to the sum of its matrix-slice ranks. | [Copied-input obstruction](COPIED_INPUT_OBSTRUCTION.md), matching flattening and decomposition. | Polynomial multiplication costs $ab$ after copying; matrix multiplication costs at least $n^3$ in every input basis. This is about the changed tensor. |
 | Simultaneous separation works for any fixed number of shared parties. | [Multiple-party separator](MULTIPLE_PARTY_SEPARATOR.md), an explicit sum-of-squares degeneration and type argument. | Independently reconstructed prior work of Zhou, not an original escape from Zhou's higher-order barrier. |
 | The scalar unit charge $g(P)=2\max_\mu\sum_{i,j}\mu_i\mu_jd_{ij}$ satisfies every graph minimum-cut inequality for Euclidean positions. | [Minimum-cut compatibility](MINCUT_COMPATIBILITY.md), Gaussian projection and threshold integration. | All finite auxiliary configurations, all terminal subsets, and all nonnegative edge weights. |
 | The equilateral normalized witness also satisfies hypergraph minimum-cut tests with terminals containing the original triangle. | Same file, explicit cap functions. | It remains a scalar assignment, with no values supplied on arbitrary tensors. |
 | Every terminal metric that embeds in a finite tree satisfies the same hypergraph minimum-cut inequality, even with arbitrary metric auxiliaries. | [Tree-terminal proof](TREE_TERMINAL_MINCUT.md), nonexpansive extension, a weighted tree-cut measure, and endpoint randomization. | This includes every terminal triple and every equilateral terminal set. A separate cap certificate also covers square terminals; its failure for thin rectangles is proved. The arbitrary Euclidean terminal case remains unresolved here. |
-| The overlapping-unit uncrossing conversion fails for every rank and every common full-unit catalyst. | [Overlapping units](OVERLAPPING_UNITS.md), a determinant-grid valuation argument, with independent binary polynomial certificates. | Source-only overhead is different. A rank-$\sqrt q$ unit suffices when $q$ is a square and is necessary if only the two outer maps are monomial; unrestricted subexponential overhead remains unresolved. |
+| The overlapping-unit uncrossing conversion fails for every $q\ge2$ and every common full-unit catalyst. | [Overlapping units](OVERLAPPING_UNITS.md), a determinant-grid valuation argument, with independent binary polynomial certificates. | Source-only overhead is different. A rank-$\sqrt q$ unit suffices when $q$ is a square and is necessary if only the two outer maps are monomial; unrestricted subexponential overhead remains unresolved. |
 | A required Weyl phase cannot be inserted freely into a collapsed group tensor. | [Sun phase audit](SUN_PHASE_AUDIT.md), a one-bit obstruction and the minimal-border-rank slice commutativity condition. | It does not exclude a construction from a richer source tensor. |
 | Two printed local maps in Sun v1 fail exact substitution, and specific local corrections repair those local identities. | [Crossed-map audit](SUN_CROSSED_MAP_AUDIT.md) and exact scripts. | Neither the full claimed theorem nor its negation follows from the local checks. |
 
@@ -71,7 +72,7 @@ Ordinary Euclidean realizability has no normalization content. Every nonzero met
 
 ## Sun audit: exact unresolved step
 
-[SUN_PROPAGATION_AUDIT.md](SUN_PROPAGATION_AUDIT.md) separates valid local calculations from the missing implication. The Walsh minors, first-difference identity, and combinatorial lift counts check. Definition 10.1(iii) also requires the fresh-coordinate residual to lie in a specified five-dimensional subspace after ordinary rows are eliminated. The checked first-jet identity does not establish that residual condition for the bases or prove that it persists after another propagation step.
+[SUN_PROPAGATION_AUDIT.md](SUN_PROPAGATION_AUDIT.md) separates valid local calculations from the missing implication. The Walsh minors, first-difference identity, combinatorial lift counts, exact ordinary-to-active leakage operator, and a fixed source-side implementation of the face action check. Definition 10.1(iii) also requires the fresh-coordinate residual to lie in a specified five-dimensional subspace after ordinary rows are eliminated. The checked first-jet identity does not establish that residual condition for the bases or prove that it persists after another propagation step.
 
 The phase audit likewise distinguishes a correct desired output and correct scalar identities from three local maps that produce that output from the declared source. The richer map entries and their compatibility are the remaining certificate to verify. This work does not import the exponent-two conclusion while that dependency remains unresolved.
 
@@ -83,7 +84,7 @@ For four parties, a tempting new inequality is intersecting submodularity of par
 u(S)+u(T)\ge u(S\cup T)+u(S\cap T).
 ```
 
-It passes every flattening point and would exclude a small square inside the scalar equilateral model. Its most direct finite proof, however, is impossible. With
+It passes every flattening point and excludes a small square inside the Euclidean scalar model. A different [tripod scalar model](TRIPOD_COUNTERMODEL.md), however, satisfies this inequality along with normalization, coherent extensions, crossing, curvature, and all hypergraph mincut tests, while retaining perimeter $9/4$. Thus even adding this inequality does not make that enlarged scalar system sufficient. Its most direct finite tensor proof is also impossible. With
 
 ```math
 X_q=U_{ABC}(q)\otimes U_{ABD}(q),\qquad
@@ -92,7 +93,7 @@ Y_q=U_{ABCD}(q)\otimes U_{AB}(q),
 
 the determinant-pencil theorem in [OVERLAPPING_UNITS.md](OVERLAPPING_UNITS.md) proves that $Y_q$ is not a degeneration of $X_q$ for any $q\ge2$, even with any common full-unit catalyst. It therefore excludes every equal-power version as well. A separate degree-four covariant proof and an exact degree-eight invariant check confirm the binary case.
 
-The argument does not exclude source-only unit overhead. A sharp calculation in the restricted class with monomial maps on the two outer parties requires overhead at least $\sqrt q$, and an explicit restriction attains it for square $q$. Every three-party regrouping admits the desired conversion. Thus any unrestricted asymptotic obstruction must use four-party information and survive arbitrary mixing on those outer parties. The full spectral inequality remains unresolved.
+The argument does not exclude source-only unit overhead. A sharp calculation in the restricted class with monomial maps on the two outer parties requires overhead at least $\sqrt q$, and an explicit restriction attains it for square $q$. Every three-party regrouping admits the desired conversion. Thus any unrestricted asymptotic obstruction must use four-party information and survive arbitrary mixing on those outer parties. The full spectral inequality remains unresolved; the tripod countermodel shows that it would not alone supply the missing perimeter bound from the listed scalar constraints.
 
 ## Remaining mathematical obligation
 
@@ -103,7 +104,7 @@ d_{AB}+d_{BC}+d_{CA}\le2
 \qquad\text{for every }F\in\Delta_3,
 ```
 
-or supply an equivalent asymptotic degeneration. To disprove the target, construct a function on all tensors satisfying every spectral axiom and having perimeter greater than two. A scalar metric satisfying necessary inequalities is insufficient. Verifying and repairing Sun's full source-to-target map and the residual induction would be another route; any resulting prior theorem would be credited to its author.
+or supply an equivalent asymptotic degeneration. The tripod theorem identifies a precise limitation: this implication must use information beyond the scalar constraints verified there. To disprove the target, construct a function on all tensors satisfying every spectral axiom and having perimeter greater than two. A scalar metric satisfying necessary inequalities is insufficient. Verifying and repairing Sun's full source-to-target map and the residual induction would be another route; any resulting prior theorem would be credited to its author.
 
 These obligations remain unresolved. All partial results are retained under `research/`; there is no solved-results entry for this target.
 
@@ -117,6 +118,7 @@ python3 check_sun_phase_and_mask.py
 python3 check_sun_crossed_map.py
 python3 check_sun_propagation_local.py
 python3 check_unit_uncrossing.py
+python3 check_tripod_countermodel.py
 ```
 
 All scripts except the propagation-local script use Python's standard library; that script also uses SymPy. They check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
