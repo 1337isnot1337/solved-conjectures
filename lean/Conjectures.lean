@@ -1,3 +1,5 @@
+import Conjectures.FanTringaliBasic
+import Conjectures.FanTringaliGadget
 import Conjectures.CoulangeonLazzariniShells
 import Conjectures.CoulangeonLazzariniRealLattice
 import Conjectures.ThueMorseValuationBasic

@@ -3243,3 +3243,8 @@ of the exact one-module project closure passed. The audit admits only
 exact source and object hashes, audit source and records, and replay log.
 The additional positive-beta families and derivative refinements in the
 written proof are not formalized. The combined repository gate is pending.
+
+
+## Fan–Tringali’s power-monoid length-set conjecture
+
+Partial Lean verification: the arbitrary-coordinate Boolean-box divisor/atom/factorization classification and the universally quantified local domino gadget are checked. The [entry’s scope note](../results/fan-tringali-power-monoid-lengths/LEAN.md) lists the missing graph, radix, realization and monoid-transfer arguments. [Receipt](verification/lean-fan-tringali-20261124-162051/receipt.json): strict source builds, all-owned transitive axiom audit and stock-kernel replay passed for the two-module checkpoint. The full conjecture is not counted as formalized.

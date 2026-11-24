@@ -1691,3 +1691,8 @@ records 25 declarations, 22 theorems, eight private declarations, and the
 standard three-axiom whitelist. The root result is a full disproof of the
 universal source conjecture; the additional positive-beta and all-slope
 families remain unformalized. The combined repository gate remains pending.
+
+
+## Fan–Tringali’s power-monoid length-set conjecture
+
+Partial Lean verification: the arbitrary-coordinate Boolean-box divisor/atom/factorization classification and the universally quantified local domino gadget are checked. The [entry’s scope note](../results/fan-tringali-power-monoid-lengths/LEAN.md) lists the missing graph, radix, realization and monoid-transfer arguments. [Receipt](verification/lean-fan-tringali-20261124-162051/receipt.json): strict source builds, all-owned transitive axiom audit and stock-kernel replay passed for the two-module checkpoint. The full conjecture is not counted as formalized.
