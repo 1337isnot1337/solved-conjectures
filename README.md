@@ -18,8 +18,10 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Hegyvári’s conjecture](results/hegyvari-floor-doubling/) | ⬜ |
 | [Kovalev’s linear Lipschitz clustering questions](results/kovalev-lipschitz-clustering/) | ⬜ |
 | [Revised Tan–Zhou conjecture](results/revised-tan-zhou-luroth/) | ⬜ |
+| [Simmons–Weiss’s Hausdorff-measure question](results/simmons-weiss-hausdorff/) | ⬜ |
 | [Gravgaard–Lee’s mixed Lüroth sumset conjecture](results/gravgaard-lee-mixed-luroth/) | ⬜ |
 | [Gravgaard–Lee’s large-digit Lüroth sumset conjecture](results/gravgaard-lee-large-luroth/) | ⬜ |
+| [Gravgaard–Lee’s Lüroth diameter question](results/gravgaard-lee-diameter-condition/) | ⬜ |
 | [Gravgaard–Lee’s mixed upper/lower Lüroth conjecture](results/gravgaard-lee-upper-lower-luroth/) | ⬜ |
 | [Johnson's conjecture](results/johnson-pfaffian/) | 🟡 |
 | [Chen–Khare–Sahi's conjecture](results/chen-khare-sahi-macdonald/) | 🟡 |
@@ -69,6 +71,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Rossi’s permutohedron characteristic-polynomial conjecture](results/rossi-permutohedron-roots/) | ⬜ |
 | [Ferroni–Higashitani’s first-three interior Ehrhart question](results/ferroni-higashitani-early-interior-ehrhart/) | ⬜ |
 | [Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture](results/fmp-cylindric/) | ⬜ |
+| [Cyrusian–Kaplan’s ordinarization quasipolynomial question](results/cyrusian-kaplan-ordinarization/) | ⬜ |
 | [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ |
 | [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ |
 | [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ |

@@ -81,8 +81,10 @@ proofs are documented separately in the catalogue and result package.
 | Hegyvári’s conjecture | Not formalized | Proves strong completeness of the two-ray set across the remaining rational ratios that are not powers of two, with exact strong-completeness obstructions. |
 | Kovalev’s linear Lipschitz clustering questions | Not formalized | Constructs convex-hull-preserving finite-subset retractions with a dimension-free linear Lipschitz bound, uniformly for every target size. |
 | Revised Tan–Zhou conjecture | Not formalized | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. |
+| Simmons–Weiss’s Hausdorff-measure question | Not formalized | Proves natural-Hausdorff-almost-sure non-bad approximation after every irrational translate of a bounded continued-fraction Cantor set. |
 | Gravgaard–Lee’s mixed Lüroth sumset conjecture | Not formalized | Proves that the mixed bounded-digit Lüroth sum represents every residue modulo one, with an explicit ordinary interval in the sum. |
 | Gravgaard–Lee’s large-digit Lüroth sumset conjecture | Not formalized | Gives a positive-length ordinary sum interval for every lower digit threshold, using two expansions whose combined digits strictly increase. |
+| Gravgaard–Lee’s Lüroth diameter question | Not formalized | Removes the digit-bound separation condition when total diameter is at least one and determines the exact positive sum hull. |
 | Gravgaard–Lee’s mixed upper/lower Lüroth conjecture | Not formalized | Determines the exact sum interval for all matching upper and lower Lüroth digit thresholds, including genuine expansions at the required endpoints. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture | Not formalized | Proves the derangement proportion tends to zero, with every fixed diagonal count diverging in probability. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture | Not formalized | Refutes every proposed fixed power exponent by exact finite two-branch counting and saturation of the occupation loss. |
@@ -122,6 +124,7 @@ proofs are documented separately in the catalogue and result package.
 | Rossi’s permutohedron characteristic-polynomial conjecture | Not formalized | Proof of the exact all-n root intervals in Conjecture 6.16, by a uniform alternating sign grid with an exact finite initial bridge. No q-deformation claim. |
 | Ferroni–Higashitani’s first-three interior Ehrhart question | Not formalized | A very ample, IDP counterfamily fails at the first three interior counts, answering Question 5.12(a). The already resolved part (b) is distinct. |
 | Ferroni–Morales–Panova’s cylindric Ehrhart-positivity conjecture | Not formalized | Refutes the exact relaxed-seam unpinned conjecture and proves positivity for standard periodic partition boundaries. |
+| Cyrusian–Kaplan’s ordinarization quasipolynomial question | Not formalized | Proves a genus quasipolynomial for every fixed ordinarization number, valid at every positive genus, and eventual strict monotonicity. |
 | Coulangeon–Lazzarini’s two-shell conjecture | Not formalized | Analytic counterexample and arbitrary-delay families, with independent exact enumeration of the dimension-ten witness. |
 | Alexandersson’s parking-function excedance conjecture | Not formalized | Exact integer and rational counterexample at length 17; two independent counting recurrences. |
 | Tom–Vailaya’s weighted trace conjecture | Not formalized | Complete proposed written proof of journal Conjecture 74 for all natural unit interval graphs on at least two vertices. Internal mathematical review and 585 independent exact small-case checks; no Lean verification or external refereeing. |
