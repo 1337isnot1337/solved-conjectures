@@ -719,7 +719,6 @@ classification and final uniqueness remain open, so no result directory
 becomes complete from this reduction.
 [Exact hypotheses, cutoffs and scope](loneliness-large-norm-lean.md).
 
+## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
 
-
-
-
+The complete 12-module closure passed fresh strict source builds, the all-owned/private audit (664 declarations, 475 theorems, 173 private declarations, 29 required endpoints), and exact stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` occur. The [receipt](verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json), [statement correspondence](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md), and [independent review](../results/gravgaard-lee-upper-lower-luroth/LEAN_REVIEW.md) bind those checks to the all-threshold theorem and actual infinite expansions. The portable command is `cd lean && lake env python3 ../scripts/verify_gravgaard_lee_upper_lower.py`. The aggregate gate and public deployment remain separate; see [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563).

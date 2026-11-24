@@ -8,6 +8,13 @@ modules=(
   Conjectures.AlmironMoyanoWilfAntichains
   Conjectures.AlmironMoyanoWilfGeneratorCount
   Conjectures.AlmironMoyanoWilfFixedThreshold
+  Conjectures.GravgaardLeeUpperLowerMoves
+  Conjectures.GravgaardLeeUpperLowerOrbit
+  Conjectures.GravgaardLeeUpperLowerRepair
+  Conjectures.GravgaardLeeUpperLowerForcing
+  Conjectures.GravgaardLeeUpperLowerConvergence
+  Conjectures.GravgaardLeeUpperLowerTwo
+  Conjectures.GravgaardLeeUpperLower
   Conjectures.GravgaardLeeUpperLowerBasic
   Conjectures.GravgaardLeeUpperLowerCylinders
   Conjectures.GravgaardLeeUpperLowerLinked

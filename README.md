@@ -20,7 +20,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **5.** [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ | **44.** [Circulants with circular chromatic index in the upper half](results/circular-index-upper-half-circulants/) | 🟡 |
 | **9.** [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ | **45.** [Johnson–Kaya–Matzke conjecture on Babai spectra of paths](results/babai-spectrum-paths/) | ✅ |
 | **10.** [Ulas’s disjoint-block square-product conjecture](results/ulas-disjoint-square-blocks/) | 🟡 | **45.** [Rectangle partition asymptotics](results/rectangle-partition-asymptotics/) | ✅ |
-| **11.** [Gravgaard–Lee’s mixed upper/lower Lüroth conjecture](results/gravgaard-lee-upper-lower-luroth/) | 🟡 | **47.** [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | ✅ |
+| **11.** [Gravgaard–Lee’s mixed upper/lower Lüroth conjecture](results/gravgaard-lee-upper-lower-luroth/) | ✅ | **47.** [Chen–Kitaev–Zhang's record conjectures](results/chen-kitaev-zhang-records/) | ✅ |
 | **12.** [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ | **47.** [Ferreira–Simon's diagonal Mittag–Leffler conjecture](results/ferreira-simon-diagonal/) | ⬜ |
 | **12.** [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | ✅ | **49.** [Generalized Bulgarian solitaire limit shapes](results/l-solitaire-limit-shapes/) | ✅ |
 | **14.** [Kovalev's conjecture](results/kovalev-hardy-duality/) | ⬜ | **49.** [Distance graphs with three missing differences](results/distance-graph-densities/) | ✅ |
