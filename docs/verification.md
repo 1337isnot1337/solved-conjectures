@@ -13,6 +13,12 @@ lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoste
 
 [Source correspondence and axiom audit](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
 
+## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
+
+The [complete target receipt](verification/juhnke-20261124/receipt.json) records fresh strict compilation of all 18 project modules, the unchanged audit of all 577 owned declarations (502 theorems and 11 required endpoints), and unchanged stock-kernel replay. The pinned Lean version is 4.35.0; the only allowed transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The complete source statement and literal-path bridge were independently reviewed against the original report.
+
+The dedicated `lean-juhnke.yml` workflow reproduces the target check with `scripts/verify_lean_target.py`. Its target receipt does not claim repository-wide verification of unrelated entries. The existing exact diagnostic checker also passed dimensions 3 through 62; the Lean theorem has unbounded dimension and step-count parameters.
+
 ## Steinerberger’s quantitative Feldheim-tail conjecture
 
 The [complete Lean disproof](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md)

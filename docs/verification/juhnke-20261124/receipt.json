@@ -1,0 +1,359 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-24T16:53:00.881621+00:00",
+  "finished_at": "2026-11-24T16:54:46.600914+00:00",
+  "root": "Conjectures.JuhnkePathsTheorem",
+  "project_modules": [
+    "Conjectures.JuhnkeAlternating",
+    "Conjectures.JuhnkeCompositions",
+    "Conjectures.JuhnkeConjecture",
+    "Conjectures.JuhnkeLogConcavity",
+    "Conjectures.JuhnkePathsBasic",
+    "Conjectures.JuhnkePathsBoundary",
+    "Conjectures.JuhnkePathsBoundaryConcavity",
+    "Conjectures.JuhnkePathsCuts",
+    "Conjectures.JuhnkePathsOriginal",
+    "Conjectures.JuhnkePathsPolynomial",
+    "Conjectures.JuhnkePathsRuns",
+    "Conjectures.JuhnkePathsSteps",
+    "Conjectures.JuhnkePathsTheorem",
+    "Conjectures.JuhnkePolynomial",
+    "Conjectures.JuhnkeRunLengths",
+    "Conjectures.JuhnkeRuns",
+    "Conjectures.JuhnkeUnimodality",
+    "Conjectures.JuhnkeUnitRuns"
+  ],
+  "required_endpoints": [
+    "Juhnke.juhnke_conjecture",
+    "Juhnke.originalPathCount_logConcave",
+    "Juhnke.originalPathCount_unimodal",
+    "Juhnke.literalPathStepsEquiv",
+    "Juhnke.literalPathCutsEquiv",
+    "Juhnke.unitWordMaximalEquiv",
+    "Juhnke.unitWordAlternatingLengthsEquiv",
+    "Juhnke.pathPolynomial_sum_runCounts",
+    "Juhnke.originalPathPolynomial_translated",
+    "Juhnke.originalEndpoint_total",
+    "Juhnke.combined_pathPolynomial"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/JuhnkeAlternating.lean": "84ca1768dff3ef49bdb68f789af08a110deb619e62f99b1052056f24023a9218",
+    "lean/Conjectures/JuhnkePathsCuts.lean": "3513eef98a704f1bbd96ca58e60ab359a4be6798a965e1657ed8512d4b24d44e",
+    "lean/Conjectures/JuhnkePathsTheorem.lean": "c01c53f6dab971ff91c2aed7fa2ca50aa799d9f8bfe97b5fde6a4c1531449e5d",
+    "lean/Conjectures/JuhnkeUnitRuns.lean": "93e5d13f50e6413a08611e037f6934d23a24da7e5083256bef4c19248e262331",
+    "lean/Conjectures/JuhnkeUnimodality.lean": "c55503d7ceadc8c1488afc871d3bb8fac1b8b30bb510f1cb8540981e873d361b",
+    "lean/Conjectures/JuhnkePathsBoundaryConcavity.lean": "d9a407e355d6808bd069c7394b516c8cf60df43b063c0831a76e64d9530750f8",
+    "lean/Conjectures/JuhnkePathsPolynomial.lean": "92d73046b165c41caf3b39350e05a5a59db51ffd92fd1f271d1737e358f5b0ed",
+    "lean/Conjectures/JuhnkeConjecture.lean": "de2386e3d04b543f1205e60adacb9a85df82d74932fdb8fd99ba2e83b1383ee6",
+    "lean/Conjectures/JuhnkePolynomial.lean": "f5597d5453fdbb0f7fe7a8d001de21fcaa7ac3e6ad6cd44e029d7c7eff2eec58",
+    "lean/Conjectures/JuhnkeCompositions.lean": "1d1e85f69a8d0e2f6a9f5d0453f246956fa9144cfe5eb2112821f23637abe324",
+    "lean/Conjectures/JuhnkePathsBoundary.lean": "47686fb3598f08bbeaed3c34fd53cf07cb901815d2183d55ce9afccf64e5dbe0",
+    "lean/Conjectures/JuhnkeRuns.lean": "04b94cd5512d569317f190157352964f41b4f10ee7a7ce246587b26267821db1",
+    "lean/Conjectures/JuhnkePathsSteps.lean": "8f32aff3035423ccf54607f53cc0a2d2cc08dcbff94f3348f631dfc8711c308a",
+    "lean/Conjectures/JuhnkePathsOriginal.lean": "ff92b8b44785bad4f494cebee6fe08072781408b26d0fb1e5d6ec34161e6d5d2",
+    "lean/Conjectures/JuhnkePathsRuns.lean": "327698c95d32127bea7a49ed25979c0bd6c803670ca57184cbf1da4ecab87779",
+    "lean/Conjectures/JuhnkeLogConcavity.lean": "e6affa8d6c25d2c58bbd4ab68ff64b0c55a9d1ed5f5515968b2663335499375f",
+    "lean/Conjectures/JuhnkePathsBasic.lean": "8c6189f7d88a17c7216c15e2f75b7e0a62ec6367a8b14934098ccdedf2d2771c",
+    "lean/Conjectures/JuhnkeRunLengths.lean": "596e238e2ec334b7c540c2fa2ec7c24bf67b3dbe133045b71a62332a07f4d0ab"
+  },
+  "verification_script_sha256": {
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkeCompositions.olean",
+        "Conjectures/JuhnkeCompositions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkeCompositions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkePathsBasic.olean",
+        "Conjectures/JuhnkePathsBasic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkePathsBasic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkeRunLengths.olean",
+        "Conjectures/JuhnkeRunLengths.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkeRunLengths.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkeAlternating.olean",
+        "Conjectures/JuhnkeAlternating.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkeAlternating.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkePathsCuts.olean",
+        "Conjectures/JuhnkePathsCuts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkePathsCuts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkePathsRuns.olean",
+        "Conjectures/JuhnkePathsRuns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkePathsRuns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkeUnitRuns.olean",
+        "Conjectures/JuhnkeUnitRuns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkeUnitRuns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkePathsPolynomial.olean",
+        "Conjectures/JuhnkePathsPolynomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkePathsPolynomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkePathsBoundary.olean",
+        "Conjectures/JuhnkePathsBoundary.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkePathsBoundary.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkeLogConcavity.olean",
+        "Conjectures/JuhnkeLogConcavity.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkeLogConcavity.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkeRuns.olean",
+        "Conjectures/JuhnkeRuns.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkeRuns.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkePolynomial.olean",
+        "Conjectures/JuhnkePolynomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkePolynomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkeUnimodality.olean",
+        "Conjectures/JuhnkeUnimodality.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkeUnimodality.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkeConjecture.olean",
+        "Conjectures/JuhnkeConjecture.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkeConjecture.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkePathsOriginal.olean",
+        "Conjectures/JuhnkePathsOriginal.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkePathsOriginal.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkePathsBoundaryConcavity.olean",
+        "Conjectures/JuhnkePathsBoundaryConcavity.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkePathsBoundaryConcavity.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkePathsSteps.olean",
+        "Conjectures/JuhnkePathsSteps.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkePathsSteps.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JuhnkePathsTheorem.olean",
+        "Conjectures/JuhnkePathsTheorem.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JuhnkePathsTheorem.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/ee2d4cb3756d/environment/juhnke-complete-verification/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/tmp/solved-conjectures-20261124-161951/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.JuhnkePathsTheorem"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 577,
+    "modules": 18,
+    "private_declarations": 0,
+    "raw_declarations": 577,
+    "required": 11,
+    "tag": "passed",
+    "theorems": 502
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

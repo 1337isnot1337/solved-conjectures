@@ -13,6 +13,24 @@ modules=(
   Conjectures.CaioloFerroniHosterFlagPolynomials
   Conjectures.CaioloFerroniHosterCertificate
   Conjectures.CaioloFerroniHoster
+  Conjectures.JuhnkeAlternating
+  Conjectures.JuhnkeCompositions
+  Conjectures.JuhnkeConjecture
+  Conjectures.JuhnkeLogConcavity
+  Conjectures.JuhnkePathsBasic
+  Conjectures.JuhnkePathsBoundary
+  Conjectures.JuhnkePathsBoundaryConcavity
+  Conjectures.JuhnkePathsCuts
+  Conjectures.JuhnkePathsOriginal
+  Conjectures.JuhnkePathsPolynomial
+  Conjectures.JuhnkePathsRuns
+  Conjectures.JuhnkePathsSteps
+  Conjectures.JuhnkePathsTheorem
+  Conjectures.JuhnkePolynomial
+  Conjectures.JuhnkeRunLengths
+  Conjectures.JuhnkeRuns
+  Conjectures.JuhnkeUnimodality
+  Conjectures.JuhnkeUnitRuns
   Conjectures.SteinerbergerFeldheimBasic
   Conjectures.SteinerbergerFeldheimBounds
   Conjectures.SteinerbergerFeldheimQuantities
