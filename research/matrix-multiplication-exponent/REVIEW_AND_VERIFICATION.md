@@ -28,6 +28,9 @@ The concurrent scalar construction in [PR #254](https://github.com/1337isnot1337
 | Overlapping units | Determinant-grid factorization, valuation limits, catalyst multiplicities, independent binary polynomial certificates, the sharp restricted source-overhead bound, and all three-party regroupings. | Finite and common-catalyst obstructions do not exclude unrestricted source-only subexponential overhead. |
 | Full-tensor rigidity | Zero-distance teleportation, normalized quotient additivity, geodesic face normalization, edge uniqueness, and the genuine non-Hilbert quantum example. | The overlap of three rigid restrictions has not been proved to fix the full-unit charge. |
 | Edge metric rigidity | Normalization of every triple through a unit wire; interval placement by CAT(0) uniqueness and an independent finite dyadic-CN proof; subset charges; threshold construction; the signed Gram formula. | The general CAT(0) counterexample is not a tensor price, and the boundary conclusion is not extended to interior wire triples. |
+| Geodesic unit trade | Common-centroid kernel semicontinuity, preservation under the auxiliary map, the scalar target centroid, equal powers and common catalysts, and the conditional cancellation of neutral-wire prices. | Source-only overhead changes the square local maps to rectangular ones; no asymptotic obstruction or conversion is supplied. |
+| Flattening tangents | The two explicit wire-transfer restrictions, uniform bounds for arbitrary spectral lifts, compactness on all finite tensors, additive and product identities, rank-preserving monotonicity, slice-cover bound, and exact value on matrix multiplication. | The required sign is unresolved; no differentiable lift or integration theorem is assumed. |
+| Square-zero module obstruction | The complete leading-order cocycle calculation, partial-trace integrability, spectral-projector decomposition, faithful radical filtration, all-order shear induction, and normalization of the identity slice in a Laurent rank family. | The theorem requires $`n\ge2`$ and $`m\le n`$; it does not give a matrix multiplication lower bound or rule out larger or changed sources. |
 | Tripod extension criterion | Necessity by arbitrary coefficient contraction at the new party; resource-cover preservation; saturation; compactness; the separate wire-only four-generator pinning argument. | The equivalent all-tensor and finite-cover conditions remain unproved for arbitrary realized wire triples. |
 | Copied-factor counterexample | The normalized quantum point, invertible shear, disjoint blocks, exact original value three, and restricted value at least $`2^{5/3}`$. | It disproves the proposed copied-factor monotonicity, not every possible gluing argument. |
 | Triangle subspace frame bound | The projector trace estimate, frame eigenvalue, commuting-projector specialization, and Laurent-limit estimate. | The least positive frame eigenvalue is not bounded uniformly for arbitrary maps. |
@@ -47,6 +50,15 @@ TNT lemma was independently derived and reviewed. The fixed-version
 Jelisiejew theorem and the FJM PDF formulas were checked in primary sources.
 The Sun base-map note records an unresolved composition; it does not certify
 the claimed base or disprove its abstract rank bound.
+
+The geodesic trade and its conditional cancellation criterion received
+independent review from the spectral worker and root. The module obstruction
+received independent file-level adversarial review from the spectral worker
+and root. The first-order tangent reduction was
+reviewed by the constructive worker and root. Its imported star-convexity
+and asymptotic-subrank theorem numbers were checked in the cited primary
+versions. These two arguments are symbolic written proofs; no additional
+finite checker or Lean verification is claimed.
 
 This checkpoint additionally reviews the weighted-support relaxation, the coefficient-independent Koszul pivot proof, the ordinary-block commutator, the weighted tetrahedral determinant, and the four-label resource certificate. The root reviewer checked the precise Landsberg--Michałek and Li statements in their primary sources. The weighted lower-bound proof was separately challenged by both other research workers. These reviews establish the stated finite obstructions and conditional criteria, not the exponent-two conclusion.
 
@@ -110,5 +122,7 @@ Coordination and the adversarial-review request are in [issue #250](https://gith
 - [PR #279](https://github.com/1337isnot1337/solved-conjectures/pull/279) contains the general free-set separator and explicit zero-overhead asymptotic uncrossing. Its merge commit is `cba48e18689ba82822f34776f8c39739edad3c03`; all eleven changed files match the reviewed local Git blob hashes.
 
 - [PR #284](https://github.com/1337isnot1337/solved-conjectures/pull/284) contains the normalized tripod criteria, interval boundary rigidity, copied-factor counterexample, frame bound, and stronger lift. Its merge commit is `54a36272109a3911c880ecb05ac7408550176bea`; all seven changed files match the reviewed artifacts.
+
+- [PR #286](https://github.com/1337isnot1337/solved-conjectures/pull/286) contains the polynomial and convolution source obstructions, trace-cubic certificate, smoothable enlargement, Heisenberg target, and Sun base-map audit. Its merge commit is `ea3d0a535ebc4111f9a872284314a96eb9164281`; all ten changed files match the reviewed artifacts.
 
 All files remain under `research/`. No root Results-table row, solved-conjecture directory, Lean theorem, or claimed kernel-verification status was added for this target. Repository-wide hosted checks are reported separately in the PR conversation; a successful existing Lean workflow does not formalize these new Markdown proofs.

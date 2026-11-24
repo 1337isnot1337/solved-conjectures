@@ -135,3 +135,14 @@ The matrix-power, rational-level and fold restrictions are not cited as known bo
 - Bremner, the 2008 primary article cited above, Section 3, printed pages 389–390, supplies the second plane cubic and its fixed-degree root representatives. SQUARE_CHAIN_SECOND.md derives an explicit birational map and proves its additional prefix-collision statements. The first and second families are not asserted to exhaust rational square chains.
 - [SOURCE_REFRESH_2026.md](SOURCE_REFRESH_2026.md) records the inspected 2026 factorization, border-factor, dense-GCD and ideal-extraction statements with theorem numbers and versioned primary links. It also inspects the actual TeX and Lean scope of a recent tau-related preprint. No checked source supplies the unrestricted root bound or a constant-free, degree-independent extraction from all consecutive-root multiples.
 - [SELECTION_SCOPE.md](SELECTION_SCOPE.md) supplies primary references for the factorial/primorial powering relation, including Cheng's 25 May 2004 author version, Lemma 1, and Markström, Integers 15 (2015), A6. Its quantitative difference-group comparison cites the inspected Alon–Solymosi author version, Theorems 1 and 11. The new implications are proved directly in the note.
+
+
+- CHARGED_HEIGHT.md uses the same visually inspected Risler Proposition 3.1 and proves the charged coefficient norm, integer-root divisibility, optimization and inversion directly. Its extra factor is not attributed to a stronger imported real-root theorem.
+- SQUARE_CHAIN_SCOPE.md uses Bremner 2008, Table 1, entry 4, printed page 387, and credits Michael E. Paul as specified on page 388. The source's root example is reconstructed exactly; the signed four-term and eight-term nonmembership certificates are proved in the note.
+
+
+- SQUARE_CHAIN_COMPLEMENT.md completes the remaining pairing case for the displayed Bremner families. The rational-root exclusion uses a self-contained finite-field lifting and two-dimensional shortest-vector lemma, rather than importing a factorization or general lattice-reduction theorem. No claim about arbitrary rational points of Bremner's larger threefold follows.
+- RATIONAL_POLE_SELECTION.md proves its irreducible-shift bound, two-center jet example and charged conditional projection reduction directly. Galois averaging is explicitly distinguished from selecting singleton orbits.
+
+
+- NONRATIONAL_POLE_FILTERS.md proves its translate-coprimality, Laurent-order and Eisenstein-density arguments directly, extending only the explicitly stated universal fixed-probe model in ANCHORED_DIFFERENCES.md. A short polynomial may have exponentially high degree, so no circuit lower bound is inferred from the coefficient-degree restriction.

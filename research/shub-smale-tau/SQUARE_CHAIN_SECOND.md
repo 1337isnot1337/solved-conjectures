@@ -1,6 +1,6 @@
 # Prefix collisions in the second Bremner square-chain family
 
-Status: open research. This note continues [SQUARE_CHAIN_EXTENSION.md](SQUARE_CHAIN_EXTENSION.md). It excludes cross-family and ordinary second-family prefix lifts, and proves a common-rotation restriction. The complementary-prefix case and arbitrary rational square chains remain unresolved. No unbounded-depth construction or tau bound is proved.
+Status: open research. This note continues [SQUARE_CHAIN_EXTENSION.md](SQUARE_CHAIN_EXTENSION.md). It excludes cross-family and ordinary second-family prefix lifts, and proves a common-rotation restriction. The complementary-prefix case is resolved separately in [SQUARE_CHAIN_COMPLEMENT.md](SQUARE_CHAIN_COMPLEMENT.md). Arbitrary rational square chains remain outside these results. No unbounded-depth construction or tau bound is proved.
 
 ## 1. An explicit map for the second family
 
@@ -351,8 +351,7 @@ Two nondegenerate rational chains in the second cubic family with the
 same normalized prefix `q,r` have the same normalized final coefficient
 `z`. They therefore cannot supply the degree-32 prefix lift. The same
 statement holds if both chains are Hadamard transformed. The case
-where exactly one chain is Hadamard transformed is separate and remains
-unresolved below.
+where exactly one chain is Hadamard transformed is separate and is resolved in [SQUARE_CHAIN_COMPLEMENT.md](SQUARE_CHAIN_COMPLEMENT.md).
 
 **Proof.** The direct chart argument in Section 3 covers every
 nondegenerate rational second-family point by (1.3)--(1.4).
@@ -514,7 +513,7 @@ divides a numerator or denominator of the explicit `q_2,r_2,z_2`.
 The latter gives an additional independent admissibility check;
 the proof above uses the simpler rational-root exclusions.
 
-### 4.2 Complementary prefixes remain unresolved
+### 4.2 Complementary prefixes require a separate certificate
 
 Hadamard pairing inside the second family requires a separate check.
 If exactly one chain is transformed, the equations are
@@ -526,6 +525,5 @@ q_2(X)+q_2(T)=1,\qquad r_2(X)=r_2(T).
 
 Unlike the first family, no rational change of `X` realizing this
 transformation has been established here. The resultant (4.5) does
-not test (4.8). These complementary-prefix fibers are explicitly
-unresolved. When both chains are transformed the equality reduces
+not test (4.8). These complementary-prefix fibers are excluded by the separate symmetric resultant and lattice certificate in [SQUARE_CHAIN_COMPLEMENT.md](SQUARE_CHAIN_COMPLEMENT.md), Theorem 3.1. When both chains are transformed the equality reduces
 to the ordinary self-collision equations already stated.

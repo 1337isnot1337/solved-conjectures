@@ -3,7 +3,10 @@
 Status: research. The recent resultant, prime-selection, and collision-
 energy attacks have produced no new unrestricted upper bound on the
 number of integer roots in terms of program length alone. The full tau
-conjecture remains unresolved.
+conjecture remains unresolved. A later charged-height combination in
+[CHARGED_HEIGHT.md](CHARGED_HEIGHT.md) improves the previously recorded
+exponential estimate by a factor of order sqrt(s); it does not provide
+the missing polynomial prime-selection or collision-energy bound.
 
 ## 1. What unrestricted estimates actually remain established
 
@@ -30,7 +33,8 @@ displayed formula. This is a routine consequence of an imported real
 root theorem, not a new integer-specific asymptotic theorem.
 
 The recent prime arguments have not improved that unrestricted
-estimate. They establish exact identities, counterexamples to proposed
+estimate. The separate height refinement just cited uses the first
+nonzero coefficient and the two gate counts, without a prime selector. They establish exact identities, counterexamples to proposed
 gate rules, and restricted theorems. In particular, the desired upper
 bound for truncated collision energy is proved equivalent to tau in
 [COLLISION_ENERGY.md](COLLISION_ENERGY.md), Section 4; it is not a proved intermediate

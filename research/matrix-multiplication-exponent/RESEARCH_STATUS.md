@@ -183,10 +183,19 @@ theorem; it is not a border-rank or exponent lower bound for matrix
 multiplication.
 
 [SMOOTHABLE_MM_ENLARGEMENT.md](SMOOTHABLE_MM_ENLARGEMENT.md) gives a
-different algebra containing $`M_n`$, an explicit splitting deformation
-followed by a smoothing at cubic length, and an unresolved quadratic
-module-smoothing target. It also records exact constant errors in two
-fixed-v2 source corollaries and uses only the full-dimension proposition.
+different algebra containing $`M_n`$ and an explicit splitting deformation
+followed by a smoothing at cubic length. The proposed quadratic module
+source is now excluded by
+[SQUARE_ZERO_MODULE_OBSTRUCTION.md](SQUARE_ZERO_MODULE_OBSTRUCTION.md),
+Theorem 7. For $`n\ge2`$ and $`1\le m\le n`$, the tuple with
+upper-right blocks $`X\otimes I_m`$ admits no formal simultaneous
+diagonal smoothing. The proof retains every perturbation and iterates
+a radical-filtration obstruction using convergent formal shears. Its
+Laurent-border-rank consequence concerns the identity-completed tensor,
+not $`M_n`$ itself. Multiplicity greater than $`n`$ and changed module
+sources remain outside the theorem. The enlargement note also records
+exact constant errors in two fixed-v2 source corollaries and uses only
+the full-dimension proposition.
 The [Heisenberg target](HEISENBERG_CHIRP_TARGET.md) gives another precise
 construction problem: rank $`p^{3+o(1)}`$ for its multiplication tensor
 would suffice. A chirp realizes one matrix block at cubic cost; the tested
@@ -198,6 +207,36 @@ That base is logically independent of the refuted size-sixty-four
 quotient. Its scalar identities and terminal relabelling do not specify
 the needed three local maps. The base remains unverified here; it is not
 rejected solely because the later quotient fails.
+
+## A first-order spectral reduction
+
+[FLATTENING_TANGENTS.md](FLATTENING_TANGENTS.md) uses Strassen's
+star-convexity only on the three wire values. A two-star restriction
+and an explicit transfer of a factor along a wire bound every fixed
+tensor value by its $`A`$-flattening rank plus $`O_T(t)`$.
+Product compactness gives one additive derivation $`D`$ on all tensors,
+with the Leibniz rule based at $`r_A`$ and monotonicity only for
+comparisons that preserve the $`A`$ rank. For a starting point with
+wire prices $`x,y,z`$,
+
+```math
+D(M_q)=q^2\log q\,(x+y+z-2).
+```
+
+Thus nonpositivity on $`M_2`$ for every derivation obtained in this way
+is equivalent to the target. This sign is unresolved. No differentiable
+path of full spectral points, classification of all derivations, or
+integration of arbitrary abstract derivations is asserted.
+
+[GEODESIC_UNIT_TRADE.md](GEODESIC_UNIT_TRADE.md) isolates a related
+four-party target. On a genuine geodesic face, forward uncrossing forces
+$`u_{ABC}=u_{ABCD}=1`$; the missing reverse inequality is
+$`u_{ACD}+u_{BCD}\le1+d_{CD}`$. A concrete resource trade would
+prove it. A common-centroid invariant excludes that trade at equal
+size, at every equal tensor power, and with common full-unit catalysts.
+Source-only subexponential overhead remains open. In the conditional
+spectral test, the neutral wire size can grow arbitrarily quickly,
+since its price cancels exactly.
 
 ## Remaining mathematical obligation
 

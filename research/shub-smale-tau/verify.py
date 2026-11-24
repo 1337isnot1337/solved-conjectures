@@ -934,6 +934,17 @@ def test_bremner_second_self_certificate():
     run_checks()
 
 
+def test_bremner_complement_certificate():
+    from bremner_complement_checks import run_checks
+    run_checks()
+
+
+def test_bremner_family_scope():
+    from bremner_family_scope_checks import check
+    check()
+    print('Paul/Bremner scope witness: exact roots and signed-relation exclusions passed')
+
+
 def main():
     test_carries_and_products()
     test_all_cuts()
@@ -960,6 +971,8 @@ def main():
     test_bremner_certificate()
     test_bremner_cross_certificate()
     test_bremner_second_self_certificate()
+    test_bremner_complement_certificate()
+    test_bremner_family_scope()
     print('All exact checks and certificate identities passed. No tau bound or BSS separation was verified.')
 
 
