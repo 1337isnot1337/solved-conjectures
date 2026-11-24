@@ -1,5 +1,7 @@
 # Smooth existential certificates for polynomial graphs imply small arithmetic circuits
 
+Later extension: [SINGULAR_WITNESS.md](SINGULAR_WITNESS.md) removes the regularity assumption for the border-complexity conclusion by a separately reviewed finite-germ perturbation. The restricted exact-circuit theorem below is preserved with its original scope; its limitation statements concern that theorem alone. The new argument does not use a small radicalization or equations for a saturated closure.
+
 Status (2026-11-23): **proved restricted-model theorem**, building on standard implicit-function/Strassen truncation methods. Applied below using the repository's standing VP != VNP assumption. This **does not** prove that the permanent graph is outside NP_C, and does not separate P_C from NP_C. Coordination: [issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248).
 
 ## 1. A quantitative implicit-circuit lemma

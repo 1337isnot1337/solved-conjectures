@@ -1,5 +1,7 @@
 # Permanent graph from incidence boundaries: reductions and obstructions
 
+Update: [HYPERSURFACE_DEGENERATION.md](HYPERSURFACE_DEGENERATION.md) now rules out the polynomial-size positive existential graph-factor degeneration proposed in Section 5, subject to the imported permanent border lower bound. The arbitrary-multiple extraction problem remains open; an initial-factor substitution of the stated kind cannot solve it. [DENSE_BOUNDARY_BARRIER.md](DENSE_BOUNDARY_BARRIER.md) also treats dense existential images that omit the graph and the corresponding missing-side degenerations.
+
 Status: research. This note does not prove `P_C != NP_C`. It records an explicit uniformly existential incidence family, the exact polynomial a generic branch can expose, a sufficient degeneration criterion that survives arbitrary extra factors, and counterexamples to two proposed coefficient extractions. The reductions below are consequences of established factor and degeneration techniques; no novelty claim is made.
 
 ## 1. Sources and their exact roles
@@ -355,7 +357,7 @@ Thus a codimension-one boundary whose affine projection is the permanent graph m
 
 This lemma concerns geometric affine projection of varieties. It is not a statement about coefficient p-projections of polynomial families, and it does not cover nonlinear maps or projection after intersecting with additional equations.
 
-This does not rule out incidence or elimination approaches. It specifies what must be proved: either a genuine hard hypersurface boundary, a multiplier-preserving initial-form factor as in Proposition 5.1, or a separate complexity-controlled elimination theorem for a higher-codimension component.
+This cylinder lemma alone does not rule out incidence or elimination approaches. The later degeneration theorem excludes the specific positive existential initial-factor construction in Proposition 5.1. A different approach would need an extraction from a high-degree boundary or a justified complexity-controlled elimination argument that avoids those hypotheses.
 
 ## 8. Unresolved implication
 
@@ -369,4 +371,4 @@ L(P_n)=n^{O(1)}\text{ for some }0\ne P_n\in(R_n)
 \underline L(\mathop{\mathrm{per}}_m)=m^{O(1)}.
 ```
 
-BCJS Theorem 1.4 supplies the last consequence when a small circuit for `R_n` itself is given. The explicit initial-form construction in Section 5 would extend it to arbitrary multiples and finish this route. Its existence has not been proved. All claims in this note remain research reductions or recorded failed attacks, not a resolution of the target problem.
+BCJS Theorem 1.4 supplies the last consequence when a small circuit for `R_n` itself is given. The explicit initial-form construction in Section 5 would formally extend it to arbitrary multiples. The later hypersurface-degeneration theorem shows that such a polynomial-size existential initial-factor construction is incompatible with the imported lower bound, even before assuming an HN decider. A different all-multiple extraction is needed. All claims in this note remain research reductions or recorded failed attacks, not a resolution of the target problem.

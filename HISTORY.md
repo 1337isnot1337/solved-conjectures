@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-23 — Existential graph and boundary barriers over C
+
+The [complex BSS research campaign](research/complex-bss-p-vs-np/README.md) now includes reviewed singular-witness and dense omitted-boundary Taylor-jet arguments. Small existential presentations of a low-degree polynomial graph, or dense existential images omitting that graph, imply small border circuits. A graph factor in a degeneration of existential hypersurfaces has the same consequence. With the standing permanent lower bound, these exclude the proposed positive resultant initial-factor and six-resultant existential constructions and place the permanent graph outside both nonuniform NP_C and coNP_C. They do not separate P_C from NP_C. The notes retain the explicit homogenization and escape-order counterexamples, record the analytic primary source, and preserve the earlier restricted smooth-certificate result with its scope. Internal mathematical reviews are distinguished from formal verification; no Lean source or solved-results classification changes. [Issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248).
+
 ## 2026-11-23 — Three-evaluation Fourier filter for quadratic resultants
 
 A [cube-root-of-unity character filter](research/complex-bss-p-vs-np/FOURIER_RESULTANT_FILTER.md) extracts the VNP-hard BCJS grid coefficient from three tensor-resultant evaluations as the first nonzero homogeneous part. It transfers the imported 2^{Omega((log N)^{4/3})} border lower bound to generic quadratic resultants. Even the cofactor 1+a* causes the filter to expose a degree-one term, so the exclusion-complexity target and P_C versus NP_C remain open. [Finite checker](research/complex-bss-p-vs-np/verify_fourier_filter.py).
