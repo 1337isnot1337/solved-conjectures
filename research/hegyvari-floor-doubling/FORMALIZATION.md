@@ -1,6 +1,6 @@
 # Hegyvári’s conjecture
 
-**Incomplete formalization: verified transport, integer carry, and indexed-to-distinct reductions.**
+**Incomplete formalization: verified transport, integer carry, indexed-to-distinct reductions, zero-run alignment, and conditional case assembly.**
 
 Existing result: [published proof, §§2–3](https://github.com/1337isnot1337/solved-conjectures/blob/d7a796c0d20e30d3fd743318ac688dee51496212/results/hegyvari-floor-doubling/PROOF.md), [result entry](https://github.com/1337isnot1337/solved-conjectures/tree/main/results/hegyvari-floor-doubling), discovery #446, formalization #581. The original session started 2026-11-24 18:59 UTC; the distinct-value retry started 2026-11-24 22:04:35 UTC.
 
@@ -10,7 +10,9 @@ The exact original result is the strong completeness of the positive distinct un
 
 The [distinct-value module](../../lean/Conjectures/HegyvariFloorDoublingDistinct.lean) also checks the five endpoints for the abstract indexed-to-distinct/finite-deletion bridge of §4, positive binary-step growth and tail injectivity. See [scope](DISTINCT_CANDIDATE.md) and [verification](DISTINCT_VERIFICATION.txt). It assumes indexed completeness on every common tail and eventual cross-ray separation.
 
-Still required: construct the real floor-doubling rays and show their binary-step recurrence and carry bounds; relate non-dyadic parameters to unbounded marks; formalize or import and audit the exact tower criteria, derive both transport directions in Case I and the integer-part common-mark criterion for Case II; show the second ray has bounded zero gaps where required; establish eventual cross-ray separation, identify the verified abstract bridge with the actual floor rays, and prove the complete quantified conjecture. The two cases and the converse are not formally settled by this file.
+The [alignment module](../../lean/Conjectures/HegyvariFloorDoublingAlignment.lean) checks seven additional endpoints covering zero-run quantification, bounded-gap alignment, and conditional assembly of both transport cases. See [scope and outstanding premises](ALIGNMENT_CANDIDATE.md) and [verification](ALIGNMENT_VERIFICATION.txt). These endpoints take tower/common-mark and bounded-gap disjointness criteria as hypotheses.
+
+Still required: check and correct the unverified Mathlib-dependent [real floor-ray draft](../../lean/Conjectures/HegyvariFloorDoublingReal.lean), formalize or import and audit the exact tower criteria (including both transport directions and the integer-part common-mark criterion), justify indexed completeness, normalize shifts and connect the resulting theorem to the full quantified conjecture. The two cases and the converse are not formally settled. The complete candidate gate remains outstanding.
 
 ## Verification
 

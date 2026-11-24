@@ -6,6 +6,7 @@ TASK = "hegyvari-floor-doubling-partial"
 MODULES = [
     "Conjectures.HegyvariFloorDoublingTransport",
     "Conjectures.HegyvariFloorDoublingDistinct",
+    "Conjectures.HegyvariFloorDoublingAlignment",
 ]
 REQUIRED = [
     "HegyvariFloorDoubling.transport_comp",
@@ -21,6 +22,13 @@ REQUIRED = [
     "HegyvariFloorDoubling.binaryStep_strictOnTail",
     "HegyvariFloorDoubling.binaryStep_injectiveOnTail",
     "HegyvariFloorDoubling.distinctStrongComplete_of_binarySteps",
+    "HegyvariFloorDoubling.lateZeroRuns_of_not_boundedGaps",
+    "HegyvariFloorDoubling.alignedZeroRuns_of_boundedGaps",
+    "HegyvariFloorDoubling.alignedZeroRuns_sequence",
+    "HegyvariFloorDoubling.forwardZeroRuns_of_not_transport",
+    "HegyvariFloorDoubling.forwardTransport_of_no_forwardZeroRuns",
+    "HegyvariFloorDoubling.disjoint_of_two_transport_criteria",
+    "HegyvariFloorDoubling.disjoint_of_oddMultiplier_criteria",
 ]
 
 def main():

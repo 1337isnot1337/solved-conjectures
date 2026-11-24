@@ -1,0 +1,15 @@
+FETCH_RELEASE
+/job/run-8wwa3uxf/release.zst: OK
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+d1030d4726cc6eac56d1e47e79c725d26ddb22d4eb3f6907a79012eddb8fb770  Conjectures/HegyvariFloorDoublingAlignment.lean
+2a2a1c78daa6ae95ebb898a06c42315db532f4db47b6404c2b7d7520447d4fdd  Conjectures/HegyvariFloorDoublingTransport.lean
+'HegyvariFloorDoubling.lateZeroRuns_of_not_boundedGaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HegyvariFloorDoubling.alignedZeroRuns_of_boundedGaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HegyvariFloorDoubling.alignedZeroRuns_sequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HegyvariFloorDoubling.forwardZeroRuns_of_not_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HegyvariFloorDoubling.forwardTransport_of_no_forwardZeroRuns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'HegyvariFloorDoubling.disjoint_of_two_transport_criteria' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HegyvariFloorDoubling.disjoint_of_oddMultiplier_criteria' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-11-24T22:32:46Z
