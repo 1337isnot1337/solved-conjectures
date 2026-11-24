@@ -466,3 +466,88 @@ rN/M at least sqrt(q). The operation class is defined explicitly by a
 Clifford unitary, computational-basis code projection and output Clifford
 unitary. No classification of arbitrary ancilla circuits is assumed.
 These are additional restricted failures, not a resolution of target 07.
+
+
+## Fixed sources, operator completions and controlled branches
+
+Root authored the central quantum source and the relative output gauge
+factorization. The audit and operator-comparison workers independently
+checked the entire central-source proof: the count by a sum of squares,
+the root-subset decomposition, the complement pairing, the cyclic sign,
+and the parameter-weight argument. The operator-comparison worker
+reviewed the gauge factorization and supplied the global fixed-matrix
+span, order-safe coefficient absorption and fiberwise extension. The
+opposite-order ratio is explicitly excluded. Neither note asserts the
+missing six-index source identity.
+
+Root ran the exact central-source checker through k=10, with 4,104
+label, cyclic-sign, reflection and pairing checks, and all sixteen
+fully parameter-deformed Gr(2,4) coefficients. The relative-gauge replay
+passed the stated rational examples, a symbolic size-two example,
+exterior signs, fixed matrix expansions and column spans. It also
+checks that the opposite ratio does not have the asserted fixed last
+row. These finite replays supplement the all-parameter written proofs.
+
+The audit worker supplied the cyclic-orbit reduction and exact
+rank-ten certificate. Root checked the orbit phase, Burnside count,
+cyclotomic implementation, fixed selected minor and its displayed
+integer blocks. The final determinant is evaluated over the rationals
+and equals one; modular elimination only selects the minor. The checker
+asserts every entry of the displayed block certificate.
+
+The constructive worker authored the finite-propagation transfer and
+the arbitrary-middle-kernel certificate. Root and the audit worker
+checked both proofs and replayed the certificate. The unrotated
+320-column rank proof uses eight structural kernel directions; its
+modular rank lower bound matches the rational upper bound. The rotated
+source has full column rank 328. Each four-column target augmentation
+raises the rank by four. The script checks all rational denominators
+modulo 1009 and the integer arithmetic bounds. Its default certificate
+commands do not write artifacts; output files require an explicit
+output option. These are failures of the two specified finite systems.
+
+The operator-comparison worker authored the exact RTT and arithmetic
+fusion proof, the semidynamical Cartan defect and the height commutator.
+Root checked the signs, shifted coefficient order, column-update
+calculation and source-index scope. The replay checks every shift sector
+at sizes two and three with minus eta, rejects plus eta, and checks the
+full two-factor exterior output at size three. The common h sum in the
+Cartan defect is retained; it does not manufacture copied labels a=i
+and b=j or a fixed C map.
+
+The audit worker supplied the controlled stabilizer span proof, sharp
+branch overlaps, legal first-zero maps, equal-flags singular-C bound
+and parity-core failure. Root read their complete proofs. The
+operator-comparison worker independently reviewed the span and overlap
+notes. Root replayed all 104 exact symplectic and intersection checks.
+The tagged sharp construction corrects an overstrong proposed overlap
+bound. The qubit many-branch condition retains its explicit commutation
+rank hypothesis. The parity residual is locally equivalent to the
+target; its same-format Laurent obstruction follows from upper
+semicontinuity of the common-transfer kernel dimension.
+
+Root derived the row/column arbitrary-compression bound and the
+constructive worker wrote its full proof. The audit worker independently
+reviewed it. The support partition uses separate rank bounds before
+adding the four parts; it does not assume that masking preserves rank.
+Its Laurent statement uses saturated quotient lattices, while retaining
+fixed row/column C supports. The equal-flags one-branch bound is a
+separate theorem, with neither a multiple-family claim nor an unstated
+Laurent extension.
+
+The constructive and operator-comparison workers independently derived
+the complete square-zero multi-shear coefficient. Root and the
+constructive worker checked every source index and the elementary
+finite-flag realization in the operator-comparison worker's note. Root
+and the constructive worker independently identified the dual motion
+arrangement. The constructive worker supplied the sampling theorem;
+root and the operator-comparison worker checked its proof, including
+independently chosen motion maps for different target columns. The
+argument handles arbitrary dense C planes and retains the exact
+linear-evaluation hypothesis. It makes no statement about all ordered
+products or general tensor degenerations.
+
+All changed files remain in research status. Local links, fences,
+equation tags, whitespace and Python syntax are checked before the PR.
+No new matrix multiplication exponent bound, complete source-to-target
+trade, Lean formalization or hosted CI pass is claimed.
