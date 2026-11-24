@@ -3,7 +3,6 @@
 - `main` is the publication branch. Put only final, reviewed material there: state the exact theorem and scope, provide its proof and applicable checks, and label its verification honestly. A final written proof need not be fully Lean verified; an unchecked draft is not final.
 - `research` is the working branch for open campaigns, candidates, draft proofs, intermediate formalizations, audits, experiments, and counterexamples that do not resolve the stated target. Fetch the latest `research` before starting and coordinate there.
 - The only permanent branches are `main` and `research`. Use a short-lived `review/<topic>` branch only when a PR is needed, usually targeting `research`; preserve unique work and keep the PR record before removing its branch. Never blanket-merge `research` into `main`. Publish a narrowly scoped, reviewed package with its landing page, index and relevant checks.
-- Migration in progress: if the flat `research` ref is not yet available, keep new work local or on an existing active review branch. Do not add research to `main` or create more branches during the cutover.
 
 # Research target selection: prioritize substantial conjectures
 

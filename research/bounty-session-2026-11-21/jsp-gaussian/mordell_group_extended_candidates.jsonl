@@ -1,3 +1,0 @@
-{"a": 5, "b": 3, "r": 7, "sign": 1, "negative": false, "c": "34", "normalized_curve_d": 24, "group_witness": [[[1, 5], 1], [[-2, 4], 1]]}
-{"a": 239, "b": 3, "r": 13, "sign": 1, "negative": false, "c": "2761", "normalized_curve_d": 24, "group_witness": [[[1, 5], 2], [[-2, 4], -1]]}
-{"a": 2797, "b": 13, "r": 9, "sign": -1, "negative": false, "c": "75090", "normalized_curve_d": -17576, "group_witness": [[[65, 507], 2], [[218, 3216], -1]]}

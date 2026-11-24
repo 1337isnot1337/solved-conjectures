@@ -214,11 +214,11 @@ unavailable manuscripts are outside this conclusion.
 
 ## 6. Review and diagnostic status
 
-The [independent analysis audit](../../research/baricz-pogany-coefficients/AUDIT-ANALYSIS.md) checks the exact primary
+The [independent analysis audit](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/baricz-pogany-coefficients/AUDIT-ANALYSIS.md) checks the exact primary
 statement, coefficient products, telescoping signs, formal inverse,
 identity, and strict lower bound. It reports no mathematical gap.
 It was committed at f42fe35c0ffaec2661ea0bf5a448c5f29bcf8c9e.
-The [independent root audit](../../research/baricz-pogany-coefficients/AUDIT-ROOT.md),
+The [independent root audit](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/baricz-pogany-coefficients/AUDIT-ROOT.md),
 committed at 7501a1b919fcb9ad20a47401bdef123c4c3ff252, also passes the
 complete proof and the exact source statement. The root independently
 replayed the diagnostic with the same passing result.

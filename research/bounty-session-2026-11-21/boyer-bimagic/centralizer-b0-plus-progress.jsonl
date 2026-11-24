@@ -1,2 +1,0 @@
-{"b": 0, "stage": "constraints", "degrees": [16, 16], "common": "1"}
-{"b": 0, "stage": "resultant", "factors": [{"factor": "u", "power": 12}, {"factor": "5*u**2 - 1", "power": 12}, {"factor": "5*u**2 + 1", "power": 32}, {"factor": "25*u**4 + 22*u**2 + 1", "power": 2}, {"factor": "50*u**4 + 5*u**2 + 2", "power": 2}], "rational_u_roots": {"0": 12}}

@@ -30,7 +30,7 @@ The proof makes the positive-argument domain explicit. It does not make any asse
 
 ## Nearby primary theorems checked
 
-The analysis agent read the first three papers below and recorded the precise theorem scopes in [its independent audit](../../research/kvz-gamma-quotient/AUDIT-ANALYSIS.md). The root agent separately inspected the later items in its source audit.
+The analysis agent read the first three papers below and recorded the precise theorem scopes in [its independent audit](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/kvz-gamma-quotient/AUDIT-ANALYSIS.md). The root agent separately inspected the later items in its source audit.
 
 | Primary source | Actual scope and distinction |
 | --- | --- |

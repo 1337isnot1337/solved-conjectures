@@ -76,9 +76,9 @@ asymptotic error term.
 - [Complete proof](PROOF.md).
 - [Source, prior-resolution audit, and access limits](NOVELTY.md).
 - [Exact diagnostic](verify.py).
-- [Independent analysis audit](../../research/baricz-pogany-coefficients/AUDIT-ANALYSIS.md),
+- [Independent analysis audit](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/baricz-pogany-coefficients/AUDIT-ANALYSIS.md),
   commit f42fe35c0ffaec2661ea0bf5a448c5f29bcf8c9e.
-- [Independent root audit](../../research/baricz-pogany-coefficients/AUDIT-ROOT.md),
+- [Independent root audit](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/baricz-pogany-coefficients/AUDIT-ROOT.md),
   commit 7501a1b919fcb9ad20a47401bdef123c4c3ff252.
 - [Research and review thread](https://github.com/1337isnot1337/solved-conjectures/issues/112).
 

@@ -26,7 +26,7 @@ The [conditional joint-law reduction](../lean/Conjectures/AgnosticVC/Conditional
 
 [The full proper threshold theorem](../lean/Conjectures/SteinkeZakynthinou.lean) is checked. The finite learner uses the rational shifted-tree rule, noise scales with ratio $3/4$, and label-first rounding. In the CMI proof, giving the two pool slots in a row consecutive tags keeps the learner's order on selected samples. Summing row charges under the common iid selected-sample law bounds the information on the augmented output. A finite rank code then decodes the successor or maximum into the learner's actual threshold.
 
-Gröchenig’s upper-density result is excluded after a [checked earlier resolution](../research/bounty-continuation-2026-11-21/grochenig-prior-resolution/). Its independent proof and verification receipts remain in [immutable Git history](https://github.com/1337isnot1337/solved-conjectures/blob/628270dc5e07d7924de265d2ac1beee4b5634b80/docs/verification/lean-grochenig-20261121/receipt.json). The reused KVZ results remain active.
+Gröchenig’s upper-density result is excluded after a [checked earlier resolution](https://github.com/1337isnot1337/solved-conjectures/tree/research/research/bounty-continuation-2026-11-21/grochenig-prior-resolution/). Its independent proof and verification receipts remain in [immutable Git history](https://github.com/1337isnot1337/solved-conjectures/blob/628270dc5e07d7924de265d2ac1beee4b5634b80/docs/verification/lean-grochenig-20261121/receipt.json). The reused KVZ results remain active.
 
 The objective is to formalize every result in this repository, preserving its
 quantifiers and discharging every mathematical dependency. Accepted work goes
@@ -297,7 +297,7 @@ The CKZ checkpoint proves the verified finite polynomial certificates control th
 
 ## Prior-resolution withdrawal, 21 November 2026
 
-The Karp–Vishnyakova–Zhang Bessel-ratio unimodality entry is no longer an active collection target. [Trure issue 25199](https://github.com/the-omega-institute/trureturing/issues/25199), published on 1 November, already contains a complete analytic proof for the same full domain. The [correction record](../research/kvz-bessel-unimodality/PRIOR_RESOLUTION_CORRECTION.md) preserves the mathematical reviews and attributes the prior resolution. The duplicate result and computational checks are removed; no shared Lean source or formalization receipt is changed, and no Lean work was performed for this correction.
+The Karp–Vishnyakova–Zhang Bessel-ratio unimodality entry is no longer an active collection target. [Trure issue 25199](https://github.com/the-omega-institute/trureturing/issues/25199), published on 1 November, already contains a complete analytic proof for the same full domain. The [correction record](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/kvz-bessel-unimodality/PRIOR_RESOLUTION_CORRECTION.md) preserves the mathematical reviews and attributes the prior resolution. The duplicate result and computational checks are removed; no shared Lean source or formalization receipt is changed, and no Lean work was performed for this correction.
 
 ## Zhu Jacobi–Stirling checkpoint
 
@@ -1542,13 +1542,13 @@ The complete 20-module hosted gate passed at `a8577e5da31b851ce64333aa921b39c662
 
 ## Fang–Zhang–Zhao universal conjecture
 
-This formalizes a previously resolved result. A complete ordinary disproof was public by 26 October 2026; it is excluded from new-resolution credit. See the [priority correction](../research/campaign-20261121/PRIOR_RESOLUTION_CORRECTION.md).
+This formalizes a previously resolved result. A complete ordinary disproof was public by 26 October 2026; it is excluded from new-resolution credit. See the [priority correction](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/campaign-20261121/PRIOR_RESOLUTION_CORRECTION.md).
 
 `Conjectures.FangZhangZhao.conjecture_false` checks the source binomial sum and its iterated log-convexity operator using the exact parameter m=6. The stronger all-m≥4 theorem remains unformalized. The module build, standard axiom check, and isolated kernel replay passed; the full repository gate is pending.
 
 ## Sun–Zhao iterated ratios
 
-This formalizes a previously resolved result. A complete ordinary disproof was public by 27 October 2026; it is excluded from new-resolution credit. See the [priority correction](../research/campaign-20261121/PRIOR_RESOLUTION_CORRECTION.md).
+This formalizes a previously resolved result. A complete ordinary disproof was public by 27 October 2026; it is excluded from new-resolution credit. See the [priority correction](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/campaign-20261121/PRIOR_RESOLUTION_CORRECTION.md).
 
 `Conjectures.SunZhao.conjecture_false` directly computes the source recurrence over the rationals and refutes its even-order clause at k=12, n=12. The module build, standard axiom check, and isolated kernel replay passed; the full repository gate is pending. The prior ordinary proof and the source match are documented in the correction record.
 

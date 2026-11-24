@@ -66,7 +66,7 @@ The analytic proof establishes whole intervals. The computation below only check
 - [PROOF.md](PROOF.md): exact source statement and full analytic disproof.
 - [NOVELTY.md](NOVELTY.md): two-engine searches, current author records, later primary-paper scope checks, and explicit access limits.
 - [verify.py](verify.py): exact rational-polynomial verification of the general curvature identity and displayed derivative values.
-- [Independent algebra audit](../../research/ferreira-simon-wright/AUDIT-ALGEBRA.md) and [independent root audit](../../research/ferreira-simon-wright/AUDIT-ROOT.md), with discussion in [issue 100](https://github.com/1337isnot1337/solved-conjectures/issues/100).
+- [Independent algebra audit](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/ferreira-simon-wright/AUDIT-ALGEBRA.md) and [independent root audit](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/ferreira-simon-wright/AUDIT-ROOT.md), with discussion in [issue 100](https://github.com/1337isnot1337/solved-conjectures/issues/100).
 
 Run `python3 results/ferreira-simon-wright/verify.py` from the repository root. The exact check passes. Separate internal reviews by the root and algebra agents found no mathematical gap; these are not outside peer review.
 

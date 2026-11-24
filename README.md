@@ -8,7 +8,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 ## Results
 
-| Problem | Lean Verification Status |
+| Problem | Verification |
 | :--- | :---: |
 | [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ |
 | [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | ⬜ |
@@ -95,9 +95,9 @@ For the 🟢 Lonely Runner results, the written proofs reduce the classification
 
 This repository takes Anthropic's VP ≠ VNP theorem and its stated lower bounds as valid research premises under the [standing assumption in `AGENTS.md`](AGENTS.md#standing-research-assumption-anthropics-vp-versus-vnp-proof). The applications below use that imported result; they do not independently establish the source theorem, claim outside verification, or add a solved named conjecture.
 
-- [Quantitative decision lower bound for the permanent graph](research/bss-permanent-graph/). Deciding $`y=\mathop{\mathrm{per}}_m(X)`$ over $`\mathbb C`$ requires $`2^{\Omega((\log m)^{4/3})}`$ operations in the stated algebraic computation-tree model, with defined division and arbitrary constants. The written deduction combines the pinned Anthropic border lower bound with Bürgisser's corrected factor theorem and gives the uniform BSS simulation. It is not a new named-conjecture resolution or a proof of $`\mathsf P_{\mathbb C}\ne\mathsf{NP}_{\mathbb C}`$. No Lean formalization of this deduction is claimed. [Proof](research/bss-permanent-graph/PROOF.md) · [Review](research/bss-permanent-graph/REVIEW.md) · [Issue #247](https://github.com/1337isnot1337/solved-conjectures/issues/247)
+- [Quantitative decision lower bound for the permanent graph](https://github.com/1337isnot1337/solved-conjectures/tree/research/research/bss-permanent-graph/). Deciding $`y=\mathop{\mathrm{per}}_m(X)`$ over $`\mathbb C`$ requires $`2^{\Omega((\log m)^{4/3})}`$ operations in the stated algebraic computation-tree model, with defined division and arbitrary constants. The written deduction combines the pinned Anthropic border lower bound with Bürgisser's corrected factor theorem and gives the uniform BSS simulation. It is not a new named-conjecture resolution or a proof of $`\mathsf P_{\mathbb C}\ne\mathsf{NP}_{\mathbb C}`$. No Lean formalization of this deduction is claimed. [Proof](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/bss-permanent-graph/PROOF.md) · [Review](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/bss-permanent-graph/REVIEW.md) · [Issue #247](https://github.com/1337isnot1337/solved-conjectures/issues/247)
 
-- [Bounded-occurrence 3-CNF weighted counting](research/vp-vnp-bounded-occurrence-3cnf/README.md). Explicit all-characteristic Hamiltonian-cycle projection to a weighted 3-CNF polynomial with at most three occurrences per variable. With Anthropic's November 23, 2026 VP ≠ VNP theorem adopted as valid, its all-field border-circuit lower bound transfers to this family. This is a VNP-completeness application of the imported theorem, not a newly solved conjecture; it remains excluded from result totals. [Finite verifier](research/vp-vnp-bounded-occurrence-3cnf/verify_reduction.py).
+- [Bounded-occurrence 3-CNF weighted counting](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/vp-vnp-bounded-occurrence-3cnf/README.md). Explicit all-characteristic Hamiltonian-cycle projection to a weighted 3-CNF polynomial with at most three occurrences per variable. With Anthropic's November 23, 2026 VP ≠ VNP theorem adopted as valid, its all-field border-circuit lower bound transfers to this family. This is a VNP-completeness application of the imported theorem, not a newly solved conjecture; it remains excluded from result totals. [Finite verifier](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/vp-vnp-bounded-occurrence-3cnf/verify_reduction.py).
 
 ## Partial results on open problems
 
@@ -118,11 +118,9 @@ This section is ordered by the significance of the partial contributions.
 - [Erdős–Oler conjecture](docs/erdos-oler-research.md). The conjectured lower bound holds for packings on any unit-separated lattice, and triangular lattice packings with one site removed are locally rigid.
 - [Hadamard existence, order 2396](results/hadamard-2396/). The automorphism obstruction, fixed-border symmetry bounds, complete conditional fixed-border construction with all fourteen patterns, and length-598 order-eleven obstruction are Lean-verified. The actual two-row Hadamard construction from a Legendre pair and its invariant quotient transport are also checked. The order-nine subgroup and orbit statements are also checked. The length-1197 multiplier order is proved to divide 27; the sharper bound of nine and finite quotient/no-lift certificates remain pending. Existence stays open. [Checked scope](docs/lean-status.md#complete-conditional-fixed-border-construction-and-fourteen-patterns).
 
-## Open research investigations
+## Current research
 
-- [P_C versus NP_C over C](research/complex-bss-p-vs-np/README.md) remains open in this campaign. The notes fix the uniform model and HN encoding, give a sound weighted-sum formula with growing alternation, prove exact failures of proposed compressions, and isolate the missing incidence and arbitrary-multiple implications. They build on the graph lower bound above. [Issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248) · [Review and checks](research/complex-bss-p-vs-np/REVIEW.md).
-
-- [Boolean P versus NP via directed Hamiltonicity](research/boolean-hamiltonicity/). Research remains open. Proved coefficient identities, a containment-preserving restriction, a monotone logarithmic-space predicate matching the first logarithmic band of layers, and counterexamples to proposed circuit-rank bounds. No unrestricted superpolynomial circuit or uniform time lower bound is claimed. [Attack record](research/boolean-hamiltonicity/ATTACKS.md) · [Review and checks](research/boolean-hamiltonicity/REVIEW.md) · [Issue #251](https://github.com/1337isnot1337/solved-conjectures/issues/251).
+Open campaigns, intermediate proofs, and experimental checks are on the [research branch](https://github.com/1337isnot1337/solved-conjectures/tree/research/research). The publication branch contains reviewed results; a partial theorem is listed here only for its settled scope.
 
 ## Layout
 

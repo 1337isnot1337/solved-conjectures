@@ -137,4 +137,4 @@ argument into multiple entries.
 
 ## Additional independent corpus audit
 
-A second reviewer recorded [an additional corpus and issue priority audit](../../research/2026-11-21-lopez-pouso-segura-independent-priority/AUDIT.md), including complete available directory inventories, five full nearby Bessel manuscripts, and eight further global issue queries. No earlier exact resolution was found in that scope. The note preserves the unavailable GitHub code search, unexported corpus entries, and inaccessible Morel full text as explicit limits.
+A second reviewer recorded [an additional corpus and issue priority audit](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/2026-11-21-lopez-pouso-segura-independent-priority/AUDIT.md), including complete available directory inventories, five full nearby Bessel manuscripts, and eight further global issue queries. No earlier exact resolution was found in that scope. The note preserves the unavailable GitHub code search, unexported corpus entries, and inaccessible Morel full text as explicit limits.

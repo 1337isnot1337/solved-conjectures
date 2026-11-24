@@ -77,7 +77,7 @@ The current [MColbrook/AIM catalog](https://github.com/MColbrook/AIM/blob/main/C
 
 ## Supplemental public-repository searches
 
-An additional [repository source audit](../../research/minc/repository_prior_art_audit.md) records exact-author and DOI searches, narrower searches in five public proof archives, and the closest mathematical bodies inspected. No earlier matching full theorem was identified in those results. Capped searches and incomplete indexing prevent an exhaustive-priority conclusion. The existing access limits and provisional novelty assessment remain in force.
+An additional [repository source audit](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/minc/repository_prior_art_audit.md) records exact-author and DOI searches, narrower searches in five public proof archives, and the closest mathematical bodies inspected. No earlier matching full theorem was identified in those results. Capped searches and incomplete indexing prevent an exhaustive-priority conclusion. The existing access limits and provisional novelty assessment remain in force.
 
 ## Semigroup and quantum-algorithm follow-up
 

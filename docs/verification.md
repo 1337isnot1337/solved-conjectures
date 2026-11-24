@@ -2,62 +2,15 @@
 
 ## Complex BSS separation research
 
-The [full-decider soft compiler](../research/complex-bss-p-vs-np/FULL_DECIDER_SOFT_COMPILER.md) and its conditional supplied-denominator extraction have two full internal written reviews. The integrator checked all fixed-input germs, charged tape/control size, shared fraction clearing and the elementary root-persistence proof. The extended soft tests and irreducible coefficient-tensor calculation are separately proved and reviewed. The finite checker below additionally tests the exact replacement formulas, inactive division, generic-prefix identities, moving-pole denominator and coefficient ranks for D=4,8,16. These checks do not provide the missing denominator normalizer, establish a field-hypothesis transfer, or verify the full separation. No Lean file changed.
-
-Run `python3 research/complex-bss-p-vs-np/verify_obstructions.py` from the repository root with SymPy installed. The checker validates symbolic Ryser identities for sizes 1–3, interpolation counterexamples, the single-triangle quotient norm, selected jet-masking identities, and two-by-two matching/strategy examples. Its [review record](../research/complex-bss-p-vs-np/REVIEW.md) separates these finite algebraic checks from the arbitrary-size written arguments and the imported circuit lower bound. It does not prove `P_C != NP_C`. No Lean source changed and no local Lean verification of these deductions is claimed. The later singular-witness, dense-boundary, and hypersurface-degeneration arguments were checked by separate internal reviewers as written mathematics. Their analytic and algebraic-geometric steps are not covered by the finite symbolic checker; see the review record for the precise hypotheses and source dependencies.
-
-The later Boolean-potential certificate work has three additional finite checks:
-
-```bash
-python3 research/complex-bss-p-vs-np/verify_boolean_potentials.py
-python3 research/complex-bss-p-vs-np/verify_canonical_potentials.py
-python3 research/complex-bss-p-vs-np/verify_gradient_flow.py
-```
-
-The first uses SymPy to check bounded-rank potentials, full flip averages, Boolean quotient identities, and delta-path certificates on the cases listed in its output. The second checks the block-diagonal cancellation gadget and exact Cauchy recovery coefficients. The third uses exact integer and finite-field arithmetic to certify inconsistency of the stated gradient-flow ansatz at one explicit invertible 7 by 7 matrix: a 106 by 106 augmented minor is 64147 modulo the prime 1000003, while the ansatz has 105 unknown coefficients. These computations verify the stated identities and counterexample, not the general certificate lower bound.
-
-The [critical-incidence argument](../research/complex-bss-p-vs-np/CRITICAL_INCIDENCE_BARRIER.md) has [two independent internal written reviews](../research/complex-bss-p-vs-np/CRITICAL_REVIEW.md) and an integrator review. Its component and differential argument, generic-matrix consequence, singular-witness dependency, and imported permanent lower bound are written mathematics. No Lean or external refereeing is claimed. The target separation remains unresolved.
-
-The subsequent [finite-residual critical-point proof](../research/complex-bss-p-vs-np/REAL_KKT_RADICAL_EXTENSION.md) and [block extension](../research/complex-bss-p-vs-np/BLOCK_KKT_FINITE_EXISTENTIAL_EXTENSION.md) have explicit equations and witness/gate counts, with separate internal written reviews. They allow finite Boolean challenges and local complex existential witnesses; they do not cover arbitrary complex universal challenges. The [restricted-cofactor review](../research/complex-bss-p-vs-np/RESTRICTED_COFACTOR_REVIEW.md) records the reviewed jet arguments and the repaired specialization error. The bounded-counterexample cutoff has a complete two-case verification in its note. The tagged-trace construction has a complete digit-recurrence induction and free-basis specialization proof, independently reviewed in its own note. No numerical checks or Lean build are presented as verification of these new analytic arguments.
-
-The continued [directional cofactor extraction](../research/complex-bss-p-vs-np/DIRECTIONAL_COFACTOR_LOG_JETS.md), [squarefree-cofactor bound](../research/complex-bss-p-vs-np/RADICAL_COFACTOR_JETS.md), [universal certificate equivalence](../research/complex-bss-p-vs-np/UNIVERSAL_CERTIFICATES.md), [recursive finite-prefix theorem](../research/complex-bss-p-vs-np/TREE_KKT_FINITE_PREFIX_EXTENSION.md), and [restricted continuous sampling](../research/complex-bss-p-vs-np/CONTINUOUS_NONDENSE_FIBER_SAMPLING.md) have separate internal written reviews linked from the campaign review record. Their bounds and counterexamples are proved in the notes; no finite numerical screen or Lean build verifies these general arguments. The main separation remains unresolved.
-
-The [continuous finite-fiber attempt](../research/complex-bss-p-vs-np/SKEW_PRODUCT_MOVING_FIBER_ATTEMPT.md), [polynomial-support exclusion](../research/complex-bss-p-vs-np/SKEW_POLYNOMIAL_SUPPORT_EXCLUSION.md), [moving algebraic challenge lemma](../research/complex-bss-p-vs-np/MOVING_ALGEBRAIC_CHALLENGES.md), and [pole-cluster counterexample](../research/complex-bss-p-vs-np/RECIPROCAL_POLE_CLUSTER_OBSTRUCTION.md) have written proofs and internal reviews recorded in the campaign. The three-block verifier has only exponential-size completeness; the required polynomial bound remains open. An independent exact symbolic computation checks the finite relative-invariant cancellation example, not a growing-resultant lower bound. No Lean change or formal verification of these new arguments is claimed.
-
-The [saturated-path and radical-jet note](../research/complex-bss-p-vs-np/SATURATED_PATH_RADICAL_JETS.md), [signed-multiplicity map](../research/complex-bss-p-vs-np/SIGNED_MULTIPLICITY_RATIONAL_MAP.md), [orbit-product obstruction](../research/complex-bss-p-vs-np/ORBIT_PRODUCT_COMPRESSION_ATTEMPT.md), and [auxiliary finite-fiber verifier](../research/complex-bss-p-vs-np/AUXILIARY_FINITE_FIBER_ATTEMPT.md) have complete written reductions and separate internal reviews linked from the campaign record. The radical-jet bound and polynomial completeness are explicitly unproved. Exact local counterexamples delimit the failed steps; they are not a computation of permanent complexity or a verification of the target separation. No Lean files changed in this checkpoint.
-
-The marked-factor continuation has separate internal reviews of the [multiplicity encoding](../research/complex-bss-p-vs-np/MULTIPLICITY_MARKER.md), [resolvent and Hermite identities](../research/complex-bss-p-vs-np/RESIDUE_RESOLVENT_FRONTIER.md), [regular-value certificate attempts](../research/complex-bss-p-vs-np/REGULARITY_CERTIFICATE_ATTEMPTS.md), [direct regular-value obstruction](../research/complex-bss-p-vs-np/REGULAR_VALUE_GRAPH_OBSTRUCTION.md), and [square-zero socle/deformation](../research/complex-bss-p-vs-np/SQUARE_ZERO_SOCLE_AND_DEFORMATION.md). The [existential regularity extension](../research/complex-bss-p-vs-np/EXISTENTIAL_REGULARITY_SAMPLING_EXTENSION.md) has a full separate review of projective norm control, moving witnesses, scaled critical values and actual-component preservation. The [general Hermite-part counterexample](../research/complex-bss-p-vs-np/HERMITE_PART_OBSTRUCTION.md) has its own full algebraic review. The source audit retains the dense-versus-circuit and derivative-order distinctions. The aggregate circuit bounds are unproved. The general proofs rely on the cited written geometric lemmas; finite exact examples and Markdown rendering do not verify the full separation.
-
-The [generic-quantifier audit](../research/complex-bss-p-vs-np/GENERIC_QUANTIFIER_SUMCHECK_AUDIT.md) and [rational-exactness argument](../research/complex-bss-p-vs-np/RATIONAL_EXACTNESS_BARRIER.md) have separate full internal reviews. Review checked original-prefix sampling, reached-mask validation, uniform construction costs and retained adaptive rounds; it also checked the residue identity, all-register division guard, actual graph incidence and quantitative generic primitive-size bound. The integrator read both proofs and the cited Koiran statements. These written deductions use the earlier geometric transfer lemmas. Finite symbolic residue examples and rendering checks do not verify their general lower bounds or the HN separation. No Lean source changed.
-
-The [full-partition](../research/complex-bss-p-vs-np/FULL_PARTITION_CERTIFICATE_ATTEMPT.md), [stable-rewrite](../research/complex-bss-p-vs-np/STABLE_REWRITE_FRONTIER.md), [transcript](../research/complex-bss-p-vs-np/TRANSCRIPT_ESCAPE_EXAMPLE.md), [implicit-operator](../research/complex-bss-p-vs-np/IMPLICIT_SYLVESTER_FRONTIER.md) and [partial cutting compiler](../research/complex-bss-p-vs-np/CUTTING_COMPILER_ATTEMPT.md) notes have separate internal reviews linked from the campaign record. The cutting review repaired the scalar cost of finite slot selection. Its recurrence remains conditional and retains the missing plain-program interface, inherited-input and hypothesis-use steps. The inverse-jet example does not establish gcd hardness.
-
-Run the additional finite exact checker with SymPy:
-
-```bash
-python3 research/complex-bss-p-vs-np/verify_branch_and_operator_identities.py
-```
-
-Its seven check groups cover the specified gluing, involution, transcript, small digit, double-pole gcd, compressed-matrix and modular-inverse-jet examples, plus local cutting identities with cancellation. They are finite symbolic checks, distinct from the written all-size and analytic arguments. No Lean build or verification of the target separation is claimed.
-
-The [supplied-exclusion](../research/complex-bss-p-vs-np/SUPPLIED_EXCLUSION_SIMPLE_POLES.md) and [countable-range oracle](../research/complex-bss-p-vs-np/COUNTING_ORACLES_AND_CYCLIC_TRACE.md) notes have separate full internal reviews. The integrator read both proofs and rechecked the primary theorem directions. The same exact checker now has nine groups: its additions check a localized multiplicity remainder, finite log/exp normalized jets, and the uniform cyclic weighted trace for symbolic matrices through size three. Those computations do not prove the general oracle or jet bounds, and neither note establishes the missing HN reduction. No Lean source changed.
+[Research receipts and replay instructions](https://github.com/1337isnot1337/solved-conjectures/blob/research/docs/verification.md#complex-bss-separation-research). Check out `research` before running the research scripts.
 
 ## Boolean Hamiltonicity research lemmas
 
-Run these standard-library checks from the repository root:
-
-```bash
-python3 research/boolean-hamiltonicity/verify_layers.py
-python3 research/boolean-hamiltonicity/verify_invariants.py
-```
-
-The first compares truth-table Möbius coefficients with cycle-family inclusion-exclusion, checks the two-extra-vertex restriction, and checks the sparse and monotone cutoff predicates and mixed-radix logspace algorithm on all graphs through four vertices. First-overlap counts are checked through six vertices. The second checks exact rational and finite-field ranks, gate bounds and every assignment of the Hamiltonicity module gadget through four modules. [Scope and review](../research/boolean-hamiltonicity/REVIEW.md) · [Local receipt](../research/boolean-hamiltonicity/CHECKS.json) · [Dedicated workflow](../.github/workflows/boolean-hamiltonicity.yml).
-
-The general auxiliary lemmas have written proofs. The research target, an unrestricted superpolynomial Boolean circuit lower bound or uniform time lower bound, remains unproved. These scripts do not verify P != NP, and no Lean verification is claimed.
+[Research receipts and replay instructions](https://github.com/1337isnot1337/solved-conjectures/blob/research/docs/verification.md#boolean-hamiltonicity-research-lemmas). These checks do not resolve Boolean P versus NP.
 
 ## Weighted counting for bounded-occurrence 3-CNF (conditional research note)
 
-Run `python3 research/vp-vnp-bounded-occurrence-3cnf/verify_reduction.py` from the repository root. The verifier checks all primary assignments for n=3,4, plus clause width and maximum-three-occurrence properties through n=8. The proof of the projection is in [the note](../research/vp-vnp-bounded-occurrence-3cnf/README.md). The circuit lower bound is conditional on Anthropic's November 23, 2026 preprint and is **not** proved by the script or Lean. This note is not part of the solved-conjecture count.
+[Proof scope, research receipts, and verification instructions](https://github.com/1337isnot1337/solved-conjectures/blob/research/docs/verification.md#weighted-counting-for-bounded-occurrence-3-cnf-conditional-research-note). The source theorem dependency and exclusion from solved-conjecture counts are unchanged.
 
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
@@ -69,7 +22,7 @@ The [dedicated GitHub Actions workflow](https://github.com/1337isnot1337/solved-
 
 Lean verifies the proper real-threshold case with a Borel output kernel, an information bound of 300 nats using Mathlib KL, and an empirical bound against the full source class, including the threshold at infinity. The [review](../results/steinke-zakynthinou-thresholds/LEAN_REVIEW.md) identifies the exact mathematical and formal statements. The [receipt](../results/steinke-zakynthinou-thresholds/verification.json) distinguishes the kernel replay from the supplementary finite checks. The private-tag constants and the efficient and deterministic variants have separate written proofs.
 
-Gröchenig’s upper-density result is excluded after a [checked earlier resolution](../research/bounty-continuation-2026-11-21/grochenig-prior-resolution/). Its independent proof and verification receipts remain in [immutable Git history](https://github.com/1337isnot1337/solved-conjectures/blob/628270dc5e07d7924de265d2ac1beee4b5634b80/docs/verification/lean-grochenig-20261121/receipt.json). The reused KVZ results remain active.
+Gröchenig’s upper-density result is excluded after a [checked earlier resolution](https://github.com/1337isnot1337/solved-conjectures/tree/research/research/bounty-continuation-2026-11-21/grochenig-prior-resolution/). Its independent proof and verification receipts remain in [immutable Git history](https://github.com/1337isnot1337/solved-conjectures/blob/628270dc5e07d7924de265d2ac1beee4b5634b80/docs/verification/lean-grochenig-20261121/receipt.json). The reused KVZ results remain active.
 
 [Home](../README.md) · [Catalogue](../CONTENTS.md) · [Lean status](lean-status.md)
 
@@ -301,11 +254,11 @@ python3 results/chen-kitaev-zhang-records/verify.py
 python3 results/zhu-jacobi-stirling/verify.py
 ```
 
-The Fang–Zhang–Zhao infinite-log-convexity and Sun–Zhao iterated-ratio disproofs were already public before this campaign. Their duplicate result packages and computational workflow entries have been removed. The [priority correction](../research/campaign-20261121/PRIOR_RESOLUTION_CORRECTION.md) links the immutable prior proofs. Existing unique Lean modules are preserved, with their exact previously checked scope in [Lean status](lean-status.md#formalizations-of-previously-resolved-results). The separate prior Sturm reproof remains only as [credited research](../research/fang-zhang-zhao-sturm/).
+The Fang–Zhang–Zhao infinite-log-convexity and Sun–Zhao iterated-ratio disproofs were already public before this campaign. Their duplicate result packages and computational workflow entries have been removed. The [priority correction](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/campaign-20261121/PRIOR_RESOLUTION_CORRECTION.md) links the immutable prior proofs. Existing unique Lean modules are preserved, with their exact previously checked scope in [Lean status](lean-status.md#formalizations-of-previously-resolved-results). The separate prior Sturm reproof remains only as [credited research](https://github.com/1337isnot1337/solved-conjectures/tree/research/research/fang-zhang-zhao-sturm/).
 
 These are the commands in [the verification workflow](../.github/workflows/verify.yml). They include finite tests, exact certificates, and exhaustive searches; their mathematical roles are explained in the corresponding proof notes. A passing computation is not a claim that a full theorem has been formalized.
 
-The older Karp–Vishnyakova–Zhang Bessel-ratio unimodality package was withdrawn after [a complete earlier analytic proof](https://github.com/the-omega-institute/trureturing/issues/25199) was found. Its duplicate verifier and workflow step are removed. The [priority correction](../research/kvz-bessel-unimodality/PRIOR_RESOLUTION_CORRECTION.md) preserves the exact domain comparison and historical proof links.
+The older Karp–Vishnyakova–Zhang Bessel-ratio unimodality package was withdrawn after [a complete earlier analytic proof](https://github.com/the-omega-institute/trureturing/issues/25199) was found. Its duplicate verifier and workflow step are removed. The [priority correction](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/kvz-bessel-unimodality/PRIOR_RESOLUTION_CORRECTION.md) preserves the exact domain comparison and historical proof links.
 
 The [Wright verifier](../results/ferreira-simon-wright/verify.py) checks
 the general curvature identity as an exact polynomial in three variables,

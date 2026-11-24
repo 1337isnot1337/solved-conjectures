@@ -10,9 +10,9 @@ The proof establishes a more general theorem for products of circular interval f
 
 - [Complete proof](PROOF.md).
 - Independent mathematical reviews: [combinatorics](COMBINATORICS_REVIEW.md), [analysis](ANALYSIS_REVIEW.md), and [root](ROOT_REVIEW.md).
-- [Source and prior-resolution audit](PRIOR_AUDIT.md), [machine-readable reading record](PRIOR_SCAN.json), and [additional AIM/OpenAI audit](../../research/2026-11-21-aim-openai-priority/AUDIT.md).
+- [Source and prior-resolution audit](PRIOR_AUDIT.md), [machine-readable reading record](PRIOR_SCAN.json), and [additional AIM/OpenAI audit](https://github.com/1337isnot1337/solved-conjectures/blob/research/research/2026-11-21-aim-openai-priority/AUDIT.md).
 - [Exact supplementary checker](verify.py) and [recorded output](check-output.json).
-- [Research history](../../research/johnson-pfaffian/) and [coordination issue 211](https://github.com/1337isnot1337/solved-conjectures/issues/211).
+- [Research history](https://github.com/1337isnot1337/solved-conjectures/tree/research/research/johnson-pfaffian/) and [coordination issue 211](https://github.com/1337isnot1337/solved-conjectures/issues/211).
 
 Run the supplementary checks from the repository root:
 

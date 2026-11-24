@@ -1,7 +1,0 @@
-n 16 k 6 permanent 7107840
-rows 0 1 2 3 leaves 1900920 pruned 9735529 min 7107840 target 7107840
-rows 0 1 2 6 leaves 2691150 pruned 13771438 min 7107840 target 7107840
-rows 0 1 2 7 leaves 1911975 pruned 9811188 min 7107840 target 7107840
-rows 0 1 10 15 leaves 1354353 pruned 10165639 min 7107840 target 7107840
-rows 0 2 3 10 leaves 2269680 pruned 11630800 min 7107840 target 7107840
-rows 0 2 3 15 leaves 1609398 pruned 8475503 min 7107840 target 7107840
