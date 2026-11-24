@@ -1,0 +1,139 @@
+[
+  {
+    "sum": -16,
+    "gcd_coefficients": [
+      "1",
+      "-64"
+    ],
+    "factors": [
+      {
+        "exponent": 1,
+        "coefficients": [
+          "1",
+          "-64"
+        ]
+      }
+    ]
+  },
+  {
+    "sum": -10,
+    "gcd_coefficients": [
+      "1",
+      "-56"
+    ],
+    "factors": [
+      {
+        "exponent": 1,
+        "coefficients": [
+          "1",
+          "-56"
+        ]
+      }
+    ]
+  },
+  {
+    "sum": -4,
+    "gcd_coefficients": [
+      "1",
+      "-16",
+      "64"
+    ],
+    "factors": [
+      {
+        "exponent": 2,
+        "coefficients": [
+          "1",
+          "-8"
+        ]
+      }
+    ]
+  },
+  {
+    "sum": 0,
+    "gcd_coefficients": [
+      "1",
+      "-32",
+      "256"
+    ],
+    "factors": [
+      {
+        "exponent": 2,
+        "coefficients": [
+          "1",
+          "-16"
+        ]
+      }
+    ]
+  },
+  {
+    "sum": 4,
+    "gcd_coefficients": [
+      "1",
+      "-56",
+      "1088",
+      "12288",
+      "-917504",
+      "16777216",
+      "-117440512"
+    ],
+    "factors": [
+      {
+        "exponent": 1,
+        "coefficients": [
+          "1",
+          "8",
+          "-448"
+        ]
+      },
+      {
+        "exponent": 2,
+        "coefficients": [
+          "1",
+          "-32",
+          "512"
+        ]
+      }
+    ]
+  },
+  {
+    "sum": 6,
+    "gcd_coefficients": [
+      "1",
+      "8"
+    ],
+    "factors": [
+      {
+        "exponent": 1,
+        "coefficients": [
+          "1",
+          "8"
+        ]
+      }
+    ]
+  },
+  {
+    "sum": 8,
+    "gcd_coefficients": [
+      "1",
+      "-56",
+      "512",
+      "8192"
+    ],
+    "factors": [
+      {
+        "exponent": 1,
+        "coefficients": [
+          "1",
+          "8"
+        ]
+      },
+      {
+        "exponent": 2,
+        "coefficients": [
+          "1",
+          "-32"
+        ]
+      }
+    ]
+  }
+]

@@ -44,22 +44,26 @@ Roots are distinct, with no multiplicity count. Arbitrary free integer constants
 | Polynomial-order jets of the coalescing Boolean inverse | An explicit integer recurrence computes every jet through order R in polynomially many gates in n,R. The degeneration merges the separated integer poles. |
 | Exact Frobenius selection and finite precision | A selected permutation has a rational polynomial representative exactly when it is central in the Galois group; an explicit quadratic Newton lift never equals its limit at a finite stage. |
 | Dense integer roots in variable square chains | More than half the degree forces prime divisibility and even valuations; more than three quarters forces valuation doubling. A six-root degree-eight example makes the latter threshold strict. |
+| Separate charged height and real additive complexity | The coefficient bound $\log_2\lVert f\rVert_1\le a2^m$ and integer-root divisibility improve the earlier exponential estimate by a factor of order sqrt(s). The consecutive-multiple lower bound gains a logarithmic term. These are classical-theorem consequences. |
 | Exact obstruction to extending the first Bremner family | An explicit rational quotient and resultant exclude every nondegenerate rational prefix collision within the displayed first elliptic family and its Hadamard transforms. Other families and unbounded depth remain unresolved. |
+| Complete pairing test for the two displayed elliptic families | Exact resultants, two congruence-lattice certificates and seven rational fibers exclude every proposed lift drawn from either family or its Hadamard transform. The outside-family example prevents promotion to an arbitrary-chain theorem. |
+| Missing-prime and difference-group selection | A polynomial bound for the least prime not dividing a short nonzero constant is equivalent to a positive-power ultimate-factorial lower bound. The stated S-unit reduction remains exponential in group rank. |
+| The displayed elliptic families are not exhaustive | An exact signed-relation certificate places a Paul/Bremner 16-root example outside both families and all their Hadamard images under rational scaling, labels and signs. |
 | Rational torsion in a polynomial elliptic family | Mazur's theorem gives at most 262δ rational roots of a nonzero specialized division polynomial, independent of its index, and a fixed-cost bounded-index root cover. This is a consequence of existing theorems. |
 
 The general quantitative bounds recorded here are consequences of existing theorems and algorithms:
 
 ```math
-N_{\mathbb Z}(f)\le 2^{s-h_K(s)},\qquad h_K(s)=\frac{\sqrt{1+4Ks}-1}{2K},
+N_{\mathbb Z}(f)\le\min\left\{1,\frac{32}{\sqrt{s+1}}\right\}2^{s-h_K(s)},\qquad h_K(s)=\frac{\sqrt{1+4Ks}-1}{2K},
 ```
 
 ```math
-n+\sqrt{n/K}\le\mu(n)
+n+\sqrt{n/K}+\tfrac12\log_2 n-1\le\mu(n)
 :=\min_{0\ne h\in\mathbb Z[x]}\tau\left(h\prod_{j=1}^{2^n}(x-j)\right)
 \le C_\varepsilon 2^{(1/2+\varepsilon)n}.
 ```
 
-Here K is an absolute constant from Risler's real additive-complexity bound. The lower bounds combine that theorem with the separately charged multiplication count; the root estimate also holds for real roots. A stronger attempted p-adic bound is retained only conditionally because an unrestricted tropical-valuation step in its cited proof fails. The upper bound reconstructs the classical block-product algorithm, including constant construction and denominator clearing. In particular every possible exponent in the full conjecture must be at least 2, as Smale already recorded in 1998. The earlier elementary factorial-divisibility estimate remains in ARITHMETIC.md. None of these bounds proves the full conjecture or the superpolynomial consecutive-root lower bound. No novelty is claimed for these theorem combinations or the classical BSS implication.
+Here K is an absolute constant from Risler's real additive-complexity bound. The older bound 2^(s−h_K(s)) also holds for real roots. CHARGED_HEIGHT.md improves the integer-root estimate by a factor of order sqrt(s), using log₂||f||₁≤a2^m and integer-root divisibility, where a and m count the two gate types. The consecutive-multiple lower bound holds for n≥1 and arbitrary cofactors; it adds only a logarithmic correction to the earlier linear lower bound. A stronger attempted p-adic bound is retained only conditionally because an unrestricted tropical-valuation step in its cited proof fails. The upper bound reconstructs the classical block-product algorithm, including constant construction and denominator clearing. In particular every possible exponent in the full conjecture must be at least 2, as Smale already recorded in 1998. The earlier elementary factorial-divisibility estimate remains in ARITHMETIC.md. None of these bounds proves the full conjecture or the superpolynomial consecutive-root lower bound. No novelty is claimed for these theorem combinations or the classical BSS implication.
 
 The consecutive-root minimum is also equivalent up to linear circuit overhead to a charged circuit problem for polynomial representatives of the inverse of a binary-value polynomial on the Boolean cube. This handles arbitrary cofactors; converting a representative into its multilinear normal form remains an unproved additional step.
 
@@ -77,6 +81,14 @@ The consecutive-root minimum is also equivalent up to linear circuit overhead to
 - [HARMONIC_FAMILIES.md](HARMONIC_FAMILIES.md): reciprocal fixed-point averages for binomial products and integer quadratic iterates, an intersective-iteration failure, and a classical Schur test of addition rules.
 - [DENSE_SQUARE_CHAINS.md](DENSE_SQUARE_CHAINS.md): prime divisibility with an unknown cofactor, precise root-density thresholds, and the distinction between coefficient bit length and circuit length.
 - [SQUARE_CHAIN_EXTENSION.md](SQUARE_CHAIN_EXTENSION.md): the charged Bremner construction, exact prefix-extension equations, and a complete rational-collision obstruction for its first displayed family.
+- [SQUARE_CHAIN_SECOND.md](SQUARE_CHAIN_SECOND.md): an explicit second-family map, common-rotation restriction and complete certificates for the stated cross-family and ordinary self-prefix obstructions.
+- [SQUARE_CHAIN_COMPLEMENT.md](SQUARE_CHAIN_COMPLEMENT.md): the complementary-prefix resultant, exact rational-root lattice lemma and completed two-family pairing test.
+- [NONRATIONAL_POLE_FILTERS.md](NONRATIONAL_POLE_FILTERS.md): exact retention of nonrational poles under fixed translated/differential filters, with explicit coefficient-degree and universal-probe limits.
+- [RATIONAL_POLE_SELECTION.md](RATIONAL_POLE_SELECTION.md): a smaller irreducible-factor shift bound, equal long jets with different rational-pole parts and the charged consequence of a hypothetical projector.
+- [SQUARE_CHAIN_SCOPE.md](SQUARE_CHAIN_SCOPE.md): the explicit Paul/Bremner counterexample to exhaustion by the two elliptic families and their Hadamard images.
+- [CHARGED_HEIGHT.md](CHARGED_HEIGHT.md): the unrestricted charged-height refinement, its all-multiples counterpart and exact discriminant obstructions.
+- [SELECTION_SCOPE.md](SELECTION_SCOPE.md): the precise strength of a missing-prime rule and the quantitative limitation of difference-group ranks.
+- [SOURCE_REFRESH_2026.md](SOURCE_REFRESH_2026.md): recent factor, GCD and radical results with their input-degree and constant-model dependencies.
 - [ELLIPTIC_SPECIALIZATIONS.md](ELLIPTIC_SPECIALIZATIONS.md): the rational-torsion root bound and a root cover whose additional circuit cost is independent of the multiplication index.
 - [NORMALIZATION.md](NORMALIZATION.md): fully charged rational-to-integer and monic transformations, with arbitrary intermediate cancellation.
 - [PRIME_AVERAGES.md](PRIME_AVERAGES.md): exact integer and projective-rational sieve inequalities, harmonic averages and a multiquadratic local-cover test.
@@ -108,7 +120,7 @@ Run from the repository root:
 python3 research/shub-smale-tau/verify.py
 ```
 
-The verifier uses the Python standard library and exact arithmetic. It checks finite instances of identities and counterexamples. The general statements rest on their written proofs. No Lean verification or full-conjecture verification is claimed.
+The verifier uses the Python standard library and exact arithmetic. Most checks cover finite instances of identities and counterexamples. The square-chain resultant certificates additionally prove complete algebraic identities: each has a proved degree bound and is checked at more distinct points than that degree. Their rational-root exclusions are exhaustive finite-field checks. These certificates support the stated restricted theorems; they do not verify the full conjecture. No Lean verification is claimed.
 
 ## Missing result
 

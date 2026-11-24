@@ -510,3 +510,8 @@ interval, a unit shift that must be rejected, and H=F_3^4. Extra scaling
 of each recovered base forces a nonintegral residual scalar. The checks
 verify finite algebraic identities; they do not verify the asymptotic
 circuit bound, which rests on the written proof.
+
+
+## Refinement of the separating shift
+
+[RATIONAL_POLE_SELECTION.md](RATIONAL_POLE_SELECTION.md), Section 1, proves that if the unknown cofactor has r distinct irreducible factors over Q, a separating positive integer shift can be chosen at most binom(r,2)+1. This replaces the d²+1 shift choice in the proof without changing its other steps. It does not replace the radical-degree parameter d in the Padé reconstruction: a single irreducible cofactor x^(2^k)+2 already contributes 2^(k+1) shifted logarithmic-derivative poles. The same note gives a charged long-jet obstruction to fixed-center rational-pole selection.
