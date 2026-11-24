@@ -1,3 +1,7 @@
+import Conjectures.SternHalfPlaneBasic
+import Conjectures.SternHalfPlaneParabola
+import Conjectures.SternHalfPlaneShift
+import Conjectures.SternHalfPlaneContinuant
 import Conjectures.HartkeMatchingExcessDigits
 import Conjectures.HartkeMatchingExcessDivision
 import Conjectures.HartkeMatchingExcessSplit

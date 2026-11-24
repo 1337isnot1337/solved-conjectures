@@ -313,3 +313,9 @@ For the other entries, primary publications and conjecture identifiers are cited
 
 
 
+
+## Stern polynomials
+
+| Result | Finding | Lean | Evidence |
+| :--- | :--- | :---: | :--- |
+| [Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture](results/stern-half-plane/) | The recorded analytic proof and exact compact-region certificate cover every positive Stern index. | Partial: actual recurrence and evaluation, all-odd run coverage, Schinzel identity and all-index nonvanishing conditional on a common local parabola. All three regional analytic obligations remain unformalized. | [Proof](results/stern-half-plane/PROOF.md) · [Lean scope](results/stern-half-plane/FORMALIZATION.md) · [Independent review](results/stern-half-plane/LEAN_REVIEW.md) · [Receipt](docs/verification/lean-stern-half-plane-partial-20261124-162051/receipt.json) |

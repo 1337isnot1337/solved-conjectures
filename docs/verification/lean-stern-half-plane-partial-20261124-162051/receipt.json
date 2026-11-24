@@ -1,0 +1,50 @@
+{
+  "mode": "scoped candidate verification; not the full repository build",
+  "root": "Conjectures.SternHalfPlaneContinuant",
+  "modules": [
+    "Conjectures.SternHalfPlaneBasic",
+    "Conjectures.SternHalfPlaneContinuant",
+    "Conjectures.SternHalfPlaneParabola",
+    "Conjectures.SternHalfPlaneShift"
+  ],
+  "required": [
+    "Conjectures.SternHalfPlane.stern_shift",
+    "Conjectures.SternHalfPlane.stern_runIndex",
+    "Conjectures.SternHalfPlane.exists_runIndex",
+    "Conjectures.SternHalfPlane.eval_sternPolynomial",
+    "Conjectures.SternHalfPlane.parabolic_div_preserves",
+    "Conjectures.SternHalfPlane.continuedValue_denominator_ne_zero",
+    "Conjectures.SternHalfPlane.runContinuant_ne_zero",
+    "Conjectures.SternHalfPlane.stern_ne_zero_of_parabolic"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 134,
+    "modules": 4,
+    "private_declarations": 14,
+    "raw_declarations": 134,
+    "required": 8,
+    "tag": "passed",
+    "theorems": 105
+  },
+  "stock_kernel_replay": "passed",
+  "source_sha256": {
+    "Conjectures.SternHalfPlaneBasic": "cc421cefcc4244e15d4d5aa67873f8d168a5edc865a6987442f528b41f11dc94",
+    "Conjectures.SternHalfPlaneContinuant": "3bc0f4d6f851d73119461401ac65c656b6de209c80a25293545459e758a0b02a",
+    "Conjectures.SternHalfPlaneParabola": "5e6e0ef341f8b3dd70859f5eb77ad89d8efe560f9b13583c983259b37dc70843",
+    "Conjectures.SternHalfPlaneShift": "22e1b47f69e5420ff9fb3c2be11c6f0f7d4ff32d26322d5aeeae5fb62e23bee0"
+  },
+  "verifier_sha256": {
+    "audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c"
+  }
+}

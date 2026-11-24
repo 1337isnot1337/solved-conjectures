@@ -1,0 +1,82 @@
+{
+  "Conjectures.SternHalfPlaneBasic": {
+    "module": "Conjectures.SternHalfPlaneBasic",
+    "started_utc": "2026-11-24T18:26:36.587404+00:00",
+    "elapsed_seconds": 3.817,
+    "lock_acquired_utc": "2026-11-24T18:26:36.587435+00:00",
+    "lock_wait_seconds": 0.0,
+    "exit_code": 0,
+    "source_sha256": "cc421cefcc4244e15d4d5aa67873f8d168a5edc865a6987442f528b41f11dc94",
+    "source_unchanged_during_run": true,
+    "command": [
+      "lean",
+      "-j2",
+      "-M4500",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/repo/lean/.lake/build/lib/lean/Conjectures/SternHalfPlaneBasic.olean",
+      "/tmp/cinna-lean-162051/repo/lean/Conjectures/SternHalfPlaneBasic.lean"
+    ],
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Conjectures.SternHalfPlaneContinuant": {
+    "module": "Conjectures.SternHalfPlaneContinuant",
+    "started_utc": "2026-11-24T18:32:51.819520+00:00",
+    "elapsed_seconds": 7.671,
+    "lock_acquired_utc": "2026-11-24T18:32:56.772705+00:00",
+    "lock_wait_seconds": 4.953,
+    "exit_code": 0,
+    "source_sha256": "3bc0f4d6f851d73119461401ac65c656b6de209c80a25293545459e758a0b02a",
+    "source_unchanged_during_run": true,
+    "command": [
+      "lean",
+      "-j2",
+      "-M4500",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/repo/lean/.lake/build/lib/lean/Conjectures/SternHalfPlaneContinuant.olean",
+      "/tmp/cinna-lean-162051/repo/lean/Conjectures/SternHalfPlaneContinuant.lean"
+    ],
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Conjectures.SternHalfPlaneParabola": {
+    "module": "Conjectures.SternHalfPlaneParabola",
+    "started_utc": "2026-11-24T18:26:40.405220+00:00",
+    "elapsed_seconds": 3.989,
+    "lock_acquired_utc": "2026-11-24T18:26:44.228119+00:00",
+    "lock_wait_seconds": 3.823,
+    "exit_code": 0,
+    "source_sha256": "5e6e0ef341f8b3dd70859f5eb77ad89d8efe560f9b13583c983259b37dc70843",
+    "source_unchanged_during_run": true,
+    "command": [
+      "lean",
+      "-j2",
+      "-M4500",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/repo/lean/.lake/build/lib/lean/Conjectures/SternHalfPlaneParabola.olean",
+      "/tmp/cinna-lean-162051/repo/lean/Conjectures/SternHalfPlaneParabola.lean"
+    ],
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Conjectures.SternHalfPlaneShift": {
+    "module": "Conjectures.SternHalfPlaneShift",
+    "started_utc": "2026-11-24T18:27:48.546704+00:00",
+    "elapsed_seconds": 15.275,
+    "lock_acquired_utc": "2026-11-24T18:27:48.546791+00:00",
+    "lock_wait_seconds": 0.0,
+    "exit_code": 0,
+    "source_sha256": "22e1b47f69e5420ff9fb3c2be11c6f0f7d4ff32d26322d5aeeae5fb62e23bee0",
+    "source_unchanged_during_run": true,
+    "command": [
+      "lean",
+      "-j2",
+      "-M4500",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/cinna-lean-162051/repo/lean/.lake/build/lib/lean/Conjectures/SternHalfPlaneShift.olean",
+      "/tmp/cinna-lean-162051/repo/lean/Conjectures/SternHalfPlaneShift.lean"
+    ],
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

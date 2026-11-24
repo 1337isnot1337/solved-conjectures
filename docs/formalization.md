@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture
+
+The [four-module partial](../results/stern-half-plane/FORMALIZATION.md) verifies the actual Stern recurrence and polynomial evaluation, the Schinzel identity, all-odd-index run coverage, and nonvanishing for every positive index under an explicit common-parabola hypothesis. All strict source builds, the owned/private audit of 134 declarations (105 theorems, 14 private declarations and eight required endpoints), and exact stock replay passed. The [independent review](../results/stern-half-plane/LEAN_REVIEW.md) and [receipt](verification/lean-stern-half-plane-partial-20261124-162051/receipt.json) preserve the exact scope. The near-one estimates, compact certificate and separate exterior proof remain unformalized; count zero.
+
 ## Hartke–Stolee–West–Yancey matching-excess conjecture
 
 The [eight-module checkpoint](../results/hartke-stolee-west-yancey-matching-excess/FORMALIZATION.md) proves binary-weight subadditivity, the sparse Mersenne-division bound, actual split-graph matching and path-permutation bijections, the return-path counting formula, and the base-edge cardinality. All eight strict builds, the all-owned audit of 179 declarations (152 theorems, 19 private declarations and ten required endpoints), and exact stock-kernel replay passed. [Receipt](verification/lean-hartke-matching-excess-partial-20261124-162051/receipt.json). The graph witnesses, extremal constants and tail-minimum divergence remain unformalized. This is incomplete and contributes zero complete results.
