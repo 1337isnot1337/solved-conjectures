@@ -143,6 +143,7 @@ U_{ABCD}(r(q))S_{q,N(q)}\unrhd T_{q,N(q)},
 \qquad \frac{\log r(q)}{\log q}\longrightarrow0.       \tag{2}
 ```
 
+The limit is taken along the chosen unbounded sequence of integers $`q`$.
 There is no growth restriction on $`N(q)`$. Indeed, spectral monotonicity
 and the same cancellation turn (2) into
 

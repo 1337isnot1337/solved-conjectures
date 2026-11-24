@@ -51,8 +51,10 @@ Jelisiejew theorem and the FJM PDF formulas were checked in primary sources.
 The Sun base-map note records an unresolved composition; it does not certify
 the claimed base or disprove its abstract rank bound.
 
-The module obstruction received independent file-level adversarial review
-from the spectral worker and root. The first-order tangent reduction was
+The geodesic trade and its conditional cancellation criterion received
+independent review from the spectral worker and root. The module obstruction
+received independent file-level adversarial review from the spectral worker
+and root. The first-order tangent reduction was
 reviewed by the constructive worker and root. Its imported star-convexity
 and asymptotic-subrank theorem numbers were checked in the cited primary
 versions. These two arguments are symbolic written proofs; no additional
