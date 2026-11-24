@@ -66,6 +66,7 @@ STATUS_LABEL_SLUGS = {
     "Hartke–Stolee–West–Yancey matching-excess conjecture": "hartke-stolee-west-yancey-matching-excess",
     "Heim–Neuhauser–Tröger’s plane-partition polynomial Turán conjecture": "heim-neuhauser-troeger-plane-partition-turan",
     "Heim–Neuhauser’s plane-partition polynomization conjecture": "heim-neuhauser-plane-partition-polynomization",
+    "Heim–Neuhauser’s ordinary D’Arcais root conjecture": "heim-neuhauser-ordinary-darcais-root",
     "Bétermin’s FCC/BCC cold-spot conjecture": "betermin-fcc-bcc-cold-spots",
     "Coulangeon–Lazzarini’s two-shell conjecture": "coulangeon-lazzarini-two-shells",
     "Alexandersson’s parking-function excedance conjecture": "alexandersson-parking-excedance",

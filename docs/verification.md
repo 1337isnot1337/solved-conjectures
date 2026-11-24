@@ -172,9 +172,13 @@ Run `python3 results/hartke-stolee-west-yancey-matching-excess/verify.py` for an
 
 The [plane-partition polynomial Turán proof](../results/heim-neuhauser-troeger-plane-partition-turan/PROOF.md) and [polynomization proof](../results/heim-neuhauser-plane-partition-polynomization/PROOF.md) do use exact arithmetic certificates. Run the `heim-neuhauser-fourier-certificate.py` and `heim-neuhauser-plane-partition-check.py` programs in the Turán result directory without Python optimization. Their assertions certify the rational parameter boxes and the remaining polynomial coefficient signs, respectively.
 
+The [ordinary D’Arcais root proof](../results/heim-neuhauser-ordinary-darcais-root/PROOF.md) uses its own rational Fourier certificate, small-index integer polynomial check, and C++ GMP check. Run all three commands in the proof, with Python assertions enabled.
+
 ## Pantone–Bóna asymptotic equivalence
 
 Run `python3 results/pantone-bona-asymptotic/verify.py` for literal small permutation counts and exact tableau branching comparisons. The [proof](../results/pantone-bona-asymptotic/PROOF.md) derives the leading constant analytically; finite enumeration is not part of its argument.
+
+The separate [differential-equation certificate](../results/pantone-bona-asymptotic/ode-proof.md) checks identities of rational functions, not truncated coefficients. Run `python3 results/pantone-bona-asymptotic/certify_ode.py` with SymPy 1.14.0.
 
 ## Pantone–Bóna second-largest-terminal asymptotic
 

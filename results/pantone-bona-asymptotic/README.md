@@ -9,4 +9,4 @@ The argument refines the authors’ front–tail decomposition to count each per
 - [Exact supplementary checks](verify.py)
 - [Discovery and review, issue #377](https://github.com/1337isnot1337/solved-conjectures/issues/377)
 
-The proof does not rely on the checks. No D-finiteness, Lean verification, or external refereeing is claimed.
+The asymptotic proof does not rely on finite checks. A [shorter tableau proof](tableau-proof.md) also gives an exact hook sum. That sum leads to a separate [proof of the authors’ guessed differential equation](ode-proof.md) by rational-function certificates. No Lean verification or external refereeing is claimed.
