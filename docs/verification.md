@@ -140,6 +140,8 @@ The partial-result entries contain their replay commands for the [Frankl generat
 
 ## Analytic proofs without computation
 
+The [Csordas–Vishnyakova](../results/csordas-vishnyakova/PROOF.md) and [Wagner](../results/wagner-laguerre-operator/PROOF.md) counterexamples use exact entire-function identities and local-uniform-limit arguments. No computation or Lean proof is required for their written mathematics; the source and review limits are recorded in the respective publication audits.
+
 The [Dospolova–Germanskov–Zaporozhets disproof](../results/dospolova-germanskov-zaporozhets/PROOF.md) is analytic throughout. The strict Gaussian-range argument applies to every nontrivial Gaussian-bounded compact, including bounded discontinuous processes; Vitale's published normalized intrinsic-volume limit excludes every sequence c^k/k! with positive c. Three [independent reviews](../results/dospolova-germanskov-zaporozhets/ROOT_REVIEW.md) check the separability argument, strictness and normalization. The source audit credits Vitale and Long, and actual image inspection resolved an OCR ambiguity in an earlier inequality. There is no numerical verifier or new workflow step for this proof.
 
 
@@ -192,6 +194,13 @@ python3 results/lyon-gamma-median/verify.py
 The standard-library verifier independently checks 4258 rational median brackets and 4256 cells covering exactly the interval from one tenth to seven. Every sign assertion uses 128-bit-scaled integer intervals with outward rounding, convergent series and explicit signed remainder bounds. The JSON data are proposed brackets, not trusted quantile values. Both independent full replays passed with minimum margin 38316221661991044002598352939471477 divided by 2^128. Typical replay time is one to two minutes. The package has no Lean formalization; the unformalized marker does not erase the essential role of the exact certificate.
 
 ## Computational checks
+
+The [Cardon et al. disproof](../results/cardon-zero-sector/PROOF.md) uses a symbolic discriminant and an exact rational witness, replayed with Python Fraction. The [Rowland–Sistos Barrón disproof under the quasipolynomial interpretation](../results/rowland-sistos-barron/PROOF.md) has an all-exponent symbolic proof; its supplementary verifier checks exact coefficient degrees and independent modular recurrence ranks. These are not Lean checks.
+
+```bash
+python3 results/cardon-zero-sector/verify.py
+python3 results/rowland-sistos-barron/verify.py --max-exponent 100
+```
 
 The [dual Chow counterexample](../results/caiolo-ferroni-hoster/PROOF.md) uses two exact recursions and a symbolic discriminant sign certificate for all prime powers q ≥ 17. The [Ehrhart counterexample](../results/hkm-ehrhart/PROOF.md) uses integer lattice-point counts, exact polynomial interpolation, a rational Descartes certificate, and a negative Wronskian. Both were replayed on 2026-11-24; these are not Lean checks.
 

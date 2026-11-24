@@ -59,6 +59,10 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Csordas–Vishnyakova conjecture": "csordas-vishnyakova",
+    "Cardon–Forgács–Piotrowski–Sorensen–White conjecture": "cardon-zero-sector",
+    "Wagner's Laguerre-operator conjecture": "wagner-laguerre-operator",
+    "Rowland–Sistos Barrón conjecture": "rowland-sistos-barron",
     "Caiolo–Ferroni–Hoster conjecture": "caiolo-ferroni-hoster",
     "Higashitani–Kummer–Michałek conjecture": "hkm-ehrhart",
     "Steinke–Zakynthinou’s agnostic VC learning conjecture": "steinke-zakynthinou-agnostic-vc",
