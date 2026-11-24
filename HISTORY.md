@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24 — Steinerberger’s quantitative Feldheim-tail conjecture
+
+The [complete Lean disproof](results/steinerberger-feldheim-tail/LEAN-AUDIT.md) refutes both original existential inequalities with the actual probability law, expectation, median, independent coordinates, and product-event probabilities. The inequalities fail for every positive threshold. All four modules passed strict source compilation, an audit of every owned declaration, and stock-kernel replay; the integrator independently checked the original statements. The additional smoothing and asymptotic supplements remain outside the verified scope. This formalizes the recorded argument of Cinna Davis and GPT-6.2 Astra and retains the existing priority qualifications.
+
 ## 2026-11-24: Compact ranked results index
 
 The README lists two side-by-side problem/status pairs, with approximate competition ranks and ties. The established significance order, result links, attribution markers, and Lean statuses are preserved. The site builder reads the index down the left half and then the right half; the README checker and regression tests enforce the same layout and rank order.

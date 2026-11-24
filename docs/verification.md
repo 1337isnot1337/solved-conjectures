@@ -1,5 +1,17 @@
 # Verification
 
+## Steinerberger’s quantitative Feldheim-tail conjecture
+
+The [complete Lean disproof](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md)
+constructs the probability law with survival function exp(−x−x²/200), identifies
+its actual mean and median, and bounds the ratio of the original product-space
+events for every positive threshold. Both original existence claims fail.
+The four-module closure passed strict compilation, the audit of all 103 owned
+declarations (92 theorems and six required endpoints), and stock-kernel replay.
+The integrator checked the statement against both original primary sources.
+The smoothing, all-epsilon family, strict log-concavity, and rate supplements
+remain unformalized. This is one completed existing conjecture entry.
+
 ## Complex BSS separation research
 
 [Research receipts and replay instructions](https://github.com/1337isnot1337/solved-conjectures/blob/research/docs/verification.md#complex-bss-separation-research). Check out `research` before running the research scripts.

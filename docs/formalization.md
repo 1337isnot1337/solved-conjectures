@@ -1,5 +1,17 @@
 # Full formalization campaign
 
+## Steinerberger’s quantitative Feldheim-tail conjecture
+
+The [complete Lean disproof](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md)
+constructs the probability law with survival function exp(−x−x²/200), identifies
+its actual mean and median, and bounds the ratio of the original product-space
+events for every positive threshold. Both original existence claims fail.
+The four-module closure passed strict compilation, the audit of all 103 owned
+declarations (92 theorems and six required endpoints), and stock-kernel replay.
+The integrator checked the statement against both original primary sources.
+The smoothing, all-epsilon family, strict log-concavity, and rate supplements
+remain unformalized. This is one completed existing conjecture entry.
+
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
 The [framework paper's Conjecture 4.18](https://arxiv.org/pdf/2001.09122v3) is fully checked by `AgnosticVC.steinkeZakynthinou_framework_conjecture418`. Its distribution-free CMI takes the supremum over fixed paired pools, and both guarantees hold with common constant $`19{,}712`$ for every positive sample size. [Lean source](../lean/Conjectures/AgnosticVC/FixedPairing.lean)
