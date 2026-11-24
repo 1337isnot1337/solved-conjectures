@@ -1,5 +1,15 @@
 # History
 
+## 2026-11-24: Publish five reviewed theta-kernel and Li-coefficient results
+
+- [Nuttall's conjecture](results/nuttall-cumulants/): Complete proposed proof of Conjecture 1 in §4.5: for each finite order r, every sufficiently high repeated-tail cumulant of the Riemann theta kernel is strictly reverse regular through order r on the entire nonnegative node domain. The separate RH-equivalent Toeplitz positivity problem remains unresolved.
+- [Coffey–Smith conjecture](results/coffey-smith/): Complete proposed unconditional disproof of Smith’s named conjunction: if RH holds the dyadic coefficient square mass is O(N^(-1/2) log³ N), so both proposed positive-fraction sets have density zero for 0<ε<1/4; without RH the polynomial upper bound fails. The weaker Coffey upper-bound assertion alone is not refuted.
+- [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/): Complete proposed computer-assisted disproof of the universal automorphic Li-coefficient monotonicity claim. The admissible GL1 imaginary norm twist L(s+8i,χ₋₃) has Re(λ(2)−λ(1))<−3/2, certified by rational interval bounds. No GRH assumption.
+- [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/): Complete proposed unconditional refutation of the logarithmic and all-ε subpower growth conjecture for the tiny Li term: limsup |λtiny(n)|/n^(1/4)=∞. The authors’ weaker linear stability conjecture is not resolved.
+- [Wang–Yang's conjecture](results/wang-yang/): Complete proposed disproof of the author-manuscript Conjecture 1.10: for every fixed coefficient index, the signed forward differences of the Xi coefficients have infinitely many values of each strict sign. Final journal wording has not been checked; the adjacent logarithmic conjecture is separate.
+
+The original independent mathematical reviews and bounded prior-art audits are preserved. The automorphic Li certificate was independently replayed against its pinned source blob; the other four written proofs need no numerical computation. Corrected trailing whitespace in the README results heading and passed the exact 79-row validator. No Lean or external referee verification is claimed.
+
 ## 2026-11-24: Publish four previously reviewed research results
 
 Promoted [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/), [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/), [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/), [Rowland–Sistos Barrón conjecture](results/rowland-sistos-barron/). The written arguments and prior independent reviews were checked against the original statements. The Cardon rational discriminant and Rowland exact replay through M=100 passed. The Wagner statement is pinned to the author preprint; the Rowland interpretation of pseudo-polynomial is disclosed. No Lean verification or exclusive priority is claimed. Original research records are preserved.

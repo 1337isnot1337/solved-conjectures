@@ -140,6 +140,11 @@ The partial-result entries contain their replay commands for the [Frankl generat
 
 ## Analytic proofs without computation
 
+- [Nuttall's conjecture](../results/nuttall-cumulants/PROOF.md): Complete proposed proof of Conjecture 1 in §4.5: for each finite order r, every sufficiently high repeated-tail cumulant of the Riemann theta kernel is strictly reverse regular through order r on the entire nonnegative node domain. The separate RH-equivalent Toeplitz positivity problem remains unresolved. [Audit](../results/nuttall-cumulants/AUDIT.md).
+- [Coffey–Smith conjecture](../results/coffey-smith/PROOF.md): Complete proposed unconditional disproof of Smith’s named conjunction: if RH holds the dyadic coefficient square mass is O(N^(-1/2) log³ N), so both proposed positive-fraction sets have density zero for 0<ε<1/4; without RH the polynomial upper bound fails. The weaker Coffey upper-bound assertion alone is not refuted. [Audit](../results/coffey-smith/AUDIT.md).
+- [Merlini–Sala–Sala conjecture](../results/merlini-sala-sala/PROOF.md): Complete proposed unconditional refutation of the logarithmic and all-ε subpower growth conjecture for the tiny Li term: limsup |λtiny(n)|/n^(1/4)=∞. The authors’ weaker linear stability conjecture is not resolved. [Audit](../results/merlini-sala-sala/AUDIT.md).
+- [Wang–Yang's conjecture](../results/wang-yang/PROOF.md): Complete proposed disproof of the author-manuscript Conjecture 1.10: for every fixed coefficient index, the signed forward differences of the Xi coefficients have infinitely many values of each strict sign. Final journal wording has not been checked; the adjacent logarithmic conjecture is separate. [Audit](../results/wang-yang/AUDIT.md).
+
 The [Csordas–Vishnyakova](../results/csordas-vishnyakova/PROOF.md) and [Wagner](../results/wagner-laguerre-operator/PROOF.md) counterexamples use exact entire-function identities and local-uniform-limit arguments. No computation or Lean proof is required for their written mathematics; the source and review limits are recorded in the respective publication audits.
 
 The [Dospolova–Germanskov–Zaporozhets disproof](../results/dospolova-germanskov-zaporozhets/PROOF.md) is analytic throughout. The strict Gaussian-range argument applies to every nontrivial Gaussian-bounded compact, including bounded discontinuous processes; Vitale's published normalized intrinsic-volume limit excludes every sequence c^k/k! with positive c. Three [independent reviews](../results/dospolova-germanskov-zaporozhets/ROOT_REVIEW.md) check the separability argument, strictness and normalization. The source audit credits Vitale and Long, and actual image inspection resolved an OCR ambiguity in an earlier inequality. There is no numerical verifier or new workflow step for this proof.
@@ -194,6 +199,14 @@ python3 results/lyon-gamma-median/verify.py
 The standard-library verifier independently checks 4258 rational median brackets and 4256 cells covering exactly the interval from one tenth to seven. Every sign assertion uses 128-bit-scaled integer intervals with outward rounding, convergent series and explicit signed remainder bounds. The JSON data are proposed brackets, not trusted quantile values. Both independent full replays passed with minimum margin 38316221661991044002598352939471477 divided by 2^128. Typical replay time is one to two minutes. The package has no Lean formalization; the unformalized marker does not erase the essential role of the exact certificate.
 
 ## Computational checks
+
+[Chaudhary–Khmiri–Mazhouda counterexample](../results/chaudhary-khmiri-mazhouda/PROOF.md): the exact interval certificate uses only Python's standard library. Run:
+
+```sh
+python3 results/chaudhary-khmiri-mazhouda/verify.py
+```
+
+The certificate proves the real-part difference is less than −3/2. [Review and replay](../results/chaudhary-khmiri-mazhouda/AUDIT.md).
 
 The [Cardon et al. disproof](../results/cardon-zero-sector/PROOF.md) uses a symbolic discriminant and an exact rational witness, replayed with Python Fraction. The [Rowland–Sistos Barrón disproof under the quasipolynomial interpretation](../results/rowland-sistos-barron/PROOF.md) has an all-exponent symbolic proof; its supplementary verifier checks exact coefficient degrees and independent modular recurrence ranks. These are not Lean checks.
 
