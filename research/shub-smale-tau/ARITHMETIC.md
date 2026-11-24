@@ -118,7 +118,7 @@ therefore does not supply the intended BSS separation.
 
 ## 3. An exact averaging identity over all primes and precision levels
 
-Let `R={r_1,...,r_N}` be any finite set of distinct integers. Put
+Let `R={r_1,...,r_N}` be a nonempty finite set of distinct integers, so `N>=1`. The empty-root case needs no bound. Put
 
 ```math
 \Delta_R=\prod_{i<j}|r_i-r_j|\in\mathbb Z_{>0},
