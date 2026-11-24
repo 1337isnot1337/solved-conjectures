@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Formalize the Thue–Morse valuation disproof
+
+The [Lean proof](lean/Conjectures/ThueMorseValuation.lean) verifies the exponent-17 witness and the full uniform counterexample family for every k ≥ 11. See the [local build, axiom audit and kernel replay receipt](docs/verification/lean-thue-morse-valuation-publication-20261124/receipt.json).
+
 ## 2026-11-24 — Verify Ferroni–Higashitani Question 5.12(a) in Lean
 
 The [Lean proof](results/ferroni-higashitani-early-interior-ehrhart/FORMALIZATION.md) constructs the dimension-170 lattice polytope, proves integer decomposition at every positive dilation, characterizes its Ehrhart polynomial by the closed lattice-point counts, and proves the strict inequality at the first three negative evaluations.

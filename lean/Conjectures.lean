@@ -1,3 +1,4 @@
+import Conjectures.ThueMorseValuation
 import Conjectures.FerroniHigashitaniBox
 import Conjectures.FerroniHigashitaniRefined
 import Conjectures.FerroniHigashitaniGeometry

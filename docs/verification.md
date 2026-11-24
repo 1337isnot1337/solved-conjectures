@@ -898,3 +898,15 @@ The [mixed-group threshold proof](../results/ma-tang-random-subset-sums/PROOF.md
 ## Permutation word mixing and small eigenfunction norms
 
 [Féray’s word-measure proof](../results/feray-conjugate-power-word/PROOF.md) and its [sharp-rate supplement](../results/feray-conjugate-power-word/SHARP-RATE.md), as well as the [spherical basis construction](../results/steinerberger-small-average-eigenfunction-norms/PROOF.md) and its [per-mode extension](../results/steinerberger-small-average-eigenfunction-norms/POINTWISE.md), are analytic arguments with independent source and proof audits.
+
+## Thue–Morse valuation conjecture
+
+The [Lean proof](../lean/Conjectures/ThueMorseValuation.lean) checks the original general clause’s disproof, the exponent-17 witness and the uniform family for k ≥ 11. The integer packing certificate is checked by ordinary kernel reduction. The [local receipt](../docs/verification/lean-thue-morse-valuation-publication-20261124/receipt.json) records source hashes, the complete owned/private axiom audit and stock-kernel replay.
+
+From the repository root, build and replay the exact local closure with the pinned toolchain.
+
+```sh
+cd lean
+lake build Conjectures.ThueMorseValuation
+lake env python3 ../scripts/replay_lean.py --root Conjectures.ThueMorseValuation
+```

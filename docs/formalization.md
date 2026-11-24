@@ -1,5 +1,20 @@
 # Full formalization campaign
 
+## Gawron–Miska–Ulas’s Thue–Morse valuation conjecture
+
+The [Lean proof](../lean/Conjectures/ThueMorseValuation.lean) formalizes the
+disproof of the general clause of Conjecture 5.2. It verifies the exponent-17
+counterexample and both valuations in the uniform family for every k ≥ 11,
+with the indices in the same aligned block. The coefficient model is the
+stabilized finite product. The exact modular certificates use carry-free
+integer packing and ordinary kernel reduction.
+
+All three modules passed strict source compilation and pinned stock-kernel
+replay. The all-owned audit checked 123 declarations, including 96 private
+declarations, and eight required endpoints. See the
+[local receipt](verification/lean-thue-morse-valuation-publication-20261124/receipt.json).
+
+
 ## Ferroni–Higashitani’s first-three interior Ehrhart question
 
 The [Lean proof](../results/ferroni-higashitani-early-interior-ehrhart/FORMALIZATION.md) constructs the original dimension-170 Cayley-box witness in the usual integer lattice and proves the strict inequality in Question 5.12(a) for its unique Ehrhart polynomial. The proof checks IDP at every positive dilation and gives an exact identification of the three negative evaluations with the corresponding topological interior lattice-point counts. The written amplification and the triangulation supplement remain separate.
