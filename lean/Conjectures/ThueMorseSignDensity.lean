@@ -1,7 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Data.Real.Basic
 public import Conjectures.ThueMorseValuationBasic
+public import Conjectures.ThueMorseSignDensityCore
 
 @[expose] public section
 
@@ -110,117 +111,29 @@ theorem prev_odd (n : ℕ) : prev (2*n+1) = t 2 n + prev n := by
   have he : 2*n+1-1 = 2*n := by omega
   rw [prev, if_neg hne, he, t_even]
 
-theorem parity (n : ℕ) : t 2 n % 2 = if n % 2 = 0 then 1 else 0 := by
-  induction n using Nat.strong_induction_on with
-  | h n ih =>
-    by_cases hz : n = 0
-    · simp [hz, t_zero]
-    · by_cases he : n % 2 = 0
-      · let k := n / 2
-        have hnk : n = 2*k := by dsimp [k]; omega
-        have hk : k < n := by dsimp [k]; omega
-        have hk0 : k ≠ 0 := by omega
-        have hk1 : k-1 < n := by omega
-        have h₁ := ih k hk
-        have h₂ := ih (k-1) hk1
-        rw [if_pos he, hnk, t_even, prev, if_neg hk0]
-        split_ifs at h₁ h₂ <;> omega
-      · let k := n / 2
-        have hnk : n = 2*k+1 := by dsimp [k]; omega
-        rw [if_neg he, hnk, t_odd]
-        omega
+/-- Connect the exact stabilized polynomial coefficients to the independently
+compiled core arithmetic reduction. -/
+theorem recurrence : ThueMorseSignDensityCore.Recurrence (t 2) prev :=
+  ⟨t_zero, by simp [prev], t_even, t_odd, prev_even, prev_odd⟩
 
-theorem t_nonzero (n : ℕ) : t 2 n ≠ 0 := by
-  induction n using Nat.strong_induction_on with
-  | h n ih =>
-    by_cases he : n % 2 = 0
-    · have hp := parity n
-      rw [if_pos he] at hp
-      omega
-    · let k := n / 2
-      have hnk : n = 2*k+1 := by dsimp [k]; omega
-      have hk : k < n := by dsimp [k]; omega
-      have hne := ih k hk
-      rw [hnk, t_odd]
-      omega
-
-theorem row_512_0 (n : ℕ) :
-    t 2 (512 * n + 0) = 1 * t 2 n + 171 * prev n := by
-  have h : 512 * n + 0 = (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * n))))))))) := by ring
-  rw [h]
-  simp only [t_even, t_odd, prev_even, prev_odd]
-  ring
-
-theorem row_512_30 (n : ℕ) :
-    t 2 (512 * n + 30) = 11 * t 2 n - 39 * prev n := by
-  have h : 512 * n + 30 = (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * n)))) + 1) + 1) + 1) + 1)) := by ring
-  rw [h]
-  simp only [t_even, t_odd, prev_even, prev_odd]
-  ring
-
-theorem row_512_324 (n : ℕ) :
-    t 2 (512 * n + 324) = -3 * t 2 n + 7 * prev n := by
-  have h : 512 * n + 324 = (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * n + 1)) + 1)))) + 1))) := by ring
-  rw [h]
-  simp only [t_even, t_odd, prev_even, prev_odd]
-  ring
-
-theorem row_256_1 (n : ℕ) :
-    t 2 (256 * n + 1) = -2 * t 2 n - 86 * prev n := by
-  have h : 256 * n + 1 = (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * n))))))) + 1) := by ring
-  rw [h]
-  simp only [t_even, t_odd, prev_even, prev_odd]
-  ring
-
-theorem row_256_16 (n : ℕ) :
-    t 2 (256 * n + 16) = -7 * t 2 n + 19 * prev n := by
-  have h : 256 * n + 16 = (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * n))) + 1))))) := by ring
-  rw [h]
-  simp only [t_even, t_odd, prev_even, prev_odd]
-  ring
-
-theorem row_256_166 (n : ℕ) :
-    t 2 (256 * n + 166) = 3 * t 2 n - 7 * prev n := by
-  have h : 256 * n + 166 = (2 * (2 * (2 * (2 * (2 * (2 * (2 * (2 * n + 1)) + 1))) + 1) + 1)) := by ring
-  rw [h]
-  simp only [t_even, t_odd, prev_even, prev_odd]
-  ring
+theorem t_nonzero (n : ℕ) : t 2 n ≠ 0 :=
+  ThueMorseSignDensityCore.nonzero recurrence n
 
 theorem identity0 (n : ℕ) :
-    t 2 (512*n+0) + 13*t 2 (512*n+30) + 48*t 2 (512*n+324) = 0 := by
-  rw [row_512_0, row_512_30, row_512_324]
-  ring
+    t 2 (512*n+0) + 13*t 2 (512*n+30) + 48*t 2 (512*n+324) = 0 :=
+  ThueMorseSignDensityCore.identity0 recurrence n
 
 theorem identity1 (n : ℕ) :
-    t 2 (256*n+1) + 34*t 2 (256*n+16) + 80*t 2 (256*n+166) = 0 := by
-  rw [row_256_1, row_256_16, row_256_166]
-  ring
+    t 2 (256*n+1) + 34*t 2 (256*n+16) + 80*t 2 (256*n+166) = 0 :=
+  ThueMorseSignDensityCore.identity1 recurrence n
 
 theorem block0 (h : ℕ) :
-    ∃ s < 512, t 2 (3*(512*h+s)) < 0 := by
-  by_contra! hn
-  have h0 := hn 0 (by decide)
-  have h1 := hn 10 (by decide)
-  have h2 := hn 108 (by decide)
-  rw [show 3*(512*h+0) = 512*(3*h)+0 by ring] at h0
-  rw [show 3*(512*h+10) = 512*(3*h)+30 by ring] at h1
-  rw [show 3*(512*h+108) = 512*(3*h)+324 by ring] at h2
-  have hid := identity0 (3*h)
-  have hne := t_nonzero (512*(3*h)+0)
-  omega
+    ∃ s < 512, t 2 (3*(512*h+s)) < 0 :=
+  ThueMorseSignDensityCore.block0 recurrence h
 
 theorem block1 (h : ℕ) :
-    ∃ s < 256, 0 < t 2 (3*(256*h+s)+1) := by
-  by_contra! hn
-  have h0 := hn 0 (by decide)
-  have h1 := hn 5 (by decide)
-  have h2 := hn 55 (by decide)
-  rw [show 3*(256*h+0)+1 = 256*(3*h)+1 by ring] at h0
-  rw [show 3*(256*h+5)+1 = 256*(3*h)+16 by ring] at h1
-  rw [show 3*(256*h+55)+1 = 256*(3*h)+166 by ring] at h2
-  have hid := identity1 (3*h)
-  have hne := t_nonzero (256*(3*h)+1)
-  omega
+    ∃ s < 256, 0 < t 2 (3*(256*h+s)+1) :=
+  ThueMorseSignDensityCore.block1 recurrence h
 
 def sign (a : ℤ) : ℤ := if a < 0 then -1 else if a = 0 then 0 else 1
 
@@ -237,41 +150,51 @@ theorem exception_block1 (h : ℕ) : ∃ s < 256, exception 2 1 (256*h+s) := by
   obtain ⟨s, hs, ht⟩ := block1 h
   exact ⟨s, hs, by simp [exception, sign, not_lt.mpr (le_of_lt ht), ne_of_gt ht]⟩
 
-theorem count_from_blocks (p : ℕ → Prop) [DecidablePred p] (L X : ℕ)
-    (_hL : 0 < L) (h : ∀ h : ℕ, ∃ s < L, p (L*h+s)) :
-    X/L ≤ ((range X).filter p).card := by
-  classical
-  choose s hs hp using h
-  let f : ℕ → ℕ := fun i => L*i+s i
-  have hmono : StrictMono f := by
-    intro a b hab
-    have hm := Nat.mul_le_mul_left L (show a+1 ≤ b by omega)
-    rw [Nat.mul_succ] at hm
-    dsimp [f]
-    have ha := hs a
-    omega
-  have hsub : (range (X/L)).image f ⊆ (range X).filter p := by
-    intro j hj
-    obtain ⟨i, hi, rfl⟩ := mem_image.mp hj
-    have hi' : i < X/L := mem_range.mp hi
-    have hm := Nat.mul_le_mul_left L (show i+1 ≤ X/L by omega)
-    rw [Nat.mul_succ] at hm
-    have hdiv : L*(X/L) ≤ X := by
-      simpa [Nat.mul_comm] using Nat.div_mul_le_self X L
-    have hf : f i < X := by
-      dsimp [f]
-      have := hs i
-      omega
-    exact mem_filter.mpr ⟨mem_range.mpr hf, hp i⟩
-  have hh := card_le_card hsub
-  rw [card_image_of_injective _ hmono.injective, card_range] at hh
-  exact hh
+theorem exception0_iff (n : ℕ) :
+    exception 2 0 n ↔ t 2 (3*n) < 0 := by
+  by_cases hn : t 2 (3*n) < 0
+  · simp [exception, sign, hn]
+  · have hne := t_nonzero (3*n)
+    simp [exception, sign, hn, hne]
+
+theorem exception1_iff (n : ℕ) :
+    exception 2 1 n ↔ 0 < t 2 (3*n+1) := by
+  have hne := t_nonzero (3*n+1)
+  by_cases hn : t 2 (3*n+1) < 0
+  · simp [exception, sign, hn, not_lt.mpr (le_of_lt hn)]
+  · have hp : 0 < t 2 (3*n+1) := by omega
+    simp [exception, sign, hn, hne, hp]
+
+theorem card_eq_countPrefix (m j X : ℕ) :
+    (exceptions m j X).card =
+      ThueMorseSignDensityCore.countPrefix (fun n => decide (exception m j n)) X := by
+  induction X with
+  | zero => simp [exceptions, ThueMorseSignDensityCore.countPrefix]
+  | succ X ih =>
+    rw [ThueMorseSignDensityCore.countPrefix, ← ih]
+    by_cases h : sign (t m (3*X+j)) ≠ (-1 : ℤ)^j
+    · have hn : X ∉ (range X).filter
+          (fun n => sign (t m (3*n+j)) ≠ (-1 : ℤ)^j) := by simp
+      simp [exceptions, range_succ, filter_insert, h, exception, hn]
+    · simp [exceptions, range_succ, filter_insert, h, exception]
 
 theorem lower_bound0 (X : ℕ) : X/512 ≤ (exceptions 2 0 X).card := by
-  exact count_from_blocks _ 512 X (by decide) exception_block0
+  rw [card_eq_countPrefix]
+  have h : (fun n => decide (exception 2 0 n)) =
+      (fun n => decide (t 2 (3*n) < 0)) := by
+    funext n
+    simp [exception0_iff]
+  rw [h]
+  exact ThueMorseSignDensityCore.lower_bound0 recurrence X
 
 theorem lower_bound1 (X : ℕ) : X/256 ≤ (exceptions 2 1 X).card := by
-  exact count_from_blocks _ 256 X (by decide) exception_block1
+  rw [card_eq_countPrefix]
+  have h : (fun n => decide (exception 2 1 n)) =
+      (fun n => decide (0 < t 2 (3*n+1))) := by
+    funext n
+    simp [exception1_iff]
+  rw [h]
+  exact ThueMorseSignDensityCore.lower_bound1 recurrence X
 
 /-- The epsilon-N definition of natural density zero, for nonnegative ratios. -/
 def ZeroDensity (m j : ℕ) : Prop :=
