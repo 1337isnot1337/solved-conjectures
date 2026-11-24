@@ -25,9 +25,10 @@ jobs:
       - name: Strict source compilation
         working-directory: lean
         run: |
-          lake build Conjectures.MaTangRandomSubsetSumsKernel
+          lake build Conjectures.MaTangRandomSubsetSumsOccupancy
           lake env lean -DwarningAsError=true -Dlinter.all=false Conjectures/MaTangRandomSubsetSumsCore.lean
           lake env lean -DwarningAsError=true -Dlinter.all=false Conjectures/MaTangRandomSubsetSumsKernel.lean
+          lake env lean -DwarningAsError=true -Dlinter.all=false Conjectures/MaTangRandomSubsetSumsOccupancy.lean
       - name: Audit all owned declarations and required endpoints
         run: |
           python3 - <<'PY'
@@ -36,13 +37,17 @@ jobs:
           from verify_lean_candidate import audit
           core = "Conjectures.MaTangRandomSubsetSumsCore"
           kernel = "Conjectures.MaTangRandomSubsetSumsKernel"
+          occupancy = "Conjectures.MaTangRandomSubsetSumsOccupancy"
           required = ["MaTangRandomSubsetSums.exists_balanced_signs",
                       "MaTangRandomSubsetSums.exists_constant_fiber",
                       "MaTangRandomSubsetSums.not_surjective_of_kernel_columns",
                       "MaTangRandomSubsetSums.kernel_basis_represents_fiber",
-                      "MaTangRandomSubsetSums.not_surjective_of_kernel_basis"]
-          audit([kernel], required, [core, kernel], "ma-tang-kernel")
+                      "MaTangRandomSubsetSums.not_surjective_of_kernel_basis",
+                      "MaTangRandomSubsetSums.uniqueHit_card",
+                      "MaTangRandomSubsetSums.singleton_union_card_le",
+                      "MaTangRandomSubsetSums.singleton_occupancy_card_le"]
+          audit([occupancy], required, [core, kernel, occupancy], "ma-tang-occupancy")
           PY
       - name: Stock kernel replay of exact local import closure
         working-directory: lean
-        run: lake env python3 ../scripts/replay_lean.py --root Conjectures.MaTangRandomSubsetSumsKernel
+        run: lake env python3 ../scripts/replay_lean.py --root Conjectures.MaTangRandomSubsetSumsOccupancy
