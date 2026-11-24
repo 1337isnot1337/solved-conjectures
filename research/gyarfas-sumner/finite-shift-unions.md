@@ -4,7 +4,7 @@
 
 ## Theorem
 
-Fix a finite tree \(T\), a positive integer \(k\), and dimensions \(d_0,\dots,d_{k-1}\ge2\). For each \(i\), let \(G_i\) be an arbitrary subgraph, not necessarily induced, of a canonical \(d_i\)-dimensional shift graph. If \(\chi(G_0\cup\cdots\cup G_{k-1})\) is sufficiently large as a function of \(T,k,d_0,\dots,d_{k-1}\), then the union contains \(T\) as an induced subgraph. In fact, it suffices that one constituent has sufficiently large chromatic number.
+Fix a finite tree \(T\), a positive integer \(k\), and dimensions \(d_0,\dots,d_{k-1}\ge2\). For each \(i\), let \(G_i\) be an arbitrary subgraph, not necessarily induced, of a canonical \(d_i\)-dimensional shift graph. If \(\chi(G_0\cup\cdots\cup G_{k-1})\) is sufficiently large as a function of \(T,k\) alone, then the union contains \(T\) as an induced subgraph. In fact, it suffices that one constituent has sufficiently large chromatic number.
 
 The canonical \(d\)-dimensional shift graph has strictly increasing \(d\)-tuples of numerical labels as vertices and adjacency whenever one tuple is obtained from the other by shifting left one position and appending a new label. Each constituent's tuple representation is injective. Constituent representations are independent of one another. This statement does not cover arbitrary noninjective homomorphisms to shift graphs.
 
@@ -71,6 +71,10 @@ Choose the distinct branches by a uniform random injection independently at each
 ## 4. Finish the chromatic bound
 
 If the original union is induced-\(T\)-free, the successful-host case of Section 2 cannot occur for any red edge restriction. For \(b>0\), induct on the number of unpinned positions across the extra colors. A stage with a fully pinned color has bound \(2\). Every other stage invokes the empty-core edge partition, increases the number of pinned positions in each child, and turns a bound \(C\) for its child stages into \(H C^P\) for its own stage. Since the number of coordinate positions is finite, this gives an explicit finite bound on the chromatic number of the red constituent. The \(b=0\) bound was handled separately. The same argument applies using any constituent as red. Finally, pad each constituent with isolated vertices on the union vertex set, so the individual chromatic numbers on a nonempty union are at least one. Now \(\chi(\bigcup_i G_i)\le\prod_i\chi(G_i)\) by the tuple-of-colors construction, so a sufficiently high chromatic number of the union forces one of the constituent bounds to fail. This completes the proof.
+
+## Bounded-multiplicity homomorphisms
+
+There is a direct extension to constituent homomorphisms with uniformly bounded fiber size. Suppose each constituent has a shift homomorphism with at most L vertices in a fiber, for fixed L. Give each vertex an index in its fiber separately in each constituent, padding absent vertices with distinct isolated tuples first. Partition the union vertex set by the tuple of indices, into at most L^k parts. In each part every label map is injective, so its constituent is an arbitrary shift subgraph as required. If the union avoids T, each part has chromatic number at most the bound above, and disjoint palettes bound the whole union by L^k times that bound. This does not control unbounded multiplicity.
 
 ## Scope
 
