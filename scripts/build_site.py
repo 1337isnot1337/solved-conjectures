@@ -64,6 +64,7 @@ STATUS_LABEL_SLUGS = {
     "Chaudhary–Khmiri–Mazhouda conjecture": "chaudhary-khmiri-mazhouda",
     "Merlini–Sala–Sala conjecture": "merlini-sala-sala",
     "Wang–Yang's conjecture": "wang-yang",
+    "Tom–Vailaya’s weighted trace conjecture": "tom-vailaya-weighted-trace",
     "Csordas–Vishnyakova conjecture": "csordas-vishnyakova",
     "Cardon–Forgács–Piotrowski–Sorensen–White conjecture": "cardon-zero-sector",
     "Wagner's Laguerre-operator conjecture": "wagner-laguerre-operator",

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Publish the reviewed weighted trace identity
+
+The [Tom–Vailaya weighted trace conjecture](results/tom-vailaya-weighted-trace/) is proved for its full stated domain (journal Conjecture 74, arXiv Conjecture 5.16). The proof identifies finite color transfers with the published forest-triple matrices under endpoint reflection. Independent direct forest and proper-color enumerations agree at 585 exact specializations. The separate Ellzey positivity and unimodality conjecture is not claimed. [Issue #338](https://github.com/1337isnot1337/solved-conjectures/issues/338) records scope and review; no Lean or external referee verification is claimed.
+
 ## 2026-11-24: Publish five reviewed theta-kernel and Li-coefficient results
 
 - [Nuttall's conjecture](results/nuttall-cumulants/): Complete proposed proof of Conjecture 1 in §4.5: for each finite order r, every sufficiently high repeated-tail cumulant of the Riemann theta kernel is strictly reverse regular through order r on the entire nonnegative node domain. The separate RH-equivalent Toeplitz positivity problem remains unresolved.

@@ -15,6 +15,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/) | ⬜ |
 | [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ |
 | [Wang–Yang's conjecture](results/wang-yang/) | ⬜ |
+| [Tom–Vailaya’s weighted trace conjecture](results/tom-vailaya-weighted-trace/) | ⬜ |
 | [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ⬜ |
 | [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ⬜ |
 | [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ⬜ |

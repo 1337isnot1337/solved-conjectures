@@ -140,6 +140,8 @@ The partial-result entries contain their replay commands for the [Frankl generat
 
 ## Analytic proofs without computation
 
+- [Tom–Vailaya’s weighted trace conjecture](../results/tom-vailaya-weighted-trace/PROOF.md): the proof of journal Conjecture 74 is algebraic and does not use the supplementary checker. Run `python3 results/tom-vailaya-weighted-trace/verify.py` to compare independent integer evaluations from forest triples and proper multigraph colorings; see the [source and verification scope](../results/tom-vailaya-weighted-trace/AUDIT.md).
+
 - [Nuttall's conjecture](../results/nuttall-cumulants/PROOF.md): Complete proposed proof of Conjecture 1 in §4.5: for each finite order r, every sufficiently high repeated-tail cumulant of the Riemann theta kernel is strictly reverse regular through order r on the entire nonnegative node domain. The separate RH-equivalent Toeplitz positivity problem remains unresolved. [Audit](../results/nuttall-cumulants/AUDIT.md).
 - [Coffey–Smith conjecture](../results/coffey-smith/PROOF.md): Complete proposed unconditional disproof of Smith’s named conjunction: if RH holds the dyadic coefficient square mass is O(N^(-1/2) log³ N), so both proposed positive-fraction sets have density zero for 0<ε<1/4; without RH the polynomial upper bound fails. The weaker Coffey upper-bound assertion alone is not refuted. [Audit](../results/coffey-smith/AUDIT.md).
 - [Merlini–Sala–Sala conjecture](../results/merlini-sala-sala/PROOF.md): Complete proposed unconditional refutation of the logarithmic and all-ε subpower growth conjecture for the tiny Li term: limsup |λtiny(n)|/n^(1/4)=∞. The authors’ weaker linear stability conjecture is not resolved. [Audit](../results/merlini-sala-sala/AUDIT.md).
