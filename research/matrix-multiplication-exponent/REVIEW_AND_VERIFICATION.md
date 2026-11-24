@@ -60,6 +60,26 @@ and asymptotic-subrank theorem numbers were checked in the cited primary
 versions. These two arguments are symbolic written proofs; no additional
 finite checker or Lean verification is claimed.
 
+The geodesic-uncrossing equivalence received two independent internal
+reviews in addition to its author's check. The review covered the
+normalized finite midpoint construction, transport of arbitrary tensor
+factors at zero wire price, coupled midpoint quantifiers, the density
+lemma, its transfer for every contraction parameter, the four-secant
+argument, and the dyadic passage to collinear configurations in the
+completion. Bridson--Haefliger 1999, Proposition II.3.1 and Corollary
+II.3.6, were checked directly in the primary scan at printed pages
+184--185. These are written symbolic proofs; no finite experiment or
+Lean kernel is being used to certify the universal implication.
+
+The midpoint note also proves that every coupled unit/product
+application survives the energy countermodel. The geodesic trade note
+proves the precise allowance for a smaller output flag and the
+compactness/duality converse for its finite-family criterion. The
+parameter in the neutral flag is fixed before each asymptotic limit;
+no uniform convergence in that parameter is assumed. Neither the
+review nor these reductions establish the reverse geodesic unit
+inequality or an exponent-two tensor algorithm.
+
 This checkpoint additionally reviews the weighted-support relaxation, the coefficient-independent Koszul pivot proof, the ordinary-block commutator, the weighted tetrahedral determinant, and the four-label resource certificate. The root reviewer checked the precise Landsberg--Michałek and Li statements in their primary sources. The weighted lower-bound proof was separately challenged by both other research workers. These reviews establish the stated finite obstructions and conditional criteria, not the exponent-two conclusion.
 
 ## Reproducible exact checks
@@ -124,5 +144,7 @@ Coordination and the adversarial-review request are in [issue #250](https://gith
 - [PR #284](https://github.com/1337isnot1337/solved-conjectures/pull/284) contains the normalized tripod criteria, interval boundary rigidity, copied-factor counterexample, frame bound, and stronger lift. Its merge commit is `54a36272109a3911c880ecb05ac7408550176bea`; all seven changed files match the reviewed artifacts.
 
 - [PR #286](https://github.com/1337isnot1337/solved-conjectures/pull/286) contains the polynomial and convolution source obstructions, trace-cubic certificate, smoothable enlargement, Heisenberg target, and Sun base-map audit. Its merge commit is `ea3d0a535ebc4111f9a872284314a96eb9164281`; all ten changed files match the reviewed artifacts.
+
+- [PR #289](https://github.com/1337isnot1337/solved-conjectures/pull/289) contains the all-order module obstruction, flattening-tangent reduction, and finite geodesic-trade obstruction. Its merge commit is `68d942d21d921227647ddf0ff925fdfc93b81f15`; all six changed files match the reviewed artifacts.
 
 All files remain under `research/`. No root Results-table row, solved-conjecture directory, Lean theorem, or claimed kernel-verification status was added for this target. Repository-wide hosted checks are reported separately in the PR conversation; a successful existing Lean workflow does not formalize these new Markdown proofs.

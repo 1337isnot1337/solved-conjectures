@@ -162,3 +162,160 @@ It is not inferred by assigning distances to an ordinary metric tree.
 Existence of an extension that places a common geodesic center inside
 an arbitrary original triangle is a separate issue, treated precisely
 in [TRIPOD_EXTENSION_CRITERION.md](TRIPOD_EXTENSION_CRITERION.md).
+
+The geometric implication no longer requires such a common center.
+[GEODESIC_UNCROSSING_EQUIVALENCE.md](GEODESIC_UNCROSSING_EQUIVALENCE.md)
+proves that (1), imposed on every actual normalized four-party point
+with the stated geodesic face, is equivalent to
+$`\omega_{\mathbb C}=2`$. Its proof uses guaranteed midpoint extensions
+and convexity of unit charges, followed by a CAT(0) first-variation
+argument. The missing assertion is (1) itself.
+
+## 3. The finite-family criterion is also necessary
+
+Under the stated spectral imports, condition (2) is equivalent to the
+conditional identity (1), and hence to $`\omega_{\mathbb C}=2`$.
+The sufficiency is already proved. Here is the converse, including the
+order of its limits.
+
+For $`F\in\Delta_4`$ put
+
+```math
+s(F)=d_{AD}+d_{BD}-d_{AB}\ge0,
+\qquad
+\delta(F)=u_{ACD}+u_{BCD}-u_{ABC}-d_{CD}.
+```
+
+These are continuous functions on the compact normalized spectrum.
+Forward intersecting uncrossing and deletion of a party give
+$`\delta(F)\ge0`$ for every point. Also $`\delta(F)\le2`$,
+because every subset unit charge is at most one. Define
+
+```math
+\gamma_k=\max_{F\in\Delta_4}\{\delta(F)-ks(F)\},
+\qquad k=0,1,2,\ldots.
+```
+
+The flattening across $`C\mid ABD`$ has $`s=\delta=0`$,
+so $`\gamma_k\ge0`$. The sequence is nonincreasing. If
+$`m=\max_{s(F)=0}\delta(F)`$, then $`\gamma_k\ge m`$.
+Choose a maximizing point for each positive $`k`$. Its coordinates
+$`(s,\delta)`$ lie in a fixed compact subset of $`\mathbb R^2`$,
+and nonnegativity of the maximum gives $`ks\le\delta\le2`$.
+Along a convergent subsequence, $`s\to0`$. Therefore
+
+```math
+\lim_{k\to\infty}\gamma_k
+\le\limsup\delta(F_k)\le m.
+```
+
+Together with the lower bound this proves
+
+```math
+\lim_{k\to\infty}\gamma_k
+=\max_{s(F)=0}\delta(F).                         \tag{3}
+```
+
+On $`s=0`$, Section 2 gives $`u_{ABC}=1`$. Thus (1) for all
+geodesic points is equivalent to $`\gamma_k\to0`$.
+
+Fix $`k`$ and abbreviate $`S=S_{2,2^k}`$, $`T=T_{2,2^k}`$.
+Their spectral ratio is
+
+```math
+\log_2\frac{F(T)}{F(S)}=\delta(F)-ks(F).
+```
+
+Let $`r_{n,k}`$ be the least positive integer with
+$`U_{ABCD}(r_{n,k})S^{\otimes n}\ge T^{\otimes n}`$.
+It exists because a full unit of sufficiently large rank supplies the
+target. Products of restrictions make $`r_{n,k}`$ submultiplicative in
+$`n`$. Spectral monotonicity gives the lower bound in
+
+```math
+\lim_{n\to\infty}\frac{\log_2r_{n,k}}n=\gamma_k. \tag{4}
+```
+
+For the upper bound, fix a rational $`a/b>\gamma_k`$ with
+$`a,b`$ positive integers. Every point satisfies
+$`F(U_{ABCD}(2^a)S^{\otimes b})\ge F(T^{\otimes b})`$.
+Strassen's asymptotic preorder theorem, in CVZ
+[arXiv:1709.07851v3](https://arxiv.org/html/1709.07851v3),
+Theorem 1.1, gives restrictions
+
+```math
+U_{ABCD}(2^{a(n+e_n)})S^{\otimes b(n+e_n)}
+\ge T^{\otimes bn},\qquad e_n=o(n),\quad e_n\ge0.
+```
+
+The source has ordinary rank at most $`2^{2+2k}`$. Replacing the
+extra $`be_n`$ source copies by a full unit gives
+
+```math
+U_{ABCD}\!\left(2^{an+[a+(2+2k)b]e_n}\right)
+S^{\otimes bn}\ge T^{\otimes bn}.
+```
+
+This proves that the limit in (4) is at most $`a/b`$; let the
+rationals decrease to $`\gamma_k`$. The asymptotic duality
+has its usual power-universality hypothesis here: $`S`$ restricts
+to $`U_{ABCD}(2)`$ by retaining $`U_{ABC}(2)W_{CD}(2)`$
+and identifying its two indices at $`C`$. The general overhead
+conversion is also recorded in
+[TETRAHEDRAL_OVERHEAD.md](TETRAHEDRAL_OVERHEAD.md).
+
+Assume (1). Choose $`k_j`$ with $`\gamma_{k_j}\to0`$.
+For each fixed $`k_j`$, equation (4) allows a choice $`n_j\ge j`$
+such that
+
+```math
+\frac{\log_2r_{n_j,k_j}}{n_j}
+\le\gamma_{k_j}+\frac1j.
+```
+
+Set $`q_j=2^{n_j}`$, $`N_j=2^{k_jn_j}`$ and
+$`r_j=r_{n_j,k_j}`$. Regrouped tensor products give the exact
+isomorphisms
+
+```math
+S_{2,2^{k_j}}^{\otimes n_j}\cong S_{q_j,N_j},
+\qquad
+T_{2,2^{k_j}}^{\otimes n_j}\cong T_{q_j,N_j}.
+```
+
+They yield finite ordinary restrictions satisfying (2), with
+$`\log r_j/\log q_j\to0`$. No uniform estimate in $`k`$
+has been assumed: $`k_j`$ is chosen first, then $`n_j`$.
+This proves the claimed equivalence. Spectral duality supplies no
+explicit local maps without proving (1).
+
+## 4. Allowing a small loss in the neutral flag
+
+One can replace the target flag size by $`M(q)\le N(q)`$.
+Suppose there are finite degenerations
+
+```math
+U_{ABCD}(r(q))S_{q,N(q)}\unrhd T_{q,M(q)}
+```
+
+along an unbounded sequence of $`q`$, with
+
+```math
+\frac{\log r(q)}{\log q}\longrightarrow0,
+\qquad
+\frac{\log(N(q)/M(q))}{\log q}\longrightarrow0.
+```
+
+At a normalized point with the geodesic face, evaluation gives
+
+```math
+u_{ACD}+u_{BCD}
+\le1+d_{CD}+
+\frac{\log r(q)+d_{AB}\log(N(q)/M(q))}{\log q}.
+```
+
+Since $`0\le d_{AB}\le1`$, both error terms tend to zero.
+Thus this relaxed construction also proves (1). In particular, a
+bounded source-only unit and a flag loss with $`M(q)/N(q)\to1`$
+would suffice. This is an implication for a family of valid local
+maps; no such family is supplied here.

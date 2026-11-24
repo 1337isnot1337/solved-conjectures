@@ -48,6 +48,8 @@ M_q\cong W_{AB}(q)\otimes W_{BC}(q)\otimes W_{CA}(q),
 | --- | --- | --- |
 | Every multiplicative cover functional is either the indicator of nonzero tensors or $F^h$, with $F$ normalized and $0\lt h\le1$. | [Normalized extension](NORMALIZED_EXTENSION.md), tensor-power type argument. | A classification by normalization exponent, not a classification of all normalized points. |
 | Any one fixed finite law on retractions admits a normalized extension preserving every old tensor value. | Same file, derived from pinned Anthropic Proposition A.7, a finite-product argument, and compactness. | The law is fixed before the extension is chosen. Different laws cannot be imposed on one extension without a compatibility proof. |
+| Every tensor's logarithmic value is convex under simultaneous geodesic placement of its factors; every coupling with the same midpoint marginals gives a valid bound. | [Tensor midpoint convexity](TENSOR_MIDPOINT_CONVEXITY.md), duplicate labels, normalized extension, CN uniqueness, and explicit zero-price factor transport. | Applying these inequalities only to units or their products still admits the normalized energy tripod. |
+| Conditional geodesic uncrossing on all normalized four-party points is equivalent to the exponent being two. | [Geodesic uncrossing equivalence](GEODESIC_UNCROSSING_EQUIVALENCE.md), unit convexity, a one-dimensional density bound, and CAT(0) first variation. | The reverse unit inequality is unproved. The geometric implication does not assume a Euclidean realization or a common tripod extension. |
 | A geodesic triple determines the entire spectral functional on that triple, and zero-distance parties can be merged without changing any tensor value. | [Full-tensor constraints](FULL_TENSOR_CONSTRAINTS.md), explicit teleportation restrictions, normalization, and Alman--Li--Pratt v2 Corollary 8.10. | Three overlapping rigid restrictions have not been proved to determine the full unit. A genuine normalized quantum point already gives a non-Hilbert tripod. |
 | Every normalized spectral point with a wire of exponent one has an interval metric on all its parties. | [Edge metric rigidity](EDGE_METRIC_RIGIDITY.md), three-party edge classification and pinned price curvature; every finite interval metric is realized by one threshold-retraction law. | All subset-unit charges equal interval diameters. This is a boundary theorem, not an interior perimeter bound. |
 | A specified normalized point has an all-values-preserving geodesic tripod extension if and only if it satisfies the arm-weighted dimension bound on every old tensor. | [Tripod extension criterion](TRIPOD_EXTENSION_CRITERION.md), star routing, a cover gauge, saturation, and pinned Proposition A.5. | The weaker wire-only problem has a separate finite-cover criterion. Neither existence condition is proved universally. |
@@ -237,6 +239,48 @@ size, at every equal tensor power, and with common full-unit catalysts.
 Source-only subexponential overhead remains open. In the conditional
 spectral test, the neutral wire size can grow arbitrarily quickly,
 since its price cancels exactly.
+
+## The geometric reduction is complete; the unit equality is not
+
+[TENSOR_MIDPOINT_CONVEXITY.md](TENSOR_MIDPOINT_CONVEXITY.md) proves the
+full tensor placement inequality, including noninjective placements
+and arbitrary couplings with fixed midpoint marginals. A new extension
+is allowed for each coupling: CN uniqueness identifies its new midpoint
+copies with the already fixed old labels, so the bounds concern one
+old tensor value. This does not impose incompatible arbitrary laws on
+one extension.
+
+[GEODESIC_UNCROSSING_EQUIVALENCE.md](GEODESIC_UNCROSSING_EQUIVALENCE.md)
+now proves the equivalence
+
+```math
+\omega_{\mathbb C}=2
+\quad\Longleftrightarrow\quad
+u(A,C,D)+u(B,C,D)=u(A,B,C)+d(C,D)
+\quad\text{whenever }D\in[A,B],
+```
+
+where the right side is required for every actual normalized four-party
+point. For the nontrivial implication, put $`\varepsilon=P/2-u`$.
+The conditional equality makes this nonnegative triangle content
+additive under geodesic subdivision. Unit convexity controls its
+one-dimensional density by the derivative of the distance function.
+Contracting the opposite vertex toward a differentiability point then
+forces the total content to be both $`o(s)`$ and at least a positive
+constant times $`s`$, unless the content vanishes. The proof applies
+to arbitrary CAT(0) completions; no regularity or dimension assumption
+is omitted.
+
+The converse follows by normalizing every three-label restriction and
+applying the spectral perimeter characterization. The note also retains
+a counterexample to the rejected single-root metric-rigidity lemma.
+Compactness and spectral duality make the finite family in
+[GEODESIC_UNIT_TRADE.md](GEODESIC_UNIT_TRADE.md) an equivalent
+operational target, with the neutral-flag parameter fixed before each
+asymptotic limit. No such family is constructed. Its output flag may
+also lose a factor whose logarithm is $`o(\log q)`$, as proved there.
+Forward intersecting uncrossing alone does not give the required reverse
+inequality.
 
 ## Remaining mathematical obligation
 
