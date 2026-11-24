@@ -18,7 +18,7 @@ T_{q,N'}=U_{ACD}(q)U_{BCD}(q)W_{AB}(N').
 The source has coordinates
 $`A_{h,a},B_{h,b},C_{h,c},D_{c,a,b}`$, and the target has
 coordinates $`A_{u,k},B_{v,k},C_{u,v},D_{u,v}`$.
-Consider an exact restriction
+Consider an exact restriction or a Laurent degeneration
 $`U_{ABCD}(r)S_{q,N}\ge T_{q,N'}`$.
 The full unit gives $`r`$ separate source families. In each
 family, impose one of these conditions:
@@ -31,7 +31,7 @@ family, impose one of these conditions:
 There is no support assumption on the maps at $`A,B,D`$.
 In particular, the outer $`A,B`$ indices may be mixed arbitrarily.
 
-**Proposition.** Every such exact restriction obeys
+**Proposition.** Every such restriction or degeneration obeys
 
 ```math
 qN'\le rN.                                             \tag{1}
@@ -84,9 +84,23 @@ $`\sum_v c_{uv}\le\dim R_u`$. Summing (2) gives
 q^2N'\le q(r_{\mathrm{row}}+r_{\mathrm{col}})N=qrN.
 ```
 
-This proves (1). Only the coefficient with matching output tags at
+This proves (1) for exact maps. Only the coefficient with matching output tags at
 $`C,D`$ was used. Arbitrary maps at $`D`$ and cancellations
-in other coefficients do not change the argument. ∎
+in other coefficients do not change the argument.
+
+For Laurent maps, form the subspaces $`Q_v(t),R_u(t)`$ over
+$`\mathbb C((t))`$. Each has dimension bounded as above. Its
+intersection with the corresponding free $`\mathbb C[[t]]`$ module
+is saturated, hence is a direct summand by Smith normal form. Choose
+quotient matrices over $`\mathbb C[[t]]`$ whose reductions retain
+their ranks. The generic quotient of each selected output coefficient
+is zero. If the full output is regular and limits to the target, this
+identity reduces at zero to the same quotient annihilation for the
+target, with limiting subspaces of the same dimensions. Equations
+(2) and the final sum therefore still apply. An overall Laurent factor
+may be absorbed into the map at $`D`$ before reduction. This is the
+saturated-lattice argument proved in detail in
+[EXTERIOR_PARTIAL_TARGETS.md](EXTERIOR_PARTIAL_TARGETS.md), Section 2.3. ∎
 
 For two families with
 $`C_{h,c}\mapsto C_{h,c}`$ and
@@ -94,8 +108,11 @@ $`C_{h,c}\mapsto C_{c,h}`$, this gives
 $`N/N'\ge q/2`$ even with fully mixed maps at $`A,B`$.
 More generally, no construction in these support classes can have
 both $`r=q^{o(1)}`$ and $`N/N'=q^{o(1)}`$.
-Dense maps at $`C`$ and arbitrary degenerations are outside
-the proposition's scope.
+Dense maps at $`C`$ are outside the proposition's scope. The Laurent
+extension requires that the displayed row or column supports be fixed
+throughout the family. It does not apply to sector projectors transported
+through an arbitrary varying invertible $`C`$ map, whose coordinate
+spaces can move or coalesce.
 
 The claim-audit agent first proved the special case with an unmixed
 $`A`$ row in one family and an unmixed $`B`$ column in the

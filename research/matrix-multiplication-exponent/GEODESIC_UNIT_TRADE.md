@@ -331,3 +331,29 @@ and the full off-support Weyl residual in
 [OPERATOR_TRADE_OBSTRUCTIONS.md](OPERATOR_TRADE_OBSTRUCTIONS.md)
 exclude specified construction classes. None excludes this general
 finite-family criterion.
+
+## 5. A concrete exterior output and narrower obstructions
+
+The exact one-family map in
+[EXTERIOR_INCIDENCE_SOURCE.md](EXTERIOR_INCIDENCE_SOURCE.md)
+produces an exterior-incidence tensor with matched C/D tags and large
+A/B ranks. Its leading value is proved to be
+$`N^{d_{AB}}q^{1+d_{CD}+o(1)}`$ on the geodesic face. Replacing
+the exponent by $`u_{ACD}+u_{BCD}`$ remains equivalent to (G).
+The alternative outputs in
+[EXTERIOR_PARTIAL_TARGETS.md](EXTERIOR_PARTIAL_TARGETS.md)
+have proved large-rectangle extractions, but their required source
+maps are not known. The fixed-support Laurent obstruction does not
+exclude the incidence output itself.
+
+[MONOMIAL_GEODESIC_COVERAGE.md](MONOMIAL_GEODESIC_COVERAGE.md)
+excludes subpolynomial overhead for displayed-basis monomial A/B/C
+maps. [Q2_BORDER_FLAG_BOUND.md](Q2_BORDER_FLAG_BOUND.md) proves
+$`2rN\ge3M`$ at fixed outer size two for arbitrary maps. These
+bounds have different hypotheses and neither is the general
+asymptotic obstruction that would disprove the target.
+
+The equivalent infinitesimal statement, including its pointwise
+quantifiers and a scalar counterexample to a linear error estimate,
+is in
+[INFINITESIMAL_GEODESIC_UNCROSSING.md](INFINITESIMAL_GEODESIC_UNCROSSING.md).

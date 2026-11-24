@@ -111,6 +111,32 @@ The Fourier note fixes its character convention and computes every
 resolvent eigenvalue symbolically. No border obstruction for
 arbitrary mixed maps is inferred from these restricted proofs.
 
+The exterior-incidence source received an independent symbolic review
+by the root agent of every local map, exterior degree, source-label
+dependency, and surviving sign. Review removed the redundant first
+family and reduced the second to identity outer embeddings. Its finite checker passed
+at outer sizes three and five, including all off-target C/D coefficients.
+The A/B and individual-slice ranks were checked by exact rational
+elimination. A two-copy cover and a valid full direct-sum restriction then proved
+the uniform factor-48 spectral sandwich on the geodesic face. The
+stronger lower bound with the two face-unit charges is still exactly
+equivalent to the missing geodesic identity.
+
+The exterior partial-target extractions, fixed-star quotient bound,
+and saturated-lattice passage to Laurent limits were separately
+reviewed by the root and mathematical workers. The last step also
+upgrades the fixed row/column bound to Laurent maps. It does not
+upgrade the common-invertible-C projector theorem when the coordinate
+spaces themselves move. The monomial coverage theorem and the
+fixed-size-two commutator bound were checked with their distinct map
+hypotheses retained.
+
+The infinitesimal criterion was reviewed for its almost-everywhere
+quantifiers: only two fixed anchors are compared at a time, so no
+uncountable intersection of exceptional sets is taken. The explicit
+energy-tripod first-order defect was recomputed. No o(h) estimate for
+genuine spectral points is asserted.
+
 ## Reproducible exact checks
 
 Run from this directory:
@@ -134,9 +160,10 @@ python3 check_convolution_block_trade.py
 python3 check_trace_cubic_nonsmoothable.py
 python3 check_hyperplane_cocycle.py
 python3 check_mixed_valuation_padding.py
+python3 check_exterior_incidence_source.py
 ```
 
-The first six commands passed on the earlier assembled checkpoint. The next three passed on the source-certificate checkpoints. The four-party checker passed on the assembled full-tensor checkpoint; the earlier scripts were unchanged. The weighted-pivot and ordinary-partial-block checkers passed on the assembled files. The general-free and explicit-uncrossing checkers passed on the assembled files. The propagation-local, ordinary-partial-block, general-free, and mixed-padding scripts use SymPy. The trace-cubic and hyperplane-cocycle scripts use NumPy integer arrays with explicit arithmetic bounds; the other scripts use Python's standard library. The computations use exact integers, rational arithmetic, and symbolic polynomials; they require no network access.
+The first six commands passed on the earlier assembled checkpoint. The next three passed on the source-certificate checkpoints. The four-party checker passed on the assembled full-tensor checkpoint; the earlier scripts were unchanged. The weighted-pivot and ordinary-partial-block checkers passed on the assembled files. The general-free and explicit-uncrossing checkers passed on the assembled files. The propagation-local, ordinary-partial-block, general-free, and mixed-padding scripts use SymPy. The trace-cubic and hyperplane-cocycle scripts use NumPy integer arrays with explicit arithmetic bounds; the exterior-incidence script uses NumPy integer arrays and SymPy exact ranks with explicit arithmetic bounds; the other scripts use Python's standard library. The computations use exact integers, rational arithmetic, and symbolic polynomials; they require no network access.
 
 | Script | Checked content |
 | --- | --- |
@@ -158,6 +185,7 @@ The first six commands passed on the earlier assembled checkpoint. The next thre
 | `check_four_party_constraints.py` | Seventeen exterior covariant ranks obtained by independent alternating projections and exact rational elimination, plus 56 ordinary cut ranks for uncrossing and tetrahedral tensors. |
 | `check_hyperplane_cocycle.py` | All seven cases with sizes three and four and every possible functional rank; exact candidate kernels and matching modular equation ranks, with documented integer bounds. |
 | `check_mixed_valuation_padding.py` | The seven-product identity on all four matrix units, an integral completion with determinant minus one, polynomial entries and special fibre of all four eleven-dimensional matrices, all six commutators, and one common Laurent diagonalization. |
+| `check_exterior_incidence_source.py` | All nine C/D coefficients at size three and all one hundred at size five, including off-support zeros; the full A/B ranks and every edge-slice rank. |
 
 The trace-cubic check supplies the finite rank certificate required by its computer-assisted nonsmoothability proof. The other checks corroborate finite statements in the written proofs. They do not execute a complete matrix multiplication algorithm, verify an unbounded induction, construct a normalized spectral point above perimeter two, or prove the desired universal perimeter upper bound.
 
@@ -181,5 +209,9 @@ Coordination and the adversarial-review request are in [issue #250](https://gith
 - [PR #289](https://github.com/1337isnot1337/solved-conjectures/pull/289) contains the all-order module obstruction, flattening-tangent reduction, and finite geodesic-trade obstruction. Its merge commit is `68d942d21d921227647ddf0ff925fdfc93b81f15`; all six changed files match the reviewed artifacts.
 
 - [PR #291](https://github.com/1337isnot1337/solved-conjectures/pull/291) contains the geodesic-uncrossing equivalence, full tensor midpoint convexity, and the exact operational converse. Its merge commit is `f9e16d31de54367a45e78f42532e2e2b3d5ba4d9`; all five changed files match the reviewed artifacts.
+
+- [PR #293](https://github.com/1337isnot1337/solved-conjectures/pull/293) contains the adjacent-module and mixed-padding results, operator-map obstructions, and full Fourier coefficient audit. Its merge commit is `1dda0e1a50788da8ff565373d0c68e94fe38a742`; all ten changed contents and Git blob hashes match the reviewed artifacts.
+
+The branch policy changed at `192e2fd6cee8a1a3c05ee1d901c5e003725a3821`. The current open campaign belongs on `research`. This checkpoint was kept local while that flat ref was unavailable. The exact head of the old PR #254 was independently verified as an ancestor of staging before its branch was retired; its review record remains closed and preserved. The flat `research` ref was then created at `a8c0f9305faa1be9fc2e90d6bd4259e0da92e80a` and its exact tree verified. [Issue #295](https://github.com/1337isnot1337/solved-conjectures/issues/295) records the cutover and the decision to keep the next checkpoint on the existing working branch while avoiding additional topic refs during the remaining cleanup. Earlier merges are historical records and do not change the target's unresolved status.
 
 All files remain under `research/`. No root Results-table row, solved-conjecture directory, Lean theorem, or claimed kernel-verification status was added for this target. Repository-wide hosted checks are reported separately in the PR conversation; a successful existing Lean workflow does not formalize these new Markdown proofs.

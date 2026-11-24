@@ -158,6 +158,74 @@ That finite obstruction leaves a weaker constructive route open. Li's Theorem 2.
 
 The weighted-support argument extends, by the [general free-set separator](GENERAL_FREE_SET_SEPARATOR.md), to arbitrary nonzero coefficients on full hypergraph-tensor support with nonempty edges. The [weighted tetrahedral obstruction](WEIGHTED_TETRAHEDRAL_OBSTRUCTION.md) proves that coefficient changes do not remove the finite or common-unit obstruction. It makes no source-only asymptotic-overhead claim. The [four-party resource certificate](TETRAHEDRAL_RESOURCE_LIMITATION.md) explains why the listed face algorithms, graph bounds, terminal mincuts, and even free intersecting uncrossing cannot improve the existing tetrahedral overhead by recombination on those four labels. It is not a spectral point and does not cover additional auxiliary labels or arbitrary coefficient-sensitive maps.
 
+## An exact exterior output and its computed spectral value
+
+[EXTERIOR_INCIDENCE_SOURCE.md](EXTERIOR_INCIDENCE_SOURCE.md) gives an
+exact restriction from the geodesic source itself. For
+$`q=2L+1`$ and $`N=\binom qL`$, it maps
+
+```math
+U_{ABC}(q)W_{CD}(q)W_{AD}(N)W_{BD}(N)
+\ \ge\ W_{q,L}^{\mathrm{empty}}\ \ge\ W_{q,L}.
+```
+
+All local maps are explicit. The A/B maps retain their common outer
+index. Occupied and empty exterior-coordinate restrictions force the
+creation index of each D operator to match that outer index, leaving
+exactly the matching C/D edge tags. The earlier two-family derivation
+was redundant: one family is killed by the occupied projection. Both
+A and B flattenings of $`W_{q,L}`$ have rank $`LN`$.
+The checker verifies every C/D coefficient at sizes three and five.
+
+The leading spectral value is now determined on every normalized
+geodesic point:
+
+```math
+\frac1{48}N^{d_{AB}}q^{1+d_{CD}}
+\le F(W_{q,L})\le N^{d_{AB}}q^{1+d_{CD}}
+\quad\text{if }d_{AD}+d_{BD}=d_{AB}.
+```
+
+The lower bound uses a genuine full direct sum after a cross-edge
+restriction, the free-CD partial-sum inequality, and a two-copy cover
+of the empty-sector output by the kernel output. The upper bound is
+the source restriction. The proof also recovers the known normalization
+$`u_{ABC}=u_{ABCD}=1`$ on this geodesic face.
+
+Consequently a lower bound with exponent $`u_{ACD}+u_{BCD}`$ in
+place of $`1+d_{CD}`$ is exactly equivalent to the missing unit
+inequality. The construction does not prove it. Treating the overlapping
+B-subset blocks as an AB-disjoint partial sum would hide this gap.
+
+[EXTERIOR_PARTIAL_TARGETS.md](EXTERIOR_PARTIAL_TARGETS.md) proves
+that two more structured exterior outputs would suffice, by extracting
+large rectangles whose blocks really are disjoint at A and B. It also
+proves that fixed incident-edge supports at C cannot produce either
+output with subpolynomial overhead. The quotient argument survives
+Laurent limits by saturated lattices. The same argument extends the
+fixed row/column bound in
+[OPERATOR_TRADE_OBSTRUCTIONS.md](OPERATOR_TRADE_OBSTRUCTIONS.md)
+to Laurent maps retaining those supports. Arbitrary dense C maps remain
+outside these obstructions.
+
+Two other necessary tests are recorded separately. The displayed-basis
+monomial A/B/C class requires $`rN/M\ge\sqrt q`$, even with
+arbitrary D maps and different C maps in each family; see
+[MONOMIAL_GEODESIC_COVERAGE.md](MONOMIAL_GEODESIC_COVERAGE.md).
+At fixed outer size two, arbitrary Laurent maps require
+$`2rN\ge3M`$, by a matrix-pencil contraction and the commutator
+rank bound; see [Q2_BORDER_FLAG_BOUND.md](Q2_BORDER_FLAG_BOUND.md).
+Neither test excludes the unrestricted growing-size construction.
+
+[INFINITESIMAL_GEODESIC_UNCROSSING.md](INFINITESIMAL_GEODESIC_UNCROSSING.md)
+gives an equivalent local target: for each fixed anchor, the
+nonnegative uncrossing defect must be $`o(h)`$ at almost every
+endpoint split of length $`h`$. Absolute continuity then proves
+exact additivity on every subdivision. A merely linear estimate is
+insufficient: the normalized energy tripod has derivative $`1/9`$
+at its symmetric endpoint. This criterion is proved; the required
+spectral estimate remains unresolved.
+
 ## Constructive sources and exact failed steps
 
 The [polynomial-source note](POLYNOMIAL_SOURCE_OBSTRUCTION.md) supplies
@@ -357,8 +425,9 @@ python3 check_convolution_block_trade.py
 python3 check_trace_cubic_nonsmoothable.py
 python3 check_hyperplane_cocycle.py
 python3 check_mixed_valuation_padding.py
+python3 check_exterior_incidence_source.py
 ```
 
-The propagation-local, ordinary-partial-block, general-free-separator, and mixed-padding scripts use SymPy. The trace-cubic and hyperplane-cocycle checks use NumPy integer arrays with explicit overflow bounds. The other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
+The propagation-local, ordinary-partial-block, general-free-separator, and mixed-padding scripts use SymPy. The trace-cubic and hyperplane-cocycle checks use NumPy integer arrays with explicit overflow bounds. The exterior-incidence checker uses both NumPy integer arrays and exact SymPy rational ranks, with an explicit arithmetic bound. The other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
 
 The review scope and reproducible check inventory are recorded in [REVIEW_AND_VERIFICATION.md](REVIEW_AND_VERIFICATION.md).
