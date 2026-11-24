@@ -3,8 +3,25 @@
 import verify_lean_candidate as gate
 
 TASK = "sagan-wilson-plactic-mode"
-MODULES = ["Conjectures.SaganWilsonPlacticModeM10"]
+MODULES = ["Conjectures.SaganWilsonPlacticModeCounterexample"]
 REQUIRED = [
+    "SaganWilsonPlacticMode.iterDelta_centralizer_zero",
+    "SaganWilsonPlacticMode.positive_polynomial_extension",
+    "SaganWilsonPlacticMode.zero_of_initial_and_iterDelta_zero",
+    "SaganWilsonPlacticMode.coeff10_initial",
+    "SaganWilsonPlacticMode.coefficient_row10_correct",
+    "SaganWilsonPlacticMode.not_modeConjecture",
+    "SaganWilsonPlacticMode.centralizer_count10_1",
+    "SaganWilsonPlacticMode.centralizer_count10_2",
+    "SaganWilsonPlacticMode.centralizer_count10_3",
+    "SaganWilsonPlacticMode.centralizer_count10_4",
+    "SaganWilsonPlacticMode.centralizer_count10_5",
+    "SaganWilsonPlacticMode.centralizer_count10_6",
+    "SaganWilsonPlacticMode.centralizer_count10_7",
+    "SaganWilsonPlacticMode.centralizer_count10_8",
+    "SaganWilsonPlacticMode.centralizer_count10_9",
+    "SaganWilsonPlacticMode.CertM8.value",
+    "SaganWilsonPlacticMode.CertM9.value",
     "SaganWilsonPlacticMode.nodup_map_injective",
     "SaganWilsonPlacticMode.words_nodup",
     "SaganWilsonPlacticMode.alphabet_nodup",
