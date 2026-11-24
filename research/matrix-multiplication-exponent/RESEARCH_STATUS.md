@@ -2,7 +2,7 @@
 
 Research status, 23 November 2026 (America/Chicago): **unresolved in this project**. No proof of $\omega_{\mathbb C}=2$ and no legitimate spectral point with perimeter greater than two has been obtained. The notes below contain proved reductions, independently checked obstructions, and an audit of a public exponent-two claim. They do not turn the conjecture into a solved result.
 
-Coordination uses [issue #250](https://github.com/1337isnot1337/solved-conjectures/issues/250). The first reviewed checkpoint is [PR #258](https://github.com/1337isnot1337/solved-conjectures/pull/258), merged into `main`. The earlier scalar-model construction is credited to the concurrent work in [PR #254](https://github.com/1337isnot1337/solved-conjectures/pull/254); this work does not replace that PR's README or branch.
+Coordination uses [issue #250](https://github.com/1337isnot1337/solved-conjectures/issues/250). The first reviewed checkpoint is [PR #258](https://github.com/1337isnot1337/solved-conjectures/pull/258), merged into `main`. The source audit and further tensor obstructions are tracked in [PR #262](https://github.com/1337isnot1337/solved-conjectures/pull/262). The earlier scalar-model construction is credited to the concurrent work in [PR #254](https://github.com/1337isnot1337/solved-conjectures/pull/254); this work does not replace that PR's README or branch.
 
 ## Exact target and significance
 
@@ -52,7 +52,8 @@ M_q\cong W_{AB}(q)\otimes W_{BC}(q)\otimes W_{CA}(q),
 | Simultaneous separation works for any fixed number of shared parties. | [Multiple-party separator](MULTIPLE_PARTY_SEPARATOR.md), an explicit sum-of-squares degeneration and type argument. | Independently reconstructed prior work of Zhou, not an original escape from Zhou's higher-order barrier. |
 | The scalar unit charge $g(P)=2\max_\mu\sum_{i,j}\mu_i\mu_jd_{ij}$ satisfies every graph minimum-cut inequality for Euclidean positions. | [Minimum-cut compatibility](MINCUT_COMPATIBILITY.md), Gaussian projection and threshold integration. | All finite auxiliary configurations, all terminal subsets, and all nonnegative edge weights. |
 | The equilateral normalized witness also satisfies hypergraph minimum-cut tests with terminals containing the original triangle. | Same file, explicit cap functions. | It remains a scalar assignment, with no values supplied on arbitrary tensors. |
-| Every terminal metric that embeds in a finite tree satisfies the same hypergraph minimum-cut inequality, even with arbitrary metric auxiliaries. | [Tree-terminal proof](TREE_TERMINAL_MINCUT.md), nonexpansive extension, a weighted tree-cut measure, and endpoint randomization. | This includes every terminal triple and every equilateral terminal set. Arbitrary non-tree terminal configurations remain outside the theorem. |
+| Every terminal metric that embeds in a finite tree satisfies the same hypergraph minimum-cut inequality, even with arbitrary metric auxiliaries. | [Tree-terminal proof](TREE_TERMINAL_MINCUT.md), nonexpansive extension, a weighted tree-cut measure, and endpoint randomization. | This includes every terminal triple and every equilateral terminal set. A separate cap certificate also covers square terminals; its failure for thin rectangles is proved. The arbitrary Euclidean terminal case remains unresolved here. |
+| The overlapping-unit uncrossing conversion fails for every rank and every common full-unit catalyst. | [Overlapping units](OVERLAPPING_UNITS.md), a determinant-grid valuation argument, with independent binary polynomial certificates. | Source-only overhead is different. A rank-$\sqrt q$ unit suffices when $q$ is a square and is necessary if only the two outer maps are monomial; unrestricted subexponential overhead remains unresolved. |
 | A required Weyl phase cannot be inserted freely into a collapsed group tensor. | [Sun phase audit](SUN_PHASE_AUDIT.md), a one-bit obstruction and the minimal-border-rank slice commutativity condition. | It does not exclude a construction from a richer source tensor. |
 | Two printed local maps in Sun v1 fail exact substitution, and specific local corrections repair those local identities. | [Crossed-map audit](SUN_CROSSED_MAP_AUDIT.md) and exact scripts. | Neither the full claimed theorem nor its negation follows from the local checks. |
 
@@ -73,6 +74,25 @@ Ordinary Euclidean realizability has no normalization content. Every nonzero met
 [SUN_PROPAGATION_AUDIT.md](SUN_PROPAGATION_AUDIT.md) separates valid local calculations from the missing implication. The Walsh minors, first-difference identity, and combinatorial lift counts check. Definition 10.1(iii) also requires the fresh-coordinate residual to lie in a specified five-dimensional subspace after ordinary rows are eliminated. The checked first-jet identity does not establish that residual condition for the bases or prove that it persists after another propagation step.
 
 The phase audit likewise distinguishes a correct desired output and correct scalar identities from three local maps that produce that output from the declared source. The richer map entries and their compatibility are the remaining certificate to verify. This work does not import the exponent-two conclusion while that dependency remains unresolved.
+
+## A full-tensor overlapping-party test
+
+For four parties, a tempting new inequality is intersecting submodularity of partial-unit charges:
+
+```math
+u(S)+u(T)\ge u(S\cup T)+u(S\cap T).
+```
+
+It passes every flattening point and would exclude a small square inside the scalar equilateral model. Its most direct finite proof, however, is impossible. With
+
+```math
+X_q=U_{ABC}(q)\otimes U_{ABD}(q),\qquad
+Y_q=U_{ABCD}(q)\otimes U_{AB}(q),
+```
+
+the determinant-pencil theorem in [OVERLAPPING_UNITS.md](OVERLAPPING_UNITS.md) proves that $Y_q$ is not a degeneration of $X_q$ for any $q\ge2$, even with any common full-unit catalyst. It therefore excludes every equal-power version as well. A separate degree-four covariant proof and an exact degree-eight invariant check confirm the binary case.
+
+The argument does not exclude source-only unit overhead. A sharp calculation in the restricted class with monomial maps on the two outer parties requires overhead at least $\sqrt q$, and an explicit restriction attains it for square $q$. Every three-party regrouping admits the desired conversion. Thus any unrestricted asymptotic obstruction must use four-party information and survive arbitrary mixing on those outer parties. The full spectral inequality remains unresolved.
 
 ## Remaining mathematical obligation
 
@@ -96,6 +116,9 @@ python3 check_auxiliary_certificates.py
 python3 check_sun_phase_and_mask.py
 python3 check_sun_crossed_map.py
 python3 check_sun_propagation_local.py
+python3 check_unit_uncrossing.py
 ```
 
-The first three scripts use Python's standard library. The propagation-local script also uses SymPy. They check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
+All scripts except the propagation-local script use Python's standard library; that script also uses SymPy. They check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
+
+The review scope and reproducible check inventory are recorded in [REVIEW_AND_VERIFICATION.md](REVIEW_AND_VERIFICATION.md).

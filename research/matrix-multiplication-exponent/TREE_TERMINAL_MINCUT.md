@@ -1,4 +1,4 @@
-# Hypergraph mincut compatibility for tree terminal metrics
+# Hypergraph mincut compatibility for tree metrics and cap certificates
 
 This is a finite metric statement about the scalar charge
 
@@ -213,3 +213,132 @@ maximize the square energy, hence would be this uniform measure.
 Equality of the energies would then force equality of all six
 pairwise distances, which is impossible for a tree metric. A general
 Euclidean terminal proof requires a different argument.
+
+## A separate certificate using disjoint metric caps
+
+The following sufficient condition can apply when the terminal metric
+is not a tree metric. It does not require a Euclidean embedding.
+
+**Lemma.** Let $P=\{p_1,\ldots,p_n\}$ be terminals in a finite metric
+space, with $n\ge2$. Suppose there are numbers $r_i\ge0$ such that
+
+```math
+\sum_{i=1}^n r_i=g_d(P),\qquad
+\sum_{i\in I}r_i\le g_d(\{p_i:i\in I\})
+\quad\text{for every }I\subseteq\{1,\ldots,n\},\ |I|\ge2.
+```
+
+Then for every nonnegative weighted hypergraph on the ambient points,
+
+```math
+\sum_Hw_Hg_d(H)\ge\lambda_Pg_d(P).
+```
+
+**Proof.** Define the one-Lipschitz functions
+
+```math
+f_i(x)=\max\{r_i-d(p_i,x),0\}.
+```
+
+The two-element inequalities give
+$r_i+r_j\le g_d(\{p_i,p_j\})=d(p_i,p_j)$. Thus no point belongs to
+two positive caps. Set
+
+```math
+\delta(H)=\sum_i\bigl(\max_{x\in H}f_i(x)
+                         -\min_{x\in H}f_i(x)\bigr).
+```
+
+Set $\delta(\varnothing)=0$. If $H$ meets no positive cap, this is
+zero. If it meets just one positive cap, Lipschitz continuity gives
+$\delta(H)\le\mathop{\mathrm{diam}}(H)\le g_d(H)$.
+
+Otherwise let $I$ be the at least two caps met by $H$, and for each
+$i\in I$ choose $x_i\in H$ nearest $p_i$. Write $u_i=d(p_i,x_i)$.
+Since $H$ also meets a different cap, $\min_H f_i=0$, and hence
+
+```math
+\delta(H)=\sum_{i\in I}(r_i-u_i).
+```
+
+Choose a measure $\mu$ maximizing the distance energy of the
+terminal subset indexed by $I$. The triangle inequality and
+$4\mu_i(1-\mu_i)\le1$ give
+
+```math
+\begin{aligned}
+g_d(H)
+&\ge2\sum_{i,j\in I}\mu_i\mu_jd(x_i,x_j)\\
+&\ge g_d(\{p_i:i\in I\})
+       -4\sum_{i\in I}\mu_i(1-\mu_i)u_i\\
+&\ge\sum_{i\in I}r_i-\sum_{i\in I}u_i
+=\delta(H).
+\end{aligned}
+```
+
+For every $0\lt t\lt r_i$, the threshold set
+$\{x:f_i(x)>t\}$ contains $p_i$ and excludes all other terminals,
+because $d(p_i,p_j)\ge r_i+r_j\ge r_i$. It is therefore a terminal
+cut. The total mass of these threshold cuts, integrating $dt$ for
+all $i$, is $\sum_i r_i=g_d(P)$. The integral of the crossing
+indicator of $H$ is exactly $\delta(H)$. Integrating their mincut
+lower bound and using $\delta(H)\le g_d(H)$ proves the lemma.
+
+### Exact non-tree example: square terminals
+
+For the four vertices of a unit square, the unique optimal measure
+is uniform, as checked above, and
+
+```math
+g_d(P)=\frac{2+\sqrt2}{2}.
+```
+
+Choose $r_i=(2+\sqrt2)/8$ for each vertex. Every pair has distance
+at least one, and
+
+```math
+2r_i=\frac{2+\sqrt2}{4}\le1.
+```
+
+Every three vertices contain a diagonal, so their charge is at
+least $\sqrt2$, while
+
+```math
+3r_i=\frac{3(2+\sqrt2)}8\le\sqrt2.
+```
+
+The four-element inequality is equality. All hypotheses of the
+cap lemma therefore hold. This proves the hypergraph mincut
+inequality for square terminals with arbitrary ambient metric
+auxiliaries, despite the absence of an isometric terminal-tree
+representation.
+
+### Exact limitation of the radius criterion
+
+Let the four terminals be
+
+```math
+(0,0),\ (0,\varepsilon),\ (L,0),\ (L,\varepsilon),
+\qquad L>2\varepsilon>0,
+```
+
+with Euclidean distance. The inequalities for the two close pairs
+would force
+
+```math
+r_1+r_2\le\varepsilon,\qquad
+r_3+r_4\le\varepsilon,
+\qquad\sum_i r_i\le2\varepsilon.
+```
+
+But the charge is at least the diagonal distance, so
+
+```math
+g_d(P)\ge\sqrt{L^2+\varepsilon^2}>L>2\varepsilon.
+```
+
+No radii can satisfy the lemma's equality condition. This is a
+counterexample to the sufficiency of this particular radius search
+for arbitrary terminal sets, not a counterexample to the mincut
+inequality itself. The general Euclidean terminal case remains
+unresolved here.
