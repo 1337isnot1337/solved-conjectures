@@ -63,6 +63,9 @@ M_q\cong W_{AB}(q)\otimes W_{BC}(q)\otimes W_{CA}(q),
 | The overlapping-unit uncrossing conversion fails for every $q\ge2$ and every common full-unit catalyst. | [Overlapping units](OVERLAPPING_UNITS.md), a determinant-grid valuation argument, with independent binary polynomial certificates. | Source-only overhead is different. A rank-$\sqrt q$ unit suffices when $q$ is a square and is necessary if only the two outer maps are monomial; unrestricted subexponential overhead is supplied by the separate separator construction. |
 | A required Weyl phase cannot be inserted freely into a collapsed group tensor. | [Sun phase audit](SUN_PHASE_AUDIT.md), a one-bit obstruction and the minimal-border-rank slice commutativity condition. | It does not exclude a construction from a richer source tensor. |
 | The entire printed active correction cell has rank at most five over the Laurent-function field, and at most four for the stated diagonal operator. | [Active-cell obstruction](SUN_ACTIVE_CELL_OBSTRUCTION.md), exact product identities. | If the five named source pairs have exactly these complete images, their compression contradicts known lower bounds at $M_{128}$ and $M_{4096}$. Hidden additional output components would require a different, explicit certificate. |
+| The size-three trace-cubic apolar algebra, and every positive tensor power of that algebra, is nonsmoothable. | [Trace-cubic certificate](TRACE_CUBIC_NONSMOOTHABILITY.md), one exact integer-matrix rank certificate, Frobenius duality, a conormal tensor-product lemma, and Jelisiejew v5 Theorem 1.2(1). | This is a computer-assisted failed-source certificate. It does not prove a matrix multiplication asymptotic-rank gap. |
+| Full nonzero weighted matrix multiplication cannot be extracted from a finite lower-ideal polynomial algebra by the specified coordinate selections and diagonal degenerations at a subcubic source size. | [Polynomial-source obstruction](POLYNOMIAL_SOURCE_OBSTRUCTION.md), an explicit smoothing and an injective lattice-point construction. | Arbitrary linear mixing, coordinate merging, and partial support remain outside the obstruction. |
+| The proposed retained-sum convolution block extraction needs linear source overhead; its equal-size contracted alternative has a symmetrizer obstruction. | [Convolution block obstructions](CONVOLUTION_BLOCK_OBSTRUCTIONS.md), a two-versus-two flattening, balanced trade, and closed symmetrizer condition. | Constant-factor rectangular compression and source-only overhead are not excluded by the symmetrizer. |
 | Sun v1's literal one-bit quotient construction cannot produce $M_{64}$. | [Source-certificate audit](SUN_SOURCE_CERTIFICATE_AUDIT.md), deletion of 64 explicitly zero source directions and Landsberg--Michałek Theorem 1.1. | The resulting upper bound $8128$ contradicts the proved lower bound $8185$. This refutes the stated construction, not the proposed $8192$ bound or $\omega=2$ itself. |
 | Two printed local maps in Sun v1 fail exact substitution, and specific local corrections repair those local identities. | [Crossed-map audit](SUN_CROSSED_MAP_AUDIT.md) and exact scripts. | Neither the full claimed theorem nor its negation follows from the local checks. |
 
@@ -153,6 +156,49 @@ That finite obstruction leaves a weaker constructive route open. Li's Theorem 2.
 
 The weighted-support argument extends, by the [general free-set separator](GENERAL_FREE_SET_SEPARATOR.md), to arbitrary nonzero coefficients on full hypergraph-tensor support with nonempty edges. The [weighted tetrahedral obstruction](WEIGHTED_TETRAHEDRAL_OBSTRUCTION.md) proves that coefficient changes do not remove the finite or common-unit obstruction. It makes no source-only asymptotic-overhead claim. The [four-party resource certificate](TETRAHEDRAL_RESOURCE_LIMITATION.md) explains why the listed face algorithms, graph bounds, terminal mincuts, and even free intersecting uncrossing cannot improve the existing tetrahedral overhead by recombination on those four labels. It is not a spectral point and does not cover additional auxiliary labels or arbitrary coefficient-sensitive maps.
 
+## Constructive sources and exact failed steps
+
+The [polynomial-source note](POLYNOMIAL_SOURCE_OBSTRUCTION.md) supplies
+an explicit rank-$`|D|`$ border family for every finite lower ideal
+$`D`$. Full weighted matrix multiplication cannot be obtained by the
+stated coordinate-selection and diagonal-weight method unless
+$`|D|\ge n^3`$. Dense partial support and general linear compression
+remain separate construction problems.
+
+The [convolution note](CONVOLUTION_BLOCK_OBSTRUCTIONS.md) rules out the
+proposed $`m`$-block retained-output extraction even with arbitrary maps
+at subpolynomial overhead: a cut requires at least
+$`m^3/(2m-1)^2`$ extra unit rank. After contracting the output, an
+independent symmetrizer invariant excludes the exact-size target of
+$`m`$ copies of $`M_m`$. Rectangular compression is not settled.
+
+The [trace-cubic certificate](TRACE_CUBIC_NONSMOOTHABILITY.md) rules out
+smoothability of the length-twenty algebra
+$`\mathop{\mathrm{Ap}}(\mathop{\mathrm{tr}}(X^3))`$ at size three.
+An exact $`495\times666`$ integer-matrix calculation and a written
+Frobenius-duality argument establish trivial negative tangents. The
+property persists under tensor products. This is a computer-assisted
+proof about this particular source algebra, with an imported geometric
+theorem; it is not a border-rank or exponent lower bound for matrix
+multiplication.
+
+[SMOOTHABLE_MM_ENLARGEMENT.md](SMOOTHABLE_MM_ENLARGEMENT.md) gives a
+different algebra containing $`M_n`$, an explicit splitting deformation
+followed by a smoothing at cubic length, and an unresolved quadratic
+module-smoothing target. It also records exact constant errors in two
+fixed-v2 source corollaries and uses only the full-dimension proposition.
+The [Heisenberg target](HEISENBERG_CHIRP_TARGET.md) gives another precise
+construction problem: rank $`p^{3+o(1)}`$ for its multiplication tensor
+would suffice. A chirp realizes one matrix block at cubic cost; the tested
+central Fourier packing yields commutative blocks and supplies no bound.
+
+[SUN_M32_MAP_AUDIT.md](SUN_M32_MAP_AUDIT.md) separately records the
+unresolved source-local arrays for the claimed size-thirty-two base.
+That base is logically independent of the refuted size-sixty-four
+quotient. Its scalar identities and terminal relabelling do not specify
+the needed three local maps. The base remains unverified here; it is not
+rejected solely because the later quotient fails.
+
 ## Remaining mathematical obligation
 
 To prove the target by this route, establish a full-tensor inequality on one compatible normalized extension that forces
@@ -185,8 +231,10 @@ python3 check_weighted_mm_koszul_pivots.py
 python3 check_sun_ordinary_partial_block.py
 python3 check_general_free_separator.py
 python3 check_uncrossing_separator.py
+python3 check_convolution_block_trade.py
+python3 check_trace_cubic_nonsmoothable.py
 ```
 
-The propagation-local, ordinary-partial-block, and general-free-separator scripts use SymPy; the others use Python's standard library. They check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
+The propagation-local, ordinary-partial-block, and general-free-separator scripts use SymPy. The trace-cubic certificate uses NumPy integer arrays with explicit overflow bounds. The other scripts use Python's standard library. The trace-cubic calculation is an essential finite certificate in its stated computer-assisted proof. The other scripts check the finite coefficients, flattenings, minors, and local counterexamples described in the proofs. None checks a complete matrix multiplication circuit or the unbounded dyadic induction. No new Lean proof or kernel verification is claimed.
 
 The review scope and reproducible check inventory are recorded in [REVIEW_AND_VERIFICATION.md](REVIEW_AND_VERIFICATION.md).
