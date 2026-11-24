@@ -399,6 +399,43 @@ class Builder:
                     return match.group(1)
         return None
 
+    def readme_result_entries(self) -> list[tuple[int, str, str]]:
+        """Read the compact index down the left half, then down the right."""
+        expected = ["Problem", "Lean verification status"] * 2
+        tables = []
+        for block in self.documents["README.md"].ast["blocks"]:
+            if block.get("t") != "Table":
+                continue
+            head = block["c"][3][1]
+            if head and [clean_text(plain(cell[-1])) for cell in head[0][1]] == expected:
+                tables.append(block)
+        if len(tables) != 1:
+            raise ValueError("README needs exactly one ranked four-column result table")
+        rows = [row[1] for body in tables[0]["c"][4] for row in body[3]]
+        if not rows or any(len(row) != 4 for row in rows):
+            raise ValueError("README result rows need four columns")
+        entries = []
+        seen = set()
+        for offset in (0, 2):
+            for index, row in enumerate(rows):
+                problem, verification = row[offset][-1], row[offset + 1][-1]
+                text = clean_text(plain(verification))
+                if not clean_text(plain(problem)) and not text and offset == 2 and index == len(rows) - 1:
+                    continue
+                slug = self.result_slug(problem)
+                rank_text = clean_text(plain(problem, skip_links=True))
+                match = re.fullmatch(r"([1-9][0-9]*)\.", rank_text)
+                if not slug or not match or text not in {"✅", "🟢", "🟡", "⬜"}:
+                    raise ValueError(f"Invalid README result pair: {slug}, {rank_text!r}, {text!r}")
+                rank = int(match[1])
+                if rank != len(entries) + 1 and (not entries or rank != entries[-1][0]):
+                    raise ValueError(f"Invalid README competition rank for {slug}: {rank}")
+                if slug in seen:
+                    raise ValueError(f"Duplicate README result row: {slug}")
+                seen.add(slug)
+                entries.append((rank, slug, text))
+        return entries
+
     def read_results(self):
         category = "Mathematics"
         found: dict[str, Result] = {}
@@ -467,7 +504,7 @@ class Builder:
         unknown_aliases = set(aliases) - set(found)
         if unknown_aliases:
             raise ValueError(f"Search aliases reference unknown results: {sorted(unknown_aliases)}")
-        order: list[str] = []
+        order = [slug for _, slug, _ in self.readme_result_entries()]
         for node in self.documents["README.md"].ast["blocks"]:
             for link in nodes(node):
                 if link.get("t") == "Link":
@@ -519,24 +556,13 @@ class Builder:
         if not summary_required <= checked:
             raise ValueError(f"Lean status summary mismatch: missing {sorted(summary_required - checked)}")
         readme_checked = set()
-        for block in self.documents["README.md"].ast["blocks"]:
-            if block.get("t") != "Table":
-                continue
-            for body in block["c"][4]:
-                for row in body[3]:
-                    cells = row[1]
-                    slug = self.result_slug(cells[0][-1])
-                    if slug not in results:
-                        continue
-                    if len(cells) != 2:
-                        raise ValueError(f"README result row needs two columns: {slug}")
-                    text = clean_text(plain(cells[1][-1]))
-                    status = {"✅": "full", "🟢": "partial", "🟡": "partial", "⬜": "none"}.get(text)
-                    if status != results[slug].status:
-                        raise ValueError(f"Stale README Lean status for {slug}: {text!r}; expected {results[slug].status}")
-                    if slug in readme_checked:
-                        raise ValueError(f"Duplicate README result row: {slug}")
-                    readme_checked.add(slug)
+        for _, slug, text in self.readme_result_entries():
+            if slug not in results:
+                raise ValueError(f"Unknown README result: {slug}")
+            status = {"✅": "full", "🟢": "partial", "🟡": "partial", "⬜": "none"}[text]
+            if status != results[slug].status:
+                raise ValueError(f"Stale README Lean status for {slug}: {text!r}; expected {results[slug].status}")
+            readme_checked.add(slug)
         if readme_checked != required:
             raise ValueError(f"README result table does not match current catalogue: {sorted(readme_checked ^ required)}")
 

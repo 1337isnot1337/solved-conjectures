@@ -1,5 +1,36 @@
 # Verification
 
+## Caiolo–Ferroni–Hoster counterexample family
+
+Run the following from `lean/` with its pinned toolchain. The replay checks the
+complete local import closure for the all-prime-powers theorem. The standard
+`scripts/verify_lean.sh` package gate also includes these modules.
+
+```sh
+lake build Conjectures.CaioloFerroniHoster
+lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoster
+```
+
+[Source correspondence and axiom audit](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
+## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
+
+The [complete target receipt](verification/juhnke-20261124/receipt.json) records fresh strict compilation of all 18 project modules, the unchanged audit of all 577 owned declarations (502 theorems and 11 required endpoints), and unchanged stock-kernel replay. The pinned Lean version is 4.35.0; the only allowed transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The complete source statement and literal-path bridge were independently reviewed against the original report.
+
+The dedicated `lean-juhnke.yml` workflow reproduces the target check with `scripts/verify_lean_target.py`. Its target receipt does not claim repository-wide verification of unrelated entries. The existing exact diagnostic checker also passed dimensions 3 through 62; the Lean theorem has unbounded dimension and step-count parameters.
+
+## Steinerberger’s quantitative Feldheim-tail conjecture
+
+The [complete Lean disproof](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md)
+constructs the probability law with survival function exp(−x−x²/200), identifies
+its actual mean and median, and bounds the ratio of the original product-space
+events for every positive threshold. Both original existence claims fail.
+The four-module closure passed strict compilation, the audit of all 103 owned
+declarations (92 theorems and six required endpoints), and stock-kernel replay.
+The integrator checked the statement against both original primary sources.
+The smoothing, all-epsilon family, strict log-concavity, and rate supplements
+remain unformalized. This is one completed existing conjecture entry.
+
 ## Complex BSS separation research
 
 [Research receipts and replay instructions](https://github.com/1337isnot1337/solved-conjectures/blob/research/docs/verification.md#complex-bss-separation-research). Check out `research` before running the research scripts.

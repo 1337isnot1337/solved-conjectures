@@ -1,5 +1,31 @@
 # Full formalization campaign
 
+## Caiolo–Ferroni–Hoster conjecture
+
+`CaioloFerroniHoster.counterexample_family` checks the complete rank-five
+construction for every prime power q ≥ 17. It proves the quartic dual Chow
+polynomial is positive on the reals and the quintic dual right augmented
+polynomial has one simple real root, −1. Both fail to split over the reals.
+[Lean theorem](../lean/Conjectures/CaioloFerroniHoster.lean) · [Review and replay](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
+## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
+
+`Juhnke.juhnke_conjecture` proves both original conclusions for the actual path counts in every dimension `d ≥ 2`. The representation is explicitly equivalent to ordered lists of positive east/north steps, with original start `(2,1)` and both original endpoints. The run decomposition, exact positive-composition counts, optional-cut polynomial, coefficient inequalities, translation, and unimodality are all proved. The 18-module closure contains no assumed enumeration or analytic theorem.
+
+The [entry audit](../results/juhnke-lattice-paths/LEAN-AUDIT.md) records the precise source, original proposer Martina Juhnke, proof credit to Cinna Davis and GPT-6.2 Astra, the Brenti translation criterion, and unchanged priority uncertainty. This is Conjecture 6; the separate coherent-path Conjecture 5 is not asserted. The complete [verification receipt](verification/juhnke-20261124/receipt.json) records 577 owned declarations, 502 theorems, 11 required endpoints, and stock-kernel replay.
+
+## Steinerberger’s quantitative Feldheim-tail conjecture
+
+The [complete Lean disproof](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md)
+constructs the probability law with survival function exp(−x−x²/200), identifies
+its actual mean and median, and bounds the ratio of the original product-space
+events for every positive threshold. Both original existence claims fail.
+The four-module closure passed strict compilation, the audit of all 103 owned
+declarations (92 theorems and six required endpoints), and stock-kernel replay.
+The integrator checked the statement against both original primary sources.
+The smoothing, all-epsilon family, strict log-concavity, and rate supplements
+remain unformalized. This is one completed existing conjecture entry.
+
 ## First short-proof Lean batch
 
 - [Wilf-module questions](../results/almiron-moyano-wilf-module-questions/LEAN.md): Question 4.8 and parts (1), (2), and (6) of Question 4.13. Partial coverage of the collection entry.
