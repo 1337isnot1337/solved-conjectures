@@ -1,5 +1,13 @@
 # Verification
 
+
+## Gravgaard–Lee’s mixed Lüroth sumset
+
+The [scoped receipt](verification/lean-gravgaard-lee-mixed-luroth-20261124/receipt.json)
+records strict compilation, an all-owned axiom audit and pinned kernel replay
+for both modules in the local closure. The source intervals and every real
+residue are covered by the registered endpoints.
+
 ## Gravgaard–Lee’s large-digit Lüroth sumset
 
 The [scoped receipt](verification/lean-gravgaard-lee-large-luroth-20261124/receipt.json)

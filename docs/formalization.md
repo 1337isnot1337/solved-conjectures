@@ -1,5 +1,14 @@
 # Full formalization campaign
 
+## Gravgaard–Lee’s mixed Lüroth sumset
+
+[Lean proves Conjecture 2.2 and the interval from the written proof](../lean/Conjectures/GravgaardLeeMixedLuroth.lean).
+The sum of the digit sets bounded above by three and four contains $[2879/3520,2]$
+and represents every real residue modulo one. The proof checks the fifteen
+branch containments and the geometric approximation argument for the closed
+sumsets of infinite Lüroth expansions. The two-module local import closure
+passed the pinned kernel replay.
+
 ## Gravgaard–Lee’s large-digit Lüroth sumset
 
 [Lean proves Conjecture 2.12 and the stronger interval in the written proof](../lean/Conjectures/GravgaardLeeLargeLuroth.lean).
