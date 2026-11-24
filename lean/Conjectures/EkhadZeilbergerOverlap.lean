@@ -124,8 +124,7 @@ theorem no_shift_one_squared {t M x y V : ℝ} (ht : 0 < t)
 
 /-- With different interiors the two-endpoint projection supplies this
 variance bound. The projection itself is not formalized by this theorem. -/
-theorem projected_variance_squared {t M x y V : ℝ} (ht : 0 < t)
-    (htwo : t ≤ 1 / 2) (hM : 0 < M) (hy : 0 ≤ y) (hyx : y ≤ x)
+theorem projected_variance_squared {t M x y V : ℝ} (htwo : t ≤ 1 / 2) (hM : 0 < M) (hy : 0 ≤ y) (hyx : y ≤ x)
     (hx : x < M * t) (hV : (1 - t) ^ 2 ≤ V) :
     (x - y) ^ 2 < M ^ 2 * V := by
   have ht' : t ≤ 1 - t := by linarith
@@ -168,7 +167,7 @@ theorem nonconstant_advantage_lt (t : ℝ) (n : ℕ) (x y z w V : ℝ)
   · have hVpos : 0 < V :=
       lt_of_lt_of_le (pow_pos (show 0 < 1 - t by linarith) 2) hproj
     exact ratio_lt_of_square hM.le hVpos
-      (projected_variance_squared ht htwo hM hy hyx hx' hproj)
+      (projected_variance_squared htwo hM hy hyx hx' hproj)
 
 /-- Constant loser: the cross-overlap bound gives the sharp extremum and
 the exact algebraic equality conditions. The identification of words from
@@ -225,7 +224,7 @@ theorem constant_loser_advantage {M y z w V : ℝ} (hM : 0 < M)
 /-- All nonconstant competitors in the full-alphabet regime with a
 variance floor t have squared normalized advantage strictly below M²*t. -/
 theorem full_alphabet_nonconstant_squared {t M x y V : ℝ} (ht : 0 < t)
-    (hM : 0 < M) (hy : 0 ≤ y) (hyx : y ≤ x) (hx : x < M * t)
+    (hy : 0 ≤ y) (hyx : y ≤ x) (hx : x < M * t)
     (hV : t ≤ V) : (x - y) ^ 2 < M ^ 2 * t * V := by
   have hbound : x - y < M * t := (sub_le_self x hy).trans_lt hx
   calc
@@ -251,7 +250,7 @@ theorem full_alphabet_constant_beats_nonconstant {t M x y V G : ℝ}
   calc
     (x - y) ^ 2 * (1 + M - G) < M ^ 2 * t * V * (1 + M - G) :=
       mul_lt_mul_of_pos_right
-        (full_alphabet_nonconstant_squared ht hM hy hyx hx hV) hp
+        (full_alphabet_nonconstant_squared ht hy hyx hx hV) hp
     _ = (M ^ 2 * V) * (t * (1 + M - G)) := by ring
     _ < (M ^ 2 * V) * 1 := mul_lt_mul_of_pos_left ht' (mul_pos (pow_pos hM 2) hVpos)
     _ = M ^ 2 * V := mul_one _
