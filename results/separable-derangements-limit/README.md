@@ -1,0 +1,9 @@
+# Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture
+
+**Proved.** Proves the derangement proportion tends to zero, with every fixed diagonal count diverging in probability.
+
+- [Complete proof](PROOF.md)
+- [Independent audit and prior work](AUDIT.md)
+- [Discovery issue #441](https://github.com/1337isnot1337/solved-conjectures/issues/441)
+
+**Quantitative supplement:** [Matching-scale occupation estimates and two-sided inverse-polylogarithmic probability bounds](LOGARITHMIC-BOUNDS.md).
