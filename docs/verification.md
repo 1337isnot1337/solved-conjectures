@@ -176,6 +176,8 @@ The [ordinary D’Arcais root proof](../results/heim-neuhauser-ordinary-darcais-
 
 The [quantitative Feldheim-tail counterexample](../results/steinerberger-feldheim-tail/PROOF.md) is analytic. It uses two elementary integral bounds and no executable certificate.
 
+Run `python3 results/benfield-lippard-waring-gap-symmetry/check.py` for the two exact Waring-gap symmetry defects. The [parity argument](../results/benfield-lippard-waring-gap-parity/PROOF.md) and the [smaller existential Feldheim-tail inequality](../results/steinerberger-feldheim-tail/LINEAR-EXISTENCE.md) are analytic and use no executable certificate.
+
 ## Pantone–Bóna asymptotic equivalence
 
 Run `python3 results/pantone-bona-asymptotic/verify.py` for literal small permutation counts and exact tableau branching comparisons. The [proof](../results/pantone-bona-asymptotic/PROOF.md) derives the leading constant analytically; finite enumeration is not part of its argument.

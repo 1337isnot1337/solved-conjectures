@@ -157,8 +157,7 @@ is at least \(2p(p-1)\) by convexity of \(x^{p-2}\). Substituting
  R(z)\ \sim\ \sqrt{\frac{\pi p}{p-1}}\,z^{p/2}.
 ```
 This is separate from whether a smaller positive universal
-coefficient could hold in an existential linear bound. That
-variant is not claimed here. For eventual linear failure with
+coefficient could hold in an existential linear bound. A [separate proof](LINEAR-EXISTENCE.md) shows that smaller positive existential coefficients do work. For eventual linear failure with
 a strictly positive analytic density all the way to the
 boundary, the same bound follows for
 \(S(x)=\exp(1-(1+x)^p)\), by replacing \(z\) by \(z+1\)

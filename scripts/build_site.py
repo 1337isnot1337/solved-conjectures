@@ -65,6 +65,8 @@ STATUS_LABEL_SLUGS = {
     "Pantone–Bóna’s asymptotic conjecture": "pantone-bona-asymptotic",
     "Hartke–Stolee–West–Yancey matching-excess conjecture": "hartke-stolee-west-yancey-matching-excess",
     "Steinerberger’s quantitative Feldheim-tail conjecture": "steinerberger-feldheim-tail",
+    "Benfield–Lippard’s stable Waring-gap symmetry conjecture": "benfield-lippard-waring-gap-symmetry",
+    "Benfield–Lippard’s stable Waring-gap parity conjecture": "benfield-lippard-waring-gap-parity",
     "Heim–Neuhauser–Tröger’s plane-partition polynomial Turán conjecture": "heim-neuhauser-troeger-plane-partition-turan",
     "Heim–Neuhauser’s plane-partition polynomization conjecture": "heim-neuhauser-plane-partition-polynomization",
     "Heim–Neuhauser’s ordinary D’Arcais root conjecture": "heim-neuhauser-ordinary-darcais-root",
