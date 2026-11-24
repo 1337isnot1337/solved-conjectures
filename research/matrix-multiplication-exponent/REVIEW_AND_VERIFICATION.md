@@ -640,3 +640,41 @@ omega, legal conversion to the required copied target, Lean theorem or
 hosted verification pass is asserted. The local checks cover the exact
 written finite examples and structural equations; the all-parameter
 claims rely on the reviewed proofs, not on extrapolation from tests.
+
+## The complete tangent ledger and the M32 globalization
+
+The claim-audit worker found the six-product compression of Sun v1's
+complete tangent output. Root and the operator-comparison worker
+independently reopened Sections 6.2, 8, 9.2 and Appendix A.5 and checked
+that every printed raw dense record is retained by a one-leg refinement
+of the two-product W degeneration. The companion contributes one dense
+product and three endpoints. Root independently reopened
+Landsberg--Michałek arXiv:1608.07486v1, Theorem 1.1, including its
+explicit bound at n=32. The proof uses only one tangent pair per outer
+row, subadditivity of border rank, and the complete-image/degree-zero
+premises stated in the note. The remaining source budget is 121.
+
+Root supplied the independent q+2-product Cq source certificate; the
+claim-audit worker checked it against Sun Definition 2.4 and added its
+expansion to the checker. Root replayed the final checker in the
+repository layout:
+
+```sh
+python3 research/matrix-multiplication-exponent/check_sun_tangent_compression.py
+```
+
+It verifies all eleven leading raw records and every positive error
+term in the six-product replacement, cancellation of all negative
+coefficients, the C2/C3 source certificates, the remaining-source
+budget 121 and the strict comparison 2032<2042. The contradiction is
+in the printed complete local output together with its stated fixed
+globalization. It is not a lower bound above 2048 for arbitrary M32
+algorithms and is not a determination of omega. A richer companion
+with extra leading terms is a separate candidate, not a repair already
+validated by these checks.
+
+The source-audit and M32-status notes were updated to replace the
+earlier missing-map-only status with this exact incompatibility.
+A bounded primary-source critique search on 24 November 2026 did not
+find a prior public treatment of this compression; no priority claim
+is made. No Lean theorem or hosted CI pass is claimed.
