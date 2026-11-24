@@ -551,3 +551,92 @@ All changed files remain in research status. Local links, fences,
 equation tags, whitespace and Python syntax are checked before the PR.
 No new matrix multiplication exponent bound, complete source-to-target
 trade, Lean formalization or hosted CI pass is claimed.
+
+
+## Coupled sources, finite coherent channels and retained target weights
+
+The operator-comparison worker derived the full coupled first-order
+selector. Root and the constructive worker independently checked its
+six-index equation, the nonzero positive-order remainder and its finite
+Laurent realization. Root and the constructive worker independently
+derived the universal-column reduction for its capacity theorem. The
+constructive worker supplied the AC|BD cut that bounds the sum of C-image
+dimensions without an extra coefficient-rank factor. Root, the audit
+worker and the operator-comparison worker checked the complete theorem,
+including deficient incident spans and independently chosen D columns.
+The sampling theorem used here was reviewed in the preceding checkpoint.
+
+The audit worker derived the exact five- and three-dimensional central
+source blocks. Root and the constructive and operator-comparison workers
+checked their basis changes, cyclic-orbit coefficients, rank argument
+and complete coupled circuit equation. Root replayed the cyclotomic
+checker: both circuit relations, every normal-form coefficient, the
+invertible eight-dimensional basis, and the two attained rank bounds
+pass. The proof uses block-diagonal flattening rank, not tensor-rank
+additivity for arbitrary direct sums.
+
+The constructive worker derived the complete symmetric depth-two
+expansion; the operator-comparison worker independently obtained its
+coherent diagnostic. Root checked the coefficient obstruction. Root's
+proposed B inverse was rejected: the displayed multiplication/derivative
+matrix has small division rank, whereas the apparently invertible
+derivative/multiplication formula has a different auxiliary orientation.
+The note preserves the exact correction and the cancellation caused by
+the complementary A quotient.
+
+The operator-comparison worker derived the ordered projector and its
+Weyl rank-transfer argument. Root checked the common-denominator step,
+the nonzero leading monomial proof and the full C residual. The
+constructive worker supplied the direct finite multiplication channel,
+its source and retained flag spaces, every prefix boundary check,
+cofactor rank estimate and equivariance. Root and the operator-comparison
+worker reviewed those finite maps. Their channel-size assertions remain
+valid; their stated high-rank C completion is explicitly excluded by
+the separate capacity theorem.
+
+The operator-comparison worker proved the common-image bound, reviewed
+by root and the constructive worker. The constructive worker extended
+it to arbitrary X-only outside images and noncommuting flavour maps;
+root and the operator-comparison worker checked its constant/degree-one
+argument. The constructive worker then derived the mixed-Y projector
+and ordered double-channel residual. The operator-comparison worker
+proved its general common-Y-frame obstruction using constant and
+degree-one harmonic vectors. Root and the constructive worker reviewed
+the whole finite proof. Its polynomial inverses are defined directly;
+no action of the entire Weyl division ring on all polynomials is assumed.
+
+The audit worker derived the torus-filtered weighted-target lemma.
+Root and the operator-comparison worker checked the local finite-group
+filter, the exact Cartan weights, their density and the invocation of
+the previously proved weighted-support recovery. Root replayed all
+30 finite additive-Casimir cases. The replay keeps a multi-exchange
+zero-charge counterexample; the proved filter is not extended to an
+arbitrary fused operator. Both C/D labels are hypotheses of the lemma.
+
+The audit and operator-comparison workers derived the rational-middle
+Gram obstruction. Root reviewed the complete source equation,
+differential-order quotient, scalarized symbol rank and the additive
+exterior Casimir rank. The sparse-k statement now states the growing-k
+regime; fixed k=1 is not covered by that asymptotic comparison. Root
+replayed the final portable checker: 13 symbolic Gram cases, a specific
+off-copied-label derivative of -1/2, and the principal Casimir ranks
+4, 18 and 48 pass. Exact integer projector/trace identities give the
+rank upper bounds and integer modular elimination gives matching lower
+bounds. An earlier slower replay was interrupted before completion;
+only the final unchanged artifact's completed replay is counted here.
+
+The audit worker constructed the row-degree Capelli source map.
+Root and the operator-comparison worker checked both source flag
+domains, row alignment, alternating matrix units, the complete tensor
+normal form and the resulting existing inequality. Root and the
+operator-comparison worker replayed all 72 sparse minor/row-alignment
+cases. A proposed derivative-on-both-outsides word was corrected before
+the claimed cheap-prefix calculation: the X creation now sits at A,
+and the X derivative sits at D. The final note retains the mismatched
+C flavour labels and D physical-row labels.
+
+All files remain part of the open target-07 campaign. No new bound on
+omega, legal conversion to the required copied target, Lean theorem or
+hosted verification pass is asserted. The local checks cover the exact
+written finite examples and structural equations; the all-parameter
+claims rely on the reviewed proofs, not on extrapolation from tests.
