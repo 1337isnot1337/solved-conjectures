@@ -2,7 +2,9 @@
 
 Tracking issue: [#345](https://github.com/1337isnot1337/solved-conjectures/issues/345).
 
-**Status:** counterexample to the published conjecture, with asymptotics for both associated extremal functions. The argument is documented for independent review. No claim of external review or priority is made.
+**Status:** the conjecture is false as a direct consequence of an earlier best-packing theorem. This note gives a self-contained finite cube estimate and matching uniform bounds for the associated vertex and edge extremal functions. It is not a claim of a new conjecture resolution or of external review.
+
+**Earlier implication.** Borodachov, Hardin and Saff [(2007), equation (1.3) and Theorem 2.2](https://www.math.vanderbilt.edu/saffeb/texts/212.pdf) show that the largest achievable minimum distance \(\kappa_k\) among \(k\) points in the unit cube is asymptotic to \(2(\delta_d/(\omega_d k))^{1/d}\). The cube of side \(2/\kappa_k\) therefore has a \(K_k\)-free large-distance graph under the strict distance threshold \(2\) and has volume asymptotic to \((\omega_d/\delta_d)k\). This alone contradicts the later conjecture in dimensions \(2,3,4\), since \(\delta_d<1\). The finite estimate below gives an elementary quantitative version of this implication; the upper estimate is uniform over all admissible measurable sets.
 
 Let \(G_A\) be the graph on a measurable set \(A\subseteq\mathbb R^d\) joining two points exactly when their Euclidean distance is greater than \(2\). Write \(\omega_d\) for the volume of the unit ball and \(\delta_d\) for the optimal packing density of Euclidean unit balls. Set
 \[
@@ -69,11 +71,12 @@ The first inequality is the pair-difference sum identity; the second uses minimu
 \]
 The bound is strictly less than \(1\) at \(d=3\) and decreasing thereafter. Since \(b_d>\omega_d\) for \(d\ge 2\), the vertex lower bound exceeds \((k-1)\omega_d\) for every sufficiently large \(k\), in particular in dimensions \(2,3,4\) of the conjecture.
 
-**Explicit planar witness.** Take \(A=[0,50]^2\) and \(k=781\). Any \(n\) pairwise more-than-\(2\) separated points in \(A\) give a packing of density \(n\pi/52^2\), so \(n\le52^2/(2\sqrt3)<781\). The strict inequality follows from \(2704^2<3\cdot1562^2\). Yet \(|A|=2500>780\pi\), for instance by \(\pi<22/7\).
+**Explicit planar witness.** Take \(A=[0,40]^2\) and \(k=510\). Any \(n\) pairwise more-than-\(2\) separated points in \(A\) give a packing of density \(n\pi/42^2\), so \(n\le42^2/(2\sqrt3)<510\). The strict inequality follows from \(1764^2<3\cdot1020^2\). Yet \(|A|=1600>509\pi\), since \(509(22/7)=11198/7<1600\).
 
 ### Attribution and scope
 
 - M. Doležal, J. Hladký, J. Kolář, T. Mitsis, C. Pelekis and V. Vlasák, [A Turán-Type Theorem for Large-Distance Graphs in Euclidean Spaces, and Related Isodiametric Problems](https://doi.org/10.1007/s00454-020-00183-2), *Discrete & Computational Geometry* 66 (2021), 281–300. The conjecture appears in §5.1 of the [arXiv manuscript](https://arxiv.org/pdf/1904.07498v2) and in [the 2019 proceedings version, printed p. 628](https://www.iam.fmph.uniba.sk/amuc/ojs/index.php/amuc/article/download/1300/769/). The original paper proves the planar case \(k=3\), unchanged by this argument. The authors themselves observed failure at \(k=3\) for \(d\ge5\); the above disproof concerns dimensions \(2,3,4\) with \(k\) growing.
+- H. F. Blichfeldt, [The minimum value of quadratic forms, and the closest packing of spheres](https://doi.org/10.1007/BF01454863), *Mathematische Annalen* 101 (1929), 605–608, is the classical gauge reference.
 - For the planar packing density, see A. Thue, *Über die dichteste Zusammenstellung von kongruenten Kreisen in einer Ebene* (1910), or H.-C. Chang and L.-C. Wang, [A Simple Proof of Thue's Theorem on Circle Packing](https://arxiv.org/abs/1009.4322).
 - Periodizing a padded finite pattern and integrating over translations are classical. Here these tools give matching leading constants for the two extremal quantities above.
 - This does not settle Bereg–Dumitrescu–Jiang's \(1/4\) disk-covering conjecture. Its congruent-disk case would follow from the clique-isodiametric inequality applied to the union of unit disks at distance threshold \(4\), but the implication need not reverse.
