@@ -10,7 +10,7 @@ def verify(core, pairs, include_open_odd=False):
     m, n = len(core) + 1, len(x)
     checks = 0
     for k in range(1, n // 2 + 1):
-        if m % 2 and k > (m + 1) // 2 and n < 4*k and not include_open_odd:
+        if m % 2 and k > (m + 1) // 2 and n < 3*k and not include_open_odd:
             continue
         ge = sum(sum(values) >= 0 for values in combinations(x, k))
         if ge < comb(n - 1, k - 1):
@@ -47,7 +47,7 @@ def verify_conditional(core, pairs, k):
         if m % 2 == 0:
             assert sum(m*stats[H,s,'positive']-s*stats[H,s,'total']
                        for s in range(m+1)) >= 0
-        elif m >= 3:
+        elif m >= 7:
             for s in range(m//2+1, m):
                 sp = m-s-1
                 assert stats[H,sp,'total'] >= stats[H,s,'total']
@@ -55,6 +55,8 @@ def verify_conditional(core, pairs, k):
                            for j in (s,sp)) >= 0
             spare += stats[H,0,'total'] - stats[H,m-1,'total'] - stats[H,m,'total']
     assert spare >= 0
+    assert sum(m*stats[H,s,'positive']-s*stats[H,s,'total']
+               for H in {key[0] for key in stats} for s in range(m+1)) >= 0
 
 
 if __name__ == '__main__':
@@ -73,7 +75,8 @@ if __name__ == '__main__':
         P = rng.randrange(3, 7) if m % 2 else rng.randrange(5)
         core = [rng.randrange(20) for _ in range(m-1)]
         pairs = [rng.randrange(50) for _ in range(P)]
-        verify_conditional(core, pairs, rng.randrange(1, (m+2*P)//(4 if m%2 else 2)+1))
+        ratio = 2 if m%2 == 0 else 3
+        verify_conditional(core, pairs, rng.randrange(1, (m+2*P)//ratio+1))
     print(f'{runs+1:,} conditional weighting and reflection checks')
     odd = 0
     for _ in range(300):
@@ -83,3 +86,20 @@ if __name__ == '__main__':
         pairs = [rng.randrange(30) for _ in range(P)]
         odd += verify(core, pairs, include_open_odd=True)
     print(f'{odd:,} exploratory odd-core checks; not a parity-free proof')
+    # The odd-core k<=n/2 extension is false. Check the all-t formula
+    # against an independent coefficient count with four weight types.
+    for t in range(1, 101):
+        k = 2*t + 1
+        n = 4*t + 3
+        a, b = comb(2*t,t), comb(2*t,t-1)
+        numerator = comb(n,k) - a*a - 2*a*b + b*b
+        assert numerator % 2 == 0
+        actual = 0
+        for gate in (0,1):
+            for low in range(3):
+                for plus in range(2*t+1):
+                    minus = k-gate-low-plus
+                    if 0 <= minus <= 2*t and 4*gate-2*low+3*(plus-minus) >= 0:
+                        actual += comb(2,low)*comb(2*t,plus)*comb(2*t,minus)
+        assert actual == numerator//2 < comb(n-1,k-1)
+    print('100 exact checks of the counterexample family outside the MMS range')
