@@ -342,6 +342,81 @@ def test_prime_support_certificates():
     print(f'cyclotomic support certificates for M=2,6,30,210: prime counts {counts}')
 
 
+
+def test_continued_counterexamples():
+    # Exact lower Newton hull of (1+x)^16-1.
+    points = [(i, valuation(comb(16, i), 2)) for i in range(1, 17)]
+    hull = []
+    for point in points:
+        while len(hull) >= 2:
+            a, b = hull[-2:]
+            cross = ((b[0]-a[0])*(point[1]-b[1]) -
+                     (b[1]-a[1])*(point[0]-b[0]))
+            if cross > 0:
+                break
+            hull.pop()
+        hull.append(point)
+    assert hull == [(1, 4), (2, 3), (4, 2), (8, 1), (16, 0)]
+    # Simple Q_2 root and parallel active supports in the source counterexample.
+    x, y = -2, -1
+    assert y-1-x == y*y-1 == 0
+    assert -2*y == 2
+    first = [((0, 1), valuation(y, 2)), ((0, 0), 0),
+             ((1, 0), valuation(x, 2))]
+    second = [((0, 2), valuation(y*y, 2)), ((0, 0), 0)]
+    face1 = [e for e, v in first if v == min(w for _, w in first)]
+    face2 = [e for e, v in second if v == min(w for _, w in second)]
+    u = tuple(face1[1][i]-face1[0][i] for i in range(2))
+    v = tuple(face2[1][i]-face2[0][i] for i in range(2))
+    assert u[0]*v[1]-u[1]*v[0] == 0
+    assert 100**20 < 2**11 * 69**20
+    print('shifted-cyclotomic Newton hull and degenerate mixed-volume counterexample: passed')
+
+
+def test_strict_cut_positivity():
+    count = 0
+    for n in range(2, 5):
+        size = 2**n
+        k = 2**(4*size*size)
+        coefficients = [k**(size-1-i) for i in range(size)]
+        assert peval(coefficients, -k) == 0
+        assert polynomial_gcd(coefficients, derivative(coefficients)) == [1]
+        for mask in range(1, 2**n-1):
+            if not (mask & 1):
+                continue
+            rows = sums_for([i for i in range(n) if mask >> i & 1])
+            cols = sums_for([i for i in range(n) if not (mask >> i & 1)])
+            table = [[peval(coefficients, 1+a+b) for b in cols] for a in rows]
+            for r in range(1, min(len(rows), len(cols))+1):
+                for ii in combinations(range(len(rows)), r):
+                    for jj in combinations(range(len(cols)), r):
+                        assert determinant([[table[i][j] for j in jj] for i in ii]) > 0
+                        count += 1
+    print(f'geometric-sum strict positivity, every cut minor for n=2..4: {count} passed')
+
+
+def test_divided_difference_with_cofactors():
+    # Independently expanded identities, including repeated roots and a cofactor.
+    for n in range(1, 9):
+        f = root_product(range(1, n+1))
+        h = mul(mul(f, f), [1, 0, 1])
+        for j in range(1, n+1):
+            quotient = [0] * (len(h)-1)
+            carry = h[-1]
+            quotient[-1] = carry
+            for i in range(len(h)-2, 0, -1):
+                carry = h[i] + j*carry
+                quotient[i-1] = carry
+            assert h[0] + j*carry == 0
+            assert mul([-j, 1], quotient) == h
+        for y, z in product(range(-3, 4), repeat=2):
+            d = sum(c * sum(y**(i-1-k)*z**k for k in range(i))
+                    for i, c in enumerate(h) if i)
+            assert (y-z)*d == peval(h, y)-peval(h, z)
+            if y == z:
+                assert d == peval(derivative(h), y)
+    print('divided differences with repeated prescribed roots and cofactor examples: passed')
+
 def main():
     test_carries_and_products()
     test_all_cuts()
@@ -351,6 +426,9 @@ def main():
     test_modular_average()
     test_p_adic_example()
     test_prime_support_certificates()
+    test_continued_counterexamples()
+    test_strict_cut_positivity()
+    test_divided_difference_with_cofactors()
     print('All finite exact checks passed. No tau bound or BSS separation was verified.')
 
 
