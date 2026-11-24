@@ -4,39 +4,35 @@ Mathematical proofs, counterexamples, and partial results in combinatorics, numb
 
 Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. External contributions have separate result-level credit.
 
-[Search the collection](https://1337isnot1337.github.io/solved-conjectures/) · [Full catalogue](CONTENTS.md) · [Verification](docs/verification.md) · [Lean status](docs/lean-status.md) · [History](HISTORY.md)
+[Search the collection](https://itsdavis.com/solved-conjectures/) · [Full catalogue](CONTENTS.md) · [Verification](docs/verification.md) · [Lean status](docs/lean-status.md) · [History](HISTORY.md)
 
 ## Results
 
-| Problem | Verification |
+| Problem | Lean verification status |
 | :--- | :---: |
-| [Nuttall's conjecture](results/nuttall-cumulants/) | ⬜ |
-| [Coffey–Smith conjecture](results/coffey-smith/) | ⬜ |
-| [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/) | ⬜ |
-| [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ |
-| [Wang–Yang's conjecture](results/wang-yang/) | ⬜ |
-| [Tom–Vailaya’s weighted trace conjecture](results/tom-vailaya-weighted-trace/) | ⬜ |
-| [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ⬜ |
-| [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ⬜ |
-| [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ⬜ |
-| [Rowland–Sistos Barrón conjecture](results/rowland-sistos-barron/) | ⬜ |
-| [Caiolo–Ferroni–Hoster conjecture](results/caiolo-ferroni-hoster/) | ⬜ |
-| [Higashitani–Kummer–Michałek conjecture](results/hkm-ehrhart/) | ⬜ |
 | [Steinke–Zakynthinou agnostic threshold problem](results/steinke-zakynthinou-thresholds/) | ✅ |
 | [Németh–Seberry–Shu conjecture ★](results/nemeth-seberry-shu/) | ⬜ |
+| [Nuttall's conjecture](results/nuttall-cumulants/) | ⬜ |
 | [Brown–Mol's conjecture](results/brown-mol/) | ✅ |
 | [Haralambis’s three-difference conjecture](results/haralambis-three-differences/) | ✅ |
 | [Johnson's conjecture](results/johnson-pfaffian/) | 🟡 |
 | [Chen–Khare–Sahi's conjecture](results/chen-khare-sahi-macdonald/) | 🟡 |
+| [Caiolo–Ferroni–Hoster conjecture](results/caiolo-ferroni-hoster/) | ⬜ |
+| [Higashitani–Kummer–Michałek conjecture](results/hkm-ehrhart/) | ⬜ |
 | [Dospolova–Germanskov–Zaporozhets's conjecture](results/dospolova-germanskov-zaporozhets/) | 🟡 |
 | [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ |
 | [Erdős Problem 607: line-size sets](results/erdos-607-line-sizes/) | ✅ |
 | [Natalchenko–Sagdeev nonmixed-gap packing](results/nonmixed-gap-packing/) | ✅ |
 | [Vishnyakova's conjecture](results/vishnyakova-root-radius/) | ✅ |
 | [Kovalev's conjecture](results/kovalev-hardy-duality/) | ⬜ |
+| [Coffey–Smith conjecture](results/coffey-smith/) | ⬜ |
+| [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ |
 | [Han–Sabag–Kostina–Hassibi's conjecture](results/han-sabag-kostina-hassibi/) | ✅ |
+| [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/) | ⬜ |
 | [Perron root of permanental compounds](results/perron-root-permanental-compounds/) | ⬜ |
+| [Tom–Vailaya’s weighted trace conjecture](results/tom-vailaya-weighted-trace/) | ⬜ |
 | [Sagan–Swanson conjecture](results/sagan-swanson-normality/) | ⬜ |
+| [Rowland–Sistos Barrón conjecture](results/rowland-sistos-barron/) | ⬜ |
 | [Liu–Zhu packing and Natalchenko–Sagdeev covering](results/symmetric-four-point-density/) | ✅ |
 | [Sonntag–Teichert conjecture](results/sonntag-teichert/) | ✅ |
 | [Two-difference Motzkin density](results/two-difference-motzkin/) | ✅ |
@@ -50,6 +46,10 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Simon's stable-infimum conjecture](results/simon-stable-infimum/) | ⬜ |
 | [Ferreira–Simon's stochastic-order conjecture](results/ferreira-simon-stochastic/) | ⬜ |
 | [Novelli–Thibon's conjecture](results/novelli-thibon/) | ⬜ |
+| [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ⬜ |
+| [Wang–Yang's conjecture](results/wang-yang/) | ⬜ |
+| [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ⬜ |
+| [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ⬜ |
 | [Bernardi–Morales's delta-process conjecture](results/bernardi-morales-delta/) | ✅ |
 | [Gilmore's crossing–nesting conjecture](results/gilmore-crossing-nesting/) | ✅ |
 | [Mazák–Zrubák conjecture on complete graphs minus an edge](results/circular-index-complete-minus-edge/) | ⬜ |

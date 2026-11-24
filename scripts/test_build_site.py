@@ -24,7 +24,7 @@ class StatusChecks(unittest.TestCase):
 | --- | --- | --- |
 | L-solitaire | Complete | Stated result. |
 ''' + rows),
-            'README.md': doc('README.md', '''| Problem | Lean |
+            'README.md': doc('README.md', '''| Problem | Lean verification status |
 | --- | --- |
 | [Solitaire](results/l-solitaire-limit-shapes/) | ✅ |
 '''),
