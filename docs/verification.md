@@ -1,5 +1,16 @@
 # Verification
 
+## Steinerberger’s quantitative Feldheim-tail conjecture
+
+The [dedicated workflow](https://github.com/1337isnot1337/solved-conjectures/actions/workflows/lean-steinerberger-feldheim.yml) rebuilds the exact four-module closure, audits all owned declarations including serialized private declarations, and replays every object with the pinned stock checker. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted transitively. From a checkout with the pinned Mathlib cache, run:
+
+```bash
+cd lean
+lake env python3 ../scripts/verify_steinerberger_feldheim.py
+```
+
+The runner freezes and rechecks source, verifier, and object hashes and writes a receipt and complete logs under `.candidate-artifacts/steinerberger-feldheim/`. The [published receipt](../results/steinerberger-feldheim-tail/verification/receipt.json) records the checked snapshot. The four modules are also registered in `Conjectures.lean`, `ProofAudit.lean`, and `scripts/verify_lean.sh`; the scoped receipt does not claim the repository-wide gate or hosted CI. [Statement review](../results/steinerberger-feldheim-tail/LEAN_REVIEW.md) · [Proof correspondence](../results/steinerberger-feldheim-tail/FORMALIZATION.md).
+
 ## Complex BSS separation research
 
 [Research receipts and replay instructions](https://github.com/1337isnot1337/solved-conjectures/blob/research/docs/verification.md#complex-bss-separation-research). Check out `research` before running the research scripts.

@@ -1,3 +1,7 @@
+import Conjectures.SteinerbergerFeldheimAnalysis
+import Conjectures.SteinerbergerFeldheimLaw
+import Conjectures.SteinerbergerFeldheimJoint
+import Conjectures.SteinerbergerFeldheim
 import Conjectures.ChenKhareSahiOrthogonalityData
 import Conjectures.ChenKhareSahiOrthogonalityTransition
 import Conjectures.ChenKhareSahiOrthogonalityGram

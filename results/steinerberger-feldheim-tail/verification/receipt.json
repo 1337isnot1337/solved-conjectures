@@ -1,0 +1,179 @@
+{
+  "scope": "Both original existential quantitative Feldheim-tail conjectures, one common law",
+  "status": "passed",
+  "entry": "results/steinerberger-feldheim-tail/",
+  "documented_proof_commit": "6a8c0b0ac8c5a903405782b0a0df03c9ad78cdc6",
+  "source_sha256": {
+    "Conjectures/SteinerbergerFeldheimAnalysis.lean": "0d81c9abf672c493920d756eacdaaee9c4a2fee0b3133fcec3605f7e8921ad2d",
+    "Conjectures/SteinerbergerFeldheimLaw.lean": "8665e86225ca17431a5709b64857f368b2c03709dfa7bdb9e8c8a55fe3a53a6d",
+    "Conjectures/SteinerbergerFeldheimJoint.lean": "b2ddc78725e90ed799a56a5b5f12a65025ec34d48f6797edd6a70e21c19580e3",
+    "Conjectures/SteinerbergerFeldheim.lean": "e6a59a626f6b65f5f94aaba9a6c57f12be52f2ad7c6ee09d38852e5d93b735e4"
+  },
+  "project_modules": [
+    "Conjectures.SteinerbergerFeldheimAnalysis",
+    "Conjectures.SteinerbergerFeldheimLaw",
+    "Conjectures.SteinerbergerFeldheimJoint",
+    "Conjectures.SteinerbergerFeldheim"
+  ],
+  "required_theorems": [
+    "Conjectures.SteinerbergerFeldheim.tailIntegral_le",
+    "Conjectures.SteinerbergerFeldheim.law_univ",
+    "Conjectures.SteinerbergerFeldheim.law_absolutelyContinuous",
+    "Conjectures.SteinerbergerFeldheim.law_unbounded",
+    "Conjectures.SteinerbergerFeldheim.law_integrable_id",
+    "Conjectures.SteinerbergerFeldheim.law_mean",
+    "Conjectures.SteinerbergerFeldheim.median_lower_half",
+    "Conjectures.SteinerbergerFeldheim.median_upper_half",
+    "Conjectures.SteinerbergerFeldheim.eventRatio_eq",
+    "Conjectures.SteinerbergerFeldheim.coordinates_independent",
+    "Conjectures.SteinerbergerFeldheim.coordinates_identically_distributed",
+    "Conjectures.SteinerbergerFeldheim.law_median_unique",
+    "Conjectures.SteinerbergerFeldheim.law_not_compactly_supported",
+    "Conjectures.SteinerbergerFeldheim.median_bound_fails_for_every_median",
+    "Conjectures.SteinerbergerFeldheim.mean_bound_fails",
+    "Conjectures.SteinerbergerFeldheim.medianGuess_false",
+    "Conjectures.SteinerbergerFeldheim.meanGuess_false",
+    "Conjectures.SteinerbergerFeldheim.counterexample"
+  ],
+  "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "leanchecker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+  "verification_script_sha256": "5748f82f96d25e5b10e90a7665d16c87c57f93934a37afa761c4e00f1a60123e",
+  "control_sha256": {
+    "scripts/verify_steinerberger_feldheim.py": "5748f82f96d25e5b10e90a7665d16c87c57f93934a37afa761c4e00f1a60123e",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/replay_lean_parallel.py": "d72394ce6e83598eb2abf2c9e11962bbeef2c0693dc06f33994ebd79aedd4225",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089"
+  },
+  "steps": [
+    {
+      "label": "version",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.118,
+      "log_sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a"
+    },
+    {
+      "label": "Conjectures.SteinerbergerFeldheimAnalysis.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/steinerberger-publication/.candidate-artifacts/steinerberger-feldheim/lib/lean/Conjectures/SteinerbergerFeldheimAnalysis.olean",
+        "Conjectures/SteinerbergerFeldheimAnalysis.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.904,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.SteinerbergerFeldheimLaw.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/steinerberger-publication/.candidate-artifacts/steinerberger-feldheim/lib/lean/Conjectures/SteinerbergerFeldheimLaw.olean",
+        "Conjectures/SteinerbergerFeldheimLaw.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.796,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.SteinerbergerFeldheimJoint.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/steinerberger-publication/.candidate-artifacts/steinerberger-feldheim/lib/lean/Conjectures/SteinerbergerFeldheimJoint.olean",
+        "Conjectures/SteinerbergerFeldheimJoint.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.706,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "Conjectures.SteinerbergerFeldheim.source",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/cinna-lean-162051/steinerberger-publication/.candidate-artifacts/steinerberger-feldheim/lib/lean/Conjectures/SteinerbergerFeldheim.olean",
+        "Conjectures/SteinerbergerFeldheim.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 72.586,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "all-owned-audit",
+      "command": [
+        "/workspace/scratch/e963d2f60a75/toolchain/lean-4.35.0-linux/bin/lean",
+        "-j1",
+        "-M4500",
+        "-DwarningAsError=true",
+        "/tmp/cinna-lean-162051/steinerberger-publication/.candidate-artifacts/steinerberger-feldheim/AllOwnedAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 246.706,
+      "log_sha256": "c168c83a00a7742b61a42707cebaeacd3ac8407eb417e2d43a1ae23543f4b366"
+    },
+    {
+      "label": "kernel",
+      "command": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "-eL",
+        "leanchecker",
+        "-v",
+        "Conjectures"
+      ],
+      "exit_code": 0,
+      "seconds": 12.654,
+      "log_sha256": "aaa475dffe972a8c00a631f4d3e1136996e9fc2a3fd5c243988518c9a939f1e4"
+    }
+  ],
+  "repository_wide_gate_claimed": false,
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "exact_kernel_replay_set": [
+    "Conjectures.SteinerbergerFeldheimAnalysis",
+    "Conjectures.SteinerbergerFeldheimLaw",
+    "Conjectures.SteinerbergerFeldheimJoint",
+    "Conjectures.SteinerbergerFeldheim"
+  ],
+  "object_sha256": {
+    "Conjectures/SteinerbergerFeldheim.olean": "5f5aa598083b39884c88ec4db9255169eb186929b8d88ff658459161a69eb52b",
+    "Conjectures/SteinerbergerFeldheimAnalysis.olean": "c0b8ab526d8bca959d3834a6fc18c2fdae6a9b96c9ed9948ea4cc3f11c677547",
+    "Conjectures/SteinerbergerFeldheimJoint.olean": "ac8b6bd5950e5d5b64c0c54e7c88fb979b36b6dc18e81b67f1e3c2d3cad99271",
+    "Conjectures/SteinerbergerFeldheimLaw.olean": "829d38a45ff7504bc9c5223f541dedba859910169a4450409f15a366d4ab7587"
+  },
+  "audit_source_sha256": "682b7776ad2fffabef680b30280c9ca50b8eb5d9737a55ab4ad9042cf4255f25",
+  "declaration_inventory_sha256": "b09ae5aa33d50157092f8a4fe8166d9bb7099e358153a3f63ecbc7e8e68358fe",
+  "audit_summary": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 125,
+    "modules": 4,
+    "private_declarations": 0,
+    "raw_declarations": 125,
+    "required": 18,
+    "tag": "passed",
+    "theorems": 109
+  }
+}

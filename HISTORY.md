@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24: Steinerberger’s quantitative Feldheim-tail conjecture
+
+The existing [two-clause disproof](results/steinerberger-feldheim-tail/) is now fully formalized for the original absolutely continuous nonnegative unbounded-law hypotheses. The proof constructs the probability measure and its iid product, proves the literal joint-event ratio, identifies the actual finite expectation and unique median, and refutes both bounds at every positive threshold. Four fresh strict source builds, the complete owned-declaration axiom audit, and exact stock-kernel replay passed; [scope and independent review](results/steinerberger-feldheim-tail/LEAN_REVIEW.md) distinguish the unformalized smoothing and rate supplements. The result keeps its original catalogue position and count.
+
 ## 2026-11-24: Compact ranked results index
 
 The README lists two side-by-side problem/status pairs, with approximate competition ranks and ties. The established significance order, result links, attribution markers, and Lean statuses are preserved. The site builder reads the index down the left half and then the right half; the README checker and regression tests enforce the same layout and rank order.

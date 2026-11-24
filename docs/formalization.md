@@ -1,5 +1,9 @@
 # Full formalization campaign
 
+## Steinerberger’s quantitative Feldheim-tail conjecture
+
+The [complete Lean counterexample](../lean/Conjectures/SteinerbergerFeldheim.lean) refutes both original existential inequalities from arXiv:1801.00663v3 §1.3 for every positive real threshold. The four-module development includes an actual absolutely continuous probability law, iid coordinate maps, a positive joint-event denominator, its finite actual expectation, and a unique median. The [source review](../results/steinerberger-feldheim-tail/LEAN_REVIEW.md) checks the original quantifiers and constants. The [scoped receipt](../results/steinerberger-feldheim-tail/verification/receipt.json) records fresh strict builds, all-owned axiom checks, and exact stock-kernel replay. The smoothing and rate supplements are outside the formalization.
+
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
 The [framework paper's Conjecture 4.18](https://arxiv.org/pdf/2001.09122v3) is fully checked by `AgnosticVC.steinkeZakynthinou_framework_conjecture418`. Its distribution-free CMI takes the supremum over fixed paired pools, and both guarantees hold with common constant $`19{,}712`$ for every positive sample size. [Lean source](../lean/Conjectures/AgnosticVC/FixedPairing.lean)
