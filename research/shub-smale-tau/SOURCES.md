@@ -128,3 +128,10 @@ The matrix-power, rational-level and fold restrictions are not cited as known bo
 ## Explicit square-chain construction
 
 - Andrew Bremner, *When Can (((X²−P)²−Q)²−R)²−S² Split into Linear Factors?*, Experimental Mathematics 17(4) (2008), 385–390, DOI [10.1080/10586458.2008.10128879](https://doi.org/10.1080/10586458.2008.10128879), [primary article text](https://scispace.com/pdf/when-can-x-2-p-2-q-2-r-2-s-2-split-into-linear-factors-3nneuzjm0b.pdf). Equations (2–2), (2–7), the inverse map following (2–7), and the paired transformation on printed page 388 supply the first degree-16 family. SQUARE_CHAIN_EXTENSION.md reconstructs its charged constants and proves the additional rational-prefix obstruction with explicit exact certificates. The paper's infinite families have fixed degree; they are not unbounded-root counterexamples to tau. No claim of priority is made for the source's construction.
+
+
+## Second-family scope and source refresh
+
+- Bremner, the 2008 primary article cited above, Section 3, printed pages 389–390, supplies the second plane cubic and its fixed-degree root representatives. SQUARE_CHAIN_SECOND.md derives an explicit birational map and proves its additional prefix-collision statements. The first and second families are not asserted to exhaust rational square chains.
+- [SOURCE_REFRESH_2026.md](SOURCE_REFRESH_2026.md) records the inspected 2026 factorization, border-factor, dense-GCD and ideal-extraction statements with theorem numbers and versioned primary links. It also inspects the actual TeX and Lean scope of a recent tau-related preprint. No checked source supplies the unrestricted root bound or a constant-free, degree-independent extraction from all consecutive-root multiples.
+- [SELECTION_SCOPE.md](SELECTION_SCOPE.md) supplies primary references for the factorial/primorial powering relation, including Cheng's 25 May 2004 author version, Lemma 1, and Markström, Integers 15 (2015), A6. Its quantitative difference-group comparison cites the inspected Alon–Solymosi author version, Theorems 1 and 11. The new implications are proved directly in the note.

@@ -924,6 +924,16 @@ def test_bremner_certificate():
     run_checks()
 
 
+def test_bremner_cross_certificate():
+    from bremner_cross_checks import run_checks
+    run_checks()
+
+
+def test_bremner_second_self_certificate():
+    from bremner_second_self_checks import run_checks
+    run_checks()
+
+
 def main():
     test_carries_and_products()
     test_all_cuts()
@@ -948,7 +958,9 @@ def main():
     test_root_selection_obstructions()
     test_truncated_collision_energy()
     test_bremner_certificate()
-    print('All finite exact checks passed. No tau bound or BSS separation was verified.')
+    test_bremner_cross_certificate()
+    test_bremner_second_self_certificate()
+    print('All exact checks and certificate identities passed. No tau bound or BSS separation was verified.')
 
 
 if __name__ == '__main__':

@@ -45,6 +45,8 @@ Roots are distinct, with no multiplicity count. Arbitrary free integer constants
 | Exact Frobenius selection and finite precision | A selected permutation has a rational polynomial representative exactly when it is central in the Galois group; an explicit quadratic Newton lift never equals its limit at a finite stage. |
 | Dense integer roots in variable square chains | More than half the degree forces prime divisibility and even valuations; more than three quarters forces valuation doubling. A six-root degree-eight example makes the latter threshold strict. |
 | Exact obstruction to extending the first Bremner family | An explicit rational quotient and resultant exclude every nondegenerate rational prefix collision within the displayed first elliptic family and its Hadamard transforms. Other families and unbounded depth remain unresolved. |
+| Cross-family and ordinary second-family prefix lifts | Exact resultants exclude cross-family collisions, including Hadamard variants, and ordinary self-collisions in the second displayed family. The complementary second-family pairing remains unresolved. |
+| Missing-prime and difference-group selection | A polynomial bound for the least prime not dividing a short nonzero constant is equivalent to a positive-power ultimate-factorial lower bound. The stated S-unit reduction remains exponential in group rank. |
 | Rational torsion in a polynomial elliptic family | Mazur's theorem gives at most 262δ rational roots of a nonzero specialized division polynomial, independent of its index, and a fixed-cost bounded-index root cover. This is a consequence of existing theorems. |
 
 The general quantitative bounds recorded here are consequences of existing theorems and algorithms:
@@ -77,6 +79,9 @@ The consecutive-root minimum is also equivalent up to linear circuit overhead to
 - [HARMONIC_FAMILIES.md](HARMONIC_FAMILIES.md): reciprocal fixed-point averages for binomial products and integer quadratic iterates, an intersective-iteration failure, and a classical Schur test of addition rules.
 - [DENSE_SQUARE_CHAINS.md](DENSE_SQUARE_CHAINS.md): prime divisibility with an unknown cofactor, precise root-density thresholds, and the distinction between coefficient bit length and circuit length.
 - [SQUARE_CHAIN_EXTENSION.md](SQUARE_CHAIN_EXTENSION.md): the charged Bremner construction, exact prefix-extension equations, and a complete rational-collision obstruction for its first displayed family.
+- [SQUARE_CHAIN_SECOND.md](SQUARE_CHAIN_SECOND.md): an explicit second-family map, common-rotation restriction and complete certificates for the stated cross-family and ordinary self-prefix obstructions.
+- [SELECTION_SCOPE.md](SELECTION_SCOPE.md): the precise strength of a missing-prime rule and the quantitative limitation of difference-group ranks.
+- [SOURCE_REFRESH_2026.md](SOURCE_REFRESH_2026.md): recent factor, GCD and radical results with their input-degree and constant-model dependencies.
 - [ELLIPTIC_SPECIALIZATIONS.md](ELLIPTIC_SPECIALIZATIONS.md): the rational-torsion root bound and a root cover whose additional circuit cost is independent of the multiplication index.
 - [NORMALIZATION.md](NORMALIZATION.md): fully charged rational-to-integer and monic transformations, with arbitrary intermediate cancellation.
 - [PRIME_AVERAGES.md](PRIME_AVERAGES.md): exact integer and projective-rational sieve inequalities, harmonic averages and a multiquadratic local-cover test.
@@ -108,7 +113,7 @@ Run from the repository root:
 python3 research/shub-smale-tau/verify.py
 ```
 
-The verifier uses the Python standard library and exact arithmetic. It checks finite instances of identities and counterexamples. The general statements rest on their written proofs. No Lean verification or full-conjecture verification is claimed.
+The verifier uses the Python standard library and exact arithmetic. Most checks cover finite instances of identities and counterexamples. The square-chain resultant certificates additionally prove complete algebraic identities: each has a proved degree bound and is checked at more distinct points than that degree. Their rational-root exclusions are exhaustive finite-field checks. These certificates support the stated restricted theorems; they do not verify the full conjecture. No Lean verification is claimed.
 
 ## Missing result
 
