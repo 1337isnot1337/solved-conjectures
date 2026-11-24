@@ -1,5 +1,19 @@
 # Full formalization campaign
 
+## Gawron–Miska–Ulas’s Thue–Morse valuation conjecture
+
+The [Lean proof](../lean/Conjectures/ThueMorseValuation.lean) formalizes the
+disproof of the general clause of Conjecture 5.2. It verifies the exponent-17
+counterexample and both valuations in the uniform family for every k ≥ 11,
+with the indices in the same aligned block. The coefficient model is the
+stabilized finite product. The exact modular certificates use carry-free
+integer packing and ordinary kernel reduction.
+
+All three modules passed strict source compilation and pinned stock-kernel
+replay. The all-owned audit checked 123 declarations, including 96 private
+declarations, and eight required endpoints. See the
+[local receipt](verification/lean-thue-morse-valuation-20261124/receipt.json).
+
 ## Gravgaard–Lee’s large-digit Lüroth sumset
 
 [Lean proves Conjecture 2.12 and the stronger interval in the written proof](../lean/Conjectures/GravgaardLeeLargeLuroth.lean).
