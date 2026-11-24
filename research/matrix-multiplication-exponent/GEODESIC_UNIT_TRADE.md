@@ -357,3 +357,25 @@ The equivalent infinitesimal statement, including its pointwise
 quantifiers and a scalar counterexample to a linear error estimate,
 is in
 [INFINITESIMAL_GEODESIC_UNCROSSING.md](INFINITESIMAL_GEODESIC_UNCROSSING.md).
+
+
+## 6. Explicit D tags and sufficient partial outputs
+
+[TAGGED_OPERATOR_TRADE_TRANSFER.md](TAGGED_OPERATOR_TRADE_TRANSFER.md)
+adds the source sector h to D by an explicit path-flag separator.
+It permits a larger coefficient identity with D operators indexed by
+h and c, at vanishing logarithmic flag cost on the geodesic face.
+The tagged source's exact restrictions are equivalent to the
+overlapping product-subspace condition in
+[TAGGED_GEODESIC_SUBSPACE_COVER.md](TAGGED_GEODESIC_SUBSPACE_COVER.md).
+
+The full copied target can also be weakened in two proved ways.
+A support-correct output of density rho has value at least rho times
+the full target, by [the density lemma](PARTIAL_HYPERGRAPH_DENSITY.md).
+A rank-k map at one party of dimension d retains value at least k/d
+times the full target, by [the projection lemma](SINGLE_PARTY_PROJECTION_TRADE.md).
+Fractions p^{-o(1)} therefore preserve the desired leading inequality.
+Both proofs take tensor powers with the finite flag size fixed first;
+neither imposes a growth bound on that flag. Off-support terms must
+still vanish, and the projection statement is only for one party.
+These reductions do not provide the required construction.

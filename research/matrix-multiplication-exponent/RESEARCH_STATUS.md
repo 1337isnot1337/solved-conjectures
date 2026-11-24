@@ -1,8 +1,8 @@
 # Target 07: the complex matrix multiplication exponent
 
-Research status, 23 November 2026 (America/Chicago): **unresolved in this project**. No proof of $\omega_{\mathbb C}=2$ and no legitimate spectral point with perimeter greater than two has been obtained. The notes below contain proved reductions, independently checked obstructions, and an audit of a public exponent-two claim. They do not turn the conjecture into a solved result.
+Research status, 24 November 2026 (UTC): **unresolved in this project**. No proof of $\omega_{\mathbb C}=2$ and no legitimate spectral point with perimeter greater than two has been obtained. The notes below contain proved reductions, independently checked obstructions, and an audit of a public exponent-two claim. They do not turn the conjecture into a solved result.
 
-Coordination uses [issue #250](https://github.com/1337isnot1337/solved-conjectures/issues/250). The reviewed checkpoints [PR #258](https://github.com/1337isnot1337/solved-conjectures/pull/258), [PR #262](https://github.com/1337isnot1337/solved-conjectures/pull/262), and [PR #269](https://github.com/1337isnot1337/solved-conjectures/pull/269) are merged into `main`. The further full-tensor and weighted-support checkpoints [PR #271](https://github.com/1337isnot1337/solved-conjectures/pull/271) and [PR #274](https://github.com/1337isnot1337/solved-conjectures/pull/274) are also merged. The earlier scalar-model construction is credited to the concurrent work in [PR #254](https://github.com/1337isnot1337/solved-conjectures/pull/254); this work does not replace that PR's README or branch.
+Coordination uses [issue #250](https://github.com/1337isnot1337/solved-conjectures/issues/250). The campaign and its reviewed checkpoints are preserved on the permanent `research` branch. Earlier PRs initially merged into the former mixed-purpose `main`; the [branch migration ledger](../../docs/branch-migration.md) preserves those commits and review records after `main` became publication-only. The earlier scalar-model construction is credited to [PR #254](https://github.com/1337isnot1337/solved-conjectures/pull/254). It remains part of the research history, and no solved-result entry is claimed.
 
 ## Exact target and significance
 
@@ -412,6 +412,49 @@ The 784-column exact replay checks a separate rational Weyl identity
 on the finite retained spaces. It checks the denominator/projection
 mechanism, not the unresolved geodesic trade. No matrix multiplication
 bound or new Lean verification follows from this checkpoint.
+
+## Tagged sources and weaker sufficient outputs
+
+[TAGGED_OPERATOR_TRADE_TRANSFER.md](TAGGED_OPERATOR_TRADE_TRANSFER.md)
+shows how the existing polynomial separator explicitly supplies the
+shared source label at D. The resulting operator identity may depend
+on both h and c at D; the extra path-flag factor tends to one on the
+geodesic face. This enlarges the construction criterion without
+changing the original untagged theorem or silently adding an input.
+
+[TAGGED_GEODESIC_SUBSPACE_COVER.md](TAGGED_GEODESIC_SUBSPACE_COVER.md)
+gives an exact equivalent formulation using overlapping product
+subspaces of dimensions at most N, N, and Q. The D slices are
+independent linear combinations of those subspaces. It also specifies
+an exact kernel calculation for the largest support-correct partial
+output obtainable from fixed A/B/C maps.
+
+Two proved relaxations reduce what an eventual construction must
+produce. [PARTIAL_HYPERGRAPH_DENSITY.md](PARTIAL_HYPERGRAPH_DENSITY.md)
+shows that a partial target of density rho has spectral value at least
+rho times the full target's value. The proof covers tensor powers
+before taking limits, so it imposes no growth bound on the neutral
+flag. [SINGLE_PARTY_PROJECTION_TRADE.md](SINGLE_PARTY_PROJECTION_TRADE.md)
+gives an exact orbit-cover construction for a rank-k linear map at one
+party of dimension d, and the lower bound k/d times the full target's
+value. It does not allow arbitrary incompatible projections at two
+parties.
+
+Thus a support-correct partial output of density p^{-o(1)}, or a
+single-party compression retaining a p^{-o(1)} fraction of dimension,
+would suffice with the stated subpolynomial source and flag losses.
+No such asymptotic construction is proved. Numerical spans have not
+been substituted for exact kernel or coefficient certificates.
+
+[INDEPENDENT_WIRE_AMPLIFICATION_FAILURE.md](INDEPENDENT_WIRE_AMPLIFICATION_FAILURE.md)
+preserves a different failed attack. Its projective cover functional
+has the correct values separately on old tensors and an independent
+new matrix wire, but cannot retain their product value on all powers
+of MM_2 times that wire. A.5 pinning would otherwise combine a
+known equilateral quantum wire triangle with a wire of exponent one,
+contradicting interval rigidity. The finite cover saving exists
+nonconstructively; its size and coefficients are not exhibited.
+This is not a new bound on the matrix multiplication exponent.
 
 ## Remaining mathematical obligation
 
