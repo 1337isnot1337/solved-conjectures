@@ -23,6 +23,8 @@
   "stern-half-plane": ["Stern polynomials", "Stern diatomic sequence", "Dilcher Kidwai Tomkins", "Altizio", "zero free half-plane", "continuant"],
   "chern-fu-lin-joint-eulerian": ["Chern Fu Lin", "Burstein", "Eulerian equidistribution", "inverse descents", "pattern avoiding permutations"],
   "dukes-revstack": ["Mark Dukes", "revstack", "Eulerian polynomials", "interlacing", "revstack sort", "descent polynomials"],
+  "sagan-swanson-q-stirling-normality": ["Bruce Sagan", "Joshua Swanson", "q-Stirling numbers", "normality", "Type A", "Type B", "central limit theorem", "local central limit theorem", "geometric occupancies"],
+  "defant-engen-miller-lassalle": ["Defant Engen Miller", "Lassalle numbers", "uniquely sorted permutations", "West stack-sort", "Bessel function", "log-concavity", "Bernstein coefficients"],
   "juhnke-lattice-paths": ["Martina Juhnke", "lattice paths", "log-concavity", "arbitrary-length steps", "Oberwolfach", "binomial transform"],
   "chow-type-d": ["Chak-On Chow", "type D Eulerian polynomials", "consecutive interlacing", "Coxeter group", "logistic derivatives"],
   "athanasiadis-chapoton-polar-duality": ["Athanasiadis Chapoton", "Luo polar preorder", "preorder polytopes", "Ehrhart duality", "Stanley transfer"],

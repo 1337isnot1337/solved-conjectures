@@ -83,6 +83,8 @@ STATUS_LABEL_SLUGS = {
     "Dilcher–Kidwai–Tomkins’s Stern-polynomial conjecture": "stern-half-plane",
     "Chern–Fu–Lin’s joint Eulerian equidistribution conjecture": "chern-fu-lin-joint-eulerian",
     "Dukes’s revstack interlacing conjecture": "dukes-revstack",
+    "Sagan–Swanson’s q-Stirling normality conjecture": "sagan-swanson-q-stirling-normality",
+    "Defant–Engen–Miller’s Lassalle refinement conjecture": "defant-engen-miller-lassalle",
     "Juhnke’s arbitrary-step lattice-path log-concavity conjecture": "juhnke-lattice-paths",
     "Chow’s type-D Eulerian interlacing conjecture": "chow-type-d",
     "Athanasiadis–Chapoton’s polar preorder duality conjecture": "athanasiadis-chapoton-polar-duality",
