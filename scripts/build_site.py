@@ -59,6 +59,11 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Nuttall's conjecture": "nuttall-cumulants",
+    "Coffey–Smith conjecture": "coffey-smith",
+    "Chaudhary–Khmiri–Mazhouda conjecture": "chaudhary-khmiri-mazhouda",
+    "Merlini–Sala–Sala conjecture": "merlini-sala-sala",
+    "Wang–Yang's conjecture": "wang-yang",
     "Csordas–Vishnyakova conjecture": "csordas-vishnyakova",
     "Cardon–Forgács–Piotrowski–Sorensen–White conjecture": "cardon-zero-sector",
     "Wagner's Laguerre-operator conjecture": "wagner-laguerre-operator",

@@ -6,10 +6,15 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 [Search the collection](https://1337isnot1337.github.io/solved-conjectures/) · [Full catalogue](CONTENTS.md) · [Verification](docs/verification.md) · [Lean status](docs/lean-status.md) · [History](HISTORY.md)
 
-## Results 
+## Results
 
 | Problem | Verification |
 | :--- | :---: |
+| [Nuttall's conjecture](results/nuttall-cumulants/) | ⬜ |
+| [Coffey–Smith conjecture](results/coffey-smith/) | ⬜ |
+| [Chaudhary–Khmiri–Mazhouda conjecture](results/chaudhary-khmiri-mazhouda/) | ⬜ |
+| [Merlini–Sala–Sala conjecture](results/merlini-sala-sala/) | ⬜ |
+| [Wang–Yang's conjecture](results/wang-yang/) | ⬜ |
 | [Csordas–Vishnyakova conjecture](results/csordas-vishnyakova/) | ⬜ |
 | [Cardon–Forgács–Piotrowski–Sorensen–White conjecture](results/cardon-zero-sector/) | ⬜ |
 | [Wagner's Laguerre-operator conjecture](results/wagner-laguerre-operator/) | ⬜ |

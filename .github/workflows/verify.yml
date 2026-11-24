@@ -65,6 +65,8 @@ jobs:
         run: |
           python3 results/caiolo-ferroni-hoster/verify_counterexample.py
           python3 results/hkm-ehrhart/verify.py
+      - name: Replay automorphic Li-coefficient interval certificate
+        run: python3 results/chaudhary-khmiri-mazhouda/verify.py
       - name: Check extremal word pairs in Litt's game
         run: python results/ekhad-zeilberger-unfair-bet/verify.py
       - name: Check the Kauers–Koutschan recurrence
