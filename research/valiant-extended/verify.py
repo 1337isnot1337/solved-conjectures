@@ -81,6 +81,41 @@ def shared_matrix_check():
     return ranks
 
 
+def diagonal_check():
+    # The four classes are indexed by two low bits of a six-cube vertex.
+    # Distinct original cube edges remain distinct parallel quotient wires.
+    edges = [(a % 4, (a ^ (1 << bit)) % 4)
+             for a in range(64) for bit in range(6) if a < (a ^ (1 << bit))]
+    remaining = set(range(len(edges)))
+    trees = []
+    for _ in range(2):  # ceil(64 / (4*4*3))
+        reached = {0}
+        tree = []
+        while len(reached) < 4:
+            edge = next(e for e in sorted(remaining)
+                        if (edges[e][0] in reached) != (edges[e][1] in reached))
+            reached.update(edges[edge])
+            remaining.remove(edge)
+            tree.append(edge)
+        trees.append(tree)
+    coordinates = {}
+    used = trees[0] + trees[1]
+    for bits in product((0, 1), repeat=len(used)):
+        labels = dict(zip(used, bits))
+        output = []
+        for party in range(4):
+            local = [{labels[e] for e in tree if party in edges[e]}
+                     for tree in trees]
+            if any(len(values) != 1 for values in local):
+                break
+            output.append(tuple(next(iter(values)) for values in local))
+        if len(output) == 4:
+            key = tuple(output)
+            coordinates[key] = coordinates.get(key, 0) + 1
+    assert coordinates == {(word,)*4: 1 for word in product((0, 1), repeat=2)}
+    return len(used), len(coordinates)
+
+
 def logsum_upper(exponents):
     # Integer upper bound on log2(sum(2**e)), without forming these numbers.
     return max(exponents) + (len(exponents)-1).bit_length()
@@ -128,6 +163,7 @@ def cut_check(base_log, alpha):
 if __name__ == "__main__":
     print("Cube balanced cuts and representative cuts:", graph_check())
     print("Shared matrix-product prefix ranks:", shared_matrix_check())
+    print("Quotient tree wires and surviving diagonal entries:", diagonal_check())
     for exponent in (5, 12, 30, 55):
         alpha = 2**exponent
         depth = cut_check(2**50, alpha)
