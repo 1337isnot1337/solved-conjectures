@@ -1,0 +1,582 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-24T17:03:51.088854+00:00",
+  "finished_at": "2026-11-24T17:06:28.691021+00:00",
+  "root": "Conjectures.JohnsonPfaffian",
+  "project_modules": [
+    "Conjectures.GilmoreCrossingNesting",
+    "Conjectures.JohnsonPfaffian",
+    "Conjectures.JohnsonPfaffianAllMatching",
+    "Conjectures.JohnsonPfaffianCircular",
+    "Conjectures.JohnsonPfaffianCircularAdditive",
+    "Conjectures.JohnsonPfaffianCircularUncrossing",
+    "Conjectures.JohnsonPfaffianCoefficients",
+    "Conjectures.JohnsonPfaffianEndpoint",
+    "Conjectures.JohnsonPfaffianExpansion",
+    "Conjectures.JohnsonPfaffianFour",
+    "Conjectures.JohnsonPfaffianIntervals",
+    "Conjectures.JohnsonPfaffianKernel",
+    "Conjectures.JohnsonPfaffianMatching",
+    "Conjectures.JohnsonPfaffianNoncrossing",
+    "Conjectures.JohnsonPfaffianOuter",
+    "Conjectures.JohnsonPfaffianParity",
+    "Conjectures.JohnsonPfaffianPositive",
+    "Conjectures.JohnsonPfaffianPrefix",
+    "Conjectures.JohnsonPfaffianProduct",
+    "Conjectures.JohnsonPfaffianResidual",
+    "Conjectures.JohnsonPfaffianRestriction",
+    "Conjectures.JohnsonPfaffianRotation",
+    "Conjectures.JohnsonPfaffianScaling",
+    "Conjectures.JohnsonPfaffianSmall",
+    "Conjectures.JohnsonPfaffianSource",
+    "Conjectures.JohnsonPfaffianSparse",
+    "Conjectures.JohnsonPfaffianSummation",
+    "Conjectures.JohnsonPfaffianSwap",
+    "Conjectures.JohnsonPfaffianTelescoping",
+    "Conjectures.JohnsonPfaffianUncross"
+  ],
+  "required_endpoints": [
+    "JohnsonPfaffian.johnson_conjecture",
+    "JohnsonPfaffian.johnson_conjecture_arbitrary_matching",
+    "JohnsonPfaffian.johnson_conjecture_fin",
+    "JohnsonPfaffian.CircularData.matching_bound",
+    "JohnsonPfaffian.CircularData.endpoint_bound",
+    "JohnsonPfaffian.CircularData.noncrossing_bound",
+    "JohnsonPfaffian.exists_noncrossing_dominating",
+    "JohnsonPfaffian.sourceKernelData_weight"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/GilmoreCrossingNesting.lean": "f5f5237b8993b53234060a1a7bc9041ea7d3f45b02b5c42f9557ddd0d4e4fcc2",
+    "lean/Conjectures/JohnsonPfaffian.lean": "5dbf2b6d81d61058dbb550ff839173e978f8e9772d37f9f10f29e112d77639fc",
+    "lean/Conjectures/JohnsonPfaffianAllMatching.lean": "b53ea0c7fb312adc45931319b217d9b47cab25a3c8636637560a3a8fb13cf968",
+    "lean/Conjectures/JohnsonPfaffianCircular.lean": "b23217ea1fd7de0180d014a4e3a6fc89f2748bf3330daec27c077fce7fe23eca",
+    "lean/Conjectures/JohnsonPfaffianCircularAdditive.lean": "5b5b75ca7f20f762e8bb4fac870fa09842b7c8c4b4609f7899aa187bffb6e96b",
+    "lean/Conjectures/JohnsonPfaffianCircularUncrossing.lean": "78ab61e15917ee6947bab629f993343cbda8c7d6d2a7831867c8f567be0d6c3d",
+    "lean/Conjectures/JohnsonPfaffianCoefficients.lean": "c5fd1c0a4924a09002bdef88248baaccd4b72419986c905d40859f1a722ef0eb",
+    "lean/Conjectures/JohnsonPfaffianEndpoint.lean": "e57d04c162185a2186c221cd368baaee6384f7bf07a02c6532e0728f8c688057",
+    "lean/Conjectures/JohnsonPfaffianExpansion.lean": "a85151d91a2f239aad6d25a2e57bc6e72151f137fba4011b786b3682ebf8728a",
+    "lean/Conjectures/JohnsonPfaffianFour.lean": "95933e9915e5b9d1d71f62b3a41fc8652b72d8e5150c090402a0c2e5626cf8f4",
+    "lean/Conjectures/JohnsonPfaffianIntervals.lean": "20bc0d0d61171908f2a656afbca049be6c25a8cf04790c3b43751421e1ca320b",
+    "lean/Conjectures/JohnsonPfaffianKernel.lean": "29316a0c2541839391cc448d9e8cbdd36e3c139e41fa7e5625e2487bdc8a2fae",
+    "lean/Conjectures/JohnsonPfaffianMatching.lean": "fe524cbb28d49bd27b5c11e3284bdc4e5d4a02bd0c5b420b38448e02085f4faf",
+    "lean/Conjectures/JohnsonPfaffianNoncrossing.lean": "1ba7ad7905803936e7021459a0052d8340cfb07a8ec4cbe6adadb3b6978c8331",
+    "lean/Conjectures/JohnsonPfaffianOuter.lean": "d6636f53fdd933e5873e26ae60e316fba37bd94e835ddba91102e1c2186fbf1f",
+    "lean/Conjectures/JohnsonPfaffianParity.lean": "b3db2a27d3325c9545054bc1b005a30b3e7220fdc46ad6e2277d88a35343a448",
+    "lean/Conjectures/JohnsonPfaffianPositive.lean": "3bd01a03f058c049e1065a7c1092196bf25fe3c5e78d1de0d89e35d41d0f6738",
+    "lean/Conjectures/JohnsonPfaffianPrefix.lean": "a533f9dc7a8c2f662fc5964c927374e920aeb9d287f86f5539e9411a556f28cf",
+    "lean/Conjectures/JohnsonPfaffianProduct.lean": "b1d74cc4e7cde76fd8c65b75329bb038607f0cfb4f214bd66b8f7bb86c87650a",
+    "lean/Conjectures/JohnsonPfaffianResidual.lean": "60a76f646c4154b0633a0f4865a327fbf7ef6c9bd8f3b298970ba6873e540f87",
+    "lean/Conjectures/JohnsonPfaffianRestriction.lean": "ecb78105a9fc2caa132bb80f36f6170aad679789df2d64605721652cbbd3a93d",
+    "lean/Conjectures/JohnsonPfaffianRotation.lean": "884a4b232610ac8350f2f2837df2da7001848249c2d8061feaf8deaf477efee7",
+    "lean/Conjectures/JohnsonPfaffianScaling.lean": "012bb0b1c969078727ceb9a34eb60f4886548eae5849f2431cfb735f032d61bc",
+    "lean/Conjectures/JohnsonPfaffianSmall.lean": "37637bde3b88c341377f79a662b1e36c7a9d0c82c21ba1b90269b326fc9907d2",
+    "lean/Conjectures/JohnsonPfaffianSource.lean": "ea676ecbe5ce87f90e2fc7e38acfeaaf8cbdea3ec14c799aece9ae403eaf3d06",
+    "lean/Conjectures/JohnsonPfaffianSparse.lean": "797ac886d358d7353b29e233494de7e197556d73da519705458344723b85c401",
+    "lean/Conjectures/JohnsonPfaffianSummation.lean": "2c83e43b9538a4a5e597846087c79491dce01f13ab72fc980d0576d65dbda237",
+    "lean/Conjectures/JohnsonPfaffianSwap.lean": "497d1864115264f46f57735f4a16761bd1eecbfb9ed4b0a8fc478056689c8864",
+    "lean/Conjectures/JohnsonPfaffianTelescoping.lean": "aaa9fb56b6b6842bdfff8f02acce2ec50cbf5304391c679988740a68b9355871",
+    "lean/Conjectures/JohnsonPfaffianUncross.lean": "edb3103e4879165a44940869109e20da8db8246cf66f207875b0332c15d8d0a0"
+  },
+  "input_sha256": {
+    "lean/Conjectures/GilmoreCrossingNesting.lean": "f5f5237b8993b53234060a1a7bc9041ea7d3f45b02b5c42f9557ddd0d4e4fcc2",
+    "lean/Conjectures/JohnsonPfaffian.lean": "5dbf2b6d81d61058dbb550ff839173e978f8e9772d37f9f10f29e112d77639fc",
+    "lean/Conjectures/JohnsonPfaffianAllMatching.lean": "b53ea0c7fb312adc45931319b217d9b47cab25a3c8636637560a3a8fb13cf968",
+    "lean/Conjectures/JohnsonPfaffianCircular.lean": "b23217ea1fd7de0180d014a4e3a6fc89f2748bf3330daec27c077fce7fe23eca",
+    "lean/Conjectures/JohnsonPfaffianCircularAdditive.lean": "5b5b75ca7f20f762e8bb4fac870fa09842b7c8c4b4609f7899aa187bffb6e96b",
+    "lean/Conjectures/JohnsonPfaffianCircularUncrossing.lean": "78ab61e15917ee6947bab629f993343cbda8c7d6d2a7831867c8f567be0d6c3d",
+    "lean/Conjectures/JohnsonPfaffianCoefficients.lean": "c5fd1c0a4924a09002bdef88248baaccd4b72419986c905d40859f1a722ef0eb",
+    "lean/Conjectures/JohnsonPfaffianEndpoint.lean": "e57d04c162185a2186c221cd368baaee6384f7bf07a02c6532e0728f8c688057",
+    "lean/Conjectures/JohnsonPfaffianExpansion.lean": "a85151d91a2f239aad6d25a2e57bc6e72151f137fba4011b786b3682ebf8728a",
+    "lean/Conjectures/JohnsonPfaffianFour.lean": "95933e9915e5b9d1d71f62b3a41fc8652b72d8e5150c090402a0c2e5626cf8f4",
+    "lean/Conjectures/JohnsonPfaffianIntervals.lean": "20bc0d0d61171908f2a656afbca049be6c25a8cf04790c3b43751421e1ca320b",
+    "lean/Conjectures/JohnsonPfaffianKernel.lean": "29316a0c2541839391cc448d9e8cbdd36e3c139e41fa7e5625e2487bdc8a2fae",
+    "lean/Conjectures/JohnsonPfaffianMatching.lean": "fe524cbb28d49bd27b5c11e3284bdc4e5d4a02bd0c5b420b38448e02085f4faf",
+    "lean/Conjectures/JohnsonPfaffianNoncrossing.lean": "1ba7ad7905803936e7021459a0052d8340cfb07a8ec4cbe6adadb3b6978c8331",
+    "lean/Conjectures/JohnsonPfaffianOuter.lean": "d6636f53fdd933e5873e26ae60e316fba37bd94e835ddba91102e1c2186fbf1f",
+    "lean/Conjectures/JohnsonPfaffianParity.lean": "b3db2a27d3325c9545054bc1b005a30b3e7220fdc46ad6e2277d88a35343a448",
+    "lean/Conjectures/JohnsonPfaffianPositive.lean": "3bd01a03f058c049e1065a7c1092196bf25fe3c5e78d1de0d89e35d41d0f6738",
+    "lean/Conjectures/JohnsonPfaffianPrefix.lean": "a533f9dc7a8c2f662fc5964c927374e920aeb9d287f86f5539e9411a556f28cf",
+    "lean/Conjectures/JohnsonPfaffianProduct.lean": "b1d74cc4e7cde76fd8c65b75329bb038607f0cfb4f214bd66b8f7bb86c87650a",
+    "lean/Conjectures/JohnsonPfaffianResidual.lean": "60a76f646c4154b0633a0f4865a327fbf7ef6c9bd8f3b298970ba6873e540f87",
+    "lean/Conjectures/JohnsonPfaffianRestriction.lean": "ecb78105a9fc2caa132bb80f36f6170aad679789df2d64605721652cbbd3a93d",
+    "lean/Conjectures/JohnsonPfaffianRotation.lean": "884a4b232610ac8350f2f2837df2da7001848249c2d8061feaf8deaf477efee7",
+    "lean/Conjectures/JohnsonPfaffianScaling.lean": "012bb0b1c969078727ceb9a34eb60f4886548eae5849f2431cfb735f032d61bc",
+    "lean/Conjectures/JohnsonPfaffianSmall.lean": "37637bde3b88c341377f79a662b1e36c7a9d0c82c21ba1b90269b326fc9907d2",
+    "lean/Conjectures/JohnsonPfaffianSource.lean": "ea676ecbe5ce87f90e2fc7e38acfeaaf8cbdea3ec14c799aece9ae403eaf3d06",
+    "lean/Conjectures/JohnsonPfaffianSparse.lean": "797ac886d358d7353b29e233494de7e197556d73da519705458344723b85c401",
+    "lean/Conjectures/JohnsonPfaffianSummation.lean": "2c83e43b9538a4a5e597846087c79491dce01f13ab72fc980d0576d65dbda237",
+    "lean/Conjectures/JohnsonPfaffianSwap.lean": "497d1864115264f46f57735f4a16761bd1eecbfb9ed4b0a8fc478056689c8864",
+    "lean/Conjectures/JohnsonPfaffianTelescoping.lean": "aaa9fb56b6b6842bdfff8f02acce2ec50cbf5304391c679988740a68b9355871",
+    "lean/Conjectures/JohnsonPfaffianUncross.lean": "edb3103e4879165a44940869109e20da8db8246cf66f207875b0332c15d8d0a0",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianFour.olean",
+        "Conjectures/JohnsonPfaffianFour.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianFour.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianUncross.olean",
+        "Conjectures/JohnsonPfaffianUncross.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianUncross.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianIntervals.olean",
+        "Conjectures/JohnsonPfaffianIntervals.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianIntervals.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianSummation.olean",
+        "Conjectures/JohnsonPfaffianSummation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianSummation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianTelescoping.olean",
+        "Conjectures/JohnsonPfaffianTelescoping.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianTelescoping.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianSource.olean",
+        "Conjectures/JohnsonPfaffianSource.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianSource.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianProduct.olean",
+        "Conjectures/JohnsonPfaffianProduct.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianProduct.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianScaling.olean",
+        "Conjectures/JohnsonPfaffianScaling.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianScaling.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/GilmoreCrossingNesting.olean",
+        "Conjectures/GilmoreCrossingNesting.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GilmoreCrossingNesting.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianMatching.olean",
+        "Conjectures/JohnsonPfaffianMatching.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianMatching.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianSmall.olean",
+        "Conjectures/JohnsonPfaffianSmall.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianSmall.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianRotation.olean",
+        "Conjectures/JohnsonPfaffianRotation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianRotation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianSwap.olean",
+        "Conjectures/JohnsonPfaffianSwap.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianSwap.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianParity.olean",
+        "Conjectures/JohnsonPfaffianParity.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianParity.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianResidual.olean",
+        "Conjectures/JohnsonPfaffianResidual.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianResidual.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianSparse.olean",
+        "Conjectures/JohnsonPfaffianSparse.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianSparse.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianRestriction.olean",
+        "Conjectures/JohnsonPfaffianRestriction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianRestriction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianCoefficients.olean",
+        "Conjectures/JohnsonPfaffianCoefficients.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianCoefficients.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianPositive.olean",
+        "Conjectures/JohnsonPfaffianPositive.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianPositive.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianPrefix.olean",
+        "Conjectures/JohnsonPfaffianPrefix.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianPrefix.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianExpansion.olean",
+        "Conjectures/JohnsonPfaffianExpansion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianExpansion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianEndpoint.olean",
+        "Conjectures/JohnsonPfaffianEndpoint.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianEndpoint.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianOuter.olean",
+        "Conjectures/JohnsonPfaffianOuter.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianOuter.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianCircular.olean",
+        "Conjectures/JohnsonPfaffianCircular.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianCircular.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianCircularAdditive.olean",
+        "Conjectures/JohnsonPfaffianCircularAdditive.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianCircularAdditive.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianNoncrossing.olean",
+        "Conjectures/JohnsonPfaffianNoncrossing.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianNoncrossing.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianAllMatching.olean",
+        "Conjectures/JohnsonPfaffianAllMatching.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianAllMatching.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianKernel.olean",
+        "Conjectures/JohnsonPfaffianKernel.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianKernel.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffianCircularUncrossing.olean",
+        "Conjectures/JohnsonPfaffianCircularUncrossing.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffianCircularUncrossing.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/solved-conjectures-20261124-161951/lean/.lake/build/lib/lean/Conjectures/JohnsonPfaffian.olean",
+        "Conjectures/JohnsonPfaffian.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.JohnsonPfaffian.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/ee2d4cb3756d/environment/johnson-complete-verification/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/tmp/solved-conjectures-20261124-161951/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.JohnsonPfaffian"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 1195,
+    "modules": 30,
+    "private_declarations": 28,
+    "raw_declarations": 1195,
+    "required": 8,
+    "tag": "passed",
+    "theorems": 1006
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

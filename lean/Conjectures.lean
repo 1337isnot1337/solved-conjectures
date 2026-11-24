@@ -1,3 +1,10 @@
+import Conjectures.JohnsonPfaffian
+import Conjectures.JohnsonPfaffianAllMatching
+import Conjectures.JohnsonPfaffianCircular
+import Conjectures.JohnsonPfaffianCircularAdditive
+import Conjectures.JohnsonPfaffianCircularUncrossing
+import Conjectures.JohnsonPfaffianKernel
+import Conjectures.JohnsonPfaffianNoncrossing
 import Conjectures.JuhnkeAlternating
 import Conjectures.JuhnkeCompositions
 import Conjectures.JuhnkeConjecture

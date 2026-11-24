@@ -4,6 +4,13 @@ set -euo pipefail
 export LEAN_NUM_THREADS=1
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.JohnsonPfaffian
+  Conjectures.JohnsonPfaffianAllMatching
+  Conjectures.JohnsonPfaffianCircular
+  Conjectures.JohnsonPfaffianCircularAdditive
+  Conjectures.JohnsonPfaffianCircularUncrossing
+  Conjectures.JohnsonPfaffianKernel
+  Conjectures.JohnsonPfaffianNoncrossing
   Conjectures.JuhnkeAlternating
   Conjectures.JuhnkeCompositions
   Conjectures.JuhnkeConjecture

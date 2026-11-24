@@ -1,5 +1,9 @@
 # History
 
+## Johnson's conjecture
+
+On 24 November 2026 the [complete Lean proof](results/johnson-pfaffian/LEAN-AUDIT.md) closed the general even-order, every-matching gap. It formalizes the recorded circular interval-product argument, including the stronger unconditional matrix-class theorem and the exact source-kernel bridge. All thirty project modules passed strict compilation, the audit of every owned declaration, and stock-kernel replay. William Johnson's conjecture, endpoint inequality and uncrossing reduction are credited; the repository proof credit and bounded priority assessment are preserved.
+
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 
 On 24 November 2026 the [complete Lean proof](results/juhnke-lattice-paths/LEAN-AUDIT.md) established log-concavity and unimodality for every dimension and step count in the original unrestricted path convention. All 18 modules passed strict compilation, the audit of every owned declaration, and stock-kernel replay. The proof follows the recorded argument of Cinna Davis and GPT-6.2 Astra, credits Martina Juhnke and the classical Brenti translation criterion, and preserves the existing priority qualification. Both boundary dimensions are included in this one result.

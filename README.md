@@ -22,7 +22,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | **8.** [Ma–Tang’s random subset-sum threshold conjecture](results/ma-tang-random-subset-sums/) | ⬜ | **83.** [Gawron–Ulas’s partition-sign nonperiodicity conjecture](results/gawron-ulas-partition-signs/) | ⬜ |
 | **8.** [Féray’s conjugate-power word-measure conjectures](results/feray-conjugate-power-word/) | ⬜ | **83.** [Gawron–Miska–Ulas’s Thue–Morse sign-density conjecture](results/gawron-miska-ulas-thue-morse-sign-density/) | ⬜ |
 | **12.** [Caiolo–Ferroni–Hoster conjecture](results/caiolo-ferroni-hoster/) | ⬜ | **87.** [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture](results/separable-derangements-limit/) | ⬜ |
-| **12.** [Johnson's conjecture](results/johnson-pfaffian/) | 🟡 | **87.** [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture](results/separable-derangements-asymptotic/) | ⬜ |
+| **12.** [Johnson's conjecture](results/johnson-pfaffian/) | ✅ | **87.** [Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture](results/separable-derangements-asymptotic/) | ⬜ |
 | **12.** [Chen–Khare–Sahi's conjecture](results/chen-khare-sahi-macdonald/) | 🟡 | **87.** [Kovalev’s square-root Taylor-section zero-free conjecture](results/kovalev-zero-free/) | ⬜ |
 | **12.** [Dospolova–Germanskov–Zaporozhets's conjecture](results/dospolova-germanskov-zaporozhets/) | 🟡 | **87.** [Ćurgus–Mascioni’s Fréchet root-matching extremizer question](results/curgus-mascioni-frechet/) | ⬜ |
 | **12.** [Roos–Seiringer's conjecture](results/roos-seiringer-kernel/) | ⬜ | **91.** [Burstein’s A218225 enumeration conjecture](results/burstein-a218225-enumeration/) | ⬜ |

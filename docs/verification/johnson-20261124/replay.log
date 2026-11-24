@@ -1,0 +1,32 @@
+Replaying all 30 local project modules imported by Conjectures.JohnsonPfaffian, including that root (prefix Conjectures)
+replaying Conjectures.GilmoreCrossingNesting
+replaying Conjectures.JohnsonPfaffian
+replaying Conjectures.JohnsonPfaffianAllMatching
+replaying Conjectures.JohnsonPfaffianCircular
+replaying Conjectures.JohnsonPfaffianCircularAdditive
+replaying Conjectures.JohnsonPfaffianCircularUncrossing
+replaying Conjectures.JohnsonPfaffianCoefficients
+replaying Conjectures.JohnsonPfaffianEndpoint
+replaying Conjectures.JohnsonPfaffianExpansion
+replaying Conjectures.JohnsonPfaffianFour
+replaying Conjectures.JohnsonPfaffianIntervals
+replaying Conjectures.JohnsonPfaffianKernel
+replaying Conjectures.JohnsonPfaffianMatching
+replaying Conjectures.JohnsonPfaffianNoncrossing
+replaying Conjectures.JohnsonPfaffianOuter
+replaying Conjectures.JohnsonPfaffianParity
+replaying Conjectures.JohnsonPfaffianPositive
+replaying Conjectures.JohnsonPfaffianPrefix
+replaying Conjectures.JohnsonPfaffianProduct
+replaying Conjectures.JohnsonPfaffianResidual
+replaying Conjectures.JohnsonPfaffianRestriction
+replaying Conjectures.JohnsonPfaffianRotation
+replaying Conjectures.JohnsonPfaffianScaling
+replaying Conjectures.JohnsonPfaffianSmall
+replaying Conjectures.JohnsonPfaffianSource
+replaying Conjectures.JohnsonPfaffianSparse
+replaying Conjectures.JohnsonPfaffianSummation
+replaying Conjectures.JohnsonPfaffianSwap
+replaying Conjectures.JohnsonPfaffianTelescoping
+replaying Conjectures.JohnsonPfaffianUncross
+PASS: the entire local import closure of Conjectures.JohnsonPfaffian completed the pinned kernel replay

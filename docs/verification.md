@@ -1,5 +1,11 @@
 # Verification
 
+## Johnson's conjecture
+
+The [complete closure receipt](verification/johnson-20261124/receipt.json), finished 24 November 2026 at 17:06:28 UTC, records thirty fresh strict module compilations, the unchanged audit of all 1,195 owned declarations (1,006 theorems and 28 private declarations), eight required endpoints, and unchanged stock-kernel replay. It checks the full finite-tuple source statement and the general circular-product theorem. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted.
+
+The `lean-johnson.yml` workflow reproduces this target check. The target receipt does not assert the repository-wide gate for unrelated entries; hosted and aggregate results remain separate. The existing Python checker is a supplementary diagnostic, not a proof premise.
+
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 
 The [complete target receipt](verification/juhnke-20261124/receipt.json) records fresh strict compilation of all 18 project modules, the unchanged audit of all 577 owned declarations (502 theorems and 11 required endpoints), and unchanged stock-kernel replay. The pinned Lean version is 4.35.0; the only allowed transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The complete source statement and literal-path bridge were independently reviewed against the original report.

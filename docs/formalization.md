@@ -1,5 +1,11 @@
 # Full formalization campaign
 
+## Johnson's conjecture
+
+`JohnsonPfaffian.johnson_conjecture_fin` proves the full Conjecture 7.1 for an arbitrary ordered `Fin (2*u)` tuple and every literal perfect matching. The new circular-factor normalization, adjacent-edge induction, terminating uncrossing and exact distance-kernel bridge discharge the former general-order gap. `CircularData.matching_bound` also proves the stronger circular interval-product theorem without an uncrossing assumption. The [entry audit](../results/johnson-pfaffian/LEAN-AUDIT.md) maps the proof to the recorded argument and preserves all original attribution and priority limits.
+
+The complete thirty-module closure passed strict compilation, all-owned transitive axiom audit and stock-kernel replay. See the [source-hashed receipt](verification/johnson-20261124/receipt.json). Earlier partial checkpoints below remain historical records.
+
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 
 `Juhnke.juhnke_conjecture` proves both original conclusions for the actual path counts in every dimension `d ≥ 2`. The representation is explicitly equivalent to ordered lists of positive east/north steps, with original start `(2,1)` and both original endpoints. The run decomposition, exact positive-composition counts, optional-cut polynomial, coefficient inequalities, translation, and unimodality are all proved. The 18-module closure contains no assumed enumeration or analytic theorem.
