@@ -1,3 +1,17 @@
+import Conjectures.FerroniHigashitaniBox
+import Conjectures.FerroniHigashitaniRefined
+import Conjectures.FerroniHigashitaniGeometry
+import Conjectures.FerroniHigashitaniLattice
+import Conjectures.FerroniHigashitaniCount
+import Conjectures.FerroniHigashitaniInterior
+import Conjectures.FerroniHigashitaniIDP
+import Conjectures.FerroniHigashitaniPolytope
+import Conjectures.FerroniHigashitaniBasis
+import Conjectures.FerroniHigashitani
+import Conjectures.FerroniHigashitaniClosedCount
+import Conjectures.FerroniHigashitaniBinomial
+import Conjectures.FerroniHigashitaniPrefixPolynomial
+import Conjectures.FerroniHigashitaniEhrhart
 import Conjectures.FanTringaliBasic
 import Conjectures.FanTringaliGadget
 import Conjectures.FanTringaliSlices
