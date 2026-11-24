@@ -30,6 +30,12 @@ $(0,1/(k-1)]$. The witnesses have strictly increasing interleaved digits.
 The development verifies both the convergence of the source's series and the half-open
 digit intervals. See `conjecture_2_12`, `interval_subset_sum` and `interleaved_decomposition`.
 
+## Hajdu–Sárközy’s shifted-power perturbation conjecture
+
+The [complete Lean formalization](../results/hajdu-sarkozy-shifted-power-perturbations/FORMALIZATION.md) proves the original conjecture for every exponent at least two and the stronger nonzero-shift symmetric-difference theorem. The actual real-threshold error is little-o of the root scale; arbitrary nontrivial positive-integer product decompositions are excluded after every finite modification. The original root-zero convention is included.
+
+The eleven-module closure passed strict compilation, the all-owned/private transitive axiom audit, and exact stock-kernel replay. The audit covers 185 declarations, 157 theorems, and twenty required endpoints, allowing only `propext`, `Classical.choice`, and `Quot.sound`. The [independent review](../results/hajdu-sarkozy-shifted-power-perturbations/LEAN_REVIEW.md) checks the exact source statement, the full argument and the frozen verification evidence. The [portable receipt](../results/hajdu-sarkozy-shifted-power-perturbations/verification/receipt.json) is distinct from the retained lane and interrupted-run records. The optional weaker-hypothesis retained-limsup supplement remains unformalized. Existing proposer/proof-author credits and bounded priority uncertainty are retained; this is one existing conjecture entry.
+
 ## Parking-function excedance certificate
 
 [Alexandersson’s parking-function excedance conjecture](../results/alexandersson-parking-excedance/) is refuted by a rational witness certified with exact integer and fraction arithmetic. No Lean formalization is claimed.
@@ -106,7 +112,7 @@ proofs are documented separately in the catalogue and result package.
 | Hartke–Stolee–West–Yancey matching-excess conjecture | Not formalized | The minimum tail excess diverges, answering Conjecture 9.15 of the author manuscript. A directed-path gadget and binary long division give a uniform lower bound of order square root of log p. The sharper separate growth guess is not claimed. |
 | Chappelon–Ramírez Alfonsín–Stamate’s leaf-type conjecture | Not formalized | Uniform refutation of the original genus bound. The maximum leaf type at every large genus has leading coefficient two thirds and a sharp square-root-order deficit. |
 | Feldheim–Feldheim’s weighted tail conjecture | Not formalized | Complete proof of the original weighted non-identical-law conjecture, with arbitrary atoms and strictly positive weights. Gives the nondegenerate arbitrary-norm extension as a consequence. |
-| Hajdu–Sárközy’s shifted-power perturbation conjecture | Not formalized | Proof of the remaining square case under the full little-o perturbation condition, including finite modifications. Prior higher powers are credited. |
+| Hajdu–Sárközy’s shifted-power perturbation conjecture | Complete original conjecture and general-shift symmetric-difference theorem | All exponents at least two, actual little-o counts, arbitrary nontrivial positive factor sets, and every finite modification. Eleven modules passed strict compilation, complete declaration/axiom audit, and stock replay. The weaker retained-limsup supplement remains unformalized. [Scope](../results/hajdu-sarkozy-shifted-power-perturbations/FORMALIZATION.md). |
 | Hajdu–Sárközy’s shifted-product total primitivity conjecture | Not formalized | Proves the original bivariate claim for the remaining coprime exponents using a summable union of scaled power sets; non-coprime exponents were known. |
 | Hegyvári’s conjecture | Not formalized | Proves strong completeness of the two-ray set across the remaining rational ratios that are not powers of two, with exact strong-completeness obstructions. |
 | Ma–Tang’s random subset-sum threshold conjecture | Not formalized | Proves the sharp universal second-order coefficient, with an independently audited bounded-remainder match along orders three times a power of two. |

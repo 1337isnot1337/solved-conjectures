@@ -64,6 +64,17 @@ modules=(
   Conjectures.GesselZhuangStatisticsInverse
   Conjectures.GesselZhuangSymmetry
   Conjectures.GesselZhuangTheorem
+  Conjectures.HajduSarkozyArithmetic
+  Conjectures.HajduSarkozyIncidence
+  Conjectures.HajduSarkozyAsymptotics
+  Conjectures.HajduSarkozyCounts
+  Conjectures.HajduSarkozyBins
+  Conjectures.HajduSarkozyMatrix
+  Conjectures.HajduSarkozyProduct
+  Conjectures.HajduSarkozyCommon
+  Conjectures.HajduSarkozyDensity
+  Conjectures.HajduSarkozyFactors
+  Conjectures.HajduSarkozy
   Conjectures.RowlandSistosBarronAnnihilator
   Conjectures.RowlandSistosBarronCancellationCounts
   Conjectures.RowlandSistosBarronCharacteristic

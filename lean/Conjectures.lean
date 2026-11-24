@@ -1200,3 +1200,14 @@ import Conjectures.SteinerbergerGreedySequence
 import Conjectures.SteinerbergerGreedyFourier
 import Conjectures.SteinerbergerGreedyGrowth
 import Conjectures.SteinerbergerGreedy
+import Conjectures.HajduSarkozyArithmetic
+import Conjectures.HajduSarkozyIncidence
+import Conjectures.HajduSarkozyAsymptotics
+import Conjectures.HajduSarkozyCounts
+import Conjectures.HajduSarkozyBins
+import Conjectures.HajduSarkozyMatrix
+import Conjectures.HajduSarkozyProduct
+import Conjectures.HajduSarkozyCommon
+import Conjectures.HajduSarkozyDensity
+import Conjectures.HajduSarkozyFactors
+import Conjectures.HajduSarkozy

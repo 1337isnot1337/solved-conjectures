@@ -1,0 +1,81 @@
+{
+  "commit": "da66547d6e917990f401d200ad107d4217d923bb",
+  "tree": "0fc539ae4d89f49db5da99b4d2d2b8307683580c",
+  "started_at": "2026-11-24T17:38:50.136941+00:00",
+  "steps": [
+    {
+      "name": "readme-check",
+      "command": [
+        "python3",
+        "scripts/check_readme_verification.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.032,
+      "log_sha256": "52a69c96432bfa4d926a15f202debbdfd26c1ebc7dec41aac70f80942f58f1ea"
+    },
+    {
+      "name": "site-tests",
+      "command": [
+        "python3",
+        "scripts/test_build_site.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.973,
+      "log_sha256": "9820ac4a65b42c3a403240b6206160b1018c469c4e46b804e920ab3b14c9ecc9"
+    },
+    {
+      "name": "accepted-plan-tests",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_plan_accepted_lean.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.114,
+      "log_sha256": "56e03afda220e7ba78bbcecf9a2e53a0149cfc3e311fa10bbd01b25e8e5ba671"
+    },
+    {
+      "name": "accepted-plan-self-test",
+      "command": [
+        "python3",
+        "scripts/plan_accepted_lean.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 0.164,
+      "log_sha256": "b5876a1150ee8916670ad3e9df95d9007e460b1882324daa1e85d590192063b1"
+    },
+    {
+      "name": "site-build",
+      "command": [
+        "python3",
+        "scripts/build_site.py",
+        "--base-url",
+        "https://itsdavis.com/solved-conjectures/",
+        "--workers",
+        "2"
+      ],
+      "exit_code": 0,
+      "seconds": 58.036,
+      "log_sha256": "2e6cbd1c093b39429538517d3f2c3f4822b37fc7a2bf14145ca2f6f68204d633"
+    },
+    {
+      "name": "site-check",
+      "command": [
+        "python3",
+        "scripts/check_site.py",
+        "_site"
+      ],
+      "exit_code": 0,
+      "seconds": 3.484,
+      "log_sha256": "7eac851fef52ed484161cfde6b1a14e8ae26e67bd19851b58175c336643d3edc"
+    }
+  ],
+  "status": "passed",
+  "finished_at": "2026-11-24T17:39:52.982754+00:00"
+}
