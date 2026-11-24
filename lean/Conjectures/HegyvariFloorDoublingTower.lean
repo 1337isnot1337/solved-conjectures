@@ -100,7 +100,7 @@ theorem hegyvari_odd_quotient_nonintegral (l j : ℕ) (hl : l % 2 = 1)
   have he' : (l : ℝ) = (⌊(l : ℝ) / (2 : ℝ)^j⌋ : ℤ) * (2 : ℝ)^j :=
     (div_eq_iff (by positivity : (2 : ℝ)^j ≠ 0)).mp he
   have hi : (l : ℤ) = ⌊(l : ℝ) / (2 : ℝ)^j⌋ * (2 : ℤ)^j := by exact_mod_cast he'
-  obtain ⟨k, hk⟩ := Nat.exists_eq_succ_of_ne_zero (by omega : j ≠ 0)
+  obtain ⟨k, hk⟩ : ∃ k, j = k+1 := ⟨j-1, by omega⟩
   rw [hk, pow_succ, ← mul_assoc] at hi
   omega
 
@@ -133,8 +133,10 @@ theorem hegyvari_top_bits (l : ℕ) (hl : 3 ≤ l) :
   have hdiv : l / 2^j = 1 := by
     apply Nat.div_eq_of_lt_le
     · simpa using hlow
-    · simpa only [pow_succ, one_add, Nat.mul_comm] using hhigh
-  have h₂ : l < 2^(j+2) := hhigh.trans_le (Nat.pow_le_pow_right (by decide) (by omega))
+    · simpa [pow_succ, Nat.mul_comm] using hhigh
+  have h₂ : l < 2^(j+2) := by
+    rw [show j+2 = (j+1)+1 by omega, pow_succ]
+    omega
   refine ⟨j, hj, ?_, ?_, ?_⟩
   · have h := testBit_toNat l j
     rw [hdiv] at h
@@ -204,7 +206,7 @@ theorem hegyvari_reciprocal_nondyadic (l : ℕ) (hl : 3 ≤ l) (hodd : l % 2 = 1
   have h := (eq_div_iff (by positivity : (2 : ℝ)^k ≠ 0)).mp he
   have heq : (2 : ℝ)^k = (z : ℝ) * (l : ℝ) := by
     calc
-      (2 : ℝ)^k = ((1 / (l : ℝ)) * (2 : ℝ)^k) * (l : ℝ) := by field_simp; ring
+      (2 : ℝ)^k = ((1 / (l : ℝ)) * (2 : ℝ)^k) * (l : ℝ) := by field_simp [ne_of_gt hp] <;> ring
       _ = _ := by rw [h]
   have hz : 0 ≤ z := by
     by_contra! hneg
@@ -233,22 +235,21 @@ theorem hegyvari_disjoint_odd_ratio {a b : ℝ} (ha : 1 ≤ a) (hb : 1 ≤ b)
   have ha0 : 0 < a := by linarith
   have hb0 : 0 < b := by linarith
   have hl0 : (0 : ℝ) < (l : ℝ) := by exact_mod_cast (show 0 < l by omega)
-  have hr : b/a = (l : ℝ) := by rw [hba]; field_simp
-  have hr' : a/b = 1/(l : ℝ) := by rw [hba]; field_simp
+  have hr : b/a = (l : ℝ) := by rw [hba]; field_simp [ne_of_gt ha0]
+  have hr' : a/b = 1/(l : ℝ) := by rw [hba]; field_simp [ne_of_gt ha0, ne_of_gt hl0]
   have hrecip : ¬ Dyadic (a/b) := by
     rw [hr']; exact hegyvari_reciprocal_nondyadic l hl hodd
   obtain ⟨j, hj, hbits⟩ := hegyvari_top_bits l hl
-  apply HegyvariFloorDoubling.disjoint_of_oddMultiplier_criteria
+  refine HegyvariFloorDoubling.disjoint_of_oddMultiplier_criteria
     (f := HegyvariFloorDoubling.floorRay a) (g := HegyvariFloorDoubling.floorRay b)
     (u := HegyvariFloorDoubling.floorDigit a) (v := HegyvariFloorDoubling.floorDigit b)
     (l := l) hodd
     (HegyvariFloorDoubling.floorRay_binaryStep ha0.le)
     (HegyvariFloorDoubling.floorRay_binaryStep hb0.le)
+    ?_ (hegyvari_unbounded ha0.le hnd) (j+1) ?_ ?_ ?_
   · intro n
     rw [hba]
     exact HegyvariFloorDoubling.floorRay_multiplier_bounds ha0.le l (by omega) n
-  · exact hegyvari_unbounded ha0.le hnd
-  · exact j+1
   · intro hnot
     exact hegyvari_transport hb0.le ha0.le
       (forwardTransport_of_not_symbolicallyDisjoint hb ha hrecip (fun h => hnot h.symm))
