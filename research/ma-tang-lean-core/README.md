@@ -14,9 +14,11 @@ The second draft [kernel module](../../lean/Conjectures/MaTangRandomSubsetSumsKe
 
 A separate standard-library [finite check](check_core.py) passed 6,361 admissible pairs of column labels and coefficients with k ≤ 4 and r ≤ 2, checking every type-constant flip that preserves the zero type. This validates the tested mathematical construction only. It does not establish any Lean theorem.
 
+The third draft [occupancy module](../../lean/Conjectures/MaTangRandomSubsetSumsOccupancy.lean) counts words with exactly one occupied letter of a given type by a hit/miss equivalence, then bounds a union using an injection into the disjoint union of hit-position classes. Its specialization `singleton_occupancy_card_le` bounds the number of bad words by (2^r-1) k 2 (3·2^r-2)^(k-1). The total number of words is (3·2^r)^k; their uniform normalization would produce the source's union bound. The finite checker also confirmed the exact single-type count and union bound for all 15 pairs 0 ≤ r ≤ 2, 0 ≤ k ≤ 4. This module is still an uncompiled draft, not a verified lemma.
+
 Remaining:
 - compile and verify the deterministic basis bridge; connect the basis-independent occupancy condition to the actual random model;
-- prove the uniform-kernel distribution, occupancy probability bound, and conditioning on distinct samples;
+- prove the uniform-kernel distribution, identify the finite counting bound with the probability in the proof, and justify conditioning on distinct samples;
 - prove the asymptotic estimates, monotonicity, and the universal upper bound used in the source;
 - compile, audit every owned declaration, and replay the kernel against pinned Lean 4.35.0/Mathlib revision 56a005855ea17e0b0958f73ec801ae140b0a1679; only then consider registering the verified scope.
 
