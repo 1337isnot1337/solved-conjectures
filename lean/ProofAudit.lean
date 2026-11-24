@@ -9,6 +9,12 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `SteinerbergerFeldheim.counterexample,
+    `SteinerbergerFeldheim.strict_counterbounds,
+    `SteinerbergerFeldheim.median_unique,
+    `SteinerbergerFeldheim.independent_coordinates,
+    `SteinerbergerFeldheim.first_coordinate_law,
+    `SteinerbergerFeldheim.second_coordinate_law,
     `AgnosticVC.canonicalRep_refinement,
     `AgnosticVC.sampleFamily_vcDim_le,
     `AgnosticVC.continuous_optimizer,
