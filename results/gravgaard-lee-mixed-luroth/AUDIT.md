@@ -4,4 +4,4 @@ The target is [Gravgaard–Lee, arXiv:2506.12513v2, Conjecture 2.2](https://arxi
 
 The independent audit verified the source's half-open digit intervals, the positive-tail convention, all fifteen exact containments, and the guarantee of infinitely many selected digits on each side. The ordinary interval contains [1,2] and so gives every residue, including zero. This is a finite certificate of an exact inclusion of real intervals, not a bounded sample of numbers.
 
-A focused current search located no proof of the same statement. No Lean verification, external review or absolute priority claim is made.
+A focused current search located no proof of the same statement. No external review or absolute priority claim is made. The [Lean proof](../../lean/Conjectures/GravgaardLeeMixedLuroth.lean) verifies the real interval and every real residue modulo one.

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-24 — Verify Gravgaard–Lee’s mixed Lüroth theorem in Lean
+
+The [Lean proof](lean/Conjectures/GravgaardLeeMixedLuroth.lean) checks the source digit sets, all fifteen interval containments and the passage to the infinite expansions. It proves the stronger ordinary interval and Conjecture 2.2 on all real residues.
+
 ## 2026-11-24 — Verify Gravgaard–Lee’s large-digit Lüroth theorem in Lean
 
 The [Lean proof](lean/Conjectures/GravgaardLeeLargeLuroth.lean) verifies Conjecture 2.12 for every digit bound and the stronger interval with strictly increasing interleaved digits from the [written result](results/gravgaard-lee-large-luroth/). It checks the convergent source series and the half-open digit intervals.
