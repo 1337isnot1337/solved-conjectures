@@ -1,0 +1,44 @@
+name: Ma–Tang’s random subset-sum threshold conjecture
+on:
+  pull_request:
+    paths:
+      - 'lean/Conjectures/MaTangRandomSubsetSumsCore.lean'
+      - '.github/workflows/lean-ma-tang-candidate.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          build: false
+          test: false
+          lint: false
+          use-mathlib-cache: true
+      - name: Strict source compilation
+        working-directory: lean
+        run: |
+          lake build Conjectures.MaTangRandomSubsetSumsCore
+          lake env lean -DwarningAsError=true -Dlinter.all=false Conjectures/MaTangRandomSubsetSumsCore.lean
+      - name: Audit all owned declarations and required endpoints
+        run: |
+          python3 - <<'PY'
+          import sys
+          sys.path.insert(0, "scripts")
+          from verify_lean_candidate import audit
+          module = "Conjectures.MaTangRandomSubsetSumsCore"
+          required = ["MaTangRandomSubsetSums.exists_balanced_signs",
+                      "MaTangRandomSubsetSums.exists_constant_fiber",
+                      "MaTangRandomSubsetSums.not_surjective_of_kernel_columns"]
+          audit([module], required, [module], "ma-tang-core")
+          PY
+      - name: Stock kernel replay of exact local import closure
+        working-directory: lean
+        run: lake env python3 ../scripts/replay_lean.py --root Conjectures.MaTangRandomSubsetSumsCore
