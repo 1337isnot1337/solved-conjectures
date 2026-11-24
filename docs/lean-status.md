@@ -82,6 +82,8 @@ proofs are documented separately in the catalogue and result package.
 | Kovalev’s linear Lipschitz clustering questions | Not formalized | Constructs convex-hull-preserving finite-subset retractions with a dimension-free linear Lipschitz bound, uniformly for every target size. |
 | Revised Tan–Zhou conjecture | Not formalized | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. |
 | Gravgaard–Lee’s mixed Lüroth sumset conjecture | Not formalized | Proves that the mixed bounded-digit Lüroth sum represents every residue modulo one, with an explicit ordinary interval in the sum. |
+| Gravgaard–Lee’s large-digit Lüroth sumset conjecture | Not formalized | Gives a positive-length ordinary sum interval for every lower digit threshold, using two expansions whose combined digits strictly increase. |
+| Gravgaard–Lee’s mixed upper/lower Lüroth conjecture | Not formalized | Determines the exact sum interval for all matching upper and lower Lüroth digit thresholds, including genuine expansions at the required endpoints. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture | Not formalized | Proves the derangement proportion tends to zero, with every fixed diagonal count diverging in probability. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture | Not formalized | Refutes every proposed fixed power exponent by exact finite two-branch counting and saturation of the occupation loss. |
 | Fan’s interval Riesz capacity-ratio conjecture | Not formalized | Proves the full negative-exponent conjecture and the nontrivial one-dimensional Clark–Laugesen range, with equality conditions. |
