@@ -20,6 +20,8 @@ The subsequent [finite-residual critical-point proof](../research/complex-bss-p-
 
 The continued [directional cofactor extraction](../research/complex-bss-p-vs-np/DIRECTIONAL_COFACTOR_LOG_JETS.md), [squarefree-cofactor bound](../research/complex-bss-p-vs-np/RADICAL_COFACTOR_JETS.md), [universal certificate equivalence](../research/complex-bss-p-vs-np/UNIVERSAL_CERTIFICATES.md), [recursive finite-prefix theorem](../research/complex-bss-p-vs-np/TREE_KKT_FINITE_PREFIX_EXTENSION.md), and [restricted continuous sampling](../research/complex-bss-p-vs-np/CONTINUOUS_NONDENSE_FIBER_SAMPLING.md) have separate internal written reviews linked from the campaign review record. Their bounds and counterexamples are proved in the notes; no finite numerical screen or Lean build verifies these general arguments. The main separation remains unresolved.
 
+The [continuous finite-fiber attempt](../research/complex-bss-p-vs-np/SKEW_PRODUCT_MOVING_FIBER_ATTEMPT.md), [polynomial-support exclusion](../research/complex-bss-p-vs-np/SKEW_POLYNOMIAL_SUPPORT_EXCLUSION.md), [moving algebraic challenge lemma](../research/complex-bss-p-vs-np/MOVING_ALGEBRAIC_CHALLENGES.md), and [pole-cluster counterexample](../research/complex-bss-p-vs-np/RECIPROCAL_POLE_CLUSTER_OBSTRUCTION.md) have written proofs and internal reviews recorded in the campaign. The three-block verifier has only exponential-size completeness; the required polynomial bound remains open. An independent exact symbolic computation checks the finite relative-invariant cancellation example, not a growing-resultant lower bound. No Lean change or formal verification of these new arguments is claimed.
+
 ## Boolean Hamiltonicity research lemmas
 
 Run these standard-library checks from the repository root:

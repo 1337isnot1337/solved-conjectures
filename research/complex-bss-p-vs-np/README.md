@@ -84,7 +84,19 @@ Consequently the permanent graph has no polynomial-size presentation consisting 
 
 These are continued restrictions on the missing bridge. A general HN branch still gives no bound on the cofactor parameters above, and a general complex universal block can have dense proper fibers. No target separation follows from these notes.
 
-## Research notes
+## Continuous finite fibers and pole extraction
+
+[SKEW_PRODUCT_MOVING_FIBER_ATTEMPT.md](SKEW_PRODUCT_MOVING_FIBER_ATTEMPT.md) gives an explicit uniform three-block verifier for a cyclic finite-fiber certificate. A short Ryser observable defines the map `(t,g) -> (zeta*t,g+H_X(t)-y/2^m)`. A nonempty finite root fiber transported around the full orbit forces `y=per_m(X)`. Interpolation proves completeness with an exponential-size certificate. The polynomial certificate-size assertion needed for a fixed-level hierarchy upper bound remains unproved. The [independent review](SKEW_PRODUCT_REVIEW.md) checks soundness on arbitrary complex matrices and the uniform use of a quantified primitive root.
+
+The candidate has strict restrictions. Polynomial fiber degree, squarefree fibers, and proportional transported multiplicities reduce to finite Boolean challenges and are excluded by the earlier critical-point theorem. The [distinct-root support argument](SKEW_POLYNOMIAL_SUPPORT_EXCLUSION.md) also excludes polynomially many distinct roots with arbitrary multiplicities. It gives the local root and binary-multiplicity witnesses, a fixed generic identity-testing tuple, and explicit gate counts. A successful family within this schema must therefore use superpolynomial root support with nonproportional multiplicity changes; no such polynomial-size complete family has been constructed.
+
+[MOVING_ALGEBRAIC_CHALLENGES.md](MOVING_ALGEBRAIC_CHALLENGES.md) converts a finite algebraic challenge family into the reviewed block incidence when a finite etale open meets a dense set of correct certificates. Collision and escape examples show why this admissibility condition is necessary for that conversion. An additional moving-square-root example defeats every finite list of rationally computed challenges on a generic branch. [Independent review](MOVING_CHALLENGES_REVIEW.md). The [geometric stress tests](GEOMETRIC_STRESS_TESTS.md) separately recheck the earlier component and fixed-neighborhood hypotheses.
+
+Two exact counterexamples constrain the cofactor route. [RELATIVE_INVARIANT_CANCELLATION.md](RELATIVE_INVARIANT_CANCELLATION.md) gives a relative-invariant multiple of the three-quadric resultant whose first balanced logarithmic coefficient vanishes, and extends the cancellation to any prescribed finite jet. It does not supply an easy multiple of a growing resultant. [RECIPROCAL_POLE_CLUSTER_OBSTRUCTION.md](RECIPROCAL_POLE_CLUSTER_OBSTRUCTION.md) gives a short irreducible denominator with numerator one for which the first reciprocal trace of the finite pole cluster has a permanent coefficient, while the reciprocal trace over all roots is zero. The escaping cluster carries the opposite first-order term. Its [review](RECIPROCAL_POLE_CLUSTER_REVIEW.md) preserves the distinction between selecting an analytic cluster and extracting the entire reduced denominator.
+
+The full HN separation, polynomial-size completeness of the continuous certificate, and unrestricted resultant extraction remain research questions in this campaign.
+
+## Earlier research notes
 
 - [PROTOCOL.md](PROTOCOL.md) gives a sound uniform sum-check formula on all complex matrices, with `2m` alternating blocks, and exact counterexamples to moving all messages or all challenges together. It also proves an obstruction to generic small arithmetic-circuit commitments for adaptive messages and a sound batching lemma with its actual coefficient-volume cost.
 - [BOUNDARY_AND_COLLAPSE.md](BOUNDARY_AND_COLLAPSE.md) proves a generic boundary extraction lemma and the sufficient `o(log log m)` alternation criterion. Neither construction needed to apply them has been obtained.

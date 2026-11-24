@@ -4,6 +4,16 @@ Status: research. The full statement `P_C != NP_C` has not been proved here.
 
 ## Continued research checkpoint
 
+The next continuous-fiber checkpoint was reviewed separately. [SKEW_PRODUCT_REVIEW.md](SKEW_PRODUCT_REVIEW.md) checks the actual three-block verifier, finite-set translation soundness, exponential interpolation completeness, and the finite identity tests for restricted multiplicities. The integrator also checked the complete [polynomial-support proof](SKEW_POLYNOMIAL_SUPPORT_EXCLUSION.md), including its local witness count, common hitting-family parameter dimension, padding semantics, and charged exponentiation circuits. These are restrictions on the candidate; the candidate's polynomial certificate-size assertion is not proved.
+
+The [moving-challenge review](MOVING_CHALLENGES_REVIEW.md) checks complete enumeration on the stated finite etale open and the failure at collisions or root escape. [GEOMETRIC_STRESS_TESTS.md](GEOMETRIC_STRESS_TESTS.md) records a second adversarial audit of the earlier analytic/component steps. The integrator read both arguments. The admissibility hypothesis is retained, and no arbitrary continuous universal block is discretized.
+
+For [relative-invariant cancellation](RELATIVE_INVARIANT_CANCELLATION.md), the integrator checked Domokos--Feher--Rimanyi's published Remark 5.3(i), formula (6), and Theorem 5.4, including the identification of the two degree-six invariant formulas. An independent exact SymPy computation of all three-column minors, the quotient multiplication determinant, the canceled first coefficient, and the derivative `-64` passed. The arbitrary-jet extension is proved by the displayed local inverse and homogenized Taylor polynomial; those finite checks do not prove its general statement.
+
+The [pole-cluster review](RECIPROCAL_POLE_CLUSTER_REVIEW.md) independently checks the short digit observable, irreducibility, finite-root derivatives, degree bounds, and escape bookkeeping. The integrator checked the complete written proof as well. The hard trace is attached to a selected analytic cluster; the full denominator is already short. This cannot be cited as a counterexample to full reduced-denominator extraction.
+
+All these reviews are internal written reviews. No Lean proof, human refereeing, or novelty determination is claimed. Documentation and site checks are recorded at the publication milestone.
+
 The following additions have complete written arguments, independent worker reviews, and integrator review. The reviews are internal mathematical reviews, not formal verification, human refereeing, or novelty assessments.
 
 - [Directional cofactor roots](DIRECTIONAL_COFACTOR_LOG_JETS.md): the finite-branch jet dependency, logarithmic derivative identity, moving-center border limit, and tagged-triangle logarithm filter were checked. The full coefficient-space jet is taken before the grid specialization. The explicit short cofactor with many directional roots limits the conclusion. [Review](DIRECTIONAL_COFACTOR_REVIEW.md).
