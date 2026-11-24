@@ -79,6 +79,7 @@ proofs are documented separately in the catalogue and result package.
 | Hajdu–Sárközy’s shifted-power perturbation conjecture | Not formalized | Proof of the remaining square case under the full little-o perturbation condition, including finite modifications. Prior higher powers are credited. |
 | Hajdu–Sárközy’s shifted-product total primitivity conjecture | Not formalized | Proves the original bivariate claim for the remaining coprime exponents using a summable union of scaled power sets; non-coprime exponents were known. |
 | Hegyvári’s conjecture | Not formalized | Proves strong completeness of the two-ray set across the remaining rational ratios that are not powers of two, with exact strong-completeness obstructions. |
+| Pomerance–Sárközy’s fluctuation conjecture | Not formalized | Proves the density-one refinement and the quarter-power Gaussian law for the count associated with n plus its distinct prime factors. |
 | Ulas’s disjoint-block square-product conjecture | Not formalized | For every fixed common block length, proves infinitely many disjoint square-product collections at every sufficiently large fixed number of blocks. |
 | Kovalev’s linear Lipschitz clustering questions | Not formalized | Constructs convex-hull-preserving finite-subset retractions with a dimension-free linear Lipschitz bound, uniformly for every target size. |
 | Revised Tan–Zhou conjecture | Not formalized | Determines the exact Hausdorff dimension from the lower order of every nonincreasing approximation function for Lüroth convergents. |
@@ -97,12 +98,12 @@ proofs are documented separately in the catalogue and result package.
 | Sagan–Swanson’s q-Stirling normality conjecture | Not formalized | Proves a Gaussian limit with true standardized moments for all four interior-proportion q-Stirling families and a uniform lattice local profile. |
 | Defant–Engen–Miller’s Lassalle refinement conjecture | Not formalized | Proves strict log-concavity in every nontrivial row of the first-value refinement of the Lassalle sequence. |
 | Sagan–Wilson’s plactic centralizer conjecture | Not formalized | Proves eventual stability of all plactic centralizers of powers, with an alphabet-only cutoff independent of word length. |
+| Sagan–Wilson’s plactic coefficient-mode conjecture | Not formalized | Disproves the proposed middle mode and determines the asymptotic position of every mode in both natural coefficient rows. |
 | Juhnke’s arbitrary-step lattice-path log-concavity conjecture | Not formalized | Proves all-dimensional log-concavity for the unrestricted east/north arbitrary-step path counts. |
 | Chow’s type-D Eulerian interlacing conjecture | Not formalized | Proves consecutive type-D Eulerian interlacing, strict in every transition from degree three onward. |
 | Athanasiadis–Chapoton’s polar preorder duality conjecture | Not formalized | A lattice-preserving transfer gives the same Ehrhart series for opposite polar preorder polytopes, with convex mutations and a finite numerator model. |
 | Athanasiadis–Chapoton’s q-zeta reciprocity conjecture | Not formalized | Proves the remaining full q-form of Conjecture 4.9 by coordinate-weighted reciprocity and Boolean interpolation. |
 | Athanasiadis–Chapoton’s transmuted M-triangle duality conjecture | Not formalized | Proves the original reciprocal identity in every preorder by specializing weighted reciprocity, independent of lattice realization. |
-| Roy’s square-partition multiplicative inequality conjecture | Not formalized | Completes the published comparison table, with a no-4 injection propagating finite residue seeds through every small-factor row. |
 | Gawron–Miska–Ulas’s Thue–Morse valuation conjecture | Not formalized | Refutes general 2-adic block constancy at exponent 17 and gives counterexamples for every k≥11. |
 | Zhu’s generalized Jacobi–Stirling Hankel positivity conjecture | Not formalized | Refutes coefficientwise Hankel positivity and gives a sharp Bessel-zero characterization of the numerical Stieltjes and Hamburger moment properties. |
 | Sobolewski–Ulas’s binary-partition exception regularity conjecture | Not formalized | Uses a repeated-digit counting remainder and Cobham’s theorem for substitutions to exclude regularity in every integer base. |
