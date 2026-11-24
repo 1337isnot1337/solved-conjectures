@@ -6,7 +6,7 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 
 [Search the collection](https://1337isnot1337.github.io/solved-conjectures/) · [Full catalogue](CONTENTS.md) · [Verification](docs/verification.md) · [Lean status](docs/lean-status.md) · [History](HISTORY.md)
 
-## Results
+## Results 
 
 | Problem | Verification |
 | :--- | :---: |
@@ -84,6 +84,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Baricz–Pogány's asymptotic-coefficient positivity conjecture](results/baricz-pogany-coefficients/) | ✅ |
 | [Chow's conjecture](results/chow-conjecture/) | ✅ |
 | [Alexandersson's Fuss–Catalan conjecture](results/alexandersson-fuss-catalan/) | ✅ |
+
+Ensure the results are ordered by relative importance at all times. If this is not the case, edit them to be so
 
 - ✅ Fully Lean-verified.
 - 🟢 Partially Lean-verified, with a computer-assisted proof.
