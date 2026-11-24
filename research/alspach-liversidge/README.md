@@ -48,4 +48,6 @@ Kravitz’s [*Rearranging Small Sets for Distinct Partial Sums*](https://math.co
 
 ## Next attack
 
+Padding a small set with free tags cannot close the cardinality gap: for any prescribed ordering of A, embed A into G × (Z/2)^N and insert a fresh coordinate unit between successive entries (and append any remaining coordinate units). Every interval containing a unit has a nonzero component in its fresh coordinate, and intervals without units have length at most one. Thus this extension has a strong order realizing any given order of A, even if that order is not valid on A itself. A reduction to the large-set theorems must do more than keep A as a subset.
+
 A minimum-size obstruction to either version is connected. Look for a cut-vertex gluing lemma that preserves enough freedom to split a common element across two strong components. Note that imposing no zero interval is not equivalent to forbidding only inclusion-minimal zero subsets as intervals: a zero interval can be a union of intertwined minimal subsets, with no one of them contiguous. Any further reduction must account for unions.
