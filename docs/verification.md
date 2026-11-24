@@ -170,6 +170,10 @@ The standard-library checker uses exact rational arithmetic for supplementary id
 
 Run `python3 results/pantone-bona-asymptotic/verify.py` for literal small permutation counts and exact tableau branching comparisons. The [proof](../results/pantone-bona-asymptotic/PROOF.md) derives the leading constant analytically; finite enumeration is not part of its argument.
 
+## Pantone–Bóna second-largest-terminal asymptotic
+
+Run `python3 results/pantone-bona-second-largest-terminal/verify.py` to compare the exact canonical gap formula with literal pattern filtering. The [proof](../results/pantone-bona-second-largest-terminal/PROOF.md) derives the asymptotic equivalence without the finite enumeration.
+
 ## Bétermin FCC/BCC cold spots
 
 The [all-scale proof](../results/betermin-fcc-bcc-cold-spots/PROOF.md) uses parity projection, Jacobi products and a strict concavity argument. The proof does not depend on numerical testing. Run `python3 results/betermin-fcc-bcc-cold-spots/verify.py` for finite Gaussian comparisons and exact rational distance checks, including the corrected BCC representative.
