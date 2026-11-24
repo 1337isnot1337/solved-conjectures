@@ -1,5 +1,9 @@
 # History
 
+## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
+
+On 24 November 2026 the [complete Lean proof](results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) established the exact sum interval and original Conjecture 2.6 for every matching digit threshold k≥2. The proof formalizes the existing direct refinement argument, including the finite zero-tail repair and actual infinite expansions. All 12 sources passed strict compilation, the all-owned/private axiom audit and exact stock replay; the source statement and full receipt were independently reviewed. Maiken Gravgaard and Ying Wai Lee are the original proposers; the recorded proof by Cinna Davis and its priority qualifications are preserved. The two reused Lüroth modules and threshold-two boundary are not counted as new results. Aggregate and deployment checks remain separate.
+
 ## 2026-11-24 — Fan–Tringali’s power-monoid length-set conjecture
 
 Completed the Lean proof of the original 2018 conjecture for ordinary and restricted finitary power monoids of arbitrary Dedekind-finite non-torsion monoids, together with the exact reduced-natural-number length system. The 18-module closure includes the graph construction, all no-carry divisor and factorization lifts, and a fully proved noncommutative unit normalization and monoid transfer. Strict source builds, the complete all-owned/private axiom audit and stock kernel replay passed. The existing result row and mathematical attribution are retained; this is one existing result. Survey irreducibles, multiplicities and relative cancellativity remain unformalized supplements. The dedicated verifier/workflow and exact receipts keep the scoped proof pass separate from aggregate dependency-cache and hosted deployment obligations.

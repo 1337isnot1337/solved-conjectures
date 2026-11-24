@@ -30,6 +30,16 @@ modules=(
   Conjectures.CoulangeonLazzariniRealLattice
   Conjectures.GravgaardLeeMixedLuroth
   Conjectures.GravgaardLeeLargeLuroth
+  Conjectures.GravgaardLeeUpperLowerBasic
+  Conjectures.GravgaardLeeUpperLowerLinked
+  Conjectures.GravgaardLeeUpperLowerCylinders
+  Conjectures.GravgaardLeeUpperLowerMoves
+  Conjectures.GravgaardLeeUpperLowerOrbit
+  Conjectures.GravgaardLeeUpperLowerRepair
+  Conjectures.GravgaardLeeUpperLowerForcing
+  Conjectures.GravgaardLeeUpperLowerConvergence
+  Conjectures.GravgaardLeeUpperLowerTwo
+  Conjectures.GravgaardLeeUpperLower
   Conjectures.GesselZhuangBlockOperations
   Conjectures.GesselZhuangBlocks
   Conjectures.GesselZhuangChoices

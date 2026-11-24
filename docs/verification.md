@@ -1,5 +1,11 @@
 # Verification
 
+## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
+
+Complete for original Conjecture 2.6 and the stronger exact interval equality, for every k≥2. Lean constructs actual infinite expansions, proves the finite zero-tail repair, and includes the threshold-two boundary. The [scope report](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) and [independent review](../results/gravgaard-lee-upper-lower-luroth/LEAN_REVIEW.md) record the correspondence. The [complete receipt](verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json) covers 12 strict source builds, 664 declarations, 475 theorems, 173 private declarations, 29 required endpoints, and exact stock replay. Only the three allowed standard axioms occur. Aggregate verification and public deployment remain separate in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). The two reused previously completed Lüroth modules are not recounted. The mixed bounded-digit dependency retains its original proof already published through [PR #547](https://github.com/1337isnot1337/solved-conjectures/pull/547).
+
+Reproduce the isolated closure with `cd lean && lake env python3 ../scripts/verify_gravgaard_lee_upper_lower.py`. The protected aggregate attempt is preserved with its failed dependency-cache result; it does not assert an aggregate pass.
+
 ## Steinerberger’s greedy-energy Fourier conjecture
 
 The [publication receipt](../results/steinerberger-greedy-fourier/verification/receipt.json) records the exact four-module closure: fresh strict source builds, the all-owned/private audit of 113 declarations and all 15 required endpoints, and unchanged stock-kernel replay. The only allowed transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The [independent review](../results/steinerberger-greedy-fourier/LEAN_REVIEW.md) separately audits the original conjecture and full counterexample.
