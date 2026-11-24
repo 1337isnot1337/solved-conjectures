@@ -4,6 +4,7 @@
 
 The [complex BSS research campaign](research/complex-bss-p-vs-np/README.md) now includes reviewed singular-witness and dense omitted-boundary Taylor-jet arguments. Small existential presentations of a low-degree polynomial graph, or dense existential images omitting that graph, imply small border circuits. A graph factor in a degeneration of existential hypersurfaces has the same consequence. With the standing permanent lower bound, these exclude the proposed positive resultant initial-factor and six-resultant existential constructions and place the permanent graph outside both nonuniform NP_C and coNP_C. They do not separate P_C from NP_C. The notes retain the explicit homogenization and escape-order counterexamples, record the analytic primary source, and preserve the earlier restricted smooth-certificate result with its scope. Internal mathematical reviews are distinguished from formal verification; no Lean source or solved-results classification changes. [Issue #248](https://github.com/1337isnot1337/solved-conjectures/issues/248).
 
+
 ## 2026-11-23 — Three-evaluation Fourier filter for quadratic resultants
 
 A [cube-root-of-unity character filter](research/complex-bss-p-vs-np/FOURIER_RESULTANT_FILTER.md) extracts the VNP-hard BCJS grid coefficient from three tensor-resultant evaluations as the first nonzero homogeneous part. It transfers the imported 2^{Omega((log N)^{4/3})} border lower bound to generic quadratic resultants. Even the cofactor 1+a* causes the filter to expose a degree-one term, so the exclusion-complexity target and P_C versus NP_C remain open. [Finite checker](research/complex-bss-p-vs-np/verify_fourier_filter.py).
@@ -15,6 +16,8 @@ The [smooth-certificate note](research/complex-bss-p-vs-np/SMOOTH_CERTIFICATE_BA
 ## 2026-11-23 — Valiant’s extended hypothesis, two-branch research
 
 A variable-scale first lift gives a written superquasipolynomial permanent lower bound under the contracting hypothesis. In the flat case a bounded-degree construction recovers the source exponent, and a cut-dependent placement handles balanced cuts covered by few Hamming balls. A tensor-train decomposition and a shared matrix-product circuit identify where independent rank multiplication fails. The unrestricted flat implication remains open. [Research proofs and finite checks](research/valiant-extended/) · [Issue #256](https://github.com/1337isnot1337/solved-conjectures/issues/256) · [PR #257](https://github.com/1337isnot1337/solved-conjectures/pull/257)
+
+The follow-up derives an [explicit contracting rate](research/valiant-extended/CONTRACTION.md#4-an-explicit-rate-in-the-contracting-case) and an [ordinary partition-rank bound](research/valiant-extended/DIAGONAL.md) for cuts sharing vertex classes, with a finite diagonal-restriction check. [Adversarial review thread](https://github.com/1337isnot1337/solved-conjectures/discussions/259).
 
 ## 2026-11-23 — Complex BSS separation research and failed reductions
 

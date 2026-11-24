@@ -22,11 +22,12 @@ Anthropic's pinned Theorem M.3 gives $`\log S(m)\ge c(\log m)^{4/3}`$ for all la
 | Assumption | Imported lower bound on binary log size at $`m`$ | Result of this investigation |
 | --- | --- | --- |
 | Flat | $`\Omega((\log m)^{4/3})`$, E.11 | Same general power from constant-degree networks. Superquasipolynomial size with a polylogarithmic cover of the used balanced cuts as specified in the note. |
-| Contracting | $`\Omega((\log m)^2/\log\log m)`$, K.7 | For each fixed $`k`$, greater than $`(\log m)^k`$ for all sufficiently large $`m`$, by a variable-scale first lift. |
+| Contracting | $`\Omega((\log m)^2/\log\log m)`$, K.7 | At least $`2^{c\sqrt{\log m}}`$ for all sufficiently large $`m`$, by a variable-scale first lift. |
 | Either, circuit unrestricted | $`\Omega((\log m)^{4/3})`$, M.3 | The flat row limits the common guarantee. |
 
 In the sparse construction $`m`$ can be taken to be the dimension $`M`$ of the clause-sum projection. For unrestricted circuits E.11 itself gives the stated all-large-$`m`$ bound. In the contracting proof $`v=\lfloor m^{1/B_0}\rfloor`$, so the scale change costs only a constant in $`\log m`$. The graph order, edge-label width and accelerator scale are internal parameters. The missing inference is an unrestricted flat lower bound in $`m`$ beating every fixed log power. One sufficient route would force a small cover of balanced cuts as defined in the flat note for every projected quasipolynomial circuit, with its cover exponent and the label width chosen consistently. A polylog cover whose exponent grows without control as the label width is changed would not give that implication.
 
 - [Flat-branch proofs, sparse reduction, gate-sharing test and cut-list geometry](FLAT.md)
 - [Variable-scale cut, first lift and application of K.6](CONTRACTION.md)
+- [Diagonal restriction in either branch for cut lists sharing vertex classes](DIAGONAL.md)
 - [Exact finite checks](verify.py), run with `python3 research/valiant-extended/verify.py`. They test the graph and circuit identities and the cut budgets. The asymptotic implications use the written proofs.

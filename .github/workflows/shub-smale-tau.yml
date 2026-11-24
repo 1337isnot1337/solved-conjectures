@@ -1,0 +1,22 @@
+name: shub smale tau research checks
+
+on:
+  push:
+    paths:
+      - 'research/shub-smale-tau/**'
+      - '.github/workflows/shub-smale-tau.yml'
+  pull_request:
+    paths:
+      - 'research/shub-smale-tau/**'
+      - '.github/workflows/shub-smale-tau.yml'
+
+jobs:
+  exact-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check the finite identities and counterexamples
+        run: python3 research/shub-smale-tau/verify.py
