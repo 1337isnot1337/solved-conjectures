@@ -19,6 +19,8 @@ Curated by [Cinna Davis](https://1337isnot1337.github.io/) and GPT-6.2 Astra. Ex
 | [Kovalev’s linear Lipschitz clustering questions](results/kovalev-lipschitz-clustering/) | ⬜ |
 | [Revised Tan–Zhou conjecture](results/revised-tan-zhou-luroth/) | ⬜ |
 | [Gravgaard–Lee’s mixed Lüroth sumset conjecture](results/gravgaard-lee-mixed-luroth/) | ⬜ |
+| [Gravgaard–Lee’s large-digit Lüroth sumset conjecture](results/gravgaard-lee-large-luroth/) | ⬜ |
+| [Gravgaard–Lee’s mixed upper/lower Lüroth conjecture](results/gravgaard-lee-upper-lower-luroth/) | ⬜ |
 | [Johnson's conjecture](results/johnson-pfaffian/) | 🟡 |
 | [Chen–Khare–Sahi's conjecture](results/chen-khare-sahi-macdonald/) | 🟡 |
 | [Caiolo–Ferroni–Hoster conjecture](results/caiolo-ferroni-hoster/) | ⬜ |

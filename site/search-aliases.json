@@ -115,6 +115,8 @@
   "kovalev-lipschitz-clustering": ["Leonid Kovalev", "Lipschitz clustering", "finite subset spaces", "Hausdorff distance", "single linkage", "Lipschitz retraction", "Wasserstein barycenter"],
   "revised-tan-zhou-luroth": ["Tan Zhou conjecture", "Lee", "Luroth expansions", "Lüroth convergents", "Hausdorff dimension", "lower order", "Mass Transference Principle"],
   "gravgaard-lee-mixed-luroth": ["Gravgaard Lee conjecture", "Luroth expansions", "Lüroth digits", "modulo one", "Cantor set sum", "graph-directed interval certificate"],
+  "gravgaard-lee-large-luroth": ["Gravgaard Lee", "large Lüroth digits", "strictly increasing digits", "Cantor sumset interior", "alternating greedy"],
+  "gravgaard-lee-upper-lower-luroth": ["Gravgaard Lee", "Luroth sets", "Lüroth digits", "same upper and lower bounds", "Cantor gap", "modulo one"],
   "haralambis-three-differences": [
     "Haralambis conjecture",
     "three forbidden differences",
