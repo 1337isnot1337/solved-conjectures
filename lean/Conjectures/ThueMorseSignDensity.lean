@@ -79,21 +79,21 @@ theorem exception1_iff (n : Nat) : exception 2 1 n ↔ 0 < t 2 (3*n+1) := by
 
 theorem bit0 : exceptionBit 2 0 = (fun n => decide (t 2 (3*n)<0)) := by
   funext n
-  change decide (exception 2 0 n) = decide (t 2 (3*n)<0)
-  by_cases h : exception 2 0 n
-  · have h' := (exception0_iff n).mp h
-    simp [h,h']
-  · have h' : ¬ t 2 (3*n)<0 := fun hn => h ((exception0_iff n).mpr hn)
-    simp [h,h']
+  by_cases h : t 2 (3*n)<0
+  · simp [exceptionBit,sign,h]
+  · have hne := t_nonzero (3*n)
+    simp [exceptionBit,sign,h,hne]
 
 theorem bit1 : exceptionBit 2 1 = (fun n => decide (0<t 2 (3*n+1))) := by
   funext n
-  change decide (exception 2 1 n) = decide (0<t 2 (3*n+1))
-  by_cases h : exception 2 1 n
-  · have h' := (exception1_iff n).mp h
-    simp [h,h']
-  · have h' : ¬ 0<t 2 (3*n+1) := fun hn => h ((exception1_iff n).mpr hn)
-    simp [h,h']
+  by_cases h : t 2 (3*n+1)<0
+  · have hp : ¬ 0<t 2 (3*n+1) := by omega
+    simp [exceptionBit,sign,h,hp]
+  · have hp : 0<t 2 (3*n+1) := by
+      have hn := t_nonzero (3*n+1)
+      omega
+    have hn := t_nonzero (3*n+1)
+    simp [exceptionBit,sign,h,hn,hp]
 
 theorem exception_block0 (h : Nat) : ∃ s : Nat, s<512 ∧ exception 2 0 (512*h+s) := by
   obtain ⟨s,hs,ht⟩ := block0 recurrence h
