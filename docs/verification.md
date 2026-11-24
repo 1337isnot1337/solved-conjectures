@@ -1,5 +1,100 @@
 # Verification
 
+## Ferroni–Higashitani’s first-three interior Ehrhart question
+
+The [scoped receipt](verification/lean-ferroni-higashitani-complete-20261124/receipt.json) covers the full `Conjectures.FerroniHigashitaniEhrhart` closure, including the closed and interior counts, the polynomial reflection identity, and the original inequality. Run `python3 scripts/verify_lean_target.py --root Conjectures.FerroniHigashitaniEhrhart --require FerroniHigashitani.question_5_12a --out /tmp/ferroni-lean` from the repository root with pinned Lean and Mathlib installed. The [aggregate workflow](../.github/workflows/lean.yml) uses the updated imports, audit endpoints, and replay registry. The exact Python checker remains a supplementary independent computation.
+
+## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
+
+Complete for original Conjecture 2.6 and the stronger exact interval equality, for every k≥2. Lean constructs actual infinite expansions, proves the finite zero-tail repair, and includes the threshold-two boundary. The [scope report](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) and [independent review](../results/gravgaard-lee-upper-lower-luroth/LEAN_REVIEW.md) record the correspondence. The [complete receipt](verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json) covers 12 strict source builds, 664 declarations, 475 theorems, 173 private declarations, 29 required endpoints, and exact stock replay. Only the three allowed standard axioms occur. Aggregate verification and public deployment remain separate in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). The two reused previously completed Lüroth modules are not recounted. The mixed bounded-digit dependency retains its original proof already published through [PR #547](https://github.com/1337isnot1337/solved-conjectures/pull/547).
+
+Reproduce the isolated closure with `cd lean && lake env python3 ../scripts/verify_gravgaard_lee_upper_lower.py`. The protected aggregate attempt is preserved with its failed dependency-cache result; it does not assert an aggregate pass.
+
+## Steinerberger’s greedy-energy Fourier conjecture
+
+The [publication receipt](../results/steinerberger-greedy-fourier/verification/receipt.json) records the exact four-module closure: fresh strict source builds, the all-owned/private audit of 113 declarations and all 15 required endpoints, and unchanged stock-kernel replay. The only allowed transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The [independent review](../results/steinerberger-greedy-fourier/LEAN_REVIEW.md) separately audits the original conjecture and full counterexample.
+
+With the pinned Lean and Mathlib dependencies installed, reproduce the scoped check from `lean/`:
+
+```sh
+lake env python3 ../scripts/verify_steinerberger_greedy.py
+```
+
+The [dedicated workflow](../.github/workflows/lean-steinerberger-greedy.yml) uses that same runner on proof, registration, toolchain and verifier changes. The [original lane receipt](../results/steinerberger-greedy-fourier/verification/lane/receipt.json) preserves its three unsuccessful replay attempts and the subsequent passing single-thread replay. The publication receipt is a fresh check of the registered candidate. It does not claim the aggregate repository gate or a public-site deployment has passed; those obligations are tracked in [issue #563](https://github.com/1337isnot1337/solved-conjectures/issues/563).
+
+
+
+## Coulangeon–Lazzarini’s two-shell counterexample
+
+The [scoped receipt](verification/lean-coulangeon-lazzarini-20261124/receipt.json)
+records strict compilation, the all-owned axiom audit and pinned replay
+for the integer shell theorem and its full-rank real lattice realization.
+The registered endpoints include first-shell order, moment equivalence and
+the dimension-ten refutation.
+
+## Gravgaard–Lee’s mixed Lüroth sumset
+
+The [scoped receipt](verification/lean-gravgaard-lee-mixed-luroth-20261124/receipt.json)
+records strict compilation, an all-owned axiom audit and pinned kernel replay
+for both modules in the local closure. The source intervals and every real
+residue are covered by the registered endpoints.
+
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+The [scoped receipt](verification/lean-gravgaard-lee-large-luroth-20261124/receipt.json)
+records strict compilation, the all-owned axiom audit and stock-kernel replay
+for `Conjectures.GravgaardLeeLargeLuroth`. The registered endpoints cover the
+source series, the witness expansions and Conjecture 2.12.
+
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+The [complete closure receipt](verification/gessel-zhuang-20261124/receipt.json), finished 24 November 2026 at 17:30:16 UTC, records fresh strict compilation of 25 project modules, the unchanged audit of 641 declarations (479 theorems and 185 private declarations), all 17 required endpoints, and full stock-kernel replay. Only `propext`, `Classical.choice`, and `Quot.sound` occur transitively. The dedicated workflow repeats the target gate. The exact finite path checker passed through size nine and is supplementary. The repository-wide gate remains separately blocked by the documented dependency-cache problem; neither hosted success nor deployment is inferred from this target receipt.
+
+## Hajdu–Sárközy’s shifted-power perturbation conjecture
+
+From `lean/`, run `lake env python3 ../scripts/verify_hajdu_sarkozy.py`. The [dedicated workflow](../.github/workflows/lean-hajdu-sarkozy-shifted-power.yml) performs the same strict source builds, complete all-owned/private axiom audit, and exact stock-kernel replay. The [publication receipt](../results/hajdu-sarkozy-shifted-power-perturbations/verification/receipt.json) binds all eleven sources and their controls, objects, logs, and declaration inventory. The complete original and general-shift scope, optional unformalized supplement, [independent review](../results/hajdu-sarkozy-shifted-power-perturbations/LEAN_REVIEW.md), original lane receipt, and interrupted-run evidence are retained in the existing entry. The aggregate package gate and hosted deployment remain separate checks.
+
+## Rowland–Sistos Barrón conjecture
+
+The [complete closure receipt](verification/rowland-20261124/receipt.json), finished 24 November 2026 at 17:09:57 UTC, records 17 fresh strict module builds, the unchanged audit of 286 owned declarations (261 theorems and five private declarations), 11 required endpoints, and complete stock-kernel replay. The only transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The `lean-rowland-sistos-barron.yml` workflow reproduces the target gate. The whole-repository gate and hosted deployment remain separate. The [exact supplemental checker](verification/rowland-20261124/supplementary-check.json) was rerun through exponent 180 and supplies no assumption to the unbounded proof.
+
+## Johnson's conjecture
+
+The [complete closure receipt](verification/johnson-20261124/receipt.json), finished 24 November 2026 at 17:06:28 UTC, records thirty fresh strict module compilations, the unchanged audit of all 1,195 owned declarations (1,006 theorems and 28 private declarations), eight required endpoints, and unchanged stock-kernel replay. It checks the full finite-tuple source statement and the general circular-product theorem. Only `propext`, `Classical.choice`, and `Quot.sound` are permitted.
+
+The `lean-johnson.yml` workflow reproduces this target check. The target receipt does not assert the repository-wide gate for unrelated entries; hosted and aggregate results remain separate. The existing Python checker is a supplementary diagnostic, not a proof premise.
+
+## Caiolo–Ferroni–Hoster counterexample family
+
+Run the following from `lean/` with its pinned toolchain. The replay checks the
+complete local import closure for the all-prime-powers theorem. The standard
+`scripts/verify_lean.sh` package gate also includes these modules.
+
+```sh
+lake build Conjectures.CaioloFerroniHoster
+lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoster
+```
+
+[Source correspondence and axiom audit](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
+## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
+
+The [complete target receipt](verification/juhnke-20261124/receipt.json) records fresh strict compilation of all 18 project modules, the unchanged audit of all 577 owned declarations (502 theorems and 11 required endpoints), and unchanged stock-kernel replay. The pinned Lean version is 4.35.0; the only allowed transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The complete source statement and literal-path bridge were independently reviewed against the original report.
+
+The dedicated `lean-juhnke.yml` workflow reproduces the target check with `scripts/verify_lean_target.py`. Its target receipt does not claim repository-wide verification of unrelated entries. The existing exact diagnostic checker also passed dimensions 3 through 62; the Lean theorem has unbounded dimension and step-count parameters.
+
+## Steinerberger’s quantitative Feldheim-tail conjecture
+
+The [complete Lean disproof](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md)
+constructs the probability law with survival function exp(−x−x²/200), identifies
+its actual mean and median, and bounds the ratio of the original product-space
+events for every positive threshold. Both original existence claims fail.
+The four-module closure passed strict compilation, the audit of all 103 owned
+declarations (92 theorems and six required endpoints), and stock-kernel replay.
+The integrator checked the statement against both original primary sources.
+The smoothing, all-epsilon family, strict log-concavity, and rate supplements
+remain unformalized. This is one completed existing conjecture entry.
+
 ## Complex BSS separation research
 
 [Research receipts and replay instructions](https://github.com/1337isnot1337/solved-conjectures/blob/research/docs/verification.md#complex-bss-separation-research). Check out `research` before running the research scripts.
@@ -806,7 +901,7 @@ The [mixed-group threshold proof](../results/ma-tang-random-subset-sums/PROOF.md
 
 ## Thue–Morse valuation conjecture
 
-The [Lean proof](../lean/Conjectures/ThueMorseValuation.lean) checks the original general clause’s disproof, the exponent-17 witness and the uniform family for k ≥ 11. The integer packing certificate is checked by ordinary kernel reduction. The [local receipt](../docs/verification/lean-thue-morse-valuation-20261124/receipt.json) records source hashes, the complete owned/private axiom audit and stock-kernel replay.
+The [Lean proof](../lean/Conjectures/ThueMorseValuation.lean) checks the original general clause’s disproof, the exponent-17 witness and the uniform family for k ≥ 11. The integer packing certificate is checked by ordinary kernel reduction. The [local receipt](../docs/verification/lean-thue-morse-valuation-publication-20261124/receipt.json) records source hashes, the complete owned/private axiom audit and stock-kernel replay.
 
 From the repository root, build and replay the exact local closure with the pinned toolchain.
 

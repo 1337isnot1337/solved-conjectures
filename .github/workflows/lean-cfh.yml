@@ -1,0 +1,55 @@
+name: Caiolo–Ferroni–Hoster Lean verification
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'lean/Conjectures/CaioloFerroniHoster*.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-cfh.yml'
+  push:
+    branches: [main, research]
+    paths:
+      - 'lean/Conjectures/CaioloFerroniHoster*.lean'
+      - 'scripts/verify_lean_target.py'
+      - '.github/workflows/lean-cfh.yml'
+      - 'lean/lean-toolchain'
+      - 'lean/lake-manifest.json'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Build, audit and replay the complete family
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+          auto-config: false
+          use-mathlib-cache: true
+          build: false
+          test: false
+          lint: false
+          check-lean-environment: false
+      - name: Check the exact local theorem closure
+        run: >-
+          python3 scripts/verify_lean_target.py
+          --root Conjectures.CaioloFerroniHoster
+          --require CaioloFerroniHoster.counterexample_family
+          --require CaioloFerroniHoster.witness_root_properties
+          --require CaioloFerroniHoster.hyperplane_replacement_count
+          --require CaioloFerroniHoster.gamma_signs
+          --out .candidate-artifacts/caiolo-ferroni-hoster
+      - uses: actions/upload-artifact@v4
+        with:
+          name: caiolo-ferroni-hoster
+          path: .candidate-artifacts/caiolo-ferroni-hoster/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

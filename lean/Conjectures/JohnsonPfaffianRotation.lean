@@ -76,7 +76,7 @@ theorem crossingCount_rotate_and_reorder (n : ℕ) (M N : List (ℕ × ℕ))
   rw [crossingCount_perm hN, crossingCount_rotate n M hM]
 
 theorem edgeCross_eq_contribution (e f : ℕ × ℕ)
-    (he : e.1 < e.2) (hf : f.1 < f.2) (hclose : f.2 < e.2) :
+    (_he : e.1 < e.2) (_hf : f.1 < f.2) (hclose : f.2 < e.2) :
     edgeCross e f = GilmoreCrossingNesting.crossContribution e.1 f := by
   unfold edgeCross crosses GilmoreCrossingNesting.crossContribution
   split_ifs <;> omega
@@ -150,7 +150,7 @@ theorem rotate_endpoints_perm (n : ℕ) (M : List (ℕ × ℕ)) :
         exact List.Perm.swap _ _ _
     simpa [GilmoreCrossingNesting.arcEndpoints, rotateEdge] using hpair.append ih
 
-theorem rotateVertex_inj (n x y : ℕ) (hx : x<n) (hy : y<n)
+theorem rotateVertex_inj (n x y : ℕ) (_hx : x<n) (_hy : y<n)
     (h : rotateVertex n x = rotateVertex n y) : x=y := by
   unfold rotateVertex at h
   split_ifs at h <;> omega
@@ -162,7 +162,7 @@ theorem rotateEdge_ordered (n : ℕ) (e : ℕ × ℕ) (he : e.1<e.2 ∧ e.2<n) :
     have heq := rotateVertex_inj n e.1 e.2 (by omega) he.2 hh
     omega
   unfold rotateEdge
-  simp only [Prod.fst, Prod.snd]
+  dsimp only
   by_cases h : rotateVertex n e.1 ≤ rotateVertex n e.2
   · rw [min_eq_left h,max_eq_right h]
     omega
@@ -198,19 +198,18 @@ def unrotateVertex (n x : ℕ) : ℕ := if x=0 then n-1 else x-1
 def unrotateEdge (n : ℕ) (e : ℕ × ℕ) : ℕ × ℕ :=
   (min (unrotateVertex n e.1) (unrotateVertex n e.2), max (unrotateVertex n e.1) (unrotateVertex n e.2))
 
-theorem unrotate_rotateVertex (n x : ℕ) (hx : x<n) : unrotateVertex n (rotateVertex n x) = x := by
+theorem unrotate_rotateVertex (n x : ℕ) (_hx : x<n) : unrotateVertex n (rotateVertex n x) = x := by
   by_cases h : x+1=n
   · have hn : n-1=x := by omega
     simp [rotateVertex, unrotateVertex, h, hn]
-  · have hp : x+1 ≠ 0 := by omega
-    simp [rotateVertex, unrotateVertex, h, hp]
+  · simp [rotateVertex, unrotateVertex, h]
 
 theorem unrotate_rotateEdge (n : ℕ) (e : ℕ × ℕ) (he : e.1<e.2 ∧ e.2<n) :
     unrotateEdge n (rotateEdge n e) = e := by
   have h1 : e.1<n := by omega
   have h2 := he.2
   unfold unrotateEdge rotateEdge
-  simp only [Prod.fst, Prod.snd]
+  dsimp only
   by_cases h : rotateVertex n e.1 ≤ rotateVertex n e.2
   · rw [min_eq_left h, max_eq_right h, unrotate_rotateVertex n e.1 h1, unrotate_rotateVertex n e.2 h2]
     simp [min_eq_left he.1.le,max_eq_right he.1.le]

@@ -1,0 +1,34 @@
+{
+  "reviewed_at": "2026-11-24T17:38:16.955265+00:00",
+  "status": "mathematical-statement-and-receipt-review-passed",
+  "reviewer_role": "independent of general proof author; author audit only for Two module",
+  "primary_source": "https://arxiv.org/html/2506.12513v2",
+  "source_statement": "Conjecture 2.6, Sections 1.2 and 2.1",
+  "existing_argument_commit": "06f4ac32f33e84191048569c621ca41b8c9cd91f",
+  "scope": "full all-k original conjecture and exact interval equality; count one",
+  "report_sha256": "9946ed9ccd350118e40db52577bd717441e6e78bb12961e970b9926022262b4a",
+  "source_sha256": {
+    "Conjectures.GravgaardLeeLargeLuroth": "9e89dd9cacc7f601ce4949a4f113976b3043d93e85ba1b874ff8560f76ea9da3",
+    "Conjectures.GravgaardLeeMixedLuroth": "54365d67ff946539c3929ebbb61e2d18ed11358dee4de9fcd928219ea4bc0c5d",
+    "Conjectures.GravgaardLeeUpperLowerBasic": "b6c8ce67b2098fe65f5dc72909ad387d1f383060797a69770737a1547e195219",
+    "Conjectures.GravgaardLeeUpperLowerLinked": "0e781773ecaeef6b63fed20e6b96b5354e672a8cdbb626dd9da1fdf2d5613a4f",
+    "Conjectures.GravgaardLeeUpperLowerCylinders": "dd929f69e076d261816a15e298156ef8a3aa4a6659f102b8a7886c33b6850a76",
+    "Conjectures.GravgaardLeeUpperLowerMoves": "87e2ea5833de3781f5e954fa218b3b48c36b02be83e69f098e790eaf5df1c607",
+    "Conjectures.GravgaardLeeUpperLowerOrbit": "e16d47c262928c21b8cbfb07722e95a4b144060b433a8270fa059049230c3a2e",
+    "Conjectures.GravgaardLeeUpperLowerRepair": "e38f024555bf040a22dea6605503f06a341a7f55035c2e4de6dcd208afb44b8f",
+    "Conjectures.GravgaardLeeUpperLowerForcing": "0ad624300b12f9026dbe9805c127d3798ba0711ba437c3e6d33a4f5b141ebb0a",
+    "Conjectures.GravgaardLeeUpperLowerConvergence": "efc271a79b75a2f4583f49f146122b802ef7e5f030070ae20a0c8e9535911074",
+    "Conjectures.GravgaardLeeUpperLowerTwo": "bc9325aba416841cb5e142cbc10bbdeea06f65424853abc46ef0c16aec185154",
+    "Conjectures.GravgaardLeeUpperLower": "def68e499f7aa0323451998e1b1011f4998a142f19f5ce41b557e6affce73b63"
+  },
+  "machine_verification": {
+    "receipt_sha256": "f06a75528115b2bbb590e515a2ad20296ec7c2cfc6cdc4584e1afb26d967c472",
+    "independent_read_only_validation": "passed",
+    "modules": 12,
+    "owned_declarations": 664,
+    "theorems": 475,
+    "private_declarations": 173,
+    "required_endpoints": 29,
+    "exact_stock_replay_set_validated": true
+  }
+}

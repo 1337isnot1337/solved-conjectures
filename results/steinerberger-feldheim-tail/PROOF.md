@@ -1,5 +1,7 @@
 # Steinerberger’s two quantitative Feldheim tail guesses
 
+The two original disproofs have a [complete Lean formalization](LEAN-AUDIT.md). The separate refinements later in this document are outside that verification scope.
+
 **Result.** Both existential inequalities in Questions 1 and 2
 of [Steinerberger, *Some Open Problems*, §24, March 31 2026](https://faculty.washington.edu/steinerb/openproblems.pdf),
 already posed in [*A Sharp Estimate for Probability Distributions*,

@@ -15,7 +15,7 @@ theorem swap_cross_both_right (i b d : ℕ) (hb : i+1<b) (hd : i+1<d) (hbd : b�
     simp [swapEdge,swapVertex,hdi,hdi1,min_eq_left (by omega : i ≤ d),max_eq_right (by omega : i ≤ d)]
   rw [he,hf]
   unfold edgeCross crosses
-  simp only [Prod.fst,Prod.snd]
+  dsimp only
   split_ifs <;> omega
 
 theorem swap_cross_both_left (i a c : ℕ) (ha : a < i) (hc : c < i) (hac : a≠c) :
@@ -26,7 +26,7 @@ theorem swap_cross_both_left (i a c : ℕ) (ha : a < i) (hc : c < i) (hac : a≠
     simp [swapEdge,swapVertex,show c≠i by omega,show c≠i+1 by omega,min_eq_left (by omega : c ≤ i),max_eq_right (by omega : c ≤ i)]
   rw [he,hf]
   unfold edgeCross crosses
-  simp only [Prod.fst,Prod.snd]
+  dsimp only
   split_ifs <;> omega
 
 theorem swap_cross_straddle (i a d : ℕ) (ha : a < i) (hd : i+1<d) :
@@ -37,7 +37,7 @@ theorem swap_cross_straddle (i a d : ℕ) (ha : a < i) (hd : i+1<d) :
     simp [swapEdge,swapVertex,show d≠i by omega,show d≠i+1 by omega,min_eq_left (by omega : i ≤ d),max_eq_right (by omega : i ≤ d)]
   rw [he,hf]
   unfold edgeCross crosses
-  simp only [Prod.fst,Prod.snd]
+  dsimp only
   split_ifs <;> omega
 
 theorem swap_cross_nested (i b c : ℕ) (hb : i+1<b) (hc : c < i) :
@@ -48,7 +48,7 @@ theorem swap_cross_nested (i b c : ℕ) (hb : i+1<b) (hc : c < i) :
     simp [swapEdge,swapVertex,show c≠i by omega,show c≠i+1 by omega,min_eq_left (by omega : c ≤ i),max_eq_right (by omega : c ≤ i)]
   rw [he,hf]
   unfold edgeCross crosses
-  simp only [Prod.fst,Prod.snd]
+  dsimp only
   split_ifs <;> omega
 
 theorem swap_cross_toggles (i : ℕ) (e f : ℕ × ℕ)
@@ -58,7 +58,7 @@ theorem swap_cross_toggles (i : ℕ) (e f : ℕ × ℕ)
     edgeCross (swapEdge i e) (swapEdge i f) + edgeCross e f = 1 := by
   rcases e with ⟨a,b⟩
   rcases f with ⟨c,d⟩
-  simp only [Prod.fst,Prod.snd] at *
+  dsimp only at *
   have hdis' := List.disjoint_left.mp hdis
   have h1 : a ≠ c := by intro h; exact (hdis' (by simp : a ∈ [a,b])) (by simp [h])
   have h2 : a ≠ d := by intro h; exact (hdis' (by simp : a ∈ [a,b])) (by simp [h])
@@ -78,20 +78,20 @@ theorem crossing_increment_left (i b c d : ℕ) (hb : i+1<b) (hcd : c<d)
     (hc0 : c≠i) (hc1 : c≠i+1) (hd0 : d≠i) (hd1 : d≠i+1) :
     edgeCross (i+1,b) (c,d) = edgeCross (i,b) (c,d) := by
   unfold edgeCross crosses
-  simp only [Prod.fst,Prod.snd]
+  dsimp only
   split_ifs <;> omega
 
 theorem crossing_increment_right (a i c d : ℕ) (ha : a < i) (hcd : c<d)
     (hc0 : c≠i) (hc1 : c≠i+1) (hd0 : d≠i) (hd1 : d≠i+1) :
     edgeCross (a,i+1) (c,d) = edgeCross (a,i) (c,d) := by
   unfold edgeCross crosses
-  simp only [Prod.fst,Prod.snd]
+  dsimp only
   split_ifs <;> omega
 
 theorem swapEdge_untouched (i : ℕ) (e : ℕ × ℕ) (he : e.1<e.2)
     (h1 : e.1≠i) (h2 : e.1≠i+1) (h3 : e.2≠i) (h4 : e.2≠i+1) : swapEdge i e = e := by
   rcases e with ⟨a,b⟩
-  simp only [Prod.fst,Prod.snd] at *
+  dsimp only at *
   simp [swapEdge,swapVertex,h1,h2,h3,h4,min_eq_left he.le,max_eq_right he.le]
 theorem swap_cross_one (i : ℕ) (e f : ℕ × ℕ)
     (he : e.1<e.2) (hf : f.1<f.2)
@@ -100,7 +100,7 @@ theorem swap_cross_one (i : ℕ) (e f : ℕ × ℕ)
   rw [swapEdge_untouched i f hf h1 h2 h3 h4]
   rcases e with ⟨a,b⟩
   rcases f with ⟨c,d⟩
-  simp only [Prod.fst,Prod.snd] at *
+  dsimp only at *
   by_cases ha : a=i
   · subst a
     by_cases hb : b=i+1
@@ -168,7 +168,7 @@ theorem swap_matching_crossing_parity (u i : ℕ) (hi : i+1<2*u)
   have hef : e ≠ f := by
     intro h; subst f
     rcases e with ⟨a,b⟩
-    simp only [Prod.fst,Prod.snd] at *
+    dsimp only at *
     have : (a,b) = (i,i+1) := by rcases hei with h | h <;> rcases hfi with h' | h' <;> simp_all
     exact hpair (this ▸ he)
   have hdis := matching_edges_disjoint u M.val M.property e f he hf hef
@@ -272,7 +272,7 @@ theorem twin_rows_swap_weight {R : Type*} [CommRing R] (i : ℕ) (w : ℕ → �
       w (min i k) (max i k) = w (min (i+1) k) (max (i+1) k)) :
     ∀ e : ℕ × ℕ, e.1<e.2 → w (swapEdge i e).1 (swapEdge i e).2 = w e.1 e.2 := by
   intro ⟨a,b⟩ he
-  simp only [Prod.fst,Prod.snd] at he
+  dsimp only at he
   by_cases ha : a=i
   · subst a
     by_cases hb : b=i+1

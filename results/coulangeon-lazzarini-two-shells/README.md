@@ -5,9 +5,10 @@
 The proof uses a cubic lattice and one extra residue class. A second construction gives orthogonally indecomposable lattices with an arbitrarily long initial run of 2-design shells before a failing shell. Hence no fixed number of initial shells suffices across dimensions.
 
 - [Complete proof](PROOF.md)
+- [Lean proof of Conjecture 21’s refutation](../../lean/Conjectures/CoulangeonLazzariniRealLattice.lean)
 - [Height nonstationarity for both families](HEIGHT.md)
 - [Source and independent audit](AUDIT.md)
 - [Exact supplementary enumeration](verify.py)
 - [Discovery and review thread, issue #365](https://github.com/1337isnot1337/solved-conjectures/issues/365)
 
-The written proof does not rely on the enumeration. Internally reviewed; not Lean-formalized or externally refereed. No least-dimension claim.
+The written proof does not rely on the enumeration. Internally reviewed. Lean checks the original refutation and the elementary arbitrary-delay family. The orthogonally indecomposable construction and height results remain open in Lean. No external refereeing. No least-dimension claim.

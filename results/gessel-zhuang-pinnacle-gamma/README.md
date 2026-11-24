@@ -4,6 +4,8 @@
 
 The proof refines the pinnacle height path by the last inserted value’s location among its gaps. Each fixed path then gives a real-rooted, symmetric polynomial.
 
+- [Complete Lean formalization and statement audit](LEAN-AUDIT.md)
+- [Lean theorem](../../lean/Conjectures/GesselZhuangTheorem.lean)
 - [Complete proof](PROOF.md)
 - [Independent audit](AUDIT.md)
 - [Exact path check](check-path.py)

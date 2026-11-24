@@ -12,8 +12,94 @@ integer packing and ordinary kernel reduction.
 All three modules passed strict source compilation and pinned stock-kernel
 replay. The all-owned audit checked 123 declarations, including 96 private
 declarations, and eight required endpoints. See the
-[local receipt](verification/lean-thue-morse-valuation-20261124/receipt.json).
+[local receipt](verification/lean-thue-morse-valuation-publication-20261124/receipt.json).
 
+
+## Ferroni–Higashitani’s first-three interior Ehrhart question
+
+The [Lean proof](../results/ferroni-higashitani-early-interior-ehrhart/FORMALIZATION.md) constructs the original dimension-170 Cayley-box witness in the usual integer lattice and proves the strict inequality in Question 5.12(a) for its unique Ehrhart polynomial. The proof checks IDP at every positive dilation and gives an exact identification of the three negative evaluations with the corresponding topological interior lattice-point counts. The written amplification and the triangulation supplement remain separate.
+
+## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
+
+Complete for original Conjecture 2.6 and the stronger exact interval equality, for every k≥2. Lean constructs actual infinite expansions, proves the finite zero-tail repair, and includes the threshold-two boundary. The [scope report](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) and [independent review](../results/gravgaard-lee-upper-lower-luroth/LEAN_REVIEW.md) record the correspondence. The [complete receipt](verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json) covers 12 strict source builds, 664 declarations, 475 theorems, 173 private declarations, 29 required endpoints, and exact stock replay. Only the three allowed standard axioms occur. Aggregate verification and public deployment remain separate in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). The two reused previously completed Lüroth modules are not recounted. The mixed bounded-digit dependency retains its original proof already published through [PR #547](https://github.com/1337isnot1337/solved-conjectures/pull/547).
+
+## Steinerberger’s greedy-energy Fourier conjecture
+
+The [complete Lean disproof](../results/steinerberger-greedy-fourier/FORMALIZATION.md) constructs one actual infinite sequence satisfying the exact Bernoulli-kernel minimization rule. Its actual truncated harmonic-weighted sum of absolute Fourier magnitudes violates every eventual logarithmic bound. The proof establishes greedy admissibility directly and does not assume a characterization of minimizers.
+
+The [independent review](../results/steinerberger-greedy-fourier/LEAN_REVIEW.md) checks the original source, all sequence and Fourier definitions, the truncation and injectivity of the selected frequencies, and the final asymptotic negation. The four-module closure has 113 owned declarations, including 96 theorems and three private declarations, and 15 required endpoints. The [verification receipt](../results/steinerberger-greedy-fourier/verification/receipt.json) records fresh strict builds, the complete axiom audit and stock-kernel replay. Only the original conjecture is marked complete; the written sharp-constant and all-tie-breaking supplements remain unformalized. The recorded argument and prior dyadic results retain their attribution and priority qualification.
+
+## Coulangeon–Lazzarini’s two-shell conjecture
+
+[Lean refutes Conjecture 21 in dimension ten](../lean/Conjectures/CoulangeonLazzariniRealLattice.lean).
+It verifies the full-rank discrete lattice in real space, identifies its first two
+positive squared norms as 4 and 8, and checks the two spherical moment
+identities and the failure at squared norm 9. The [integer-coordinate proof](../lean/Conjectures/CoulangeonLazzariniShells.lean)
+also verifies the arbitrary-delay parity-lattice family.
+The orthogonally indecomposable family and height results remain open in Lean.
+
+## Gravgaard–Lee’s mixed Lüroth sumset
+
+[Lean proves Conjecture 2.2 and the interval from the written proof](../lean/Conjectures/GravgaardLeeMixedLuroth.lean).
+The sum of the digit sets bounded above by three and four contains $[2879/3520,2]$
+and represents every real residue modulo one. The proof checks the fifteen
+branch containments and the geometric approximation argument for the closed
+sumsets of infinite Lüroth expansions. The two-module local import closure
+passed the pinned kernel replay.
+
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+[Lean proves Conjecture 2.12 and the stronger interval in the written proof](../lean/Conjectures/GravgaardLeeLargeLuroth.lean).
+For every integer $k\ge2$, the sum of the large-digit Lüroth set with itself contains
+$(0,1/(k-1)]$. The witnesses have strictly increasing interleaved digits.
+The development verifies both the convergence of the source's series and the half-open
+digit intervals. See `conjecture_2_12`, `interval_subset_sum` and `interleaved_decomposition`.
+
+## Gessel–Zhuang’s pinnacle-set gamma-positivity conjecture
+
+`GesselZhuang.conjecture_7_3` and `GesselZhuang.conjecture_7_2` prove the complete existing result for the actual finite permutation sums, with exponent inverse descents plus one and gamma center `(N+1)/2`. `pinnacle_gamma_expansion` exposes the coefficients directly. The [source audit](../results/gessel-zhuang-pinnacle-gamma/LEAN-AUDIT.md) checks all labels, statistics, quantifiers, and boundary conventions against the primary article. The history equivalence and polynomial enumeration are proved, as are every root and gamma-factorization input. The separate inverse-peak Conjecture 7.1 is not asserted.
+
+## Hajdu–Sárközy’s shifted-power perturbation conjecture
+
+The [complete Lean formalization](../results/hajdu-sarkozy-shifted-power-perturbations/FORMALIZATION.md) proves the original conjecture for every exponent at least two and the stronger nonzero-shift symmetric-difference theorem. The actual real-threshold error is little-o of the root scale; arbitrary nontrivial positive-integer product decompositions are excluded after every finite modification. The original root-zero convention is included.
+
+The eleven-module closure passed strict compilation, the all-owned/private transitive axiom audit, and exact stock-kernel replay. The audit covers 185 declarations, 157 theorems, and twenty required endpoints, allowing only `propext`, `Classical.choice`, and `Quot.sound`. The [independent review](../results/hajdu-sarkozy-shifted-power-perturbations/LEAN_REVIEW.md) checks the exact source statement, the full argument and the frozen verification evidence. The [portable receipt](../results/hajdu-sarkozy-shifted-power-perturbations/verification/receipt.json) is distinct from the retained lane and interrupted-run records. The optional weaker-hypothesis retained-limsup supplement remains unformalized. Existing proposer/proof-author credits and bounded priority uncertainty are retained; this is one existing conjecture entry.
+
+## Rowland–Sistos Barrón conjecture
+
+`RowlandSistosBarron.rowland_sistos_barron_counterexample` proves the full recorded counterexample using the literal integer sequence and its minimum tail-recurrence ranks. The exponential-polynomial independence and minimal annihilator, all coefficient cancellations and their exact counts, and the unbounded square obstruction are proved. The [statement audit](../results/rowland-sistos-barron/LEAN_STATUS.md) maps each mathematical object to Lean and retains the source terminology qualification. All 17 project modules passed the three target verification gates; earlier partial records do not enlarge this scope.
+
+## Johnson's conjecture
+
+`JohnsonPfaffian.johnson_conjecture_fin` proves the full Conjecture 7.1 for an arbitrary ordered `Fin (2*u)` tuple and every literal perfect matching. The new circular-factor normalization, adjacent-edge induction, terminating uncrossing and exact distance-kernel bridge discharge the former general-order gap. `CircularData.matching_bound` also proves the stronger circular interval-product theorem without an uncrossing assumption. The [entry audit](../results/johnson-pfaffian/LEAN-AUDIT.md) maps the proof to the recorded argument and preserves all original attribution and priority limits.
+
+The complete thirty-module closure passed strict compilation, all-owned transitive axiom audit and stock-kernel replay. See the [source-hashed receipt](verification/johnson-20261124/receipt.json). Earlier partial checkpoints below remain historical records.
+
+## Caiolo–Ferroni–Hoster conjecture
+
+`CaioloFerroniHoster.counterexample_family` checks the complete rank-five
+construction for every prime power q ≥ 17. It proves the quartic dual Chow
+polynomial is positive on the reals and the quintic dual right augmented
+polynomial has one simple real root, −1. Both fail to split over the reals.
+[Lean theorem](../lean/Conjectures/CaioloFerroniHoster.lean) · [Review and replay](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
+
+## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
+
+`Juhnke.juhnke_conjecture` proves both original conclusions for the actual path counts in every dimension `d ≥ 2`. The representation is explicitly equivalent to ordered lists of positive east/north steps, with original start `(2,1)` and both original endpoints. The run decomposition, exact positive-composition counts, optional-cut polynomial, coefficient inequalities, translation, and unimodality are all proved. The 18-module closure contains no assumed enumeration or analytic theorem.
+
+The [entry audit](../results/juhnke-lattice-paths/LEAN-AUDIT.md) records the precise source, original proposer Martina Juhnke, proof credit to Cinna Davis and GPT-6.2 Astra, the Brenti translation criterion, and unchanged priority uncertainty. This is Conjecture 6; the separate coherent-path Conjecture 5 is not asserted. The complete [verification receipt](verification/juhnke-20261124/receipt.json) records 577 owned declarations, 502 theorems, 11 required endpoints, and stock-kernel replay.
+
+## Steinerberger’s quantitative Feldheim-tail conjecture
+
+The [complete Lean disproof](../results/steinerberger-feldheim-tail/LEAN-AUDIT.md)
+constructs the probability law with survival function exp(−x−x²/200), identifies
+its actual mean and median, and bounds the ratio of the original product-space
+events for every positive threshold. Both original existence claims fail.
+The four-module closure passed strict compilation, the audit of all 103 owned
+declarations (92 theorems and six required endpoints), and stock-kernel replay.
+The integrator checked the statement against both original primary sources.
+The smoothing, all-epsilon family, strict log-concavity, and rate supplements
+remain unformalized. This is one completed existing conjecture entry.
 
 ## Steinke–Zakynthinou’s agnostic VC learning conjecture
 
@@ -1624,3 +1710,9 @@ records 25 declarations, 22 theorems, eight private declarations, and the
 standard three-axiom whitelist. The root result is a full disproof of the
 universal source conjecture; the additional positive-beta and all-slope
 families remain unformalized. The combined repository gate remains pending.
+
+## Fan–Tringali’s power-monoid length-set conjecture
+
+Complete Lean verification of the original 2018 conjecture: every finite nonempty set of integers at least two is realized as the entire atom-length set in both the ordinary and restricted finitary power monoids of every Dedekind-finite monoid with infinitely many distinct positive powers. No ambient commutativity or cancellation is assumed. [`finite_spectrum_power_monoids`](../lean/Conjectures/FanTringaliMonoid.lean) proves the full transfer, and [`natural_length_system`](../lean/Conjectures/FanTringaliNaturalSystem.lean) proves the exact reduced-natural-number system.
+
+All 18 frozen modules passed strict source builds, the all-owned/private axiom audit (432 declarations, 350 theorems, three private declarations, 28 required endpoints), and stock kernel replay. [Scope and reproduction](../results/fan-tringali-power-monoid-lengths/LEAN.md), [statement review](../results/fan-tringali-power-monoid-lengths/LEAN_REVIEW.md), and [complete receipt](verification/lean-fan-tringali-complete-20261124-162051/receipt.json). The separate survey irreducible formulation, prescribed multiplicities and relative cancellativity remain unformalized. The scoped pass does not claim an aggregate repository pass or a current public deployment; those gates are reported separately, including the dependency-cache blocker in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). This is one completed existing entry.
