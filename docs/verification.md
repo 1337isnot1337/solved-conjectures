@@ -1,5 +1,13 @@
 # Verification
 
+
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+The [scoped receipt](verification/lean-gravgaard-lee-large-luroth-20261124/receipt.json)
+records strict compilation, the all-owned axiom audit and stock-kernel replay
+for `Conjectures.GravgaardLeeLargeLuroth`. The registered endpoints cover the
+source series, the witness expansions and Conjecture 2.12.
+
 ## Rowland–Sistos Barrón conjecture
 
 The [complete closure receipt](verification/rowland-20261124/receipt.json), finished 24 November 2026 at 17:09:57 UTC, records 17 fresh strict module builds, the unchanged audit of 286 owned declarations (261 theorems and five private declarations), 11 required endpoints, and complete stock-kernel replay. The only transitive axioms are `propext`, `Classical.choice`, and `Quot.sound`. The `lean-rowland-sistos-barron.yml` workflow reproduces the target gate. The whole-repository gate and hosted deployment remain separate. The [exact supplemental checker](verification/rowland-20261124/supplementary-check.json) was rerun through exponent 180 and supplies no assumption to the unbounded proof.

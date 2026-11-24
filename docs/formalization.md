@@ -1,5 +1,13 @@
 # Full formalization campaign
 
+## Gravgaard–Lee’s large-digit Lüroth sumset
+
+[Lean proves Conjecture 2.12 and the stronger interval in the written proof](../lean/Conjectures/GravgaardLeeLargeLuroth.lean).
+For every integer $k\ge2$, the sum of the large-digit Lüroth set with itself contains
+$(0,1/(k-1)]$. The witnesses have strictly increasing interleaved digits.
+The development verifies both the convergence of the source's series and the half-open
+digit intervals. See `conjecture_2_12`, `interval_subset_sum` and `interleaved_decomposition`.
+
 ## Rowland–Sistos Barrón conjecture
 
 `RowlandSistosBarron.rowland_sistos_barron_counterexample` proves the full recorded counterexample using the literal integer sequence and its minimum tail-recurrence ranks. The exponential-polynomial independence and minimal annihilator, all coefficient cancellations and their exact counts, and the unbounded square obstruction are proved. The [statement audit](../results/rowland-sistos-barron/LEAN_STATUS.md) maps each mathematical object to Lean and retains the source terminology qualification. All 17 project modules passed the three target verification gates; earlier partial records do not enlarge this scope.

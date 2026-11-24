@@ -9,6 +9,10 @@ project-specific axiom, transitively through all imported proof dependencies. -/
 open Lean Elab Command in
 run_cmd do
   let required : Array Name := #[
+    `GravgaardLeeLargeLuroth.conjecture_2_12,
+    `GravgaardLeeLargeLuroth.interval_subset_sum,
+    `GravgaardLeeLargeLuroth.interleaved_decomposition,
+    `GravgaardLeeLargeLuroth.value_hasSum,
     `RowlandSistosBarron.isTailRecurrence_iff,
     `RowlandSistosBarron.exponentialPolynomial_tailRecurrenceRank,
     `RowlandSistosBarron.poweredSequence_eq_exponential_sum,
