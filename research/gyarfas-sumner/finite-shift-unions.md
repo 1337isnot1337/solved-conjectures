@@ -16,7 +16,7 @@ We prove the stronger last sentence for \(G_0\), called the red constituent, wit
 
 Orient every constituent by the natural shift orientation, which is acyclic. The red edge subsets used later keep that orientation. Define the integer parameters
 \[
-q=b\,t(t-1)+2,\qquad H=(b+2)^h,\qquad Q=q(2^H)^{H+1},
+q=t+b\,t(t-1)+2,\qquad H=(b+2)^h,\qquad Q=q(2^H)^{H+1},
 \qquad N=1+Q+\cdots+Q^H,\qquad
 M=1+2N\sum_{i=0}^b d_i.
 \]
@@ -70,7 +70,7 @@ Choose the distinct branches by a uniform random injection independently at each
 
 ## 4. Finish the chromatic bound
 
-If the original union is induced-\(T\)-free, the successful-host case of Section 2 cannot occur for any red edge restriction. For \(b>0\), induct on the number of unpinned positions across the extra colors. A stage with a fully pinned color has bound \(2\). Every other stage invokes the empty-core edge partition, increases the number of pinned positions in each child, and turns a bound \(C\) for its child stages into \(H C^P\) for its own stage. Since the number of coordinate positions is finite, this gives an explicit finite bound on the chromatic number of the red constituent. The \(b=0\) bound was handled separately. The same argument applies using any constituent as red. Finally, \(\chi(\bigcup_i G_i)\le\prod_i\chi(G_i)\) by the tuple-of-colors construction, so a sufficiently high chromatic number of the union forces one of the constituent bounds to fail. This completes the proof.
+If the original union is induced-\(T\)-free, the successful-host case of Section 2 cannot occur for any red edge restriction. For \(b>0\), induct on the number of unpinned positions across the extra colors. A stage with a fully pinned color has bound \(2\). Every other stage invokes the empty-core edge partition, increases the number of pinned positions in each child, and turns a bound \(C\) for its child stages into \(H C^P\) for its own stage. Since the number of coordinate positions is finite, this gives an explicit finite bound on the chromatic number of the red constituent. The \(b=0\) bound was handled separately. The same argument applies using any constituent as red. Finally, pad each constituent with isolated vertices on the union vertex set, so the individual chromatic numbers on a nonempty union are at least one. Now \(\chi(\bigcup_i G_i)\le\prod_i\chi(G_i)\) by the tuple-of-colors construction, so a sufficiently high chromatic number of the union forces one of the constituent bounds to fail. This completes the proof.
 
 ## Scope
 
