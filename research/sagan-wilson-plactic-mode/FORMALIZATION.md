@@ -177,3 +177,9 @@ fd9b1a1304027c5c08e0d268be67df98cbbf8f781b3cfc60bfe17805533d62a9  lean/Conjectur
 5b42b6159d934ea0234536412dd3e1b3f6357cfc528db1eb2eb1c3c46154c665  lean/Conjectures/SwM9Layer8.lean
 70eb3fc5d91f1f73e78b85af836a0b94f4f6cd2be9d48908453398487a7d35fc  lean/Conjectures/SwM9Layer9.lean
 ```
+
+## Real-scalar adapter candidate (2026-11-24 23:13 UTC continuation)
+
+[Real-scalar adapter](../../lean/Conjectures/SaganWilsonPlacticModeReal.lean) expresses the count as the cardinality of a Finset of exactly the source's words (using the checked duplicate-free enumeration), identifies the recursive Pascal coefficients with Mathlib's standard Nat.choose, and maps the full integer binomial identity to a real finite sum. The final `not_realModeConjecture` is a negation of the real-coefficient form of Conjecture 7.3(d), not an assumption of integrality of an arbitrary source row. The explicit row gives an actual witness at n=10 and j=6. The source uses real scalar sequences on page 742; the polynomial range m≥n is preserved. Mathlib v4.35.0 pins are unchanged, and its current nondeprecated real-number import path is used.
+
+**Pending build and audit.** This new adapter is a source candidate, not checked Lean evidence. The core disproof at 16eb880 retains its independently checked status. Pyroam has intermittently returned connector errors, including on smoke tests and staged full-toolchain extraction. Existing repository CI was still pending/queued; the previous public runtime export run 44540193749 failed on missing Cli cached objects. No new verification count, registration, or publication promotion is claimed from this candidate. The next gate is the candidate verifier on the exact head and the complete all-owned/private audit and stock replay.

@@ -3,8 +3,15 @@
 import verify_lean_candidate as gate
 
 TASK = "sagan-wilson-plactic-mode"
-MODULES = ["Conjectures.SaganWilsonPlacticModeCounterexample"]
+MODULES = ["Conjectures.SaganWilsonPlacticModeReal"]
 REQUIRED = [
+    "SaganWilsonPlacticMode.mem_centralizerFinset",
+    "SaganWilsonPlacticMode.card_centralizerFinset",
+    "SaganWilsonPlacticMode.pascalChoose_eq_choose",
+    "SaganWilsonPlacticMode.cast_basisValue",
+    "SaganWilsonPlacticMode.real_coefficient_row10_correct",
+    "SaganWilsonPlacticMode.real_coeff10_values",
+    "SaganWilsonPlacticMode.not_realModeConjecture",
     "SaganWilsonPlacticMode.iterDelta_centralizer_zero",
     "SaganWilsonPlacticMode.positive_polynomial_extension",
     "SaganWilsonPlacticMode.zero_of_initial_and_iterDelta_zero",
