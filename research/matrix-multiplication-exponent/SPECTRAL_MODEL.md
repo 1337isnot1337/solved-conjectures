@@ -18,7 +18,7 @@ Consequently, $\omega_{\mathbb C}=2$ asserts that for every $\varepsilon>0$ ther
 Let
 
 ```math
-M_n=\sum_{0\le i,j,k<n}
+M_n=\sum_{0\le i,j,k\lt n}
 e_{ik}^{A}\otimes e_{ij}^{B}\otimes e_{jk}^{C}.
 ```
 
@@ -140,7 +140,7 @@ Every proposed universal distance inequality must hold on all three of these fla
 
 There is a stronger standard fact: each $F\in\Delta_3$ satisfies $F(M_q)\ge q^2$, not just the maximizing point.
 
-The support of $M_q$ is tight. With $0\le i,j,k<q$, use the injective integer labels
+The support of $M_q$ is tight. With $0\le i,j,k\lt q$, use the injective integer labels
 
 ```math
 u_A(i,k)=i+q^2k,\qquad
@@ -179,6 +179,14 @@ Equivalently, the normalized state $M_q$ has all three single-party reduced dens
 
 Computing this family establishes values of legitimate spectral points. It does not establish that these are all possible wire values.
 
+In fact every nonzero three-point pseudometric is a positive scalar multiple of a quantum wire triple. If its perimeter is $L$, put
+
+```math
+\theta_A=\frac{d_{AB}+d_{CA}-d_{BC}}{L}
+```
+
+and define the other coordinates cyclically. The triangle inequalities make these coordinates nonnegative, and they sum to one. Direct substitution gives $d=(L/2)d(F_\theta)$. Thus unnormalized three-point price geometry contains every metric triangle even if all normalized spectral perimeters were two. For example, an equilateral triangle of side $3/4$ is $9/8$ times the uniform quantum triple of side $2/3$; this scaling also changes the logarithmic full-unit charge from one to $9/8$.
+
 ## An exact reformulation of the missing step
 
 The following statements are equivalent:
@@ -200,6 +208,32 @@ Each coordinate is nonnegative because every wire exponent is at most one. Their
 Thus even completeness only on the three wire families is already equivalent to the original target. Full equality of an arbitrary point with a quantum functional on every tensor is a stronger assertion and is not needed.
 
 CVZ Remark 4.6 explicitly records a related conjecture of Strassen: support functionals exhaust the spectrum on the semiring of tight three-tensors, citing [Str94, Conjecture 5.3]. The established tight-tensor result in Corollary 4.5 computes the minimum spectral value, corresponding to asymptotic subrank. Replacing that minimum statement with an exhaustion statement, or with a statement about the maximum, is an unproved additional step.
+
+## The boundary already has perimeter two
+
+Zhou, *Asymptotic Rank of Weighted Graph Tensors via Completely Positive Bounds*, [arXiv:2610.34273v3](https://arxiv.org/html/2610.34273v3), dated 11 November 2026, Lemma 5.1, proves that every normalized point's wire matrix $D$ satisfies
+
+```math
+a^{\mathsf T}(J-2D)a\ge0\qquad(a\ge0),
+```
+
+where $D$ has zero diagonal and $J$ is the all-one matrix. This already settles the perimeter question on the boundary of the cube of wire exponents.
+
+Suppose $d_{AB}=1$ and put $s=d_{AC}+d_{BC}$. For $0\lt t<1$, substitute $a=((1-t)/2,(1-t)/2,t)$. The displayed copositivity inequality becomes
+
+```math
+0\le1-(1-t)^2-2s\,t(1-t).
+```
+
+Divide by $t$ and let $t$ decrease to zero. This gives $s\le1$. The previously proved universal lower bound gives $1+s\ge2$, hence $s=1$ and the perimeter is two.
+
+If a wire exponent is zero, the triangle inequalities make the other two equal; their upper bound of one and the universal perimeter lower bound of two then make both of them one. Consequently any genuine point with perimeter strictly above two must satisfy
+
+```math
+0\lt d_{AB},d_{BC},d_{CA}<1.
+```
+
+This narrows the location of a possible counterexample. It does not exclude an interior triple such as $(3/4,3/4,3/4)$, and does not establish that this scalar triple is realizable by a spectral point. The source audit separately records the stronger published result that a point with a unit wire exponent is determined on all tensors by an edge support functional.
 
 ## A four-party completeness claim already fails
 

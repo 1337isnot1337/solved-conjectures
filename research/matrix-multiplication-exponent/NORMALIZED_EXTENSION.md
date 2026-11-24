@@ -39,7 +39,7 @@ for all tensors $S,T$ on $I$.
 
 **Proof.** The two summands cover $S\oplus T$, so the left side is at most the right side. Write $a=F(S)$, $b=F(T)$, and $c=F(S\oplus T)$.
 
-For every positive integer $n$, distributivity decomposes $(S\oplus T)^{\otimes n}$ into direct-sum blocks indexed by binary words of length $n$. Retain the blocks with exactly $k$ copies of $S$. Every retained block is isomorphic to $S^{\otimes k}\otimes T^{\otimes(n-k)}$, using the same permutation of factors at every party. Thus the original tensor restricts to
+For every positive integer $n$, distributivity decomposes $(S\oplus T)^{\otimes n}$ into direct-sum blocks indexed by binary words of length $n$. Retain the blocks with exactly $k$ copies of $S$. Every retained block is isomorphic to $S^{\otimes k}\otimes T^{\otimes(n-k)}$. For each word, use the same permutation of its factors at every party; the permutations for different words form a block-diagonal local map. Thus the original tensor restricts to
 
 ```math
 U_I\!\left({n\choose k}\right)
@@ -68,6 +68,60 @@ For later use, normalization at size two suffices. For a cover functional, the s
 ```
 
 Taking $n$th roots and passing to the limit gives $u(r)=r$ for every positive integer $r$.
+
+## Lemma 1a: classification of cover functionals by normalization
+
+Every cover functional $G$ on a fixed finite party set $I$ with at least two parties has one of the following forms:
+
+- $G(T)=1$ for every nonzero tensor $T$, and $G(0)=0$; or
+- $G=F^h$ for a normalized spectral point $F$ and a real number $0\lt h\le1$.
+
+In the second case, $h=\log_2G(U_I(2))$ and $F=G^{1/h}$ are uniquely determined. This is a consequence of the cover axioms, not a claim that the normalized spectrum has been classified.
+
+**Proof.** The same power-sandwich argument gives
+
+```math
+G(U_I(r))=r^h,\qquad h=\log_2G(U_I(2)).
+```
+
+The restrictions $1\le U_I(2)$ and its cover by two copies of $1$ imply $0\le h\le1$. If $h=0$, a nonzero tensor $T$ lies between $1$ and $U_I(R(T))$ under restriction. Both bounding tensors have value one, so $G(T)=1$.
+
+Suppose $h>0$ and set $F=G^{1/h}$. Multiplicativity and full-unit normalization hold immediately. The remaining point is the cover inequality; raising a single cover inequality to the power $1/h$ would not prove it.
+
+Let $S$ be covered by $T_1,\ldots,T_r$, and write $a_i=G(T_i)$. Zero covering tensors may be removed. Expand $S^{\otimes n}$ using the cover, and group the resulting words by their type $k=(k_1,\ldots,k_r)$, where the $k_i$ are nonnegative integers with sum $n$. There are
+
+```math
+N_k={n!\over k_1!\cdots k_r!}
+```
+
+words of this type. Every corresponding summand is a restriction of the product $\prod_i T_i^{\otimes k_i}$ after reordering factors. The sum of these $N_k$ restricted tensors is a restriction of
+
+```math
+U_I(N_k)\otimes\prod_i T_i^{\otimes k_i}.
+```
+
+To see the last statement, use the diagonal tensor's label to select the word-specific local maps, then add their block maps at each party. Thus the tensors displayed above, one for each type, cover $S^{\otimes n}$. Applying $G$ gives
+
+```math
+\begin{aligned}
+G(S)^n
+&\le\sum_k N_k^h\prod_i a_i^{k_i}\\
+&=\sum_k\left(N_k\prod_i a_i^{k_i/h}\right)^h\\
+&\le(n+1)^r\left(\sum_{i=1}^r a_i^{1/h}\right)^{hn}.
+\end{aligned}
+```
+
+For the last inequality, each parenthesized term is at most the sum of all such terms, which is $(\sum_i a_i^{1/h})^n$ by the multinomial formula, and there are at most $(n+1)^r$ types. Taking $n$th roots and letting $n$ tend to infinity proves
+
+```math
+F(S)\le\sum_iF(T_i).
+```
+
+Consequently $F$ is a normalized cover functional. Lemma 1 makes it additive, so it is a normalized spectral point. $\square$
+
+Conversely, if $F$ is a normalized spectral point and $0\lt h\le1$, then $F^h$ is a cover functional. Its product law is immediate. For a cover of $S$ by $T_1,\ldots,T_r$, the cover inequality for $F$ and the scalar inequality $(\sum_i a_i)^h\le\sum_i a_i^h$ give the required inequality for $F^h$. Thus the classification describes exactly the cover functionals, including the separately stated zero-exponent case.
+
+This lemma also explains the scale issue for prices. Taking logarithmic wire values multiplies every distance of $F$ by $h$ under the operation $F\mapsto F^h$. Taking arbitrary additional nonnegative multiples and pointwise limits of those distances retains geometry but does not retain the full-unit normalization.
 
 ## Theorem 2: extension preserving all old tensor values
 
