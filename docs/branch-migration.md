@@ -1,6 +1,6 @@
 # Research branch migration
 
-This is the temporary research staging branch, not a publication branch. The planned permanent branches are `main` for finalized, reviewed work and `research` for everything in progress. No historical review has been closed by this stage.
+The permanent `research` branch is live. It contains the staged research corpus and newer work. `main` is reserved for finalized, reviewed material.
 
 ## Preserved reviews
 
@@ -11,11 +11,10 @@ This is the temporary research staging branch, not a publication branch. The pla
 | Kauers–Koutschan symbolic certificate, partial formalization | [#281](https://github.com/1337isnot1337/solved-conjectures/pull/281) | `9886cc6f428a5f8db3941f0705c4a0e3410b4abe` |
 | Lean source-export workflow, not activated here | [commit](https://github.com/1337isnot1337/solved-conjectures/commit/a4412f0d5d495d209faf20ec94785e0d6f20737a) | `a4412f0d5d495d209faf20ec94785e0d6f20737a` |
 
-The exact tips are ancestors via preservation commit `0394c9492052370fed409ee89a23da9a6df6c130`. This staging branch additionally carries the first three changes' source files, with no new verification or final-result claims. Review discussions stay on their existing PRs.
+The exact tips are ancestors via preservation commit `0394c9492052370fed409ee89a23da9a6df6c130`. The current research tree carries the first three changes' source files, with no new verification or final-result claims. Review discussions stay on their existing PRs.
 
-## Remaining cutover
+## Cutover record
 
-1. Stop starting new research on `main` and creating extra branches during migration.
-2. Verify the latest tip of `research/omega-crossing-extension` is preserved, then retire it so Git can create the flat `research` branch. GitHub closes a PR whose head is removed, while retaining its conversation and reviews; see #254 above.
-3. Create `research` from the staged tree and verify it before removing current-work files from the publication branch. Never replace concurrently changed files without a comparison.
-4. Keep the other active reviews intact until their unmerged work is safely integrated or archived with a clear continuation. Remove transient branches once their work is preserved and their reviews are no longer active.
+- GitHub retired `research/omega-crossing-extension`, clearing the namespace for the permanent `research` branch. PR #254 remains the historical discussion and review record.
+- The source snapshots from #278 and #281 are already in `research`; no full formalization or promotion to `main` is implied. Any remaining checks can continue on `research`. Keep their PR histories and the exact tips linked above.
+- See [migration issue #295](https://github.com/1337isnot1337/solved-conjectures/issues/295) for verification and temporary-ref cleanup status.
