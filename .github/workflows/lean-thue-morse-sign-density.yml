@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'lean/Conjectures/ThueMorseSignDensity.lean'
+      - 'lean/Conjectures/ThueMorseSignDensityCore.lean'
       - 'lean/Conjectures/ThueMorseValuationBasic.lean'
       - '.github/workflows/lean-thue-morse-sign-density.yml'
       - 'lean/lean-toolchain'
@@ -34,6 +35,7 @@ jobs:
         run: |
           mkdir -p .lake/build/lib/lean/Conjectures
           lake env lean -j1 -DwarningAsError=true -o .lake/build/lib/lean/Conjectures/ThueMorseValuationBasic.olean Conjectures/ThueMorseValuationBasic.lean
+          lake env lean -j1 -DwarningAsError=true -o .lake/build/lib/lean/Conjectures/ThueMorseSignDensityCore.olean Conjectures/ThueMorseSignDensityCore.lean
           lake env lean -j1 -DwarningAsError=true -o .lake/build/lib/lean/Conjectures/ThueMorseSignDensity.olean Conjectures/ThueMorseSignDensity.lean
       - name: Generate all-owned axiom audit
         run: |
@@ -42,11 +44,14 @@ jobs:
           from pathlib import Path
           sys.path.insert(0, 'scripts')
           import audit_lean_all_owned as audit
-          modules = ['Conjectures.ThueMorseValuationBasic', 'Conjectures.ThueMorseSignDensity']
+          modules = ['Conjectures.ThueMorseValuationBasic', 'Conjectures.ThueMorseSignDensityCore', 'Conjectures.ThueMorseSignDensity']
           required = ['ThueMorseSignDensity.' + n for n in [
-              't_even', 't_odd', 't_nonzero', 'identity0', 'identity1',
+              'recurrence', 't_even', 't_odd', 't_nonzero', 'identity0', 'identity1',
               'lower_bound0', 'lower_bound1', 'not_zero_density0',
               'not_zero_density1', 'conjecture_false']]
+          required += ['ThueMorseSignDensityCore.' + n for n in [
+              'parity_pair', 'nonzero', 'identity0', 'identity1', 'block0', 'block1',
+              'lower_bound0', 'lower_bound1', 'not_zero_density0', 'not_zero_density1']]
           Path('lean/ThueMorseSignDensityTargetAudit.lean').write_text(
               audit.audit_source(modules, required, []))
           PY
@@ -62,11 +67,14 @@ jobs:
           from pathlib import Path
           sys.path.insert(0, 'scripts')
           import audit_lean_all_owned as audit
-          modules = ['Conjectures.ThueMorseValuationBasic', 'Conjectures.ThueMorseSignDensity']
+          modules = ['Conjectures.ThueMorseValuationBasic', 'Conjectures.ThueMorseSignDensityCore', 'Conjectures.ThueMorseSignDensity']
           required = ['ThueMorseSignDensity.' + n for n in [
-              't_even', 't_odd', 't_nonzero', 'identity0', 'identity1',
+              'recurrence', 't_even', 't_odd', 't_nonzero', 'identity0', 'identity1',
               'lower_bound0', 'lower_bound1', 'not_zero_density0',
               'not_zero_density1', 'conjecture_false']]
+          required += ['ThueMorseSignDensityCore.' + n for n in [
+              'parity_pair', 'nonzero', 'identity0', 'identity1', 'block0', 'block1',
+              'lower_bound0', 'lower_bound1', 'not_zero_density0', 'not_zero_density1']]
           result = audit.validate_log(
               Path('thue-morse-sign-density-audit.log').read_text(),
               {'modules': modules, 'required': required, 'legacy_prefixes': []},
