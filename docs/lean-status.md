@@ -1,5 +1,9 @@
 # Lean verification status
 
+## Gravgaard–Lee’s mixed upper/lower Lüroth conjecture
+
+Complete for original Conjecture 2.6 and the stronger exact interval equality, for every k≥2. Lean constructs actual infinite expansions, proves the finite zero-tail repair, and includes the threshold-two boundary. The [scope report](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) and [independent review](../results/gravgaard-lee-upper-lower-luroth/LEAN_REVIEW.md) record the correspondence. The [complete receipt](verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json) covers 12 strict source builds, 664 declarations, 475 theorems, 173 private declarations, 29 required endpoints, and exact stock replay. Only the three allowed standard axioms occur. Aggregate verification and public deployment remain separate in [#563](https://github.com/1337isnot1337/solved-conjectures/issues/563). The two reused previously completed Lüroth modules are not recounted. The mixed bounded-digit dependency retains its original proof already published through [PR #547](https://github.com/1337isnot1337/solved-conjectures/pull/547).
+
 ## Gravgaard–Lee’s mixed Lüroth sumset
 
 [Lean proves Conjecture 2.2 and the interval from the written proof](../lean/Conjectures/GravgaardLeeMixedLuroth.lean).
@@ -109,7 +113,7 @@ proofs are documented separately in the catalogue and result package.
 | Gravgaard–Lee’s mixed Lüroth sumset conjecture | Complete | Proves that the mixed bounded-digit Lüroth sum represents every residue modulo one, with an explicit ordinary interval in the sum. |
 | Gravgaard–Lee’s large-digit Lüroth sumset conjecture | Complete | Gives a positive-length ordinary sum interval for every lower digit threshold, using two expansions whose combined digits strictly increase. |
 | Gravgaard–Lee’s Lüroth diameter question | Not formalized | Removes the digit-bound separation condition when total diameter is at least one and determines the exact positive sum hull. |
-| Gravgaard–Lee’s mixed upper/lower Lüroth conjecture | Not formalized | Determines the exact sum interval for all matching upper and lower Lüroth digit thresholds, including genuine expansions at the required endpoints. |
+| Gravgaard–Lee’s mixed upper/lower Lüroth conjecture | Complete | Exact interval equality and original modulo-one conclusion for every k≥2, with actual infinite upper/lower expansions. All 12 strict sources, the complete axiom audit and exact stock replay passed. [Scope](../results/gravgaard-lee-upper-lower-luroth/FORMALIZATION.md) · [Receipt](verification/lean-gravgaard-lee-upper-lower-complete-20261124-162051/receipt.json). |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement conjecture | Not formalized | Proves the derangement proportion tends to zero, with every fixed diagonal count diverging in probability. |
 | Dougherty-Bliss–Galván–Polley–Shuster’s separable derangement asymptotic conjecture | Not formalized | Refutes every proposed fixed power exponent by exact finite two-branch counting and saturation of the occupation loss. |
 | Fan’s interval Riesz capacity-ratio conjecture | Not formalized | Proves the full negative-exponent conjecture and the nontrivial one-dimensional Clark–Laugesen range, with equality conditions. |
