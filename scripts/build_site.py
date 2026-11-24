@@ -59,6 +59,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Bétermin’s FCC/BCC cold-spot conjecture": "betermin-fcc-bcc-cold-spots",
     "Coulangeon–Lazzarini’s two-shell conjecture": "coulangeon-lazzarini-two-shells",
     "Alexandersson’s parking-function excedance conjecture": "alexandersson-parking-excedance",
     "Nuttall's conjecture": "nuttall-cumulants",
