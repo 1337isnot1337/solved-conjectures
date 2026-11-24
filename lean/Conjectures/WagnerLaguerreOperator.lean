@@ -220,14 +220,14 @@ theorem approximation_error {n : ℕ} (hn : 0 < n) (z : ℂ)
   have hxnorm : ‖x‖ = ‖z‖ / (n : ℝ) := by simp [x, norm_div]
   have hx : ‖x‖ ≤ 1 := by rw [hxnorm]; exact (div_le_one hnR).2 hz
   let a := Real.exp ‖x‖
-  have ha : 1 ≤ a := by dsimp [a]; exact Real.one_le_exp (norm_nonneg x)
+  have ha : 1 ≤ a := by dsimp [a]; exact Real.one_le_exp_iff.mpr (norm_nonneg x)
   have hu : ‖1+x‖ ≤ a := calc
     _ ≤ 1+‖x‖ := by simpa using norm_add_le (1 : ℂ) x
-    _ ≤ a := Real.add_one_le_exp ‖x‖ |>.trans_eq (by rfl)
+    _ ≤ a := by simpa [a, add_comm] using Real.add_one_le_exp ‖x‖
   have hv : ‖Complex.exp x‖ ≤ a := Complex.norm_exp_le_exp_norm x
   have hdiff : ‖1+x-Complex.exp x‖ ≤ ‖x‖^2 := by
-    rw [norm_sub_rev, sub_add_eq_sub_sub]
-    exact Complex.norm_exp_sub_one_sub_id_le hx
+    rw [norm_sub_rev]
+    convert Complex.norm_exp_sub_one_sub_id_le hx using 1 <;> ring
   have he : Complex.exp x ^ n = Complex.exp z := by
     rw [← Complex.exp_nat_mul]
     congr 1
