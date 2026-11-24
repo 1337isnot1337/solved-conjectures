@@ -2,6 +2,8 @@
 
 **Partial research.** Pure monomial order ideals that record selected deletion and contraction minors can be combined under 2-sums, series connections and parallel connections. Uniform matroids and a marked family of paving matroids supply inputs. This gives pure realizations for assemblies of these blocks and reduces the missing step to constructing compatible ideals on other blocks. The unrestricted conjecture remains open. [Issue #336](https://github.com/1337isnot1337/solved-conjectures/issues/336)
 
+The [strict truncations follow-up](TRUNCATIONS.md) constructs compatible ideals at any one nonloop of a strict matroid truncation, including when its deletion has coloops.
+
 ## Target and sources
 
 For a finite matroid $M$ of rank $r$ with independence sets $\mathcal I(M)$, write
