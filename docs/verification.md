@@ -174,6 +174,14 @@ Run `python3 results/pantone-bona-asymptotic/verify.py` for literal small permut
 
 Run `python3 results/pantone-bona-second-largest-terminal/verify.py` to compare the exact canonical gap formula with literal pattern filtering. The [proof](../results/pantone-bona-second-largest-terminal/PROOF.md) derives the asymptotic equivalence without the finite enumeration.
 
+## Pantone–Bóna third-largest-terminal asymptotic
+
+Run `python3 results/pantone-bona-third-largest-terminal/verify.py` for exact finite checks against literal pattern filtering. The [written proof](../results/pantone-bona-third-largest-terminal/PROOF.md) derives the exact constant from fixed-shape RSK interval symmetry and a shared value band; it does not rely on those checks.
+
+## Pantone–Bóna second-smallest-terminal asymptotic
+
+Run `python3 results/pantone-bona-second-smallest-terminal/verify.py` for exact finite checks against literal pattern filtering. The [written proof](../results/pantone-bona-second-smallest-terminal/PROOF.md) derives the exact constant from the decreasing-band constraint and a uniform tableau-walk estimate; it does not rely on those checks.
+
 ## Bétermin FCC/BCC cold spots
 
 The [all-scale proof](../results/betermin-fcc-bcc-cold-spots/PROOF.md) uses parity projection, Jacobi products and a strict concavity argument. The proof does not depend on numerical testing. Run `python3 results/betermin-fcc-bcc-cold-spots/verify.py` for finite Gaussian comparisons and exact rational distance checks, including the corrected BCC representative.
